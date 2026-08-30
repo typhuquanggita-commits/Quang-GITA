@@ -462,6 +462,8 @@ Cả gia đình: 720 000 + 540 000 = **1 260 000 đồng**.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 14 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -481,8 +483,6 @@ Kết quả: **80 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.5 — Chuyển động trên dòng nước
-
-> **BẪY — Nhầm vận tốc thực với vận tốc xuôi dòng.**
 
 **Các bước giải**
 
@@ -675,7 +675,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.5 | TD2, TD5 | Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng. |
 | V.1 | TD4, TD5 | Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi. |
-| V.2 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.2 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.3 | TD3, TD6 | Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**. |
 | V.4 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.5 | TD3, TD6 | Hai xe đi trong **cùng một khoảng thời gian** — đó là mấu chốt. |

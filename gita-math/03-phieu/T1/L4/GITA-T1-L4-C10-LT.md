@@ -346,6 +346,7 @@ d) Mua 10 quyển vở hết 530 nghìn đồng. Mua 20 quyển vở như thế 
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.3
 **Đáp số:** a) 12 · b) 58 · c) 196 · d) 160 · e) 53 · f) 78
@@ -364,6 +365,7 @@ d) Mua 10 quyển vở hết 530 nghìn đồng. Mua 20 quyển vở như thế 
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài B.1
 **Đáp số:** a) Tổng – tỉ, hiệu – tỉ, tỉ lệ bản đồ và toán tuổi · b) D — Toán điển hình & Giải toán có lời văn · c) 6 · d) ở mọi bài thuộc toán điển hình & giải toán có lời văn, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài tìm hai số khi biết tổng và tỉ số của hai số đó

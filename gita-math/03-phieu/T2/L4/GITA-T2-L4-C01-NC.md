@@ -277,7 +277,7 @@ f) Số cuối cùng có thể bằng 0 không?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm chữ số dùng để đánh số trang
 
@@ -395,6 +395,7 @@ d) Số có hai chữ số 25 gấp tổng hai chữ số của nó bao nhiêu l
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài III.1
 **Đáp số:** a) 5 · b) 1 · c) 6 · d) 2 · e) 2

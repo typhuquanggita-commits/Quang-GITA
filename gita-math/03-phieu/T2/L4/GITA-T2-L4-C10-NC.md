@@ -281,7 +281,7 @@ f) Số cuối cùng có thể bằng 0 không?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy phân số dạng n phần (n + 1)
 
@@ -362,12 +362,14 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.4
 **Đáp số:** a) 25 cách · b) 6 cách · c) 18 cách · d) 36 cách · e) 56 cách
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.5
 **Đáp số:** a) ô (Phúc; Mĩ thuật) · b) toàn bộ hàng Phúc và toàn bộ cột Mĩ thuật · c) ô (Quân; Tiếng Anh) · d) Tiếng Việt · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ

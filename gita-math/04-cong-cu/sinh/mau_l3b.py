@@ -57,7 +57,7 @@ def b3_m2_11(rng, lop):
         tuong_tu=("Đặt tính rồi tính: 246 × 3", "738"),
         mo_rong="Chia mà thương có chữ số 0 ở giữa, ví dụ 618 : 3.",
         chuan_bi="Bảng nhân, bảng chia từ 2 đến 9.",
-        bay="Chữ số 0 ở giữa thương")
+        chu_y="Chữ số 0 ở giữa thương")
 
 
 @dang_ky("B3-M3-11", "B", "M3", lop=L3, tu_khoa=("tính giá trị biểu thức", "thứ tự", "ngoặc"),
@@ -492,7 +492,7 @@ def f3_m5_11(rng, lop):
                   f"Đáp số: **{sv(m * (m - 1) // 2)} đoạn thẳng**."],
         huong_giai="Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k "
                    "điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.",
-        td=["TD4", "TD3"],
+        td=["TD4", "TD3", "TD5"],
         diem_chot="Chia 2 vì mỗi cặp được đếm **hai lần**.",
         loi="Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép.",
         phong="Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.",
@@ -541,7 +541,7 @@ def h3_m1_11(rng, lop):
         tuong_tu=("Tìm 1 phần 4 của 20.", "5"),
         mo_rong="Tìm hai phần ba của một số — chia rồi nhân.",
         chuan_bi="Bảng chia từ 2 đến 9.",
-        bay="Chia chứ không nhân")
+        chu_y="Chia chứ không nhân")
 
 
 @dang_ky("H3-M3-11", "H", "M3", lop=L3, tu_khoa=("bảng số liệu", "thống kê", "đọc bảng"),

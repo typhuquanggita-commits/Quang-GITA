@@ -226,10 +226,10 @@ e) Có bao nhiêu hình chữ nhật không phải hình vuông?
 
 Tìm x, trình bày từng bước.
 
-a) x × 8 − 67 = 168
-b) x × 2 + 63 = 157
-c) 35 − x = 13
-d) x : 4 + 83 = 120
+a) x × 6 − 7 = 197
+b) x × 9 + 29 = 524
+c) (x − 26) × 6 = 6
+d) 100 − x = 69
 
 ### Bài 2. (5 điểm) Tuổi, mua bán và hai đại lượng tỉ lệ
 
@@ -270,7 +270,7 @@ d) Số có hai chữ số 18; viết hai chữ số theo thứ tự ngược l�
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -434,9 +434,9 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình rồi cộng.
 
 ### Bài IV.1
-**Đáp số:** a) x = 235 : 8 · b) x = 47 · c) x = 22 · d) x = 148
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 34 · b) x = 55 · c) x = 27 · d) x = 31
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -456,7 +456,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) Ngọc: 106 quyển, Phúc: 68 quyển · b) Yến: 128 quyển, Dũng: 72 quyển · c) Yến: 18 quyển, Sơn: 10 quyển · d) Trang: 60 quyển, Bình: 48 quyển · e) Sơn: 126 quyển, Bình: 74 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.

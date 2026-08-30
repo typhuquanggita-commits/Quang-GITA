@@ -572,8 +572,6 @@ Kiểm tra bằng hình nhỏ: 3 khoảng thì có 4 cây ✓
 
 ### Bài E.5 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 4 952 : 5

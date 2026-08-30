@@ -136,8 +136,6 @@ Kết quả: **3 phần 4**.
 
 ### Bài A.4 — So sánh hai phân số
 
-> **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
-
 **Các bước giải**
 
 Xét ý a: 2 phần 13 … 1 phần 5
@@ -157,8 +155,6 @@ Kết quả: **<**.
 *Điểm chốt:* Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 
 ### Bài A.5 — Số thập phân: hàng, so sánh, đổi từ phân số
-
-> **BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Hai lần tăng giảm liên tiếp**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Phân số, hỗn số và số thập
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Rút gọn, so sánh, sắp thứ tự phân số
+
+> **BẪY — Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu..**
 
 **Các bước giải**
 

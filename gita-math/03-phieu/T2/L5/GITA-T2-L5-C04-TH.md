@@ -279,7 +279,7 @@ d) Mua 4 quyển vở và 7 hộp hộp màu hết 180 000 đồng. Biết giá 
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng bất biến: tính chẵn lẻ của tổng
 
@@ -365,12 +365,14 @@ f) Đại lượng bất biến dùng ở đây là gì?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.5
 **Đáp số:** a) 36 cách · b) 20 cách · c) 12 cách · d) 4 cách · e) 49 cách · f) 25 cách
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài II.1
 **Đáp số:** a) xe đạp: 15 chiếc, xe ba bánh: 21 chiếc · b) xe ba bánh: 17 chiếc, xe ô tô: 20 chiếc · c) xe ô tô: 13 chiếc, xe đạp: 25 chiếc · d) xe ô tô: 16 chiếc, xe đạp: 15 chiếc · e) xe ba bánh: 26 chiếc, xe đạp: 14 chiếc

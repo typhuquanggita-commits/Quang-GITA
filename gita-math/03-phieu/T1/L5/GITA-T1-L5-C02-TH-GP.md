@@ -380,6 +380,8 @@ Kết quả: **16 giờ 32 phút**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 11 thùng nước, mỗi thùng 18 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -465,8 +467,6 @@ Kết quả: **91**.
 *Điểm chốt:* Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên.
 
 ### Bài IV.5 — Tỉ lệ bản đồ
-
-> **BẪY — Quên đổi đơn vị sau khi nhân.**
 
 **Các bước giải**
 

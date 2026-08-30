@@ -386,6 +386,8 @@ Kết quả: **19 tạ 80 kg**.
 
 ### Bài IV.1 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: (12 phần 7 + 3 phần 5) × 4 phần 15

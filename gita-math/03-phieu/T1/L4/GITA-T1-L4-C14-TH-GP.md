@@ -386,6 +386,8 @@ Câu cuối dùng chính tính chất ấy theo chiều ngược: chênh 3 hộp
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 13 thùng nước mắm, mỗi thùng 12 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
@@ -405,6 +407,8 @@ Kết quả: **120 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -480,8 +484,6 @@ Cả gia đình: 140 000 + 140 000 = **280 000 đồng**.
 
 ### Bài IV.5 — Ghép người với môn bằng bảng đúng – sai
 
-> **BẪY — Đánh dấu đúng mà quên gạch phần còn lại.**
-
 **Các bước giải**
 
 Kẻ bảng ba dòng (Trang, Chi, Hùng) và ba cột (tiếng Anh, tin học, mĩ thuật). Mỗi ô ghi ✓ nếu chắc chắn đúng, × nếu chắc chắn sai.
@@ -503,8 +505,6 @@ Còn lại **Hùng học tiếng Anh**. Thử lại cả hai manh mối đều �
 *Phải chắc trước khi làm bài này:* Đọc hiểu câu phủ định và cách kẻ bảng hai chiều.
 
 ### Bài V.1 — Tỉ số thay đổi khi một đại lượng thay đổi
-
-> **BẪY — Đại lượng nào giữ nguyên.**
 
 **Các bước giải**
 

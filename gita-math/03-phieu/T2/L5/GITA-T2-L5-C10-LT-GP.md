@@ -550,8 +550,6 @@ Kết quả: **nhóm Hoa Phượng: 394 cây, nhóm Sao Mai: 270 cây**.
 
 ### Bài E.4 — Bốn phép tính với số thập phân
 
-> **BẪY — Vị trí dấu phẩy ở tích.**
-
 **Các bước giải**
 
 Xét ý a: 55,13 × 7
@@ -649,7 +647,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.2 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | D.3 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
 | D.4 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
-| D.5 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| D.5 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | E.1 | TD2, TD3 | Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối. |
 | E.2 | TD2, TD6 | Phần trăm lãi tính theo **giá mua**, không theo giá bán. |
 | E.3 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |

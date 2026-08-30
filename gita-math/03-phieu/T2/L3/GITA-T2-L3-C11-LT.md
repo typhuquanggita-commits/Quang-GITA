@@ -369,6 +369,7 @@ f) Dãy 10, 13, 16, …, 73 có bao nhiêu số hạng?
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài B.1
 **Đáp số:** a) Tổng dãy số và quy luật nâng cao · b) C — Dãy số & Quy luật · c) 5 · d) ở mọi bài thuộc dãy số & quy luật, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài tổng dãy số cách đều — kỹ thuật ghép cặp
@@ -481,9 +482,10 @@ f) Dãy 10, 13, 16, …, 73 có bao nhiêu số hạng?
 
 ### Bài E.3
 **Đáp số:** a) x = 75 · b) 0 · c) 2 · d) x = 271 · e) 0 · f) x = 499 · g) x = 189 · h) 5
-**Hướng giải:** BẪY — Thừa số 0. Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
+**Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 **Gợi ý 3 tầng:** (1) x đóng vai trò gì trong phép tính? — (2) Viết quy tắc tương ứng ra nháp. — (3) Thay x tìm được vào đề để thử lại.
 
 ### Bài E.4
@@ -495,7 +497,7 @@ f) Dãy 10, 13, 16, …, 73 có bao nhiêu số hạng?
 
 ### Bài E.5
 **Đáp số:** a) 15 · b) 15 · c) 11 · d) 30 · e) 34 · f) 22
-**Hướng giải:** Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
+**Hướng giải:** BẪY — Quên cộng 1. Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng ít hơn số số hạng đúng **1**.
 **Lỗi thường gặp:** Quên cộng 1. Phòng: Thử với dãy ngắn ba số để kiểm tra công thức.
 **Gợi ý 3 tầng:** (1) Khoảng cách của dãy bằng bao nhiêu? — (2) Từ số đầu tới số cuối có mấy khoảng? — (3) Số số hạng nhiều hơn số khoảng 1.

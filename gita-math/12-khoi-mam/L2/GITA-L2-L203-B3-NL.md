@@ -19,6 +19,7 @@ cap_nhat: "2026-08-30"
 Lớp 2 · 7 – 8 tuổi · Mã: **GITA-L2-L203-B3-NL**  
 Mạch: **Số và phép tính** *(Cambridge: Number)*  
 Thời lượng: **40 phút** · Thang điểm: **40**  
+Bậc: **Tự làm** — Trẻ tự làm, người lớn chỉ hỏi chứ không làm hộ.  
 Bản dành cho: **người lớn ngồi cùng**
 
 ---

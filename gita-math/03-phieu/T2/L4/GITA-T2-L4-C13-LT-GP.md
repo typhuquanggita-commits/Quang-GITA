@@ -476,7 +476,7 @@ Kết quả: **Đại lượng tỉ lệ nghịch, tổng số ngày công**.
 
 ### Bài E.1 — Lịch, thế kỉ, năm nhuận
 
-> **BẪY — Năm tròn trăm.**
+> **BẪY — Coi mọi năm chia hết cho 4 đều là năm nhuận..**
 
 **Các bước giải**
 
@@ -498,7 +498,7 @@ Kết quả: **4 tuần 4 ngày**.
 
 ### Bài E.2 — So sánh hai số đo khác đơn vị
 
-> **BẪY — Đơn vị khác nhau.**
+> **BẪY — So thẳng hai con số, bỏ qua đơn vị..**
 
 **Các bước giải**
 
@@ -539,8 +539,6 @@ Làm tròn đến hàng nghìn thì nhìn chữ số hàng trăm: hàng trăm c�
 *Phải chắc trước khi làm bài này:* Đọc, viết số có năm chữ số và phép trừ có nhớ.
 
 ### Bài E.4 — Đơn vị đo diện tích
-
-> **BẪY — 100 lần chứ không phải 10 lần.**
 
 **Các bước giải**
 

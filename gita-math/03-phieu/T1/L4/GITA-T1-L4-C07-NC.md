@@ -277,7 +277,7 @@ d) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của s�
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
 
@@ -386,6 +386,7 @@ f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.4
 **Đáp số:** a) không (tổng chữ số 8) · b) không (chữ số tận cùng 6) · c) có (chữ số tận cùng 4) · d) không (tổng chữ số 19) · e) không (tổng chữ số 25)
@@ -445,8 +446,8 @@ f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 
 ### Bài IV.3
 **Đáp số:** a) 82 · b) 109 · c) 955 · d) 95,5 · e) 191 · f) 191
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -480,7 +481,7 @@ f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 
 ### Bài V.3
 **Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 6 phần 7 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 7
-**Hướng giải:** BẪY — Chiều của phần bù. Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.

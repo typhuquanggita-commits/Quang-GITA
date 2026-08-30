@@ -404,6 +404,8 @@ Hiệu của phân số lớn nhất và bé nhất: 11 phần 12 − 1 phần 4
 
 ### Bài IV.2 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 50
@@ -423,6 +425,8 @@ Kết quả: **5 100**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
+
+> **BẪY — Chuyển vế mà quên đổi dấu.**
 
 **Các bước giải**
 
@@ -490,8 +494,6 @@ Kết quả: **0**.
 
 ### Bài V.1 — Đại lượng khối lượng — đổi đơn vị và chia phần
 
-> **BẪY — Làm tròn lên khi hỏi số xe ít nhất.**
-
 **Các bước giải**
 
 Bước 1 — đổi về ki-lô-gam: 9 tấn = 9 000 kg; 2 tạ = 200 kg.
@@ -513,8 +515,6 @@ Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 9 282 : 1 000 = 9 xe đ�
 *Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
 
 ### Bài V.2 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 
@@ -658,7 +658,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
 | III.5 | TD3, TD2 | Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc. |
 | IV.1 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
-| IV.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.2 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.5 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |

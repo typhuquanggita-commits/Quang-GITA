@@ -542,8 +542,6 @@ Kết quả: **30 cách**.
 
 ### Bài E.4 — Chu vi và diện tích hình chữ nhật, hình vuông
 
-> **BẪY — Đơn vị diện tích.**
-
 **Các bước giải**
 
 Xét ý a: Hình vuông cạnh 17 cm. Tính chu vi.

@@ -270,7 +270,7 @@ d) Nhóm Sao Mai có 96 quyển sách, tổ Một có 80 quyển. Hỏi phải c
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Chữ số tận cùng của tổng và tích
 
@@ -358,6 +358,7 @@ d) Một quyển sách có 984 trang, đánh số trang từ 1. Phải dùng t�
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài II.1
 **Đáp số:** a) 149 · b) 451 · c) 52 · d) 157 · e) 204
@@ -382,6 +383,7 @@ d) Một quyển sách có 984 trang, đánh số trang từ 1. Phải dùng t�
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.5
 **Đáp số:** a) 510 · b) 2 900 · c) 65 · d) 275
@@ -435,8 +437,8 @@ d) Một quyển sách có 984 trang, đánh số trang từ 1. Phải dùng t�
 
 ### Bài IV.3
 **Đáp số:** a) 330 · b) 3 825 · c) 1 300 · d) 1 890 · e) 6 375
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
@@ -449,7 +451,7 @@ d) Một quyển sách có 984 trang, đánh số trang từ 1. Phải dùng t�
 
 ### Bài IV.5
 **Đáp số:** a) 32 quyển · b) 29 quyển · c) 106 quyển · d) 8 quyển
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+**Hướng giải:** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
 **Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?

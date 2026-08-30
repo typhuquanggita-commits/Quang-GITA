@@ -422,6 +422,8 @@ Kết quả: **số nguyên tố**.
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 10 thùng sữa, mỗi thùng 15 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?

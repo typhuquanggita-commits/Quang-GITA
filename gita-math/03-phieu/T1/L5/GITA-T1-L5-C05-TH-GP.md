@@ -432,6 +432,8 @@ Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là *
 
 ### Bài IV.3 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: (7 phần 13 + 1) × 4 phần 5
@@ -495,8 +497,6 @@ Hiệu của phân số lớn nhất và bé nhất: 2 phần 3 − 1 phần 12 
 *Phải chắc trước khi làm bài này:* Rút gọn phân số và quy đồng mẫu số.
 
 ### Bài V.1 — Dãy phân số dạng n phần (n + 1)
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 

@@ -89,7 +89,7 @@ def h_m1_02(rng, lop):
         pt_phuong_phap="Xét cùng mẫu → cùng tử → quy đồng",
         pt_nhanh="So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay.",
         tuong_tu=("So sánh: 3 phần 5 … 3 phần 7", ">"),
-        bay="Cùng tử số thì mẫu bé hơn lại lớn hơn",
+        chu_y="Cùng tử số thì mẫu bé hơn lại lớn hơn",
     )
 
 
@@ -132,7 +132,7 @@ def h_m1_03(rng, lop):
         pt_phuong_phap="Xét theo hàng từ trái sang phải",
         pt_nhanh="Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị.",
         tuong_tu=("So sánh: 0,5 … 0,45", ">"),
-        bay="Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn",
+        chu_y="Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn",
     )
 
 
@@ -214,7 +214,7 @@ def h_m2_02(rng, lop):
         pt_phuong_phap="Chọn quy tắc đặt dấu phẩy theo phép tính",
         pt_nhanh="Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy.",
         tuong_tu=("Tính: 3,25 × 4", "13"),
-        bay="Vị trí dấu phẩy ở tích",
+        chu_y="Vị trí dấu phẩy ở tích",
     )
 
 
@@ -438,6 +438,7 @@ def h_m4_02(rng, lop):
                    "trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì "
                    "đặt ra ngoài để tính nhanh.",
         td=["TD3", "TD5"],
+        bay="Làm phép cộng trước phép chia",
         diem_chot="Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.",
         loi="Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước.",
         phong="Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.",

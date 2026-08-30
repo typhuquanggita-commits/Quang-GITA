@@ -420,6 +420,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài B.3
 **Đáp số:** a) 10 · b) 8 · c) 48 · d) Tuấn (16) · e) Nam (8) · f) 8 · g) 6 hình
@@ -450,6 +451,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài C.3
 **Đáp số:** a) (34 + 22) × 2 = 112 m · b) 112 − 2 = 110 m · c) 112 : 2 = 56 cọc · d) 110 × 30 000 = 3 300 000 đồng · e) 34 × 22 = 748 m²

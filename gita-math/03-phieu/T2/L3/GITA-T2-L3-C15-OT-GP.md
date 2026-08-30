@@ -436,6 +436,8 @@ Thử lại: 84 : 4 = 21 ✓
 
 ### Bài IV.3 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 4 tấm vải, mỗi tấm dài 8 m. Cắt mỗi tấm đi 6 m. Hỏi còn lại tất cả bao nhiêu mét vải?

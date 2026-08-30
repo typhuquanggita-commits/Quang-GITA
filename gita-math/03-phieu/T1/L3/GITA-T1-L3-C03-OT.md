@@ -284,7 +284,7 @@ e) Ghép 5 hình vuông cạnh 3 cm thành một hàng ngang. Tính chu vi và d
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -368,12 +368,14 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài I.3
 **Đáp số:** a) 120 cm · b) 81 cm² · c) 780 cm² · d) 140 cm · e) 152 cm · f) 400 cm² · g) 93 cm² · h) 38 cm
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài I.4
 **Đáp số:** a) (30 + 12) × 2 = 84 m · b) 84 − 2 = 82 m · c) 84 : 2 = 42 cọc · d) 82 × 25 000 = 2 050 000 đồng · e) 30 × 12 = 360 m²
@@ -456,7 +458,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.2
 **Đáp số:** a) 8 550 000 đồng · b) 30 chai · c) 12 m · d) 130 chai
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -477,7 +479,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) chu vi 54 cm, diện tích 162 cm² · b) chu vi 72 cm, diện tích 288 cm² · c) chu vi 48 cm, diện tích 80 cm² · d) chu vi 72 cm, diện tích 243 cm² · e) chu vi 36 cm, diện tích 45 cm²
-**Hướng giải:** BẪY — Chu vi không cộng như diện tích. Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
+**Hướng giải:** Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Diện tích cộng được, **chu vi thì không**.
 **Lỗi thường gặp:** Nhân chu vi một hình vuông với số hình. Phòng: Vẽ hình ghép và tô đậm đường bao trước khi tính.
 **Gợi ý 3 tầng:** (1) Chiều dài hình mới bằng bao nhiêu? — (2) Chiều rộng hình mới bằng bao nhiêu? — (3) Áp công thức chu vi và diện tích hình chữ nhật.
@@ -506,7 +508,7 @@ f) Cột 6 — Kết quả?
 ### Bài V.4
 **Đáp số:** a) Đếm hình bằng quy tắc chọn hai điểm · b) Đếm cặp · c) Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh · d) Quy về số cách chọn hai điểm · e) Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc là xong. · f) 3 · 3 · 6 · 6…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 

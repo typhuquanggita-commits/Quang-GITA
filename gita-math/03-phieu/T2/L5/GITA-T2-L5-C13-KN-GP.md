@@ -116,8 +116,6 @@ Kết quả: **3 316**.
 
 ### Bài A.3 — Số thập phân: hàng, so sánh, đổi từ phân số
 
-> **BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.**
-
 **Các bước giải**
 
 Xét ý a: 743,94 … 745,159
@@ -157,8 +155,6 @@ Kết quả: **118 761**.
 *Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 
 ### Bài A.5 — So sánh hai phân số
-
-> **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Các số có dấu phẩy**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Phân số ẩn, phần trăm trong bi
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Phần trăm thay đổi nhiều lần
+
+> **BẪY — Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu..**
 
 **Các bước giải**
 

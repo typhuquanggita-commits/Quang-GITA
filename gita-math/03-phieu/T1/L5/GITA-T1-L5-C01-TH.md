@@ -294,7 +294,7 @@ f) Có phân số nào lớn hơn 1 không?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Hai lần thay đổi phần trăm liên tiếp
 
@@ -358,12 +358,14 @@ f) Phân số thứ 12 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) < · b) 0,196 · c) 7 · d) 7 · e) < · f) 0,22 · g) 5 · h) <
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài I.3
 **Đáp số:** a) 9 phần 11 · b) 5 phần 6 · c) 3 phần 10 · d) 5 phần 12 · e) 3 phần 4 · f) 3 phần 8 · g) 9 phần 10
@@ -376,6 +378,7 @@ f) Phân số thứ 12 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.5
 **Đáp số:** a) 6 909 000 · b) 7 · c) 9 265 998 và 9 266 000 · d) > · e) 6 075 500
@@ -400,6 +403,7 @@ f) Phân số thứ 12 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.4
 **Đáp số:** a) 100 · b) 25 · c) 75% · d) 200 · e) 75% · f) 8 · g) 32
@@ -412,6 +416,7 @@ f) Phân số thứ 12 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài III.1
 **Đáp số:** a) 80 cây · b) 30 cây · c) 15 cây · d) 64 cây · e) 70 cây · f) 5 cây
@@ -466,7 +471,7 @@ f) Phân số thứ 12 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ### Bài IV.4
 **Đáp số:** a) 8 phần 3 · b) 69 phần 28 · c) 11 phần 39 · d) 107 phần 120 · e) 719 phần 315 · f) 29 phần 39
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -480,7 +485,7 @@ f) Phân số thứ 12 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ### Bài V.1
 **Đáp số:** a) 540 000 đồng, tăng 140 000 đồng · b) 450 000 đồng, tăng 50 000 đồng · c) 187 500 đồng, giảm 12 500 đồng · d) 825 000 đồng, giảm 175 000 đồng · e) 270 000 đồng, tăng 70 000 đồng
-**Hướng giải:** BẪY — Mốc 100% thay đổi sau mỗi lần. Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
+**Hướng giải:** Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển.
 **Lỗi thường gặp:** Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. Phòng: Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2.
 **Gợi ý 3 tầng:** (1) Giá sau lần tăng thứ nhất là bao nhiêu? — (2) Lần giảm thứ hai tính phần trăm trên giá nào? — (3) So sánh giá cuối với giá ban đầu.

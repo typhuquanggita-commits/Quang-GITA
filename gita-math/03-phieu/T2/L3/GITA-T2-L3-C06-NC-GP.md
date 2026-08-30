@@ -678,11 +678,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | IV.4 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
 | IV.5 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 | V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.4 | TD2, TD6 | Đừng quên **đếm cả chính mình** khi cộng lại. |
-| V.5 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.5 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 
 ---
 

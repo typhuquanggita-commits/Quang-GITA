@@ -342,15 +342,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 21 · b) 33 · c) 61 · d) 12 · e) 46 · f) 82 · g) 30
-**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài A.3
 **Đáp số:** a) 77 · b) 101 · c) 113 · d) 121
-**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài A.4
 **Đáp số:** a) 80 · b) 1 024 · c) 768 · d) 96 · e) 324
@@ -461,14 +463,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Dãy số cách đều và quy luật bảng số” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tìm số hạng thứ n của dãy cách đều.” · b) Đề hỏi “số hạng thứ …” · c) Công thức số hạng tổng quát của dãy cách đều · d) Dãy 5, 9, 13, … số hạng thứ 20 là số nào? → 81 · e) Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. · f) Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng.
-**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Hướng giải:** BẪY — Nhân khoảng cách với n nên kết quả thừa đúng một khoảng.. Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -476,14 +478,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài E.3
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đếm và tính tổng dãy con thoả điều kiện chia hết.” · b) Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy · c) Dãy cách đều, bội chung nhỏ nhất · d) Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? → 17 · e) Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. · f) Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện.
 **Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.4
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tổng và trung bình cộng của dãy cách đều.” · b) Đề cho số số hạng, khoảng cách và một đầu của dãy · c) Dãy cách đều, trung bình cộng · d) Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? → 275 · e) Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. · f) Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau.
 **Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 

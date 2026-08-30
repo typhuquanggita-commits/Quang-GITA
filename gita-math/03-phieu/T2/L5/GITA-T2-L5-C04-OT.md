@@ -296,7 +296,7 @@ f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 

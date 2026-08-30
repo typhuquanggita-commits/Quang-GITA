@@ -273,11 +273,11 @@ d) Hình chữ nhật có chu vi 20 cm, chiều dài 7 cm. Tính chiều rộng.
 
 Tìm x, trình bày từng bước.
 
-a) x × 8 − 32 = 80
-b) x × 3 + 36 = 165
-c) 91 − x = 49
-d) x : 3 + 16 = 57
-e) x : 8 + 20 = 26
+a) (x + 88) × 5 = 485
+b) x × 8 − 32 = 48
+c) x × 3 + 36 = 165
+d) x : 9 + 49 = 91
+e) (x − 16) × 3 = 75
 
 ### Bài 5. (5 điểm) Bài toán trồng cây
 
@@ -290,7 +290,7 @@ d) Đoạn đường dài 30 m, trồng cây cách nhau 2 m, chỉ trồng ở m
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -475,15 +475,15 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Nửa chu vi bằng bao nhiêu? — (2) Nửa chu vi là tổng của hai chiều nào? — (3) Trừ đi chiều đã biết.
 
 ### Bài IV.4
-**Đáp số:** a) x = 14 · b) x = 43 · c) x = 42 · d) x = 123 · e) x = 48
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 9 · b) x = 10 · c) x = 43 · d) x = 378 · e) x = 41
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
 ### Bài IV.5
 **Đáp số:** a) 19 · b) 25 · c) 24 · d) 15
-**Hướng giải:** BẪY — Bốn trường hợp trồng cây. Tính số khoảng trước: độ dài chia khoảng cách. Trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém 1; trồng khép kín thì bằng đúng số khoảng.
+**Hướng giải:** Tính số khoảng trước: độ dài chia khoảng cách. Trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém 1; trồng khép kín thì bằng đúng số khoảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề.
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một hình nhỏ với ba khoảng để đếm thử.
 **Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ.

@@ -280,7 +280,7 @@ f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Trắc nghiệm nhanh — sáu kỹ thuật đếm
 
@@ -355,18 +355,21 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.3
 **Đáp số:** a) 3 975 · b) 7 377 · c) 344 050 · d) 100 656 · e) 67 735 · f) 118 740 · g) 537 810 · h) 351 214
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) 6 cách · b) 28 cách · c) 42 cách · d) 56 cách · e) 32 cách
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.5
 **Đáp số:** a) ô (Minh; Toán) · b) toàn bộ hàng Minh và toàn bộ cột Toán · c) ô (Quân; Tiếng Anh) · d) Mĩ thuật · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ
@@ -385,6 +388,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.3
 **Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Lan chính là người làm vỡ lọ hoa · f) Lan

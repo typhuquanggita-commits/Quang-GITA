@@ -273,7 +273,7 @@ e) Diện tích trần nhà là bao nhiêu?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
 
@@ -345,24 +345,28 @@ e) Bố bạn Khánh gửi tiết kiệm 28 000 000 đồng với lãi suất 5%
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 35 cm · b) cạnh 32 cm, diện tích 1 024 cm² · c) 25 cm · d) 4 cm · e) 43 cm
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài I.4
 **Đáp số:** a) 84 cm · b) 825 cm² · c) 25 cm² · d) 148 cm · e) 76 cm · f) 76 cm
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.5
 **Đáp số:** a) 15 · b) 90 · c) 26 · d) 16 cm · e) 15 cm²
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài II.1
 **Đáp số:** a) 360 cm² · b) 420 cm² · c) 380 cm² · d) 195 cm² · e) 506 cm²
@@ -433,7 +437,7 @@ e) Bố bạn Khánh gửi tiết kiệm 28 000 000 đồng với lãi suất 5%
 
 ### Bài IV.2
 **Đáp số:** a) 32 cm² · b) 140 cm² · c) 312 cm² · d) 43 cm² · e) 24 cm² · f) 285 cm²
-**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+**Hướng giải:** BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt. Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
 **Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
 **Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
@@ -454,7 +458,7 @@ e) Bố bạn Khánh gửi tiết kiệm 28 000 000 đồng với lãi suất 5%
 
 ### Bài IV.5
 **Đáp số:** a) (7 + 5) × 2 × 4 = 96 m² · b) 2 + 2 = 4 m² · c) 96 − 4 = 92 m² · d) 92 : 5 = 19 lít (làm tròn lên) · e) 7 × 5 = 35 m²
-**Hướng giải:** BẪY — Quên trừ diện tích cửa. Bốn bức tường là mặt xung quanh của hình hộp chữ nhật. Tính diện tích xung quanh trước, rồi **trừ phần cửa** vì cửa không sơn. Bài toán lượng sơn phải làm tròn lên.
+**Hướng giải:** Bốn bức tường là mặt xung quanh của hình hộp chữ nhật. Tính diện tích xung quanh trước, rồi **trừ phần cửa** vì cửa không sơn. Bài toán lượng sơn phải làm tròn lên.
 **Nhãn tư duy:** TD2, TD4, TD5. Điểm chốt: Đề thật luôn có phần không sơn. Tính xong diện tích xung quanh phải hỏi ngay: có chỗ nào không sơn không?
 **Lỗi thường gặp:** Lấy luôn diện tích xung quanh làm diện tích phải sơn. Phòng: Đọc lại đề, khoanh tròn mọi thứ 'khoét vào tường': cửa, ô thoáng.
 **Gợi ý 3 tầng:** (1) Bốn bức tường ghép lại là mặt nào của hình hộp chữ nhật? — (2) Cửa có được sơn không? Vậy phải làm gì với diện tích cửa? — (3) Sơn bán theo lít nguyên nên số lít phải làm tròn về phía nào?

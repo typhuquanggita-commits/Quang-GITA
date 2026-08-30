@@ -116,8 +116,6 @@ Kết quả: **ô (Hà; Âm nhạc)**.
 
 ### Bài A.3 — Tìm một phần mấy của một số
 
-> **BẪY — Chia chứ không nhân.**
-
 **Các bước giải**
 
 Xét ý a: Tìm 1 phần 3 của 12.
@@ -137,8 +135,6 @@ Kết quả: **4**.
 *Điểm chốt:* Một phần mấy thì **chia** cho số đó.
 
 ### Bài A.4 — Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
-
-> **BẪY — Phần chung bị đếm hai lần.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **“Trồng cây”, “cột điện”, “quanh hồ”, “cư
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Suy luận logic và toán đếm” v
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đếm bằng quy tắc cộng, nhân, bù trừ
+
+> **BẪY — Cộng thẳng hai nhóm khi chúng có phần tử chung..**
 
 **Các bước giải**
 

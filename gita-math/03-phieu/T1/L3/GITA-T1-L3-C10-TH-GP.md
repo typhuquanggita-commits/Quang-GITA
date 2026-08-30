@@ -656,9 +656,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
 | IV.4 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | IV.5 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
-| V.3 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.3 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.4 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 | V.5 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 

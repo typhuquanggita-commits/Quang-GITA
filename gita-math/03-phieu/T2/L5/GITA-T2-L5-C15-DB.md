@@ -429,6 +429,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài C.3
 **Đáp số:** a) 116 · b) 48 · c) 20 · d) 177 · e) 165 · f) 64 · g) 186

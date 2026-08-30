@@ -248,12 +248,12 @@ g) 33 × 9
 
 Tìm x, trình bày từng bước.
 
-a) x : 2 + 90 = 114
-b) x × 8 − 10 = 40
-c) 111 − x = 58
+a) x : 5 + 47 = 53
+b) 15 − x = 10
+c) (x + 58) × 6 = 666
 d) x × 6 + 77 = 389
-e) x × 3 − 29 = 114
-f) x × 4 + 61 = 173
+e) (x − 29) × 3 = 27
+f) x × 4 − 61 = 51
 
 ### Bài 4. (5 điểm) Ghép hình vuông thành hình chữ nhật
 
@@ -275,7 +275,7 @@ d) An và Khánh có tất cả 56 quyển vở. An có nhiều hơn Khánh 14 q
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bài toán bắt tay
 
@@ -344,12 +344,14 @@ e) 2 + 4 + 6 + … + 40
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.3
 **Đáp số:** a) 638 · b) 237 · c) 2 620 · d) 3 700 · e) 837 · f) 1 035 · g) 804
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) 579 · b) 596 · c) 446 · d) 236 · e) 279
@@ -386,6 +388,7 @@ e) 2 + 4 + 6 + … + 40
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.5
 **Đáp số:** a) 13 · b) (25 − 7) : 2 + 1 = 10 nhà · c) 7 + (3 − 1) × 2 = 11 · d) (21 − 7) : 2 + 1 = 8 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
@@ -438,9 +441,9 @@ e) 2 + 4 + 6 + … + 40
 **Gợi ý 3 tầng:** (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
 
 ### Bài IV.3
-**Đáp số:** a) x = 48 · b) x = 50 : 8 · c) x = 53 · d) x = 52 · e) x = 143 : 3 · f) x = 28
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 30 · b) x = 5 · c) x = 53 · d) x = 52 · e) x = 38 · f) x = 28
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -453,21 +456,21 @@ e) 2 + 4 + 6 + … + 40
 
 ### Bài IV.5
 **Đáp số:** a) Vy: 110 quyển, Ngọc: 64 quyển · b) Thảo: 49 quyển, Ngọc: 25 quyển · c) Tuấn: 77 quyển, Thảo: 73 quyển · d) An: 35 quyển, Khánh: 21 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài V.1
 **Đáp số:** a) 6 cái · b) 28 cái · c) 15 cái · d) 45 cái · e) 10 cái
-**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi bạn bắt tay với (n − 1) bạn còn lại nên có n × (n − 1) lượt. Nhưng mỗi cái bắt tay có hai người tham gia nên bị đếm **hai lần**; vì vậy phải chia cho 2.
+**Hướng giải:** Mỗi bạn bắt tay với (n − 1) bạn còn lại nên có n × (n − 1) lượt. Nhưng mỗi cái bắt tay có hai người tham gia nên bị đếm **hai lần**; vì vậy phải chia cho 2.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**.
 **Lỗi thường gặp:** Quên chia 2 nên đáp số gấp đôi. Phòng: Thử với 3 bạn: phải ra 3 cái bắt tay, không phải 6.
 **Gợi ý 3 tầng:** (1) Mỗi bạn bắt tay với mấy bạn? — (2) Nhân với số bạn thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia cho 2.
 
 ### Bài V.2
 **Đáp số:** a) 55 · b) 325 · c) 210 · d) 5 050 · e) 1 275
-**Hướng giải:** BẪY — Số số hạng lẻ thì còn số ở giữa. Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
+**Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ra ba cặp đầu để thấy rõ các cặp có cùng tổng.
 **Gợi ý 3 tầng:** (1) Ghép số đầu với số cuối, tổng bằng bao nhiêu? — (2) Ghép số thứ hai với số áp chót, tổng bằng bao nhiêu? — (3) Có bao nhiêu cặp như thế?

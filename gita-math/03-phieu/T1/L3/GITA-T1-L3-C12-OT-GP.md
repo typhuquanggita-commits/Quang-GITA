@@ -58,7 +58,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.2** — a) 20 m · b) 6 000 000 đồng · c) 30 chai · d) 9 000 000 đồng · e) 33 m · f) 70 chai
 - **Bài IV.3** — a) 500 g · b) 500 g · c) 250 g · d) 1 500 g
 - **Bài IV.4** — a) mẹ 55 tuổi, con 11 tuổi · b) 32 chiếc · c) 10 000 đồng · d) 60 000 đồng · e) 32 chiếc
-- **Bài IV.5** — a) x = 343 : 5 · b) x = 12 · c) x = 46 · d) x = 66 · e) x = 36 · f) x = 82 : 7
+- **Bài IV.5** — a) x = 30 · b) x = 41 · c) x = 37 · d) x = 276 · e) x = 57 · f) x = 9
 
 **Phần V**
 
@@ -120,8 +120,6 @@ Thử lại: 58 + 38 = 96 ✓ và 58 − 38 = 20 ✓
 
 ### Bài I.3 — Chu vi và diện tích hình chữ nhật, hình vuông
 
-> **BẪY — Đơn vị diện tích.**
-
 **Các bước giải**
 
 Xét ý a: Hình chữ nhật dài 19 cm, rộng 7 cm. Tính diện tích.
@@ -181,8 +179,6 @@ Kết quả: **123 kg**.
 *Điểm chốt:* Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
 
 ### Bài II.1 — Xem đồng hồ và tính thời gian
-
-> **BẪY — Phần phút vượt quá 60.**
 
 **Các bước giải**
 
@@ -394,6 +390,8 @@ Kết quả: **ô (Trang; cam)**.
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Ngọc và Yến có tất cả 114 quyển vở. Ngọc có nhiều hơn Yến 10 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -413,6 +411,8 @@ Kết quả: **Ngọc: 62 quyển, Yến: 52 quyển**.
 *Điểm chốt:* Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -482,19 +482,17 @@ Thử lại: 55 − 11 = 44 ✓
 
 ### Bài IV.5 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 5 − 43 = 300
+Xét **(x + 36) × 6 = 396**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 343 : 5**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 30**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -627,7 +625,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | Bài toán đại lượng nhiều bước | Nhân, trừ; đơn vị khối lượng, độ dài, dung tích | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt | Tính đại lượng trung gian rồi trả lời | Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. | 20 m · 6 000 000 đồng · 30 chai · 9 000 000 đồng… |
 | IV.3 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 500 g · 500 g · 250 g · 1 500 g |
 | IV.4 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” | Tìm đại lượng trung gian rồi trả lời câu hỏi | Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số. | mẹ 55 tuổi, con 11 tuổi · 32 chiếc · 10 000 đồng · 60 000 đồng… |
-| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 343 : 5 · x = 12 · x = 46 · x = 66… |
+| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 30 · x = 41 · x = 37 · x = 276… |
 | V.1 | Giả thiết tạm | Phương pháp giả thiết tạm | Hai loại con vật, biết tổng số con và tổng số chân | Giả sử đồng nhất → tính chênh → chia cho hiệu số chân | Số chó = (số chân − 2 × số con) : 2. | Giả thiết tạm · Phương pháp giả thiết tạm · Hai loại con vật, biết tổng số con và tổng số chân · Giả sử đồng nhất → tính chênh → chia cho hiệu số chân… |
 | V.2 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | Quan hệ nhiều hơn – ít hơn, gấp – kém · Bốn phép tính, từ khoá chỉ quan hệ · Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” · Đọc vị từ khoá → chọn phép tính… |
 | V.3 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | Tổng – hiệu có lời văn · Công thức tổng – hiệu, sơ đồ đoạn thẳng · “Có tất cả …” và “… nhiều hơn … là …” · Đọc vị tổng và hiệu → sơ đồ → công thức… |
@@ -659,7 +657,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
 | IV.3 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.4 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
-| IV.5 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.5 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | V.1 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | V.2 | TD1, TD2 | Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài. |
 | V.3 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |

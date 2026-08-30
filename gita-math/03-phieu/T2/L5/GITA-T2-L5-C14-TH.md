@@ -278,7 +278,7 @@ f) Một cửa hàng có 12 thùng nước mắm, mỗi thùng 18 lít. Cửa h�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
 
@@ -355,30 +355,35 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.4
 **Đáp số:** a) 5 giờ · b) 348 · c) 7 giờ 52 phút · d) 1 giờ 9 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.5
 **Đáp số:** a) 7 900 000 · b) 42 000 · c) 6 800 · d) 7 300 000 · e) 500 000 · f) 56 000
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài II.1
 **Đáp số:** a) < · b) > · c) < · d) < · e) < · f) > · g) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.2
 **Đáp số:** a) 8 600 · b) 17 · c) 510 000 · d) 850 000 · e) 5 100 · f) 64 · g) 5 700
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.3
 **Đáp số:** a) 2 801 · b) 24 348 · c) 3 015 · d) 21 336
@@ -391,6 +396,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài II.5
 **Đáp số:** a) 750 nghìn đồng · b) 2 233 nghìn đồng · c) 288 nghìn đồng · d) 371 nghìn đồng · e) 952 nghìn đồng

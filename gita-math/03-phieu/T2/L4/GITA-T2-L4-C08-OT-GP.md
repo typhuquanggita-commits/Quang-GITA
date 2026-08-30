@@ -382,6 +382,8 @@ Kết quả: **14 giờ 5 phút**.
 
 ### Bài IV.1 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: (1 phần 13 + 8 phần 13) × 1 phần 2
@@ -467,6 +469,8 @@ Kết quả: **35 quyển**.
 *Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 
 ### Bài IV.5 — Bài toán đại lượng nhiều bước
+
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
 
 **Các bước giải**
 

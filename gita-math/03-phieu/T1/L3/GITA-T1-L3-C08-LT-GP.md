@@ -504,6 +504,8 @@ Làm tương tự cho ba bạn còn lại rồi cộng để có tổng 115.
 
 ### Bài E.2 — Đọc bảng số liệu
 
+> **BẪY — Đọc lệch cột nên gán nhầm số cho bạn khác..**
+
 **Các bước giải**
 
 Xét ý a: Cả bốn bạn gấp được bao nhiêu bông hoa?
@@ -543,8 +545,6 @@ Cả lớp: cộng theo **cột** — nam 29 bạn, nữ 23 bạn, tất cả **
 *Phải chắc trước khi làm bài này:* Kỹ năng đọc bảng và cộng trừ trong phạm vi 100.
 
 ### Bài E.4 — Nhân, chia với số có một chữ số
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 

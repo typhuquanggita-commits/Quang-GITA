@@ -438,6 +438,8 @@ Kết quả: **892**.
 
 ### Bài IV.4 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -480,6 +482,8 @@ Kết quả: **số nguyên tố**.
 
 ### Bài V.1 — Số dư của tổng — lập luận không cần tính hết
 
+> **BẪY — Cộng hết cả dãy rồi mới xét chia hết.**
+
 **Các bước giải**
 
 Xét ý a: Dãy số: 166, 273, 391, 661, 824. Có bao nhiêu số trong dãy chia hết cho 3?
@@ -520,8 +524,6 @@ Kết quả: **6 dư 2**.
 
 ### Bài V.3 — Đếm chữ số dùng để đánh số trang
 
-> **BẪY — Nhóm cuối không đầy đủ.**
-
 **Các bước giải**
 
 Xét ý a: Một quyển sách có 1 186 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
@@ -541,8 +543,6 @@ Kết quả: **3 637**.
 *Điểm chốt:* Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
 
 ### Bài V.4 — Tìm số có ba chữ số thoả ba điều kiện
-
-> **BẪY — Bỏ sót nghiệm hoặc nhận nghiệm có chữ số hàng trăm bằng 0.**
 
 **Các bước giải**
 
@@ -642,12 +642,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD2, TD1 | Các ước luôn đi thành **cặp** nhân với nhau bằng chính số đó. |
 | IV.2 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
 | IV.3 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
-| IV.4 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.4 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.5 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
 | V.1 | TD2, TD6 | Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất. |
 | V.2 | TD3, TD6 | Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất. |
 | V.3 | TD4, TD6 | Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại. |
-| V.4 | TD1, TD3, TD4 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
+| V.4 | TD1, TD3, TD4, TD5 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
 | V.5 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |
 
 ---

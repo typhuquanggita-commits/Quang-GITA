@@ -480,6 +480,8 @@ Kết quả: **Quy tắc làm tròn, giá trị hàng**.
 
 ### Bài E.1 — Đọc chỉ số công tơ điện
 
+> **BẪY — Lấy thẳng chỉ số cuối làm số điện đã dùng..**
+
 **Các bước giải**
 
 **Chỉ số công tơ không phải là số điện đã dùng.** Nó là tổng số điện cả nhà đã dùng từ ngày lắp công tơ tới giờ, nên bao giờ cũng tăng.
@@ -543,8 +545,6 @@ Diện tích: 12 × 6 = **72 m²** — chú ý đơn vị là mét vuông, khác
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật.
 
 ### Bài E.4 — Phép chia có dư
-
-> **BẪY — Số dư phải bé hơn số chia.**
 
 **Các bước giải**
 

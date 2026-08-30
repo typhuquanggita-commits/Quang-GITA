@@ -283,7 +283,7 @@ f) Đoạn đường dài 75 m, trồng cây cách nhau 3 m, chỉ trồng ở m
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm đoạn thẳng và tam giác
 
@@ -348,24 +348,28 @@ f) Có 3 tiết thì có mấy lần nghỉ giữa tiết?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.2
 **Đáp số:** a) 329 · b) 6 768 · c) 713 · d) 915 · e) 208
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 12 · b) 5 · c) 11 · d) 5 · e) 11 · f) 12
 **Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài I.4
 **Đáp số:** a) 13 · b) 6 · c) 14 · d) 17 · e) 2 · f) 13 · g) 16 · h) 16
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài I.5
 **Đáp số:** a) 5 · b) 1 · c) 5 · d) 9 · e) 10 000 + 9 000 + 500 + 50 + 1 · f) 21 · g) 19 552
@@ -471,7 +475,7 @@ f) Có 3 tiết thì có mấy lần nghỉ giữa tiết?
 ### Bài V.1
 **Đáp số:** a) 6 · b) 4 · c) 10 · d) 5 · e) 15 · f) 5
 **Hướng giải:** Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 

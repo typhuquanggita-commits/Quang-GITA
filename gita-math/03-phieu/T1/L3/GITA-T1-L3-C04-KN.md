@@ -345,9 +345,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 31 lá cờ · b) 71 lá cờ · c) 128 lá cờ · d) 60 lá cờ · e) 92 lá cờ · f) 89 lá cờ
-**Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
+**Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài A.4
 **Đáp số:** a) 45 · b) 20 · c) 41 · d) 20 · e) 53
@@ -357,9 +358,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.5
 **Đáp số:** a) 196 · b) 53 · c) 60 · d) 49 · e) 100 · f) 30
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -431,7 +433,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài D.2
 **Đáp số:** a) “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” · b) Tính từng bước, bám vào tổng có đổi hay không · c) Nhầm hai tình huống: cho thêm và chuyển qua lại. · d) Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia · e) Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
@@ -458,14 +460,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Giải toán một bước, gấp và giảm số lần” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tìm trung bình cộng.” · b) Từ khoá “trung bình cộng”, “trung bình mỗi …” · c) Định nghĩa trung bình cộng · d) Tìm trung bình cộng của 12, 18 và 30. → 20 · e) Đếm sai số lượng số hạng nên chia nhầm. · f) Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất.
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
+**Hướng giải:** BẪY — Đếm sai số lượng số hạng nên chia nhầm.. Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
 **Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 **Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

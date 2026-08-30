@@ -380,6 +380,8 @@ Kết quả: **88**.
 
 ### Bài IV.1 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 4 + 81 = x × 7
@@ -446,6 +448,8 @@ Lặp lại cách ấy, sau 3 lần thì còn đúng một gói.
 
 ### Bài IV.4 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 50
@@ -465,8 +469,6 @@ Kết quả: **7 650**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.5 — Tính tiền vé cho cả gia đình
-
-> **BẪY — Dùng cả dữ kiện thừa.**
 
 **Các bước giải**
 
@@ -646,7 +648,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.2 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
-| IV.4 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.4 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.5 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | V.1 | TD5, TD3 | Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**. |
 | V.2 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |

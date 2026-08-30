@@ -280,7 +280,7 @@ e) Ghép 5 hình vuông cạnh 15 cm thành một hàng ngang. Tính chu vi và 
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -358,6 +358,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài I.2
 **Đáp số:** a) 38 cm · b) 19 cm · c) B · d) B
@@ -382,6 +383,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) 7 giờ 25 phút · b) 10 giờ 45 phút · c) 530 · d) 8 giờ 5 phút · e) 10 giờ 45 phút · f) 110 · g) 560
@@ -445,7 +447,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) Sơn: 111 quyển, Đức: 79 quyển · b) Minh: 95 quyển, Vy: 51 quyển · c) Khánh: 28 quyển, Hùng: 22 quyển · d) Minh: 33 quyển, Hùng: 19 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -473,7 +475,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) chu vi 120 cm, diện tích 576 cm² · b) chu vi 36 cm, diện tích 72 cm² · c) chu vi 130 cm, diện tích 676 cm² · d) chu vi 48 cm, diện tích 80 cm² · e) chu vi 180 cm, diện tích 1 125 cm²
-**Hướng giải:** BẪY — Chu vi không cộng như diện tích. Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
+**Hướng giải:** Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Diện tích cộng được, **chu vi thì không**.
 **Lỗi thường gặp:** Nhân chu vi một hình vuông với số hình. Phòng: Vẽ hình ghép và tô đậm đường bao trước khi tính.
 **Gợi ý 3 tầng:** (1) Chiều dài hình mới bằng bao nhiêu? — (2) Chiều rộng hình mới bằng bao nhiêu? — (3) Áp công thức chu vi và diện tích hình chữ nhật.
@@ -509,7 +511,7 @@ f) Cột 6 — Kết quả?
 ### Bài V.5
 **Đáp số:** a) Đếm hình bằng quy tắc chọn hai điểm · b) Đếm cặp · c) Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh · d) Quy về số cách chọn hai điểm · e) Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc là xong. · f) 15 · 6 · 21 · 6…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 

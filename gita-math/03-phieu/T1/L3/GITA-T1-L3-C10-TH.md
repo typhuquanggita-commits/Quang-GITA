@@ -281,7 +281,7 @@ e) Số có hai chữ số 18; viết hai chữ số theo thứ tự ngược l�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -349,30 +349,35 @@ f) Vừa gà vừa chó có 36 con, đếm được 114 chân. Hỏi có bao nhi
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.2
 **Đáp số:** a) 510 cm² · b) 240 cm · c) 106 cm · d) 2 209 cm² · e) 60 cm · f) 441 cm² · g) 76 cm · h) 72 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.3
 **Đáp số:** a) áp đúng đỉnh góc và một cạnh của góc vào ê ke · b) 4 góc vuông · c) 1 góc vuông · d) 9 cm · e) AM = MB · f) không chắc, còn phải có AM = MB · g) không, vì AM khác nửa AB
 **Hướng giải:** Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Nằm giữa **chưa đủ** để là trung điểm.
 **Lỗi thường gặp:** Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. Phòng: Đo cả hai đoạn AM và MB rồi mới kết luận.
+**Chú ý:** Nằm giữa nhưng không chia đôi.
 
 ### Bài I.4
 **Đáp số:** a) 25 lá cờ · b) 260 lá cờ · c) 59 lá cờ · d) 99 lá cờ · e) 49 lá cờ
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.5
 **Đáp số:** a) 15 · b) 19 · c) 7 · d) 11 · e) 11 · f) 13
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài II.1
 **Đáp số:** a) 9 cách · b) 6 cách · c) 12 cách · d) 15 cách · e) 12 cách
@@ -391,6 +396,7 @@ f) Vừa gà vừa chó có 36 con, đếm được 114 chân. Hỏi có bao nhi
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài II.4
 **Đáp số:** a) 388 · b) 200 · c) 478 · d) 204 · e) 308 · f) 355 · g) 200
@@ -472,7 +478,7 @@ f) Vừa gà vừa chó có 36 con, đếm được 114 chân. Hỏi có bao nhi
 ### Bài V.1
 **Đáp số:** a) 99 · b) 132 · c) 66 · d) 44 · e) 55 · f) 66
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
@@ -486,7 +492,7 @@ f) Vừa gà vừa chó có 36 con, đếm được 114 chân. Hỏi có bao nhi
 ### Bài V.3
 **Đáp số:** a) 6 · b) 4 · c) 10 · d) 3 · e) 6 · f) 3
 **Hướng giải:** Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 

@@ -361,12 +361,14 @@ f) Cả lớp nam nhiều hơn nữ hay nữ nhiều hơn nam, và chênh mấy 
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài A.2
 **Đáp số:** a) 9 472 · b) 3 245 · c) 233 979 · d) 113 145 · e) 6 511 · f) 75 060 · g) 83 368 · h) 298 410
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.3
 **Đáp số:** a) 8 599 227 và 8 599 229 · b) < · c) 40 000 · d) 1 899 600 · e) 200 · f) 2 217 000 · g) > · h) 2 772 295 và 2 772 297

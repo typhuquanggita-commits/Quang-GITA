@@ -280,7 +280,7 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -459,7 +459,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.3
 **Đáp số:** a) Dũng: 101 quyển, Minh: 71 quyển · b) Quân: 43 quyển, Đức: 29 quyển · c) Sơn: 27 quyển, Ngọc: 19 quyển · d) An: 28 quyển, Phúc: 24 quyển · e) Chi: 55 quyển, Sơn: 27 quyển · f) Vy: 108 quyển, Lan: 74 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -495,7 +495,7 @@ f) Cột 6 — Kết quả?
 ### Bài V.3
 **Đáp số:** a) Toán điển hình: gấp, kém, nhiều hơn, ít hơn · b) Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia · c) “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” · d) Tính từng bước, bám vào tổng có đổi hay không · e) Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu. · f) 68 · 102 · 34 · 49…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 

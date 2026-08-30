@@ -333,9 +333,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 33 · b) 64 · c) 58 · d) 14 · e) 30 · f) 44 · g) 18
-**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài A.2
 **Đáp số:** a) 512 · b) 3 125 · c) 60 000 · d) 81
@@ -357,9 +358,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.5
 **Đáp số:** a) 204 · b) 258 · c) 294 · d) 321 · e) 420 · f) 456
-**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -458,14 +460,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Đánh số trang, ma trận số và dãy số dạng đề chuyên” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đếm số lần xuất hiện của một chữ số.” · b) Câu hỏi “chữ số … xuất hiện bao nhiêu lần” · c) Dãy cách đều, cấu tạo số · d) Từ 1 đến 50, chữ số 3 xuất hiện bao nhiêu lần? → 15 · e) Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. · f) Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100).
-**Hướng giải:** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Hướng giải:** BẪY — Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện.. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
 **Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

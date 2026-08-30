@@ -414,6 +414,8 @@ Kết quả: **500 g**.
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 25 × 11 = 275 (kg).
@@ -480,6 +482,8 @@ Thử lại: (38 + 31) × 2 = 138 ✓
 
 ### Bài IV.5 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Nam và An có tất cả 42 quyển vở. Nam có nhiều hơn An 12 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -500,8 +504,6 @@ Kết quả: **Nam: 27 quyển, An: 15 quyển**.
 
 ### Bài V.1 — Tính nhanh tổng các số tự nhiên liên tiếp
 
-> **BẪY — Số số hạng lẻ thì còn số ở giữa.**
-
 **Các bước giải**
 
 Xét ý a: 1 + 2 + 3 + … + 10
@@ -521,8 +523,6 @@ Kết quả: **55**.
 *Điểm chốt:* Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**.
 
 ### Bài V.2 — Cân đĩa và quả cân
-
-> **BẪY — Phép chia có dư.**
 
 **Các bước giải**
 

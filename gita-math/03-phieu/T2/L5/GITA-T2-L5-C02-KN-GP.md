@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đổi đơn vị đo diện tích
 
-> **BẪY — 100 lần chứ không phải 10 lần.**
-
 **Các bước giải**
 
 Xét ý a: 29 ha = … m²
@@ -117,8 +115,6 @@ Kết quả: **1 phần 4**.
 *Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
 
 ### Bài A.3 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **“Dung dịch … %”, “đổ thêm nước”, “bỏ thêm
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “So sánh phân số, số thập phân
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Ba dạng toán tỉ số phần trăm
+
+> **BẪY — Nhầm dạng 2 với dạng 3 nên nhân thay vì chia..**
 
 **Các bước giải**
 

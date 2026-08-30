@@ -270,7 +270,7 @@ f) Tổ Ba có 235 quyển sách, đội Một có 47 quyển. Hỏi phải chuy
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tỉ số thay đổi khi một đại lượng thay đổi
 
@@ -332,6 +332,7 @@ e) Một người đi 3 giờ đầu với vận tốc 12 km/giờ, 3 giờ sau 
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.2
 **Đáp số:** a) số lớn 178, số bé 154 · b) số lớn 1 157, số bé 627 · c) số lớn 1 042, số bé 532 · d) số lớn 363, số bé 319 · e) số lớn 526, số bé 268 · f) số lớn 271, số bé 203
@@ -350,6 +351,7 @@ e) Một người đi 3 giờ đầu với vận tốc 12 km/giờ, 3 giờ sau 
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.5
 **Đáp số:** a) 152 · b) 100 · c) 87 · d) 14 · e) 160 · f) 58 · g) 156

@@ -284,7 +284,7 @@ g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -470,14 +470,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) 168 cm² · b) 51 cm² · c) 78 cm² · d) 63 cm² · e) 117 cm² · f) 205 cm²
-**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+**Hướng giải:** BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt. Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
 **Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
 **Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
 
 ### Bài IV.5
 **Đáp số:** a) 142 m · b) 1 258 m² · c) 28,4 giây · d) 102 m² · e) 6 m · f) 1 480 m² · g) 222 m²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+**Hướng giải:** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?

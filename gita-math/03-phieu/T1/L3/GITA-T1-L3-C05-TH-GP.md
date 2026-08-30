@@ -388,6 +388,8 @@ Kết quả: **210**.
 
 ### Bài IV.1 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 7 tấm vải, mỗi tấm dài 6 m. Cắt mỗi tấm đi 1 m. Hỏi còn lại tất cả bao nhiêu mét vải?
@@ -527,8 +529,6 @@ Bước 5 — giờ tan học: 6 giờ 30 phút cộng 135 phút = 8 giờ 45 ph
 *Phải chắc trước khi làm bài này:* Quan hệ giờ – phút và bài toán trồng cây.
 
 ### Bài V.2 — Cân đĩa và quả cân
-
-> **BẪY — Phép chia có dư.**
 
 **Các bước giải**
 
@@ -675,7 +675,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | TD3, TD6 | Số lần nghỉ = số tiết − 1, không phải bằng số tiết. |
 | V.2 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
 | V.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
-| V.4 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.4 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.5 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 
 ---

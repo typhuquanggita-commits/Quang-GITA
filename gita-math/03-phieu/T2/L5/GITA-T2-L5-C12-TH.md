@@ -279,7 +279,7 @@ e) Có nhiều tờ tiền loại 2 nghìn đồng và loại 5 nghìn đồng. 
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Trắc nghiệm nhanh — sáu kỹ thuật đếm
 
@@ -354,12 +354,14 @@ f) Có 10 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.3
 **Đáp số:** a) 40 cách · b) 14 cách · c) 11 bạn · d) 13 cách · e) 108 cách · f) 5 bạn
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.4
 **Đáp số:** a) ô (An; Tiếng Việt) · b) toàn bộ hàng An và toàn bộ cột Tiếng Việt · c) ô (Minh; Mĩ thuật) · d) Tiếng Anh · e) Mĩ thuật · f) phương pháp lập bảng và loại trừ
@@ -442,8 +444,8 @@ f) Có 10 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít
 
 ### Bài IV.2
 **Đáp số:** a) 8 · b) 164 · c) 3 440 · d) 86 · e) 172 · f) 172
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -463,7 +465,7 @@ f) Có 10 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít
 
 ### Bài IV.5
 **Đáp số:** a) 3 cách · b) 5 cách · c) 4 cách · d) 5 cách · e) 3 cách
-**Hướng giải:** BẪY — Xét thiếu trường hợp. Chọn loại tiền **mệnh giá lớn** làm ẩn để thử, vì nó cho ít khả năng hơn. Với mỗi khả năng, kiểm phần còn lại có chia hết cho mệnh giá kia không.
+**Hướng giải:** Chọn loại tiền **mệnh giá lớn** làm ẩn để thử, vì nó cho ít khả năng hơn. Với mỗi khả năng, kiểm phần còn lại có chia hết cho mệnh giá kia không.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Phải thử từ 0 tờ, không được bỏ qua trường hợp chỉ dùng một loại.
 **Lỗi thường gặp:** Bắt đầu thử từ 1 tờ, làm mất trường hợp không dùng loại ấy. Phòng: Kẻ bảng hai cột và điền từ 0 trở đi, đừng nhảy cóc.
 **Gợi ý 3 tầng:** (1) Nên chọn loại tiền nào làm ẩn để phải thử ít lần hơn? — (2) Nhiều nhất có thể dùng bao nhiêu tờ loại ấy? — (3) Thử từ 0 tờ trở đi, mỗi lần kiểm phần còn lại có chia hết không.

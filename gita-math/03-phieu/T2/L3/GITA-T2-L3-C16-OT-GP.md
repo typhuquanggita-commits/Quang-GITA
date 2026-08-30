@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 235 : 8 · b) x = 47 · c) x = 22 · d) x = 148
+- **Bài IV.1** — a) x = 34 · b) x = 55 · c) x = 27 · d) x = 31
 - **Bài IV.2** — a) 88 000 đồng · b) 50 chiếc · c) mẹ 24 tuổi, con 6 tuổi · d) 30 chiếc
 - **Bài IV.3** — a) 9 chiếc · b) 5 chiếc · c) 7 chiếc · d) 5 chiếc
 - **Bài IV.4** — a) Ngọc: 106 quyển, Phúc: 68 quyển · b) Yến: 128 quyển, Dũng: 72 quyển · c) Yến: 18 quyển, Sơn: 10 quyển · d) Trang: 60 quyển, Bình: 48 quyển · e) Sơn: 126 quyển, Bình: 74 quyển
@@ -386,19 +386,17 @@ Kết quả: **6**.
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 8 − 67 = 168
+Xét **x × 6 − 7 = 197**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 235 : 8**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 34**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -451,6 +449,8 @@ Kết quả: **9 chiếc**.
 *Điểm chốt:* Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
 
 ### Bài IV.4 — Tìm hai số khi biết tổng và hiệu
+
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
 
 **Các bước giải**
 
@@ -615,7 +615,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Suy luận loại trừ có bảng | Phương pháp lập bảng | Mỗi người ứng với đúng một đối tượng | Kẻ bảng, đánh dấu, lan toả | Bắt đầu từ dữ kiện khẳng định trước dữ kiện phủ định. | ô (Trang; táo) · không · ô (Tuấn; lê) · xoài… |
 | III.4 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | 110 · Thứ Sáu (30 quyển) · Thứ Ba (8 quyển) · 22… |
 | III.5 | Đếm hình trong lưới | Quy tắc đếm | Lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ | Số cách chọn 2 trong k là k × (k − 1) : 2. | 6 · 3 đường ngang, 4 đường dọc · 18 · 8… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 235 : 8 · x = 47 · x = 22 · x = 148 |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 34 · x = 55 · x = 27 · x = 31 |
 | IV.2 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” | Tìm đại lượng trung gian rồi trả lời câu hỏi | Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số. | 88 000 đồng · 50 chiếc · mẹ 24 tuổi, con 6 tuổi · 30 chiếc |
 | IV.3 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 9 chiếc · 5 chiếc · 7 chiếc · 5 chiếc |
 | IV.4 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | Ngọc: 106 quyển, Phúc: 68 quyển · Yến: 128 quyển, Dũng: 72 quyển · Yến: 18 quyển, Sơn: 10 quyển · Trang: 60 quyển, Bình: 48 quyển… |
@@ -647,7 +647,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD6 | Mỗi dấu ✔ **lan toả** ra cả hàng và cả cột. |
 | III.4 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một ngày. |
 | III.5 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | IV.3 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | IV.4 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |

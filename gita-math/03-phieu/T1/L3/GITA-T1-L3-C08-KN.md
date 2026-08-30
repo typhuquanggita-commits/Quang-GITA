@@ -335,27 +335,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 29 · b) 44 · c) 11 · d) 222
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.2
 **Đáp số:** a) 16 · b) 11 · c) 4 · d) 12 · e) 10 · f) 13 · g) 20
-**Hướng giải:** BẪY — Chia chứ không nhân. Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
+**Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.3
 **Đáp số:** a) 703 · b) 697 · c) 951 · d) 1 750 · e) 936 · f) 3 262
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.4
 **Đáp số:** a) 12 · b) 11 · c) 4 · d) 7 · e) 11 · f) 13
 **Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.5
 **Đáp số:** a) 2 604 · b) 49 173 · c) 51 583 · d) 94 202 · e) 99 883
@@ -460,14 +464,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Một phần mấy, tỉ số và thống kê” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tìm số khi biết một phần mấy của nó.” · b) “Một phần mấy của một số là …, tìm số đó” · c) Quan hệ ngược của phép chia · d) 1 phần 3 của một số là 7. Tìm số đó. → 21 · e) Chia thay vì nhân. · f) Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay.
-**Hướng giải:** Nếu một phần mấy của một số bằng a thì số đó bằng a nhân với mẫu số. Vì số đó được chia thành mấy phần bằng nhau, mỗi phần bằng a.
+**Hướng giải:** BẪY — Chia thay vì nhân.. Nếu một phần mấy của một số bằng a thì số đó bằng a nhân với mẫu số. Vì số đó được chia thành mấy phần bằng nhau, mỗi phần bằng a.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
 **Lỗi thường gặp:** Chia thay vì nhân. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

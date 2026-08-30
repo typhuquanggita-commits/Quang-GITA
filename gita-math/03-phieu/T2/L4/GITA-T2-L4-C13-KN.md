@@ -348,21 +348,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 2 600 · b) 2 300 · c) 290 000 · d) 8 300
-**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài A.4
 **Đáp số:** a) 770 · b) 78 000 · c) 74 000 · d) 60 000 · e) 890 000
-**Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài A.5
 **Đáp số:** a) 9 giờ 42 phút · b) 8 giờ 29 phút · c) 2 giờ 45 phút · d) 355 · e) 8 giờ 45 phút · f) 6 giờ 49 phút · g) 5 giờ 48 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -461,14 +464,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Đại lượng, đo lường và toán thực tế” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đại lượng khối lượng, chia phần và làm tròn lên.” · b) Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” · c) Bảng đơn vị khối lượng; phép chia có dư · d) 3 tấn 4 tạ 50 kg = … kg → 3 450 kg · e) Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. · f) 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0.
-**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+**Hướng giải:** BẪY — Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe.. Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
 **Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

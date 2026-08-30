@@ -266,7 +266,7 @@ d) Có 7 tấm vải, mỗi tấm dài 7 m. Cắt mỗi tấm đi 1 m. Hỏi cò
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -431,7 +431,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) Dũng: 15 quyển, Đức: 11 quyển · b) Dũng: 112 quyển, Ngọc: 82 quyển · c) Yến: 99 quyển, Dũng: 61 quyển · d) Vy: 47 quyển, Nam: 25 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -459,7 +459,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) 6 m · b) 70 chai · c) 6 375 000 đồng · d) 42 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.

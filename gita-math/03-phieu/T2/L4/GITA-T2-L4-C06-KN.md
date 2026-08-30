@@ -343,9 +343,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 51 336 · b) 143 189 · c) 6 512 · d) 120 992 · e) 6 885 · f) 308 806 · g) 233 662 · h) 483 981
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.3
 **Đáp số:** a) 7 508 · b) 9 306 · c) 4 637 000 · d) 171 400 · e) 3 240 000 · f) 73 350
@@ -361,9 +362,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.5
 **Đáp số:** a) 324 · b) 2 520 · c) 2 520 · d) 2 080 · e) 2 037
-**Hướng giải:** BẪY — Thiếu ngoặc mà vẫn cộng trước. Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
+**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -462,14 +464,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Kỹ thuật tính nhanh, so sánh biểu thức và tìm x” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Nhân nhẩm nhờ tách thừa số.” · b) Thừa số là 9, 11, 19, 21, 99, 101… · c) Nhân một số với một tổng, một hiệu · d) Tính nhẩm: 46 × 11 → 506 · e) Nhân với 10 rồi quên cộng hoặc trừ phần bù. · f) × 11 với số có hai chữ số: viết hai chữ số ra hai đầu, tổng của chúng đặt vào giữa (nhớ sang trái nếu tổng vượt 9).
-**Hướng giải:** Đưa thừa số về dạng tròn chục, tròn trăm cộng hoặc trừ một ít: × 9 = × 10 − 1 lần; × 11 = × 10 + 1 lần; × 99 = × 100 − 1 lần; × 101 = × 100 + 1 lần.
+**Hướng giải:** BẪY — Nhân với 10 rồi quên cộng hoặc trừ phần bù.. Đưa thừa số về dạng tròn chục, tròn trăm cộng hoặc trừ một ít: × 9 = × 10 − 1 lần; × 11 = × 10 + 1 lần; × 99 = × 100 − 1 lần; × 101 = × 100 + 1 lần.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu.
 **Lỗi thường gặp:** Nhân với 10 rồi quên cộng hoặc trừ phần bù. Phòng: Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

@@ -358,18 +358,21 @@ e) Các số nhà trong dãy này là số chẵn hay số lẻ? Vì sao?
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.4
 **Đáp số:** a) 26 · b) 37 · c) 602 · d) 418 · e) 160 · f) 39
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài A.5
 **Đáp số:** a) 14 · b) 14 · c) 15 · d) 17 · e) 20
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài B.1
 **Đáp số:** a) Nhân chia số có năm chữ số và kỹ thuật tính nhanh · b) B — Phép tính & Tính nhanh · c) 5 · d) ở mọi bài thuộc phép tính & tính nhanh, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài nhân, chia số có năm chữ số với số có một chữ số
@@ -489,9 +492,10 @@ e) Các số nhà trong dãy này là số chẵn hay số lẻ? Vì sao?
 
 ### Bài E.4
 **Đáp số:** a) 651 · b) 2 250 · c) 900 dư 1 · d) 326 dư 5 · e) 680 · f) 2 103 · g) 719
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
+**Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 **Gợi ý 3 tầng:** (1) Đặt tính thẳng hàng đơn vị. — (2) Nhân hoặc chia từ trái sang phải với phép chia. — (3) Thử lại bằng phép tính ngược.
 
 ### Bài E.5

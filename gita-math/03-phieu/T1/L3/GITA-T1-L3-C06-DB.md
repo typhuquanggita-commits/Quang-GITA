@@ -342,7 +342,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Tìm x, trình bày từng bước. x × 8 − 68 = 64
+**Đề:** Tìm x, trình bày từng bước. x × 9 − 39 = 150
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -416,6 +416,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài C.1
 **Đáp số:** a) mỗi bạn 5 cái, thừa 5 cái · b) 5 cái · c) 4 cái · d) 6 cái · e) mỗi bạn 6 cái, thừa 2 cái · f) phải là số chia hết cho 9
@@ -434,6 +435,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài C.4
 **Đáp số:** a) 8 300 · b) 74 000 · c) 70 · d) 27 000 · e) 9 000 · f) 1 900
@@ -446,6 +448,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài D.1
 **Đáp số:** a) 39 · b) 177 · c) 43 · d) 132 · e) 180

@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Điền số còn thiếu trong dãy
 
-> **BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng.**
-
 **Các bước giải**
 
 Xét ý a: 12, 27, 42, 57, …, 87
@@ -97,8 +95,6 @@ Kết quả: **72**.
 *Điểm chốt:* Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 
 ### Bài A.2 — Đổi đơn vị đo độ dài và khối lượng
-
-> **BẪY — Chiều đổi đơn vị.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm 
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Dung tích, thời gian và đổi đ�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Số đo có nhiều đơn vị
+
+> **BẪY — Cộng thẳng các số đứng trước những đơn vị khác nhau..**
 
 **Các bước giải**
 

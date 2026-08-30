@@ -55,9 +55,9 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 | Mức | Dấu hiệu nhìn thấy trong đề | Dạng bài | Phương pháp | Lối tắt | Bẫy |
 |:--:|---|---|---|---|---|
-| M1 | Cho chiều dài, chiều rộng hoặc cạnh | Chu vi, diện tích hình cơ bản | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | Đơn vị của diện tích |
-| M1 | Hình vẽ là lưới ô vuông đều | Đếm hình trong lưới | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | Bỏ sót các hình ghép nhiều ô |
-| M1 | Cho chu vi hoặc diện tích và một kích thước | Tìm kích thước từ chu vi, diện tích | Đi ngược công thức, qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | Quên chia đôi chu vi |
+| M1 | Cho chiều dài, chiều rộng hoặc cạnh | Chu vi, diện tích hình cơ bản | Chọn đúng công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức. | — |
+| M1 | Hình vẽ là lưới ô vuông đều | Đếm hình trong lưới | Đếm theo đường kẻ hoặc theo cỡ hình | Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2. | — |
+| M1 | Cho chu vi hoặc diện tích và một kích thước | Tìm kích thước từ chu vi, diện tích | Đi ngược công thức, qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | — |
 | M1 | Đề cho số đo góc hoặc hỏi về cạnh của hình | Nhận biết và phân loại góc | So số đo với hai mốc 90° và 180° | Ê ke chính là một góc vuông cầm tay — áp vào là biết ngay. | — |
 | M2 | Đề cho đáy và chiều cao, hoặc hai đường chéo | Diện tích các hình phẳng cơ bản | Nhận dạng hình rồi chọn công thức | Tam giác bằng nửa hình bình hành cùng đáy cùng chiều cao. | Chia 2 hay không chia 2 |
 | M2 | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” | Chu vi, diện tích trong tình huống thực tế | Đọc vị chu vi hay diện tích rồi tính | Nhìn đơn vị của đáp số: mét thì là chu vi, mét vuông thì là diện tích. | Chu vi hay diện tích |
@@ -94,43 +94,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Dùng ê ke và thước đo góc để kiểm chứng. Góc có số đo 135° là góc gì?
+**Đề 1.** Một căn phòng hình chữ nhật dài **9 m**, rộng **6 m**, lát bằng gạch vuông cạnh **20 cm**. Tính diện tích nền nhà theo mét vuông.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Đếm có hệ thống, nêu cách đếm. Từ một đỉnh của tam giác lớn kẻ 3 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+**Đề 2.** Đọc kĩ xem bài hỏi chu vi hay diện tích. Một mảnh vườn hình chữ nhật dài 75 m, rộng 17 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Vẽ hình minh hoạ phần tăng thêm. Hình chữ nhật dài 9 cm, rộng 4 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+**Đề 3.** Tính theo yêu cầu, ghi rõ đơn vị. Hình chữ nhật có chiều dài 5 cm, chiều rộng 4 cm. Tính diện tích.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Một căn phòng hình chữ nhật dài **8 m**, rộng **5 m**, lát bằng gạch vuông cạnh **20 cm**. Tính diện tích nền nhà theo mét vuông.
+**Đề 4.** Đếm có hệ thống, không đếm mò. Lưới ô vuông gồm 4 hàng và 5 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Chú ý các cạnh bị ghép vào bên trong. Ghép 2 hình vuông cạnh 16 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
+**Đề 5.** Dùng ê ke và thước đo góc để kiểm chứng. Góc có số đo 60° là góc gì?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Vẽ hình và kẻ lưới ra nháp. Một hình chữ nhật 10 cm × 2 cm được phủ kín bằng các hình vuông cạnh 1 cm. Cần bao nhiêu hình vuông?
+**Đề 6.** Chú ý các cạnh bị ghép vào bên trong. Ghép 9 hình vuông cạnh 9 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Áp dụng đúng công thức từng hình. Hình bình hành có đáy 34 cm, chiều cao 5 cm. Tính diện tích.
+**Đề 7.** Vẽ hình và kẻ lưới ra nháp. Một hình chữ nhật 6 cm × 4 cm được phủ kín bằng các hình vuông cạnh 2 cm. Cần bao nhiêu hình vuông?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Vẽ hình và tô phần cần tính trước khi làm. Hình chữ nhật có chiều dài 22 cm, chiều rộng 15 cm. Tính diện tích.
+**Đề 8.** Vẽ hình minh hoạ phần tăng thêm. Hình chữ nhật dài 47 cm, rộng 39 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Làm ngược từ công thức. Hình vuông có chu vi 64 cm. Tính cạnh và diện tích.
+**Đề 9.** Đếm có hệ thống, nêu cách đếm. Từ một đỉnh của tam giác lớn kẻ 2 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Đọc kĩ xem bài hỏi chu vi hay diện tích. Một mảnh vườn hình chữ nhật dài 49 m, rộng 35 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
+**Đề 10.** Một mảnh vườn hình chữ nhật dài **38 m**, rộng **6 m**. Tính chu vi mảnh vườn.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -140,16 +140,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Nhận biết và phân loại góc | Đề cho số đo góc hoặc hỏi về cạnh của hình |
-| 2 | Đếm hình bằng quy tắc chọn hai điểm | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường |
-| 3 | Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” |
-| 4 | Bài toán lát gạch nền nhà | Kích thước một mặt phẳng và kích thước vật dùng để phủ kín nó |
-| 5 | Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” |
-| 6 | Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” |
-| 7 | Diện tích các hình phẳng cơ bản | Đề cho đáy và chiều cao, hoặc hai đường chéo |
-| 8 | Cắt ghép hình, tỉ số diện tích | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” |
-| 9 | Tìm kích thước từ chu vi, diện tích | Cho chu vi hoặc diện tích và một kích thước |
-| 10 | Chu vi, diện tích trong tình huống thực tế | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” |
+| 1 | Bài toán lát gạch nền nhà | Kích thước một mặt phẳng và kích thước vật dùng để phủ kín nó |
+| 2 | Chu vi, diện tích trong tình huống thực tế | Từ khoá “rào xung quanh”, “lát gạch”, “trồng cây quanh” |
+| 3 | Chu vi, diện tích hình cơ bản | Cho chiều dài, chiều rộng hoặc cạnh |
+| 4 | Đếm hình trong lưới | Hình vẽ là lưới ô vuông đều |
+| 5 | Nhận biết và phân loại góc | Đề cho số đo góc hoặc hỏi về cạnh của hình |
+| 6 | Cắt ghép hình, biến thiên chu vi | Từ khoá “ghép”, “cắt thành”, “xếp thành” |
+| 7 | Phủ hình, chia hình | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” |
+| 8 | Biến thiên diện tích theo kích thước | “Tăng chiều dài thêm …”, “gấp đôi chiều …” |
+| 9 | Đếm hình bằng quy tắc chọn hai điểm | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường |
+| 10 | Chu vi hình chữ nhật | Một mảnh đất có kích thước, cần rào hoặc cắm cọc quanh |
 
 ---
 

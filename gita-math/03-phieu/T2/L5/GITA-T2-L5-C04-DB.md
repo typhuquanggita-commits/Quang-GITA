@@ -440,6 +440,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài C.4
 **Đáp số:** a) 287 · b) 126 · c) 89 · d) 89 · e) 164 · f) 25
@@ -452,6 +453,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài D.1
 **Đáp số:** a) 85 · b) 96 · c) 44, 80 · d) 39, 48, 57, 66, 75, 84, 93

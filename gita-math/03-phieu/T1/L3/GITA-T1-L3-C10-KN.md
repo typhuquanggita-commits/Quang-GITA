@@ -338,33 +338,38 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 20 · b) 150 · c) 40 · d) 18 cm · e) 20 cm²
-**Hướng giải:** BẪY — Bỏ sót các hình ghép nhiều ô. Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
+**Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài A.2
 **Đáp số:** a) áp đúng đỉnh góc và một cạnh của góc vào ê ke · b) 4 góc vuông · c) 1 góc vuông · d) 9 cm · e) AM = MB · f) không chắc, còn phải có AM = MB · g) không, vì AM khác nửa AB
-**Hướng giải:** BẪY — Nằm giữa nhưng không chia đôi. Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
+**Hướng giải:** Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Nằm giữa **chưa đủ** để là trung điểm.
 **Lỗi thường gặp:** Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. Phòng: Đo cả hai đoạn AM và MB rồi mới kết luận.
+**Chú ý:** Nằm giữa nhưng không chia đôi.
 
 ### Bài A.3
 **Đáp số:** a) 100 cách · b) 16 bạn · c) 13 cách · d) 10 cách · e) 9 bạn · f) 12 cách
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.4
 **Đáp số:** a) 19 · b) 9 · c) 5 · d) 16 · e) 3 · f) 9
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.5
 **Đáp số:** a) 1 350 cm² · b) 2 704 cm² · c) 68 cm · d) 114 cm · e) 164 cm · f) 116 cm · g) 1 764 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -450,7 +455,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài D.4
 **Đáp số:** a) Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh · b) Quy về số cách chọn hai điểm · c) Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. · d) Đếm cặp · e) Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc là xong.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
@@ -463,14 +468,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Diện tích, ghép hình và đếm hình” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Ghép hình, chu vi và diện tích.” · b) “Ghép … hình vuông thành …” · c) Chu vi, diện tích hình chữ nhật · d) Ghép 3 hình vuông cạnh 4 cm thành hàng. Chu vi bằng bao nhiêu? → 32 cm · e) Nhân chu vi một hình vuông với số hình. · f) Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông.
-**Hướng giải:** Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
+**Hướng giải:** BẪY — Nhân chu vi một hình vuông với số hình.. Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Diện tích cộng được, **chu vi thì không**.
 **Lỗi thường gặp:** Nhân chu vi một hình vuông với số hình. Phòng: Vẽ hình ghép và tô đậm đường bao trước khi tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

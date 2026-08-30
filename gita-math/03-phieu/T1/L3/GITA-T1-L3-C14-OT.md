@@ -278,7 +278,7 @@ f) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -356,6 +356,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài I.2
 **Đáp số:** a) 21 · b) 10 · c) 18 · d) 36 · e) 23

@@ -432,6 +432,8 @@ Lặp lại cách ấy, sau 1 lần thì còn đúng một gói.
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 7 thùng nước, mỗi thùng 24 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -451,6 +453,8 @@ Kết quả: **96 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.4 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -476,8 +480,6 @@ Kết quả: **24 chai**.
 
 ### Bài IV.5 — Nhận ra thừa số 0 để tính tức thì
 
-> **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
-
 **Các bước giải**
 
 Xét ý a: 48 × 11 × (44 − 44)
@@ -497,8 +499,6 @@ Kết quả: **0**.
 *Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 
 ### Bài V.1 — Dãy số lặp lại theo chu kì
-
-> **BẪY — Số dư 0 ứng với phần tử cuối chu kì.**
 
 **Các bước giải**
 

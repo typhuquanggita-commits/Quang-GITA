@@ -289,7 +289,7 @@ d) Đội Một có 184 quyển sách, tổ Một có 46 quyển. Hỏi phải c
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
 
@@ -443,8 +443,8 @@ d) Tích 66 × 901 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.1
 **Đáp số:** a) 91 · b) 186 · c) 2 770 · d) 138,5 · e) 277 · f) 277
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -485,7 +485,7 @@ d) Tích 66 × 901 có chữ số tận cùng là chữ số nào?
 
 ### Bài V.2
 **Đáp số:** a) 153 · b) không thay đổi · c) 153 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
-**Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
+**Hướng giải:** Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
 **Lỗi thường gặp:** Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước?
 **Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?

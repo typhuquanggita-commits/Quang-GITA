@@ -223,10 +223,10 @@ e) Số 615 có chia hết cho 2 không? Vì sao?
 
 Tìm x, trình bày từng bước.
 
-a) x × 7 − 33 = 294
-b) x : 2 + 73 = 98
-c) 60 − x = 36
-d) x × 8 + 23 = 423
+a) (x + 7) × 5 = 275
+b) x × 7 − 19 = 240
+c) x : 7 + 55 = 73
+d) (x − 66) × 4 = 4
 
 ### Bài 2. (5 điểm) Tìm hai số khi biết tổng và hiệu
 
@@ -270,7 +270,7 @@ f) 8 hộp bút có 24 chiếc. Hỏi 4 hộp như thế có bao nhiêu chiếc 
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Cân đĩa và quả cân
 
@@ -336,6 +336,7 @@ f) Cả tổ phải gấp 126 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.2
 **Đáp số:** a) số lớn 181, số bé 115 · b) số lớn 146, số bé 124 · c) số lớn 137, số bé 95 · d) số lớn 69, số bé 57
@@ -348,6 +349,7 @@ f) Cả tổ phải gấp 126 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.4
 **Đáp số:** a) 34 · b) 14 · c) 39 · d) 39
@@ -422,15 +424,15 @@ f) Cả tổ phải gấp 126 bông hoa thì làm trong mấy giờ?
 **Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2. Phòng: Ghi tổng các chữ số ra bên cạnh trước khi kết luận.
 
 ### Bài IV.1
-**Đáp số:** a) x = 327 : 7 · b) x = 50 · c) x = 24 · d) x = 50
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 48 · b) x = 37 · c) x = 126 · d) x = 67
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
 ### Bài IV.2
 **Đáp số:** a) Minh: 62 quyển, Nam: 32 quyển · b) Bình: 43 quyển, Tuấn: 23 quyển · c) Quân: 25 quyển, Sơn: 17 quyển · d) Khánh: 98 quyển, Vy: 78 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -465,15 +467,15 @@ f) Cả tổ phải gấp 126 bông hoa thì làm trong mấy giờ?
 
 ### Bài V.2
 **Đáp số:** a) 152 · b) 190 · c) 114 · d) 47 · e) 105 · f) 114
-**Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
 ### Bài V.3
 **Đáp số:** a) 759 · b) 684 · c) 975 · d) 900 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 7
-**Hướng giải:** BẪY — Bên trái hay bên phải. Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

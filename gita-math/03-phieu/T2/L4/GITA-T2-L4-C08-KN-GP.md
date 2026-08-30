@@ -96,8 +96,6 @@ Kết quả: **696 334**.
 
 ### Bài A.2 — So sánh hai phân số
 
-> **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
-
 **Các bước giải**
 
 Xét ý a: 5 phần 7 … 3 phần 14
@@ -117,8 +115,6 @@ Kết quả: **>**.
 *Điểm chốt:* Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 
 ### Bài A.3 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Biểu thức chỉ gồm phân số**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Phân số nâng cao: so sánh, tính 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — So sánh phân số bằng kĩ thuật đặc biệt
+
+> **BẪY — So phần bù rồi kết luận cùng chiều với phần bù..**
 
 **Các bước giải**
 

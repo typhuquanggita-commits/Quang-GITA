@@ -291,7 +291,7 @@ d) 5 hộp bút có 20 chiếc. Hỏi 12 hộp như thế có bao nhiêu chiếc
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Chữ số tận cùng của tổng và tích
 
@@ -361,6 +361,7 @@ e) 1 + 2 + 3 + … + 25
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) 5 chữ số, tổng 39 · b) 5 chữ số, tổng 16 · c) 5 chữ số, tổng 25 · d) 5 chữ số, tổng 14
@@ -385,12 +386,14 @@ e) 1 + 2 + 3 + … + 25
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài II.1
 **Đáp số:** a) 672 cm² · b) 1 444 cm² · c) 100 cm · d) 74 cm · e) 900 cm² · f) 88 cm
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài II.2
 **Đáp số:** a) Tổ 3 — 16 bạn · b) Tổ 4 — 10 bạn · c) 27 bạn nam và 25 bạn nữ · d) 52 bạn · e) 16 − 10 = 6 bạn · f) nam nhiều hơn 2 bạn
@@ -483,14 +486,14 @@ e) 1 + 2 + 3 + … + 25
 
 ### Bài V.1
 **Đáp số:** a) 2 · b) 8 · c) 3 · d) 9 · e) 0 · f) 6 · g) 5
-**Hướng giải:** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
+**Hướng giải:** BẪY — Tính trọn phép tính thay vì chỉ xét chữ số tận cùng. Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.
 **Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ### Bài V.2
 **Đáp số:** a) Sơn · b) Yến · c) Yến, Ngọc, Sơn · d) 2 · e) 2 bạn · f) 1 bạn · g) 4
-**Hướng giải:** BẪY — Nhớ đếm cả chính mình. Vẽ hàng ô rồi đánh dấu. Với vị trí trong hàng: số bạn đứng trước + chính mình + số bạn đứng sau = tổng số bạn. Đó cũng là cách tự kiểm tra.
+**Hướng giải:** Vẽ hàng ô rồi đánh dấu. Với vị trí trong hàng: số bạn đứng trước + chính mình + số bạn đứng sau = tổng số bạn. Đó cũng là cách tự kiểm tra.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đừng quên **đếm cả chính mình** khi cộng lại.
 **Lỗi thường gặp:** Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. Phòng: Vẽ hàng ô và đếm thử với 5 bạn trước khi làm với số lớn.
 **Gợi ý 3 tầng:** (1) Trước bạn ấy có mấy người? — (2) Sau bạn ấy có mấy người? — (3) Cộng cả chính bạn ấy vào xem có bằng tổng số bạn không.

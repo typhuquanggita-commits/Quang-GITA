@@ -386,6 +386,8 @@ Tiền gạch: 2 500 × 40 000 = **100 000 000 đồng**.
 
 ### Bài IV.1 — Tỉ số diện tích hai tam giác chung chiều cao
 
+> **BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt.**
+
 **Các bước giải**
 
 Xét ý a: Tam giác ABC có diện tích 248 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 2 phần bằng nhau. Tính diện tích tam giác ABM.
@@ -475,8 +477,6 @@ Kết quả: **336 cm²**.
 *Điểm chốt:* Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
 
 ### Bài IV.5 — Đặt chữ thay chữ số rồi lập luận
-
-> **BẪY — Quên chữ số hàng cao nhất khác 0.**
 
 **Các bước giải**
 

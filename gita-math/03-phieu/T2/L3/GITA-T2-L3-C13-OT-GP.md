@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 9 · e) Nam · f) 2 lần
 - **Bài IV.2** — a) 148 · b) 352 · c) 531 · d) 126 · e) 315 · f) 781
 - **Bài IV.3** — a) 3 chiếc · b) 4 chiếc · c) 13 chiếc · d) 5 chiếc
-- **Bài IV.4** — a) x = 23 · b) x = 53 · c) x = 18 · d) x = 413
+- **Bài IV.4** — a) x = 47 · b) x = 53 · c) x = 81 · d) x = 59
 - **Bài IV.5** — a) 1 phần 2 · b) 88 · c) 5 quyển · d) 45 · e) 50 quyển
 
 **Phần V**
@@ -468,19 +468,17 @@ Kết quả: **3 chiếc**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: 35 − x = 12
+Xét **59 − x = 12**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 23**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 47**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -638,7 +636,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 3 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 9… |
 | IV.2 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 148 · 352 · 531 · 126… |
 | IV.3 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 3 chiếc · 4 chiếc · 13 chiếc · 5 chiếc |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 23 · x = 53 · x = 18 · x = 413 |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 47 · x = 53 · x = 81 · x = 59 |
 | IV.5 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 1 phần 2 · 88 · 5 quyển · 45… |
 | V.1 | Nhân, chia với số có một chữ số | Kĩ thuật đặt tính nhân, chia | Số bị chia có hai hoặc ba chữ số, số chia một chữ số | Đặt tính, tính theo cột | Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn. | Nhân, chia với số có một chữ số · Kĩ thuật đặt tính nhân, chia · Số bị chia có hai hoặc ba chữ số, số chia một chữ số · Đặt tính, tính theo cột… |
 | V.2 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | Cộng, trừ số tự nhiên · Kĩ thuật đặt tính, nhớ và mượn · Yêu cầu “đặt tính rồi tính” · Đặt tính thẳng hàng, tính từ hàng đơn vị… |
@@ -670,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.2 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
 | IV.3 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | V.1 | TD1 | Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương. |
 | V.2 | TD1 | Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu. |

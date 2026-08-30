@@ -271,7 +271,7 @@ e) Mua 7 chiếc cặp và 10 hộp hộp màu hết 434 000 đồng. Biết gi�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
@@ -352,12 +352,14 @@ d) Mua 4 hộp lớn, 6 hộp vừa và 9 hộp nhỏ hết 378 000 đồng. Bi�
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.5
 **Đáp số:** a) 33 · b) 11 · c) 205 · d) 64 · e) 29 · f) 30
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài II.1
 **Đáp số:** a) 17 cm · b) 80 m · c) 2 100 m · d) 14 cm · e) 17 cm · f) 600 m
@@ -428,7 +430,7 @@ d) Mua 4 hộp lớn, 6 hộp vừa và 9 hộp nhỏ hết 378 000 đồng. Bi�
 
 ### Bài IV.2
 **Đáp số:** a) 135 lít · b) 60 lít · c) 96 lít · d) 100 lít · e) 24 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -449,7 +451,7 @@ d) Mua 4 hộp lớn, 6 hộp vừa và 9 hộp nhỏ hết 378 000 đồng. Bi�
 
 ### Bài IV.5
 **Đáp số:** a) một quyển sách: 6 000 đồng; một chiếc thước: 12 000 đồng · b) một chiếc thước: 10 000 đồng; một quyển sách: 40 000 đồng · c) một chiếc thước: 8 000 đồng; một hộp hộp màu: 24 000 đồng · d) một hộp hộp màu: 10 000 đồng; một quyển vở: 20 000 đồng · e) một hộp hộp màu: 14 000 đồng; một chiếc cặp: 42 000 đồng
-**Hướng giải:** BẪY — Quên đổi ngược lại. Chọn loại **giá nhỏ hơn** làm chuẩn, đổi mọi loại còn lại về nó. Bài trở thành bài chia đơn giản. Giải xong nhớ đổi ngược về đại lượng đề hỏi.
+**Hướng giải:** Chọn loại **giá nhỏ hơn** làm chuẩn, đổi mọi loại còn lại về nó. Bài trở thành bài chia đơn giản. Giải xong nhớ đổi ngược về đại lượng đề hỏi.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một.
 **Lỗi thường gặp:** Tính ra giá loại chuẩn rồi dừng, quên nhân lên cho loại kia. Phòng: Gạch chân câu hỏi cuối trước khi tính, để biết đề hỏi mấy đại lượng.
 **Gợi ý 3 tầng:** (1) Một cái loại đắt bằng mấy cái loại rẻ? — (2) Nếu đổi hết về loại rẻ thì tất cả là bao nhiêu cái? — (3) Chia tổng tiền cho số ấy, rồi nhân ngược lên cho loại đắt.
@@ -457,7 +459,7 @@ d) Mua 4 hộp lớn, 6 hộp vừa và 9 hộp nhỏ hết 378 000 đồng. Bi�
 ### Bài V.1
 **Đáp số:** a) 82 · b) 77 · c) 87 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 92 · f) 115 · g) 23
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

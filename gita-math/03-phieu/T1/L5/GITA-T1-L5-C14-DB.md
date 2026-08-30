@@ -424,6 +424,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài C.2
 **Đáp số:** a) 48 · b) 5% · c) 80 · d) 50%
@@ -448,6 +449,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài D.1
 **Đáp số:** a) 52 · 26 · 52 cây · b) 360 000 đồng · c) 260 000 đồng · d) 42 · 21 · 42 cây

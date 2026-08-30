@@ -438,6 +438,8 @@ Quãng đường ngược dòng: 8 × 3 = **24 km**.
 
 ### Bài IV.3 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -481,8 +483,6 @@ Giá một chiếc bút: 350 000 : 25 = 14 000 (đồng).
 *Phải chắc trước khi làm bài này:* Quan hệ gấp – kém và phép chia hết.
 
 ### Bài IV.5 — Hai lần mua hàng — khử một loại
-
-> **BẪY — Chưa cân bằng đã trừ.**
 
 **Các bước giải**
 
@@ -663,12 +663,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
 | IV.1 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.2 | TD2, TD5 | Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng. |
-| IV.3 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.3 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.4 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
 | IV.5 | TD2, TD5 | Chỉ được trừ khi số lượng của loại cần khử đã bằng nhau ở hai dòng. |
 | V.1 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | V.2 | TD4, TD6 | Quãng đường tính từ lúc **đầu tàu** bắt đầu tới lúc **đuôi tàu** kết thúc, nên luôn phải cộng chiều dài đoàn tàu. |
-| V.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.4 | TD3, TD6 | Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian. |
 | V.5 | TD2, TD6 | Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**. |
 

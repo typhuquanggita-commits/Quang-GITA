@@ -337,9 +337,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 17 · b) 36 · c) 47 · d) 33 · e) 9 · f) 18 · g) 48
-**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài A.2
 **Đáp số:** a) 77 621 · b) 28 233 · c) 159 448 · d) 15 041 · e) 4 406 · f) 117 305
@@ -355,9 +356,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.4
 **Đáp số:** a) 74 · b) 119 · c) 479 · d) 644 · e) 689 · f) 764
-**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài A.5
 **Đáp số:** a) 40, 46, 52 · b) 51, 61, 71 · c) 24, 26, 28 · d) 55, 60, 65 · e) 50, 56, 62 · f) 44, 54, 64
@@ -456,20 +458,20 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài D.5
 **Đáp số:** a) Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy · b) Xác định dãy con cách đều rồi đếm, tính tổng · c) Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. · d) Dãy cách đều, bội chung nhỏ nhất · e) Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Dãy số và quy luật” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán trồng cây.” · b) Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” · c) Quan hệ số cây – số khoảng · d) Trồng cây hai bên một đoạn đường dài 20 m, cách nhau 4 m, trồng cả hai đầu, mỗi bên cần mấy cây? → 6 cây · e) Máy móc cộng 1 cho mọi trường hợp. · f) Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
-**Hướng giải:** Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
+**Hướng giải:** BẪY — Máy móc cộng 1 cho mọi trường hợp.. Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

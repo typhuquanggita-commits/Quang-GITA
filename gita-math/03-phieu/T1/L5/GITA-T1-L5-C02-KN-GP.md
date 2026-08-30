@@ -116,8 +116,6 @@ Kết quả: **8 tạ 6 kg**.
 
 ### Bài A.3 — Đổi đơn vị đo diện tích
 
-> **BẪY — 100 lần chứ không phải 10 lần.**
-
 **Các bước giải**
 
 Xét ý a: 74 m² = … dm²
@@ -137,8 +135,6 @@ Kết quả: **7 400**.
 *Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 
 ### Bài A.4 — Đổi đơn vị đo độ dài và khối lượng
-
-> **BẪY — Chiều đổi đơn vị.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Có hai trong ba đại lượng quãng đường, vận tốc, t
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Đơn vị đo độ dài, khối lư�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đổi đơn vị thể tích, dung tích
+
+> **BẪY — Đổi như đơn vị diện tích, chỉ nhân 100..**
 
 **Các bước giải**
 

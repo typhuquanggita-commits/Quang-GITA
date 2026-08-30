@@ -52,14 +52,14 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | Mức | Dấu hiệu nhìn thấy trong đề | Dạng bài | Phương pháp | Lối tắt | Bẫy |
 |:--:|---|---|---|---|---|
 | M1 | Tử số và mẫu số có ước chung lớn hơn 1 | Rút gọn phân số | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. | — |
-| M1 | Hai phân số nối bởi dấu … | So sánh phân số | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | Cùng tử số thì mẫu bé hơn lại lớn hơn |
+| M1 | Hai phân số nối bởi dấu … | So sánh phân số | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. | — |
 | M2 | Biểu thức chỉ gồm phân số | Bốn phép tính với phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. | Nhân chia không cần quy đồng |
 | M2 | Có hình vẽ lặp lại kèm một dòng chú thích | Đọc và lập biểu đồ tranh | Đọc chú thích → nhân số hình với đơn vị | Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. | Một hình không phải một đơn vị |
 | M2 | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu | Đọc bảng số liệu thống kê | Cộng theo hàng cho từng nhóm, cộng theo cột cho toàn bộ | Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại. | — |
 | M3 | Cụm “bằng … của …” | Tìm phân số của một số | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | — |
 | M3 | Đề cho số người của từng nhóm **và** số người thuộc cả hai nhóm | Biểu đồ Ven | Vẽ hai vòng tròn, điền phần chung trước rồi mới trừ ra phần riêng | Số người ít nhất một nhóm = nhóm A + nhóm B − phần chung. | Cộng thẳng, quên trừ phần chung |
 | M3 | Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị | Đọc biểu đồ cột | Đổi biểu đồ về dãy số rồi làm như bài số liệu thường | Ghi cả dãy số ra nháp một lần, mọi câu sau đều dùng lại dãy ấy. | Đọc nhầm vạch của trục dọc |
-| M4 | Biểu thức gồm nhiều phân số và nhiều phép tính | Biểu thức phân số nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | — |
+| M4 | Biểu thức gồm nhiều phân số và nhiều phép tính | Biểu thức phân số nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | Làm phép cộng trước phép chia |
 | M4 | Một nhóm phân số cần sắp thứ tự | Rút gọn, so sánh, sắp thứ tự phân số | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. | — |
 | M5 | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So sánh phân số bằng kĩ thuật đặc biệt | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | Chiều của phần bù |
 | M5 | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Dãy phân số, so sánh bằng phần bù | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | Chiều của phần bù |
@@ -87,64 +87,62 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Quan sát phần bù tới 1 để so sánh. Viết bốn phân số đầu của dãy.
-
-- Dạng bài: ...........................................  Dấu hiệu: ...........................................
-
-**Đề 2.** Rút gọn trước rồi mới so sánh. Rút gọn các phân số sau về dạng tối giản: 3 phần 4 · 17 phần 24 · 3 phần 8 · 1 phần 2 · 5 phần 12
-
-- Dạng bài: ...........................................  Dấu hiệu: ...........................................
-
-**Đề 3.** Điền dấu <, >, = thích hợp. 2 phần 3 … 2 phần 9
-
-- Dạng bài: ...........................................  Dấu hiệu: ...........................................
-
-**Đề 4.** Bảng ghi số bạn nam và số bạn nữ của bốn tổ trong một lớp:
+**Đề 1.** Bảng ghi số bạn nam và số bạn nữ của bốn tổ trong một lớp:
 
 | Tổ | Số bạn nam | Số bạn nữ |
 |:--:|---:|---:|
 | Tổ 1 | 5 | 7 |
-| Tổ 2 | 7 | 8 |
-| Tổ 3 | 5 | 6 |
-| Tổ 4 | 5 | 4 |
+| Tổ 2 | 4 | 6 |
+| Tổ 3 | 6 | 4 |
+| Tổ 4 | 6 | 5 |
 
 Dùng chung bảng này cho mọi ý. Tổ nào có nhiều bạn nhất, và tổ ấy có bao nhiêu bạn?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** So sánh mà không quy đồng. 52 phần 53 … 58 phần 59
+**Đề 2.** Trình bày lời giải có câu trả lời. Tổ Một trồng được 96 cây. Số cây của nhóm Sao Mai bằng 2 phần 3 số cây của tổ Một. Hỏi nhóm Sao Mai trồng được bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính rồi rút gọn kết quả. 3 phần 2 − 1 phần 15
+**Đề 3.** Rút gọn đến phân số tối giản. Rút gọn phân số 8 phần 20.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Rút gọn đến phân số tối giản. Rút gọn phân số 7 phần 28.
+**Đề 4.** Tính rồi rút gọn kết quả. 1 phần 2 + 1 phần 3
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Biểu đồ ghi số ngày mưa của năm tháng liên tiếp tại một trạm đo:
+**Đề 5.** So sánh mà không quy đồng. 52 phần 53 … 53 phần 54
+
+- Dạng bài: ...........................................  Dấu hiệu: ...........................................
+
+**Đề 6.** Biểu đồ ghi số ngày mưa của năm tháng liên tiếp tại một trạm đo:
 
 | Tháng | Biểu đồ (mỗi ô = 2 ngày) | Số ngày mưa |
 |:--:|---|---:|
-| Tháng 5 | █ | 2 |
-| Tháng 6 | ███ | 6 |
-| Tháng 7 | ████████ | 16 |
-| Tháng 8 | ██████████ | 20 |
-| Tháng 9 | ████████████ | 24 |
+| Tháng 5 | ████████████ | 24 |
+| Tháng 6 | ██████ | 12 |
+| Tháng 7 | ██ | 4 |
+| Tháng 8 | ███ | 6 |
+| Tháng 9 | ███████████ | 22 |
 
 Dùng chung biểu đồ này cho mọi ý. Tháng nào có nhiều ngày mưa nhất, và bao nhiêu ngày?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tính giá trị biểu thức, rút gọn kết quả. (1 + 6 phần 7) × 5 phần 7
+**Đề 7.** Rút gọn trước rồi mới so sánh. Rút gọn các phân số sau về dạng tối giản: 5 phần 18 · 1 phần 18 · 7 phần 18 · 4 phần 9 · 17 phần 18
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Biểu đồ tranh số lá cờ của bốn bạn — mỗi hình ● ứng với **5 lá cờ**:
+**Đề 8.** Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 22 · Tiếng Việt: 4 · Tiếng Anh: 10 · Khoa học: 25**. Tổng số học sinh đăng kí là bao nhiêu?
 
-Sơn: ●●●●●● · Lan: ●●●●●●● · Trang: ●●●●● · Minh: ●●●●●●● Mỗi hình ● ứng với 5 lá cờ. Bạn Sơn có bao nhiêu lá cờ?
+- Dạng bài: ...........................................  Dấu hiệu: ...........................................
+
+**Đề 9.** Quan sát phần bù tới 1 để so sánh. Viết bốn phân số đầu của dãy.
+
+- Dạng bài: ...........................................  Dấu hiệu: ...........................................
+
+**Đề 10.** Điền dấu <, >, = thích hợp. 7 phần 12 … 4 phần 5
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -154,16 +152,16 @@ Sơn: ●●●●●● · Lan: ●●●●●●● · Trang: ●●●●●
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị |
-| 2 | Rút gọn, so sánh, sắp thứ tự phân số | Một nhóm phân số cần sắp thứ tự |
-| 3 | So sánh phân số | Hai phân số nối bởi dấu … |
-| 4 | Đọc bảng số liệu thống kê | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu |
+| 1 | Đọc bảng số liệu thống kê | Một bảng hai chiều: hàng là nhóm, cột là loại số liệu |
+| 2 | Tìm phân số của một số | Cụm “bằng … của …” |
+| 3 | Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 |
+| 4 | Bốn phép tính với phân số | Biểu thức chỉ gồm phân số |
 | 5 | So sánh phân số bằng kĩ thuật đặc biệt | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 |
-| 6 | Bốn phép tính với phân số | Biểu thức chỉ gồm phân số |
-| 7 | Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 |
-| 8 | Đọc biểu đồ cột | Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị |
-| 9 | Biểu thức phân số nhiều phép tính | Biểu thức gồm nhiều phân số và nhiều phép tính |
-| 10 | Đọc và lập biểu đồ tranh | Có hình vẽ lặp lại kèm một dòng chú thích |
+| 6 | Đọc biểu đồ cột | Biểu đồ có chú thích tỉ lệ, mỗi ô thay cho nhiều đơn vị |
+| 7 | Rút gọn, so sánh, sắp thứ tự phân số | Một nhóm phân số cần sắp thứ tự |
+| 8 | Đọc bảng số liệu thống kê | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi |
+| 9 | Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị |
+| 10 | So sánh phân số | Hai phân số nối bởi dấu … |
 
 ---
 

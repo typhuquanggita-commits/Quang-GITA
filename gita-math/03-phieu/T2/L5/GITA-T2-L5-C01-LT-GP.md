@@ -480,8 +480,6 @@ Kết quả: **Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tr�
 
 ### Bài E.1 — Tìm chữ số để số chia hết cho một số cho trước
 
-> **BẪY — Chữ số hàng cao nhất không được là 0.**
-
 **Các bước giải**
 
 Xét ý a: Tìm tất cả chữ số thay cho dấu * để số *891 chia hết cho 3.

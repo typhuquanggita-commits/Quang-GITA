@@ -96,8 +96,6 @@ Kết quả: **111**.
 
 ### Bài A.2 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Hà có 54 quyển vở, Vy có ít hơn Hà 21 quyển. Vy có bao nhiêu quyển vở?
@@ -137,8 +135,6 @@ Kết quả: **số lớn 513, số bé 435**.
 *Điểm chốt:* Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 
 ### Bài A.4 — Quãng đường – vận tốc – thời gian
-
-> **BẪY — Đơn vị thời gian.**
 
 **Các bước giải**
 
@@ -478,6 +474,8 @@ Kết quả: **Đề nhắc **dòng nước**, **xuôi dòng**, **ngược dòng
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -497,6 +495,8 @@ Kết quả: **giới thiệu chương “Vận tốc, quãng đường, thời 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Công việc chung
+
+> **BẪY — Cộng hai khoảng thời gian rồi chia đôi..**
 
 **Các bước giải**
 

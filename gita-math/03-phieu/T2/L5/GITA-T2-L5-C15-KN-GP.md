@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Chu vi và diện tích hình chữ nhật, hình vuông
 
-> **BẪY — Đơn vị của diện tích.**
-
 **Các bước giải**
 
 Xét ý a: Hình chữ nhật có chiều dài 5 cm, chiều rộng 3 cm. Tính chu vi.
@@ -97,8 +95,6 @@ Kết quả: **16 cm**.
 *Điểm chốt:* Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 
 ### Bài A.2 — Tìm kích thước khi biết chu vi hoặc diện tích
-
-> **BẪY — Quên chia đôi chu vi.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Đề cho ba kích thước hoặc cạnh hình lập phương**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Hình học dạng đề Chuyên và m
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Cắt ghép hình, tỉ số diện tích
+
+> **BẪY — Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép..**
 
 **Các bước giải**
 

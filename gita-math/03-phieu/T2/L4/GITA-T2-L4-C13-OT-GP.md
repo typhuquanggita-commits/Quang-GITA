@@ -384,6 +384,8 @@ Kết quả: **650**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 11 thùng sữa, mỗi thùng 24 lít. Cửa hàng đã bán 7 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
@@ -452,6 +454,8 @@ Cả gia đình: 950 000 + 570 000 = **1 520 000 đồng**.
 
 ### Bài IV.4 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 9 can dầu, mỗi can 5 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
@@ -475,8 +479,6 @@ Kết quả: **45 chai**.
 *Phải chắc trước khi làm bài này:* Nhân số có nhiều chữ số và bảng đơn vị đo.
 
 ### Bài IV.5 — Nhận ra thừa số 0 để tính tức thì
-
-> **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
 
 **Các bước giải**
 

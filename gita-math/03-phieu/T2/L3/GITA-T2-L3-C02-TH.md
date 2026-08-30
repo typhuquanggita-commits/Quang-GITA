@@ -263,11 +263,11 @@ f) 27 × 9
 
 Tìm x, trình bày từng bước.
 
-a) x : 6 + 49 = 105
-b) x × 7 + 14 = 133
-c) 68 − x = 15
-d) x × 6 − 51 = 330
-e) x : 3 + 41 = 99
+a) (x + 6) × 9 = 81
+b) (x − 49) × 6 = 42
+c) x : 7 + 14 = 31
+d) x × 9 + 15 = 492
+e) 106 − x = 51
 
 ### Bài 5. (5 điểm) Bài toán thực tế về đo lường và mua bán
 
@@ -280,7 +280,7 @@ d) Một cửa hàng có 10 bao gạo, mỗi bao 25 kg. Giá mỗi ki-lô-gam l�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm đoạn thẳng và tam giác
 
@@ -358,12 +358,14 @@ g) Tổng 306 + 79 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) 49 · b) 33 · c) 444 · d) 403 · e) 56
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.5
 **Đáp số:** a) 754 · b) 3 · c) 1 231 · d) 354 · e) 225 · f) 1 370
@@ -388,6 +390,7 @@ g) Tổng 306 + 79 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.4
 **Đáp số:** a) 4 tờ · b) 60 000 đồng · c) 14 000 đồng · d) 48 000 đồng
@@ -453,15 +456,15 @@ g) Tổng 306 + 79 có chữ số tận cùng là chữ số nào?
 **Gợi ý 3 tầng:** (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
 
 ### Bài IV.4
-**Đáp số:** a) x = 336 · b) x = 17 · c) x = 53 · d) x = 381 : 6 · e) x = 174
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 3 · b) x = 56 · c) x = 119 · d) x = 53 · e) x = 55
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
 ### Bài IV.5
 **Đáp số:** a) 6 m · b) 6 000 000 đồng · c) 30 chai · d) 3 000 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -469,20 +472,20 @@ g) Tổng 306 + 79 có chữ số tận cùng là chữ số nào?
 ### Bài V.1
 **Đáp số:** a) 10 · b) 5 · c) 15 · d) 3 · e) 6 · f) 3
 **Hướng giải:** BẪY — Bỏ sót đoạn ghép. Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 
 ### Bài V.2
 **Đáp số:** a) 32 quyển · b) 64 quyển · c) 32 quyển · d) 32 quyển · e) 64 quyển · f) 48 quyển
-**Hướng giải:** BẪY — Phân số của số còn lại. Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
+**Hướng giải:** Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu.
 **Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Viết một dòng “còn lại … quyển” sau mỗi bước.
 **Gợi ý 3 tầng:** (1) Ngày đầu phát bao nhiêu quyển? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Ngày thứ hai lấy một phần mấy của số nào?
 
 ### Bài V.3
 **Đáp số:** a) 1 275 · b) 55 · c) 5 050 · d) 325
-**Hướng giải:** BẪY — Số số hạng lẻ thì còn số ở giữa. Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
+**Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ra ba cặp đầu để thấy rõ các cặp có cùng tổng.
 **Gợi ý 3 tầng:** (1) Ghép số đầu với số cuối, tổng bằng bao nhiêu? — (2) Ghép số thứ hai với số áp chót, tổng bằng bao nhiêu? — (3) Có bao nhiêu cặp như thế?

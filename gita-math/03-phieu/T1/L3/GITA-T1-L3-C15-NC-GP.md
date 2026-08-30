@@ -58,7 +58,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.2** — a) 113 · b) 42 · c) 38 · d) 123 · e) 51 · f) 27
 - **Bài IV.3** — a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 9 · e) Hùng · f) 2 lần
 - **Bài IV.4** — a) 54 · b) 930 · c) 129 · d) 26 · e) 1 059 · f) 801
-- **Bài IV.5** — a) x = 37 · b) x = 41 · c) x = 48 · d) x = 53 · e) x = 48
+- **Bài IV.5** — a) x = 21 · b) x = 37 · c) x = 41 · d) x = 8 · e) x = 220
 
 **Phần V**
 
@@ -486,19 +486,17 @@ Số bé nhất là 129, số lớn nhất là 930.
 
 ### Bài IV.5 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: 57 − x = 20
+Xét **95 − x = 74**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 37**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 21**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -553,8 +551,6 @@ Kết quả: **2**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.3 — Tính nhanh tổng dãy số cách đều
-
-> **BẪY — Số số hạng lẻ.**
 
 **Các bước giải**
 
@@ -645,7 +641,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 113 · 42 · 38 · 123… |
 | IV.3 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 3 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 9… |
 | IV.4 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 54 · 930 · 129 · 26… |
-| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 37 · x = 41 · x = 48 · x = 53… |
+| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 21 · x = 37 · x = 41 · x = 8… |
 | V.1 | Dãy có hiệu tăng đều | Dãy hiệu, tổng dãy cách đều | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu rồi cộng dần | Số hạng thứ n = số đầu + (n − 1) × n : 2 khi hiệu là 1, 2, 3… | 3 · 4 · 6 · 9 · 13 · 1, 2, 3, 4, 5, … · 18 · 31… |
 | V.2 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 2 · 0 · 0 · 5… |
 | V.3 | Tổng dãy số cách đều | Ghép cặp, tổng dãy cách đều | Dãy cộng dài có dấu … | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | 1 625 · 420 · 110 · 1 275… |
@@ -677,7 +673,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.4 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
-| IV.5 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.5 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | V.1 | TD4, TD6 | Viết **dãy hiệu** xuống dưới dãy gốc là bước bắt buộc. |
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.3 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |

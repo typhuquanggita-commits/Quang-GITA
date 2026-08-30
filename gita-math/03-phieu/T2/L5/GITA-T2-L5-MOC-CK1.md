@@ -274,7 +274,7 @@ f) Một xe máy đi 25 km/giờ khởi hành trước. Cùng lúc đó một ô
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Kĩ thuật tách – bù để tính và so sánh
 
@@ -348,6 +348,7 @@ f) Có 10 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.3
 **Đáp số:** a) 768 · b) 625 · c) 10 000 · d) 1 536 · e) 64
@@ -436,8 +437,8 @@ f) Có 10 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít
 
 ### Bài IV.2
 **Đáp số:** a) 99 · b) 297 · c) 9 · d) 49 · e) 7 350 · f) 14 850
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -464,7 +465,7 @@ f) Có 10 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít
 
 ### Bài V.1
 **Đáp số:** a) 49 · b) 324 · c) 361 · d) 441 · e) < · f) <
-**Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.

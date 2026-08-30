@@ -380,6 +380,8 @@ Kết quả: **264 000 đồng**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -422,6 +424,8 @@ Kết quả: **59**.
 
 ### Bài IV.3 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 20
@@ -462,6 +466,8 @@ Kết quả: **5**.
 
 ### Bài IV.5 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -482,8 +488,6 @@ Kết quả: **383**.
 
 ### Bài V.1 — Dãy số lặp lại theo chu kì
 
-> **BẪY — Số dư 0 ứng với phần tử cuối chu kì.**
-
 **Các bước giải**
 
 Xét ý a: Số hạng thứ 242 của dãy là số nào?
@@ -503,8 +507,6 @@ Kết quả: **4**.
 *Điểm chốt:* Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 
 ### Bài V.2 — Dãy phân số dạng n phần (n + 1)
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -529,8 +531,6 @@ Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
 *Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
 
 ### Bài V.3 — Dãy có hiệu tăng đều
-
-> **BẪY — Cộng thừa một hiệu.**
 
 **Các bước giải**
 
@@ -645,11 +645,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
 | III.4 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
 | III.5 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
-| IV.3 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.3 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.4 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
-| IV.5 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.5 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | V.1 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.2 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
 | V.3 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |

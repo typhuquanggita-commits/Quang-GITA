@@ -436,6 +436,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài C.4
 **Đáp số:** a) 30 · b) 40 · c) 150 · d) Lan (60) · e) Minh (20) · f) 40 · g) 6 hình

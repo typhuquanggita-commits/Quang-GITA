@@ -663,7 +663,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD2, TD5 | Không được nhân cả số điện cho một đơn giá duy nhất. Đó chính là lỗi mà cách tính bậc thang sinh ra để chống. |
 | IV.5 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
 | V.1 | TD6, TD2 | Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển. |
-| V.2 | TD1, TD3, TD4 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
+| V.2 | TD1, TD3, TD4, TD5 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
 | V.3 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
 | V.4 | TD2, TD6 | Số tiền sinh lãi ở năm thứ hai lớn hơn số tiền gốc ban đầu. |
 | V.5 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |

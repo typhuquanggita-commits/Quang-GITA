@@ -272,7 +272,7 @@ f) Có phân số nào lớn hơn 1 không?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng dãy cộng trừ xen kẽ
 
@@ -334,6 +334,7 @@ d) Tích 402 × 353 × 5 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) 5 200 · b) 7 417 · c) 5 849 · d) 9 154 · e) 3 165 · f) 2 620 · g) 830 500 · h) 7 398
@@ -352,12 +353,14 @@ d) Tích 402 × 353 × 5 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.5
 **Đáp số:** a) 9 703 · b) 249 256 · c) 5 183 · d) 562 402 · e) 4 337
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) 46 · b) 74 · c) 2 100 · d) 4 900 · e) 32
@@ -421,21 +424,21 @@ d) Tích 402 × 353 × 5 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.1
 **Đáp số:** a) x = 45 · b) x = 49 · c) x = 20 · d) x = 22 · e) x = 70
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
 
 ### Bài IV.2
 **Đáp số:** a) 1 470 · b) 630 · c) 6 375 · d) 1 260
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.3
 **Đáp số:** a) 80 lít · b) 144 lít · c) 48 lít · d) 24 lít · e) 40 lít · f) 25 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -456,21 +459,21 @@ d) Tích 402 × 353 × 5 có chữ số tận cùng là chữ số nào?
 
 ### Bài V.1
 **Đáp số:** a) -15 · b) -30 · c) 13 · d) -10
-**Hướng giải:** BẪY — Số hạng lẻ còn thừa ở cuối dãy. Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
+**Hướng giải:** Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối.
 **Lỗi thường gặp:** Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. Phòng: Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp.
 **Gợi ý 3 tầng:** (1) Dãy có bao nhiêu số hạng? — (2) Ghép hai số hạng liền nhau, mỗi cặp bằng bao nhiêu? — (3) Số số hạng là chẵn hay lẻ? Có số hạng nào lẻ ra không?
 
 ### Bài V.2
 **Đáp số:** a) 1 225 · b) < · c) < · d) <
-**Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.
 
 ### Bài V.3
 **Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 8 phần 9 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 9
-**Hướng giải:** BẪY — Chiều của phần bù. Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.

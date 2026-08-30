@@ -359,15 +359,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.4
 **Đáp số:** a) < · b) < · c) > · d) > · e) > · f) < · g) <
-**Hướng giải:** BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn. Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
+**Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài A.5
 **Đáp số:** a) < · b) 4 · c) 0,5 · d) 7 · e) < · f) 0,09
-**Hướng giải:** BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn. Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
+**Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -466,14 +468,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Phân số, hỗn số và số thập phân: khái niệm đến phép nhân” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Rút gọn, so sánh, sắp thứ tự phân số.” · b) Một nhóm phân số cần sắp thứ tự · c) Tính chất cơ bản của phân số; so sánh phân số · d) Sắp xếp từ bé đến lớn: 3 phần 8, 5 phần 8, 1 phần 8 → 1 phần 8 < 3 phần 8 < 5 phần 8 · e) Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. · f) So với 1 và với một nửa trước — nhiều phân số phân loại được ngay.
-**Hướng giải:** Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
+**Hướng giải:** BẪY — Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu.. Cùng mẫu số thì so tử số. Khác mẫu thì quy đồng hoặc so với 1 và với một nửa. Rút gọn về tối giản trước khi trình bày kết quả.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng mẫu số thì **chỉ cần so tử số**.
 **Lỗi thường gặp:** Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. Phòng: Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

@@ -653,7 +653,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.3 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
 | IV.4 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
 | V.2 | TD2, TD3 | “Xung quanh” → chu vi; “khắp mặt” → diện tích. |
 | V.3 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |

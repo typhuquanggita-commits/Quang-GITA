@@ -58,7 +58,7 @@ def f2_m1_31(rng, lop):
         tuong_tu=("AB dài 12 cm, M là trung điểm. AM dài bao nhiêu?", "6 cm"),
         mo_rong="Cho ba điểm thẳng hàng, hỏi điểm nào là trung điểm của đoạn nào.",
         chuan_bi="Đo độ dài đoạn thẳng và phép chia cho 2.",
-        bay="Nằm giữa nhưng không chia đôi")
+        chu_y="Nằm giữa nhưng không chia đôi")
 
 
 @dang_ky("F2-M2-31", "F", "M2", lop=(3, 4, 5),

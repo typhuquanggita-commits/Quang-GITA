@@ -350,21 +350,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 6 168 · b) 20 · c) 69 · d) 1 380 · e) 355 · f) 435
-**Hướng giải:** BẪY — Thiếu ngoặc mà vẫn cộng trước. Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
+**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài A.4
 **Đáp số:** a) 28 498 226 · b) 14 040 · c) 98 033 · d) 51 259 · e) 16 669 773
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.5
 **Đáp số:** a) 130 567 452 · b) 30 069 · c) 693 877 · d) 516 534 · e) 105 449 · f) 151 762
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -463,14 +466,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Bốn phép tính, tính nhanh và tìm x với phân số, số thập phân” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tính, so sánh tích bằng kĩ thuật tách – bù.” · b) Các thừa số hơn kém nhau rất ít · c) Nhân một số với một tổng, một hiệu · d) So sánh: 99 × 101 … 100 × 100 → < · e) Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. · f) Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn.
-**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Hướng giải:** BẪY — Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian.. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

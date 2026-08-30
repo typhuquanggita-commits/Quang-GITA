@@ -345,21 +345,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 7 400 · b) 8 900 · c) 5 300 · d) 6 100 · e) 5 100
-**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài A.4
 **Đáp số:** a) 8 800 · b) 5 500 · c) 520 000 · d) 420 · e) 8 700 · f) 420 000
-**Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài A.5
 **Đáp số:** a) 4 giờ 57 phút · b) 5 giờ 53 phút · c) 46 phút · d) 346
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -458,14 +461,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Đơn vị đo độ dài, khối lượng, diện tích, thể tích và thời gian” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đổi đơn vị thể tích, dung tích.” · b) Đơn vị có mũ ba, hoặc lít, mi-li-lít · c) Bảng đơn vị thể tích; quan hệ dm³ – lít · d) 2 m³ = … lít → 2 000 · e) Đổi như đơn vị diện tích, chỉ nhân 100. · f) Mỗi bậc thêm ba chữ số 0.
-**Hướng giải:** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
+**Hướng giải:** BẪY — Đổi như đơn vị diện tích, chỉ nhân 100.. Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
 **Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

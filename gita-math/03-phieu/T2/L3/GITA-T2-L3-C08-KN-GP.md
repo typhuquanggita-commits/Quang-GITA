@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Quy tắc nhân trong phép đếm
 
-> **BẪY — Cộng hay nhân.**
-
 **Các bước giải**
 
 Xét ý a: Có 7 chiếc áo và 8 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
@@ -97,8 +95,6 @@ Kết quả: **56 cách**.
 *Điểm chốt:* Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 
 ### Bài A.2 — Mi-li-lít và lít
-
-> **BẪY — Đơn vị khác nhau.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Có chữ l, ml trong đề**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Đại lượng, thời gian và toán
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Bài toán cân, chia hết
+
+> **BẪY — Làm tròn lên rồi coi như cân được..**
 
 **Các bước giải**
 

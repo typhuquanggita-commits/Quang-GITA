@@ -278,7 +278,7 @@ f) Quanh một cái ao có chu vi 38 m, trồng cây cách nhau 2 m. Cần bao n
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -356,6 +356,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) 13 · b) (43 − 7) : 2 + 1 = 19 nhà · c) 7 + (15 − 1) × 2 = 35 · d) (21 − 7) : 2 + 1 = 8 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ

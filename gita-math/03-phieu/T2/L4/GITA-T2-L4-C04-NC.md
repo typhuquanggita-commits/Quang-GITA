@@ -272,7 +272,7 @@ e) Một gia đình gồm 3 người lớn và 4 trẻ em đi tham quan cách nh
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy số lặp lại theo chu kì
 
@@ -342,12 +342,14 @@ g) Hiệu hai số đó bằng bao nhiêu?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.3
 **Đáp số:** a) 4 giờ · b) 4 km/giờ · c) 72 km · d) 6 giờ · e) 36 km
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.4
 **Đáp số:** a) số lớn 436, số bé 274 · b) số lớn 263, số bé 195 · c) số lớn 171, số bé 163 · d) số lớn 1 255, số bé 631 · e) số lớn 277, số bé 235 · f) số lớn 876, số bé 852 · g) số lớn 345, số bé 175
@@ -423,8 +425,8 @@ g) Hiệu hai số đó bằng bao nhiêu?
 
 ### Bài IV.1
 **Đáp số:** a) -48 · b) 97 · c) 735 · d) 24,5 · e) 49 · f) 49
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -444,21 +446,21 @@ g) Hiệu hai số đó bằng bao nhiêu?
 
 ### Bài IV.4
 **Đáp số:** a) 275 lít · b) 40 lít · c) 45 lít · d) 36 lít · e) 120 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) 330 000 đồng · b) 770 000 đồng · c) 1 020 000 đồng · d) 1 140 000 đồng · e) 450 000 đồng
-**Hướng giải:** BẪY — Dùng cả dữ kiện thừa. Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
+**Hướng giải:** Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài.
 **Lỗi thường gặp:** Đem quãng đường vào phép tính tiền vé. Phòng: Gạch chân câu hỏi cuối trước khi nhìn các con số.
 **Gợi ý 3 tầng:** (1) Đề hỏi cái gì? Gạch chân câu hỏi. — (2) Trong các con số đề cho, con số nào không liên quan tới câu hỏi? — (3) Tính giá vé trẻ em trước rồi mới cộng hai loại vé.
 
 ### Bài V.1
 **Đáp số:** a) 3 · b) 3 · c) 8 · d) 3 · e) 1 750
-**Hướng giải:** BẪY — Số dư 0 ứng với phần tử cuối chu kì. Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
+**Hướng giải:** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 **Lỗi thường gặp:** Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. Phòng: Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn.
 **Gợi ý 3 tầng:** (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
@@ -487,7 +489,7 @@ g) Hiệu hai số đó bằng bao nhiêu?
 ### Bài V.5
 **Đáp số:** a) 81 · b) 73 · c) 89 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 20 · f) 80 · g) 60
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

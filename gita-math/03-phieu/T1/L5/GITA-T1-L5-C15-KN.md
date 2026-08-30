@@ -339,9 +339,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 224 cm · b) 625 cm² · c) 2 548 cm² · d) 116 cm · e) 1 225 cm² · f) 194 cm · g) 145 cm²
-**Hướng giải:** BẪY — Đơn vị của diện tích. Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
+**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài A.2
 **Đáp số:** a) bé hơn · b) 2 cặp song song, 4 cặp vuông góc · c) góc nhọn · d) lớn hơn · e) góc vuông · f) 1 cặp song song, 2 cặp vuông góc · g) góc tù · h) 2 cặp song song, 0 cặp vuông góc
@@ -351,21 +352,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 320 000 · b) 190 000 · c) 2 300 · d) 700 000 · e) 6 100 · f) 820 000
-**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài A.4
 **Đáp số:** a) 4 · b) 9 · c) 5 · d) 8 cm · e) 4 cm²
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài A.5
 **Đáp số:** a) cạnh 52 cm, diện tích 2 704 cm² · b) 50 cm · c) 3 cm · d) 34 cm · e) 14 cm · f) cạnh 7 cm, diện tích 49 cm²
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -464,14 +468,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Bài toán hình học tổng hợp phẳng và không gian” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Chu vi, diện tích hình tròn.” · b) Đề cho bán kính hoặc đường kính · c) Công thức hình tròn · d) Hình tròn bán kính 5 cm. Tính diện tích. → 78,5 cm² · e) Lấy đường kính nhân đường kính khi tính diện tích. · f) Diện tích luôn có đơn vị mũ hai — nếu đáp số ghi cm là chắc chắn nhầm.
-**Hướng giải:** Chu vi hình tròn = đường kính × 3,14 = bán kính × 2 × 3,14. Diện tích hình tròn = bán kính × bán kính × 3,14. Đường kính gấp đôi bán kính.
+**Hướng giải:** BẪY — Lấy đường kính nhân đường kính khi tính diện tích.. Chu vi hình tròn = đường kính × 3,14 = bán kính × 2 × 3,14. Diện tích hình tròn = bán kính × bán kính × 3,14. Đường kính gấp đôi bán kính.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**.
 **Lỗi thường gặp:** Lấy đường kính nhân đường kính khi tính diện tích. Phòng: Ghi rõ r = … và d = … lên hình trước khi thay số.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

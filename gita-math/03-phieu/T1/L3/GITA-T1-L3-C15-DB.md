@@ -343,7 +343,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 4. (4 điểm) Đọc vị đề số 4
 
-**Đề:** Tìm x, trình bày từng bước. x × 7 − 20 = 112
+**Đề:** Tìm x, trình bày từng bước. (x + 18) × 6 = 318
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -422,6 +422,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài B.5
 **Đáp số:** a) gạo: 10 000 · đậu phụ: 70 000 · rau muống: 80 000 · b) 160 000 · c) 162 500 · d) 2 500 đồng · e) 37 500 đồng
@@ -446,6 +447,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài C.4
 **Đáp số:** a) mỗi bạn 8 cái, thừa 1 cái · b) 1 cái · c) 11 cái · d) 9 cái · e) mỗi bạn 8 cái, thừa 9 cái · f) phải là số chia hết cho 12

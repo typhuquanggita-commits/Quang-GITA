@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài IV.1** — a) 52 · b) 970 · c) 169 · d) 22 · e) 1 139 · f) 801
 - **Bài IV.2** — a) 132 · b) 145 · c) 729 · d) 711 · e) 189 · f) 704 · g) 297
-- **Bài IV.3** — a) x = 48 · b) x = 50 : 8 · c) x = 53 · d) x = 52 · e) x = 143 : 3 · f) x = 28
+- **Bài IV.3** — a) x = 30 · b) x = 5 · c) x = 53 · d) x = 52 · e) x = 38 · f) x = 28
 - **Bài IV.4** — a) chu vi 78 cm, diện tích 338 cm² · b) chu vi 72 cm, diện tích 180 cm² · c) chu vi 120 cm, diện tích 500 cm² · d) chu vi 54 cm, diện tích 162 cm²
 - **Bài IV.5** — a) Vy: 110 quyển, Ngọc: 64 quyển · b) Thảo: 49 quyển, Ngọc: 25 quyển · c) Tuấn: 77 quyển, Thảo: 73 quyển · d) An: 35 quyển, Khánh: 21 quyển
 
@@ -436,19 +436,17 @@ Kết quả: **132**.
 
 ### Bài IV.3 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 2 + 90 = 114
+Xét **x : 5 + 47 = 53**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 48**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 30**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -478,6 +476,8 @@ Kết quả: **chu vi 78 cm, diện tích 338 cm²**.
 
 ### Bài IV.5 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Vy và Ngọc có tất cả 174 quyển vở. Vy có nhiều hơn Ngọc 46 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -498,8 +498,6 @@ Kết quả: **Vy: 110 quyển, Ngọc: 64 quyển**.
 
 ### Bài V.1 — Bài toán bắt tay
 
-> **BẪY — Mỗi cặp bị đếm hai lần.**
-
 **Các bước giải**
 
 Xét ý a: Có 4 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có tất cả bao nhiêu cái bắt tay?
@@ -519,8 +517,6 @@ Kết quả: **6 cái**.
 *Điểm chốt:* Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**.
 
 ### Bài V.2 — Tính nhanh tổng các số tự nhiên liên tiếp
-
-> **BẪY — Số số hạng lẻ thì còn số ở giữa.**
 
 **Các bước giải**
 
@@ -633,7 +629,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | Đếm hình trong lưới | Quy tắc đếm | Lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ | Số cách chọn 2 trong k là k × (k − 1) : 2. | 12 · 5 đường ngang, 4 đường dọc · 60 · 20… |
 | IV.1 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 52 · 970 · 169 · 22… |
 | IV.2 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 132 · 145 · 729 · 711… |
-| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 48 · x = 50 : 8 · x = 53 · x = 52… |
+| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 30 · x = 5 · x = 53 · x = 52… |
 | IV.4 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | chu vi 78 cm, diện tích 338 cm² · chu vi 72 cm, diện tích 180 cm² · chu vi 120 cm, diện tích 500 cm² · chu vi 54 cm, diện tích 162 cm² |
 | IV.5 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | Vy: 110 quyển, Ngọc: 64 quyển · Thảo: 49 quyển, Ngọc: 25 quyển · Tuấn: 77 quyển, Thảo: 73 quyển · An: 35 quyển, Khánh: 21 quyển |
 | V.1 | Đếm số cặp | Đếm cặp, nguyên tắc đếm lặp | “Mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | 5 bạn có 10 cái bắt tay; 10 bạn có 45 cái. | 6 cái · 28 cái · 15 cái · 45 cái… |
@@ -665,7 +661,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
 | IV.1 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
 | IV.2 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
-| IV.3 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.3 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.4 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
 | IV.5 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | V.1 | TD4, TD6 | Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**. |

@@ -480,7 +480,7 @@ Kết quả: **Cấu tạo số có hai chữ số**.
 
 ### Bài E.1 — Tìm x và tính chất của phép nhân
 
-> **BẪY — Thừa số 0.**
+> **BẪY — Áp dụng quy tắc của số trừ cho số bị trừ..**
 
 **Các bước giải**
 
@@ -527,8 +527,6 @@ Kết quả: **10**.
 *Điểm chốt:* Số khoảng ít hơn số số hạng đúng **1**.
 
 ### Bài E.3 — Phép chia có dư
-
-> **BẪY — Số dư phải bé hơn số chia.**
 
 **Các bước giải**
 

@@ -412,6 +412,8 @@ Kết quả: **0**.
 
 ### Bài IV.2 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 6 + 178 = x × 8
@@ -657,7 +659,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.3 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.4 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
-| IV.5 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.5 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | V.1 | TD3, TD5 | Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi. |
 | V.2 | TD1 | Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu. |
 | V.3 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |

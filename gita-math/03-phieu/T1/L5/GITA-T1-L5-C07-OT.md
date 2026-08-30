@@ -276,7 +276,7 @@ f) Tổng của số hạng thứ hai và số hạng áp chót bằng bao nhiê
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -354,12 +354,14 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài I.2
 **Đáp số:** a) 7 390 dư 5 · b) 2 827 dư 15 · c) 1 161 dư 10 · d) 1 279 dư 8 · e) 6 311 dư 11
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài I.3
 **Đáp số:** a) có · b) không, dư 1 · c) có · d) có · e) có
@@ -469,8 +471,8 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) 98 · b) 143 · c) 1 205 · d) 120,5 · e) 241 · f) 241
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 

@@ -342,15 +342,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 30 km/giờ · b) 2 giờ · c) 120 km · d) 36 km/giờ · e) 200 km · f) 6 giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.3
 **Đáp số:** a) 76 · b) 11 · c) 42 · d) 12 · e) 12 · f) 72
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.4
 **Đáp số:** a) 174 · b) 27 · c) 100 · d) 88 · e) 57 · f) 191
@@ -461,14 +463,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Công việc chung, tỉ lệ bản đồ và chuyển động làm quen” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán tổng – hiệu.” · b) Đề cho **tổng** và **hiệu** của hai số · c) Công thức tổng – hiệu, sơ đồ đoạn thẳng · d) Tổng hai số là 100, hiệu là 20. Tìm hai số. → 60 và 40 · e) Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. · f) Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
-**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
+**Hướng giải:** BẪY — Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé.. Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

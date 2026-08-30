@@ -677,7 +677,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
 | IV.5 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | V.1 | TD2, TD6 | Đừng quên **đếm cả chính mình** khi cộng lại. |
-| V.2 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.2 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.3 | TD4, TD6 | Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**. |
 | V.4 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 | V.5 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |

@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài IV.1** — a) 1 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 1 · e) Nam · f) 2 lần
 - **Bài IV.2** — a) 16 chiếc · b) 9 chiếc · c) 4 chiếc · d) 13 chiếc · e) 6 chiếc
-- **Bài IV.3** — a) x = 49 · b) x = 107 : 2 · c) x = 54 · d) x = 24 · e) x = 47
+- **Bài IV.3** — a) x = 49 · b) x = 74 · c) x = 54 · d) x = 24 · e) x = 47
 - **Bài IV.4** — a) 1 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 1 · e) Ngọc · f) 2 lần
 - **Bài IV.5** — a) Chi: 62 quyển, Sơn: 34 quyển · b) Tuấn: 100 quyển, Hà: 54 quyển · c) Ngọc: 64 quyển, Yến: 36 quyển · d) Thảo: 81 quyển, Ngọc: 49 quyển · e) An: 16 quyển, Ngọc: 12 quyển · f) Yến: 107 quyển, Vy: 53 quyển
 
@@ -440,19 +440,17 @@ Kết quả: **16 chiếc**.
 
 ### Bài IV.3 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: 90 − x = 41
+Xét **90 − x = 41**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 49**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 49**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -527,8 +525,6 @@ Kết quả: **0**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.2 — Tính nhanh tổng các số tự nhiên liên tiếp
-
-> **BẪY — Số số hạng lẻ thì còn số ở giữa.**
 
 **Các bước giải**
 
@@ -635,7 +631,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | Suy luận loại trừ có bảng | Phương pháp lập bảng | Mỗi người ứng với đúng một đối tượng | Kẻ bảng, đánh dấu, lan toả | Bắt đầu từ dữ kiện khẳng định trước dữ kiện phủ định. | ô (Đức; táo) · không · ô (Hà; cam) · lê… |
 | IV.1 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 1 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 1… |
 | IV.2 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 16 chiếc · 9 chiếc · 4 chiếc · 13 chiếc… |
-| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 49 · x = 107 : 2 · x = 54 · x = 24… |
+| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 49 · x = 74 · x = 54 · x = 24… |
 | IV.4 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 1 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 1… |
 | IV.5 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | Chi: 62 quyển, Sơn: 34 quyển · Tuấn: 100 quyển, Hà: 54 quyển · Ngọc: 64 quyển, Yến: 36 quyển · Thảo: 81 quyển, Ngọc: 49 quyển… |
 | V.1 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 0 · 2 · 6 · 0… |
@@ -667,14 +663,14 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD2, TD6 | Mỗi dấu ✔ **lan toả** ra cả hàng và cả cột. |
 | IV.1 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.2 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
-| IV.3 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.3 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.5 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | V.1 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.2 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | V.3 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 | V.4 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

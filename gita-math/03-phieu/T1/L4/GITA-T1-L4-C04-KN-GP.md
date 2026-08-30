@@ -96,8 +96,6 @@ So số đo của góc với 90° và 180° là phân loại được ngay.
 
 ### Bài A.2 — Đếm hình trong lưới ô vuông
 
-> **BẪY — Bỏ sót các hình ghép nhiều ô.**
-
 **Các bước giải**
 
 Xét ý a: Lưới ô vuông gồm 4 hàng và 2 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
@@ -137,8 +135,6 @@ Kết quả: **chữ số 4, giá trị 400 000**.
 *Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 
 ### Bài A.4 — Chu vi và diện tích hình chữ nhật, hình vuông
-
-> **BẪY — Đơn vị của diện tích.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Từ khoá “ghép”, “cắt thành”, “xếp thành”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Góc, đường thẳng vuông góc �
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chu vi, diện tích trong tình huống thực tế
+
+> **BẪY — Lấy chu vi để tính số gạch lát nền..**
 
 **Các bước giải**
 

@@ -388,6 +388,8 @@ Số em không học môn nào: 29 − 26 = **3 em**.
 
 ### Bài IV.1 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 10
@@ -456,6 +458,8 @@ Bước 4 — tỉ lệ nam giỏi so với cả lớp: 15 : 120 × 100 = 12,5%.
 
 ### Bài IV.4 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 1 phần 5 × 8 phần 9 + 1 phần 5 × 4 phần 7
@@ -498,8 +502,6 @@ Giá cuối cùng là **180 000 đồng**. Nếu cộng gộp hai lần giảm t
 
 ### Bài V.1 — Dãy phân số dạng n phần (n + 1)
 
-> **BẪY — Chiều của phần bù.**
-
 **Các bước giải**
 
 Bốn phân số đầu: 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5.
@@ -523,8 +525,6 @@ Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
 *Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
 
 ### Bài V.2 — So sánh phân số bằng phần bù và phân số trung gian
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -663,7 +663,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
 | III.4 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
 | III.5 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
-| IV.1 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.1 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.2 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
 | IV.3 | TD6, TD2 | Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau. |
 | IV.4 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |

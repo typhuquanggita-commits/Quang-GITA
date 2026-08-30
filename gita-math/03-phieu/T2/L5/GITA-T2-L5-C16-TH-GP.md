@@ -466,6 +466,8 @@ Giá một quyển vở: 87 000 : 29 = 3 000 (đồng).
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 10 thùng dầu, mỗi thùng 24 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -485,8 +487,6 @@ Kết quả: **96 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.5 — Chuyển bớt để hai phần bằng nhau
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
@@ -676,7 +676,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
 | IV.4 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.5 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD3, TD6 | Hai xe đi trong **cùng một khoảng thời gian** — đó là mấu chốt. |
 | V.3 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.4 | TD3, TD6 | Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**. |

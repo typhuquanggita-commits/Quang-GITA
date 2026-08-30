@@ -414,6 +414,8 @@ Thử lại: 24 : 3 = 8 ✓
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 25 × 13 = 325 (kg).
@@ -474,6 +476,8 @@ Kết quả: **72**.
 
 ### Bài IV.5 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Đức và Dũng có tất cả 170 quyển vở. Đức có nhiều hơn Dũng 38 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -494,8 +498,6 @@ Kết quả: **Đức: 104 quyển, Dũng: 66 quyển**.
 
 ### Bài V.1 — Bài toán gà và chó
 
-> **BẪY — Chia cho hiệu số chân.**
-
 **Các bước giải**
 
 Xét ý a: Vừa gà vừa chó có 20 con, đếm được 48 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
@@ -515,8 +517,6 @@ Kết quả: **16 con gà, 4 con chó**.
 *Điểm chốt:* Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
 
 ### Bài V.2 — Một phần mấy qua hai bước — chú ý “số còn lại”
-
-> **BẪY — Phân số của số còn lại.**
 
 **Các bước giải**
 
@@ -670,7 +670,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
 | V.3 | TD3, TD6 | Số lần nghỉ = số tiết − 1, không phải bằng số tiết. |
 | V.4 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

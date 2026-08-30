@@ -464,6 +464,8 @@ Kết quả: **12, 24, 36, 48**.
 
 ### Bài IV.4 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -483,8 +485,6 @@ Kết quả: **18**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.5 — Chuyển bớt để hai phần bằng nhau
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
@@ -662,13 +662,13 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.2 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
 | IV.3 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
-| IV.4 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.4 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.5 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | V.1 | TD1 | Chia cho **số lượng số hạng**, không phải chia cho một số bất kì. |
 | V.2 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.3 | TD1, TD3 | Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều. |
 | V.4 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
-| V.5 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.5 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 
 ---
 

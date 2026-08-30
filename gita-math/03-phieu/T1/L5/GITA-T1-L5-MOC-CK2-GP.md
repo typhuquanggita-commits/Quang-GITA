@@ -428,6 +428,8 @@ Kết quả: **15%**.
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 19 thùng sữa, mỗi thùng 18 lít. Cửa hàng đã bán 16 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
@@ -473,8 +475,6 @@ Kiểm tra nhanh: kết quả phải bé hơn 5 giờ ✓
 *Phải chắc trước khi làm bài này:* Cộng phân số khác mẫu và chia một số cho một phân số.
 
 ### Bài IV.5 — Nhận ra thừa số 0 để tính tức thì
-
-> **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
 
 **Các bước giải**
 

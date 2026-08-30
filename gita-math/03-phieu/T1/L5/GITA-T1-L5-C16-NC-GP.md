@@ -685,7 +685,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | TD3, TD6 | Hai xe đi trong **cùng một khoảng thời gian** — đó là mấu chốt. |
 | V.2 | TD3, TD5, TD6 | Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài. |
 | V.3 | TD2, TD6 | Vận tốc trung bình luôn **nhỏ hơn** trung bình cộng hai vận tốc. Ra lớn hơn hoặc bằng là chắc chắn sai. |
-| V.4 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.4 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.5 | TD3, TD6 | Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**. |
 
 ---

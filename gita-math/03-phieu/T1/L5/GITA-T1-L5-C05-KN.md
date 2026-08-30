@@ -340,9 +340,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 118 616 · b) 362 569 636 · c) 88 878 · d) 1 130 004 · e) 268 442 · f) 113 537 689 · g) 297 366
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.2
 **Đáp số:** a) 2 · b) 7 phần 2 · c) 9 phần 5 · d) 1 · e) 3 phần 4 · f) 9 phần 4
@@ -352,21 +353,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 87 258 · b) 46 817 575 · c) 74 045 016 · d) 90 358 · e) 86 369 202 · f) 91 847 668 · g) 4 156 565
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.4
 **Đáp số:** a) > · b) 0,381 · c) 1 · d) 8 · e) > · f) 0,35 · g) > · h) 3
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài A.5
 **Đáp số:** a) > · b) < · c) > · d) < · e) >
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -465,14 +469,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Phép chia số thập phân và ba dạng toán tỉ số phần trăm” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tỉ số phần trăm có lời văn.” · b) Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” · c) Tỉ số phần trăm · d) Lớp có 40 học sinh, 10 em giỏi. Học sinh giỏi chiếm bao nhiêu phần trăm? → 25% · e) Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. · f) Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm.
-**Hướng giải:** Đại lượng đứng sau chữ “của” hoặc “so với” là đại lượng ứng với 100%. Tìm tỉ số phần trăm thì lấy phần chia cho toàn bộ rồi nhân 100. Tìm giá trị của phần thì lấy toàn bộ chia 100 rồi nhân số phần trăm.
+**Hướng giải:** BẪY — Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm.. Đại lượng đứng sau chữ “của” hoặc “so với” là đại lượng ứng với 100%. Tìm tỉ số phần trăm thì lấy phần chia cho toàn bộ rồi nhân 100. Tìm giá trị của phần thì lấy toàn bộ chia 100 rồi nhân số phần trăm.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Xác định **đại lượng ứng với 100%** trước mọi phép tính.
 **Lỗi thường gặp:** Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. Phòng: Viết rõ một dòng: “Cả lớp = 100%” trước khi tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

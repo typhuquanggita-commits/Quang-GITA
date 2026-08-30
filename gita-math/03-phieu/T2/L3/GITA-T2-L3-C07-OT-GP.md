@@ -436,6 +436,8 @@ Kết quả: **44, hơn kém 0 đơn vị**.
 
 ### Bài IV.3 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Thảo và Khánh có tất cả 50 quyển vở. Thảo có nhiều hơn Khánh 14 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?

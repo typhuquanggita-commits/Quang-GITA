@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) Yến: 23 quyển, Vy: 17 quyển · b) Nam: 74 quyển, Dũng: 58 quyển · c) Yến: 94 quyển, Hùng: 86 quyển · d) Trang: 94 quyển, Đức: 64 quyển · e) Quân: 75 quyển, Đức: 65 quyển
 - **Bài IV.2** — a) 35 · b) 141 · c) 95 · d) 50 · e) 28 · f) 22
 - **Bài IV.3** — a) 330 · b) 261 · c) 180 · d) 333 · e) 162 · f) 429
-- **Bài IV.4** — a) x = 18 · b) x = 16 · c) x = 28 · d) x = 108
+- **Bài IV.4** — a) x = 15 · b) x = 28 · c) x = 108 · d) x = 27
 - **Bài IV.5** — a) chu vi 120 cm, diện tích 576 cm² · b) chu vi 24 cm, diện tích 27 cm² · c) chu vi 50 cm, diện tích 100 cm² · d) chu vi 180 cm, diện tích 1 125 cm²
 
 **Phần V**
@@ -400,6 +400,8 @@ Kiểm tra với hình 2: 5 + 1 × 3 = 8 ✓
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Yến và Vy có tất cả 40 quyển vở. Yến có nhiều hơn Vy 6 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -470,19 +472,17 @@ Kết quả: **330**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 6 + 77 = 185
+Xét **x × 8 + 8 = 128**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 18**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 15**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -512,8 +512,6 @@ Kết quả: **chu vi 120 cm, diện tích 576 cm²**.
 
 ### Bài V.1 — Thêm, bớt chữ số vào một số
 
-> **BẪY — Bên trái hay bên phải.**
-
 **Các bước giải**
 
 Viết thêm một chữ số vào **bên phải** là nhân số cũ với 10 rồi cộng chữ số ấy.
@@ -535,8 +533,6 @@ Viết thêm vào **bên trái** một số có hai chữ số là cộng thêm 
 *Phải chắc trước khi làm bài này:* Cấu tạo số có hai, ba chữ số.
 
 ### Bài V.2 — Bài toán bắt tay
-
-> **BẪY — Mỗi cặp bị đếm hai lần.**
 
 **Các bước giải**
 
@@ -642,7 +638,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | Yến: 23 quyển, Vy: 17 quyển · Nam: 74 quyển, Dũng: 58 quyển · Yến: 94 quyển, Hùng: 86 quyển · Trang: 94 quyển, Đức: 64 quyển… |
 | IV.2 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 35 · 141 · 95 · 50… |
 | IV.3 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 330 · 261 · 180 · 333… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 18 · x = 16 · x = 28 · x = 108 |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 15 · x = 28 · x = 108 · x = 27 |
 | IV.5 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | chu vi 120 cm, diện tích 576 cm² · chu vi 24 cm, diện tích 27 cm² · chu vi 50 cm, diện tích 100 cm² · chu vi 180 cm, diện tích 1 125 cm² |
 | V.1 | Thêm, bớt chữ số | Cấu tạo thập phân của số tự nhiên | “Viết thêm chữ số … vào bên trái / bên phải” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Thêm một chữ số vào bên phải thì số mới bằng số cũ nhân 10 cộng chữ số ấy. | 697 · 628 · 769 · 700… |
 | V.2 | Đếm số cặp | Đếm cặp, nguyên tắc đếm lặp | “Mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | 5 bạn có 10 cái bắt tay; 10 bạn có 45 cái. | 6 cái · 15 cái · 21 cái · 10 cái… |
@@ -674,9 +670,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | IV.2 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | IV.3 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
-| V.1 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.1 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.2 | TD4, TD6 | Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**. |
 | V.3 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
 | V.4 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |

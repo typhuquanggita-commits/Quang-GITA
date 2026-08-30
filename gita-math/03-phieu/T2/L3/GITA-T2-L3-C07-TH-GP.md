@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 327 : 7 · b) x = 50 · c) x = 24 · d) x = 50
+- **Bài IV.1** — a) x = 48 · b) x = 37 · c) x = 126 · d) x = 67
 - **Bài IV.2** — a) Minh: 62 quyển, Nam: 32 quyển · b) Bình: 43 quyển, Tuấn: 23 quyển · c) Quân: 25 quyển, Sơn: 17 quyển · d) Khánh: 98 quyển, Vy: 78 quyển
 - **Bài IV.3** — a) 7 chiếc · b) 4 chiếc · c) 13 chiếc · d) 9 chiếc
 - **Bài IV.4** — a) 800 g · b) 500 g · c) 200 g · d) 350 g · e) 50 g · f) 400 g
@@ -392,25 +392,25 @@ Tổng các chữ số: 6 + 8 + 4 + 2 = 20.
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 7 − 33 = 294
+Xét **(x + 7) × 5 = 275**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 327 : 7**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 48**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
 *Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
 ### Bài IV.2 — Tìm hai số khi biết tổng và hiệu
+
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
 
 **Các bước giải**
 
@@ -520,8 +520,6 @@ Kết quả: **5 quả**.
 
 ### Bài V.2 — Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
-> **BẪY — Cho thêm khác với chuyển qua lại.**
-
 **Các bước giải**
 
 Bước 1 — số cờ của nhóm Sao Mai: 38 × 4 = 152 (lá).
@@ -543,8 +541,6 @@ Bước 4 — muốn hai tổ bằng nhau thì cho đội Hai thêm đúng phầ
 *Phải chắc trước khi làm bài này:* Bốn phép tính và bài toán giải bằng hai phép tính.
 
 ### Bài V.3 — Thêm, bớt chữ số vào một số
-
-> **BẪY — Bên trái hay bên phải.**
 
 **Các bước giải**
 
@@ -631,7 +627,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Bài toán giải bằng hai phép tính | Quan hệ gấp – kém, phép cộng | Đề cho một đại lượng và quan hệ, hỏi tổng | Tìm đại lượng còn thiếu rồi cộng | Cả hai tổ bằng (1 + k) lần tổ thứ nhất — nhẩm được ngay. | 51 cây · 255 cây · 288 cây · 198 cây |
 | III.4 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | 65 · Thứ Năm (20 quyển) · Thứ Ba (6 quyển) · 14… |
 | III.5 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn dấu hiệu theo số chia rồi kiểm tra | Số chia hết cho 9 thì chắc chắn chia hết cho 3; điều ngược lại không đúng. | không (tổng các chữ số bằng 20) · có (tận cùng là 5) · có (tận cùng là 2) · có (tổng các chữ số bằng 18)… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 327 : 7 · x = 50 · x = 24 · x = 50 |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 48 · x = 37 · x = 126 · x = 67 |
 | IV.2 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | Minh: 62 quyển, Nam: 32 quyển · Bình: 43 quyển, Tuấn: 23 quyển · Quân: 25 quyển, Sơn: 17 quyển · Khánh: 98 quyển, Vy: 78 quyển |
 | IV.3 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 7 chiếc · 4 chiếc · 13 chiếc · 9 chiếc |
 | IV.4 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 800 g · 500 g · 200 g · 350 g… |
@@ -663,14 +659,14 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD3 | Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai. |
 | III.4 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một ngày. |
 | III.5 | TD1, TD5 | 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | IV.3 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | IV.4 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.5 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | V.1 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
-| V.2 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
-| V.3 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.2 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.3 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.4 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | V.5 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 

@@ -404,6 +404,8 @@ Kết quả: **65**.
 
 ### Bài IV.2 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 8 × 1 + 8 × 2 + 8 × 3 + … + 8 × 10
@@ -423,6 +425,8 @@ Kết quả: **440**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
+
+> **BẪY — Chuyển vế mà quên đổi dấu.**
 
 **Các bước giải**
 
@@ -444,6 +448,8 @@ Kết quả: **x = 53**.
 
 ### Bài IV.4 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -464,8 +470,6 @@ Kết quả: **93**.
 
 ### Bài IV.5 — Nhận ra thừa số 0 để tính tức thì
 
-> **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
-
 **Các bước giải**
 
 Xét ý a: 97 × 77 × (82 − 82)
@@ -485,8 +489,6 @@ Kết quả: **0**.
 *Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 
 ### Bài V.1 — Bán hai lần theo phân số, tìm số ban đầu
-
-> **BẪY — Lấy phân số trên số ban đầu thay vì trên phần còn lại.**
 
 **Các bước giải**
 
@@ -509,8 +511,6 @@ Số cam ban đầu: 15 : 1 × 2 = **30 quả**. Thử lại xuôi để chắc 
 *Phải chắc trước khi làm bài này:* Tìm phân số của một số và bài toán tính ngược một bước.
 
 ### Bài V.2 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 
@@ -650,9 +650,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
 | III.5 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
 | IV.1 | TD5, TD3 | Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên. |
-| IV.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.2 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
-| IV.4 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.4 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.5 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | V.1 | TD3, TD5, TD6 | Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài. |
 | V.2 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |

@@ -465,9 +465,10 @@ d) Tổng 435 + 4 có chia hết cho 5 không? Nếu không, số dư bằng bao
 
 ### Bài E.1
 **Đáp số:** a) không có chữ số nào · b) 6 · c) 1, 4, 7 · d) 1, 4, 7 · e) không có chữ số nào
-**Hướng giải:** BẪY — Chữ số hàng cao nhất không được là 0. Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
+**Hướng giải:** BẪY — Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất.. Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 **Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì chỉ cần xét chữ số tận cùng. — (2) Số chia là 3 hay 9 thì tính tổng các chữ số đã biết trước. — (3) Cộng thêm dấu * và tìm chữ số làm tổng chia hết cho số đó.
 
 ### Bài E.2
@@ -486,9 +487,10 @@ d) Tổng 435 + 4 có chia hết cho 5 không? Nếu không, số dư bằng bao
 
 ### Bài E.4
 **Đáp số:** a) 8 426 dư 7 · b) 3 916 dư 5 · c) 5 021 dư 12 · d) 8 796 dư 10 · e) 8 387 dư 6 · f) 6 806 dư 4
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 **Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 
 ### Bài E.5

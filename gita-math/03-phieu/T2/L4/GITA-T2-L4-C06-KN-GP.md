@@ -96,8 +96,6 @@ Kết quả: **x = 25 792**.
 
 ### Bài A.2 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 4 278 × 12
@@ -157,8 +155,6 @@ Kết quả: **12 705**.
 *Điểm chốt:* Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
 
 ### Bài A.5 — Tính giá trị biểu thức
-
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Dấu cộng và trừ xen kẽ đều đặn**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Kỹ thuật tính nhanh, so sánh bi�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Nhân nhẩm nhờ tách thừa số
+
+> **BẪY — Nhân với 10 rồi quên cộng hoặc trừ phần bù..**
 
 **Các bước giải**
 

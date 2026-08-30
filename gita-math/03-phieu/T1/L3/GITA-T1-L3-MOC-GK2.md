@@ -281,7 +281,7 @@ f) 8 hộp bút có 24 chiếc. Hỏi 12 hộp như thế có bao nhiêu chiếc
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
 
@@ -352,12 +352,14 @@ d) Tổng 490 + 875 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Nằm giữa **chưa đủ** để là trung điểm.
 **Lỗi thường gặp:** Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. Phòng: Đo cả hai đoạn AM và MB rồi mới kết luận.
+**Chú ý:** Nằm giữa nhưng không chia đôi.
 
 ### Bài I.3
 **Đáp số:** a) 21 · b) 58 · c) 32 · d) 48 · e) 60 · f) 53 · g) 35
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.4
 **Đáp số:** a) số lớn 135, số bé 117 · b) số lớn 118, số bé 100 · c) số lớn 215, số bé 125 · d) số lớn 67, số bé 55 · e) số lớn 56, số bé 38 · f) số lớn 65, số bé 63
@@ -400,6 +402,7 @@ d) Tổng 490 + 875 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài III.1
 **Đáp số:** a) 679 · 697 · 769 · 796 · 967 · 976 · b) 6 · c) 976 · d) 679 · e) 297 · f) 2

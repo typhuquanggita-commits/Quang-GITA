@@ -440,6 +440,8 @@ Kết quả: **10 000 đồng**.
 
 ### Bài IV.3 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Minh và Ngọc có tất cả 72 quyển vở. Minh có nhiều hơn Ngọc 12 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -525,8 +527,6 @@ Kết quả: **3 con gà, 8 con chó**.
 *Điểm chốt:* Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
 
 ### Bài V.2 — Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
@@ -674,7 +674,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 | V.3 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
 | V.4 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
-| V.5 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.5 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 
 ---
 

@@ -380,6 +380,8 @@ Nếu trừ hai số đã làm tròn thì được 86 000 − 84 000 = 2 000 km,
 
 ### Bài IV.1 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -507,8 +509,6 @@ Kết quả: **4 dư 6**.
 *Điểm chốt:* Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 
 ### Bài V.2 — Số chính phương — làm quen theo hướng đề thi
-
-> **BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức.**
 
 **Các bước giải**
 
@@ -651,7 +651,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD5, TD3 | Nhìn xem **tổng các tử số** có bằng mẫu số chung không. |
 | III.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
 | III.5 | TD2, TD4 | Làm tròn trước khi tính thì sai số của hai lần làm tròn cộng lại. |
-| IV.1 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.1 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.2 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
 | IV.3 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.4 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
@@ -660,7 +660,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD4, TD6 | Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8. |
 | V.3 | TD3, TD5, TD6 | Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài. |
 | V.4 | TD4, TD6 | Chu kì lặp lại của chữ số tận cùng dài **không quá 4**. |
-| V.5 | TD1, TD3, TD4 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
+| V.5 | TD1, TD3, TD4, TD5 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
 
 ---
 

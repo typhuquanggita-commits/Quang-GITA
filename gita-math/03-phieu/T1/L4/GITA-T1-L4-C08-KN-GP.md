@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Điền số còn thiếu trong dãy
 
-> **BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng.**
-
 **Các bước giải**
 
 Xét ý a: 9, 11, 13, 15, …, 19
@@ -137,8 +135,6 @@ Kết quả: **30 000**.
 *Điểm chốt:* Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
 
 ### Bài A.4 — Tìm số hạng thứ n của dãy cách đều
-
-> **BẪY — Nhân với n thay vì (n − 1).**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Đề hỏi riêng các số chẵn, số chia hết cho … tron
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Dãy số và quy luật” và mục 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Bài toán trồng cây
+
+> **BẪY — Máy móc cộng 1 cho mọi trường hợp..**
 
 **Các bước giải**
 
@@ -637,7 +637,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.2 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
 | D.3 | TD2, TD3 | Đổi về cùng một đơn vị (phút) trước khi tính, đừng tính lẫn giờ và phút. |
 | D.4 | TD4, TD5 | Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp. |
-| D.5 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| D.5 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | E.3 | TD2, TD4 | Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài. |

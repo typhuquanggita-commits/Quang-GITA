@@ -388,6 +388,8 @@ Kết quả: **24 tuổi**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 14 thùng nước, mỗi thùng 15 lít. Cửa hàng đã bán 11 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -475,8 +477,6 @@ Kết quả: **14**.
 *Điểm chốt:* Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 
 ### Bài IV.5 — Hai vòi nước, hai người cùng làm
-
-> **BẪY — Cộng thời gian thay vì cộng năng suất.**
 
 **Các bước giải**
 
@@ -668,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | IV.4 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | IV.5 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.3 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
 | V.4 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |

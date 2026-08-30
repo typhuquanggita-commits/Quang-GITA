@@ -376,6 +376,8 @@ Kết quả: **45 trận**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -419,6 +421,8 @@ Bước 4 — tăng chiều dài thêm 10 m thì phần dôi ra là một hình 
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và quan hệ s = v × t.
 
 ### Bài IV.3 — Lọc số hạng theo điều kiện chia hết
+
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
 
 **Các bước giải**
 
@@ -482,8 +486,6 @@ Kết quả: **30 lít**.
 
 ### Bài V.1 — Ba công thức tổng phải thuộc
 
-> **BẪY — Nhầm số hạng cuối với số lượng số hạng.**
-
 **Các bước giải**
 
 Xét ý a: 1 + 3 + 5 + … + 49 (tổng 25 số lẻ đầu tiên)
@@ -503,8 +505,6 @@ Kết quả: **625**.
 *Điểm chốt:* Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
 
 ### Bài V.2 — Dãy số lặp lại theo chu kì
-
-> **BẪY — Số dư 0 ứng với phần tử cuối chu kì.**
 
 **Các bước giải**
 
@@ -647,9 +647,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD3 | Đổi về cùng một đơn vị (phút) trước khi tính, đừng tính lẫn giờ và phút. |
 | III.4 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
 | III.5 | TD4, TD6 | Chia cho 2 vì mỗi cặp được đếm **hai lần**. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
-| IV.3 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.3 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.4 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | IV.5 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | V.1 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |

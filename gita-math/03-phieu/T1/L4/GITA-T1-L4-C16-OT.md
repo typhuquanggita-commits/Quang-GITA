@@ -268,7 +268,7 @@ e) (80 × 73 − 73 × 80) × 49
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -373,7 +373,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài II.1
 **Đáp số:** a) 210 · b) 925 · c) 245 · d) 10 100 · e) 3 725 · f) 100
-**Hướng giải:** BẪY — Quên cộng 1 khi đếm số số hạng. Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
+**Hướng giải:** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
 **Lỗi thường gặp:** Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. Phòng: Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm.
 
@@ -433,35 +433,35 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) 37 phần 20 · b) 26 phần 49 · c) 89 phần 70 · d) 104 phần 25
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài IV.2
 **Đáp số:** a) x = 37 · b) x = 17 · c) x = 71 · d) x = 52 · e) x = 23 · f) x = 16
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
 
 ### Bài IV.3
 **Đáp số:** a) 150 lít · b) 24 lít · c) 250 lít · d) 72 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.4
 **Đáp số:** a) 5 100 · b) 2 550 · c) 975 · d) 1 300
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.5
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+**Hướng giải:** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?

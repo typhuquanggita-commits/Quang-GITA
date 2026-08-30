@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 40 · b) x = 290 · c) x = 9 · d) x = 37 · e) x = 324
+- **Bài IV.1** — a) x = 57 · b) x = 40 · c) x = 71 · d) x = 18 · e) x = 33
 - **Bài IV.2** — a) 156 · b) 459 · c) 759 · d) 979
 - **Bài IV.3** — a) 11 chiếc · b) 13 chiếc · c) 6 chiếc · d) 10 chiếc · e) 9 chiếc · f) 4 chiếc
 - **Bài IV.4** — a) 34 · b) 810 · c) 108 · d) 20 · e) 918 · f) 702
@@ -404,19 +404,17 @@ Kết quả: **18**.
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 8 + 60 = 380
+Xét **(x + 69) × 9 = 1 134**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 40**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 57**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -639,7 +637,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 12 · 12 cm² · 1 cm² · 6 cm²… |
 | III.4 | Đọc bảng số liệu | Thống kê đơn giản, trung bình cộng | Đề cho bảng số liệu kèm nhiều câu hỏi | Ghi lại số liệu rồi trả lời từng câu | Tính tổng một lần rồi dùng lại cho các câu sau. | 149 · Thứ Năm (37 quyển) · Thứ Sáu (19 quyển) · 18… |
 | III.5 | Tìm quy luật dãy số | Dãy cách đều, dãy nhân, dãy hiệu tăng đều | Dãy số kết thúc bằng dấu … | Thử hiệu → thử thương → thử dãy hiệu | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | 18 · 32 · 43 · 128… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 40 · x = 290 · x = 9 · x = 37… |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 57 · x = 40 · x = 71 · x = 18… |
 | IV.2 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 156 · 459 · 759 · 979 |
 | IV.3 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 11 chiếc · 13 chiếc · 6 chiếc · 10 chiếc… |
 | IV.4 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 34 · 810 · 108 · 20… |
@@ -671,7 +669,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
 | III.4 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một ngày. |
 | III.5 | TD4, TD6 | Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
 | IV.3 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | IV.4 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |

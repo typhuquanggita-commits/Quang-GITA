@@ -273,7 +273,7 @@ f) Có 7 gói kẹo, mỗi gói 50 g. Lấy ra 1 gói. Hỏi số kẹo còn l�
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Chữ số tận cùng của tổng và tích
 
@@ -370,6 +370,7 @@ f) Xoá chữ số hàng đơn vị của 35 thì được số nào?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.2
 **Đáp số:** a) 78 · b) Minh (25 bông) · c) Yến (15 bông) · d) 10 · e) 17
@@ -382,6 +383,7 @@ f) Xoá chữ số hàng đơn vị của 35 thì được số nào?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.4
 **Đáp số:** a) 372 · b) 200 · c) 187 · d) 200 · e) 301 · f) 407
@@ -441,7 +443,7 @@ f) Xoá chữ số hàng đơn vị của 35 thì được số nào?
 
 ### Bài IV.3
 **Đáp số:** a) Hùng: 108 quyển, Sơn: 92 quyển · b) Hà: 79 quyển, Tuấn: 55 quyển · c) An: 36 quyển, Dũng: 24 quyển · d) Minh: 83 quyển, Sơn: 59 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -469,7 +471,7 @@ f) Xoá chữ số hàng đơn vị của 35 thì được số nào?
 
 ### Bài V.2
 **Đáp số:** a) 6 cái · b) 10 cái · c) 45 cái · d) 21 cái · e) 15 cái · f) 28 cái
-**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi bạn bắt tay với (n − 1) bạn còn lại nên có n × (n − 1) lượt. Nhưng mỗi cái bắt tay có hai người tham gia nên bị đếm **hai lần**; vì vậy phải chia cho 2.
+**Hướng giải:** Mỗi bạn bắt tay với (n − 1) bạn còn lại nên có n × (n − 1) lượt. Nhưng mỗi cái bắt tay có hai người tham gia nên bị đếm **hai lần**; vì vậy phải chia cho 2.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**.
 **Lỗi thường gặp:** Quên chia 2 nên đáp số gấp đôi. Phòng: Thử với 3 bạn: phải ra 3 cái bắt tay, không phải 6.
 **Gợi ý 3 tầng:** (1) Mỗi bạn bắt tay với mấy bạn? — (2) Nhân với số bạn thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia cho 2.
@@ -491,7 +493,7 @@ f) Xoá chữ số hàng đơn vị của 35 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 353 · b) 318 · c) 335 · d) 300 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 3
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

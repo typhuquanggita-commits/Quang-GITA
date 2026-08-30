@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đổi đơn vị đo độ dài và khối lượng
 
-> **BẪY — Chiều đổi đơn vị.**
-
 **Các bước giải**
 
 Xét ý a: 40 yến = … g
@@ -97,8 +95,6 @@ Kết quả: **400 000**.
 *Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 
 ### Bài A.2 — Đơn vị đo thời gian: giờ và phút
-
-> **BẪY — Cơ số 60 chứ không phải 10.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Đơn vị trong câu hỏi khác đơn vị trong dữ kiện**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Đổi đơn vị tổng hợp, thời
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đổi đơn vị đo
+
+> **BẪY — Đổi ngược chiều nên nhân thành chia..**
 
 **Các bước giải**
 

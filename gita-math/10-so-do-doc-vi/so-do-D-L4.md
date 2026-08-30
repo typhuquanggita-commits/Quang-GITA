@@ -69,9 +69,9 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 |:--:|---|---|---|---|---|
 | M1 | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tìm trung bình cộng | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | — |
 | M1 | Đề cho **tổng** và **hiệu** của hai số | Bài toán tổng – hiệu | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | — |
-| M1 | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Quan hệ nhiều hơn – ít hơn, gấp – kém | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | Gấp và kém dùng hai phép tính ngược nhau |
+| M1 | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Quan hệ nhiều hơn – ít hơn, gấp – kém | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | — |
 | M1 | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Rút về đơn vị | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | — |
-| M1 | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Ba dạng cơ bản của chuyển động đều | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. | Đơn vị thời gian |
+| M1 | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Ba dạng cơ bản của chuyển động đều | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. | — |
 | M2 | “Có tất cả …” và “… nhiều hơn … là …” | Tổng – hiệu có lời văn | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | — |
 | M2 | Cụm “trung bình mỗi …” | Ba dạng bài trung bình cộng | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | — |
 | M2 | Hai đại lượng cùng tăng cùng giảm | Tỉ lệ thuận, rút về đơn vị | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | — |
@@ -112,43 +112,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Chú ý: chuyển đi thì bên này giảm, bên kia tăng. Tổ Hai có 140 quyển sách, tổ Một có 112 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang tổ Một để số sách hai tổ bằng nhau?
+**Đề 1.** Giải bằng cách rút về đơn vị hoặc dùng tỉ số. Mua 12 quyển vở hết 1 080 nghìn đồng. Với 1 710 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính trung bình cộng. Tìm trung bình cộng của 4 số: 89, 73, 77, 81.
+**Đề 2.** Coi cả công việc là 1 đơn vị. Vòi thứ nhất chảy một mình đầy bể trong 10 giờ, vòi thứ hai chảy một mình đầy bể trong 15 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Dùng phương pháp giả thiết tạm. Vừa gà vừa chó có 14 con, đếm được tất cả 48 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+**Đề 3.** Chú ý: chuyển đi thì bên này giảm, bên kia tăng. Tổ Hai có 252 quyển sách, đội Một có 210 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang đội Một để số sách hai tổ bằng nhau?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Tìm hai số trong mỗi trường hợp. Tổng hai số là 1 064, hiệu hai số là 224. Tìm hai số đó.
+**Đề 4.** Vẽ sơ đồ đoạn thẳng rồi giải. Hợp tác xã chứa nhiều hơn kho B 138 kg phân bón. Số phân bón ở kho B bằng 3 phần 5 số phân bón ở hợp tác xã. Mỗi nơi chứa bao nhiêu kg?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Coi cả công việc là 1 đơn vị. Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ hai chảy một mình đầy bể trong 8 giờ. Mở cả hai vòi thì sau bao lâu đầy bể?
+**Đề 5.** Đọc kĩ “của số nào” trước khi tính. Một cửa hàng có 580 kg gạo. Ngày đầu bán 1 phần 4 số gạo, ngày thứ hai bán 1 phần 5 số gạo còn lại. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Bài mô phỏng phần tự luận của đề thi chất lượng cao. Ba số có tổng 126. Số thứ hai hơn số thứ nhất 8, số thứ ba hơn số thứ hai 8. Tìm số thứ hai.
+**Đề 6.** Giải từng bài toán nhỏ. 3 ngày đầu tuần một cửa hàng bán được lần lượt 95, 87, 91 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Trước khi tính, gạch chân câu hỏi và khoanh tròn dữ kiện **không** dùng tới. Một gia đình gồm 2 người lớn và 2 trẻ em đi tham quan cách nhà 74 km. Vé người lớn 170 000 đồng, vé trẻ em bằng nửa vé người lớn. Hỏi cả gia đình mua vé hết bao nhiêu tiền?
+**Đề 7.** Việc đầu tiên là gọi tên dữ kiện bị giấu. Số muối ở trang trại bằng 3 phần 2 số muối ở xưởng. Nếu chuyển 30 kg từ trang trại sang xưởng thì trang trại vẫn còn nhiều hơn. Biết trang trại hơn xưởng 60 kg, tìm số muối mỗi nơi.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Giải bằng cách rút về đơn vị hoặc dùng tỉ số. Mua 14 quyển vở hết 280 nghìn đồng. Mua 19 quyển vở như thế hết bao nhiêu nghìn đồng?
+**Đề 8.** Giải bằng cách quy về tổng số ngày công. 3 người làm xong một công việc trong 40 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Vẽ sơ đồ đoạn thẳng rồi giải. Đội Hai và nhóm Hoa Phượng trồng được tất cả 930 cây. Số cây của đội Hai bằng 2 phần 3 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
+**Đề 9.** Xác định đại lượng nào giữ nguyên. Số lớn gấp 2 lần số bé và tổng hai số là 48. Phải thêm vào số lớn bao nhiêu đơn vị để số lớn gấp 9 lần số bé?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Giải từng bài toán nhỏ. Trung bình mỗi ngày cửa hàng bán được 239 kg gạo. 2 ngày đầu bán được 247, 235 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+**Đề 10.** Đọc kĩ rồi trả lời từng câu. Chi có 15 quyển vở, Yến có số vở gấp 5 lần Chi. Yến có bao nhiêu quyển vở?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -158,16 +158,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Chuyển đổi giữa hai đại lượng, tổng không đổi | “Chuyển … từ bên này sang bên kia” |
-| 2 | Tìm trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” |
-| 3 | Giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác |
-| 4 | Bài toán tổng – hiệu | Đề cho **tổng** và **hiệu** của hai số |
-| 5 | Công việc chung | “Làm một mình trong … giờ” đi cùng “cùng làm” |
-| 6 | Tổng nhiều số có ràng buộc; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số |
-| 7 | Bài toán giá vé và cước phí | Đề kể một tình huống đời thường và cho **nhiều số hơn mức cần** |
-| 8 | Tỉ lệ thuận, rút về đơn vị | Hai đại lượng cùng tăng cùng giảm |
-| 9 | Bài toán tổng – tỉ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) |
-| 10 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” |
+| 1 | Tỉ lệ thuận, rút về đơn vị | Hai đại lượng cùng tăng cùng giảm |
+| 2 | Công việc chung | “Làm một mình trong … giờ” đi cùng “cùng làm” |
+| 3 | Chuyển đổi giữa hai đại lượng, tổng không đổi | “Chuyển … từ bên này sang bên kia” |
+| 4 | Bài toán hiệu – tỉ | Đề cho **hiệu** và **tỉ số** |
+| 5 | Tìm phân số của một số, nhiều bước | Cụm “… số còn lại”, “… số đó” |
+| 6 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” |
+| 7 | Tổng – tỉ, hiệu – tỉ dạng ẩn | Đề mô tả vòng thay vì cho số: “nếu … thì …”, “chia thành … phần” |
+| 8 | Tỉ lệ nghịch | Số người tăng thì thời gian giảm |
+| 9 | Tổng – tỉ có tỉ số thay đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” |
+| 10 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” |
 
 ---
 

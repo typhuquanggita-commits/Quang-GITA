@@ -653,7 +653,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
 | IV.3 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.4 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD2, TD6 | Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi. |
 | V.2 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
 | V.3 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |

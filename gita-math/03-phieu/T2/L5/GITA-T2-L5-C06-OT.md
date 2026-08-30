@@ -281,7 +281,7 @@ e) Một xe máy đi 25 km/giờ khởi hành trước. Cùng lúc đó một ô
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -467,14 +467,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) 150 lít · b) 48 lít · c) 180 lít · d) 72 lít · e) 150 lít · f) 234 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) 2 giờ · b) 4 giờ · c) 2 giờ · d) 1 giờ · e) 3 giờ
-**Hướng giải:** BẪY — Tổng hay hiệu vận tốc. Ngược chiều gặp nhau: mỗi giờ hai xe lại gần nhau một quãng bằng **tổng** hai vận tốc; thời gian gặp = quãng cách : tổng vận tốc. Cùng chiều đuổi nhau: mỗi giờ khoảng cách rút ngắn một quãng bằng **hiệu** hai vận tốc; thời gian đuổi kịp = quãng cách : hiệu vận tốc.
+**Hướng giải:** Ngược chiều gặp nhau: mỗi giờ hai xe lại gần nhau một quãng bằng **tổng** hai vận tốc; thời gian gặp = quãng cách : tổng vận tốc. Cùng chiều đuổi nhau: mỗi giờ khoảng cách rút ngắn một quãng bằng **hiệu** hai vận tốc; thời gian đuổi kịp = quãng cách : hiệu vận tốc.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc.
 **Lỗi thường gặp:** Dùng tổng vận tốc cho bài đuổi nhau. Phòng: Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức.
 **Gợi ý 3 tầng:** (1) Hai xe đi lại gần nhau hay đuổi theo nhau? — (2) Mỗi giờ khoảng cách giữa hai xe thay đổi bao nhiêu ki-lô-mét? — (3) Lấy khoảng cách ban đầu chia cho lượng thay đổi mỗi giờ.

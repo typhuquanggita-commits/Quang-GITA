@@ -654,11 +654,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.4 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | IV.5 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
-| V.1 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.1 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.2 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
-| V.3 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.3 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
-| V.5 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.5 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 
 ---
 

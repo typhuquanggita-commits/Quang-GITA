@@ -158,6 +158,11 @@ class Bai:
     dan: str = ""                                 # đề dẫn chung của bài
     goi_y: tuple[str, str, str] | None = None     # gợi ý 3 tầng
     bay: str = ""                                 # loại bẫy, rỗng nếu không có
+    # Cảnh báo **không tính là bẫy**. Mức M1 là phần mở phiếu — chỗ học sinh
+    # yếu lấy lại tự tin — nên không được cài bẫy chấm điểm; nhưng những chỗ
+    # hay nhầm ở đó vẫn đáng nhắc. Nhắc bằng trường này, in ra phiếu dưới
+    # nhãn "Chú ý" chứ không phải "BẪY".
+    chu_y: str = ""
     pt_dang: str = ""                             # bảng phân tích — Dạng bài
     pt_kien_thuc: str = ""                        # — Kiến thức liên quan
     pt_du_lieu: str = ""                          # — Dữ liệu nhận biết

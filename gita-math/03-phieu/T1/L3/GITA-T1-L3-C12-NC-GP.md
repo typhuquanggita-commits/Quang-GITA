@@ -456,6 +456,8 @@ Kết quả: **77 chiếc**.
 
 ### Bài IV.4 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Bình và Vy có tất cả 48 quyển vở. Bình có nhiều hơn Vy 14 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -475,6 +477,8 @@ Kết quả: **Bình: 31 quyển, Vy: 17 quyển**.
 *Điểm chốt:* Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 
 ### Bài IV.5 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -499,8 +503,6 @@ Kết quả: **3 m**.
 *Phải chắc trước khi làm bài này:* Nhân số có nhiều chữ số và bảng đơn vị đo.
 
 ### Bài V.1 — Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
-
-> **BẪY — Cho thêm khác với chuyển qua lại.**
 
 **Các bước giải**
 
@@ -547,8 +549,6 @@ Kết quả: **4**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.3 — Bài toán gà và chó
-
-> **BẪY — Chia cho hiệu số chân.**
 
 **Các bước giải**
 
@@ -674,7 +674,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | IV.4 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | IV.5 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | V.4 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |

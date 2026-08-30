@@ -414,6 +414,8 @@ Bước 4 — tỉ lệ nam giỏi so với cả lớp: 6 : 100 × 100 = 6%.
 
 ### Bài IV.2 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 5 phần 3 : 3 phần 4 + 1 phần 2
@@ -477,8 +479,6 @@ Giá cuối cùng là **345 600 đồng**. Nếu cộng gộp hai lần giảm t
 *Phải chắc trước khi làm bài này:* Tìm a% của một số và phép nhân chia với số tròn nghìn.
 
 ### Bài IV.5 — Tính nhanh với số thập phân
-
-> **BẪY — Vị trí dấu phẩy ở kết quả.**
 
 **Các bước giải**
 

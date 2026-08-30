@@ -116,8 +116,6 @@ Kết quả: **31 049**.
 
 ### Bài A.3 — Ôn tập bốn phép tính với số tự nhiên
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 207 391 − 117 904
@@ -141,8 +139,6 @@ Kết quả: **89 487**.
 *Phải chắc trước khi làm bài này:* Bảng nhân chia và kĩ thuật đặt tính.
 
 ### Bài A.4 — Tính giá trị biểu thức
-
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Công thức tổng dãy cách đều**.
 
 ### Bài E.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép nhân trước khi gỡ phép cộng ở ngoài..**
+
 **Các bước giải**
 
 Xét ý a: (x − 40) × 11 = -253
@@ -503,6 +501,8 @@ Kết quả: **x = 17**.
 *Điểm chốt:* Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước.
 
 ### Bài E.2 — Tính nhanh bằng cách ghép số tròn
+
+> **BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn..**
 
 **Các bước giải**
 

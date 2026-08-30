@@ -58,7 +58,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.2** — a) cạnh 14 cm, diện tích 196 cm² · b) hình chữ nhật · c) 12 cm · d) 9 cm · e) cạnh 30 cm, diện tích 900 cm² · f) hình chữ nhật
 - **Bài IV.3** — a) 648 · b) 150 · c) 748 · d) 432 · e) 781 · f) 183
 - **Bài IV.4** — a) 750 g · b) 400 g · c) 1 000 g · d) 500 g · e) 200 g
-- **Bài IV.5** — a) x = 283 : 4 · b) x = 22 · c) x = 7 · d) x = 160 · e) x = 24 · f) x = 7
+- **Bài IV.5** — a) x = 44 · b) x = 42 · c) x = 36 · d) x = 135 · e) x = 17 · f) x = 58
 
 **Phần V**
 
@@ -484,19 +484,17 @@ Kết quả: **750 g**.
 
 ### Bài IV.5 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 4 − 51 = 232
+Xét **x × 6 − 24 = 240**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 283 : 4**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 44**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -525,8 +523,6 @@ Kết quả: **1 275**.
 *Điểm chốt:* Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**.
 
 ### Bài V.2 — Tính nhanh tổng dãy số cách đều
-
-> **BẪY — Số số hạng lẻ.**
 
 **Các bước giải**
 
@@ -645,7 +641,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | cạnh 14 cm, diện tích 196 cm² · hình chữ nhật · 12 cm · 9 cm… |
 | IV.3 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 648 · 150 · 748 · 432… |
 | IV.4 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 750 g · 400 g · 1 000 g · 500 g… |
-| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 283 : 4 · x = 22 · x = 7 · x = 160… |
+| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 44 · x = 42 · x = 36 · x = 135… |
 | V.1 | Tổng dãy số tự nhiên liên tiếp | Ghép cặp, tổng dãy cách đều | Dãy cộng dài có dấu … | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | 1 275 · 325 · 210 · 5 050 |
 | V.2 | Tổng dãy số cách đều | Ghép cặp, tổng dãy cách đều | Dãy cộng dài có dấu … | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | 6 375 · 55 · 1 625 · 210… |
 | V.3 | Đếm chữ số theo nhóm | Đếm số hạng, cấu tạo số | Bài toán đánh số trang | Chia nhóm theo độ dài số rồi nhân, cộng | Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. | 342 · 31 · 189 · 91… |
@@ -677,7 +673,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | IV.3 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
 | IV.4 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
-| IV.5 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.5 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | V.1 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | V.2 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |
 | V.3 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |

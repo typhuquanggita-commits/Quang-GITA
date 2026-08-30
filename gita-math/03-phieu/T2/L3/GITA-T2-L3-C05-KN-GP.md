@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Điền số còn thiếu trong dãy
 
-> **BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng.**
-
 **Các bước giải**
 
 Xét ý a: 5, …, 15, 20, 25, 30
@@ -97,8 +95,6 @@ Kết quả: **10**.
 *Điểm chốt:* Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 
 ### Bài A.2 — Bài toán giải bằng hai phép tính
-
-> **BẪY — Đọc kĩ câu hỏi cuối.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Dãy có số đầu, số cuối, khoảng cách đều**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Dãy số cách đều và quy luật�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Điền số hạng còn thiếu
+
+> **BẪY — Lấy hiệu hai số cách nhau một chỗ trống làm khoảng cách..**
 
 **Các bước giải**
 

@@ -278,7 +278,7 @@ d) Đoạn đường dài 95 m, trồng cây cách nhau 5 m, không trồng ở 
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -347,6 +347,7 @@ g) Tích 408 × 637 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.2
 **Đáp số:** a) 139, 164, 189 · b) 101, 126, 151 · c) 25, 29, 33 · d) 47, 54, 61 · e) 40, 45, 50 · f) 64, 75, 86
@@ -359,6 +360,7 @@ g) Tích 408 × 637 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.4
 **Đáp số:** a) 5 chữ số, tổng 32 · b) 5 chữ số, tổng 26 · c) 5 chữ số, tổng 18 · d) 5 chữ số, tổng 25
@@ -470,7 +472,7 @@ g) Tích 408 × 637 có chữ số tận cùng là chữ số nào?
 ### Bài V.1
 **Đáp số:** a) 68 · b) 102 · c) 34 · d) 50 · e) 18 · f) 34
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

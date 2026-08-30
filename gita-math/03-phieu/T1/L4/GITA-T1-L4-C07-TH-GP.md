@@ -382,6 +382,8 @@ Kết quả: **206 · 260 · 602 · 620**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -536,8 +538,6 @@ Kết quả: **5**.
 
 ### Bài V.3 — Đại lượng khối lượng — đổi đơn vị và chia phần
 
-> **BẪY — Làm tròn lên khi hỏi số xe ít nhất.**
-
 **Các bước giải**
 
 Bước 1 — đổi về ki-lô-gam: 2 tấn = 2 000 kg; 1 tạ = 100 kg.
@@ -653,7 +653,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD2 | Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9. |
 | III.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
 | III.5 | TD4, TD6 | Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
 | IV.3 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.4 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |

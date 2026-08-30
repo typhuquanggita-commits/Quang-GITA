@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 150 g · b) 600 g · c) 750 g · d) 125 g
 - **Bài IV.2** — a) 96 · b) 114 · c) 84 · d) 200 · e) 192 · f) 144
 - **Bài IV.3** — a) 45 · b) 1 phần 2 · c) 104 quyển · d) 1 phần 3 · e) 26 quyển
-- **Bài IV.4** — a) x = 31 · b) x = 160 · c) x = 129 : 4 · d) x = 23
+- **Bài IV.4** — a) x = 37 · b) x = 52 · c) x = 175 · d) x = 23
 - **Bài IV.5** — a) 118 · b) 148 · c) 44 · d) 113 · e) 17 · f) 60 · g) 95
 
 **Phần V**
@@ -456,19 +456,17 @@ Thử lại: 45 : 3 = 15 ✓
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: 64 − x = 33
+Xét **60 − x = 23**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 31**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 37**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -501,8 +499,6 @@ Kết quả: **118**.
 *Phải chắc trước khi làm bài này:* Dấu hiệu chia hết và phép chia có dư.
 
 ### Bài V.1 — Đại lượng bất biến: tính chẵn lẻ của tổng
-
-> **BẪY — Phải chứng minh, không được thử vài trường hợp.**
 
 **Các bước giải**
 
@@ -640,7 +636,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 150 g · 600 g · 750 g · 125 g |
 | IV.2 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 96 · 114 · 84 · 200… |
 | IV.3 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 45 · 1 phần 2 · 104 quyển · 1 phần 3… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 31 · x = 160 · x = 129 : 4 · x = 23 |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 37 · x = 52 · x = 175 · x = 23 |
 | IV.5 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 118 · 148 · 44 · 113… |
 | V.1 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 300 · không thay đổi · 300 · giảm đi 2 lần số bé — luôn là một số chẵn… |
 | V.2 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. | 51 quyển · 153 quyển · 51 quyển · 102 quyển… |
@@ -672,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.2 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.3 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | V.1 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
 | V.2 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |

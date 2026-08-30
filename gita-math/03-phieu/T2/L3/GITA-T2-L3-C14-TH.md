@@ -276,7 +276,7 @@ d) Biết 1 phần 2 của một số là 6. Tìm số đó.
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Suy luận thứ tự và vị trí trong hàng
 
@@ -361,12 +361,14 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.5
 **Đáp số:** a) 120 cách · b) 11 cách · c) 17 bạn · d) 55 cách · e) 12 cách · f) 13 bạn · g) 44 cách
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài II.1
 **Đáp số:** a) 210 kg · b) 204 kg · c) 152 kg · d) 512 kg

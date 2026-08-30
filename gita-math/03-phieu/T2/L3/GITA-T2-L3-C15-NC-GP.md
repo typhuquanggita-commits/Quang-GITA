@@ -58,7 +58,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.2** — a) 49, hơn kém 45 đơn vị · b) 55, hơn kém 0 đơn vị · c) 23, hơn kém 9 đơn vị · d) 61, hơn kém 45 đơn vị · e) 15, hơn kém 36 đơn vị
 - **Bài IV.3** — a) 162 · b) 20 · c) 65 · d) 18
 - **Bài IV.4** — a) 95 · b) 147 · c) 8 · d) 159
-- **Bài IV.5** — a) x = 104 · b) x = 60 · c) x = 121 : 5 · d) x = 16 · e) x = 55
+- **Bài IV.5** — a) x = 104 · b) x = 60 · c) x = 8 · d) x = 16 · e) x = 55
 
 **Phần V**
 
@@ -488,17 +488,13 @@ Kết quả: **95**.
 
 **Các bước giải**
 
-Xét ý a: x : 2 + 48 = 100
+Xét **x : 2 + 48 = 100**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 104**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 104**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -641,7 +637,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 49, hơn kém 45 đơn vị · 55, hơn kém 0 đơn vị · 23, hơn kém 9 đơn vị · 61, hơn kém 45 đơn vị… |
 | IV.3 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 162 · 20 · 65 · 18 |
 | IV.4 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 95 · 147 · 8 · 159 |
-| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 104 · x = 60 · x = 121 : 5 · x = 16… |
+| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 104 · x = 60 · x = 8 · x = 16… |
 | V.1 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. | 30 quyển · 12 quyển · 36 quyển · 16 quyển… |
 | V.2 | Thêm, bớt chữ số | Cấu tạo thập phân của số tự nhiên | “Viết thêm chữ số … vào bên trái / bên phải” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Thêm một chữ số vào bên phải thì số mới bằng số cũ nhân 10 cộng chữ số ấy. | 314 · 283 · 431 · 400… |
 | V.3 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia | “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” | Tính từng bước, bám vào tổng có đổi hay không | Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu. | 51 · 68 · 34 · 24… |
@@ -673,10 +669,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.3 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.4 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
-| IV.5 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.5 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | V.1 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
-| V.2 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
-| V.3 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.2 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.3 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.4 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
 | V.5 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 

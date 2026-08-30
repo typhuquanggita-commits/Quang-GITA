@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đếm hình trong lưới ô vuông
 
-> **BẪY — Bỏ sót các hình ghép nhiều ô.**
-
 **Các bước giải**
 
 Xét ý a: Lưới ô vuông gồm 4 hàng và 5 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
@@ -97,8 +95,6 @@ Kết quả: **20**.
 *Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 
 ### Bài A.2 — Quy tắc nhân trong phép đếm
-
-> **BẪY — Cộng hay nhân.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Có cụm “cả hai”, “ít nhất một”, “không … n
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Suy luận logic, đếm hình và to�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Giả thiết tạm hai loại
+
+> **BẪY — Chia số bánh thiếu cho số bánh của loại nhiều hơn..**
 
 **Các bước giải**
 

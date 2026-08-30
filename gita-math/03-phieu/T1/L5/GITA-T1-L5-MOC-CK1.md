@@ -267,7 +267,7 @@ d) Tìm mọi số có hai chữ số mà số đó bằng 6 lần tổng hai ch
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy có hiệu tăng đều
 
@@ -338,6 +338,7 @@ f) (334 + 25) × 25 − 334 × 25
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.3
 **Đáp số:** a) 187 · b) 210 · c) 252 · d) 336 · e) 27
@@ -356,12 +357,14 @@ f) (334 + 25) × 25 − 334 × 25
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài II.1
 **Đáp số:** a) 3 061 dư 23 · b) 183 dư 6 · c) 2 157 dư 13 · d) 6 723 dư 1 · e) 3 525 dư 11 · f) 4 139 dư 3 · g) 7 567 dư 3
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.2
 **Đáp số:** a) 18 · b) 23 · c) 48 · d) 118 · e) 148 · f) 2 265
@@ -380,6 +383,7 @@ f) (334 + 25) × 25 − 334 × 25
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.5
 **Đáp số:** a) 15 ngày · b) 30 ngày · c) 30 ngày · d) 6 ngày · e) 2 ngày
@@ -419,7 +423,7 @@ f) (334 + 25) × 25 − 334 × 25
 
 ### Bài IV.1
 **Đáp số:** a) 240 lít · b) 72 lít · c) 150 lít · d) 225 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -447,7 +451,7 @@ f) (334 + 25) × 25 − 334 × 25
 
 ### Bài IV.5
 **Đáp số:** a) 21, 42, 63, 84 · b) 94 · c) 95 · d) 54
-**Hướng giải:** BẪY — Quên chữ số hàng cao nhất khác 0. Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
+**Hướng giải:** Viết số theo cấu tạo: số có hai chữ số ab bằng a × 10 + b. Thay vào điều kiện đề cho rồi rút gọn — thường ra một quan hệ rất gọn giữa a và b.
 **Nhãn tư duy:** TD1, TD4. Điểm chốt: Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số.
 **Lỗi thường gặp:** Tính ra a bằng 0 rồi vẫn nhận, hoặc để một chữ số vượt quá 9. Phòng: Viết sẵn hai dòng ràng buộc lên đầu bài giải rồi mới tính.
 **Gợi ý 3 tầng:** (1) Số có hai chữ số ab viết theo cấu tạo là gì? — (2) Thay cấu tạo ấy vào điều kiện đề cho, rồi rút gọn. — (3) Kiểm lại: chữ số hàng chục có khác 0 không?

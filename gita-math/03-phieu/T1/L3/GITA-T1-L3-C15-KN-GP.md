@@ -136,8 +136,6 @@ Kết quả: **x = 258**.
 
 ### Bài A.4 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 7 605 : 9
@@ -157,8 +155,6 @@ Kết quả: **845**.
 *Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 
 ### Bài A.5 — Tính giá trị biểu thức
-
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Nhân chia số có năm chữ số v�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tổng dãy số tự nhiên liên tiếp
+
+> **BẪY — Cộng dồn từ đầu đến cuối, rất lâu và dễ sai..**
 
 **Các bước giải**
 
@@ -632,7 +632,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.2 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | C.3 | TD1 | Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương. |
 | C.4 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |
-| C.5 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| C.5 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |
 | D.3 | TD1 | Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương. |

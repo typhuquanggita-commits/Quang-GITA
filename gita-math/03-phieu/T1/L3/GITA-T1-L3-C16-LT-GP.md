@@ -480,6 +480,8 @@ Kết quả: **Đếm số hạng, cấu tạo số**.
 
 ### Bài E.1 — Tính nhanh bằng cách ghép số tròn
 
+> **BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn..**
+
 **Các bước giải**
 
 Xét ý a: 38 + 57 + 62
@@ -499,8 +501,6 @@ Kết quả: **157**.
 *Điểm chốt:* Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 
 ### Bài E.2 — Tìm x và tính chất của phép nhân
-
-> **BẪY — Thừa số 0.**
 
 **Các bước giải**
 
@@ -545,8 +545,6 @@ Làm tròn đến hàng nghìn thì nhìn chữ số hàng trăm: hàng trăm c�
 *Phải chắc trước khi làm bài này:* Đọc, viết số có năm chữ số và phép trừ có nhớ.
 
 ### Bài E.4 — Phép chia có dư
-
-> **BẪY — Số dư phải bé hơn số chia.**
 
 **Các bước giải**
 

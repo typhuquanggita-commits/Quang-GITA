@@ -669,7 +669,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
 | IV.3 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
 | IV.4 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD4, TD6 | Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8. |
 | V.2 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
 | V.3 | TD6, TD2 | Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt. |

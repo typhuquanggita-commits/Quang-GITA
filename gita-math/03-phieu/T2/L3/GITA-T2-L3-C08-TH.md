@@ -288,7 +288,7 @@ f) Có 9 gói kẹo, mỗi gói 50 g. Lấy ra 8 gói. Hỏi số kẹo còn l�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
 
@@ -354,6 +354,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 3 của **tổng ban đầu** thì
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.2
 **Đáp số:** a) < · b) < · c) < · d) < · e) > · f) > · g) <
@@ -366,6 +367,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 3 của **tổng ban đầu** thì
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.4
 **Đáp số:** a) 2 tấn 4 tạ 87 kg · b) 1 tấn 3 tạ 90 kg · c) 5 252 · d) 4 tấn 2 tạ 49 kg · e) 6 tấn 9 tạ 73 kg · f) 1 394
@@ -378,6 +380,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 3 của **tổng ban đầu** thì
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.1
 **Đáp số:** a) trứng gà: 90 000 · cà chua: 40 000 · gạo: 70 000 · b) 200 000 · c) 199 500 · d) 500 đồng · e) 500 đồng
@@ -441,7 +444,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 3 của **tổng ban đầu** thì
 
 ### Bài IV.1
 **Đáp số:** a) 2 400 000 đồng · b) 140 chai · c) 30 m · d) 8 m · e) 4 200 000 đồng · f) 70 chai
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -476,7 +479,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 3 của **tổng ban đầu** thì
 
 ### Bài V.1
 **Đáp số:** a) 57 quyển · b) 55 quyển · c) 53 quyển · d) 4 quyển · e) 21 bông · f) 3 giờ
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+**Hướng giải:** Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển.
 **Lỗi thường gặp:** Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. Phòng: Thử lại: cộng trừ ra hai số lúc đầu rồi kiểm tra cả tổng và hiệu.
 **Gợi ý 3 tầng:** (1) Khi chuyển vở qua lại, tổng số vở có đổi không? — (2) Sau khi cho, mỗi bạn có bao nhiêu quyển? — (3) Đi ngược lại: lúc đầu bạn cho có nhiều hơn bấy nhiêu quyển.
@@ -484,7 +487,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 3 của **tổng ban đầu** thì
 ### Bài V.2
 **Đáp số:** a) 36 · b) 48 · c) 24 · d) 18 · e) 18 · f) 24
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

@@ -264,11 +264,11 @@ f) 71 × 9
 
 Tìm x, trình bày từng bước.
 
-a) x × 8 + 19 = 451
-b) x : 5 + 67 = 94
-c) 55 − x = 31
-d) x × 9 − 13 = 63
-e) x × 8 + 8 = 240
+a) (x − 48) × 3 = 3
+b) (x + 19) × 8 = 584
+c) x × 5 + 67 = 202
+d) x : 8 + 31 = 55
+e) 20 − x = 13
 
 ### Bài 5. (5 điểm) Tìm hai số khi biết tổng và hiệu
 
@@ -283,7 +283,7 @@ f) An và Nam có tất cả 192 quyển vở. An có nhiều hơn Nam 12 quyể
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
 
@@ -354,18 +354,21 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.3
 **Đáp số:** a) 1 825 · b) 2 088 · c) 4 008 · d) 388 · e) 366 · f) 453 · g) 2 151
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) 8 · b) 30 · c) 11 · d) 12 cm · e) 8 cm²
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.5
 **Đáp số:** a) 999 · b) 2 · c) 15 · d) 365 · e) 1 321
@@ -384,6 +387,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.3
 **Đáp số:** a) 299 kg · b) 73 kg · c) 237 kg · d) 230 kg · e) 852 kg
@@ -455,29 +459,29 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 **Gợi ý 3 tầng:** (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
 
 ### Bài IV.4
-**Đáp số:** a) x = 54 · b) x = 135 · c) x = 24 · d) x = 76 : 9 · e) x = 29
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 49 · b) x = 54 · c) x = 27 · d) x = 192 · e) x = 7
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
 ### Bài IV.5
 **Đáp số:** a) Tuấn: 23 quyển, Quân: 17 quyển · b) Chi: 64 quyển, Vy: 56 quyển · c) An: 99 quyển, Hà: 75 quyển · d) Ngọc: 77 quyển, Hà: 67 quyển · e) Hùng: 36 quyển, Đức: 30 quyển · f) An: 102 quyển, Nam: 90 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài V.1
 **Đáp số:** a) 113 quyển · b) 95 quyển · c) 77 quyển · d) 36 quyển · e) 36 bông · f) 3 giờ
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+**Hướng giải:** Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển.
 **Lỗi thường gặp:** Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. Phòng: Thử lại: cộng trừ ra hai số lúc đầu rồi kiểm tra cả tổng và hiệu.
 **Gợi ý 3 tầng:** (1) Khi chuyển vở qua lại, tổng số vở có đổi không? — (2) Sau khi cho, mỗi bạn có bao nhiêu quyển? — (3) Đi ngược lại: lúc đầu bạn cho có nhiều hơn bấy nhiêu quyển.
 
 ### Bài V.2
 **Đáp số:** a) 153 · b) không thay đổi · c) 153 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
-**Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
+**Hướng giải:** Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
 **Lỗi thường gặp:** Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước?
 **Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?

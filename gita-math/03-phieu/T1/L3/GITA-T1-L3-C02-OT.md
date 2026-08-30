@@ -279,7 +279,7 @@ d) Trong hộp có bút thuộc 4 màu khác nhau, mỗi màu rất nhiều chi�
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -363,6 +363,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài I.3
 **Đáp số:** a) 3 chục nghìn, 5 nghìn, 9 trăm, 0 chục, 4 đơn vị · b) 35 904 − 35 637 = 267 kW·h · c) 36 000 · d) 39 904 · e) ít hơn 6 kW·h
@@ -375,12 +376,14 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài I.5
 **Đáp số:** a) 872 dư 1 · b) 319 · c) 1 581 · d) 191 dư 4 · e) 371 · f) 1 750 · g) 134 · h) 3 035
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) 680 · b) 108 · c) 55 · d) 90 · e) 37 · f) 342 · g) 81 · h) 41
@@ -465,14 +468,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) Hùng: 43 quyển, Phúc: 21 quyển · b) Dũng: 23 quyển, Quân: 19 quyển · c) Nam: 108 quyển, Trang: 88 quyển · d) Thảo: 114 quyển, Vy: 72 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài IV.5
 **Đáp số:** a) 7 chiếc · b) 10 chiếc · c) 13 chiếc · d) 9 chiếc
-**Hướng giải:** BẪY — Trường hợp xấu nhất. Xấu nhất là mỗi màu lấy được đúng (số cần − 1) chiếc mà vẫn chưa đủ. Lấy thêm một chiếc nữa thì chắc chắn có đủ số chiếc cùng màu.
+**Hướng giải:** Xấu nhất là mỗi màu lấy được đúng (số cần − 1) chiếc mà vẫn chưa đủ. Lấy thêm một chiếc nữa thì chắc chắn có đủ số chiếc cùng màu.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
 **Lỗi thường gặp:** Nhân số màu với số chiếc cần rồi lấy luôn kết quả. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … chiếc mà vẫn chưa đủ”.
 **Gợi ý 3 tầng:** (1) Xấu nhất mỗi màu lấy được mấy chiếc mà vẫn chưa đủ? — (2) Tổng cộng lấy được bao nhiêu chiếc? — (3) Lấy thêm một chiếc nữa thì sao?

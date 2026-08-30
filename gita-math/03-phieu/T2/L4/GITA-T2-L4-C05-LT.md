@@ -342,18 +342,21 @@ e) Các số nhà trong dãy này là số chẵn hay số lẻ? Vì sao?
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài A.2
 **Đáp số:** a) 24 cách · b) 12 bạn · c) 80 cách · d) 36 cách · e) 17 cách · f) 15 bạn
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.3
 **Đáp số:** a) cạnh 19 cm, diện tích 361 cm² · b) 5 cm · c) 21 cm · d) 16 cm
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài A.4
 **Đáp số:** a) góc nhọn · b) lớn hơn · c) 2 cặp song song, 0 cặp vuông góc · d) góc nhọn · e) bé hơn · f) 2 cặp song song, 4 cặp vuông góc
@@ -366,6 +369,7 @@ e) Các số nhà trong dãy này là số chẵn hay số lẻ? Vì sao?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài B.1
 **Đáp số:** a) Đếm hình, diện tích hình ghép và bài toán ngược · b) F — Hình học · c) 7 · d) ở mọi bài thuộc hình học, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài đếm hình: tam giác, tứ giác, hình vuông trong lưới

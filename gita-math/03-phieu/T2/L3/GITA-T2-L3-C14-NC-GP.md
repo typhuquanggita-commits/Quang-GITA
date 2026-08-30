@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 21 · b) x = 56 · c) x = 42 · d) x = 96 · e) x = 263 : 9 · f) x = 44
+- **Bài IV.1** — a) x = 24 · b) x = 21 · c) x = 49 · d) x = 42 · e) x = 96 · f) x = 27
 - **Bài IV.2** — a) 18 · b) 160 · c) 28 · d) 92 · e) 48 · f) 140
 - **Bài IV.3** — a) 7 chiếc · b) 7 chiếc · c) 5 chiếc · d) 3 chiếc
 - **Bài IV.4** — a) 90 quyển · b) 30 · c) 1 phần 4 · d) 1 phần 2 · e) 18 quyển · f) 30 · g) 1 phần 2
@@ -396,19 +396,17 @@ Không thích môn nào: 50 − 42 = 8 (bạn).
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: 91 − x = 70
+Xét **(x + 70) × 5 = 470**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 21**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 24**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -485,8 +483,6 @@ Kết quả: **90 quyển**.
 *Phải chắc trước khi làm bài này:* Bảng nhân, bảng chia và khái niệm một phần mấy.
 
 ### Bài IV.5 — Cân đĩa và số lần cân ít nhất
-
-> **BẪY — Chia ba chứ không chia đôi.**
 
 **Các bước giải**
 
@@ -643,7 +639,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Tính nhanh biểu thức đơn giản | Tính chất giao hoán, kết hợp; nhân với 0 | Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ | Quan sát toàn biểu thức trước khi tính | Tích có một thừa số bằng 0 thì bằng 0, dù các số khác lớn đến đâu. | 280 · 0 · 364 · 245 |
 | III.4 | Suy luận loại trừ có bảng | Phương pháp lập bảng | Mỗi người ứng với đúng một đối tượng | Kẻ bảng, đánh dấu, lan toả | Bắt đầu từ dữ kiện khẳng định trước dữ kiện phủ định. | ô (Khánh; xoài) · không · ô (Sơn; lê) · táo… |
 | III.5 | Nguyên lý bù trừ, sơ đồ Ven | Đếm có phần chung; sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” | Vẽ Ven, điền miền giữa trước, trừ dần ra | Số thích ít nhất một môn = A + B − cả hai. | 42 · 17 · 15 · 8… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 21 · x = 56 · x = 42 · x = 96… |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 24 · x = 21 · x = 49 · x = 42… |
 | IV.2 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 18 · 160 · 28 · 92… |
 | IV.3 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 7 chiếc · 7 chiếc · 5 chiếc · 3 chiếc |
 | IV.4 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 90 quyển · 30 · 1 phần 4 · 1 phần 2… |
@@ -675,16 +671,16 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD5, TD6 | **Nhìn trước, tính sau** — đó là toàn bộ bí quyết tính nhanh. |
 | III.4 | TD2, TD6 | Mỗi dấu ✔ **lan toả** ra cả hàng và cả cột. |
 | III.5 | TD2, TD6 | Điền **miền giữa trước** — mọi miền khác suy ra từ đó. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.3 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | IV.4 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | IV.5 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | V.1 | TD4, TD6 | Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**. |
-| V.2 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.2 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.3 | TD2, TD6 | Đừng quên **đếm cả chính mình** khi cộng lại. |
 | V.4 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

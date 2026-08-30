@@ -348,6 +348,7 @@ f) Ai là người làm vỡ lọ hoa?
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài A.2
 **Đáp số:** a) 7 chữ số, tổng 41 · b) 7 chữ số, tổng 34 · c) 7 chữ số, tổng 21 · d) 7 chữ số, tổng 34
@@ -372,6 +373,7 @@ f) Ai là người làm vỡ lọ hoa?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài B.1
 **Đáp số:** a) Tô màu, bàn cờ, chia phần và suy luận dạng đề chuyên · b) G — Suy luận logic & Toán đếm · c) 7 · d) ở mọi bài thuộc suy luận logic & toán đếm, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài bài toán cân, đo, thử với số lần ít nhất
@@ -491,14 +493,15 @@ f) Ai là người làm vỡ lọ hoa?
 
 ### Bài E.4
 **Đáp số:** a) 2 606 dư 2 · b) 5 586 dư 19 · c) 7 809 dư 12 · d) 6 156 dư 10 · e) 6 262 dư 1 · f) 6 833 dư 10
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 **Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 
 ### Bài E.5
 **Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Thảo chính là người làm vỡ lọ hoa · f) Thảo
-**Hướng giải:** Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
+**Hướng giải:** BẪY — Cặp câu phủ định nhau. Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
 **Lỗi thường gặp:** Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. Phòng: Đánh số các câu nói, ghi rõ câu nào phủ định câu nào.
 **Gợi ý 3 tầng:** (1) Có hai câu nào phủ định lẫn nhau không? — (2) Trong hai câu đó có mấy câu đúng? — (3) Vậy câu của người thứ ba đúng hay sai?

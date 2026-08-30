@@ -270,7 +270,7 @@ f) Có 38 quyển vở, đã dùng 1 phần 2 số vở. Còn lại bao nhiêu q
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tính nhanh tổng dãy số cách đều
 
@@ -338,18 +338,21 @@ f) Tổng năm số hạng đầu bằng bao nhiêu?
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.3
 **Đáp số:** a) 2 200 · b) 1 670 · c) 660 · d) 5 490 · e) 1 236 · f) 417 · g) 138
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) 92 cm · b) 160 cm² · c) 961 cm² · d) 18 cm · e) 208 cm · f) 1 044 cm² · g) 112 cm · h) 3 136 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.5
 **Đáp số:** a) 45, 49, 53 · b) 38, 40, 42 · c) 22, 26, 30 · d) 97, 112, 127
@@ -419,7 +422,7 @@ f) Tổng năm số hạng đầu bằng bao nhiêu?
 
 ### Bài IV.1
 **Đáp số:** a) Hà: 38 quyển, Khánh: 34 quyển · b) Nam: 52 quyển, Đức: 44 quyển · c) Tuấn: 91 quyển, Minh: 83 quyển · d) Vy: 88 quyển, Quân: 82 quyển · e) Tuấn: 62 quyển, Dũng: 40 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -447,7 +450,7 @@ f) Tổng năm số hạng đầu bằng bao nhiêu?
 
 ### Bài IV.5
 **Đáp số:** a) 72 · b) 1 phần 2 · c) 7 quyển · d) 120 · e) 1 phần 4 · f) 19 quyển
-**Hướng giải:** BẪY — Nhân chứ không chia. Biết một phần thì **nhân** với mẫu số để ra cả số; biết cả số thì **chia** để ra một phần. Bài hỏi phần còn lại thì phải trừ ở bước cuối.
+**Hướng giải:** Biết một phần thì **nhân** với mẫu số để ra cả số; biết cả số thì **chia** để ra một phần. Bài hỏi phần còn lại thì phải trừ ở bước cuối.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì nhân; biết cả số thì chia.
 **Lỗi thường gặp:** Chia thay vì nhân khi đã biết giá trị một phần. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
 **Gợi ý 3 tầng:** (1) Số đó chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?

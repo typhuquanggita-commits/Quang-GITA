@@ -271,7 +271,7 @@ e) Hình chữ nhật dài 48 cm, rộng 43 cm. Nếu tăng cả chiều dài v�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Cắt, ghép hình và tỉ số diện tích
 
@@ -340,6 +340,7 @@ f) Ghép 2 hình vuông cạnh 7 cm thành một hàng ngang. Tính chu vi hình
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.3
 **Đáp số:** a) 1 cặp song song, 2 cặp vuông góc · b) góc tù · c) bé hơn · d) lớn hơn · e) góc nhọn · f) 2 cặp song song, 4 cặp vuông góc
@@ -352,12 +353,14 @@ f) Ghép 2 hình vuông cạnh 7 cm thành một hàng ngang. Tính chu vi hình
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài I.5
 **Đáp số:** a) 650 cm² · b) 2 809 cm² · c) 64 cm · d) 192 cm
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài II.1
 **Đáp số:** a) hai hình bằng nhau · b) 35 cm · c) 66 cm · d) 60 cm · e) B · f) 13 cm
@@ -435,7 +438,7 @@ f) Ghép 2 hình vuông cạnh 7 cm thành một hàng ngang. Tính chu vi hình
 
 ### Bài IV.3
 **Đáp số:** a) 354 cm² · b) 342 cm² · c) 42 cm² · d) 100 cm²
-**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+**Hướng giải:** BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt. Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
 **Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
 **Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
@@ -449,7 +452,7 @@ f) Ghép 2 hình vuông cạnh 7 cm thành một hàng ngang. Tính chu vi hình
 
 ### Bài IV.5
 **Đáp số:** a) 192 cm² · b) 806 cm² · c) 2 lần · d) 2 lần · e) 1 010 cm²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+**Hướng giải:** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.

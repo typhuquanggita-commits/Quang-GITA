@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 201 342 : 69
@@ -117,8 +115,6 @@ Kết quả: **ô (Phúc; Tiếng Anh)**.
 *Điểm chốt:* Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 
 ### Bài A.3 — Quy tắc nhân trong phép đếm
-
-> **BẪY — Cộng hay nhân.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Mỗi người ứng với đúng một đối tượng, đề ch
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Suy luận tổng hợp và mô phỏn
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Cân đĩa, tìm vật khác biệt
+
+> **BẪY — Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết..**
 
 **Các bước giải**
 

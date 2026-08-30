@@ -267,7 +267,7 @@ e) Yến và Khánh có tất cả 36 quyển vở. Yến có nhiều hơn Khán
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Chữ số tận cùng của tổng và tích
 
@@ -333,12 +333,14 @@ f) Cả tổ phải gấp 120 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.2
 **Đáp số:** a) 91 lá cờ · b) 135 lá cờ · c) 92 lá cờ · d) 76 lá cờ
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.3
 **Đáp số:** a) số lớn 177, số bé 161 · b) số lớn 80, số bé 66 · c) số lớn 143, số bé 99 · d) số lớn 62, số bé 34
@@ -448,29 +450,29 @@ f) Cả tổ phải gấp 120 bông hoa thì làm trong mấy giờ?
 
 ### Bài IV.5
 **Đáp số:** a) Hà: 95 quyển, Quân: 85 quyển · b) Hùng: 52 quyển, Thảo: 48 quyển · c) Quân: 37 quyển, An: 31 quyển · d) Hùng: 89 quyển, Minh: 47 quyển · e) Yến: 19 quyển, Khánh: 17 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài V.1
 **Đáp số:** a) 8 · b) 8 · c) 6 · d) 0
-**Hướng giải:** Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
+**Hướng giải:** BẪY — Tính trọn phép tính thay vì chỉ xét chữ số tận cùng. Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.
 **Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.
 **Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.
 **Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là gì? — (2) Tính riêng với hai chữ số ấy. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
 ### Bài V.2
 **Đáp số:** a) 28 quyển · b) 28 quyển · c) 14 quyển · d) 14 quyển · e) 42 quyển · f) 28 quyển
-**Hướng giải:** BẪY — Phân số của số còn lại. Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
+**Hướng giải:** Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu.
 **Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Viết một dòng “còn lại … quyển” sau mỗi bước.
 **Gợi ý 3 tầng:** (1) Ngày đầu phát bao nhiêu quyển? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Ngày thứ hai lấy một phần mấy của số nào?
 
 ### Bài V.3
 **Đáp số:** a) 26 · b) 39 · c) 13 · d) 29 · e) đội Một nhiều hơn 3 lá · f) 13
-**Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

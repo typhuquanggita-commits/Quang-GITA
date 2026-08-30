@@ -402,6 +402,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài B.2
 **Đáp số:** a) 18 · b) 24 · c) 15 · d) 49 · e) 33 · f) 37
@@ -450,6 +451,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài C.5
 **Đáp số:** a) mỗi bạn 4 cái, thừa 7 cái · b) 7 cái · c) 5 cái · d) 5 cái · e) mỗi bạn 5 cái, thừa 0 cái · f) phải là số chia hết cho 12

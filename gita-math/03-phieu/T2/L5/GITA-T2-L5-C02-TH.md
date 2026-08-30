@@ -302,7 +302,7 @@ e) Một đôi giày giá niêm yết 680 000 đồng. Cửa hàng giảm 20%, s
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Hai lần thay đổi phần trăm liên tiếp
 
@@ -370,30 +370,35 @@ e) Bố bạn Quân gửi tiết kiệm 25 000 000 đồng với lãi suất 8% 
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) > · b) < · c) < · d) > · e) < · f) > · g) <
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.4
 **Đáp số:** a) 0,8 · b) 4 · c) < · d) < · e) 0,4 · f) 8 · g) 2 · h) 0,25
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài I.5
 **Đáp số:** a) 25 · b) 175 · c) 26 · d) 9
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài II.1
 **Đáp số:** a) 123,82 · b) 15,05 · c) 98,18 · d) 546 · e) 142,56 · f) 44,02 · g) 86,57
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài II.2
 **Đáp số:** a) 20 · b) 5% · c) 72 · d) 12
@@ -472,7 +477,7 @@ e) Bố bạn Quân gửi tiết kiệm 25 000 000 đồng với lãi suất 8% 
 
 ### Bài IV.4
 **Đáp số:** a) 13 phần 18 · b) 17 phần 16 · c) 174 phần 35 · d) 7 phần 72 · e) 47 phần 294 · f) 89 phần 242
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -486,7 +491,7 @@ e) Bố bạn Quân gửi tiết kiệm 25 000 000 đồng với lãi suất 8% 
 
 ### Bài V.1
 **Đáp số:** a) 450 000 đồng, giảm 50 000 đồng · b) 225 000 đồng, tăng 25 000 đồng · c) 480 000 đồng, giảm 20 000 đồng · d) 625 000 đồng, giảm 375 000 đồng
-**Hướng giải:** BẪY — Mốc 100% thay đổi sau mỗi lần. Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
+**Hướng giải:** Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển.
 **Lỗi thường gặp:** Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. Phòng: Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2.
 **Gợi ý 3 tầng:** (1) Giá sau lần tăng thứ nhất là bao nhiêu? — (2) Lần giảm thứ hai tính phần trăm trên giá nào? — (3) So sánh giá cuối với giá ban đầu.

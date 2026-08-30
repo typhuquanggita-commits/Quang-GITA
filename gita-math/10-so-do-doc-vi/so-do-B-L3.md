@@ -52,15 +52,15 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | Mức | Dấu hiệu nhìn thấy trong đề | Dạng bài | Phương pháp | Lối tắt | Bẫy |
 |:--:|---|---|---|---|---|
 | M1 | Yêu cầu “đặt tính rồi tính” | Cộng, trừ số tự nhiên | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | — |
-| M1 | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân, chia số tự nhiên | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | Chữ số 0 ở giữa thương |
-| M1 | Biểu thức có nhiều phép tính, có thể có ngoặc | Tính giá trị biểu thức số | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | Thiếu ngoặc mà vẫn cộng trước |
+| M1 | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân, chia số tự nhiên | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | — |
+| M1 | Biểu thức có nhiều phép tính, có thể có ngoặc | Tính giá trị biểu thức số | Xét ngoặc → nhân chia → cộng trừ, trái sang phải | Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c). | — |
 | M1 | Có chữ x đứng trong một phép tính | Tìm x trong phép tính một bước | Gọi tên vai trò của x rồi dùng quy tắc tương ứng | Thử lại bằng cách thay x vào đề — mất 3 giây nhưng chắc chắn. | — |
 | M2 | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm | Tính nhanh tổng nhiều số hạng | Ghép cặp tròn rồi cộng | Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10. | — |
-| M2 | Số bị chia có hai hoặc ba chữ số, số chia một chữ số | Nhân, chia với số có một chữ số | Đặt tính, tính theo cột | Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn. | Chữ số 0 ở giữa thương |
+| M2 | Số bị chia có hai hoặc ba chữ số, số chia một chữ số | Nhân, chia với số có một chữ số | Đặt tính, tính theo cột | Ước lượng bằng cách làm tròn để phát hiện sai về độ lớn. | — |
 | M2 | Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng bao nhiêu | Tính nhanh tổng | Làm tròn để nhẩm, cộng số gốc để lấy kết quả đúng | Cộng phần nghìn trước rồi cộng phần lẻ sau, không đặt tính. | — |
 | M3 | Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ | Tính nhanh biểu thức đơn giản | Quan sát toàn biểu thức trước khi tính | Tích có một thừa số bằng 0 thì bằng 0, dù các số khác lớn đến đâu. | Thừa số 0 |
 | M3 | Biểu thức nhiều phép tính, có thể có ngoặc | Tính giá trị biểu thức | Ngoặc → nhân chia → cộng trừ | Nhìn dấu ngoặc trước tiên, mất một giây nhưng tránh sai cả bài. | Thiếu ngoặc mà vẫn cộng trước |
-| M4 | x nằm trong một cụm có hai phép tính | Tìm x hai bước | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | — |
+| M4 | x nằm trong một cụm có hai phép tính | Tìm x hai bước | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | Gỡ phép trong ngoặc trước phép ngoài ngoặc |
 | M4 | Thừa số là 9, 11, 19, 21… | Nhân nhẩm nhờ tách thừa số | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | — |
 | M5 | Dãy cộng dài có dấu … | Tổng dãy số tự nhiên liên tiếp | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | Số số hạng lẻ thì còn số ở giữa |
 | M5 | Dãy cộng dài có dấu … | Tổng dãy số cách đều | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | Số số hạng lẻ |
@@ -88,43 +88,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tính bằng cách thuận tiện nhất. 4 × 279 × 0
+**Đề 1.** Đặt tính rồi tính. 4 113 : 9
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tìm x. x − 7 = 62
+**Đề 2.** Ghép cặp rồi tính. 1 + 2 + 3 + … + 50
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Đặt tính rồi tính. 5 520 : 6
+**Đề 3.** Tính giá trị của mỗi biểu thức. 52 − 4 × 8
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Tính giá trị của mỗi biểu thức. 58 × (2 + 8)
+**Đề 4.** Tìm x. x : 8 = 89
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Ghép cặp rồi tính. 1 + 2 + 3 + … + 10
+**Đề 5.** Ba món trong giỏ: **trứng gà** 67 500 đồng · **cà chua** 50 000 đồng · **thịt lợn** 32 000 đồng. Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính bằng cách thuận tiện nhất. 33 + 219 + 67
+**Đề 6.** Tính bằng cách thuận tiện nhất. 313 + 12 − 12
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Ba món trong giỏ: **thịt lợn** 37 000 đồng · **đậu phụ** 95 000 đồng · **chuối** 87 000 đồng. Làm tròn giá từng món đến hàng chục nghìn để nhẩm cho nhanh.
+**Đề 7.** Tìm x, trình bày từng bước. (x − 75) × 8 = 8
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tính tổng mỗi dãy bằng cách ghép cặp. 1 + 2 + 3 + … + 100
+**Đề 8.** Tính bằng cách thuận tiện nhất. 267 + 75 − 75
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tìm x, trình bày từng bước. 129 − x = 85
+**Đề 9.** Nêu rõ cách tách trước khi tính. 12 × 11
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Đặt tính rồi tính. 822 + 436
+**Đề 10.** Tính giá trị của mỗi biểu thức. 80 + 7 × 6
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -134,16 +134,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tính nhanh biểu thức đơn giản | Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ |
-| 2 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính |
-| 3 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
-| 4 | Tính giá trị biểu thức số | Biểu thức có nhiều phép tính, có thể có ngoặc |
-| 5 | Tổng dãy số cách đều | Dãy cộng dài có dấu … |
+| 1 | Nhân, chia số tự nhiên | Yêu cầu “đặt tính rồi tính” với phép nhân, chia |
+| 2 | Tổng dãy số cách đều | Dãy cộng dài có dấu … |
+| 3 | Tính giá trị biểu thức số | Biểu thức có nhiều phép tính, có thể có ngoặc |
+| 4 | Tìm x trong phép tính một bước | Có chữ x đứng trong một phép tính |
+| 5 | Tính nhanh tổng | Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng bao nhiêu |
 | 6 | Tính nhanh tổng nhiều số hạng | Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm |
-| 7 | Tính nhanh tổng | Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng bao nhiêu |
-| 8 | Tổng dãy số tự nhiên liên tiếp | Dãy cộng dài có dấu … |
-| 9 | Tìm x hai bước | x nằm trong một cụm có hai phép tính |
-| 10 | Cộng, trừ số tự nhiên | Yêu cầu “đặt tính rồi tính” |
+| 7 | Tìm x hai bước | x nằm trong một cụm có hai phép tính |
+| 8 | Tính nhanh biểu thức đơn giản | Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ |
+| 9 | Nhân nhẩm nhờ tách thừa số | Thừa số là 9, 11, 19, 21… |
+| 10 | Tính giá trị biểu thức | Biểu thức nhiều phép tính, có thể có ngoặc |
 
 ---
 

@@ -345,6 +345,7 @@ h) 2 029 : 3
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài A.2
 **Đáp số:** a) 513 · b) 414 · c) 52 · d) 82 · e) 828 · f) 178 · g) 1 335
@@ -357,12 +358,14 @@ h) 2 029 : 3
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài A.4
 **Đáp số:** a) 6 280 · b) 662 · c) 749 · d) 5 663 · e) 3 665 · f) 610 · g) 1 506
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.5
 **Đáp số:** a) x = 97 · b) x = 40 · c) x = 49 · d) x = 70 · e) x = 79
@@ -454,7 +457,7 @@ h) 2 029 : 3
 ### Bài D.4
 **Đáp số:** a) Quan hệ các thành phần của phép tính · b) Tìm x hai bước · c) x nằm trong một cụm có hai phép tính · d) Gỡ dần từ ngoài vào trong · e) Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. · f) x = 7
 **Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
@@ -495,9 +498,10 @@ h) 2 029 : 3
 
 ### Bài E.5
 **Đáp số:** a) 992 dư 1 · b) 354 · c) 2 295 · d) 1 664 · e) 665 · f) 525 dư 3 · g) 197 · h) 676 dư 1
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
+**Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 **Gợi ý 3 tầng:** (1) Đặt tính thẳng hàng đơn vị. — (2) Nhân hoặc chia từ trái sang phải với phép chia. — (3) Thử lại bằng phép tính ngược.
 
 ---

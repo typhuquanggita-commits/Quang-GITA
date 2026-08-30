@@ -271,7 +271,7 @@ d) Vòi thứ nhất chảy một mình đầy bể trong 4 giờ, vòi thứ ha
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bài toán giả thiết tạm — gà và chó
 
@@ -343,6 +343,7 @@ d) Mua 5 hộp lớn, 7 hộp vừa và 10 hộp nhỏ hết 440 000 đồng. Bi
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.4
 **Đáp số:** a) số lớn 816, số bé 642 · b) số lớn 95, số bé 77 · c) số lớn 1 140, số bé 594 · d) số lớn 927, số bé 723 · e) số lớn 1 039, số bé 633 · f) số lớn 751, số bé 625 · g) số lớn 636, số bé 602
@@ -355,6 +356,7 @@ d) Mua 5 hộp lớn, 7 hộp vừa và 10 hộp nhỏ hết 440 000 đồng. Bi
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài II.1
 **Đáp số:** a) tổ Một: 365 cây, đội Hai: 353 cây · b) trang trại: 366 kg, cửa hàng: 316 kg · c) 5C: 306 quyển, 5B: 302 quyển · d) đội Một: 204 cây, tổ Hai: 200 cây · e) trang trại: 423 kg, kho A: 211 kg · f) 4B: 339 quyển, 5A: 337 quyển

@@ -304,7 +304,7 @@ f) Một cửa hàng có 6 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã 
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) So sánh phân số bằng phần bù và phân số trung gian
 
@@ -378,12 +378,14 @@ f) (675 + 33) × 33 − 675 × 33
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.3
 **Đáp số:** a) 370 436 · b) 381 324 · c) 7 651 · d) 321 711 · e) 1 234 · f) 7 512 · g) 4 279 · h) 522 450
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) 3 phần 5 · b) 2 phần 5 · c) 4 phần 11 · d) 7 phần 10 · e) 1 · f) 2 phần 9
@@ -459,14 +461,14 @@ f) (675 + 33) × 33 − 675 × 33
 
 ### Bài IV.1
 **Đáp số:** a) 121 · b) 216 · c) 3 370 · d) 168,5 · e) 337 · f) 337
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.2
 **Đáp số:** a) 967 phần 648 · b) 16 phần 15 · c) 606 phần 91 · d) 13 phần 14 · e) 127 phần 450
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -487,29 +489,29 @@ f) (675 + 33) × 33 − 675 × 33
 
 ### Bài IV.5
 **Đáp số:** a) 300 lít · b) 54 lít · c) 312 lít · d) 144 lít · e) 108 lít · f) 12 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài V.1
 **Đáp số:** a) < · b) > · c) > · d) < · e) <
-**Hướng giải:** BẪY — Chiều của phần bù. **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
+**Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phân số nào thiếu ít hơn? — (3) Thiếu ít hơn thì lớn hơn.
 
 ### Bài V.2
 **Đáp số:** a) 1 · 4 · 9 · 16 · 25 · 36 · 49 · 64 · 81 · b) 81 · c) 1 + 3 + … + 17 = 81 · d) không bao giờ · e) có, là 8 nhân 8 · f) 9
-**Hướng giải:** BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức. Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
+**Hướng giải:** Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8.
 **Lỗi thường gặp:** Kết luận một số là chính phương chỉ vì nó “trông đẹp”. Phòng: Kiểm tra chữ số tận cùng trước, sau đó thử khai căn bằng cách nhân thử.
 **Gợi ý 3 tầng:** (1) Viết bảng các số chính phương đầu tiên. — (2) Hiệu hai số chính phương liên tiếp là những số nào? — (3) Chữ số tận cùng của số chính phương có thể là những chữ số nào?
 
 ### Bài V.3
 **Đáp số:** a) 31 · b) 26 · c) 36 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 21 · f) 63 · g) 42
-**Hướng giải:** BẪY — Số lượng chẵn thì không có số giữa. Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

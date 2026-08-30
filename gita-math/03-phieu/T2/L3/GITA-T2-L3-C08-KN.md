@@ -334,21 +334,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 56 cách · b) 28 cách · c) 14 cách · d) 24 cách
-**Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài A.2
 **Đáp số:** a) > · b) 37 000 · c) 2 · d) 12 113 · e) 18 298 · f) 25 000 · g) 28
-**Hướng giải:** BẪY — Đơn vị khác nhau. 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
+**Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài A.3
 **Đáp số:** a) 5 giờ 57 phút · b) 179 · c) 8 giờ 24 phút · d) 3 giờ 53 phút · e) 8 giờ 16 phút · f) 443
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài A.4
 **Đáp số:** a) 3 tấn 4 tạ 27 kg · b) 6 tạ 19 kg · c) 3 tấn 4 tạ 54 kg · d) 3 677 · e) 5 tấn 3 tạ 20 kg
@@ -361,6 +364,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -459,14 +463,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Đại lượng, thời gian và toán thực tế” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán cân, chia hết.” · b) Cân đĩa với một loại quả cân · c) Phép chia hết và chia có dư; đơn vị khối lượng · d) Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? → 5 quả · e) Làm tròn lên rồi coi như cân được. · f) Đổi cả hai về cùng đơn vị rồi chia.
-**Hướng giải:** Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
+**Hướng giải:** BẪY — Làm tròn lên rồi coi như cân được.. Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
 **Lỗi thường gặp:** Làm tròn lên rồi coi như cân được. Phòng: Kiểm tra phép chia có dư hay không trước khi kết luận.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

@@ -288,7 +288,7 @@ e) 16 × 20 × (53 − 53)
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy phân số dạng n phần (n + 1)
 
@@ -367,6 +367,7 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.4
 **Đáp số:** a) 160 · b) 418 · c) 168 · d) 102
@@ -379,6 +380,7 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) thịt lợn: 80 000 · chuối: 70 000 · rau muống: 20 000 · b) 170 000 · c) 168 000 · d) 2 000 đồng · e) 32 000 đồng
@@ -442,8 +444,8 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 
 ### Bài IV.1
 **Đáp số:** a) 320 · b) 2 242 · c) 160 · d) 160 · e) 180 640 · f) 360 160
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -477,7 +479,7 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 
 ### Bài V.1
 **Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 11 phần 12 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 12
-**Hướng giải:** BẪY — Chiều của phần bù. Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.

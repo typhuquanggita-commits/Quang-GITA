@@ -136,8 +136,6 @@ Kết quả: **112**.
 
 ### Bài A.4 — Quãng đường – vận tốc – thời gian
 
-> **BẪY — Đơn vị thời gian.**
-
 **Các bước giải**
 
 Xét ý a: Một người đi 24 km hết 6 giờ. Tính vận tốc.
@@ -161,8 +159,6 @@ Kết quả: **4 km/giờ**.
 *Phải chắc trước khi làm bài này:* Nhân, chia số tự nhiên và bảng đơn vị đo độ dài, thời gian.
 
 ### Bài A.5 — Nhiều hơn – ít hơn, gấp – kém
-
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Một đề dài gồm nhiều ý nối tiếp nhau**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Các dạng ẩn của toán điển h
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chuyển động ngược chiều, cùng chiều
+
+> **BẪY — Dùng tổng vận tốc cho bài đuổi nhau..**
 
 **Các bước giải**
 
@@ -644,7 +644,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | TD3, TD6 | Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD3, TD2 | Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc. |
-| E.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| E.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | E.4 | TD2, TD5, TD6 | Càng nhiều người thì càng **ít** ngày — đây là tỉ lệ nghịch, nhân chia ngược với tỉ lệ thuận. |
 | E.5 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
 

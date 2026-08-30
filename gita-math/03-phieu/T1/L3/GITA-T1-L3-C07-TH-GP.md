@@ -414,6 +414,8 @@ Số bé nhất là 129, số lớn nhất là 930.
 
 ### Bài IV.2 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Dũng và Yến có tất cả 88 quyển vở. Dũng có nhiều hơn Yến 22 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -548,8 +550,6 @@ Kết quả: **2**.
 
 ### Bài V.3 — Hai lần lấy một phần mấy
 
-> **BẪY — Phân số của số còn lại.**
-
 **Các bước giải**
 
 Xét ý a: Có 40 quyển vở. Ngày đầu phát 1 phần 4 số vở, ngày thứ hai phát 1 phần 2 **số vở còn lại**. Hỏi còn lại bao nhiêu quyển vở?
@@ -670,7 +670,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.4 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | IV.5 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.3 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
 | V.4 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |

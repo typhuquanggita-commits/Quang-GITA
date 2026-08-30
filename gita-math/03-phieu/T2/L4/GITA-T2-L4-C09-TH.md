@@ -267,7 +267,7 @@ d) Đội Một có 96 quyển sách, nhóm Sao Mai có 64 quyển. Hỏi phải
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
@@ -338,6 +338,7 @@ e) Vừa gà vừa chó có 68 con, đếm được tất cả 204 chân. Hỏi 
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.3
 **Đáp số:** a) 69 · b) 114 · c) 52 · d) 126 · e) 139 · f) 91 · g) 62
@@ -356,6 +357,7 @@ e) Vừa gà vừa chó có 68 con, đếm được tất cả 204 chân. Hỏi 
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài II.1
 **Đáp số:** a) 27 m · b) 3 cm · c) 22 cm · d) 15 m
@@ -455,7 +457,7 @@ e) Vừa gà vừa chó có 68 con, đếm được tất cả 204 chân. Hỏi 
 ### Bài V.1
 **Đáp số:** a) 36 · b) 24 · c) 48 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 23 · f) 46 · g) 23
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

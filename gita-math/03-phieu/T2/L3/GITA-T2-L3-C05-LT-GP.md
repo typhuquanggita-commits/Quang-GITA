@@ -568,8 +568,6 @@ Số nhà thứ 7: đi từ nhà đầu tiên thì phải bước 7 − 1 = 6 l�
 
 ### Bài E.5 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 8 154 : 9

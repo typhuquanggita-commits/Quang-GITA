@@ -271,7 +271,7 @@ d) Biết 1 phần 5 của một số là 23. Tìm số đó.
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Thêm, bớt chữ số vào một số
 
@@ -349,18 +349,21 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.4
 **Đáp số:** a) 875 · b) 698 · c) 201 · d) 4 506 · e) 5 608
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.5
 **Đáp số:** a) 14 · b) 6 · c) 30 · d) 20
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài II.1
 **Đáp số:** a) 8 cm · b) 13 cm · c) B · d) 28 cm · e) 78 cm · f) B
@@ -373,6 +376,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.3
 **Đáp số:** a) 34 · b) 25 · c) 17 · d) 25 · e) 15 · f) 6 · g) 22 · h) 47
@@ -424,7 +428,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 ### Bài IV.1
 **Đáp số:** a) 6 000 000 đồng · b) 9 m · c) 26 chai · d) 4 320 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -452,7 +456,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 ### Bài IV.5
 **Đáp số:** a) 192 · b) 104 · c) 102 · d) 115
-**Hướng giải:** BẪY — Nhân chứ không chia. Nếu một phần mấy của một số bằng a thì số đó bằng a nhân với mẫu số. Vì số đó được chia thành mấy phần bằng nhau, mỗi phần bằng a.
+**Hướng giải:** Nếu một phần mấy của một số bằng a thì số đó bằng a nhân với mẫu số. Vì số đó được chia thành mấy phần bằng nhau, mỗi phần bằng a.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
 **Lỗi thường gặp:** Chia thay vì nhân. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
 **Gợi ý 3 tầng:** (1) Số đó được chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
@@ -460,7 +464,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 ### Bài V.1
 **Đáp số:** a) 497 · b) 448 · c) 749 · d) 700 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 4
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

@@ -297,7 +297,7 @@ f) Mua một món hàng giá 1 000 000 đồng rồi bán lại với giá 1 200
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Lãi suất tiết kiệm hai năm
 
@@ -360,12 +360,14 @@ d) Một món hàng giá 400 000 đồng. Lần đầu tăng giá 10%, sau đó 
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.2
 **Đáp số:** a) 206 208 704 · b) 23 827 · c) 777 470 · d) 1 275 844 · e) 16 422 768 · f) 1 662 642 · g) 175 338
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 8 738 259 · b) 3 760 386 · c) 4 706 452 · d) 2 693 469
@@ -384,6 +386,7 @@ d) Một món hàng giá 400 000 đồng. Lần đầu tăng giá 10%, sau đó 
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài II.1
 **Đáp số:** a) x = 51 · b) x = 198 · c) x = 141 · d) x = 161 · e) x = 14 · f) x = 112
@@ -396,6 +399,7 @@ d) Một món hàng giá 400 000 đồng. Lần đầu tăng giá 10%, sau đó 
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài II.3
 **Đáp số:** a) 20 · b) 20% · c) 3 · d) 200

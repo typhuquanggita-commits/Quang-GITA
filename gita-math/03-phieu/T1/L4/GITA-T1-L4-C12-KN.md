@@ -337,21 +337,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 20 · b) 150 · c) 40 · d) 18 cm · e) 20 cm²
-**Hướng giải:** BẪY — Bỏ sót các hình ghép nhiều ô. Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
+**Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài A.2
 **Đáp số:** a) 56 cách · b) 4 cách · c) 18 cách · d) 28 cách
-**Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài A.3
 **Đáp số:** a) 12 cách · b) 9 bạn · c) 8 cách · d) 10 bạn · e) 14 cách · f) 27 cách · g) 15 cách
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.4
 **Đáp số:** a) 80 · b) > · c) 9 935 495 và 9 935 497 · d) 5 565 500 · e) < · f) 3 880 000 · g) 9 251 775 và 9 251 777 · h) 9
@@ -462,14 +465,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Suy luận logic, đếm hình và toán đếm” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Giả thiết tạm hai loại.” · b) Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ · c) Phương pháp giả thiết tạm · d) 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? → 4 ô tô · e) Chia số bánh thiếu cho số bánh của loại nhiều hơn. · f) Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất).
-**Hướng giải:** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
+**Hướng giải:** BẪY — Chia số bánh thiếu cho số bánh của loại nhiều hơn.. Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
 **Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

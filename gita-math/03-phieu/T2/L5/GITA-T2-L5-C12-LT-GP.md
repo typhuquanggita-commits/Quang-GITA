@@ -550,8 +550,6 @@ Kết quả: **26**.
 
 ### Bài E.4 — Phép chia có dư
 
-> **BẪY — Số dư phải bé hơn số chia.**
-
 **Các bước giải**
 
 Xét ý a: 7 820 : 3 = ? (dư ?)
@@ -571,6 +569,8 @@ Kết quả: **2 606 dư 2**.
 *Điểm chốt:* Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 
 ### Bài E.5 — Bài toán nói thật – nói dối
+
+> **BẪY — Cặp câu phủ định nhau.**
 
 **Các bước giải**
 

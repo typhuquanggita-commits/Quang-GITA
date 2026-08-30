@@ -296,7 +296,7 @@ f) Một cửa hàng có 6 thùng nước, mỗi thùng 12 lít. Cửa hàng đ�
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -471,7 +471,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) 9 phần 26 · b) 10 phần 13 · c) 47 phần 264 · d) 71 phần 72 · e) 13 phần 9 · f) 45 phần 14
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -499,7 +499,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) 48 lít · b) 162 lít · c) 280 lít · d) 126 lít · e) 120 lít · f) 12 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.

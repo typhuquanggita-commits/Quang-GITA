@@ -241,11 +241,11 @@ d) Đoạn đường dài 40 m, trồng cây cách nhau 5 m, không trồng ở 
 
 Tìm x, trình bày từng bước.
 
-a) x : 6 + 82 = 138
+a) x : 5 + 41 = 86
 b) x × 6 + 41 = 269
-c) x × 9 − 59 = 504
-d) 74 − x = 58
-e) x : 9 + 36 = 49
+c) (x − 59) × 9 = 9
+d) x × 9 − 58 = 86
+e) (x + 36) × 9 = 441
 
 ### Bài 4. (5 điểm) Tìm số có ba chữ số thoả điều kiện
 
@@ -269,7 +269,7 @@ d) Số có hai chữ số 42; viết hai chữ số theo thứ tự ngược l�
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -347,6 +347,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài I.2
 **Đáp số:** a) 2 chục nghìn, 6 nghìn, 1 trăm, 1 chục, 3 đơn vị · b) 26 113 − 25 980 = 133 kW·h · c) 26 000 · d) 32 613 · e) ít hơn 20 kW·h
@@ -359,6 +360,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài I.4
 **Đáp số:** a) 34 · b) Hùng (14 bông) · c) Vy (3 bông) · d) 11 · e) 14
@@ -447,9 +449,9 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ.
 
 ### Bài IV.3
-**Đáp số:** a) x = 336 · b) x = 38 · c) x = 563 : 9 · d) x = 16 · e) x = 117
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 225 · b) x = 38 · c) x = 60 · d) x = 16 · e) x = 13
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -462,7 +464,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) 46, hơn kém 18 đơn vị · b) 96, hơn kém 27 đơn vị · c) 64, hơn kém 18 đơn vị · d) 24, hơn kém 18 đơn vị
-**Hướng giải:** BẪY — Hiệu là 9 lần hiệu hai chữ số. Số có hai chữ số viết được thành chục nhân 10 cộng đơn vị. Khi đổi chỗ hai chữ số, phần chục và phần đơn vị hoán đổi vai trò, nên hiệu hai số luôn bằng **9 lần hiệu hai chữ số**.
+**Hướng giải:** Số có hai chữ số viết được thành chục nhân 10 cộng đơn vị. Khi đổi chỗ hai chữ số, phần chục và phần đơn vị hoán đổi vai trò, nên hiệu hai số luôn bằng **9 lần hiệu hai chữ số**.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Hiệu hai số luôn là **bội của 9**.
 **Lỗi thường gặp:** Coi hiệu hai số bằng hiệu hai chữ số. Phòng: Tính thử vài trường hợp nhỏ để thấy quy luật nhân 9.
 **Gợi ý 3 tầng:** (1) Viết số cũ thành chục × 10 + đơn vị. — (2) Viết số mới cũng như vậy. — (3) Trừ hai biểu thức xem còn lại gì.

@@ -418,6 +418,8 @@ Kết quả: **1 500 g**.
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 3 can dầu, mỗi can 10 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
@@ -539,8 +541,6 @@ Tổng: 11 × 5 = 55.
 *Phải chắc trước khi làm bài này:* Đếm số hạng của dãy cách đều.
 
 ### Bài V.2 — Đếm đoạn thẳng và tam giác
-
-> **BẪY — Bỏ sót đoạn ghép.**
 
 **Các bước giải**
 
@@ -689,7 +689,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
 | IV.5 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | V.1 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |
-| V.2 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.2 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.4 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
 | V.5 | TD3, TD6 | Số lần nghỉ = số tiết − 1, không phải bằng số tiết. |

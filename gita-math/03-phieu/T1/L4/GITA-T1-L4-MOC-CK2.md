@@ -303,7 +303,7 @@ f) Tổng cả dãy bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) So sánh phân số bằng phần bù và phân số trung gian
 
@@ -383,12 +383,14 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.5
 **Đáp số:** a) 300 · b) 400 000 · c) 3 500 000 · d) 65 000 · e) 4 300 · f) 1 300 · g) 700 · h) 59 000
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài II.1
 **Đáp số:** a) 9 · b) (31 − 3) : 2 + 1 = 15 nhà · c) 3 + (13 − 1) × 2 = 27 · d) (27 − 3) : 2 + 1 = 13 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
@@ -466,7 +468,7 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 
 ### Bài IV.3
 **Đáp số:** a) x = 58 · b) x = 33 · c) x = 14 · d) x = 35 · e) x = 28
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
@@ -481,13 +483,13 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 ### Bài IV.5
 **Đáp số:** a) 70 · b) 208 · c) 14 · d) 35 · e) 3 710 · f) 7 315
 **Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài V.1
 **Đáp số:** a) > · b) < · c) > · d) <
-**Hướng giải:** BẪY — Chiều của phần bù. **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
+**Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phân số nào thiếu ít hơn? — (3) Thiếu ít hơn thì lớn hơn.

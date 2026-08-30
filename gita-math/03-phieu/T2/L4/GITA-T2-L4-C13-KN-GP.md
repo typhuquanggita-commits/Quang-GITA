@@ -116,8 +116,6 @@ Kết quả: **2 184**.
 
 ### Bài A.3 — Đổi đơn vị đo diện tích
 
-> **BẪY — 100 lần chứ không phải 10 lần.**
-
 **Các bước giải**
 
 Xét ý a: 26 dm² = … cm²
@@ -137,8 +135,6 @@ Kết quả: **2 600**.
 *Điểm chốt:* Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 
 ### Bài A.4 — Đổi đơn vị đo độ dài và khối lượng
-
-> **BẪY — Chiều đổi đơn vị.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Các số hạng có đơn vị khác nhau trong cùng một phé
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Đại lượng, đo lường và toá
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đại lượng khối lượng, chia phần và làm tròn lên
+
+> **BẪY — Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe..**
 
 **Các bước giải**
 

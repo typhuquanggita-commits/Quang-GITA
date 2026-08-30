@@ -359,6 +359,7 @@ g) 29, 35, 41, …, 53, 59
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.2
 **Đáp số:** a) 5 · b) 1 · c) 4 · d) 4 · e) 80 000 + 4 000 + 400 + 80 + 1 · f) 25 · g) 84 482
@@ -371,12 +372,14 @@ g) 29, 35, 41, …, 53, 59
 **Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.4
 **Đáp số:** a) 49 · b) 84 · c) 53 · d) 53 · e) 49 · f) 44
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.5
 **Đáp số:** a) > · b) > · c) < · d) > · e) < · f) <

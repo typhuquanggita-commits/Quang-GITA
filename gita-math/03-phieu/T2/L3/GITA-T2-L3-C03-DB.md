@@ -450,6 +450,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài C.5
 **Đáp số:** a) (16 + 6) × 2 = 44 m · b) 44 − 2 = 42 m · c) 44 : 4 = 11 cọc · d) 42 × 30 000 = 1 260 000 đồng · e) 16 × 6 = 96 m²

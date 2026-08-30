@@ -275,7 +275,7 @@ f) (1 phần 3 + 1) × 7 phần 5
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Chữ số tận cùng của tổng và tích
 
@@ -345,6 +345,7 @@ d) Một quyển sách có 265 trang, đánh số trang từ 1. Phải dùng t�
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 506 · b) 144 · c) 154 · d) 319
@@ -357,12 +358,14 @@ d) Một quyển sách có 265 trang, đánh số trang từ 1. Phải dùng t�
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài I.5
 **Đáp số:** a) < · b) < · c) < · d) < · e) < · f) <
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài II.1
 **Đáp số:** a) 8 023 · b) 570 · c) 1 334 · d) 4 514
@@ -454,7 +457,7 @@ d) Một quyển sách có 265 trang, đánh số trang từ 1. Phải dùng t�
 
 ### Bài IV.5
 **Đáp số:** a) 49 phần 54 · b) 207 phần 55 · c) 43 phần 14 · d) 67 phần 33 · e) 23 phần 10 · f) 28 phần 15
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -468,7 +471,7 @@ d) Một quyển sách có 265 trang, đánh số trang từ 1. Phải dùng t�
 
 ### Bài V.2
 **Đáp số:** a) 33 · b) 1 444 · c) 9 · d) 961 · e) 1 444
-**Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.

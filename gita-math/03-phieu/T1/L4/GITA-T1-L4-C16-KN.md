@@ -336,21 +336,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 416 · b) 40 · c) 89 · d) 282 · e) 201 · f) 128
-**Hướng giải:** BẪY — Thiếu ngoặc mà vẫn cộng trước. Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
+**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài A.2
 **Đáp số:** a) 5 832 · b) 3 955 · c) 504 660 · d) 294 201 · e) 355 821 · f) 109 824
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.3
 **Đáp số:** a) 246 074 · b) 64 185 · c) 1 057 918 · d) 1 658 008 · e) 356 294 · f) 511 269 408
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.4
 **Đáp số:** a) 960 · b) 2 773 · c) 2 918 000 · d) 6 821 · e) 53 040 · f) 8 342 · g) 7 869
@@ -448,7 +451,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài D.4
 **Đáp số:** a) Dãy cộng gồm nhiều tích cùng một thừa số · b) Đặt thừa số chung → tính tổng trong ngoặc bằng công thức · c) Nhân từng tích rồi cộng dồn, rất dài và dễ sai. · d) Nhân một số với một tổng, tổng dãy cách đều · e) 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
@@ -461,14 +464,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Biểu thức nhiều bước, tìm x và tính nhanh tổng hợp” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tính ngược từ cuối.” · b) Đề kể một **chuỗi thao tác** rồi cho kết quả cuối, hỏi số ban đầu · c) Bốn phép tính; quan hệ giữa phép tính và phép tính ngược · d) Một số nhân 3, cộng 7, chia 2 thì được 20. Tìm số ấy. → 11 · e) Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. · f) Gỡ từ phải sang trái, mỗi bước một phép tính ngược — không cần đặt ẩn.
-**Hướng giải:** Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
+**Hướng giải:** BẪY — Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng.. Viết chuỗi thao tác thành sơ đồ mũi tên rồi đi ngược lại từ kết quả cuối. Mỗi bước đảo phép tính: nhân thành chia, cộng thành trừ. Thứ tự cũng phải đảo — phép làm sau cùng được gỡ trước tiên.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai.
 **Lỗi thường gặp:** Bắt đầu gỡ từ phép tính đầu tiên của đề thay vì từ phép tính cuối cùng. Phòng: Thử lại theo chiều xuôi. Bài này luôn thử lại được, nên không có lý do gì để nộp một đáp số chưa thử.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

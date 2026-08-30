@@ -384,6 +384,8 @@ Kết quả: **20**.
 
 ### Bài IV.1 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -426,6 +428,8 @@ Kết quả: **140**.
 
 ### Bài IV.3 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -445,6 +449,8 @@ Kết quả: **115**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.4 — Tính nhanh tổng nhiều tích có thừa số chung
+
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
 
 **Các bước giải**
 
@@ -466,8 +472,6 @@ Kết quả: **7 650**.
 
 ### Bài IV.5 — Bài toán trồng cây — bốn trường hợp
 
-> **BẪY — Bốn trường hợp trồng cây khác nhau.**
-
 **Các bước giải**
 
 Xét ý a: Trồng cây quanh một cái ao hình tròn có chu vi 80 m, hai cây liền nhau cách nhau 4 m. Cần bao nhiêu cây?
@@ -487,8 +491,6 @@ Kết quả: **20**.
 *Điểm chốt:* Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 
 ### Bài V.1 — Đại lượng khối lượng — đổi đơn vị và chia phần
-
-> **BẪY — Làm tròn lên khi hỏi số xe ít nhất.**
 
 **Các bước giải**
 
@@ -511,8 +513,6 @@ Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 6 818 : 1 000 = 6 xe đ�
 *Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
 
 ### Bài V.2 — Dãy có hiệu tăng đều
-
-> **BẪY — Cộng thừa một hiệu.**
 
 **Các bước giải**
 
@@ -651,10 +651,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
 | III.4 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
 | III.5 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
-| IV.1 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.1 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.2 | TD5, TD3 | Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên. |
-| IV.3 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
-| IV.4 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.3 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.4 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.5 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | V.1 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
 | V.2 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |

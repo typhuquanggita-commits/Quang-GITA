@@ -239,12 +239,12 @@ d) 83 × 9
 
 Tìm x, trình bày từng bước.
 
-a) x × 5 − 90 = 45
-b) 39 − x = 10
-c) x × 3 + 89 = 134
-d) x : 9 + 15 = 60
-e) x : 4 + 35 = 51
-f) 37 − x = 25
+a) x × 5 − 90 = -45
+b) (x − 10) × 9 = 171
+c) x : 3 + 89 = 104
+d) 60 − x = 15
+e) (x + 35) × 4 = 204
+f) x × 2 + 25 = 49
 
 ### Bài 3. (5 điểm) Cân đĩa và số lần cân ít nhất
 
@@ -280,7 +280,7 @@ f) Biết 1 phần 6 của một số là 5. Tìm số đó.
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -376,6 +376,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.5
 **Đáp số:** a) 200 · b) 259 · c) 270 · d) 158
@@ -451,9 +452,9 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
 
 ### Bài IV.2
-**Đáp số:** a) x = 27 · b) x = 29 · c) x = 15 · d) x = 405 · e) x = 64 · f) x = 12
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 9 · b) x = 29 · c) x = 45 · d) x = 45 · e) x = 16 · f) x = 12
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 

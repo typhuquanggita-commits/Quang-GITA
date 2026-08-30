@@ -224,10 +224,10 @@ f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao 
 
 Tìm x, trình bày từng bước.
 
-a) x × 7 + 70 = 448
-b) x × 9 − 85 = 72
-c) 110 − x = 68
-d) x : 6 + 8 = 67
+a) x × 3 + 85 = 238
+b) x : 2 + 68 = 110
+c) 67 − x = 8
+d) x × 8 − 12 = 156
 
 ### Bài 2. (5 điểm) Bài toán trồng cây
 
@@ -270,7 +270,7 @@ e) Có bao nhiêu số chia hết cho 3 từ 178 đến 480?
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -434,9 +434,9 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
 
 ### Bài IV.1
-**Đáp số:** a) x = 54 · b) x = 157 : 9 · c) x = 42 · d) x = 354
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 51 · b) x = 84 · c) x = 59 · d) x = 21
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -463,7 +463,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) 90 · b) 139 · c) 65 · d) 48 · e) 101
-**Hướng giải:** BẪY — Hai đầu khoảng chưa chắc thoả điều kiện. Các số cần đếm lập thành dãy cách đều. Tìm đúng số đầu và số cuối **nằm trong khoảng**, rồi dùng công thức (cuối − đầu) : khoảng cách + 1.
+**Hướng giải:** Các số cần đếm lập thành dãy cách đều. Tìm đúng số đầu và số cuối **nằm trong khoảng**, rồi dùng công thức (cuối − đầu) : khoảng cách + 1.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Hai đầu khoảng **chưa chắc** thoả điều kiện.
 **Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy. Phòng: Viết ba số đầu và ba số cuối của dãy trước khi áp công thức.
 **Gợi ý 3 tầng:** (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.

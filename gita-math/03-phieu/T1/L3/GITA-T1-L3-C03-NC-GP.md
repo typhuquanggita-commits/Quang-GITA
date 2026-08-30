@@ -666,7 +666,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD4, TD6 | Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.4 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
-| V.5 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.5 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 
 ---
 

@@ -644,7 +644,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | TD1, TD5 | 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD1 | Tổng các chữ số **không** phụ thuộc thứ tự các chữ số. |
-| E.3 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| E.3 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | E.4 | TD1 | Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng). |
 | E.5 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 

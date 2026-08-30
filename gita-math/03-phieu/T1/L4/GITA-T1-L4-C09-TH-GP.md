@@ -456,6 +456,8 @@ Hiệu của phân số lớn nhất và bé nhất: 19 phần 24 − 1 phần 1
 
 ### Bài IV.4 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 2 phần 3 × 3 phần 14 + 2 phần 3 × 2
@@ -499,8 +501,6 @@ Cả gia đình: 360 000 + 180 000 = **540 000 đồng**.
 *Phải chắc trước khi làm bài này:* Nhân chia số tròn nghìn và kỹ năng gạch chân câu hỏi.
 
 ### Bài V.1 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 

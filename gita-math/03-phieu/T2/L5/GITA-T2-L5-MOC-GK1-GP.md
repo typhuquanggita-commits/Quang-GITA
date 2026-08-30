@@ -664,7 +664,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD6, TD2 | Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau. |
 | IV.4 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
 | IV.5 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
-| V.1 | TD1, TD3, TD4 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
+| V.1 | TD1, TD3, TD4, TD5 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
 | V.2 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
 | V.3 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |
 | V.4 | TD4, TD5 | Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi. |

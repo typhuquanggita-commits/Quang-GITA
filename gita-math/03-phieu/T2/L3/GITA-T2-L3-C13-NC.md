@@ -233,11 +233,11 @@ e) Xếp 19 hình đầu tiên cần tất cả bao nhiêu que?
 
 Tìm x, trình bày từng bước.
 
-a) x : 8 + 47 = 104
-b) x × 8 − 83 = 248
-c) 33 − x = 15
-d) x × 8 + 58 = 474
-e) x : 4 + 55 = 78
+a) x : 9 + 55 = 75
+b) 92 − x = 62
+c) (x + 15) × 3 = 99
+d) (x − 58) × 8 = 8
+e) x × 4 − 55 = 37
 
 ### Bài 2. (5 điểm) Tính nhanh bằng cách tách số
 
@@ -287,7 +287,7 @@ f) Có 7 gói kẹo, mỗi gói 250 g. Lấy ra 5 gói. Hỏi số kẹo còn l�
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Suy luận thứ tự và vị trí trong hàng
 
@@ -360,12 +360,14 @@ e) 1 + 2 + 3 + … + 50
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 79 · b) 84 · c) 340 · d) 13 · e) 1 · f) 40 · g) 304
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.4
 **Đáp số:** a) 213 · b) 1 040 · c) 363 · d) 1 026 · e) 235 · f) 933 · g) 270
@@ -384,6 +386,7 @@ e) 1 + 2 + 3 + … + 50
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.2
 **Đáp số:** a) 25 tờ · b) 28 000 đồng · c) 25 000 đồng · d) 10 000 đồng
@@ -440,9 +443,9 @@ e) 1 + 2 + 3 + … + 50
 **Lỗi thường gặp:** Nhân khoảng cách với n nên thừa đúng một khoảng. Phòng: Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n.
 
 ### Bài IV.1
-**Đáp số:** a) x = 456 · b) x = 331 : 8 · c) x = 18 · d) x = 52 · e) x = 92
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 180 · b) x = 30 · c) x = 18 · d) x = 59 · e) x = 23
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -483,8 +486,8 @@ e) 1 + 2 + 3 + … + 50
 
 ### Bài V.2
 **Đáp số:** a) 739 · b) 666 · c) 973 · d) 900 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 7
-**Hướng giải:** BẪY — Bên trái hay bên phải. Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 
@@ -498,7 +501,7 @@ e) 1 + 2 + 3 + … + 50
 ### Bài V.4
 **Đáp số:** a) 32 · b) 40 · c) 24 · d) 15 · e) 17 · f) 24
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

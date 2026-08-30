@@ -412,6 +412,8 @@ Lặp lại cách ấy, sau 3 lần thì còn đúng một gói.
 
 ### Bài IV.2 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -475,8 +477,6 @@ Kết quả: **lẻ**.
 *Điểm chốt:* Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
 
 ### Bài IV.5 — Đếm số cách trả tiền bằng hai loại mệnh giá
-
-> **BẪY — Xét thiếu trường hợp.**
 
 **Các bước giải**
 
@@ -662,7 +662,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi. |
 | III.5 | TD3, TD4 | Phải xét **hết** danh sách. Bài thử chọn thường có hơn một đáp số. |
 | IV.1 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
-| IV.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.2 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.3 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
 | IV.4 | TD6, TD2 | Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này. |
 | IV.5 | TD3, TD4 | Phải thử từ 0 tờ, không được bỏ qua trường hợp chỉ dùng một loại. |

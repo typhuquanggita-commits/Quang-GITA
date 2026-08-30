@@ -658,7 +658,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD2, TD1 | Các ước luôn đi thành **cặp** nhân với nhau bằng chính số đó. |
 | IV.4 | TD2, TD5 | Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng. |
 | IV.5 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD2, TD6 | Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi. |
 | V.3 | TD1, TD2, TD5 | Gấp p lần rồi gấp tiếp q lần là gấp p × q lần, không phải gấp p + q lần. |
 | V.4 | TD2, TD3 | Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**. |

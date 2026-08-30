@@ -340,27 +340,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 72 · b) 15 · c) 24 · d) 48
-**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài A.2
 **Đáp số:** a) 4 200 · b) 250 · c) 58 000 · d) 8 800 · e) 290 · f) 39 000 · g) 5 400 · h) 470 000
-**Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài A.3
 **Đáp số:** a) 577 · b) 3 giờ 16 phút · c) 1 giờ 1 phút · d) 11 giờ 19 phút · e) 3 giờ 3 phút · f) 2 giờ 35 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài A.4
 **Đáp số:** a) 32 808 · b) 25 000 · c) 36 · d) > · e) 21 · f) 40 000 · g) 6 439 · h) >
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài A.5
 **Đáp số:** a) 152 · b) 4 tấn 1 tạ 12 kg · c) 6 411 · d) 6 926 · e) 3 tấn 5 tạ 43 kg · f) 6 tấn 4 tạ 84 kg · g) 3 tấn 78 kg
@@ -465,14 +469,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Dung tích, thời gian và đổi đơn vị tổng hợp” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Số đo có nhiều đơn vị.” · b) Số đo viết dưới dạng “… tấn … tạ … kg” · c) Bảng đơn vị khối lượng · d) 3 450 kg = … tấn … tạ … kg → 3 tấn 4 tạ 50 kg · e) Cộng thẳng các số đứng trước những đơn vị khác nhau. · f) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
-**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Hướng giải:** BẪY — Cộng thẳng các số đứng trước những đơn vị khác nhau.. 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
 **Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

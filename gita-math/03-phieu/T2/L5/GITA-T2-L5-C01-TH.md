@@ -275,7 +275,7 @@ h) Số 177 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Số chính phương — làm quen theo hướng đề thi
 
@@ -391,12 +391,14 @@ f) Tìm số có hai chữ số biết số đó bằng 7 lần tổng hai chữ
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.5
 **Đáp số:** a) 703 dư 6 · b) 7 893 dư 3 · c) 7 884 dư 7 · d) 7 687 dư 10 · e) 4 647 dư 9 · f) 6 047 dư 2
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài III.1
 **Đáp số:** a) 38 số, bé nhất là 195 · b) 20 số, bé nhất là 270 · c) 67 số, bé nhất là 132 · d) 28 số, bé nhất là 135 · e) 75 số, bé nhất là 210 · f) 49 số, bé nhất là 216
@@ -430,8 +432,8 @@ f) Tìm số có hai chữ số biết số đó bằng 7 lần tổng hai chữ
 
 ### Bài IV.1
 **Đáp số:** a) 95 · b) 573 · c) 19 · d) 0 · e) 0 · f) 27 645
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -472,7 +474,7 @@ f) Tìm số có hai chữ số biết số đó bằng 7 lần tổng hai chữ
 
 ### Bài V.2
 **Đáp số:** a) 4, 8, 16, 28 · b) 64 · c) 184 · d) 36 · e) có, khoảng cách 4 · f) 56
-**Hướng giải:** BẪY — Cộng thừa một hiệu. Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
+**Hướng giải:** Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**.
 **Lỗi thường gặp:** Cộng n hiệu thay vì (n − 1) hiệu. Phòng: Kiểm chứng với n = 2: chỉ cộng đúng một hiệu.
 **Gợi ý 3 tầng:** (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.

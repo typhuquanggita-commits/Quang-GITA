@@ -530,8 +530,6 @@ Kiểm tra: số sau nó bằng 27 + 6 = 33 ✓
 
 ### Bài E.3 — Tìm x và tính chất của phép nhân
 
-> **BẪY — Thừa số 0.**
-
 **Các bước giải**
 
 x là **số hạng chưa biết** của phép cộng.
@@ -575,6 +573,8 @@ Số nhà thứ 7: đi từ nhà đầu tiên thì phải bước 7 − 1 = 6 l�
 *Phải chắc trước khi làm bài này:* Dãy số cách đều và phép chia hết.
 
 ### Bài E.5 — Đếm số hạng của dãy cách đều
+
+> **BẪY — Quên cộng 1.**
 
 **Các bước giải**
 

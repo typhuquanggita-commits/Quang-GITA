@@ -277,7 +277,7 @@ f) Tìm số bé nhất không quá 200 chia cho 9 dư 5 và chia cho 3 dư 1.
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Số chính phương — làm quen theo hướng đề thi
 
@@ -382,12 +382,14 @@ e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 272 km, vận 
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.4
 **Đáp số:** a) 0, 5 · b) không có chữ số nào · c) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · d) 3, 6, 9 · e) 1, 4, 7 · f) 0, 2, 4, 6, 8
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.5
 **Đáp số:** a) 84 · b) 88 · c) 60 · d) 161 · e) 268 · f) 67
@@ -434,8 +436,8 @@ e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 272 km, vận 
 
 ### Bài IV.2
 **Đáp số:** a) 117 · b) 815 · c) 12 · d) 58 · e) 23 722 · f) 47 853
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -483,8 +485,8 @@ e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 272 km, vận 
 
 ### Bài V.4
 **Đáp số:** a) 784, 856, 892, 928, 964 · b) 492, 564, 672, 744, 780, 816, 852, 924… · c) 472, 544, 580, 652, 724, 760, 832, 904… · d) 584, 692, 764, 836, 872, 908, 944, 980
-**Hướng giải:** BẪY — Bỏ sót nghiệm hoặc nhận nghiệm có chữ số hàng trăm bằng 0. Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.
-**Nhãn tư duy:** TD1, TD3, TD4. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
+**Hướng giải:** Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.
+**Nhãn tư duy:** TD1, TD3, TD4, TD5. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
 **Lỗi thường gặp:** Thử luôn từ 100 đến 999, hết giờ mà chưa xong. Phòng: Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất.
 **Gợi ý 3 tầng:** (1) Viết cấu tạo số abc theo chữ. — (2) Trong ba điều kiện, điều kiện nào cho ít số nhất? — (3) Lọc bằng điều kiện ấy rồi mới thử hai điều kiện còn lại.
 

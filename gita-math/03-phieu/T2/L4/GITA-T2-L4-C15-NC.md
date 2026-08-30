@@ -279,7 +279,7 @@ f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Trắc nghiệm nhanh — sáu kỹ thuật đếm
 
@@ -355,12 +355,14 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.3
 **Đáp số:** a) 8 bạn · b) 35 cách · c) 14 cách · d) 17 cách · e) 12 bạn · f) 33 cách · g) 132 cách
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.4
 **Đáp số:** a) ô (Bình; Tiếng Anh) · b) toàn bộ hàng Bình và toàn bộ cột Tiếng Anh · c) ô (Thảo; Toán) · d) Âm nhạc · e) Toán · f) phương pháp lập bảng và loại trừ
@@ -373,6 +375,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài II.1
 **Đáp số:** a) xe đạp: 4 chiếc, xe ô tô: 25 chiếc · b) xe đạp: 5 chiếc, xe ba bánh: 19 chiếc · c) xe ba bánh: 12 chiếc, xe đạp: 11 chiếc · d) xe ba bánh: 27 chiếc, xe đạp: 30 chiếc
@@ -385,6 +388,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.3
 **Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Yến chính là người làm vỡ lọ hoa · f) Yến
@@ -457,14 +461,14 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 ### Bài IV.4
 **Đáp số:** a) 24 lít · b) 125 lít · c) 350 lít · d) 15 lít · e) 72 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) 18 · b) 10 · c) 10 · d) 8 · e) 875 và 507 · f) 1 382
-**Hướng giải:** BẪY — Chữ số 0 ở hàng trăm. Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
+**Hướng giải:** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 **Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
 **Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
@@ -479,7 +483,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 ### Bài V.2
 **Đáp số:** a) 81 · b) 78 · c) 84 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 15 · f) 20 · g) 5
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

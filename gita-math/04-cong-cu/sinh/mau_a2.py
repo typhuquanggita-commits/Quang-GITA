@@ -107,7 +107,7 @@ def a2_m2_31(rng, lop):
         tuong_tu=("Tìm x: x + 25 = 60", "x = 35"),
         mo_rong="Cho x xuất hiện hai lần: x + x + 12 = 40.",
         chuan_bi="Cộng, trừ trong phạm vi 1 000 và bảng nhân chia.",
-        bay="Thừa số 0")
+        chu_y="Thừa số 0")
 
 
 @dang_ky("A2-M3-31", "A", "M3", lop=(3,),
@@ -238,6 +238,7 @@ def a2_m5_31(rng, lop):
         huong_giai="Chữ số tận cùng của tổng và của tích chỉ phụ thuộc chữ số tận cùng của "
                    "các số tham gia. Che phần đầu, chỉ tính với chữ số cuối.",
         td=["TD5", "TD2"],
+        bay="Tính trọn phép tính thay vì chỉ xét chữ số tận cùng",
         diem_chot="Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu.",
         loi="Tính trọn cả phép tính, vừa lâu vừa dễ sai.",
         phong="Lấy tay che phần đầu của hai số, chỉ để lộ chữ số cuối.",

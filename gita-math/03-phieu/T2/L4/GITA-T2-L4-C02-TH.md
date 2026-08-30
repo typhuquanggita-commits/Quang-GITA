@@ -273,7 +273,7 @@ e) Trồng cây trên đoạn đường dài 96 m, hai cây liền nhau cách nh
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
 
@@ -340,6 +340,7 @@ f) Phân số thứ 8 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.2
 **Đáp số:** a) 51 264 · b) 110 935 · c) 137 866 · d) 24 650 · e) 75 115 · f) 113 331 · g) 85 454
@@ -358,6 +359,7 @@ f) Phân số thứ 8 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài I.5
 **Đáp số:** a) 49, 58, 67 · b) 45, 52, 59 · c) 36, 43, 50 · d) 14, 17, 20 · e) 23, 27, 31
@@ -427,8 +429,8 @@ f) Phân số thứ 8 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ### Bài IV.1
 **Đáp số:** a) 182 · b) 200 · c) 1 910 · d) 191 · e) 382 · f) 382
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -448,14 +450,14 @@ f) Phân số thứ 8 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ### Bài IV.4
 **Đáp số:** a) 376 · b) 1 504 · c) 376 · d) 376 · e) 283 504 · f) 283 504
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài IV.5
 **Đáp số:** a) 23 · b) 15 · c) 14 · d) 33 · e) 24
-**Hướng giải:** BẪY — Bốn trường hợp trồng cây khác nhau. Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
+**Hướng giải:** Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
 **Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
@@ -469,7 +471,7 @@ f) Phân số thứ 8 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ### Bài V.2
 **Đáp số:** a) 2 500 · b) 1 275 · c) 420 · d) 2 550
-**Hướng giải:** BẪY — Nhầm số hạng cuối với số lượng số hạng. Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
+**Hướng giải:** Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
 **Lỗi thường gặp:** Nhầm số hạng cuối với số lượng số hạng khi áp công thức. Phòng: Đếm số số hạng trước rồi mới thay vào công thức.
 **Gợi ý 3 tầng:** (1) Dãy này có bao nhiêu số hạng? — (2) Đây là dãy số lẻ, số chẵn, hay số tự nhiên liên tiếp? — (3) Chọn đúng công thức tương ứng.

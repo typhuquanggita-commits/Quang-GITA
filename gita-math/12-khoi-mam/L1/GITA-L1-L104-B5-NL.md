@@ -19,6 +19,7 @@ cap_nhat: "2026-08-30"
 Lớp 1 · 6 – 7 tuổi · Mã: **GITA-L1-L104-B5-NL**  
 Mạch: **Hình học và Đo lường** *(Cambridge: Geometry and Measure)*  
 Thời lượng: **35 phút** · Thang điểm: **20**  
+Bậc: **Thử thách** — Thêm một điều kiện lạ để trẻ phải nghĩ, không chỉ làm lại.  
 Bản dành cho: **người lớn ngồi cùng**
 
 ---

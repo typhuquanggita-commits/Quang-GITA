@@ -674,7 +674,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | IV.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.5 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD4, TD6 | Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.3 | TD4, TD6 | Viết **dãy hiệu** xuống dưới dãy gốc là bước bắt buộc. |
 | V.4 | TD2, TD6 | Đừng quên **đếm cả chính mình** khi cộng lại. |

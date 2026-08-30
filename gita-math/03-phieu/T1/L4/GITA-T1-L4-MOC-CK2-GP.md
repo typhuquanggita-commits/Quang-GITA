@@ -428,6 +428,8 @@ Kết quả: **1 000**.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 3 + 348 = x × 9
@@ -493,8 +495,6 @@ Kết quả: **70**.
 *Điểm chốt:* Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 
 ### Bài V.1 — So sánh phân số bằng phần bù và phân số trung gian
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -653,7 +653,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
 | IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.4 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
-| IV.5 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.5 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | V.1 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
 | V.2 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.3 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |

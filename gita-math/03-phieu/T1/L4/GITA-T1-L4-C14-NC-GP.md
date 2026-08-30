@@ -382,6 +382,8 @@ Kết quả: **7 tạ 20 kg**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -401,6 +403,8 @@ Kết quả: **-10**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.2 — Bài toán đại lượng nhiều bước
+
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
 
 **Các bước giải**
 
@@ -488,8 +492,6 @@ Bước 2 — số tiền: 12 000 × 350 = 4 200 000 (đồng).
 
 ### Bài V.1 — Đại lượng khối lượng — đổi đơn vị và chia phần
 
-> **BẪY — Làm tròn lên khi hỏi số xe ít nhất.**
-
 **Các bước giải**
 
 Bước 1 — đổi về ki-lô-gam: 6 tấn = 6 000 kg; 5 tạ = 500 kg.
@@ -511,8 +513,6 @@ Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 6 558 : 1 000 = 6 xe đ�
 *Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
 
 ### Bài V.2 — So sánh phân số bằng phần bù và phân số trung gian
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -651,7 +651,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD4 | Làm tròn trước khi tính thì sai số của hai lần làm tròn cộng lại. |
 | III.4 | TD2, TD3 | Đổi về cùng một đơn vị (phút) trước khi tính, đừng tính lẫn giờ và phút. |
 | III.5 | TD2, TD3 | Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.4 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |

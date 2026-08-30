@@ -485,9 +485,10 @@ d) Tìm tất cả chữ số thay cho dấu * để số 67*3 chia hết cho 5.
 
 ### Bài E.5
 **Đáp số:** a) 1, 2, 3, 4, 5, 6, 7, 8, 9 · b) 1, 4, 7 · c) 5 · d) không có chữ số nào
-**Hướng giải:** BẪY — Chữ số hàng cao nhất không được là 0. Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
+**Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 **Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì chỉ cần xét chữ số tận cùng. — (2) Số chia là 3 hay 9 thì tính tổng các chữ số đã biết trước. — (3) Cộng thêm dấu * và tìm chữ số làm tổng chia hết cho số đó.
 
 ---

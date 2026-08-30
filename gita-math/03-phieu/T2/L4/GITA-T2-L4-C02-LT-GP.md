@@ -642,7 +642,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | TD2 | Đọc vị được đề là **đã đi được nửa đường**. |
 | C.5 | TD5, TD6 | Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt. |
 | D.1 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
-| D.2 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| D.2 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | D.3 | TD4, TD3 | Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng. |
 | D.4 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
 | D.5 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |

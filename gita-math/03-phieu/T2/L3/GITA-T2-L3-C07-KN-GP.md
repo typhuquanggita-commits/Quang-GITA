@@ -96,8 +96,6 @@ Kết quả: **70**.
 
 ### Bài A.2 — Bài toán giải bằng hai phép tính
 
-> **BẪY — Đọc kĩ câu hỏi cuối.**
-
 **Các bước giải**
 
 Bước 1 — tìm số lá cờ của tổ Một: 11 + 25 = 36 (lá cờ).
@@ -155,8 +153,6 @@ Kết quả: **số lớn 113, số bé 59**.
 *Điểm chốt:* Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 
 ### Bài A.5 — Nhiều hơn – ít hơn, gấp – kém
-
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
 
 **Các bước giải**
 
@@ -478,6 +474,8 @@ Kết quả: **Từ khoá “trung bình cộng”, “trung bình mỗi …”*
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -497,6 +495,8 @@ Kết quả: **giới thiệu chương “Bài toán ẩn dữ kiện và hai đ
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Toán điển hình: gấp, kém, nhiều hơn, ít hơn
+
+> **BẪY — Nhầm hai tình huống: cho thêm và chuyển qua lại..**
 
 **Các bước giải**
 
@@ -627,7 +627,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | TD2 | Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi. |
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
-| C.2 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| C.2 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | C.3 | TD3, TD2 | Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần. |
 | C.4 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | C.5 | TD1, TD3 | Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều. |
@@ -637,7 +637,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.4 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
 | D.5 | TD1 | Chia cho **số lượng số hạng**, không phải chia cho một số bất kì. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
-| E.2 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| E.2 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | E.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | E.4 | TD2, TD3 | Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai. |
 | E.5 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |

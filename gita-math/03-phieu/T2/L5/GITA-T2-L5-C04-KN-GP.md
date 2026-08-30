@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Quy tắc nhân trong phép đếm
 
-> **BẪY — Cộng hay nhân.**
-
 **Các bước giải**
 
 Xét ý a: Có 5 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
@@ -157,8 +155,6 @@ Kết quả: **ô (Khánh; Tiếng Anh)**.
 *Điểm chốt:* Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 
 ### Bài A.5 — Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
-
-> **BẪY — Phần chung bị đếm hai lần.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín 
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Đi-rích-lê, bù trừ, bất biến
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chia hết và chia có dư trong tình huống chia phần
+
+> **BẪY — Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư..**
 
 **Các bước giải**
 

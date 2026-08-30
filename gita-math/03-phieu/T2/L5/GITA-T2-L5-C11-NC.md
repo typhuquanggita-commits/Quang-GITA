@@ -275,7 +275,7 @@ f) Tìm số bé nhất không quá 500 chia cho 9 dư 6 và chia cho 3 dư 2.
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Số dư của tổng — lập luận không cần tính hết
 
@@ -372,12 +372,14 @@ f) Số có hai chữ số 73 gấp tổng hai chữ số của nó bao nhiêu l
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.2
 **Đáp số:** a) 4 925 dư 2 · b) 3 870 dư 12 · c) 8 446 dư 8 · d) 3 185 dư 1 · e) 7 623 dư 2 · f) 6 170 dư 16 · g) 7 892 dư 16
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.3
 **Đáp số:** a) 284 · b) 114 · c) 159 · d) 294 · e) 113
@@ -450,8 +452,8 @@ f) Số có hai chữ số 73 gấp tổng hai chữ số của nó bao nhiêu l
 
 ### Bài IV.4
 **Đáp số:** a) 130 · b) 208 · c) 6 760 · d) 169 · e) 338 · f) 338
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -471,7 +473,7 @@ f) Số có hai chữ số 73 gấp tổng hai chữ số của nó bao nhiêu l
 
 ### Bài V.2
 **Đáp số:** a) 1 · 4 · 9 · 16 · 25 · 36 · 49 · b) 49 · c) 1 + 3 + … + 13 = 49 · d) không bao giờ · e) có, là 7 nhân 7 · f) 7
-**Hướng giải:** BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức. Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
+**Hướng giải:** Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8.
 **Lỗi thường gặp:** Kết luận một số là chính phương chỉ vì nó “trông đẹp”. Phòng: Kiểm tra chữ số tận cùng trước, sau đó thử khai căn bằng cách nhân thử.
 **Gợi ý 3 tầng:** (1) Viết bảng các số chính phương đầu tiên. — (2) Hiệu hai số chính phương liên tiếp là những số nào? — (3) Chữ số tận cùng của số chính phương có thể là những chữ số nào?

@@ -271,7 +271,7 @@ d) Ghép 3 hình vuông cạnh 15 cm thành một hàng ngang. Tính chu vi và 
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm đoạn thẳng và tam giác
 
@@ -338,6 +338,7 @@ e) Tổng 80 + 782 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.2
 **Đáp số:** a) 553 · b) 209 · c) 1 755 · d) 529 · e) 77 · f) 1 011
@@ -350,18 +351,21 @@ e) Tổng 80 + 782 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài I.4
 **Đáp số:** a) áp đúng đỉnh góc và một cạnh của góc vào ê ke · b) 4 góc vuông · c) 1 góc vuông · d) 19 cm · e) AM = MB · f) không chắc, còn phải có AM = MB · g) không, vì AM khác nửa AB
 **Hướng giải:** Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Nằm giữa **chưa đủ** để là trung điểm.
 **Lỗi thường gặp:** Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. Phòng: Đo cả hai đoạn AM và MB rồi mới kết luận.
+**Chú ý:** Nằm giữa nhưng không chia đôi.
 
 ### Bài I.5
 **Đáp số:** a) 216 cm · b) 324 cm² · c) 40 cm · d) 48 cm² · e) 770 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài II.1
 **Đáp số:** a) (24 + 8) × 2 = 64 m · b) 64 − 2 = 62 m · c) 64 : 4 = 16 cọc · d) 62 × 25 000 = 1 550 000 đồng · e) 24 × 8 = 192 m²
@@ -392,6 +396,7 @@ e) Tổng 80 + 782 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài III.1
 **Đáp số:** a) 63 cây · b) 220 cây · c) 96 cây · d) 312 cây
@@ -461,7 +466,7 @@ e) Tổng 80 + 782 có chữ số tận cùng là chữ số nào?
 ### Bài V.1
 **Đáp số:** a) 15 · b) 6 · c) 21 · d) 6 · e) 21 · f) 6
 **Hướng giải:** Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 
@@ -482,7 +487,7 @@ e) Tổng 80 + 782 có chữ số tận cùng là chữ số nào?
 ### Bài V.4
 **Đáp số:** a) 96 · b) 144 · c) 48 · d) 59 · e) 37 · f) 48
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

@@ -58,7 +58,7 @@ def e_m1_01(rng, lop):
         pt_phuong_phap="Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10",
         pt_nhanh="Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).",
         tuong_tu=("5 km = … m", "5 000"),
-        bay="Chiều đổi đơn vị",
+        chu_y="Chiều đổi đơn vị",
     )
 
 
@@ -136,7 +136,7 @@ def e_m1_03(rng, lop):
         pt_phuong_phap="Quy về phút rồi tính, cuối cùng đổi lại giờ và phút",
         pt_nhanh="Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.",
         tuong_tu=("155 phút = … giờ … phút", "2 giờ 35 phút"),
-        bay="Cơ số 60 chứ không phải 10",
+        chu_y="Cơ số 60 chứ không phải 10",
     )
 
 
@@ -166,7 +166,7 @@ def e_m1_04(rng, lop):
         pt_phuong_phap="Đếm bậc rồi nhân, chia 100",
         pt_nhanh="Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.",
         tuong_tu=("3 m² = … cm²", "30 000"),
-        bay="100 lần chứ không phải 10 lần",
+        chu_y="100 lần chứ không phải 10 lần",
     )
 
 
@@ -203,7 +203,7 @@ def e_m2_01(rng, lop):
         pt_nhanh="Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải "
                  "làm việc với phân số.",
         tuong_tu=("So sánh: 3 kg … 2 500 g", ">"),
-        bay="Đơn vị khác nhau",
+        chu_y="Đơn vị khác nhau",
     )
 
 
@@ -295,7 +295,7 @@ def e_m2_03(rng, lop):
         pt_phuong_phap="Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400",
         pt_nhanh="Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.",
         tuong_tu=("Năm 1975 thuộc thế kỉ thứ mấy?", "XX"),
-        bay="Năm tròn trăm",
+        chu_y="Năm tròn trăm",
     )
 
 
@@ -468,6 +468,7 @@ def e_m4_02(rng, lop):
                    "số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép "
                    "tính hơn.",
         td=["TD3", "TD5"],
+        bay="Trừ số thùng cho số lít — hai đại lượng khác loại",
         diem_chot="Trừ **số thùng** trước khi nhân thì ít phép tính hơn.",
         loi="Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại.",
         phong="Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.",
@@ -551,6 +552,7 @@ def e_m5_02(rng, lop):
                    "công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số "
                    "ngày mới để biết sớm hơn bao nhiêu.",
         td=["TD6", "TD3"],
+        bay="Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn",
         diem_chot="Đại lượng bất biến ở đây là **tổng số ngày công**.",
         loi="Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn.",
         phong="Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .",

@@ -404,6 +404,8 @@ Kết quả: **0**.
 
 ### Bài IV.2 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 50
@@ -423,6 +425,8 @@ Kết quả: **2 550**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
+
+> **BẪY — Chuyển vế mà quên đổi dấu.**
 
 **Các bước giải**
 
@@ -466,8 +470,6 @@ Kết quả: **297**.
 
 ### Bài IV.5 — Đặt chữ thay chữ số rồi lập luận
 
-> **BẪY — Quên chữ số hàng cao nhất khác 0.**
-
 **Các bước giải**
 
 Viết cấu tạo số theo chữ: số ab bằng a × 10 + b, số ba bằng b × 10 + a. Đây là bước quyết định của phương pháp.
@@ -489,8 +491,6 @@ Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là *
 *Phải chắc trước khi làm bài này:* Cấu tạo thập phân và bài toán tìm hai số biết tổng và hiệu.
 
 ### Bài V.1 — Tổng nhiều số có ràng buộc — dạng đề thi
-
-> **BẪY — Số lượng chẵn thì không có số giữa.**
 
 **Các bước giải**
 
@@ -658,11 +658,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
 | III.5 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
 | IV.1 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
-| IV.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.2 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.4 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
 | IV.5 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.3 | TD4, TD6 | Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8. |
 | V.4 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |

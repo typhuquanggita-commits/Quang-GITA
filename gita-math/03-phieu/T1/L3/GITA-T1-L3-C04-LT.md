@@ -339,6 +339,7 @@ d) Kho B và trang trại chứa tất cả 84 kg muối. Kho B chứa nhiều h
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài A.2
 **Đáp số:** a) số lớn 65, số bé 51 · b) số lớn 140, số bé 112 · c) số lớn 109, số bé 79 · d) số lớn 154, số bé 128 · e) số lớn 122, số bé 76 · f) số lớn 53, số bé 31
@@ -363,6 +364,7 @@ d) Kho B và trang trại chứa tất cả 84 kg muối. Kho B chứa nhiều h
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài B.1
 **Đáp số:** a) Giải toán một bước, gấp và giảm số lần · b) D — Toán điển hình & Giải toán có lời văn · c) 6 · d) ở mọi bài thuộc toán điển hình & giải toán có lời văn, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài bài toán giải bằng một phép tính: thêm – bớt, nhiều hơn – ít hơn

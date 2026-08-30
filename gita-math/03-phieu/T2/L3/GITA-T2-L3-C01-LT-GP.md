@@ -480,7 +480,7 @@ Kết quả: **Quan hệ các thành phần phép tính; giao hoán, kết hợp
 
 ### Bài E.1 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
+> **BẪY — Quên chữ số 0 ở giữa thương nên thương thiếu chữ số..**
 
 **Các bước giải**
 
@@ -506,8 +506,6 @@ Kết quả: **752 dư 6**.
 
 ### Bài E.2 — Tìm x và tính chất của phép nhân
 
-> **BẪY — Thừa số 0.**
-
 **Các bước giải**
 
 Xét ý a: 8 × 154 = 154 × …
@@ -531,8 +529,6 @@ Kết quả: **8**.
 *Phải chắc trước khi làm bài này:* Cộng, trừ trong phạm vi 1 000 và bảng nhân chia.
 
 ### Bài E.3 — Phép chia có dư
-
-> **BẪY — Số dư phải bé hơn số chia.**
 
 **Các bước giải**
 

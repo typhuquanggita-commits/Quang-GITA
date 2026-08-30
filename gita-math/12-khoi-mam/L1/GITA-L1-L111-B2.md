@@ -19,6 +19,7 @@ cap_nhat: "2026-08-30"
 Lớp 1 · 6 – 7 tuổi · Mã: **GITA-L1-L111-B2**  
 Mạch: **Hình học và Đo lường** *(Cambridge: Geometry and Measure)*  
 Thời lượng: **35 phút** · Thang điểm: **20**  
+Bậc: **Làm quen** — Người lớn làm mẫu trước, trẻ làm theo từng bước.  
 Bản dành cho: **trẻ làm**
 
 ---

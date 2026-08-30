@@ -256,7 +256,7 @@ def a3_m5_11(rng, lop):
         huong_giai="Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là "
                    "**cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị "
                    "là chia cho 10 lấy phần nguyên.",
-        td=["TD3", "TD2"],
+        td=["TD3", "TD2", "TD5"],
         diem_chot="Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.",
         loi="Nhầm “thêm bên trái” thành “thêm bên phải”.",
         phong="Viết cả hai số ra giấy rồi mới so sánh.",
@@ -304,7 +304,7 @@ def d3_m5_11(rng, lop):
         huong_giai="Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì "
                    "cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho "
                    "một bên** thì thêm đúng phần hơn.",
-        td=["TD2", "TD3"],
+        td=["TD2", "TD3", "TD5"],
         diem_chot="Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì "
                   "chỉ chuyển **nửa phần hơn**.",
         loi="Nhầm hai tình huống: cho thêm và chuyển qua lại.",

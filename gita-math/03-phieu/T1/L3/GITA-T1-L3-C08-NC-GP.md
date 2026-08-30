@@ -676,7 +676,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.4 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.5 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
-| V.1 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.1 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.2 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
 | V.3 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
 | V.4 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |

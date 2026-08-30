@@ -275,7 +275,7 @@ f) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy số lặp lại theo chu kì
 
@@ -379,6 +379,7 @@ f) Xoá chữ số hàng đơn vị của 60 thì được số nào?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.3
 **Đáp số:** a) mỗi bạn 11 cái, thừa 8 cái · b) 8 cái · c) 1 cái · d) 12 cái · e) mỗi bạn 13 cái, thừa 3 cái · f) phải là số chia hết cho 9
@@ -391,6 +392,7 @@ f) Xoá chữ số hàng đơn vị của 60 thì được số nào?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.5
 **Đáp số:** a) Bình: 76 viên, Chi: 66 viên · b) Thảo: 48 viên, Vy: 26 viên · c) Dũng: 103 viên, Minh: 79 viên · d) Hùng: 88 viên, Ngọc: 74 viên
@@ -444,7 +446,7 @@ f) Xoá chữ số hàng đơn vị của 60 thì được số nào?
 
 ### Bài IV.3
 **Đáp số:** a) 18 m · b) 60 chai · c) 2 400 000 đồng · d) 30 m · e) 90 chai · f) 4 320 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -465,7 +467,7 @@ f) Xoá chữ số hàng đơn vị của 60 thì được số nào?
 
 ### Bài V.1
 **Đáp số:** a) 8 · b) 8 · c) 7 · d) 7 · e) 8 · f) 435
-**Hướng giải:** BẪY — Số dư 0. Chia vị trí cần tìm cho độ dài chu kì. Số dư cho biết vị trí trong chu kì; nếu chia hết (dư 0) thì đó là phần tử **cuối** chu kì.
+**Hướng giải:** Chia vị trí cần tìm cho độ dài chu kì. Số dư cho biết vị trí trong chu kì; nếu chia hết (dư 0) thì đó là phần tử **cuối** chu kì.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 **Lỗi thường gặp:** Dư 0 mà lấy phần tử đầu tiên. Phòng: Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn.
 **Gợi ý 3 tầng:** (1) Chu kì dài mấy số hạng? — (2) Chia vị trí cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì.
@@ -494,7 +496,7 @@ f) Xoá chữ số hàng đơn vị của 60 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 602 · b) 542 · c) 260 · d) 200 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 6
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

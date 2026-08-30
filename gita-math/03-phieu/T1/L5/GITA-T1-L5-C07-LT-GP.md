@@ -480,7 +480,7 @@ Kết quả: **Quy tắc làm tròn, giá trị hàng**.
 
 ### Bài E.1 — Tìm chữ số để số chia hết cho một số cho trước
 
-> **BẪY — Chữ số hàng cao nhất không được là 0.**
+> **BẪY — Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất..**
 
 **Các bước giải**
 
@@ -543,8 +543,6 @@ Kết quả: **có (chữ số tận cùng 8)**.
 *Điểm chốt:* Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**.
 
 ### Bài E.4 — Phép chia có dư
-
-> **BẪY — Số dư phải bé hơn số chia.**
 
 **Các bước giải**
 

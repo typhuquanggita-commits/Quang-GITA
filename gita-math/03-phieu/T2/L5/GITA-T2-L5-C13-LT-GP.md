@@ -520,8 +520,6 @@ Kết quả: **4 phần 91**.
 
 ### Bài E.3 — Bốn phép tính với số thập phân
 
-> **BẪY — Vị trí dấu phẩy ở tích.**
-
 **Các bước giải**
 
 Xét ý a: 871,92 : 9

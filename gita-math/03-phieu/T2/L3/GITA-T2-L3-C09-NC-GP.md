@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài IV.1** — a) An: 14 quyển, Lan: 8 quyển · b) Hùng: 19 quyển, Ngọc: 15 quyển · c) Yến: 51 quyển, Chi: 41 quyển · d) Minh: 60 quyển, Tuấn: 42 quyển · e) Dũng: 112 quyển, Quân: 74 quyển · f) Trang: 62 quyển, An: 42 quyển
 - **Bài IV.2** — a) 36, hơn kém 27 đơn vị · b) 29, hơn kém 63 đơn vị · c) 79, hơn kém 18 đơn vị · d) 34, hơn kém 9 đơn vị · e) 96, hơn kém 27 đơn vị
-- **Bài IV.3** — a) x = 204 · b) x = 271 : 5 · c) x = 55 · d) x = 48
+- **Bài IV.3** — a) x = 230 · b) x = 55 · c) x = 48 · d) x = 47
 - **Bài IV.4** — a) 14 · b) 510 · c) 105 · d) 8 · e) 615 · f) 405
 - **Bài IV.5** — a) 83 · b) 96 · c) 23 · d) 181 · e) 123 · f) 92
 
@@ -386,6 +386,8 @@ Kết quả: **19**.
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: An và Lan có tất cả 22 quyển vở. An có nhiều hơn Lan 6 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -428,19 +430,17 @@ Kết quả: **36, hơn kém 27 đơn vị**.
 
 ### Bài IV.3 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 4 + 20 = 71
+Xét **x : 5 + 41 = 87**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 204**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 230**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -472,8 +472,6 @@ Số bé nhất là 105, số lớn nhất là 510.
 
 ### Bài IV.5 — Đếm số thoả điều kiện trong một khoảng
 
-> **BẪY — Hai đầu khoảng chưa chắc thoả điều kiện.**
-
 **Các bước giải**
 
 Số chẵn đầu tiên không nhỏ hơn 73 là 74.
@@ -495,8 +493,6 @@ Số lượng: (238 − 74) : 2 + 1 = 83.
 *Phải chắc trước khi làm bài này:* Dấu hiệu chia hết và phép chia có dư.
 
 ### Bài V.1 — Dãy số lặp lại theo chu kì
-
-> **BẪY — Số dư 0.**
 
 **Các bước giải**
 
@@ -627,7 +623,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | Tìm quy luật dãy số | Dãy cách đều, dãy nhân, dãy hiệu tăng đều | Dãy số kết thúc bằng dấu … | Thử hiệu → thử thương → thử dãy hiệu | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | 19 · 47 · 32 · 43 |
 | IV.1 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | An: 14 quyển, Lan: 8 quyển · Hùng: 19 quyển, Ngọc: 15 quyển · Yến: 51 quyển, Chi: 41 quyển · Minh: 60 quyển, Tuấn: 42 quyển… |
 | IV.2 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 36, hơn kém 27 đơn vị · 29, hơn kém 63 đơn vị · 79, hơn kém 18 đơn vị · 34, hơn kém 9 đơn vị… |
-| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 204 · x = 271 : 5 · x = 55 · x = 48 |
+| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 230 · x = 55 · x = 48 · x = 47 |
 | IV.4 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 14 · 510 · 105 · 8… |
 | IV.5 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 83 · 96 · 23 · 181… |
 | V.1 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia lấy dư để định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư. | 8 · 1 · 8 · 330 |
@@ -659,11 +655,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD4, TD6 | Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất. |
 | IV.1 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | IV.2 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
-| IV.3 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.3 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.4 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
 | IV.5 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | V.1 | TD4, TD6 | Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
-| V.2 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.2 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.3 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 | V.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.5 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |

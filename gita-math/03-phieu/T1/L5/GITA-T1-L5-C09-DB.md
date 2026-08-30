@@ -447,6 +447,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài D.1
 **Đáp số:** a) 10 × 10 = 100 m² · b) 100 m² = 1 000 000 cm² · c) 40 × 40 = 1 600 cm² · d) 1 000 000 : 1 600 = 625 viên · e) 625 × 25 000 = 15 625 000 đồng

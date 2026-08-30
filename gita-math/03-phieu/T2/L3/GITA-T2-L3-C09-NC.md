@@ -243,10 +243,10 @@ e) Số có hai chữ số 69; viết hai chữ số theo thứ tự ngược l�
 
 Tìm x, trình bày từng bước.
 
-a) x : 4 + 20 = 71
-b) x × 5 − 41 = 230
-c) x × 3 + 13 = 178
-d) 74 − x = 26
+a) x : 5 + 41 = 87
+b) (x − 13) × 3 = 126
+c) x × 4 − 26 = 166
+d) x × 3 + 62 = 203
 
 ### Bài 4. (5 điểm) Tìm số có ba chữ số thoả điều kiện
 
@@ -272,7 +272,7 @@ f) Có bao nhiêu số chia hết cho 3 từ 36 đến 310?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy số lặp lại theo chu kì
 
@@ -368,12 +368,14 @@ e) Một quyển vở có 150 trang, đánh số từ 1. Phải viết tất c�
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.2
 **Đáp số:** a) 0 · b) x = 208 · c) 4 · d) x = 189 · e) 0 · f) 6
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.3
 **Đáp số:** a) 3 chục nghìn, 8 nghìn, 7 trăm, 3 chục, 7 đơn vị · b) 38 737 − 38 602 = 135 kW·h · c) 39 000 · d) 43 737 · e) ít hơn 44 kW·h
@@ -386,6 +388,7 @@ e) Một quyển vở có 150 trang, đánh số từ 1. Phải viết tất c�
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.5
 **Đáp số:** a) 45 · b) Chi (18 bông) · c) Tuấn (3 bông) · d) 15 · e) 6
@@ -425,7 +428,7 @@ e) Một quyển vở có 150 trang, đánh số từ 1. Phải viết tất c�
 
 ### Bài IV.1
 **Đáp số:** a) An: 14 quyển, Lan: 8 quyển · b) Hùng: 19 quyển, Ngọc: 15 quyển · c) Yến: 51 quyển, Chi: 41 quyển · d) Minh: 60 quyển, Tuấn: 42 quyển · e) Dũng: 112 quyển, Quân: 74 quyển · f) Trang: 62 quyển, An: 42 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -438,9 +441,9 @@ e) Một quyển vở có 150 trang, đánh số từ 1. Phải viết tất c�
 **Gợi ý 3 tầng:** (1) Viết số cũ thành chục × 10 + đơn vị. — (2) Viết số mới cũng như vậy. — (3) Trừ hai biểu thức xem còn lại gì.
 
 ### Bài IV.3
-**Đáp số:** a) x = 204 · b) x = 271 : 5 · c) x = 55 · d) x = 48
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 230 · b) x = 55 · c) x = 48 · d) x = 47
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -453,14 +456,14 @@ e) Một quyển vở có 150 trang, đánh số từ 1. Phải viết tất c�
 
 ### Bài IV.5
 **Đáp số:** a) 83 · b) 96 · c) 23 · d) 181 · e) 123 · f) 92
-**Hướng giải:** BẪY — Hai đầu khoảng chưa chắc thoả điều kiện. Các số cần đếm lập thành dãy cách đều. Tìm đúng số đầu và số cuối **nằm trong khoảng**, rồi dùng công thức (cuối − đầu) : khoảng cách + 1.
+**Hướng giải:** Các số cần đếm lập thành dãy cách đều. Tìm đúng số đầu và số cuối **nằm trong khoảng**, rồi dùng công thức (cuối − đầu) : khoảng cách + 1.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Hai đầu khoảng **chưa chắc** thoả điều kiện.
 **Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy. Phòng: Viết ba số đầu và ba số cuối của dãy trước khi áp công thức.
 **Gợi ý 3 tầng:** (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
 
 ### Bài V.1
 **Đáp số:** a) 8 · b) 1 · c) 8 · d) 330
-**Hướng giải:** BẪY — Số dư 0. Chia vị trí cần tìm cho độ dài chu kì. Số dư cho biết vị trí trong chu kì; nếu chia hết (dư 0) thì đó là phần tử **cuối** chu kì.
+**Hướng giải:** Chia vị trí cần tìm cho độ dài chu kì. Số dư cho biết vị trí trong chu kì; nếu chia hết (dư 0) thì đó là phần tử **cuối** chu kì.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 **Lỗi thường gặp:** Dư 0 mà lấy phần tử đầu tiên. Phòng: Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn.
 **Gợi ý 3 tầng:** (1) Chu kì dài mấy số hạng? — (2) Chia vị trí cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì.
@@ -468,7 +471,7 @@ e) Một quyển vở có 150 trang, đánh số từ 1. Phải viết tất c�
 ### Bài V.2
 **Đáp số:** a) 371 · b) 334 · c) 137 · d) 100 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 3
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

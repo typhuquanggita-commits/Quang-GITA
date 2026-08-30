@@ -96,8 +96,6 @@ Kết quả: **120**.
 
 ### Bài A.2 — Quãng đường – vận tốc – thời gian
 
-> **BẪY — Đơn vị thời gian.**
-
 **Các bước giải**
 
 Xét ý a: Một người đi 120 km hết 4 giờ. Tính vận tốc.
@@ -121,8 +119,6 @@ Kết quả: **30 km/giờ**.
 *Phải chắc trước khi làm bài này:* Nhân, chia số tự nhiên và bảng đơn vị đo độ dài, thời gian.
 
 ### Bài A.3 — Nhiều hơn – ít hơn, gấp – kém
-
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Xuất hiện mốc thời gian: hiện nay, sau … năm, cách 
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Công việc chung, tỉ lệ bản đ
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Bài toán tổng – hiệu
+
+> **BẪY — Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé..**
 
 **Các bước giải**
 

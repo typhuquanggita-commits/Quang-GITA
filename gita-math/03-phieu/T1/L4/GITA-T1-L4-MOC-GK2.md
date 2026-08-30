@@ -298,7 +298,7 @@ f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
@@ -370,12 +370,14 @@ e) Số có hai chữ số 94 gấp tổng hai chữ số của nó bao nhiêu l
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.3
 **Đáp số:** a) 1 148 cm² · b) 1 024 cm² · c) 152 cm · d) 120 cm · e) 128 cm · f) 529 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.4
 **Đáp số:** a) 4 739 · b) 1 072 · c) 6 593 · d) 2 711 · e) 1 363 · f) 1 802 · g) 9 719 000
@@ -458,14 +460,14 @@ e) Số có hai chữ số 94 gấp tổng hai chữ số của nó bao nhiêu l
 
 ### Bài IV.2
 **Đáp số:** a) 129 phần 98 · b) 19 phần 5 · c) 186 phần 77 · d) 9 phần 4
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài IV.3
 **Đáp số:** a) x = 71 · b) x = 41 · c) x = 85 · d) x = 89 · e) x = 71 · f) x = 16
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
@@ -479,15 +481,15 @@ e) Số có hai chữ số 94 gấp tổng hai chữ số của nó bao nhiêu l
 
 ### Bài IV.5
 **Đáp số:** a) 18 · b) 10 · c) 6 · d) 4 · e) 943 và 304 · f) 1 247
-**Hướng giải:** BẪY — Chữ số 0 ở hàng trăm. Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
+**Hướng giải:** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 **Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
 **Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
 
 ### Bài V.1
 **Đáp số:** a) 47 · b) 38 · c) 56 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 69 · f) 115 · g) 46
-**Hướng giải:** BẪY — Số lượng chẵn thì không có số giữa. Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

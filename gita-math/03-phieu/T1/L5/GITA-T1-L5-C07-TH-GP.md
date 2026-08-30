@@ -450,6 +450,8 @@ Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là *
 
 ### Bài IV.4 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 11 phần 12 × 7 phần 15 + 11 phần 12 × 12 phần 7
@@ -535,8 +537,6 @@ Kết quả: **2 dư 8**.
 *Điểm chốt:* Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 
 ### Bài V.3 — Chữ số tận cùng của tích nhiều thừa số giống nhau
-
-> **BẪY — Số dư 0 ứng với vị trí cuối chu kì.**
 
 **Các bước giải**
 

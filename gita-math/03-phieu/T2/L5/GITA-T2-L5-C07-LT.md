@@ -341,9 +341,10 @@ d) Tính tổng: 12 + 14 + 16 + … + 30
 
 ### Bài A.2
 **Đáp số:** a) 1 359 230 · b) 2 261 103 · c) 26 469 800 · d) 53 915 515 · e) 59 520 · f) 17 904 700 · g) 3 238 920
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.3
 **Đáp số:** a) 9 346 · b) 2 912 · c) 59 120 · d) 66 · e) 26 500 · f) 56 920
@@ -362,6 +363,7 @@ d) Tính tổng: 12 + 14 + 16 + … + 30
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài B.1
 **Đáp số:** a) Tính nhanh dãy phân số, khử liên tiếp và so sánh biểu thức · b) B — Phép tính & Tính nhanh · c) 6 · d) ở mọi bài thuộc phép tính & tính nhanh, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài tính nhanh tổng dãy phân số có quy luật
@@ -460,7 +462,7 @@ d) Tính tổng: 12 + 14 + 16 + … + 30
 
 ### Bài E.1
 **Đáp số:** a) 340 · b) 290 · c) 125 · d) 278
-**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
+**Hướng giải:** BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.. Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 **Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.

@@ -116,8 +116,6 @@ Kết quả: **34, 37, 40**.
 
 ### Bài A.3 — Tìm số hạng thứ n của dãy cách đều
 
-> **BẪY — Nhân với n thay vì (n − 1).**
-
 **Các bước giải**
 
 Xét ý a: Số hạng thứ 6 của dãy là số nào?
@@ -137,8 +135,6 @@ Kết quả: **23**.
 *Điểm chốt:* Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 
 ### Bài A.4 — Điền số còn thiếu trong dãy
-
-> **BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Câu hỏi “chữ số … xuất hiện bao nhiêu lần”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Dãy số hình, đánh số trang và
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Dãy số cách đều
+
+> **BẪY — Lấy (số cuối − số đầu) : 2 rồi trả lời luôn..**
 
 **Các bước giải**
 

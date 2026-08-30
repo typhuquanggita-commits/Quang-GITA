@@ -462,6 +462,8 @@ Kiểm tra nhanh: kết quả phải bé hơn 2 giờ ✓
 
 ### Bài IV.4 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -481,8 +483,6 @@ Kết quả: **23**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.5 — Đổi hết về một loại rồi giải
-
-> **BẪY — Quên đổi ngược lại.**
 
 **Các bước giải**
 
@@ -668,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD2 | Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc. |
 | IV.2 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | IV.3 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
-| IV.4 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.4 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.5 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
 | V.1 | TD2, TD5, TD6 | Càng nhiều người thì càng **ít** ngày — đây là tỉ lệ nghịch, nhân chia ngược với tỉ lệ thuận. |
 | V.2 | TD2, TD5, TD6 | Nối hai quan hệ là phép **nhân**, không phải phép cộng: một lớn bằng k₁ × k₂ nhỏ, không phải k₁ + k₂ nhỏ. |

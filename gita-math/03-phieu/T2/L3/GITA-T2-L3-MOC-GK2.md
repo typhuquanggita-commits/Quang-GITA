@@ -264,10 +264,10 @@ f) 39 × 11
 
 Tìm x, trình bày từng bước.
 
-a) x × 6 + 77 = 185
-b) x × 8 − 8 = 120
-c) 116 − x = 88
-d) x : 3 + 34 = 70
+a) x × 8 + 8 = 128
+b) 116 − x = 88
+c) x : 3 + 34 = 70
+d) x × 2 − 68 = -14
 
 ### Bài 5. (5 điểm) Ghép hình vuông thành hình chữ nhật
 
@@ -280,7 +280,7 @@ d) Ghép 5 hình vuông cạnh 15 cm thành một hàng ngang. Tính chu vi và 
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Thêm, bớt chữ số vào một số
 
@@ -355,12 +355,14 @@ f) Một quyển vở có 80 trang, đánh số từ 1. Phải viết tất cả
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) áp đúng đỉnh góc và một cạnh của góc vào ê ke · b) 4 góc vuông · c) 1 góc vuông · d) 14 cm · e) AM = MB · f) không chắc, còn phải có AM = MB · g) không, vì AM khác nửa AB
 **Hướng giải:** Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Nằm giữa **chưa đủ** để là trung điểm.
 **Lỗi thường gặp:** Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. Phòng: Đo cả hai đoạn AM và MB rồi mới kết luận.
+**Chú ý:** Nằm giữa nhưng không chia đôi.
 
 ### Bài I.5
 **Đáp số:** a) 48 · b) 50 · c) 116 · d) 20
@@ -373,6 +375,7 @@ f) Một quyển vở có 80 trang, đánh số từ 1. Phải viết tất cả
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài II.2
 **Đáp số:** a) 14 · b) 16 · c) 54 · d) Khánh (16) · e) Yến (8) · f) 8 · g) 6 hình
@@ -385,12 +388,14 @@ f) Một quyển vở có 80 trang, đánh số từ 1. Phải viết tất cả
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.4
 **Đáp số:** a) 5 · b) x = 43 · c) 0 · d) x = 278 · e) 0 · f) x = 221 · g) x = 151
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.5
 **Đáp số:** a) Nam: 29 viên, Chi: 15 viên · b) Sơn: 61 viên, Nam: 35 viên · c) Nam: 51 viên, Lan: 37 viên · d) Yến: 14 viên, Đức: 8 viên · e) Chi: 62 viên, Thảo: 58 viên
@@ -430,7 +435,7 @@ f) Một quyển vở có 80 trang, đánh số từ 1. Phải viết tất cả
 
 ### Bài IV.1
 **Đáp số:** a) Yến: 23 quyển, Vy: 17 quyển · b) Nam: 74 quyển, Dũng: 58 quyển · c) Yến: 94 quyển, Hùng: 86 quyển · d) Trang: 94 quyển, Đức: 64 quyển · e) Quân: 75 quyển, Đức: 65 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -450,9 +455,9 @@ f) Một quyển vở có 80 trang, đánh số từ 1. Phải viết tất cả
 **Gợi ý 3 tầng:** (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
 
 ### Bài IV.4
-**Đáp số:** a) x = 18 · b) x = 16 · c) x = 28 · d) x = 108
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 15 · b) x = 28 · c) x = 108 · d) x = 27
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -465,14 +470,14 @@ f) Một quyển vở có 80 trang, đánh số từ 1. Phải viết tất cả
 
 ### Bài V.1
 **Đáp số:** a) 697 · b) 628 · c) 769 · d) 700 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 6
-**Hướng giải:** BẪY — Bên trái hay bên phải. Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 
 ### Bài V.2
 **Đáp số:** a) 6 cái · b) 15 cái · c) 21 cái · d) 10 cái · e) 45 cái
-**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi bạn bắt tay với (n − 1) bạn còn lại nên có n × (n − 1) lượt. Nhưng mỗi cái bắt tay có hai người tham gia nên bị đếm **hai lần**; vì vậy phải chia cho 2.
+**Hướng giải:** Mỗi bạn bắt tay với (n − 1) bạn còn lại nên có n × (n − 1) lượt. Nhưng mỗi cái bắt tay có hai người tham gia nên bị đếm **hai lần**; vì vậy phải chia cho 2.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**.
 **Lỗi thường gặp:** Quên chia 2 nên đáp số gấp đôi. Phòng: Thử với 3 bạn: phải ra 3 cái bắt tay, không phải 6.
 **Gợi ý 3 tầng:** (1) Mỗi bạn bắt tay với mấy bạn? — (2) Nhân với số bạn thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia cho 2.

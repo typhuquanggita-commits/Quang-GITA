@@ -467,7 +467,7 @@ e) Số 8 145 có chia hết cho 3 không? Vì sao?
 
 ### Bài E.1
 **Đáp số:** a) 1 chục nghìn, 3 nghìn, 6 trăm, 8 chục, 0 đơn vị · b) 13 680 − 13 457 = 223 kW·h · c) 14 000 · d) 19 980 · e) ít hơn 115 kW·h
-**Hướng giải:** Chỉ số công tơ là một số cộng dồn, nên số điện dùng trong tháng là **hiệu** hai chỉ số. Các ý còn lại là cấu tạo số, làm tròn và so sánh trên chính hai con số ấy.
+**Hướng giải:** BẪY — Lấy thẳng chỉ số cuối làm số điện đã dùng.. Chỉ số công tơ là một số cộng dồn, nên số điện dùng trong tháng là **hiệu** hai chỉ số. Các ý còn lại là cấu tạo số, làm tròn và so sánh trên chính hai con số ấy.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Chỉ số công tơ là số cộng dồn, không phải lượng dùng trong tháng.
 **Lỗi thường gặp:** Lấy thẳng chỉ số cuối làm số điện đã dùng. Phòng: Hỏi lại: con số này là 'đã dùng bao nhiêu' hay 'đếm tới đâu rồi'?
 **Gợi ý 3 tầng:** (1) Hai chỉ số đầu và cuối, cái nào lớn hơn? Vì sao? — (2) Muốn biết dùng bao nhiêu trong tháng thì làm phép gì với hai số ấy? — (3) Tách số theo hàng thì đọc từ hàng lớn nhất về hàng đơn vị.
@@ -488,9 +488,10 @@ e) Số 8 145 có chia hết cho 3 không? Vì sao?
 
 ### Bài E.4
 **Đáp số:** a) 4 776 dư 5 · b) 2 472 dư 12 · c) 3 022 dư 12 · d) 6 740 dư 1 · e) 3 016 dư 3
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 **Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 
 ### Bài E.5

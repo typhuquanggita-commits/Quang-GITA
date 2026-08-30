@@ -288,7 +288,7 @@ f) Vì sao con số vừa tìm khác với 50%?
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -372,6 +372,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài I.3
 **Đáp số:** a) 173 kg · b) 1 074 kg · c) 147 kg · d) 192 kg · e) 1 182 kg
@@ -453,7 +454,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) 61 phần 40 · b) 13 phần 5 · c) 75 phần 143 · d) 16 phần 5 · e) 11 phần 21
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -481,7 +482,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) 60 · b) 60 · c) 50% · d) 30 · e) 25% · f) vì 50% tính trên số nam, còn câu này tính trên cả lớp
-**Hướng giải:** BẪY — Mốc 100% khác nhau ở mỗi bước. Mỗi lần gặp một tỉ lệ phần trăm mới, phải hỏi: phần trăm này tính **trên cái gì**. Trong bài này, tỉ lệ nam giỏi tính trên số nam, không phải trên sĩ số cả lớp.
+**Hướng giải:** Mỗi lần gặp một tỉ lệ phần trăm mới, phải hỏi: phần trăm này tính **trên cái gì**. Trong bài này, tỉ lệ nam giỏi tính trên số nam, không phải trên sĩ số cả lớp.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Cùng một con số phần trăm nhưng **mốc khác nhau** thì kết quả khác nhau.
 **Lỗi thường gặp:** Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. Phòng: Viết trước mỗi phép tính: “100% ở đây là …”.
 **Gợi ý 3 tầng:** (1) Đại lượng nào ứng với 100% ở ý này? — (2) Tỉ lệ này tính trên cả lớp hay chỉ trên số nam? — (3) Muốn quy về cả lớp thì chia cho sĩ số rồi nhân 100.

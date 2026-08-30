@@ -278,7 +278,7 @@ f) Tìm số bé nhất không quá 300 chia cho 4 dư 2 và chia cho 6 dư 4.
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -353,7 +353,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài I.1
 **Đáp số:** a) 55 · b) 1 875 · c) 3 100 · d) 620 · e) 735 · f) 1 700
-**Hướng giải:** BẪY — Quên chia 2. Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
+**Hướng giải:** Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp.
 **Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
 
@@ -443,22 +443,22 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) 26 · b) 83 · c) 1 090 · d) 54,5 · e) 109 · f) 109
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.2
 **Đáp số:** a) 18 lít · b) 60 lít · c) 72 lít · d) 108 lít · e) 36 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.3
 **Đáp số:** a) 131 · b) 782 · c) 26 · d) 131 · e) 51 352 · f) 51 352
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -486,7 +486,7 @@ f) Cột 6 — Kết quả?
 ### Bài V.2
 **Đáp số:** a) Tổng và trung bình cộng của dãy cách đều · b) Dãy cách đều, trung bình cộng · c) Đề cho số số hạng, khoảng cách và một đầu của dãy · d) Tìm hai đầu dãy → tổng → trung bình cộng · e) Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. · f) 51 · 127 · 1 780 · 89…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 

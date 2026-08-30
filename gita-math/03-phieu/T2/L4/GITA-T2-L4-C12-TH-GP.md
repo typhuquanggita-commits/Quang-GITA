@@ -388,6 +388,8 @@ Kết quả: **10**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -454,6 +456,8 @@ Kết quả: **145 cm²**.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 13 thùng nước, mỗi thùng 25 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -474,8 +478,6 @@ Kết quả: **250 lít**.
 
 ### Bài IV.5 — Chuyển bớt để hai phần bằng nhau
 
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
-
 **Các bước giải**
 
 Xét ý a: Tổ Hai có 81 quyển sách, nhóm Hoa Phượng có 27 quyển. Hỏi phải chuyển bao nhiêu quyển từ tổ Hai sang nhóm Hoa Phượng để số sách hai tổ bằng nhau?
@@ -495,8 +497,6 @@ Kết quả: **27 quyển**.
 *Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 
 ### Bài V.1 — Tổng nhiều số có ràng buộc — dạng đề thi
-
-> **BẪY — Số lượng chẵn thì không có số giữa.**
 
 **Các bước giải**
 
@@ -663,12 +663,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD2 | Phải tính **tổng số phần** trước khi chia. |
 | III.4 | TD2, TD4 | 1 m² = 10 000 cm², không phải 100 cm² — đây là chỗ sai nhiều nhất. |
 | III.5 | TD4, TD3 | Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
 | IV.3 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
 | IV.4 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.5 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
 | V.3 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |
 | V.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |

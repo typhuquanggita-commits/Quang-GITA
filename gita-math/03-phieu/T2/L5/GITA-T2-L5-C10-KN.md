@@ -337,9 +337,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 32 · b) 17 · c) 30 · d) 160
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.3
 **Đáp số:** a) 144 · b) 49 · c) 175 · d) 123 · e) 80
@@ -349,9 +350,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.4
 **Đáp số:** a) 75 km · b) 2 giờ · c) 40 km/giờ · d) 100 km · e) 2 giờ · f) 50 km/giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.5
 **Đáp số:** a) 350 · b) 8 · c) 424 · d) 94
@@ -456,14 +458,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Chuyển động nâng cao: dòng nước, kim đồng hồ, trộn – pha” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Giả thiết tạm.” · b) Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác · c) Phương pháp giả thiết tạm · d) Có 10 con gà và chó, 28 chân. Có mấy con chó? → 4 con chó · e) Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. · f) Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm.
-**Hướng giải:** Giả sử tất cả đều là gà thì số chân là số con nhân 2. Số chân thiếu so với thực tế chính là do mỗi con chó bị tính thiếu 2 chân. Lấy số chân thiếu chia cho 2 được số chó, rồi suy ra số gà.
+**Hướng giải:** BẪY — Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài.. Giả sử tất cả đều là gà thì số chân là số con nhân 2. Số chân thiếu so với thực tế chính là do mỗi con chó bị tính thiếu 2 chân. Lấy số chân thiếu chia cho 2 được số chó, rồi suy ra số gà.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia.
 **Lỗi thường gặp:** Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp không.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

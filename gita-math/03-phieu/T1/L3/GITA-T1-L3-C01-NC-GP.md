@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 76 quyển · b) 1 phần 5 · c) 48 · d) 12 quyển · e) 1 phần 3 · f) 84 · g) 20
 - **Bài IV.2** — a) 132 · b) 128 · c) 228 · d) 144 · e) 32 · f) 42
 - **Bài IV.3** — a) 159 · b) 432 · c) 990 · d) 116 · e) 869 · f) 639
-- **Bài IV.4** — a) x = 54 · b) x = 135 · c) x = 24 · d) x = 76 : 9 · e) x = 29
+- **Bài IV.4** — a) x = 49 · b) x = 54 · c) x = 27 · d) x = 192 · e) x = 7
 - **Bài IV.5** — a) Tuấn: 23 quyển, Quân: 17 quyển · b) Chi: 64 quyển, Vy: 56 quyển · c) An: 99 quyển, Hà: 75 quyển · d) Ngọc: 77 quyển, Hà: 67 quyển · e) Hùng: 36 quyển, Đức: 30 quyển · f) An: 102 quyển, Nam: 90 quyển
 
 **Phần V**
@@ -458,25 +458,25 @@ Kết quả: **159**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 8 + 19 = 451
+Xét **(x − 48) × 3 = 3**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 54**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 49**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
 *Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
 ### Bài IV.5 — Tìm hai số khi biết tổng và hiệu
+
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
 
 **Các bước giải**
 
@@ -497,8 +497,6 @@ Kết quả: **Tuấn: 23 quyển, Quân: 17 quyển**.
 *Điểm chốt:* Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 
 ### Bài V.1 — Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
@@ -521,8 +519,6 @@ Hiệu lúc đầu: 113 − 77 = 36 (quyển) — đúng bằng hai lần số v
 *Phải chắc trước khi làm bài này:* Bài toán tổng – hiệu cơ bản và thói quen thử lại.
 
 ### Bài V.2 — Đại lượng bất biến: tính chẵn lẻ của tổng
-
-> **BẪY — Phải chứng minh, không được thử vài trường hợp.**
 
 **Các bước giải**
 
@@ -640,7 +636,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 76 quyển · 1 phần 5 · 48 · 12 quyển… |
 | IV.2 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 132 · 128 · 228 · 144… |
 | IV.3 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 159 · 432 · 990 · 116… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 54 · x = 135 · x = 24 · x = 76 : 9… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 49 · x = 54 · x = 27 · x = 192… |
 | IV.5 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | Tuấn: 23 quyển, Quân: 17 quyển · Chi: 64 quyển, Vy: 56 quyển · An: 99 quyển, Hà: 75 quyển · Ngọc: 77 quyển, Hà: 67 quyển… |
 | V.1 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | Bất biến tổng; biến thiên hiệu gấp đôi | “Nếu … cho … thì hai bên bằng nhau” | Dùng trạng thái sau khi chuyển làm mốc rồi đi ngược | Số lúc đầu của bên cho = nửa tổng + số đã chuyển. | 113 quyển · 95 quyển · 77 quyển · 36 quyển… |
 | V.2 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 153 · không thay đổi · 153 · giảm đi 2 lần số bé — luôn là một số chẵn… |
@@ -672,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | IV.2 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.3 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | V.1 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 | V.2 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |

@@ -19,6 +19,7 @@ cap_nhat: "2026-08-30"
 Lớp 1 · 6 – 7 tuổi · Mã: **GITA-L1-L113-B4**  
 Mạch: **Số và phép tính** *(Cambridge: Number)*  
 Thời lượng: **35 phút** · Thang điểm: **20**  
+Bậc: **Tự làm** — Trẻ tự làm, người lớn chỉ hỏi chứ không làm hộ.  
 Bản dành cho: **trẻ làm**
 
 ---

@@ -265,7 +265,7 @@ d) Một gia đình gồm 2 người lớn và 2 trẻ em đi tham quan cách nh
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
 
@@ -333,6 +333,7 @@ f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.2
 **Đáp số:** a) 210 · b) 99 · c) 117 · d) 918 · e) 300 · f) 812
@@ -345,6 +346,7 @@ f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.4
 **Đáp số:** a) 126 · b) 113 · c) 28 · d) 115 · e) 36
@@ -434,7 +436,7 @@ f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 
 ### Bài IV.3
 **Đáp số:** a) 280 lít · b) 100 lít · c) 72 lít · d) 340 lít · e) 75 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -448,7 +450,7 @@ f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 
 ### Bài IV.5
 **Đáp số:** a) 400 000 đồng · b) 750 000 đồng · c) 1 330 000 đồng · d) 210 000 đồng
-**Hướng giải:** BẪY — Dùng cả dữ kiện thừa. Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
+**Hướng giải:** Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài.
 **Lỗi thường gặp:** Đem quãng đường vào phép tính tiền vé. Phòng: Gạch chân câu hỏi cuối trước khi nhìn các con số.
 **Gợi ý 3 tầng:** (1) Đề hỏi cái gì? Gạch chân câu hỏi. — (2) Trong các con số đề cho, con số nào không liên quan tới câu hỏi? — (3) Tính giá vé trẻ em trước rồi mới cộng hai loại vé.
@@ -470,7 +472,7 @@ f) Trong các số từ 1 đến 49 có bao nhiêu số chính phương?
 ### Bài V.3
 **Đáp số:** a) 71 · b) 62 · c) 80 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 32 · f) 40 · g) 8
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

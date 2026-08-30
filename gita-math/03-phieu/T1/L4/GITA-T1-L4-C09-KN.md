@@ -353,9 +353,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 9 374 · b) 88 672 · c) 9 277 · d) 101 285 · e) 366 030 · f) 209 328 · g) 636 622 · h) 430 144
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.4
 **Đáp số:** a) 3 117 115 và 3 117 117 · b) 7 000 000 · c) > · d) 7 772 800 · e) 1 024 000
@@ -365,9 +366,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.5
 **Đáp số:** a) > · b) > · c) < · d) > · e) > · f) > · g) <
-**Hướng giải:** BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn. Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
+**Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -466,14 +468,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Phân số: khái niệm đến bốn phép tính” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đọc bảng số liệu thống kê.” · b) Một bảng hai chiều: hàng là nhóm, cột là loại số liệu · c) Đọc bảng; cộng trừ trong phạm vi 100 · d) Tổ 1 có 5 nam 4 nữ, tổ 2 có 6 nam 6 nữ. Hai tổ có tất cả bao nhiêu bạn? → 21 bạn · e) Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam. · f) Tổng theo hàng và tổng theo cột luôn bằng nhau, dùng để soát lại.
-**Hướng giải:** Cộng theo hàng để biết từng tổ, cộng theo cột để biết cả lớp. Hai cách phải cho cùng một tổng — đó là cách tự kiểm tra không cần ai chấm.
+**Hướng giải:** BẪY — Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam.. Cộng theo hàng để biết từng tổ, cộng theo cột để biết cả lớp. Hai cách phải cho cùng một tổng — đó là cách tự kiểm tra không cần ai chấm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Cộng theo hàng và cộng theo cột phải ra cùng một tổng.
 **Lỗi thường gặp:** Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam. Phòng: Lấy ngón tay dò theo hàng, đọc tên cột trước khi lấy số.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

@@ -476,8 +476,6 @@ Kết quả: **Nhân số tự nhiên với phân số**.
 
 ### Bài E.1 — Bốn phép tính với số thập phân
 
-> **BẪY — Vị trí dấu phẩy ở tích.**
-
 **Các bước giải**
 
 Xét ý a: 593,91 : 9

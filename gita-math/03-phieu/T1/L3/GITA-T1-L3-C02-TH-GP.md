@@ -474,6 +474,8 @@ Số lượng: (144 − 36) : 2 + 1 = 55.
 
 ### Bài IV.5 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 12 can dầu, mỗi can 5 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
@@ -497,8 +499,6 @@ Kết quả: **60 chai**.
 *Phải chắc trước khi làm bài này:* Nhân số có nhiều chữ số và bảng đơn vị đo.
 
 ### Bài V.1 — Diện tích thay đổi khi kích thước thay đổi
-
-> **BẪY — Diện tích tăng theo chiều còn lại.**
 
 **Các bước giải**
 
@@ -668,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.3 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | V.4 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

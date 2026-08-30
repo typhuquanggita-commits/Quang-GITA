@@ -408,6 +408,8 @@ Hiệu của phân số lớn nhất và bé nhất: 5 phần 6 − 7 phần 18 
 
 ### Bài IV.2 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -493,8 +495,6 @@ Kết quả: **2 giờ**.
 *Điểm chốt:* Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc.
 
 ### Bài V.1 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 
@@ -654,7 +654,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
 | III.5 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
 | IV.1 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
-| IV.2 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.2 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.3 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
 | IV.4 | TD2, TD4, TD5 | Đề thật luôn có phần không sơn. Tính xong diện tích xung quanh phải hỏi ngay: có chỗ nào không sơn không? |
 | IV.5 | TD3, TD2 | Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc. |

@@ -360,21 +360,24 @@ e) 97 × 125 × 8
 
 ### Bài A.3
 **Đáp số:** a) 114 · b) 276 · c) 198 · d) 693 · e) 108 · f) 40 · g) 99 · h) 738
-**Hướng giải:** BẪY — Thiếu ngoặc mà vẫn cộng trước. Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
+**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài A.4
 **Đáp số:** a) 62 742 · b) 32 692 · c) 99 683 · d) 70 227 · e) 12 769 856 · f) 32 854 900
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.5
 **Đáp số:** a) 495 154 · b) 302 087 · c) 200 319 852 · d) 416 886 · e) 73 592 470 · f) 822 171 · g) 3 759 · h) 55 670
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài B.1
 **Đáp số:** a) Bốn phép tính, tính nhanh và tìm x với phân số, số thập phân · b) B — Phép tính & Tính nhanh · c) 7 · d) ở mọi bài thuộc phép tính & tính nhanh, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài ôn tập bốn phép tính với phân số
@@ -439,7 +442,7 @@ e) 97 × 125 × 8
 ### Bài D.1
 **Đáp số:** a) Nhân một số với một tổng, tổng dãy cách đều · b) Tổng các tích có thừa số chung · c) Dãy cộng gồm nhiều tích cùng một thừa số · d) Đặt thừa số chung → tính tổng trong ngoặc bằng công thức · e) Nhân từng tích rồi cộng dồn, rất dài và dễ sai. · f) 275
 **Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
@@ -473,16 +476,17 @@ e) 97 × 125 × 8
 
 ### Bài E.1
 **Đáp số:** a) x = 38 · b) x = 199 · c) x = 61 · d) x = 126 · e) x = 91 · f) x = 172
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, sau đó mới tìm x bên trong cụm. Làm ngược lại thứ tự thực hiện phép tính.
+**Hướng giải:** BẪY — Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, sau đó mới tìm x bên trong cụm. Làm ngược lại thứ tự thực hiện phép tính.
 **Nhãn tư duy:** TD3. Điểm chốt: Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x lại, coi là một số. — (2) Cụm đó đóng vai trò gì trong phép tính ngoài cùng? — (3) Tìm giá trị của cụm rồi mới tìm x.
 
 ### Bài E.2
 **Đáp số:** a) 29,69 · b) 4,06 · c) 66,64 · d) 148,32 · e) 105,23 · f) 196,1 · g) 56
-**Hướng giải:** BẪY — Vị trí dấu phẩy ở tích. Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
+**Hướng giải:** BẪY — Nhân xong đặt dấu phẩy thẳng cột như phép cộng.. Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 **Gợi ý 3 tầng:** (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
 
 ### Bài E.3

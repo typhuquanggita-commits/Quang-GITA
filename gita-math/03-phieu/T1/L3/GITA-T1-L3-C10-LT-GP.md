@@ -476,8 +476,6 @@ Kết quả: **Định nghĩa trung điểm; cách dùng ê ke**.
 
 ### Bài E.1 — Chu vi và diện tích hình chữ nhật, hình vuông
 
-> **BẪY — Đơn vị diện tích.**
-
 **Các bước giải**
 
 Xét ý a: Hình chữ nhật dài 33 cm, rộng 16 cm. Tính chu vi.
@@ -644,7 +642,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | TD1, TD3 | Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm. |
 | D.2 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
 | D.3 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
-| D.4 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| D.4 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | D.5 | TD1, TD2 | Nằm giữa **chưa đủ** để là trung điểm. |
 | E.1 | TD1, TD3 | Chu vi ghi **cm**, diện tích ghi **cm²**. |
 | E.2 | TD1, TD2 | Đọc **đúng cột** — mỗi số gắn với đúng một tên. |

@@ -34,12 +34,32 @@ sys.path.insert(0, str(GOC / "04-cong-cu"))
 
 from data.khoi_mam import (CHU_DE, DOI_CHIEU_CAM, KHOI, LUAT_HUNG_THU,  # noqa: E402
                            MACH, PHAN_BUOI, TWM)
+from data.muc_do import MUC_MAM, THU_TU_MAM                            # noqa: E402
 from sinh.mau_mam import KHO_MAM, VAI_THEO_O, vai_cua                   # noqa: E402
 import sinh.mau_mam as _mm                                              # noqa: E402,F401
 
 NGAY = date.today().isoformat()
 RA = GOC / "12-khoi-mam"
 CHU = "abcdefghij"
+
+
+def bac_cua(khoi: str, buoi: int, tong_buoi: int) -> str:
+    """Bậc độ khó của một buổi, suy từ vị trí buổi ấy trong chủ đề.
+
+    Khối Mầm không dùng thang M1–M5 của lớp 3–5 — xem `data/muc_do.py`. Ba bậc
+    ở đây đo **mức trẻ cần người lớn giúp**, và chúng bám đúng cách một chủ đề
+    được dạy: hai buổi đầu người lớn làm mẫu, buổi giữa trẻ tự làm, buổi cuối
+    thêm một điều kiện lạ để trẻ phải nghĩ.
+
+    Khối mẫu giáo chỉ có bốn buổi và cố ý **dừng ở bậc Tự làm**: thêm một thử
+    thách cho trẻ năm tuổi ở buổi cuối là kết buổi bằng sự hụt hẫng, trái luật
+    thứ ba trong bốn luật giữ hứng thú.
+    """
+    if khoi == "MG":
+        return "B1" if buoi <= 2 else "B2"
+    if buoi <= 2:
+        return "B1"
+    return "B2" if buoi < tong_buoi else "B3"
 
 
 def hat(ma: str) -> int:
@@ -60,12 +80,15 @@ def dau(khoi: str, cd: tuple, buoi: int, ma: str, cho_ai: str) -> list[str]:
     ten = f"{cd[1]} — buổi {buoi}/{K['buoi_moi_chu_de']}"
     thang = (f" · Thang điểm: **{K['thang']}**" if K["thang"]
              else " · **Không chấm điểm**")
+    bac = bac_cua(khoi, buoi, K["buoi_moi_chu_de"])
+    B = MUC_MAM[bac]
     return [
         "", f"# {ten}", "",
         "**HỌC VIỆN PHÁT TRIỂN TÀI NĂNG TOÀN CẦU — GITA** · gita.edu.vn  ",
         f"{K['ten']} · {K['tuoi']} · Mã: **{ma}**  ",
         f"Mạch: **{MACH[cd[2]]['ten']}** *(Cambridge: {MACH[cd[2]]['cam']})*  ",
         f"Thời lượng: **{K['phut']} phút**{thang}  ",
+        f"Bậc: **{B['ten']}** — {B['la_gi']}  ",
         f"Bản dành cho: **{cho_ai}**", "", "---", "",
     ]
 
@@ -269,6 +292,9 @@ def main() -> int:
                     "thoi_luong": K["phut"], "thang_diem": K["thang"],
                     "yeu_cau": cd[3], "twm": list(cd[4]),
                     "chuan": K["chuan"], "ma_mau": ma_mau,
+                    "bac": bac_cua(khoi, buoi, K["buoi_moi_chu_de"]),
+                    "bac_ten": MUC_MAM[bac_cua(
+                        khoi, buoi, K["buoi_moi_chu_de"])]["ten"],
                 })
 
     (RA / "index-khoi-mam.json").write_text(

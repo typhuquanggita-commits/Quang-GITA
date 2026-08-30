@@ -272,16 +272,16 @@ g) 99 × 11
 
 Tìm x, trình bày từng bước.
 
-a) x : 4 + 35 = 39
-b) x × 4 + 90 = 146
-c) x × 2 − 6 = 66
-d) 51 − x = 23
-e) 63 − x = 21
-f) x × 8 − 5 = 288
+a) (x − 47) × 6 = 54
+b) x : 5 + 8 = 20
+c) x × 5 + 24 = 229
+d) 53 − x = 8
+e) x × 9 − 41 = -14
+f) (x + 33) × 8 = 360
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm chữ số dùng để đánh số trang
 
@@ -346,6 +346,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.2
 **Đáp số:** a) 915 · b) 1 370 · c) 71 · d) 65 · e) 1 652 · f) 750 · g) 859 · h) 512
@@ -364,6 +365,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.5
 **Đáp số:** a) ô (Nam; Tiếng Việt) · b) toàn bộ hàng Nam và toàn bộ cột Tiếng Việt · c) ô (Trang; Toán) · d) Âm nhạc · e) Toán · f) phương pháp lập bảng và loại trừ
@@ -400,6 +402,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài III.1
 **Đáp số:** a) 0 · b) 338 · c) 117 · d) 0
@@ -460,15 +463,15 @@ d) 1 + 2 + 3 + … + 50
 **Gợi ý 3 tầng:** (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
 
 ### Bài IV.5
-**Đáp số:** a) x = 16 · b) x = 14 · c) x = 36 · d) x = 28 · e) x = 42 · f) x = 293 : 8
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 56 · b) x = 60 · c) x = 41 · d) x = 45 · e) x = 3 · f) x = 12
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
 ### Bài V.1
 **Đáp số:** a) 252 · b) 31 · c) 151 · d) 51
-**Hướng giải:** BẪY — Nhóm cuối không đầy đủ. Từ trang 1 đến trang 9 có 9 trang, mỗi trang 1 chữ số. Từ trang 10 đến trang 99 có 90 trang, mỗi trang 2 chữ số. Từ trang 100 trở đi mỗi trang 3 chữ số. Nhân rồi cộng; nhóm cuối thường không đầy đủ.
+**Hướng giải:** Từ trang 1 đến trang 9 có 9 trang, mỗi trang 1 chữ số. Từ trang 10 đến trang 99 có 90 trang, mỗi trang 2 chữ số. Từ trang 100 trở đi mỗi trang 3 chữ số. Nhân rồi cộng; nhóm cuối thường không đầy đủ.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại.
 **Lỗi thường gặp:** Lấy số trang nhân với 2 hoặc 3 cho toàn bộ. Phòng: Kẻ bảng: khoảng trang – số trang – số chữ số.
 **Gợi ý 3 tầng:** (1) Từ 1 đến 9 dùng mấy chữ số? — (2) Từ 10 đến 99 có bao nhiêu trang? — (3) Nhóm cuối có bao nhiêu trang?
@@ -490,7 +493,7 @@ d) 1 + 2 + 3 + … + 50
 ### Bài V.4
 **Đáp số:** a) 46 · b) 69 · c) 23 · d) 30 · e) 16 · f) 23
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

@@ -55,7 +55,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần IV**
 
 - **Bài IV.1** — a) 15 · b) 18 · c) 6 · d) 13 · e) 13 · f) 6
-- **Bài IV.2** — a) x = 40 · b) x = 250 · c) x = 13 · d) x = 345 : 6
+- **Bài IV.2** — a) x = 50 · b) x = 13 · c) x = 55 · d) x = 11
 - **Bài IV.3** — a) 57, hơn kém 18 đơn vị · b) 64, hơn kém 18 đơn vị · c) 32, hơn kém 9 đơn vị · d) 61, hơn kém 45 đơn vị · e) 37, hơn kém 36 đơn vị · f) 23, hơn kém 9 đơn vị
 - **Bài IV.4** — a) 11 chiếc · b) 16 chiếc · c) 13 chiếc · d) 3 chiếc · e) 4 chiếc
 - **Bài IV.5** — a) 119 · b) 154 · c) 270 · d) 990 · e) 396 · f) 144 · g) 517
@@ -414,19 +414,17 @@ Kết quả: **15**.
 
 ### Bài IV.2 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 7 + 19 = 299
+Xét **x × 5 + 6 = 256**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 40**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 50**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -624,7 +622,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | Bài toán giải bằng hai phép tính | Quan hệ gấp – kém, phép cộng | Đề cho một đại lượng và quan hệ, hỏi tổng | Tìm đại lượng còn thiếu rồi cộng | Cả hai tổ bằng (1 + k) lần tổ thứ nhất — nhẩm được ngay. | 216 cây · 177 cây · 270 cây · 175 cây… |
 | III.5 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn dấu hiệu theo số chia rồi kiểm tra | Số chia hết cho 9 thì chắc chắn chia hết cho 3; điều ngược lại không đúng. | không (tận cùng là 4) · không (tổng các chữ số bằng 17) · không (tổng các chữ số bằng 16) · có (tận cùng là 4)… |
 | IV.1 | Bài toán trồng cây | Quan hệ số cây – số khoảng | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | 15 · 18 · 6 · 13… |
-| IV.2 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 40 · x = 250 · x = 13 · x = 345 : 6 |
+| IV.2 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 50 · x = 13 · x = 55 · x = 11 |
 | IV.3 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 57, hơn kém 18 đơn vị · 64, hơn kém 18 đơn vị · 32, hơn kém 9 đơn vị · 61, hơn kém 45 đơn vị… |
 | IV.4 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 11 chiếc · 16 chiếc · 13 chiếc · 3 chiếc… |
 | IV.5 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 119 · 154 · 270 · 990… |
@@ -656,7 +654,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD2, TD3 | Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai. |
 | III.5 | TD1, TD5 | 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**. |
 | IV.1 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
-| IV.2 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.2 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.3 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.4 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | IV.5 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |

@@ -96,8 +96,6 @@ Kết quả: **số lớn 1 050, số bé 708**.
 
 ### Bài A.2 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: An có 160 quyển vở, số vở của Đức kém 5 lần số vở của An. Đức có bao nhiêu quyển vở?
@@ -137,8 +135,6 @@ Kết quả: **144**.
 *Điểm chốt:* Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 
 ### Bài A.4 — Quãng đường – vận tốc – thời gian
-
-> **BẪY — Đơn vị thời gian.**
 
 **Các bước giải**
 
@@ -478,6 +474,8 @@ Kết quả: **Một đề dài gồm nhiều ý nối tiếp nhau**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -497,6 +495,8 @@ Kết quả: **giới thiệu chương “Chuyển động nâng cao: dòng nư�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Giả thiết tạm
+
+> **BẪY — Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài..**
 
 **Các bước giải**
 

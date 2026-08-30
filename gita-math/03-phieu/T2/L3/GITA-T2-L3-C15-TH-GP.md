@@ -436,6 +436,8 @@ Kết quả: **81, hơn kém 63 đơn vị**.
 
 ### Bài IV.3 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 25 × 12 = 300 (kg).
@@ -495,8 +497,6 @@ Kết quả: **375 g**.
 *Điểm chốt:* Trừ **số gói** trước khi nhân thì ít phép tính hơn.
 
 ### Bài V.1 — Thêm, bớt chữ số vào một số
-
-> **BẪY — Bên trái hay bên phải.**
 
 **Các bước giải**
 
@@ -664,7 +664,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
 | IV.4 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.5 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
-| V.1 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.1 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.2 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
 | V.3 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
 | V.4 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |

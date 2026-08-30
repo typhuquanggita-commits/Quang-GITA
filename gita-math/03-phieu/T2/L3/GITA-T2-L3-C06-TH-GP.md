@@ -668,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | V.1 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 | V.2 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
-| V.3 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.3 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.5 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
 

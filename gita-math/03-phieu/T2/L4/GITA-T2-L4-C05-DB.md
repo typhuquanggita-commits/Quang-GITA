@@ -420,6 +420,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài C.2
 **Đáp số:** a) xe ô tô: 8 chiếc, xe đạp: 23 chiếc · b) xe đạp: 29 chiếc, xe ô tô: 14 chiếc · c) xe ba bánh: 14 chiếc, xe đạp: 30 chiếc · d) xe ô tô: 21 chiếc, xe ba bánh: 14 chiếc

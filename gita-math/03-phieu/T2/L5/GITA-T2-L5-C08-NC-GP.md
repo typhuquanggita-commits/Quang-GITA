@@ -396,6 +396,8 @@ Kết quả: **18**.
 
 ### Bài IV.2 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -415,6 +417,8 @@ Kết quả: **233**.
 *Điểm chốt:* Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 
 ### Bài IV.3 — Tổng, trung bình cộng của dãy cách đều
+
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
 
 **Các bước giải**
 
@@ -436,6 +440,8 @@ Kết quả: **109**.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 18 thùng sữa, mỗi thùng 20 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
@@ -456,8 +462,6 @@ Kết quả: **260 lít**.
 
 ### Bài IV.5 — Bài toán trồng cây — bốn trường hợp
 
-> **BẪY — Bốn trường hợp trồng cây khác nhau.**
-
 **Các bước giải**
 
 Xét ý a: Trồng cây trên đoạn đường dài 200 m, hai cây liền nhau cách nhau 4 m, chỉ trồng ở một đầu đường. Cần bao nhiêu cây?
@@ -477,8 +481,6 @@ Kết quả: **50**.
 *Điểm chốt:* Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 
 ### Bài V.1 — Dãy có hiệu tăng đều
-
-> **BẪY — Cộng thừa một hiệu.**
 
 **Các bước giải**
 
@@ -519,8 +521,6 @@ Kết quả: **90**.
 *Điểm chốt:* Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 
 ### Bài V.3 — Dãy số lặp lại theo chu kì
-
-> **BẪY — Số dư 0 ứng với phần tử cuối chu kì.**
 
 **Các bước giải**
 
@@ -636,8 +636,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD2, TD3 | Đổi về cùng một đơn vị (phút) trước khi tính, đừng tính lẫn giờ và phút. |
 | III.5 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
 | IV.1 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
-| IV.2 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
-| IV.3 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.2 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.3 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.4 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.5 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | V.1 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |

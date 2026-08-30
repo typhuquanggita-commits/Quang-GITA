@@ -427,12 +427,14 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài C.3
 **Đáp số:** a) 110 000 · b) 700 000 · c) 6 400 · d) 2 200 · e) 12 · f) 58
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài C.4
 **Đáp số:** a) 585 · b) 1 029 · c) 4 444 · d) 1 216 · e) 792 · f) 243

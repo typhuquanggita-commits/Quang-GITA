@@ -278,14 +278,14 @@ d) Có bao nhiêu số chẵn từ 160 đến 477?
 Tìm x, trình bày từng bước.
 
 a) x : 2 + 48 = 100
-b) 76 − x = 16
-c) x × 5 − 81 = 40
-d) x × 9 + 68 = 212
-e) 98 − x = 43
+b) (x − 16) × 6 = 264
+c) 89 − x = 81
+d) (x + 68) × 9 = 756
+e) x × 5 + 43 = 318
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Hai lần lấy một phần mấy
 
@@ -353,6 +353,7 @@ f) Cả tổ phải gấp 120 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài I.2
 **Đáp số:** a) 38, 45, 52 · b) 37, 43, 49 · c) 58, 68, 78 · d) 33, 35, 37 · e) 68, 78, 88
@@ -365,6 +366,7 @@ f) Cả tổ phải gấp 120 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài I.4
 **Đáp số:** a) > · b) < · c) < · d) > · e) > · f) < · g) <
@@ -377,12 +379,14 @@ f) Cả tổ phải gấp 120 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài II.1
 **Đáp số:** a) 4 635 · b) 750 · c) 363 dư 6 · d) 2 925 · e) 880 dư 2 · f) 302
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.2
 **Đáp số:** a) 72 000 đồng · b) 5 tờ · c) 20 000 đồng · d) 40 000 đồng · e) 20 tờ · f) 26 000 đồng
@@ -467,9 +471,9 @@ f) Cả tổ phải gấp 120 bông hoa thì làm trong mấy giờ?
 **Gợi ý 3 tầng:** (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
 
 ### Bài IV.5
-**Đáp số:** a) x = 104 · b) x = 60 · c) x = 121 : 5 · d) x = 16 · e) x = 55
+**Đáp số:** a) x = 104 · b) x = 60 · c) x = 8 · d) x = 16 · e) x = 55
 **Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -483,14 +487,14 @@ f) Cả tổ phải gấp 120 bông hoa thì làm trong mấy giờ?
 ### Bài V.2
 **Đáp số:** a) 314 · b) 283 · c) 431 · d) 400 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 3
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 
 ### Bài V.3
 **Đáp số:** a) 51 · b) 68 · c) 34 · d) 24 · e) 27 · f) 34
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

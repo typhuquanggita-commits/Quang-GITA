@@ -116,8 +116,6 @@ Kết quả: **31**.
 
 ### Bài A.3 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Trang có 54 quyển vở, Bình có số vở gấp 3 lần Trang. Bình có bao nhiêu quyển vở?
@@ -137,8 +135,6 @@ Kết quả: **162**.
 *Điểm chốt:* Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 
 ### Bài A.4 — Bài toán giải bằng hai phép tính
-
-> **BẪY — Đọc kĩ câu hỏi cuối.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Hai loại con vật, biết tổng số con và tổng số châ
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Toán điển hình dạng đề thi C
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Ba dạng bài trung bình cộng
+
+> **BẪY — Đi tìm ngay số còn thiếu mà chưa tính tổng..**
 
 **Các bước giải**
 

@@ -255,9 +255,9 @@ Tìm x, trình bày từng bước.
 
 a) x : 8 + 62 = 99
 b) x × 5 + 58 = 353
-c) 90 − x = 40
-d) x × 8 − 47 = 368
-e) x × 6 + 56 = 254
+c) (x + 40) × 8 = 720
+d) (x − 47) × 8 = 8
+e) x × 6 − 56 = 142
 f) 91 − x = 79
 
 ### Bài 5. (5 điểm) Tìm kích thước từ chu vi, diện tích
@@ -274,7 +274,7 @@ g) Hình vuông có chu vi 24 cm. Tính cạnh và diện tích.
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy số lặp lại theo chu kì
 
@@ -338,6 +338,7 @@ d) Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân 
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.2
 **Đáp số:** a) số lớn 105, số bé 75 · b) số lớn 73, số bé 69 · c) số lớn 130, số bé 80 · d) số lớn 48, số bé 38 · e) số lớn 184, số bé 122 · f) số lớn 75, số bé 39
@@ -362,6 +363,7 @@ d) Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân 
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài II.1
 **Đáp số:** a) 36 · b) Nam (13 bông) · c) Phúc (7 bông) · d) 6 · e) 13
@@ -432,7 +434,7 @@ d) Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân 
 
 ### Bài IV.2
 **Đáp số:** a) Trang: 30 quyển, Lan: 24 quyển · b) Chi: 39 quyển, Minh: 37 quyển · c) Thảo: 60 quyển, Nam: 54 quyển · d) Thảo: 106 quyển, Khánh: 54 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -445,9 +447,9 @@ d) Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân 
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu gói? — (2) Mỗi gói nặng bao nhiêu gam? — (3) Nhân hai kết quả.
 
 ### Bài IV.4
-**Đáp số:** a) x = 296 · b) x = 59 · c) x = 50 · d) x = 415 : 8 · e) x = 33 · f) x = 12
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 296 · b) x = 59 · c) x = 50 · d) x = 48 · e) x = 33 · f) x = 12
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -467,14 +469,14 @@ d) Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân 
 
 ### Bài V.2
 **Đáp số:** a) 32 · b) 48 · c) 16 · d) 33 · e) đội Hai nhiều hơn 1 lá · f) 16
-**Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
 ### Bài V.3
 **Đáp số:** a) 24 con gà, 15 con chó · b) 11 con gà, 16 con chó · c) 7 con gà, 18 con chó · d) 18 con gà, 7 con chó
-**Hướng giải:** BẪY — Chia cho hiệu số chân. Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
+**Hướng giải:** Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
 **Lỗi thường gặp:** Chia số chân thiếu cho 4. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp đề không.
 **Gợi ý 3 tầng:** (1) Nếu tất cả đều là gà thì có bao nhiêu chân? — (2) Số chân đó thiếu bao nhiêu so với thực tế? — (3) Một con chó nhiều hơn một con gà mấy chân?

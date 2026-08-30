@@ -526,8 +526,6 @@ Kết quả: **B**.
 
 ### Bài E.3 — Phép chia có dư
 
-> **BẪY — Số dư phải bé hơn số chia.**
-
 **Các bước giải**
 
 Xét ý a: 594 : 4 = ? (dư ?)
@@ -547,8 +545,6 @@ Kết quả: **148 dư 2**.
 *Điểm chốt:* Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 
 ### Bài E.4 — Chu vi và diện tích hình chữ nhật, hình vuông
-
-> **BẪY — Đơn vị diện tích.**
 
 **Các bước giải**
 

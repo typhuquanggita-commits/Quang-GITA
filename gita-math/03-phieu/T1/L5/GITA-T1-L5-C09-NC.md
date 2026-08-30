@@ -281,7 +281,7 @@ g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Cắt, ghép hình và tỉ số diện tích
 
@@ -345,12 +345,14 @@ e) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 2 phần 
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.2
 **Đáp số:** a) 42 cm · b) cạnh 9 cm, diện tích 81 cm² · c) 15 cm · d) cạnh 22 cm, diện tích 484 cm² · e) 35 cm · f) 24 cm
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài I.3
 **Đáp số:** a) bé hơn · b) 0 cặp song song, 1 cặp vuông góc · c) góc vuông · d) góc bẹt · e) 2 cặp song song, 0 cặp vuông góc · f) lớn hơn
@@ -363,12 +365,14 @@ e) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 2 phần 
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.5
 **Đáp số:** a) 48 369 220 · b) 7 814 625 · c) 11 148 687 · d) 57 222 884 · e) 3 251 073 · f) 82 914 · g) 24 843
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) 12 cm · b) 10 cm · c) B · d) A · e) 7 cm · f) 56 cm · g) 37 cm
@@ -432,7 +436,7 @@ e) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 2 phần 
 
 ### Bài IV.1
 **Đáp số:** a) 27 cm² · b) 20 cm² · c) 235 cm² · d) 21 cm² · e) 6 cm² · f) 171 cm²
-**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+**Hướng giải:** BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt. Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
 **Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
 **Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
@@ -460,7 +464,7 @@ e) Tam giác ABC có điểm M nằm trên cạnh BC sao cho BM bằng 2 phần 
 
 ### Bài IV.5
 **Đáp số:** a) 176 m · b) 1 815 m² · c) 35,2 giây · d) 330 m² · e) 20 m · f) 2 795 m² · g) 980 m²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+**Hướng giải:** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?

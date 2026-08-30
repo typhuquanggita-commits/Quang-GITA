@@ -424,6 +424,8 @@ Kết quả: **169 cm²**.
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 13 thùng dầu, mỗi thùng 20 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -469,8 +471,6 @@ Thử lại: 8 + 48 + 96 + 64 = 216 ✓
 *Phải chắc trước khi làm bài này:* Thể tích hình lập phương và cách đếm có phân loại.
 
 ### Bài IV.5 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
-
-> **BẪY — Phần tăng gồm ba mảnh.**
 
 **Các bước giải**
 
@@ -668,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
 | V.1 | TD4, TD6 | Điều kiện bắt buộc là **chung chiều cao**. Thiếu điều kiện ấy thì tỉ số diện tích không còn bằng tỉ số đáy. |
 | V.2 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |
-| V.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.4 | TD6, TD3 | Diện tích gấp **k × k** lần, chu vi chỉ gấp **k** lần. |
 | V.5 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
 

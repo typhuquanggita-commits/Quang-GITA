@@ -281,7 +281,7 @@ e) Một cửa hàng có 7 thùng dầu, mỗi thùng 24 lít. Cửa hàng đã 
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -359,6 +359,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài I.2
 **Đáp số:** a) 5% · b) 240 000 đồng · c) 550 000 đồng · d) 20% · e) 312 000 đồng · f) 380 000 đồng
@@ -371,6 +372,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.4
 **Đáp số:** a) 35 322 · b) 3 588 · c) 37 267 · d) 468 · e) 19 181 · f) 8 330
@@ -383,6 +385,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.1
 **Đáp số:** a) 55 000 · b) 47 · c) 53 000 · d) 45 · e) 84 · f) 59

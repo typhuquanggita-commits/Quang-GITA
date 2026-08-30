@@ -271,7 +271,7 @@ e) Trồng cây trên đoạn đường dài 106 m, hai cây liền nhau cách n
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy có hiệu tăng đều
 
@@ -354,12 +354,14 @@ e) 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.5
 **Đáp số:** a) 68 · b) 75 · c) 124 · d) 187
 **Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài II.1
 **Đáp số:** a) 400 · b) 165 · c) 1 650 · d) 4 325
@@ -423,56 +425,56 @@ e) 2 + 4 + 6 + … + 100 (tổng 50 số chẵn đầu tiên)
 
 ### Bài IV.1
 **Đáp số:** a) 96 lít · b) 40 lít · c) 300 lít · d) 15 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.2
 **Đáp số:** a) 165 · b) 11 475 · c) 630 · d) 440
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.3
 **Đáp số:** a) 143 · b) 221 · c) 7 280 · d) 182 · e) 364 · f) 364
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.4
 **Đáp số:** a) 222 · b) 672 · c) 22 · d) 111 · e) 37 962 · f) 75 591
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài IV.5
 **Đáp số:** a) 14 · b) 15 · c) 61 · d) 9 · e) 52
-**Hướng giải:** BẪY — Bốn trường hợp trồng cây khác nhau. Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
+**Hướng giải:** Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng.
 **Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
 
 ### Bài V.1
 **Đáp số:** a) 3, 7, 15, 27 · b) 63 · c) 183 · d) 36 · e) có, khoảng cách 4 · f) 52
-**Hướng giải:** BẪY — Cộng thừa một hiệu. Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
+**Hướng giải:** Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**.
 **Lỗi thường gặp:** Cộng n hiệu thay vì (n − 1) hiệu. Phòng: Kiểm chứng với n = 2: chỉ cộng đúng một hiệu.
 **Gợi ý 3 tầng:** (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.
 
 ### Bài V.2
 **Đáp số:** a) 2 · b) 2 · c) 9 · d) 4 · e) 9 · f) 1 029
-**Hướng giải:** BẪY — Số dư 0 ứng với phần tử cuối chu kì. Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
+**Hướng giải:** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 **Lỗi thường gặp:** Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. Phòng: Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn.
 **Gợi ý 3 tầng:** (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
 
 ### Bài V.3
 **Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 7 phần 8 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 8
-**Hướng giải:** BẪY — Chiều của phần bù. Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.

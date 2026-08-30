@@ -286,7 +286,7 @@ d) Hình vuông có chu vi 56 cm. Tính cạnh và diện tích.
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Cân đĩa và quả cân
 
@@ -355,18 +355,21 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.2
 **Đáp số:** a) 720 cm² · b) 3 025 cm² · c) 148 cm · d) 40 cm
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.3
 **Đáp số:** a) áp đúng đỉnh góc và một cạnh của góc vào ê ke · b) 4 góc vuông · c) 1 góc vuông · d) 15 cm · e) AM = MB · f) không chắc, còn phải có AM = MB · g) không, vì AM khác nửa AB
 **Hướng giải:** Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Nằm giữa **chưa đủ** để là trung điểm.
 **Lỗi thường gặp:** Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. Phòng: Đo cả hai đoạn AM và MB rồi mới kết luận.
+**Chú ý:** Nằm giữa nhưng không chia đôi.
 
 ### Bài I.4
 **Đáp số:** a) 61 · b) 1 · c) 18 · d) 483 · e) 1 464 · f) 175 · g) 110 · h) 586
@@ -403,6 +406,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài II.5
 **Đáp số:** a) 4 cm · b) 13 cm · c) A · d) 25 cm
@@ -442,7 +446,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 ### Bài IV.1
 **Đáp số:** a) Hà: 30 quyển, Quân: 20 quyển · b) Lan: 15 quyển, Thảo: 11 quyển · c) Bình: 70 quyển, Thảo: 36 quyển · d) An: 19 quyển, Bình: 11 quyển · e) Ngọc: 83 quyển, Dũng: 63 quyển · f) Khánh: 41 quyển, An: 25 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -456,7 +460,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 ### Bài IV.3
 **Đáp số:** a) 30 chai · b) 14 m · c) 5 040 000 đồng · d) 8 m · e) 60 chai
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -477,15 +481,15 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 ### Bài V.1
 **Đáp số:** a) 4 quả · b) 5 quả · c) 4 quả · d) 8 quả · e) 5 quả · f) 6 quả
-**Hướng giải:** BẪY — Phép chia có dư. Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
+**Hướng giải:** Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
 **Lỗi thường gặp:** Làm tròn lên rồi coi như cân được. Phòng: Kiểm tra phép chia có dư hay không trước khi kết luận.
 **Gợi ý 3 tầng:** (1) Một quả cân nặng bao nhiêu? — (2) Vật nặng gấp mấy lần một quả cân? — (3) Phép chia có dư không?
 
 ### Bài V.2
 **Đáp số:** a) 6 · b) 4 · c) 10 · d) 3 · e) 6 · f) 3
-**Hướng giải:** BẪY — Bỏ sót đoạn ghép. Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Hướng giải:** Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 
@@ -499,7 +503,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 ### Bài V.4
 **Đáp số:** a) 382 · b) 344 · c) 238 · d) 200 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 3
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

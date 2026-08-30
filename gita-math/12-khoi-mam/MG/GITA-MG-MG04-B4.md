@@ -19,6 +19,7 @@ cap_nhat: "2026-08-30"
 Mẫu giáo lớn — tiền tiểu học · 5 – 6 tuổi · Mã: **GITA-MG-MG04-B4**  
 Mạch: **Số và phép tính** *(Cambridge: Number)*  
 Thời lượng: **25 phút** · **Không chấm điểm**  
+Bậc: **Tự làm** — Trẻ tự làm, người lớn chỉ hỏi chứ không làm hộ.  
 Bản dành cho: **trẻ làm**
 
 ---

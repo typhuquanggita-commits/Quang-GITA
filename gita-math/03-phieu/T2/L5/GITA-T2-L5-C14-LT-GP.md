@@ -476,6 +476,8 @@ Kết quả: **Công thức vận tốc; trung bình cộng có trọng số**.
 
 ### Bài E.1 — Tính nhanh bằng cách ghép số tròn
 
+> **BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn..**
+
 **Các bước giải**
 
 Xét ý a: 21 + 21 + 79 + 79
@@ -496,7 +498,7 @@ Kết quả: **200**.
 
 ### Bài E.2 — Lịch, thế kỉ, năm nhuận
 
-> **BẪY — Năm tròn trăm.**
+> **BẪY — Coi mọi năm chia hết cho 4 đều là năm nhuận..**
 
 **Các bước giải**
 
@@ -517,8 +519,6 @@ Kết quả: **XX**.
 *Điểm chốt:* Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 
 ### Bài E.3 — Đơn vị đo diện tích
-
-> **BẪY — 100 lần chứ không phải 10 lần.**
 
 **Các bước giải**
 
@@ -559,8 +559,6 @@ Kết quả: **1 627**.
 *Điểm chốt:* Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
 
 ### Bài E.5 — So sánh hai số đo khác đơn vị
-
-> **BẪY — Đơn vị khác nhau.**
 
 **Các bước giải**
 

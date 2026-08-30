@@ -291,7 +291,7 @@ f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
 
@@ -359,6 +359,7 @@ e) Số có hai chữ số 71 gấp tổng hai chữ số của nó bao nhiêu l
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.3
 **Đáp số:** a) 43, 47, 51 · b) 23, 28, 33 · c) 54, 65, 76 · d) 46, 52, 58 · e) 47, 49, 51
@@ -371,12 +372,14 @@ e) Số có hai chữ số 71 gấp tổng hai chữ số của nó bao nhiêu l
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.5
 **Đáp số:** a) cạnh 37 cm, diện tích 1 369 cm² · b) 38 cm · c) 24 cm · d) 9 cm · e) cạnh 60 cm, diện tích 3 600 cm² · f) 26 cm · g) 45 cm
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài II.1
 **Đáp số:** a) 8 ngày · b) 24 ngày · c) 12 ngày · d) 6 ngày · e) 24 ngày · f) 9 ngày
@@ -395,6 +398,7 @@ e) Số có hai chữ số 71 gấp tổng hai chữ số của nó bao nhiêu l
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.4
 **Đáp số:** a) 216 · b) 68 · c) 73 · d) 39 · e) 66 · f) 84
@@ -440,7 +444,7 @@ e) Số có hai chữ số 71 gấp tổng hai chữ số của nó bao nhiêu l
 
 ### Bài IV.1
 **Đáp số:** a) 275 lít · b) 240 lít · c) 24 lít · d) 24 lít · e) 24 lít · f) 80 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -468,7 +472,7 @@ e) Số có hai chữ số 71 gấp tổng hai chữ số của nó bao nhiêu l
 
 ### Bài IV.5
 **Đáp số:** a) 18 · b) 10 · c) 10 · d) 0 · e) 532 và 203 · f) 735
-**Hướng giải:** BẪY — Chữ số 0 ở hàng trăm. Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
+**Hướng giải:** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 **Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
 **Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.

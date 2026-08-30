@@ -430,6 +430,8 @@ Kết quả: **19 quyển**.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 5 + 104 = x × 7
@@ -473,8 +475,6 @@ Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là *
 *Phải chắc trước khi làm bài này:* Cấu tạo thập phân và bài toán tìm hai số biết tổng và hiệu.
 
 ### Bài IV.5 — Hai vòi nước, hai người cùng làm
-
-> **BẪY — Cộng thời gian thay vì cộng năng suất.**
 
 **Các bước giải**
 
@@ -666,7 +666,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD3, TD6 | Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất. |
 | V.3 | TD6, TD3 | Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu. |
 | V.4 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
-| V.5 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.5 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 
 ---
 

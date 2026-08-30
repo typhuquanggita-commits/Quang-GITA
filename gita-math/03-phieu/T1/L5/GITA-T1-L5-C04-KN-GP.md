@@ -116,8 +116,6 @@ Kết quả: **4 923 000**.
 
 ### Bài A.3 — Tính giá trị biểu thức
 
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
-
 **Các bước giải**
 
 Xét ý a: 257 × (15 + 9)
@@ -137,8 +135,6 @@ Kết quả: **6 168**.
 *Điểm chốt:* Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 
 ### Bài A.4 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -482,6 +478,8 @@ Kết quả: **Dãy cộng có dấu … và các số cách đều nhau**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -501,6 +499,8 @@ Kết quả: **giới thiệu chương “Bốn phép tính, tính nhanh và tì
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tính, so sánh tích bằng kĩ thuật tách – bù
+
+> **BẪY — Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian..**
 
 **Các bước giải**
 

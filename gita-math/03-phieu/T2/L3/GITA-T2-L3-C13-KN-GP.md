@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Tính giá trị biểu thức
 
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
-
 **Các bước giải**
 
 Xét ý a: 57 − 6 × 7
@@ -97,8 +95,6 @@ Kết quả: **15**.
 *Điểm chốt:* Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 
 ### Bài A.2 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Dãy cộng dài có dấu …**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “So sánh biểu thức và tính nhanh
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Nhân, chia với số có một chữ số
+
+> **BẪY — Quên chữ số 0 ở giữa thương nên thương thiếu chữ số..**
 
 **Các bước giải**
 

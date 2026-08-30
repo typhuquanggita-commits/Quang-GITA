@@ -406,6 +406,8 @@ Kết quả: **54**.
 
 ### Bài IV.2 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -513,8 +515,6 @@ Kết quả: **1**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.2 — Số chính phương — làm quen theo hướng đề thi
-
-> **BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức.**
 
 **Các bước giải**
 
@@ -654,7 +654,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD4, TD6 | Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn. |
 | III.5 | TD2, TD4 | Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau. |
 | IV.1 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
-| IV.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.2 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.3 | TD3, TD2 | Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng. |
 | IV.4 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
 | IV.5 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |

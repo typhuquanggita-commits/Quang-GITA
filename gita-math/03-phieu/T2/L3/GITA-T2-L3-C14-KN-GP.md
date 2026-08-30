@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
 
-> **BẪY — Phần chung bị đếm hai lần.**
-
 **Các bước giải**
 
 Xét ý a: Lớp có 10 bạn giỏi Toán, 4 bạn giỏi Tiếng Việt, trong đó 1 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
@@ -117,8 +115,6 @@ Kết quả: **ô (Khánh; Âm nhạc)**.
 *Điểm chốt:* Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 
 ### Bài A.3 — Quy tắc nhân trong phép đếm
-
-> **BẪY — Cộng hay nhân.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Chọn một phần tử từ mỗi nhóm để ghép thành mộ
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Bất biến, cực trị và suy lu�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Suy luận thứ tự, vị trí trong hàng
+
+> **BẪY — Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1..**
 
 **Các bước giải**
 

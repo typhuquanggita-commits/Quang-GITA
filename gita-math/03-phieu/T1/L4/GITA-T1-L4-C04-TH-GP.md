@@ -412,6 +412,8 @@ Kết quả: **0**.
 
 ### Bài IV.2 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 8 + 24 = x × 9
@@ -479,8 +481,6 @@ Cả gia đình: 450 000 + 180 000 = **630 000 đồng**.
 *Phải chắc trước khi làm bài này:* Nhân chia số tròn nghìn và kỹ năng gạch chân câu hỏi.
 
 ### Bài IV.5 — Diện tích thay đổi khi kích thước thay đổi
-
-> **BẪY — Phần tăng gồm ba mảnh.**
 
 **Các bước giải**
 

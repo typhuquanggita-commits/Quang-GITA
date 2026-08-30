@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Góc vuông và trung điểm của đoạn thẳng
 
-> **BẪY — Nằm giữa nhưng không chia đôi.**
-
 **Các bước giải**
 
 Trung điểm là điểm vừa **nằm giữa**, vừa **chia đôi** đoạn thẳng.
@@ -97,8 +95,6 @@ AM = 30 : 2 = 15 (cm).
 *Phải chắc trước khi làm bài này:* Đo độ dài đoạn thẳng và phép chia cho 2.
 
 ### Bài A.2 — Chu vi và diện tích hình chữ nhật, hình vuông
-
-> **BẪY — Đơn vị của diện tích.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Lưới ô vuông đều**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Diện tích hình ghép và hình h�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đếm hình trong lưới
+
+> **BẪY — Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô..**
 
 **Các bước giải**
 
@@ -640,7 +640,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD3, TD4 | Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên. |
-| E.3 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| E.3 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | E.4 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
 | E.5 | TD1, TD3 | Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm. |
 

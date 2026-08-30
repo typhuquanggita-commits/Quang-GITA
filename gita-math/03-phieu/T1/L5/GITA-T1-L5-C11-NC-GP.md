@@ -663,7 +663,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
 | V.2 | TD6, TD2 | Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất. |
 | V.3 | TD6, TD2 | Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc. |
-| V.4 | TD1, TD3, TD4 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
+| V.4 | TD1, TD3, TD4, TD5 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
 | V.5 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
 
 ---

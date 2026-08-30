@@ -295,7 +295,7 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tính nhanh tổng dãy số cách đều
 
@@ -366,18 +366,21 @@ f) Có 4 tiết thì có mấy lần nghỉ giữa tiết?
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.3
 **Đáp số:** a) 18 374 · b) 32 000 · c) 40 · d) > · e) 14 000 · f) 29 230 · g) >
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài I.4
 **Đáp số:** a) 5 giờ 2 phút · b) 285 · c) 5 giờ 54 phút · d) 39 phút · e) 10 giờ 36 phút · f) 6 giờ 10 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.5
 **Đáp số:** a) 1 tấn 41 kg · b) 3 tấn 4 tạ 6 kg · c) 3 647 · d) 1 tấn 2 tạ 52 kg · e) 2 696 · f) 5 tấn 7 tạ 81 kg · g) 2 tấn 9 tạ 75 kg
@@ -454,7 +457,7 @@ f) Có 4 tiết thì có mấy lần nghỉ giữa tiết?
 
 ### Bài IV.2
 **Đáp số:** a) 30 chai · b) 36 m · c) 2 400 000 đồng · d) 14 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -489,8 +492,8 @@ f) Có 4 tiết thì có mấy lần nghỉ giữa tiết?
 
 ### Bài V.2
 **Đáp số:** a) 6 · b) 4 · c) 10 · d) 3 · e) 6 · f) 3
-**Hướng giải:** BẪY — Bỏ sót đoạn ghép. Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Hướng giải:** Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 

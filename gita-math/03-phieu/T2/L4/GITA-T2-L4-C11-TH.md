@@ -276,7 +276,7 @@ d) Nhóm Sao Mai có 216 quyển sách, tổ Ba có 72 quyển. Hỏi phải chu
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Ba công thức tổng phải thuộc
 
@@ -347,6 +347,7 @@ e) Tổng 100 số hạng đầu tiên bằng bao nhiêu?
 **Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài I.3
 **Đáp số:** a) 39, 44, 49 · b) 35, 40, 45 · c) 45, 50, 55 · d) 31, 33, 35 · e) 40, 47, 54 · f) 54, 58, 62
@@ -365,6 +366,7 @@ e) Tổng 100 số hạng đầu tiên bằng bao nhiêu?
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài II.1
 **Đáp số:** a) 1 350 · b) 3 350 · c) 1 755 · d) 1 485 · e) 1 200 · f) 1 605
@@ -428,15 +430,15 @@ e) Tổng 100 số hạng đầu tiên bằng bao nhiêu?
 
 ### Bài IV.1
 **Đáp số:** a) 206 · b) 621 · c) 103 · d) 103 · e) 32 136 · f) 64 581
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài IV.2
 **Đáp số:** a) 75 · b) 162 · c) 3 555 · d) 118,5 · e) 237 · f) 237
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -463,7 +465,7 @@ e) Tổng 100 số hạng đầu tiên bằng bao nhiêu?
 
 ### Bài V.1
 **Đáp số:** a) 110 · b) 10 000 · c) 325 · d) 5 050
-**Hướng giải:** BẪY — Nhầm số hạng cuối với số lượng số hạng. Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
+**Hướng giải:** Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
 **Lỗi thường gặp:** Nhầm số hạng cuối với số lượng số hạng khi áp công thức. Phòng: Đếm số số hạng trước rồi mới thay vào công thức.
 **Gợi ý 3 tầng:** (1) Dãy này có bao nhiêu số hạng? — (2) Đây là dãy số lẻ, số chẵn, hay số tự nhiên liên tiếp? — (3) Chọn đúng công thức tương ứng.
@@ -477,7 +479,7 @@ e) Tổng 100 số hạng đầu tiên bằng bao nhiêu?
 
 ### Bài V.3
 **Đáp số:** a) 1 · 4 · 9 · 16 · 25 · 36 · b) 36 · c) 1 + 3 + … + 11 = 36 · d) không bao giờ · e) có, là 4 nhân 4 · f) 6
-**Hướng giải:** BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức. Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
+**Hướng giải:** Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8.
 **Lỗi thường gặp:** Kết luận một số là chính phương chỉ vì nó “trông đẹp”. Phòng: Kiểm tra chữ số tận cùng trước, sau đó thử khai căn bằng cách nhân thử.
 **Gợi ý 3 tầng:** (1) Viết bảng các số chính phương đầu tiên. — (2) Hiệu hai số chính phương liên tiếp là những số nào? — (3) Chữ số tận cùng của số chính phương có thể là những chữ số nào?
@@ -485,7 +487,7 @@ e) Tổng 100 số hạng đầu tiên bằng bao nhiêu?
 ### Bài V.4
 **Đáp số:** a) 40 · b) 35 · c) 45 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 60 · f) 75 · g) 15
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

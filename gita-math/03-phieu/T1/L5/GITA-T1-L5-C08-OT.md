@@ -290,7 +290,7 @@ f) Tổng cả dãy bằng bao nhiêu?
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -365,7 +365,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài I.1
 **Đáp số:** a) 11 · b) 149 · c) 178 · d) 39 · e) 82 · f) 155 · g) 164
-**Hướng giải:** BẪY — Quên cộng 1. Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
+**Hướng giải:** Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng luôn **ít hơn số số hạng đúng 1**.
 **Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
 
@@ -386,6 +386,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài I.5
 **Đáp số:** a) 8 · b) 14 · c) 20 · d) 35 · e) 38 · f) 44 · g) 495
@@ -455,21 +456,21 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) 56 · b) 151 · c) 2 070 · d) 103,5 · e) 207 · f) 207
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.2
 **Đáp số:** a) 10 200 · b) 2 925 · c) 2 600 · d) 5 100 · e) 110
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.3
 **Đáp số:** a) 50 lít · b) 48 lít · c) 96 lít · d) 40 lít · e) 60 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -484,7 +485,7 @@ f) Cột 6 — Kết quả?
 ### Bài IV.5
 **Đáp số:** a) 217 · b) 874 · c) 44 · d) 217 · e) 95 914 · f) 95 914
 **Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -505,7 +506,7 @@ f) Cột 6 — Kết quả?
 ### Bài V.3
 **Đáp số:** a) Đếm và tính tổng dãy con thoả điều kiện chia hết · b) Dãy cách đều, bội chung nhỏ nhất · c) Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy · d) Xác định dãy con cách đều rồi đếm, tính tổng · e) Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. · f) 109 · 654 · 109 · 109…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 

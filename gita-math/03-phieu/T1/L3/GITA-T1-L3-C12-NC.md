@@ -275,7 +275,7 @@ d) Có 10 tấm vải, mỗi tấm dài 4 m. Cắt mỗi tấm đi 2 m. Hỏi c�
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -341,6 +341,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.2
 **Đáp số:** a) 45 · b) 204 · c) 954 · d) 116 · e) 410
@@ -353,6 +354,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.4
 **Đáp số:** a) 25 · b) 12 · c) 15 · d) 20 · e) 38 · f) 21 · g) 55
@@ -449,22 +451,22 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 
 ### Bài IV.4
 **Đáp số:** a) Bình: 31 quyển, Vy: 17 quyển · b) Minh: 29 quyển, Tuấn: 27 quyển · c) Yến: 94 quyển, Tuấn: 60 quyển · d) Phúc: 85 quyển, Chi: 51 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài IV.5
 **Đáp số:** a) 3 m · b) 3 000 000 đồng · c) 55 chai · d) 20 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
 
 ### Bài V.1
 **Đáp số:** a) 63 · b) 84 · c) 42 · d) 24 · e) 39 · f) 42
-**Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
@@ -477,7 +479,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 
 ### Bài V.3
 **Đáp số:** a) 5 con gà, 6 con chó · b) 12 con gà, 22 con chó · c) 13 con gà, 21 con chó · d) 7 con gà, 3 con chó
-**Hướng giải:** BẪY — Chia cho hiệu số chân. Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
+**Hướng giải:** Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
 **Lỗi thường gặp:** Chia số chân thiếu cho 4. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp đề không.
 **Gợi ý 3 tầng:** (1) Nếu tất cả đều là gà thì có bao nhiêu chân? — (2) Số chân đó thiếu bao nhiêu so với thực tế? — (3) Một con chó nhiều hơn một con gà mấy chân?

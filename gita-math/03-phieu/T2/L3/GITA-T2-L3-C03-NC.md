@@ -275,7 +275,7 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Một phần mấy qua hai bước — chú ý “số còn lại”
 
@@ -358,12 +358,14 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.4
 **Đáp số:** a) 12 cách · b) 32 cách · c) 28 cách · d) 24 cách · e) 15 cách
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.5
 **Đáp số:** a) ô (An; Âm nhạc) · b) toàn bộ hàng An và toàn bộ cột Âm nhạc · c) ô (Vy; Toán) · d) Tiếng Anh · e) Toán · f) phương pháp lập bảng và loại trừ
@@ -394,6 +396,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.5
 **Đáp số:** a) 20 cách · b) 8 cách · c) 30 cách · d) 9 cách · e) 24 cách · f) 18 cách · g) 12 cách
@@ -447,7 +450,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 ### Bài IV.3
 **Đáp số:** a) 4 200 000 đồng · b) 60 chai · c) 16 m · d) 15 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -461,7 +464,7 @@ g) Số cuối cùng ấy có thể bằng 0 không?
 
 ### Bài IV.5
 **Đáp số:** a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 4 · e) Khánh · f) 2 lần
-**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+**Hướng giải:** Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
 **Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
 **Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?

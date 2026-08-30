@@ -52,9 +52,9 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | Mức | Dấu hiệu nhìn thấy trong đề | Dạng bài | Phương pháp | Lối tắt | Bẫy |
 |:--:|---|---|---|---|---|
 | M1 | Dãy số kèm dấu … ở cuối | Tìm quy luật dãy cách đều | Tính hiệu các cặp liên tiếp rồi cộng tiếp | Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. | — |
-| M1 | Dãy có ô trống ở giữa | Điền số hạng còn thiếu của dãy cách đều | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. | Hai số hai bên chỗ trống cách nhau hai khoảng |
+| M1 | Dãy có ô trống ở giữa | Điền số hạng còn thiếu của dãy cách đều | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. | — |
 | M1 | Các số tăng rất nhanh, hiệu không đều | Dãy số theo quy luật nhân | Thử hiệu, rồi thử thương | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | — |
-| M1 | Đề hỏi “số hạng thứ …” | Tìm số hạng thứ n của dãy cách đều | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | Nhân với n thay vì (n − 1) |
+| M1 | Đề hỏi “số hạng thứ …” | Tìm số hạng thứ n của dãy cách đều | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | — |
 | M2 | Dãy có số đầu, số cuối và khoảng cách đều | Đếm số hạng dãy cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | Quên cộng 1 |
 | M2 | Dãy cộng dài, các số cách đều | Tổng dãy số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | Quên chia 2 |
 | M2 | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Quy luật hình đưa về dãy số | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | — |
@@ -64,9 +64,9 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M3 | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm số lần xuất hiện của một chữ số | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | Số 33, 44… chứa hai lần cùng một chữ số |
 | M3 | Đề mô tả cách lập số hạng từ số hạng liền trước | Dãy số truy hồi có quy tắc rẽ nhánh | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | Quy tắc khác nhau ở vị trí chẵn và lẻ |
 | M3 | Một sự việc lặp lại đều đặn theo thời gian | Bài toán chu kỳ | Quy về phút, dùng công thức dãy cách đều, đổi ngược lại giờ | Số chuyến trong một giờ = 60 chia khoảng cách, nhẩm ngay được. | — |
-| M4 | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tổng và trung bình cộng của dãy cách đều | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | — |
+| M4 | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tổng và trung bình cộng của dãy cách đều | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối |
 | M4 | Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” | Bài toán trồng cây | Tính số khoảng rồi chọn đúng công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | Bốn trường hợp trồng cây khác nhau |
-| M4 | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Đếm và tính tổng dãy con thoả điều kiện chia hết | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | — |
+| M4 | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Đếm và tính tổng dãy con thoả điều kiện chia hết | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều |
 | M5 | Dãy lặp lại một nhóm số cố định | Dãy tuần hoàn | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | Số dư 0 ứng với phần tử cuối chu kì |
 | M5 | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Tổng dãy đặc biệt | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | Nhầm số hạng cuối với số lượng số hạng |
 
@@ -93,43 +93,47 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số. Từ 1 đến 100, chữ số 0 xuất hiện bao nhiêu lần?
+**Đề 1.** Tính tổng mỗi dãy. Tính tổng: 16 + 19 + 22 + … + 73
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Tính tổng mỗi dãy. Tính tổng: 17 + 18 + 19 + … + 66
+**Đề 2.** Điền số thích hợp vào chỗ chấm. 23, …, 45, 56, 67, 78
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tìm quy luật rồi viết số hạng tiếp theo. 8, 15, 29, 50, 78, …
+**Đề 3.** Quan sát quy luật số que diêm rồi trả lời. Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 3 có bao nhiêu que diêm?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Quan sát quy luật số que diêm rồi trả lời. Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 2 que. Hình thứ 4 có bao nhiêu que diêm?
+**Đề 4.** Tìm quy luật rồi viết số hạng tiếp theo. 9, 7, 12, 12, 15, …
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Tìm quy luật rồi viết số hạng tiếp theo. 6, 30, 150, 750, …
+**Đề 5.** Cho dãy: 11, 14, 17, …, 530. Dãy có bao nhiêu số hạng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Cho dãy lặp lại vô hạn theo nhóm: 7, 9, 8, 8, 7, 3, 7, 9, 8, 8, 7, 3, 7, … Số hạng thứ 95 của dãy là số nào?
+**Đề 6.** Dãy số được lập theo ba quy tắc sau.
+
+- Số hạng đầu bằng 2.
+- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 2.
+- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 2 nhân với số thứ tự của số hạng liền trước. Viết ba số hạng đầu tiên của dãy.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 1, 3, 5, 7, …
+**Đề 7.** Tính nhanh mỗi tổng, nêu công thức đã dùng. 1 + 2 + 3 + … + 10
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Tính số số hạng của mỗi dãy. Dãy 29, 33, 37, …, 609 có bao nhiêu số hạng?
+**Đề 8.** Một bên phố có các nhà mang số lẻ, bắt đầu từ số **7** và kết thúc ở số **29**, hai nhà liền nhau hơn kém nhau 2. Số nhà đầu dãy là 7, các nhà tiếp theo là 9, 11, … Số nhà thứ tư là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Một dãy cách đều có 30 số hạng, khoảng cách 4 đơn vị, số hạng cuối là 187. Số hạng đầu của dãy là số nào?
+**Đề 9.** Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số. Từ 1 đến 300, chữ số 5 xuất hiện bao nhiêu lần?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Cho dãy 1, 8, 15, …, 2 171. Dãy có bao nhiêu số hạng?
+**Đề 10.** Một dãy cách đều có 40 số hạng, khoảng cách 2 đơn vị, số hạng cuối là 86. Số hạng đầu của dãy là số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -139,16 +143,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Đếm số lần xuất hiện của một chữ số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” |
-| 2 | Tổng dãy số cách đều | Dãy cộng dài, các số cách đều |
-| 3 | Dãy số quy luật bậc hai hoặc xen kẽ | Hiệu giữa các số hạng không bằng nhau |
-| 4 | Quy luật hình đưa về dãy số | Đề mô tả hình xếp thêm đều đặn theo thứ tự |
-| 5 | Dãy số theo quy luật nhân | Các số tăng rất nhanh, hiệu không đều |
-| 6 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định |
-| 7 | Tìm quy luật dãy cách đều | Dãy số kèm dấu … ở cuối |
-| 8 | Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối và khoảng cách đều |
-| 9 | Tổng và trung bình cộng của dãy cách đều | Đề cho số số hạng, khoảng cách và một đầu của dãy |
-| 10 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy |
+| 1 | Tổng dãy số cách đều | Dãy cộng dài, các số cách đều |
+| 2 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa |
+| 3 | Quy luật hình đưa về dãy số | Đề mô tả hình xếp thêm đều đặn theo thứ tự |
+| 4 | Dãy số quy luật bậc hai hoặc xen kẽ | Hiệu giữa các số hạng không bằng nhau |
+| 5 | Định vị số hạng, kiểm tra một số có thuộc dãy | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” |
+| 6 | Dãy số truy hồi có quy tắc rẽ nhánh | Đề mô tả cách lập số hạng từ số hạng liền trước |
+| 7 | Tổng dãy đặc biệt | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp |
+| 8 | Dãy số cách đều | Một dãy số thật ngoài đời, các số cách nhau đều nhau |
+| 9 | Đếm số lần xuất hiện của một chữ số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” |
+| 10 | Tổng và trung bình cộng của dãy cách đều | Đề cho số số hạng, khoảng cách và một đầu của dãy |
 
 ---
 

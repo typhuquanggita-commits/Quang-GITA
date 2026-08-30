@@ -277,7 +277,7 @@ d) Một cửa hàng có 10 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
 
@@ -343,24 +343,28 @@ f) Chiết khấu 5% nghĩa là còn lại bao nhiêu phần trăm giá niêm y�
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.2
 **Đáp số:** a) 357 · b) 1 giờ 46 phút · c) 4 giờ 19 phút · d) 4 giờ 4 phút · e) 441 · f) 3 giờ
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.3
 **Đáp số:** a) 33 740 · b) 67 625 523 · c) 63 137 · d) 32 875 · e) 32 012 304
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) 16 000 · b) 8 000 · c) 1 500 · d) 530 000 · e) 2 100 · f) 8 400
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.5
 **Đáp số:** a) 1 047 · b) 5 116 · c) 4 020 · d) 4 tấn 3 tạ 51 kg · e) 6 tấn 8 tạ 52 kg · f) 6 tấn 3 tạ 39 kg · g) 2 tấn 9 tạ 69 kg
@@ -379,12 +383,14 @@ f) Chiết khấu 5% nghĩa là còn lại bao nhiêu phần trăm giá niêm y�
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.3
 **Đáp số:** a) 6 600 · b) 490 000 · c) 44 · d) 4 400 · e) 510 000 · f) 5 200
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.4
 **Đáp số:** a) 60 000 đồng · b) 220 000 đồng · c) 25% · d) 168 000 đồng · e) 15%
@@ -397,6 +403,7 @@ f) Chiết khấu 5% nghĩa là còn lại bao nhiêu phần trăm giá niêm y�
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài III.1
 **Đáp số:** a) 7 tạ 20 kg · b) 6 tạ · c) 4 tạ 50 kg · d) 12 tạ 60 kg · e) 4 tạ 40 kg

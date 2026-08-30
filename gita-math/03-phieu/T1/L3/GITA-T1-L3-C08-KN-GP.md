@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Thảo có 44 quyển vở, Đức có ít hơn Thảo 15 quyển. Đức có bao nhiêu quyển vở?
@@ -97,8 +95,6 @@ Kết quả: **29**.
 *Điểm chốt:* Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 
 ### Bài A.2 — Tìm một phần mấy của một số
-
-> **BẪY — Chia chứ không nhân.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Cụm “… số còn lại”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Một phần mấy, tỉ số và th�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tìm số khi biết một phần mấy của nó
+
+> **BẪY — Chia thay vì nhân..**
 
 **Các bước giải**
 

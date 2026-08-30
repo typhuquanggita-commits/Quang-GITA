@@ -292,7 +292,7 @@ f) Một cửa hàng có 13 thùng sữa, mỗi thùng 20 lít. Cửa hàng đã
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
 
@@ -361,12 +361,14 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.2
 **Đáp số:** a) 690 000 · b) 9 000 · c) 3 100 · d) 1 900 · e) 530 000 · f) 130 000
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.3
 **Đáp số:** a) 447 466 · b) 869 958 · c) 528 300 · d) 52 280
@@ -379,6 +381,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.5
 **Đáp số:** a) 6 tấn 7 tạ 6 kg · b) 3 622 · c) 3 643 · d) 5 tấn 1 tạ 54 kg
@@ -391,18 +394,21 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.2
 **Đáp số:** a) XX · b) 30 · c) không · d) 3 tuần 6 ngày · e) XX · f) 3 tuần 3 ngày
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài II.3
 **Đáp số:** a) < · b) < · c) < · d) < · e) < · f) < · g) >
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.4
 **Đáp số:** a) 3 581 · b) 3 647 · c) 20 220 · d) 8 109 · e) 3 886 · f) 9 155
@@ -469,7 +475,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài IV.4
 **Đáp số:** a) 12 000 000 đồng · b) 18 m · c) 15 chai · d) 66 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -497,7 +503,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài V.3
 **Đáp số:** a) -5 · b) 38 · c) -20 · d) 8 · e) 13 · f) -10
-**Hướng giải:** BẪY — Số hạng lẻ còn thừa ở cuối dãy. Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
+**Hướng giải:** Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối.
 **Lỗi thường gặp:** Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. Phòng: Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp.
 **Gợi ý 3 tầng:** (1) Dãy có bao nhiêu số hạng? — (2) Ghép hai số hạng liền nhau, mỗi cặp bằng bao nhiêu? — (3) Số số hạng là chẵn hay lẻ? Có số hạng nào lẻ ra không?
@@ -505,7 +511,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 ### Bài V.4
 **Đáp số:** a) 66 · b) 57 · c) 75 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 60 · f) 80 · g) 20
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

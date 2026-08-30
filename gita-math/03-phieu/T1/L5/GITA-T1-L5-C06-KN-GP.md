@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Chu vi và diện tích hình chữ nhật, hình vuông
 
-> **BẪY — Đơn vị của diện tích.**
-
 **Các bước giải**
 
 Xét ý a: Hình chữ nhật có chiều dài 50 cm, chiều rộng 10 cm. Tính chu vi.
@@ -97,8 +95,6 @@ Kết quả: **120 cm**.
 *Điểm chốt:* Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 
 ### Bài A.2 — Đếm hình trong lưới ô vuông
-
-> **BẪY — Bỏ sót các hình ghép nhiều ô.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Kích thước một mặt phẳng và kích thước vật dùng
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Tam giác, hình thang, hình tròn v�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đếm hình bằng quy tắc chọn hai điểm
+
+> **BẪY — Chỉ đếm tam giác nhỏ, quên các tam giác ghép..**
 
 **Các bước giải**
 

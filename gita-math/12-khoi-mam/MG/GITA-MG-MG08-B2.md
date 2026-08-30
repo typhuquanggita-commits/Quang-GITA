@@ -19,6 +19,7 @@ cap_nhat: "2026-08-30"
 Mẫu giáo lớn — tiền tiểu học · 5 – 6 tuổi · Mã: **GITA-MG-MG08-B2**  
 Mạch: **Hình học và Đo lường** *(Cambridge: Geometry and Measure)*  
 Thời lượng: **25 phút** · **Không chấm điểm**  
+Bậc: **Làm quen** — Người lớn làm mẫu trước, trẻ làm theo từng bước.  
 Bản dành cho: **trẻ làm**
 
 ---

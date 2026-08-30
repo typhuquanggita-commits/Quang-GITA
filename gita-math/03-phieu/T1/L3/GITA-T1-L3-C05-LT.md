@@ -347,12 +347,14 @@ g) 71 kg = … g
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài A.2
 **Đáp số:** a) 18 274 · b) 28 · c) 21 000 · d) > · e) > · f) 27 000 · g) 7 · h) 12 828
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài A.3
 **Đáp số:** a) 1 856 · b) 5 227 · c) 2 051 · d) 6 853 · e) 3 tấn 3 tạ 12 kg
@@ -371,6 +373,7 @@ g) 71 kg = … g
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài B.1
 **Đáp số:** a) Đo độ dài, khối lượng, thời gian và tiền Việt Nam · b) E — Đại lượng – Đo lường – Thời gian · c) 5 · d) ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài đơn vị đo độ dài mm, cm, dm, m, km — đổi và tính toán
@@ -490,9 +493,10 @@ g) 71 kg = … g
 
 ### Bài E.4
 **Đáp số:** a) 15 cm² · b) 112 cm · c) 100 cm · d) 289 cm² · e) 676 cm²
-**Hướng giải:** BẪY — Đơn vị diện tích. Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
+**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 **Gợi ý 3 tầng:** (1) Đề hỏi chu vi hay diện tích? — (2) Viết công thức ra trước. — (3) Ghi đúng đơn vị.
 
 ### Bài E.5

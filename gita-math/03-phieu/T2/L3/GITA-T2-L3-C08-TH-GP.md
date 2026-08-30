@@ -390,6 +390,8 @@ Kết quả: **570**.
 
 ### Bài IV.1 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 50 × 4 = 200 (kg).
@@ -503,8 +505,6 @@ Kết quả: **250 g**.
 *Điểm chốt:* Trừ **số gói** trước khi nhân thì ít phép tính hơn.
 
 ### Bài V.1 — Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
@@ -677,7 +677,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | IV.5 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | V.1 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
-| V.2 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.2 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.3 | TD3, TD6 | Số lần nghỉ = số tiết − 1, không phải bằng số tiết. |
 | V.4 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
 | V.5 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |

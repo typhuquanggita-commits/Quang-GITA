@@ -388,6 +388,8 @@ Kết quả: **20**.
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Phúc và Hà có tất cả 138 quyển vở. Phúc có nhiều hơn Hà 14 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -429,6 +431,8 @@ Kết quả: **65, hơn kém 9 đơn vị**.
 *Điểm chốt:* Hiệu hai số luôn là **bội của 9**.
 
 ### Bài IV.3 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -474,8 +478,6 @@ Kết quả: **42 quyển**.
 
 ### Bài IV.5 — Tìm số có ba chữ số thoả điều kiện
 
-> **BẪY — Chữ số hàng trăm khác 0 và ba chữ số khác nhau.**
-
 **Các bước giải**
 
 Liệt kê có thứ tự: chọn chữ số hàng trăm từ nhỏ tới lớn, rồi tìm hai chữ số còn lại cộng lại cho đủ 6.
@@ -497,8 +499,6 @@ Số bé nhất là 105, số lớn nhất là 510.
 *Phải chắc trước khi làm bài này:* Cấu tạo số có ba chữ số và thói quen liệt kê có thứ tự.
 
 ### Bài V.1 — Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
-
-> **BẪY — Cho thêm khác với chuyển qua lại.**
 
 **Các bước giải**
 
@@ -664,10 +664,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
 | IV.4 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | IV.5 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
-| V.4 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.4 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.5 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 
 ---

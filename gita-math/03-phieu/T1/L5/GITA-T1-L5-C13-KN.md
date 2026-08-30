@@ -334,9 +334,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 19 · b) 66 · c) 33 · d) 56 · e) 68 · f) 32
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.2
 **Đáp số:** a) 108 · b) 352 · c) 648 · d) 156 · e) 564
@@ -352,9 +353,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.4
 **Đáp số:** a) 3 giờ · b) 15 km/giờ · c) 100 km · d) 4 giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.5
 **Đáp số:** a) số lớn 860, số bé 852 · b) số lớn 438, số bé 394 · c) số lớn 666, số bé 340 · d) số lớn 154, số bé 86 · e) số lớn 431, số bé 335 · f) số lớn 988, số bé 756 · g) số lớn 112, số bé 100
@@ -407,7 +409,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài C.3
 **Đáp số:** a) tầng 2 · b) Nhìn ra “cách đều” trước khi đặt bút. · c) toàn bộ số điểm của ý sai · d) Nhìn ra “cách đều” trước khi đặt bút. · e) Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 
 ### Bài C.4
@@ -439,7 +441,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài D.3
 **Đáp số:** a) Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số · b) Tìm số giữa trước; sau đó chia theo tỉ lệ · c) Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. · d) Trung bình cộng của dãy cách đều; tổng – tỉ · e) Tổng ba số cách đều luôn chia hết cho 3.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
@@ -459,14 +461,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Chuyển động trên dòng nước, tỉ lệ xích, công việc chung và toán tuổi” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đề tổng hợp nhiều mạch.” · b) Một đề dài gồm nhiều ý nối tiếp nhau · c) Chuyển động ngược chiều; tỉ số phần trăm; tổng – tỉ · d) Hai xe cách nhau 150 km đi ngược chiều, 40 và 35 km/giờ. Mấy giờ gặp? → 2 giờ · e) Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. · f) Tăng p% rồi giảm p% luôn cho kết quả **thấp hơn** giá ban đầu.
-**Hướng giải:** Đề thi thật hay ghép ba mạch trong một bài: chuyển động, phần trăm, tổng – tỉ. Làm tuần tự từng ý, mỗi ý một kết quả, và dùng kết quả ý trước cho ý sau.
+**Hướng giải:** BẪY — Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng.. Đề thi thật hay ghép ba mạch trong một bài: chuyển động, phần trăm, tổng – tỉ. Làm tuần tự từng ý, mỗi ý một kết quả, và dùng kết quả ý trước cho ý sau.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**.
 **Lỗi thường gặp:** Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng. Phòng: Sau mỗi ý, khoanh tròn kết quả để ý sau lấy đúng số ấy.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

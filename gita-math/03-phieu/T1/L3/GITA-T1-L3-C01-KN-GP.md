@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Tính giá trị biểu thức
 
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
-
 **Các bước giải**
 
 Xét ý a: (26 + 2) × 2
@@ -97,8 +95,6 @@ Kết quả: **56**.
 *Điểm chốt:* Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 
 ### Bài A.2 — Đơn vị đo thời gian: giờ và phút
-
-> **BẪY — Cơ số 60 chứ không phải 10.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Thừa số là 9, 11, 19, 21…**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Bảng nhân, bảng chia và bốn ph
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tính giá trị biểu thức số
+
+> **BẪY — Cộng trước nhân khi biểu thức không có ngoặc..**
 
 **Các bước giải**
 
@@ -632,7 +632,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.2 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |
 | C.3 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | C.4 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
-| C.5 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| C.5 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |
 | D.3 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |

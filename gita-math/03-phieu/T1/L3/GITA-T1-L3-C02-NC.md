@@ -262,12 +262,12 @@ f) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 Tìm x, trình bày từng bước.
 
-a) x × 5 + 34 = 279
-b) x : 4 + 11 = 26
-c) x × 6 − 24 = 114
-d) 87 − x = 51
-e) x : 6 + 26 = 33
-f) x × 2 − 67 = 26
+a) (x − 56) × 9 = 9
+b) x × 5 + 34 = 279
+c) x × 4 − 11 = 49
+d) 43 − x = 24
+e) x : 5 + 51 = 87
+f) (x + 26) × 6 = 198
 
 ### Bài 5. (5 điểm) Tuổi, mua bán và hai đại lượng tỉ lệ
 
@@ -281,7 +281,7 @@ e) 8 hộp bút có 80 chiếc. Hỏi 8 hộp như thế có bao nhiêu chiếc 
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -388,18 +388,21 @@ f) Xoá chữ số hàng đơn vị của 31 thì được số nào?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.4
 **Đáp số:** a) x = 286 · b) x = 185 · c) 7 · d) 0 · e) 0 · f) x = 339 · g) x = 205
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.5
 **Đáp số:** a) 172 dư 2 · b) 41 dư 2 · c) 291 dư 4 · d) 213 dư 4 · e) 84 dư 2
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài III.1
 **Đáp số:** a) 140 · b) 3 giờ 50 phút · c) 6 giờ 10 phút · d) 5 giờ 55 phút · e) 430
@@ -453,9 +456,9 @@ f) Xoá chữ số hàng đơn vị của 31 thì được số nào?
 **Gợi ý 3 tầng:** (1) Chữ số hàng trăm nhỏ nhất có thể là bao nhiêu? — (2) Với mỗi hàng trăm, hai chữ số còn lại phải cộng lại bằng bao nhiêu? — (3) Loại các trường hợp có chữ số trùng nhau.
 
 ### Bài IV.4
-**Đáp số:** a) x = 49 · b) x = 60 · c) x = 23 · d) x = 36 · e) x = 42 · f) x = 93 : 2
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 57 · b) x = 49 · c) x = 15 · d) x = 19 · e) x = 180 · f) x = 7
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -468,8 +471,8 @@ f) Xoá chữ số hàng đơn vị của 31 thì được số nào?
 
 ### Bài V.1
 **Đáp số:** a) 28 · b) 42 · c) 14 · d) 21 · e) 7 · f) 14
-**Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
@@ -497,7 +500,7 @@ f) Xoá chữ số hàng đơn vị của 31 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 315 · b) 284 · c) 531 · d) 500 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 3
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

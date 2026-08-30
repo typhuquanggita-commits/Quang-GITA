@@ -291,7 +291,7 @@ e) Tháng vừa rồi nhà bạn Ngọc dùng hết 120 kW·h điện. Dựa và
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -387,6 +387,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài I.5
 **Đáp số:** a) 3 772 · b) 2 052 · c) 6 486 · d) 784 · e) 2 077 · f) 2 849
@@ -456,7 +457,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) 33 phần 13 · b) 52 phần 7 · c) 5 phần 3 · d) 97 phần 35 · e) 236 phần 273
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -477,14 +478,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) 240 lít · b) 48 lít · c) 60 lít · d) 120 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) 545 000 đồng · b) 166 000 đồng · c) 361 000 đồng · d) 405 000 đồng · e) 229 000 đồng
-**Hướng giải:** BẪY — Nhân cả số điện cho đơn giá bậc cuối. Chia số điện đã dùng vào từng bậc theo thứ tự từ bậc một trở lên. Mỗi bậc chỉ chứa tối đa lượng điện của bậc ấy; phần dư mới tràn sang bậc sau. Nhân từng bậc rồi cộng lại.
+**Hướng giải:** Chia số điện đã dùng vào từng bậc theo thứ tự từ bậc một trở lên. Mỗi bậc chỉ chứa tối đa lượng điện của bậc ấy; phần dư mới tràn sang bậc sau. Nhân từng bậc rồi cộng lại.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Không được nhân cả số điện cho một đơn giá duy nhất. Đó chính là lỗi mà cách tính bậc thang sinh ra để chống.
 **Lỗi thường gặp:** Lấy tổng số điện nhân với đơn giá của bậc cuối cùng dùng tới. Phòng: Kẻ bảng ba cột — bậc, số điện của bậc, thành tiền — rồi mới cộng.
 **Gợi ý 3 tầng:** (1) Bậc một chứa được nhiều nhất bao nhiêu kW·h? — (2) Phần dư sau bậc một tràn sang bậc mấy? — (3) Nhân từng bậc riêng rồi mới cộng lại.

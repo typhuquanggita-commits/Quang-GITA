@@ -384,6 +384,8 @@ Kết quả: **x = 100**.
 
 ### Bài IV.1 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 5 phần 14 × 3 phần 13 + 5 phần 14 × 5 phần 13
@@ -450,6 +452,8 @@ Kết quả: **0**.
 
 ### Bài IV.4 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 7 + 104 = x × 9
@@ -490,8 +494,6 @@ Kết quả: **11 475**.
 
 ### Bài V.1 — Dãy phân số dạng n phần (n + 1)
 
-> **BẪY — Chiều của phần bù.**
-
 **Các bước giải**
 
 Bốn phân số đầu: 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5.
@@ -515,8 +517,6 @@ Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
 *Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
 
 ### Bài V.2 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 
@@ -657,7 +657,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.3 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | IV.4 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
-| IV.5 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.5 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | V.1 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
 | V.2 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |
 | V.3 | TD4, TD5 | Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi. |

@@ -380,6 +380,8 @@ Kết quả: **<**.
 
 ### Bài IV.1 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 2 + 76 = x × 6
@@ -400,6 +402,8 @@ Kết quả: **x = 19**.
 
 ### Bài IV.2 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 8 phần 11 × 1 + 8 phần 11 × 4 phần 3
@@ -419,6 +423,8 @@ Kết quả: **56 phần 33**.
 *Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 
 ### Bài IV.3 — Tính nhanh tổng nhiều tích có thừa số chung
+
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
 
 **Các bước giải**
 
@@ -462,8 +468,6 @@ Kết quả: **0**.
 
 ### Bài IV.5 — Chuyển bớt để hai phần bằng nhau
 
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
-
 **Các bước giải**
 
 Xét ý a: Nhóm Hoa Phượng có 132 quyển sách, tổ Một có 110 quyển. Hỏi phải chuyển bao nhiêu quyển từ nhóm Hoa Phượng sang tổ Một để số sách hai tổ bằng nhau?
@@ -483,8 +487,6 @@ Kết quả: **11 quyển**.
 *Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 
 ### Bài V.1 — Tổng dãy cộng trừ xen kẽ
-
-> **BẪY — Số hạng lẻ còn thừa ở cuối dãy.**
 
 **Các bước giải**
 
@@ -525,8 +527,6 @@ Kết quả: **90**.
 *Điểm chốt:* Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 
 ### Bài V.3 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 
@@ -649,7 +649,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
 | IV.1 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.2 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
-| IV.3 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.3 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.4 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | IV.5 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | V.1 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |

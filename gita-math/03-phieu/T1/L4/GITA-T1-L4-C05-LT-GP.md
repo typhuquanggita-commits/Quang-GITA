@@ -474,6 +474,8 @@ Kết quả: **Đại lượng tỉ lệ nghịch, tổng số ngày công**.
 
 ### Bài E.1 — Tính toán với số đo đại lượng
 
+> **BẪY — Cộng số mét với số xăng-ti-mét mà chưa đổi..**
+
 **Các bước giải**
 
 Xét ý a: 16 920 cm : 6 = … cm
@@ -493,8 +495,6 @@ Kết quả: **2 820**.
 *Điểm chốt:* Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
 
 ### Bài E.2 — So sánh hai số đo khác đơn vị
-
-> **BẪY — Đơn vị khác nhau.**
 
 **Các bước giải**
 
@@ -540,8 +540,6 @@ Diện tích: 24 × 6 = **144 m²** — chú ý đơn vị là mét vuông, khá
 
 ### Bài E.4 — Đơn vị đo diện tích
 
-> **BẪY — 100 lần chứ không phải 10 lần.**
-
 **Các bước giải**
 
 1 dm² = 100 cm².
@@ -561,8 +559,6 @@ Diện tích: 24 × 6 = **144 m²** — chú ý đơn vị là mét vuông, khá
 *Phải chắc trước khi làm bài này:* Bảng đơn vị đo độ dài và phép nhân, chia với 100.
 
 ### Bài E.5 — Lịch, thế kỉ, năm nhuận
-
-> **BẪY — Năm tròn trăm.**
 
 **Các bước giải**
 

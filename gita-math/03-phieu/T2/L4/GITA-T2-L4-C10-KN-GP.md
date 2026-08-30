@@ -96,8 +96,6 @@ Kết quả: **5 161**.
 
 ### Bài A.2 — Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
 
-> **BẪY — Phần chung bị đếm hai lần.**
-
 **Các bước giải**
 
 Xét ý a: Có 12 quyển sách Toán và 10 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
@@ -117,8 +115,6 @@ Kết quả: **120 cách**.
 *Điểm chốt:* Có phần chung thì phải **trừ đi một lần** phần chung.
 
 ### Bài A.3 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Cân đĩa không có quả cân, tìm vật nhẹ hơn**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Nói thật – nói dối, bù trừ,
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chia hết và chia có dư trong tình huống chia phần
+
+> **BẪY — Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư..**
 
 **Các bước giải**
 

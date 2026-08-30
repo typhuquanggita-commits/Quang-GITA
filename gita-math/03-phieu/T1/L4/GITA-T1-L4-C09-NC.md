@@ -306,7 +306,7 @@ e) 1 : 1 phần 9 + 2 phần 3
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Kĩ thuật tách – bù để tính và so sánh
 
@@ -384,6 +384,7 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.4
 **Đáp số:** a) 1 phần 2 · b) 7 phần 2 · c) 5 phần 6 · d) 9 phần 4 · e) 3 · f) 1 phần 8 · g) 1 phần 2
@@ -396,6 +397,7 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) 20 phần 39 · b) 6 phần 91 · c) 1 phần 2 · d) 11 phần 5 · e) 21 phần 8 · f) 1 · g) 1 phần 9
@@ -426,6 +428,7 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài III.1
 **Đáp số:** a) Tháng 6 — 24 ngày · b) Tháng 7 — 6 ngày · c) 72 ngày · d) 72 : 5 = 14,4 ngày · e) 18 ngày · f) 3 tháng
@@ -466,8 +469,8 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 
 ### Bài IV.2
 **Đáp số:** a) 362 · b) 2 537 · c) 73 · d) 181 · e) 229 870 · f) 461 007
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -487,21 +490,21 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 
 ### Bài IV.5
 **Đáp số:** a) 2 · b) 5 phần 4 · c) 45 phần 14 · d) 4 · e) 29 phần 3
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài V.1
 **Đáp số:** a) 26 · b) 38 · c) 9 · d) 1 225
-**Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.
 
 ### Bài V.2
 **Đáp số:** a) > · b) < · c) < · d) > · e) <
-**Hướng giải:** BẪY — Chiều của phần bù. **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
+**Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phân số nào thiếu ít hơn? — (3) Thiếu ít hơn thì lớn hơn.

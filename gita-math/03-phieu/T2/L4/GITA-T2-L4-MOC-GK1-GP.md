@@ -378,6 +378,8 @@ Tổng: 14 + 14 + 16 + 22 + 24 = 90 ngày. Trung bình mỗi tháng: 90 : 5 = **
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -507,8 +509,6 @@ Kết quả: **63**.
 *Điểm chốt:* Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 
 ### Bài V.2 — Đại lượng bất biến: tính chẵn lẻ của tổng
-
-> **BẪY — Phải chứng minh, không được thử vài trường hợp.**
 
 **Các bước giải**
 
@@ -653,7 +653,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
 | III.4 | TD2, TD4 | Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau. |
 | III.5 | TD1, TD2, TD4 | Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
 | IV.3 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
 | IV.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |

@@ -136,8 +136,6 @@ Kết quả: **182**.
 
 ### Bài A.4 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Khánh có 84 quyển vở, số vở của Ngọc kém 4 lần số vở của Khánh. Ngọc có bao nhiêu quyển vở?
@@ -157,8 +155,6 @@ Kết quả: **21**.
 *Điểm chốt:* Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 
 ### Bài A.5 — Quãng đường – vận tốc – thời gian
-
-> **BẪY — Đơn vị thời gian.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Có hai trong ba đại lượng quãng đường, vận tốc, t
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Toán điển hình dạng đề thi v
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chuyển đổi giữa hai đại lượng, tổng không đổi
+
+> **BẪY — Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều..**
 
 **Các bước giải**
 
@@ -634,12 +634,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
 | C.2 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| C.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| C.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | C.4 | TD2, TD3 | Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**. |
 | C.5 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD1, TD3 | Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều. |
-| D.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| D.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | D.4 | TD2, TD6 | Hiệu tuổi là đại lượng **bất biến** — chìa khoá của mọi bài toán tuổi. |
 | D.5 | TD1, TD3 | Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |

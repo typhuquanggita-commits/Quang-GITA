@@ -266,16 +266,16 @@ e) 6 hộp bút có 48 chiếc. Hỏi 4 hộp như thế có bao nhiêu chiếc 
 
 Tìm x, trình bày từng bước.
 
-a) x × 5 − 43 = 300
-b) x × 6 + 73 = 145
-c) 107 − x = 61
-d) x : 2 + 56 = 89
-e) x : 4 + 33 = 42
-f) x × 7 − 5 = 77
+a) (x + 36) × 6 = 396
+b) x × 6 − 37 = 209
+c) x × 4 + 73 = 221
+d) x : 6 + 61 = 107
+e) (x − 56) × 2 = 2
+f) 42 − x = 33
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -362,9 +362,10 @@ f) Cột 6 — Kết quả?
 
 ### Bài I.3
 **Đáp số:** a) 133 cm² · b) 120 cm · c) 196 cm² · d) 30 cm · e) 1 600 cm² · f) 152 cm² · g) 52 cm
-**Hướng giải:** BẪY — Đơn vị diện tích. Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
+**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài I.4
 **Đáp số:** a) 68 000 · b) 48 000 · c) 34 000 · d) 7 400 · e) 560 · f) 1 900
@@ -380,7 +381,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài II.1
 **Đáp số:** a) 140 · b) 9 giờ 5 phút · c) 0 giờ 50 phút · d) 5 giờ 55 phút
-**Hướng giải:** BẪY — Phần phút vượt quá 60. 1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
+**Hướng giải:** 1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10.
 **Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra: phần phút của đáp số phải bé hơn 60.
 
@@ -440,14 +441,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) Ngọc: 62 quyển, Yến: 52 quyển · b) Nam: 50 quyển, Khánh: 42 quyển · c) Phúc: 26 quyển, Minh: 20 quyển · d) Chi: 74 quyển, Hà: 66 quyển · e) Lan: 74 quyển, Khánh: 60 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài IV.2
 **Đáp số:** a) 20 m · b) 6 000 000 đồng · c) 30 chai · d) 9 000 000 đồng · e) 33 m · f) 70 chai
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -467,9 +468,9 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tìm trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Sau đó mới trả lời câu hỏi của đề.
 
 ### Bài IV.5
-**Đáp số:** a) x = 343 : 5 · b) x = 12 · c) x = 46 · d) x = 66 · e) x = 36 · f) x = 82 : 7
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 30 · b) x = 41 · c) x = 37 · d) x = 276 · e) x = 57 · f) x = 9
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 

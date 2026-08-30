@@ -129,7 +129,7 @@ def d_m1_03(rng, lop):
         pt_phuong_phap="Đọc vị từ khoá → chọn phép tính",
         pt_nhanh="Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính.",
         tuong_tu=("An có 12 quyển vở, Bình có gấp 3 lần An. Bình có mấy quyển?", "36"),
-        bay="Gấp và kém dùng hai phép tính ngược nhau",
+        chu_y="Gấp và kém dùng hai phép tính ngược nhau",
     )
 
 

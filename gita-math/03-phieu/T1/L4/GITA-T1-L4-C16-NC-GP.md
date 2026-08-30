@@ -382,6 +382,8 @@ Kết quả: **2 500**.
 
 ### Bài IV.1 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 5 + 135 = x × 8
@@ -402,6 +404,8 @@ Kết quả: **x = 45**.
 
 ### Bài IV.2 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 7 × 1 + 7 × 2 + 7 × 3 + … + 7 × 20
@@ -421,6 +425,8 @@ Kết quả: **1 470**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
+
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
 
 **Các bước giải**
 
@@ -486,8 +492,6 @@ Hiệu của phân số lớn nhất và bé nhất: 2 phần 3 − 5 phần 18 
 
 ### Bài V.1 — Tổng dãy cộng trừ xen kẽ
 
-> **BẪY — Số hạng lẻ còn thừa ở cuối dãy.**
-
 **Các bước giải**
 
 Xét ý a: 1 − 2 + 3 − 4 + 5 − 6 + … − 30
@@ -508,8 +512,6 @@ Kết quả: **-15**.
 
 ### Bài V.2 — Kĩ thuật tách – bù để tính và so sánh
 
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
-
 **Các bước giải**
 
 Xét ý a: (696 + 35) × 35 − 696 × 35
@@ -529,8 +531,6 @@ Kết quả: **1 225**.
 *Điểm chốt:* Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 
 ### Bài V.3 — Dãy phân số dạng n phần (n + 1)
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -650,7 +650,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD3, TD2 | Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc. |
 | III.5 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
 | IV.1 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
-| IV.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.2 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.3 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.4 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | IV.5 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |

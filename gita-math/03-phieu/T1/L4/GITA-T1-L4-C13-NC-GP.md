@@ -460,6 +460,8 @@ Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là *
 
 ### Bài IV.4 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -479,6 +481,8 @@ Kết quả: **88**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.5 — Biểu thức nhiều phép tính với phân số
+
+> **BẪY — Làm phép cộng trước phép chia.**
 
 **Các bước giải**
 
@@ -519,8 +523,6 @@ Kết quả: **1,27 ngày**.
 *Điểm chốt:* Đại lượng bất biến ở đây là **tổng số ngày công**.
 
 ### Bài V.2 — Dãy phân số dạng n phần (n + 1)
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -569,8 +571,6 @@ Kết quả: **8**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.4 — Đại lượng khối lượng — đổi đơn vị và chia phần
-
-> **BẪY — Làm tròn lên khi hỏi số xe ít nhất.**
 
 **Các bước giải**
 
@@ -670,7 +670,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
 | IV.2 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.3 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
-| IV.4 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.4 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.5 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
 | V.1 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
 | V.2 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |

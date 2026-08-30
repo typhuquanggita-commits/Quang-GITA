@@ -338,9 +338,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 15 · b) 8 · c) 12 · d) 13 · e) 2
-**Hướng giải:** BẪY — Chia chứ không nhân. Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
+**Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.3
 **Đáp số:** a) 588 · b) 504 · c) 129 · d) 168 · e) 522 · f) 342
@@ -350,9 +351,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.4
 **Đáp số:** a) 33 · b) 23 · c) 34 · d) 32
-**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài A.5
 **Đáp số:** a) 36, 43, 50 · b) 114, 139, 164 · c) 37, 43, 49 · d) 37, 40, 43
@@ -457,14 +459,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Tổng dãy số và quy luật nâng cao” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Điền số hạng còn thiếu của dãy cách đều.” · b) Dãy có ô trống ở giữa · c) Dãy số cách đều · d) Điền số: 4, 9, …, 19, 24 → 14 · e) Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. · f) Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy.
-**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Hướng giải:** BẪY — Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách.. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

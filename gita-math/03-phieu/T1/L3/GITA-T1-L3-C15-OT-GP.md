@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 423 : 7 · b) x = 52 · c) x = 31 · d) x = 50 · e) x = 27
+- **Bài IV.1** — a) x = 8 · b) x = 27 · c) x = 35 · d) x = 10 · e) x = 35
 - **Bài IV.2** — a) 68 · b) 26 · c) 73 · d) 194 · e) 28 · f) 29 · g) 88
 - **Bài IV.3** — a) cạnh 14 cm, diện tích 196 cm² · b) 21 cm · c) hình chữ nhật · d) 6 cm
 - **Bài IV.4** — a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 4 · e) Khánh · f) 2 lần
@@ -400,19 +400,17 @@ Vậy ngày 29 là **Thứ Năm**.
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 7 − 66 = 357
+Xét **x × 5 − 47 = -7**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 423 : 7**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 8**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -641,7 +639,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Nguyên lý bù trừ, sơ đồ Ven | Đếm có phần chung; sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” | Vẽ Ven, điền miền giữa trước, trừ dần ra | Số thích ít nhất một môn = A + B − cả hai. | 39 · 25 · 8 · 3… |
 | III.4 | Đếm hình trong lưới | Quy tắc đếm | Lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ | Số cách chọn 2 trong k là k × (k − 1) : 2. | 6 · 4 đường ngang, 3 đường dọc · 18 · 8… |
 | III.5 | Lịch, tháng, năm nhuận | Số ngày các tháng, năm nhuận, chu kì 7 ngày | Đề nhắc tới ngày, tháng, thứ trong tuần | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. | 31 · có · Thứ Năm · 4… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 423 : 7 · x = 52 · x = 31 · x = 50… |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 8 · x = 27 · x = 35 · x = 10… |
 | IV.2 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 68 · 26 · 73 · 194… |
 | IV.3 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | cạnh 14 cm, diện tích 196 cm² · 21 cm · hình chữ nhật · 6 cm |
 | IV.4 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 3 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 4… |
@@ -673,7 +671,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD6 | Điền **miền giữa trước** — mọi miền khác suy ra từ đó. |
 | III.4 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
 | III.5 | TD4, TD1 | Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | IV.3 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | IV.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |

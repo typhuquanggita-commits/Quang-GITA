@@ -378,6 +378,8 @@ Kết quả: **131,88 cm**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 9 thùng nước mắm, mỗi thùng 25 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
@@ -467,8 +469,6 @@ Kết quả: **6 giờ**.
 *Điểm chốt:* Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
 
 ### Bài IV.5 — Tỉ lệ bản đồ
-
-> **BẪY — Quên đổi đơn vị sau khi nhân.**
 
 **Các bước giải**
 

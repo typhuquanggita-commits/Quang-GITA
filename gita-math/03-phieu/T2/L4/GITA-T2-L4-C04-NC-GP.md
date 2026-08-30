@@ -388,6 +388,8 @@ Kết quả: **hợp tác xã: 28 kg, thư viện: 56 kg**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -456,6 +458,8 @@ Kết quả: **45 quyển**.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 20 thùng nước, mỗi thùng 25 lít. Cửa hàng đã bán 9 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -475,8 +479,6 @@ Kết quả: **275 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.5 — Tính tiền vé cho cả gia đình
-
-> **BẪY — Dùng cả dữ kiện thừa.**
 
 **Các bước giải**
 
@@ -499,8 +501,6 @@ Cả gia đình: 220 000 + 110 000 = **330 000 đồng**.
 *Phải chắc trước khi làm bài này:* Nhân chia số tròn nghìn và kỹ năng gạch chân câu hỏi.
 
 ### Bài V.1 — Dãy số lặp lại theo chu kì
-
-> **BẪY — Số dư 0 ứng với phần tử cuối chu kì.**
 
 **Các bước giải**
 
@@ -659,7 +659,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
 | III.4 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
 | III.5 | TD2, TD6 | Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
 | IV.3 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | IV.4 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
@@ -668,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD6, TD3 | Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu. |
 | V.3 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.4 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
-| V.5 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.5 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 
 ---
 

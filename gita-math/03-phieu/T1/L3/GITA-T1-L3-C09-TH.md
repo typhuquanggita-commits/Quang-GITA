@@ -278,7 +278,7 @@ f) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -373,6 +373,7 @@ f) Cả tổ phải gấp 144 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.2
 **Đáp số:** a) 4 chục nghìn, 2 nghìn, 4 trăm, 5 chục, 1 đơn vị · b) 42 451 − 42 295 = 156 kW·h · c) 42 000 · d) 42 451 · e) ít hơn 2 kW·h
@@ -385,6 +386,7 @@ f) Cả tổ phải gấp 144 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.4
 **Đáp số:** a) 313 · b) 233 · c) 200 · d) 466 · e) 343
@@ -430,7 +432,7 @@ f) Cả tổ phải gấp 144 bông hoa thì làm trong mấy giờ?
 
 ### Bài IV.1
 **Đáp số:** a) Phúc: 76 quyển, Hà: 62 quyển · b) Quân: 50 quyển, Đức: 40 quyển · c) Quân: 24 quyển, An: 16 quyển · d) Sơn: 87 quyển, Vy: 47 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -444,7 +446,7 @@ f) Cả tổ phải gấp 144 bông hoa thì làm trong mấy giờ?
 
 ### Bài IV.3
 **Đáp số:** a) 2 520 000 đồng · b) 6 m · c) 10 chai · d) 4 500 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -458,15 +460,15 @@ f) Cả tổ phải gấp 144 bông hoa thì làm trong mấy giờ?
 
 ### Bài IV.5
 **Đáp số:** a) 14 · b) 510 · c) 105 · d) 8 · e) 615 · f) 405
-**Hướng giải:** BẪY — Chữ số hàng trăm khác 0 và ba chữ số khác nhau. Liệt kê có hệ thống: cố định chữ số hàng trăm rồi tìm cặp chữ số còn lại. Nhớ hai ràng buộc: chữ số hàng trăm khác 0, và ba chữ số khác nhau.
+**Hướng giải:** Liệt kê có hệ thống: cố định chữ số hàng trăm rồi tìm cặp chữ số còn lại. Nhớ hai ràng buộc: chữ số hàng trăm khác 0, và ba chữ số khác nhau.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Liệt kê **có thứ tự** thì mới không sót và không trùng.
 **Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa lặp; hoặc quên điều kiện ba chữ số khác nhau. Phòng: Kẻ bảng theo chữ số hàng trăm tăng dần.
 **Gợi ý 3 tầng:** (1) Chữ số hàng trăm nhỏ nhất có thể là bao nhiêu? — (2) Với mỗi hàng trăm, hai chữ số còn lại phải cộng lại bằng bao nhiêu? — (3) Loại các trường hợp có chữ số trùng nhau.
 
 ### Bài V.1
 **Đáp số:** a) 136 · b) 170 · c) 102 · d) 43 · e) 93 · f) 102
-**Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
@@ -487,7 +489,7 @@ f) Cả tổ phải gấp 144 bông hoa thì làm trong mấy giờ?
 ### Bài V.4
 **Đáp số:** a) 574 · b) 517 · c) 457 · d) 400 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 5
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

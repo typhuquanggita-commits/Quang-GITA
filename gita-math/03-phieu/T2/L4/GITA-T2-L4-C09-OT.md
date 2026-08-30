@@ -274,7 +274,7 @@ f) Tổ Hai có 273 quyển sách, tổ Một có 195 quyển. Hỏi phải chuy
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -460,14 +460,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) 75 chai · b) 14 m · c) 11 400 000 đồng · d) 25 chai · e) 7 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
 
 ### Bài IV.5
 **Đáp số:** a) 55 quyển · b) 35 quyển · c) 13 quyển · d) 60 quyển · e) 21 quyển · f) 39 quyển
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+**Hướng giải:** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
 **Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
@@ -503,7 +503,7 @@ f) Cột 6 — Kết quả?
 ### Bài V.5
 **Đáp số:** a) Tổng nhiều số có ràng buộc; tổng – tỉ · b) Trung bình cộng của dãy cách đều; tổng – tỉ · c) Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số · d) Tìm số giữa trước; sau đó chia theo tỉ lệ · e) Tổng ba số cách đều luôn chia hết cho 3. · f) 117 · 107 · 127 · vì ba số cách đều nên số ở giữa là trung bình cộng…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 

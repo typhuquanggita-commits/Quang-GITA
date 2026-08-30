@@ -667,7 +667,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.5 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | V.1 | TD6, TD3 | Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**. |
-| V.2 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.2 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.3 | TD2, TD4, TD6 | Dấu của phần chung cả ba là **cộng**, không phải trừ. Đây là chỗ sai nhiều nhất của cả dạng bài. |
 | V.4 | TD2, TD6 | Số tiền sinh lãi ở năm thứ hai lớn hơn số tiền gốc ban đầu. |
 | V.5 | TD3, TD5, TD6 | Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài. |

@@ -354,6 +354,7 @@ f) 98,83 × 3
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài A.2
 **Đáp số:** a) 1 · b) 1 phần 4 · c) 1 phần 12 · d) 3 phần 4 · e) 3 · f) 2 phần 3 · g) 5 phần 7 · h) 1 phần 5
@@ -378,6 +379,7 @@ f) 98,83 × 3
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài B.1
 **Đáp số:** a) Phân số, hỗn số và số thập phân: khái niệm đến phép nhân · b) H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · c) 6 · d) ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài ôn tập phân số: rút gọn, quy đồng, so sánh
@@ -507,6 +509,7 @@ f) 98,83 × 3
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 **Gợi ý 3 tầng:** (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
 
 ---

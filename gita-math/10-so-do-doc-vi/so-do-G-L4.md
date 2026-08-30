@@ -59,9 +59,9 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 | Mức | Dấu hiệu nhìn thấy trong đề | Dạng bài | Phương pháp | Lối tắt | Bẫy |
 |:--:|---|---|---|---|---|
-| M1 | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Quy tắc nhân | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | Cộng hay nhân |
+| M1 | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Quy tắc nhân | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | — |
 | M1 | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Suy luận loại trừ có bảng | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | — |
-| M1 | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” | Đếm bằng quy tắc cộng, nhân, bù trừ | Vẽ hai vòng tròn giao nhau, đếm theo miền | Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. | Phần chung bị đếm hai lần |
+| M1 | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” | Đếm bằng quy tắc cộng, nhân, bù trừ | Vẽ hai vòng tròn giao nhau, đếm theo miền | Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. | — |
 | M2 | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả thiết tạm hai loại | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | Chia cho hiệu, không chia cho một loại |
 | M2 | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Suy luận nói thật – nói dối | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | Cặp câu phủ định nhau |
 | M2 | “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn” | Bài toán trồng cây, chia đoạn | Tính số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | Năm trường hợp khác nhau |
@@ -75,7 +75,7 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M4 | Bộ chữ số cho trước kèm điều kiện chia hết | Đếm số lập được có điều kiện | Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại | Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba. | Chữ số 0 ở hàng trăm |
 | M4 | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Cân đĩa, tìm vật khác biệt | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | Chia ba chứ không chia đôi |
 | M4 | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định | Lập bảng | Kẻ bảng hai chiều, đánh × và ✓, mỗi ✓ kéo theo cả dòng cả cột | Bắt đầu từ người bị loại nhiều khả năng nhất — dòng ấy chốt được sớm nhất. | Đánh dấu đúng mà quên gạch phần còn lại |
-| M5 | “Chứng tỏ rằng có ít nhất … cùng …” | Đi-rích-lê dạng chứng minh | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | — |
+| M5 | “Chứng tỏ rằng có ít nhất … cùng …” | Đi-rích-lê dạng chứng minh | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | Kết luận chung chung mà không chỉ ra con số cụ thể |
 | M5 | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau | Trắc nghiệm đếm nhanh | Nhận dạng kỹ thuật trước, tính sau | Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1. | Chia 2 và cộng 1 — hai chỗ hay quên nhất |
 
 ---
@@ -101,48 +101,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số. Tìm mọi số có hai chữ số vừa chia hết cho 5, vừa có tổng hai chữ số bằng 7.
+**Đề 1.** Mỗi ý làm trong 60 giây. Ghi thẳng đáp số, không cần trình bày. Có 10 bạn, mỗi bạn bắt tay với tất cả các bạn còn lại đúng một lần. Có bao nhiêu cái bắt tay?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Chú ý mỗi lần cân cho bao nhiêu kết quả. Có 9 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
+**Đề 2.** Nêu rõ ngăn kéo là gì, đồ vật là gì. Có 28 học sinh sinh trong 9 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Ghi rõ thương và số dư trong mọi câu trả lời. Có 133 cái kẹo chia đều cho 12 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+**Đề 3.** Ba bạn Quân, Nam, Phúc mỗi bạn thích đúng một môn khác nhau trong ba môn Mĩ thuật, Âm nhạc, Tiếng Anh. Biết **Quân thích Mĩ thuật** và **Nam không thích Tiếng Anh**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Quân thích Mĩ thuật” cho phép đánh dấu ✔ vào ô nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Ba bạn Dũng, Yến, Vy mỗi bạn thích đúng một môn khác nhau trong ba môn Toán, Mĩ thuật, Âm nhạc. Biết **Dũng thích Toán** và **Yến không thích Âm nhạc**. Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Dũng thích Toán” cho phép đánh dấu ✔ vào ô nào?
+**Đề 4.** Cho bốn chữ số **1, 2, 6, 9**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó. Lập được tất cả bao nhiêu số?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Đọc kĩ chữ “và” hay chữ “hoặc”. Có 11 quyển sách Toán và 9 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+**Đề 5.** Vẽ hai vòng tròn giao nhau và điền số vào từng miền. Lớp có 54 học sinh. Có 30 bạn thích môn Toán, 39 bạn thích môn Tiếng Việt, 15 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Ba bạn Hà, Dũng, Sơn, trong đó đúng một bạn làm vỡ lọ hoa.
-- Hà nói: “Tôi không làm.”
-- Dũng nói: “Sơn làm.”
-- Sơn nói: “Dũng nói dối.”
-
-Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu nói của Dũng và câu nói của Sơn có thể cùng đúng được không? Vì sao?
+**Đề 6.** Tìm cho ra thứ **không đổi** qua mỗi bước. Trên bảng viết các số từ 1 đến 28. Tổng của chúng bằng bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Ba tình huống, cùng một cách đếm. Cho 6 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+**Đề 7.** Vẽ một hình nhỏ ba khoảng để kiểm tra trước khi áp công thức. Đoạn đường dài 128 m, trồng cây cách nhau 4 m, trồng cả ở hai đầu. Cần bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Xét trường hợp xấu nhất. Trong một hộp có bi thuộc 6 màu (đỏ, xanh, vàng, trắng, tím, nâu), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 5 viên cùng màu?
+**Đề 8.** Với mỗi câu, viết ra danh sách đã thử rồi mới ghi đáp số. Đáp số có thể gồm nhiều số. Tìm mọi số có hai chữ số vừa chia hết cho 3, vừa có tổng hai chữ số bằng 9.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Dùng phương pháp giả thiết tạm. Trong sân có 24 chiếc xe ô tô và xe đạp, đếm được tất cả 72 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+**Đề 9.** Bắt buộc kẻ bảng ra giấy. Không được suy luận nhẩm ở bài này. Ba bạn Khánh, Dũng và Đức mỗi bạn học một môn năng khiếu khác nhau trong ba môn: hát, múa và đàn. Biết rằng: Khánh không học múa và cũng không học đàn; Dũng không học đàn. Hỏi mỗi bạn học môn nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Nêu rõ ngăn kéo là gì, đồ vật là gì. Có 5 học sinh sinh trong 4 tháng khác nhau. Chứng tỏ rằng có ít nhất 2 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+**Đề 10.** Xét trường hợp xấu nhất, không xét trường hợp may mắn. Có 9 gói kẹo giống hệt nhau, trong đó đúng một gói nhẹ hơn. Dùng cân đĩa không có quả cân, cần cân ít nhất mấy lần để tìm ra gói nhẹ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -152,16 +147,16 @@ Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật. Câu 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Thử chọn | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn |
-| 2 | Cân đĩa, chia ba | Cân đĩa không có quả cân, tìm vật khác biệt |
-| 3 | Chia hết và chia có dư trong tình huống chia phần | “Chia đều cho … bạn”, “còn thừa” |
-| 4 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
-| 5 | Đếm bằng quy tắc cộng, nhân, bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” |
-| 6 | Suy luận nói thật – nói dối | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau |
-| 7 | Đếm số cặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” |
-| 8 | Nguyên lí Đi-rích-lê | Cụm “ít nhất … để chắc chắn …” |
-| 9 | Giả thiết tạm hai loại | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ |
-| 10 | Đi-rích-lê dạng chứng minh | “Chứng tỏ rằng có ít nhất … cùng …” |
+| 1 | Trắc nghiệm đếm nhanh | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau |
+| 2 | Đi-rích-lê dạng chứng minh | “Chứng tỏ rằng có ít nhất … cùng …” |
+| 3 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định |
+| 4 | Đếm số lập được có điều kiện | Bộ chữ số cho trước kèm điều kiện chia hết |
+| 5 | Nguyên lý bù trừ, sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” |
+| 6 | Bài toán bất biến | Một quá trình lặp nhiều bước, hỏi trạng thái cuối |
+| 7 | Bài toán trồng cây, chia đoạn | “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn” |
+| 8 | Thử chọn | Đề đòi một số thoả **nhiều điều kiện cùng lúc**, số khả năng hữu hạn |
+| 9 | Lập bảng | Đề ghép **người với việc** và cho một loạt câu khẳng định hoặc phủ định |
+| 10 | Cân đĩa, tìm vật khác biệt | Cân đĩa không có quả cân, tìm vật nhẹ hơn |
 
 ---
 

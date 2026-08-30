@@ -472,6 +472,8 @@ Hiệu của phân số lớn nhất và bé nhất: 7 phần 8 − 5 phần 24 
 
 ### Bài IV.5 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 1 phần 3 : 9 phần 11 + 1 phần 2
@@ -515,8 +517,6 @@ Kết quả: **1**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.2 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 

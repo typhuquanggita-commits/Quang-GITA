@@ -342,12 +342,14 @@ e) Diện tích mảnh vườn là bao nhiêu?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài A.2
 **Đáp số:** a) áp đúng đỉnh góc và một cạnh của góc vào ê ke · b) 4 góc vuông · c) 1 góc vuông · d) 10 cm · e) AM = MB · f) không chắc, còn phải có AM = MB · g) không, vì AM khác nửa AB
 **Hướng giải:** Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Nằm giữa **chưa đủ** để là trung điểm.
 **Lỗi thường gặp:** Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. Phòng: Đo cả hai đoạn AM và MB rồi mới kết luận.
+**Chú ý:** Nằm giữa nhưng không chia đôi.
 
 ### Bài A.3
 **Đáp số:** a) 514 · b) 1 530 · c) 1 086 · d) 430 · e) 1 220 · f) 456 · g) 1 063
@@ -360,6 +362,7 @@ e) Diện tích mảnh vườn là bao nhiêu?
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài A.5
 **Đáp số:** a) chữ số 2, giá trị 2 000 · b) chữ số 5, giá trị 500 · c) chữ số 5, giá trị 50 · d) chữ số 4, giá trị 4
@@ -464,9 +467,10 @@ e) Diện tích mảnh vườn là bao nhiêu?
 
 ### Bài E.1
 **Đáp số:** a) 910 · b) 742 · c) 951 dư 1 · d) 696 dư 2 · e) 4 688 · f) 561 · g) 312 dư 4
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
+**Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 **Gợi ý 3 tầng:** (1) Đặt tính thẳng hàng đơn vị. — (2) Nhân hoặc chia từ trái sang phải với phép chia. — (3) Thử lại bằng phép tính ngược.
 
 ### Bài E.2
@@ -485,14 +489,15 @@ e) Diện tích mảnh vườn là bao nhiêu?
 
 ### Bài E.4
 **Đáp số:** a) 62 cm · b) 100 cm² · c) 28 cm · d) 225 cm² · e) 56 cm²
-**Hướng giải:** BẪY — Đơn vị diện tích. Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
+**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 **Gợi ý 3 tầng:** (1) Đề hỏi chu vi hay diện tích? — (2) Viết công thức ra trước. — (3) Ghi đúng đơn vị.
 
 ### Bài E.5
 **Đáp số:** a) (24 + 14) × 2 = 76 m · b) 76 − 2 = 74 m · c) 76 : 2 = 38 cọc · d) 74 × 30 000 = 2 220 000 đồng · e) 24 × 14 = 336 m²
-**Hướng giải:** Tính chu vi trước, mọi câu về rào và cọc đều dựa vào nó. Riêng số cọc phải nhớ đường rào khép kín nên không cộng thêm 1.
+**Hướng giải:** BẪY — Quên rằng quanh vườn khép kín thì số cọc bằng số khoảng. Tính chu vi trước, mọi câu về rào và cọc đều dựa vào nó. Riêng số cọc phải nhớ đường rào khép kín nên không cộng thêm 1.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1.
 **Lỗi thường gặp:** Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng. Phòng: Vẽ nhanh hình vuông 4 cạnh, cắm cọc thử rồi đếm.
 **Gợi ý 3 tầng:** (1) Muốn biết rào hết bao nhiêu mét thì phải tính cái gì trước? — (2) Đường rào có điểm đầu và điểm cuối tách rời nhau không? — (3) Với đường khép kín thì số cọc bằng đúng số khoảng.

@@ -522,8 +522,6 @@ Cả lớp: cộng theo **cột** — nam 19 bạn, nữ 31 bạn, tất cả **
 
 ### Bài E.3 — Phép chia có dư
 
-> **BẪY — Số dư phải bé hơn số chia.**
-
 **Các bước giải**
 
 Xét ý a: 111 076 : 18 = ? (dư ?)

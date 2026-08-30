@@ -229,11 +229,11 @@ e) 4, 5, 7, 10, 14, …
 
 Tìm x, trình bày từng bước.
 
-a) x × 8 + 60 = 380
-b) x : 5 + 70 = 128
-c) 16 − x = 7
-d) x × 2 − 8 = 66
-e) x : 9 + 20 = 56
+a) (x + 69) × 9 = 1 134
+b) x × 8 + 60 = 380
+c) (x − 70) × 5 = 5
+d) x : 2 + 7 = 16
+e) x × 2 − 8 = 58
 
 ### Bài 2. (5 điểm) Tính nhanh bằng cách tách số
 
@@ -279,7 +279,7 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -443,9 +443,9 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
 
 ### Bài IV.1
-**Đáp số:** a) x = 40 · b) x = 290 · c) x = 9 · d) x = 37 · e) x = 324
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 57 · b) x = 40 · c) x = 71 · d) x = 18 · e) x = 33
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 

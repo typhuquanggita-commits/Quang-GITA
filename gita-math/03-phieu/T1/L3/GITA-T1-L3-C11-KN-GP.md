@@ -100,8 +100,6 @@ Cộng các chữ số: 3 + 0 + 8 + 8 + 6 = 25.
 
 ### Bài A.2 — Góc vuông và trung điểm của đoạn thẳng
 
-> **BẪY — Nằm giữa nhưng không chia đôi.**
-
 **Các bước giải**
 
 Trung điểm là điểm vừa **nằm giữa**, vừa **chia đôi** đoạn thẳng.
@@ -121,8 +119,6 @@ AM = 28 : 2 = 14 (cm).
 *Phải chắc trước khi làm bài này:* Đo độ dài đoạn thẳng và phép chia cho 2.
 
 ### Bài A.3 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Dãy có số đầu, số cuối, khoảng cách đều**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Dãy số và quy luật” và mục 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tìm quy luật dãy số
+
+> **BẪY — Không tìm ra hiệu đều thì bỏ cuộc..**
 
 **Các bước giải**
 

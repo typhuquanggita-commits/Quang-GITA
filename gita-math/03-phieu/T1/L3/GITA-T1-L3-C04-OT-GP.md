@@ -436,6 +436,8 @@ Kết quả: **11 chiếc**.
 
 ### Bài IV.3 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Minh và Bình có tất cả 138 quyển vở. Minh có nhiều hơn Bình 4 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?

@@ -274,7 +274,7 @@ d) Tìm số bé nhất không quá 500 chia cho 6 dư 3 và chia cho 9 dư 3.
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tỉ số thay đổi khi một đại lượng thay đổi
 
@@ -377,6 +377,7 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.3
 **Đáp số:** a) có · b) có · c) có · d) có
@@ -395,6 +396,7 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài III.1
 **Đáp số:** a) 368 · 386 · 638 · 683 · 836 · 863 · b) 6 · c) 863 · d) 368 · e) 4 · f) 0 · g) 1 231
@@ -435,8 +437,8 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 
 ### Bài IV.2
 **Đáp số:** a) 354 · b) 2 128 · c) 71 · d) 354 · e) 378 426 · f) 378 426
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -463,7 +465,7 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 
 ### Bài V.1
 **Đáp số:** a) 96 đơn vị · b) 69 đơn vị · c) 12 đơn vị · d) 60 đơn vị · e) 34 đơn vị · f) 8 đơn vị
-**Hướng giải:** BẪY — Đại lượng nào giữ nguyên. Số bé không thay đổi, nên hãy tìm số bé trước bằng bài toán tổng – tỉ. Sau đó tính số lớn mới theo tỉ số mới, rồi lấy số lớn mới trừ số lớn cũ.
+**Hướng giải:** Số bé không thay đổi, nên hãy tìm số bé trước bằng bài toán tổng – tỉ. Sau đó tính số lớn mới theo tỉ số mới, rồi lấy số lớn mới trừ số lớn cũ.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu.
 **Lỗi thường gặp:** Lấy hiệu hai tỉ số nhân với tổng ban đầu. Phòng: Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới.
 **Gợi ý 3 tầng:** (1) Đại lượng nào không thay đổi trong bài? — (2) Tìm số bé trước bằng tổng – tỉ. — (3) Số lớn mới bằng số bé nhân tỉ số mới.

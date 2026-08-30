@@ -96,8 +96,6 @@ Kết quả: **1 428**.
 
 ### Bài A.2 — Tìm một phần mấy của một số
 
-> **BẪY — Chia chứ không nhân.**
-
 **Các bước giải**
 
 Xét ý a: Tìm 1 phần 6 của 78.
@@ -117,8 +115,6 @@ Kết quả: **13**.
 *Điểm chốt:* Một phần mấy thì **chia** cho số đó.
 
 ### Bài A.3 — Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
-
-> **BẪY — Phần chung bị đếm hai lần.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Một bảng hai chiều: hàng là nhóm, cột là loại số 
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Phân số, tỉ số và thống kê 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tìm phân số của một số qua nhiều bước
+
+> **BẪY — Lấy cả hai phân số tính trên tổng ban đầu..**
 
 **Các bước giải**
 

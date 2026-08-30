@@ -349,9 +349,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) < · b) 0,987 · c) 5 · d) 0,56 · e) <
-**Hướng giải:** BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn. Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
+**Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài A.4
 **Đáp số:** a) 118 761 · b) 745 518 · c) 3 475 249 · d) 4 893 077
@@ -361,9 +362,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.5
 **Đáp số:** a) < · b) > · c) < · d) < · e) < · f) > · g) < · h) >
-**Hướng giải:** BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn. Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
+**Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -462,14 +464,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Phân số ẩn, phần trăm trong biểu đồ và dạng đề chuyên” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Phần trăm thay đổi nhiều lần.” · b) Hai lần tăng giảm liên tiếp · c) Tỉ số phần trăm, mốc quy chiếu · d) Giá 100 000 đồng tăng 10% rồi giảm 10%. Giá cuối là bao nhiêu? → 99 000 đồng · e) Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. · f) Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ.
-**Hướng giải:** Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
+**Hướng giải:** BẪY — Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu.. Lần thứ hai tính phần trăm trên **giá mới** chứ không phải giá ban đầu. Vì vậy tăng p% rồi giảm p% **không** đưa về giá cũ. Phải tính lần lượt từng bước, ghi rõ giá sau mỗi lần.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **thay đổi** sau mỗi lần — đây là bẫy kinh điển.
 **Lỗi thường gặp:** Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. Phòng: Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

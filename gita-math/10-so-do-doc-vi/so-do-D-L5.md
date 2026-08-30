@@ -69,9 +69,9 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 |:--:|---|---|---|---|---|
 | M1 | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tìm trung bình cộng | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | — |
 | M1 | Đề cho **tổng** và **hiệu** của hai số | Bài toán tổng – hiệu | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | — |
-| M1 | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Quan hệ nhiều hơn – ít hơn, gấp – kém | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | Gấp và kém dùng hai phép tính ngược nhau |
+| M1 | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Quan hệ nhiều hơn – ít hơn, gấp – kém | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | — |
 | M1 | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Rút về đơn vị | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | — |
-| M1 | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Ba dạng cơ bản của chuyển động đều | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. | Đơn vị thời gian |
+| M1 | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Ba dạng cơ bản của chuyển động đều | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. | — |
 | M2 | “Có tất cả …” và “… nhiều hơn … là …” | Tổng – hiệu có lời văn | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | — |
 | M2 | Cụm “trung bình mỗi …” | Ba dạng bài trung bình cộng | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | — |
 | M2 | Hai đại lượng cùng tăng cùng giảm | Tỉ lệ thuận, rút về đơn vị | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. | — |
@@ -124,43 +124,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Tìm hai số trong mỗi trường hợp. Tổng hai số là 744, hiệu hai số là 168. Tìm hai số đó.
+**Đề 1.** Tìm hai số trong mỗi trường hợp. Tổng hai số là 888, hiệu hai số là 268. Tìm hai số đó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Viết hai lần mua thành hai dòng thẳng cột nhau rồi mới trừ. Lần thứ nhất mua 3 kg phân bón và 3 kg thóc hết 138 000 đồng. Lần thứ hai mua 3 kg phân bón và 5 kg thóc hết 190 000 đồng. Tính giá một kg thóc và một kg phân bón.
+**Đề 2.** Tính thời gian gặp nhau trước. Hai xe đi ngược chiều từ hai địa điểm cách nhau 276 km, vận tốc 54 km/giờ và 15 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Tính thời gian gặp nhau trước. Hai xe đi ngược chiều từ hai địa điểm cách nhau 168 km, vận tốc 54 km/giờ và 30 km/giờ. Khi gặp nhau, xe thứ nhất đã đi được bao nhiêu ki-lô-mét?
+**Đề 3.** Giải từng bài toán nhỏ. Trung bình mỗi ngày cửa hàng bán được 236 kg gạo. 4 ngày đầu bán được 246, 233, 239, 237 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Giải bằng cách rút về đơn vị hoặc dùng tỉ số. Mua 11 quyển vở hết 275 nghìn đồng. Mua 25 quyển vở như thế hết bao nhiêu nghìn đồng?
+**Đề 4.** Viết hai lần mua thành hai dòng thẳng cột nhau rồi mới trừ. Lần thứ nhất mua 4 kg xi măng và 3 kg gạo hết 116 000 đồng. Lần thứ hai mua 4 kg xi măng và 7 kg gạo hết 180 000 đồng. Tính giá một kg gạo và một kg xi măng.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Chú ý đổi đơn vị ở bước cuối. Trên bản đồ tỉ lệ 1 : 1 000, một đoạn đường đo được 19 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+**Đề 5.** Chú ý điều gì thay đổi và điều gì không đổi theo thời gian. Hiện nay bố 56 tuổi, con 14 tuổi. Cách đây 4 năm, bố hơn con bao nhiêu tuổi?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Xác định rõ hai xe lại gần nhau hay đuổi nhau. Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 140 km và đi ngược chiều để gặp nhau. Xe thứ nhất đi 60 km/giờ, xe thứ hai đi 10 km/giờ. Sau bao lâu hai xe gặp nhau?
+**Đề 6.** Câu nào cũng phải quy về **một đơn vị thời gian** hoặc **một người** trước khi tính. Vòi thứ nhất chảy một mình thì đầy bể sau 3 giờ. Vòi thứ hai chảy một mình thì đầy bể sau 6 giờ. Hỏi mở cả hai vòi cùng lúc thì sau bao lâu đầy bể?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Ghi rõ đã chọn loại nào làm chuẩn trước khi tính. Mua 5 chiếc bút và 11 chiếc cặp hết 279 000 đồng. Biết giá một chiếc bút bằng giá 4 chiếc cặp. Tính giá một chiếc cặp và giá một chiếc bút.
+**Đề 7.** Làm trong 25 phút. Trình bày như bài thi thật: có câu lời giải, có đáp số. Hai xe khởi hành cùng lúc từ hai địa điểm cách nhau 120 km và đi ngược chiều. Vận tốc lần lượt là 48 km/giờ và 12 km/giờ. Sau bao lâu hai xe gặp nhau?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Câu nào cũng ghi rõ quãng đường tàu đi được gồm những phần nào. Một đoàn tàu chạy với vận tốc 36 km/giờ, chạy qua một cột điện bên đường hết 8 giây. Tính chiều dài đoàn tàu.
+**Đề 8.** Vẽ sơ đồ đoạn thẳng rồi giải. Thư viện chứa nhiều hơn trang trại 41 kg đường. Số đường ở trang trại bằng 6 phần 7 số đường ở thư viện. Mỗi nơi chứa bao nhiêu kg?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Tóm tắt bằng sơ đồ đoạn thẳng rồi giải. Đội Hai và đội Một trồng được 318 cây. Đội Hai trồng nhiều hơn đội Một 98 cây. Mỗi tổ trồng bao nhiêu cây?
+**Đề 9.** Câu nào cũng ghi rõ đang dùng công thức xuôi dòng hay ngược dòng. Một ca nô có vận tốc thực 12 km/giờ đi trên sông có vận tốc dòng nước 3 km/giờ. Tính quãng đường ca nô đi được trong 3 giờ khi xuôi dòng và khi ngược dòng.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Ghi rõ đại lượng nào ứng với 100%. Mua một món hàng 80 000 đồng rồi bán 84 000 đồng. Người bán lãi bao nhiêu phần trăm so với giá mua?
+**Đề 10.** Vẽ sơ đồ ba đoạn thẳng, ghi rõ mỗi đoạn mấy phần. Ba đội trồng được tất cả 45 cây. Biết đội Hai trồng gấp 2 lần nhóm Hoa Phượng, và tổ Ba trồng gấp 3 lần đội Hai. Hỏi mỗi đội trồng được bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -171,15 +171,15 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
 | 1 | Bài toán tổng – hiệu | Đề cho **tổng** và **hiệu** của hai số |
-| 2 | Phương pháp khử | Đề cho **hai lần mua** cùng hai loại hàng với hai tổng tiền khác nhau |
-| 3 | Chuyển động ngược chiều, tính quãng đường từng xe | Hỏi quãng đường **của một xe** tính đến lúc gặp nhau |
-| 4 | Tỉ lệ thuận, rút về đơn vị | Hai đại lượng cùng tăng cùng giảm |
-| 5 | Tỉ lệ bản đồ, tỉ lệ xích | Có kí hiệu tỉ lệ dạng 1 : n |
-| 6 | Chuyển động ngược chiều, cùng chiều | “Đi ngược chiều để gặp nhau”, “đuổi theo” |
-| 7 | Phương pháp thay thế | Đề cho **quan hệ đổi ngang** giữa hai loại cùng một tổng chung |
-| 8 | Vật chuyển động có chiều dài đáng kể | Đề cho **chiều dài của chính vật chuyển động** — đoàn tàu, đoàn người, khúc gỗ |
-| 9 | Tổng – hiệu có lời văn | “Có tất cả …” và “… nhiều hơn … là …” |
-| 10 | Tỉ số phần trăm trong mua bán | Từ khoá “giảm giá”, “tăng giá”, “lãi”, “lỗ” |
+| 2 | Chuyển động ngược chiều, tính quãng đường từng xe | Hỏi quãng đường **của một xe** tính đến lúc gặp nhau |
+| 3 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” |
+| 4 | Phương pháp khử | Đề cho **hai lần mua** cùng hai loại hàng với hai tổng tiền khác nhau |
+| 5 | Bài toán tuổi | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm |
+| 6 | Rút về đơn vị | Đề cho **thời gian làm một mình** của từng bên, hoặc số người và số ngày |
+| 7 | Đề tổng hợp nhiều mạch | Một đề dài gồm nhiều ý nối tiếp nhau |
+| 8 | Bài toán hiệu – tỉ | Đề cho **hiệu** và **tỉ số** |
+| 9 | Chuyển động trên dòng nước | Đề nhắc **dòng nước**, **xuôi dòng**, **ngược dòng**, ca nô hay thuyền |
+| 10 | Sơ đồ đoạn thẳng | Đề cho **ba đại lượng** nối nhau bằng hai quan hệ gấp |
 
 ---
 

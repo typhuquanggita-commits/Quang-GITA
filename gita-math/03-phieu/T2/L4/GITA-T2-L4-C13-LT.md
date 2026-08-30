@@ -338,18 +338,21 @@ f) 4 576 cm : 2 = … cm
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài A.2
 **Đáp số:** a) 3 600 · b) 100 000 · c) 6 800 · d) 1 000
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài A.3
 **Đáp số:** a) 176 cm · b) 58 cm · c) 100 cm² · d) 143 cm² · e) 132 cm · f) 220 cm · g) 36 cm² · h) 1 326 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài A.4
 **Đáp số:** a) 3 tấn 6 tạ 33 kg · b) 1 964 · c) 7 tạ 13 kg · d) 1 tấn 3 tạ 90 kg
@@ -362,6 +365,7 @@ f) 4 576 cm : 2 = … cm
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài B.1
 **Đáp số:** a) Đại lượng, đo lường và toán thực tế · b) E — Đại lượng – Đo lường – Thời gian · c) 4 · d) ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài đổi đơn vị đo diện tích và bài toán ngược
@@ -460,16 +464,18 @@ f) 4 576 cm : 2 = … cm
 
 ### Bài E.1
 **Đáp số:** a) 4 tuần 4 ngày · b) XX · c) có · d) 31 · e) không
-**Hướng giải:** BẪY — Năm tròn trăm. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
+**Hướng giải:** BẪY — Coi mọi năm chia hết cho 4 đều là năm nhuận.. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 **Gợi ý 3 tầng:** (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
 
 ### Bài E.2
 **Đáp số:** a) < · b) < · c) < · d) <
-**Hướng giải:** BẪY — Đơn vị khác nhau. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
+**Hướng giải:** BẪY — So thẳng hai con số, bỏ qua đơn vị.. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 **Gợi ý 3 tầng:** (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
 
 ### Bài E.3
@@ -481,9 +487,10 @@ f) 4 576 cm : 2 = … cm
 
 ### Bài E.4
 **Đáp số:** a) 44 · b) 1 400 · c) 240 000 · d) 39 · e) 21 · f) 29
-**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 **Gợi ý 3 tầng:** (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
 
 ### Bài E.5

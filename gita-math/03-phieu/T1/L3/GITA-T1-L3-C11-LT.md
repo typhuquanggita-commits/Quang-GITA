@@ -350,6 +350,7 @@ e) 10, …, 22, 28, 34, 40
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.2
 **Đáp số:** a) 5 · b) 4 · c) 9 · d) 7 · e) 70 000 + 7 000 + 900 + 30 + 4 · f) 30 · g) 77 935
@@ -362,12 +363,14 @@ e) 10, …, 22, 28, 34, 40
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài A.4
 **Đáp số:** a) 16 · b) 57 · c) 17 · d) 43 · e) 31 · f) 134 · g) 45
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài A.5
 **Đáp số:** a) 29, 34, 39 · b) 43, 52, 61 · c) 20, 24, 28 · d) 40, 47, 54 · e) 20, 23, 26 · f) 100, 115, 130 · g) 51, 57, 63
@@ -486,9 +489,10 @@ e) 10, …, 22, 28, 34, 40
 
 ### Bài E.3
 **Đáp số:** a) 834 · b) 253 dư 3 · c) 3 115 · d) 774 dư 6 · e) 405
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
+**Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 **Gợi ý 3 tầng:** (1) Đặt tính thẳng hàng đơn vị. — (2) Nhân hoặc chia từ trái sang phải với phép chia. — (3) Thử lại bằng phép tính ngược.
 
 ### Bài E.4
@@ -500,7 +504,7 @@ e) 10, …, 22, 28, 34, 40
 
 ### Bài E.5
 **Đáp số:** a) 28 · b) 32 · c) 44 · d) 43 · e) 16
-**Hướng giải:** Tìm khoảng cách từ hai số liền nhau đã biết, rồi cộng khoảng cách ấy vào số đứng trước chỗ trống. Kiểm tra lại bằng số đứng sau.
+**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách từ hai số liền nhau đã biết, rồi cộng khoảng cách ấy vào số đứng trước chỗ trống. Kiểm tra lại bằng số đứng sau.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở chỗ có **hai số liền nhau** đã biết.
 **Lỗi thường gặp:** Lấy hiệu hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 **Gợi ý 3 tầng:** (1) Tìm hai số liền nhau đã biết. — (2) Hiệu của chúng là khoảng cách. — (3) Cộng khoảng cách vào số đứng ngay trước chỗ trống.

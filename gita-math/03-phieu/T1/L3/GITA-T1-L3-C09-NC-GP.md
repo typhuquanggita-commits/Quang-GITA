@@ -672,7 +672,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | V.1 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | V.2 | TD2, TD6 | Đừng quên **đếm cả chính mình** khi cộng lại. |
-| V.3 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.3 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.5 | TD4, TD6 | Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 

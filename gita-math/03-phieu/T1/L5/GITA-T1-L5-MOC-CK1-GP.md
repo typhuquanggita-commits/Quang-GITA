@@ -376,6 +376,8 @@ Kết quả: **22 cây**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 19 thùng sữa, mỗi thùng 24 lít. Cửa hàng đã bán 9 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
@@ -465,8 +467,6 @@ Lượng sơn: 108 : 5 = 21,6 lít. Sơn bán theo lít nên phải **làm tròn
 *Phải chắc trước khi làm bài này:* Công thức diện tích xung quanh hình hộp chữ nhật.
 
 ### Bài IV.5 — Đặt chữ thay chữ số rồi lập luận
-
-> **BẪY — Quên chữ số hàng cao nhất khác 0.**
 
 **Các bước giải**
 

@@ -266,7 +266,7 @@ d) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ h
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
@@ -339,6 +339,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.3
 **Đáp số:** a) 16 · b) 111 · c) 156 · d) 80 · e) 35
@@ -351,6 +352,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.5
 **Đáp số:** a) 336 · b) 399 · c) 348 · d) 470
@@ -420,7 +422,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài IV.1
 **Đáp số:** a) 90 lít · b) 25 lít · c) 18 lít · d) 48 lít · e) 48 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -434,8 +436,8 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài IV.3
 **Đáp số:** a) 20 · b) 107 · c) 1 905 · d) 63,5 · e) 127 · f) 127
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -448,15 +450,15 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài IV.5
 **Đáp số:** a) 20 phần 9 giờ · b) 30 phần 13 giờ · c) 1 giờ 12 phút · d) 6 giờ 40 phút
-**Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
+**Hướng giải:** Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
 **Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Gợi ý 3 tầng:** (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
 
 ### Bài V.1
 **Đáp số:** a) 105 · b) 97 · c) 113 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 15 · f) 20 · g) 5
-**Hướng giải:** BẪY — Số lượng chẵn thì không có số giữa. Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

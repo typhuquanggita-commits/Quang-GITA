@@ -339,21 +339,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 6 cách · b) 36 cách · c) 20 cách · d) 40 cách · e) 16 cách · f) 28 cách
-**Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài A.3
 **Đáp số:** a) 24 cách · b) 13 bạn · c) 36 cách · d) 13 bạn · e) 21 cách
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.4
 **Đáp số:** a) 6 giờ 21 phút · b) 2 giờ 48 phút · c) 6 giờ 13 phút · d) 509
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài A.5
 **Đáp số:** a) 249 · b) 968 · c) 1 396 · d) 1 038 · e) 11
@@ -458,14 +461,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Toán đếm, nguyên lý bù trừ và chia phần” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Suy luận loại trừ có bảng.” · b) Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định · c) Phương pháp lập bảng, loại trừ · d) Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? → Tiếng Việt · e) Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. · f) Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định.
-**Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
+**Hướng giải:** BẪY — Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng.. Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 **Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

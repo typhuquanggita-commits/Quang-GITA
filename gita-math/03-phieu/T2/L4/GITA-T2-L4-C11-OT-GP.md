@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài I.1 — Tính tổng dãy số cách đều
 
-> **BẪY — Quên chia 2.**
-
 **Các bước giải**
 
 Xét ý a: Tính tổng: 1 + 2 + 3 + … + 10
@@ -378,6 +376,8 @@ Kết quả: **90**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -398,6 +398,8 @@ Kết quả: **26**.
 
 ### Bài IV.2 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 6 thùng sữa, mỗi thùng 18 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
@@ -417,6 +419,8 @@ Kết quả: **18 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.3 — Lọc số hạng theo điều kiện chia hết
+
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
 
 **Các bước giải**
 
@@ -633,13 +637,13 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD4 | Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau. |
 | III.4 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | III.5 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
-| IV.3 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.3 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.4 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | IV.5 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
 | V.1 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
-| V.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| V.2 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.3 | TD4, TD6 | Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**. |
 | V.4 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
 | V.5 | TD2, TD4 | Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài. |

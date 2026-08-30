@@ -390,6 +390,8 @@ Không thích môn nào: 40 − 39 = 1 (bạn).
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Sơn và Đức có tất cả 190 quyển vở. Sơn có nhiều hơn Đức 32 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -483,8 +485,6 @@ Kết quả: **hình chữ nhật**.
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và hình vuông.
 
 ### Bài IV.5 — Ghép hình vuông thành hình chữ nhật
-
-> **BẪY — Chu vi không cộng như diện tích.**
 
 **Các bước giải**
 
@@ -668,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | V.3 | TD1, TD3 | Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm. |
 | V.4 | TD1, TD3 | Chu vi ghi **cm**, diện tích ghi **cm²**. |
-| V.5 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.5 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 
 ---
 

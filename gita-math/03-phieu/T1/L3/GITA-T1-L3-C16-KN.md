@@ -476,7 +476,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài E.3
 **Đáp số:** a) “Hôm nay nhóm mình nói về Thêm, bớt chữ số.” · b) “Viết thêm chữ số … vào bên trái / bên phải” · c) Cấu tạo thập phân của số tự nhiên · d) Viết thêm chữ số 5 vào bên phải số 34 thì được số nào? → 345 · e) Nhầm “thêm bên trái” thành “thêm bên phải”. · f) Thêm một chữ số vào bên phải thì số mới bằng số cũ nhân 10 cộng chữ số ấy.
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 

@@ -452,6 +452,8 @@ Kết quả: **25 quyển**.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 4 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
@@ -491,8 +493,6 @@ Kết quả: **60**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài V.1 — Bài toán giả thiết tạm — gà và chó
-
-> **BẪY — Chia cho hiệu số chân, không phải cho 4.**
 
 **Các bước giải**
 
@@ -657,10 +657,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.3 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | IV.4 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.2 | TD6, TD3 | Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu. |
-| V.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.4 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
 | V.5 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
 

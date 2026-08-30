@@ -436,6 +436,8 @@ Cả gia đình: 480 000 + 180 000 = **660 000 đồng**.
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 4 thùng dầu, mỗi thùng 18 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -456,6 +458,8 @@ Kết quả: **18 lít**.
 
 ### Bài IV.4 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 30 × 12 = 360 (kg).
@@ -473,8 +477,6 @@ Bước 2 — số tiền: 15 000 × 360 = 5 400 000 (đồng).
 *Phải chắc trước khi làm bài này:* Nhân số có nhiều chữ số và bảng đơn vị đo.
 
 ### Bài IV.5 — Cân đĩa và số lần cân ít nhất
-
-> **BẪY — Chia ba chứ không chia đôi.**
 
 **Các bước giải**
 

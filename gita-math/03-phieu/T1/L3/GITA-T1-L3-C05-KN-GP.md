@@ -96,8 +96,6 @@ Kết quả: **5 chữ số, tổng 23**.
 
 ### Bài A.2 — Mi-li-lít và lít
 
-> **BẪY — Đơn vị khác nhau.**
-
 **Các bước giải**
 
 Xét ý a: 11 l 425 ml = … ml
@@ -121,8 +119,6 @@ Kết quả: **11 425**.
 *Phải chắc trước khi làm bài này:* Nhân, chia với 1 000 và so sánh số tự nhiên.
 
 ### Bài A.3 — Đơn vị đo thời gian: giờ và phút
-
-> **BẪY — Cơ số 60 chứ không phải 10.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Số đo có chữ “giờ”, “phút”, “giây”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Đo độ dài, khối lượng, thờ
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tính thời gian trong ngày
+
+> **BẪY — Cộng phần phút thành hơn 60 mà quên đổi thành giờ..**
 
 **Các bước giải**
 

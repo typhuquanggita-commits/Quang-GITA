@@ -482,6 +482,8 @@ Kết quả: **4 510**.
 
 ### Bài IV.5 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 6 + 40 = x × 8
@@ -501,8 +503,6 @@ Kết quả: **x = 20**.
 *Điểm chốt:* Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 
 ### Bài V.1 — Cắt và ghép hình — chu vi thay đổi thế nào
-
-> **BẪY — Chu vi không cộng như diện tích.**
 
 **Các bước giải**
 

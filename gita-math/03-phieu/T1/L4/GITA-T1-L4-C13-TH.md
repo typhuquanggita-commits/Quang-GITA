@@ -303,7 +303,7 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy phân số dạng n phần (n + 1)
 
@@ -380,6 +380,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.4
 **Đáp số:** a) 69 020 · b) 131 591 · c) 78 385 · d) 46 752 · e) 5 091 · f) 152 728 · g) 86 089
@@ -392,6 +393,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) 7 phần 6 · b) 1 phần 2 · c) 52 phần 25 · d) 0 · e) 9 phần 26 · f) 11 phần 28
@@ -410,6 +412,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.4
 **Đáp số:** a) 6 · b) 12 · c) 38 · d) Ngọc (12) · e) Sơn (6) · f) 6 · g) 6 hình
@@ -455,7 +458,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài IV.1
 **Đáp số:** a) 38 phần 35 · b) 73 phần 65 · c) 78 phần 77 · d) 64 phần 65
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -490,7 +493,7 @@ f) Vì sao ở ý d phải làm tròn lên chứ không làm tròn xuống?
 
 ### Bài V.1
 **Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 10 phần 11 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 11
-**Hướng giải:** BẪY — Chiều của phần bù. Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.

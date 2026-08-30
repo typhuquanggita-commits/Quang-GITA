@@ -51,21 +51,21 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 | Mức | Dấu hiệu nhìn thấy trong đề | Dạng bài | Phương pháp | Lối tắt | Bẫy |
 |:--:|---|---|---|---|---|
-| M1 | Dấu … giữa hai đơn vị khác nhau | Đổi đơn vị đo | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | Chiều đổi đơn vị |
+| M1 | Dấu … giữa hai đơn vị khác nhau | Đổi đơn vị đo | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | — |
 | M1 | Số đo viết dưới dạng “… tấn … tạ … kg” | Số đo có nhiều đơn vị | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | — |
-| M1 | Số đo có chữ “giờ”, “phút”, “giây” | Đổi và tính toán với đơn vị thời gian | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | Cơ số 60 chứ không phải 10 |
-| M1 | Đơn vị có mũ hai: m², cm², km², ha | Đổi đơn vị diện tích | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 100 lần chứ không phải 10 lần |
-| M2 | Hai vế có đơn vị khác nhau | So sánh số đo đại lượng | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | Đơn vị khác nhau |
+| M1 | Số đo có chữ “giờ”, “phút”, “giây” | Đổi và tính toán với đơn vị thời gian | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | — |
+| M1 | Đơn vị có mũ hai: m², cm², km², ha | Đổi đơn vị diện tích | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | — |
+| M2 | Hai vế có đơn vị khác nhau | So sánh số đo đại lượng | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | — |
 | M2 | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Bốn phép tính với số đo | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | — |
-| M2 | Đề hỏi về tháng, năm, thế kỉ | Lịch và đơn vị thời gian lớn | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | Năm tròn trăm |
+| M2 | Đề hỏi về tháng, năm, thế kỉ | Lịch và đơn vị thời gian lớn | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | — |
 | M3 | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Bài toán đại lượng có lời văn | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | Đơn vị của câu trả lời |
 | M3 | Cho thời điểm bắt đầu và khoảng thời gian | Tính thời điểm trong ngày | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | Phần phút vượt quá 60 |
 | M3 | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đổi đơn vị thể tích, dung tích | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. | 1 000 lần mỗi bậc |
 | M4 | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Ba dạng cơ bản của chuyển động đều | Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị | Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. | Đơn vị thời gian |
-| M4 | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Bài toán đại lượng nhiều bước | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | — |
+| M4 | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Bài toán đại lượng nhiều bước | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | Trừ số thùng cho số lít — hai đại lượng khác loại |
 | M4 | Đề cho **tỉ lệ dạng 1 : n** cùng một khoảng cách đo trên giấy hoặc ngoài thực tế | Bài toán tỉ lệ bản đồ | Nhân hoặc chia cho mẫu tỉ lệ, rồi đổi đơn vị theo câu hỏi | Tỉ lệ 1 : 100 000 thì 1 cm trên bản đồ đúng bằng 1 km thật. | Quên đổi đơn vị sau khi nhân |
 | M5 | Hai chặng có vận tốc khác nhau | Vận tốc trung bình | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. | Không phải trung bình cộng hai vận tốc |
-| M5 | Thay đổi số người, hỏi thay đổi thời gian | Tỉ lệ nghịch, so sánh hai phương án | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | — |
+| M5 | Thay đổi số người, hỏi thay đổi thời gian | Tỉ lệ nghịch, so sánh hai phương án | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn |
 | M5 | Có cả “chiết khấu” và “thuế” trong một bài | Phần trăm nhiều bước trong mua bán | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Giảm p% là nhân với (100 − p) rồi chia 100 — một bước thay vì hai. | Mốc 100% đổi sau mỗi bước |
 | M5 | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Đại lượng khối lượng, chia phần và làm tròn lên | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. | Làm tròn lên khi hỏi số xe ít nhất |
 
@@ -92,43 +92,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Điền vào chỗ chấm. 5 954 kg = … tấn … tạ … kg
+**Đề 1.** Điền vào chỗ chấm. 6 tấn 9 tạ 74 kg = … kg
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Điền số thích hợp. 67 lít = … ml
+**Đề 2.** Câu nào cũng ghi rõ đang đổi từ đơn vị nào sang đơn vị nào. Trên bản đồ tỉ lệ 1 : 200 000, khoảng cách từ bến xe đến chợ huyện đo được 11 cm. Hỏi khoảng cách thật là bao nhiêu ki-lô-mét?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Điền số thích hợp. 59 dm² = … cm²
+**Đề 3.** Điền số thích hợp. 61 m² = … cm²
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đổi hết về ki-lô-gam trước khi tính. Một kho chứa 3 tấn 9 tạ 49 kg thóc. Đổi ra ki-lô-gam.
+**Đề 4.** Áp dụng đúng công thức cho từng câu. Một người đi 200 km hết 5 giờ. Tính vận tốc.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Chú ý đơn vị mà đề hỏi. Một xe chở 22 bao đường, mỗi bao 50 kg. Hỏi xe chở bao nhiêu tạ đường?
+**Đề 5.** Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực. Một món hàng niêm yết 300 000 đồng, được chiết khấu 15%. Giá sau chiết khấu là bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Ghi kết quả theo giờ và phút. Một chuyến tàu khởi hành lúc 10 giờ 25 phút và đi hết 6 giờ 20 phút. Tàu đến nơi lúc mấy giờ?
+**Đề 6.** Điền số thích hợp vào chỗ chấm. 740 000 m² = … ha
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Trình bày lời giải có câu trả lời. Một cửa hàng có 16 thùng nước mắm, mỗi thùng 12 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
+**Đề 7.** Trình bày lời giải có câu trả lời. Một cửa hàng có 18 thùng nước, mỗi thùng 20 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Bài mô phỏng câu hỏi thực tế của đề đánh giá năng lực. Một món hàng niêm yết 300 000 đồng, được chiết khấu 5%. Giá sau chiết khấu là bao nhiêu?
+**Đề 8.** Chú ý đơn vị mà đề hỏi. Một xe chở 15 bao gạo, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ gạo?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Câu nào cũng ghi rõ đang đổi từ đơn vị nào sang đơn vị nào. Trên bản đồ tỉ lệ 1 : 200 000, khoảng cách từ trường đến nhà văn hoá xã đo được 15 cm. Hỏi khoảng cách thật là bao nhiêu ki-lô-mét?
+**Đề 9.** Đổi hết về ki-lô-gam trước khi tính. Một kho chứa 2 tấn 6 tạ 41 kg thóc. Đổi ra ki-lô-gam.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Đổi về cùng đơn vị rồi tính. 28 m 72 cm + 672 cm = … cm
+**Đề 10.** Đổi về cùng đơn vị rồi tính. 30 kg 546 g − 273 g = … g
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -139,14 +139,14 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
 | 1 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
-| 2 | Đổi đơn vị thể tích, dung tích | Đơn vị có mũ ba, hoặc lít, mi-li-lít |
+| 2 | Bài toán tỉ lệ bản đồ | Đề cho **tỉ lệ dạng 1 : n** cùng một khoảng cách đo trên giấy hoặc ngoài thực tế |
 | 3 | Đổi đơn vị diện tích | Đơn vị có mũ hai: m², cm², km², ha |
-| 4 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” |
-| 5 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
-| 6 | Tính thời điểm trong ngày | Cho thời điểm bắt đầu và khoảng thời gian |
+| 4 | Ba dạng cơ bản của chuyển động đều | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian |
+| 5 | Phần trăm nhiều bước trong mua bán | Có cả “chiết khấu” và “thuế” trong một bài |
+| 6 | Đổi đơn vị diện tích | Đơn vị có mũ hai, hoặc ha, km² |
 | 7 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng |
-| 8 | Phần trăm nhiều bước trong mua bán | Có cả “chiết khấu” và “thuế” trong một bài |
-| 9 | Bài toán tỉ lệ bản đồ | Đề cho **tỉ lệ dạng 1 : n** cùng một khoảng cách đo trên giấy hoặc ngoài thực tế |
+| 8 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
+| 9 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” |
 | 10 | Bốn phép tính với số đo | Các số hạng có đơn vị khác nhau trong cùng một phép tính |
 
 ---

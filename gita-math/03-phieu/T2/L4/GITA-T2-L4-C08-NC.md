@@ -297,7 +297,7 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Số chính phương — làm quen theo hướng đề thi
 
@@ -387,6 +387,7 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 40
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài II.1
 **Đáp số:** a) Tổ 1 — 16 bạn · b) Tổ 4 — 9 bạn · c) 24 bạn nam và 26 bạn nữ · d) 50 bạn · e) 16 − 9 = 7 bạn · f) nữ nhiều hơn 2 bạn
@@ -450,14 +451,14 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 40
 
 ### Bài IV.1
 **Đáp số:** a) 330 · b) 110 · c) 2 600 · d) 2 550
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.2
 **Đáp số:** a) 200 lít · b) 264 lít · c) 108 lít · d) 168 lít · e) 288 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -471,7 +472,7 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 40
 
 ### Bài IV.4
 **Đáp số:** a) 179 phần 84 · b) 33 phần 40 · c) 173 phần 195 · d) 86 phần 99
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -485,21 +486,21 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 40
 
 ### Bài V.1
 **Đáp số:** a) 1 · 4 · 9 · 16 · 25 · 36 · 49 · 64 · 81 · 100 · 121 · 144 · b) 144 · c) 1 + 3 + … + 23 = 144 · d) không bao giờ · e) có, là 8 nhân 8 · f) 12
-**Hướng giải:** BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức. Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
+**Hướng giải:** Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8.
 **Lỗi thường gặp:** Kết luận một số là chính phương chỉ vì nó “trông đẹp”. Phòng: Kiểm tra chữ số tận cùng trước, sau đó thử khai căn bằng cách nhân thử.
 **Gợi ý 3 tầng:** (1) Viết bảng các số chính phương đầu tiên. — (2) Hiệu hai số chính phương liên tiếp là những số nào? — (3) Chữ số tận cùng của số chính phương có thể là những chữ số nào?
 
 ### Bài V.2
 **Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 12 phần 13 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 13
-**Hướng giải:** BẪY — Chiều của phần bù. Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.
 
 ### Bài V.3
 **Đáp số:** a) < · b) > · c) < · d) >
-**Hướng giải:** BẪY — Chiều của phần bù. **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
+**Hướng giải:** **Phần bù tới 1:** hai phân số đều thiếu một chút nữa thì bằng 1; phân số nào có phần bù **bé hơn** thì lớn hơn. **Phân số trung gian:** chọn một phân số dễ so (thường là 1 phần 2 hoặc 1 phần 3) rồi so mỗi phân số với nó.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phân số nào thiếu ít hơn? — (3) Thiếu ít hơn thì lớn hơn.
@@ -507,7 +508,7 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 40
 ### Bài V.4
 **Đáp số:** a) 36 · b) 27 · c) 45 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 18 · f) 36 · g) 18
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

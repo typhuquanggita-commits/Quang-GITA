@@ -290,7 +290,7 @@ e) Ba bạn Quân, Chi và Tuấn mỗi bạn học một môn năng khiếu kh�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Lãi suất tiết kiệm hai năm
 
@@ -351,12 +351,14 @@ d) Từ các chữ số 2, 4, 5, 6, lập được bao nhiêu số lẻ có ba c
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.2
 **Đáp số:** a) 770 · b) 67 000 · c) 14 000 · d) 840 · e) 2 100 · f) 420
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.3
 **Đáp số:** a) số lớn 469, số bé 431 · b) số lớn 910, số bé 734 · c) số lớn 724, số bé 596 · d) số lớn 713, số bé 379 · e) số lớn 393, số bé 323 · f) số lớn 934, số bé 652
@@ -381,6 +383,7 @@ d) Từ các chữ số 2, 4, 5, 6, lập được bao nhiêu số lẻ có ba c
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.2
 **Đáp số:** a) 202 kg · b) 98 kg · c) 123 kg · d) 1 410 kg · e) 52 kg · f) 900 kg
@@ -438,8 +441,8 @@ d) Từ các chữ số 2, 4, 5, 6, lập được bao nhiêu số lẻ có ba c
 
 ### Bài IV.1
 **Đáp số:** a) 110 · b) 840 · c) 1 260 · d) 975 · e) 7 650 · f) 385
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
@@ -466,7 +469,7 @@ d) Từ các chữ số 2, 4, 5, 6, lập được bao nhiêu số lẻ có ba c
 
 ### Bài IV.5
 **Đáp số:** a) Ngọc học cầu lông; Tuấn học bóng rổ; Sơn học bóng đá · b) Dũng học bóng rổ; Thảo học cầu lông; Đức học bóng đá · c) Trang học hát; Nam học múa; Bình học đàn · d) Lan học cầu lông; Phúc học bóng đá; Minh học bóng rổ · e) Quân học tiếng Anh; Chi học tin học; Tuấn học mĩ thuật
-**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Hướng giải:** Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
 **Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
 **Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.

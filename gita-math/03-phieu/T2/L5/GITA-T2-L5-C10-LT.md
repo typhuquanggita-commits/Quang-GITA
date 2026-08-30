@@ -338,12 +338,14 @@ d) Mua 12 quyển vở hết 120 nghìn đồng. Với 260 nghìn đồng thì m
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.2
 **Đáp số:** a) 12 km/giờ · b) 72 km · c) 3 giờ · d) 60 km/giờ
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.3
 **Đáp số:** a) 462 · b) 455 · c) 174 · d) 893 · e) 112
@@ -454,7 +456,7 @@ d) Mua 12 quyển vở hết 120 nghìn đồng. Với 260 nghìn đồng thì m
 ### Bài D.5
 **Đáp số:** a) Trung bình cộng của dãy cách đều; tổng – tỉ · b) Tổng nhiều số có ràng buộc; tổng – tỉ · c) Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số · d) Tìm số giữa trước; sau đó chia theo tỉ lệ · e) Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. · f) 16, 20, 24
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
@@ -481,9 +483,10 @@ d) Mua 12 quyển vở hết 120 nghìn đồng. Với 260 nghìn đồng thì m
 
 ### Bài E.4
 **Đáp số:** a) 385,91 · b) 8,4 · c) 28,97 · d) 107,72 · e) 741,68 · f) 196,08 · g) 61,16
-**Hướng giải:** BẪY — Vị trí dấu phẩy ở tích. Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
+**Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 **Gợi ý 3 tầng:** (1) Phép tính này là cộng trừ hay nhân chia? — (2) Cộng trừ thì viết thẳng dấu phẩy. — (3) Nhân thì đếm tổng số chữ số thập phân của các thừa số.
 
 ### Bài E.5

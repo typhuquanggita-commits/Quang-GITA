@@ -116,8 +116,6 @@ Kết quả: **3 945**.
 
 ### Bài A.3 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 184 984 : 38
@@ -481,6 +479,8 @@ Kết quả: **Tính chất phân phối của phép nhân với phép cộng**.
 *Điểm chốt:* Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi.
 
 ### Bài E.1 — Tính nhanh bằng cách ghép số tròn
+
+> **BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn..**
 
 **Các bước giải**
 

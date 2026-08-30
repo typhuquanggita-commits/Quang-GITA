@@ -284,7 +284,7 @@ d) Nam và Phúc có tất cả 48 quyển vở. Nam có nhiều hơn Phúc 6 qu
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tính nhanh tổng các số tự nhiên liên tiếp
 
@@ -356,24 +356,28 @@ e) Tích 698 × 985 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.3
 **Đáp số:** a) 4 giờ 56 phút · b) 9 giờ 36 phút · c) 459 · d) 49 phút · e) 558 · f) 9 giờ 38 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.4
 **Đáp số:** a) 15 · b) > · c) 25 126 · d) 33 000 · e) 32 706 · f) 4
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài I.5
 **Đáp số:** a) áp đúng đỉnh góc và một cạnh của góc vào ê ke · b) 4 góc vuông · c) 1 góc vuông · d) 10 cm · e) AM = MB · f) không chắc, còn phải có AM = MB · g) không, vì AM khác nửa AB
 **Hướng giải:** Trung điểm phải thoả **hai điều kiện**: nằm giữa hai đầu và chia đoạn thẳng thành hai phần bằng nhau. Thiếu một điều kiện thì chỉ là điểm nằm giữa, không phải trung điểm.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Nằm giữa **chưa đủ** để là trung điểm.
 **Lỗi thường gặp:** Thấy điểm nằm giữa là kết luận ngay đó là trung điểm. Phòng: Đo cả hai đoạn AM và MB rồi mới kết luận.
+**Chú ý:** Nằm giữa nhưng không chia đôi.
 
 ### Bài II.1
 **Đáp số:** a) 4 · b) 6 · c) 42 · d) Vy (16) · e) An (4) · f) 12 · g) 6 hình
@@ -386,6 +390,7 @@ e) Tích 698 × 985 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.3
 **Đáp số:** a) 36 000 · b) 72 000 · c) 8 900 · d) 280 · e) 49 000
@@ -444,7 +449,7 @@ e) Tích 698 × 985 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.2
 **Đáp số:** a) 4 950 000 đồng · b) 16 chai · c) 7 m · d) 6 m · e) 40 chai · f) 3 375 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -465,21 +470,21 @@ e) Tích 698 × 985 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.5
 **Đáp số:** a) Nam: 27 quyển, An: 15 quyển · b) Yến: 51 quyển, Thảo: 43 quyển · c) Vy: 116 quyển, An: 72 quyển · d) Nam: 27 quyển, Phúc: 21 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài V.1
 **Đáp số:** a) 55 · b) 210 · c) 1 275 · d) 325 · e) 5 050
-**Hướng giải:** BẪY — Số số hạng lẻ thì còn số ở giữa. Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
+**Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ra ba cặp đầu để thấy rõ các cặp có cùng tổng.
 **Gợi ý 3 tầng:** (1) Ghép số đầu với số cuối, tổng bằng bao nhiêu? — (2) Ghép số thứ hai với số áp chót, tổng bằng bao nhiêu? — (3) Có bao nhiêu cặp như thế?
 
 ### Bài V.2
 **Đáp số:** a) 8 quả · b) 2 quả · c) 4 quả · d) 4 quả · e) 2 quả · f) 3 quả
-**Hướng giải:** BẪY — Phép chia có dư. Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
+**Hướng giải:** Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
 **Lỗi thường gặp:** Làm tròn lên rồi coi như cân được. Phòng: Kiểm tra phép chia có dư hay không trước khi kết luận.
 **Gợi ý 3 tầng:** (1) Một quả cân nặng bao nhiêu? — (2) Vật nặng gấp mấy lần một quả cân? — (3) Phép chia có dư không?

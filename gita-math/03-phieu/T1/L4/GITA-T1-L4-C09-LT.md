@@ -359,6 +359,7 @@ g) Nếu một bạn có 12 lá cờ thì phải vẽ mấy hình ●?
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài A.2
 **Đáp số:** a) 6 phần 11 · b) 9 phần 5 · c) 1 phần 4 · d) 3 · e) 1 phần 2 · f) 1 phần 7
@@ -377,12 +378,14 @@ g) Nếu một bạn có 12 lá cờ thì phải vẽ mấy hình ●?
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.5
 **Đáp số:** a) 106 · b) 253 · c) 302 · d) 351
 **Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài B.1
 **Đáp số:** a) Phân số: khái niệm đến bốn phép tính · b) H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · c) 7 · d) ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài khái niệm phân số — đọc, viết, biểu diễn
@@ -495,9 +498,10 @@ g) Nếu một bạn có 12 lá cờ thì phải vẽ mấy hình ●?
 
 ### Bài E.3
 **Đáp số:** a) 6 170 dư 16 · b) 8 651 dư 20 · c) 4 059 dư 4 · d) 5 654 dư 14 · e) 3 212 dư 7 · f) 8 551 dư 4 · g) 6 285 dư 9
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 **Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 
 ### Bài E.4

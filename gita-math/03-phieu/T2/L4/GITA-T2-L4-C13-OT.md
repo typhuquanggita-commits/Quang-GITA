@@ -287,7 +287,7 @@ e) 77 × 66 + 77 × 47 − 77 × (66 + 47)
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -365,12 +365,14 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.2
 **Đáp số:** a) không · b) 1 tuần 2 ngày · c) 31 · d) XXI
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài I.3
 **Đáp số:** a) Tổ 4 — 14 bạn · b) Tổ 3 — 9 bạn · c) 23 bạn nam và 25 bạn nữ · d) 48 bạn · e) 14 − 9 = 5 bạn · f) nữ nhiều hơn 2 bạn
@@ -383,6 +385,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài I.5
 **Đáp số:** a) 3 748 · b) 240 · c) 25 394 · d) 5 510 · e) 8 267
@@ -452,7 +455,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) 96 lít · b) 96 lít · c) 25 lít · d) 75 lít · e) 96 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -473,14 +476,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) 45 chai · b) 32 m · c) 7 500 000 đồng · d) 25 chai · e) 4 m · f) 1 800 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
 
 ### Bài IV.5
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+**Hướng giải:** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?

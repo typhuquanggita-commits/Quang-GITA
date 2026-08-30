@@ -277,7 +277,7 @@ f) 3 × 1 + 3 × 2 + 3 × 3 + … + 3 × 25
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Kĩ thuật tách – bù để tính và so sánh
 
@@ -340,6 +340,7 @@ d) 1 − 2 + 3 − 4 + 5 − 6 + … − 100
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) 3 683 000 · b) 7 694 · c) 910 000 · d) 3 020 · e) 284 500 · f) 2 708 · g) 5 861 000 · h) 3 897
@@ -352,6 +353,7 @@ d) 1 − 2 + 3 − 4 + 5 − 6 + … − 100
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.4
 **Đáp số:** a) x = 598 · b) x = 4 095 · c) x = 5 117 · d) x = 13 338 · e) x = 236 · f) x = 43
@@ -434,14 +436,14 @@ d) 1 − 2 + 3 − 4 + 5 − 6 + … − 100
 
 ### Bài IV.2
 **Đáp số:** a) 34 · b) 110 · c) 1 440 · d) 72 · e) 144 · f) 144
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.3
 **Đáp số:** a) x = 22 · b) x = 18 · c) x = 58 · d) x = 39
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
@@ -456,20 +458,20 @@ d) 1 − 2 + 3 − 4 + 5 − 6 + … − 100
 ### Bài IV.5
 **Đáp số:** a) 385 · b) 110 · c) 1 300 · d) 2 550 · e) 2 925 · f) 975
 **Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài V.1
 **Đáp số:** a) < · b) < · c) 100 · d) < · e) 1 225
-**Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.
 
 ### Bài V.2
 **Đáp số:** a) 812 cm² · b) 270,67 cm² · c) 406 cm² · d) 1 phần 4 · e) 203 cm² · f) diện tích 1 624 cm², chu vi 170 cm
-**Hướng giải:** BẪY — Chu vi không cộng như diện tích. Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+**Hướng giải:** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
 **Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
 **Gợi ý 3 tầng:** (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?

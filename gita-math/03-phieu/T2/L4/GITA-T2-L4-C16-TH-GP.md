@@ -426,6 +426,8 @@ Kiểm tra nhanh: kết quả phải bé hơn 8 giờ ✓
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 19 thùng nước mắm, mỗi thùng 20 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
@@ -469,8 +471,6 @@ Còn lại **An học bơi**. Thử lại cả hai manh mối đều đúng.
 *Phải chắc trước khi làm bài này:* Đọc hiểu câu phủ định và cách kẻ bảng hai chiều.
 
 ### Bài IV.5 — Tính tiền vé cho cả gia đình
-
-> **BẪY — Dùng cả dữ kiện thừa.**
 
 **Các bước giải**
 
@@ -664,7 +664,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | V.1 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
 | V.2 | TD6, TD3 | Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu. |
-| V.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.4 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.5 | TD4, TD6 | Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8. |
 

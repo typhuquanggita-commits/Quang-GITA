@@ -178,8 +178,6 @@ Kết quả: **89**.
 
 ### Bài II.1 — Tính nhanh tổng dãy số cách đều
 
-> **BẪY — Quên cộng 1 khi đếm số số hạng.**
-
 **Các bước giải**
 
 Xét ý a: 1 + 2 + 3 + … + 20
@@ -386,6 +384,8 @@ Kết quả: **3, 11, 21**.
 
 ### Bài IV.1 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 1 phần 3 : 5 phần 14 + 11 phần 12
@@ -405,6 +405,8 @@ Kết quả: **37 phần 20**.
 *Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 
 ### Bài IV.2 — Tìm x khi x xuất hiện ở cả hai vế
+
+> **BẪY — Chuyển vế mà quên đổi dấu.**
 
 **Các bước giải**
 
@@ -426,6 +428,8 @@ Kết quả: **x = 37**.
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 19 thùng sữa, mỗi thùng 25 lít. Cửa hàng đã bán 13 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
@@ -446,6 +450,8 @@ Kết quả: **150 lít**.
 
 ### Bài IV.4 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 4 × 1 + 4 × 2 + 4 × 3 + … + 4 × 50
@@ -465,8 +471,6 @@ Kết quả: **5 100**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.5 — Nhận ra thừa số 0 để tính tức thì
-
-> **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
 
 **Các bước giải**
 
@@ -644,7 +648,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
 | IV.2 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.3 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
-| IV.4 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.4 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.5 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | V.1 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương. |
 | V.2 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |

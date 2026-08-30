@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Quân có 57 quyển vở, số vở của Lan kém 3 lần số vở của Quân. Lan có bao nhiêu quyển vở?
@@ -137,8 +135,6 @@ Kết quả: **109**.
 *Điểm chốt:* Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 
 ### Bài A.4 — Quãng đường – vận tốc – thời gian
-
-> **BẪY — Đơn vị thời gian.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Cụm “trung bình mỗi …”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Chuyển động trên dòng nước, 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đề tổng hợp nhiều mạch
+
+> **BẪY — Ý thứ năm tính phần trăm trên giá ban đầu thay vì trên giá vừa tăng..**
 
 **Các bước giải**
 
@@ -634,12 +634,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
 | C.2 | TD3, TD6 | Ý sau dùng lại kết quả ý trước — **sai một ý là sai dây chuyền**. |
-| C.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| C.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | C.4 | TD3, TD6 | Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian. |
 | C.5 | TD2, TD6 | Vận tốc trung bình luôn **nhỏ hơn** trung bình cộng hai vận tốc. Ra lớn hơn hoặc bằng là chắc chắn sai. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD3, TD2 | Chiều cao trong công thức là **mực nước thực tế**. |
-| D.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| D.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | D.4 | TD4, TD6 | Quãng đường tính từ lúc **đầu tàu** bắt đầu tới lúc **đuôi tàu** kết thúc, nên luôn phải cộng chiều dài đoàn tàu. |
 | D.5 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |

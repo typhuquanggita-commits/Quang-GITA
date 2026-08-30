@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài IV.1** — a) chu vi 80 cm, diện tích 300 cm² · b) chu vi 100 cm, diện tích 400 cm² · c) chu vi 78 cm, diện tích 338 cm² · d) chu vi 50 cm, diện tích 100 cm² · e) chu vi 48 cm, diện tích 108 cm² · f) chu vi 32 cm, diện tích 48 cm²
 - **Bài IV.2** — a) 10 · b) 8 · c) 21 · d) 7
-- **Bài IV.3** — a) x = 336 · b) x = 38 · c) x = 563 : 9 · d) x = 16 · e) x = 117
+- **Bài IV.3** — a) x = 225 · b) x = 38 · c) x = 60 · d) x = 16 · e) x = 13
 - **Bài IV.4** — a) 54 · b) 940 · c) 139 · d) 29 · e) 1 079 · f) 801
 - **Bài IV.5** — a) 46, hơn kém 18 đơn vị · b) 96, hơn kém 27 đơn vị · c) 64, hơn kém 18 đơn vị · d) 24, hơn kém 18 đơn vị
 
@@ -426,19 +426,17 @@ Kết quả: **10**.
 
 ### Bài IV.3 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 6 + 82 = 138
+Xét **x : 5 + 41 = 86**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 336**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 225**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -469,8 +467,6 @@ Số bé nhất là 139, số lớn nhất là 940.
 *Phải chắc trước khi làm bài này:* Cấu tạo số có ba chữ số và thói quen liệt kê có thứ tự.
 
 ### Bài IV.5 — Đổi chỗ hai chữ số của một số
-
-> **BẪY — Hiệu là 9 lần hiệu hai chữ số.**
 
 **Các bước giải**
 
@@ -615,7 +611,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | Suy luận loại trừ có bảng | Phương pháp lập bảng | Mỗi người ứng với đúng một đối tượng | Kẻ bảng, đánh dấu, lan toả | Bắt đầu từ dữ kiện khẳng định trước dữ kiện phủ định. | ô (Bình; cam) · không · ô (Hà; xoài) · lê… |
 | IV.1 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | chu vi 80 cm, diện tích 300 cm² · chu vi 100 cm, diện tích 400 cm² · chu vi 78 cm, diện tích 338 cm² · chu vi 50 cm, diện tích 100 cm²… |
 | IV.2 | Bài toán trồng cây | Quan hệ số cây – số khoảng | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | 10 · 8 · 21 · 7 |
-| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 336 · x = 38 · x = 563 : 9 · x = 16… |
+| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 225 · x = 38 · x = 60 · x = 16… |
 | IV.4 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 54 · 940 · 139 · 29… |
 | IV.5 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 46, hơn kém 18 đơn vị · 96, hơn kém 27 đơn vị · 64, hơn kém 18 đơn vị · 24, hơn kém 18 đơn vị |
 | V.1 | Đọc, viết, cấu tạo số | Cấu tạo thập phân của số tự nhiên | Câu hỏi về hàng, về tổng chữ số, về số liền kề | Đánh số hàng từ phải sang trái | Số chữ số đứng sau một chữ số chính là số chữ số 0 khi ghi giá trị của nó. | Đọc, viết, cấu tạo số · Cấu tạo thập phân của số tự nhiên · Câu hỏi về hàng, về tổng chữ số, về số liền kề · Đánh số hàng từ phải sang trái… |
@@ -647,7 +643,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD2, TD6 | Mỗi dấu ✔ **lan toả** ra cả hàng và cả cột. |
 | IV.1 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
 | IV.2 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
-| IV.3 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.3 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.4 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
 | IV.5 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | V.1 | TD1 | Phân biệt **chữ số** với **giá trị** của chữ số. |

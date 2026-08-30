@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 46 · b) 920 · c) 128 · d) 28 · e) 1 048 · f) 792
 - **Bài IV.2** — a) 139 · b) 429 · c) 630 · d) 1 078
 - **Bài IV.3** — a) Bình: 94 quyển, Minh: 76 quyển · b) Vy: 126 quyển, Chi: 68 quyển · c) Bình: 41 quyển, Lan: 27 quyển · d) Hùng: 83 quyển, Vy: 51 quyển · e) Ngọc: 63 quyển, Quân: 53 quyển
-- **Bài IV.4** — a) x = 19 · b) x = 374 : 7 · c) x = 35 · d) x = 348
+- **Bài IV.4** — a) x = 82 · b) x = 46 · c) x = 210 · d) x = 58
 - **Bài IV.5** — a) 14 · b) 1 phần 3 · c) 52 quyển · d) 1 phần 5
 
 **Phần V**
@@ -442,6 +442,8 @@ Kết quả: **139**.
 
 ### Bài IV.3 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Bình và Minh có tất cả 170 quyển vở. Bình có nhiều hơn Minh 18 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -462,19 +464,17 @@ Kết quả: **Bình: 94 quyển, Minh: 76 quyển**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 4 + 54 = 130
+Xét **(x − 81) × 6 = 6**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 19**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 82**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -630,7 +630,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 46 · 920 · 128 · 28… |
 | IV.2 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 139 · 429 · 630 · 1 078 |
 | IV.3 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | Bình: 94 quyển, Minh: 76 quyển · Vy: 126 quyển, Chi: 68 quyển · Bình: 41 quyển, Lan: 27 quyển · Hùng: 83 quyển, Vy: 51 quyển… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 19 · x = 374 : 7 · x = 35 · x = 348 |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 82 · x = 46 · x = 210 · x = 58 |
 | IV.5 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 14 · 1 phần 3 · 52 quyển · 1 phần 5 |
 | V.1 | Tính nhanh biểu thức đơn giản | Tính chất giao hoán, kết hợp; nhân với 0 | Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ | Quan sát toàn biểu thức trước khi tính | Tích có một thừa số bằng 0 thì bằng 0, dù các số khác lớn đến đâu. | Tính nhanh biểu thức đơn giản · Tính chất giao hoán, kết hợp; nhân với 0 · Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ · Quan sát toàn biểu thức trước khi tính… |
 | V.2 | Tổng dãy số cách đều | Ghép cặp, tổng dãy cách đều | Dãy cộng dài có dấu … | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | Tổng dãy số cách đều · Ghép cặp, tổng dãy cách đều · Dãy cộng dài có dấu … · Ghép cặp đầu – cuối rồi nhân… |
@@ -662,7 +662,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
 | IV.2 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
 | IV.3 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | V.1 | TD5, TD6 | **Nhìn trước, tính sau** — đó là toàn bộ bí quyết tính nhanh. |
 | V.2 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |

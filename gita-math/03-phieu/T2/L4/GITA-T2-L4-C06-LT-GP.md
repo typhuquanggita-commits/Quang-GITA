@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Tính giá trị biểu thức
 
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
-
 **Các bước giải**
 
 Xét ý a: 199 × (2 + 9)
@@ -503,6 +501,8 @@ Số nhà thứ 12: đi từ nhà đầu tiên thì phải bước 12 − 1 = 11
 *Phải chắc trước khi làm bài này:* Dãy số cách đều và phép chia hết.
 
 ### Bài E.2 — Tính nhanh nhờ ghép cặp thừa số tròn
+
+> **BẪY — Nhân lần lượt từ trái sang phải nên số trung gian rất lớn..**
 
 **Các bước giải**
 

@@ -51,15 +51,15 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 | Mức | Dấu hiệu nhìn thấy trong đề | Dạng bài | Phương pháp | Lối tắt | Bẫy |
 |:--:|---|---|---|---|---|
-| M1 | Dấu … giữa hai đơn vị khác nhau | Đổi đơn vị đo | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | Chiều đổi đơn vị |
+| M1 | Dấu … giữa hai đơn vị khác nhau | Đổi đơn vị đo | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | — |
 | M1 | Số đo viết dưới dạng “… tấn … tạ … kg” | Số đo có nhiều đơn vị | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | — |
-| M1 | Số đo có chữ “giờ”, “phút”, “giây” | Đổi và tính toán với đơn vị thời gian | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | Cơ số 60 chứ không phải 10 |
-| M1 | Có chữ l, ml trong đề | Đổi và so sánh đơn vị dung tích | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. | Đơn vị khác nhau |
+| M1 | Số đo có chữ “giờ”, “phút”, “giây” | Đổi và tính toán với đơn vị thời gian | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | — |
+| M1 | Có chữ l, ml trong đề | Đổi và so sánh đơn vị dung tích | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. | — |
 | M2 | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” | Bài toán tiền tệ hai bước | Tính tiền hàng rồi trừ; đổi tiền thì chia | Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. | — |
 | M3 | Có chữ “giờ”, “phút”, “sau … phút nữa” | Tính thời gian trong ngày | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | Phần phút vượt quá 60 |
 | M3 | Đề nhắc tới ngày, tháng, thứ trong tuần | Lịch, tháng, năm nhuận | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. | Tháng 2 và năm nhuận |
 | M4 | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Bài toán đại lượng hai bước | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | — |
-| M4 | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt | Bài toán đại lượng nhiều bước | Tính đại lượng trung gian rồi trả lời | Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. | — |
+| M4 | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt | Bài toán đại lượng nhiều bước | Tính đại lượng trung gian rồi trả lời | Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. | Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam |
 | M5 | Cân đĩa với một loại quả cân | Bài toán cân, chia hết | Chia và xét số dư | Đổi cả hai về cùng đơn vị rồi chia. | Phép chia có dư |
 | M5 | Có nhiều tiết học và thời gian nghỉ giữa các tiết | Thời gian biểu, cộng thời gian | Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại | Bài này chính là bài trồng cây đội lốt thời gian. | Số lần nghỉ ít hơn số tiết |
 
@@ -86,43 +86,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Ghi rõ đơn vị đồng ở mọi kết quả. Mua 2 quyển vở, mỗi quyển 3 000 đồng. Đưa cô bán hàng một tờ 10 000 đồng. Cô phải trả lại bao nhiêu tiền?
+**Đề 1.** Điền số thích hợp vào chỗ chấm. 90 tạ = … kg
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Điền kết quả, viết dạng giờ và phút. 419 phút = … giờ … phút
+**Đề 2.** Điền số hoặc dấu thích hợp. 3 l … 1 511 ml
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Suy nghĩ theo số lần chứa. Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân một vật nặng 4 000 g thì cần bao nhiêu quả cân như thế?
+**Đề 3.** Điền kết quả, viết dạng giờ và phút. 153 phút = … giờ … phút
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Ghi kết quả theo giờ và phút. Bây giờ là 2 giờ 30 phút. Cách đây 90 phút là mấy giờ?
+**Đề 4.** Ghi kết quả theo giờ và phút. Bây giờ là 9 giờ 35 phút. Sau 40 phút nữa là mấy giờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Điền số thích hợp vào chỗ chấm. 50 dag = … g
+**Đề 5.** Đổi hết về phút rồi tính, cuối cùng mới đổi lại giờ và phút. Buổi học bắt đầu lúc 10 giờ 15 phút. Mỗi tiết 45 phút, nghỉ giữa hai tiết 10 phút. Học 3 tiết thì tan lúc mấy giờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Đổi hết về phút rồi tính, cuối cùng mới đổi lại giờ và phút. Buổi học bắt đầu lúc 6 giờ 15 phút. Mỗi tiết 35 phút, nghỉ giữa hai tiết 10 phút. Học 2 tiết thì tan lúc mấy giờ?
+**Đề 6.** Ghi rõ đơn vị đồng ở mọi kết quả. Mua 2 quyển vở, mỗi quyển 5 000 đồng. Hết bao nhiêu tiền?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Điền số hoặc dấu thích hợp. 10 l … 2 384 ml
+**Đề 7.** Điền vào chỗ chấm. 380 kg = … tấn … tạ … kg
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Trình bày lời giải cho từng bước. Có 4 gói kẹo, mỗi gói 125 g. Lấy ra 2 gói. Hỏi số kẹo còn lại nặng bao nhiêu gam?
+**Đề 8.** Điền số thích hợp. 68 cm = … mm
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Điền vào chỗ chấm. 2 tấn 2 tạ 96 kg = … kg
+**Đề 9.** Suy nghĩ theo số lần chứa. Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân một vật nặng 3 000 g thì cần bao nhiêu quả cân như thế?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Trình bày lời giải có câu trả lời cho từng bước. Một cửa hàng có 9 bao gạo, mỗi bao 30 kg. Giá mỗi ki-lô-gam là 18 000 đồng. Bán hết số gạo ấy được bao nhiêu tiền?
+**Đề 10.** Kẻ một bảng lịch nhỏ ra nháp rồi trả lời. Tháng 5 năm 2027 có bao nhiêu ngày?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -132,16 +132,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Bài toán tiền tệ hai bước | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” |
-| 2 | Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” |
-| 3 | Bài toán cân, chia hết | Cân đĩa với một loại quả cân |
+| 1 | Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau |
+| 2 | Đổi và so sánh đơn vị dung tích | Có chữ l, ml trong đề |
+| 3 | Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” |
 | 4 | Tính thời gian trong ngày | Có chữ “giờ”, “phút”, “sau … phút nữa” |
-| 5 | Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau |
-| 6 | Thời gian biểu, cộng thời gian | Có nhiều tiết học và thời gian nghỉ giữa các tiết |
-| 7 | Đổi và so sánh đơn vị dung tích | Có chữ l, ml trong đề |
-| 8 | Bài toán đại lượng hai bước | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy |
-| 9 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
-| 10 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt |
+| 5 | Thời gian biểu, cộng thời gian | Có nhiều tiết học và thời gian nghỉ giữa các tiết |
+| 6 | Bài toán tiền tệ hai bước | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” |
+| 7 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
+| 8 | Đổi đơn vị đo | Hai đơn vị khác nhau nối bởi dấu … |
+| 9 | Bài toán cân, chia hết | Cân đĩa với một loại quả cân |
+| 10 | Lịch, tháng, năm nhuận | Đề nhắc tới ngày, tháng, thứ trong tuần |
 
 ---
 

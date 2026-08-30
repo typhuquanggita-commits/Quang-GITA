@@ -425,6 +425,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài C.1
 **Đáp số:** a) không chia hết (66 m không chia hết cho 5 m) · b) không chia hết (150 m không chia hết cho 4 m) · c) 403 viên · d) 81 cây · e) 32 cây · f) 84 viên (làm tròn lên)
@@ -437,6 +438,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài C.3
 **Đáp số:** a) 6 mặt, 8 đỉnh, 12 cạnh · b) có ba kích thước bằng nhau, sáu mặt đều là hình vuông · c) 2 mặt đáy, đều là hình tròn bằng nhau · d) không có mặt đáy · e) 240 cm³ · f) 80 cm · g) 600 cm²

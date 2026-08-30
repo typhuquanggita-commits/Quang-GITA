@@ -264,7 +264,7 @@ f) Tổ Ba có 54 quyển sách, nhóm Hoa Phượng có 18 quyển. Hỏi phả
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
@@ -333,6 +333,7 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.2
 **Đáp số:** a) 564 · b) 144 · c) 190 · d) 65 · e) 80 · f) 828
@@ -357,6 +358,7 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài II.1
 **Đáp số:** a) 260 m · b) 21 cm · c) 14 cm · d) 600 m · e) 1 050 m
@@ -441,14 +443,14 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 
 ### Bài IV.4
 **Đáp số:** a) 96 lít · b) 120 lít · c) 150 lít · d) 18 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) 87 quyển · b) 15 quyển · c) 30 quyển · d) 35 quyển · e) 15 quyển · f) 18 quyển
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+**Hướng giải:** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
 **Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
@@ -456,7 +458,7 @@ g) Một tháng có 30 ngày và ngày 1 là Thứ Hai. Tháng ấy có mấy ng
 ### Bài V.1
 **Đáp số:** a) 28 · b) 19 · c) 37 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 10 · f) 20 · g) 10
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

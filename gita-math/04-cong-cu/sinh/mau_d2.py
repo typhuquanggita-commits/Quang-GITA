@@ -85,7 +85,7 @@ def d2_m1_31(rng, lop):
         mo_rong="Đổi câu hỏi thành “tổ nào nhiều hơn và nhiều hơn bao nhiêu” để "
                 "học sinh phải chọn phép trừ ở bước hai.",
         chuan_bi="Cộng, trừ, nhân trong phạm vi 1 000 và cách viết câu lời giải.",
-        bay="Đọc kĩ câu hỏi cuối")
+        chu_y="Đọc kĩ câu hỏi cuối")
 
 
 @dang_ky("D2-M2-31", "D", "M2", lop=(3,),
@@ -366,7 +366,7 @@ def d2_m1_41(rng, lop):
         tuong_tu=("Đi 4 giờ với vận tốc 12 km/giờ. Quãng đường bằng bao nhiêu?", "48 km"),
         mo_rong="Đổi thời gian sang phút hoặc quãng đường sang mét để buộc phải đổi đơn vị.",
         chuan_bi="Nhân, chia số tự nhiên và bảng đơn vị đo độ dài, thời gian.",
-        bay="Đơn vị thời gian")
+        chu_y="Đơn vị thời gian")
 
 
 @dang_ky("D2-M2-41", "D", "M2", lop=(4, 5),
@@ -579,7 +579,7 @@ def d2_m5_41(rng, lop):
         huong_giai="Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — "
                    "tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: "
                    "tổng số phần rồi giá trị một phần.",
-        td=["TD4", "TD3"],
+        td=["TD4", "TD3", "TD5"],
         diem_chot="Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.",
         loi="Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi.",
         phong="Nhìn ra “cách đều” trước khi đặt bút.",

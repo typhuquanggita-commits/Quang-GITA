@@ -482,6 +482,8 @@ Cả gia đình: 210 000 + 105 000 = **315 000 đồng**.
 
 ### Bài IV.5 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: (9 phần 13 + 3 phần 2) × 4 phần 9

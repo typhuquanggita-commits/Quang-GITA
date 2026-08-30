@@ -426,6 +426,8 @@ Cả gia đình: 320 000 + 240 000 = **560 000 đồng**.
 
 ### Bài IV.3 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -446,6 +448,8 @@ Kết quả: **163**.
 
 ### Bài IV.4 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 8 × 1 + 8 × 2 + 8 × 3 + … + 8 × 10
@@ -465,8 +469,6 @@ Kết quả: **440**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.5 — Hai vòi nước, hai người cùng làm
-
-> **BẪY — Cộng thời gian thay vì cộng năng suất.**
 
 **Các bước giải**
 
@@ -511,8 +513,6 @@ Lấy chữ số tận cùng của kết quả: **2**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.2 — Cắt, ghép hình và tỉ số diện tích
-
-> **BẪY — Chu vi không cộng như diện tích.**
 
 **Các bước giải**
 
@@ -657,8 +657,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD2, TD6 | Điền **miền giữa trước** — mọi miền khác suy ra từ đó. |
 | IV.1 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
 | IV.2 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
-| IV.3 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
-| IV.4 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.3 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.4 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.5 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
 | V.1 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.2 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |

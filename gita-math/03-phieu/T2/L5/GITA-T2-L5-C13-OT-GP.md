@@ -384,6 +384,8 @@ Kết quả: **19 giờ 36 phút**.
 
 ### Bài IV.1 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: (5 phần 4 + 9 phần 5) × 1 phần 2
@@ -471,8 +473,6 @@ Cộng các bậc: 90 000 + 95 000 + 154 000 = **339 000 đồng**.
 *Phải chắc trước khi làm bài này:* Nhân số có nhiều chữ số và cách đọc bảng nhiều cột.
 
 ### Bài IV.5 — Phần trăm nhiều bước — mốc 100% thay đổi
-
-> **BẪY — Mốc 100% khác nhau ở mỗi bước.**
 
 **Các bước giải**
 

@@ -69,9 +69,9 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 |:--:|---|---|---|---|---|
 | M1 | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tìm trung bình cộng | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. | — |
 | M1 | Đề cho **tổng** và **hiệu** của hai số | Bài toán tổng – hiệu | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. | — |
-| M1 | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Quan hệ nhiều hơn – ít hơn, gấp – kém | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | Gấp và kém dùng hai phép tính ngược nhau |
+| M1 | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Quan hệ nhiều hơn – ít hơn, gấp – kém | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. | — |
 | M1 | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Rút về đơn vị | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. | — |
-| M1 | Đề cho một đại lượng và một quan hệ, câu hỏi hỏi tổng | Bài toán giải bằng hai phép tính | Tìm đại lượng còn thiếu rồi cộng | Nếu là quan hệ gấp k lần thì cả hai tổ bằng (k + 1) lần tổ thứ nhất. | Đọc kĩ câu hỏi cuối |
+| M1 | Đề cho một đại lượng và một quan hệ, câu hỏi hỏi tổng | Bài toán giải bằng hai phép tính | Tìm đại lượng còn thiếu rồi cộng | Nếu là quan hệ gấp k lần thì cả hai tổ bằng (k + 1) lần tổ thứ nhất. | — |
 | M2 | “Có tất cả …” và “… nhiều hơn … là …” | Tổng – hiệu có lời văn | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. | — |
 | M2 | Cụm “trung bình mỗi …” | Ba dạng bài trung bình cộng | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. | — |
 | M3 | “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” | Tổng – tỉ, hiệu – tỉ mức làm quen | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng chia hết cho tổng số phần; không chia hết là đã đọc sai tỉ số. | Tổng số phần hay hiệu số phần |
@@ -103,43 +103,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính. Đội Một trồng 29 cây, nhóm Hoa Phượng trồng 116 cây. Số cây của đội Một bằng một phần mấy số cây của nhóm Hoa Phượng?
+**Đề 1.** Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải. Đội Hai có 72 lá cờ. Nhóm Hoa Phượng có ít hơn đội Hai 23 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính. Chi và Bình có tất cả 134 viên bi. Chi có nhiều hơn Bình 12 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+**Đề 2.** Giả sử tất cả đều là gà rồi lập luận. Vừa gà vừa chó có 22 con, đếm được 70 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Vẽ sơ đồ đoạn thẳng rồi giải. Dũng và An có tất cả 96 quyển vở. Dũng có nhiều hơn An 18 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
+**Đề 3.** Vẽ sơ đồ đoạn thẳng cho mọi bài trước khi tính. Đội Một trồng nhiều hơn nhóm Sao Mai 57 cây, và số cây của đội Một gấp 4 lần số cây của nhóm Sao Mai. Mỗi tổ trồng bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Giả sử tất cả đều là gà rồi lập luận. Vừa gà vừa chó có 25 con, đếm được 94 chân. Hỏi có bao nhiêu con gà, bao nhiêu con chó?
+**Đề 4.** Chú ý: chuyển đi thì bên này giảm, bên kia tăng. Hùng và Nam có tất cả 232 quyển vở. Nếu Hùng cho Nam 5 quyển thì hai bạn có số vở bằng nhau. Hỏi lúc đầu Hùng có bao nhiêu quyển?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Giải từng bài toán nhỏ. Trung bình mỗi ngày bán được 158 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+**Đề 5.** Mỗi ý một phép tính, trả lời gọn. Đội Hai có 43 lá cờ, tổ Hai có gấp 3 lần đội Hai. Tổ Hai có bao nhiêu lá cờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Tính trung bình cộng. Tìm trung bình cộng của 2 số: 24, 46.
+**Đề 6.** Trình bày lời giải đủ bước, ghi rõ đơn vị. Tuổi mẹ gấp 5 lần tuổi con. Mẹ hơn con 44 tuổi. Tính tuổi mỗi người.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Giải bằng phương pháp rút về đơn vị. 2 bao thóc nặng 10 kg. Hỏi 4 bao như thế nặng bao nhiêu kg?
+**Đề 7.** Tóm tắt bằng sơ đồ đoạn thẳng rồi giải. Tổ Ba và tổ Một trồng được 654 cây. Tổ Ba trồng nhiều hơn tổ Một 216 cây. Mỗi tổ trồng bao nhiêu cây?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải. Nhóm Hoa Phượng có 14 lá cờ. Tổ Hai có gấp 2 lần nhóm Hoa Phượng. Hỏi cả hai tổ có bao nhiêu lá cờ?
+**Đề 8.** Tìm hai số trong mỗi trường hợp. Tổng hai số là 118, hiệu hai số là 36. Tìm hai số đó.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Trình bày lời giải có câu trả lời cho từng bước. Nhóm Hoa Phượng trồng được 58 cây. Nhóm Sao Mai trồng được gấp 4 lần nhóm Hoa Phượng. Hỏi cả hai tổ trồng được bao nhiêu cây?
+**Đề 9.** Giải từng bài toán nhỏ. 3 ngày đầu tuần một cửa hàng bán được lần lượt 244, 239, 246 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Trình bày lời giải đủ bước, ghi rõ đơn vị. Mua 5 quyển vở, mỗi quyển 3 000 đồng. Đưa người bán 100 000 đồng. Hỏi được trả lại bao nhiêu tiền?
+**Đề 10.** Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính. Minh và Thảo có tất cả 86 viên bi. Minh có nhiều hơn Thảo 14 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -149,16 +149,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Tổng – tỉ, hiệu – tỉ mức làm quen | “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” |
-| 2 | Bài toán tổng – hiệu | “Có tất cả …” cho tổng; “nhiều hơn …” cho hiệu |
-| 3 | Bài toán tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” |
-| 4 | Giả thiết tạm | Hai loại con vật, biết tổng số con và tổng số chân |
-| 5 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” |
-| 6 | Tìm trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” |
-| 7 | Rút về đơn vị | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại |
-| 8 | Bài toán giải bằng hai phép tính | Đề cho một đại lượng và một quan hệ, câu hỏi hỏi tổng |
-| 9 | Bài toán giải bằng hai phép tính | Đề cho một đại lượng và quan hệ, hỏi tổng |
-| 10 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” |
+| 1 | Bài toán giải bằng hai phép tính | Đề cho một đại lượng và một quan hệ, câu hỏi hỏi tổng |
+| 2 | Giả thiết tạm | Hai loại con vật, biết tổng số con và tổng số chân |
+| 3 | Tổng – tỉ, hiệu – tỉ mức làm quen | “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” |
+| 4 | Tổng – hiệu có hiệu ẩn sau một lần chuyển | “Nếu … cho … thì hai bên bằng nhau” |
+| 5 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” |
+| 6 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” |
+| 7 | Tổng – hiệu có lời văn | “Có tất cả …” và “… nhiều hơn … là …” |
+| 8 | Bài toán tổng – hiệu | Đề cho **tổng** và **hiệu** của hai số |
+| 9 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” |
+| 10 | Bài toán tổng – hiệu | “Có tất cả …” cho tổng; “nhiều hơn …” cho hiệu |
 
 ---
 

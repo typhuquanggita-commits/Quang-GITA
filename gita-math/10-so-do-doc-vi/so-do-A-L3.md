@@ -56,15 +56,15 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 | M1 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Nhận biết chẵn – lẻ và số liền kề | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | — |
 | M1 | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Đếm chữ số, tính tổng chữ số | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. | — |
 | M1 | Câu hỏi về hàng, về tổng chữ số, về số liền kề | Đọc, viết, cấu tạo số | Đánh số hàng từ phải sang trái | Số chữ số đứng sau một chữ số chính là số chữ số 0 khi ghi giá trị của nó. | — |
-| M2 | Đề yêu cầu ghi cả thương và số dư | Phép chia có dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | Số dư phải bé hơn số chia |
-| M2 | Có chữ x, hoặc có dấu … trong một đẳng thức | Tìm thành phần chưa biết; tính chất phép nhân | Gọi tên vai trò rồi dùng quy tắc | Thử lại bằng cách thay số vừa tìm vào đề — mất ba giây nhưng chắc chắn. | Thừa số 0 |
+| M2 | Đề yêu cầu ghi cả thương và số dư | Phép chia có dư | Đặt tính chia, kiểm tra điều kiện số dư | Ước lượng thương bằng cách làm tròn số chia trước khi chia. | — |
+| M2 | Có chữ x, hoặc có dấu … trong một đẳng thức | Tìm thành phần chưa biết; tính chất phép nhân | Gọi tên vai trò rồi dùng quy tắc | Thử lại bằng cách thay số vừa tìm vào đề — mất ba giây nhưng chắc chắn. | — |
 | M2 | Hai chỉ số đầu kỳ và cuối kỳ trên một thiết bị đo cộng dồn | Cấu tạo số có nhiều chữ số | Trừ để ra lượng dùng, rồi tách hàng trên chính số ấy | Trừ nhẩm theo hàng từ phải sang, không cần đặt tính khi hiệu nhỏ. | — |
 | M3 | Cho ba chữ số, yêu cầu lập số | Lập số từ bộ chữ số | Cố định hàng trăm rồi hoán vị hai hàng còn lại | Ba chữ số khác 0 luôn lập được đúng 6 số. | — |
 | M3 | Câu hỏi “có chia hết cho … không” | Kiểm tra chia hết bằng dấu hiệu | Chọn dấu hiệu theo số chia rồi kiểm tra | Số chia hết cho 9 thì chắc chắn chia hết cho 3; điều ngược lại không đúng. | Dấu hiệu của 2, 5 khác hẳn dấu hiệu của 3, 9 |
 | M4 | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Đổi chỗ chữ số | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | Hiệu là 9 lần hiệu hai chữ số |
 | M4 | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Đếm số thoả điều kiện về chữ số | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | Chữ số hàng trăm khác 0 và ba chữ số khác nhau |
 | M5 | Bài toán đánh số trang | Đếm chữ số theo nhóm | Chia nhóm theo độ dài số rồi nhân, cộng | Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. | Nhóm cuối không đầy đủ |
-| M5 | Câu hỏi chỉ hỏi chữ số tận cùng | Chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | — |
+| M5 | Câu hỏi chỉ hỏi chữ số tận cùng | Chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | Tính trọn phép tính thay vì chỉ xét chữ số tận cùng |
 | M5 | “Viết thêm chữ số … vào bên trái / bên phải” | Thêm, bớt chữ số | Viết cả hai số theo cấu tạo rồi lấy hiệu | Thêm một chữ số vào bên phải thì số mới bằng số cũ nhân 10 cộng chữ số ấy. | Bên trái hay bên phải |
 
 ---
@@ -90,43 +90,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Công tơ điện nhà bạn Minh đầu tháng chỉ **26 684**, cuối tháng chỉ **26 899**. Dùng hai số này cho cả bài. Chỉ số cuối tháng là 26 899. Số ấy gồm mấy chục nghìn, mấy nghìn, mấy trăm, mấy chục và mấy đơn vị?
+**Đề 1.** Không đặt tính chia, chỉ dùng dấu hiệu. Số 657 có chia hết cho 5 không? Vì sao?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Viết số mới rồi so sánh với số cũ. Số có hai chữ số 57; viết hai chữ số theo thứ tự ngược lại được số nào? Hai số đó hơn kém nhau bao nhiêu đơn vị?
+**Đề 2.** Với mỗi số dưới đây, trả lời đủ hai ý. Số 28 605 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Trả lời ngắn gọn từng câu. Số 8 090 là số chẵn hay số lẻ?
+**Đề 3.** Không tính hết phép tính, chỉ tìm chữ số tận cùng. Tích 387 × 69 có chữ số tận cùng là chữ số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Không tính hết phép tính, chỉ tìm chữ số tận cùng. Tích 175 × 946 × 7 có chữ số tận cùng là chữ số nào?
+**Đề 4.** Cho số **75 600**. Chữ số ở hàng **chục nghìn** của số 75 600 là chữ số nào, và nó có giá trị bằng bao nhiêu?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Viết cả số cũ và số mới ra rồi so sánh. Số có hai chữ số 92: viết thêm chữ số 8 vào bên **phải** thì được số nào?
+**Đề 5.** Cho ba chữ số **1, 4, 8**. Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Không đặt tính chia, chỉ dùng dấu hiệu. Số 6 523 có chia hết cho 5 không? Vì sao?
+**Đề 6.** Cho số **94 533**. Số 94 533 có bao nhiêu chữ số?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Cho số **53 492**. Chữ số ở hàng **chục nghìn** của số 53 492 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+**Đề 7.** Viết cả số cũ và số mới ra rồi so sánh. Số có hai chữ số 26: viết thêm chữ số 9 vào bên **phải** thì được số nào?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Xét các số có ba chữ số **khác nhau**, tổng các chữ số bằng **12**. Có bao nhiêu số có ba chữ số **khác nhau** mà tổng các chữ số bằng 12?
+**Đề 8.** Viết số mới rồi so sánh với số cũ. Số có hai chữ số 91; viết hai chữ số theo thứ tự ngược lại được số nào? Hai số đó hơn kém nhau bao nhiêu đơn vị?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Với mỗi số dưới đây, trả lời đủ hai ý. Số 14 536 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+**Đề 9.** Công tơ điện nhà bạn Thảo đầu tháng chỉ **26 932**, cuối tháng chỉ **27 172**. Dùng hai số này cho cả bài. Chỉ số cuối tháng là 27 172. Số ấy gồm mấy chục nghìn, mấy nghìn, mấy trăm, mấy chục và mấy đơn vị?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Cho ba chữ số **3, 4, 5**. Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
+**Đề 10.** Tìm x hoặc điền số thích hợp. 7 × 119 = 119 × …
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -136,16 +136,16 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Cấu tạo số có nhiều chữ số | Hai chỉ số đầu kỳ và cuối kỳ trên một thiết bị đo cộng dồn |
-| 2 | Đổi chỗ chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” |
-| 3 | Nhận biết chẵn – lẻ và số liền kề | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” |
-| 4 | Chữ số tận cùng | Câu hỏi chỉ hỏi chữ số tận cùng |
-| 5 | Thêm, bớt chữ số | “Viết thêm chữ số … vào bên trái / bên phải” |
-| 6 | Kiểm tra chia hết bằng dấu hiệu | Câu hỏi “có chia hết cho … không” |
-| 7 | Xác định chữ số và giá trị chữ số theo hàng | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” |
-| 8 | Đếm số thoả điều kiện về chữ số | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” |
-| 9 | Đếm chữ số, tính tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” |
-| 10 | Lập số từ bộ chữ số | Cho ba chữ số, yêu cầu lập số |
+| 1 | Kiểm tra chia hết bằng dấu hiệu | Câu hỏi “có chia hết cho … không” |
+| 2 | Đếm chữ số, tính tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” |
+| 3 | Chữ số tận cùng | Câu hỏi chỉ hỏi chữ số tận cùng |
+| 4 | Xác định chữ số và giá trị chữ số theo hàng | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” |
+| 5 | Lập số từ bộ chữ số | Cho ba chữ số, yêu cầu lập số |
+| 6 | Đọc, viết, cấu tạo số | Câu hỏi về hàng, về tổng chữ số, về số liền kề |
+| 7 | Thêm, bớt chữ số | “Viết thêm chữ số … vào bên trái / bên phải” |
+| 8 | Đổi chỗ chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” |
+| 9 | Cấu tạo số có nhiều chữ số | Hai chỉ số đầu kỳ và cuối kỳ trên một thiết bị đo cộng dồn |
+| 10 | Tìm thành phần chưa biết; tính chất phép nhân | Có chữ x, hoặc có dấu … trong một đẳng thức |
 
 ---
 

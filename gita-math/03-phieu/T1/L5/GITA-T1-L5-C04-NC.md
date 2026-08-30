@@ -272,7 +272,7 @@ d) 8 × 1 + 8 × 2 + 8 × 3 + … + 8 × 50
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng dãy cộng trừ xen kẽ
 
@@ -333,6 +333,7 @@ e) 496 × 29 − 495 × 29
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) 1 521 885 · b) 450 351 · c) 1 207 557 · d) 769 544 · e) 1 185 035
@@ -345,12 +346,14 @@ e) 496 × 29 − 495 × 29
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.4
 **Đáp số:** a) 97 930 · b) 68 307 · c) 37 447 · d) 24 232 308 · e) 2 033 532 · f) 53 483 642 · g) 39 538 308
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.5
 **Đáp số:** a) 1 473 · b) 1 606 · c) 9 320 · d) 63 050 · e) 7 788 000 · f) 551 700 · g) 5 562 · h) 70
@@ -420,7 +423,7 @@ e) 496 × 29 − 495 × 29
 
 ### Bài IV.1
 **Đáp số:** a) x = 76 · b) x = 83 · c) x = 42 · d) x = 34
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
@@ -449,13 +452,13 @@ e) 496 × 29 − 495 × 29
 ### Bài IV.5
 **Đáp số:** a) 275 · b) 650 · c) 1 680 · d) 10 200
 **Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài V.1
 **Đáp số:** a) 13 · b) -5 · c) -20 · d) -30
-**Hướng giải:** BẪY — Số hạng lẻ còn thừa ở cuối dãy. Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
+**Hướng giải:** Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối.
 **Lỗi thường gặp:** Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. Phòng: Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp.
 **Gợi ý 3 tầng:** (1) Dãy có bao nhiêu số hạng? — (2) Ghép hai số hạng liền nhau, mỗi cặp bằng bao nhiêu? — (3) Số số hạng là chẵn hay lẻ? Có số hạng nào lẻ ra không?

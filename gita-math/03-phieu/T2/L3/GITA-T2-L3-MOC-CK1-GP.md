@@ -388,6 +388,8 @@ Kết quả: **123 · 132 · 213 · 231 · 312 · 321**.
 
 ### Bài IV.1 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 5 can dầu, mỗi can 5 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
@@ -479,8 +481,6 @@ Kết quả: **16**.
 *Điểm chốt:* Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề.
 
 ### Bài IV.5 — Ghép hình vuông thành hình chữ nhật
-
-> **BẪY — Chu vi không cộng như diện tích.**
 
 **Các bước giải**
 
@@ -672,7 +672,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | V.3 | TD2, TD6 | Đừng quên **đếm cả chính mình** khi cộng lại. |
 | V.4 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
-| V.5 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.5 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 
 ---
 

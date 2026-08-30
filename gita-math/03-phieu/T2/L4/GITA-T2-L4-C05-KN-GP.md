@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đếm hình trong lưới ô vuông
 
-> **BẪY — Bỏ sót các hình ghép nhiều ô.**
-
 **Các bước giải**
 
 Xét ý a: Lưới ô vuông gồm 4 hàng và 5 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
@@ -97,8 +95,6 @@ Kết quả: **20**.
 *Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 
 ### Bài A.2 — Chu vi và diện tích hình chữ nhật, hình vuông
-
-> **BẪY — Đơn vị của diện tích.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Đề cho số đo góc hoặc hỏi về cạnh của hình**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Đếm hình, diện tích hình ghép
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chu vi, diện tích hình cơ bản
+
+> **BẪY — Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi..**
 
 **Các bước giải**
 

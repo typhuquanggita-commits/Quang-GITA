@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 101 152 : 16
@@ -479,6 +477,8 @@ Kết quả: **Quan hệ giữa các thành phần của phép tính**.
 *Điểm chốt:* x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng.
 
 ### Bài E.1 — Tính nhanh bằng cách ghép số tròn
+
+> **BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn..**
 
 **Các bước giải**
 

@@ -469,16 +469,17 @@ f) Có 5 loại bánh và 4 loại nước. Chọn một loại bánh và một 
 
 ### Bài E.1
 **Đáp số:** a) 157 · b) 129 · c) 57 · d) 200 · e) 200 · f) 486 · g) 157
-**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
+**Hướng giải:** BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.. Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 **Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.
 
 ### Bài E.2
 **Đáp số:** a) 0 · b) x = 313 · c) x = 39 · d) 2 · e) 5 · f) 0 · g) x = 370 · h) x = 164
-**Hướng giải:** BẪY — Thừa số 0. Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
+**Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 **Gợi ý 3 tầng:** (1) x đóng vai trò gì trong phép tính? — (2) Viết quy tắc tương ứng ra nháp. — (3) Thay x tìm được vào đề để thử lại.
 
 ### Bài E.3
@@ -490,9 +491,10 @@ f) Có 5 loại bánh và 4 loại nước. Chọn một loại bánh và một 
 
 ### Bài E.4
 **Đáp số:** a) 374 dư 3 · b) 278 dư 3 · c) 297 dư 5 · d) 144 dư 4 · e) 223 dư 1 · f) 197 dư 2
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 **Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 
 ### Bài E.5

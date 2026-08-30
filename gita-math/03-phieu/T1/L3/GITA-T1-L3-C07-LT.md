@@ -346,12 +346,14 @@ e) Tuấn và Hà có tất cả 152 viên bi. Tuấn có nhiều hơn Hà 50 vi
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.3
 **Đáp số:** a) 113 lá cờ · b) 185 lá cờ · c) 36 lá cờ · d) 55 lá cờ
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài A.4
 **Đáp số:** a) 34 · b) 46 · c) 23 · d) 17 · e) 24
@@ -462,9 +464,10 @@ e) Tuấn và Hà có tất cả 152 viên bi. Tuấn có nhiều hơn Hà 50 vi
 
 ### Bài E.1
 **Đáp số:** a) 6 · b) x = 269 · c) 0 · d) x = 398 · e) 0 · f) 3
-**Hướng giải:** BẪY — Thừa số 0. Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
+**Hướng giải:** BẪY — Áp dụng quy tắc của số trừ cho số bị trừ.. Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 **Gợi ý 3 tầng:** (1) x đóng vai trò gì trong phép tính? — (2) Viết quy tắc tương ứng ra nháp. — (3) Thay x tìm được vào đề để thử lại.
 
 ### Bài E.2

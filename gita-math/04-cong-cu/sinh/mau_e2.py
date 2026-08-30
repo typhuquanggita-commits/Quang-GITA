@@ -67,7 +67,7 @@ def e2_m1_31(rng, lop):
         tuong_tu=("3 l = … ml", "3 000"),
         mo_rong="Bài rót nước: một can 5 lít rót đầy mấy chai 500 ml.",
         chuan_bi="Nhân, chia với 1 000 và so sánh số tự nhiên.",
-        bay="Đơn vị khác nhau")
+        chu_y="Đơn vị khác nhau")
 
 
 @dang_ky("E2-M2-31", "E", "M2", lop=(3,),
@@ -219,6 +219,7 @@ def e2_m4_31(rng, lop):
         huong_giai="Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), "
                    "rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.",
         td=["TD2", "TD3"],
+        bay="Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam",
         diem_chot="Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.",
         loi="Nhân số bao với giá tiền một ki-lô-gam.",
         phong="Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.",
@@ -280,7 +281,7 @@ def e2_m2_41(rng, lop):
         tuong_tu=("3 m² = … dm²", "300"),
         mo_rong="Đổi hỗn hợp: 2 ha 350 m² = … m².",
         chuan_bi="Bảng đơn vị đo độ dài và phép nhân, chia với 100.",
-        bay="100 lần chứ không phải 10 lần")
+        chu_y="100 lần chứ không phải 10 lần")
 
 
 @dang_ky("E2-M5-51", "E", "M5", lop=(5,),

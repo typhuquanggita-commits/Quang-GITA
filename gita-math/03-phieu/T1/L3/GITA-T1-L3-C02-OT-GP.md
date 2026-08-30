@@ -466,6 +466,8 @@ Số bé nhất là 169, số lớn nhất là 970.
 
 ### Bài IV.4 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Hùng và Phúc có tất cả 64 quyển vở. Hùng có nhiều hơn Phúc 22 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -485,8 +487,6 @@ Kết quả: **Hùng: 43 quyển, Phúc: 21 quyển**.
 *Điểm chốt:* Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 
 ### Bài IV.5 — Lấy ít nhất bao nhiêu để chắc chắn
-
-> **BẪY — Trường hợp xấu nhất.**
 
 **Các bước giải**
 

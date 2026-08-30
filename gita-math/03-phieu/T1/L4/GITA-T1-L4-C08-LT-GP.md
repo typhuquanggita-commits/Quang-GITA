@@ -642,7 +642,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | TD4 | Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật. |
 | D.2 | TD2, TD4 | Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài. |
 | D.3 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
-| D.4 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| D.4 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | D.5 | TD4, TD5 | Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp. |
 | E.1 | TD4, TD6 | Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**. |
 | E.2 | TD4, TD5 | Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp. |

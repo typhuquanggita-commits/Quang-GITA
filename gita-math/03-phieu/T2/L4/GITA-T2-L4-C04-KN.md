@@ -345,9 +345,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 150 km · b) 5 km/giờ · c) 4 giờ · d) 8 km · e) 2 giờ · f) 60 km/giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.4
 **Đáp số:** a) 78 · b) 15 · c) 56 · d) 163
@@ -357,9 +358,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.5
 **Đáp số:** a) 26 · b) 228 · c) 30 · d) 48 · e) 63 · f) 19
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -458,14 +460,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Tổng – hiệu, tổng – tỉ, hiệu – tỉ và đại lượng tỉ lệ” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Ba dạng bài trung bình cộng.” · b) Cụm “trung bình mỗi …” · c) Quan hệ tổng – số lượng – trung bình cộng · d) Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? → 200 kg · e) Đi tìm ngay số còn thiếu mà chưa tính tổng. · f) Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Hướng giải:** BẪY — Đi tìm ngay số còn thiếu mà chưa tính tổng.. Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
 **Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

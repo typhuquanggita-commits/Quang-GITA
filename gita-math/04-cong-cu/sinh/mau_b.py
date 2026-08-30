@@ -102,7 +102,7 @@ def b_m1_02(rng, lop):
         pt_phuong_phap="Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số",
         pt_nhanh="Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia.",
         tuong_tu=("Đặt tính rồi tính: 3 045 × 24", "73 080"),
-        bay="Chữ số 0 ở giữa thương",
+        chu_y="Chữ số 0 ở giữa thương",
     )
 
 
@@ -132,7 +132,7 @@ def b_m1_03(rng, lop):
         pt_phuong_phap="Xét ngoặc → nhân chia → cộng trừ, trái sang phải",
         pt_nhanh="Nếu thấy dạng a × b + a × c thì đưa ngay về a × (b + c).",
         tuong_tu=("Tính: 25 + 8 × 4", "57"),
-        bay="Thiếu ngoặc mà vẫn cộng trước",
+        chu_y="Thiếu ngoặc mà vẫn cộng trước",
     )
 
 
@@ -612,7 +612,8 @@ def b_m4_02(rng, lop):
         huong_giai="Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, "
                    "trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức "
                    "tổng dãy cách đều để tính.",
-        td=["TD3", "TD4"],
+        td=["TD3", "TD4", "TD5"],
+        bay="Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung",
         diem_chot="Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.",
         loi="Nhân từng tích rồi cộng dồn, rất dài và dễ sai.",
         phong="Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.",
@@ -649,6 +650,7 @@ def b_m4_03(rng, lop):
                    "ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại "
                    "ở vế trái. Từ đó tìm x bằng một phép chia.",
         td=["TD3", "TD6"],
+        bay="Chuyển vế mà quên đổi dấu",
         diem_chot="Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.",
         loi="Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x.",
         phong="Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.",

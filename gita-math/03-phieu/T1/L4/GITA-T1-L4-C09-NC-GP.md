@@ -406,6 +406,8 @@ Còn lại **Sơn học vẽ**. Thử lại cả hai manh mối đều đúng.
 
 ### Bài IV.2 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -472,6 +474,8 @@ Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là *
 
 ### Bài IV.5 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 1 phần 2 : 1 + 3 phần 2
@@ -492,8 +496,6 @@ Kết quả: **2**.
 
 ### Bài V.1 — Kĩ thuật tách – bù để tính và so sánh
 
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
-
 **Các bước giải**
 
 Xét ý a: 245 × 26 − 244 × 26
@@ -513,8 +515,6 @@ Kết quả: **26**.
 *Điểm chốt:* Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 
 ### Bài V.2 — So sánh phân số bằng phần bù và phân số trung gian
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -656,7 +656,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
 | III.5 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
 | IV.1 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
-| IV.2 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.2 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.3 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
 | IV.4 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.5 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |

@@ -274,7 +274,7 @@ e) Có 8 tấm vải, mỗi tấm dài 2 m. Cắt mỗi tấm đi 1 m. Hỏi cò
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Diện tích thay đổi khi kích thước thay đổi
 
@@ -375,12 +375,14 @@ f) Xoá chữ số hàng đơn vị của 46 thì được số nào?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.3
 **Đáp số:** a) 209 dư 1 · b) 305 dư 1 · c) 244 dư 8 · d) 144 dư 2 · e) 151 dư 4 · f) 145 dư 2 · g) 30 dư 5
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.4
 **Đáp số:** a) 3 chục nghìn, 5 nghìn, 0 trăm, 9 chục, 7 đơn vị · b) 35 097 − 34 788 = 309 kW·h · c) 35 000 · d) 35 097 · e) ít hơn 139 kW·h
@@ -454,14 +456,14 @@ f) Xoá chữ số hàng đơn vị của 46 thì được số nào?
 
 ### Bài IV.5
 **Đáp số:** a) 60 chai · b) 8 400 000 đồng · c) 48 m · d) 80 chai · e) 8 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
 
 ### Bài V.1
 **Đáp số:** a) 18 cm · b) 18 cm² · c) 24 cm² · d) 16 cm · e) 48 cm² · f) tăng chiều rộng, vì phần tăng thêm nhân với chiều dài (là chiều lớn hơn)
-**Hướng giải:** BẪY — Diện tích tăng theo chiều còn lại. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật kích thước k × chiều còn lại, còn chu vi chỉ tăng thêm 2 × k. Vì vậy tăng chiều nào thì diện tích tăng theo **chiều kia**.
+**Hướng giải:** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật kích thước k × chiều còn lại, còn chu vi chỉ tăng thêm 2 × k. Vì vậy tăng chiều nào thì diện tích tăng theo **chiều kia**.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại.
 **Lỗi thường gặp:** Cho rằng tăng chiều dài thì diện tích tăng nhiều hơn vì chiều dài lớn hơn. Phòng: Vẽ hình cũ nằm trong hình mới và tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra là hình gì, kích thước bao nhiêu? — (3) So sánh hai trường hợp tăng.
@@ -490,7 +492,7 @@ f) Xoá chữ số hàng đơn vị của 46 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 468 · b) 422 · c) 846 · d) 800 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 4
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

@@ -428,6 +428,8 @@ Kết quả: **17**.
 
 ### Bài IV.3 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Hùng và Sơn có tất cả 200 quyển vở. Hùng có nhiều hơn Sơn 16 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -513,8 +515,6 @@ Kết quả: **6**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.2 — Bài toán bắt tay
-
-> **BẪY — Mỗi cặp bị đếm hai lần.**
 
 **Các bước giải**
 
@@ -660,7 +660,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD4, TD6 | Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**. |
 | V.3 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 | V.4 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

@@ -339,9 +339,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 5 giờ · b) 300 km · c) 50 km/giờ · d) 250 km · e) 5 giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.3
 **Đáp số:** a) số lớn 923, số bé 657 · b) số lớn 522, số bé 488 · c) số lớn 474, số bé 240 · d) số lớn 1 196, số bé 604 · e) số lớn 228, số bé 160 · f) số lớn 140, số bé 70
@@ -357,9 +358,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.5
 **Đáp số:** a) 44 · b) 57 · c) 48 · d) 27
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -458,14 +460,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Tỉ lệ thuận – nghịch, trung bình cộng và bài toán số thập phân” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tỉ lệ bản đồ, tỉ lệ xích.” · b) Có kí hiệu tỉ lệ dạng 1 : n · c) Tỉ lệ, đổi đơn vị đo độ dài · d) Bản đồ tỉ lệ 1 : 1 000, đoạn đo được 5 cm dài bao nhiêu mét thật? → 50 m · e) Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. · f) Tỉ lệ 1 : 1 000 thì 1 cm bản đồ đúng bằng 10 m thật.
-**Hướng giải:** Tỉ lệ 1 : n nghĩa là 1 đơn vị trên bản đồ ứng với n đơn vị thật, **cùng một loại đơn vị**. Từ bản đồ ra thật thì nhân với n; từ thật về bản đồ thì chia cho n. Đổi đơn vị chỉ làm ở bước cuối.
+**Hướng giải:** BẪY — Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa.. Tỉ lệ 1 : n nghĩa là 1 đơn vị trên bản đồ ứng với n đơn vị thật, **cùng một loại đơn vị**. Từ bản đồ ra thật thì nhân với n; từ thật về bản đồ thì chia cho n. Đổi đơn vị chỉ làm ở bước cuối.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
 **Lỗi thường gặp:** Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. Phòng: Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

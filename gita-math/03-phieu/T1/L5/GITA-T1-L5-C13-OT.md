@@ -265,7 +265,7 @@ e) Đội Hai có 399 quyển sách, tổ Một có 57 quyển. Hỏi phải chu
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -451,14 +451,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) 25 lít · b) 300 lít · c) 120 lít · d) 20 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) 76 quyển · b) 29 quyển · c) 23 quyển · d) 40 quyển · e) 171 quyển
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+**Hướng giải:** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
 **Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?

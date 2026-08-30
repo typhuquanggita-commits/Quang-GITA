@@ -259,10 +259,10 @@ f) Biết 1 phần 4 của một số là 25. Tìm số đó.
 
 Tìm x, trình bày từng bước.
 
-a) x × 5 + 7 = 242
-b) 128 − x = 82
-c) x : 9 + 77 = 98
-d) x × 2 − 77 = 116
+a) x × 2 + 29 = 105
+b) (x + 77) × 9 = 882
+c) x × 2 − 77 = 39
+d) 142 − x = 90
 
 ### Bài 5. (5 điểm) Bài toán trồng cây
 
@@ -277,7 +277,7 @@ f) Đoạn đường dài 42 m, trồng cây cách nhau 2 m, không trồng ở 
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tính nhanh tổng các số tự nhiên liên tiếp
 
@@ -344,12 +344,14 @@ f) Xoá chữ số hàng đơn vị của 37 thì được số nào?
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.2
 **Đáp số:** a) 717 · b) 5 128 · c) 3 144 · d) 402 · e) 1 383 · f) 864 · g) 973
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 14, 17, 20 · b) 28, 32, 36 · c) 43, 50, 57 · d) 33, 38, 43
@@ -368,6 +370,7 @@ f) Xoá chữ số hàng đơn vị của 37 thì được số nào?
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài II.1
 **Đáp số:** a) 9 · b) (37 − 3) : 2 + 1 = 18 nhà · c) 3 + (15 − 1) × 2 = 31 · d) (23 − 3) : 2 + 1 = 11 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
@@ -451,15 +454,15 @@ f) Xoá chữ số hàng đơn vị của 37 thì được số nào?
 **Gợi ý 3 tầng:** (1) Số đó được chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
 
 ### Bài IV.4
-**Đáp số:** a) x = 47 · b) x = 46 · c) x = 189 · d) x = 193 : 2
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 38 · b) x = 21 · c) x = 58 · d) x = 52
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
 ### Bài IV.5
 **Đáp số:** a) 17 · b) 9 · c) 18 · d) 9 · e) 8 · f) 20
-**Hướng giải:** BẪY — Bốn trường hợp trồng cây. Tính số khoảng trước: độ dài chia khoảng cách. Trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém 1; trồng khép kín thì bằng đúng số khoảng.
+**Hướng giải:** Tính số khoảng trước: độ dài chia khoảng cách. Trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém 1; trồng khép kín thì bằng đúng số khoảng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề.
 **Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một hình nhỏ với ba khoảng để đếm thử.
 **Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ.
@@ -474,7 +477,7 @@ f) Xoá chữ số hàng đơn vị của 37 thì được số nào?
 ### Bài V.2
 **Đáp số:** a) 10 · b) 5 · c) 15 · d) 5 · e) 15 · f) 5
 **Hướng giải:** Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 
@@ -495,7 +498,7 @@ f) Xoá chữ số hàng đơn vị của 37 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 374 · b) 337 · c) 437 · d) 400 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 3
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

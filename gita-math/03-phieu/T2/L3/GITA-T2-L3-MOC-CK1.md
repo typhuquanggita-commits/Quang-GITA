@@ -275,7 +275,7 @@ d) Ghép 2 hình vuông cạnh 6 cm thành một hàng ngang. Tính chu vi và d
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Cân đĩa và quả cân
 
@@ -348,6 +348,7 @@ f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) ô (Hùng; Tiếng Việt) · b) toàn bộ hàng Hùng và toàn bộ cột Tiếng Việt · c) ô (Khánh; Toán) · d) Tiếng Anh · e) Toán · f) phương pháp lập bảng và loại trừ
@@ -360,6 +361,7 @@ f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.5
 **Đáp số:** a) 3 tấn 7 tạ 44 kg · b) 1 232 · c) 4 268 · d) 2 tấn 5 tạ 54 kg · e) 4 tấn 7 tạ 89 kg · f) 5 412
@@ -372,6 +374,7 @@ f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài II.2
 **Đáp số:** a) 17 · b) 13 · c) 30 · d) 29 · e) 11
@@ -384,6 +387,7 @@ f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.4
 **Đáp số:** a) Ngọc: 69 viên, Khánh: 67 viên · b) Yến: 91 viên, Đức: 63 viên · c) Chi: 75 viên, Hùng: 39 viên · d) Đức: 21 viên, An: 15 viên
@@ -429,7 +433,7 @@ f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 
 ### Bài IV.1
 **Đáp số:** a) 25 chai · b) 3 m · c) 8 800 000 đồng · d) 130 chai · e) 12 000 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -457,7 +461,7 @@ f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 
 ### Bài IV.5
 **Đáp số:** a) chu vi 42 cm, diện tích 98 cm² · b) chu vi 156 cm, diện tích 845 cm² · c) chu vi 40 cm, diện tích 64 cm² · d) chu vi 36 cm, diện tích 72 cm²
-**Hướng giải:** BẪY — Chu vi không cộng như diện tích. Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
+**Hướng giải:** Ghép n hình vuông cạnh a thành một hàng thì được hình chữ nhật có chiều dài n × a và chiều rộng a. Diện tích cộng lại đúng bằng tổng diện tích các hình vuông, nhưng **chu vi thì không** cộng lại như vậy vì các cạnh dán vào trong không còn nằm trên đường bao.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Diện tích cộng được, **chu vi thì không**.
 **Lỗi thường gặp:** Nhân chu vi một hình vuông với số hình. Phòng: Vẽ hình ghép và tô đậm đường bao trước khi tính.
 **Gợi ý 3 tầng:** (1) Chiều dài hình mới bằng bao nhiêu? — (2) Chiều rộng hình mới bằng bao nhiêu? — (3) Áp công thức chu vi và diện tích hình chữ nhật.
@@ -493,7 +497,7 @@ f) Phải cho đội Hai thêm bao nhiêu lá nữa thì hai tổ bằng nhau?
 ### Bài V.5
 **Đáp số:** a) 26 · b) 39 · c) 13 · d) 25 · e) 1 · f) 13
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

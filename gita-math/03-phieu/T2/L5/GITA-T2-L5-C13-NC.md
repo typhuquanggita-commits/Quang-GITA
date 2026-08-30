@@ -287,7 +287,7 @@ e) Tháng vừa rồi nhà bạn Bình dùng hết 200 kW·h điện. Dựa vào
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Hai lần thay đổi phần trăm liên tiếp
 
@@ -359,18 +359,21 @@ d) Lớp có 66 học sinh. Có 28 em học bóng rổ, 31 em học bơi, 33 em 
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài I.3
 **Đáp số:** a) 60 · b) 111 · c) 49 · d) 32 · e) 70 · f) 43
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.4
 **Đáp số:** a) < · b) < · c) > · d) > · e) > · f) < · g) < · h) <
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.5
 **Đáp số:** a) 6 334 900 · b) < · c) 444 792 và 444 794 · d) 3 000 · e) 485 611 và 485 613 · f) 329 200 · g) 0
@@ -383,6 +386,7 @@ d) Lớp có 66 học sinh. Có 28 em học bóng rổ, 31 em học bơi, 33 em 
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài II.2
 **Đáp số:** a) 1 phần 14 · b) 6 phần 5 · c) 201 phần 143 · d) 47 phần 42 · e) 127 phần 130
@@ -454,7 +458,7 @@ d) Lớp có 66 học sinh. Có 28 em học bóng rổ, 31 em học bơi, 33 em 
 
 ### Bài IV.3
 **Đáp số:** a) 9 phần 4 · b) 226 phần 135 · c) 19 phần 88 · d) 28 phần 11 · e) 813 phần 550 · f) 37 phần 33
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -468,7 +472,7 @@ d) Lớp có 66 học sinh. Có 28 em học bóng rổ, 31 em học bơi, 33 em 
 
 ### Bài IV.5
 **Đáp số:** a) 251 000 đồng · b) 489 000 đồng · c) 461 000 đồng · d) 629 000 đồng · e) 405 000 đồng
-**Hướng giải:** BẪY — Nhân cả số điện cho đơn giá bậc cuối. Chia số điện đã dùng vào từng bậc theo thứ tự từ bậc một trở lên. Mỗi bậc chỉ chứa tối đa lượng điện của bậc ấy; phần dư mới tràn sang bậc sau. Nhân từng bậc rồi cộng lại.
+**Hướng giải:** Chia số điện đã dùng vào từng bậc theo thứ tự từ bậc một trở lên. Mỗi bậc chỉ chứa tối đa lượng điện của bậc ấy; phần dư mới tràn sang bậc sau. Nhân từng bậc rồi cộng lại.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Không được nhân cả số điện cho một đơn giá duy nhất. Đó chính là lỗi mà cách tính bậc thang sinh ra để chống.
 **Lỗi thường gặp:** Lấy tổng số điện nhân với đơn giá của bậc cuối cùng dùng tới. Phòng: Kẻ bảng ba cột — bậc, số điện của bậc, thành tiền — rồi mới cộng.
 **Gợi ý 3 tầng:** (1) Bậc một chứa được nhiều nhất bao nhiêu kW·h? — (2) Phần dư sau bậc một tràn sang bậc mấy? — (3) Nhân từng bậc riêng rồi mới cộng lại.

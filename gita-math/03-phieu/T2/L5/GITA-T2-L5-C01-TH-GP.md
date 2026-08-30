@@ -384,6 +384,8 @@ Kết quả: **69, hiệu 27**.
 
 ### Bài IV.1 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -515,8 +517,6 @@ Vì thế tổng 5 số lẻ đầu tiên bằng 5 × 5 = 25.
 *Phải chắc trước khi làm bài này:* Bảng nhân và chữ số tận cùng của tích.
 
 ### Bài V.2 — Dãy có hiệu tăng đều
-
-> **BẪY — Cộng thừa một hiệu.**
 
 **Các bước giải**
 
@@ -651,7 +651,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD2 | Chia cho **tổng số phần**, không chia cho số đại lượng. |
 | III.4 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
 | III.5 | TD3, TD2 | Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9. |
-| IV.1 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.1 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.2 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.3 | TD2, TD1 | Các ước luôn đi thành **cặp** nhân với nhau bằng chính số đó. |
 | IV.4 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |

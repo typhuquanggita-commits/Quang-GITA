@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 3 500 : 4
@@ -97,8 +95,6 @@ Kết quả: **875**.
 *Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 
 ### Bài A.2 — Chu vi và diện tích hình chữ nhật, hình vuông
-
-> **BẪY — Đơn vị của diện tích.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Cho chiều dài, chiều rộng hoặc cạnh**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Đếm hình và chu vi hình ghép”
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chu vi hình chữ nhật
+
+> **BẪY — Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng..**
 
 **Các bước giải**
 

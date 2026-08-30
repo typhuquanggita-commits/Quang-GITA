@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Ôn tập bốn phép tính với số tự nhiên
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Đặt tính, nhân lần lượt từng chữ số của 965 với 510 827.
@@ -99,8 +97,6 @@ Cộng các tích riêng lại: 510 827 × 965 = 492 948 055.
 *Phải chắc trước khi làm bài này:* Bảng nhân chia và kĩ thuật đặt tính.
 
 ### Bài A.2 — Đổi đơn vị đo diện tích
-
-> **BẪY — 100 lần chứ không phải 10 lần.**
 
 **Các bước giải**
 
@@ -482,6 +478,8 @@ Kết quả: **Các số hạng có đơn vị khác nhau trong cùng một phé
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -501,6 +499,8 @@ Kết quả: **giới thiệu chương “Đơn vị đo khối lượng, thời
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đổi đơn vị diện tích
+
+> **BẪY — Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc..**
 
 **Các bước giải**
 

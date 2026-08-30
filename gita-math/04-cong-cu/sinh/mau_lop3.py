@@ -165,29 +165,57 @@ def b3_m3_01(rng, lop):
 
 @dang_ky("B3-M4-01", "B", "M4", lop=L3, tu_khoa=("tìm x", "hai bước", "lớp 3"))
 def b3_m4_01(rng, lop):
-    y = []
-    for kieu in luan_phien(rng, ["ax+b", "ax-b", "b-x", "x:a+b"], rng.randint(4, 6)):
+    """Tìm x hai bước, có cả dạng x nằm trong ngoặc.
+
+    Bản cũ có hai chỗ hỏng. Một là nhánh `ax-b` để lại đáp số dạng "x = 47 : 3"
+    khi phép chia không hết — một đáp số chưa tính xong, và với lớp 3 thì còn
+    là một phép chia có dư không giải được. Hai là cả bốn nhánh đều thuộc dạng
+    "đề nói thẳng phải làm gì", tức là mức **M3** chứ không phải M4; chấm độ
+    khó cho ra 0/100, thấp hơn cả mẫu M2 của cùng lớp.
+
+    Bản này chữa cả hai: mọi nhánh cho x nguyên, và thêm nhánh **x nằm trong
+    ngoặc** — chỗ học sinh phải tự nhận ra gỡ phép ngoài ngoặc trước.
+    """
+    y, buoc = [], []
+    for i, kieu in enumerate(luan_phien(
+            rng, ["ax+b", "ax-b", "b-x", "x:a+b", "(x+b)a", "(x-b)a"],
+            rng.randint(4, 6))):
         a = rng.randint(2, 9)
         x = rng.randint(3, 60)
         b = rng.randint(5, 90)
         if kieu == "ax+b":
             y.append((f"x × {sv(a)} + {sv(b)} = {sv(a * x + b)}", f"x = {sv(x)}"))
         elif kieu == "ax-b":
-            y.append((f"x × {sv(a)} − {sv(b)} = {sv(a * x)}",
-                      f"x = {sv(a * x + b)} : {sv(a)}" if (a * x + b) % a
-                      else f"x = {sv((a * x + b) // a)}"))
+            # Cho sẵn vế phải là a × x − b để x luôn nguyên.
+            y.append((f"x × {sv(a)} − {sv(b)} = {sv(a * x - b)}", f"x = {sv(x)}"))
         elif kieu == "b-x":
-            t = x + b
-            y.append((f"{sv(t)} − x = {sv(b)}", f"x = {sv(x)}"))
-        else:
+            y.append((f"{sv(x + b)} − x = {sv(b)}", f"x = {sv(x)}"))
+        elif kieu == "x:a+b":
             y.append((f"x : {sv(a)} + {sv(b)} = {sv(x + b)}", f"x = {sv(x * a)}"))
+        elif kieu == "(x+b)a":
+            y.append((f"(x + {sv(b)}) × {sv(a)} = {sv((x + b) * a)}", f"x = {sv(x)}"))
+        else:
+            x = max(x, b + 1)
+            y.append((f"(x − {sv(b)}) × {sv(a)} = {sv((x - b) * a)}", f"x = {sv(x)}"))
+        if not buoc:
+            de, dap = y[-1]
+            buoc = [
+                f"Xét **{de}**.",
+                "Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. "
+                "Việc phải làm là gỡ phép tính **ngoài cùng** trước.",
+                "Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.",
+                f"Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. "
+                f"Kết quả: **{dap}**.",
+            ]
     return Bai(
         tieu_de="Tìm x qua hai bước",
         dan="Tìm x, trình bày từng bước.",
         y=y,
+        giai_mau=buoc,
         huong_giai="Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị "
                    "của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.",
-        td=["TD3"],
+        td=["TD3", "TD4"],
+        bay="Gỡ phép trong ngoặc trước phép ngoài ngoặc",
         diem_chot="Gỡ **phép tính ngoài cùng trước**, phép trong sau.",
         loi="Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.",
         phong="Khoanh tròn cụm chứa x rồi coi cả cụm là một số.",
@@ -439,6 +467,7 @@ def d3_m4_01(rng, lop):
                    "phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được "
                    "số bé, rồi cộng hiệu được số lớn.",
         td=["TD3", "TD2"],
+        bay="Chia đôi tổng rồi cộng cả hiệu vào một số",
         diem_chot="Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.",
         loi="Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.",
         phong="Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.",
@@ -666,7 +695,7 @@ def f3_m2_01(rng, lop):
         pt_phuong_phap="Chọn công thức, ghi đúng đơn vị",
         pt_nhanh="Hình vuông là hình chữ nhật có dài bằng rộng.",
         tuong_tu=("Hình vuông cạnh 6 cm. Tính diện tích.", "36 cm²"),
-        bay="Đơn vị diện tích",
+        chu_y="Đơn vị diện tích",
     )
 
 
@@ -937,7 +966,7 @@ def h3_m1_01(rng, lop):
         pt_phuong_phap="Chia số đó cho mẫu số",
         pt_nhanh="Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay.",
         tuong_tu=("Tìm 1 phần 4 của 20.", "5"),
-        bay="Chia chứ không nhân",
+        chu_y="Chia chứ không nhân",
     )
 
 

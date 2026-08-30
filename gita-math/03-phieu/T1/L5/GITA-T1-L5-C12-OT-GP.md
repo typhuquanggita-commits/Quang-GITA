@@ -432,6 +432,8 @@ Giá cuối cùng là **324 000 đồng**. Nếu cộng gộp hai lần giảm t
 
 ### Bài IV.3 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 2 phần 3 × 5 phần 7 + 2 phần 3 × 3 phần 4

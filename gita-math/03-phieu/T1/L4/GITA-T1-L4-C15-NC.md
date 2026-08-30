@@ -268,7 +268,7 @@ d) Vòi thứ nhất chảy một mình đầy bể trong 8 giờ, vòi thứ ha
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bài toán giả thiết tạm — gà và chó
 
@@ -346,6 +346,7 @@ e) Có 45 học sinh sinh trong 11 tháng khác nhau. Chứng tỏ rằng có í
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.4
 **Đáp số:** a) số lớn 216, số bé 160 · b) số lớn 448, số bé 324 · c) số lớn 1 058, số bé 608 · d) số lớn 877, số bé 631 · e) số lớn 1 024, số bé 940 · f) số lớn 137, số bé 111
@@ -358,6 +359,7 @@ e) Có 45 học sinh sinh trong 11 tháng khác nhau. Chứng tỏ rằng có í
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài II.1
 **Đáp số:** a) nhóm Hoa Phượng: 428 cây, nhóm Sao Mai: 278 cây · b) 5A: 267 quyển, 3A: 257 quyển · c) thư viện: 347 kg, xưởng: 307 kg · d) 5C: 199 quyển, 5B: 143 quyển · e) nhóm Sao Mai: 189 cây, tổ Một: 115 cây · f) kho A: 84 kg, xưởng: 46 kg
@@ -421,8 +423,8 @@ e) Có 45 học sinh sinh trong 11 tháng khác nhau. Chứng tỏ rằng có í
 
 ### Bài IV.1
 **Đáp số:** a) 5 · b) 122 · c) 2 540 · d) 63,5 · e) 127 · f) 127
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -449,7 +451,7 @@ e) Có 45 học sinh sinh trong 11 tháng khác nhau. Chứng tỏ rằng có í
 
 ### Bài IV.5
 **Đáp số:** a) 60 phần 23 giờ · b) 12 phần 7 giờ · c) 4 giờ · d) 2 giờ 40 phút
-**Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
+**Hướng giải:** Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
 **Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Gợi ý 3 tầng:** (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
@@ -471,7 +473,7 @@ e) Có 45 học sinh sinh trong 11 tháng khác nhau. Chứng tỏ rằng có í
 ### Bài V.3
 **Đáp số:** a) 51 · b) 48 · c) 54 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 15 · f) 30 · g) 15
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

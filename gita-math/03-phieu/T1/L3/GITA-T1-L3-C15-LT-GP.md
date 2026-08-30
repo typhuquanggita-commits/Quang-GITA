@@ -542,8 +542,6 @@ Kết quả: **200**.
 
 ### Bài E.4 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 5 208 : 8

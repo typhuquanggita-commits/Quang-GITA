@@ -96,8 +96,6 @@ Kết quả: **x = 809**.
 
 ### Bài A.2 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 23 435 × 58
@@ -477,6 +475,8 @@ Kết quả: **Tính chất phép tính với số thập phân**.
 *Điểm chốt:* Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên.
 
 ### Bài E.1 — Tính nhanh bằng cách ghép số tròn
+
+> **BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn..**
 
 **Các bước giải**
 

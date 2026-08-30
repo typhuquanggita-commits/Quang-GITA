@@ -257,10 +257,10 @@ d) Trong hộp có bút thuộc 2 màu khác nhau, mỗi màu rất nhiều chi�
 
 Tìm x, trình bày từng bước.
 
-a) 35 − x = 12
+a) 59 − x = 12
 b) x × 5 + 20 = 285
-c) x × 9 − 81 = 81
-d) x : 7 + 48 = 107
+c) x : 9 + 81 = 90
+d) (x − 48) × 7 = 77
 
 ### Bài 5. (5 điểm) Tìm số khi biết một phần mấy của nó
 
@@ -274,7 +274,7 @@ e) Có 75 quyển vở, đã dùng 1 phần 3 số vở. Còn lại bao nhiêu q
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -370,6 +370,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.5
 **Đáp số:** a) 404 · b) 453 · c) 411 · d) 200 · e) 487 · f) 200 · g) 32
@@ -459,9 +460,9 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Xấu nhất mỗi màu lấy được mấy chiếc mà vẫn chưa đủ? — (2) Tổng cộng lấy được bao nhiêu chiếc? — (3) Lấy thêm một chiếc nữa thì sao?
 
 ### Bài IV.4
-**Đáp số:** a) x = 23 · b) x = 53 · c) x = 18 · d) x = 413
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 47 · b) x = 53 · c) x = 81 · d) x = 59
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 

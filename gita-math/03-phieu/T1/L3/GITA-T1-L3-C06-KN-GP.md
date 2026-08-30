@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Quy tắc nhân trong phép đếm
 
-> **BẪY — Cộng hay nhân.**
-
 **Các bước giải**
 
 Xét ý a: Có 7 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
@@ -117,8 +115,6 @@ Kết quả: **756**.
 *Điểm chốt:* Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
 
 ### Bài A.3 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Biểu thức có nhiều phép tính, có thể có ngoặc**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Biểu thức và phép tính với s�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Nhân nhẩm nhờ tách thừa số
+
+> **BẪY — Nhân với 10 rồi quên bù trừ phần chênh..**
 
 **Các bước giải**
 
@@ -634,7 +634,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên. |
 | C.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| D.2 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | D.3 | TD5, TD6 | **Nhìn trước, tính sau** — đó là toàn bộ bí quyết tính nhanh. |
 | D.4 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | D.5 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |

@@ -380,6 +380,8 @@ Kết quả: **kho A: 51 kg, trang trại: 102 kg**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 9 thùng dầu, mỗi thùng 15 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -448,6 +450,8 @@ Kết quả: **92 quyển**.
 
 ### Bài IV.4 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -467,8 +471,6 @@ Kết quả: **-51**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.5 — Tính tiền vé cho cả gia đình
-
-> **BẪY — Dùng cả dữ kiện thừa.**
 
 **Các bước giải**
 
@@ -491,8 +493,6 @@ Cả gia đình: 520 000 + 260 000 = **780 000 đồng**.
 *Phải chắc trước khi làm bài này:* Nhân chia số tròn nghìn và kỹ năng gạch chân câu hỏi.
 
 ### Bài V.1 — Tổng nhiều số có ràng buộc — dạng đề thi
-
-> **BẪY — Số lượng chẵn thì không có số giữa.**
 
 **Các bước giải**
 
@@ -654,9 +654,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.2 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
 | IV.3 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
-| IV.4 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.4 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.5 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.3 | TD4, TD6 | Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | V.4 | TD6, TD3 | Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu. |

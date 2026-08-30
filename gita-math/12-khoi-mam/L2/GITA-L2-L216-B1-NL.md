@@ -19,6 +19,7 @@ cap_nhat: "2026-08-30"
 Lớp 2 · 7 – 8 tuổi · Mã: **GITA-L2-L216-B1-NL**  
 Mạch: **Thống kê và Xác suất** *(Cambridge: Statistics and Probability)*  
 Thời lượng: **40 phút** · Thang điểm: **40**  
+Bậc: **Làm quen** — Người lớn làm mẫu trước, trẻ làm theo từng bước.  
 Bản dành cho: **người lớn ngồi cùng**
 
 ---

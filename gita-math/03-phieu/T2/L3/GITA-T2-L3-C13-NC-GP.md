@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 456 · b) x = 331 : 8 · c) x = 18 · d) x = 52 · e) x = 92
+- **Bài IV.1** — a) x = 180 · b) x = 30 · c) x = 18 · d) x = 59 · e) x = 23
 - **Bài IV.2** — a) 139 · b) 720 · c) 1 089 · d) 279 · e) 167 · f) 429 · g) 612
 - **Bài IV.3** — a) 70 · b) 44 quyển · c) 1 phần 3 · d) 68 · e) 1 phần 2 · f) 112 quyển · g) 84 quyển
 - **Bài IV.4** — a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 9 · e) Ngọc · f) 2 lần
@@ -400,19 +400,17 @@ Kiểm tra với hình 2: 5 + 1 × 4 = 9 ✓
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 8 + 47 = 104
+Xét **x : 9 + 55 = 75**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 456**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 180**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -538,8 +536,6 @@ Kiểm tra: 2 + 1 + 3 = 6 ✓
 
 ### Bài V.2 — Thêm, bớt chữ số vào một số
 
-> **BẪY — Bên trái hay bên phải.**
-
 **Các bước giải**
 
 Viết thêm một chữ số vào **bên phải** là nhân số cũ với 10 rồi cộng chữ số ấy.
@@ -649,7 +645,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Bài toán giải bằng hai phép tính | Quan hệ gấp – kém, phép cộng | Đề cho một đại lượng và quan hệ, hỏi tổng | Tìm đại lượng còn thiếu rồi cộng | Cả hai tổ bằng (1 + k) lần tổ thứ nhất — nhẩm được ngay. | 141 cây · 70 cây · 171 cây · 110 cây… |
 | III.4 | Tính giá trị biểu thức | Thứ tự thực hiện các phép tính | Biểu thức nhiều phép tính, có thể có ngoặc | Ngoặc → nhân chia → cộng trừ | Nhìn dấu ngoặc trước tiên, mất một giây nhưng tránh sai cả bài. | 13 · 504 · 70 · 41… |
 | III.5 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n | Hình xếp thêm đều đặn theo thứ tự | Lập bảng ba hình đầu rồi áp công thức | Ba hình đầu là đủ để khẳng định quy luật cách đều. | 9 · 13 · 77 · hình thứ 6… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 456 · x = 331 : 8 · x = 18 · x = 52… |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 180 · x = 30 · x = 18 · x = 59… |
 | IV.2 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 139 · 720 · 1 089 · 279… |
 | IV.3 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 70 · 44 quyển · 1 phần 3 · 68… |
 | IV.4 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 3 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 9… |
@@ -681,15 +677,15 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD3 | Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai. |
 | III.4 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên. |
 | III.5 | TD4, TD3 | Nhân với **(n − 1)** chứ không phải n. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
 | IV.3 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | IV.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.5 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | V.1 | TD2, TD6 | Đừng quên **đếm cả chính mình** khi cộng lại. |
-| V.2 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.2 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.3 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |
-| V.4 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.4 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.5 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 
 ---

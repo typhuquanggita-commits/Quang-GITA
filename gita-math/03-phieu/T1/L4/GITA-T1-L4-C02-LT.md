@@ -354,21 +354,24 @@ d) 92 × 19
 
 ### Bài A.3
 **Đáp số:** a) 89 487 · b) 42 917 424 · c) 1 478 856 · d) 363 288 · e) 1 599 616 · f) 636 375
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.4
 **Đáp số:** a) 380 · b) 3 102 · c) 379 · d) 287 · e) 433 · f) 3 234 · g) 4 608 · h) 310
-**Hướng giải:** BẪY — Thiếu ngoặc mà vẫn cộng trước. Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
+**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài A.5
 **Đáp số:** a) 6 661 · b) 210 987 · c) 348 346 · d) 5 936 · e) 425 628 · f) 4 759
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài B.1
 **Đáp số:** a) Bốn phép tính, biểu thức chữ và tính chất phép cộng · b) B — Phép tính & Tính nhanh · c) 5 · d) ở mọi bài thuộc phép tính & tính nhanh, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài ôn tập bốn phép tính với số tự nhiên
@@ -467,14 +470,14 @@ d) 92 × 19
 
 ### Bài E.1
 **Đáp số:** a) x = 17 · b) x = 182 · c) x = 151 · d) x = 174
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, sau đó mới tìm x bên trong cụm. Làm ngược lại thứ tự thực hiện phép tính.
+**Hướng giải:** BẪY — Gỡ phép nhân trước khi gỡ phép cộng ở ngoài.. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, sau đó mới tìm x bên trong cụm. Làm ngược lại thứ tự thực hiện phép tính.
 **Nhãn tư duy:** TD3. Điểm chốt: Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x lại, coi là một số. — (2) Cụm đó đóng vai trò gì trong phép tính ngoài cùng? — (3) Tìm giá trị của cụm rồi mới tìm x.
 
 ### Bài E.2
 **Đáp số:** a) 167 · b) 235 · c) 366 · d) 199
-**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
+**Hướng giải:** BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.. Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 **Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.

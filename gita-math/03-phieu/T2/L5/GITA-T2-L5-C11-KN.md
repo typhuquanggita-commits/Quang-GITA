@@ -402,7 +402,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài C.3
 **Đáp số:** a) tầng 2 · b) Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất. · c) toàn bộ số điểm của ý sai · d) Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất. · e) Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
 **Hướng giải:** Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.
-**Nhãn tư duy:** TD1, TD3, TD4. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
+**Nhãn tư duy:** TD1, TD3, TD4, TD5. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
 **Lỗi thường gặp:** Thử luôn từ 100 đến 999, hết giờ mà chưa xong. Phòng: Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất.
 
 ### Bài C.4
@@ -434,7 +434,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài D.3
 **Đáp số:** a) Đề đòi một số thoả **ba điều kiện trở lên** trên các chữ số · b) Dùng chữ thay số để rút gọn, rồi thử chọn trên danh sách đã ngắn · c) Thử luôn từ 100 đến 999, hết giờ mà chưa xong. · d) Cấu tạo thập phân; dấu hiệu chia hết; đếm có hệ thống · e) Tổng ba chữ số cố định thì dấu hiệu chia hết cho 3 và 9 kiểm được ngay trên tổng ấy, không cần chia thử từng số.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD1, TD3, TD4. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
+**Nhãn tư duy:** TD1, TD3, TD4, TD5. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
 **Lỗi thường gặp:** Thử luôn từ 100 đến 999, hết giờ mà chưa xong. Phòng: Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 

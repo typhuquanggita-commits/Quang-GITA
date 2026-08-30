@@ -265,7 +265,7 @@ e) Tổ Ba có 177 quyển sách, đội Một có 59 quyển. Hỏi phải chuy
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
@@ -334,12 +334,14 @@ f) Trong các số từ 1 đến 81 có bao nhiêu số chính phương?
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.2
 **Đáp số:** a) 6 · b) 18 · c) 8 · d) 10 cm · e) 6 cm²
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.3
 **Đáp số:** a) 2 cặp song song, 4 cặp vuông góc · b) bé hơn · c) góc bẹt · d) bé hơn · e) 2 cặp song song, 0 cặp vuông góc · f) góc nhọn
@@ -352,12 +354,14 @@ f) Trong các số từ 1 đến 81 có bao nhiêu số chính phương?
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài I.5
 **Đáp số:** a) 24 cm · b) 212 cm² · c) 1 369 cm² · d) 40 cm · e) 64 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài II.1
 **Đáp số:** a) 288 viên · b) 10 viên · c) 352 viên (làm tròn lên) · d) 35 cây · e) không chia hết (174 m không chia hết cho 5 m)
@@ -421,8 +425,8 @@ f) Trong các số từ 1 đến 81 có bao nhiêu số chính phương?
 
 ### Bài IV.1
 **Đáp số:** a) 22 · b) 117 · c) 1 390 · d) 69,5 · e) 139 · f) 139
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -442,22 +446,22 @@ f) Trong các số từ 1 đến 81 có bao nhiêu số chính phương?
 
 ### Bài IV.4
 **Đáp số:** a) 250 lít · b) 45 lít · c) 18 lít · d) 198 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) 27 quyển · b) 34 quyển · c) 80 quyển · d) 45 quyển · e) 59 quyển
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
+**Hướng giải:** Khi chuyển k đơn vị từ bên nhiều sang bên ít, bên nhiều giảm k còn bên ít tăng k, nên hiệu giảm đi **2k**. Muốn hai bên bằng nhau thì hiệu phải về 0, vậy k = hiệu : 2.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Lỗi thường gặp:** Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. Phòng: Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không.
 **Gợi ý 3 tầng:** (1) Hiện tại hai bên hơn kém nhau bao nhiêu? — (2) Chuyển 1 quyển thì hiệu giảm mấy quyển? — (3) Muốn hiệu về 0 thì phải chuyển bao nhiêu?
 
 ### Bài V.1
 **Đáp số:** a) 72 · b) 63 · c) 81 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 30 · f) 60 · g) 30
-**Hướng giải:** BẪY — Số lượng chẵn thì không có số giữa. Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

@@ -273,7 +273,7 @@ e) 70 × 43 + 70 × 53 − 70 × (43 + 53)
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
 
@@ -341,6 +341,7 @@ g) Tích 130 × 495 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) 17 424 · b) 155 311 · c) 15 787 · d) 150 230 · e) 3 328 · f) 60 769 · g) 65 269
@@ -359,6 +360,7 @@ g) Tích 130 × 495 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.5
 **Đáp số:** a) 9 702 000 · b) 896 800 · c) 369 800 · d) 6 863 · e) 5 649 000 · f) 7 920
@@ -435,14 +437,14 @@ g) Tích 130 × 495 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.2
 **Đáp số:** a) 5 100 · b) 10 200 · c) 1 890 · d) 1 260
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.3
 **Đáp số:** a) x = 62 · b) x = 77 · c) x = 52 · d) x = 90 · e) x = 46
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
@@ -463,14 +465,14 @@ g) Tích 130 × 495 có chữ số tận cùng là chữ số nào?
 
 ### Bài V.1
 **Đáp số:** a) 9 282 kg · b) 92 tạ 82 kg · c) 4 641 kg, không thừa · d) 10 xe · e) 46 tạ 41 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-**Hướng giải:** BẪY — Làm tròn lên khi hỏi số xe ít nhất. Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
 **Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
 **Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
 
 ### Bài V.2
 **Đáp số:** a) < · b) 15 · c) < · d) 37 · e) <
-**Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.

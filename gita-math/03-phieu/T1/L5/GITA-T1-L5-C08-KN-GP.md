@@ -96,8 +96,6 @@ Kết quả: **405**.
 
 ### Bài A.2 — Tìm số hạng thứ n của dãy cách đều
 
-> **BẪY — Nhân với n thay vì (n − 1).**
-
 **Các bước giải**
 
 Xét ý a: Số hạng thứ 22 của dãy là số nào?
@@ -117,8 +115,6 @@ Kết quả: **200**.
 *Điểm chốt:* Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 
 ### Bài A.3 — Số thập phân: hàng, so sánh, đổi từ phân số
-
-> **BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Các số tăng rất nhanh, hiệu không đều**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Dãy số và quy luật với số th
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đếm số hạng dãy cách đều
+
+> **BẪY — Quên cộng 1 nên thiếu một số hạng..**
 
 **Các bước giải**
 
@@ -640,7 +640,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | TD4 | Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
-| E.3 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| E.3 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | E.4 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
 | E.5 | TD4, TD6 | Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**. |
 

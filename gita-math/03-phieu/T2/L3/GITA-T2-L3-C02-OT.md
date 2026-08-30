@@ -240,10 +240,10 @@ f) Đoạn đường dài 21 m, trồng cây cách nhau 3 m, không trồng ở 
 
 Tìm x, trình bày từng bước.
 
-a) x × 7 + 19 = 299
-b) x : 5 + 6 = 56
-c) 82 − x = 69
-d) x × 6 − 15 = 330
+a) x × 5 + 6 = 256
+b) x × 7 − 69 = 22
+c) (x − 15) × 6 = 240
+d) (x + 44) × 5 = 275
 
 ### Bài 3. (5 điểm) Đổi chỗ hai chữ số của một số
 
@@ -280,7 +280,7 @@ g) 47 × 11
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -376,6 +376,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.5
 **Đáp số:** a) 15 · b) 21 · c) 9 · d) 27 · e) 25 · f) 20
@@ -451,9 +452,9 @@ f) Cột 6 — Kết quả?
 **Gợi ý 3 tầng:** (1) Tính số khoảng trước. — (2) Đề nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ.
 
 ### Bài IV.2
-**Đáp số:** a) x = 40 · b) x = 250 · c) x = 13 · d) x = 345 : 6
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 50 · b) x = 13 · c) x = 55 · d) x = 11
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 

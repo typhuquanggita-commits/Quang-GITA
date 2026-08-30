@@ -276,7 +276,7 @@ e) (15 × 19 − 19 × 15) × 61
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bán hai lần theo phân số, tìm số ban đầu
 
@@ -340,12 +340,14 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 10
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) 54 · b) 3 720 · c) 176 · d) 3 792 · e) 103 · f) 266 · g) 211
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.3
 **Đáp số:** a) 991 · b) 30 580 · c) 30 850 · d) 45 160 · e) 6 232 · f) 3 276
@@ -358,6 +360,7 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 10
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.5
 **Đáp số:** a) x = 92 · b) x = 17 668 · c) x = 511 · d) x = 430 · e) x = 294 · f) x = 389 · g) x = 647
@@ -434,42 +437,42 @@ e) 1 − 2 + 3 − 4 + 5 − 6 + … − 10
 
 ### Bài IV.2
 **Đáp số:** a) 440 · b) 840 · c) 1 890 · d) 420 · e) 1 625
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.3
 **Đáp số:** a) x = 53 · b) x = 45 · c) x = 33 · d) x = 88 · e) x = 62
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
 
 ### Bài IV.4
 **Đáp số:** a) 93 · b) 180 · c) 4 095 · d) 136,5 · e) 273 · f) 273
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.5
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+**Hướng giải:** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
 ### Bài V.1
 **Đáp số:** a) 30 quả · b) 24 quả · c) 48 quả · d) 42 quả · e) 40 quả
-**Hướng giải:** BẪY — Lấy phân số trên số ban đầu thay vì trên phần còn lại. Đi ngược từ số cuối. Ở mỗi bước, số hiện có ứng với phần còn lại sau khi bán, nên nhân với mẫu rồi chia cho phần còn lại. Tính xong bắt buộc thử lại theo chiều xuôi.
+**Hướng giải:** Đi ngược từ số cuối. Ở mỗi bước, số hiện có ứng với phần còn lại sau khi bán, nên nhân với mẫu rồi chia cho phần còn lại. Tính xong bắt buộc thử lại theo chiều xuôi.
 **Nhãn tư duy:** TD3, TD5, TD6. Điểm chốt: Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài.
 **Lỗi thường gặp:** Lấy cả hai phân số trên số ban đầu rồi cộng lại. Phòng: Thử lại theo chiều xuôi — bài này luôn thử lại được.
 **Gợi ý 3 tầng:** (1) Sau lần hai còn lại mấy phần mấy của số trước lần hai? — (2) Từ đó tính ngược ra số cam trước lần hai. — (3) Làm y như vậy một lần nữa để ra số ban đầu.
 
 ### Bài V.2
 **Đáp số:** a) 784 · b) 34 · c) 39 · d) 1 521
-**Hướng giải:** BẪY — Hai tích trông bằng nhau nhưng không bằng. Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Hướng giải:** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 **Lỗi thường gặp:** Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. Phòng: Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”.
 **Gợi ý 3 tầng:** (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.

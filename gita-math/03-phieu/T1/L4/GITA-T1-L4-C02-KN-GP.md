@@ -96,8 +96,6 @@ Kết quả: **x = 110**.
 
 ### Bài A.2 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 9 786 × 95
@@ -137,8 +135,6 @@ Kết quả: **93 350**.
 *Điểm chốt:* Đếm đúng **số chữ số 0** của số nhân hay số chia.
 
 ### Bài A.4 — Ôn tập bốn phép tính với số tự nhiên
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Yêu cầu “đặt tính rồi tính”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Bốn phép tính, biểu thức chữ
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tính nhanh tổng nhiều số hạng
+
+> **BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn..**
 
 **Các bước giải**
 
@@ -644,7 +644,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
-| E.3 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| E.3 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | E.4 | TD3, TD5 | Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi. |
 | E.5 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |
 

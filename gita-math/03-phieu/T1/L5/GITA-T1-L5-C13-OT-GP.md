@@ -460,6 +460,8 @@ Kết quả: **4 giờ**.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 5 thùng dầu, mỗi thùng 25 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -479,8 +481,6 @@ Kết quả: **25 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.5 — Chuyển bớt để hai phần bằng nhau
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 

@@ -340,9 +340,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 33 · b) 170 · c) 58 · d) 41 · e) 47 · f) 57
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.3
 **Đáp số:** a) số lớn 513, số bé 435 · b) số lớn 998, số bé 562 · c) số lớn 85, số bé 81 · d) số lớn 901, số bé 471 · e) số lớn 879, số bé 479
@@ -352,9 +353,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.4
 **Đáp số:** a) 30 km · b) 5 giờ · c) 40 km/giờ · d) 50 km/giờ · e) 6 giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.5
 **Đáp số:** a) 184 · b) 576 · c) 99 · d) 728 · e) 513 · f) 36
@@ -459,14 +461,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Vận tốc, quãng đường, thời gian và chuyển động cùng – ngược chiều” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Công việc chung.” · b) “Làm một mình trong … giờ”, “cùng làm” · c) Năng suất, phân số, phép chia phân số · d) Người thứ nhất xong trong 4 giờ, người thứ hai trong 6 giờ. Cùng làm thì mấy giờ xong? → 2 giờ 24 phút · e) Cộng hai khoảng thời gian rồi chia đôi. · f) Thời gian làm chung luôn **bé hơn** thời gian của người làm nhanh nhất — dùng để loại đáp số sai ngay.
-**Hướng giải:** Coi cả công việc là 1. Người làm xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Cùng làm thì mỗi giờ cả hai làm được tổng hai phân số đó. Thời gian làm chung = 1 chia cho năng suất chung.
+**Hướng giải:** BẪY — Cộng hai khoảng thời gian rồi chia đôi.. Coi cả công việc là 1. Người làm xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Cùng làm thì mỗi giờ cả hai làm được tổng hai phân số đó. Thời gian làm chung = 1 chia cho năng suất chung.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất mỗi giờ**, tuyệt đối không cộng thời gian.
 **Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ người thứ nhất làm được … công việc” trước.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

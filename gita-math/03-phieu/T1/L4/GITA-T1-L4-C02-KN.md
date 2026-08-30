@@ -346,9 +346,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 929 670 · b) 272 888 · c) 9 152 · d) 350 152 · e) 6 184 · f) 4 718 · g) 64 155
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.3
 **Đáp số:** a) 93 350 · b) 443 000 · c) 324 900 · d) 1 357 000 · e) 2 420 000 · f) 5 949 · g) 3 592 · h) 2 032
@@ -358,15 +359,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.4
 **Đáp số:** a) 479 223 · b) 534 680 · c) 182 532 800 · d) 1 198 866 · e) 1 088 366 · f) 10 427 570
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+**Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.5
 **Đáp số:** a) 2 310 · b) 2 208 · c) 540 · d) 1 064 · e) 1 820 · f) 1 008
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -465,14 +468,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Bốn phép tính, biểu thức chữ và tính chất phép cộng” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tính nhanh tổng nhiều số hạng.” · b) Dãy cộng nhiều số, có cặp cộng lại tròn chục hoặc tròn trăm · c) Tính chất giao hoán, kết hợp của phép cộng · d) Tính nhanh: 37 + 145 + 63 → 245 · e) Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. · f) Quét cả dãy tìm chữ số hàng đơn vị cộng lại bằng 10.
-**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
+**Hướng giải:** BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.. Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -480,7 +483,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài E.3
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tổng các tích có thừa số chung.” · b) Dãy cộng gồm nhiều tích cùng một thừa số · c) Nhân một số với một tổng, tổng dãy cách đều · d) Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 → 275 · e) Nhân từng tích rồi cộng dồn, rất dài và dễ sai. · f) 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay.
 **Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 

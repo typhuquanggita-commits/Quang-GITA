@@ -283,7 +283,7 @@ d) Lần thứ nhất mua 4 kg phân bón và 3 kg muối hết 198 000 đồng.
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Ba loại hộp, hai quan hệ đổi ngang
 
@@ -349,12 +349,14 @@ d) Bố bạn An gửi tiết kiệm 32 000 000 đồng với lãi suất 8% m�
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.3
 **Đáp số:** a) 30 km/giờ · b) 24 km · c) 6 giờ · d) 120 km · e) 2 giờ · f) 60 km/giờ · g) 4 giờ
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.4
 **Đáp số:** a) số lớn 905, số bé 587 · b) số lớn 827, số bé 741 · c) số lớn 532, số bé 286 · d) số lớn 808, số bé 798 · e) số lớn 986, số bé 892 · f) số lớn 152, số bé 80 · g) số lớn 1 106, số bé 770

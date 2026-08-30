@@ -267,7 +267,7 @@ d) Một gia đình gồm 2 người lớn và 5 trẻ em đi tham quan cách nh
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -432,7 +432,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.1
 **Đáp số:** a) x = 27 · b) x = 8 · c) x = 65 · d) x = 17 · e) x = 65
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
@@ -453,14 +453,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) 7 650 · b) 650 · c) 1 625 · d) 1 260
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.5
 **Đáp số:** a) 980 000 đồng · b) 480 000 đồng · c) 960 000 đồng · d) 675 000 đồng
-**Hướng giải:** BẪY — Dùng cả dữ kiện thừa. Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
+**Hướng giải:** Tìm giá vé trẻ em trước, rồi tính riêng từng loại vé, cuối cùng mới cộng. Mỗi câu đều có một dữ kiện không dùng tới — nhận ra nó là một phần của bài.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài.
 **Lỗi thường gặp:** Đem quãng đường vào phép tính tiền vé. Phòng: Gạch chân câu hỏi cuối trước khi nhìn các con số.
 **Gợi ý 3 tầng:** (1) Đề hỏi cái gì? Gạch chân câu hỏi. — (2) Trong các con số đề cho, con số nào không liên quan tới câu hỏi? — (3) Tính giá vé trẻ em trước rồi mới cộng hai loại vé.

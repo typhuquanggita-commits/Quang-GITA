@@ -476,6 +476,8 @@ Kết quả: **Đổi đơn vị, bốn phép tính**.
 
 ### Bài E.1 — Tính toán với số đo đại lượng
 
+> **BẪY — Cộng số mét với số xăng-ti-mét mà chưa đổi..**
+
 **Các bước giải**
 
 Xét ý a: 3 m 48 cm + 648 cm = … cm
@@ -496,8 +498,6 @@ Kết quả: **996**.
 
 ### Bài E.2 — Lịch, thế kỉ, năm nhuận
 
-> **BẪY — Năm tròn trăm.**
-
 **Các bước giải**
 
 Xét ý a: 11 ngày bằng bao nhiêu tuần lễ và mấy ngày?
@@ -517,8 +517,6 @@ Kết quả: **1 tuần 4 ngày**.
 *Điểm chốt:* Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 
 ### Bài E.3 — Đơn vị đo diện tích
-
-> **BẪY — 100 lần chứ không phải 10 lần.**
 
 **Các bước giải**
 
@@ -563,8 +561,6 @@ Diện tích: 18 × 10 = **180 m²** — chú ý đơn vị là mét vuông, kh�
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật.
 
 ### Bài E.5 — So sánh hai số đo khác đơn vị
-
-> **BẪY — Đơn vị khác nhau.**
 
 **Các bước giải**
 

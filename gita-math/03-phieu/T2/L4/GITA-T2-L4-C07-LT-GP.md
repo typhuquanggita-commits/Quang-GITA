@@ -480,6 +480,8 @@ Kết quả: **Tính chất chữ số tận cùng**.
 
 ### Bài E.1 — Đọc chỉ số công tơ điện
 
+> **BẪY — Lấy thẳng chỉ số cuối làm số điện đã dùng..**
+
 **Các bước giải**
 
 **Chỉ số công tơ không phải là số điện đã dùng.** Nó là tổng số điện cả nhà đã dùng từ ngày lắp công tơ tới giờ, nên bao giờ cũng tăng.
@@ -524,8 +526,6 @@ Diện tích: 38 × 28 = **1 064 m²** — chú ý đơn vị là mét vuông, k
 
 ### Bài E.3 — Phép chia có dư
 
-> **BẪY — Số dư phải bé hơn số chia.**
-
 **Các bước giải**
 
 Xét ý a: 120 183 : 14 = ? (dư ?)
@@ -565,8 +565,6 @@ Kết quả: **có**.
 *Điểm chốt:* Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả.
 
 ### Bài E.5 — Tìm chữ số để số chia hết cho một số cho trước
-
-> **BẪY — Chữ số hàng cao nhất không được là 0.**
 
 **Các bước giải**
 

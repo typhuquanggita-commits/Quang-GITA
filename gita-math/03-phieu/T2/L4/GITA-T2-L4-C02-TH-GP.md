@@ -376,6 +376,8 @@ Kết quả: **1, 5, 11**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -444,6 +446,8 @@ Cả gia đình: 330 000 + 165 000 = **495 000 đồng**.
 
 ### Bài IV.4 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -463,8 +467,6 @@ Kết quả: **376**.
 *Điểm chốt:* Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 
 ### Bài IV.5 — Bài toán trồng cây — bốn trường hợp
-
-> **BẪY — Bốn trường hợp trồng cây khác nhau.**
 
 **Các bước giải**
 
@@ -505,8 +507,6 @@ Kết quả: **63**.
 *Điểm chốt:* Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.
 
 ### Bài V.2 — Ba công thức tổng phải thuộc
-
-> **BẪY — Nhầm số hạng cuối với số lượng số hạng.**
 
 **Các bước giải**
 
@@ -645,10 +645,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
 | III.4 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
 | III.5 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.3 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
-| IV.4 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.4 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.5 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | V.1 | TD3, TD6 | Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất. |
 | V.2 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |

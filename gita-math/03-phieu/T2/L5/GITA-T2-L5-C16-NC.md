@@ -268,7 +268,7 @@ d) Một ca nô có vận tốc thực 14 km/giờ đi trên sông có vận t�
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Trắc nghiệm nhanh — sáu kỹ thuật đếm
 
@@ -348,12 +348,14 @@ e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 204 km, vận 
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.4
 **Đáp số:** a) 3 giờ · b) 60 km/giờ · c) 72 km · d) 150 km · e) 45 km/giờ
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.5
 **Đáp số:** a) số lớn 1 057, số bé 843 · b) số lớn 257, số bé 247 · c) số lớn 487, số bé 281 · d) số lớn 94, số bé 92 · e) số lớn 478, số bé 420 · f) số lớn 607, số bé 313 · g) số lớn 211, số bé 109
@@ -444,14 +446,14 @@ e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 204 km, vận 
 
 ### Bài IV.4
 **Đáp số:** a) 80 lít · b) 15 lít · c) 25 lít · d) 100 lít · e) 20 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) xuôi dòng 46 km; ngược dòng 18 km · b) vận tốc thực 18 km/giờ; dòng nước 4 km/giờ · c) vận tốc thực 20 km/giờ; dòng nước 3 km/giờ · d) xuôi dòng 34 km; ngược dòng 22 km
-**Hướng giải:** BẪY — Nhầm vận tốc thực với vận tốc xuôi dòng. Xuôi dòng thì dòng nước đẩy thêm nên cộng; ngược dòng thì dòng nước cản lại nên trừ. Biết cả hai vận tốc xuôi và ngược thì đây chính là bài tổng – hiệu: vận tốc thực là nửa tổng, vận tốc dòng là nửa hiệu.
+**Hướng giải:** Xuôi dòng thì dòng nước đẩy thêm nên cộng; ngược dòng thì dòng nước cản lại nên trừ. Biết cả hai vận tốc xuôi và ngược thì đây chính là bài tổng – hiệu: vận tốc thực là nửa tổng, vận tốc dòng là nửa hiệu.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng.
 **Lỗi thường gặp:** Lấy vận tốc xuôi dòng làm vận tốc thực rồi cộng thêm vận tốc dòng lần nữa. Phòng: Viết ba đại lượng thành ba dòng riêng, đặt tên rõ trước khi tính.
 **Gợi ý 3 tầng:** (1) Xuôi dòng thì nước đẩy thêm hay cản lại? — (2) Vận tốc xuôi dòng bằng vận tốc thực cộng gì? — (3) Biết cả xuôi và ngược thì đây là bài tổng – hiệu.
@@ -466,7 +468,7 @@ e) Hai xe đi ngược chiều từ hai địa điểm cách nhau 204 km, vận 
 ### Bài V.2
 **Đáp số:** a) 43 · b) 38 · c) 48 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 8 · f) 16 · g) 8
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

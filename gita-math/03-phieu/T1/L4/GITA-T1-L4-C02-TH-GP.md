@@ -408,6 +408,8 @@ Còn lại **Quân học mĩ thuật**. Thử lại cả hai manh mối đều �
 
 ### Bài IV.2 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 3 × 1 + 3 × 2 + 3 × 3 + … + 3 × 20
@@ -427,6 +429,8 @@ Kết quả: **630**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.3 — Biểu thức nhiều phép tính với phân số
+
+> **BẪY — Làm phép cộng trước phép chia.**
 
 **Các bước giải**
 
@@ -448,6 +452,8 @@ Kết quả: **14 phần 11**.
 
 ### Bài IV.4 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 3 + 288 = x × 7
@@ -468,8 +474,6 @@ Kết quả: **x = 72**.
 
 ### Bài IV.5 — Nhận ra thừa số 0 để tính tức thì
 
-> **BẪY — Biểu thức lớn nhưng kết quả bằng 0.**
-
 **Các bước giải**
 
 Xét ý a: 26 × 47 + 26 × 75 − 26 × (47 + 75)
@@ -489,8 +493,6 @@ Kết quả: **0**.
 *Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 
 ### Bài V.1 — Đại lượng bất biến: tính chẵn lẻ của tổng
-
-> **BẪY — Phải chứng minh, không được thử vài trường hợp.**
 
 **Các bước giải**
 
@@ -555,8 +557,6 @@ Kết quả: **0**.
 *Điểm chốt:* Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
 
 ### Bài V.4 — Tổng dãy cộng trừ xen kẽ
-
-> **BẪY — Số hạng lẻ còn thừa ở cuối dãy.**
 
 **Các bước giải**
 
@@ -652,7 +652,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
 | III.5 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
 | IV.1 | TD3, TD4 | Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng. |
-| IV.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.2 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.3 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
 | IV.4 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.5 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |

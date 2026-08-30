@@ -274,7 +274,7 @@ d) Có 7 gói kẹo, mỗi gói 250 g. Lấy ra 5 gói. Hỏi số kẹo còn l�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -347,12 +347,14 @@ f) Cả tổ phải gấp 42 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.3
 **Đáp số:** a) 40 · b) 19 · c) 48 · d) 64 · e) 63
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.4
 **Đáp số:** a) 39 · b) 12 · c) 58 · d) 18 · e) 36 · f) 23 · g) 35
@@ -377,6 +379,7 @@ f) Cả tổ phải gấp 42 bông hoa thì làm trong mấy giờ?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.3
 **Đáp số:** a) 189 kg · b) 239 kg · c) 355 kg · d) 98 kg · e) 251 kg · f) 279 kg
@@ -435,7 +438,7 @@ f) Cả tổ phải gấp 42 bông hoa thì làm trong mấy giờ?
 
 ### Bài IV.2
 **Đáp số:** a) Dũng: 55 quyển, Yến: 33 quyển · b) Tuấn: 62 quyển, Lan: 38 quyển · c) Nam: 112 quyển, Quân: 66 quyển · d) Trang: 109 quyển, Hà: 77 quyển · e) Đức: 68 quyển, Phúc: 64 quyển · f) Sơn: 86 quyển, Ngọc: 60 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -464,7 +467,7 @@ f) Cả tổ phải gấp 42 bông hoa thì làm trong mấy giờ?
 ### Bài V.1
 **Đáp số:** a) 88 · b) 132 · c) 44 · d) 55 · e) 33 · f) 44
 **Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
@@ -477,7 +480,7 @@ f) Cả tổ phải gấp 42 bông hoa thì làm trong mấy giờ?
 
 ### Bài V.3
 **Đáp số:** a) 15 quyển · b) 24 quyển · c) 120 quyển · d) 117 quyển
-**Hướng giải:** BẪY — Phân số của số còn lại. Bước 1: tính số vở phát ngày đầu và số vở còn lại sau ngày đầu. Bước 2: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu. Bước 3: trừ tiếp để ra số cuối cùng.
+**Hướng giải:** Bước 1: tính số vở phát ngày đầu và số vở còn lại sau ngày đầu. Bước 2: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu. Bước 3: trừ tiếp để ra số cuối cùng.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Cụm “số còn lại” đổi hẳn số bị chia ở bước hai.
 **Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau.
 **Gợi ý 3 tầng:** (1) Ngày đầu phát bao nhiêu quyển? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Ngày thứ hai lấy một phần mấy của số nào?

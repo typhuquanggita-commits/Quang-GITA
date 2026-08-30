@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 10 723 867 : 847
@@ -117,8 +115,6 @@ So số đo của góc với 90° và 180° là phân loại được ngay.
 *Phải chắc trước khi làm bài này:* Cách dùng ê ke và thước đo góc.
 
 ### Bài A.3 — Tìm kích thước khi biết chu vi hoặc diện tích
-
-> **BẪY — Quên chia đôi chu vi.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Đề cho số đo góc hoặc hỏi về cạnh của hình**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Hình hộp chữ nhật, hình lập 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Diện tích các hình phẳng cơ bản
+
+> **BẪY — Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác..**
 
 **Các bước giải**
 

@@ -448,6 +448,8 @@ Khoảng cách thật tính bằng xăng-ti-mét: 13 × 1 000 000 = 13 000 000 (
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 10 thùng nước mắm, mỗi thùng 25 lít. Cửa hàng đã bán 5 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
@@ -467,8 +469,6 @@ Kết quả: **125 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.5 — Thể tích bể nước trong thực tế
-
-> **BẪY — Mực nước, không phải chiều cao bể.**
 
 **Các bước giải**
 

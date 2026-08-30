@@ -384,6 +384,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài B.2
 **Đáp số:** a) 869 · b) 8 123 · c) 2 534 · d) 2 343 · e) 3 150
@@ -396,12 +397,14 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài B.4
 **Đáp số:** a) 46 · b) 130 000 · c) 7 200 · d) 28 · e) 62 · f) 29 · g) 4 300 · h) 51
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài B.5
 **Đáp số:** a) xe ba bánh: 28 chiếc, xe đạp: 23 chiếc · b) xe đạp: 26 chiếc, xe ô tô: 3 chiếc · c) xe đạp: 21 chiếc, xe ba bánh: 20 chiếc · d) xe ô tô: 23 chiếc, xe đạp: 21 chiếc · e) xe ba bánh: 7 chiếc, xe đạp: 22 chiếc · f) xe ô tô: 26 chiếc, xe ba bánh: 22 chiếc

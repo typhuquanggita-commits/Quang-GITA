@@ -500,8 +500,6 @@ Diện tích: 26 × 16 = **416 m²** — chú ý đơn vị là mét vuông, kh�
 
 ### Bài E.2 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 2 448 : 3
@@ -648,7 +646,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | D.2 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính. |
 | D.3 | TD1 | Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu. |
-| D.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| D.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | D.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
 | E.1 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
 | E.2 | TD1 | Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương. |

@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đổi đơn vị đo độ dài và khối lượng
 
-> **BẪY — Chiều đổi đơn vị.**
-
 **Các bước giải**
 
 Xét ý a: 61 kg = … hg
@@ -117,8 +115,6 @@ Kết quả: **6 chữ số, tổng 32**.
 *Điểm chốt:* Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 
 ### Bài A.3 — Đổi đơn vị đo diện tích
-
-> **BẪY — 100 lần chứ không phải 10 lần.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Đề cho **tỉ lệ dạng 1 : n** cùng một khoảng cách �
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Số đo thời gian, mua bán, thuế
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đổi đơn vị thể tích, dung tích
+
+> **BẪY — Đổi như đơn vị diện tích, chỉ nhân 100..**
 
 **Các bước giải**
 

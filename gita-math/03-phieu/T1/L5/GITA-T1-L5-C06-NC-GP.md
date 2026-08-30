@@ -408,6 +408,8 @@ Kết quả: **832 cm²**.
 
 ### Bài IV.2 — Tỉ số diện tích hai tam giác chung chiều cao
 
+> **BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt.**
+
 **Các bước giải**
 
 Xét ý a: Tam giác ABC có diện tích 96 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 1 phần và MC gấp 2 phần bằng nhau. Tính diện tích tam giác ABM.
@@ -477,8 +479,6 @@ Bước 4 — tăng chiều dài thêm 5 m thì phần dôi ra là một hình c
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và quan hệ s = v × t.
 
 ### Bài IV.5 — Sơn tường một căn phòng
-
-> **BẪY — Quên trừ diện tích cửa.**
 
 **Các bước giải**
 

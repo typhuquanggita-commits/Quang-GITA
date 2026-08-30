@@ -388,6 +388,8 @@ Kết quả: **ô (Bình; táo)**.
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Khánh và Thảo có tất cả 42 quyển vở. Khánh có nhiều hơn Thảo 12 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -519,8 +521,6 @@ Hiệu lúc đầu: 48 − 26 = 22 (quyển) — đúng bằng hai lần số v�
 *Phải chắc trước khi làm bài này:* Bài toán tổng – hiệu cơ bản và thói quen thử lại.
 
 ### Bài V.2 — Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
-
-> **BẪY — Cho thêm khác với chuyển qua lại.**
 
 **Các bước giải**
 
@@ -663,7 +663,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
 | IV.5 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | V.1 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
-| V.2 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.2 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | V.4 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
 | V.5 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |

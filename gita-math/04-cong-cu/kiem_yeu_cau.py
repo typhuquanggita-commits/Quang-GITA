@@ -37,6 +37,48 @@ def co(duong: str) -> bool:
     return (GOC / duong).exists()
 
 
+def _thang_do_kho_tang_deu() -> bool:
+    """Chỉ số độ khó có tăng nghiêm ngặt từ M1 tới M5 ở **cả ba lớp** không."""
+    import random
+    import statistics as st
+    try:
+        import sinh                                   # noqa: F401
+        from sinh import KHO
+        from sinh.do_kho import chi_so
+        from data.muc_do import THU_TU
+    except Exception:
+        return False
+    for lp in (3, 4, 5):
+        t = [st.median([chi_so(x.tao(random.Random(h), lp))
+                        for g in KHO for x in KHO[g].get(m, []) if lp in x.lop
+                        for h in range(8)] or [0]) for m in THU_TU]
+        if any(a >= b for a, b in zip(t, t[1:])):
+            return False
+    return True
+
+
+def _m1_co_bay() -> int:
+    """Số mẫu mức M1 còn cài bẫy — chuẩn đòi bằng 0."""
+    import random
+    try:
+        import sinh                                   # noqa: F401
+        from sinh import KHO
+    except Exception:
+        return 99
+    return len({x.ma for g in KHO for x in KHO[g].get("M1", [])
+                for l in x.lop if x.tao(random.Random(7), l).bay})
+
+
+def _bac_mam_du() -> bool:
+    """Mọi chủ đề của khối Mầm đã có đủ bậc độ khó theo chuẩn của khối ấy."""
+    try:
+        sys.path.insert(0, str(GOC / "04-cong-cu"))
+        from kiem_do_kho import kiem_bac_mam
+    except Exception:
+        return False
+    return not kiem_bac_mam()
+
+
 def _o_thieu_thuc_te() -> int:
     """Đếm ô (lớp × nhóm chuyên đề) chưa có mẫu bối cảnh thực tế nào.
 
@@ -272,6 +314,16 @@ YEU_CAU = [
     ("Chất lượng chuyên đề",
      "Không mẫu bài nào sinh ra hai ý giống hệt nhau trong cùng một bài",
      lambda: _mau_trung_y() == 0, True, "đã kiểm 200 hạt mỗi mẫu × lớp"),
+
+    ("Chất lượng chuyên đề",
+     "Năm mức độ khó tách nhau thật, đo được, ở cả ba khối lớp",
+     lambda: _thang_do_kho_tang_deu(), True, "chỉ số độ khó tăng đều ở L3, L4, L5"),
+    ("Chất lượng chuyên đề",
+     "Mức M1 — phần mở phiếu — không cài bẫy ở bất kỳ mẫu nào",
+     lambda: _m1_co_bay() == 0, True, "0 mẫu M1 cài bẫy"),
+    ("Chất lượng chuyên đề",
+     "Khối Mầm có trục độ khó riêng, không mượn thang M1–M5 của lớp 3–5",
+     lambda: _bac_mam_du(), True, "mọi chủ đề đủ bậc theo chuẩn của khối"),
 
     # ── khối Mầm: tiền tiểu học, lớp 1, lớp 2 ─────────────────────────
     ("Khối Mầm",

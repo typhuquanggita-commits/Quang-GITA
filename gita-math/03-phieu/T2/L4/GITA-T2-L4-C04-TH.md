@@ -274,7 +274,7 @@ f) Vòi thứ nhất chảy một mình đầy bể trong 2 giờ, vòi thứ ha
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
@@ -343,6 +343,7 @@ e) Số lớn gấp 2 lần số bé và tổng hai số là 153. Phải thêm v
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.3
 **Đáp số:** a) số lớn 471, số bé 365 · b) số lớn 289, số bé 161 · c) số lớn 314, số bé 312 · d) số lớn 603, số bé 555 · e) số lớn 808, số bé 798 · f) số lớn 885, số bé 757
@@ -361,6 +362,7 @@ e) Số lớn gấp 2 lần số bé và tổng hai số là 153. Phải thêm v
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài II.1
 **Đáp số:** a) 810 kg · b) 254 kg · c) 489 kg · d) 66 kg
@@ -424,7 +426,7 @@ e) Số lớn gấp 2 lần số bé và tổng hai số là 153. Phải thêm v
 
 ### Bài IV.1
 **Đáp số:** a) 45 lít · b) 72 lít · c) 60 lít · d) 24 lít · e) 225 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -452,7 +454,7 @@ e) Số lớn gấp 2 lần số bé và tổng hai số là 153. Phải thêm v
 
 ### Bài IV.5
 **Đáp số:** a) 1 giờ 12 phút · b) 2 giờ 24 phút · c) 4 giờ 48 phút · d) 12 phần 7 giờ · e) 3 giờ · f) 1 giờ 36 phút
-**Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
+**Hướng giải:** Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
 **Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Gợi ý 3 tầng:** (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
@@ -460,7 +462,7 @@ e) Số lớn gấp 2 lần số bé và tổng hai số là 153. Phải thêm v
 ### Bài V.1
 **Đáp số:** a) 43 · b) 39 · c) 47 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 20 · f) 40 · g) 20
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

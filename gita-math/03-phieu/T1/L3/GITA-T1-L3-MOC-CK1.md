@@ -257,12 +257,12 @@ d) Ghép 4 hình vuông cạnh 15 cm thành một hàng ngang. Tính chu vi và 
 
 Tìm x, trình bày từng bước.
 
-a) 95 − x = 58
-b) x : 8 + 48 = 51
-c) x × 2 + 19 = 125
-d) x × 9 − 6 = 360
-e) 90 − x = 34
-f) x × 8 − 22 = 152
+a) 76 − x = 73
+b) (x + 59) × 8 = 800
+c) x × 2 − 48 = 70
+d) x : 2 + 19 = 72
+e) (x − 6) × 9 = 306
+f) x × 6 + 34 = 370
 
 ### Bài 5. (5 điểm) Tìm số có ba chữ số thoả điều kiện
 
@@ -277,7 +277,7 @@ f) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -344,6 +344,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.2
 **Đáp số:** a) 4 chữ số, tổng 7 · b) 5 chữ số, tổng 26 · c) 5 chữ số, tổng 32 · d) 5 chữ số, tổng 28 · e) 5 chữ số, tổng 27
@@ -356,6 +357,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.4
 **Đáp số:** a) 59 · b) 17 · c) 44 · d) 37 · e) 47 · f) 58
@@ -368,6 +370,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài II.1
 **Đáp số:** a) đậu phụ: 30 000 · cá: 90 000 · chuối: 80 000 · b) 200 000 · c) 197 000 · d) 3 000 đồng · e) 3 000 đồng
@@ -380,6 +383,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài II.3
 **Đáp số:** a) 1 chục nghìn, 6 nghìn, 5 trăm, 9 chục, 2 đơn vị · b) 16 592 − 16 307 = 285 kW·h · c) 17 000 · d) 19 992 · e) ít hơn 169 kW·h
@@ -451,15 +455,15 @@ d) 1 + 2 + 3 + … + 50
 **Gợi ý 3 tầng:** (1) Chiều dài hình mới bằng bao nhiêu? — (2) Chiều rộng hình mới bằng bao nhiêu? — (3) Áp công thức chu vi và diện tích hình chữ nhật.
 
 ### Bài IV.4
-**Đáp số:** a) x = 37 · b) x = 24 · c) x = 53 · d) x = 366 : 9 · e) x = 56 · f) x = 174 : 8
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 3 · b) x = 41 · c) x = 59 · d) x = 106 · e) x = 40 · f) x = 56
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
 ### Bài IV.5
 **Đáp số:** a) 56 · b) 950 · c) 149 · d) 26 · e) 1 099 · f) 801
-**Hướng giải:** BẪY — Chữ số hàng trăm khác 0 và ba chữ số khác nhau. Liệt kê có hệ thống: cố định chữ số hàng trăm rồi tìm cặp chữ số còn lại. Nhớ hai ràng buộc: chữ số hàng trăm khác 0, và ba chữ số khác nhau.
+**Hướng giải:** Liệt kê có hệ thống: cố định chữ số hàng trăm rồi tìm cặp chữ số còn lại. Nhớ hai ràng buộc: chữ số hàng trăm khác 0, và ba chữ số khác nhau.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Liệt kê **có thứ tự** thì mới không sót và không trùng.
 **Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa lặp; hoặc quên điều kiện ba chữ số khác nhau. Phòng: Kẻ bảng theo chữ số hàng trăm tăng dần.
 **Gợi ý 3 tầng:** (1) Chữ số hàng trăm nhỏ nhất có thể là bao nhiêu? — (2) Với mỗi hàng trăm, hai chữ số còn lại phải cộng lại bằng bao nhiêu? — (3) Loại các trường hợp có chữ số trùng nhau.
@@ -467,7 +471,7 @@ d) 1 + 2 + 3 + … + 50
 ### Bài V.1
 **Đáp số:** a) 42 · b) 56 · c) 28 · d) 27 · e) 15 · f) 28
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

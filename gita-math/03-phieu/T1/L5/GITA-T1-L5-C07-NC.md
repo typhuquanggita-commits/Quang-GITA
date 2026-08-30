@@ -278,7 +278,7 @@ f) Viết thêm chữ số 1 vào bên trái số 711 thì được số mới. 
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Quan hệ giữa một số và tổng các chữ số của nó
 
@@ -373,6 +373,7 @@ e) Tìm mọi số có ba chữ số abc thoả cả ba điều kiện: tổng b
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.2
 **Đáp số:** a) không, dư 3 · b) không, dư 1 · c) có · d) có · e) có
@@ -391,6 +392,7 @@ e) Tìm mọi số có ba chữ số abc thoả cả ba điều kiện: tổng b
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.5
 **Đáp số:** a) không (chữ số tận cùng 5) · b) không (chữ số tận cùng 7) · c) không (chữ số tận cùng 8) · d) không (tổng chữ số 25) · e) có (tổng chữ số 18) · f) không (chữ số tận cùng 9)
@@ -430,8 +432,8 @@ e) Tìm mọi số có ba chữ số abc thoả cả ba điều kiện: tổng b
 
 ### Bài IV.1
 **Đáp số:** a) 66 · b) 462 · c) 33 · d) 33 · e) 7 854 · f) 15 477
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -472,7 +474,7 @@ e) Tìm mọi số có ba chữ số abc thoả cả ba điều kiện: tổng b
 
 ### Bài V.2
 **Đáp số:** a) 1 · 4 · 9 · 16 · 25 · b) 25 · c) 1 + 3 + … + 9 = 25 · d) không bao giờ · e) có, là 7 nhân 7 · f) 5
-**Hướng giải:** BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức. Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
+**Hướng giải:** Lập bảng các số chính phương đầu tiên rồi quan sát hai quy luật: hiệu hai số liên tiếp là dãy số lẻ, và chữ số tận cùng chỉ có thể là 0, 1, 4, 5, 6, 9.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8.
 **Lỗi thường gặp:** Kết luận một số là chính phương chỉ vì nó “trông đẹp”. Phòng: Kiểm tra chữ số tận cùng trước, sau đó thử khai căn bằng cách nhân thử.
 **Gợi ý 3 tầng:** (1) Viết bảng các số chính phương đầu tiên. — (2) Hiệu hai số chính phương liên tiếp là những số nào? — (3) Chữ số tận cùng của số chính phương có thể là những chữ số nào?
@@ -494,7 +496,7 @@ e) Tìm mọi số có ba chữ số abc thoả cả ba điều kiện: tổng b
 ### Bài V.5
 **Đáp số:** a) 492, 564, 582, 654, 672, 690, 726, 744… · b) 280, 352, 460, 532, 604, 640, 712, 820 · c) 594, 684, 756, 774, 792, 846, 864, 882… · d) 380, 452, 524, 560, 632, 704, 740, 812… · e) 684, 756, 792, 864, 936, 972
 **Hướng giải:** Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.
-**Nhãn tư duy:** TD1, TD3, TD4. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
+**Nhãn tư duy:** TD1, TD3, TD4, TD5. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
 **Lỗi thường gặp:** Thử luôn từ 100 đến 999, hết giờ mà chưa xong. Phòng: Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất.
 **Gợi ý 3 tầng:** (1) Viết cấu tạo số abc theo chữ. — (2) Trong ba điều kiện, điều kiện nào cho ít số nhất? — (3) Lọc bằng điều kiện ấy rồi mới thử hai điều kiện còn lại.
 

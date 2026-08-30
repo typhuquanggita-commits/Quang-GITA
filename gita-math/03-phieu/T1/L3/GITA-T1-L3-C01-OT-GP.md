@@ -55,7 +55,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 **Phần IV**
 
 - **Bài IV.1** — a) 319 · b) 315 · c) 162 · d) 747
-- **Bài IV.2** — a) x = 27 · b) x = 29 · c) x = 15 · d) x = 405 · e) x = 64 · f) x = 12
+- **Bài IV.2** — a) x = 9 · b) x = 29 · c) x = 45 · d) x = 45 · e) x = 16 · f) x = 12
 - **Bài IV.3** — a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 3 · e) Quân · f) 2 lần
 - **Bài IV.4** — a) 20 · b) 23 · c) 18 · d) 7 · e) 7
 - **Bài IV.5** — a) 130 · b) 8 · c) 65 · d) 75 · e) 78 · f) 30
@@ -414,19 +414,17 @@ Kết quả: **319**.
 
 ### Bài IV.2 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 5 − 90 = 45
+Xét **x × 5 − 90 = -45**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 27**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 9**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -624,7 +622,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | Tìm một phần mấy rồi tính phần còn lại | Phân số một phần mấy, phép trừ | “Đã bán một phần mấy”, hỏi “còn lại” | Chia để tìm phần đã dùng rồi trừ | Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. | 16 kg · 32 kg · 18 kg · 24 kg |
 | III.5 | Suy luận loại trừ có bảng | Phương pháp lập bảng | Mỗi người ứng với đúng một đối tượng | Kẻ bảng, đánh dấu, lan toả | Bắt đầu từ dữ kiện khẳng định trước dữ kiện phủ định. | ô (Hùng; táo) · không · ô (Lan; xoài) · lê… |
 | IV.1 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 319 · 315 · 162 · 747 |
-| IV.2 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 27 · x = 29 · x = 15 · x = 405… |
+| IV.2 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 9 · x = 29 · x = 45 · x = 45… |
 | IV.3 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 2 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 3… |
 | IV.4 | Bài toán trồng cây | Quan hệ số cây – số khoảng | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | 20 · 23 · 18 · 7… |
 | IV.5 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 130 · 8 · 65 · 75… |
@@ -656,7 +654,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD2, TD3 | Đề hỏi số **còn lại**, nên phải trừ ở bước hai. |
 | III.5 | TD2, TD6 | Mỗi dấu ✔ **lan toả** ra cả hàng và cả cột. |
 | IV.1 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
-| IV.2 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.2 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.4 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
 | IV.5 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |

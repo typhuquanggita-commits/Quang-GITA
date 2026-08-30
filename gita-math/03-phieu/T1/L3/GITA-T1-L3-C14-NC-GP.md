@@ -682,7 +682,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | V.1 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
 | V.2 | TD4, TD6 | Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**. |
-| V.3 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.3 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.4 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
 | V.5 | TD2, TD6 | Đừng quên **đếm cả chính mình** khi cộng lại. |
 

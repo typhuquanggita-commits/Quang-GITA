@@ -448,6 +448,8 @@ Cả gia đình: 330 000 + 165 000 = **495 000 đồng**.
 
 ### Bài IV.4 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 50 × 16 = 800 (kg).
@@ -529,8 +531,6 @@ Kết quả: **8**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.3 — Tổng dãy cộng trừ xen kẽ
-
-> **BẪY — Số hạng lẻ còn thừa ở cuối dãy.**
 
 **Các bước giải**
 
@@ -659,7 +659,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.3 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |
-| V.4 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.4 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.5 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
 
 ---

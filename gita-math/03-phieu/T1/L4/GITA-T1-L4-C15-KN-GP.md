@@ -96,8 +96,6 @@ Kết quả: **số lớn 396, số bé 232**.
 
 ### Bài A.2 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Dũng có 49 quyển vở, Quân có nhiều hơn Dũng 20 quyển. Quân có bao nhiêu quyển vở?
@@ -117,8 +115,6 @@ Kết quả: **69**.
 *Điểm chốt:* Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 
 ### Bài A.3 — Quãng đường – vận tốc – thời gian
-
-> **BẪY — Đơn vị thời gian.**
 
 **Các bước giải**
 
@@ -478,6 +474,8 @@ Kết quả: **Ba số hơn kém nhau cùng một lượng; hoặc tổng đi c�
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -497,6 +495,8 @@ Kết quả: **giới thiệu chương “Năng suất, chuyển động và t�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Ba dạng cơ bản của chuyển động đều
+
+> **BẪY — Vận tốc km/giờ nhưng thời gian lại để bằng phút..**
 
 **Các bước giải**
 
@@ -635,7 +635,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.2 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | D.3 | TD1, TD3 | Bước rút về đơn vị luôn là phép **chia**, và phải làm trước. |
 | D.4 | TD2, TD3 | Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận. |
-| D.5 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| D.5 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD1, TD3 | Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia. |
 | E.3 | TD6, TD3 | Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu. |

@@ -630,12 +630,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
 | C.2 | TD1 | Tổng các chữ số **không** phụ thuộc thứ tự các chữ số. |
-| C.3 | TD1, TD3, TD4 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
+| C.3 | TD1, TD3, TD4, TD5 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
 | C.4 | TD4, TD6 | Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8. |
 | C.5 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD2, TD6 | Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất. |
-| D.3 | TD1, TD3, TD4 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
+| D.3 | TD1, TD3, TD4, TD5 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
 | D.4 | TD2, TD5 | Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả. |
 | D.5 | TD1 | Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |

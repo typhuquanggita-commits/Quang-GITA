@@ -402,6 +402,8 @@ Kết quả: **0**.
 
 ### Bài IV.2 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -421,6 +423,8 @@ Kết quả: **34**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
+
+> **BẪY — Chuyển vế mà quên đổi dấu.**
 
 **Các bước giải**
 
@@ -488,8 +492,6 @@ Kết quả: **385**.
 
 ### Bài V.1 — Kĩ thuật tách – bù để tính và so sánh
 
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
-
 **Các bước giải**
 
 Xét ý a: 113 × 115 … 114 × 114
@@ -509,8 +511,6 @@ Kết quả: **<**.
 *Điểm chốt:* Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
 
 ### Bài V.2 — Cắt, ghép hình và tỉ số diện tích
-
-> **BẪY — Chu vi không cộng như diện tích.**
 
 **Các bước giải**
 
@@ -654,10 +654,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD4, TD6 | Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn. |
 | III.5 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
 | IV.1 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
-| IV.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.2 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.4 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
-| IV.5 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.5 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | V.1 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |
 | V.2 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
 | V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |

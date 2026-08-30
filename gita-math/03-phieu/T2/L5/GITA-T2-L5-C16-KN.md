@@ -348,9 +348,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 4 giờ · b) 90 km · c) 12 km/giờ · d) 5 giờ · e) 150 km · f) 36 km/giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.4
 **Đáp số:** a) số lớn 276, số bé 170 · b) số lớn 1 087, số bé 629 · c) số lớn 432, số bé 320 · d) số lớn 700, số bé 676 · e) số lớn 1 003, số bé 851 · f) số lớn 104, số bé 74 · g) số lớn 1 152, số bé 802
@@ -360,9 +361,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.5
 **Đáp số:** a) 42 · b) 37 · c) 45 · d) 104
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -461,14 +463,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Mô phỏng đề thi vào lớp 6 và tổng duyệt” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán hiệu – tỉ.” · b) Đề cho **hiệu** và **tỉ số** · c) Tỉ số, sơ đồ đoạn thẳng · d) Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. → 12 và 36 · e) Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. · f) Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa.
-**Hướng giải:** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
+**Hướng giải:** BẪY — Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ.. Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia cho **hiệu số phần**, không phải tổng số phần.
 **Lỗi thường gặp:** Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. Phòng: Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

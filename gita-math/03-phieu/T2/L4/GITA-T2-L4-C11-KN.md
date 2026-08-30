@@ -344,15 +344,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 23 · b) 26 · c) 29 · d) 59 · e) 80 · f) 104
-**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài A.4
 **Đáp số:** a) 22 · b) 79 · c) 44 · d) 18
-**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài A.5
 **Đáp số:** a) 3 750 · b) 20 000 · c) 324 · d) 2 500 · e) 80
@@ -457,14 +459,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Dãy số hình, đánh số trang và dãy số dạng đề thi” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Dãy số cách đều.” · b) Một dãy số thật ngoài đời, các số cách nhau đều nhau · c) Số hạng thứ n của dãy cách đều; đếm số hạng · d) Một dãy phố có các nhà số lẻ từ 1 đến 39. Dãy ấy có bao nhiêu nhà? → 20 nhà · e) Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. · f) Nhớ một câu: **số vật = số khoảng + 1** khi đếm cả hai đầu.
-**Hướng giải:** Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+**Hướng giải:** BẪY — Lấy (số cuối − số đầu) : 2 rồi trả lời luôn.. Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
 **Lỗi thường gặp:** Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. Phòng: Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

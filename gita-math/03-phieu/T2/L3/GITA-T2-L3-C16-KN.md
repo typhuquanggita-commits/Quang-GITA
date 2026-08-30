@@ -344,15 +344,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 162 · b) 37 · c) 52 · d) 50 · e) 9
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.4
 **Đáp số:** a) 64 lá cờ · b) 98 lá cờ · c) 137 lá cờ · d) 46 lá cờ · e) 114 lá cờ
-**Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
+**Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài A.5
 **Đáp số:** a) 649 · b) 117 · c) 295 · d) 144
@@ -457,14 +459,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Toán điển hình dạng đề thi CLC” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Ba dạng bài trung bình cộng.” · b) Cụm “trung bình mỗi …” · c) Quan hệ tổng – số lượng – trung bình cộng · d) Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? → 200 kg · e) Đi tìm ngay số còn thiếu mà chưa tính tổng. · f) Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Hướng giải:** BẪY — Đi tìm ngay số còn thiếu mà chưa tính tổng.. Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
 **Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

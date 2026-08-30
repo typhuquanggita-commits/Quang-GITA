@@ -273,7 +273,7 @@ d) Mua 6 quyển vở và 7 chiếc cặp hết 114 000 đồng. Biết giá m�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Công việc chung và tỉ lệ nghịch
 
@@ -350,12 +350,14 @@ e) Một món hàng giá 100 000 đồng. Lần đầu tăng giá 20%, sau đó 
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.5
 **Đáp số:** a) 60 km/giờ · b) 2 giờ · c) 60 km · d) 40 km/giờ · e) 300 km
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài II.1
 **Đáp số:** a) 460 m · b) 7 cm · c) 20 cm · d) 380 m
@@ -440,14 +442,14 @@ e) Một món hàng giá 100 000 đồng. Lần đầu tăng giá 20%, sau đó 
 
 ### Bài IV.4
 **Đáp số:** a) 23 · b) 68 · c) 455 · d) 45,5 · e) 91 · f) 91
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.5
 **Đáp số:** a) một chiếc cặp: 11 000 đồng; một chiếc thước: 44 000 đồng · b) một chiếc thước: 7 000 đồng; một quyển vở: 28 000 đồng · c) một chiếc cặp: 7 000 đồng; một quyển sách: 21 000 đồng · d) một chiếc cặp: 6 000 đồng; một quyển vở: 12 000 đồng
-**Hướng giải:** BẪY — Quên đổi ngược lại. Chọn loại **giá nhỏ hơn** làm chuẩn, đổi mọi loại còn lại về nó. Bài trở thành bài chia đơn giản. Giải xong nhớ đổi ngược về đại lượng đề hỏi.
+**Hướng giải:** Chọn loại **giá nhỏ hơn** làm chuẩn, đổi mọi loại còn lại về nó. Bài trở thành bài chia đơn giản. Giải xong nhớ đổi ngược về đại lượng đề hỏi.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một.
 **Lỗi thường gặp:** Tính ra giá loại chuẩn rồi dừng, quên nhân lên cho loại kia. Phòng: Gạch chân câu hỏi cuối trước khi tính, để biết đề hỏi mấy đại lượng.
 **Gợi ý 3 tầng:** (1) Một cái loại đắt bằng mấy cái loại rẻ? — (2) Nếu đổi hết về loại rẻ thì tất cả là bao nhiêu cái? — (3) Chia tổng tiền cho số ấy, rồi nhân ngược lên cho loại đắt.

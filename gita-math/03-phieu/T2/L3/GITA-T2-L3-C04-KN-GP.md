@@ -96,8 +96,6 @@ Kết quả: **56**.
 
 ### Bài A.2 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Chi có 54 quyển vở, An có nhiều hơn Chi 22 quyển. An có bao nhiêu quyển vở?
@@ -137,8 +135,6 @@ Kết quả: **số lớn 82, số bé 42**.
 *Điểm chốt:* Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 
 ### Bài A.4 — Bài toán giải bằng hai phép tính
-
-> **BẪY — Đọc kĩ câu hỏi cuối.**
 
 **Các bước giải**
 
@@ -478,6 +474,8 @@ Kết quả: **“Có tất cả …” và “… nhiều hơn … là …”**
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -497,6 +495,8 @@ Kết quả: **giới thiệu chương “Sơ đồ đoạn thẳng: tổng – 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Giả thiết tạm
+
+> **BẪY — Chia số chân thiếu cho 4..**
 
 **Các bước giải**
 
@@ -634,7 +634,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD2, TD3 | Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai. |
 | D.3 | TD2, TD3 | Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng. |
-| D.4 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| D.4 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | D.5 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |

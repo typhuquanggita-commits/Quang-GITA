@@ -384,6 +384,8 @@ Kết quả: **4 kg**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -473,8 +475,6 @@ Kết quả: **14 quyển**.
 *Điểm chốt:* Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 
 ### Bài IV.5 — Hai vòi nước, hai người cùng làm
-
-> **BẪY — Cộng thời gian thay vì cộng năng suất.**
 
 **Các bước giải**
 
@@ -657,14 +657,14 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | III.4 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
 | III.5 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.3 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.4 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | IV.5 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
 | V.1 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
 | V.2 | TD2, TD6 | Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất. |
-| V.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.4 | TD6, TD3 | Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu. |
 | V.5 | TD6, TD2 | Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt. |
 

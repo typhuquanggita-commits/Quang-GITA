@@ -402,6 +402,8 @@ Hiệu của phân số lớn nhất và bé nhất: 13 phần 18 − 2 phần 9
 
 ### Bài IV.2 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: (5 phần 4 + 3 phần 2) × 1 phần 5
@@ -421,6 +423,8 @@ Kết quả: **11 phần 20**.
 *Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
+
+> **BẪY — Chuyển vế mà quên đổi dấu.**
 
 **Các bước giải**
 
@@ -464,6 +468,8 @@ Kết quả: **0**.
 
 ### Bài IV.5 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 9 × 1 + 9 × 2 + 9 × 3 + … + 9 × 50
@@ -484,8 +490,6 @@ Kết quả: **11 475**.
 
 ### Bài V.1 — So sánh phân số bằng phần bù và phân số trung gian
 
-> **BẪY — Chiều của phần bù.**
-
 **Các bước giải**
 
 Xét ý a: 28 phần 29 … 29 phần 30
@@ -505,8 +509,6 @@ Kết quả: **<**.
 *Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 
 ### Bài V.2 — Dãy phân số dạng n phần (n + 1)
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -531,8 +533,6 @@ Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
 *Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
 
 ### Bài V.3 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 
@@ -653,7 +653,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
 | IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.4 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
-| IV.5 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.5 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | V.1 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
 | V.2 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
 | V.3 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |

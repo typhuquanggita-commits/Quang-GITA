@@ -476,8 +476,6 @@ Kết quả: **Chu vi, diện tích hình chữ nhật**.
 
 ### Bài E.1 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 6 370 : 7
@@ -550,8 +548,6 @@ Kết quả: **A**.
 
 ### Bài E.4 — Chu vi và diện tích hình chữ nhật, hình vuông
 
-> **BẪY — Đơn vị diện tích.**
-
 **Các bước giải**
 
 Xét ý a: Hình chữ nhật dài 19 cm, rộng 12 cm. Tính chu vi.
@@ -571,6 +567,8 @@ Kết quả: **62 cm**.
 *Điểm chốt:* Chu vi ghi **cm**, diện tích ghi **cm²**.
 
 ### Bài E.5 — Rào quanh mảnh vườn
+
+> **BẪY — Quên rằng quanh vườn khép kín thì số cọc bằng số khoảng.**
 
 **Các bước giải**
 

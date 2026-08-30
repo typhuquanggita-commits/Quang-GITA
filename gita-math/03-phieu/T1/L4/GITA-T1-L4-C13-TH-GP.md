@@ -390,6 +390,8 @@ Kết quả: **352**.
 
 ### Bài IV.1 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: (3 phần 4 + 1 phần 5) × 8 phần 7
@@ -505,8 +507,6 @@ Lặp lại cách ấy, sau 2 lần thì còn đúng một gói.
 *Phải chắc trước khi làm bài này:* Phép chia và thói quen lập luận theo trường hợp xấu nhất.
 
 ### Bài V.1 — Dãy phân số dạng n phần (n + 1)
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 

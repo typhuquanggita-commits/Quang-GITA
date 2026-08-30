@@ -336,21 +336,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 200 · b) 245 · c) 299 · d) 443
-**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài A.3
 **Đáp số:** a) 0,9 · b) > · c) 7 · d) 0,808 · e) 0 · f) >
-**Hướng giải:** BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn. Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
+**Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài A.4
 **Đáp số:** a) 34 · b) 37 · c) 13 · d) 7
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài A.5
 **Đáp số:** a) 46, 56, 66 · b) 44, 54, 64 · c) 65, 80, 95 · d) 134, 159, 184
@@ -455,14 +458,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Dãy số và quy luật với số thập phân” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đếm số hạng dãy cách đều.” · b) Dãy có số đầu, số cuối và khoảng cách đều · c) Công thức đếm số hạng · d) Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? → 33 · e) Quên cộng 1 nên thiếu một số hạng. · f) Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng.
-**Hướng giải:** Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
+**Hướng giải:** BẪY — Quên cộng 1 nên thiếu một số hạng.. Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng luôn **ít hơn số số hạng đúng 1**.
 **Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -470,7 +473,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài E.3
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tổng và trung bình cộng của dãy cách đều.” · b) Đề cho số số hạng, khoảng cách và một đầu của dãy · c) Dãy cách đều, trung bình cộng · d) Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? → 275 · e) Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. · f) Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau.
 **Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 

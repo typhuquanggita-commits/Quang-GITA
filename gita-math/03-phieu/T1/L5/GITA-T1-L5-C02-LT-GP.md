@@ -480,7 +480,7 @@ Kết quả: **Bảng đơn vị khối lượng; phép chia có dư**.
 
 ### Bài E.1 — So sánh hai số đo khác đơn vị
 
-> **BẪY — Đơn vị khác nhau.**
+> **BẪY — So thẳng hai con số, bỏ qua đơn vị..**
 
 **Các bước giải**
 
@@ -502,7 +502,7 @@ Kết quả: **<**.
 
 ### Bài E.2 — Đơn vị đo diện tích
 
-> **BẪY — 100 lần chứ không phải 10 lần.**
+> **BẪY — Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc..**
 
 **Các bước giải**
 
@@ -544,8 +544,6 @@ Kết quả: **4 418**.
 
 ### Bài E.4 — Lịch, thế kỉ, năm nhuận
 
-> **BẪY — Năm tròn trăm.**
-
 **Các bước giải**
 
 Xét ý a: Năm 1920 có phải năm nhuận không?
@@ -565,8 +563,6 @@ Kết quả: **có**.
 *Điểm chốt:* Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 
 ### Bài E.5 — Bốn phép tính với số thập phân
-
-> **BẪY — Vị trí dấu phẩy ở tích.**
 
 **Các bước giải**
 

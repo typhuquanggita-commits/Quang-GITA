@@ -446,6 +446,8 @@ Kết quả: **940**.
 
 ### Bài IV.4 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 5 + 13 = x × 6
@@ -485,8 +487,6 @@ Kết quả: **440**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài V.1 — Kĩ thuật tách – bù để tính và so sánh
-
-> **BẪY — Hai tích trông bằng nhau nhưng không bằng.**
 
 **Các bước giải**
 
@@ -649,7 +649,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD2, TD5 | Chỉ được trừ khi số lượng của loại cần khử đã bằng nhau ở hai dòng. |
 | IV.3 | TD5, TD3 | Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên. |
 | IV.4 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
-| IV.5 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.5 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | V.1 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |
 | V.2 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
 | V.3 | TD4, TD6 | Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau. |

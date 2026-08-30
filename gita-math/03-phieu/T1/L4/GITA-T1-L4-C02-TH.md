@@ -273,7 +273,7 @@ e) 11 × 64 × (18 − 18)
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng bất biến: tính chẵn lẻ của tổng
 
@@ -344,18 +344,21 @@ d) 482 × 484 … 483 × 483
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 70 115 · b) 8 734 · c) 503 904 · d) 2 971 · e) 9 194
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) 36 · b) 609 · c) 1 914 · d) 158 · e) 3 978
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.5
 **Đáp số:** a) x = 329 · b) x = 1 216 · c) x = 382 · d) x = 50 · e) x = 12 576 · f) x = 748 · g) x = 572
@@ -432,35 +435,35 @@ d) 482 × 484 … 483 × 483
 
 ### Bài IV.2
 **Đáp số:** a) 630 · b) 1 680 · c) 110 · d) 6 375 · e) 1 890 · f) 420
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.3
 **Đáp số:** a) 14 phần 11 · b) 44 phần 9 · c) 233 phần 20 · d) 56 phần 65
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài IV.4
 **Đáp số:** a) x = 72 · b) x = 35 · c) x = 23 · d) x = 62
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
 
 ### Bài IV.5
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+**Hướng giải:** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
 ### Bài V.1
 **Đáp số:** a) 91 · b) không thay đổi · c) 91 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
-**Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
+**Hướng giải:** Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
 **Lỗi thường gặp:** Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước?
 **Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
@@ -481,7 +484,7 @@ d) 482 × 484 … 483 × 483
 
 ### Bài V.4
 **Đáp số:** a) 38 · b) 13 · c) -30 · d) -10 · e) 50
-**Hướng giải:** BẪY — Số hạng lẻ còn thừa ở cuối dãy. Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
+**Hướng giải:** Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối.
 **Lỗi thường gặp:** Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. Phòng: Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp.
 **Gợi ý 3 tầng:** (1) Dãy có bao nhiêu số hạng? — (2) Ghép hai số hạng liền nhau, mỗi cặp bằng bao nhiêu? — (3) Số số hạng là chẵn hay lẻ? Có số hạng nào lẻ ra không?

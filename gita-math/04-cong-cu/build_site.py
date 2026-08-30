@@ -47,6 +47,7 @@ from lap import seo                                            # noqa: E402
 from data.nhom_chuyen_de import NHOM                           # noqa: E402
 from data.tu_khoa import (Y_DINH, NHOM_TU_KHOA, TRUONG, DUOI,  # noqa: E402
                           MAU_TIEU_DE, MAU_MO_TA)
+from data.muc_do import MUC as MUC_DO, THU_TU as THU_TU_MUC   # noqa: E402
 from render_html import md, inline                             # noqa: E402
 
 TUAN_MAM = 35
@@ -206,8 +207,11 @@ def vi_du(lop: int, nhom: str, dang: str, so: int = 3) -> list[dict]:
     return ra[:so]
 
 
-MUC_TEN = {"M1": "Nhận biết", "M2": "Thông hiểu", "M3": "Vận dụng",
-           "M4": "Vận dụng cao", "M5": "Điểm 10 — phân hoá"}
+# Tên mức lấy từ **một nguồn duy nhất**. Trước đây hai tệp này mỗi tệp giữ
+# một bảng riêng và lệch nhau ở M5 — web gọi "Điểm 10 — phân hoá", phiếu gọi
+# "Sáng tạo · vượt ngưỡng" — nên học sinh đọc web một tên, cầm phiếu ra một
+# tên khác. Xem `data/muc_do.py` để biết mỗi mức đòi hỏi gì, đo bằng gì.
+MUC_TEN = {m: MUC_DO[m]["ten"] for m in THU_TU_MUC}
 
 
 def khoi_vi_du(v: dict, stt: int) -> str:

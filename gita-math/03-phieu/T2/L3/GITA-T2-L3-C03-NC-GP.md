@@ -448,6 +448,8 @@ Kết quả: **11 chiếc**.
 
 ### Bài IV.3 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 25 × 14 = 350 (kg).
@@ -487,8 +489,6 @@ Kết quả: **22**.
 *Điểm chốt:* Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề.
 
 ### Bài IV.5 — Cân đĩa và số lần cân ít nhất
-
-> **BẪY — Chia ba chứ không chia đôi.**
 
 **Các bước giải**
 

@@ -268,7 +268,7 @@ f) Đức và Chi có tất cả 118 quyển vở. Đức có nhiều hơn Chi 3
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
 
@@ -340,12 +340,14 @@ f) Phải cho nhóm Sao Mai thêm bao nhiêu lá nữa thì hai tổ bằng nhau
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.3
 **Đáp số:** a) 188 · b) 57 · c) 19 · d) 6
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.4
 **Đáp số:** a) 38 · b) 35 · c) 24 · d) 60
@@ -449,7 +451,7 @@ f) Phải cho nhóm Sao Mai thêm bao nhiêu lá nữa thì hai tổ bằng nhau
 
 ### Bài IV.5
 **Đáp số:** a) Yến: 115 quyển, Bình: 85 quyển · b) Phúc: 105 quyển, Sơn: 71 quyển · c) Trang: 30 quyển, Khánh: 26 quyển · d) Hùng: 107 quyển, Bình: 71 quyển · e) Yến: 76 quyển, Phúc: 54 quyển · f) Đức: 78 quyển, Chi: 40 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -463,7 +465,7 @@ f) Phải cho nhóm Sao Mai thêm bao nhiêu lá nữa thì hai tổ bằng nhau
 
 ### Bài V.2
 **Đáp số:** a) 5 quả · b) 3 quả · c) 6 quả · d) 2 quả
-**Hướng giải:** BẪY — Phép chia có dư. Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
+**Hướng giải:** Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
 **Lỗi thường gặp:** Làm tròn lên rồi coi như cân được. Phòng: Kiểm tra phép chia có dư hay không trước khi kết luận.
 **Gợi ý 3 tầng:** (1) Một quả cân nặng bao nhiêu? — (2) Vật nặng gấp mấy lần một quả cân? — (3) Phép chia có dư không?
@@ -485,7 +487,7 @@ f) Phải cho nhóm Sao Mai thêm bao nhiêu lá nữa thì hai tổ bằng nhau
 ### Bài V.5
 **Đáp số:** a) 88 · b) 110 · c) 66 · d) 42 · e) 46 · f) 66
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

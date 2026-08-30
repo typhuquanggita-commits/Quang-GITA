@@ -274,7 +274,7 @@ g) Số 160 là số nguyên tố hay hợp số? Nếu là hợp số, chỉ ra
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Số dư của tổng — lập luận không cần tính hết
 
@@ -380,12 +380,14 @@ e) 2 + 4 + 6 + … + 200 (tổng 100 số chẵn đầu tiên)
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài II.4
 **Đáp số:** a) 4 323 dư 11 · b) 2 111 dư 7 · c) 6 841 dư 2 · d) 6 584 dư 1 · e) 4 629 dư 7 · f) 8 505 dư 7 · g) 6 681 dư 4
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.5
 **Đáp số:** a) 32 · b) 169 · c) 83 · d) 163 · e) 255
@@ -446,8 +448,8 @@ e) 2 + 4 + 6 + … + 200 (tổng 100 số chẵn đầu tiên)
 
 ### Bài IV.4
 **Đáp số:** a) 261 · b) 1 568 · c) 52 · d) 261 · e) 205 668 · f) 205 668
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
@@ -460,7 +462,7 @@ e) 2 + 4 + 6 + … + 200 (tổng 100 số chẵn đầu tiên)
 
 ### Bài V.1
 **Đáp số:** a) 1 · b) 2 315 · c) không, dư 2 · d) tổng các số dư là 5, chia 3 dư 2 · e) 2 · f) 1
-**Hướng giải:** Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
+**Hướng giải:** BẪY — Cộng hết cả dãy rồi mới xét chia hết. Số dư của một tổng khi chia cho d bằng số dư của tổng các số dư. Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các số dư, không cần cộng các số.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.
 **Lỗi thường gặp:** Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. Phòng: Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.
 **Gợi ý 3 tầng:** (1) Tính số dư của từng số khi chia cho d. — (2) Cộng các số dư lại. — (3) Lấy tổng các số dư chia tiếp cho d.
@@ -474,15 +476,15 @@ e) 2 + 4 + 6 + … + 200 (tổng 100 số chẵn đầu tiên)
 
 ### Bài V.3
 **Đáp số:** a) 3 637 · b) 121 · c) 187 · d) 131 · e) 2 418 · f) 153
-**Hướng giải:** BẪY — Nhóm cuối không đầy đủ. Chia các trang thành nhóm theo số chữ số: từ 1 đến 9 có 9 số, mỗi số 1 chữ số; từ 10 đến 99 có 90 số, mỗi số 2 chữ số; từ 100 đến 999 có 900 số, mỗi số 3 chữ số; từ 1 000 trở đi mỗi số 4 chữ số. Nhân rồi cộng.
+**Hướng giải:** Chia các trang thành nhóm theo số chữ số: từ 1 đến 9 có 9 số, mỗi số 1 chữ số; từ 10 đến 99 có 90 số, mỗi số 2 chữ số; từ 100 đến 999 có 900 số, mỗi số 3 chữ số; từ 1 000 trở đi mỗi số 4 chữ số. Nhân rồi cộng.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Nhóm cuối cùng thường **không đầy đủ** — phải đếm đúng số trang còn lại.
 **Lỗi thường gặp:** Lấy số trang nhân với số chữ số của trang cuối. Phòng: Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối.
 **Gợi ý 3 tầng:** (1) Từ trang 1 đến trang 9 dùng mấy chữ số? — (2) Từ trang 10 đến trang 99 có bao nhiêu trang? — (3) Nhóm cuối cùng có bao nhiêu trang, mỗi trang mấy chữ số?
 
 ### Bài V.4
 **Đáp số:** a) 784, 856, 892, 928, 964 · b) 594, 675, 684, 693, 756, 765, 774, 783… · c) 180, 261, 270, 342, 351, 360, 423, 432… · d) 684, 756, 792, 864, 936, 972 · e) 372, 480, 552, 624, 660, 732, 804, 840…
-**Hướng giải:** BẪY — Bỏ sót nghiệm hoặc nhận nghiệm có chữ số hàng trăm bằng 0. Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.
-**Nhãn tư duy:** TD1, TD3, TD4. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
+**Hướng giải:** Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.
+**Nhãn tư duy:** TD1, TD3, TD4, TD5. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
 **Lỗi thường gặp:** Thử luôn từ 100 đến 999, hết giờ mà chưa xong. Phòng: Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất.
 **Gợi ý 3 tầng:** (1) Viết cấu tạo số abc theo chữ. — (2) Trong ba điều kiện, điều kiện nào cho ít số nhất? — (3) Lọc bằng điều kiện ấy rồi mới thử hai điều kiện còn lại.
 

@@ -270,7 +270,7 @@ f) Một cửa hàng có 10 bao gạo, mỗi bao 50 kg. Giá mỗi ki-lô-gam l�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm đoạn thẳng và tam giác
 
@@ -339,6 +339,7 @@ g) Tích 964 × 434 × 9 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.2
 **Đáp số:** a) 52 · b) 38 · c) 29 · d) 39 · e) 58 · f) 23
@@ -351,6 +352,7 @@ g) Tích 964 × 434 × 9 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.4
 **Đáp số:** a) 289 · b) 36 · c) 308 · d) 370 · e) 405
@@ -447,28 +449,28 @@ g) Tích 964 × 434 × 9 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.4
 **Đáp số:** a) Chi: 80 quyển, Sơn: 40 quyển · b) Yến: 32 quyển, Dũng: 18 quyển · c) Lan: 42 quyển, Quân: 24 quyển · d) Ngọc: 37 quyển, Sơn: 27 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài IV.5
 **Đáp số:** a) 3 300 000 đồng · b) 20 chai · c) 10 m · d) 10 m · e) 12 chai · f) 7 500 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
 
 ### Bài V.1
 **Đáp số:** a) 3 · b) 3 · c) 6 · d) 5 · e) 15 · f) 5
-**Hướng giải:** BẪY — Bỏ sót đoạn ghép. Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Hướng giải:** Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 
 ### Bài V.2
 **Đáp số:** a) 186 quyển · b) 140 quyển · c) 94 quyển · d) 92 quyển · e) 48 bông · f) 3 giờ
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+**Hướng giải:** Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển.
 **Lỗi thường gặp:** Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. Phòng: Thử lại: cộng trừ ra hai số lúc đầu rồi kiểm tra cả tổng và hiệu.
 **Gợi ý 3 tầng:** (1) Khi chuyển vở qua lại, tổng số vở có đổi không? — (2) Sau khi cho, mỗi bạn có bao nhiêu quyển? — (3) Đi ngược lại: lúc đầu bạn cho có nhiều hơn bấy nhiêu quyển.
@@ -483,7 +485,7 @@ g) Tích 964 × 434 × 9 có chữ số tận cùng là chữ số nào?
 ### Bài V.4
 **Đáp số:** a) 44 · b) 55 · c) 33 · d) 27 · e) 17 · f) 33
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

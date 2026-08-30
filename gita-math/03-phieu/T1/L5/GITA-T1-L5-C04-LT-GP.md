@@ -116,8 +116,6 @@ Kết quả: **1 695**.
 
 ### Bài A.3 — Tính giá trị biểu thức
 
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
-
 **Các bước giải**
 
 Xét ý a: 147 − 11 × 3
@@ -482,6 +480,8 @@ Kết quả: **Cấu tạo thập phân**.
 
 ### Bài E.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép nhân trước khi gỡ phép cộng ở ngoài..**
+
 **Các bước giải**
 
 Xét ý a: (x − 184) × 4 = -584
@@ -502,7 +502,7 @@ Kết quả: **x = 38**.
 
 ### Bài E.2 — Bốn phép tính với số thập phân
 
-> **BẪY — Vị trí dấu phẩy ở tích.**
+> **BẪY — Nhân xong đặt dấu phẩy thẳng cột như phép cộng..**
 
 **Các bước giải**
 
@@ -637,7 +637,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | TD3 | Chọn đúng **kiểu minh hoạ** giúp nhìn ra lời giải nhanh hơn hẳn. |
 | C.4 | TD2 | Đọc vị được đề là **đã đi được nửa đường**. |
 | C.5 | TD5, TD6 | Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt. |
-| D.1 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| D.1 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | D.2 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
 | D.3 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |
 | D.4 | TD3 | Đi **ngược** thứ tự thực hiện: phép ngoài cùng gỡ trước. |

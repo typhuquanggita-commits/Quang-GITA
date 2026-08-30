@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) mẹ 60 tuổi, con 12 tuổi · b) 20 chiếc · c) 10 000 đồng · d) 73 000 đồng · e) 60 chiếc · f) mẹ 28 tuổi, con 7 tuổi
 - **Bài IV.2** — a) Trang: 30 quyển, Lan: 24 quyển · b) Chi: 39 quyển, Minh: 37 quyển · c) Thảo: 60 quyển, Nam: 54 quyển · d) Thảo: 106 quyển, Khánh: 54 quyển
 - **Bài IV.3** — a) 200 g · b) 250 g · c) 400 g · d) 750 g
-- **Bài IV.4** — a) x = 296 · b) x = 59 · c) x = 50 · d) x = 415 : 8 · e) x = 33 · f) x = 12
+- **Bài IV.4** — a) x = 296 · b) x = 59 · c) x = 50 · d) x = 48 · e) x = 33 · f) x = 12
 - **Bài IV.5** — a) cạnh 24 cm, diện tích 576 cm² · b) hình chữ nhật · c) 5 cm · d) cạnh 15 cm, diện tích 225 cm² · e) 2 cm · f) hình chữ nhật · g) cạnh 6 cm, diện tích 36 cm²
 
 **Phần V**
@@ -412,6 +412,8 @@ Thử lại: 60 − 12 = 48 ✓
 
 ### Bài IV.2 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Trang và Lan có tất cả 54 quyển vở. Trang có nhiều hơn Lan 6 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -452,19 +454,17 @@ Kết quả: **200 g**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 8 + 62 = 99
+Xét **x : 8 + 62 = 99**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 296**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 296**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -520,8 +520,6 @@ Kết quả: **3**.
 
 ### Bài V.2 — Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
-> **BẪY — Cho thêm khác với chuyển qua lại.**
-
 **Các bước giải**
 
 Bước 1 — số cờ của đội Một: 16 × 2 = 32 (lá).
@@ -543,8 +541,6 @@ Bước 4 — muốn hai tổ bằng nhau thì cho đội Hai thêm đúng phầ
 *Phải chắc trước khi làm bài này:* Bốn phép tính và bài toán giải bằng hai phép tính.
 
 ### Bài V.3 — Bài toán gà và chó
-
-> **BẪY — Chia cho hiệu số chân.**
 
 **Các bước giải**
 
@@ -632,7 +628,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” | Tìm đại lượng trung gian rồi trả lời câu hỏi | Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số. | mẹ 60 tuổi, con 12 tuổi · 20 chiếc · 10 000 đồng · 73 000 đồng… |
 | IV.2 | Bài toán tổng – hiệu | Sơ đồ đoạn thẳng, công thức tổng – hiệu | “Có tất cả …” và “nhiều hơn … là …” | Sơ đồ đoạn thẳng đưa về hai phần bằng nhau | Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu. | Trang: 30 quyển, Lan: 24 quyển · Chi: 39 quyển, Minh: 37 quyển · Thảo: 60 quyển, Nam: 54 quyển · Thảo: 106 quyển, Khánh: 54 quyển |
 | IV.3 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 200 g · 250 g · 400 g · 750 g |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 296 · x = 59 · x = 50 · x = 415 : 8… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 296 · x = 59 · x = 50 · x = 48… |
 | IV.5 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | cạnh 24 cm, diện tích 576 cm² · hình chữ nhật · 5 cm · cạnh 15 cm, diện tích 225 cm²… |
 | V.1 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia lấy dư để định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư. | 3 · 9 · 9 · 3… |
 | V.2 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia | “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” | Tính từng bước, bám vào tổng có đổi hay không | Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu. | 32 · 48 · 16 · 33… |
@@ -664,10 +660,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | IV.2 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | IV.3 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | V.1 | TD4, TD6 | Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
-| V.2 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.2 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | V.4 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 | V.5 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |

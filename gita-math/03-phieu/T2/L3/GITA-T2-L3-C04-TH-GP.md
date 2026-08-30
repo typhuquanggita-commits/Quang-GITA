@@ -468,6 +468,8 @@ Lặp lại cách ấy, sau 3 lần thì còn đúng một gói.
 
 ### Bài IV.4 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Chi và Sơn có tất cả 120 quyển vở. Chi có nhiều hơn Sơn 40 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -488,6 +490,8 @@ Kết quả: **Chi: 80 quyển, Sơn: 40 quyển**.
 
 ### Bài IV.5 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 25 × 11 = 275 (kg).
@@ -505,8 +509,6 @@ Bước 2 — số tiền: 12 000 × 275 = 3 300 000 (đồng).
 *Phải chắc trước khi làm bài này:* Nhân số có nhiều chữ số và bảng đơn vị đo.
 
 ### Bài V.1 — Đếm đoạn thẳng và tam giác
-
-> **BẪY — Bỏ sót đoạn ghép.**
 
 **Các bước giải**
 
@@ -531,8 +533,6 @@ Kiểm tra với 3 điểm: 3 × 2 : 2 = 3 đoạn ✓
 *Phải chắc trước khi làm bài này:* Nhân, chia và thói quen liệt kê có thứ tự.
 
 ### Bài V.2 — Tổng – hiệu khi hiệu bị giấu sau một lần chuyển
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
@@ -680,10 +680,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.4 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | IV.5 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
-| V.1 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.1 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.2 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 | V.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
-| V.4 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.4 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.5 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 
 ---

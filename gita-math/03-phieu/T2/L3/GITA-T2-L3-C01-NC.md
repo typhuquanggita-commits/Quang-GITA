@@ -225,11 +225,11 @@ g) 105 + 74 − 74
 
 Tìm x, trình bày từng bước.
 
-a) x : 5 + 82 = 110
-b) 60 − x = 27
-c) x × 2 + 70 = 88
-d) x × 5 − 37 = 285
-e) x : 8 + 89 = 99
+a) (x + 55) × 2 = 146
+b) x : 4 + 27 = 60
+c) x × 2 − 70 = -52
+d) (x − 37) × 5 = 100
+e) 99 − x = 89
 
 ### Bài 2. (5 điểm) Tìm số có ba chữ số thoả điều kiện
 
@@ -275,7 +275,7 @@ d) Số có hai chữ số 71; viết hai chữ số theo thứ tự ngược l�
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm chữ số dùng để đánh số trang
 
@@ -373,12 +373,14 @@ f) Xoá chữ số hàng đơn vị của 49 thì được số nào?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.2
 **Đáp số:** a) 269 dư 1 · b) 311 dư 1 · c) 162 dư 5 · d) 236 dư 1 · e) 342 dư 5 · f) 399 dư 1
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.3
 **Đáp số:** a) (18 + 10) × 2 = 56 m · b) 56 − 2 = 54 m · c) 56 : 4 = 14 cọc · d) 54 × 45 000 = 2 430 000 đồng · e) 18 × 10 = 180 m²
@@ -429,9 +431,9 @@ f) Xoá chữ số hàng đơn vị của 49 thì được số nào?
 **Lỗi thường gặp:** Lao vào tính từ trái sang phải, bỏ lỡ mọi lối tắt. Phòng: Đọc hết biểu thức một lượt trước khi đặt bút.
 
 ### Bài IV.1
-**Đáp số:** a) x = 140 · b) x = 33 · c) x = 9 · d) x = 322 : 5 · e) x = 80
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 18 · b) x = 132 · c) x = 9 · d) x = 57 · e) x = 10
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -458,7 +460,7 @@ f) Xoá chữ số hàng đơn vị của 49 thì được số nào?
 
 ### Bài IV.5
 **Đáp số:** a) 56, hơn kém 9 đơn vị · b) 62, hơn kém 36 đơn vị · c) 59, hơn kém 36 đơn vị · d) 17, hơn kém 54 đơn vị
-**Hướng giải:** BẪY — Hiệu là 9 lần hiệu hai chữ số. Số có hai chữ số viết được thành chục nhân 10 cộng đơn vị. Khi đổi chỗ hai chữ số, phần chục và phần đơn vị hoán đổi vai trò, nên hiệu hai số luôn bằng **9 lần hiệu hai chữ số**.
+**Hướng giải:** Số có hai chữ số viết được thành chục nhân 10 cộng đơn vị. Khi đổi chỗ hai chữ số, phần chục và phần đơn vị hoán đổi vai trò, nên hiệu hai số luôn bằng **9 lần hiệu hai chữ số**.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Hiệu hai số luôn là **bội của 9**.
 **Lỗi thường gặp:** Coi hiệu hai số bằng hiệu hai chữ số. Phòng: Tính thử vài trường hợp nhỏ để thấy quy luật nhân 9.
 **Gợi ý 3 tầng:** (1) Viết số cũ thành chục × 10 + đơn vị. — (2) Viết số mới cũng như vậy. — (3) Trừ hai biểu thức xem còn lại gì.
@@ -494,7 +496,7 @@ f) Xoá chữ số hàng đơn vị của 49 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 491 · b) 442 · c) 149 · d) 100 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 4
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

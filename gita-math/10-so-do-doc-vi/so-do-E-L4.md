@@ -51,17 +51,17 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 | Mức | Dấu hiệu nhìn thấy trong đề | Dạng bài | Phương pháp | Lối tắt | Bẫy |
 |:--:|---|---|---|---|---|
-| M1 | Dấu … giữa hai đơn vị khác nhau | Đổi đơn vị đo | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | Chiều đổi đơn vị |
+| M1 | Dấu … giữa hai đơn vị khác nhau | Đổi đơn vị đo | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | — |
 | M1 | Số đo viết dưới dạng “… tấn … tạ … kg” | Số đo có nhiều đơn vị | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | — |
-| M1 | Số đo có chữ “giờ”, “phút”, “giây” | Đổi và tính toán với đơn vị thời gian | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | Cơ số 60 chứ không phải 10 |
-| M1 | Đơn vị có mũ hai: m², cm², km², ha | Đổi đơn vị diện tích | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | 100 lần chứ không phải 10 lần |
-| M2 | Hai vế có đơn vị khác nhau | So sánh số đo đại lượng | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | Đơn vị khác nhau |
+| M1 | Số đo có chữ “giờ”, “phút”, “giây” | Đổi và tính toán với đơn vị thời gian | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | — |
+| M1 | Đơn vị có mũ hai: m², cm², km², ha | Đổi đơn vị diện tích | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. | — |
+| M2 | Hai vế có đơn vị khác nhau | So sánh số đo đại lượng | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. | — |
 | M2 | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Bốn phép tính với số đo | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. | — |
-| M2 | Đề hỏi về tháng, năm, thế kỉ | Lịch và đơn vị thời gian lớn | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | Năm tròn trăm |
+| M2 | Đề hỏi về tháng, năm, thế kỉ | Lịch và đơn vị thời gian lớn | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | — |
 | M3 | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Bài toán đại lượng có lời văn | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. | Đơn vị của câu trả lời |
 | M3 | Cho thời điểm bắt đầu và khoảng thời gian | Tính thời điểm trong ngày | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. | Phần phút vượt quá 60 |
-| M4 | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Bài toán đại lượng nhiều bước | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | — |
-| M5 | Thay đổi số người, hỏi thay đổi thời gian | Tỉ lệ nghịch, so sánh hai phương án | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | — |
+| M4 | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Bài toán đại lượng nhiều bước | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. | Trừ số thùng cho số lít — hai đại lượng khác loại |
+| M5 | Thay đổi số người, hỏi thay đổi thời gian | Tỉ lệ nghịch, so sánh hai phương án | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn |
 | M5 | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Đại lượng khối lượng, chia phần và làm tròn lên | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. | Làm tròn lên khi hỏi số xe ít nhất |
 
 ---
@@ -87,43 +87,43 @@ Bảng này rút thẳng từ ngân hàng mẫu bài của nhóm, đúng phạm 
 
 Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: đây là dạng bài gì, và dấu hiệu nào cho biết điều đó.
 
-**Đề 1.** Trình bày lời giải có câu trả lời cho từng bước. Có 8 tấm vải, mỗi tấm dài 5 m. Cắt mỗi tấm đi 1 m. Hỏi còn lại tất cả bao nhiêu mét vải?
+**Đề 1.** Chú ý đơn vị mà đề hỏi. Một xe chở 19 bao xi măng, mỗi bao 25 kg. Hỏi xe chở bao nhiêu tạ xi măng?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 2.** Điền vào chỗ chấm. 6 tấn 8 tạ 50 kg = … kg
+**Đề 2.** Ghi kết quả theo giờ và phút. Một chuyến tàu khởi hành lúc 13 giờ 50 phút và đi hết 5 giờ 17 phút. Tàu đến nơi lúc mấy giờ?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 3.** Đổi về cùng đơn vị rồi tính. 33 m 22 cm + 122 cm = … cm
+**Đề 3.** Tính rồi so sánh hai phương án. 8 người làm xong một công việc trong 10 ngày. Nếu có thêm 2 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 4.** Đổi hết về ki-lô-gam trước khi tính. Một kho chứa 7 tấn 8 tạ 86 kg thóc. Đổi ra ki-lô-gam.
+**Đề 4.** Điền số thích hợp vào chỗ chấm. 54 yến = … g
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 5.** Điền số thích hợp vào chỗ chấm. 39 m² = … cm²
+**Đề 5.** Điền vào chỗ chấm. 4 tấn 3 tạ 3 kg = … kg
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 6.** Điền số thích hợp. 43 ha = … m²
+**Đề 6.** Điền dấu <, >, = thích hợp. 26 hg … 8 264 yến
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 7.** Trả lời ngắn gọn. Tháng 6 năm 2059 có bao nhiêu ngày?
+**Đề 7.** Điền số thích hợp. 75 dm² = … cm²
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 8.** Điền dấu <, >, = thích hợp. 44 km … 4 145 cm
+**Đề 8.** Trả lời ngắn gọn. Năm 1961 có phải năm nhuận không?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 9.** Chú ý đơn vị mà đề hỏi. Một xe chở 36 bao thóc, mỗi bao 60 kg. Hỏi xe chở bao nhiêu tạ thóc?
+**Đề 9.** Điền kết quả, viết dạng giờ và phút. 1 giờ 43 phút = … phút
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
-**Đề 10.** Trình bày lời giải có câu trả lời. Một cửa hàng có 17 thùng dầu, mỗi thùng 15 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
+**Đề 10.** Trình bày lời giải có câu trả lời. Một cửa hàng có 6 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
 
 - Dạng bài: ...........................................  Dấu hiệu: ...........................................
 
@@ -133,15 +133,15 @@ Với mỗi đề dưới đây, **không giải**. Chỉ trả lời hai câu: 
 
 | # | Dạng bài | Dấu hiệu |
 |:--:|---|---|
-| 1 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt |
-| 2 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
-| 3 | Bốn phép tính với số đo | Các số hạng có đơn vị khác nhau trong cùng một phép tính |
-| 4 | Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” |
-| 5 | Đổi đơn vị diện tích | Đơn vị có mũ hai, hoặc ha, km² |
-| 6 | Đổi đơn vị diện tích | Đơn vị có mũ hai: m², cm², km², ha |
-| 7 | Lịch và đơn vị thời gian lớn | Đề hỏi về tháng, năm, thế kỉ |
-| 8 | So sánh số đo đại lượng | Hai vế có đơn vị khác nhau |
-| 9 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
+| 1 | Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện |
+| 2 | Tính thời điểm trong ngày | Cho thời điểm bắt đầu và khoảng thời gian |
+| 3 | Tỉ lệ nghịch, so sánh hai phương án | Thay đổi số người, hỏi thay đổi thời gian |
+| 4 | Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau |
+| 5 | Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” |
+| 6 | So sánh số đo đại lượng | Hai vế có đơn vị khác nhau |
+| 7 | Đổi đơn vị diện tích | Đơn vị có mũ hai: m², cm², km², ha |
+| 8 | Lịch và đơn vị thời gian lớn | Đề hỏi về tháng, năm, thế kỉ |
+| 9 | Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” |
 | 10 | Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng |
 
 ---

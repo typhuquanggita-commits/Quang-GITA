@@ -378,6 +378,8 @@ Kết quả: **x = 50**.
 
 ### Bài IV.1 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 4 + 152 = x × 6
@@ -485,8 +487,6 @@ Kết quả: **275**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài V.1 — Tổng dãy cộng trừ xen kẽ
-
-> **BẪY — Số hạng lẻ còn thừa ở cuối dãy.**
 
 **Các bước giải**
 
@@ -651,7 +651,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | IV.3 | TD5, TD3 | Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên. |
 | IV.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
-| IV.5 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.5 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | V.1 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |
 | V.2 | TD6, TD3 | Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi. |
 | V.3 | TD3, TD5, TD6 | Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài. |

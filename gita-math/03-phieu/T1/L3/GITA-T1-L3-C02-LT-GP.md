@@ -480,8 +480,6 @@ Kết quả: **Hàng và lớp; trừ số có năm chữ số; làm tròn số*
 
 ### Bài E.1 — Phép chia có dư
 
-> **BẪY — Số dư phải bé hơn số chia.**
-
 **Các bước giải**
 
 Xét ý a: 364 : 6 = ? (dư ?)
@@ -567,8 +565,6 @@ Diện tích: 26 × 22 = **572 m²** — chú ý đơn vị là mét vuông, kh�
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật.
 
 ### Bài E.5 — Tìm x và tính chất của phép nhân
-
-> **BẪY — Thừa số 0.**
 
 **Các bước giải**
 

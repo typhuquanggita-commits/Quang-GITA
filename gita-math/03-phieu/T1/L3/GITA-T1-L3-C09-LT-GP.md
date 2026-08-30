@@ -480,8 +480,6 @@ Kết quả: **Dấu hiệu chia hết cho 2, 3, 5, 9**.
 
 ### Bài E.1 — Tìm x và tính chất của phép nhân
 
-> **BẪY — Thừa số 0.**
-
 **Các bước giải**
 
 x là **số hạng chưa biết** của phép cộng.
@@ -503,8 +501,6 @@ Thử lại: 72 + 164 = 236 ✓
 *Phải chắc trước khi làm bài này:* Cộng, trừ trong phạm vi 1 000 và bảng nhân chia.
 
 ### Bài E.2 — Phép chia có dư
-
-> **BẪY — Số dư phải bé hơn số chia.**
 
 **Các bước giải**
 

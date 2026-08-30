@@ -374,6 +374,8 @@ Kết quả: **157 cm**.
 
 ### Bài IV.1 — Tỉ số diện tích hai tam giác chung chiều cao
 
+> **BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt.**
+
 **Các bước giải**
 
 Xét ý a: Tam giác ABC có diện tích 164 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 3 phần và MC gấp 1 phần bằng nhau. Tính diện tích tam giác ABM.
@@ -459,8 +461,6 @@ Lượng sơn: 84 : 4 = 21 lít. Sơn bán theo lít nên phải **làm tròn l�
 *Phải chắc trước khi làm bài này:* Công thức diện tích xung quanh hình hộp chữ nhật.
 
 ### Bài IV.5 — Khối lập phương sơn màu
-
-> **BẪY — Đếm trùng khối ở đỉnh và ở cạnh.**
 
 **Các bước giải**
 

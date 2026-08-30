@@ -261,11 +261,11 @@ e) Có bao nhiêu số chia hết cho 3 từ 29 đến 369?
 
 Tìm x, trình bày từng bước.
 
-a) x × 3 − 26 = 168
-b) x × 2 + 62 = 134
-c) x : 8 + 26 = 81
-d) 130 − x = 77
-e) 106 − x = 49
+a) x × 3 − 18 = -9
+b) x × 4 + 71 = 83
+c) 104 − x = 54
+d) x : 4 + 77 = 107
+e) (x − 49) × 9 = 72
 
 ### Bài 5. (5 điểm) Bài toán đại lượng hai bước
 
@@ -278,7 +278,7 @@ d) Có 6 gói kẹo, mỗi gói 100 g. Lấy ra 1 gói. Hỏi số kẹo còn l�
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -344,12 +344,14 @@ d) Tích 579 × 447 × 9 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài I.2
 **Đáp số:** a) 12 giờ 4 phút · b) 2 giờ 59 phút · c) 378 · d) 7 giờ 19 phút · e) 5 giờ 34 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.3
 **Đáp số:** a) 2 879 · b) 2 tấn 8 tạ 89 kg · c) 3 tấn 4 tạ 40 kg · d) 3 tấn 2 tạ 94 kg · e) 1 tấn 2 tạ 75 kg · f) 1 142 · g) 6 tạ 1 kg
@@ -362,12 +364,14 @@ d) Tích 579 × 447 × 9 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.5
 **Đáp số:** a) 6 300 · b) 70 000 · c) 47 000 · d) 420 000 · e) 210 · f) 1 400 000 · g) 19 000
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài II.1
 **Đáp số:** a) 2 chục nghìn, 2 nghìn, 4 trăm, 6 chục, 2 đơn vị · b) 22 462 − 22 280 = 182 kW·h · c) 22 000 · d) 22 462 · e) nhiều hơn 57 kW·h
@@ -431,7 +435,7 @@ d) Tích 579 × 447 × 9 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.1
 **Đáp số:** a) 100 chai · b) 7 800 000 đồng · c) 24 m · d) 8 chai · e) 6 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -451,9 +455,9 @@ d) Tích 579 × 447 × 9 có chữ số tận cùng là chữ số nào?
 **Gợi ý 3 tầng:** (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
 
 ### Bài IV.4
-**Đáp số:** a) x = 194 : 3 · b) x = 36 · c) x = 440 · d) x = 53 · e) x = 57
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 3 · b) x = 3 · c) x = 50 · d) x = 120 · e) x = 57
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -466,14 +470,14 @@ d) Tích 579 × 447 × 9 có chữ số tận cùng là chữ số nào?
 
 ### Bài V.1
 **Đáp số:** a) 81 · b) 108 · c) 54 · d) 41 · e) 40 · f) 54
-**Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
 ### Bài V.2
 **Đáp số:** a) 9 giờ 45 phút · b) 160 phút · c) 45 phút · d) 205 phút · e) 3 giờ 25 phút · f) 3 lần
-**Hướng giải:** BẪY — Số lần nghỉ ít hơn số tiết. Số lần nghỉ **ít hơn số tiết đúng 1** — giống hệt bài trồng cây. Đổi hết về phút, cộng lại, rồi chia 60 lấy thương và số dư.
+**Hướng giải:** Số lần nghỉ **ít hơn số tiết đúng 1** — giống hệt bài trồng cây. Đổi hết về phút, cộng lại, rồi chia 60 lấy thương và số dư.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Số lần nghỉ = số tiết − 1, không phải bằng số tiết.
 **Lỗi thường gặp:** Nhân số lần nghỉ bằng số tiết nên thừa một lần nghỉ. Phòng: Vẽ một hàng: tiết – nghỉ – tiết – nghỉ – tiết, rồi đếm.
 **Gợi ý 3 tầng:** (1) Học mấy tiết thì có mấy lần nghỉ giữa tiết? — (2) Đổi tất cả về phút rồi cộng. — (3) Chia tổng số phút cho 60 để đổi lại giờ và phút.

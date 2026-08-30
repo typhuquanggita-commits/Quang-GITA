@@ -360,12 +360,14 @@ e) Cưa một khúc gỗ dài 190 m thành các đoạn dài 5 m. Phải cưa ba
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.5
 **Đáp số:** a) 28 cách · b) 8 cách · c) 12 cách · d) 14 cách · e) 40 cách · f) 35 cách · g) 48 cách
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài B.1
 **Đáp số:** a) Suy luận loại trừ, cân đĩa và Đi-rích-lê · b) G — Suy luận logic & Toán đếm · c) 6 · d) ở mọi bài thuộc suy luận logic & toán đếm, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài suy luận logic: bảng đúng – sai và phương pháp loại trừ

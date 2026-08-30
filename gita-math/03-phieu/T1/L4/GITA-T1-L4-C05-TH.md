@@ -269,7 +269,7 @@ d) 30 × 23 × (24 − 24)
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy số lặp lại theo chu kì
 
@@ -340,24 +340,28 @@ e) Tích 46 × 70 × 2 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.3
 **Đáp số:** a) 30 km/giờ · b) 150 km · c) 5 giờ · d) 5 giờ
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.4
 **Đáp số:** a) 7 500 · b) 5 100 · c) 6 400 · d) 8 700 · e) 1 100 · f) 3 600 · g) 8 500
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.5
 **Đáp số:** a) 8 giờ 16 phút · b) 11 giờ 11 phút · c) 266 · d) 7 giờ 20 phút · e) 6 giờ 21 phút · f) 49 phút · g) 3 giờ 49 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài II.1
 **Đáp số:** a) 3 598 · b) 12 876 · c) 1 398 · d) 1 140
@@ -370,12 +374,14 @@ e) Tích 46 × 70 × 2 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.3
 **Đáp số:** a) 40 · b) 260 000 · c) 68 · d) 5 400 · e) 9
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.4
 **Đáp số:** a) 218 kg · b) 213 kg · c) 113 kg · d) 270 kg · e) 243 kg · f) 51 kg
@@ -388,6 +394,7 @@ e) Tích 46 × 70 × 2 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài III.1
 **Đáp số:** a) 5 tạ 50 kg · b) 7 tạ 50 kg · c) 16 tạ · d) 13 tạ 20 kg
@@ -435,28 +442,28 @@ e) Tích 46 × 70 × 2 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.3
 **Đáp số:** a) 96 lít · b) 210 lít · c) 144 lít · d) 60 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.4
 **Đáp số:** a) 24 chai · b) 8 m · c) 3 960 000 đồng · d) 13 600 000 đồng · e) 24 m · f) 65 chai
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
 
 ### Bài IV.5
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0
-**Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+**Hướng giải:** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
 ### Bài V.1
 **Đáp số:** a) 5 · b) 3 · c) 3 · d) 3 · e) 3 · f) 832
-**Hướng giải:** BẪY — Số dư 0 ứng với phần tử cuối chu kì. Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
+**Hướng giải:** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 **Lỗi thường gặp:** Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. Phòng: Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn.
 **Gợi ý 3 tầng:** (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.

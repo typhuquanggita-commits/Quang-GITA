@@ -274,7 +274,7 @@ f) Vòi thứ nhất chảy một mình đầy bể trong 12 giờ, vòi thứ h
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Chữ số tận cùng của tổng và tích
 
@@ -359,12 +359,14 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.5
 **Đáp số:** a) 790 000 · b) 700 · c) 11 000 · d) 22 000 · e) 410 · f) 310 000
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài II.1
 **Đáp số:** a) 9 · b) (25 − 3) : 2 + 1 = 12 nhà · c) 3 + (6 − 1) × 2 = 13 · d) (11 − 3) : 2 + 1 = 5 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
@@ -377,6 +379,7 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.3
 **Đáp số:** a) x = 77 · b) x = 164 · c) x = 60 · d) x = 35 · e) x = 101
@@ -442,21 +445,21 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 
 ### Bài IV.3
 **Đáp số:** a) 163 · b) 1 144 · c) 17 · d) 82 · e) 47 314 · f) 94 051
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài IV.4
 **Đáp số:** a) 440 · b) 3 825 · c) 495 · d) 10 200 · e) 110
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
 ### Bài IV.5
 **Đáp số:** a) 20 phần 9 giờ · b) 2 giờ 24 phút · c) 1 giờ 40 phút · d) 1 giờ 30 phút · e) 1 giờ 20 phút · f) 4 giờ
-**Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
+**Hướng giải:** Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
 **Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Gợi ý 3 tầng:** (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
@@ -470,7 +473,7 @@ f) Cần thêm vào tổng ít nhất bao nhiêu đơn vị để tổng chia h�
 
 ### Bài V.2
 **Đáp số:** a) 80 cm² · b) 20 cm² · c) 40 cm² · d) 1 phần 4 · e) 20 cm² · f) diện tích 160 cm², chu vi 56 cm
-**Hướng giải:** BẪY — Chu vi không cộng như diện tích. Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+**Hướng giải:** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
 **Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
 **Gợi ý 3 tầng:** (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?

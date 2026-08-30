@@ -524,8 +524,6 @@ Kết quả: **80%**.
 
 ### Bài E.3 — Bốn phép tính với số thập phân
 
-> **BẪY — Vị trí dấu phẩy ở tích.**
-
 **Các bước giải**
 
 Xét ý a: 43,59 − 2,2

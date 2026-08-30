@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài IV.1** — a) 400 g · b) 500 g · c) 125 g · d) 2 000 g
 - **Bài IV.2** — a) 13 chiếc · b) 5 chiếc · c) 7 chiếc · d) 10 chiếc · e) 3 chiếc
-- **Bài IV.3** — a) x = 234 · b) x = 3 · c) x = 16 · d) x = 137 : 3 · e) x = 231
+- **Bài IV.3** — a) x = 36 · b) x = 53 · c) x = 18 · d) x = 16 · e) x = 24
 - **Bài IV.4** — a) hình chữ nhật · b) 6 cm · c) cạnh 22 cm, diện tích 484 cm² · d) hình chữ nhật · e) 8 cm · f) cạnh 25 cm, diện tích 625 cm²
 - **Bài IV.5** — a) chu vi 66 cm, diện tích 242 cm² · b) chu vi 144 cm, diện tích 720 cm² · c) chu vi 84 cm, diện tích 245 cm² · d) chu vi 120 cm, diện tích 500 cm² · e) chu vi 42 cm, diện tích 98 cm² · f) chu vi 120 cm, diện tích 576 cm²
 
@@ -426,19 +426,17 @@ Kết quả: **13 chiếc**.
 
 ### Bài IV.3 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 9 + 52 = 78
+Xét **(x + 15) × 9 = 459**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 234**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 36**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -617,7 +615,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | Lịch, tháng, năm nhuận | Số ngày các tháng, năm nhuận, chu kì 7 ngày | Đề nhắc tới ngày, tháng, thứ trong tuần | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. | 31 · không · Thứ Ba · 5… |
 | IV.1 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 400 g · 500 g · 125 g · 2 000 g |
 | IV.2 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 13 chiếc · 5 chiếc · 7 chiếc · 10 chiếc… |
-| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 234 · x = 3 · x = 16 · x = 137 : 3… |
+| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 36 · x = 53 · x = 18 · x = 16… |
 | IV.4 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | hình chữ nhật · 6 cm · cạnh 22 cm, diện tích 484 cm² · hình chữ nhật… |
 | IV.5 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | chu vi 66 cm, diện tích 242 cm² · chu vi 144 cm, diện tích 720 cm² · chu vi 84 cm, diện tích 245 cm² · chu vi 120 cm, diện tích 500 cm²… |
 | V.1 | Chu vi, diện tích hình cơ bản | Công thức chu vi, diện tích | Cho chiều dài, chiều rộng hoặc cạnh | Chọn công thức, ghi đúng đơn vị | Hình vuông là hình chữ nhật có dài bằng rộng. | Chu vi, diện tích hình cơ bản · Công thức chu vi, diện tích · Cho chiều dài, chiều rộng hoặc cạnh · Chọn công thức, ghi đúng đơn vị… |
@@ -649,7 +647,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD4, TD1 | Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra. |
 | IV.1 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.2 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
-| IV.3 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.3 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.4 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | IV.5 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
 | V.1 | TD1, TD3 | Chu vi ghi **cm**, diện tích ghi **cm²**. |

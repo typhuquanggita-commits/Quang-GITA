@@ -338,9 +338,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.1
 **Đáp số:** a) 13 bạn · b) 15 cách · c) 100 cách · d) 21 cách · e) 54 cách · f) 12 bạn · g) 12 bạn
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.2
 **Đáp số:** a) ô (Khánh; Âm nhạc) · b) toàn bộ hàng Khánh và toàn bộ cột Âm nhạc · c) ô (Nam; Tiếng Anh) · d) Toán · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ
@@ -350,9 +351,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.3
 **Đáp số:** a) 10 cách · b) 49 cách · c) 12 cách · d) 32 cách · e) 15 cách
-**Hướng giải:** BẪY — Cộng hay nhân. Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài A.4
 **Đáp số:** a) < · b) < · c) < · d) > · e) < · f) > · g) < · h) >
@@ -365,6 +367,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -463,14 +466,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Bất biến, cực trị và suy luận tổng hợp” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Suy luận thứ tự, vị trí trong hàng.” · b) “Đứng thứ … từ đầu”, “cao hơn”, “thấp hơn” · c) Đếm vị trí, quan hệ trước – sau · d) Hàng có 7 bạn, An đứng thứ 3 từ đầu. An đứng thứ mấy từ cuối? → thứ 5 · e) Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. · f) Thứ tự từ đầu + thứ tự từ cuối = tổng số người + 1.
-**Hướng giải:** Vẽ hàng ô rồi đánh dấu. Với vị trí trong hàng: số bạn đứng trước + chính mình + số bạn đứng sau = tổng số bạn. Đó cũng là cách tự kiểm tra.
+**Hướng giải:** BẪY — Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1.. Vẽ hàng ô rồi đánh dấu. Với vị trí trong hàng: số bạn đứng trước + chính mình + số bạn đứng sau = tổng số bạn. Đó cũng là cách tự kiểm tra.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đừng quên **đếm cả chính mình** khi cộng lại.
 **Lỗi thường gặp:** Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. Phòng: Vẽ hàng ô và đếm thử với 5 bạn trước khi làm với số lớn.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

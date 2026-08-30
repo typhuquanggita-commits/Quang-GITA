@@ -275,7 +275,7 @@ g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng nhiều số có ràng buộc — dạng đề thi
 
@@ -360,12 +360,14 @@ f) Trong các số từ 1 đến 36 có bao nhiêu số chính phương?
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài I.5
 **Đáp số:** a) < · b) < · c) < · d) < · e) < · f) < · g) < · h) <
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài II.1
 **Đáp số:** a) 34 · b) 9 · c) 38 · d) 31 · e) 16
@@ -429,8 +431,8 @@ f) Trong các số từ 1 đến 36 có bao nhiêu số chính phương?
 
 ### Bài IV.1
 **Đáp số:** a) 3 825 · b) 630 · c) 275 · d) 495
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
@@ -443,29 +445,29 @@ f) Trong các số từ 1 đến 36 có bao nhiêu số chính phương?
 
 ### Bài IV.3
 **Đáp số:** a) x = 31 · b) x = 44 · c) x = 48 · d) x = 67 · e) x = 18
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
 
 ### Bài IV.4
 **Đáp số:** a) 48 m · b) 26 chai · c) 7 200 000 đồng · d) 50 chai · e) 6 m · f) 15 300 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
 
 ### Bài IV.5
 **Đáp số:** a) 134 m · b) 990 m² · c) 26,8 giây · d) 132 m² · e) 12 m · f) 1 428 m² · g) 438 m²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+**Hướng giải:** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
 
 ### Bài V.1
 **Đáp số:** a) 108 · b) 99 · c) 117 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 22 · f) 110 · g) 88
-**Hướng giải:** BẪY — Số lượng chẵn thì không có số giữa. Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 
@@ -478,7 +480,7 @@ f) Trong các số từ 1 đến 36 có bao nhiêu số chính phương?
 
 ### Bài V.3
 **Đáp số:** a) -10 · b) 38 · c) -25 · d) -30 · e) 8 · f) -20
-**Hướng giải:** BẪY — Số hạng lẻ còn thừa ở cuối dãy. Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
+**Hướng giải:** Ghép hai số hạng liền nhau thành từng cặp: 1 − 2 = −1, 3 − 4 = −1… Mỗi cặp có giá trị như nhau. Đếm số cặp rồi nhân; nếu số số hạng lẻ thì còn dư một số hạng cuối cùng phải cộng thêm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối.
 **Lỗi thường gặp:** Ghép cặp nhưng quên số hạng lẻ còn thừa ở cuối. Phòng: Đếm số số hạng trước, xác định chẵn hay lẻ rồi mới ghép cặp.
 **Gợi ý 3 tầng:** (1) Dãy có bao nhiêu số hạng? — (2) Ghép hai số hạng liền nhau, mỗi cặp bằng bao nhiêu? — (3) Số số hạng là chẵn hay lẻ? Có số hạng nào lẻ ra không?

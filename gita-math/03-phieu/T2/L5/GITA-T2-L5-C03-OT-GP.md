@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài I.1 — Đếm số hạng của dãy cách đều
 
-> **BẪY — Quên cộng 1.**
-
 **Các bước giải**
 
 Xét ý a: Dãy 2, 5, 8, …, 248 có bao nhiêu số hạng?
@@ -404,6 +402,8 @@ Kết quả: **26**.
 
 ### Bài IV.2 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: (7 phần 13 + 1 phần 13) × 1
@@ -446,6 +446,8 @@ Hiệu của phân số lớn nhất và bé nhất: 7 phần 12 − 1 phần 4 
 
 ### Bài IV.4 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -465,6 +467,8 @@ Kết quả: **249**.
 *Điểm chốt:* Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 
 ### Bài IV.5 — Tổng, trung bình cộng của dãy cách đều
+
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
 
 **Các bước giải**
 
@@ -642,11 +646,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | IV.2 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
 | IV.3 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
-| IV.4 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.4 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD4, TD6 | Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**. |
 | V.2 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
-| V.3 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| V.3 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | V.4 | TD4, TD5 | Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp. |
 | V.5 | TD4 | Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật. |
 

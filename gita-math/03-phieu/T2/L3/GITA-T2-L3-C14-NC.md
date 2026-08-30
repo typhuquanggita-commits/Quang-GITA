@@ -222,12 +222,12 @@ f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao 
 
 Tìm x, trình bày từng bước.
 
-a) 91 − x = 70
-b) x × 3 − 48 = 120
-c) x × 3 + 43 = 169
-d) x : 3 + 26 = 58
-e) x × 9 − 20 = 243
-f) x × 9 + 49 = 445
+a) (x + 70) × 5 = 470
+b) 91 − x = 70
+c) (x − 48) × 3 = 3
+d) x × 3 + 43 = 169
+e) x : 3 + 26 = 58
+f) x × 9 − 20 = 223
 
 ### Bài 2. (5 điểm) Tìm một số khi biết một phần mấy của nó
 
@@ -274,7 +274,7 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bài toán bắt tay
 
@@ -342,6 +342,7 @@ f) Xoá chữ số hàng đơn vị của 62 thì được số nào?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài I.2
 **Đáp số:** a) ô (Hà; Mĩ thuật) · b) toàn bộ hàng Hà và toàn bộ cột Mĩ thuật · c) ô (An; Toán) · d) Âm nhạc · e) Toán · f) phương pháp lập bảng và loại trừ
@@ -354,6 +355,7 @@ f) Xoá chữ số hàng đơn vị của 62 thì được số nào?
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.4
 **Đáp số:** a) 264 · b) 102 · c) 364 · d) 688 · e) 480 · f) 171
@@ -428,9 +430,9 @@ f) Xoá chữ số hàng đơn vị của 62 thì được số nào?
 **Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
 
 ### Bài IV.1
-**Đáp số:** a) x = 21 · b) x = 56 · c) x = 42 · d) x = 96 · e) x = 263 : 9 · f) x = 44
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 24 · b) x = 21 · c) x = 49 · d) x = 42 · e) x = 96 · f) x = 27
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -457,7 +459,7 @@ f) Xoá chữ số hàng đơn vị của 62 thì được số nào?
 
 ### Bài IV.5
 **Đáp số:** a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 3 · e) Lan · f) 2 lần
-**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+**Hướng giải:** Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
 **Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
 **Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
@@ -472,7 +474,7 @@ f) Xoá chữ số hàng đơn vị của 62 thì được số nào?
 ### Bài V.2
 **Đáp số:** a) 22 · b) 33 · c) 11 · d) 25 · e) nhóm Sao Mai nhiều hơn 3 lá · f) 11
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
@@ -493,7 +495,7 @@ f) Xoá chữ số hàng đơn vị của 62 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 629 · b) 567 · c) 962 · d) 900 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 6
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

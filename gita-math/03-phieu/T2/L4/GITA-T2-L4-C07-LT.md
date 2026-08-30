@@ -464,7 +464,7 @@ e) Tìm tất cả chữ số thay cho dấu * để số *209 chia hết cho 5.
 
 ### Bài E.1
 **Đáp số:** a) 1 chục nghìn, 9 nghìn, 0 trăm, 1 chục, 6 đơn vị · b) 19 016 − 18 882 = 134 kW·h · c) 19 000 · d) 19 016 · e) nhiều hơn 38 kW·h
-**Hướng giải:** Chỉ số công tơ là một số cộng dồn, nên số điện dùng trong tháng là **hiệu** hai chỉ số. Các ý còn lại là cấu tạo số, làm tròn và so sánh trên chính hai con số ấy.
+**Hướng giải:** BẪY — Lấy thẳng chỉ số cuối làm số điện đã dùng.. Chỉ số công tơ là một số cộng dồn, nên số điện dùng trong tháng là **hiệu** hai chỉ số. Các ý còn lại là cấu tạo số, làm tròn và so sánh trên chính hai con số ấy.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Chỉ số công tơ là số cộng dồn, không phải lượng dùng trong tháng.
 **Lỗi thường gặp:** Lấy thẳng chỉ số cuối làm số điện đã dùng. Phòng: Hỏi lại: con số này là 'đã dùng bao nhiêu' hay 'đếm tới đâu rồi'?
 **Gợi ý 3 tầng:** (1) Hai chỉ số đầu và cuối, cái nào lớn hơn? Vì sao? — (2) Muốn biết dùng bao nhiêu trong tháng thì làm phép gì với hai số ấy? — (3) Tách số theo hàng thì đọc từ hàng lớn nhất về hàng đơn vị.
@@ -478,9 +478,10 @@ e) Tìm tất cả chữ số thay cho dấu * để số *209 chia hết cho 5.
 
 ### Bài E.3
 **Đáp số:** a) 8 584 dư 7 · b) 6 988 dư 11 · c) 2 302 dư 17 · d) 2 521 dư 4 · e) 6 655 dư 1 · f) 5 033 dư 1
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 **Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 
 ### Bài E.4
@@ -492,9 +493,10 @@ e) Tìm tất cả chữ số thay cho dấu * để số *209 chia hết cho 5.
 
 ### Bài E.5
 **Đáp số:** a) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · b) 1, 4, 7 · c) 0, 3, 6, 9 · d) 1, 4, 7 · e) không có chữ số nào
-**Hướng giải:** BẪY — Chữ số hàng cao nhất không được là 0. Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
+**Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 **Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì chỉ cần xét chữ số tận cùng. — (2) Số chia là 3 hay 9 thì tính tổng các chữ số đã biết trước. — (3) Cộng thêm dấu * và tìm chữ số làm tổng chia hết cho số đó.
 
 ---

@@ -456,6 +456,8 @@ Kết quả: **84 quyển**.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 14 thùng dầu, mỗi thùng 15 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -475,8 +477,6 @@ Kết quả: **150 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.5 — Hai chuyển động ngược chiều và cùng chiều
-
-> **BẪY — Tổng hay hiệu vận tốc.**
 
 **Các bước giải**
 

@@ -273,7 +273,7 @@ g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tam giác chung chiều cao — tỉ số diện tích bằng tỉ số đáy
 
@@ -341,12 +341,14 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài I.2
 **Đáp số:** a) 42 cm · b) 200 cm · c) 855 cm² · d) 2 304 cm² · e) 72 cm
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.3
 **Đáp số:** a) lớn hơn · b) góc nhọn · c) 0 cặp song song, 0 cặp vuông góc · d) 1 cặp song song, 2 cặp vuông góc · e) góc vuông · f) bé hơn · g) bé hơn
@@ -359,12 +361,14 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài I.5
 **Đáp số:** a) 32 cm · b) cạnh 51 cm, diện tích 2 601 cm² · c) 5 cm · d) 50 cm
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài II.1
 **Đáp số:** a) 273 cm² · b) 275 cm² · c) 125 cm² · d) 406 cm²
@@ -442,7 +446,7 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 
 ### Bài IV.3
 **Đáp số:** a) 100 lít · b) 15 lít · c) 25 lít · d) 126 lít · e) 45 lít · f) 60 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -456,7 +460,7 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 
 ### Bài IV.5
 **Đáp số:** a) 80 m · b) 375 m² · c) 16 giây · d) 30 m² · e) 4 m · f) 459 m² · g) 84 m²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+**Hướng giải:** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
@@ -478,7 +482,7 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 ### Bài V.3
 **Đáp số:** a) 25 · b) 15 · c) 35 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 92 · f) 115 · g) 23
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

@@ -404,6 +404,8 @@ Kiểm lại a khác 0 vì a là chữ số hàng chục. Số phải tìm là *
 
 ### Bài IV.2 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -552,8 +554,6 @@ Kết quả: **3**.
 
 ### Bài V.4 — Tìm số có ba chữ số thoả ba điều kiện
 
-> **BẪY — Bỏ sót nghiệm hoặc nhận nghiệm có chữ số hàng trăm bằng 0.**
-
 **Các bước giải**
 
 Bài này đòi **hai phương pháp nối nhau**. Một mình thử chọn thì phải xét 900 số — quá nhiều. Một mình dùng chữ thay số thì ra quan hệ nhưng chưa ra số. Phải dùng cả hai.
@@ -650,14 +650,14 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD2, TD4 | Làm tròn trước khi tính thì sai số của hai lần làm tròn cộng lại. |
 | III.5 | TD2, TD3 | Đổi về cùng một đơn vị (phút) trước khi tính, đừng tính lẫn giờ và phút. |
 | IV.1 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
-| IV.2 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.2 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.3 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
 | IV.4 | TD2, TD1 | Các ước luôn đi thành **cặp** nhân với nhau bằng chính số đó. |
 | IV.5 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
 | V.1 | TD4, TD6 | Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8. |
 | V.2 | TD3, TD6 | Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất. |
 | V.3 | TD2, TD6 | Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất. |
-| V.4 | TD1, TD3, TD4 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
+| V.4 | TD1, TD3, TD4, TD5 | Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**. |
 | V.5 | TD3, TD6 | Hai xe đi trong **cùng một khoảng thời gian** — đó là mấu chốt. |
 
 ---

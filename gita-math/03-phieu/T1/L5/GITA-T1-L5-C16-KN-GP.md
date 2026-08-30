@@ -116,8 +116,6 @@ Kết quả: **180**.
 
 ### Bài A.3 — Quãng đường – vận tốc – thời gian
 
-> **BẪY — Đơn vị thời gian.**
-
 **Các bước giải**
 
 Xét ý a: Một người đi quãng đường 300 km với vận tốc 50 km/giờ. Tính thời gian đi.
@@ -161,8 +159,6 @@ Kết quả: **105**.
 *Điểm chốt:* Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 
 ### Bài A.5 — Nhiều hơn – ít hơn, gấp – kém
-
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Đề cho **hiệu** và **tỉ số****.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Tổng ôn giải toán và cuối c�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Rút về đơn vị
+
+> **BẪY — Cộng hai khoảng thời gian của hai vòi, hoặc nhân thẳng số người với số ngày theo kiểu tỉ lệ thuận..**
 
 **Các bước giải**
 
@@ -644,7 +644,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.5 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD2, TD5, TD6 | Càng nhiều người thì càng **ít** ngày — đây là tỉ lệ nghịch, nhân chia ngược với tỉ lệ thuận. |
-| E.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| E.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | E.4 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
 | E.5 | TD4, TD6 | Quãng đường tính từ lúc **đầu tàu** bắt đầu tới lúc **đuôi tàu** kết thúc, nên luôn phải cộng chiều dài đoàn tàu. |
 

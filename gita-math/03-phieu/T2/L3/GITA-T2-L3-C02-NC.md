@@ -279,16 +279,16 @@ e) Có 3 gói kẹo, mỗi gói 200 g. Lấy ra 2 gói. Hỏi số kẹo còn l�
 
 Tìm x, trình bày từng bước.
 
-a) x × 4 − 51 = 232
-b) 94 − x = 72
-c) x × 2 + 90 = 104
-d) x : 8 + 33 = 53
-e) x : 4 + 22 = 28
-f) x × 7 + 31 = 80
+a) x × 6 − 24 = 240
+b) (x + 67) × 7 = 763
+c) (x − 11) × 6 = 150
+d) x : 3 + 58 = 103
+e) x × 6 + 26 = 128
+f) 80 − x = 22
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tính nhanh tổng các số tự nhiên liên tiếp
 
@@ -360,12 +360,14 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 36 · b) 188 · c) 330 · d) 228 · e) 10
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.4
 **Đáp số:** a) 5 · b) 4 · c) 8 · d) 3 · e) 70 000 + 3 000 + 800 + 10 + 4 · f) 23 · g) 73 815
@@ -408,6 +410,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài III.1
 **Đáp số:** a) 21 · b) 243 · c) 17 · d) 2 187 · e) 40 · f) 24
@@ -468,9 +471,9 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu gói? — (2) Mỗi gói nặng bao nhiêu gam? — (3) Nhân hai kết quả.
 
 ### Bài IV.5
-**Đáp số:** a) x = 283 : 4 · b) x = 22 · c) x = 7 · d) x = 160 · e) x = 24 · f) x = 7
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 44 · b) x = 42 · c) x = 36 · d) x = 135 · e) x = 17 · f) x = 58
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -483,7 +486,7 @@ f) Nếu ngày thứ hai cũng phát 1 phần 2 của **tổng ban đầu** thì
 
 ### Bài V.2
 **Đáp số:** a) 6 375 · b) 55 · c) 1 625 · d) 210 · e) 325 · f) 275
-**Hướng giải:** BẪY — Số số hạng lẻ. Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Số số hạng lẻ thì còn dư số ở giữa.
+**Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Số số hạng lẻ thì còn dư số ở giữa.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Mọi cặp đầu – cuối đều có **cùng một tổng**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ba cặp đầu để thấy rõ chúng bằng nhau.
 **Gợi ý 3 tầng:** (1) Số đầu cộng số cuối bằng bao nhiêu? — (2) Có bao nhiêu cặp như thế? — (3) Nhân tổng một cặp với số cặp.

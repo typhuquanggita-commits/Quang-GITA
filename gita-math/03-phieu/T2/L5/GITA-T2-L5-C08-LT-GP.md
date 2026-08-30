@@ -638,7 +638,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |
 | D.2 | TD4, TD3 | Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng. |
 | D.3 | TD4 | Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật. |
-| D.4 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| D.4 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | D.5 | TD4, TD6 | Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**. |
 | E.1 | TD4, TD6 | Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**. |
 | E.2 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |

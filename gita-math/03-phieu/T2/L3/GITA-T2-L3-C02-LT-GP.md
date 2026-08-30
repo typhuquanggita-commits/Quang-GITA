@@ -496,8 +496,6 @@ Kết quả: **167**.
 
 ### Bài E.2 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Đặt tính: viết 5 thẳng dưới hàng đơn vị của 632.
@@ -641,7 +639,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.3 | TD3 | Chọn đúng **kiểu minh hoạ** giúp nhìn ra lời giải nhanh hơn hẳn. |
 | C.4 | TD2 | Đọc vị được đề là **đã đi được nửa đường**. |
 | C.5 | TD5, TD6 | Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt. |
-| D.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| D.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | D.2 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
 | D.3 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
 | D.4 | TD1 | Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu. |

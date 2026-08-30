@@ -96,8 +96,6 @@ Kết quả: **15**.
 
 ### Bài A.2 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Thảo có 53 quyển vở, Ngọc có nhiều hơn Thảo 30 quyển. Ngọc có bao nhiêu quyển vở?
@@ -137,8 +135,6 @@ Kết quả: **số lớn 94, số bé 88**.
 *Điểm chốt:* Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 
 ### Bài A.4 — Bài toán giải bằng hai phép tính
-
-> **BẪY — Đọc kĩ câu hỏi cuối.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **“Nếu … cho … thì hai bên bằng nhau”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Bài toán hai bước và rút về �
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Bài toán giải bằng hai phép tính
+
+> **BẪY — Dừng lại ở bước một, trả lời số cây của một tổ..**
 
 **Các bước giải**
 
@@ -636,7 +636,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.2 | TD2, TD3 | Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai. |
 | C.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | C.4 | TD1 | Chia cho **số lượng số hạng**, không phải chia cho một số bất kì. |
-| C.5 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| C.5 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD3, TD2 | **Bớt hiệu rồi mới chia đôi** — đảo thứ tự là sai. |
 | D.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |

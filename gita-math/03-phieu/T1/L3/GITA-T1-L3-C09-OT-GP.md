@@ -670,7 +670,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.4 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.5 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
-| V.1 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.1 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.2 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | V.3 | TD1 | Tổng các chữ số **không** phụ thuộc thứ tự các chữ số. |
 | V.4 | TD4, TD3 | Viết **có thứ tự** thì mới chắc chắn đủ và không lặp. |

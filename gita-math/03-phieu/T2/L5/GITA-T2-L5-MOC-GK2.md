@@ -279,7 +279,7 @@ f) x × 4 + 212 = x × 8
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
 
@@ -344,6 +344,7 @@ e) Bố bạn Hà gửi tiết kiệm 23 000 000 đồng với lãi suất 6% m�
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài I.2
 **Đáp số:** a) 198 · b) 51 · c) 122 · d) 144 · e) 36
@@ -362,12 +363,14 @@ e) Bố bạn Hà gửi tiết kiệm 23 000 000 đồng với lãi suất 6% m�
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.5
 **Đáp số:** a) 8 200 · b) 5 000 · c) 8 000 · d) 700
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.1
 **Đáp số:** a) 15% · b) 420 000 đồng · c) 150 000 đồng · d) 20% · e) 187 500 đồng
@@ -380,6 +383,7 @@ e) Bố bạn Hà gửi tiết kiệm 23 000 000 đồng với lãi suất 6% m�
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.3
 **Đáp số:** a) 18 · b) 39 · c) 28 · d) 23 · e) 20 · f) 32 · g) 15
@@ -398,6 +402,7 @@ e) Bố bạn Hà gửi tiết kiệm 23 000 000 đồng với lãi suất 6% m�
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài III.1
 **Đáp số:** a) 34 000 · b) 34 000 · c) 34 498 − 33 964 = 534 km · d) lệch 534 km · e) 534 : 10 ≈ 53 km
@@ -459,14 +464,14 @@ e) Bố bạn Hà gửi tiết kiệm 23 000 000 đồng với lãi suất 6% m�
 
 ### Bài IV.5
 **Đáp số:** a) x = 20 · b) x = 48 · c) x = 25 · d) x = 25 · e) x = 24 · f) x = 53
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
 
 ### Bài V.1
 **Đáp số:** a) 156 cm · b) 144 cm · c) 48 cm · d) 144 cm · e) 120 cm
-**Hướng giải:** BẪY — Chu vi không cộng như diện tích. Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
+**Hướng giải:** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
 **Lỗi thường gặp:** Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính.
 **Gợi ý 3 tầng:** (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.

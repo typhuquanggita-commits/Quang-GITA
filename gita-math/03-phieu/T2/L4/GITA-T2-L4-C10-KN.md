@@ -341,21 +341,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 120 cách · b) 11 cách · c) 4 bạn · d) 42 cách · e) 11 cách · f) 10 bạn
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.3
 **Đáp số:** a) 5 192 · b) 7 656 · c) 1 929 · d) 5 591 · e) 55 120
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.4
 **Đáp số:** a) 48 cách · b) 10 cách · c) 9 cách · d) 12 cách · e) 12 cách
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài A.5
 **Đáp số:** a) ô (Minh; Âm nhạc) · b) toàn bộ hàng Minh và toàn bộ cột Âm nhạc · c) ô (Bình; Tiếng Việt) · d) Toán · e) Tiếng Việt · f) phương pháp lập bảng và loại trừ
@@ -460,14 +463,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Nói thật – nói dối, bù trừ, bất biến và chia phần” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Chia hết và chia có dư trong tình huống chia phần.” · b) “Chia đều cho … bạn”, “còn thừa” · c) Phép chia có dư; số dư bé hơn số chia · d) Có 26 cái kẹo chia đều cho 5 bạn. Mỗi bạn mấy cái, thừa mấy cái? → 5 cái, thừa 1 cái · e) Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. · f) Thử lại bằng công thức số bị chia = số chia × thương + số dư.
-**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+**Hướng giải:** BẪY — Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư.. Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
 **Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

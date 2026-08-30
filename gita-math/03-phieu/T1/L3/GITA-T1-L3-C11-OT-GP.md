@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 78, hơn kém 9 đơn vị · b) 37, hơn kém 36 đơn vị · c) 47, hơn kém 27 đơn vị · d) 82, hơn kém 54 đơn vị · e) 13, hơn kém 18 đơn vị · f) 98, hơn kém 9 đơn vị
 - **Bài IV.2** — a) 85 · b) 22 · c) 26 · d) 20 · e) 41 · f) 28 · g) 135
 - **Bài IV.3** — a) 9 cm · b) hình chữ nhật · c) cạnh 22 cm, diện tích 484 cm² · d) 3 cm
-- **Bài IV.4** — a) x = 14 · b) x = 43 · c) x = 42 · d) x = 123 · e) x = 48
+- **Bài IV.4** — a) x = 9 · b) x = 10 · c) x = 43 · d) x = 378 · e) x = 41
 - **Bài IV.5** — a) 19 · b) 25 · c) 24 · d) 15
 
 **Phần V**
@@ -462,27 +462,23 @@ Thử lại: (29 + 9) × 2 = 76 ✓
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 8 − 32 = 80
+Xét **(x + 88) × 5 = 485**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 14**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 9**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
 *Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
 ### Bài IV.5 — Bài toán trồng cây
-
-> **BẪY — Bốn trường hợp trồng cây.**
 
 **Các bước giải**
 
@@ -628,7 +624,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 78, hơn kém 9 đơn vị · 37, hơn kém 36 đơn vị · 47, hơn kém 27 đơn vị · 82, hơn kém 54 đơn vị… |
 | IV.2 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 85 · 22 · 26 · 20… |
 | IV.3 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | 9 cm · hình chữ nhật · cạnh 22 cm, diện tích 484 cm² · 3 cm |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 14 · x = 43 · x = 42 · x = 123… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 9 · x = 10 · x = 43 · x = 378… |
 | IV.5 | Bài toán trồng cây | Quan hệ số cây – số khoảng | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | 19 · 25 · 24 · 15 |
 | V.1 | Dãy số cách đều | Số hạng thứ n của dãy cách đều; đếm số hạng | Một dãy số thật ngoài đời, các số cách nhau đều nhau | Số hạng thứ k = số đầu + (k − 1) × khoảng cách | Nhớ một câu: **số vật = số khoảng + 1** khi đếm cả hai đầu. | Dãy số cách đều · Số hạng thứ n của dãy cách đều; đếm số hạng · Một dãy số thật ngoài đời, các số cách nhau đều nhau · Số hạng thứ k = số đầu + (k − 1) × khoảng cách… |
 | V.2 | Bài toán trồng cây | Quan hệ số cây – số khoảng | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | Bài toán trồng cây · Quan hệ số cây – số khoảng · “Trồng cây”, “cột điện”, “quanh ao” · Số khoảng rồi chọn công thức theo trường hợp… |
@@ -660,7 +656,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.2 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | IV.3 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
 | V.1 | TD2, TD4 | Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài. |
 | V.2 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |

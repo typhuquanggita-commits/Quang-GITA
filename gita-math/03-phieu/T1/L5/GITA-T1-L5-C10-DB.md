@@ -445,6 +445,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài D.1
 **Đáp số:** a) 90 kg · b) xưởng: 23 kg, hợp tác xã: 115 kg · c) trang trại: 69 kg, kho B: 115 kg · d) 153 kg · e) cửa hàng: 28 kg, trang trại: 168 kg

@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 250 g · b) 1 500 g · c) 700 g · d) 600 g
 - **Bài IV.2** — a) 828 · b) 132 · c) 186 · d) 167 · e) 759 · f) 360
 - **Bài IV.3** — a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 2 · e) Nam · f) 2 lần
-- **Bài IV.4** — a) x = 35 · b) x = 48 · c) x = 12 · d) x = 77 : 5 · e) x = 59
+- **Bài IV.4** — a) x = 315 · b) x = 31 · c) x = 35 · d) x = 33 · e) x = 55
 - **Bài IV.5** — a) 5 chiếc · b) 16 chiếc · c) 13 chiếc · d) 11 chiếc
 
 **Phần V**
@@ -450,19 +450,17 @@ Lặp lại cách ấy, sau 2 lần thì còn đúng một gói.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 7 + 61 = 66
+Xét **x : 9 + 51 = 86**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 35**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 315**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -537,8 +535,6 @@ Lấy chữ số tận cùng của kết quả: **0**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.3 — Tính nhanh tổng các số tự nhiên liên tiếp
-
-> **BẪY — Số số hạng lẻ thì còn số ở giữa.**
 
 **Các bước giải**
 
@@ -632,7 +628,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 250 g · 1 500 g · 700 g · 600 g |
 | IV.2 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 828 · 132 · 186 · 167… |
 | IV.3 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 2 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 2… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 35 · x = 48 · x = 12 · x = 77 : 5… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 315 · x = 31 · x = 35 · x = 33… |
 | IV.5 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 5 chiếc · 16 chiếc · 13 chiếc · 11 chiếc |
 | V.1 | Đếm hình bằng quy tắc chọn hai điểm | Đếm cặp | Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc là xong. | 10 · 5 · 15 · 6… |
 | V.2 | Chữ số tận cùng | Tính chất chữ số tận cùng của tổng, tích | Câu hỏi chỉ hỏi chữ số tận cùng | Rút gọn về chữ số tận cùng rồi tính | Tích có thừa số tận cùng 0 hoặc 5 thì tận cùng là 0 hoặc 5. | 0 · 8 · 9 · 6… |
@@ -664,9 +660,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.2 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
-| V.1 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.1 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.2 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.3 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | V.4 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |

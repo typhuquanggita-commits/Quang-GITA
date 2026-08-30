@@ -285,7 +285,7 @@ d) x × 5 + 174 = x × 8
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bán hai lần theo phân số, tìm số ban đầu
 
@@ -352,12 +352,14 @@ d) 449 × 6 − 448 × 6
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.3
 **Đáp số:** a) 29 531 895 · b) 57 368 · c) 32 664 056 · d) 50 576 400 · e) 4 979 614 · f) 55 198 122 · g) 18 426 240
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) x = 150 · b) x = 438 · c) x = 871 · d) x = 1 950 · e) x = 19
@@ -433,8 +435,8 @@ d) 449 × 6 − 448 × 6
 
 ### Bài IV.1
 **Đáp số:** a) 1 625 · b) 165 · c) 975 · d) 1 890 · e) 495 · f) 1 950
-**Hướng giải:** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
+**Hướng giải:** BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung. Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+**Nhãn tư duy:** TD3, TD4, TD5. Điểm chốt: Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 **Lỗi thường gặp:** Nhân từng tích rồi cộng dồn, rất dài và dễ sai. Phòng: Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính.
 **Gợi ý 3 tầng:** (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
 
@@ -468,7 +470,7 @@ d) 449 × 6 − 448 × 6
 
 ### Bài V.1
 **Đáp số:** a) 18 quả · b) 16 quả · c) 60 quả · d) 36 quả
-**Hướng giải:** BẪY — Lấy phân số trên số ban đầu thay vì trên phần còn lại. Đi ngược từ số cuối. Ở mỗi bước, số hiện có ứng với phần còn lại sau khi bán, nên nhân với mẫu rồi chia cho phần còn lại. Tính xong bắt buộc thử lại theo chiều xuôi.
+**Hướng giải:** Đi ngược từ số cuối. Ở mỗi bước, số hiện có ứng với phần còn lại sau khi bán, nên nhân với mẫu rồi chia cho phần còn lại. Tính xong bắt buộc thử lại theo chiều xuôi.
 **Nhãn tư duy:** TD3, TD5, TD6. Điểm chốt: Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài.
 **Lỗi thường gặp:** Lấy cả hai phân số trên số ban đầu rồi cộng lại. Phòng: Thử lại theo chiều xuôi — bài này luôn thử lại được.
 **Gợi ý 3 tầng:** (1) Sau lần hai còn lại mấy phần mấy của số trước lần hai? — (2) Từ đó tính ngược ra số cam trước lần hai. — (3) Làm y như vậy một lần nữa để ra số ban đầu.

@@ -448,6 +448,8 @@ Kết quả: **52**.
 
 ### Bài IV.4 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 7 × 1 + 7 × 2 + 7 × 3 + … + 7 × 10
@@ -467,6 +469,8 @@ Kết quả: **385**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.5 — Tìm x khi x xuất hiện ở cả hai vế
+
+> **BẪY — Chuyển vế mà quên đổi dấu.**
 
 **Các bước giải**
 
@@ -644,7 +648,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
 | IV.2 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | IV.3 | TD5, TD3 | Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên. |
-| IV.4 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.4 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.5 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | V.1 | TD3, TD5 | Cùng đơn giá thì cộng số lượng trước, nhân sau — nhân một lần thôi. |
 | V.2 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |

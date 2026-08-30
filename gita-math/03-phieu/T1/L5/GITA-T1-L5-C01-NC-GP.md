@@ -446,6 +446,8 @@ Cộng các bậc: 90 000 + 95 000 + 220 000 + 84 000 = **489 000 đồng**.
 
 ### Bài IV.3 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 9 phần 10 : 8 phần 5 + 4 phần 3
@@ -509,8 +511,6 @@ Hiệu của phân số lớn nhất và bé nhất: 11 phần 12 − 1 phần 3
 *Phải chắc trước khi làm bài này:* Rút gọn phân số và quy đồng mẫu số.
 
 ### Bài V.1 — So sánh phân số bằng phần bù và phân số trung gian
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 

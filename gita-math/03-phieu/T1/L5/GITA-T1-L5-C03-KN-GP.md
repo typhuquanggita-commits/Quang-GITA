@@ -96,8 +96,6 @@ Kết quả: **13**.
 
 ### Bài A.2 — Quãng đường – vận tốc – thời gian
 
-> **BẪY — Đơn vị thời gian.**
-
 **Các bước giải**
 
 Xét ý a: Một người đi quãng đường 250 km với vận tốc 50 km/giờ. Tính thời gian đi.
@@ -161,8 +159,6 @@ Kết quả: **222**.
 *Điểm chốt:* Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 
 ### Bài A.5 — Nhiều hơn – ít hơn, gấp – kém
-
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **“Phải thêm (bớt) bao nhiêu để tỉ số trở thành �
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Tỉ lệ thuận – nghịch, trung 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tỉ lệ bản đồ, tỉ lệ xích
+
+> **BẪY — Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa..**
 
 **Các bước giải**
 

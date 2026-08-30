@@ -178,8 +178,6 @@ Kết quả: **x = 183**.
 
 ### Bài II.1 — Tìm số ban đầu bằng cách tính ngược
 
-> **BẪY — Đi ngược nhưng không đảo thứ tự.**
-
 **Các bước giải**
 
 Viết chuỗi thao tác thành sơ đồ mũi tên: số cần tìm → × 4 → + 14 → : 5 → 46.
@@ -386,6 +384,8 @@ Kết quả: **25**.
 
 ### Bài IV.1 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 20
@@ -450,6 +450,8 @@ Kết quả: **0**.
 
 ### Bài IV.4 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 3 + 100 = x × 8
@@ -469,6 +471,8 @@ Kết quả: **x = 20**.
 *Điểm chốt:* Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 
 ### Bài IV.5 — Biểu thức nhiều phép tính với phân số
+
+> **BẪY — Làm phép cộng trước phép chia.**
 
 **Các bước giải**
 
@@ -643,7 +647,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số. |
 | III.4 | TD2, TD6 | Điền **miền giữa trước** — mọi miền khác suy ra từ đó. |
 | III.5 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
-| IV.1 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.1 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.2 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
 | IV.3 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | IV.4 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |

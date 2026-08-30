@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Ôn tập bốn phép tính với số tự nhiên
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 93 003 670 : 95
@@ -141,8 +139,6 @@ Kết quả: **2 313**.
 *Điểm chốt:* Đếm đúng **số chữ số 0** của số nhân hay số chia.
 
 ### Bài A.4 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Vài món hàng có giá lẻ, cần biết nhanh tổng khoảng
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Nhân và chia số có nhiều chữ 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tổng các tích có thừa số chung
+
+> **BẪY — Nhân từng tích rồi cộng dồn, rất dài và dễ sai..**
 
 **Các bước giải**
 
@@ -633,7 +633,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | TD2 | Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi. |
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
-| C.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| C.2 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | C.3 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | C.4 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
 | C.5 | TD3, TD2 | Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc. |
@@ -643,7 +643,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.4 | TD5, TD3 | Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu. |
 | D.5 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
-| E.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| E.2 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | E.3 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương. |
 | E.4 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
 | E.5 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |

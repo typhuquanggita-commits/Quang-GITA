@@ -340,21 +340,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.2
 **Đáp số:** a) 13 · b) 18 · c) 19 · d) 7 · e) 9 · f) 7 · g) 10
-**Hướng giải:** BẪY — Chia chứ không nhân. Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
+**Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.3
 **Đáp số:** a) 13 cách · b) 15 bạn · c) 90 cách · d) 22 cách · e) 9 bạn · f) 36 cách
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.4
 **Đáp số:** a) 9 · b) 14 · c) 12 · d) 15 · e) 9
 **Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.5
 **Đáp số:** a) 13 456 · b) 16 104 · c) 26 841 · d) 75 102 · e) số chẵn
@@ -459,14 +462,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Phân số, tỉ số và thống kê nâng cao” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tìm phân số của một số qua nhiều bước.” · b) Cụm “… số còn lại” · c) Phân số một phần mấy, phép trừ liên tiếp · d) Có 24 quyển vở, phát 1 phần 2, rồi phát 1 phần 3 số còn lại. Còn mấy quyển? → 8 quyển · e) Lấy cả hai phân số tính trên tổng ban đầu. · f) Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh.
-**Hướng giải:** Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
+**Hướng giải:** BẪY — Lấy cả hai phân số tính trên tổng ban đầu.. Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu.
 **Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Viết một dòng “còn lại … quyển” sau mỗi bước.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.

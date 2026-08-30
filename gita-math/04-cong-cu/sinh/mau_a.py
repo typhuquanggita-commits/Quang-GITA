@@ -327,7 +327,7 @@ def a_m2_02(rng, lop):
         pt_phuong_phap="Đặt tính chia, kiểm tra điều kiện số dư",
         pt_nhanh="Ước lượng thương bằng cách làm tròn số chia trước khi chia.",
         tuong_tu=("Tìm thương và số dư của 1 234 : 7", "176 dư 2"),
-        bay="Số dư phải bé hơn số chia",
+        chu_y="Số dư phải bé hơn số chia",
     )
 
 
@@ -364,7 +364,7 @@ def a_m2_03(rng, lop):
         pt_nhanh="Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm "
                  "phần bù cần thêm.",
         tuong_tu=("Tìm chữ số thay cho * để 12* chia hết cho 5.", "0, 5"),
-        bay="Chữ số hàng cao nhất không được là 0",
+        chu_y="Chữ số hàng cao nhất không được là 0",
     )
 
 
@@ -860,6 +860,7 @@ def a_m5_01(rng, lop):
                    "So sánh hai biểu thức để tìm quan hệ; chú ý a chạy từ 1 đến 9 và "
                    "b chạy từ 0 đến 9 nên số trường hợp là hữu hạn, có thể lập bảng.",
         td=["TD3", "TD6"],
+        bay="Chia bừa mà không kiểm điều kiện chia hết",
         diem_chot="Khi ẩn chỉ nhận hữu hạn giá trị, **lập bảng** là phương pháp chắc chắn nhất.",
         loi="Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên.",
         phong="Kiểm tra lại đáp số bằng cách thay ngược vào đề.",
@@ -936,6 +937,7 @@ def a_m5_03(rng, lop):
                    "Nhờ đó, muốn biết tổng có chia hết cho d không thì chỉ cần cộng các "
                    "số dư, không cần cộng các số.",
         td=["TD2", "TD6"],
+        bay="Cộng hết cả dãy rồi mới xét chia hết",
         diem_chot="Làm việc với **số dư** thay vì với số — đây là kỹ thuật rút gọn mạnh nhất.",
         loi="Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai.",
         phong="Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư.",

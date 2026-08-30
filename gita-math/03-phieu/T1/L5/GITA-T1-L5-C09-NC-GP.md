@@ -376,6 +376,8 @@ Kết quả: **336 cm³**.
 
 ### Bài IV.1 — Tỉ số diện tích hai tam giác chung chiều cao
 
+> **BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt.**
+
 **Các bước giải**
 
 Xét ý a: Tam giác ABC có diện tích 189 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 1 phần và MC gấp 6 phần bằng nhau. Tính diện tích tam giác ABM.
@@ -459,8 +461,6 @@ Bước 2 — đổi ra lít: 1 m³ = 1 000 lít, nên 60 × 1 000 = 60 000 (lí
 *Phải chắc trước khi làm bài này:* Công thức thể tích hình hộp chữ nhật và đổi đơn vị thể tích.
 
 ### Bài IV.5 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
-
-> **BẪY — Phần tăng gồm ba mảnh.**
 
 **Các bước giải**
 

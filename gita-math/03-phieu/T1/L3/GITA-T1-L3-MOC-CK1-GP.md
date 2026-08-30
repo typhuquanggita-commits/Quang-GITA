@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 2 · e) Khánh · f) 2 lần
 - **Bài IV.2** — a) 12 · b) 19 · c) 8 · d) 23 · e) 5 · f) 9
 - **Bài IV.3** — a) chu vi 72 cm, diện tích 180 cm² · b) chu vi 78 cm, diện tích 338 cm² · c) chu vi 110 cm, diện tích 484 cm² · d) chu vi 150 cm, diện tích 900 cm²
-- **Bài IV.4** — a) x = 37 · b) x = 24 · c) x = 53 · d) x = 366 : 9 · e) x = 56 · f) x = 174 : 8
+- **Bài IV.4** — a) x = 3 · b) x = 41 · c) x = 59 · d) x = 106 · e) x = 40 · f) x = 56
 - **Bài IV.5** — a) 56 · b) 950 · c) 149 · d) 26 · e) 1 099 · f) 801
 
 **Phần V**
@@ -446,27 +446,23 @@ Kết quả: **chu vi 72 cm, diện tích 180 cm²**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: 95 − x = 58
+Xét **76 − x = 73**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 37**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 3**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
 *Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
 ### Bài IV.5 — Tìm số có ba chữ số thoả điều kiện
-
-> **BẪY — Chữ số hàng trăm khác 0 và ba chữ số khác nhau.**
 
 **Các bước giải**
 
@@ -628,7 +624,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 2 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 2… |
 | IV.2 | Bài toán trồng cây | Quan hệ số cây – số khoảng | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | 12 · 19 · 8 · 23… |
 | IV.3 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | chu vi 72 cm, diện tích 180 cm² · chu vi 78 cm, diện tích 338 cm² · chu vi 110 cm, diện tích 484 cm² · chu vi 150 cm, diện tích 900 cm² |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 37 · x = 24 · x = 53 · x = 366 : 9… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 3 · x = 41 · x = 59 · x = 106… |
 | IV.5 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 56 · 950 · 149 · 26… |
 | V.1 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia | “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” | Tính từng bước, bám vào tổng có đổi hay không | Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu. | 42 · 56 · 28 · 27… |
 | V.2 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 190 · không thay đổi · 190 · giảm đi 2 lần số bé — luôn là một số chẵn… |
@@ -660,9 +656,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.2 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
 | IV.3 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
 | V.3 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
 | V.4 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |

@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đếm hình trong lưới ô vuông
 
-> **BẪY — Bỏ sót các hình ghép nhiều ô.**
-
 **Các bước giải**
 
 Xét ý a: Lưới ô vuông gồm 5 hàng và 4 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
@@ -97,8 +95,6 @@ Kết quả: **20**.
 *Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 
 ### Bài A.2 — Góc vuông và trung điểm của đoạn thẳng
-
-> **BẪY — Nằm giữa nhưng không chia đôi.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Một mảnh đất có kích thước, cần rào hoặc cắm c
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Diện tích, ghép hình và đếm h
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Ghép hình, chu vi và diện tích
+
+> **BẪY — Nhân chu vi một hình vuông với số hình..**
 
 **Các bước giải**
 
@@ -636,7 +636,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | D.3 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
-| D.4 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| D.4 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | D.5 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
 | E.2 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |

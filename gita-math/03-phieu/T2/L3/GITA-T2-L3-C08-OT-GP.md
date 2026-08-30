@@ -460,6 +460,8 @@ Kết quả: **1 000 g**.
 
 ### Bài IV.4 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 12 tấm vải, mỗi tấm dài 2 m. Cắt mỗi tấm đi 1 m. Hỏi còn lại tất cả bao nhiêu mét vải?

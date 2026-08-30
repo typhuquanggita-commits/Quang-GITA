@@ -388,6 +388,8 @@ Kết quả: **578 · 587 · 758 · 785 · 857 · 875**.
 
 ### Bài IV.1 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -499,8 +501,6 @@ Kết quả: **0**.
 *Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 
 ### Bài V.1 — Dãy phân số dạng n phần (n + 1)
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -663,7 +663,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD5 | Đảo **cả phép tính lẫn thứ tự**. Đảo phép tính mà giữ nguyên thứ tự thì vẫn sai. |
 | III.4 | TD1, TD2, TD4 | Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước. |
 | III.5 | TD4, TD6 | Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn. |
-| IV.1 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.1 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.2 | TD6, TD2 | Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này. |
 | IV.3 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.4 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |

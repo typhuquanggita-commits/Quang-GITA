@@ -486,6 +486,8 @@ Kết quả: **250 g**.
 
 ### Bài IV.5 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Hà và Quân có tất cả 180 quyển vở. Hà có nhiều hơn Quân 10 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -505,6 +507,8 @@ Kết quả: **Hà: 95 quyển, Quân: 85 quyển**.
 *Điểm chốt:* Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 
 ### Bài V.1 — Chữ số tận cùng của tổng và tích
+
+> **BẪY — Tính trọn phép tính thay vì chỉ xét chữ số tận cùng.**
 
 **Các bước giải**
 
@@ -530,8 +534,6 @@ Kết quả: **8**.
 
 ### Bài V.2 — Một phần mấy qua hai bước — chú ý “số còn lại”
 
-> **BẪY — Phân số của số còn lại.**
-
 **Các bước giải**
 
 Bước 1 — ngày đầu phát: 56 : 2 = 28 (quyển).
@@ -555,8 +557,6 @@ So sánh: nếu tính trên tổng ban đầu thì được 28 quyển — khác
 *Phải chắc trước khi làm bài này:* Tìm một phần mấy của một số và phép trừ.
 
 ### Bài V.3 — Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
-
-> **BẪY — Cho thêm khác với chuyển qua lại.**
 
 **Các bước giải**
 
@@ -682,7 +682,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | TD3, TD2 | Bớt hiệu rồi mới chia đôi — thứ tự không được đảo. |
 | V.1 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.2 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
-| V.3 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.3 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.4 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | V.5 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 

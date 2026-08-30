@@ -476,6 +476,8 @@ Kết quả: **Kĩ thuật đặt tính nhân, chia**.
 
 ### Bài E.1 — Tính nhanh bằng cách ghép số tròn
 
+> **BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn..**
+
 **Các bước giải**
 
 Xét ý a: 38 + 225 + 62
@@ -541,8 +543,6 @@ Diện tích: 26 × 22 = **572 m²** — chú ý đơn vị là mét vuông, kh�
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật.
 
 ### Bài E.4 — Nhân, chia với số có một chữ số
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -642,7 +642,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | TD2 | Đọc vị được đề là **đã đi được nửa đường**. |
 | C.5 | TD5, TD6 | Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt. |
 | D.1 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |
-| D.2 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| D.2 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | D.3 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |
 | D.4 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên. |
 | D.5 | TD1 | Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương. |

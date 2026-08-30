@@ -271,7 +271,7 @@ f) Tìm số bé nhất không quá 300 chia cho 7 dư 4 và chia cho 5 dư 1.
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Số dư của tổng — lập luận không cần tính hết
 
@@ -392,6 +392,7 @@ f) Tìm số có hai chữ số biết số đó bằng 2 lần tổng hai chữ
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài III.1
 **Đáp số:** a) 24 · b) 24 cm² · c) 1 cm² · d) 12 cm² · e) 6 cm² · f) 32 cm
@@ -425,8 +426,8 @@ f) Tìm số có hai chữ số biết số đó bằng 2 lần tổng hai chữ
 
 ### Bài IV.1
 **Đáp số:** a) 100 · b) 256 · c) 7 120 · d) 178 · e) 356 · f) 356
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -474,7 +475,7 @@ f) Tìm số có hai chữ số biết số đó bằng 2 lần tổng hai chữ
 
 ### Bài V.3
 **Đáp số:** a) 2 113 kg · b) 21 tạ 13 kg · c) 528 kg, thừa 1 kg · d) 3 xe · e) 10 tạ 57 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-**Hướng giải:** BẪY — Làm tròn lên khi hỏi số xe ít nhất. Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
 **Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
 **Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?

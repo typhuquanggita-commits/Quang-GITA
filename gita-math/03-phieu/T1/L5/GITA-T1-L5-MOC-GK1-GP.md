@@ -378,6 +378,8 @@ Kết quả: **418**.
 
 ### Bài IV.1 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 2 × 1 + 2 × 2 + 2 × 3 + … + 2 × 10
@@ -467,8 +469,6 @@ Quãng đường ngược dòng: 15 × 5 = **75 km**.
 *Phải chắc trước khi làm bài này:* Ba công thức vận tốc – quãng đường – thời gian và bài tổng – hiệu.
 
 ### Bài IV.5 — Ghép người với môn bằng bảng đúng – sai
-
-> **BẪY — Đánh dấu đúng mà quên gạch phần còn lại.**
 
 **Các bước giải**
 
@@ -653,7 +653,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD1, TD2, TD4 | Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước. |
 | III.4 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
 | III.5 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
-| IV.1 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.1 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.2 | TD2, TD5 | Không được nhân cả số điện cho một đơn giá duy nhất. Đó chính là lỗi mà cách tính bậc thang sinh ra để chống. |
 | IV.3 | TD3, TD4 | Phải thử từ 0 tờ, không được bỏ qua trường hợp chỉ dùng một loại. |
 | IV.4 | TD2, TD5 | Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng. |

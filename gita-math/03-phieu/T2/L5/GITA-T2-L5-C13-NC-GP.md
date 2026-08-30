@@ -426,6 +426,8 @@ Kết quả: **42**.
 
 ### Bài IV.3 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 7 phần 4 × 1 + 7 phần 4 × 2 phần 7
@@ -467,8 +469,6 @@ Kết quả: **350 000 đồng**.
 *Điểm chốt:* Phần trăm lãi tính theo **giá mua**, không tính theo giá bán.
 
 ### Bài IV.5 — Tiền điện tính theo bậc thang
-
-> **BẪY — Nhân cả số điện cho đơn giá bậc cuối.**
 
 **Các bước giải**
 

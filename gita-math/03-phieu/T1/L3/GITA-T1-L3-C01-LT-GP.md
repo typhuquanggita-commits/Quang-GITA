@@ -568,8 +568,6 @@ Tiền trả lại: 250 000 − 212 500 = **37 500 đồng**.
 
 ### Bài E.5 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 3 969 : 4
@@ -650,7 +648,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.1 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên. |
 | D.2 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |
 | D.3 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
-| D.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| D.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | D.5 | TD1, TD3 | x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng. |
 | E.1 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
 | E.2 | TD5, TD3 | Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự. |

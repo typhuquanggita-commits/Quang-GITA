@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 140 · b) x = 33 · c) x = 9 · d) x = 322 : 5 · e) x = 80
+- **Bài IV.1** — a) x = 18 · b) x = 132 · c) x = 9 · d) x = 57 · e) x = 10
 - **Bài IV.2** — a) 24 · b) 983 · c) 389 · d) 8 · e) 1 372 · f) 594
 - **Bài IV.3** — a) 136 · b) 30 · c) 30 · d) 93 · e) 76 · f) 34
 - **Bài IV.4** — a) 105 · b) 1 phần 5 · c) 81 quyển · d) 1 phần 4 · e) 46 · f) 96 quyển
@@ -388,19 +388,17 @@ Kết quả: **135**.
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 5 + 82 = 110
+Xét **(x + 55) × 2 = 146**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 140**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 18**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -477,8 +475,6 @@ Thử lại: 105 : 5 = 21 ✓
 *Phải chắc trước khi làm bài này:* Bảng nhân, bảng chia và khái niệm một phần mấy.
 
 ### Bài IV.5 — Đổi chỗ hai chữ số của một số
-
-> **BẪY — Hiệu là 9 lần hiệu hai chữ số.**
 
 **Các bước giải**
 
@@ -631,7 +627,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Đếm hình trong lưới | Quy tắc đếm | Lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ | Số cách chọn 2 trong k là k × (k − 1) : 2. | 16 · 5 đường ngang, 5 đường dọc · 100 · 30… |
 | III.4 | Tổng – tỉ, hiệu – tỉ mức làm quen | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng chia hết cho tổng số phần; không chia hết là đã đọc sai tỉ số. | tổ Ba: 18 cây, tổ Hai: 72 cây · 1 phần 2 · nhóm Hoa Phượng: 27 cây, tổ Một: 81 cây · tổ Một: 7 cây, nhóm Hoa Phượng: 21 cây |
 | III.5 | Tính nhanh biểu thức đơn giản | Tính chất giao hoán, kết hợp; nhân với 0 | Biểu thức có cặp tròn trăm, có số 0, có cặp cộng rồi trừ | Quan sát toàn biểu thức trước khi tính | Tích có một thừa số bằng 0 thì bằng 0, dù các số khác lớn đến đâu. | 135 · 0 · 347 · 276… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 140 · x = 33 · x = 9 · x = 322 : 5… |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 18 · x = 132 · x = 9 · x = 57… |
 | IV.2 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 24 · 983 · 389 · 8… |
 | IV.3 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 136 · 30 · 30 · 93… |
 | IV.4 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 105 · 1 phần 5 · 81 quyển · 1 phần 4… |
@@ -663,7 +659,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
 | III.4 | TD3, TD2 | Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần. |
 | III.5 | TD5, TD6 | **Nhìn trước, tính sau** — đó là toàn bộ bí quyết tính nhanh. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
 | IV.3 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | IV.4 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
@@ -672,7 +668,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
 | V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.4 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

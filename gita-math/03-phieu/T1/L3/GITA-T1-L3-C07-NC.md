@@ -274,7 +274,7 @@ e) 8 hộp bút có 72 chiếc. Hỏi 12 hộp như thế có bao nhiêu chiếc
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
@@ -346,6 +346,7 @@ f) Có 120 quyển vở. Ngày đầu phát 1 phần 2 số vở, ngày thứ ha
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.3
 **Đáp số:** a) 450 · b) 330 · c) 392 · d) 799 · e) 1 003 · f) 931
@@ -358,6 +359,7 @@ f) Có 120 quyển vở. Ngày đầu phát 1 phần 2 số vở, ngày thứ ha
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.5
 **Đáp số:** a) số lớn 169, số bé 87 · b) số lớn 189, số bé 99 · c) số lớn 36, số bé 34 · d) số lớn 107, số bé 103 · e) số lớn 184, số bé 108
@@ -434,7 +436,7 @@ f) Có 120 quyển vở. Ngày đầu phát 1 phần 2 số vở, ngày thứ ha
 
 ### Bài IV.2
 **Đáp số:** a) An: 38 quyển, Sơn: 30 quyển · b) Ngọc: 85 quyển, Vy: 53 quyển · c) Yến: 89 quyển, Chi: 57 quyển · d) An: 31 quyển, Minh: 17 quyển · e) Phúc: 50 quyển, Quân: 30 quyển · f) Sơn: 107 quyển, Minh: 83 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -463,7 +465,7 @@ f) Có 120 quyển vở. Ngày đầu phát 1 phần 2 số vở, ngày thứ ha
 ### Bài V.1
 **Đáp số:** a) 24 · b) 36 · c) 12 · d) 19 · e) 5 · f) 12
 **Hướng giải:** BẪY — Cho thêm khác với chuyển qua lại. Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 
@@ -476,7 +478,7 @@ f) Có 120 quyển vở. Ngày đầu phát 1 phần 2 số vở, ngày thứ ha
 
 ### Bài V.3
 **Đáp số:** a) 75 quyển · b) 65 quyển · c) 55 quyển · d) 20 quyển · e) 21 bông · f) 3 giờ
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+**Hướng giải:** Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển.
 **Lỗi thường gặp:** Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. Phòng: Thử lại: cộng trừ ra hai số lúc đầu rồi kiểm tra cả tổng và hiệu.
 **Gợi ý 3 tầng:** (1) Khi chuyển vở qua lại, tổng số vở có đổi không? — (2) Sau khi cho, mỗi bạn có bao nhiêu quyển? — (3) Đi ngược lại: lúc đầu bạn cho có nhiều hơn bấy nhiêu quyển.

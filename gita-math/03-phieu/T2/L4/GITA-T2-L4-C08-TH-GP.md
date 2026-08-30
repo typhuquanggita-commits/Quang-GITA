@@ -382,6 +382,8 @@ Kết quả: **67**.
 
 ### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -401,6 +403,8 @@ Kết quả: **121**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.2 — Biểu thức nhiều phép tính với phân số
+
+> **BẪY — Làm phép cộng trước phép chia.**
 
 **Các bước giải**
 
@@ -466,6 +470,8 @@ Hiệu của phân số lớn nhất và bé nhất: 2 phần 3 − 1 phần 12 
 
 ### Bài IV.5 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 14 thùng dầu, mỗi thùng 25 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -486,8 +492,6 @@ Kết quả: **300 lít**.
 
 ### Bài V.1 — So sánh phân số bằng phần bù và phân số trung gian
 
-> **BẪY — Chiều của phần bù.**
-
 **Các bước giải**
 
 Xét ý a: 52 phần 53 … 56 phần 57
@@ -507,8 +511,6 @@ Kết quả: **<**.
 *Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều.
 
 ### Bài V.2 — Số chính phương — làm quen theo hướng đề thi
-
-> **BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức.**
 
 **Các bước giải**
 
@@ -533,8 +535,6 @@ Vì thế tổng 9 số lẻ đầu tiên bằng 9 × 9 = 81.
 *Phải chắc trước khi làm bài này:* Bảng nhân và chữ số tận cùng của tích.
 
 ### Bài V.3 — Tổng nhiều số có ràng buộc — dạng đề thi
-
-> **BẪY — Số lượng chẵn thì không có số giữa.**
 
 **Các bước giải**
 
@@ -657,14 +657,14 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD2, TD4 | Con số đề cho cho mỗi môn **đã bao gồm** những em học cả hai. Cộng thẳng hai con số ấy là đếm phần chung hai lần. |
 | III.4 | TD1, TD2, TD4 | Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước. |
 | III.5 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.1 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.2 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
 | IV.3 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | IV.4 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
 | IV.5 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | V.1 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
 | V.2 | TD4, TD6 | Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8. |
-| V.3 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.3 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.4 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
 | V.5 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |
 

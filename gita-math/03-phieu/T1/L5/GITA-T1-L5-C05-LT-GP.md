@@ -500,8 +500,6 @@ Kết quả: **5 253**.
 
 ### Bài E.2 — Bốn phép tính với số thập phân
 
-> **BẪY — Vị trí dấu phẩy ở tích.**
-
 **Các bước giải**
 
 Xét ý a: 89,35 − 4,6
@@ -543,8 +541,6 @@ Kết quả: **118 phần 117**.
 *Điểm chốt:* Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
 
 ### Bài E.4 — Tìm chữ số để số chia hết cho một số cho trước
-
-> **BẪY — Chữ số hàng cao nhất không được là 0.**
 
 **Các bước giải**
 

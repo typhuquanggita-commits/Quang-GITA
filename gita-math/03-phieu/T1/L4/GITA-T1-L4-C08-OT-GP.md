@@ -380,6 +380,8 @@ Kết quả: **88**.
 
 ### Bài IV.1 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -643,16 +645,16 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi. |
 | III.4 | TD3, TD2 | Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp. |
 | III.5 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
-| IV.1 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.1 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.2 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.4 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD2, TD3 | Đổi về cùng một đơn vị (phút) trước khi tính, đừng tính lẫn giờ và phút. |
-| V.2 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| V.2 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | V.3 | TD4, TD1 | Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**. |
 | V.4 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
-| V.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| V.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 
 ---
 

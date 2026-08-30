@@ -413,13 +413,14 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài C.2
 **Đáp số:** a) 1 466 dư 3 · b) 4 082 dư 2 · c) 3 330 dư 5 · d) 7 529 dư 4 · e) 7 285 dư 4
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài C.3
 **Đáp số:** a) 555 · b) 1 110 · c) 1 475 · d) 900 · e) 6 875 · f) 12 650
-**Hướng giải:** Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
+**Hướng giải:** BẪY — Quên chia 2. Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp.
 **Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
 
@@ -428,12 +429,14 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài C.5
 **Đáp số:** a) 61,95 · b) 88,61 · c) 15,24 · d) 77,28 · e) 194,79 · f) 352,52 · g) 97,55 · h) 10,38
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài D.1
 **Đáp số:** a) 1 · b) 1 · c) 1 · d) 1 · e) 1

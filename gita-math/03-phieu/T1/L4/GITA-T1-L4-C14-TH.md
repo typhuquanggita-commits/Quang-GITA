@@ -282,7 +282,7 @@ e) Ba bạn Lan, Ngọc và Hà mỗi bạn học một môn năng khiếu khác
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tỉ số thay đổi khi một đại lượng thay đổi
 
@@ -354,24 +354,28 @@ f) Tổng 615 + 912 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 1 500 · b) 3 000 · c) 3 400 · d) 360 000 · e) 5 000 · f) 5 100
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.4
 **Đáp số:** a) 7 giờ 30 phút · b) 5 giờ 27 phút · c) 417 · d) 1 giờ 35 phút · e) 2 giờ 56 phút · f) 236 · g) 6 giờ 57 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.5
 **Đáp số:** a) 700 000 · b) 320 · c) 8 800 000 · d) 63 000 · e) 12 000 · f) 50 000
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài II.1
 **Đáp số:** a) 1 242 · b) 32 058 · c) 1 522 · d) 3 081
@@ -384,18 +388,21 @@ f) Tổng 615 + 912 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.3
 **Đáp số:** a) 31 · b) 64 · c) 60 · d) 58 · e) 7
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.4
 **Đáp số:** a) 3 tuần 3 ngày · b) XX · c) 30 · d) không · e) XX · f) 5 tuần 1 ngày
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài II.5
 **Đáp số:** a) 1 chục nghìn, 4 nghìn, 4 trăm, 1 chục, 4 đơn vị · b) 14 414 − 14 134 = 280 kW·h · c) 14 000 · d) 14 414 · e) ít hơn 143 kW·h
@@ -435,14 +442,14 @@ f) Tổng 615 + 912 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.1
 **Đáp số:** a) 120 lít · b) 90 lít · c) 72 lít · d) 30 lít · e) 150 lít · f) 126 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.2
 **Đáp số:** a) 6 m · b) 60 chai · c) 10 800 000 đồng · d) 6 m · e) 5 250 000 đồng · f) 25 chai
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -463,14 +470,14 @@ f) Tổng 615 + 912 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.5
 **Đáp số:** a) Trang học mĩ thuật; Chi học tin học; Hùng học tiếng Anh · b) Quân học đàn; Hùng học múa; Trang học hát · c) Trang học cờ vua; Khánh học bơi; Hà học vẽ · d) Hà học tiếng Anh; Quân học mĩ thuật; Đức học tin học · e) Lan học hát; Ngọc học múa; Hà học đàn
-**Hướng giải:** BẪY — Đánh dấu đúng mà quên gạch phần còn lại. Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
+**Hướng giải:** Mỗi dòng một người, mỗi cột một khả năng. Đánh × cho điều chắc chắn sai. Dòng nào chỉ còn một ô trống thì ô ấy là ✓ — và ngay sau đó phải gạch × cho cả cột chứa ô ấy.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đặt được một ✓ thì **cả dòng và cả cột** còn lại đều thành ×. Bỏ bước gạch cột là chỗ bài bị tắc giữa chừng.
 **Lỗi thường gặp:** Đánh ✓ rồi đi tiếp luôn, không gạch × cho phần còn lại của cột. Phòng: Sau mỗi lần đặt ✓, dừng lại gạch đủ dòng và cột rồi mới đọc manh mối kế.
 **Gợi ý 3 tầng:** (1) Kẻ bảng ba dòng ba cột trước đã. — (2) Manh mối nào cho biết chắc chắn một ô là sai? — (3) Dòng nào chỉ còn một ô trống thì ô ấy chính là đáp án của dòng ấy.
 
 ### Bài V.1
 **Đáp số:** a) 240 đơn vị · b) 80 đơn vị · c) 235 đơn vị · d) 43 đơn vị · e) 35 đơn vị · f) 72 đơn vị
-**Hướng giải:** BẪY — Đại lượng nào giữ nguyên. Số bé không thay đổi, nên hãy tìm số bé trước bằng bài toán tổng – tỉ. Sau đó tính số lớn mới theo tỉ số mới, rồi lấy số lớn mới trừ số lớn cũ.
+**Hướng giải:** Số bé không thay đổi, nên hãy tìm số bé trước bằng bài toán tổng – tỉ. Sau đó tính số lớn mới theo tỉ số mới, rồi lấy số lớn mới trừ số lớn cũ.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tìm cho ra **đại lượng không đổi** rồi lấy nó làm gốc quy chiếu.
 **Lỗi thường gặp:** Lấy hiệu hai tỉ số nhân với tổng ban đầu. Phòng: Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới.
 **Gợi ý 3 tầng:** (1) Đại lượng nào không thay đổi trong bài? — (2) Tìm số bé trước bằng tổng – tỉ. — (3) Số lớn mới bằng số bé nhân tỉ số mới.

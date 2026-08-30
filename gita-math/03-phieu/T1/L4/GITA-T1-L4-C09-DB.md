@@ -460,6 +460,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài C.3
 **Đáp số:** a) xe đạp: 18 chiếc, xe ba bánh: 22 chiếc · b) xe đạp: 18 chiếc, xe ô tô: 26 chiếc · c) xe ba bánh: 14 chiếc, xe đạp: 29 chiếc · d) xe đạp: 27 chiếc, xe ba bánh: 15 chiếc · e) xe đạp: 22 chiếc, xe ba bánh: 18 chiếc

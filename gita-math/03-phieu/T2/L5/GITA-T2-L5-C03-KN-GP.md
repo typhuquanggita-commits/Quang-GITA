@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Tìm số hạng thứ n của dãy cách đều
 
-> **BẪY — Nhân với n thay vì (n − 1).**
-
 **Các bước giải**
 
 Xét ý a: Số hạng thứ 6 của dãy là số nào?
@@ -157,8 +155,6 @@ Kết quả: **77, 87, 97**.
 *Điểm chốt:* Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
 
 ### Bài A.5 — Điền số còn thiếu trong dãy
-
-> **BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Dãy cộng dài, các số cách đều**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Dãy số cách đều, dãy phân s�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tổng và trung bình cộng của dãy cách đều
+
+> **BẪY — Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều..**
 
 **Các bước giải**
 
@@ -629,17 +629,17 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | TD2 | Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi. |
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
-| C.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| C.2 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | C.3 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |
 | C.4 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |
 | C.5 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| D.2 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | D.3 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |
 | D.4 | TD4, TD1 | Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**. |
 | D.5 | TD4, TD5 | Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
-| E.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| E.2 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | E.3 | TD4 | Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc. |
 | E.4 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | E.5 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |

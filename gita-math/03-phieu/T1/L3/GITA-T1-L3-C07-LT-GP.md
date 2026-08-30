@@ -480,7 +480,7 @@ Kết quả: **Quan hệ gấp – kém, phép cộng**.
 
 ### Bài E.1 — Tìm x và tính chất của phép nhân
 
-> **BẪY — Thừa số 0.**
+> **BẪY — Áp dụng quy tắc của số trừ cho số bị trừ..**
 
 **Các bước giải**
 

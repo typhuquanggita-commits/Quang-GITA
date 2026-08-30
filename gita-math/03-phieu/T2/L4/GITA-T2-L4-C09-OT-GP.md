@@ -458,6 +458,8 @@ Kiểm tra nhanh: kết quả phải bé hơn 5 giờ ✓
 
 ### Bài IV.4 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 15 can dầu, mỗi can 5 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
@@ -481,8 +483,6 @@ Kết quả: **75 chai**.
 *Phải chắc trước khi làm bài này:* Nhân số có nhiều chữ số và bảng đơn vị đo.
 
 ### Bài IV.5 — Chuyển bớt để hai phần bằng nhau
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
@@ -666,7 +666,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD1, TD3 | Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia. |
 | V.3 | TD2, TD3 | Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**. |
 | V.4 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |
-| V.5 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.5 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 
 ---
 

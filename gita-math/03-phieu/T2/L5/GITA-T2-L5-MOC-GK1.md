@@ -267,7 +267,7 @@ f) Có phân số nào lớn hơn 1 không?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tìm số có ba chữ số thoả ba điều kiện
 
@@ -338,6 +338,7 @@ d) Ba đội trồng được tất cả 60 cây. Biết tổ Ba trồng gấp 3
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài I.3
 **Đáp số:** a) số lớn 185, số bé 151 · b) số lớn 356, số bé 270 · c) số lớn 960, số bé 848 · d) số lớn 763, số bé 439
@@ -350,12 +351,14 @@ d) Ba đội trồng được tất cả 60 cây. Biết tổ Ba trồng gấp 3
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.5
 **Đáp số:** a) 590 000 · b) 690 000 · c) 70 000 · d) 4 000
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.1
 **Đáp số:** a) B · b) 25 cm · c) 30 cm · d) 15 cm
@@ -455,7 +458,7 @@ d) Ba đội trồng được tất cả 60 cây. Biết tổ Ba trồng gấp 3
 ### Bài V.1
 **Đáp số:** a) 180, 261, 270, 342, 351, 360, 423, 432… · b) 180, 270, 342, 360, 432, 450, 504, 522… · c) 280, 352, 460, 532, 604, 640, 712, 820 · d) 291, 372, 381, 390, 453, 462, 471, 480… · e) 594, 675, 684, 693, 756, 765, 774, 783…
 **Hướng giải:** Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.
-**Nhãn tư duy:** TD1, TD3, TD4. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
+**Nhãn tư duy:** TD1, TD3, TD4, TD5. Điểm chốt: Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.
 **Lỗi thường gặp:** Thử luôn từ 100 đến 999, hết giờ mà chưa xong. Phòng: Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất.
 **Gợi ý 3 tầng:** (1) Viết cấu tạo số abc theo chữ. — (2) Trong ba điều kiện, điều kiện nào cho ít số nhất? — (3) Lọc bằng điều kiện ấy rồi mới thử hai điều kiện còn lại.
 

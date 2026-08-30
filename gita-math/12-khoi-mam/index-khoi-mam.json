@@ -27,7 +27,9 @@
    "MM-MG-01",
    "MM-MG-18",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG01-B2",
@@ -57,7 +59,9 @@
    "MM-MG-01",
    "MM-MG-18",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG01-B3",
@@ -87,7 +91,9 @@
    "MM-MG-01",
    "MM-MG-18",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG01-B4",
@@ -117,7 +123,9 @@
    "MM-MG-01",
    "MM-MG-18",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG02-B1",
@@ -147,7 +155,9 @@
    "MM-MG-01",
    "MM-MG-02",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG02-B2",
@@ -177,7 +187,9 @@
    "MM-MG-01",
    "MM-MG-15",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG02-B3",
@@ -207,7 +219,9 @@
    "MM-MG-01",
    "MM-MG-15",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG02-B4",
@@ -237,7 +251,9 @@
    "MM-MG-01",
    "MM-MG-15",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG03-B1",
@@ -267,7 +283,9 @@
    "MM-MG-19",
    "MM-MG-14",
    "MM-MG-25"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG03-B2",
@@ -297,7 +315,9 @@
    "MM-MG-10",
    "MM-MG-14",
    "MM-MG-25"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG03-B3",
@@ -327,7 +347,9 @@
    "MM-MG-19",
    "MM-MG-14",
    "MM-MG-25"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG03-B4",
@@ -357,7 +379,9 @@
    "MM-MG-19",
    "MM-MG-14",
    "MM-MG-25"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG04-B1",
@@ -387,7 +411,9 @@
    "MM-MG-17",
    "MM-MG-04",
    "MM-MG-12"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG04-B2",
@@ -417,7 +443,9 @@
    "MM-MG-17",
    "MM-MG-15",
    "MM-MG-12"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG04-B3",
@@ -447,7 +475,9 @@
    "MM-MG-17",
    "MM-MG-04",
    "MM-MG-12"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG04-B4",
@@ -477,7 +507,9 @@
    "MM-MG-17",
    "MM-MG-15",
    "MM-MG-12"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG05-B1",
@@ -506,7 +538,9 @@
    "MM-MG-17",
    "MM-MG-02",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG05-B2",
@@ -535,7 +569,9 @@
    "MM-MG-19",
    "MM-MG-13",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG05-B3",
@@ -564,7 +600,9 @@
    "MM-MG-17",
    "MM-MG-02",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG05-B4",
@@ -593,7 +631,9 @@
    "MM-MG-17",
    "MM-MG-13",
    "MM-MG-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG06-B1",
@@ -623,7 +663,9 @@
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-16"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG06-B2",
@@ -653,7 +695,9 @@
    "MM-MG-05",
    "MM-MG-18",
    "MM-MG-16"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG06-B3",
@@ -683,7 +727,9 @@
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-16"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG06-B4",
@@ -713,7 +759,9 @@
    "MM-MG-05",
    "MM-MG-18",
    "MM-MG-16"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG07-B1",
@@ -742,7 +790,9 @@
    "MM-MG-05",
    "MM-MG-18",
    "MM-MG-25"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG07-B2",
@@ -771,7 +821,9 @@
    "MM-MG-05",
    "MM-MG-20",
    "MM-MG-25"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG07-B3",
@@ -800,7 +852,9 @@
    "MM-MG-05",
    "MM-MG-20",
    "MM-MG-25"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG07-B4",
@@ -829,7 +883,9 @@
    "MM-MG-05",
    "MM-MG-18",
    "MM-MG-25"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG08-B1",
@@ -858,7 +914,9 @@
    "MM-MG-17",
    "MM-MG-13",
    "MM-MG-16"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG08-B2",
@@ -887,7 +945,9 @@
    "MM-MG-17",
    "MM-MG-13",
    "MM-MG-16"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG08-B3",
@@ -916,7 +976,9 @@
    "MM-MG-17",
    "MM-MG-13",
    "MM-MG-16"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG08-B4",
@@ -945,7 +1007,9 @@
    "MM-MG-17",
    "MM-MG-13",
    "MM-MG-16"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG09-B1",
@@ -975,7 +1039,9 @@
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-06"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG09-B2",
@@ -1005,7 +1071,9 @@
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-06"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG09-B3",
@@ -1035,7 +1103,9 @@
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-06"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG09-B4",
@@ -1065,7 +1135,9 @@
    "MM-MG-11",
    "MM-MG-20",
    "MM-MG-06"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG10-B1",
@@ -1095,7 +1167,9 @@
    "MM-MG-17",
    "MM-MG-20",
    "MM-MG-12"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG10-B2",
@@ -1125,7 +1199,9 @@
    "MM-MG-17",
    "MM-MG-20",
    "MM-MG-12"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-MG-MG10-B3",
@@ -1155,7 +1231,9 @@
    "MM-MG-17",
    "MM-MG-08",
    "MM-MG-12"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-MG-MG10-B4",
@@ -1185,7 +1263,9 @@
    "MM-MG-17",
    "MM-MG-14",
    "MM-MG-12"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L101-B1",
@@ -1215,7 +1295,9 @@
    "MM-L1-14",
    "MM-L1-07",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L101-B2",
@@ -1245,7 +1327,9 @@
    "MM-L1-14",
    "MM-L1-07",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L101-B3",
@@ -1275,7 +1359,9 @@
    "MM-L1-14",
    "MM-L1-07",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L101-B4",
@@ -1305,7 +1391,9 @@
    "MM-L1-14",
    "MM-L1-07",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L101-B5",
@@ -1335,7 +1423,9 @@
    "MM-L1-14",
    "MM-L1-07",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L102-B1",
@@ -1365,7 +1455,9 @@
    "MM-L1-02",
    "MM-L1-07",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L102-B2",
@@ -1395,7 +1487,9 @@
    "MM-L1-02",
    "MM-L1-16",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L102-B3",
@@ -1425,7 +1519,9 @@
    "MM-L1-02",
    "MM-L1-16",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L102-B4",
@@ -1455,7 +1551,9 @@
    "MM-L1-02",
    "MM-L1-07",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L102-B5",
@@ -1485,7 +1583,9 @@
    "MM-L1-02",
    "MM-L1-16",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L103-B1",
@@ -1515,7 +1615,9 @@
    "MM-L1-02",
    "MM-L1-16",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L103-B2",
@@ -1545,7 +1647,9 @@
    "MM-L1-02",
    "MM-L1-16",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L103-B3",
@@ -1575,7 +1679,9 @@
    "MM-L1-02",
    "MM-L1-16",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L103-B4",
@@ -1605,7 +1711,9 @@
    "MM-L1-02",
    "MM-L1-12",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L103-B5",
@@ -1635,7 +1743,9 @@
    "MM-L1-02",
    "MM-L1-12",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L104-B1",
@@ -1665,7 +1775,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L104-B2",
@@ -1695,7 +1807,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L104-B3",
@@ -1725,7 +1839,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L104-B4",
@@ -1755,7 +1871,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L104-B5",
@@ -1785,7 +1903,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L105-B1",
@@ -1814,7 +1934,9 @@
    "MM-L1-14",
    "MM-L1-12",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L105-B2",
@@ -1843,7 +1965,9 @@
    "MM-L1-14",
    "MM-L1-12",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L105-B3",
@@ -1872,7 +1996,9 @@
    "MM-L1-14",
    "MM-L1-12",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L105-B4",
@@ -1901,7 +2027,9 @@
    "MM-L1-14",
    "MM-L1-12",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L105-B5",
@@ -1930,7 +2058,9 @@
    "MM-L1-14",
    "MM-L1-12",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L106-B1",
@@ -1960,7 +2090,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L106-B2",
@@ -1990,7 +2122,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L106-B3",
@@ -2020,7 +2154,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L106-B4",
@@ -2050,7 +2186,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L106-B5",
@@ -2080,7 +2218,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L107-B1",
@@ -2110,7 +2250,9 @@
    "MM-L1-09",
    "MM-L1-15",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L107-B2",
@@ -2140,7 +2282,9 @@
    "MM-L1-09",
    "MM-L1-15",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L107-B3",
@@ -2170,7 +2314,9 @@
    "MM-L1-09",
    "MM-L1-15",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L107-B4",
@@ -2200,7 +2346,9 @@
    "MM-L1-09",
    "MM-L1-15",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L107-B5",
@@ -2230,7 +2378,9 @@
    "MM-L1-09",
    "MM-L1-15",
    "MM-L1-22"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L108-B1",
@@ -2259,7 +2409,9 @@
    "MM-L1-17",
    "MM-L1-03",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L108-B2",
@@ -2288,7 +2440,9 @@
    "MM-L1-17",
    "MM-L1-03",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L108-B3",
@@ -2317,7 +2471,9 @@
    "MM-L1-17",
    "MM-L1-03",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L108-B4",
@@ -2346,7 +2502,9 @@
    "MM-L1-17",
    "MM-L1-03",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L108-B5",
@@ -2375,7 +2533,9 @@
    "MM-L1-09",
    "MM-L1-03",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L109-B1",
@@ -2405,7 +2565,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L109-B2",
@@ -2435,7 +2597,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L109-B3",
@@ -2465,7 +2629,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L109-B4",
@@ -2495,7 +2661,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L109-B5",
@@ -2525,7 +2693,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L110-B1",
@@ -2554,7 +2724,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L110-B2",
@@ -2583,7 +2755,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L110-B3",
@@ -2612,7 +2786,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L110-B4",
@@ -2641,7 +2817,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L110-B5",
@@ -2670,7 +2848,9 @@
    "MM-L1-05",
    "MM-L1-15",
    "MM-L1-24"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L111-B1",
@@ -2700,7 +2880,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L111-B2",
@@ -2730,7 +2912,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L111-B3",
@@ -2760,7 +2944,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L111-B4",
@@ -2790,7 +2976,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L111-B5",
@@ -2820,7 +3008,9 @@
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L112-B1",
@@ -2849,7 +3039,9 @@
    "MM-L1-08",
    "MM-L1-06",
    "MM-L1-13"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L112-B2",
@@ -2878,7 +3070,9 @@
    "MM-L1-17",
    "MM-L1-06",
    "MM-L1-13"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L112-B3",
@@ -2907,7 +3101,9 @@
    "MM-L1-08",
    "MM-L1-06",
    "MM-L1-13"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L112-B4",
@@ -2936,7 +3132,9 @@
    "MM-L1-17",
    "MM-L1-06",
    "MM-L1-13"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L112-B5",
@@ -2965,7 +3163,9 @@
    "MM-L1-08",
    "MM-L1-06",
    "MM-L1-13"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L113-B1",
@@ -2994,7 +3194,9 @@
    "MM-L1-02",
    "MM-L1-07",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L113-B2",
@@ -3023,7 +3225,9 @@
    "MM-L1-02",
    "MM-L1-16",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L113-B3",
@@ -3052,7 +3256,9 @@
    "MM-L1-02",
    "MM-L1-16",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L113-B4",
@@ -3081,7 +3287,9 @@
    "MM-L1-02",
    "MM-L1-07",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L113-B5",
@@ -3110,7 +3318,9 @@
    "MM-L1-02",
    "MM-L1-07",
    "MM-L1-23"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L1-L114-B1",
@@ -3138,7 +3348,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-13"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L114-B2",
@@ -3166,7 +3378,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L1-L114-B3",
@@ -3194,7 +3408,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-13"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L114-B4",
@@ -3222,7 +3438,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-13"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L1-L114-B5",
@@ -3250,7 +3468,9 @@
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L201-B1",
@@ -3280,7 +3500,9 @@
    "MM-L2-25",
    "MM-L2-01",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L201-B2",
@@ -3310,7 +3532,9 @@
    "MM-L2-25",
    "MM-L2-01",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L201-B3",
@@ -3340,7 +3564,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L201-B4",
@@ -3370,7 +3596,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L201-B5",
@@ -3400,7 +3628,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L202-B1",
@@ -3430,7 +3660,9 @@
    "MM-L2-25",
    "MM-L2-01",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L202-B2",
@@ -3460,7 +3692,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L202-B3",
@@ -3490,7 +3724,9 @@
    "MM-L2-25",
    "MM-L2-01",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L202-B4",
@@ -3520,7 +3756,9 @@
    "MM-L2-25",
    "MM-L2-01",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L202-B5",
@@ -3550,7 +3788,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L203-B1",
@@ -3580,7 +3820,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L203-B2",
@@ -3610,7 +3852,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L203-B3",
@@ -3640,7 +3884,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L203-B4",
@@ -3670,7 +3916,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L203-B5",
@@ -3700,7 +3948,9 @@
    "MM-L2-01",
    "MM-L2-25",
    "MM-L2-07"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L204-B1",
@@ -3730,7 +3980,9 @@
    "MM-L2-26",
    "MM-L2-03",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L204-B2",
@@ -3760,7 +4012,9 @@
    "MM-L2-26",
    "MM-L2-03",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L204-B3",
@@ -3790,7 +4044,9 @@
    "MM-L2-26",
    "MM-L2-03",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L204-B4",
@@ -3820,7 +4076,9 @@
    "MM-L2-03",
    "MM-L2-26",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L204-B5",
@@ -3850,7 +4108,9 @@
    "MM-L2-03",
    "MM-L2-26",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L205-B1",
@@ -3881,7 +4141,9 @@
    "MM-L2-27",
    "MM-L2-08",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L205-B2",
@@ -3912,7 +4174,9 @@
    "MM-L2-27",
    "MM-L2-08",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L205-B3",
@@ -3943,7 +4207,9 @@
    "MM-L2-27",
    "MM-L2-08",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L205-B4",
@@ -3974,7 +4240,9 @@
    "MM-L2-08",
    "MM-L2-27",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L205-B5",
@@ -4005,7 +4273,9 @@
    "MM-L2-08",
    "MM-L2-27",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L206-B1",
@@ -4036,7 +4306,9 @@
    "MM-L2-08",
    "MM-L2-27",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L206-B2",
@@ -4067,7 +4339,9 @@
    "MM-L2-08",
    "MM-L2-27",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L206-B3",
@@ -4098,7 +4372,9 @@
    "MM-L2-27",
    "MM-L2-08",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L206-B4",
@@ -4129,7 +4405,9 @@
    "MM-L2-27",
    "MM-L2-08",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L206-B5",
@@ -4160,7 +4438,9 @@
    "MM-L2-27",
    "MM-L2-08",
    "MM-L2-21"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L207-B1",
@@ -4190,7 +4470,9 @@
    "MM-L2-26",
    "MM-L2-03",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L207-B2",
@@ -4220,7 +4502,9 @@
    "MM-L2-26",
    "MM-L2-03",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L207-B3",
@@ -4250,7 +4534,9 @@
    "MM-L2-03",
    "MM-L2-26",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L207-B4",
@@ -4280,7 +4566,9 @@
    "MM-L2-03",
    "MM-L2-26",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L207-B5",
@@ -4310,7 +4598,9 @@
    "MM-L2-26",
    "MM-L2-03",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L208-B1",
@@ -4340,7 +4630,9 @@
    "MM-L2-26",
    "MM-L2-01",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L208-B2",
@@ -4370,7 +4662,9 @@
    "MM-L2-01",
    "MM-L2-26",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L208-B3",
@@ -4400,7 +4694,9 @@
    "MM-L2-26",
    "MM-L2-01",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L208-B4",
@@ -4430,7 +4726,9 @@
    "MM-L2-26",
    "MM-L2-01",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L208-B5",
@@ -4460,7 +4758,9 @@
    "MM-L2-01",
    "MM-L2-26",
    "MM-L2-22"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L209-B1",
@@ -4490,7 +4790,9 @@
    "MM-L2-28",
    "MM-L2-15",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L209-B2",
@@ -4520,7 +4822,9 @@
    "MM-L2-15",
    "MM-L2-28",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L209-B3",
@@ -4550,7 +4854,9 @@
    "MM-L2-15",
    "MM-L2-28",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L209-B4",
@@ -4580,7 +4886,9 @@
    "MM-L2-28",
    "MM-L2-15",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L209-B5",
@@ -4610,7 +4918,9 @@
    "MM-L2-28",
    "MM-L2-15",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L210-B1",
@@ -4640,7 +4950,9 @@
    "MM-L2-15",
    "MM-L2-28",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L210-B2",
@@ -4670,7 +4982,9 @@
    "MM-L2-28",
    "MM-L2-15",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L210-B3",
@@ -4700,7 +5014,9 @@
    "MM-L2-15",
    "MM-L2-28",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L210-B4",
@@ -4730,7 +5046,9 @@
    "MM-L2-28",
    "MM-L2-15",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L210-B5",
@@ -4760,7 +5078,9 @@
    "MM-L2-15",
    "MM-L2-28",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L211-B1",
@@ -4791,7 +5111,9 @@
    "MM-L2-15",
    "MM-L2-29",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L211-B2",
@@ -4822,7 +5144,9 @@
    "MM-L2-15",
    "MM-L2-29",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L211-B3",
@@ -4853,7 +5177,9 @@
    "MM-L2-29",
    "MM-L2-15",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L211-B4",
@@ -4884,7 +5210,9 @@
    "MM-L2-15",
    "MM-L2-29",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L211-B5",
@@ -4915,7 +5243,9 @@
    "MM-L2-15",
    "MM-L2-29",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L212-B1",
@@ -4945,7 +5275,9 @@
    "MM-L2-15",
    "MM-L2-29",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L212-B2",
@@ -4975,7 +5307,9 @@
    "MM-L2-29",
    "MM-L2-15",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L212-B3",
@@ -5005,7 +5339,9 @@
    "MM-L2-29",
    "MM-L2-15",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L212-B4",
@@ -5035,7 +5371,9 @@
    "MM-L2-15",
    "MM-L2-29",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L212-B5",
@@ -5065,7 +5403,9 @@
    "MM-L2-15",
    "MM-L2-29",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L213-B1",
@@ -5095,7 +5435,9 @@
    "MM-L2-15",
    "MM-L2-28",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L213-B2",
@@ -5125,7 +5467,9 @@
    "MM-L2-15",
    "MM-L2-28",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L213-B3",
@@ -5155,7 +5499,9 @@
    "MM-L2-15",
    "MM-L2-28",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L213-B4",
@@ -5185,7 +5531,9 @@
    "MM-L2-28",
    "MM-L2-15",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L213-B5",
@@ -5215,7 +5563,9 @@
    "MM-L2-28",
    "MM-L2-15",
    "MM-L2-23"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L214-B1",
@@ -5246,7 +5596,9 @@
    "MM-L2-16",
    "MM-L2-30",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L214-B2",
@@ -5277,7 +5629,9 @@
    "MM-L2-05",
    "MM-L2-30",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L214-B3",
@@ -5308,7 +5662,9 @@
    "MM-L2-16",
    "MM-L2-30",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L214-B4",
@@ -5339,7 +5695,9 @@
    "MM-L2-30",
    "MM-L2-16",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L214-B5",
@@ -5370,7 +5728,9 @@
    "MM-L2-05",
    "MM-L2-16",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L215-B1",
@@ -5401,7 +5761,9 @@
    "MM-L2-30",
    "MM-L2-16",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L215-B2",
@@ -5432,7 +5794,9 @@
    "MM-L2-30",
    "MM-L2-05",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L215-B3",
@@ -5463,7 +5827,9 @@
    "MM-L2-30",
    "MM-L2-05",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L215-B4",
@@ -5494,7 +5860,9 @@
    "MM-L2-16",
    "MM-L2-05",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L215-B5",
@@ -5525,7 +5893,9 @@
    "MM-L2-16",
    "MM-L2-30",
    "MM-L2-24"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  },
  {
   "ma": "GITA-L2-L216-B1",
@@ -5555,7 +5925,9 @@
    "MM-L2-30",
    "MM-L2-15",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L216-B2",
@@ -5585,7 +5957,9 @@
    "MM-L2-30",
    "MM-L2-15",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B1",
+  "bac_ten": "Làm quen"
  },
  {
   "ma": "GITA-L2-L216-B3",
@@ -5615,7 +5989,9 @@
    "MM-L2-15",
    "MM-L2-30",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L216-B4",
@@ -5645,7 +6021,9 @@
    "MM-L2-15",
    "MM-L2-30",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B2",
+  "bac_ten": "Tự làm"
  },
  {
   "ma": "GITA-L2-L216-B5",
@@ -5675,6 +6053,8 @@
    "MM-L2-30",
    "MM-L2-15",
    "MM-L2-06"
-  ]
+  ],
+  "bac": "B3",
+  "bac_ten": "Thử thách"
  }
 ]

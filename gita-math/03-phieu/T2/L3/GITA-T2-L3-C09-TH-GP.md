@@ -430,6 +430,8 @@ Số bé nhất là 169, số lớn nhất là 970.
 
 ### Bài IV.3 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Phúc và Khánh có tất cả 104 quyển vở. Phúc có nhiều hơn Khánh 30 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -475,8 +477,6 @@ Kết quả: **70**.
 *Phải chắc trước khi làm bài này:* Dấu hiệu chia hết và phép chia có dư.
 
 ### Bài IV.5 — Bài toán trồng cây
-
-> **BẪY — Bốn trường hợp trồng cây.**
 
 **Các bước giải**
 
@@ -666,7 +666,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD4, TD6 | Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.3 | TD4, TD6 | Chia 2 vì mỗi cái bắt tay bị đếm **hai lần**. |
 | V.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

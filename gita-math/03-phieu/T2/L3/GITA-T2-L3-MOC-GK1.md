@@ -249,10 +249,10 @@ e) Trong hộp có bút thuộc 5 màu khác nhau, mỗi màu rất nhiều chi�
 Tìm x, trình bày từng bước.
 
 a) 90 − x = 41
-b) x × 2 − 73 = 34
+b) (x − 73) × 2 = 2
 c) x × 4 + 45 = 261
 d) x : 8 + 5 = 8
-e) x × 4 + 8 = 196
+e) x × 4 − 8 = 180
 
 ### Bài 4. (5 điểm) Cân đĩa và số lần cân ít nhất
 
@@ -278,7 +278,7 @@ f) Yến và Vy có tất cả 160 quyển vở. Yến có nhiều hơn Vy 54 qu
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Chữ số tận cùng của tổng và tích
 
@@ -366,6 +366,7 @@ f) Xoá chữ số hàng đơn vị của 42 thì được số nào?
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài II.1
 **Đáp số:** a) chuối: 90 000 · trứng gà: 40 000 · cá: 70 000 · b) 200 000 · c) 196 000 · d) 4 000 đồng · e) 4 000 đồng
@@ -390,6 +391,7 @@ f) Xoá chữ số hàng đơn vị của 42 thì được số nào?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.5
 **Đáp số:** a) B · b) 56 cm · c) 20 cm · d) A
@@ -442,9 +444,9 @@ f) Xoá chữ số hàng đơn vị của 42 thì được số nào?
 **Gợi ý 3 tầng:** (1) Xấu nhất mỗi màu lấy được mấy chiếc mà vẫn chưa đủ? — (2) Tổng cộng lấy được bao nhiêu chiếc? — (3) Lấy thêm một chiếc nữa thì sao?
 
 ### Bài IV.3
-**Đáp số:** a) x = 49 · b) x = 107 : 2 · c) x = 54 · d) x = 24 · e) x = 47
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 49 · b) x = 74 · c) x = 54 · d) x = 24 · e) x = 47
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -471,7 +473,7 @@ f) Xoá chữ số hàng đơn vị của 42 thì được số nào?
 
 ### Bài V.2
 **Đáp số:** a) 1 275 · b) 5 050 · c) 325 · d) 55 · e) 210
-**Hướng giải:** BẪY — Số số hạng lẻ thì còn số ở giữa. Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
+**Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ra ba cặp đầu để thấy rõ các cặp có cùng tổng.
 **Gợi ý 3 tầng:** (1) Ghép số đầu với số cuối, tổng bằng bao nhiêu? — (2) Ghép số thứ hai với số áp chót, tổng bằng bao nhiêu? — (3) Có bao nhiêu cặp như thế?
@@ -493,7 +495,7 @@ f) Xoá chữ số hàng đơn vị của 42 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 422 · b) 380 · c) 242 · d) 200 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 4
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

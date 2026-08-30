@@ -269,7 +269,7 @@ f) Chi và Phúc có tất cả 162 quyển vở. Chi có nhiều hơn Phúc 10 
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bài toán gà và chó
 
@@ -335,6 +335,7 @@ f) Xoá chữ số hàng đơn vị của 71 thì được số nào?
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.2
 **Đáp số:** a) 3 tạ 6 kg · b) 7 tạ 73 kg · c) 2 550 · d) 1 025
@@ -347,18 +348,21 @@ f) Xoá chữ số hàng đơn vị của 71 thì được số nào?
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.4
 **Đáp số:** a) 26 000 · b) > · c) 22 652 · d) 16 · e) > · f) 40 000
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài I.5
 **Đáp số:** a) 7 giờ 36 phút · b) 4 giờ 41 phút · c) 5 giờ 31 phút · d) 289 · e) 2 giờ 32 phút · f) 2 giờ 57 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài II.1
 **Đáp số:** a) 10 cách · b) 25 cách · c) 6 cách · d) 18 cách · e) 36 cách
@@ -429,7 +433,7 @@ f) Xoá chữ số hàng đơn vị của 71 thì được số nào?
 
 ### Bài IV.2
 **Đáp số:** a) 3 900 000 đồng · b) 65 chai · c) 20 m · d) 120 chai · e) 3 000 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -450,21 +454,21 @@ f) Xoá chữ số hàng đơn vị của 71 thì được số nào?
 
 ### Bài IV.5
 **Đáp số:** a) Đức: 104 quyển, Dũng: 66 quyển · b) Ngọc: 71 quyển, Yến: 41 quyển · c) Thảo: 88 quyển, Bình: 74 quyển · d) Ngọc: 101 quyển, Khánh: 73 quyển · e) Sơn: 54 quyển, Lan: 40 quyển · f) Chi: 86 quyển, Phúc: 76 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài V.1
 **Đáp số:** a) 16 con gà, 4 con chó · b) 15 con gà, 13 con chó · c) 15 con gà, 4 con chó · d) 16 con gà, 20 con chó · e) 6 con gà, 19 con chó
-**Hướng giải:** BẪY — Chia cho hiệu số chân. Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
+**Hướng giải:** Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
 **Lỗi thường gặp:** Chia số chân thiếu cho 4. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp đề không.
 **Gợi ý 3 tầng:** (1) Nếu tất cả đều là gà thì có bao nhiêu chân? — (2) Số chân đó thiếu bao nhiêu so với thực tế? — (3) Một con chó nhiều hơn một con gà mấy chân?
 
 ### Bài V.2
 **Đáp số:** a) 24 quyển · b) 48 quyển · c) 24 quyển · d) 24 quyển · e) 48 quyển · f) 36 quyển
-**Hướng giải:** BẪY — Phân số của số còn lại. Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
+**Hướng giải:** Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. Sau mỗi bước phải ghi rõ “còn lại … quyển” rồi mới sang bước sau.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu.
 **Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Viết một dòng “còn lại … quyển” sau mỗi bước.
 **Gợi ý 3 tầng:** (1) Ngày đầu phát bao nhiêu quyển? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Ngày thứ hai lấy một phần mấy của số nào?
@@ -486,7 +490,7 @@ f) Xoá chữ số hàng đơn vị của 71 thì được số nào?
 ### Bài V.5
 **Đáp số:** a) 715 · b) 644 · c) 571 · d) 500 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 7
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

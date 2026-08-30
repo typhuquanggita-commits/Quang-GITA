@@ -386,6 +386,8 @@ Kết quả: **17 giờ 20 phút**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 13 thùng dầu, mỗi thùng 25 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -655,7 +657,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | IV.3 | TD3, TD6 | Cộng **năng suất**, tuyệt đối không cộng thời gian. |
 | IV.4 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD2, TD3 | Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp. |
 | V.2 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | V.3 | TD6, TD3 | Chênh lệch chân của **một** con là 4 − 2 = 2 — đó là số chia. |

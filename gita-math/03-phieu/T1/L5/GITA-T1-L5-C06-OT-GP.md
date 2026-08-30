@@ -456,6 +456,8 @@ Kết quả: **2 lần**.
 
 ### Bài IV.4 — Tỉ số diện tích hai tam giác chung chiều cao
 
+> **BẪY — Đề không cho chiều cao; đi tìm nó là vào ngõ cụt.**
+
 **Các bước giải**
 
 Xét ý a: Tam giác ABC có diện tích 210 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 1 phần bằng nhau. Tính diện tích tam giác ABM.
@@ -475,8 +477,6 @@ Kết quả: **168 cm²**.
 *Điểm chốt:* Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
 
 ### Bài IV.5 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
-
-> **BẪY — Phần tăng gồm ba mảnh.**
 
 **Các bước giải**
 

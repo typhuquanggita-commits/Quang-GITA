@@ -228,12 +228,12 @@ h) Số 9 787 có chia hết cho 2 không? Vì sao?
 
 Tìm x, trình bày từng bước.
 
-a) x : 9 + 53 = 108
-b) 65 − x = 47
-c) x × 2 − 22 = 82
-d) x × 7 + 66 = 486
+a) x : 5 + 53 = 84
+b) (x + 47) × 5 = 325
+c) (x − 22) × 2 = 38
+d) 126 − x = 66
 e) x × 9 + 75 = 462
-f) 67 − x = 16
+f) x × 7 − 16 = 341
 
 ### Bài 2. (5 điểm) Cân đĩa và số lần cân ít nhất
 
@@ -278,7 +278,7 @@ f) Trong hộp có bút thuộc 2 màu khác nhau, mỗi màu rất nhiều chi�
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -442,9 +442,9 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2. Phòng: Ghi tổng các chữ số ra bên cạnh trước khi kết luận.
 
 ### Bài IV.1
-**Đáp số:** a) x = 495 · b) x = 18 · c) x = 52 · d) x = 60 · e) x = 43 · f) x = 51
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 155 · b) x = 18 · c) x = 41 · d) x = 60 · e) x = 43 · f) x = 51
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -471,7 +471,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) 9 chiếc · b) 16 chiếc · c) 5 chiếc · d) 3 chiếc · e) 6 chiếc · f) 5 chiếc
-**Hướng giải:** BẪY — Trường hợp xấu nhất. Xấu nhất là mỗi màu lấy được đúng (số cần − 1) chiếc mà vẫn chưa đủ. Lấy thêm một chiếc nữa thì chắc chắn có đủ số chiếc cùng màu.
+**Hướng giải:** Xấu nhất là mỗi màu lấy được đúng (số cần − 1) chiếc mà vẫn chưa đủ. Lấy thêm một chiếc nữa thì chắc chắn có đủ số chiếc cùng màu.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
 **Lỗi thường gặp:** Nhân số màu với số chiếc cần rồi lấy luôn kết quả. Phòng: Viết rõ câu “Xấu nhất là mỗi màu lấy được … chiếc mà vẫn chưa đủ”.
 **Gợi ý 3 tầng:** (1) Xấu nhất mỗi màu lấy được mấy chiếc mà vẫn chưa đủ? — (2) Tổng cộng lấy được bao nhiêu chiếc? — (3) Lấy thêm một chiếc nữa thì sao?

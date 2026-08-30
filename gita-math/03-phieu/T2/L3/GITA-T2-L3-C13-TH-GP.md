@@ -56,7 +56,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 - **Bài IV.1** — a) mẹ 27 tuổi, con 9 tuổi · b) 73 000 đồng · c) 60 chiếc · d) 33 chiếc
 - **Bài IV.2** — a) 92, hơn kém 63 đơn vị · b) 15, hơn kém 36 đơn vị · c) 23, hơn kém 9 đơn vị · d) 57, hơn kém 18 đơn vị · e) 85, hơn kém 27 đơn vị
-- **Bài IV.3** — a) x = 92 · b) x = 171 : 6 · c) x = 32 · d) x = 44
+- **Bài IV.3** — a) x = 45 · b) x = 205 · c) x = 13 · d) x = 7
 - **Bài IV.4** — a) 159 · b) 585 · c) 550 · d) 352 · e) 513
 - **Bài IV.5** — a) 195 · b) 104 · c) 74 · d) 132
 
@@ -434,19 +434,17 @@ Kết quả: **92, hơn kém 63 đơn vị**.
 
 ### Bài IV.3 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 2 + 6 = 52
+Xét **(x − 40) × 2 = 10**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 92**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 45**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -546,8 +544,6 @@ Kết quả: **3**.
 
 ### Bài V.3 — Tính nhanh tổng dãy số cách đều
 
-> **BẪY — Số số hạng lẻ.**
-
 **Các bước giải**
 
 Dãy có 10 số hạng, số đầu 1, số cuối 10.
@@ -641,7 +637,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | Tính giá trị biểu thức | Thứ tự thực hiện các phép tính | Biểu thức nhiều phép tính, có thể có ngoặc | Ngoặc → nhân chia → cộng trừ | Nhìn dấu ngoặc trước tiên, mất một giây nhưng tránh sai cả bài. | 17 · 128 · 246 · 27… |
 | IV.1 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” | Tìm đại lượng trung gian rồi trả lời câu hỏi | Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số. | mẹ 27 tuổi, con 9 tuổi · 73 000 đồng · 60 chiếc · 33 chiếc |
 | IV.2 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 92, hơn kém 63 đơn vị · 15, hơn kém 36 đơn vị · 23, hơn kém 9 đơn vị · 57, hơn kém 18 đơn vị… |
-| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 92 · x = 171 : 6 · x = 32 · x = 44 |
+| IV.3 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 45 · x = 205 · x = 13 · x = 7 |
 | IV.4 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 159 · 585 · 550 · 352… |
 | IV.5 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 195 · 104 · 74 · 132 |
 | V.1 | Tổng dãy số tự nhiên liên tiếp | Ghép cặp, tổng dãy cách đều | Dãy cộng dài có dấu … | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | 5 050 · 55 · 210 · 325 |
@@ -673,7 +669,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên. |
 | IV.1 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | IV.2 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
-| IV.3 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.3 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.4 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
 | IV.5 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
 | V.1 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |

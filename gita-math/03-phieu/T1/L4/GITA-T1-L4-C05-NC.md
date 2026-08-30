@@ -279,7 +279,7 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
 
@@ -348,24 +348,28 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.2
 **Đáp số:** a) 200 km · b) 50 km/giờ · c) 6 giờ · d) 30 km/giờ · e) 300 km · f) 6 giờ · g) 3 giờ
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.3
 **Đáp số:** a) 200 · b) 84 000 · c) 5 200 000 · d) 7 400 000 · e) 2 000 000 · f) 90
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.4
 **Đáp số:** a) 5 300 · b) 5 400 · c) 100 000 · d) 870 000 · e) 8 200
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.5
 **Đáp số:** a) 1 311 · b) 2 tấn 3 tạ 30 kg · c) 2 tấn 1 tạ 23 kg · d) 763 · e) 835 · f) 4 tấn 44 kg · g) 3 916
@@ -390,18 +394,21 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.4
 **Đáp số:** a) 38 · b) 53 · c) 4 200 · d) 190 000 · e) 5 200 · f) 4 700
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.5
 **Đáp số:** a) XXI · b) có · c) 3 tuần 4 ngày · d) 30 · e) XX · f) 31
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài III.1
 **Đáp số:** a) 5 giờ 12 phút và 5 giờ 24 phút · b) 5 giờ + (7 − 1) × 12 phút = 6 giờ 12 phút · c) (9 giờ − 5 giờ) = 240 phút; 240 : 12 + 1 = 21 chuyến · d) 12 − 8 = 4 phút · e) 60 : 12 = 5 chuyến
@@ -435,14 +442,14 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 
 ### Bài IV.1
 **Đáp số:** a) 60 lít · b) 25 lít · c) 20 lít · d) 54 lít · e) 80 lít · f) 225 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.2
 **Đáp số:** a) 80 chai · b) 4 m · c) 5 000 000 đồng · d) 35 chai · e) 5 850 000 đồng · f) 12 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -463,14 +470,14 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 
 ### Bài IV.5
 **Đáp số:** a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 4 · e) An · f) 2 lần
-**Hướng giải:** BẪY — Chia ba chứ không chia đôi. Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+**Hướng giải:** Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
 **Lỗi thường gặp:** Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. Phòng: Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng.
 **Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
 
 ### Bài V.1
 **Đáp số:** a) 5 332 kg · b) 53 tạ 32 kg · c) 1 066 kg, thừa 2 kg · d) 6 xe · e) 26 tạ 66 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-**Hướng giải:** BẪY — Làm tròn lên khi hỏi số xe ít nhất. Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
 **Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
 **Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
@@ -492,7 +499,7 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 ### Bài V.4
 **Đáp số:** a) 21 · b) 16 · c) 26 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 22 · f) 44 · g) 22
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

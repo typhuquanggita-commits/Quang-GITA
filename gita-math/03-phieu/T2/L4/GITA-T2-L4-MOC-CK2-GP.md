@@ -424,6 +424,8 @@ Kết quả: **hợp số (ví dụ ước 3)**.
 
 ### Bài IV.3 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 10
@@ -467,8 +469,6 @@ Bước 4 — tăng chiều dài thêm 10 m thì phần dôi ra là một hình 
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và quan hệ s = v × t.
 
 ### Bài IV.5 — Chuyển bớt để hai phần bằng nhau
-
-> **BẪY — Hiệu thay đổi gấp đôi số chuyển.**
 
 **Các bước giải**
 
@@ -645,7 +645,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
 | IV.1 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.2 | TD2 | Chỉ cần thử các **số nguyên tố nhỏ**, không phải thử mọi số. |
-| IV.3 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.3 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.4 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
 | IV.5 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | V.1 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |

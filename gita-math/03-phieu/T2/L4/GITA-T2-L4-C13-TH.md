@@ -268,7 +268,7 @@ d) Một cửa hàng có 16 bao gạo, mỗi bao 25 kg. Giá mỗi ki-lô-gam l�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
 
@@ -347,24 +347,28 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.4
 **Đáp số:** a) 363 · b) 6 giờ 33 phút · c) 5 giờ 59 phút · d) 9 giờ 43 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.5
 **Đáp số:** a) 5 400 · b) 240 000 · c) 7 900 · d) 420 000 · e) 710 000 · f) 8 000 · g) 770 000
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.1
 **Đáp số:** a) < · b) < · c) > · d) < · e) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.2
 **Đáp số:** a) (28 + 20) × 2 = 96 m · b) 96 − 2 = 94 m · c) 96 : 4 = 24 cọc · d) 94 × 45 000 = 4 230 000 đồng · e) 28 × 20 = 560 m²
@@ -383,12 +387,14 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài II.5
 **Đáp số:** a) 19 · b) 160 000 · c) 61 · d) 780 000 · e) 400 · f) 4 800
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài III.1
 **Đáp số:** a) 11 tạ 70 kg · b) 7 tạ · c) 5 tạ 40 kg · d) 10 tạ 50 kg
@@ -429,15 +435,15 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 
 ### Bài IV.2
 **Đáp số:** a) 90 lít · b) 160 lít · c) 50 lít · d) 125 lít · e) 275 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.3
 **Đáp số:** a) 47 · b) 105 · c) 2 280 · d) 76 · e) 152 · f) 152
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -457,14 +463,14 @@ f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới 
 
 ### Bài V.1
 **Đáp số:** a) 9 788 kg · b) 97 tạ 88 kg · c) 1 957 kg, thừa 3 kg · d) 10 xe · e) 48 tạ 94 kg · f) vì phần thóc còn lại vẫn cần thêm một xe nữa để chở
-**Hướng giải:** BẪY — Làm tròn lên khi hỏi số xe ít nhất. Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
 **Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
 **Gợi ý 3 tầng:** (1) Đổi tất cả về ki-lô-gam. — (2) Chia cho sức chở mỗi xe. — (3) Còn dư thì có cần thêm xe không?
 
 ### Bài V.2
 **Đáp số:** a) 66 · b) 20 · c) 5 · d) 10 · e) 6 · f) 66 · g) 5 ngày
-**Hướng giải:** BẪY — Chia 2 và cộng 1 — hai chỗ hay quên nhất. Sáu kỹ thuật quen: đếm cặp thì chia 2; chọn mỗi nhóm một phần tử thì nhân; “chắc chắn có” thì xét trường hợp xấu nhất rồi cộng 1; trồng cây thì tính số khoảng trước; lập số thì cố định hàng cao nhất; thứ trong tuần thì chia 7 lấy dư.
+**Hướng giải:** Sáu kỹ thuật quen: đếm cặp thì chia 2; chọn mỗi nhóm một phần tử thì nhân; “chắc chắn có” thì xét trường hợp xấu nhất rồi cộng 1; trồng cây thì tính số khoảng trước; lập số thì cố định hàng cao nhất; thứ trong tuần thì chia 7 lấy dư.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi.
 **Lỗi thường gặp:** Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. Phòng: Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng.
 **Gợi ý 3 tầng:** (1) Ý này thuộc kỹ thuật đếm nào? — (2) Có cần chia 2 vì đếm trùng không? — (3) Có phải cộng 1 ở bước cuối không?

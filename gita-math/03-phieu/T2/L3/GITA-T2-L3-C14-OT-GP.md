@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 495 · b) x = 18 · c) x = 52 · d) x = 60 · e) x = 43 · f) x = 51
+- **Bài IV.1** — a) x = 155 · b) x = 18 · c) x = 41 · d) x = 60 · e) x = 43 · f) x = 51
 - **Bài IV.2** — a) 2 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 2 · e) Đức · f) 2 lần
 - **Bài IV.3** — a) 51 · b) 42 quyển · c) 1 phần 4 · d) 1 phần 3
 - **Bài IV.4** — a) 87 · b) 60 · c) 39 · d) 50 · e) 69
@@ -398,19 +398,17 @@ Tổng các chữ số: 9 + 7 + 5 + 8 = 29.
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 9 + 53 = 108
+Xét **x : 5 + 53 = 84**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 495**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 155**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -487,8 +485,6 @@ Kết quả: **87**.
 *Điểm chốt:* Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
 
 ### Bài IV.5 — Lấy ít nhất bao nhiêu để chắc chắn
-
-> **BẪY — Trường hợp xấu nhất.**
 
 **Các bước giải**
 
@@ -631,7 +627,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Tính thời gian trong ngày | Quan hệ giờ – phút | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | 8 giờ 45 phút · 5 giờ 55 phút · 665 · 5 giờ 45 phút… |
 | III.4 | Tổng – tỉ, hiệu – tỉ mức làm quen | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ | “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng chia hết cho tổng số phần; không chia hết là đã đọc sai tỉ số. | 1 phần 2 · đội Một: 17 cây, tổ Một: 68 cây · tổ Hai: 23 cây, nhóm Hoa Phượng: 46 cây · đội Một: 17 cây, tổ Một: 85 cây… |
 | III.5 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn dấu hiệu theo số chia rồi kiểm tra | Số chia hết cho 9 thì chắc chắn chia hết cho 3; điều ngược lại không đúng. | không (tổng các chữ số bằng 29) · không (tận cùng là 1) · có (tận cùng là 5) · không (tổng các chữ số bằng 12)… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 495 · x = 18 · x = 52 · x = 60… |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 155 · x = 18 · x = 41 · x = 60… |
 | IV.2 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 2 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 2… |
 | IV.3 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 51 · 42 quyển · 1 phần 4 · 1 phần 3 |
 | IV.4 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 87 · 60 · 39 · 50… |
@@ -663,7 +659,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10. |
 | III.4 | TD3, TD2 | Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần. |
 | III.5 | TD1, TD5 | 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | IV.3 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | IV.4 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |

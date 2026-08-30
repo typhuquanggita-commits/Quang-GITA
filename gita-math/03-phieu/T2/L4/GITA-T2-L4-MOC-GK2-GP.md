@@ -386,6 +386,8 @@ Kết quả: **x = 113**.
 
 ### Bài IV.1 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 3 × 1 + 3 × 2 + 3 × 3 + … + 3 × 50
@@ -432,6 +434,8 @@ Kết quả: **12, 24, 36, 48**.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
 
+> **BẪY — Chuyển vế mà quên đổi dấu.**
+
 **Các bước giải**
 
 Xét ý a: x × 2 + 217 = x × 9
@@ -451,6 +455,8 @@ Kết quả: **x = 31**.
 *Điểm chốt:* Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 
 ### Bài IV.4 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -476,8 +482,6 @@ Kết quả: **48 m**.
 
 ### Bài IV.5 — Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
 
-> **BẪY — Phần tăng gồm ba mảnh.**
-
 **Các bước giải**
 
 Bước 1 — chu vi: (45 + 22) × 2 = 134 (m).
@@ -499,8 +503,6 @@ Bước 4 — tăng chiều dài thêm 6 m thì phần dôi ra là một hình c
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và quan hệ s = v × t.
 
 ### Bài V.1 — Tổng nhiều số có ràng buộc — dạng đề thi
-
-> **BẪY — Số lượng chẵn thì không có số giữa.**
 
 **Các bước giải**
 
@@ -545,8 +547,6 @@ Kết quả: **không còn đúng (11 bạn có thể chia đều 1 bạn mỗi 
 *Điểm chốt:* Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt.
 
 ### Bài V.3 — Tổng dãy cộng trừ xen kẽ
-
-> **BẪY — Số hạng lẻ còn thừa ở cuối dãy.**
 
 **Các bước giải**
 
@@ -665,12 +665,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
 | III.4 | TD6, TD2 | Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi. |
 | III.5 | TD3, TD2 | Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc. |
-| IV.1 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.1 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.2 | TD1, TD4 | Chữ số hàng cao nhất **khác 0**, và mọi chữ số chỉ nhận giá trị từ 0 đến 9. Hai ràng buộc này thường là chỗ loại bớt đáp số. |
 | IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.4 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
 | IV.5 | TD3, TD6 | Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD6, TD2 | Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt. |
 | V.3 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |
 | V.4 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |

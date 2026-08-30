@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đếm hình trong lưới ô vuông
 
-> **BẪY — Bỏ sót các hình ghép nhiều ô.**
-
 **Các bước giải**
 
 Xét ý a: Lưới ô vuông gồm 2 hàng và 5 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
@@ -97,8 +95,6 @@ Kết quả: **10**.
 *Điểm chốt:* Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 
 ### Bài A.2 — Góc vuông và trung điểm của đoạn thẳng
-
-> **BẪY — Nằm giữa nhưng không chia đôi.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Đề nhắc tới “trung điểm”, “nằm giữa”, “g�
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Hình phẳng, góc và chu vi” và 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chu vi hình chữ nhật
+
+> **BẪY — Cộng thêm 1 vào số cọc như bài trồng cây trên đoạn thẳng..**
 
 **Các bước giải**
 
@@ -631,7 +631,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
 | C.2 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
 | C.3 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
-| C.4 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| C.4 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | C.5 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
@@ -642,7 +642,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | E.2 | TD2, TD4 | Đường khép kín: số cọc = số khoảng. Đường thẳng có hai đầu: số cọc = số khoảng + 1. |
 | E.3 | TD1, TD3 | Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm. |
 | E.4 | TD1, TD2 | So sánh phải **cùng loại đại lượng** — bán kính với bán kính. |
-| E.5 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| E.5 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 
 ---
 

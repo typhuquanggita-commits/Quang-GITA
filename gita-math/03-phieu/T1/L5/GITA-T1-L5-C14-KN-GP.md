@@ -96,8 +96,6 @@ Kết quả: **ô (Bình; Tiếng Việt)**.
 
 ### Bài A.2 — Quy tắc nhân trong phép đếm
 
-> **BẪY — Cộng hay nhân.**
-
 **Các bước giải**
 
 Xét ý a: Có 3 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
@@ -117,8 +115,6 @@ Kết quả: **9 cách**.
 *Điểm chốt:* Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 
 ### Bài A.3 — Ôn tập bốn phép tính với số tự nhiên
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -482,6 +478,8 @@ Kết quả: **Đề ghép **hai thuộc tính** cho cùng một nhóm người*
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -501,6 +499,8 @@ Kết quả: **giới thiệu chương “Suy luận logic và toán đếm” v
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đếm bằng quy tắc cộng, nhân, bù trừ
+
+> **BẪY — Cộng thẳng hai nhóm khi chúng có phần tử chung..**
 
 **Các bước giải**
 

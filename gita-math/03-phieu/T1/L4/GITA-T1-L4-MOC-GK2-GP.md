@@ -406,6 +406,8 @@ Lặp lại cách ấy, sau 3 lần thì còn đúng một gói.
 
 ### Bài IV.2 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 9 phần 7 × 6 phần 7 + 9 phần 7 × 1 phần 6
@@ -425,6 +427,8 @@ Kết quả: **129 phần 98**.
 *Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 
 ### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
+
+> **BẪY — Chuyển vế mà quên đổi dấu.**
 
 **Các bước giải**
 
@@ -468,8 +472,6 @@ Kết quả: **59**.
 
 ### Bài IV.5 — Đếm số lập được thoả nhiều điều kiện
 
-> **BẪY — Chữ số 0 ở hàng trăm.**
-
 **Các bước giải**
 
 Xét ý a: Lập được tất cả bao nhiêu số?
@@ -489,8 +491,6 @@ Kết quả: **18**.
 *Điểm chốt:* Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 
 ### Bài V.1 — Tổng nhiều số có ràng buộc — dạng đề thi
-
-> **BẪY — Số lượng chẵn thì không có số giữa.**
 
 **Các bước giải**
 
@@ -656,7 +656,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
 | IV.4 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | IV.5 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |
 | V.3 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.4 | TD4, TD5 | Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi. |

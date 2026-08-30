@@ -266,7 +266,7 @@ g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng khối lượng — đổi đơn vị và chia phần
 
@@ -345,12 +345,14 @@ d) Tích 451 × 862 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.4
 **Đáp số:** a) 59 · b) 43 · c) 73 · d) 265
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.5
 **Đáp số:** a) 23 · b) 21 · c) 175 · d) 150 · e) 188 · f) 129
@@ -427,8 +429,8 @@ d) Tích 451 × 862 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.2
 **Đáp số:** a) 117 · b) 135 · c) 1 260 · d) 126 · e) 252 · f) 252
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -448,7 +450,7 @@ d) Tích 451 × 862 có chữ số tận cùng là chữ số nào?
 
 ### Bài IV.5
 **Đáp số:** a) 58 m · b) 190 m² · c) 11,6 giây · d) 40 m² · e) 8 m · f) 322 m² · g) 132 m²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+**Hướng giải:** Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
@@ -470,7 +472,7 @@ d) Tích 451 × 862 có chữ số tận cùng là chữ số nào?
 ### Bài V.3
 **Đáp số:** a) 101 · b) 89 · c) 113 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 22 · f) 110 · g) 88
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

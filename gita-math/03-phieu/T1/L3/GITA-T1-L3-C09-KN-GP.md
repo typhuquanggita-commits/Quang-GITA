@@ -634,12 +634,12 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
 | C.2 | TD1 | Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong. |
-| C.3 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| C.3 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | C.4 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
 | C.5 | TD1, TD3 | Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
 | D.2 | TD1 | Tổng các chữ số **không** phụ thuộc thứ tự các chữ số. |
-| D.3 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| D.3 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | D.4 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | D.5 | TD1 | Phân biệt **chữ số** với **giá trị** của chữ số. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |

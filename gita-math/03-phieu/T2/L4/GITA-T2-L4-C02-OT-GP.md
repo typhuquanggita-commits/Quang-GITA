@@ -398,6 +398,8 @@ Kết quả: **52**.
 
 ### Bài IV.2 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 50
@@ -441,6 +443,8 @@ Lặp lại cách ấy, sau 2 lần thì còn đúng một gói.
 *Phải chắc trước khi làm bài này:* Phép chia và thói quen lập luận theo trường hợp xấu nhất.
 
 ### Bài IV.4 — Lọc số hạng theo điều kiện chia hết
+
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
 
 **Các bước giải**
 
@@ -636,10 +640,10 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
 | III.5 | TD2, TD4 | Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau. |
 | IV.1 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
-| IV.2 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.2 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.3 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
-| IV.4 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.4 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
 | V.2 | TD2, TD3 | Đổi về cùng một đơn vị (phút) trước khi tính, đừng tính lẫn giờ và phút. |
 | V.3 | TD4, TD5 | Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp. |

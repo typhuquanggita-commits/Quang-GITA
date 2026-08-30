@@ -500,8 +500,6 @@ Kết quả: **có**.
 
 ### Bài E.2 — Tìm chữ số để số chia hết cho một số cho trước
 
-> **BẪY — Chữ số hàng cao nhất không được là 0.**
-
 **Các bước giải**
 
 Xét ý a: Tìm tất cả chữ số thay cho dấu * để số 16*0 chia hết cho 3.

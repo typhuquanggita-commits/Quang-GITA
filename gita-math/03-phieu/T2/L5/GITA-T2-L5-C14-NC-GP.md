@@ -406,6 +406,8 @@ Lượng sơn: 116 : 4 = 29 lít. Sơn bán theo lít nên phải **làm tròn l
 
 ### Bài IV.2 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 20 thùng nước, mỗi thùng 24 lít. Cửa hàng đã bán 10 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -471,8 +473,6 @@ Khoảng cách thật tính bằng xăng-ti-mét: 7 × 100 000 = 700 000 (cm).
 *Phải chắc trước khi làm bài này:* Bảng đơn vị đo độ dài và phép nhân chia với số tròn.
 
 ### Bài IV.5 — Quãng đường – vận tốc – thời gian
-
-> **BẪY — Đơn vị thời gian.**
 
 **Các bước giải**
 

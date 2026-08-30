@@ -268,10 +268,10 @@ e) Có 52 quyển vở, đã dùng 1 phần 2 số vở. Còn lại bao nhiêu q
 
 Tìm x, trình bày từng bước.
 
-a) 64 − x = 33
-b) x : 4 + 35 = 75
-c) x × 4 − 69 = 60
-d) x × 6 + 83 = 221
+a) 60 − x = 23
+b) (x + 24) × 5 = 380
+c) x : 5 + 74 = 109
+d) x × 6 − 83 = 55
 
 ### Bài 5. (5 điểm) Đếm số thoả điều kiện trong một khoảng
 
@@ -287,7 +287,7 @@ g) Có bao nhiêu số chẵn từ 16 đến 205?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đại lượng bất biến: tính chẵn lẻ của tổng
 
@@ -354,30 +354,35 @@ g) Tổng 676 + 55 có chữ số tận cùng là chữ số nào?
 **Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài I.2
 **Đáp số:** a) > · b) 5 · c) 38 000 · d) 2 628 · e) 16 · f) > · g) 18 851
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài I.3
 **Đáp số:** a) 55 · b) 153 · c) 22 · d) 54 · e) 17
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.4
 **Đáp số:** a) 4 · b) 8 · c) 8 · d) 16 · e) 3
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài I.5
 **Đáp số:** a) 2 427 · b) 493 · c) 445 · d) 284 · e) 7 936 · f) 306
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) 30 · b) 30 · c) 210 · d) Sơn (80) · e) Yến (30) · f) 50 · g) 6 hình
@@ -461,9 +466,9 @@ g) Tổng 676 + 55 có chữ số tận cùng là chữ số nào?
 **Gợi ý 3 tầng:** (1) Số đó chia thành mấy phần bằng nhau? — (2) Mỗi phần bằng bao nhiêu? — (3) Cả số gồm mấy phần như thế?
 
 ### Bài IV.4
-**Đáp số:** a) x = 31 · b) x = 160 · c) x = 129 : 4 · d) x = 23
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 37 · b) x = 52 · c) x = 175 · d) x = 23
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -476,7 +481,7 @@ g) Tổng 676 + 55 có chữ số tận cùng là chữ số nào?
 
 ### Bài V.1
 **Đáp số:** a) 300 · b) không thay đổi · c) 300 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) chẵn · g) có
-**Hướng giải:** BẪY — Phải chứng minh, không được thử vài trường hợp. Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
+**Hướng giải:** Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
 **Nhãn tư duy:** TD6, TD2. Điểm chốt: Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
 **Lỗi thường gặp:** Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. Phòng: Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước?
 **Gợi ý 3 tầng:** (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?

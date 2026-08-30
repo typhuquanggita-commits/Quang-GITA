@@ -416,6 +416,8 @@ Kết quả: **vận tốc thực 12 km/giờ; dòng nước 3 km/giờ**.
 
 ### Bài IV.2 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 13 thùng nước, mỗi thùng 15 lít. Cửa hàng đã bán 4 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -483,8 +485,6 @@ Giá một kg phân bón: 36 000 : 2 = **18 000 đồng**.
 *Phải chắc trước khi làm bài này:* Nhân, chia số có nhiều chữ số và cách trình bày bài giải nhiều bước.
 
 ### Bài IV.5 — Đổi hết về một loại rồi giải
-
-> **BẪY — Quên đổi ngược lại.**
 
 **Các bước giải**
 
@@ -676,7 +676,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD2 | Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc. |
 | IV.4 | TD2, TD5 | Chỉ được trừ khi số lượng của loại cần khử đã bằng nhau ở hai dòng. |
 | IV.5 | TD2, TD5 | Đổi xong phải đổi ngược lại — đề hỏi cả hai giá, không chỉ một. |
-| V.1 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.1 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.2 | TD4, TD6 | Quãng đường tính từ lúc **đầu tàu** bắt đầu tới lúc **đuôi tàu** kết thúc, nên luôn phải cộng chiều dài đoàn tàu. |
 | V.3 | TD3, TD6 | Hai xe đi trong **cùng một khoảng thời gian** — đó là mấu chốt. |
 | V.4 | TD3, TD5, TD6 | Phân số của lần sau lấy trên **phần còn lại**, không lấy trên số ban đầu. Đây là bẫy chính của cả dạng bài. |

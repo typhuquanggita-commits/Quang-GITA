@@ -402,6 +402,8 @@ Kết quả: **36**.
 
 ### Bài IV.2 — Tổng, trung bình cộng của dãy cách đều
 
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
+
 **Các bước giải**
 
 Xét ý a: Số hạng đầu của dãy là số nào?
@@ -421,6 +423,8 @@ Kết quả: **53**.
 *Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 
 ### Bài IV.3 — Biểu thức nhiều phép tính với phân số
+
+> **BẪY — Làm phép cộng trước phép chia.**
 
 **Các bước giải**
 
@@ -442,6 +446,8 @@ Kết quả: **33 phần 10**.
 
 ### Bài IV.4 — Lọc số hạng theo điều kiện chia hết
 
+> **BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều.**
+
 **Các bước giải**
 
 Xét ý a: Dãy có bao nhiêu số hạng?
@@ -462,8 +468,6 @@ Kết quả: **179**.
 
 ### Bài IV.5 — Đếm số lập được thoả nhiều điều kiện
 
-> **BẪY — Chữ số 0 ở hàng trăm.**
-
 **Các bước giải**
 
 Xét ý a: Lập được tất cả bao nhiêu số?
@@ -483,8 +487,6 @@ Kết quả: **24**.
 *Điểm chốt:* Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 
 ### Bài V.1 — Dãy số lặp lại theo chu kì
-
-> **BẪY — Số dư 0 ứng với phần tử cuối chu kì.**
 
 **Các bước giải**
 
@@ -525,8 +527,6 @@ Kết quả: **6 phần 7**.
 *Điểm chốt:* Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau.
 
 ### Bài V.3 — Dãy phân số dạng n phần (n + 1)
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -646,9 +646,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.4 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
 | III.5 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
 | IV.1 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
-| IV.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.2 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.3 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
-| IV.4 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.4 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | IV.5 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
 | V.1 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.2 | TD4, TD6 | Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau. |

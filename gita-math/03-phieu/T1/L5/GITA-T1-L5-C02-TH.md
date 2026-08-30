@@ -275,7 +275,7 @@ e) Khoảng cách thật từ cầu Trắng đến trạm y tế là 25 km. Hỏ
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
 
@@ -339,6 +339,7 @@ d) Một người đi 2 giờ đầu với vận tốc 10 km/giờ, 3 giờ sau 
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài I.2
 **Đáp số:** a) 3 tấn 5 tạ 3 kg · b) 1 845 · c) 2 479 · d) 4 250 · e) 6 114
@@ -351,30 +352,35 @@ d) Một người đi 2 giờ đầu với vận tốc 10 km/giờ, 3 giờ sau 
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.4
 **Đáp số:** a) 5 500 · b) 4 100 · c) 590 000 · d) 59 000 · e) 2 300 000
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.5
 **Đáp số:** a) 584 · b) 7 giờ 53 phút · c) 2 giờ 57 phút · d) 6 giờ 9 phút · e) 11 giờ 5 phút · f) 5 giờ 2 phút · g) 404
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài II.1
 **Đáp số:** a) 2 100 · b) 2 800 · c) 3 000 · d) 580 000 · e) 36
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.2
 **Đáp số:** a) 4 tuần 5 ngày · b) 31 · c) có · d) XXI
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài II.3
 **Đáp số:** a) 480 cm² · b) 324 cm² · c) 686 cm² · d) 340 cm² · e) 429 cm² · f) 50 cm²
@@ -393,6 +399,7 @@ d) Một người đi 2 giờ đầu với vận tốc 10 km/giờ, 3 giờ sau 
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài III.1
 **Đáp số:** a) 16 · b) 81 000 · c) 70 000 · d) 52 · e) 87 000 · f) 76 000
@@ -426,7 +433,7 @@ d) Một người đi 2 giờ đầu với vận tốc 10 km/giờ, 3 giờ sau 
 
 ### Bài IV.1
 **Đáp số:** a) 126 lít · b) 48 lít · c) 75 lít · d) 135 lít · e) 125 lít · f) 36 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -454,7 +461,7 @@ d) Một người đi 2 giờ đầu với vận tốc 10 km/giờ, 3 giờ sau 
 
 ### Bài IV.5
 **Đáp số:** a) 16 km · b) 4 cm · c) 5 cm · d) 30 km · e) 5 cm
-**Hướng giải:** BẪY — Quên đổi đơn vị sau khi nhân. Tỉ lệ 1 : n nghĩa là 1 cm trên bản đồ ứng với n cm thật. Đi từ bản đồ ra thực tế thì **nhân** với n; đi ngược lại thì **chia**. Cả hai chiều đều phải đổi đơn vị ở bước cuối.
+**Hướng giải:** Tỉ lệ 1 : n nghĩa là 1 cm trên bản đồ ứng với n cm thật. Đi từ bản đồ ra thực tế thì **nhân** với n; đi ngược lại thì **chia**. Cả hai chiều đều phải đổi đơn vị ở bước cuối.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Nhân xong ra xăng-ti-mét, mà đề hỏi ki-lô-mét. 1 km = 100 000 cm.
 **Lỗi thường gặp:** Trả lời con số xăng-ti-mét nhưng ghi đơn vị là ki-lô-mét. Phòng: Viết đơn vị bên cạnh mọi con số trong bài giải, kể cả bước trung gian.
 **Gợi ý 3 tầng:** (1) Tỉ lệ 1 : n nghĩa là 1 cm trên bản đồ bằng bao nhiêu cm thật? — (2) Nhân xong thì con số ấy đang là đơn vị gì? — (3) Đề hỏi đơn vị gì? Đổi về đúng đơn vị ấy.

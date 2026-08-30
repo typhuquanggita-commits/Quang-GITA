@@ -504,6 +504,8 @@ Thử lại: 32 − 8 = 24 ✓
 
 ### Bài V.1 — Chữ số tận cùng của tổng và tích
 
+> **BẪY — Tính trọn phép tính thay vì chỉ xét chữ số tận cùng.**
+
 **Các bước giải**
 
 Xét ý a: Tích 34 × 824 × 7 có chữ số tận cùng là chữ số nào?
@@ -527,8 +529,6 @@ Kết quả: **2**.
 *Phải chắc trước khi làm bài này:* Bảng nhân và thói quen quan sát trước khi tính.
 
 ### Bài V.2 — Suy luận thứ tự và vị trí trong hàng
-
-> **BẪY — Nhớ đếm cả chính mình.**
 
 **Các bước giải**
 

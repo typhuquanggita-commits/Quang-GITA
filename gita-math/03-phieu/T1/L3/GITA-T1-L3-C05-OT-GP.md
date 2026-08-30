@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 22 · b) x = 274 : 7 · c) x = 108 · d) x = 38
+- **Bài IV.1** — a) x = 22 · b) x = 37 · c) x = 108 · d) x = 38
 - **Bài IV.2** — a) 42 m · b) 4 800 000 đồng · c) 120 chai · d) 10 m
 - **Bài IV.3** — a) 500 g · b) 150 g · c) 350 g · d) 200 g
 - **Bài IV.4** — a) mẹ 45 tuổi, con 9 tuổi · b) 20 000 đồng · c) 72 chiếc · d) 36 chiếc · e) mẹ 55 tuổi, con 11 tuổi · f) 85 000 đồng
@@ -95,8 +95,6 @@ Thử lại: 35 000 + 15 000 = 50 000 ✓
 *Phải chắc trước khi làm bài này:* Nhân, trừ với số tròn nghìn.
 
 ### Bài I.2 — Số nhà trên một dãy phố
-
-> **BẪY — Đếm số nhà bằng cách lấy hiệu chia khoảng cách.**
 
 **Các bước giải**
 
@@ -392,25 +390,25 @@ Vậy 6 046 chia hết cho 2.
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 8 + 75 = 251
+Xét **(x + 75) × 8 = 776**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 22**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 22**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
 *Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -623,7 +621,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Tính giá trị biểu thức | Thứ tự thực hiện các phép tính | Biểu thức nhiều phép tính, có thể có ngoặc | Ngoặc → nhân chia → cộng trừ | Nhìn dấu ngoặc trước tiên, mất một giây nhưng tránh sai cả bài. | 88 · 30 · 468 · 36… |
 | III.4 | Phủ hình, chia hình | Diện tích hình chữ nhật, hình vuông; phép chia | “Phủ kín bằng các hình vuông cạnh …”, “chia thành … phần bằng nhau” | Chia diện tích cho diện tích, kiểm tra bằng số hàng, số cột | Đếm số hàng nhân số cột nhanh hơn và tự kiểm tra được. | 72 · 72 cm² · 1 cm² · 36 cm²… |
 | III.5 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 | Câu hỏi “có chia hết cho … không” | Chọn dấu hiệu theo số chia rồi kiểm tra | Số chia hết cho 9 thì chắc chắn chia hết cho 3; điều ngược lại không đúng. | có (tận cùng là 6) · không (tổng các chữ số bằng 24) · không (tận cùng là 7) · không (tổng các chữ số bằng 16)… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 22 · x = 274 : 7 · x = 108 · x = 38 |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 22 · x = 37 · x = 108 · x = 38 |
 | IV.2 | Bài toán đại lượng nhiều bước | Nhân, trừ; đơn vị khối lượng, độ dài, dung tích | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt | Tính đại lượng trung gian rồi trả lời | Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. | 42 m · 4 800 000 đồng · 120 chai · 10 m |
 | IV.3 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 500 g · 150 g · 350 g · 200 g |
 | IV.4 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” | Tìm đại lượng trung gian rồi trả lời câu hỏi | Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số. | mẹ 45 tuổi, con 9 tuổi · 20 000 đồng · 72 chiếc · 36 chiếc… |
@@ -655,7 +653,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên. |
 | III.4 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
 | III.5 | TD1, TD5 | 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
 | IV.3 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.4 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |

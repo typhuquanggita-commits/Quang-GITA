@@ -346,12 +346,14 @@ e) 63 dam … 634 hm
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài A.2
 **Đáp số:** a) 280 · b) 80 · c) 5 000 · d) 3 200 · e) 4 000 · f) 8 800 · g) 17 000
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài A.3
 **Đáp số:** a) 20 kg · b) 3 822 · c) 6 493 · d) 2 tấn 6 tạ 68 kg
@@ -370,6 +372,7 @@ e) 63 dam … 634 hm
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài B.1
 **Đáp số:** a) Số đo thời gian, mua bán, thuế và toán thực tế · b) E — Đại lượng – Đo lường – Thời gian · c) 4 · d) ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài bài toán về số đo thời gian nâng cao
@@ -468,23 +471,25 @@ e) 63 dam … 634 hm
 
 ### Bài E.1
 **Đáp số:** a) 200 · b) 24 · c) 403 · d) 341 · e) 200 · f) 200
-**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
+**Hướng giải:** BẪY — Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn.. Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 **Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn 100 không? — (2) Đổi chỗ để hai số đó đứng cạnh nhau. — (3) Cộng cặp tròn trước, phần còn lại sau.
 
 ### Bài E.2
 **Đáp số:** a) XX · b) 2 tuần 3 ngày · c) 30 · d) không · e) 8 tuần 0 ngày · f) không · g) 31
-**Hướng giải:** BẪY — Năm tròn trăm. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
+**Hướng giải:** BẪY — Coi mọi năm chia hết cho 4 đều là năm nhuận.. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 **Gợi ý 3 tầng:** (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
 
 ### Bài E.3
 **Đáp số:** a) 3 100 · b) 6 200 · c) 900 000 · d) 90 · e) 320 000 · f) 38 · g) 190 000 · h) 55
-**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 **Gợi ý 3 tầng:** (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
 
 ### Bài E.4
@@ -496,9 +501,10 @@ e) 63 dam … 634 hm
 
 ### Bài E.5
 **Đáp số:** a) > · b) < · c) < · d) > · e) <
-**Hướng giải:** BẪY — Đơn vị khác nhau. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
+**Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 **Gợi ý 3 tầng:** (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
 
 ---

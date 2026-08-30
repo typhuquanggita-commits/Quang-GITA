@@ -272,7 +272,7 @@ d) Có 8 gói kẹo, mỗi gói 250 g. Lấy ra 2 gói. Hỏi số kẹo còn l�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Thời gian biểu một buổi học
 
@@ -346,12 +346,14 @@ f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài I.3
 **Đáp số:** a) 4 giờ 49 phút · b) 9 giờ 11 phút · c) 16 phút · d) 550 · e) 5 giờ 9 phút · f) 378
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.4
 **Đáp số:** a) chữ số 6, giá trị 60 000 · b) chữ số 8, giá trị 8 000 · c) chữ số 0, giá trị 0 · d) chữ số 4, giá trị 40 · e) chữ số 6, giá trị 6
@@ -364,6 +366,7 @@ f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 **Hướng giải:** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
 **Nhãn tư duy:** TD1. Điểm chốt: So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
 **Lỗi thường gặp:** So thẳng hai con số mà bỏ qua đơn vị. Phòng: Viết lại cả hai vế theo mi-li-lít rồi mới so.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.1
 **Đáp số:** a) 10 tờ · b) 9 000 đồng · c) 10 000 đồng · d) 15 000 đồng · e) 10 tờ
@@ -376,6 +379,7 @@ f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.3
 **Đáp số:** a) 53 000 · b) 4 500 · c) 850 · d) 64 000 · e) 24 000 · f) 330 · g) 3 000
@@ -394,6 +398,7 @@ f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài III.1
 **Đáp số:** a) 42 cây · b) 35 cây · c) 287 cây · d) 115 cây
@@ -427,7 +432,7 @@ f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 
 ### Bài IV.1
 **Đáp số:** a) 35 m · b) 4 320 000 đồng · c) 16 chai · d) 7 800 000 đồng
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.
@@ -469,7 +474,7 @@ f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 
 ### Bài V.2
 **Đáp số:** a) 4 quả · b) 7 quả · c) 7 quả · d) 5 quả · e) 8 quả · f) 3 quả
-**Hướng giải:** BẪY — Phép chia có dư. Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
+**Hướng giải:** Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
 **Lỗi thường gặp:** Làm tròn lên rồi coi như cân được. Phòng: Kiểm tra phép chia có dư hay không trước khi kết luận.
 **Gợi ý 3 tầng:** (1) Một quả cân nặng bao nhiêu? — (2) Vật nặng gấp mấy lần một quả cân? — (3) Phép chia có dư không?
@@ -484,7 +489,7 @@ f) Tăng chiều nào thì diện tích tăng nhiều hơn? Vì sao?
 ### Bài V.4
 **Đáp số:** a) 10 · b) 5 · c) 15 · d) 4 · e) 10 · f) 4
 **Hướng giải:** Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 

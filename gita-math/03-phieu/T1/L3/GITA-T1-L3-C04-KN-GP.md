@@ -116,8 +116,6 @@ Kết quả: **486**.
 
 ### Bài A.3 — Bài toán giải bằng hai phép tính
 
-> **BẪY — Đọc kĩ câu hỏi cuối.**
-
 **Các bước giải**
 
 Xét ý a: Tổ Một có 19 lá cờ. Tổ Ba có ít hơn tổ Một 7 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
@@ -161,8 +159,6 @@ Kết quả: **45**.
 *Điểm chốt:* Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 
 ### Bài A.5 — Nhiều hơn – ít hơn, gấp – kém
-
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Giải toán một bước, gấp và 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tìm trung bình cộng
+
+> **BẪY — Đếm sai số lượng số hạng nên chia nhầm..**
 
 **Các bước giải**
 
@@ -638,7 +638,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | TD1, TD3 | Bước rút về đơn vị luôn là phép **chia**, và phải làm trước. |
 | C.5 | TD2, TD3 | Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| D.2 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | D.3 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | D.4 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | D.5 | TD1, TD2 | Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài. |

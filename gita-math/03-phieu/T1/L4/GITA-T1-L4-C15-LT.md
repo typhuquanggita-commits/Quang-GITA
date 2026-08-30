@@ -353,12 +353,14 @@ e) Trung bình mỗi ngày bán được 215 kg gạo. Hỏi 5 ngày bán đư�
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài A.5
 **Đáp số:** a) 4 giờ · b) 30 km · c) 30 km/giờ · d) 6 giờ · e) 20 km/giờ · f) 200 km
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài B.1
 **Đáp số:** a) Năng suất, chuyển động và tổng ôn giải toán · b) D — Toán điển hình & Giải toán có lời văn · c) 6 · d) ở mọi bài thuộc toán điển hình & giải toán có lời văn, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài bài toán về công việc và năng suất — làm quen

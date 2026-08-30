@@ -278,7 +278,7 @@ f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy số lặp lại theo chu kì
 
@@ -349,12 +349,14 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 **Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+**Chú ý:** Nhân với n thay vì (n − 1).
 
 ### Bài I.3
 **Đáp số:** a) 38 · b) 49 · c) 22 · d) 8
 **Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+**Chú ý:** Hai số hai bên chỗ trống cách nhau hai khoảng.
 
 ### Bài I.4
 **Đáp số:** a) 108, 133, 158 · b) 22, 25, 28 · c) 50, 55, 60 · d) 38, 40, 42 · e) 17, 21, 25 · f) 64, 71, 78
@@ -367,6 +369,7 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài II.1
 **Đáp số:** a) B · b) 40 cm · c) 40 cm · d) 36 cm · e) 68 cm
@@ -437,35 +440,35 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
 ### Bài IV.2
 **Đáp số:** a) 53 · b) 140 · c) 2 895 · d) 96,5 · e) 193 · f) 193
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
 ### Bài IV.3
 **Đáp số:** a) 33 phần 10 · b) 4 phần 3 · c) 219 phần 286 · d) 49 phần 36
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
 
 ### Bài IV.4
 **Đáp số:** a) 179 · b) 713 · c) 36 · d) 0 · e) 0 · f) 63 903
-**Hướng giải:** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
-**Nhãn tư duy:** TD4, TD2. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Hướng giải:** BẪY — Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều. Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+**Nhãn tư duy:** TD4, TD2, TD5. Điểm chốt: Dãy con cũng **cách đều**, chỉ khác khoảng cách.
 **Lỗi thường gặp:** Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. Phòng: Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.
 **Gợi ý 3 tầng:** (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
 
 ### Bài IV.5
 **Đáp số:** a) 24 · b) 6 · c) 0 · d) 0 · e) 943 và 134 · f) 1 077
-**Hướng giải:** BẪY — Chữ số 0 ở hàng trăm. Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
+**Hướng giải:** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 **Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
 **Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
 
 ### Bài V.1
 **Đáp số:** a) 8 · b) 9 · c) 8 · d) 9 · e) 9 · f) 9 · g) 2 300
-**Hướng giải:** BẪY — Số dư 0 ứng với phần tử cuối chu kì. Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
+**Hướng giải:** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 **Lỗi thường gặp:** Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. Phòng: Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn.
 **Gợi ý 3 tầng:** (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
@@ -479,7 +482,7 @@ f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
 ### Bài V.3
 **Đáp số:** a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 11 phần 12 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 12
-**Hướng giải:** BẪY — Chiều của phần bù. Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
 **Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
 **Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.

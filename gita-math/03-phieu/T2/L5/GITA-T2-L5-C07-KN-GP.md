@@ -96,8 +96,6 @@ Kết quả: **5 046**.
 
 ### Bài A.2 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 1 020 510 : 30
@@ -117,8 +115,6 @@ Kết quả: **34 017**.
 *Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 
 ### Bài A.3 — Tính giá trị biểu thức
-
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
 
 **Các bước giải**
 
@@ -482,6 +478,8 @@ Kết quả: **Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp)*
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -501,6 +499,8 @@ Kết quả: **giới thiệu chương “Tính nhanh dãy phân số, khử li�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tính nhanh nhờ thừa số chung
+
+> **BẪY — Đặt ra ngoài một số chỉ có ở một tích..**
 
 **Các bước giải**
 

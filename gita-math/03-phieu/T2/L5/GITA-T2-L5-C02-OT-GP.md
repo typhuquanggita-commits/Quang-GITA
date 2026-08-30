@@ -384,6 +384,8 @@ Kết quả: **368 · 386 · 638 · 683 · 836 · 863**.
 
 ### Bài IV.1 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 5 phần 13 : 7 phần 15 + 12 phần 7
@@ -452,6 +454,8 @@ Bước 4 — tỉ lệ nam giỏi so với cả lớp: 6 : 120 × 100 = 5%.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 15 thùng nước, mỗi thùng 20 lít. Cửa hàng đã bán 3 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -471,8 +475,6 @@ Kết quả: **240 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.5 — Tiền điện tính theo bậc thang
-
-> **BẪY — Nhân cả số điện cho đơn giá bậc cuối.**
 
 **Các bước giải**
 

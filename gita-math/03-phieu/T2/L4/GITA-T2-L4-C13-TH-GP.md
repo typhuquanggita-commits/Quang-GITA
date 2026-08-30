@@ -408,6 +408,8 @@ Cả gia đình: 240 000 + 160 000 = **400 000 đồng**.
 
 ### Bài IV.2 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 12 thùng dầu, mỗi thùng 15 lít. Cửa hàng đã bán 6 thùng. Hỏi cửa hàng còn lại bao nhiêu lít dầu?
@@ -427,6 +429,8 @@ Kết quả: **90 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.3 — Tổng, trung bình cộng của dãy cách đều
+
+> **BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối.**
 
 **Các bước giải**
 
@@ -488,8 +492,6 @@ Bước 2 — số tiền: 12 000 × 270 = 3 240 000 (đồng).
 
 ### Bài V.1 — Đại lượng khối lượng — đổi đơn vị và chia phần
 
-> **BẪY — Làm tròn lên khi hỏi số xe ít nhất.**
-
 **Các bước giải**
 
 Bước 1 — đổi về ki-lô-gam: 9 tấn = 9 000 kg; 7 tạ = 700 kg.
@@ -511,8 +513,6 @@ Bước 3 — mỗi xe chở 1 tấn = 1 000 kg, cần 9 788 : 1 000 = 9 xe đ�
 *Phải chắc trước khi làm bài này:* Bảng đơn vị khối lượng và phép chia có dư.
 
 ### Bài V.2 — Trắc nghiệm nhanh — sáu kỹ thuật đếm
-
-> **BẪY — Chia 2 và cộng 1 — hai chỗ hay quên nhất.**
 
 **Các bước giải**
 
@@ -659,7 +659,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.5 | TD3, TD4 | Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá. |
 | IV.1 | TD2, TD3 | Đề thật luôn có dữ kiện thừa. Dùng nhầm nó là mất trọn bài. |
 | IV.2 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
-| IV.3 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.3 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | IV.4 | TD3, TD6 | Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một. |
 | IV.5 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
 | V.1 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |

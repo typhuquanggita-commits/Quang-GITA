@@ -116,8 +116,6 @@ Kết quả: **số lớn 675, số bé 391**.
 
 ### Bài A.3 — Quãng đường – vận tốc – thời gian
 
-> **BẪY — Đơn vị thời gian.**
-
 **Các bước giải**
 
 Mỗi giờ đi được 50 km, đi trong 3 giờ.
@@ -155,8 +153,6 @@ Kết quả: **78**.
 *Điểm chốt:* Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 
 ### Bài A.5 — Nhiều hơn – ít hơn, gấp – kém
-
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
 
 **Các bước giải**
 
@@ -478,6 +474,8 @@ Kết quả: **Có kí hiệu tỉ lệ dạng 1 : n**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -497,6 +495,8 @@ Kết quả: **giới thiệu chương “Tổng – hiệu, tổng – tỉ, hi
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Ba dạng bài trung bình cộng
+
+> **BẪY — Đi tìm ngay số còn thiếu mà chưa tính tổng..**
 
 **Các bước giải**
 

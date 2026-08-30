@@ -378,6 +378,8 @@ Kết quả: **>**.
 
 ### Bài IV.1 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 25
@@ -487,8 +489,6 @@ Kết quả: **x = 32**.
 *Điểm chốt:* Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 
 ### Bài V.1 — Bán hai lần theo phân số, tìm số ban đầu
-
-> **BẪY — Lấy phân số trên số ban đầu thay vì trên phần còn lại.**
 
 **Các bước giải**
 
@@ -649,7 +649,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD5, TD3 | Nhìn xem **tổng các tử số** có bằng mẫu số chung không. |
 | III.4 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
 | III.5 | TD5, TD2 | Che phần **giống nhau** đi, chỉ so phần khác nhau. |
-| IV.1 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.1 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.2 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
 | IV.3 | TD5, TD3 | Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên. |
 | IV.4 | TD2, TD5 | Chỉ được trừ khi số lượng của loại cần khử đã bằng nhau ở hai dòng. |

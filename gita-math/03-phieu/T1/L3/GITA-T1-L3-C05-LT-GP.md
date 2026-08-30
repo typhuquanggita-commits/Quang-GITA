@@ -554,8 +554,6 @@ Kết quả: **5 tờ**.
 
 ### Bài E.4 — Chu vi và diện tích hình chữ nhật, hình vuông
 
-> **BẪY — Đơn vị diện tích.**
-
 **Các bước giải**
 
 Xét ý a: Hình chữ nhật dài 5 cm, rộng 3 cm. Tính diện tích.

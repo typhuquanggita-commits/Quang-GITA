@@ -249,10 +249,10 @@ e) Số có hai chữ số 58; viết hai chữ số theo thứ tự ngược l�
 
 Tìm x, trình bày từng bước.
 
-a) x : 2 + 6 = 52
-b) x × 6 − 81 = 90
-c) 58 − x = 26
-d) x × 9 + 52 = 448
+a) (x − 40) × 2 = 10
+b) x : 5 + 17 = 58
+c) (x + 65) × 9 = 702
+d) x × 7 − 21 = 28
 
 ### Bài 4. (5 điểm) Tính nhanh bằng cách tách số
 
@@ -275,7 +275,7 @@ d) Biết 1 phần 6 của một số là 22. Tìm số đó.
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Tính nhanh tổng các số tự nhiên liên tiếp
 
@@ -342,12 +342,14 @@ g) Số bạn đứng trước cộng số bạn đứng sau cộng chính Ngọ
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.2
 **Đáp số:** a) 3 205 · b) 201 · c) 642 · d) 622 · e) 1 668 · f) 683
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.3
 **Đáp số:** a) 631 · b) 1 655 · c) 801 · d) 776 · e) 24 · f) 131
@@ -384,12 +386,14 @@ g) Số bạn đứng trước cộng số bạn đứng sau cộng chính Ngọ
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.4
 **Đáp số:** a) 1 156 cm² · b) 116 cm · c) 40 cm · d) 520 cm² · e) 198 cm² · f) 841 cm² · g) 130 cm
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài II.5
 **Đáp số:** a) 11 · b) (41 − 5) : 2 + 1 = 19 nhà · c) 5 + (12 − 1) × 2 = 27 · d) (9 − 5) : 2 + 1 = 3 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
@@ -442,9 +446,9 @@ g) Số bạn đứng trước cộng số bạn đứng sau cộng chính Ngọ
 **Gợi ý 3 tầng:** (1) Viết số cũ thành chục × 10 + đơn vị. — (2) Viết số mới cũng như vậy. — (3) Trừ hai biểu thức xem còn lại gì.
 
 ### Bài IV.3
-**Đáp số:** a) x = 92 · b) x = 171 : 6 · c) x = 32 · d) x = 44
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 45 · b) x = 205 · c) x = 13 · d) x = 7
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -478,7 +482,7 @@ g) Số bạn đứng trước cộng số bạn đứng sau cộng chính Ngọ
 
 ### Bài V.3
 **Đáp số:** a) 55 · b) 650 · c) 2 550 · d) 1 050 · e) 275
-**Hướng giải:** BẪY — Số số hạng lẻ. Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Số số hạng lẻ thì còn dư số ở giữa.
+**Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Số số hạng lẻ thì còn dư số ở giữa.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Mọi cặp đầu – cuối đều có **cùng một tổng**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ba cặp đầu để thấy rõ chúng bằng nhau.
 **Gợi ý 3 tầng:** (1) Số đầu cộng số cuối bằng bao nhiêu? — (2) Có bao nhiêu cặp như thế? — (3) Nhân tổng một cặp với số cặp.

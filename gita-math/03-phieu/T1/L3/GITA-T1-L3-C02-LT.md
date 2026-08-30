@@ -466,9 +466,10 @@ h) 22 × 1 × 0 = …
 
 ### Bài E.1
 **Đáp số:** a) 60 dư 4 · b) 290 dư 4 · c) 210 dư 1 · d) 298 dư 6 · e) 84 dư 2 · f) 322 dư 1 · g) 92 dư 2
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 **Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
 
 ### Bài E.2
@@ -494,9 +495,10 @@ h) 22 × 1 × 0 = …
 
 ### Bài E.5
 **Đáp số:** a) x = 275 · b) x = 68 · c) 9 · d) 0 · e) 5 · f) x = 118 · g) x = 250 · h) 0
-**Hướng giải:** BẪY — Thừa số 0. Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
+**Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 **Gợi ý 3 tầng:** (1) x đóng vai trò gì trong phép tính? — (2) Viết quy tắc tương ứng ra nháp. — (3) Thay x tìm được vào đề để thử lại.
 
 ---

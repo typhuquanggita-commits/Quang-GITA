@@ -360,18 +360,21 @@ e) Hai lớp 4C và 3B có tất cả 128 quyển sách. Lớp 4C có nhiều h�
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài A.2
 **Đáp số:** a) 992 · b) 905 · c) 2 976 · d) 2 595 · e) 1 652
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài A.3
 **Đáp số:** a) 1 giờ 59 phút · b) 5 giờ 50 phút · c) 3 giờ 53 phút · d) 516 · e) 5 giờ 9 phút · f) 6 giờ 20 phút · g) 378
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài A.4
 **Đáp số:** a) 4 · b) 2 · c) 3 · d) 3 · e) 3 000 + 300 + 70 + 2 · f) 15 · g) 3 373
@@ -384,6 +387,7 @@ e) Hai lớp 4C và 3B có tất cả 128 quyển sách. Lớp 4C có nhiều h�
 **Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Chú ý:** Chia chứ không nhân.
 
 ### Bài B.1
 **Đáp số:** a) Một phần mấy, tỉ số và thống kê · b) H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · c) 7 · d) ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài một phần mấy của một số — nhận biết và tìm
@@ -489,7 +493,7 @@ e) Hai lớp 4C và 3B có tất cả 128 quyển sách. Lớp 4C có nhiều h�
 
 ### Bài E.2
 **Đáp số:** a) 58 · b) Đức (23 bông) · c) An (3 bông) · d) 20 · e) 17
-**Hướng giải:** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
+**Hướng giải:** BẪY — Đọc lệch cột nên gán nhầm số cho bạn khác.. Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
 **Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
 **Gợi ý 3 tầng:** (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất, bé nhất.
@@ -503,9 +507,10 @@ e) Hai lớp 4C và 3B có tất cả 128 quyển sách. Lớp 4C có nhiều h�
 
 ### Bài E.4
 **Đáp số:** a) 930 · b) 601 dư 1 · c) 464 · d) 5 268 · e) 153 dư 2 · f) 844
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
+**Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 **Gợi ý 3 tầng:** (1) Đặt tính thẳng hàng đơn vị. — (2) Nhân hoặc chia từ trái sang phải với phép chia. — (3) Thử lại bằng phép tính ngược.
 
 ### Bài E.5

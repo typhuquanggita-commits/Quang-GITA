@@ -61,7 +61,7 @@ def f_m1_01(rng, lop):
         pt_phuong_phap="Chọn đúng công thức, ghi đúng đơn vị",
         pt_nhanh="Hình vuông là hình chữ nhật có dài bằng rộng — chỉ cần nhớ một bộ công thức.",
         tuong_tu=("Hình chữ nhật dài 8 cm, rộng 5 cm. Tính diện tích.", "40 cm²"),
-        bay="Đơn vị của diện tích",
+        chu_y="Đơn vị của diện tích",
     )
 
 
@@ -99,7 +99,7 @@ def f_m1_02(rng, lop):
         pt_phuong_phap="Đếm theo đường kẻ hoặc theo cỡ hình",
         pt_nhanh="Số cách chọn 2 trong k đường kẻ là k × (k − 1) : 2.",
         tuong_tu=("Lưới 2 hàng 2 cột có bao nhiêu hình vuông?", "5"),
-        bay="Bỏ sót các hình ghép nhiều ô",
+        chu_y="Bỏ sót các hình ghép nhiều ô",
     )
 
 
@@ -139,7 +139,7 @@ def f_m1_03(rng, lop):
         pt_nhanh="Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên.",
         tuong_tu=("Hình chữ nhật chu vi 30 cm, dài 10 cm. Chiều rộng bằng bao nhiêu?",
                   "5 cm"),
-        bay="Quên chia đôi chu vi",
+        chu_y="Quên chia đôi chu vi",
     )
 
 
@@ -473,6 +473,7 @@ def f_m4_02(rng, lop):
                    "Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích "
                    "tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.",
         td=["TD6", "TD3"],
+        bay="Đề không cho chiều cao; đi tìm nó là vào ngõ cụt",
         diem_chot="Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều "
                   "cao là bao nhiêu.",
         loi="Đi tìm chiều cao cụ thể trong khi đề không cho.",

@@ -269,7 +269,7 @@ d) Vòi thứ nhất chảy một mình đầy bể trong 8 giờ, vòi thứ ha
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bài toán giả thiết tạm — gà và chó
 
@@ -338,12 +338,14 @@ g) Hiệu hai số đó bằng bao nhiêu?
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.3
 **Đáp số:** a) 80 km · b) 3 giờ · c) 36 km/giờ · d) 30 km/giờ · e) 2 giờ · f) 150 km
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.4
 **Đáp số:** a) 168 · b) 28 · c) 324 · d) 424 · e) 270 · f) 126
@@ -433,7 +435,7 @@ g) Hiệu hai số đó bằng bao nhiêu?
 
 ### Bài IV.3
 **Đáp số:** a) x = 52 · b) x = 55 · c) x = 68 · d) x = 80 · e) x = 34
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
@@ -447,7 +449,7 @@ g) Hiệu hai số đó bằng bao nhiêu?
 
 ### Bài IV.5
 **Đáp số:** a) 24 phần 7 giờ · b) 1 giờ 20 phút · c) 4 giờ 48 phút · d) 40 phần 7 giờ
-**Hướng giải:** BẪY — Cộng thời gian thay vì cộng năng suất. Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
+**Hướng giải:** Không cộng thời gian, mà cộng **năng suất một giờ**. Người xong trong a giờ thì mỗi giờ làm được 1 phần a công việc. Thời gian làm chung bằng 1 chia cho tổng năng suất.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Cộng **năng suất**, tuyệt đối không cộng thời gian.
 **Lỗi thường gặp:** Cộng hai khoảng thời gian rồi chia đôi. Phòng: Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước.
 **Gợi ý 3 tầng:** (1) Mỗi giờ vòi thứ nhất chảy được mấy phần bể? — (2) Mỗi giờ cả hai vòi chảy được mấy phần bể? — (3) Lấy 1 chia cho phần chảy được trong một giờ.
@@ -483,7 +485,7 @@ g) Hiệu hai số đó bằng bao nhiêu?
 ### Bài V.5
 **Đáp số:** a) 45 · b) 40 · c) 50 · d) vì ba số cách đều nên số ở giữa là trung bình cộng · e) 46 · f) 69 · g) 23
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Ba số này có cách đều nhau không? — (2) Với ba số cách đều, số nào bằng trung bình cộng? — (3) Tìm số giữa trước rồi lùi và tiến ra hai số kia.
 

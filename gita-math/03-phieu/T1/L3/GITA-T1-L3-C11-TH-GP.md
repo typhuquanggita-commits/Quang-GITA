@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 32 · b) 176 · c) 118 · d) 142 · e) 44 · f) 189 · g) 94
 - **Bài IV.2** — a) 85, hơn kém 27 đơn vị · b) 91, hơn kém 72 đơn vị · c) 59, hơn kém 36 đơn vị · d) 52, hơn kém 27 đơn vị · e) 72, hơn kém 45 đơn vị
 - **Bài IV.3** — a) 54 · b) 88 · c) 57 · d) 64 · e) 180 · f) 100
-- **Bài IV.4** — a) x = 47 · b) x = 46 · c) x = 189 · d) x = 193 : 2
+- **Bài IV.4** — a) x = 38 · b) x = 21 · c) x = 58 · d) x = 52
 - **Bài IV.5** — a) 17 · b) 9 · c) 18 · d) 9 · e) 8 · f) 20
 
 **Phần V**
@@ -466,27 +466,23 @@ Kết quả: **54**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 5 + 7 = 242
+Xét **x × 2 + 29 = 105**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 47**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 38**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
 *Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
 ### Bài IV.5 — Bài toán trồng cây
-
-> **BẪY — Bốn trường hợp trồng cây.**
 
 **Các bước giải**
 
@@ -642,7 +638,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 32 · 176 · 118 · 142… |
 | IV.2 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 85, hơn kém 27 đơn vị · 91, hơn kém 72 đơn vị · 59, hơn kém 36 đơn vị · 52, hơn kém 27 đơn vị… |
 | IV.3 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 54 · 88 · 57 · 64… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 47 · x = 46 · x = 189 · x = 193 : 2 |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 38 · x = 21 · x = 58 · x = 52 |
 | IV.5 | Bài toán trồng cây | Quan hệ số cây – số khoảng | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | 17 · 9 · 18 · 9… |
 | V.1 | Tổng dãy số tự nhiên liên tiếp | Ghép cặp, tổng dãy cách đều | Dãy cộng dài có dấu … | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | 210 · 55 · 1 275 · 325… |
 | V.2 | Đếm hình bằng quy tắc chọn hai điểm | Đếm cặp | Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc là xong. | 10 · 5 · 15 · 5… |
@@ -674,13 +670,13 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | IV.2 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.3 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
 | V.1 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
-| V.2 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.2 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.3 | TD4, TD6 | Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.4 | TD4, TD6 | Viết **dãy hiệu** xuống dưới dãy gốc là bước bắt buộc. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

@@ -96,8 +96,6 @@ Kết quả: **số lớn 61, số bé 49**.
 
 ### Bài A.2 — Nhiều hơn – ít hơn, gấp – kém
 
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
-
 **Các bước giải**
 
 Xét ý a: Ngọc có 25 quyển vở, Yến có số vở gấp 3 lần Ngọc. Yến có bao nhiêu quyển vở?
@@ -157,8 +155,6 @@ Kết quả: **528**.
 *Điểm chốt:* Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 
 ### Bài A.5 — Bài toán giải bằng hai phép tính
-
-> **BẪY — Đọc kĩ câu hỏi cuối.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Từ khoá “trung bình cộng”, “trung bình mỗi …”*
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Trung bình cộng, mua bán và giả
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Bài toán giải bằng hai phép tính
+
+> **BẪY — Dừng ở bước một, trả lời số lá cờ của một tổ..**
 
 **Các bước giải**
 

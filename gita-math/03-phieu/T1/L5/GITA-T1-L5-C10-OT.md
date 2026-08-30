@@ -269,7 +269,7 @@ e) Mua 6 quyển vở và 12 quyển sách hết 324 000 đồng. Biết giá m�
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -470,7 +470,7 @@ f) Cột 6 — Kết quả?
 ### Bài V.1
 **Đáp số:** a) Tổng nhiều số có ràng buộc; tổng – tỉ · b) Trung bình cộng của dãy cách đều; tổng – tỉ · c) Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số · d) Tìm số giữa trước; sau đó chia theo tỉ lệ · e) Tổng ba số cách đều luôn chia hết cho 3. · f) 70 · 63 · 77 · vì ba số cách đều nên số ở giữa là trung bình cộng…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 

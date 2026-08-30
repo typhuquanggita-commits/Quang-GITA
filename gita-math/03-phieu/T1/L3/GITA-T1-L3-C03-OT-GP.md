@@ -424,6 +424,8 @@ Kết quả: **56, hơn kém 9 đơn vị**.
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 30 × 19 = 570 (kg).
@@ -487,8 +489,6 @@ Thử lại: (19 + 10) × 2 = 58 ✓
 *Phải chắc trước khi làm bài này:* Công thức chu vi, diện tích hình chữ nhật và hình vuông.
 
 ### Bài IV.5 — Ghép hình vuông thành hình chữ nhật
-
-> **BẪY — Chu vi không cộng như diện tích.**
 
 **Các bước giải**
 
@@ -671,7 +671,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | TD1, TD3 | Chu vi ghi **cm**, diện tích ghi **cm²**. |
 | V.2 | TD3, TD4 | Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên. |
 | V.3 | TD3, TD4 | Phép chia diện tích chỉ đúng khi mảnh **xếp khít**. |
-| V.4 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.4 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.5 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
 
 ---

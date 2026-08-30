@@ -526,8 +526,6 @@ Kết quả: **31**.
 
 ### Bài E.3 — Nhân, chia với số có một chữ số
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 3 336 : 4
@@ -573,6 +571,8 @@ Số nhà thứ 10: đi từ nhà đầu tiên thì phải bước 10 − 1 = 9 
 *Phải chắc trước khi làm bài này:* Dãy số cách đều và phép chia hết.
 
 ### Bài E.5 — Điền số còn thiếu trong dãy
+
+> **BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng.**
 
 **Các bước giải**
 

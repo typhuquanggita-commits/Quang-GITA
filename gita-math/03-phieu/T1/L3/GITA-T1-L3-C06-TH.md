@@ -255,9 +255,9 @@ Tìm x, trình bày từng bước.
 
 a) x : 3 + 59 = 62
 b) x × 7 + 82 = 418
-c) 56 − x = 52
-d) x × 5 − 58 = 205
-e) x × 5 − 30 = 110
+c) x × 5 − 52 = -32
+d) (x + 58) × 5 = 495
+e) (x − 30) × 5 = 5
 f) 89 − x = 68
 
 ### Bài 3. (5 điểm) Tìm số khi biết một phần mấy của nó
@@ -296,7 +296,7 @@ f) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy số lặp lại theo chu kì
 
@@ -366,6 +366,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.3
 **Đáp số:** a) x = 31 · b) x = 616 · c) x = 44 · d) x = 88 · e) x = 35 · f) x = 228 · g) x = 92
@@ -378,12 +379,14 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.5
 **Đáp số:** a) 394 · b) 3 768 · c) 3 000 · d) 1 022 · e) 3 860 · f) 1 056 · g) 960
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.1
 **Đáp số:** a) (12 + 8) × 2 = 40 m · b) 40 − 2 = 38 m · c) 40 : 4 = 10 cọc · d) 38 × 30 000 = 1 140 000 đồng · e) 12 × 8 = 96 m²
@@ -402,6 +405,7 @@ d) 1 + 2 + 3 + … + 50
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài II.4
 **Đáp số:** a) 393 · b) 213 · c) 200 · d) 91 · e) 200 · f) 200 · g) 142
@@ -453,9 +457,9 @@ d) 1 + 2 + 3 + … + 50
 **Gợi ý 3 tầng:** (1) Chiều dài hình mới bằng bao nhiêu? — (2) Chiều rộng hình mới bằng bao nhiêu? — (3) Áp công thức chu vi và diện tích hình chữ nhật.
 
 ### Bài IV.2
-**Đáp số:** a) x = 9 · b) x = 48 · c) x = 4 · d) x = 263 : 5 · e) x = 28 · f) x = 21
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 9 · b) x = 48 · c) x = 4 · d) x = 41 · e) x = 31 · f) x = 21
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -482,7 +486,7 @@ d) 1 + 2 + 3 + … + 50
 
 ### Bài V.1
 **Đáp số:** a) 8 · b) 8 · c) 7 · d) 2 · e) 7 · f) 510
-**Hướng giải:** BẪY — Số dư 0. Chia vị trí cần tìm cho độ dài chu kì. Số dư cho biết vị trí trong chu kì; nếu chia hết (dư 0) thì đó là phần tử **cuối** chu kì.
+**Hướng giải:** Chia vị trí cần tìm cho độ dài chu kì. Số dư cho biết vị trí trong chu kì; nếu chia hết (dư 0) thì đó là phần tử **cuối** chu kì.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 **Lỗi thường gặp:** Dư 0 mà lấy phần tử đầu tiên. Phòng: Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn.
 **Gợi ý 3 tầng:** (1) Chu kì dài mấy số hạng? — (2) Chia vị trí cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì.
@@ -490,7 +494,7 @@ d) 1 + 2 + 3 + … + 50
 ### Bài V.2
 **Đáp số:** a) 78 · b) 104 · c) 52 · d) 39 · e) 39 · f) 52
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

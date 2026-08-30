@@ -378,6 +378,8 @@ Kết quả: **11 tạ 50 kg**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 7 thùng sữa, mỗi thùng 12 lít. Cửa hàng đã bán 2 thùng. Hỏi cửa hàng còn lại bao nhiêu lít sữa?
@@ -397,6 +399,8 @@ Kết quả: **60 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -468,8 +472,6 @@ Kết quả: **0**.
 
 ### Bài IV.5 — Cân đĩa và số lần cân ít nhất
 
-> **BẪY — Chia ba chứ không chia đôi.**
-
 **Các bước giải**
 
 Cân đĩa cho **ba** kết quả, nên mỗi lần cân chia được số gói thành ba phần và loại ngay hai phần.
@@ -491,8 +493,6 @@ Lặp lại cách ấy, sau 3 lần thì còn đúng một gói.
 *Phải chắc trước khi làm bài này:* Phép chia và thói quen lập luận theo trường hợp xấu nhất.
 
 ### Bài V.1 — Đại lượng khối lượng — đổi đơn vị và chia phần
-
-> **BẪY — Làm tròn lên khi hỏi số xe ít nhất.**
 
 **Các bước giải**
 
@@ -667,7 +667,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | TD3, TD6 | Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**. |
 | V.2 | TD4, TD5 | Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi. |
 | V.3 | TD6, TD3 | Đại lượng bất biến ở đây là **tổng số ngày công**. |
-| V.4 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.4 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.5 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
 
 ---

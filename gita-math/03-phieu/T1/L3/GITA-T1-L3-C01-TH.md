@@ -260,11 +260,11 @@ f) Với ba bạn ấy, cần cân ít nhất mấy lần để xếp thứ tự
 
 Tìm x, trình bày từng bước.
 
-a) x : 7 + 61 = 66
-b) x × 9 + 14 = 446
-c) 31 − x = 19
-d) x × 5 − 37 = 40
-e) 137 − x = 78
+a) x : 9 + 51 = 86
+b) x × 2 + 68 = 130
+c) x × 3 − 48 = 57
+d) (x − 32) × 4 = 4
+e) (x + 37) × 3 = 276
 
 ### Bài 5. (5 điểm) Lấy ít nhất bao nhiêu để chắc chắn
 
@@ -277,7 +277,7 @@ d) Trong hộp có bút thuộc 5 màu khác nhau, mỗi màu rất nhiều chi�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm đoạn thẳng và tam giác
 
@@ -344,6 +344,7 @@ e) 5 + 10 + 15 + … + 100
 **Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.2
 **Đáp số:** a) 5 chữ số, tổng 23 · b) 5 chữ số, tổng 23 · c) 5 chữ số, tổng 31 · d) 5 chữ số, tổng 16
@@ -356,6 +357,7 @@ e) 5 + 10 + 15 + … + 100
 **Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
 **Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Chú ý:** Thiếu ngoặc mà vẫn cộng trước.
 
 ### Bài I.4
 **Đáp số:** a) 285 · b) 181 · c) 113 · d) 1 775 · e) 1 457 · f) 1 138 · g) 1 342
@@ -398,6 +400,7 @@ e) 5 + 10 + 15 + … + 100
 **Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài III.1
 **Đáp số:** a) không (tổng các chữ số bằng 20) · b) có (tận cùng là 6) · c) không (tận cùng là 1) · d) không (tổng các chữ số bằng 17) · e) có (tổng các chữ số bằng 21) · f) có (tận cùng là 6)
@@ -451,9 +454,9 @@ e) 5 + 10 + 15 + … + 100
 **Gợi ý 3 tầng:** (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
 
 ### Bài IV.4
-**Đáp số:** a) x = 35 · b) x = 48 · c) x = 12 · d) x = 77 : 5 · e) x = 59
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 315 · b) x = 31 · c) x = 35 · d) x = 33 · e) x = 55
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
@@ -467,7 +470,7 @@ e) 5 + 10 + 15 + … + 100
 ### Bài V.1
 **Đáp số:** a) 10 · b) 5 · c) 15 · d) 6 · e) 21 · f) 6
 **Hướng giải:** BẪY — Bỏ sót đoạn ghép. Mọi bài đếm ở đây quy về **chọn hai điểm**. Số cách chọn 2 trong k điểm là k × (k − 1) : 2. Chia 2 vì mỗi cặp bị đếm hai lần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Chia 2 vì mỗi cặp được đếm **hai lần**.
 **Lỗi thường gặp:** Chỉ đếm các đoạn nhỏ nhất, quên các đoạn ghép. Phòng: Đặt tên các điểm rồi liệt kê từng cặp theo thứ tự.
 **Gợi ý 3 tầng:** (1) Một đoạn thẳng được xác định bởi mấy điểm? — (2) Mỗi điểm nối được với bao nhiêu điểm còn lại? — (3) Nhân rồi chia 2.
 
@@ -480,7 +483,7 @@ e) 5 + 10 + 15 + … + 100
 
 ### Bài V.3
 **Đáp số:** a) 55 · b) 210 · c) 1 275 · d) 325 · e) 5 050
-**Hướng giải:** BẪY — Số số hạng lẻ thì còn số ở giữa. Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
+**Hướng giải:** Ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có cùng một tổng. Đếm số cặp rồi nhân. Nếu số số hạng lẻ thì còn dư số ở giữa, phải cộng thêm.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**.
 **Lỗi thường gặp:** Cộng dồn từ đầu đến cuối, rất lâu và dễ sai. Phòng: Viết ra ba cặp đầu để thấy rõ các cặp có cùng tổng.
 **Gợi ý 3 tầng:** (1) Ghép số đầu với số cuối, tổng bằng bao nhiêu? — (2) Ghép số thứ hai với số áp chót, tổng bằng bao nhiêu? — (3) Có bao nhiêu cặp như thế?

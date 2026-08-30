@@ -392,6 +392,8 @@ Kết quả: **159 · 195 · 519 · 591 · 915 · 951**.
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Dũng và Đức có tất cả 26 quyển vở. Dũng có nhiều hơn Đức 4 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -479,6 +481,8 @@ Kết quả: **3 chiếc**.
 *Điểm chốt:* Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
 
 ### Bài IV.5 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 

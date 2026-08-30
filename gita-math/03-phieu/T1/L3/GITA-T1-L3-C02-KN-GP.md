@@ -633,7 +633,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | TD2 | Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi. |
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
-| C.2 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| C.2 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | C.3 | TD1 | Tổng các chữ số **không** phụ thuộc thứ tự các chữ số. |
 | C.4 | TD1 | Phân biệt **chữ số** với **giá trị** của chữ số. |
 | C.5 | TD1 | Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong. |
@@ -643,7 +643,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.4 | TD1, TD5 | 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**. |
 | D.5 | TD1 | Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng). |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
-| E.2 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| E.2 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | E.3 | TD1, TD2 | Chỉ số công tơ là số cộng dồn, không phải lượng dùng trong tháng. |
 | E.4 | TD4, TD3 | Viết **có thứ tự** thì mới chắc chắn đủ và không lặp. |
 | E.5 | TD1 | Phân biệt **chữ số** với **giá trị** của chữ số. |

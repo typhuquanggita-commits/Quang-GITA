@@ -386,6 +386,8 @@ Kết quả: **58**.
 
 ### Bài IV.1 — Tính nhanh tổng nhiều tích có thừa số chung
 
+> **BẪY — Nhân từng tích rồi cộng dồn thay vì đặt thừa số chung.**
+
 **Các bước giải**
 
 Xét ý a: 6 × 1 + 6 × 2 + 6 × 3 + … + 6 × 10
@@ -405,6 +407,8 @@ Kết quả: **330**.
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
 ### Bài IV.2 — Bài toán đại lượng nhiều bước
+
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
 
 **Các bước giải**
 
@@ -447,6 +451,8 @@ Hiệu của phân số lớn nhất và bé nhất: 8 phần 9 − 1 phần 18 
 *Phải chắc trước khi làm bài này:* Rút gọn phân số và quy đồng mẫu số.
 
 ### Bài IV.4 — Biểu thức nhiều phép tính với phân số
+
+> **BẪY — Làm phép cộng trước phép chia.**
 
 **Các bước giải**
 
@@ -492,8 +498,6 @@ Lặp lại cách ấy, sau 2 lần thì còn đúng một gói.
 
 ### Bài V.1 — Số chính phương — làm quen theo hướng đề thi
 
-> **BẪY — Chữ số tận cùng loại được nhiều số ngay lập tức.**
-
 **Các bước giải**
 
 Số chính phương đầu tiên là 1 × 1 = 1, tiếp theo 2 × 2 = 4, 3 × 3 = 9, …
@@ -518,8 +522,6 @@ Vì thế tổng 12 số lẻ đầu tiên bằng 12 × 12 = 144.
 
 ### Bài V.2 — Dãy phân số dạng n phần (n + 1)
 
-> **BẪY — Chiều của phần bù.**
-
 **Các bước giải**
 
 Bốn phân số đầu: 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5.
@@ -543,8 +545,6 @@ Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
 *Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
 
 ### Bài V.3 — So sánh phân số bằng phần bù và phân số trung gian
-
-> **BẪY — Chiều của phần bù.**
 
 **Các bước giải**
 
@@ -663,7 +663,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD1, TD2, TD4 | Một ô của biểu đồ hiếm khi bằng 1 đơn vị — đọc chú thích trước. |
 | III.4 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
 | III.5 | TD1, TD2 | Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**. |
-| IV.1 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.1 | TD3, TD4, TD5 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
 | IV.2 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.3 | TD1, TD5 | Cùng mẫu số thì **chỉ cần so tử số**. |
 | IV.4 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
@@ -671,7 +671,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.1 | TD4, TD6 | Số chính phương **không bao giờ** tận cùng bằng 2, 3, 7, 8. |
 | V.2 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
 | V.3 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn** — dễ nhớ nhầm chiều. |
-| V.4 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.4 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.5 | TD4, TD6 | Ghép cặp từ **đầu dãy**; số số hạng lẻ thì luôn dư đúng một số hạng cuối. |
 
 ---

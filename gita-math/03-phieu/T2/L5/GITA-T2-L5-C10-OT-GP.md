@@ -657,7 +657,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD6 | Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển. |
 | IV.3 | TD2, TD5 | Vận tốc thực là vận tốc khi nước lặng — không bằng vận tốc xuôi dòng, cũng không bằng vận tốc ngược dòng. |
 | IV.4 | TD3, TD2 | Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc. |
-| IV.5 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.5 | TD4, TD3, TD5 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
 | V.1 | TD2, TD6 | Vận tốc trung bình luôn **nhỏ hơn** trung bình cộng hai vận tốc. Ra lớn hơn hoặc bằng là chắc chắn sai. |
 | V.2 | TD2, TD6 | Dịch xong dữ kiện ẩn thì bài trở lại **đúng dạng chuẩn**. |
 | V.3 | TD2, TD5, TD6 | Càng nhiều người thì càng **ít** ngày — đây là tỉ lệ nghịch, nhân chia ngược với tỉ lệ thuận. |

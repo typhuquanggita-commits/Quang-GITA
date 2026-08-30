@@ -388,6 +388,8 @@ Tổng: 16 + 22 + 20 + 6 + 22 = 86 ngày. Trung bình mỗi tháng: 86 : 5 = **1
 
 ### Bài IV.1 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 2 phần 3 : 1 phần 5 + 5 phần 3
@@ -429,6 +431,8 @@ Giá cuối cùng là **168 750 đồng**. Nếu cộng gộp hai lần giảm t
 *Phải chắc trước khi làm bài này:* Tìm a% của một số và phép nhân chia với số tròn nghìn.
 
 ### Bài IV.3 — Bài toán đại lượng nhiều bước
+
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
 
 **Các bước giải**
 
@@ -496,8 +500,6 @@ Cộng các bậc: 90 000 + 95 000 + 220 000 = **405 000 đồng**.
 
 ### Bài V.1 — Lãi suất tiết kiệm hai năm
 
-> **BẪY — Nhân lãi một kỳ cho số kỳ.**
-
 **Các bước giải**
 
 Năm thứ nhất, lãi tính trên tiền gốc: 27 000 000 : 100 × 8 = 2 160 000 (đồng).
@@ -519,8 +521,6 @@ Nếu nhân lãi một năm cho hai thì ra 31 320 000 đồng — thiếu 172 8
 *Phải chắc trước khi làm bài này:* Tìm a% của một số và phép nhân với số hàng triệu.
 
 ### Bài V.2 — Dung dịch và nồng độ phần trăm
-
-> **BẪY — Thêm muối thì cả tử và mẫu cùng tăng.**
 
 **Các bước giải**
 

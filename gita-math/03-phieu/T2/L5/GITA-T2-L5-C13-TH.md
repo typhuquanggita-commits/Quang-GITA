@@ -292,7 +292,7 @@ e) Tháng vừa rồi nhà bạn Phúc dùng hết 110 kW·h điện. Dựa vào
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Lãi suất tiết kiệm hai năm
 
@@ -361,6 +361,7 @@ f) Phân số thứ 11 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
 **Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
+**Chú ý:** Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.
 
 ### Bài I.3
 **Đáp số:** a) 9 phần 10 · b) 4 phần 9 · c) 1 phần 4 · d) 4 phần 3 · e) 7 phần 5 · f) 9 phần 7 · g) 1 phần 2
@@ -373,6 +374,7 @@ f) Phân số thứ 11 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
+**Chú ý:** Cùng tử số thì mẫu bé hơn lại lớn hơn.
 
 ### Bài I.5
 **Đáp số:** a) 4 093 402 · b) 9 336 739 · c) 9 447 970 · d) 2 964 337
@@ -385,6 +387,7 @@ f) Phân số thứ 11 còn thiếu bao nhiêu nữa thì bằng 1?
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài II.2
 **Đáp số:** a) 291 kg · b) 264 kg · c) 122 kg · d) 47 kg
@@ -442,7 +445,7 @@ f) Phân số thứ 11 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ### Bài IV.1
 **Đáp số:** a) 5 · b) 193 phần 70 · c) 920 phần 507 · d) 49 phần 20 · e) 17 phần 81 · f) 14 phần 5
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -456,7 +459,7 @@ f) Phân số thứ 11 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ### Bài IV.3
 **Đáp số:** a) 48 lít · b) 90 lít · c) 48 lít · d) 72 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -477,14 +480,14 @@ f) Phân số thứ 11 còn thiếu bao nhiêu nữa thì bằng 1?
 
 ### Bài V.1
 **Đáp số:** a) 31 492 800 đồng · b) 11 664 000 đồng · c) 52 030 000 đồng · d) 44 944 000 đồng · e) 11 236 000 đồng
-**Hướng giải:** BẪY — Nhân lãi một kỳ cho số kỳ. Lãi năm sau tính trên **cả gốc lẫn lãi** của năm trước, nên phải tính lần lượt từng năm. Nhân lãi một năm cho số năm là cách tính của lãi đơn, không đúng với gửi tiếp cả gốc lẫn lãi.
+**Hướng giải:** Lãi năm sau tính trên **cả gốc lẫn lãi** của năm trước, nên phải tính lần lượt từng năm. Nhân lãi một năm cho số năm là cách tính của lãi đơn, không đúng với gửi tiếp cả gốc lẫn lãi.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Số tiền sinh lãi ở năm thứ hai lớn hơn số tiền gốc ban đầu.
 **Lỗi thường gặp:** Lấy lãi một năm nhân với hai. Phòng: So đáp số với cách nhân đôi lãi — kết quả đúng phải **lớn hơn**.
 **Gợi ý 3 tầng:** (1) Cuối năm thứ nhất có tất cả bao nhiêu tiền? — (2) Năm thứ hai, lãi tính trên số tiền nào? — (3) Cộng lãi năm hai vào số tiền cuối năm một.
 
 ### Bài V.2
 **Đáp số:** a) 80 g · b) 120 g · c) 400 g · d) không đổi, vẫn là 80 g · e) 20% · f) 42,86%
-**Hướng giải:** BẪY — Thêm muối thì cả tử và mẫu cùng tăng. Nồng độ phần trăm bằng lượng chất tan chia khối lượng dung dịch rồi nhân 100. Đổ thêm nước thì tử số giữ nguyên, mẫu số tăng, nên nồng độ giảm. Bỏ thêm muối thì **cả tử và mẫu cùng tăng**.
+**Hướng giải:** Nồng độ phần trăm bằng lượng chất tan chia khối lượng dung dịch rồi nhân 100. Đổ thêm nước thì tử số giữ nguyên, mẫu số tăng, nên nồng độ giảm. Bỏ thêm muối thì **cả tử và mẫu cùng tăng**.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Đổ thêm nước: **lượng muối không đổi**. Bỏ thêm muối: cả hai cùng đổi.
 **Lỗi thường gặp:** Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. Phòng: Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác.
 **Gợi ý 3 tầng:** (1) Lượng muối ban đầu bằng bao nhiêu? — (2) Đổ thêm nước thì lượng muối có đổi không? — (3) Nồng độ = lượng muối chia khối lượng dung dịch rồi nhân 100.

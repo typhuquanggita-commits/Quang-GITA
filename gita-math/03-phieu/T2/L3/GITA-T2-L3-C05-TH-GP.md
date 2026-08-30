@@ -390,6 +390,8 @@ Kết quả: **569 · 596 · 659 · 695 · 956 · 965**.
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Hà và Khánh có tất cả 72 quyển vở. Hà có nhiều hơn Khánh 4 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -481,8 +483,6 @@ Kết quả: **17**.
 *Điểm chốt:* Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề.
 
 ### Bài IV.5 — Tìm số khi biết một phần mấy của nó
-
-> **BẪY — Nhân chứ không chia.**
 
 **Các bước giải**
 

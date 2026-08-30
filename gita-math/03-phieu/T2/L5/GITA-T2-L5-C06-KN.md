@@ -354,15 +354,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài A.4
 **Đáp số:** a) 4 km/giờ · b) 2 giờ · c) 90 km · d) 45 km/giờ · e) 180 km · f) 3 giờ · g) 5 giờ
-**Hướng giải:** BẪY — Đơn vị thời gian. Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
+**Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.5
 **Đáp số:** a) 11 · b) 110 · c) 51 · d) 17 · e) 282
-**Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
+**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -461,14 +463,14 @@ f) Mẹo nhanh em sẽ tặng lớp?
 
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Các dạng ẩn của toán điển hình và bài toán phần trăm nâng cao” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
 **Đáp số:** a) “Hôm nay nhóm mình nói về Chuyển động ngược chiều, cùng chiều.” · b) “Đi ngược chiều để gặp nhau”, “đuổi theo” · c) Quan hệ quãng đường – vận tốc – thời gian · d) Hai xe cách nhau 100 km đi ngược chiều, vận tốc 30 và 20 km/giờ. Sau mấy giờ gặp nhau? → 2 giờ · e) Dùng tổng vận tốc cho bài đuổi nhau. · f) Vẽ hai mũi tên: chụm vào nhau thì cộng, cùng hướng thì trừ.
-**Hướng giải:** Ngược chiều gặp nhau: mỗi giờ hai xe lại gần nhau một quãng bằng **tổng** hai vận tốc; thời gian gặp = quãng cách : tổng vận tốc. Cùng chiều đuổi nhau: mỗi giờ khoảng cách rút ngắn một quãng bằng **hiệu** hai vận tốc; thời gian đuổi kịp = quãng cách : hiệu vận tốc.
+**Hướng giải:** BẪY — Dùng tổng vận tốc cho bài đuổi nhau.. Ngược chiều gặp nhau: mỗi giờ hai xe lại gần nhau một quãng bằng **tổng** hai vận tốc; thời gian gặp = quãng cách : tổng vận tốc. Cùng chiều đuổi nhau: mỗi giờ khoảng cách rút ngắn một quãng bằng **hiệu** hai vận tốc; thời gian đuổi kịp = quãng cách : hiệu vận tốc.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu** vận tốc.
 **Lỗi thường gặp:** Dùng tổng vận tốc cho bài đuổi nhau. Phòng: Vẽ mũi tên chỉ hướng hai xe trước khi chọn công thức.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -476,7 +478,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài E.3
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tổng nhiều số có ràng buộc; tổng – tỉ.” · b) Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số · c) Trung bình cộng của dãy cách đều; tổng – tỉ · d) Ba số cách đều có tổng 60, hơn kém nhau 4. Tìm ba số. → 16, 20, 24 · e) Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. · f) Tổng ba số cách đều luôn chia hết cho 3.
 **Hướng giải:** Với một số lẻ các số cách đều, số ở giữa chính là trung bình cộng — tìm nó trước rồi suy ra hai số kia. Phần sau là bài tổng – tỉ chuẩn: tổng số phần rồi giá trị một phần.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 

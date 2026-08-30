@@ -354,6 +354,7 @@ f) Ai là người làm vỡ lọ hoa?
 **Hướng giải:** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
 **Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
+**Chú ý:** Phần chung bị đếm hai lần.
 
 ### Bài A.2
 **Đáp số:** a) ô (Quân; Tiếng Việt) · b) toàn bộ hàng Quân và toàn bộ cột Tiếng Việt · c) ô (Thảo; Mĩ thuật) · d) Âm nhạc · e) Mĩ thuật · f) phương pháp lập bảng và loại trừ
@@ -372,6 +373,7 @@ f) Ai là người làm vỡ lọ hoa?
 **Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 **Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+**Chú ý:** Cộng hay nhân.
 
 ### Bài A.5
 **Đáp số:** a) 143 364 · b) 148 445 · c) 134 852 · d) 67 319 · e) 134 813 · f) 34 918 · g) 160 599 · h) 58 088

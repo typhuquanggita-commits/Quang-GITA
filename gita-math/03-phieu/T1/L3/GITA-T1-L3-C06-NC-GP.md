@@ -58,7 +58,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.2** — a) 24, hơn kém 18 đơn vị · b) 22, hơn kém 0 đơn vị · c) 19, hơn kém 72 đơn vị · d) 95, hơn kém 36 đơn vị · e) 57, hơn kém 18 đơn vị
 - **Bài IV.3** — a) hình chữ nhật · b) cạnh 30 cm, diện tích 900 cm² · c) 4 cm · d) hình chữ nhật · e) 11 cm · f) cạnh 38 cm, diện tích 1 444 cm² · g) cạnh 26 cm, diện tích 676 cm²
 - **Bài IV.4** — a) 429 · b) 360 · c) 170 · d) 825 · e) 120 · f) 495 · g) 1 089
-- **Bài IV.5** — a) x = 16 · b) x = 14 · c) x = 36 · d) x = 28 · e) x = 42 · f) x = 293 : 8
+- **Bài IV.5** — a) x = 56 · b) x = 60 · c) x = 41 · d) x = 45 · e) x = 3 · f) x = 12
 
 **Phần V**
 
@@ -484,27 +484,23 @@ Kết quả: **429**.
 
 ### Bài IV.5 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 4 + 35 = 39
+Xét **(x − 47) × 6 = 54**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 16**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 56**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
 *Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
 ### Bài V.1 — Đếm chữ số dùng để đánh số trang
-
-> **BẪY — Nhóm cuối không đầy đủ.**
 
 **Các bước giải**
 
@@ -641,7 +637,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 24, hơn kém 18 đơn vị · 22, hơn kém 0 đơn vị · 19, hơn kém 72 đơn vị · 95, hơn kém 36 đơn vị… |
 | IV.3 | Tìm kích thước từ chu vi, diện tích | Công thức chu vi, diện tích; phép tính ngược | Cho chu vi hoặc diện tích và một kích thước | Đi ngược công thức qua bước nửa chu vi | Nửa chu vi = chu vi : 2 — luôn tính bước này đầu tiên. | hình chữ nhật · cạnh 30 cm, diện tích 900 cm² · 4 cm · hình chữ nhật… |
 | IV.4 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 429 · 360 · 170 · 825… |
-| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 16 · x = 14 · x = 36 · x = 28… |
+| IV.5 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 56 · x = 60 · x = 41 · x = 45… |
 | V.1 | Đếm chữ số theo nhóm | Đếm số hạng, cấu tạo số | Bài toán đánh số trang | Chia nhóm theo độ dài số rồi nhân, cộng | Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này. | 252 · 31 · 151 · 51 |
 | V.2 | Tổng dãy số cách đều | Ghép cặp, tổng dãy cách đều | Dãy cộng dài có dấu … | Ghép cặp đầu – cuối rồi nhân | 1 + 2 + … + 100 = 5 050 — nhớ mốc này để kiểm tra. | 325 · 6 375 · 420 · 275… |
 | V.3 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 105 · không thay đổi · 105 · giảm đi 2 lần số bé — luôn là một số chẵn… |
@@ -673,11 +669,11 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.2 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.3 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | IV.4 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
-| IV.5 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.5 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | V.1 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | V.2 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |
 | V.3 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
-| V.4 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.4 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.5 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 
 ---

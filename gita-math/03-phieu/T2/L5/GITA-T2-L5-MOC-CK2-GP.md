@@ -378,6 +378,8 @@ Kết quả: **1**.
 
 ### Bài IV.1 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 19 thùng nước, mỗi thùng 25 lít. Cửa hàng đã bán 8 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước?
@@ -467,8 +469,6 @@ Kết quả: **42**.
 *Điểm chốt:* Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 
 ### Bài IV.5 — Đếm số lập được thoả nhiều điều kiện
-
-> **BẪY — Chữ số 0 ở hàng trăm.**
 
 **Các bước giải**
 

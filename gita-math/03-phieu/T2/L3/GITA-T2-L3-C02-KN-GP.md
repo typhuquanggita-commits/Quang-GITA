@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 1 355 : 5
@@ -137,8 +135,6 @@ Kết quả: **55, 64, 73**.
 *Điểm chốt:* Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
 
 ### Bài A.4 — Tính giá trị biểu thức
-
-> **BẪY — Thiếu ngoặc mà vẫn cộng trước.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Biểu thức nhiều phép tính, có thể có ngoặc**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Kỹ thuật tính nhanh và tìm x”
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tính giá trị biểu thức số
+
+> **BẪY — Cộng trước nhân khi biểu thức không có ngoặc..**
 
 **Các bước giải**
 
@@ -634,7 +634,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | C.4 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | C.5 | TD1, TD3 | Ước lượng và tính đúng là hai việc khác nhau, đừng lẫn. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| D.2 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | D.3 | TD1 | Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương. |
 | D.4 | TD1, TD3 | x đứng ở **vị trí nào** trong phép tính quyết định quy tắc dùng. |
 | D.5 | TD1, TD3 | Dấu ngoặc **đảo ngược** thứ tự ưu tiên. |

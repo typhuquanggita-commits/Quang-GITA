@@ -398,6 +398,8 @@ Kiểm tra: xếp được 6 hàng, mỗi hàng 4 hình — đúng 24 hình ✓
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Đức và Thảo có tất cả 66 quyển vở. Đức có nhiều hơn Thảo 4 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -672,7 +674,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.4 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | IV.5 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD1, TD3 | Bước rút về đơn vị luôn là phép **chia**, và phải làm trước. |
 | V.3 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 | V.4 | TD1, TD3 | Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều. |

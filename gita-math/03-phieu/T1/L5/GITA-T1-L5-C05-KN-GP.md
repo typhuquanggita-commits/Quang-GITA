@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Ôn tập bốn phép tính với số tự nhiên
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 174 300 − 55 684
@@ -121,8 +119,6 @@ Kết quả: **2**.
 *Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
 
 ### Bài A.3 — Đặt tính rồi tính (nhân, chia)
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Hai phân số nối bởi dấu …**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Phép chia số thập phân và ba d�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tỉ số phần trăm có lời văn
+
+> **BẪY — Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm..**
 
 **Các bước giải**
 

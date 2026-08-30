@@ -440,6 +440,8 @@ Kết quả: **41, hơn kém 27 đơn vị**.
 
 ### Bài IV.3 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 9 tấm vải, mỗi tấm dài 6 m. Cắt mỗi tấm đi 4 m. Hỏi còn lại tất cả bao nhiêu mét vải?
@@ -509,8 +511,6 @@ Số bé nhất là 289, số lớn nhất là 982.
 *Phải chắc trước khi làm bài này:* Cấu tạo số có ba chữ số và thói quen liệt kê có thứ tự.
 
 ### Bài V.1 — Dãy số lặp lại theo chu kì
-
-> **BẪY — Số dư 0.**
 
 **Các bước giải**
 
@@ -680,7 +680,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
 | V.3 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
 | V.4 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

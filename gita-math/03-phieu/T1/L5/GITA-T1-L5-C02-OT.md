@@ -269,7 +269,7 @@ e) Bể hình hộp chữ nhật đáy 10 m × 2 m đang chứa nước cao 1 m.
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -347,6 +347,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài I.2
 **Đáp số:** a) 705 · b) 2 136 · c) 1 006 · d) 1 292 · e) 8 247
@@ -359,18 +360,21 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.4
 **Đáp số:** a) 9,91 · b) 40,5 · c) 58,52 · d) 74,24 · e) 125,34 · f) 50,25
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài I.5
 **Đáp số:** a) < · b) < · c) < · d) < · e) > · f) < · g) <
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài II.1
 **Đáp số:** a) 16 tạ · b) 10 tạ 80 kg · c) 12 tạ 40 kg · d) 20 tạ · e) 15 tạ 20 kg
@@ -455,14 +459,14 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.4
 **Đáp số:** a) 125 lít · b) 216 lít · c) 100 lít · d) 40 lít · e) 288 lít · f) 75 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
 
 ### Bài IV.5
 **Đáp số:** a) 12 m³ · b) 81 000 lít · c) 432 m³ · d) 56 m³ · e) 20 m³
-**Hướng giải:** BẪY — Mực nước, không phải chiều cao bể. Thể tích hình hộp chữ nhật bằng dài × rộng × cao. Khi bể chưa đầy, chiều cao dùng để tính là **mực nước**, không phải chiều cao bể. 1 m³ = 1 000 lít.
+**Hướng giải:** Thể tích hình hộp chữ nhật bằng dài × rộng × cao. Khi bể chưa đầy, chiều cao dùng để tính là **mực nước**, không phải chiều cao bể. 1 m³ = 1 000 lít.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chiều cao trong công thức là **mực nước thực tế**.
 **Lỗi thường gặp:** Lấy chiều cao bể để tính lượng nước đang có. Phòng: Vẽ mặt cắt của bể và tô phần nước trước khi tính.
 **Gợi ý 3 tầng:** (1) Diện tích đáy bể bằng bao nhiêu? — (2) Chiều cao cần dùng là chiều cao bể hay mực nước? — (3) Nhân diện tích đáy với chiều cao ấy.

@@ -296,8 +296,6 @@ Kết quả: **có**.
 
 ### Bài C.2 — Phép chia có dư
 
-> **BẪY — Số dư phải bé hơn số chia.**
-
 **Các bước giải**
 
 Xét ý a: 7 333 : 5 = ? (dư ?)
@@ -317,6 +315,8 @@ Kết quả: **1 466 dư 3**.
 *Điểm chốt:* Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 
 ### Bài C.3 — Tính tổng dãy số cách đều
+
+> **BẪY — Quên chia 2.**
 
 **Các bước giải**
 

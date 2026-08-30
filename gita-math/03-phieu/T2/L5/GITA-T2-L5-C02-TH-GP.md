@@ -448,6 +448,8 @@ Cộng các bậc: 90 000 + 95 000 + 220 000 + 84 000 = **489 000 đồng**.
 
 ### Bài IV.4 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 2 phần 3 × 1 phần 4 + 2 phần 3 × 5 phần 6
@@ -489,8 +491,6 @@ Giá cuối cùng là **204 800 đồng**. Nếu cộng gộp hai lần giảm t
 *Phải chắc trước khi làm bài này:* Tìm a% của một số và phép nhân chia với số tròn nghìn.
 
 ### Bài V.1 — Hai lần thay đổi phần trăm liên tiếp
-
-> **BẪY — Mốc 100% thay đổi sau mỗi lần.**
 
 **Các bước giải**
 

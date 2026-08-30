@@ -228,8 +228,8 @@ f) Số 3 175 có chia hết cho 2 không? Vì sao?
 
 Tìm x, trình bày từng bước.
 
-a) x × 8 + 75 = 251
-b) x × 7 − 15 = 259
+a) (x + 75) × 8 = 776
+b) x × 7 + 15 = 274
 c) x : 9 + 68 = 80
 d) 74 − x = 36
 
@@ -273,7 +273,7 @@ d) Trong hộp có bút thuộc 3 màu khác nhau, mỗi màu rất nhiều chi�
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -354,7 +354,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài I.2
 **Đáp số:** a) 11 · b) (39 − 5) : 2 + 1 = 18 nhà · c) 5 + (5 − 1) × 2 = 13 · d) (17 − 5) : 2 + 1 = 7 · e) số lẻ — bắt đầu từ một số lẻ rồi cứ cộng thêm 2, cộng 2 không làm đổi tính chẵn lẻ
-**Hướng giải:** BẪY — Đếm số nhà bằng cách lấy hiệu chia khoảng cách. Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
+**Hướng giải:** Dãy số nhà là dãy cách đều. Số hạng thứ k bằng số đầu cộng (k − 1) lần khoảng cách; còn **số lượng số hạng** bằng số khoảng cách cộng 1.
 **Nhãn tư duy:** TD2, TD4. Điểm chốt: Số khoảng cách luôn ít hơn số vật đúng 1 — quên cộng 1 là mất bài.
 **Lỗi thường gặp:** Lấy (số cuối − số đầu) : 2 rồi trả lời luôn. Phòng: Thử với dãy ngắn: 1, 3, 5 có 3 số nhưng chỉ 2 khoảng.
 
@@ -369,6 +369,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài I.5
 **Đáp số:** a) 23 000 · b) 270 · c) 86 000 · d) 11 000 · e) 3 100
@@ -437,15 +438,15 @@ f) Cột 6 — Kết quả?
 **Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2. Phòng: Ghi tổng các chữ số ra bên cạnh trước khi kết luận.
 
 ### Bài IV.1
-**Đáp số:** a) x = 22 · b) x = 274 : 7 · c) x = 108 · d) x = 38
-**Hướng giải:** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
-**Nhãn tư duy:** TD3. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
+**Đáp số:** a) x = 22 · b) x = 37 · c) x = 108 · d) x = 38
+**Hướng giải:** BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc. Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 **Lỗi thường gặp:** Gỡ phép nhân trước khi gỡ phép cộng ở ngoài. Phòng: Khoanh tròn cụm chứa x rồi coi cả cụm là một số.
 **Gợi ý 3 tầng:** (1) Khoanh cụm chứa x, coi là một số. — (2) Cụm đó là số hạng, số bị trừ hay thừa số? — (3) Tìm giá trị của cụm rồi tìm x.
 
 ### Bài IV.2
 **Đáp số:** a) 42 m · b) 4 800 000 đồng · c) 120 chai · d) 10 m
-**Hướng giải:** Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
+**Hướng giải:** BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam. Tìm đại lượng trung gian trước (tổng khối lượng, tổng chiều dài), rồi mới trả lời câu hỏi. Chọn đường ít phép tính hơn khi có hai cách.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam.
 **Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
 **Gợi ý 3 tầng:** (1) Đại lượng trung gian cần tính trước là gì? — (2) Tính nó bằng phép tính nào? — (3) Kiểm tra đơn vị của kết quả cuối.

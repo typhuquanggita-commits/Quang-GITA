@@ -390,6 +390,8 @@ Kết quả: **16**.
 
 ### Bài IV.1 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Bước 1 — tổng số gạo: 30 × 10 = 300 (kg).
@@ -477,8 +479,6 @@ Kết quả: **17, hơn kém 54 đơn vị**.
 *Điểm chốt:* Hiệu hai số luôn là **bội của 9**.
 
 ### Bài IV.5 — Tìm một số khi biết một phần mấy của nó
-
-> **BẪY — Nhân chứ không chia.**
 
 **Các bước giải**
 
@@ -672,7 +672,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.3 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
 | IV.4 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.5 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |
-| V.1 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.1 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.2 | TD4, TD6 | Viết **dãy hiệu** xuống dưới dãy gốc là bước bắt buộc. |
 | V.3 | TD4, TD6 | Dư 0 ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
 | V.4 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |

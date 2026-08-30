@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — So sánh hai phân số
 
-> **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
-
 **Các bước giải**
 
 Xét ý a: 8 phần 9 … 4 phần 3
@@ -117,8 +115,6 @@ Kết quả: **9 phần 2**.
 *Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
 
 ### Bài A.3 — Số thập phân: hàng, so sánh, đổi từ phân số
-
-> **BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn.**
 
 **Các bước giải**
 
@@ -482,6 +478,8 @@ Kết quả: **Một nhóm phân số cần sắp thứ tự**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -501,6 +499,8 @@ Kết quả: **giới thiệu chương “Biểu đồ hình quạt, phần tră
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Tỉ số phần trăm có lời văn
+
+> **BẪY — Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm..**
 
 **Các bước giải**
 

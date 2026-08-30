@@ -464,6 +464,8 @@ Kết quả: **lẻ**.
 
 ### Bài IV.4 — Bài toán đại lượng nhiều bước
 
+> **BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại.**
+
 **Các bước giải**
 
 Xét ý a: Một cửa hàng có 8 thùng nước mắm, mỗi thùng 24 lít. Cửa hàng đã bán 7 thùng. Hỏi cửa hàng còn lại bao nhiêu lít nước mắm?
@@ -483,8 +485,6 @@ Kết quả: **24 lít**.
 *Điểm chốt:* Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 
 ### Bài IV.5 — Đếm số lập được thoả nhiều điều kiện
-
-> **BẪY — Chữ số 0 ở hàng trăm.**
 
 **Các bước giải**
 
@@ -679,7 +679,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD3, TD5 | Trừ **số thùng** trước khi nhân thì ít phép tính hơn. |
 | IV.5 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
 | V.1 | TD4, TD5 | Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi. |
-| V.2 | TD4, TD3 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
+| V.2 | TD4, TD3, TD5 | Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn. |
 | V.3 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
 | V.4 | TD6, TD2 | Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt. |
 | V.5 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |

@@ -476,7 +476,7 @@ Kết quả: **Bảng đơn vị thể tích; quan hệ dm³ – lít**.
 
 ### Bài E.1 — Đơn vị đo diện tích
 
-> **BẪY — 100 lần chứ không phải 10 lần.**
+> **BẪY — Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc..**
 
 **Các bước giải**
 
@@ -498,8 +498,6 @@ Kết quả: **Bảng đơn vị thể tích; quan hệ dm³ – lít**.
 
 ### Bài E.2 — So sánh hai số đo khác đơn vị
 
-> **BẪY — Đơn vị khác nhau.**
-
 **Các bước giải**
 
 Xét ý a: 73 km² … 8 856 ha
@@ -519,8 +517,6 @@ Kết quả: **<**.
 *Điểm chốt:* Đổi về cùng đơn vị **trước**, so sánh **sau**.
 
 ### Bài E.3 — Lịch, thế kỉ, năm nhuận
-
-> **BẪY — Năm tròn trăm.**
 
 **Các bước giải**
 

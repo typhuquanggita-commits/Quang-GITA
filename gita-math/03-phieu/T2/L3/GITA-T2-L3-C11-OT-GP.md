@@ -54,7 +54,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần IV**
 
-- **Bài IV.1** — a) x = 54 · b) x = 157 : 9 · c) x = 42 · d) x = 354
+- **Bài IV.1** — a) x = 51 · b) x = 84 · c) x = 59 · d) x = 21
 - **Bài IV.2** — a) 7 · b) 22 · c) 13 · d) 13 · e) 14
 - **Bài IV.3** — a) 32 quyển · b) 1 phần 3 · c) 54 · d) 105 · e) 1 phần 2
 - **Bài IV.4** — a) 16 · b) 54 · c) 54 · d) 160
@@ -394,19 +394,17 @@ Không thích môn nào: 50 − 45 = 5 (bạn).
 
 ### Bài IV.1 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 7 + 70 = 448
+Xét **x × 3 + 85 = 238**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 54**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 51**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -483,8 +481,6 @@ Kết quả: **16**.
 *Điểm chốt:* Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
 
 ### Bài IV.5 — Đếm số thoả điều kiện trong một khoảng
-
-> **BẪY — Hai đầu khoảng chưa chắc thoả điều kiện.**
 
 **Các bước giải**
 
@@ -631,7 +627,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | Đếm hình trong lưới | Quy tắc đếm | Lưới ô vuông đều | Đếm theo đường kẻ hoặc theo cỡ | Số cách chọn 2 trong k là k × (k − 1) : 2. | 12 · 5 đường ngang, 4 đường dọc · 60 · 20… |
 | III.4 | Lịch, tháng, năm nhuận | Số ngày các tháng, năm nhuận, chu kì 7 ngày | Đề nhắc tới ngày, tháng, thứ trong tuần | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. | 30 · có · Thứ Hai · 4… |
 | III.5 | Nguyên lý bù trừ, sơ đồ Ven | Đếm có phần chung; sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” | Vẽ Ven, điền miền giữa trước, trừ dần ra | Số thích ít nhất một môn = A + B − cả hai. | 45 · 20 · 11 · 5… |
-| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 54 · x = 157 : 9 · x = 42 · x = 354 |
+| IV.1 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 51 · x = 84 · x = 59 · x = 21 |
 | IV.2 | Bài toán trồng cây | Quan hệ số cây – số khoảng | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. | 7 · 22 · 13 · 13… |
 | IV.3 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 32 quyển · 1 phần 3 · 54 · 105… |
 | IV.4 | Tìm số khi biết một phần mấy của nó | Quan hệ ngược của phép chia | “Một phần mấy của một số là …, tìm số đó” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. | 16 · 54 · 54 · 160 |
@@ -663,7 +659,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | III.3 | TD4, TD3 | Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò. |
 | III.4 | TD4, TD1 | Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra. |
 | III.5 | TD2, TD6 | Điền **miền giữa trước** — mọi miền khác suy ra từ đó. |
-| IV.1 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.1 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.2 | TD3, TD6 | Bốn trường hợp cho **bốn đáp số khác nhau** — đọc kĩ đề. |
 | IV.3 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | IV.4 | TD3, TD2 | Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần. |

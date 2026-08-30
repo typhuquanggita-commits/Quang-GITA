@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 100 chai · b) 7 800 000 đồng · c) 24 m · d) 8 chai · e) 6 m
 - **Bài IV.2** — a) 10 chiếc · b) 13 chiếc · c) 7 chiếc · d) 5 chiếc · e) 4 chiếc
 - **Bài IV.3** — a) 70 · b) 23 · c) 40 · d) 79 · e) 114
-- **Bài IV.4** — a) x = 194 : 3 · b) x = 36 · c) x = 440 · d) x = 53 · e) x = 57
+- **Bài IV.4** — a) x = 3 · b) x = 3 · c) x = 50 · d) x = 120 · e) x = 57
 - **Bài IV.5** — a) 100 g · b) 1 000 g · c) 250 g · d) 500 g
 
 **Phần V**
@@ -390,6 +390,8 @@ Kết quả: **3 giờ 10 phút**.
 
 ### Bài IV.1 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 10 can dầu, mỗi can 10 lít. Đổ đều vào các chai 1 lít thì được bao nhiêu chai?
@@ -462,19 +464,17 @@ Kết quả: **70**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 3 − 26 = 168
+Xét **x × 3 − 18 = -9**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 194 : 3**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 3**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -502,8 +502,6 @@ Kết quả: **100 g**.
 
 ### Bài V.1 — Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
 
-> **BẪY — Cho thêm khác với chuyển qua lại.**
-
 **Các bước giải**
 
 Bước 1 — số cờ của nhóm Hoa Phượng: 27 × 3 = 81 (lá).
@@ -525,8 +523,6 @@ Bước 4 — muốn hai tổ bằng nhau thì cho đội Hai thêm đúng phầ
 *Phải chắc trước khi làm bài này:* Bốn phép tính và bài toán giải bằng hai phép tính.
 
 ### Bài V.2 — Thời gian biểu một buổi học
-
-> **BẪY — Số lần nghỉ ít hơn số tiết.**
 
 **Các bước giải**
 
@@ -638,7 +634,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Bài toán đại lượng nhiều bước | Nhân, trừ; đơn vị khối lượng, độ dài, dung tích | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt | Tính đại lượng trung gian rồi trả lời | Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. | 100 chai · 7 800 000 đồng · 24 m · 8 chai… |
 | IV.2 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. | 10 chiếc · 13 chiếc · 7 chiếc · 5 chiếc… |
 | IV.3 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. | 70 · 23 · 40 · 79… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 194 : 3 · x = 36 · x = 440 · x = 53… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 3 · x = 3 · x = 50 · x = 120… |
 | IV.5 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | 100 g · 1 000 g · 250 g · 500 g |
 | V.1 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia | “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” | Tính từng bước, bám vào tổng có đổi hay không | Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu. | 81 · 108 · 54 · 41… |
 | V.2 | Thời gian biểu, cộng thời gian | Quan hệ giờ – phút; quan hệ số khoảng – số điểm | Có nhiều tiết học và thời gian nghỉ giữa các tiết | Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại | Bài này chính là bài trồng cây đội lốt thời gian. | 9 giờ 45 phút · 160 phút · 45 phút · 205 phút… |
@@ -670,9 +666,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
 | IV.2 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
 | IV.3 | TD4, TD1 | Hai đầu khoảng **chưa chắc** thoả điều kiện. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD3, TD6 | Số lần nghỉ = số tiết − 1, không phải bằng số tiết. |
 | V.3 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
 | V.4 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |

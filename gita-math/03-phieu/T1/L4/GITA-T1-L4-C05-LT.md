@@ -341,12 +341,14 @@ g) Tháng 5 năm 1912 có bao nhiêu ngày?
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài A.2
 **Đáp số:** a) 27 phút · b) 5 giờ 43 phút · c) 444 · d) 9 giờ 50 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài A.3
 **Đáp số:** a) 2 tấn 7 tạ 54 kg · b) 645 · c) 3 496 · d) 4 tạ 99 kg
@@ -359,12 +361,14 @@ g) Tháng 5 năm 1912 có bao nhiêu ngày?
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài A.5
 **Đáp số:** a) 1 800 · b) 1 500 000 · c) 43 000 · d) 4 400 000 · e) 36 000 · f) 6 800
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài B.1
 **Đáp số:** a) Đơn vị đo khối lượng, thời gian và diện tích · b) E — Đại lượng – Đo lường – Thời gian · c) 4 · d) ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài yến, tạ, tấn — đổi đơn vị đo khối lượng
@@ -463,16 +467,17 @@ g) Tháng 5 năm 1912 có bao nhiêu ngày?
 
 ### Bài E.1
 **Đáp số:** a) 2 820 · b) 9 870 · c) 27 143 · d) 3 848 · e) 1 428 · f) 27 178
-**Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
+**Hướng giải:** BẪY — Cộng số mét với số xăng-ti-mét mà chưa đổi.. Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
 **Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
 **Gợi ý 3 tầng:** (1) Kết quả cần ghi theo đơn vị nào? — (2) Đổi mọi số hạng về đơn vị ấy. — (3) Tính như số tự nhiên rồi ghi đơn vị.
 
 ### Bài E.2
 **Đáp số:** a) < · b) < · c) < · d) < · e) > · f) <
-**Hướng giải:** BẪY — Đơn vị khác nhau. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
+**Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 **Gợi ý 3 tầng:** (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
 
 ### Bài E.3
@@ -484,16 +489,18 @@ g) Tháng 5 năm 1912 có bao nhiêu ngày?
 
 ### Bài E.4
 **Đáp số:** a) 200 · b) 78 · c) 34 · d) 620 000 · e) 6 500 · f) 500 · g) 15
-**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 **Gợi ý 3 tầng:** (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
 
 ### Bài E.5
 **Đáp số:** a) không · b) XXI · c) 30 · d) 7 tuần 3 ngày · e) 8 tuần 0 ngày · f) XXI · g) 31
-**Hướng giải:** BẪY — Năm tròn trăm. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
+**Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 **Gợi ý 3 tầng:** (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
 
 ---

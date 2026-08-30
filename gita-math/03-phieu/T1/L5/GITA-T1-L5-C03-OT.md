@@ -275,7 +275,7 @@ d) Lần thứ nhất mua 3 kg thóc và 3 kg muối hết 198 000 đồng. Lầ
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -454,8 +454,8 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.3
 **Đáp số:** a) 29 · b) 47 · c) 380 · d) 38 · e) 76 · f) 76
-**Hướng giải:** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+**Hướng giải:** BẪY — Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối. Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
 **Lỗi thường gặp:** Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. Phòng: Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.
 **Gợi ý 3 tầng:** (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
 
@@ -468,7 +468,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) một kg muối: 29 000 đồng; một kg phân bón: 38 000 đồng · b) một kg thóc: 27 000 đồng; một kg muối: 29 000 đồng · c) một kg đường: 37 000 đồng; một kg thóc: 26 000 đồng · d) một kg muối: 31 000 đồng; một kg thóc: 35 000 đồng
-**Hướng giải:** BẪY — Chưa cân bằng đã trừ. Tìm loại hàng có **số lượng bằng nhau ở cả hai lần** rồi trừ hai dòng cho nhau — loại ấy tự triệt tiêu. Nếu chưa lần nào bằng nhau thì nhân cả hai dòng lên cho bằng đã.
+**Hướng giải:** Tìm loại hàng có **số lượng bằng nhau ở cả hai lần** rồi trừ hai dòng cho nhau — loại ấy tự triệt tiêu. Nếu chưa lần nào bằng nhau thì nhân cả hai dòng lên cho bằng đã.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Chỉ được trừ khi số lượng của loại cần khử đã bằng nhau ở hai dòng.
 **Lỗi thường gặp:** Trừ ngay khi hai dòng còn khác nhau ở cả hai loại — khử hụt, ra sai. Phòng: Viết hai dòng thẳng cột, khoanh tròn loại có số lượng bằng nhau.
 **Gợi ý 3 tầng:** (1) Loại hàng nào mua số lượng như nhau ở cả hai lần? — (2) Lần hai mua thêm bao nhiêu và trả thêm bao nhiêu tiền? — (3) Chia tiền trả thêm cho lượng mua thêm là ra giá một đơn vị.
@@ -490,7 +490,7 @@ f) Cột 6 — Kết quả?
 ### Bài V.3
 **Đáp số:** a) Tổng nhiều số có ràng buộc; tổng – tỉ · b) Trung bình cộng của dãy cách đều; tổng – tỉ · c) Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số · d) Tìm số giữa trước; sau đó chia theo tỉ lệ · e) Tổng ba số cách đều luôn chia hết cho 3. · f) 75 · 67 · 83 · vì ba số cách đều nên số ở giữa là trung bình cộng…
 **Hướng giải:** Thi đấu phản biện: bạn trình bày nói lời giải, bạn phản biện phải chỉ ra được ít nhất một cột trong bảng mà lời giải chưa nói tới. Ai chỉ ra được nhiều hơn thì thắng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
+**Nhãn tư duy:** TD4, TD3, TD5. Điểm chốt: Ba số cách đều thì **số giữa = tổng : 3**, không cần đặt ẩn.
 **Lỗi thường gặp:** Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. Phòng: Nhìn ra “cách đều” trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Điền cột 1 và cột 3 trước — đó là hai cột dễ nhất. — (2) Cột 4 và cột 5 khác nhau: một cột nói cách làm, một cột nói lối tắt. — (3) Cột 6 chỉ ghi kết quả, không ghi lời giải.
 

@@ -891,7 +891,7 @@ def pp_a_m5_01(rng, lop):
         huong_giai="Viết cấu tạo số theo chữ để đọc ra quan hệ giữa các chữ số, "
                    "rồi dùng điều kiện chặt nhất thu hẹp danh sách trước khi thử. "
                    "Thử chọn mà không thu hẹp trước là phải xét gần một nghìn số.",
-        td=["TD1", "TD3", "TD4"],
+        td=["TD1", "TD3", "TD4", "TD5"],
         diem_chot="Ghép hai phương pháp theo đúng thứ tự: **rút gọn trước, thử sau**.",
         loi="Thử luôn từ 100 đến 999, hết giờ mà chưa xong.",
         phong="Trước khi thử, tự hỏi điều kiện nào cho ít khả năng nhất.",

@@ -639,7 +639,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | D.2 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
 | D.3 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
 | D.4 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |
-| D.5 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| D.5 | TD4, TD2, TD5 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
 | E.1 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
 | E.2 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
 | E.3 | TD4, TD1 | Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị. |

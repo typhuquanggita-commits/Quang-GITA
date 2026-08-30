@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — So sánh hai phân số
 
-> **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
-
 **Các bước giải**
 
 Xét ý a: 10 phần 11 … 8 phần 11
@@ -137,8 +135,6 @@ Kết quả: **1 phần 4**.
 *Điểm chốt:* Phải chia **cả tử và mẫu** cho cùng một số.
 
 ### Bài A.4 — Ôn tập bốn phép tính với số tự nhiên
-
-> **BẪY — Chữ số 0 ở giữa thương.**
 
 **Các bước giải**
 
@@ -488,6 +484,8 @@ Kết quả: **Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai ph�
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -507,6 +505,8 @@ Kết quả: **giới thiệu chương “Phép chia phân số, tìm phân số
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đọc biểu đồ cột
+
+> **BẪY — Đếm số ô rồi trả lời luôn, quên nhân với giá trị mỗi ô..**
 
 **Các bước giải**
 

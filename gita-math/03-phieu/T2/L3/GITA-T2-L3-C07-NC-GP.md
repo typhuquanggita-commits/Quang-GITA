@@ -484,6 +484,8 @@ Kết quả: **56**.
 
 ### Bài IV.5 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Yến và Bình có tất cả 200 quyển vở. Yến có nhiều hơn Bình 30 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -527,8 +529,6 @@ Hiệu lúc đầu: 27 − 17 = 10 (quyển) — đúng bằng hai lần số v�
 *Phải chắc trước khi làm bài này:* Bài toán tổng – hiệu cơ bản và thói quen thử lại.
 
 ### Bài V.2 — Cân đĩa và quả cân
-
-> **BẪY — Phép chia có dư.**
 
 **Các bước giải**
 
@@ -678,7 +678,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
 | V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.4 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
-| V.5 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.5 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 
 ---
 

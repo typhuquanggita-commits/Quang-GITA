@@ -289,7 +289,7 @@ d) 3,9 + 6 + 6,1
 
 ---
 
-## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Sáng tạo · vượt ngưỡng · 10 phút · 10 điểm
+## PHẦN V — THI ĐẤU PHẢN BIỆN · Mức M5 — Phân hoá — điểm 10 · 10 phút · 10 điểm
 
 ### Bài 1. (2 điểm) Phản biện đề số 1
 
@@ -388,6 +388,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài I.4
 **Đáp số:** a) 11 phần 9 · b) 164 phần 63 · c) 7 phần 10 · d) 43 phần 120 · e) 76 phần 45 · f) 33 phần 2
@@ -400,6 +401,7 @@ f) Cột 6 — Kết quả?
 **Hướng giải:** Cộng, trừ số thập phân: viết các dấu phẩy **thẳng cột** rồi tính như số tự nhiên, đặt dấu phẩy ở kết quả thẳng cột với các dấu phẩy trên. Nhân số thập phân với số tự nhiên: nhân như số tự nhiên rồi đếm số chữ số thập phân của thừa số để đặt dấu phẩy.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ thì **thẳng dấu phẩy**; nhân thì **đếm chữ số thập phân**.
 **Lỗi thường gặp:** Nhân xong đặt dấu phẩy thẳng cột như phép cộng. Phòng: Đếm số chữ số sau dấu phẩy ngay khi viết đề bài.
+**Chú ý:** Vị trí dấu phẩy ở tích.
 
 ### Bài II.1
 **Đáp số:** a) 15 cây · b) 17 cây · c) 22 cây · d) 13 cây · e) 54 cây
@@ -470,7 +472,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.2
 **Đáp số:** a) 49 phần 18 · b) 56 phần 33 · c) 51 phần 44 · d) 19 phần 10
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -491,7 +493,7 @@ f) Cột 6 — Kết quả?
 
 ### Bài IV.5
 **Đáp số:** a) 49 · b) 300 · c) 49 · d) 16
-**Hướng giải:** BẪY — Vị trí dấu phẩy ở kết quả. Các tính chất giao hoán, kết hợp, nhân với một tổng đúng cả với số thập phân. Ghép cặp cộng lại tròn chục, ghép cặp nhân lại tròn trăm, đặt thừa số chung ra ngoài.
+**Hướng giải:** Các tính chất giao hoán, kết hợp, nhân với một tổng đúng cả với số thập phân. Ghép cặp cộng lại tròn chục, ghép cặp nhân lại tròn trăm, đặt thừa số chung ra ngoài.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Dấu phẩy không làm thay đổi các tính chất — cách làm giống hệt số tự nhiên.
 **Lỗi thường gặp:** Đặt dấu phẩy sai vị trí ở kết quả cuối. Phòng: Ước lượng độ lớn kết quả trước, dùng nó kiểm tra vị trí dấu phẩy.
 **Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn chục không? — (2) Có thừa số chung ở hai tích không? — (3) Ước lượng kết quả trước để đặt đúng dấu phẩy.

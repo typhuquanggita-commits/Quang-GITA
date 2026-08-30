@@ -416,6 +416,8 @@ Kết quả: **cạnh 19 cm, diện tích 361 cm²**.
 
 ### Bài IV.2 — Bài toán thực tế về đo lường và mua bán
 
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
+
 **Các bước giải**
 
 Xét ý a: Có 6 tấm vải, mỗi tấm dài 5 m. Cắt mỗi tấm đi 2 m. Hỏi còn lại tất cả bao nhiêu mét vải?
@@ -439,6 +441,8 @@ Kết quả: **18 m**.
 *Phải chắc trước khi làm bài này:* Nhân số có nhiều chữ số và bảng đơn vị đo.
 
 ### Bài IV.3 — Tìm hai số khi biết tổng và hiệu
+
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
 
 **Các bước giải**
 
@@ -506,8 +510,6 @@ Kết quả: **40**.
 
 ### Bài V.1 — Thời gian biểu một buổi học
 
-> **BẪY — Số lần nghỉ ít hơn số tiết.**
-
 **Các bước giải**
 
 Bước 1 — thời gian học: 40 × 4 = 160 (phút).
@@ -531,8 +533,6 @@ Bước 5 — giờ tan học: 6 giờ 20 phút cộng 175 phút = 9 giờ 15 ph
 *Phải chắc trước khi làm bài này:* Quan hệ giờ – phút và bài toán trồng cây.
 
 ### Bài V.2 — Hai lần lấy một phần mấy
-
-> **BẪY — Phân số của số còn lại.**
 
 **Các bước giải**
 
@@ -680,7 +680,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | V.2 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
 | V.3 | TD6, TD3 | Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4. |
 | V.4 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
-| V.5 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.5 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 
 ---
 

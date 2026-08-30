@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Tìm kích thước khi biết chu vi hoặc diện tích
 
-> **BẪY — Quên chia đôi chu vi.**
-
 **Các bước giải**
 
 Xét ý a: Hình chữ nhật có diện tích 96 cm², chiều rộng 4 cm. Tính chiều dài.
@@ -97,8 +95,6 @@ Kết quả: **24 cm**.
 *Điểm chốt:* Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 
 ### Bài A.2 — Chu vi và diện tích hình chữ nhật, hình vuông
-
-> **BẪY — Đơn vị của diện tích.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Từ khoá “ghép”, “cắt thành”, “xếp thành”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Tỉ số diện tích tam giác, hìn
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Chu vi, diện tích hình tròn
+
+> **BẪY — Lấy đường kính nhân đường kính khi tính diện tích..**
 
 **Các bước giải**
 

@@ -278,7 +278,7 @@ e) Có 36 quyển vở, đã dùng 1 phần 3 số vở. Còn lại bao nhiêu q
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Đếm chữ số dùng để đánh số trang
 
@@ -373,6 +373,7 @@ d) Tổng 60 số hạng đầu tiên bằng bao nhiêu?
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.2
 **Đáp số:** a) 4 chục nghìn, 3 nghìn, 7 trăm, 4 chục, 8 đơn vị · b) 43 748 − 43 652 = 96 kW·h · c) 44 000 · d) 48 748 · e) nhiều hơn 26 kW·h
@@ -385,6 +386,7 @@ d) Tổng 60 số hạng đầu tiên bằng bao nhiêu?
 **Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
 **Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+**Chú ý:** Thừa số 0.
 
 ### Bài II.4
 **Đáp số:** a) Quân: 115 viên, Hà: 59 viên · b) Lan: 14 viên, Khánh: 10 viên · c) Phúc: 92 viên, Thảo: 88 viên · d) Trang: 23 viên, Nam: 19 viên · e) Bình: 23 viên, Ngọc: 19 viên · f) Trang: 15 viên, Tuấn: 9 viên
@@ -480,7 +482,7 @@ d) Tổng 60 số hạng đầu tiên bằng bao nhiêu?
 ### Bài V.3
 **Đáp số:** a) 972 · b) 875 · c) 297 · d) 200 · e) tuỳ theo chữ số thêm vào; thêm bên phải làm số cũ gấp 10 lần rồi cộng thêm · f) 9
 **Hướng giải:** Thêm chữ số vào bên phải là **nhân 10 rồi cộng**; thêm vào bên trái là **cộng thêm** chữ số ấy nhân giá trị hàng mới. Xoá chữ số hàng đơn vị là chia cho 10 lấy phần nguyên.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Nhãn tư duy:** TD3, TD2, TD5. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
 **Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
 **Gợi ý 3 tầng:** (1) Viết số mới ra bên cạnh số cũ. — (2) Thêm bên phải thì số cũ bị nhân với mấy? — (3) Thêm bên trái thì cộng thêm bao nhiêu?
 

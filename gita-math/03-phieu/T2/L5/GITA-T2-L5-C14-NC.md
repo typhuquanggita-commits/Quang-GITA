@@ -279,7 +279,7 @@ d) Một người đi với vận tốc 20 km/giờ trong 4 giờ. Tính quãng 
 
 ---
 
-## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bài toán giả thiết tạm — gà và chó
 
@@ -345,12 +345,14 @@ f) 9 người làm xong một công việc trong 16 ngày. Nếu có thêm 3 ng�
 **Hướng giải:** Ba công thức từ một quan hệ: s = v × t, v = s : t, t = s : v. Đơn vị phải khớp: km/giờ đi với km và giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng kia.
 **Lỗi thường gặp:** Vận tốc km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
+**Chú ý:** Đơn vị thời gian.
 
 ### Bài I.2
 **Đáp số:** a) 2 giờ 27 phút · b) 230 · c) 4 giờ 45 phút · d) 4 giờ 53 phút · e) 479
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Chú ý:** Cơ số 60 chứ không phải 10.
 
 ### Bài I.3
 **Đáp số:** a) 5 tấn 9 tạ 43 kg · b) 1 301 · c) 215 · d) 4 372 · e) 1 tấn 5 tạ 61 kg · f) 1 tấn 5 tạ 1 kg
@@ -363,18 +365,21 @@ f) 9 người làm xong một công việc trong 16 ngày. Nếu có thêm 3 ng�
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài I.5
 **Đáp số:** a) 490 · b) 3 500 · c) 870 · d) 780 000 · e) 65 000 · f) 530
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Chú ý:** Chiều đổi đơn vị.
 
 ### Bài II.1
 **Đáp số:** a) 31 · b) XXI · c) 8 tuần 0 ngày · d) không · e) không
 **Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
 **Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Chú ý:** Năm tròn trăm.
 
 ### Bài II.2
 **Đáp số:** a) nhóm Hoa Phượng: 452 cây, tổ Ba: 302 cây · b) 3A: 298 quyển, 5A: 158 quyển · c) kho A: 261 kg, thư viện: 155 kg · d) trang trại: 250 kg, kho B: 162 kg
@@ -387,6 +392,7 @@ f) 9 người làm xong một công việc trong 16 ngày. Nếu có thêm 3 ng�
 **Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Chú ý:** 100 lần chứ không phải 10 lần.
 
 ### Bài II.4
 **Đáp số:** a) 32 391 · b) 8 324 · c) 3 850 · d) 2 602 · e) 2 336 · f) 3 528
@@ -399,6 +405,7 @@ f) 9 người làm xong một công việc trong 16 ngày. Nếu có thêm 3 ng�
 **Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Chú ý:** Đơn vị khác nhau.
 
 ### Bài III.1
 **Đáp số:** a) 132 000 đồng · b) 204 000 đồng · c) 336 000 đồng · d) (11 + 17) × 12 000 = 28 × 12 000 = 336 000 đồng · e) 6 × 12 000 = 72 000 đồng
@@ -439,7 +446,7 @@ f) 9 người làm xong một công việc trong 16 ngày. Nếu có thêm 3 ng�
 
 ### Bài IV.2
 **Đáp số:** a) 240 lít · b) 72 lít · c) 72 lít · d) 60 lít · e) 120 lít · f) 48 lít
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Hướng giải:** BẪY — Trừ số thùng cho số lít — hai đại lượng khác loại. Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
 **Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 **Gợi ý 3 tầng:** (1) Còn lại bao nhiêu thùng? — (2) Mỗi thùng bao nhiêu lít? — (3) Nhân hai kết quả đó.
@@ -460,7 +467,7 @@ f) 9 người làm xong một công việc trong 16 ngày. Nếu có thêm 3 ng�
 
 ### Bài IV.5
 **Đáp số:** a) 15 km · b) 3 giờ · c) 30 km/giờ · d) 80 km
-**Hướng giải:** BẪY — Đơn vị thời gian. s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
+**Hướng giải:** s = v × t; v = s : t; t = s : v. Đơn vị phải khớp: vận tốc km/giờ đi với quãng đường km và thời gian giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
 **Lỗi thường gặp:** Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
 **Gợi ý 3 tầng:** (1) Đề cho hai đại lượng nào và hỏi đại lượng nào? — (2) Viết công thức tương ứng. — (3) Kiểm tra đơn vị có khớp nhau không.

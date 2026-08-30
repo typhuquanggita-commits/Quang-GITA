@@ -116,8 +116,6 @@ Kết quả: **5 phần 11**.
 
 ### Bài A.3 — Đặt tính rồi tính (nhân, chia)
 
-> **BẪY — Chữ số 0 ở giữa thương.**
-
 **Các bước giải**
 
 Xét ý a: 112 488 : 12
@@ -161,8 +159,6 @@ Kết quả: **3 117 115 và 3 117 117**.
 *Phải chắc trước khi làm bài này:* Bảng hàng và lớp của số tự nhiên.
 
 ### Bài A.5 — So sánh hai phân số
-
-> **BẪY — Cùng tử số thì mẫu bé hơn lại lớn hơn.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai ph�
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Phân số: khái niệm đến bốn 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đọc bảng số liệu thống kê
+
+> **BẪY — Đọc nhầm cột, lấy số bạn nữ trả lời câu hỏi về bạn nam..**
 
 **Các bước giải**
 

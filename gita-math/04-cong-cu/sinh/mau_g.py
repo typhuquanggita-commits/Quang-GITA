@@ -43,7 +43,7 @@ def g_m1_01(rng, lop):
         pt_phuong_phap="Nhân số cách của các bước liên tiếp",
         pt_nhanh="Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân.",
         tuong_tu=("Có 3 áo và 4 quần, có bao nhiêu cách chọn một bộ?", "12 cách"),
-        bay="Cộng hay nhân",
+        chu_y="Cộng hay nhân",
     )
 
 
@@ -132,7 +132,7 @@ def g_m1_03(rng, lop):
         pt_nhanh="Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước.",
         tuong_tu=("20 bạn giỏi Toán, 15 giỏi Văn, 8 giỏi cả hai. Bao nhiêu bạn giỏi ít "
                   "nhất một môn?", "27 bạn"),
-        bay="Phần chung bị đếm hai lần",
+        chu_y="Phần chung bị đếm hai lần",
     )
 
 
@@ -488,6 +488,7 @@ def g_m5_02(rng, lop):
                    "số ngăn × (k − 1). Có nhiều hơn thế thì chắc chắn có một ngăn chứa từ "
                    "k đồ vật trở lên.",
         td=["TD6", "TD2"],
+        bay="Kết luận chung chung mà không chỉ ra con số cụ thể",
         diem_chot="Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt.",
         loi="Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số.",
         phong="Viết hẳn hai dòng: “Ngăn kéo là …”, “Đồ vật là …”.",

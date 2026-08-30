@@ -76,8 +76,6 @@ Mỗi bài có hai phần: **các bước giải** với số liệu thật củ
 
 ### Bài A.1 — Điền số còn thiếu trong dãy
 
-> **BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng.**
-
 **Các bước giải**
 
 Xét ý a: 31, …, 35, 37, 39, 41
@@ -157,8 +155,6 @@ Kết quả: **9 678 590**.
 *Điểm chốt:* Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
 
 ### Bài A.5 — Tìm số hạng thứ n của dãy cách đều
-
-> **BẪY — Nhân với n thay vì (n − 1).**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Hiệu giữa các số hạng tăng đều đặn**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Đánh số trang, ma trận số và 
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Đếm số lần xuất hiện của một chữ số
+
+> **BẪY — Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện..**
 
 **Các bước giải**
 

@@ -116,8 +116,6 @@ Kết quả: **35**.
 
 ### Bài A.3 — Quãng đường – vận tốc – thời gian
 
-> **BẪY — Đơn vị thời gian.**
-
 **Các bước giải**
 
 Xét ý a: Một người đi quãng đường 144 km với vận tốc 36 km/giờ. Tính thời gian đi.
@@ -161,8 +159,6 @@ Kết quả: **số lớn 276, số bé 170**.
 *Điểm chốt:* Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 
 ### Bài A.5 — Nhiều hơn – ít hơn, gấp – kém
-
-> **BẪY — Gấp và kém dùng hai phép tính ngược nhau.**
 
 **Các bước giải**
 
@@ -484,6 +480,8 @@ Kết quả: **Cụm “… số còn lại”, “… số đó”**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -503,6 +501,8 @@ Kết quả: **giới thiệu chương “Mô phỏng đề thi vào lớp 6 và
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Bài toán hiệu – tỉ
+
+> **BẪY — Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ..**
 
 **Các bước giải**
 

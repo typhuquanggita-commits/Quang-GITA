@@ -17,6 +17,7 @@ sys.path.insert(0, str(CC))
 sys.path.insert(0, str(CC / "data"))
 
 from loai_phieu import LOAI                       # noqa: E402
+from data.muc_do import MUC as MUC_DO, THU_TU as THU_TU_MUC  # noqa: E402
 from sinh.khung import la_ma                      # noqa: E402
 from sinh.khung import KHO                        # noqa: E402
 from .chon import chon_nam_mau                    # noqa: E402
@@ -58,8 +59,11 @@ MUC_PHAN = {
     "OT": ["M2", "M3", "M3", "M4", "M5"],
     "TH": ["M1", "M2", "M3", "M4", "M5"],
 }
-MUC_TEN = {"M1": "Nhận biết", "M2": "Thông hiểu", "M3": "Vận dụng",
-           "M4": "Vận dụng cao", "M5": "Sáng tạo · vượt ngưỡng"}
+# Tên mức lấy từ **một nguồn duy nhất**. Trước đây hai tệp này mỗi tệp giữ
+# một bảng riêng và lệch nhau ở M5 — web gọi "Điểm 10 — phân hoá", phiếu gọi
+# "Sáng tạo · vượt ngưỡng" — nên học sinh đọc web một tên, cầm phiếu ra một
+# tên khác. Xem `data/muc_do.py` để biết mỗi mức đòi hỏi gì, đo bằng gì.
+MUC_TEN = {m: MUC_DO[m]["ten"] for m in THU_TU_MUC}
 
 # Những mẫu có các ý nối tiếp nhau thành một mạch lập luận: không được cắt bớt ý.
 KHONG_CAT = {
@@ -356,6 +360,10 @@ def khoi_dap_an(row: dict, phan, bay: dict) -> list[str]:
             L.append(f"**Hướng giải:** {hg}")
             L.append(f"**Nhãn tư duy:** {', '.join(b.td)}. Điểm chốt: {b.diem_chot}")
             L.append(f"**Lỗi thường gặp:** {b.loi} Phòng: {b.phong}")
+            # Cảnh báo của mức M1 in dưới nhãn "Chú ý" chứ không phải "BẪY":
+            # cùng một nội dung, nhưng bẫy là thứ được chấm còn chú ý thì không.
+            if b.chu_y:
+                L.append(f"**Chú ý:** {b.chu_y}.")
             if i >= 3 and b.goi_y:
                 L.append("**Gợi ý 3 tầng:** (1) {} — (2) {} — (3) {}".format(*b.goi_y))
             L.append("")

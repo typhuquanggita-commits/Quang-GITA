@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) 99, hơn kém 0 đơn vị · b) 82, hơn kém 54 đơn vị · c) 81, hơn kém 63 đơn vị · d) 62, hơn kém 36 đơn vị · e) 33, hơn kém 0 đơn vị
 - **Bài IV.2** — a) 1 phần 5 · b) 12 quyển · c) 22 · d) 32 quyển · e) 56 · f) 1 phần 2 · g) 44 quyển
 - **Bài IV.3** — a) 46 · b) 920 · c) 128 · d) 28 · e) 1 048 · f) 792
-- **Bài IV.4** — a) x = 49 · b) x = 60 · c) x = 23 · d) x = 36 · e) x = 42 · f) x = 93 : 2
+- **Bài IV.4** — a) x = 57 · b) x = 49 · c) x = 15 · d) x = 19 · e) x = 180 · f) x = 7
 - **Bài IV.5** — a) mẹ 30 tuổi, con 6 tuổi · b) 48 chiếc · c) 64 000 đồng · d) mẹ 30 tuổi, con 10 tuổi · e) 80 chiếc
 
 **Phần V**
@@ -462,19 +462,17 @@ Số bé nhất là 128, số lớn nhất là 920.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x × 5 + 34 = 279
+Xét **(x − 56) × 9 = 9**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 49**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 57**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
@@ -505,8 +503,6 @@ Thử lại: 30 − 6 = 24 ✓
 *Phải chắc trước khi làm bài này:* Bảng nhân chia, phép trừ có nhớ, và cách viết đơn vị tiền.
 
 ### Bài V.1 — Tổng ôn toán điển hình — gấp, kém, nhiều hơn, ít hơn
-
-> **BẪY — Cho thêm khác với chuyển qua lại.**
 
 **Các bước giải**
 
@@ -640,7 +636,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Đổi chỗ chữ số | Cấu tạo số có hai chữ số | “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị). | 99, hơn kém 0 đơn vị · 82, hơn kém 54 đơn vị · 81, hơn kém 63 đơn vị · 62, hơn kém 36 đơn vị… |
 | IV.2 | Tìm số khi biết một phần mấy | Quan hệ ngược của phép chia | “Một phần mấy của một số là …” | Nhân giá trị một phần với mẫu số | Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay. | 1 phần 5 · 12 quyển · 22 · 32 quyển… |
 | IV.3 | Đếm số thoả điều kiện về chữ số | Cấu tạo số, tổng chữ số, quy tắc đếm | “Số có ba chữ số khác nhau, tổng các chữ số bằng …” | Cố định hàng cao nhất rồi liệt kê phần còn lại | Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại. | 46 · 920 · 128 · 28… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 49 · x = 60 · x = 23 · x = 36… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 57 · x = 49 · x = 15 · x = 19… |
 | IV.5 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” | Tìm đại lượng trung gian rồi trả lời câu hỏi | Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số. | mẹ 30 tuổi, con 6 tuổi · 48 chiếc · 64 000 đồng · mẹ 30 tuổi, con 10 tuổi… |
 | V.1 | Toán điển hình: gấp, kém, nhiều hơn, ít hơn | Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia | “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” | Tính từng bước, bám vào tổng có đổi hay không | Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu. | 28 · 42 · 14 · 21… |
 | V.2 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. | 15 quyển · 45 quyển · 60 quyển · 26 quyển |
@@ -672,13 +668,13 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD3, TD4 | Hiệu hai số luôn là **bội của 9**. |
 | IV.2 | TD3, TD2 | Biết một phần thì nhân; biết cả số thì chia. |
 | IV.3 | TD4, TD6 | Liệt kê **có thứ tự** thì mới không sót và không trùng. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
-| V.1 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.1 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.2 | TD6, TD2 | Cụm “số còn lại” đổi hẳn số bị chia ở bước hai. |
 | V.3 | TD5, TD2 | Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu. |
 | V.4 | TD4, TD6 | Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại. |
-| V.5 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.5 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 
 ---
 

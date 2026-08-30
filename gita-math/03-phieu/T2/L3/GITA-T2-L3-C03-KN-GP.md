@@ -96,8 +96,6 @@ Kết quả: **<**.
 
 ### Bài A.2 — Quy tắc nhân trong phép đếm
 
-> **BẪY — Cộng hay nhân.**
-
 **Các bước giải**
 
 Xét ý a: Có 5 chiếc áo và 7 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
@@ -137,8 +135,6 @@ Kết quả: **ô (Hùng; Âm nhạc)**.
 *Điểm chốt:* Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 
 ### Bài A.4 — Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
-
-> **BẪY — Phần chung bị đếm hai lần.**
 
 **Các bước giải**
 
@@ -480,6 +476,8 @@ Kết quả: **Cân đĩa không có quả cân, tìm vật nhẹ hơn**.
 
 ### Bài E.1 — Kịch bản thuyết trình 5 phút
 
+> **BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình..**
+
 **Các bước giải**
 
 Xét ý a: Phút 1 nói gì?
@@ -499,6 +497,8 @@ Kết quả: **giới thiệu chương “Suy luận loại trừ, cân đĩa v�
 *Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
 
 ### Bài E.2 — Nội dung giảng — Suy luận loại trừ có bảng
+
+> **BẪY — Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng..**
 
 **Các bước giải**
 

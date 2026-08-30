@@ -277,7 +277,7 @@ e) Tìm bội chung nhỏ nhất của 14 và 86.
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dung dịch và nồng độ phần trăm
 
@@ -388,12 +388,14 @@ d) Một quyển sách có 49 trang, đánh số trang từ 1. Phải dùng tấ
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Chú ý:** Số dư phải bé hơn số chia.
 
 ### Bài II.5
 **Đáp số:** a) 7 · b) 4 · c) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · d) 5 · e) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · f) 0, 3, 6, 9
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
+**Chú ý:** Chữ số hàng cao nhất không được là 0.
 
 ### Bài III.1
 **Đáp số:** a) 230 000 đồng · b) 90 · 150 · 30 cây · c) 111 · 74 · 148 cây · d) 310 000 đồng
@@ -448,7 +450,7 @@ d) Một quyển sách có 49 trang, đánh số trang từ 1. Phải dùng tấ
 
 ### Bài IV.4
 **Đáp số:** a) 2 519 phần 1 260 · b) 93 phần 80 · c) 16 phần 5 · d) 97 phần 30
-**Hướng giải:** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Hướng giải:** BẪY — Làm phép cộng trước phép chia. Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
 **Nhãn tư duy:** TD3, TD5. Điểm chốt: Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
 **Lỗi thường gặp:** Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. Phòng: Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
@@ -476,7 +478,7 @@ d) Một quyển sách có 49 trang, đánh số trang từ 1. Phải dùng tấ
 
 ### Bài V.3
 **Đáp số:** a) 6 · b) 9 · c) 4 · d) 1
-**Hướng giải:** BẪY — Số dư 0 ứng với vị trí cuối chu kì. Viết chữ số tận cùng của các tích 1 thừa số, 2 thừa số, 3 thừa số… Dãy chữ số tận cùng lặp lại tuần hoàn với chu kì không quá 4. Lấy số thừa số chia cho độ dài chu kì, số dư cho biết vị trí trong chu kì.
+**Hướng giải:** Viết chữ số tận cùng của các tích 1 thừa số, 2 thừa số, 3 thừa số… Dãy chữ số tận cùng lặp lại tuần hoàn với chu kì không quá 4. Lấy số thừa số chia cho độ dài chu kì, số dư cho biết vị trí trong chu kì.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Chu kì lặp lại của chữ số tận cùng dài **không quá 4**.
 **Lỗi thường gặp:** Chia lấy dư rồi quên rằng số dư 0 ứng với **số cuối** của chu kì. Phòng: Đánh số vị trí trong chu kì từ 1, và quy ước dư 0 là vị trí cuối.
 **Gợi ý 3 tầng:** (1) Viết chữ số tận cùng của vài tích đầu tiên. — (2) Dãy đó lặp lại sau mấy bước? — (3) Chia số thừa số cho độ dài chu kì và xét số dư.

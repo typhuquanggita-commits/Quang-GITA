@@ -79,7 +79,7 @@ def c_m1_02(rng, lop):
         pt_phuong_phap="Xác định khoảng cách từ cặp liền nhau đã biết",
         pt_nhanh="Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy.",
         tuong_tu=("Điền số: 4, 9, …, 19, 24", "14"),
-        bay="Hai số hai bên chỗ trống cách nhau hai khoảng",
+        chu_y="Hai số hai bên chỗ trống cách nhau hai khoảng",
     )
 
 
@@ -140,7 +140,7 @@ def c_m1_04(rng, lop):
         pt_phuong_phap="Đếm số khoảng rồi nhân với khoảng cách",
         pt_nhanh="Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng.",
         tuong_tu=("Dãy 5, 9, 13, … số hạng thứ 20 là số nào?", "81"),
-        bay="Nhân với n thay vì (n − 1)",
+        chu_y="Nhân với n thay vì (n − 1)",
     )
 
 
@@ -439,7 +439,8 @@ def c_m4_01(rng, lop):
         huong_giai="Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng "
                    "cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách "
                    "đều bằng trung bình cộng của số hạng đầu và số hạng cuối.",
-        td=["TD4", "TD3"],
+        td=["TD4", "TD3", "TD5"],
+        bay="Tính tổng rồi mới chia, trong khi chỉ cần hai số đầu và cuối",
         diem_chot="Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.",
         loi="Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều.",
         phong="Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng.",
@@ -527,7 +528,8 @@ def c_m4_03(rng, lop):
         huong_giai="Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy "
                    "cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ "
                    "và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.",
-        td=["TD4", "TD2"],
+        td=["TD4", "TD2", "TD5"],
+        bay="Duyệt từng số hạng để đếm thay vì nhận ra dãy con cũng cách đều",
         diem_chot="Dãy con cũng **cách đều**, chỉ khác khoảng cách.",
         loi="Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số.",
         phong="Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới.",

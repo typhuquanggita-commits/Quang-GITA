@@ -270,7 +270,7 @@ e) Hình chữ nhật dài 18 cm, rộng 4 cm. Nếu tăng cả chiều dài và
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Dãy số lặp lại theo chu kì
 
@@ -337,18 +337,21 @@ f) 8 người làm xong một công việc trong 7 ngày. Nếu có thêm 2 ngư
 **Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
 **Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+**Chú ý:** Quên chia đôi chu vi.
 
 ### Bài I.2
 **Đáp số:** a) 961 cm² · b) 22 cm · c) 212 cm · d) 1 110 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị của diện tích.
 
 ### Bài I.3
 **Đáp số:** a) 40 484 · b) 1 332 266 · c) 310 881 780 · d) 623 632 · e) 714 808
 **Hướng giải:** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
 **Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
 **Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+**Chú ý:** Chữ số 0 ở giữa thương.
 
 ### Bài I.4
 **Đáp số:** a) bằng · b) góc nhọn · c) 2 cặp song song, 4 cặp vuông góc · d) bé hơn · e) góc nhọn
@@ -361,6 +364,7 @@ f) 8 người làm xong một công việc trong 7 ngày. Nếu có thêm 2 ngư
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
+**Chú ý:** Bỏ sót các hình ghép nhiều ô.
 
 ### Bài II.1
 **Đáp số:** a) (14 + 6) × 2 = 40 m · b) 40 − 2 = 38 m · c) 40 : 2 = 20 cọc · d) 38 × 30 000 = 1 140 000 đồng · e) 14 × 6 = 84 m²
@@ -431,7 +435,7 @@ f) 8 người làm xong một công việc trong 7 ngày. Nếu có thêm 2 ngư
 
 ### Bài IV.2
 **Đáp số:** a) x = 24 · b) x = 62 · c) x = 80 · d) x = 75
-**Hướng giải:** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+**Hướng giải:** BẪY — Chuyển vế mà quên đổi dấu. Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
 **Lỗi thường gặp:** Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. Phòng: Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x.
 **Gợi ý 3 tầng:** (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
@@ -452,7 +456,7 @@ f) 8 người làm xong một công việc trong 7 ngày. Nếu có thêm 2 ngư
 
 ### Bài IV.5
 **Đáp số:** a) 2 lần · b) 2 lần · c) 2 lần · d) 2 lần · e) 279 cm²
-**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
+**Hướng giải:** Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.

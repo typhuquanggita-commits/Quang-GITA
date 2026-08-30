@@ -464,6 +464,8 @@ Thử lại: 8 + 48 + 96 + 64 = 216 ✓
 
 ### Bài IV.4 — Biểu thức nhiều phép tính với phân số
 
+> **BẪY — Làm phép cộng trước phép chia.**
+
 **Các bước giải**
 
 Xét ý a: 1 : 3 phần 5 + 1
@@ -505,8 +507,6 @@ Hiệu của phân số lớn nhất và bé nhất: 5 phần 6 − 1 phần 6 =
 *Phải chắc trước khi làm bài này:* Rút gọn phân số và quy đồng mẫu số.
 
 ### Bài V.1 — Hai lần thay đổi phần trăm liên tiếp
-
-> **BẪY — Mốc 100% thay đổi sau mỗi lần.**
 
 **Các bước giải**
 

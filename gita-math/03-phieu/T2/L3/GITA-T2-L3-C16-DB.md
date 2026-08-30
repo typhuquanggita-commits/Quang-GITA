@@ -393,6 +393,7 @@ f) Lỗi nào dễ mắc ở đề này?
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Chú ý:** Đơn vị diện tích.
 
 ### Bài B.2
 **Đáp số:** a) 4C: 433 quyển, 3B: 351 quyển · b) trang trại: 121 kg, hợp tác xã: 63 kg · c) tổ Ba: 494 cây, đội Một: 366 cây · d) 3A: 73 quyển, 5A: 63 quyển · e) tổ Ba: 142 cây, đội Hai: 100 cây

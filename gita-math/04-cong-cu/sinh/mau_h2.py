@@ -224,4 +224,4 @@ def b2_m1_41(rng, lop):
         tuong_tu=("Đặt tính rồi tính: 3 045 × 24", "73 080"),
         mo_rong="Thêm phép tính có dấu ngoặc để ôn thứ tự thực hiện.",
         chuan_bi="Bảng nhân chia và kĩ thuật đặt tính.",
-        bay="Chữ số 0 ở giữa thương")
+        chu_y="Chữ số 0 ở giữa thương")

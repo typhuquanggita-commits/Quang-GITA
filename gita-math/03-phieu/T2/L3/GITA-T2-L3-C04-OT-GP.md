@@ -442,6 +442,8 @@ Kết quả: **70 chiếc**.
 
 ### Bài IV.3 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Dũng và Minh có tất cả 172 quyển vở. Dũng có nhiều hơn Minh 30 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -668,7 +670,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.5 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
 | V.1 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | V.2 | TD2, TD3 | Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng. |
-| V.3 | TD2, TD3 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
+| V.3 | TD2, TD3, TD5 | Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**. |
 | V.4 | TD6, TD3 | Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển. |
 | V.5 | TD1, TD2 | Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài. |
 

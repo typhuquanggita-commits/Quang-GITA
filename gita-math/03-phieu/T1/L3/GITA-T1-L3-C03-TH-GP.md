@@ -390,6 +390,8 @@ Kiểm tra: xếp được 2 hàng, mỗi hàng 1 hình — đúng 2 hình ✓
 
 ### Bài IV.1 — Tìm hai số khi biết tổng và hiệu
 
+> **BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số.**
+
 **Các bước giải**
 
 Xét ý a: Hà và Quân có tất cả 50 quyển vở. Hà có nhiều hơn Quân 10 quyển. Hỏi mỗi bạn có bao nhiêu quyển vở?
@@ -431,6 +433,8 @@ Kết quả: **chu vi 112 cm, diện tích 588 cm²**.
 *Điểm chốt:* Diện tích cộng được, **chu vi thì không**.
 
 ### Bài IV.3 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -500,8 +504,6 @@ Thử lại: (30 + 22) × 2 = 104 ✓
 
 ### Bài V.1 — Cân đĩa và quả cân
 
-> **BẪY — Phép chia có dư.**
-
 **Các bước giải**
 
 Xét ý a: Một chiếc cân đĩa chỉ có các quả cân loại 500 g. Muốn cân một vật nặng 2 000 g thì cần bao nhiêu quả cân như thế?
@@ -521,8 +523,6 @@ Kết quả: **4 quả**.
 *Điểm chốt:* Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
 
 ### Bài V.2 — Đếm đoạn thẳng và tam giác
-
-> **BẪY — Bỏ sót đoạn ghép.**
 
 **Các bước giải**
 
@@ -673,9 +673,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.4 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
 | IV.5 | TD3, TD2 | Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ. |
 | V.1 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
-| V.2 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.2 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.3 | TD6, TD3 | Tăng chiều dài thì diện tích tăng theo **chiều rộng**, và ngược lại. |
-| V.4 | TD3, TD2 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
+| V.4 | TD3, TD2, TD5 | Bên phải thì **nhân 10**, bên trái thì **cộng thêm**. |
 | V.5 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
 
 ---

@@ -272,7 +272,7 @@ e) Có 5 gói kẹo, mỗi gói 125 g. Lấy ra 1 gói. Hỏi số kẹo còn l�
 
 ---
 
-## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
+## PHẦN V — PHÂN HOÁ ĐIỂM 10 · Mức M5 — Phân hoá — điểm 10 · 18 phút · 15 điểm
 
 ### Bài 1. (3 điểm) Bài toán gà và chó
 
@@ -338,12 +338,14 @@ f) Phải cho nhóm Hoa Phượng thêm bao nhiêu lá nữa thì hai tổ bằn
 **Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Chú ý:** Gấp và kém dùng hai phép tính ngược nhau.
 
 ### Bài I.2
 **Đáp số:** a) 115 lá cờ · b) 88 lá cờ · c) 88 lá cờ · d) 96 lá cờ · e) 56 lá cờ · f) 108 lá cờ
 **Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+**Chú ý:** Đọc kĩ câu hỏi cuối.
 
 ### Bài I.3
 **Đáp số:** a) số lớn 148, số bé 94 · b) số lớn 248, số bé 128 · c) số lớn 24, số bé 20 · d) số lớn 96, số bé 76 · e) số lớn 71, số bé 45 · f) số lớn 108, số bé 102
@@ -439,7 +441,7 @@ f) Phải cho nhóm Hoa Phượng thêm bao nhiêu lá nữa thì hai tổ bằn
 
 ### Bài IV.3
 **Đáp số:** a) Minh: 42 quyển, Ngọc: 30 quyển · b) Minh: 33 quyển, Chi: 17 quyển · c) Thảo: 111 quyển, Vy: 59 quyển · d) Sơn: 118 quyển, Trang: 66 quyển · e) Tuấn: 64 quyển, Lan: 54 quyển · f) Lan: 107 quyển, An: 67 quyển
-**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Hướng giải:** BẪY — Chia đôi tổng rồi cộng cả hiệu vào một số. Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
 **Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Vẽ hai đoạn thẳng, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
@@ -467,7 +469,7 @@ f) Phải cho nhóm Hoa Phượng thêm bao nhiêu lá nữa thì hai tổ bằn
 
 ### Bài V.2
 **Đáp số:** a) 46 quyển · b) 37 quyển · c) 28 quyển · d) 18 quyển · e) 36 bông · f) 3 giờ
-**Hướng giải:** BẪY — Hiệu thay đổi gấp đôi số chuyển. Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
+**Hướng giải:** Tổng không đổi khi chuyển qua lại, nên sau khi cho, mỗi bạn có nửa tổng. Từ đó đi ngược lại: cộng phần đã cho để ra số lúc đầu. Một lần chuyển làm hiệu thay đổi **gấp đôi** số được chuyển.
 **Nhãn tư duy:** TD6, TD3. Điểm chốt: Tổng là đại lượng **bất biến**; hiệu đổi gấp đôi số chuyển.
 **Lỗi thường gặp:** Cho rằng hiệu lúc đầu bằng đúng số vở đã chuyển. Phòng: Thử lại: cộng trừ ra hai số lúc đầu rồi kiểm tra cả tổng và hiệu.
 **Gợi ý 3 tầng:** (1) Khi chuyển vở qua lại, tổng số vở có đổi không? — (2) Sau khi cho, mỗi bạn có bao nhiêu quyển? — (3) Đi ngược lại: lúc đầu bạn cho có nhiều hơn bấy nhiêu quyển.
@@ -489,7 +491,7 @@ f) Phải cho nhóm Hoa Phượng thêm bao nhiêu lá nữa thì hai tổ bằn
 ### Bài V.5
 **Đáp số:** a) 123 · b) 164 · c) 82 · d) 47 · e) 76 · f) 82
 **Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Nhãn tư duy:** TD2, TD3, TD5. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
 **Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Tổ thứ hai có bao nhiêu lá cờ? — (2) Tổ thứ hai nhiều hơn tổ thứ nhất bao nhiêu? — (3) Cho thêm cho một bên thì thêm đúng phần hơn.
 

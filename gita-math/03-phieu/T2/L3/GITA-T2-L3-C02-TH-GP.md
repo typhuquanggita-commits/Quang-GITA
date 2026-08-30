@@ -57,7 +57,7 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 - **Bài IV.1** — a) mẹ 24 tuổi, con 8 tuổi · b) 40 chiếc · c) 52 000 đồng · d) mẹ 33 tuổi, con 11 tuổi · e) 26 000 đồng · f) 120 chiếc
 - **Bài IV.2** — a) chu vi 60 cm, diện tích 200 cm² · b) chu vi 88 cm, diện tích 363 cm² · c) chu vi 24 cm, diện tích 27 cm² · d) chu vi 66 cm, diện tích 242 cm² · e) chu vi 30 cm, diện tích 50 cm²
 - **Bài IV.3** — a) 549 · b) 869 · c) 139 · d) 957 · e) 146 · f) 243
-- **Bài IV.4** — a) x = 336 · b) x = 17 · c) x = 53 · d) x = 381 : 6 · e) x = 174
+- **Bài IV.4** — a) x = 3 · b) x = 56 · c) x = 119 · d) x = 53 · e) x = 55
 - **Bài IV.5** — a) 6 m · b) 6 000 000 đồng · c) 30 chai · d) 3 000 000 đồng
 
 **Phần V**
@@ -454,25 +454,25 @@ Kết quả: **chu vi 60 cm, diện tích 200 cm²**.
 
 ### Bài IV.4 — Tìm x qua hai bước
 
+> **BẪY — Gỡ phép trong ngoặc trước phép ngoài ngoặc.**
+
 **Các bước giải**
 
-Xét ý a: x : 6 + 49 = 105
+Xét **(x + 6) × 9 = 81**.
 
-Đọc vị: đây là dạng **Tìm x hai bước**; dấu hiệu là x nằm trong một cụm có hai phép tính.
+Khoanh tròn cụm chứa x rồi coi cả cụm là **một số chưa biết**. Việc phải làm là gỡ phép tính **ngoài cùng** trước.
 
-Kiến thức phải dùng: Quan hệ các thành phần của phép tính.
+Gỡ được phép ngoài rồi mới còn lại một phép tính đơn, tìm x ở đó.
 
-Cách làm: Gỡ dần từ ngoài vào trong.
-
-Lối tắt: Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước.
-
-Kết quả: **x = 336**.
+Thay x trở lại đề để thử: ra đúng vế phải thì mới nhận. Kết quả: **x = 3**.
 
 **Cách nghĩ chung cho mọi bài cùng dạng.** Coi cụm chứa x là một thành phần của phép tính ngoài cùng. Tìm giá trị của cụm đó trước, rồi mới tìm x bên trong. Cuối cùng thay x vào đề để thử lại.
 
 *Điểm chốt:* Gỡ **phép tính ngoài cùng trước**, phép trong sau.
 
 ### Bài IV.5 — Bài toán thực tế về đo lường và mua bán
+
+> **BẪY — Cộng trừ hai đại lượng khác loại — số bao và số ki-lô-gam.**
 
 **Các bước giải**
 
@@ -524,8 +524,6 @@ Kiểm tra với 3 điểm: 3 × 2 : 2 = 3 đoạn ✓
 
 ### Bài V.2 — Một phần mấy qua hai bước — chú ý “số còn lại”
 
-> **BẪY — Phân số của số còn lại.**
-
 **Các bước giải**
 
 Bước 1 — ngày đầu phát: 96 : 3 = 32 (quyển).
@@ -549,8 +547,6 @@ So sánh: nếu tính trên tổng ban đầu thì được 48 quyển — khác
 *Phải chắc trước khi làm bài này:* Tìm một phần mấy của một số và phép trừ.
 
 ### Bài V.3 — Tính nhanh tổng các số tự nhiên liên tiếp
-
-> **BẪY — Số số hạng lẻ thì còn số ở giữa.**
 
 **Các bước giải**
 
@@ -640,7 +636,7 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ | Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền | “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” | Tìm đại lượng trung gian rồi trả lời câu hỏi | Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số. | mẹ 24 tuổi, con 8 tuổi · 40 chiếc · 52 000 đồng · mẹ 33 tuổi, con 11 tuổi… |
 | IV.2 | Ghép hình, chu vi và diện tích | Chu vi, diện tích hình chữ nhật | “Ghép … hình vuông thành …” | Xác định kích thước hình mới rồi áp công thức | Ghép thành hàng ngang thì chiều rộng vẫn bằng cạnh hình vuông. | chu vi 60 cm, diện tích 200 cm² · chu vi 88 cm, diện tích 363 cm² · chu vi 24 cm, diện tích 27 cm² · chu vi 66 cm, diện tích 242 cm²… |
 | IV.3 | Nhân nhẩm nhờ tách thừa số | Nhân một số với một tổng, một hiệu | Thừa số là 9, 11, 19, 21… | Tách về số tròn rồi bù trừ | × 9 là × 10 rồi bớt chính số đó. | 549 · 869 · 139 · 957… |
-| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 336 · x = 17 · x = 53 · x = 381 : 6… |
+| IV.4 | Tìm x hai bước | Quan hệ các thành phần của phép tính | x nằm trong một cụm có hai phép tính | Gỡ dần từ ngoài vào trong | Thay x vừa tìm vào đề để thử — nhanh hơn dò lại từng bước. | x = 3 · x = 56 · x = 119 · x = 53… |
 | IV.5 | Bài toán đại lượng nhiều bước | Nhân, trừ; đơn vị khối lượng, độ dài, dung tích | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt | Tính đại lượng trung gian rồi trả lời | Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. | 6 m · 6 000 000 đồng · 30 chai · 3 000 000 đồng |
 | V.1 | Đếm hình bằng quy tắc chọn hai điểm | Đếm cặp | Nhiều điểm trên một đường, hoặc nhiều đoạn kẻ từ một đỉnh | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc là xong. | 10 · 5 · 15 · 3… |
 | V.2 | Tìm phân số của một số qua nhiều bước | Phân số một phần mấy, phép trừ liên tiếp | Cụm “… số còn lại” | Tính tuần tự, ghi lại số còn lại sau mỗi bước | Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh. | 32 quyển · 64 quyển · 32 quyển · 32 quyển… |
@@ -672,9 +668,9 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | IV.1 | TD2, TD3 | Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**. |
 | IV.2 | TD3, TD6 | Diện tích cộng được, **chu vi thì không**. |
 | IV.3 | TD5, TD3 | Tách về **số tròn** rồi bù — nhân với số tròn bao giờ cũng dễ hơn. |
-| IV.4 | TD3 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
+| IV.4 | TD3, TD4 | Gỡ **phép tính ngoài cùng trước**, phép trong sau. |
 | IV.5 | TD2, TD3 | Không cộng trừ hai đại lượng **khác loại** — số bao và số ki-lô-gam. |
-| V.1 | TD4, TD3 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
+| V.1 | TD4, TD3, TD5 | Chia 2 vì mỗi cặp được đếm **hai lần**. |
 | V.2 | TD6, TD2 | Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu. |
 | V.3 | TD4, TD5 | Ghép cặp đầu – cuối, mọi cặp có **tổng bằng nhau**. |
 | V.4 | TD4, TD5 | Mọi cặp đầu – cuối đều có **cùng một tổng**. |
