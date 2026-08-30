@@ -87,12 +87,12 @@
       man: ['vh-so-do', 'vh-truoc-trong-sau', 'vh-ban12', 'vh-raci-kpi', 'vh-canh-bao', 'vh-bieu-mau',
             'ms-loi-mo', 'ms-luan-diem', 'ms-ba-chang', 'ms-mo-thuc', 'ms-rui-ro', 'ms-khung-sach',
             'tr-bay-ngay', 'tr-lich-hau', 'tr-an-toan', 'tr-vip', 'tr-bukatsu',
-            'gv-anh-xa-bac'],
+            'gv-anh-xa-bac', 'so-nguon', 'so-nguon-no'],
       kho: ['VH2_SO_DO', 'VH2_TRUOC', 'VH2_TRONG', 'VH2_SAU', 'VH2_BAN12', 'VH2_RACI', 'VH2_KPI',
             'VH2_CANH_BAO', 'VH2_BIEU_MAU', 'VH2_LUAT',
             'MS_LUAN_DIEM', 'MS_CHANG', 'MS_MO_THUC', 'MS_RUI', 'MS_TRICH',
             'TV2_TRAI_KHUNG', 'TV2_VIP_CHUONG_TRINH', 'TV2_BUKATSU',
-            'TY_ANH_XA_BAC', 'TY_ANH_XA_LUAT'] }
+            'TY_ANH_XA_BAC', 'TY_ANH_XA_LUAT', 'SN_TEP', 'SN_NO', 'SN_LUAT'] }
   ];
 
   /* ── 2 · Món nợ số ────────────────────────────────────────
@@ -145,7 +145,10 @@
     { t: 'Ba mươi hai hoạt động trong ngân hàng', so: 32, kho: 'GA_HOAT_DONG' },
     { t: 'Hai mươi khẩu quyết', so: 20, kho: 'GA_KHAU_QUYET' },
     { t: 'Mười lăm tuần một học kỳ', so: 15, kho: 'GA_HOC_KY' },
-    { t: 'Mười tám luật dạy một buổi', so: 18, kho: 'GA_LUAT' }
+    { t: 'Mười tám luật dạy một buổi', so: 18, kho: 'GA_LUAT' },
+    { t: 'Bốn trạng thái của một dòng sổ nguồn', so: 4, kho: 'SN_TRANG_THAI' },
+    { t: 'Sáu luật giữ sổ nguồn', so: 6, kho: 'SN_LUAT' },
+    { t: 'Sáu món nợ nguồn còn lại', so: 6, kho: 'SN_NO' }
   ];
 
   /* ── 3 · Luật giữ sổ ─────────────────────────────────────── */

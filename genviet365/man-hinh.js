@@ -202,7 +202,9 @@ GV.NHOM = [
       { v: 'so-chuan', t: 'Sổ Chuẩn', h: 'Mọi lần đổi chuẩn, không xoá dòng nào' },
       { v: 'ban-do-he', t: 'Bản đồ toàn hệ', h: 'Tám phần · mười đường đọc theo vai' },
       { v: 'so-cai-yc', t: 'Sổ cái yêu cầu', h: 'Mỗi yêu cầu một dòng · máy soi từng viện dẫn' },
-      { v: 'so-cai-no', t: 'Món nợ số', h: 'Hứa bao nhiêu thì phải viết ra bấy nhiêu' }
+      { v: 'so-cai-no', t: 'Món nợ số', h: 'Hứa bao nhiêu thì phải viết ra bấy nhiêu' },
+      { v: 'so-nguon', t: 'Sổ nguồn', h: 'Từng tệp kho gốc · đã rút hay còn nợ' },
+      { v: 'so-nguon-no', t: 'Nợ nguồn và cách gỡ', h: 'Chỗ chưa lấy được, và làm gì thì lấy được' }
     ]},
   { id: 'g21', no: '21', t: 'XƯƠNG SỐNG GEN VIỆT', s: 'Mười lăm giai đoạn và năm tuyến, rút từ tài liệu gốc', mau: '#BE0E16',
     ds: [
@@ -2177,6 +2179,32 @@ GV.MAN = {
     { k: 'muc', t: 'Chín phần của Phần 0' },
     { k: 'moc', tu: 'GA_PHAN_0' },
     { k: 'van', t: 'Tuần 1 là *phiếu khảo sát xuất phát điểm*, và tuần cuối đối chiếu lại chính phiếu ấy. Không có phiếu tuần 1 thì mọi con số cuối kỳ chỉ là mô tả, không phải bằng chứng — đúng như khung nghiên cứu ở nhóm 26 đã đặt ra.' }
+  ]},
+
+/* ══════════ BỔ SUNG NHÓM 20 · SỔ NGUỒN ══════════ */
+'so-nguon': { q: 'chung', k: 'Tra cứu', t: 'Sổ nguồn',
+  p: 'Sổ yêu cầu trả lời "đã làm đủ thứ được yêu cầu chưa". Sổ này trả lời câu còn lại: đã đọc hết kho tài liệu của Học viện chưa.',
+  khoi: [
+    { k: 'van', t: 'Từng tệp trong thư mục GEN VIỆT được ghi thành một dòng, kèm trạng thái thật. Dòng nào ghi *đã rút* đều phải nêu được kho chứa thứ rút ra — và bộ kiểm soi lại kho ấy ở mỗi lần dựng, y như với sổ yêu cầu.' },
+    { k: 'muc', t: 'Bốn trạng thái' },
+    { k: 'luoi', c: 2, tu: 'SN_TRANG_THAI' },
+    { k: 'muc', t: 'Sổ nguồn' },
+    { k: 'bang', cot: ['Tệp', 'Cỡ', 'Trạng thái', 'Rút ra được gì', 'Kho chứa'], tu: 'SN_TEP' },
+    { k: 'muc', t: 'Sáu luật giữ sổ nguồn' },
+    { k: 'luat', tu: 'SN_LUAT' },
+    { k: 'trich', t: 'Khi bản gốc có sạn thì giữ nguyên sạn và ghi chú. Sửa là việc của Học viện, không phải của bản dựng.', n: 'Luật giữ sổ nguồn thứ tư' }
+  ]},
+
+'so-nguon-no': { q: 'chung', k: 'Tra cứu', t: 'Nợ nguồn, và cách gỡ từng món',
+  p: 'Chỗ chưa lấy được thì ghi là chưa lấy được. Nhưng nêu vấn đề mà không nêu cách gỡ thì chỉ là than phiền — nên mỗi dòng ở đây đều kèm việc cụ thể phải làm.',
+  khoi: [
+    { k: 'rui', tu: 'SN_NO' },
+    { k: 'van', t: 'Ba món đầu là *nợ kỹ thuật*: tệp quá nặng vì ảnh chèn, gỡ ảnh ra là lấy được ngay. Món thứ năm khác hẳn — triển khai chi tiết khối 4 và khối 5 chưa lấy được không phải vì tệp nặng, mà vì **kho gốc chưa có tài liệu ấy**. Đó là khoảng trống nội dung của Học viện, và chỉ Học viện lấp được.' },
+    { k: 'canh', ds: [
+      'Bộ kiểm chặn mọi dòng nợ nguồn nêu vấn đề mà không nêu cách gỡ dài quá bốn mươi ký tự.',
+      'Nợ nguồn không được đóng bằng cách xoá dòng. Chỉ đóng được bằng cách đưa tệp đọc được vào kho rồi đổi trạng thái sang ĐÃ RÚT.',
+      'Khối 4 và khối 5 nên biên soạn theo đúng khung cứng đã rút được từ khối 1–3: hai tiết × bốn mươi lăm phút, năm pha mỗi tiết, một câu chuyện, một khẩu quyết, một bộ thẻ tình huống.'
+    ]}
   ]}
 
 };

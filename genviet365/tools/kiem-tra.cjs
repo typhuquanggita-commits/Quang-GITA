@@ -24,7 +24,7 @@ var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
            'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
-           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-capdo.js', 'du-lieu-master.js', 'du-lieu-chuyende.js', 'du-lieu-vanhanh2.js', 'du-lieu-trai-vip.js', 'du-lieu-giaoan.js', 'du-lieu-socai.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
+           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-capdo.js', 'du-lieu-master.js', 'du-lieu-chuyende.js', 'du-lieu-vanhanh2.js', 'du-lieu-trai-vip.js', 'du-lieu-giaoan.js', 'du-lieu-socai.js', 'du-lieu-songuon.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js', 'nen/dau-hieu.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = [];
 
@@ -503,6 +503,42 @@ if (!G.SC_YEU_CAU || !G.SC_MON_NO) {
   });
   console.log('SỔ CÁI   · ' + G.SC_YEU_CAU.length + ' dòng yêu cầu · ' +
     G.SC_MON_NO.length + ' món nợ số · mọi viện dẫn đều có thật');
+}
+
+/* ── 6c. SỔ NGUỒN ──────────────────────────────────────
+      Sổ yêu cầu soi "đã làm đủ chưa". Sổ này soi câu còn lại:
+      "đã đọc hết kho tài liệu chưa" — và quan trọng hơn, mọi dòng
+      ghi ĐÃ RÚT phải nêu được kho có thật chứa thứ rút ra. */
+if (!G.SN_TEP) {
+  L('Thiếu sổ nguồn (du-lieu-songuon.js)');
+} else {
+  var TT = {};
+  (G.SN_TRANG_THAI || []).forEach(function (x) { TT[x.t] = 1; });
+  var demRut = 0, demNo = 0;
+  G.SN_TEP.forEach(function (d) {
+    if (d.length !== 5) { L('Dòng sổ nguồn không đủ 5 ô: ' + d[0]); return; }
+    if (!TT[d[2]]) L('Sổ nguồn: tệp "' + d[0] + '" mang trạng thái lạ: ' + d[2]);
+    if (d[2] === 'CHƯA ĐỌC ĐƯỢC') demNo++;
+    if (d[2] !== 'ĐÃ RÚT') return;
+    demRut++;
+    /* khoá kho viện dẫn phải có thật và có dữ liệu */
+    d[4].split('·').forEach(function (k) {
+      k = k.trim();
+      if (!k || k === 'không rút' || k === 'chưa có') return;
+      var v = G[k];
+      if (v == null) L('Sổ nguồn: tệp "' + d[0] + '" nói đã rút vào GV.' + k + ' nhưng kho ấy không có');
+      else if (Array.isArray(v) && !v.length) L('Sổ nguồn: tệp "' + d[0] + '" rút vào GV.' + k + ' nhưng kho RỖNG');
+    });
+  });
+  /* mỗi món nợ nguồn phải kèm cách gỡ, không được chỉ nêu vấn đề */
+  (G.SN_NO || []).forEach(function (x) {
+    if (!x.phanh || x.phanh.length < 40)
+      L('Nợ nguồn "' + x.t + '" nêu vấn đề mà không nêu cách gỡ cụ thể');
+  });
+  if (demNo && !(G.SN_NO || []).length)
+    L('Sổ nguồn có tệp chưa đọc được nhưng không có mục nợ nguồn nào');
+  console.log('SỔ NGUỒN · ' + G.SN_TEP.length + ' dòng tệp · ' + demRut +
+    ' đã rút · ' + demNo + ' còn nợ · mọi viện dẫn kho đều có thật');
 }
 
 /* ── 7. vỏ và bộ gộp phải nạp đủ tệp ─────────────────── */
