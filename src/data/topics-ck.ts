@@ -50,7 +50,7 @@ export const TOPICS_CK: Topic[] = [
       'aᵐ · aⁿ = aᵐ⁺ⁿ;  aᵐ : aⁿ = aᵐ⁻ⁿ (m ≥ n, a ≠ 0)',
       'ƯCLN(a, b) · BCNN(a, b) = a · b',
     ],
-    questionIds: [],
+    questionIds: ['q-ck6-01', 'q-ck6-02'],
   },
   {
     id: 'ck6-so-nguyen',
@@ -87,7 +87,7 @@ export const TOPICS_CK: Topic[] = [
       '(−a)·(−b) = a·b;  (−a)·b = −(a·b)',
       '−a² = −(a²) nhưng (−a)² = a²',
     ],
-    questionIds: [],
+    questionIds: ['q-ck6-03', 'q-ck6-04'],
   },
   {
     id: 'ck6-phan-so',
@@ -124,7 +124,7 @@ export const TOPICS_CK: Topic[] = [
       'm/n của A = A × m : n;  A = giá trị : m × n',
       'Tỉ số phần trăm của a so với b: a : b × 100%',
     ],
-    questionIds: [],
+    questionIds: ['q-ck6-05', 'q-ck6-06'],
   },
   {
     id: 'ck6-hinh-truc-quan',
@@ -161,7 +161,7 @@ export const TOPICS_CK: Topic[] = [
       'S hình thang = (a + b) × h : 2',
       'Chu vi hình vuông = 4a;  S hình vuông = a²',
     ],
-    questionIds: [],
+    questionIds: ['q-ck6-07', 'q-ck6-08'],
   },
   {
     id: 'ck6-du-lieu-xac-suat',
@@ -197,7 +197,7 @@ export const TOPICS_CK: Topic[] = [
       'Xác suất thực nghiệm = số lần sự kiện xảy ra : tổng số lần thực hiện',
       'Tổng tần số = cỡ mẫu',
     ],
-    questionIds: [],
+    questionIds: ['q-ck6-09', 'q-ck6-10'],
   },
 
   /* ==================== LỚP 7 ==================== */
@@ -236,7 +236,7 @@ export const TOPICS_CK: Topic[] = [
       '√(a²) = |a|;  √(ab) = √a · √b với a, b ≥ 0',
       '|x| = a (a ≥ 0) ⟺ x = a hoặc x = −a',
     ],
-    questionIds: [],
+    questionIds: ['q-ck7-01', 'q-ck7-02'],
   },
   {
     id: 'ck7-ti-le-thuc',
@@ -273,7 +273,7 @@ export const TOPICS_CK: Topic[] = [
       'a/x = b/y = (a ± b)/(x ± y) khi x ± y ≠ 0',
       'Tỉ lệ thuận: y = kx;  tỉ lệ nghịch: x·y = a',
     ],
-    questionIds: [],
+    questionIds: ['q-ck7-03', 'q-ck7-04'],
   },
   {
     id: 'ck7-bieu-thuc-da-thuc',
@@ -310,7 +310,7 @@ export const TOPICS_CK: Topic[] = [
       'A(x) − B(x) = A(x) + [−B(x)]',
       'x = a là nghiệm của P(x) ⟺ P(a) = 0',
     ],
-    questionIds: [],
+    questionIds: ['q-ck7-05', 'q-ck7-06'],
   },
   {
     id: 'ck7-tam-giac-bang-nhau',
@@ -347,7 +347,7 @@ export const TOPICS_CK: Topic[] = [
       'Góc ngoài bằng tổng hai góc trong không kề với nó',
       'Ba trường hợp bằng nhau: c–c–c, c–g–c, g–c–g',
     ],
-    questionIds: [],
+    questionIds: ['q-ck7-07', 'q-ck7-08'],
   },
   {
     id: 'ck7-thong-ke-xac-suat',
@@ -383,7 +383,7 @@ export const TOPICS_CK: Topic[] = [
       'P(biến cố) = số kết quả thuận lợi : tổng số kết quả (khi đồng khả năng)',
       '0 ≤ P ≤ 1;  P(chắc chắn) = 1;  P(không thể) = 0',
     ],
-    questionIds: [],
+    questionIds: ['q-ck7-09', 'q-ck7-10'],
   },
 
   /* ==================== LỚP 8 ==================== */
@@ -422,7 +422,7 @@ export const TOPICS_CK: Topic[] = [
       '(a ± b)³ = a³ ± 3a²b + 3ab² ± b³',
       'a³ + b³ = (a + b)(a² − ab + b²);  a³ − b³ = (a − b)(a² + ab + b²)',
     ],
-    questionIds: [],
+    questionIds: ['q-ck8-01', 'q-ck8-02'],
   },
   {
     id: 'ck8-phan-thuc',
@@ -459,7 +459,7 @@ export const TOPICS_CK: Topic[] = [
       'A/B + C/B = (A + C)/B;  A/B · C/D = (A·C)/(B·D)',
       'A/B : C/D = A/B · D/C (C ≠ 0)',
     ],
-    questionIds: [],
+    questionIds: ['q-ck8-03', 'q-ck8-04'],
   },
   {
     id: 'ck8-pt-ham-so',
@@ -496,7 +496,7 @@ export const TOPICS_CK: Topic[] = [
       'y = ax + b: a là hệ số góc, b là tung độ gốc',
       'Hai đường thẳng song song ⟺ a = a′ và b ≠ b′',
     ],
-    questionIds: [],
+    questionIds: ['q-ck8-05', 'q-ck8-06'],
   },
   {
     id: 'ck8-thales-dong-dang',
@@ -533,7 +533,7 @@ export const TOPICS_CK: Topic[] = [
       'Pythagore: a² + b² = c² với c là cạnh huyền',
       'Tỉ số diện tích hai tam giác đồng dạng = k² với k là tỉ số đồng dạng',
     ],
-    questionIds: [],
+    questionIds: ['q-ck8-07', 'q-ck8-08'],
   },
   {
     id: 'ck8-hinh-chop-xac-suat',
@@ -570,6 +570,6 @@ export const TOPICS_CK: Topic[] = [
       'V hình chóp = (1/3) × S đáy × chiều cao',
       'P(biến cố) = số kết quả thuận lợi : tổng số kết quả',
     ],
-    questionIds: [],
+    questionIds: ['q-ck8-09', 'q-ck8-10'],
   },
 ];

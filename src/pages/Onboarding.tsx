@@ -25,12 +25,19 @@ export default function Onboarding() {
   const [answers, setAnswers] = useState<Record<string, number>>({});
 
   const quiz = useMemo(
-    () =>
+    () => {
       /* Luồng vào 6 có bộ câu riêng ở trình độ tiểu học, không dùng chung câu 'both'. */
-      track === 'lop6'
-        ? PLACEMENT.filter((q) => q.track === 'lop6')
-        : PLACEMENT.filter((q) => q.track === 'both' || q.track === track),
-    [track],
+      if (track === 'lop6') return PLACEMENT.filter((q) => q.track === 'lop6');
+      /* Luồng chính khoá trải từ lớp 6 tới lớp 12, nên phải lọc thêm theo khối lớp:
+         học sinh lớp 6 không thể làm bài xếp lộ trình bằng câu ôn thi vào 10. */
+      if (track === 'chinh-khoa') {
+        const n = Number(grade.replace(/\D/g, '')) || 9;
+        const band = n <= 7 ? 'thcs-duoi' : n <= 9 ? 'thcs-tren' : 'thpt';
+        return PLACEMENT.filter((q) => q.track === 'chinh-khoa' && q.band === band);
+      }
+      return PLACEMENT.filter((q) => q.track === 'both' || q.track === track);
+    },
+    [track, grade],
   );
 
   const trackSchools = SCHOOLS.filter((s) => s.track === track);
@@ -130,7 +137,7 @@ export default function Onboarding() {
                 value={grade}
                 onChange={(e) => setGrade(e.target.value)}
               >
-                {['Lớp 8', 'Lớp 9', 'Lớp 10', 'Lớp 11', 'Lớp 12'].map((g) => (
+                {['Lớp 5', 'Lớp 6', 'Lớp 7', 'Lớp 8', 'Lớp 9', 'Lớp 10', 'Lớp 11', 'Lớp 12'].map((g) => (
                   <option key={g}>{g}</option>
                 ))}
               </select>

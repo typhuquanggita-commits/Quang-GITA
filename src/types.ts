@@ -134,6 +134,8 @@ export interface PlacementQuestion {
   id: string;
   strand: StrandId;
   track: TrackId | 'both';
+  /** Nhóm khối lớp mà câu này phù hợp; chỉ dùng cho luồng chính khoá. */
+  band?: 'thcs-duoi' | 'thcs-tren' | 'thpt';
   difficulty: 1 | 2 | 3 | 4 | 5;
   statement: string;
   choices: string[];

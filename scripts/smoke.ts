@@ -21,6 +21,9 @@ import { KEYWORDS, keywordStats } from '../src/data/keywords';
 import { FAQS } from '../src/data/faq';
 import { SYLLABI, matrixTotal } from '../src/data/syllabus';
 import { EXAM_BANK, buildBankExam, gradeBankExam } from '../src/data/exam-bank';
+import { PLACEMENT } from '../src/data/placement';
+import { QUESTIONS } from '../src/data/questions';
+import type { TrackId } from '../src/types';
 import { formulaStats } from '../src/data/formulas';
 import { countFolders, countArtifacts } from '../src/data/library-tree';
 import { LIBRARY_TREE } from '../src/data/library-tree';
@@ -208,6 +211,52 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
   }
   bad += bankBad;
   console.log('bộ đề luyện:', EXAM_BANK.length, '| câu:', bankItems, '| mệnh đề đúng/sai:', bankClaims, '| lỗi:', bankBad);
+}
+
+/* ---------- Bài mẫu có lời giải và test xếp lộ trình ---------- */
+{
+  let qBad = 0;
+  const topicIdSet2 = new Set(TOPICS.map((t) => t.id));
+  const qIds = new Set<string>();
+  for (const q of QUESTIONS) {
+    if (qIds.has(q.id)) { console.error('BÀI MẪU trùng mã', q.id); qBad++; }
+    qIds.add(q.id);
+    if (!topicIdSet2.has(q.topicId)) { console.error('BÀI MẪU trỏ tới chuyên đề không tồn tại', q.id, q.topicId); qBad++; }
+    if (!q.statement.trim() || !q.solution.length || !q.answer.trim() || !q.hint.trim()) { console.error('BÀI MẪU thiếu mục', q.id); qBad++; }
+    if (!q.source.trim()) { console.error('BÀI MẪU thiếu nguồn dạng bài', q.id); qBad++; }
+  }
+  /* Mọi chuyên đề đều phải có ít nhất một bài mẫu có lời giải. */
+  const covered = new Set(QUESTIONS.map((q) => q.topicId));
+  const noQ = TOPICS.filter((t) => !covered.has(t.id));
+  if (noQ.length) { console.error('CHUYÊN ĐỀ chưa có bài mẫu:', noQ.map((t) => t.id).join(', ')); qBad += noQ.length; }
+  console.log('bài mẫu có lời giải:', QUESTIONS.length, '| chuyên đề chưa có bài mẫu:', noQ.length);
+
+  let pBad = 0;
+  const pIds = new Set<string>();
+  for (const q of PLACEMENT) {
+    if (pIds.has(q.id)) { console.error('CÂU XẾP LỘ TRÌNH trùng mã', q.id); pBad++; }
+    pIds.add(q.id);
+    if (q.choices.length !== 4 || new Set(q.choices).size !== 4) { console.error('CÂU XẾP LỘ TRÌNH không đủ 4 phương án khác nhau', q.id); pBad++; }
+    if (q.correct < 0 || q.correct > 3) { console.error('CÂU XẾP LỘ TRÌNH sai chỉ số đáp án', q.id); pBad++; }
+    if (!q.explain.trim()) { console.error('CÂU XẾP LỘ TRÌNH thiếu giải thích', q.id); pBad++; }
+  }
+  /* Mỗi luồng phải có đủ câu để dựng được bài test — kể cả luồng chính khoá đã chia theo khối. */
+  const quizFor = (track: TrackId, band?: string) =>
+    track === 'lop6'
+      ? PLACEMENT.filter((q) => q.track === 'lop6')
+      : track === 'chinh-khoa'
+        ? PLACEMENT.filter((q) => q.track === 'chinh-khoa' && q.band === band)
+        : PLACEMENT.filter((q) => q.track === 'both' || q.track === track);
+  const combos: [TrackId, string | undefined][] = [
+    ['thpt', undefined], ['chuyen', undefined], ['thpt-qg', undefined], ['lop6', undefined],
+    ['chinh-khoa', 'thcs-duoi'], ['chinh-khoa', 'thcs-tren'], ['chinh-khoa', 'thpt'],
+  ];
+  for (const [t, b] of combos) {
+    const n = quizFor(t, b).length;
+    if (n < 6) { console.error('BÀI TEST xếp lộ trình quá ít câu cho luồng', t, b ?? '', n); pBad++; }
+  }
+  bad += qBad + pBad;
+  console.log('test xếp lộ trình:', PLACEMENT.length, 'câu |', combos.length, 'tổ hợp luồng-khối | lỗi:', qBad + pBad);
 }
 
 /* ---------- Sổ tay công thức ---------- */

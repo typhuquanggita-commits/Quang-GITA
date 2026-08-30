@@ -3,6 +3,7 @@ import { QUESTIONS_EXTRA } from './questions-extra';
 import { QUESTIONS_L6 } from './questions-l6';
 import { QUESTIONS_THCS2 } from './questions-thcs2';
 import { QUESTIONS_QG2 } from './questions-qg2';
+import { QUESTIONS_CK } from './questions-ck';
 
 /**
  * Ngân hàng bài tập có lời giải chi tiết.
@@ -552,7 +553,7 @@ const QUESTIONS_CORE: Question[] = [
   },
 ];
 
-export const QUESTIONS: Question[] = [...QUESTIONS_CORE, ...QUESTIONS_EXTRA, ...QUESTIONS_L6, ...QUESTIONS_THCS2, ...QUESTIONS_QG2];
+export const QUESTIONS: Question[] = [...QUESTIONS_CORE, ...QUESTIONS_EXTRA, ...QUESTIONS_L6, ...QUESTIONS_THCS2, ...QUESTIONS_QG2, ...QUESTIONS_CK];
 
 export const questionById = (id: string) => QUESTIONS.find((q) => q.id === id);
 export const questionsByTopic = (topicId: string) => QUESTIONS.filter((q) => q.topicId === topicId);
