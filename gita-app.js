@@ -4407,8 +4407,70 @@ G.VIEWS['chu-ky'] = function(){
   var nl = G.NGHILE[2];
   o += '<div class="card" style="border-color:'+nl.c+'33">'+U.list(nl.buoc, nl.c)+
     '<p class="sm dim mt2" style="padding-top:12px;border-top:1px dashed var(--phu-4)">'+h(nl.qua)+'</p></div>';
+
+  /* ══ MƯỜI NGHI LỄ CHO LÚC LỆCH NHỊP ══
+     Bốn nghi lễ nhịp đều chỉ phủ được lúc nhà mình đang chạy êm. Còn
+     lúc đứt chuỗi, cãi nhau, con thi trượt, người lớn kiệt sức — đó
+     đúng là lúc gia đình cần một khuôn để bám vào nhất, mà trước bản
+     này không có nghi lễ nào. Lúc bình thường thì ai cũng xoay xở được.
+
+     Mỗi nghi lễ có MỐC KÍCH HOẠT rõ, để không ai phải tự hỏi "giờ có
+     nên làm không". */
+  var TH = G.NGHILE_TH || [];
+  if(TH.length){
+    o += U.sec('MƯỜI NGHI LỄ CHO LÚC NHÀ MÌNH LỆCH NHỊP',
+      'Mỗi cái có mốc kích hoạt rõ · bấm để mở các bước');
+    o += '<div class="grid g-auto">'+ TH.map(function(x){
+      return '<button class="card pad-sm lift" data-nlth="'+h(x.ma)+'" style="text-align:left;'+
+        'border-left:3px solid '+x.c+'">'+
+        '<div class="row" style="gap:7px;align-items:baseline;flex-wrap:wrap">'+
+          '<span class="mono tiny" style="color:'+x.c+'">'+h(x.phut)+'</span>'+
+          '<span class="chip" style="color:var(--ink-4)">'+h(x.khi)+'</span></div>'+
+        '<b class="sm" style="display:block;line-height:1.4;margin-top:5px">'+h(x.ten)+'</b>'+
+        '<p class="tiny muted mt" style="line-height:1.55">'+h(x.kich)+'</p></button>';
+    }).join('') +'</div>';
+  }
+
+  var LU = G.NGHILE_LUAT || [];
+  if(LU.length){
+    o += U.sec('SÁU LUẬT CHUNG CHO MỌI NGHI LỄ',
+      'Nghi lễ hỏng không phải vì làm thiếu, mà vì làm thừa');
+    o += '<div class="card">'+ LU.map(function(x, i){
+      return '<div style="'+(i ? 'border-top:1px solid var(--line);padding-top:13px;margin-top:13px' : '')+'">'+
+        '<b class="sm">'+h(x.t)+'</b>'+
+        '<p class="sm muted mt" style="line-height:1.7">'+h(x.y)+'</p></div>';
+    }).join('') +'</div>';
+  }
   return o;
 };
+
+/* Cửa sổ một nghi lễ tình huống */
+G.nghiLeModal = function(ma){
+  var x = (G.NGHILE_TH || []).filter(function(y){ return y.ma === ma; })[0];
+  if(!x) return;
+  U.modal('<div class="row wrap" style="gap:7px;margin-bottom:9px">'+
+    U.chip(x.phut, x.c)+U.chip(x.khi)+'</div>'+
+    '<h2 style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:10px">'+h(x.ten)+'</h2>'+
+    '<div class="card pad-sm mb" style="border-color:'+x.c+'44">'+
+      '<div class="tiny up mb" style="color:'+x.c+'">LÀM KHI NÀO</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(x.kich)+'</p></div>'+
+    '<div class="card pad-sm mb"><div class="tiny up mb muted">CÁC BƯỚC</div>'+
+      U.list(x.buoc, x.c)+'</div>'+
+    '<div class="card pad-sm mb" style="border-color:var(--gita-do)">'+
+      '<div class="tiny up mb" style="color:var(--gita-do-ink)">KHÔNG LÀM NHỮNG ĐIỀU NÀY</div>'+
+      U.list(x.khong, 'var(--gita-do)')+'</div>'+
+    '<div class="card pad-sm mb"><div class="tiny up mb muted">AI CHỦ TRÌ</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(x.ai)+'</p></div>'+
+    '<div class="card pad-sm mb" style="border-color:var(--alert)">'+
+      '<div class="tiny up mb" style="color:var(--alert)">DẤU HIỆU NGHI LỄ ĐANG HỎNG</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(x.hong)+'</p></div>'+
+    '<div class="card pad-sm"><div class="tiny up mb" style="color:var(--ok)">ĐƯỢC GÌ</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(x.qua)+'</p></div>');
+};
+document.addEventListener('click', function(e){
+  var a = e.target && e.target.closest && e.target.closest('[data-nlth]');
+  if(a) G.nghiLeModal(a.getAttribute('data-nlth'));
+}, false);
 
 /* ══════════════════ 02 · NHIỆM VỤ & NHẬT KÝ 365 ══════════════════ */
 G.VIEWS['nhiem-vu'] = function(){

@@ -52,6 +52,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   /* Sổ khai kho rỗng có chủ ý — bộ rà soát đọc nó thay cho danh sách tha lặng */
   'RONG_CO_Y',
   /* Sổ nhật ký từng vị trí và bốn mốc thi viết: mọi vai đều dùng. */
+  /* Nghi lễ gia đình: bốn nghi lễ nhịp đều đã có ở NGHILE, nay thêm mười
+     nghi lễ TÌNH HUỐNG cho lúc nhà mình lệch nhịp — đứt chuỗi, cãi nhau,
+     kết quả xấu, người lớn kiệt sức. Ở gói NỀN vì đây là việc của chính
+     gia đình, không phải công cụ nghề. */
+  'NGHILE_TH', 'NGHILE_THEM', 'NGHILE_LUAT',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */

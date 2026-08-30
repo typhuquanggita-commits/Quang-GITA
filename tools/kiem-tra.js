@@ -3844,6 +3844,85 @@ const { chromium } = require(PW);
         nk.tl + '/' + nk.soNhom);
     }
 
+    /* ══ HAI TRƯỜNG NGƯỜI TA MỞ PHÁC ĐỒ RA ĐỂ ĐỌC ══
+       Đo kho thì thấy: ba trường ph / coach / dich viết đủ (trung bình
+       173–217 ký tự), còn nguyenNhan và giaiPhap trung vị 22 ký tự —
+       "Lo lắng; thiếu hệ tự nhắc", "Mini-project".
+
+       Người mở một phác đồ chính là để hỏi VÌ SAO NÓ XẢY RA và GỠ THẾ
+       NÀO. Hai câu hỏi ấy rơi đúng vào hai trường mỏng nhất. */
+    const pdr = await p.evaluate(() => {
+      const G = window.G, ds = G.PHACDO || [];
+      const nn = ds.map(x => (x.nguyenNhan || '').length).sort((a, b) => a - b);
+      const gp = ds.map(x => (x.giaiPhap || '').length).sort((a, b) => a - b);
+      const giua = a => a.length ? a[Math.floor(a.length / 2)] : 0;
+      /* Trùng nhau: hai phác đồ cùng lời gỡ là chữ, không phải phác đồ */
+      const tt = {}; ds.forEach(x => { const k = (x.giaiPhap || '').trim();
+        if (k) tt[k] = (tt[k] || 0) + 1; });
+      return {
+        tong: ds.length,
+        soat: G.PD_RUOT_SOAT || null,
+        nnGiua: giua(nn), gpGiua: giua(gp),
+        nnNgan: nn.filter(x => x < 150).length,
+        gpNgan: gp.filter(x => x < 180).length,
+        trung: Object.keys(tt).filter(k => tt[k] > 1).length,
+        giuGon: ds.filter(x => x.nguyenNhanGon).length
+      };
+    });
+    bao(pdr.soat && pdr.soat.vao >= pdr.tong,
+      'mọi phác đồ đều đã có ruột cho hai trường nguyên nhân và giải pháp',
+      pdr.soat ? pdr.soat.vao + '/' + pdr.tong +
+        (pdr.soat.chuaCo.length ? ' · thiếu: ' + pdr.soat.chuaCo.slice(0, 5).join(' ') : '') : 'chưa có bộ áp');
+    bao(!pdr.nnNgan,
+      'không phác đồ nào còn nguyên nhân dạng chuỗi từ khoá — phải nói được CƠ CHẾ',
+      pdr.nnNgan ? pdr.nnNgan + ' phác đồ dưới 150 ký tự' : 'trung vị ' + pdr.nnGiua + ' ký tự');
+    bao(!pdr.gpNgan,
+      'không phác đồ nào còn giải pháp dạng chuỗi từ khoá — phải nói được VIỆC LÀM ĐƯỢC',
+      pdr.gpNgan ? pdr.gpNgan + ' phác đồ dưới 180 ký tự' : 'trung vị ' + pdr.gpGiua + ' ký tự');
+    bao(!pdr.trung,
+      'không hai phác đồ nào chung một lời gỡ — trùng nhau là chữ, không phải phác đồ',
+      pdr.trung ? pdr.trung + ' lời gỡ bị dùng lại' : '220 lời gỡ khác nhau');
+    bao(pdr.giuGon >= pdr.tong,
+      'bản tóm cũ được giữ lại ở nguyenNhanGon — dùng cho thẻ danh sách và tìm kiếm',
+      pdr.giuGon + '/' + pdr.tong);
+
+    /* ══ KHO TÌNH HUỐNG — THỨ MỞ RA KHI ĐANG NGỒI TRƯỚC MỘT GIA ĐÌNH ══
+       Trường `tt` là việc giao cho gia đình làm. Trung vị cũ 33 ký tự,
+       có cái chỉ là "7 ngày săn lỗi." — gia đình đọc xong vẫn không biết
+       tối nay làm gì, ghi vào đâu, cuối tuần nhìn cái gì. */
+    const thr = await p.evaluate(() => {
+      const G = window.G, ds = G.TINHHUONG || [];
+      const dai = f => ds.map(x => String(x[f] || '').length).sort((a, b) => a - b);
+      const giua = a => a.length ? a[Math.floor(a.length / 2)] : 0;
+      const tt = {}; ds.forEach(x => { const k = String(x.tt || '').trim();
+        if (k) tt[k] = (tt[k] || 0) + 1; });
+      return {
+        tong: ds.length, soat: G.TH_RUOT_SOAT || null,
+        ttGiua: giua(dai('tt')), moGiua: giua(dai('mo')),
+        ttNgan: dai('tt').filter(x => x < 200).length,
+        moNgan: dai('mo').filter(x => x < 150).length,
+        chotNgan: dai('chot').filter(x => x < 120).length,
+        dichNgan: dai('dich').filter(x => x < 120).length,
+        trung: Object.keys(tt).filter(k => tt[k] > 1).length,
+        giuGon: ds.filter(x => x.ttGon).length
+      };
+    });
+    bao(thr.soat && thr.soat.vao >= thr.tong,
+      'mọi tình huống đều đã có ruột cho bốn trường mô tả, mấu chốt, thử thách và đích',
+      thr.soat ? thr.soat.vao + '/' + thr.tong +
+        (thr.soat.chuaCo.length ? ' · thiếu: ' + thr.soat.chuaCo.slice(0, 5).join(' ') : '') : 'chưa có bộ áp');
+    bao(!thr.ttNgan,
+      'thử thách giao cho gia đình nói rõ làm gì, ghi vào đâu, cuối kỳ nhìn gì',
+      thr.ttNgan ? thr.ttNgan + ' tình huống dưới 200 ký tự' : 'trung vị ' + thr.ttGiua + ' ký tự');
+    bao(!thr.moNgan && !thr.chotNgan && !thr.dichNgan,
+      'mô tả, mấu chốt và đích đều đủ dày để dùng trước mặt gia đình',
+      'mô tả ' + thr.moNgan + ' · mấu chốt ' + thr.chotNgan + ' · đích ' + thr.dichNgan + ' chỗ còn mỏng');
+    bao(!thr.trung,
+      'không hai tình huống nào chung một thử thách',
+      thr.trung ? thr.trung + ' thử thách bị dùng lại' : '250 thử thách khác nhau');
+    bao(thr.giuGon >= thr.tong,
+      'bản tóm cũ của tình huống được giữ lại ở ttGon', thr.giuGon + '/' + thr.tong);
+
     /* ══ GÓI TẦNG CỦA KHÁCH HÀNG KHÔNG ĐƯỢC MANG TÀI SẢN NGHỀ ══
        Kịch bản chuyên môn từng nằm trong gói tầng, mỗi tầng 200 cái.
        Một phụ huynh Tầng 3 nhận về máy mình 200 kịch bản coaching:
