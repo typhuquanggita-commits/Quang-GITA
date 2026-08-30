@@ -1,7 +1,7 @@
 # 03 — MƯỜI BÀI CỦA TUẦN 1 (dán nguyên văn)
 
 *Mỗi bài gồm: nội dung để dán, bình luận ghim, ba câu hỏi mồi cho người trực, và lưu ý vận hành.*
-*Thay `[LIÊN_KẾT_WEB_APP]` và `[LIÊN_KẾT_BIỂU_MẪU]` bằng đường dẫn thật trước khi đăng.*
+*Thay `https://claude.ai/code/artifact/ab7e9e18-2751-4400-9abc-196dc8212e3b` và `[LIÊN_KẾT_BIỂU_MẪU]` bằng đường dẫn thật trước khi đăng.*
 
 ---
 
@@ -67,7 +67,7 @@ Nhà mình chọn khung giờ nào ạ?
 
 **Bình luận ghim (đăng trong 60 giây đầu, rồi ghim):**
 ```
-Bộ 30 câu hỏi bàn ăn để dùng trong đúng 30 phút đó — cả nhà tải miễn phí ở đây: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T2-NHIEMVU
+Bộ 30 câu hỏi bàn ăn để dùng trong đúng 30 phút đó — cả nhà tải miễn phí ở đây: https://claude.ai/code/artifact/ab7e9e18-2751-4400-9abc-196dc8212e3b?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T2-NHIEMVU
 
 Không mất gì cả, chỉ cần tạo tài khoản để lưu tiến độ của nhà mình.
 ```
@@ -135,7 +135,7 @@ Con nhà mình nói gì ạ?
 
 **Bình luận ghim (đăng trong 60 giây đầu, rồi ghim):**
 ```
-Bộ đầy đủ 30 câu hỏi bàn ăn, chia theo độ tuổi của con, cả nhà tải ở đây: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T3-BANAN
+Bộ đầy đủ 30 câu hỏi bàn ăn, chia theo độ tuổi của con, cả nhà tải ở đây: https://claude.ai/code/artifact/ab7e9e18-2751-4400-9abc-196dc8212e3b?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T3-BANAN
 ```
 
 **Ba câu hỏi mồi cho người trực** *(dùng câu 1 nếu bài nguội, câu 2 để tăng số lượng, câu 3 để tăng độ sâu)*:
@@ -169,7 +169,7 @@ Liên kết em để ở bình luận đầu tiên ạ.
 
 **Bình luận ghim (đăng trong 60 giây đầu, rồi ghim):**
 ```
-Bộ 30 câu hỏi bàn ăn: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T4-TANGBO
+Bộ 30 câu hỏi bàn ăn: https://claude.ai/code/artifact/ab7e9e18-2751-4400-9abc-196dc8212e3b?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T4-TANGBO
 
 Tải xong nhà mình quay lại báo em một câu để em biết bộ nào hợp với độ tuổi nào nhé.
 ```
@@ -257,7 +257,7 @@ Câu nào nhà mình định thử ạ?
 
 **Bình luận ghim (đăng trong 60 giây đầu, rồi ghim):**
 ```
-Bản in ba câu nói này để dán tủ lạnh, cùng 9 tình huống khác, ở đây: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T5-CHAME
+Bản in ba câu nói này để dán tủ lạnh, cùng 9 tình huống khác, ở đây: https://claude.ai/code/artifact/ab7e9e18-2751-4400-9abc-196dc8212e3b?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T5-CHAME
 ```
 
 **Ba câu hỏi mồi cho người trực** *(dùng câu 1 nếu bài nguội, câu 2 để tăng số lượng, câu 3 để tăng độ sâu)*:
@@ -335,7 +335,7 @@ Nhà mình chọn trò nào ạ?
 
 **Bình luận ghim (đăng trong 60 giây đầu, rồi ghim):**
 ```
-Bộ 12 trò chơi gắn kết cha mẹ – con cái, chia theo độ tuổi: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T7-CHOI
+Bộ 12 trò chơi gắn kết cha mẹ – con cái, chia theo độ tuổi: https://claude.ai/code/artifact/ab7e9e18-2751-4400-9abc-196dc8212e3b?utm_source=fb_group&utm_medium=g2&utm_campaign=G2-W01-T7-CHOI
 ```
 
 **Ba câu hỏi mồi cho người trực** *(dùng câu 1 nếu bài nguội, câu 2 để tăng số lượng, câu 3 để tăng độ sâu)*:

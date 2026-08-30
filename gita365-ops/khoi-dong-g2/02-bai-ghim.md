@@ -71,7 +71,7 @@ Bộ công cụ miễn phí cho gia đình (30 câu hỏi bàn ăn, 12 trò chơ
 ```
 **Bình luận đầu tiên của bài này (ghim luôn):**
 ```
-Bộ công cụ miễn phí cho gia đình: [LIÊN_KẾT_WEB_APP]?utm_source=fb_group&utm_medium=g2&utm_campaign=batdau
+Bộ công cụ miễn phí cho gia đình: https://claude.ai/code/artifact/ab7e9e18-2751-4400-9abc-196dc8212e3b?utm_source=fb_group&utm_medium=g2&utm_campaign=batdau
 ```
 
 ## Bài để dành — Thông báo chuyển nhóm sang công khai

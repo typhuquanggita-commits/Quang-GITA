@@ -1,5 +1,10 @@
 # BỘ KHỞI ĐỘNG TUẦN 1 — GIA ĐÌNH THỊNH VƯỢNG (G2)
 
+> ⚠️ **ĐỌC TRƯỚC**: nhóm hiện là **nhóm mới lập, chưa có hoạt động, một người vận hành**.
+> Nhịp 10 bài/tuần trong tài liệu này được thiết kế cho đội 4–6 người và **chưa áp dụng được ngay**.
+> Bắt đầu bằng [`06-nhom-moi-mot-nguoi.md`](06-nhom-moi-mot-nguoi.md) — phiên bản 3 bài tuần đầu,
+> khoảng 5 giờ/tuần, ưu tiên đi mời trước khi đăng. Quay lại nhịp đầy đủ khi nhóm đủ 50 thành viên.
+
 > Đây là tuần chạy thử. Mọi việc trong bộ này đều **đảo ngược được**.
 > Ba việc lớn — đổi tên nhóm, chuyển nhóm sang công khai, đổi nghi thức sang dạng
 > mỗi gia đình một bài riêng — **cố tình chưa làm ở tuần này**, để có số liệu nền
@@ -14,6 +19,9 @@
 | [`03-bai-tuan-1.md`](03-bai-tuan-1.md) | **10 bài đăng đầy đủ** của tuần 1, kèm giờ đăng, bình luận ghim, 3 câu hỏi mồi, người trực, lưu ý | Ngày 1–7 |
 | [`04-tin-nhan.md`](04-tin-nhan.md) | 5 kịch bản tin nhắn: chào người mới, sau bình luận đầu, mời công cụ, cấp Mã gia đình, xin phép câu chuyện | Hằng ngày |
 | [`bang-do-tuan-1.csv`](bang-do-tuan-1.csv) | Bảng đo: số nền + từng bài + tổng kết tuần | Ngày 0 và mỗi tối |
+| [`00-thong-so-nhom.md`](00-thong-so-nhom.md) | Phiếu thông số nhóm — đã điền theo trả lời của Admin | tham chiếu |
+| [`06-nhom-moi-mot-nguoi.md`](06-nhom-moi-mot-nguoi.md) | **Phiên bản nhóm mới, một người vận hành** — bắt đầu từ đây | Tuần 0–4 |
+| [`30-cau-hoi-ban-an.html`](30-cau-hoi-ban-an.html) | Bộ tài nguyên tặng thành viên, ba bài tuần 1 đều trỏ tới | Ngày 0 |
 
 ---
 
