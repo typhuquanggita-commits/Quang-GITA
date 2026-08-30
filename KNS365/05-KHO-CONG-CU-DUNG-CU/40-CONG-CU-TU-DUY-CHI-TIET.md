@@ -1044,3 +1044,1013 @@
 **Nối vào đâu:** `CT-32` · `CT-35` · `TC-I-002 Xây Tháp Giấy` · hồ sơ dự án Cấp Độ 5 trở lên.
 
 ---
+## PHẦN E. NHÓM **T — LUYỆN KỸ NĂNG & TƯ DUY** *(19 công cụ)*
+
+---
+
+### `CT-07` · CÔNG THỨC "TÔI CẢM THẤY… KHI… VÌ…"
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M3 · M4 | 🟢 Khối 2 | 8–10′ | 📌 dán tường |
+
+**Dùng khi:** học sinh cần nói ra điều khó chịu mà không gây thêm mâu thuẫn.
+**Không dùng khi:** người kia đang ở mức 7–10 trên `CT-06` — hạ nhiệt trước đã.
+
+**Công thức — ba ô, không được thiếu ô nào**
+
+| Ô | Nội dung | Cấm |
+|:--:|---|---|
+| **Tôi cảm thấy** | Một từ cảm xúc | Cấm bắt đầu bằng *"Bạn…"* |
+| **khi** | Một **hành vi cụ thể**, có lúc có việc | Cấm nói tính cách *("khi bạn vô duyên")* |
+| **vì** | Điều quan trọng với tôi đang bị chạm | Cấm đoán ý người kia *("vì bạn ghét tôi")* |
+
+**Ví dụ đã điền — khối 3 và khối 9**
+
+> 🟢 **Khối 3:** ❌ *"Bạn kỳ lắm!"* → ✅ *"Tớ **buồn** **khi** cậu lấy bút của tớ mà không hỏi, **vì** tớ sợ mất cây bút mẹ mới mua."*
+>
+> 🔵 **Khối 9:** ❌ *"Cậu lúc nào cũng bỏ rơi nhóm."* → ✅ *"Tớ **thấy mệt** **khi** hôm qua đến hạn nộp mà phần của cậu chưa có, **vì** tớ đã hứa với cả nhóm là mình nộp đúng hạn."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Ô **khi** kể được **một lần cụ thể**, có thời điểm.
+- Ô **vì** nói về **giá trị của người nói**, không phải về lỗi người nghe.
+- Người nghe **không phản ứng phòng thủ ngay lập tức** — đây là chỉ báo tốt nhất.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| *"Tôi cảm thấy **rằng bạn** rất ích kỷ"* | Chê trá hình; sau chữ "cảm thấy" phải là **cảm xúc**, không phải mệnh đề | Hỏi: *"Từ đó là cảm xúc hay là nhận xét?"* |
+| Ô **khi** nói khái quát *("lúc nào cũng…")* | Người nghe cãi được ngay bằng một phản ví dụ | Bắt nêu **một lần**, có ngày |
+| Đọc công thức như trả bài | Nghe giả tạo, phản tác dụng | Luyện đủ 3 lượt với **việc thật nhỏ** trước khi dùng cho việc lớn |
+
+**Nối vào đâu:** `CT-06` · `CT-10` · `CT-12 NVC` · `TC-T-006 Nghe – Nhắc Lại` · rubric họ giao tiếp.
+
+---
+
+### `CT-09` · QUY TẮC 5 NGÓN TAY
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M2 | 🟢 Khối 1 | 6–8′ | 📌 dán tường, in cỡ lớn |
+
+> ⭐ **Công cụ an toàn quan trọng nhất cho khối 1–3.** Dạy bằng chính bàn tay của học sinh, không cần dụng cụ.
+
+**Dùng khi:** chuyên đề an toàn thân thể, người lạ, ranh giới cơ thể.
+**Không dùng khi:** thay cho việc báo người lớn — quy tắc này giúp em **nhận ra**, còn việc xử lý là của người lớn.
+
+**Năm ngón — xoè bàn tay ra, mỗi ngón một vòng người**
+
+| Ngón | Vòng người | Được phép làm gì |
+|:--:|---|---|
+| 👍 **Cái** | Bố mẹ, người nuôi dưỡng | Ôm, bế, tắm cho em khi em còn nhỏ |
+| ☝️ **Trỏ** | Thầy cô, họ hàng gần, bạn thân của bố mẹ | Nắm tay, khoác vai **khi em đồng ý** |
+| 🖕 **Giữa** | Người quen: hàng xóm, bạn của anh chị | Bắt tay, vẫy tay. **Không ôm, không bế** |
+| 💍 **Áp út** | Người mới gặp một hai lần | Chỉ gật đầu chào |
+| 🤙 **Út** | Người lạ | **Không chạm, không đi theo, không nhận quà** |
+
+**Ba câu chốt bắt buộc — HLV nói nguyên văn và cho lớp nói theo**
+
+> 🎤 ① *"**Vùng đồ bơi che là vùng riêng.** Không ai được nhìn, được chạm, trừ khi bố mẹ tắm cho con lúc con còn nhỏ, hoặc bác sĩ khám khi có bố mẹ ở đó."*
+> 🎤 ② *"**Con có quyền nói KHÔNG với bất kỳ ai — kể cả ngón tay cái.** Ai làm con thấy sợ hoặc khó chịu, dù là người thân nhất, con vẫn được nói không."*
+> 🎤 ③ *"**Có một loại bí mật không được giữ** — bí mật làm con thấy sợ, hoặc bí mật mà người lớn bảo 'đừng nói với bố mẹ nhé'. Loại bí mật đó, con phải kể ngay."*
+
+**Ví dụ đã điền — thẻ tình huống khối 2**
+
+| Tình huống | Ngón nào | Làm gì |
+|---|:--:|---|
+| Bác hàng xóm cho kẹo, rủ vào nhà xem phim hoạt hình | Giữa | Cảm ơn, **không vào**, về kể với mẹ |
+| Chú lạ nói *"mẹ con nhờ chú đón"* | Út | **Không đi.** Hỏi mật khẩu gia đình; không đúng thì chạy tới chỗ đông người |
+| Cô giáo xoa đầu khen | Trỏ | Được, nếu em thấy thoải mái. Không thoải mái thì được nói *"con không thích ạ"* |
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Học sinh **xoè tay và chỉ đúng ngón** khi nghe tình huống.
+- Nói được **nguyên văn** câu *"con có quyền nói không với bất kỳ ai"*.
+- Kể được **tên 3 người lớn tin cậy** của mình *(bàn tay tin cậy)*.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Chỉ dạy về "người lạ" | **Phần lớn xâm hại đến từ người quen**, không phải người lạ | Bắt buộc dạy đủ 5 ngón, nhấn mạnh: *quyền nói không áp dụng cả với ngón cái* |
+| Dùng ảnh/video minh hoạ đáng sợ | Gây sợ hãi, không tăng kỹ năng | Chỉ dùng hình vẽ đơn giản, giọng bình thản |
+| Bỏ câu chốt ③ về bí mật | Đây là câu mở đường cho trẻ kể ra | Nói nguyên văn, cho lớp nhắc lại |
+
+**⚠️ Bắt buộc với HLV:** nếu trong hoặc sau buổi có học sinh **tiết lộ điều gì đó**, HLV **không hỏi thêm chi tiết**, không hứa giữ bí mật, ghi lại nguyên văn lời em nói, và **chuyển ngay theo phác đồ tiết lộ** trong `16-.../06-PHAC-DO-XU-LY-CHUAN.md`. Nhắc **hotline 111**.
+
+**Nối vào đâu:** `CT-11 Từ chối 3 tầng` · chuyên đề an toàn khối 1–5 · phác đồ tiết lộ · sổ tay học sinh mục "bàn tay tin cậy".
+
+---
+
+### `CT-10` · BỐN BƯỚC LÀM HOÀ *(Dừng – Nghe – Nói – Chốt)*
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M4 | 🟢 Khối 3 | 10–12′ | 📌 dán tường |
+
+**Dùng khi:** hai học sinh mâu thuẫn ngang hàng, cả hai đều còn nói chuyện được.
+**Không dùng khi:** có **bắt nạt** *(lặp lại + chênh lệch quyền lực)* — bắt nạt **không hoà giải**, đi theo phác đồ riêng. Ép nạn nhân "làm hoà" là làm hại lần thứ hai.
+
+**Bốn bước**
+
+| Bước | Việc làm | Câu mẫu | Điều kiện qua bước |
+|:--:|---|---|---|
+| **① DỪNG** | Tách hai bên, mỗi bên hạ về ≤6 trên `CT-06` | *"Cả hai dừng. Ba phút nữa quay lại."* | Cả hai ≤6 |
+| **② NGHE** | Lần lượt kể. **Bên kia phải nhắc lại đúng ý trước khi được nói** | *"Tớ nghe bạn nói là ___. Đúng chưa?"* | Cả hai xác nhận *"đúng rồi"* |
+| **③ NÓI** | Mỗi bên dùng `CT-07` | *"Tớ cảm thấy ___ khi ___ vì ___"* | Không có câu nào bắt đầu bằng *"tại bạn"* |
+| **④ CHỐT** | Mỗi bên nói **một việc mình sẽ làm khác đi** | *"Lần sau tớ sẽ ___"* | Cả hai đều nêu việc **của mình**, không phải yêu cầu người kia |
+
+> 🎤 **HLV — câu quan trọng nhất ở bước ④:** *"Bước cuối không phải là xin lỗi. Xin lỗi mà không đổi gì thì tuần sau lặp lại y hệt. Bước cuối là **mỗi bạn nói một việc mình sẽ làm khác đi**."*
+
+**Ví dụ đã điền — khối 5**
+
+> **① DỪNG** — hai em tách ra, uống nước, 3 phút.
+> **② NGHE** — An: *"Tớ nghe Bình nói là tớ đã dùng bút của cậu ấy mà không hỏi, đúng chưa?"* — Bình: *"Đúng."*
+> **③ NÓI** — Bình: *"Tớ **bực** **khi** sáng nay cậu lấy bút mà không hỏi, **vì** đó là bút của anh tớ cho."* An: *"Tớ **ngại** **khi** cậu nói to trước lớp, **vì** các bạn nghĩ tớ ăn cắp."*
+> **④ CHỐT** — An: *"Lần sau tớ hỏi trước khi lấy."* Bình: *"Lần sau tớ nói riêng với cậu chứ không nói trước lớp."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Bước ② **cả hai đều xác nhận "đúng rồi"** — nếu chưa thì làm lại, không đi tiếp.
+- Bước ④ mỗi bên nêu việc **của mình**.
+- Không bên nào bị ép xin lỗi.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| HLV phân xử ai đúng ai sai | Học sinh không học được cách tự giải quyết | HLV **giữ quy trình, không phán xử nội dung** |
+| Bỏ bước ① vì "chỉ chuyện nhỏ" | Ở mức ≥7 không ai nghe được ai | Luôn tách trước, luôn |
+| Dùng cho vụ bắt nạt | Ép nạn nhân đối mặt kẻ bắt nạt = tổn thương lần hai | Phân biệt: **lặp lại + chênh lệch quyền lực = bắt nạt**, đi phác đồ riêng |
+
+**Nối vào đâu:** `CT-06` · `CT-07` · `CT-12` · phác đồ bắt nạt · kho 100 tình huống nhóm 🟡🔴.
+
+---
+
+### `CT-11` · TỪ CHỐI 3 TẦNG
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M4 | 🟢 Khối 3 | 14–16′ | 📌 dán tường + ✍️ thẻ |
+
+**Dùng khi:** áp lực bạn bè, bị rủ rê, bị đòi hỏi quá mức, bị ép làm điều không muốn.
+**Không dùng khi:** tình huống có nguy cơ bạo lực ngay lập tức — lúc đó **rời đi và tìm người lớn**, không cần qua ba tầng.
+
+**Ba tầng**
+
+| Tầng | Câu mẫu | Dùng khi | Dấu hiệu làm đúng |
+|:--:|---|---|---|
+| **1 · Nhẹ** | *"Thôi, tớ không tham gia đâu."* | Lần đầu bị rủ | Giọng bình thường, không cười trừ |
+| **2 · Kèm lý do + đề xuất khác** | *"Tớ không làm việc đó. Nếu cậu muốn thì mình đi đá bóng."* | Bị rủ lần hai | Giữ quan hệ, bỏ việc |
+| **3 · Dứt và rời đi** | *"Tớ đã nói không. Tớ đi đây."* — **nói xong quay người đi thật** | Bị ép, bị dồn | **Chân bước đi**, không đứng lại tranh luận |
+
+> 🎤 **HLV:** *"Tầng 3 không phải là nói to hơn. Tầng 3 là **chân em bước đi**. Ai vừa nói tầng 3 mà vẫn đứng nguyên tại chỗ — làm lại lượt nữa."*
+
+**Ví dụ đã điền — thẻ tình huống theo khối**
+
+| Khối | Tình huống mẫu |
+|:--:|---|
+| 🟢 1–5 | Bị rủ lấy đồ của bạn · rủ trốn xếp hàng · rủ nói dối cô |
+| 🔵 6–9 | Bị rủ hùa vào trêu một bạn · rủ trốn tiết · rủ chia sẻ ảnh của người khác |
+| 🟣 10–12 | Bị rủ dùng chất kích thích · rủ vay tiền qua app · bị ép gửi ảnh riêng tư |
+
+> ⛔ **Không dùng thẻ của khối trên cho khối dưới.**
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- **Giọng không run, thân không lùi** — hai chỉ báo quan sát được.
+- Tầng 3 **có bước chân**.
+- Nói được **vì sao dừng ở tầng 3** thay vì cãi tiếp.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Nhảy thẳng tầng 3 | Mất bạn không cần thiết ở tình huống nhẹ | Luyện đủ 3 tầng theo thứ tự |
+| Tầng 2 xin lỗi dài dòng | Người rủ nghe ra là còn chỗ thuyết phục | Luật: tầng 2 **tối đa 2 câu** |
+| Tầng 3 nói xong vẫn đứng lại | Câu nói mất hiệu lực | Bắt luyện đến khi chân bước thật |
+
+**⚠️ Khi luyện đóng vai:** người đóng vai rủ **cấm chạm, cấm chặn đường**; có **mật khẩu dừng** cho cả lớp; và **bắt buộc có bước "ra vai"** sau khi diễn. Chi tiết đầy đủ ở `TC-T-010`.
+
+**Nối vào đâu:** `TC-T-010` · `CT-09` · chuyên đề áp lực bạn bè · rubric họ bản lĩnh.
+
+---
+
+### `CT-12` · BỐN BƯỚC NVC *(giao tiếp không bạo lực)*
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M3 · M4 | 🔵 Khối 8 | 16–20′ | ✍️ mẫu in |
+
+**Dùng khi:** mâu thuẫn kéo dài, chuyện khó nói với người lớn, xung đột trong nhóm dự án. Đây là bản đầy đủ của `CT-07`.
+**Không dùng khi:** cần phản ứng nhanh trong 5 giây — dùng `CT-07` hoặc `CT-11`.
+
+**Bốn bước**
+
+| Bước | Nội dung | Chuẩn | Cái bẫy |
+|:--:|---|---|---|
+| **① Quan sát** | Mô tả **như một chiếc máy quay ghi lại** | Không có tính từ đánh giá | *"Bạn thiếu tôn trọng"* — đây là đánh giá, không phải quan sát |
+| **② Cảm xúc** | Cảm xúc của **tôi** | Một từ cảm xúc | *"Tôi cảm thấy bị bỏ rơi"* — "bị bỏ rơi" là diễn giải hành vi người khác |
+| **③ Nhu cầu** | Nhu cầu nào của tôi chưa được đáp ứng | Nhu cầu chung của con người | *"Tôi cần cậu xin lỗi"* — đó là yêu cầu, không phải nhu cầu |
+| **④ Đề nghị** | Một việc **cụ thể, làm được, có thể từ chối** | Có thời gian và hành động rõ | *"Cậu tử tế hơn đi"* — không làm được |
+
+**Ví dụ đã điền — khối 10, nói với bố mẹ**
+
+> ❌ **Bản thường:** *"Bố mẹ chẳng bao giờ tin con cả!"*
+>
+> ✅ **Bản NVC:** *"**Ba lần trong tuần này, khi con xin đi học nhóm buổi tối, bố mẹ gọi điện cho mẹ bạn Minh để kiểm tra (①)**. Con thấy **tủi thân và hơi tức (②)**, vì con cần **được tin tưởng và được tự chịu trách nhiệm về việc của mình (③)**. **Con đề nghị: từ tuần sau, con sẽ nhắn tin báo khi tới nơi và khi về, và bố mẹ thử không gọi kiểm tra trong hai tuần — sau hai tuần mình xem lại (④)**. Bố mẹ thấy thế nào ạ?"*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Bước ① **không có tính từ đánh giá** nào — thử nghiệm: người bị nói tới có công nhận sự việc không?
+- Bước ③ là **nhu cầu**, không phải mệnh lệnh trá hình.
+- Bước ④ **có thể bị từ chối** mà không sụp đổ — đó là dấu hiệu của đề nghị thật.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Bước ① lồng đánh giá | Người nghe cãi ngay từ câu đầu | Thử: *"Máy quay có ghi được câu này không?"* |
+| Bước ② dùng từ diễn giải *(bị coi thường, bị bỏ rơi)* | Đây là quy kết hành vi người kia, không phải cảm xúc của mình | Cho danh sách 30 từ cảm xúc thật để tra |
+| Bước ④ là tối hậu thư | Không phải đề nghị | Kiểm: *"Nếu họ nói không, em vẫn ổn chứ?"* |
+
+**Nối vào đâu:** `CT-07` *(bản rút gọn)* · `CT-10` · `CT-13` · chuyên đề giao tiếp với người lớn khối 9–12.
+
+---
+
+### `CT-13` · PHẢN HỒI 1-1-1
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M4 | 🟢 Khối 4 | 12–14′ | 📌 dán tường |
+
+> ⭐ **Công cụ bắt buộc trong mọi vòng T-DRILL.** Không có 1-1-1 thì luyện tập không có thông tin để sửa.
+
+**Dùng khi:** sau mỗi lượt luyện, sau mỗi sản phẩm, sau mỗi lần trình bày.
+**Không dùng khi:** người nhận đang ở mức ≥7 trên `CT-06`.
+
+**Ba ô**
+
+| Ô | Câu mở | Yêu cầu cứng |
+|:--:|---|---|
+| **1 · Làm được** | *"Điều tớ thấy bạn làm được là ___"* | **Hành vi quan sát được**, cấm *"bạn giỏi lắm"* |
+| **1 · Sửa** | *"Một điều tớ nghĩ nên sửa là ___"* | Chỉ **một** điều, và **sửa được ở lượt sau** |
+| **1 · Làm ngay** | *"Ngay lượt sau bạn thử ___"* | Việc **nhỏ, cụ thể, làm được trong 1 phút** |
+
+**Người nhận chỉ được nói một câu:** *"Cảm ơn, tớ ghi lại."*
+
+**Ví dụ đã điền — khối 6, sau một lượt thuyết trình 60 giây**
+
+> ❌ **Phản hồi vô dụng:** *"Bạn nói hay đấy, nhưng còn hơi run, cố lên nhé."*
+>
+> ✅ **Phản hồi 1-1-1:** *"Điều tớ thấy cậu **làm được** là **cậu mở đầu bằng một câu hỏi cho lớp, và có 4 bạn giơ tay**. Một điều tớ nghĩ nên **sửa** là **cậu nhìn xuống giấy suốt đoạn giữa**. Ngay lượt sau cậu thử **viết 3 từ khoá to lên lòng bàn tay thay vì cầm cả tờ giấy**."*
+
+**Kiểm chứng chất lượng phản hồi — thước đo của Học viện**
+> Đếm: **bao nhiêu góp ý được người nhận thực hiện được ngay ở lượt 2?**
+> 🎤 *"Nếu bạn không làm được góp ý của em, không phải bạn kém — nhiều khả năng góp ý của em chưa đủ cụ thể."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Ô "làm được" nêu **hành vi + kết quả quan sát được**.
+- Ô "làm ngay" **được thực hiện thật ở lượt 2**.
+- Người nhận **không thanh minh**.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Kẹp chê giữa hai lời khen | Người nghe chỉ nhớ lời khen, bỏ qua phần cần sửa | Dùng đúng ba ô, không "bánh mì kẹp" |
+| Góp ý về con người *("bạn là người cẩu thả")* | Không sửa được, chỉ gây tổn thương | HLV dừng ngay và bắt diễn đạt lại thành hành vi |
+| Ô "làm ngay" quá lớn *("hãy tự tin hơn")* | Không thực hiện được | Kiểm: *"Việc này làm được trong 1 phút không?"* |
+
+**Nối vào đâu:** `TC-T-013` · `TC-A-019 Vòng Phản Hồi 360` · mọi vòng T-DRILL · rubric mọi họ *(khối phản hồi bắt buộc)*.
+
+---
+
+### `CT-15` · QUY TRÌNH 5 BƯỚC GIẢI QUYẾT VẤN ĐỀ
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M5 | 🟢 Khối 4 | 15–18′ | 📌 dán tường |
+
+**Dùng khi:** vấn đề có lời giải đúng hoặc có tiêu chí rõ ràng để đánh giá.
+**Không dùng khi:** cần tạo ra thứ mới cho người khác dùng — dùng `CT-33`.
+
+**Năm bước**
+
+| Bước | Việc làm | Thời lượng | Sai lầm |
+|:--:|---|:--:|---|
+| **①** **Nói lại vấn đề bằng lời của mình** | Viết một câu, có ai/cái gì/khi nào | 15% | Nhảy qua bước này |
+| **②** **Tìm nguyên nhân thật** | `CT-16` 5-Whys hoặc xương cá | 25% | Chữa triệu chứng |
+| **③** **Ra ≥3 phương án** | Cấm dừng ở phương án đầu tiên | 20% | Chỉ có 1 phương án |
+| **④** **Chọn có tiêu chí** | `CT-17` nếu phức tạp | 15% | Chọn theo cảm tính |
+| **⑤** **Làm và kiểm lại** | Làm rồi **quay lại đo** | 25% | Làm xong không kiểm |
+
+**Ví dụ đã điền — khối 7, Squad luôn nộp bài trễ**
+
+| Bước | Nội dung |
+|:--:|---|
+| ① | *"Ba lần liên tiếp Squad nộp bài sau hạn từ 1–2 ngày."* |
+| ② | 5-Whys → **nguyên nhân gốc: không ai chốt hạn nội bộ sớm hơn hạn thật; mọi người đều tưởng còn thời gian** |
+| ③ | (a) Đặt hạn nội bộ sớm 2 ngày · (b) Chia nhỏ theo tuần · (c) Một người phụ trách nhắc |
+| ④ | Chọn **(a) + (c)** — rẻ nhất, làm được ngay, hợp vai Người Giữ Nhịp |
+| ⑤ | Sau 3 lần: **nộp đúng hạn 3/3**. Giữ cách này |
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Bước ① viết ra **thành câu**, cả nhóm đồng ý đó là vấn đề.
+- Bước ③ có **ít nhất 3** phương án khác nhau về bản chất.
+- Bước ⑤ có **số liệu sau khi làm**.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Bỏ bước ② | Chữa triệu chứng, vấn đề quay lại | Bắt nộp kết quả 5-Whys trước khi bàn phương án |
+| Bước ③ chỉ có 1 phương án | Đó là quyết định, không phải giải quyết vấn đề | Luật: **chưa đủ 3 thì chưa được chọn** |
+| Bỏ bước ⑤ | Không biết cách chọn có hiệu quả không | Đặt lịch kiểm lại ngay khi chọn xong |
+
+**Nối vào đâu:** `CT-16` · `CT-17` · `CT-19` · rubric họ giải quyết vấn đề.
+
+---
+
+### `CT-16` · SƠ ĐỒ XƯƠNG CÁ / 5-WHYS
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M5 | 🔵 Khối 6 | 12–15′ | ✍️ mẫu A3 |
+
+**Dùng khi:** một việc hỏng lặp lại, và cách chữa cũ không ăn thua.
+**Không dùng khi:** vấn đề chỉ xảy ra một lần do yếu tố ngoài tầm kiểm soát.
+
+**Cách chạy 5-Whys**
+
+1. Viết **hiện tượng** ở dòng đầu, có số liệu.
+2. Hỏi *"vì sao?"* **năm lần liên tiếp**, mỗi câu trả lời dựa trên câu trước.
+3. Dừng khi tới **nguyên nhân mình đổi được**. Nếu tới nguyên nhân ngoài tầm *("vì trời mưa")*, quay lại bước 3 và hỏi *"vậy vì sao mưa lại làm hỏng việc?"*
+
+**Cách chạy xương cá** — dùng khi nghi có nhiều nguyên nhân cùng lúc
+
+Xương chính là hiện tượng; các nhánh xương theo **5 nhóm chuẩn cho môi trường học đường**:
+**Con người · Cách làm · Công cụ & vật liệu · Môi trường · Thông tin**
+
+**Ví dụ đã điền — khối 8, "buổi tập của CLB toàn trễ 20 phút"**
+
+> **1. Vì sao trễ?** Vì phải đợi đủ người.
+> **2. Vì sao phải đợi?** Vì nội dung mở đầu cần cả nhóm.
+> **3. Vì sao cần cả nhóm?** Vì buổi nào cũng bắt đầu bằng điểm danh và phổ biến.
+> **4. Vì sao phổ biến ở đầu buổi?** Vì thông tin gửi trước không ai đọc.
+> **5. Vì sao không ai đọc?** **Vì thông tin gửi trong nhóm chat chung, trôi mất giữa hàng trăm tin nhắn.**
+>
+> **→ Nguyên nhân gốc đổi được:** kênh thông tin, không phải ý thức giờ giấc.
+> **→ Cách chữa:** tách một kênh riêng chỉ đăng lịch, ghim tin; mở đầu buổi bằng hoạt động không cần đủ người.
+
+> 🎤 **HLV:** *"Nếu dừng ở câu 1, cách chữa sẽ là 'nhắc các bạn đi đúng giờ' — và ta đã nhắc ba tháng nay rồi. Đi tới câu 5 mới thấy vấn đề nằm ở chỗ hoàn toàn khác."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Đủ **5 tầng**, mỗi tầng nối logic với tầng trên.
+- Tầng cuối là thứ **nhóm đổi được**.
+- Cách chữa **khác hẳn** cách chữa nếu chỉ dừng ở tầng 1.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Dừng ở tầng 2 | Vẫn là triệu chứng | Đếm tầng; chưa đủ 5 thì chưa dừng |
+| Tầng cuối đổ lỗi cho người *("vì bạn X lười")* | Không sửa được hệ thống, chỉ tạo mâu thuẫn | Quy tắc: **hỏi về hệ thống, không hỏi về người**. Hỏi tiếp: *"vì sao hệ thống cho phép điều đó xảy ra?"* |
+| Nhánh xương cá quá chung | Không ra manh mối | Dùng đúng 5 nhóm chuẩn ở trên |
+
+**Nối vào đâu:** `CT-15` bước ② · `CT-19` · phác đồ xử lý sự cố · họp rút kinh nghiệm dự án.
+
+---
+
+### `CT-19` · SƠ ĐỒ VÒNG LẶP HỆ THỐNG
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M5 | 🔵 Khối 7 | 15–18′ | ✍️ mẫu A3 |
+
+**Dùng khi:** vấn đề **cứ quay lại** dù đã chữa nhiều lần; hoặc muốn hiểu vì sao một thói quen tốt tự nuôi chính nó.
+**Không dùng khi:** quan hệ nhân quả thẳng một chiều — 5-Whys là đủ.
+
+**Các bước**
+
+1. Liệt kê **4–6 yếu tố**, mỗi yếu tố là một thứ **tăng hoặc giảm được**.
+2. Nối bằng mũi tên, ghi dấu:
+   **➕** cùng chiều *(A tăng → B tăng)* · **➖** ngược chiều *(A tăng → B giảm)*.
+3. Tìm vòng khép kín và gọi tên:
+   **🔁 Vòng khuếch đại** *(càng chạy càng mạnh — tốt hoặc xấu)* · **⚖️ Vòng cân bằng** *(tự kéo về mức cũ)*.
+4. Tìm **điểm đòn bẩy**: chỗ can thiệp nhỏ mà đổi cả vòng.
+
+**Ví dụ đã điền — khối 9, vòng xoáy mất ngủ trước kỳ thi**
+
+```
+   Lo lắng ──➕──► Học khuya ──➕──► Ngủ ít
+      ▲                                 │
+      │                                 ➕
+      │                                 ▼
+      └────────➕──── Học kém tập trung ◄┘
+                        🔁 VÒNG KHUẾCH ĐẠI
+```
+
+> **Đọc vòng:** càng lo → càng học khuya → càng ngủ ít → càng kém tập trung → **càng lo hơn nữa**. Vòng này không tự dừng, nó tự mạnh lên.
+>
+> **Điểm đòn bẩy:** không phải "bớt lo" *(không ra lệnh được cho cảm xúc)*, mà là **cắt ở mắt xích "ngủ ít"** — đặt giờ đi ngủ cố định. Đây là mắt xích duy nhất **nằm hoàn toàn trong tầm kiểm soát**.
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Có **ít nhất một vòng khép kín**, gọi tên đúng loại.
+- Điểm đòn bẩy nằm ở mắt xích **học sinh kiểm soát được**.
+- Học sinh giải thích được **vì sao cách chữa cũ không hiệu quả**.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Vẽ chuỗi thẳng, không khép vòng | Đó là 5-Whys, không phải sơ đồ hệ thống | Hỏi: *"Cái cuối có quay lại tác động cái đầu không?"* |
+| Yếu tố là danh từ không tăng giảm được *("nhà trường")* | Không nối mũi tên được | Bắt viết dạng **"mức độ / số lượng của…"** |
+| Chọn điểm đòn bẩy là cảm xúc | Không ra lệnh được cho cảm xúc | Chọn mắt xích **hành vi**, kiểm soát được |
+
+**Nối vào đâu:** `CT-16` · `CT-35` · chuyên đề tư duy hệ thống khối 9–12 · phân tích dự án thất bại.
+
+---
+
+### `CT-20` · THANG BẰNG CHỨNG 5 MỨC
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M5 | 🔵 Khối 8 | 12–15′ | 📌 dán tường |
+
+**Dùng khi:** đánh giá một tuyên bố — quảng cáo, tin tức, lời khuyên sức khoẻ, "nghiên cứu cho thấy…".
+**Không dùng khi:** vấn đề thuộc về giá trị chứ không phải sự thật — dùng `CT-34`.
+
+**Năm mức, từ yếu tới mạnh**
+
+| Mức | Loại bằng chứng | Ví dụ | Tin được tới đâu |
+|:--:|---|---|---|
+| **1** | Ý kiến, cảm giác | *"Tôi thấy cái này hiệu quả"* | Gần như không |
+| **2** | Lời kể cá nhân | *"Chị tôi dùng và khỏi"* | Rất yếu — **không thấy được người không khỏi** |
+| **3** | Nhiều lời kể / ý kiến chuyên gia | *"Nhiều bác sĩ khuyên dùng"* | Yếu — chuyên gia cũng sai, và có thể có lợi ích |
+| **4** | Nghiên cứu có nhóm đối chứng | *"Thử trên 200 người, có nhóm dùng giả dược"* | Khá mạnh — kiểm ai tài trợ |
+| **5** | Tổng hợp nhiều nghiên cứu | *"Tổng hợp 30 nghiên cứu trên 40.000 người"* | Mạnh nhất hiện có |
+
+**Ba câu hỏi kèm theo, hỏi ở bất kỳ mức nào**
+1. *Ai trả tiền cho nghiên cứu/bài viết này?*
+2. *Có ai **không** hưởng lợi mà cũng nói vậy không?*
+3. *Nếu điều ngược lại đúng, họ có công bố không?*
+
+**Ví dụ đã điền — khối 8, một quảng cáo "thực phẩm bổ não giúp tăng điểm"**
+
+| Bằng chứng quảng cáo đưa ra | Mức | Nhận xét |
+|---|:--:|---|
+| *"9/10 phụ huynh hài lòng"* | **1–2** | Ý kiến, không đo điểm số. Không rõ hỏi bao nhiêu người, ai loại ra |
+| *"Được bác sĩ X khuyên dùng"* | **3** | Bác sĩ X có phải người phát ngôn được trả tiền không? |
+| *"Nghiên cứu cho thấy thành phần Y tốt cho trí nhớ"* | **4?** | **Nghiên cứu trên chuột, liều gấp 50 lần** — cần đọc kỹ nghiên cứu gốc |
+| Không có | **5** | Chưa có tổng hợp nghiên cứu nào |
+
+> 🎤 **HLV:** *"Không ai nói dối trong quảng cáo này cả. Từng câu đều có thể đúng. Cái họ làm là **để em nhầm mức 2 thành mức 5**."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Xếp đúng mức và **nói được vì sao**.
+- Đặt được câu hỏi *"ai trả tiền"*.
+- Phân biệt được *"có nghiên cứu"* với *"nghiên cứu này chứng minh điều đang được quảng cáo"*.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Thấy chữ "nghiên cứu" là tin | Đây chính là thủ thuật bị lợi dụng nhiều nhất | Bắt hỏi: nghiên cứu **trên ai, bao nhiêu người, ai tài trợ** |
+| Trở nên hoài nghi mọi thứ | Ngược lại cũng nguy hiểm không kém | Nhấn: mục tiêu là **xếp đúng mức**, không phải bác bỏ tất cả |
+| Nhầm "chuyên gia" với "bằng chứng" | Chuyên gia là mức 3, không phải mức 5 | Dán thang lên tường, tra lại mỗi lần |
+
+**Nối vào đâu:** `CT-21 Nguỵ biện` · `CT-29 Kiểm chứng 4 bước` · `TC-I-024` · mạch M7 công dân số.
+
+---
+### `CT-21` · MƯỜI NGUỴ BIỆN THƯỜNG GẶP
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M5 | 🔵 Khối 7 | 15′ | 📌 dán tường + ✍️ bộ thẻ 10 lá |
+
+**Dùng khi:** tranh luận, đọc bình luận mạng, nghe quảng cáo, và **khi chính mình sắp cãi**.
+**Không dùng khi:** để bắt lỗi bạn trong lớp — xem phần ⚠️.
+
+**Mười nguỵ biện**
+
+| # | Tên | Trông như thế nào | Câu gỡ |
+|:--:|---|---|---|
+| 1 | **Công kích cá nhân** | Chê người thay vì bàn ý | *"Chuyện đó không liên quan tới điều đang bàn."* |
+| 2 | **Người rơm** | Bóp méo ý người kia cho dễ bác | *"Tớ không nói vậy. Tớ nói là ___."* |
+| 3 | **Đen hoặc trắng** | Chỉ đưa hai lựa chọn | *"Còn phương án thứ ba không?"* |
+| 4 | **Trượt dốc** | Đẩy hậu quả tới cực đoan | *"Từ A tới Z còn bao nhiêu bước? Bước nào chắc chắn xảy ra?"* |
+| 5 | **Số đông** | *"Ai cũng làm thế"* | *"Nhiều người tin không làm điều đó thành đúng."* |
+| 6 | **Uy quyền sai chỗ** | Người nổi tiếng ở lĩnh vực khác | *"Người đó giỏi việc gì? Có liên quan việc này không?"* |
+| 7 | **Nhân quả vội** | Hai việc cùng xảy ra tưởng là nhân quả | *"Có thể do nguyên nhân thứ ba không?"* |
+| 8 | **Vơ đũa** | Từ vài ca suy ra tất cả | *"Bao nhiêu trường hợp? Chọn thế nào?"* |
+| 9 | **Đánh lạc hướng** | Lái sang chuyện khác | *"Mình quay lại câu hỏi ban đầu nhé."* |
+| 10 | **Truyền thống** | *"Xưa nay vẫn vậy"* | *"Ngày xưa hợp lý vì gì? Lý do đó còn không?"* |
+
+**Ví dụ đã điền — một cuộc tranh luận khối 9 về đồng phục**
+
+> *"Bạn phản đối đồng phục thì chắc bạn cũng muốn bỏ luôn nội quy chứ gì (**② người rơm** + **④ trượt dốc**). Với lại trường nào chẳng có đồng phục (**⑤ số đông**), xưa nay vẫn thế mà (**⑩ truyền thống**). Mà bạn thì lúc nào cũng thích chống đối (**① công kích cá nhân**)."*
+>
+> **Câu gỡ:** *"Tớ không nói bỏ nội quy — tớ nói **cho chọn giữa hai mẫu**. Mình quay lại câu hỏi đó nhé: **cho chọn giữa hai mẫu thì có vấn đề gì không?**"*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Gọi tên đúng nguỵ biện **và** nói được câu gỡ.
+- ⭐ **Nhận ra nguỵ biện trong lập luận của chính mình** — đây mới là mức đạt thật.
+- Gỡ xong **quay lại câu hỏi gốc**, không sa vào cãi về nguỵ biện.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Dùng để hạ bạn *("nguỵ biện rồi nhé!")* | Biến lớp thành nơi bắt lỗi, không ai dám nói | Luật: **gọi tên lỗi lập luận, không gọi tên người**; và bắt kèm câu gỡ |
+| Nghĩ có nguỵ biện là kết luận sai | Lập luận dở vẫn có thể ra kết luận đúng | Nhấn: nguỵ biện làm **lập luận không đủ sức**, không tự động làm kết luận sai |
+| Học thuộc tên mà không dùng được | Thành kiến thức chết | Luyện trên **bình luận thật đã ẩn danh**, không luyện trên định nghĩa |
+
+**⚠️ Quy tắc lớp:** cấm dùng bộ thẻ này để bắt lỗi bạn trong giờ khác. Luyện trên **văn bản đã ẩn danh** do HLV chuẩn bị, không luyện trên lời của bạn cùng lớp.
+
+**Nối vào đâu:** `CT-20` · `CT-29` · `TC-I-024` · chuyên đề tranh biện khối 9–12.
+
+---
+
+### `CT-22` · GHI CHÉP CORNELL
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M6 | 🟢 Khối 5 | 10′ *(dạy)* | ✍️ mẫu in / kẻ vở |
+
+**Dùng khi:** nghe giảng, đọc tài liệu, xem video học.
+**Không dùng khi:** cần chép lại nguyên văn công thức hoặc bài mẫu.
+
+**Chia trang thành ba vùng**
+
+```
+┌──────────┬──────────────────────────────┐
+│  CỘT     │   VÙNG GHI CHÉP              │
+│  CÂU HỎI │   (rộng, ghi trong giờ)      │
+│  (hẹp)   │                              │
+│          │   • ý chính, gạch đầu dòng   │
+│  điền    │   • viết tắt thoải mái       │
+│  SAU giờ │   • chừa chỗ trống           │
+├──────────┴──────────────────────────────┤
+│  TÓM TẮT — 3 dòng, viết trong 24 giờ    │
+└─────────────────────────────────────────┘
+```
+
+**Bốn nhịp dùng — nhịp nào cũng bắt buộc**
+
+| Nhịp | Lúc nào | Việc làm |
+|:--:|---|---|
+| **①** | Trong giờ | Ghi vùng phải. **Không cần đẹp**, cần bắt kịp |
+| **②** | Trong 24 giờ | Đọc lại, viết **câu hỏi** vào cột trái — câu hỏi mà vùng phải trả lời được |
+| **③** | Trong 24 giờ | Viết **3 dòng tóm tắt** ở đáy trang, bằng lời của mình |
+| **④** | Trước kiểm tra | **Che vùng phải**, chỉ nhìn cột câu hỏi và trả lời — đây là truy hồi chủ động |
+
+> 🎤 **HLV:** *"Nhịp ④ mới là lý do tồn tại của cách ghi này. Nếu em không bao giờ che vùng phải lại, thì Cornell chỉ là vở ghi có kẻ thêm một cột — vô ích."*
+
+**Ví dụ đã điền — khối 7, bài Sinh học về quang hợp**
+
+| Cột câu hỏi *(điền sau giờ)* | Vùng ghi chép *(trong giờ)* |
+|---|---|
+| Quang hợp cần những gì? | • Cần: ánh sáng · nước · CO₂ · diệp lục |
+| Sản phẩm là gì? | • Ra: glucose + O₂ |
+| Vì sao lá màu xanh? | • Diệp lục hấp thụ đỏ + xanh tím, **phản xạ xanh lục** → mắt thấy xanh |
+| Quang hợp và hô hấp khác nhau chỗ nào? | • QH: tích năng lượng, ban ngày · HH: giải phóng, cả ngày đêm |
+
+> **Tóm tắt 3 dòng:** *"Quang hợp là cách cây biến ánh sáng thành thức ăn. Lá xanh vì diệp lục phản xạ ánh sáng xanh lục chứ không phải vì lá 'có màu xanh'. Quang hợp ngược chiều với hô hấp nhưng cây làm cả hai."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Cột trái là **câu hỏi**, không phải từ khoá.
+- Tóm tắt viết **bằng lời của mình**, không chép lại.
+- Có dấu vết của nhịp ④ *(gấp trang, đánh dấu câu chưa trả lời được)*.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Kẻ cột nhưng không bao giờ điền cột trái | Chỉ là vở ghi thường | Dành 5 phút cuối buổi cho nhịp ② ngay tại lớp |
+| Cột trái ghi từ khoá | Từ khoá không tự kiểm tra được | Bắt viết dạng **câu hỏi có dấu hỏi** |
+| Chép nguyên lời thầy cô | Không xử lý thông tin, chỉ chuyển chữ | Luật: **mỗi ý tối đa 1 dòng**, buộc phải chọn lọc |
+
+**Nối vào đâu:** `CT-23` · `CT-24` · `TC-T-020 Truy Hồi Chủ Động` · `TC-T-007 Tóm 3 Ý` · phiên học sâu `CT-26`.
+
+---
+
+### `CT-23` · LỊCH LẶP NGẮT QUÃNG 1–3–7–15–30
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M6 | 🟢 Khối 5 | 8′ | ✍️ bảng lịch in |
+
+**Dùng khi:** cần nhớ lâu — từ vựng, công thức, sự kiện, định nghĩa.
+**Không dùng khi:** kỹ năng vận động hoặc kỹ năng thao tác — thứ đó cần luyện liên tục, không cần ngắt quãng.
+
+**Lịch**
+
+| Lần ôn | Sau khi học | Thời lượng | Cách ôn |
+|:--:|:--:|:--:|---|
+| 1 | **1 ngày** | 5–8′ | Che đáp án, tự nhớ ra |
+| 2 | **3 ngày** | 5′ | Chỉ ôn phần **quên hoặc ngập ngừng** |
+| 3 | **7 ngày** | 4′ | Như trên |
+| 4 | **15 ngày** | 3′ | Như trên |
+| 5 | **30 ngày** | 3′ | Như trên |
+
+**Hai quy tắc quyết định hiệu quả**
+1. **Ôn bằng cách tự nhớ ra, không phải đọc lại.** Đọc lại cho cảm giác quen thuộc, không tạo trí nhớ.
+2. **Phần nhớ được thì bỏ qua.** Chỉ ôn phần quên. Sau lần 3, khối lượng ôn chỉ còn khoảng 1/4.
+
+**Ví dụ đã điền — khối 6, 30 từ vựng học ngày 1/10**
+
+| Ngày | Việc | Số từ còn phải ôn |
+|:--:|---|:--:|
+| 2/10 | Che nghĩa, tự nhớ | 30 → còn quên **11** |
+| 4/10 | Chỉ ôn 11 từ đó | còn quên **5** |
+| 8/10 | Ôn 5 từ | còn quên **2** |
+| 16/10 | Ôn 2 từ | còn quên **1** |
+| 31/10 | Ôn 1 từ | **0** |
+
+> **Tổng thời gian bỏ ra: khoảng 22 phút cho 30 từ nhớ được sau một tháng.** Cách học nhồi một đêm tốn nhiều hơn thế và quên gần hết sau 2 tuần.
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Có **lịch ghi ngày cụ thể**, không phải "khi nào rảnh ôn".
+- Ghi lại **số phần quên mỗi lần** — con số này phải giảm dần.
+- Ôn bằng **che đáp án**, có thể kiểm bằng cách hỏi bất chợt.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Ôn bằng cách đọc lại | Không tạo trí nhớ, chỉ tạo cảm giác quen | Bắt buộc **che đáp án** |
+| Ôn lại cả phần đã nhớ | Tốn thời gian, học sinh bỏ cuộc | Đánh dấu ✓ phần đã chắc, bỏ ra khỏi bộ |
+| Không đặt lịch, "khi nào nhớ thì ôn" | Không bao giờ nhớ | Ghi ngày vào **lịch/nhắc điện thoại ngay khi học xong** |
+
+**Nối vào đâu:** `CT-22` · `CT-26` · `TC-T-020` · chuyên đề học tập xuất sắc mạch M6.
+
+---
+
+### `CT-24` · BỐN BƯỚC FEYNMAN
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M6 | 🟢 Khối 5 | 15′ | ✍️ mẫu 1 trang |
+
+**Dùng khi:** cần **hiểu thật**, không phải nhớ tạm; khi ôn phần khó nhất; khi kèm bạn.
+**Không dùng khi:** chỉ cần thuộc lòng danh sách.
+
+**Bốn bước**
+
+| Bước | Việc làm | Chuẩn |
+|:--:|---|---|
+| **①** | Viết tên khái niệm lên đầu tờ giấy trắng | — |
+| **②** | **Giải thích như đang nói với em bé lớp 3** — không nhìn tài liệu | Chỉ dùng **từ thường ngày**; mỗi câu ≤15 từ |
+| **③** | **Khoanh chỗ mình bí** — chỗ phải dùng thuật ngữ, chỗ nói vòng vo | ⭐ Chỗ khoanh chính là chỗ mình **chưa hiểu** |
+| **④** | Quay lại tài liệu **chỉ để lấp chỗ khoanh**, rồi giải thích lại từ đầu | Lần hai không còn chỗ khoanh |
+
+**Ví dụ đã điền — khối 8, khái niệm "lãi kép"**
+
+> **Lần 1:** *"Lãi kép là lãi tính trên lãi. Nó có tính chất **hàm mũ**…"* ← **khoanh "hàm mũ"** — mình đang dùng thuật ngữ để che chỗ chưa hiểu.
+>
+> **Lần 2 (sau khi lấp chỗ khoanh):** *"Em bỏ 100 đồng vào hũ. Cuối năm hũ tự thêm 10 đồng, thành 110. Năm sau hũ thêm 10 phần trăm **của 110**, tức là 11 đồng chứ không phải 10 — vì bây giờ tiền trong hũ nhiều hơn. Cứ thế, mỗi năm phần thêm vào lại to hơn năm trước. Đó là lãi kép: **tiền lãi cũng đẻ ra lãi.** Càng để lâu càng nhanh — không phải vì em bỏ thêm tiền, mà vì cái hũ mỗi năm một to."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Bản giải thích **không có thuật ngữ chưa được giải thích**.
+- Có **chỗ khoanh ở lần 1** — không khoanh gì thường nghĩa là chưa nghiêm túc.
+- Có **ví dụ cụ thể bằng con số hoặc hình ảnh đời thường**.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Chép lại định nghĩa sách | Không phải hiểu, là chép | Cất tài liệu ở bước ② |
+| Không khoanh gì | Bỏ mất chính giá trị của công cụ | Bắt khoanh **tối thiểu 1 chỗ** ở lần 1 |
+| Giải thích cho bạn cùng trình độ | Bạn hiểu được vì bạn đã biết, không kiểm được gì | Bắt tưởng tượng **em lớp 3**, hoặc giải thích cho em nhỏ thật |
+
+**Nối vào đâu:** `CT-22` · `CT-23` · `TC-T-020` bậc L4 *(dạy lại)* · điều kiện Cấp Độ 5 *(kèm được 1 bạn)*.
+
+---
+
+### `CT-27` · BỘ LỌC 3 CÂU HỎI TRƯỚC KHI GỬI
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M7 | 🟢 Khối 4 | 6′ | ✍️ thẻ dán mặt sau điện thoại |
+
+**Dùng khi:** trước khi gửi tin nhắn, nhất là tin nhắn lúc đang bực.
+**Không dùng khi:** tin nhắn báo nguy hiểm — gửi ngay, không lọc.
+
+**Ba câu hỏi**
+
+| # | Câu hỏi | Nếu "không" thì |
+|:--:|---|---|
+| **1** | *Có **đúng** không?* | Kiểm lại trước khi gửi |
+| **2** | *Có **cần thiết** không?* | Không gửi |
+| **3** | *Có **tử tế** không? Nếu người này đứng trước mặt mình, mình có nói câu này không?* | Viết lại |
+
+**Quy tắc kèm theo — quan trọng hơn cả ba câu hỏi**
+
+> ⏳ **Quy tắc 10 phút:** tin nhắn viết khi đang bực **không được gửi ngay**. Viết ra, để đó 10 phút, đọc lại rồi mới quyết. Phần lớn sẽ bị xoá.
+> 📵 **Quy tắc màn hình:** cái gì gửi đi thì có thể bị chụp màn hình. Viết như thể cả lớp sẽ đọc.
+
+**Ví dụ đã điền — khối 6**
+
+> **Bản viết lúc 21h30, đang bực:** *"Cậu làm hỏng hết cả nhóm rồi đấy, lúc nào cũng thế!"*
+> **Lọc:** ① Đúng? — *một phần*. ② Cần thiết? — *cần nói, nhưng không cần nói kiểu này*. ③ Tử tế? — **không**.
+> **Sau 10 phút, bản gửi đi:** *"Cậu ơi, phần của cậu tối nay chưa có nên nhóm chưa nộp được. Mai cậu gửi sớm giúp tớ nhé? Nếu cậu đang kẹt gì thì nói, tớ làm đỡ một phần."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Học sinh kể được **một lần mình đã không gửi** nhờ quy tắc 10 phút.
+- Câu ③ được kiểm bằng phép thử *"nói trước mặt"*.
+- Bản viết lại **giữ nội dung cần nói**, chỉ đổi cách nói.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Chỉ lọc câu ① | Đúng nhưng ác vẫn gây tổn thương | Dán đủ 3 câu, đọc đủ 3 |
+| Nghĩ nhắn riêng thì an toàn | Chụp màn hình được | Nhắc quy tắc màn hình mỗi lần dạy |
+| Bỏ luôn không nói gì | Né tránh cũng làm hỏng quan hệ | Câu ② là *"có cần thiết"*, không phải *"có nên im"* — cần thì nói, chỉ đổi cách |
+
+**Nối vào đâu:** `CT-28` · `CT-07` · phác đồ bắt nạt mạng · mạch M7.
+
+---
+
+### `CT-29` · QUY TRÌNH KIỂM CHỨNG 4 BƯỚC
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M7 | 🟢 Khối 5 | 12′ | 📌 dán tường |
+
+**Dùng khi:** trước khi tin hoặc chia sẻ lại bất cứ tin gì.
+**Không dùng khi:** tin báo nguy hiểm khẩn cấp — hành động an toàn trước, kiểm sau.
+
+**Bốn bước — làm theo thứ tự, 90 giây là đủ**
+
+| Bước | Việc làm | Cách làm cụ thể |
+|:--:|---|---|
+| **① Ai đăng** | Tìm nguồn gốc đầu tiên | Trang này là ai? Có tên tác giả không? Có mục "về chúng tôi" không? |
+| **② Bao giờ** | Kiểm ngày | Tin cũ đăng lại như tin mới là thủ thuật phổ biến nhất |
+| **③ Còn ai nói** | Tìm **2 nguồn độc lập** | Độc lập nghĩa là **không chép lại của nhau** |
+| **④ Ảnh có thật không** | Tìm ngược ảnh | Ảnh thật nhưng **sai ngữ cảnh** là dạng tin giả khó phát hiện nhất |
+
+**Sáu dấu hiệu đỏ cần dừng lại**
+
+| # | Dấu hiệu |
+|:--:|---|
+| 1 | Tiêu đề dùng **từ cảm xúc mạnh** — "sốc", "phẫn nộ", "không thể tin nổi" |
+| 2 | Không có **tên tác giả** và không có ngày đăng |
+| 3 | Có số liệu nhưng **không nói lấy ở đâu** |
+| 4 | Kêu gọi **"chia sẻ gấp trước khi bị xoá"** |
+| 5 | Ảnh chất lượng thấp, có dấu vết cắt ghép, hoặc **chữ trên ảnh khác ngôn ngữ ảnh gốc** |
+| 6 | Nội dung **đúng y hệt điều mình vốn muốn tin** |
+
+> 🎤 **HLV về dấu hiệu 6:** *"Dấu hiệu khó nhận nhất không nằm trong bài viết — nó nằm trong đầu ta. Tin nào khớp với điều ta vốn đã tin thì ta lười kiểm nhất. Đó chính là lúc phải kiểm kỹ nhất."*
+
+**Ví dụ đã điền — khối 7**
+
+> **Tin lan truyền:** *"KHẨN: trường học toàn quốc nghỉ từ thứ Hai — chia sẻ gấp!"*
+> ① Ai đăng: một trang không tên, không có mục giới thiệu. ② Bao giờ: **ảnh chụp văn bản đề ngày cách đây 2 năm**. ③ Còn ai nói: không có báo nào, **cổng thông tin Sở không có**. ④ Ảnh: tìm ngược ra văn bản thật của một tỉnh, năm khác, đã bị **sửa số ngày**.
+> **→ Tin giả.** Có tới **4/6 dấu hiệu đỏ**.
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Làm đủ 4 bước, **có bước ③ tìm nguồn thứ hai**.
+- Phân biệt được **nguồn độc lập** với nguồn chép lại.
+- Thừa nhận được dấu hiệu 6 khi nó xảy ra với chính mình.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Coi "nhiều người chia sẻ" là kiểm chứng | Đó là mức 5 nguỵ biện số đông | Hỏi: *"Họ kiểm hay họ cũng chỉ chia sẻ lại?"* |
+| Chỉ kiểm tin mình không thích | Thiên kiến xác nhận | Luật lớp: **kiểm cả tin mình thích**, nhất là tin mình thích |
+| Kiểm xong không sửa | Chia sẻ nhầm rồi để đó | Dạy cách **đính chính**: gỡ bài và nói rõ mình đã nhầm |
+
+**Nối vào đâu:** `CT-20` · `CT-21` · `CT-28` · `TC-I-024` · mạch M7.
+
+---
+
+### `CT-30` · QUY TẮC 3 VÙNG DÙNG AI
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M7 | 🔵 Khối 8 | 14′ | 📌 dán tường |
+
+**Dùng khi:** học sinh dùng công cụ AI cho việc học.
+**Không dùng khi:** thay cho quy định của nhà trường — nếu trường đã có quy định, quy định đó là trên hết.
+
+**Ba vùng**
+
+| Vùng | Nội dung | Ví dụ | Bắt buộc kèm |
+|:--:|---|---|---|
+| 🟢 **Được** | AI làm việc **không phải mục tiêu học tập** của em | Tóm tắt tài liệu dài để chọn phần đọc · giải thích lại khái niệm theo cách khác · gợi ý dàn ý để em tự viết · dịch từ · tạo câu hỏi ôn cho chính mình | Ghi rõ đã dùng AI ở khâu nào |
+| 🟡 **Cẩn trọng** | AI làm việc **gần với thứ em đang phải học** | Sửa lỗi ngữ pháp bài mình viết · gợi ý cách giải sau khi em đã tự thử · sinh ý tưởng khởi động | **Phải tự làm trước**, rồi mới đối chiếu; ghi rõ AI đã đổi gì |
+| 🔴 **Không** | AI làm **chính thứ đang được đánh giá** | Viết hộ bài văn · giải hộ bài tập rồi nộp · làm hộ bài thi · tạo nội dung giả rồi nói là mình khảo sát | Không có ngoại lệ |
+
+**Ba quy tắc bắt buộc kèm theo**
+
+> 1️⃣ **Khai báo.** Dùng AI ở khâu nào thì ghi ở cuối bài: *"Tôi dùng AI để ___."* Khai báo không bị trừ điểm; **giấu mới bị**.
+> 2️⃣ **Kiểm lại.** AI **bịa ra thông tin nghe rất thật** — số liệu, tên sách, trích dẫn. Mọi thông tin lấy từ AI phải kiểm bằng `CT-29` trước khi dùng.
+> 3️⃣ **Không đưa dữ liệu riêng tư.** Không nhập tên thật, địa chỉ, ảnh mặt, thông tin bạn bè, chuyện gia đình vào công cụ AI.
+
+**Ví dụ đã điền — khối 10, bài luận Văn**
+
+| Việc | Vùng | Ghi chú |
+|---|:--:|---|
+| Nhờ AI giải thích khái niệm "hình tượng nghệ thuật" theo 3 cách khác nhau | 🟢 | Khái niệm này không phải thứ đang được chấm |
+| Tự viết dàn ý, rồi hỏi AI *"dàn ý này thiếu góc nhìn nào?"* | 🟡 | **Đã tự làm trước**; ghi rõ AI gợi ý bổ sung ý gì |
+| Nhờ AI viết đoạn mở bài | 🔴 | Mở bài chính là thứ đang được chấm |
+| Nhờ AI liệt kê 5 nhận định của các nhà phê bình | 🔴🔎 | **Nguy hiểm:** AI hay bịa tên và trích dẫn. Phải tìm được nguồn gốc thật, nếu không thì bỏ |
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Có **dòng khai báo** ở cuối bài.
+- Với vùng 🟡, **có bản tự làm trước** để đối chiếu.
+- Kiểm được ít nhất một thông tin AI đưa ra và **phát hiện được khi AI bịa**.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Tin số liệu và trích dẫn AI đưa | AI bịa rất thuyết phục | Luật: **mọi con số và trích dẫn phải có nguồn gốc kiểm được** |
+| Giấu việc dùng AI | Mất lòng tin, và không học được cách dùng đúng | Chính sách: khai báo **không bị phạt**, giấu mới bị |
+| Cấm tuyệt đối để cho gọn | Học sinh vẫn dùng, chỉ là giấu; và mất cơ hội dạy | Dạy phân vùng, không cấm mù quáng |
+
+**⚠️ Bảo vệ dữ liệu:** HLV **không yêu cầu học sinh nhập bài viết cá nhân, nhật ký cảm xúc, hay Phiếu Sứ Mệnh vào bất kỳ công cụ AI nào**. Đây là dữ liệu D3 theo chính sách bảo mật của hệ.
+
+**Nối vào đâu:** `CT-29` · `CT-20` · `11-PHAN-QUYEN-BAO-MAT/03-CHINH-SACH-BAO-MAT-DU-LIEU.md` · mạch M7 khối 8–12.
+
+---
+
+### `CT-36` · CẤU TRÚC STAR
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M4 | 🟣 Khối 12 | 15–18′ | ✍️ mẫu in |
+
+**Dùng khi:** phỏng vấn, bảo vệ hồ sơ, viết thư ứng tuyển, kể một việc mình đã làm.
+**Không dùng khi:** kể chuyện để chia sẻ cảm xúc — STAR quá khô cho việc đó.
+
+**Bốn phần**
+
+| Chữ | Nội dung | Thời lượng nói | Sai lầm |
+|:--:|---|:--:|---|
+| **S** · Bối cảnh | Chuyện xảy ra ở đâu, khi nào, quy mô nào | 15% | Kể lê thê |
+| **T** · Nhiệm vụ | **Việc của tôi** là gì trong đó | 15% | Nói "chúng tôi" suốt |
+| **A** · Hành động | **Tôi đã làm gì**, cụ thể từng bước | **50%** | Phần này thường bị nói ngắn nhất — sai |
+| **R** · Kết quả | Ra được gì, **có số** | 20% | Không có số, hoặc không nói mình học được gì |
+
+**Ví dụ đã điền — khối 12, phỏng vấn học bổng**
+
+> ❌ **Bản thường:** *"Em có tham gia CLB và làm trưởng ban truyền thông, tụi em tổ chức nhiều sự kiện khá thành công."*
+>
+> ✅ **Bản STAR:** *"**(S)** Năm lớp 11, CLB Gen Việt trường em có 60 thành viên nhưng sự kiện chỉ thu hút khoảng 30 người dự, giảm dần qua ba kỳ. **(T)** Em nhận vai trưởng ban truyền thông, nhiệm vụ là đưa số người dự lên. **(A)** Em làm ba việc: **thứ nhất**, phỏng vấn 15 bạn không đi để tìm lý do — hoá ra 11 bạn không biết có sự kiện chứ không phải không thích; **thứ hai**, chuyển từ đăng ảnh sang đăng lịch cố định thứ Ba hằng tuần và nhờ lớp trưởng nhắc; **thứ ba**, mỗi sự kiện cử 2 bạn mời trực tiếp 10 người. **(R)** Sau ba kỳ, số người dự tăng từ 30 lên **78**. Điều em học được là **vấn đề em tưởng là 'nội dung chưa hay' thật ra là 'thông tin không tới nơi'** — từ đó em luôn đi hỏi trước khi đoán."*
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Phần **A dài nhất**, có ít nhất 3 hành động cụ thể.
+- Dùng **"tôi/em"** ở phần A, không phải "chúng tôi".
+- Phần **R có con số** và có **một điều học được**.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| S dài, A ngắn | Người nghe không biết em **làm được gì** | Bấm giờ: A phải chiếm một nửa |
+| "Chúng em đã…" suốt phần A | Không thấy đóng góp của cá nhân | Luyện đổi hết sang "em đã…" rồi mới cân lại |
+| R không có số | Không thuyết phục | Bắt buộc có ít nhất 1 con số trước/sau |
+
+**Nối vào đâu:** `CT-38` · hồ sơ Cất Cánh khối 12 · `TC-T-031` · rubric họ trình bày.
+
+---
+
+### `CT-37` · CẤU TRÚC IMRaD
+
+| Pha | Mạch | Khối tối thiểu | Thời gian tại lớp | Hình thức |
+|:--:|:--:|:--:|:--:|---|
+| **T** | M6 | 🟣 Khối 11 | 18–20′ | ✍️ mẫu in |
+
+**Dùng khi:** viết báo cáo nghiên cứu, báo cáo dự án có số liệu, bài dự thi khoa học kỹ thuật.
+**Không dùng khi:** bài viết cảm nhận, bài luận cá nhân, kế hoạch dự án.
+
+**Bốn phần**
+
+| Phần | Trả lời câu hỏi | Nội dung bắt buộc | Cấm |
+|---|---|---|---|
+| **I** · Đặt vấn đề | *Vì sao làm việc này?* | Vấn đề · những gì đã biết · **khoảng trống** · câu hỏi nghiên cứu | Cấm nêu kết quả ở đây |
+| **M** · Phương pháp | *Làm thế nào?* | Ai/cái gì được khảo sát · **bao nhiêu** · chọn thế nào · đo bằng gì · thời gian | Cấm viết mơ hồ tới mức người khác không lặp lại được |
+| **R** · Kết quả | *Thu được gì?* | Số liệu, bảng, biểu đồ, **kể cả kết quả trái ý muốn** | **Cấm bình luận** ở phần này |
+| **D** · Bàn luận | *Nghĩa là gì?* | Giải thích · **hạn chế của nghiên cứu** · so với nghiên cứu khác · gợi ý tiếp theo | Cấm kết luận vượt quá dữ liệu |
+
+> ⭐ **Hai chỗ phân biệt báo cáo trung thực với báo cáo tô hồng:**
+> **① Phần R phải có kết quả trái ý muốn** nếu nó có xảy ra. **② Phần D phải có mục "hạn chế".** Báo cáo không có hạn chế nào là báo cáo chưa đủ tin cậy — đây cũng là quy tắc của toàn hệ: **mọi báo cáo phải chứa ít nhất một con số không có lợi cho mình**.
+
+**Ví dụ đã điền — khối 11, dự án bình nước cá nhân**
+
+| Phần | Nội dung rút gọn |
+|---|---|
+| **I** | Trường thải ~400 chai nhựa/tuần. Đã có nghiên cứu cho thấy truyền thông làm tăng nhận thức nhưng **ít nghiên cứu về hành vi thật ở trường phổ thông Việt Nam**. Câu hỏi: *truyền thông kèm lắp điểm tiếp nước có tăng tỷ lệ mang bình cá nhân không?* |
+| **M** | Đếm mẫu 3 lớp mỗi khối × 3 lần/tuần × 8 tuần. Nhóm đối chứng: 3 lớp chỉ nghe truyền thông, không có điểm tiếp nước gần |
+| **R** | Nhóm có điểm tiếp nước: 12% → **41%**. Nhóm chỉ truyền thông: 12% → **17%**. **Kết quả trái ý muốn: sau tuần thứ 6 tỷ lệ ở cả hai nhóm đều giảm nhẹ** |
+| **D** | Điểm tiếp nước là yếu tố quyết định, không phải truyền thông. **Hạn chế: chỉ đếm trong 8 tuần, chưa biết có duy trì không; đếm bằng quan sát nên có thể học sinh mang bình vì biết đang bị đếm.** Gợi ý: đo lại sau 6 tháng, đếm ngẫu nhiên không báo trước |
+
+**Dấu hiệu HLV chấm là dùng đúng**
+- Phần **M đủ chi tiết để người khác lặp lại được**.
+- Phần **R không có câu bình luận nào**.
+- Phần **D có mục hạn chế thật**, không phải hạn chế hình thức.
+
+**Ba lỗi hay gặp**
+
+| Lỗi | Vì sao hỏng | Cách sửa |
+|---|---|---|
+| Trộn kết quả với bình luận | Người đọc không phân biệt được dữ liệu với ý kiến | Bắt tách hẳn hai phần, đọc soát riêng |
+| Giấu kết quả không đẹp | Vi phạm liêm chính nghiên cứu | Quy tắc hệ: **mọi báo cáo có ≥1 số không có lợi cho mình** |
+| Kết luận vượt dữ liệu *("chứng minh rằng…")* | Dữ liệu nhỏ không chứng minh được điều lớn | Dùng ngôn ngữ đúng mức: *"gợi ý rằng"*, *"trong phạm vi khảo sát này"* |
+
+**Nối vào đâu:** `CT-35` · `CT-20` · `14-DO-LUONG-TAC-DONG/` · hồ sơ dự án Cấp Độ 8–10.
+
+---
+
+## PHẦN F. TRA CỨU & LỘ TRÌNH CÀI CÔNG CỤ
+
+### F1. Bảng tra nhanh 40 công cụ
+
+| Mã | Tên | Pha | Mạch | Khối tối thiểu |
+|---|---|:--:|:--:|:--:|
+| CT-01 | Bảng Đích đến xuất sắc | G | M1 | 🟢 3 |
+| CT-02 | SMART-E | G | M1 | 🟢 5 |
+| CT-03 | Ma trận Gấp × Quan trọng | G | M1·M5 | 🟢 4 |
+| CT-04 | Bảng Đòn Bẩy 20/80 | G | M1·M5 | 🔵 6 |
+| CT-05 | HABIT-5 | A | M1 | 🟢 2 |
+| CT-06 | Thang cảm xúc 1–10 | I | M3 | 🟢 3 |
+| CT-07 | "Tôi cảm thấy… khi… vì…" | T | M3·M4 | 🟢 2 |
+| CT-08 | Belief Flip 6 bước | I | M3 | 🔵 7 |
+| CT-09 | Quy tắc 5 ngón tay | T | M2 | 🟢 1 |
+| CT-10 | 4 bước làm hoà | T | M4 | 🟢 3 |
+| CT-11 | Từ chối 3 tầng | T | M4 | 🟢 3 |
+| CT-12 | 4 bước NVC | T | M3·M4 | 🔵 8 |
+| CT-13 | Phản hồi 1-1-1 | T | M4 | 🟢 4 |
+| CT-14 | 5 vai Squad | A | M4 | 🟢 4 |
+| CT-15 | Quy trình 5 bước GQVĐ | T | M5 | 🟢 4 |
+| CT-16 | Xương cá / 5-Whys | T | M5 | 🔵 6 |
+| CT-17 | Ma trận tiêu chí có trọng số | G | M5 | 🟢 5 |
+| CT-18 | Ma trận rủi ro 2 trục | G | M5 | 🔵 8 |
+| CT-19 | Sơ đồ vòng lặp hệ thống | T | M5 | 🔵 7 |
+| CT-20 | Thang bằng chứng 5 mức | T | M5 | 🔵 8 |
+| CT-21 | 10 nguỵ biện thường gặp | T | M5 | 🔵 7 |
+| CT-22 | Ghi chép Cornell | T | M6 | 🟢 5 |
+| CT-23 | Lặp ngắt quãng 1–3–7–15–30 | T | M6 | 🟢 5 |
+| CT-24 | 4 bước Feynman | T | M6 | 🟢 5 |
+| CT-25 | Chu trình siêu nhận thức 3 pha | G | M6 | 🔵 7 |
+| CT-26 | Phiên học sâu 7 bước | A | M6 | 🔵 6 |
+| CT-27 | Bộ lọc 3 câu trước khi gửi | T | M7 | 🟢 4 |
+| CT-28 | Bộ lọc 4 câu trước khi đăng | G | M7 | 🟢 4 |
+| CT-29 | Kiểm chứng 4 bước | T | M7 | 🟢 5 |
+| CT-30 | Quy tắc 3 vùng dùng AI | T | M7 | 🔵 8 |
+| CT-31 | Quy tắc 3 hũ | A | M8 | 🟢 2 |
+| CT-32 | Mô hình kinh doanh 1 trang 7 ô | A | M8 | 🔵 8 |
+| CT-33 | 5 nhịp Design Thinking | A | M5·M8 | 🔵 8 |
+| CT-34 | 4 lăng kính đạo đức | G | M5 | 🟣 11 |
+| CT-35 | Lý thuyết thay đổi | G | M8 | 🟣 11 |
+| CT-36 | Cấu trúc STAR | T | M4 | 🟣 12 |
+| CT-37 | Cấu trúc IMRaD | T | M6 | 🟣 11 |
+| CT-38 | Khung 7 câu hỏi quyết định | G | M5 | 🟣 12 |
+| CT-39 | Bánh xe cân bằng 4 mảng | G | M1 | 🟣 11 |
+| CT-40 | PERMA 5 trụ | I | M3 | 🟣 12 |
+
+### F2. Lộ trình cài công cụ theo khối — **không dạy hết một lúc**
+
+| Khối | Cài mới trong năm | Ôn lại | Tổng đang dùng |
+|:--:|---|---|:--:|
+| **1** | CT-09 | — | 1 |
+| **2** | CT-05 · CT-07 · CT-31 | CT-09 | 4 |
+| **3** | CT-01 · CT-06 · CT-10 · CT-11 | CT-05 · CT-09 | 8 |
+| **4** | CT-03 · CT-13 · CT-14 · CT-15 · CT-27 · CT-28 | CT-01 · CT-06 · CT-11 | 14 |
+| **5** | CT-02 · CT-17 · CT-22 · CT-23 · CT-24 · CT-29 | CT-03 · CT-13 · CT-15 | 20 |
+| **6** | CT-04 · CT-16 · CT-26 | CT-02 · CT-22 · CT-23 | 23 |
+| **7** | CT-08 · CT-19 · CT-21 · CT-25 | CT-16 · CT-24 · CT-26 | 27 |
+| **8** | CT-12 · CT-18 · CT-20 · CT-30 · CT-32 · CT-33 | CT-19 · CT-21 · CT-25 | 33 |
+| **9** | *(không cài mới)* — **năm củng cố** | Toàn bộ 33, đưa lên bậc L3–L4 | 33 |
+| **10** | *(không cài mới)* — năm vận dụng vào dự án thật | Trọng tâm: CT-26 · CT-32 · CT-33 | 33 |
+| **11** | CT-34 · CT-35 · CT-37 · CT-39 | CT-18 · CT-20 · CT-25 | 37 |
+| **12** | CT-36 · CT-38 · CT-40 | CT-34 · CT-35 · CT-39 | **40** |
+
+> 🔴 **Hai năm không cài công cụ mới là cố ý.** Khối 9 và 10 là hai năm **đưa công cụ đã có lên bậc L3–L4** — dùng dưới sức ép và dùng trước người lạ. Nhồi thêm công cụ ở hai năm này là cách chắc chắn để học sinh biết 40 thứ và không thạo thứ nào.
+
+### F3. Bốn dấu hiệu một công cụ **đã được cài thật**
+
+| # | Dấu hiệu | Cách kiểm |
+|:--:|---|---|
+| 1 | Học sinh **tự lấy ra dùng khi không ai nhắc** | Quan sát ở hoạt động khác, môn khác |
+| 2 | Học sinh **gọi đúng tên công cụ** | Hỏi bất chợt: *"Em vừa dùng cái gì đấy?"* |
+| 3 | Học sinh **biết khi nào KHÔNG dùng nó** | Hỏi: *"Trường hợp nào công cụ này không hợp?"* |
+| 4 | Học sinh **dạy lại được cho bạn** | `CT-24` bước ④ · bậc L4 của mọi trò |
+
+### F4. Tra chéo sang các kho khác
+
+| Cần gì | Tìm ở đâu |
+|---|---|
+| Bảng 40 công cụ gốc + 10 bộ kit + dự toán | [`KHO-CONG-CU-DUNG-CU.md`](KHO-CONG-CU-DUNG-CU.md) |
+| 40 trò chơi chi tiết theo pha | `04-KHO-HOAT-DONG-TRO-CHOI/40-TRO-CHOI-VIET-DAY-DU.md` |
+| Phiếu thực hành đi kèm | `06-KHO-PHIEU-THUC-HANH/BO-PHIEU-MAU-DAY-DU.md` |
+| Rubric chấm | `07-KHO-PHIEU-DANH-GIA/BO-RUBRIC-CHI-TIET-19-HO.md` |
+| Phác đồ xử lý tình huống nặng | `16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md` |
+| Chính sách dữ liệu D1–D4 | `11-PHAN-QUYEN-BAO-MAT/03-CHINH-SACH-BAO-MAT-DU-LIEU.md` |
+
+---
+
+> **Tổng kết tệp:** 40 công cụ · 4 nhóm theo pha `G · I · T · A` · mỗi công cụ có **bảng thông số · dùng khi / không dùng khi · các bước · ví dụ đã điền theo đúng khối · dấu hiệu HLV chấm · ba lỗi hay gặp và cách sửa · chỗ nối vào hệ**.
+>
+> **Nguyên tắc cuối cùng:** một công cụ tư duy chỉ có giá trị khi học sinh **tự lấy nó ra dùng ở nơi không có huấn luyện viên**. Mọi thứ còn lại chỉ là bài giảng.
