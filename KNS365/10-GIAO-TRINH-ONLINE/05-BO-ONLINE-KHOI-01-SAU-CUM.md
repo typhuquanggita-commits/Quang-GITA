@@ -2660,3 +2660,1641 @@ Bạn Squad bấm **3 mặt cười** cho câu: *"Bạn nói không mà vẫn d�
 | Cấm | Không hiệu ứng giật mình, không tiếng khóc thật của trẻ, không giọng trách móc |
 
 ---
+
+# CỤM 5 · `K01-N3-01` — **SÁU KHUÔN MẶT CẢM XÚC**
+### Khối 1 · Nhóm 3 Ứng phó & bảo vệ bản thân · Chữ GITA trội: **I** · Bài gốc: #24 Nhận diện cảm xúc
+
+## THÔNG TIN CHUNG
+
+| Hạng mục | Nội dung |
+|---|---|
+| **Mã cụm** | `K01-N3-01` |
+| **Mạch năng lực** | **M3** Cảm xúc & Sức bật |
+| **Chữ GITA trội** | **I** — Inspirits: gọi tên được cái đang diễn ra bên trong là bước đầu tiên của nội lực |
+| **Bài gốc hấp thụ** | #24 Nhận diện cảm xúc *(bài gốc 35′ được nở thành cụm 180′ × 2 buổi)* |
+| **Công cụ tư duy chính** | `CT-06` Thang cảm xúc — **bản rút gọn 3 mức cho lớp 1** |
+| **Cấp Độ hướng tới** | Cấp 1 ⚪ Pin Trắng → Cấp 2 🟢 Pin Xanh Lá |
+| **Bậc sâu mục tiêu** | ① Nhận thức → ② Thói quen |
+| **Mã phiếu** | `PTH-K01-N3-01` · `PSM-K01-N3-01` · `R-K01-N3-01` |
+
+> ⭐ **Ba nguyên tắc chi phối toàn cụm — HLV đọc trước khi dạy.**
+> ① **Không có cảm xúc xấu.** Chỉ có **việc làm** khi đang có cảm xúc mới có đúng có sai. Câu *"con đừng giận"* bị cấm trong toàn bộ học liệu; thay bằng *"con đang giận — mình làm gì bây giờ?"*
+> ② **Nhận diện trước, điều chỉnh sau.** Cụm này **chỉ dạy gọi tên và nhận ra trong người**. Kỹ thuật hạ nhiệt nằm ở P3, và không đòi hỏi trẻ tự làm chủ ngay.
+> ③ **Trẻ lớp 1 chưa tự hạ nhiệt được một mình.** Ở lứa này, việc hạ nhiệt là **việc của người lớn ngồi cạnh**. Mọi tài liệu gửi phụ huynh đều nói rõ điều này, để bố mẹ không kỳ vọng sai và không trách con.
+
+---
+
+## 📘 PHẦN 1 — KIẾN THỨC `P1-KT` · 13 phút · Pha **G**
+
+### 1.1. Video mở — 85 giây *(lời thoại thật)*
+
+> *(Hình vẽ: một bạn nhỏ ngồi trên bậc thềm, mặt cúi xuống)*
+>
+> **Giọng kể:** *"Có những lúc trong người con có một cái gì đó.*
+>
+> *Nó làm bụng con nằng nặng. Hoặc làm mặt con nóng lên. Hoặc làm tay con muốn đấm vào cái gối.*
+>
+> *Con không biết gọi nó là gì. Con chỉ biết là nó ở đó.*
+>
+> *Cái đó có tên. Người ta gọi nó là **cảm xúc**.*
+>
+> *Hôm nay chúng mình học gọi tên **sáu khuôn mặt** của nó.*
+>
+> *Và con nhớ điều này trước đã: **không có cảm xúc nào là xấu cả**. Giận không xấu. Buồn không xấu. Sợ cũng không xấu.*
+>
+> *Chỉ có **việc con làm** khi đang giận mới có đúng, có sai thôi."*
+
+### 1.2. Bốn video kiến thức
+
+| # | Tên video | Phút | Nội dung |
+|:--:|---|:--:|---|
+| 1 | **Sáu khuôn mặt** | 3:20 | Vui · Buồn · Giận · Sợ · Ngạc nhiên · Ngượng — mỗi khuôn mặt một hình rối |
+| 2 | **Cảm xúc ở đâu trong người con** | 3:00 | Bản đồ cơ thể: bụng · ngực · mặt · tay · chân |
+| 3 | **Ba mức: nhỏ – vừa – to** | 2:40 | `CT-06` rút gọn: 🟢 nhỏ · 🟡 vừa · 🔴 to |
+| 4 | **Đèn giao thông cảm xúc** | 3:10 | 🔴 DỪNG → 🟡 THỞ → 🟢 NÓI |
+
+### 1.3. Bảng khái niệm cốt lõi
+
+| Cảm xúc | Nói với trẻ lớp 1 | Trong người con | Khuôn mặt |
+|---|---|---|:--:|
+| **VUI** | *"Có chuyện con thích."* | Người nhẹ, muốn nhảy | 😄 |
+| **BUỒN** | *"Có chuyện con không thích, và con thấy nặng."* | Bụng nặng, mắt cay | 😢 |
+| **GIẬN** | *"Có ai đó làm điều con thấy không công bằng."* | Mặt nóng, tay siết | 😠 |
+| **SỢ** | *"Có gì đó làm con thấy không an toàn."* | Tim đập nhanh, chân run | 😨 |
+| **NGẠC NHIÊN** | *"Có chuyện xảy ra mà con không đoán trước."* | Mắt to, người khựng lại | 😲 |
+| **NGƯỢNG** | *"Con thấy nhiều người đang nhìn con."* | Mặt nóng, muốn trốn | 😳 |
+
+> ⚠️ **Cấm dùng các từ:** *"cảm xúc tiêu cực"* · *"cảm xúc xấu"* · *"con hư nên mới giận"*. Toàn bộ học liệu dùng: **cảm xúc dễ chịu** và **cảm xúc khó chịu**.
+
+### 1.4. Infographic 1 trang — **"SÁU KHUÔN MẶT & BA MỨC"**
+
+```
+   ┌────────────── SÁU KHUÔN MẶT CỦA CON ──────────────┐
+   │                                                   │
+   │   😄 VUI    😢 BUỒN    😠 GIẬN                    │
+   │   😨 SỢ     😲 NGẠC NHIÊN   😳 NGƯỢNG             │
+   │                                                   │
+   │   ➤ Không có khuôn mặt nào là XẤU.                │
+   ├───────────────────────────────────────────────────┤
+   │   BA MỨC — con đang ở mức nào?                    │
+   │                                                   │
+   │   🟢 NHỎ        🟡 VỪA         🔴 TO              │
+   │   nói được     nói to hơn,    không nghe được ai  │
+   │   bình thường  bắt đầu nóng   nữa · cần dừng lại  │
+   ├───────────────────────────────────────────────────┤
+   │   ĐÈN GIAO THÔNG CẢM XÚC                          │
+   │                                                   │
+   │      🔴 DỪNG  →  🟡 THỞ  →  🟢 NÓI                │
+   │      (đứng      (4 hơi     ("Con đang             │
+   │       yên)       thật sâu)   thấy … ")            │
+   │                                                   │
+   │   ⚠️ Ở mức 🔴 con CHƯA NÓI CHUYỆN ĐƯỢC.           │
+   │      Con đi tìm người lớn của con.                │
+   └───────────────────────────────────────────────────┘
+```
+
+**Mô tả bản in:** A4 dọc. Nửa trên là **sáu khuôn mặt vẽ to, để trống mắt và miệng** cho trẻ tự vẽ nét. Nửa dưới là **đèn giao thông ba tầng** in màu. Góc dưới in thanh an toàn 🆘 111 và dòng: *"Ở mức đỏ, con đi tìm người lớn của con. Đó là việc đúng, không phải mách lẻo."*
+
+### 1.5. "Thế nào là làm đúng" — rubric công bố trước
+
+| Tiêu chí | ĐẠT | XUẤT SẮC |
+|---|---|---|
+| Gọi tên 6 cảm xúc qua hình | Đúng ≥4/6 | Đúng 6/6 |
+| Chỉ được chỗ trong người | Chỉ được ≥2 cảm xúc | Chỉ được ≥4 cảm xúc |
+| Nói câu *"Con đang thấy…"* | Nói được khi có nhắc | Tự nói, không cần nhắc |
+| Chọn đúng mức 🟢🟡🔴 | Chọn được | Chọn được và nói được vì sao |
+| Ba bước đèn giao thông | Nhớ đủ 3 bước | Làm được 1 lần thật ở nhà |
+
+> ⚠️ **Kiểm tra:** P1 mới nói *cảm xúc là gì* và *có sáu khuôn mặt*. **Cách hạ nhiệt** và **câu nói khi đang có cảm xúc khó chịu** nằm ở **P3**.
+
+---
+
+## 🌊 PHẦN 2 — TRẢI NGHIỆM `P2-TN` · 20 phút · Pha **I**
+
+### Hình thức: **Gương cảm xúc + Phim rối dừng-chọn — "NGÀY CỦA BẠN NẤM"**
+
+☑ Hoạt động soi gương ☑ Phim rối dừng-chọn
+
+**Phần A — "Gương cảm xúc" *(8 phút)*.** Hoạt động làm **cùng bố mẹ, không quay video**.
+
+| Bước | Việc làm |
+|:--:|---|
+| 1 | Con và bố/mẹ cùng ngồi trước gương *(hoặc quay mặt vào nhau)* |
+| 2 | Hệ thống hiện **một khuôn mặt rối**. Con **làm theo khuôn mặt đó** |
+| 3 | Bố/mẹ đoán: *"Con đang làm mặt gì?"* — rồi đổi vai |
+| 4 | Con **chỉ vào chỗ trong người** mình cảm thấy khi làm mặt đó |
+| 5 | Con bấm chọn hình cơ thể trên màn hình — **không nhập chữ** |
+
+> 🎤 **Giọng hệ thống:** *"Khi con làm mặt giận, con thử để ý xem — hai bàn tay con có siết lại không? Cái bụng con có cứng lên không? Cơ thể con biết trước cả khi con biết đấy."*
+
+> ⚠️ **Không quay video mặt trẻ.** Hoạt động này diễn ra ngoài màn hình; hệ thống chỉ nhận **lựa chọn hình**, không nhận hình ảnh.
+
+**Phần B — Phim rối dừng-chọn *(12 phút)*.** Một ngày của bạn Nấm, dừng ở **4 điểm**.
+
+| Điểm dừng | Tình huống | Câu hỏi cho con | Điều con học |
+|:--:|---|---|---|
+| **①** | Sáng: Nấm được mẹ tết tóc kiểu mới. Nấm chạy tới lớp. | *"Nấm đang thấy gì? Mức nào?"* | 😄 VUI · 🟢 |
+| **②** | Trưa: bạn cùng bàn giật mất cục tẩy của Nấm và cười. | *"Bây giờ Nấm thấy gì? Mức nào?"* | 😠 GIẬN · 🟡 |
+| **③** | Nấm hét lên và đẩy bạn. Cô giáo tới. | *"Cảm xúc của Nấm có sai không? Việc Nấm LÀM có sai không?"* | **Cảm xúc: không sai. Việc làm: sai.** Đây là điểm dừng quan trọng nhất của cả cụm |
+| **④** | Chiều: mẹ tới đón. Nấm oà khóc. | *"Nấm thấy gì? Nấm nên nói câu gì với mẹ?"* | 😢 BUỒN · 🔴 → *"Con đang thấy buồn."* |
+
+**Nhánh phụ bắt buộc có — chạy sau điểm ③:**
+> **Giọng kể:** *"Chúng mình nói lại cho rõ nhé.*
+> *Nấm giận — **điều đó không sai**. Bạn giật đồ của Nấm mà. Ai cũng sẽ giận.*
+> *Nhưng Nấm **đẩy bạn** — **điều đó sai**. Vì đẩy bạn có thể làm bạn ngã và đau.*
+> *Cảm xúc thì không sai. **Việc làm** thì có đúng có sai.*
+> *Con thử lại nhé — Nấm đang giận mức 🟡. Nấm có thể làm gì khác?"*
+>
+> **Ba lựa chọn thay thế:** A. **Nói: "Trả tớ. Cái đó của tớ."** · B. **Đứng dậy đi chỗ khác 1 phút** · C. **Nói với cô giáo** — **cả ba đều đúng**, hệ thống ghi nhận cả ba.
+
+### Bóc tách 4 lớp *(ô nhập bắt buộc — trẻ nói vào máy hoặc chọn hình)*
+
+| Lớp | Câu hỏi |
+|:--:|---|
+| **Thấy gì** | *"Trong ngày hôm nay, Nấm đã có mấy khuôn mặt?"* |
+| **Nghĩ gì** | *"Cảm xúc của Nấm có sai không? Còn việc Nấm làm thì sao?"* |
+| **Thấy trong người** | *"Khi con giận giống Nấm, chỗ nào trong người con thấy rõ nhất?"* *(chọn hình cơ thể)* |
+| **Làm gì tiếp** | *"Lần sau con giận, con sẽ làm gì trước tiên?"* *(chọn: dừng · thở · nói · đi tìm người lớn)* |
+
+### Chạm nội lực *(Lửa 3)*
+
+> 🔥 **Câu hệ thống nói với con — giọng chậm, nhạc lắng xuống:**
+> *"Có một điều cô muốn nói riêng với con.*
+>
+> *Sẽ có người bảo con: 'Con trai không được khóc.' Hoặc: 'Có gì đâu mà giận.'*
+>
+> *Con nghe cô nói nhé: **những câu đó không đúng**.*
+>
+> *Con trai cũng khóc. Người lớn cũng khóc. Cô cũng khóc.*
+>
+> *Cảm xúc của con là thật. Nó ở trong người con, nên chỉ mình con biết nó to hay nhỏ.*
+>
+> *Việc của con không phải là làm cho nó biến mất. Việc của con là **gọi đúng tên nó**, rồi nói cho một người con tin.*
+>
+> *Gọi được tên rồi thì nó nhỏ đi. Cô hứa với con điều đó."*
+
+---
+
+## ⚒️ PHẦN 3 — NHIỆM VỤ THỰC HÀNH `P3-TH` · 24 phút · Pha **T**
+
+### 3.1. Nhiệm vụ: **"NHẬT KÝ SÁU KHUÔN MẶT 7 NGÀY"**
+
+**Đèn giao thông cảm xúc và câu nói — dạy ở đây:**
+
+```
+   KHI TRONG NGƯỜI CON CÓ CẢM XÚC KHÓ CHỊU
+
+   🔴 DỪNG          🟡 THỞ                🟢 NÓI
+   Đứng yên.        Hít vào đếm 1-2-3-4   "Con đang thấy ______."
+   Không nói.       Thở ra đếm 1-2-3-4    (giận · buồn · sợ · ngượng)
+   Không làm gì.    Làm 4 lần.
+                                          ➤ Nói với: bố · mẹ · cô ·
+   ⚠️ Ở mức 🔴 TO: con KHÔNG nói chuyện     anh chị · bạn thân
+      được. Con ĐI TÌM NGƯỜI LỚN của con.
+      Đó là việc ĐÚNG, không phải mách lẻo.
+```
+
+**Việc con làm:** In **Nhật Ký Sáu Khuôn Mặt** — mỗi ngày con **tô một khuôn mặt** cho buổi sáng, một cho buổi chiều, và **tô mức** 🟢🟡🔴. Không cần viết chữ — chỉ tô hình.
+
+**Và một ô đặc biệt: "CON ĐÃ NÓI VỚI AI".** Mỗi lần con nói được câu *"Con đang thấy…"* với một người, con tô một trái tim.
+
+> ⚠️ **Quy tắc an toàn kèm theo:** Có những cảm xúc **quá to để con giữ một mình**. Nếu con thấy buồn nhiều ngày liền, hoặc thấy sợ mà không dám kể, hoặc có ai đó làm con thấy không an toàn — **con nói với người lớn con tin**. Nếu không nói được với ai, bấm **🆘 CẦN TRỢ GIÚP** hoặc gọi **111**. **Kể ra không bao giờ là sai.**
+
+### 3.2. Vi kỹ năng & ngưỡng
+
+| Vi kỹ năng | Cách đo | ĐẠT | XUẤT SẮC |
+|---|---|:--:|:--:|
+| ① Gọi tên cảm xúc | Đúng /6 khuôn mặt | ≥ 4 | 6 |
+| ② Chỉ chỗ trong người | Số cảm xúc chỉ được | ≥ 2 | ≥ 4 |
+| ③ Chọn đúng mức | Đúng /5 tình huống | ≥ 3 | 5 |
+| ④ Nói câu *"Con đang thấy…"* | Số lần trong tuần | ≥ 3 | ≥ 5 |
+| ⑤ Làm đủ 3 bước đèn | Số lần làm thật | ≥ 1 | ≥ 3 |
+
+### 3.3. Bảng luyện 4 lượt *(ô số liệu bắt buộc)*
+
+| Lượt | Ngày | Gọi tên đúng /6 | Chỉ chỗ /6 | Chọn mức đúng /5 | ❤️ Nói với người *(lần)* | Đủ 3 bước đèn *(lần)* | Tự chấm 😟😐🙂😃 | Bậc |
+|:--:|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | | | | | | | | B1 |
+| 2 | | | | | | | | B2 |
+| 3 | | | | | | | | B3 |
+| 4 | | | | | | | | B4 |
+
+### 3.4. Tiêu chí hoàn thành
+
+- ☑ **Nhật Ký Sáu Khuôn Mặt** có **≥ 5 ngày** đã tô
+- ☑ Đã dùng **≥ 3 khuôn mặt khác nhau** trong tuần *(không chỉ toàn 😄)*
+- ☑ Bảng luyện có **≥ 3 lượt** đã điền số
+- ☑ Có **≥ 3 trái tim** ở ô "Con đã nói với ai"
+- ☑ Có **1 bản ghi âm 15 giây**: con nói câu *"Con đang thấy ___ ."*
+- ☑ Có **1 người lớn** xác nhận: *"Con đã nói với tôi về cảm xúc của con"*
+
+> 💡 **Ghi chú cho HLV:** nếu nhật ký của một trẻ **chỉ toàn 😄 suốt 7 ngày**, đó **không phải là điểm tốt** — nhiều khả năng trẻ đang tô cái mà trẻ nghĩ người lớn muốn thấy. Hỏi riêng, nhẹ nhàng: *"Trong tuần có hôm nào con thấy hơi buồn không? Kể cả một tí thôi?"*
+
+### 3.5. Cách nộp
+
+| Nộp gì | Nộp thế nào | Ghi chú an toàn |
+|---|---|---|
+| Nhật Ký Sáu Khuôn Mặt | Chụp ảnh **tờ giấy** hoặc tô trực tiếp trên màn hình | **Không chụp mặt trẻ** |
+| Câu *"Con đang thấy…"* | Ghi âm 15 giây | **Riêng tư tuyệt đối** — chỉ HLV và bố mẹ nghe |
+| Số trái tim | Bấm số trên màn hình | |
+| Xác nhận | Người lớn bấm nút trong tài khoản phụ huynh | Có dấu thời gian |
+
+> ⛔ **Bài đã nộp không sửa được.** Tuần sau nộp **lượt mới**.
+> 🔒 **Nội dung cảm xúc của trẻ là dữ liệu D3.** Không hiển thị công khai, không đưa vào bảng lớp, không gửi nhóm phụ huynh chung.
+
+### 3.6. Chấm chéo đồng đẳng
+
+> ⛔ **Cụm này KHÔNG có chấm chéo về nội dung cảm xúc.**
+
+Thay vào đó, hai bạn Squad chơi **"Đoán khuôn mặt"**: một bạn làm mặt, một bạn đoán tên cảm xúc. Bạn quan sát bấm **3 mặt cười** cho câu: *"Bạn làm mặt rõ chứ?"* — chấm **kỹ năng diễn tả**, tuyệt đối **không chấm cảm xúc thật của bạn**.
+
+### 3.7. PHIẾU KNS 5 LỚP CHIỀU SÂU — `PTH-K01-N3-01`
+
+| Lớp | Nội dung riêng của cụm `K01-N3-01` |
+|:--:|---|
+| **L1 NHẬN BIẾT** | Gọi tên 6 cảm xúc qua hình. Ba mức 🟢🟡🔴. Ba bước đèn giao thông |
+| **L2 THẤU HIỂU** | Cảm xúc **ở đâu trong cơ thể**. Vì sao ở mức 🔴 không nói chuyện được. Phân biệt **cảm xúc** *(không sai)* với **việc làm** *(có đúng có sai)* |
+| **L3 THỰC HÀNH** | Nhật ký 7 ngày × 4 lượt, đo **gọi tên /6** · **chỉ chỗ /6** · **chọn mức /5** · ❤️ **số lần nói với người** · **số lần làm đủ 3 bước đèn** |
+| **L4 SOI CHIẾU** | Khuôn mặt con hay gặp nhất trong tuần; *"Cảm xúc nào con khó nói ra nhất?"*; lật câu *"Con trai không được khóc."* |
+| **L5 CHUYỂN HOÁ** | Sứ mệnh 7 ngày: **mỗi ngày nói một câu "Con đang thấy…" với một người**; bố mẹ ký xác nhận |
+
+**Bản in phiếu — 3 trang A4**
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  PHIẾU KỸ NĂNG SỐNG KNS365 · HỆ GEN VIỆT          🆘 CẦN TRỢ GIÚP·111 ║
+║  Mã: PTH-K01-N3-01   Cụm: SÁU KHUÔN MẶT CẢM XÚC                      ║
+║  Con tên: ______________  Lớp: 1___  Squad: ____  Ngày: ____________ ║
+║  ⚠️ Không có cảm xúc nào là XẤU. Phiếu này KHÔNG chấm điểm cảm xúc.   ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 1 · NHẬN BIẾT — "Điều này là gì?"          ⏱ 5–7'   Pha G     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • SÁU KHUÔN MẶT  (con vẽ mắt và miệng vào từng vòng tròn)            │
+│    ╭───╮   ╭───╮   ╭───╮   ╭───╮   ╭───╮   ╭───╮                    │
+│    │   │   │   │   │   │   │   │   │   │   │   │                    │
+│    ╰───╯   ╰───╯   ╰───╯   ╰───╯   ╰───╯   ╰───╯                    │
+│     VUI    BUỒN   GIẬN    SỢ    NGẠC   NGƯỢNG                       │
+│                                  NHIÊN                               │
+│    Con gọi tên đúng: ____ / 6                                        │
+│                                                                      │
+│ • BA MỨC — con tô màu ba ô                                           │
+│    ┌────────┐  ┌────────┐  ┌────────┐                               │
+│    │ 🟢 NHỎ │  │ 🟡 VỪA │  │ 🔴 TO  │                               │
+│    │nói được│  │nóng lên│  │không   │                               │
+│    │bình    │  │nói to  │  │nghe    │                               │
+│    │thường  │  │hơn     │  │được ai │                               │
+│    └────────┘  └────────┘  └────────┘                               │
+│                                                                      │
+│ • ĐÈN GIAO THÔNG — con điền số 1-2-3                                 │
+│    ☐ 🟢 NÓI "Con đang thấy…"                                        │
+│    ☐ 🔴 DỪNG — đứng yên                                             │
+│    ☐ 🟡 THỞ — hít 4, thở 4, làm 4 lần                               │
+│                                                                      │
+│ 📏 HAI VẠCH CHUẨN                                                    │
+│   ĐẠT      : Gọi tên đúng 4/6 · nói câu "Con đang thấy…" 3 lần      │
+│              trong tuần · làm đủ 3 bước đèn 1 lần.                   │
+│   XUẤT SẮC : Gọi tên 6/6 · chỉ được chỗ trong người của 4 cảm xúc ·  │
+│              nói ≥5 lần · làm đủ 3 bước đèn ≥3 lần.                  │
+│   ➤ Con nhắm vạch:  ☐ Đạt    ☐ Xuất sắc                             │
+│                                                                      │
+│ ✍️ Bằng lời của con: "Cảm xúc là ___________________________________" │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 2 · THẤU HIỂU — "Vì sao lại như vậy?"      ⏱ 6–8'   Pha I     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • CẢM XÚC Ở ĐÂU TRONG NGƯỜI CON  (con khoanh trên hình người)        │
+│                    ╭─────╮                                           │
+│                    │ ◉ ◉ │  ← MẶT NÓNG khi con giận / ngượng         │
+│                    │  ▽  │                                           │
+│                    ╰──┬──╯                                           │
+│                  ┌────┴────┐                                         │
+│              ────┤         ├────  ← TAY SIẾT khi con giận            │
+│                  │  ♥      │      ← TIM ĐẬP NHANH khi con sợ         │
+│                  │         │                                         │
+│                  │   ◯     │      ← BỤNG NẶNG khi con buồn           │
+│                  └──┬───┬──┘                                         │
+│                     │   │         ← CHÂN RUN khi con sợ              │
+│                                                                      │
+│   ➤ Cảm xúc con hay thấy rõ nhất ở chỗ: ___________________________  │
+│                                                                      │
+│ • VÌ SAO Ở MỨC 🔴 CON KHÔNG NÓI CHUYỆN ĐƯỢC                          │
+│   ┌──────────┐   ┌──────────────┐   ┌──────────────┐                │
+│   │ Cảm xúc  │ → │ Tai con nghe │ → │ Con nói ra   │                │
+│   │ lên mức  │   │ mà không     │   │ điều con     │                │
+│   │ TO       │   │ hiểu được    │   │ không định   │                │
+│   └──────────┘   └──────────────┘   └──────────────┘                │
+│   ➤ Vì vậy ở mức 🔴: DỪNG trước. Nói sau. Đi tìm người lớn.          │
+│                                                                      │
+│ • HAI THỨ KHÁC NHAU  (con nối)                                       │
+│   CẢM XÚC của con        ○      ○   CÓ ĐÚNG, CÓ SAI                 │
+│   VIỆC LÀM của con       ○      ○   KHÔNG BAO GIỜ SAI               │
+│   ➤ Nấm giận: ☐ đúng ☐ sai ☐ không đúng không sai                   │
+│   ➤ Nấm đẩy bạn: ☐ đúng ☐ sai                                       │
+│                                                                      │
+│ • CÂU CẦN LẬT                                                        │
+│   "Con trai không được khóc."                                        │
+│   ➤ ĐÚNG hay SAI?  ☐ Đúng  ☐ Sai                                    │
+│   ➤ Ai trong nhà con cũng đã từng khóc? ___________________________  │
+│                                                                      │
+│ ⚠️ CÓ NHỮNG CẢM XÚC QUÁ TO ĐỂ CON GIỮ MỘT MÌNH                       │
+│   Con buồn nhiều ngày liền · con sợ mà không dám kể ·                │
+│   có ai đó làm con thấy không an toàn                                │
+│   → CON NÓI VỚI NGƯỜI LỚN CON TIN. Kể ra không bao giờ là sai.       │
+│   → Không nói được với ai: bấm 🆘 hoặc gọi 111.                       │
+│   ✍️ Ba người lớn con tin: 1.________ 2.________ 3.________         │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 3 · THỰC HÀNH — "Con làm được chưa?"      ⏱ 24'    Pha T     │
+├──────────────────────────────────────────────────────────────────────┤
+│ 📔 NHẬT KÝ SÁU KHUÔN MẶT  (con TÔ, không cần viết chữ)               │
+│  ┌──────┬─────────────────┬─────────────────┬──────────────────┐    │
+│  │ Ngày │ SÁNG            │ CHIỀU           │ ❤️ Con đã nói với │    │
+│  │      │ mặt gì · mức    │ mặt gì · mức    │   ai chưa?       │    │
+│  ├──────┼─────────────────┼─────────────────┼──────────────────┤    │
+│  │  T2  │  ☺ 🟢🟡🔴       │  ☺ 🟢🟡🔴       │  ♡               │    │
+│  │  T3  │  ☺ 🟢🟡🔴       │  ☺ 🟢🟡🔴       │  ♡               │    │
+│  │  T4  │  ☺ 🟢🟡🔴       │  ☺ 🟢🟡🔴       │  ♡               │    │
+│  │  T5  │  ☺ 🟢🟡🔴       │  ☺ 🟢🟡🔴       │  ♡               │    │
+│  │  T6  │  ☺ 🟢🟡🔴       │  ☺ 🟢🟡🔴       │  ♡               │    │
+│  │  T7  │  ☺ 🟢🟡🔴       │  ☺ 🟢🟡🔴       │  ♡               │    │
+│  │  CN  │  ☺ 🟢🟡🔴       │  ☺ 🟢🟡🔴       │  ♡               │    │
+│  └──────┴─────────────────┴─────────────────┴──────────────────┘    │
+│  ➤ Trong tuần con dùng được mấy khuôn mặt KHÁC NHAU? ____ / 6       │
+│  ➤ Con tô được ____ trái tim.                                        │
+│                                                                      │
+│ 📊 BẢNG LUYỆN 4 LƯỢT                                                 │
+│  ┌────┬─────┬──────┬──────┬───────┬───────┬───────┬──────┬─────┐   │
+│  │Lượt│Ngày │Gọi   │Chỉ   │Chọn   │❤️ Nói │3 bước │ Tự   │ Bậc │   │
+│  │    │     │tên /6│chỗ /6│mức /5 │(lần)  │đèn    │ chấm │     │   │
+│  ├────┼─────┼──────┼──────┼───────┼───────┼───────┼──────┼─────┤   │
+│  │ 1  │     │      │      │       │       │       │😟😐🙂😃│ B1  │   │
+│  │ 2  │     │      │      │       │       │       │😟😐🙂😃│ B2  │   │
+│  │ 3  │     │      │      │       │       │       │😟😐🙂😃│ B3  │   │
+│  │ 4  │     │      │      │       │       │       │😟😐🙂😃│ B4  │   │
+│  └────┴─────┴──────┴──────┴───────┴───────┴───────┴──────┴─────┘   │
+│                                                                      │
+│ 🎙️ GHI ÂM 15 GIÂY — con nói: "Con đang thấy ______________."         │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 4 · SOI CHIẾU — "Con đang ở đâu?"         ⏱ 5'     Pha T     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • TRƯỚC KHI HỌC, khi trong người con có gì đó, con thấy:             │
+│      ☐ con không biết gọi tên nó   ☐ con biết một chút               │
+│      ☐ con gọi tên được                                              │
+│ • BÂY GIỜ:                                                           │
+│      ☐ con không biết gọi tên nó   ☐ con biết một chút               │
+│      ☐ con gọi tên được                                              │
+│                                                                      │
+│ • Khuôn mặt con GẶP NHIỀU NHẤT trong tuần: ________________________  │
+│ • Khuôn mặt con KHÓ NÓI RA NHẤT: __________________________________  │
+│   Vì sao khó? _____________________________________________________  │
+│                                                                      │
+│ • Người con đã nói được nhiều nhất là ai? _________________________  │
+│   Sau khi nói xong, trong người con thấy:  😟  😐  🙂  😃            │
+│                                                                      │
+│ • CON ĐANG Ở BẬC NÀO?                                                │
+│   ◔ B1 Con biết có sáu khuôn mặt                                     │
+│   ◑ B2 Con gọi được tên khi có người hỏi                             │
+│   ◕ B3 Con tự gọi tên, và con nói được với một người                 │
+│   ● B4 Con dừng - thở - nói được khi đang ở mức 🟡, và con hỏi       │
+│      được bạn "Cậu đang thấy gì?"                                    │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 5 · CHUYỂN HOÁ — "Con mang đi đâu?"       ⏱ 4'     Pha A     │
+├──────────────────────────────────────────────────────────────────────┤
+│ 🎯 SỨ MỆNH 7 NGÀY CỦA CON                                            │
+│    Mỗi ngày con nói MỘT câu "Con đang thấy ______" với MỘT người.    │
+│                                                                      │
+│    HABIT-5:  Neo ☐  Nhỏ ☐  Nhìn thấy ☐  Người chứng ☐  Thưởng ☐      │
+│    • Neo của con: ngay khi ______________________ (VD: lúc mẹ tắt    │
+│      đèn đi ngủ), con nói một câu về hôm nay.                        │
+│    • Bản nhỏ nhất: nói MỘT từ thôi cũng được — "buồn" · "vui"        │
+│    • Nhìn thấy: tô 1 trái tim trong Nhật Ký                          │
+│    • Người chứng: ____________________                                │
+│    • Thưởng: người nghe nói lại: "Cảm ơn con đã kể với bố/mẹ."       │
+│                                                                      │
+│    ┌───┬───┬───┬───┬───┬───┬───┐                                     │
+│    │ T2│ T3│ T4│ T5│ T6│ T7│ CN│   ← con tô ô mỗi ngày đã nói        │
+│    └───┴───┴───┴───┴───┴───┴───┘                                     │
+│                                                                      │
+│    ✍️ Chữ ký người chứng: ______________  Ngày: ____________         │
+│    ⛔ Thiếu chữ ký này thì cụm CHƯA được tính hoàn thành.             │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 💎 PHẦN 4 — BÀI HỌC TÍCH LUỸ `P4-TL` · 9 phút · Pha **T**
+
+> 🔒 **Phần này khoá cho tới khi con đã nộp P3.**
+
+### 4.1. Năm nguyên tắc rút ra *(con tự nói trước — bản chuẩn hiện sau)*
+
+| # | Nguyên tắc | Câu cho trẻ lớp 1 |
+|:--:|---|---|
+| 1 | Sáu khuôn mặt | *"Vui – buồn – giận – sợ – ngạc nhiên – ngượng."* |
+| 2 | **Không có cảm xúc xấu** | *"Cảm xúc không sai. Việc làm mới có đúng có sai."* |
+| 3 | Cơ thể biết trước | *"Bụng nặng, mặt nóng, tay siết — người con nói cho con biết."* |
+| 4 | Ba bước đèn | *"Dừng – Thở – Nói."* |
+| 5 | Gọi tên thì nó nhỏ đi | *"Nói ra một câu, trong người con nhẹ hơn."* |
+
+### 4.2. Năm thẻ ghi nhớ *(flashcard, có hình, có nút loa)*
+
+| Thẻ | Mặt trước *(hình)* | Mặt sau *(lời, có loa đọc)* |
+|:--:|---|---|
+| 1 | 😄😢😠😨😲😳 sáu mặt | *"Vui · Buồn · Giận · Sợ · Ngạc nhiên · Ngượng"* |
+| 2 | 🟢🟡🔴 ba ô màu | *"Nhỏ – Vừa – To. Con đang ở mức nào?"* |
+| 3 | 🚦 đèn giao thông | *"Dừng – Thở – Nói."* |
+| 4 | 🫁 hình lồng ngực + số 4 | *"Hít vào 1-2-3-4. Thở ra 1-2-3-4. Làm 4 lần."* |
+| 5 | 🗣️❤️ miệng + trái tim | *"Con đang thấy ______."* |
+
+### 4.3. Sơ đồ tổng kết 1 hình
+
+```
+        Trong người con có gì đó
+                   │
+          🔍 GỌI TÊN NÓ LÀ GÌ
+      😄 😢 😠 😨 😲 😳
+                   │
+          📏 NÓ ĐANG Ở MỨC NÀO
+        🟢 nhỏ   🟡 vừa   🔴 to
+                   │
+        ┌──────────┴──────────┐
+     🟢🟡 VỪA VÀ NHỎ        🔴 TO
+          │                    │
+     🚦 DỪNG–THỞ–NÓI     🏃 ĐI TÌM NGƯỜI LỚN
+          │                    │
+     "Con đang thấy…"    (đây là việc ĐÚNG)
+          │                    │
+          └──────────┬─────────┘
+                     │
+             ❤️ NÓ NHỎ ĐI
+```
+
+### 4.4. Lịch ôn lặp ngắt quãng
+
+| Lần | Sau khi học | Việc làm · 3 phút |
+|:--:|:--:|---|
+| 1 | 1 ngày | Nhìn 6 hình, gọi đúng 6 tên |
+| 2 | 3 ngày | Chỉ trên người mình: chỗ nào thấy giận, chỗ nào thấy sợ |
+| 3 | 7 ngày | Kể lại 3 bước đèn giao thông, không nhìn thẻ |
+| 4 | 15 ngày | Kể một lần con đã nói *"Con đang thấy…"* với ai |
+| 5 | 30 ngày | Dạy lại sáu khuôn mặt cho em nhỏ hoặc cho búp bê |
+
+### 4.5. Bắc cầu học tập
+
+| Nối sang | Nội dung |
+|---|---|
+| **Cụm `K01-N3-02`** ⚠️ | *Cơ thể con là của con* — cảm giác *"không thoải mái"* chính là tín hiệu an toàn |
+| **Cụm `K01-N2-01`** | *Lời chào mở cửa* — cảm xúc ngượng khi chào người lạ |
+| **Môn Tiếng Việt lớp 1** | Đọc hiểu: nhân vật trong truyện đang cảm thấy gì |
+| **Môn Mĩ thuật** | Vẽ khuôn mặt cảm xúc |
+| **Trò chơi lớp** | `TC-I-011 Kịch Dừng Hình` · `TC-A-003 Vòng Ghi Nhận` |
+| **Công cụ tư duy** | `CT-06 Thang cảm xúc` *(bản đầy đủ 1–10 học từ khối 3)* · `CT-07 "Tôi cảm thấy… khi… vì…"` |
+
+---
+
+## 🚀 PHẦN 5 — VẬN DỤNG THỰC TIỄN `P5-VD` · 7 ngày · Pha **A**
+
+### 5.1. Sứ mệnh 7 ngày — `PSM-K01-N3-01`
+
+> 🎯 **"MỘT CÂU TRƯỚC KHI NGỦ"** — mỗi tối, con nói một câu về hôm nay.
+
+| Ngày | Việc con làm | Ô con tô |
+|:--:|---|:--:|
+| **T2** | Nói *"Con đang thấy ___"* với **bố hoặc mẹ** | ☐ |
+| **T3** | Tìm chỗ trong người khi con vui — chỉ cho bố mẹ xem | ☐ |
+| **T4** | Làm đủ **3 bước đèn** một lần khi con thấy khó chịu | ☐ |
+| **T5** | Hỏi một người trong nhà: *"Hôm nay bố/mẹ thấy thế nào?"* | ☐ |
+| **T6** | Nói được một cảm xúc **khó nói** *(giận · buồn · ngượng)* | ☐ |
+| **T7** | Hỏi một bạn: *"Cậu đang thấy gì?"* | ☐ |
+| **CN** | **Dạy lại** sáu khuôn mặt cho em nhỏ hoặc búp bê | ☐ |
+
+### 5.2. Việc của bố mẹ trong 7 ngày này
+
+| Khi nào | Bố mẹ làm gì | Không làm gì |
+|---|---|---|
+| Mỗi tối trước khi ngủ | Hỏi: *"Hôm nay con có khuôn mặt nào?"* rồi **im lặng nghe** | Không hỏi *"sao lại buồn, có gì đâu"* |
+| **Bố mẹ nói trước** | *"Hôm nay bố hơi mệt và có lúc bố hơi cáu."* — làm mẫu bằng chính mình | Không giả vờ người lớn không có cảm xúc |
+| Khi con giận | Ngồi xuống ngang tầm mắt con, **không nói gì trong 30 giây đầu** | ⛔ Không nói *"nín ngay"*, *"có gì đâu mà khóc"*, *"con trai không được khóc"* |
+| Khi con ở mức 🔴 | **Ở cạnh con.** Không giảng, không hỏi lý do | Không bỏ con một mình *"cho bình tĩnh lại"* |
+| Khi con kể một chuyện buồn | Nói: *"Cảm ơn con đã kể với bố/mẹ."* | Không sửa lưng, không giải quyết hộ ngay |
+| Cuối tuần | Ký xác nhận vào phiếu | Không đọc to nhật ký cảm xúc của con trước mặt người khác |
+
+> 🔴 **Điều quan trọng nhất gửi bố mẹ — in đậm trong bản gửi phụ huynh:**
+> *Trẻ lớp 1 **chưa tự hạ nhiệt được một mình**. Phần não làm việc đó còn đang lớn, và sẽ còn lớn tới hơn hai mươi tuổi.*
+> *Vì vậy khi con ở mức 🔴, việc hạ nhiệt **là việc của bố mẹ**, không phải việc của con. Bố mẹ ngồi cạnh, thở chậm, nói ít. Con sẽ mượn sự bình tĩnh của bố mẹ.*
+> *Câu **"Con vào phòng, bao giờ hết khóc thì ra"** dạy con rằng **con chỉ được ở cạnh bố mẹ khi con dễ chịu**. Đó không phải điều bố mẹ muốn dạy.*
+
+### 5.3. Ba mức khó tăng dần trong tuần
+
+| Mức | Việc | Dấu hiệu đạt |
+|:--:|---|---|
+| **Dễ** | Gọi tên cảm xúc **dễ chịu** *(vui, ngạc nhiên)* | Nói được tên |
+| **Vừa** | Gọi tên cảm xúc **khó chịu** khi đã bình tĩnh lại | Nói được sau khi chuyện đã qua |
+| **Khó** | Gọi tên **ngay lúc đang có cảm xúc**, ở mức 🟡 | Dừng được, thở được, nói được một từ |
+
+### 5.4. Nếu con chưa làm được
+
+| Tình huống | Cách xử — dành cho bố mẹ và HLV |
+|---|---|
+| Con không nói gì cả | Đưa **thẻ hình** cho con **chỉ** thay vì nói. Chỉ cũng là nói |
+| Con chỉ tô toàn 😄 | Bố mẹ **kể trước** một cảm xúc khó của mình trong ngày. Trẻ theo mẫu, không theo lời khuyên |
+| Con nói *"con không biết"* | Đó là câu trả lời hợp lệ. Nói: *"Không sao. Lúc nào biết thì con kể."* |
+| Con ở mức 🔴 rất lâu | Ở cạnh, không giảng. Sau khi con về 🟢 mới nói chuyện — **không nói chuyện lúc đang đỏ** |
+| Con dùng cảm xúc để đòi hỏi | Ghi nhận cảm xúc, **giữ nguyên giới hạn**: *"Bố biết con đang giận. Và bây giờ vẫn là giờ đi ngủ."* |
+| **Con buồn kéo dài >2 tuần**, mất hứng thú với mọi thứ, hoặc nói những câu về việc biến mất | 🔴 **Dừng bài học. Báo bộ phận tâm lý theo quy trình bảo vệ trẻ em ngay.** Đây không phải việc HLV tự xử lý. Nhắc **hotline 111** |
+
+---
+
+## 📊 PHẦN 6 — ĐÁNH GIÁ BÀI HỌC `P6-DG` · 12 phút
+
+### 6.1. Mười câu hỏi tình huống *(phụ huynh đọc hộ đề · con bấm chọn hình)*
+
+| # | Tình huống | Lựa chọn | Đáp án |
+|:--:|---|---|:--:|
+| 1 | Bạn giật đồ chơi của con. Con thấy gì? | A. Vui · B. **Giận** · C. Ngạc nhiên | **B** |
+| 2 | Con giận. Điều đó đúng hay sai? | A. Sai · B. **Không đúng không sai — cảm xúc không sai** | **B** |
+| 3 | Con giận rồi con đẩy bạn ngã. Việc đó? | A. Đúng · B. **Sai** | **B** |
+| 4 | Con sợ. Chỗ nào trong người thấy rõ nhất? | A. **Tim đập nhanh, chân run** · B. Bụng no · C. Tóc dài ra | **A** |
+| 5 | Con đang ở mức 🔴. Việc đầu tiên? | A. Nói chuyện ngay · B. **DỪNG — đứng yên** · C. Đấm vào tường | **B** |
+| 6 | Thở đúng cách là thở thế nào? | A. Thở thật nhanh · B. **Hít 4 – thở 4, làm 4 lần** · C. Nín thở | **B** |
+| 7 | Con buồn. Con nói với ai? | A. Không nói với ai · B. **Người lớn con tin** · C. Chỉ nói với đồ chơi | **B** |
+| 8 | Bạn nói *"Con trai không được khóc."* | A. Đúng · B. **Sai — ai cũng khóc được** | **B** |
+| 9 | Con buồn suốt nhiều ngày liền, không thích gì nữa. Con làm gì? | A. Giữ trong lòng · B. **Nói với bố mẹ hoặc cô giáo ngay** · C. Đợi tự hết | **B** |
+| 10 | Con kể chuyện buồn cho mẹ. Sau khi kể xong con thấy? | A. Nặng hơn · B. **Nhẹ hơn** | **B** |
+
+> ⚠️ **Câu 9 là câu an toàn.** Nếu con chọn A hoặc C, hệ thống hiện lại đoạn 40 giây *"Có những cảm xúc quá to để con giữ một mình"* và **gửi cho tài khoản phụ huynh một gợi ý cụ thể** về cách bắt chuyện với con tối đó. Đây không phải câu tính điểm.
+
+### 6.2. Tự đánh giá thang B1–B4
+
+| Bậc | Câu hỏi cho con | Con chọn |
+|:--:|---|:--:|
+| ◔ B1 | *Con biết có sáu khuôn mặt cảm xúc?* | ☐ |
+| ◑ B2 | *Con gọi được tên khi có người hỏi?* | ☐ |
+| ◕ B3 | *Con tự gọi tên, và nói được với một người?* | ☐ |
+| ● B4 | *Con dừng – thở – nói được ở mức 🟡, và hỏi được bạn "Cậu đang thấy gì?"* | ☐ |
+
+### 6.3. Rubric sản phẩm *(HLV chấm)* — `R-K01-N3-01`
+
+| Tiêu chí | ◔ B1 | ◑ B2 | ◕ B3 | ● B4 |
+|---|---|---|---|---|
+| **Gọi tên cảm xúc** | Đúng ≤3/6 | Đúng 4–5/6 | Đúng 6/6 | Đúng 6/6 và thêm được từ của riêng con |
+| **Chỉ chỗ trong cơ thể** | Chưa chỉ được | Chỉ được 1–2 | Chỉ được 3–4 | Chỉ được ≥5 và mô tả được |
+| **Chọn đúng mức** | Chưa phân biệt | Đúng 3/5 | Đúng 5/5 | Đúng 5/5 và nói được vì sao |
+| **Nói ra với người khác** | Chưa nói lần nào | 1–2 lần, cần nhắc | ≥3 lần, tự nói | ≥5 lần, gồm cả cảm xúc khó |
+| **Ba bước đèn** | Nhớ được 3 bước | Làm được khi có người dẫn | Làm được 1 lần tự mình | Làm được ≥3 lần và nhắc được bạn |
+
+> 🔒 **Ba quy tắc chấm bắt buộc của cụm này:**
+> ① **Không chấm cảm xúc của trẻ.** Chỉ chấm **kỹ năng gọi tên và nói ra**. Trẻ buồn nhiều không phải trẻ điểm thấp.
+> ② **Không so sánh giữa các trẻ**, không tổng hợp lên bảng lớp.
+> ③ Nếu nhật ký của một trẻ **chỉ toàn 😄** hoặc **chỉ toàn 😢**, HLV **ghi chú riêng cho bộ phận tâm lý**, không ghi vào phần đánh giá gửi phụ huynh.
+
+### 6.4. Đánh giá đồng đẳng
+
+> ⛔ **Không chấm chéo nội dung cảm xúc.** Chỉ chấm trò *"Đoán khuôn mặt"* — bấm 3 mặt cười cho câu *"Bạn làm mặt rõ chứ?"*
+
+### 6.5. Bảng hiển thị cho con và bố mẹ
+
+```
+ ┌────────────────────────────────────────────────────────────────┐
+ │  CỤM 5 · SÁU KHUÔN MẶT CẢM XÚC    K01-N3-01     🆘 · 111        │
+ ├────────────────────────────────────────────────────────────────┤
+ │  CON ĐÃ LÀM ĐƯỢC                                               │
+ │   😊 Gọi tên đúng           ██████████   6 / 6                 │
+ │   🫀 Chỉ chỗ trong người    ███████░░░   4 / 6                 │
+ │   📏 Chọn đúng mức          ████████░░   4 / 5                 │
+ │   ❤️ Con đã nói với người   ███████░░░   4 lần                 │
+ │   🚦 Làm đủ 3 bước đèn      ██████░░░░   2 lần                 │
+ │                                                                │
+ │  BẬC CỦA CON:  ◔ ─ ◑ ─ ●◕ ─ ○      (B3 · Làm giỏi)            │
+ │                                                                │
+ │  MỘT ĐIỀU DUY NHẤT CẦN CHỈNH                                   │
+ │   Con gọi tên rất tốt, nhưng thường nói RA SAU khi đã bình     │
+ │   tĩnh lại.                                                    │
+ │   → Lượt sau con thử: nói MỘT TỪ ngay lúc đang khó chịu.       │
+ │      Một từ thôi cũng được.                                    │
+ │                                                                │
+ │  ĐIỀU BỐ MẸ NÊN BIẾT                                           │
+ │   Bảng này KHÔNG chấm cảm xúc của con. Nó chỉ đo xem con       │
+ │   GỌI TÊN và NÓI RA được tới đâu.                              │
+ │   Con buồn nhiều không phải là con làm bài kém.                │
+ │                                                                │
+ │  CÂU BỐ MẸ HỎI CON MỖI TỐI                                     │
+ │   "Hôm nay con có khuôn mặt nào?"                              │
+ │   — rồi im lặng nghe, không sửa, không giải quyết hộ.          │
+ └────────────────────────────────────────────────────────────────┘
+```
+
+> ⛔ **Không có bảng xếp hạng lớp.** Dữ liệu cảm xúc là **D3** — không hiển thị công khai dưới bất kỳ hình thức nào.
+
+---
+
+## 🎧 PHẦN 7 — AUDIO CHUYÊN SÂU `P7-AU` · 14 phút
+
+> 🔓 Mở từ tầng **HS-T2**. Với khối 1: **nghe cùng bố mẹ**. Tài khoản phụ huynh nhận kèm **bản chép lời đầy đủ**.
+
+### 7.1. Cấu trúc audio
+
+| Đoạn | Thời lượng | Nội dung |
+|:--:|:--:|---|
+| Mở | 0:00–0:45 | Nhạc nhẹ. *"Hôm nay chúng mình nghe chuyện về những vị khách."* |
+| Truyện 1 | 0:45–5:10 | **"Ngôi nhà có sáu vị khách"** |
+| Nghỉ hỏi | 5:10–5:50 | Câu hỏi cho con, dừng 20 giây |
+| Truyện 2 | 5:50–10:20 | **"Bố cũng khóc"** |
+| Nghỉ hỏi | 10:20–11:00 | Câu hỏi cho bố mẹ và con cùng trả lời |
+| Chốt | 11:00–14:00 | Ba bước đèn + ba người lớn tin cậy + lời chúc ngủ ngon |
+
+### 7.2. Bản chép lời — Truyện 1 *(trích, dùng nguyên văn khi thu âm)*
+
+> *"Trong người mỗi bạn nhỏ có một ngôi nhà. Và ngôi nhà ấy có khách tới chơi.*
+>
+> *Có sáu vị khách.*
+>
+> *Vị khách thứ nhất tên là **Vui**. Vui tới thì trong nhà sáng lên, muốn nhảy múa.*
+>
+> *Vị khách thứ hai tên là **Buồn**. Buồn tới thì ngồi ở góc, không nói gì, làm cái bụng nằng nặng.*
+>
+> *Vị khách thứ ba tên là **Giận**. Giận tới thì đi rầm rầm, làm mặt nóng lên, làm hai bàn tay siết lại.*
+>
+> *Vị khách thứ tư tên là **Sợ**. Sợ tới thì trốn dưới gầm bàn, làm tim đập thình thịch.*
+>
+> *Vị khách thứ năm tên là **Ngạc Nhiên**. Ngạc Nhiên tới thì mở toang hết cửa sổ.*
+>
+> *Và vị khách thứ sáu tên là **Ngượng**. Ngượng tới thì kéo rèm che hết lại.*
+>
+> *(dừng 3 giây)*
+>
+> *Có một bạn nhỏ tên là Nấm. Nấm chỉ thích một vị khách thôi — Nấm thích Vui.*
+>
+> *Nên mỗi lần Buồn tới gõ cửa, Nấm khoá cửa lại. Giận tới, Nấm cũng khoá. Sợ tới, Nấm cũng khoá.*
+>
+> *Các con biết chuyện gì xảy ra không?*
+>
+> *(dừng 3 giây)*
+>
+> *Những vị khách bị khoá cửa **không đi đâu cả**. Họ đứng ngoài. Họ gõ cửa mỗi lúc một to hơn.*
+>
+> *Và tiếng gõ cửa ấy làm Nấm mệt suốt cả ngày, dù Nấm không biết vì sao mình mệt.*
+>
+> *Một hôm bà của Nấm bảo: 'Cháu thử mở cửa xem.'*
+>
+> *Nấm sợ lắm. Nhưng Nấm mở.*
+>
+> *Buồn bước vào. Buồn ngồi xuống cạnh Nấm. Nấm nói: 'Chào Buồn. Hôm nay bạn tới à.'*
+>
+> *Và Buồn — các con biết không — Buồn ngồi một lúc, rồi Buồn đứng dậy và đi.*
+>
+> *Vị khách nào cũng vậy. **Được gọi đúng tên rồi thì họ ngồi một lúc, rồi họ đi.***
+>
+> *Chỉ có vị khách bị nhốt ngoài cửa mới ở lại mãi mãi."*
+
+**Câu hỏi nghỉ 1:** *"Hôm nay, vị khách nào đã tới ngôi nhà của con?"* *(dừng 20 giây)*
+
+### 7.3. Bản chép lời — Truyện 2 *(trích)*
+
+> *"Bo có một người bố rất to. Bố Bo làm thợ xây. Tay bố chai cứng, vai bố rộng.*
+>
+> *Bo nghĩ bố mình không bao giờ khóc.*
+>
+> *Một hôm ông nội của Bo mất.*
+>
+> *Hôm ấy nhà đông người. Bố Bo đứng ở sân, lo hết mọi việc, nói chuyện với mọi người, không ngồi xuống lần nào.*
+>
+> *Đêm ấy Bo dậy đi uống nước. Bo thấy bố ngồi một mình ở bậc thềm.*
+>
+> *Bố Bo đang khóc.*
+>
+> *Bo đứng im. Bo không biết làm gì.*
+>
+> *Rồi Bo đi tới, ngồi xuống cạnh bố. Bo không nói gì cả. Bo chỉ ngồi.*
+>
+> *Bố Bo quàng tay qua vai Bo. Bố nói: 'Bố đang nhớ ông.'*
+>
+> *Bo nói: 'Con cũng nhớ ông.'*
+>
+> *Hai bố con ngồi im ở bậc thềm rất lâu.*
+>
+> *(dừng 3 giây)*
+>
+> *Sáng hôm sau, Bo hỏi bố: 'Bố ơi, người lớn cũng khóc à?'*
+>
+> *Bố nói: 'Ai cũng khóc, con ạ. Khóc không phải là yếu. Khóc là **trong người mình có một cái gì đó to quá, phải cho nó ra bớt**.'*
+>
+> *Bo nhớ câu đó tới tận bây giờ.*
+>
+> *Và từ hôm ấy, khi Bo buồn, Bo không giấu nữa. Bo tới ngồi cạnh bố.*
+>
+> *Vì Bo biết — bố sẽ hiểu."*
+
+**Câu hỏi nghỉ 2 *(cho cả bố mẹ và con)*:** dành cho bố mẹ — *"Bố/mẹ có muốn kể cho con nghe một lần bố/mẹ đã buồn không?"* Dừng 30 giây.
+
+### 7.4. Đoạn chốt — nguyên văn
+
+> *"Trước khi ngủ, con nhớ nhé.*
+>
+> *Trong người con có sáu vị khách: **vui, buồn, giận, sợ, ngạc nhiên, ngượng**. Không có vị nào là khách xấu cả.*
+>
+> *Khi vị khách tới mà con thấy khó chịu, con làm ba bước: **dừng lại — thở bốn hơi — rồi nói một câu**.*
+>
+> *Câu đó chỉ có bốn chữ thôi: **'Con đang thấy ______.'***
+>
+> *Và nếu có vị khách nào to quá, ở lại lâu quá, làm con mệt nhiều ngày — con **đừng giữ một mình**. Con nói với bố, với mẹ, với cô giáo, với người lớn nào con tin.*
+>
+> *Kể ra không bao giờ là sai. Kể ra là việc của người mạnh.*
+>
+> *Nếu con không nói được với ai, có một số điện thoại luôn có người nghe: **một – một – một**.*
+>
+> *Ngủ ngon nhé. Ngôi nhà của con luôn mở cửa."*
+
+### 7.5. Lưu ý sản xuất
+
+| Hạng mục | Chuẩn |
+|---|---|
+| Giọng đọc | Nữ, ấm, tốc độ **≤105 từ/phút** — chậm hơn các cụm khác |
+| Nhạc nền | Đàn tranh hoặc sáo, rất nhẹ; **tắt hẳn** ở đoạn bố khóc |
+| Khoảng lặng | Sau mỗi câu hỏi để **20–30 giây im lặng**, không nhạc |
+| Đoạn nhạy cảm | Truyện 2 nói về mất người thân — **báo trước cho phụ huynh** trong mô tả bài, cho phép **bỏ qua truyện 2** nếu gia đình vừa có tang |
+| Định dạng | MP3 128kbps · kèm bản chép lời `.txt` cho tài khoản phụ huynh |
+| Cấm | Không tiếng khóc thật, không nhạc buồn kéo dài, không hình ảnh tang lễ trong bản có hình |
+
+---
+
+# CỤM 6 · `K01-N4-05` — ⭐ **TẾT VIỆT CỦA CON**
+### Khối 1 · Nhóm 4 Công dân toàn cầu – trách nhiệm xã hội · Chữ GITA trội: **I** · Bài gốc: #43 Tục lì xì ngày Tết
+
+## THÔNG TIN CHUNG
+
+| Hạng mục | Nội dung |
+|---|---|
+| **Mã cụm** | `K01-N4-05` |
+| **Mạch năng lực** | **M4** Giao tiếp & Hợp tác · **M8** Tài chính · Khởi tạo · Phụng sự |
+| **Chữ GITA trội** | **I** — Inspirits: bản sắc và lòng biết ơn là nguồn nội lực gần nhất với trẻ lớp 1 |
+| **Bài gốc hấp thụ** | #43 Tục lì xì ngày Tết *(hấp thụ nguyên vẹn)* |
+| **Công cụ tư duy chính** | `CT-31` Quy tắc 3 hũ — bản lớp 1: **GIỮ – DÙNG – CHO** |
+| **Giáo án trực tiếp** | [`../02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N4-05.md`](../02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N4-05.md) |
+| **Cấp Độ hướng tới** | Cấp 1 ⚪ Pin Trắng → Cấp 2 🟢 Pin Xanh Lá |
+| **Mã phiếu** | `PTH-K01-N4-05` · `PSM-K01-N4-05` · `R-K01-N4-05` |
+
+> ⭐ **Chuyên đề bản sắc Việt.** Đây là cụm mang giá trị thương hiệu cao nhất của bộ khối 1 — nó dạy một phong tục Việt Nam bằng ngôn ngữ của trẻ, và **không có bộ kỹ năng sống nhập khẩu nào có nội dung này**.
+
+### ⚠️ NĂM QUY TẮC BẮT BUỘC — áp dụng cho **cả bản online và bản trực tiếp**
+
+| # | Quy tắc | Vì sao |
+|:--:|---|---|
+| **1** | **Không hỏi số tiền lì xì của bất kỳ trẻ nào** — không hỏi trên màn hình, không hỏi trong ô nhập, không hỏi riêng | Số tiền phản ánh hoàn cảnh gia đình. Hỏi là vô tình phân loại trẻ |
+| **2** | **Mọi hoạt động dùng tiền mô hình**, và **số tiền mô hình phát cho mọi trẻ là bằng nhau** | An toàn tài sản + triệt tiêu so sánh |
+| **3** | **Không nói "lì xì nhiều là may mắn nhiều"** | Gắn giá trị vào số tiền — sai cả về văn hoá lẫn giáo dục |
+| **4** | **Có phương án cho trẻ không đón Tết cùng bố mẹ** — mọi ô nhập ghi *"kể về **một cái Tết con nhớ**"*, không ghi *"kể về Tết nhà con"* | Không để trẻ nào phải im lặng vì hoàn cảnh |
+| **5** | **Không đề cập tôn giáo, không so sánh phong tục vùng miền theo hướng hơn – kém** | Tết mỗi nhà mỗi khác, và đều đúng |
+
+> 🔒 **Cài đặt hệ thống bắt buộc:** toàn bộ ô nhập của cụm này **không có trường số tiền**. Nếu trẻ tự nói ra số tiền trong bản ghi âm, hệ thống **không hiển thị lại**, và HLV **không nhắc lại con số đó**.
+
+---
+
+## 📘 PHẦN 1 — KIẾN THỨC `P1-KT` · 14 phút · Pha **G**
+
+### 1.1. Video mở — 90 giây *(lời thoại thật)*
+
+> *(Hình vẽ: một cành mai vàng, một phong bao đỏ đặt trên bàn)*
+>
+> **Giọng kể:** *"Ở nước mình, mỗi năm có một ngày rất đặc biệt.*
+>
+> *Ngày đó nhà cửa được lau sạch. Cành mai, cành đào được cắm vào lọ. Cả nhà về đông đủ.*
+>
+> *Và ngày đó, người lớn tặng cho con một cái phong bao màu đỏ.*
+>
+> *Con có biết vì sao phong bao ấy màu đỏ không?*
+>
+> *(dừng 3 giây)*
+>
+> *Vì màu đỏ là màu của may mắn. Người xưa tin rằng màu đỏ đuổi được điều xấu.*
+>
+> *Trong phong bao ấy có một tờ tiền. Nhưng tờ tiền không phải là thứ quý nhất đâu.*
+>
+> *Thứ quý nhất là **lời chúc** người lớn gửi cho con.*
+>
+> *Hôm nay chúng mình học cách **nhận** — và cách **chúc**."*
+
+### 1.2. Bốn video kiến thức
+
+| # | Tên video | Phút | Nội dung |
+|:--:|---|:--:|---|
+| 1 | **Tết Việt có gì** | 3:30 | Dọn nhà · mai đào · bánh chưng bánh tét · mâm ngũ quả · thăm ông bà. Có cả **ba miền**, không so hơn kém |
+| 2 | **Vì sao có tục lì xì** | 3:10 | Sự tích ngắn · phong bao đỏ · **lì xì là lời chúc, không phải phần thưởng** |
+| 3 | **Bốn bước nhận lì xì** | 3:20 | ① Hai tay ② Cảm ơn ③ Câu chúc ④ Cất đi |
+| 4 | **Ba cái hộp Tết** | 3:20 | `CT-31` bản lớp 1: **GIỮ – DÙNG – CHO** |
+
+### 1.3. Bảng khái niệm cốt lõi
+
+| Khái niệm | Nói với trẻ lớp 1 | Hình minh hoạ |
+|---|---|---|
+| **Tết** | *"Ngày cả nhà về đông đủ, bắt đầu một năm mới."* | 🌸 cành mai + 🏮 |
+| **Lì xì** | *"Người lớn gửi lời chúc cho con, đựng trong phong bao đỏ."* | 🧧 |
+| **Phong bao đỏ** | *"Màu đỏ là màu may mắn."* | 🧧 |
+| **Lời chúc** | *"Điều tốt con mong cho người khác."* | 💬 |
+| **Mừng tuổi** | *"Cũng là lì xì. Con cũng mừng tuổi ông bà được."* | 👵👴 |
+| **Ba hộp** | *"GIỮ để dành · DÙNG mua thứ cần · CHO tặng người khác."* | 📦📦📦 |
+
+> ⚠️ **Cấm dùng trong mọi học liệu:** *"được nhiều tiền"* · *"lì xì to"* · *"nhà giàu"* · *"nhà nghèo"* · bất kỳ con số tiền nào.
+
+### 1.4. Infographic 1 trang — **"BỐN BƯỚC & BA HỘP"**
+
+```
+   ┌──────────────── TẾT VIỆT CỦA CON ─────────────────┐
+   │                                                   │
+   │   BỐN BƯỚC NHẬN LÌ XÌ                             │
+   │                                                   │
+   │   ①🙌 HAI TAY   ②🙏 CẢM ƠN   ③💬 CHÚC   ④🎒 CẤT ĐI │
+   │   đưa hai tay   "Con cảm ơn   câu chúc  không mở  │
+   │   hơi cúi đầu    bác ạ"       hợp người  ra xem   │
+   │                                                   │
+   │   ⚠️ Bước ④ quan trọng nhất: KHÔNG mở phong bao   │
+   │      trước mặt người tặng. KHÔNG đếm.             │
+   ├───────────────────────────────────────────────────┤
+   │   BA CÁI HỘP TẾT                                  │
+   │                                                   │
+   │   📦 GIỮ         📦 DÙNG         📦 CHO           │
+   │   để dành cho    mua thứ con     tặng người khác  │
+   │   việc lớn hơn   thật sự cần                      │
+   │                                                   │
+   │   ➤ Con CHIA NGAY khi nhận — không đợi cuối Tết.  │
+   ├───────────────────────────────────────────────────┤
+   │   ⭐ Thứ quý nhất trong phong bao KHÔNG phải       │
+   │      tờ tiền — mà là LỜI CHÚC.                    │
+   └───────────────────────────────────────────────────┘
+```
+
+**Mô tả bản in:** A4 dọc, nền có hoa văn trống đồng mờ. Nửa trên là **bốn bước vẽ thành bốn ô có hình bàn tay**. Nửa dưới là **ba cái hộp để trống** cho trẻ vẽ hoặc dán. Góc dưới in thanh an toàn 🆘 111 và dòng: *"Người lạ cho tiền và rủ con đi — con nói KHÔNG và kể ngay với bố mẹ."*
+
+### 1.5. "Thế nào là làm đúng" — rubric công bố trước
+
+| Tiêu chí | ĐẠT | XUẤT SẮC |
+|---|---|---|
+| Bốn bước nhận lì xì | Đủ 3/4 bước | Đủ 4/4, **có bước ④ cất đi** |
+| Câu chúc | Nói được 1 câu chúc | Nói được **≥3 câu chúc khác nhau, hợp từng người** |
+| Ba hộp | Chia được 3 hộp bằng tiền mô hình | Chia được và **nói được vì sao chia như vậy** |
+| Kể về Tết | Kể được 1 điều | Kể được ≥3 điều và **hỏi lại bạn** |
+| Xử lý tình huống Tết | Xử đúng ≥5/8 thẻ | Xử đúng 8/8, **gồm cả thẻ số 8** |
+
+> ⚠️ **Kiểm tra:** P1 mới nói *Tết là gì*, *lì xì là gì*, *bốn bước là gì*. **Luyện đủ 4 lượt** và **tám thẻ tình huống Tết** nằm ở **P3**.
+
+---
+
+## 🌊 PHẦN 2 — TRẢI NGHIỆM `P2-TN` · 20 phút · Pha **I**
+
+### Hình thức: **Vòng tròn Tết + Phim rối dừng-chọn — "TẾT CỦA BẠN NẤM"**
+
+☑ Kể chuyện có hình ☑ Phim rối dừng-chọn
+
+**Phần A — "Một cái Tết con nhớ" *(8 phút)*.**
+
+> 🎤 **Giọng hệ thống — nguyên văn, chú ý cách hỏi:**
+> *"Bây giờ con kể cho cô nghe về **một cái Tết mà con nhớ** nhé.*
+>
+> *Có thể là Tết ở nhà con. Có thể là Tết ở nhà ông bà. Có thể là Tết con xem trên tivi. Có thể là một cái Tết rất lâu rồi con chỉ nhớ mang máng.*
+>
+> *Cái Tết nào cũng được. Con kể một điều con nhớ nhất thôi."*
+
+| Ô nhập | Cách trẻ trả lời |
+|---|---|
+| *"Cái Tết con nhớ có gì?"* | Chọn hình: 🌸 hoa · 🍽️ mâm cơm · 👵 ông bà · 🧧 phong bao · 🎆 pháo hoa · 🚌 chuyến xe về quê · ✏️ vẽ thêm |
+| *"Mùi gì làm con nhớ Tết?"* | Chọn hình: bánh chưng · hương · hoa · nồi thịt kho |
+| *"Ai là người con muốn gặp nhất vào Tết?"* | Nói vào máy **hoặc** vẽ |
+
+> ⛔ **Không có ô nào hỏi về tiền, quà, hay nhà cửa.**
+> 💡 **Cài đặt cho trẻ không đón Tết cùng bố mẹ:** nếu trẻ chọn ✏️ *"con không nhớ Tết nào"*, hệ thống chuyển sang nhánh: *"Vậy con **vẽ cái Tết con mong**. Con muốn nó có gì?"* — không hỏi thêm câu nào.
+
+**Phần B — Phim rối dừng-chọn *(12 phút)*.** Dừng ở **4 điểm**.
+
+| Điểm dừng | Tình huống | Lựa chọn | Điều con học |
+|:--:|---|---|---|
+| **①** | Bác hàng xóm sang chơi, đưa Nấm phong bao đỏ. | A. Nấm giật một tay · B. **Nấm đưa hai tay, hơi cúi đầu** · C. Nấm chạy trốn | Bước ① |
+| **②** | Nấm nhận rồi. Nấm nói gì? | A. Im lặng · B. *"Cảm ơn"* · C. **"Con cảm ơn bác ạ. Con chúc bác năm mới mạnh khoẻ ạ."** | Bước ② + ③ |
+| **③** | Nấm cầm phong bao. Nấm định xé ra xem. | A. Xé ra đếm ngay · B. **Cất vào túi, lát nữa đưa mẹ** · C. Đưa cho bạn xem | Bước ④ |
+| **④** | Bạn Bo chạy tới: *"Cậu được bao nhiêu? Tớ nhiều hơn cậu đấy!"* | A. Khoe lại · B. Buồn và đi chỗ khác · C. **"Tớ vui vì được mọi người chúc. Cậu được chúc gì?"** | **Không so sánh** — đổi chủ đề sang lời chúc |
+
+**Nhánh phụ bắt buộc có — chạy khi con chọn A ở điểm ③:**
+> *(Phim tiếp: Nấm xé phong bao ngay trước mặt bác. Bác nhìn xuống, hơi ngượng. Bác nói khẽ: "Bác chỉ có ít thôi cháu ạ.")*
+> **Giọng kể:** *"Nấm không có ý gì xấu cả. Nấm chỉ tò mò thôi.*
+> *Nhưng khi Nấm mở phong bao ra trước mặt bác, bác lại thấy ngượng — vì bác nghĩ bác cho ít quá.*
+> *Cái phong bao được dán kín chính là để không ai phải ngượng cả.*
+> *Con thử lại nhé."*
+
+### Bóc tách 4 lớp *(ô nhập bắt buộc — trẻ nói vào máy hoặc chọn hình)*
+
+| Lớp | Câu hỏi |
+|:--:|---|
+| **Thấy gì** | *"Nấm đã làm mấy bước khi nhận lì xì?"* |
+| **Nghĩ gì** | *"Vì sao phong bao lại được dán kín?"* |
+| **Thấy trong người** | *"Khi Bo hỏi 'cậu được bao nhiêu', Nấm thấy thế nào?"* *(chọn mặt cười)* |
+| **Làm gì tiếp** | *"Tết này con sẽ chúc ai đầu tiên? Con chúc câu gì?"* |
+
+### Chạm nội lực *(Lửa 3)*
+
+> 🔥 **Câu hệ thống nói với con — giọng chậm, nhạc lắng xuống, có tiếng đàn tranh rất nhẹ:**
+> *"Con có biết vì sao ông bà mình giữ cái phong bao đỏ này suốt hàng trăm năm không?*
+>
+> *Không phải vì tờ tiền bên trong.*
+>
+> *Mà vì mỗi lần một người lớn đưa phong bao cho một đứa trẻ, người lớn ấy đang nói một câu: **'Bác mong con lớn lên khoẻ mạnh và tử tế.'***
+>
+> *Cụ của con đã từng nhận phong bao đỏ. Ông bà con cũng từng nhận. Bố mẹ con cũng từng nhận. Và bây giờ tới con.*
+>
+> *Con là người mới nhất trong một hàng dài rất dài những người Việt Nam đã nhận lời chúc ấy.*
+>
+> *Rồi một ngày con sẽ lớn. Và con sẽ là người đưa phong bao cho một đứa trẻ khác.*
+>
+> *Thứ quý nhất trong phong bao không phải tờ tiền — **mà là lời chúc**."*
+
+---
+
+## ⚒️ PHẦN 3 — NHIỆM VỤ THỰC HÀNH `P3-TH` · 28 phút · Pha **T**
+
+### 3.1. Nhiệm vụ: **"NGÂN HÀNG CÂU CHÚC & BA HỘP TẾT"**
+
+**Bốn bước và ngân hàng câu chúc — dạy ở đây:**
+
+```
+   BỐN BƯỚC NHẬN LÌ XÌ
+
+   ① 🙌 HAI TAY     đưa hai tay ra, hơi cúi đầu
+   ② 🙏 CẢM ƠN      "Con cảm ơn bác ạ."   (có thưa gửi)
+   ③ 💬 CÂU CHÚC    hợp với người nhận  ← phần chính
+   ④ 🎒 CẤT ĐI      không mở, không đếm trước mặt người tặng
+```
+
+**NGÂN HÀNG CÂU CHÚC — con học thuộc ít nhất 3 câu**
+
+| Chúc ai | Câu chúc |
+|---|---|
+| **Ông, bà** | *"Con chúc ông/bà **sống lâu trăm tuổi**, luôn mạnh khoẻ ạ."* |
+| **Bố, mẹ** | *"Con chúc bố/mẹ **năm mới nhiều sức khoẻ**, đi làm vui ạ."* |
+| **Bác, cô, chú** | *"Con chúc bác **năm mới mạnh khoẻ, gặp nhiều may mắn** ạ."* |
+| **Anh, chị** | *"Em chúc anh/chị **năm mới học giỏi** nhé."* |
+| **Em nhỏ** | *"Chị/anh chúc em **năm mới hay ăn chóng lớn** nhé."* |
+| **Thầy, cô giáo** | *"Con chúc cô **năm mới mạnh khoẻ**, chúng con sẽ ngoan ạ."* |
+
+> 🎤 **Giọng hệ thống:** *"Con để ý nhé — chúc ông bà thì chúc **sống lâu**, chúc anh chị thì chúc **học giỏi**, chúc em bé thì chúc **chóng lớn**. Câu chúc phải **hợp với người mình chúc** thì mới là câu chúc thật."*
+
+**BA HỘP TẾT — luyện bằng tiền mô hình**
+
+| Hộp | Dùng làm gì | Tỷ lệ gợi ý cho lớp 1 |
+|:--:|---|:--:|
+| 📦 **GIỮ** | Để dành cho một việc lớn hơn — con dán **ảnh thứ con muốn** lên hộp | 40% |
+| 📦 **DÙNG** | Mua thứ con thật sự cần | 50% |
+| 📦 **CHO** | Tặng người khác — con **tự chọn tặng ai** | 10% |
+
+> 🔒 **Hệ thống phát cho MỌI trẻ số tiền mô hình BẰNG NHAU: 10 tờ.** Không trẻ nào có nhiều hoặc ít hơn bạn.
+
+**Việc con làm:** In **Bảng Tết Của Con** — con tô một bông hoa mai cho mỗi lần luyện đủ 4 bước, và tô ba cái hộp khi đã chia xong tiền mô hình.
+
+> ⚠️ **Quy tắc an toàn kèm theo:** Nếu có **người con không quen** cho con tiền và rủ con **đi ra ngoài lấy quà**, hoặc bảo con **đừng nói với bố mẹ** — con **nói KHÔNG, đi khỏi đó ngay, và kể lại với bố mẹ**. Không có món quà nào đáng để con đi một mình với người lạ. Cần trợ giúp: bấm **🆘** hoặc gọi **111**.
+
+### 3.2. Vi kỹ năng & ngưỡng
+
+| Vi kỹ năng | Cách đo | ĐẠT | XUẤT SẮC |
+|---|---|:--:|:--:|
+| ① Đủ 4 bước | Bước /4 | ≥ 3 | 4 |
+| ② Số câu chúc thuộc | Số câu | ≥ 1 | ≥ 3 hợp người |
+| ③ Chúc đúng người | Đúng /5 lượt | ≥ 3 | 5 |
+| ④ Chia ba hộp | Chia được /3 hộp | 3 | 3 và nói được lý do |
+| ⑤ Xử lý thẻ tình huống | Đúng /8 thẻ | ≥ 5 | 8, **gồm thẻ số 8** |
+
+### 3.3. Bảng luyện 4 lượt *(ô số liệu bắt buộc)*
+
+| Lượt | Ngày | Đủ 4 bước /4 | Số câu chúc | Chúc đúng người /5 | Ba hộp /3 | Thẻ đúng /8 | Tự chấm 😟😐🙂😃 | Bậc |
+|:--:|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | | | | | | | | B1 |
+| 2 | | | | | | | | B2 |
+| 3 | | | | | | | | B3 |
+| 4 | | | | | | | | B4 |
+
+### 3.4. Tám thẻ tình huống Tết *(bản online — trẻ bấm chọn hình)*
+
+| # | Tình huống | Việc đúng |
+|:--:|---|---|
+| 1 | Người lớn lì xì, con vừa nhận vừa xé phong bao đếm | **Bước ④** — cất đi, không mở trước mặt |
+| 2 | Con nhận lì xì rồi chạy đi ngay, quên chúc | **Bước ③** — lời chúc mới là phần chính |
+| 3 | Bạn khoe *"tớ được nhiều hơn cậu"* | **Không so sánh.** Nói: *"Tớ vui vì được mọi người chúc. Cậu được chúc gì?"* |
+| 4 | Người lớn hỏi *"cháu học giỏi không?"* | Trả lời lễ phép và **thật** — không khoe, không tự chê |
+| 5 | Con muốn tiêu hết tiền mua một món đồ chơi đắt | **Ba hộp** — hộp DÙNG có giới hạn |
+| 6 | Bố mẹ nói giữ hộ tiền, con không muốn | Nói mong muốn **lễ phép**, và **cùng thống nhất chỗ cất** |
+| 7 | Bạn trong lớp Tết không được về quê với bố mẹ | ⚠️ **Không hỏi vì sao.** Nói: *"Tớ chúc cậu năm mới vui."* |
+| 8 | Người lạ ở nhà họ hàng cho tiền, rủ con ra ngoài lấy quà, dặn đừng nói với bố mẹ | 🔴 **Nói KHÔNG. Đi khỏi ngay. Kể với bố mẹ.** Bấm 🆘 hoặc gọi 111 |
+
+> 🔴 **Thẻ số 8 là thẻ an toàn.** Chọn sai thì hệ thống **không cho qua**, hiện lại đoạn 40 giây và **báo tài khoản phụ huynh**. Thẻ số 7 dạy trẻ **giữ ý với bạn có hoàn cảnh khác mình** — HLV nhấn mạnh: *"Con không hỏi vì sao. Con chỉ chúc."*
+
+### 3.5. Tiêu chí hoàn thành
+
+- ☑ **Bảng Tết Của Con** tô được **≥ 4 bông mai** *(4 lượt luyện)*
+- ☑ Ba cái hộp đã chia xong, có **ảnh hoặc hình vẽ** dán trên hộp GIỮ
+- ☑ Bảng luyện có **≥ 3 lượt** đã điền số
+- ☑ Có **1 bản ghi âm 30 giây**: con nói **3 câu chúc cho 3 người khác nhau**
+- ☑ Xử đúng **≥ 5/8 thẻ**, và **bắt buộc đúng thẻ số 8**
+- ☑ Có **1 người lớn** xác nhận: *"Con đã chúc tôi"*
+
+### 3.6. Cách nộp
+
+| Nộp gì | Nộp thế nào | Ghi chú an toàn |
+|---|---|---|
+| Bảng Tết Của Con | Chụp ảnh **tờ giấy** | Không chụp người, **không chụp tiền thật** |
+| Ba câu chúc | Ghi âm 30 giây | Riêng tư, chỉ HLV và bố mẹ nghe |
+| Ba hộp | Chụp ảnh **ba hộp giấy** hoặc chia trên màn hình | ⛔ **Chỉ tiền mô hình** |
+| Xác nhận | Người lớn bấm nút trong tài khoản phụ huynh | Có dấu thời gian |
+
+> ⛔ **Bài đã nộp không sửa được.** Tuần sau nộp **lượt mới**.
+> 🔒 **Hệ thống không có ô nhập số tiền.** Nếu trẻ nói ra số tiền trong bản ghi âm, hệ thống **không hiển thị lại và không đưa vào báo cáo**.
+
+### 3.7. Chấm chéo đồng đẳng
+
+Hai bạn Squad **đóng vai**: một bạn làm bác hàng xóm, một bạn nhận lì xì bằng **phong bao rỗng**. Rồi đổi vai. Bạn quan sát bấm **3 mặt cười** cho câu: *"Bạn có chúc câu hợp với bác không?"* và nói **1 điều thích**. **Cấm chê.** ⛔ **Cấm hỏi và cấm nhắc tới số tiền dưới mọi hình thức.**
+
+### 3.8. PHIẾU KNS 5 LỚP CHIỀU SÂU — `PTH-K01-N4-05`
+
+| Lớp | Nội dung riêng của cụm `K01-N4-05` |
+|:--:|---|
+| **L1 NHẬN BIẾT** | Gọi tên: Tết · lì xì · phong bao đỏ · lời chúc · mừng tuổi. Bốn bước nhận lì xì. Ba hộp |
+| **L2 THẤU HIỂU** | Vì sao phong bao **dán kín**. Vì sao lời chúc phải **hợp người**. Vì sao **không so sánh** số tiền |
+| **L3 THỰC HÀNH** | Luyện 4 lượt, đo **đủ 4 bước /4** · **số câu chúc** · **chúc đúng người /5** · **ba hộp /3** · **thẻ đúng /8** |
+| **L4 SOI CHIẾU** | Bước nào con hay quên nhất; *"Câu chúc nào con thích nói nhất?"*; lật câu *"Lì xì nhiều là may mắn nhiều."* |
+| **L5 CHUYỂN HOÁ** | Sứ mệnh Tết: **chúc đủ 5 người** trong nhà và **tự tay viết/vẽ 1 thiệp chúc ông bà**; bố mẹ ký xác nhận |
+
+**Bản in phiếu — 3 trang A4, nền hoa văn trống đồng mờ**
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  PHIẾU KỸ NĂNG SỐNG KNS365 · HỆ GEN VIỆT          🆘 CẦN TRỢ GIÚP·111 ║
+║  Mã: PTH-K01-N4-05   Cụm: ⭐ TẾT VIỆT CỦA CON                        ║
+║  Con tên: ______________  Lớp: 1___  Squad: ____  Ngày: ____________ ║
+║  ⚠️ Phiếu này KHÔNG hỏi số tiền. Mọi hoạt động dùng TIỀN MÔ HÌNH.     ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 1 · NHẬN BIẾT — "Điều này là gì?"          ⏱ 6–8'   Pha G     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • TẾT NHÀ MÌNH CÓ GÌ  (con tô màu những thứ con thấy ở Tết)          │
+│    🌸 hoa mai  🌺 hoa đào  🍘 bánh chưng  🍥 bánh tét                 │
+│    🍊 mâm ngũ quả  🧧 phong bao  👵 ông bà  🎆 pháo hoa               │
+│    ➤ Ba miền có hoa khác nhau, bánh khác nhau — ĐỀU ĐÚNG CẢ.         │
+│                                                                      │
+│ • BỐN BƯỚC NHẬN LÌ XÌ  (con điền số 1-2-3-4)                         │
+│    ☐ 🎒 CẤT ĐI       ☐ 🙌 HAI TAY                                    │
+│    ☐ 💬 CÂU CHÚC     ☐ 🙏 CẢM ƠN                                     │
+│    ➤ Bước nào con hay quên nhất? ________________________________    │
+│                                                                      │
+│ • BA CÁI HỘP  (con vẽ hoặc dán vào từng hộp)                         │
+│   ┌────────────┐  ┌────────────┐  ┌────────────┐                    │
+│   │ 📦 GIỮ     │  │ 📦 DÙNG    │  │ 📦 CHO     │                    │
+│   │            │  │            │  │            │                    │
+│   │ con dán ẢNH│  │ thứ con    │  │ con tặng   │                    │
+│   │ thứ con    │  │ thật sự    │  │ ai?        │                    │
+│   │ muốn để    │  │ cần        │  │            │                    │
+│   │ dành mua   │  │            │  │            │                    │
+│   └────────────┘  └────────────┘  └────────────┘                    │
+│      4 tờ            5 tờ            1 tờ    (tiền mô hình)          │
+│                                                                      │
+│ 📏 HAI VẠCH CHUẨN                                                    │
+│   ĐẠT      : Đủ 3/4 bước · thuộc 1 câu chúc · chia được 3 hộp ·     │
+│              xử đúng 5/8 thẻ tình huống.                             │
+│   XUẤT SẮC : Đủ 4/4 bước · thuộc ≥3 câu chúc HỢP NGƯỜI ·            │
+│              nói được vì sao chia hộp như vậy · đúng 8/8 thẻ.        │
+│   ➤ Con nhắm vạch:  ☐ Đạt    ☐ Xuất sắc                             │
+│                                                                      │
+│ ✍️ Bằng lời của con: "Lì xì là ______________________________________"│
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 2 · THẤU HIỂU — "Vì sao lại như vậy?"      ⏱ 7–8'   Pha I     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • VÌ SAO PHONG BAO ĐƯỢC DÁN KÍN                                      │
+│   ┌──────────┐   ┌──────────────┐   ┌──────────────┐                │
+│   │ Không ai │ → │ Không ai phải│ → │ Ai cũng vui  │                │
+│   │ nhìn thấy│   │ ngượng vì cho│   │ trong ngày   │                │
+│   │ bên trong│   │ ít hay nhiều │   │ Tết          │                │
+│   └──────────┘   └──────────────┘   └──────────────┘                │
+│   ➤ Vì vậy con KHÔNG mở phong bao trước mặt người tặng.              │
+│                                                                      │
+│ • CÂU CHÚC PHẢI HỢP NGƯỜI  (con nối)                                 │
+│   👵 ông bà      ○      ○  "năm mới học giỏi nhé"                   │
+│   👨‍👩 bố mẹ       ○      ○  "sống lâu trăm tuổi ạ"                    │
+│   👦 anh chị     ○      ○  "hay ăn chóng lớn nhé"                   │
+│   👶 em nhỏ      ○      ○  "năm mới nhiều sức khoẻ ạ"               │
+│   Con nối đúng: ____ / 4                                             │
+│                                                                      │
+│ • CÂU CẦN LẬT                                                        │
+│   "Lì xì nhiều là may mắn nhiều."                                    │
+│   ➤ ĐÚNG hay SAI?  ☐ Đúng  ☐ Sai                                    │
+│   ➤ Thứ quý nhất trong phong bao là gì? __________________________   │
+│                                                                      │
+│ • BẠN CON CÓ CÁI TẾT KHÁC CON                                        │
+│   Có bạn Tết không về quê được. Có bạn Tết ở với ông bà.             │
+│   Có bạn Tết bố mẹ vẫn phải đi làm.                                  │
+│   ➤ Con có hỏi "vì sao" không?  ☐ Có  ☐ KHÔNG                       │
+│   ➤ Con nói câu gì với bạn? "____________________________________"   │
+│                                                                      │
+│ ⚠️ ĐIỀU NÀY QUAN TRỌNG HƠN LÌ XÌ                                     │
+│   Người con KHÔNG QUEN cho con tiền, rủ con ra ngoài lấy quà,        │
+│   dặn con "đừng nói với bố mẹ nhé" →                                 │
+│   ➤ Con NÓI KHÔNG. Con ĐI KHỎI ĐÓ. Con KỂ VỚI BỐ MẸ.                │
+│   ➤ Không món quà nào đáng để con đi một mình với người lạ.          │
+│   ✍️ Ba người lớn con tin: 1.________ 2.________ 3.________         │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 3 · THỰC HÀNH — "Con làm được chưa?"      ⏱ 28'    Pha T     │
+├──────────────────────────────────────────────────────────────────────┤
+│ 🌸 BẢNG TẾT CỦA CON  (mỗi lượt luyện đủ 4 bước, con tô 1 bông mai)   │
+│      ✿    ✿    ✿    ✿    ✿        Con tô được: ____ / 5             │
+│                                                                      │
+│ 💬 NGÂN HÀNG CÂU CHÚC — con học thuộc ít nhất 3 câu                  │
+│  ┌────────────┬─────────────────────────────────────────────┐       │
+│  │ Chúc ai    │ Câu chúc của con                            │       │
+│  ├────────────┼─────────────────────────────────────────────┤       │
+│  │ Ông / Bà   │                                             │       │
+│  │ Bố / Mẹ    │                                             │       │
+│  │ Bác/Cô/Chú │                                             │       │
+│  │ Anh / Chị  │                                             │       │
+│  │ Em nhỏ     │                                             │       │
+│  │ Thầy / Cô  │                                             │       │
+│  └────────────┴─────────────────────────────────────────────┘       │
+│                                                                      │
+│ 📊 BẢNG LUYỆN 4 LƯỢT                                                 │
+│  ┌────┬─────┬──────┬──────┬───────┬──────┬──────┬──────┬─────┐     │
+│  │Lượt│Ngày │Đủ 4  │Số câu│Chúc   │Ba hộp│Thẻ   │ Tự   │ Bậc │     │
+│  │    │     │bước/4│chúc  │đúng/5 │ /3   │đúng/8│ chấm │     │     │
+│  ├────┼─────┼──────┼──────┼───────┼──────┼──────┼──────┼─────┤     │
+│  │ 1  │     │      │      │       │      │      │😟😐🙂😃│ B1  │     │
+│  │ 2  │     │      │      │       │      │      │😟😐🙂😃│ B2  │     │
+│  │ 3  │     │      │      │       │      │      │😟😐🙂😃│ B3  │     │
+│  │ 4  │     │      │      │       │      │      │😟😐🙂😃│ B4  │     │
+│  └────┴─────┴──────┴──────┴───────┴──────┴──────┴──────┴─────┘     │
+│                                                                      │
+│ 🎴 TÁM THẺ TÌNH HUỐNG TẾT  (con đánh dấu thẻ đã xử đúng)             │
+│   ☐1  ☐2  ☐3  ☐4  ☐5  ☐6  ☐7  ☐8                                  │
+│   🔴 THẺ 8 LÀ THẺ AN TOÀN — bắt buộc đúng.                          │
+│                                                                      │
+│ 🎙️ GHI ÂM 30 GIÂY — con nói 3 câu chúc cho 3 người khác nhau.        │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 4 · SOI CHIẾU — "Con đang ở đâu?"         ⏱ 5'     Pha T     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • TRƯỚC KHI HỌC, khi được lì xì con thường:                          │
+│      ☐ nhận một tay  ☐ quên chúc  ☐ mở ra xem ngay  ☐ đủ 4 bước     │
+│ • BÂY GIỜ:                                                           │
+│      ☐ nhận một tay  ☐ quên chúc  ☐ mở ra xem ngay  ☐ đủ 4 bước     │
+│                                                                      │
+│ • Bước con hay quên nhất: _________________________________________  │
+│ • Câu chúc con THÍCH NÓI NHẤT: ____________________________________  │
+│   Con thích nói với ai? ___________________________________________  │
+│                                                                      │
+│ • Con chia hộp GIỮ nhiều hay hộp DÙNG nhiều?  ☐ GIỮ  ☐ DÙNG          │
+│   Vì sao? ________________________________________________________   │
+│                                                                      │
+│ • Con định tặng hộp CHO cho ai? ___________________________________  │
+│   Vì sao là người đó? _____________________________________________  │
+│                                                                      │
+│ • CON ĐANG Ở BẬC NÀO?                                                │
+│   ◔ B1 Con biết bốn bước và ba hộp                                   │
+│   ◑ B2 Con làm đủ bước khi có người nhắc                             │
+│   ◕ B3 Con tự làm đủ 4 bước, tự chúc hợp người                       │
+│   ● B4 Con chúc trước khi được lì xì, và con nhắc được em nhỏ        │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 5 · CHUYỂN HOÁ — "Con mang đi đâu?"       ⏱ 5'     Pha A     │
+├──────────────────────────────────────────────────────────────────────┤
+│ 🎯 SỨ MỆNH TẾT CỦA CON                                               │
+│    Con chúc đủ 5 người trong nhà — mỗi người một câu HỢP với họ.     │
+│    Con tự tay viết hoặc vẽ 1 tấm thiệp chúc ông bà.                  │
+│                                                                      │
+│    ┌─────────────┬────────────────────────────┬──────┐              │
+│    │ Con chúc ai │ Câu chúc con đã nói        │ Xong │              │
+│    ├─────────────┼────────────────────────────┼──────┤              │
+│    │ 1.          │                            │  ☐   │              │
+│    │ 2.          │                            │  ☐   │              │
+│    │ 3.          │                            │  ☐   │              │
+│    │ 4.          │                            │  ☐   │              │
+│    │ 5.          │                            │  ☐   │              │
+│    └─────────────┴────────────────────────────┴──────┘              │
+│                                                                      │
+│    🎴 THIỆP CHÚC ÔNG BÀ  (con vẽ ở đây, hoặc dán ảnh thiệp con làm)  │
+│    ┌──────────────────────────────────────────────────┐             │
+│    │                                                  │             │
+│    │                                                  │             │
+│    │                                                  │             │
+│    └──────────────────────────────────────────────────┘             │
+│                                                                      │
+│    HABIT-5:  Neo ☐  Nhỏ ☐  Nhìn thấy ☐  Người chứng ☐  Thưởng ☐      │
+│    • Neo của con: ngay khi con gặp một người lớn trong nhà           │
+│    • Bản nhỏ nhất: chúc MỘT người, MỘT câu                           │
+│    • Nhìn thấy: đánh dấu ☑ vào bảng trên                             │
+│    • Người chứng: ____________________                                │
+│    • Thưởng: người được chúc cười và nói lại với con                 │
+│                                                                      │
+│    ✍️ Chữ ký người chứng: ______________  Ngày: ____________         │
+│    ⛔ Thiếu chữ ký này thì cụm CHƯA được tính hoàn thành.             │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 💎 PHẦN 4 — BÀI HỌC TÍCH LUỸ `P4-TL` · 10 phút · Pha **T**
+
+> 🔒 **Phần này khoá cho tới khi con đã nộp P3.**
+
+### 4.1. Năm nguyên tắc rút ra *(con tự nói trước — bản chuẩn hiện sau)*
+
+| # | Nguyên tắc | Câu cho trẻ lớp 1 |
+|:--:|---|---|
+| 1 | Bốn bước | *"Hai tay – Cảm ơn – Câu chúc – Cất đi."* |
+| 2 | **Lời chúc là phần chính** | *"Thứ quý nhất trong phong bao là lời chúc, không phải tờ tiền."* |
+| 3 | Chúc phải hợp người | *"Ông bà chúc sống lâu. Anh chị chúc học giỏi. Em bé chúc chóng lớn."* |
+| 4 | Không so sánh | *"Không hỏi bạn được bao nhiêu. Không khoe của mình."* |
+| 5 | Ba cái hộp | *"Giữ – Dùng – Cho. Chia ngay khi nhận."* |
+
+### 4.2. Năm thẻ ghi nhớ *(flashcard, có hình, có nút loa)*
+
+| Thẻ | Mặt trước *(hình)* | Mặt sau *(lời, có loa đọc)* |
+|:--:|---|---|
+| 1 | 🙌🙏💬🎒 bốn ô | *"Hai tay – Cảm ơn – Câu chúc – Cất đi"* |
+| 2 | 🧧 phong bao dán kín | *"Không mở trước mặt người tặng. Không đếm."* |
+| 3 | 👵 ông bà + 🎂 | *"Con chúc ông bà sống lâu trăm tuổi ạ."* |
+| 4 | 📦📦📦 ba hộp | *"Giữ – Dùng – Cho"* |
+| 5 | ⚠️ bàn tay chặn + 111 | *"Người lạ cho tiền, rủ đi lấy quà — con nói KHÔNG và kể với bố mẹ."* |
+
+### 4.3. Sơ đồ tổng kết 1 hình
+
+```
+                     🧧 PHONG BAO ĐỎ
+                            │
+              ┌─────────────┴─────────────┐
+        BÊN NGOÀI                    BÊN TRONG
+        màu đỏ = may mắn          💬 LỜI CHÚC ← quý nhất
+        dán kín = không ai        💵 tờ tiền
+        phải ngượng                    │
+              │                        │
+        ① 🙌 HAI TAY            📦 GIỮ  📦 DÙNG  📦 CHO
+        ② 🙏 CẢM ƠN              4 tờ    5 tờ     1 tờ
+        ③ 💬 CÂU CHÚC ← chính        (chia NGAY khi nhận)
+        ④ 🎒 CẤT ĐI
+              │
+        ⛔ KHÔNG so sánh · KHÔNG hỏi bạn được bao nhiêu
+```
+
+### 4.4. Lịch ôn lặp ngắt quãng
+
+| Lần | Sau khi học | Việc làm · 3 phút |
+|:--:|:--:|---|
+| 1 | 1 ngày | Nói lại 4 bước, không nhìn thẻ |
+| 2 | 3 ngày | Nói 3 câu chúc cho 3 người khác nhau |
+| 3 | 7 ngày | Diễn lại một lần nhận lì xì bằng phong bao rỗng |
+| 4 | 15 ngày | Kể lại: vì sao phong bao được dán kín |
+| 5 | 30 ngày | **Dạy lại** bốn bước cho em nhỏ hoặc cho búp bê |
+
+### 4.5. Bắc cầu học tập
+
+| Nối sang | Nội dung |
+|---|---|
+| **Cụm `K01-N3-02`** ⚠️ | *Cơ thể con là của con* — thẻ số 8 nối thẳng sang chuyên đề an toàn |
+| **Cụm `K01-N2-04`** | *Của chung – của riêng* — ba hộp là bản Tết của cùng một nguyên lý |
+| **Môn Tiếng Việt lớp 1** | Bài về Tết, tập nói lời chúc |
+| **Môn Đạo đức lớp 1** | Bài kính trọng ông bà, biết ơn |
+| **Môn Mĩ thuật** | Làm thiệp Tết, vẽ hoa mai hoa đào |
+| **Công cụ tư duy** | `CT-31 Quy tắc 3 hũ` *(bản đầy đủ học từ khối 2)* |
+| **Trò chơi lớp** | `TC-A-003 Vòng Ghi Nhận` · `TC-I-011 Kịch Dừng Hình` |
+
+---
+
+## 🚀 PHẦN 5 — VẬN DỤNG THỰC TIỄN `P5-VD` · 7 ngày · Pha **A**
+
+### 5.1. Sứ mệnh Tết — `PSM-K01-N4-05`
+
+> 🎯 **"NĂM LỜI CHÚC"** — con chúc đủ 5 người, mỗi người một câu hợp với họ.
+
+| Ngày | Việc con làm | Ô con tô |
+|:--:|---|:--:|
+| **1** | Chúc **ông hoặc bà** *(gặp trực tiếp hoặc gọi điện)* | ☐ |
+| **2** | Chúc **bố và mẹ** | ☐ |
+| **3** | Chúc **một bác, cô hoặc chú** | ☐ |
+| **4** | Chúc **anh, chị hoặc em** | ☐ |
+| **5** | Chúc **một người ngoài gia đình** — bác bảo vệ, cô lao công, cô giáo | ☐ |
+| **6** | Chia **ba hộp** cùng bố mẹ và dán ảnh lên hộp GIỮ | ☐ |
+| **7** | Làm xong **thiệp chúc ông bà** và gửi đi | ☐ |
+
+### 5.2. Việc của bố mẹ trong dịp này
+
+| Khi nào | Bố mẹ làm gì | Không làm gì |
+|---|---|---|
+| Trước Tết | Cùng con làm **ba cái hộp giấy**, để con tự dán nhãn | Không quyết hộ con hộp CHO tặng ai |
+| Khi con được lì xì | Đứng cạnh, để con **tự làm đủ 4 bước** | ⛔ **Không nhắc *"con chào bác đi"* ngay trước mặt bác** — làm con ngượng và mất tự chủ |
+| Sau khi khách về | Ghi nhận cụ thể: *"Mẹ thấy con đưa hai tay và chúc bác sống lâu."* | ⛔ **Không hỏi *"bác cho con bao nhiêu?"*** |
+| Khi con muốn giữ tiền | **Cùng thống nhất chỗ cất**, cho con **nhìn thấy** được | Không lấy hết rồi nói *"để mẹ giữ"* mà không giải thích |
+| Khi anh chị em so bì | Chuyển ngay sang chủ đề lời chúc: *"Ai được chúc câu hay nhất?"* | Không so sánh số tiền giữa các con |
+| Cuối tuần | Ký xác nhận vào phiếu | Không ký hộ khi con chưa làm |
+
+> 🔴 **Điều quan trọng nhất gửi bố mẹ — in đậm trong bản gửi phụ huynh:**
+> *Câu hỏi **"Bác cho con bao nhiêu?"** là câu hỏi phá hỏng toàn bộ bài học này.*
+> *Nó dạy con rằng **giá trị của một cuộc gặp nằm ở con số**. Nó cũng dạy con rằng người cho ít thì đáng giá ít hơn — điều không ai muốn con mình tin.*
+> *Thay bằng: **"Con đã chúc bác câu gì?"***
+> *Và nếu con nói ra con số trước — bố mẹ không mắng, chỉ nhẹ nhàng đổi hướng: **"Ừ. Thế con chúc bác câu gì?"***
+
+### 5.3. Ba mức khó tăng dần
+
+| Mức | Việc | Dấu hiệu đạt |
+|:--:|---|---|
+| **Dễ** | Chúc người trong nhà, có bố mẹ nhắc | Đủ 3/4 bước |
+| **Vừa** | Chúc người trong nhà, **tự nhớ**, câu chúc hợp người | Đủ 4/4 bước |
+| **Khó** | **Chúc trước khi được lì xì**, và chúc cả người ngoài gia đình | Đủ 4/4 và câu chúc riêng cho từng người |
+
+### 5.4. Nếu con chưa làm được
+
+| Tình huống | Cách xử — dành cho bố mẹ và HLV |
+|---|---|
+| Con ngượng, không dám chúc | Bố mẹ **chúc trước** để con nghe. Con nói theo cũng được. Tuần sau tự nói |
+| Con quên bước ④, xé phong bao ngay | Không mắng trước mặt khách. Sau đó nói riêng: *"Lần sau con cất vào túi nhé. Phong bao dán kín là để bác không phải ngượng."* |
+| Con hỏi bạn được bao nhiêu | Nhắc riêng, không nhắc trước lớp: *"Mình không hỏi câu đó. Mình hỏi 'cậu được chúc gì'."* |
+| **Con nhà không đón Tết** hoặc Tết không có ai lì xì | Chuyển toàn bộ nhiệm vụ sang **chúc và làm thiệp** — vẫn đủ điều kiện hoàn thành cụm. ⛔ **Tuyệt đối không hỏi vì sao** |
+| Con muốn tiêu hết vào một món | Không cấm. Hỏi: *"Nếu tiêu hết hôm nay thì tháng sau con còn gì trong hộp GIỮ?"* — để con tự quyết |
+| Con kể có người lạ cho tiền và rủ đi | 🔴 **Dừng mọi việc khác. Nghe con kể, không ngắt lời, không hỏi dồn.** Ghi lại nguyên văn lời con nói và **báo theo quy trình bảo vệ trẻ em**. Nhắc **111** |
+
+---
+
+## 📊 PHẦN 6 — ĐÁNH GIÁ BÀI HỌC `P6-DG` · 13 phút
+
+### 6.1. Mười câu hỏi tình huống *(phụ huynh đọc hộ đề · con bấm chọn hình)*
+
+| # | Tình huống | Lựa chọn | Đáp án |
+|:--:|---|---|:--:|
+| 1 | Bác cho con phong bao. Con nhận thế nào? | A. Một tay · B. **Hai tay, hơi cúi đầu** · C. Để bác đặt lên bàn | **B** |
+| 2 | Nhận xong con nói gì? | A. Không nói gì · B. *"Cảm ơn"* · C. **"Con cảm ơn bác ạ. Con chúc bác năm mới mạnh khoẻ ạ."** | **C** |
+| 3 | Con có được mở phong bao trước mặt bác không? | A. Được · B. **Không** | **B** |
+| 4 | Vì sao phong bao dán kín? | A. Cho đẹp · B. **Để không ai phải ngượng** · C. Cho khỏi rơi tiền | **B** |
+| 5 | Chúc ông bà thì chúc gì? | A. Học giỏi · B. Chóng lớn · C. **Sống lâu trăm tuổi** | **C** |
+| 6 | Bạn hỏi *"cậu được bao nhiêu?"* | A. Nói số ra · B. Khoe nhiều hơn · C. **"Tớ vui vì được mọi người chúc. Cậu được chúc gì?"** | **C** |
+| 7 | Bạn con Tết không được về quê với bố mẹ. Con làm gì? | A. Hỏi vì sao · B. **Nói "Tớ chúc cậu năm mới vui"** · C. Kể Tết nhà mình thật vui | **B** |
+| 8 | Thứ quý nhất trong phong bao là gì? | A. Tờ tiền · B. **Lời chúc** · C. Cái phong bao | **B** |
+| 9 | Ba cái hộp tên là gì? | A. To – vừa – nhỏ · B. **Giữ – Dùng – Cho** · C. Đỏ – vàng – xanh | **B** |
+| 10 | Người lạ cho con tiền, rủ ra ngoài lấy quà, dặn đừng nói với bố mẹ. Con làm gì? | A. Đi lấy quà · B. Nhận tiền rồi không đi · C. **Nói KHÔNG, đi khỏi ngay, kể với bố mẹ** | **C** |
+
+> 🔴 **Câu 10 là câu an toàn.** Chọn sai thì hệ thống **không cho qua**, hiện lại đoạn 40 giây và **báo tài khoản phụ huynh**.
+> ⚠️ **Câu 7 là câu giữ ý.** Chọn A hoặc C thì hệ thống hiện lại một đoạn ngắn: *"Bạn con có cái Tết khác con. Con không hỏi vì sao — con chỉ chúc."*
+
+### 6.2. Tự đánh giá thang B1–B4
+
+| Bậc | Câu hỏi cho con | Con chọn |
+|:--:|---|:--:|
+| ◔ B1 | *Con biết bốn bước và ba cái hộp?* | ☐ |
+| ◑ B2 | *Con làm đủ bước khi có người nhắc?* | ☐ |
+| ◕ B3 | *Con tự làm đủ 4 bước và tự chúc hợp người?* | ☐ |
+| ● B4 | *Con chúc trước khi được lì xì, và con nhắc được em nhỏ?* | ☐ |
+
+### 6.3. Rubric sản phẩm *(HLV chấm)* — `R-K01-N4-05`
+
+| Tiêu chí | ◔ B1 | ◑ B2 | ◕ B3 | ● B4 |
+|---|---|---|---|---|
+| **Bốn bước** | Nói được 4 bước | Làm 3/4 khi có nhắc | Đủ 4/4 tự làm | Đủ 4/4 và nhắc được em nhỏ |
+| **Câu chúc** | Nhớ 1 câu | Nói được 1 câu đúng lúc | ≥3 câu hợp người | ≥5 câu, có câu **của riêng con** |
+| **Ba hộp** | Kể tên 3 hộp | Chia được khi có hướng dẫn | Tự chia và nói được lý do | Tự chia, và **thực hiện thật** hộp CHO |
+| **Không so sánh** | Còn hỏi/khoe số tiền | Không hỏi, nhưng còn tò mò | Không hỏi, đổi được chủ đề | Đổi chủ đề **và** giúp bạn khác đổi |
+| **An toàn** | Chưa nói lại được quy tắc | Nói được *"không đi theo"* | Nói đủ *"nói không – đi khỏi – kể lại"* | Xử đúng thẻ 8 và giải thích được vì sao |
+
+> 🔒 **Hai tiêu chí phủ quyết:**
+> ① **An toàn** — chưa đạt B2 thì **chưa được ghi hoàn thành cụm**.
+> ② **Không so sánh** — nếu trẻ còn hỏi bạn về số tiền, HLV **làm việc riêng với trẻ và với gia đình** trước khi ghi hoàn thành.
+> 🔴 **Và một quy tắc chấm tuyệt đối: KHÔNG có tiêu chí nào liên quan tới số tiền trẻ nhận được.**
+
+### 6.4. Đánh giá đồng đẳng
+
+Bạn Squad bấm **3 mặt cười** cho câu: *"Bạn có chúc câu hợp với bác không?"* và nói **1 điều thích**. **Cấm chê. ⛔ Cấm nhắc tới tiền.**
+
+### 6.5. Bảng hiển thị cho con và bố mẹ
+
+```
+ ┌────────────────────────────────────────────────────────────────┐
+ │  CỤM 6 · ⭐ TẾT VIỆT CỦA CON      K01-N4-05     🆘 · 111        │
+ ├────────────────────────────────────────────────────────────────┤
+ │  CON ĐÃ LÀM ĐƯỢC                                               │
+ │   🙌 Đủ bốn bước            ██████████   4 / 4                 │
+ │   💬 Câu chúc hợp người     ████████░░   4 câu                 │
+ │   📦 Chia ba hộp            ██████████   3 / 3                 │
+ │   🎴 Thẻ tình huống         ████████░░   7 / 8                 │
+ │   🔒 Thẻ an toàn số 8       ██████████   ĐÚNG ✓                │
+ │                                                                │
+ │  BẬC CỦA CON:  ◔ ─ ◑ ─ ●◕ ─ ○      (B3 · Làm giỏi)            │
+ │                                                                │
+ │  MỘT ĐIỀU DUY NHẤT CẦN CHỈNH                                   │
+ │   Con nhớ đủ bốn bước, nhưng câu chúc cho ANH CHỊ và cho       │
+ │   ÔNG BÀ con đang nói giống nhau.                              │
+ │   → Lượt sau con thử: ông bà chúc SỐNG LÂU,                    │
+ │      anh chị chúc HỌC GIỎI.                                    │
+ │                                                                │
+ │  ĐIỀU BỐ MẸ NÊN BIẾT                                           │
+ │   Bảng này KHÔNG có bất kỳ thông tin nào về số tiền.           │
+ │   Câu nên hỏi con: "Con đã chúc bác câu gì?"                   │
+ │   Câu KHÔNG nên hỏi: "Bác cho con bao nhiêu?"                  │
+ │                                                                │
+ │  ⭐ CÂU CON ĐÃ HỌC ĐƯỢC                                        │
+ │   "Thứ quý nhất trong phong bao không phải tờ tiền —           │
+ │    mà là lời chúc."                                            │
+ └────────────────────────────────────────────────────────────────┘
+```
+
+> ⛔ **Không có bảng xếp hạng lớp.** ⛔ **Không có bất kỳ trường dữ liệu nào ghi số tiền.**
+
+---
+
+## 🎧 PHẦN 7 — AUDIO CHUYÊN SÂU `P7-AU` · 14 phút
+
+> 🔓 Mở từ tầng **HS-T2**. Với khối 1: **nghe cùng bố mẹ**. Tài khoản phụ huynh nhận kèm **bản chép lời đầy đủ**.
+
+### 7.1. Cấu trúc audio
+
+| Đoạn | Thời lượng | Nội dung |
+|:--:|:--:|---|
+| Mở | 0:00–0:45 | Nhạc Tết nhẹ *(đàn tranh)*. *"Hôm nay chúng mình nghe chuyện về một phong bao đỏ."* |
+| Truyện 1 | 0:45–5:20 | **"Phong bao của bà"** |
+| Nghỉ hỏi | 5:20–6:00 | Câu hỏi cho con, dừng 20 giây |
+| Truyện 2 | 6:00–10:30 | **"Cái Tết của bạn Bo"** |
+| Nghỉ hỏi | 10:30–11:10 | Câu hỏi cho bố mẹ và con cùng trả lời |
+| Chốt | 11:10–14:00 | Bốn bước + ba hộp + quy tắc an toàn + lời chúc năm mới |
+
+### 7.2. Bản chép lời — Truyện 1 *(trích, dùng nguyên văn khi thu âm)*
+
+> *"Bà của Nấm năm nay tám mươi tuổi.*
+>
+> *Sáng mùng Một, bà ngồi ở bộ tràng kỷ cũ. Trong lòng bà có một cái túi vải nhỏ. Trong túi vải có mấy cái phong bao đỏ.*
+>
+> *Nấm chạy tới. Nấm đưa hai tay. Nấm nói: 'Con chào bà ạ. Con chúc bà sống lâu trăm tuổi ạ.'*
+>
+> *Bà cười. Cái cười làm những nếp nhăn trên mặt bà xô lại với nhau.*
+>
+> *Bà đưa cho Nấm một phong bao. Bà nói: 'Bà mừng tuổi cháu. Bà mong năm nay cháu hay ăn chóng lớn, học giỏi, và biết thương người.'*
+>
+> *Nấm nhận bằng hai tay. Nấm cất vào túi áo. Nấm không mở ra.*
+>
+> *(dừng 3 giây)*
+>
+> *Buổi tối, Nấm đưa phong bao cho mẹ. Mẹ mở ra.*
+>
+> *Bên trong là một tờ tiền đã cũ, gấp làm tư rất phẳng phiu.*
+>
+> *Nấm hỏi: 'Sao tiền của bà cũ thế hả mẹ?'*
+>
+> *Mẹ ngồi im một lúc. Rồi mẹ nói:*
+>
+> *'Bà không đi làm nữa con ạ. Tiền này là bà để dành từ mấy tháng trước. Bà gấp phẳng ra để mừng tuổi các cháu.'*
+>
+> *Nấm không nói gì.*
+>
+> *Nấm cầm tờ tiền cũ ấy. Nấm nhìn rất lâu.*
+>
+> *(dừng 3 giây)*
+>
+> *Rồi Nấm nói: 'Mẹ ơi, con để tờ này vào hộp GIỮ nhé. Con không tiêu đâu.'*
+>
+> *Các con biết không — tờ tiền của bà không phải tờ tiền to nhất Nấm nhận được Tết năm ấy.*
+>
+> *Nhưng nó là tờ Nấm nhớ suốt đời."*
+
+**Câu hỏi nghỉ 1:** *"Nếu con được gặp bà của Nấm, con sẽ chúc bà câu gì?"* *(dừng 20 giây)*
+
+### 7.3. Bản chép lời — Truyện 2 *(trích)*
+
+> *"Bo có một cái Tết khác các bạn.*
+>
+> *Bố mẹ Bo làm việc xa. Tết năm ấy nhà máy không cho nghỉ. Bố mẹ Bo không về được.*
+>
+> *Bo ở với bà.*
+>
+> *Sáng mùng Một, Bo tới lớp học thêm. Các bạn kể chuyện Tết. Bạn thì kể đi chơi công viên. Bạn thì kể được về quê. Bạn thì kể cả nhà đi chụp ảnh.*
+>
+> *Bo ngồi im.*
+>
+> *Có một bạn quay sang hỏi Bo: 'Thế Tết nhà cậu đi đâu?'*
+>
+> *Bo cúi xuống. Bo nói nhỏ: 'Nhà tớ không đi đâu cả.'*
+>
+> *(dừng 3 giây)*
+>
+> *Nấm ngồi cạnh Bo. Nấm không hỏi vì sao.*
+>
+> *Nấm chỉ nói: 'Tớ chúc cậu năm mới vui.'*
+>
+> *Rồi Nấm hỏi: 'Cậu có muốn xem cái thiệp tớ làm cho bà tớ không?'*
+>
+> *Bo ngẩng lên. Bo gật đầu.*
+>
+> *Hai bạn cùng ngồi vẽ thiệp. Bo vẽ một cái thiệp gửi bố mẹ ở xa.*
+>
+> *(dừng 3 giây)*
+>
+> *Các con biết không — Nấm đã làm được một việc rất khó.*
+>
+> *Nấm không hỏi 'sao nhà cậu không đi đâu'. Nấm không kể Tết nhà mình vui thế nào.*
+>
+> *Nấm chỉ chúc một câu, rồi rủ bạn làm cùng một việc.*
+>
+> *Có những lúc, điều tử tế nhất không phải là hỏi han. Mà là **không hỏi**, và ngồi xuống cạnh bạn."*
+
+**Câu hỏi nghỉ 2 *(cho cả bố mẹ và con)*:** *"Trong lớp con, có bạn nào có cái Tết khác con không? Con nói gì với bạn ấy được?"*
+
+### 7.4. Đoạn chốt — nguyên văn
+
+> *"Trước khi ngủ, con nhớ bốn bước nhé: **hai tay — cảm ơn — câu chúc — cất đi**.*
+>
+> *Và nhớ ba cái hộp: **Giữ — Dùng — Cho**. Chia ngay khi nhận, đừng đợi.*
+>
+> *Có ba điều nữa con nhớ giúp cô:*
+>
+> *Một là — **con không hỏi bạn được bao nhiêu**, và con cũng không khoe của mình. Bạn con có cái Tết khác con, và cái Tết nào cũng đúng cả.*
+>
+> *Hai là — nếu có người con **không quen** cho con tiền, rủ con đi ra ngoài lấy quà, hoặc dặn con 'đừng nói với bố mẹ nhé' — con **nói KHÔNG**, con **đi khỏi đó**, và con **kể với bố mẹ ngay**. Không có món quà nào đáng để con đi một mình với người lạ. Số **một – một – một** luôn có người nghe.*
+>
+> *Và ba là — điều quan trọng nhất của cả bài học hôm nay:*
+>
+> ***Thứ quý nhất trong phong bao không phải tờ tiền — mà là lời chúc.***
+>
+> *Chúc con năm mới hay ăn chóng lớn, học giỏi, và biết thương người — đúng như lời bà của Nấm đã chúc.*
+>
+> *Ngủ ngon nhé."*
+
+### 7.5. Lưu ý sản xuất
+
+| Hạng mục | Chuẩn |
+|---|---|
+| Giọng đọc | Nữ, ấm, tốc độ **≤105 từ/phút** |
+| Nhạc nền | **Đàn tranh, sáo trúc** — nhạc Tết truyền thống, **không dùng nhạc Tết thương mại có lời** |
+| Khoảng lặng | Sau mỗi câu hỏi để **20–30 giây im lặng**, không nhạc |
+| Đoạn nhạy cảm | Truyện 2 nói về trẻ xa bố mẹ ngày Tết — **báo trước cho phụ huynh** trong mô tả bài. Đoạn Bo cúi xuống **tắt hẳn nhạc** |
+| Bản có hình | Chỉ dùng **hình vẽ**, không dùng ảnh trẻ em thật, **không quay cận cảnh tiền** |
+| Định dạng | MP3 128kbps · kèm bản chép lời `.txt` cho tài khoản phụ huynh |
+| Cấm | Không nhắc bất kỳ con số tiền nào · không so sánh vùng miền · không đề cập tôn giáo |
+
+---
+
+## PHẦN 8. TỔNG KẾT BỘ THÍ ĐIỂM 6 CỤM
+
+### 8.1. Kiểm đếm học liệu đã biên soạn
+
+| Hạng mục | Số lượng | Trạng thái |
+|---|:--:|:--:|
+| Cụm số hoá đủ 7 phần | **6 / 6** | ✅ |
+| Video mở *(80–90 giây, có lời thoại thật)* | 6 | ✅ |
+| Video kiến thức | 24 | ✅ |
+| Infographic 1 trang | 6 | ✅ |
+| Trải nghiệm tương tác *(mô phỏng · phim dừng-chọn · thí nghiệm)* | 6 | ✅ |
+| Phiếu KNS 5 lớp chiều sâu *(bản in 3 trang A4)* | 6 | ✅ |
+| Thẻ ghi nhớ | 30 | ✅ |
+| Phiếu sứ mệnh | 6 | ✅ |
+| Câu hỏi trắc nghiệm tình huống | **60** | ✅ |
+| Rubric sản phẩm | 6 | ✅ |
+| Audio chuyên sâu + bản chép lời | 6 *(≈81 phút)* | ✅ |
+
+### 8.2. Các câu an toàn có cơ chế chặn — tổng hợp
+
+| Cụm | Câu / thẻ | Cơ chế |
+|---|---|---|
+| `K01-N2-01` | Câu 7 và 8 *(người lạ ở cổng trường)* | Không cho qua · hiện lại video · báo phụ huynh |
+| `K01-N2-04` | Câu 6, 7, 8 *(ranh giới đồ riêng)* | Hiện lại video · gợi ý câu nói cho phụ huynh · **không tính điểm sai** |
+| `K01-N3-01` | Câu 9 *(buồn kéo dài)* | Hiện lại video · gửi phụ huynh gợi ý bắt chuyện |
+| `K01-N4-05` | Câu 10 và thẻ 8 *(người lạ cho tiền, rủ đi)* | Không cho qua · hiện lại video · báo phụ huynh |
+
+### 8.3. Tiêu chí phủ quyết trong rubric — tổng hợp
+
+| Cụm | Tiêu chí phủ quyết | Lý do |
+|---|---|---|
+| `K01-N2-01` | **An toàn** | Chào người lạ mà không có quy tắc đi kèm là dạy nửa vời |
+| `K01-N2-04` | **Nói không** | Trẻ chỉ biết cho mà không biết giữ là trẻ dễ bị lấn ranh giới |
+| `K01-N4-05` | **An toàn** + **Không so sánh** | Thẻ 8 nối thẳng chuyên đề xâm hại; so sánh tiền phá hỏng cả bài |
+
+### 8.4. Bốn nguyên tắc chi phối toàn bộ bộ thí điểm
+
+| # | Nguyên tắc | Thể hiện ở đâu |
+|:--:|---|---|
+| **1** | **Không ảnh, không video trẻ em thật** trong mọi học liệu | Toàn bộ nhân vật là hình vẽ, rối tay, búp bê |
+| **2** | **Không bảng xếp hạng, không hiển thị điểm cạnh tên** | Mọi bảng hiển thị chỉ có **mức tăng của chính con** |
+| **3** | **Dữ liệu cảm xúc, cơ thể, tài chính của trẻ là D3** | Không hiển thị công khai, không gửi nhóm phụ huynh chung |
+| **4** | **Mỗi cụm có ít nhất một quy tắc bảo vệ trẻ em** được nói **nguyên văn** trong audio | Đoạn chốt của cả 6 audio đều nhắc **111** |
+
+### 8.5. Việc tiếp theo
+
+| Việc | Ghi chú |
+|---|---|
+| Số hoá **18 cụm còn lại của khối 1** | Theo đúng khuôn 7 phần này |
+| Thu âm 6 audio | Bản chép lời đã có sẵn nguyên văn, đủ để đưa vào phòng thu |
+| Dựng 6 infographic | Mô tả bản in đã ghi rõ bố cục và nội dung góc dưới |
+| Lập trình 4 cơ chế chặn ở mục 8.2 | **Ưu tiên cao nhất** — đây là phần bảo vệ trẻ, không phải phần nội dung |
+| Kiểm thử với **1 lớp thật** trước khi nhân rộng | Đo: tỷ lệ hoàn thành P3 · tỷ lệ có chữ ký người chứng ở P5 · số lần bấm 🆘 |
+
+---
+
+> **Hết bộ thí điểm 6 cụm khối 1.**
+> Toàn bộ tệp: **6 cụm × 7 phần**, kèm phiếu KNS 5 lớp bản in, rubric, và bản chép lời audio nguyên văn — đủ để chuyển thẳng sang khâu sản xuất mà không cần biên soạn thêm.
