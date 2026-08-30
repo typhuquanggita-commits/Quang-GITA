@@ -28,6 +28,7 @@ export const NAV: NavItem[] = [
   { path: href('de-cuong'), label: 'Đề cương ôn tập', icon: '▦', group: 'Nội dung' },
   { path: href('cau-truc-de-thi'), label: 'Cấu trúc đề thi', icon: '◇', group: 'Nội dung' },
   { path: href('de-thi'), label: 'Đề thi thử có lời giải', icon: '⬢', group: 'Nội dung' },
+  { path: href('bo-de'), label: 'Bộ đề luyện thi', icon: '⧉', group: 'Nội dung' },
   { path: href('cong-thuc'), label: 'Sổ tay công thức', icon: '∑', group: 'Nội dung' },
   { path: href('bi-kip'), label: 'Bí kíp & Thói quen', icon: '★', group: 'Nội dung' },
   { path: href('kho-tai-lieu'), label: 'Kho tài liệu', icon: '❐', group: 'Nội dung' },

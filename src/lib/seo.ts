@@ -7,6 +7,7 @@ import { BRAND } from '@/data/brand';
 import { faqFor } from '@/data/faq';
 import { keywordsFor } from '@/data/keywords';
 import { SYLLABI, syllabusById, TERM_LABEL } from '@/data/syllabus';
+import { bankStats } from '@/data/exam-bank';
 import {
   href,
   breadcrumb,
@@ -371,6 +372,19 @@ export function seoFor(page: PageId, params: Record<string, string> = {}): SeoMe
         teaches: sy.keyTypes.map((t) => t.name),
         timeRequired: `PT${sy.minutes}M`,
       });
+      break;
+    }
+
+    case 'bo-de': {
+      const bs = bankStats();
+      title = 'Bộ đề luyện thi Toán 6 đến 12 — 100 đề mỗi khối';
+      description = clamp(
+        `${bs.total} đề luyện Toán, ${bs.perGrade} đề mỗi khối từ lớp ${bs.grades[0]} đến lớp ${bs.grades[bs.grades.length - 1]}, chia theo năm đợt ôn. Làm trực tiếp trên trang, chấm điểm ngay và xem lời giải từng bước sau khi nộp.`,
+      );
+      h1 = 'Bộ đề luyện thi Toán theo khối';
+      intro =
+        'Mỗi đề dựng đúng cấu trúc kiểm tra định kỳ: khối 10–12 theo ba phần của đề tốt nghiệp, khối 6–9 theo trắc nghiệm kết hợp tự luận. Mã đề cố định nên bạn và giáo viên mở cùng một mã sẽ thấy cùng một đề.';
+      focus = 'bộ đề luyện thi toán';
       break;
     }
 

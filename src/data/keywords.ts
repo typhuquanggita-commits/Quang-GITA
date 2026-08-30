@@ -116,6 +116,10 @@ export const KEYWORDS: KeywordTarget[] = [
   { keyword: 'cách đạt 9 điểm toán kiểm tra', intent: 'huong-dan', page: 'lo-trinh', behind: 'Muốn biết cần làm gì cụ thể để lên 9 điểm.', fit: 5 },
   { keyword: 'ma trận đề kiểm tra toán 4 mức độ', intent: 'thong-tin', page: 'cau-truc-de-thi', behind: 'Muốn hiểu tỉ trọng nhận biết – thông hiểu – vận dụng – vận dụng cao.', fit: 4 },
 
+  { keyword: 'bộ đề luyện thi toán', intent: 'tai-lieu', page: 'bo-de', behind: 'Cần nhiều đề để luyện đều, có chấm và lời giải.', fit: 5 },
+  { keyword: 'đề kiểm tra toán có đáp án', intent: 'tai-lieu', page: 'bo-de', behind: 'Muốn tự luyện rồi tự chấm ngay.', fit: 5 },
+  { keyword: 'luyện đề toán online', intent: 'tai-lieu', page: 'bo-de', behind: 'Muốn làm trực tiếp trên trang thay vì in ra.', fit: 4 },
+
   /* --- Thương hiệu --- */
   { keyword: 'math365', intent: 'thuong-hieu', page: 'home', behind: 'Tìm đúng nền tảng đã nghe tên.', fit: 5 },
   { keyword: 'gita365', intent: 'thuong-hieu', page: 'home', behind: 'Tìm tổ chức đứng sau sản phẩm.', fit: 5 },

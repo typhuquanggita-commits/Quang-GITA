@@ -20,6 +20,7 @@ import { seoFor, auditPage, SITE } from '../src/lib/seo';
 import { KEYWORDS, keywordStats } from '../src/data/keywords';
 import { FAQS } from '../src/data/faq';
 import { SYLLABI, matrixTotal } from '../src/data/syllabus';
+import { EXAM_BANK, buildBankExam, gradeBankExam } from '../src/data/exam-bank';
 import { formulaStats } from '../src/data/formulas';
 import { countFolders, countArtifacts } from '../src/data/library-tree';
 import { LIBRARY_TREE } from '../src/data/library-tree';
@@ -163,6 +164,50 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
   bad += syBad;
   console.log('đề cương:', SYLLABI.length, '| dạng bài:', SYLLABI.reduce((a, x) => a + x.keyTypes.length, 0),
     '| nhánh sơ đồ tư duy:', SYLLABI.reduce((a, x) => a + x.mindmap.length, 0), '| lỗi:', syBad);
+}
+
+/* ---------- Bộ đề luyện thi sinh tất định ---------- */
+{
+  let bankBad = 0;
+  let bankItems = 0;
+  let bankClaims = 0;
+  const ids = new Set<string>();
+  for (const meta of EXAM_BANK) {
+    if (ids.has(meta.id)) { console.error('BỘ ĐỀ trùng mã', meta.id); bankBad++; }
+    ids.add(meta.id);
+    const e = buildBankExam(meta);
+    const pts = e.parts.reduce((a, p3) => a + p3.items.reduce((b2, i2) => b2 + i2.points, 0), 0);
+    if (Math.abs(pts - meta.totalPoints) > 1e-9) { console.error('BỘ ĐỀ lệch thang điểm', meta.id, pts); bankBad++; }
+    const answers: Record<string, string> = {};
+    for (const part of e.parts) {
+      const declared = part.items.reduce((a, i2) => a + i2.points, 0);
+      if (Math.abs(declared - part.points) > 1e-9) { console.error('BỘ ĐỀ lệch điểm phần', meta.id, part.label); bankBad++; }
+      for (const it of part.items) {
+        bankItems++;
+        if (!it.statement.trim() || !it.solution.length || !it.answer.trim()) { console.error('BỘ ĐỀ thiếu nội dung câu', it.id); bankBad++; }
+        if (/undefined|NaN|Infinity/.test(it.statement + it.answer + it.solution.join(''))) { console.error('BỘ ĐỀ có ký hiệu hỏng', it.id); bankBad++; }
+        if (it.format === 'trac-nghiem') {
+          if (!it.choices || it.choices.length !== 4 || new Set(it.choices).size !== 4) { console.error('BỘ ĐỀ trắc nghiệm không đủ 4 phương án khác nhau', it.id); bankBad++; }
+          answers[it.id] = String(it.correctIndex);
+        } else if (it.format === 'dung-sai') {
+          if (!it.claims || it.claims.length !== 4) { console.error('BỘ ĐỀ đúng/sai không đủ 4 ý', it.id); bankBad++; }
+          else {
+            bankClaims += 4;
+            if (it.claims.filter((c) => c.value).length !== 1) { console.error('BỘ ĐỀ đúng/sai không có đúng một ý đúng', it.id); bankBad++; }
+            if (it.claims.some((c) => !c.why.trim())) { console.error('BỘ ĐỀ đúng/sai thiếu giải thích', it.id); bankBad++; }
+          }
+          answers[it.id] = (it.claims ?? []).map((c) => (c.value ? 'd' : 's')).join('');
+        } else {
+          answers[it.id] = it.answer;
+        }
+      }
+    }
+    /* Làm đúng toàn bộ thì phải đạt điểm tối đa — kiểm tra bộ chấm. */
+    const g = gradeBankExam(e, answers);
+    if (Math.abs(g.earned - meta.totalPoints) > 1e-9) { console.error('BỘ ĐỀ chấm sai khi làm đúng hết', meta.id, g.earned); bankBad++; }
+  }
+  bad += bankBad;
+  console.log('bộ đề luyện:', EXAM_BANK.length, '| câu:', bankItems, '| mệnh đề đúng/sai:', bankClaims, '| lỗi:', bankBad);
 }
 
 /* ---------- Sổ tay công thức ---------- */

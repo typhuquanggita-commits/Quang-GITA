@@ -28,6 +28,8 @@ const TopicDetail = lazy(() => import('@/pages/Topics').then((m) => ({ default: 
 const Exams = lazy(() => import('@/pages/Exams'));
 const PaperList = lazy(() => import('@/pages/Papers').then((m) => ({ default: m.PaperList })));
 const PaperView = lazy(() => import('@/pages/Papers').then((m) => ({ default: m.PaperView })));
+const ExamBankList = lazy(() => import('@/pages/ExamBank').then((m) => ({ default: m.ExamBankList })));
+const ExamBankRun = lazy(() => import('@/pages/ExamBank').then((m) => ({ default: m.ExamBankRun })));
 const SyllabusList = lazy(() => import('@/pages/Syllabus').then((m) => ({ default: m.SyllabusList })));
 const SyllabusView = lazy(() => import('@/pages/Syllabus').then((m) => ({ default: m.SyllabusView })));
 const Playbook = lazy(() => import('@/pages/Playbook'));
@@ -104,6 +106,12 @@ export default function App() {
       break;
     case 'de-thi-detail':
       page = <PaperView id={paperIdFromSlug(params.slug ?? '')} />;
+      break;
+    case 'bo-de':
+      page = <ExamBankList />;
+      break;
+    case 'bo-de-lam':
+      page = <ExamBankRun id={params.id ?? ''} />;
       break;
     case 'de-cuong':
       page = <SyllabusList />;

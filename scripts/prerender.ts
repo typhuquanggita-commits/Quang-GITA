@@ -22,6 +22,7 @@ import { faqFor } from '../src/data/faq';
 import { TOPICS, topicById } from '../src/data/topics';
 import { EXAM_PAPERS, paperById, paperItems } from '../src/data/papers';
 import { SYLLABI, syllabusById, TERM_LABEL } from '../src/data/syllabus';
+import { bankStats, BANK_GRADES, BANK_SET_LABEL, bankByGrade } from '../src/data/exam-bank';
 import { BLUEPRINTS } from '../src/data/blueprints';
 import { SCHOOLS, strandById } from '../src/data/schools';
 import { FORMULA_GROUPS } from '../src/data/formulas';
@@ -214,6 +215,36 @@ function bodyFor(pageId: PageId, params: Record<string, string>): string {
         faqBlock('cau-truc-de-thi'),
         relatedBlock([{ to: href('de-thi'), label: 'Làm thử đề chuẩn cấu trúc' }]),
       ].join('');
+
+    case 'bo-de': {
+      const bs = bankStats();
+      return [
+        p(
+          `${bs.total} đề luyện Toán, ${bs.perGrade} đề mỗi khối từ lớp 6 đến lớp 12, chia theo năm đợt ôn của năm học. Làm trực tiếp trên trang, chấm điểm ngay khi nộp và xem lời giải từng bước cho mọi câu.`,
+        ),
+        h2('Cấu trúc đề theo cấp học'),
+        ul([
+          'Khối 10 – 12: ba phần đúng cấu trúc đề tốt nghiệp — 12 câu nhiều lựa chọn (3,0 điểm), 4 câu đúng/sai bốn mệnh đề (4,0 điểm), 6 câu trả lời ngắn (3,0 điểm).',
+          'Khối 6 – 9: 12 câu trắc nghiệm (3,0 điểm) và 7 bài tự luận (7,0 điểm).',
+          'Mỗi đề có mã cố định, nội dung không đổi giữa các lần mở và giữa các máy — giáo viên giao mã đề là cả lớp làm đúng cùng một đề.',
+        ]),
+        h2('Số đề theo khối'),
+        `<ul>${BANK_GRADES.map((g) => {
+          const list = bankByGrade(g);
+          const sets = [...new Set(list.map((x) => BANK_SET_LABEL[x.set].short))];
+          return `<li><strong>Toán ${g}</strong> — ${list.length} đề, chia theo ${sets.length} đợt ôn: ${esc(sets.join(', '))}. Mã đề từ ${esc(list[0].id)} đến ${esc(list[list.length - 1].id)}.</li>`;
+        }).join('')}</ul>`,
+        h2('Đây là đề luyện tập, không phải đề thi thật'),
+        p(
+          'Đề trong kho này được dựng tự động từ ngân hàng bộ sinh đề đã kiểm chứng, đúng cấu trúc và đúng thang điểm, có lời giải từng bước cho mọi câu. Đề tự động không có barem chi tiết và bảng phân tích cho từng câu như các đề mẫu biên soạn tay ở mục Đề thi thử.',
+        ),
+        faqBlock('bo-de'),
+        relatedBlock([
+          { to: href('de-thi'), label: 'Đề thi thử có lời giải và barem' },
+          { to: href('de-cuong'), label: 'Đề cương ôn tập theo kỳ' },
+        ]),
+      ].join('');
+    }
 
     case 'de-cuong': {
       const grades = [...new Set(SYLLABI.map((x) => x.grade))].sort((a, b) => a - b);

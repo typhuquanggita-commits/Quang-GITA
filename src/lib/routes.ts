@@ -48,6 +48,8 @@ export type PageId =
   | 'phan-quyen'
   | 'de-cuong'
   | 'de-cuong-detail'
+  | 'bo-de'
+  | 'bo-de-lam'
   | 'huong-dan-on'
   | 'hom-nay'
   | 'tien-do'
@@ -88,6 +90,8 @@ export const PAGES: PageDef[] = [
 
   { id: 'de-cuong', path: '/de-cuong-on-tap', indexable: true, priority: 0.9, changefreq: 'monthly', label: 'Đề cương ôn tập', parent: 'home' },
   { id: 'de-cuong-detail', path: '/de-cuong-on-tap/:slug', indexable: true, priority: 0.85, changefreq: 'monthly', label: 'Đề cương', parent: 'de-cuong' },
+  { id: 'bo-de', path: '/bo-de-luyen-thi', indexable: true, priority: 0.9, changefreq: 'monthly', label: 'Bộ đề luyện thi', parent: 'home' },
+  { id: 'bo-de-lam', path: '/bo-de-luyen-thi/lam/:id', indexable: false, priority: 0, changefreq: 'weekly', label: 'Làm đề luyện', parent: 'bo-de' },
   { id: 'cong-thuc', path: '/cong-thuc-toan', indexable: true, priority: 0.9, changefreq: 'monthly', label: 'Công thức Toán', parent: 'home' },
   { id: 'bi-kip', path: '/bi-kip-hoc-toan', indexable: true, priority: 0.8, changefreq: 'monthly', label: 'Bí kíp học Toán', parent: 'home' },
   { id: 'lo-trinh', path: '/lo-trinh-hoc-toan', indexable: true, priority: 0.8, changefreq: 'monthly', label: 'Lộ trình học Toán', parent: 'home' },

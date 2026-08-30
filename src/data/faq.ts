@@ -210,6 +210,22 @@ export const FAQS: FaqItem[] = [
     q: 'Làm sao để đạt 9–10 điểm bài kiểm tra Toán trên lớp?',
     a: 'Theo ma trận bốn mức độ, nhóm câu nhận biết và thông hiểu chiếm khoảng 60–70% số điểm. Nghĩa là 9 điểm không đến từ việc làm được câu khó, mà đến từ việc không mất điểm nào ở nhóm câu dễ rồi lấy thêm phần vận dụng. Ba việc quyết định: ôn lại trong vòng 48 giờ sau mỗi buổi học, lập sổ tay lỗi và làm lại 3 bài cùng dạng cho mỗi lỗi, và luyện ít nhất một đề tính giờ đúng ma trận trước ngày kiểm tra. MATH365 không cam kết điểm số — đây là các điều kiện cần, không phải lời hứa.',
   },
+  /* ---------- Bộ đề luyện thi ---------- */
+  {
+    page: 'bo-de',
+    q: 'Bộ đề luyện thi gồm bao nhiêu đề và có gì khác kho đề thi thử?',
+    a: 'Bộ đề luyện gồm 700 đề, mỗi khối từ lớp 6 đến lớp 12 có 100 đề chia theo năm đợt ôn: giữa kỳ I, cuối kỳ I, giữa kỳ II, cuối kỳ II và tổng ôn cả năm. Khác biệt so với kho Đề thi thử: đề ở đây được dựng tự động từ ngân hàng bộ sinh đề đã kiểm chứng, có lời giải từng bước cho mọi câu nhưng KHÔNG có barem chi tiết và bảng phân tích cho từng câu như 10 đề mẫu biên soạn tay. Dùng bộ đề luyện để luyện đều và luyện tốc độ; dùng đề mẫu để học cách trình bày và cách ăn điểm theo barem.',
+  },
+  {
+    page: 'bo-de',
+    q: 'Làm đề trên MATH365 có được chấm điểm ngay không?',
+    a: 'Có. Bạn làm trực tiếp trên trang, nộp bài và hệ thống chấm ngay theo đúng thang điểm của định dạng đề: khối 10–12 chấm ba phần với barem luỹ tiến cho phần đúng/sai (0,1 – 0,25 – 0,5 – 1,0 điểm tuỳ số ý đúng), khối 6–9 chấm trắc nghiệm và tự luận. Sau khi nộp, mọi câu đều hiện lời giải từng bước và chỉ rõ bạn sai ở đâu. Kết quả được lưu trên chính máy bạn đang dùng.',
+  },
+  {
+    page: 'bo-de',
+    q: 'Hai người mở cùng một mã đề có thấy cùng một đề không?',
+    a: 'Có. Mỗi đề có một mã cố định và một hạt giống riêng, nên nội dung không đổi qua các lần mở và không đổi giữa các máy. Nhờ vậy giáo viên có thể giao "làm đề BD-9-042" và chắc chắn cả lớp làm đúng cùng một đề. Đây cũng là lý do bạn có thể quay lại làm lại một đề đã làm để so tiến bộ.',
+  },
 ];
 
 export const faqFor = (page: PageId) => FAQS.filter((f) => f.page === page);
