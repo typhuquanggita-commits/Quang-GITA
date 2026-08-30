@@ -8,6 +8,90 @@ import type { Grade, MindMap, Term } from '@/types';
 export interface SkillSet { title: string; detail: string[] }
 
 export const EXTRA_SKILLS: Record<string, SkillSet[]> = {
+  /* --- Bổ sung cho các chuyên đề chưa có bộ kỹ năng luyện bài --- */
+  'g6-t7': [
+    {
+      title: 'Kỹ năng "vẽ hình theo lời — đọc lời từ hình"',
+      detail: [
+        'Bước 1: đọc đề từng câu, **vẽ tới đâu ghi ký hiệu tới đó** (nét bằng nhau, góc vuông, số đo).',
+        'Bước 2: vẽ đúng **thứ tự các điểm** trên tia hoặc đường thẳng — thứ tự sai làm cộng thành trừ.',
+        'Bước 3: nhìn lại hình và đọc ngược ra thành lời để kiểm tra có khớp đề không.',
+        'Hình vẽ đúng đã là nửa lời giải; hình sai thì mọi lập luận sau đó đều vô nghĩa.',
+      ],
+    },
+    {
+      title: 'Kỹ năng chuyển quan hệ hình học thành đẳng thức',
+      detail: [
+        '"$M$ nằm giữa $A$ và $B$" $\Rightarrow AM+MB=AB$.',
+        '"$M$ là trung điểm của $AB$" $\Rightarrow MA=MB$ **và** $MA=\f{AB}{2}$.',
+        '"Hai tia $Ox$, $Oy$ đối nhau" $\Rightarrow \angle xOy=180\deg$.',
+        '"$Ot$ là phân giác của $\angle xOy$" $\Rightarrow \angle xOt=\angle tOy=\f{1}{2}\angle xOy$.',
+        'Học thuộc bảng chuyển đổi này thì mọi bài tính độ dài, tính góc đều thành phương trình đơn giản.',
+      ],
+    },
+  ],
+  'g7-t4': [
+    {
+      title: 'Kỹ năng "gọi tên cặp góc" trước khi tính',
+      detail: [
+        'Bước 1: xác định rõ **hai đường thẳng** nào và **cát tuyến** nào đang xét.',
+        'Bước 2: gọi tên cặp góc: so le trong · đồng vị · trong cùng phía.',
+        'Bước 3: áp quy tắc — so le trong và đồng vị thì **bằng nhau**, trong cùng phía thì **bù nhau**.',
+        'Gọi sai tên cặp góc là nguyên nhân của gần như mọi lỗi sai ở chuyên đề này.',
+      ],
+    },
+    {
+      title: 'Kỹ năng kẻ đường phụ',
+      detail: [
+        'Dấu hiệu cần kẻ: có hai đường song song và một điểm nằm "kẹp" giữa chúng.',
+        'Cách kẻ: qua điểm đó kẻ một tia **song song** với hai đường đã cho.',
+        'Kết quả: góc lớn bị tách thành hai góc con, mỗi góc so le trong với một góc đã biết.',
+        'Chỉ kẻ **một** đường phụ — kẻ nhiều làm hình rối và lập luận khó theo dõi.',
+      ],
+    },
+  ],
+  'g9-t4': [
+    {
+      title: 'Kỹ năng giữ đúng chiều bất đẳng thức',
+      detail: [
+        'Cộng, trừ cùng một số vào hai vế: **giữ nguyên** chiều.',
+        'Nhân, chia hai vế cho số **dương**: giữ nguyên chiều.',
+        'Nhân, chia hai vế cho số **âm**: **ĐỔI CHIỀU**.',
+        'Mẫu chứa ẩn thì chưa biết dấu — không nhân chéo, phải chuyển về một vế rồi xét dấu.',
+        'Thói quen tốt: mỗi lần nhân/chia, viết ngay bên cạnh dấu của số đó.',
+      ],
+    },
+    {
+      title: 'Kỹ năng ba bước của bài chứng minh bất đẳng thức',
+      detail: [
+        'Bước 1: chứng minh bất đẳng thức đúng với **mọi** giá trị của biến (thường bằng tổng bình phương hoặc Cô-si).',
+        'Bước 2: chỉ ra **giá trị cụ thể** của biến làm dấu bằng xảy ra.',
+        'Bước 3: kết luận giá trị lớn nhất hoặc nhỏ nhất.',
+        'Thiếu bước 2 thì chưa chứng minh được đó là cực trị — mất điểm dù bước 1 hoàn toàn đúng.',
+      ],
+    },
+  ],
+  'g9-t8': [
+    {
+      title: 'Kỹ năng liệt kê không gian mẫu không sót',
+      detail: [
+        'Phép thử một giai đoạn: liệt kê theo thứ tự tăng dần hoặc theo nhóm.',
+        'Phép thử hai giai đoạn: dùng **sơ đồ hình cây** hoặc **bảng hai chiều** — đây là cách duy nhất bảo đảm không sót.',
+        'Chọn **có hoàn lại**: tổng số giữ nguyên qua các giai đoạn. Chọn **không hoàn lại**: tổng số giảm dần.',
+        'Đếm xong luôn kiểm tra: tổng số kết quả có khớp với tích số khả năng từng giai đoạn không.',
+      ],
+    },
+    {
+      title: 'Kỹ năng dùng biến cố đối',
+      detail: [
+        'Dấu hiệu: đề có cụm "**ít nhất một**", "**có ít nhất**", "**không phải tất cả**".',
+        'Cách làm: tính $P(\ov{A})$ của biến cố đối rồi lấy $P(A)=1-P(\ov{A})$.',
+        'Lý do: biến cố đối của "ít nhất một" là "không có cái nào" — thường chỉ có đúng một trường hợp.',
+        'Đừng quên bước cuối lấy $1$ trừ đi — đây là lỗi hay gặp nhất khi dùng kỹ thuật này.',
+      ],
+    },
+  ],
+
   /* ------------------------------ KHỐI 6 ------------------------------ */
   'g6-t3': [
     {

@@ -54,10 +54,10 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 | Chương · Buổi học · Phiếu bài tập | **31** · **93** · **186** |
 | Chuyên đề (khối 6–9) | **31** |
 | Khối lý thuyết · Yêu cầu cần đạt | 74 · 94 |
-| Quy tắc “đọc vị bài” | **132** |
+| Quy tắc “đọc vị bài” | **272** (tối thiểu 6 mỗi chuyên đề) |
 | Sơ đồ tư duy | 31 theo chuyên đề + **8 theo học kỳ** |
-| Dạng bài · Ví dụ mẫu có phân tích tư duy | **117** · **119** |
-| Bước phương pháp · Bộ kỹ năng luyện bài | 359 · 44 |
+| Dạng bài · Ví dụ mẫu có phân tích tư duy | **149** · **151** |
+| Bước phương pháp · Bộ kỹ năng luyện bài | 359 · **52** (mọi chuyên đề đều có) |
 | Thẻ Cẩm nang công thức điểm 10 | **86** |
 | Chuyên đề HSG · Kỹ thuật lõi · Bài mẫu | **19** · **68** · **31** |
 | Mốc lộ trình học tập | 24 |
