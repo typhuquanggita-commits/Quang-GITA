@@ -1,0 +1,110 @@
+/* =====================================================================
+   MATHGITA — BỘ NHẬN DIỆN THƯƠNG HIỆU GITA (Design Tokens)
+   Áp dụng thống nhất cho toàn bộ file/màn hình/tài liệu in của hệ thống.
+   ===================================================================== */
+
+:root {
+  /* --- Màu thương hiệu lõi --------------------------------------- */
+  --gita-navy-900: #061f4a;   /* Xanh học thuật đậm - nền header, bìa tài liệu */
+  --gita-navy-800: #0b3d91;   /* GITA BLUE - màu chính, logo, nút chủ đạo */
+  --gita-navy-700: #1552b8;
+  --gita-navy-600: #2f6fdc;
+  --gita-navy-200: #c3d8f8;
+  --gita-navy-100: #e5eefc;
+  --gita-navy-050: #f2f7ff;
+
+  --gita-gold-700: #a8730a;
+  --gita-gold-600: #d99408;   /* GITA GOLD - màu nhấn, huy hiệu, điểm 10 */
+  --gita-gold-500: #f2b023;
+  --gita-gold-200: #fbe3ad;
+  --gita-gold-100: #fdf3da;
+
+  --gita-teal-600: #0d8f7d;   /* Màu phụ - đúng / tiến bộ */
+  --gita-teal-100: #d8f3ee;
+  --gita-red-600:  #cf2f2f;   /* Màu phụ - sai / cảnh báo */
+  --gita-red-100:  #fde5e5;
+  --gita-violet-600: #6c3fc4; /* Màu phụ - vận dụng cao / HSG */
+  --gita-violet-100: #ece3fb;
+
+  /* --- Thang xám ------------------------------------------------- */
+  --ink-900: #10151f;
+  --ink-800: #1e2938;
+  --ink-700: #33415a;
+  --ink-600: #4b5b78;
+  --ink-500: #6b7a96;
+  --ink-400: #94a2ba;
+  --ink-300: #c2ccdc;
+  --ink-200: #dfe5ef;
+  --ink-100: #eef2f8;
+  --ink-050: #f7f9fc;
+  --paper:   #ffffff;
+
+  /* --- Vai trò ngữ nghĩa ----------------------------------------- */
+  --bg-app: var(--ink-050);
+  --bg-surface: var(--paper);
+  --bg-raised: #ffffff;
+  --bg-sunken: var(--ink-100);
+  --border: var(--ink-200);
+  --border-strong: var(--ink-300);
+  --text: var(--ink-900);
+  --text-muted: var(--ink-600);
+  --text-faint: var(--ink-500);
+  --brand: var(--gita-navy-800);
+  --brand-ink: #ffffff;
+  --accent: var(--gita-gold-600);
+  --ok: var(--gita-teal-600);
+  --ok-bg: var(--gita-teal-100);
+  --bad: var(--gita-red-600);
+  --bad-bg: var(--gita-red-100);
+  --warn: var(--gita-gold-600);
+  --warn-bg: var(--gita-gold-100);
+
+  /* --- Màu 4 mức độ nhận thức (chuẩn ma trận đề BGD&ĐT) ---------- */
+  --lv-nb: #0d8f7d;  /* Nhận biết      */
+  --lv-th: #0b3d91;  /* Thông hiểu     */
+  --lv-vd: #d99408;  /* Vận dụng       */
+  --lv-vdc: #6c3fc4; /* Vận dụng cao   */
+
+  /* --- Typography ------------------------------------------------ */
+  --font-sans: 'Be Vietnam Pro', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Lora', 'Times New Roman', Georgia, serif;
+  --font-math: 'Cambria Math', 'Latin Modern Math', 'Times New Roman', serif;
+  --fs-xs: 12px; --fs-sm: 13px; --fs-base: 15px; --fs-md: 16px;
+  --fs-lg: 18px; --fs-xl: 21px; --fs-2xl: 26px; --fs-3xl: 32px; --fs-4xl: 40px;
+
+  /* --- Không gian, bo góc, đổ bóng -------------------------------- */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 20px;
+  --sp-6: 24px; --sp-8: 32px; --sp-10: 40px; --sp-12: 48px; --sp-16: 64px;
+  --r-sm: 6px; --r-md: 10px; --r-lg: 14px; --r-xl: 20px; --r-full: 999px;
+  --sh-1: 0 1px 2px rgba(6,31,74,.06), 0 1px 3px rgba(6,31,74,.05);
+  --sh-2: 0 2px 6px rgba(6,31,74,.07), 0 6px 18px rgba(6,31,74,.06);
+  --sh-3: 0 10px 30px rgba(6,31,74,.12), 0 2px 8px rgba(6,31,74,.08);
+  --sh-focus: 0 0 0 3px rgba(47,111,220,.35);
+
+  --maxw: 1240px;
+  --header-h: 62px;
+}
+
+/* --- Chế độ tối: giữ nguyên tinh thần thương hiệu --------------- */
+:root[data-theme='dark'], :root.dark {
+  --bg-app: #0a1020;
+  --bg-surface: #111a2e;
+  --bg-raised: #16223b;
+  --bg-sunken: #0c1424;
+  --border: #253453;
+  --border-strong: #33456b;
+  --text: #eaf0fb;
+  --text-muted: #a9b8d4;
+  --text-faint: #8496b5;
+  --brand: #4d86e8;
+  --gita-navy-100: #17264a;
+  --gita-navy-050: #101b33;
+  --gita-gold-100: #33290d;
+  --ok-bg: #0d2f2b;
+  --bad-bg: #34191c;
+  --gita-violet-100: #241a3d;
+  --gita-teal-100: #0d2f2b;
+  --sh-1: 0 1px 2px rgba(0,0,0,.4);
+  --sh-2: 0 4px 14px rgba(0,0,0,.45);
+  --sh-3: 0 12px 34px rgba(0,0,0,.55);
+}
