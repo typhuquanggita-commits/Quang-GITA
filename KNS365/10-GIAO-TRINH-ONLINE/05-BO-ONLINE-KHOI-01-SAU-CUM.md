@@ -1311,3 +1311,229 @@ Hai bạn Squad đố nhau **3 câu** *(mặt nào chải trước · rửa tay 
 - [x] Không hình ảnh trẻ em thật
 
 ---
+
+# CỤM 3 · `K01-N2-01` — **LỜI CHÀO MỞ CỬA**
+### Khối 1 · Nhóm 2 Giao tiếp xã hội · Chữ GITA trội: **I** · Bài gốc: #11 Chào hỏi lễ phép · #12 Làm quen bạn mới
+
+## THÔNG TIN CHUNG
+
+| Mục | Nội dung |
+|---|---|
+| Mã cụm | `K01-N2-01` |
+| Mạch năng lực bên trong | M4 Giao tiếp & Hợp tác |
+| Cấp Độ · Pin | Cấp 1 ⚪ Pin Trắng → hướng tới Cấp 2 🟢 Pin Xanh Lá |
+| Tổng thời lượng online | **83 phút** + 7 ngày vận dụng |
+| Buổi trực tiếp đi kèm | 2 buổi × 180 phút |
+| Học liệu cần sản xuất | 1 video mở · 4 video kiến thức · 1 infographic · 1 phim hoạt hình dừng-chọn · 1 phiếu 5 lớp · 5 thẻ · 1 audio 13' · 10 câu trắc nghiệm |
+| Nhân vật dẫn | **Bạn Nấm** *(hoạt hình 2D)* và **rối tay Mít** |
+
+**HAI VẠCH CHUẨN**
+- **ĐẠT:** Con chào **3 người mỗi ngày**, đủ **3 phần** *(nhìn mắt – gọi đúng người – nói lời chào)*, ≥ **5/7 ngày**; làm quen **1 bạn mới**.
+- **XUẤT SẮC:** **7/7 ngày**, con **chào trước** khi người lớn chào con; làm quen **≥ 3 bạn mới** và **nhớ tên** cả ba.
+
+---
+
+## 📘 PHẦN 1 — KIẾN THỨC `P1-KT` · 12 phút · Pha **G**
+
+### 1.1. Video mở — 80 giây *(lời thoại thật)*
+
+> **[Hoạt hình: một cánh cửa gỗ đóng kín. Bạn Nấm đứng trước cửa]**
+> **NẤM:** *"Cửa ơi, mở ra đi."*
+> **[Cửa im lìm]**
+> **MÍT:** *"Nấm ơi, cửa này có chìa khoá đấy."*
+> **NẤM:** *"Chìa khoá ở đâu?"*
+> **MÍT:** *"Ở trong miệng cậu."*
+> **NẤM:** *"Ơ… Con chào bác cửa ạ!"*
+> **[Cửa từ từ mở ra, phía sau là một sân chơi đầy bạn]**
+> **NGƯỜI DẪN:** *"Lời chào là chiếc chìa khoá."*
+> *"Con chào thì cửa mở. Con im thì cửa đóng."*
+> *"Tuần này con học mở nhiều cánh cửa."*
+> *"Đích ĐẠT: mỗi ngày con chào 3 người."*
+> *"Đích XUẤT SẮC: con chào trước, và con quen 3 bạn mới."*
+> *"Con vẽ Thẻ Đích nhé."*
+
+**Sản phẩm trẻ nộp:** **Thẻ Đích** — trẻ vẽ cánh cửa và nói: *"Cuối tuần con sẽ chào ………"*
+
+### 1.2. Bốn video kiến thức
+
+| # | Tiêu đề video | Khái niệm duy nhất | Hình ảnh chính | Quiz cuối video |
+|:--:|---|---|---|---|
+| 1 | **Lời chào mở cửa** (3') | Lời chào là **tín hiệu đầu tiên** cho người khác biết: con nhìn thấy họ | Nhiều cánh cửa mở ra khi Nấm chào | *Con chào rồi thì bác bảo vệ thấy thế nào?* |
+| 2 | **Ba phần của một lời chào đẹp** (4') | Lời chào có **3 phần**: 👀 nhìn mắt · 🙋 gọi đúng người · 🗣️ nói lời chào | 3 mảnh ghép lắp thành một chiếc chìa khoá | *Thiếu mảnh nào thì chìa khoá không mở được cửa?* |
+| 3 | **Chào ai thì gọi thế nào** (4') | Người khác nhau thì **cách gọi khác nhau**: ông bà · bố mẹ · cô chú · thầy cô · anh chị · bạn | Bảng 6 nhân vật hoạt hình, mỗi người một cách gọi | *Gặp bác bảo vệ, con nói gì?* |
+| 4 | **Vì sao chào lại khó** (3') | Ba cái khó: **ngại** · **quên** · **sợ người ta không đáp** | Nấm đứng nép sau cột, tim đập nhanh | *Nếu con chào mà người ta không nghe thấy thì sao?* |
+
+### 1.3. Bảng khái niệm cốt lõi
+
+| Từ | Nói cho con hiểu *(≤ 20 từ)* | Ví dụ ĐÚNG | Ví dụ SAI *(dễ nhầm)* |
+|---|---|---|---|
+| **Lời chào** | Câu nói đầu tiên cho người khác biết con thấy họ | *"Con chào cô ạ."* | Gật đầu rồi đi thẳng |
+| **Ba phần lời chào** | Nhìn mắt · gọi đúng người · nói lời chào | Nhìn cô, *"Con chào cô ạ"* | Nói "chào" mà mắt nhìn điện thoại |
+| **Gọi đúng người** | Gọi đúng ông, bà, cô, chú, thầy, bạn | *"Con chào bác bảo vệ ạ."* | *"Chào bạn"* với người lớn |
+| **Chào trước** | Con nói trước, không đợi người lớn chào con | Thấy cô từ xa, con chào ngay | Đợi cô chào rồi mới đáp |
+| **Làm quen** | Nói chuyện lần đầu để biết tên nhau | *"Tớ tên Na. Cậu tên gì?"* | Đứng nhìn bạn suốt giờ ra chơi |
+
+### 1.4. Infographic 1 trang — **"CHIẾC CHÌA KHOÁ 3 MẢNH"**
+
+```
+   ┌────────────────── CHÌA KHOÁ LỜI CHÀO ──────────────────┐
+   │                                                        │
+   │    👀 NHÌN MẮT   +   🙋 GỌI ĐÚNG   +   🗣️ NÓI LỜI      │
+   │                                                        │
+   │      thiếu 1 mảnh  →  cửa KHÔNG mở                     │
+   ├────────────────────────────────────────────────────────┤
+   │  GẶP AI       │  CON NÓI                               │
+   │  ─────────────┼──────────────────────────────────────  │
+   │  Ông / Bà     │  "Con chào ông ạ." / "Con chào bà ạ."  │
+   │  Bố / Mẹ      │  "Con chào bố ạ." / "Con chào mẹ ạ."   │
+   │  Cô / Chú     │  "Cháu chào cô ạ." / "Cháu chào chú ạ."│
+   │  Thầy / Cô    │  "Con chào cô ạ." / "Con chào thầy ạ." │
+   │  Anh / Chị    │  "Em chào anh." / "Em chào chị."       │
+   │  Bạn          │  "Chào cậu!" + cười                    │
+   └────────────────────────────────────────────────────────┘
+```
+
+**Mô tả bản in:** A4 dọc. Nửa trên là **chiếc chìa khoá 3 mảnh** in to để trẻ tô màu từng mảnh. Nửa dưới là **bảng 6 dòng** có hình mặt người, để trẻ **nối** hình với lời chào. Góc dưới in **thanh an toàn 🆘 111** và dòng: *"Con chỉ chào. Con KHÔNG đi theo người lạ."*
+
+### 1.5. "Thế nào là làm đúng" — rubric công bố trước
+
+| Tiêu chí | ĐẠT | XUẤT SẮC |
+|---|---|---|
+| Số người chào mỗi ngày | 3 người | ≥ 5 người |
+| Đủ 3 phần | Đủ 2/3 phần | Đủ 3/3 phần |
+| Ai chào trước | Con đáp lại khi được chào | **Con chào trước** |
+| Giọng | Người đối diện nghe rõ | Nghe rõ và có nụ cười |
+| Làm quen bạn mới | 1 bạn | ≥ 3 bạn, nhớ đủ tên |
+
+> ⚠️ **Kiểm tra:** P1 mới nói *lời chào là gì* và *thế nào là chào đẹp*. **Cách vượt qua cảm giác ngại** và **quy trình làm quen 3 bước** nằm ở **P3**.
+
+---
+
+## 🌊 PHẦN 2 — TRẢI NGHIỆM `P2-TN` · 18 phút · Pha **I**
+
+### Hình thức: **Phim hoạt hình dừng-chọn — "NGÀY ĐẦU CỦA BẠN NẤM"**
+☑ Video tình huống dừng-chọn ☑ Câu chuyện có nhánh
+
+**Bối cảnh *(2 phút)*:** Bạn Nấm chuyển tới trường mới. Nấm đứng ở cổng, tay nắm chặt quai cặp. *"Ở đây mình không quen ai cả."*
+
+**LUẬT CHƠI**
+1. Phim dừng ở **3 điểm**. Mỗi điểm con chọn **1 trong 3 hình**.
+2. Chọn xong, con **xem ngay hệ quả** — phim đi tiếp theo nhánh con chọn.
+3. Mỗi lựa chọn cộng hoặc trừ **"Ánh sáng cửa"** — thanh sáng hiện ở góc màn hình.
+4. Con **được xem lại** một nhánh khác sau khi hết phim, nhưng **điểm ghi nhận là lần chọn đầu**.
+5. **Không có ai bị thua.** Nhánh nào cũng có lối đi tiếp.
+
+**DỮ LIỆU — THANH "ÁNH SÁNG CỬA"**
+
+| Mức sáng | Nghĩa | Cách đạt |
+|:--:|---|---|
+| 🌑 0–1 | Cửa còn đóng | Im lặng, tránh mặt |
+| 🌒 2–3 | Cửa hé mở | Có chào nhưng thiếu mảnh |
+| 🌓 4–5 | Cửa mở | Chào đủ 3 phần |
+| 🌕 6 | Cửa mở toang | Chào trước + hỏi lại tên |
+
+**ĐIỂM DỪNG 1 — phút 5 · Ở cổng trường:** Bác bảo vệ nhìn Nấm và cười.
+
+| Chọn | Hệ quả | Ánh sáng |
+|:--:|---|:--:|
+| **A.** Cúi mặt đi thẳng vào | Bác quay đi. Nấm đi qua, thấy bụng hơi nặng. Mít hỏi: *"Cậu thấy trong người thế nào?"* | +0 |
+| **B.** Gật đầu, không nói gì | Bác gật lại. Nhưng bác không biết Nấm tên gì, Nấm cũng không biết bác tên gì | +1 |
+| **C.** *"Cháu chào bác ạ!"* — nhìn vào mắt bác | Bác cười to: *"Chào con! Con mới đến hả? Lớp con ở dãy kia."* → **Nấm được chỉ đường miễn phí** | +2 |
+
+**ĐIỂM DỪNG 2 — phút 9 · Trong lớp:** Cô giáo đang viết bảng, quay xuống nhìn Nấm.
+
+| Chọn | Hệ quả | Ánh sáng |
+|:--:|---|:--:|
+| **A.** *"Chào bạn!"* | Cả lớp cười ồ. Nấm đỏ mặt. Cô nói nhẹ: *"Cô là cô giáo con nhé. Con thử lại xem."* → cho chọn lại, **không trừ điểm** | +0 |
+| **B.** Nói rất nhỏ, nhìn xuống bàn | Cô không nghe thấy. Cô quay lên bảng tiếp. Nấm ngồi im cả buổi | +1 |
+| **C.** Đứng dậy: *"Con chào cô ạ."* — nhìn cô | Cô cười: *"Cô chào con. Con tên gì nhỉ?"* → mở ra đoạn giới thiệu tên | +2 |
+
+**ĐIỂM DỪNG 3 — phút 13 · Giờ ra chơi:** Một bạn ngồi một mình ở ghế đá, đang gấp máy bay giấy.
+
+| Chọn | Hệ quả | Ánh sáng |
+|:--:|---|:--:|
+| **A.** Đứng nhìn từ xa suốt giờ ra chơi | Hết giờ. Trống vào lớp. Hai bạn vẫn chưa biết tên nhau | +0 |
+| **B.** Chạy tới giật lấy máy bay giấy | Bạn kia giận, đi chỗ khác. Mít: *"Cậu muốn làm quen, nhưng cậu làm bạn sợ."* | −1 |
+| **C.** *"Chào cậu. Tớ tên Nấm. Cậu tên gì?"* | Bạn ngẩng lên: *"Tớ tên Bo."* → Bo dạy Nấm gấp máy bay. **Cửa mở toang 🌕** | +2 |
+
+**KẾT CỤC — phút 16:** Màn hình hiện lại **cả ba cánh cửa** con đã đi qua, cùng thanh Ánh sáng. Mít: *"Mỗi lời chào là một cánh cửa. Con mở được mấy cánh?"*
+
+> **Khoảnh khắc "à há":** Lời chào **không tốn gì cả** — nhưng nó đổi được **đường đi, bạn mới, và một buổi học vui**.
+
+### Bóc tách 4 lớp *(ô nhập bắt buộc)*
+
+1. **Ghi nhận:** Nấm đã chào những ai? Con chọn cách nào?
+2. **Phản ứng:** Lúc Nấm cúi mặt đi qua bác bảo vệ, con thấy trong người thế nào?
+3. **Suy xét:** Vì sao chào rồi thì mọi việc dễ hơn?
+4. **Tái áp:** Ở trường con, có cánh cửa nào con chưa mở? *(bác bảo vệ · cô lao công · bạn ngồi một mình)*
+
+### Chạm nội lực *(Lửa 3)*
+
+> Mít hỏi: *"Nếu hôm nay con chào một người đang buồn, người đó sẽ thấy sao?"*
+
+**Nộp:** 1 dòng **Nhật ký Bằng Chứng** — *"Hôm nay con đã mở cánh cửa với …"*
+
+---
+
+## ⚒️ PHẦN 3 — NHIỆM VỤ THỰC HÀNH `P3-TH` · 24 phút · Pha **T**
+
+### 3.1. Nhiệm vụ: **"BẢN ĐỒ 10 CÁNH CỬA"**
+
+**Quy trình chào 3 phần và quy trình làm quen 3 bước — dạy ở đây:**
+
+```
+   CHÀO                          LÀM QUEN BẠN MỚI
+   ① 👀 NHÌN MẮT                 ① CHÀO      "Chào cậu."
+   ② 🙋 GỌI ĐÚNG NGƯỜI           ② NÓI TÊN   "Tớ tên …"
+   ③ 🗣️ NÓI LỜI CHÀO             ③ HỎI LẠI   "Cậu tên gì?"
+        (+ mỉm cười)                          → rồi NHẮC LẠI tên bạn
+                                                 "Chào Bo!"  ← mẹo nhớ tên
+```
+
+**Việc con làm:** In **Bản Đồ 10 Cánh Cửa** — 10 ô trống hình cánh cửa. Mỗi lần chào một người, con **tô màu một cánh cửa** và ghi *(hoặc vẽ)* người đó là ai.
+
+**Danh sách gợi ý 10 cánh cửa:** ông/bà · bố/mẹ · anh/chị/em · bác bảo vệ · cô lao công · cô giáo · bạn cùng bàn · bạn ngồi một mình · bác hàng xóm · người bán hàng quen.
+
+> ⚠️ **Quy tắc an toàn kèm theo:** Con **chỉ chào** ở nơi có người lớn của con ở gần. Con **không đi theo, không nhận quà, không lên xe** với người lạ — dù người đó chào con rất vui vẻ. Gặp chuyện lạ: bấm **🆘 CẦN TRỢ GIÚP** hoặc gọi **111**.
+
+### 3.2. Vi kỹ năng & ngưỡng
+
+| Vi kỹ năng | Cách đo | ĐẠT | XUẤT SẮC |
+|---|---|:--:|:--:|
+| ① Số người chào/ngày | Số cánh cửa tô/ngày | ≥ 3 | ≥ 5 |
+| ② Đủ 3 phần | Phần /3 | ≥ 2 | 3 |
+| ③ Chào trước | Số lần con chào trước | ≥ 1 | ≥ 3 |
+| ④ Gọi đúng người | Đúng /5 lần | ≥ 4 | 5 |
+| ⑤ Tên bạn mới nhớ được | Số tên | 1 | ≥ 3 |
+
+### 3.3. Bảng luyện 4 lượt *(ô số liệu bắt buộc)*
+
+| Lượt | Ngày | Số người chào | Đủ 3 phần /3 | Chào trước *(lần)* | Tên bạn mới | Tự chấm 😟😐🙂😃 | Bậc |
+|:--:|---|:--:|:--:|:--:|---|:--:|:--:|
+| 1 | | | | | | | B1 |
+| 2 | | | | | | | B2 |
+| 3 | | | | | | | B3 |
+| 4 | | | | | | | B4 |
+
+### 3.4. Tiêu chí hoàn thành
+
+- ☑ **Bản Đồ 10 Cánh Cửa** tô được **≥ 6 cánh**
+- ☑ Bảng luyện có **≥ 3 lượt** đã điền số
+- ☑ Có **1 bản ghi âm 20 giây**: con chào 3 kiểu người khác nhau *(cô giáo · bác bảo vệ · bạn)*
+- ☑ Con **nhớ và nói được tên 1 bạn mới**
+- ☑ Có **1 người lớn** bấm xác nhận *"Con đã chào tôi trước"*
+
+### 3.5. Cách nộp
+
+| Nộp gì | Nộp thế nào | Ghi chú an toàn |
+|---|---|---|
+| Bản Đồ 10 Cánh Cửa | Chụp ảnh **tờ giấy** hoặc tô trực tiếp trên màn hình | Không chụp người |
+| 3 kiểu lời chào | Ghi âm 20 giây | Riêng tư, chỉ HLV và bố mẹ nghe |
+| Tên bạn mới | Nói vào máy hoặc bấm chọn | Chỉ ghi **tên gọi**, không ghi địa chỉ, không ghi số điện thoại |
+| Xác nhận | Người lớn bấm nút trong tài khoản phụ huynh | Có dấu thời gian |
+
+> ⛔ **Bài đã nộp không sửa được.** Tuần sau nộp **lượt mới**.
+
+### 3.6. Chấm chéo đồng đẳng
+
+Hai bạn Squad **đóng vai**: một bạn làm bác bảo vệ, một bạn chào. Sau đó đổi vai. Bạn quan sát bấm **3 mặt cười** cho câu: *"Bạn có nhìn vào mắt tớ không?"* và nói **1 điều thích**. **Cấm chê.**

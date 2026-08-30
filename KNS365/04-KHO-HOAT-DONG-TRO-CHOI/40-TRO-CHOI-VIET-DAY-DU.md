@@ -928,3 +928,438 @@
 | Học sinh không muốn tham gia | Cho dự đoán kết quả của **cả lớp** thay vì của bản thân *("bao nhiêu bạn sẽ đạt vạch Đạt?")* |
 
 ---
+
+## PHẦN E. PHA **I** — THẮP LỬA & TRẢI NGHIỆM *(8 trò)*
+
+> **Vai trò của pha I trong cụm 180′:** cho học sinh **va vào một trải nghiệm thật** trước khi được giảng. Nội lực là **kết quả của bằng chứng**, không phải điểm xuất phát — pha I tạo ra bằng chứng đó.
+
+---
+
+### `TC-I-002` · XÂY THÁP GIẤY
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-I-002 | **I** | 🟢 K3–5 · 🔵 K6–9 | Squad 5–6 · 3–6 Squad | 25′ | 20 tờ A4/Squad, 1 m băng dính, kéo đầu tròn, thước đo |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Thử sớm thay vì bàn lâu:** dựng bản thử đầu tiên trong 3 phút đầu.
+- **Đọc thất bại thành dữ liệu:** tháp đổ ở chân hay ở thân — sửa đúng chỗ đó.
+- **Phân vai trong nhóm nhỏ:** ai cắt, ai dán, ai giữ, ai đo.
+
+**Cách chơi**
+
+1. Phát vật liệu. Công bố tiêu chí: **tháp cao nhất mà tự đứng được 10 giây, không dựa tường, không dính xuống bàn**.
+   > 🎤 **HLV:** *"Ba lần thử là bắt buộc. Nhóm nào chỉ dựng một lần rồi ngồi chờ thì thua ngay từ đầu, dù tháp có đẹp."*
+2. **Vòng 1 (5′):** dựng bản thử số 1 → HLV đếm 10 giây → đo và ghi chiều cao lên bảng.
+3. **Vòng 2 (5′):** mỗi Squad có 1 phút "họp sửa": *chỗ nào yếu, sửa gì*. Dựng lại. Đo, ghi.
+   > 🎤 **HLV:** *"Không được đập bỏ hết. Giữ phần nào đã đứng vững — sửa đúng chỗ gãy."*
+4. **Vòng 3 (5′):** dựng bản cuối. Đo, ghi. Vẽ lên bảng 3 cột số của mỗi Squad.
+5. Đi tham quan tháp của nhau 2′, mỗi Squad nói **1 điều học được từ tháp nhóm khác**.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | 20 tờ giấy, băng dính thoải mái, không giới hạn thời gian mỗi vòng | Tháp đứng được 10 giây |
+| **L2** | 3 vòng thử bắt buộc, mỗi vòng 5 phút, có đo và ghi số | Vòng 3 cao hơn vòng 1 |
+| **L3** | Giảm còn **10 tờ giấy và 30 cm băng dính**; thêm yêu cầu **đỡ được 1 cuốn sách giáo khoa trên đỉnh** | Chịu tải mà vẫn cao hơn 40 cm |
+| **L4** | Cấm nói trong vòng 1; đổi 1 thành viên sang Squad khác giữa vòng 2 *(người mới phải hiểu thiết kế trong 60 giây)* | Người mới đóng góp được, tháp vẫn cải thiện |
+
+**Câu hỏi rút bài học**
+1. *Tháp của Squad em đổ ở chỗ nào trong lần thử đầu — chân, thân hay đỉnh? Ở lần 2 các em đã sửa đúng chỗ đó chưa?*
+2. *Số liệu 3 vòng của nhóm em là bao nhiêu? Vòng nào tăng nhiều nhất và các em đã làm gì ở vòng đó?*
+3. *Nhóm em mất mấy phút bàn bạc trước khi chạm tay vào tờ giấy đầu tiên? Nếu chơi lại, các em sẽ bắt đầu dựng ở phút thứ mấy?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** kéo **đầu tròn**, đếm số kéo phát ra và thu về; cấm đứng lên ghế/bàn để dựng tháp cao — dùng thước đo dài thay vì trèo; giấy cắt có thể gây đứt tay, nhắc học sinh cầm mép giấy.
+- **Tâm lý:** chỉ so **tiến bộ giữa 3 vòng của chính Squad**, không xếp hạng cao thấp giữa các Squad ở vòng 1. Tháp đổ là dữ liệu, không phải thất bại — HLV nói câu này ngay khi tháp đầu tiên đổ.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>6 Squad)* | Chia 2 khu, mỗi khu 1 ACT đo và ghi; công bố số liệu theo khu |
+| Lớp quá ít *(<10 HS)* | Squad 3 người, giảm còn 12 tờ giấy để độ khó không đổi |
+| Không gian hẹp | Dựng ngay trên mặt bàn; đổi tiêu chí sang **"tháp giấy chịu tải nhiều sách nhất"** thay vì cao nhất |
+| Học sinh không muốn tham gia | Vai **Người Đo & Ghi Số Liệu** hoặc **Người Bấm Giờ 10 Giây** — có thật việc để làm, không phải ngồi nhìn |
+
+---
+
+### `TC-I-004` · VƯỢT SÔNG 3 TẤM BÌA ✋
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-I-004 | **I** | 🟢 K3–5 · 🔵 K6–9 | Squad 5–6 | 22′ | 3 tấm bìa cứng A3/Squad, dây đánh dấu 2 bờ |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Tìm ≥2 phương án trước khi bắt tay làm.**
+- **Quản lý tài nguyên hữu hạn:** 3 tấm bìa cho 6 người.
+- **Không bỏ ai lại:** đích chỉ tính khi người cuối cùng sang bờ.
+
+**Cách chơi**
+
+1. Đánh dấu 2 bờ cách nhau 5–6 m. Cả Squad đứng bờ A, có đúng 3 tấm bìa.
+   > 🎤 **HLV:** *"Đặt chân xuống 'sông' là cả nhóm quay lại bờ A. Tấm bìa nào không có người chạm vào sẽ bị 'nước cuốn' — thầy/cô thu luôn."*
+2. Squad có **2 phút bàn kế hoạch, chưa được chạm bìa**. Bắt buộc nêu **2 cách** cho HLV nghe trước khi bắt đầu.
+   > 🎤 **HLV:** *"Nói cho thầy/cô nghe cách một. Rồi cách hai. Chưa có cách hai thì chưa được xuất phát."*
+3. Thực hiện. HLV nghiêm khắc thu tấm bìa bị bỏ trống — đây là tình huống ép nhóm thích nghi.
+4. Kết thúc khi **người cuối cùng** chạm bờ B. Ghi thời gian và số lần phải quay lại.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | 4 tấm bìa, khoảng cách 4 m, được nói tự do | Cả nhóm sang bờ, ≤2 lần quay lại |
+| **L2** | 3 tấm bìa, 6 m, bắt buộc trình bày 2 phương án | Sang bờ với đúng 3 tấm bìa |
+| **L3** | Thêm luật **"1 người bị thương ở chân" phải được nhóm hỗ trợ**; giới hạn 8 phút | Người "bị thương" sang bờ an toàn, không bị kéo lê |
+| **L4** | Cấm nói hoàn toàn trong suốt lượt; ghép Squad lạ; có khán giả | Sang bờ chỉ bằng ký hiệu, không ai rơi khỏi bìa |
+
+**Câu hỏi rút bài học**
+1. *Nhóm em bị thu mất mấy tấm bìa? Chuyện đó xảy ra ở đúng thời điểm nào — lúc vội hay lúc đang cãi nhau?*
+2. *Kế hoạch các em nói với thầy/cô lúc đầu có được dùng đến không, hay bỏ ngay từ bước 2?*
+3. *Ai là người sang bờ B cuối cùng? Trong lúc chờ, nhóm đã làm gì cho bạn ấy?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất — trò có tiếp xúc và giữ thăng bằng:**
+  - Bìa phải **dày, không trơn**; sàn không đánh bóng, không trải thảm trượt.
+  - **Cấm cõng, bế, nhấc bổng nhau.** Chỉ được nắm tay hoặc đỡ cẳng tay để giữ thăng bằng.
+  - Cấm nhảy từ bìa này sang bìa kia; chỉ được bước.
+  - Hỏi đồng thuận chạm tay trước khi bắt đầu; ai không muốn chạm thì tự giữ thăng bằng và nhóm chỉ được hỗ trợ bằng lời.
+  - 1 ACT/Squad đứng biên, mắt luôn ở nhóm đang di chuyển.
+- **Tâm lý:** tránh để một học sinh trở thành "gánh nặng" trong mắt nhóm. Nếu nghe câu *"tại bạn ấy chậm"*, HLV dừng trò 20 giây và hỏi cả nhóm: *"Luật nói đích là gì?"* — nhắc lại: đích là **người cuối cùng sang bờ**.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>6 Squad)* | Chạy 2 đợt; đợt chờ làm **trọng tài đếm số lần chạm sông** cho Squad đang chơi |
+| Lớp quá ít *(<8 HS)* | Một nhóm, tăng độ khó: 2 tấm bìa cho 4 người, thêm luật cấm nói |
+| Không gian hẹp | Rút "sông" còn 3 m, chơi trong hành lang; hoặc bản trên bàn: di chuyển 6 quân cờ qua "sông" bằng 3 thẻ bìa nhỏ, giữ nguyên luật |
+| Học sinh không muốn tham gia | Vai **Người Giữ Luật** *(theo dõi chân chạm sông)* hoặc **Người Ghi Phương Án** — ghi lại 2 phương án nhóm nêu để đối chiếu khi bóc tách |
+
+---
+
+### `TC-I-006` · MÊ CUNG BỊT MẮT ✋
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-I-006 | **I** | 🔵 K6–9 · 🟣 K10–12 | Squad 5–6 | 25′ | Khăn bịt mắt, dây/vạch tạo mê cung, 6–8 vật cản mềm |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Ra chỉ dẫn dùng được:** đơn vị đo cụ thể *("hai bước chân về bên phải")* thay vì *("đi lại đây")*.
+- **Xác nhận đã hiểu:** người bịt mắt nhắc lại chỉ dẫn trước khi bước.
+- **Tin có kiểm soát:** giao sự an toàn của mình cho bạn trong giới hạn đã thoả thuận.
+
+**Cách chơi**
+
+1. Dùng dây và vật cản **mềm** *(gối, chai nhựa rỗng, bìa)* tạo mê cung trên sàn. Mỗi Squad chọn 1 người bịt mắt, 1 người dẫn bằng lời, còn lại quan sát im lặng.
+   > 🎤 **HLV:** *"Người dẫn đứng ngoài vạch, không được chạm vào bạn. Chỉ có lời nói. Người đi bịt mắt được quyền hô 'DỪNG' bất cứ lúc nào."*
+2. **Vòng 1:** đi hết mê cung, đếm số lần chạm vật cản.
+3. **Họp cải tiến 90 giây:** Squad thống nhất **bộ từ ngữ chỉ dẫn chuẩn** *(ví dụ: "bước ngắn", "một bước bằng bàn chân", "xoay 1/4 sang phải")* và viết ra giấy.
+   > 🎤 **HLV:** *"Cái các em vừa viết gọi là quy ước. Bây giờ chạy lại và xem quy ước có giúp giảm số lần va không."*
+4. **Vòng 2:** đổi người đi và người dẫn, dùng bộ từ đã thống nhất. So số lần chạm giữa 2 vòng.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | **Không bịt mắt, chỉ nhắm mắt tự nguyện**, mê cung 4 vật cản, người dẫn đi kèm bên cạnh | Đi hết mê cung, ≤3 lần chạm |
+| **L2** | Bịt mắt, người dẫn đứng ngoài vạch, 6 vật cản | Vòng 2 giảm ít nhất 50% số lần chạm |
+| **L3** | **Hai Squad chạy cùng lúc** — có tiếng ồn của nhóm bên cạnh, người đi phải lọc đúng giọng người dẫn của mình | Không đi nhầm theo chỉ dẫn của nhóm khác |
+| **L4** | Người dẫn chỉ được nói **tối đa 10 câu** cho cả hành trình; thêm nhiệm vụ nhặt 1 vật ở giữa mê cung | Hoàn thành trong 10 câu, có vật trong tay |
+
+**Câu hỏi rút bài học**
+1. *Câu chỉ dẫn nào làm em bước tự tin nhất? Câu nào làm em khựng lại?*
+2. *Số lần chạm vòng 1 và vòng 2 của nhóm em là bao nhiêu? Bộ từ các em thống nhất đã thay đổi điều gì?*
+3. *Lúc bịt mắt, mất bao lâu em mới dám bước bước dài bình thường? Điều gì làm em dám bước?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất — trò BỊT MẮT:**
+  - Vật cản **bắt buộc mềm**; cấm dùng bàn ghế, vật cứng, vật thuỷ tinh trong mê cung.
+  - Khu vực phải phẳng, không bậc, không cửa kính, không cầu thang trong bán kính 3 m.
+  - Tư thế: **hai tay đưa trước ngực**, bước ngắn. **1 ACT đi kèm sau lưng mỗi người bịt mắt**, sẵn sàng đỡ.
+  - Khẩu lệnh dừng khẩn cấp **"ĐỨNG YÊN"** cho toàn khu.
+  - Khăn bịt mắt cá nhân, giặt sau buổi.
+- **Tâm lý:**
+  - **Quyền pass tuyệt đối**: ai không muốn bịt mắt thì làm người dẫn hoặc quan sát viên, không hỏi lý do, không nhắc lại chuyện đó về sau.
+  - Cho thử bịt mắt đứng yên 10 giây trước để tự kiểm tra mức thoải mái.
+  - **Cấm tuyệt đối** cố tình chỉ sai, doạ, hoặc chạm bất ngờ vào người bịt mắt — vi phạm thì dừng trò của Squad đó ngay và xử lý riêng.
+  - Không ép học sinh có tiền sử lo âu, hoảng loạn, hoặc từng bị bạo hành tham gia phần bịt mắt.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông | Chạy luân phiên theo Squad, các Squad chờ làm **quan sát viên ghi câu chỉ dẫn tốt** — dữ liệu này dùng ở bước họp cải tiến |
+| Lớp quá ít | Mỗi em đều được đi và được dẫn 1 lượt; tăng độ khó bằng giới hạn số câu |
+| Không gian hẹp | **Mê cung trên bàn:** người bịt mắt dùng ngón tay lần theo bản đồ nổi/vật nhỏ trên mặt bàn theo lời dẫn — giữ nguyên bài học về chất lượng chỉ dẫn, bỏ toàn bộ rủi ro té ngã |
+| Học sinh không muốn tham gia | Vai **Người Dẫn** *(không phải bịt mắt)* hoặc **Người Đếm Va Chạm**; hoặc chơi bản mê cung trên bàn |
+
+---
+
+### `TC-I-008` · THẢM BAY LẬT MẶT ✋
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-I-008 | **I** | 🔵 K6–9 · 🟣 K10–12 | Squad 6–8 | 22′ | 1 tấm bạt/khăn trải bàn ~1,2 × 1,2 m/Squad |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Giải bài toán không gian theo nhóm:** tìm trình tự di chuyển khi chỗ đứng có hạn.
+- **Không bỏ ai lại:** mọi người phải ở trên thảm suốt quá trình.
+- **Nghe người ít nói:** lời giải thường đến từ người chưa lên tiếng.
+
+**Cách chơi**
+
+1. Cả Squad đứng lên tấm bạt.
+   > 🎤 **HLV:** *"Nhiệm vụ: lật ngược tấm thảm sang mặt kia. Luật: không ai được chạm chân xuống sàn. Chạm sàn thì cả nhóm bước ra và bắt đầu lại."*
+2. Squad tự tìm cách. HLV **không gợi ý** trong 5 phút đầu, chỉ đếm số lần chạm sàn.
+3. Sau 5 phút, nếu bế tắc, HLV cho **1 gợi ý duy nhất**: *"Có ai trong nhóm chưa nói câu nào không? Hỏi bạn ấy trước đã."*
+4. Khi lật xong, cả nhóm đứng yên 5 giây trên mặt mới rồi bước xuống.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Bạt rộng, 5–6 người, thoải mái thời gian | Lật được, ≤3 lần chạm sàn |
+| **L2** | 7–8 người trên cùng tấm bạt, giới hạn 8 phút | Lật được với ≤2 lần chạm sàn |
+| **L3** | Gấp bạt nhỏ lại 1/4 sau mỗi 3 phút | Vẫn lật được trên diện tích nhỏ hơn |
+| **L4** | Cấm nói hoàn toàn; hoặc bịt mắt 2 thành viên và nhóm phải dẫn bằng lời | Không ai ngã, không ai bị bỏ ngoài thảm |
+
+**Câu hỏi rút bài học**
+1. *Ý tưởng cuối cùng giải được bài toán là của ai? Ý tưởng đó xuất hiện ở phút thứ mấy, và trước đó bạn ấy có được hỏi không?*
+2. *Khi thảm hẹp dần, nhóm em xử lý chỗ đứng như thế nào — ai lùi lại, ai giữ chỗ?*
+3. *Có lúc nào một bạn suýt bị đẩy khỏi thảm không? Lúc đó nhóm phản ứng ra sao?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất — đứng sát nhau, dễ ngã:**
+  - **Cấm cõng, bế, nhấc bổng, đứng lên vai nhau.** Chỉ được vịn vai hoặc nắm cẳng tay.
+  - Sàn không trơn; bỏ giày có đế cứng trơn; khoảng trống quanh thảm tối thiểu 1,5 m, không bàn ghế góc nhọn.
+  - Số người tối đa 8 — quá đông thì nguy hiểm chứ không khó hơn.
+  - **1 ACT/Squad đứng sát biên**, tay sẵn sàng đỡ; dừng ngay nếu thấy nhóm chồng người.
+  - Học sinh có vấn đề thăng bằng, khớp gối, hoặc đang mang thạch cao **không tham gia phần đứng thảm**.
+- **Tâm lý:** trò này ép mọi người đứng rất gần nhau — **hỏi đồng thuận trước**, và cho phép nhóm tự chia theo giới nếu học sinh THCS/THPT muốn. Ai không muốn đứng sát thì nhận vai **Người Chỉ Huy Ngoài Thảm** *(được nói, không được chạm)*.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông | Nhiều Squad chạy song song, mỗi Squad 1 tấm bạt và 1 ACT; tuyệt đối không dồn >8 người/thảm |
+| Lớp quá ít *(<6)* | Dùng bạt nhỏ hơn để độ khó giữ nguyên; thêm luật cấm nói |
+| Không gian hẹp | Bản **"Lật Tờ Báo"**: 4 người đứng trên một tờ báo lớn, cùng bài toán, ít không gian hơn |
+| Học sinh không muốn tham gia | Vai **Người Chỉ Huy Ngoài Thảm** hoặc **Người Đếm Chạm Sàn**; hoặc chơi bản mô hình: 8 quân cờ trên một tấm bìa nhỏ, giải bài toán bằng tay |
+
+---
+
+### `TC-I-010` · THÁP MARSHMALLOW
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-I-010 | **I** | 🔵 K6–9 · 🟣 K10–12 | Squad 4–5 | 25′ | 20 que mì spaghetti, 1 m băng dính, 1 m dây, 1 viên kẹo dẻo/Squad, thước |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Kiểm chứng giả định sớm:** đặt kẹo lên đỉnh ngay từ bản thử đầu, không để đến phút cuối.
+- **Chia thời gian có chủ đích:** bao nhiêu phút bàn, bao nhiêu phút dựng, bao nhiêu phút để dành cho sửa.
+- **Chịu được sụp đổ ở phút cuối** mà vẫn hành động.
+
+**Cách chơi**
+
+1. Phát vật liệu, công bố luật: **18 phút · tháp phải tự đứng · viên kẹo dẻo nguyên vẹn phải ở trên đỉnh · đo từ mặt bàn tới đáy viên kẹo.**
+   > 🎤 **HLV:** *"Không được cắt nhỏ viên kẹo. Không được dính tháp xuống bàn. Thầy/cô sẽ báo mốc thời gian, còn lại là việc của nhóm."*
+2. HLV **chỉ báo mốc**: còn 12 phút · còn 6 phút · còn 3 phút · còn 60 giây. Không tư vấn.
+3. Hết giờ, tất cả bỏ tay ra. Đo và ghi chiều cao từng Squad lên bảng, kể cả tháp đổ *(ghi 0 và ghi lý do đổ)*.
+4. HLV công bố dữ liệu kinh điển: **nhóm trẻ mẫu giáo thường làm tốt hơn sinh viên** vì trẻ **thử liên tục**, còn người lớn dành hết thời gian bàn rồi mới cắm kẹo ở phút chót.
+   > 🎤 **HLV:** *"Nhóm em đặt viên kẹo lên đỉnh ở phút thứ mấy?"*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | 22 phút, được hỏi HLV 1 lần | Tháp đứng có kẹo trên đỉnh |
+| **L2** | 18 phút, không được hỏi | Cao hơn 25 cm |
+| **L3** | 12 phút; bắt buộc **thử đặt kẹo lên đỉnh trước phút thứ 5** | Có bản thử sớm và bản cuối cao hơn bản thử |
+| **L4** | Cấm nói 6 phút đầu; đổi 1 thành viên giữa chừng; công bố kết quả trước khách mời | Giải thích được thiết kế cho người ngoài trong 60 giây |
+
+**Câu hỏi rút bài học**
+1. *Nhóm em đặt viên kẹo lên đỉnh ở phút thứ mấy? Nếu đặt sớm hơn 5 phút thì các em phát hiện ra điều gì sớm hơn?*
+2. *Tháp đổ vào lúc nào? Lúc đó nhóm còn mấy phút và các em quyết định làm gì?*
+3. *Nhóm em dùng bao nhiêu phút để bàn trước khi chạm vào que mì đầu tiên? Con số đó nói gì về cách nhóm em làm bài tập lớn ở trường?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** ⚠️ **kẹo dẻo là thực phẩm** — hỏi trước về dị ứng *(gelatin, phẩm màu)*; học sinh không ăn được vẫn thao tác bình thường nhưng **không ăn kẹo sau buổi**. Que mì gãy tạo đầu nhọn: cấm cầm que ngang tầm mắt, cấm chỉ que vào mặt nhau; quét sạch mảnh vụn sau buổi. Rửa tay trước và sau.
+- **Tâm lý:** tháp đổ ở phút 17 gây hụt hẫng thật. HLV chuẩn bị sẵn câu: *"Nhóm em vừa có dữ liệu mà nhóm cao nhất không có — các em biết chính xác cấu trúc nào không chịu nổi."* Không xếp hạng Squad theo chiều cao; ghi số liệu như dữ liệu để bóc tách.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông | Số Squad không giới hạn nếu đủ vật liệu; cần 1 ACT/3 Squad để đo và ghi |
+| Lớp quá ít | Squad 3 người, giảm còn 15 que mì |
+| Không gian hẹp | Làm ngay trên mặt bàn nhóm — trò này vốn không cần sàn |
+| Học sinh không muốn tham gia | Vai **Người Giữ Giờ & Báo Mốc** hoặc **Người Chụp Ảnh Từng Phút** *(bộ ảnh này là tư liệu bóc tách rất mạnh)* |
+| Không mua được kẹo dẻo | Thay bằng **quả quýt nhỏ, cục tẩy, hoặc viên đất nặn 20 g** — giữ nguyên luật "vật nặng phải ở trên đỉnh" |
+
+---
+
+### `TC-I-011` · KỊCH DỪNG HÌNH
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-I-011 | **I** | 🟢 K3–5 · 🔵 K6–9 · 🟣 K10–12 | 15–40 | 22′ | Thẻ tình huống, 2–3 đạo cụ đơn giản |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Nhận ra "điểm rẽ":** khoảnh khắc mà một câu nói có thể đổi cả kết cục.
+- **Thử phương án khác bằng cơ thể**, không chỉ bằng lời bàn.
+- **Đồng cảm đa chiều:** đứng vào chỗ người trong cuộc lẫn người chứng kiến.
+
+**Cách chơi**
+
+1. Một nhóm 3–4 em diễn tình huống ngắn *(bạn bị trêu vì đôi giày cũ · nhóm chia việc mà một bạn ôm hết · em bị bạn thân rủ trốn tiết)*.
+2. HLV hô **"DỪNG HÌNH!"** đúng lúc cao trào. Cả sân khấu đứng im như tượng.
+   > 🎤 **HLV:** *"Giữ nguyên tư thế. Nhìn kỹ: ai đang quay lưng, ai đang cúi mặt, tay ai đang nắm lại?"*
+3. HLV **gõ vai từng nhân vật**: *"Nhân vật này, lúc này trong đầu em đang nghĩ gì?"* — học sinh nói ra suy nghĩ thầm.
+4. **Đổi vai — thay diễn viên:** *"Ai muốn lên thay bạn này và làm khác đi?"* Học sinh dưới lớp lên thay, diễn tiếp từ đúng khoảnh khắc đó.
+   > 🎤 **HLV:** *"Không được lùi lại sửa cả câu chuyện. Chỉ được sửa từ giây này trở đi."*
+5. Diễn 2–3 kết cục khác nhau, so sánh xem cách nào đổi được tình hình thật sự.
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Tình huống quen thuộc, HLV chọn điểm dừng, có kịch bản gợi ý | Học sinh nói được suy nghĩ của nhân vật |
+| **L2** | Học sinh tự nhận ra điểm dừng và hô "DỪNG HÌNH" | Điểm dừng đúng vào khoảnh khắc có thể rẽ hướng |
+| **L3** | Người lên thay phải **đổi được kết cục chỉ bằng 1 câu nói** | Câu nói cụ thể, dùng được ngoài đời, không phải lời giáo huấn |
+| **L4** | Diễn trước lớp khác/phụ huynh; khán giả được hô dừng bất kỳ lúc nào và lên thay vai | Diễn viên ứng biến được với can thiệp của người lạ |
+
+**Câu hỏi rút bài học**
+1. *Khoảnh khắc dừng hình vừa rồi — nếu quay lại đúng giây đó, câu nói nào có thể đổi hướng cả câu chuyện?*
+2. *Khi được gõ vai, nhân vật đứng ngoài quan sát đã nghĩ gì? Điều đó có khác với điều bạn ấy thể hiện ra bên ngoài không?*
+3. *Trong 3 kết cục vừa diễn, kết cục nào giống đời thật nhất? Vì sao?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** cấm mọi động tác xô đẩy, vật lộn, đánh — kể cả giả vờ; các hành vi bạo lực **chỉ được mô tả bằng lời hoặc tư thế tĩnh**, không thực hiện. Sân khấu trống, không có vật cản.
+- **Tâm lý — mức rủi ro cao:**
+  - **Không cho học sinh diễn lại chuyện thật của chính mình hoặc của bạn trong lớp.** Tình huống phải là nhân vật hư cấu, đặt tên khác.
+  - Bắt buộc **nghi thức "cởi vai"** khi kết thúc: mỗi diễn viên nói to *"Tôi là <tên thật>, tôi không phải nhân vật đó"* và phủi vai. Với vai gây hại, HLV cảm ơn công khai: *"Bạn nhận vai khó nhất để cả lớp học được."*
+  - Không giao vai nạn nhân cho học sinh đang thật sự bị bắt nạt.
+  - Quyền pass tuyệt đối; học sinh có thể chọn vai không lời hoặc làm khán giả phân tích.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Diễn theo Squad tại chỗ, mỗi Squad tự dừng hình; HLV đi từng nhóm gõ vai |
+| Lớp quá ít *(<10)* | Dùng **tượng đài tĩnh**: cả nhóm tạo một bức tượng thể hiện tình huống, không cần diễn động |
+| Không gian hẹp | Diễn ở khoảng trống trước bảng, khán giả ngồi tại chỗ |
+| Học sinh không muốn tham gia | Vai **Người Hô Dừng Hình**, **Người Phỏng Vấn Nhân Vật**, hoặc **Người Ghi 3 Kết Cục** lên bảng |
+
+---
+
+### `TC-I-024` · PHÒNG TRƯNG BÀY TIN GIẢ
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-I-024 | **I** | 🔵 K6–9 · 🟣 K10–12 | 15–40 | 28′ | 8–10 mẩu tin in A4 dán quanh phòng *(thật/giả trộn lẫn)*, phiếu chấm, sticker 2 màu |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Tách sự kiện khỏi ý kiến** trong một mẩu tin cụ thể.
+- **Truy nguồn:** hỏi ai đăng, đăng khi nào, dựa vào đâu.
+- **Chấp nhận mình đã bị lừa** và nói ra dấu hiệu mình đã bỏ sót.
+
+**Cách chơi**
+
+1. Dán 8–10 mẩu tin quanh phòng, đánh số. Trong đó có **tin thật, tin giả, tin thật nhưng ảnh sai ngữ cảnh, tin thật nhưng tiêu đề giật gân**.
+   > 🎤 **HLV:** *"Đi một vòng như đi xem triển lãm. Mỗi mẩu tin dán 1 sticker: xanh nếu em tin, đỏ nếu em nghi. Chưa được bàn với nhau."*
+2. Học sinh đi và dán sticker cá nhân *(8′)*.
+3. HLV công bố đáp án **từng mẩu một**, mỗi mẩu chỉ 1 phút, chỉ ra **dấu hiệu nhận biết cụ thể**: không có tên tác giả · ngày đăng cũ · ảnh tìm ngược ra sự kiện khác · con số không có nguồn · tiêu đề chứa từ cảm xúc mạnh.
+4. Học sinh tự đếm **số lần mình đoán sai** và viết vào phiếu 1 dòng: *"Dấu hiệu em đã bỏ qua là ___."*
+   > 🎤 **HLV:** *"Cả lớp đều sai vài mẩu — kể cả thầy/cô cũng từng chia sẻ nhầm. Điều đáng nói không phải sai mấy mẩu, mà là em bỏ qua dấu hiệu nào."*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | 6 mẩu, tin giả có dấu hiệu rõ *(lỗi chính tả, ảnh ghép thô)* | Nhận đúng ≥4/6 |
+| **L2** | 10 mẩu, có tin thật nhưng ảnh sai ngữ cảnh | Nhận đúng ≥7/10 và nêu được dấu hiệu |
+| **L3** | Thêm 2 mẩu **có số liệu và biểu đồ đánh lừa** *(trục y cắt cụt, chọn mốc so sánh có lợi)* | Chỉ ra được lỗi trong biểu đồ |
+| **L4** | Học sinh **tự làm 1 mẩu tin giả có tính thuyết phục** rồi thách lớp khác phát hiện; kèm bản giải trình các thủ thuật đã dùng | Lớp khác cần >2 phút mới phát hiện; giải trình đủ 3 thủ thuật |
+
+**Câu hỏi rút bài học**
+1. *Mẩu tin nào làm nhiều bạn trong lớp tin nhất? Nó dùng thủ thuật gì — con số, ảnh, hay câu chữ?*
+2. *Em sai mấy mẩu? Dấu hiệu cụ thể mà em đã lướt qua là gì?*
+3. *Trong tuần vừa rồi em có chia sẻ lại tin nào cho bạn bè không? Bây giờ nhìn lại, em có kiểm tra nguồn của nó không?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** học sinh đi lại quanh phòng — dọn lối đi, cặp sách để gọn.
+- **Tâm lý và pháp lý:**
+  - **Không dùng tin thật về người thật đang sống** *(nhất là người trong trường, trong địa phương)*. Che tên, che logo cơ quan báo chí, ghi rõ **"Tư liệu huấn luyện — đã biên tập"** ở góc mỗi tờ.
+  - Tránh tin về tai nạn thương tâm, dịch bệnh gây hoảng sợ, chính trị nhạy cảm, tôn giáo.
+  - **Không so điểm giữa học sinh** và không hỏi *"ai sai nhiều nhất?"*. HLV nên tự kể một lần mình từng tin nhầm — theo nguyên tắc HLV làm mẫu con đường, không làm mẫu sự hoàn hảo.
+  - Ở L4, bài tin giả do học sinh làm **chỉ được dùng trong lớp** và phải huỷ/gỡ ngay sau buổi; tuyệt đối không đăng lên mạng.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Chia 2 lượt tham quan theo nửa lớp; hoặc phát **tập tin in cho mỗi Squad** thay vì dán tường |
+| Lớp quá ít *(<10)* | Tăng lên 12 mẩu và thêm vòng tranh luận từng mẩu trước khi công bố đáp án |
+| Không gian hẹp | Bản **"Tập Hồ Sơ"**: mỗi Squad nhận một tập 10 mẩu tin, làm tại bàn |
+| Học sinh không muốn tham gia | Vai **Người Kiểm Phiếu** *(đếm sticker mỗi mẩu và vẽ biểu đồ lên bảng)* — kết quả này chính là chất liệu bóc tách |
+| Không có máy in | Chép 6 tin ngắn lên bảng/giấy A0, giữ nguyên quy trình |
+
+---
+
+### `TC-I-035` · BẢO TÀNG THẤT BẠI
+
+| Mã | Pha | Khối | Sĩ số | Thời lượng | Dụng cụ |
+|---|:--:|---|:--:|:--:|---|
+| TC-I-035 | **I** | 🔵 K6–9 · 🟣 K10–12 | 12–40 | 25′ | Thẻ hiện vật A5, bút, dây phơi + kẹp *(hoặc bàn trưng bày)* |
+
+**Mục tiêu — vi kỹ năng rèn:**
+- **Kể lại một thất bại mà không tự hạ thấp mình:** nói việc, không nói "em vô dụng".
+- **Tách bài học ra khỏi cảm xúc xấu hổ.**
+- **Bình thường hoá thất bại trong tập thể** — điều kiện để học sinh dám thử ở pha T.
+
+**Cách chơi**
+
+1. HLV mở đầu bằng **hiện vật của chính mình** — một thất bại thật, kể trong 60 giây.
+   > 🎤 **HLV:** *"Đây là 'hiện vật' của thầy/cô: lần đầu thầy/cô đứng lớp, 15 phút đầu học sinh không ai nghe. Bài học ghi ở mặt sau tấm thẻ này."*
+2. Mỗi em viết một **thẻ hiện vật** gồm 3 dòng: **① Tên hiện vật** *("Bài kiểm tra Toán 3 điểm hồi lớp 6")* · **② Chuyện gì đã xảy ra — 2 câu** · **③ Thứ em mang đi được từ đó**.
+3. Treo thẻ lên dây phơi thành **bảo tàng**. Cả lớp đi xem trong im lặng 4 phút.
+   > 🎤 **HLV:** *"Đi như đi trong bảo tàng thật. Không cười, không bình luận. Chỉ đọc."*
+4. Mỗi em chọn **1 hiện vật của người khác** và viết vào giấy nhớ dán bên cạnh: *"Từ hiện vật này, mình học được ___."*
+5. Chốt: HLV đọc to 3–4 câu ở dòng ③ *(không đọc tên)* và hỏi lớp: *"Bao nhiêu bạn có hiện vật giống nhau?"*
+
+**Biến thể nâng độ khó**
+
+| Bậc | Ràng buộc thêm | Dấu hiệu đạt |
+|:--:|---|---|
+| **L1** | Viết **ẩn danh**, chỉ 2 dòng, HLV treo hộ | Có thẻ treo lên, dòng ③ có nội dung thật |
+| **L2** | Ký tên, đủ 3 dòng | Dòng ② kể việc, không phán xét bản thân |
+| **L3** | Thêm dòng ④: **"Việc nhỏ nhất em làm khác đi từ hôm nay"**; kể trực tiếp cho Squad trong 60 giây | Việc nhỏ đủ cụ thể để làm ngay trong tuần |
+| **L4** | Kể hiện vật trước lớp khác/khách mời/phụ huynh, có phần trả lời câu hỏi | Kể được mạch lạc, không tự hạ thấp, không tô hồng |
+
+**Câu hỏi rút bài học**
+1. *Khi đi xem bảo tàng vừa rồi, em thấy có bao nhiêu hiện vật giống của mình? Điều đó làm em nghĩ gì?*
+2. *Dòng khó viết nhất trên thẻ của em là dòng nào — kể chuyện hay rút bài học? Vì sao?*
+3. *Hiện vật của bạn nào làm em muốn dán giấy nhớ vào? Em học được điều gì mà chính bạn ấy có thể chưa nhận ra?*
+
+**⚠️ Lưu ý an toàn**
+- **Thể chất:** dây phơi căng chắc, thấp hơn tầm mắt, không căng ngang lối đi.
+- **Tâm lý — hoạt động chạm nội lực, mức rủi ro cao:**
+  - **HLV bắt buộc kể trước** — không có ngoại lệ. Chưa kể thì chưa được yêu cầu học sinh viết.
+  - **Quyền pass tuyệt đối**: viết ẩn danh, viết về thất bại nhỏ, hoặc chỉ đi xem và dán giấy nhớ.
+  - **Giới hạn chủ đề:** chỉ nhận thất bại về học tập, thi đấu, dự án, thói quen. **Không nhận** chuyện gia đình tan vỡ, mất người thân, bị xâm hại, bệnh tật nặng — HLV nói rõ giới hạn này trước khi phát thẻ.
+  - **Cấm cười, cấm chụp ảnh thẻ của người khác, cấm mang chuyện ra khỏi lớp.** Vi phạm là vi phạm kỷ luật, không phải trêu đùa.
+  - Nếu một học sinh khóc: dừng riêng với em đó, không kéo cả lớp vào, có ACT đưa ra Góc Bình Yên. Nếu nội dung có dấu hiệu nguy cơ *(tự hại, bạo hành)*, HLV **chuyển ngay cho bộ phận tâm lý/ban giám hiệu theo quy trình bảo vệ trẻ em**, không tự xử lý.
+  - **Gỡ bảo tàng ngay cuối buổi**, trả thẻ cho chủ nhân hoặc huỷ; không treo qua ngày.
+
+**🔁 Phương án dự phòng**
+
+| Tình huống | Cách xử lý |
+|---|---|
+| Lớp quá đông *(>40)* | Treo theo Squad ở 4–6 điểm quanh phòng, mỗi Squad tham quan 2 điểm |
+| Lớp quá ít *(<10)* | Mỗi em kể trực tiếp 60 giây, cả nhóm hỏi 1 câu — nhóm nhỏ thì độ sâu thay cho số lượng |
+| Không gian hẹp | Dán thẻ lên mặt bàn, lớp đi vòng quanh bàn theo chiều kim đồng hồ |
+| Học sinh không muốn tham gia | Viết ẩn danh, hoặc chọn **"hiện vật của một nhân vật nổi tiếng"** *(vận động viên, nhà khoa học)* thay cho hiện vật của mình |
+
+---
