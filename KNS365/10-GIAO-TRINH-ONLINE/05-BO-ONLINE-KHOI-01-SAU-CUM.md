@@ -1537,3 +1537,1126 @@ Hai bạn Squad đố nhau **3 câu** *(mặt nào chải trước · rửa tay 
 ### 3.6. Chấm chéo đồng đẳng
 
 Hai bạn Squad **đóng vai**: một bạn làm bác bảo vệ, một bạn chào. Sau đó đổi vai. Bạn quan sát bấm **3 mặt cười** cho câu: *"Bạn có nhìn vào mắt tớ không?"* và nói **1 điều thích**. **Cấm chê.**
+
+### 3.7. PHIẾU KNS 5 LỚP CHIỀU SÂU — `PTH-K01-N2-01`
+
+| Lớp | Nội dung riêng của cụm `K01-N2-01` |
+|:--:|---|
+| **L1 NHẬN BIẾT** | Gọi tên: lời chào · chìa khoá 3 mảnh · 6 kiểu người và 6 lời chào tương ứng. Nối 6 hình mặt người với 6 lời chào |
+| **L2 THẤU HIỂU** | Vì sao lời chào mở được cửa: người được chào **thấy mình được nhìn thấy**. 3 lý do bạn nhỏ ngại chào *(sợ nói sai · sợ người ta không đáp · quên mất)* và cách gỡ từng lý do |
+| **L3 THỰC HÀNH** | Bản Đồ 10 Cánh Cửa × 4 lượt, đo **số người chào/ngày** · **đủ 3 phần /3** · **số lần chào trước** · **số tên bạn mới nhớ được** |
+| **L4 SOI CHIẾU** | Thang mặt cười trước – sau; *"Lần chào nào con thấy khó nhất?"*; lật câu *"Người ta không đáp lại nghĩa là mình chào sai."* |
+| **L5 CHUYỂN HOÁ** | Sứ mệnh 7 ngày: **mỗi ngày chào trước ít nhất 1 người**, và **nhớ tên 1 bạn mới**; bố mẹ ký xác nhận |
+
+**Bản in phiếu — 3 trang A4**
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  PHIẾU KỸ NĂNG SỐNG KNS365 · HỆ GEN VIỆT          🆘 CẦN TRỢ GIÚP·111 ║
+║  Mã: PTH-K01-N2-01   Cụm: LỜI CHÀO MỞ CỬA                            ║
+║  Con tên: ______________  Lớp: 1___  Squad: ____  Ngày: ____________ ║
+║  ⚠️ Con CHỈ CHÀO. Con KHÔNG đi theo, KHÔNG nhận quà của người lạ.     ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 1 · NHẬN BIẾT — "Điều này là gì?"          ⏱ 5–7'   Pha G     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • Lời chào là: câu con nói để cho người kia biết CON NHÌN THẤY HỌ.   │
+│                                                                      │
+│ • CHÌA KHOÁ 3 MẢNH  (con tô màu từng mảnh)                           │
+│        ╭───────╮   ╭───────╮   ╭───────╮                             │
+│        │  👀   │ + │  🙋   │ + │  🗣️   │  = 🔑 CỬA MỞ                │
+│        │NHÌN   │   │GỌI    │   │NÓI    │                             │
+│        │MẮT    │   │ĐÚNG   │   │LỜI    │                             │
+│        ╰───────╯   ╰───────╯   ╰───────╯                             │
+│        ➤ Thiếu 1 mảnh thì cửa KHÔNG mở.                              │
+│        ➤ Mảnh con hay quên nhất: ☐ nhìn mắt ☐ gọi đúng ☐ nói lời     │
+│                                                                      │
+│ • NỐI HÌNH VỚI LỜI CHÀO  (con vẽ đường nối)                          │
+│     👴 ông      ○        ○  "Cháu chào cô ạ."                        │
+│     👩 mẹ       ○        ○  "Em chào chị."                           │
+│     👨‍🏫 cô giáo  ○        ○  "Con chào ông ạ."                        │
+│     👧 chị      ○        ○  "Chào cậu!"                              │
+│     🧒 bạn      ○        ○  "Con chào mẹ ạ."                         │
+│     👮 bác bảo vệ ○      ○  "Cháu chào bác ạ."                       │
+│   Con nối đúng: ____ / 6                                             │
+│                                                                      │
+│ 📏 HAI VẠCH CHUẨN                                                    │
+│   ĐẠT      : Mỗi ngày chào 3 người, đủ 2/3 mảnh, 5/7 ngày.           │
+│   XUẤT SẮC : Mỗi ngày ≥5 người, đủ 3/3 mảnh, và CON CHÀO TRƯỚC.      │
+│   ➤ Con nhắm vạch:  ☐ Đạt    ☐ Xuất sắc                             │
+│                                                                      │
+│ ✍️ Bằng lời của con: "Chào là ______________________________________" │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 2 · THẤU HIỂU — "Vì sao lại như vậy?"      ⏱ 6–8'   Pha I     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • VÌ SAO LỜI CHÀO MỞ ĐƯỢC CỬA                                        │
+│   ┌──────────┐   ┌──────────────┐   ┌──────────────┐                │
+│   │ Con nhìn │ → │ Người ta biết│ → │ Người ta muốn│                │
+│   │ và chào  │   │ mình ĐƯỢC    │   │ nói chuyện   │                │
+│   │          │   │ NHÌN THẤY    │   │ với con      │                │
+│   └──────────┘   └──────────────┘   └──────────────┘                │
+│   ➤ Không chào thì người ta KHÔNG BIẾT con muốn làm quen.            │
+│                                                                      │
+│ • 3 LÝ DO BẠN NHỎ NGẠI CHÀO  (con khoanh lý do của con)              │
+│   ① Sợ nói sai       →  Gỡ: nói sai cũng không sao. Nói lại là được. │
+│   ② Sợ người ta      →  Gỡ: người lớn bận, có khi không nghe.        │
+│      không đáp lại       KHÔNG PHẢI con chào sai.                    │
+│   ③ Quên mất         →  Gỡ: dán 1 hình chìa khoá ở cửa nhà.          │
+│                                                                      │
+│ • CÂU CẦN LẬT                                                        │
+│   "Người ta không đáp lại nghĩa là mình chào sai."                   │
+│   ➤ ĐÚNG hay SAI?  ☐ Đúng  ☐ Sai                                    │
+│   ➤ Vì sao? ______________________________________________________   │
+│                                                                      │
+│ ⚠️ ĐIỀU NÀY QUAN TRỌNG HƠN LỜI CHÀO                                  │
+│   Con chào người lạ khi có người lớn của con ở gần — được.           │
+│   Nhưng con KHÔNG đi theo. KHÔNG nhận quà. KHÔNG lên xe.             │
+│   Người lạ nói "mẹ nhờ chú đón" mà con không biết trước → con        │
+│   chạy tới chỗ đông người và gọi to. Gọi 111 nếu cần.                │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 3 · THỰC HÀNH — "Con làm được chưa?"      ⏱ 24'    Pha T     │
+├──────────────────────────────────────────────────────────────────────┤
+│ 🗺️ BẢN ĐỒ 10 CÁNH CỬA  (mỗi lần chào một người, tô 1 cánh cửa)       │
+│   ┌───┐┌───┐┌───┐┌───┐┌───┐┌───┐┌───┐┌───┐┌───┐┌───┐                 │
+│   │ 1 ││ 2 ││ 3 ││ 4 ││ 5 ││ 6 ││ 7 ││ 8 ││ 9 ││10 │                 │
+│   └───┘└───┘└───┘└───┘└───┘└───┘└───┘└───┘└───┘└───┘                 │
+│   Con tô được: ____ / 10 cánh                                        │
+│                                                                      │
+│ 📊 BẢNG LUYỆN 4 LƯỢT                                                 │
+│  ┌────┬──────┬────────┬────────┬─────────┬──────────┬──────┬─────┐  │
+│  │Lượt│ Ngày │Số người│Đủ 3    │Chào     │Tên bạn   │ Tự   │ Bậc │  │
+│  │    │      │ chào   │phần /3 │trước    │mới nhớ   │ chấm │     │  │
+│  ├────┼──────┼────────┼────────┼─────────┼──────────┼──────┼─────┤  │
+│  │ 1  │      │        │        │         │          │😟😐🙂😃│ B1  │  │
+│  │ 2  │      │        │        │         │          │😟😐🙂😃│ B2  │  │
+│  │ 3  │      │        │        │         │          │😟😐🙂😃│ B3  │  │
+│  │ 4  │      │        │        │         │          │😟😐🙂😃│ B4  │  │
+│  └────┴──────┴────────┴────────┴─────────┴──────────┴──────┴─────┘  │
+│                                                                      │
+│ 🎙️ GHI ÂM 20 GIÂY — con chào 3 kiểu người:                           │
+│    ☐ cô giáo    ☐ bác bảo vệ    ☐ bạn                               │
+│                                                                      │
+│ 👋 LÀM QUEN BẠN MỚI — 3 bước                                         │
+│    ① "Chào cậu."  ② "Tớ tên …"  ③ "Cậu tên gì?" → NHẮC LẠI tên bạn  │
+│    Tên bạn mới con nhớ được: 1.________ 2.________ 3.________       │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 4 · SOI CHIẾU — "Con đang ở đâu?"         ⏱ 5'     Pha T     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • TRƯỚC KHI HỌC, chào người lạ con thấy:  😟  😐  🙂  😃              │
+│ • BÂY GIỜ, chào người lạ con thấy:        😟  😐  🙂  😃              │
+│                                                                      │
+│ • Lần chào KHÓ NHẤT của con là chào ai? ____________________________ │
+│   Vì sao khó? _____________________________________________________  │
+│                                                                      │
+│ • Lần chào con THÍCH NHẤT là lần nào? ______________________________ │
+│   Người đó đã làm gì? _____________________________________________  │
+│                                                                      │
+│ • CON ĐANG Ở BẬC NÀO?                                                │
+│   ◔ B1 Con biết chào là gì                                           │
+│   ◑ B2 Con chào khi có người nhắc                                    │
+│   ◕ B3 Con tự chào, không cần ai nhắc                                │
+│   ● B4 Con chào TRƯỚC, và con nhắc được bạn cùng chào                │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 5 · CHUYỂN HOÁ — "Con mang đi đâu?"       ⏱ 4'     Pha A     │
+├──────────────────────────────────────────────────────────────────────┤
+│ 🎯 SỨ MỆNH 7 NGÀY CỦA CON                                            │
+│    Mỗi ngày con CHÀO TRƯỚC ít nhất 1 người.                          │
+│    Trong tuần con nhớ được tên của 1 bạn mới.                        │
+│                                                                      │
+│    HABIT-5:  Neo ☐  Nhỏ ☐  Nhìn thấy ☐  Người chứng ☐  Thưởng ☐      │
+│    • Neo của con: ngay khi con ______________________________        │
+│    • Bản nhỏ nhất: chào 1 người                                      │
+│    • Nhìn thấy: tô 1 cánh cửa trên Bản Đồ                            │
+│    • Người chứng: ____________________                                │
+│    • Thưởng: con tô cánh cửa và nói to "Xong rồi!"                   │
+│                                                                      │
+│    ┌───┬───┬───┬───┬───┬───┬───┐                                     │
+│    │ T2│ T3│ T4│ T5│ T6│ T7│ CN│   ← con tô ô mỗi ngày đã làm        │
+│    └───┴───┴───┴───┴───┴───┴───┘                                     │
+│                                                                      │
+│    ✍️ Chữ ký người chứng: ______________  Ngày: ____________         │
+│    ⛔ Thiếu chữ ký này thì cụm CHƯA được tính hoàn thành.             │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 💎 PHẦN 4 — BÀI HỌC TÍCH LUỸ `P4-TL` · 9 phút · Pha **T**
+
+> 🔒 **Phần này khoá cho tới khi con đã nộp P3.**
+
+### 4.1. Năm nguyên tắc rút ra *(con tự nói trước — bản chuẩn hiện sau)*
+
+| # | Nguyên tắc | Câu cho trẻ lớp 1 |
+|:--:|---|---|
+| 1 | Chìa khoá có 3 mảnh | *"Nhìn mắt – gọi đúng – nói lời. Thiếu một mảnh, cửa không mở."* |
+| 2 | Chào trước là món quà | *"Ai chào trước, người đó tặng quà."* |
+| 3 | Không đáp lại ≠ chào sai | *"Người lớn bận. Con chào đúng là đủ rồi."* |
+| 4 | Nhắc lại tên là mẹo nhớ | *"Nghe tên bạn xong, con nói lại tên bạn ngay."* |
+| 5 | Chào thì được, đi theo thì không | *"Con chỉ chào. Con không đi theo người lạ."* |
+
+### 4.2. Năm thẻ ghi nhớ *(flashcard, có hình, có nút loa)*
+
+| Thẻ | Mặt trước *(hình)* | Mặt sau *(lời, có loa đọc)* |
+|:--:|---|---|
+| 1 | 🔑 chìa khoá 3 mảnh | *"Nhìn mắt · Gọi đúng · Nói lời"* |
+| 2 | 👴👩👨‍🏫👧🧒👮 sáu khuôn mặt | *"Ông – bà: con chào ạ. Cô – chú: cháu chào ạ. Anh – chị: em chào. Bạn: chào cậu!"* |
+| 3 | 🚪 cánh cửa đang mở | *"Con chào trước. Cửa mở trước."* |
+| 4 | 👂 tai + miệng | *"Nghe tên bạn xong, nói lại tên bạn ngay."* |
+| 5 | ⚠️ bàn tay chặn + 111 | *"Con chỉ chào. Không đi theo. Không nhận quà."* |
+
+### 4.3. Sơ đồ tổng kết 1 hình
+
+```
+                        🔑 LỜI CHÀO
+                             │
+        ┌────────────────────┼────────────────────┐
+        │                    │                    │
+    👀 NHÌN MẮT         🙋 GỌI ĐÚNG          🗣️ NÓI LỜI
+        │                    │                    │
+        └────────────────────┴────────────────────┘
+                             │
+                        🚪 CỬA MỞ
+                             │
+              ┌──────────────┴──────────────┐
+        👋 LÀM QUEN                    ⚠️ NHƯNG
+        ① Chào ② Nói tên ③ Hỏi lại     Chỉ chào — không đi theo
+```
+
+### 4.4. Lịch ôn lặp ngắt quãng
+
+| Lần | Sau khi học | Việc làm · 3 phút |
+|:--:|:--:|---|
+| 1 | 1 ngày | Nhìn 6 khuôn mặt, nói đúng 6 lời chào |
+| 2 | 3 ngày | Kể lại 3 mảnh chìa khoá, không nhìn thẻ |
+| 3 | 7 ngày | Chào 3 người rồi kể lại cho bố mẹ |
+| 4 | 15 ngày | Nói tên 3 bạn mới quen được từ hôm học |
+| 5 | 30 ngày | Dạy lại chìa khoá 3 mảnh cho em nhỏ hoặc cho búp bê |
+
+### 4.5. Bắc cầu học tập
+
+| Nối sang | Nội dung |
+|---|---|
+| **Cụm sau `K01-N2-02`** | Chào rồi thì nói gì tiếp — *cảm ơn · xin lỗi · lời đề nghị* |
+| **Môn Tiếng Việt** | Bài "Chào hỏi" — luyện nói theo vai |
+| **Đạo đức lớp 1** | Bài lễ phép với ông bà cha mẹ |
+| **Ở nhà** | Bố mẹ chào con trước vào buổi sáng — trẻ học bằng cách được làm mẫu |
+| **Trò chơi lớp** | `TC-E-013 Truyền Điện` · `TC-T-003 Chỉ Luyện Giao Mắt` |
+
+---
+
+## 🚀 PHẦN 5 — VẬN DỤNG THỰC TIỄN `P5-VD` · 7 ngày · Pha **A**
+
+### 5.1. Sứ mệnh 7 ngày — `PSM-K01-N2-01`
+
+> 🎯 **"MỖI NGÀY MỘT CÁNH CỬA"** — mỗi ngày con **chào trước** ít nhất một người.
+
+| Ngày | Việc con làm | Ô con tô |
+|:--:|---|:--:|
+| **T2** | Chào trước **1 người trong nhà** | ☐ |
+| **T3** | Chào trước **bác bảo vệ hoặc cô lao công** | ☐ |
+| **T4** | Chào trước **cô giáo**, đủ 3 mảnh | ☐ |
+| **T5** | Làm quen **1 bạn con chưa nói chuyện bao giờ** — đủ 3 bước | ☐ |
+| **T6** | Chào trước **5 người** trong một ngày | ☐ |
+| **T7** | Chào **bác hàng xóm** *(có bố mẹ ở gần)* | ☐ |
+| **CN** | **Dạy lại** chìa khoá 3 mảnh cho em nhỏ hoặc búp bê | ☐ |
+
+### 5.2. Việc của bố mẹ trong 7 ngày này
+
+| Ngày | Bố mẹ làm gì | Không làm gì |
+|:--:|---|---|
+| Mỗi sáng | **Chào con trước**: *"Chào con buổi sáng!"* — nhìn mắt con | Không nhắc *"chào đi con"* trước mặt người khác |
+| Mỗi tối | Hỏi **một câu duy nhất**: *"Hôm nay con chào ai trước?"* | Không hỏi *"sao hôm nay không chào?"* |
+| Khi con quên | Làm mẫu, không sửa lưng | Không phê bình trước mặt người được chào |
+| Cuối tuần | Ký xác nhận vào phiếu | Không ký hộ khi con chưa làm |
+
+> 🎤 **Câu bố mẹ nên nói khi con chào xong:** *"Bố/mẹ thấy con nhìn vào mắt bác. Bác cười với con đấy."* — mô tả điều nhìn thấy, không khen chung chung.
+
+### 5.3. Ba mức khó tăng dần trong tuần
+
+| Mức | Việc | Dấu hiệu đạt |
+|:--:|---|---|
+| **Dễ** | Chào người con quen, khi được chào trước | Đáp lại đủ 2/3 mảnh |
+| **Vừa** | Con chào trước người con quen | Đủ 3/3 mảnh, giọng nghe rõ |
+| **Khó** | Con chào trước người con chưa quen *(có người lớn ở gần)* | Đủ 3/3 mảnh, không nấp sau lưng bố mẹ |
+
+### 5.4. Nếu con chưa làm được
+
+| Tình huống | Cách xử — dành cho bố mẹ và HLV |
+|---|---|
+| Con nấp sau lưng bố mẹ | **Không kéo con ra.** Bố mẹ chào trước, con đứng cạnh nghe. Tuần sau thử lại |
+| Con chào rất nhỏ | Đó vẫn là **có chào**. Ghi nhận đã, âm lượng luyện sau |
+| Con bị người lớn không đáp | Nói ngay với con: *"Bác ấy đang bận. Con chào đúng rồi."* |
+| Con chỉ chào người quen | Đúng lứa tuổi. Giữ ở mức đó, **không ép** |
+| Con sợ nói chuyện với người lạ | 👍 **Đây là bản năng bảo vệ tốt.** Không phá nó. Chỉ mở rộng trong phạm vi **có người lớn của con ở gần** |
+
+---
+
+## 📊 PHẦN 6 — ĐÁNH GIÁ BÀI HỌC `P6-DG` · 12 phút
+
+### 6.1. Mười câu hỏi tình huống *(phụ huynh đọc hộ đề · con bấm chọn hình)*
+
+| # | Tình huống | Lựa chọn | Đáp án |
+|:--:|---|---|:--:|
+| 1 | Con gặp bà ở cửa. Con nói gì? | A. *"Chào bà."* · B. *"Con chào bà ạ."* · C. Im lặng đi qua | **B** |
+| 2 | Chìa khoá lời chào có mấy mảnh? | A. 1 · B. 2 · C. **3** | **C** |
+| 3 | Con chào cô giáo nhưng nhìn xuống sàn. Cửa có mở không? | A. Có · B. **Không, thiếu mảnh nhìn mắt** | **B** |
+| 4 | Con chào bác bảo vệ, bác không đáp. Nghĩa là gì? | A. Con chào sai · B. Bác ghét con · C. **Bác đang bận — con chào đúng rồi** | **C** |
+| 5 | Bạn mới nói *"Tớ tên Bo."* Con nên làm gì? | A. Gật đầu · B. **Nói lại: "Chào Bo!"** · C. Bỏ đi | **B** |
+| 6 | Làm quen bạn mới có mấy bước? | A. **3** · B. 5 · C. 10 | **A** |
+| 7 | Chú lạ ở cổng trường chào con rất vui và mời kẹo. Con làm gì? | A. Nhận kẹo · B. **Chào lại rồi đi vào trường, kể với cô** · C. Đi theo chú | **B** |
+| 8 | Chú lạ nói *"Mẹ nhờ chú đón con."* Con làm gì? | A. Lên xe · B. **Không đi. Chạy tới chỗ đông người, gọi to** · C. Hỏi chú tên gì rồi mới đi | **B** |
+| 9 | Con gặp chị lớp 5. Con nói gì? | A. *"Chào cậu."* · B. **"Em chào chị."** · C. *"Cháu chào chị ạ."* | **B** |
+| 10 | Ai chào trước thì được gì? | A. Không được gì · B. **Người đó tặng một món quà** · C. Bị cười | **B** |
+
+> ⚠️ **Câu 7 và câu 8 là câu an toàn.** Nếu con chọn sai một trong hai câu này, hệ thống **không cho qua**, hiện lại video ngắn 40 giây và **báo cho tài khoản phụ huynh**. Đây là hai câu duy nhất trong bộ có cơ chế này.
+
+### 6.2. Tự đánh giá thang B1–B4
+
+| Bậc | Câu hỏi cho con | Con chọn |
+|:--:|---|:--:|
+| ◔ B1 | *Con biết chào là gì và có mấy mảnh?* | ☐ |
+| ◑ B2 | *Con chào khi có người nhắc?* | ☐ |
+| ◕ B3 | *Con tự chào, không cần ai nhắc?* | ☐ |
+| ● B4 | *Con chào trước, và con nhắc được bạn cùng chào?* | ☐ |
+
+### 6.3. Rubric sản phẩm *(HLV chấm)* — `R-K01-N2-01`
+
+| Tiêu chí | ◔ B1 | ◑ B2 | ◕ B3 | ● B4 |
+|---|---|---|---|---|
+| **Đủ 3 mảnh** | Nói được tên 3 mảnh | Làm được 2/3 khi có nhắc | Đủ 3/3, không cần nhắc | Đủ 3/3 với cả người chưa quen |
+| **Chào trước** | Chưa chào trước lần nào | 1–2 lần trong tuần | ≥3 lần | Ngày nào cũng có, và rủ được bạn |
+| **Gọi đúng người** | Nhầm ≥3 lần | Đúng 3/5 | Đúng 5/5 | Đúng cả với người mới gặp |
+| **Làm quen bạn mới** | Chưa làm | 1 bạn, chưa nhớ tên | 1 bạn, nhớ tên | ≥3 bạn, nhớ đủ tên |
+| **An toàn** | Chưa nói lại được quy tắc | Nói được *"không đi theo"* | Nói đủ *"không đi theo · không nhận quà"* | Xử đúng tình huống chú lạ nói mẹ nhờ đón |
+
+> 🔒 **Tiêu chí "An toàn" là tiêu chí phủ quyết.** Con chưa đạt B2 ở dòng này thì **chưa được ghi hoàn thành cụm**, dù bốn dòng trên đều tốt.
+
+### 6.4. Đánh giá đồng đẳng
+
+Bạn Squad bấm **3 mặt cười** cho một câu duy nhất: *"Bạn có nhìn vào mắt tớ khi chào không?"* và nói **1 điều thích**. **Cấm chê.**
+
+### 6.5. Bảng hiển thị cho con và bố mẹ
+
+```
+ ┌────────────────────────────────────────────────────────────────┐
+ │  CỤM 3 · LỜI CHÀO MỞ CỬA          K01-N2-01     🆘 · 111        │
+ ├────────────────────────────────────────────────────────────────┤
+ │  CON ĐÃ LÀM ĐƯỢC                                               │
+ │   🚪 Cánh cửa đã tô          ████████░░   8 / 10               │
+ │   🔑 Đủ 3 mảnh              ███████░░░   lượt 4: 3/3           │
+ │   👋 Chào trước             ██████░░░░   5 lần trong tuần      │
+ │   🧒 Tên bạn mới nhớ được   ██████████   3 bạn                 │
+ │                                                                │
+ │  BẬC CỦA CON:  ◔ ─ ◑ ─ ●◕ ─ ○      (B3 · Làm giỏi)            │
+ │                                                                │
+ │  MỘT ĐIỀU DUY NHẤT CẦN CHỈNH                                   │
+ │   Con hay quên MẢNH NHÌN MẮT khi chào người lớn.               │
+ │   → Lượt sau con thử: nói tên người đó trước, rồi mới chào.    │
+ │                                                                │
+ │  CÂU BỐ MẸ HỎI CON MỖI TỐI                                     │
+ │   "Hôm nay con chào ai trước?"                                 │
+ └────────────────────────────────────────────────────────────────┘
+```
+
+> ⛔ **Không có bảng xếp hạng lớp.** Chỉ hiển thị mức tăng của chính con và tổng của Squad.
+
+---
+
+## 🎧 PHẦN 7 — AUDIO CHUYÊN SÂU `P7-AU` · 13 phút
+
+> 🔓 Mở từ tầng **HS-T2**. Với khối 1: **nghe cùng bố mẹ**. Tài khoản phụ huynh nhận kèm **bản chép lời đầy đủ**.
+
+### 7.1. Cấu trúc audio
+
+| Đoạn | Thời lượng | Nội dung |
+|:--:|:--:|---|
+| Mở | 0:00–0:40 | Nhạc nhẹ. Giọng kể: *"Hôm nay chúng mình nghe chuyện về một cánh cửa."* |
+| Truyện 1 | 0:40–4:30 | **"Bác bảo vệ không có tên"** |
+| Nghỉ hỏi | 4:30–5:10 | Một câu hỏi, dừng 20 giây cho con trả lời |
+| Truyện 2 | 5:10–9:20 | **"Bạn Nấm và cái tên nhớ được"** |
+| Nghỉ hỏi | 9:20–10:00 | Một câu hỏi cho bố mẹ và con cùng trả lời |
+| Chốt | 10:00–13:00 | Ba mảnh chìa khoá + quy tắc an toàn + lời chúc ngủ ngon |
+
+### 7.2. Bản chép lời — Truyện 1 *(trích, dùng nguyên văn khi thu âm)*
+
+> *"Ở trường của Nấm có một bác bảo vệ. Bác ngồi ở cái ghế nhỏ cạnh cổng, từ sáng sớm tới chiều tối.*
+>
+> *Mỗi ngày có hơn tám trăm bạn đi qua cánh cổng đó. Tám trăm bạn.*
+>
+> *Và mỗi ngày, bác nghe được bao nhiêu lời chào, các con đoán xem?*
+>
+> *(dừng 5 giây)*
+>
+> *Ba. Chỉ ba lời chào thôi.*
+>
+> *Một hôm Nấm đi ngang, Nấm dừng lại. Nấm nhìn vào mắt bác. Nấm nói: 'Cháu chào bác ạ.'*
+>
+> *Bác ngẩng lên. Bác nhìn Nấm rất lâu. Rồi bác cười — cái cười làm mắt bác nheo lại thành hai đường cong.*
+>
+> *Bác nói: 'Bác chào cháu. Cháu tên gì?'*
+>
+> *Nấm nói: 'Cháu tên Nấm ạ.'*
+>
+> *Hôm sau, khi Nấm đi tới cổng, bác gọi to: 'Nấm ơi! Sáng nay đi học sớm thế!'*
+>
+> *Các con biết không — trong tám trăm bạn của trường, bác nhớ tên ba bạn. Ba bạn đã chào bác.*
+>
+> *Lời chào không chỉ mở cửa cho bác. Lời chào mở cửa cho chính Nấm — bây giờ Nấm có thêm một người bạn ở cổng trường."*
+
+**Câu hỏi nghỉ 1:** *"Nếu ngày mai con chào một người mà con chưa từng chào bao giờ — con sẽ chào ai?"* *(dừng 20 giây)*
+
+### 7.3. Bản chép lời — Truyện 2 *(trích)*
+
+> *"Nấm hay quên tên các bạn. Nghe xong là quên.*
+>
+> *Một hôm chị Mây bảo Nấm: 'Chị mách em một mẹo. Nghe tên bạn xong, em nói lại tên bạn ngay lập tức. Nói ra tiếng.'*
+>
+> *Hôm sau có bạn mới. Bạn ấy nói: 'Tớ tên Bo.'*
+>
+> *Nấm nói ngay: 'Chào Bo!'*
+>
+> *Hai chữ thôi. Nhưng ba ngày sau Nấm vẫn nhớ. Và Bo cũng nhớ — vì Bo là bạn duy nhất trong lớp được gọi đúng tên ngay từ ngày đầu.*
+>
+> *Cái tên là món quà nhỏ nhất mà một người có thể tặng con. Con nói lại tên họ — nghĩa là con nhận món quà đó."*
+
+**Câu hỏi nghỉ 2 *(cho cả bố mẹ và con)*:** *"Bố/mẹ còn nhớ tên người bạn đầu tiên hồi bố/mẹ đi học lớp 1 không?"*
+
+### 7.4. Đoạn chốt — nguyên văn
+
+> *"Trước khi ngủ, con nhớ ba mảnh chìa khoá nhé: nhìn mắt — gọi đúng — nói lời.*
+>
+> *Và một điều nữa, điều này quan trọng hơn tất cả: **con chỉ chào thôi**. Con không đi theo người lạ. Con không nhận quà của người lạ. Con không lên xe của người lạ — kể cả khi họ nói là bố mẹ nhờ.*
+>
+> *Nếu có chuyện gì làm con thấy sợ, con nói với bố mẹ, với cô giáo, hoặc gọi số **một – một – một**.*
+>
+> *Ngủ ngon nhé. Mai con lại mở thêm một cánh cửa."*
+
+### 7.5. Lưu ý sản xuất
+
+| Hạng mục | Chuẩn |
+|---|---|
+| Giọng đọc | Nữ, ấm, tốc độ **≤110 từ/phút** — chậm hơn giọng kể thông thường |
+| Nhạc nền | Nhạc cụ dân tộc nhẹ *(sáo, đàn tranh)*, âm lượng ≤20% giọng đọc |
+| Khoảng lặng | Sau mỗi câu hỏi để **đúng 20 giây im lặng**, không nhạc |
+| Định dạng | MP3 128kbps · kèm bản chép lời `.txt` cho tài khoản phụ huynh |
+| Cấm | Không hiệu ứng giật mình, không tiếng động lớn, không giọng doạ nạt |
+
+---
+
+# CỤM 4 · `K01-N2-04` — **CỦA CHUNG – CỦA RIÊNG**
+### Khối 1 · Nhóm 2 Giao tiếp xã hội · Chữ GITA trội: **A** · Bài gốc: #16 Em học cách chia sẻ · #17 Mượn và trả đồ dùng · #19 Nhường nhịn em nhỏ
+
+## THÔNG TIN CHUNG
+
+| Hạng mục | Nội dung |
+|---|---|
+| **Mã cụm** | `K01-N2-04` |
+| **Mạch năng lực** | **M4** Giao tiếp & Hợp tác · **M1** Tự chủ |
+| **Chữ GITA trội** | **A** — Action: biến việc chia sẻ và mượn–trả thành **thói quen có quy trình** |
+| **Bài gốc hấp thụ** | #16 Em học cách chia sẻ · #17 Mượn và trả đồ dùng · #19 Nhường nhịn em nhỏ |
+| **Cấp Độ hướng tới** | Cấp 1 ⚪ Pin Trắng → Cấp 2 🟢 Pin Xanh Lá |
+| **Bậc sâu mục tiêu** | ② Thói quen |
+| **Mã phiếu** | `PTH-K01-N2-04` · `PSM-K01-N2-04` · `R-K01-N2-04` |
+
+> ⭐ **Điểm khác biệt sư phạm của cụm này — đọc trước khi dạy.**
+> Rất nhiều bài học về "chia sẻ" và "nhường nhịn" dạy trẻ rằng **cho đi luôn luôn đúng** và **em bé luôn được ưu tiên**. Cụm này **không dạy như vậy**, vì hai lý do:
+> ① Một đứa trẻ học được rằng đồ của mình ai đòi cũng phải đưa thì cũng học luôn rằng **ranh giới của mình không được tôn trọng** — điều này đi ngược trực tiếp với cụm an toàn thân thể `K01-N3-02`.
+> ② Nhường vì bị bắt nhường thì không phải là rộng lượng, đó là chịu thua. Nó tạo ức chế và sinh ra ghen tị với em.
+> **Cụm này dạy ba việc tách bạch:** *phân biệt của chung – của riêng* · *quy trình mượn–trả* · *nhường có lý do và có giới hạn*. Trẻ được dạy rõ rằng **con có quyền giữ đồ của con**, và **nhường là con chọn, không phải con bị bắt**.
+
+---
+
+## 📘 PHẦN 1 — KIẾN THỨC `P1-KT` · 13 phút · Pha **G**
+
+### 1.1. Video mở — 80 giây *(lời thoại thật)*
+
+> *(Hình vẽ: hai bạn nhỏ, một hộp bút màu, một quả bóng ở sân)*
+>
+> **Giọng kể:** *"Trên bàn có hai thứ. Một hộp bút màu. Và một quả bóng ở ngoài sân.*
+>
+> *Hộp bút màu là của bạn Bo. Mẹ Bo mua cho Bo.*
+>
+> *Quả bóng ở sân là của cả trường. Ai cũng chơi được.*
+>
+> *Hai thứ này khác nhau. Và cách con dùng chúng cũng khác nhau.*
+>
+> *Hôm nay chúng mình học ba cái hộp: **của con**, **của bạn**, và **của chung**.*
+>
+> *Biết được thứ gì nằm trong hộp nào — con sẽ không bao giờ phải cãi nhau vì đồ đạc nữa."*
+
+### 1.2. Bốn video kiến thức
+
+| # | Tên video | Phút | Nội dung |
+|:--:|---|:--:|---|
+| 1 | **Ba cái hộp** | 3:10 | Của con · Của bạn · Của chung — 12 đồ vật, trẻ kéo vào đúng hộp |
+| 2 | **Bốn bước mượn – trả** | 3:40 | HỎI → ĐỢI → GIỮ → TRẢ. Diễn bằng rối tay |
+| 3 | **Chia sẻ là gì và không là gì** | 2:50 | Chia sẻ ≠ đưa hết. Chia sẻ ≠ bị đòi thì phải cho |
+| 4 | **Nhường em — nhưng nhường cái gì** | 3:20 | Nhường lượt chơi ✓ · Nhường đồ ăn ✓ · Nhường đồ riêng của con ✗ |
+
+### 1.3. Bảng khái niệm cốt lõi
+
+| Khái niệm | Nói với trẻ lớp 1 | Hình minh hoạ |
+|---|---|---|
+| **Của con** | *"Bố mẹ mua cho con. Con quyết định."* | 🎒 cặp có tên con |
+| **Của bạn** | *"Bố mẹ bạn mua cho bạn. Bạn quyết định."* | 🖍️ hộp bút có tên bạn |
+| **Của chung** | *"Của cả lớp, cả trường. Ai cũng dùng được, và ai cũng phải giữ."* | ⚽ quả bóng sân trường |
+| **Mượn** | *"Con dùng một lúc rồi TRẢ LẠI."* | 🤝 hai bàn tay và mũi tên quay về |
+| **Chia sẻ** | *"Con CHỌN cho bạn dùng cùng."* | 🍪 cái bánh bẻ đôi |
+| **Nhường** | *"Con để bạn hoặc em đi trước, chơi trước."* | 🚪 cánh cửa mở, một bạn đứng lùi lại |
+
+> ⚠️ **Từ khoá bắt buộc trong mọi video:** *"Con **chọn** chia sẻ"* — không bao giờ nói *"con **phải** chia sẻ"*.
+
+### 1.4. Infographic 1 trang — **"BA CÁI HỘP"**
+
+```
+   ┌─────────────────── BA CÁI HỘP ───────────────────┐
+   │                                                  │
+   │   📦 CỦA CON       📦 CỦA BẠN      📦 CỦA CHUNG  │
+   │   ───────────      ───────────     ───────────   │
+   │   Con quyết định   Bạn quyết định  Cả lớp dùng   │
+   │                                                  │
+   │   • cặp của con    • bút của bạn   • bóng sân    │
+   │   • bình nước      • truyện bạn    • sách góc đọc│
+   │   • áo khoác       • đồ chơi bạn   • bàn ghế     │
+   │   • đồ chơi con    mang đi          • đồ chơi lớp│
+   │                                     • cầu trượt  │
+   ├──────────────────────────────────────────────────┤
+   │   MUỐN DÙNG ĐỒ Ở HỘP "CỦA BẠN"?                  │
+   │        🗣️ HỎI  →  ⏳ ĐỢI  →  🤲 GIỮ  →  ↩️ TRẢ    │
+   │                                                  │
+   │   ⚠️ ĐỢI nghĩa là: bạn nói KHÔNG cũng được.      │
+   │      Bạn KHÔNG PHẢI cho con mượn.                │
+   │      Và con cũng KHÔNG PHẢI cho bạn mượn.        │
+   └──────────────────────────────────────────────────┘
+```
+
+**Mô tả bản in:** A4 dọc. Nửa trên là **ba cái hộp vẽ to** để trẻ dán sticker đồ vật vào đúng hộp. Nửa dưới in **bốn bước mượn–trả** dạng bốn ô có mũi tên. Góc dưới in thanh an toàn 🆘 111 và dòng: *"Đồ của con là của con. Con có quyền nói không."*
+
+### 1.5. "Thế nào là làm đúng" — rubric công bố trước
+
+| Tiêu chí | ĐẠT | XUẤT SẮC |
+|---|---|---|
+| Phân loại 12 đồ vật vào 3 hộp | Đúng ≥9/12 | Đúng 12/12 và giải thích được 1 trường hợp khó |
+| Bốn bước mượn – trả | Đủ 3/4 bước | Đủ 4/4, **có trả đúng buổi** |
+| Số lần chia sẻ trong tuần | ≥3 lần | ≥5 lần, và có ≥1 lần **con tự đề nghị** |
+| Nói "không" khi cần | Nói được, dù nhỏ | Nói rõ và **nêu được lý do** |
+| Nhường em | Nhường được 1 lần | Nhường ≥3 lần và **nói được vì sao mình nhường** |
+
+> ⚠️ **Kiểm tra:** P1 mới nói *ba hộp là gì* và *bốn bước là gì*. **Cách xử khi bị đòi đồ** và **cách nói không mà không mất bạn** nằm ở **P3**.
+
+---
+
+## 🌊 PHẦN 2 — TRẢI NGHIỆM `P2-TN` · 19 phút · Pha **I**
+
+### Hình thức: **Trò chơi phân loại + Phim rối dừng-chọn — "CÁI BÚT CỦA BO"**
+
+☑ Trò chơi kéo-thả ☑ Phim rối dừng-chọn
+
+**Phần A — "Ba cái hộp" *(7 phút)*.** Màn hình hiện 12 đồ vật, con kéo vào đúng hộp.
+
+| Đồ vật | Hộp đúng | Vì sao |
+|---|:--:|---|
+| Cặp có tên con | Của con | Bố mẹ mua cho con |
+| Bút màu bạn mang đi học | Của bạn | Của bạn, bạn quyết định |
+| Quả bóng ở sân trường | Của chung | Cả trường dùng |
+| Bình nước có tên con | Của con | Và **không ai được uống chung bình của con** |
+| Sách ở góc đọc của lớp | Của chung | |
+| Cái bánh mẹ cho con mang đi | Của con | Con **chọn** có chia hay không |
+| Bàn ghế trong lớp | Của chung | Dùng chung và **giữ chung** |
+| Áo khoác của bạn treo trên ghế | Của bạn | |
+| Bộ xếp hình của lớp | Của chung | |
+| Đồ chơi con mang từ nhà đi | Của con | |
+| Bút chì cô giáo cho mượn | Của chung *(mượn)* | Dùng xong **trả lại cô** |
+| Khăn lau tay của con | Của con | ⚠️ Đồ vệ sinh cá nhân **không dùng chung** |
+
+> 🎤 **Giọng hệ thống khi con kéo đúng "khăn lau tay" vào hộp Của con:** *"Đúng rồi. Khăn, cốc, bàn chải, bình nước — những thứ chạm vào miệng và da của con thì **chỉ mình con dùng**. Đây không phải là ích kỷ. Đây là giữ vệ sinh."*
+
+**Phần B — Phim rối dừng-chọn *(12 phút)*.** Phim dừng ở **3 điểm**, mỗi điểm con chọn 1 trong 3 hình.
+
+| Điểm dừng | Tình huống | Lựa chọn | Điều con học |
+|:--:|---|---|---|
+| **①** | Bo có hộp bút 12 màu. Nấm muốn dùng màu đỏ. | A. Nấm cầm luôn · B. **Nấm hỏi: "Bo ơi, cho tớ mượn màu đỏ được không?"** · C. Nấm bỏ đi, không nói gì | Muốn dùng đồ của bạn thì **hỏi** — không cầm luôn, cũng không im lặng chịu thiệt |
+| **②** | Bo nói: *"Tớ đang dùng. Lát nữa nhé."* | A. Nấm giận, bỏ đi · B. **Nấm nói: "Ừ, lát nữa tớ hỏi lại."** rồi chờ · C. Nấm mách cô | **Bạn có quyền nói chưa được.** Đó không phải bạn xấu |
+| **③** | Nấm mượn được rồi. Sắp hết giờ. | A. Nấm bỏ vào cặp mình · B. Nấm để trên bàn rồi chạy đi chơi · C. **Nấm đưa tận tay Bo: "Tớ trả cậu. Cảm ơn nhé."** | **Trả tận tay** mới xong bốn bước |
+
+**Nhánh phụ bắt buộc có — chạy khi con chọn A ở điểm ①:**
+> *(Phim tiếp: Bo quay lại, không thấy bút đỏ. Bo tìm khắp bàn. Bo mếu.)*
+> **Giọng kể:** *"Bo không biết bút của mình đi đâu. Bo tưởng bị mất. Nấm không lấy trộm — Nấm chỉ quên hỏi. Nhưng Bo thì đã buồn rồi.*
+> *Con thử lại nhé — lần này con giúp Nấm nói một câu."*
+
+### Bóc tách 4 lớp *(ô nhập bắt buộc — trẻ nói vào máy hoặc chọn hình)*
+
+| Lớp | Câu hỏi |
+|:--:|---|
+| **Thấy gì** | *"Bo nói gì khi Nấm hỏi mượn?"* |
+| **Nghĩ gì** | *"Vì sao Nấm phải hỏi trước khi lấy?"* |
+| **Thấy trong người** | *"Khi Bo tìm không thấy bút, Bo thấy thế nào?"* *(chọn mặt cười)* |
+| **Làm gì tiếp** | *"Ngày mai con muốn mượn đồ của bạn, con sẽ nói câu gì?"* |
+
+### Chạm nội lực *(Lửa 3)*
+
+> 🔥 **Câu hệ thống nói với con — giọng chậm, nhạc lắng xuống:**
+> *"Có một điều người lớn hay quên nói với các con.*
+>
+> *Đồ của con là **của con**. Bạn hỏi mượn, con **được phép nói không**. Con không phải giải thích dài dòng. Con chỉ cần nói: 'Cái này tớ không cho mượn.'*
+>
+> *Con không hư khi con nói không. Con đang giữ đồ của con — đó là việc đúng.*
+>
+> *Và vì con được nói không, nên khi con **chọn** cho bạn mượn — lúc đó nó mới thật sự là một món quà."*
+
+---
+
+## ⚒️ PHẦN 3 — NHIỆM VỤ THỰC HÀNH `P3-TH` · 26 phút · Pha **T**
+
+### 3.1. Nhiệm vụ: **"SỔ MƯỢN – TRẢ 7 NGÀY"**
+
+**Bốn bước mượn – trả và ba câu nói không — dạy ở đây:**
+
+```
+   MƯỢN ĐỒ CỦA BẠN                    KHI CON KHÔNG MUỐN CHO MƯỢN
+   ① 🗣️ HỎI   "Cho tớ mượn … được    ① "Cái này tớ không cho mượn."
+                không?"                 ② "Tớ đang dùng. Lát nữa nhé."
+   ② ⏳ ĐỢI   bạn nói được / chưa     ③ "Cái này là của riêng tớ."
+              được — CẢ HAI ĐỀU ỔN
+   ③ 🤲 GIỮ   giữ cẩn thận như đồ        ➤ Nói xong thì THÔI.
+              của mình                     Con không cần xin lỗi.
+   ④ ↩️ TRẢ   trả TẬN TAY + "cảm ơn"      Con không cần giải thích thêm.
+```
+
+**Việc con làm:** In **Sổ Mượn – Trả** — mỗi lần mượn hoặc cho mượn, con ghi *(hoặc vẽ)* một dòng: **mượn gì · của ai · đã trả chưa**.
+
+**Và một cột đặc biệt: "LẦN CON NÓI KHÔNG".** Mỗi lần con từ chối cho mượn đồ riêng của con, con tô một ngôi sao. **Đây cũng là điểm, ngang với điểm chia sẻ.**
+
+> ⚠️ **Quy tắc an toàn kèm theo:** Có bốn thứ **không bao giờ cho mượn, không bao giờ mượn**: **bình nước · cốc · khăn · bàn chải**. Đây là đồ chạm vào miệng và da. Nếu bạn cứ đòi, con nói *"cái này không cho mượn được"* và **báo cô giáo**.
+
+### 3.2. Vi kỹ năng & ngưỡng
+
+| Vi kỹ năng | Cách đo | ĐẠT | XUẤT SẮC |
+|---|---|:--:|:--:|
+| ① Hỏi trước khi lấy | Số lần hỏi / số lần cần dùng | ≥ 3/4 | 4/4 |
+| ② Trả đúng buổi | Số món trả / số món mượn | ≥ 3/4 | 4/4 tận tay |
+| ③ Chia sẻ tự nguyện | Số lần trong tuần | ≥ 3 | ≥ 5, có ≥1 lần tự đề nghị |
+| ④ **Nói không khi cần** | Số lần | ≥ 1 | ≥ 2, có nêu lý do |
+| ⑤ Nhường em / nhường lượt | Số lần | ≥ 1 | ≥ 3, nói được vì sao |
+
+> 🔴 **Vi kỹ năng ④ có trọng số ngang với ③.** Một đứa trẻ chỉ biết cho mà không biết giữ **chưa đạt cụm này**.
+
+### 3.3. Bảng luyện 4 lượt *(ô số liệu bắt buộc)*
+
+| Lượt | Ngày | Hỏi trước /4 | Trả đúng buổi /4 | Chia sẻ *(lần)* | ⭐ Nói không *(lần)* | Nhường *(lần)* | Tự chấm 😟😐🙂😃 | Bậc |
+|:--:|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 1 | | | | | | | | B1 |
+| 2 | | | | | | | | B2 |
+| 3 | | | | | | | | B3 |
+| 4 | | | | | | | | B4 |
+
+### 3.4. Tiêu chí hoàn thành
+
+- ☑ **Sổ Mượn – Trả** có **≥ 4 dòng** đã ghi đủ *(mượn gì · của ai · đã trả chưa)*
+- ☑ **Không còn dòng nào chưa trả** ở cuối tuần
+- ☑ Bảng luyện có **≥ 3 lượt** đã điền số
+- ☑ Có **≥ 1 ngôi sao** ở cột "Con nói không"
+- ☑ Có **1 bản ghi âm 20 giây**: con nói **cả hai câu** — một câu hỏi mượn, một câu từ chối
+- ☑ Có **1 người lớn** xác nhận: *"Con đã trả đồ đúng hẹn"*
+
+### 3.5. Cách nộp
+
+| Nộp gì | Nộp thế nào | Ghi chú an toàn |
+|---|---|---|
+| Sổ Mượn – Trả | Chụp ảnh **tờ giấy** | Không chụp người, không chụp tên đầy đủ của bạn khác |
+| Hai câu nói | Ghi âm 20 giây | Riêng tư, chỉ HLV và bố mẹ nghe |
+| Số lần chia sẻ / nói không | Bấm số trên màn hình | |
+| Xác nhận | Người lớn bấm nút trong tài khoản phụ huynh | Có dấu thời gian |
+
+> ⛔ **Bài đã nộp không sửa được.** Tuần sau nộp **lượt mới**.
+
+### 3.6. Chấm chéo đồng đẳng
+
+Hai bạn Squad **đóng vai**: một bạn hỏi mượn, một bạn **từ chối**. Rồi đổi vai. Bạn quan sát bấm **3 mặt cười** cho câu: *"Bạn nói không mà vẫn dễ thương chứ?"* và nói **1 điều thích**. **Cấm chê.**
+
+> 🎤 **HLV lưu ý:** ở lượt này, **bạn đóng vai từ chối mới là bạn đang luyện**. Nhiều trẻ thấy khó nói không hơn là khó cho mượn.
+
+### 3.7. PHIẾU KNS 5 LỚP CHIỀU SÂU — `PTH-K01-N2-04`
+
+| Lớp | Nội dung riêng của cụm `K01-N2-04` |
+|:--:|---|
+| **L1 NHẬN BIẾT** | Gọi tên: của con · của bạn · của chung · mượn · chia sẻ · nhường. Phân loại 12 đồ vật vào 3 hộp |
+| **L2 THẤU HIỂU** | Vì sao phải hỏi trước: người ta **không biết đồ mình đi đâu**. Vì sao con được nói không: **đồ của con thì con quyết định**. Ba lý do trẻ ngại nói không |
+| **L3 THỰC HÀNH** | Sổ Mượn – Trả × 4 lượt, đo **hỏi trước /4** · **trả đúng buổi /4** · **số lần chia sẻ** · ⭐ **số lần nói không** · **số lần nhường** |
+| **L4 SOI CHIẾU** | Thang mặt cười trước – sau; *"Lần nào con thấy khó nhất — cho mượn hay nói không?"*; lật câu *"Bạn tốt là bạn cho mượn mọi thứ."* |
+| **L5 CHUYỂN HOÁ** | Sứ mệnh 7 ngày: **trả hết mọi thứ đã mượn**, và **chia sẻ ít nhất 3 lần do con tự chọn**; bố mẹ ký xác nhận |
+
+**Bản in phiếu — 3 trang A4**
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  PHIẾU KỸ NĂNG SỐNG KNS365 · HỆ GEN VIỆT          🆘 CẦN TRỢ GIÚP·111 ║
+║  Mã: PTH-K01-N2-04   Cụm: CỦA CHUNG – CỦA RIÊNG                      ║
+║  Con tên: ______________  Lớp: 1___  Squad: ____  Ngày: ____________ ║
+║  ⚠️ Đồ của con là CỦA CON. Con có quyền nói KHÔNG.                    ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 1 · NHẬN BIẾT — "Điều này là gì?"          ⏱ 5–7'   Pha G     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • BA CÁI HỘP  (con dán sticker đồ vật vào đúng hộp)                  │
+│   ┌────────────┐  ┌────────────┐  ┌────────────┐                    │
+│   │ 📦 CỦA CON │  │ 📦 CỦA BẠN │  │📦 CỦA CHUNG│                    │
+│   │            │  │            │  │            │                    │
+│   │            │  │            │  │            │                    │
+│   │            │  │            │  │            │                    │
+│   └────────────┘  └────────────┘  └────────────┘                    │
+│    Con quyết định   Bạn quyết định   Cả lớp dùng và cả lớp giữ      │
+│   Con xếp đúng: ____ / 12                                            │
+│                                                                      │
+│ • BỐN THỨ KHÔNG BAO GIỜ DÙNG CHUNG  (con tô màu đỏ)                  │
+│      🥤 bình nước   🍵 cốc   🧻 khăn   🪥 bàn chải                    │
+│      ➤ Vì sao? Vì chúng chạm vào ________ và ________ của con.       │
+│                                                                      │
+│ • BỐN BƯỚC MƯỢN – TRẢ  (con điền số 1-2-3-4 vào ô)                   │
+│      ☐ ĐỢI      ☐ TRẢ tận tay      ☐ HỎI      ☐ GIỮ cẩn thận        │
+│                                                                      │
+│ 📏 HAI VẠCH CHUẨN                                                    │
+│   ĐẠT      : Hỏi trước 3/4 lần · trả 3/4 món · chia sẻ 3 lần ·      │
+│              nói KHÔNG được 1 lần.                                   │
+│   XUẤT SẮC : Hỏi 4/4 · trả 4/4 tận tay · chia sẻ ≥5 lần có 1 lần    │
+│              con TỰ ĐỀ NGHỊ · nói KHÔNG ≥2 lần và nêu được lý do.   │
+│   ➤ Con nhắm vạch:  ☐ Đạt    ☐ Xuất sắc                             │
+│                                                                      │
+│ ✍️ Bằng lời của con: "Của chung là ________________________________" │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 2 · THẤU HIỂU — "Vì sao lại như vậy?"      ⏱ 6–8'   Pha I     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • VÌ SAO PHẢI HỎI TRƯỚC KHI LẤY                                      │
+│   ┌──────────┐   ┌──────────────┐   ┌──────────────┐                │
+│   │ Con lấy  │ → │ Bạn tìm không│ → │ Bạn tưởng bị │                │
+│   │ không hỏi│   │ thấy đồ      │   │ MẤT — bạn lo │                │
+│   └──────────┘   └──────────────┘   └──────────────┘                │
+│   ➤ Con KHÔNG lấy trộm. Con chỉ quên hỏi. Nhưng bạn đã buồn rồi.    │
+│                                                                      │
+│ • VÌ SAO CON ĐƯỢC NÓI KHÔNG                                          │
+│   Đồ của con → con quyết định.  Đồ của bạn → bạn quyết định.         │
+│   ➤ Bạn nói "chưa được" KHÔNG phải là bạn xấu.                       │
+│   ➤ Con nói "không cho mượn" KHÔNG phải là con hư.                   │
+│                                                                      │
+│ • 3 LÝ DO BẠN NHỎ NGẠI NÓI KHÔNG  (con khoanh lý do của con)         │
+│   ① Sợ bạn giận      → Gỡ: bạn thật sẽ vẫn chơi với con.            │
+│   ② Sợ bị nói ích kỷ → Gỡ: giữ đồ của mình không phải ích kỷ.        │
+│   ③ Không biết nói   → Gỡ: học thuộc 1 câu: "Cái này tớ không       │
+│      thế nào             cho mượn." Nói xong là thôi.                │
+│                                                                      │
+│ • CÂU CẦN LẬT                                                        │
+│   "Bạn tốt là bạn cho mượn mọi thứ."                                 │
+│   ➤ ĐÚNG hay SAI?  ☐ Đúng  ☐ Sai                                    │
+│   ➤ Vì sao? ______________________________________________________   │
+│                                                                      │
+│ • NHƯỜNG EM — NHƯỜNG CÁI GÌ  (con đánh dấu ✓ hoặc ✗)                │
+│   ☐ Nhường lượt chơi cầu trượt        ☐ Nhường phần bánh to hơn     │
+│   ☐ Đưa em đồ chơi RIÊNG của con      ☐ Nhường chỗ ngồi             │
+│   ➤ Ô nào con thấy KHÔNG bắt buộc phải nhường? ___________________   │
+│   ➤ Nhường là con CHỌN. Không ai được BẮT con nhường đồ riêng.       │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 3 · THỰC HÀNH — "Con làm được chưa?"      ⏱ 26'    Pha T     │
+├──────────────────────────────────────────────────────────────────────┤
+│ 📓 SỔ MƯỢN – TRẢ                                                     │
+│  ┌────┬──────────────┬────────────┬─────────┬──────────┐            │
+│  │Ngày│ Con mượn gì  │ Của ai     │ Đã hỏi? │ Đã trả?  │            │
+│  ├────┼──────────────┼────────────┼─────────┼──────────┤            │
+│  │    │              │            │  ☐ có   │  ☐ rồi   │            │
+│  │    │              │            │  ☐ có   │  ☐ rồi   │            │
+│  │    │              │            │  ☐ có   │  ☐ rồi   │            │
+│  │    │              │            │  ☐ có   │  ☐ rồi   │            │
+│  └────┴──────────────┴────────────┴─────────┴──────────┘            │
+│  ⛔ Cuối tuần KHÔNG được còn dòng nào chưa trả.                      │
+│                                                                      │
+│ ⭐ LẦN CON NÓI KHÔNG  (mỗi lần con giữ đồ riêng, tô 1 sao)           │
+│    ☆  ☆  ☆  ☆  ☆        Con tô được: ____ sao                       │
+│    ➤ Đây cũng là điểm. Bằng điểm chia sẻ.                            │
+│                                                                      │
+│ 📊 BẢNG LUYỆN 4 LƯỢT                                                 │
+│  ┌────┬─────┬──────┬──────┬───────┬──────┬───────┬──────┬─────┐    │
+│  │Lượt│Ngày │Hỏi   │Trả   │Chia sẻ│⭐Nói │Nhường │ Tự   │ Bậc │    │
+│  │    │     │trước │đúng  │(lần)  │không │(lần)  │ chấm │     │    │
+│  │    │     │ /4   │buổi/4│       │(lần) │       │      │     │    │
+│  ├────┼─────┼──────┼──────┼───────┼──────┼───────┼──────┼─────┤    │
+│  │ 1  │     │      │      │       │      │       │😟😐🙂😃│ B1  │    │
+│  │ 2  │     │      │      │       │      │       │😟😐🙂😃│ B2  │    │
+│  │ 3  │     │      │      │       │      │       │😟😐🙂😃│ B3  │    │
+│  │ 4  │     │      │      │       │      │       │😟😐🙂😃│ B4  │    │
+│  └────┴─────┴──────┴──────┴───────┴──────┴───────┴──────┴─────┘    │
+│                                                                      │
+│ 🎙️ GHI ÂM 20 GIÂY — con nói CẢ HAI câu:                              │
+│    ☐ "Cho tớ mượn … được không?"                                    │
+│    ☐ "Cái này tớ không cho mượn."                                   │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 4 · SOI CHIẾU — "Con đang ở đâu?"         ⏱ 5'     Pha T     │
+├──────────────────────────────────────────────────────────────────────┤
+│ • TRƯỚC KHI HỌC, khi bạn đòi đồ của con, con thấy: 😟 😐 🙂 😃        │
+│ • BÂY GIỜ, khi bạn đòi đồ của con, con thấy:       😟 😐 🙂 😃        │
+│                                                                      │
+│ • Việc nào con thấy KHÓ HƠN?                                         │
+│      ☐ Cho bạn mượn        ☐ Nói không với bạn                      │
+│   Vì sao? ________________________________________________________   │
+│                                                                      │
+│ • Có lần nào con cho mượn mà trong bụng con KHÔNG MUỐN không?        │
+│      ☐ Có   ☐ Không                                                 │
+│   Nếu có — lần sau con sẽ nói câu gì? ____________________________   │
+│                                                                      │
+│ • Lần chia sẻ nào làm con VUI NHẤT? ______________________________   │
+│                                                                      │
+│ • CON ĐANG Ở BẬC NÀO?                                                │
+│   ◔ B1 Con biết ba cái hộp và bốn bước                               │
+│   ◑ B2 Con hỏi và trả khi có người nhắc                              │
+│   ◕ B3 Con tự hỏi, tự trả, và con nói không được khi cần             │
+│   ● B4 Con tự đề nghị chia sẻ, và con nhắc được bạn hỏi trước        │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ 🔹 LỚP 5 · CHUYỂN HOÁ — "Con mang đi đâu?"       ⏱ 4'     Pha A     │
+├──────────────────────────────────────────────────────────────────────┤
+│ 🎯 SỨ MỆNH 7 NGÀY CỦA CON                                            │
+│    Mỗi ngày con trả hết mọi thứ đã mượn — TRƯỚC KHI VỀ.              │
+│    Trong tuần con CHỌN chia sẻ ít nhất 3 lần.                        │
+│                                                                      │
+│    HABIT-5:  Neo ☐  Nhỏ ☐  Nhìn thấy ☐  Người chứng ☐  Thưởng ☐      │
+│    • Neo của con: ngay khi ______________________ (VD: nghe trống    │
+│      hết giờ), con nhìn quanh bàn xem có gì của bạn không.           │
+│    • Bản nhỏ nhất: trả 1 món                                         │
+│    • Nhìn thấy: gạch 1 dòng trong Sổ Mượn – Trả                      │
+│    • Người chứng: ____________________                                │
+│    • Thưởng: con gạch dòng và nói to "Xong rồi!"                     │
+│                                                                      │
+│    ┌───┬───┬───┬───┬───┬───┬───┐                                     │
+│    │ T2│ T3│ T4│ T5│ T6│ T7│ CN│   ← con tô ô mỗi ngày đã làm        │
+│    └───┴───┴───┴───┴───┴───┴───┘                                     │
+│                                                                      │
+│    ✍️ Chữ ký người chứng: ______________  Ngày: ____________         │
+│    ⛔ Thiếu chữ ký này thì cụm CHƯA được tính hoàn thành.             │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 💎 PHẦN 4 — BÀI HỌC TÍCH LUỸ `P4-TL` · 9 phút · Pha **T**
+
+> 🔒 **Phần này khoá cho tới khi con đã nộp P3.**
+
+### 4.1. Năm nguyên tắc rút ra *(con tự nói trước — bản chuẩn hiện sau)*
+
+| # | Nguyên tắc | Câu cho trẻ lớp 1 |
+|:--:|---|---|
+| 1 | Ba cái hộp | *"Của con – của bạn – của chung. Ba thứ khác nhau."* |
+| 2 | Hỏi trước, trả sau | *"Hỏi rồi mới lấy. Trả tận tay, không để trên bàn."* |
+| 3 | Bạn được nói chưa được | *"Bạn nói lát nữa — bạn không xấu."* |
+| 4 | **Con được nói không** | *"Đồ của con là của con. Con nói không, con không hư."* |
+| 5 | Nhường là con chọn | *"Con nhường vì con muốn. Không ai bắt con nhường đồ riêng."* |
+
+### 4.2. Năm thẻ ghi nhớ *(flashcard, có hình, có nút loa)*
+
+| Thẻ | Mặt trước *(hình)* | Mặt sau *(lời, có loa đọc)* |
+|:--:|---|---|
+| 1 | 📦📦📦 ba cái hộp | *"Của con · Của bạn · Của chung"* |
+| 2 | 🗣️⏳🤲↩️ bốn ô có mũi tên | *"Hỏi – Đợi – Giữ – Trả"* |
+| 3 | 🥤🍵🧻🪥 bốn đồ có dấu ✗ | *"Bình nước, cốc, khăn, bàn chải — không dùng chung."* |
+| 4 | ✋ bàn tay giơ lên | *"Cái này tớ không cho mượn."* |
+| 5 | 🎁 món quà | *"Con chọn cho — lúc đó nó mới là quà."* |
+
+### 4.3. Sơ đồ tổng kết 1 hình
+
+```
+                     📦 ĐỒ VẬT
+                          │
+        ┌─────────────────┼─────────────────┐
+    CỦA CON            CỦA BẠN          CỦA CHUNG
+   con quyết định    bạn quyết định    cả lớp dùng
+        │                 │              & cả lớp giữ
+        │                 │
+   ┌────┴────┐       🗣️ HỎI trước
+   │         │            │
+ ✋ NÓI    🎁 CHỌN    ⏳ ĐỢI — bạn được nói "chưa"
+ KHÔNG    CHIA SẺ         │
+   │         │       ↩️ TRẢ tận tay + "cảm ơn"
+   └────┬────┘
+        │
+   CẢ HAI ĐỀU ĐÚNG
+```
+
+### 4.4. Lịch ôn lặp ngắt quãng
+
+| Lần | Sau khi học | Việc làm · 3 phút |
+|:--:|:--:|---|
+| 1 | 1 ngày | Kể tên 4 bước mượn – trả, không nhìn thẻ |
+| 2 | 3 ngày | Phân loại 6 đồ vật vào 3 hộp |
+| 3 | 7 ngày | Nói cả hai câu: câu hỏi mượn và câu từ chối |
+| 4 | 15 ngày | Kể một lần con đã trả đồ đúng hẹn |
+| 5 | 30 ngày | Dạy lại ba cái hộp cho em nhỏ hoặc cho búp bê |
+
+### 4.5. Bắc cầu học tập
+
+| Nối sang | Nội dung |
+|---|---|
+| **Cụm `K01-N3-02`** ⚠️ | *Cơ thể con là của con* — cùng một nguyên lý ranh giới, áp dụng cho thân thể |
+| **Cụm `K01-N1-02`** | *Đồ dùng của con — con giữ, con xếp* |
+| **Môn Đạo đức lớp 1** | Bài giữ gìn đồ dùng, bài quan tâm giúp đỡ bạn |
+| **Môn Toán lớp 1** | Chia đều — chia 6 cái kẹo cho 3 bạn |
+| **Trò chơi lớp** | `TC-T-010 Từ Chối 3 Tầng` *(bản khối 1)* · `TC-A-003 Vòng Ghi Nhận` |
+
+---
+
+## 🚀 PHẦN 5 — VẬN DỤNG THỰC TIỄN `P5-VD` · 7 ngày · Pha **A**
+
+### 5.1. Sứ mệnh 7 ngày — `PSM-K01-N2-04`
+
+> 🎯 **"BÀN SẠCH TRƯỚC KHI VỀ"** — mỗi ngày trước khi về, con nhìn quanh bàn: có gì của bạn không? Trả ngay.
+
+| Ngày | Việc con làm | Ô con tô |
+|:--:|---|:--:|
+| **T2** | Trả hết đồ đã mượn **trước khi về** | ☐ |
+| **T3** | Hỏi mượn một món **đủ 4 bước** | ☐ |
+| **T4** | **Tự đề nghị** chia sẻ một thứ với bạn — không đợi bạn hỏi | ☐ |
+| **T5** | ⭐ **Nói không** một lần với đồ riêng của con | ☐ |
+| **T6** | Nhường lượt chơi cho em hoặc cho bạn — và **nói được vì sao con nhường** | ☐ |
+| **T7** | Giúp giữ **một món của chung** ở nhà hoặc ở khu phố | ☐ |
+| **CN** | **Dạy lại** ba cái hộp cho em nhỏ hoặc búp bê | ☐ |
+
+### 5.2. Việc của bố mẹ trong 7 ngày này
+
+| Ngày | Bố mẹ làm gì | Không làm gì |
+|:--:|---|---|
+| Mỗi tối | Hỏi **một câu**: *"Hôm nay con có mượn gì của bạn không? Trả chưa?"* | Không hỏi *"sao con ích kỷ thế?"* |
+| Khi anh chị em tranh đồ | **Hỏi trước: "Cái này của ai?"** rồi mới xử | ⛔ **Không nói *"con lớn phải nhường em"*** |
+| Khi con nói không với em | Ghi nhận: *"Con đã nói rõ. Đồ của con thì con quyết định."* | Không ép con đưa đồ riêng cho em |
+| Khi con chia sẻ | Mô tả điều nhìn thấy: *"Mẹ thấy con tự đưa nửa cái bánh cho em."* | Không khen chung chung *"con ngoan quá"* |
+| Cuối tuần | Ký xác nhận vào phiếu | Không ký hộ khi con chưa làm |
+
+> 🔴 **Điều quan trọng nhất gửi bố mẹ — in đậm trong bản gửi phụ huynh:**
+> *Câu **"con lớn phải nhường em"** là câu gây hại nhiều nhất trong các gia đình có hai con. Nó dạy đứa lớn rằng **quyền của mình phụ thuộc vào tuổi**, và dạy đứa nhỏ rằng **khóc to thì được**.*
+> *Thay bằng: **"Cái này của ai?"** → nếu của anh/chị thì anh/chị quyết định · nếu của chung thì **chia lượt bằng nhau, bấm giờ**.*
+> *Nhường là điều con **chọn** làm. Khi con chọn, hãy ghi nhận cụ thể. Khi con không chọn, đừng ép — và cũng đừng gọi con là ích kỷ.*
+
+### 5.3. Ba mức khó tăng dần trong tuần
+
+| Mức | Việc | Dấu hiệu đạt |
+|:--:|---|---|
+| **Dễ** | Trả đồ khi được nhắc | Trả đúng buổi |
+| **Vừa** | Tự nhớ trả, không cần nhắc | Sổ không còn dòng chưa trả |
+| **Khó** | **Nói không** với một bạn con quý, mà vẫn giữ được bạn | Nói rõ, không xin lỗi vòng vo, và hai bạn vẫn chơi tiếp |
+
+### 5.4. Nếu con chưa làm được
+
+| Tình huống | Cách xử — dành cho bố mẹ và HLV |
+|---|---|
+| Con cho mượn hết, không giữ gì | 👀 **Đây là dấu hiệu cần chú ý, không phải điều đáng khen.** Hỏi riêng: *"Có bạn nào làm con sợ nếu con không cho không?"* Nếu có → xem phác đồ bắt nạt |
+| Con không cho mượn gì cả | Bình thường ở lớp 1. Giữ ở mức đó, luyện tiếp mức "chia sẻ **của chung**" trước |
+| Con quên trả nhiều lần | Không mắng. Gắn **neo**: *"nghe trống hết giờ → nhìn quanh bàn"* |
+| Con khóc khi phải nhường em | Hỏi: *"Cái đó là của con hay của chung?"* — nếu của con thì **con không phải nhường** |
+| Bạn cứ đòi đồ vệ sinh cá nhân của con | Con nói *"cái này không cho mượn được"* và **báo cô giáo**. Đây là quy tắc vệ sinh, không phải chuyện chia sẻ |
+
+---
+
+## 📊 PHẦN 6 — ĐÁNH GIÁ BÀI HỌC `P6-DG` · 12 phút
+
+### 6.1. Mười câu hỏi tình huống *(phụ huynh đọc hộ đề · con bấm chọn hình)*
+
+| # | Tình huống | Lựa chọn | Đáp án |
+|:--:|---|---|:--:|
+| 1 | Quả bóng ở sân trường nằm ở hộp nào? | A. Của con · B. Của bạn · C. **Của chung** | **C** |
+| 2 | Con muốn dùng bút của bạn. Việc đầu tiên? | A. Cầm luôn · B. **Hỏi bạn** · C. Mách cô | **B** |
+| 3 | Bạn nói *"Tớ đang dùng, lát nữa nhé."* Nghĩa là gì? | A. Bạn ích kỷ · B. **Bạn có quyền nói vậy** · C. Bạn ghét con | **B** |
+| 4 | Mượn xong con làm gì? | A. Để trên bàn · B. Bỏ vào cặp mình · C. **Trả tận tay và cảm ơn** | **C** |
+| 5 | Bạn hỏi mượn bình nước của con. Con làm gì? | A. Cho mượn · B. **Nói: "Bình nước không cho mượn được"** · C. Đổ nước ra cốc cho bạn | **B** |
+| 6 | Bạn hỏi mượn đồ chơi riêng của con, con không muốn cho. Con làm gì? | A. Phải cho vì bạn là bạn thân · B. **Nói: "Cái này tớ không cho mượn."** · C. Cho rồi khóc | **B** |
+| 7 | Con nói không cho mượn. Con có hư không? | A. Có · B. **Không — đồ của con thì con quyết định** | **B** |
+| 8 | Em con đòi đồ chơi riêng của con. Ai quyết định? | A. Em · B. Mẹ · C. **Con** | **C** |
+| 9 | Ở cầu trượt có 5 bạn xếp hàng. Con làm gì? | A. Chen lên trước · B. **Xếp hàng chờ lượt** · C. Đòi chơi trước vì con đến sớm | **B** |
+| 10 | Chia sẻ là gì? | A. Đưa hết cho bạn · B. **Con CHỌN cho bạn dùng cùng** · C. Ai đòi cũng phải đưa | **B** |
+
+> ⚠️ **Câu 5 là câu vệ sinh** và **câu 6, 7, 8 là bộ câu ranh giới.** Nếu con chọn sai ở câu 6, 7 hoặc 8, hệ thống hiện lại video 40 giây *"Đồ của con là của con"* và **gợi ý cho phụ huynh** một câu để nói với con tối đó. Không tính là sai điểm — đây là nội dung cần củng cố, không phải nội dung để chấm.
+
+### 6.2. Tự đánh giá thang B1–B4
+
+| Bậc | Câu hỏi cho con | Con chọn |
+|:--:|---|:--:|
+| ◔ B1 | *Con biết ba cái hộp và bốn bước mượn – trả?* | ☐ |
+| ◑ B2 | *Con hỏi và trả khi có người nhắc?* | ☐ |
+| ◕ B3 | *Con tự hỏi, tự trả, và con nói không được khi cần?* | ☐ |
+| ● B4 | *Con tự đề nghị chia sẻ, và con nhắc được bạn hỏi trước?* | ☐ |
+
+### 6.3. Rubric sản phẩm *(HLV chấm)* — `R-K01-N2-04`
+
+| Tiêu chí | ◔ B1 | ◑ B2 | ◕ B3 | ● B4 |
+|---|---|---|---|---|
+| **Phân biệt 3 hộp** | Đúng ≤6/12 | Đúng 7–9/12 | Đúng 10–12/12 | Đúng 12/12 và giải thích được ca khó |
+| **Mượn – trả** | Nói được 4 bước | Làm 3/4 bước khi có nhắc | Đủ 4/4, tự nhớ trả | Đủ 4/4 và nhắc được bạn |
+| **Chia sẻ tự nguyện** | Chưa có lần nào | 1–2 lần | ≥3 lần | ≥5 lần, có lần tự đề nghị |
+| **⭐ Nói không** | Chưa nói được | Nói được, rất nhỏ | Nói rõ ≥1 lần | Nói rõ ≥2 lần, nêu được lý do, vẫn giữ bạn |
+| **Nhường có lý do** | Chưa nhường | Nhường khi được nhắc | Tự nhường ≥1 lần | Nhường ≥3 lần và nói được vì sao |
+
+> 🔒 **Tiêu chí "Nói không" là tiêu chí phủ quyết.** Con chưa đạt B2 ở dòng này thì **chưa được ghi hoàn thành cụm**, dù bốn dòng trên đều tốt. Lý do: một đứa trẻ chỉ biết cho mà không biết giữ đang ở trong tình trạng **dễ bị lấn ranh giới**, và điều đó nối thẳng sang cụm an toàn thân thể.
+
+### 6.4. Đánh giá đồng đẳng
+
+Bạn Squad bấm **3 mặt cười** cho câu: *"Bạn nói không mà vẫn dễ thương chứ?"* và nói **1 điều thích**. **Cấm chê.**
+
+### 6.5. Bảng hiển thị cho con và bố mẹ
+
+```
+ ┌────────────────────────────────────────────────────────────────┐
+ │  CỤM 4 · CỦA CHUNG – CỦA RIÊNG    K01-N2-04     🆘 · 111        │
+ ├────────────────────────────────────────────────────────────────┤
+ │  CON ĐÃ LÀM ĐƯỢC                                               │
+ │   📦 Xếp đúng 3 hộp         ██████████  12 / 12                │
+ │   ↩️ Trả đúng buổi          ████████░░   4 / 5 món             │
+ │   🎁 Con chọn chia sẻ       ███████░░░   4 lần                 │
+ │   ⭐ Con nói KHÔNG          ██████░░░░   2 lần  ← điều này TỐT │
+ │   🚪 Nhường có lý do        ██████░░░░   3 lần                 │
+ │                                                                │
+ │  BẬC CỦA CON:  ◔ ─ ◑ ─ ●◕ ─ ○      (B3 · Làm giỏi)            │
+ │                                                                │
+ │  MỘT ĐIỀU DUY NHẤT CẦN CHỈNH                                   │
+ │   Con hay để đồ mượn TRÊN BÀN thay vì trả tận tay.             │
+ │   → Lượt sau con thử: đưa vào tay bạn và nói "Tớ trả cậu."     │
+ │                                                                │
+ │  ĐIỀU BỐ MẸ NÊN BIẾT                                           │
+ │   Cột ⭐ "nói KHÔNG" là điểm TỐT, không phải điểm xấu.          │
+ │   Con biết giữ đồ của mình thì con cũng biết giữ ranh giới     │
+ │   của cơ thể mình.                                             │
+ │                                                                │
+ │  CÂU BỐ MẸ HỎI CON MỖI TỐI                                     │
+ │   "Hôm nay con mượn gì của bạn? Trả chưa?"                     │
+ └────────────────────────────────────────────────────────────────┘
+```
+
+> ⛔ **Không có bảng xếp hạng lớp.** Chỉ hiển thị mức tăng của chính con và tổng của Squad.
+
+---
+
+## 🎧 PHẦN 7 — AUDIO CHUYÊN SÂU `P7-AU` · 13 phút
+
+> 🔓 Mở từ tầng **HS-T2**. Với khối 1: **nghe cùng bố mẹ**. Tài khoản phụ huynh nhận kèm **bản chép lời đầy đủ**.
+
+### 7.1. Cấu trúc audio
+
+| Đoạn | Thời lượng | Nội dung |
+|:--:|:--:|---|
+| Mở | 0:00–0:40 | Nhạc nhẹ. *"Hôm nay chúng mình nghe chuyện về ba cái hộp."* |
+| Truyện 1 | 0:40–4:40 | **"Cái bút màu đỏ"** |
+| Nghỉ hỏi | 4:40–5:20 | Câu hỏi cho con, dừng 20 giây |
+| Truyện 2 | 5:20–9:40 | **"Con búp bê của chị Mây"** |
+| Nghỉ hỏi | 9:40–10:20 | Câu hỏi cho bố mẹ và con cùng trả lời |
+| Chốt | 10:20–13:00 | Ba cái hộp + bốn bước + quyền nói không + lời chúc ngủ ngon |
+
+### 7.2. Bản chép lời — Truyện 1 *(trích, dùng nguyên văn khi thu âm)*
+
+> *"Bo có một hộp bút mười hai màu. Mẹ mua cho Bo hôm sinh nhật.*
+>
+> *Trong mười hai màu ấy, Bo thích nhất màu đỏ. Không phải vì nó đẹp nhất — mà vì nó là màu đầu tiên Bo dùng để vẽ ngôi nhà tặng bà.*
+>
+> *Một hôm Nấm ngồi cạnh Bo. Nấm cần màu đỏ để tô ông mặt trời.*
+>
+> *Nấm nhìn hộp bút. Nấm nghĩ: 'Bo là bạn mình mà. Lấy một cái chắc không sao.'*
+>
+> *Nấm cầm cây bút đỏ.*
+>
+> *Nấm tô xong ông mặt trời rất đẹp. Nấm quên để bút lại. Cây bút nằm trong hộp của Nấm.*
+>
+> *Chiều hôm ấy Bo mở hộp bút ra. Bo đếm: một, hai, ba… mười một.*
+>
+> *Thiếu một cây.*
+>
+> *Bo tìm khắp ngăn bàn. Bo tìm dưới ghế. Bo lật cả cặp ra. Không có.*
+>
+> *Bo ngồi im. Bo không khóc. Nhưng chiều hôm đó Bo không vẽ gì cả.*
+>
+> *(dừng 3 giây)*
+>
+> *Các con biết không — Nấm không phải bạn xấu. Nấm không lấy trộm. Nấm chỉ quên hỏi.*
+>
+> *Nhưng Bo thì đã buồn cả một buổi chiều.*
+>
+> *Hôm sau Nấm biết chuyện. Nấm mang bút tới, đưa tận tay Bo và nói: 'Tớ xin lỗi. Hôm qua tớ lấy mà quên hỏi cậu.'*
+>
+> *Bo cầm cây bút. Bo nói: 'Lần sau cậu hỏi tớ nhé. Tớ sẽ cho mượn.'*
+>
+> *Một câu hỏi — chỉ mất hai giây. Nhưng nó tiết kiệm cho hai bạn cả một buổi chiều buồn."*
+
+**Câu hỏi nghỉ 1:** *"Nếu con là Nấm, con sẽ nói câu gì với Bo trước khi cầm cây bút?"* *(dừng 20 giây)*
+
+### 7.3. Bản chép lời — Truyện 2 *(trích)*
+
+> *"Chị Mây có một con búp bê. Con búp bê ấy cũ rồi, tóc đã rối, một bên má có vết mực.*
+>
+> *Nhưng chị Mây giữ nó từ hồi chị bốn tuổi.*
+>
+> *Em Bi ba tuổi. Em Bi thấy búp bê thì thích. Em Bi đòi.*
+>
+> *Em Bi khóc.*
+>
+> *Mẹ ở trong bếp nói vọng ra: 'Mây, con lớn rồi, nhường em đi con.'*
+>
+> *Chị Mây đưa búp bê cho em. Em Bi nín ngay.*
+>
+> *Chị Mây đi vào phòng. Chị đóng cửa lại. Chị không khóc — chị chỉ ngồi im rất lâu.*
+>
+> *(dừng 3 giây)*
+>
+> *Tối hôm đó mẹ vào phòng chị Mây. Mẹ ngồi xuống cạnh chị.*
+>
+> *Mẹ nói: 'Chiều nay mẹ nói sai một câu. Con búp bê ấy là của con. Mẹ không được bắt con đưa cho em.'*
+>
+> *Chị Mây ngẩng lên.*
+>
+> *Mẹ nói tiếp: 'Từ mai mình làm thế này nhé. Đồ của con thì con quyết định. Đồ của em thì em quyết định. Đồ chung thì chia lượt, mẹ bấm giờ.*
+>
+> *Còn nếu con muốn cho em mượn — thì đó là con **chọn**. Và lúc đó mẹ sẽ rất tự hào về con.'*
+>
+> *Sáng hôm sau, chị Mây tự mang búp bê ra. Chị đặt vào tay em Bi. Chị nói: 'Chị cho em chơi mười phút nhé. Rồi em trả chị.'*
+>
+> *Em Bi gật đầu.*
+>
+> *Cùng một con búp bê. Cùng một em bé. Nhưng hôm nay chị Mây vui — vì hôm nay là chị **chọn**."*
+
+**Câu hỏi nghỉ 2 *(cho cả bố mẹ và con)*:** *"Có món đồ nào ở nhà là của riêng con, mà con không muốn ai lấy không?"* — và dành cho bố mẹ: *"Bố/mẹ hồi nhỏ có món đồ nào như thế không?"*
+
+### 7.4. Đoạn chốt — nguyên văn
+
+> *"Trước khi ngủ, con nhớ ba cái hộp nhé: **của con — của bạn — của chung**.*
+>
+> *Muốn dùng đồ của bạn thì: **hỏi — đợi — giữ — trả**. Trả tận tay, và nói cảm ơn.*
+>
+> *Và điều này con nhớ kỹ: **đồ của con là của con**. Bạn hỏi mượn, con được phép nói không. Con chỉ cần nói: 'Cái này tớ không cho mượn.' Nói xong là thôi, con không cần xin lỗi.*
+>
+> *Con không hư khi con nói không.*
+>
+> *Chính vì con được nói không — nên khi con **chọn** cho bạn mượn, món đồ ấy mới trở thành một món quà.*
+>
+> *Ngủ ngon nhé. Mai con nhớ nhìn quanh bàn trước khi về."*
+
+### 7.5. Lưu ý sản xuất
+
+| Hạng mục | Chuẩn |
+|---|---|
+| Giọng đọc | Nữ, ấm, tốc độ **≤110 từ/phút** |
+| Nhạc nền | Nhạc cụ dân tộc nhẹ, âm lượng ≤20% giọng đọc |
+| Khoảng lặng | Sau mỗi câu hỏi để **đúng 20 giây im lặng**, không nhạc |
+| Đoạn nhạy cảm | Đoạn mẹ xin lỗi chị Mây **đọc chậm hơn 15%**, nhạc tắt hẳn |
+| Định dạng | MP3 128kbps · kèm bản chép lời `.txt` cho tài khoản phụ huynh |
+| Cấm | Không hiệu ứng giật mình, không tiếng khóc thật của trẻ, không giọng trách móc |
+
+---
