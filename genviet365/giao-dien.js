@@ -918,18 +918,84 @@
       (r.theoBac ? ' · bậc ' + e(BAC) : '') + '</span></div>';
   }
 
+  /* ── MỤC LỤC ─────────────────────────────────────────────
+     Ở ba mươi sáu nhóm và hơn hai trăm màn, một mục lục phẳng dài
+     hơn mười lăm nghìn điểm ảnh — tức mười bảy màn hình cuộn để đi
+     hết. Ở khổ điện thoại thì không dùng được nữa.
+
+     Nên mỗi nhóm là một <details> gập lại được. Chọn <details>
+     chứ không phải nút tự chế vì ba lý do: bàn phím đi được ngay
+     không cần thêm mã, trình đọc màn hình hiểu sẵn trạng thái
+     đóng mở, và nội dung vẫn nằm trong DOM khi gập nên ô tìm và
+     cổng quyền không đổi hành vi.
+
+     Nhóm chứa màn đang đọc luôn được mở — xem moNhomHienTai(). */
   function veMucLuc() {
-    return ds(G.NHOM, function (n) {
+    var theoId = {};
+    G.NHOM.forEach(function (n) { theoId[n.id] = n; });
+
+    function veNhom(n) {
       var muc = n.ds.filter(function (i) { return G.duocPhep(VAI, BAC, i.v); });
-      if (!muc.length) return '';
-      return '<div class="nhom" style="--c:' + mau(n.mau) + '">' +
-        '<div class="n-dau"><span class="no">' + e(n.no) + '</span>' +
-        '<span class="t">' + e(n.t) + '</span><span class="s">' + e(n.s) + '</span></div>' +
-        '<ul>' + ds(muc, function (i) {
-          return '<li><a href="#' + e(i.v) + '" data-v="' + e(i.v) + '">' +
-            '<b>' + e(i.t) + '</b><span>' + e(i.h) + '</span></a></li>';
-        }) + '</ul></div>';
+      if (!muc.length) return { rong: true, ma: '', dem: 0 };
+      return {
+        dem: muc.length,
+        ma: '<details class="nhom" style="--c:' + mau(n.mau) + '">' +
+          '<summary class="n-dau"><span class="no">' + e(n.no) + '</span>' +
+          '<span class="t">' + e(n.t) + '</span><span class="s">' + e(n.s) + '</span>' +
+          '<span class="dem">' + muc.length + '</span></summary>' +
+          '<ul>' + ds(muc, function (i) {
+            return '<li><a href="#' + e(i.v) + '" data-v="' + e(i.v) + '">' +
+              '<b>' + e(i.t) + '</b><span>' + e(i.h) + '</span></a></li>';
+          }) + '</ul></details>'
+      };
+    }
+
+    return '<div class="muc-thanh">' +
+      '<button type="button" class="muc-nut" data-mo="1">Mở hết</button>' +
+      '<button type="button" class="muc-nut" data-mo="0">Thu hết</button>' +
+      '</div>' + ds(G.PHAN, function (p) {
+      var trong = '', demMan = 0, demNhom = 0;
+      p.nhom.forEach(function (gid) {
+        var n = theoId[gid];
+        if (!n) return;
+        var r = veNhom(n);
+        if (r.rong) return;
+        trong += r.ma; demMan += r.dem; demNhom++;
+      });
+      if (!demNhom) return '';
+      return '<details class="phan" style="--c:' + mau(p.mau) + '">' +
+        '<summary class="p-dau"><span class="p-no">' + e(p.no) + '</span>' +
+        '<span class="p-t">' + e(p.t) + '</span>' +
+        '<span class="p-s">' + e(p.s) + '</span>' +
+        '<span class="dem">' + demNhom + '·' + demMan + '</span></summary>' +
+        '<div class="p-trong">' + trong + '</div></details>';
     });
+  }
+
+  /* Mở nhóm chứa màn đang đọc, và chỉ cuộn tới nó khi nó đang
+     khuất — cuộn khi đã nhìn thấy là một cử động thừa gây khó chịu.
+
+     Đóng lại nhóm mà CHÍNH HÀM NÀY đã mở ở lần trước. Không đóng
+     nhóm người dùng tự mở — phân biệt được vì ta chỉ nhớ nhóm của
+     mình. Không có bước đóng ấy thì sau vài chục màn, mục lục mở
+     hết trở lại và dài y như khi chưa gập; bộ kiểm đã bắt đúng lỗi
+     này ở lần chạy đầu tiên. */
+  var nhomTuMo = null, phanTuMo = null;
+  function moNhomHienTai(v) {
+    var a = mucNav.querySelector('a[data-v="' + v + '"]');
+    if (!a) return;
+    var n = a.closest ? a.closest('details') : null;
+    if (!n) return;
+    var ph = n.parentNode && n.parentNode.closest ? n.parentNode.closest('details.phan') : null;
+    if (phanTuMo && phanTuMo !== ph && phanTuMo.isConnected) phanTuMo.open = false;
+    if (nhomTuMo && nhomTuMo !== n && nhomTuMo.isConnected) nhomTuMo.open = false;
+    nhomTuMo = n; phanTuMo = ph;
+    if (ph) ph.open = true;
+    n.open = true;
+    var o = a.getBoundingClientRect(), k = mucNav.getBoundingClientRect();
+    if (o.top < k.top || o.bottom > k.bottom) {
+      if (a.scrollIntoView) a.scrollIntoView({ block: 'center' });
+    }
   }
 
   /* ── TÌM KIẾM ────────────────────────────────────────────
@@ -1148,6 +1214,7 @@
       if (o) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
     nho(v);
+    moNhomHienTai(v);
     datDauTrang(v, duoc);
     goc.classList.remove('mo');
     if (nut) nut.setAttribute('aria-expanded', 'false');
@@ -1217,6 +1284,17 @@
     var oVai = goc.querySelector('#o-vai'), oBac = goc.querySelector('#o-bac');
     if (oVai) oVai.addEventListener('change', function (ev) { doiVai(ev.target.value, null); });
     if (oBac) oBac.addEventListener('change', function (ev) { doiVai(null, ev.target.value); });
+    /* Mở hết · thu hết — người quen hệ thường muốn nhìn toàn cảnh,
+       người mới thì muốn gập lại cho đỡ ngợp. Cho cả hai. */
+    mucNav.addEventListener('click', function (ev) {
+      var nut = ev.target.closest ? ev.target.closest('.muc-nut') : null;
+      if (!nut) return;
+      var mo = nut.getAttribute('data-mo') === '1';
+      Array.prototype.forEach.call(mucNav.querySelectorAll('details.phan, details.nhom'),
+        function (n) { n.open = mo; });
+      nhomTuMo = null; phanTuMo = null;   /* người dùng vừa quyết định thay, đừng đóng hộ nữa */
+    });
+
     window.addEventListener('hashchange', ve);
 
     /* mũi tên trái phải để lật màn — bỏ qua khi đang gõ hoặc đang

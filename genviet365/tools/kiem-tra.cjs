@@ -24,7 +24,7 @@ var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
            'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
-           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-capdo.js', 'du-lieu-master.js', 'du-lieu-chuyende.js', 'du-lieu-vanhanh2.js', 'du-lieu-trai-vip.js', 'du-lieu-giaoan.js', 'du-lieu-socai.js', 'du-lieu-songuon.js', 'du-lieu-deana.js', 'du-lieu-slide.js', 'du-lieu-bni.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
+           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-capdo.js', 'du-lieu-master.js', 'du-lieu-chuyende.js', 'du-lieu-vanhanh2.js', 'du-lieu-trai-vip.js', 'du-lieu-giaoan.js', 'du-lieu-socai.js', 'du-lieu-songuon.js', 'du-lieu-deana.js', 'du-lieu-slide.js', 'du-lieu-bni.js', 'du-lieu-antoan.js', 'du-lieu-nghiencuu.js', 'du-lieu-khoi45.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js', 'nen/dau-hieu.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = [];
 
@@ -70,6 +70,36 @@ trung.forEach(function (v) { L('Mã màn xuất hiện hai lần trong điều h
 Object.keys(G.MAN || {}).forEach(function (v) {
   if (!trongNav[v]) L('Màn có trong kho nhưng không có trong điều hướng: ' + v);
 });
+
+/* ── 1b. BẢY PHẦN ↔ BA MƯƠI TÁM NHÓM ──────────────────
+      Tầng trên của điều hướng. Mỗi nhóm phải thuộc đúng MỘT phần —
+      soi cả hai chiều, vì thêm một nhóm mới rồi quên xếp phần thì
+      nhóm ấy biến mất khỏi mục lục mà không báo gì. */
+if (!G.PHAN) {
+  L('Thiếu tầng phần (GV.PHAN) — mục lục hai tầng sẽ không dựng được');
+} else {
+  var coNhom = {}, idNhom = {};
+  (G.NHOM || []).forEach(function (n) { idNhom[n.id] = n; });
+  G.PHAN.forEach(function (p) {
+    ['id', 'no', 't', 's'].forEach(function (f) {
+      if (!p[f]) L('Phần thiếu trường ' + f + ': ' + JSON.stringify(p).slice(0, 60));
+    });
+    if (!/^#[0-9A-Fa-f]{6}$/.test(p.mau || '')) L('Phần ' + p.t + ' có mã màu sai: ' + p.mau);
+    if (!(p.nhom || []).length) L('Phần ' + p.t + ' không chứa nhóm nào');
+    (p.nhom || []).forEach(function (gid) {
+      if (!idNhom[gid]) L('Phần ' + p.t + ' trỏ tới nhóm không tồn tại: ' + gid);
+      if (coNhom[gid]) L('Nhóm ' + gid + ' bị xếp vào hai phần: ' +
+        coNhom[gid] + ' và ' + p.t);
+      coNhom[gid] = p.t;
+    });
+  });
+  (G.NHOM || []).forEach(function (n) {
+    if (!coNhom[n.id])
+      L('Nhóm ' + n.id + ' · ' + n.t + ' chưa được xếp vào phần nào — sẽ biến mất khỏi mục lục');
+  });
+  console.log('BẢY PHẦN · ' + G.PHAN.length + ' phần · ' + Object.keys(coNhom).length +
+    '/' + (G.NHOM || []).length + ' nhóm đã xếp, không nhóm nào xếp hai lần');
+}
 
 /* ── 2. từng màn ─────────────────────────────────────── */
 var dungTu = {};
@@ -465,6 +495,39 @@ Object.keys(datTen).forEach(function (k) {
       ' — kho nạp sau đè kho trước, âm thầm');
 });
 
+/* 6a2. VA CHẠM VỚI BẢNG TRA VIẾT TAY ───────────────────────
+      Luật trên chỉ soi kho với kho. Còn một đường va chạm nữa,
+      âm thầm hơn: một khoá KHAI TAY trong GV.TU của man-hinh.js
+      trùng tên với một khoá kho. Bảng tra viết tay được gán SAU
+      khi kho tự đăng ký, nên nó ĐÈ kho — màn vẫn dựng ra, chỉ là
+      dựng ra dữ liệu của người khác.
+
+      Đây không phải lỗi giả định: nó vừa xảy ra thật. Kho an toàn
+      trại đặt GV.AT_LUAT mười tám điều, còn man-hinh.js đã có sẵn
+      AT_LUAT trỏ tới bảy điều an toàn của nhóm vận hành. Lớp đếm
+      số bắt được vì con số lệch — nhưng nếu hai bên tình cờ cùng
+      số phần tử thì không lớp nào bắt được. */
+var vanMH = fs.readFileSync(path.join(GOC, 'man-hinh.js'), 'utf8');
+var khoiTU = vanMH.match(/GV\.TU = \{([\s\S]*?)\n\};/);
+if (khoiTU) {
+  /* Che có chủ ý thì KHÔNG phải lỗi: bảng tra thường lấy chính
+     kho cùng tên rồi biến đổi hình dạng cho khớp một loại khối —
+     `NGUON: GV.NGUON.map(...)`. Chỉ nguy hiểm khi vế phải KHÔNG
+     nhắc tới kho cùng tên: lúc ấy khoá tra của một thứ đang che
+     mất kho của một thứ khác hẳn. */
+  var khaiTay = {}, mTU;
+  var reTU = /^[ \t]{2}([A-Z][A-Z0-9_]*)[ \t]*:([\s\S]*?)(?=\n[ \t]{2}[A-Z][A-Z0-9_]*[ \t]*:|\n\};)/gm;
+  while ((mTU = reTU.exec(khoiTU[1] + '\n};'))) khaiTay[mTU[1]] = mTU[2];
+  Object.keys(khaiTay).forEach(function (k) {
+    if (!datTen[k]) return;
+    if (new RegExp('GV\\.' + k + '\\b').test(khaiTay[k])) return;   /* biến đổi chính nó */
+    L('VA CHẠM BẢNG TRA: man-hinh.js khai tay GV.TU.' + k +
+      ' từ dữ liệu KHÁC, trong khi ' +
+      datTen[k].filter(function (x, i, a) { return a.indexOf(x) === i; }).join(' và ') +
+      ' đặt GV.' + k + ' — bảng tra gán sau nên ĐÈ kho, màn sẽ dựng ra dữ liệu của người khác');
+  });
+}
+
 /* ── 6b. SỔ CÁI YÊU CẦU ────────────────────────────────
       Đây là lớp trả lời câu "đã làm đủ mọi thứ được yêu cầu
       chưa" bằng máy thay vì bằng lời. Mỗi dòng sổ viện dẫn màn
@@ -796,6 +859,66 @@ function lopChay(xong) {
         tran.slice(0, 8).forEach(function (m) { L('Lớp chạy: ' + m); });
         loiJs.forEach(function (m) { L('Lỗi JS khi chạy: ' + m); });
 
+        /* 3b. MỤC LỤC — ở ba mươi sáu nhóm và hơn hai trăm màn, một
+              mục lục phẳng dài hơn mười lăm nghìn điểm ảnh, tức mười
+              bảy màn hình cuộn. Luật này chặn nó phình lại: mục lục
+              gập lại phải cao không quá sáu lần chiều cao khung nhìn,
+              và nhóm chứa màn đang đọc phải tự mở. */
+        return p.setViewportSize({ width: 1280, height: 900 }).then(function () {
+          /* nạp lại trang: các lớp trước đã đi qua toàn bộ màn, nên
+             trạng thái đóng mở của mục lục không còn là trạng thái
+             của một người vừa mở trang */
+          return p.goto('file://' + path.join(GOC, 'index.html'),
+            { waitUntil: 'domcontentloaded' });
+        }).then(function () {
+          return p.evaluate(async function () {
+            var nhip = function () { return new Promise(function (r) { setTimeout(r, 60); }); };
+            location.hash = 'tong-quan';
+            await nhip();
+            var nav = document.querySelector('.muc');
+            if (!nav) return ['không tìm thấy mục lục'];
+            var xau = [], cao = nav.scrollHeight, khung = window.innerHeight;
+            if (cao > khung * 6)
+              xau.push('mục lục cao ' + cao + ' điểm ảnh trên khung ' + khung +
+                ' — quá ' + (cao / khung).toFixed(1) + ' lần, cần gập nhóm lại');
+            var nhom = nav.querySelectorAll('details.nhom');
+            if (!nhom.length) xau.push('mục lục không còn gập được — nhóm phải là <details>');
+            var phan = nav.querySelectorAll('details.phan');
+            if (phan.length !== window.GV.PHAN.length)
+              xau.push('mục lục dựng ra ' + phan.length + ' phần nhưng kho khai ' +
+                window.GV.PHAN.length);
+            /* nhóm chứa màn đang đọc phải tự mở */
+            var ds = Object.keys(window.GV.MAN).slice(-3);
+            for (var i = 0; i < ds.length; i++) {
+              location.hash = ds[i];
+              await nhip();
+              var a = nav.querySelector('a[data-v="' + ds[i] + '"]');
+              if (!a) continue;
+              var n = a.closest('details.nhom');
+              if (n && !n.open) xau.push('vào màn ' + ds[i] + ' mà nhóm chứa nó không tự mở');
+              var ph = n && n.parentNode.closest('details.phan');
+              if (ph && !ph.open) xau.push('vào màn ' + ds[i] + ' mà phần chứa nó không tự mở');
+            }
+            /* và phải KHÔNG phình dần: đi qua bốn mươi màn rồi đo lại.
+               Nếu nhóm mở ra mà không bao giờ đóng thì mục lục trở về
+               dài y như khi chưa gập. */
+            var het = Object.keys(window.GV.MAN);
+            for (var j = 0; j < het.length && j < 40; j++) {
+              location.hash = het[j];
+              await nhip();
+            }
+            var cao2 = nav.scrollHeight;
+            if (cao2 > khung * 6)
+              xau.push('sau khi duyệt bốn mươi màn, mục lục phình lên ' + cao2 +
+                ' điểm ảnh — nhóm mở ra mà không đóng lại');
+            return xau;
+          });
+        }).then(function (xauMuc) {
+          console.log('MỤC LỤC   · ' + (xauMuc.length ? 'CÓ VẤN ĐỀ' :
+            'gập được, nhóm đang đọc tự mở, cao dưới sáu lần khung nhìn'));
+          xauMuc.forEach(function (m) { L('Mục lục: ' + m); });
+        }).then(function () {
+
         /* 4. TƯƠNG PHẢN — mọi mã màu chữ phải đạt WCAG AA (4.5:1) trên
               nền của chính chế độ ấy, ở CẢ hai chế độ sáng và tối. Màu
               chữ không đủ tương phản là một lỗi loại trừ người đọc, và
@@ -848,6 +971,7 @@ function lopChay(xong) {
             console.log('TƯƠNG PHẢN· ' + TOKEN.length + ' mã màu chữ, hai chế độ · ngưỡng WCAG AA 4.5:1');
             return b.close();
           });
+        });
         });
       });
     });

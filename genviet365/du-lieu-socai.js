@@ -218,6 +218,10 @@
     ['du-lieu-deana.js', 'RÚT', 'Đề án thành lập — từ ƯƠM MẦM GEN VIỆT và Bộ Đề Tài Nghiên Cứu', 'đã chốt'],
     ['du-lieu-slide.js', 'RÚT', 'Bộ trình bày — từ SLIDE CLB GEN VIỆT và slide buổi họp tham khảo', 'đã chốt'],
 
+    ['du-lieu-khoi45.js', 'BIÊN SOẠN', 'Một trăm chuyên đề khối 4 và khối 5 — kho gốc chưa có phần này, dựng theo đúng khung khối 1–3', 'chờ Hội đồng Chuyên môn duyệt'],
+    ['du-lieu-antoan.js', 'BIÊN SOẠN', 'Chương an toàn trại — tài liệu trại gốc không có chương này, mà chuẩn bảo vệ trẻ em bắt buộc phải có', 'chờ Hội đồng Chuyên môn duyệt, và cần cán bộ y tế cùng luật sư rà lại'],
+    ['du-lieu-nghiencuu.js', 'BIÊN SOẠN', 'Thiết kế nghiên cứu cho bảy đề tài GV-R còn thiếu giả thuyết', 'chờ Hội đồng Chuyên môn duyệt'],
+
     ['du-lieu-bni.js', 'THAM CHIẾU', 'Mô hình chi hội — tài liệu của BNI Global, LLC. Học cơ chế, không dùng lại thương hiệu hay văn bản', 'không kê khai là tác phẩm của Học viện']
   ];
 

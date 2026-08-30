@@ -299,7 +299,11 @@ GV.NHOM = [
       { v: 'ga-khau-quyet', t: 'Hai mươi khẩu quyết', h: 'Hạt nhân của mỗi chuyên đề tiểu học' },
       { v: 'ga-buoi', t: 'Bảy mươi ba buổi đã soạn', h: 'Có mục tiêu, hoạt động, đầu ra' },
       { v: 'ga-hoat-dong', t: 'Ngân hàng ba mươi hai hoạt động', h: 'Chơi được ngay · rèn gì thì ghi rõ' },
-      { v: 'ga-hoc-ky', t: 'Mười lăm tuần một học kỳ', h: 'Và mười bốn biểu mẫu đi kèm' }
+      { v: 'ga-hoc-ky', t: 'Mười lăm tuần một học kỳ', h: 'Và mười bốn biểu mẫu đi kèm' },
+      { v: 'k45-de-tai', t: 'Một trăm chuyên đề khối 4 và 5', h: 'Biên soạn mới · chờ Hội đồng duyệt' },
+      { v: 'k45-khau-quyet', t: 'Một trăm khẩu quyết', h: 'Khớp một-một với chuyên đề' },
+      { v: 'k45-du-an', t: 'Mười dự án mẫu', h: 'Khối 4: 4–8 tuần · khối 5: 8–12 tuần' },
+      { v: 'k45-giao-an', t: 'Hai giáo án mẫu đủ mười một pha', h: 'Và tám điểm khác khối 1–3' }
     ]},
   { id: 'g32', no: '32', t: 'CẨM NANG VẬN HÀNH CHI TIẾT', s: 'Chạy được một buổi và một nhiệm kỳ', mau: '#9E470D',
     ds: [
@@ -340,7 +344,63 @@ GV.NHOM = [
       { v: 'bn-doi-chieu', t: 'Đối chiếu hai mươi trục', h: 'Cái gì bê được, cái gì phải đổi' },
       { v: 'bn-khong-be', t: 'Mười hai thứ không được bê', h: 'Vì đối tượng là trẻ em, không phải doanh nhân' },
       { v: 'bn-van-hanh', t: 'Ghế, chỉ số và quy trình họp', h: '12 ghế · 13 chỉ số · 20 mốc' }
+    ]},
+  { id: 'g37', no: '37', t: 'AN TOÀN TRẠI', s: 'Chương mà tài liệu gốc không có — và chuẩn của hệ bắt buộc phải có', mau: '#BE0E16',
+    ds: [
+      { v: 'at-khong-chay', t: 'Mười bốn điều kiện mở trại', h: 'Thiếu một thôi là không được mở' },
+      { v: 'at-truoc-trai', t: 'Chuẩn bị từ D-30 tới D-1', h: 'Hai mươi mốc đếm ngược' },
+      { v: 'at-su-co', t: 'Mười hai loại sự cố', h: 'Dấu hiệu · làm gì · và cái bẫy' },
+      { v: 'at-ranh-gioi', t: 'Ranh giới người lớn và giờ đêm', h: 'Vùng rủi ro cao nhất của mọi trại' },
+      { v: 'at-to-giac', t: 'Nhận và xử lý tố giác', h: 'Tám bước · người nhận công khai từ ngày đầu' },
+      { v: 'at-ho-so', t: 'Túi y tế và bộ hồ sơ', h: 'AT-01 → AT-19 · ai ký, ai giữ, lưu bao lâu' }
+    ]},
+  { id: 'g38', no: '38', t: 'THIẾT KẾ NGHIÊN CỨU', s: 'Bảy đề tài còn thiếu giả thuyết, nay có', mau: '#0B7350',
+    ds: [
+      { v: 'nc-thiet-ke', t: 'Bảy thiết kế nghiên cứu', h: 'GV-R3 · R4 · R5 · R7 · R8 · R9 · R10' },
+      { v: 'nc-chi-tiet', t: 'Rủi ro thiết kế từng đề tài', h: 'Chỗ yếu nhất, nói thẳng' },
+      { v: 'nc-sai-lam', t: 'Mười sai lầm hay mắc', h: 'Và phanh cho từng cái' },
+      { v: 'nc-dao-duc', t: 'Đạo đức nghiên cứu với trẻ', h: 'Mười ba điều không thương lượng' },
+      { v: 'nc-ho-so', t: 'Bộ hồ sơ nộp cấp Sở', h: 'Và câu hội đồng thường hỏi' }
     ]}
+];
+
+/* ══════════ BẢY PHẦN — TẦNG TRÊN CỦA ĐIỀU HƯỚNG ══════════
+   Ba mươi tám nhóm là đúng về nội dung nhưng sai về cách đọc: không
+   ai giữ nổi ba mươi tám mục trong đầu. Bảy phần dưới đây là tầng
+   trên, gom nhóm lại theo CÂU HỎI người đọc đang có, không theo thứ
+   tự nhóm được viết ra.
+
+   Mỗi nhóm thuộc đúng MỘT phần. Bộ kiểm soi cả hai chiều: nhóm nào
+   không có phần thì chặn, phần nào trỏ tới nhóm không tồn tại cũng
+   chặn. Nhờ vậy thêm một nhóm mới mà quên xếp phần là biết ngay. */
+GV.PHAN = [
+  { id: 'p1', no: '1', t: 'TỔNG QUAN GEN VIỆT', mau: '#185AB4',
+    s: 'Gen Việt là gì, dựng trên nền nào, và tra ở đâu',
+    nhom: ['g1', 'g21', 'g30', 'g10', 'g20'] },
+
+  { id: 'p2', no: '2', t: 'CLUB GEN VIỆT', mau: '#0B7350',
+    s: 'Hạt nhân vận hành — nơi em được trao vai thật',
+    nhom: ['g4', 'g22', 'g29', 'g32', 'g34', 'g36', 'g11'] },
+
+  { id: 'p3', no: '3', t: 'LỘ TRÌNH CÁ NHÂN GEN VIỆT', mau: '#5140B4',
+    s: 'Một em đi qua hệ này thế nào, từ ngày đầu tới lúc có nghề',
+    nhom: ['g2', 'g5', 'g14', 'g24', 'g26'] },
+
+  { id: 'p4', no: '4', t: 'HỆ THỐNG ĐÀO TẠO MƯỜI HAI KHỐI', mau: '#A8801F',
+    s: 'Dạy cái gì, dạy thế nào, ai dạy và dạy an toàn ra sao',
+    nhom: ['g23', 'g31', 'g3', 'g9', 'g19', 'g33', 'g37'] },
+
+  { id: 'p5', no: '5', t: 'THÀNH TỰU GEN VIỆT', mau: '#9E470D',
+    s: 'Chứng minh được gì, bằng bằng chứng nào',
+    nhom: ['g7', 'g16', 'g38'] },
+
+  { id: 'p6', no: '6', t: 'GEN VIỆT TRONG KỶ NGUYÊN VƯƠN MÌNH', mau: '#BE0E16',
+    s: 'Tầm vóc quốc gia, bản quyền, nhân rộng và ra thế giới',
+    nhom: ['g13', 'g12', 'g17', 'g18', 'g27', 'g15', 'g28', 'g35'] },
+
+  { id: 'p7', no: '7', t: 'HOẠT ĐỘNG GEN VIỆT VÀ CỘNG ĐỒNG', mau: '#0B6675',
+    s: 'Nơi giá trị của em được người ngoài xác nhận',
+    nhom: ['g25', 'g6', 'g8'] }
 ];
 
 GV.MAN = {
@@ -2408,6 +2468,150 @@ GV.MAN = {
     { k: 'muc', t: 'Sáu luật xuất xứ' },
     { k: 'luat', tu: 'SC_XX_LUAT' },
     { k: 'trich', t: 'Mọi tệp biên soạn mới mang trạng thái chờ Hội đồng Chuyên môn duyệt cho tới khi có văn bản duyệt. Không tự chuyển sang đã chốt.', n: 'Luật xuất xứ thứ tư' }
+  ]},
+
+/* ══════════ NHÓM 37 · AN TOÀN TRẠI ══════════ */
+'at-khong-chay': { q: 'chung', k: 'An toàn trại', t: 'Mười bốn điều kiện mở trại',
+  p: 'Thiếu một điều thôi là không được mở. Đây không phải danh sách mong muốn — đây là ngưỡng.',
+  khoi: [
+    { k: 'van', t: 'Phát hiện khi soi kho: khoảng trống không chỉ là *thiếu chương an toàn*. Chính phần pháp lý của hệ này — nhóm 16 — đã tự quy định sẵn hai hạng mục: **bảo hiểm tai nạn bắt buộc với mọi hoạt động ngoài cơ sở, kiểm trước mỗi trại**, và **hồ sơ an toàn từng hoạt động gồm danh mục kiểm, người trực từng ca, số khẩn cấp, phương án y tế**. Nghĩa là trại Leader Boom không vi phạm một chuẩn ở đâu xa — nó vi phạm chuẩn của chính hệ.' },
+    { k: 'van', t: 'Và kỳ kiểm định nhượng quyền ở nhóm 27 biến việc ấy thành hậu quả cụ thể: phần an toàn trẻ em **bằng không thì cả kỳ không đạt, bất kể tổng điểm**. Cho tới khi mười bốn điều dưới đây đủ, trại không được phép chạy.' },
+    { k: 'canh', tu: 'AT_KHONG_CHAY' },
+    { k: 'muc', t: 'Mười tám luật an toàn' },
+    { k: 'luat', tu: 'AT_LUAT_TRAI' },
+    { k: 'trich', t: 'An toàn đứng trước chương trình. Bỏ một phiên vì lý do an toàn không phải là thất bại của người dẫn.', n: 'Luật an toàn thứ nhất' }
+  ]},
+
+'at-truoc-trai': { q: 'kh_gia_dinh', k: 'An toàn trại', t: 'Chuẩn bị từ D-30 tới D-1',
+  p: 'Hai mươi mốc đếm ngược. Phần lớn việc an toàn phải xong trước khi xe lăn bánh — làm tại chỗ thì đã muộn.',
+  khoi: [
+    { k: 'lich', tu: 'AT_TRUOC_TRAI' },
+    { k: 'van', t: 'Mốc D-30 đầu tiên đáng chú ý: **chỉ định một Trưởng ban an toàn có tên, và một người thay khi vắng** — và người này *không kiêm dẫn chương trình*. Người vừa lo khí thế sân khấu vừa lo an toàn thì lúc phải chọn sẽ chọn khí thế.' },
+    { k: 'muc', t: 'Ba mức báo động' },
+    { k: 'thang', tu: 'AT_MUC_BAO_DONG' }
+  ]},
+
+'at-su-co': { q: 'kh_gia_dinh', k: 'An toàn trại', t: 'Mười hai loại sự cố',
+  p: 'Mỗi loại có dấu hiệu nhận ra, việc phải làm, và cái bẫy mà người chưa quen hay mắc.',
+  khoi: [
+    { k: 'cd4', nhan: ['Dấu hiệu nhận ra', 'Việc đầu tiên', 'Rồi làm gì', 'Bẫy thường mắc'], tu: 'AT_SU_CO' },
+    { k: 'van', t: 'Mọi thẻ sự cố nghiêm trọng đều kết bằng cùng một chuỗi: **gọi cấp cứu → đưa tới cơ sở y tế → báo gia đình**. Không thẻ nào để người phụ trách trại tự xử. Kho này cố ý *không* ghi tên thuốc kèm liều lượng và *không* hướng dẫn thủ thuật vượt quá sơ cứu cơ bản — người không chuyên làm sai một thao tác y khoa gây hại nhiều hơn là không làm.' },
+    { k: 'canh', ds: [
+      'Bốn đầu số công cộng toàn quốc là thứ duy nhất kho này ghi sẵn: 115 cấp cứu · 114 cứu hoả · 113 công an · 111 bảo vệ trẻ em.',
+      'Số của cơ sở y tế gần nhất và của xe trực phải do chính trại điền vào trước ngày D-7 — không ai điền hộ được.',
+      'Đây là khung biên soạn mới theo thông lệ tốt. Trước khi tổ chức trại thật, một cán bộ y tế có chứng chỉ và một luật sư phải rà lại.'
+    ]}
+  ]},
+
+'at-ranh-gioi': { q: 'kh_gia_dinh', k: 'An toàn trại', t: 'Ranh giới người lớn, hoạt động dưới nước và giờ đêm',
+  p: 'Ba vùng rủi ro cao nhất của mọi trại thiếu niên. Hai vùng đầu gây thương tích; vùng thứ ba gây thứ không chữa được.',
+  khoi: [
+    { k: 'van', t: 'Phần này *cố ý không chép lại* mười điều bảo vệ trẻ em ở nhóm 16 — nó chỉ thêm phần riêng của môi trường **ở lại qua đêm**: chỗ ngủ, nhà vệ sinh, tuần đêm hai người, camera, chụp ảnh, và một điều dễ bỏ qua: *hỗ trợ viên là cựu học viên không được tính là người lớn trực*.' },
+    { k: 'muc', t: 'Ranh giới người lớn với trẻ' },
+    { k: 'luat', tu: 'AT_RANH_GIOI' },
+    { k: 'muc', t: 'Hoạt động dưới nước và giờ đêm' },
+    { k: 'luat', tu: 'AT_NUOC_VA_DEM' },
+    { k: 'trich', t: 'Không bao giờ một người lớn ở riêng với một trẻ.', n: 'Nguyên tắc gốc, nhóm 16 · áp vào trại thành mười sáu điều cụ thể' }
+  ]},
+
+'at-to-giac': { q: 'kh_gia_dinh', k: 'An toàn trại', t: 'Nhận và xử lý tố giác trong thời gian trại',
+  p: 'Tám bước. Bước thứ nhất là bước quyết định: phải có người nhận tố giác công khai ngay từ ngày đầu, chứ không phải khi đã có chuyện.',
+  khoi: [
+    { k: 'buoc', tu: 'AT_TO_GIAC' },
+    { k: 'van', t: 'Hai người được chỉ định, *một nam một nữ*, ảnh và tên dán ở nơi mọi em nhìn thấy. Một quy trình tố giác mà trẻ không biết hỏi ai thì không tồn tại, dù đã viết ra giấy.' }
+  ]},
+
+'at-ho-so': { q: 'kh_gia_dinh', k: 'An toàn trại', t: 'Túi y tế và bộ hồ sơ bắt buộc',
+  p: 'Hai mươi sáu hạng mục túi y tế, và mười chín hồ sơ với người ký, người giữ, thời hạn lưu.',
+  khoi: [
+    { k: 'bang', cot: ['Nhóm', 'Hạng mục', 'Số lượng tối thiểu', 'Dùng khi nào'], tu: 'AT_TUI_Y_TE' },
+    { k: 'muc', t: 'Bộ hồ sơ AT-01 → AT-19' },
+    { k: 'bang', cot: ['Mã', 'Hồ sơ', 'Ai ký', 'Ai giữ', 'Lưu bao lâu'], tu: 'AT_HO_SO' },
+    { k: 'van', t: 'Mọi định mức trong hai bảng trên — tỉ lệ người lớn trên trẻ, số lượng vật tư, thời hạn lưu hồ sơ — là mức kho này **đặt theo thông lệ**, không trích từ văn bản pháp luật nào. Kho cố ý không dẫn số hiệu văn bản mà mình không kiểm chứng được. Học viện cần đối chiếu với quy định hiện hành của địa phương trước khi ban hành.' }
+  ]},
+
+/* ══════════ NHÓM 38 · THIẾT KẾ NGHIÊN CỨU ══════════ */
+'nc-thiet-ke': { q: 'nghiem_thu', k: 'Nghiên cứu', t: 'Bảy thiết kế nghiên cứu còn thiếu',
+  p: 'Kho gốc chỉ dựng thiết kế đầy đủ cho GV-R1, R2 và R6. Bảy đề tài còn lại chỉ có tên, mục tiêu và sản phẩm — không có giả thuyết. Đây là chỗ trả nợ ấy.',
+  khoi: [
+    { k: 'van', t: 'Một đề tài không có giả thuyết thì **không đăng ký được cấp Sở**, vì hội đồng hỏi câu đó đầu tiên. Bảy thiết kế dưới đây dựng theo đúng khung của ba đề tài mà Học viện đã viết, và mang trạng thái *chờ Hội đồng Chuyên môn duyệt*.' },
+    { k: 'bang', cot: ['Mã', 'Giả thuyết hoặc câu hỏi nghiên cứu', 'Biến số', 'Nhóm đối chứng', 'Công cụ đo', 'Thời gian', 'Sản phẩm'],
+      tu: 'NC_THIET_KE_B' },
+    { k: 'muc', t: 'Mười sáu luật làm nghiên cứu ứng dụng trong trường' },
+    { k: 'luat', tu: 'NC_LUAT' },
+    { k: 'trich', t: 'Viết giả thuyết trước khi thu số liệu, và ghi ngày. Giả thuyết viết sau khi đã nhìn số liệu thì bao giờ cũng đúng.', n: 'Luật nghiên cứu thứ nhất' }
+  ]},
+
+'nc-chi-tiet': { q: 'nghiem_thu', k: 'Nghiên cứu', t: 'Rủi ro thiết kế của từng đề tài',
+  p: 'Mỗi thẻ nói bối cảnh, các bước triển khai, ai xác nhận kết quả — và quan trọng nhất là chỗ yếu nhất của chính thiết kế ấy.',
+  khoi: [
+    { k: 'mt', tu: 'NC_CHI_TIET' },
+    { k: 'van', t: 'Ba quyết định thiết kế đáng để Hội đồng đọc kỹ. **GV-R5 buộc phải chia hai pha** vì bộ test Mật mã Gen Tài Năng chưa từng được kiểm định — pha A xây và thử công cụ, pha A không đạt thì dừng, không chạy pha B; rủi ro lớn nhất là hiệu ứng dán nhãn lên chính đứa trẻ. **GV-R4 cần ba nhánh chứ không phải hai**, vì bảy bước luôn đi kèm mentor, nên nếu chỉ có nhánh can thiệp và nhánh không can thiệp thì không tách được tác dụng của quy trình khỏi tác dụng của việc có người lớn quan tâm đều đặn. **GV-R8 không có giả thuyết nhân quả** và kho nói thẳng như vậy — đó là nghiên cứu đối chiếu văn bản, và luật riêng của nó là viết cột *chưa đáp ứng* trước cột *đã đáp ứng*, nếu không báo cáo sẽ trượt thành một bài ca ngợi.' }
+  ]},
+
+'nc-sai-lam': { q: 'nghiem_thu', k: 'Nghiên cứu', t: 'Mười sai lầm thiết kế hay mắc',
+  p: 'Đề tài học sinh hỏng ở mười chỗ này nhiều hơn tất cả chỗ khác cộng lại. Mỗi cái có dấu hiệu nhận ra và phanh.',
+  khoi: [
+    { k: 'rui', tu: 'NC_SAI_LAM' },
+    { k: 'van', t: 'Sai lầm nặng nhất không phải cỡ mẫu nhỏ — đó là **người dạy đồng thời là người chấm**. Nó làm hỏng mọi con số về sau, và không sửa được bằng cách tăng cỡ mẫu hay chạy thêm thống kê.' }
+  ]},
+
+'nc-dao-duc': { q: 'chung', k: 'Nghiên cứu', t: 'Đạo đức nghiên cứu khi đối tượng là trẻ',
+  p: 'Mười ba điều không thương lượng. Một đề tài vi phạm bất kỳ điều nào ở đây thì kết quả có đẹp đến mấy cũng không dùng được.',
+  khoi: [
+    { k: 'luat', tu: 'NC_DAO_DUC' },
+    { k: 'van', t: 'Hai điều dễ bị bỏ qua nhất: **quyền rút khỏi nghiên cứu bất cứ lúc nào mà không bị thiệt** — nghĩa là em rút vẫn được học đầy đủ; và **không để nhóm đối chứng bị thiệt về giáo dục** — nhóm đối chứng phải được nhận chương trình sau khi nghiên cứu kết thúc, chứ không phải bị bỏ lại để làm nền so sánh.' },
+    { k: 'trich', t: 'Kết quả đẹp thu được từ một thiết kế vi phạm đạo đức là kết quả không dùng được — không phải vì luật cấm, mà vì nó không còn nói lên điều gì về việc dạy trẻ tử tế.', n: 'Đọc từ mười ba điều trên' }
+  ]},
+
+'nc-ho-so': { q: 'nghiem_thu', k: 'Nghiên cứu', t: 'Bộ hồ sơ nộp cấp Sở',
+  p: 'Từng mục hồ sơ, ai ký, và câu hội đồng thường hỏi ở chính mục ấy.',
+  khoi: [
+    { k: 'bang', cot: ['Mục hồ sơ', 'Nội dung phải có', 'Ai ký', 'Hội đồng thường hỏi gì'], tu: 'NC_HO_SO_SO_B' },
+    { k: 'van', t: 'Cột cuối là cột đáng giá nhất: nó biến một danh mục giấy tờ thành một buổi tập bảo vệ. Đọc trước cột ấy thì không bị hỏi bất ngờ.' }
+  ]},
+
+/* ══════════ BỔ SUNG NHÓM 31 · KHỐI 4 VÀ KHỐI 5 ══════════ */
+'k45-de-tai': { q: 'nghe_chung', k: 'Khối 4 và 5', t: 'Một trăm chuyên đề khối 4 và khối 5',
+  p: 'Kho gốc của Học viện chỉ có triển khai chi tiết cho khối 1, 2, 3. Đây là phần biên soạn mới để lấp chỗ ấy — và nó mang trạng thái chờ duyệt, không phải đã chốt.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Khối', 'Nhóm', 'Tên chuyên đề', 'Nội dung cốt lõi'], tu: 'K45_DE_TAI_B' },
+    { k: 'muc', t: 'Ba điều phải đọc trước khi dùng' },
+    { k: 'canh', ds: [
+      'BIÊN SOẠN MỚI — không rút từ tài liệu gốc. Cần Hội đồng Chuyên môn của Học viện duyệt trước khi đưa vào dạy.',
+      'Ba thứ giữ nguyên theo kho gốc: mã và tên chuyên đề, trọng tâm khối cùng nhịp dự án, và khung mười một pha.',
+      'Một thứ viết mới hoàn toàn: cột nội dung cốt lõi. Đối chiếu lại thì không ô nào trùng nguyên văn bản gốc.'
+    ]},
+    { k: 'van', t: 'Cột *Nhóm* dùng đúng chuỗi rút gọn mà khối 1–3 đang dùng, để hai danh mục ghép thẳng được khi lọc. Tên nhóm đầy đủ nằm ở màn năm nhóm cố định.' }
+  ]},
+
+'k45-khau-quyet': { q: 'chung', k: 'Khối 4 và 5', t: 'Một trăm khẩu quyết',
+  p: 'Mỗi chuyên đề một khẩu quyết ba tới năm chữ, kèm dấu hiệu nhận ra em đã dùng được nó — chứ không phải đã thuộc nó.',
+  khoi: [
+    { k: 'bang', cot: ['Mã chuyên đề', 'Khẩu quyết', 'Giải nghĩa', 'Dấu hiệu em đã dùng được'], tu: 'K45_KHAU_QUYET_B' },
+    { k: 'van', t: 'Cột cuối là cột khó viết nhất và cũng là cột cứu cả bảng. *Thuộc khẩu quyết* thì kiểm tra bằng cách hỏi; *dùng được khẩu quyết* thì chỉ thấy qua một hành vi quan sát được. Một khẩu quyết không nêu được dấu hiệu ấy thì chưa dạy được.' },
+    { k: 'trich', t: 'Thứ còn lại sau khi quên hết mới là thứ đã dạy được.', n: 'Cách đọc bảng khẩu quyết' }
+  ]},
+
+'k45-du-an': { q: 'nghe_quan_ly', k: 'Khối 4 và 5', t: 'Mười dự án mẫu',
+  p: 'Việc trong phạm vi trường lớp hoặc tổ dân phố, học sinh tự đi bộ tới được, không cần kinh phí lớn và không cần người lớn làm hộ.',
+  khoi: [
+    { k: 'bang', cot: ['Khối', 'Tên dự án mẫu', 'Nhịp tuần', 'Việc từng tuần', 'Sản phẩm cuối và cách đo tác động'],
+      tu: 'K45_DU_AN_B' },
+    { k: 'van', t: 'Ba ràng buộc trên là ba ràng buộc giữ cho dự án là *của em*. Bỏ ràng buộc thứ ba — không cần người lớn làm hộ — thì cuối kỳ sẽ có những sản phẩm rất đẹp mà không em nào kể lại được mình đã làm gì.' }
+  ]},
+
+'k45-giao-an': { q: 'nghe_quan_ly', k: 'Khối 4 và 5', t: 'Hai giáo án mẫu và tám điểm khác khối dưới',
+  p: 'Đủ mười một pha, từng phút. Một cho khối 4, một cho khối 5.',
+  khoi: [
+    { k: 'muc', t: 'Khối 4 · tư duy dữ liệu' },
+    { k: 'giaoan', tu: 'K45_GIAO_AN_4' },
+    { k: 'muc', t: 'Khối 5 · quản trị xung đột và đàm phán' },
+    { k: 'giaoan', tu: 'K45_GIAO_AN_5' },
+    { k: 'muc', t: 'Tám điểm khối 4 và 5 khác khối 1–3' },
+    { k: 'luoi', c: 2, tu: 'K45_KHAC_BIET' },
+    { k: 'muc', t: 'Mười sáu luật dạy khối 4 và khối 5' },
+    { k: 'luat', tu: 'K45_LUAT' }
   ]}
 
 };
@@ -2426,6 +2630,15 @@ GV.TU = {
 
   /* nhóm 22 · 52 tuần — cùng một kho, chiếu ra bốn bảng theo chu kỳ
      và hai bảng chu kỳ. Chia nhỏ vì một bảng 52 dòng thì không ai đọc. */
+  /* nhóm 31 · khối 4 và 5 — cắt dòng tiêu đề nằm trong dữ liệu */
+  K45_DE_TAI_B: GV.K45_DE_TAI.slice(1),
+  K45_KHAU_QUYET_B: GV.K45_KHAU_QUYET.slice(1),
+  K45_DU_AN_B: GV.K45_DU_AN.slice(1),
+
+  /* nhóm 38 · cắt dòng tiêu đề nằm trong dữ liệu */
+  NC_THIET_KE_B: GV.NC_THIET_KE.slice(1),
+  NC_HO_SO_SO_B: GV.NC_HO_SO_SO.slice(1),
+
   /* nhóm 20 · bốn loại xuất xứ, viết ra để ranh giới không bị nhoè */
   XUAT_XU_LOAI: [
     { t: 'RÚT', n: 'Lấy từ tài liệu gốc của Học viện GITA.',

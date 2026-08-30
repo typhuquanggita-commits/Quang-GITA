@@ -77,9 +77,45 @@ a{color:var(--son)}
 /* ── mục lục ─────────────────────────────────────── */
 .muc{position:sticky; top:76px; max-height:calc(100vh - 96px); overflow-y:auto;
      padding:24px 6px 24px 0; display:grid; gap:22px; align-content:start; min-width:0}
+/* tầng phần — bảy mục trên cùng */
+.muc .phan{display:grid; gap:6px}
+.muc .p-dau{display:grid; grid-template-columns:auto 1fr auto; gap:0 8px; align-items:baseline;
+            padding:8px 10px; border-radius:8px; cursor:pointer; list-style:none;
+            background:var(--the2); border:1px solid var(--vien)}
+.muc .p-dau::-webkit-details-marker{display:none}
+.muc .p-dau::marker{content:''}
+.muc .p-dau:hover{background:var(--the)}
+.muc .p-dau:focus-visible{outline:2px solid var(--c); outline-offset:2px}
+.muc .p-no{font-family:var(--ma); font-size:11px; font-weight:700; color:var(--c)}
+.muc .p-t{font-size:12.5px; font-weight:700; letter-spacing:.06em; color:var(--c)}
+.muc .p-s{grid-column:2; font-size:11px; color:var(--muc3); font-weight:400; line-height:1.35}
+.muc .phan[open] > .p-dau{background:var(--the); box-shadow:var(--bong)}
+.muc .p-trong{display:grid; gap:14px; padding:8px 0 10px 10px;
+              border-left:2px solid var(--c); margin-left:10px}
+
 .muc .nhom{display:grid; gap:5px}
-.muc .n-dau{display:grid; grid-template-columns:auto 1fr; gap:0 8px; align-items:baseline;
-            padding:0 10px 4px; border-bottom:1px solid var(--vien)}
+/* Nhóm gập lại được. Bỏ mũi tên mặc định của trình duyệt và tự vẽ
+   một dấu cộng/trừ, vì mũi tên mặc định khác nhau ở mỗi trình duyệt
+   và ở Safari còn chiếm chỗ trong lưới. */
+.muc .n-dau{display:grid; grid-template-columns:auto 1fr auto; gap:0 8px; align-items:baseline;
+            padding:4px 10px; border-bottom:1px solid var(--vien);
+            cursor:pointer; list-style:none; border-radius:7px}
+.muc .n-dau::-webkit-details-marker{display:none}
+.muc .n-dau::marker{content:''}
+.muc .n-dau:hover{background:var(--the2)}
+.muc .n-dau:focus-visible{outline:2px solid var(--c); outline-offset:2px}
+.muc .n-dau .dem{font-family:var(--ma); font-size:10px; color:var(--muc3);
+                 justify-self:end; align-self:center}
+.muc .n-dau .dem::after{content:' +'; color:var(--c); font-weight:700}
+.muc .nhom[open] .n-dau .dem::after{content:' −'}
+.muc .nhom[open] .n-dau{background:var(--the2)}
+/* thanh mở hết · thu hết */
+.muc-thanh{display:flex; gap:6px; padding:0 10px 2px}
+.muc-nut{flex:1; font:inherit; font-size:11px; letter-spacing:.04em; padding:5px 8px;
+         color:var(--muc2); background:var(--the2); border:1px solid var(--vien);
+         border-radius:7px; cursor:pointer}
+.muc-nut:hover{background:var(--the); color:var(--muc)}
+.muc-nut:focus-visible{outline:2px solid var(--lam); outline-offset:2px}
 .muc .n-dau .no{font-family:var(--ma); font-size:10px; color:var(--c)}
 .muc .n-dau .t{font-size:11.5px; font-weight:700; letter-spacing:.09em; color:var(--c)}
 .muc .n-dau .s{grid-column:2; font-size:11px; color:var(--muc3); font-weight:400}
