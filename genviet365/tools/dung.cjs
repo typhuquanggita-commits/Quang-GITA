@@ -84,7 +84,8 @@ ok(MOI.length + ' tệp JS · cú pháp sạch');
 /* ── 3 · sinh lại tài liệu và dấu hiệu ─────────────────────── */
 tieu('SINH LẠI TÀI LIỆU VÀ DẤU HIỆU');
 ['ve-dau-hieu.cjs', 'sinh-thu-vien.cjs', 'sinh-trainghiem.cjs', 'sinh-thuonghieu.cjs',
- 'sinh-camtay.cjs', 'sinh-nhuongquyen.cjs', 'sinh-kho-goc.cjs']
+ 'sinh-camtay.cjs', 'sinh-nhuongquyen.cjs', 'sinh-kho-goc.cjs',
+ 'sinh-de-an.cjs', 'sinh-ho-so-bq.cjs']
   .forEach(function (t) {
     var r = chay('node ' + JSON.stringify(path.join(GOC, 'tools', t)));
     if (r.loi) chet('Bộ sinh ' + t + ' hỏng', r.ra);

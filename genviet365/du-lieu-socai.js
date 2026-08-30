@@ -30,8 +30,10 @@
       kho: ['NGUYEN_LY', 'LOP', 'CHANG', 'TY_NGUON'] },
 
     { ma: 'Y02', y: 'Club Gen Việt có tầng chiều sâu như mô hình BNI, tạo thế hệ lãnh đạo trẻ giàu phẩm chất',
-      man: ['chi-hoi', 'vong', 'ban-dieu-hanh', 'clb-muoi-cap', 'clb-nang-luc', 'clb-muoi-hai-ban'],
-      kho: ['TUAN', 'TY_CLB_CAP', 'TY_CLB_NL', 'TY_CLB_BAN', 'TY_CLB_TUAN'] },
+      man: ['chi-hoi', 'vong', 'ban-dieu-hanh', 'clb-muoi-cap', 'clb-nang-luc', 'clb-muoi-hai-ban',
+            'bn-tang-sau', 'bn-doi-chieu', 'bn-khong-be', 'bn-van-hanh'],
+      kho: ['TUAN', 'TY_CLB_CAP', 'TY_CLB_NL', 'TY_CLB_BAN', 'TY_CLB_TUAN',
+            'BN_TANG_SAU', 'BN_DOI_CHIEU', 'BN_KHONG_BE', 'BN_VAI', 'BN_CHI_SO'] },
 
     { ma: 'Y03', y: 'Bật phân quyền theo tầng năng lực học sinh và tầng quyền, theo quy định quyền như GITA365',
       man: ['phan-quyen', 'vai-tro', 'pham-vi'],
@@ -87,12 +89,16 @@
       man: ['vh-so-do', 'vh-truoc-trong-sau', 'vh-ban12', 'vh-raci-kpi', 'vh-canh-bao', 'vh-bieu-mau',
             'ms-loi-mo', 'ms-luan-diem', 'ms-ba-chang', 'ms-mo-thuc', 'ms-rui-ro', 'ms-khung-sach',
             'tr-bay-ngay', 'tr-lich-hau', 'tr-an-toan', 'tr-vip', 'tr-bukatsu',
-            'gv-anh-xa-bac', 'so-nguon', 'so-nguon-no'],
+            'gv-anh-xa-bac', 'so-nguon', 'so-nguon-no',
+            'da-cau-truc', 'da-phap-ly', 'da-to-chuc', 'da-kpi', 'da-ke-hoach', 'da-nghien-cuu',
+            'sl-bo-slide', 'sl-kich-ban', 'sl-thong-diep', 'sl-buoi-hop'],
       kho: ['VH2_SO_DO', 'VH2_TRUOC', 'VH2_TRONG', 'VH2_SAU', 'VH2_BAN12', 'VH2_RACI', 'VH2_KPI',
             'VH2_CANH_BAO', 'VH2_BIEU_MAU', 'VH2_LUAT',
             'MS_LUAN_DIEM', 'MS_CHANG', 'MS_MO_THUC', 'MS_RUI', 'MS_TRICH',
             'TV2_TRAI_KHUNG', 'TV2_VIP_CHUONG_TRINH', 'TV2_BUKATSU',
-            'TY_ANH_XA_BAC', 'TY_ANH_XA_LUAT', 'SN_TEP', 'SN_NO', 'SN_LUAT'] }
+            'TY_ANH_XA_BAC', 'TY_ANH_XA_LUAT', 'SN_TEP', 'SN_NO', 'SN_LUAT',
+            'DA_CAU_TRUC', 'DA_CAN_CU', 'DA_RACI', 'DA_KPI', 'DA_KE_HOACH_12', 'DA_NGHIEN_CUU',
+            'SL_BO_SLIDE', 'SL_KICH_BAN', 'SL_THONG_DIEP', 'SL_LUAT'] }
   ];
 
   /* ── 2 · Món nợ số ────────────────────────────────────────
@@ -148,7 +154,15 @@
     { t: 'Mười tám luật dạy một buổi', so: 18, kho: 'GA_LUAT' },
     { t: 'Bốn trạng thái của một dòng sổ nguồn', so: 4, kho: 'SN_TRANG_THAI' },
     { t: 'Sáu luật giữ sổ nguồn', so: 6, kho: 'SN_LUAT' },
-    { t: 'Sáu món nợ nguồn còn lại', so: 6, kho: 'SN_NO' }
+    { t: 'Sáu món nợ nguồn còn lại', so: 6, kho: 'SN_NO' },
+    { t: 'Mười bốn cơ chế tạo chiều sâu học từ mô hình chi hội', so: 14, kho: 'BN_TANG_SAU' },
+    { t: 'Hai mươi trục đối chiếu', so: 20, kho: 'BN_DOI_CHIEU' },
+    { t: 'Mười hai thứ không được bê sang môi trường học đường', so: 12, kho: 'BN_KHONG_BE' },
+    { t: 'Hai mươi hai slide giới thiệu', so: 22, kho: 'SL_BO_SLIDE' },
+    { t: 'Chín kịch bản nói', so: 9, kho: 'SL_KICH_BAN' },
+    { t: 'Mười hai thông điệp lõi', so: 12, kho: 'SL_THONG_DIEP' },
+    { t: 'Tám mục của một bộ đề án', so: 9, kho: 'DA_CAU_TRUC' },
+    { t: 'Mười sáu luật viết và bảo vệ đề án', so: 16, kho: 'DA_LUAT' }
   ];
 
   /* ── 3 · Luật giữ sổ ─────────────────────────────────────── */

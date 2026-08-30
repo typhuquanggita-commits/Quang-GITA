@@ -3,7 +3,7 @@
 Ứng dụng trình bày **toàn bộ** hệ thống GEN VIỆT 365 của Học viện GITA: kiến trúc, giáo
 trình, mô hình chi hội, bộ đo, biểu mẫu, dữ liệu và lộ trình 30 năm (2026 – 2056).
 
-**33 nhóm · 206 màn · 17 vai.** Có ô tìm — gõ `/` để nhảy vào. Không cần cài gì, không có bước dựng.
+**36 nhóm · 222 màn · 17 vai.** Có ô tìm — gõ `/` để nhảy vào. Không cần cài gì, không có bước dựng.
 
 Bản viết đầy đủ:
 - [`../docs/GEN_VIET_365.md`](../docs/GEN_VIET_365.md) — tập 1 · kiến trúc
@@ -20,6 +20,9 @@ Bản viết đầy đủ:
 - [`../docs/GEN_VIET_365_CAP_DO.md`](../docs/GEN_VIET_365_CAP_DO.md) — tập 12 · hệ mười cấp độ và 52 tuần (bản sinh ra)
 - [`../docs/GEN_VIET_365_VAN_HANH_CHI_TIET.md`](../docs/GEN_VIET_365_VAN_HANH_CHI_TIET.md) — tập 13 · vận hành chi tiết (bản sinh ra)
 - [`../docs/GEN_VIET_365_MASTER_TRAI.md`](../docs/GEN_VIET_365_MASTER_TRAI.md) — tập 14 · Master, trại và VIP (bản sinh ra)
+- [`../docs/GEN_VIET_365_DE_AN.md`](../docs/GEN_VIET_365_DE_AN.md) — tập 15 · đề án và bộ trình bày (bản sinh ra)
+- [`../docs/GEN_VIET_365_THAM_CHIEU.md`](../docs/GEN_VIET_365_THAM_CHIEU.md) — tập 16 · tham chiếu mô hình chi hội (bản sinh ra)
+- [`../docs/GEN_VIET_365_BANG_KE_TAC_PHAM.md`](../docs/GEN_VIET_365_BANG_KE_TAC_PHAM.md) — phụ lục · bảng kê tác phẩm cho hồ sơ quyền tác giả (bản sinh ra)
 
 ## Dựng — MỘT lệnh
 
@@ -121,7 +124,7 @@ ra** — không sửa tay; sửa xong nguồn thì gộp lại.
 | `tools/sinh-camtay.cjs` | Sinh `docs/GEN_VIET_365_CAM_TAY.md` từ hai kho cầm tay và tra cứu |
 | `tools/kiem-tra.cjs` | **Bộ kiểm phát hành** — bốn lớp: tĩnh · bản cắt · chạy thật · cổng phân quyền |
 | `du-lieu-kythuat.js` | Cấu trúc hộ chiếu JSON · 5 luật ghi dữ liệu · 12 bảng lưu · 9 đường máy chủ · 10 quyền · 7 nguyên tắc dựng phần mềm |
-| `man-hinh.js` | `GV.NHOM` (33 nhóm điều hướng) · `GV.MAN` (206 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
+| `man-hinh.js` | `GV.NHOM` (36 nhóm điều hướng) · `GV.MAN` (222 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
 | `giao-dien.js` | Lớp dựng: 65 loại khối · vẽ Ấn Gen Việt bằng SVG · bộ máy tìm bỏ dấu, lọc theo quyền · vỏ ứng dụng · định tuyến theo hash · nhớ màn đang đọc |
 | `style.css` | Bảng màu lấy từ nhận diện GITA · kiểu chữ · bố cục · sáng và tối |
 | `index.html` | Vỏ — nạp phông rồi nạp mười tám tệp JS theo đúng thứ tự |
@@ -144,5 +147,5 @@ Cùng quy ước với hệ thống GITA 365 v8: không thư viện ngoài, mọ
 node --check genviet365/*.js
 ```
 
-Rồi mở thử toàn bộ 206 màn ở cả hai chế độ sáng và tối, và ở khổ điện thoại — bộ kiểm cần
+Rồi mở thử toàn bộ 222 màn ở cả hai chế độ sáng và tối, và ở khổ điện thoại — bộ kiểm cần
 bắt được ba thứ: màn dựng ra quá ngắn, khối thiếu loại, và trang tràn ngang.

@@ -316,6 +316,29 @@ GV.NHOM = [
       { v: 'tr-an-toan', t: 'Mười ba điều an toàn trại', h: 'Chỗ tài liệu gốc mỏng nhất — nói rõ' },
       { v: 'tr-vip', t: 'Học viện Gen Việt VIP', h: 'Mười bước · chuẩn vào ra · quyền và nghĩa vụ' },
       { v: 'tr-bukatsu', t: 'Tham chiếu Bukatsu', h: 'Tài liệu gốc đã bị thay chữ — đã ghi rõ' }
+    ]},
+  { id: 'g34', no: '34', t: 'ĐỀ ÁN THÀNH LẬP CLB', s: 'Bộ hồ sơ hiệu trưởng ký được, Sở duyệt được', mau: '#0B6675',
+    ds: [
+      { v: 'da-cau-truc', t: 'Tám mục của một đề án', h: 'Thứ tự này không đảo được' },
+      { v: 'da-phap-ly', t: 'Căn cứ pháp lý — và chỗ còn yếu', h: 'Nguồn chỉ nêu bốn văn bản, không kèm điều khoản' },
+      { v: 'da-to-chuc', t: 'Cơ cấu và bảng RACI', h: 'Mỗi dòng đúng một chữ A' },
+      { v: 'da-kpi', t: 'Chỉ tiêu hai năm', h: 'Tám chỉ tiêu × tám quý' },
+      { v: 'da-ke-hoach', t: 'Kế hoạch mười hai tháng', h: 'Bốn quý · hai mươi mốc' },
+      { v: 'da-nghien-cuu', t: 'Thiết kế nghiên cứu sâu', h: 'Ba đề tài có thiết kế thật · bảy chưa có' }
+    ]},
+  { id: 'g35', no: '35', t: 'BỘ TRÌNH BÀY', s: 'Thứ cầm lên đứng nói trước nhà trường và phụ huynh', mau: '#5140B4',
+    ds: [
+      { v: 'sl-bo-slide', t: 'Hai mươi hai slide giới thiệu', h: 'Có ghi chú người trình bày từng trang' },
+      { v: 'sl-kich-ban', t: 'Chín kịch bản nói', h: 'Ba câu giữa · và điều không được nói' },
+      { v: 'sl-thong-diep', t: 'Mười hai thông điệp lõi', h: 'Dùng lại được ở mọi kênh' },
+      { v: 'sl-buoi-hop', t: 'Buổi họp tham khảo', h: 'Hai mươi hai mốc · và bẫy số liệu chồng lớp' }
+    ]},
+  { id: 'g36', no: '36', t: 'THAM CHIẾU CHI HỘI BNI', s: 'Học cơ chế tạo chiều sâu — không mượn thương hiệu', mau: '#9E470D',
+    ds: [
+      { v: 'bn-tang-sau', t: 'Mười bốn cơ chế tạo chiều sâu', h: 'Thứ khiến người ở lại nhiều năm' },
+      { v: 'bn-doi-chieu', t: 'Đối chiếu hai mươi trục', h: 'Cái gì bê được, cái gì phải đổi' },
+      { v: 'bn-khong-be', t: 'Mười hai thứ không được bê', h: 'Vì đối tượng là trẻ em, không phải doanh nhân' },
+      { v: 'bn-van-hanh', t: 'Ghế, chỉ số và quy trình họp', h: '12 ghế · 13 chỉ số · 20 mốc' }
     ]}
 ];
 
@@ -2205,6 +2228,171 @@ GV.MAN = {
       'Nợ nguồn không được đóng bằng cách xoá dòng. Chỉ đóng được bằng cách đưa tệp đọc được vào kho rồi đổi trạng thái sang ĐÃ RÚT.',
       'Khối 4 và khối 5 nên biên soạn theo đúng khung cứng đã rút được từ khối 1–3: hai tiết × bốn mươi lăm phút, năm pha mỗi tiết, một câu chuyện, một khẩu quyết, một bộ thẻ tình huống.'
     ]}
+  ]},
+
+/* ══════════ NHÓM 34 · ĐỀ ÁN THÀNH LẬP CLB ══════════ */
+'da-cau-truc': { q: 'clb_dieu_hanh', k: 'Đề án', t: 'Tám mục của một bộ đề án',
+  p: 'Thứ tự tám mục này không đảo được. Hiệu trưởng đọc mục I và mục VIII trước; phần giữa đọc sau, nếu hai mục đầu thuyết phục.',
+  khoi: [
+    { k: 'moc', tu: 'DA_CAU_TRUC' },
+    { k: 'van', t: 'Mục I phải gói trong *ba dòng*. Một đề án mở đầu bằng nửa trang lý luận là đề án bị gấp lại ở dòng thứ tư. Toàn bộ phần lý luận nền nằm ở nhóm 30 — đề án chỉ dẫn tới, không chép lại.' },
+    { k: 'muc', t: 'Bộ mẫu biểu kèm đề án' },
+    { k: 'bang', cot: ['Mã', 'Tên biểu mẫu', 'Ai ký', 'Nộp cho ai', 'Khi nào'], tu: 'DA_BIEU_MAU_B' },
+    { k: 'muc', t: 'Mười sáu luật viết và bảo vệ một đề án' },
+    { k: 'luat', tu: 'DA_LUAT' }
+  ]},
+
+'da-phap-ly': { q: 'dh_toan_he', k: 'Đề án', t: 'Căn cứ pháp lý, và chỗ hồ sơ còn yếu nhất',
+  p: 'Đây là phát hiện quan trọng nhất khi soi bộ đề án gốc, và nó là tin xấu cần nghe sớm.',
+  khoi: [
+    { k: 'van', t: 'Hai tài liệu đề án gốc cộng lại **chỉ nêu bốn văn bản**, và **không văn bản nào được dẫn kèm điều khoản**. Nghị định 79/2017/NĐ-CP xuất hiện đúng một lần, trong một câu ở mục VII, không chỉ ra điều nào cho phép lập câu lạc bộ trong trường. Hai văn bản còn lại thậm chí không có số hiệu trong nguồn.' },
+    { k: 'bang', cot: ['Văn bản', 'Số hiệu như nguồn ghi', 'Nội dung được viện dẫn', 'Dùng để chứng minh điều gì'],
+      tu: 'DA_CAN_CU_B' },
+    { k: 'canh', ds: [
+      'Đây là chỗ một bộ hồ sơ dễ bị Sở trả về nhất: viện dẫn tên văn bản mà không chỉ ra điều khoản cụ thể.',
+      'Trước khi nộp cấp Sở hoặc cấp Bộ, mỗi dòng trên phải bổ sung: số hiệu đầy đủ, ngày ban hành, và ĐIỀU — KHOẢN cụ thể được viện dẫn.',
+      'Bản dựng này cố ý KHÔNG tự thêm văn bản nào ngoài bốn cái nguồn nêu. Thêm một nghị định mà tài liệu gốc không có là tạo ra rủi ro pháp lý dưới danh nghĩa giúp đỡ.',
+      'Bảng ánh xạ sang Chương trình giáo dục phổ thông 2018 ở nhóm 18 là phần bù mạnh nhất cho điểm yếu này — nó chứng minh nội dung phù hợp chuẩn quốc gia, kể cả khi phần viện dẫn văn bản còn mỏng.'
+    ]},
+    { k: 'trich', t: 'Viện dẫn tên văn bản mà không chỉ ra điều khoản thì chưa gọi là căn cứ.', n: 'Luật viết đề án thứ ba' }
+  ]},
+
+'da-to-chuc': { q: 'clb_dieu_hanh', k: 'Đề án', t: 'Cơ cấu tổ chức và bảng RACI',
+  p: 'Sáu bộ phận, năm đầu mối phối hợp, và một bảng RACI mà bản gốc làm đúng chuẩn.',
+  khoi: [
+    { k: 'bang', cot: ['Bộ phận', 'Thành phần theo đề án', 'Nhiệm vụ chính', 'Kết quả đầu ra đo được'], tu: 'DA_TO_CHUC_B' },
+    { k: 'muc', t: 'Bảng RACI' },
+    { k: 'van', t: 'Bảng RACI gốc của đề án đạt chuẩn — *mỗi dòng đúng một chữ A*. Điều này hiếm: phần lớn bảng RACI trong tài liệu thực tế có dòng hai chữ A, tức là hai người cùng chịu trách nhiệm cuối, tức là không ai chịu.' },
+    { k: 'bang', cot: ['Hoạt động', 'Cố vấn chuyên môn', 'Chủ nhiệm CLB', 'Phó chủ nhiệm', 'Ban Học Tập', 'Ban Kỹ Năng', 'Ban Truyền thông'],
+      tu: 'DA_RACI_B' }
+  ]},
+
+'da-kpi': { q: 'kpi_toan_he', k: 'Đề án', t: 'Chỉ tiêu hai năm',
+  p: 'Tám chỉ tiêu, chia theo tám quý, mỗi chỉ tiêu có đơn vị phụ trách.',
+  khoi: [
+    { k: 'bang', cot: ['Năm', 'Chỉ tiêu KPI', 'Quý I', 'Quý II', 'Quý III', 'Quý IV', 'Đơn vị phụ trách'], tu: 'DA_KPI_B' },
+    { k: 'van', t: 'Bảng này là thứ phân biệt một đề án với một bản đề xuất: nó nói trước rằng *sau mười hai tháng, đo cái gì thì biết đã làm được hay chưa* — và chấp nhận bị đo bằng chính con số mình đặt ra.' },
+    { k: 'muc', t: 'Năm cơ sở tâm lý lứa tuổi 12–15' },
+    { k: 'van', t: 'Phần hội đồng thẩm định luôn hỏi mà bộ đề tài hiện có chưa giữ lại được. Đưa vào đây vì nó vừa là căn cứ khoa học cho đề án, vừa là lợi thế khi thiết kế nghiên cứu.' },
+    { k: 'bang', cot: ['Đặc điểm tuổi 12–15', 'Cách Gen Việt tận dụng', 'Lợi thế cho nghiên cứu'], tu: 'DA_TAM_LY_B' }
+  ]},
+
+'da-ke-hoach': { q: 'clb_dieu_hanh', k: 'Đề án', t: 'Kế hoạch mười hai tháng',
+  p: 'Bốn quý, hai mươi mốc, mỗi mốc có kết quả đầu ra cụ thể chứ không phải một việc phải làm.',
+  khoi: [
+    { k: 'quy', tu: 'DA_KE_HOACH_12' },
+    { k: 'van', t: 'Cách viết mốc ở đây đáng học: mỗi mốc ghi *việc → kết quả đo được*, không chỉ ghi việc. Một kế hoạch chỉ liệt kê việc thì cuối quý không ai kết luận được là đạt hay chưa.' }
+  ]},
+
+'da-nghien-cuu': { q: 'nghiem_thu', k: 'Đề án', t: 'Thiết kế nghiên cứu sâu',
+  p: 'Ba đề tài có thiết kế thật với giả thuyết, biến số, nhóm đối chứng và công cụ đo. Bảy đề tài còn lại chưa có — và nói ra thì tốt hơn là nống lên cho đủ mười.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Giả thuyết hoặc câu hỏi nghiên cứu', 'Biến số', 'Nhóm đối chứng', 'Công cụ đo', 'Thời gian', 'Sản phẩm'],
+      tu: 'DA_NGHIEN_CUU_B' },
+    { k: 'van', t: 'Kho gốc chỉ dựng thiết kế đầy đủ cho **GV-R1, GV-R2 và GV-R6**. Bảy đề tài còn lại mới có tên, mục tiêu và sản phẩm — tức đúng bằng những gì nhóm 26 đã có. Đây là khoảng trống nội dung của Học viện, cần biên soạn mới chứ không phải khoảng trống khai thác.' },
+    { k: 'canh', ds: [
+      'Một đề tài không có giả thuyết thì không đăng ký được cấp Sở — hội đồng hỏi câu đó đầu tiên.',
+      'Bảy đề tài còn lại nên viết theo đúng khung của ba đề tài đã có: giả thuyết → biến số → nhóm đối chứng → công cụ đo → thời gian tối thiểu 6–12 tháng → sản phẩm ứng dụng.',
+      'Không có nhóm đối chứng thì mọi con số chỉ là mô tả, không phải bằng chứng.'
+    ]}
+  ]},
+
+/* ══════════ NHÓM 35 · BỘ TRÌNH BÀY ══════════ */
+'sl-bo-slide': { q: 'tu_van', k: 'Bộ trình bày', t: 'Hai mươi hai slide giới thiệu',
+  p: 'Hệ có đủ nội dung nhưng trước nay chưa có bộ trình bày. Đây là thứ một người đi giới thiệu Gen Việt cầm lên dùng được ngay.',
+  khoi: [
+    { k: 'bang', cot: ['Slide', 'Tiêu đề', 'Nội dung chính', 'Thông điệp phải đọng lại', 'Ghi chú người trình bày'],
+      tu: 'SL_BO_SLIDE' },
+    { k: 'van', t: 'Cột *thông điệp phải đọng lại* quan trọng hơn cột nội dung. Người nghe quên hết các gạch đầu dòng; thứ còn lại sau buổi là một câu. Nếu một slide không nêu được câu ấy thì slide đó nên bỏ.' },
+    { k: 'canh', ds: [
+      'Bản slide gốc bỏ trống hẳn các ô ngày thành lập, số thành viên và thành tựu. Bản dựng này KHÔNG điền hộ — điền số chưa có là cách nhanh nhất để mất uy tín ngay buổi đầu.',
+      'Thay vào đó có kịch bản KB-8 cho đúng tình huống bị hỏi con số chưa có.'
+    ]}
+  ]},
+
+'sl-kich-ban': { q: 'tu_van', k: 'Bộ trình bày', t: 'Chín kịch bản nói',
+  p: 'Mỗi kịch bản có câu mở, ba câu giữa, câu kết — và quan trọng nhất là điều không được nói.',
+  khoi: [
+    { k: 'kichban', tu: 'SL_KICH_BAN' },
+    { k: 'van', t: 'Mục *không được nói* là mục thường bị bỏ khi người ta soạn kịch bản. Nó cũng là mục cứu nhiều buổi nhất: phần lớn buổi giới thiệu hỏng không phải vì thiếu ý hay, mà vì một câu hứa quá tay nói ra lúc đang được cổ vũ.' },
+    { k: 'trich', t: 'Slide là chỗ dựa của người nghe, không phải bản thảo của người nói.', n: 'Luật trình bày thứ nhất' }
+  ]},
+
+'sl-thong-diep': { q: 'chung', k: 'Bộ trình bày', t: 'Mười hai thông điệp lõi',
+  p: 'Rút từ slide gốc. Dùng lại được ở mọi kênh — trang web, thư gửi phụ huynh, bài đăng, hồ sơ đề án.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'SL_THONG_DIEP' },
+    { k: 'van', t: 'Mười hai thông điệp này nối thẳng vào nhóm 28: chúng là vật liệu cho phần thẻ tiêu đề, thẻ mô tả và các cụm nội dung. Một thông điệp đã đứng vững trước một hội đồng nhà trường thì cũng đứng vững trong một dòng kết quả tìm kiếm.' },
+    { k: 'muc', t: 'Mười hai luật trình bày' },
+    { k: 'luat', tu: 'SL_LUAT' }
+  ]},
+
+'sl-buoi-hop': { q: 'clb_dieu_hanh', k: 'Bộ trình bày', t: 'Buổi họp tham khảo, và bẫy số liệu chồng lớp',
+  p: 'Hai mươi hai mốc của một buổi họp mẫu — kèm một cảnh báo về chính bộ slide gốc.',
+  khoi: [
+    { k: 'van', t: 'Bộ slide tham khảo chứa **hai lớp số liệu chồng nhau**: một trang tiếng Anh cũ và một trang tiếng Việt mới hơn, với những con số khác hẳn. Người đi trình bày rất dễ chiếu nhầm trang cũ rồi bị hỏi lại. Kho này lấy lớp mới và ghi kèm mốc thời gian; trước mỗi buổi phải kiểm lại xem số đã cũ chưa.' },
+    { k: 'lich', tu: 'SL_BUOI_HOP' },
+    { k: 'canh', ds: [
+      'Mọi con số dẫn từ nguồn bên ngoài phải ghi kèm mốc thời gian và nơi lấy. Số không có mốc là số không dùng được sau sáu tháng.',
+      'Không chiếu số liệu của tổ chức khác như thể là số liệu của Gen Việt. Đây vừa là chuyện trung thực, vừa là chuyện pháp lý.',
+      'Mốc phút trong bảng trên là suy theo khung chín mươi phút — tệp gốc đánh số slide chứ không ghi giờ. Thứ tự và nội dung thì đúng gốc.'
+    ]},
+    { k: 'muc', t: 'Sáu luận điểm — mối quan hệ là tài sản' },
+    { k: 'van', t: 'Tệp nguồn nặng 49 MB và phần lớn nội dung nằm trong ảnh, nên chỉ rút được phần chữ đọc được. Sáu luận điểm dưới đây là đúng phần ấy, không suy đoán thêm.' },
+    { k: 'ly', tu: 'SL_QUAN_HE' }
+  ]},
+
+/* ══════════ NHÓM 36 · THAM CHIẾU CHI HỘI BNI ══════════ */
+'bn-tang-sau': { q: 'clb_dieu_hanh', k: 'Tham chiếu BNI', t: 'Mười bốn cơ chế tạo chiều sâu',
+  p: 'Học viện yêu cầu ngay từ đầu rằng CLB Gen Việt phải có tầng chiều sâu như mô hình BNI. Đây là phần trả lời yêu cầu ấy bằng cơ chế cụ thể, không bằng cảm hứng.',
+  khoi: [
+    { k: 'van', t: 'Nói rõ trước: đây là tài liệu **tham chiếu của một tổ chức khác** — BNI Global, LLC — không phải tài sản của Học viện. Gen Việt học *cơ chế*, không dùng lại thương hiệu, không sao chép văn bản, không bê nguyên lịch trình họp. Phần đối chiếu và phần bình luận dưới đây là sáng tạo riêng.' },
+    { k: 'luoi', c: 2, tu: 'BN_TANG_SAU' },
+    { k: 'muc', t: 'Sáu chặng của một hành trình thành viên' },
+    { k: 'van', t: 'Bản Accelerate Journey là một tập trình chiếu *kể chuyện* chứ không phải giáo trình: nó theo một người thật đi từ chỗ mất sạch nền cũ tới chỗ dẫn được người khác. Đọc nó cho thấy điều mà bảng chỉ số không cho thấy — chiều sâu của một chi hội đo bằng việc có bao nhiêu người đi trọn sáu chặng này.' },
+    { k: 'chang', tu: 'BN_HANH_TRINH' },
+    { k: 'muc', t: 'Hai cơ chế sắc nhất — và Gen Việt hiện chưa có' },
+    { k: 'van', t: 'Đọc hết ba tài liệu thì thấy thứ giữ chân người của BNI **không phải chỉ tiêu hay hình phạt**, mà là hai chi tiết rất nhỏ:' },
+    { k: 'ds', so: true, ds: [
+      'Mỗi tuần, Phó Chủ tịch rút ngẫu nhiên *hai phiếu giới thiệu của hai tuần trước* và hỏi lại người nhận: đã liên hệ chưa, có phải cơ hội thật không. Nghĩa là **bảng số bị kiểm chứng ngược**, nên nó không trôi dần về phía báo cáo cho đẹp. Đây là cơ chế chống lạm phát số liệu rẻ nhất mà một tổ chức có thể có.',
+      '“Đánh giá tháng thứ bảy” — nói chuyện với người còn *năm sáu tháng nữa* mới tới hạn gia hạn, và do một người **có quan hệ tốt nhưng cố ý không quá thân** thực hiện. Nói chuyện lúc chưa có áp lực quyết định thì nghe được sự thật; nói lúc sắp hết hạn thì chỉ nghe được lời khách sáo.'
+    ]},
+    { k: 'van', t: 'Cả hai bê sang chi hội học sinh gần như nguyên xi. Cơ chế thứ nhất áp vào phiếu ghi nhận và bảng đầu ra tuần; cơ chế thứ hai áp vào nhịp giữa nhiệm kỳ sáu tháng ở nhóm 32.' },
+    { k: 'trich', t: 'Mượn cấu trúc, không mượn động cơ. Mọi chỗ BNI đo tiền, Gen Việt đo bằng chứng trưởng thành.', n: 'Luật tham chiếu thứ nhất' }
+  ]},
+
+'bn-doi-chieu': { q: 'clb_dieu_hanh', k: 'Tham chiếu BNI', t: 'Đối chiếu hai mươi trục',
+  p: 'Cột thứ ba nói Gen Việt hiện đã có gì hoặc nên làm gì. Cột thứ tư nói vì sao phải đổi — vì đối tượng là học sinh phổ thông, không phải doanh nhân.',
+  khoi: [
+    { k: 'bang', cot: ['Trục', 'Cách BNI làm', 'Gen Việt: đã có hay đề xuất', 'Điều chỉnh vì đối tượng là học sinh'],
+      tu: 'BN_DOI_CHIEU' },
+    { k: 'van', t: 'Mỗi ô ở cột ba mở đầu bằng *Đã có* — nghĩa là kiểm chứng được trong kho hiện tại — hoặc *Đề xuất* — nghĩa là suy ra, chưa có trong hệ. Phân biệt ấy quan trọng: nó ngăn việc đọc bảng này rồi tưởng Gen Việt đã làm hết.' }
+  ]},
+
+'bn-khong-be': { q: 'chung', k: 'Tham chiếu BNI', t: 'Mười hai thứ không được bê sang môi trường học đường',
+  p: 'Danh sách này quan trọng ngang danh sách những thứ học được. Một mô hình dành cho người trưởng thành tự nguyện có những cơ chế trở thành có hại khi áp lên trẻ em.',
+  khoi: [
+    { k: 'canh', tu: 'BN_KHONG_BE' },
+    { k: 'van', t: 'Bốn thứ đầu nguy hiểm nhất: **chỉ tiêu giới thiệu bắt buộc** — buộc trẻ đi tuyển người để giữ chỗ của mình; **phạt tiền** khi vắng mặt; **điều tra mạng xã hội ứng viên**; và lý do loại mơ hồ kiểu *thái độ không phù hợp* — thứ mở đường cho loại người một cách tuỳ tiện mà không phải giải thích.' },
+    { k: 'muc', t: 'Mười bốn luật khi áp mô hình chi hội cho học sinh' },
+    { k: 'luat', tu: 'BN_LUAT' },
+    { k: 'trich', t: 'Cơ chế nào cần một đứa trẻ mang người khác về để giữ chỗ của mình thì không được vào hệ này.', n: 'Ranh giới của việc học mô hình' }
+  ]},
+
+'bn-van-hanh': { q: 'clb_dieu_hanh', k: 'Tham chiếu BNI', t: 'Ghế, chỉ số và quy trình họp',
+  p: 'Phần cơ học của mô hình: ai giữ ghế nào, đo cái gì, và một buổi chạy theo trình tự nào.',
+  khoi: [
+    { k: 'bang', cot: ['Ghế', 'Nhiệm vụ', 'Nhiệm kỳ', 'Chấm bằng gì'], tu: 'BN_VAI' },
+    { k: 'muc', t: 'Mười ba chỉ số sức khoẻ chi hội' },
+    { k: 'bang', cot: ['Chỉ số', 'Đo cái gì', 'Ai đo', 'Đọc ra điều gì'], tu: 'BN_CHI_SO' },
+    { k: 'muc', t: 'Hai mươi mốc của một buổi họp' },
+    { k: 'van', t: 'Lịch trình này của BNI **không đổi từ năm 1985**, và cẩm nang gốc nói thẳng rằng vài chi hội có ý tốt muốn sửa cho hợp hoàn cảnh riêng — rồi hỏng. Đây là bằng chứng cho một điều Gen Việt cũng giữ: *cấu trúc buổi sinh hoạt là thứ không được tuỳ ý đổi*, ghi thành luật vận hành thứ nhất ở nhóm 32.' },
+    { k: 'lich', tu: 'BN_QUY_TRINH_HOP' },
+    { k: 'canh', ds: [
+      'Bốn trang cuối của cẩm nang gốc là ảnh nên không rút được chữ. Phần Passport to Success chi tiết và phụ lục tái gia nhập vì vậy chưa có trong kho.',
+      'Bản gốc có sạn: tiêu đề trang V-C-P in nhầm thành “V.C.D”, và một tiêu đề có đơn vị thời gian đọc không rõ nên không chép lại.',
+      'Không dùng lại lịch trình họp này nguyên văn trong tài liệu mang tên Gen Việt. Nhóm 32 đã có quy trình riêng, dựng từ tài liệu của chính Học viện.'
+    ]}
   ]}
 
 };
@@ -2223,6 +2411,15 @@ GV.TU = {
 
   /* nhóm 22 · 52 tuần — cùng một kho, chiếu ra bốn bảng theo chu kỳ
      và hai bảng chu kỳ. Chia nhỏ vì một bảng 52 dòng thì không ai đọc. */
+  /* nhóm 34 · đề án — cắt dòng tiêu đề nằm trong dữ liệu */
+  DA_CAN_CU_B: GV.DA_CAN_CU.slice(1),
+  DA_TO_CHUC_B: GV.DA_TO_CHUC.slice(1),
+  DA_RACI_B: GV.DA_RACI.slice(1),
+  DA_KPI_B: GV.DA_KPI.slice(1),
+  DA_BIEU_MAU_B: GV.DA_BIEU_MAU.slice(1),
+  DA_NGHIEN_CUU_B: GV.DA_NGHIEN_CUU.slice(1),
+  DA_TAM_LY_B: GV.DA_TAM_LY.slice(1),
+
   /* nhóm 31–33 · kho do sáu luồng khai thác nguồn viết ra.
      Vài bảng mang sẵn dòng tiêu đề trong dữ liệu; khối "bang" đã
      có cột riêng nên phải cắt dòng ấy đi, nếu không nó hiện hai lần. */

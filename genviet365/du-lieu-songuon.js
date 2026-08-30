@@ -12,6 +12,10 @@
 
    Đọc kho ngày 30.08.2026. Thư mục có 63 tệp, trong đó 12 tệp ảnh
    không phải tài liệu.
+
+   Cập nhật lần hai: thêm tám dòng cho bộ đề án, bộ trình bày và ba
+   tài liệu tham chiếu của BNI Global — thứ Học viện đưa vào kho từ
+   đầu mà bản dựng trước mới chỉ nhắc tên chứ chưa khai thác.
    ═══════════════════════════════════════════════════════════════ */
 'use strict';
 (function (G) {
@@ -90,6 +94,23 @@
      'ĐÃ BỊ TÌM-THAY-THẾ TOÀN VĂN: chữ Bukatsu bị đổi thành Gen Việt, senpai–kōhai đổi thành Gen A – Gen V', 'TV2_BUKATSU'],
     ['Bộ Đề Tài Nghiên Cứu Ứng Dụng Gen Việt.docx', '48 KB', 'ĐÃ RÚT',
      'Mô hình 15 giai đoạn, pipeline 5 cấp, 10 đề tài GV-R1 → GV-R10, khung thiết kế nghiên cứu', 'TY_GIAI_DOAN · TY_KN_DE_TAI'],
+
+    /* ══ Đề án, trình bày, tham chiếu chi hội ══ */
+    ['ƯƠM MẦM GEN VIỆT.docx', '134 KB', 'ĐÃ RÚT',
+     'Tám mục đề án, cơ cấu tổ chức, RACI đạt chuẩn một chữ A mỗi dòng, KPI hai năm, kế hoạch 12 tháng, bộ mẫu biểu', 'DA_CAU_TRUC · DA_RACI · DA_KPI · DA_KE_HOACH_12'],
+    ['SLIDE CLB GEN VIỆT.pptx', '8,6 MB', 'ĐÃ RÚT',
+     '22 slide giới thiệu, 12 thông điệp lõi; bản gốc bỏ trống ô ngày thành lập và số thành viên', 'SL_BO_SLIDE · SL_THONG_DIEP'],
+    ['SLIDE CLB GEN VIỆT.pdf (hai bản)', '1,8 + 1,7 MB', 'TRÙNG BẢN', 'Bản in của tệp .pptx cùng tên', 'SL_BO_SLIDE'],
+    ['SLIDE Buoi hop tham khao 2026.pptx', '3,3 MB', 'ĐÃ RÚT',
+     '22 mốc buổi họp mẫu; phát hiện hai lớp số liệu chồng nhau, một trang cũ tiếng Anh và một trang mới tiếng Việt', 'SL_BUOI_HOP'],
+    ['MỐI QUAN HỆ LÀ TÀI SẢN_20260401.pptx', '49 MB', 'ĐÃ RÚT',
+     'Chỉ rút được phần chữ — trang tiêu đề và một trang nội dung; phần còn lại nằm trong ảnh', 'SL_QUAN_HE'],
+    ['BNI_Accelerate_Journey (1).pdf', '11 MB', 'ĐÃ RÚT',
+     'THAM CHIẾU BÊN THỨ BA. Sáu chặng hành trình một thành viên, dạng kể chuyện chứ không phải giáo trình', 'BN_HANH_TRINH'],
+    ['Cẩm nang Vận hành Chapter -07.2025- v3.pdf', '5,1 MB', 'ĐÃ RÚT',
+     'THAM CHIẾU BÊN THỨ BA. 12 ghế, 13 chỉ số, 20 mốc quy trình họp, 14 cơ chế tạo chiều sâu. Bốn trang cuối là ảnh, chưa rút được', 'BN_VAI · BN_CHI_SO · BN_QUY_TRINH_HOP · BN_TANG_SAU'],
+    ['Cập nhật trong cẩm nang vận hành Chapter 07.2025.pdf', '195 KB', 'ĐÃ RÚT',
+     'THAM CHIẾU BÊN THỨ BA. Phần cập nhật quy định, đọc trọn', 'BN_TANG_SAU'],
 
     /* ══ Ảnh và tệp nén ══ */
     ['Mười hai tệp ảnh jpg', '78 KB – 811 KB', 'KHÔNG PHẢI TÀI LIỆU',
