@@ -46,7 +46,7 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính bó sẵn từng chục
 - Que tính rời
 - 10 que tính
-- Que tính để xếp hình
+- Bảng số từ 1 đến 100 (nếu có)
 
 ---
 
@@ -58,20 +58,23 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 12 … 6
+a) Điền dấu >, < hoặc = : 18 … 15
    → **>**
 
-b) Điền dấu >, < hoặc = : 19 … 14
+b) Điền dấu >, < hoặc = : 8 … 7
    → **>**
 
-c) Điền dấu >, < hoặc = : 5 … 2
-   → **>**
-
-d) Điền dấu >, < hoặc = : 1 … 4
+c) Điền dấu >, < hoặc = : 6 … 12
    → **<**
 
-e) Điền dấu >, < hoặc = : 2 … 1
+d) Điền dấu >, < hoặc = : 17 … 12
    → **>**
+
+e) Điền dấu >, < hoặc = : 10 … 19
+   → **<**
+
+f) Điền dấu >, < hoặc = : 9 … 16
+   → **<**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
 
@@ -92,17 +95,20 @@ e) Điền dấu >, < hoặc = : 2 … 1
 
 **Đáp án từng việc**
 
-a) Con lấy đúng 84 que tính. Con lấy mấy bó và mấy que rời?
-   → **8 bó và 4 que rời**
+a) Con lấy đúng 91 que tính. Con lấy mấy bó và mấy que rời?
+   → **9 bó và 1 que rời**
 
-b) Con lấy đúng 78 que tính. Con lấy mấy bó và mấy que rời?
-   → **7 bó và 8 que rời**
+b) Con lấy đúng 89 que tính. Con lấy mấy bó và mấy que rời?
+   → **8 bó và 9 que rời**
 
-c) Con lấy đúng 94 que tính. Con lấy mấy bó và mấy que rời?
-   → **9 bó và 4 que rời**
+c) Con lấy đúng 51 que tính. Con lấy mấy bó và mấy que rời?
+   → **5 bó và 1 que rời**
 
-d) Con lấy đúng 23 que tính. Con lấy mấy bó và mấy que rời?
-   → **2 bó và 3 que rời**
+d) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
+   → **3 bó và 9 que rời**
+
+e) Con lấy đúng 30 que tính. Con lấy mấy bó và mấy que rời?
+   → **3 bó và 0 que rời**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Có cách nào lấy nhanh hơn là đếm từng que không?
 
@@ -123,17 +129,17 @@ d) Con lấy đúng 23 que tính. Con lấy mấy bó và mấy que rời?
 
 **Đáp án từng việc**
 
-a) … + 3 = 4
+a) 9 + … = 10
    → **1**
 
-b) … + 4 = 9
-   → **5**
+b) 1 + … = 3
+   → **2**
 
-c) … + 6 = 9
-   → **3**
+c) … + 2 = 8
+   → **6**
 
-d) 3 + … = 10
-   → **7**
+d) 3 + … = 4
+   → **1**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Con tìm ra số đó bằng cách nào? Có cách nào nhanh hơn không?
 
@@ -148,28 +154,31 @@ d) 3 + … = 10
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Số bí mật**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.
 
 **Đáp án từng việc**
 
-a) 1, 4, 7, 10, …
-   → **13**
+a) 59 và 73: số nào lớn hơn?
+   → **73**
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
-   → **16 que**
+b) 37 và 60: số nào lớn hơn?
+   → **60**
 
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
-   → **7 que**
+c) 59 và 89: số nào lớn hơn?
+   → **89**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+d) Số bí mật đứng liền sau 21 và liền trước 23. Số nào?
+   → **22**
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
+**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng đơn vị trước?
 
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
+**Thế nào là con đã hiểu:** Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn hơn 40 vì 9 lớn hơn 0.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Con tắc thì làm gì:** Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.
+
+**Nếu con làm nhanh:** Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói 'lớn hơn' hoặc 'bé hơn'.
 
 
 ---

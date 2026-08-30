@@ -41,7 +41,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Bảng số từ 1 đến 100 dán trên tường (nếu có)
 - Bộ hình cắt sẵn bằng bìa
 - Kéo an toàn
 - Bút chì để gạch chân
@@ -51,34 +51,28 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**Đếm nối tiếp theo bước**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình đếm nhảy cóc nhé. Không đếm từng số một, mà nhảy hai số, năm số, mười số một lần.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 5 … 7
-   → **<**
+a) Đếm tiếp cho cô: 1 , 3 , 5 , 7 , … Số tiếp theo là mấy?
+   → **9**
 
-b) Điền dấu >, < hoặc = : 5 … 7
-   → **<**
+b) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
+   → **50**
 
-c) Điền dấu >, < hoặc = : 4 … 3
-   → **>**
+c) Đếm từ 30 lên, mỗi lần thêm 10, đếm 3 lần.
+   → **40 , 50 , 60**
 
-d) Điền dấu >, < hoặc = : 10 … 1
-   → **>**
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Đếm cách 10 thì chữ số nào đứng yên, chữ số nào đổi?
 
-e) Điền dấu >, < hoặc = : 8 … 5
-   → **>**
+**Thế nào là con đã hiểu:** Trẻ đếm cách 10 mà không phải nhẩm cộng từng lần — nhận ra chỉ có chữ số hàng chục thay đổi. Đây là bước đầu tiên trẻ nhìn thấy **cấu tạo chục – đơn vị** của số.
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Con tắc thì làm gì:** Chỉ tay trên bảng số 100 khi đếm, cho trẻ thấy mình nhảy sang cột nào.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
-
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Đếm lùi cách 10 từ 90 xuống — khó hơn hẳn đếm lên.
 
 
 ---
@@ -91,20 +85,17 @@ e) Điền dấu >, < hoặc = : 8 … 5
 
 **Đáp án từng việc**
 
-a) Ghép hai hình tròn lại thì được hình gì?
+a) hình tròn – hình vuông – hình tam giác – hình tròn – … Hình tiếp theo là hình gì?
+   → **hình vuông**
+
+b) Ghép hai hình chữ nhật lại thì được hình gì?
    → **hình lớn hơn — trẻ ghép thử rồi gọi tên**
 
-b) hình tròn – hình vuông – hình tròn – hình vuông – … Hình tiếp theo là hình gì?
-   → **hình tròn**
-
-c) hình chữ nhật – hình vuông – hình chữ nhật – hình vuông – … Hình tiếp theo là hình gì?
+c) hình tròn – hình chữ nhật – hình vuông – hình tròn – … Hình tiếp theo là hình gì?
    → **hình chữ nhật**
 
-d) Ghép hai hình tam giác lại thì được hình gì?
+d) Ghép hai hình tròn lại thì được hình gì?
    → **hình lớn hơn — trẻ ghép thử rồi gọi tên**
-
-e) hình chữ nhật – hình vuông – hình chữ nhật – hình vuông – … Hình tiếp theo là hình gì?
-   → **hình chữ nhật**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Con ghép được hình gì khác nữa từ đúng mấy miếng này không?
 
@@ -125,20 +116,17 @@ e) hình chữ nhật – hình vuông – hình chữ nhật – hình vuông �
 
 **Đáp án từng việc**
 
-a) Tèo có 4 viên bi. Cốm có 17 viên. Cả hai bạn có tất cả mấy viên?
-   → **21 viên**
+a) Nam có 6 cái kẹo. Na có 19 cái. Cả hai bạn có tất cả mấy cái?
+   → **25 cái**
 
-b) 8, 18, 28, 38, … Số tiếp theo là số nào?
-   → **48**
-
-c) 19, 29, 39, 49, … Số tiếp theo là số nào?
-   → **59**
-
-d) Nam có 14 viên bi. Bơ có 12 viên. Cả hai bạn có tất cả mấy viên?
-   → **26 viên**
-
-e) 14, 15, 16, 17, … Số tiếp theo là số nào?
+b) 10, 12, 14, 16, … Số tiếp theo là số nào?
    → **18**
+
+c) 12, 14, 16, 18, … Số tiếp theo là số nào?
+   → **20**
+
+d) Na có 14 quyển vở. Cốm có 17 quyển. Cả hai bạn có tất cả mấy quyển?
+   → **31 quyển**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Đoán thử)*: Con nghĩ dãy này cứ thế mãi thì số thứ mười là số nào?
 
@@ -159,14 +147,17 @@ e) 14, 15, 16, 17, … Số tiếp theo là số nào?
 
 **Đáp án từng việc**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
-   → **16 que**
+a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+   → **7 que**
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
+b) 12, 14, 16, 18, …
+   → **20**
+
+c) 1, 2, 4, …
+   → **8**
+
+d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
    → **13 que**
-
-c) 3, 6, 12, …
-   → **24**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
 

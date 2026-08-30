@@ -28,73 +28,69 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) Tính nhẩm: 200 + 500
+a) Con đoán chiều cao cửa ra vào khoảng bao nhiêu?
 
-b) Số 898 gồm mấy trăm, mấy chục, mấy đơn vị?
+b) Con đoán một chai nước 1 lít nặng khoảng bao nhiêu?
 
-c) Tính nhẩm: 800 + 100
-
-d) Số 310 gồm mấy trăm, mấy chục, mấy đơn vị?
+c) Kim ngắn qua số 9, kim dài chỉ số 3. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đơn vị đo và xem đồng hồ**
 
-a) Bao gạo nặng 19 kg, bao ngô nặng 9 kg. Cả hai bao nặng mấy ki-lô-gam?
+a) Kim ngắn ở giữa số 4 và số 5, kim dài chỉ số 6. Mấy giờ?
 
-b) 2 dm = … cm
+b) Bao gạo nặng 9 kg, bao ngô nặng 7 kg. Cả hai bao nặng mấy ki-lô-gam?
 
-c) Kim ngắn chỉ số 11, kim dài chỉ số 12. Mấy giờ?
+c) 6 dm = … cm
 
-d) 6 dm = … cm
+d) Kim ngắn ở giữa số 6 và số 7, kim dài chỉ số 6. Mấy giờ?
+
+e) Bao gạo nặng 3 kg, bao ngô nặng 3 kg. Cả hai bao nặng mấy ki-lô-gam?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Đổi đơn vị và tính trên số đo**
 
-a) 27 cm + 22 cm = … cm
+a) 8 cm + 28 cm = … cm
 
-b) 1 dm = … cm
+b) Điền dấu >, < hoặc = : 6 dm … 40 cm
 
-c) Điền dấu >, < hoặc = : 5 dm … 55 cm
+c) 1 dm = … cm
 
-d) 10 cm + 25 cm = … cm
-
-e) 1 m = … cm
-
-f) Điền dấu >, < hoặc = : 2 dm … 80 cm
+d) Điền dấu >, < hoặc = : 9 dm … 84 cm
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Đoán trước rồi đo lại**
+**Tính với số đo**
 
-a) Con đoán chiều dài quyển vở khoảng bao nhiêu cm? Đoán xong mình đo lại.
+a) 23 kg + 8 kg = …
 
-b) Con đoán chiều cao cửa ra vào khoảng bao nhiêu m? Đoán xong mình đo lại.
+b) Bạn Nam bắt đầu học lúc 6 giờ, học 1 tiếng thì xong. Xong lúc mấy giờ?
 
-c) Con đoán lượng nước trong chai khoảng bao nhiêu lít? Đoán xong mình đo lại.
+c) 7 dm = … cm
 
-d) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
+d) Băng giấy dài 74 cm, cắt đi 51 cm. Còn lại dài bao nhiêu?
+
+e) Băng giấy dài 85 cm, cắt đi 52 cm. Còn lại dài bao nhiêu?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đố vui đo lường và giờ**
 
-a) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+a) Bây giờ là 9 giờ. 2 tiếng nữa là mấy giờ?
 
-b) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+b) 9 kg bằng bao nhiêu gam?
 
-c) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+c) 6 m bằng bao nhiêu dm?
 
-d) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-
-e) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
+d) 7 kg bằng bao nhiêu gam?
 
 
 ---
@@ -103,8 +99,8 @@ e) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đơn vị đo và xem đồng hồ
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Đoán trước rồi đo lại
-- ☐ Chắc chắn, có thể, không thể
+- ☐ Tính với số đo
+- ☐ Đố vui đo lường và giờ

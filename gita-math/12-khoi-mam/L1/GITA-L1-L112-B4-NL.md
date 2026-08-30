@@ -41,7 +41,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Bảng số từ 1 đến 100 dán trên tường (nếu có)
 - Que tính bó thành chục
 - Bút chì để gạch chân
 - Que tính để xếp hình
@@ -50,34 +50,31 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 100**
+**Đếm nối tiếp theo bước**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình đếm nhảy cóc nhé. Không đếm từng số một, mà nhảy hai số, năm số, mười số một lần.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 80 … 24
-   → **>**
+a) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
+   → **25**
 
-b) Điền dấu >, < hoặc = : 29 … 68
-   → **<**
+b) Đếm tiếp cho cô: 1 , 3 , 5 , 7 , … Số tiếp theo là mấy?
+   → **9**
 
-c) Điền dấu >, < hoặc = : 33 … 68
-   → **<**
+c) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
+   → **50**
 
-d) Điền dấu >, < hoặc = : 47 … 37
-   → **>**
+d) Đếm từ 70 lên, mỗi lần thêm 10, đếm 3 lần.
+   → **80 , 90 , 100**
 
-e) Điền dấu >, < hoặc = : 75 … 55
-   → **>**
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Đếm cách 10 thì chữ số nào đứng yên, chữ số nào đổi?
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Thế nào là con đã hiểu:** Trẻ đếm cách 10 mà không phải nhẩm cộng từng lần — nhận ra chỉ có chữ số hàng chục thay đổi. Đây là bước đầu tiên trẻ nhìn thấy **cấu tạo chục – đơn vị** của số.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
+**Con tắc thì làm gì:** Chỉ tay trên bảng số 100 khi đếm, cho trẻ thấy mình nhảy sang cột nào.
 
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Đếm lùi cách 10 từ 90 xuống — khó hơn hẳn đếm lên.
 
 
 ---
@@ -90,17 +87,20 @@ e) Điền dấu >, < hoặc = : 75 … 55
 
 **Đáp án từng việc**
 
-a) 20 + 50 = …
-   → **70**
+a) 90 − 10 = …
+   → **80**
 
-b) 90 − 30 = …
-   → **60**
+b) 50 + 40 = …
+   → **90**
 
-c) 80 − 70 = …
+c) 60 − 50 = …
    → **10**
 
-d) 70 + 10 = …
-   → **80**
+d) 30 + 20 = …
+   → **50**
+
+e) 80 − 70 = …
+   → **10**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con biết 3 + 2 = 5. Vậy 30 + 20 bằng mấy? Vì sao giống nhau thế?
 
@@ -121,17 +121,20 @@ d) 70 + 10 = …
 
 **Đáp án từng việc**
 
-a) 18, 20, 22, 24, … Số tiếp theo là số nào?
-   → **26**
+a) Mai có 15 quyển vở. Nam có 16 quyển. Cả hai bạn có tất cả mấy quyển?
+   → **31 quyển**
 
-b) Bi có 13 quyển vở. Bơ có 8 quyển. Cả hai bạn có tất cả mấy quyển?
-   → **21 quyển**
+b) 2, 3, 4, 5, … Số tiếp theo là số nào?
+   → **6**
 
-c) 4, 14, 24, 34, … Số tiếp theo là số nào?
-   → **44**
+c) Na có 13 cái kẹo. Cốm có 2 cái. Cả hai bạn có tất cả mấy cái?
+   → **15 cái**
 
-d) Bo có 6 bông hoa. Cốm có 3 bông. Cả hai bạn có tất cả mấy bông?
-   → **9 bông**
+d) 6, 8, 10, 12, … Số tiếp theo là số nào?
+   → **14**
+
+e) Tí có 12 cái kẹo. Bi có 15 cái. Cả hai bạn có tất cả mấy cái?
+   → **27 cái**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Đoán thử)*: Con nghĩ dãy này cứ thế mãi thì số thứ mười là số nào?
 
@@ -152,20 +155,14 @@ d) Bo có 6 bông hoa. Cốm có 3 bông. Cả hai bạn có tất cả mấy b�
 
 **Đáp án từng việc**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
-   → **7 que**
-
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
-   → **16 que**
-
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
+a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
    → **13 que**
 
-d) 9, 11, 13, 15, …
-   → **17**
+b) 2, 4, 8, …
+   → **16**
 
-e) 7, 12, 17, 22, …
-   → **27**
+c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
+   → **10 que**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
 

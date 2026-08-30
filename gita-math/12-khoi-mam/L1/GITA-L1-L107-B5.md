@@ -28,64 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**So sánh số trong phạm vi 20**
 
-a) Điền dấu >, < hoặc = : 9 … 7
+a) Điền dấu >, < hoặc = : 2 … 8
 
-b) Điền dấu >, < hoặc = : 1 … 7
+b) Điền dấu >, < hoặc = : 2 … 7
 
-c) Điền dấu >, < hoặc = : 4 … 8
+c) Điền dấu >, < hoặc = : 17 … 16
 
-d) Điền dấu >, < hoặc = : 10 … 5
+d) Điền dấu >, < hoặc = : 1 … 4
 
-e) Điền dấu >, < hoặc = : 3 … 2
+e) Điền dấu >, < hoặc = : 6 … 13
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Chục và đơn vị**
 
-a) Số 78 gồm mấy chục và mấy đơn vị?
+a) Số 20 gồm mấy chục và mấy đơn vị?
 
-b) Số 69 gồm mấy chục và mấy đơn vị?
+b) Số 73 gồm mấy chục và mấy đơn vị?
 
-c) Số 32 gồm mấy chục và mấy đơn vị?
+c) Số 42 gồm mấy chục và mấy đơn vị?
 
-d) Số 46 gồm mấy chục và mấy đơn vị?
+d) Số 61 gồm mấy chục và mấy đơn vị?
 
-e) Số 14 gồm mấy chục và mấy đơn vị?
+e) Số 45 gồm mấy chục và mấy đơn vị?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Trong hình có mấy đoạn thẳng?
+a) Viết số: 6 mươi 6
 
-b) Vẽ một đoạn thẳng dài 13 cm.
+b) Trong hình có mấy đoạn thẳng?
 
-c) Viết số: 8 mươi 2
+c) Vẽ một đoạn thẳng dài 3 cm.
 
-d) Trong hình có mấy đoạn thẳng?
-
-e) Viết số: 2 mươi
-
-f) Vẽ một đoạn thẳng dài 9 cm.
+d) Vẽ một đoạn thẳng dài 14 cm.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
+a) Số bí mật có 5 chục và 7 đơn vị. Số ấy là số nào?
 
-b) 4, 9, 14, 19, …
+b) 16 và 53: số nào lớn hơn?
 
-c) 2, 5, 8, 11, …
-
-d) 7, 9, 11, 13, …
-
-e) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
+c) Số bí mật có 5 chục và 5 đơn vị. Số ấy là số nào?
 
 
 ---
@@ -94,7 +86,7 @@ e) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ So sánh số trong phạm vi 20
 - ☐ Chục và đơn vị
 - ☐ Vẽ, đo và viết số
-- ☐ Tìm quy luật
+- ☐ Số bí mật

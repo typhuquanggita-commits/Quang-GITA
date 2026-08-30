@@ -42,40 +42,43 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Không cần gì — dùng ngón tay
 - 10 que tính
-- Ba thẻ số
-- Que tính để xếp hình
+- Không bắt buộc — dùng ngón tay khi cần
+- Không cần gì
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 20**
+**Nhẩm nhanh bằng ngón tay**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng trò nhẩm nhanh. Con được dùng ngón tay, không sao cả.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 10 … 6
-   → **>**
+a) 6 bớt 1 còn mấy?
+   → **5**
 
-b) Điền dấu >, < hoặc = : 17 … 13
-   → **>**
+b) Con giơ 5 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 9?
+   → **4**
 
-c) Điền dấu >, < hoặc = : 17 … 15
-   → **>**
+c) 2 thêm 1 là mấy?
+   → **3**
 
-d) Điền dấu >, < hoặc = : 12 … 14
-   → **<**
+d) 9 bớt 4 còn mấy?
+   → **5**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+e) 4 thêm 4 là mấy?
+   → **8**
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Rút ra quy luật)*: Con làm thế nào mà ra nhanh thế? Con đếm hay con nhớ sẵn?
 
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
+**Thế nào là con đã hiểu:** Trẻ trả lời được trong khoảng ba giây và bắt đầu **nhớ sẵn** vài phép quen như 5 + 5, 2 + 2, thay vì đếm lại từng ngón.
 
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Con tắc thì làm gì:** Cho dùng que tính. Tốc độ không quan trọng bằng việc ra đúng.
+
+**Nếu con làm nhanh:** Hỏi ngược: 'cô nghĩ một số, cộng 3 thì được 8, số ấy là mấy?'
 
 
 ---
@@ -88,20 +91,17 @@ d) Điền dấu >, < hoặc = : 12 … 14
 
 **Đáp án từng việc**
 
-a) Nam có 6 chiếc lá, cho bạn 1 chiếc. Nam còn lại mấy chiếc?
-   → **5 chiếc**
+a) Tèo có 5 viên bi, cho bạn 3 viên. Tèo còn lại mấy viên?
+   → **2 viên**
 
-b) Na có 5 con vịt, mẹ cho thêm 1 con. Na có tất cả mấy con?
-   → **6 con**
+b) Cốm có 3 cái bánh, mẹ cho thêm 1 cái. Cốm có tất cả mấy cái?
+   → **4 cái**
 
-c) Na có 10 bông hoa, cho bạn 2 bông. Na còn lại mấy bông?
-   → **8 bông**
+c) Mai có 8 quả bóng, cho bạn 2 quả. Mai còn lại mấy quả?
+   → **6 quả**
 
-d) Bi có 4 cái kẹo, mẹ cho thêm 3 cái. Bi có tất cả mấy cái?
-   → **7 cái**
-
-e) Mai có 4 con vịt, mẹ cho thêm 4 con. Mai có tất cả mấy con?
-   → **8 con**
+d) Tí có 4 quyển vở, mẹ cho thêm 4 quyển. Tí có tất cả mấy quyển?
+   → **8 quyển**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con biết 3 + 2 = 5 rồi. Vậy 2 + 3 bằng mấy? Vì sao con biết ngay?
 
@@ -116,62 +116,71 @@ e) Mai có 4 con vịt, mẹ cho thêm 4 con. Mai có tất cả mấy con?
 
 ## PHẦN C — Luyện tay
 
-**Từ một phép cộng ra hai phép trừ**
+**Tính nhanh**
 
-> **Cô/mẹ đọc lên:** Ba số này ở với nhau thành một gia đình. Con viết đủ bốn phép tính của gia đình ấy.
+> **Cô/mẹ đọc lên:** Phép nào con nhớ luôn thì viết ngay, phép nào chưa nhớ thì đếm trên tay.
 
 **Đáp án từng việc**
 
-a) Từ phép tính 3 + 7 = 10, con viết ra hai phép trừ.
-   → **10 − 3 = 7 và 10 − 7 = 3**
+a) 14 + 2 = …
+   → **16**
 
-b) Từ phép tính 3 + 7 = 10, con viết ra hai phép trừ.
-   → **10 − 3 = 7 và 10 − 7 = 3**
+b) 2 − 1 = …
+   → **1**
 
-c) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
-   → **10 − 9 = 1 và 10 − 1 = 9**
+c) 11 + 2 = …
+   → **13**
 
-d) Từ phép tính 6 + 1 = 7, con viết ra hai phép trừ.
-   → **7 − 6 = 1 và 7 − 1 = 6**
+d) 6 + 3 = …
+   → **9**
 
-**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Xem chỗ nào chưa ổn)*: Bộ ba số nào cũng viết được bốn phép tính à? Con thử bộ khác xem.
+e) 17 + 2 = …
+   → **19**
 
-**Thế nào là con đã hiểu:** Trẻ viết được cả bốn phép tính của một bộ ba số. Nắm được quan hệ này thì học bảng trừ nhẹ đi một nửa.
+f) 10 + 2 = …
+   → **12**
 
-**Con tắc thì làm gì:** Đặt ba thẻ số thành hình tam giác, che một thẻ rồi hỏi.
+g) 19 + 1 = …
+   → **20**
 
-**Nếu con làm nhanh:** Che thẻ tổng thay vì che thẻ số hạng.
+h) 2 + 2 = …
+   → **4**
+
+**Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Phép nào con viết ra ngay không cần đếm? Vì sao nhớ được?
+
+**Thế nào là con đã hiểu:** Số phép trẻ trả lời ngay **tăng dần** qua các buổi. Đây là chỗ duy nhất trong khối đáng đo bằng tốc độ.
+
+**Con tắc thì làm gì:** Cho dùng que tính thoải mái. Nhanh sẽ đến sau khi chắc.
+
+**Nếu con làm nhanh:** Bấm giờ một phút xem làm được mấy phép — chỉ chơi, không xếp hạng.
 
 
 ---
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi, toàn chuyện trong nhà mình thôi.
 
 **Đáp án từng việc**
 
-a) 3, 6, 12, …
-   → **24**
+a) 5 con chim có mấy cái chân?
+   → **10 cái chân**
 
-b) 9, 14, 19, 24, …
-   → **29**
+b) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
+   → **3 cái**
 
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
-   → **13 que**
+c) Con có 9 cái kẹo, cho bạn 1 cái. Còn mấy cái?
+   → **8 cái**
 
-d) 1, 2, 4, …
-   → **8**
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Làm cách gọn hơn)*: Câu này con làm phép cộng hay phép trừ? Vì sao?
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+**Thế nào là con đã hiểu:** Trẻ chọn đúng phép tính ngay từ khi nghe đề, không phải thử cả hai. Nghe 'cho bạn' mà nghĩ tới phép trừ là dấu hiệu trẻ đã nối được **lời nói với phép tính**.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
+**Con tắc thì làm gì:** Diễn lại tình huống bằng đồ vật thật ngay trên bàn.
 
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Nếu con làm nhanh:** Trẻ tự nghĩ một câu đố về nhà mình rồi đố cả nhà.
 
 
 ---

@@ -28,62 +28,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 9 … 1
+a) Đếm tiếp cho cô: 0 , 2 , 4 , 6 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 14 … 1
+b) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 4 … 13
-
-d) Điền dấu >, < hoặc = : 16 … 1
-
-e) Điền dấu >, < hoặc = : 8 … 19
+c) Đếm từ 50 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
-**Chục và đơn vị**
+**Cộng trừ số tròn chục**
 
-a) Số 63 gồm mấy chục và mấy đơn vị?
+a) 20 − 10 = …
 
-b) Số 35 gồm mấy chục và mấy đơn vị?
+b) 50 + 40 = …
 
-c) Số 45 gồm mấy chục và mấy đơn vị?
+c) 80 + 10 = …
 
-d) Số 85 gồm mấy chục và mấy đơn vị?
+d) 70 − 60 = …
 
-e) Số 43 gồm mấy chục và mấy đơn vị?
-
-f) Số 42 gồm mấy chục và mấy đơn vị?
+e) 50 − 10 = …
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Đặt tính rồi tính**
 
-a) Đặt tính rồi tính: 95 − 11
+a) Đặt tính rồi tính: 61 − 30
 
-b) Đặt tính rồi tính: 16 + 81
+b) Đặt tính rồi tính: 69 + 30
 
-c) Đặt tính rồi tính: 24 − 2
+c) Đặt tính rồi tính: 46 + 13
 
-d) Đặt tính rồi tính: 69 + 20
+d) Đặt tính rồi tính: 51 − 10
+
+e) Đặt tính rồi tính: 17 + 52
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 3 + 7 = 10.
+a) Mẹ nướng 8 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 8. Ăn mất 4 cái thì còn mấy cái?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 3 + 2 = 5.
+b) 4 con gà có mấy cái chân?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 6 + 8 = 14.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 13 + 5 = 18.
-
-e) Con hãy nghĩ ra một bài toán mà phép tính là 3 + 4 = 7.
+c) Bàn ăn có 5 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
 
 ---
@@ -92,7 +84,7 @@ e) Con hãy nghĩ ra một bài toán mà phép tính là 3 + 4 = 7.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
-- ☐ Chục và đơn vị
+- ☐ Đếm nối tiếp theo bước
+- ☐ Cộng trừ số tròn chục
 - ☐ Đặt tính rồi tính
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

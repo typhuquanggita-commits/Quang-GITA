@@ -28,58 +28,52 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 91 … 41
+a) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 20 … 62
+b) Đếm tiếp cho cô: 2 , 4 , 6 , 8 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 48 … 65
-
-d) Điền dấu >, < hoặc = : 87 … 24
-
-e) Điền dấu >, < hoặc = : 58 … 95
+c) Đếm từ 40 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Cộng trừ số tròn chục**
 
-a) 30 + 30 = …
+a) 50 + 10 = …
 
-b) 70 − 50 = …
+b) 90 − 70 = …
 
-c) 80 − 50 = …
+c) 30 + 50 = …
 
-d) 40 + 20 = …
+d) 70 − 10 = …
+
+e) 50 − 20 = …
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Đặt tính rồi tính**
 
-a) Đặt tính rồi tính: 74 + 13
+a) Đặt tính rồi tính: 77 + 11
 
-b) Đặt tính rồi tính: 59 − 47
+b) Đặt tính rồi tính: 20 − 10
 
-c) Đặt tính rồi tính: 47 + 2
+c) Đặt tính rồi tính: 55 + 20
 
-d) Đặt tính rồi tính: 45 − 30
-
-e) Đặt tính rồi tính: 32 − 31
+d) Đặt tính rồi tính: 75 − 71
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 7 − 4 = 3.
+a) Mẹ nướng 7 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 5 = 5.
+b) Con có 6 cái kẹo, cho bạn 2 cái. Còn mấy cái?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 13 − 3 = 10.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 6 = 8.
+c) Bàn ăn có 2 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
 
 ---
@@ -88,7 +82,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 6 = 8.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Đếm nối tiếp theo bước
 - ☐ Cộng trừ số tròn chục
 - ☐ Đặt tính rồi tính
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

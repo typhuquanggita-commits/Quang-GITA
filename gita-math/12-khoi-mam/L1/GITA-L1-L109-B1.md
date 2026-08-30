@@ -28,58 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Kể một bài toán bằng miệng**
 
-a) Điền dấu >, < hoặc = : 8 … 9
+a) Cô để 7 quả cam, bạn An đưa thêm 4 quả. Con kể lại thành một câu chuyện có số.
 
-b) Điền dấu >, < hoặc = : 2 … 5
+b) Cô để 9 cái bánh, bạn Bơ đưa thêm 2 cái. Con kể lại thành một câu chuyện có số.
 
-c) Điền dấu >, < hoặc = : 5 … 7
+c) Cô để 9 quyển vở ra bàn rồi cất đi 1 quyển. Con kể lại thành một câu chuyện có số.
 
-d) Điền dấu >, < hoặc = : 2 … 6
-
-e) Điền dấu >, < hoặc = : 8 … 6
+d) Cô để 6 quyển vở ra bàn rồi cất đi 4 quyển. Con kể lại thành một câu chuyện có số.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 12 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 32 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 32 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 69 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 56 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 36 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 59 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 85 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) Na có 8 cái kẹo. Tèo có 9 cái. Cả hai bạn có tất cả mấy cái?
+a) 16, 18, 20, 22, … Số tiếp theo là số nào?
 
-b) 2, 12, 22, 32, … Số tiếp theo là số nào?
+b) Bơ có 6 con vịt. Nam có 3 con. Cả hai bạn có tất cả mấy con?
 
-c) Tí có 19 quả bóng. Bi có 10 quả. Cả hai bạn có tất cả mấy quả?
+c) Nam có 14 con cá. Tí có 5 con. Cả hai bạn có tất cả mấy con?
 
-d) 10, 20, 30, 40, … Số tiếp theo là số nào?
+d) 19, 29, 39, 49, … Số tiếp theo là số nào?
 
-e) 4, 9, 14, 19, … Số tiếp theo là số nào?
+e) An có 20 quyển vở. Bi có 18 quyển. Cả hai bạn có tất cả mấy quyển?
+
+f) 15, 17, 19, 21, … Số tiếp theo là số nào?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tự đặt một bài toán**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 3 = 3.
+a) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 4 = 10.
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 8 = 2.
+b) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 6 = 3.
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 7 + 8 = 15.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 8 − 7 = 1.
+c) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 5 = 1.
 
 
 ---
@@ -88,7 +86,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 8 − 7 = 1.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Kể một bài toán bằng miệng
 - ☐ Lấy đúng số que tính
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tự đặt một bài toán

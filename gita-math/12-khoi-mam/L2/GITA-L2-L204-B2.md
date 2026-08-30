@@ -28,71 +28,75 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Chuyền bóng nhẩm nhanh**
 
-a) 20 : 5 = …
+a) Anh có 31 viên bi, em nhiều hơn anh 10 viên. Em có mấy viên?
 
-b) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2
+b) Lớp 2A có 28 bạn, lớp 2B ít hơn 3 bạn. Lớp 2B mấy bạn?
 
-c) 5 × 2 = …
+c) 41 − 18 = …
 
-d) 50 : 5 = …
+d) 24 + 36 = …
 
-e) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5
-
-f) 5 × 4 = …
+e) Lớp 2A có 36 bạn, lớp 2B ít hơn 7 bạn. Lớp 2B mấy bạn?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Vì sao phải nhớ**
 
-a) Tính 87 + 31. Cộng hàng đơn vị trước: 7 + 1 = 8. Vì sao phải nhớ sang hàng chục?
+a) Tính 35 + 54. Cộng hàng đơn vị trước: 5 + 4 = 9. Có phải nhớ sang hàng chục không? Vì sao?
 
-b) Tính 74 + 22. Cộng hàng đơn vị trước: 4 + 2 = 6. Vì sao phải nhớ sang hàng chục?
+b) Tính 27 + 21. Cộng hàng đơn vị trước: 7 + 1 = 8. Có phải nhớ sang hàng chục không? Vì sao?
 
-c) Tính 46 + 63. Cộng hàng đơn vị trước: 6 + 3 = 9. Vì sao phải nhớ sang hàng chục?
+c) Tính 52 + 23. Cộng hàng đơn vị trước: 2 + 3 = 5. Có phải nhớ sang hàng chục không? Vì sao?
 
-d) Tính 81 + 47. Cộng hàng đơn vị trước: 1 + 7 = 8. Vì sao phải nhớ sang hàng chục?
+d) Tính 39 + 20. Cộng hàng đơn vị trước: 9 + 0 = 9. Có phải nhớ sang hàng chục không? Vì sao?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Nhiều hơn, ít hơn một số đơn vị**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Mai có 67 quả cam. Tèo có nhiều hơn Mai 20 quả. Hỏi Tèo có mấy quả?
+a) Bạn An có 299 cái nhãn vở. Bạn Tèo có ít hơn bạn An 120 cái nhãn vở. Bạn Tèo có bao nhiêu cái nhãn vở?
 
-b) An có 69 bông hoa. Tí có ít hơn An 9 bông. Hỏi Tí có mấy bông?
+b) Bạn Tí có 388 viên bi. Bạn Tèo có nhiều hơn bạn Tí 120 viên bi. Bạn Tèo có bao nhiêu viên bi?
 
-c) Bi có 71 con cá. Nam có nhiều hơn Bi 17 con. Hỏi Nam có mấy con?
+c) Bạn An có 268 con tem. Bạn Mai có nhiều hơn bạn An 30 con tem. Bạn Mai có bao nhiêu con tem?
 
-d) Bi có 24 con cá. An có ít hơn Bi 10 con. Hỏi An có mấy con?
+d) Bạn Bi có 641 con tem. Bạn Mai có nhiều hơn bạn Bi 160 con tem. Bạn Mai có bao nhiêu con tem?
+
+e) Bạn Bo có 251 viên bi. Bạn Tí có ít hơn bạn Bo 110 viên bi. Bạn Tí có bao nhiêu viên bi?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Cộng trừ có nhớ trong phạm vi 1 000**
+**Nhiều hơn, ít hơn một số đơn vị**
 
-a) Đặt tính rồi tính: 416 + 213
+a) Bo có 75 quả cam. An có ít hơn Bo 9 quả. Hỏi An có mấy quả?
 
-b) Đặt tính rồi tính: 614 − 36
+b) Mai có 21 con cá. Nam có nhiều hơn Mai 18 con. Hỏi Nam có mấy con?
 
-c) Đặt tính rồi tính: 422 − 344
+c) Cốm có 68 con cá. Bi có ít hơn Cốm 15 con. Hỏi Bi có mấy con?
 
-d) Đặt tính rồi tính: 242 + 746
-
-e) Đặt tính rồi tính: 604 − 431
+d) Bi có 57 quả bóng. Tèo có nhiều hơn Bi 19 quả. Hỏi Tèo có mấy quả?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đọc biểu đồ tranh**
 
-a) Một bạn tính 26 + 84 = 100. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) - táo: 🍎🍎🍎🍎🍎🍎🍎🍎  (8 quả)
+- cam: 🍎🍎🍎  (3 quả)
+- chuối: 🍎🍎🍎🍎🍎🍎🍎🍎  (8 quả)
 
-b) Một bạn tính 49 + 70 = 128. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+Loại quả nào nhiều nhất?
 
-c) Một bạn tính 73 + 41 = 123. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Loại quả nào ít nhất?
+
+c) Táo nhiều hơn cam mấy quả?
+
+d) Tất cả có mấy quả?
 
 
 ---
@@ -101,8 +105,8 @@ c) Một bạn tính 73 + 41 = 123. Bạn ấy sai ở đâu? Kết quả đúng
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Chuyền bóng nhẩm nhanh
 - ☐ Vì sao phải nhớ
+- ☐ Bài toán nhiều hơn – ít hơn
 - ☐ Nhiều hơn, ít hơn một số đơn vị
-- ☐ Cộng trừ có nhớ trong phạm vi 1 000
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Đọc biểu đồ tranh

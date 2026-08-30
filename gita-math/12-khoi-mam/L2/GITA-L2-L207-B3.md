@@ -30,73 +30,69 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Cấu tạo số và tính nhẩm số tròn trăm**
 
-a) Số 755 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Số 621 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-b) Tính nhẩm: 700 + 100
+b) Tính nhẩm: 400 + 400
 
-c) Tính nhẩm: 300 + 400
+c) Số 553 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-d) Số 424 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-e) Tính nhẩm: 400 + 300
-
-f) Số 749 gồm mấy trăm, mấy chục, mấy đơn vị?
+d) Tính nhẩm: 100 + 100
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 5 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-b) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+b) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 6 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-d) Xếp 9 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+d) Xếp 5 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+
+e) Xếp 2 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Nhiều hơn, ít hơn một số đơn vị**
 
-a) Bi có 76 quả cam. Nam có ít hơn Bi 9 quả. Hỏi Nam có mấy quả?
+a) An có 24 quyển vở. Bi có ít hơn An 15 quyển. Hỏi Bi có mấy quyển?
 
-b) Bo có 12 cái bánh. Tèo có nhiều hơn Bo 13 cái. Hỏi Tèo có mấy cái?
+b) Bo có 45 con vịt. Mai có nhiều hơn Bo 9 con. Hỏi Mai có mấy con?
 
-c) Bơ có 69 cái kẹo. Tèo có nhiều hơn Bơ 6 cái. Hỏi Tèo có mấy cái?
+c) Tèo có 54 quả cam. An có ít hơn Tèo 20 quả. Hỏi An có mấy quả?
 
-d) Tí có 19 cái kẹo. Tèo có ít hơn Tí 8 cái. Hỏi Tèo có mấy cái?
+d) Bo có 41 bông hoa. Mai có nhiều hơn Bo 8 bông. Hỏi Mai có mấy bông?
+
+e) Tèo có 14 quả bóng. An có nhiều hơn Tèo 12 quả. Hỏi An có mấy quả?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bài toán nhân, chia**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Có 35 viên bi chia đều vào 5 hộp. Mỗi hộp có mấy viên?
+a) Bạn Bơ có 306 con tem. Bạn Na có ít hơn bạn Bơ 120 con tem. Bạn Na có bao nhiêu con tem?
 
-b) Mỗi hộp có 5 con cá. Hỏi 6 hộp có mấy con?
+b) Bạn Bo có 378 quyển sách. Bạn Cốm có nhiều hơn bạn Bo 130 quyển sách. Bạn Cốm có bao nhiêu quyển sách?
 
-c) Mỗi hộp có 2 quả bóng. Hỏi 5 hộp có mấy quả?
+c) Bạn Nam có 417 con tem. Bạn Bo có nhiều hơn bạn Nam 120 con tem. Bạn Bo có bao nhiêu con tem?
 
-d) Có 6 quả cam chia đều vào 2 hộp. Mỗi hộp có mấy quả?
-
-e) Mỗi hộp có 2 quả cam. Hỏi 7 hộp có mấy quả?
+d) Bạn Mai có 314 viên bi. Bạn Bơ có ít hơn bạn Mai 40 viên bi. Bạn Bơ có bao nhiêu viên bi?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Số bí mật đến 1 000**
 
-a) Một bạn tính 35 + 23 = 67. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Số tròn trăm gần 432 nhất là số nào?
 
-b) Một bạn tính 31 + 29 = 50. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Số tròn trăm gần 764 nhất là số nào?
 
-c) Một bạn tính 64 + 82 = 155. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Số bí mật gồm 1 trăm, 0 chục và 5 đơn vị. Số nào?
 
-d) Một bạn tính 77 + 57 = 124. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-e) Một bạn tính 76 + 41 = 126. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+d) Số bí mật gồm 6 trăm, 5 chục và 2 đơn vị. Số nào?
 
 
 ---
@@ -108,5 +104,5 @@ e) Một bạn tính 76 + 41 = 126. Bạn ấy sai ở đâu? Kết quả đúng
 - ☐ Cấu tạo số và tính nhẩm số tròn trăm
 - ☐ Từ phép cộng sang phép nhân
 - ☐ Nhiều hơn, ít hơn một số đơn vị
-- ☐ Bài toán nhân, chia
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Bài toán nhiều hơn – ít hơn
+- ☐ Số bí mật đến 1 000

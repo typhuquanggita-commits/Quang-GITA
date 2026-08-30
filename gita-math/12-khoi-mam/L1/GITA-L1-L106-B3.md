@@ -30,58 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Các thứ trong tuần**
 
-a) Hôm nay là thứ Ba. Ngày mai là thứ mấy?
+a) Hôm nay là thứ Tư. Ngày mai là thứ mấy?
 
-b) Hôm nay là thứ Sáu. Ngày mai là thứ mấy?
+b) Hôm nay là thứ Năm. Ngày mai là thứ mấy?
 
-c) Hôm nay là thứ Sáu. Hôm qua là thứ mấy?
+c) Ngày thứ 6 của tuần là thứ mấy?
 
-d) Hôm nay là thứ Năm. Hôm qua là thứ mấy?
+d) Hôm nay là thứ Hai. Ngày mai là thứ mấy?
 
 e) Hôm nay là thứ Sáu. Ngày mai là thứ mấy?
+
+f) Ngày thứ 5 của tuần là thứ mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Đo độ dài và xem giờ đúng**
 
-a) Đoạn thẳng dài 3 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+a) Kim ngắn chỉ số 5, kim dài chỉ số 12. Mấy giờ?
 
-b) Kim ngắn chỉ số 10, kim dài chỉ số 12. Mấy giờ?
+b) Đoạn thẳng dài 10 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
-c) Đoạn thẳng dài 19 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+c) Kim ngắn chỉ số 10, kim dài chỉ số 12. Mấy giờ?
 
-d) Kim ngắn chỉ số 11, kim dài chỉ số 12. Mấy giờ?
+d) Đoạn thẳng dài 15 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Viết số: 9 mươi 8
+a) Viết số: 4 mươi 8
 
-b) Trong hình có mấy đoạn thẳng?
+b) Vẽ một đoạn thẳng dài 15 cm.
 
-c) Vẽ một đoạn thẳng dài 10 cm.
+c) Trong hình có mấy đoạn thẳng?
 
-d) Viết số: 9 mươi
-
-e) Vẽ một đoạn thẳng dài 3 cm.
+d) Viết số: 9 mươi 3
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Đếm hình trong hình ghép**
+**Đố vui đo và xem giờ**
 
-a) Trong hình bên có mấy hình vuông?
+a) Con đoán cái bút chì dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-b) Trong hình bên có mấy hình tam giác?
+b) Con đoán cái bàn học dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-c) Trong hình bên có mấy hình chữ nhật?
-
-d) Trong hình bên có mấy hình tròn?
-
-e) Trong hình bên có mấy hình chữ nhật?
+c) Kim ngắn chỉ số 7, kim dài chỉ số 12. Mấy giờ rồi? Giờ ấy nhà con thường làm gì?
 
 
 ---
@@ -93,4 +89,4 @@ e) Trong hình bên có mấy hình chữ nhật?
 - ☐ Các thứ trong tuần
 - ☐ Đo độ dài và xem giờ đúng
 - ☐ Vẽ, đo và viết số
-- ☐ Đếm hình trong hình ghép
+- ☐ Đố vui đo và xem giờ

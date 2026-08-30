@@ -45,8 +45,10 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính xếp thành nhóm bằng nhau
 - Que tính
 - Đĩa hoặc vòng để chia nhóm
+- Hột hạt hoặc nắp chai để xếp thành nhóm bằng nhau
+- Bảng nhân 2 và bảng nhân 5 dán trên tường
 - Que tính hoặc hột hạt để chia thử
-- Giấy ô li
+- Không cần gì
 
 ---
 
@@ -58,17 +60,23 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) 2 × 1 = …
-   → **2**
+a) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2
+   → **2 × 5 = 10**
 
-b) 15 : 5 = …
+b) 2 × 9 = …
+   → **18**
+
+c) 40 : 5 = …
+   → **8**
+
+d) 6 : 2 = …
    → **3**
 
-c) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5
-   → **5 × 9 = 45**
+e) 2 × 2 = …
+   → **4**
 
-d) Viết phép nhân thay cho phép cộng: 2 + 2
-   → **2 × 2 = 4**
+f) Viết phép nhân thay cho phép cộng: 5
+   → **5 × 1 = 5**
 
 **Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Con biết 2 × 6 rồi. Vậy 6 × 2 bằng mấy? Có phải lúc nào cũng thế không?
 
@@ -89,20 +97,17 @@ d) Viết phép nhân thay cho phép cộng: 2 + 2
 
 **Đáp án từng việc**
 
-a) Xếp 7 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-   → **5 + 5 + 5 + 5 + 5 + 5 + 5 = 5 × 7 = 35**
+a) Xếp 2 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+   → **5 + 5 = 5 × 2 = 10**
 
-b) Xếp 7 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-   → **2 + 2 + 2 + 2 + 2 + 2 + 2 = 2 × 7 = 14**
+b) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+   → **5 + 5 + 5 + 5 = 5 × 4 = 20**
 
 c) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
    → **2 + 2 + 2 = 2 × 3 = 6**
 
-d) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-   → **5 + 5 + 5 + 5 = 5 × 4 = 20**
-
-e) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-   → **2 + 2 + 2 + 2 = 2 × 4 = 8**
+d) Xếp 8 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+   → **5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 5 × 8 = 40**
 
 **Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Phép cộng nào cũng viết thành phép nhân được không? Vì sao?
 
@@ -117,26 +122,60 @@ e) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết 
 
 ## PHẦN C — Luyện tay
 
+**Bảng nhân, bảng chia và số còn thiếu**
+
+> **Cô/mẹ đọc lên:** Nhân là cộng nhiều lần bằng nhau. Chia là chia đều ra. Con nhớ được phép nhân thì suy ra phép chia.
+
+**Đáp án từng việc**
+
+a) 35 : 5 = …
+   → **7**
+
+b) Tìm số còn thiếu: 5 × … = 20
+   → **4**
+
+c) Mỗi hộp có 5 quyển vở. 10 hộp có bao nhiêu quyển vở?
+   → **5 × 10 = 50 quyển vở**
+
+d) 5 × 8 = …
+   → **40**
+
+e) 2 × 3 = …
+   → **6**
+
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Làm cách gọn hơn)*: Con biết 5 × 6 = 30. Vậy 30 : 5 bằng mấy? Vì sao con biết ngay mà không cần chia?
+
+**Thế nào là con đã hiểu:** Trẻ dùng phép nhân để tìm ra phép chia thay vì chia lại từ đầu. Nhìn ra **nhân và chia là hai mặt của một việc** tiết kiệm cho trẻ đúng một nửa số bảng phải học.
+
+**Con tắc thì làm gì:** Xếp hột hạt thành từng nhóm bằng nhau, đếm nhóm rồi đếm cả.
+
+**Nếu con làm nhanh:** Hỏi 2 × 5 và 5 × 2 — hai phép cho cùng một kết quả, vì sao?
+
+
+---
+
+## PHẦN D — Bài toán có lời văn
+
 **Bài toán nhân, chia**
 
 > **Cô/mẹ đọc lên:** Con đọc đề rồi hỏi mình: đây là gộp nhiều nhóm bằng nhau, hay chia đều ra?
 
 **Đáp án từng việc**
 
-a) Có 10 chiếc lá chia đều vào 5 hộp. Mỗi hộp có mấy chiếc?
-   → **2 chiếc**
+a) Mỗi hộp có 2 quả bóng. Hỏi 8 hộp có mấy quả?
+   → **16 quả**
 
-b) Mỗi hộp có 2 quả bóng. Hỏi 6 hộp có mấy quả?
-   → **12 quả**
+b) Có 35 con cá chia đều vào 5 hộp. Mỗi hộp có mấy con?
+   → **7 con**
 
-c) Mỗi hộp có 5 chiếc lá. Hỏi 7 hộp có mấy chiếc?
-   → **35 chiếc**
+c) Có 50 cái kẹo chia đều vào 5 hộp. Mỗi hộp có mấy cái?
+   → **10 cái**
 
-d) Có 10 con vịt chia đều vào 5 hộp. Mỗi hộp có mấy con?
-   → **2 con**
+d) Mỗi hộp có 2 bông hoa. Hỏi 10 hộp có mấy bông?
+   → **20 bông**
 
-e) Có 20 con cá chia đều vào 2 hộp. Mỗi hộp có mấy con?
-   → **10 con**
+e) Có 16 quả cam chia đều vào 2 hộp. Mỗi hộp có mấy quả?
+   → **8 quả**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Rút ra quy luật)*: Bài này nhân hay chia? Vì sao con biết?
 
@@ -149,70 +188,30 @@ e) Có 20 con cá chia đều vào 2 hộp. Mỗi hộp có mấy con?
 
 ---
 
-## PHẦN D — Bài toán có lời văn
-
-**Cộng trừ có nhớ trong phạm vi 100**
-
-> **Cô/mẹ đọc lên:** Nhớ sang hàng nào thì ghi số nhớ nhỏ ngay trên hàng ấy.
-
-**Đáp án từng việc**
-
-a) Đặt tính rồi tính: 39 + 31
-   → **70**
-
-b) Đặt tính rồi tính: 60 − 55
-   → **5**
-
-c) Đặt tính rồi tính: 83 + 13
-   → **96**
-
-d) Đặt tính rồi tính: 66 − 43
-   → **23**
-
-e) Đặt tính rồi tính: 86 + 13
-   → **99**
-
-**Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Làm sao biết kết quả của con đúng mà không cần tính lại?
-
-**Thế nào là con đã hiểu:** Trẻ tự thử lại bằng phép tính ngược — lấy tổng trừ đi một số hạng phải ra số hạng kia.
-
-**Con tắc thì làm gì:** Tách thành hai bước: cộng hàng đơn vị trước, ghi nhớ, rồi mới cộng hàng chục.
-
-**Nếu con làm nhanh:** Đưa một bài làm sẵn có lỗi quên nhớ, cho trẻ tìm ra chỗ sai.
-
-
----
-
 ## PHẦN E — Thử thách vui
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui nhân chia**
 
-> **Cô/mẹ đọc lên:** Con làm giám khảo nhé. Xem bạn sai ở bước nào rồi sửa lại.
+> **Cô/mẹ đọc lên:** Cuối buổi mình đố nhau. Con nhẩm miệng thôi, không phải viết.
 
 **Đáp án từng việc**
 
-a) Một bạn tính 36 + 45 = 71. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 81**
+a) Chia đều 15 cái kẹo cho 5 bạn. Mỗi bạn mấy cái?
+   → **3 cái**
 
-b) Một bạn tính 72 + 43 = 124. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 115**
+b) Con có 7 viên bi. Anh có gấp 5 lần con. Anh có mấy viên?
+   → **35 viên**
 
-c) Một bạn tính 44 + 25 = 78. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 69**
+c) Một đôi dép có 2 chiếc. 10 chiếc dép là mấy đôi?
+   → **5 đôi**
 
-d) Một bạn tính 78 + 27 = 95. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 105**
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Xem chỗ nào chưa ổn)*: Câu này con nhân hay chia? Chỗ nào trong đề cho con biết?
 
-e) Một bạn tính 70 + 80 = 159. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 150**
+**Thế nào là con đã hiểu:** Trẻ nghe 'gấp mấy lần' là nghĩ ngay tới phép nhân, nghe 'chia đều' là nghĩ tới phép chia — mà không cần thử cả hai.
 
-**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Làm sao để lần sau bạn ấy không sai như thế nữa?
+**Con tắc thì làm gì:** Vẽ nhanh sơ đồ: mấy nhóm, mỗi nhóm mấy cái.
 
-**Thế nào là con đã hiểu:** Trẻ chỉ ra **bước nào** sai chứ không chỉ nói kết quả sai. Tìm được lỗi của người khác là bước trước khi tự tìm được lỗi của mình.
-
-**Con tắc thì làm gì:** Tính lại cùng trẻ từng hàng, so với bài của bạn ở từng bước.
-
-**Nếu con làm nhanh:** Cho một bài đúng để trẻ khỏi quen là bài nào cũng có lỗi.
+**Nếu con làm nhanh:** Hỏi ngược: 'mỗi bạn được 4 cái, chia cho 3 bạn thì cần mấy cái?'
 
 
 ---

@@ -42,40 +42,37 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Chỗ trống để trẻ đứng dậy vận động
+- Chỗ trống để trẻ đi được vài bước
 - Một rổ đồ vật khác nhau về màu, hình, cỡ
-- Hột hạt nhiều màu
+- Bút chì màu
 - Hột hạt hoặc khối gỗ nhiều màu
 
 ---
 
 ## Chơi khởi động
 
-**Nhảy và đếm**
+**Vỗ tay theo nhịp rồi bước đo**
 
-> **Cô/mẹ đọc lên:** Mình chơi trò làm theo số nhé. Cô nói số mấy thì con làm đúng chừng ấy lần, vừa làm vừa đếm to.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng nhịp nhé. Cô làm trước, con nhìn cho kỹ rồi làm tiếp đúng như thế.
 
 **Đáp án từng việc**
 
-a) Con giậm chân đúng 3 cái nhé. Đếm to lên.
-   → **3**
+a) Cô làm mẫu: giậm chân – gật đầu. Lặp lại 3 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 2 động tác của một lượt, theo đúng thứ tự**
 
-b) Con gật đầu đúng 9 cái nhé. Đếm to lên.
-   → **9**
+b) Cô làm mẫu: vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 2 động tác của một lượt, theo đúng thứ tự**
 
-c) Con nhảy đúng 9 cái nhé. Đếm to lên.
-   → **9**
+c) Con bước chân nối gót đi hết chiều dài tấm thảm. Đếm to xem mấy bước.
+   → **số bước trẻ đếm được — ghi lại để buổi sau đo lại**
 
-d) Con bước lên phía trước đúng 6 bước nhé. Đếm to lên.
-   → **6**
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Sau giậm chân thì đến cái gì? Vì sao con đoán được?
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
+**Thế nào là con đã hiểu:** Trẻ làm tiếp đúng thứ tự mà không cần cô nhắc. Quy luật bằng **âm thanh và động tác** dễ nắm hơn quy luật bằng hình vẽ, nên đây là cửa vào tốt cho chủ đề quy luật.
 
-**Thế nào là con đã hiểu:** Trẻ dừng đúng lúc đếm tới số được yêu cầu, không nhảy thêm vì quán tính. Đếm để **điều khiển hành động** là bước tiến so với chỉ đọc thuộc dãy số.
+**Con tắc thì làm gì:** Rút nhịp xuống hai động tác và làm chậm lại. Đọc to tên động tác khi làm.
 
-**Con tắc thì làm gì:** Đếm cùng trẻ, vỗ tay theo nhịp. Giảm xuống số nhỏ hơn 5.
-
-**Nếu con làm nhanh:** Đếm ngược: nhảy 5 cái rồi đếm 5, 4, 3, 2, 1.
+**Nếu con làm nhanh:** Cho trẻ nghĩ ra nhịp rồi người lớn làm theo — trẻ sẽ tự kiểm tra xem người lớn có làm đúng không.
 
 
 ---
@@ -88,14 +85,14 @@ d) Con bước lên phía trước đúng 6 bước nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
-   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở màu sắc là đúng**
+a) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở hình dạng là đúng**
 
-b) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
-   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở loại đồ vật là đúng**
-
-c) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
+b) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
    → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở kích thước là đúng**
+
+c) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở màu sắc là đúng**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Có cách xếp nào khác không? Cùng số đồ này mà xếp kiểu khác được không?
 
@@ -110,31 +107,31 @@ c) Con xếp các đồ vật này thành nhóm theo kích thước. Được m�
 
 ## Tự làm thử
 
-**Điền vào ô trống**
+**Khoanh, nối, tô**
 
-> **Cô/mẹ đọc lên:** Ô trống ở giữa dãy. Con nhìn hai bên rồi đoán.
+> **Cô/mẹ đọc lên:** Con làm từng việc một, làm xong việc này mới sang việc kia.
 
 **Đáp án từng việc**
 
-a) xanh – đỏ – xanh – … – xanh . Ô trống là màu gì?
-   → **đỏ**
+a) Con khoanh vào vật ở giữa hàng.
+   → **vật chính giữa**
 
-b) xanh – vàng – xanh – … – xanh – vàng . Ô trống là màu gì?
-   → **vàng**
+b) Con khoanh tròn nhóm có nhiều hơn.
+   → **nhóm nhiều hơn**
 
-c) xanh – … – xanh – vàng – xanh . Ô trống là màu gì?
-   → **vàng**
+c) Con nối mỗi con vật với cái chuồng của nó.
+   → **nối đủ đôi một**
 
-d) đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
-   → **đỏ**
+d) Con tô màu hình tròn.
+   → **chỉ tô hình tròn**
 
-**Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Con kiểm lại xem điền vào rồi dãy còn đúng quy luật không?
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con kiểm lại xem có bỏ sót cái nào không?
 
-**Thế nào là con đã hiểu:** Trẻ nhìn **cả hai bên** ô trống chứ không chỉ nhìn bên trái. Điền ở giữa khó hơn hẳn điền ở cuối dãy.
+**Thế nào là con đã hiểu:** Trẻ tự kiểm lại sau khi làm xong, không nộp ngay. Thói quen nhìn lại bài là thứ phải tập từ tuổi này.
 
-**Con tắc thì làm gì:** Cho ô trống ở cuối dãy trước, rồi mới chuyển vào giữa.
+**Con tắc thì làm gì:** Làm mẫu việc đầu tiên rồi để trẻ làm tiếp.
 
-**Nếu con làm nhanh:** Để hai ô trống cách nhau.
+**Nếu con làm nhanh:** Đổi vai: người lớn làm sai một chỗ cho trẻ tìm ra.
 
 
 ---
@@ -147,14 +144,14 @@ d) đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
 
 **Đáp án từng việc**
 
-a) xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
+a) vàng – đỏ – vàng – đỏ – vàng – đỏ – … Con đoán xem tiếp theo là màu gì?
+   → **vàng**
+
+b) vàng – xanh – trắng – vàng – xanh – trắng – vàng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
+   → **vàng**
+
+c) xanh – trắng – xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
    → **xanh**
-
-b) đỏ – xanh – vàng – đỏ – xanh – vàng – … Con đoán xem tiếp theo là màu gì?
-   → **đỏ**
-
-c) đỏ – vàng – đỏ – vàng – đỏ – vàng – … Con đoán xem tiếp theo là màu gì?
-   → **đỏ**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Vì sao con đoán là màu đó? Con nói quy luật thành một câu xem.
 

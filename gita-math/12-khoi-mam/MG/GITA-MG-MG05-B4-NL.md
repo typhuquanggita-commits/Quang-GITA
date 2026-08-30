@@ -44,7 +44,7 @@ Bản dành cho: **người lớn ngồi cùng**
 - Chỗ trống để trẻ đứng dậy vận động
 - 10 đồ vật nhỏ giống nhau
 - Đồ chơi con vật xếp thành hàng
-- Hột hạt hoặc khối gỗ nhiều màu
+- Không cần gì — dùng ngón tay của trẻ
 
 ---
 
@@ -56,17 +56,17 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Con gật đầu đúng 2 cái nhé. Đếm to lên.
+a) Con vỗ tay đúng 3 cái nhé. Đếm to lên.
+   → **3**
+
+b) Con giậm chân đúng 2 cái nhé. Đếm to lên.
    → **2**
 
-b) Con giậm chân đúng 4 cái nhé. Đếm to lên.
-   → **4**
+c) Con nhảy đúng 5 cái nhé. Đếm to lên.
+   → **5**
 
-c) Con nhảy đúng 8 cái nhé. Đếm to lên.
+d) Con bước lên phía trước đúng 8 bước nhé. Đếm to lên.
    → **8**
-
-d) Con vỗ tay đúng 7 cái nhé. Đếm to lên.
-   → **7**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
 
@@ -87,13 +87,16 @@ d) Con vỗ tay đúng 7 cái nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Cô bày 10 quả cam thành vòng tròn. Con đếm xem có mấy quả?
-   → **10**
+a) Cô bày 4 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
+   → **4**
 
-b) Cô bày 7 quả bóng thành vòng tròn. Con đếm xem có mấy quả?
+b) Cô bày 6 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
+   → **6**
+
+c) Cô bày 7 con cá thành hai hàng. Con đếm xem có mấy con?
    → **7**
 
-c) Cô bày 5 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
+d) Cô bày 5 con vịt rải lộn xộn. Con đếm xem có mấy con?
    → **5**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Cô bày kiểu khác mà vẫn bằng chừng ấy à? Vì sao con biết?
@@ -115,17 +118,17 @@ c) Cô bày 5 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
 
 **Đáp án từng việc**
 
-a) Có 7 con chim xếp thành hàng. Con chỉ vào con thứ bảy.
-   → **con ở vị trí thứ 7 tính từ đầu hàng**
+a) Có 4 con mèo xếp thành hàng. Con chỉ vào con thứ tư.
+   → **con ở vị trí thứ 4 tính từ đầu hàng**
 
-b) Có 4 con thỏ xếp thành hàng. Con chỉ vào con thứ ba.
-   → **con ở vị trí thứ 3 tính từ đầu hàng**
+b) Có 8 con mèo xếp thành hàng. Con chỉ vào con thứ tư.
+   → **con ở vị trí thứ 4 tính từ đầu hàng**
 
-c) Có 8 con ong xếp thành hàng. Con chỉ vào con thứ nhất.
+c) Có 5 con thỏ xếp thành hàng. Con chỉ vào con thứ năm.
+   → **con ở vị trí thứ 5 tính từ đầu hàng**
+
+d) Có 6 con bướm xếp thành hàng. Con chỉ vào con thứ nhất.
    → **con ở vị trí thứ 1 tính từ đầu hàng**
-
-d) Có 8 con mèo xếp thành hàng. Con chỉ vào con thứ tám.
-   → **con ở vị trí thứ 8 tính từ đầu hàng**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: “Ba con vịt” với “con vịt thứ ba” có giống nhau không?
 
@@ -140,28 +143,31 @@ d) Có 8 con mèo xếp thành hàng. Con chỉ vào con thứ tám.
 
 ## Đố vui cuối buổi
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-> **Cô/mẹ đọc lên:** Cô xếp một dãy. Con nhìn kỹ rồi đoán xem cái tiếp theo là gì.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi thôi, dễ lắm. Con trả lời miệng, không phải viết.
 
 **Đáp án từng việc**
 
-a) đỏ – trắng – đỏ – trắng – … Con đoán xem tiếp theo là màu gì?
-   → **đỏ**
+a) Đếm tiếp cho cô: 4 rồi đến số mấy?
+   → **5**
 
-b) đỏ – vàng – đỏ – vàng – đỏ – vàng – … Con đoán xem tiếp theo là màu gì?
-   → **đỏ**
+b) Dãy số bị mất một số: 4 , … , 6 , 7 . Mất số nào?
+   → **5**
 
-c) vàng – xanh – trắng – vàng – xanh – trắng – vàng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
-   → **vàng**
+c) Con giơ 3 ngón ở tay này, 3 ngón ở tay kia. Tất cả mấy ngón?
+   → **6**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Vì sao con đoán là màu đó? Con nói quy luật thành một câu xem.
+d) Số nào đứng ngay trước số 7?
+   → **6**
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời — “cứ đỏ rồi xanh rồi lại đỏ” — chứ không chỉ chỉ tay vào màu đúng.
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Đoán thử)*: Con đố lại cô một câu về số đi.
 
-**Con tắc thì làm gì:** Đọc to cả dãy theo nhịp, vỗ tay theo. Nhịp điệu giúp trẻ nghe ra quy luật trước khi nhìn ra.
+**Thế nào là con đã hiểu:** Trẻ nói ngay số liền sau mà không đếm lại từ 1. Đếm tiếp từ giữa dãy khó hơn đếm từ đầu rất nhiều.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một quy luật rồi đố lại người lớn — trẻ thích phần này nhất và nó khó hơn hẳn phần đoán.
+**Con tắc thì làm gì:** Cho trẻ đếm từ 1 lên tới chỗ ấy. Đừng chê là chậm — đếm lại từ đầu vẫn là cách đúng.
+
+**Nếu con làm nhanh:** Hỏi số liền trước — phần này khó hơn hẳn, chỉ hỏi khi trẻ đã chắc số liền sau.
 
 
 ---

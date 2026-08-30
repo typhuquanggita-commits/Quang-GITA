@@ -28,77 +28,69 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) Số 305 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Con đoán chiều dài cái bảng khoảng bao nhiêu?
 
-b) Tính nhẩm: 800 + 100
+b) Con đoán cặp sách của con nặng khoảng bao nhiêu?
 
-c) Tính nhẩm: 200 + 600
-
-d) Số 144 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-e) Số 160 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-f) Tính nhẩm: 700 + 100
+c) Kim ngắn qua số 10, kim dài chỉ số 12. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đơn vị đo và xem đồng hồ**
 
-a) Bao gạo nặng 7 kg, bao ngô nặng 17 kg. Cả hai bao nặng mấy ki-lô-gam?
+a) 3 dm = … cm
 
-b) Kim ngắn chỉ số 12, kim dài chỉ số 12. Mấy giờ?
+b) Bao gạo nặng 4 kg, bao ngô nặng 11 kg. Cả hai bao nặng mấy ki-lô-gam?
 
-c) 7 dm = … cm
+c) Kim ngắn chỉ số 4, kim dài chỉ số 12. Mấy giờ?
 
-d) Kim ngắn chỉ số 7, kim dài chỉ số 12. Mấy giờ?
+d) 4 dm = … cm
 
-e) Bao gạo nặng 13 kg, bao ngô nặng 3 kg. Cả hai bao nặng mấy ki-lô-gam?
+e) Kim ngắn ở giữa số 1 và số 2, kim dài chỉ số 6. Mấy giờ?
+
+f) Bao gạo nặng 15 kg, bao ngô nặng 11 kg. Cả hai bao nặng mấy ki-lô-gam?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Đổi đơn vị và tính trên số đo**
 
-a) Điền dấu >, < hoặc = : 1 dm … 75 cm
+a) 3 m = … dm
 
-b) 9 m = … cm
+b) 18 cm + 35 cm = … cm
 
-c) 26 cm + 15 cm = … cm
+c) Điền dấu >, < hoặc = : 9 dm … 18 cm
 
-d) Điền dấu >, < hoặc = : 1 dm … 42 cm
-
-e) 32 cm + 32 cm = … cm
-
-f) 9 dm = … cm
+d) Điền dấu >, < hoặc = : 6 dm … 63 cm
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bài toán nhân, chia**
+**Tính với số đo**
 
-a) Mỗi hộp có 5 con vịt. Hỏi 3 hộp có mấy con?
+a) Băng giấy dài 60 cm, cắt đi 48 cm. Còn lại dài bao nhiêu?
 
-b) Có 40 cái bánh chia đều vào 5 hộp. Mỗi hộp có mấy cái?
+b) 12 kg + 27 kg = …
 
-c) Mỗi hộp có 2 quả cam. Hỏi 9 hộp có mấy quả?
+c) Bạn Nam bắt đầu học lúc 4 giờ, học 1 tiếng thì xong. Xong lúc mấy giờ?
 
-d) Có 20 viên bi chia đều vào 5 hộp. Mỗi hộp có mấy viên?
+d) 8 kg = … g
+
+e) 17 cm + 16 cm = …
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui đo lường và giờ**
 
-a) Một bạn tính 82 + 78 = 150. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Bây giờ là 5 giờ. 1 tiếng nữa là mấy giờ?
 
-b) Một bạn tính 46 + 35 = 71. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) 6 kg bằng bao nhiêu gam?
 
-c) Một bạn tính 53 + 40 = 102. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-d) Một bạn tính 26 + 32 = 67. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) 6 dm bằng bao nhiêu cm?
 
 
 ---
@@ -107,8 +99,8 @@ d) Một bạn tính 26 + 32 = 67. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đơn vị đo và xem đồng hồ
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Bài toán nhân, chia
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Tính với số đo
+- ☐ Đố vui đo lường và giờ

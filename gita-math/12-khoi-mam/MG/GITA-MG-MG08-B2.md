@@ -34,13 +34,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 a) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
 
-b) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+b) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
 
-c) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+c) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
 
-d) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+d) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
 
-e) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+e) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
 
 
 ## Cùng khám phá · 8 phút
@@ -49,11 +49,13 @@ e) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ 
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 5 cái bánh rải lộn xộn. Con đếm xem có mấy cái?
+a) Cô bày 7 con vịt thành hai hàng. Con đếm xem có mấy con?
 
-b) Cô bày 6 quyển vở thành hàng ngang. Con đếm xem có mấy quyển?
+b) Cô bày 5 quyển vở thành hàng ngang. Con đếm xem có mấy quyển?
 
-c) Cô bày 10 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
+c) Cô bày 9 con vịt thành vòng tròn. Con đếm xem có mấy con?
+
+d) Cô bày 6 cái bánh thành hàng ngang. Con đếm xem có mấy cái?
 
 
 ## Tự làm thử · 7 phút
@@ -62,13 +64,11 @@ c) Cô bày 10 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
 
 **Con thứ mấy trong hàng**
 
-a) Có 6 con ong xếp thành hàng. Con chỉ vào con thứ nhất.
+a) Có 7 con bướm xếp thành hàng. Con chỉ vào con thứ tư.
 
-b) Có 5 con ong xếp thành hàng. Con chỉ vào con thứ hai.
+b) Có 4 con gà xếp thành hàng. Con chỉ vào con thứ ba.
 
-c) Có 4 con thỏ xếp thành hàng. Con chỉ vào con thứ tư.
-
-d) Có 7 con bướm xếp thành hàng. Con chỉ vào con thứ năm.
+c) Có 8 con gà xếp thành hàng. Con chỉ vào con thứ tư.
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -77,13 +77,13 @@ d) Có 7 con bướm xếp thành hàng. Con chỉ vào con thứ năm.
 
 **Sáng, trưa, chiều, tối**
 
-a) Con ăn sáng vào buổi nào trong ngày?
+a) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
-b) Con ngủ trưa vào buổi nào trong ngày?
+b) Con tan học vào buổi nào trong ngày?
 
-c) Con tan học vào buổi nào trong ngày?
+c) Con ăn sáng vào buổi nào trong ngày?
 
-d) Con đánh răng buổi sớm vào buổi nào trong ngày?
+d) Con ngủ trưa vào buổi nào trong ngày?
 
 
 ---

@@ -28,56 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Kể một bài toán bằng miệng**
 
-a) Điền dấu >, < hoặc = : 20 … 42
+a) Cô để 9 quyển vở ra bàn rồi cất đi 4 quyển. Con kể lại thành một câu chuyện có số.
 
-b) Điền dấu >, < hoặc = : 55 … 62
+b) Cô để 3 chiếc lá, bạn Bơ đưa thêm 1 chiếc. Con kể lại thành một câu chuyện có số.
 
-c) Điền dấu >, < hoặc = : 94 … 53
+c) Cô để 9 con vịt ra bàn rồi cất đi 2 con. Con kể lại thành một câu chuyện có số.
 
-d) Điền dấu >, < hoặc = : 17 … 8
-
-e) Điền dấu >, < hoặc = : 35 … 75
+d) Cô để 6 quyển vở, bạn Bi đưa thêm 2 quyển. Con kể lại thành một câu chuyện có số.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 20 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 78 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 48 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 72 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 70 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 65 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 62 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 81 que tính. Con lấy mấy bó và mấy que rời?
+
+e) Con lấy đúng 23 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) An có 19 quả cam. Nam có 8 quả. Cả hai bạn có tất cả mấy quả?
+a) Bi có 16 viên bi. An có 6 viên. Cả hai bạn có tất cả mấy viên?
 
-b) 3, 13, 23, 33, … Số tiếp theo là số nào?
+b) 5, 10, 15, 20, … Số tiếp theo là số nào?
 
-c) 2, 7, 12, 17, … Số tiếp theo là số nào?
+c) 3, 5, 7, 9, … Số tiếp theo là số nào?
 
-d) An có 2 chiếc lá. Tí có 13 chiếc. Cả hai bạn có tất cả mấy chiếc?
+d) Bo có 8 quyển vở. Mai có 12 quyển. Cả hai bạn có tất cả mấy quyển?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tự đặt một bài toán**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 7 − 6 = 1.
+a) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 4 = 5.
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 3 = 17.
+b) Con hãy nghĩ ra một bài toán mà phép tính là 5 − 5 = 0.
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 6 = 5.
+c) Con hãy nghĩ ra một bài toán mà phép tính là 7 − 5 = 2.
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 2 = 9.
+d) Con hãy nghĩ ra một bài toán mà phép tính là 10 + 2 = 12.
 
 
 ---
@@ -86,7 +86,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 2 = 9.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Kể một bài toán bằng miệng
 - ☐ Lấy đúng số que tính
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tự đặt một bài toán

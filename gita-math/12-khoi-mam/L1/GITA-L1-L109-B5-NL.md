@@ -42,7 +42,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Một rổ đồ vật nhỏ giống nhau
 - Que tính bó sẵn từng chục
 - Que tính rời
 - Bút chì để gạch chân
@@ -52,34 +52,28 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**Kể một bài toán bằng miệng**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Chưa viết gì đâu. Cô làm, con nhìn rồi kể lại bằng lời cho cô nghe.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 9 … 5
-   → **>**
+a) Cô để 8 quyển vở, bạn Bơ đưa thêm 1 quyển. Con kể lại thành một câu chuyện có số.
+   → **Có 8 quyển vở, thêm 1 quyển, tất cả 9 quyển**
 
-b) Điền dấu >, < hoặc = : 1 … 3
-   → **<**
+b) Cô để 3 con vịt ra bàn rồi cất đi 2 con. Con kể lại thành một câu chuyện có số.
+   → **Có 3 con vịt, cất đi 2 con, còn 1 con**
 
-c) Điền dấu >, < hoặc = : 2 … 6
-   → **<**
+c) Cô để 8 con vịt, bạn Cốm đưa thêm 3 con. Con kể lại thành một câu chuyện có số.
+   → **Có 8 con vịt, thêm 3 con, tất cả 11 con**
 
-d) Điền dấu >, < hoặc = : 3 … 5
-   → **<**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Trong câu chuyện của con, câu nào cho biết phải làm phép cộng?
 
-e) Điền dấu >, < hoặc = : 6 … 2
-   → **>**
+**Thế nào là con đã hiểu:** Trẻ kể đủ ba phần: **có bao nhiêu – xảy ra chuyện gì – còn hoặc được bao nhiêu**. Kể được bằng miệng thì viết lời giải sẽ nhẹ hẳn, vì khó nhất của bài có lời văn là hiểu tình huống chứ không phải tính.
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Con tắc thì làm gì:** Người lớn kể mẫu một lần, rồi kể lại và bỏ trống câu cuối cho trẻ nói nốt.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
-
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Trẻ tự bày đồ vật và ra đề cho người lớn giải.
 
 
 ---
@@ -92,17 +86,17 @@ e) Điền dấu >, < hoặc = : 6 … 2
 
 **Đáp án từng việc**
 
-a) Con lấy đúng 59 que tính. Con lấy mấy bó và mấy que rời?
-   → **5 bó và 9 que rời**
+a) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
+   → **3 bó và 9 que rời**
 
-b) Con lấy đúng 63 que tính. Con lấy mấy bó và mấy que rời?
-   → **6 bó và 3 que rời**
+b) Con lấy đúng 73 que tính. Con lấy mấy bó và mấy que rời?
+   → **7 bó và 3 que rời**
 
-c) Con lấy đúng 48 que tính. Con lấy mấy bó và mấy que rời?
-   → **4 bó và 8 que rời**
+c) Con lấy đúng 29 que tính. Con lấy mấy bó và mấy que rời?
+   → **2 bó và 9 que rời**
 
-d) Con lấy đúng 87 que tính. Con lấy mấy bó và mấy que rời?
-   → **8 bó và 7 que rời**
+d) Con lấy đúng 60 que tính. Con lấy mấy bó và mấy que rời?
+   → **6 bó và 0 que rời**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Có cách nào lấy nhanh hơn là đếm từng que không?
 
@@ -123,17 +117,23 @@ d) Con lấy đúng 87 que tính. Con lấy mấy bó và mấy que rời?
 
 **Đáp án từng việc**
 
-a) 15, 25, 35, 45, … Số tiếp theo là số nào?
-   → **55**
+a) 9, 19, 29, 39, … Số tiếp theo là số nào?
+   → **49**
 
-b) Tèo có 9 quả cam. An có 6 quả. Cả hai bạn có tất cả mấy quả?
-   → **15 quả**
+b) Tí có 19 con cá. Mai có 14 con. Cả hai bạn có tất cả mấy con?
+   → **33 con**
 
-c) 8, 9, 10, 11, … Số tiếp theo là số nào?
-   → **12**
+c) Tí có 8 cái kẹo. Bo có 2 cái. Cả hai bạn có tất cả mấy cái?
+   → **10 cái**
 
-d) Na có 10 bông hoa. Tèo có 2 bông. Cả hai bạn có tất cả mấy bông?
-   → **12 bông**
+d) 3, 4, 5, 6, … Số tiếp theo là số nào?
+   → **7**
+
+e) 20, 21, 22, 23, … Số tiếp theo là số nào?
+   → **24**
+
+f) Mai có 13 bông hoa. Bi có 6 bông. Cả hai bạn có tất cả mấy bông?
+   → **19 bông**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Đoán thử)*: Con nghĩ dãy này cứ thế mãi thì số thứ mười là số nào?
 
@@ -154,13 +154,13 @@ d) Na có 10 bông hoa. Tèo có 2 bông. Cả hai bạn có tất cả mấy b�
 
 **Đáp án từng việc**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 4 − 3 = 1.
+a) Con hãy nghĩ ra một bài toán mà phép tính là 5 − 3 = 2.
    → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 5 + 7 = 12.
+b) Con hãy nghĩ ra một bài toán mà phép tính là 4 − 3 = 1.
    → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 6 + 5 = 11.
+c) Con hãy nghĩ ra một bài toán mà phép tính là 12 + 3 = 15.
    → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Đề của con có đủ cho người khác giải được không? Thiếu gì không?

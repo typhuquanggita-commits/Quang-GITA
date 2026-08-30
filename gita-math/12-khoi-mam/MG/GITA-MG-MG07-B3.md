@@ -30,13 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-a) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+a) Con chạy đi tìm một thứ trong nhà có hình tròn.
 
-b) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+b) Con chạy đi tìm một thứ trong nhà có hình vuông.
 
-c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
+c) Tìm cho cô một thứ là khối hộp chữ nhật.
+
+d) Tìm một thứ dài hơn cánh tay của con.
 
 
 ## Cùng khám phá · 8 phút
@@ -45,13 +47,15 @@ c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ v�
 
 **Tìm hình quanh mình**
 
-a) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
+a) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
 
-b) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
+b) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
 
-c) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
+c) Đây là khối trụ. Con tìm quanh nhà một đồ vật có dạng khối trụ.
 
-d) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật có dạng khối hộp chữ nhật.
+d) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
+
+e) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
 
 
 ## Tự làm thử · 7 phút
@@ -60,26 +64,26 @@ d) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật c�
 
 **Điền vào ô trống**
 
-a) đỏ – xanh – đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
+a) đỏ – … – đỏ – vàng – đỏ . Ô trống là màu gì?
 
-b) đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
+b) đỏ – xanh – đỏ – … – đỏ . Ô trống là màu gì?
 
-c) xanh – đỏ – … – đỏ – xanh . Ô trống là màu gì?
+c) vàng – … – vàng – đỏ – vàng – đỏ . Ô trống là màu gì?
 
-d) vàng – … – vàng – xanh – vàng – xanh . Ô trống là màu gì?
+d) vàng – xanh – vàng – xanh – … – xanh . Ô trống là màu gì?
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Sáng, trưa, chiều, tối**
+**Đố vui so sánh**
 
-a) Con ăn sáng vào buổi nào trong ngày?
+a) Cái cốc và cái ấm: cái nào to hơn?
 
-b) Con đánh răng buổi sớm vào buổi nào trong ngày?
+b) Con voi và con kiến: cái nào to hơn?
 
-c) Con đi ngủ vào buổi nào trong ngày?
+c) Cô có 5 cái kẹo, con có 6 cái. Ai nhiều hơn?
 
 
 ---
@@ -90,7 +94,7 @@ c) Con đi ngủ vào buổi nào trong ngày?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Đi săn hình quanh nhà | ☐ | ☐ | ☐ |
 | Tìm hình quanh mình | ☐ | ☐ | ☐ |
 | Điền vào ô trống | ☐ | ☐ | ☐ |
-| Sáng, trưa, chiều, tối | ☐ | ☐ | ☐ |
+| Đố vui so sánh | ☐ | ☐ | ☐ |

@@ -28,58 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Kể một bài toán bằng miệng**
 
-a) Điền dấu >, < hoặc = : 6 … 10
+a) Cô để 7 cái bánh, bạn Tí đưa thêm 4 cái. Con kể lại thành một câu chuyện có số.
 
-b) Điền dấu >, < hoặc = : 6 … 9
+b) Cô để 6 quyển vở, bạn Tèo đưa thêm 4 quyển. Con kể lại thành một câu chuyện có số.
 
-c) Điền dấu >, < hoặc = : 4 … 2
-
-d) Điền dấu >, < hoặc = : 8 … 5
-
-e) Điền dấu >, < hoặc = : 9 … 6
+c) Cô để 7 quả bóng ra bàn rồi cất đi 2 quả. Con kể lại thành một câu chuyện có số.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 18 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 84 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 26 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 80 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 79 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 15 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 63 que tính. Con lấy mấy bó và mấy que rời?
+
+e) Con lấy đúng 30 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) Cốm có 14 con vịt. Bơ có 6 con. Cả hai bạn có tất cả mấy con?
+a) Bo có 7 quả bóng. Cốm có 8 quả. Cả hai bạn có tất cả mấy quả?
 
-b) 15, 16, 17, 18, … Số tiếp theo là số nào?
+b) 12, 14, 16, 18, … Số tiếp theo là số nào?
 
-c) Na có 10 cái kẹo. Mai có 14 cái. Cả hai bạn có tất cả mấy cái?
+c) 16, 21, 26, 31, … Số tiếp theo là số nào?
 
-d) 20, 21, 22, 23, … Số tiếp theo là số nào?
+d) Nam có 19 cái kẹo. Bơ có 3 cái. Cả hai bạn có tất cả mấy cái?
+
+e) Tí có 3 cái kẹo. Bi có 6 cái. Cả hai bạn có tất cả mấy cái?
+
+f) 19, 29, 39, 49, … Số tiếp theo là số nào?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tìm quy luật**
 
-a) 9, 14, 19, 24, …
+a) 3, 6, 12, …
 
 b) 1, 2, 4, …
 
 c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
 
-d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
-
-e) 3, 8, 13, 18, …
+d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
 
 
 ---
@@ -88,7 +88,7 @@ e) 3, 8, 13, 18, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Kể một bài toán bằng miệng
 - ☐ Lấy đúng số que tính
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tìm quy luật

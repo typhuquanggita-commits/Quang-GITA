@@ -28,64 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**So sánh số trong phạm vi 20**
 
-a) Điền dấu >, < hoặc = : 49 … 60
+a) Điền dấu >, < hoặc = : 11 … 19
 
-b) Điền dấu >, < hoặc = : 81 … 93
+b) Điền dấu >, < hoặc = : 11 … 6
 
-c) Điền dấu >, < hoặc = : 30 … 14
+c) Điền dấu >, < hoặc = : 8 … 1
 
-d) Điền dấu >, < hoặc = : 41 … 58
+d) Điền dấu >, < hoặc = : 15 … 3
 
-e) Điền dấu >, < hoặc = : 95 … 29
-
-f) Điền dấu >, < hoặc = : 57 … 80
+e) Điền dấu >, < hoặc = : 4 … 10
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Chục và đơn vị**
 
-a) Số 15 gồm mấy chục và mấy đơn vị?
+a) Số 77 gồm mấy chục và mấy đơn vị?
 
-b) Số 27 gồm mấy chục và mấy đơn vị?
+b) Số 48 gồm mấy chục và mấy đơn vị?
 
-c) Số 26 gồm mấy chục và mấy đơn vị?
+c) Số 99 gồm mấy chục và mấy đơn vị?
 
-d) Số 67 gồm mấy chục và mấy đơn vị?
+d) Số 97 gồm mấy chục và mấy đơn vị?
 
-e) Số 70 gồm mấy chục và mấy đơn vị?
+e) Số 67 gồm mấy chục và mấy đơn vị?
+
+f) Số 28 gồm mấy chục và mấy đơn vị?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Viết số: 9 mươi 1
+a) Trong hình có mấy đoạn thẳng?
 
-b) Trong hình có mấy đoạn thẳng?
+b) Viết số: 6 mươi 9
 
-c) Vẽ một đoạn thẳng dài 11 cm.
+c) Vẽ một đoạn thẳng dài 3 cm.
 
-d) Vẽ một đoạn thẳng dài 14 cm.
-
-e) Trong hình có mấy đoạn thẳng?
-
-f) Viết số: mười 1
+d) Vẽ một đoạn thẳng dài 7 cm.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Số bí mật**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 3 = 6.
+a) 13 và 43: số nào lớn hơn?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 2 = 7.
+b) Số bí mật đứng liền sau 50 và liền trước 52. Số nào?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 4 = 8.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 15 − 9 = 6.
+c) Số bí mật có 3 chục và 9 đơn vị. Số ấy là số nào?
 
 
 ---
@@ -94,7 +88,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 15 − 9 = 6.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ So sánh số trong phạm vi 20
 - ☐ Chục và đơn vị
 - ☐ Vẽ, đo và viết số
-- ☐ Tự đặt một bài toán
+- ☐ Số bí mật

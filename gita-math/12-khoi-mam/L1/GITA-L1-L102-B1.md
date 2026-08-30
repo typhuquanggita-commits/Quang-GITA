@@ -28,58 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 57 … 68
+a) 9 bớt 5 còn mấy?
 
-b) Điền dấu >, < hoặc = : 99 … 86
+b) 4 thêm 4 là mấy?
 
-c) Điền dấu >, < hoặc = : 49 … 7
+c) Con giơ 3 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 7?
 
-d) Điền dấu >, < hoặc = : 69 … 4
-
-e) Điền dấu >, < hoặc = : 5 … 33
+d) Con giơ 2 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 7?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Tí có 5 con cá, mẹ cho thêm 3 con. Tí có tất cả mấy con?
+a) Na có 2 quyển vở, mẹ cho thêm 1 quyển. Na có tất cả mấy quyển?
 
-b) Mai có 4 quả cam, cho bạn 2 quả. Mai còn lại mấy quả?
+b) Mai có 9 quả bóng, cho bạn 4 quả. Mai còn lại mấy quả?
 
-c) Cốm có 2 con cá, mẹ cho thêm 3 con. Cốm có tất cả mấy con?
+c) Nam có 8 quả cam, cho bạn 6 quả. Nam còn lại mấy quả?
 
-d) Na có 8 cái bánh, cho bạn 4 cái. Na còn lại mấy cái?
+d) Tí có 4 bông hoa, mẹ cho thêm 3 bông. Tí có tất cả mấy bông?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) 5 + … = 10
+a) … + 6 = 7
 
-b) 5 + … = 9
+b) 2 + … = 8
 
-c) 3 + … = 7
+c) … + 1 = 10
 
-d) … + 7 = 10
+d) 5 + … = 8
+
+e) 6 + … = 9
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-a) 2, 4, 8, …
+a) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-b) 3, 6, 12, …
+b) Con có 10 cái kẹo, cho bạn 1 cái. Còn mấy cái?
 
-c) 12, 14, 16, 18, …
+c) Bàn ăn có 2 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-d) 11, 13, 15, 17, …
-
-e) 3, 6, 12, …
+d) Con có 5 cái kẹo, cho bạn 1 cái. Còn mấy cái?
 
 
 ---
@@ -88,7 +86,7 @@ e) 3, 6, 12, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Tìm số còn thiếu
-- ☐ Tìm quy luật
+- ☐ Đố vui cộng trừ

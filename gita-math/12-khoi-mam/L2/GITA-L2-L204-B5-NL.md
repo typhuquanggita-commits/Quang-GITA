@@ -41,44 +41,43 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Bảng số hoặc thẻ trăm – chục – đơn vị
+- Một quả bóng nhỏ hoặc con thú bông để chuyền tay
 - Que tính rời và dây buộc
 - Thước kẻ để vẽ sơ đồ đoạn thẳng
-- Que tính hoặc hột hạt để chia thử
-- Giấy ô li
+- Vở ô ly
+- Bút chì để vẽ sơ đồ đoạn thẳng
+- Giấy kẻ sẵn biểu đồ tranh
+- Nhãn dán hoặc bút màu
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Chuyền bóng nhẩm nhanh**
 
-> **Cô/mẹ đọc lên:** Số tròn trăm thì nhẩm như đếm trăm: 3 trăm thêm 2 trăm là 5 trăm.
+> **Cô/mẹ đọc lên:** Mình chơi chuyền bóng. Ai nhận bóng thì trả lời, trả lời xong chuyền cho người khác.
 
 **Đáp án từng việc**
 
-a) Số 295 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **2 trăm, 9 chục, 5 đơn vị**
+a) Lớp 2A có 39 bạn, lớp 2B ít hơn 9 bạn. Lớp 2B mấy bạn?
+   → **30 bạn**
 
-b) Tính nhẩm: 800 + 100
-   → **900**
+b) 61 − 35 = …
+   → **26**
 
-c) Tính nhẩm: 300 + 100
-   → **400**
+c) 24 + 8 = …
+   → **32**
 
-d) Số 870 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **8 trăm, 7 chục, 0 đơn vị**
+d) Anh có 35 viên bi, em nhiều hơn anh 13 viên. Em có mấy viên?
+   → **48 viên**
 
-e) Tính nhẩm: 400 + 500
-   → **900**
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Rút ra quy luật)*: Phép nào phải nhớ 1 sang hàng chục? Vì sao phải nhớ?
 
-**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Vì sao 300 + 200 nhẩm nhanh hơn 347 + 285?
+**Thế nào là con đã hiểu:** Trẻ nhớ đúng 1 sang hàng chục khi nhẩm miệng, không cần đặt tính ra giấy. Nhẩm được nghĩa là **hiểu chục và đơn vị**, không chỉ thuộc quy tắc đặt tính.
 
-**Thế nào là con đã hiểu:** Trẻ nhẩm số tròn trăm mà không đặt tính. Biết khi nào cần đặt tính và khi nào không là dấu hiệu đã chọn cách làm.
+**Con tắc thì làm gì:** Tách thành hai bước: cộng chục trước, cộng đơn vị sau, rồi gộp lại.
 
-**Con tắc thì làm gì:** Che hai chữ số cuối để trẻ chỉ nhìn hàng trăm.
-
-**Nếu con làm nhanh:** Nhẩm số tròn chục trong phạm vi 1 000.
+**Nếu con làm nhanh:** Ai trả lời xong được ra đề cho người tiếp theo.
 
 
 ---
@@ -91,17 +90,17 @@ e) Tính nhẩm: 400 + 500
 
 **Đáp án từng việc**
 
-a) Tính 81 + 33. Cộng hàng đơn vị trước: 1 + 3 = 4. Vì sao phải nhớ sang hàng chục?
-   → **không phải nhớ vì 4 chưa đủ một chục; kết quả 114**
+a) Tính 83 + 57. Cộng hàng đơn vị trước: 3 + 7 = 10. Có phải nhớ sang hàng chục không? Vì sao?
+   → **vì 10 lớn hơn 9, đủ một chục nên chuyển 1 chục sang; kết quả là 140**
 
-b) Tính 29 + 28. Cộng hàng đơn vị trước: 9 + 8 = 17. Vì sao phải nhớ sang hàng chục?
-   → **vì 17 lớn hơn 9, đủ một chục nên chuyển 1 chục sang; kết quả là 57**
+b) Tính 19 + 73. Cộng hàng đơn vị trước: 9 + 3 = 12. Có phải nhớ sang hàng chục không? Vì sao?
+   → **vì 12 lớn hơn 9, đủ một chục nên chuyển 1 chục sang; kết quả là 92**
 
-c) Tính 33 + 67. Cộng hàng đơn vị trước: 3 + 7 = 10. Vì sao phải nhớ sang hàng chục?
-   → **vì 10 lớn hơn 9, đủ một chục nên chuyển 1 chục sang; kết quả là 100**
+c) Tính 34 + 65. Cộng hàng đơn vị trước: 4 + 5 = 9. Có phải nhớ sang hàng chục không? Vì sao?
+   → **không phải nhớ vì 9 chưa đủ một chục; kết quả 99**
 
-d) Tính 70 + 51. Cộng hàng đơn vị trước: 0 + 1 = 1. Vì sao phải nhớ sang hàng chục?
-   → **không phải nhớ vì 1 chưa đủ một chục; kết quả 121**
+d) Tính 47 + 27. Cộng hàng đơn vị trước: 7 + 7 = 14. Có phải nhớ sang hàng chục không? Vì sao?
+   → **vì 14 lớn hơn 9, đủ một chục nên chuyển 1 chục sang; kết quả là 74**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Phép nào phải nhớ, phép nào không? Con nhìn vào đâu để biết trước?
 
@@ -122,17 +121,17 @@ d) Tính 70 + 51. Cộng hàng đơn vị trước: 0 + 1 = 1. Vì sao phải nh
 
 **Đáp án từng việc**
 
-a) Tèo có 28 chiếc lá. Nam có ít hơn Tèo 20 chiếc. Hỏi Nam có mấy chiếc?
-   → **8 chiếc**
+a) Bo có 23 cái bánh. Tí có ít hơn Bo 7 cái. Hỏi Tí có mấy cái?
+   → **16 cái**
 
-b) Tèo có 20 con cá. Tí có nhiều hơn Tèo 17 con. Hỏi Tí có mấy con?
-   → **37 con**
+b) Bo có 33 chiếc lá. Nam có nhiều hơn Bo 12 chiếc. Hỏi Nam có mấy chiếc?
+   → **45 chiếc**
 
-c) Nam có 73 quyển vở. Bơ có nhiều hơn Nam 5 quyển. Hỏi Bơ có mấy quyển?
-   → **78 quyển**
+c) Mai có 35 quyển vở. Bơ có nhiều hơn Mai 7 quyển. Hỏi Bơ có mấy quyển?
+   → **42 quyển**
 
-d) Na có 69 quả cam. Cốm có ít hơn Na 7 quả. Hỏi Cốm có mấy quả?
-   → **62 quả**
+d) Bo có 46 cái kẹo. Bi có ít hơn Bo 17 cái. Hỏi Bi có mấy cái?
+   → **29 cái**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Đoán thử)*: Nhìn sơ đồ con vẽ, làm sao biết phải cộng hay phải trừ?
 
@@ -147,65 +146,69 @@ d) Na có 69 quả cam. Cốm có ít hơn Na 7 quả. Hỏi Cốm có mấy qu�
 
 ## PHẦN D — Bài toán có lời văn
 
-**Bài toán nhân, chia**
+**Bài toán nhiều hơn – ít hơn**
 
-> **Cô/mẹ đọc lên:** Con đọc đề rồi hỏi mình: đây là gộp nhiều nhóm bằng nhau, hay chia đều ra?
+> **Cô/mẹ đọc lên:** Đọc đề hai lần. Lần đầu để biết chuyện gì, lần sau để tìm hai số và tìm chữ 'nhiều hơn' hay 'ít hơn'.
 
 **Đáp án từng việc**
 
-a) Có 40 con cá chia đều vào 5 hộp. Mỗi hộp có mấy con?
-   → **8 con**
+a) Bạn Bi có 477 con tem. Bạn Tí có ít hơn bạn Bi 160 con tem. Bạn Tí có bao nhiêu con tem?
+   → **477 − 160 = 317 con tem**
 
-b) Mỗi hộp có 2 cái bánh. Hỏi 2 hộp có mấy cái?
-   → **4 cái**
+b) Bạn Tí có 610 quyển sách. Bạn Bi có ít hơn bạn Tí 30 quyển sách. Bạn Bi có bao nhiêu quyển sách?
+   → **610 − 30 = 580 quyển sách**
 
-c) Mỗi hộp có 2 viên bi. Hỏi 5 hộp có mấy viên?
-   → **10 viên**
+c) Bạn Bơ có 399 cái nhãn vở. Bạn An có ít hơn bạn Bơ 80 cái nhãn vở. Bạn An có bao nhiêu cái nhãn vở?
+   → **399 − 80 = 319 cái nhãn vở**
 
-d) Có 25 con vịt chia đều vào 5 hộp. Mỗi hộp có mấy con?
-   → **5 con**
+d) Bạn Cốm có 275 cái nhãn vở. Bạn Tí có ít hơn bạn Cốm 40 cái nhãn vở. Bạn Tí có bao nhiêu cái nhãn vở?
+   → **275 − 40 = 235 cái nhãn vở**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Rút ra quy luật)*: Bài này nhân hay chia? Vì sao con biết?
+e) Bạn Na có 268 con tem. Bạn An có nhiều hơn bạn Na 100 con tem. Bạn An có bao nhiêu con tem?
+   → **268 + 100 = 368 con tem**
 
-**Thế nào là con đã hiểu:** Trẻ nhận ra dấu hiệu “mỗi … có …, hỏi tất cả” là nhân, còn “chia đều” là chia — mà không cần thuộc lòng danh sách từ khoá.
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vẽ hai đoạn thẳng cho hai bạn. Đoạn nào dài hơn? Phần dài hơn ấy là số nào trong đề?
 
-**Con tắc thì làm gì:** Chia thật bằng hột hạt vào các đĩa.
+**Thế nào là con đã hiểu:** Trẻ vẽ được sơ đồ hai đoạn thẳng trước khi tính. Vẽ đúng thì chọn đúng phép tính; **lỗi phổ biến nhất là thấy chữ 'nhiều hơn' liền cộng**, kể cả khi đề hỏi số bé.
 
-**Nếu con làm nhanh:** Cho bài chia có dư để trẻ thấy không phải lúc nào cũng chia hết.
+**Con tắc thì làm gì:** Thay số lớn bằng số nhỏ trong phạm vi 20 rồi diễn lại bằng que tính.
+
+**Nếu con làm nhanh:** Đảo đề: cho biết bạn nhiều hơn có bao nhiêu, hỏi bạn còn lại — lúc này 'nhiều hơn' lại phải trừ.
 
 
 ---
 
 ## PHẦN E — Thử thách vui
 
-**Tìm chỗ sai giúp bạn**
+**Đọc biểu đồ tranh**
 
-> **Cô/mẹ đọc lên:** Con làm giám khảo nhé. Xem bạn sai ở bước nào rồi sửa lại.
+> **Cô/mẹ đọc lên:** Nhìn biểu đồ rồi trả lời giúp cô. Mỗi hình một quả nhé.
 
 **Đáp án từng việc**
 
-a) Một bạn tính 70 + 22 = 101. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 92**
+a) - táo: 🍎🍎🍎🍎🍎🍎  (6 quả)
+- cam: 🍎🍎🍎🍎  (4 quả)
+- chuối: 🍎🍎  (2 quả)
 
-b) Một bạn tính 53 + 73 = 135. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 126**
+Loại quả nào nhiều nhất?
+   → **táo**
 
-c) Một bạn tính 49 + 31 = 70. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 80**
+b) Loại quả nào ít nhất?
+   → **chuối**
 
-d) Một bạn tính 58 + 37 = 85. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 95**
+c) Táo nhiều hơn chuối mấy quả?
+   → **4 quả**
 
-e) Một bạn tính 37 + 36 = 63. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 73**
+d) Tất cả có mấy quả?
+   → **12 quả**
 
-**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Làm sao để lần sau bạn ấy không sai như thế nữa?
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Nhìn biểu đồ, con biết ngay loại nào nhiều nhất mà không cần đếm. Vì sao?
 
-**Thế nào là con đã hiểu:** Trẻ chỉ ra **bước nào** sai chứ không chỉ nói kết quả sai. Tìm được lỗi của người khác là bước trước khi tự tìm được lỗi của mình.
+**Thế nào là con đã hiểu:** Trẻ so hai hàng bằng cách nhìn hàng nào **dài hơn**, chỉ đếm khi cần biết hơn kém bao nhiêu. Đó chính là lý do người ta vẽ biểu đồ thay vì viết bảng số.
 
-**Con tắc thì làm gì:** Tính lại cùng trẻ từng hàng, so với bài của bạn ở từng bước.
+**Con tắc thì làm gì:** Cho trẻ chỉ tay theo từng hàng và đếm to.
 
-**Nếu con làm nhanh:** Cho một bài đúng để trẻ khỏi quen là bài nào cũng có lỗi.
+**Nếu con làm nhanh:** Che số đi, chỉ để hình — trẻ vẫn trả lời được câu nào?
 
 
 ---

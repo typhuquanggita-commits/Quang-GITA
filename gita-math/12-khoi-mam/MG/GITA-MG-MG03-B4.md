@@ -30,15 +30,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Nhảy và đếm**
+**Nhìn nhanh — bên nào nhiều hơn**
 
-a) Con vỗ tay đúng 4 cái nhé. Đếm to lên.
+a) Cô để 7 cái bánh bên trái, 4 cái bánh bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều cái hơn?
 
-b) Con giậm chân đúng 5 cái nhé. Đếm to lên.
+b) Cô để 5 quả bóng bên trái, 3 quả bóng bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quả hơn?
 
-c) Con bước lên phía trước đúng 2 bước nhé. Đếm to lên.
-
-d) Con gật đầu đúng 3 cái nhé. Đếm to lên.
+c) Cô để 5 quả cam bên trái, 4 quả cam bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quả hơn?
 
 
 ## Cùng khám phá · 8 phút
@@ -49,11 +47,11 @@ d) Con gật đầu đúng 3 cái nhé. Đếm to lên.
 
 a) Con có mấy mắt?
 
-b) Con có mấy mũi?
+b) Con có mấy chân?
 
-c) Con có mấy tai?
+c) Con có mấy ngón tay hai bàn?
 
-d) Con có mấy ngón tay hai bàn?
+d) Con có mấy mũi?
 
 
 ## Tự làm thử · 7 phút
@@ -62,7 +60,7 @@ d) Con có mấy ngón tay hai bàn?
 
 **Đếm rồi ghi vào bảng**
 
-a) Trong tranh có vịt: 3 con, chim: 3 con, bướm: 6 con. Con vật nào nhiều nhất?
+a) Trong tranh có chim: 3 con, mèo: 2 con, gà: 8 con, ong: 7 con. Con vật nào nhiều nhất?
 
 b) Con vật nào ít nhất?
 
@@ -73,15 +71,13 @@ c) Có tất cả bao nhiêu con?
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui so sánh**
 
-a) xanh – vàng – xanh – vàng – xanh – vàng – … Con đoán xem tiếp theo là màu gì?
+a) Quyển vở và quyển từ điển: cái nào to hơn?
 
-b) trắng – đỏ – trắng – đỏ – … Con đoán xem tiếp theo là màu gì?
+b) Cái cốc và cái ấm: cái nào to hơn?
 
-c) đỏ – trắng – đỏ – trắng – đỏ – trắng – … Con đoán xem tiếp theo là màu gì?
-
-d) trắng – xanh – trắng – xanh – … Con đoán xem tiếp theo là màu gì?
+c) Cô có 5 cái kẹo, con có 6 cái. Ai nhiều hơn?
 
 
 ---
@@ -92,7 +88,7 @@ d) trắng – xanh – trắng – xanh – … Con đoán xem tiếp theo là 
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Nhảy và đếm | ☐ | ☐ | ☐ |
+| Nhìn nhanh — bên nào nhiều hơn | ☐ | ☐ | ☐ |
 | Đếm trên chính mình | ☐ | ☐ | ☐ |
 | Đếm rồi ghi vào bảng | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui so sánh | ☐ | ☐ | ☐ |

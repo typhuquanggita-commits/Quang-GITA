@@ -40,7 +40,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Một rổ đồ vật nhỏ giống nhau
 - Que tính bó sẵn từng chục
 - Que tính rời
 - Bút chì để gạch chân
@@ -50,37 +50,31 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 100**
+**Kể một bài toán bằng miệng**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Chưa viết gì đâu. Cô làm, con nhìn rồi kể lại bằng lời cho cô nghe.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 85 … 90
-   → **<**
+a) Cô để 8 bông hoa ra bàn rồi cất đi 3 bông. Con kể lại thành một câu chuyện có số.
+   → **Có 8 bông hoa, cất đi 3 bông, còn 5 bông**
 
-b) Điền dấu >, < hoặc = : 19 … 25
-   → **<**
+b) Cô để 5 cái bánh ra bàn rồi cất đi 3 cái. Con kể lại thành một câu chuyện có số.
+   → **Có 5 cái bánh, cất đi 3 cái, còn 2 cái**
 
-c) Điền dấu >, < hoặc = : 22 … 43
-   → **<**
+c) Cô để 9 quyển vở ra bàn rồi cất đi 1 quyển. Con kể lại thành một câu chuyện có số.
+   → **Có 9 quyển vở, cất đi 1 quyển, còn 8 quyển**
 
-d) Điền dấu >, < hoặc = : 49 … 73
-   → **<**
+d) Cô để 9 viên bi, bạn Nam đưa thêm 1 viên. Con kể lại thành một câu chuyện có số.
+   → **Có 9 viên bi, thêm 1 viên, tất cả 10 viên**
 
-e) Điền dấu >, < hoặc = : 7 … 83
-   → **<**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Trong câu chuyện của con, câu nào cho biết phải làm phép cộng?
 
-f) Điền dấu >, < hoặc = : 66 … 41
-   → **>**
+**Thế nào là con đã hiểu:** Trẻ kể đủ ba phần: **có bao nhiêu – xảy ra chuyện gì – còn hoặc được bao nhiêu**. Kể được bằng miệng thì viết lời giải sẽ nhẹ hẳn, vì khó nhất của bài có lời văn là hiểu tình huống chứ không phải tính.
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Con tắc thì làm gì:** Người lớn kể mẫu một lần, rồi kể lại và bỏ trống câu cuối cho trẻ nói nốt.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
-
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Trẻ tự bày đồ vật và ra đề cho người lớn giải.
 
 
 ---
@@ -93,17 +87,20 @@ f) Điền dấu >, < hoặc = : 66 … 41
 
 **Đáp án từng việc**
 
-a) Con lấy đúng 78 que tính. Con lấy mấy bó và mấy que rời?
-   → **7 bó và 8 que rời**
+a) Con lấy đúng 58 que tính. Con lấy mấy bó và mấy que rời?
+   → **5 bó và 8 que rời**
 
-b) Con lấy đúng 46 que tính. Con lấy mấy bó và mấy que rời?
-   → **4 bó và 6 que rời**
+b) Con lấy đúng 71 que tính. Con lấy mấy bó và mấy que rời?
+   → **7 bó và 1 que rời**
 
-c) Con lấy đúng 15 que tính. Con lấy mấy bó và mấy que rời?
-   → **1 bó và 5 que rời**
+c) Con lấy đúng 80 que tính. Con lấy mấy bó và mấy que rời?
+   → **8 bó và 0 que rời**
 
-d) Con lấy đúng 66 que tính. Con lấy mấy bó và mấy que rời?
-   → **6 bó và 6 que rời**
+d) Con lấy đúng 82 que tính. Con lấy mấy bó và mấy que rời?
+   → **8 bó và 2 que rời**
+
+e) Con lấy đúng 17 que tính. Con lấy mấy bó và mấy que rời?
+   → **1 bó và 7 que rời**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Có cách nào lấy nhanh hơn là đếm từng que không?
 
@@ -124,23 +121,20 @@ d) Con lấy đúng 66 que tính. Con lấy mấy bó và mấy que rời?
 
 **Đáp án từng việc**
 
-a) 5, 6, 7, 8, … Số tiếp theo là số nào?
-   → **9**
+a) Bơ có 10 quả bóng. Tí có 14 quả. Cả hai bạn có tất cả mấy quả?
+   → **24 quả**
 
-b) Tí có 10 viên bi. Bo có 8 viên. Cả hai bạn có tất cả mấy viên?
-   → **18 viên**
+b) 10, 15, 20, 25, … Số tiếp theo là số nào?
+   → **30**
 
-c) Bo có 4 con vịt. Mai có 9 con. Cả hai bạn có tất cả mấy con?
-   → **13 con**
+c) Nam có 6 cái bánh. Cốm có 11 cái. Cả hai bạn có tất cả mấy cái?
+   → **17 cái**
 
-d) 5, 15, 25, 35, … Số tiếp theo là số nào?
-   → **45**
+d) 1, 11, 21, 31, … Số tiếp theo là số nào?
+   → **41**
 
-e) 6, 7, 8, 9, … Số tiếp theo là số nào?
+e) 2, 4, 6, 8, … Số tiếp theo là số nào?
    → **10**
-
-f) Tèo có 15 cái kẹo. Mai có 6 cái. Cả hai bạn có tất cả mấy cái?
-   → **21 cái**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Đoán thử)*: Con nghĩ dãy này cứ thế mãi thì số thứ mười là số nào?
 
@@ -161,20 +155,17 @@ f) Tèo có 15 cái kẹo. Mai có 6 cái. Cả hai bạn có tất cả mấy c
 
 **Đáp án từng việc**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
-   → **16 que**
+a) 1, 2, 4, …
+   → **8**
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
-   → **10 que**
-
-c) 4, 14, 24, 34, …
+b) 4, 14, 24, 34, …
    → **44**
 
-d) 9, 19, 29, 39, …
-   → **49**
+c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+   → **7 que**
 
-e) 12, 14, 16, 18, …
-   → **20**
+d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
+   → **10 que**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
 

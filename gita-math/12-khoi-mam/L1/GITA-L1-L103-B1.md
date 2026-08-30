@@ -28,58 +28,62 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 68 … 34
+a) Con giơ 5 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 9?
 
-b) Điền dấu >, < hoặc = : 98 … 8
+b) 5 bớt 2 còn mấy?
 
-c) Điền dấu >, < hoặc = : 73 … 52
+c) 3 thêm 3 là mấy?
 
-d) Điền dấu >, < hoặc = : 81 … 15
+d) 10 bớt 4 còn mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Tí có 10 chiếc lá, cho bạn 3 chiếc. Tí còn lại mấy chiếc?
+a) Bo có 10 quả cam, cho bạn 7 quả. Bo còn lại mấy quả?
 
-b) Bo có 1 quyển vở, mẹ cho thêm 4 quyển. Bo có tất cả mấy quyển?
+b) Nam có 1 chiếc lá, mẹ cho thêm 3 chiếc. Nam có tất cả mấy chiếc?
 
-c) Bi có 1 quả bóng, mẹ cho thêm 5 quả. Bi có tất cả mấy quả?
+c) Na có 10 con vịt, cho bạn 9 con. Na còn lại mấy con?
 
-d) Tí có 5 con vịt, cho bạn 2 con. Tí còn lại mấy con?
-
-e) Nam có 1 chiếc lá, mẹ cho thêm 1 chiếc. Nam có tất cả mấy chiếc?
+d) Bơ có 3 cái kẹo, mẹ cho thêm 3 cái. Bơ có tất cả mấy cái?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
-**Từ một phép cộng ra hai phép trừ**
+**Tính nhanh**
 
-a) Từ phép tính 3 + 2 = 5, con viết ra hai phép trừ.
+a) 4 − 2 = …
 
-b) Từ phép tính 3 + 1 = 4, con viết ra hai phép trừ.
+b) 16 + 1 = …
 
-c) Từ phép tính 8 + 2 = 10, con viết ra hai phép trừ.
+c) 2 + 3 = …
 
-d) Từ phép tính 6 + 2 = 8, con viết ra hai phép trừ.
+d) 14 + 2 = …
+
+e) 6 + 1 = …
+
+f) 12 + 2 = …
+
+g) 5 + 2 = …
+
+h) 19 + 1 = …
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 9 + 2 = 11.
+a) 3 con gà có mấy cái chân?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 7 + 4 = 11.
+b) Con có 5 cái kẹo, cho bạn 3 cái. Còn mấy cái?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 9 = 23.
+c) Mẹ nướng 6 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 5 + 7 = 12.
-
-e) Con hãy nghĩ ra một bài toán mà phép tính là 15 + 7 = 22.
+d) Mẹ nướng 7 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
 
 ---
@@ -88,7 +92,7 @@ e) Con hãy nghĩ ra một bài toán mà phép tính là 15 + 7 = 22.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
-- ☐ Từ một phép cộng ra hai phép trừ
-- ☐ Tự đặt một bài toán
+- ☐ Tính nhanh
+- ☐ Đố vui cộng trừ

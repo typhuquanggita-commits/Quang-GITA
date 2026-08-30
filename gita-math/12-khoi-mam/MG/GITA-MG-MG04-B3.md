@@ -30,13 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Nhảy và đếm**
+**Nhìn nhanh — bên nào nhiều hơn**
 
-a) Con gật đầu đúng 5 cái nhé. Đếm to lên.
+a) Cô để 9 con cá bên trái, 2 con cá bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều con hơn?
 
-b) Con giậm chân đúng 2 cái nhé. Đếm to lên.
+b) Cô để 3 viên bi bên trái, 2 viên bi bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều viên hơn?
 
-c) Con nhảy đúng 6 cái nhé. Đếm to lên.
+c) Cô để 2 quả bóng bên trái, 8 quả bóng bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quả hơn?
+
+d) Cô để 4 quyển vở bên trái, 9 quyển vở bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quyển hơn?
 
 
 ## Cùng khám phá · 8 phút
@@ -45,13 +47,11 @@ c) Con nhảy đúng 6 cái nhé. Đếm to lên.
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 6 quyển vở thành hai hàng. Con đếm xem có mấy quyển?
+a) Cô bày 4 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
 
-b) Cô bày 10 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
+b) Cô bày 4 quả bóng thành hàng ngang. Con đếm xem có mấy quả?
 
-c) Cô bày 7 chiếc lá rải lộn xộn. Con đếm xem có mấy chiếc?
-
-d) Cô bày 4 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
+c) Cô bày 5 con vịt thành hai hàng. Con đếm xem có mấy con?
 
 
 ## Tự làm thử · 7 phút
@@ -60,13 +60,13 @@ d) Cô bày 4 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
 
 **Chia vào hai đĩa**
 
-a) Con có 10 viên bi. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
+a) Con có 7 viên bi. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
 
-b) Con có 8 quyển vở. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
+b) Con có 10 viên bi. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
 
-c) Con có 8 con cá. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
+c) Con có 5 chiếc lá. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
 
-d) Con có 9 quả cam. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
+d) Con có 5 quả bóng. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -75,11 +75,11 @@ d) Con có 9 quả cam. Con chia vào hai cái đĩa, mỗi đĩa phải có ít
 
 **Đố vui cuối buổi**
 
-a) Trên đĩa có 4 quyển vở. Con ăn mất 1 quyển. Còn mấy quyển?
+a) Con giơ 3 ngón tay ở bàn tay này. Muốn có đúng 5 ngón thì giơ thêm mấy ngón nữa?
 
-b) Con giơ 4 ngón tay ở bàn tay này. Muốn có đúng 6 ngón thì giơ thêm mấy ngón nữa?
+b) 2 con chim có tất cả mấy cái chân?
 
-c) 4 con chim có tất cả mấy cái chân?
+c) Con giơ 2 ngón tay ở bàn tay này. Muốn có đúng 4 ngón thì giơ thêm mấy ngón nữa?
 
 
 ---
@@ -90,7 +90,7 @@ c) 4 con chim có tất cả mấy cái chân?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Nhảy và đếm | ☐ | ☐ | ☐ |
+| Nhìn nhanh — bên nào nhiều hơn | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Chia vào hai đĩa | ☐ | ☐ | ☐ |
 | Đố vui cuối buổi | ☐ | ☐ | ☐ |

@@ -28,67 +28,77 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Chuyền bóng nhẩm nhanh**
 
-a) Số 813 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Lớp 2A có 29 bạn, lớp 2B ít hơn 5 bạn. Lớp 2B mấy bạn?
 
-b) Tính nhẩm: 500 + 400
+b) Anh có 36 viên bi, em nhiều hơn anh 14 viên. Em có mấy viên?
 
-c) Tính nhẩm: 500 + 400
+c) 40 − 26 = …
 
-d) Số 350 gồm mấy trăm, mấy chục, mấy đơn vị?
+d) 22 + 28 = …
+
+e) Anh có 22 viên bi, em nhiều hơn anh 12 viên. Em có mấy viên?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Vì sao phải nhớ**
 
-a) Tính 37 + 75. Cộng hàng đơn vị trước: 7 + 5 = 12. Vì sao phải nhớ sang hàng chục?
+a) Tính 35 + 62. Cộng hàng đơn vị trước: 5 + 2 = 7. Có phải nhớ sang hàng chục không? Vì sao?
 
-b) Tính 66 + 68. Cộng hàng đơn vị trước: 6 + 8 = 14. Vì sao phải nhớ sang hàng chục?
+b) Tính 56 + 33. Cộng hàng đơn vị trước: 6 + 3 = 9. Có phải nhớ sang hàng chục không? Vì sao?
 
-c) Tính 68 + 48. Cộng hàng đơn vị trước: 8 + 8 = 16. Vì sao phải nhớ sang hàng chục?
+c) Tính 57 + 80. Cộng hàng đơn vị trước: 7 + 0 = 7. Có phải nhớ sang hàng chục không? Vì sao?
 
-d) Tính 63 + 72. Cộng hàng đơn vị trước: 3 + 2 = 5. Vì sao phải nhớ sang hàng chục?
+d) Tính 30 + 17. Cộng hàng đơn vị trước: 0 + 7 = 7. Có phải nhớ sang hàng chục không? Vì sao?
+
+e) Tính 19 + 17. Cộng hàng đơn vị trước: 9 + 7 = 16. Có phải nhớ sang hàng chục không? Vì sao?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Nhiều hơn, ít hơn một số đơn vị**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Tí có 73 bông hoa. Na có ít hơn Tí 6 bông. Hỏi Na có mấy bông?
+a) Bạn Cốm có 236 quyển sách. Bạn Bơ có nhiều hơn bạn Cốm 80 quyển sách. Bạn Bơ có bao nhiêu quyển sách?
 
-b) Tí có 76 quả bóng. Bo có nhiều hơn Tí 19 quả. Hỏi Bo có mấy quả?
+b) Bạn Bo có 154 con tem. Bạn Tí có ít hơn bạn Bo 50 con tem. Bạn Tí có bao nhiêu con tem?
 
-c) Bơ có 45 con cá. Nam có ít hơn Bơ 14 con. Hỏi Nam có mấy con?
+c) Bạn Cốm có 345 viên bi. Bạn Na có ít hơn bạn Cốm 170 viên bi. Bạn Na có bao nhiêu viên bi?
 
-d) Bi có 21 bông hoa. Tí có nhiều hơn Bi 4 bông. Hỏi Tí có mấy bông?
-
-e) Tèo có 73 con cá. Cốm có ít hơn Tèo 18 con. Hỏi Cốm có mấy con?
+d) Bạn Tí có 270 con tem. Bạn Bi có nhiều hơn bạn Tí 150 con tem. Bạn Bi có bao nhiêu con tem?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bài toán nhân, chia**
+**Nhiều hơn, ít hơn một số đơn vị**
 
-a) Mỗi hộp có 5 quả cam. Hỏi 9 hộp có mấy quả?
+a) Tí có 46 con vịt. Cốm có ít hơn Tí 3 con. Hỏi Cốm có mấy con?
 
-b) Có 14 cái bánh chia đều vào 2 hộp. Mỗi hộp có mấy cái?
+b) Mai có 73 cái bánh. An có nhiều hơn Mai 9 cái. Hỏi An có mấy cái?
 
-c) Mỗi hộp có 2 chiếc lá. Hỏi 2 hộp có mấy chiếc?
+c) Bo có 58 bông hoa. An có ít hơn Bo 10 bông. Hỏi An có mấy bông?
 
-d) Có 30 cái kẹo chia đều vào 5 hộp. Mỗi hộp có mấy cái?
+d) Tèo có 25 quyển vở. An có nhiều hơn Tèo 4 quyển. Hỏi An có mấy quyển?
+
+e) An có 30 cái kẹo. Bo có nhiều hơn An 5 cái. Hỏi Bo có mấy cái?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đọc biểu đồ tranh**
 
-a) Một bạn tính 42 + 86 = 137. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) - chuối: 🍎🍎🍎🍎🍎🍎🍎  (7 quả)
+- xoài: 🍎🍎🍎🍎🍎🍎🍎🍎  (8 quả)
+- cam: 🍎🍎🍎  (3 quả)
 
-b) Một bạn tính 16 + 44 = 50. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+Loại quả nào nhiều nhất?
 
-c) Một bạn tính 25 + 52 = 86. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Loại quả nào ít nhất?
+
+c) Xoài nhiều hơn cam mấy quả?
+
+d) Tất cả có mấy quả?
 
 
 ---
@@ -97,8 +107,8 @@ c) Một bạn tính 25 + 52 = 86. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
+- ☐ Chuyền bóng nhẩm nhanh
 - ☐ Vì sao phải nhớ
+- ☐ Bài toán nhiều hơn – ít hơn
 - ☐ Nhiều hơn, ít hơn một số đơn vị
-- ☐ Bài toán nhân, chia
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Đọc biểu đồ tranh

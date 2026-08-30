@@ -28,58 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**Kể một bài toán bằng miệng**
 
-a) Điền dấu >, < hoặc = : 19 … 1
+a) Cô để 4 quả bóng, bạn Cốm đưa thêm 1 quả. Con kể lại thành một câu chuyện có số.
 
-b) Điền dấu >, < hoặc = : 17 … 2
+b) Cô để 3 quả bóng ra bàn rồi cất đi 1 quả. Con kể lại thành một câu chuyện có số.
 
-c) Điền dấu >, < hoặc = : 12 … 4
+c) Cô để 8 quả bóng, bạn Tí đưa thêm 4 quả. Con kể lại thành một câu chuyện có số.
 
-d) Điền dấu >, < hoặc = : 15 … 16
-
-e) Điền dấu >, < hoặc = : 11 … 1
+d) Cô để 4 quả bóng, bạn Bi đưa thêm 2 quả. Con kể lại thành một câu chuyện có số.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 81 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 24 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 41 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 94 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 66 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 99 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 99 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 52 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) 11, 13, 15, 17, … Số tiếp theo là số nào?
+a) An có 17 con cá. Bo có 4 con. Cả hai bạn có tất cả mấy con?
 
-b) Tèo có 11 chiếc lá. Bơ có 8 chiếc. Cả hai bạn có tất cả mấy chiếc?
+b) 5, 6, 7, 8, … Số tiếp theo là số nào?
 
-c) Bo có 19 chiếc lá. Na có 10 chiếc. Cả hai bạn có tất cả mấy chiếc?
+c) An có 18 quả bóng. Bo có 14 quả. Cả hai bạn có tất cả mấy quả?
 
-d) 9, 11, 13, 15, … Số tiếp theo là số nào?
+d) 17, 19, 21, 23, … Số tiếp theo là số nào?
 
-e) 11, 16, 21, 26, … Số tiếp theo là số nào?
-
-f) Tí có 15 bông hoa. Tèo có 4 bông. Cả hai bạn có tất cả mấy bông?
+e) 8, 18, 28, 38, … Số tiếp theo là số nào?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tự đặt một bài toán**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 5 = 1.
+a) Con hãy nghĩ ra một bài toán mà phép tính là 7 − 6 = 1.
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 10 + 8 = 18.
+b) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 9 = 3.
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 5 = 9.
+c) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 7 = 2.
+
+d) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 6 = 8.
+
+e) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 5 = 9.
 
 
 ---
@@ -88,7 +88,7 @@ c) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 5 = 9.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ Kể một bài toán bằng miệng
 - ☐ Lấy đúng số que tính
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tự đặt một bài toán

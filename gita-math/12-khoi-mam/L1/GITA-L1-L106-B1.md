@@ -30,56 +30,50 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Các thứ trong tuần**
 
-a) Ngày thứ 1 của tuần là thứ mấy?
+a) Hôm nay là thứ Bảy. Hôm qua là thứ mấy?
 
-b) Ngày thứ 1 của tuần là thứ mấy?
+b) Hôm nay là thứ Tư. Hôm qua là thứ mấy?
 
-c) Hôm nay là thứ Tư. Hôm qua là thứ mấy?
+c) Hôm nay là Chủ nhật. Hôm qua là thứ mấy?
 
-d) Hôm nay là thứ Hai. Ngày mai là thứ mấy?
+d) Ngày thứ 4 của tuần là thứ mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Đo độ dài và xem giờ đúng**
 
-a) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ?
+a) Đoạn thẳng dài 12 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
-b) Đoạn thẳng dài 11 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+b) Kim ngắn chỉ số 7, kim dài chỉ số 12. Mấy giờ?
 
-c) Đoạn thẳng dài 12 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+c) Kim ngắn chỉ số 11, kim dài chỉ số 12. Mấy giờ?
 
-d) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ?
-
-e) Kim ngắn chỉ số 2, kim dài chỉ số 12. Mấy giờ?
-
-f) Đoạn thẳng dài 9 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+d) Đoạn thẳng dài 3 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Viết số: 6 mươi 3
+a) Vẽ một đoạn thẳng dài 12 cm.
 
-b) Vẽ một đoạn thẳng dài 6 cm.
+b) Viết số: 7 mươi 7
 
 c) Trong hình có mấy đoạn thẳng?
 
-d) Trong hình có mấy đoạn thẳng?
-
-e) Vẽ một đoạn thẳng dài 13 cm.
+d) Viết số: 9 mươi 8
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Đếm hình trong hình ghép**
+**Đố vui đo và xem giờ**
 
-a) Trong hình bên có mấy hình tròn?
+a) Con đoán bàn chân của con dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-b) Trong hình bên có mấy hình tròn?
+b) Con đoán quyển vở dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-c) Trong hình bên có mấy hình tròn?
+c) Kim ngắn chỉ số 12, kim dài chỉ số 12. Mấy giờ rồi? Giờ ấy nhà con thường làm gì?
 
 
 ---
@@ -91,4 +85,4 @@ c) Trong hình bên có mấy hình tròn?
 - ☐ Các thứ trong tuần
 - ☐ Đo độ dài và xem giờ đúng
 - ☐ Vẽ, đo và viết số
-- ☐ Đếm hình trong hình ghép
+- ☐ Đố vui đo và xem giờ

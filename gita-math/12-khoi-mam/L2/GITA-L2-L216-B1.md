@@ -28,24 +28,22 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Khảo sát chớp nhoáng**
 
-a) Tính nhẩm: 600 + 100
+a) Bạn nào có em thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-b) Số 934 gồm mấy trăm, mấy chục, mấy đơn vị?
+b) Bạn nào thích ăn phở hơn ăn bún thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-c) Số 107 gồm mấy trăm, mấy chục, mấy đơn vị?
+c) Con cá biết trèo cây — chắc chắn, có thể hay không thể?
 
-d) Tính nhẩm: 600 + 100
-
-e) Tính nhẩm: 200 + 400
+d) Ngày mai mặt trời mọc ở hướng đông — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
-**Kiểm đếm về phương tiện đi học**
+**Kiểm đếm về món ăn sáng của các bạn**
 
-a) Con đi hỏi và kiểm đếm về phương tiện đi học. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về món ăn sáng của các bạn. Ghi vào bảng.
 
 b) Loại nào nhiều nhất trong bảng của con?
 
@@ -56,47 +54,51 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Đổi đơn vị và tính trên số đo**
+**Đọc bảng số liệu và đoán khả năng**
 
-a) Điền dấu >, < hoặc = : 3 dm … 93 cm
+a) Lớp 2A khảo sát cách đi học. Kết quả: xe buýt: 6 bạn · đi bộ: 10 bạn · xe đạp: 3 bạn. Cách nào nhiều bạn chọn nhất?
 
-b) 6 km = … m
+b) Cách nào ít bạn chọn nhất?
 
-c) 25 cm + 7 cm = … cm
+c) Đi bộ nhiều hơn xe đạp bao nhiêu bạn?
 
-d) Điền dấu >, < hoặc = : 3 dm … 17 cm
+d) Lớp khảo sát tất cả bao nhiêu bạn?
 
-e) 7 dm = … cm
+e) Rút một bạn bất kỳ trong lớp, bạn ấy đi học bằng đi bộ — chắc chắn, có thể hay không thể?
+
+f) Rút một bạn bất kỳ, bạn ấy đi học bằng máy bay — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đổi đơn vị và tính trên số đo**
 
-a) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+a) 7 cm + 40 cm = … cm
 
-b) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+b) Điền dấu >, < hoặc = : 1 dm … 29 cm
 
-c) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+c) 3 m = … dm
 
-d) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+d) 31 cm + 25 cm = … cm
 
-e) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+e) Điền dấu >, < hoặc = : 5 dm … 79 cm
 
-f) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+f) 6 m = … dm
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Chắc chắn, có thể, không thể**
 
-a) Một bạn tính 37 + 51 = 97. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
 
-b) Một bạn tính 15 + 62 = 86. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
 
-c) Một bạn tính 42 + 37 = 88. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
 
-d) Một bạn tính 26 + 65 = 81. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+
+e) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
 
 
 ---
@@ -105,8 +107,8 @@ d) Một bạn tính 26 + 65 = 81. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
-- ☐ Kiểm đếm về phương tiện đi học
+- ☐ Khảo sát chớp nhoáng
+- ☐ Kiểm đếm về món ăn sáng của các bạn
+- ☐ Đọc bảng số liệu và đoán khả năng
 - ☐ Đổi đơn vị và tính trên số đo
 - ☐ Chắc chắn, có thể, không thể
-- ☐ Tìm chỗ sai giúp bạn

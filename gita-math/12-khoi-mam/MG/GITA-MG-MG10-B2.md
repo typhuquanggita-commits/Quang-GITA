@@ -30,17 +30,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Vỗ tay theo nhịp rồi bước đo**
 
-a) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+a) Cô làm mẫu: vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-b) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+b) Cô làm mẫu: vỗ tay – vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-c) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
-
-d) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
-
-e) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+c) Con bước chân nối gót đi hết chiều dài cái bàn. Đếm to xem mấy bước.
 
 
 ## Cùng khám phá · 8 phút
@@ -49,13 +45,13 @@ e) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ 
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 9 bông hoa rải lộn xộn. Con đếm xem có mấy bông?
+a) Cô bày 6 chiếc lá thành vòng tròn. Con đếm xem có mấy chiếc?
 
-b) Cô bày 9 chiếc lá thành vòng tròn. Con đếm xem có mấy chiếc?
+b) Cô bày 8 con cá thành hàng ngang. Con đếm xem có mấy con?
 
-c) Cô bày 7 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
+c) Cô bày 5 cái kẹo thành hàng ngang. Con đếm xem có mấy cái?
 
-d) Cô bày 4 con vịt thành vòng tròn. Con đếm xem có mấy con?
+d) Cô bày 6 viên bi thành hai hàng. Con đếm xem có mấy viên?
 
 
 ## Tự làm thử · 7 phút
@@ -64,13 +60,13 @@ d) Cô bày 4 con vịt thành vòng tròn. Con đếm xem có mấy con?
 
 **Điền vào ô trống**
 
-a) đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
+a) vàng – xanh – vàng – xanh – … – xanh . Ô trống là màu gì?
 
-b) vàng – đỏ – … – đỏ – vàng . Ô trống là màu gì?
+b) đỏ – xanh – đỏ – … – đỏ . Ô trống là màu gì?
 
-c) đỏ – xanh – đỏ – … – đỏ – xanh . Ô trống là màu gì?
+c) đỏ – vàng – … – vàng – đỏ – vàng . Ô trống là màu gì?
 
-d) vàng – đỏ – vàng – … – vàng – đỏ – vàng . Ô trống là màu gì?
+d) vàng – xanh – vàng – … – vàng . Ô trống là màu gì?
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -79,13 +75,11 @@ d) vàng – đỏ – vàng – … – vàng – đỏ – vàng . Ô trống 
 
 **Đố vui cuối buổi**
 
-a) 4 con vịt có tất cả mấy cái chân?
+a) Con giơ 4 ngón tay ở bàn tay này. Muốn có đúng 6 ngón thì giơ thêm mấy ngón nữa?
 
-b) Con giơ 2 ngón tay ở bàn tay này. Muốn có đúng 4 ngón thì giơ thêm mấy ngón nữa?
+b) Con giơ 1 ngón tay ở bàn tay này. Muốn có đúng 3 ngón thì giơ thêm mấy ngón nữa?
 
-c) Trên đĩa có 6 viên bi. Con ăn mất 1 viên. Còn mấy viên?
-
-d) Con giơ 4 ngón tay ở bàn tay này. Muốn có đúng 6 ngón thì giơ thêm mấy ngón nữa?
+c) Con giơ 3 ngón tay ở bàn tay này. Muốn có đúng 5 ngón thì giơ thêm mấy ngón nữa?
 
 
 ---
@@ -96,7 +90,7 @@ d) Con giơ 4 ngón tay ở bàn tay này. Muốn có đúng 6 ngón thì giơ t
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Vỗ tay theo nhịp rồi bước đo | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Điền vào ô trống | ☐ | ☐ | ☐ |
 | Đố vui cuối buổi | ☐ | ☐ | ☐ |

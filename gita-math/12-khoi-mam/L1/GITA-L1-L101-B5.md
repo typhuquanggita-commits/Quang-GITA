@@ -30,58 +30,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **So sánh số trong phạm vi 20**
 
-a) Điền dấu >, < hoặc = : 18 … 1
+a) Điền dấu >, < hoặc = : 10 … 3
 
-b) Điền dấu >, < hoặc = : 18 … 12
+b) Điền dấu >, < hoặc = : 19 … 11
 
-c) Điền dấu >, < hoặc = : 19 … 4
+c) Điền dấu >, < hoặc = : 16 … 20
 
-d) Điền dấu >, < hoặc = : 16 … 5
+d) Điền dấu >, < hoặc = : 1 … 10
 
-e) Điền dấu >, < hoặc = : 8 … 7
+e) Điền dấu >, < hoặc = : 9 … 17
+
+f) Điền dấu >, < hoặc = : 5 … 7
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 83 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 72 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 25 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 34 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 80 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 96 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 90 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 83 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) 5 + … = 9
+a) … + 2 = 10
 
-b) … + 4 = 7
+b) 3 + … = 5
 
-c) 6 + … = 7
+c) … + 4 = 9
 
-d) … + 1 = 10
-
-e) … + 1 = 10
+d) 4 + … = 9
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
+a) 32 và 70: số nào lớn hơn?
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
+b) Số bí mật có 5 chục và 1 đơn vị. Số ấy là số nào?
 
-c) 10, 20, 30, 40, …
-
-d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
-
-e) 2, 4, 8, …
+c) Số bí mật đứng liền sau 91 và liền trước 93. Số nào?
 
 
 ---
@@ -93,4 +89,4 @@ e) 2, 4, 8, …
 - ☐ So sánh số trong phạm vi 20
 - ☐ Lấy đúng số que tính
 - ☐ Tìm số còn thiếu
-- ☐ Tìm quy luật
+- ☐ Số bí mật

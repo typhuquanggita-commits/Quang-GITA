@@ -42,7 +42,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Chỗ trống để trẻ đứng dậy vận động
+- Chỗ trống để trẻ đi được vài bước
 - Một rổ đồ vật khác nhau về màu, hình, cỡ
 - Bút chì màu
 - Hột hạt hoặc khối gỗ nhiều màu
@@ -51,28 +51,28 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## Chơi khởi động
 
-**Nhảy và đếm**
+**Vỗ tay theo nhịp rồi bước đo**
 
-> **Cô/mẹ đọc lên:** Mình chơi trò làm theo số nhé. Cô nói số mấy thì con làm đúng chừng ấy lần, vừa làm vừa đếm to.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng nhịp nhé. Cô làm trước, con nhìn cho kỹ rồi làm tiếp đúng như thế.
 
 **Đáp án từng việc**
 
-a) Con gật đầu đúng 3 cái nhé. Đếm to lên.
-   → **3**
+a) Cô làm mẫu: vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 2 động tác của một lượt, theo đúng thứ tự**
 
-b) Con giậm chân đúng 7 cái nhé. Đếm to lên.
-   → **7**
+b) Cô làm mẫu: vỗ tay – vỗ tay – giậm chân. Lặp lại 3 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 3 động tác của một lượt, theo đúng thứ tự**
 
-c) Con bước lên phía trước đúng 4 bước nhé. Đếm to lên.
-   → **4**
+c) Con bước chân nối gót đi hết chiều dài tấm thảm. Đếm to xem mấy bước.
+   → **số bước trẻ đếm được — ghi lại để buổi sau đo lại**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Sau giậm chân thì đến cái gì? Vì sao con đoán được?
 
-**Thế nào là con đã hiểu:** Trẻ dừng đúng lúc đếm tới số được yêu cầu, không nhảy thêm vì quán tính. Đếm để **điều khiển hành động** là bước tiến so với chỉ đọc thuộc dãy số.
+**Thế nào là con đã hiểu:** Trẻ làm tiếp đúng thứ tự mà không cần cô nhắc. Quy luật bằng **âm thanh và động tác** dễ nắm hơn quy luật bằng hình vẽ, nên đây là cửa vào tốt cho chủ đề quy luật.
 
-**Con tắc thì làm gì:** Đếm cùng trẻ, vỗ tay theo nhịp. Giảm xuống số nhỏ hơn 5.
+**Con tắc thì làm gì:** Rút nhịp xuống hai động tác và làm chậm lại. Đọc to tên động tác khi làm.
 
-**Nếu con làm nhanh:** Đếm ngược: nhảy 5 cái rồi đếm 5, 4, 3, 2, 1.
+**Nếu con làm nhanh:** Cho trẻ nghĩ ra nhịp rồi người lớn làm theo — trẻ sẽ tự kiểm tra xem người lớn có làm đúng không.
 
 
 ---
@@ -85,14 +85,17 @@ c) Con bước lên phía trước đúng 4 bước nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
+a) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở màu sắc là đúng**
+
+b) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở hình dạng là đúng**
+
+c) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
    → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở kích thước là đúng**
 
-b) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
+d) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
    → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở loại đồ vật là đúng**
-
-c) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấy nhóm?
-   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở hình dạng là đúng**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Có cách xếp nào khác không? Cùng số đồ này mà xếp kiểu khác được không?
 
@@ -116,14 +119,11 @@ c) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấ
 a) Con nối mỗi con vật với cái chuồng của nó.
    → **nối đủ đôi một**
 
-b) Con tô màu hình tròn.
-   → **chỉ tô hình tròn**
+b) Con khoanh tròn nhóm có nhiều hơn.
+   → **nhóm nhiều hơn**
 
 c) Con khoanh vào vật ở giữa hàng.
    → **vật chính giữa**
-
-d) Con gạch bỏ vật không cùng nhóm.
-   → **vật khác loại**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con kiểm lại xem có bỏ sót cái nào không?
 
@@ -144,14 +144,14 @@ d) Con gạch bỏ vật không cùng nhóm.
 
 **Đáp án từng việc**
 
-a) trắng – đỏ – trắng – đỏ – … Con đoán xem tiếp theo là màu gì?
+a) đỏ – vàng – đỏ – vàng – … Con đoán xem tiếp theo là màu gì?
+   → **đỏ**
+
+b) trắng – xanh – trắng – xanh – trắng – xanh – … Con đoán xem tiếp theo là màu gì?
    → **trắng**
 
-b) trắng – vàng – xanh – trắng – vàng – xanh – … Con đoán xem tiếp theo là màu gì?
+c) trắng – đỏ – trắng – đỏ – trắng – đỏ – … Con đoán xem tiếp theo là màu gì?
    → **trắng**
-
-c) vàng – trắng – vàng – trắng – vàng – trắng – … Con đoán xem tiếp theo là màu gì?
-   → **vàng**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Vì sao con đoán là màu đó? Con nói quy luật thành một câu xem.
 

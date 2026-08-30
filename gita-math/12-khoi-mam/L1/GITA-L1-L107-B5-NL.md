@@ -47,32 +47,32 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính rời
 - Thước có vạch xăng-ti-mét
 - Bút chì
-- Que tính để xếp hình
+- Bảng số từ 1 đến 100 (nếu có)
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**So sánh số trong phạm vi 20**
 
 > **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 9 … 7
-   → **>**
-
-b) Điền dấu >, < hoặc = : 1 … 7
+a) Điền dấu >, < hoặc = : 2 … 8
    → **<**
 
-c) Điền dấu >, < hoặc = : 4 … 8
+b) Điền dấu >, < hoặc = : 2 … 7
    → **<**
 
-d) Điền dấu >, < hoặc = : 10 … 5
+c) Điền dấu >, < hoặc = : 17 … 16
    → **>**
 
-e) Điền dấu >, < hoặc = : 3 … 2
-   → **>**
+d) Điền dấu >, < hoặc = : 1 … 4
+   → **<**
+
+e) Điền dấu >, < hoặc = : 6 … 13
+   → **<**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
 
@@ -93,20 +93,20 @@ e) Điền dấu >, < hoặc = : 3 … 2
 
 **Đáp án từng việc**
 
-a) Số 78 gồm mấy chục và mấy đơn vị?
-   → **7 chục và 8 đơn vị**
+a) Số 20 gồm mấy chục và mấy đơn vị?
+   → **2 chục và 0 đơn vị**
 
-b) Số 69 gồm mấy chục và mấy đơn vị?
-   → **6 chục và 9 đơn vị**
+b) Số 73 gồm mấy chục và mấy đơn vị?
+   → **7 chục và 3 đơn vị**
 
-c) Số 32 gồm mấy chục và mấy đơn vị?
-   → **3 chục và 2 đơn vị**
+c) Số 42 gồm mấy chục và mấy đơn vị?
+   → **4 chục và 2 đơn vị**
 
-d) Số 46 gồm mấy chục và mấy đơn vị?
-   → **4 chục và 6 đơn vị**
+d) Số 61 gồm mấy chục và mấy đơn vị?
+   → **6 chục và 1 đơn vị**
 
-e) Số 14 gồm mấy chục và mấy đơn vị?
-   → **1 chục và 4 đơn vị**
+e) Số 45 gồm mấy chục và mấy đơn vị?
+   → **4 chục và 5 đơn vị**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Số nào cũng tách được thành chục và đơn vị à?
 
@@ -127,23 +127,17 @@ e) Số 14 gồm mấy chục và mấy đơn vị?
 
 **Đáp án từng việc**
 
-a) Trong hình có mấy đoạn thẳng?
-   → **5 đoạn thẳng**
+a) Viết số: 6 mươi 6
+   → **66**
 
-b) Vẽ một đoạn thẳng dài 13 cm.
-   → **13 cm**
+b) Trong hình có mấy đoạn thẳng?
+   → **6 đoạn thẳng**
 
-c) Viết số: 8 mươi 2
-   → **82**
+c) Vẽ một đoạn thẳng dài 3 cm.
+   → **3 cm**
 
-d) Trong hình có mấy đoạn thẳng?
-   → **5 đoạn thẳng**
-
-e) Viết số: 2 mươi
-   → **20**
-
-f) Vẽ một đoạn thẳng dài 9 cm.
-   → **9 cm**
+d) Vẽ một đoạn thẳng dài 14 cm.
+   → **14 cm**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Con đo lại đoạn vừa vẽ xem có đúng chừng ấy không?
 
@@ -158,34 +152,28 @@ f) Vẽ một đoạn thẳng dài 9 cm.
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Số bí mật**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.
 
 **Đáp án từng việc**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
-   → **16 que**
+a) Số bí mật có 5 chục và 7 đơn vị. Số ấy là số nào?
+   → **57**
 
-b) 4, 9, 14, 19, …
-   → **24**
+b) 16 và 53: số nào lớn hơn?
+   → **53**
 
-c) 2, 5, 8, 11, …
-   → **14**
+c) Số bí mật có 5 chục và 5 đơn vị. Số ấy là số nào?
+   → **55**
 
-d) 7, 9, 11, 13, …
-   → **15**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng đơn vị trước?
 
-e) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
-   → **10 que**
+**Thế nào là con đã hiểu:** Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn hơn 40 vì 9 lớn hơn 0.
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+**Con tắc thì làm gì:** Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
-
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Nếu con làm nhanh:** Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói 'lớn hơn' hoặc 'bé hơn'.
 
 
 ---

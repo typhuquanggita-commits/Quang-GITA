@@ -28,58 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 3 … 10
+a) Đếm tiếp cho cô: 2 , 4 , 6 , 8 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 8 … 3
+b) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 10 … 9
+c) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
 
-d) Điền dấu >, < hoặc = : 4 … 6
-
-e) Điền dấu >, < hoặc = : 8 … 3
+d) Đếm từ 40 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Cộng trừ số tròn chục**
 
-a) 60 + 30 = …
+a) 40 − 30 = …
 
-b) 60 − 50 = …
+b) 60 + 10 = …
 
-c) 90 − 40 = …
+c) 80 − 30 = …
 
-d) 50 + 20 = …
+d) 80 + 10 = …
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) Cốm có 19 viên bi. An có 16 viên. Cả hai bạn có tất cả mấy viên?
+a) 4, 5, 6, 7, … Số tiếp theo là số nào?
 
-b) 9, 14, 19, 24, … Số tiếp theo là số nào?
+b) Bo có 13 cái kẹo. Tí có 19 cái. Cả hai bạn có tất cả mấy cái?
 
-c) 19, 24, 29, 34, … Số tiếp theo là số nào?
+c) 7, 12, 17, 22, … Số tiếp theo là số nào?
 
-d) Bi có 20 quả cam. Mai có 2 quả. Cả hai bạn có tất cả mấy quả?
+d) Bơ có 6 bông hoa. Tí có 11 bông. Cả hai bạn có tất cả mấy bông?
 
-e) 12, 13, 14, 15, … Số tiếp theo là số nào?
+e) 15, 25, 35, 45, … Số tiếp theo là số nào?
+
+f) Bi có 15 quả bóng. Na có 11 quả. Cả hai bạn có tất cả mấy quả?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tìm quy luật**
 
-a) 1, 2, 4, …
+a) 2, 4, 8, …
 
-b) 1, 4, 7, 10, …
+b) 1, 2, 4, …
 
 c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
 
-d) 8, 13, 18, 23, …
+d) 12, 22, 32, 42, …
 
 
 ---
@@ -88,7 +88,7 @@ d) 8, 13, 18, 23, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Đếm nối tiếp theo bước
 - ☐ Cộng trừ số tròn chục
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tìm quy luật

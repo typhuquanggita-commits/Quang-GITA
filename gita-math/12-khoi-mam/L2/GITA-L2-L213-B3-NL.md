@@ -41,43 +41,42 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính xếp thành nhóm bằng nhau
+- Thước dây hoặc thước mét
+- Cân nhà bếp
+- Đồng hồ kim
 - Thước mét
 - Cân đĩa
 - Mô hình đồng hồ
 - Bảng đơn vị đo độ dài
-- Giấy kẻ ô để vẽ biểu đồ tranh
-- Một hộp bi có bi hai màu để thử thật
+- Thước có vạch cm và dm
+- Ca đong 1 lít
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Bảng nhân, bảng chia 2 và 5**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-> **Cô/mẹ đọc lên:** Con đọc to bảng nhân một lượt trước khi làm.
+> **Cô/mẹ đọc lên:** Khởi động bằng trò đoán. Chưa đo vội, cứ đoán trước đã.
 
 **Đáp án từng việc**
 
-a) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5
-   → **5 × 8 = 40**
+a) Con đoán chiều dài cái bảng khoảng bao nhiêu?
+   → **khoảng 3 đến 4 m**
 
-b) 10 : 2 = …
-   → **5**
+b) Con đoán cặp sách của con nặng khoảng bao nhiêu?
+   → **khoảng 2 đến 3 kg**
 
-c) 5 × 10 = …
-   → **50**
+c) Kim ngắn qua số 4, kim dài chỉ số 12. Mấy giờ?
+   → **4 giờ**
 
-d) Viết phép nhân thay cho phép cộng: 5
-   → **5 × 1 = 5**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con lấy gì làm mốc để đoán? Con so với cái gì mà con biết sẵn?
 
-**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Con biết 2 × 6 rồi. Vậy 6 × 2 bằng mấy? Có phải lúc nào cũng thế không?
+**Thế nào là con đã hiểu:** Trẻ nêu được **mốc so sánh**: 'cao bằng hai lần con' hoặc 'nặng bằng chai nước'. Ước lượng có mốc thì mới là ước lượng, đoán bừa thì không.
 
-**Thế nào là con đã hiểu:** Trẻ hiểu phép nhân là cộng các số hạng bằng nhau, và dùng được phép nhân đã thuộc để suy ra phép chia tương ứng.
+**Con tắc thì làm gì:** Cho trẻ cầm vật nặng 1 kg và nhìn đoạn dài 1 m trước, lấy đó làm mốc.
 
-**Con tắc thì làm gì:** Xếp que tính thành từng nhóm rồi đếm — thấy được mới nhớ được.
-
-**Nếu con làm nhanh:** Hỏi 2 × 11, một phép ngoài bảng, xem trẻ có tự cộng thêm 2 không.
+**Nếu con làm nhanh:** Đoán rồi đo ngay, ghi hai số cạnh nhau xem lệch bao nhiêu.
 
 
 ---
@@ -90,17 +89,17 @@ d) Viết phép nhân thay cho phép cộng: 5
 
 **Đáp án từng việc**
 
-a) Kim ngắn chỉ số 1, kim dài chỉ số 12. Mấy giờ?
-   → **1 giờ**
+a) Kim ngắn ở giữa số 2 và số 3, kim dài chỉ số 6. Mấy giờ?
+   → **2 giờ 30 phút**
 
-b) 3 dm = … cm
-   → **30 cm**
+b) Bao gạo nặng 7 kg, bao ngô nặng 17 kg. Cả hai bao nặng mấy ki-lô-gam?
+   → **24 kg**
 
-c) Bao gạo nặng 16 kg, bao ngô nặng 5 kg. Cả hai bao nặng mấy ki-lô-gam?
-   → **21 kg**
-
-d) 8 dm = … cm
+c) 8 dm = … cm
    → **80 cm**
+
+d) 5 dm = … cm
+   → **50 cm**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán cái bàn này dài khoảng mấy đề-xi-mét? Đoán xong rồi mình đo thử xem gần chưa.
 
@@ -121,20 +120,17 @@ d) 8 dm = … cm
 
 **Đáp án từng việc**
 
-a) 6 m = … cm
-   → **600 cm**
+a) 30 cm + 8 cm = … cm
+   → **38 cm**
 
-b) Điền dấu >, < hoặc = : 8 dm … 54 cm
-   → **>**
-
-c) 11 cm + 33 cm = … cm
-   → **44 cm**
-
-d) 23 cm + 9 cm = … cm
-   → **32 cm**
-
-e) Điền dấu >, < hoặc = : 2 dm … 32 cm
+b) Điền dấu >, < hoặc = : 1 dm … 38 cm
    → **<**
+
+c) 5 m = … dm
+   → **50 dm**
+
+d) 1 km = … m
+   → **1 000 m**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Vì sao không so thẳng 5 với 40 được?
 
@@ -149,68 +145,62 @@ e) Điền dấu >, < hoặc = : 2 dm … 32 cm
 
 ## PHẦN D — Bài toán có lời văn
 
-**Bảng kiểm đếm và biểu đồ tranh**
+**Tính với số đo**
 
-> **Cô/mẹ đọc lên:** Con đọc kỹ bảng trước khi trả lời. Mỗi câu hỏi hỏi một điều khác nhau.
+> **Cô/mẹ đọc lên:** Tính với số đo cũng như tính với số thường, chỉ khác là **viết kèm đơn vị** vào sau kết quả.
 
 **Đáp án từng việc**
 
-a) Bảng kiểm đếm: quả cam: 8 · quả chuối: 9 · quả xoài: 8. Loại nào nhiều nhất?
-   → **quả chuối**
+a) Băng giấy dài 71 cm, cắt đi 45 cm. Còn lại dài bao nhiêu?
+   → **26 cm**
 
-b) Loại nào ít nhất?
-   → **quả cam**
+b) 33 kg + 6 kg = …
+   → **39 kg**
 
-c) Có tất cả bao nhiêu quả?
-   → **25**
+c) 2 kg = … g
+   → **2 000 g**
 
-d) Quả chuối nhiều hơn quả cam mấy quả?
-   → **1**
+d) Bạn Nam bắt đầu học lúc 3 giờ, học 2 tiếng thì xong. Xong lúc mấy giờ?
+   → **5 giờ**
 
-**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Nhìn bảng này con thấy điều gì đáng chú ý? Con kể cho cô nghe.
+e) Băng giấy dài 47 cm, cắt đi 13 cm. Còn lại dài bao nhiêu?
+   → **34 cm**
 
-**Thế nào là con đã hiểu:** Trẻ trả lời đúng câu hỏi được hỏi, không đọc bừa một con số trong bảng. Đây là lỗi mất điểm phổ biến nhất của cả mạch Thống kê ở tiểu học.
+**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Nói cho người khác tin)*: Cộng 20 cm với 3 dm được không? Phải làm gì trước đã?
 
-**Con tắc thì làm gì:** Che bớt các cột chưa cần, chỉ để lại cột đang hỏi.
+**Thế nào là con đã hiểu:** Trẻ viết đơn vị vào kết quả mà không cần nhắc, và biết phải **đưa về cùng đơn vị** trước khi cộng. Bỏ quên đơn vị là lỗi trừ điểm nhiều nhất của lớp 2.
 
-**Nếu con làm nhanh:** Cho trẻ tự đi kiểm đếm một thứ có thật trong nhà rồi vẽ biểu đồ.
+**Con tắc thì làm gì:** Đo thật bằng thước rồi mới tính, để trẻ thấy con số gắn với vật thật.
+
+**Nếu con làm nhanh:** Cho cộng hai số đo khác đơn vị — trẻ phải tự nhận ra chỗ vướng.
 
 
 ---
 
 ## PHẦN E — Thử thách vui
 
-**Chắc chắn, có thể, không thể**
+**Đố vui đo lường và giờ**
 
-> **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi thôi, toàn thứ mình vừa học xong.
 
 **Đáp án từng việc**
 
-a) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
-   → **không thể**
+a) Bây giờ là 1 giờ. 1 tiếng nữa là mấy giờ?
+   → **2 giờ**
 
-b) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
-   → **có thể**
+b) 7 m bằng bao nhiêu dm?
+   → **70 dm**
 
-c) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+c) 4 kg bằng bao nhiêu gam?
+   → **4 000 g**
 
-d) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Nói cho người khác tin)*: Đổi từ m sang dm thì số to lên hay bé đi? Vì sao?
 
-e) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
-   → **có thể**
+**Thế nào là con đã hiểu:** Trẻ nói được vì sao số to lên khi đổi sang đơn vị nhỏ hơn: **đơn vị nhỏ thì cần nhiều cái hơn** để đo cùng một đoạn. Nhớ quy tắc mà không hiểu chỗ này thì đến lớp 4 sẽ đổi ngược.
 
-f) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
-   → **có thể**
+**Con tắc thì làm gì:** Lấy thước mét ra đếm thật: 1 m có mấy đoạn 1 dm.
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
-
-**Thế nào là con đã hiểu:** Trẻ phân biệt được “không thể” với “khó xảy ra”. Đây là chỗ nhầm nhiều nhất, và cũng là gốc của khái niệm xác suất sau này.
-
-**Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
+**Nếu con làm nhanh:** Hỏi 1 kg và 1 000 g cái nào nặng hơn — nhiều trẻ trả lời 1 000 g.
 
 
 ---

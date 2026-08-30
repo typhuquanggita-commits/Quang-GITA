@@ -30,67 +30,73 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Cấu tạo số và tính nhẩm số tròn trăm**
 
-a) Tính nhẩm: 200 + 200
+a) Số 614 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-b) Số 666 gồm mấy trăm, mấy chục, mấy đơn vị?
+b) Tính nhẩm: 500 + 400
 
-c) Số 359 gồm mấy trăm, mấy chục, mấy đơn vị?
+c) Số 629 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-d) Tính nhẩm: 700 + 200
+d) Tính nhẩm: 400 + 200
 
-e) Số 267 gồm mấy trăm, mấy chục, mấy đơn vị?
+e) Số 740 gồm mấy trăm, mấy chục, mấy đơn vị?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 b) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 6 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 5 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-d) Xếp 7 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+d) Xếp 6 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+
+e) Xếp 2 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Cộng trừ có nhớ trong phạm vi 100**
 
-a) Đặt tính rồi tính: 44 + 45
+a) Đặt tính rồi tính: 47 − 38
 
-b) Đặt tính rồi tính: 72 − 16
+b) Đặt tính rồi tính: 26 + 48
 
-c) Đặt tính rồi tính: 40 + 57
+c) Đặt tính rồi tính: 61 + 14
 
-d) Đặt tính rồi tính: 83 − 55
+d) Đặt tính rồi tính: 46 − 35
 
-e) Đặt tính rồi tính: 56 − 31
+e) Đặt tính rồi tính: 60 − 54
+
+f) Đặt tính rồi tính: 51 + 31
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Nhiều hơn, ít hơn một số đơn vị**
+**Bài toán nhiều hơn – ít hơn**
 
-a) An có 18 con cá. Tèo có nhiều hơn An 13 con. Hỏi Tèo có mấy con?
+a) Bạn Bơ có 194 viên bi. Bạn Mai có nhiều hơn bạn Bơ 80 viên bi. Bạn Mai có bao nhiêu viên bi?
 
-b) Na có 48 cái bánh. Tèo có ít hơn Na 20 cái. Hỏi Tèo có mấy cái?
+b) Bạn An có 562 viên bi. Bạn Bơ có ít hơn bạn An 20 viên bi. Bạn Bơ có bao nhiêu viên bi?
 
-c) Na có 79 con vịt. Nam có nhiều hơn Na 18 con. Hỏi Nam có mấy con?
+c) Bạn Cốm có 363 cái nhãn vở. Bạn An có nhiều hơn bạn Cốm 110 cái nhãn vở. Bạn An có bao nhiêu cái nhãn vở?
 
-d) Na có 15 quyển vở. Tèo có ít hơn Na 14 quyển. Hỏi Tèo có mấy quyển?
+d) Bạn Bi có 296 quyển sách. Bạn Nam có ít hơn bạn Bi 140 quyển sách. Bạn Nam có bao nhiêu quyển sách?
+
+e) Bạn Nam có 537 quyển sách. Bạn An có ít hơn bạn Nam 60 quyển sách. Bạn An có bao nhiêu quyển sách?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Số bí mật đến 1 000**
 
-a) Một bạn tính 42 + 76 = 127. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) 119 và 178: số nào bé hơn?
 
-b) Một bạn tính 63 + 47 = 100. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Số tròn trăm gần 509 nhất là số nào?
 
-c) Một bạn tính 60 + 81 = 150. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Số tròn trăm gần 615 nhất là số nào?
 
 
 ---
@@ -102,5 +108,5 @@ c) Một bạn tính 60 + 81 = 150. Bạn ấy sai ở đâu? Kết quả đúng
 - ☐ Cấu tạo số và tính nhẩm số tròn trăm
 - ☐ Từ phép cộng sang phép nhân
 - ☐ Cộng trừ có nhớ trong phạm vi 100
-- ☐ Nhiều hơn, ít hơn một số đơn vị
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Bài toán nhiều hơn – ít hơn
+- ☐ Số bí mật đến 1 000

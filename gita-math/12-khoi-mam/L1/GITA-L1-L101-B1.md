@@ -28,52 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**So sánh số trong phạm vi 10**
 
-a) Điền dấu >, < hoặc = : 14 … 20
+a) Điền dấu >, < hoặc = : 9 … 10
 
-b) Điền dấu >, < hoặc = : 14 … 20
+b) Điền dấu >, < hoặc = : 1 … 8
 
 c) Điền dấu >, < hoặc = : 6 … 5
 
-d) Điền dấu >, < hoặc = : 20 … 6
+d) Điền dấu >, < hoặc = : 10 … 5
+
+e) Điền dấu >, < hoặc = : 1 … 10
+
+f) Điền dấu >, < hoặc = : 5 … 9
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 99 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 55 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 94 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 57 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 72 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 51 que tính. Con lấy mấy bó và mấy que rời?
 
 d) Con lấy đúng 33 que tính. Con lấy mấy bó và mấy que rời?
+
+e) Con lấy đúng 16 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) … + 1 = 4
+a) … + 3 = 9
 
-b) … + 1 = 6
+b) 4 + … = 5
 
-c) 1 + … = 8
+c) 6 + … = 9
 
-d) 8 + … = 9
+d) 4 + … = 6
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Số bí mật**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 10 + 3 = 13.
+a) Số bí mật có 4 chục và 2 đơn vị. Số ấy là số nào?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 8 = 12.
+b) 61 và 62: số nào lớn hơn?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 13 − 4 = 9.
+c) 75 và 40: số nào lớn hơn?
 
 
 ---
@@ -82,7 +88,7 @@ c) Con hãy nghĩ ra một bài toán mà phép tính là 13 − 4 = 9.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ So sánh số trong phạm vi 10
 - ☐ Lấy đúng số que tính
 - ☐ Tìm số còn thiếu
-- ☐ Tự đặt một bài toán
+- ☐ Số bí mật

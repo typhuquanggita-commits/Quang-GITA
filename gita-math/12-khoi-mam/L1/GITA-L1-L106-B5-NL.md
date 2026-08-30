@@ -46,7 +46,8 @@ Bản dành cho: **người lớn ngồi cùng**
 - Thước có vạch xăng-ti-mét
 - Mô hình đồng hồ kim
 - Bút chì
-- Bút chì màu
+- Thước kẻ có vạch xăng-ti-mét
+- Đồng hồ kim hoặc mô hình đồng hồ
 
 ---
 
@@ -58,17 +59,17 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Hôm nay là thứ Ba. Hôm qua là thứ mấy?
-   → **thứ Hai**
-
-b) Hôm nay là thứ Sáu. Ngày mai là thứ mấy?
-   → **thứ Bảy**
-
-c) Hôm nay là thứ Ba. Ngày mai là thứ mấy?
+a) Ngày thứ 3 của tuần là thứ mấy?
    → **thứ Tư**
 
-d) Ngày thứ 6 của tuần là thứ mấy?
-   → **thứ Bảy**
+b) Ngày thứ 5 của tuần là thứ mấy?
+   → **thứ Sáu**
+
+c) Hôm nay là thứ Năm. Hôm qua là thứ mấy?
+   → **thứ Tư**
+
+d) Hôm nay là Chủ nhật. Ngày mai là thứ mấy?
+   → **thứ Hai**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Sau Chủ nhật là thứ mấy? Vì sao lại quay về thứ Hai?
 
@@ -89,17 +90,23 @@ d) Ngày thứ 6 của tuần là thứ mấy?
 
 **Đáp án từng việc**
 
-a) Đoạn thẳng dài 6 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+a) Đoạn thẳng dài 9 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+   → **9 cm**
+
+b) Kim ngắn chỉ số 10, kim dài chỉ số 12. Mấy giờ?
+   → **10 giờ**
+
+c) Đoạn thẳng dài 6 cm. Con vẽ một đoạn thẳng dài đúng như thế.
    → **6 cm**
 
-b) Kim ngắn chỉ số 7, kim dài chỉ số 12. Mấy giờ?
+d) Kim ngắn chỉ số 7, kim dài chỉ số 12. Mấy giờ?
    → **7 giờ**
 
-c) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ?
-   → **6 giờ**
+e) Đoạn thẳng dài 15 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+   → **15 cm**
 
-d) Đoạn thẳng dài 5 cm. Con vẽ một đoạn thẳng dài đúng như thế.
-   → **5 cm**
+f) Kim ngắn chỉ số 12, kim dài chỉ số 12. Mấy giờ?
+   → **12 giờ**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Bạn đặt thước từ vạch số 1 rồi đọc số cuối. Bạn làm thế đúng hay sai? Vì sao?
 
@@ -120,20 +127,17 @@ d) Đoạn thẳng dài 5 cm. Con vẽ một đoạn thẳng dài đúng như th
 
 **Đáp án từng việc**
 
-a) Vẽ một đoạn thẳng dài 15 cm.
-   → **15 cm**
+a) Viết số: 4 mươi 5
+   → **45**
 
-b) Trong hình có mấy đoạn thẳng?
+b) Vẽ một đoạn thẳng dài 11 cm.
+   → **11 cm**
+
+c) Trong hình có mấy đoạn thẳng?
    → **3 đoạn thẳng**
 
-c) Viết số: 7 mươi 1
-   → **71**
-
-d) Vẽ một đoạn thẳng dài 8 cm.
-   → **8 cm**
-
-e) Viết số: 6 mươi 6
-   → **66**
+d) Viết số: 5 mươi 2
+   → **52**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Con đo lại đoạn vừa vẽ xem có đúng chừng ấy không?
 
@@ -148,34 +152,28 @@ e) Viết số: 6 mươi 6
 
 ## PHẦN D — Thử thách vui
 
-**Đếm hình trong hình ghép**
+**Đố vui đo và xem giờ**
 
-> **Cô/mẹ đọc lên:** Con dùng bút chì đánh dấu từng hình đã đếm để khỏi đếm sót hoặc đếm hai lần.
+> **Cô/mẹ đọc lên:** Cuối buổi mình đoán chơi thôi. Đoán sai cũng không sao, đoán xong mình đo lại.
 
 **Đáp án từng việc**
 
-a) Trong hình bên có mấy hình tam giác?
-   → **2 hình tam giác**
+a) Con đoán quyển vở dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
+   → **khoảng 25 cm**
 
-b) Trong hình bên có mấy hình tam giác?
-   → **2 hình tam giác**
+b) Con đoán cái bàn học dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
+   → **khoảng 100 cm, tức 1 m**
 
-c) Trong hình bên có mấy hình chữ nhật?
-   → **2 hình chữ nhật**
+c) Kim ngắn chỉ số 7, kim dài chỉ số 12. Mấy giờ rồi? Giờ ấy nhà con thường làm gì?
+   → **7 giờ đúng — thường là lúc ăn sáng**
 
-d) Trong hình bên có mấy hình tam giác?
-   → **5 hình tam giác**
+**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Con đoán 20 cm, đo ra 15 cm. Lần sau con sẽ đoán thế nào cho gần hơn?
 
-e) Trong hình bên có mấy hình chữ nhật?
-   → **4 hình chữ nhật**
+**Thế nào là con đã hiểu:** Đoán của trẻ ngày càng sát số đo thật. Ước lượng đúng nghĩa là trẻ đã có **một cái thước trong đầu** — quan trọng hơn việc đọc vạch thước cho khéo.
 
-**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con đếm thế nào để chắc chắn không sót cái nào?
+**Con tắc thì làm gì:** Cho trẻ cầm sẵn một vật dài đúng 10 cm làm mốc để so.
 
-**Thế nào là con đã hiểu:** Trẻ đếm theo một trật tự — trái sang phải, trên xuống dưới — thay vì đếm lung tung. Trật tự khi đếm là kỹ năng, không phải chuyện tự nhiên biết.
-
-**Con tắc thì làm gì:** Đánh dấu hộ hai hình đầu tiên rồi để trẻ làm tiếp.
-
-**Nếu con làm nhanh:** Hỏi cả số hình lớn tạo bởi nhiều hình nhỏ ghép lại.
+**Nếu con làm nhanh:** Đoán chiều dài một thứ dài hơn thước — trẻ phải nghĩ cách đo nhiều lần.
 
 
 ---

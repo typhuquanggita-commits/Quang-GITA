@@ -42,40 +42,43 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Không cần gì — dùng ngón tay
 - 10 que tính
 - Ba thẻ số
-- Que tính để xếp hình
+- Không cần gì
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng trò nhẩm nhanh. Con được dùng ngón tay, không sao cả.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 77 … 31
-   → **>**
+a) 5 thêm 3 là mấy?
+   → **8**
 
-b) Điền dấu >, < hoặc = : 42 … 31
-   → **>**
+b) Con giơ 1 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 6?
+   → **5**
 
-c) Điền dấu >, < hoặc = : 30 … 94
-   → **<**
+c) 5 bớt 4 còn mấy?
+   → **1**
 
-d) Điền dấu >, < hoặc = : 82 … 91
-   → **<**
+d) 3 thêm 2 là mấy?
+   → **5**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+e) 10 bớt 9 còn mấy?
+   → **1**
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Rút ra quy luật)*: Con làm thế nào mà ra nhanh thế? Con đếm hay con nhớ sẵn?
 
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
+**Thế nào là con đã hiểu:** Trẻ trả lời được trong khoảng ba giây và bắt đầu **nhớ sẵn** vài phép quen như 5 + 5, 2 + 2, thay vì đếm lại từng ngón.
 
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Con tắc thì làm gì:** Cho dùng que tính. Tốc độ không quan trọng bằng việc ra đúng.
+
+**Nếu con làm nhanh:** Hỏi ngược: 'cô nghĩ một số, cộng 3 thì được 8, số ấy là mấy?'
 
 
 ---
@@ -88,23 +91,23 @@ d) Điền dấu >, < hoặc = : 82 … 91
 
 **Đáp án từng việc**
 
-a) Na có 5 bông hoa, cho bạn 4 bông. Na còn lại mấy bông?
-   → **1 bông**
+a) Na có 2 chiếc lá, mẹ cho thêm 3 chiếc. Na có tất cả mấy chiếc?
+   → **5 chiếc**
 
-b) Bơ có 1 con cá, mẹ cho thêm 4 con. Bơ có tất cả mấy con?
-   → **5 con**
+b) Tí có 10 quyển vở, cho bạn 7 quyển. Tí còn lại mấy quyển?
+   → **3 quyển**
 
-c) Tèo có 4 cái bánh, mẹ cho thêm 1 cái. Tèo có tất cả mấy cái?
-   → **5 cái**
+c) Cốm có 4 con cá, cho bạn 1 con. Cốm còn lại mấy con?
+   → **3 con**
 
-d) Bi có 9 quả bóng, cho bạn 4 quả. Bi còn lại mấy quả?
-   → **5 quả**
+d) Na có 2 bông hoa, mẹ cho thêm 4 bông. Na có tất cả mấy bông?
+   → **6 bông**
 
-e) Cốm có 9 con vịt, cho bạn 3 con. Cốm còn lại mấy con?
-   → **6 con**
+e) Tèo có 2 quả bóng, mẹ cho thêm 1 quả. Tèo có tất cả mấy quả?
+   → **3 quả**
 
-f) Tèo có 3 chiếc lá, mẹ cho thêm 4 chiếc. Tèo có tất cả mấy chiếc?
-   → **7 chiếc**
+f) Na có 6 con vịt, cho bạn 3 con. Na còn lại mấy con?
+   → **3 con**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con biết 3 + 2 = 5 rồi. Vậy 2 + 3 bằng mấy? Vì sao con biết ngay?
 
@@ -125,14 +128,17 @@ f) Tèo có 3 chiếc lá, mẹ cho thêm 4 chiếc. Tèo có tất cả mấy c
 
 **Đáp án từng việc**
 
-a) Từ phép tính 3 + 5 = 8, con viết ra hai phép trừ.
-   → **8 − 3 = 5 và 8 − 5 = 3**
+a) Từ phép tính 7 + 1 = 8, con viết ra hai phép trừ.
+   → **8 − 7 = 1 và 8 − 1 = 7**
 
-b) Từ phép tính 7 + 2 = 9, con viết ra hai phép trừ.
+b) Từ phép tính 2 + 1 = 3, con viết ra hai phép trừ.
+   → **3 − 2 = 1 và 3 − 1 = 2**
+
+c) Từ phép tính 7 + 2 = 9, con viết ra hai phép trừ.
    → **9 − 7 = 2 và 9 − 2 = 7**
 
-c) Từ phép tính 8 + 1 = 9, con viết ra hai phép trừ.
-   → **9 − 8 = 1 và 9 − 1 = 8**
+d) Từ phép tính 2 + 7 = 9, con viết ra hai phép trừ.
+   → **9 − 2 = 7 và 9 − 7 = 2**
 
 **Hỏi thêm một câu** *(rèn: Rút ra quy luật · Xem chỗ nào chưa ổn)*: Bộ ba số nào cũng viết được bốn phép tính à? Con thử bộ khác xem.
 
@@ -147,28 +153,28 @@ c) Từ phép tính 8 + 1 = 9, con viết ra hai phép trừ.
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi, toàn chuyện trong nhà mình thôi.
 
 **Đáp án từng việc**
 
-a) 3, 6, 12, …
-   → **24**
+a) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
+   → **3 cái**
 
-b) 7, 10, 13, 16, …
-   → **19**
+b) Con có 5 cái kẹo, cho bạn 2 cái. Còn mấy cái?
+   → **3 cái**
 
-c) 4, 6, 8, 10, …
-   → **12**
+c) Con có 7 cái kẹo, cho bạn 1 cái. Còn mấy cái?
+   → **6 cái**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Làm cách gọn hơn)*: Câu này con làm phép cộng hay phép trừ? Vì sao?
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
+**Thế nào là con đã hiểu:** Trẻ chọn đúng phép tính ngay từ khi nghe đề, không phải thử cả hai. Nghe 'cho bạn' mà nghĩ tới phép trừ là dấu hiệu trẻ đã nối được **lời nói với phép tính**.
 
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
+**Con tắc thì làm gì:** Diễn lại tình huống bằng đồ vật thật ngay trên bàn.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Nếu con làm nhanh:** Trẻ tự nghĩ một câu đố về nhà mình rồi đố cả nhà.
 
 
 ---

@@ -28,56 +28,64 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 34 … 46
+a) 1 thêm 8 là mấy?
 
-b) Điền dấu >, < hoặc = : 93 … 94
+b) Con giơ 1 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 7?
 
-c) Điền dấu >, < hoặc = : 78 … 49
+c) 9 bớt 4 còn mấy?
 
-d) Điền dấu >, < hoặc = : 32 … 33
+d) 8 bớt 4 còn mấy?
 
-e) Điền dấu >, < hoặc = : 49 … 1
-
-f) Điền dấu >, < hoặc = : 34 … 57
+e) 4 thêm 4 là mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Bo có 10 quả bóng, cho bạn 2 quả. Bo còn lại mấy quả?
+a) Cốm có 10 viên bi, cho bạn 4 viên. Cốm còn lại mấy viên?
 
-b) Bo có 2 con cá, mẹ cho thêm 3 con. Bo có tất cả mấy con?
+b) Bi có 2 chiếc lá, mẹ cho thêm 2 chiếc. Bi có tất cả mấy chiếc?
 
-c) Mai có 1 viên bi, mẹ cho thêm 4 viên. Mai có tất cả mấy viên?
+c) Tí có 8 quả cam, cho bạn 2 quả. Tí còn lại mấy quả?
 
-d) Na có 10 con vịt, cho bạn 2 con. Na còn lại mấy con?
+d) Tèo có 3 quả cam, mẹ cho thêm 1 quả. Tèo có tất cả mấy quả?
+
+e) Na có 8 cái bánh, cho bạn 4 cái. Na còn lại mấy cái?
+
+f) Tèo có 5 con vịt, mẹ cho thêm 5 con. Tèo có tất cả mấy con?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
-**Tìm số còn thiếu**
+**Tính nhanh**
 
-a) … + 3 = 9
+a) 3 − 2 = …
 
-b) 9 + … = 10
+b) 16 + 1 = …
 
-c) 3 + … = 5
+c) 6 + 4 = …
 
-d) … + 2 = 10
+d) 7 − 4 = …
+
+e) 14 + 3 = …
+
+f) 3 + 3 = …
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-a) 7, 17, 27, 37, …
+a) Con có 8 cái kẹo, cho bạn 1 cái. Còn mấy cái?
 
-b) 3, 6, 12, …
+b) Mẹ nướng 6 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
+c) Bàn ăn có 2 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
+
+d) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
 
 ---
@@ -86,7 +94,7 @@ c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
-- ☐ Tìm số còn thiếu
-- ☐ Tìm quy luật
+- ☐ Tính nhanh
+- ☐ Đố vui cộng trừ

@@ -28,15 +28,13 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**Các thứ trong tuần**
+**Vẽ hình trên không, căng dây thành đoạn thẳng**
 
-a) Hôm nay là thứ Năm. Ngày mai là thứ mấy?
+a) Con dùng ngón tay vẽ hình tròn lên không khí. Vẽ xong nói cho cô: hình ấy có mấy cạnh?
 
-b) Hôm nay là thứ Bảy. Ngày mai là thứ mấy?
+b) Con dùng ngón tay vẽ hình chữ nhật lên không khí. Vẽ xong nói cho cô: hình ấy có mấy cạnh?
 
-c) Ngày thứ 3 của tuần là thứ mấy?
-
-d) Hôm nay là Chủ nhật. Ngày mai là thứ mấy?
+c) Cô căng sợi dây thẳng giữa hai tay. Đó là đoạn thẳng. Con chấm 3 điểm lên tờ giấy rồi nối hai điểm bất kỳ.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
@@ -49,37 +47,35 @@ b) Ghép hai hình vuông lại thì được hình gì?
 
 c) Ghép hai hình chữ nhật lại thì được hình gì?
 
-d) hình vuông – hình tam giác – hình tròn – hình vuông – … Hình tiếp theo là hình gì?
+d) hình tròn – hình chữ nhật – hình vuông – hình tròn – … Hình tiếp theo là hình gì?
 
-e) hình tròn – hình chữ nhật – hình tam giác – hình tròn – … Hình tiếp theo là hình gì?
+e) hình vuông – hình chữ nhật – hình vuông – hình chữ nhật – … Hình tiếp theo là hình gì?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Vẽ một đoạn thẳng dài 9 cm.
+a) Vẽ một đoạn thẳng dài 10 cm.
 
-b) Viết số: 5 mươi 5
+b) Viết số: 9 mươi 3
 
 c) Trong hình có mấy đoạn thẳng?
 
-d) Viết số: 6 mươi 9
+d) Vẽ một đoạn thẳng dài 7 cm.
 
-e) Trong hình có mấy đoạn thẳng?
+e) Viết số: 3 mươi 8
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Đếm hình trong hình ghép**
 
-a) Trong hình bên có mấy hình vuông?
+a) Trên một đường thẳng có 3 điểm. Nối từng cặp hai điểm thì được mấy đoạn thẳng?
 
-b) Trong hình bên có mấy hình chữ nhật?
+b) Con vẽ một hình chữ nhật rồi kẻ 2 nét thẳng dọc chia nó thành 3 ô bằng nhau. Đếm xem có tất cả mấy hình chữ nhật?
 
-c) Trong hình bên có mấy hình chữ nhật?
-
-d) Trong hình bên có mấy hình chữ nhật?
+c) Con vẽ một hình tam giác rồi kẻ 2 nét thẳng từ đỉnh trên xuống cạnh đáy. Đếm xem có mấy hình tam giác?
 
 
 ---
@@ -88,7 +84,7 @@ d) Trong hình bên có mấy hình chữ nhật?
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Các thứ trong tuần
+- ☐ Vẽ hình trên không, căng dây thành đoạn thẳng
 - ☐ Ghép hình và dãy hình
 - ☐ Vẽ, đo và viết số
 - ☐ Đếm hình trong hình ghép

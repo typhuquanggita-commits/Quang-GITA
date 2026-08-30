@@ -28,64 +28,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 3 … 2
+a) 5 bớt 4 còn mấy?
 
-b) Điền dấu >, < hoặc = : 3 … 15
+b) Con giơ 1 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 9?
 
-c) Điền dấu >, < hoặc = : 7 … 13
+c) 5 thêm 1 là mấy?
 
-d) Điền dấu >, < hoặc = : 10 … 15
+d) 5 bớt 2 còn mấy?
 
-e) Điền dấu >, < hoặc = : 15 … 1
-
-f) Điền dấu >, < hoặc = : 3 … 10
+e) Con giơ 2 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 10?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Na có 1 chiếc lá, mẹ cho thêm 2 chiếc. Na có tất cả mấy chiếc?
+a) Tí có 5 viên bi, cho bạn 2 viên. Tí còn lại mấy viên?
 
-b) Na có 4 cái kẹo, cho bạn 2 cái. Na còn lại mấy cái?
+b) Bi có 1 con vịt, mẹ cho thêm 3 con. Bi có tất cả mấy con?
 
-c) Bơ có 10 con vịt, cho bạn 2 con. Bơ còn lại mấy con?
+c) Tèo có 1 quyển vở, mẹ cho thêm 1 quyển. Tèo có tất cả mấy quyển?
 
-d) Bơ có 1 quả cam, mẹ cho thêm 1 quả. Bơ có tất cả mấy quả?
+d) Bơ có 10 quả cam, cho bạn 3 quả. Bơ còn lại mấy quả?
 
-e) Cốm có 5 cái kẹo, cho bạn 3 cái. Cốm còn lại mấy cái?
+e) Bo có 9 quả cam, cho bạn 4 quả. Bo còn lại mấy quả?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) … + 3 = 10
+a) … + 7 = 9
 
-b) … + 2 = 9
+b) … + 3 = 8
 
-c) … + 2 = 9
+c) … + 5 = 9
 
-d) … + 3 = 4
+d) 5 + … = 10
 
-e) 8 + … = 9
+e) 7 + … = 10
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-a) 3, 6, 12, …
+a) Con có 8 cái kẹo, cho bạn 2 cái. Còn mấy cái?
 
-b) 3, 6, 12, …
+b) 2 con chim có mấy cái chân?
 
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+c) Mẹ nướng 6 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
-d) 7, 17, 27, 37, …
-
-e) 7, 9, 11, 13, …
+d) Con có 10 cái kẹo, cho bạn 3 cái. Còn mấy cái?
 
 
 ---
@@ -94,7 +90,7 @@ e) 7, 9, 11, 13, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Tìm số còn thiếu
-- ☐ Tìm quy luật
+- ☐ Đố vui cộng trừ

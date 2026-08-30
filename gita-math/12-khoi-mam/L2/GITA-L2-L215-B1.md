@@ -28,26 +28,22 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Khảo sát chớp nhoáng**
 
-a) Số 961 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Bạn nào đi học bằng xe máy thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-b) Tính nhẩm: 800 + 100
+b) Bạn nào có em thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-c) Số 724 gồm mấy trăm, mấy chục, mấy đơn vị?
+c) Con cá biết trèo cây — chắc chắn, có thể hay không thể?
 
-d) Tính nhẩm: 400 + 400
-
-e) Số 969 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-f) Tính nhẩm: 800 + 100
+d) Ngày mai mặt trời mọc ở hướng đông — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
-**Kiểm đếm về món ăn sáng của các bạn**
+**Kiểm đếm về phương tiện đi học**
 
-a) Con đi hỏi và kiểm đếm về món ăn sáng của các bạn. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về phương tiện đi học. Ghi vào bảng.
 
 b) Loại nào nhiều nhất trong bảng của con?
 
@@ -58,9 +54,26 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
+**Đọc bảng số liệu và đoán khả năng**
+
+a) Lớp 2A khảo sát cách đi học. Kết quả: đi bộ: 12 bạn · xe đạp: 10 bạn · xe buýt: 5 bạn. Cách nào nhiều bạn chọn nhất?
+
+b) Cách nào ít bạn chọn nhất?
+
+c) Đi bộ nhiều hơn xe buýt bao nhiêu bạn?
+
+d) Lớp khảo sát tất cả bao nhiêu bạn?
+
+e) Rút một bạn bất kỳ trong lớp, bạn ấy đi học bằng đi bộ — chắc chắn, có thể hay không thể?
+
+f) Rút một bạn bất kỳ, bạn ấy đi học bằng một trong ba cách trong bảng — chắc chắn, có thể hay không thể?
+
+
+## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
+
 **Đọc bảng số liệu**
 
-a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 15, thứ Ba: 4, thứ Tư: 8, thứ Năm: 3, thứ Sáu: 7. Ngày nào đọc nhiều nhất?
+a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 8, thứ Ba: 7, thứ Tư: 13, thứ Năm: 14, thứ Sáu: 9. Ngày nào đọc nhiều nhất?
 
 b) Cả tuần đọc bao nhiêu quyển?
 
@@ -69,34 +82,21 @@ c) Thứ Hai và thứ Ba đọc tất cả mấy quyển?
 d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
 
 
-## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
-
-**Bảng kiểm đếm và biểu đồ tranh**
-
-a) Bảng kiểm đếm: quả lê: 5 · quả cam: 5 · quả xoài: 7. Loại nào nhiều nhất?
-
-b) Loại nào ít nhất?
-
-c) Có tất cả bao nhiêu quả?
-
-d) Quả xoài nhiều hơn quả lê mấy quả?
-
-
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đọc biểu đồ tranh**
 
-a) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+a) - cam: 🍎🍎🍎🍎🍎🍎🍎🍎🍎  (9 quả)
+- ổi: 🍎🍎🍎🍎🍎🍎  (6 quả)
+- chuối: 🍎🍎🍎🍎🍎  (5 quả)
 
-b) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+Loại quả nào nhiều nhất?
 
-c) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+b) Loại quả nào ít nhất?
 
-d) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+c) Cam nhiều hơn chuối mấy quả?
 
-e) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
-
-f) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
+d) Tất cả có mấy quả?
 
 
 ---
@@ -105,8 +105,8 @@ f) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
-- ☐ Kiểm đếm về món ăn sáng của các bạn
+- ☐ Khảo sát chớp nhoáng
+- ☐ Kiểm đếm về phương tiện đi học
+- ☐ Đọc bảng số liệu và đoán khả năng
 - ☐ Đọc bảng số liệu
-- ☐ Bảng kiểm đếm và biểu đồ tranh
-- ☐ Chắc chắn, có thể, không thể
+- ☐ Đọc biểu đồ tranh

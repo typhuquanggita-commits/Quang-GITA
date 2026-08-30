@@ -30,71 +30,69 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Cấu tạo số và tính nhẩm số tròn trăm**
 
-a) Số 510 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Tính nhẩm: 100 + 800
 
-b) Tính nhẩm: 400 + 100
+b) Số 959 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-c) Số 261 gồm mấy trăm, mấy chục, mấy đơn vị?
+c) Số 203 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-d) Tính nhẩm: 200 + 700
+d) Tính nhẩm: 700 + 200
 
-e) Số 585 gồm mấy trăm, mấy chục, mấy đơn vị?
+e) Số 861 gồm mấy trăm, mấy chục, mấy đơn vị?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-b) Xếp 6 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+b) Xếp 7 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 6 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-d) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-
-e) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+d) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Nhiều hơn, ít hơn một số đơn vị**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Bơ có 64 bông hoa. Tèo có ít hơn Bơ 15 bông. Hỏi Tèo có mấy bông?
+a) Bạn Mai có 413 viên bi. Bạn Bi có ít hơn bạn Mai 90 viên bi. Bạn Bi có bao nhiêu viên bi?
 
-b) Bi có 65 cái kẹo. Tí có nhiều hơn Bi 9 cái. Hỏi Tí có mấy cái?
+b) Bạn Bi có 455 cái nhãn vở. Bạn Tèo có ít hơn bạn Bi 20 cái nhãn vở. Bạn Tèo có bao nhiêu cái nhãn vở?
 
-c) Bơ có 51 con cá. Tèo có nhiều hơn Bơ 18 con. Hỏi Tèo có mấy con?
+c) Bạn Tí có 642 cái nhãn vở. Bạn Mai có ít hơn bạn Tí 180 cái nhãn vở. Bạn Mai có bao nhiêu cái nhãn vở?
 
-d) Cốm có 53 chiếc lá. Na có ít hơn Cốm 19 chiếc. Hỏi Na có mấy chiếc?
+d) Bạn Cốm có 312 cái nhãn vở. Bạn Bi có ít hơn bạn Cốm 90 cái nhãn vở. Bạn Bi có bao nhiêu cái nhãn vở?
+
+e) Bạn Bơ có 488 cái nhãn vở. Bạn Bi có nhiều hơn bạn Bơ 60 cái nhãn vở. Bạn Bi có bao nhiêu cái nhãn vở?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Cộng trừ có nhớ trong phạm vi 100**
+**Nhiều hơn, ít hơn một số đơn vị**
 
-a) Đặt tính rồi tính: 89 + 10
+a) Cốm có 51 cái bánh. Bơ có ít hơn Cốm 16 cái. Hỏi Bơ có mấy cái?
 
-b) Đặt tính rồi tính: 63 − 19
+b) Bi có 34 cái kẹo. An có nhiều hơn Bi 17 cái. Hỏi An có mấy cái?
 
-c) Đặt tính rồi tính: 45 − 15
+c) Bơ có 42 chiếc lá. Nam có ít hơn Bơ 3 chiếc. Hỏi Nam có mấy chiếc?
 
-d) Đặt tính rồi tính: 70 + 15
+d) Bi có 46 cái kẹo. Na có nhiều hơn Bi 3 cái. Hỏi Na có mấy cái?
+
+e) Cốm có 34 quả bóng. Tèo có ít hơn Cốm 4 quả. Hỏi Tèo có mấy quả?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Số bí mật đến 1 000**
 
-a) Một bạn tính 64 + 48 = 102. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) 877 và 513: số nào bé hơn?
 
-b) Một bạn tính 55 + 66 = 111. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Số bí mật gồm 7 trăm, 2 chục và 8 đơn vị. Số nào?
 
-c) Một bạn tính 61 + 85 = 155. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-d) Một bạn tính 28 + 45 = 63. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-e) Một bạn tính 54 + 64 = 127. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Số bí mật gồm 2 trăm, 0 chục và 7 đơn vị. Số nào?
 
 
 ---
@@ -105,6 +103,6 @@ e) Một bạn tính 54 + 64 = 127. Bạn ấy sai ở đâu? Kết quả đúng
 
 - ☐ Cấu tạo số và tính nhẩm số tròn trăm
 - ☐ Từ phép cộng sang phép nhân
+- ☐ Bài toán nhiều hơn – ít hơn
 - ☐ Nhiều hơn, ít hơn một số đơn vị
-- ☐ Cộng trừ có nhớ trong phạm vi 100
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Số bí mật đến 1 000

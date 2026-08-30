@@ -32,11 +32,11 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Nhảy và đếm**
 
-a) Con bước lên phía trước đúng 5 bước nhé. Đếm to lên.
+a) Con vỗ tay đúng 2 cái nhé. Đếm to lên.
 
-b) Con vỗ tay đúng 6 cái nhé. Đếm to lên.
+b) Con nhảy đúng 3 cái nhé. Đếm to lên.
 
-c) Con nhảy đúng 3 cái nhé. Đếm to lên.
+c) Con gật đầu đúng 2 cái nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -45,11 +45,11 @@ c) Con nhảy đúng 3 cái nhé. Đếm to lên.
 
 **Đếm trên chính mình**
 
-a) Con có mấy ngón tay một bàn?
+a) Con có mấy mũi?
 
-b) Con có mấy tai?
+b) Con có mấy mắt?
 
-c) Con có mấy chân?
+c) Con có mấy ngón tay một bàn?
 
 
 ## Tự làm thử · 7 phút
@@ -58,28 +58,26 @@ c) Con có mấy chân?
 
 **Con thứ mấy trong hàng**
 
-a) Có 5 con mèo xếp thành hàng. Con chỉ vào con thứ năm.
+a) Có 8 con bướm xếp thành hàng. Con chỉ vào con thứ nhất.
 
-b) Có 6 con thỏ xếp thành hàng. Con chỉ vào con thứ hai.
+b) Có 6 con ong xếp thành hàng. Con chỉ vào con thứ sáu.
 
-c) Có 5 con vịt xếp thành hàng. Con chỉ vào con thứ nhất.
-
-d) Có 5 con thỏ xếp thành hàng. Con chỉ vào con thứ năm.
+c) Có 6 con chim xếp thành hàng. Con chỉ vào con thứ hai.
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) trắng – đỏ – trắng – đỏ – trắng – đỏ – … Con đoán xem tiếp theo là màu gì?
+a) Số nào đứng ngay trước số 7?
 
-b) xanh – vàng – xanh – vàng – … Con đoán xem tiếp theo là màu gì?
+b) Con giơ 5 ngón ở tay này, 5 ngón ở tay kia. Tất cả mấy ngón?
 
-c) xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
+c) Đếm tiếp cho cô: 6 rồi đến số mấy?
 
-d) xanh – vàng – đỏ – xanh – vàng – đỏ – xanh – vàng – đỏ – … Con đoán xem tiếp theo là màu gì?
+d) Dãy số bị mất một số: 2 , … , 4 , 5 . Mất số nào?
 
 
 ---
@@ -93,4 +91,4 @@ d) xanh – vàng – đỏ – xanh – vàng – đỏ – xanh – vàng – 
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Đếm trên chính mình | ☐ | ☐ | ☐ |
 | Con thứ mấy trong hàng | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

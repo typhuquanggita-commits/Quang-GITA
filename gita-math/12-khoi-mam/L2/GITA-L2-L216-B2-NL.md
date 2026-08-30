@@ -41,59 +41,58 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Bảng số hoặc thẻ trăm – chục – đơn vị
+- Bảng giấy kẻ sẵn hai cột để kiểm đếm
+- Bút dạ
 - Giấy kẻ ô
 - Bút màu
+- Bảng kiểm đếm kẻ sẵn
+- Bút màu để tô cột cao nhất
 - Thước mét
 - Bảng đơn vị đo độ dài
 - Một hộp bi có bi hai màu để thử thật
-- Giấy ô li
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Khảo sát chớp nhoáng**
 
-> **Cô/mẹ đọc lên:** Số tròn trăm thì nhẩm như đếm trăm: 3 trăm thêm 2 trăm là 5 trăm.
+> **Cô/mẹ đọc lên:** Mình hỏi nhanh cả lớp rồi đếm tay giơ lên. Đó chính là thu thập số liệu đấy.
 
 **Đáp án từng việc**
 
-a) Số 656 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **6 trăm, 5 chục, 6 đơn vị**
+a) Bạn nào có em thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'gia đình' của bảng kiểm đếm**
 
-b) Tính nhẩm: 700 + 200
-   → **900**
+b) Bạn nào thích màu đỏ thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'màu' của bảng kiểm đếm**
 
-c) Tính nhẩm: 800 + 100
-   → **900**
+c) Ngày mai mặt trời mọc ở hướng đông — chắc chắn, có thể hay không thể?
+   → **chắc chắn**
 
-d) Số 300 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **3 trăm, 0 chục, 0 đơn vị**
+d) Ngày mai trời mưa — chắc chắn, có thể hay không thể?
+   → **có thể**
 
-e) Số 141 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **1 trăm, 4 chục, 1 đơn vị**
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Đếm xong con biết thêm điều gì mà lúc chưa đếm con chưa biết?
 
-**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Vì sao 300 + 200 nhẩm nhanh hơn 347 + 285?
+**Thế nào là con đã hiểu:** Trẻ ghi bằng gạch năm một (⁄⁄⁄⁄\) thay vì viết số ước chừng. Kiểm đếm có hệ thống là điều đầu tiên của mạch thống kê, trước cả việc vẽ biểu đồ.
 
-**Thế nào là con đã hiểu:** Trẻ nhẩm số tròn trăm mà không đặt tính. Biết khi nào cần đặt tính và khi nào không là dấu hiệu đã chọn cách làm.
+**Con tắc thì làm gì:** Đếm chậm, chỉ tay vào từng bạn, mỗi bạn một gạch.
 
-**Con tắc thì làm gì:** Che hai chữ số cuối để trẻ chỉ nhìn hàng trăm.
-
-**Nếu con làm nhanh:** Nhẩm số tròn chục trong phạm vi 1 000.
+**Nếu con làm nhanh:** Hỏi thêm một câu mà trẻ đoán trước kết quả, rồi đếm để kiểm.
 
 
 ---
 
 ## PHẦN B — Học cái mới
 
-**Kiểm đếm về màu áo các bạn trong lớp**
+**Kiểm đếm về môn học yêu thích**
 
 > **Cô/mẹ đọc lên:** Con đi hỏi từng bạn rồi ghi ngay vào bảng, đừng để nhớ trong đầu.
 
 **Đáp án từng việc**
 
-a) Con đi hỏi và kiểm đếm về màu áo các bạn trong lớp. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về môn học yêu thích. Ghi vào bảng.
    → **trẻ tự thu thập — người lớn kiểm bảng có đủ cột và đủ ô không**
 
 b) Loại nào nhiều nhất trong bảng của con?
@@ -118,23 +117,63 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 ## PHẦN C — Luyện tay
 
+**Đọc bảng số liệu và đoán khả năng**
+
+> **Cô/mẹ đọc lên:** Bảng này do chính lớp mình đếm ra. Con đọc bảng rồi trả lời giúp cô.
+
+**Đáp án từng việc**
+
+a) Lớp 2A khảo sát cách đi học. Kết quả: xe đạp: 5 bạn · ô tô: 9 bạn · xe máy: 11 bạn. Cách nào nhiều bạn chọn nhất?
+   → **xe máy**
+
+b) Cách nào ít bạn chọn nhất?
+   → **xe đạp**
+
+c) Xe máy nhiều hơn xe đạp bao nhiêu bạn?
+   → **11 − 5 = 6 bạn**
+
+d) Lớp khảo sát tất cả bao nhiêu bạn?
+   → **5 + 9 + 11 = 25 bạn**
+
+e) Rút một bạn bất kỳ, bạn ấy đi học bằng máy bay — chắc chắn, có thể hay không thể?
+   → **không thể — không bạn nào trong bảng đi bằng cách ấy**
+
+f) Rút một bạn bất kỳ, bạn ấy đi học bằng một trong ba cách trong bảng — chắc chắn, có thể hay không thể?
+   → **chắc chắn — bảng đã kể hết mọi bạn trong lớp**
+
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Vì sao câu này là 'có thể' chứ không phải 'chắc chắn'?
+
+**Thế nào là con đã hiểu:** Trẻ phân biệt được **chắc chắn** với **có thể**: chắc chắn là không còn khả năng nào khác, còn có thể là vẫn còn khả năng khác. Trẻ hay gộp hai cái này làm một.
+
+**Con tắc thì làm gì:** Diễn lại bằng rổ đồ vật thật: bốc một vật ra khỏi rổ rồi hỏi lại.
+
+**Nếu con làm nhanh:** Thêm một cách đi học không bạn nào chọn, rồi hỏi lại — cột 0 bạn vẫn phải có trong bảng.
+
+
+---
+
+## PHẦN D — Bài toán có lời văn
+
 **Đổi đơn vị và tính trên số đo**
 
 > **Cô/mẹ đọc lên:** Muốn so hai số đo thì phải đưa về cùng một đơn vị đã.
 
 **Đáp án từng việc**
 
-a) 2 dm = … cm
-   → **20 cm**
-
-b) 27 cm + 40 cm = … cm
-   → **67 cm**
-
-c) Điền dấu >, < hoặc = : 9 dm … 85 cm
+a) Điền dấu >, < hoặc = : 3 dm … 12 cm
    → **>**
 
-d) 9 cm + 9 cm = … cm
-   → **18 cm**
+b) 35 cm + 26 cm = … cm
+   → **61 cm**
+
+c) 4 m = … cm
+   → **400 cm**
+
+d) 25 cm + 23 cm = … cm
+   → **48 cm**
+
+e) Điền dấu >, < hoặc = : 5 dm … 97 cm
+   → **<**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Vì sao không so thẳng 5 với 40 được?
 
@@ -147,7 +186,7 @@ d) 9 cm + 9 cm = … cm
 
 ---
 
-## PHẦN D — Bài toán có lời văn
+## PHẦN E — Thử thách vui
 
 **Chắc chắn, có thể, không thể**
 
@@ -155,17 +194,17 @@ d) 9 cm + 9 cm = … cm
 
 **Đáp án từng việc**
 
-a) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+a) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+   → **có thể**
+
+b) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+   → **có thể**
+
+c) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
    → **chắc chắn**
 
-b) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+d) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
    → **không thể**
-
-c) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-   → **không thể**
-
-d) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
-   → **có thể**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
 
@@ -174,40 +213,6 @@ d) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
 **Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
 
 **Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
-
-
----
-
-## PHẦN E — Thử thách vui
-
-**Tìm chỗ sai giúp bạn**
-
-> **Cô/mẹ đọc lên:** Con làm giám khảo nhé. Xem bạn sai ở bước nào rồi sửa lại.
-
-**Đáp án từng việc**
-
-a) Một bạn tính 29 + 19 = 38. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 48**
-
-b) Một bạn tính 25 + 71 = 105. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 96**
-
-c) Một bạn tính 63 + 34 = 106. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 97**
-
-d) Một bạn tính 16 + 37 = 43. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 53**
-
-e) Một bạn tính 19 + 74 = 83. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 93**
-
-**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Làm sao để lần sau bạn ấy không sai như thế nữa?
-
-**Thế nào là con đã hiểu:** Trẻ chỉ ra **bước nào** sai chứ không chỉ nói kết quả sai. Tìm được lỗi của người khác là bước trước khi tự tìm được lỗi của mình.
-
-**Con tắc thì làm gì:** Tính lại cùng trẻ từng hàng, so với bài của bạn ở từng bước.
-
-**Nếu con làm nhanh:** Cho một bài đúng để trẻ khỏi quen là bài nào cũng có lỗi.
 
 
 ---

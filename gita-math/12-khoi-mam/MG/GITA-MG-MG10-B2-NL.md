@@ -42,7 +42,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Một quả bóng hoặc một con thú bông
+- Chỗ trống để trẻ đi được vài bước
 - 10 đồ vật nhỏ giống nhau
 - Hột hạt nhiều màu
 - Không cần gì — dùng ngón tay của trẻ
@@ -51,34 +51,28 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## Chơi khởi động
 
-**Trên – dưới, trước – sau, phải – trái**
+**Vỗ tay theo nhịp rồi bước đo**
 
-> **Cô/mẹ đọc lên:** Con đứng dậy nhé. Cô nói hướng nào thì con đặt quả bóng ở hướng ấy.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng nhịp nhé. Cô làm trước, con nhìn cho kỹ rồi làm tiếp đúng như thế.
 
 **Đáp án từng việc**
 
-a) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
-   → **vật nào ở dưới chân con**
+a) Cô làm mẫu: vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 2 động tác của một lượt, theo đúng thứ tự**
 
-b) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
-   → **vật nào ở tay phải con**
+b) Cô làm mẫu: vỗ tay – vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 3 động tác của một lượt, theo đúng thứ tự**
 
-c) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
-   → **vật nào ở sau lưng con**
+c) Con bước chân nối gót đi hết chiều dài cái bàn. Đếm to xem mấy bước.
+   → **số bước trẻ đếm được — ghi lại để buổi sau đo lại**
 
-d) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
-   → **vật nào ở trên đầu con**
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Sau giậm chân thì đến cái gì? Vì sao con đoán được?
 
-e) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
-   → **vật nào ở trước mặt con**
+**Thế nào là con đã hiểu:** Trẻ làm tiếp đúng thứ tự mà không cần cô nhắc. Quy luật bằng **âm thanh và động tác** dễ nắm hơn quy luật bằng hình vẽ, nên đây là cửa vào tốt cho chủ đề quy luật.
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Nếu con quay người lại thì quả bóng còn ở bên phải con nữa không?
+**Con tắc thì làm gì:** Rút nhịp xuống hai động tác và làm chậm lại. Đọc to tên động tác khi làm.
 
-**Thế nào là con đã hiểu:** Trẻ nhận ra phải – trái **đổi theo hướng mình đứng**, còn trên – dưới thì không đổi. Đây là chỗ khó thật của chủ đề.
-
-**Con tắc thì làm gì:** Buộc một sợi dây màu vào cổ tay phải làm dấu. Bỏ dây khi trẻ đã quen.
-
-**Nếu con làm nhanh:** Đứng đối diện nhau rồi hỏi tay phải của cô ở phía nào của con.
+**Nếu con làm nhanh:** Cho trẻ nghĩ ra nhịp rồi người lớn làm theo — trẻ sẽ tự kiểm tra xem người lớn có làm đúng không.
 
 
 ---
@@ -91,17 +85,17 @@ e) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ 
 
 **Đáp án từng việc**
 
-a) Cô bày 9 bông hoa rải lộn xộn. Con đếm xem có mấy bông?
-   → **9**
+a) Cô bày 6 chiếc lá thành vòng tròn. Con đếm xem có mấy chiếc?
+   → **6**
 
-b) Cô bày 9 chiếc lá thành vòng tròn. Con đếm xem có mấy chiếc?
-   → **9**
+b) Cô bày 8 con cá thành hàng ngang. Con đếm xem có mấy con?
+   → **8**
 
-c) Cô bày 7 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
-   → **7**
+c) Cô bày 5 cái kẹo thành hàng ngang. Con đếm xem có mấy cái?
+   → **5**
 
-d) Cô bày 4 con vịt thành vòng tròn. Con đếm xem có mấy con?
-   → **4**
+d) Cô bày 6 viên bi thành hai hàng. Con đếm xem có mấy viên?
+   → **6**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Cô bày kiểu khác mà vẫn bằng chừng ấy à? Vì sao con biết?
 
@@ -122,17 +116,17 @@ d) Cô bày 4 con vịt thành vòng tròn. Con đếm xem có mấy con?
 
 **Đáp án từng việc**
 
-a) đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
-   → **đỏ**
-
-b) vàng – đỏ – … – đỏ – vàng . Ô trống là màu gì?
+a) vàng – xanh – vàng – xanh – … – xanh . Ô trống là màu gì?
    → **vàng**
 
-c) đỏ – xanh – đỏ – … – đỏ – xanh . Ô trống là màu gì?
+b) đỏ – xanh – đỏ – … – đỏ . Ô trống là màu gì?
    → **xanh**
 
-d) vàng – đỏ – vàng – … – vàng – đỏ – vàng . Ô trống là màu gì?
+c) đỏ – vàng – … – vàng – đỏ – vàng . Ô trống là màu gì?
    → **đỏ**
+
+d) vàng – xanh – vàng – … – vàng . Ô trống là màu gì?
+   → **xanh**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Con kiểm lại xem điền vào rồi dãy còn đúng quy luật không?
 
@@ -153,16 +147,13 @@ d) vàng – đỏ – vàng – … – vàng – đỏ – vàng . Ô trống 
 
 **Đáp án từng việc**
 
-a) 4 con vịt có tất cả mấy cái chân?
-   → **8 cái chân**
-
-b) Con giơ 2 ngón tay ở bàn tay này. Muốn có đúng 4 ngón thì giơ thêm mấy ngón nữa?
+a) Con giơ 4 ngón tay ở bàn tay này. Muốn có đúng 6 ngón thì giơ thêm mấy ngón nữa?
    → **2 ngón**
 
-c) Trên đĩa có 6 viên bi. Con ăn mất 1 viên. Còn mấy viên?
-   → **5 viên**
+b) Con giơ 1 ngón tay ở bàn tay này. Muốn có đúng 3 ngón thì giơ thêm mấy ngón nữa?
+   → **2 ngón**
 
-d) Con giơ 4 ngón tay ở bàn tay này. Muốn có đúng 6 ngón thì giơ thêm mấy ngón nữa?
+c) Con giơ 3 ngón tay ở bàn tay này. Muốn có đúng 5 ngón thì giơ thêm mấy ngón nữa?
    → **2 ngón**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Đoán thử)*: Con nghĩ ra một câu đố đố lại cô đi.

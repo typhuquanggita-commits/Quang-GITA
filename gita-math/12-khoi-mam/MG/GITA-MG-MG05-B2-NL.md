@@ -44,7 +44,7 @@ Bản dành cho: **người lớn ngồi cùng**
 - Chỗ trống để trẻ đứng dậy vận động
 - Không cần gì cả
 - Đồ chơi con vật xếp thành hàng
-- Hột hạt hoặc khối gỗ nhiều màu
+- Không cần gì — dùng ngón tay của trẻ
 
 ---
 
@@ -56,14 +56,14 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Con bước lên phía trước đúng 5 bước nhé. Đếm to lên.
-   → **5**
+a) Con vỗ tay đúng 2 cái nhé. Đếm to lên.
+   → **2**
 
-b) Con vỗ tay đúng 6 cái nhé. Đếm to lên.
-   → **6**
-
-c) Con nhảy đúng 3 cái nhé. Đếm to lên.
+b) Con nhảy đúng 3 cái nhé. Đếm to lên.
    → **3**
+
+c) Con gật đầu đúng 2 cái nhé. Đếm to lên.
+   → **2**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
 
@@ -84,14 +84,14 @@ c) Con nhảy đúng 3 cái nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Con có mấy ngón tay một bàn?
+a) Con có mấy mũi?
+   → **1**
+
+b) Con có mấy mắt?
+   → **2**
+
+c) Con có mấy ngón tay một bàn?
    → **5**
-
-b) Con có mấy tai?
-   → **2**
-
-c) Con có mấy chân?
-   → **2**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Đoán thử)*: Cô cũng có chừng ấy ngón tay à? Bạn nào cũng thế à?
 
@@ -112,17 +112,14 @@ c) Con có mấy chân?
 
 **Đáp án từng việc**
 
-a) Có 5 con mèo xếp thành hàng. Con chỉ vào con thứ năm.
-   → **con ở vị trí thứ 5 tính từ đầu hàng**
-
-b) Có 6 con thỏ xếp thành hàng. Con chỉ vào con thứ hai.
-   → **con ở vị trí thứ 2 tính từ đầu hàng**
-
-c) Có 5 con vịt xếp thành hàng. Con chỉ vào con thứ nhất.
+a) Có 8 con bướm xếp thành hàng. Con chỉ vào con thứ nhất.
    → **con ở vị trí thứ 1 tính từ đầu hàng**
 
-d) Có 5 con thỏ xếp thành hàng. Con chỉ vào con thứ năm.
-   → **con ở vị trí thứ 5 tính từ đầu hàng**
+b) Có 6 con ong xếp thành hàng. Con chỉ vào con thứ sáu.
+   → **con ở vị trí thứ 6 tính từ đầu hàng**
+
+c) Có 6 con chim xếp thành hàng. Con chỉ vào con thứ hai.
+   → **con ở vị trí thứ 2 tính từ đầu hàng**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: “Ba con vịt” với “con vịt thứ ba” có giống nhau không?
 
@@ -137,31 +134,31 @@ d) Có 5 con thỏ xếp thành hàng. Con chỉ vào con thứ năm.
 
 ## Đố vui cuối buổi
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-> **Cô/mẹ đọc lên:** Cô xếp một dãy. Con nhìn kỹ rồi đoán xem cái tiếp theo là gì.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi thôi, dễ lắm. Con trả lời miệng, không phải viết.
 
 **Đáp án từng việc**
 
-a) trắng – đỏ – trắng – đỏ – trắng – đỏ – … Con đoán xem tiếp theo là màu gì?
-   → **trắng**
+a) Số nào đứng ngay trước số 7?
+   → **6**
 
-b) xanh – vàng – xanh – vàng – … Con đoán xem tiếp theo là màu gì?
-   → **xanh**
+b) Con giơ 5 ngón ở tay này, 5 ngón ở tay kia. Tất cả mấy ngón?
+   → **10**
 
-c) xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
-   → **xanh**
+c) Đếm tiếp cho cô: 6 rồi đến số mấy?
+   → **7**
 
-d) xanh – vàng – đỏ – xanh – vàng – đỏ – xanh – vàng – đỏ – … Con đoán xem tiếp theo là màu gì?
-   → **xanh**
+d) Dãy số bị mất một số: 2 , … , 4 , 5 . Mất số nào?
+   → **3**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Vì sao con đoán là màu đó? Con nói quy luật thành một câu xem.
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Đoán thử)*: Con đố lại cô một câu về số đi.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời — “cứ đỏ rồi xanh rồi lại đỏ” — chứ không chỉ chỉ tay vào màu đúng.
+**Thế nào là con đã hiểu:** Trẻ nói ngay số liền sau mà không đếm lại từ 1. Đếm tiếp từ giữa dãy khó hơn đếm từ đầu rất nhiều.
 
-**Con tắc thì làm gì:** Đọc to cả dãy theo nhịp, vỗ tay theo. Nhịp điệu giúp trẻ nghe ra quy luật trước khi nhìn ra.
+**Con tắc thì làm gì:** Cho trẻ đếm từ 1 lên tới chỗ ấy. Đừng chê là chậm — đếm lại từ đầu vẫn là cách đúng.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một quy luật rồi đố lại người lớn — trẻ thích phần này nhất và nó khó hơn hẳn phần đoán.
+**Nếu con làm nhanh:** Hỏi số liền trước — phần này khó hơn hẳn, chỉ hỏi khi trẻ đã chắc số liền sau.
 
 
 ---

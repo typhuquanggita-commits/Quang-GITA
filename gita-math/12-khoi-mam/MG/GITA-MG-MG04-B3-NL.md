@@ -42,7 +42,8 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Chỗ trống để trẻ đứng dậy vận động
+- Hai rổ nhỏ
+- 20 đồ vật giống nhau: hột hạt, nắp chai, kẹo
 - 10 đồ vật nhỏ giống nhau
 - Hai cái đĩa hoặc hai tờ giấy
 - Không cần gì — dùng ngón tay của trẻ
@@ -51,28 +52,31 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## Chơi khởi động
 
-**Nhảy và đếm**
+**Nhìn nhanh — bên nào nhiều hơn**
 
-> **Cô/mẹ đọc lên:** Mình chơi trò làm theo số nhé. Cô nói số mấy thì con làm đúng chừng ấy lần, vừa làm vừa đếm to.
+> **Cô/mẹ đọc lên:** Con nhìn thật nhanh rồi chỉ tay sang bên nhiều hơn. Chỉ xong mình mới đếm để xem con đoán đúng không.
 
 **Đáp án từng việc**
 
-a) Con gật đầu đúng 5 cái nhé. Đếm to lên.
-   → **5**
+a) Cô để 9 con cá bên trái, 2 con cá bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều con hơn?
+   → **bên trái**
 
-b) Con giậm chân đúng 2 cái nhé. Đếm to lên.
-   → **2**
+b) Cô để 3 viên bi bên trái, 2 viên bi bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều viên hơn?
+   → **bên trái**
 
-c) Con nhảy đúng 6 cái nhé. Đếm to lên.
-   → **6**
+c) Cô để 2 quả bóng bên trái, 8 quả bóng bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quả hơn?
+   → **bên phải**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
+d) Cô để 4 quyển vở bên trái, 9 quyển vở bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quyển hơn?
+   → **bên phải**
 
-**Thế nào là con đã hiểu:** Trẻ dừng đúng lúc đếm tới số được yêu cầu, không nhảy thêm vì quán tính. Đếm để **điều khiển hành động** là bước tiến so với chỉ đọc thuộc dãy số.
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con chỉ bên này trước khi đếm. Vì sao con biết bên ấy nhiều hơn?
 
-**Con tắc thì làm gì:** Đếm cùng trẻ, vỗ tay theo nhịp. Giảm xuống số nhỏ hơn 5.
+**Thế nào là con đã hiểu:** Trẻ chỉ đúng khi hai bên chênh nhau rõ mà chưa cần đếm. Đó là **cảm nhận số lượng** — có trước kỹ năng đếm và là nền của mọi việc so sánh sau này.
 
-**Nếu con làm nhanh:** Đếm ngược: nhảy 5 cái rồi đếm 5, 4, 3, 2, 1.
+**Con tắc thì làm gì:** Để hai bên chênh nhau thật nhiều: 2 và 9. Khi trẻ quen mới thu hẹp dần khoảng cách.
+
+**Nếu con làm nhanh:** Để hai bên bằng nhau xem trẻ có nói được 'bằng nhau' không — nhiều trẻ cứ phải chọn một bên.
 
 
 ---
@@ -85,17 +89,14 @@ c) Con nhảy đúng 6 cái nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Cô bày 6 quyển vở thành hai hàng. Con đếm xem có mấy quyển?
-   → **6**
-
-b) Cô bày 10 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
-   → **10**
-
-c) Cô bày 7 chiếc lá rải lộn xộn. Con đếm xem có mấy chiếc?
-   → **7**
-
-d) Cô bày 4 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
+a) Cô bày 4 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
    → **4**
+
+b) Cô bày 4 quả bóng thành hàng ngang. Con đếm xem có mấy quả?
+   → **4**
+
+c) Cô bày 5 con vịt thành hai hàng. Con đếm xem có mấy con?
+   → **5**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Cô bày kiểu khác mà vẫn bằng chừng ấy à? Vì sao con biết?
 
@@ -116,17 +117,17 @@ d) Cô bày 4 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
 
 **Đáp án từng việc**
 
-a) Con có 10 viên bi. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
+a) Con có 7 viên bi. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
+   → **6 cách: 1 và 6, 2 và 5, 3 và 4, 4 và 3, 5 và 2, 6 và 1**
+
+b) Con có 10 viên bi. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
    → **9 cách: 1 và 9, 2 và 8, 3 và 7, 4 và 6, 5 và 5, 6 và 4, 7 và 3, 8 và 2, 9 và 1**
 
-b) Con có 8 quyển vở. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
-   → **7 cách: 1 và 7, 2 và 6, 3 và 5, 4 và 4, 5 và 3, 6 và 2, 7 và 1**
+c) Con có 5 chiếc lá. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
+   → **4 cách: 1 và 4, 2 và 3, 3 và 2, 4 và 1**
 
-c) Con có 8 con cá. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
-   → **7 cách: 1 và 7, 2 và 6, 3 và 5, 4 và 4, 5 và 3, 6 và 2, 7 và 1**
-
-d) Con có 9 quả cam. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
-   → **8 cách: 1 và 8, 2 và 7, 3 và 6, 4 và 5, 5 và 4, 6 và 3, 7 và 2, 8 và 1**
+d) Con có 5 quả bóng. Con chia vào hai cái đĩa, mỗi đĩa phải có ít nhất một cái. Con tìm được mấy cách chia?
+   → **4 cách: 1 và 4, 2 và 3, 3 và 2, 4 và 1**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Chia kiểu nào thì gộp lại vẫn bằng lúc đầu à? Lúc nào cũng thế?
 
@@ -147,14 +148,14 @@ d) Con có 9 quả cam. Con chia vào hai cái đĩa, mỗi đĩa phải có ít
 
 **Đáp án từng việc**
 
-a) Trên đĩa có 4 quyển vở. Con ăn mất 1 quyển. Còn mấy quyển?
-   → **3 quyển**
-
-b) Con giơ 4 ngón tay ở bàn tay này. Muốn có đúng 6 ngón thì giơ thêm mấy ngón nữa?
+a) Con giơ 3 ngón tay ở bàn tay này. Muốn có đúng 5 ngón thì giơ thêm mấy ngón nữa?
    → **2 ngón**
 
-c) 4 con chim có tất cả mấy cái chân?
-   → **8 cái chân**
+b) 2 con chim có tất cả mấy cái chân?
+   → **4 cái chân**
+
+c) Con giơ 2 ngón tay ở bàn tay này. Muốn có đúng 4 ngón thì giơ thêm mấy ngón nữa?
+   → **2 ngón**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Đoán thử)*: Con nghĩ ra một câu đố đố lại cô đi.
 

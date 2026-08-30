@@ -42,41 +42,42 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Chỗ trống để trẻ đứng dậy vận động
+- Hai rổ nhỏ
+- 20 đồ vật giống nhau: hột hạt, nắp chai, kẹo
 - Bút chì, sách, cốc, dây các cỡ khác nhau
 - Tranh có nhiều con vật
 - Bảng kẻ sẵn ô
-- Hột hạt hoặc khối gỗ nhiều màu
+- Vài đồ vật quen thuộc để trẻ chỉ tận tay
 
 ---
 
 ## Chơi khởi động
 
-**Nhảy và đếm**
+**Nhìn nhanh — bên nào nhiều hơn**
 
-> **Cô/mẹ đọc lên:** Mình chơi trò làm theo số nhé. Cô nói số mấy thì con làm đúng chừng ấy lần, vừa làm vừa đếm to.
+> **Cô/mẹ đọc lên:** Con nhìn thật nhanh rồi chỉ tay sang bên nhiều hơn. Chỉ xong mình mới đếm để xem con đoán đúng không.
 
 **Đáp án từng việc**
 
-a) Con gật đầu đúng 3 cái nhé. Đếm to lên.
-   → **3**
+a) Cô để 2 bông hoa bên trái, 4 bông hoa bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều bông hơn?
+   → **bên phải**
 
-b) Con nhảy đúng 7 cái nhé. Đếm to lên.
-   → **7**
+b) Cô để 7 cái bánh bên trái, 3 cái bánh bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều cái hơn?
+   → **bên trái**
 
-c) Con bước lên phía trước đúng 2 bước nhé. Đếm to lên.
-   → **2**
+c) Cô để 3 chiếc lá bên trái, 5 chiếc lá bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều chiếc hơn?
+   → **bên phải**
 
-d) Con giậm chân đúng 4 cái nhé. Đếm to lên.
-   → **4**
+d) Cô để 9 quả cam bên trái, 8 quả cam bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quả hơn?
+   → **bên trái**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con chỉ bên này trước khi đếm. Vì sao con biết bên ấy nhiều hơn?
 
-**Thế nào là con đã hiểu:** Trẻ dừng đúng lúc đếm tới số được yêu cầu, không nhảy thêm vì quán tính. Đếm để **điều khiển hành động** là bước tiến so với chỉ đọc thuộc dãy số.
+**Thế nào là con đã hiểu:** Trẻ chỉ đúng khi hai bên chênh nhau rõ mà chưa cần đếm. Đó là **cảm nhận số lượng** — có trước kỹ năng đếm và là nền của mọi việc so sánh sau này.
 
-**Con tắc thì làm gì:** Đếm cùng trẻ, vỗ tay theo nhịp. Giảm xuống số nhỏ hơn 5.
+**Con tắc thì làm gì:** Để hai bên chênh nhau thật nhiều: 2 và 9. Khi trẻ quen mới thu hẹp dần khoảng cách.
 
-**Nếu con làm nhanh:** Đếm ngược: nhảy 5 cái rồi đếm 5, 4, 3, 2, 1.
+**Nếu con làm nhanh:** Để hai bên bằng nhau xem trẻ có nói được 'bằng nhau' không — nhiều trẻ cứ phải chọn một bên.
 
 
 ---
@@ -89,16 +90,13 @@ d) Con giậm chân đúng 4 cái nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Con tìm 3 sợi dây rồi xếp theo thứ tự từ ngắn nhất đến dài nhất.
+a) Con tìm 3 cái cốc rồi xếp theo thứ tự từ nhỏ nhất đến to nhất.
    → **trẻ tự xếp — người lớn kiểm bằng cách đặt cạnh nhau**
 
-b) Con tìm 4 quyển sách rồi xếp theo thứ tự từ mỏng nhất đến dày nhất.
+b) Con tìm 3 cây bút chì rồi xếp theo thứ tự từ ngắn nhất đến dài nhất.
    → **trẻ tự xếp — người lớn kiểm bằng cách đặt cạnh nhau**
 
-c) Con tìm 4 cái cốc rồi xếp theo thứ tự từ nhỏ nhất đến to nhất.
-   → **trẻ tự xếp — người lớn kiểm bằng cách đặt cạnh nhau**
-
-d) Con tìm 4 bạn trong nhà rồi xếp theo thứ tự từ thấp nhất đến cao nhất.
+c) Con tìm 4 quyển sách rồi xếp theo thứ tự từ mỏng nhất đến dày nhất.
    → **trẻ tự xếp — người lớn kiểm bằng cách đặt cạnh nhau**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Nói cho người khác tin)*: Vì sao con biết cái này dài hơn cái kia? Con chỉ cho cô xem.
@@ -120,7 +118,7 @@ d) Con tìm 4 bạn trong nhà rồi xếp theo thứ tự từ thấp nhất đ
 
 **Đáp án từng việc**
 
-a) Trong tranh có bướm: 8 con, gà: 3 con, ong: 4 con, cá: 3 con. Con vật nào nhiều nhất?
+a) Trong tranh có bướm: 7 con, chim: 3 con, ong: 6 con, gà: 2 con. Con vật nào nhiều nhất?
    → **bướm**
 
 b) Con vật nào ít nhất?
@@ -142,31 +140,31 @@ c) Có tất cả bao nhiêu con?
 
 ## Đố vui cuối buổi
 
-**Đoán tiếp dãy**
+**Đố vui so sánh**
 
-> **Cô/mẹ đọc lên:** Cô xếp một dãy. Con nhìn kỹ rồi đoán xem cái tiếp theo là gì.
+> **Cô/mẹ đọc lên:** Cuối buổi mình đố nhau nhé. Con trả lời rồi giải thích vì sao.
 
 **Đáp án từng việc**
 
-a) vàng – đỏ – vàng – đỏ – … Con đoán xem tiếp theo là màu gì?
-   → **vàng**
+a) Quyển vở và quyển từ điển: cái nào to hơn?
+   → **quyển từ điển**
 
-b) trắng – xanh – trắng – xanh – … Con đoán xem tiếp theo là màu gì?
-   → **trắng**
+b) Cái ấm và cái cốc: cái nào to hơn?
+   → **cái ấm**
 
-c) trắng – vàng – trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
-   → **trắng**
+c) Cái bút và cái thước: cái nào to hơn?
+   → **cái thước**
 
-d) trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
-   → **trắng**
+d) Cô có 5 cái kẹo, con có 6 cái. Ai nhiều hơn?
+   → **con nhiều hơn, nhiều hơn 1 cái**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Vì sao con đoán là màu đó? Con nói quy luật thành một câu xem.
+**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Vì sao con biết cái ấy to hơn? Con đo thử cho cô xem.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời — “cứ đỏ rồi xanh rồi lại đỏ” — chứ không chỉ chỉ tay vào màu đúng.
+**Thế nào là con đã hiểu:** Trẻ trả lời được cả khi hai vật không có sẵn trước mặt — tức là đã so sánh **trong đầu**, không cần nhìn.
 
-**Con tắc thì làm gì:** Đọc to cả dãy theo nhịp, vỗ tay theo. Nhịp điệu giúp trẻ nghe ra quy luật trước khi nhìn ra.
+**Con tắc thì làm gì:** Đặt hai vật thật cạnh nhau cho trẻ nhìn. So sánh bằng mắt trước, so sánh trong đầu sau.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một quy luật rồi đố lại người lớn — trẻ thích phần này nhất và nó khó hơn hẳn phần đoán.
+**Nếu con làm nhanh:** Hỏi một cặp mà trẻ phải nghĩ: cái cặp sách và cái ghế — không phải cặp nào cũng dễ.
 
 
 ---

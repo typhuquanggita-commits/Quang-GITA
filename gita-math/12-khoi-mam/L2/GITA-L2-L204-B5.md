@@ -28,71 +28,73 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Chuyền bóng nhẩm nhanh**
 
-a) Số 295 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Lớp 2A có 39 bạn, lớp 2B ít hơn 9 bạn. Lớp 2B mấy bạn?
 
-b) Tính nhẩm: 800 + 100
+b) 61 − 35 = …
 
-c) Tính nhẩm: 300 + 100
+c) 24 + 8 = …
 
-d) Số 870 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-e) Tính nhẩm: 400 + 500
+d) Anh có 35 viên bi, em nhiều hơn anh 13 viên. Em có mấy viên?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Vì sao phải nhớ**
 
-a) Tính 81 + 33. Cộng hàng đơn vị trước: 1 + 3 = 4. Vì sao phải nhớ sang hàng chục?
+a) Tính 83 + 57. Cộng hàng đơn vị trước: 3 + 7 = 10. Có phải nhớ sang hàng chục không? Vì sao?
 
-b) Tính 29 + 28. Cộng hàng đơn vị trước: 9 + 8 = 17. Vì sao phải nhớ sang hàng chục?
+b) Tính 19 + 73. Cộng hàng đơn vị trước: 9 + 3 = 12. Có phải nhớ sang hàng chục không? Vì sao?
 
-c) Tính 33 + 67. Cộng hàng đơn vị trước: 3 + 7 = 10. Vì sao phải nhớ sang hàng chục?
+c) Tính 34 + 65. Cộng hàng đơn vị trước: 4 + 5 = 9. Có phải nhớ sang hàng chục không? Vì sao?
 
-d) Tính 70 + 51. Cộng hàng đơn vị trước: 0 + 1 = 1. Vì sao phải nhớ sang hàng chục?
+d) Tính 47 + 27. Cộng hàng đơn vị trước: 7 + 7 = 14. Có phải nhớ sang hàng chục không? Vì sao?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Nhiều hơn, ít hơn một số đơn vị**
 
-a) Tèo có 28 chiếc lá. Nam có ít hơn Tèo 20 chiếc. Hỏi Nam có mấy chiếc?
+a) Bo có 23 cái bánh. Tí có ít hơn Bo 7 cái. Hỏi Tí có mấy cái?
 
-b) Tèo có 20 con cá. Tí có nhiều hơn Tèo 17 con. Hỏi Tí có mấy con?
+b) Bo có 33 chiếc lá. Nam có nhiều hơn Bo 12 chiếc. Hỏi Nam có mấy chiếc?
 
-c) Nam có 73 quyển vở. Bơ có nhiều hơn Nam 5 quyển. Hỏi Bơ có mấy quyển?
+c) Mai có 35 quyển vở. Bơ có nhiều hơn Mai 7 quyển. Hỏi Bơ có mấy quyển?
 
-d) Na có 69 quả cam. Cốm có ít hơn Na 7 quả. Hỏi Cốm có mấy quả?
+d) Bo có 46 cái kẹo. Bi có ít hơn Bo 17 cái. Hỏi Bi có mấy cái?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bài toán nhân, chia**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Có 40 con cá chia đều vào 5 hộp. Mỗi hộp có mấy con?
+a) Bạn Bi có 477 con tem. Bạn Tí có ít hơn bạn Bi 160 con tem. Bạn Tí có bao nhiêu con tem?
 
-b) Mỗi hộp có 2 cái bánh. Hỏi 2 hộp có mấy cái?
+b) Bạn Tí có 610 quyển sách. Bạn Bi có ít hơn bạn Tí 30 quyển sách. Bạn Bi có bao nhiêu quyển sách?
 
-c) Mỗi hộp có 2 viên bi. Hỏi 5 hộp có mấy viên?
+c) Bạn Bơ có 399 cái nhãn vở. Bạn An có ít hơn bạn Bơ 80 cái nhãn vở. Bạn An có bao nhiêu cái nhãn vở?
 
-d) Có 25 con vịt chia đều vào 5 hộp. Mỗi hộp có mấy con?
+d) Bạn Cốm có 275 cái nhãn vở. Bạn Tí có ít hơn bạn Cốm 40 cái nhãn vở. Bạn Tí có bao nhiêu cái nhãn vở?
+
+e) Bạn Na có 268 con tem. Bạn An có nhiều hơn bạn Na 100 con tem. Bạn An có bao nhiêu con tem?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đọc biểu đồ tranh**
 
-a) Một bạn tính 70 + 22 = 101. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) - táo: 🍎🍎🍎🍎🍎🍎  (6 quả)
+- cam: 🍎🍎🍎🍎  (4 quả)
+- chuối: 🍎🍎  (2 quả)
 
-b) Một bạn tính 53 + 73 = 135. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+Loại quả nào nhiều nhất?
 
-c) Một bạn tính 49 + 31 = 70. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Loại quả nào ít nhất?
 
-d) Một bạn tính 58 + 37 = 85. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Táo nhiều hơn chuối mấy quả?
 
-e) Một bạn tính 37 + 36 = 63. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+d) Tất cả có mấy quả?
 
 
 ---
@@ -101,8 +103,8 @@ e) Một bạn tính 37 + 36 = 63. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
+- ☐ Chuyền bóng nhẩm nhanh
 - ☐ Vì sao phải nhớ
 - ☐ Nhiều hơn, ít hơn một số đơn vị
-- ☐ Bài toán nhân, chia
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Bài toán nhiều hơn – ít hơn
+- ☐ Đọc biểu đồ tranh

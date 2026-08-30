@@ -30,56 +30,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **So sánh số trong phạm vi 100**
 
-a) Điền dấu >, < hoặc = : 41 … 70
+a) Điền dấu >, < hoặc = : 92 … 23
 
-b) Điền dấu >, < hoặc = : 94 … 90
+b) Điền dấu >, < hoặc = : 71 … 47
 
-c) Điền dấu >, < hoặc = : 41 … 100
+c) Điền dấu >, < hoặc = : 37 … 68
 
-d) Điền dấu >, < hoặc = : 55 … 87
+d) Điền dấu >, < hoặc = : 13 … 73
 
-e) Điền dấu >, < hoặc = : 38 … 12
+e) Điền dấu >, < hoặc = : 65 … 46
+
+f) Điền dấu >, < hoặc = : 53 … 23
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 86 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 72 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 18 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 93 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 50 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 79 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 54 que tính. Con lấy mấy bó và mấy que rời?
+
+e) Con lấy đúng 79 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) … + 1 = 9
+a) … + 5 = 10
 
-b) … + 2 = 9
+b) … + 7 = 10
 
-c) 8 + … = 9
+c) 3 + … = 7
 
-d) … + 8 = 10
+d) 9 + … = 10
 
-e) 4 + … = 5
+e) … + 1 = 5
+
+f) … + 1 = 4
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Số bí mật**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 6 = 6.
+a) Số bí mật đứng liền sau 84 và liền trước 86. Số nào?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 5 + 9 = 14.
+b) Số bí mật đứng liền sau 18 và liền trước 20. Số nào?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 5 = 5.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 9 + 8 = 17.
+c) Số bí mật đứng liền sau 33 và liền trước 35. Số nào?
 
 
 ---
@@ -91,4 +95,4 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 9 + 8 = 17.
 - ☐ So sánh số trong phạm vi 100
 - ☐ Lấy đúng số que tính
 - ☐ Tìm số còn thiếu
-- ☐ Tự đặt một bài toán
+- ☐ Số bí mật

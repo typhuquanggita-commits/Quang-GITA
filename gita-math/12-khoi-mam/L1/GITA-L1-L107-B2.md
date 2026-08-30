@@ -28,64 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**So sánh số trong phạm vi 20**
 
-a) Điền dấu >, < hoặc = : 7 … 2
+a) Điền dấu >, < hoặc = : 2 … 6
 
-b) Điền dấu >, < hoặc = : 8 … 7
+b) Điền dấu >, < hoặc = : 6 … 16
 
-c) Điền dấu >, < hoặc = : 2 … 1
+c) Điền dấu >, < hoặc = : 18 … 3
 
-d) Điền dấu >, < hoặc = : 4 … 3
+d) Điền dấu >, < hoặc = : 9 … 5
 
-e) Điền dấu >, < hoặc = : 7 … 10
-
-f) Điền dấu >, < hoặc = : 8 … 7
+e) Điền dấu >, < hoặc = : 3 … 7
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Chục và đơn vị**
 
-a) Số 64 gồm mấy chục và mấy đơn vị?
+a) Số 13 gồm mấy chục và mấy đơn vị?
 
-b) Số 77 gồm mấy chục và mấy đơn vị?
+b) Số 80 gồm mấy chục và mấy đơn vị?
 
-c) Số 89 gồm mấy chục và mấy đơn vị?
+c) Số 72 gồm mấy chục và mấy đơn vị?
 
-d) Số 74 gồm mấy chục và mấy đơn vị?
+d) Số 65 gồm mấy chục và mấy đơn vị?
 
-e) Số 73 gồm mấy chục và mấy đơn vị?
+e) Số 76 gồm mấy chục và mấy đơn vị?
+
+f) Số 46 gồm mấy chục và mấy đơn vị?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Vẽ một đoạn thẳng dài 10 cm.
+a) Viết số: 4 mươi 2
 
-b) Trong hình có mấy đoạn thẳng?
+b) Vẽ một đoạn thẳng dài 15 cm.
 
-c) Viết số: 4 mươi 7
+c) Trong hình có mấy đoạn thẳng?
 
-d) Viết số: 2 mươi 1
-
-e) Vẽ một đoạn thẳng dài 6 cm.
+d) Vẽ một đoạn thẳng dài 8 cm.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Số bí mật**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 7 = 21.
+a) Số bí mật đứng liền sau 64 và liền trước 66. Số nào?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 5 = 6.
+b) Số bí mật đứng liền sau 19 và liền trước 21. Số nào?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 3 = 6.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 8 − 5 = 3.
-
-e) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 6 = 0.
+c) Số bí mật đứng liền sau 56 và liền trước 58. Số nào?
 
 
 ---
@@ -94,7 +88,7 @@ e) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 6 = 0.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ So sánh số trong phạm vi 20
 - ☐ Chục và đơn vị
 - ☐ Vẽ, đo và viết số
-- ☐ Tự đặt một bài toán
+- ☐ Số bí mật

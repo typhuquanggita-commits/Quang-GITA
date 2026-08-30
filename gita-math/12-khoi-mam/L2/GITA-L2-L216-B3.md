@@ -28,22 +28,22 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Khảo sát chớp nhoáng**
 
-a) 30 : 5 = …
+a) Bạn nào thích ăn phở hơn ăn bún thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-b) 2 × 7 = …
+b) Bạn nào đi học bằng xe máy thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-c) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2
+c) Tháng sau lớp mình được nghỉ một ngày — chắc chắn, có thể hay không thể?
 
-d) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
+d) Ngày mai mặt trời mọc ở hướng đông — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
-**Kiểm đếm về món ăn sáng của các bạn**
+**Kiểm đếm về màu áo các bạn trong lớp**
 
-a) Con đi hỏi và kiểm đếm về món ăn sáng của các bạn. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về màu áo các bạn trong lớp. Ghi vào bảng.
 
 b) Loại nào nhiều nhất trong bảng của con?
 
@@ -56,43 +56,43 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 **Đổi đơn vị và tính trên số đo**
 
-a) Điền dấu >, < hoặc = : 3 dm … 99 cm
+a) 8 m = … dm
 
-b) 36 cm + 37 cm = … cm
+b) Điền dấu >, < hoặc = : 4 dm … 15 cm
 
-c) 8 dm = … cm
+c) 18 cm + 37 cm = … cm
 
-d) Điền dấu >, < hoặc = : 6 dm … 12 cm
+d) Điền dấu >, < hoặc = : 5 dm … 56 cm
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đọc bảng số liệu và đoán khả năng**
 
-a) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+a) Lớp 2A khảo sát cách đi học. Kết quả: xe buýt: 14 bạn · đi bộ: 3 bạn · ô tô: 12 bạn. Cách nào nhiều bạn chọn nhất?
 
-b) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+b) Cách nào ít bạn chọn nhất?
 
-c) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+c) Xe buýt nhiều hơn đi bộ bao nhiêu bạn?
 
-d) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+d) Lớp khảo sát tất cả bao nhiêu bạn?
 
-e) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+e) Rút một bạn bất kỳ, bạn ấy đi học bằng máy bay — chắc chắn, có thể hay không thể?
 
-f) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+f) Rút một bạn bất kỳ, bạn ấy đi học bằng một trong ba cách trong bảng — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Chắc chắn, có thể, không thể**
 
-a) Một bạn tính 46 + 80 = 135. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
 
-b) Một bạn tính 81 + 52 = 142. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
 
-c) Một bạn tính 67 + 32 = 108. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
 
-d) Một bạn tính 86 + 79 = 155. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
 
 
 ---
@@ -101,8 +101,8 @@ d) Một bạn tính 86 + 79 = 155. Bạn ấy sai ở đâu? Kết quả đúng
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
-- ☐ Kiểm đếm về món ăn sáng của các bạn
+- ☐ Khảo sát chớp nhoáng
+- ☐ Kiểm đếm về màu áo các bạn trong lớp
 - ☐ Đổi đơn vị và tính trên số đo
+- ☐ Đọc bảng số liệu và đoán khả năng
 - ☐ Chắc chắn, có thể, không thể
-- ☐ Tìm chỗ sai giúp bạn

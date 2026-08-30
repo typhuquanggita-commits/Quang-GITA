@@ -28,64 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**So sánh số trong phạm vi 10**
 
-a) Điền dấu >, < hoặc = : 14 … 82
+a) Điền dấu >, < hoặc = : 7 … 5
 
-b) Điền dấu >, < hoặc = : 87 … 32
+b) Điền dấu >, < hoặc = : 1 … 3
 
-c) Điền dấu >, < hoặc = : 39 … 17
+c) Điền dấu >, < hoặc = : 5 … 2
 
-d) Điền dấu >, < hoặc = : 97 … 82
-
-e) Điền dấu >, < hoặc = : 29 … 69
-
-f) Điền dấu >, < hoặc = : 7 … 9
+d) Điền dấu >, < hoặc = : 5 … 4
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 97 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 58 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 96 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 72 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 65 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 91 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 75 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) 7 + … = 9
+a) 1 + … = 10
 
-b) 1 + … = 9
+b) … + 1 = 10
 
-c) … + 1 = 10
+c) 8 + … = 9
 
-d) 9 + … = 10
+d) … + 3 = 9
 
-e) 3 + … = 7
+e) … + 3 = 8
 
 f) 7 + … = 10
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) 5, 15, 25, 35, …
+a) Số bí mật đứng liền sau 78 và liền trước 80. Số nào?
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
+b) Số bí mật đứng liền sau 55 và liền trước 57. Số nào?
 
-c) 3, 6, 12, …
+c) 12 và 59: số nào lớn hơn?
 
-d) 10, 12, 14, 16, …
-
-e) 2, 4, 8, …
+d) Số bí mật đứng liền sau 93 và liền trước 95. Số nào?
 
 
 ---
@@ -94,7 +88,7 @@ e) 2, 4, 8, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ So sánh số trong phạm vi 10
 - ☐ Lấy đúng số que tính
 - ☐ Tìm số còn thiếu
-- ☐ Tìm quy luật
+- ☐ Số bí mật

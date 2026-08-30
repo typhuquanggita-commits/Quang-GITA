@@ -45,7 +45,7 @@ Bản dành cho: **người lớn ngồi cùng**
 - 10 đồ vật nhỏ giống nhau
 - Bộ thẻ số từ 1 đến 10
 - Các nhóm đồ vật đặt sẵn
-- Hột hạt hoặc khối gỗ nhiều màu
+- Không cần gì — dùng ngón tay của trẻ
 
 ---
 
@@ -57,17 +57,14 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Con vỗ tay đúng 7 cái nhé. Đếm to lên.
-   → **7**
+a) Con nhảy đúng 6 cái nhé. Đếm to lên.
+   → **6**
 
-b) Con bước lên phía trước đúng 5 bước nhé. Đếm to lên.
-   → **5**
-
-c) Con gật đầu đúng 5 cái nhé. Đếm to lên.
-   → **5**
-
-d) Con nhảy đúng 4 cái nhé. Đếm to lên.
+b) Con gật đầu đúng 4 cái nhé. Đếm to lên.
    → **4**
+
+c) Con giậm chân đúng 3 cái nhé. Đếm to lên.
+   → **3**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
 
@@ -88,17 +85,17 @@ d) Con nhảy đúng 4 cái nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Cô bày 9 cái kẹo thành hàng ngang. Con đếm xem có mấy cái?
-   → **9**
-
-b) Cô bày 6 con cá thành hai hàng. Con đếm xem có mấy con?
+a) Cô bày 6 chiếc lá thành hai hàng. Con đếm xem có mấy chiếc?
    → **6**
 
-c) Cô bày 4 quả bóng rải lộn xộn. Con đếm xem có mấy quả?
-   → **4**
+b) Cô bày 10 quả bóng thành hàng ngang. Con đếm xem có mấy quả?
+   → **10**
 
-d) Cô bày 8 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
+c) Cô bày 8 con cá rải lộn xộn. Con đếm xem có mấy con?
    → **8**
+
+d) Cô bày 4 quyển vở thành hàng ngang. Con đếm xem có mấy quyển?
+   → **4**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Cô bày kiểu khác mà vẫn bằng chừng ấy à? Vì sao con biết?
 
@@ -119,14 +116,20 @@ d) Cô bày 8 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
 
 **Đáp án từng việc**
 
-a) Ô này có 6 quả cam. Con tìm thẻ số nào đặt vào ô đó?
-   → **6**
+a) Ô này có 9 quả cam. Con tìm thẻ số nào đặt vào ô đó?
+   → **9**
 
-b) Ô này có 4 cái bánh. Con tìm thẻ số nào đặt vào ô đó?
-   → **4**
+b) Ô này có 3 cái bánh. Con tìm thẻ số nào đặt vào ô đó?
+   → **3**
 
-c) Ô này có 2 cái kẹo. Con tìm thẻ số nào đặt vào ô đó?
+c) Ô này có 10 cái bánh. Con tìm thẻ số nào đặt vào ô đó?
+   → **10**
+
+d) Ô này có 2 quyển vở. Con tìm thẻ số nào đặt vào ô đó?
    → **2**
+
+e) Ô này có 5 quả cam. Con tìm thẻ số nào đặt vào ô đó?
+   → **5**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Cho một ví dụ)*: Hai ô này cùng đặt thẻ số 5, chúng giống nhau ở chỗ nào?
 
@@ -141,28 +144,28 @@ c) Ô này có 2 cái kẹo. Con tìm thẻ số nào đặt vào ô đó?
 
 ## Đố vui cuối buổi
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-> **Cô/mẹ đọc lên:** Cô xếp một dãy. Con nhìn kỹ rồi đoán xem cái tiếp theo là gì.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi thôi, dễ lắm. Con trả lời miệng, không phải viết.
 
 **Đáp án từng việc**
 
-a) đỏ – vàng – trắng – đỏ – vàng – trắng – đỏ – vàng – trắng – … Con đoán xem tiếp theo là màu gì?
-   → **đỏ**
+a) Đếm tiếp cho cô: 1 rồi đến số mấy?
+   → **2**
 
-b) vàng – đỏ – vàng – đỏ – vàng – đỏ – … Con đoán xem tiếp theo là màu gì?
-   → **vàng**
+b) Số nào đứng ngay trước số 4?
+   → **3**
 
-c) xanh – đỏ – xanh – đỏ – … Con đoán xem tiếp theo là màu gì?
-   → **xanh**
+c) Con giơ 2 ngón ở tay này, 2 ngón ở tay kia. Tất cả mấy ngón?
+   → **4**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Vì sao con đoán là màu đó? Con nói quy luật thành một câu xem.
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Đoán thử)*: Con đố lại cô một câu về số đi.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời — “cứ đỏ rồi xanh rồi lại đỏ” — chứ không chỉ chỉ tay vào màu đúng.
+**Thế nào là con đã hiểu:** Trẻ nói ngay số liền sau mà không đếm lại từ 1. Đếm tiếp từ giữa dãy khó hơn đếm từ đầu rất nhiều.
 
-**Con tắc thì làm gì:** Đọc to cả dãy theo nhịp, vỗ tay theo. Nhịp điệu giúp trẻ nghe ra quy luật trước khi nhìn ra.
+**Con tắc thì làm gì:** Cho trẻ đếm từ 1 lên tới chỗ ấy. Đừng chê là chậm — đếm lại từ đầu vẫn là cách đúng.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một quy luật rồi đố lại người lớn — trẻ thích phần này nhất và nó khó hơn hẳn phần đoán.
+**Nếu con làm nhanh:** Hỏi số liền trước — phần này khó hơn hẳn, chỉ hỏi khi trẻ đã chắc số liền sau.
 
 
 ---

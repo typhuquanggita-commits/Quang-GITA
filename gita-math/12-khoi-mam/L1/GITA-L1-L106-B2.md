@@ -30,58 +30,52 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Các thứ trong tuần**
 
-a) Hôm nay là thứ Bảy. Hôm qua là thứ mấy?
+a) Ngày thứ 1 của tuần là thứ mấy?
 
-b) Hôm nay là thứ Ba. Ngày mai là thứ mấy?
+b) Hôm nay là thứ Tư. Ngày mai là thứ mấy?
 
-c) Hôm nay là thứ Ba. Ngày mai là thứ mấy?
+c) Ngày thứ 4 của tuần là thứ mấy?
 
-d) Hôm nay là thứ Tư. Ngày mai là thứ mấy?
-
-e) Hôm nay là thứ Hai. Ngày mai là thứ mấy?
+d) Hôm nay là thứ Sáu. Ngày mai là thứ mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Đo độ dài và xem giờ đúng**
 
-a) Kim ngắn chỉ số 10, kim dài chỉ số 12. Mấy giờ?
+a) Kim ngắn chỉ số 8, kim dài chỉ số 12. Mấy giờ?
 
-b) Đoạn thẳng dài 6 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+b) Đoạn thẳng dài 4 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
-c) Kim ngắn chỉ số 12, kim dài chỉ số 12. Mấy giờ?
+c) Kim ngắn chỉ số 11, kim dài chỉ số 12. Mấy giờ?
 
-d) Đoạn thẳng dài 17 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+d) Đoạn thẳng dài 18 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+
+e) Đoạn thẳng dài 9 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Vẽ một đoạn thẳng dài 9 cm.
+a) Trong hình có mấy đoạn thẳng?
 
-b) Trong hình có mấy đoạn thẳng?
+b) Viết số: 4 mươi 8
 
-c) Viết số: 4 mươi 7
+c) Vẽ một đoạn thẳng dài 4 cm.
 
-d) Trong hình có mấy đoạn thẳng?
-
-e) Vẽ một đoạn thẳng dài 13 cm.
-
-f) Viết số: 3 mươi 2
+d) Vẽ một đoạn thẳng dài 11 cm.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Đếm hình trong hình ghép**
+**Đố vui đo và xem giờ**
 
-a) Trong hình bên có mấy hình tam giác?
+a) Con đoán cái bút chì dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-b) Trong hình bên có mấy hình chữ nhật?
+b) Con đoán bàn chân của con dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-c) Trong hình bên có mấy hình tròn?
-
-d) Trong hình bên có mấy hình chữ nhật?
+c) Kim ngắn chỉ số 9, kim dài chỉ số 12. Mấy giờ rồi? Giờ ấy nhà con thường làm gì?
 
 
 ---
@@ -93,4 +87,4 @@ d) Trong hình bên có mấy hình chữ nhật?
 - ☐ Các thứ trong tuần
 - ☐ Đo độ dài và xem giờ đúng
 - ☐ Vẽ, đo và viết số
-- ☐ Đếm hình trong hình ghép
+- ☐ Đố vui đo và xem giờ

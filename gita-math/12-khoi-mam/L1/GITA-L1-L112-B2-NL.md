@@ -41,7 +41,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Bảng số từ 1 đến 100 dán trên tường (nếu có)
 - Que tính bó thành chục
 - Bút chì để gạch chân
 - Que tính để xếp hình
@@ -50,34 +50,31 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**Đếm nối tiếp theo bước**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình đếm nhảy cóc nhé. Không đếm từng số một, mà nhảy hai số, năm số, mười số một lần.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 3 … 10
-   → **<**
+a) Đếm tiếp cho cô: 2 , 4 , 6 , 8 , … Số tiếp theo là mấy?
+   → **10**
 
-b) Điền dấu >, < hoặc = : 8 … 3
-   → **>**
+b) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
+   → **50**
 
-c) Điền dấu >, < hoặc = : 10 … 9
-   → **>**
+c) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
+   → **25**
 
-d) Điền dấu >, < hoặc = : 4 … 6
-   → **<**
+d) Đếm từ 40 lên, mỗi lần thêm 10, đếm 3 lần.
+   → **50 , 60 , 70**
 
-e) Điền dấu >, < hoặc = : 8 … 3
-   → **>**
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Đếm cách 10 thì chữ số nào đứng yên, chữ số nào đổi?
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Thế nào là con đã hiểu:** Trẻ đếm cách 10 mà không phải nhẩm cộng từng lần — nhận ra chỉ có chữ số hàng chục thay đổi. Đây là bước đầu tiên trẻ nhìn thấy **cấu tạo chục – đơn vị** của số.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
+**Con tắc thì làm gì:** Chỉ tay trên bảng số 100 khi đếm, cho trẻ thấy mình nhảy sang cột nào.
 
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Đếm lùi cách 10 từ 90 xuống — khó hơn hẳn đếm lên.
 
 
 ---
@@ -90,17 +87,17 @@ e) Điền dấu >, < hoặc = : 8 … 3
 
 **Đáp án từng việc**
 
-a) 60 + 30 = …
-   → **90**
-
-b) 60 − 50 = …
+a) 40 − 30 = …
    → **10**
 
-c) 90 − 40 = …
+b) 60 + 10 = …
+   → **70**
+
+c) 80 − 30 = …
    → **50**
 
-d) 50 + 20 = …
-   → **70**
+d) 80 + 10 = …
+   → **90**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con biết 3 + 2 = 5. Vậy 30 + 20 bằng mấy? Vì sao giống nhau thế?
 
@@ -121,20 +118,23 @@ d) 50 + 20 = …
 
 **Đáp án từng việc**
 
-a) Cốm có 19 viên bi. An có 16 viên. Cả hai bạn có tất cả mấy viên?
-   → **35 viên**
+a) 4, 5, 6, 7, … Số tiếp theo là số nào?
+   → **8**
 
-b) 9, 14, 19, 24, … Số tiếp theo là số nào?
-   → **29**
+b) Bo có 13 cái kẹo. Tí có 19 cái. Cả hai bạn có tất cả mấy cái?
+   → **32 cái**
 
-c) 19, 24, 29, 34, … Số tiếp theo là số nào?
-   → **39**
+c) 7, 12, 17, 22, … Số tiếp theo là số nào?
+   → **27**
 
-d) Bi có 20 quả cam. Mai có 2 quả. Cả hai bạn có tất cả mấy quả?
-   → **22 quả**
+d) Bơ có 6 bông hoa. Tí có 11 bông. Cả hai bạn có tất cả mấy bông?
+   → **17 bông**
 
-e) 12, 13, 14, 15, … Số tiếp theo là số nào?
-   → **16**
+e) 15, 25, 35, 45, … Số tiếp theo là số nào?
+   → **55**
+
+f) Bi có 15 quả bóng. Na có 11 quả. Cả hai bạn có tất cả mấy quả?
+   → **26 quả**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Đoán thử)*: Con nghĩ dãy này cứ thế mãi thì số thứ mười là số nào?
 
@@ -155,17 +155,17 @@ e) 12, 13, 14, 15, … Số tiếp theo là số nào?
 
 **Đáp án từng việc**
 
-a) 1, 2, 4, …
-   → **8**
+a) 2, 4, 8, …
+   → **16**
 
-b) 1, 4, 7, 10, …
-   → **13**
+b) 1, 2, 4, …
+   → **8**
 
 c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
    → **13 que**
 
-d) 8, 13, 18, 23, …
-   → **28**
+d) 12, 22, 32, 42, …
+   → **52**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
 

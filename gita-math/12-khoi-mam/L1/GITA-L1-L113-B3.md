@@ -28,62 +28,62 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 4 … 88
+a) 5 thêm 3 là mấy?
 
-b) Điền dấu >, < hoặc = : 45 … 88
+b) 10 bớt 5 còn mấy?
 
-c) Điền dấu >, < hoặc = : 32 … 60
+c) Con giơ 6 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 7?
 
-d) Điền dấu >, < hoặc = : 90 … 33
+d) 4 thêm 2 là mấy?
+
+e) 9 bớt 2 còn mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Bo có 4 quả cam, mẹ cho thêm 3 quả. Bo có tất cả mấy quả?
+a) Nam có 5 viên bi, cho bạn 3 viên. Nam còn lại mấy viên?
 
-b) An có 5 con vịt, cho bạn 2 con. An còn lại mấy con?
+b) Bi có 3 cái bánh, mẹ cho thêm 1 cái. Bi có tất cả mấy cái?
 
-c) Mai có 2 quả cam, mẹ cho thêm 1 quả. Mai có tất cả mấy quả?
+c) Na có 4 cái kẹo, mẹ cho thêm 2 cái. Na có tất cả mấy cái?
 
-d) Na có 6 bông hoa, cho bạn 4 bông. Na còn lại mấy bông?
-
-e) Na có 3 cái kẹo, mẹ cho thêm 3 cái. Na có tất cả mấy cái?
-
-f) Nam có 5 bông hoa, cho bạn 1 bông. Nam còn lại mấy bông?
+d) Cốm có 5 quyển vở, cho bạn 1 quyển. Cốm còn lại mấy quyển?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
-**Tìm số còn thiếu**
+**Tính nhanh**
 
-a) 5 + … = 6
+a) 5 + 3 = …
 
-b) … + 1 = 10
+b) 3 + 4 = …
 
-c) … + 1 = 8
+c) 16 + 4 = …
 
-d) … + 2 = 9
+d) 17 + 3 = …
 
-e) … + 2 = 6
+e) 10 + 7 = …
+
+f) 13 + 5 = …
+
+g) 12 + 6 = …
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-a) 2, 4, 8, …
+a) 3 con gà có mấy cái chân?
 
-b) 8, 10, 12, 14, …
+b) 4 con vịt có mấy cái chân?
 
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
+c) Bàn ăn có 5 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-d) 3, 6, 12, …
-
-e) 10, 20, 30, 40, …
+d) Mẹ nướng 10 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 10. Ăn mất 5 cái thì còn mấy cái?
 
 
 ---
@@ -92,7 +92,7 @@ e) 10, 20, 30, 40, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
-- ☐ Tìm số còn thiếu
-- ☐ Tìm quy luật
+- ☐ Tính nhanh
+- ☐ Đố vui cộng trừ

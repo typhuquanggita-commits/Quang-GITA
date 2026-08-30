@@ -28,56 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 14 … 11
+a) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 18 … 9
+b) Đếm tiếp cho cô: 1 , 3 , 5 , 7 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 15 … 7
+c) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
 
-d) Điền dấu >, < hoặc = : 3 … 7
-
-e) Điền dấu >, < hoặc = : 11 … 14
+d) Đếm từ 70 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Cộng trừ số tròn chục**
 
-a) 70 + 10 = …
+a) 50 + 30 = …
 
-b) 20 − 10 = …
+b) 60 − 20 = …
 
-c) 80 + 10 = …
+c) 50 − 20 = …
 
-d) 70 − 10 = …
+d) 70 + 10 = …
+
+e) 70 − 40 = …
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Đặt tính rồi tính**
 
-a) Đặt tính rồi tính: 73 + 14
+a) Đặt tính rồi tính: 68 + 31
 
-b) Đặt tính rồi tính: 26 − 3
+b) Đặt tính rồi tính: 41 − 21
 
-c) Đặt tính rồi tính: 24 + 3
+c) Đặt tính rồi tính: 70 + 1
 
-d) Đặt tính rồi tính: 46 − 23
+d) Đặt tính rồi tính: 70 − 30
+
+e) Đặt tính rồi tính: 65 + 1
+
+f) Đặt tính rồi tính: 74 − 44
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-a) 3, 6, 12, …
+a) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-b) 11, 16, 21, 26, …
+b) Con có 5 cái kẹo, cho bạn 3 cái. Còn mấy cái?
 
-c) 1, 2, 4, …
-
-d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
+c) Mẹ nướng 7 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
 
 ---
@@ -86,7 +88,7 @@ d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ Đếm nối tiếp theo bước
 - ☐ Cộng trừ số tròn chục
 - ☐ Đặt tính rồi tính
-- ☐ Tìm quy luật
+- ☐ Đố vui cộng trừ

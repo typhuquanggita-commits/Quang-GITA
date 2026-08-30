@@ -28,73 +28,65 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5
+a) Con đoán chiều dài cái bảng khoảng bao nhiêu?
 
-b) 10 : 2 = …
+b) Con đoán cặp sách của con nặng khoảng bao nhiêu?
 
-c) 5 × 10 = …
-
-d) Viết phép nhân thay cho phép cộng: 5
+c) Kim ngắn qua số 4, kim dài chỉ số 12. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đơn vị đo và xem đồng hồ**
 
-a) Kim ngắn chỉ số 1, kim dài chỉ số 12. Mấy giờ?
+a) Kim ngắn ở giữa số 2 và số 3, kim dài chỉ số 6. Mấy giờ?
 
-b) 3 dm = … cm
+b) Bao gạo nặng 7 kg, bao ngô nặng 17 kg. Cả hai bao nặng mấy ki-lô-gam?
 
-c) Bao gạo nặng 16 kg, bao ngô nặng 5 kg. Cả hai bao nặng mấy ki-lô-gam?
+c) 8 dm = … cm
 
-d) 8 dm = … cm
+d) 5 dm = … cm
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Đổi đơn vị và tính trên số đo**
 
-a) 6 m = … cm
+a) 30 cm + 8 cm = … cm
 
-b) Điền dấu >, < hoặc = : 8 dm … 54 cm
+b) Điền dấu >, < hoặc = : 1 dm … 38 cm
 
-c) 11 cm + 33 cm = … cm
+c) 5 m = … dm
 
-d) 23 cm + 9 cm = … cm
-
-e) Điền dấu >, < hoặc = : 2 dm … 32 cm
+d) 1 km = … m
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bảng kiểm đếm và biểu đồ tranh**
+**Tính với số đo**
 
-a) Bảng kiểm đếm: quả cam: 8 · quả chuối: 9 · quả xoài: 8. Loại nào nhiều nhất?
+a) Băng giấy dài 71 cm, cắt đi 45 cm. Còn lại dài bao nhiêu?
 
-b) Loại nào ít nhất?
+b) 33 kg + 6 kg = …
 
-c) Có tất cả bao nhiêu quả?
+c) 2 kg = … g
 
-d) Quả chuối nhiều hơn quả cam mấy quả?
+d) Bạn Nam bắt đầu học lúc 3 giờ, học 2 tiếng thì xong. Xong lúc mấy giờ?
+
+e) Băng giấy dài 47 cm, cắt đi 13 cm. Còn lại dài bao nhiêu?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đố vui đo lường và giờ**
 
-a) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+a) Bây giờ là 1 giờ. 1 tiếng nữa là mấy giờ?
 
-b) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+b) 7 m bằng bao nhiêu dm?
 
-c) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-
-d) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
-
-e) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
-
-f) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
+c) 4 kg bằng bao nhiêu gam?
 
 
 ---
@@ -103,8 +95,8 @@ f) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đơn vị đo và xem đồng hồ
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Bảng kiểm đếm và biểu đồ tranh
-- ☐ Chắc chắn, có thể, không thể
+- ☐ Tính với số đo
+- ☐ Đố vui đo lường và giờ

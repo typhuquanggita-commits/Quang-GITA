@@ -30,15 +30,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Nhảy và đếm**
+**Vỗ tay theo nhịp rồi bước đo**
 
-a) Con bước lên phía trước đúng 3 bước nhé. Đếm to lên.
+a) Cô làm mẫu: vỗ tay – vỗ đùi – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-b) Con vỗ tay đúng 5 cái nhé. Đếm to lên.
+b) Cô làm mẫu: vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-c) Con gật đầu đúng 3 cái nhé. Đếm to lên.
-
-d) Con giậm chân đúng 9 cái nhé. Đếm to lên.
+c) Con bước chân nối gót đi hết chiều dài cửa ra vào. Đếm to xem mấy bước.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,13 +45,11 @@ d) Con giậm chân đúng 9 cái nhé. Đếm to lên.
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 9 viên bi thành hàng ngang. Con đếm xem có mấy viên?
+a) Cô bày 9 chiếc lá rải lộn xộn. Con đếm xem có mấy chiếc?
 
-b) Cô bày 4 cái bánh thành hai hàng. Con đếm xem có mấy cái?
+b) Cô bày 6 quả cam thành vòng tròn. Con đếm xem có mấy quả?
 
-c) Cô bày 5 cái kẹo thành vòng tròn. Con đếm xem có mấy cái?
-
-d) Cô bày 8 cái kẹo thành vòng tròn. Con đếm xem có mấy cái?
+c) Cô bày 8 quyển vở thành hàng ngang. Con đếm xem có mấy quyển?
 
 
 ## Tự làm thử · 7 phút
@@ -62,7 +58,7 @@ d) Cô bày 8 cái kẹo thành vòng tròn. Con đếm xem có mấy cái?
 
 **Đếm rồi ghi vào bảng**
 
-a) Trong tranh có ong: 8 con, vịt: 4 con, chim: 7 con. Con vật nào nhiều nhất?
+a) Trong tranh có mèo: 6 con, gà: 7 con, vịt: 7 con, bướm: 4 con. Con vật nào nhiều nhất?
 
 b) Con vật nào ít nhất?
 
@@ -75,13 +71,11 @@ c) Có tất cả bao nhiêu con?
 
 **Đố vui cuối buổi**
 
-a) 2 con gà có tất cả mấy cái chân?
+a) Trên đĩa có 4 bông hoa. Con ăn mất 1 bông. Còn mấy bông?
 
-b) 3 con vịt có tất cả mấy cái chân?
+b) Trên đĩa có 5 chiếc lá. Con ăn mất 1 chiếc. Còn mấy chiếc?
 
-c) Trên đĩa có 4 con vịt. Con ăn mất 1 con. Còn mấy con?
-
-d) Trên đĩa có 4 viên bi. Con ăn mất 1 viên. Còn mấy viên?
+c) Con giơ 4 ngón tay ở bàn tay này. Muốn có đúng 6 ngón thì giơ thêm mấy ngón nữa?
 
 
 ---
@@ -92,7 +86,7 @@ d) Trên đĩa có 4 viên bi. Con ăn mất 1 viên. Còn mấy viên?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Nhảy và đếm | ☐ | ☐ | ☐ |
+| Vỗ tay theo nhịp rồi bước đo | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Đếm rồi ghi vào bảng | ☐ | ☐ | ☐ |
 | Đố vui cuối buổi | ☐ | ☐ | ☐ |

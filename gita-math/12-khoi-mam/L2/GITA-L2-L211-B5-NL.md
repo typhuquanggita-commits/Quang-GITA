@@ -42,43 +42,43 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính xếp thành nhóm bằng nhau
+- Một sợi dây dài khoảng 2 m nối thành vòng kín
+- Vài đồ vật hình trụ và hình cầu: lon nước, quả bóng
 - Thước kẻ
 - Giấy có sẵn các điểm
 - Thước mét
 - Bảng đơn vị đo độ dài
+- Thước có vạch cm
+- Dây hoặc que tính để tạo đường gấp khúc
+- Vài đồ vật khối trụ và khối hộp
 - Một hộp bi có bi hai màu để thử thật
-- Giấy ô li
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Bảng nhân, bảng chia 2 và 5**
+**Tạo hình bằng dây**
 
-> **Cô/mẹ đọc lên:** Con đọc to bảng nhân một lượt trước khi làm.
+> **Cô/mẹ đọc lên:** Mình đứng dậy làm hình bằng sợi dây này nhé. Mỗi bạn giữ một góc.
 
 **Đáp án từng việc**
 
-a) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5
-   → **5 × 4 = 20**
+a) Cả nhóm dùng dây tạo thành đường gấp khúc ba đoạn. Tạo xong đếm xem có mấy đỉnh, mấy cạnh.
+   → **4 điểm nối thành 3 đoạn thẳng**
 
-b) 2 × 7 = …
-   → **14**
+b) Cả nhóm dùng dây tạo thành hình tứ giác. Tạo xong đếm xem có mấy đỉnh, mấy cạnh.
+   → **4 đỉnh, 4 cạnh**
 
-c) 6 : 2 = …
-   → **3**
+c) Tìm trong lớp một vật là khối trụ, thả xuống sàn nghiêng xem có lăn không.
+   → **lăn được khi đặt nằm, đứng yên khi đặt đứng vì có hai mặt phẳng**
 
-d) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
-   → **2 × 8 = 16**
+**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Xếp thành nhóm)*: Giữ 4 góc thì được hình gì? Buông một góc ra thì còn là tứ giác nữa không?
 
-**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Con biết 2 × 6 rồi. Vậy 6 × 2 bằng mấy? Có phải lúc nào cũng thế không?
+**Thế nào là con đã hiểu:** Trẻ nói được hình tứ giác nào cũng có 4 đỉnh và 4 cạnh, dù hình méo hay vuông vắn. Nhận ra **đặc điểm chung** quan trọng hơn nhận mặt một hình cụ thể.
 
-**Thế nào là con đã hiểu:** Trẻ hiểu phép nhân là cộng các số hạng bằng nhau, và dùng được phép nhân đã thuộc để suy ra phép chia tương ứng.
+**Con tắc thì làm gì:** Người lớn giữ giúp hai góc, trẻ giữ hai góc còn lại.
 
-**Con tắc thì làm gì:** Xếp que tính thành từng nhóm rồi đếm — thấy được mới nhớ được.
-
-**Nếu con làm nhanh:** Hỏi 2 × 11, một phép ngoài bảng, xem trẻ có tự cộng thêm 2 không.
+**Nếu con làm nhanh:** Tạo hình tứ giác thật méo rồi hỏi trẻ nó còn là tứ giác không.
 
 
 ---
@@ -91,17 +91,14 @@ d) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
 
 **Đáp án từng việc**
 
-a) Đường gấp khúc gồm 4 đoạn dài 22 cm, 20 cm, 9 cm, 24 cm. Tính độ dài đường gấp khúc.
-   → **75 cm**
-
-b) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
+a) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
    → **ba điểm thẳng hàng**
 
-c) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
-   → **ba điểm thẳng hàng**
+b) Đường gấp khúc gồm 3 đoạn dài 16 cm, 13 cm, 3 cm. Tính độ dài đường gấp khúc.
+   → **32 cm**
 
-d) Đường gấp khúc gồm 4 đoạn dài 10 cm, 12 cm, 7 cm, 23 cm. Tính độ dài đường gấp khúc.
-   → **52 cm**
+c) Đường gấp khúc gồm 2 đoạn dài 13 cm, 6 cm. Tính độ dài đường gấp khúc.
+   → **19 cm**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Xem chỗ nào chưa ổn)*: Độ dài đường gấp khúc có bằng khoảng cách từ điểm đầu tới điểm cuối không? Vì sao?
 
@@ -122,23 +119,23 @@ d) Đường gấp khúc gồm 4 đoạn dài 10 cm, 12 cm, 7 cm, 23 cm. Tính �
 
 **Đáp án từng việc**
 
-a) 5 m = … cm
-   → **500 cm**
+a) 5 cm + 14 cm = … cm
+   → **19 cm**
 
-b) 31 cm + 27 cm = … cm
-   → **58 cm**
+b) 2 dm = … cm
+   → **20 cm**
 
-c) Điền dấu >, < hoặc = : 9 dm … 66 cm
-   → **>**
+c) Điền dấu >, < hoặc = : 3 dm … 33 cm
+   → **<**
 
-d) Điền dấu >, < hoặc = : 9 dm … 73 cm
-   → **>**
+d) 30 cm + 39 cm = … cm
+   → **69 cm**
 
-e) 32 cm + 12 cm = … cm
-   → **44 cm**
+e) Điền dấu >, < hoặc = : 3 dm … 58 cm
+   → **<**
 
-f) 7 dm = … cm
-   → **70 cm**
+f) 5 km = … m
+   → **5 000 m**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Vì sao không so thẳng 5 với 40 được?
 
@@ -153,14 +150,48 @@ f) 7 dm = … cm
 
 ## PHẦN D — Bài toán có lời văn
 
+**Đường gấp khúc, hình và khối**
+
+> **Cô/mẹ đọc lên:** Đường gấp khúc là nhiều đoạn thẳng nối liền nhau. Muốn biết nó dài bao nhiêu thì cộng hết các đoạn lại.
+
+**Đáp án từng việc**
+
+a) Đường gấp khúc gồm các đoạn: 11 cm , 14 cm , 15 cm . Tính độ dài đường gấp khúc.
+   → **11 + 14 + 15 = 40 cm**
+
+b) Hình tứ giác có 4 cạnh đều dài 9 cm. Tính chu vi hình ấy.
+   → **9 × 4 = 36 cm**
+
+c) Vẽ 3 hình tam giác nhỏ bằng nhau ghép liền nhau thành một hàng. Đếm xem có tất cả mấy hình tam giác, kể cả hình ghép từ nhiều hình nhỏ?
+   → **6 hình — 3 hình nhỏ và 3 hình ghép**
+
+d) Có 4 điểm nằm trên một đường thẳng, cách đều nhau. Nối hai điểm ngoài cùng thì được mấy đoạn thẳng nhỏ liền nhau?
+   → **3 đoạn**
+
+e) Kể tên ba vật trong lớp có dạng khối trụ hoặc khối hộp chữ nhật.
+   → **khối trụ: lon nước, cốc giấy, hộp bút tròn · khối hộp chữ nhật: hộp phấn, quyển sách dày, cặp sách**
+
+**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Cho một ví dụ)*: Nếu duỗi thẳng đường gấp khúc ra thành một đoạn, đoạn ấy dài bao nhiêu? Vì sao vẫn bằng tổng các đoạn nhỏ?
+
+**Thế nào là con đã hiểu:** Trẻ cộng đủ mọi đoạn, không bỏ sót đoạn cuối. Hiểu được **duỗi thẳng ra thì độ dài không đổi** là ý chính của cả bài, quan trọng hơn việc cộng đúng.
+
+**Con tắc thì làm gì:** Lấy dây xếp thành đường gấp khúc rồi kéo thẳng ra đo lại.
+
+**Nếu con làm nhanh:** Cho hai đường gấp khúc khác hình nhưng cùng độ dài — hỏi trẻ cái nào dài hơn.
+
+
+---
+
+## PHẦN E — Thử thách vui
+
 **Chắc chắn, có thể, không thể**
 
 > **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
 
 **Đáp án từng việc**
 
-a) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+a) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
+   → **có thể**
 
 b) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
    → **chắc chắn**
@@ -171,11 +202,8 @@ c) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
 d) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
    → **có thể**
 
-e) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-   → **không thể**
-
-f) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
-   → **không thể**
+e) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+   → **chắc chắn**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
 
@@ -184,40 +212,6 @@ f) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay 
 **Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
 
 **Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
-
-
----
-
-## PHẦN E — Thử thách vui
-
-**Tìm chỗ sai giúp bạn**
-
-> **Cô/mẹ đọc lên:** Con làm giám khảo nhé. Xem bạn sai ở bước nào rồi sửa lại.
-
-**Đáp án từng việc**
-
-a) Một bạn tính 45 + 30 = 84. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 75**
-
-b) Một bạn tính 19 + 84 = 93. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 103**
-
-c) Một bạn tính 27 + 47 = 64. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 74**
-
-d) Một bạn tính 72 + 29 = 91. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 101**
-
-e) Một bạn tính 63 + 83 = 155. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 146**
-
-**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Làm sao để lần sau bạn ấy không sai như thế nữa?
-
-**Thế nào là con đã hiểu:** Trẻ chỉ ra **bước nào** sai chứ không chỉ nói kết quả sai. Tìm được lỗi của người khác là bước trước khi tự tìm được lỗi của mình.
-
-**Con tắc thì làm gì:** Tính lại cùng trẻ từng hàng, so với bài của bạn ở từng bước.
-
-**Nếu con làm nhanh:** Cho một bài đúng để trẻ khỏi quen là bài nào cũng có lỗi.
 
 
 ---

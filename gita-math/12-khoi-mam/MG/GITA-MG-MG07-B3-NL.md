@@ -41,37 +41,40 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Một quả bóng hoặc một con thú bông
+- Không cần chuẩn bị — dùng chính đồ vật trong phòng
 - Bộ hình phẳng và khối bằng gỗ hoặc bìa
 - Hột hạt nhiều màu
-- Tranh các hoạt động trong ngày
+- Vài đồ vật quen thuộc để trẻ chỉ tận tay
 
 ---
 
 ## Chơi khởi động
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-> **Cô/mẹ đọc lên:** Con đứng dậy nhé. Cô nói hướng nào thì con đặt quả bóng ở hướng ấy.
+> **Cô/mẹ đọc lên:** Mình chơi trò đi săn nhé. Cô gọi tên hình nào, con chạy đi tìm một thứ có hình ấy rồi mang về cho cô.
 
 **Đáp án từng việc**
 
-a) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
-   → **vật nào ở tay phải con**
+a) Con chạy đi tìm một thứ trong nhà có hình tròn.
+   → **mặt đồng hồ, cái đĩa, nắp chai**
 
-b) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
-   → **vật nào ở trước mặt con**
+b) Con chạy đi tìm một thứ trong nhà có hình vuông.
+   → **viên gạch nền, tờ giấy nhớ, mặt hộp**
 
-c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
-   → **vật nào ở trên đầu con**
+c) Tìm cho cô một thứ là khối hộp chữ nhật.
+   → **hộp sữa, viên gạch**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Nếu con quay người lại thì quả bóng còn ở bên phải con nữa không?
+d) Tìm một thứ dài hơn cánh tay của con.
+   → **trẻ ướm thử rồi trả lời — thứ nào cũng được, miễn ướm đúng**
 
-**Thế nào là con đã hiểu:** Trẻ nhận ra phải – trái **đổi theo hướng mình đứng**, còn trên – dưới thì không đổi. Đây là chỗ khó thật của chủ đề.
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Vì sao con bảo cái này là hình tròn? Nó có chỗ nào nhọn không?
 
-**Con tắc thì làm gì:** Buộc một sợi dây màu vào cổ tay phải làm dấu. Bỏ dây khi trẻ đã quen.
+**Thế nào là con đã hiểu:** Trẻ tìm được vật có hình ấy ở **đồ vật thật**, không chỉ nhận ra hình trên giấy. Nhận hình trong đời sống khó hơn nhận hình vẽ sẵn, vì đồ vật thật còn có màu, có chữ, có nhiều chi tiết gây nhiễu.
 
-**Nếu con làm nhanh:** Đứng đối diện nhau rồi hỏi tay phải của cô ở phía nào của con.
+**Con tắc thì làm gì:** Cầm sẵn một vật mẫu trên tay cho trẻ so sánh khi đi tìm.
+
+**Nếu con làm nhanh:** Đổi vai: trẻ gọi tên hình, người lớn đi tìm — và cố tình tìm sai một lần để trẻ được sửa.
 
 
 ---
@@ -84,17 +87,20 @@ c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ v�
 
 **Đáp án từng việc**
 
-a) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
-   → **ví dụ: cái đĩa, bánh xe, mặt đồng hồ**
-
-b) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
+a) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
    → **ví dụ: viên xúc xắc, hộp quà vuông**
 
-c) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
-   → **ví dụ: quả bóng, viên bi, quả cam**
+b) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
+   → **ví dụ: cái đĩa, bánh xe, mặt đồng hồ**
 
-d) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật có dạng khối hộp chữ nhật.
-   → **ví dụ: hộp bánh, viên gạch, quyển sách dày**
+c) Đây là khối trụ. Con tìm quanh nhà một đồ vật có dạng khối trụ.
+   → **ví dụ: lon nước, cái cốc, cây bút chì**
+
+d) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
+   → **ví dụ: cửa ra vào, quyển vở, cái bảng**
+
+e) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
+   → **ví dụ: quả bóng, viên bi, quả cam**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Mấy đồ vật con vừa tìm giống nhau ở chỗ nào?
 
@@ -115,17 +121,17 @@ d) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật c�
 
 **Đáp án từng việc**
 
-a) đỏ – xanh – đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
-   → **đỏ**
+a) đỏ – … – đỏ – vàng – đỏ . Ô trống là màu gì?
+   → **vàng**
 
-b) đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
-   → **đỏ**
-
-c) xanh – đỏ – … – đỏ – xanh . Ô trống là màu gì?
+b) đỏ – xanh – đỏ – … – đỏ . Ô trống là màu gì?
    → **xanh**
 
-d) vàng – … – vàng – xanh – vàng – xanh . Ô trống là màu gì?
-   → **xanh**
+c) vàng – … – vàng – đỏ – vàng – đỏ . Ô trống là màu gì?
+   → **đỏ**
+
+d) vàng – xanh – vàng – xanh – … – xanh . Ô trống là màu gì?
+   → **vàng**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Con kiểm lại xem điền vào rồi dãy còn đúng quy luật không?
 
@@ -140,28 +146,28 @@ d) vàng – … – vàng – xanh – vàng – xanh . Ô trống là màu gì
 
 ## Đố vui cuối buổi
 
-**Sáng, trưa, chiều, tối**
+**Đố vui so sánh**
 
-> **Cô/mẹ đọc lên:** Mình kể lại một ngày của con nhé, từ lúc thức dậy đến lúc đi ngủ.
+> **Cô/mẹ đọc lên:** Cuối buổi mình đố nhau nhé. Con trả lời rồi giải thích vì sao.
 
 **Đáp án từng việc**
 
-a) Con ăn sáng vào buổi nào trong ngày?
-   → **buổi sáng**
+a) Cái cốc và cái ấm: cái nào to hơn?
+   → **cái ấm**
 
-b) Con đánh răng buổi sớm vào buổi nào trong ngày?
-   → **buổi sáng**
+b) Con voi và con kiến: cái nào to hơn?
+   → **con voi**
 
-c) Con đi ngủ vào buổi nào trong ngày?
-   → **buổi tối**
+c) Cô có 5 cái kẹo, con có 6 cái. Ai nhiều hơn?
+   → **con nhiều hơn, nhiều hơn 1 cái**
 
-**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Cho một ví dụ)*: Hôm qua là thứ mấy? Vậy ngày mai là thứ mấy?
+**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Vì sao con biết cái ấy to hơn? Con đo thử cho cô xem.
 
-**Thế nào là con đã hiểu:** Trẻ kể lại được thứ tự các buổi trong ngày, và dùng đúng hôm qua – hôm nay – ngày mai.
+**Thế nào là con đã hiểu:** Trẻ trả lời được cả khi hai vật không có sẵn trước mặt — tức là đã so sánh **trong đầu**, không cần nhìn.
 
-**Con tắc thì làm gì:** Xếp tranh theo thứ tự cùng trẻ, vừa xếp vừa kể.
+**Con tắc thì làm gì:** Đặt hai vật thật cạnh nhau cho trẻ nhìn. So sánh bằng mắt trước, so sánh trong đầu sau.
 
-**Nếu con làm nhanh:** Hỏi việc gì làm trước, việc gì làm sau trong một chuỗi ba việc.
+**Nếu con làm nhanh:** Hỏi một cặp mà trẻ phải nghĩ: cái cặp sách và cái ghế — không phải cặp nào cũng dễ.
 
 
 ---

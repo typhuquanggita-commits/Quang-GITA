@@ -28,69 +28,73 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) Số 319 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Con đoán chiều cao của con khoảng bao nhiêu?
 
-b) Tính nhẩm: 200 + 700
+b) Con đoán một quyển sách giáo khoa nặng khoảng bao nhiêu?
 
-c) Tính nhẩm: 500 + 100
-
-d) Số 242 gồm mấy trăm, mấy chục, mấy đơn vị?
+c) Kim ngắn qua số 4, kim dài chỉ số 9. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đơn vị đo và xem đồng hồ**
 
-a) Kim ngắn chỉ số 7, kim dài chỉ số 12. Mấy giờ?
+a) 5 dm = … cm
 
-b) Bao gạo nặng 5 kg, bao ngô nặng 6 kg. Cả hai bao nặng mấy ki-lô-gam?
+b) Bao gạo nặng 18 kg, bao ngô nặng 3 kg. Cả hai bao nặng mấy ki-lô-gam?
 
-c) 4 dm = … cm
+c) Kim ngắn ở giữa số 2 và số 3, kim dài chỉ số 6. Mấy giờ?
 
-d) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ?
+d) Bao gạo nặng 18 kg, bao ngô nặng 15 kg. Cả hai bao nặng mấy ki-lô-gam?
+
+e) Kim ngắn chỉ số 1, kim dài chỉ số 12. Mấy giờ?
+
+f) 2 dm = … cm
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Đổi đơn vị và tính trên số đo**
+**Tính với số đo**
 
-a) 26 cm + 7 cm = … cm
+a) 2 m = … dm
 
-b) Điền dấu >, < hoặc = : 6 dm … 66 cm
+b) Bạn Nam bắt đầu học lúc 8 giờ, học 2 tiếng thì xong. Xong lúc mấy giờ?
 
-c) 4 dm = … cm
+c) 56 l + 9 l = …
 
-d) 11 cm + 32 cm = … cm
+d) Băng giấy dài 41 cm, cắt đi 32 cm. Còn lại dài bao nhiêu?
 
-e) 7 dm = … cm
+e) 42 cm + 5 cm = …
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Đoán trước rồi đo lại**
+**Đổi đơn vị và tính trên số đo**
 
-a) Con đoán chiều dài quyển vở khoảng bao nhiêu cm? Đoán xong mình đo lại.
+a) 8 dm = … cm
 
-b) Con đoán chiều cao cửa ra vào khoảng bao nhiêu m? Đoán xong mình đo lại.
+b) 12 cm + 15 cm = … cm
 
-c) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
+c) Điền dấu >, < hoặc = : 3 dm … 90 cm
 
-d) Con đoán lượng nước trong chai khoảng bao nhiêu lít? Đoán xong mình đo lại.
+d) Điền dấu >, < hoặc = : 9 dm … 90 cm
+
+e) 2 m = … dm
+
+f) 10 cm + 35 cm = … cm
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui đo lường và giờ**
 
-a) Một bạn tính 25 + 56 = 71. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) 9 m bằng bao nhiêu dm?
 
-b) Một bạn tính 33 + 89 = 112. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) 7 kg bằng bao nhiêu gam?
 
-c) Một bạn tính 67 + 38 = 95. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-d) Một bạn tính 60 + 16 = 85. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Bây giờ là 8 giờ. 1 tiếng nữa là mấy giờ?
 
 
 ---
@@ -99,8 +103,8 @@ d) Một bạn tính 60 + 16 = 85. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đơn vị đo và xem đồng hồ
+- ☐ Tính với số đo
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Đoán trước rồi đo lại
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Đố vui đo lường và giờ

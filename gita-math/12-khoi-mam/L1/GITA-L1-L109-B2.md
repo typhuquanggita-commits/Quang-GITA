@@ -28,60 +28,62 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Kể một bài toán bằng miệng**
 
-a) Điền dấu >, < hoặc = : 8 … 6
+a) Cô để 9 quyển vở ra bàn rồi cất đi 3 quyển. Con kể lại thành một câu chuyện có số.
 
-b) Điền dấu >, < hoặc = : 1 … 5
+b) Cô để 3 con vịt, bạn Tí đưa thêm 2 con. Con kể lại thành một câu chuyện có số.
 
-c) Điền dấu >, < hoặc = : 4 … 7
+c) Cô để 6 con cá ra bàn rồi cất đi 1 con. Con kể lại thành một câu chuyện có số.
 
-d) Điền dấu >, < hoặc = : 6 … 7
-
-e) Điền dấu >, < hoặc = : 3 … 2
+d) Cô để 3 bông hoa, bạn Cốm đưa thêm 2 bông. Con kể lại thành một câu chuyện có số.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 53 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 41 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 56 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 26 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 65 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 74 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 46 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 84 que tính. Con lấy mấy bó và mấy que rời?
+
+e) Con lấy đúng 19 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) 6, 7, 8, 9, … Số tiếp theo là số nào?
+a) 16, 21, 26, 31, … Số tiếp theo là số nào?
 
-b) Tèo có 4 cái kẹo. An có 13 cái. Cả hai bạn có tất cả mấy cái?
+b) Cốm có 11 cái kẹo. An có 7 cái. Cả hai bạn có tất cả mấy cái?
 
-c) 17, 27, 37, 47, … Số tiếp theo là số nào?
+c) Bi có 12 con cá. Bo có 8 con. Cả hai bạn có tất cả mấy con?
 
-d) An có 6 chiếc lá. Tí có 19 chiếc. Cả hai bạn có tất cả mấy chiếc?
+d) 2, 7, 12, 17, … Số tiếp theo là số nào?
 
-e) 4, 6, 8, 10, … Số tiếp theo là số nào?
+e) Mai có 4 quả cam. An có 17 quả. Cả hai bạn có tất cả mấy quả?
 
-f) Na có 20 viên bi. Tí có 3 viên. Cả hai bạn có tất cả mấy viên?
+f) 20, 21, 22, 23, … Số tiếp theo là số nào?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tự đặt một bài toán**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 13 + 5 = 18.
+a) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 9 = 0.
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 10 = 0.
+b) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 7 = 21.
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 2 = 16.
+c) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 7 = 4.
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 7 = 4.
+d) Con hãy nghĩ ra một bài toán mà phép tính là 15 + 5 = 20.
+
+e) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 4 = 6.
 
 
 ---
@@ -90,7 +92,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 7 = 4.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Kể một bài toán bằng miệng
 - ☐ Lấy đúng số que tính
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tự đặt một bài toán

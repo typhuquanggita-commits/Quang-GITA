@@ -28,22 +28,22 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Khảo sát chớp nhoáng**
 
-a) 15 : 5 = …
+a) Bạn nào đi học bằng xe máy thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-b) 5 × 2 = …
+b) Bạn nào thích ăn phở hơn ăn bún thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-c) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5
+c) Tháng sau lớp mình được nghỉ một ngày — chắc chắn, có thể hay không thể?
 
-d) 18 : 2 = …
+d) Ngày mai trời mưa — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
-**Kiểm đếm về màu áo các bạn trong lớp**
+**Kiểm đếm về môn học yêu thích**
 
-a) Con đi hỏi và kiểm đếm về màu áo các bạn trong lớp. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về môn học yêu thích. Ghi vào bảng.
 
 b) Loại nào nhiều nhất trong bảng của con?
 
@@ -56,7 +56,7 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 **Đọc bảng số liệu**
 
-a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 10, thứ Ba: 7, thứ Tư: 8, thứ Năm: 11, thứ Sáu: 13. Ngày nào đọc nhiều nhất?
+a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 6, thứ Ba: 9, thứ Tư: 11, thứ Năm: 13, thứ Sáu: 9. Ngày nào đọc nhiều nhất?
 
 b) Cả tuần đọc bao nhiêu quyển?
 
@@ -67,30 +67,36 @@ d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bảng kiểm đếm và biểu đồ tranh**
+**Đọc bảng số liệu và đoán khả năng**
 
-a) Bảng kiểm đếm: quả cam: 5 · quả xoài: 9 · quả lê: 2 · quả chuối: 9. Loại nào nhiều nhất?
+a) Lớp 2A khảo sát cách đi học. Kết quả: xe buýt: 10 bạn · xe đạp: 7 bạn · xe máy: 13 bạn. Cách nào nhiều bạn chọn nhất?
 
-b) Loại nào ít nhất?
+b) Cách nào ít bạn chọn nhất?
 
-c) Có tất cả bao nhiêu quả?
+c) Xe máy nhiều hơn xe đạp bao nhiêu bạn?
 
-d) Quả xoài nhiều hơn quả lê mấy quả?
+d) Lớp khảo sát tất cả bao nhiêu bạn?
 
-e) Nếu mỗi hình vẽ trong biểu đồ tranh thay cho 1 quả thì hàng quả xoài vẽ mấy hình?
+e) Rút một bạn bất kỳ, bạn ấy đi học bằng một trong ba cách trong bảng — chắc chắn, có thể hay không thể?
+
+f) Rút một bạn bất kỳ trong lớp, bạn ấy đi học bằng xe máy — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đọc biểu đồ tranh**
 
-a) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+a) - chuối: 🍎🍎🍎🍎🍎🍎🍎🍎🍎  (9 quả)
+- táo: 🍎🍎🍎🍎  (4 quả)
+- ổi: 🍎🍎🍎🍎  (4 quả)
 
-b) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+Loại quả nào nhiều nhất?
 
-c) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+b) Loại quả nào ít nhất?
 
-d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+c) Chuối nhiều hơn táo mấy quả?
+
+d) Tất cả có mấy quả?
 
 
 ---
@@ -99,8 +105,8 @@ d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
-- ☐ Kiểm đếm về màu áo các bạn trong lớp
+- ☐ Khảo sát chớp nhoáng
+- ☐ Kiểm đếm về môn học yêu thích
 - ☐ Đọc bảng số liệu
-- ☐ Bảng kiểm đếm và biểu đồ tranh
-- ☐ Chắc chắn, có thể, không thể
+- ☐ Đọc bảng số liệu và đoán khả năng
+- ☐ Đọc biểu đồ tranh

@@ -42,7 +42,8 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Tờ lịch tuần
+- Một sợi dây hoặc chun dài
+- Giấy trắng và bút chì
 - Bộ hình cắt sẵn bằng bìa
 - Kéo an toàn
 - Thước có vạch xăng-ti-mét
@@ -53,37 +54,28 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Các thứ trong tuần**
+**Vẽ hình trên không, căng dây thành đoạn thẳng**
 
-> **Cô/mẹ đọc lên:** Con đọc to bảy thứ trong tuần một lượt trước khi trả lời.
+> **Cô/mẹ đọc lên:** Chưa cần bút đâu. Con vẽ bằng ngón tay lên không khí trước đã.
 
 **Đáp án từng việc**
 
-a) Ngày thứ 6 của tuần là thứ mấy?
-   → **thứ Bảy**
+a) Con dùng ngón tay vẽ hình tròn lên không khí. Vẽ xong nói cho cô: hình ấy có mấy cạnh?
+   → **không có cạnh nào**
 
-b) Hôm nay là thứ Tư. Hôm qua là thứ mấy?
-   → **thứ Ba**
+b) Con dùng ngón tay vẽ hình chữ nhật lên không khí. Vẽ xong nói cho cô: hình ấy có mấy cạnh?
+   → **4 cạnh, hai cạnh dài bằng nhau và hai cạnh ngắn bằng nhau**
 
-c) Ngày thứ 2 của tuần là thứ mấy?
-   → **thứ Ba**
+c) Cô căng sợi dây thẳng giữa hai tay. Đó là đoạn thẳng. Con chấm 2 điểm lên tờ giấy rồi nối hai điểm bất kỳ.
+   → **nối được 1 đoạn thẳng qua 2 điểm vừa chọn**
 
-d) Hôm nay là thứ Hai. Hôm qua là thứ mấy?
-   → **Chủ nhật**
+**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Nói cho người khác tin)*: Vẽ trên không thì hình vuông và hình chữ nhật khác nhau chỗ nào?
 
-e) Hôm nay là thứ Sáu. Ngày mai là thứ mấy?
-   → **thứ Bảy**
+**Thế nào là con đã hiểu:** Tay trẻ dừng lại và đổi hướng ở đúng bốn chỗ khi vẽ hình vuông. Vẽ được bằng tay nghĩa là trẻ đã nắm được **hình dạng gồm những gì**, chứ không chỉ nhận mặt hình.
 
-f) Hôm nay là thứ Tư. Ngày mai là thứ mấy?
-   → **thứ Năm**
+**Con tắc thì làm gì:** Cầm tay trẻ vẽ một lượt, vừa vẽ vừa đếm cạnh: một, hai, ba, bốn.
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Sau Chủ nhật là thứ mấy? Vì sao lại quay về thứ Hai?
-
-**Thế nào là con đã hiểu:** Trẻ hiểu tuần là một vòng lặp — hết Chủ nhật thì quay lại thứ Hai — chứ không phải một dãy có điểm kết thúc.
-
-**Con tắc thì làm gì:** Chỉ vào tờ lịch, đếm cùng trẻ.
-
-**Nếu con làm nhanh:** Hỏi ba ngày nữa là thứ mấy — trẻ phải đếm vòng.
+**Nếu con làm nhanh:** Hai trẻ cùng căng dây tạo hình tam giác — cần ba tay, nên phải rủ thêm người.
 
 
 ---
@@ -96,17 +88,17 @@ f) Hôm nay là thứ Tư. Ngày mai là thứ mấy?
 
 **Đáp án từng việc**
 
-a) hình chữ nhật – hình vuông – hình chữ nhật – hình vuông – … Hình tiếp theo là hình gì?
+a) Ghép hai hình chữ nhật lại thì được hình gì?
+   → **hình lớn hơn — trẻ ghép thử rồi gọi tên**
+
+b) hình vuông – hình chữ nhật – hình tam giác – hình vuông – … Hình tiếp theo là hình gì?
    → **hình chữ nhật**
 
-b) Ghép hai hình tam giác lại thì được hình gì?
-   → **hình lớn hơn — trẻ ghép thử rồi gọi tên**
+c) hình chữ nhật – hình vuông – hình tam giác – hình chữ nhật – … Hình tiếp theo là hình gì?
+   → **hình vuông**
 
-c) Ghép hai hình tam giác lại thì được hình gì?
+d) Ghép hai hình tròn lại thì được hình gì?
    → **hình lớn hơn — trẻ ghép thử rồi gọi tên**
-
-d) hình tam giác – hình tròn – hình tam giác – hình tròn – … Hình tiếp theo là hình gì?
-   → **hình tam giác**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Con ghép được hình gì khác nữa từ đúng mấy miếng này không?
 
@@ -127,23 +119,20 @@ d) hình tam giác – hình tròn – hình tam giác – hình tròn – … H
 
 **Đáp án từng việc**
 
-a) Trong hình có mấy đoạn thẳng?
-   → **7 đoạn thẳng**
+a) Viết số: 7 mươi
+   → **70**
 
-b) Viết số: 8 mươi 3
-   → **83**
+b) Trong hình có mấy đoạn thẳng?
+   → **5 đoạn thẳng**
 
 c) Vẽ một đoạn thẳng dài 6 cm.
    → **6 cm**
 
-d) Vẽ một đoạn thẳng dài 3 cm.
-   → **3 cm**
+d) Viết số: 5 mươi 2
+   → **52**
 
-e) Trong hình có mấy đoạn thẳng?
-   → **6 đoạn thẳng**
-
-f) Viết số: 9 mươi
-   → **90**
+e) Vẽ một đoạn thẳng dài 4 cm.
+   → **4 cm**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Con đo lại đoạn vừa vẽ xem có đúng chừng ấy không?
 
@@ -164,17 +153,14 @@ f) Viết số: 9 mươi
 
 **Đáp án từng việc**
 
-a) Trong hình bên có mấy hình chữ nhật?
-   → **2 hình chữ nhật**
+a) Con vẽ một hình tam giác rồi kẻ 1 nét thẳng từ đỉnh trên xuống cạnh đáy. Đếm xem có mấy hình tam giác?
+   → **3 hình — 2 hình nhỏ và 1 hình ghép**
 
-b) Trong hình bên có mấy hình vuông?
-   → **6 hình vuông**
+b) Con vẽ một hình chữ nhật rồi kẻ 2 nét thẳng dọc chia nó thành 3 ô bằng nhau. Đếm xem có tất cả mấy hình chữ nhật?
+   → **6 hình — 3 ô nhỏ và 3 hình ghép từ các ô liền nhau**
 
-c) Trong hình bên có mấy hình tam giác?
-   → **5 hình tam giác**
-
-d) Trong hình bên có mấy hình vuông?
-   → **4 hình vuông**
+c) Con vẽ 2 hàng, mỗi hàng 3 hình vuông nhỏ bằng nhau. Có tất cả mấy hình vuông nhỏ?
+   → **2 × 3 = 6 hình vuông nhỏ**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con đếm thế nào để chắc chắn không sót cái nào?
 

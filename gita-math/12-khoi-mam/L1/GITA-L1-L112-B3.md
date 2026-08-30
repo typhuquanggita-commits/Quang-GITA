@@ -28,62 +28,60 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 67 … 74
+a) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 3 … 5
+b) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 29 … 36
+c) Đếm tiếp cho cô: 0 , 2 , 4 , 6 , … Số tiếp theo là mấy?
 
-d) Điền dấu >, < hoặc = : 39 … 99
-
-e) Điền dấu >, < hoặc = : 23 … 5
-
-f) Điền dấu >, < hoặc = : 54 … 81
+d) Đếm từ 30 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Ghép hình và dãy hình**
 
-a) hình tròn – hình vuông – hình tròn – hình vuông – … Hình tiếp theo là hình gì?
+a) Ghép hai hình tròn lại thì được hình gì?
 
-b) Ghép hai hình vuông lại thì được hình gì?
+b) hình vuông – hình tam giác – hình chữ nhật – hình vuông – … Hình tiếp theo là hình gì?
 
-c) Ghép hai hình tam giác lại thì được hình gì?
+c) hình chữ nhật – hình tam giác – hình vuông – hình chữ nhật – … Hình tiếp theo là hình gì?
 
-d) hình tròn – hình tam giác – hình vuông – hình tròn – … Hình tiếp theo là hình gì?
+d) Ghép hai hình tam giác lại thì được hình gì?
 
-e) Ghép hai hình tròn lại thì được hình gì?
-
-f) hình tròn – hình chữ nhật – hình vuông – hình tròn – … Hình tiếp theo là hình gì?
+e) hình tròn – hình chữ nhật – hình vuông – hình tròn – … Hình tiếp theo là hình gì?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) 9, 10, 11, 12, … Số tiếp theo là số nào?
+a) Mai có 10 quả bóng. Tèo có 14 quả. Cả hai bạn có tất cả mấy quả?
 
-b) Tí có 11 chiếc lá. Bi có 18 chiếc. Cả hai bạn có tất cả mấy chiếc?
+b) 17, 22, 27, 32, … Số tiếp theo là số nào?
 
-c) Bi có 18 bông hoa. Tèo có 12 bông. Cả hai bạn có tất cả mấy bông?
+c) Bơ có 12 quả cam. Bi có 14 quả. Cả hai bạn có tất cả mấy quả?
 
-d) 2, 4, 6, 8, … Số tiếp theo là số nào?
+d) 13, 14, 15, 16, … Số tiếp theo là số nào?
+
+e) Nam có 3 bông hoa. An có 17 bông. Cả hai bạn có tất cả mấy bông?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tìm quy luật**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+a) 1, 2, 4, …
 
-b) 8, 10, 12, 14, …
+b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
 
-c) 2, 4, 8, …
+c) 3, 6, 12, …
 
-d) 1, 2, 4, …
+d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+
+e) 1, 6, 11, 16, …
 
 
 ---
@@ -92,7 +90,7 @@ d) 1, 2, 4, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Đếm nối tiếp theo bước
 - ☐ Ghép hình và dãy hình
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tìm quy luật

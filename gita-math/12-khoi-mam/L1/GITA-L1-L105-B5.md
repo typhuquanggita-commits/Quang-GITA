@@ -28,60 +28,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**So sánh số trong phạm vi 100**
 
-a) Điền dấu >, < hoặc = : 10 … 1
+a) Điền dấu >, < hoặc = : 28 … 81
 
-b) Điền dấu >, < hoặc = : 10 … 5
+b) Điền dấu >, < hoặc = : 7 … 58
 
-c) Điền dấu >, < hoặc = : 2 … 4
+c) Điền dấu >, < hoặc = : 67 … 75
 
-d) Điền dấu >, < hoặc = : 1 … 10
+d) Điền dấu >, < hoặc = : 26 … 22
+
+e) Điền dấu >, < hoặc = : 36 … 25
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 61 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 67 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 85 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 92 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 61 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 25 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 59 que tính. Con lấy mấy bó và mấy que rời?
 
-e) Con lấy đúng 62 que tính. Con lấy mấy bó và mấy que rời?
+e) Con lấy đúng 57 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Từ một phép cộng ra hai phép trừ**
 
-a) Từ phép tính 6 + 2 = 8, con viết ra hai phép trừ.
+a) Từ phép tính 4 + 5 = 9, con viết ra hai phép trừ.
 
-b) Từ phép tính 5 + 2 = 7, con viết ra hai phép trừ.
+b) Từ phép tính 4 + 3 = 7, con viết ra hai phép trừ.
 
-c) Từ phép tính 4 + 3 = 7, con viết ra hai phép trừ.
-
-d) Từ phép tính 3 + 1 = 4, con viết ra hai phép trừ.
-
-e) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
+c) Từ phép tính 8 + 1 = 9, con viết ra hai phép trừ.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Số bí mật**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 15 − 7 = 8.
+a) Số bí mật có 2 chục và 3 đơn vị. Số ấy là số nào?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 4 = 5.
+b) 69 và 77: số nào lớn hơn?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 2 = 4.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 7 − 5 = 2.
-
-e) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 7 = 5.
+c) Số bí mật có 4 chục và 8 đơn vị. Số ấy là số nào?
 
 
 ---
@@ -90,7 +84,7 @@ e) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 7 = 5.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ So sánh số trong phạm vi 100
 - ☐ Lấy đúng số que tính
 - ☐ Từ một phép cộng ra hai phép trừ
-- ☐ Tự đặt một bài toán
+- ☐ Số bí mật

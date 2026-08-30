@@ -28,17 +28,13 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) Tính nhẩm: 400 + 100
+a) Con đoán chiều cao cửa ra vào khoảng bao nhiêu?
 
-b) Số 844 gồm mấy trăm, mấy chục, mấy đơn vị?
+b) Con đoán một quyển sách giáo khoa nặng khoảng bao nhiêu?
 
-c) Tính nhẩm: 200 + 100
-
-d) Số 755 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-e) Tính nhẩm: 700 + 200
+c) Kim ngắn qua số 3, kim dài chỉ số 6. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
@@ -47,56 +43,56 @@ e) Tính nhẩm: 700 + 200
 
 a) Con đoán chiều cao cửa ra vào khoảng bao nhiêu m? Đoán xong mình đo lại.
 
-b) Con đoán lượng nước trong chai khoảng bao nhiêu lít? Đoán xong mình đo lại.
+b) Con đoán khối lượng cặp sách khoảng bao nhiêu kg? Đoán xong mình đo lại.
 
-c) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
+c) Con đoán chiều dài quyển vở khoảng bao nhiêu cm? Đoán xong mình đo lại.
+
+d) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
+
+e) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Đổi đơn vị và tính trên số đo**
 
-a) 32 cm + 33 cm = … cm
+a) 5 km = … m
 
-b) 5 m = … cm
+b) 22 cm + 29 cm = … cm
 
-c) Điền dấu >, < hoặc = : 7 dm … 86 cm
+c) Điền dấu >, < hoặc = : 1 dm … 57 cm
 
-d) 2 km = … m
+d) Điền dấu >, < hoặc = : 5 dm … 27 cm
+
+e) 17 cm + 25 cm = … cm
+
+f) 2 dm = … cm
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Đơn vị đo và xem đồng hồ**
+**Tính với số đo**
 
-a) Bao gạo nặng 7 kg, bao ngô nặng 11 kg. Cả hai bao nặng mấy ki-lô-gam?
+a) Băng giấy dài 37 cm, cắt đi 24 cm. Còn lại dài bao nhiêu?
 
-b) 4 dm = … cm
+b) 7 m = … dm
 
-c) Kim ngắn chỉ số 7, kim dài chỉ số 12. Mấy giờ?
+c) Bạn Nam bắt đầu học lúc 6 giờ, học 3 tiếng thì xong. Xong lúc mấy giờ?
 
-d) Kim ngắn ở giữa số 6 và số 7, kim dài chỉ số 6. Mấy giờ?
+d) 41 dm + 18 dm = …
 
-e) 7 dm = … cm
-
-f) Bao gạo nặng 2 kg, bao ngô nặng 19 kg. Cả hai bao nặng mấy ki-lô-gam?
+e) Bạn Nam bắt đầu học lúc 3 giờ, học 3 tiếng thì xong. Xong lúc mấy giờ?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đố vui đo lường và giờ**
 
-a) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+a) Bây giờ là 7 giờ. 3 tiếng nữa là mấy giờ?
 
-b) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+b) 7 kg bằng bao nhiêu gam?
 
-c) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-
-d) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
-
-e) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
-
-f) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+c) 2 m bằng bao nhiêu dm?
 
 
 ---
@@ -105,8 +101,8 @@ f) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đoán trước rồi đo lại
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Đơn vị đo và xem đồng hồ
-- ☐ Chắc chắn, có thể, không thể
+- ☐ Tính với số đo
+- ☐ Đố vui đo lường và giờ

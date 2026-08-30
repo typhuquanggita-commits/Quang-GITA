@@ -41,40 +41,41 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính xếp thành nhóm bằng nhau
+- Một quả bóng nhỏ hoặc con thú bông để chuyền tay
 - Que tính rời và dây buộc
 - Giấy ô li
-- Một hộp bi có bi hai màu để thử thật
+- Vở ô ly
+- Que tính bó chục để kiểm lại khi sai
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Bảng nhân, bảng chia 2 và 5**
+**Chuyền bóng nhẩm nhanh**
 
-> **Cô/mẹ đọc lên:** Con đọc to bảng nhân một lượt trước khi làm.
+> **Cô/mẹ đọc lên:** Mình chơi chuyền bóng. Ai nhận bóng thì trả lời, trả lời xong chuyền cho người khác.
 
 **Đáp án từng việc**
 
-a) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5
-   → **5 × 4 = 20**
+a) Lớp 2A có 28 bạn, lớp 2B ít hơn 3 bạn. Lớp 2B mấy bạn?
+   → **25 bạn**
 
-b) 30 : 5 = …
-   → **6**
+b) 40 − 22 = …
+   → **18**
 
-c) 5 × 6 = …
-   → **30**
+c) Anh có 21 viên bi, em nhiều hơn anh 3 viên. Em có mấy viên?
+   → **24 viên**
 
-d) 16 : 2 = …
-   → **8**
+d) 28 + 23 = …
+   → **51**
 
-**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Con biết 2 × 6 rồi. Vậy 6 × 2 bằng mấy? Có phải lúc nào cũng thế không?
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Rút ra quy luật)*: Phép nào phải nhớ 1 sang hàng chục? Vì sao phải nhớ?
 
-**Thế nào là con đã hiểu:** Trẻ hiểu phép nhân là cộng các số hạng bằng nhau, và dùng được phép nhân đã thuộc để suy ra phép chia tương ứng.
+**Thế nào là con đã hiểu:** Trẻ nhớ đúng 1 sang hàng chục khi nhẩm miệng, không cần đặt tính ra giấy. Nhẩm được nghĩa là **hiểu chục và đơn vị**, không chỉ thuộc quy tắc đặt tính.
 
-**Con tắc thì làm gì:** Xếp que tính thành từng nhóm rồi đếm — thấy được mới nhớ được.
+**Con tắc thì làm gì:** Tách thành hai bước: cộng chục trước, cộng đơn vị sau, rồi gộp lại.
 
-**Nếu con làm nhanh:** Hỏi 2 × 11, một phép ngoài bảng, xem trẻ có tự cộng thêm 2 không.
+**Nếu con làm nhanh:** Ai trả lời xong được ra đề cho người tiếp theo.
 
 
 ---
@@ -87,17 +88,17 @@ d) 16 : 2 = …
 
 **Đáp án từng việc**
 
-a) Tính 23 + 86. Cộng hàng đơn vị trước: 3 + 6 = 9. Vì sao phải nhớ sang hàng chục?
-   → **không phải nhớ vì 9 chưa đủ một chục; kết quả 109**
+a) Tính 47 + 53. Cộng hàng đơn vị trước: 7 + 3 = 10. Có phải nhớ sang hàng chục không? Vì sao?
+   → **vì 10 lớn hơn 9, đủ một chục nên chuyển 1 chục sang; kết quả là 100**
 
-b) Tính 62 + 76. Cộng hàng đơn vị trước: 2 + 6 = 8. Vì sao phải nhớ sang hàng chục?
-   → **không phải nhớ vì 8 chưa đủ một chục; kết quả 138**
+b) Tính 51 + 67. Cộng hàng đơn vị trước: 1 + 7 = 8. Có phải nhớ sang hàng chục không? Vì sao?
+   → **không phải nhớ vì 8 chưa đủ một chục; kết quả 118**
 
-c) Tính 56 + 36. Cộng hàng đơn vị trước: 6 + 6 = 12. Vì sao phải nhớ sang hàng chục?
-   → **vì 12 lớn hơn 9, đủ một chục nên chuyển 1 chục sang; kết quả là 92**
+c) Tính 23 + 25. Cộng hàng đơn vị trước: 3 + 5 = 8. Có phải nhớ sang hàng chục không? Vì sao?
+   → **không phải nhớ vì 8 chưa đủ một chục; kết quả 48**
 
-d) Tính 39 + 32. Cộng hàng đơn vị trước: 9 + 2 = 11. Vì sao phải nhớ sang hàng chục?
-   → **vì 11 lớn hơn 9, đủ một chục nên chuyển 1 chục sang; kết quả là 71**
+d) Tính 30 + 54. Cộng hàng đơn vị trước: 0 + 4 = 4. Có phải nhớ sang hàng chục không? Vì sao?
+   → **không phải nhớ vì 4 chưa đủ một chục; kết quả 84**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Phép nào phải nhớ, phép nào không? Con nhìn vào đâu để biết trước?
 
@@ -118,23 +119,20 @@ d) Tính 39 + 32. Cộng hàng đơn vị trước: 9 + 2 = 11. Vì sao phải n
 
 **Đáp án từng việc**
 
-a) Đặt tính rồi tính: 38 + 30
-   → **68**
+a) Đặt tính rồi tính: 70 − 64
+   → **6**
 
-b) Đặt tính rồi tính: 77 − 72
-   → **5**
+b) Đặt tính rồi tính: 71 + 27
+   → **98**
 
-c) Đặt tính rồi tính: 25 + 38
-   → **63**
+c) Đặt tính rồi tính: 21 + 49
+   → **70**
 
-d) Đặt tính rồi tính: 21 − 12
-   → **9**
+d) Đặt tính rồi tính: 79 − 17
+   → **62**
 
-e) Đặt tính rồi tính: 32 − 19
-   → **13**
-
-f) Đặt tính rồi tính: 10 + 70
-   → **80**
+e) Đặt tính rồi tính: 89 − 48
+   → **41**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Làm sao biết kết quả của con đúng mà không cần tính lại?
 
@@ -149,23 +147,57 @@ f) Đặt tính rồi tính: 10 + 70
 
 ## PHẦN D — Bài toán có lời văn
 
+**Đặt tính và tìm số còn thiếu**
+
+> **Cô/mẹ đọc lên:** Con đặt tính thẳng cột: đơn vị dưới đơn vị, chục dưới chục. Cộng từ hàng đơn vị trở đi.
+
+**Đáp án từng việc**
+
+a) Đặt tính rồi tính: 61 − 42
+   → **19**
+
+b) Tìm số còn thiếu: … − 20 = 56
+   → **76**
+
+c) Đặt tính rồi tính: 54 + 6
+   → **60**
+
+d) Tìm số còn thiếu: … + 12 = 58
+   → **46**
+
+e) Tìm số còn thiếu: … − 23 = 21
+   → **44**
+
+**Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Phép nào phải nhớ 1? Con ghi số nhớ ở đâu cho khỏi quên?
+
+**Thế nào là con đã hiểu:** Trẻ viết thẳng cột và nhớ đúng 1 sang hàng chục. Tìm được số hạng chưa biết là bước cao hơn: trẻ phải hiểu **phép trừ gỡ được phép cộng**, chứ không chỉ tính xuôi.
+
+**Con tắc thì làm gì:** Kẻ sẵn hai cột chục – đơn vị trên vở. Lỗi thường gặp nhất ở lớp 2 là viết lệch cột chứ không phải tính sai.
+
+**Nếu con làm nhanh:** Cho một phép tính đã làm sai rồi hỏi trẻ sai ở bước nào.
+
+
+---
+
+## PHẦN E — Thử thách vui
+
 **Tìm chỗ sai giúp bạn**
 
 > **Cô/mẹ đọc lên:** Con làm giám khảo nhé. Xem bạn sai ở bước nào rồi sửa lại.
 
 **Đáp án từng việc**
 
-a) Một bạn tính 53 + 86 = 148. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 139**
+a) Một bạn tính 81 + 41 = 131. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+   → **bạn quên nhớ sang hàng chục; kết quả đúng là 122**
 
-b) Một bạn tính 87 + 41 = 137. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 128**
+b) Một bạn tính 88 + 43 = 121. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+   → **bạn quên nhớ sang hàng chục; kết quả đúng là 131**
 
-c) Một bạn tính 37 + 26 = 53. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 63**
+c) Một bạn tính 18 + 56 = 64. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+   → **bạn quên nhớ sang hàng chục; kết quả đúng là 74**
 
-d) Một bạn tính 84 + 67 = 141. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 151**
+d) Một bạn tính 42 + 67 = 118. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+   → **bạn quên nhớ sang hàng chục; kết quả đúng là 109**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Làm sao để lần sau bạn ấy không sai như thế nữa?
 
@@ -174,37 +206,6 @@ d) Một bạn tính 84 + 67 = 141. Bạn ấy sai ở đâu? Kết quả đúng
 **Con tắc thì làm gì:** Tính lại cùng trẻ từng hàng, so với bài của bạn ở từng bước.
 
 **Nếu con làm nhanh:** Cho một bài đúng để trẻ khỏi quen là bài nào cũng có lỗi.
-
-
----
-
-## PHẦN E — Thử thách vui
-
-**Chắc chắn, có thể, không thể**
-
-> **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
-
-**Đáp án từng việc**
-
-a) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
-
-b) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
-   → **có thể**
-
-c) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
-   → **có thể**
-
-d) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
-   → **không thể**
-
-**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
-
-**Thế nào là con đã hiểu:** Trẻ phân biệt được “không thể” với “khó xảy ra”. Đây là chỗ nhầm nhiều nhất, và cũng là gốc của khái niệm xác suất sau này.
-
-**Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
 
 
 ---

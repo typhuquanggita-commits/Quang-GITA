@@ -28,60 +28,64 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 8 … 4
+a) 2 thêm 5 là mấy?
 
-b) Điền dấu >, < hoặc = : 8 … 9
+b) 10 bớt 6 còn mấy?
 
-c) Điền dấu >, < hoặc = : 3 … 1
+c) Con giơ 2 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 8?
 
-d) Điền dấu >, < hoặc = : 9 … 10
+d) 9 bớt 2 còn mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Na có 5 chiếc lá, cho bạn 3 chiếc. Na còn lại mấy chiếc?
+a) Na có 3 quả bóng, mẹ cho thêm 3 quả. Na có tất cả mấy quả?
 
-b) Tí có 5 cái kẹo, mẹ cho thêm 3 cái. Tí có tất cả mấy cái?
+b) Tí có 5 quả cam, cho bạn 4 quả. Tí còn lại mấy quả?
 
-c) Bi có 7 quả bóng, cho bạn 5 quả. Bi còn lại mấy quả?
+c) Cốm có 1 con cá, mẹ cho thêm 5 con. Cốm có tất cả mấy con?
 
-d) Bơ có 2 con vịt, mẹ cho thêm 2 con. Bơ có tất cả mấy con?
+d) Cốm có 4 bông hoa, cho bạn 2 bông. Cốm còn lại mấy bông?
 
-e) An có 7 con cá, cho bạn 4 con. An còn lại mấy con?
+e) Cốm có 5 con vịt, mẹ cho thêm 2 con. Cốm có tất cả mấy con?
+
+f) Bi có 8 con vịt, cho bạn 3 con. Bi còn lại mấy con?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
-**Tìm số còn thiếu**
+**Tính nhanh**
 
-a) 9 + … = 10
+a) 2 − 1 = …
 
-b) 6 + … = 10
+b) 17 + 2 = …
 
-c) … + 3 = 9
+c) 2 + 1 = …
 
-d) … + 1 = 9
+d) 4 + 1 = …
 
-e) 6 + … = 8
+e) 10 − 9 = …
 
-f) 9 + … = 10
+f) 5 − 4 = …
+
+g) 15 + 1 = …
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 6 + 6 = 12.
+a) Bàn ăn có 5 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 5 = 9.
+b) 2 con gà có mấy cái chân?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 6 = 0.
+c) Con có 6 cái kẹo, cho bạn 1 cái. Còn mấy cái?
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 6 = 6.
+d) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
 
 
 ---
@@ -90,7 +94,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 6 = 6.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
-- ☐ Tìm số còn thiếu
-- ☐ Tự đặt một bài toán
+- ☐ Tính nhanh
+- ☐ Đố vui cộng trừ

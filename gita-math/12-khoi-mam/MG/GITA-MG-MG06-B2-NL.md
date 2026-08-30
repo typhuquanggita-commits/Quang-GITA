@@ -42,7 +42,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Một quả bóng hoặc một con thú bông
+- Không cần chuẩn bị — dùng chính đồ vật trong phòng
 - Bộ hình phẳng và khối bằng gỗ hoặc bìa
 - Bút chì màu
 - Tranh các hoạt động trong ngày
@@ -51,31 +51,31 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## Chơi khởi động
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-> **Cô/mẹ đọc lên:** Con đứng dậy nhé. Cô nói hướng nào thì con đặt quả bóng ở hướng ấy.
+> **Cô/mẹ đọc lên:** Mình chơi trò đi săn nhé. Cô gọi tên hình nào, con chạy đi tìm một thứ có hình ấy rồi mang về cho cô.
 
 **Đáp án từng việc**
 
-a) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
-   → **vật nào ở trên đầu con**
+a) Con chạy đi tìm một thứ trong nhà có hình vuông.
+   → **viên gạch nền, tờ giấy nhớ, mặt hộp**
 
-b) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
-   → **vật nào ở tay trái con**
+b) Con chạy đi tìm một thứ trong nhà có hình tam giác.
+   → **cái móc áo, mái nhà đồ chơi, miếng bánh mì cắt chéo**
 
-c) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
-   → **vật nào ở dưới chân con**
+c) Tìm cho cô một thứ là khối lập phương.
+   → **hộp rubik, xúc xắc**
 
-d) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
-   → **vật nào ở tay phải con**
+d) Tìm một thứ dài hơn bàn chân của con.
+   → **trẻ ướm thử rồi trả lời — thứ nào cũng được, miễn ướm đúng**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Nếu con quay người lại thì quả bóng còn ở bên phải con nữa không?
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Vì sao con bảo cái này là hình tròn? Nó có chỗ nào nhọn không?
 
-**Thế nào là con đã hiểu:** Trẻ nhận ra phải – trái **đổi theo hướng mình đứng**, còn trên – dưới thì không đổi. Đây là chỗ khó thật của chủ đề.
+**Thế nào là con đã hiểu:** Trẻ tìm được vật có hình ấy ở **đồ vật thật**, không chỉ nhận ra hình trên giấy. Nhận hình trong đời sống khó hơn nhận hình vẽ sẵn, vì đồ vật thật còn có màu, có chữ, có nhiều chi tiết gây nhiễu.
 
-**Con tắc thì làm gì:** Buộc một sợi dây màu vào cổ tay phải làm dấu. Bỏ dây khi trẻ đã quen.
+**Con tắc thì làm gì:** Cầm sẵn một vật mẫu trên tay cho trẻ so sánh khi đi tìm.
 
-**Nếu con làm nhanh:** Đứng đối diện nhau rồi hỏi tay phải của cô ở phía nào của con.
+**Nếu con làm nhanh:** Đổi vai: trẻ gọi tên hình, người lớn đi tìm — và cố tình tìm sai một lần để trẻ được sửa.
 
 
 ---
@@ -88,20 +88,20 @@ d) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ v�
 
 **Đáp án từng việc**
 
-a) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
-   → **ví dụ: cái đĩa, bánh xe, mặt đồng hồ**
-
-b) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật có dạng khối hộp chữ nhật.
-   → **ví dụ: hộp bánh, viên gạch, quyển sách dày**
-
-c) Đây là khối trụ. Con tìm quanh nhà một đồ vật có dạng khối trụ.
-   → **ví dụ: lon nước, cái cốc, cây bút chì**
-
-d) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
-   → **ví dụ: cửa ra vào, quyển vở, cái bảng**
-
-e) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hình vuông.
+a) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hình vuông.
    → **ví dụ: viên gạch, khăn mùi soa, mặt xúc xắc**
+
+b) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
+   → **ví dụ: quả bóng, viên bi, quả cam**
+
+c) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
+   → **ví dụ: viên xúc xắc, hộp quà vuông**
+
+d) Đây là hình tam giác. Con tìm quanh nhà một đồ vật có dạng hình tam giác.
+   → **ví dụ: cái nón, mái nhà, miếng bánh cắt**
+
+e) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật có dạng khối hộp chữ nhật.
+   → **ví dụ: hộp bánh, viên gạch, quyển sách dày**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Mấy đồ vật con vừa tìm giống nhau ở chỗ nào?
 
@@ -122,17 +122,17 @@ e) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hìn
 
 **Đáp án từng việc**
 
-a) Con khoanh vào vật ở giữa hàng.
-   → **vật chính giữa**
+a) Con tô màu hình tròn.
+   → **chỉ tô hình tròn**
 
 b) Con gạch bỏ vật không cùng nhóm.
    → **vật khác loại**
 
-c) Con nối mỗi con vật với cái chuồng của nó.
-   → **nối đủ đôi một**
+c) Con khoanh vào vật ở giữa hàng.
+   → **vật chính giữa**
 
-d) Con khoanh tròn nhóm có nhiều hơn.
-   → **nhóm nhiều hơn**
+d) Con nối mỗi con vật với cái chuồng của nó.
+   → **nối đủ đôi một**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con kiểm lại xem có bỏ sót cái nào không?
 
@@ -153,14 +153,17 @@ d) Con khoanh tròn nhóm có nhiều hơn.
 
 **Đáp án từng việc**
 
-a) Con đi ngủ vào buổi nào trong ngày?
-   → **buổi tối**
+a) Con đánh răng buổi sớm vào buổi nào trong ngày?
+   → **buổi sáng**
 
-b) Con tan học vào buổi nào trong ngày?
+b) Con ngủ trưa vào buổi nào trong ngày?
+   → **buổi trưa**
+
+c) Con tan học vào buổi nào trong ngày?
    → **buổi chiều**
 
-c) Con đánh răng buổi sớm vào buổi nào trong ngày?
-   → **buổi sáng**
+d) Con đi ngủ vào buổi nào trong ngày?
+   → **buổi tối**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Cho một ví dụ)*: Hôm qua là thứ mấy? Vậy ngày mai là thứ mấy?
 

@@ -32,13 +32,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Nhảy và đếm**
 
-a) Con vỗ tay đúng 2 cái nhé. Đếm to lên.
+a) Con gật đầu đúng 3 cái nhé. Đếm to lên.
 
-b) Con gật đầu đúng 7 cái nhé. Đếm to lên.
+b) Con bước lên phía trước đúng 4 bước nhé. Đếm to lên.
 
-c) Con nhảy đúng 4 cái nhé. Đếm to lên.
+c) Con nhảy đúng 7 cái nhé. Đếm to lên.
 
-d) Con giậm chân đúng 8 cái nhé. Đếm to lên.
+d) Con giậm chân đúng 6 cái nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,15 +47,15 @@ d) Con giậm chân đúng 8 cái nhé. Đếm to lên.
 
 **Đếm rồi nói số cuối cùng**
 
-a) Cô đặt ra 8 quả cam. Con đếm xem có mấy quả?
+a) Cô đặt ra 3 quyển vở. Con đếm xem có mấy quyển?
 
-b) Cô đặt ra 6 quyển vở. Con đếm xem có mấy quyển?
+b) Cô đặt ra 5 bông hoa. Con đếm xem có mấy bông?
 
-c) Cô đặt ra 6 con cá. Con đếm xem có mấy con?
+c) Cô đặt ra 5 chiếc lá. Con đếm xem có mấy chiếc?
 
-d) Cô đặt ra 2 bông hoa. Con đếm xem có mấy bông?
+d) Cô đặt ra 4 con vịt. Con đếm xem có mấy con?
 
-e) Cô đặt ra 6 viên bi. Con đếm xem có mấy viên?
+e) Cô đặt ra 4 cái bánh. Con đếm xem có mấy cái?
 
 
 ## Tự làm thử · 7 phút
@@ -64,28 +64,24 @@ e) Cô đặt ra 6 viên bi. Con đếm xem có mấy viên?
 
 **Khoanh, nối, tô**
 
-a) Con gạch bỏ vật không cùng nhóm.
+a) Con tô màu hình tròn.
 
 b) Con nối mỗi con vật với cái chuồng của nó.
 
-c) Con khoanh vào vật ở giữa hàng.
-
-d) Con tô màu hình tròn.
+c) Con gạch bỏ vật không cùng nhóm.
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) đỏ – trắng – đỏ – trắng – … Con đoán xem tiếp theo là màu gì?
+a) Dãy số bị mất một số: 4 , … , 6 , 7 . Mất số nào?
 
-b) xanh – đỏ – vàng – xanh – đỏ – vàng – xanh – đỏ – vàng – … Con đoán xem tiếp theo là màu gì?
+b) Đếm tiếp cho cô: 1 rồi đến số mấy?
 
-c) xanh – trắng – xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
-
-d) đỏ – xanh – vàng – đỏ – xanh – vàng – đỏ – xanh – vàng – … Con đoán xem tiếp theo là màu gì?
+c) Con giơ 4 ngón ở tay này, 4 ngón ở tay kia. Tất cả mấy ngón?
 
 
 ---
@@ -99,4 +95,4 @@ d) đỏ – xanh – vàng – đỏ – xanh – vàng – đỏ – xanh – 
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Đếm rồi nói số cuối cùng | ☐ | ☐ | ☐ |
 | Khoanh, nối, tô | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

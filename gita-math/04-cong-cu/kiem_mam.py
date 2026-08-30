@@ -23,6 +23,7 @@ Bộ này kiểm bốn nhóm khác, và nhóm thứ tư là nhóm quan trọng n
 from __future__ import annotations
 
 import json
+import random
 import re
 import sys
 from pathlib import Path
@@ -157,6 +158,72 @@ def main() -> int:
     sai = [x["ma"] for x in idx if x["khoi"] == "MG"
            and "HÔM NAY CON LÀM ĐƯỢC GÌ" not in doc[x["ma"]][0]]
     k.bao(not sai, "Khối mẫu giáo đánh giá bằng ba mức, không bằng điểm", sai)
+
+    # ── 5. không nghèo nội dung ──────────────────────────────────────
+    #
+    #  Ba phép đo dưới đây trả lời đúng một câu hỏi: **buổi học có đúng là buổi
+    #  của chủ đề ấy không, hay chỉ là mấy mẫu bài lắp bừa vào?** Đây là chỗ bộ
+    #  tài liệu dễ trông thì đủ mà thực chất thì rỗng, nên phải đo bằng số chứ
+    #  không tự nhận.
+    print(f"\n{DAM}5 · KHÔNG NGHÈO NỘI DUNG{HET}")
+
+    trong = []
+    for kh in KHOI:
+        for cd in CHU_DE[kh]:
+            co = {vai_cua(m["ma"]) for m in KHO_MAM[kh].get(cd[0], [])}
+            for v in sorted(set(VAI_THEO_O[kh])):
+                if v not in co:
+                    trong.append(f"{cd[0]} {cd[1][:28]}: thiếu mẫu vai {v}")
+    k.bao(not trong,
+          "Mỗi chủ đề có mẫu bài riêng cho **cả bốn vai** — mở, học, luyện, kết",
+          trong)
+
+    lech = []
+    for x in idx:
+        vais = VAI_THEO_O[x["khoi"]]
+        for i, m in enumerate(x["ma_mau"]):
+            v = vais[i] if i < len(vais) else "luyen"
+            if vai_cua(m) != v:
+                lech.append(f"{x['ma']} ô {i + 1}: cần {v}, lấy {vai_cua(m)}")
+    k.bao(not lech, "Ô nào cũng lấy đúng mẫu hợp vai của ô ấy, không phải "
+                    "mượn tạm mẫu vai khác", lech)
+
+    muon = []
+    for x in idx:
+        rieng = {m["ma"] for m in KHO_MAM[x["khoi"]].get(x["chu_de"], [])}
+        vais = VAI_THEO_O[x["khoi"]]
+        for i, m in enumerate(x["ma_mau"]):
+            v = vais[i] if i < len(vais) else "luyen"
+            if v in ("kham_pha", "luyen") and m not in rieng:
+                muon.append(f"{x['ma']} ô {i + 1}: {m} không thuộc {x['chu_de']}")
+    k.bao(not muon, "Hai ô cốt lõi dạy đúng nội dung của chủ đề, không mượn "
+                    "nội dung chủ đề khác", muon)
+
+    # Trùng ý là lỗi nhìn thấy ngay: bài chỉ có bốn năm ý, trùng một ý là mất
+    # một phần tư bài. Đo trên chính các mẫu, nhiều hạt, chứ không đo trên tệp
+    # đã sinh — vì tệp chỉ dùng một hạt nên may rủi có thể che mất lỗi.
+    trung = []
+    da_do = set()
+    for kh in KHO_MAM:
+        for ds in KHO_MAM[kh].values():
+            for m in ds:
+                if m["ma"] in da_do:
+                    continue
+                da_do.add(m["ma"])
+                for h in range(200):
+                    cau = [c for c, _ in m["sinh"](random.Random(h)).y]
+                    if len(set(cau)) != len(cau):
+                        trung.append(f"{m['ma']}: hạt {h} có hai ý giống hệt nhau")
+                        break
+    k.bao(not trung, "Không bài nào có hai ý giống hệt nhau (thử 200 hạt/mẫu)",
+          trung)
+
+    it_y = [f"{m}: chỉ {n} ý"
+            for m, n in sorted({m["ma"]: min(len(m["sinh"](random.Random(h)).y)
+                                             for h in range(60))
+                                for kh in KHO_MAM for ds in KHO_MAM[kh].values()
+                                for m in ds}.items()) if n < 3]
+    k.bao(not it_y, "Mẫu nào cũng cho ít nhất 3 ý trong một bài", it_y)
 
     # ── kết luận ─────────────────────────────────────────────────────
     n = len(k.dat) + len(k.loi)

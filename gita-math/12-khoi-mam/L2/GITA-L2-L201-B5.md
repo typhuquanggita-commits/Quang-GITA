@@ -28,71 +28,75 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Chuyền bóng nhẩm nhanh**
 
-a) 2 × 1 = …
+a) 45 − 16 = …
 
-b) 18 : 2 = …
+b) 46 + 6 = …
 
-c) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5
+c) Anh có 12 viên bi, em nhiều hơn anh 3 viên. Em có mấy viên?
 
-d) 5 × 6 = …
+d) Lớp 2A có 35 bạn, lớp 2B ít hơn 6 bạn. Lớp 2B mấy bạn?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Vì sao phải nhớ**
 
-a) Tính 66 + 55. Cộng hàng đơn vị trước: 6 + 5 = 11. Vì sao phải nhớ sang hàng chục?
+a) Tính 75 + 27. Cộng hàng đơn vị trước: 5 + 7 = 12. Có phải nhớ sang hàng chục không? Vì sao?
 
-b) Tính 71 + 84. Cộng hàng đơn vị trước: 1 + 4 = 5. Vì sao phải nhớ sang hàng chục?
+b) Tính 75 + 85. Cộng hàng đơn vị trước: 5 + 5 = 10. Có phải nhớ sang hàng chục không? Vì sao?
 
-c) Tính 73 + 61. Cộng hàng đơn vị trước: 3 + 1 = 4. Vì sao phải nhớ sang hàng chục?
+c) Tính 60 + 72. Cộng hàng đơn vị trước: 0 + 2 = 2. Có phải nhớ sang hàng chục không? Vì sao?
 
-d) Tính 50 + 55. Cộng hàng đơn vị trước: 0 + 5 = 5. Vì sao phải nhớ sang hàng chục?
+d) Tính 63 + 21. Cộng hàng đơn vị trước: 3 + 1 = 4. Có phải nhớ sang hàng chục không? Vì sao?
 
-e) Tính 38 + 41. Cộng hàng đơn vị trước: 8 + 1 = 9. Vì sao phải nhớ sang hàng chục?
+e) Tính 88 + 86. Cộng hàng đơn vị trước: 8 + 6 = 14. Có phải nhớ sang hàng chục không? Vì sao?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Cộng trừ có nhớ trong phạm vi 100**
 
-a) Đặt tính rồi tính: 62 − 38
+a) Đặt tính rồi tính: 64 − 10
 
-b) Đặt tính rồi tính: 44 + 40
+b) Đặt tính rồi tính: 10 + 12
 
-c) Đặt tính rồi tính: 70 − 35
+c) Đặt tính rồi tính: 31 + 58
 
-d) Đặt tính rồi tính: 72 + 16
+d) Đặt tính rồi tính: 52 − 28
 
-e) Đặt tính rồi tính: 31 + 12
+e) Đặt tính rồi tính: 58 − 30
+
+f) Đặt tính rồi tính: 31 + 23
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đặt tính và tìm số còn thiếu**
 
-a) Một bạn tính 88 + 70 = 167. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Đặt tính rồi tính: 35 + 26
 
-b) Một bạn tính 77 + 18 = 85. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Đặt tính rồi tính: 63 − 49
 
-c) Một bạn tính 56 + 34 = 80. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Tìm số còn thiếu: … + 34 = 80
+
+d) Tìm số còn thiếu: … − 17 = 50
+
+e) Đặt tính rồi tính: 49 + 1
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Tìm chỗ sai giúp bạn**
 
-a) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
+a) Một bạn tính 56 + 23 = 88. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
-b) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+b) Một bạn tính 37 + 62 = 108. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
-c) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+c) Một bạn tính 19 + 87 = 96. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
-d) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
-
-e) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+d) Một bạn tính 58 + 45 = 93. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
 
 ---
@@ -101,8 +105,8 @@ e) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Chuyền bóng nhẩm nhanh
 - ☐ Vì sao phải nhớ
 - ☐ Cộng trừ có nhớ trong phạm vi 100
+- ☐ Đặt tính và tìm số còn thiếu
 - ☐ Tìm chỗ sai giúp bạn
-- ☐ Chắc chắn, có thể, không thể

@@ -32,13 +32,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Nhảy và đếm**
 
-a) Con gật đầu đúng 8 cái nhé. Đếm to lên.
+a) Con bước lên phía trước đúng 6 bước nhé. Đếm to lên.
 
-b) Con giậm chân đúng 4 cái nhé. Đếm to lên.
+b) Con nhảy đúng 2 cái nhé. Đếm to lên.
 
-c) Con nhảy đúng 7 cái nhé. Đếm to lên.
+c) Con giậm chân đúng 5 cái nhé. Đếm to lên.
 
-d) Con vỗ tay đúng 4 cái nhé. Đếm to lên.
+d) Con vỗ tay đúng 7 cái nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,13 +47,11 @@ d) Con vỗ tay đúng 4 cái nhé. Đếm to lên.
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 6 cái bánh thành hai hàng. Con đếm xem có mấy cái?
+a) Cô bày 5 quả bóng thành vòng tròn. Con đếm xem có mấy quả?
 
-b) Cô bày 8 quả cam thành hàng ngang. Con đếm xem có mấy quả?
+b) Cô bày 5 cái bánh rải lộn xộn. Con đếm xem có mấy cái?
 
-c) Cô bày 5 quả cam thành vòng tròn. Con đếm xem có mấy quả?
-
-d) Cô bày 4 con cá thành hàng ngang. Con đếm xem có mấy con?
+c) Cô bày 10 quyển vở thành hàng ngang. Con đếm xem có mấy quyển?
 
 
 ## Tự làm thử · 7 phút
@@ -62,28 +60,28 @@ d) Cô bày 4 con cá thành hàng ngang. Con đếm xem có mấy con?
 
 **Tìm thẻ số cho đúng nhóm**
 
-a) Ô này có 4 con cá. Con tìm thẻ số nào đặt vào ô đó?
+a) Ô này có 5 cái bánh. Con tìm thẻ số nào đặt vào ô đó?
 
-b) Ô này có 5 cái kẹo. Con tìm thẻ số nào đặt vào ô đó?
+b) Ô này có 3 quả cam. Con tìm thẻ số nào đặt vào ô đó?
 
-c) Ô này có 3 bông hoa. Con tìm thẻ số nào đặt vào ô đó?
+c) Ô này có 2 con cá. Con tìm thẻ số nào đặt vào ô đó?
 
-d) Ô này có 1 con cá. Con tìm thẻ số nào đặt vào ô đó?
+d) Ô này có 6 viên bi. Con tìm thẻ số nào đặt vào ô đó?
 
-e) Ô này có 9 con vịt. Con tìm thẻ số nào đặt vào ô đó?
+e) Ô này có 8 cái kẹo. Con tìm thẻ số nào đặt vào ô đó?
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) đỏ – xanh – đỏ – xanh – đỏ – xanh – … Con đoán xem tiếp theo là màu gì?
+a) Đếm tiếp cho cô: 8 rồi đến số mấy?
 
-b) đỏ – trắng – đỏ – trắng – đỏ – trắng – … Con đoán xem tiếp theo là màu gì?
+b) Dãy số bị mất một số: 6 , … , 8 , 9 . Mất số nào?
 
-c) xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
+c) Số nào đứng ngay trước số 7?
 
 
 ---
@@ -97,4 +95,4 @@ c) xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là 
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Tìm thẻ số cho đúng nhóm | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

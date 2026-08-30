@@ -32,11 +32,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Trên – dưới, trước – sau, phải – trái**
 
-a) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+a) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
 
-b) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+b) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
 
-c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
+c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+
+d) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+
+e) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
 
 
 ## Cùng khám phá · 8 phút
@@ -45,13 +49,13 @@ c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ v�
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 4 con cá thành hai hàng. Con đếm xem có mấy con?
+a) Cô bày 9 con vịt thành hàng ngang. Con đếm xem có mấy con?
 
-b) Cô bày 10 con vịt thành hai hàng. Con đếm xem có mấy con?
+b) Cô bày 6 quả bóng rải lộn xộn. Con đếm xem có mấy quả?
 
-c) Cô bày 8 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
+c) Cô bày 4 viên bi rải lộn xộn. Con đếm xem có mấy viên?
 
-d) Cô bày 7 viên bi rải lộn xộn. Con đếm xem có mấy viên?
+d) Cô bày 8 quả bóng thành vòng tròn. Con đếm xem có mấy quả?
 
 
 ## Tự làm thử · 7 phút
@@ -60,11 +64,13 @@ d) Cô bày 7 viên bi rải lộn xộn. Con đếm xem có mấy viên?
 
 **Con thứ mấy trong hàng**
 
-a) Có 6 con cá xếp thành hàng. Con chỉ vào con thứ năm.
+a) Có 4 con chim xếp thành hàng. Con chỉ vào con thứ hai.
 
-b) Có 4 con mèo xếp thành hàng. Con chỉ vào con thứ nhất.
+b) Có 8 con bướm xếp thành hàng. Con chỉ vào con thứ tám.
 
-c) Có 8 con thỏ xếp thành hàng. Con chỉ vào con thứ nhất.
+c) Có 5 con gà xếp thành hàng. Con chỉ vào con thứ tư.
+
+d) Có 8 con chim xếp thành hàng. Con chỉ vào con thứ hai.
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -73,11 +79,11 @@ c) Có 8 con thỏ xếp thành hàng. Con chỉ vào con thứ nhất.
 
 **Sáng, trưa, chiều, tối**
 
-a) Con ăn sáng vào buổi nào trong ngày?
+a) Con ngủ trưa vào buổi nào trong ngày?
 
-b) Con ngủ trưa vào buổi nào trong ngày?
+b) Con đi ngủ vào buổi nào trong ngày?
 
-c) Con tan học vào buổi nào trong ngày?
+c) Con ăn sáng vào buổi nào trong ngày?
 
 
 ---

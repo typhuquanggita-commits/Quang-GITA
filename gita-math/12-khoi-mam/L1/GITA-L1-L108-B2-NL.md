@@ -41,40 +41,37 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Bảng số từ 1 đến 100 dán trên tường (nếu có)
 - Que tính bó thành chục
 - Giấy ô li
-- Giấy nháp
+- Không cần gì
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**Đếm nối tiếp theo bước**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình đếm nhảy cóc nhé. Không đếm từng số một, mà nhảy hai số, năm số, mười số một lần.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 4 … 1
-   → **>**
+a) Đếm tiếp cho cô: 1 , 3 , 5 , 7 , … Số tiếp theo là mấy?
+   → **9**
 
-b) Điền dấu >, < hoặc = : 1 … 3
-   → **<**
+b) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
+   → **50**
 
-c) Điền dấu >, < hoặc = : 1 … 8
-   → **<**
+c) Đếm từ 60 lên, mỗi lần thêm 10, đếm 3 lần.
+   → **70 , 80 , 90**
 
-d) Điền dấu >, < hoặc = : 4 … 8
-   → **<**
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Đếm cách 10 thì chữ số nào đứng yên, chữ số nào đổi?
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Thế nào là con đã hiểu:** Trẻ đếm cách 10 mà không phải nhẩm cộng từng lần — nhận ra chỉ có chữ số hàng chục thay đổi. Đây là bước đầu tiên trẻ nhìn thấy **cấu tạo chục – đơn vị** của số.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
+**Con tắc thì làm gì:** Chỉ tay trên bảng số 100 khi đếm, cho trẻ thấy mình nhảy sang cột nào.
 
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Đếm lùi cách 10 từ 90 xuống — khó hơn hẳn đếm lên.
 
 
 ---
@@ -87,20 +84,20 @@ d) Điền dấu >, < hoặc = : 4 … 8
 
 **Đáp án từng việc**
 
-a) 60 − 10 = …
-   → **50**
+a) 50 − 10 = …
+   → **40**
 
-b) 50 + 40 = …
-   → **90**
+b) 40 + 20 = …
+   → **60**
 
-c) 20 − 10 = …
-   → **10**
+c) 60 − 30 = …
+   → **30**
 
-d) 40 + 50 = …
-   → **90**
+d) 60 + 20 = …
+   → **80**
 
-e) 60 + 30 = …
-   → **90**
+e) 60 + 10 = …
+   → **70**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con biết 3 + 2 = 5. Vậy 30 + 20 bằng mấy? Vì sao giống nhau thế?
 
@@ -121,20 +118,23 @@ e) 60 + 30 = …
 
 **Đáp án từng việc**
 
-a) Đặt tính rồi tính: 88 + 1
-   → **89**
+a) Đặt tính rồi tính: 38 − 27
+   → **11**
 
-b) Đặt tính rồi tính: 31 − 10
-   → **21**
+b) Đặt tính rồi tính: 60 + 3
+   → **63**
 
-c) Đặt tính rồi tính: 69 + 20
-   → **89**
+c) Đặt tính rồi tính: 93 − 92
+   → **1**
 
-d) Đặt tính rồi tính: 99 − 74
-   → **25**
+d) Đặt tính rồi tính: 28 + 50
+   → **78**
 
-e) Đặt tính rồi tính: 49 − 16
-   → **33**
+e) Đặt tính rồi tính: 66 − 15
+   → **51**
+
+f) Đặt tính rồi tính: 57 + 41
+   → **98**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Có phép nào con tính nhẩm được luôn không cần đặt tính không?
 
@@ -149,31 +149,28 @@ e) Đặt tính rồi tính: 49 − 16
 
 ## PHẦN D — Thử thách vui
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-> **Cô/mẹ đọc lên:** Lần này con làm cô giáo nhé. Con nghĩ ra đề toán, cô sẽ giải.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi, toàn chuyện trong nhà mình thôi.
 
 **Đáp án từng việc**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 3 + 7 = 10.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+a) 3 con vịt có mấy cái chân?
+   → **6 cái chân**
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 5 = 9.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+b) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
+   → **5 cái ghế**
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 8 = 2.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+c) Bàn ăn có 5 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
+   → **7 cái ghế**
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 6 = 8.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Làm cách gọn hơn)*: Câu này con làm phép cộng hay phép trừ? Vì sao?
 
-**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Đề của con có đủ cho người khác giải được không? Thiếu gì không?
+**Thế nào là con đã hiểu:** Trẻ chọn đúng phép tính ngay từ khi nghe đề, không phải thử cả hai. Nghe 'cho bạn' mà nghĩ tới phép trừ là dấu hiệu trẻ đã nối được **lời nói với phép tính**.
 
-**Thế nào là con đã hiểu:** Trẻ đặt được đề có đủ dữ kiện **và** có câu hỏi. Trẻ hay quên câu hỏi, và chính lúc quên ấy mới hiểu vì sao đề nào cũng phải có câu hỏi.
+**Con tắc thì làm gì:** Diễn lại tình huống bằng đồ vật thật ngay trên bàn.
 
-**Con tắc thì làm gì:** Cho sẵn bối cảnh — “về quả cam nhé” — rồi để trẻ điền số.
-
-**Nếu con làm nhanh:** Đổi vai: người lớn đặt một đề thiếu dữ kiện, trẻ chỉ ra chỗ thiếu.
+**Nếu con làm nhanh:** Trẻ tự nghĩ một câu đố về nhà mình rồi đố cả nhà.
 
 
 ---

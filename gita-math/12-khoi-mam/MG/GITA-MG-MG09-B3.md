@@ -30,15 +30,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Nhảy và đếm**
+**Vỗ tay theo nhịp rồi bước đo**
 
-a) Con giậm chân đúng 3 cái nhé. Đếm to lên.
+a) Cô làm mẫu: giậm chân – gật đầu. Lặp lại 3 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-b) Con gật đầu đúng 9 cái nhé. Đếm to lên.
+b) Cô làm mẫu: vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-c) Con nhảy đúng 9 cái nhé. Đếm to lên.
-
-d) Con bước lên phía trước đúng 6 bước nhé. Đếm to lên.
+c) Con bước chân nối gót đi hết chiều dài tấm thảm. Đếm to xem mấy bước.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,26 +45,26 @@ d) Con bước lên phía trước đúng 6 bước nhé. Đếm to lên.
 
 **Xếp thành nhóm**
 
-a) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
+a) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấy nhóm?
 
-b) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
+b) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
 
-c) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
+c) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
 
 
 ## Tự làm thử · 7 phút
 
 *Trẻ tự làm, người lớn chỉ hỏi chứ không làm hộ.*
 
-**Điền vào ô trống**
+**Khoanh, nối, tô**
 
-a) xanh – đỏ – xanh – … – xanh . Ô trống là màu gì?
+a) Con khoanh vào vật ở giữa hàng.
 
-b) xanh – vàng – xanh – … – xanh – vàng . Ô trống là màu gì?
+b) Con khoanh tròn nhóm có nhiều hơn.
 
-c) xanh – … – xanh – vàng – xanh . Ô trống là màu gì?
+c) Con nối mỗi con vật với cái chuồng của nó.
 
-d) đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
+d) Con tô màu hình tròn.
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -75,11 +73,11 @@ d) đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
 
 **Đoán tiếp dãy**
 
-a) xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
+a) vàng – đỏ – vàng – đỏ – vàng – đỏ – … Con đoán xem tiếp theo là màu gì?
 
-b) đỏ – xanh – vàng – đỏ – xanh – vàng – … Con đoán xem tiếp theo là màu gì?
+b) vàng – xanh – trắng – vàng – xanh – trắng – vàng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
 
-c) đỏ – vàng – đỏ – vàng – đỏ – vàng – … Con đoán xem tiếp theo là màu gì?
+c) xanh – trắng – xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
 
 
 ---
@@ -90,7 +88,7 @@ c) đỏ – vàng – đỏ – vàng – đỏ – vàng – … Con đoán xe
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Nhảy và đếm | ☐ | ☐ | ☐ |
+| Vỗ tay theo nhịp rồi bước đo | ☐ | ☐ | ☐ |
 | Xếp thành nhóm | ☐ | ☐ | ☐ |
-| Điền vào ô trống | ☐ | ☐ | ☐ |
+| Khoanh, nối, tô | ☐ | ☐ | ☐ |
 | Đoán tiếp dãy | ☐ | ☐ | ☐ |

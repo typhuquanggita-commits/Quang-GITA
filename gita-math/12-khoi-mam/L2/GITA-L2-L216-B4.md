@@ -28,24 +28,22 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Khảo sát chớp nhoáng**
 
-a) Viết phép nhân thay cho phép cộng: 2 + 2 + 2
+a) Bạn nào thích ăn phở hơn ăn bún thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-b) 2 × 10 = …
+b) Bạn nào thích màu đỏ thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-c) 50 : 5 = …
+c) Tháng sau lớp mình được nghỉ một ngày — chắc chắn, có thể hay không thể?
 
-d) 5 × 6 = …
-
-e) 8 : 2 = …
+d) Ngày mai trời mưa — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
-**Kiểm đếm về phương tiện đi học**
+**Kiểm đếm về môn học yêu thích**
 
-a) Con đi hỏi và kiểm đếm về phương tiện đi học. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về môn học yêu thích. Ghi vào bảng.
 
 b) Loại nào nhiều nhất trong bảng của con?
 
@@ -58,49 +56,49 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 **Đổi đơn vị và tính trên số đo**
 
-a) 27 cm + 32 cm = … cm
+a) 25 cm + 22 cm = … cm
 
-b) Điền dấu >, < hoặc = : 6 dm … 66 cm
+b) 6 dm = … cm
 
-c) 9 m = … cm
+c) Điền dấu >, < hoặc = : 8 dm … 60 cm
 
-d) 2 dm = … cm
+d) 5 m = … dm
 
-e) 39 cm + 12 cm = … cm
+e) Điền dấu >, < hoặc = : 5 dm … 32 cm
 
-f) Điền dấu >, < hoặc = : 5 dm … 52 cm
+f) 32 cm + 30 cm = … cm
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đọc bảng số liệu và đoán khả năng**
 
-a) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+a) Lớp 2A khảo sát cách đi học. Kết quả: xe máy: 10 bạn · xe đạp: 6 bạn · ô tô: 11 bạn. Cách nào nhiều bạn chọn nhất?
 
-b) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+b) Cách nào ít bạn chọn nhất?
 
-c) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+c) Ô tô nhiều hơn xe đạp bao nhiêu bạn?
 
-d) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+d) Lớp khảo sát tất cả bao nhiêu bạn?
 
-e) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+e) Rút một bạn bất kỳ, bạn ấy đi học bằng máy bay — chắc chắn, có thể hay không thể?
 
-f) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+f) Rút một bạn bất kỳ trong lớp, bạn ấy đi học bằng ô tô — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Chắc chắn, có thể, không thể**
 
-a) Một bạn tính 88 + 68 = 146. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
 
-b) Một bạn tính 45 + 51 = 105. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
 
-c) Một bạn tính 70 + 71 = 150. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
 
-d) Một bạn tính 72 + 48 = 110. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
 
-e) Một bạn tính 29 + 76 = 95. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+e) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
 
 
 ---
@@ -109,8 +107,8 @@ e) Một bạn tính 29 + 76 = 95. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
-- ☐ Kiểm đếm về phương tiện đi học
+- ☐ Khảo sát chớp nhoáng
+- ☐ Kiểm đếm về môn học yêu thích
 - ☐ Đổi đơn vị và tính trên số đo
+- ☐ Đọc bảng số liệu và đoán khả năng
 - ☐ Chắc chắn, có thể, không thể
-- ☐ Tìm chỗ sai giúp bạn

@@ -28,54 +28,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**So sánh số trong phạm vi 10**
 
-a) Điền dấu >, < hoặc = : 2 … 93
+a) Điền dấu >, < hoặc = : 7 … 9
 
-b) Điền dấu >, < hoặc = : 62 … 54
+b) Điền dấu >, < hoặc = : 1 … 4
 
-c) Điền dấu >, < hoặc = : 73 … 49
+c) Điền dấu >, < hoặc = : 6 … 4
 
-d) Điền dấu >, < hoặc = : 14 … 70
+d) Điền dấu >, < hoặc = : 2 … 5
+
+e) Điền dấu >, < hoặc = : 6 … 1
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 98 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 21 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 80 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 38 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 56 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 95 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 56 que tính. Con lấy mấy bó và mấy que rời?
-
-e) Con lấy đúng 61 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 22 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Từ một phép cộng ra hai phép trừ**
 
-a) Từ phép tính 7 + 3 = 10, con viết ra hai phép trừ.
+a) Từ phép tính 6 + 2 = 8, con viết ra hai phép trừ.
 
-b) Từ phép tính 7 + 2 = 9, con viết ra hai phép trừ.
+b) Từ phép tính 7 + 3 = 10, con viết ra hai phép trừ.
 
-c) Từ phép tính 2 + 5 = 7, con viết ra hai phép trừ.
+c) Từ phép tính 7 + 2 = 9, con viết ra hai phép trừ.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
+a) 51 và 53: số nào lớn hơn?
 
-b) 1, 2, 4, …
+b) Số bí mật có 9 chục và 7 đơn vị. Số ấy là số nào?
 
-c) 6, 8, 10, 12, …
+c) Số bí mật đứng liền sau 76 và liền trước 78. Số nào?
 
-d) 5, 7, 9, 11, …
+d) Số bí mật có 4 chục và 5 đơn vị. Số ấy là số nào?
 
 
 ---
@@ -84,7 +84,7 @@ d) 5, 7, 9, 11, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ So sánh số trong phạm vi 10
 - ☐ Lấy đúng số que tính
 - ☐ Từ một phép cộng ra hai phép trừ
-- ☐ Tìm quy luật
+- ☐ Số bí mật

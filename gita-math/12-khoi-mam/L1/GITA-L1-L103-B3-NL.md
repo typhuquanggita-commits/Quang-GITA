@@ -42,46 +42,40 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Không cần gì — dùng ngón tay
 - 10 que tính
 - Không bắt buộc — dùng ngón tay khi cần
-- Que tính để xếp hình
+- Không cần gì
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**Nhẩm nhanh bằng ngón tay**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng trò nhẩm nhanh. Con được dùng ngón tay, không sao cả.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 9 … 10
-   → **<**
+a) 3 thêm 7 là mấy?
+   → **10**
 
-b) Điền dấu >, < hoặc = : 3 … 2
-   → **>**
+b) Con giơ 6 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 10?
+   → **4**
 
-c) Điền dấu >, < hoặc = : 2 … 9
-   → **<**
+c) 4 bớt 3 còn mấy?
+   → **1**
 
-d) Điền dấu >, < hoặc = : 7 … 3
-   → **>**
+d) Con giơ 8 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 9?
+   → **1**
 
-e) Điền dấu >, < hoặc = : 8 … 3
-   → **>**
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Rút ra quy luật)*: Con làm thế nào mà ra nhanh thế? Con đếm hay con nhớ sẵn?
 
-f) Điền dấu >, < hoặc = : 2 … 4
-   → **<**
+**Thế nào là con đã hiểu:** Trẻ trả lời được trong khoảng ba giây và bắt đầu **nhớ sẵn** vài phép quen như 5 + 5, 2 + 2, thay vì đếm lại từng ngón.
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Con tắc thì làm gì:** Cho dùng que tính. Tốc độ không quan trọng bằng việc ra đúng.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
-
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Hỏi ngược: 'cô nghĩ một số, cộng 3 thì được 8, số ấy là mấy?'
 
 
 ---
@@ -94,20 +88,23 @@ f) Điền dấu >, < hoặc = : 2 … 4
 
 **Đáp án từng việc**
 
-a) An có 8 cái kẹo, cho bạn 7 cái. An còn lại mấy cái?
-   → **1 cái**
+a) Cốm có 5 viên bi, cho bạn 1 viên. Cốm còn lại mấy viên?
+   → **4 viên**
 
-b) An có 4 con vịt, mẹ cho thêm 3 con. An có tất cả mấy con?
-   → **7 con**
+b) Tí có 3 cái kẹo, mẹ cho thêm 1 cái. Tí có tất cả mấy cái?
+   → **4 cái**
 
-c) Bo có 3 quả cam, mẹ cho thêm 4 quả. Bo có tất cả mấy quả?
-   → **7 quả**
+c) Na có 3 cái bánh, mẹ cho thêm 3 cái. Na có tất cả mấy cái?
+   → **6 cái**
 
-d) Mai có 6 con cá, cho bạn 2 con. Mai còn lại mấy con?
-   → **4 con**
+d) Cốm có 9 quả bóng, cho bạn 4 quả. Cốm còn lại mấy quả?
+   → **5 quả**
 
-e) Bi có 10 quả cam, cho bạn 2 quả. Bi còn lại mấy quả?
-   → **8 quả**
+e) An có 5 cái kẹo, mẹ cho thêm 3 cái. An có tất cả mấy cái?
+   → **8 cái**
+
+f) Bơ có 6 cái kẹo, cho bạn 3 cái. Bơ còn lại mấy cái?
+   → **3 cái**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con biết 3 + 2 = 5 rồi. Vậy 2 + 3 bằng mấy? Vì sao con biết ngay?
 
@@ -128,20 +125,20 @@ e) Bi có 10 quả cam, cho bạn 2 quả. Bi còn lại mấy quả?
 
 **Đáp án từng việc**
 
-a) 14 + 4 = …
-   → **18**
-
-b) 6 − 5 = …
-   → **1**
-
-c) 10 − 1 = …
+a) 8 + 1 = …
    → **9**
 
-d) 8 − 7 = …
-   → **1**
+b) 8 − 4 = …
+   → **4**
 
-e) 10 + 7 = …
-   → **17**
+c) 5 + 3 = …
+   → **8**
+
+d) 8 − 5 = …
+   → **3**
+
+e) 13 + 2 = …
+   → **15**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Phép nào con viết ra ngay không cần đếm? Vì sao nhớ được?
 
@@ -156,31 +153,28 @@ e) 10 + 7 = …
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi, toàn chuyện trong nhà mình thôi.
 
 **Đáp án từng việc**
 
-a) 10, 15, 20, 25, …
-   → **30**
+a) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
+   → **3 cái**
 
-b) 5, 7, 9, 11, …
-   → **13**
+b) Bàn ăn có 2 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
+   → **4 cái ghế**
 
-c) 1, 3, 5, 7, …
-   → **9**
+c) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
+   → **5 cái ghế**
 
-d) 2, 4, 8, …
-   → **16**
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Làm cách gọn hơn)*: Câu này con làm phép cộng hay phép trừ? Vì sao?
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+**Thế nào là con đã hiểu:** Trẻ chọn đúng phép tính ngay từ khi nghe đề, không phải thử cả hai. Nghe 'cho bạn' mà nghĩ tới phép trừ là dấu hiệu trẻ đã nối được **lời nói với phép tính**.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
+**Con tắc thì làm gì:** Diễn lại tình huống bằng đồ vật thật ngay trên bàn.
 
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Nếu con làm nhanh:** Trẻ tự nghĩ một câu đố về nhà mình rồi đố cả nhà.
 
 
 ---

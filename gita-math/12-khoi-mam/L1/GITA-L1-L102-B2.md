@@ -28,66 +28,66 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 15 … 34
+a) 2 thêm 8 là mấy?
 
-b) Điền dấu >, < hoặc = : 4 … 63
+b) 6 bớt 3 còn mấy?
 
-c) Điền dấu >, < hoặc = : 87 … 9
+c) Con giơ 5 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 6?
 
-d) Điền dấu >, < hoặc = : 49 … 60
-
-e) Điền dấu >, < hoặc = : 55 … 67
-
-f) Điền dấu >, < hoặc = : 78 … 75
+d) Con giơ 3 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 5?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Bi có 2 bông hoa, mẹ cho thêm 3 bông. Bi có tất cả mấy bông?
+a) Bơ có 10 bông hoa, cho bạn 9 bông. Bơ còn lại mấy bông?
 
-b) An có 4 viên bi, cho bạn 3 viên. An còn lại mấy viên?
+b) Mai có 1 con vịt, mẹ cho thêm 4 con. Mai có tất cả mấy con?
 
-c) Bo có 4 cái kẹo, cho bạn 3 cái. Bo còn lại mấy cái?
+c) Bo có 5 con vịt, cho bạn 3 con. Bo còn lại mấy con?
 
-d) Na có 3 con cá, mẹ cho thêm 3 con. Na có tất cả mấy con?
+d) An có 3 chiếc lá, mẹ cho thêm 5 chiếc. An có tất cả mấy chiếc?
 
-e) Bo có 4 quả bóng, mẹ cho thêm 4 quả. Bo có tất cả mấy quả?
+e) Bo có 6 viên bi, cho bạn 1 viên. Bo còn lại mấy viên?
+
+f) Bo có 3 bông hoa, mẹ cho thêm 4 bông. Bo có tất cả mấy bông?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tính nhanh**
 
-a) 3 − 3 = …
+a) 13 + 5 = …
 
-b) 8 + 2 = …
+b) 4 − 2 = …
 
-c) 3 − 3 = …
+c) 2 − 1 = …
 
-d) 17 + 1 = …
+d) 8 − 2 = …
 
-e) 9 + 1 = …
+e) 3 + 1 = …
 
-f) 19 + 1 = …
+f) 10 − 8 = …
+
+g) 9 + 1 = …
+
+h) 5 − 5 = …
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 3 + 2 = 5.
+a) Mẹ nướng 7 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 5 = 1.
+b) Mẹ nướng 6 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 6 + 9 = 15.
+c) Bàn ăn có 5 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 10 + 3 = 13.
-
-e) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 10 = 24.
+d) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
 
 
 ---
@@ -96,7 +96,7 @@ e) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 10 = 24.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Tính nhanh
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

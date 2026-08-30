@@ -30,13 +30,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Nhảy và đếm**
+**Vỗ tay theo nhịp rồi bước đo**
 
-a) Con nhảy đúng 9 cái nhé. Đếm to lên.
+a) Cô làm mẫu: vỗ tay – vỗ đùi – giậm chân. Lặp lại 3 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-b) Con bước lên phía trước đúng 2 bước nhé. Đếm to lên.
+b) Cô làm mẫu: giậm chân – gật đầu. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-c) Con vỗ tay đúng 5 cái nhé. Đếm to lên.
+c) Con bước chân nối gót đi hết chiều dài cái bàn. Đếm to xem mấy bước.
 
 
 ## Cùng khám phá · 8 phút
@@ -45,11 +45,11 @@ c) Con vỗ tay đúng 5 cái nhé. Đếm to lên.
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 5 con cá thành vòng tròn. Con đếm xem có mấy con?
+a) Cô bày 10 con cá thành hàng ngang. Con đếm xem có mấy con?
 
-b) Cô bày 8 cái bánh rải lộn xộn. Con đếm xem có mấy cái?
+b) Cô bày 10 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
 
-c) Cô bày 7 con vịt thành hai hàng. Con đếm xem có mấy con?
+c) Cô bày 5 quả bóng thành vòng tròn. Con đếm xem có mấy quả?
 
 
 ## Tự làm thử · 7 phút
@@ -58,13 +58,11 @@ c) Cô bày 7 con vịt thành hai hàng. Con đếm xem có mấy con?
 
 **Điền vào ô trống**
 
-a) xanh – đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
+a) đỏ – xanh – đỏ – xanh – đỏ – … – đỏ . Ô trống là màu gì?
 
-b) vàng – xanh – … – xanh – vàng . Ô trống là màu gì?
+b) xanh – vàng – xanh – … – xanh – vàng . Ô trống là màu gì?
 
-c) vàng – … – vàng – đỏ – vàng – đỏ . Ô trống là màu gì?
-
-d) vàng – đỏ – vàng – … – vàng – đỏ – vàng . Ô trống là màu gì?
+c) xanh – đỏ – xanh – đỏ – xanh – … – xanh . Ô trống là màu gì?
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -73,13 +71,11 @@ d) vàng – đỏ – vàng – … – vàng – đỏ – vàng . Ô trống 
 
 **Đố vui cuối buổi**
 
-a) Con giơ 5 ngón tay ở bàn tay này. Muốn có đúng 7 ngón thì giơ thêm mấy ngón nữa?
+a) 4 con chim có tất cả mấy cái chân?
 
-b) Trên đĩa có 7 cái kẹo. Con ăn mất 1 cái. Còn mấy cái?
+b) Trên đĩa có 3 viên bi. Con ăn mất 1 viên. Còn mấy viên?
 
-c) 4 con vịt có tất cả mấy cái chân?
-
-d) Trên đĩa có 6 quả bóng. Con ăn mất 1 quả. Còn mấy quả?
+c) 2 con vịt có tất cả mấy cái chân?
 
 
 ---
@@ -90,7 +86,7 @@ d) Trên đĩa có 6 quả bóng. Con ăn mất 1 quả. Còn mấy quả?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Nhảy và đếm | ☐ | ☐ | ☐ |
+| Vỗ tay theo nhịp rồi bước đo | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Điền vào ô trống | ☐ | ☐ | ☐ |
 | Đố vui cuối buổi | ☐ | ☐ | ☐ |

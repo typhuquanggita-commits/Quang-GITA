@@ -30,52 +30,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **So sánh số trong phạm vi 20**
 
-a) Điền dấu >, < hoặc = : 12 … 6
+a) Điền dấu >, < hoặc = : 18 … 15
 
-b) Điền dấu >, < hoặc = : 19 … 14
+b) Điền dấu >, < hoặc = : 8 … 7
 
-c) Điền dấu >, < hoặc = : 5 … 2
+c) Điền dấu >, < hoặc = : 6 … 12
 
-d) Điền dấu >, < hoặc = : 1 … 4
+d) Điền dấu >, < hoặc = : 17 … 12
 
-e) Điền dấu >, < hoặc = : 2 … 1
+e) Điền dấu >, < hoặc = : 10 … 19
+
+f) Điền dấu >, < hoặc = : 9 … 16
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 84 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 91 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 78 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 89 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 94 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 51 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 23 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
+
+e) Con lấy đúng 30 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) … + 3 = 4
+a) 9 + … = 10
 
-b) … + 4 = 9
+b) 1 + … = 3
 
-c) … + 6 = 9
+c) … + 2 = 8
 
-d) 3 + … = 10
+d) 3 + … = 4
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) 1, 4, 7, 10, …
+a) 59 và 73: số nào lớn hơn?
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
+b) 37 và 60: số nào lớn hơn?
 
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+c) 59 và 89: số nào lớn hơn?
+
+d) Số bí mật đứng liền sau 21 và liền trước 23. Số nào?
 
 
 ---
@@ -87,4 +93,4 @@ c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau
 - ☐ So sánh số trong phạm vi 20
 - ☐ Lấy đúng số que tính
 - ☐ Tìm số còn thiếu
-- ☐ Tìm quy luật
+- ☐ Số bí mật

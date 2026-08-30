@@ -30,13 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Nhảy và đếm**
+**Nhìn nhanh — bên nào nhiều hơn**
 
-a) Con bước lên phía trước đúng 9 bước nhé. Đếm to lên.
+a) Cô để 5 cái kẹo bên trái, 5 cái kẹo bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều cái hơn?
 
-b) Con gật đầu đúng 4 cái nhé. Đếm to lên.
+b) Cô để 8 cái kẹo bên trái, 9 cái kẹo bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều cái hơn?
 
-c) Con nhảy đúng 9 cái nhé. Đếm to lên.
+c) Cô để 9 chiếc lá bên trái, 5 chiếc lá bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều chiếc hơn?
+
+d) Cô để 6 bông hoa bên trái, 9 bông hoa bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều bông hơn?
 
 
 ## Cùng khám phá · 8 phút
@@ -45,13 +47,11 @@ c) Con nhảy đúng 9 cái nhé. Đếm to lên.
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 8 quả cam rải lộn xộn. Con đếm xem có mấy quả?
+a) Cô bày 5 bông hoa thành vòng tròn. Con đếm xem có mấy bông?
 
-b) Cô bày 10 con cá thành vòng tròn. Con đếm xem có mấy con?
+b) Cô bày 10 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
 
-c) Cô bày 10 chiếc lá thành vòng tròn. Con đếm xem có mấy chiếc?
-
-d) Cô bày 8 quả cam rải lộn xộn. Con đếm xem có mấy quả?
+c) Cô bày 5 cái kẹo thành vòng tròn. Con đếm xem có mấy cái?
 
 
 ## Tự làm thử · 7 phút
@@ -60,13 +60,13 @@ d) Cô bày 8 quả cam rải lộn xộn. Con đếm xem có mấy quả?
 
 **Làm cho hai đĩa bằng nhau**
 
-a) Đĩa này có 7 quyển vở, đĩa kia có 4 quyển. Con làm sao cho hai đĩa bằng nhau?
+a) Đĩa này có 3 chiếc lá, đĩa kia có 4 chiếc. Con làm sao cho hai đĩa bằng nhau?
 
-b) Đĩa này có 4 cái kẹo, đĩa kia có 3 cái. Con làm sao cho hai đĩa bằng nhau?
+b) Đĩa này có 3 quả cam, đĩa kia có 8 quả. Con làm sao cho hai đĩa bằng nhau?
 
-c) Đĩa này có 8 viên bi, đĩa kia có 5 viên. Con làm sao cho hai đĩa bằng nhau?
+c) Đĩa này có 5 con vịt, đĩa kia có 4 con. Con làm sao cho hai đĩa bằng nhau?
 
-d) Đĩa này có 7 cái kẹo, đĩa kia có 2 cái. Con làm sao cho hai đĩa bằng nhau?
+d) Đĩa này có 6 quả cam, đĩa kia có 8 quả. Con làm sao cho hai đĩa bằng nhau?
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -75,11 +75,13 @@ d) Đĩa này có 7 cái kẹo, đĩa kia có 2 cái. Con làm sao cho hai đĩa
 
 **Đố vui cuối buổi**
 
-a) 3 con chim có tất cả mấy cái chân?
+a) Trên đĩa có 3 cái bánh. Con ăn mất 1 cái. Còn mấy cái?
 
-b) 2 con chim có tất cả mấy cái chân?
+b) Con giơ 1 ngón tay ở bàn tay này. Muốn có đúng 3 ngón thì giơ thêm mấy ngón nữa?
 
-c) 2 con gà có tất cả mấy cái chân?
+c) 3 con chim có tất cả mấy cái chân?
+
+d) Trên đĩa có 3 chiếc lá. Con ăn mất 1 chiếc. Còn mấy chiếc?
 
 
 ---
@@ -90,7 +92,7 @@ c) 2 con gà có tất cả mấy cái chân?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Nhảy và đếm | ☐ | ☐ | ☐ |
+| Nhìn nhanh — bên nào nhiều hơn | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Làm cho hai đĩa bằng nhau | ☐ | ☐ | ☐ |
 | Đố vui cuối buổi | ☐ | ☐ | ☐ |

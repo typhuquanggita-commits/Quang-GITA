@@ -34,11 +34,9 @@ Họ và tên: ......................................... Ngày: ..............
 
 a) Con giậm chân đúng 4 cái nhé. Đếm to lên.
 
-b) Con vỗ tay đúng 3 cái nhé. Đếm to lên.
+b) Con vỗ tay đúng 9 cái nhé. Đếm to lên.
 
-c) Con nhảy đúng 2 cái nhé. Đếm to lên.
-
-d) Con bước lên phía trước đúng 8 bước nhé. Đếm to lên.
+c) Con gật đầu đúng 3 cái nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,13 +45,13 @@ d) Con bước lên phía trước đúng 8 bước nhé. Đếm to lên.
 
 **Đếm rồi nói số cuối cùng**
 
-a) Cô đặt ra 8 cái kẹo. Con đếm xem có mấy cái?
+a) Cô đặt ra 4 viên bi. Con đếm xem có mấy viên?
 
-b) Cô đặt ra 6 con cá. Con đếm xem có mấy con?
+b) Cô đặt ra 7 chiếc lá. Con đếm xem có mấy chiếc?
 
-c) Cô đặt ra 10 quả bóng. Con đếm xem có mấy quả?
+c) Cô đặt ra 9 bông hoa. Con đếm xem có mấy bông?
 
-d) Cô đặt ra 8 bông hoa. Con đếm xem có mấy bông?
+d) Cô đặt ra 7 viên bi. Con đếm xem có mấy viên?
 
 
 ## Tự làm thử · 7 phút
@@ -62,26 +60,26 @@ d) Cô đặt ra 8 bông hoa. Con đếm xem có mấy bông?
 
 **Làm cho hai đĩa bằng nhau**
 
-a) Đĩa này có 7 viên bi, đĩa kia có 3 viên. Con làm sao cho hai đĩa bằng nhau?
+a) Đĩa này có 7 chiếc lá, đĩa kia có 8 chiếc. Con làm sao cho hai đĩa bằng nhau?
 
-b) Đĩa này có 5 cái bánh, đĩa kia có 6 cái. Con làm sao cho hai đĩa bằng nhau?
+b) Đĩa này có 4 quả bóng, đĩa kia có 7 quả. Con làm sao cho hai đĩa bằng nhau?
 
-c) Đĩa này có 3 quả bóng, đĩa kia có 7 quả. Con làm sao cho hai đĩa bằng nhau?
+c) Đĩa này có 5 con vịt, đĩa kia có 7 con. Con làm sao cho hai đĩa bằng nhau?
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) đỏ – xanh – đỏ – xanh – … Con đoán xem tiếp theo là màu gì?
+a) Số nào đứng ngay trước số 5?
 
-b) trắng – vàng – xanh – trắng – vàng – xanh – trắng – vàng – xanh – … Con đoán xem tiếp theo là màu gì?
+b) Đếm tiếp cho cô: 1 rồi đến số mấy?
 
-c) trắng – vàng – trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
+c) Dãy số bị mất một số: 6 , … , 8 , 9 . Mất số nào?
 
-d) xanh – trắng – đỏ – xanh – trắng – đỏ – xanh – trắng – đỏ – … Con đoán xem tiếp theo là màu gì?
+d) Con giơ 5 ngón ở tay này, 5 ngón ở tay kia. Tất cả mấy ngón?
 
 
 ---
@@ -95,4 +93,4 @@ d) xanh – trắng – đỏ – xanh – trắng – đỏ – xanh – trắn
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Đếm rồi nói số cuối cùng | ☐ | ☐ | ☐ |
 | Làm cho hai đĩa bằng nhau | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

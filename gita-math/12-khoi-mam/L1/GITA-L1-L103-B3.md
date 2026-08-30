@@ -28,62 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 9 … 10
+a) 3 thêm 7 là mấy?
 
-b) Điền dấu >, < hoặc = : 3 … 2
+b) Con giơ 6 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 10?
 
-c) Điền dấu >, < hoặc = : 2 … 9
+c) 4 bớt 3 còn mấy?
 
-d) Điền dấu >, < hoặc = : 7 … 3
-
-e) Điền dấu >, < hoặc = : 8 … 3
-
-f) Điền dấu >, < hoặc = : 2 … 4
+d) Con giơ 8 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 9?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) An có 8 cái kẹo, cho bạn 7 cái. An còn lại mấy cái?
+a) Cốm có 5 viên bi, cho bạn 1 viên. Cốm còn lại mấy viên?
 
-b) An có 4 con vịt, mẹ cho thêm 3 con. An có tất cả mấy con?
+b) Tí có 3 cái kẹo, mẹ cho thêm 1 cái. Tí có tất cả mấy cái?
 
-c) Bo có 3 quả cam, mẹ cho thêm 4 quả. Bo có tất cả mấy quả?
+c) Na có 3 cái bánh, mẹ cho thêm 3 cái. Na có tất cả mấy cái?
 
-d) Mai có 6 con cá, cho bạn 2 con. Mai còn lại mấy con?
+d) Cốm có 9 quả bóng, cho bạn 4 quả. Cốm còn lại mấy quả?
 
-e) Bi có 10 quả cam, cho bạn 2 quả. Bi còn lại mấy quả?
+e) An có 5 cái kẹo, mẹ cho thêm 3 cái. An có tất cả mấy cái?
+
+f) Bơ có 6 cái kẹo, cho bạn 3 cái. Bơ còn lại mấy cái?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tính nhanh**
 
-a) 14 + 4 = …
+a) 8 + 1 = …
 
-b) 6 − 5 = …
+b) 8 − 4 = …
 
-c) 10 − 1 = …
+c) 5 + 3 = …
 
-d) 8 − 7 = …
+d) 8 − 5 = …
 
-e) 10 + 7 = …
+e) 13 + 2 = …
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-a) 10, 15, 20, 25, …
+a) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
 
-b) 5, 7, 9, 11, …
+b) Bàn ăn có 2 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-c) 1, 3, 5, 7, …
-
-d) 2, 4, 8, …
+c) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
 
 ---
@@ -92,7 +88,7 @@ d) 2, 4, 8, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Tính nhanh
-- ☐ Tìm quy luật
+- ☐ Đố vui cộng trừ

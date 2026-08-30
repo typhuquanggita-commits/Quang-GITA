@@ -30,13 +30,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Nhảy và đếm**
+**Nhìn nhanh — bên nào nhiều hơn**
 
-a) Con bước lên phía trước đúng 4 bước nhé. Đếm to lên.
+a) Cô để 5 bông hoa bên trái, 6 bông hoa bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều bông hơn?
 
-b) Con gật đầu đúng 4 cái nhé. Đếm to lên.
+b) Cô để 7 quyển vở bên trái, 6 quyển vở bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quyển hơn?
 
-c) Con nhảy đúng 7 cái nhé. Đếm to lên.
+c) Cô để 3 cái kẹo bên trái, 2 cái kẹo bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều cái hơn?
 
 
 ## Cùng khám phá · 8 phút
@@ -45,13 +45,11 @@ c) Con nhảy đúng 7 cái nhé. Đếm to lên.
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 7 con cá rải lộn xộn. Con đếm xem có mấy con?
+a) Cô bày 7 quả cam rải lộn xộn. Con đếm xem có mấy quả?
 
-b) Cô bày 8 quả bóng thành vòng tròn. Con đếm xem có mấy quả?
+b) Cô bày 7 quả bóng rải lộn xộn. Con đếm xem có mấy quả?
 
-c) Cô bày 4 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
-
-d) Cô bày 5 bông hoa thành hàng ngang. Con đếm xem có mấy bông?
+c) Cô bày 5 con vịt thành hai hàng. Con đếm xem có mấy con?
 
 
 ## Tự làm thử · 7 phút
@@ -60,11 +58,13 @@ d) Cô bày 5 bông hoa thành hàng ngang. Con đếm xem có mấy bông?
 
 **Làm cho hai đĩa bằng nhau**
 
-a) Đĩa này có 2 viên bi, đĩa kia có 6 viên. Con làm sao cho hai đĩa bằng nhau?
+a) Đĩa này có 2 con vịt, đĩa kia có 4 con. Con làm sao cho hai đĩa bằng nhau?
 
-b) Đĩa này có 3 con vịt, đĩa kia có 2 con. Con làm sao cho hai đĩa bằng nhau?
+b) Đĩa này có 6 chiếc lá, đĩa kia có 7 chiếc. Con làm sao cho hai đĩa bằng nhau?
 
-c) Đĩa này có 6 quả cam, đĩa kia có 8 quả. Con làm sao cho hai đĩa bằng nhau?
+c) Đĩa này có 7 quả bóng, đĩa kia có 6 quả. Con làm sao cho hai đĩa bằng nhau?
+
+d) Đĩa này có 2 quả cam, đĩa kia có 4 quả. Con làm sao cho hai đĩa bằng nhau?
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -73,13 +73,13 @@ c) Đĩa này có 6 quả cam, đĩa kia có 8 quả. Con làm sao cho hai đĩa
 
 **Đố vui cuối buổi**
 
-a) 2 con chim có tất cả mấy cái chân?
+a) Trên đĩa có 7 con vịt. Con ăn mất 1 con. Còn mấy con?
 
-b) Trên đĩa có 4 cái kẹo. Con ăn mất 1 cái. Còn mấy cái?
+b) 3 con gà có tất cả mấy cái chân?
 
-c) Trên đĩa có 5 cái bánh. Con ăn mất 1 cái. Còn mấy cái?
+c) Trên đĩa có 8 quả cam. Con ăn mất 1 quả. Còn mấy quả?
 
-d) Trên đĩa có 5 viên bi. Con ăn mất 1 viên. Còn mấy viên?
+d) 3 con chim có tất cả mấy cái chân?
 
 
 ---
@@ -90,7 +90,7 @@ d) Trên đĩa có 5 viên bi. Con ăn mất 1 viên. Còn mấy viên?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Nhảy và đếm | ☐ | ☐ | ☐ |
+| Nhìn nhanh — bên nào nhiều hơn | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Làm cho hai đĩa bằng nhau | ☐ | ☐ | ☐ |
 | Đố vui cuối buổi | ☐ | ☐ | ☐ |

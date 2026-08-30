@@ -28,69 +28,67 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Tạo hình bằng dây**
 
-a) 2 × 9 = …
+a) Cả nhóm dùng dây tạo thành hình tam giác. Tạo xong đếm xem có mấy đỉnh, mấy cạnh.
 
-b) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
+b) Cả nhóm dùng dây tạo thành hình tứ giác. Tạo xong đếm xem có mấy đỉnh, mấy cạnh.
 
-c) 12 : 2 = …
-
-d) 2 × 6 = …
+c) Tìm trong lớp một vật là khối cầu, thả xuống sàn nghiêng xem có lăn không.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đường gấp khúc và điểm thẳng hàng**
 
-a) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
+a) Đường gấp khúc gồm 2 đoạn dài 15 cm, 11 cm. Tính độ dài đường gấp khúc.
 
-b) Đường gấp khúc gồm 4 đoạn dài 14 cm, 6 cm, 3 cm, 13 cm. Tính độ dài đường gấp khúc.
+b) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
 
-c) Đường gấp khúc gồm 3 đoạn dài 25 cm, 11 cm, 16 cm. Tính độ dài đường gấp khúc.
-
-d) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
+c) Đường gấp khúc gồm 3 đoạn dài 4 cm, 21 cm, 25 cm. Tính độ dài đường gấp khúc.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Đổi đơn vị và tính trên số đo**
+**Đường gấp khúc, hình và khối**
 
-a) 6 m = … cm
+a) Đường gấp khúc gồm các đoạn: 14 cm , 3 cm , 4 cm . Tính độ dài đường gấp khúc.
 
-b) 26 cm + 21 cm = … cm
+b) Hình tứ giác có 4 cạnh đều dài 6 cm. Tính chu vi hình ấy.
 
-c) Điền dấu >, < hoặc = : 5 dm … 97 cm
+c) Vẽ 3 hình tam giác nhỏ bằng nhau ghép liền nhau thành một hàng. Đếm xem có tất cả mấy hình tam giác, kể cả hình ghép từ nhiều hình nhỏ?
 
-d) 8 cm + 15 cm = … cm
+d) Có 4 điểm nằm trên một đường thẳng, cách đều nhau. Nối hai điểm ngoài cùng thì được mấy đoạn thẳng nhỏ liền nhau?
 
-e) Điền dấu >, < hoặc = : 6 dm … 15 cm
-
-f) 3 m = … cm
+e) Kể tên ba vật trong lớp có dạng khối trụ hoặc khối hộp chữ nhật.
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đổi đơn vị và tính trên số đo**
 
-a) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+a) 18 cm + 15 cm = … cm
 
-b) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+b) 7 dm = … cm
 
-c) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+c) Điền dấu >, < hoặc = : 7 dm … 54 cm
 
-d) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+d) 8 cm + 36 cm = … cm
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Chắc chắn, có thể, không thể**
 
-a) Một bạn tính 18 + 86 = 94. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
 
-b) Một bạn tính 57 + 68 = 115. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
 
-c) Một bạn tính 74 + 81 = 164. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+
+d) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+
+e) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
 
 
 ---
@@ -99,8 +97,8 @@ c) Một bạn tính 74 + 81 = 164. Bạn ấy sai ở đâu? Kết quả đúng
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Tạo hình bằng dây
 - ☐ Đường gấp khúc và điểm thẳng hàng
+- ☐ Đường gấp khúc, hình và khối
 - ☐ Đổi đơn vị và tính trên số đo
 - ☐ Chắc chắn, có thể, không thể
-- ☐ Tìm chỗ sai giúp bạn

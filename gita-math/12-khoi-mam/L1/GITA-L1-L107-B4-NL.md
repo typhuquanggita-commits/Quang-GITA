@@ -47,34 +47,31 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính rời
 - Thước có vạch xăng-ti-mét
 - Bút chì
-- Que tính để xếp hình
+- Bảng số từ 1 đến 100 (nếu có)
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 20**
+**So sánh số trong phạm vi 100**
 
 > **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 10 … 2
+a) Điền dấu >, < hoặc = : 57 … 44
    → **>**
 
-b) Điền dấu >, < hoặc = : 13 … 9
-   → **>**
-
-c) Điền dấu >, < hoặc = : 2 … 6
+b) Điền dấu >, < hoặc = : 33 … 56
    → **<**
 
-d) Điền dấu >, < hoặc = : 2 … 12
+c) Điền dấu >, < hoặc = : 79 … 85
    → **<**
 
-e) Điền dấu >, < hoặc = : 1 … 8
+d) Điền dấu >, < hoặc = : 24 … 46
    → **<**
 
-f) Điền dấu >, < hoặc = : 17 … 14
+e) Điền dấu >, < hoặc = : 67 … 49
    → **>**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
@@ -96,20 +93,20 @@ f) Điền dấu >, < hoặc = : 17 … 14
 
 **Đáp án từng việc**
 
-a) Số 80 gồm mấy chục và mấy đơn vị?
-   → **8 chục và 0 đơn vị**
+a) Số 14 gồm mấy chục và mấy đơn vị?
+   → **1 chục và 4 đơn vị**
 
-b) Số 73 gồm mấy chục và mấy đơn vị?
-   → **7 chục và 3 đơn vị**
+b) Số 45 gồm mấy chục và mấy đơn vị?
+   → **4 chục và 5 đơn vị**
 
-c) Số 15 gồm mấy chục và mấy đơn vị?
-   → **1 chục và 5 đơn vị**
+c) Số 79 gồm mấy chục và mấy đơn vị?
+   → **7 chục và 9 đơn vị**
 
-d) Số 24 gồm mấy chục và mấy đơn vị?
-   → **2 chục và 4 đơn vị**
+d) Số 30 gồm mấy chục và mấy đơn vị?
+   → **3 chục và 0 đơn vị**
 
-e) Số 27 gồm mấy chục và mấy đơn vị?
-   → **2 chục và 7 đơn vị**
+e) Số 23 gồm mấy chục và mấy đơn vị?
+   → **2 chục và 3 đơn vị**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Số nào cũng tách được thành chục và đơn vị à?
 
@@ -130,23 +127,20 @@ e) Số 27 gồm mấy chục và mấy đơn vị?
 
 **Đáp án từng việc**
 
-a) Viết số: 5 mươi 7
-   → **57**
+a) Trong hình có mấy đoạn thẳng?
+   → **5 đoạn thẳng**
 
-b) Vẽ một đoạn thẳng dài 4 cm.
-   → **4 cm**
+b) Vẽ một đoạn thẳng dài 14 cm.
+   → **14 cm**
 
-c) Trong hình có mấy đoạn thẳng?
-   → **7 đoạn thẳng**
+c) Viết số: 9 mươi 1
+   → **91**
 
-d) Trong hình có mấy đoạn thẳng?
-   → **8 đoạn thẳng**
+d) Viết số: mười 6
+   → **16**
 
-e) Vẽ một đoạn thẳng dài 3 cm.
-   → **3 cm**
-
-f) Viết số: 3 mươi 3
-   → **33**
+e) Vẽ một đoạn thẳng dài 11 cm.
+   → **11 cm**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Con đo lại đoạn vừa vẽ xem có đúng chừng ấy không?
 
@@ -161,28 +155,28 @@ f) Viết số: 3 mươi 3
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Số bí mật**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.
 
 **Đáp án từng việc**
 
-a) 11, 21, 31, 41, …
-   → **51**
+a) Số bí mật đứng liền sau 97 và liền trước 99. Số nào?
+   → **98**
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
-   → **13 que**
+b) 71 và 74: số nào lớn hơn?
+   → **74**
 
-c) 9, 19, 29, 39, …
-   → **49**
+c) Số bí mật có 2 chục và 8 đơn vị. Số ấy là số nào?
+   → **28**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng đơn vị trước?
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
+**Thế nào là con đã hiểu:** Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn hơn 40 vì 9 lớn hơn 0.
 
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
+**Con tắc thì làm gì:** Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Nếu con làm nhanh:** Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói 'lớn hơn' hoặc 'bé hơn'.
 
 
 ---

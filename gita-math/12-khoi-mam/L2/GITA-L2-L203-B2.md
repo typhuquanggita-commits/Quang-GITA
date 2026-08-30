@@ -28,79 +28,69 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Chuyền bóng nhẩm nhanh**
 
-a) Tính nhẩm: 700 + 100
+a) Anh có 22 viên bi, em nhiều hơn anh 8 viên. Em có mấy viên?
 
-b) Số 205 gồm mấy trăm, mấy chục, mấy đơn vị?
+b) 70 − 5 = …
 
-c) Tính nhẩm: 300 + 200
+c) 39 + 22 = …
 
-d) Số 400 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-e) Số 743 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-f) Tính nhẩm: 600 + 200
+d) Lớp 2A có 36 bạn, lớp 2B ít hơn 6 bạn. Lớp 2B mấy bạn?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Vì sao phải nhớ**
 
-a) Tính 20 + 56. Cộng hàng đơn vị trước: 0 + 6 = 6. Vì sao phải nhớ sang hàng chục?
+a) Tính 77 + 41. Cộng hàng đơn vị trước: 7 + 1 = 8. Có phải nhớ sang hàng chục không? Vì sao?
 
-b) Tính 65 + 17. Cộng hàng đơn vị trước: 5 + 7 = 12. Vì sao phải nhớ sang hàng chục?
+b) Tính 41 + 70. Cộng hàng đơn vị trước: 1 + 0 = 1. Có phải nhớ sang hàng chục không? Vì sao?
 
-c) Tính 72 + 22. Cộng hàng đơn vị trước: 2 + 2 = 4. Vì sao phải nhớ sang hàng chục?
+c) Tính 64 + 81. Cộng hàng đơn vị trước: 4 + 1 = 5. Có phải nhớ sang hàng chục không? Vì sao?
 
-d) Tính 25 + 15. Cộng hàng đơn vị trước: 5 + 5 = 10. Vì sao phải nhớ sang hàng chục?
+d) Tính 18 + 74. Cộng hàng đơn vị trước: 8 + 4 = 12. Có phải nhớ sang hàng chục không? Vì sao?
+
+e) Tính 69 + 29. Cộng hàng đơn vị trước: 9 + 9 = 18. Có phải nhớ sang hàng chục không? Vì sao?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Cộng trừ có nhớ trong phạm vi 100**
 
-a) Đặt tính rồi tính: 97 − 61
+a) Đặt tính rồi tính: 73 − 71
 
-b) Đặt tính rồi tính: 47 + 51
+b) Đặt tính rồi tính: 71 + 27
 
-c) Đặt tính rồi tính: 38 + 41
+c) Đặt tính rồi tính: 33 + 11
 
-d) Đặt tính rồi tính: 38 − 34
-
-e) Đặt tính rồi tính: 29 − 14
-
-f) Đặt tính rồi tính: 57 + 26
+d) Đặt tính rồi tính: 80 − 75
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đặt tính và tìm số còn thiếu**
 
-a) Một bạn tính 49 + 71 = 110. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Tìm số còn thiếu: … − 37 = 2
 
-b) Một bạn tính 79 + 66 = 135. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Đặt tính rồi tính: 41 − 9
 
-c) Một bạn tính 23 + 37 = 50. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Tìm số còn thiếu: … + 29 = 68
 
-d) Một bạn tính 41 + 45 = 95. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+d) Đặt tính rồi tính: 36 + 28
 
-e) Một bạn tính 39 + 72 = 101. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+e) Đặt tính rồi tính: 25 + 39
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Tìm chỗ sai giúp bạn**
 
-a) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+a) Một bạn tính 15 + 22 = 46. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
-b) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+b) Một bạn tính 80 + 75 = 164. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
-c) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-
-d) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
-
-e) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+c) Một bạn tính 18 + 83 = 91. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
 
 ---
@@ -109,8 +99,8 @@ e) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
+- ☐ Chuyền bóng nhẩm nhanh
 - ☐ Vì sao phải nhớ
 - ☐ Cộng trừ có nhớ trong phạm vi 100
+- ☐ Đặt tính và tìm số còn thiếu
 - ☐ Tìm chỗ sai giúp bạn
-- ☐ Chắc chắn, có thể, không thể

@@ -28,69 +28,77 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Chuyền bóng nhẩm nhanh**
 
-a) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5
+a) Anh có 40 viên bi, em nhiều hơn anh 8 viên. Em có mấy viên?
 
-b) 5 × 6 = …
+b) 97 − 28 = …
 
-c) 20 : 5 = …
+c) 15 + 35 = …
 
-d) 10 : 5 = …
+d) Lớp 2A có 37 bạn, lớp 2B ít hơn 5 bạn. Lớp 2B mấy bạn?
+
+e) 36 − 7 = …
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Vì sao phải nhớ**
 
-a) Tính 54 + 34. Cộng hàng đơn vị trước: 4 + 4 = 8. Vì sao phải nhớ sang hàng chục?
+a) Tính 22 + 88. Cộng hàng đơn vị trước: 2 + 8 = 10. Có phải nhớ sang hàng chục không? Vì sao?
 
-b) Tính 75 + 86. Cộng hàng đơn vị trước: 5 + 6 = 11. Vì sao phải nhớ sang hàng chục?
+b) Tính 35 + 26. Cộng hàng đơn vị trước: 5 + 6 = 11. Có phải nhớ sang hàng chục không? Vì sao?
 
-c) Tính 44 + 88. Cộng hàng đơn vị trước: 4 + 8 = 12. Vì sao phải nhớ sang hàng chục?
+c) Tính 74 + 26. Cộng hàng đơn vị trước: 4 + 6 = 10. Có phải nhớ sang hàng chục không? Vì sao?
 
-d) Tính 84 + 78. Cộng hàng đơn vị trước: 4 + 8 = 12. Vì sao phải nhớ sang hàng chục?
+d) Tính 30 + 18. Cộng hàng đơn vị trước: 0 + 8 = 8. Có phải nhớ sang hàng chục không? Vì sao?
+
+e) Tính 39 + 71. Cộng hàng đơn vị trước: 9 + 1 = 10. Có phải nhớ sang hàng chục không? Vì sao?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Nhiều hơn, ít hơn một số đơn vị**
 
-a) Nam có 48 quả bóng. Tèo có nhiều hơn Nam 8 quả. Hỏi Tèo có mấy quả?
+a) Bi có 29 quả bóng. Nam có ít hơn Bi 19 quả. Hỏi Nam có mấy quả?
 
-b) Na có 60 cái bánh. Mai có ít hơn Na 6 cái. Hỏi Mai có mấy cái?
+b) Bi có 58 con vịt. Tí có nhiều hơn Bi 8 con. Hỏi Tí có mấy con?
 
-c) Mai có 55 cái bánh. Tèo có nhiều hơn Mai 20 cái. Hỏi Tèo có mấy cái?
+c) Bi có 62 chiếc lá. Mai có nhiều hơn Bi 20 chiếc. Hỏi Mai có mấy chiếc?
 
-d) Bơ có 29 con vịt. Tèo có ít hơn Bơ 5 con. Hỏi Tèo có mấy con?
+d) Nam có 78 cái bánh. Bo có ít hơn Nam 8 cái. Hỏi Bo có mấy cái?
 
-e) Bi có 36 viên bi. Nam có ít hơn Bi 16 viên. Hỏi Nam có mấy viên?
+e) Tèo có 24 viên bi. An có ít hơn Tèo 16 viên. Hỏi An có mấy viên?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bài toán nhân, chia**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Mỗi hộp có 5 quyển vở. Hỏi 7 hộp có mấy quyển?
+a) Bạn An có 651 viên bi. Bạn Na có ít hơn bạn An 170 viên bi. Bạn Na có bao nhiêu viên bi?
 
-b) Có 16 viên bi chia đều vào 2 hộp. Mỗi hộp có mấy viên?
+b) Bạn Bi có 565 quyển sách. Bạn Mai có nhiều hơn bạn Bi 160 quyển sách. Bạn Mai có bao nhiêu quyển sách?
 
-c) Mỗi hộp có 2 con cá. Hỏi 6 hộp có mấy con?
+c) Bạn Tèo có 432 con tem. Bạn An có nhiều hơn bạn Tèo 80 con tem. Bạn An có bao nhiêu con tem?
 
-d) Có 6 viên bi chia đều vào 2 hộp. Mỗi hộp có mấy viên?
-
-e) Mỗi hộp có 5 con vịt. Hỏi 2 hộp có mấy con?
+d) Bạn Bi có 261 cái nhãn vở. Bạn Nam có ít hơn bạn Bi 110 cái nhãn vở. Bạn Nam có bao nhiêu cái nhãn vở?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đọc biểu đồ tranh**
 
-a) Một bạn tính 21 + 28 = 58. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) - xoài: 🍎🍎🍎🍎🍎  (5 quả)
+- cam: 🍎🍎🍎🍎🍎🍎🍎  (7 quả)
+- chuối: 🍎🍎🍎🍎🍎🍎🍎🍎🍎  (9 quả)
 
-b) Một bạn tính 80 + 76 = 165. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+Loại quả nào nhiều nhất?
 
-c) Một bạn tính 19 + 23 = 32. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Loại quả nào ít nhất?
+
+c) Chuối nhiều hơn xoài mấy quả?
+
+d) Tất cả có mấy quả?
 
 
 ---
@@ -99,8 +107,8 @@ c) Một bạn tính 19 + 23 = 32. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Chuyền bóng nhẩm nhanh
 - ☐ Vì sao phải nhớ
 - ☐ Nhiều hơn, ít hơn một số đơn vị
-- ☐ Bài toán nhân, chia
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Bài toán nhiều hơn – ít hơn
+- ☐ Đọc biểu đồ tranh

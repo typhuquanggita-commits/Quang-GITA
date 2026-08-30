@@ -32,13 +32,11 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Nhảy và đếm**
 
-a) Con vỗ tay đúng 7 cái nhé. Đếm to lên.
+a) Con nhảy đúng 6 cái nhé. Đếm to lên.
 
-b) Con bước lên phía trước đúng 5 bước nhé. Đếm to lên.
+b) Con gật đầu đúng 4 cái nhé. Đếm to lên.
 
-c) Con gật đầu đúng 5 cái nhé. Đếm to lên.
-
-d) Con nhảy đúng 4 cái nhé. Đếm to lên.
+c) Con giậm chân đúng 3 cái nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,13 +45,13 @@ d) Con nhảy đúng 4 cái nhé. Đếm to lên.
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 9 cái kẹo thành hàng ngang. Con đếm xem có mấy cái?
+a) Cô bày 6 chiếc lá thành hai hàng. Con đếm xem có mấy chiếc?
 
-b) Cô bày 6 con cá thành hai hàng. Con đếm xem có mấy con?
+b) Cô bày 10 quả bóng thành hàng ngang. Con đếm xem có mấy quả?
 
-c) Cô bày 4 quả bóng rải lộn xộn. Con đếm xem có mấy quả?
+c) Cô bày 8 con cá rải lộn xộn. Con đếm xem có mấy con?
 
-d) Cô bày 8 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
+d) Cô bày 4 quyển vở thành hàng ngang. Con đếm xem có mấy quyển?
 
 
 ## Tự làm thử · 7 phút
@@ -62,24 +60,28 @@ d) Cô bày 8 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
 
 **Tìm thẻ số cho đúng nhóm**
 
-a) Ô này có 6 quả cam. Con tìm thẻ số nào đặt vào ô đó?
+a) Ô này có 9 quả cam. Con tìm thẻ số nào đặt vào ô đó?
 
-b) Ô này có 4 cái bánh. Con tìm thẻ số nào đặt vào ô đó?
+b) Ô này có 3 cái bánh. Con tìm thẻ số nào đặt vào ô đó?
 
-c) Ô này có 2 cái kẹo. Con tìm thẻ số nào đặt vào ô đó?
+c) Ô này có 10 cái bánh. Con tìm thẻ số nào đặt vào ô đó?
+
+d) Ô này có 2 quyển vở. Con tìm thẻ số nào đặt vào ô đó?
+
+e) Ô này có 5 quả cam. Con tìm thẻ số nào đặt vào ô đó?
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) đỏ – vàng – trắng – đỏ – vàng – trắng – đỏ – vàng – trắng – … Con đoán xem tiếp theo là màu gì?
+a) Đếm tiếp cho cô: 1 rồi đến số mấy?
 
-b) vàng – đỏ – vàng – đỏ – vàng – đỏ – … Con đoán xem tiếp theo là màu gì?
+b) Số nào đứng ngay trước số 4?
 
-c) xanh – đỏ – xanh – đỏ – … Con đoán xem tiếp theo là màu gì?
+c) Con giơ 2 ngón ở tay này, 2 ngón ở tay kia. Tất cả mấy ngón?
 
 
 ---
@@ -93,4 +95,4 @@ c) xanh – đỏ – xanh – đỏ – … Con đoán xem tiếp theo là màu
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Tìm thẻ số cho đúng nhóm | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

@@ -30,34 +30,28 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Các thứ trong tuần**
 
-a) Ngày thứ 2 của tuần là thứ mấy?
+a) Hôm nay là Chủ nhật. Hôm qua là thứ mấy?
 
-b) Ngày thứ 3 của tuần là thứ mấy?
+b) Hôm nay là thứ Tư. Ngày mai là thứ mấy?
 
-c) Ngày thứ 7 của tuần là thứ mấy?
+c) Ngày thứ 5 của tuần là thứ mấy?
 
-d) Hôm nay là thứ Bảy. Ngày mai là thứ mấy?
-
-e) Ngày thứ 2 của tuần là thứ mấy?
-
-f) Ngày thứ 1 của tuần là thứ mấy?
+d) Ngày thứ 7 của tuần là thứ mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Đo độ dài và xem giờ đúng**
 
-a) Đoạn thẳng dài 19 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+a) Đoạn thẳng dài 8 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
-b) Kim ngắn chỉ số 11, kim dài chỉ số 12. Mấy giờ?
+b) Kim ngắn chỉ số 8, kim dài chỉ số 12. Mấy giờ?
 
-c) Kim ngắn chỉ số 2, kim dài chỉ số 12. Mấy giờ?
+c) Kim ngắn chỉ số 10, kim dài chỉ số 12. Mấy giờ?
 
-d) Đoạn thẳng dài 20 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+d) Đoạn thẳng dài 9 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
-e) Đoạn thẳng dài 8 cm. Con vẽ một đoạn thẳng dài đúng như thế.
-
-f) Kim ngắn chỉ số 12, kim dài chỉ số 12. Mấy giờ?
+e) Đoạn thẳng dài 20 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
@@ -66,22 +60,22 @@ f) Kim ngắn chỉ số 12, kim dài chỉ số 12. Mấy giờ?
 
 a) Trong hình có mấy đoạn thẳng?
 
-b) Viết số: 4 mươi 1
+b) Viết số: 7 mươi 5
 
-c) Vẽ một đoạn thẳng dài 10 cm.
+c) Vẽ một đoạn thẳng dài 3 cm.
 
-d) Viết số: 8 mươi 8
+d) Vẽ một đoạn thẳng dài 9 cm.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Đếm hình trong hình ghép**
+**Đố vui đo và xem giờ**
 
-a) Trong hình bên có mấy hình vuông?
+a) Con đoán bàn chân của con dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-b) Trong hình bên có mấy hình tam giác?
+b) Con đoán cái bàn học dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-c) Trong hình bên có mấy hình tam giác?
+c) Kim ngắn chỉ số 9, kim dài chỉ số 12. Mấy giờ rồi? Giờ ấy nhà con thường làm gì?
 
 
 ---
@@ -93,4 +87,4 @@ c) Trong hình bên có mấy hình tam giác?
 - ☐ Các thứ trong tuần
 - ☐ Đo độ dài và xem giờ đúng
 - ☐ Vẽ, đo và viết số
-- ☐ Đếm hình trong hình ghép
+- ☐ Đố vui đo và xem giờ

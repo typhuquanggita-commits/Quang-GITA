@@ -42,7 +42,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Một quả bóng hoặc một con thú bông
+- Chỗ trống để trẻ đi được vài bước
 - 10 đồ vật nhỏ giống nhau
 - Bảng có sẵn ô để ghi
 - Que tính
@@ -52,28 +52,28 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## Chơi khởi động
 
-**Trên – dưới, trước – sau, phải – trái**
+**Vỗ tay theo nhịp rồi bước đo**
 
-> **Cô/mẹ đọc lên:** Con đứng dậy nhé. Cô nói hướng nào thì con đặt quả bóng ở hướng ấy.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng nhịp nhé. Cô làm trước, con nhìn cho kỹ rồi làm tiếp đúng như thế.
 
 **Đáp án từng việc**
 
-a) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
-   → **vật nào ở dưới chân con**
+a) Cô làm mẫu: vỗ tay – vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 3 động tác của một lượt, theo đúng thứ tự**
 
-b) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
-   → **vật nào ở trước mặt con**
+b) Cô làm mẫu: vỗ tay – giậm chân. Lặp lại 3 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 2 động tác của một lượt, theo đúng thứ tự**
 
-c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
-   → **vật nào ở tay phải con**
+c) Con bước chân nối gót đi hết chiều dài cái bàn. Đếm to xem mấy bước.
+   → **số bước trẻ đếm được — ghi lại để buổi sau đo lại**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Nếu con quay người lại thì quả bóng còn ở bên phải con nữa không?
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Sau giậm chân thì đến cái gì? Vì sao con đoán được?
 
-**Thế nào là con đã hiểu:** Trẻ nhận ra phải – trái **đổi theo hướng mình đứng**, còn trên – dưới thì không đổi. Đây là chỗ khó thật của chủ đề.
+**Thế nào là con đã hiểu:** Trẻ làm tiếp đúng thứ tự mà không cần cô nhắc. Quy luật bằng **âm thanh và động tác** dễ nắm hơn quy luật bằng hình vẽ, nên đây là cửa vào tốt cho chủ đề quy luật.
 
-**Con tắc thì làm gì:** Buộc một sợi dây màu vào cổ tay phải làm dấu. Bỏ dây khi trẻ đã quen.
+**Con tắc thì làm gì:** Rút nhịp xuống hai động tác và làm chậm lại. Đọc to tên động tác khi làm.
 
-**Nếu con làm nhanh:** Đứng đối diện nhau rồi hỏi tay phải của cô ở phía nào của con.
+**Nếu con làm nhanh:** Cho trẻ nghĩ ra nhịp rồi người lớn làm theo — trẻ sẽ tự kiểm tra xem người lớn có làm đúng không.
 
 
 ---
@@ -86,13 +86,13 @@ c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ v�
 
 **Đáp án từng việc**
 
-a) Cô bày 10 viên bi thành vòng tròn. Con đếm xem có mấy viên?
-   → **10**
+a) Cô bày 9 viên bi rải lộn xộn. Con đếm xem có mấy viên?
+   → **9**
 
-b) Cô bày 4 quả bóng thành hai hàng. Con đếm xem có mấy quả?
+b) Cô bày 4 con cá thành hàng ngang. Con đếm xem có mấy con?
    → **4**
 
-c) Cô bày 5 con cá thành hàng ngang. Con đếm xem có mấy con?
+c) Cô bày 5 viên bi rải lộn xộn. Con đếm xem có mấy viên?
    → **5**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Cô bày kiểu khác mà vẫn bằng chừng ấy à? Vì sao con biết?
@@ -114,16 +114,16 @@ c) Cô bày 5 con cá thành hàng ngang. Con đếm xem có mấy con?
 
 **Đáp án từng việc**
 
-a) Con đo chiều dài cái bàn bằng bàn chân của con. Được mấy bàn chân?
+a) Con đo chiều dài cái ghế bằng bước chân của con. Được mấy bước chân?
    → **trẻ tự đo và ghi lại — không có đáp số cố định**
 
-b) Con đo chiều dài cái ghế bằng gang tay của con. Được mấy gang tay?
+b) Con đo chiều dài cái bàn bằng gang tay của con. Được mấy gang tay?
    → **trẻ tự đo và ghi lại — không có đáp số cố định**
 
-c) Con đo chiều dài quyển sách bằng bàn chân của con. Được mấy bàn chân?
+c) Con đo chiều dài quyển sách bằng gang tay của con. Được mấy gang tay?
    → **trẻ tự đo và ghi lại — không có đáp số cố định**
 
-d) Con đo chiều dài tấm thảm bằng bước chân của con. Được mấy bước chân?
+d) Con đo chiều dài cửa ra vào bằng gang tay của con. Được mấy gang tay?
    → **trẻ tự đo và ghi lại — không có đáp số cố định**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con đo được 8 gang, cô đo được 5 gang, cùng cái bàn ấy. Vì sao lại khác nhau?
@@ -145,14 +145,14 @@ d) Con đo chiều dài tấm thảm bằng bước chân của con. Được m�
 
 **Đáp án từng việc**
 
-a) 4 con chim có tất cả mấy cái chân?
-   → **8 cái chân**
+a) Con giơ 2 ngón tay ở bàn tay này. Muốn có đúng 4 ngón thì giơ thêm mấy ngón nữa?
+   → **2 ngón**
 
-b) 4 con chim có tất cả mấy cái chân?
-   → **8 cái chân**
+b) Con giơ 5 ngón tay ở bàn tay này. Muốn có đúng 7 ngón thì giơ thêm mấy ngón nữa?
+   → **2 ngón**
 
-c) Trên đĩa có 8 viên bi. Con ăn mất 1 viên. Còn mấy viên?
-   → **7 viên**
+c) Con giơ 1 ngón tay ở bàn tay này. Muốn có đúng 3 ngón thì giơ thêm mấy ngón nữa?
+   → **2 ngón**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Đoán thử)*: Con nghĩ ra một câu đố đố lại cô đi.
 

@@ -30,15 +30,15 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Các thứ trong tuần**
 
-a) Hôm nay là Chủ nhật. Ngày mai là thứ mấy?
+a) Hôm nay là thứ Tư. Hôm qua là thứ mấy?
 
-b) Ngày thứ 7 của tuần là thứ mấy?
+b) Ngày thứ 1 của tuần là thứ mấy?
 
-c) Hôm nay là Chủ nhật. Ngày mai là thứ mấy?
+c) Hôm nay là thứ Bảy. Ngày mai là thứ mấy?
 
-d) Hôm nay là thứ Năm. Hôm qua là thứ mấy?
+d) Ngày thứ 6 của tuần là thứ mấy?
 
-e) Hôm nay là thứ Năm. Ngày mai là thứ mấy?
+e) Hôm nay là thứ Năm. Hôm qua là thứ mấy?
 
 f) Hôm nay là thứ Ba. Hôm qua là thứ mấy?
 
@@ -47,15 +47,17 @@ f) Hôm nay là thứ Ba. Hôm qua là thứ mấy?
 
 **Đo độ dài và xem giờ đúng**
 
-a) Kim ngắn chỉ số 9, kim dài chỉ số 12. Mấy giờ?
+a) Kim ngắn chỉ số 4, kim dài chỉ số 12. Mấy giờ?
 
-b) Đoạn thẳng dài 11 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+b) Đoạn thẳng dài 3 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
-c) Đoạn thẳng dài 19 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+c) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ?
 
-d) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ?
+d) Đoạn thẳng dài 6 cm. Con vẽ một đoạn thẳng dài đúng như thế.
 
-e) Kim ngắn chỉ số 11, kim dài chỉ số 12. Mấy giờ?
+e) Đoạn thẳng dài 10 cm. Con vẽ một đoạn thẳng dài đúng như thế.
+
+f) Kim ngắn chỉ số 1, kim dài chỉ số 12. Mấy giờ?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
@@ -64,26 +66,22 @@ e) Kim ngắn chỉ số 11, kim dài chỉ số 12. Mấy giờ?
 
 a) Trong hình có mấy đoạn thẳng?
 
-b) Vẽ một đoạn thẳng dài 9 cm.
+b) Vẽ một đoạn thẳng dài 5 cm.
 
-c) Viết số: 7 mươi 1
+c) Viết số: mười 4
 
-d) Vẽ một đoạn thẳng dài 15 cm.
+d) Viết số: 9 mươi 3
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Đếm hình trong hình ghép**
+**Đố vui đo và xem giờ**
 
-a) Trong hình bên có mấy hình tam giác?
+a) Con đoán cái bút chì dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-b) Trong hình bên có mấy hình tròn?
+b) Con đoán cái bàn học dài khoảng bao nhiêu xăng-ti-mét? Đoán xong lấy thước đo lại.
 
-c) Trong hình bên có mấy hình tròn?
-
-d) Trong hình bên có mấy hình tam giác?
-
-e) Trong hình bên có mấy hình tròn?
+c) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ rồi? Giờ ấy nhà con thường làm gì?
 
 
 ---
@@ -95,4 +93,4 @@ e) Trong hình bên có mấy hình tròn?
 - ☐ Các thứ trong tuần
 - ☐ Đo độ dài và xem giờ đúng
 - ☐ Vẽ, đo và viết số
-- ☐ Đếm hình trong hình ghép
+- ☐ Đố vui đo và xem giờ

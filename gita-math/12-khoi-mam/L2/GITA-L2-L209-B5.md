@@ -28,77 +28,67 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) 5 × 3 = …
+a) Con đoán chiều dài cái bảng khoảng bao nhiêu?
 
-b) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
+b) Con đoán một chai nước 1 lít nặng khoảng bao nhiêu?
 
-c) 30 : 5 = …
-
-d) 2 × 9 = …
+c) Kim ngắn qua số 8, kim dài chỉ số 6. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đoán trước rồi đo lại**
 
-a) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
+a) Con đoán khối lượng cặp sách khoảng bao nhiêu kg? Đoán xong mình đo lại.
 
-b) Con đoán lượng nước trong chai khoảng bao nhiêu lít? Đoán xong mình đo lại.
+b) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
 
-c) Con đoán khối lượng cặp sách khoảng bao nhiêu kg? Đoán xong mình đo lại.
-
-d) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
-
-e) Con đoán chiều dài quyển vở khoảng bao nhiêu cm? Đoán xong mình đo lại.
+c) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Đổi đơn vị và tính trên số đo**
+**Tính với số đo**
 
-a) 4 m = … dm
+a) Bạn Nam bắt đầu học lúc 7 giờ, học 3 tiếng thì xong. Xong lúc mấy giờ?
 
-b) Điền dấu >, < hoặc = : 9 dm … 32 cm
+b) 6 m = … dm
 
-c) 5 cm + 14 cm = … cm
+c) Băng giấy dài 81 cm, cắt đi 13 cm. Còn lại dài bao nhiêu?
 
-d) 11 cm + 30 cm = … cm
+d) 58 kg + 11 kg = …
 
-e) 9 m = … cm
-
-f) Điền dấu >, < hoặc = : 5 dm … 82 cm
+e) Bạn Nam bắt đầu học lúc 5 giờ, học 3 tiếng thì xong. Xong lúc mấy giờ?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Đơn vị đo và xem đồng hồ**
+**Đổi đơn vị và tính trên số đo**
 
-a) Kim ngắn ở giữa số 5 và số 6, kim dài chỉ số 6. Mấy giờ?
+a) Điền dấu >, < hoặc = : 2 dm … 15 cm
 
-b) 3 dm = … cm
+b) 36 cm + 18 cm = … cm
 
-c) Bao gạo nặng 2 kg, bao ngô nặng 7 kg. Cả hai bao nặng mấy ki-lô-gam?
+c) 6 dm = … cm
 
-d) Bao gạo nặng 13 kg, bao ngô nặng 10 kg. Cả hai bao nặng mấy ki-lô-gam?
+d) 3 m = … cm
 
-e) 2 dm = … cm
+e) Điền dấu >, < hoặc = : 1 dm … 46 cm
 
-f) Kim ngắn ở giữa số 6 và số 7, kim dài chỉ số 6. Mấy giờ?
+f) 32 cm + 21 cm = … cm
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui đo lường và giờ**
 
-a) Một bạn tính 21 + 83 = 113. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) 4 m bằng bao nhiêu dm?
 
-b) Một bạn tính 55 + 66 = 111. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) 9 kg bằng bao nhiêu gam?
 
-c) Một bạn tính 64 + 87 = 141. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-d) Một bạn tính 59 + 77 = 126. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Bây giờ là 9 giờ. 1 tiếng nữa là mấy giờ?
 
 
 ---
@@ -107,8 +97,8 @@ d) Một bạn tính 59 + 77 = 126. Bạn ấy sai ở đâu? Kết quả đúng
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đoán trước rồi đo lại
+- ☐ Tính với số đo
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Đơn vị đo và xem đồng hồ
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Đố vui đo lường và giờ

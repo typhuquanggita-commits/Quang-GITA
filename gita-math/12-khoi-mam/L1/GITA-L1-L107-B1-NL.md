@@ -47,34 +47,31 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính rời
 - Thước có vạch xăng-ti-mét
 - Bút chì
-- Giấy nháp
+- Bảng số từ 1 đến 100 (nếu có)
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 100**
+**So sánh số trong phạm vi 20**
 
 > **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 49 … 60
+a) Điền dấu >, < hoặc = : 11 … 19
    → **<**
 
-b) Điền dấu >, < hoặc = : 81 … 93
-   → **<**
-
-c) Điền dấu >, < hoặc = : 30 … 14
+b) Điền dấu >, < hoặc = : 11 … 6
    → **>**
 
-d) Điền dấu >, < hoặc = : 41 … 58
-   → **<**
-
-e) Điền dấu >, < hoặc = : 95 … 29
+c) Điền dấu >, < hoặc = : 8 … 1
    → **>**
 
-f) Điền dấu >, < hoặc = : 57 … 80
+d) Điền dấu >, < hoặc = : 15 … 3
+   → **>**
+
+e) Điền dấu >, < hoặc = : 4 … 10
    → **<**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
@@ -96,20 +93,23 @@ f) Điền dấu >, < hoặc = : 57 … 80
 
 **Đáp án từng việc**
 
-a) Số 15 gồm mấy chục và mấy đơn vị?
-   → **1 chục và 5 đơn vị**
+a) Số 77 gồm mấy chục và mấy đơn vị?
+   → **7 chục và 7 đơn vị**
 
-b) Số 27 gồm mấy chục và mấy đơn vị?
-   → **2 chục và 7 đơn vị**
+b) Số 48 gồm mấy chục và mấy đơn vị?
+   → **4 chục và 8 đơn vị**
 
-c) Số 26 gồm mấy chục và mấy đơn vị?
-   → **2 chục và 6 đơn vị**
+c) Số 99 gồm mấy chục và mấy đơn vị?
+   → **9 chục và 9 đơn vị**
 
-d) Số 67 gồm mấy chục và mấy đơn vị?
+d) Số 97 gồm mấy chục và mấy đơn vị?
+   → **9 chục và 7 đơn vị**
+
+e) Số 67 gồm mấy chục và mấy đơn vị?
    → **6 chục và 7 đơn vị**
 
-e) Số 70 gồm mấy chục và mấy đơn vị?
-   → **7 chục và 0 đơn vị**
+f) Số 28 gồm mấy chục và mấy đơn vị?
+   → **2 chục và 8 đơn vị**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Số nào cũng tách được thành chục và đơn vị à?
 
@@ -130,23 +130,17 @@ e) Số 70 gồm mấy chục và mấy đơn vị?
 
 **Đáp án từng việc**
 
-a) Viết số: 9 mươi 1
-   → **91**
+a) Trong hình có mấy đoạn thẳng?
+   → **4 đoạn thẳng**
 
-b) Trong hình có mấy đoạn thẳng?
-   → **6 đoạn thẳng**
+b) Viết số: 6 mươi 9
+   → **69**
 
-c) Vẽ một đoạn thẳng dài 11 cm.
-   → **11 cm**
+c) Vẽ một đoạn thẳng dài 3 cm.
+   → **3 cm**
 
-d) Vẽ một đoạn thẳng dài 14 cm.
-   → **14 cm**
-
-e) Trong hình có mấy đoạn thẳng?
-   → **5 đoạn thẳng**
-
-f) Viết số: mười 1
-   → **11**
+d) Vẽ một đoạn thẳng dài 7 cm.
+   → **7 cm**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Con đo lại đoạn vừa vẽ xem có đúng chừng ấy không?
 
@@ -161,31 +155,28 @@ f) Viết số: mười 1
 
 ## PHẦN D — Thử thách vui
 
-**Tự đặt một bài toán**
+**Số bí mật**
 
-> **Cô/mẹ đọc lên:** Lần này con làm cô giáo nhé. Con nghĩ ra đề toán, cô sẽ giải.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.
 
 **Đáp án từng việc**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 3 = 6.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+a) 13 và 43: số nào lớn hơn?
+   → **43**
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 2 = 7.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+b) Số bí mật đứng liền sau 50 và liền trước 52. Số nào?
+   → **51**
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 4 = 8.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+c) Số bí mật có 3 chục và 9 đơn vị. Số ấy là số nào?
+   → **39**
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 15 − 9 = 6.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng đơn vị trước?
 
-**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Đề của con có đủ cho người khác giải được không? Thiếu gì không?
+**Thế nào là con đã hiểu:** Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn hơn 40 vì 9 lớn hơn 0.
 
-**Thế nào là con đã hiểu:** Trẻ đặt được đề có đủ dữ kiện **và** có câu hỏi. Trẻ hay quên câu hỏi, và chính lúc quên ấy mới hiểu vì sao đề nào cũng phải có câu hỏi.
+**Con tắc thì làm gì:** Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.
 
-**Con tắc thì làm gì:** Cho sẵn bối cảnh — “về quả cam nhé” — rồi để trẻ điền số.
-
-**Nếu con làm nhanh:** Đổi vai: người lớn đặt một đề thiếu dữ kiện, trẻ chỉ ra chỗ thiếu.
+**Nếu con làm nhanh:** Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói 'lớn hơn' hoặc 'bé hơn'.
 
 
 ---

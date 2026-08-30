@@ -30,15 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-a) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
+a) Con chạy đi tìm một thứ trong nhà có hình vuông.
 
-b) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+b) Con chạy đi tìm một thứ trong nhà có hình tam giác.
 
-c) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+c) Tìm cho cô một thứ là khối lập phương.
 
-d) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+d) Tìm một thứ dài hơn bàn chân của con.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,15 +47,15 @@ d) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ v�
 
 **Tìm hình quanh mình**
 
-a) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
+a) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hình vuông.
 
-b) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật có dạng khối hộp chữ nhật.
+b) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
 
-c) Đây là khối trụ. Con tìm quanh nhà một đồ vật có dạng khối trụ.
+c) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
 
-d) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
+d) Đây là hình tam giác. Con tìm quanh nhà một đồ vật có dạng hình tam giác.
 
-e) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hình vuông.
+e) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật có dạng khối hộp chữ nhật.
 
 
 ## Tự làm thử · 7 phút
@@ -64,13 +64,13 @@ e) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hìn
 
 **Khoanh, nối, tô**
 
-a) Con khoanh vào vật ở giữa hàng.
+a) Con tô màu hình tròn.
 
 b) Con gạch bỏ vật không cùng nhóm.
 
-c) Con nối mỗi con vật với cái chuồng của nó.
+c) Con khoanh vào vật ở giữa hàng.
 
-d) Con khoanh tròn nhóm có nhiều hơn.
+d) Con nối mỗi con vật với cái chuồng của nó.
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -79,11 +79,13 @@ d) Con khoanh tròn nhóm có nhiều hơn.
 
 **Sáng, trưa, chiều, tối**
 
-a) Con đi ngủ vào buổi nào trong ngày?
+a) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
-b) Con tan học vào buổi nào trong ngày?
+b) Con ngủ trưa vào buổi nào trong ngày?
 
-c) Con đánh răng buổi sớm vào buổi nào trong ngày?
+c) Con tan học vào buổi nào trong ngày?
+
+d) Con đi ngủ vào buổi nào trong ngày?
 
 
 ---
@@ -94,7 +96,7 @@ c) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Đi săn hình quanh nhà | ☐ | ☐ | ☐ |
 | Tìm hình quanh mình | ☐ | ☐ | ☐ |
 | Khoanh, nối, tô | ☐ | ☐ | ☐ |
 | Sáng, trưa, chiều, tối | ☐ | ☐ | ☐ |

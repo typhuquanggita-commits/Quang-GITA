@@ -28,60 +28,52 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**Các thứ trong tuần**
+**Vẽ hình trên không, căng dây thành đoạn thẳng**
 
-a) Ngày thứ 4 của tuần là thứ mấy?
+a) Con dùng ngón tay vẽ hình chữ nhật lên không khí. Vẽ xong nói cho cô: hình ấy có mấy cạnh?
 
-b) Hôm nay là Chủ nhật. Ngày mai là thứ mấy?
+b) Con dùng ngón tay vẽ hình tròn lên không khí. Vẽ xong nói cho cô: hình ấy có mấy cạnh?
 
-c) Hôm nay là thứ Tư. Ngày mai là thứ mấy?
-
-d) Hôm nay là thứ Năm. Hôm qua là thứ mấy?
-
-e) Hôm nay là thứ Ba. Ngày mai là thứ mấy?
+c) Cô căng sợi dây thẳng giữa hai tay. Đó là đoạn thẳng. Con chấm 4 điểm lên tờ giấy rồi nối hai điểm bất kỳ.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Ghép hình và dãy hình**
 
-a) Ghép hai hình tam giác lại thì được hình gì?
+a) Ghép hai hình vuông lại thì được hình gì?
 
-b) hình vuông – hình tam giác – hình vuông – hình tam giác – … Hình tiếp theo là hình gì?
+b) hình vuông – hình tam giác – hình tròn – hình vuông – … Hình tiếp theo là hình gì?
 
-c) hình chữ nhật – hình tròn – hình chữ nhật – hình tròn – … Hình tiếp theo là hình gì?
+c) hình tam giác – hình tròn – hình tam giác – hình tròn – … Hình tiếp theo là hình gì?
 
-d) Ghép hai hình vuông lại thì được hình gì?
+d) Ghép hai hình tròn lại thì được hình gì?
 
-e) hình vuông – hình chữ nhật – hình tam giác – hình vuông – … Hình tiếp theo là hình gì?
-
-f) Ghép hai hình chữ nhật lại thì được hình gì?
+e) hình chữ nhật – hình tròn – hình chữ nhật – hình tròn – … Hình tiếp theo là hình gì?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Trong hình có mấy đoạn thẳng?
+a) Vẽ một đoạn thẳng dài 8 cm.
 
-b) Viết số: 2 mươi 7
+b) Viết số: 5 mươi 6
 
-c) Vẽ một đoạn thẳng dài 12 cm.
+c) Trong hình có mấy đoạn thẳng?
 
-d) Trong hình có mấy đoạn thẳng?
-
-e) Vẽ một đoạn thẳng dài 3 cm.
+d) Viết số: 8 mươi 4
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Đếm hình trong hình ghép**
 
-a) Trong hình bên có mấy hình chữ nhật?
+a) Con vẽ 3 hàng, mỗi hàng 2 hình vuông nhỏ bằng nhau. Có tất cả mấy hình vuông nhỏ?
 
-b) Trong hình bên có mấy hình tròn?
+b) Con vẽ một hình tam giác rồi kẻ 2 nét thẳng từ đỉnh trên xuống cạnh đáy. Đếm xem có mấy hình tam giác?
 
-c) Trong hình bên có mấy hình tam giác?
+c) Con vẽ một hình chữ nhật rồi kẻ 2 nét thẳng dọc chia nó thành 3 ô bằng nhau. Đếm xem có tất cả mấy hình chữ nhật?
 
 
 ---
@@ -90,7 +82,7 @@ c) Trong hình bên có mấy hình tam giác?
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Các thứ trong tuần
+- ☐ Vẽ hình trên không, căng dây thành đoạn thẳng
 - ☐ Ghép hình và dãy hình
 - ☐ Vẽ, đo và viết số
 - ☐ Đếm hình trong hình ghép

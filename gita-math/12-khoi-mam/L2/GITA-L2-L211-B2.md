@@ -28,19 +28,13 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Tạo hình bằng dây**
 
-a) Tính nhẩm: 700 + 200
+a) Cả nhóm dùng dây tạo thành hình tam giác. Tạo xong đếm xem có mấy đỉnh, mấy cạnh.
 
-b) Số 954 gồm mấy trăm, mấy chục, mấy đơn vị?
+b) Cả nhóm dùng dây tạo thành hình tứ giác. Tạo xong đếm xem có mấy đỉnh, mấy cạnh.
 
-c) Tính nhẩm: 300 + 300
-
-d) Số 955 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-e) Số 226 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-f) Tính nhẩm: 800 + 100
+c) Tìm trong lớp một vật là khối cầu, thả xuống sàn nghiêng xem có lăn không.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
@@ -49,50 +43,52 @@ f) Tính nhẩm: 800 + 100
 
 a) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
 
-b) Đường gấp khúc gồm 3 đoạn dài 11 cm, 18 cm, 17 cm. Tính độ dài đường gấp khúc.
+b) Đường gấp khúc gồm 2 đoạn dài 19 cm, 15 cm. Tính độ dài đường gấp khúc.
 
-c) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
-
-d) Đường gấp khúc gồm 4 đoạn dài 23 cm, 9 cm, 18 cm, 7 cm. Tính độ dài đường gấp khúc.
+c) Đường gấp khúc gồm 4 đoạn dài 12 cm, 13 cm, 16 cm, 10 cm. Tính độ dài đường gấp khúc.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Đổi đơn vị và tính trên số đo**
 
-a) 7 km = … m
+a) 25 cm + 27 cm = … cm
 
-b) 5 cm + 16 cm = … cm
+b) 2 m = … cm
 
-c) Điền dấu >, < hoặc = : 3 dm … 76 cm
+c) Điền dấu >, < hoặc = : 7 dm … 39 cm
 
-d) Điền dấu >, < hoặc = : 8 dm … 84 cm
-
-e) 27 cm + 26 cm = … cm
+d) 33 cm + 12 cm = … cm
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đường gấp khúc, hình và khối**
 
-a) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+a) Đường gấp khúc gồm các đoạn: 11 cm , 13 cm , 15 cm , 10 cm . Tính độ dài đường gấp khúc.
 
-b) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+b) Hình tứ giác có 4 cạnh đều dài 10 cm. Tính chu vi hình ấy.
 
-c) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+c) Vẽ 4 hình tam giác nhỏ bằng nhau ghép liền nhau thành một hàng. Đếm xem có tất cả mấy hình tam giác, kể cả hình ghép từ nhiều hình nhỏ?
 
-d) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+d) Có 4 điểm nằm trên một đường thẳng, cách đều nhau. Nối hai điểm ngoài cùng thì được mấy đoạn thẳng nhỏ liền nhau?
+
+e) Kể tên ba vật trong lớp có dạng khối trụ hoặc khối hộp chữ nhật.
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Chắc chắn, có thể, không thể**
 
-a) Một bạn tính 51 + 28 = 88. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
 
-b) Một bạn tính 86 + 76 = 152. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
 
-c) Một bạn tính 88 + 20 = 117. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+
+d) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+
+e) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
 
 
 ---
@@ -101,8 +97,8 @@ c) Một bạn tính 88 + 20 = 117. Bạn ấy sai ở đâu? Kết quả đúng
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
+- ☐ Tạo hình bằng dây
 - ☐ Đường gấp khúc và điểm thẳng hàng
 - ☐ Đổi đơn vị và tính trên số đo
+- ☐ Đường gấp khúc, hình và khối
 - ☐ Chắc chắn, có thể, không thể
-- ☐ Tìm chỗ sai giúp bạn

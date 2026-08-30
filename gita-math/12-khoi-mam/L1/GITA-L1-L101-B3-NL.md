@@ -46,7 +46,7 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính bó sẵn từng chục
 - Que tính rời
 - 10 que tính
-- Giấy nháp
+- Bảng số từ 1 đến 100 (nếu có)
 
 ---
 
@@ -58,19 +58,22 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 41 … 70
-   → **<**
-
-b) Điền dấu >, < hoặc = : 94 … 90
+a) Điền dấu >, < hoặc = : 92 … 23
    → **>**
 
-c) Điền dấu >, < hoặc = : 41 … 100
+b) Điền dấu >, < hoặc = : 71 … 47
+   → **>**
+
+c) Điền dấu >, < hoặc = : 37 … 68
    → **<**
 
-d) Điền dấu >, < hoặc = : 55 … 87
+d) Điền dấu >, < hoặc = : 13 … 73
    → **<**
 
-e) Điền dấu >, < hoặc = : 38 … 12
+e) Điền dấu >, < hoặc = : 65 … 46
+   → **>**
+
+f) Điền dấu >, < hoặc = : 53 … 23
    → **>**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
@@ -92,16 +95,19 @@ e) Điền dấu >, < hoặc = : 38 … 12
 
 **Đáp án từng việc**
 
-a) Con lấy đúng 86 que tính. Con lấy mấy bó và mấy que rời?
-   → **8 bó và 6 que rời**
+a) Con lấy đúng 72 que tính. Con lấy mấy bó và mấy que rời?
+   → **7 bó và 2 que rời**
 
-b) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
-   → **3 bó và 9 que rời**
+b) Con lấy đúng 18 que tính. Con lấy mấy bó và mấy que rời?
+   → **1 bó và 8 que rời**
 
-c) Con lấy đúng 93 que tính. Con lấy mấy bó và mấy que rời?
-   → **9 bó và 3 que rời**
+c) Con lấy đúng 50 que tính. Con lấy mấy bó và mấy que rời?
+   → **5 bó và 0 que rời**
 
-d) Con lấy đúng 79 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 54 que tính. Con lấy mấy bó và mấy que rời?
+   → **5 bó và 4 que rời**
+
+e) Con lấy đúng 79 que tính. Con lấy mấy bó và mấy que rời?
    → **7 bó và 9 que rời**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Có cách nào lấy nhanh hơn là đếm từng que không?
@@ -123,20 +129,23 @@ d) Con lấy đúng 79 que tính. Con lấy mấy bó và mấy que rời?
 
 **Đáp án từng việc**
 
-a) … + 1 = 9
-   → **8**
+a) … + 5 = 10
+   → **5**
 
-b) … + 2 = 9
-   → **7**
+b) … + 7 = 10
+   → **3**
 
-c) 8 + … = 9
+c) 3 + … = 7
+   → **4**
+
+d) 9 + … = 10
    → **1**
 
-d) … + 8 = 10
-   → **2**
+e) … + 1 = 5
+   → **4**
 
-e) 4 + … = 5
-   → **1**
+f) … + 1 = 4
+   → **3**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Con tìm ra số đó bằng cách nào? Có cách nào nhanh hơn không?
 
@@ -151,31 +160,28 @@ e) 4 + … = 5
 
 ## PHẦN D — Thử thách vui
 
-**Tự đặt một bài toán**
+**Số bí mật**
 
-> **Cô/mẹ đọc lên:** Lần này con làm cô giáo nhé. Con nghĩ ra đề toán, cô sẽ giải.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.
 
 **Đáp án từng việc**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 6 = 6.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+a) Số bí mật đứng liền sau 84 và liền trước 86. Số nào?
+   → **85**
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 5 + 9 = 14.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+b) Số bí mật đứng liền sau 18 và liền trước 20. Số nào?
+   → **19**
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 5 = 5.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+c) Số bí mật đứng liền sau 33 và liền trước 35. Số nào?
+   → **34**
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 9 + 8 = 17.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng đơn vị trước?
 
-**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Đề của con có đủ cho người khác giải được không? Thiếu gì không?
+**Thế nào là con đã hiểu:** Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn hơn 40 vì 9 lớn hơn 0.
 
-**Thế nào là con đã hiểu:** Trẻ đặt được đề có đủ dữ kiện **và** có câu hỏi. Trẻ hay quên câu hỏi, và chính lúc quên ấy mới hiểu vì sao đề nào cũng phải có câu hỏi.
+**Con tắc thì làm gì:** Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.
 
-**Con tắc thì làm gì:** Cho sẵn bối cảnh — “về quả cam nhé” — rồi để trẻ điền số.
-
-**Nếu con làm nhanh:** Đổi vai: người lớn đặt một đề thiếu dữ kiện, trẻ chỉ ra chỗ thiếu.
+**Nếu con làm nhanh:** Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói 'lớn hơn' hoặc 'bé hơn'.
 
 
 ---

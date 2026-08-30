@@ -42,7 +42,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Chỗ trống để trẻ đứng dậy vận động
+- Chỗ trống để trẻ đi được vài bước
 - 10 đồ vật nhỏ giống nhau
 - Hột hạt nhiều màu
 - Không cần gì — dùng ngón tay của trẻ
@@ -51,28 +51,28 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## Chơi khởi động
 
-**Nhảy và đếm**
+**Vỗ tay theo nhịp rồi bước đo**
 
-> **Cô/mẹ đọc lên:** Mình chơi trò làm theo số nhé. Cô nói số mấy thì con làm đúng chừng ấy lần, vừa làm vừa đếm to.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng nhịp nhé. Cô làm trước, con nhìn cho kỹ rồi làm tiếp đúng như thế.
 
 **Đáp án từng việc**
 
-a) Con nhảy đúng 9 cái nhé. Đếm to lên.
-   → **9**
+a) Cô làm mẫu: vỗ tay – vỗ đùi – giậm chân. Lặp lại 3 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 3 động tác của một lượt, theo đúng thứ tự**
 
-b) Con bước lên phía trước đúng 2 bước nhé. Đếm to lên.
-   → **2**
+b) Cô làm mẫu: giậm chân – gật đầu. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
+   → **lặp đúng 2 động tác của một lượt, theo đúng thứ tự**
 
-c) Con vỗ tay đúng 5 cái nhé. Đếm to lên.
-   → **5**
+c) Con bước chân nối gót đi hết chiều dài cái bàn. Đếm to xem mấy bước.
+   → **số bước trẻ đếm được — ghi lại để buổi sau đo lại**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Sau giậm chân thì đến cái gì? Vì sao con đoán được?
 
-**Thế nào là con đã hiểu:** Trẻ dừng đúng lúc đếm tới số được yêu cầu, không nhảy thêm vì quán tính. Đếm để **điều khiển hành động** là bước tiến so với chỉ đọc thuộc dãy số.
+**Thế nào là con đã hiểu:** Trẻ làm tiếp đúng thứ tự mà không cần cô nhắc. Quy luật bằng **âm thanh và động tác** dễ nắm hơn quy luật bằng hình vẽ, nên đây là cửa vào tốt cho chủ đề quy luật.
 
-**Con tắc thì làm gì:** Đếm cùng trẻ, vỗ tay theo nhịp. Giảm xuống số nhỏ hơn 5.
+**Con tắc thì làm gì:** Rút nhịp xuống hai động tác và làm chậm lại. Đọc to tên động tác khi làm.
 
-**Nếu con làm nhanh:** Đếm ngược: nhảy 5 cái rồi đếm 5, 4, 3, 2, 1.
+**Nếu con làm nhanh:** Cho trẻ nghĩ ra nhịp rồi người lớn làm theo — trẻ sẽ tự kiểm tra xem người lớn có làm đúng không.
 
 
 ---
@@ -85,14 +85,14 @@ c) Con vỗ tay đúng 5 cái nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Cô bày 5 con cá thành vòng tròn. Con đếm xem có mấy con?
+a) Cô bày 10 con cá thành hàng ngang. Con đếm xem có mấy con?
+   → **10**
+
+b) Cô bày 10 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
+   → **10**
+
+c) Cô bày 5 quả bóng thành vòng tròn. Con đếm xem có mấy quả?
    → **5**
-
-b) Cô bày 8 cái bánh rải lộn xộn. Con đếm xem có mấy cái?
-   → **8**
-
-c) Cô bày 7 con vịt thành hai hàng. Con đếm xem có mấy con?
-   → **7**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Cô bày kiểu khác mà vẫn bằng chừng ấy à? Vì sao con biết?
 
@@ -113,16 +113,13 @@ c) Cô bày 7 con vịt thành hai hàng. Con đếm xem có mấy con?
 
 **Đáp án từng việc**
 
-a) xanh – đỏ – xanh – … – xanh – đỏ . Ô trống là màu gì?
-   → **đỏ**
+a) đỏ – xanh – đỏ – xanh – đỏ – … – đỏ . Ô trống là màu gì?
+   → **xanh**
 
-b) vàng – xanh – … – xanh – vàng . Ô trống là màu gì?
+b) xanh – vàng – xanh – … – xanh – vàng . Ô trống là màu gì?
    → **vàng**
 
-c) vàng – … – vàng – đỏ – vàng – đỏ . Ô trống là màu gì?
-   → **đỏ**
-
-d) vàng – đỏ – vàng – … – vàng – đỏ – vàng . Ô trống là màu gì?
+c) xanh – đỏ – xanh – đỏ – xanh – … – xanh . Ô trống là màu gì?
    → **đỏ**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Con kiểm lại xem điền vào rồi dãy còn đúng quy luật không?
@@ -144,17 +141,14 @@ d) vàng – đỏ – vàng – … – vàng – đỏ – vàng . Ô trống 
 
 **Đáp án từng việc**
 
-a) Con giơ 5 ngón tay ở bàn tay này. Muốn có đúng 7 ngón thì giơ thêm mấy ngón nữa?
-   → **2 ngón**
-
-b) Trên đĩa có 7 cái kẹo. Con ăn mất 1 cái. Còn mấy cái?
-   → **6 cái**
-
-c) 4 con vịt có tất cả mấy cái chân?
+a) 4 con chim có tất cả mấy cái chân?
    → **8 cái chân**
 
-d) Trên đĩa có 6 quả bóng. Con ăn mất 1 quả. Còn mấy quả?
-   → **5 quả**
+b) Trên đĩa có 3 viên bi. Con ăn mất 1 viên. Còn mấy viên?
+   → **2 viên**
+
+c) 2 con vịt có tất cả mấy cái chân?
+   → **4 cái chân**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Đoán thử)*: Con nghĩ ra một câu đố đố lại cô đi.
 

@@ -59,17 +59,17 @@ Bản dành cho: **người lớn ngồi cùng**
 a) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
    → **vật nào ở trên đầu con**
 
-b) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
-   → **vật nào ở dưới chân con**
+b) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+   → **vật nào ở trước mặt con**
 
-c) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+c) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
+   → **vật nào ở sau lưng con**
+
+d) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
    → **vật nào ở tay trái con**
 
-d) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
-   → **vật nào ở tay phải con**
-
-e) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
-   → **vật nào ở trước mặt con**
+e) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+   → **vật nào ở dưới chân con**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Nếu con quay người lại thì quả bóng còn ở bên phải con nữa không?
 
@@ -90,14 +90,17 @@ e) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ 
 
 **Đáp án từng việc**
 
-a) Cô bày 5 cái bánh rải lộn xộn. Con đếm xem có mấy cái?
+a) Cô bày 7 con vịt thành hai hàng. Con đếm xem có mấy con?
+   → **7**
+
+b) Cô bày 5 quyển vở thành hàng ngang. Con đếm xem có mấy quyển?
    → **5**
 
-b) Cô bày 6 quyển vở thành hàng ngang. Con đếm xem có mấy quyển?
-   → **6**
+c) Cô bày 9 con vịt thành vòng tròn. Con đếm xem có mấy con?
+   → **9**
 
-c) Cô bày 10 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
-   → **10**
+d) Cô bày 6 cái bánh thành hàng ngang. Con đếm xem có mấy cái?
+   → **6**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Cô bày kiểu khác mà vẫn bằng chừng ấy à? Vì sao con biết?
 
@@ -118,17 +121,14 @@ c) Cô bày 10 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
 
 **Đáp án từng việc**
 
-a) Có 6 con ong xếp thành hàng. Con chỉ vào con thứ nhất.
-   → **con ở vị trí thứ 1 tính từ đầu hàng**
-
-b) Có 5 con ong xếp thành hàng. Con chỉ vào con thứ hai.
-   → **con ở vị trí thứ 2 tính từ đầu hàng**
-
-c) Có 4 con thỏ xếp thành hàng. Con chỉ vào con thứ tư.
+a) Có 7 con bướm xếp thành hàng. Con chỉ vào con thứ tư.
    → **con ở vị trí thứ 4 tính từ đầu hàng**
 
-d) Có 7 con bướm xếp thành hàng. Con chỉ vào con thứ năm.
-   → **con ở vị trí thứ 5 tính từ đầu hàng**
+b) Có 4 con gà xếp thành hàng. Con chỉ vào con thứ ba.
+   → **con ở vị trí thứ 3 tính từ đầu hàng**
+
+c) Có 8 con gà xếp thành hàng. Con chỉ vào con thứ tư.
+   → **con ở vị trí thứ 4 tính từ đầu hàng**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: “Ba con vịt” với “con vịt thứ ba” có giống nhau không?
 
@@ -149,17 +149,17 @@ d) Có 7 con bướm xếp thành hàng. Con chỉ vào con thứ năm.
 
 **Đáp án từng việc**
 
-a) Con ăn sáng vào buổi nào trong ngày?
+a) Con đánh răng buổi sớm vào buổi nào trong ngày?
    → **buổi sáng**
 
-b) Con ngủ trưa vào buổi nào trong ngày?
-   → **buổi trưa**
-
-c) Con tan học vào buổi nào trong ngày?
+b) Con tan học vào buổi nào trong ngày?
    → **buổi chiều**
 
-d) Con đánh răng buổi sớm vào buổi nào trong ngày?
+c) Con ăn sáng vào buổi nào trong ngày?
    → **buổi sáng**
+
+d) Con ngủ trưa vào buổi nào trong ngày?
+   → **buổi trưa**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Cho một ví dụ)*: Hôm qua là thứ mấy? Vậy ngày mai là thứ mấy?
 

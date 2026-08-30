@@ -32,11 +32,11 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Nhảy và đếm**
 
-a) Con vỗ tay đúng 6 cái nhé. Đếm to lên.
+a) Con bước lên phía trước đúng 8 bước nhé. Đếm to lên.
 
-b) Con gật đầu đúng 7 cái nhé. Đếm to lên.
+b) Con gật đầu đúng 6 cái nhé. Đếm to lên.
 
-c) Con bước lên phía trước đúng 3 bước nhé. Đếm to lên.
+c) Con giậm chân đúng 9 cái nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -45,15 +45,15 @@ c) Con bước lên phía trước đúng 3 bước nhé. Đếm to lên.
 
 **Đếm rồi nói số cuối cùng**
 
-a) Cô đặt ra 2 cái bánh. Con đếm xem có mấy cái?
+a) Cô đặt ra 5 viên bi. Con đếm xem có mấy viên?
 
-b) Cô đặt ra 10 con cá. Con đếm xem có mấy con?
+b) Cô đặt ra 8 quả cam. Con đếm xem có mấy quả?
 
-c) Cô đặt ra 4 bông hoa. Con đếm xem có mấy bông?
+c) Cô đặt ra 4 con vịt. Con đếm xem có mấy con?
 
-d) Cô đặt ra 7 cái kẹo. Con đếm xem có mấy cái?
+d) Cô đặt ra 2 cái bánh. Con đếm xem có mấy cái?
 
-e) Cô đặt ra 5 quả cam. Con đếm xem có mấy quả?
+e) Cô đặt ra 4 viên bi. Con đếm xem có mấy viên?
 
 
 ## Tự làm thử · 7 phút
@@ -62,28 +62,26 @@ e) Cô đặt ra 5 quả cam. Con đếm xem có mấy quả?
 
 **Làm cho hai đĩa bằng nhau**
 
-a) Đĩa này có 8 con vịt, đĩa kia có 6 con. Con làm sao cho hai đĩa bằng nhau?
+a) Đĩa này có 5 con cá, đĩa kia có 6 con. Con làm sao cho hai đĩa bằng nhau?
 
-b) Đĩa này có 5 chiếc lá, đĩa kia có 4 chiếc. Con làm sao cho hai đĩa bằng nhau?
+b) Đĩa này có 3 con vịt, đĩa kia có 6 con. Con làm sao cho hai đĩa bằng nhau?
 
-c) Đĩa này có 2 quả bóng, đĩa kia có 4 quả. Con làm sao cho hai đĩa bằng nhau?
+c) Đĩa này có 3 bông hoa, đĩa kia có 7 bông. Con làm sao cho hai đĩa bằng nhau?
 
-d) Đĩa này có 6 quyển vở, đĩa kia có 3 quyển. Con làm sao cho hai đĩa bằng nhau?
+d) Đĩa này có 2 cái bánh, đĩa kia có 8 cái. Con làm sao cho hai đĩa bằng nhau?
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) vàng – trắng – vàng – trắng – … Con đoán xem tiếp theo là màu gì?
+a) Dãy số bị mất một số: 2 , … , 4 , 5 . Mất số nào?
 
-b) xanh – vàng – xanh – vàng – xanh – vàng – … Con đoán xem tiếp theo là màu gì?
+b) Số nào đứng ngay trước số 3?
 
-c) trắng – vàng – trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
-
-d) trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
+c) Con giơ 3 ngón ở tay này, 3 ngón ở tay kia. Tất cả mấy ngón?
 
 
 ---
@@ -97,4 +95,4 @@ d) trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo l�
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Đếm rồi nói số cuối cùng | ☐ | ☐ | ☐ |
 | Làm cho hai đĩa bằng nhau | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

@@ -30,69 +30,71 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Bảng nhân, bảng chia 2 và 5**
 
-a) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
+a) 25 : 5 = …
 
-b) 5 × 4 = …
+b) 5 × 7 = …
 
-c) 30 : 5 = …
+c) Viết phép nhân thay cho phép cộng: 5 + 5
 
-d) 10 : 2 = …
+d) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
 
-e) 5 × 4 = …
+e) 12 : 2 = …
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 2 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-b) Xếp 6 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+b) Xếp 5 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 7 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 d) Xếp 2 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+
+e) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Bài toán nhân, chia**
 
-a) Có 8 bông hoa chia đều vào 2 hộp. Mỗi hộp có mấy bông?
+a) Có 4 cái kẹo chia đều vào 2 hộp. Mỗi hộp có mấy cái?
 
-b) Mỗi hộp có 2 chiếc lá. Hỏi 7 hộp có mấy chiếc?
+b) Mỗi hộp có 5 quả bóng. Hỏi 9 hộp có mấy quả?
 
-c) Mỗi hộp có 5 quyển vở. Hỏi 6 hộp có mấy quyển?
+c) Có 8 con vịt chia đều vào 2 hộp. Mỗi hộp có mấy con?
 
-d) Có 20 cái bánh chia đều vào 2 hộp. Mỗi hộp có mấy cái?
+d) Mỗi hộp có 2 quả bóng. Hỏi 4 hộp có mấy quả?
+
+e) Có 14 cái bánh chia đều vào 2 hộp. Mỗi hộp có mấy cái?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Cộng trừ có nhớ trong phạm vi 1 000**
+**Bảng nhân, bảng chia và số còn thiếu**
 
-a) Đặt tính rồi tính: 834 − 105
+a) 5 × 3 = …
 
-b) Đặt tính rồi tính: 109 + 177
+b) Mỗi hộp có 5 cây bút. 10 hộp có bao nhiêu cây bút?
 
-c) Đặt tính rồi tính: 682 − 478
+c) 16 : 2 = …
 
-d) Đặt tính rồi tính: 815 + 32
+d) Tìm số còn thiếu: 2 × … = 4
 
-e) Đặt tính rồi tính: 396 − 52
+e) 5 × 10 = …
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui nhân chia**
 
-a) Một bạn tính 55 + 30 = 94. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Chia đều 6 cái kẹo cho 2 bạn. Mỗi bạn mấy cái?
 
-b) Một bạn tính 83 + 61 = 153. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) 5 con mèo có tất cả mấy cái chân?
 
-c) Một bạn tính 31 + 81 = 121. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-d) Một bạn tính 44 + 15 = 68. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Con có 6 viên bi. Anh có gấp 2 lần con. Anh có mấy viên?
 
 
 ---
@@ -104,5 +106,5 @@ d) Một bạn tính 44 + 15 = 68. Bạn ấy sai ở đâu? Kết quả đúng 
 - ☐ Bảng nhân, bảng chia 2 và 5
 - ☐ Từ phép cộng sang phép nhân
 - ☐ Bài toán nhân, chia
-- ☐ Cộng trừ có nhớ trong phạm vi 1 000
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Bảng nhân, bảng chia và số còn thiếu
+- ☐ Đố vui nhân chia

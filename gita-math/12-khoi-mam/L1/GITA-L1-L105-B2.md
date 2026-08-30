@@ -28,58 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**So sánh số trong phạm vi 20**
 
-a) Điền dấu >, < hoặc = : 8 … 40
+a) Điền dấu >, < hoặc = : 2 … 18
 
-b) Điền dấu >, < hoặc = : 90 … 21
+b) Điền dấu >, < hoặc = : 7 … 8
 
-c) Điền dấu >, < hoặc = : 71 … 92
+c) Điền dấu >, < hoặc = : 17 … 8
 
-d) Điền dấu >, < hoặc = : 4 … 16
+d) Điền dấu >, < hoặc = : 7 … 4
+
+e) Điền dấu >, < hoặc = : 17 … 7
+
+f) Điền dấu >, < hoặc = : 13 … 3
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 71 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 69 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 16 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 77 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 46 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 25 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 14 que tính. Con lấy mấy bó và mấy que rời?
-
-e) Con lấy đúng 43 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 88 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Từ một phép cộng ra hai phép trừ**
 
-a) Từ phép tính 4 + 3 = 7, con viết ra hai phép trừ.
+a) Từ phép tính 8 + 2 = 10, con viết ra hai phép trừ.
 
-b) Từ phép tính 7 + 1 = 8, con viết ra hai phép trừ.
+b) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
 
-c) Từ phép tính 7 + 3 = 10, con viết ra hai phép trừ.
-
-d) Từ phép tính 4 + 4 = 8, con viết ra hai phép trừ.
-
-e) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
+c) Từ phép tính 7 + 1 = 8, con viết ra hai phép trừ.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+a) Số bí mật có 1 chục và 9 đơn vị. Số ấy là số nào?
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
+b) Số bí mật đứng liền sau 34 và liền trước 36. Số nào?
 
-c) 11, 21, 31, 41, …
+c) 86 và 71: số nào lớn hơn?
 
-d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+d) 77 và 47: số nào lớn hơn?
 
 
 ---
@@ -88,7 +86,7 @@ d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ So sánh số trong phạm vi 20
 - ☐ Lấy đúng số que tính
 - ☐ Từ một phép cộng ra hai phép trừ
-- ☐ Tìm quy luật
+- ☐ Số bí mật

@@ -28,64 +28,52 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 78 … 50
+a) Con giơ 6 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 10?
 
-b) Điền dấu >, < hoặc = : 4 … 18
+b) 7 bớt 4 còn mấy?
 
-c) Điền dấu >, < hoặc = : 61 … 98
+c) 2 thêm 5 là mấy?
 
-d) Điền dấu >, < hoặc = : 46 … 94
+d) Con giơ 3 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 7?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Bi có 2 viên bi, mẹ cho thêm 1 viên. Bi có tất cả mấy viên?
+a) Cốm có 3 con vịt, mẹ cho thêm 1 con. Cốm có tất cả mấy con?
 
-b) Bi có 6 quyển vở, cho bạn 2 quyển. Bi còn lại mấy quyển?
+b) Nam có 4 quyển vở, cho bạn 3 quyển. Nam còn lại mấy quyển?
 
-c) Tí có 2 bông hoa, mẹ cho thêm 3 bông. Tí có tất cả mấy bông?
+c) Bơ có 8 quả bóng, cho bạn 7 quả. Bơ còn lại mấy quả?
 
-d) Bi có 4 quả bóng, cho bạn 1 quả. Bi còn lại mấy quả?
+d) An có 4 con cá, mẹ cho thêm 4 con. An có tất cả mấy con?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
-**Tính nhanh**
+**Từ một phép cộng ra hai phép trừ**
 
-a) 18 + 2 = …
+a) Từ phép tính 5 + 4 = 9, con viết ra hai phép trừ.
 
-b) 4 − 1 = …
+b) Từ phép tính 5 + 3 = 8, con viết ra hai phép trừ.
 
-c) 3 + 5 = …
+c) Từ phép tính 4 + 4 = 8, con viết ra hai phép trừ.
 
-d) 14 + 4 = …
-
-e) 9 + 1 = …
-
-f) 6 + 3 = …
-
-g) 7 − 5 = …
-
-h) 2 − 2 = …
+d) Từ phép tính 3 + 5 = 8, con viết ra hai phép trừ.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 10 + 5 = 15.
+a) Con có 6 cái kẹo, cho bạn 1 cái. Còn mấy cái?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 10 + 9 = 19.
+b) Con có 6 cái kẹo, cho bạn 3 cái. Còn mấy cái?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 8 + 8 = 16.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 9 = 2.
-
-e) Con hãy nghĩ ra một bài toán mà phép tính là 15 − 5 = 10.
+c) 2 con vịt có mấy cái chân?
 
 
 ---
@@ -94,7 +82,7 @@ e) Con hãy nghĩ ra một bài toán mà phép tính là 15 − 5 = 10.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
-- ☐ Tính nhanh
-- ☐ Tự đặt một bài toán
+- ☐ Từ một phép cộng ra hai phép trừ
+- ☐ Đố vui cộng trừ

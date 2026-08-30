@@ -42,61 +42,58 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Bảng số hoặc thẻ trăm – chục – đơn vị
+- Bảng giấy kẻ sẵn hai cột để kiểm đếm
+- Bút dạ
 - Giấy kẻ ô
 - Bút màu
+- Bảng kiểm đếm kẻ sẵn
+- Bút màu để tô cột cao nhất
 - Bảng số liệu in sẵn
-- Giấy kẻ ô để vẽ biểu đồ tranh
-- Một hộp bi có bi hai màu để thử thật
+- Giấy kẻ sẵn biểu đồ tranh
+- Nhãn dán hoặc bút màu
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Khảo sát chớp nhoáng**
 
-> **Cô/mẹ đọc lên:** Số tròn trăm thì nhẩm như đếm trăm: 3 trăm thêm 2 trăm là 5 trăm.
+> **Cô/mẹ đọc lên:** Mình hỏi nhanh cả lớp rồi đếm tay giơ lên. Đó chính là thu thập số liệu đấy.
 
 **Đáp án từng việc**
 
-a) Số 961 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **9 trăm, 6 chục, 1 đơn vị**
+a) Bạn nào đi học bằng xe máy thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'cách đi học' của bảng kiểm đếm**
 
-b) Tính nhẩm: 800 + 100
-   → **900**
+b) Bạn nào có em thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'gia đình' của bảng kiểm đếm**
 
-c) Số 724 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **7 trăm, 2 chục, 4 đơn vị**
+c) Con cá biết trèo cây — chắc chắn, có thể hay không thể?
+   → **không thể**
 
-d) Tính nhẩm: 400 + 400
-   → **800**
+d) Ngày mai mặt trời mọc ở hướng đông — chắc chắn, có thể hay không thể?
+   → **chắc chắn**
 
-e) Số 969 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **9 trăm, 6 chục, 9 đơn vị**
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Đếm xong con biết thêm điều gì mà lúc chưa đếm con chưa biết?
 
-f) Tính nhẩm: 800 + 100
-   → **900**
+**Thế nào là con đã hiểu:** Trẻ ghi bằng gạch năm một (⁄⁄⁄⁄\) thay vì viết số ước chừng. Kiểm đếm có hệ thống là điều đầu tiên của mạch thống kê, trước cả việc vẽ biểu đồ.
 
-**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Vì sao 300 + 200 nhẩm nhanh hơn 347 + 285?
+**Con tắc thì làm gì:** Đếm chậm, chỉ tay vào từng bạn, mỗi bạn một gạch.
 
-**Thế nào là con đã hiểu:** Trẻ nhẩm số tròn trăm mà không đặt tính. Biết khi nào cần đặt tính và khi nào không là dấu hiệu đã chọn cách làm.
-
-**Con tắc thì làm gì:** Che hai chữ số cuối để trẻ chỉ nhìn hàng trăm.
-
-**Nếu con làm nhanh:** Nhẩm số tròn chục trong phạm vi 1 000.
+**Nếu con làm nhanh:** Hỏi thêm một câu mà trẻ đoán trước kết quả, rồi đếm để kiểm.
 
 
 ---
 
 ## PHẦN B — Học cái mới
 
-**Kiểm đếm về món ăn sáng của các bạn**
+**Kiểm đếm về phương tiện đi học**
 
 > **Cô/mẹ đọc lên:** Con đi hỏi từng bạn rồi ghi ngay vào bảng, đừng để nhớ trong đầu.
 
 **Đáp án từng việc**
 
-a) Con đi hỏi và kiểm đếm về món ăn sáng của các bạn. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về phương tiện đi học. Ghi vào bảng.
    → **trẻ tự thu thập — người lớn kiểm bảng có đủ cột và đủ ô không**
 
 b) Loại nào nhiều nhất trong bảng của con?
@@ -121,23 +118,60 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 ## PHẦN C — Luyện tay
 
+**Đọc bảng số liệu và đoán khả năng**
+
+> **Cô/mẹ đọc lên:** Bảng này do chính lớp mình đếm ra. Con đọc bảng rồi trả lời giúp cô.
+
+**Đáp án từng việc**
+
+a) Lớp 2A khảo sát cách đi học. Kết quả: đi bộ: 12 bạn · xe đạp: 10 bạn · xe buýt: 5 bạn. Cách nào nhiều bạn chọn nhất?
+   → **đi bộ**
+
+b) Cách nào ít bạn chọn nhất?
+   → **xe buýt**
+
+c) Đi bộ nhiều hơn xe buýt bao nhiêu bạn?
+   → **12 − 5 = 7 bạn**
+
+d) Lớp khảo sát tất cả bao nhiêu bạn?
+   → **12 + 10 + 5 = 27 bạn**
+
+e) Rút một bạn bất kỳ trong lớp, bạn ấy đi học bằng đi bộ — chắc chắn, có thể hay không thể?
+   → **có thể — vì có bạn đi bằng cách ấy, nhưng không phải bạn nào cũng thế**
+
+f) Rút một bạn bất kỳ, bạn ấy đi học bằng một trong ba cách trong bảng — chắc chắn, có thể hay không thể?
+   → **chắc chắn — bảng đã kể hết mọi bạn trong lớp**
+
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Vì sao câu này là 'có thể' chứ không phải 'chắc chắn'?
+
+**Thế nào là con đã hiểu:** Trẻ phân biệt được **chắc chắn** với **có thể**: chắc chắn là không còn khả năng nào khác, còn có thể là vẫn còn khả năng khác. Trẻ hay gộp hai cái này làm một.
+
+**Con tắc thì làm gì:** Diễn lại bằng rổ đồ vật thật: bốc một vật ra khỏi rổ rồi hỏi lại.
+
+**Nếu con làm nhanh:** Thêm một cách đi học không bạn nào chọn, rồi hỏi lại — cột 0 bạn vẫn phải có trong bảng.
+
+
+---
+
+## PHẦN D — Bài toán có lời văn
+
 **Đọc bảng số liệu**
 
 > **Cô/mẹ đọc lên:** Mỗi câu hỏi một điều khác nhau. Con đọc kỹ câu hỏi trước khi nhìn vào bảng.
 
 **Đáp án từng việc**
 
-a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 15, thứ Ba: 4, thứ Tư: 8, thứ Năm: 3, thứ Sáu: 7. Ngày nào đọc nhiều nhất?
-   → **thứ Hai**
+a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 8, thứ Ba: 7, thứ Tư: 13, thứ Năm: 14, thứ Sáu: 9. Ngày nào đọc nhiều nhất?
+   → **thứ Năm**
 
 b) Cả tuần đọc bao nhiêu quyển?
-   → **37**
+   → **51**
 
 c) Thứ Hai và thứ Ba đọc tất cả mấy quyển?
-   → **19**
+   → **15**
 
 d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
-   → **12**
+   → **7**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Câu nào con phải cộng nhiều số? Có cách cộng nào nhanh hơn không?
 
@@ -150,70 +184,37 @@ d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
 
 ---
 
-## PHẦN D — Bài toán có lời văn
-
-**Bảng kiểm đếm và biểu đồ tranh**
-
-> **Cô/mẹ đọc lên:** Con đọc kỹ bảng trước khi trả lời. Mỗi câu hỏi hỏi một điều khác nhau.
-
-**Đáp án từng việc**
-
-a) Bảng kiểm đếm: quả lê: 5 · quả cam: 5 · quả xoài: 7. Loại nào nhiều nhất?
-   → **quả xoài**
-
-b) Loại nào ít nhất?
-   → **quả lê**
-
-c) Có tất cả bao nhiêu quả?
-   → **17**
-
-d) Quả xoài nhiều hơn quả lê mấy quả?
-   → **2**
-
-**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Nhìn bảng này con thấy điều gì đáng chú ý? Con kể cho cô nghe.
-
-**Thế nào là con đã hiểu:** Trẻ trả lời đúng câu hỏi được hỏi, không đọc bừa một con số trong bảng. Đây là lỗi mất điểm phổ biến nhất của cả mạch Thống kê ở tiểu học.
-
-**Con tắc thì làm gì:** Che bớt các cột chưa cần, chỉ để lại cột đang hỏi.
-
-**Nếu con làm nhanh:** Cho trẻ tự đi kiểm đếm một thứ có thật trong nhà rồi vẽ biểu đồ.
-
-
----
-
 ## PHẦN E — Thử thách vui
 
-**Chắc chắn, có thể, không thể**
+**Đọc biểu đồ tranh**
 
-> **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
+> **Cô/mẹ đọc lên:** Nhìn biểu đồ rồi trả lời giúp cô. Mỗi hình một quả nhé.
 
 **Đáp án từng việc**
 
-a) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
-   → **có thể**
+a) - cam: 🍎🍎🍎🍎🍎🍎🍎🍎🍎  (9 quả)
+- ổi: 🍎🍎🍎🍎🍎🍎  (6 quả)
+- chuối: 🍎🍎🍎🍎🍎  (5 quả)
 
-b) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+Loại quả nào nhiều nhất?
+   → **cam**
 
-c) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-   → **không thể**
+b) Loại quả nào ít nhất?
+   → **chuối**
 
-d) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+c) Cam nhiều hơn chuối mấy quả?
+   → **4 quả**
 
-e) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
-   → **có thể**
+d) Tất cả có mấy quả?
+   → **20 quả**
 
-f) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
-   → **có thể**
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Nhìn biểu đồ, con biết ngay loại nào nhiều nhất mà không cần đếm. Vì sao?
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
+**Thế nào là con đã hiểu:** Trẻ so hai hàng bằng cách nhìn hàng nào **dài hơn**, chỉ đếm khi cần biết hơn kém bao nhiêu. Đó chính là lý do người ta vẽ biểu đồ thay vì viết bảng số.
 
-**Thế nào là con đã hiểu:** Trẻ phân biệt được “không thể” với “khó xảy ra”. Đây là chỗ nhầm nhiều nhất, và cũng là gốc của khái niệm xác suất sau này.
+**Con tắc thì làm gì:** Cho trẻ chỉ tay theo từng hàng và đếm to.
 
-**Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
+**Nếu con làm nhanh:** Che số đi, chỉ để hình — trẻ vẫn trả lời được câu nào?
 
 
 ---

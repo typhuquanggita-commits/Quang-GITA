@@ -45,28 +45,31 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính bó sẵn từng chục
 - Que tính rời
 - Ba thẻ số
-- Que tính để xếp hình
+- Bảng số từ 1 đến 100 (nếu có)
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 20**
+**So sánh số trong phạm vi 10**
 
 > **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 1 … 10
+a) Điền dấu >, < hoặc = : 10 … 6
+   → **>**
+
+b) Điền dấu >, < hoặc = : 6 … 3
+   → **>**
+
+c) Điền dấu >, < hoặc = : 6 … 9
    → **<**
 
-b) Điền dấu >, < hoặc = : 3 … 4
-   → **<**
+d) Điền dấu >, < hoặc = : 9 … 8
+   → **>**
 
-c) Điền dấu >, < hoặc = : 8 … 10
-   → **<**
-
-d) Điền dấu >, < hoặc = : 17 … 16
+e) Điền dấu >, < hoặc = : 10 … 8
    → **>**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
@@ -88,20 +91,20 @@ d) Điền dấu >, < hoặc = : 17 … 16
 
 **Đáp án từng việc**
 
-a) Con lấy đúng 37 que tính. Con lấy mấy bó và mấy que rời?
-   → **3 bó và 7 que rời**
+a) Con lấy đúng 67 que tính. Con lấy mấy bó và mấy que rời?
+   → **6 bó và 7 que rời**
 
-b) Con lấy đúng 53 que tính. Con lấy mấy bó và mấy que rời?
-   → **5 bó và 3 que rời**
+b) Con lấy đúng 87 que tính. Con lấy mấy bó và mấy que rời?
+   → **8 bó và 7 que rời**
 
-c) Con lấy đúng 47 que tính. Con lấy mấy bó và mấy que rời?
-   → **4 bó và 7 que rời**
+c) Con lấy đúng 59 que tính. Con lấy mấy bó và mấy que rời?
+   → **5 bó và 9 que rời**
 
-d) Con lấy đúng 79 que tính. Con lấy mấy bó và mấy que rời?
-   → **7 bó và 9 que rời**
+d) Con lấy đúng 17 que tính. Con lấy mấy bó và mấy que rời?
+   → **1 bó và 7 que rời**
 
-e) Con lấy đúng 34 que tính. Con lấy mấy bó và mấy que rời?
-   → **3 bó và 4 que rời**
+e) Con lấy đúng 46 que tính. Con lấy mấy bó và mấy que rời?
+   → **4 bó và 6 que rời**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Có cách nào lấy nhanh hơn là đếm từng que không?
 
@@ -122,14 +125,17 @@ e) Con lấy đúng 34 que tính. Con lấy mấy bó và mấy que rời?
 
 **Đáp án từng việc**
 
-a) Từ phép tính 4 + 3 = 7, con viết ra hai phép trừ.
-   → **7 − 4 = 3 và 7 − 3 = 4**
+a) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
+   → **10 − 9 = 1 và 10 − 1 = 9**
 
-b) Từ phép tính 7 + 3 = 10, con viết ra hai phép trừ.
+b) Từ phép tính 2 + 4 = 6, con viết ra hai phép trừ.
+   → **6 − 2 = 4 và 6 − 4 = 2**
+
+c) Từ phép tính 7 + 3 = 10, con viết ra hai phép trừ.
    → **10 − 7 = 3 và 10 − 3 = 7**
 
-c) Từ phép tính 4 + 1 = 5, con viết ra hai phép trừ.
-   → **5 − 4 = 1 và 5 − 1 = 4**
+d) Từ phép tính 5 + 1 = 6, con viết ra hai phép trừ.
+   → **6 − 5 = 1 và 6 − 1 = 5**
 
 **Hỏi thêm một câu** *(rèn: Rút ra quy luật · Xem chỗ nào chưa ổn)*: Bộ ba số nào cũng viết được bốn phép tính à? Con thử bộ khác xem.
 
@@ -144,31 +150,31 @@ c) Từ phép tính 4 + 1 = 5, con viết ra hai phép trừ.
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Số bí mật**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.
 
 **Đáp án từng việc**
 
-a) 3, 6, 12, …
-   → **24**
+a) Số bí mật đứng liền sau 89 và liền trước 91. Số nào?
+   → **90**
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
-   → **16 que**
+b) 63 và 98: số nào lớn hơn?
+   → **98**
 
-c) 1, 6, 11, 16, …
-   → **21**
+c) Số bí mật đứng liền sau 41 và liền trước 43. Số nào?
+   → **42**
 
-d) 1, 2, 4, …
-   → **8**
+d) 66 và 88: số nào lớn hơn?
+   → **88**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng đơn vị trước?
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
+**Thế nào là con đã hiểu:** Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn hơn 40 vì 9 lớn hơn 0.
 
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
+**Con tắc thì làm gì:** Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Nếu con làm nhanh:** Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói 'lớn hơn' hoặc 'bé hơn'.
 
 
 ---

@@ -44,8 +44,10 @@ Bản dành cho: **người lớn ngồi cùng**
 - Bảng số hoặc thẻ trăm – chục – đơn vị
 - Que tính
 - Đĩa hoặc vòng để chia nhóm
+- Vở ô ly
+- Bút chì để vẽ sơ đồ đoạn thẳng
 - Thước kẻ để vẽ sơ đồ đoạn thẳng
-- Giấy ô li
+- Thẻ số hoặc bộ ô vuông trăm – chục – đơn vị (nếu có)
 
 ---
 
@@ -57,20 +59,20 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Số 510 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **5 trăm, 1 chục, 0 đơn vị**
-
-b) Tính nhẩm: 400 + 100
-   → **500**
-
-c) Số 261 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **2 trăm, 6 chục, 1 đơn vị**
-
-d) Tính nhẩm: 200 + 700
+a) Tính nhẩm: 100 + 800
    → **900**
 
-e) Số 585 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **5 trăm, 8 chục, 5 đơn vị**
+b) Số 959 gồm mấy trăm, mấy chục, mấy đơn vị?
+   → **9 trăm, 5 chục, 9 đơn vị**
+
+c) Số 203 gồm mấy trăm, mấy chục, mấy đơn vị?
+   → **2 trăm, 0 chục, 3 đơn vị**
+
+d) Tính nhẩm: 700 + 200
+   → **900**
+
+e) Số 861 gồm mấy trăm, mấy chục, mấy đơn vị?
+   → **8 trăm, 6 chục, 1 đơn vị**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Vì sao 300 + 200 nhẩm nhanh hơn 347 + 285?
 
@@ -91,20 +93,17 @@ e) Số 585 gồm mấy trăm, mấy chục, mấy đơn vị?
 
 **Đáp án từng việc**
 
-a) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-   → **2 + 2 + 2 = 2 × 3 = 6**
-
-b) Xếp 6 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-   → **5 + 5 + 5 + 5 + 5 + 5 = 5 × 6 = 30**
-
-c) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-   → **5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 5 × 9 = 45**
-
-d) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
    → **5 + 5 + 5 + 5 = 5 × 4 = 20**
 
-e) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-   → **2 + 2 + 2 + 2 = 2 × 4 = 8**
+b) Xếp 7 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+   → **5 + 5 + 5 + 5 + 5 + 5 + 5 = 5 × 7 = 35**
+
+c) Xếp 6 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+   → **2 + 2 + 2 + 2 + 2 + 2 = 2 × 6 = 12**
+
+d) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+   → **2 + 2 + 2 = 2 × 3 = 6**
 
 **Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Phép cộng nào cũng viết thành phép nhân được không? Vì sao?
 
@@ -119,23 +118,60 @@ e) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết 
 
 ## PHẦN C — Luyện tay
 
+**Bài toán nhiều hơn – ít hơn**
+
+> **Cô/mẹ đọc lên:** Đọc đề hai lần. Lần đầu để biết chuyện gì, lần sau để tìm hai số và tìm chữ 'nhiều hơn' hay 'ít hơn'.
+
+**Đáp án từng việc**
+
+a) Bạn Mai có 413 viên bi. Bạn Bi có ít hơn bạn Mai 90 viên bi. Bạn Bi có bao nhiêu viên bi?
+   → **413 − 90 = 323 viên bi**
+
+b) Bạn Bi có 455 cái nhãn vở. Bạn Tèo có ít hơn bạn Bi 20 cái nhãn vở. Bạn Tèo có bao nhiêu cái nhãn vở?
+   → **455 − 20 = 435 cái nhãn vở**
+
+c) Bạn Tí có 642 cái nhãn vở. Bạn Mai có ít hơn bạn Tí 180 cái nhãn vở. Bạn Mai có bao nhiêu cái nhãn vở?
+   → **642 − 180 = 462 cái nhãn vở**
+
+d) Bạn Cốm có 312 cái nhãn vở. Bạn Bi có ít hơn bạn Cốm 90 cái nhãn vở. Bạn Bi có bao nhiêu cái nhãn vở?
+   → **312 − 90 = 222 cái nhãn vở**
+
+e) Bạn Bơ có 488 cái nhãn vở. Bạn Bi có nhiều hơn bạn Bơ 60 cái nhãn vở. Bạn Bi có bao nhiêu cái nhãn vở?
+   → **488 + 60 = 548 cái nhãn vở**
+
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vẽ hai đoạn thẳng cho hai bạn. Đoạn nào dài hơn? Phần dài hơn ấy là số nào trong đề?
+
+**Thế nào là con đã hiểu:** Trẻ vẽ được sơ đồ hai đoạn thẳng trước khi tính. Vẽ đúng thì chọn đúng phép tính; **lỗi phổ biến nhất là thấy chữ 'nhiều hơn' liền cộng**, kể cả khi đề hỏi số bé.
+
+**Con tắc thì làm gì:** Thay số lớn bằng số nhỏ trong phạm vi 20 rồi diễn lại bằng que tính.
+
+**Nếu con làm nhanh:** Đảo đề: cho biết bạn nhiều hơn có bao nhiêu, hỏi bạn còn lại — lúc này 'nhiều hơn' lại phải trừ.
+
+
+---
+
+## PHẦN D — Bài toán có lời văn
+
 **Nhiều hơn, ít hơn một số đơn vị**
 
 > **Cô/mẹ đọc lên:** Con vẽ hai đoạn thẳng: một đoạn cho bạn thứ nhất, một đoạn cho bạn thứ hai. Đoạn nào dài hơn?
 
 **Đáp án từng việc**
 
-a) Bơ có 64 bông hoa. Tèo có ít hơn Bơ 15 bông. Hỏi Tèo có mấy bông?
-   → **49 bông**
+a) Cốm có 51 cái bánh. Bơ có ít hơn Cốm 16 cái. Hỏi Bơ có mấy cái?
+   → **35 cái**
 
-b) Bi có 65 cái kẹo. Tí có nhiều hơn Bi 9 cái. Hỏi Tí có mấy cái?
-   → **74 cái**
+b) Bi có 34 cái kẹo. An có nhiều hơn Bi 17 cái. Hỏi An có mấy cái?
+   → **51 cái**
 
-c) Bơ có 51 con cá. Tèo có nhiều hơn Bơ 18 con. Hỏi Tèo có mấy con?
-   → **69 con**
+c) Bơ có 42 chiếc lá. Nam có ít hơn Bơ 3 chiếc. Hỏi Nam có mấy chiếc?
+   → **39 chiếc**
 
-d) Cốm có 53 chiếc lá. Na có ít hơn Cốm 19 chiếc. Hỏi Na có mấy chiếc?
-   → **34 chiếc**
+d) Bi có 46 cái kẹo. Na có nhiều hơn Bi 3 cái. Hỏi Na có mấy cái?
+   → **49 cái**
+
+e) Cốm có 34 quả bóng. Tèo có ít hơn Cốm 4 quả. Hỏi Tèo có mấy quả?
+   → **30 quả**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Đoán thử)*: Nhìn sơ đồ con vẽ, làm sao biết phải cộng hay phải trừ?
 
@@ -148,67 +184,30 @@ d) Cốm có 53 chiếc lá. Na có ít hơn Cốm 19 chiếc. Hỏi Na có mấ
 
 ---
 
-## PHẦN D — Bài toán có lời văn
-
-**Cộng trừ có nhớ trong phạm vi 100**
-
-> **Cô/mẹ đọc lên:** Nhớ sang hàng nào thì ghi số nhớ nhỏ ngay trên hàng ấy.
-
-**Đáp án từng việc**
-
-a) Đặt tính rồi tính: 89 + 10
-   → **99**
-
-b) Đặt tính rồi tính: 63 − 19
-   → **44**
-
-c) Đặt tính rồi tính: 45 − 15
-   → **30**
-
-d) Đặt tính rồi tính: 70 + 15
-   → **85**
-
-**Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Làm sao biết kết quả của con đúng mà không cần tính lại?
-
-**Thế nào là con đã hiểu:** Trẻ tự thử lại bằng phép tính ngược — lấy tổng trừ đi một số hạng phải ra số hạng kia.
-
-**Con tắc thì làm gì:** Tách thành hai bước: cộng hàng đơn vị trước, ghi nhớ, rồi mới cộng hàng chục.
-
-**Nếu con làm nhanh:** Đưa một bài làm sẵn có lỗi quên nhớ, cho trẻ tìm ra chỗ sai.
-
-
----
-
 ## PHẦN E — Thử thách vui
 
-**Tìm chỗ sai giúp bạn**
+**Số bí mật đến 1 000**
 
-> **Cô/mẹ đọc lên:** Con làm giám khảo nhé. Xem bạn sai ở bước nào rồi sửa lại.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số có ba chữ số. Con đoán xem là số nào.
 
 **Đáp án từng việc**
 
-a) Một bạn tính 64 + 48 = 102. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 112**
+a) 877 và 513: số nào bé hơn?
+   → **513**
 
-b) Một bạn tính 55 + 66 = 111. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 121**
+b) Số bí mật gồm 7 trăm, 2 chục và 8 đơn vị. Số nào?
+   → **728**
 
-c) Một bạn tính 61 + 85 = 155. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 146**
+c) Số bí mật gồm 2 trăm, 0 chục và 7 đơn vị. Số nào?
+   → **207**
 
-d) Một bạn tính 28 + 45 = 63. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 73**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: So hai số ba chữ số thì con nhìn hàng nào trước? Vì sao không nhìn hàng đơn vị trước?
 
-e) Một bạn tính 54 + 64 = 127. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 118**
+**Thế nào là con đã hiểu:** Trẻ so từ **hàng trăm trở xuống** và chỉ nhìn hàng sau khi hàng trước bằng nhau. So sai gần như luôn bắt nguồn từ việc so nhầm thứ tự hàng.
 
-**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Làm sao để lần sau bạn ấy không sai như thế nữa?
+**Con tắc thì làm gì:** Viết hai số thẳng cột trăm – chục – đơn vị cho trẻ nhìn.
 
-**Thế nào là con đã hiểu:** Trẻ chỉ ra **bước nào** sai chứ không chỉ nói kết quả sai. Tìm được lỗi của người khác là bước trước khi tự tìm được lỗi của mình.
-
-**Con tắc thì làm gì:** Tính lại cùng trẻ từng hàng, so với bài của bạn ở từng bước.
-
-**Nếu con làm nhanh:** Cho một bài đúng để trẻ khỏi quen là bài nào cũng có lỗi.
+**Nếu con làm nhanh:** Đố số lớn nhất và bé nhất viết được từ ba chữ số 2, 7, 5.
 
 
 ---

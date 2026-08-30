@@ -28,64 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 20 … 5
+a) 1 thêm 3 là mấy?
 
-b) Điền dấu >, < hoặc = : 2 … 18
+b) 9 bớt 2 còn mấy?
 
-c) Điền dấu >, < hoặc = : 16 … 2
+c) Con giơ 5 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 9?
 
-d) Điền dấu >, < hoặc = : 7 … 2
+d) 6 bớt 1 còn mấy?
 
-e) Điền dấu >, < hoặc = : 13 … 4
-
-f) Điền dấu >, < hoặc = : 18 … 1
+e) 2 thêm 7 là mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Tèo có 4 bông hoa, mẹ cho thêm 5 bông. Tèo có tất cả mấy bông?
+a) Bi có 10 quả cam, cho bạn 8 quả. Bi còn lại mấy quả?
 
-b) Bo có 7 bông hoa, cho bạn 5 bông. Bo còn lại mấy bông?
+b) Mai có 3 quyển vở, mẹ cho thêm 2 quyển. Mai có tất cả mấy quyển?
 
-c) Mai có 6 chiếc lá, cho bạn 4 chiếc. Mai còn lại mấy chiếc?
+c) Bơ có 5 chiếc lá, mẹ cho thêm 1 chiếc. Bơ có tất cả mấy chiếc?
 
-d) Tí có 1 quả bóng, mẹ cho thêm 1 quả. Tí có tất cả mấy quả?
-
-e) Bơ có 5 bông hoa, mẹ cho thêm 5 bông. Bơ có tất cả mấy bông?
+d) Nam có 6 quả cam, cho bạn 3 quả. Nam còn lại mấy quả?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) 5 + … = 7
+a) … + 3 = 9
 
-b) 3 + … = 8
+b) … + 1 = 2
 
-c) 8 + … = 9
+c) … + 5 = 8
 
-d) … + 1 = 10
+d) … + 1 = 6
 
-e) 4 + … = 7
-
-f) … + 7 = 10
+e) 3 + … = 7
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 15 + 7 = 22.
+a) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 13 + 3 = 16.
+b) Mẹ nướng 10 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 10. Ăn mất 5 cái thì còn mấy cái?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 6 + 4 = 10.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 2 = 9.
+c) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
 
 
 ---
@@ -94,7 +86,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 11 − 2 = 9.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Tìm số còn thiếu
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

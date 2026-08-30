@@ -42,55 +42,58 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính xếp thành nhóm bằng nhau
+- Bảng giấy kẻ sẵn hai cột để kiểm đếm
+- Bút dạ
 - Giấy kẻ ô
 - Bút màu
+- Bảng kiểm đếm kẻ sẵn
+- Bút màu để tô cột cao nhất
 - Bảng số liệu in sẵn
-- Giấy kẻ ô để vẽ biểu đồ tranh
-- Một hộp bi có bi hai màu để thử thật
+- Giấy kẻ sẵn biểu đồ tranh
+- Nhãn dán hoặc bút màu
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Bảng nhân, bảng chia 2 và 5**
+**Khảo sát chớp nhoáng**
 
-> **Cô/mẹ đọc lên:** Con đọc to bảng nhân một lượt trước khi làm.
+> **Cô/mẹ đọc lên:** Mình hỏi nhanh cả lớp rồi đếm tay giơ lên. Đó chính là thu thập số liệu đấy.
 
 **Đáp án từng việc**
 
-a) 5 × 7 = …
-   → **35**
+a) Bạn nào đi học bằng xe máy thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'cách đi học' của bảng kiểm đếm**
 
-b) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5
-   → **5 × 6 = 30**
+b) Bạn nào thích màu đỏ thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'màu' của bảng kiểm đếm**
 
-c) 4 : 2 = …
-   → **2**
+c) Tháng sau lớp mình được nghỉ một ngày — chắc chắn, có thể hay không thể?
+   → **có thể**
 
-d) 2 × 1 = …
-   → **2**
+d) Con cá biết trèo cây — chắc chắn, có thể hay không thể?
+   → **không thể**
 
-**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Con biết 2 × 6 rồi. Vậy 6 × 2 bằng mấy? Có phải lúc nào cũng thế không?
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Đếm xong con biết thêm điều gì mà lúc chưa đếm con chưa biết?
 
-**Thế nào là con đã hiểu:** Trẻ hiểu phép nhân là cộng các số hạng bằng nhau, và dùng được phép nhân đã thuộc để suy ra phép chia tương ứng.
+**Thế nào là con đã hiểu:** Trẻ ghi bằng gạch năm một (⁄⁄⁄⁄\) thay vì viết số ước chừng. Kiểm đếm có hệ thống là điều đầu tiên của mạch thống kê, trước cả việc vẽ biểu đồ.
 
-**Con tắc thì làm gì:** Xếp que tính thành từng nhóm rồi đếm — thấy được mới nhớ được.
+**Con tắc thì làm gì:** Đếm chậm, chỉ tay vào từng bạn, mỗi bạn một gạch.
 
-**Nếu con làm nhanh:** Hỏi 2 × 11, một phép ngoài bảng, xem trẻ có tự cộng thêm 2 không.
+**Nếu con làm nhanh:** Hỏi thêm một câu mà trẻ đoán trước kết quả, rồi đếm để kiểm.
 
 
 ---
 
 ## PHẦN B — Học cái mới
 
-**Kiểm đếm về môn học yêu thích**
+**Kiểm đếm về phương tiện đi học**
 
 > **Cô/mẹ đọc lên:** Con đi hỏi từng bạn rồi ghi ngay vào bảng, đừng để nhớ trong đầu.
 
 **Đáp án từng việc**
 
-a) Con đi hỏi và kiểm đếm về môn học yêu thích. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về phương tiện đi học. Ghi vào bảng.
    → **trẻ tự thu thập — người lớn kiểm bảng có đủ cột và đủ ô không**
 
 b) Loại nào nhiều nhất trong bảng của con?
@@ -115,23 +118,60 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 ## PHẦN C — Luyện tay
 
+**Đọc bảng số liệu và đoán khả năng**
+
+> **Cô/mẹ đọc lên:** Bảng này do chính lớp mình đếm ra. Con đọc bảng rồi trả lời giúp cô.
+
+**Đáp án từng việc**
+
+a) Lớp 2A khảo sát cách đi học. Kết quả: xe máy: 14 bạn · xe buýt: 10 bạn · xe đạp: 9 bạn. Cách nào nhiều bạn chọn nhất?
+   → **xe máy**
+
+b) Cách nào ít bạn chọn nhất?
+   → **xe đạp**
+
+c) Xe máy nhiều hơn xe đạp bao nhiêu bạn?
+   → **14 − 9 = 5 bạn**
+
+d) Lớp khảo sát tất cả bao nhiêu bạn?
+   → **14 + 10 + 9 = 33 bạn**
+
+e) Rút một bạn bất kỳ trong lớp, bạn ấy đi học bằng xe máy — chắc chắn, có thể hay không thể?
+   → **có thể — vì có bạn đi bằng cách ấy, nhưng không phải bạn nào cũng thế**
+
+f) Rút một bạn bất kỳ, bạn ấy đi học bằng máy bay — chắc chắn, có thể hay không thể?
+   → **không thể — không bạn nào trong bảng đi bằng cách ấy**
+
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Vì sao câu này là 'có thể' chứ không phải 'chắc chắn'?
+
+**Thế nào là con đã hiểu:** Trẻ phân biệt được **chắc chắn** với **có thể**: chắc chắn là không còn khả năng nào khác, còn có thể là vẫn còn khả năng khác. Trẻ hay gộp hai cái này làm một.
+
+**Con tắc thì làm gì:** Diễn lại bằng rổ đồ vật thật: bốc một vật ra khỏi rổ rồi hỏi lại.
+
+**Nếu con làm nhanh:** Thêm một cách đi học không bạn nào chọn, rồi hỏi lại — cột 0 bạn vẫn phải có trong bảng.
+
+
+---
+
+## PHẦN D — Bài toán có lời văn
+
 **Đọc bảng số liệu**
 
 > **Cô/mẹ đọc lên:** Mỗi câu hỏi một điều khác nhau. Con đọc kỹ câu hỏi trước khi nhìn vào bảng.
 
 **Đáp án từng việc**
 
-a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 11, thứ Ba: 4, thứ Tư: 9, thứ Năm: 9, thứ Sáu: 3. Ngày nào đọc nhiều nhất?
+a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 15, thứ Ba: 14, thứ Tư: 5, thứ Năm: 15, thứ Sáu: 13. Ngày nào đọc nhiều nhất?
    → **thứ Hai**
 
 b) Cả tuần đọc bao nhiêu quyển?
-   → **36**
+   → **62**
 
 c) Thứ Hai và thứ Ba đọc tất cả mấy quyển?
-   → **15**
+   → **29**
 
 d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
-   → **8**
+   → **10**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Câu nào con phải cộng nhiều số? Có cách cộng nào nhanh hơn không?
 
@@ -144,70 +184,37 @@ d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
 
 ---
 
-## PHẦN D — Bài toán có lời văn
-
-**Bảng kiểm đếm và biểu đồ tranh**
-
-> **Cô/mẹ đọc lên:** Con đọc kỹ bảng trước khi trả lời. Mỗi câu hỏi hỏi một điều khác nhau.
-
-**Đáp án từng việc**
-
-a) Bảng kiểm đếm: quả xoài: 4 · quả chuối: 6 · quả cam: 2 · quả lê: 8. Loại nào nhiều nhất?
-   → **quả lê**
-
-b) Loại nào ít nhất?
-   → **quả cam**
-
-c) Có tất cả bao nhiêu quả?
-   → **20**
-
-d) Quả lê nhiều hơn quả cam mấy quả?
-   → **6**
-
-e) Nếu mỗi hình vẽ trong biểu đồ tranh thay cho 1 quả thì hàng quả lê vẽ mấy hình?
-   → **8**
-
-**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Nhìn bảng này con thấy điều gì đáng chú ý? Con kể cho cô nghe.
-
-**Thế nào là con đã hiểu:** Trẻ trả lời đúng câu hỏi được hỏi, không đọc bừa một con số trong bảng. Đây là lỗi mất điểm phổ biến nhất của cả mạch Thống kê ở tiểu học.
-
-**Con tắc thì làm gì:** Che bớt các cột chưa cần, chỉ để lại cột đang hỏi.
-
-**Nếu con làm nhanh:** Cho trẻ tự đi kiểm đếm một thứ có thật trong nhà rồi vẽ biểu đồ.
-
-
----
-
 ## PHẦN E — Thử thách vui
 
-**Chắc chắn, có thể, không thể**
+**Đọc biểu đồ tranh**
 
-> **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
+> **Cô/mẹ đọc lên:** Nhìn biểu đồ rồi trả lời giúp cô. Mỗi hình một quả nhé.
 
 **Đáp án từng việc**
 
-a) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-   → **không thể**
+a) - xoài: 🍎🍎🍎🍎  (4 quả)
+- táo: 🍎🍎🍎  (3 quả)
+- cam: 🍎🍎🍎  (3 quả)
 
-b) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+Loại quả nào nhiều nhất?
+   → **xoài**
 
-c) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+b) Loại quả nào ít nhất?
+   → **táo**
 
-d) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
-   → **không thể**
+c) Xoài nhiều hơn táo mấy quả?
+   → **1 quả**
 
-e) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+d) Tất cả có mấy quả?
+   → **10 quả**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Nhìn biểu đồ, con biết ngay loại nào nhiều nhất mà không cần đếm. Vì sao?
 
-**Thế nào là con đã hiểu:** Trẻ phân biệt được “không thể” với “khó xảy ra”. Đây là chỗ nhầm nhiều nhất, và cũng là gốc của khái niệm xác suất sau này.
+**Thế nào là con đã hiểu:** Trẻ so hai hàng bằng cách nhìn hàng nào **dài hơn**, chỉ đếm khi cần biết hơn kém bao nhiêu. Đó chính là lý do người ta vẽ biểu đồ thay vì viết bảng số.
 
-**Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
+**Con tắc thì làm gì:** Cho trẻ chỉ tay theo từng hàng và đếm to.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
+**Nếu con làm nhanh:** Che số đi, chỉ để hình — trẻ vẫn trả lời được câu nào?
 
 
 ---

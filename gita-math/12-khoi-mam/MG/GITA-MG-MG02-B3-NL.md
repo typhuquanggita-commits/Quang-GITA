@@ -46,7 +46,7 @@ Bản dành cho: **người lớn ngồi cùng**
 - 10 đồ vật nhỏ giống nhau: hột hạt, cúc áo, que tính hoặc kẹo
 - Hai cái đĩa
 - 10 đồ vật nhỏ giống nhau
-- Hột hạt hoặc khối gỗ nhiều màu
+- Không cần gì — dùng ngón tay của trẻ
 
 ---
 
@@ -61,14 +61,11 @@ Bản dành cho: **người lớn ngồi cùng**
 a) Con giậm chân đúng 4 cái nhé. Đếm to lên.
    → **4**
 
-b) Con vỗ tay đúng 3 cái nhé. Đếm to lên.
+b) Con vỗ tay đúng 9 cái nhé. Đếm to lên.
+   → **9**
+
+c) Con gật đầu đúng 3 cái nhé. Đếm to lên.
    → **3**
-
-c) Con nhảy đúng 2 cái nhé. Đếm to lên.
-   → **2**
-
-d) Con bước lên phía trước đúng 8 bước nhé. Đếm to lên.
-   → **8**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
 
@@ -89,17 +86,17 @@ d) Con bước lên phía trước đúng 8 bước nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Cô đặt ra 8 cái kẹo. Con đếm xem có mấy cái?
-   → **8**
+a) Cô đặt ra 4 viên bi. Con đếm xem có mấy viên?
+   → **4**
 
-b) Cô đặt ra 6 con cá. Con đếm xem có mấy con?
-   → **6**
+b) Cô đặt ra 7 chiếc lá. Con đếm xem có mấy chiếc?
+   → **7**
 
-c) Cô đặt ra 10 quả bóng. Con đếm xem có mấy quả?
-   → **10**
+c) Cô đặt ra 9 bông hoa. Con đếm xem có mấy bông?
+   → **9**
 
-d) Cô đặt ra 8 bông hoa. Con đếm xem có mấy bông?
-   → **8**
+d) Cô đặt ra 7 viên bi. Con đếm xem có mấy viên?
+   → **7**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Vì sao con biết là {} cái? — để trẻ nói ra cách mình đếm.
 
@@ -120,14 +117,14 @@ d) Cô đặt ra 8 bông hoa. Con đếm xem có mấy bông?
 
 **Đáp án từng việc**
 
-a) Đĩa này có 7 viên bi, đĩa kia có 3 viên. Con làm sao cho hai đĩa bằng nhau?
-   → **thêm 4 viên vào đĩa ít, hoặc bớt 4 viên ở đĩa nhiều**
+a) Đĩa này có 7 chiếc lá, đĩa kia có 8 chiếc. Con làm sao cho hai đĩa bằng nhau?
+   → **thêm 1 chiếc vào đĩa ít, hoặc bớt 1 chiếc ở đĩa nhiều**
 
-b) Đĩa này có 5 cái bánh, đĩa kia có 6 cái. Con làm sao cho hai đĩa bằng nhau?
-   → **thêm 1 cái vào đĩa ít, hoặc bớt 1 cái ở đĩa nhiều**
+b) Đĩa này có 4 quả bóng, đĩa kia có 7 quả. Con làm sao cho hai đĩa bằng nhau?
+   → **thêm 3 quả vào đĩa ít, hoặc bớt 3 quả ở đĩa nhiều**
 
-c) Đĩa này có 3 quả bóng, đĩa kia có 7 quả. Con làm sao cho hai đĩa bằng nhau?
-   → **thêm 4 quả vào đĩa ít, hoặc bớt 4 quả ở đĩa nhiều**
+c) Đĩa này có 5 con vịt, đĩa kia có 7 con. Con làm sao cho hai đĩa bằng nhau?
+   → **thêm 2 con vào đĩa ít, hoặc bớt 2 con ở đĩa nhiều**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Con vừa thêm vào. Còn cách nào khác không? Cách nào nhanh hơn?
 
@@ -142,31 +139,31 @@ c) Đĩa này có 3 quả bóng, đĩa kia có 7 quả. Con làm sao cho hai đ�
 
 ## Đố vui cuối buổi
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-> **Cô/mẹ đọc lên:** Cô xếp một dãy. Con nhìn kỹ rồi đoán xem cái tiếp theo là gì.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi thôi, dễ lắm. Con trả lời miệng, không phải viết.
 
 **Đáp án từng việc**
 
-a) đỏ – xanh – đỏ – xanh – … Con đoán xem tiếp theo là màu gì?
-   → **đỏ**
+a) Số nào đứng ngay trước số 5?
+   → **4**
 
-b) trắng – vàng – xanh – trắng – vàng – xanh – trắng – vàng – xanh – … Con đoán xem tiếp theo là màu gì?
-   → **trắng**
+b) Đếm tiếp cho cô: 1 rồi đến số mấy?
+   → **2**
 
-c) trắng – vàng – trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
-   → **trắng**
+c) Dãy số bị mất một số: 6 , … , 8 , 9 . Mất số nào?
+   → **7**
 
-d) xanh – trắng – đỏ – xanh – trắng – đỏ – xanh – trắng – đỏ – … Con đoán xem tiếp theo là màu gì?
-   → **xanh**
+d) Con giơ 5 ngón ở tay này, 5 ngón ở tay kia. Tất cả mấy ngón?
+   → **10**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Vì sao con đoán là màu đó? Con nói quy luật thành một câu xem.
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Đoán thử)*: Con đố lại cô một câu về số đi.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời — “cứ đỏ rồi xanh rồi lại đỏ” — chứ không chỉ chỉ tay vào màu đúng.
+**Thế nào là con đã hiểu:** Trẻ nói ngay số liền sau mà không đếm lại từ 1. Đếm tiếp từ giữa dãy khó hơn đếm từ đầu rất nhiều.
 
-**Con tắc thì làm gì:** Đọc to cả dãy theo nhịp, vỗ tay theo. Nhịp điệu giúp trẻ nghe ra quy luật trước khi nhìn ra.
+**Con tắc thì làm gì:** Cho trẻ đếm từ 1 lên tới chỗ ấy. Đừng chê là chậm — đếm lại từ đầu vẫn là cách đúng.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một quy luật rồi đố lại người lớn — trẻ thích phần này nhất và nó khó hơn hẳn phần đoán.
+**Nếu con làm nhanh:** Hỏi số liền trước — phần này khó hơn hẳn, chỉ hỏi khi trẻ đã chắc số liền sau.
 
 
 ---

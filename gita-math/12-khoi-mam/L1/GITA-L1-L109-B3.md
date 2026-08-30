@@ -28,56 +28,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Kể một bài toán bằng miệng**
 
-a) Điền dấu >, < hoặc = : 36 … 17
+a) Cô để 5 con cá, bạn Tèo đưa thêm 1 con. Con kể lại thành một câu chuyện có số.
 
-b) Điền dấu >, < hoặc = : 70 … 31
+b) Cô để 5 quyển vở ra bàn rồi cất đi 3 quyển. Con kể lại thành một câu chuyện có số.
 
-c) Điền dấu >, < hoặc = : 48 … 90
-
-d) Điền dấu >, < hoặc = : 59 … 20
-
-e) Điền dấu >, < hoặc = : 81 … 13
+c) Cô để 5 viên bi, bạn Bi đưa thêm 1 viên. Con kể lại thành một câu chuyện có số.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 51 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 24 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 45 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 33 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 73 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 40 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 50 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 30 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) 20, 21, 22, 23, … Số tiếp theo là số nào?
+a) 6, 8, 10, 12, … Số tiếp theo là số nào?
 
-b) Mai có 17 bông hoa. An có 18 bông. Cả hai bạn có tất cả mấy bông?
+b) Na có 20 cái kẹo. Tèo có 15 cái. Cả hai bạn có tất cả mấy cái?
 
-c) Bơ có 17 quả bóng. Mai có 8 quả. Cả hai bạn có tất cả mấy quả?
+c) Cốm có 11 quả cam. Na có 11 quả. Cả hai bạn có tất cả mấy quả?
 
-d) 13, 23, 33, 43, … Số tiếp theo là số nào?
+d) 3, 4, 5, 6, … Số tiếp theo là số nào?
 
-e) 12, 14, 16, 18, … Số tiếp theo là số nào?
+e) 1, 3, 5, 7, … Số tiếp theo là số nào?
+
+f) Na có 6 cái bánh. An có 17 cái. Cả hai bạn có tất cả mấy cái?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tự đặt một bài toán**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 5 + 3 = 8.
+a) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 8 = 1.
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 15 + 4 = 19.
+b) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 4 = 6.
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 7 = 21.
+c) Con hãy nghĩ ra một bài toán mà phép tính là 7 − 6 = 1.
 
 
 ---
@@ -86,7 +84,7 @@ c) Con hãy nghĩ ra một bài toán mà phép tính là 14 + 7 = 21.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Kể một bài toán bằng miệng
 - ☐ Lấy đúng số que tính
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tự đặt một bài toán

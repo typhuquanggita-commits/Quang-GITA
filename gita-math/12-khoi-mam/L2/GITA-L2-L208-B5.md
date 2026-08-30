@@ -30,65 +30,69 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Cấu tạo số và tính nhẩm số tròn trăm**
 
-a) Tính nhẩm: 700 + 200
+a) Số 516 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-b) Số 394 gồm mấy trăm, mấy chục, mấy đơn vị?
+b) Tính nhẩm: 500 + 400
 
-c) Tính nhẩm: 100 + 600
+c) Số 436 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-d) Số 904 gồm mấy trăm, mấy chục, mấy đơn vị?
-
-e) Số 127 gồm mấy trăm, mấy chục, mấy đơn vị?
+d) Tính nhẩm: 700 + 200
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 2 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-b) Xếp 5 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+b) Xếp 6 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 5 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-d) Xếp 3 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+d) Xếp 9 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Cộng trừ có nhớ trong phạm vi 100**
 
-a) Đặt tính rồi tính: 51 + 17
+a) Đặt tính rồi tính: 80 − 51
 
-b) Đặt tính rồi tính: 24 − 12
+b) Đặt tính rồi tính: 77 + 22
 
-c) Đặt tính rồi tính: 64 − 45
+c) Đặt tính rồi tính: 25 − 10
 
-d) Đặt tính rồi tính: 10 + 79
+d) Đặt tính rồi tính: 37 + 31
+
+e) Đặt tính rồi tính: 60 − 14
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bài toán nhân, chia**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Có 35 con cá chia đều vào 5 hộp. Mỗi hộp có mấy con?
+a) Bạn Bi có 495 con tem. Bạn Cốm có nhiều hơn bạn Bi 20 con tem. Bạn Cốm có bao nhiêu con tem?
 
-b) Mỗi hộp có 5 quả cam. Hỏi 9 hộp có mấy quả?
+b) Bạn Bơ có 309 con tem. Bạn An có ít hơn bạn Bơ 120 con tem. Bạn An có bao nhiêu con tem?
 
-c) Mỗi hộp có 5 quả bóng. Hỏi 2 hộp có mấy quả?
+c) Bạn Tí có 513 cái nhãn vở. Bạn Bo có nhiều hơn bạn Tí 190 cái nhãn vở. Bạn Bo có bao nhiêu cái nhãn vở?
 
-d) Có 50 con cá chia đều vào 5 hộp. Mỗi hộp có mấy con?
+d) Bạn Mai có 283 viên bi. Bạn Bo có nhiều hơn bạn Mai 190 viên bi. Bạn Bo có bao nhiêu viên bi?
+
+e) Bạn Na có 261 con tem. Bạn Bo có ít hơn bạn Na 160 con tem. Bạn Bo có bao nhiêu con tem?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Số bí mật đến 1 000**
 
-a) Một bạn tính 76 + 88 = 154. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Số tròn trăm gần 231 nhất là số nào?
 
-b) Một bạn tính 67 + 23 = 80. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Số bí mật gồm 9 trăm, 1 chục và 4 đơn vị. Số nào?
 
-c) Một bạn tính 68 + 43 = 101. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Số bí mật gồm 7 trăm, 6 chục và 9 đơn vị. Số nào?
+
+d) Số tròn trăm gần 226 nhất là số nào?
 
 
 ---
@@ -100,5 +104,5 @@ c) Một bạn tính 68 + 43 = 101. Bạn ấy sai ở đâu? Kết quả đúng
 - ☐ Cấu tạo số và tính nhẩm số tròn trăm
 - ☐ Từ phép cộng sang phép nhân
 - ☐ Cộng trừ có nhớ trong phạm vi 100
-- ☐ Bài toán nhân, chia
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Bài toán nhiều hơn – ít hơn
+- ☐ Số bí mật đến 1 000

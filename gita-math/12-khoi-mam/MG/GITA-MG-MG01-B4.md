@@ -32,13 +32,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Nhảy và đếm**
 
-a) Con giậm chân đúng 7 cái nhé. Đếm to lên.
+a) Con giậm chân đúng 5 cái nhé. Đếm to lên.
 
-b) Con vỗ tay đúng 9 cái nhé. Đếm to lên.
+b) Con bước lên phía trước đúng 9 bước nhé. Đếm to lên.
 
-c) Con gật đầu đúng 3 cái nhé. Đếm to lên.
+c) Con nhảy đúng 9 cái nhé. Đếm to lên.
 
-d) Con nhảy đúng 5 cái nhé. Đếm to lên.
+d) Con gật đầu đúng 7 cái nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,13 +47,13 @@ d) Con nhảy đúng 5 cái nhé. Đếm to lên.
 
 **Đếm rồi nói số cuối cùng**
 
-a) Cô đặt ra 7 con vịt. Con đếm xem có mấy con?
+a) Cô đặt ra 4 con vịt. Con đếm xem có mấy con?
 
-b) Cô đặt ra 3 con vịt. Con đếm xem có mấy con?
+b) Cô đặt ra 7 bông hoa. Con đếm xem có mấy bông?
 
-c) Cô đặt ra 5 quyển vở. Con đếm xem có mấy quyển?
+c) Cô đặt ra 4 chiếc lá. Con đếm xem có mấy chiếc?
 
-d) Cô đặt ra 3 bông hoa. Con đếm xem có mấy bông?
+d) Cô đặt ra 9 chiếc lá. Con đếm xem có mấy chiếc?
 
 
 ## Tự làm thử · 7 phút
@@ -62,24 +62,28 @@ d) Cô đặt ra 3 bông hoa. Con đếm xem có mấy bông?
 
 **Khoanh, nối, tô**
 
-a) Con khoanh vào vật ở giữa hàng.
+a) Con nối mỗi con vật với cái chuồng của nó.
 
-b) Con tô màu hình tròn.
+b) Con khoanh tròn nhóm có nhiều hơn.
 
-c) Con nối mỗi con vật với cái chuồng của nó.
+c) Con tô màu hình tròn.
+
+d) Con khoanh vào vật ở giữa hàng.
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) xanh – đỏ – xanh – đỏ – … Con đoán xem tiếp theo là màu gì?
+a) Con giơ 2 ngón ở tay này, 2 ngón ở tay kia. Tất cả mấy ngón?
 
-b) đỏ – xanh – đỏ – xanh – đỏ – xanh – … Con đoán xem tiếp theo là màu gì?
+b) Dãy số bị mất một số: 4 , … , 6 , 7 . Mất số nào?
 
-c) vàng – đỏ – xanh – vàng – đỏ – xanh – vàng – đỏ – xanh – … Con đoán xem tiếp theo là màu gì?
+c) Số nào đứng ngay trước số 2?
+
+d) Đếm tiếp cho cô: 6 rồi đến số mấy?
 
 
 ---
@@ -93,4 +97,4 @@ c) vàng – đỏ – xanh – vàng – đỏ – xanh – vàng – đỏ –
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Đếm rồi nói số cuối cùng | ☐ | ☐ | ☐ |
 | Khoanh, nối, tô | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

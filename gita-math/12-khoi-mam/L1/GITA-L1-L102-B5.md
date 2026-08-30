@@ -28,62 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 93 … 100
+a) Con giơ 5 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 8?
 
-b) Điền dấu >, < hoặc = : 78 … 25
+b) 9 bớt 4 còn mấy?
 
-c) Điền dấu >, < hoặc = : 69 … 77
+c) 5 thêm 4 là mấy?
 
-d) Điền dấu >, < hoặc = : 64 … 87
+d) 2 thêm 2 là mấy?
 
-e) Điền dấu >, < hoặc = : 25 … 49
+e) 7 bớt 2 còn mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Bi có 3 con vịt, mẹ cho thêm 2 con. Bi có tất cả mấy con?
+a) Tèo có 3 quyển vở, mẹ cho thêm 2 quyển. Tèo có tất cả mấy quyển?
 
-b) Tèo có 10 cái kẹo, cho bạn 6 cái. Tèo còn lại mấy cái?
+b) Nam có 6 quyển vở, cho bạn 3 quyển. Nam còn lại mấy quyển?
 
-c) Na có 8 viên bi, cho bạn 2 viên. Na còn lại mấy viên?
+c) Nam có 9 bông hoa, cho bạn 2 bông. Nam còn lại mấy bông?
 
-d) Na có 3 quả cam, mẹ cho thêm 5 quả. Na có tất cả mấy quả?
+d) Nam có 4 quả cam, mẹ cho thêm 3 quả. Nam có tất cả mấy quả?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tính nhanh**
 
-a) 18 + 2 = …
+a) 16 + 2 = …
 
-b) 1 + 3 = …
+b) 9 + 1 = …
 
-c) 10 + 6 = …
+c) 7 − 5 = …
 
-d) 10 + 4 = …
+d) 6 − 4 = …
 
-e) 9 − 7 = …
-
-f) 1 + 4 = …
-
-g) 14 + 6 = …
+e) 1 + 5 = …
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 2 = 7.
+a) 5 con gà có mấy cái chân?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 8 − 7 = 1.
+b) 2 con vịt có mấy cái chân?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 8 + 4 = 12.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 3 = 3.
+c) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
 
 ---
@@ -92,7 +86,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 3 = 3.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Tính nhanh
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

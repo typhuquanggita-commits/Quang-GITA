@@ -42,55 +42,57 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Bảng số hoặc thẻ trăm – chục – đơn vị
+- Bảng giấy kẻ sẵn hai cột để kiểm đếm
+- Bút dạ
 - Giấy kẻ ô
 - Bút màu
 - Bảng số liệu in sẵn
 - Giấy kẻ ô để vẽ biểu đồ tranh
-- Một hộp bi có bi hai màu để thử thật
+- Giấy kẻ sẵn biểu đồ tranh
+- Nhãn dán hoặc bút màu
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Khảo sát chớp nhoáng**
 
-> **Cô/mẹ đọc lên:** Số tròn trăm thì nhẩm như đếm trăm: 3 trăm thêm 2 trăm là 5 trăm.
+> **Cô/mẹ đọc lên:** Mình hỏi nhanh cả lớp rồi đếm tay giơ lên. Đó chính là thu thập số liệu đấy.
 
 **Đáp án từng việc**
 
-a) Số 875 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **8 trăm, 7 chục, 5 đơn vị**
+a) Bạn nào thích ăn phở hơn ăn bún thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'món ăn' của bảng kiểm đếm**
 
-b) Tính nhẩm: 300 + 100
-   → **400**
+b) Bạn nào có em thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'gia đình' của bảng kiểm đếm**
 
-c) Tính nhẩm: 800 + 100
-   → **900**
+c) Tháng sau lớp mình được nghỉ một ngày — chắc chắn, có thể hay không thể?
+   → **có thể**
 
-d) Số 164 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **1 trăm, 6 chục, 4 đơn vị**
+d) Ngày mai trời mưa — chắc chắn, có thể hay không thể?
+   → **có thể**
 
-**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Vì sao 300 + 200 nhẩm nhanh hơn 347 + 285?
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Đếm xong con biết thêm điều gì mà lúc chưa đếm con chưa biết?
 
-**Thế nào là con đã hiểu:** Trẻ nhẩm số tròn trăm mà không đặt tính. Biết khi nào cần đặt tính và khi nào không là dấu hiệu đã chọn cách làm.
+**Thế nào là con đã hiểu:** Trẻ ghi bằng gạch năm một (⁄⁄⁄⁄\) thay vì viết số ước chừng. Kiểm đếm có hệ thống là điều đầu tiên của mạch thống kê, trước cả việc vẽ biểu đồ.
 
-**Con tắc thì làm gì:** Che hai chữ số cuối để trẻ chỉ nhìn hàng trăm.
+**Con tắc thì làm gì:** Đếm chậm, chỉ tay vào từng bạn, mỗi bạn một gạch.
 
-**Nếu con làm nhanh:** Nhẩm số tròn chục trong phạm vi 1 000.
+**Nếu con làm nhanh:** Hỏi thêm một câu mà trẻ đoán trước kết quả, rồi đếm để kiểm.
 
 
 ---
 
 ## PHẦN B — Học cái mới
 
-**Kiểm đếm về con vật nuôi ở nhà**
+**Kiểm đếm về màu áo các bạn trong lớp**
 
 > **Cô/mẹ đọc lên:** Con đi hỏi từng bạn rồi ghi ngay vào bảng, đừng để nhớ trong đầu.
 
 **Đáp án từng việc**
 
-a) Con đi hỏi và kiểm đếm về con vật nuôi ở nhà. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về màu áo các bạn trong lớp. Ghi vào bảng.
    → **trẻ tự thu thập — người lớn kiểm bảng có đủ cột và đủ ô không**
 
 b) Loại nào nhiều nhất trong bảng của con?
@@ -121,17 +123,17 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 **Đáp án từng việc**
 
-a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 6, thứ Ba: 5, thứ Tư: 13, thứ Năm: 8, thứ Sáu: 15. Ngày nào đọc nhiều nhất?
-   → **thứ Sáu**
+a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 6, thứ Ba: 8, thứ Tư: 8, thứ Năm: 13, thứ Sáu: 5. Ngày nào đọc nhiều nhất?
+   → **thứ Năm**
 
 b) Cả tuần đọc bao nhiêu quyển?
-   → **47**
+   → **40**
 
 c) Thứ Hai và thứ Ba đọc tất cả mấy quyển?
-   → **11**
+   → **14**
 
 d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
-   → **10**
+   → **8**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Câu nào con phải cộng nhiều số? Có cách cộng nào nhanh hơn không?
 
@@ -152,17 +154,20 @@ d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
 
 **Đáp án từng việc**
 
-a) Bảng kiểm đếm: quả chuối: 9 · quả táo: 2 · quả lê: 2. Loại nào nhiều nhất?
+a) Bảng kiểm đếm: quả táo: 5 · quả cam: 3 · quả chuối: 6 · quả xoài: 3. Loại nào nhiều nhất?
    → **quả chuối**
 
 b) Loại nào ít nhất?
-   → **quả táo**
+   → **quả cam**
 
 c) Có tất cả bao nhiêu quả?
-   → **13**
+   → **17**
 
-d) Quả chuối nhiều hơn quả táo mấy quả?
-   → **7**
+d) Quả chuối nhiều hơn quả cam mấy quả?
+   → **3**
+
+e) Nếu mỗi hình vẽ trong biểu đồ tranh thay cho 1 quả thì hàng quả chuối vẽ mấy hình?
+   → **6**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Nhìn bảng này con thấy điều gì đáng chú ý? Con kể cho cô nghe.
 
@@ -177,31 +182,35 @@ d) Quả chuối nhiều hơn quả táo mấy quả?
 
 ## PHẦN E — Thử thách vui
 
-**Chắc chắn, có thể, không thể**
+**Đọc biểu đồ tranh**
 
-> **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
+> **Cô/mẹ đọc lên:** Nhìn biểu đồ rồi trả lời giúp cô. Mỗi hình một quả nhé.
 
 **Đáp án từng việc**
 
-a) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
-   → **không thể**
+a) - cam: 🍎🍎🍎🍎🍎  (5 quả)
+- ổi: 🍎🍎🍎🍎🍎🍎🍎  (7 quả)
+- xoài: 🍎🍎🍎🍎  (4 quả)
 
-b) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+Loại quả nào nhiều nhất?
+   → **ổi**
 
-c) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
-   → **có thể**
+b) Loại quả nào ít nhất?
+   → **xoài**
 
-d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-   → **không thể**
+c) Ổi nhiều hơn xoài mấy quả?
+   → **3 quả**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
+d) Tất cả có mấy quả?
+   → **16 quả**
 
-**Thế nào là con đã hiểu:** Trẻ phân biệt được “không thể” với “khó xảy ra”. Đây là chỗ nhầm nhiều nhất, và cũng là gốc của khái niệm xác suất sau này.
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Nhìn biểu đồ, con biết ngay loại nào nhiều nhất mà không cần đếm. Vì sao?
 
-**Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
+**Thế nào là con đã hiểu:** Trẻ so hai hàng bằng cách nhìn hàng nào **dài hơn**, chỉ đếm khi cần biết hơn kém bao nhiêu. Đó chính là lý do người ta vẽ biểu đồ thay vì viết bảng số.
 
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
+**Con tắc thì làm gì:** Cho trẻ chỉ tay theo từng hàng và đếm to.
+
+**Nếu con làm nhanh:** Che số đi, chỉ để hình — trẻ vẫn trả lời được câu nào?
 
 
 ---

@@ -28,58 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 4 … 1
+a) Đếm tiếp cho cô: 1 , 3 , 5 , 7 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 1 … 3
+b) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 1 … 8
-
-d) Điền dấu >, < hoặc = : 4 … 8
+c) Đếm từ 60 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Cộng trừ số tròn chục**
 
-a) 60 − 10 = …
+a) 50 − 10 = …
 
-b) 50 + 40 = …
+b) 40 + 20 = …
 
-c) 20 − 10 = …
+c) 60 − 30 = …
 
-d) 40 + 50 = …
+d) 60 + 20 = …
 
-e) 60 + 30 = …
+e) 60 + 10 = …
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Đặt tính rồi tính**
 
-a) Đặt tính rồi tính: 88 + 1
+a) Đặt tính rồi tính: 38 − 27
 
-b) Đặt tính rồi tính: 31 − 10
+b) Đặt tính rồi tính: 60 + 3
 
-c) Đặt tính rồi tính: 69 + 20
+c) Đặt tính rồi tính: 93 − 92
 
-d) Đặt tính rồi tính: 99 − 74
+d) Đặt tính rồi tính: 28 + 50
 
-e) Đặt tính rồi tính: 49 − 16
+e) Đặt tính rồi tính: 66 − 15
+
+f) Đặt tính rồi tính: 57 + 41
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 3 + 7 = 10.
+a) 3 con vịt có mấy cái chân?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 5 = 9.
+b) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 8 = 2.
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 6 = 8.
+c) Bàn ăn có 5 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
 
 ---
@@ -88,7 +86,7 @@ d) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 6 = 8.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Đếm nối tiếp theo bước
 - ☐ Cộng trừ số tròn chục
 - ☐ Đặt tính rồi tính
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

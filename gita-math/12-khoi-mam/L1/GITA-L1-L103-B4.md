@@ -28,54 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 77 … 31
+a) 5 thêm 3 là mấy?
 
-b) Điền dấu >, < hoặc = : 42 … 31
+b) Con giơ 1 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 6?
 
-c) Điền dấu >, < hoặc = : 30 … 94
+c) 5 bớt 4 còn mấy?
 
-d) Điền dấu >, < hoặc = : 82 … 91
+d) 3 thêm 2 là mấy?
+
+e) 10 bớt 9 còn mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Na có 5 bông hoa, cho bạn 4 bông. Na còn lại mấy bông?
+a) Na có 2 chiếc lá, mẹ cho thêm 3 chiếc. Na có tất cả mấy chiếc?
 
-b) Bơ có 1 con cá, mẹ cho thêm 4 con. Bơ có tất cả mấy con?
+b) Tí có 10 quyển vở, cho bạn 7 quyển. Tí còn lại mấy quyển?
 
-c) Tèo có 4 cái bánh, mẹ cho thêm 1 cái. Tèo có tất cả mấy cái?
+c) Cốm có 4 con cá, cho bạn 1 con. Cốm còn lại mấy con?
 
-d) Bi có 9 quả bóng, cho bạn 4 quả. Bi còn lại mấy quả?
+d) Na có 2 bông hoa, mẹ cho thêm 4 bông. Na có tất cả mấy bông?
 
-e) Cốm có 9 con vịt, cho bạn 3 con. Cốm còn lại mấy con?
+e) Tèo có 2 quả bóng, mẹ cho thêm 1 quả. Tèo có tất cả mấy quả?
 
-f) Tèo có 3 chiếc lá, mẹ cho thêm 4 chiếc. Tèo có tất cả mấy chiếc?
+f) Na có 6 con vịt, cho bạn 3 con. Na còn lại mấy con?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Từ một phép cộng ra hai phép trừ**
 
-a) Từ phép tính 3 + 5 = 8, con viết ra hai phép trừ.
+a) Từ phép tính 7 + 1 = 8, con viết ra hai phép trừ.
 
-b) Từ phép tính 7 + 2 = 9, con viết ra hai phép trừ.
+b) Từ phép tính 2 + 1 = 3, con viết ra hai phép trừ.
 
-c) Từ phép tính 8 + 1 = 9, con viết ra hai phép trừ.
+c) Từ phép tính 7 + 2 = 9, con viết ra hai phép trừ.
+
+d) Từ phép tính 2 + 7 = 9, con viết ra hai phép trừ.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-a) 3, 6, 12, …
+a) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
 
-b) 7, 10, 13, 16, …
+b) Con có 5 cái kẹo, cho bạn 2 cái. Còn mấy cái?
 
-c) 4, 6, 8, 10, …
+c) Con có 7 cái kẹo, cho bạn 1 cái. Còn mấy cái?
 
 
 ---
@@ -84,7 +88,7 @@ c) 4, 6, 8, 10, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Từ một phép cộng ra hai phép trừ
-- ☐ Tìm quy luật
+- ☐ Đố vui cộng trừ

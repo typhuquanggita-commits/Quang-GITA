@@ -30,15 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-a) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
+a) Con chạy đi tìm một thứ trong nhà có hình tam giác.
 
-b) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+b) Con chạy đi tìm một thứ trong nhà có hình vuông.
 
-c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
+c) Tìm cho cô một thứ là khối hộp chữ nhật.
 
-d) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+d) Tìm một thứ dài hơn bàn chân của con.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,13 +47,15 @@ d) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ v
 
 **Tìm hình quanh mình**
 
-a) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
+a) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật có dạng khối hộp chữ nhật.
 
 b) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
 
-c) Đây là khối trụ. Con tìm quanh nhà một đồ vật có dạng khối trụ.
+c) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
 
-d) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hình vuông.
+d) Đây là khối trụ. Con tìm quanh nhà một đồ vật có dạng khối trụ.
+
+e) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
 
 
 ## Tự làm thử · 7 phút
@@ -62,11 +64,11 @@ d) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hìn
 
 **Khoanh, nối, tô**
 
-a) Con tô màu hình tròn.
+a) Con gạch bỏ vật không cùng nhóm.
 
 b) Con khoanh vào vật ở giữa hàng.
 
-c) Con nối mỗi con vật với cái chuồng của nó.
+c) Con tô màu hình tròn.
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -75,11 +77,11 @@ c) Con nối mỗi con vật với cái chuồng của nó.
 
 **Sáng, trưa, chiều, tối**
 
-a) Con đánh răng buổi sớm vào buổi nào trong ngày?
+a) Con tan học vào buổi nào trong ngày?
 
 b) Con ngủ trưa vào buổi nào trong ngày?
 
-c) Con đi ngủ vào buổi nào trong ngày?
+c) Con ăn sáng vào buổi nào trong ngày?
 
 
 ---
@@ -90,7 +92,7 @@ c) Con đi ngủ vào buổi nào trong ngày?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Đi săn hình quanh nhà | ☐ | ☐ | ☐ |
 | Tìm hình quanh mình | ☐ | ☐ | ☐ |
 | Khoanh, nối, tô | ☐ | ☐ | ☐ |
 | Sáng, trưa, chiều, tối | ☐ | ☐ | ☐ |

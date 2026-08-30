@@ -30,69 +30,73 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Cấu tạo số và tính nhẩm số tròn trăm**
 
-a) Số 888 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Số 936 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-b) Tính nhẩm: 800 + 100
+b) Tính nhẩm: 700 + 200
 
-c) Số 683 gồm mấy trăm, mấy chục, mấy đơn vị?
+c) Số 685 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-d) Tính nhẩm: 500 + 100
+d) Tính nhẩm: 100 + 800
+
+e) Tính nhẩm: 400 + 500
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-b) Xếp 8 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+b) Xếp 5 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 2 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 2 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-d) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
-
-e) Xếp 8 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+d) Xếp 2 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Cộng trừ có nhớ trong phạm vi 100**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Đặt tính rồi tính: 75 + 17
+a) Bạn Na có 252 viên bi. Bạn Tèo có ít hơn bạn Na 180 viên bi. Bạn Tèo có bao nhiêu viên bi?
 
-b) Đặt tính rồi tính: 20 − 14
+b) Bạn An có 169 cái nhãn vở. Bạn Bi có nhiều hơn bạn An 50 cái nhãn vở. Bạn Bi có bao nhiêu cái nhãn vở?
 
-c) Đặt tính rồi tính: 21 − 20
+c) Bạn Cốm có 396 con tem. Bạn Mai có ít hơn bạn Cốm 140 con tem. Bạn Mai có bao nhiêu con tem?
 
-d) Đặt tính rồi tính: 23 + 10
+d) Bạn Tí có 502 quyển sách. Bạn An có nhiều hơn bạn Tí 60 quyển sách. Bạn An có bao nhiêu quyển sách?
 
-e) Đặt tính rồi tính: 44 + 50
+e) Bạn Nam có 154 cái nhãn vở. Bạn Mai có ít hơn bạn Nam 20 cái nhãn vở. Bạn Mai có bao nhiêu cái nhãn vở?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bài toán nhân, chia**
+**Cộng trừ có nhớ trong phạm vi 100**
 
-a) Mỗi hộp có 5 bông hoa. Hỏi 4 hộp có mấy bông?
+a) Đặt tính rồi tính: 33 + 12
 
-b) Có 30 bông hoa chia đều vào 5 hộp. Mỗi hộp có mấy bông?
+b) Đặt tính rồi tính: 34 − 23
 
-c) Mỗi hộp có 2 quyển vở. Hỏi 7 hộp có mấy quyển?
+c) Đặt tính rồi tính: 27 − 11
 
-d) Có 15 chiếc lá chia đều vào 5 hộp. Mỗi hộp có mấy chiếc?
+d) Đặt tính rồi tính: 21 + 75
 
-e) Có 12 con cá chia đều vào 2 hộp. Mỗi hộp có mấy con?
+e) Đặt tính rồi tính: 98 − 87
+
+f) Đặt tính rồi tính: 41 + 54
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Số bí mật đến 1 000**
 
-a) Một bạn tính 53 + 78 = 121. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Số tròn trăm gần 415 nhất là số nào?
 
-b) Một bạn tính 76 + 50 = 135. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Số tròn trăm gần 248 nhất là số nào?
 
-c) Một bạn tính 82 + 63 = 154. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Số bí mật gồm 4 trăm, 5 chục và 0 đơn vị. Số nào?
+
+d) Số bí mật gồm 8 trăm, 6 chục và 7 đơn vị. Số nào?
 
 
 ---
@@ -103,6 +107,6 @@ c) Một bạn tính 82 + 63 = 154. Bạn ấy sai ở đâu? Kết quả đúng
 
 - ☐ Cấu tạo số và tính nhẩm số tròn trăm
 - ☐ Từ phép cộng sang phép nhân
+- ☐ Bài toán nhiều hơn – ít hơn
 - ☐ Cộng trừ có nhớ trong phạm vi 100
-- ☐ Bài toán nhân, chia
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Số bí mật đến 1 000

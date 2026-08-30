@@ -28,62 +28,62 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 8 … 9
+a) Con giơ 7 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 8?
 
-b) Điền dấu >, < hoặc = : 10 … 6
+b) 6 bớt 5 còn mấy?
 
-c) Điền dấu >, < hoặc = : 10 … 7
+c) 1 thêm 8 là mấy?
 
-d) Điền dấu >, < hoặc = : 7 … 8
-
-e) Điền dấu >, < hoặc = : 5 … 9
+d) 6 bớt 1 còn mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Nam có 4 bông hoa, cho bạn 3 bông. Nam còn lại mấy bông?
+a) Cốm có 5 chiếc lá, mẹ cho thêm 4 chiếc. Cốm có tất cả mấy chiếc?
 
-b) Bo có 5 viên bi, mẹ cho thêm 3 viên. Bo có tất cả mấy viên?
+b) Bi có 7 quả cam, cho bạn 6 quả. Bi còn lại mấy quả?
 
-c) Nam có 6 quyển vở, cho bạn 4 quyển. Nam còn lại mấy quyển?
+c) Tí có 6 chiếc lá, cho bạn 3 chiếc. Tí còn lại mấy chiếc?
 
-d) Cốm có 4 bông hoa, mẹ cho thêm 1 bông. Cốm có tất cả mấy bông?
+d) Bo có 5 quyển vở, mẹ cho thêm 1 quyển. Bo có tất cả mấy quyển?
+
+e) Tèo có 6 cái bánh, cho bạn 1 cái. Tèo còn lại mấy cái?
+
+f) Mai có 3 con vịt, mẹ cho thêm 2 con. Mai có tất cả mấy con?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) 7 + … = 8
+a) … + 2 = 9
 
-b) 2 + … = 6
+b) 5 + … = 7
 
-c) … + 4 = 7
+c) 1 + … = 8
 
-d) 9 + … = 10
+d) 5 + … = 10
 
-e) … + 5 = 10
+e) 6 + … = 7
 
-f) 5 + … = 7
+f) 3 + … = 5
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 7 = 11.
+a) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 11 + 3 = 14.
+b) 3 con chim có mấy cái chân?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 11 + 10 = 21.
+c) Mẹ nướng 10 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 10. Ăn mất 5 cái thì còn mấy cái?
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 5 − 4 = 1.
-
-e) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 8 = 6.
+d) Mẹ nướng 7 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
 
 
 ---
@@ -92,7 +92,7 @@ e) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 8 = 6.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Tìm số còn thiếu
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

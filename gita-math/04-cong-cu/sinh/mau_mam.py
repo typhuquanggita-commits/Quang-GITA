@@ -79,11 +79,44 @@ def dang_ky_mam(ma: str, khoi: str, chu_de: tuple[str, ...], mach: str = "S",
     MA_MAM.add(ma)
 
     def bao(f):
+        g = _khong_trung_y(f)
         for cd in chu_de:
             KHO_MAM.setdefault(khoi, {}).setdefault(cd, []).append(
-                {"ma": ma, "sinh": f, "mach": mach, "twm": twm})
+                {"ma": ma, "sinh": g, "mach": mach, "twm": twm})
         return f
     return bao
+
+
+def _khong_trung_y(f):
+    """Bọc một hàm sinh lại, bảo đảm trong một bài không có hai ý giống hệt nhau.
+
+    Mẫu nào cũng rút số ngẫu nhiên, nên thỉnh thoảng hai ý trùng nhau từng chữ.
+    Trên phiếu của lớp 3–5 điều đó chỉ là phí một câu; trên phiếu của trẻ sáu
+    tuổi nó tệ hơn hẳn — cả bài chỉ có bốn năm ý, trùng một ý là mất một phần
+    tư bài, và trẻ nhìn thấy ngay: "câu này con vừa làm rồi mà".
+
+    Cách chữa là **rút lại chứ không phải bỏ bớt**: bỏ bớt thì bài ngắn đi, còn
+    rút lại thì bài vẫn đủ ý. Chỉ khi rút mãi vẫn trùng — dấu hiệu mẫu ấy có
+    quá ít khả năng để chọn — mới chấp nhận bỏ ý trùng, và `kiem_mam.py` sẽ
+    bắt được mẫu nào rơi vào cảnh ấy.
+    """
+    def sinh(rng):
+        goc = rng.getrandbits(62)
+        cuoi = None
+        for lan in range(40):
+            b = f(random.Random(goc + lan))
+            cau = [c for c, _ in b.y]
+            if len(set(cau)) == len(cau):
+                return b
+            cuoi = b
+        da, giu = set(), []
+        for c, d in cuoi.y:
+            if c not in da:
+                da.add(c)
+                giu.append((c, d))
+        cuoi.y = giu
+        return cuoi
+    return sinh
 
 
 # ═══════════════════════════ MẪU GIÁO LỚN ═══════════════════════════
@@ -384,12 +417,44 @@ def mm_l1_03(rng):
 @dang_ky_mam("MM-L1-04", "L1", ("L104", "L111"), "H",
              ("classifying", "critiquing"))
 def mm_l1_04(rng):
-    """Đếm hình trong một hình ghép."""
+    """Đếm hình trong một hình ghép — hình được **tả bằng lời**, không cần tranh.
+
+    Bản cũ hỏi "trong hình bên có mấy hình tròn?" trong khi phiếu không có hình
+    nào cả, và đáp số là một số bốc ngẫu nhiên. Trẻ không thể trả lời, người lớn
+    không thể chấm. Bản này tả rõ hình bằng lời để trẻ tự vẽ ra nháp, và mọi
+    đáp số đều tính được từ chính lời tả.
+    """
     y = []
-    for _ in range(rng.randint(3, 5)):
-        h = rng.choice(HINH)
-        n = rng.randint(2, 6)
-        y.append((f"Trong hình bên có mấy {h}?", f"{sv(n)} {h}"))
+    for kieu in luan_phien(rng, ["chu_nhat", "tam_giac", "doan", "vuong"],
+                           rng.randint(3, 4)):
+        if kieu == "chu_nhat":
+            k = rng.randint(1, 2)             # số nét kẻ dọc
+            # Hình chữ nhật bị k nét dọc chia thành k+1 ô. Số hình chữ nhật đếm
+            # được là số cách chọn 2 nét dọc trong k+2 nét (kể cả hai cạnh bên).
+            n = (k + 1) * (k + 2) // 2
+            y.append((f"Con vẽ một hình chữ nhật rồi kẻ {sv(k)} nét thẳng dọc "
+                      f"chia nó thành {sv(k + 1)} ô bằng nhau. Đếm xem có tất cả "
+                      f"mấy hình chữ nhật?",
+                      f"{sv(n)} hình — {sv(k + 1)} ô nhỏ và "
+                      f"{sv(n - k - 1)} hình ghép từ các ô liền nhau"))
+        elif kieu == "tam_giac":
+            k = rng.randint(1, 2)
+            n = (k + 1) * (k + 2) // 2
+            y.append((f"Con vẽ một hình tam giác rồi kẻ {sv(k)} nét thẳng từ "
+                      f"đỉnh trên xuống cạnh đáy. Đếm xem có mấy hình tam giác?",
+                      f"{sv(n)} hình — {sv(k + 1)} hình nhỏ và "
+                      f"{sv(n - k - 1)} hình ghép"))
+        elif kieu == "doan":
+            n_d = rng.randint(3, 4)
+            n = n_d * (n_d - 1) // 2
+            y.append((f"Trên một đường thẳng có {sv(n_d)} điểm. Nối từng cặp hai "
+                      f"điểm thì được mấy đoạn thẳng?", f"{sv(n)} đoạn thẳng"))
+        else:
+            hang = rng.randint(2, 3)
+            cot = rng.randint(2, 3)
+            y.append((f"Con vẽ {sv(hang)} hàng, mỗi hàng {sv(cot)} hình vuông "
+                      f"nhỏ bằng nhau. Có tất cả mấy hình vuông nhỏ?",
+                      f"{sv(hang)} × {sv(cot)} = {sv(hang * cot)} hình vuông nhỏ"))
     return BaiMam(
         tieu_de="Đếm hình trong hình ghép",
         loi_doc="Con dùng bút chì đánh dấu từng hình đã đếm để khỏi đếm sót hoặc "
@@ -1367,9 +1432,12 @@ def mm_l2_13(rng):
         a = rng.randrange(15, 89)
         b = rng.randrange(15, 89)
         dv = (a % 10) + (b % 10)
+        # Câu hỏi phải trung lập. Hỏi thẳng "vì sao phải nhớ" trong khi phép
+        # tính không có nhớ là đề tự mâu thuẫn với đáp án, và tệ hơn: nó dạy
+        # trẻ rằng cứ cộng là phải nhớ.
         y.append((f"Tính {sv(a)} + {sv(b)}. Cộng hàng đơn vị trước: "
-                  f"{sv(a % 10)} + {sv(b % 10)} = {sv(dv)}. Vì sao phải nhớ "
-                  f"sang hàng chục?",
+                  f"{sv(a % 10)} + {sv(b % 10)} = {sv(dv)}. Có phải nhớ "
+                  f"sang hàng chục không? Vì sao?",
                   f"vì {sv(dv)} lớn hơn 9, đủ một chục nên chuyển 1 chục sang; "
                   f"kết quả là {sv(a + b)}" if dv >= 10 else
                   f"không phải nhớ vì {sv(dv)} chưa đủ một chục; kết quả {sv(a + b)}"))
@@ -1581,6 +1649,959 @@ def mm_mg_20(rng):
 
 
 # ═══════════════════════════════════════════════════════════════════
+#  ĐỢT BỐN — VÁ HAI Ô ĐẦU VÀ CUỐI BUỔI
+#
+#  Ba đợt trước dồn sức vào hai ô giữa (khám phá và luyện) vì đó là chỗ chứa
+#  nội dung. Hậu quả: nhiều chủ đề không có mẫu riêng cho ô mở đầu và ô kết,
+#  nên bộ lắp phải mượn mẫu của chủ đề khác — buổi học về phép trừ lại mở đầu
+#  bằng trò đếm số, chẳng liên quan gì tới việc sắp học.
+#
+#  Với trẻ nhỏ, hai ô ấy không phải phần phụ. Ô mở đầu quyết định trẻ có bước
+#  vào buổi học hay không; ô kết quyết định trẻ nhớ buổi học là dễ hay khó. Đợt
+#  này viết đủ mẫu để **mọi chủ đề đều tự mở và tự kết bằng chính nội dung của
+#  mình**, không phải mượn.
+# ═══════════════════════════════════════════════════════════════════
+
+
+@dang_ky_mam("MM-MG-21", "MG", ("MG03", "MG04"), "S",
+             ("conjecturing", "convincing"))
+def mm_mg_21(rng):
+    """Khởi động: đoán bên nào nhiều hơn rồi đếm kiểm tra."""
+    y = []
+    for _ in range(rng.randint(3, 4)):
+        a = rng.randint(2, 9)
+        b = rng.choice([x for x in range(2, 10) if x != a] + [a])
+        v, dv = rng.choice(DO_VAT)
+        if a == b:
+            dap = "hai bên bằng nhau"
+        else:
+            dap = "bên trái" if a > b else "bên phải"
+        y.append((f"Cô để {sv(a)} {v} bên trái, {sv(b)} {v} bên phải. "
+                  f"Con nhìn thôi, chưa đếm: bên nào nhiều {dv} hơn?", dap))
+    return BaiMam(
+        tieu_de="Nhìn nhanh — bên nào nhiều hơn",
+        loi_doc="Con nhìn thật nhanh rồi chỉ tay sang bên nhiều hơn. Chỉ xong "
+                "mình mới đếm để xem con đoán đúng không.",
+        y=y, mach="S",
+        do_dung=["Hai rổ nhỏ", "20 đồ vật giống nhau: hột hạt, nắp chai, kẹo"],
+        twm=["conjecturing", "convincing"],
+        cau_hoi_twm="Con chỉ bên này trước khi đếm. Vì sao con biết bên ấy nhiều hơn?",
+        dau_hieu_hieu="Trẻ chỉ đúng khi hai bên chênh nhau rõ mà chưa cần đếm. "
+                      "Đó là **cảm nhận số lượng** — có trước kỹ năng đếm và là "
+                      "nền của mọi việc so sánh sau này.",
+        khi_kho="Để hai bên chênh nhau thật nhiều: 2 và 9. Khi trẻ quen mới thu "
+                "hẹp dần khoảng cách.",
+        mo_rong="Để hai bên bằng nhau xem trẻ có nói được 'bằng nhau' không — "
+                "nhiều trẻ cứ phải chọn một bên.")
+
+
+@dang_ky_mam("MM-MG-22", "MG", ("MG06", "MG07"), "H",
+             ("classifying", "characterising"))
+def mm_mg_22(rng):
+    """Khởi động: đi tìm hình và so kích thước bằng đồ vật trong phòng."""
+    y = []
+    GOI_HINH = {"hình tròn": "mặt đồng hồ, cái đĩa, nắp chai",
+                "hình vuông": "viên gạch nền, tờ giấy nhớ, mặt hộp",
+                "hình tam giác": "cái móc áo, mái nhà đồ chơi, miếng bánh mì cắt chéo",
+                "hình chữ nhật": "cửa ra vào, quyển vở, cái bàn"}
+    GOI_KHOI = {"khối cầu": "quả bóng, quả cam",
+                "khối trụ": "lon nước, cốc giấy",
+                "khối lập phương": "hộp rubik, xúc xắc",
+                "khối hộp chữ nhật": "hộp sữa, viên gạch"}
+    for h in rng.sample(list(GOI_HINH), 2):
+        y.append((f"Con chạy đi tìm một thứ trong nhà có {h}.", GOI_HINH[h]))
+    k = rng.choice(list(GOI_KHOI))
+    y.append((f"Tìm cho cô một thứ là {k}.", GOI_KHOI[k]))
+    bo_phan = rng.choice(["cánh tay", "bàn chân", "gang tay"])
+    y.append((f"Tìm một thứ dài hơn {bo_phan} của con.",
+              "trẻ ướm thử rồi trả lời — thứ nào cũng được, miễn ướm đúng"))
+    return BaiMam(
+        tieu_de="Đi săn hình quanh nhà",
+        loi_doc="Mình chơi trò đi săn nhé. Cô gọi tên hình nào, con chạy đi tìm "
+                "một thứ có hình ấy rồi mang về cho cô.",
+        y=y, mach="H",
+        do_dung=["Không cần chuẩn bị — dùng chính đồ vật trong phòng"],
+        twm=["classifying", "characterising"],
+        cau_hoi_twm="Vì sao con bảo cái này là hình tròn? Nó có chỗ nào nhọn không?",
+        dau_hieu_hieu="Trẻ tìm được vật có hình ấy ở **đồ vật thật**, không chỉ "
+                      "nhận ra hình trên giấy. Nhận hình trong đời sống khó hơn "
+                      "nhận hình vẽ sẵn, vì đồ vật thật còn có màu, có chữ, có "
+                      "nhiều chi tiết gây nhiễu.",
+        khi_kho="Cầm sẵn một vật mẫu trên tay cho trẻ so sánh khi đi tìm.",
+        mo_rong="Đổi vai: trẻ gọi tên hình, người lớn đi tìm — và cố tình tìm sai "
+                "một lần để trẻ được sửa.")
+
+
+@dang_ky_mam("MM-MG-23", "MG", ("MG09", "MG10"), "H",
+             ("generalising", "conjecturing"))
+def mm_mg_23(rng):
+    """Khởi động: vỗ tay theo nhịp và bước chân đo phòng."""
+    y = []
+    NHIP = [("vỗ tay – giậm chân", 2), ("vỗ tay – vỗ tay – giậm chân", 3),
+            ("giậm chân – gật đầu", 2), ("vỗ tay – vỗ đùi – giậm chân", 3)]
+    for ten, chu_ky in rng.sample(NHIP, 2):
+        lan = rng.randint(2, 3)
+        y.append((f"Cô làm mẫu: {ten}. Lặp lại {sv(lan)} lượt rồi con làm tiếp "
+                  f"cho cô một lượt nữa.",
+                  f"lặp đúng {sv(chu_ky)} động tác của một lượt, theo đúng thứ tự"))
+    d = rng.choice(["cái bàn", "tấm thảm", "cái giường", "cửa ra vào"])
+    y.append((f"Con bước chân nối gót đi hết chiều dài {d}. Đếm to xem mấy bước.",
+              "số bước trẻ đếm được — ghi lại để buổi sau đo lại"))
+    return BaiMam(
+        tieu_de="Vỗ tay theo nhịp rồi bước đo",
+        loi_doc="Mình khởi động bằng nhịp nhé. Cô làm trước, con nhìn cho kỹ rồi "
+                "làm tiếp đúng như thế.",
+        y=y, mach="H",
+        do_dung=["Chỗ trống để trẻ đi được vài bước"],
+        twm=["generalising", "conjecturing"],
+        cau_hoi_twm="Sau giậm chân thì đến cái gì? Vì sao con đoán được?",
+        dau_hieu_hieu="Trẻ làm tiếp đúng thứ tự mà không cần cô nhắc. Quy luật "
+                      "bằng **âm thanh và động tác** dễ nắm hơn quy luật bằng "
+                      "hình vẽ, nên đây là cửa vào tốt cho chủ đề quy luật.",
+        khi_kho="Rút nhịp xuống hai động tác và làm chậm lại. Đọc to tên động tác "
+                "khi làm.",
+        mo_rong="Cho trẻ nghĩ ra nhịp rồi người lớn làm theo — trẻ sẽ tự kiểm tra "
+                "xem người lớn có làm đúng không.")
+
+
+@dang_ky_mam("MM-MG-24", "MG", ("MG01", "MG02", "MG05"), "S",
+             ("specialising", "conjecturing"))
+def mm_mg_24(rng):
+    """Đố vui kết buổi: số liền sau, số còn thiếu."""
+    y = []
+    for kieu in luan_phien(rng, ["sau", "truoc", "thieu", "ngon"],
+                           rng.randint(3, 4)):
+        if kieu == "sau":
+            n = rng.randint(1, 9)
+            y.append((f"Đếm tiếp cho cô: {sv(n)} rồi đến số mấy?", sv(n + 1)))
+        elif kieu == "truoc":
+            n = rng.randint(2, 10)
+            y.append((f"Số nào đứng ngay trước số {sv(n)}?", sv(n - 1)))
+        elif kieu == "thieu":
+            n = rng.randint(2, 8)
+            day = [sv(i) if i != n else "…" for i in range(n - 1, n + 3)]
+            y.append((f"Dãy số bị mất một số: {' , '.join(day)} . "
+                      f"Mất số nào?", sv(n)))
+        else:
+            n = rng.randint(1, 5)
+            y.append((f"Con giơ {sv(n)} ngón ở tay này, {sv(n)} ngón ở tay kia. "
+                      f"Tất cả mấy ngón?", sv(n * 2)))
+    return BaiMam(
+        tieu_de="Đố vui về số",
+        loi_doc="Câu đố cuối buổi thôi, dễ lắm. Con trả lời miệng, không phải viết.",
+        y=y, mach="S",
+        do_dung=["Không cần gì — dùng ngón tay của trẻ"],
+        twm=["specialising", "conjecturing"],
+        cau_hoi_twm="Con đố lại cô một câu về số đi.",
+        dau_hieu_hieu="Trẻ nói ngay số liền sau mà không đếm lại từ 1. Đếm tiếp "
+                      "từ giữa dãy khó hơn đếm từ đầu rất nhiều.",
+        khi_kho="Cho trẻ đếm từ 1 lên tới chỗ ấy. Đừng chê là chậm — đếm lại từ "
+                "đầu vẫn là cách đúng.",
+        mo_rong="Hỏi số liền trước — phần này khó hơn hẳn, chỉ hỏi khi trẻ đã "
+                "chắc số liền sau.")
+
+
+@dang_ky_mam("MM-MG-25", "MG", ("MG03", "MG07"), "H",
+             ("convincing", "critiquing"))
+def mm_mg_25(rng):
+    """Đố vui kết buổi: ai cao hơn, cái nào dài hơn."""
+    y = []
+    CAP = [("cái bút", "cái thước", "cái thước"),
+           ("con kiến", "con voi", "con voi"),
+           ("quyển vở", "quyển từ điển", "quyển từ điển"),
+           ("cái cốc", "cái ấm", "cái ấm"),
+           ("ngón tay", "cánh tay", "cánh tay")]
+    for a, b, to in rng.sample(CAP, rng.randint(2, 3)):
+        if rng.random() < 0.5:
+            a, b = b, a
+        y.append((f"{hoa(a)} và {b}: cái nào to hơn?", to))
+    n = rng.randint(2, 5)
+    y.append((f"Cô có {sv(n)} cái kẹo, con có {sv(n + 1)} cái. Ai nhiều hơn?",
+              f"con nhiều hơn, nhiều hơn 1 cái"))
+    return BaiMam(
+        tieu_de="Đố vui so sánh",
+        loi_doc="Cuối buổi mình đố nhau nhé. Con trả lời rồi giải thích vì sao.",
+        y=y, mach="H",
+        do_dung=["Vài đồ vật quen thuộc để trẻ chỉ tận tay"],
+        twm=["convincing", "critiquing"],
+        cau_hoi_twm="Vì sao con biết cái ấy to hơn? Con đo thử cho cô xem.",
+        dau_hieu_hieu="Trẻ trả lời được cả khi hai vật không có sẵn trước mặt — "
+                      "tức là đã so sánh **trong đầu**, không cần nhìn.",
+        khi_kho="Đặt hai vật thật cạnh nhau cho trẻ nhìn. So sánh bằng mắt trước, "
+                "so sánh trong đầu sau.",
+        mo_rong="Hỏi một cặp mà trẻ phải nghĩ: cái cặp sách và cái ghế — không "
+                "phải cặp nào cũng dễ.")
+
+
+@dang_ky_mam("MM-L1-18", "L1", ("L102", "L103", "L113"), "S",
+             ("specialising", "generalising"))
+def mm_l1_18(rng):
+    """Khởi động: nhẩm nhanh bằng ngón tay trong phạm vi 10."""
+    y = []
+    for kieu in luan_phien(rng, ["cong", "tru", "gop"], rng.randint(4, 5)):
+        if kieu == "cong":
+            a = rng.randint(1, 5)
+            b = rng.randint(1, 10 - a)
+            y.append((f"{sv(a)} thêm {sv(b)} là mấy?", sv(a + b)))
+        elif kieu == "tru":
+            a = rng.randint(4, 10)
+            b = rng.randint(1, a - 1)
+            y.append((f"{sv(a)} bớt {sv(b)} còn mấy?", sv(a - b)))
+        else:
+            t = rng.randint(5, 10)
+            a = rng.randint(1, t - 1)
+            y.append((f"Con giơ {sv(a)} ngón rồi. Giơ thêm mấy ngón nữa "
+                      f"cho đủ {sv(t)}?", sv(t - a)))
+    return BaiMam(
+        tieu_de="Nhẩm nhanh bằng ngón tay",
+        loi_doc="Mình khởi động bằng trò nhẩm nhanh. Con được dùng ngón tay, "
+                "không sao cả.",
+        y=y, mach="S",
+        do_dung=["Không cần gì — dùng ngón tay"],
+        twm=["specialising", "generalising"],
+        cau_hoi_twm="Con làm thế nào mà ra nhanh thế? Con đếm hay con nhớ sẵn?",
+        dau_hieu_hieu="Trẻ trả lời được trong khoảng ba giây và bắt đầu **nhớ sẵn** "
+                      "vài phép quen như 5 + 5, 2 + 2, thay vì đếm lại từng ngón.",
+        khi_kho="Cho dùng que tính. Tốc độ không quan trọng bằng việc ra đúng.",
+        mo_rong="Hỏi ngược: 'cô nghĩ một số, cộng 3 thì được 8, số ấy là mấy?'")
+
+
+@dang_ky_mam("MM-L1-19", "L1", ("L104", "L111"), "H",
+             ("characterising", "convincing"))
+def mm_l1_19(rng):
+    """Khởi động: vẽ hình trên không và căng dây thành đoạn thẳng."""
+    y = []
+    for h in rng.sample(HINH, 2):
+        canh = {"hình tròn": "không có cạnh nào", "hình vuông": "4 cạnh bằng nhau",
+                "hình tam giác": "3 cạnh", "hình chữ nhật": "4 cạnh, hai cạnh dài "
+                "bằng nhau và hai cạnh ngắn bằng nhau"}[h]
+        y.append((f"Con dùng ngón tay vẽ {h} lên không khí. Vẽ xong nói cho cô: "
+                  f"hình ấy có mấy cạnh?", canh))
+    n = rng.randint(2, 4)
+    y.append((f"Cô căng sợi dây thẳng giữa hai tay. Đó là đoạn thẳng. "
+              f"Con chấm {sv(n)} điểm lên tờ giấy rồi nối hai điểm bất kỳ.",
+              f"nối được 1 đoạn thẳng qua 2 điểm vừa chọn"))
+    return BaiMam(
+        tieu_de="Vẽ hình trên không, căng dây thành đoạn thẳng",
+        loi_doc="Chưa cần bút đâu. Con vẽ bằng ngón tay lên không khí trước đã.",
+        y=y, mach="H",
+        do_dung=["Một sợi dây hoặc chun dài", "Giấy trắng và bút chì"],
+        twm=["characterising", "convincing"],
+        cau_hoi_twm="Vẽ trên không thì hình vuông và hình chữ nhật khác nhau chỗ nào?",
+        dau_hieu_hieu="Tay trẻ dừng lại và đổi hướng ở đúng bốn chỗ khi vẽ hình "
+                      "vuông. Vẽ được bằng tay nghĩa là trẻ đã nắm được **hình dạng "
+                      "gồm những gì**, chứ không chỉ nhận mặt hình.",
+        khi_kho="Cầm tay trẻ vẽ một lượt, vừa vẽ vừa đếm cạnh: một, hai, ba, bốn.",
+        mo_rong="Hai trẻ cùng căng dây tạo hình tam giác — cần ba tay, nên phải "
+                "rủ thêm người.")
+
+
+@dang_ky_mam("MM-L1-20", "L1", ("L108", "L112"), "S",
+             ("generalising", "conjecturing"))
+def mm_l1_20(rng):
+    """Khởi động: đếm nối tiếp theo bước 2, 5, 10."""
+    y = []
+    for buoc in rng.sample([2, 5, 10], rng.randint(2, 3)):
+        dau = buoc if buoc != 2 else rng.choice([0, 1, 2])
+        day = [dau + buoc * i for i in range(4)]
+        y.append((f"Đếm tiếp cho cô: {' , '.join(sv(x) for x in day)} , … "
+                  f"Số tiếp theo là mấy?", sv(dau + buoc * 4)))
+    a = rng.randrange(20, 80, 10)
+    y.append((f"Đếm từ {sv(a)} lên, mỗi lần thêm 10, đếm 3 lần.",
+              " , ".join(sv(a + 10 * i) for i in (1, 2, 3))))
+    return BaiMam(
+        tieu_de="Đếm nối tiếp theo bước",
+        loi_doc="Mình đếm nhảy cóc nhé. Không đếm từng số một, mà nhảy hai số, "
+                "năm số, mười số một lần.",
+        y=y, mach="S",
+        do_dung=["Bảng số từ 1 đến 100 dán trên tường (nếu có)"],
+        twm=["generalising", "conjecturing"],
+        cau_hoi_twm="Đếm cách 10 thì chữ số nào đứng yên, chữ số nào đổi?",
+        dau_hieu_hieu="Trẻ đếm cách 10 mà không phải nhẩm cộng từng lần — nhận ra "
+                      "chỉ có chữ số hàng chục thay đổi. Đây là bước đầu tiên "
+                      "trẻ nhìn thấy **cấu tạo chục – đơn vị** của số.",
+        khi_kho="Chỉ tay trên bảng số 100 khi đếm, cho trẻ thấy mình nhảy sang cột nào.",
+        mo_rong="Đếm lùi cách 10 từ 90 xuống — khó hơn hẳn đếm lên.")
+
+
+@dang_ky_mam("MM-L1-21", "L1", ("L109", "L114"), "S",
+             ("conjecturing", "improving"))
+def mm_l1_21(rng):
+    """Khởi động: kể miệng một bài toán từ đồ vật trên bàn."""
+    y = []
+    for _ in range(rng.randint(3, 4)):
+        v, dv = rng.choice(DO_VAT)
+        b = rng.choice(BAN)
+        a = rng.randint(3, 9)
+        c = rng.randint(1, min(4, a - 1))
+        if rng.random() < 0.5:
+            y.append((f"Cô để {sv(a)} {v} ra bàn rồi cất đi {sv(c)} {dv}. "
+                      f"Con kể lại thành một câu chuyện có số.",
+                      f"Có {sv(a)} {v}, cất đi {sv(c)} {dv}, còn {sv(a - c)} {dv}"))
+        else:
+            y.append((f"Cô để {sv(a)} {v}, bạn {b} đưa thêm {sv(c)} {dv}. "
+                      f"Con kể lại thành một câu chuyện có số.",
+                      f"Có {sv(a)} {v}, thêm {sv(c)} {dv}, tất cả {sv(a + c)} {dv}"))
+    return BaiMam(
+        tieu_de="Kể một bài toán bằng miệng",
+        loi_doc="Chưa viết gì đâu. Cô làm, con nhìn rồi kể lại bằng lời cho cô nghe.",
+        y=y, mach="S",
+        do_dung=["Một rổ đồ vật nhỏ giống nhau"],
+        twm=["conjecturing", "improving"],
+        cau_hoi_twm="Trong câu chuyện của con, câu nào cho biết phải làm phép cộng?",
+        dau_hieu_hieu="Trẻ kể đủ ba phần: **có bao nhiêu – xảy ra chuyện gì – "
+                      "còn hoặc được bao nhiêu**. Kể được bằng miệng thì viết lời "
+                      "giải sẽ nhẹ hẳn, vì khó nhất của bài có lời văn là hiểu "
+                      "tình huống chứ không phải tính.",
+        khi_kho="Người lớn kể mẫu một lần, rồi kể lại và bỏ trống câu cuối cho trẻ "
+                "nói nốt.",
+        mo_rong="Trẻ tự bày đồ vật và ra đề cho người lớn giải.")
+
+
+@dang_ky_mam("MM-L1-22", "L1", ("L101", "L105", "L107"), "S",
+             ("conjecturing", "critiquing"))
+def mm_l1_22(rng):
+    """Đố vui kết buổi: số bí mật."""
+    y = []
+    for _ in range(rng.randint(3, 4)):
+        n = rng.randint(11, 99)
+        chuc, don_vi = n // 10, n % 10
+        kieu = rng.choice(["cau_tao", "lien_ke", "so_sanh"])
+        if kieu == "cau_tao":
+            y.append((f"Số bí mật có {sv(chuc)} chục và {sv(don_vi)} đơn vị. "
+                      f"Số ấy là số nào?", sv(n)))
+        elif kieu == "lien_ke":
+            y.append((f"Số bí mật đứng liền sau {sv(n - 1)} và liền trước "
+                      f"{sv(n + 1)}. Số nào?", sv(n)))
+        else:
+            m = rng.choice([x for x in range(11, 100) if x != n])
+            y.append((f"{sv(n)} và {sv(m)}: số nào lớn hơn?", sv(max(n, m))))
+    return BaiMam(
+        tieu_de="Số bí mật",
+        loi_doc="Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.",
+        y=y, mach="S",
+        do_dung=["Bảng số từ 1 đến 100 (nếu có)"],
+        twm=["conjecturing", "critiquing"],
+        cau_hoi_twm="Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng "
+                    "đơn vị trước?",
+        dau_hieu_hieu="Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ "
+                      "chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn "
+                      "hơn 40 vì 9 lớn hơn 0.",
+        khi_kho="Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.",
+        mo_rong="Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói "
+                "'lớn hơn' hoặc 'bé hơn'.")
+
+
+@dang_ky_mam("MM-L1-23", "L1", ("L102", "L103", "L108", "L113"), "S",
+             ("specialising", "improving"))
+def mm_l1_23(rng):
+    """Đố vui kết buổi: cộng trừ trong đời sống."""
+    y = []
+    for _ in range(rng.randint(3, 4)):
+        kieu = rng.choice(["chan", "keo", "ghe", "banh"])
+        if kieu == "chan":
+            c = rng.choice(["gà", "vịt", "chim"])
+            n = rng.randint(2, 5)
+            y.append((f"{sv(n)} con {c} có mấy cái chân?", f"{sv(n * 2)} cái chân"))
+        elif kieu == "keo":
+            a = rng.randint(5, 10)
+            b = rng.randint(1, 3)
+            y.append((f"Con có {sv(a)} cái kẹo, cho bạn {sv(b)} cái. Còn mấy cái?",
+                      f"{sv(a - b)} cái"))
+        elif kieu == "ghe":
+            n = rng.randint(2, 5)
+            y.append((f"Bàn ăn có {sv(n)} người ngồi, mỗi người một cái ghế. "
+                      f"Thêm 2 khách nữa thì cần mấy cái ghế?", f"{sv(n + 2)} cái ghế"))
+        else:
+            a = rng.randint(4, 10)
+            y.append((f"Mẹ nướng {sv(a)} cái bánh, cả nhà ăn hết một nửa số chẵn "
+                      f"gần nhất là {sv(a - a % 2)}. Ăn mất {sv((a - a % 2) // 2)} "
+                      f"cái thì còn mấy cái?", f"{sv(a - (a - a % 2) // 2)} cái"))
+    return BaiMam(
+        tieu_de="Đố vui cộng trừ",
+        loi_doc="Câu đố cuối buổi, toàn chuyện trong nhà mình thôi.",
+        y=y, mach="S",
+        do_dung=["Không cần gì"],
+        twm=["specialising", "improving"],
+        cau_hoi_twm="Câu này con làm phép cộng hay phép trừ? Vì sao?",
+        dau_hieu_hieu="Trẻ chọn đúng phép tính ngay từ khi nghe đề, không phải thử "
+                      "cả hai. Nghe 'cho bạn' mà nghĩ tới phép trừ là dấu hiệu trẻ "
+                      "đã nối được **lời nói với phép tính**.",
+        khi_kho="Diễn lại tình huống bằng đồ vật thật ngay trên bàn.",
+        mo_rong="Trẻ tự nghĩ một câu đố về nhà mình rồi đố cả nhà.")
+
+
+@dang_ky_mam("MM-L1-24", "L1", ("L106", "L110"), "H",
+             ("convincing", "critiquing"))
+def mm_l1_24(rng):
+    """Đố vui kết buổi: ước lượng độ dài và xem giờ."""
+    y = []
+    DAI = [("cái bút chì", "khoảng 15 cm"), ("quyển vở", "khoảng 25 cm"),
+           ("cái bàn học", "khoảng 100 cm, tức 1 m"),
+           ("bàn chân của con", "khoảng 15 đến 20 cm"),
+           ("cái thước kẻ trong hộp bút", "khoảng 20 cm")]
+    for ten, uoc in rng.sample(DAI, 2):
+        y.append((f"Con đoán {ten} dài khoảng bao nhiêu xăng-ti-mét? "
+                  f"Đoán xong lấy thước đo lại.", uoc))
+    g = rng.randint(1, 12)
+    VIEC = {6: "ngủ dậy", 7: "ăn sáng", 11: "chuẩn bị ăn trưa",
+            12: "ăn trưa", 5: "đi học về", 8: "đi ngủ", 9: "vào lớp"}
+    g = rng.choice(list(VIEC))
+    y.append((f"Kim ngắn chỉ số {sv(g)}, kim dài chỉ số 12. Mấy giờ rồi? "
+              f"Giờ ấy nhà con thường làm gì?",
+              f"{sv(g)} giờ đúng — thường là lúc {VIEC[g]}"))
+    return BaiMam(
+        tieu_de="Đố vui đo và xem giờ",
+        loi_doc="Cuối buổi mình đoán chơi thôi. Đoán sai cũng không sao, đoán xong "
+                "mình đo lại.",
+        y=y, mach="H",
+        do_dung=["Thước kẻ có vạch xăng-ti-mét", "Đồng hồ kim hoặc mô hình đồng hồ"],
+        twm=["convincing", "critiquing"],
+        cau_hoi_twm="Con đoán 20 cm, đo ra 15 cm. Lần sau con sẽ đoán thế nào cho gần hơn?",
+        dau_hieu_hieu="Đoán của trẻ ngày càng sát số đo thật. Ước lượng đúng nghĩa "
+                      "là trẻ đã có **một cái thước trong đầu** — quan trọng hơn "
+                      "việc đọc vạch thước cho khéo.",
+        khi_kho="Cho trẻ cầm sẵn một vật dài đúng 10 cm làm mốc để so.",
+        mo_rong="Đoán chiều dài một thứ dài hơn thước — trẻ phải nghĩ cách đo nhiều lần.")
+
+
+@dang_ky_mam("MM-L2-17", "L2", ("L201", "L202", "L203", "L204"), "S",
+             ("specialising", "generalising"))
+def mm_l2_17(rng):
+    """Khởi động: chuyền bóng nhẩm cộng trừ có nhớ."""
+    y = []
+    for kieu in luan_phien(rng, ["cong", "tru", "hon", "kem"], rng.randint(4, 5)):
+        if kieu == "cong":
+            # Cố ý ép có nhớ: hàng đơn vị của hai số cộng lại phải vượt 10.
+            dv_a = rng.randint(2, 9)
+            a = rng.randrange(1, 5) * 10 + dv_a
+            dv_b = rng.randint(10 - dv_a, 9)
+            b = rng.randrange(0, 4) * 10 + dv_b
+            y.append((f"{sv(a)} + {sv(b)} = …", sv(a + b)))
+        elif kieu == "tru":
+            # Cố ý ép có nhớ: hàng đơn vị của số trừ lớn hơn của số bị trừ.
+            dv_a = rng.randint(0, 7)
+            a = rng.randrange(3, 10) * 10 + dv_a
+            dv_b = rng.randint(dv_a + 1, 9)
+            b = rng.randrange(0, a // 10 - 1) * 10 + dv_b
+            y.append((f"{sv(a)} − {sv(b)} = …", sv(a - b)))
+        elif kieu == "hon":
+            a = rng.randint(12, 40)
+            d = rng.randint(3, 15)
+            y.append((f"Anh có {sv(a)} viên bi, em nhiều hơn anh {sv(d)} viên. "
+                      f"Em có mấy viên?", f"{sv(a + d)} viên"))
+        else:
+            a = rng.randint(28, 45)
+            d = rng.randint(3, 9)
+            y.append((f"Lớp 2A có {sv(a)} bạn, lớp 2B ít hơn {sv(d)} bạn. "
+                      f"Lớp 2B mấy bạn?", f"{sv(a - d)} bạn"))
+    return BaiMam(
+        tieu_de="Chuyền bóng nhẩm nhanh",
+        loi_doc="Mình chơi chuyền bóng. Ai nhận bóng thì trả lời, trả lời xong "
+                "chuyền cho người khác.",
+        y=y, mach="S",
+        do_dung=["Một quả bóng nhỏ hoặc con thú bông để chuyền tay"],
+        twm=["specialising", "generalising"],
+        cau_hoi_twm="Phép nào phải nhớ 1 sang hàng chục? Vì sao phải nhớ?",
+        dau_hieu_hieu="Trẻ nhớ đúng 1 sang hàng chục khi nhẩm miệng, không cần đặt "
+                      "tính ra giấy. Nhẩm được nghĩa là **hiểu chục và đơn vị**, "
+                      "không chỉ thuộc quy tắc đặt tính.",
+        khi_kho="Tách thành hai bước: cộng chục trước, cộng đơn vị sau, rồi gộp lại.",
+        mo_rong="Ai trả lời xong được ra đề cho người tiếp theo.")
+
+
+@dang_ky_mam("MM-L2-18", "L2", ("L209", "L210", "L213"), "H",
+             ("conjecturing", "convincing"))
+def mm_l2_18(rng):
+    """Khởi động: ước lượng nhanh dài – nặng – mấy giờ."""
+    y = []
+    DAI = [("chiều dài lớp học", "khoảng 6 đến 8 m"),
+           ("chiều cao cửa ra vào", "khoảng 2 m"),
+           ("chiều dài cái bảng", "khoảng 3 đến 4 m"),
+           ("chiều cao của con", "khoảng 120 đến 130 cm")]
+    NANG = [("một quyển sách giáo khoa", "khoảng 300 g"),
+            ("một chai nước 1 lít", "khoảng 1 kg"),
+            ("cặp sách của con", "khoảng 2 đến 3 kg")]
+    ten, uoc = rng.choice(DAI)
+    y.append((f"Con đoán {ten} khoảng bao nhiêu?", uoc))
+    ten, uoc = rng.choice(NANG)
+    y.append((f"Con đoán {ten} nặng khoảng bao nhiêu?", uoc))
+    g, p = rng.randint(1, 12), rng.choice([0, 15, 30, 45])
+    doc = (f"{sv(g)} giờ" if p == 0 else
+           f"{sv(g)} giờ {sv(p)} phút" +
+           (" — cũng đọc là {} giờ rưỡi".format(sv(g)) if p == 30 else ""))
+    y.append((f"Kim ngắn qua số {sv(g)}, kim dài chỉ số {sv(p // 5 if p else 12)}. "
+              f"Mấy giờ?", doc))
+    return BaiMam(
+        tieu_de="Đoán nhanh: dài, nặng, mấy giờ",
+        loi_doc="Khởi động bằng trò đoán. Chưa đo vội, cứ đoán trước đã.",
+        y=y, mach="H",
+        do_dung=["Thước dây hoặc thước mét", "Cân nhà bếp", "Đồng hồ kim"],
+        twm=["conjecturing", "convincing"],
+        cau_hoi_twm="Con lấy gì làm mốc để đoán? Con so với cái gì mà con biết sẵn?",
+        dau_hieu_hieu="Trẻ nêu được **mốc so sánh**: 'cao bằng hai lần con' hoặc "
+                      "'nặng bằng chai nước'. Ước lượng có mốc thì mới là ước "
+                      "lượng, đoán bừa thì không.",
+        khi_kho="Cho trẻ cầm vật nặng 1 kg và nhìn đoạn dài 1 m trước, lấy đó làm mốc.",
+        mo_rong="Đoán rồi đo ngay, ghi hai số cạnh nhau xem lệch bao nhiêu.")
+
+
+@dang_ky_mam("MM-L2-19", "L2", ("L211", "L212"), "H",
+             ("characterising", "classifying"))
+def mm_l2_19(rng):
+    """Khởi động: tạo hình bằng dây và bằng cơ thể."""
+    y = []
+    HINH_L2 = {"hình tứ giác": "4 đỉnh, 4 cạnh",
+               "hình tam giác": "3 đỉnh, 3 cạnh",
+               "đường gấp khúc ba đoạn": "4 điểm nối thành 3 đoạn thẳng"}
+    for h in rng.sample(list(HINH_L2), 2):
+        y.append((f"Cả nhóm dùng dây tạo thành {h}. Tạo xong đếm xem có mấy đỉnh, "
+                  f"mấy cạnh.", HINH_L2[h]))
+    k = rng.choice(["khối trụ", "khối cầu"])
+    lan = {"khối trụ": "lăn được khi đặt nằm, đứng yên khi đặt đứng vì có hai mặt phẳng",
+           "khối cầu": "lăn được về mọi phía vì không có mặt phẳng nào"}[k]
+    y.append((f"Tìm trong lớp một vật là {k}, thả xuống sàn nghiêng xem có lăn không.",
+              lan))
+    return BaiMam(
+        tieu_de="Tạo hình bằng dây",
+        loi_doc="Mình đứng dậy làm hình bằng sợi dây này nhé. Mỗi bạn giữ một góc.",
+        y=y, mach="H",
+        do_dung=["Một sợi dây dài khoảng 2 m nối thành vòng kín",
+                 "Vài đồ vật hình trụ và hình cầu: lon nước, quả bóng"],
+        twm=["characterising", "classifying"],
+        cau_hoi_twm="Giữ 4 góc thì được hình gì? Buông một góc ra thì còn là tứ giác nữa không?",
+        dau_hieu_hieu="Trẻ nói được hình tứ giác nào cũng có 4 đỉnh và 4 cạnh, dù "
+                      "hình méo hay vuông vắn. Nhận ra **đặc điểm chung** quan "
+                      "trọng hơn nhận mặt một hình cụ thể.",
+        khi_kho="Người lớn giữ giúp hai góc, trẻ giữ hai góc còn lại.",
+        mo_rong="Tạo hình tứ giác thật méo rồi hỏi trẻ nó còn là tứ giác không.")
+
+
+@dang_ky_mam("MM-L2-20", "L2", ("L214", "L215", "L216"), "T",
+             ("classifying", "conjecturing"))
+def mm_l2_20(rng):
+    """Khởi động: khảo sát chớp nhoáng cả lớp."""
+    y = []
+    CAU = [("Bạn nào thích màu đỏ thì giơ tay", "màu"),
+           ("Bạn nào đi học bằng xe máy thì giơ tay", "cách đi học"),
+           ("Bạn nào có em thì giơ tay", "gia đình"),
+           ("Bạn nào thích ăn phở hơn ăn bún thì giơ tay", "món ăn")]
+    for cau, loai in rng.sample(CAU, 2):
+        y.append((f"{cau}. Đếm số tay giơ lên rồi ghi vào bảng.",
+                  f"số bạn đếm được — ghi vào cột '{loai}' của bảng kiểm đếm"))
+    VIEC = [("Ngày mai mặt trời mọc ở hướng đông", "chắc chắn"),
+            ("Ngày mai trời mưa", "có thể"),
+            ("Con cá biết trèo cây", "không thể"),
+            ("Tháng sau lớp mình được nghỉ một ngày", "có thể")]
+    for viec, dap in rng.sample(VIEC, 2):
+        y.append((f"{viec} — chắc chắn, có thể hay không thể?", dap))
+    return BaiMam(
+        tieu_de="Khảo sát chớp nhoáng",
+        loi_doc="Mình hỏi nhanh cả lớp rồi đếm tay giơ lên. Đó chính là thu thập "
+                "số liệu đấy.",
+        y=y, mach="T",
+        do_dung=["Bảng giấy kẻ sẵn hai cột để kiểm đếm", "Bút dạ"],
+        twm=["classifying", "conjecturing"],
+        cau_hoi_twm="Đếm xong con biết thêm điều gì mà lúc chưa đếm con chưa biết?",
+        dau_hieu_hieu="Trẻ ghi bằng gạch năm một (⁄⁄⁄⁄\\) thay vì viết số ước "
+                      "chừng. Kiểm đếm có hệ thống là điều đầu tiên của mạch "
+                      "thống kê, trước cả việc vẽ biểu đồ.",
+        khi_kho="Đếm chậm, chỉ tay vào từng bạn, mỗi bạn một gạch.",
+        mo_rong="Hỏi thêm một câu mà trẻ đoán trước kết quả, rồi đếm để kiểm.")
+
+
+@dang_ky_mam("MM-L2-21", "L2", ("L205", "L206"), "S",
+             ("generalising", "critiquing"))
+def mm_l2_21(rng):
+    """Đố vui kết buổi: nhân chia trong đời sống."""
+    y = []
+    for kieu in luan_phien(rng, ["chan", "chia_deu", "gap", "doi"],
+                           rng.randint(3, 4)):
+        if kieu == "chan":
+            n = rng.randint(3, 9)
+            y.append((f"{sv(n)} con mèo có tất cả mấy cái chân?",
+                      f"{sv(n * 4)} cái chân"))
+        elif kieu == "chia_deu":
+            b = rng.choice([2, 5])
+            n = b * rng.randint(2, 5)
+            y.append((f"Chia đều {sv(n)} cái kẹo cho {sv(b)} bạn. "
+                      f"Mỗi bạn mấy cái?", f"{sv(n // b)} cái"))
+        elif kieu == "gap":
+            a = rng.randint(3, 9)
+            k = rng.choice([2, 5])
+            y.append((f"Con có {sv(a)} viên bi. Anh có gấp {sv(k)} lần con. "
+                      f"Anh có mấy viên?", f"{sv(a * k)} viên"))
+        else:
+            n = rng.choice([2, 5]) * rng.randint(3, 6)
+            y.append((f"Một đôi dép có 2 chiếc. {sv(n)} chiếc dép là mấy đôi?",
+                      f"{sv(n // 2)} đôi"))
+    return BaiMam(
+        tieu_de="Đố vui nhân chia",
+        loi_doc="Cuối buổi mình đố nhau. Con nhẩm miệng thôi, không phải viết.",
+        y=y, mach="S",
+        do_dung=["Không cần gì"],
+        twm=["generalising", "critiquing"],
+        cau_hoi_twm="Câu này con nhân hay chia? Chỗ nào trong đề cho con biết?",
+        dau_hieu_hieu="Trẻ nghe 'gấp mấy lần' là nghĩ ngay tới phép nhân, nghe "
+                      "'chia đều' là nghĩ tới phép chia — mà không cần thử cả hai.",
+        khi_kho="Vẽ nhanh sơ đồ: mấy nhóm, mỗi nhóm mấy cái.",
+        mo_rong="Hỏi ngược: 'mỗi bạn được 4 cái, chia cho 3 bạn thì cần mấy cái?'")
+
+
+@dang_ky_mam("MM-L2-22", "L2", ("L207", "L208"), "S",
+             ("conjecturing", "convincing"))
+def mm_l2_22(rng):
+    """Đố vui kết buổi: số bí mật đến 1 000."""
+    y = []
+    for _ in range(rng.randint(3, 4)):
+        n = rng.randint(101, 999)
+        tram, chuc, don_vi = n // 100, n // 10 % 10, n % 10
+        kieu = rng.choice(["cau_tao", "tron_tram", "so_sanh"])
+        if kieu == "cau_tao":
+            y.append((f"Số bí mật gồm {sv(tram)} trăm, {sv(chuc)} chục và "
+                      f"{sv(don_vi)} đơn vị. Số nào?", sv(n)))
+        elif kieu == "tron_tram":
+            gan = round(n / 100) * 100
+            y.append((f"Số tròn trăm gần {sv(n)} nhất là số nào?", sv(gan)))
+        else:
+            m = rng.choice([x for x in range(101, 1000) if x != n])
+            y.append((f"{sv(n)} và {sv(m)}: số nào bé hơn?", sv(min(n, m))))
+    return BaiMam(
+        tieu_de="Số bí mật đến 1 000",
+        loi_doc="Cô nghĩ một số có ba chữ số. Con đoán xem là số nào.",
+        y=y, mach="S",
+        do_dung=["Thẻ số hoặc bộ ô vuông trăm – chục – đơn vị (nếu có)"],
+        twm=["conjecturing", "convincing"],
+        cau_hoi_twm="So hai số ba chữ số thì con nhìn hàng nào trước? Vì sao không "
+                    "nhìn hàng đơn vị trước?",
+        dau_hieu_hieu="Trẻ so từ **hàng trăm trở xuống** và chỉ nhìn hàng sau khi "
+                      "hàng trước bằng nhau. So sai gần như luôn bắt nguồn từ "
+                      "việc so nhầm thứ tự hàng.",
+        khi_kho="Viết hai số thẳng cột trăm – chục – đơn vị cho trẻ nhìn.",
+        mo_rong="Đố số lớn nhất và bé nhất viết được từ ba chữ số 2, 7, 5.")
+
+
+@dang_ky_mam("MM-L2-23", "L2", ("L209", "L210", "L213"), "H",
+             ("critiquing", "convincing"))
+def mm_l2_23(rng):
+    """Đố vui kết buổi: đổi đơn vị và tính giờ."""
+    y = []
+    for kieu in luan_phien(rng, ["doi_dai", "doi_nang", "gio"], rng.randint(3, 4)):
+        if kieu == "doi_dai":
+            m = rng.randint(2, 9)
+            if rng.random() < 0.5:
+                y.append((f"{sv(m)} m bằng bao nhiêu dm?", f"{sv(m * 10)} dm"))
+            else:
+                y.append((f"{sv(m)} dm bằng bao nhiêu cm?", f"{sv(m * 10)} cm"))
+        elif kieu == "doi_nang":
+            k = rng.randint(2, 9)
+            y.append((f"{sv(k)} kg bằng bao nhiêu gam?", f"{sv(k * 1000)} g"))
+        else:
+            g = rng.randint(1, 9)
+            them = rng.randint(1, 3)
+            y.append((f"Bây giờ là {sv(g)} giờ. {sv(them)} tiếng nữa là mấy giờ?",
+                      f"{sv(g + them)} giờ"))
+    return BaiMam(
+        tieu_de="Đố vui đo lường và giờ",
+        loi_doc="Câu đố cuối buổi thôi, toàn thứ mình vừa học xong.",
+        y=y, mach="H",
+        do_dung=["Thước mét", "Đồng hồ kim"],
+        twm=["critiquing", "convincing"],
+        cau_hoi_twm="Đổi từ m sang dm thì số to lên hay bé đi? Vì sao?",
+        dau_hieu_hieu="Trẻ nói được vì sao số to lên khi đổi sang đơn vị nhỏ hơn: "
+                      "**đơn vị nhỏ thì cần nhiều cái hơn** để đo cùng một đoạn. "
+                      "Nhớ quy tắc mà không hiểu chỗ này thì đến lớp 4 sẽ đổi ngược.",
+        khi_kho="Lấy thước mét ra đếm thật: 1 m có mấy đoạn 1 dm.",
+        mo_rong="Hỏi 1 kg và 1 000 g cái nào nặng hơn — nhiều trẻ trả lời 1 000 g.")
+
+
+@dang_ky_mam("MM-L2-24", "L2", ("L204", "L214", "L215"), "T",
+             ("classifying", "critiquing"))
+def mm_l2_24(rng):
+    """Đố vui kết buổi: đọc biểu đồ tranh và so nhiều hơn ít hơn."""
+    LOAI = rng.sample(["cam", "táo", "chuối", "xoài", "ổi"], 3)
+    so = [rng.randint(2, 9) for _ in LOAI]
+    bang = "\n".join(f"- {t}: " + "🍎" * n + f"  ({sv(n)} quả)"
+                     for t, n in zip(LOAI, so))
+    cao = LOAI[so.index(max(so))]
+    thap = LOAI[so.index(min(so))]
+    y = [(f"{bang}\n\nLoại quả nào nhiều nhất?", cao),
+         (f"Loại quả nào ít nhất?", thap),
+         (f"{hoa(cao)} nhiều hơn {thap} mấy quả?", f"{sv(max(so) - min(so))} quả"),
+         ("Tất cả có mấy quả?", f"{sv(sum(so))} quả")]
+    return BaiMam(
+        tieu_de="Đọc biểu đồ tranh",
+        loi_doc="Nhìn biểu đồ rồi trả lời giúp cô. Mỗi hình một quả nhé.",
+        y=y, mach="T",
+        do_dung=["Giấy kẻ sẵn biểu đồ tranh", "Nhãn dán hoặc bút màu"],
+        twm=["classifying", "critiquing"],
+        cau_hoi_twm="Nhìn biểu đồ, con biết ngay loại nào nhiều nhất mà không cần "
+                    "đếm. Vì sao?",
+        dau_hieu_hieu="Trẻ so hai hàng bằng cách nhìn hàng nào **dài hơn**, chỉ đếm "
+                      "khi cần biết hơn kém bao nhiêu. Đó chính là lý do người ta "
+                      "vẽ biểu đồ thay vì viết bảng số.",
+        khi_kho="Cho trẻ chỉ tay theo từng hàng và đếm to.",
+        mo_rong="Che số đi, chỉ để hình — trẻ vẫn trả lời được câu nào?")
+
+
+
+# ═══════════════════════════════════════════════════════════════════
+#  ĐỢT NĂM — Ô LUYỆN THỨ HAI CỦA LỚP 2
+#
+#  Buổi của lớp 2 dài 40 phút và có **hai** ô luyện, trong khi mỗi chủ đề trước
+#  đây chỉ có một mẫu luyện. Ô luyện thứ hai vì thế phải mượn mẫu đố vui của
+#  cùng chủ đề — nhẹ hơn hẳn mức cần có, nên nửa sau của buổi học hụt nội dung.
+#
+#  Đợt này viết cho mỗi chủ đề lớp 2 một mẫu luyện thứ hai, cố ý **khác kiểu**
+#  với mẫu luyện thứ nhất: nếu mẫu đầu là tính thì mẫu sau là bài có lời văn
+#  hoặc tìm thành phần chưa biết, để hai ô luyện không thành làm một việc hai lần.
+# ═══════════════════════════════════════════════════════════════════
+
+
+@dang_ky_mam("MM-L2-25", "L2", ("L201", "L202", "L203"), "S",
+             ("improving", "critiquing"))
+def mm_l2_25(rng):
+    """Luyện: đặt tính rồi tính, và tìm số hạng chưa biết."""
+    y = []
+    for kieu in luan_phien(rng, ["cong", "tru", "tim_hang", "tim_bi_tru"], 5):
+        if kieu == "cong":
+            dv_a = rng.randint(2, 9)
+            a = rng.randrange(1, 6) * 10 + dv_a
+            b = rng.randrange(0, 4) * 10 + rng.randint(10 - dv_a, 9)
+            y.append((f"Đặt tính rồi tính: {sv(a)} + {sv(b)}", sv(a + b)))
+        elif kieu == "tru":
+            dv_a = rng.randint(0, 7)
+            a = rng.randrange(3, 10) * 10 + dv_a
+            b = rng.randrange(0, a // 10 - 1) * 10 + rng.randint(dv_a + 1, 9)
+            y.append((f"Đặt tính rồi tính: {sv(a)} − {sv(b)}", sv(a - b)))
+        elif kieu == "tim_hang":
+            x = rng.randint(12, 48)
+            b = rng.randint(11, 40)
+            y.append((f"Tìm số còn thiếu: … + {sv(b)} = {sv(x + b)}", sv(x)))
+        else:
+            x = rng.randint(20, 80)
+            b = rng.randint(11, min(40, x - 1))
+            y.append((f"Tìm số còn thiếu: … − {sv(b)} = {sv(x - b)}", sv(x)))
+    return BaiMam(
+        tieu_de="Đặt tính và tìm số còn thiếu",
+        loi_doc="Con đặt tính thẳng cột: đơn vị dưới đơn vị, chục dưới chục. "
+                "Cộng từ hàng đơn vị trở đi.",
+        y=y, mach="S",
+        do_dung=["Vở ô ly", "Que tính bó chục để kiểm lại khi sai"],
+        twm=["improving", "critiquing"],
+        cau_hoi_twm="Phép nào phải nhớ 1? Con ghi số nhớ ở đâu cho khỏi quên?",
+        dau_hieu_hieu="Trẻ viết thẳng cột và nhớ đúng 1 sang hàng chục. Tìm được "
+                      "số hạng chưa biết là bước cao hơn: trẻ phải hiểu **phép trừ "
+                      "gỡ được phép cộng**, chứ không chỉ tính xuôi.",
+        khi_kho="Kẻ sẵn hai cột chục – đơn vị trên vở. Lỗi thường gặp nhất ở lớp 2 "
+                "là viết lệch cột chứ không phải tính sai.",
+        mo_rong="Cho một phép tính đã làm sai rồi hỏi trẻ sai ở bước nào.")
+
+
+@dang_ky_mam("MM-L2-26", "L2", ("L204", "L207", "L208"), "S",
+             ("conjecturing", "convincing"))
+def mm_l2_26(rng):
+    """Luyện: bài toán có lời văn nhiều hơn – ít hơn với số đến 1 000."""
+    y = []
+    for _ in range(rng.randint(4, 5)):
+        b1, b2 = rng.sample(BAN, 2)
+        do = rng.choice(["quyển sách", "con tem", "viên bi", "cái nhãn vở"])
+        a = rng.randrange(120, 700, 10) + rng.randint(0, 9)
+        d = rng.randrange(20, 200, 10)
+        if rng.random() < 0.5:
+            y.append((f"Bạn {b1} có {sv(a)} {do}. Bạn {b2} có nhiều hơn bạn {b1} "
+                      f"{sv(d)} {do}. Bạn {b2} có bao nhiêu {do}?",
+                      f"{sv(a)} + {sv(d)} = {sv(a + d)} {do}"))
+        else:
+            y.append((f"Bạn {b1} có {sv(a)} {do}. Bạn {b2} có ít hơn bạn {b1} "
+                      f"{sv(d)} {do}. Bạn {b2} có bao nhiêu {do}?",
+                      f"{sv(a)} − {sv(d)} = {sv(a - d)} {do}"))
+    return BaiMam(
+        tieu_de="Bài toán nhiều hơn – ít hơn",
+        loi_doc="Đọc đề hai lần. Lần đầu để biết chuyện gì, lần sau để tìm hai số "
+                "và tìm chữ 'nhiều hơn' hay 'ít hơn'.",
+        y=y, mach="S",
+        do_dung=["Vở ô ly", "Bút chì để vẽ sơ đồ đoạn thẳng"],
+        twm=["conjecturing", "convincing"],
+        cau_hoi_twm="Vẽ hai đoạn thẳng cho hai bạn. Đoạn nào dài hơn? Phần dài hơn ấy "
+                    "là số nào trong đề?",
+        dau_hieu_hieu="Trẻ vẽ được sơ đồ hai đoạn thẳng trước khi tính. Vẽ đúng thì "
+                      "chọn đúng phép tính; **lỗi phổ biến nhất là thấy chữ 'nhiều "
+                      "hơn' liền cộng**, kể cả khi đề hỏi số bé.",
+        khi_kho="Thay số lớn bằng số nhỏ trong phạm vi 20 rồi diễn lại bằng que tính.",
+        mo_rong="Đảo đề: cho biết bạn nhiều hơn có bao nhiêu, hỏi bạn còn lại — "
+                "lúc này 'nhiều hơn' lại phải trừ.")
+
+
+@dang_ky_mam("MM-L2-27", "L2", ("L205", "L206"), "S",
+             ("generalising", "improving"))
+def mm_l2_27(rng):
+    """Luyện: bảng nhân chia và tìm thừa số, số bị chia chưa biết."""
+    y = []
+    for kieu in luan_phien(rng, ["nhan", "chia", "tim_thua", "loi_van"], 5):
+        b = rng.choice([2, 5])
+        n = rng.randint(2, 10)
+        if kieu == "nhan":
+            y.append((f"{sv(b)} × {sv(n)} = …", sv(b * n)))
+        elif kieu == "chia":
+            y.append((f"{sv(b * n)} : {sv(b)} = …", sv(n)))
+        elif kieu == "tim_thua":
+            y.append((f"Tìm số còn thiếu: {sv(b)} × … = {sv(b * n)}", sv(n)))
+        else:
+            do = rng.choice(["cái bánh", "quyển vở", "cây bút", "cái kẹo"])
+            if rng.random() < 0.5:
+                y.append((f"Mỗi hộp có {sv(b)} {do}. {sv(n)} hộp có bao nhiêu {do}?",
+                          f"{sv(b)} × {sv(n)} = {sv(b * n)} {do}"))
+            else:
+                y.append((f"Có {sv(b * n)} {do} chia đều vào {sv(b)} hộp. "
+                          f"Mỗi hộp mấy {do}?",
+                          f"{sv(b * n)} : {sv(b)} = {sv(n)} {do}"))
+    return BaiMam(
+        tieu_de="Bảng nhân, bảng chia và số còn thiếu",
+        loi_doc="Nhân là cộng nhiều lần bằng nhau. Chia là chia đều ra. Con nhớ "
+                "được phép nhân thì suy ra phép chia.",
+        y=y, mach="S",
+        do_dung=["Hột hạt hoặc nắp chai để xếp thành nhóm bằng nhau",
+                 "Bảng nhân 2 và bảng nhân 5 dán trên tường"],
+        twm=["generalising", "improving"],
+        cau_hoi_twm="Con biết 5 × 6 = 30. Vậy 30 : 5 bằng mấy? Vì sao con biết ngay "
+                    "mà không cần chia?",
+        dau_hieu_hieu="Trẻ dùng phép nhân để tìm ra phép chia thay vì chia lại từ "
+                      "đầu. Nhìn ra **nhân và chia là hai mặt của một việc** tiết "
+                      "kiệm cho trẻ đúng một nửa số bảng phải học.",
+        khi_kho="Xếp hột hạt thành từng nhóm bằng nhau, đếm nhóm rồi đếm cả.",
+        mo_rong="Hỏi 2 × 5 và 5 × 2 — hai phép cho cùng một kết quả, vì sao?")
+
+
+@dang_ky_mam("MM-L2-28", "L2", ("L209", "L210", "L213"), "H",
+             ("critiquing", "convincing"))
+def mm_l2_28(rng):
+    """Luyện: tính với số đo và đổi đơn vị."""
+    y = []
+    for kieu in luan_phien(rng, ["doi", "cong_do", "so_do", "gio"], 5):
+        if kieu == "doi":
+            m = rng.randint(2, 9)
+            don = rng.choice([("m", "dm", 10), ("dm", "cm", 10), ("kg", "g", 1000)])
+            y.append((f"{sv(m)} {don[0]} = … {don[1]}", f"{sv(m * don[2])} {don[1]}"))
+        elif kieu == "cong_do":
+            don = rng.choice(["cm", "dm", "kg", "l"])
+            a, b = rng.randint(12, 60), rng.randint(5, 30)
+            y.append((f"{sv(a)} {don} + {sv(b)} {don} = …", f"{sv(a + b)} {don}"))
+        elif kieu == "so_do":
+            a = rng.randint(20, 90)
+            b = rng.randint(5, a - 5)
+            y.append((f"Băng giấy dài {sv(a)} cm, cắt đi {sv(b)} cm. "
+                      f"Còn lại dài bao nhiêu?", f"{sv(a - b)} cm"))
+        else:
+            g = rng.randint(1, 8)
+            keo = rng.randint(1, 3)
+            y.append((f"Bạn Nam bắt đầu học lúc {sv(g)} giờ, học {sv(keo)} tiếng "
+                      f"thì xong. Xong lúc mấy giờ?", f"{sv(g + keo)} giờ"))
+    return BaiMam(
+        tieu_de="Tính với số đo",
+        loi_doc="Tính với số đo cũng như tính với số thường, chỉ khác là **viết "
+                "kèm đơn vị** vào sau kết quả.",
+        y=y, mach="H",
+        do_dung=["Thước có vạch cm và dm", "Cân nhà bếp", "Ca đong 1 lít",
+                 "Đồng hồ kim"],
+        twm=["critiquing", "convincing"],
+        cau_hoi_twm="Cộng 20 cm với 3 dm được không? Phải làm gì trước đã?",
+        dau_hieu_hieu="Trẻ viết đơn vị vào kết quả mà không cần nhắc, và biết phải "
+                      "**đưa về cùng đơn vị** trước khi cộng. Bỏ quên đơn vị là lỗi "
+                      "trừ điểm nhiều nhất của lớp 2.",
+        khi_kho="Đo thật bằng thước rồi mới tính, để trẻ thấy con số gắn với vật thật.",
+        mo_rong="Cho cộng hai số đo khác đơn vị — trẻ phải tự nhận ra chỗ vướng.")
+
+
+@dang_ky_mam("MM-L2-29", "L2", ("L211", "L212"), "H",
+             ("characterising", "specialising"))
+def mm_l2_29(rng):
+    """Luyện: đếm hình và tính độ dài đường gấp khúc."""
+    y = []
+    n_doan = rng.randint(3, 4)
+    doan = [rng.randint(3, 15) for _ in range(n_doan)]
+    y.append(("Đường gấp khúc gồm các đoạn: " +
+              " , ".join(f"{sv(d)} cm" for d in doan) +
+              " . Tính độ dài đường gấp khúc.",
+              " + ".join(sv(d) for d in doan) + f" = {sv(sum(doan))} cm"))
+    canh = rng.randint(4, 12)
+    y.append((f"Hình tứ giác có 4 cạnh đều dài {sv(canh)} cm. "
+              f"Tính chu vi hình ấy.",
+              f"{sv(canh)} × 4 = {sv(canh * 4)} cm"))
+    # Không hỏi lại đúng con số vừa cho trong đề. Ghép k hình tam giác nhỏ
+    # thành một hàng thì ngoài k hình nhỏ còn đếm được các hình ghép từ những
+    # hình nhỏ liền nhau: tất cả là k(k+1)/2.
+    n_tg = rng.randint(3, 4)
+    tong = n_tg * (n_tg + 1) // 2
+    y.append((f"Vẽ {sv(n_tg)} hình tam giác nhỏ bằng nhau ghép liền nhau thành "
+              f"một hàng. Đếm xem có tất cả mấy hình tam giác, kể cả hình ghép "
+              f"từ nhiều hình nhỏ?",
+              f"{sv(tong)} hình — {sv(n_tg)} hình nhỏ và "
+              f"{sv(tong - n_tg)} hình ghép"))
+    n_diem = rng.randint(3, 4)
+    y.append((f"Có {sv(n_diem)} điểm nằm trên một đường thẳng, cách đều nhau. "
+              f"Nối hai điểm ngoài cùng thì được mấy đoạn thẳng nhỏ liền nhau?",
+              f"{sv(n_diem - 1)} đoạn"))
+    y.append(("Kể tên ba vật trong lớp có dạng khối trụ hoặc khối hộp chữ nhật.",
+              "khối trụ: lon nước, cốc giấy, hộp bút tròn · "
+              "khối hộp chữ nhật: hộp phấn, quyển sách dày, cặp sách"))
+    return BaiMam(
+        tieu_de="Đường gấp khúc, hình và khối",
+        loi_doc="Đường gấp khúc là nhiều đoạn thẳng nối liền nhau. Muốn biết nó "
+                "dài bao nhiêu thì cộng hết các đoạn lại.",
+        y=y, mach="H",
+        do_dung=["Thước có vạch cm", "Dây hoặc que tính để tạo đường gấp khúc",
+                 "Vài đồ vật khối trụ và khối hộp"],
+        twm=["characterising", "specialising"],
+        cau_hoi_twm="Nếu duỗi thẳng đường gấp khúc ra thành một đoạn, đoạn ấy dài "
+                    "bao nhiêu? Vì sao vẫn bằng tổng các đoạn nhỏ?",
+        dau_hieu_hieu="Trẻ cộng đủ mọi đoạn, không bỏ sót đoạn cuối. Hiểu được **duỗi "
+                      "thẳng ra thì độ dài không đổi** là ý chính của cả bài, "
+                      "quan trọng hơn việc cộng đúng.",
+        khi_kho="Lấy dây xếp thành đường gấp khúc rồi kéo thẳng ra đo lại.",
+        mo_rong="Cho hai đường gấp khúc khác hình nhưng cùng độ dài — hỏi trẻ cái "
+                "nào dài hơn.")
+
+
+@dang_ky_mam("MM-L2-30", "L2", ("L214", "L215", "L216"), "T",
+             ("classifying", "conjecturing"))
+def mm_l2_30(rng):
+    """Luyện: lập bảng kiểm đếm rồi trả lời và đoán khả năng."""
+    LOAI = rng.sample(["xe đạp", "xe máy", "ô tô", "đi bộ", "xe buýt"], 3)
+    so = rng.sample(range(3, 15), 3)
+    bang = " · ".join(f"{t}: {sv(n)} bạn" for t, n in zip(LOAI, so))
+    cao = LOAI[so.index(max(so))]
+    thap = LOAI[so.index(min(so))]
+    y = [(f"Lớp 2A khảo sát cách đi học. Kết quả: {bang}. "
+          f"Cách nào nhiều bạn chọn nhất?", cao),
+         ("Cách nào ít bạn chọn nhất?", thap),
+         (f"{hoa(cao)} nhiều hơn {thap} bao nhiêu bạn?",
+          f"{sv(max(so))} − {sv(min(so))} = {sv(max(so) - min(so))} bạn"),
+         ("Lớp khảo sát tất cả bao nhiêu bạn?",
+          " + ".join(sv(n) for n in so) + f" = {sv(sum(so))} bạn")]
+    HOP = [("Rút một bạn bất kỳ trong lớp, bạn ấy đi học bằng " + cao,
+            "có thể — vì có bạn đi bằng cách ấy, nhưng không phải bạn nào cũng thế"),
+           ("Rút một bạn bất kỳ, bạn ấy đi học bằng máy bay",
+            "không thể — không bạn nào trong bảng đi bằng cách ấy"),
+           ("Rút một bạn bất kỳ, bạn ấy đi học bằng một trong ba cách trong bảng",
+            "chắc chắn — bảng đã kể hết mọi bạn trong lớp")]
+    for cau, dap in rng.sample(HOP, 2):
+        y.append((f"{cau} — chắc chắn, có thể hay không thể?", dap))
+    return BaiMam(
+        tieu_de="Đọc bảng số liệu và đoán khả năng",
+        loi_doc="Bảng này do chính lớp mình đếm ra. Con đọc bảng rồi trả lời giúp cô.",
+        y=y, mach="T",
+        do_dung=["Bảng kiểm đếm kẻ sẵn", "Bút màu để tô cột cao nhất"],
+        twm=["classifying", "conjecturing"],
+        cau_hoi_twm="Vì sao câu này là 'có thể' chứ không phải 'chắc chắn'?",
+        dau_hieu_hieu="Trẻ phân biệt được **chắc chắn** với **có thể**: chắc chắn là "
+                      "không còn khả năng nào khác, còn có thể là vẫn còn khả năng "
+                      "khác. Trẻ hay gộp hai cái này làm một.",
+        khi_kho="Diễn lại bằng rổ đồ vật thật: bốc một vật ra khỏi rổ rồi hỏi lại.",
+        mo_rong="Thêm một cách đi học không bạn nào chọn, rồi hỏi lại — cột 0 bạn "
+                "vẫn phải có trong bảng.")
+
+# ═══════════════════════════════════════════════════════════════════
 #  VAI CỦA TỪNG MẪU TRONG MỘT BUỔI
 #
 #  Bốn hoạt động của một buổi mẫu giáo có bốn mục đích khác nhau, và không phải
@@ -1649,6 +2670,19 @@ VAI_MAU = {
     "MM-L1-15": "luyen", "MM-L1-16": "luyen",
     "MM-L2-13": "kham_pha", "MM-L2-14": "kham_pha",
     "MM-L2-15": "luyen", "MM-L2-16": "luyen",
+    # đợt bốn — mọi chủ đề tự mở và tự kết bằng nội dung của chính mình
+    "MM-MG-21": "khoi_dong", "MM-MG-22": "khoi_dong", "MM-MG-23": "khoi_dong",
+    "MM-MG-24": "do_vui", "MM-MG-25": "do_vui",
+    "MM-L1-18": "khoi_dong", "MM-L1-19": "khoi_dong",
+    "MM-L1-20": "khoi_dong", "MM-L1-21": "khoi_dong",
+    "MM-L1-22": "do_vui", "MM-L1-23": "do_vui", "MM-L1-24": "do_vui",
+    "MM-L2-17": "khoi_dong", "MM-L2-18": "khoi_dong",
+    "MM-L2-19": "khoi_dong", "MM-L2-20": "khoi_dong",
+    "MM-L2-21": "do_vui", "MM-L2-22": "do_vui",
+    "MM-L2-23": "do_vui", "MM-L2-24": "do_vui",
+    # đợt năm — ô luyện thứ hai của lớp 2
+    "MM-L2-25": "luyen", "MM-L2-26": "luyen", "MM-L2-27": "luyen",
+    "MM-L2-28": "luyen", "MM-L2-29": "luyen", "MM-L2-30": "luyen",
 }
 
 # Vai tương ứng với từng ô của một buổi, theo thứ tự các ô trong `PHAN_BUOI`.

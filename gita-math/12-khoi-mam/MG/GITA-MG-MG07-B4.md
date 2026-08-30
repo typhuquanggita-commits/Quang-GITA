@@ -30,13 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-a) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+a) Con chạy đi tìm một thứ trong nhà có hình tam giác.
 
-b) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+b) Con chạy đi tìm một thứ trong nhà có hình chữ nhật.
 
-c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+c) Tìm cho cô một thứ là khối trụ.
+
+d) Tìm một thứ dài hơn gang tay của con.
 
 
 ## Cùng khám phá · 8 phút
@@ -45,13 +47,11 @@ c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ v�
 
 **Tìm hình quanh mình**
 
-a) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
+a) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
 
-b) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
+b) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
 
-c) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
-
-d) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
+c) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hình vuông.
 
 
 ## Tự làm thử · 7 phút
@@ -60,11 +60,11 @@ d) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có d�
 
 **Khoanh, nối, tô**
 
-a) Con tô màu hình tròn.
+a) Con khoanh vào vật ở giữa hàng.
 
 b) Con nối mỗi con vật với cái chuồng của nó.
 
-c) Con khoanh vào vật ở giữa hàng.
+c) Con khoanh tròn nhóm có nhiều hơn.
 
 d) Con gạch bỏ vật không cùng nhóm.
 
@@ -73,13 +73,15 @@ d) Con gạch bỏ vật không cùng nhóm.
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Sáng, trưa, chiều, tối**
+**Đố vui so sánh**
 
-a) Con đánh răng buổi sớm vào buổi nào trong ngày?
+a) Cái ấm và cái cốc: cái nào to hơn?
 
-b) Con đi ngủ vào buổi nào trong ngày?
+b) Con voi và con kiến: cái nào to hơn?
 
-c) Con tan học vào buổi nào trong ngày?
+c) Cái bút và cái thước: cái nào to hơn?
+
+d) Cô có 3 cái kẹo, con có 4 cái. Ai nhiều hơn?
 
 
 ---
@@ -90,7 +92,7 @@ c) Con tan học vào buổi nào trong ngày?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Đi săn hình quanh nhà | ☐ | ☐ | ☐ |
 | Tìm hình quanh mình | ☐ | ☐ | ☐ |
 | Khoanh, nối, tô | ☐ | ☐ | ☐ |
-| Sáng, trưa, chiều, tối | ☐ | ☐ | ☐ |
+| Đố vui so sánh | ☐ | ☐ | ☐ |

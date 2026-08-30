@@ -42,58 +42,57 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Bảng số hoặc thẻ trăm – chục – đơn vị
+- Bảng giấy kẻ sẵn hai cột để kiểm đếm
+- Bút dạ
 - Giấy kẻ ô
 - Bút màu
 - Giấy kẻ ô để vẽ biểu đồ tranh
 - Bảng số liệu in sẵn
-- Một hộp bi có bi hai màu để thử thật
+- Giấy kẻ sẵn biểu đồ tranh
+- Nhãn dán hoặc bút màu
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Khảo sát chớp nhoáng**
 
-> **Cô/mẹ đọc lên:** Số tròn trăm thì nhẩm như đếm trăm: 3 trăm thêm 2 trăm là 5 trăm.
+> **Cô/mẹ đọc lên:** Mình hỏi nhanh cả lớp rồi đếm tay giơ lên. Đó chính là thu thập số liệu đấy.
 
 **Đáp án từng việc**
 
-a) Số 860 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **8 trăm, 6 chục, 0 đơn vị**
+a) Bạn nào có em thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'gia đình' của bảng kiểm đếm**
 
-b) Tính nhẩm: 700 + 100
-   → **800**
+b) Bạn nào thích màu đỏ thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
+   → **số bạn đếm được — ghi vào cột 'màu' của bảng kiểm đếm**
 
-c) Tính nhẩm: 100 + 100
-   → **200**
+c) Tháng sau lớp mình được nghỉ một ngày — chắc chắn, có thể hay không thể?
+   → **có thể**
 
-d) Số 680 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **6 trăm, 8 chục, 0 đơn vị**
+d) Con cá biết trèo cây — chắc chắn, có thể hay không thể?
+   → **không thể**
 
-e) Số 758 gồm mấy trăm, mấy chục, mấy đơn vị?
-   → **7 trăm, 5 chục, 8 đơn vị**
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Đoán thử)*: Đếm xong con biết thêm điều gì mà lúc chưa đếm con chưa biết?
 
-**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Vì sao 300 + 200 nhẩm nhanh hơn 347 + 285?
+**Thế nào là con đã hiểu:** Trẻ ghi bằng gạch năm một (⁄⁄⁄⁄\) thay vì viết số ước chừng. Kiểm đếm có hệ thống là điều đầu tiên của mạch thống kê, trước cả việc vẽ biểu đồ.
 
-**Thế nào là con đã hiểu:** Trẻ nhẩm số tròn trăm mà không đặt tính. Biết khi nào cần đặt tính và khi nào không là dấu hiệu đã chọn cách làm.
+**Con tắc thì làm gì:** Đếm chậm, chỉ tay vào từng bạn, mỗi bạn một gạch.
 
-**Con tắc thì làm gì:** Che hai chữ số cuối để trẻ chỉ nhìn hàng trăm.
-
-**Nếu con làm nhanh:** Nhẩm số tròn chục trong phạm vi 1 000.
+**Nếu con làm nhanh:** Hỏi thêm một câu mà trẻ đoán trước kết quả, rồi đếm để kiểm.
 
 
 ---
 
 ## PHẦN B — Học cái mới
 
-**Kiểm đếm về món ăn sáng của các bạn**
+**Kiểm đếm về phương tiện đi học**
 
 > **Cô/mẹ đọc lên:** Con đi hỏi từng bạn rồi ghi ngay vào bảng, đừng để nhớ trong đầu.
 
 **Đáp án từng việc**
 
-a) Con đi hỏi và kiểm đếm về món ăn sáng của các bạn. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về phương tiện đi học. Ghi vào bảng.
    → **trẻ tự thu thập — người lớn kiểm bảng có đủ cột và đủ ô không**
 
 b) Loại nào nhiều nhất trong bảng của con?
@@ -124,17 +123,17 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 **Đáp án từng việc**
 
-a) Bảng kiểm đếm: quả xoài: 7 · quả lê: 7 · quả cam: 4. Loại nào nhiều nhất?
-   → **quả xoài**
+a) Bảng kiểm đếm: quả lê: 5 · quả xoài: 4 · quả táo: 9. Loại nào nhiều nhất?
+   → **quả táo**
 
 b) Loại nào ít nhất?
-   → **quả cam**
+   → **quả xoài**
 
 c) Có tất cả bao nhiêu quả?
    → **18**
 
-d) Quả xoài nhiều hơn quả cam mấy quả?
-   → **3**
+d) Quả táo nhiều hơn quả xoài mấy quả?
+   → **5**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Nhìn bảng này con thấy điều gì đáng chú ý? Con kể cho cô nghe.
 
@@ -155,17 +154,17 @@ d) Quả xoài nhiều hơn quả cam mấy quả?
 
 **Đáp án từng việc**
 
-a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 4, thứ Ba: 6, thứ Tư: 5, thứ Năm: 15, thứ Sáu: 5. Ngày nào đọc nhiều nhất?
-   → **thứ Năm**
+a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 6, thứ Ba: 11, thứ Tư: 14, thứ Năm: 7, thứ Sáu: 9. Ngày nào đọc nhiều nhất?
+   → **thứ Tư**
 
 b) Cả tuần đọc bao nhiêu quyển?
-   → **35**
+   → **47**
 
 c) Thứ Hai và thứ Ba đọc tất cả mấy quyển?
-   → **10**
+   → **17**
 
 d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
-   → **11**
+   → **8**
 
 **Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Làm cách gọn hơn)*: Câu nào con phải cộng nhiều số? Có cách cộng nào nhanh hơn không?
 
@@ -180,37 +179,35 @@ d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
 
 ## PHẦN E — Thử thách vui
 
-**Chắc chắn, có thể, không thể**
+**Đọc biểu đồ tranh**
 
-> **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
+> **Cô/mẹ đọc lên:** Nhìn biểu đồ rồi trả lời giúp cô. Mỗi hình một quả nhé.
 
 **Đáp án từng việc**
 
-a) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
-   → **có thể**
+a) - cam: 🍎🍎🍎  (3 quả)
+- chuối: 🍎🍎🍎  (3 quả)
+- táo: 🍎🍎  (2 quả)
 
-b) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+Loại quả nào nhiều nhất?
+   → **cam**
 
-c) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-   → **không thể**
+b) Loại quả nào ít nhất?
+   → **táo**
 
-d) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
-   → **không thể**
+c) Cam nhiều hơn táo mấy quả?
+   → **1 quả**
 
-e) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+d) Tất cả có mấy quả?
+   → **8 quả**
 
-f) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
-   → **có thể**
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Nhìn biểu đồ, con biết ngay loại nào nhiều nhất mà không cần đếm. Vì sao?
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
+**Thế nào là con đã hiểu:** Trẻ so hai hàng bằng cách nhìn hàng nào **dài hơn**, chỉ đếm khi cần biết hơn kém bao nhiêu. Đó chính là lý do người ta vẽ biểu đồ thay vì viết bảng số.
 
-**Thế nào là con đã hiểu:** Trẻ phân biệt được “không thể” với “khó xảy ra”. Đây là chỗ nhầm nhiều nhất, và cũng là gốc của khái niệm xác suất sau này.
+**Con tắc thì làm gì:** Cho trẻ chỉ tay theo từng hàng và đếm to.
 
-**Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
+**Nếu con làm nhanh:** Che số đi, chỉ để hình — trẻ vẫn trả lời được câu nào?
 
 
 ---

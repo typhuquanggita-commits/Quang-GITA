@@ -30,15 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Nhảy và đếm**
+**Nhìn nhanh — bên nào nhiều hơn**
 
-a) Con gật đầu đúng 3 cái nhé. Đếm to lên.
+a) Cô để 2 bông hoa bên trái, 4 bông hoa bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều bông hơn?
 
-b) Con nhảy đúng 7 cái nhé. Đếm to lên.
+b) Cô để 7 cái bánh bên trái, 3 cái bánh bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều cái hơn?
 
-c) Con bước lên phía trước đúng 2 bước nhé. Đếm to lên.
+c) Cô để 3 chiếc lá bên trái, 5 chiếc lá bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều chiếc hơn?
 
-d) Con giậm chân đúng 4 cái nhé. Đếm to lên.
+d) Cô để 9 quả cam bên trái, 8 quả cam bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quả hơn?
 
 
 ## Cùng khám phá · 8 phút
@@ -47,13 +47,11 @@ d) Con giậm chân đúng 4 cái nhé. Đếm to lên.
 
 **Xếp theo thứ tự**
 
-a) Con tìm 3 sợi dây rồi xếp theo thứ tự từ ngắn nhất đến dài nhất.
+a) Con tìm 3 cái cốc rồi xếp theo thứ tự từ nhỏ nhất đến to nhất.
 
-b) Con tìm 4 quyển sách rồi xếp theo thứ tự từ mỏng nhất đến dày nhất.
+b) Con tìm 3 cây bút chì rồi xếp theo thứ tự từ ngắn nhất đến dài nhất.
 
-c) Con tìm 4 cái cốc rồi xếp theo thứ tự từ nhỏ nhất đến to nhất.
-
-d) Con tìm 4 bạn trong nhà rồi xếp theo thứ tự từ thấp nhất đến cao nhất.
+c) Con tìm 4 quyển sách rồi xếp theo thứ tự từ mỏng nhất đến dày nhất.
 
 
 ## Tự làm thử · 7 phút
@@ -62,7 +60,7 @@ d) Con tìm 4 bạn trong nhà rồi xếp theo thứ tự từ thấp nhất đ
 
 **Đếm rồi ghi vào bảng**
 
-a) Trong tranh có bướm: 8 con, gà: 3 con, ong: 4 con, cá: 3 con. Con vật nào nhiều nhất?
+a) Trong tranh có bướm: 7 con, chim: 3 con, ong: 6 con, gà: 2 con. Con vật nào nhiều nhất?
 
 b) Con vật nào ít nhất?
 
@@ -73,15 +71,15 @@ c) Có tất cả bao nhiêu con?
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui so sánh**
 
-a) vàng – đỏ – vàng – đỏ – … Con đoán xem tiếp theo là màu gì?
+a) Quyển vở và quyển từ điển: cái nào to hơn?
 
-b) trắng – xanh – trắng – xanh – … Con đoán xem tiếp theo là màu gì?
+b) Cái ấm và cái cốc: cái nào to hơn?
 
-c) trắng – vàng – trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
+c) Cái bút và cái thước: cái nào to hơn?
 
-d) trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
+d) Cô có 5 cái kẹo, con có 6 cái. Ai nhiều hơn?
 
 
 ---
@@ -92,7 +90,7 @@ d) trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo l�
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Nhảy và đếm | ☐ | ☐ | ☐ |
+| Nhìn nhanh — bên nào nhiều hơn | ☐ | ☐ | ☐ |
 | Xếp theo thứ tự | ☐ | ☐ | ☐ |
 | Đếm rồi ghi vào bảng | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui so sánh | ☐ | ☐ | ☐ |

@@ -28,56 +28,62 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 10 … 6
+a) 6 bớt 1 còn mấy?
 
-b) Điền dấu >, < hoặc = : 17 … 13
+b) Con giơ 5 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 9?
 
-c) Điền dấu >, < hoặc = : 17 … 15
+c) 2 thêm 1 là mấy?
 
-d) Điền dấu >, < hoặc = : 12 … 14
+d) 9 bớt 4 còn mấy?
+
+e) 4 thêm 4 là mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Nam có 6 chiếc lá, cho bạn 1 chiếc. Nam còn lại mấy chiếc?
+a) Tèo có 5 viên bi, cho bạn 3 viên. Tèo còn lại mấy viên?
 
-b) Na có 5 con vịt, mẹ cho thêm 1 con. Na có tất cả mấy con?
+b) Cốm có 3 cái bánh, mẹ cho thêm 1 cái. Cốm có tất cả mấy cái?
 
-c) Na có 10 bông hoa, cho bạn 2 bông. Na còn lại mấy bông?
+c) Mai có 8 quả bóng, cho bạn 2 quả. Mai còn lại mấy quả?
 
-d) Bi có 4 cái kẹo, mẹ cho thêm 3 cái. Bi có tất cả mấy cái?
-
-e) Mai có 4 con vịt, mẹ cho thêm 4 con. Mai có tất cả mấy con?
+d) Tí có 4 quyển vở, mẹ cho thêm 4 quyển. Tí có tất cả mấy quyển?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
-**Từ một phép cộng ra hai phép trừ**
+**Tính nhanh**
 
-a) Từ phép tính 3 + 7 = 10, con viết ra hai phép trừ.
+a) 14 + 2 = …
 
-b) Từ phép tính 3 + 7 = 10, con viết ra hai phép trừ.
+b) 2 − 1 = …
 
-c) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
+c) 11 + 2 = …
 
-d) Từ phép tính 6 + 1 = 7, con viết ra hai phép trừ.
+d) 6 + 3 = …
+
+e) 17 + 2 = …
+
+f) 10 + 2 = …
+
+g) 19 + 1 = …
+
+h) 2 + 2 = …
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-a) 3, 6, 12, …
+a) 5 con chim có mấy cái chân?
 
-b) 9, 14, 19, 24, …
+b) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
 
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
-
-d) 1, 2, 4, …
+c) Con có 9 cái kẹo, cho bạn 1 cái. Còn mấy cái?
 
 
 ---
@@ -86,7 +92,7 @@ d) 1, 2, 4, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
-- ☐ Từ một phép cộng ra hai phép trừ
-- ☐ Tìm quy luật
+- ☐ Tính nhanh
+- ☐ Đố vui cộng trừ

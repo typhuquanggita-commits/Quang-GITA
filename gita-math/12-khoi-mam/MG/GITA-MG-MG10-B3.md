@@ -30,13 +30,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Vỗ tay theo nhịp rồi bước đo**
 
-a) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+a) Cô làm mẫu: vỗ tay – vỗ tay – giậm chân. Lặp lại 2 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-b) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+b) Cô làm mẫu: vỗ tay – giậm chân. Lặp lại 3 lượt rồi con làm tiếp cho cô một lượt nữa.
 
-c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+c) Con bước chân nối gót đi hết chiều dài cái bàn. Đếm to xem mấy bước.
 
 
 ## Cùng khám phá · 8 phút
@@ -45,11 +45,11 @@ c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ v�
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 10 viên bi thành vòng tròn. Con đếm xem có mấy viên?
+a) Cô bày 9 viên bi rải lộn xộn. Con đếm xem có mấy viên?
 
-b) Cô bày 4 quả bóng thành hai hàng. Con đếm xem có mấy quả?
+b) Cô bày 4 con cá thành hàng ngang. Con đếm xem có mấy con?
 
-c) Cô bày 5 con cá thành hàng ngang. Con đếm xem có mấy con?
+c) Cô bày 5 viên bi rải lộn xộn. Con đếm xem có mấy viên?
 
 
 ## Tự làm thử · 7 phút
@@ -58,13 +58,13 @@ c) Cô bày 5 con cá thành hàng ngang. Con đếm xem có mấy con?
 
 **Đo bằng gang tay và bước chân**
 
-a) Con đo chiều dài cái bàn bằng bàn chân của con. Được mấy bàn chân?
+a) Con đo chiều dài cái ghế bằng bước chân của con. Được mấy bước chân?
 
-b) Con đo chiều dài cái ghế bằng gang tay của con. Được mấy gang tay?
+b) Con đo chiều dài cái bàn bằng gang tay của con. Được mấy gang tay?
 
-c) Con đo chiều dài quyển sách bằng bàn chân của con. Được mấy bàn chân?
+c) Con đo chiều dài quyển sách bằng gang tay của con. Được mấy gang tay?
 
-d) Con đo chiều dài tấm thảm bằng bước chân của con. Được mấy bước chân?
+d) Con đo chiều dài cửa ra vào bằng gang tay của con. Được mấy gang tay?
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -73,11 +73,11 @@ d) Con đo chiều dài tấm thảm bằng bước chân của con. Được m�
 
 **Đố vui cuối buổi**
 
-a) 4 con chim có tất cả mấy cái chân?
+a) Con giơ 2 ngón tay ở bàn tay này. Muốn có đúng 4 ngón thì giơ thêm mấy ngón nữa?
 
-b) 4 con chim có tất cả mấy cái chân?
+b) Con giơ 5 ngón tay ở bàn tay này. Muốn có đúng 7 ngón thì giơ thêm mấy ngón nữa?
 
-c) Trên đĩa có 8 viên bi. Con ăn mất 1 viên. Còn mấy viên?
+c) Con giơ 1 ngón tay ở bàn tay này. Muốn có đúng 3 ngón thì giơ thêm mấy ngón nữa?
 
 
 ---
@@ -88,7 +88,7 @@ c) Trên đĩa có 8 viên bi. Con ăn mất 1 viên. Còn mấy viên?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Vỗ tay theo nhịp rồi bước đo | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Đo bằng gang tay và bước chân | ☐ | ☐ | ☐ |
 | Đố vui cuối buổi | ☐ | ☐ | ☐ |

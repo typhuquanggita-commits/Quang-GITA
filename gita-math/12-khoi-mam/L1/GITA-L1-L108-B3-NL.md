@@ -41,43 +41,40 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Bảng số từ 1 đến 100 dán trên tường (nếu có)
 - Que tính bó thành chục
 - Giấy ô li
-- Que tính để xếp hình
+- Không cần gì
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 20**
+**Đếm nối tiếp theo bước**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình đếm nhảy cóc nhé. Không đếm từng số một, mà nhảy hai số, năm số, mười số một lần.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 14 … 11
-   → **>**
+a) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
+   → **25**
 
-b) Điền dấu >, < hoặc = : 18 … 9
-   → **>**
+b) Đếm tiếp cho cô: 1 , 3 , 5 , 7 , … Số tiếp theo là mấy?
+   → **9**
 
-c) Điền dấu >, < hoặc = : 15 … 7
-   → **>**
+c) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
+   → **50**
 
-d) Điền dấu >, < hoặc = : 3 … 7
-   → **<**
+d) Đếm từ 70 lên, mỗi lần thêm 10, đếm 3 lần.
+   → **80 , 90 , 100**
 
-e) Điền dấu >, < hoặc = : 11 … 14
-   → **<**
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Đoán thử)*: Đếm cách 10 thì chữ số nào đứng yên, chữ số nào đổi?
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Thế nào là con đã hiểu:** Trẻ đếm cách 10 mà không phải nhẩm cộng từng lần — nhận ra chỉ có chữ số hàng chục thay đổi. Đây là bước đầu tiên trẻ nhìn thấy **cấu tạo chục – đơn vị** của số.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
+**Con tắc thì làm gì:** Chỉ tay trên bảng số 100 khi đếm, cho trẻ thấy mình nhảy sang cột nào.
 
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Đếm lùi cách 10 từ 90 xuống — khó hơn hẳn đếm lên.
 
 
 ---
@@ -90,17 +87,20 @@ e) Điền dấu >, < hoặc = : 11 … 14
 
 **Đáp án từng việc**
 
-a) 70 + 10 = …
+a) 50 + 30 = …
    → **80**
 
-b) 20 − 10 = …
-   → **10**
+b) 60 − 20 = …
+   → **40**
 
-c) 80 + 10 = …
-   → **90**
+c) 50 − 20 = …
+   → **30**
 
-d) 70 − 10 = …
-   → **60**
+d) 70 + 10 = …
+   → **80**
+
+e) 70 − 40 = …
+   → **30**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con biết 3 + 2 = 5. Vậy 30 + 20 bằng mấy? Vì sao giống nhau thế?
 
@@ -121,17 +121,23 @@ d) 70 − 10 = …
 
 **Đáp án từng việc**
 
-a) Đặt tính rồi tính: 73 + 14
-   → **87**
+a) Đặt tính rồi tính: 68 + 31
+   → **99**
 
-b) Đặt tính rồi tính: 26 − 3
-   → **23**
+b) Đặt tính rồi tính: 41 − 21
+   → **20**
 
-c) Đặt tính rồi tính: 24 + 3
-   → **27**
+c) Đặt tính rồi tính: 70 + 1
+   → **71**
 
-d) Đặt tính rồi tính: 46 − 23
-   → **23**
+d) Đặt tính rồi tính: 70 − 30
+   → **40**
+
+e) Đặt tính rồi tính: 65 + 1
+   → **66**
+
+f) Đặt tính rồi tính: 74 − 44
+   → **30**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Có phép nào con tính nhẩm được luôn không cần đặt tính không?
 
@@ -146,31 +152,28 @@ d) Đặt tính rồi tính: 46 − 23
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Đố vui cộng trừ**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi, toàn chuyện trong nhà mình thôi.
 
 **Đáp án từng việc**
 
-a) 3, 6, 12, …
-   → **24**
+a) Bàn ăn có 3 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
+   → **5 cái ghế**
 
-b) 11, 16, 21, 26, …
-   → **31**
+b) Con có 5 cái kẹo, cho bạn 3 cái. Còn mấy cái?
+   → **2 cái**
 
-c) 1, 2, 4, …
-   → **8**
+c) Mẹ nướng 7 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 6. Ăn mất 3 cái thì còn mấy cái?
+   → **4 cái**
 
-d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
-   → **16 que**
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Làm cách gọn hơn)*: Câu này con làm phép cộng hay phép trừ? Vì sao?
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+**Thế nào là con đã hiểu:** Trẻ chọn đúng phép tính ngay từ khi nghe đề, không phải thử cả hai. Nghe 'cho bạn' mà nghĩ tới phép trừ là dấu hiệu trẻ đã nối được **lời nói với phép tính**.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
+**Con tắc thì làm gì:** Diễn lại tình huống bằng đồ vật thật ngay trên bàn.
 
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Nếu con làm nhanh:** Trẻ tự nghĩ một câu đố về nhà mình rồi đố cả nhà.
 
 
 ---

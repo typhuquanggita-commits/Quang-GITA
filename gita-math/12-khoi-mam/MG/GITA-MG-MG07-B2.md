@@ -30,15 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-a) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+a) Con chạy đi tìm một thứ trong nhà có hình chữ nhật.
 
-b) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
+b) Con chạy đi tìm một thứ trong nhà có hình vuông.
 
-c) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+c) Tìm cho cô một thứ là khối cầu.
 
-d) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+d) Tìm một thứ dài hơn gang tay của con.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,11 +47,13 @@ d) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ v�
 
 **Tìm hình quanh mình**
 
-a) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
+a) Đây là hình tam giác. Con tìm quanh nhà một đồ vật có dạng hình tam giác.
 
-b) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
+b) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
 
 c) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
+
+d) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
 
 
 ## Tự làm thử · 7 phút
@@ -60,26 +62,28 @@ c) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình
 
 **Điền vào ô trống**
 
-a) đỏ – xanh – đỏ – xanh – … – xanh . Ô trống là màu gì?
+a) xanh – vàng – … – vàng – xanh – vàng – xanh . Ô trống là màu gì?
 
-b) xanh – vàng – xanh – … – xanh . Ô trống là màu gì?
+b) đỏ – vàng – đỏ – … – đỏ . Ô trống là màu gì?
 
-c) xanh – … – xanh – đỏ – xanh – đỏ – xanh . Ô trống là màu gì?
+c) xanh – … – xanh – đỏ – xanh . Ô trống là màu gì?
 
-d) xanh – vàng – … – vàng – xanh – vàng – xanh . Ô trống là màu gì?
+d) xanh – đỏ – xanh – đỏ – … – đỏ . Ô trống là màu gì?
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Sáng, trưa, chiều, tối**
+**Đố vui so sánh**
 
-a) Con đi ngủ vào buổi nào trong ngày?
+a) Cánh tay và ngón tay: cái nào to hơn?
 
-b) Con tan học vào buổi nào trong ngày?
+b) Con voi và con kiến: cái nào to hơn?
 
-c) Con đánh răng buổi sớm vào buổi nào trong ngày?
+c) Quyển vở và quyển từ điển: cái nào to hơn?
+
+d) Cô có 3 cái kẹo, con có 4 cái. Ai nhiều hơn?
 
 
 ---
@@ -90,7 +94,7 @@ c) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Đi săn hình quanh nhà | ☐ | ☐ | ☐ |
 | Tìm hình quanh mình | ☐ | ☐ | ☐ |
 | Điền vào ô trống | ☐ | ☐ | ☐ |
-| Sáng, trưa, chiều, tối | ☐ | ☐ | ☐ |
+| Đố vui so sánh | ☐ | ☐ | ☐ |

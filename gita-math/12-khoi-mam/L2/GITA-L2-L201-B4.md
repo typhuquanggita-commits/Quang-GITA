@@ -28,75 +28,75 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Chuyền bóng nhẩm nhanh**
 
-a) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5
+a) 26 + 35 = …
 
-b) 14 : 2 = …
+b) 60 − 48 = …
 
-c) 5 × 6 = …
+c) Anh có 38 viên bi, em nhiều hơn anh 15 viên. Em có mấy viên?
 
-d) 25 : 5 = …
+d) Lớp 2A có 40 bạn, lớp 2B ít hơn 4 bạn. Lớp 2B mấy bạn?
+
+e) 57 − 9 = …
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Vì sao phải nhớ**
 
-a) Tính 74 + 32. Cộng hàng đơn vị trước: 4 + 2 = 6. Vì sao phải nhớ sang hàng chục?
+a) Tính 18 + 78. Cộng hàng đơn vị trước: 8 + 8 = 16. Có phải nhớ sang hàng chục không? Vì sao?
 
-b) Tính 38 + 61. Cộng hàng đơn vị trước: 8 + 1 = 9. Vì sao phải nhớ sang hàng chục?
+b) Tính 53 + 57. Cộng hàng đơn vị trước: 3 + 7 = 10. Có phải nhớ sang hàng chục không? Vì sao?
 
-c) Tính 50 + 50. Cộng hàng đơn vị trước: 0 + 0 = 0. Vì sao phải nhớ sang hàng chục?
+c) Tính 47 + 72. Cộng hàng đơn vị trước: 7 + 2 = 9. Có phải nhớ sang hàng chục không? Vì sao?
 
-d) Tính 60 + 24. Cộng hàng đơn vị trước: 0 + 4 = 4. Vì sao phải nhớ sang hàng chục?
+d) Tính 47 + 24. Cộng hàng đơn vị trước: 7 + 4 = 11. Có phải nhớ sang hàng chục không? Vì sao?
 
-e) Tính 86 + 68. Cộng hàng đơn vị trước: 6 + 8 = 14. Vì sao phải nhớ sang hàng chục?
+e) Tính 72 + 41. Cộng hàng đơn vị trước: 2 + 1 = 3. Có phải nhớ sang hàng chục không? Vì sao?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Cộng trừ có nhớ trong phạm vi 1 000**
+**Cộng trừ có nhớ trong phạm vi 100**
 
-a) Đặt tính rồi tính: 886 + 58
+a) Đặt tính rồi tính: 58 + 21
 
-b) Đặt tính rồi tính: 849 − 739
+b) Đặt tính rồi tính: 61 − 47
 
-c) Đặt tính rồi tính: 806 + 90
+c) Đặt tính rồi tính: 56 − 48
 
-d) Đặt tính rồi tính: 709 − 375
+d) Đặt tính rồi tính: 47 + 15
 
-e) Đặt tính rồi tính: 594 − 69
-
-f) Đặt tính rồi tính: 903 + 68
+e) Đặt tính rồi tính: 46 − 44
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đặt tính và tìm số còn thiếu**
 
-a) Một bạn tính 17 + 76 = 83. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Đặt tính rồi tính: 25 + 15
 
-b) Một bạn tính 32 + 45 = 86. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Tìm số còn thiếu: … + 11 = 32
 
-c) Một bạn tính 84 + 69 = 143. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Tìm số còn thiếu: … − 15 = 5
 
-d) Một bạn tính 58 + 32 = 80. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+d) Đặt tính rồi tính: 74 − 38
+
+e) Đặt tính rồi tính: 59 + 7
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Tìm chỗ sai giúp bạn**
 
-a) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+a) Một bạn tính 68 + 44 = 102. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
-b) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+b) Một bạn tính 79 + 45 = 114. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
-c) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+c) Một bạn tính 82 + 26 = 117. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
-d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-
-e) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+d) Một bạn tính 67 + 63 = 120. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
 
 
 ---
@@ -105,8 +105,8 @@ e) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Chuyền bóng nhẩm nhanh
 - ☐ Vì sao phải nhớ
-- ☐ Cộng trừ có nhớ trong phạm vi 1 000
+- ☐ Cộng trừ có nhớ trong phạm vi 100
+- ☐ Đặt tính và tìm số còn thiếu
 - ☐ Tìm chỗ sai giúp bạn
-- ☐ Chắc chắn, có thể, không thể

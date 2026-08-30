@@ -28,73 +28,71 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) 6 : 2 = …
+a) Con đoán chiều dài lớp học khoảng bao nhiêu?
 
-b) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5
+b) Con đoán một chai nước 1 lít nặng khoảng bao nhiêu?
 
-c) 2 × 9 = …
-
-d) 6 : 2 = …
-
-e) 2 × 2 = …
+c) Kim ngắn qua số 4, kim dài chỉ số 3. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đơn vị đo và xem đồng hồ**
 
-a) 6 dm = … cm
+a) Kim ngắn ở giữa số 7 và số 8, kim dài chỉ số 6. Mấy giờ?
 
-b) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ?
+b) 1 dm = … cm
 
-c) Bao gạo nặng 16 kg, bao ngô nặng 10 kg. Cả hai bao nặng mấy ki-lô-gam?
+c) Bao gạo nặng 17 kg, bao ngô nặng 16 kg. Cả hai bao nặng mấy ki-lô-gam?
 
-d) Kim ngắn chỉ số 4, kim dài chỉ số 12. Mấy giờ?
+d) Kim ngắn chỉ số 6, kim dài chỉ số 12. Mấy giờ?
 
-e) Bao gạo nặng 16 kg, bao ngô nặng 4 kg. Cả hai bao nặng mấy ki-lô-gam?
+e) Bao gạo nặng 17 kg, bao ngô nặng 8 kg. Cả hai bao nặng mấy ki-lô-gam?
+
+f) 7 dm = … cm
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Đổi đơn vị và tính trên số đo**
+**Tính với số đo**
 
-a) 5 cm + 39 cm = … cm
+a) Băng giấy dài 75 cm, cắt đi 16 cm. Còn lại dài bao nhiêu?
 
-b) Điền dấu >, < hoặc = : 3 dm … 32 cm
+b) Bạn Nam bắt đầu học lúc 8 giờ, học 3 tiếng thì xong. Xong lúc mấy giờ?
 
-c) 6 km = … m
+c) 43 l + 15 l = …
 
-d) 13 cm + 30 cm = … cm
+d) 7 kg = … g
 
-e) Điền dấu >, < hoặc = : 6 dm … 11 cm
+e) 39 kg + 10 kg = …
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Đọc bảng số liệu**
+**Đổi đơn vị và tính trên số đo**
 
-a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 14, thứ Ba: 12, thứ Tư: 13, thứ Năm: 9, thứ Sáu: 7. Ngày nào đọc nhiều nhất?
+a) 21 cm + 23 cm = … cm
 
-b) Cả tuần đọc bao nhiêu quyển?
+b) Điền dấu >, < hoặc = : 5 dm … 62 cm
 
-c) Thứ Hai và thứ Ba đọc tất cả mấy quyển?
+c) 5 m = … dm
 
-d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
+d) Điền dấu >, < hoặc = : 1 dm … 99 cm
+
+e) 27 cm + 5 cm = … cm
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui đo lường và giờ**
 
-a) Một bạn tính 50 + 33 = 92. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) 6 dm bằng bao nhiêu cm?
 
-b) Một bạn tính 89 + 46 = 125. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) 3 kg bằng bao nhiêu gam?
 
-c) Một bạn tính 85 + 32 = 126. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-d) Một bạn tính 69 + 21 = 80. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Bây giờ là 4 giờ. 1 tiếng nữa là mấy giờ?
 
 
 ---
@@ -103,8 +101,8 @@ d) Một bạn tính 69 + 21 = 80. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đơn vị đo và xem đồng hồ
+- ☐ Tính với số đo
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Đọc bảng số liệu
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Đố vui đo lường và giờ

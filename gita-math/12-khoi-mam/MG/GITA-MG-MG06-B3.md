@@ -30,13 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-a) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
+a) Con chạy đi tìm một thứ trong nhà có hình vuông.
 
-b) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
+b) Con chạy đi tìm một thứ trong nhà có hình tròn.
 
-c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+c) Tìm cho cô một thứ là khối trụ.
+
+d) Tìm một thứ dài hơn bàn chân của con.
 
 
 ## Cùng khám phá · 8 phút
@@ -49,9 +51,7 @@ a) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấ
 
 b) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
 
-c) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
-
-d) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
+c) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
 
 
 ## Tự làm thử · 7 phút
@@ -60,11 +60,11 @@ d) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy 
 
 **Khoanh, nối, tô**
 
-a) Con tô màu hình tròn.
+a) Con khoanh vào vật ở giữa hàng.
 
-b) Con nối mỗi con vật với cái chuồng của nó.
+b) Con gạch bỏ vật không cùng nhóm.
 
-c) Con gạch bỏ vật không cùng nhóm.
+c) Con khoanh tròn nhóm có nhiều hơn.
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -73,11 +73,11 @@ c) Con gạch bỏ vật không cùng nhóm.
 
 **Sáng, trưa, chiều, tối**
 
-a) Con ăn sáng vào buổi nào trong ngày?
+a) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
-b) Con tan học vào buổi nào trong ngày?
+b) Con ngủ trưa vào buổi nào trong ngày?
 
-c) Con ngủ trưa vào buổi nào trong ngày?
+c) Con tan học vào buổi nào trong ngày?
 
 
 ---
@@ -88,7 +88,7 @@ c) Con ngủ trưa vào buổi nào trong ngày?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Đi săn hình quanh nhà | ☐ | ☐ | ☐ |
 | Xếp thành nhóm | ☐ | ☐ | ☐ |
 | Khoanh, nối, tô | ☐ | ☐ | ☐ |
 | Sáng, trưa, chiều, tối | ☐ | ☐ | ☐ |

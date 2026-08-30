@@ -28,73 +28,73 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) 2 × 6 = …
+a) Con đoán chiều cao cửa ra vào khoảng bao nhiêu?
 
-b) Viết phép nhân thay cho phép cộng: 2 + 2 + 2
+b) Con đoán một quyển sách giáo khoa nặng khoảng bao nhiêu?
 
-c) 20 : 2 = …
-
-d) 2 × 7 = …
-
-e) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2
+c) Kim ngắn qua số 2, kim dài chỉ số 9. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đơn vị đo và xem đồng hồ**
 
-a) 6 dm = … cm
+a) Kim ngắn chỉ số 3, kim dài chỉ số 12. Mấy giờ?
 
-b) Bao gạo nặng 13 kg, bao ngô nặng 14 kg. Cả hai bao nặng mấy ki-lô-gam?
+b) Bao gạo nặng 17 kg, bao ngô nặng 4 kg. Cả hai bao nặng mấy ki-lô-gam?
 
-c) Kim ngắn ở giữa số 11 và số 12, kim dài chỉ số 6. Mấy giờ?
+c) 4 dm = … cm
 
-d) Kim ngắn ở giữa số 1 và số 2, kim dài chỉ số 6. Mấy giờ?
+d) Bao gạo nặng 11 kg, bao ngô nặng 5 kg. Cả hai bao nặng mấy ki-lô-gam?
 
-e) Bao gạo nặng 5 kg, bao ngô nặng 12 kg. Cả hai bao nặng mấy ki-lô-gam?
+e) Kim ngắn ở giữa số 5 và số 6, kim dài chỉ số 6. Mấy giờ?
 
 f) 1 dm = … cm
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Đổi đơn vị và tính trên số đo**
+**Tính với số đo**
 
-a) 6 m = … dm
+a) 16 cm + 16 cm = …
 
-b) Điền dấu >, < hoặc = : 3 dm … 38 cm
+b) 3 dm = … cm
 
-c) 9 cm + 29 cm = … cm
+c) Băng giấy dài 59 cm, cắt đi 15 cm. Còn lại dài bao nhiêu?
 
-d) Điền dấu >, < hoặc = : 2 dm … 39 cm
+d) Bạn Nam bắt đầu học lúc 3 giờ, học 3 tiếng thì xong. Xong lúc mấy giờ?
 
-e) 9 km = … m
+e) 9 dm = … cm
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Đoán trước rồi đo lại**
+**Đổi đơn vị và tính trên số đo**
 
-a) Con đoán chiều cao cửa ra vào khoảng bao nhiêu m? Đoán xong mình đo lại.
+a) 3 km = … m
 
-b) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
+b) 17 cm + 32 cm = … cm
 
-c) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
+c) Điền dấu >, < hoặc = : 4 dm … 36 cm
+
+d) 5 dm = … cm
+
+e) Điền dấu >, < hoặc = : 1 dm … 31 cm
+
+f) 38 cm + 29 cm = … cm
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đố vui đo lường và giờ**
 
-a) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+a) 6 dm bằng bao nhiêu cm?
 
-b) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
+b) Bây giờ là 4 giờ. 3 tiếng nữa là mấy giờ?
 
-c) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
-
-d) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+c) 6 kg bằng bao nhiêu gam?
 
 
 ---
@@ -103,8 +103,8 @@ d) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đơn vị đo và xem đồng hồ
+- ☐ Tính với số đo
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Đoán trước rồi đo lại
-- ☐ Chắc chắn, có thể, không thể
+- ☐ Đố vui đo lường và giờ

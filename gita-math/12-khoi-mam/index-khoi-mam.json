@@ -26,7 +26,7 @@
    "MM-MG-09",
    "MM-MG-01",
    "MM-MG-18",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -56,7 +56,7 @@
    "MM-MG-09",
    "MM-MG-01",
    "MM-MG-18",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -86,7 +86,7 @@
    "MM-MG-09",
    "MM-MG-01",
    "MM-MG-18",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -116,7 +116,7 @@
    "MM-MG-09",
    "MM-MG-01",
    "MM-MG-18",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -146,7 +146,7 @@
    "MM-MG-09",
    "MM-MG-01",
    "MM-MG-02",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -176,7 +176,7 @@
    "MM-MG-09",
    "MM-MG-01",
    "MM-MG-15",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -206,7 +206,7 @@
    "MM-MG-09",
    "MM-MG-01",
    "MM-MG-15",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -236,7 +236,7 @@
    "MM-MG-09",
    "MM-MG-01",
    "MM-MG-15",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -263,10 +263,10 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-21",
    "MM-MG-19",
    "MM-MG-14",
-   "MM-MG-06"
+   "MM-MG-25"
   ]
  },
  {
@@ -293,10 +293,10 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-21",
    "MM-MG-10",
    "MM-MG-14",
-   "MM-MG-06"
+   "MM-MG-25"
   ]
  },
  {
@@ -323,10 +323,10 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-21",
    "MM-MG-19",
    "MM-MG-14",
-   "MM-MG-06"
+   "MM-MG-25"
   ]
  },
  {
@@ -353,10 +353,10 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-21",
    "MM-MG-19",
    "MM-MG-14",
-   "MM-MG-06"
+   "MM-MG-25"
   ]
  },
  {
@@ -383,7 +383,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-21",
    "MM-MG-17",
    "MM-MG-04",
    "MM-MG-12"
@@ -413,7 +413,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-21",
    "MM-MG-17",
    "MM-MG-15",
    "MM-MG-12"
@@ -443,7 +443,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-21",
    "MM-MG-17",
    "MM-MG-04",
    "MM-MG-12"
@@ -473,7 +473,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-21",
    "MM-MG-17",
    "MM-MG-15",
    "MM-MG-12"
@@ -505,7 +505,7 @@
    "MM-MG-09",
    "MM-MG-17",
    "MM-MG-02",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -534,7 +534,7 @@
    "MM-MG-09",
    "MM-MG-19",
    "MM-MG-13",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -563,7 +563,7 @@
    "MM-MG-09",
    "MM-MG-17",
    "MM-MG-02",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -592,7 +592,7 @@
    "MM-MG-09",
    "MM-MG-17",
    "MM-MG-13",
-   "MM-MG-06"
+   "MM-MG-24"
   ]
  },
  {
@@ -619,7 +619,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-22",
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-16"
@@ -649,7 +649,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-22",
    "MM-MG-05",
    "MM-MG-18",
    "MM-MG-16"
@@ -679,7 +679,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-22",
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-16"
@@ -709,7 +709,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-22",
    "MM-MG-05",
    "MM-MG-18",
    "MM-MG-16"
@@ -738,10 +738,10 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-22",
    "MM-MG-05",
    "MM-MG-18",
-   "MM-MG-16"
+   "MM-MG-25"
   ]
  },
  {
@@ -767,10 +767,10 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-22",
    "MM-MG-05",
    "MM-MG-20",
-   "MM-MG-16"
+   "MM-MG-25"
   ]
  },
  {
@@ -796,10 +796,10 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-22",
    "MM-MG-05",
    "MM-MG-20",
-   "MM-MG-16"
+   "MM-MG-25"
   ]
  },
  {
@@ -825,10 +825,10 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-22",
    "MM-MG-05",
    "MM-MG-18",
-   "MM-MG-16"
+   "MM-MG-25"
   ]
  },
  {
@@ -971,7 +971,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-23",
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-06"
@@ -1001,7 +1001,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-23",
    "MM-MG-11",
    "MM-MG-18",
    "MM-MG-06"
@@ -1031,9 +1031,9 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-23",
    "MM-MG-11",
-   "MM-MG-20",
+   "MM-MG-18",
    "MM-MG-06"
   ]
  },
@@ -1061,7 +1061,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-23",
    "MM-MG-11",
    "MM-MG-20",
    "MM-MG-06"
@@ -1091,7 +1091,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-23",
    "MM-MG-17",
    "MM-MG-20",
    "MM-MG-12"
@@ -1121,7 +1121,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-23",
    "MM-MG-17",
    "MM-MG-20",
    "MM-MG-12"
@@ -1151,7 +1151,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-07",
+   "MM-MG-23",
    "MM-MG-17",
    "MM-MG-08",
    "MM-MG-12"
@@ -1181,7 +1181,7 @@
   ],
   "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
   "ma_mau": [
-   "MM-MG-09",
+   "MM-MG-23",
    "MM-MG-17",
    "MM-MG-14",
    "MM-MG-12"
@@ -1214,7 +1214,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-07",
-   "MM-L1-10"
+   "MM-L1-22"
   ]
  },
  {
@@ -1244,7 +1244,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-07",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -1274,7 +1274,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-07",
-   "MM-L1-10"
+   "MM-L1-22"
   ]
  },
  {
@@ -1304,7 +1304,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-07",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -1334,7 +1334,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-07",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -1361,10 +1361,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-07",
-   "MM-L1-13"
+   "MM-L1-23"
   ]
  },
  {
@@ -1391,10 +1391,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-16",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -1421,10 +1421,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
-   "MM-L1-07",
-   "MM-L1-10"
+   "MM-L1-16",
+   "MM-L1-23"
   ]
  },
  {
@@ -1451,10 +1451,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-07",
-   "MM-L1-13"
+   "MM-L1-23"
   ]
  },
  {
@@ -1481,10 +1481,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-16",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -1511,10 +1511,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
-   "MM-L1-12",
-   "MM-L1-10"
+   "MM-L1-16",
+   "MM-L1-23"
   ]
  },
  {
@@ -1541,10 +1541,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
-   "MM-L1-12",
-   "MM-L1-13"
+   "MM-L1-16",
+   "MM-L1-23"
   ]
  },
  {
@@ -1571,10 +1571,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-16",
-   "MM-L1-13"
+   "MM-L1-23"
   ]
  },
  {
@@ -1601,10 +1601,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-12",
-   "MM-L1-13"
+   "MM-L1-23"
   ]
  },
  {
@@ -1631,10 +1631,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
-   "MM-L1-16",
-   "MM-L1-10"
+   "MM-L1-12",
+   "MM-L1-23"
   ]
  },
  {
@@ -1661,7 +1661,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -1691,7 +1691,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -1721,7 +1721,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -1751,7 +1751,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -1781,7 +1781,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -1813,7 +1813,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-12",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -1842,7 +1842,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-12",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -1871,7 +1871,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-12",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -1900,7 +1900,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-12",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -1929,7 +1929,7 @@
    "MM-L1-01",
    "MM-L1-14",
    "MM-L1-12",
-   "MM-L1-10"
+   "MM-L1-22"
   ]
  },
  {
@@ -1959,7 +1959,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -1989,7 +1989,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2019,7 +2019,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2049,7 +2049,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2079,7 +2079,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2109,7 +2109,7 @@
    "MM-L1-01",
    "MM-L1-09",
    "MM-L1-15",
-   "MM-L1-10"
+   "MM-L1-22"
   ]
  },
  {
@@ -2139,7 +2139,7 @@
    "MM-L1-01",
    "MM-L1-09",
    "MM-L1-15",
-   "MM-L1-10"
+   "MM-L1-22"
   ]
  },
  {
@@ -2169,7 +2169,7 @@
    "MM-L1-01",
    "MM-L1-09",
    "MM-L1-15",
-   "MM-L1-10"
+   "MM-L1-22"
   ]
  },
  {
@@ -2199,7 +2199,7 @@
    "MM-L1-01",
    "MM-L1-09",
    "MM-L1-15",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -2229,7 +2229,7 @@
    "MM-L1-01",
    "MM-L1-09",
    "MM-L1-15",
-   "MM-L1-13"
+   "MM-L1-22"
   ]
  },
  {
@@ -2255,10 +2255,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-17",
    "MM-L1-03",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -2284,10 +2284,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-17",
    "MM-L1-03",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -2313,10 +2313,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-17",
    "MM-L1-03",
-   "MM-L1-13"
+   "MM-L1-23"
   ]
  },
  {
@@ -2342,10 +2342,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
-   "MM-L1-09",
+   "MM-L1-20",
+   "MM-L1-17",
    "MM-L1-03",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -2371,10 +2371,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-09",
    "MM-L1-03",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -2401,7 +2401,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
@@ -2431,7 +2431,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
@@ -2461,7 +2461,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
@@ -2491,7 +2491,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
@@ -2521,7 +2521,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
@@ -2553,7 +2553,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2582,7 +2582,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2611,7 +2611,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2640,7 +2640,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2669,7 +2669,7 @@
    "MM-L1-11",
    "MM-L1-05",
    "MM-L1-15",
-   "MM-L1-04"
+   "MM-L1-24"
   ]
  },
  {
@@ -2696,7 +2696,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -2726,7 +2726,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -2756,7 +2756,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -2786,7 +2786,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -2816,7 +2816,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-11",
+   "MM-L1-19",
    "MM-L1-08",
    "MM-L1-15",
    "MM-L1-04"
@@ -2845,7 +2845,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-08",
    "MM-L1-06",
    "MM-L1-13"
@@ -2874,7 +2874,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-17",
    "MM-L1-06",
    "MM-L1-13"
@@ -2903,7 +2903,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-08",
    "MM-L1-06",
    "MM-L1-13"
@@ -2932,7 +2932,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-17",
    "MM-L1-06",
    "MM-L1-13"
@@ -2961,7 +2961,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-20",
    "MM-L1-08",
    "MM-L1-06",
    "MM-L1-13"
@@ -2990,10 +2990,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-07",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -3019,10 +3019,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
-   "MM-L1-07",
-   "MM-L1-13"
+   "MM-L1-16",
+   "MM-L1-23"
   ]
  },
  {
@@ -3048,10 +3048,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
-   "MM-L1-07",
-   "MM-L1-13"
+   "MM-L1-16",
+   "MM-L1-23"
   ]
  },
  {
@@ -3077,10 +3077,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-07",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -3106,10 +3106,10 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-18",
    "MM-L1-02",
    "MM-L1-07",
-   "MM-L1-10"
+   "MM-L1-23"
   ]
  },
  {
@@ -3134,7 +3134,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-13"
@@ -3162,7 +3162,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
@@ -3190,7 +3190,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-13"
@@ -3218,7 +3218,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-13"
@@ -3246,7 +3246,7 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
   "ma_mau": [
-   "MM-L1-01",
+   "MM-L1-21",
    "MM-L1-14",
    "MM-L1-06",
    "MM-L1-10"
@@ -3275,11 +3275,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
+   "MM-L2-25",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-07"
   ]
  },
  {
@@ -3305,11 +3305,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
+   "MM-L2-25",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-07"
   ]
  },
  {
@@ -3335,11 +3335,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3365,11 +3365,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3395,11 +3395,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3425,11 +3425,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
+   "MM-L2-25",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-07"
   ]
  },
  {
@@ -3455,11 +3455,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3485,11 +3485,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
+   "MM-L2-25",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-07"
   ]
  },
  {
@@ -3515,11 +3515,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
+   "MM-L2-25",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-07"
   ]
  },
  {
@@ -3545,11 +3545,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3575,11 +3575,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3605,11 +3605,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3635,11 +3635,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3665,11 +3665,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3695,11 +3695,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-01",
-   "MM-L2-07",
-   "MM-L2-06"
+   "MM-L2-25",
+   "MM-L2-07"
   ]
  },
  {
@@ -3725,11 +3725,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
+   "MM-L2-26",
    "MM-L2-03",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-24"
   ]
  },
  {
@@ -3755,11 +3755,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
+   "MM-L2-26",
    "MM-L2-03",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-24"
   ]
  },
  {
@@ -3785,11 +3785,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
+   "MM-L2-26",
    "MM-L2-03",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-24"
   ]
  },
  {
@@ -3815,11 +3815,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-03",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-26",
+   "MM-L2-24"
   ]
  },
  {
@@ -3845,11 +3845,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-17",
    "MM-L2-13",
    "MM-L2-03",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-26",
+   "MM-L2-24"
   ]
  },
  {
@@ -3878,9 +3878,9 @@
   "ma_mau": [
    "MM-L2-02",
    "MM-L2-14",
+   "MM-L2-27",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-21"
   ]
  },
  {
@@ -3909,9 +3909,9 @@
   "ma_mau": [
    "MM-L2-02",
    "MM-L2-14",
+   "MM-L2-27",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-21"
   ]
  },
  {
@@ -3940,9 +3940,9 @@
   "ma_mau": [
    "MM-L2-02",
    "MM-L2-14",
+   "MM-L2-27",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-21"
   ]
  },
  {
@@ -3972,8 +3972,8 @@
    "MM-L2-02",
    "MM-L2-14",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-27",
+   "MM-L2-21"
   ]
  },
  {
@@ -4003,8 +4003,8 @@
    "MM-L2-02",
    "MM-L2-14",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-27",
+   "MM-L2-21"
   ]
  },
  {
@@ -4034,8 +4034,8 @@
    "MM-L2-02",
    "MM-L2-14",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-27",
+   "MM-L2-21"
   ]
  },
  {
@@ -4065,8 +4065,8 @@
    "MM-L2-02",
    "MM-L2-14",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-27",
+   "MM-L2-21"
   ]
  },
  {
@@ -4095,9 +4095,9 @@
   "ma_mau": [
    "MM-L2-02",
    "MM-L2-14",
+   "MM-L2-27",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-21"
   ]
  },
  {
@@ -4126,9 +4126,9 @@
   "ma_mau": [
    "MM-L2-02",
    "MM-L2-14",
+   "MM-L2-27",
    "MM-L2-08",
-   "MM-L2-03",
-   "MM-L2-07"
+   "MM-L2-21"
   ]
  },
  {
@@ -4157,9 +4157,9 @@
   "ma_mau": [
    "MM-L2-02",
    "MM-L2-14",
+   "MM-L2-27",
    "MM-L2-08",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-21"
   ]
  },
  {
@@ -4187,9 +4187,9 @@
   "ma_mau": [
    "MM-L2-10",
    "MM-L2-14",
+   "MM-L2-26",
    "MM-L2-03",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-22"
   ]
  },
  {
@@ -4217,9 +4217,9 @@
   "ma_mau": [
    "MM-L2-10",
    "MM-L2-14",
+   "MM-L2-26",
    "MM-L2-03",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-22"
   ]
  },
  {
@@ -4248,8 +4248,8 @@
    "MM-L2-10",
    "MM-L2-14",
    "MM-L2-03",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-26",
+   "MM-L2-22"
   ]
  },
  {
@@ -4278,8 +4278,8 @@
    "MM-L2-10",
    "MM-L2-14",
    "MM-L2-03",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-26",
+   "MM-L2-22"
   ]
  },
  {
@@ -4307,9 +4307,9 @@
   "ma_mau": [
    "MM-L2-10",
    "MM-L2-14",
+   "MM-L2-26",
    "MM-L2-03",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-22"
   ]
  },
  {
@@ -4337,9 +4337,9 @@
   "ma_mau": [
    "MM-L2-10",
    "MM-L2-14",
+   "MM-L2-26",
    "MM-L2-01",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-22"
   ]
  },
  {
@@ -4368,8 +4368,8 @@
    "MM-L2-10",
    "MM-L2-14",
    "MM-L2-01",
-   "MM-L2-03",
-   "MM-L2-07"
+   "MM-L2-26",
+   "MM-L2-22"
   ]
  },
  {
@@ -4397,9 +4397,9 @@
   "ma_mau": [
    "MM-L2-10",
    "MM-L2-14",
+   "MM-L2-26",
    "MM-L2-01",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-22"
   ]
  },
  {
@@ -4427,9 +4427,9 @@
   "ma_mau": [
    "MM-L2-10",
    "MM-L2-14",
+   "MM-L2-26",
    "MM-L2-01",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-22"
   ]
  },
  {
@@ -4458,8 +4458,8 @@
    "MM-L2-10",
    "MM-L2-14",
    "MM-L2-01",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-26",
+   "MM-L2-22"
   ]
  },
  {
@@ -4485,11 +4485,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-18",
    "MM-L2-04",
+   "MM-L2-28",
    "MM-L2-15",
-   "MM-L2-12",
-   "MM-L2-07"
+   "MM-L2-23"
   ]
  },
  {
@@ -4515,11 +4515,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-18",
    "MM-L2-12",
    "MM-L2-15",
-   "MM-L2-04",
-   "MM-L2-06"
+   "MM-L2-28",
+   "MM-L2-23"
   ]
  },
  {
@@ -4545,11 +4545,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-18",
    "MM-L2-04",
    "MM-L2-15",
-   "MM-L2-12",
-   "MM-L2-06"
+   "MM-L2-28",
+   "MM-L2-23"
   ]
  },
  {
@@ -4575,11 +4575,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-12",
+   "MM-L2-28",
    "MM-L2-15",
-   "MM-L2-04",
-   "MM-L2-06"
+   "MM-L2-23"
   ]
  },
  {
@@ -4605,11 +4605,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-12",
+   "MM-L2-28",
    "MM-L2-15",
-   "MM-L2-04",
-   "MM-L2-07"
+   "MM-L2-23"
   ]
  },
  {
@@ -4635,11 +4635,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-18",
    "MM-L2-12",
    "MM-L2-15",
-   "MM-L2-04",
-   "MM-L2-06"
+   "MM-L2-28",
+   "MM-L2-23"
   ]
  },
  {
@@ -4665,11 +4665,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-12",
+   "MM-L2-28",
    "MM-L2-15",
-   "MM-L2-04",
-   "MM-L2-07"
+   "MM-L2-23"
   ]
  },
  {
@@ -4695,11 +4695,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-04",
    "MM-L2-15",
-   "MM-L2-12",
-   "MM-L2-06"
+   "MM-L2-28",
+   "MM-L2-23"
   ]
  },
  {
@@ -4725,11 +4725,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-04",
+   "MM-L2-28",
    "MM-L2-15",
-   "MM-L2-12",
-   "MM-L2-06"
+   "MM-L2-23"
   ]
  },
  {
@@ -4755,11 +4755,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-12",
    "MM-L2-15",
-   "MM-L2-04",
-   "MM-L2-07"
+   "MM-L2-28",
+   "MM-L2-23"
   ]
  },
  {
@@ -4786,11 +4786,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-19",
    "MM-L2-09",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-29",
+   "MM-L2-06"
   ]
  },
  {
@@ -4817,11 +4817,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-19",
    "MM-L2-09",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-29",
+   "MM-L2-06"
   ]
  },
  {
@@ -4848,11 +4848,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-19",
    "MM-L2-09",
+   "MM-L2-29",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-06"
   ]
  },
  {
@@ -4879,11 +4879,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-19",
    "MM-L2-09",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-29",
+   "MM-L2-06"
   ]
  },
  {
@@ -4910,11 +4910,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-19",
    "MM-L2-09",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-29",
+   "MM-L2-06"
   ]
  },
  {
@@ -4940,11 +4940,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-19",
    "MM-L2-09",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-29",
+   "MM-L2-06"
   ]
  },
  {
@@ -4970,11 +4970,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-19",
    "MM-L2-09",
+   "MM-L2-29",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-06"
   ]
  },
  {
@@ -5000,11 +5000,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-19",
    "MM-L2-09",
+   "MM-L2-29",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-06"
   ]
  },
  {
@@ -5030,11 +5030,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-19",
    "MM-L2-09",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-29",
+   "MM-L2-06"
   ]
  },
  {
@@ -5060,11 +5060,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-19",
    "MM-L2-09",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-29",
+   "MM-L2-06"
   ]
  },
  {
@@ -5090,11 +5090,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-04",
    "MM-L2-15",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-28",
+   "MM-L2-23"
   ]
  },
  {
@@ -5120,11 +5120,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-18",
    "MM-L2-04",
    "MM-L2-15",
-   "MM-L2-08",
-   "MM-L2-07"
+   "MM-L2-28",
+   "MM-L2-23"
   ]
  },
  {
@@ -5150,11 +5150,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-04",
    "MM-L2-15",
-   "MM-L2-05",
-   "MM-L2-06"
+   "MM-L2-28",
+   "MM-L2-23"
   ]
  },
  {
@@ -5180,11 +5180,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-18",
    "MM-L2-04",
+   "MM-L2-28",
    "MM-L2-15",
-   "MM-L2-01",
-   "MM-L2-07"
+   "MM-L2-23"
   ]
  },
  {
@@ -5210,11 +5210,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-18",
    "MM-L2-04",
+   "MM-L2-28",
    "MM-L2-15",
-   "MM-L2-16",
-   "MM-L2-07"
+   "MM-L2-23"
   ]
  },
  {
@@ -5241,11 +5241,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
    "MM-L2-16",
-   "MM-L2-05",
-   "MM-L2-06"
+   "MM-L2-30",
+   "MM-L2-24"
   ]
  },
  {
@@ -5272,11 +5272,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
    "MM-L2-05",
-   "MM-L2-16",
-   "MM-L2-06"
+   "MM-L2-30",
+   "MM-L2-24"
   ]
  },
  {
@@ -5303,11 +5303,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
    "MM-L2-16",
-   "MM-L2-05",
-   "MM-L2-06"
+   "MM-L2-30",
+   "MM-L2-24"
   ]
  },
  {
@@ -5334,11 +5334,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
+   "MM-L2-30",
    "MM-L2-16",
-   "MM-L2-05",
-   "MM-L2-06"
+   "MM-L2-24"
   ]
  },
  {
@@ -5365,11 +5365,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-20",
    "MM-L2-11",
    "MM-L2-05",
    "MM-L2-16",
-   "MM-L2-06"
+   "MM-L2-24"
   ]
  },
  {
@@ -5396,11 +5396,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-20",
    "MM-L2-11",
+   "MM-L2-30",
    "MM-L2-16",
-   "MM-L2-05",
-   "MM-L2-06"
+   "MM-L2-24"
   ]
  },
  {
@@ -5427,11 +5427,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
+   "MM-L2-30",
    "MM-L2-05",
-   "MM-L2-16",
-   "MM-L2-06"
+   "MM-L2-24"
   ]
  },
  {
@@ -5458,11 +5458,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
+   "MM-L2-30",
    "MM-L2-05",
-   "MM-L2-16",
-   "MM-L2-06"
+   "MM-L2-24"
   ]
  },
  {
@@ -5489,11 +5489,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-20",
    "MM-L2-11",
    "MM-L2-16",
    "MM-L2-05",
-   "MM-L2-06"
+   "MM-L2-24"
   ]
  },
  {
@@ -5520,11 +5520,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
    "MM-L2-16",
-   "MM-L2-05",
-   "MM-L2-06"
+   "MM-L2-30",
+   "MM-L2-24"
   ]
  },
  {
@@ -5550,11 +5550,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-20",
    "MM-L2-11",
+   "MM-L2-30",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-06"
   ]
  },
  {
@@ -5580,11 +5580,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-10",
+   "MM-L2-20",
    "MM-L2-11",
+   "MM-L2-30",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-06"
   ]
  },
  {
@@ -5610,11 +5610,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-30",
+   "MM-L2-06"
   ]
  },
  {
@@ -5640,11 +5640,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-30",
+   "MM-L2-06"
   ]
  },
  {
@@ -5670,11 +5670,11 @@
   ],
   "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
   "ma_mau": [
-   "MM-L2-02",
+   "MM-L2-20",
    "MM-L2-11",
+   "MM-L2-30",
    "MM-L2-15",
-   "MM-L2-06",
-   "MM-L2-07"
+   "MM-L2-06"
   ]
  }
 ]

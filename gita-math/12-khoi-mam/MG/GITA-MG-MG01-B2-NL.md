@@ -45,7 +45,7 @@ Bản dành cho: **người lớn ngồi cùng**
 - Chỗ trống để trẻ đứng dậy vận động
 - 10 đồ vật nhỏ giống nhau: hột hạt, cúc áo, que tính hoặc kẹo
 - Bút chì màu
-- Hột hạt hoặc khối gỗ nhiều màu
+- Không cần gì — dùng ngón tay của trẻ
 
 ---
 
@@ -57,17 +57,17 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Con vỗ tay đúng 3 cái nhé. Đếm to lên.
-   → **3**
+a) Con gật đầu đúng 5 cái nhé. Đếm to lên.
+   → **5**
 
-b) Con nhảy đúng 6 cái nhé. Đếm to lên.
+b) Con vỗ tay đúng 6 cái nhé. Đếm to lên.
    → **6**
 
 c) Con bước lên phía trước đúng 5 bước nhé. Đếm to lên.
    → **5**
 
-d) Con giậm chân đúng 4 cái nhé. Đếm to lên.
-   → **4**
+d) Con nhảy đúng 6 cái nhé. Đếm to lên.
+   → **6**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
 
@@ -88,20 +88,20 @@ d) Con giậm chân đúng 4 cái nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Cô đặt ra 8 bông hoa. Con đếm xem có mấy bông?
+a) Cô đặt ra 8 quả cam. Con đếm xem có mấy quả?
    → **8**
 
-b) Cô đặt ra 2 cái kẹo. Con đếm xem có mấy cái?
+b) Cô đặt ra 2 quyển vở. Con đếm xem có mấy quyển?
    → **2**
 
-c) Cô đặt ra 3 quyển vở. Con đếm xem có mấy quyển?
-   → **3**
+c) Cô đặt ra 7 bông hoa. Con đếm xem có mấy bông?
+   → **7**
 
-d) Cô đặt ra 5 chiếc lá. Con đếm xem có mấy chiếc?
+d) Cô đặt ra 10 con cá. Con đếm xem có mấy con?
+   → **10**
+
+e) Cô đặt ra 5 chiếc lá. Con đếm xem có mấy chiếc?
    → **5**
-
-e) Cô đặt ra 9 chiếc lá. Con đếm xem có mấy chiếc?
-   → **9**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Vì sao con biết là {} cái? — để trẻ nói ra cách mình đếm.
 
@@ -122,17 +122,14 @@ e) Cô đặt ra 9 chiếc lá. Con đếm xem có mấy chiếc?
 
 **Đáp án từng việc**
 
-a) Con khoanh tròn nhóm có nhiều hơn.
-   → **nhóm nhiều hơn**
-
-b) Con khoanh vào vật ở giữa hàng.
+a) Con khoanh vào vật ở giữa hàng.
    → **vật chính giữa**
+
+b) Con tô màu hình tròn.
+   → **chỉ tô hình tròn**
 
 c) Con gạch bỏ vật không cùng nhóm.
    → **vật khác loại**
-
-d) Con tô màu hình tròn.
-   → **chỉ tô hình tròn**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con kiểm lại xem có bỏ sót cái nào không?
 
@@ -147,31 +144,28 @@ d) Con tô màu hình tròn.
 
 ## Đố vui cuối buổi
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-> **Cô/mẹ đọc lên:** Cô xếp một dãy. Con nhìn kỹ rồi đoán xem cái tiếp theo là gì.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi thôi, dễ lắm. Con trả lời miệng, không phải viết.
 
 **Đáp án từng việc**
 
-a) đỏ – vàng – đỏ – vàng – đỏ – vàng – … Con đoán xem tiếp theo là màu gì?
-   → **đỏ**
+a) Con giơ 2 ngón ở tay này, 2 ngón ở tay kia. Tất cả mấy ngón?
+   → **4**
 
-b) trắng – đỏ – trắng – đỏ – … Con đoán xem tiếp theo là màu gì?
-   → **trắng**
+b) Đếm tiếp cho cô: 8 rồi đến số mấy?
+   → **9**
 
-c) vàng – đỏ – xanh – vàng – đỏ – xanh – vàng – đỏ – xanh – … Con đoán xem tiếp theo là màu gì?
-   → **vàng**
+c) Số nào đứng ngay trước số 9?
+   → **8**
 
-d) xanh – trắng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
-   → **xanh**
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Đoán thử)*: Con đố lại cô một câu về số đi.
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Vì sao con đoán là màu đó? Con nói quy luật thành một câu xem.
+**Thế nào là con đã hiểu:** Trẻ nói ngay số liền sau mà không đếm lại từ 1. Đếm tiếp từ giữa dãy khó hơn đếm từ đầu rất nhiều.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời — “cứ đỏ rồi xanh rồi lại đỏ” — chứ không chỉ chỉ tay vào màu đúng.
+**Con tắc thì làm gì:** Cho trẻ đếm từ 1 lên tới chỗ ấy. Đừng chê là chậm — đếm lại từ đầu vẫn là cách đúng.
 
-**Con tắc thì làm gì:** Đọc to cả dãy theo nhịp, vỗ tay theo. Nhịp điệu giúp trẻ nghe ra quy luật trước khi nhìn ra.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một quy luật rồi đố lại người lớn — trẻ thích phần này nhất và nó khó hơn hẳn phần đoán.
+**Nếu con làm nhanh:** Hỏi số liền trước — phần này khó hơn hẳn, chỉ hỏi khi trẻ đã chắc số liền sau.
 
 
 ---

@@ -28,54 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**So sánh số trong phạm vi 10**
 
-a) Điền dấu >, < hoặc = : 1 … 10
+a) Điền dấu >, < hoặc = : 10 … 6
 
-b) Điền dấu >, < hoặc = : 3 … 4
+b) Điền dấu >, < hoặc = : 6 … 3
 
-c) Điền dấu >, < hoặc = : 8 … 10
+c) Điền dấu >, < hoặc = : 6 … 9
 
-d) Điền dấu >, < hoặc = : 17 … 16
+d) Điền dấu >, < hoặc = : 9 … 8
+
+e) Điền dấu >, < hoặc = : 10 … 8
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 37 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 67 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 53 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 87 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 47 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 59 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 79 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 17 que tính. Con lấy mấy bó và mấy que rời?
 
-e) Con lấy đúng 34 que tính. Con lấy mấy bó và mấy que rời?
+e) Con lấy đúng 46 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Từ một phép cộng ra hai phép trừ**
 
-a) Từ phép tính 4 + 3 = 7, con viết ra hai phép trừ.
+a) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
 
-b) Từ phép tính 7 + 3 = 10, con viết ra hai phép trừ.
+b) Từ phép tính 2 + 4 = 6, con viết ra hai phép trừ.
 
-c) Từ phép tính 4 + 1 = 5, con viết ra hai phép trừ.
+c) Từ phép tính 7 + 3 = 10, con viết ra hai phép trừ.
+
+d) Từ phép tính 5 + 1 = 6, con viết ra hai phép trừ.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) 3, 6, 12, …
+a) Số bí mật đứng liền sau 89 và liền trước 91. Số nào?
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
+b) 63 và 98: số nào lớn hơn?
 
-c) 1, 6, 11, 16, …
+c) Số bí mật đứng liền sau 41 và liền trước 43. Số nào?
 
-d) 1, 2, 4, …
+d) 66 và 88: số nào lớn hơn?
 
 
 ---
@@ -84,7 +88,7 @@ d) 1, 2, 4, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ So sánh số trong phạm vi 10
 - ☐ Lấy đúng số que tính
 - ☐ Từ một phép cộng ra hai phép trừ
-- ☐ Tìm quy luật
+- ☐ Số bí mật

@@ -41,50 +41,41 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính xếp thành nhóm bằng nhau
+- Thước dây hoặc thước mét
+- Cân nhà bếp
+- Đồng hồ kim
 - Thước mét
 - Cân
 - Ca đong 1 lít
+- Thước có vạch cm và dm
 - Bảng đơn vị đo độ dài
-- Cân đĩa
-- Mô hình đồng hồ
-- Một hộp bi có bi hai màu để thử thật
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Bảng nhân, bảng chia 2 và 5**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-> **Cô/mẹ đọc lên:** Con đọc to bảng nhân một lượt trước khi làm.
+> **Cô/mẹ đọc lên:** Khởi động bằng trò đoán. Chưa đo vội, cứ đoán trước đã.
 
 **Đáp án từng việc**
 
-a) 40 : 5 = …
-   → **8**
+a) Con đoán chiều dài lớp học khoảng bao nhiêu?
+   → **khoảng 6 đến 8 m**
 
-b) 5 × 4 = …
-   → **20**
+b) Con đoán cặp sách của con nặng khoảng bao nhiêu?
+   → **khoảng 2 đến 3 kg**
 
-c) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2
-   → **2 × 7 = 14**
+c) Kim ngắn qua số 1, kim dài chỉ số 6. Mấy giờ?
+   → **1 giờ 30 phút — cũng đọc là 1 giờ rưỡi**
 
-d) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5
-   → **5 × 7 = 35**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con lấy gì làm mốc để đoán? Con so với cái gì mà con biết sẵn?
 
-e) 2 × 3 = …
-   → **6**
+**Thế nào là con đã hiểu:** Trẻ nêu được **mốc so sánh**: 'cao bằng hai lần con' hoặc 'nặng bằng chai nước'. Ước lượng có mốc thì mới là ước lượng, đoán bừa thì không.
 
-f) 20 : 2 = …
-   → **10**
+**Con tắc thì làm gì:** Cho trẻ cầm vật nặng 1 kg và nhìn đoạn dài 1 m trước, lấy đó làm mốc.
 
-**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Con biết 2 × 6 rồi. Vậy 6 × 2 bằng mấy? Có phải lúc nào cũng thế không?
-
-**Thế nào là con đã hiểu:** Trẻ hiểu phép nhân là cộng các số hạng bằng nhau, và dùng được phép nhân đã thuộc để suy ra phép chia tương ứng.
-
-**Con tắc thì làm gì:** Xếp que tính thành từng nhóm rồi đếm — thấy được mới nhớ được.
-
-**Nếu con làm nhanh:** Hỏi 2 × 11, một phép ngoài bảng, xem trẻ có tự cộng thêm 2 không.
+**Nếu con làm nhanh:** Đoán rồi đo ngay, ghi hai số cạnh nhau xem lệch bao nhiêu.
 
 
 ---
@@ -100,16 +91,16 @@ f) 20 : 2 = …
 a) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
    → **trẻ đoán rồi đo — so xem đoán gần chưa**
 
-b) Con đoán lượng nước trong chai khoảng bao nhiêu lít? Đoán xong mình đo lại.
+b) Con đoán khối lượng cặp sách khoảng bao nhiêu kg? Đoán xong mình đo lại.
    → **trẻ đoán rồi đo — so xem đoán gần chưa**
 
-c) Con đoán chiều cao cửa ra vào khoảng bao nhiêu m? Đoán xong mình đo lại.
+c) Con đoán chiều dài quyển vở khoảng bao nhiêu cm? Đoán xong mình đo lại.
    → **trẻ đoán rồi đo — so xem đoán gần chưa**
 
-d) Con đoán khối lượng cặp sách khoảng bao nhiêu kg? Đoán xong mình đo lại.
+d) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
    → **trẻ đoán rồi đo — so xem đoán gần chưa**
 
-e) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
+e) Con đoán lượng nước trong chai khoảng bao nhiêu lít? Đoán xong mình đo lại.
    → **trẻ đoán rồi đo — so xem đoán gần chưa**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Lần này con đoán gần hơn lần trước không? Vì sao?
@@ -125,29 +116,63 @@ e) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình �
 
 ## PHẦN C — Luyện tay
 
+**Tính với số đo**
+
+> **Cô/mẹ đọc lên:** Tính với số đo cũng như tính với số thường, chỉ khác là **viết kèm đơn vị** vào sau kết quả.
+
+**Đáp án từng việc**
+
+a) 32 cm + 21 cm = …
+   → **53 cm**
+
+b) Băng giấy dài 29 cm, cắt đi 21 cm. Còn lại dài bao nhiêu?
+   → **8 cm**
+
+c) 3 dm = … cm
+   → **30 cm**
+
+d) Bạn Nam bắt đầu học lúc 3 giờ, học 3 tiếng thì xong. Xong lúc mấy giờ?
+   → **6 giờ**
+
+e) 7 dm = … cm
+   → **70 cm**
+
+**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Nói cho người khác tin)*: Cộng 20 cm với 3 dm được không? Phải làm gì trước đã?
+
+**Thế nào là con đã hiểu:** Trẻ viết đơn vị vào kết quả mà không cần nhắc, và biết phải **đưa về cùng đơn vị** trước khi cộng. Bỏ quên đơn vị là lỗi trừ điểm nhiều nhất của lớp 2.
+
+**Con tắc thì làm gì:** Đo thật bằng thước rồi mới tính, để trẻ thấy con số gắn với vật thật.
+
+**Nếu con làm nhanh:** Cho cộng hai số đo khác đơn vị — trẻ phải tự nhận ra chỗ vướng.
+
+
+---
+
+## PHẦN D — Bài toán có lời văn
+
 **Đổi đơn vị và tính trên số đo**
 
 > **Cô/mẹ đọc lên:** Muốn so hai số đo thì phải đưa về cùng một đơn vị đã.
 
 **Đáp án từng việc**
 
-a) 10 cm + 40 cm = … cm
-   → **50 cm**
+a) 28 cm + 11 cm = … cm
+   → **39 cm**
 
-b) Điền dấu >, < hoặc = : 8 dm … 74 cm
+b) Điền dấu >, < hoặc = : 6 dm … 37 cm
    → **>**
 
-c) 5 km = … m
-   → **5 000 m**
+c) 3 m = … cm
+   → **300 cm**
 
-d) 19 cm + 26 cm = … cm
-   → **45 cm**
+d) 23 cm + 8 cm = … cm
+   → **31 cm**
 
-e) Điền dấu >, < hoặc = : 8 dm … 62 cm
-   → **>**
+e) 8 m = … dm
+   → **80 dm**
 
-f) 2 km = … m
-   → **2 000 m**
+f) Điền dấu >, < hoặc = : 2 dm … 26 cm
+   → **<**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Vì sao không so thẳng 5 với 40 được?
 
@@ -160,76 +185,33 @@ f) 2 km = … m
 
 ---
 
-## PHẦN D — Bài toán có lời văn
-
-**Đơn vị đo và xem đồng hồ**
-
-> **Cô/mẹ đọc lên:** Con nhớ 1 đề-xi-mét bằng 10 xăng-ti-mét, và kim dài chỉ số 6 là đúng nửa giờ.
-
-**Đáp án từng việc**
-
-a) 8 dm = … cm
-   → **80 cm**
-
-b) Bao gạo nặng 16 kg, bao ngô nặng 20 kg. Cả hai bao nặng mấy ki-lô-gam?
-   → **36 kg**
-
-c) Kim ngắn chỉ số 3, kim dài chỉ số 12. Mấy giờ?
-   → **3 giờ**
-
-d) Kim ngắn chỉ số 4, kim dài chỉ số 12. Mấy giờ?
-   → **4 giờ**
-
-e) Bao gạo nặng 11 kg, bao ngô nặng 15 kg. Cả hai bao nặng mấy ki-lô-gam?
-   → **26 kg**
-
-f) 9 dm = … cm
-   → **90 cm**
-
-**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán cái bàn này dài khoảng mấy đề-xi-mét? Đoán xong rồi mình đo thử xem gần chưa.
-
-**Thế nào là con đã hiểu:** Trẻ ước lượng được trước khi đo, và ước lượng ngày càng gần kết quả thật. Ước lượng là kỹ năng riêng, phải luyện.
-
-**Con tắc thì làm gì:** Cho trẻ cầm thước 1 dm để có cảm giác về độ dài ấy.
-
-**Nếu con làm nhanh:** Hỏi những vật nào trong nhà nặng khoảng 1 kg.
-
-
----
-
 ## PHẦN E — Thử thách vui
 
-**Chắc chắn, có thể, không thể**
+**Đố vui đo lường và giờ**
 
-> **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi thôi, toàn thứ mình vừa học xong.
 
 **Đáp án từng việc**
 
-a) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+a) 3 dm bằng bao nhiêu cm?
+   → **30 cm**
 
-b) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
-   → **có thể**
+b) 2 kg bằng bao nhiêu gam?
+   → **2 000 g**
 
-c) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
-   → **chắc chắn**
+c) Bây giờ là 4 giờ. 1 tiếng nữa là mấy giờ?
+   → **5 giờ**
 
-d) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
-   → **có thể**
+d) Bây giờ là 5 giờ. 3 tiếng nữa là mấy giờ?
+   → **8 giờ**
 
-e) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-   → **không thể**
+**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Nói cho người khác tin)*: Đổi từ m sang dm thì số to lên hay bé đi? Vì sao?
 
-f) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
-   → **có thể**
+**Thế nào là con đã hiểu:** Trẻ nói được vì sao số to lên khi đổi sang đơn vị nhỏ hơn: **đơn vị nhỏ thì cần nhiều cái hơn** để đo cùng một đoạn. Nhớ quy tắc mà không hiểu chỗ này thì đến lớp 4 sẽ đổi ngược.
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
+**Con tắc thì làm gì:** Lấy thước mét ra đếm thật: 1 m có mấy đoạn 1 dm.
 
-**Thế nào là con đã hiểu:** Trẻ phân biệt được “không thể” với “khó xảy ra”. Đây là chỗ nhầm nhiều nhất, và cũng là gốc của khái niệm xác suất sau này.
-
-**Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
+**Nếu con làm nhanh:** Hỏi 1 kg và 1 000 g cái nào nặng hơn — nhiều trẻ trả lời 1 000 g.
 
 
 ---

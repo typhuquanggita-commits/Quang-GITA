@@ -30,69 +30,71 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Bảng nhân, bảng chia 2 và 5**
 
-a) 40 : 5 = …
+a) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5
 
-b) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5
+b) 5 × 3 = …
 
-c) 5 × 6 = …
+c) 2 : 2 = …
 
-d) 6 : 2 = …
+d) Viết phép nhân thay cho phép cộng: 5 + 5
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 5 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-b) Xếp 2 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+b) Xếp 7 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 7 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 2 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-d) Xếp 7 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+d) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+
+e) Xếp 5 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Bài toán nhân, chia**
 
-a) Mỗi hộp có 5 cái kẹo. Hỏi 10 hộp có mấy cái?
+a) Mỗi hộp có 5 quả cam. Hỏi 2 hộp có mấy quả?
 
-b) Có 8 chiếc lá chia đều vào 2 hộp. Mỗi hộp có mấy chiếc?
+b) Có 40 quyển vở chia đều vào 5 hộp. Mỗi hộp có mấy quyển?
 
-c) Mỗi hộp có 2 quyển vở. Hỏi 4 hộp có mấy quyển?
+c) Có 16 quả cam chia đều vào 2 hộp. Mỗi hộp có mấy quả?
 
-d) Có 20 chiếc lá chia đều vào 2 hộp. Mỗi hộp có mấy chiếc?
+d) Mỗi hộp có 5 viên bi. Hỏi 6 hộp có mấy viên?
 
-e) Mỗi hộp có 5 cái kẹo. Hỏi 4 hộp có mấy cái?
+e) Mỗi hộp có 2 cái bánh. Hỏi 6 hộp có mấy cái?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Cộng trừ có nhớ trong phạm vi 100**
+**Bảng nhân, bảng chia và số còn thiếu**
 
-a) Đặt tính rồi tính: 78 − 60
+a) Tìm số còn thiếu: 2 × … = 6
 
-b) Đặt tính rồi tính: 46 + 36
+b) 35 : 5 = …
 
-c) Đặt tính rồi tính: 69 − 63
+c) 5 × 5 = …
 
-d) Đặt tính rồi tính: 88 + 10
+d) Có 35 cái kẹo chia đều vào 5 hộp. Mỗi hộp mấy cái kẹo?
 
-e) Đặt tính rồi tính: 52 − 37
-
-f) Đặt tính rồi tính: 25 + 17
+e) 5 × 3 = …
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui nhân chia**
 
-a) Một bạn tính 16 + 65 = 71. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Một đôi dép có 2 chiếc. 6 chiếc dép là mấy đôi?
 
-b) Một bạn tính 27 + 79 = 96. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) 8 con mèo có tất cả mấy cái chân?
 
-c) Một bạn tính 70 + 51 = 130. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Chia đều 15 cái kẹo cho 5 bạn. Mỗi bạn mấy cái?
+
+d) Con có 7 viên bi. Anh có gấp 5 lần con. Anh có mấy viên?
 
 
 ---
@@ -104,5 +106,5 @@ c) Một bạn tính 70 + 51 = 130. Bạn ấy sai ở đâu? Kết quả đúng
 - ☐ Bảng nhân, bảng chia 2 và 5
 - ☐ Từ phép cộng sang phép nhân
 - ☐ Bài toán nhân, chia
-- ☐ Cộng trừ có nhớ trong phạm vi 100
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Bảng nhân, bảng chia và số còn thiếu
+- ☐ Đố vui nhân chia

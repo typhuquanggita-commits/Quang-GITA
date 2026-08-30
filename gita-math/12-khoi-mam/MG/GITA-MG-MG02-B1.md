@@ -32,13 +32,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Nhảy và đếm**
 
-a) Con nhảy đúng 5 cái nhé. Đếm to lên.
+a) Con nhảy đúng 3 cái nhé. Đếm to lên.
 
-b) Con giậm chân đúng 6 cái nhé. Đếm to lên.
+b) Con vỗ tay đúng 5 cái nhé. Đếm to lên.
 
-c) Con bước lên phía trước đúng 4 bước nhé. Đếm to lên.
+c) Con gật đầu đúng 9 cái nhé. Đếm to lên.
 
-d) Con gật đầu đúng 5 cái nhé. Đếm to lên.
+d) Con bước lên phía trước đúng 3 bước nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,11 +47,13 @@ d) Con gật đầu đúng 5 cái nhé. Đếm to lên.
 
 **Đếm rồi nói số cuối cùng**
 
-a) Cô đặt ra 6 con vịt. Con đếm xem có mấy con?
+a) Cô đặt ra 2 quả bóng. Con đếm xem có mấy quả?
 
-b) Cô đặt ra 9 cái kẹo. Con đếm xem có mấy cái?
+b) Cô đặt ra 6 quả cam. Con đếm xem có mấy quả?
 
-c) Cô đặt ra 10 con vịt. Con đếm xem có mấy con?
+c) Cô đặt ra 9 bông hoa. Con đếm xem có mấy bông?
+
+d) Cô đặt ra 2 con vịt. Con đếm xem có mấy con?
 
 
 ## Tự làm thử · 7 phút
@@ -60,26 +62,28 @@ c) Cô đặt ra 10 con vịt. Con đếm xem có mấy con?
 
 **Tìm thẻ số cho đúng nhóm**
 
-a) Ô này có 8 chiếc lá. Con tìm thẻ số nào đặt vào ô đó?
+a) Ô này có 1 quả bóng. Con tìm thẻ số nào đặt vào ô đó?
 
-b) Ô này có 2 con vịt. Con tìm thẻ số nào đặt vào ô đó?
+b) Ô này có 6 con vịt. Con tìm thẻ số nào đặt vào ô đó?
 
-c) Ô này có 3 chiếc lá. Con tìm thẻ số nào đặt vào ô đó?
+c) Ô này có 9 bông hoa. Con tìm thẻ số nào đặt vào ô đó?
+
+d) Ô này có 8 cái bánh. Con tìm thẻ số nào đặt vào ô đó?
+
+e) Ô này có 7 quả bóng. Con tìm thẻ số nào đặt vào ô đó?
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) đỏ – trắng – đỏ – trắng – … Con đoán xem tiếp theo là màu gì?
+a) Số nào đứng ngay trước số 6?
 
-b) vàng – trắng – vàng – trắng – vàng – trắng – … Con đoán xem tiếp theo là màu gì?
+b) Đếm tiếp cho cô: 3 rồi đến số mấy?
 
-c) đỏ – vàng – đỏ – vàng – … Con đoán xem tiếp theo là màu gì?
-
-d) trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo là màu gì?
+c) Dãy số bị mất một số: 3 , … , 5 , 6 . Mất số nào?
 
 
 ---
@@ -93,4 +97,4 @@ d) trắng – vàng – trắng – vàng – … Con đoán xem tiếp theo l�
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Đếm rồi nói số cuối cùng | ☐ | ☐ | ☐ |
 | Tìm thẻ số cho đúng nhóm | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

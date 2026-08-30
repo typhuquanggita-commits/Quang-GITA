@@ -46,7 +46,7 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính bó sẵn từng chục
 - Que tính rời
 - 10 que tính
-- Que tính để xếp hình
+- Bảng số từ 1 đến 100 (nếu có)
 
 ---
 
@@ -58,20 +58,23 @@ Bản dành cho: **người lớn ngồi cùng**
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 18 … 1
+a) Điền dấu >, < hoặc = : 10 … 3
    → **>**
 
-b) Điền dấu >, < hoặc = : 18 … 12
+b) Điền dấu >, < hoặc = : 19 … 11
    → **>**
 
-c) Điền dấu >, < hoặc = : 19 … 4
-   → **>**
+c) Điền dấu >, < hoặc = : 16 … 20
+   → **<**
 
-d) Điền dấu >, < hoặc = : 16 … 5
-   → **>**
+d) Điền dấu >, < hoặc = : 1 … 10
+   → **<**
 
-e) Điền dấu >, < hoặc = : 8 … 7
-   → **>**
+e) Điền dấu >, < hoặc = : 9 … 17
+   → **<**
+
+f) Điền dấu >, < hoặc = : 5 … 7
+   → **<**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
 
@@ -92,17 +95,17 @@ e) Điền dấu >, < hoặc = : 8 … 7
 
 **Đáp án từng việc**
 
-a) Con lấy đúng 83 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 72 que tính. Con lấy mấy bó và mấy que rời?
+   → **7 bó và 2 que rời**
+
+b) Con lấy đúng 34 que tính. Con lấy mấy bó và mấy que rời?
+   → **3 bó và 4 que rời**
+
+c) Con lấy đúng 96 que tính. Con lấy mấy bó và mấy que rời?
+   → **9 bó và 6 que rời**
+
+d) Con lấy đúng 83 que tính. Con lấy mấy bó và mấy que rời?
    → **8 bó và 3 que rời**
-
-b) Con lấy đúng 25 que tính. Con lấy mấy bó và mấy que rời?
-   → **2 bó và 5 que rời**
-
-c) Con lấy đúng 80 que tính. Con lấy mấy bó và mấy que rời?
-   → **8 bó và 0 que rời**
-
-d) Con lấy đúng 90 que tính. Con lấy mấy bó và mấy que rời?
-   → **9 bó và 0 que rời**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Có cách nào lấy nhanh hơn là đếm từng que không?
 
@@ -123,20 +126,17 @@ d) Con lấy đúng 90 que tính. Con lấy mấy bó và mấy que rời?
 
 **Đáp án từng việc**
 
-a) 5 + … = 9
-   → **4**
+a) … + 2 = 10
+   → **8**
 
-b) … + 4 = 7
-   → **3**
+b) 3 + … = 5
+   → **2**
 
-c) 6 + … = 7
-   → **1**
+c) … + 4 = 9
+   → **5**
 
-d) … + 1 = 10
-   → **9**
-
-e) … + 1 = 10
-   → **9**
+d) 4 + … = 9
+   → **5**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Con tìm ra số đó bằng cách nào? Có cách nào nhanh hơn không?
 
@@ -151,34 +151,28 @@ e) … + 1 = 10
 
 ## PHẦN D — Thử thách vui
 
-**Tìm quy luật**
+**Số bí mật**
 
-> **Cô/mẹ đọc lên:** Con nhìn xem từ số này sang số kia thay đổi thế nào.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.
 
 **Đáp án từng việc**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
-   → **13 que**
+a) 32 và 70: số nào lớn hơn?
+   → **70**
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
-   → **16 que**
+b) Số bí mật có 5 chục và 1 đơn vị. Số ấy là số nào?
+   → **51**
 
-c) 10, 20, 30, 40, …
-   → **50**
+c) Số bí mật đứng liền sau 91 và liền trước 93. Số nào?
+   → **92**
 
-d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
-   → **13 que**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng đơn vị trước?
 
-e) 2, 4, 8, …
-   → **16**
+**Thế nào là con đã hiểu:** Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn hơn 40 vì 9 lớn hơn 0.
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Rút ra quy luật)*: Con nói quy luật thành một câu xem. Số thứ mười sẽ là số nào?
+**Con tắc thì làm gì:** Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.
 
-**Thế nào là con đã hiểu:** Trẻ nói được quy luật thành lời trước khi viết số tiếp theo. Viết đúng mà không nói được quy luật thường là đoán trúng.
-
-**Con tắc thì làm gì:** Viết hiệu giữa hai số liền nhau xuống dưới cho trẻ nhìn thấy.
-
-**Nếu con làm nhanh:** Cho trẻ tự nghĩ một dãy rồi đố lại.
+**Nếu con làm nhanh:** Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói 'lớn hơn' hoặc 'bé hơn'.
 
 
 ---

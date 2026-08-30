@@ -28,17 +28,13 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 1 … 5
+a) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 8 … 6
+b) Đếm tiếp cho cô: 2 , 4 , 6 , 8 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 6 … 4
-
-d) Điền dấu >, < hoặc = : 4 … 3
-
-e) Điền dấu >, < hoặc = : 5 … 4
+c) Đếm từ 60 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
@@ -47,39 +43,45 @@ e) Điền dấu >, < hoặc = : 5 … 4
 
 a) Ghép hai hình tam giác lại thì được hình gì?
 
-b) hình tam giác – hình chữ nhật – hình vuông – hình tam giác – … Hình tiếp theo là hình gì?
+b) hình vuông – hình tròn – hình vuông – hình tròn – … Hình tiếp theo là hình gì?
 
-c) hình vuông – hình chữ nhật – hình vuông – hình chữ nhật – … Hình tiếp theo là hình gì?
+c) hình tam giác – hình chữ nhật – hình tròn – hình tam giác – … Hình tiếp theo là hình gì?
 
-d) Ghép hai hình vuông lại thì được hình gì?
+d) Ghép hai hình tròn lại thì được hình gì?
 
-e) hình chữ nhật – hình tam giác – hình chữ nhật – hình tam giác – … Hình tiếp theo là hình gì?
+e) hình vuông – hình tròn – hình tam giác – hình vuông – … Hình tiếp theo là hình gì?
+
+f) Ghép hai hình chữ nhật lại thì được hình gì?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) An có 20 quả bóng. Cốm có 15 quả. Cả hai bạn có tất cả mấy quả?
+a) Bơ có 16 viên bi. Bi có 13 viên. Cả hai bạn có tất cả mấy viên?
 
-b) 3, 8, 13, 18, … Số tiếp theo là số nào?
+b) 3, 13, 23, 33, … Số tiếp theo là số nào?
 
-c) Cốm có 5 viên bi. Tèo có 9 viên. Cả hai bạn có tất cả mấy viên?
+c) 13, 18, 23, 28, … Số tiếp theo là số nào?
 
-d) 9, 19, 29, 39, … Số tiếp theo là số nào?
+d) Nam có 10 cái kẹo. An có 13 cái. Cả hai bạn có tất cả mấy cái?
 
-e) 9, 14, 19, 24, … Số tiếp theo là số nào?
+e) 6, 8, 10, 12, … Số tiếp theo là số nào?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tìm quy luật**
 
-a) 1, 2, 4, …
+a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
 
-b) 11, 14, 17, 20, …
+b) 1, 6, 11, 16, …
 
-c) 3, 6, 12, …
+c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
+
+d) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+
+e) 8, 13, 18, 23, …
 
 
 ---
@@ -88,7 +90,7 @@ c) 3, 6, 12, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ Đếm nối tiếp theo bước
 - ☐ Ghép hình và dãy hình
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tìm quy luật

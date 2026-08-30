@@ -28,15 +28,15 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Khảo sát chớp nhoáng**
 
-a) 5 : 5 = …
+a) Bạn nào có em thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-b) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5
+b) Bạn nào đi học bằng xe máy thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-c) 5 × 1 = …
+c) Tháng sau lớp mình được nghỉ một ngày — chắc chắn, có thể hay không thể?
 
-d) 6 : 2 = …
+d) Ngày mai trời mưa — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
@@ -54,41 +54,49 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Đổi đơn vị và tính trên số đo**
+**Đọc bảng số liệu và đoán khả năng**
 
-a) 1 m = … dm
+a) Lớp 2A khảo sát cách đi học. Kết quả: xe buýt: 8 bạn · xe đạp: 13 bạn · ô tô: 3 bạn. Cách nào nhiều bạn chọn nhất?
 
-b) 9 cm + 12 cm = … cm
+b) Cách nào ít bạn chọn nhất?
 
-c) Điền dấu >, < hoặc = : 8 dm … 60 cm
+c) Xe đạp nhiều hơn ô tô bao nhiêu bạn?
 
-d) 13 cm + 5 cm = … cm
+d) Lớp khảo sát tất cả bao nhiêu bạn?
+
+e) Rút một bạn bất kỳ trong lớp, bạn ấy đi học bằng xe đạp — chắc chắn, có thể hay không thể?
+
+f) Rút một bạn bất kỳ, bạn ấy đi học bằng máy bay — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đổi đơn vị và tính trên số đo**
 
-a) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+a) 6 km = … m
 
-b) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+b) 15 cm + 16 cm = … cm
 
-c) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
+c) Điền dấu >, < hoặc = : 5 dm … 86 cm
 
-d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+d) 32 cm + 10 cm = … cm
 
-e) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+e) 1 dm = … cm
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Chắc chắn, có thể, không thể**
 
-a) Một bạn tính 27 + 59 = 76. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
 
-b) Một bạn tính 22 + 62 = 93. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
 
-c) Một bạn tính 47 + 30 = 86. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+
+d) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+
+e) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
 
 
 ---
@@ -97,8 +105,8 @@ c) Một bạn tính 47 + 30 = 86. Bạn ấy sai ở đâu? Kết quả đúng 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Khảo sát chớp nhoáng
 - ☐ Kiểm đếm về món ăn sáng của các bạn
+- ☐ Đọc bảng số liệu và đoán khả năng
 - ☐ Đổi đơn vị và tính trên số đo
 - ☐ Chắc chắn, có thể, không thể
-- ☐ Tìm chỗ sai giúp bạn

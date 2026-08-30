@@ -32,9 +32,9 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Trên – dưới, trước – sau, phải – trái**
 
-a) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+a) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
 
-b) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+b) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
 
 c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
 
@@ -45,13 +45,13 @@ c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ v�
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 10 con vịt thành vòng tròn. Con đếm xem có mấy con?
+a) Cô bày 5 con vịt thành hàng ngang. Con đếm xem có mấy con?
 
-b) Cô bày 10 quyển vở thành hai hàng. Con đếm xem có mấy quyển?
+b) Cô bày 4 cái bánh thành vòng tròn. Con đếm xem có mấy cái?
 
-c) Cô bày 9 cái bánh thành hàng ngang. Con đếm xem có mấy cái?
+c) Cô bày 7 bông hoa thành hàng ngang. Con đếm xem có mấy bông?
 
-d) Cô bày 9 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
+d) Cô bày 6 cái bánh rải lộn xộn. Con đếm xem có mấy cái?
 
 
 ## Tự làm thử · 7 phút
@@ -60,13 +60,13 @@ d) Cô bày 9 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
 
 **Con thứ mấy trong hàng**
 
-a) Có 4 con thỏ xếp thành hàng. Con chỉ vào con thứ ba.
+a) Có 6 con thỏ xếp thành hàng. Con chỉ vào con thứ hai.
 
-b) Có 5 con chim xếp thành hàng. Con chỉ vào con thứ ba.
+b) Có 5 con vịt xếp thành hàng. Con chỉ vào con thứ hai.
 
-c) Có 5 con ong xếp thành hàng. Con chỉ vào con thứ ba.
+c) Có 8 con bướm xếp thành hàng. Con chỉ vào con thứ tư.
 
-d) Có 5 con mèo xếp thành hàng. Con chỉ vào con thứ hai.
+d) Có 6 con cá xếp thành hàng. Con chỉ vào con thứ hai.
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -75,13 +75,13 @@ d) Có 5 con mèo xếp thành hàng. Con chỉ vào con thứ hai.
 
 **Sáng, trưa, chiều, tối**
 
-a) Con đánh răng buổi sớm vào buổi nào trong ngày?
+a) Con ngủ trưa vào buổi nào trong ngày?
 
-b) Con tan học vào buổi nào trong ngày?
+b) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
-c) Con đi ngủ vào buổi nào trong ngày?
+c) Con tan học vào buổi nào trong ngày?
 
-d) Con ngủ trưa vào buổi nào trong ngày?
+d) Con ăn sáng vào buổi nào trong ngày?
 
 
 ---

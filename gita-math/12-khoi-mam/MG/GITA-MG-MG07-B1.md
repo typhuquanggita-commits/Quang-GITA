@@ -30,15 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-a) Con đặt quả bóng ở phía sau mình. Rồi kể tên một đồ vật đang ở phía sau con.
+a) Con chạy đi tìm một thứ trong nhà có hình tròn.
 
-b) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+b) Con chạy đi tìm một thứ trong nhà có hình tam giác.
 
-c) Con đặt quả bóng ở bên phải mình. Rồi kể tên một đồ vật đang ở bên phải con.
+c) Tìm cho cô một thứ là khối trụ.
 
-d) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+d) Tìm một thứ dài hơn cánh tay của con.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,15 +47,15 @@ d) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vậ
 
 **Tìm hình quanh mình**
 
-a) Đây là khối hộp chữ nhật. Con tìm quanh nhà một đồ vật có dạng khối hộp chữ nhật.
+a) Đây là hình tròn. Con tìm quanh nhà một đồ vật có dạng hình tròn.
 
-b) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
+b) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
 
-c) Đây là hình vuông. Con tìm quanh nhà một đồ vật có dạng hình vuông.
+c) Đây là khối lập phương. Con tìm quanh nhà một đồ vật có dạng khối lập phương.
 
-d) Đây là hình chữ nhật. Con tìm quanh nhà một đồ vật có dạng hình chữ nhật.
+d) Đây là hình tam giác. Con tìm quanh nhà một đồ vật có dạng hình tam giác.
 
-e) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng khối cầu.
+e) Đây là khối trụ. Con tìm quanh nhà một đồ vật có dạng khối trụ.
 
 
 ## Tự làm thử · 7 phút
@@ -64,28 +64,26 @@ e) Đây là khối cầu. Con tìm quanh nhà một đồ vật có dạng kh�
 
 **Khoanh, nối, tô**
 
-a) Con khoanh vào vật ở giữa hàng.
+a) Con nối mỗi con vật với cái chuồng của nó.
 
-b) Con gạch bỏ vật không cùng nhóm.
+b) Con khoanh tròn nhóm có nhiều hơn.
 
-c) Con khoanh tròn nhóm có nhiều hơn.
+c) Con gạch bỏ vật không cùng nhóm.
 
-d) Con tô màu hình tròn.
+d) Con khoanh vào vật ở giữa hàng.
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Sáng, trưa, chiều, tối**
+**Đố vui so sánh**
 
-a) Con ngủ trưa vào buổi nào trong ngày?
+a) Ngón tay và cánh tay: cái nào to hơn?
 
-b) Con tan học vào buổi nào trong ngày?
+b) Cái ấm và cái cốc: cái nào to hơn?
 
-c) Con ăn sáng vào buổi nào trong ngày?
-
-d) Con đánh răng buổi sớm vào buổi nào trong ngày?
+c) Cô có 5 cái kẹo, con có 6 cái. Ai nhiều hơn?
 
 
 ---
@@ -96,7 +94,7 @@ d) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Đi săn hình quanh nhà | ☐ | ☐ | ☐ |
 | Tìm hình quanh mình | ☐ | ☐ | ☐ |
 | Khoanh, nối, tô | ☐ | ☐ | ☐ |
-| Sáng, trưa, chiều, tối | ☐ | ☐ | ☐ |
+| Đố vui so sánh | ☐ | ☐ | ☐ |

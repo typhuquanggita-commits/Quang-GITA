@@ -42,7 +42,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Một rổ đồ vật nhỏ giống nhau
 - Que tính bó sẵn từng chục
 - Que tính rời
 - Bút chì để gạch chân
@@ -52,34 +52,31 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**Kể một bài toán bằng miệng**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Chưa viết gì đâu. Cô làm, con nhìn rồi kể lại bằng lời cho cô nghe.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 8 … 9
-   → **<**
+a) Cô để 7 quả cam, bạn An đưa thêm 4 quả. Con kể lại thành một câu chuyện có số.
+   → **Có 7 quả cam, thêm 4 quả, tất cả 11 quả**
 
-b) Điền dấu >, < hoặc = : 2 … 5
-   → **<**
+b) Cô để 9 cái bánh, bạn Bơ đưa thêm 2 cái. Con kể lại thành một câu chuyện có số.
+   → **Có 9 cái bánh, thêm 2 cái, tất cả 11 cái**
 
-c) Điền dấu >, < hoặc = : 5 … 7
-   → **<**
+c) Cô để 9 quyển vở ra bàn rồi cất đi 1 quyển. Con kể lại thành một câu chuyện có số.
+   → **Có 9 quyển vở, cất đi 1 quyển, còn 8 quyển**
 
-d) Điền dấu >, < hoặc = : 2 … 6
-   → **<**
+d) Cô để 6 quyển vở ra bàn rồi cất đi 4 quyển. Con kể lại thành một câu chuyện có số.
+   → **Có 6 quyển vở, cất đi 4 quyển, còn 2 quyển**
 
-e) Điền dấu >, < hoặc = : 8 … 6
-   → **>**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Trong câu chuyện của con, câu nào cho biết phải làm phép cộng?
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Thế nào là con đã hiểu:** Trẻ kể đủ ba phần: **có bao nhiêu – xảy ra chuyện gì – còn hoặc được bao nhiêu**. Kể được bằng miệng thì viết lời giải sẽ nhẹ hẳn, vì khó nhất của bài có lời văn là hiểu tình huống chứ không phải tính.
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
+**Con tắc thì làm gì:** Người lớn kể mẫu một lần, rồi kể lại và bỏ trống câu cuối cho trẻ nói nốt.
 
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
-
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Trẻ tự bày đồ vật và ra đề cho người lớn giải.
 
 
 ---
@@ -92,17 +89,17 @@ e) Điền dấu >, < hoặc = : 8 … 6
 
 **Đáp án từng việc**
 
-a) Con lấy đúng 12 que tính. Con lấy mấy bó và mấy que rời?
-   → **1 bó và 2 que rời**
-
-b) Con lấy đúng 32 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 32 que tính. Con lấy mấy bó và mấy que rời?
    → **3 bó và 2 que rời**
 
-c) Con lấy đúng 56 que tính. Con lấy mấy bó và mấy que rời?
-   → **5 bó và 6 que rời**
+b) Con lấy đúng 69 que tính. Con lấy mấy bó và mấy que rời?
+   → **6 bó và 9 que rời**
 
-d) Con lấy đúng 59 que tính. Con lấy mấy bó và mấy que rời?
-   → **5 bó và 9 que rời**
+c) Con lấy đúng 36 que tính. Con lấy mấy bó và mấy que rời?
+   → **3 bó và 6 que rời**
+
+d) Con lấy đúng 85 que tính. Con lấy mấy bó và mấy que rời?
+   → **8 bó và 5 que rời**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Có cách nào lấy nhanh hơn là đếm từng que không?
 
@@ -123,20 +120,23 @@ d) Con lấy đúng 59 que tính. Con lấy mấy bó và mấy que rời?
 
 **Đáp án từng việc**
 
-a) Na có 8 cái kẹo. Tèo có 9 cái. Cả hai bạn có tất cả mấy cái?
-   → **17 cái**
-
-b) 2, 12, 22, 32, … Số tiếp theo là số nào?
-   → **42**
-
-c) Tí có 19 quả bóng. Bi có 10 quả. Cả hai bạn có tất cả mấy quả?
-   → **29 quả**
-
-d) 10, 20, 30, 40, … Số tiếp theo là số nào?
-   → **50**
-
-e) 4, 9, 14, 19, … Số tiếp theo là số nào?
+a) 16, 18, 20, 22, … Số tiếp theo là số nào?
    → **24**
+
+b) Bơ có 6 con vịt. Nam có 3 con. Cả hai bạn có tất cả mấy con?
+   → **9 con**
+
+c) Nam có 14 con cá. Tí có 5 con. Cả hai bạn có tất cả mấy con?
+   → **19 con**
+
+d) 19, 29, 39, 49, … Số tiếp theo là số nào?
+   → **59**
+
+e) An có 20 quyển vở. Bi có 18 quyển. Cả hai bạn có tất cả mấy quyển?
+   → **38 quyển**
+
+f) 15, 17, 19, 21, … Số tiếp theo là số nào?
+   → **23**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Đoán thử)*: Con nghĩ dãy này cứ thế mãi thì số thứ mười là số nào?
 
@@ -157,16 +157,13 @@ e) 4, 9, 14, 19, … Số tiếp theo là số nào?
 
 **Đáp án từng việc**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 3 = 3.
+a) Con hãy nghĩ ra một bài toán mà phép tính là 14 − 4 = 10.
    → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 8 = 2.
+b) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 6 = 3.
    → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 7 + 8 = 15.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
-
-d) Con hãy nghĩ ra một bài toán mà phép tính là 8 − 7 = 1.
+c) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 5 = 1.
    → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Đề của con có đủ cho người khác giải được không? Thiếu gì không?

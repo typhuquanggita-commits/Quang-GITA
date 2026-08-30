@@ -28,58 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 80 … 24
+a) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 29 … 68
+b) Đếm tiếp cho cô: 1 , 3 , 5 , 7 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 33 … 68
+c) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
 
-d) Điền dấu >, < hoặc = : 47 … 37
-
-e) Điền dấu >, < hoặc = : 75 … 55
+d) Đếm từ 70 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Cộng trừ số tròn chục**
 
-a) 20 + 50 = …
+a) 90 − 10 = …
 
-b) 90 − 30 = …
+b) 50 + 40 = …
 
-c) 80 − 70 = …
+c) 60 − 50 = …
 
-d) 70 + 10 = …
+d) 30 + 20 = …
+
+e) 80 − 70 = …
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Bài toán có lời văn và dãy số**
 
-a) 18, 20, 22, 24, … Số tiếp theo là số nào?
+a) Mai có 15 quyển vở. Nam có 16 quyển. Cả hai bạn có tất cả mấy quyển?
 
-b) Bi có 13 quyển vở. Bơ có 8 quyển. Cả hai bạn có tất cả mấy quyển?
+b) 2, 3, 4, 5, … Số tiếp theo là số nào?
 
-c) 4, 14, 24, 34, … Số tiếp theo là số nào?
+c) Na có 13 cái kẹo. Cốm có 2 cái. Cả hai bạn có tất cả mấy cái?
 
-d) Bo có 6 bông hoa. Cốm có 3 bông. Cả hai bạn có tất cả mấy bông?
+d) 6, 8, 10, 12, … Số tiếp theo là số nào?
+
+e) Tí có 12 cái kẹo. Bi có 15 cái. Cả hai bạn có tất cả mấy cái?
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
 **Tìm quy luật**
 
-a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 2 hình liền nhau cần mấy que?
+a) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 5 hình liền nhau cần mấy que?
+b) 2, 4, 8, …
 
-c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
-
-d) 9, 11, 13, 15, …
-
-e) 7, 12, 17, 22, …
+c) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 3 hình liền nhau cần mấy que?
 
 
 ---
@@ -88,7 +86,7 @@ e) 7, 12, 17, 22, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Đếm nối tiếp theo bước
 - ☐ Cộng trừ số tròn chục
 - ☐ Bài toán có lời văn và dãy số
 - ☐ Tìm quy luật

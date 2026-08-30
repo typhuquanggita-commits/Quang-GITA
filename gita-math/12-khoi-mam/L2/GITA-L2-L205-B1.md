@@ -30,71 +30,67 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Bảng nhân, bảng chia 2 và 5**
 
-a) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
+a) 5 × 6 = …
 
-b) 5 × 4 = …
+b) 18 : 2 = …
 
-c) 6 : 2 = …
+c) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
 
-d) 2 × 6 = …
-
-e) Viết phép nhân thay cho phép cộng: 5 + 5 + 5 + 5 + 5 + 5 + 5
-
-f) 2 : 2 = …
+d) 10 : 5 = …
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 8 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-b) Xếp 6 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+b) Xếp 3 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 7 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-d) Xếp 7 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+d) Xếp 4 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Bài toán nhân, chia**
+**Bảng nhân, bảng chia và số còn thiếu**
 
-a) Có 4 con vịt chia đều vào 2 hộp. Mỗi hộp có mấy con?
+a) Tìm số còn thiếu: 2 × … = 8
 
-b) Mỗi hộp có 5 cái bánh. Hỏi 6 hộp có mấy cái?
+b) Có 6 quyển vở chia đều vào 2 hộp. Mỗi hộp mấy quyển vở?
 
-c) Có 25 con vịt chia đều vào 5 hộp. Mỗi hộp có mấy con?
+c) 5 × 7 = …
 
-d) Mỗi hộp có 2 quả bóng. Hỏi 8 hộp có mấy quả?
+d) 15 : 5 = …
+
+e) 35 : 5 = …
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Cộng trừ có nhớ trong phạm vi 100**
+**Bài toán nhân, chia**
 
-a) Đặt tính rồi tính: 42 − 23
+a) Mỗi hộp có 2 con cá. Hỏi 4 hộp có mấy con?
 
-b) Đặt tính rồi tính: 81 + 16
+b) Có 14 cái bánh chia đều vào 2 hộp. Mỗi hộp có mấy cái?
 
-c) Đặt tính rồi tính: 35 − 31
+c) Mỗi hộp có 2 quyển vở. Hỏi 8 hộp có mấy quyển?
 
-d) Đặt tính rồi tính: 57 + 36
+d) Có 18 con vịt chia đều vào 2 hộp. Mỗi hộp có mấy con?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui nhân chia**
 
-a) Một bạn tính 36 + 31 = 76. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) 7 con mèo có tất cả mấy cái chân?
 
-b) Một bạn tính 53 + 68 = 111. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Một đôi dép có 2 chiếc. 20 chiếc dép là mấy đôi?
 
-c) Một bạn tính 39 + 83 = 112. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Chia đều 20 cái kẹo cho 5 bạn. Mỗi bạn mấy cái?
 
-d) Một bạn tính 55 + 29 = 74. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-
-e) Một bạn tính 23 + 17 = 30. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+d) Con có 4 viên bi. Anh có gấp 2 lần con. Anh có mấy viên?
 
 
 ---
@@ -105,6 +101,6 @@ e) Một bạn tính 23 + 17 = 30. Bạn ấy sai ở đâu? Kết quả đúng 
 
 - ☐ Bảng nhân, bảng chia 2 và 5
 - ☐ Từ phép cộng sang phép nhân
+- ☐ Bảng nhân, bảng chia và số còn thiếu
 - ☐ Bài toán nhân, chia
-- ☐ Cộng trừ có nhớ trong phạm vi 100
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Đố vui nhân chia

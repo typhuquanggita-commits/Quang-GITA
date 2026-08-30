@@ -42,39 +42,40 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính hoặc bảng số 100
+- Không cần gì — dùng ngón tay
 - 10 que tính
-- Giấy nháp
+- Không bắt buộc — dùng ngón tay khi cần
+- Không cần gì
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**Nhẩm nhanh bằng ngón tay**
 
-> **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
+> **Cô/mẹ đọc lên:** Mình khởi động bằng trò nhẩm nhanh. Con được dùng ngón tay, không sao cả.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 8 … 4
-   → **>**
+a) 2 thêm 5 là mấy?
+   → **7**
 
-b) Điền dấu >, < hoặc = : 8 … 9
-   → **<**
+b) 10 bớt 6 còn mấy?
+   → **4**
 
-c) Điền dấu >, < hoặc = : 3 … 1
-   → **>**
+c) Con giơ 2 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 8?
+   → **6**
 
-d) Điền dấu >, < hoặc = : 9 … 10
-   → **<**
+d) 9 bớt 2 còn mấy?
+   → **7**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Rút ra quy luật)*: Con làm thế nào mà ra nhanh thế? Con đếm hay con nhớ sẵn?
 
-**Thế nào là con đã hiểu:** Trẻ so bằng cách nhìn hàng chục trước rồi mới nhìn hàng đơn vị, không phải đếm từ 1 lên.
+**Thế nào là con đã hiểu:** Trẻ trả lời được trong khoảng ba giây và bắt đầu **nhớ sẵn** vài phép quen như 5 + 5, 2 + 2, thay vì đếm lại từng ngón.
 
-**Con tắc thì làm gì:** Dùng bảng số 100: số nào ở trên hoặc ở bên trái thì bé hơn.
+**Con tắc thì làm gì:** Cho dùng que tính. Tốc độ không quan trọng bằng việc ra đúng.
 
-**Nếu con làm nhanh:** Cho ba số, hỏi số nào lớn nhất, rồi xếp cả ba theo thứ tự.
+**Nếu con làm nhanh:** Hỏi ngược: 'cô nghĩ một số, cộng 3 thì được 8, số ấy là mấy?'
 
 
 ---
@@ -87,20 +88,23 @@ d) Điền dấu >, < hoặc = : 9 … 10
 
 **Đáp án từng việc**
 
-a) Na có 5 chiếc lá, cho bạn 3 chiếc. Na còn lại mấy chiếc?
-   → **2 chiếc**
+a) Na có 3 quả bóng, mẹ cho thêm 3 quả. Na có tất cả mấy quả?
+   → **6 quả**
 
-b) Tí có 5 cái kẹo, mẹ cho thêm 3 cái. Tí có tất cả mấy cái?
-   → **8 cái**
+b) Tí có 5 quả cam, cho bạn 4 quả. Tí còn lại mấy quả?
+   → **1 quả**
 
-c) Bi có 7 quả bóng, cho bạn 5 quả. Bi còn lại mấy quả?
-   → **2 quả**
+c) Cốm có 1 con cá, mẹ cho thêm 5 con. Cốm có tất cả mấy con?
+   → **6 con**
 
-d) Bơ có 2 con vịt, mẹ cho thêm 2 con. Bơ có tất cả mấy con?
-   → **4 con**
+d) Cốm có 4 bông hoa, cho bạn 2 bông. Cốm còn lại mấy bông?
+   → **2 bông**
 
-e) An có 7 con cá, cho bạn 4 con. An còn lại mấy con?
-   → **3 con**
+e) Cốm có 5 con vịt, mẹ cho thêm 2 con. Cốm có tất cả mấy con?
+   → **7 con**
+
+f) Bi có 8 con vịt, cho bạn 3 con. Bi còn lại mấy con?
+   → **5 con**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con biết 3 + 2 = 5 rồi. Vậy 2 + 3 bằng mấy? Vì sao con biết ngay?
 
@@ -115,68 +119,71 @@ e) An có 7 con cá, cho bạn 4 con. An còn lại mấy con?
 
 ## PHẦN C — Luyện tay
 
-**Tìm số còn thiếu**
+**Tính nhanh**
 
-> **Cô/mẹ đọc lên:** Con dùng que tính: xếp ra số đã biết, rồi thêm cho đủ.
+> **Cô/mẹ đọc lên:** Phép nào con nhớ luôn thì viết ngay, phép nào chưa nhớ thì đếm trên tay.
 
 **Đáp án từng việc**
 
-a) 9 + … = 10
+a) 2 − 1 = …
    → **1**
 
-b) 6 + … = 10
-   → **4**
+b) 17 + 2 = …
+   → **19**
 
-c) … + 3 = 9
-   → **6**
+c) 2 + 1 = …
+   → **3**
 
-d) … + 1 = 9
-   → **8**
+d) 4 + 1 = …
+   → **5**
 
-e) 6 + … = 8
-   → **2**
-
-f) 9 + … = 10
+e) 10 − 9 = …
    → **1**
 
-**Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Con tìm ra số đó bằng cách nào? Có cách nào nhanh hơn không?
+f) 5 − 4 = …
+   → **1**
 
-**Thế nào là con đã hiểu:** Trẻ đếm thêm từ số đã biết lên tới tổng, thay vì đếm lại từ 1. Đếm thêm là kỹ thuật, không phải chuyện tự nhiên biết.
+g) 15 + 1 = …
+   → **16**
 
-**Con tắc thì làm gì:** Xếp que tính thành hai nhóm, che một nhóm lại rồi hỏi.
+**Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Phép nào con viết ra ngay không cần đếm? Vì sao nhớ được?
 
-**Nếu con làm nhanh:** Cho phép trừ: 8 − … = 3.
+**Thế nào là con đã hiểu:** Số phép trẻ trả lời ngay **tăng dần** qua các buổi. Đây là chỗ duy nhất trong khối đáng đo bằng tốc độ.
+
+**Con tắc thì làm gì:** Cho dùng que tính thoải mái. Nhanh sẽ đến sau khi chắc.
+
+**Nếu con làm nhanh:** Bấm giờ một phút xem làm được mấy phép — chỉ chơi, không xếp hạng.
 
 
 ---
 
 ## PHẦN D — Thử thách vui
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-> **Cô/mẹ đọc lên:** Lần này con làm cô giáo nhé. Con nghĩ ra đề toán, cô sẽ giải.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi, toàn chuyện trong nhà mình thôi.
 
 **Đáp án từng việc**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 6 + 6 = 12.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+a) Bàn ăn có 5 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
+   → **7 cái ghế**
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 4 + 5 = 9.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+b) 2 con gà có mấy cái chân?
+   → **4 cái chân**
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 6 = 0.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+c) Con có 6 cái kẹo, cho bạn 1 cái. Còn mấy cái?
+   → **5 cái**
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 6 = 6.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+d) Mẹ nướng 5 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 4. Ăn mất 2 cái thì còn mấy cái?
+   → **3 cái**
 
-**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Đề của con có đủ cho người khác giải được không? Thiếu gì không?
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Làm cách gọn hơn)*: Câu này con làm phép cộng hay phép trừ? Vì sao?
 
-**Thế nào là con đã hiểu:** Trẻ đặt được đề có đủ dữ kiện **và** có câu hỏi. Trẻ hay quên câu hỏi, và chính lúc quên ấy mới hiểu vì sao đề nào cũng phải có câu hỏi.
+**Thế nào là con đã hiểu:** Trẻ chọn đúng phép tính ngay từ khi nghe đề, không phải thử cả hai. Nghe 'cho bạn' mà nghĩ tới phép trừ là dấu hiệu trẻ đã nối được **lời nói với phép tính**.
 
-**Con tắc thì làm gì:** Cho sẵn bối cảnh — “về quả cam nhé” — rồi để trẻ điền số.
+**Con tắc thì làm gì:** Diễn lại tình huống bằng đồ vật thật ngay trên bàn.
 
-**Nếu con làm nhanh:** Đổi vai: người lớn đặt một đề thiếu dữ kiện, trẻ chỉ ra chỗ thiếu.
+**Nếu con làm nhanh:** Trẻ tự nghĩ một câu đố về nhà mình rồi đố cả nhà.
 
 
 ---

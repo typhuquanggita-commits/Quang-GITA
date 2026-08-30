@@ -42,7 +42,8 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Chỗ trống để trẻ đứng dậy vận động
+- Hai rổ nhỏ
+- 20 đồ vật giống nhau: hột hạt, nắp chai, kẹo
 - 10 đồ vật nhỏ giống nhau
 - Hai cái đĩa
 - Không cần gì — dùng ngón tay của trẻ
@@ -51,28 +52,28 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## Chơi khởi động
 
-**Nhảy và đếm**
+**Nhìn nhanh — bên nào nhiều hơn**
 
-> **Cô/mẹ đọc lên:** Mình chơi trò làm theo số nhé. Cô nói số mấy thì con làm đúng chừng ấy lần, vừa làm vừa đếm to.
+> **Cô/mẹ đọc lên:** Con nhìn thật nhanh rồi chỉ tay sang bên nhiều hơn. Chỉ xong mình mới đếm để xem con đoán đúng không.
 
 **Đáp án từng việc**
 
-a) Con bước lên phía trước đúng 4 bước nhé. Đếm to lên.
-   → **4**
+a) Cô để 5 bông hoa bên trái, 6 bông hoa bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều bông hơn?
+   → **bên phải**
 
-b) Con gật đầu đúng 4 cái nhé. Đếm to lên.
-   → **4**
+b) Cô để 7 quyển vở bên trái, 6 quyển vở bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều quyển hơn?
+   → **bên trái**
 
-c) Con nhảy đúng 7 cái nhé. Đếm to lên.
-   → **7**
+c) Cô để 3 cái kẹo bên trái, 2 cái kẹo bên phải. Con nhìn thôi, chưa đếm: bên nào nhiều cái hơn?
+   → **bên trái**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Cô nhảy 4 cái, con nhảy 4 cái. Hai đứa mình nhảy bằng nhau à?
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con chỉ bên này trước khi đếm. Vì sao con biết bên ấy nhiều hơn?
 
-**Thế nào là con đã hiểu:** Trẻ dừng đúng lúc đếm tới số được yêu cầu, không nhảy thêm vì quán tính. Đếm để **điều khiển hành động** là bước tiến so với chỉ đọc thuộc dãy số.
+**Thế nào là con đã hiểu:** Trẻ chỉ đúng khi hai bên chênh nhau rõ mà chưa cần đếm. Đó là **cảm nhận số lượng** — có trước kỹ năng đếm và là nền của mọi việc so sánh sau này.
 
-**Con tắc thì làm gì:** Đếm cùng trẻ, vỗ tay theo nhịp. Giảm xuống số nhỏ hơn 5.
+**Con tắc thì làm gì:** Để hai bên chênh nhau thật nhiều: 2 và 9. Khi trẻ quen mới thu hẹp dần khoảng cách.
 
-**Nếu con làm nhanh:** Đếm ngược: nhảy 5 cái rồi đếm 5, 4, 3, 2, 1.
+**Nếu con làm nhanh:** Để hai bên bằng nhau xem trẻ có nói được 'bằng nhau' không — nhiều trẻ cứ phải chọn một bên.
 
 
 ---
@@ -85,16 +86,13 @@ c) Con nhảy đúng 7 cái nhé. Đếm to lên.
 
 **Đáp án từng việc**
 
-a) Cô bày 7 con cá rải lộn xộn. Con đếm xem có mấy con?
+a) Cô bày 7 quả cam rải lộn xộn. Con đếm xem có mấy quả?
    → **7**
 
-b) Cô bày 8 quả bóng thành vòng tròn. Con đếm xem có mấy quả?
-   → **8**
+b) Cô bày 7 quả bóng rải lộn xộn. Con đếm xem có mấy quả?
+   → **7**
 
-c) Cô bày 4 quyển vở thành vòng tròn. Con đếm xem có mấy quyển?
-   → **4**
-
-d) Cô bày 5 bông hoa thành hàng ngang. Con đếm xem có mấy bông?
+c) Cô bày 5 con vịt thành hai hàng. Con đếm xem có mấy con?
    → **5**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Cô bày kiểu khác mà vẫn bằng chừng ấy à? Vì sao con biết?
@@ -116,13 +114,16 @@ d) Cô bày 5 bông hoa thành hàng ngang. Con đếm xem có mấy bông?
 
 **Đáp án từng việc**
 
-a) Đĩa này có 2 viên bi, đĩa kia có 6 viên. Con làm sao cho hai đĩa bằng nhau?
-   → **thêm 4 viên vào đĩa ít, hoặc bớt 4 viên ở đĩa nhiều**
+a) Đĩa này có 2 con vịt, đĩa kia có 4 con. Con làm sao cho hai đĩa bằng nhau?
+   → **thêm 2 con vào đĩa ít, hoặc bớt 2 con ở đĩa nhiều**
 
-b) Đĩa này có 3 con vịt, đĩa kia có 2 con. Con làm sao cho hai đĩa bằng nhau?
-   → **thêm 1 con vào đĩa ít, hoặc bớt 1 con ở đĩa nhiều**
+b) Đĩa này có 6 chiếc lá, đĩa kia có 7 chiếc. Con làm sao cho hai đĩa bằng nhau?
+   → **thêm 1 chiếc vào đĩa ít, hoặc bớt 1 chiếc ở đĩa nhiều**
 
-c) Đĩa này có 6 quả cam, đĩa kia có 8 quả. Con làm sao cho hai đĩa bằng nhau?
+c) Đĩa này có 7 quả bóng, đĩa kia có 6 quả. Con làm sao cho hai đĩa bằng nhau?
+   → **thêm 1 quả vào đĩa ít, hoặc bớt 1 quả ở đĩa nhiều**
+
+d) Đĩa này có 2 quả cam, đĩa kia có 4 quả. Con làm sao cho hai đĩa bằng nhau?
    → **thêm 2 quả vào đĩa ít, hoặc bớt 2 quả ở đĩa nhiều**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Con vừa thêm vào. Còn cách nào khác không? Cách nào nhanh hơn?
@@ -144,17 +145,17 @@ c) Đĩa này có 6 quả cam, đĩa kia có 8 quả. Con làm sao cho hai đĩa
 
 **Đáp án từng việc**
 
-a) 2 con chim có tất cả mấy cái chân?
-   → **4 cái chân**
+a) Trên đĩa có 7 con vịt. Con ăn mất 1 con. Còn mấy con?
+   → **6 con**
 
-b) Trên đĩa có 4 cái kẹo. Con ăn mất 1 cái. Còn mấy cái?
-   → **3 cái**
+b) 3 con gà có tất cả mấy cái chân?
+   → **6 cái chân**
 
-c) Trên đĩa có 5 cái bánh. Con ăn mất 1 cái. Còn mấy cái?
-   → **4 cái**
+c) Trên đĩa có 8 quả cam. Con ăn mất 1 quả. Còn mấy quả?
+   → **7 quả**
 
-d) Trên đĩa có 5 viên bi. Con ăn mất 1 viên. Còn mấy viên?
-   → **4 viên**
+d) 3 con chim có tất cả mấy cái chân?
+   → **6 cái chân**
 
 **Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Đoán thử)*: Con nghĩ ra một câu đố đố lại cô đi.
 

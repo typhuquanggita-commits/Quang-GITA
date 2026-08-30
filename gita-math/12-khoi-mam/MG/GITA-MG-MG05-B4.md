@@ -32,13 +32,13 @@ Họ và tên: ......................................... Ngày: ..............
 
 **Nhảy và đếm**
 
-a) Con gật đầu đúng 2 cái nhé. Đếm to lên.
+a) Con vỗ tay đúng 3 cái nhé. Đếm to lên.
 
-b) Con giậm chân đúng 4 cái nhé. Đếm to lên.
+b) Con giậm chân đúng 2 cái nhé. Đếm to lên.
 
-c) Con nhảy đúng 8 cái nhé. Đếm to lên.
+c) Con nhảy đúng 5 cái nhé. Đếm to lên.
 
-d) Con vỗ tay đúng 7 cái nhé. Đếm to lên.
+d) Con bước lên phía trước đúng 8 bước nhé. Đếm to lên.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,11 +47,13 @@ d) Con vỗ tay đúng 7 cái nhé. Đếm to lên.
 
 **Bày ra rồi đếm lại**
 
-a) Cô bày 10 quả cam thành vòng tròn. Con đếm xem có mấy quả?
+a) Cô bày 4 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
 
-b) Cô bày 7 quả bóng thành vòng tròn. Con đếm xem có mấy quả?
+b) Cô bày 6 cái kẹo thành hai hàng. Con đếm xem có mấy cái?
 
-c) Cô bày 5 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
+c) Cô bày 7 con cá thành hai hàng. Con đếm xem có mấy con?
+
+d) Cô bày 5 con vịt rải lộn xộn. Con đếm xem có mấy con?
 
 
 ## Tự làm thử · 7 phút
@@ -60,26 +62,28 @@ c) Cô bày 5 chiếc lá thành hàng ngang. Con đếm xem có mấy chiếc?
 
 **Con thứ mấy trong hàng**
 
-a) Có 7 con chim xếp thành hàng. Con chỉ vào con thứ bảy.
+a) Có 4 con mèo xếp thành hàng. Con chỉ vào con thứ tư.
 
-b) Có 4 con thỏ xếp thành hàng. Con chỉ vào con thứ ba.
+b) Có 8 con mèo xếp thành hàng. Con chỉ vào con thứ tư.
 
-c) Có 8 con ong xếp thành hàng. Con chỉ vào con thứ nhất.
+c) Có 5 con thỏ xếp thành hàng. Con chỉ vào con thứ năm.
 
-d) Có 8 con mèo xếp thành hàng. Con chỉ vào con thứ tám.
+d) Có 6 con bướm xếp thành hàng. Con chỉ vào con thứ nhất.
 
 
 ## Đố vui cuối buổi · 5 phút
 
 *Một câu đố nhẹ để kết buổi bằng tiếng cười.*
 
-**Đoán tiếp dãy**
+**Đố vui về số**
 
-a) đỏ – trắng – đỏ – trắng – … Con đoán xem tiếp theo là màu gì?
+a) Đếm tiếp cho cô: 4 rồi đến số mấy?
 
-b) đỏ – vàng – đỏ – vàng – đỏ – vàng – … Con đoán xem tiếp theo là màu gì?
+b) Dãy số bị mất một số: 4 , … , 6 , 7 . Mất số nào?
 
-c) vàng – xanh – trắng – vàng – xanh – trắng – vàng – xanh – trắng – … Con đoán xem tiếp theo là màu gì?
+c) Con giơ 3 ngón ở tay này, 3 ngón ở tay kia. Tất cả mấy ngón?
+
+d) Số nào đứng ngay trước số 7?
 
 
 ---
@@ -93,4 +97,4 @@ c) vàng – xanh – trắng – vàng – xanh – trắng – vàng – xanh 
 | Nhảy và đếm | ☐ | ☐ | ☐ |
 | Bày ra rồi đếm lại | ☐ | ☐ | ☐ |
 | Con thứ mấy trong hàng | ☐ | ☐ | ☐ |
-| Đoán tiếp dãy | ☐ | ☐ | ☐ |
+| Đố vui về số | ☐ | ☐ | ☐ |

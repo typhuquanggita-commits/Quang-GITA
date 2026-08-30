@@ -42,7 +42,7 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Một quả bóng hoặc một con thú bông
+- Không cần chuẩn bị — dùng chính đồ vật trong phòng
 - Một rổ đồ vật khác nhau về màu, hình, cỡ
 - Bút chì màu
 - Tranh các hoạt động trong ngày
@@ -51,31 +51,31 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## Chơi khởi động
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-> **Cô/mẹ đọc lên:** Con đứng dậy nhé. Cô nói hướng nào thì con đặt quả bóng ở hướng ấy.
+> **Cô/mẹ đọc lên:** Mình chơi trò đi săn nhé. Cô gọi tên hình nào, con chạy đi tìm một thứ có hình ấy rồi mang về cho cô.
 
 **Đáp án từng việc**
 
-a) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
-   → **vật nào ở dưới chân con**
+a) Con chạy đi tìm một thứ trong nhà có hình chữ nhật.
+   → **cửa ra vào, quyển vở, cái bàn**
 
-b) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
-   → **vật nào ở tay trái con**
+b) Con chạy đi tìm một thứ trong nhà có hình tam giác.
+   → **cái móc áo, mái nhà đồ chơi, miếng bánh mì cắt chéo**
 
-c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
-   → **vật nào ở trên đầu con**
+c) Tìm cho cô một thứ là khối cầu.
+   → **quả bóng, quả cam**
 
-d) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
-   → **vật nào ở trước mặt con**
+d) Tìm một thứ dài hơn gang tay của con.
+   → **trẻ ướm thử rồi trả lời — thứ nào cũng được, miễn ướm đúng**
 
-**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Nếu con quay người lại thì quả bóng còn ở bên phải con nữa không?
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Vì sao con bảo cái này là hình tròn? Nó có chỗ nào nhọn không?
 
-**Thế nào là con đã hiểu:** Trẻ nhận ra phải – trái **đổi theo hướng mình đứng**, còn trên – dưới thì không đổi. Đây là chỗ khó thật của chủ đề.
+**Thế nào là con đã hiểu:** Trẻ tìm được vật có hình ấy ở **đồ vật thật**, không chỉ nhận ra hình trên giấy. Nhận hình trong đời sống khó hơn nhận hình vẽ sẵn, vì đồ vật thật còn có màu, có chữ, có nhiều chi tiết gây nhiễu.
 
-**Con tắc thì làm gì:** Buộc một sợi dây màu vào cổ tay phải làm dấu. Bỏ dây khi trẻ đã quen.
+**Con tắc thì làm gì:** Cầm sẵn một vật mẫu trên tay cho trẻ so sánh khi đi tìm.
 
-**Nếu con làm nhanh:** Đứng đối diện nhau rồi hỏi tay phải của cô ở phía nào của con.
+**Nếu con làm nhanh:** Đổi vai: trẻ gọi tên hình, người lớn đi tìm — và cố tình tìm sai một lần để trẻ được sửa.
 
 
 ---
@@ -88,14 +88,17 @@ d) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ 
 
 **Đáp án từng việc**
 
-a) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
-   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở loại đồ vật là đúng**
+a) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở kích thước là đúng**
 
 b) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấy nhóm?
    → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở hình dạng là đúng**
 
 c) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
    → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở màu sắc là đúng**
+
+d) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở loại đồ vật là đúng**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Có cách xếp nào khác không? Cùng số đồ này mà xếp kiểu khác được không?
 
@@ -116,14 +119,14 @@ c) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy 
 
 **Đáp án từng việc**
 
-a) Con tô màu hình tròn.
+a) Con khoanh vào vật ở giữa hàng.
+   → **vật chính giữa**
+
+b) Con tô màu hình tròn.
    → **chỉ tô hình tròn**
 
-b) Con khoanh tròn nhóm có nhiều hơn.
+c) Con khoanh tròn nhóm có nhiều hơn.
    → **nhóm nhiều hơn**
-
-c) Con khoanh vào vật ở giữa hàng.
-   → **vật chính giữa**
 
 **Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con kiểm lại xem có bỏ sót cái nào không?
 
@@ -144,16 +147,13 @@ c) Con khoanh vào vật ở giữa hàng.
 
 **Đáp án từng việc**
 
-a) Con ăn sáng vào buổi nào trong ngày?
-   → **buổi sáng**
-
-b) Con đi ngủ vào buổi nào trong ngày?
+a) Con đi ngủ vào buổi nào trong ngày?
    → **buổi tối**
 
-c) Con tan học vào buổi nào trong ngày?
+b) Con tan học vào buổi nào trong ngày?
    → **buổi chiều**
 
-d) Con đánh răng buổi sớm vào buổi nào trong ngày?
+c) Con đánh răng buổi sớm vào buổi nào trong ngày?
    → **buổi sáng**
 
 **Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Cho một ví dụ)*: Hôm qua là thứ mấy? Vậy ngày mai là thứ mấy?

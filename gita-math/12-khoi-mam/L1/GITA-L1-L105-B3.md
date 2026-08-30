@@ -28,62 +28,54 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 10**
+**So sánh số trong phạm vi 100**
 
-a) Điền dấu >, < hoặc = : 2 … 3
+a) Điền dấu >, < hoặc = : 70 … 98
 
-b) Điền dấu >, < hoặc = : 6 … 7
+b) Điền dấu >, < hoặc = : 57 … 8
 
-c) Điền dấu >, < hoặc = : 1 … 4
+c) Điền dấu >, < hoặc = : 61 … 62
 
-d) Điền dấu >, < hoặc = : 2 … 6
+d) Điền dấu >, < hoặc = : 58 … 54
 
-e) Điền dấu >, < hoặc = : 10 … 6
+e) Điền dấu >, < hoặc = : 73 … 14
 
-f) Điền dấu >, < hoặc = : 10 … 9
+f) Điền dấu >, < hoặc = : 19 … 46
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Lấy đúng số que tính**
 
-a) Con lấy đúng 84 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 44 que tính. Con lấy mấy bó và mấy que rời?
 
-b) Con lấy đúng 30 que tính. Con lấy mấy bó và mấy que rời?
+b) Con lấy đúng 23 que tính. Con lấy mấy bó và mấy que rời?
 
-c) Con lấy đúng 38 que tính. Con lấy mấy bó và mấy que rời?
+c) Con lấy đúng 45 que tính. Con lấy mấy bó và mấy que rời?
 
-d) Con lấy đúng 34 que tính. Con lấy mấy bó và mấy que rời?
-
-e) Con lấy đúng 34 que tính. Con lấy mấy bó và mấy que rời?
+d) Con lấy đúng 50 que tính. Con lấy mấy bó và mấy que rời?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Từ một phép cộng ra hai phép trừ**
 
-a) Từ phép tính 7 + 2 = 9, con viết ra hai phép trừ.
+a) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
 
-b) Từ phép tính 5 + 3 = 8, con viết ra hai phép trừ.
+b) Từ phép tính 6 + 2 = 8, con viết ra hai phép trừ.
 
-c) Từ phép tính 4 + 2 = 6, con viết ra hai phép trừ.
-
-d) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
-
-e) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
+c) Từ phép tính 3 + 4 = 7, con viết ra hai phép trừ.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) 11, 13, 15, 17, …
+a) Số bí mật có 2 chục và 1 đơn vị. Số ấy là số nào?
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
+b) Số bí mật có 2 chục và 2 đơn vị. Số ấy là số nào?
 
-c) 6, 11, 16, 21, …
-
-d) 2, 4, 8, …
+c) Số bí mật đứng liền sau 48 và liền trước 50. Số nào?
 
 
 ---
@@ -92,7 +84,7 @@ d) 2, 4, 8, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 10
+- ☐ So sánh số trong phạm vi 100
 - ☐ Lấy đúng số que tính
 - ☐ Từ một phép cộng ra hai phép trừ
-- ☐ Tìm quy luật
+- ☐ Số bí mật

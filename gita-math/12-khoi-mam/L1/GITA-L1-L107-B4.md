@@ -28,62 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**So sánh số trong phạm vi 100**
 
-a) Điền dấu >, < hoặc = : 10 … 2
+a) Điền dấu >, < hoặc = : 57 … 44
 
-b) Điền dấu >, < hoặc = : 13 … 9
+b) Điền dấu >, < hoặc = : 33 … 56
 
-c) Điền dấu >, < hoặc = : 2 … 6
+c) Điền dấu >, < hoặc = : 79 … 85
 
-d) Điền dấu >, < hoặc = : 2 … 12
+d) Điền dấu >, < hoặc = : 24 … 46
 
-e) Điền dấu >, < hoặc = : 1 … 8
-
-f) Điền dấu >, < hoặc = : 17 … 14
+e) Điền dấu >, < hoặc = : 67 … 49
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Chục và đơn vị**
 
-a) Số 80 gồm mấy chục và mấy đơn vị?
+a) Số 14 gồm mấy chục và mấy đơn vị?
 
-b) Số 73 gồm mấy chục và mấy đơn vị?
+b) Số 45 gồm mấy chục và mấy đơn vị?
 
-c) Số 15 gồm mấy chục và mấy đơn vị?
+c) Số 79 gồm mấy chục và mấy đơn vị?
 
-d) Số 24 gồm mấy chục và mấy đơn vị?
+d) Số 30 gồm mấy chục và mấy đơn vị?
 
-e) Số 27 gồm mấy chục và mấy đơn vị?
+e) Số 23 gồm mấy chục và mấy đơn vị?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Vẽ, đo và viết số**
 
-a) Viết số: 5 mươi 7
+a) Trong hình có mấy đoạn thẳng?
 
-b) Vẽ một đoạn thẳng dài 4 cm.
+b) Vẽ một đoạn thẳng dài 14 cm.
 
-c) Trong hình có mấy đoạn thẳng?
+c) Viết số: 9 mươi 1
 
-d) Trong hình có mấy đoạn thẳng?
+d) Viết số: mười 6
 
-e) Vẽ một đoạn thẳng dài 3 cm.
-
-f) Viết số: 3 mươi 3
+e) Vẽ một đoạn thẳng dài 11 cm.
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tìm quy luật**
+**Số bí mật**
 
-a) 11, 21, 31, 41, …
+a) Số bí mật đứng liền sau 97 và liền trước 99. Số nào?
 
-b) Xếp hình vuông bằng que tính: 1 hình cần 4 que, 2 hình liền nhau cần 7 que. 4 hình liền nhau cần mấy que?
+b) 71 và 74: số nào lớn hơn?
 
-c) 9, 19, 29, 39, …
+c) Số bí mật có 2 chục và 8 đơn vị. Số ấy là số nào?
 
 
 ---
@@ -92,7 +88,7 @@ c) 9, 19, 29, 39, …
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ So sánh số trong phạm vi 100
 - ☐ Chục và đơn vị
 - ☐ Vẽ, đo và viết số
-- ☐ Tìm quy luật
+- ☐ Số bí mật

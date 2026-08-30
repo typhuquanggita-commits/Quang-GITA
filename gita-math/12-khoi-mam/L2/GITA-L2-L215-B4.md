@@ -28,22 +28,22 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Cấu tạo số và tính nhẩm số tròn trăm**
+**Khảo sát chớp nhoáng**
 
-a) Số 875 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Bạn nào thích ăn phở hơn ăn bún thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-b) Tính nhẩm: 300 + 100
+b) Bạn nào có em thì giơ tay. Đếm số tay giơ lên rồi ghi vào bảng.
 
-c) Tính nhẩm: 800 + 100
+c) Tháng sau lớp mình được nghỉ một ngày — chắc chắn, có thể hay không thể?
 
-d) Số 164 gồm mấy trăm, mấy chục, mấy đơn vị?
+d) Ngày mai trời mưa — chắc chắn, có thể hay không thể?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
-**Kiểm đếm về con vật nuôi ở nhà**
+**Kiểm đếm về màu áo các bạn trong lớp**
 
-a) Con đi hỏi và kiểm đếm về con vật nuôi ở nhà. Ghi vào bảng.
+a) Con đi hỏi và kiểm đếm về màu áo các bạn trong lớp. Ghi vào bảng.
 
 b) Loại nào nhiều nhất trong bảng của con?
 
@@ -56,7 +56,7 @@ d) Nhìn biểu đồ, con nói một điều con thấy được.
 
 **Đọc bảng số liệu**
 
-a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 6, thứ Ba: 5, thứ Tư: 13, thứ Năm: 8, thứ Sáu: 15. Ngày nào đọc nhiều nhất?
+a) Số quyển sách bạn Nam đọc trong tuần — thứ Hai: 6, thứ Ba: 8, thứ Tư: 8, thứ Năm: 13, thứ Sáu: 5. Ngày nào đọc nhiều nhất?
 
 b) Cả tuần đọc bao nhiêu quyển?
 
@@ -69,26 +69,32 @@ d) Ngày đọc nhiều nhất hơn ngày đọc ít nhất mấy quyển?
 
 **Bảng kiểm đếm và biểu đồ tranh**
 
-a) Bảng kiểm đếm: quả chuối: 9 · quả táo: 2 · quả lê: 2. Loại nào nhiều nhất?
+a) Bảng kiểm đếm: quả táo: 5 · quả cam: 3 · quả chuối: 6 · quả xoài: 3. Loại nào nhiều nhất?
 
 b) Loại nào ít nhất?
 
 c) Có tất cả bao nhiêu quả?
 
-d) Quả chuối nhiều hơn quả táo mấy quả?
+d) Quả chuối nhiều hơn quả cam mấy quả?
+
+e) Nếu mỗi hình vẽ trong biểu đồ tranh thay cho 1 quả thì hàng quả chuối vẽ mấy hình?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đọc biểu đồ tranh**
 
-a) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+a) - cam: 🍎🍎🍎🍎🍎  (5 quả)
+- ổi: 🍎🍎🍎🍎🍎🍎🍎  (7 quả)
+- xoài: 🍎🍎🍎🍎  (4 quả)
 
-b) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+Loại quả nào nhiều nhất?
 
-c) “Bốc được viên bi đỏ từ hộp có cả bi đỏ và bi xanh” — chắc chắn, có thể hay không thể?
+b) Loại quả nào ít nhất?
 
-d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
+c) Ổi nhiều hơn xoài mấy quả?
+
+d) Tất cả có mấy quả?
 
 
 ---
@@ -97,8 +103,8 @@ d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Cấu tạo số và tính nhẩm số tròn trăm
-- ☐ Kiểm đếm về con vật nuôi ở nhà
+- ☐ Khảo sát chớp nhoáng
+- ☐ Kiểm đếm về màu áo các bạn trong lớp
 - ☐ Đọc bảng số liệu
 - ☐ Bảng kiểm đếm và biểu đồ tranh
-- ☐ Chắc chắn, có thể, không thể
+- ☐ Đọc biểu đồ tranh

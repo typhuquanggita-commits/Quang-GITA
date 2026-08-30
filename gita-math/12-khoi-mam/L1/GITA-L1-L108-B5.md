@@ -28,60 +28,56 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 100**
+**Đếm nối tiếp theo bước**
 
-a) Điền dấu >, < hoặc = : 63 … 53
+a) Đếm tiếp cho cô: 10 , 20 , 30 , 40 , … Số tiếp theo là mấy?
 
-b) Điền dấu >, < hoặc = : 11 … 37
+b) Đếm tiếp cho cô: 5 , 10 , 15 , 20 , … Số tiếp theo là mấy?
 
-c) Điền dấu >, < hoặc = : 92 … 33
+c) Đếm tiếp cho cô: 1 , 3 , 5 , 7 , … Số tiếp theo là mấy?
 
-d) Điền dấu >, < hoặc = : 37 … 34
-
-e) Điền dấu >, < hoặc = : 16 … 45
-
-f) Điền dấu >, < hoặc = : 74 … 19
+d) Đếm từ 60 lên, mỗi lần thêm 10, đếm 3 lần.
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Chục và đơn vị**
 
-a) Số 44 gồm mấy chục và mấy đơn vị?
+a) Số 22 gồm mấy chục và mấy đơn vị?
 
-b) Số 72 gồm mấy chục và mấy đơn vị?
+b) Số 17 gồm mấy chục và mấy đơn vị?
 
-c) Số 53 gồm mấy chục và mấy đơn vị?
+c) Số 80 gồm mấy chục và mấy đơn vị?
 
-d) Số 14 gồm mấy chục và mấy đơn vị?
+d) Số 58 gồm mấy chục và mấy đơn vị?
+
+e) Số 62 gồm mấy chục và mấy đơn vị?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Đặt tính rồi tính**
 
-a) Đặt tính rồi tính: 24 − 12
+a) Đặt tính rồi tính: 56 + 1
 
-b) Đặt tính rồi tính: 30 + 50
+b) Đặt tính rồi tính: 51 − 10
 
-c) Đặt tính rồi tính: 47 − 1
+c) Đặt tính rồi tính: 53 + 6
 
-d) Đặt tính rồi tính: 46 + 11
-
-e) Đặt tính rồi tính: 18 + 20
-
-f) Đặt tính rồi tính: 97 − 56
+d) Đặt tính rồi tính: 47 − 26
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 3 + 10 = 13.
+a) Con có 8 cái kẹo, cho bạn 3 cái. Còn mấy cái?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 8 − 7 = 1.
+b) Bàn ăn có 2 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 9 + 3 = 12.
+c) Mẹ nướng 8 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 8. Ăn mất 4 cái thì còn mấy cái?
+
+d) Mẹ nướng 10 cái bánh, cả nhà ăn hết một nửa số chẵn gần nhất là 10. Ăn mất 5 cái thì còn mấy cái?
 
 
 ---
@@ -90,7 +86,7 @@ c) Con hãy nghĩ ra một bài toán mà phép tính là 9 + 3 = 12.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 100
+- ☐ Đếm nối tiếp theo bước
 - ☐ Chục và đơn vị
 - ☐ Đặt tính rồi tính
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

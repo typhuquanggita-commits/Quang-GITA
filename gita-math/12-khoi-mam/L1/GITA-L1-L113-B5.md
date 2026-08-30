@@ -28,62 +28,58 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 4 điểm
 
-**So sánh số trong phạm vi 20**
+**Nhẩm nhanh bằng ngón tay**
 
-a) Điền dấu >, < hoặc = : 18 … 17
+a) 3 thêm 2 là mấy?
 
-b) Điền dấu >, < hoặc = : 7 … 16
+b) 5 bớt 1 còn mấy?
 
-c) Điền dấu >, < hoặc = : 18 … 1
+c) Con giơ 2 ngón rồi. Giơ thêm mấy ngón nữa cho đủ 7?
 
-d) Điền dấu >, < hoặc = : 6 … 10
-
-e) Điền dấu >, < hoặc = : 15 … 6
+d) 5 thêm 2 là mấy?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 6 điểm
 
 **Thêm vào và bớt đi**
 
-a) Bi có 5 quyển vở, cho bạn 4 quyển. Bi còn lại mấy quyển?
+a) Tèo có 8 con cá, cho bạn 5 con. Tèo còn lại mấy con?
 
-b) Nam có 1 quyển vở, mẹ cho thêm 5 quyển. Nam có tất cả mấy quyển?
+b) Tí có 4 chiếc lá, mẹ cho thêm 2 chiếc. Tí có tất cả mấy chiếc?
 
-c) Bo có 3 quyển vở, mẹ cho thêm 1 quyển. Bo có tất cả mấy quyển?
+c) Bo có 7 bông hoa, cho bạn 2 bông. Bo còn lại mấy bông?
 
-d) Bơ có 6 cái kẹo, cho bạn 2 cái. Bơ còn lại mấy cái?
+d) Bơ có 5 quả cam, mẹ cho thêm 5 quả. Bơ có tất cả mấy quả?
 
-e) Bo có 2 quả cam, mẹ cho thêm 5 quả. Bo có tất cả mấy quả?
+e) Bi có 1 quả cam, mẹ cho thêm 2 quả. Bi có tất cả mấy quả?
 
-f) Bi có 8 bông hoa, cho bạn 7 bông. Bi còn lại mấy bông?
+f) Bơ có 5 con vịt, cho bạn 2 con. Bơ còn lại mấy con?
 
 
 ## PHẦN C — Luyện tay · 12 phút · 6 điểm
 
 **Tìm số còn thiếu**
 
-a) 6 + … = 8
+a) … + 4 = 8
 
-b) 7 + … = 10
+b) 5 + … = 9
 
-c) … + 3 = 10
+c) … + 7 = 8
 
-d) … + 1 = 10
-
-e) 6 + … = 9
-
-f) … + 6 = 8
+d) … + 5 = 9
 
 
 ## PHẦN D — Thử thách vui · 8 phút · 4 điểm
 
-**Tự đặt một bài toán**
+**Đố vui cộng trừ**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 15 − 4 = 11.
+a) Bàn ăn có 5 người ngồi, mỗi người một cái ghế. Thêm 2 khách nữa thì cần mấy cái ghế?
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 10 − 8 = 2.
+b) Con có 8 cái kẹo, cho bạn 2 cái. Còn mấy cái?
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 13 − 9 = 4.
+c) 4 con chim có mấy cái chân?
+
+d) 3 con gà có mấy cái chân?
 
 
 ---
@@ -92,7 +88,7 @@ c) Con hãy nghĩ ra một bài toán mà phép tính là 13 − 9 = 4.
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ So sánh số trong phạm vi 20
+- ☐ Nhẩm nhanh bằng ngón tay
 - ☐ Thêm vào và bớt đi
 - ☐ Tìm số còn thiếu
-- ☐ Tự đặt một bài toán
+- ☐ Đố vui cộng trừ

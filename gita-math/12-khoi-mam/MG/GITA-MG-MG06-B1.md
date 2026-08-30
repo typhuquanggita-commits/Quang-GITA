@@ -30,15 +30,15 @@ Họ và tên: ......................................... Ngày: ..............
 
 *Vận động hoặc trò chơi, chưa cầm bút.*
 
-**Trên – dưới, trước – sau, phải – trái**
+**Đi săn hình quanh nhà**
 
-a) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+a) Con chạy đi tìm một thứ trong nhà có hình chữ nhật.
 
-b) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+b) Con chạy đi tìm một thứ trong nhà có hình tam giác.
 
-c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
+c) Tìm cho cô một thứ là khối cầu.
 
-d) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+d) Tìm một thứ dài hơn gang tay của con.
 
 
 ## Cùng khám phá · 8 phút
@@ -47,11 +47,13 @@ d) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ 
 
 **Xếp thành nhóm**
 
-a) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
+a) Con xếp các đồ vật này thành nhóm theo kích thước. Được mấy nhóm?
 
 b) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấy nhóm?
 
 c) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
+
+d) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
 
 
 ## Tự làm thử · 7 phút
@@ -60,11 +62,11 @@ c) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy 
 
 **Khoanh, nối, tô**
 
-a) Con tô màu hình tròn.
+a) Con khoanh vào vật ở giữa hàng.
 
-b) Con khoanh tròn nhóm có nhiều hơn.
+b) Con tô màu hình tròn.
 
-c) Con khoanh vào vật ở giữa hàng.
+c) Con khoanh tròn nhóm có nhiều hơn.
 
 
 ## Đố vui cuối buổi · 5 phút
@@ -73,13 +75,11 @@ c) Con khoanh vào vật ở giữa hàng.
 
 **Sáng, trưa, chiều, tối**
 
-a) Con ăn sáng vào buổi nào trong ngày?
+a) Con đi ngủ vào buổi nào trong ngày?
 
-b) Con đi ngủ vào buổi nào trong ngày?
+b) Con tan học vào buổi nào trong ngày?
 
-c) Con tan học vào buổi nào trong ngày?
-
-d) Con đánh răng buổi sớm vào buổi nào trong ngày?
+c) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
 
 ---
@@ -90,7 +90,7 @@ d) Con đánh răng buổi sớm vào buổi nào trong ngày?
 
 | Việc | Chưa làm được | Làm được khi có người giúp | Tự làm được |
 |---|:--:|:--:|:--:|
-| Trên – dưới, trước – sau, phải – trái | ☐ | ☐ | ☐ |
+| Đi săn hình quanh nhà | ☐ | ☐ | ☐ |
 | Xếp thành nhóm | ☐ | ☐ | ☐ |
 | Khoanh, nối, tô | ☐ | ☐ | ☐ |
 | Sáng, trưa, chiều, tối | ☐ | ☐ | ☐ |

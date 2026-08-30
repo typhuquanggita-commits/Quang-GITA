@@ -45,29 +45,32 @@ Bản dành cho: **người lớn ngồi cùng**
 - Que tính bó sẵn từng chục
 - Que tính rời
 - Ba thẻ số
-- Giấy nháp
+- Bảng số từ 1 đến 100 (nếu có)
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**So sánh số trong phạm vi 10**
+**So sánh số trong phạm vi 100**
 
 > **Cô/mẹ đọc lên:** Con đọc to hai số rồi mới điền dấu.
 
 **Đáp án từng việc**
 
-a) Điền dấu >, < hoặc = : 10 … 1
-   → **>**
-
-b) Điền dấu >, < hoặc = : 10 … 5
-   → **>**
-
-c) Điền dấu >, < hoặc = : 2 … 4
+a) Điền dấu >, < hoặc = : 28 … 81
    → **<**
 
-d) Điền dấu >, < hoặc = : 1 … 10
+b) Điền dấu >, < hoặc = : 7 … 58
    → **<**
+
+c) Điền dấu >, < hoặc = : 67 … 75
+   → **<**
+
+d) Điền dấu >, < hoặc = : 26 … 22
+   → **>**
+
+e) Điền dấu >, < hoặc = : 36 … 25
+   → **>**
 
 **Hỏi thêm một câu** *(rèn: Cho một ví dụ · Chỉ ra chỗ giống nhau)*: Số nào cũng so được như thế à? Con nói cách so của con xem.
 
@@ -88,20 +91,20 @@ d) Điền dấu >, < hoặc = : 1 … 10
 
 **Đáp án từng việc**
 
-a) Con lấy đúng 61 que tính. Con lấy mấy bó và mấy que rời?
+a) Con lấy đúng 67 que tính. Con lấy mấy bó và mấy que rời?
+   → **6 bó và 7 que rời**
+
+b) Con lấy đúng 39 que tính. Con lấy mấy bó và mấy que rời?
+   → **3 bó và 9 que rời**
+
+c) Con lấy đúng 61 que tính. Con lấy mấy bó và mấy que rời?
    → **6 bó và 1 que rời**
 
-b) Con lấy đúng 85 que tính. Con lấy mấy bó và mấy que rời?
-   → **8 bó và 5 que rời**
+d) Con lấy đúng 59 que tính. Con lấy mấy bó và mấy que rời?
+   → **5 bó và 9 que rời**
 
-c) Con lấy đúng 92 que tính. Con lấy mấy bó và mấy que rời?
-   → **9 bó và 2 que rời**
-
-d) Con lấy đúng 25 que tính. Con lấy mấy bó và mấy que rời?
-   → **2 bó và 5 que rời**
-
-e) Con lấy đúng 62 que tính. Con lấy mấy bó và mấy que rời?
-   → **6 bó và 2 que rời**
+e) Con lấy đúng 57 que tính. Con lấy mấy bó và mấy que rời?
+   → **5 bó và 7 que rời**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Có cách nào lấy nhanh hơn là đếm từng que không?
 
@@ -122,20 +125,14 @@ e) Con lấy đúng 62 que tính. Con lấy mấy bó và mấy que rời?
 
 **Đáp án từng việc**
 
-a) Từ phép tính 6 + 2 = 8, con viết ra hai phép trừ.
-   → **8 − 6 = 2 và 8 − 2 = 6**
+a) Từ phép tính 4 + 5 = 9, con viết ra hai phép trừ.
+   → **9 − 4 = 5 và 9 − 5 = 4**
 
-b) Từ phép tính 5 + 2 = 7, con viết ra hai phép trừ.
-   → **7 − 5 = 2 và 7 − 2 = 5**
-
-c) Từ phép tính 4 + 3 = 7, con viết ra hai phép trừ.
+b) Từ phép tính 4 + 3 = 7, con viết ra hai phép trừ.
    → **7 − 4 = 3 và 7 − 3 = 4**
 
-d) Từ phép tính 3 + 1 = 4, con viết ra hai phép trừ.
-   → **4 − 3 = 1 và 4 − 1 = 3**
-
-e) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
-   → **10 − 9 = 1 và 10 − 1 = 9**
+c) Từ phép tính 8 + 1 = 9, con viết ra hai phép trừ.
+   → **9 − 8 = 1 và 9 − 1 = 8**
 
 **Hỏi thêm một câu** *(rèn: Rút ra quy luật · Xem chỗ nào chưa ổn)*: Bộ ba số nào cũng viết được bốn phép tính à? Con thử bộ khác xem.
 
@@ -150,34 +147,28 @@ e) Từ phép tính 9 + 1 = 10, con viết ra hai phép trừ.
 
 ## PHẦN D — Thử thách vui
 
-**Tự đặt một bài toán**
+**Số bí mật**
 
-> **Cô/mẹ đọc lên:** Lần này con làm cô giáo nhé. Con nghĩ ra đề toán, cô sẽ giải.
+> **Cô/mẹ đọc lên:** Cô nghĩ một số trong đầu, con đoán xem là số nào nhé.
 
 **Đáp án từng việc**
 
-a) Con hãy nghĩ ra một bài toán mà phép tính là 15 − 7 = 8.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+a) Số bí mật có 2 chục và 3 đơn vị. Số ấy là số nào?
+   → **23**
 
-b) Con hãy nghĩ ra một bài toán mà phép tính là 9 − 4 = 5.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+b) 69 và 77: số nào lớn hơn?
+   → **77**
 
-c) Con hãy nghĩ ra một bài toán mà phép tính là 6 − 2 = 4.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+c) Số bí mật có 4 chục và 8 đơn vị. Số ấy là số nào?
+   → **48**
 
-d) Con hãy nghĩ ra một bài toán mà phép tính là 7 − 5 = 2.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán ra bằng cách nào? Con nhìn hàng chục trước hay hàng đơn vị trước?
 
-e) Con hãy nghĩ ra một bài toán mà phép tính là 12 − 7 = 5.
-   → **trẻ tự đặt đề — đúng khi câu chuyện khớp với phép tính**
+**Thế nào là con đã hiểu:** Trẻ so sánh hai số bằng cách **nhìn hàng chục trước**. Trẻ chưa hiểu cấu tạo số thường so hàng đơn vị và bảo 19 lớn hơn 40 vì 9 lớn hơn 0.
 
-**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Xem chỗ nào chưa ổn)*: Đề của con có đủ cho người khác giải được không? Thiếu gì không?
+**Con tắc thì làm gì:** Xếp que tính thành bó chục và que lẻ cho trẻ nhìn thấy số thật.
 
-**Thế nào là con đã hiểu:** Trẻ đặt được đề có đủ dữ kiện **và** có câu hỏi. Trẻ hay quên câu hỏi, và chính lúc quên ấy mới hiểu vì sao đề nào cũng phải có câu hỏi.
-
-**Con tắc thì làm gì:** Cho sẵn bối cảnh — “về quả cam nhé” — rồi để trẻ điền số.
-
-**Nếu con làm nhanh:** Đổi vai: người lớn đặt một đề thiếu dữ kiện, trẻ chỉ ra chỗ thiếu.
+**Nếu con làm nhanh:** Trẻ nghĩ số, người lớn đoán, mỗi lần đoán trẻ chỉ được nói 'lớn hơn' hoặc 'bé hơn'.
 
 
 ---

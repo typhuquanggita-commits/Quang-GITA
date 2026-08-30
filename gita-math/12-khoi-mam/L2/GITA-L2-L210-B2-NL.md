@@ -41,44 +41,41 @@ Bản dành cho: **người lớn ngồi cùng**
 
 ## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
 
-- Que tính xếp thành nhóm bằng nhau
+- Thước dây hoặc thước mét
+- Cân nhà bếp
+- Đồng hồ kim
 - Thước mét
 - Cân
 - Ca đong 1 lít
+- Thước có vạch cm và dm
 - Bảng đơn vị đo độ dài
-- Cân đĩa
-- Mô hình đồng hồ
-- Giấy ô li
 
 ---
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước
 
-**Bảng nhân, bảng chia 2 và 5**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-> **Cô/mẹ đọc lên:** Con đọc to bảng nhân một lượt trước khi làm.
+> **Cô/mẹ đọc lên:** Khởi động bằng trò đoán. Chưa đo vội, cứ đoán trước đã.
 
 **Đáp án từng việc**
 
-a) Viết phép nhân thay cho phép cộng: 5 + 5
-   → **5 × 2 = 10**
+a) Con đoán chiều dài lớp học khoảng bao nhiêu?
+   → **khoảng 6 đến 8 m**
 
-b) 2 × 2 = …
-   → **4**
+b) Con đoán một chai nước 1 lít nặng khoảng bao nhiêu?
+   → **khoảng 1 kg**
 
-c) 16 : 2 = …
-   → **8**
+c) Kim ngắn qua số 3, kim dài chỉ số 6. Mấy giờ?
+   → **3 giờ 30 phút — cũng đọc là 3 giờ rưỡi**
 
-d) 2 × 1 = …
-   → **2**
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Con lấy gì làm mốc để đoán? Con so với cái gì mà con biết sẵn?
 
-**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Con biết 2 × 6 rồi. Vậy 6 × 2 bằng mấy? Có phải lúc nào cũng thế không?
+**Thế nào là con đã hiểu:** Trẻ nêu được **mốc so sánh**: 'cao bằng hai lần con' hoặc 'nặng bằng chai nước'. Ước lượng có mốc thì mới là ước lượng, đoán bừa thì không.
 
-**Thế nào là con đã hiểu:** Trẻ hiểu phép nhân là cộng các số hạng bằng nhau, và dùng được phép nhân đã thuộc để suy ra phép chia tương ứng.
+**Con tắc thì làm gì:** Cho trẻ cầm vật nặng 1 kg và nhìn đoạn dài 1 m trước, lấy đó làm mốc.
 
-**Con tắc thì làm gì:** Xếp que tính thành từng nhóm rồi đếm — thấy được mới nhớ được.
-
-**Nếu con làm nhanh:** Hỏi 2 × 11, một phép ngoài bảng, xem trẻ có tự cộng thêm 2 không.
+**Nếu con làm nhanh:** Đoán rồi đo ngay, ghi hai số cạnh nhau xem lệch bao nhiêu.
 
 
 ---
@@ -91,19 +88,13 @@ d) 2 × 1 = …
 
 **Đáp án từng việc**
 
-a) Con đoán khối lượng cặp sách khoảng bao nhiêu kg? Đoán xong mình đo lại.
+a) Con đoán chiều cao cửa ra vào khoảng bao nhiêu m? Đoán xong mình đo lại.
    → **trẻ đoán rồi đo — so xem đoán gần chưa**
 
-b) Con đoán chiều dài quyển vở khoảng bao nhiêu cm? Đoán xong mình đo lại.
+b) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
    → **trẻ đoán rồi đo — so xem đoán gần chưa**
 
 c) Con đoán lượng nước trong chai khoảng bao nhiêu lít? Đoán xong mình đo lại.
-   → **trẻ đoán rồi đo — so xem đoán gần chưa**
-
-d) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
-   → **trẻ đoán rồi đo — so xem đoán gần chưa**
-
-e) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
    → **trẻ đoán rồi đo — so xem đoán gần chưa**
 
 **Hỏi thêm một câu** *(rèn: Đoán thử · Làm cách gọn hơn)*: Lần này con đoán gần hơn lần trước không? Vì sao?
@@ -119,26 +110,63 @@ e) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình �
 
 ## PHẦN C — Luyện tay
 
+**Tính với số đo**
+
+> **Cô/mẹ đọc lên:** Tính với số đo cũng như tính với số thường, chỉ khác là **viết kèm đơn vị** vào sau kết quả.
+
+**Đáp án từng việc**
+
+a) Bạn Nam bắt đầu học lúc 6 giờ, học 2 tiếng thì xong. Xong lúc mấy giờ?
+   → **8 giờ**
+
+b) 43 l + 28 l = …
+   → **71 l**
+
+c) Băng giấy dài 64 cm, cắt đi 16 cm. Còn lại dài bao nhiêu?
+   → **48 cm**
+
+d) 2 m = … dm
+   → **20 dm**
+
+e) 9 kg = … g
+   → **9 000 g**
+
+**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Nói cho người khác tin)*: Cộng 20 cm với 3 dm được không? Phải làm gì trước đã?
+
+**Thế nào là con đã hiểu:** Trẻ viết đơn vị vào kết quả mà không cần nhắc, và biết phải **đưa về cùng đơn vị** trước khi cộng. Bỏ quên đơn vị là lỗi trừ điểm nhiều nhất của lớp 2.
+
+**Con tắc thì làm gì:** Đo thật bằng thước rồi mới tính, để trẻ thấy con số gắn với vật thật.
+
+**Nếu con làm nhanh:** Cho cộng hai số đo khác đơn vị — trẻ phải tự nhận ra chỗ vướng.
+
+
+---
+
+## PHẦN D — Bài toán có lời văn
+
 **Đổi đơn vị và tính trên số đo**
 
 > **Cô/mẹ đọc lên:** Muốn so hai số đo thì phải đưa về cùng một đơn vị đã.
 
 **Đáp án từng việc**
 
-a) 31 cm + 14 cm = … cm
-   → **45 cm**
+a) 9 dm = … cm
+   → **90 cm**
 
-b) Điền dấu >, < hoặc = : 9 dm … 24 cm
+b) 19 cm + 16 cm = … cm
+   → **35 cm**
+
+c) Điền dấu >, < hoặc = : 4 dm … 71 cm
+   → **<**
+
+d) Điền dấu >, < hoặc = : 5 dm … 43 cm
    → **>**
 
-c) 5 m = … dm
-   → **50 dm**
+e) 20 cm + 26 cm = … cm
+   → **46 cm**
 
-d) 15 cm + 22 cm = … cm
-   → **37 cm**
-
-e) 7 m = … dm
-   → **70 dm**
+f) 6 m = … dm
+   → **60 dm**
 
 **Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Vì sao không so thẳng 5 với 40 được?
 
@@ -151,67 +179,30 @@ e) 7 m = … dm
 
 ---
 
-## PHẦN D — Bài toán có lời văn
-
-**Đơn vị đo và xem đồng hồ**
-
-> **Cô/mẹ đọc lên:** Con nhớ 1 đề-xi-mét bằng 10 xăng-ti-mét, và kim dài chỉ số 6 là đúng nửa giờ.
-
-**Đáp án từng việc**
-
-a) Bao gạo nặng 12 kg, bao ngô nặng 17 kg. Cả hai bao nặng mấy ki-lô-gam?
-   → **29 kg**
-
-b) 2 dm = … cm
-   → **20 cm**
-
-c) Kim ngắn chỉ số 2, kim dài chỉ số 12. Mấy giờ?
-   → **2 giờ**
-
-d) Kim ngắn chỉ số 3, kim dài chỉ số 12. Mấy giờ?
-   → **3 giờ**
-
-**Hỏi thêm một câu** *(rèn: Đoán thử · Xem chỗ nào chưa ổn)*: Con đoán cái bàn này dài khoảng mấy đề-xi-mét? Đoán xong rồi mình đo thử xem gần chưa.
-
-**Thế nào là con đã hiểu:** Trẻ ước lượng được trước khi đo, và ước lượng ngày càng gần kết quả thật. Ước lượng là kỹ năng riêng, phải luyện.
-
-**Con tắc thì làm gì:** Cho trẻ cầm thước 1 dm để có cảm giác về độ dài ấy.
-
-**Nếu con làm nhanh:** Hỏi những vật nào trong nhà nặng khoảng 1 kg.
-
-
----
-
 ## PHẦN E — Thử thách vui
 
-**Tìm chỗ sai giúp bạn**
+**Đố vui đo lường và giờ**
 
-> **Cô/mẹ đọc lên:** Con làm giám khảo nhé. Xem bạn sai ở bước nào rồi sửa lại.
+> **Cô/mẹ đọc lên:** Câu đố cuối buổi thôi, toàn thứ mình vừa học xong.
 
 **Đáp án từng việc**
 
-a) Một bạn tính 50 + 79 = 138. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 129**
+a) 2 kg bằng bao nhiêu gam?
+   → **2 000 g**
 
-b) Một bạn tính 62 + 25 = 96. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 87**
+b) Bây giờ là 2 giờ. 1 tiếng nữa là mấy giờ?
+   → **3 giờ**
 
-c) Một bạn tính 67 + 47 = 104. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 114**
+c) 6 m bằng bao nhiêu dm?
+   → **60 dm**
 
-d) Một bạn tính 86 + 67 = 143. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 153**
+**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Nói cho người khác tin)*: Đổi từ m sang dm thì số to lên hay bé đi? Vì sao?
 
-e) Một bạn tính 62 + 68 = 120. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
-   → **bạn quên nhớ sang hàng chục; kết quả đúng là 130**
+**Thế nào là con đã hiểu:** Trẻ nói được vì sao số to lên khi đổi sang đơn vị nhỏ hơn: **đơn vị nhỏ thì cần nhiều cái hơn** để đo cùng một đoạn. Nhớ quy tắc mà không hiểu chỗ này thì đến lớp 4 sẽ đổi ngược.
 
-**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Làm sao để lần sau bạn ấy không sai như thế nữa?
+**Con tắc thì làm gì:** Lấy thước mét ra đếm thật: 1 m có mấy đoạn 1 dm.
 
-**Thế nào là con đã hiểu:** Trẻ chỉ ra **bước nào** sai chứ không chỉ nói kết quả sai. Tìm được lỗi của người khác là bước trước khi tự tìm được lỗi của mình.
-
-**Con tắc thì làm gì:** Tính lại cùng trẻ từng hàng, so với bài của bạn ở từng bước.
-
-**Nếu con làm nhanh:** Cho một bài đúng để trẻ khỏi quen là bài nào cũng có lỗi.
+**Nếu con làm nhanh:** Hỏi 1 kg và 1 000 g cái nào nặng hơn — nhiều trẻ trả lời 1 000 g.
 
 
 ---

@@ -30,73 +30,71 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 **Cấu tạo số và tính nhẩm số tròn trăm**
 
-a) Số 259 gồm mấy trăm, mấy chục, mấy đơn vị?
+a) Tính nhẩm: 700 + 200
 
-b) Tính nhẩm: 200 + 300
+b) Số 246 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-c) Số 447 gồm mấy trăm, mấy chục, mấy đơn vị?
+c) Tính nhẩm: 500 + 300
 
-d) Tính nhẩm: 300 + 100
+d) Số 433 gồm mấy trăm, mấy chục, mấy đơn vị?
 
-e) Số 319 gồm mấy trăm, mấy chục, mấy đơn vị?
+e) Tính nhẩm: 700 + 100
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Từ phép cộng sang phép nhân**
 
-a) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+a) Xếp 8 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-b) Xếp 3 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+b) Xếp 5 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-c) Xếp 6 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+c) Xếp 4 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-d) Xếp 9 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+d) Xếp 8 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
-e) Xếp 7 nhóm, mỗi nhóm 2 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
+e) Xếp 9 nhóm, mỗi nhóm 5 que tính. Con viết phép cộng rồi viết phép nhân tương ứng.
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
-**Cộng trừ có nhớ trong phạm vi 100**
+**Bài toán nhiều hơn – ít hơn**
 
-a) Đặt tính rồi tính: 63 + 17
+a) Bạn Nam có 511 quyển sách. Bạn Bo có ít hơn bạn Nam 50 quyển sách. Bạn Bo có bao nhiêu quyển sách?
 
-b) Đặt tính rồi tính: 96 − 71
+b) Bạn Bo có 408 quyển sách. Bạn Tí có nhiều hơn bạn Bo 50 quyển sách. Bạn Tí có bao nhiêu quyển sách?
 
-c) Đặt tính rồi tính: 11 + 23
+c) Bạn Bơ có 332 viên bi. Bạn Na có ít hơn bạn Bơ 130 viên bi. Bạn Na có bao nhiêu viên bi?
 
-d) Đặt tính rồi tính: 37 − 18
-
-e) Đặt tính rồi tính: 29 + 61
-
-f) Đặt tính rồi tính: 30 − 25
+d) Bạn Bi có 487 con tem. Bạn Tèo có nhiều hơn bạn Bi 180 con tem. Bạn Tèo có bao nhiêu con tem?
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Bài toán nhân, chia**
+**Cộng trừ có nhớ trong phạm vi 1 000**
 
-a) Mỗi hộp có 2 quả bóng. Hỏi 10 hộp có mấy quả?
+a) Đặt tính rồi tính: 593 + 200
 
-b) Có 40 con vịt chia đều vào 5 hộp. Mỗi hộp có mấy con?
+b) Đặt tính rồi tính: 494 − 470
 
-c) Mỗi hộp có 5 quyển vở. Hỏi 6 hộp có mấy quyển?
+c) Đặt tính rồi tính: 228 + 152
 
-d) Có 20 cái bánh chia đều vào 5 hộp. Mỗi hộp có mấy cái?
+d) Đặt tính rồi tính: 877 − 511
 
-e) Có 40 bông hoa chia đều vào 5 hộp. Mỗi hộp có mấy bông?
+e) Đặt tính rồi tính: 935 + 39
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Tìm chỗ sai giúp bạn**
+**Số bí mật đến 1 000**
 
-a) Một bạn tính 55 + 58 = 103. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+a) Số bí mật gồm 4 trăm, 3 chục và 5 đơn vị. Số nào?
 
-b) Một bạn tính 18 + 70 = 97. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+b) Số tròn trăm gần 831 nhất là số nào?
 
-c) Một bạn tính 37 + 31 = 77. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+c) Số bí mật gồm 6 trăm, 5 chục và 6 đơn vị. Số nào?
+
+d) 496 và 842: số nào bé hơn?
 
 
 ---
@@ -107,6 +105,6 @@ c) Một bạn tính 37 + 31 = 77. Bạn ấy sai ở đâu? Kết quả đúng 
 
 - ☐ Cấu tạo số và tính nhẩm số tròn trăm
 - ☐ Từ phép cộng sang phép nhân
-- ☐ Cộng trừ có nhớ trong phạm vi 100
-- ☐ Bài toán nhân, chia
-- ☐ Tìm chỗ sai giúp bạn
+- ☐ Bài toán nhiều hơn – ít hơn
+- ☐ Cộng trừ có nhớ trong phạm vi 1 000
+- ☐ Số bí mật đến 1 000

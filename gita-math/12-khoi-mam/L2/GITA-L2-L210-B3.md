@@ -28,75 +28,65 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — Khởi động — nhắc lại buổi trước · 5 phút · 6 điểm
 
-**Bảng nhân, bảng chia 2 và 5**
+**Đoán nhanh: dài, nặng, mấy giờ**
 
-a) 5 × 3 = …
+a) Con đoán chiều cao của con khoảng bao nhiêu?
 
-b) 14 : 2 = …
+b) Con đoán một quyển sách giáo khoa nặng khoảng bao nhiêu?
 
-c) Viết phép nhân thay cho phép cộng: 5 + 5 + 5
-
-d) 2 × 3 = …
+c) Kim ngắn qua số 3, kim dài chỉ số 3. Mấy giờ?
 
 
 ## PHẦN B — Học cái mới · 10 phút · 8 điểm
 
 **Đơn vị đo và xem đồng hồ**
 
-a) 7 dm = … cm
+a) 5 dm = … cm
 
-b) Kim ngắn chỉ số 11, kim dài chỉ số 12. Mấy giờ?
+b) Kim ngắn ở giữa số 1 và số 2, kim dài chỉ số 6. Mấy giờ?
 
-c) Bao gạo nặng 11 kg, bao ngô nặng 10 kg. Cả hai bao nặng mấy ki-lô-gam?
+c) Bao gạo nặng 16 kg, bao ngô nặng 10 kg. Cả hai bao nặng mấy ki-lô-gam?
 
-d) 7 dm = … cm
-
-e) Kim ngắn ở giữa số 7 và số 8, kim dài chỉ số 6. Mấy giờ?
+d) Bao gạo nặng 17 kg, bao ngô nặng 18 kg. Cả hai bao nặng mấy ki-lô-gam?
 
 
 ## PHẦN C — Luyện tay · 10 phút · 10 điểm
 
 **Đổi đơn vị và tính trên số đo**
 
-a) 35 cm + 37 cm = … cm
+a) Điền dấu >, < hoặc = : 1 dm … 62 cm
 
-b) 3 km = … m
+b) 30 cm + 26 cm = … cm
 
-c) Điền dấu >, < hoặc = : 5 dm … 29 cm
+c) 7 km = … m
 
-d) 15 cm + 12 cm = … cm
+d) 6 cm + 8 cm = … cm
 
 
 ## PHẦN D — Bài toán có lời văn · 8 phút · 8 điểm
 
-**Đoán trước rồi đo lại**
+**Tính với số đo**
 
-a) Con đoán chiều dài quyển vở khoảng bao nhiêu cm? Đoán xong mình đo lại.
+a) 58 cm + 11 cm = …
 
-b) Con đoán chiều cao cửa ra vào khoảng bao nhiêu m? Đoán xong mình đo lại.
+b) 2 dm = … cm
 
-c) Con đoán chiều dài cái bàn khoảng bao nhiêu dm? Đoán xong mình đo lại.
+c) Băng giấy dài 48 cm, cắt đi 23 cm. Còn lại dài bao nhiêu?
 
-d) Con đoán khối lượng cặp sách khoảng bao nhiêu kg? Đoán xong mình đo lại.
+d) Bạn Nam bắt đầu học lúc 5 giờ, học 2 tiếng thì xong. Xong lúc mấy giờ?
 
-e) Con đoán quãng đường từ nhà tới trường khoảng bao nhiêu km? Đoán xong mình đo lại.
+e) Băng giấy dài 42 cm, cắt đi 34 cm. Còn lại dài bao nhiêu?
 
 
 ## PHẦN E — Thử thách vui · 7 phút · 8 điểm
 
-**Chắc chắn, có thể, không thể**
+**Đố vui đo lường và giờ**
 
-a) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+a) Bây giờ là 1 giờ. 1 tiếng nữa là mấy giờ?
 
-b) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+b) 2 kg bằng bao nhiêu gam?
 
-c) “Ngày mai mặt trời mọc ở hướng đông” — chắc chắn, có thể hay không thể?
-
-d) “Bốc được viên bi đỏ từ hộp chỉ toàn bi xanh” — chắc chắn, có thể hay không thể?
-
-e) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
-
-f) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không thể?
+c) 7 dm bằng bao nhiêu cm?
 
 
 ---
@@ -105,8 +95,8 @@ f) “Tháng sau có ngày thứ Hai” — chắc chắn, có thể hay không 
 
 *Con tự đánh dấu vào việc mình đã làm được.*
 
-- ☐ Bảng nhân, bảng chia 2 và 5
+- ☐ Đoán nhanh: dài, nặng, mấy giờ
 - ☐ Đơn vị đo và xem đồng hồ
 - ☐ Đổi đơn vị và tính trên số đo
-- ☐ Đoán trước rồi đo lại
-- ☐ Chắc chắn, có thể, không thể
+- ☐ Tính với số đo
+- ☐ Đố vui đo lường và giờ
