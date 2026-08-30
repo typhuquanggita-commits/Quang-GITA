@@ -20,6 +20,10 @@ const SHARES: Record<GroupId, number[]> = {
   'qg-nen-tang': [0.32, 0.28, 0.2, 0.08, 0.12],
   'qg-vung-chac': [0.2, 0.26, 0.24, 0.16, 0.14],
   'qg-toi-uu': [0.12, 0.2, 0.24, 0.28, 0.16],
+  /* Luồng vào 6 chỉ có bốn giai đoạn nên mảng cũng chỉ có bốn phần. */
+  'l6-lam-quen': [0.38, 0.3, 0.18, 0.14],
+  'l6-vung-chac': [0.24, 0.32, 0.24, 0.2],
+  'l6-but-pha': [0.14, 0.26, 0.32, 0.28],
 };
 
 function allocateWeeks(total: number, shares: number[]): number[] {

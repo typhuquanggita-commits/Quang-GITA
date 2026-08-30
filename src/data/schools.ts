@@ -309,6 +309,66 @@ export const SCHOOLS: School[] = [
     color: '#1d4ed8',
   },
   {
+    id: 'lop6-cau-giay',
+    name: 'THCS Cầu Giấy (và nhóm trường THCS chất lượng cao Hà Nội)',
+    shortName: 'Vào 6 CLC',
+    track: 'lop6',
+    org: 'Phòng GD&ĐT quận / Sở GD&ĐT Hà Nội',
+    admissionNote:
+      'Nhóm trường THCS chất lượng cao công lập (Cầu Giấy, Thanh Xuân, Nam Từ Liêm, Lê Lợi…) tuyển sinh bằng bài kiểm tra đánh giá năng lực, thường gồm phần Toán và phần Tiếng Việt – Tiếng Anh, kết hợp với hồ sơ học bạ tiểu học. Phương án tuyển sinh do từng trường công bố lại mỗi năm — phải đối chiếu thông báo chính thức của năm dự thi trước khi lên kế hoạch.',
+    rounds: ['Xét hồ sơ học bạ (sơ tuyển ở một số trường)', 'Bài kiểm tra đánh giá năng lực'],
+    mathPapers: [
+      {
+        name: 'Phần Toán trong bài đánh giá năng lực',
+        minutes: 45,
+        scale: '10,0 điểm (quy đổi theo phương án từng trường)',
+        note: 'Kết hợp trắc nghiệm và tự luận ngắn. Nội dung nằm trong chương trình tiểu học nhưng cách hỏi xoay và có yếu tố suy luận.',
+      },
+    ],
+    styleTags: ['Đánh giá năng lực', 'Trắc nghiệm + tự luận ngắn', 'Suy luận nhiều hơn tính toán', 'Áp lực thời gian cao'],
+    signature: [
+      'Toán chuyển động, toán tỉ số phần trăm và toán tính ngược xuất hiện gần như chắc chắn.',
+      'Một đến hai câu suy luận logic hoặc dãy số quy luật, không cần công thức nhưng cần cách nghĩ.',
+      'Hình học tiểu học hỏi diện tích – chu vi qua hình ghép, ít khi hỏi công thức trực tiếp.',
+      'Đề ngắn nhưng thời gian rất chặt: trung bình dưới 3 phút một câu.',
+    ],
+    benchmark:
+      'Tỉ lệ chọi ở các trường THCS chất lượng cao Hà Nội nhiều năm ở mức cao, có trường trên 1 chọi 5. Không có “điểm chuẩn” công bố ổn định như thi vào 10, nên mục tiêu hợp lý là làm đúng gần trọn phần Toán chứ không phải nhắm một con số điểm.',
+    competitiveness: 5,
+    officialUrl: 'https://hanoi.edu.vn',
+    color: '#c2410c',
+  },
+  {
+    id: 'lop6-ngoai-ngu',
+    name: 'THCS Ngoại ngữ (Trường ĐH Ngoại ngữ – ĐHQGHN)',
+    shortName: 'Vào 6 Ngoại ngữ',
+    track: 'lop6',
+    org: 'Trường Đại học Ngoại ngữ – ĐHQG Hà Nội',
+    admissionNote:
+      'Tuyển sinh bằng bài đánh giá năng lực riêng của trường, trong đó Toán nằm trong phần đánh giá năng lực tư duy khoa học tự nhiên. Đề công bố theo từng năm; phải đọc thông báo tuyển sinh chính thức của trường cho năm dự thi.',
+    rounds: ['Đăng ký và sơ tuyển hồ sơ', 'Bài đánh giá năng lực'],
+    mathPapers: [
+      {
+        name: 'Phần Toán trong bài đánh giá năng lực',
+        minutes: 45,
+        scale: 'Theo thang quy đổi của trường',
+        note: 'Thiên về suy luận, đọc hiểu dữ liệu và toán có lời văn nhiều bước hơn là tính toán thuần tuý.',
+      },
+    ],
+    styleTags: ['Đánh giá năng lực', 'Đọc hiểu dữ liệu', 'Toán có lời văn nhiều bước', 'Cạnh tranh rất cao'],
+    signature: [
+      'Toán có lời văn dài, dữ kiện gài trong câu chữ — đọc sai đề là mất câu.',
+      'Bảng biểu, biểu đồ đơn giản cần đọc số rồi mới tính.',
+      'Suy luận logic dạng bảng đúng/sai xuất hiện thường xuyên.',
+      'Ít câu nặng tính toán, nhiều câu nặng cách nghĩ.',
+    ],
+    benchmark:
+      'Là một trong những kỳ tuyển sinh lớp 6 cạnh tranh nhất Hà Nội. Không có điểm chuẩn ổn định giữa các năm, nên hãy lấy tiêu chí “làm đúng và kịp giờ” làm mục tiêu thay vì một mốc điểm.',
+    competitiveness: 5,
+    officialUrl: 'https://ulis.vnu.edu.vn',
+    color: '#7c2d12',
+  },
+  {
     id: 'tong-ket',
     name: 'Mục tiêu Top 1 tổng kết môn Toán lớp 10 – 11 – 12',
     shortName: 'Top 1 tổng kết',

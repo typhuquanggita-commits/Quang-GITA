@@ -1254,6 +1254,580 @@ export const DRILL_ANALYSIS: Record<string, DrillAnalysis> = {
       'Trực tiếp phục vụ mục tiêu Top 1 tổng kết: biết công thức thì tính được mình cần bao nhiêu điểm ở bài kiểm tra sắp tới.',
     mastery: 'Tự tính được “cần bao nhiêu điểm cuối kỳ để đạt tổng kết 9,0” trước khi thi.',
   },
+  /* ==================== HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG ==================== */
+  'g-htl-hinh-chieu': {
+    recognize:
+      'Đề cho tam giác vuông, có đường cao hạ từ đỉnh góc vuông xuống cạnh huyền, và hỏi độ dài một đoạn trên cạnh huyền (HB hoặc HC). Từ khoá nhận dạng: "chân đường cao", "hình chiếu".',
+    method: [
+      'Vẽ hình, đặt tên rõ: A là đỉnh góc vuông, H là chân đường cao trên BC.',
+      'Ghi ra hệ thức gốc: AB² = BC · BH và AC² = BC · CH.',
+      'Ghép cặp cho đúng: hình chiếu luôn cùng đầu mút với cạnh góc vuông (AB ↔ BH vì cùng chứa B; AC ↔ CH vì cùng chứa C).',
+      'Thay số, chia, kèm đơn vị.',
+      'Kiểm tra nhanh: BH + CH phải bằng BC.',
+    ],
+    traps: [
+      'Ghép nhầm cặp — lấy AC² = BC · BH, ra đúng phép chia nhưng sai đoạn cần tìm.',
+      'Quên bình phương cạnh góc vuông, viết AC = BC · CH.',
+      'Đề cho hai cạnh góc vuông chứ không cho cạnh huyền: phải tính cạnh huyền bằng Pythagoras trước.',
+      'Bỏ đơn vị cm ở kết quả.',
+    ],
+    transfer:
+      'Là ý a hoặc ý b của Bài IV (hình học) đề vào 10 Hà Nội và của phần hình học đề vào 10 các tỉnh, thường 0,75–1,0 điểm. Cũng là bước lót cho các câu chứng minh tam giác đồng dạng ở ý sau.',
+    mastery:
+      'Nhìn hình là đọc ngay được cặp hệ thức đúng, không cần thử cả hai; kiểm tra lại bằng BH + CH = BC trong dưới 5 giây.',
+  },
+  'g-htl-duong-cao': {
+    recognize:
+      'Đề cho hai cạnh góc vuông (hoặc một cạnh góc vuông và cạnh huyền) rồi hỏi đường cao ứng với cạnh huyền.',
+    method: [
+      'Nếu chưa có cạnh huyền, tính bằng Pythagoras: BC = √(AB² + AC²).',
+      'Dùng hệ thức tích: AB · AC = BC · AH.',
+      'Suy ra AH = AB · AC / BC.',
+      'Nếu cần kết quả gọn, có thể kiểm chứng bằng 1/AH² = 1/AB² + 1/AC².',
+    ],
+    traps: [
+      'Lấy AH bằng nửa cạnh huyền — chỉ đúng khi tam giác vuông cân, không đúng chung.',
+      'Lấy trung bình cộng hai cạnh góc vuông.',
+      'Nhầm sang hệ thức 1/AH = 1/AB + 1/AC (thiếu bình phương).',
+      'Tính diện tích hai lần rồi làm tròn giữa chừng dẫn tới sai số.',
+    ],
+    transfer:
+      'Xuất hiện trực tiếp ở ý tính toán của bài hình vào 10, và là công cụ phụ trợ cho bài toán thực tế đo khoảng cách. Thường 0,5–0,75 điểm.',
+    mastery:
+      'Viết được ngay AH = AB·AC/BC mà không phải dựng lại công thức diện tích, và biết dùng hệ thức nghịch đảo bình phương để đối chiếu.',
+  },
+  'g-htl-thuc-te-do-cao': {
+    recognize:
+      'Bài văn có bối cảnh đời thực: cột cờ, toà nhà, cây, tháp; có "góc nâng"/"góc hạ" và một khoảng cách ngang; thường có thêm chiều cao tầm mắt hoặc chiều cao chân đế.',
+    method: [
+      'Vẽ hình mô phỏng: cạnh ngang là khoảng cách, cạnh đứng là phần vật cao hơn tầm mắt, góc nâng nằm ở vị trí mắt.',
+      'Xác định vị trí góc so với hai cạnh để chọn đúng tỉ số: đối/kề là tan, đối/huyền là sin, kề/huyền là cos.',
+      'Tính phần cao hơn tầm mắt: x = (khoảng cách) · tan(góc).',
+      'Cộng thêm chiều cao tầm mắt (hoặc phần chân đế) để ra chiều cao thật.',
+      'Làm tròn đúng yêu cầu của đề và ghi đơn vị.',
+    ],
+    traps: [
+      'Quên cộng chiều cao tầm mắt — đây là lỗi mất điểm số một của dạng này.',
+      'Đảo ngược tỉ số: lấy khoảng cách chia cho tan thay vì nhân.',
+      'Đặt máy tính ở chế độ radian thay vì độ.',
+      'Làm tròn sớm ở bước trung gian rồi tiếp tục tính, khiến kết quả lệch ở hàng phần mười.',
+      'Với "góc hạ" thì hình vẽ lộn ngược — phần cần tìm là độ sâu/khoảng cách chứ không phải chiều cao.',
+    ],
+    transfer:
+      'Chính là bài toán thực tế 0,5–1,0 điểm trong đề vào 10 nhiều tỉnh và trong Bài III/V của đề Hà Nội các năm gần đây; cũng là dạng vận dụng quen thuộc ở đề khảo sát lớp 9.',
+    mastery:
+      'Vẽ được hình đúng ngay lần đầu và tự nhắc mình cộng chiều cao tầm mắt trước khi viết đáp số, không cần đọc lại đề.',
+  },
+  'g-htl-ti-so-luong-giac': {
+    recognize:
+      'Đề cho một giá trị lượng giác của góc nhọn (sin, cos hoặc tan) và hỏi giá trị lượng giác còn lại, không có hình.',
+    method: [
+      'Cách hằng đẳng thức: dùng sin²α + cos²α = 1 để tìm giá trị còn lại, chọn dấu dương vì α nhọn.',
+      'Rồi dùng tan α = sin α / cos α, cot α = cos α / sin α.',
+      'Cách dựng hình (nhanh hơn): nếu sin α = b/a thì dựng tam giác vuông cạnh đối b, cạnh huyền a, cạnh kề = √(a² − b²), rồi đọc thẳng mọi tỉ số.',
+      'Đối chiếu bằng 1 + tan²α = 1/cos²α nếu còn thời gian.',
+    ],
+    traps: [
+      'Lấy cả dấu âm cho cos α — sai vì đề đã nêu α là góc nhọn.',
+      'Nhầm cạnh kề với cạnh huyền khi dựng tam giác.',
+      'Viết tan α = cos α / sin α (đảo tử mẫu).',
+      'Không rút gọn phân số ở đáp án cuối.',
+    ],
+    transfer:
+      'Là câu trắc nghiệm hoặc ý nhỏ 0,25–0,5 điểm trong phần hình học; nền tảng bắt buộc để làm được bài toán thực tế đo chiều cao và bài giải tam giác vuông.',
+    mastery:
+      'Chọn được cách dựng tam giác thay cho biến đổi đại số, ra kết quả trong dưới 30 giây và luôn rút gọn phân số.',
+  },
+
+  /* ==================== VIÈTE VỚI BIỂU THỨC KHÔNG ĐỐI XỨNG ==================== */
+  'g-viete-nhan-dang': {
+    recognize:
+      'Đề đưa ra một hệ thức giữa hai nghiệm và hỏi (hoặc ngầm buộc bạn phải quyết định) nên dùng kỹ thuật nào. Đây là bước "đọc vị" trước khi tính.',
+    method: [
+      'Đổi chỗ x₁ và x₂ trong hệ thức.',
+      'Nếu hệ thức giữ nguyên ⇒ đối xứng ⇒ viết lại được hoàn toàn theo S = x₁ + x₂ và P = x₁x₂.',
+      'Nếu hệ thức đổi khác ⇒ không đối xứng ⇒ phải lập hệ với S, hoặc hạ bậc bằng chính phương trình.',
+      'Ghi rõ kết luận phân loại ra nháp trước khi đặt bút giải.',
+    ],
+    traps: [
+      'Coi mọi hệ thức chứa x₁, x₂ đều đưa được về S và P rồi bế tắc giữa chừng.',
+      'Nhầm x₁² − x₂ (không đối xứng) với x₁² + x₂² (đối xứng) vì chỉ nhìn thấy dấu bình phương.',
+      'Bỏ qua điều kiện Δ ≥ 0 vì mải phân loại.',
+      'Quên rằng (x₁ − x₂)² là đối xứng dù x₁ − x₂ thì không.',
+    ],
+    transfer:
+      'Không phải một câu hỏi độc lập trong đề thi, nhưng quyết định toàn bộ 1,0 điểm của ý Viète ở Bài II/III đề vào 10: chọn sai hướng là mất trắng thời gian.',
+    mastery:
+      'Phân loại đúng trong dưới 10 giây bằng phép đổi chỗ, và nêu được ngay kỹ thuật tương ứng sẽ dùng.',
+  },
+  'g-viete-ti-le-nghiem': {
+    recognize:
+      'Hệ thức có dạng một nghiệm gấp k lần nghiệm kia: x₁ = kx₂, hoặc x₁ − kx₂ = 0. Có tham số m cần tìm.',
+    method: [
+      'Viết điều kiện có hai nghiệm: Δ ≥ 0 (hoặc Δ > 0 nếu đề đòi hai nghiệm phân biệt).',
+      'Viết Viète: S = x₁ + x₂ và P = x₁x₂ theo hệ số.',
+      'Thế x₁ = kx₂ vào S để tìm x₂, rồi suy ra x₁.',
+      'Thay cặp nghiệm vừa tìm vào P để giải ra m.',
+      'Đối chiếu m với điều kiện Δ ở bước 1 rồi mới kết luận.',
+    ],
+    traps: [
+      'Bỏ hẳn bước kiểm tra Δ — barem trừ điểm dù đáp số m đúng.',
+      'Thế x₁ = kx₂ vào tích P trước, ra phương trình bậc hai theo x₂ rắc rối hơn nhiều so với thế vào tổng.',
+      'Nhầm chiều tỉ lệ: đề nói x₁ = 3x₂ nhưng lại thế x₂ = 3x₁.',
+      'Với phương trình chưa chuẩn hoá (hệ số a ≠ 1), quên chia cho a khi viết S = −b/a và P = c/a.',
+      'Nhận cả nghiệm m làm Δ < 0.',
+    ],
+    transfer:
+      'Là ý thứ hai (ý vận dụng) của bài phương trình bậc hai chứa tham số trong đề vào 10 Hà Nội và đề chuyên Sở, giá trị 0,5–1,0 điểm.',
+    mastery:
+      'Làm trọn quy trình gồm cả dòng điều kiện Δ và dòng đối chiếu cuối, trong dưới 4 phút, không cần nhắc.',
+  },
+  'g-viete-ha-bac': {
+    recognize:
+      'Biểu thức cần tính chứa luỹ thừa bậc ≥ 2 của một nghiệm cụ thể (x₁², x₁³, hoặc đa thức bậc cao theo x₁), trong khi x₁ được nêu là nghiệm của một phương trình bậc hai đã biết hệ số.',
+    method: [
+      'Thay x₁ vào phương trình: x₁² − bx₁ + c = 0.',
+      'Chuyển vế để có công thức hạ bậc: x₁² = bx₁ − c.',
+      'Mỗi lần gặp x₁², thay bằng bx₁ − c; lặp lại cho tới khi biểu thức chỉ còn bậc nhất.',
+      'Với bậc ba: x₁³ = x₁ · x₁² = x₁(bx₁ − c) = bx₁² − cx₁, rồi thay x₁² thêm một lần nữa.',
+      'Cuối cùng dùng Viète (nếu còn cả x₁ lẫn x₂) hoặc thay giá trị cụ thể.',
+    ],
+    traps: [
+      'Sai dấu khi chuyển vế: viết x₁² = bx₁ + c thay vì bx₁ − c.',
+      'Chỉ hạ bậc một lần rồi dừng, để sót một số hạng bậc hai.',
+      'Đi đường vòng: giải hẳn phương trình ra nghiệm chứa căn rồi khai triển — dài và dễ sai số.',
+      'Áp dụng công thức hạ bậc của phương trình này cho nghiệm của phương trình khác.',
+    ],
+    transfer:
+      'Kỹ thuật lõi của câu vận dụng cao trong đề chuyên Sở và vòng 2 KHTN; cũng rút ngắn đáng kể ý cuối bài Viète của đề vào 10 thường.',
+    mastery:
+      'Tự viết ra công thức hạ bậc ngay khi đọc thấy "x₁ là nghiệm của", và hạ được biểu thức bậc ba về bậc nhất mà không sai dấu.',
+  },
+  'g-viete-he-bac-nhat': {
+    recognize:
+      'Hệ thức đề cho là bậc nhất theo hai nghiệm nhưng không đối xứng: ax₁ + bx₂ = c với a ≠ b. Có tham số cần tìm.',
+    method: [
+      'Viết điều kiện Δ ≥ 0.',
+      'Lấy phương trình (1): x₁ + x₂ = S từ Viète.',
+      'Lấy phương trình (2): chính hệ thức đề cho.',
+      'Giải hệ hai phương trình bậc nhất hai ẩn (1)–(2) bằng cộng đại số hoặc thế, tìm được x₁ và x₂ cụ thể.',
+      'Thay vào P = x₁x₂ để tính tham số.',
+      'Đối chiếu với điều kiện Δ, rồi kết luận.',
+    ],
+    traps: [
+      'Cố ép hệ thức bậc nhất không đối xứng về theo S và P — bất khả thi, mất thời gian.',
+      'Quên rằng vẫn phải dùng tích P ở bước cuối; dừng lại ngay sau khi tìm được x₁, x₂.',
+      'Giải hệ sai dấu khi cộng đại số.',
+      'Không đối chiếu Δ, nhận cả giá trị tham số làm phương trình vô nghiệm.',
+      'Với a ≠ 1 ở phương trình gốc, quên S = −b/a.',
+    ],
+    transfer:
+      'Dạng ra đề quen thuộc của ý vận dụng Bài II đề vào 10 Hà Nội và của phần đại số đề chuyên; 0,5–1,0 điểm và thường là ranh giới giữa 8 và 9 điểm.',
+    mastery:
+      'Nhận ra ngay "hệ thức bậc nhất ⇒ lập hệ với tổng", trình bày đủ 6 bước kể cả hai dòng điều kiện, trong dưới 5 phút.',
+  },
+
+  /* ==================== BÀI TOÁN THỰC TẾ LIÊN QUAN CỰC TRỊ ==================== */
+  'g-cuc-tri-hang-rao': {
+    recognize:
+      'Bài văn có một ràng buộc cố định (diện tích cho trước, thể tích cho trước) và hỏi giá trị nhỏ nhất của một tổng (chiều dài hàng rào, diện tích vật liệu, chi phí).',
+    method: [
+      'Đặt ẩn theo đúng hình vẽ, nêu rõ điều kiện dương.',
+      'Viết ràng buộc thành phương trình, rồi rút một ẩn theo ẩn kia.',
+      'Viết đại lượng cần tối ưu thành hàm một biến, dạng tổng hai số hạng có tích không đổi.',
+      'Áp dụng AM–GM: u + v ≥ 2√(uv), với uv là hằng số.',
+      'Giải dấu bằng u = v để tìm kích thước, rồi tính giá trị nhỏ nhất.',
+      'Kết luận đủ hai phần: giá trị nhỏ nhất là bao nhiêu và đạt được khi kích thước bằng bao nhiêu.',
+    ],
+    traps: [
+      'Rào cả bốn cạnh trong khi đề nói một cạnh dựa vào tường — sai ngay từ mô hình.',
+      'Áp dụng AM–GM cho hai số mà tích của chúng không phải hằng số ⇒ đánh giá vô nghĩa.',
+      'Tìm được giá trị nhỏ nhất nhưng quên chỉ ra dấu bằng xảy ra khi nào; barem trừ điểm.',
+      'Quên điều kiện x > 0, y > 0 trước khi dùng AM–GM.',
+      'Nhầm đơn vị: diện tích m² với chiều dài m.',
+    ],
+    transfer:
+      'Bài toán thực tế 0,5–1,0 điểm ở đề vào 10 nhiều tỉnh và ở phần vận dụng đề chuyên; cùng khuôn với các bài tối ưu chi phí, tối ưu vật liệu.',
+    mastery:
+      'Đọc đề là vẽ được hình và viết ngay hàm một biến; luôn viết dòng "dấu bằng xảy ra khi…" như một phản xạ.',
+  },
+  'g-cuc-tri-tong-khong-doi': {
+    recognize:
+      'Ràng buộc là một tổng cố định (chu vi cho trước, tổng hai số cho trước) và câu hỏi là giá trị lớn nhất của một tích (diện tích, sản lượng).',
+    method: [
+      'Đặt hai kích thước x, y > 0.',
+      'Chuyển ràng buộc chu vi thành tổng: x + y = hằng số.',
+      'Nhớ nguyên lí: tổng không đổi thì tích lớn nhất khi hai số bằng nhau.',
+      'Viết đánh giá xy ≤ (x + y)²/4.',
+      'Suy ra giá trị lớn nhất, nêu dấu bằng x = y (hình vuông).',
+    ],
+    traps: [
+      'Dùng luôn chu vi làm tổng x + y mà quên chia đôi.',
+      'Nhớ ngược nguyên lí: áp dụng "tích không đổi thì tổng nhỏ nhất" cho bài này.',
+      'Kết luận bằng kích thước cạnh trong khi đề hỏi diện tích.',
+      'Bỏ đơn vị m² ở đáp số.',
+    ],
+    transfer:
+      'Câu vận dụng thấp trong đề vào 10 và đề khảo sát; cũng là bước lót để hiểu các bài cực trị phức tạp hơn ở đề chuyên.',
+    mastery:
+      'Phân biệt tức thì hai chiều của AM–GM (tổng cố định → tối đa tích; tích cố định → tối thiểu tổng) và chọn đúng chiều ngay từ khi đọc đề.',
+  },
+  'g-cuc-tri-doc-de': {
+    recognize:
+      'Không phải bài tính toán mà là bài "đọc vị": một chi tiết nhỏ trong đề (dựa tường, không nắp, hỏi chi phí thay vì kích thước) làm đổi hẳn mô hình hoặc bước kết luận.',
+    method: [
+      'Gạch chân mọi cụm từ mô tả cấu trúc: "dựa vào tường", "không nắp", "chia thành hai ô bằng nhau", "bể hình hộp".',
+      'Vẽ hình theo đúng mô tả trước khi viết bất kỳ công thức nào.',
+      'Đếm lại số mặt/số cạnh thực sự phải tính, rồi mới lập biểu thức.',
+      'Đọc lại câu hỏi cuối cùng: đề hỏi kích thước, hay diện tích, hay chi phí?',
+      'Sau khi tối ưu xong, thay kích thước vào đúng đại lượng đề hỏi rồi mới kết luận.',
+    ],
+    traps: [
+      'Dùng công thức chu vi/diện tích toàn phần mặc định mà không đọc chi tiết cấu trúc.',
+      'Tối ưu đúng nhưng kết luận sai đại lượng — tìm được kích thước rồi trả lời luôn, trong khi đề hỏi chi phí.',
+      'Với hộp chia ô, quên vách ngăn ở giữa.',
+      'Với bể không nắp, vẫn tính hai mặt đáy.',
+    ],
+    transfer:
+      'Quyết định 0,25–0,5 điểm cuối của mọi bài toán thực tế cực trị: phần lớn bài mất điểm ở đây chứ không phải ở kỹ thuật bất đẳng thức.',
+    mastery:
+      'Trước khi nộp, tự soát lại được ba câu: hình đúng chưa, biểu thức đủ mặt chưa, đã trả lời đúng thứ đề hỏi chưa.',
+  },
+  /* ==================== LUỒNG 4 · TOÁN VÀO LỚP 6 ==================== */
+  'g-l6-cong-phan-so': {
+    recognize: 'Phép cộng hai phân số có mẫu số khác nhau, không kèm lời văn.',
+    method: [
+      'Tìm mẫu số chung — ưu tiên bội chung nhỏ nhất để số không bị lớn.',
+      'Quy đồng hai phân số về cùng mẫu.',
+      'Cộng hai tử số, giữ nguyên mẫu chung.',
+      'Rút gọn kết quả về phân số tối giản.',
+    ],
+    traps: [
+      'Cộng tử với tử và mẫu với mẫu — lỗi kinh điển và mất trọn câu.',
+      'Quy đồng đúng nhưng quên nhân tử số theo cùng thừa số phụ.',
+      'Không rút gọn kết quả cuối.',
+      'Nhân chéo hai mẫu khi hai mẫu có ước chung, làm số to lên vô ích.',
+    ],
+    transfer:
+      'Là bước tính nằm bên trong hầu hết các câu có lời văn của đề vào 6. Sai ở đây thì cách làm đúng cũng không cứu được câu.',
+    mastery: 'Cộng đúng và rút gọn xong trong dưới 20 giây, không cần nháp cho các mẫu nhỏ.',
+  },
+  'g-l6-tinh-nhanh': {
+    recognize:
+      'Biểu thức dài nhưng các số hạng có chung một thừa số, hoặc có cặp số cộng lại thành số tròn chục, tròn trăm. Đề thường có chữ "tính nhanh".',
+    method: [
+      'Quan sát cả biểu thức trước khi tính bất kỳ phép nào.',
+      'Tìm thừa số chung và đặt ra ngoài dấu ngoặc.',
+      'Nhóm các số có tổng tròn để phép cộng trong ngoặc trở nên dễ.',
+      'Tính phần trong ngoặc rồi nhân một lần duy nhất.',
+    ],
+    traps: [
+      'Tính tuần tự từ trái sang phải, vừa lâu vừa dễ sai.',
+      'Đặt thừa số chung nhưng quên một số hạng còn lại.',
+      'Nhóm sai dấu khi biểu thức có phép trừ.',
+      'Nhầm vị trí dấu phẩy khi nhân số thập phân với 100.',
+    ],
+    transfer:
+      'Câu mở đầu quen thuộc của phần tự luận ngắn trong đề đánh giá năng lực, và là cách tiết kiệm thời gian cho những câu phía sau.',
+    mastery: 'Nhìn biểu thức là thấy ngay cặp số cần nhóm, không đặt bút tính từng phép.',
+  },
+  'g-l6-phan-tram-co-ban': {
+    recognize:
+      'Bài có một số tổng và một tỉ lệ phần trăm, hỏi phần đã dùng hoặc phần còn lại.',
+    method: [
+      'Trả lời câu hỏi "phần trăm của cái gì" trước khi tính.',
+      'Tính giá trị phần trăm: tổng × phần trăm : 100.',
+      'Nếu đề hỏi phần còn lại thì lấy tổng trừ đi giá trị vừa tính.',
+      'Đọc lại câu hỏi rồi mới ghi đáp số kèm đơn vị.',
+    ],
+    traps: [
+      'Tính đúng phần đã bán nhưng đề hỏi phần còn lại — lỗi mất điểm số một của dạng này.',
+      'Trừ thẳng số phần trăm vào số lượng, ví dụ lấy 200 − 25.',
+      'Đặt sai vị trí dấu phẩy khi chia cho 100.',
+      'Quên đơn vị ở đáp số.',
+    ],
+    transfer:
+      'Xuất hiện gần như chắc chắn trong đề vào 6, thường ở nhóm câu dễ — nghĩa là mất câu này là mất điểm không đáng.',
+    mastery: 'Viết được ngay dòng "25% của 200 kg" trước khi tính, và luôn đọc lại câu hỏi trước khi ghi đáp số.',
+  },
+  'g-l6-tang-giam-lien-tiep': {
+    recognize:
+      'Có từ hai lần thay đổi phần trăm trở lên: tăng rồi giảm, giảm rồi giảm tiếp, hoặc tăng theo từng đợt.',
+    method: [
+      'Chia bài thành từng bước, mỗi bước một lần thay đổi.',
+      'Sau mỗi bước, xác định lại mốc 100% mới là số nào.',
+      'Nhân liên tiếp: giá trị cuối = gốc × (1 ± a/100) × (1 ± b/100).',
+      'So sánh với giá gốc nếu đề hỏi tăng hay giảm bao nhiêu phần trăm so với ban đầu.',
+    ],
+    traps: [
+      'Cộng trừ trực tiếp hai số phần trăm — sai vì chúng tính trên hai số khác nhau.',
+      'Nghĩ tăng 20% rồi giảm 20% thì về như cũ.',
+      'Nhầm "giảm so với giá mới" thành "giảm so với giá gốc".',
+      'Làm tròn ở bước giữa khiến kết quả cuối lệch.',
+    ],
+    transfer:
+      'Là câu phân hoá của nhóm tỉ số phần trăm trong đề đánh giá năng lực, và cũng là kiến thức dùng được cả đời khi đi mua hàng.',
+    mastery: 'Tự giải thích được bằng lời vì sao không cộng trừ phần trăm, không chỉ nhớ công thức.',
+  },
+  'g-l6-gap-nhau': {
+    recognize:
+      'Hai vật chuyển động về phía nhau, đề cho khoảng cách ban đầu và hai vận tốc, hỏi thời gian hoặc chỗ gặp nhau.',
+    method: [
+      'Vẽ sơ đồ đoạn thẳng với hai mũi tên hướng vào nhau.',
+      'Đổi mọi đơn vị về cùng một hệ ngay từ đầu.',
+      'Tính tổng vận tốc — đây là tốc độ mà khoảng cách giữa hai vật giảm đi.',
+      'Thời gian gặp nhau = quãng đường : tổng vận tốc.',
+      'Nếu đề hỏi chỗ gặp nhau thì nhân thời gian với vận tốc của một vật.',
+    ],
+    traps: [
+      'Trừ vận tốc thay vì cộng vì không vẽ sơ đồ.',
+      'Để lẫn phút với giờ trong cùng một phép chia.',
+      'Trả lời "sau 3 giờ" trong khi đề hỏi "lúc mấy giờ".',
+      'Quên xử lý trường hợp một xe xuất phát sớm hơn.',
+    ],
+    transfer:
+      'Một trong ba mô hình chuyển động chuẩn, xuất hiện đều trong đề vào 6 của nhóm trường chất lượng cao.',
+    mastery: 'Vẽ sơ đồ và viết được phép tính chỉ sau một lần đọc đề, luôn thử lại bằng tổng hai quãng đường.',
+  },
+  'g-l6-duoi-kip': {
+    recognize:
+      'Hai vật đi cùng chiều, một vật xuất phát trước hoặc đã đi được một đoạn, hỏi sau bao lâu đuổi kịp.',
+    method: [
+      'Vẽ sơ đồ hai mũi tên cùng hướng, đánh dấu khoảng cách ban đầu.',
+      'Nếu đề cho thời gian xuất phát lệch nhau, tính trước quãng đường vật đi sớm đã đi được.',
+      'Tính hiệu vận tốc — đây là mức rút ngắn khoảng cách mỗi giờ.',
+      'Thời gian đuổi kịp = khoảng cách ban đầu : hiệu vận tốc.',
+      'Kiểm tra: đến thời điểm đó hai vật phải đi được quãng đường bằng nhau tính từ điểm xuất phát chung.',
+    ],
+    traps: [
+      'Cộng vận tốc vì nhớ nhầm sang mô hình gặp nhau.',
+      'Quên đổi thời gian xuất phát lệch thành quãng đường.',
+      'Chia cho vận tốc của xe nhanh thay vì cho hiệu vận tốc.',
+      'Không kiểm tra xem xe sau có nhanh hơn xe trước không.',
+    ],
+    transfer:
+      'Câu chuyển động khó hơn một bậc so với dạng gặp nhau; thường nằm ở nửa sau của đề, chỗ bắt đầu phân hoá.',
+    mastery: 'Phân biệt tức thì cộng hay trừ vận tốc bằng sơ đồ mũi tên, không phải bằng cách nhớ thuộc lòng.',
+  },
+  'g-l6-dong-nuoc': {
+    recognize:
+      'Có ca nô, thuyền, bè trên sông; đề nhắc tới xuôi dòng, ngược dòng hoặc vận tốc dòng nước.',
+    method: [
+      'Ghi hai công thức nền: v xuôi = v thực + v dòng; v ngược = v thực − v dòng.',
+      'Lấy hiệu hai vận tốc thì được 2 lần vận tốc dòng nước.',
+      'Lấy tổng hai vận tốc thì được 2 lần vận tốc thực.',
+      'Chia đôi để lấy đại lượng đề hỏi.',
+      'Nếu đề hỏi quãng đường hoặc thời gian thì áp tiếp s = v × t với đúng loại vận tốc.',
+    ],
+    traps: [
+      'Lẫn hai kết quả: lấy tổng chia đôi rồi trả lời là vận tốc dòng nước.',
+      'Quên chia đôi sau khi lấy hiệu.',
+      'Dùng vận tốc thực để tính quãng đường xuôi dòng.',
+      'Với bè trôi tự do, quên rằng vận tốc của bè chính là vận tốc dòng nước.',
+    ],
+    transfer:
+      'Mô hình chuyển động thứ ba của đề vào 6; thường chỉ một câu nhưng gần như năm nào cũng có ở nhóm trường tốp đầu.',
+    mastery: 'Viết được cả hai công thức nền trước khi nhìn số liệu, và không bao giờ lẫn tổng với hiệu.',
+  },
+  'g-l6-tinh-nguoc': {
+    recognize:
+      'Đề mô tả một chuỗi phép tính rồi cho kết quả cuối và hỏi số ban đầu. Từ khoá: "một số", "đem nhân", "rồi trừ", "thì được".',
+    method: [
+      'Viết lại chuỗi phép tính theo đúng thứ tự trong đề.',
+      'Đi ngược từ kết quả cuối về đầu.',
+      'Mỗi bước làm phép tính ngược lại: chia thành nhân, trừ thành cộng.',
+      'Thử lại theo chiều xuôi để kiểm tra.',
+    ],
+    traps: [
+      'Đi ngược nhưng vẫn dùng đúng phép tính trong đề.',
+      'Đảo thứ tự các bước — phải xử lý phép cuối cùng trước.',
+      'Bỏ qua bước thử lại, mất cơ hội phát hiện sai.',
+      'Nhầm "gấp 3 lần" với "nhiều hơn 3 đơn vị".',
+    ],
+    transfer:
+      'Là cách giải thay cho phương trình ở bậc tiểu học; xuất hiện thường xuyên và luôn giải được nhanh nếu đi đúng chiều.',
+    mastery: 'Viết ngay được chuỗi ngược ra nháp và luôn dành 15 giây thử lại theo chiều xuôi.',
+  },
+  'g-l6-tong-ti': {
+    recognize:
+      'Đề cho tổng của hai đại lượng và tỉ số giữa chúng, hỏi giá trị của một đại lượng.',
+    method: [
+      'Vẽ sơ đồ đoạn thẳng: mỗi đại lượng là một số phần bằng nhau.',
+      'Tính tổng số phần.',
+      'Giá trị một phần = tổng : tổng số phần.',
+      'Nhân giá trị một phần với số phần của đại lượng đề hỏi.',
+      'Thử lại bằng cách cộng hai kết quả xem có bằng tổng không.',
+    ],
+    traps: [
+      'Trả lời giá trị một phần thay vì giá trị đại lượng đề hỏi.',
+      'Vẽ sơ đồ ngược: gán số phần lớn cho đại lượng nhỏ.',
+      'Nhầm bài tổng – tỉ với bài hiệu – tỉ, dùng sai mẫu số.',
+      'Quên thử lại nên không phát hiện lỗi chia.',
+    ],
+    transfer:
+      'Nhóm bài toán điển hình của lớp 4 – 5, gần như luôn có mặt trong đề vào 6 dưới một lớp vỏ tình huống mới.',
+    mastery: 'Vẽ sơ đồ trước khi tính như một phản xạ, và luôn cộng hai kết quả để tự kiểm tra.',
+  },
+  'g-l6-dien-tich-ghep': {
+    recognize:
+      'Hình được ghép từ nhiều hình cơ bản, hoặc hình bị cắt bỏ một phần. Đề thường kèm hình vẽ.',
+    method: [
+      'Vẽ lại hình và ghi mọi số đo đã biết lên hình.',
+      'Chọn một trong hai hướng: chia nhỏ để cộng, hoặc lấy hình lớn trừ phần thừa.',
+      'Ưu tiên hướng có ít bước tính hơn.',
+      'Tính từng phần, ghi rõ đơn vị ở mỗi bước.',
+      'Cộng hoặc trừ để ra diện tích cần tìm.',
+    ],
+    traps: [
+      'Trừ độ dài cạnh thay vì trừ diện tích.',
+      'Dùng chiều cao của hình này cho hình khác trong hình ghép.',
+      'Quên chia đôi ở diện tích tam giác hoặc hình thang.',
+      'Lẫn đơn vị cm với cm².',
+    ],
+    transfer:
+      'Phần dễ lấy điểm nhất của đề nếu chịu vẽ hình; thường 1 – 2 câu trong mỗi đề đánh giá năng lực.',
+    mastery: 'Chọn được hướng tính ngắn hơn ngay từ đầu và không bao giờ nhầm đơn vị diện tích.',
+  },
+  'g-l6-hinh-hop': {
+    recognize:
+      'Có hình hộp chữ nhật hoặc hình lập phương kèm một chi tiết cấu trúc: "không nắp", "quét sơn mặt trong", "lát gạch nền và xung quanh".',
+    method: [
+      'Gạch chân chi tiết cấu trúc và đếm xem thực sự phải tính mấy mặt.',
+      'Tính chu vi đáy trước.',
+      'Diện tích xung quanh = chu vi đáy × chiều cao.',
+      'Cộng thêm các mặt đáy hoặc nắp theo đúng yêu cầu của đề.',
+      'Nếu đề hỏi thể tích hoặc lượng nước thì đổi tiếp sang đơn vị lít khi cần.',
+    ],
+    traps: [
+      'Tính cả nắp cho bể không nắp.',
+      'Nhầm diện tích với thể tích khi đề dùng chữ "chứa được bao nhiêu".',
+      'Lẫn dm² với m², hoặc quên 1 dm³ = 1 lít.',
+      'Dùng chu vi đáy sai vì cộng nhầm chiều dài với chiều cao.',
+    ],
+    transfer:
+      'Câu hình không gian quen thuộc của đề vào 6; điểm rơi thường ở chi tiết "không nắp" chứ không ở phép tính.',
+    mastery: 'Đọc đề là nói ngay được "phải tính mấy mặt", trước khi viết bất kỳ công thức nào.',
+  },
+  'g-l6-bang-dung-sai': {
+    recognize:
+      'Có một nhóm người hoặc vật và một nhóm thuộc tính, kèm vài dữ kiện khẳng định và phủ định. Câu hỏi dạng "ai thích gì", "ai ngồi đâu".',
+    method: [
+      'Kẻ bảng: hàng là người, cột là thuộc tính.',
+      'Bắt đầu từ dữ kiện chắc chắn nhất, không nhất thiết là dữ kiện đầu tiên.',
+      'Mỗi khẳng định thì đánh ✓ rồi loại cả hàng và cả cột.',
+      'Mỗi phủ định thì đánh ✗ vào đúng một ô.',
+      'Khi một hàng chỉ còn một ô chưa loại thì đó là đáp án; loại tiếp cả cột đó.',
+      'Kiểm tra lại đã dùng hết mọi dữ kiện chưa trước khi kết luận.',
+    ],
+    traps: [
+      'Suy luận trong đầu, không kẻ bảng, rồi quên mất một nhánh.',
+      'Đọc dữ kiện phủ định thành khẳng định.',
+      'Dừng lại khi tìm được một phương án phù hợp mà chưa dùng hết dữ kiện.',
+      'Tốn quá nhiều thời gian cho câu này, ảnh hưởng phần còn lại của đề.',
+    ],
+    transfer:
+      'Câu phân hoá đặc trưng của đề đánh giá năng lực — không cần kiến thức mới, chỉ cần một cách nghĩ có hệ thống.',
+    mastery: 'Kẻ bảng và giải xong trong dưới 3 phút, luôn kiểm tra lại bằng cách đọc lại toàn bộ dữ kiện.',
+  },
+  'g-l6-can-dia': {
+    recognize:
+      'Có cân thăng bằng hai đĩa, không có quả cân, và một vật khác biệt về khối lượng. Câu hỏi dạng "ít nhất bao nhiêu lần cân".',
+    method: [
+      'Nhớ nguyên tắc gốc: mỗi lần cân cho ba kết quả, nên chia thành ba nhóm chứ không phải hai.',
+      'Chia số vật thành ba nhóm gần bằng nhau, đặt hai nhóm lên hai đĩa.',
+      'Nếu thăng bằng thì vật khác biệt ở nhóm thứ ba; nếu lệch thì ở đĩa nhẹ hơn (hoặc nặng hơn, tuỳ đề).',
+      'Lặp lại với nhóm đã xác định cho tới khi còn một vật.',
+      'Đếm số lần cân: n lần phân biệt được tối đa 3ⁿ vật.',
+    ],
+    traps: [
+      'Chia đôi như phản xạ thông thường, khiến số lần cân nhiều hơn mức tối thiểu.',
+      'Quên rằng "thăng bằng" cũng là một kết quả có ích.',
+      'Trả lời số lần cân trong trường hợp may mắn thay vì trường hợp chắc chắn.',
+      'Nhầm khi đề nói vật khác biệt có thể nặng hơn HOẶC nhẹ hơn — bài này khó hơn hẳn.',
+    ],
+    transfer:
+      'Câu khó nhất của nhóm suy luận trong đề vào 6; không phải đề nào cũng có, nhưng có thì thường là câu chốt.',
+    mastery: 'Trả lời được ngay theo mốc 3 – 9 – 27 và giải thích được vì sao chia ba chứ không chia đôi.',
+  },
+  'g-l6-day-cach-deu': {
+    recognize:
+      'Một dãy số cho vài số hạng đầu rồi hỏi số hạng thứ n, số số hạng, hoặc tổng của dãy.',
+    method: [
+      'Tính hiệu giữa các số hạng liên tiếp để xác nhận dãy cách đều.',
+      'Số hạng thứ n = số đầu + (n − 1) × khoảng cách.',
+      'Số số hạng = (số cuối − số đầu) : khoảng cách + 1.',
+      'Tổng = (số đầu + số cuối) × số số hạng : 2.',
+      'Thử lại công thức với số hạng thứ hai hoặc thứ ba đã biết.',
+    ],
+    traps: [
+      'Quên trừ 1 trong công thức số hạng thứ n.',
+      'Quên cộng 1 khi đếm số số hạng.',
+      'Kết luận quy luật chỉ sau khi nhìn hai số hạng đầu.',
+      'Nhầm dãy cách đều với dãy nhân (mỗi số gấp đôi số trước).',
+    ],
+    transfer:
+      'Câu quen thuộc trong nhóm quy luật của đề đánh giá năng lực; làm nhanh được sẽ dành thời gian cho câu suy luận.',
+    mastery: 'Viết ba công thức nền ra nháp trong 10 giây rồi mới thay số, và luôn thử lại bằng một số hạng đã biết.',
+  },
+  'g-l6-dem-hinh': {
+    recognize:
+      'Đề cho một hình chia lưới hoặc hình có nhiều đoạn thẳng, hỏi tổng số hình chữ nhật hoặc tam giác.',
+    method: [
+      'Không đếm tay — tìm cách đếm có hệ thống.',
+      'Với lưới ô vuông: mỗi hình chữ nhật ứng với một cách chọn 2 đường ngang và 2 đường dọc.',
+      'Số cách chọn 2 trong k đường = k × (k − 1) : 2.',
+      'Nhân hai kết quả để ra tổng số hình.',
+      'Với hình không phải lưới, đếm theo nhóm kích thước: hình 1 ô, hình 2 ô, hình 3 ô…',
+    ],
+    traps: [
+      'Chỉ đếm các ô nhỏ, bỏ sót hình ghép từ nhiều ô.',
+      'Đếm trùng cùng một hình hai lần.',
+      'Nhầm số ô với số đường kẻ (lưới m ô có m + 1 đường).',
+      'Đếm tay với hình lớn rồi mất nhiều thời gian mà vẫn sai.',
+    ],
+    transfer:
+      'Câu khó của nhóm quy luật – đếm hình; thường nằm cuối đề và là chỗ tạo khác biệt giữa các thí sinh giỏi.',
+    mastery: 'Chuyển được bài đếm hình thành bài đếm cách chọn đường thẳng, và ra kết quả không cần vẽ đủ mọi hình.',
+  },
+  'g-l6-doc-bang': {
+    recognize:
+      'Có bảng số liệu, biểu đồ cột hoặc biểu đồ tranh, kèm một câu hỏi tính toán đơn giản.',
+    method: [
+      'Đọc câu hỏi trước, rồi mới đọc bảng — biết cần tìm gì thì đọc nhanh hơn nhiều.',
+      'Dò đúng dòng và đúng cột, dùng ngón tay hoặc bút chì để không lệch.',
+      'Kiểm tra đã lấy đủ số liệu chưa, đếm lại số cột.',
+      'Thực hiện phép tính, ghi rõ đơn vị.',
+      'Kiểm tra hợp lý: giá trị trung bình phải nằm giữa số nhỏ nhất và số lớn nhất.',
+    ],
+    traps: [
+      'Lấy nhầm dòng hoặc nhầm cột.',
+      'Đếm sót một cột nên chia cho số ngày sai.',
+      'Trả lời tổng trong khi đề hỏi trung bình.',
+      'Quên đơn vị ở đáp số.',
+    ],
+    transfer:
+      'Nhóm câu đọc hiểu dữ liệu ngày càng nhiều trong đề đánh giá năng lực; sai ở đây là sai vì đọc, không phải vì Toán.',
+    mastery: 'Đọc bảng đúng ngay lần đầu và tự kiểm tra kết quả bằng khoảng giá trị hợp lý.',
+  },
+  'g-l6-nhieu-buoc': {
+    recognize:
+      'Bài có lời văn dài, nhiều mốc thời gian hoặc nhiều lần lấy đi, mỗi lần lấy một phân số. Từ khoá quyết định: "số còn lại".',
+    method: [
+      'Chia bài thành từng bước theo đúng trình tự thời gian của đề.',
+      'Ở mỗi bước, xác định phân số đó là phân số CỦA SỐ NÀO.',
+      'Tính lần lượt, ghi kết quả trung gian của từng bước ra nháp.',
+      'Đọc lại câu hỏi cuối cùng rồi mới ghi đáp số.',
+    ],
+    traps: [
+      'Lấy phân số của số ban đầu trong khi đề nói "của số còn lại".',
+      'Cộng thẳng hai phân số rồi trừ một lần — sai vì hai phân số tính trên hai số khác nhau.',
+      'Dừng lại ở kết quả trung gian, trả lời số còn lại sau ngày đầu.',
+      'Quên đơn vị hoặc trả lời sai đại lượng.',
+    ],
+    transfer:
+      'Câu có lời văn nhiều bước là dạng chiếm nhiều điểm nhất của đề vào 6, và cũng là dạng mất điểm oan nhiều nhất.',
+    mastery: 'Tự đặt được câu hỏi "của số nào" ở mỗi bước, và luôn đọc lại câu hỏi trước khi ghi đáp số.',
+  },
 };
 
 export const analysisFor = (generatorId: string): DrillAnalysis | undefined =>

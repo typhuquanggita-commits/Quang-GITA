@@ -214,6 +214,84 @@ export const GROUPS: Group[] = [
     ],
     color: '#be123c',
   },
+  {
+    id: 'l6-lam-quen',
+    name: 'Nhóm 9 · Làm quen đề vào 6',
+    track: 'lop6',
+    band: 'Học sinh lớp 4 – đầu lớp 5, mới bắt đầu ôn',
+    portrait:
+      'Học tốt trên lớp nhưng gặp đề đánh giá năng lực thì bỡ ngỡ: câu hỏi xoay, dữ kiện gài trong lời văn, thời gian chặt.',
+    diagnosis: [
+      'Tính toán đúng nhưng đọc đề chậm và hay bỏ sót dữ kiện.',
+      'Chưa quen dạng toán tính ngược và toán chuyển động.',
+      'Gặp câu suy luận logic là bỏ trống vì không biết bắt đầu từ đâu.',
+    ],
+    target: 'Làm đúng trọn phần câu hỏi cơ bản của đề và không còn sợ dạng có lời văn dài.',
+    weeklyHours: '3 – 4 giờ/tuần',
+    priorities: [
+      'Bốn phép tính với phân số và số thập phân — đến mức không cần nháp cho phép tính đơn giản.',
+      'Đọc đề bằng bút chì: gạch chân dữ kiện, khoanh tròn câu hỏi.',
+      'Toán tính ngược và sơ đồ đoạn thẳng, hai công cụ giải được rất nhiều dạng.',
+      'Mỗi tuần một đề ngắn 20 phút để làm quen áp lực thời gian.',
+    ],
+    redFlags: [
+      'Học trước chương trình lớp 6 – 7 thay vì làm chắc lớp 4 – 5. Đề vào 6 không hỏi kiến thức cấp hai.',
+      'Ép luyện đề quá sớm khiến trẻ sợ môn Toán — ở tuổi này mất hứng thú là mất tất cả.',
+    ],
+    color: '#0d9488',
+  },
+  {
+    id: 'l6-vung-chac',
+    name: 'Nhóm 10 · Vững chắc vào 6',
+    track: 'lop6',
+    band: 'Học sinh lớp 5, đã ôn được một thời gian',
+    portrait:
+      'Làm được phần lớn câu cơ bản, mất điểm ở câu suy luận và ở những câu dễ nhưng đọc vội.',
+    diagnosis: [
+      'Sai ở câu dễ nhiều hơn sai ở câu khó — dấu hiệu của đọc đề vội.',
+      'Toán chuyển động ngược chiều, cùng chiều còn lẫn công thức.',
+      'Chưa biết cách bỏ qua câu khó để quay lại sau.',
+    ],
+    target: 'Làm đúng đều toàn đề, chỉ còn cân nhắc ở một đến hai câu khó nhất.',
+    weeklyHours: '4 – 6 giờ/tuần',
+    priorities: [
+      'Sổ tay lỗi: mỗi câu sai phải ghi lại nguyên nhân bằng chính lời của con.',
+      'Ba dạng chuyển động chuẩn (gặp nhau, đuổi kịp, dòng nước) đến mức tự vẽ được sơ đồ.',
+      'Tỉ số phần trăm trong ngữ cảnh mua bán, tăng giảm giá.',
+      'Luyện đề tính giờ 45 phút, mỗi tuần một lần.',
+    ],
+    redFlags: [
+      'Chạy theo số lượng đề mà không chữa kỹ — chữa một đề tốt hơn làm ba đề qua loa.',
+      'Bỏ qua câu hình học vì nghĩ “ít điểm”, trong khi đây là phần dễ lấy điểm nhất.',
+    ],
+    color: '#0284c7',
+  },
+  {
+    id: 'l6-but-pha',
+    name: 'Nhóm 11 · Bứt phá vào 6',
+    track: 'lop6',
+    band: 'Học sinh lớp 5 nhắm trường có tỉ lệ chọi cao',
+    portrait:
+      'Nền tảng đã chắc. Khoảng cách còn lại nằm ở nhóm câu suy luận, dãy số quy luật và tốc độ xử lý.',
+    diagnosis: [
+      'Câu khó làm được nhưng tốn quá nhiều thời gian, ảnh hưởng phần còn lại.',
+      'Chưa có bộ mô hình sẵn cho dạng suy luận bảng đúng/sai.',
+      'Đôi khi tính đúng nhưng trả lời sai thứ đề hỏi.',
+    ],
+    target: 'Làm gần trọn đề trong thời gian quy định và giữ được sự bình tĩnh ở phòng thi.',
+    weeklyHours: '6 – 8 giờ/tuần',
+    priorities: [
+      'Kho dạng suy luận: bảng đúng/sai, cân đĩa, chia nhóm, dãy số quy luật.',
+      'Kỹ thuật ước lượng để loại nhanh phương án ở phần trắc nghiệm.',
+      'Quy trình soát bài 5 phút cuối: đọc lại câu hỏi, không đọc lại bài giải.',
+      'Đề tính giờ hai lần mỗi tuần, luân phiên hai định dạng trường khác nhau.',
+    ],
+    redFlags: [
+      'Học kiến thức cấp hai để “đi tắt” — đề vào 6 không cho điểm cách giải ngoài chương trình, và dễ sai.',
+      'Đặt kỳ vọng đỗ như một điều chắc chắn: tỉ lệ chọi ở nhóm trường này rất cao, cần chuẩn bị cả phương án dự phòng.',
+    ],
+    color: '#7c3aed',
+  },
 ];
 
 export const groupById = (id: string) => GROUPS.find((g) => g.id === id)!;

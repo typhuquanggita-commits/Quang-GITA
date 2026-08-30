@@ -200,6 +200,54 @@ export const STAGES: Stage[] = [
     description:
       'Đề tổng hợp mô phỏng định dạng thi tốt nghiệp, luyện chiến thuật Phần II (đúng/sai) và Phần III (trả lời ngắn), kiểm soát rủi ro tính toán.',
   },
+  {
+    id: 'L1',
+    track: 'lop6',
+    order: 1,
+    name: 'GĐ 1 · Chắc bốn phép tính',
+    goal: 'Không còn sai phép tính với phân số, số thập phân và tỉ số phần trăm.',
+    levels: [1, 1, 2],
+    kpi: 90,
+    duration: '4 – 6 tuần',
+    description:
+      'Phân số, số thập phân, tỉ số và tỉ số phần trăm, cùng thói quen đọc đề bằng bút chì. Mục tiêu là đúng, chưa cần nhanh.',
+  },
+  {
+    id: 'L2',
+    track: 'lop6',
+    order: 2,
+    name: 'GĐ 2 · Thành thạo dạng có lời văn',
+    goal: 'Giải được các dạng toán có lời văn chuẩn của đề vào 6 mà không cần gợi ý.',
+    levels: [2, 2, 3],
+    kpi: 90,
+    duration: '5 – 7 tuần',
+    description:
+      'Toán chuyển động, toán tính ngược, toán tỉ lệ và hình học tiểu học. Bắt đầu vẽ sơ đồ đoạn thẳng như một phản xạ.',
+  },
+  {
+    id: 'L3',
+    track: 'lop6',
+    order: 3,
+    name: 'GĐ 3 · Suy luận và quy luật',
+    goal: 'Không bỏ trống câu suy luận và câu dãy số quy luật.',
+    levels: [3, 3, 4],
+    kpi: 85,
+    duration: '5 – 6 tuần',
+    description:
+      'Suy luận logic dạng bảng đúng/sai, đếm hình, dãy số quy luật, bài toán cân đĩa và chia nhóm. Đây là phần phân hoá thật của đề đánh giá năng lực.',
+  },
+  {
+    id: 'L4',
+    track: 'lop6',
+    order: 4,
+    name: 'GĐ 4 · Luyện đề và tâm lý phòng thi',
+    goal: 'Làm trọn đề trong 45 phút và giữ được sự bình tĩnh.',
+    levels: [3, 4, 4],
+    kpi: 85,
+    duration: '4 – 6 tuần',
+    description:
+      'Đề tính giờ theo đúng định dạng trường mục tiêu, quy trình phân bổ thời gian, kỹ thuật bỏ qua và quay lại, quy trình soát bài 5 phút cuối.',
+  },
 ];
 
 export const stagesByTrack = (track: TrackId) => STAGES.filter((s) => s.track === track);

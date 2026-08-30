@@ -18,7 +18,7 @@ export type { Stage };
 
 
 /* ============================================================
-   BỘ PHIẾU THEO CHUYÊN ĐỀ — 2000 phiếu luyện
+   BỘ PHIẾU THEO CHUYÊN ĐỀ — 2400 phiếu luyện
    ============================================================ */
 
 export interface WorksheetMeta {
@@ -57,11 +57,12 @@ export interface Worksheet extends WorksheetMeta {
   reading?: ReadingBlock[];
 }
 
-/** Phân bổ 2000 phiếu cho ba luồng. */
+/** Phân bổ 2400 phiếu cho bốn luồng. */
 const TRACK_QUOTA: Record<TrackId, number> = {
   thpt: 600,
   chuyen: 600,
   'thpt-qg': 800,
+  lop6: 400,
 };
 export const TOTAL_WORKSHEETS = Object.values(TRACK_QUOTA).reduce((a, b) => a + b, 0);
 
@@ -109,7 +110,7 @@ function buildCatalog(): WorksheetMeta[] {
   const out: WorksheetMeta[] = [];
   let counter = 0;
 
-  for (const track of ['thpt', 'chuyen', 'thpt-qg'] as TrackId[]) {
+  for (const track of ['thpt', 'chuyen', 'thpt-qg', 'lop6'] as TrackId[]) {
     const quota = TRACK_QUOTA[track];
     const topics = packedTopics(track);
     let made = 0;
@@ -404,7 +405,10 @@ export function catalogStats() {
     missions: MISSIONS.filter((m) => m.stageId === s.id).length,
   }));
   const packedTopicCount =
-    packedTopics('thpt').length + packedTopics('chuyen').length + packedTopics('thpt-qg').length;
+    packedTopics('thpt').length +
+    packedTopics('chuyen').length +
+    packedTopics('thpt-qg').length +
+    packedTopics('lop6').length;
   return {
     worksheets: WORKSHEETS.length,
     missions: MISSIONS.length,
@@ -412,6 +416,7 @@ export function catalogStats() {
     thpt: byTrack('thpt'),
     chuyen: byTrack('chuyen'),
     quocGia: byTrack('thpt-qg'),
+    lop6: byTrack('lop6'),
     generators: GENERATORS.length,
     sheetTypes: SHEET_TYPES.length,
     packedTopics: packedTopicCount,

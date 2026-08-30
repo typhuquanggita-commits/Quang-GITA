@@ -2,6 +2,8 @@ import type { StrandId, TrackId } from '@/types';
 import { Rng, coefTerm, divisorCount, frac, gcd, lcm, modPow, neg, term } from '@/lib/rng';
 import { GENERATORS_QG } from './generators-qg';
 import { GENERATORS_EXTRA } from './generators-extra';
+import { GENERATORS_GAP } from './generators-gap';
+import { GENERATORS_L6 } from './generators-l6';
 
 export interface RawItem {
   prompt: string;
@@ -1207,7 +1209,7 @@ const GENERATORS_10: ItemGenerator[] = [
   },
 ];
 
-export const GENERATORS: ItemGenerator[] = [...GENERATORS_10, ...GENERATORS_QG, ...GENERATORS_EXTRA];
+export const GENERATORS: ItemGenerator[] = [...GENERATORS_10, ...GENERATORS_QG, ...GENERATORS_EXTRA, ...GENERATORS_GAP, ...GENERATORS_L6];
 
 export const generatorById = (id: string) => GENERATORS.find((g) => g.id === id);
 

@@ -1,5 +1,6 @@
 import type { Topic } from '@/types';
 import { TOPICS_QG } from './topics-qg';
+import { TOPICS_L6 } from './topics-l6';
 
 /**
  * Cây chuyên đề cho hai luồng.
@@ -156,6 +157,108 @@ const TOPICS_10: Topic[] = [
       'Cầu: S = 4πR²; V = (4/3)πR³',
     ],
     questionIds: ['q-tt-02'],
+  },
+  {
+    id: 'hh-he-thuc-luong',
+    name: 'Hệ thức lượng trong tam giác vuông & tỉ số lượng giác',
+    strand: 'hinh-hoc',
+    tracks: ['thpt', 'chuyen'],
+    level: 1,
+    frequency: 85,
+    hours: 8,
+    summary:
+      'Chuyên đề nền của mọi bài hình và là gốc của các bài toán thực tế đo đạc: tính chiều cao cột đèn, độ dài bóng, khoảng cách qua sông. Chỉ có bốn hệ thức, nhưng chọn sai hệ thức là sai cả bài.',
+    outcomes: [
+      'Nhận ra ngay cạnh nào là hình chiếu của cạnh nào trên cạnh huyền.',
+      'Chọn đúng một trong bốn hệ thức theo dữ kiện đề cho, không thử lần lượt.',
+      'Dựng được mô hình tam giác vuông từ một tình huống thực tế mô tả bằng lời.',
+      'Dùng tỉ số lượng giác để tính cạnh và góc, làm tròn đúng yêu cầu đề.',
+    ],
+    techniques: [
+      'Bốn hệ thức: b² = ab′, c² = ac′, h² = b′c′, ah = bc. Viết cả bốn ra nháp ngay khi phát đề.',
+      'Vẽ riêng tam giác vuông ra bên cạnh và ghi tên ba đoạn trên cạnh huyền — cách chống nhầm hình chiếu hiệu quả nhất.',
+      'Bài thực tế: dịch “góc nâng”, “góc hạ” thành góc trong tam giác vuông có cạnh đứng là chiều cao, cạnh ngang là khoảng cách.',
+      'Khi biết hai cạnh góc vuông, tính đường cao bằng ah = bc nhanh hơn tính diện tích hai lần.',
+      'sin²α + cos²α = 1 và tan α = sin α / cos α để suy ra giá trị lượng giác còn lại.',
+    ],
+    pitfalls: [
+      'Nhầm hình chiếu: viết b² = ac′ thay vì b² = ab′.',
+      'Bài thực tế quên cộng chiều cao người quan sát vào kết quả.',
+      'Làm tròn sai yêu cầu, hoặc làm tròn quá sớm khiến sai số dồn lại.',
+      'Dùng hệ thức lượng cho tam giác không vuông mà chưa kiểm tra giả thiết.',
+      'Quên đơn vị hoặc trộn lẫn mét với centimét trong cùng một bài.',
+    ],
+    prerequisites: ['ds-can-thuc'],
+    keyFormulas: ['b² = ab′ và c² = ac′', 'h² = b′c′', 'a·h = b·c', 'sin²α + cos²α = 1'],
+    questionIds: [],
+  },
+  {
+    id: 'ds-viete-khong-doi-xung',
+    name: 'Viète với biểu thức không đối xứng',
+    strand: 'dai-so',
+    tracks: ['thpt', 'chuyen'],
+    level: 3,
+    frequency: 55,
+    hours: 8,
+    summary:
+      'Chỗ phân hoá thật của Bài III đề vào 10. Hệ thức đối xứng xử lý được bằng tổng và tích; hệ thức không đối xứng cần kỹ thuật khác hẳn.',
+    outcomes: [
+      'Phân biệt được hệ thức đối xứng với hệ thức không đối xứng chỉ bằng một phép thử đổi chỗ hai nghiệm.',
+      'Dùng chính phương trình để hạ bậc nghiệm, đưa biểu thức bậc cao về bậc nhất theo nghiệm.',
+      'Kết hợp hệ thức đề cho với hệ thức Viète thành một hệ để giải ra từng nghiệm khi cần.',
+      'Luôn đối chiếu kết quả với điều kiện Δ > 0 trước khi kết luận.',
+    ],
+    techniques: [
+      'Phép thử nhận dạng: đổi chỗ x₁ và x₂; hệ thức giữ nguyên là đối xứng, đổi khác là không đối xứng.',
+      'Hạ bậc bằng chính phương trình: vì x₁ là nghiệm nên ax₁² = −bx₁ − c, thay vào để giảm bậc.',
+      'Lập hệ ba phương trình: hệ thức đề cho, S = x₁ + x₂ và P = x₁x₂; giải ra x₁, x₂ rồi thay vào P.',
+      'Với hệ thức dạng x₁ = k·x₂, thế thẳng vào S và P là nhanh nhất.',
+      'Với hệ thức dạng ax₁ + bx₂ = c, kết hợp với S để giải hệ bậc nhất theo x₁, x₂.',
+    ],
+    pitfalls: [
+      'Cố dùng S và P cho hệ thức không đối xứng rồi tắc ở dòng thứ hai.',
+      'Hạ bậc nhầm: thay a·x₁² bằng bx₁ + c thay vì −bx₁ − c.',
+      'Giải ra x₁, x₂ rồi quên thay ngược vào P để tìm tham số.',
+      'Quên đối chiếu Δ > 0 — bước bị bỏ sót nhiều nhất của cả chuyên đề.',
+      'Nhận cả hai giá trị tham số mà không kiểm tra từng giá trị.',
+    ],
+    prerequisites: ['ds-viete'],
+    keyFormulas: ['ax₁² + bx₁ + c = 0 nên ax₁² = −bx₁ − c', 'S = −b/a và P = c/a'],
+    questionIds: [],
+  },
+  {
+    id: 'tt-cuc-tri-thuc-te',
+    name: 'Bài toán thực tế liên quan cực trị',
+    strand: 'thuc-te',
+    tracks: ['thpt', 'chuyen'],
+    level: 3,
+    frequency: 45,
+    hours: 7,
+    summary:
+      'Dạng đang tăng nhanh theo Chương trình giáo dục phổ thông 2018: cho một tình huống thực, hỏi kích thước hoặc phương án nào cho kết quả tốt nhất.',
+    outcomes: [
+      'Mô hình hoá tình huống thành một hàm số hoặc một biểu thức một biến.',
+      'Viết đúng ràng buộc và điều kiện của biến trước khi tối ưu.',
+      'Chọn đúng công cụ: bất đẳng thức AM–GM khi có tích không đổi, đỉnh parabol khi biểu thức bậc hai.',
+      'Trả lời đúng thứ đề hỏi — kích thước, chi phí hay giá trị lớn nhất — chứ không dừng ở giá trị trung gian.',
+    ],
+    techniques: [
+      'Quy trình bốn bước: đặt ẩn kèm điều kiện, viết ràng buộc, rút về một biến, tối ưu.',
+      'Tổng không đổi thì tích lớn nhất khi hai số bằng nhau; tích không đổi thì tổng nhỏ nhất khi hai số bằng nhau.',
+      'Biểu thức bậc hai: giá trị lớn nhất hoặc nhỏ nhất tại đỉnh x = −b/(2a).',
+      'Biểu thức dạng x + k/x với x > 0: nhỏ nhất bằng 2√k khi x = √k.',
+      'Luôn vẽ hình phác và tô đậm phần thực sự phải tính — đây là nơi sai nhiều nhất.',
+    ],
+    pitfalls: [
+      'Đọc sót chi tiết làm đổi hẳn mô hình, ví dụ một cạnh dựa vào tường nên không phải rào.',
+      'Quên điều kiện của biến nên nhận nghiệm âm hoặc nghiệm ngoài miền thực tế.',
+      'Dùng AM–GM mà không kiểm tra điều kiện dấu bằng có xảy ra trong miền hợp lệ không.',
+      'Trả lời kích thước trong khi đề hỏi chi phí, hoặc ngược lại.',
+      'Quên đơn vị hoặc quên làm tròn theo yêu cầu.',
+    ],
+    prerequisites: ['ds-toan-loi-van', 'bdt-co-ban'],
+    keyFormulas: ['x + y ≥ 2√(xy), dấu bằng khi x = y', 'xy ≤ (x + y)²/4', 'Đỉnh parabol: x = −b/(2a)'],
+    questionIds: [],
   },
   {
     id: 'hh-duong-tron-co-ban',
@@ -698,7 +801,7 @@ const TOPICS_10: Topic[] = [
   },
 ];
 
-export const TOPICS: Topic[] = [...TOPICS_10, ...TOPICS_QG];
+export const TOPICS: Topic[] = [...TOPICS_10, ...TOPICS_QG, ...TOPICS_L6];
 
 export const topicById = (id: string) => TOPICS.find((t) => t.id === id);
 export const topicsByTrack = (track: string) => TOPICS.filter((t) => t.tracks.includes(track as never));

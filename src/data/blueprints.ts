@@ -618,6 +618,82 @@ export const BLUEPRINTS: Blueprint[] = [
       { group: 'Mục tiêu 9,5–10', target: 'Trọn Phần I và Phần III, ≥ 3,5/4 Phần II', giveUp: 'Không' },
     ],
   },
+  {
+    id: 'bp-lop6-clc',
+    schoolId: 'lop6-cau-giay',
+    title: 'Toán – bài đánh giá năng lực vào lớp 6 trường THCS chất lượng cao',
+    minutes: 45,
+    totalPoints: 10,
+    format: 'Phần trắc nghiệm + phần trả lời ngắn + phần tự luận – thang điểm 10',
+    updatedNote:
+      'Ma trận dựng theo mặt bằng chung của các bài đánh giá năng lực vào lớp 6 ở Hà Nội, KHÔNG phải cấu trúc chính thức của riêng trường nào. Mỗi trường công bố phương án tuyển sinh lại theo từng năm — bắt buộc đối chiếu thông báo chính thức của năm dự thi trước khi dùng ma trận này để lên kế hoạch.',
+    parts: [
+      {
+        label: 'Phần I · Trắc nghiệm',
+        points: 4,
+        minutes: 15,
+        strand: 'so-hoc',
+        content: 'Số học, tỉ số phần trăm, hình học tiểu học – 8 câu, mỗi câu 0,5 điểm',
+        gate: 'bat-buoc',
+        requirements: [
+          'Bốn phép tính với phân số và số thập phân.',
+          'Tỉ số và tỉ số phần trăm trong ngữ cảnh mua bán.',
+          'Chu vi, diện tích, thể tích các hình cơ bản.',
+          'Đọc số liệu từ bảng hoặc biểu đồ.',
+        ],
+        tips: [
+          'Trung bình dưới 2 phút một câu — câu nào quá 2 phút thì đánh dấu và bỏ qua.',
+          'Ước lượng để loại nhanh phương án phi lý trước khi tính chính xác.',
+        ],
+      },
+      {
+        label: 'Phần II · Trả lời ngắn',
+        points: 3,
+        minutes: 12,
+        strand: 'thuc-te',
+        content: 'Toán chuyển động, toán tính ngược, toán nhiều bước – 4 câu, mỗi câu 0,75 điểm',
+        gate: 'phan-hoa',
+        requirements: [
+          'Ba mô hình chuyển động chuẩn: gặp nhau, đuổi kịp, dòng nước.',
+          'Bài toán tính ngược và bài toán tổng – tỉ, hiệu – tỉ.',
+          'Bài có lời văn hai đến ba bước.',
+        ],
+        tips: [
+          'Không có phương án để loại trừ, nên bắt buộc phải thử lại kết quả.',
+          'Ghi đúng đơn vị — trả lời thiếu đơn vị thường bị tính sai.',
+        ],
+      },
+      {
+        label: 'Phần III · Tự luận',
+        points: 3,
+        minutes: 18,
+        strand: 'to-hop',
+        content: 'Suy luận logic, dãy số quy luật, hình học có lời giải – 3 câu',
+        gate: 'lay-diem-toi-da',
+        requirements: [
+          'Trình bày lời giải có câu trả lời đầy đủ theo chuẩn tiểu học.',
+          'Suy luận logic dạng bảng đúng/sai hoặc bài toán cân đĩa.',
+          'Dãy số theo quy luật hoặc đếm hình.',
+        ],
+        tips: [
+          'Viết lời giải bằng câu hoàn chỉnh, không chỉ ghi dãy phép tính.',
+          'Nếu bí câu cuối, vẫn viết ra được bước nào thì viết bước đó — barem chấm theo từng bước.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Đọc lướt toàn đề', minutes: '0–2', action: 'Xem có bao nhiêu câu, câu nào dài nhất.' },
+      { phase: 'Phần I', minutes: '2–17', action: 'Làm nhanh, câu khó thì khoanh lại quay lại sau.' },
+      { phase: 'Phần II', minutes: '17–29', action: 'Vẽ sơ đồ cho mọi bài chuyển động.' },
+      { phase: 'Phần III', minutes: '29–40', action: 'Trình bày đủ câu lời giải.' },
+      { phase: 'Quay lại & soát', minutes: '40–45', action: 'Làm nốt câu đã khoanh, đọc lại câu hỏi của từng bài.' },
+    ],
+    scoreTargets: [
+      { group: 'Nhóm Làm quen', target: '6,0+/10', giveUp: 'Có thể bỏ câu cuối Phần III' },
+      { group: 'Nhóm Vững chắc', target: '7,5+/10', giveUp: 'Chỉ bỏ câu suy luận khó nhất' },
+      { group: 'Nhóm Bứt phá', target: '9,0+/10', giveUp: 'Không' },
+    ],
+  },
 ];
 
 export const blueprintsBySchool = (schoolId: string) =>

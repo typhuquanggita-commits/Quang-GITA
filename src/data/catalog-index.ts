@@ -20,6 +20,9 @@ export const TOPIC_INDEX: { id: string; name: string; tracks: TrackId[] }[] = [
   { id: 'ds-viete', name: "Phương trình bậc hai, định lí Viète & tương giao parabol", tracks: ["thpt","chuyen"] },
   { id: 'ds-toan-loi-van', name: "Giải bài toán bằng cách lập phương trình / hệ phương trình", tracks: ["thpt"] },
   { id: 'tt-hinh-khong-gian', name: "Hình trụ – hình nón – hình cầu (toán thực tế)", tracks: ["thpt"] },
+  { id: 'hh-he-thuc-luong', name: "Hệ thức lượng trong tam giác vuông & tỉ số lượng giác", tracks: ["thpt","chuyen"] },
+  { id: 'ds-viete-khong-doi-xung', name: "Viète với biểu thức không đối xứng", tracks: ["thpt","chuyen"] },
+  { id: 'tt-cuc-tri-thuc-te', name: "Bài toán thực tế liên quan cực trị", tracks: ["thpt","chuyen"] },
   { id: 'hh-duong-tron-co-ban', name: "Đường tròn & tứ giác nội tiếp", tracks: ["thpt","chuyen"] },
   { id: 'hh-cuc-tri-co-dinh', name: "Điểm cố định – quỹ tích – cực trị hình học", tracks: ["thpt","chuyen"] },
   { id: 'bdt-co-ban', name: "Bất đẳng thức AM–GM & Cauchy–Schwarz", tracks: ["thpt","chuyen"] },
@@ -62,6 +65,14 @@ export const TOPIC_INDEX: { id: string; name: string; tracks: TrackId[] }[] = [
   { id: 'q12-xac-suat-co-dieu-kien', name: "Xác suất có điều kiện & Công thức Bayes", tracks: ["thpt-qg"] },
   { id: 'q12-ky-nang-de-moi', name: "Kỹ năng làm định dạng đề thi mới (3 phần)", tracks: ["thpt-qg"] },
   { id: 'q-top1-tong-ket', name: "Chiến lược Top 1 tổng kết môn Toán", tracks: ["thpt-qg"] },
+  { id: 'l6-phan-so-thap-phan', name: "Phân số, số thập phân & bốn phép tính", tracks: ["lop6"] },
+  { id: 'l6-ti-so-phan-tram', name: "Tỉ số & tỉ số phần trăm", tracks: ["lop6"] },
+  { id: 'l6-toan-chuyen-dong', name: "Toán chuyển động", tracks: ["lop6"] },
+  { id: 'l6-toan-tinh-nguoc', name: "Toán tính ngược & sơ đồ đoạn thẳng", tracks: ["lop6"] },
+  { id: 'l6-hinh-hoc-tieu-hoc', name: "Hình học tiểu học & hình ghép", tracks: ["lop6"] },
+  { id: 'l6-suy-luan-logic', name: "Suy luận logic & bài toán bảng", tracks: ["lop6"] },
+  { id: 'l6-day-so-quy-luat', name: "Dãy số theo quy luật & đếm hình", tracks: ["lop6"] },
+  { id: 'l6-doc-hieu-du-lieu', name: "Đọc hiểu bảng biểu & toán có lời văn nhiều bước", tracks: ["lop6"] },
 ];
 
 export const PAPER_INDEX: { id: string; title: string }[] = [
@@ -72,6 +83,7 @@ export const PAPER_INDEX: { id: string; title: string }[] = [
   { id: 'dm-khtn-v2-01', title: "Đề mẫu 02 · Toán vòng 2 — Chuyên KHTN" },
   { id: 'dm-su-pham-01', title: "Đề mẫu 07 · Toán chuyên — Chuyên ĐH Sư phạm Hà Nội" },
   { id: 'dm-tn-thpt-01', title: "Đề mẫu 04 · Toán tốt nghiệp THPT" },
+  { id: 'dm-lop6-clc-01', title: "Đề mẫu 08 · Toán đánh giá năng lực vào lớp 6 chất lượng cao" },
 ];
 
 export interface PaperCard {
@@ -93,4 +105,5 @@ export const PAPER_CARDS: PaperCard[] = [
   { id: 'dm-khtn-v2-01', code: 'M365-CT-DM02', title: "Đề mẫu 02 · Toán vòng 2 — Chuyên KHTN", track: 'chuyen', minutes: 150, totalPoints: 10, items: 7, claims: 0 },
   { id: 'dm-su-pham-01', code: 'M365-CT-DM07', title: "Đề mẫu 07 · Toán chuyên — Chuyên ĐH Sư phạm Hà Nội", track: 'chuyen', minutes: 120, totalPoints: 10, items: 9, claims: 0 },
   { id: 'dm-tn-thpt-01', code: 'M365-QG-DM04', title: "Đề mẫu 04 · Toán tốt nghiệp THPT", track: 'thpt-qg', minutes: 90, totalPoints: 10, items: 22, claims: 16 },
+  { id: 'dm-lop6-clc-01', code: 'M365-L6-CLC-01', title: "Đề mẫu 08 · Toán đánh giá năng lực vào lớp 6 chất lượng cao", track: 'lop6', minutes: 45, totalPoints: 10, items: 15, claims: 0 },
 ];

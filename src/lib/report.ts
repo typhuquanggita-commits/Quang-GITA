@@ -107,12 +107,14 @@ const TRACK_LABEL: Record<TrackId, string> = {
   thpt: 'Toán vào lớp 10 · mục tiêu 9–10 điểm',
   chuyen: 'Toán chuyên · thi vào lớp chuyên Toán',
   'thpt-qg': 'Toán THPT lớp 10–12 · mục tiêu 9+ thi đại học',
+  lop6: 'Toán vào lớp 6 · trường THCS chất lượng cao',
 };
 
 const TRACK_GOAL: Record<TrackId, string> = {
   thpt: 'Đạt 9 đến 10 điểm môn Toán trong kỳ thi tuyển sinh lớp 10.',
   chuyen: 'Đỗ lớp chuyên Toán của trường đã đăng ký.',
   'thpt-qg': 'Trên 9 điểm Toán thi đại học và giữ vị trí đầu lớp ở môn Toán.',
+  lop6: 'Làm trọn phần Toán của bài đánh giá năng lực vào lớp 6 trong thời gian quy định.',
 };
 
 /** Ngày thứ Hai của tuần chứa ngày đã cho. */

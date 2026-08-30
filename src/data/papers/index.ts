@@ -6,6 +6,7 @@ import { PAPER_TN_THPT_01 } from './tn-thpt';
 import { PAPER_KHTN_V1_01 } from './khtn-v1';
 import { PAPER_NTT_01 } from './ntt';
 import { PAPER_SU_PHAM_01 } from './su-pham';
+import { PAPER_LOP6_CLC_01 } from './lop6-clc';
 
 /** Kho đề mẫu trọn vẹn — mỗi đề bám sát một ma trận đề trong BLUEPRINTS. */
 export const EXAM_PAPERS: ExamPaper[] = [
@@ -16,6 +17,7 @@ export const EXAM_PAPERS: ExamPaper[] = [
   PAPER_KHTN_V2_01,
   PAPER_SU_PHAM_01,
   PAPER_TN_THPT_01,
+  PAPER_LOP6_CLC_01,
 ];
 
 export const paperById = (id: string) => EXAM_PAPERS.find((p) => p.id === id);

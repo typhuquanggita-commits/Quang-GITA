@@ -9,7 +9,7 @@ import { applyRole } from '@/lib/auth';
 import { Card, SectionTitle, Badge, Progress, Donut, MathText, Callout } from '@/components/ui';
 import type { SchoolId, StrandId, TrackId } from '@/types';
 
-const TRACKS: TrackId[] = ['chuyen', 'thpt', 'thpt-qg'];
+const TRACKS: TrackId[] = ['chuyen', 'thpt', 'thpt-qg', 'lop6'];
 
 export default function Onboarding() {
   const { state, update } = useApp();

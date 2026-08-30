@@ -316,7 +316,7 @@ function SiteFooter() {
  * giai đoạn đã mang sẵn ký tự đầu cho biết thuộc luồng nào (T, C, Q), nên tính
  * được đầy đủ mà không cần tra kho.
  */
-const STAGE_PREFIX: Record<TrackId, string> = { thpt: 'T', chuyen: 'C', 'thpt-qg': 'Q' };
+const STAGE_PREFIX: Record<TrackId, string> = { thpt: 'T', chuyen: 'C', 'thpt-qg': 'Q', lop6: 'L' };
 
 function miniOverview(state: AppState, track: TrackId) {
   const prefix = STAGE_PREFIX[track];

@@ -54,8 +54,8 @@ const st = catalogStats();
 console.log('generators:', GENERATORS.length, '| có bảng phân tích:', GENERATORS.length - missingAnalysis.length);
 if (missingAnalysis.length) { console.error('THIẾU phân tích:', missingAnalysis.join(', ')); bad++; }
 console.log('loại phiếu:', SHEET_TYPES.length, '| chuyên đề có bộ phiếu:',
-  packedTopics('thpt').length + packedTopics('chuyen').length + packedTopics('thpt-qg').length);
-console.log('phiếu/luồng: thpt', st.thpt, '| chuyên', st.chuyen, '| THPT 10-12', st.quocGia);
+  packedTopics('thpt').length + packedTopics('chuyen').length + packedTopics('thpt-qg').length + packedTopics('lop6').length);
+console.log('phiếu/luồng: thpt', st.thpt, '| chuyên', st.chuyen, '| THPT 10-12', st.quocGia, '| vào 6', st.lop6);
 console.log('worksheets:', WORKSHEETS.length, '| missions:', MISSIONS.length);
 console.log('items generated:', items, '| distinct prompts:', seenPrompts.size);
 console.log('duplicate prompts inside a single sheet:', dupInSheet);
@@ -213,7 +213,7 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
       name: 'Kiểm thử', grade: '9', track: 'thpt', targetSchool: 'hanoi-chung', groupId: 'but-pha',
       examDate: dayKey(new Date(Date.now() + 40 * DAY)), hoursPerWeek: 10, createdAt: day(30),
     },
-    levelUnlocked: { thpt: 2, chuyen: 1, 'thpt-qg': 1 },
+    levelUnlocked: { thpt: 2, chuyen: 1, 'thpt-qg': 1, lop6: 1 },
     studyLog: Object.fromEntries([0, 1, 2, 5, 8].map((o) => [dk(o), 30])),
     attempts: missions.flatMap((m, i) =>
       [9, 3].slice(0, i + 1).map((o, k) => ({
@@ -258,6 +258,7 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
     chuyen: st.chuyen,
     thpt: st.thpt,
     quocGia: st.quocGia,
+    lop6: st.lop6,
     items: st.items,
     generators: st.generators,
     packedTopics: st.packedTopics,
