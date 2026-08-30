@@ -114,6 +114,7 @@
 |---|---|
 | [BAN-DO-CHUONG-TRINH-288.md](01-CHUONG-TRINH-KHUNG/BAN-DO-CHUONG-TRINH-288.md) | Ma trận tổng 288 chuyên đề, mã hoá, trục xoắn ốc |
 | **[DOI-CHIEU-KHOI-01-VOI-GIAO-AN-THAT.md](01-CHUONG-TRINH-KHUNG/DOI-CHIEU-KHOI-01-VOI-GIAO-AN-THAT.md)** | 🔴 Đối chiếu khối 1 với **giáo án thật của Học viện**: 4 điểm lệch cấu trúc *(thời lượng 35′ vs 180′ · 50 chủ đề vs 24 · 5 nhóm kỹ năng vs 8 mạch · khuôn 3 pha Khám phá–Luyện tập–Vận dụng)* · **29 chủ đề bị bỏ sót** · **3 phương án hợp nhất chờ quyết** |
+| **[PHUONG-AN-HOP-NHAT-24-CUM-180-PHUT.md](01-CHUONG-TRINH-KHUNG/PHUONG-AN-HOP-NHAT-24-CUM-180-PHUT.md)** | ⭐ **PHƯƠNG ÁN ĐÃ CHỐT** — hợp nhất về **24 cụm × 180′ × 2 buổi**. Chìa khoá: **50 ÷ 24 = 2,08** → 24 chính là **cấp CỤM** của 50 bài gốc, **không bỏ bài nào**. Kèm **bản đồ 24 cụm khối 1** đầy đủ, quy tắc gộp, sơ đồ 3 pha gốc nở thành 7 hoạt động GITA, hệ mã mới `Kxx-Nn-zz`, và cách xử lý rủi ro xếp lịch 180′ |
 | [KHOI-01.md](01-CHUONG-TRINH-KHUNG/KHOI-01.md) → [KHOI-12.md](01-CHUONG-TRINH-KHUNG/KHOI-12.md) | Đặc tả đầy đủ 24 chuyên đề/khối: mục tiêu GITA, chiến lược, hoạt động đào tạo – thực hành – trải nghiệm, sản phẩm, đánh giá |
 
 ### 📙 02 – GIÁO ÁN & KẾ HOẠCH BÀI GIẢNG
@@ -127,6 +128,7 @@
 | **[GIAO-AN-K07-M3-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K07-M3-01.md)** | ⭐ Giáo án hoàn chỉnh · K7 · *Lật niềm tin giới hạn* — **I-trội**, Vươn Cành |
 | **[GIAO-AN-K09-M6-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K09-M6-01.md)** | ⭐ Giáo án hoàn chỉnh · K9 · *Chiến lược thi chuyển cấp* — **G-trội**, Vươn Cành |
 | **[GIAO-AN-K11-M8-01.md](02-GIAO-AN-KE-HOACH/GIAO-AN-K11-M8-01.md)** | ⭐ Giáo án hoàn chỉnh · K11 · *Dự án tác động 3 tháng & đo lường* — **A-trội**, Cất Cánh |
+| **[MAU-GIAO-AN-CUM-K01-N1-01.md](02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N1-01.md)** | ⭐⭐ **MẪU CHUẨN CỦA KHUÔN HỢP NHẤT** · `K01-N1-01` *Con là ai — và con đặc biệt thế nào* — hấp thụ nguyên vẹn **2 bài gốc Học viện** (#1 Em giới thiệu bản thân · #5 Tưởng tượng và sáng tạo). Mỗi dòng ghi rõ `[GỐC #n]` hay `[GITA]`, có **ĐIỂM CẮT 90′** dự phòng |
 
 ### 📕 03 – KỊCH BẢN ĐÀO TẠO CHI TIẾT
 | Tệp | Nội dung |
