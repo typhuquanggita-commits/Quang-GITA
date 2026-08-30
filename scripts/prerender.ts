@@ -23,6 +23,7 @@ import { TOPICS, topicById } from '../src/data/topics';
 import { EXAM_PAPERS, paperById, paperItems } from '../src/data/papers';
 import { SYLLABI, syllabusById, TERM_LABEL } from '../src/data/syllabus';
 import { bankStats, BANK_GRADES, BANK_SET_LABEL, bankByGrade } from '../src/data/exam-bank';
+import { FORMAT_SAMPLES, samplesByBlueprint } from '../src/data/exam-samples';
 import { BLUEPRINTS } from '../src/data/blueprints';
 import { SCHOOLS, strandById } from '../src/data/schools';
 import { FORMULA_GROUPS } from '../src/data/formulas';
@@ -212,6 +213,17 @@ function bodyFor(pageId: PageId, params: Record<string, string>): string {
           (s) =>
             `<li>${esc(s.name)} — <a href="${s.officialUrl}" rel="nofollow noopener" target="_blank">${esc(s.officialUrl)}</a></li>`,
         ).join('')}</ul>`,
+        h2('Câu mẫu theo định dạng cho ba kỳ đánh giá năng lực'),
+        p(
+          `Ba kỳ thi HSA (ĐHQGHN), TSA (ĐHBKHN) và SAT phần Toán có ma trận trong hệ thống kèm ${FORMAT_SAMPLES.length} câu mẫu theo định dạng. Đây là câu mẫu chứ không phải đề trọn vẹn: điều quyết định kết quả ở ba kỳ này là định dạng và tốc độ, không phải kiến thức mới, nên mỗi câu đi kèm dấu hiệu đọc vị, bẫy đặc trưng và mẹo tốc độ với thời gian mục tiêu tính bằng giây.`,
+        ),
+        `<ul>${['bp-hsa', 'bp-tsa', 'bp-sat']
+          .map((id) => {
+            const b = BLUEPRINTS.find((x) => x.id === id);
+            const n = samplesByBlueprint(id).length;
+            return b ? `<li>${esc(b.title)} — ${n} câu mẫu có lời giải, đọc vị và mẹo tốc độ.</li>` : '';
+          })
+          .join('')}</ul>`,
         faqBlock('cau-truc-de-thi'),
         relatedBlock([{ to: href('de-thi'), label: 'Làm thử đề chuẩn cấu trúc' }]),
       ].join('');

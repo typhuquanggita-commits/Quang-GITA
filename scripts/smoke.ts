@@ -5,6 +5,7 @@ import { SHEET_TYPES } from '../src/data/sheets';
 import { DRILL_ANALYSIS } from '../src/data/analysis';
 import { EXAM_PAPERS, paperItems, paperStats } from '../src/data/papers';
 import { BLUEPRINTS } from '../src/data/blueprints';
+import { FORMAT_SAMPLES, samplesByBlueprint, sampleStats } from '../src/data/exam-samples';
 import { TOPICS } from '../src/data/topics';
 import { FORMULA_GROUPS, ALL_FORMULAS, searchFormulas, formulaStats } from '../src/data/formulas';
 import { LESSON_PLANS, TEACHING_MOVES, FEEDBACK_SCRIPTS, CLASS_RITUALS, OBSERVATION_RUBRIC } from '../src/data/academy';
@@ -258,6 +259,40 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
   }
   bad += qBad + pBad;
   console.log('test xếp lộ trình:', PLACEMENT.length, 'câu |', combos.length, 'tổ hợp luồng-khối | lỗi:', qBad + pBad);
+}
+
+/* ---------- Câu mẫu theo định dạng HSA – TSA – SAT ---------- */
+{
+  let fsBad = 0;
+  const bpIds = new Set(BLUEPRINTS.map((b) => b.id));
+  const seen = new Set<string>();
+  for (const q of FORMAT_SAMPLES) {
+    if (seen.has(q.id)) { console.error('CÂU MẪU trùng mã', q.id); fsBad++; }
+    seen.add(q.id);
+    if (!bpIds.has(q.blueprintId)) { console.error('CÂU MẪU trỏ tới ma trận không tồn tại', q.id, q.blueprintId); fsBad++; }
+    if (q.choices.length !== 4 || new Set(q.choices).size !== 4) { console.error('CÂU MẪU không đủ 4 phương án khác nhau', q.id); fsBad++; }
+    if (q.correctIndex < 0 || q.correctIndex > 3) { console.error('CÂU MẪU sai chỉ số đáp án', q.id); fsBad++; }
+    if (!q.statement.trim() || !q.solution.length || !q.docVi.length || !q.trap.trim() || !q.speedTip.trim()) {
+      console.error('CÂU MẪU thiếu mục', q.id); fsBad++;
+    }
+    if (q.seconds <= 0) { console.error('CÂU MẪU thiếu thời gian mục tiêu', q.id); fsBad++; }
+    /* Nhóm câu phải trùng với một phần thật của ma trận tương ứng. */
+    const bpx = BLUEPRINTS.find((b) => b.id === q.blueprintId);
+    if (bpx && !bpx.parts.some((pt) => pt.label === q.part)) {
+      console.error('CÂU MẪU thuộc nhóm không có trong ma trận', q.id, q.part); fsBad++;
+    }
+  }
+  /* Mọi ma trận chưa có đề mẫu trọn vẹn thì bắt buộc phải có câu mẫu theo định dạng,
+     để không có kỳ thi nào chỉ có ma trận suông. */
+  const paperBp = new Set(EXAM_PAPERS.map((p4) => p4.blueprintId));
+  for (const b of BLUEPRINTS) {
+    if (!paperBp.has(b.id) && samplesByBlueprint(b.id).length === 0) {
+      console.error('MA TRẬN không có cả đề mẫu lẫn câu mẫu:', b.id); fsBad++;
+    }
+  }
+  bad += fsBad;
+  const fss = sampleStats();
+  console.log('câu mẫu theo định dạng:', fss.total, '| kỳ thi:', fss.exams, '| lỗi:', fsBad);
 }
 
 /* ---------- Sổ tay công thức ---------- */

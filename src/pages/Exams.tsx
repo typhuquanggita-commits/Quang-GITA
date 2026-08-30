@@ -6,6 +6,7 @@ import { RESOURCES, RESOURCE_TYPE_LABEL } from '@/data/resources';
 import { papersByBlueprint } from '@/data/papers';
 import { BRAND_TRACK_STYLE } from '@/data/brand';
 import { Card, SectionTitle, Badge, Progress, Callout } from '@/components/ui';
+import { samplesByBlueprint } from '@/data/exam-samples';
 import { Faq } from '@/components/Faq';
 import { Feedback } from '@/components/Feedback';
 import { faqFor } from '@/data/faq';
@@ -293,6 +294,90 @@ export default function Exams() {
                 ))}
               </div>
             </div>
+          </div>
+        </Card>
+      )}
+
+      {bp && samplesByBlueprint(bp.id).length > 0 && (
+        <Card className="p-6">
+          <div className="text-[16px] font-extrabold text-slate-900">
+            Câu mẫu theo định dạng — {samplesByBlueprint(bp.id).length} câu có lời giải
+          </div>
+          <div className="mt-1 text-[12.5px] leading-relaxed text-slate-600">
+            Đây là <b>câu mẫu</b>, không phải một đề trọn vẹn. Kỳ thi này có khoảng{' '}
+            {bp.id === 'bp-hsa' ? '50' : bp.id === 'bp-tsa' ? '40' : '44'} câu, và điều quyết định
+            kết quả không phải kiến thức mới — toàn bộ nội dung đều nằm trong chương trình phổ thông —
+            mà là định dạng và tốc độ. Vì vậy mỗi câu dưới đây kèm ba thứ mà đề luyện thông thường
+            không có: dấu hiệu đọc vị, bẫy đặc trưng của chính kỳ thi này, và mẹo tốc độ với thời gian
+            mục tiêu tính bằng giây. Đề thi thật thuộc bản quyền đơn vị tổ chức; các câu này do
+            MATH365 tự biên soạn theo mô tả định dạng đã công bố.
+          </div>
+          <div className="mt-4 space-y-3">
+            {samplesByBlueprint(bp.id).map((q) => (
+              <div key={q.id} className="rounded-xl border border-slate-200 p-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <Badge tone="brand">{q.label}</Badge>
+                  <Badge tone="slate">{q.part}</Badge>
+                  <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-bold text-amber-900">
+                    Mục tiêu {q.seconds} giây
+                  </span>
+                </div>
+                {q.statementEn && (
+                  <div className="mt-2 rounded-lg bg-slate-50 px-3 py-2 text-[12.5px] italic leading-relaxed text-slate-700">
+                    {q.statementEn}
+                  </div>
+                )}
+                <div className="mt-2 text-[13.5px] leading-relaxed text-slate-800">{q.statement}</div>
+                <div className="mt-2 grid gap-1 sm:grid-cols-2">
+                  {q.choices.map((c, i) => (
+                    <div
+                      key={c}
+                      className={`rounded-lg border px-3 py-1.5 text-[12.5px] ${
+                        i === q.correctIndex
+                          ? 'border-emerald-400 bg-emerald-50 font-semibold text-emerald-900'
+                          : 'border-slate-200 text-slate-600'
+                      }`}
+                    >
+                      {String.fromCharCode(65 + i)}. {c}
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-3 grid gap-3 md:grid-cols-2">
+                  <div>
+                    <div className="text-[11.5px] font-bold uppercase tracking-wide text-slate-500">
+                      Đọc vị đề
+                    </div>
+                    <ul className="mt-1 space-y-0.5">
+                      {q.docVi.map((x) => (
+                        <li key={x} className="text-[12.5px] leading-relaxed text-slate-700">
+                          · {x}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <div className="text-[11.5px] font-bold uppercase tracking-wide text-slate-500">
+                      Lời giải
+                    </div>
+                    <ol className="mt-1 space-y-0.5">
+                      {q.solution.map((x, i) => (
+                        <li key={x} className="text-[12.5px] leading-relaxed text-slate-700">
+                          {i + 1}. {x}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+                <div className="mt-3 rounded-lg bg-rose-50 px-3 py-2 text-[12.5px] leading-relaxed text-rose-900">
+                  <b>Bẫy của kỳ thi này: </b>
+                  {q.trap}
+                </div>
+                <div className="mt-1.5 rounded-lg bg-sky-50 px-3 py-2 text-[12.5px] leading-relaxed text-sky-900">
+                  <b>Mẹo tốc độ: </b>
+                  {q.speedTip}
+                </div>
+              </div>
+            ))}
           </div>
         </Card>
       )}

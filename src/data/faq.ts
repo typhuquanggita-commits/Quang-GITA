@@ -236,6 +236,11 @@ export const FAQS: FaqItem[] = [
     q: 'Học sinh ngoài và học sinh đóng phí tại GITA khác nhau những gì?',
     a: 'Hệ thống thiết kế ba gói. Gói Học sinh ngoài mở toàn bộ trang nội dung công khai (chuyên đề, công thức, đề cương, cấu trúc đề thi), phiếu luyện Level 1–2, 20 đề đầu mỗi khối và lời giải rút gọn. Gói Học viên đóng phí mở toàn bộ phiếu mọi Level, trọn 700 đề luyện, lời giải chi tiết từng bước, lộ trình cá nhân hoá, báo cáo tuần và nhận bài giao từ giáo viên. Gói Chuyên sâu bổ sung kho chuyên, đội tuyển và các module nâng cao. Lưu ý quan trọng: ranh giới này hiện mới ở mức thiết kế — nó chỉ có hiệu lực khi nội dung trả phí được đặt sau máy chủ.',
   },
+  {
+    page: 'cau-truc-de-thi',
+    q: 'MATH365 có tài liệu cho HSA, TSA và SAT không?',
+    a: 'Có ma trận đề và bộ câu mẫu theo định dạng cho cả ba: đánh giá năng lực HSA của ĐHQG Hà Nội, đánh giá tư duy TSA của ĐH Bách khoa Hà Nội, và phần Toán của SAT. Mỗi kỳ có 8 câu mẫu kèm lời giải, dấu hiệu đọc vị, bẫy đặc trưng của chính kỳ thi đó và mẹo tốc độ với thời gian mục tiêu tính bằng giây. Đây là câu mẫu, KHÔNG phải đề trọn vẹn — ba kỳ thi này lần lượt có khoảng 50, 40 và 44 câu, và đề thật thuộc bản quyền đơn vị tổ chức. Điều quyết định kết quả ở ba kỳ này là định dạng và tốc độ chứ không phải kiến thức mới, vì toàn bộ nội dung đều nằm trong chương trình phổ thông — đó là lý do phần câu mẫu tập trung vào đọc vị và tốc độ thay vào việc chạy theo số lượng câu.',
+  },
 ];
 
 export const faqFor = (page: PageId) => FAQS.filter((f) => f.page === page);
