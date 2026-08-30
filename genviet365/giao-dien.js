@@ -876,6 +876,25 @@
     });
   }
 
+  /* ĐƯỜNG NGANG — màn liên quan, TÍNH chứ không xếp tay.
+     Mục lục cho đường dọc: nhóm này rồi nhóm kia. Thứ người đọc
+     thiếu ở một trăm ba mươi hai màn là đường ngang: đang đọc màn
+     này thì còn màn nào nói tiếp chuyện này, dù nằm ở nhóm khác.
+     nen/dan-xuat.js tính sẵn bằng từ hiếm dùng chung; ở đây chỉ
+     lọc lại theo quyền của vai đang xem. */
+  function lienQuan(v) {
+    var ds2 = ((G.LIEN_QUAN || {})[v] || []).filter(function (x) {
+      return G.MAN[x] && G.duocPhep(VAI, BAC, x);
+    });
+    if (!ds2.length) return '';
+    return '<nav class="lq" aria-label="Màn liên quan">' +
+      '<b>Đọc tiếp chuyện này</b><ul>' + ds(ds2, function (x) {
+        var m = G.MAN[x];
+        return '<li><a href="#' + e(x) + '"><span>' + e(m.k) + '</span>' +
+          e(m.t) + '</a></li>';
+      }) + '</ul></nav>';
+  }
+
   function dieuHuong(v) {
     var i = -1, k;
     for (k = 0; k < PHANG.length; k++) if (PHANG[k].v === v) i = k;
@@ -1046,7 +1065,8 @@
       '<header class="mao">' +
         '<div class="hieu"><span class="ten">' + e(m.ten) + '</span>' +
           '<span class="phu">' + e(m.phu) + '</span></div>' +
-        '<div class="ban">Bản ' + e(m.ban) + '</div>' +
+        '<div class="ban" title="Mã băm nội dung — đổi một chữ trong kho thì mã đổi theo">Bản ' +
+          e(m.ban) + (G.DAU ? ' · <span class="dau-ban">' + e(G.DAU.ma) + '</span>' : '') + '</div>' +
         (G.KHOA_VAI ? veVaiKhoa() : veChonVai()) +
         '<form class="tim" role="search">' +
           '<label class="an-chu" for="o-tim">Tìm trong hệ thống</label>' +
@@ -1094,7 +1114,7 @@
     /* CỔNG LỚP HAI — chạy trước mọi lần dựng, nên vào thẳng bằng
        liên kết hay bằng trạng thái đã lưu đều bị chặn như nhau. */
     var duoc = G.duocPhep(VAI, BAC, v);
-    chinh.innerHTML = (duoc ? veMan(v) : theKhoa(v)) + dieuHuong(v);
+    chinh.innerHTML = (duoc ? veMan(v) + lienQuan(v) : theKhoa(v)) + dieuHuong(v);
 
     Array.prototype.forEach.call(mucNav.querySelectorAll('a'), function (a) {
       var o = a.getAttribute('data-v') === v;

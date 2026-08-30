@@ -328,34 +328,7 @@ GV.LUU_BA_TANG = [
 ];
 
 /* ══════════ VAI TRÒ ══════════ */
-GV.VAI = [
-  { nhom: 'Giữ chuẩn', ds: [
-    { v: 'Hội đồng Chuẩn', l: 'Giữ L0 và L1 · công nhận bậc 5–6 · phê chuẩn mọi thay đổi chuẩn', moi: true },
-    { v: 'Quản lý chuyên môn', l: 'Giữ chuẩn nghề của toàn đội ngũ dẫn dắt' },
-    { v: 'Chuyên gia đánh giá', l: 'Trả lại sự thật bằng dữ liệu — độc lập với người dạy' }
-  ]},
-  { nhom: 'Dẫn dắt', ds: [
-    { v: 'Trưởng nhóm Coach', l: 'Tạo ra Coach giỏi, không chỉ làm Coach giỏi' },
-    { v: 'Senior Coach · Coach', l: 'Thắp lửa chuyển hoá cho từng gia đình' },
-    { v: 'Giáo viên', l: 'Dạy đúng thứ học viên đang cần để đi tiếp' },
-    { v: 'Mentor học viên (bậc 5)', l: 'Người của chính hệ, quay lại kèm bậc dưới — cửa tự tái tạo', moi: true },
-    { v: 'Cố vấn chuyên môn ngoài', l: 'Người trong nghề thật, dẫn dự án bậc 3–4', moi: true }
-  ]},
-  { nhom: 'Cộng đồng', ds: [
-    { v: 'Trưởng trại', l: 'Thiết kế và giữ chuẩn cho mỗi kỳ trại', moi: true },
-    { v: 'Đội trưởng CLB Gen Việt', l: 'Giữ nhịp tuần và bộ quy chuẩn của câu lạc bộ', moi: true },
-    { v: 'Đại sứ (4 cấp)', l: 'Mang câu chuyện thật tới nhà tiếp theo' }
-  ]},
-  { nhom: 'Người học và gia đình', ds: [
-    { v: 'Học viên', l: 'Chủ thể phát triển — người duy nhất không được ai làm thay' },
-    { v: 'Phụ huynh', l: 'Từ người quản con thành đối tác phát triển' }
-  ]},
-  { nhom: 'Vận hành', ds: [
-    { v: 'Giám đốc · Admin hệ thống · Super Admin', l: 'Cầm tầm nhìn, dựng chuẩn, giữ chìa khoá gốc' },
-    { v: 'Chuyên gia tư vấn', l: 'Mở cánh cửa cho gia đình đang tìm đường' },
-    { v: 'Phân tích dữ liệu', l: 'Đọc ra mô thức trước khi nó thành vấn đề' }
-  ]}
-];
+
 
 /* ══════════ TÀI CHÍNH BỀN VỮNG ══════════ */
 GV.TAI_CHINH = {
@@ -636,23 +609,3 @@ GV.TUAN = [
   { ng: 'Chủ Nhật', v: 'Sinh hoạt chi hội 90 phút · sau đó hội đồng gia đình 30 phút, cả nhà nhìn lại tuần' }
 ];
 
-GV.MUC_LUC = [
-  { id: 'mo-dau', t: 'Mở đầu', p: 'Hệ này là gì' },
-  { id: 'dinh-vi', t: 'Định vị', p: 'Khác GITA 365 ở đâu' },
-  { id: 'nguyen-ly', t: 'Bảy nguyên lý', p: 'Lớp bất biến' },
-  { id: 'kien-truc', t: 'Bảy lớp kiến trúc', p: 'Xếp theo tốc độ đổi' },
-  { id: 'bac', t: 'Sáu bậc nhân tài', p: 'Dòng chảy người' },
-  { id: 'nang-luc', t: 'Khung năng lực', p: '4 trụ × 12 trục × 5 mức' },
-  { id: 'pham-chat', t: 'Năm phẩm chất', p: 'Đức · Dũng · Trí · Chủ · Chí' },
-  { id: 'nhip', t: 'Nhịp 365', p: 'Đồng hồ của hệ' },
-  { id: 'hinh-thai', t: 'Năm hình thái', p: 'Cách huấn luyện' },
-  { id: 'clb', t: 'Chi hội Gen Việt', p: 'Vận hành kiểu BNI' },
-  { id: 'moi-truong', t: 'Bốn môi trường', p: 'Nơi năng lực bị kiểm' },
-  { id: 'do-luong', t: 'Hệ đo', p: 'Băng màu và KPI' },
-  { id: 'ma-hoa', t: 'Mã hoá & dữ liệu', p: 'Xương sống kỹ thuật' },
-  { id: 'van-hanh', t: 'Vận hành', p: 'Vai trò và tài chính' },
-  { id: 'rui-ro', t: 'Bảy rủi ro', p: 'Và phanh tương ứng' },
-  { id: 'lo-trinh', t: 'Ba mươi năm', p: 'Sáu chặng' },
-  { id: 'bat-tay', t: '90 ngày đầu', p: 'Làm ngay' },
-  { id: 'nguon', t: 'Nguồn', p: 'Tài liệu đã dùng' }
-];

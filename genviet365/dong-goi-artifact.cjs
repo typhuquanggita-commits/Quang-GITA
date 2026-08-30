@@ -32,7 +32,7 @@ var KHO = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js', 'du-lieu-trainghiem.js',
   'du-lieu-giatri.js', 'du-lieu-tincay.js', 'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
   'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-quyen.js',
-           'quyen.js', 'man-hinh.js'];
+           'quyen.js', 'man-hinh.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = ['giao-dien.js'];
 
 function doc(t) { return fs.readFileSync(path.join(goc, t), 'utf8'); }
@@ -74,6 +74,7 @@ if (!vai) {
     META: G.META, NHOM: NHOM, MAN: MAN, TU: TU,
     VAI: G.VAI, QUYEN_MAX: G.QUYEN_MAX, GHI_DE: G.GHI_DE,
     BAC_MO: G.BAC_MO, BAC_SO: G.BAC_SO, TANG_HT_UI: G.TANG_HT_UI,
+    SO: G.SO, DAU: G.DAU, LIEN_QUAN: G.LIEN_QUAN,
     /* LUAT_QUYEN và TY_LE chỉ màn Bảng phân quyền dùng — bản cắt
        không mang theo, để không gửi đi thứ vai này không mở được. */
     KHOA_VAI: vai, KHOA_BAC: bac
@@ -99,4 +100,4 @@ var trang =
   '<div id="ung-dung"></div>\n' + phan;
 
 fs.writeFileSync(ra, trang, 'utf8');
-console.log('Đã gộp → ' + ra + '  (' + Math.round(trang.length / 1024) + ' KB)');
+console.log('Đã gộp → ' + ra + '  (' + Math.round(Buffer.byteLength(trang) / 1024) + ' KB)');

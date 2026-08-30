@@ -25,7 +25,7 @@ var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
            'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
            'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-quyen.js',
-           'quyen.js', 'man-hinh.js'];
+           'quyen.js', 'man-hinh.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = [];
 
 var loi = [], canh = [];
@@ -121,9 +121,24 @@ Object.keys(G.MAN || {}).forEach(function (v) {
   });
 });
 
-/* ── 3. khoá tra mồ côi ──────────────────────────────── */
+/* ── 3. khoá tra mồ côi ────────────────────────────────
+      Từ khi nen/dan-xuat.js để mọi kho tự đăng ký, phần lớn khoá
+      tra là tự động — và nhiều khoá tự động chỉ được dùng GIÁN
+      TIẾP qua một khoá có biến đổi (TC_BAN_DO → TC_BAN_DO_L).
+      Nên phân biệt: khoá KHAI TAY mà không màn nào dùng là lỗi
+      chép thừa; khoá TỰ ĐỘNG mà không nơi nào chạm tới là NỘI
+      DUNG CHẾT — viết ra rồi không ai đọc. */
+var vanMan = ['man-hinh.js', 'nen/dan-xuat.js'].map(function (t) {
+  return fs.readFileSync(path.join(GOC, t), 'utf8');
+}).join('\n');
 Object.keys(G.TU || {}).forEach(function (k) {
-  if (!dungTu[k]) C('Khoá tra không màn nào dùng: ' + k);
+  if (dungTu[k]) return;
+  if ((G.TU_TU_DONG || {})[k]) {
+    if (vanMan.indexOf('GV.' + k) < 0 && vanMan.indexOf('G.' + k) < 0)
+      C('NỘI DUNG CHẾT: kho có ' + k + ' nhưng không màn nào dựng ra nó');
+    return;
+  }
+  C('Khoá tra khai tay mà không màn nào dùng: ' + k);
 });
 
 /* ── 4. mã màu trong kho ─────────────────────────────── */
@@ -417,6 +432,39 @@ if (G.CT_CHAM && G.CONG) {
   });
 }
 
+/* ── 6g. HỆ NÓI VỀ CHÍNH NÓ CÓ ĐÚNG KHÔNG ─────────────────
+      Tiêu đề viết "Mười hai khoảnh khắc", kho giữ mảng khoảnh khắc.
+      Hai thứ ở hai tệp, không gì buộc chúng khớp. Thêm mục thứ mười
+      ba thì tiêu đề thành nói dối — một lời nói dối rất nhỏ, rất khó
+      thấy, và chính vì thế mà nó sống lâu. nen/so-lieu.js đọc số
+      viết bằng chữ rồi đối chiếu với độ dài mảng thật. */
+if (typeof G.doiChieuSo === 'function') {
+  G.doiChieuSo().forEach(function (m4) { L('SỐ LỆCH: ' + m4); });
+}
+
+/* ── 6f. VA CHẠM TÊN GIỮA CÁC KHO ─────────────────────────
+      Mọi kho cùng ghi vào một đối tượng GV. Hai kho đặt cùng một
+      tên thì kho nạp sau ĐÈ kho trước, im lặng, không báo gì —
+      và màn dùng tên ấy dựng ra nội dung rỗng. Đã xảy ra thật một
+      lần với tên VAI, và không lớp kiểm nào trước đây thấy được,
+      vì màn vẫn dựng ra đủ thẻ, chỉ là thẻ không có chữ. */
+var datTen = {};
+/* Chỉ soi các KHO NỘI DUNG. Tầng nền cố ý gộp thêm vào GV.TU
+   (G.TU = G.TU || {}) — đó là gộp, không phải đè. */
+TEP.filter(function (t) { return /^du-lieu.*\.js$/.test(t); }).forEach(function (t) {
+  var van = fs.readFileSync(path.join(GOC, t), 'utf8');
+  var re2 = /^[ \t]*(?:G|GV)\.([A-Z][A-Z0-9_]*)[ \t]*=/gm, m3;
+  while ((m3 = re2.exec(van))) {
+    (datTen[m3[1]] = datTen[m3[1]] || []).push(t);
+  }
+});
+Object.keys(datTen).forEach(function (k) {
+  var ds3 = datTen[k].filter(function (x, i, a) { return a.indexOf(x) === i; });
+  if (ds3.length > 1)
+    L('VA CHẠM TÊN: ' + ds3.join(' và ') + ' cùng đặt GV.' + k +
+      ' — kho nạp sau đè kho trước, âm thầm');
+});
+
 /* ── 7. vỏ và bộ gộp phải nạp đủ tệp ─────────────────── */
 var html = fs.readFileSync(path.join(GOC, 'index.html'), 'utf8');
 TEP.concat(['giao-dien.js']).forEach(function (t) {
@@ -465,6 +513,18 @@ function lopChay(xong) {
             if (t.length < 400) xau.push(ds[i] + ' dựng ra chỉ ' + t.length + ' ký tự');
             if (/thiếu loại khối|undefined|\[object Object\]/.test(m.innerHTML))
               xau.push(ds[i] + ' có dấu hiệu dựng hỏng');
+            /* KHỐI RỖNG — một khối dựng ra đủ khung nhưng không có
+               chữ. Cả màn vẫn dài, nên phép đo tổng ký tự ở trên
+               không thấy. Đây chính là dấu hiệu của va chạm tên
+               giữa hai kho: dữ liệu bị đè, khung vẫn vẽ ra. */
+            var oCon = m.querySelectorAll('.the, .mt, .cd4, .goi, .bd, .pd-h, .nv, ' +
+                                          '.qs, .ht-c, .kb article, .tm article, .ga-h');
+            var rong = 0;
+            for (var q = 0; q < oCon.length; q++) {
+              if ((oCon[q].innerText || '').replace(/\s/g, '').length < 12) rong++;
+            }
+            if (rong > 0)
+              xau.push(ds[i] + ' có ' + rong + '/' + oCon.length + ' khối dựng ra RỖNG');
           }
           return xau;
         });

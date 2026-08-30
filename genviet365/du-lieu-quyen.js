@@ -20,40 +20,45 @@ var GV = window.GV || {};
 window.GV = GV;
 
 /* ══════════ VAI — lv càng nhỏ càng nhiều quyền ══════════ */
+/* NGUỒN SỰ THẬT DUY NHẤT VỀ VAI.
+   Trường `to` là nhóm tổ chức — màn "Mười bảy vai" ở nhóm 11 được
+   nen/dan-xuat.js SINH RA từ chính bảng này, nên hai cách nhìn
+   không bao giờ lệch nhau được nữa. Trước đây chúng lệch: bảng
+   theo việc có 16 vai, bảng phân quyền có 17. */
 GV.VAI = [
-  { ma: 'R01', lv: 1,  t: 'Super Admin',            cong: 'quantri', mau: '#185AB4',
+  { ma: 'R01', to: 'Vận hành', lv: 1,  t: 'Super Admin',            cong: 'quantri', mau: '#185AB4',
     ln: 'Người giữ chìa khoá gốc của hệ sinh thái.' },
-  { ma: 'R02', lv: 2,  t: 'Admin hệ thống',         cong: 'quantri', mau: '#185AB4',
+  { ma: 'R02', to: 'Vận hành', lv: 2,  t: 'Admin hệ thống',         cong: 'quantri', mau: '#185AB4',
     ln: 'Kiến trúc sư vận hành — dựng chuẩn, mở đường, giữ nhật ký.' },
-  { ma: 'R03', lv: 3,  t: 'Giám đốc điều hành',     cong: 'quantri', mau: '#BE0E16',
+  { ma: 'R03', to: 'Vận hành', lv: 3,  t: 'Giám đốc điều hành',     cong: 'quantri', mau: '#BE0E16',
     ln: 'Người cầm tầm nhìn, chịu trách nhiệm tăng trưởng và cầm tài chính.' },
-  { ma: 'R04', lv: 4,  t: 'Quản lý chuyên môn',     cong: 'nghe',    mau: '#BE0E16',
+  { ma: 'R04', to: 'Giữ chuẩn', lv: 4,  t: 'Quản lý chuyên môn',     cong: 'nghe',    mau: '#BE0E16',
     ln: 'Người giữ chuẩn nghề của toàn bộ đội ngũ dẫn dắt.' },
-  { ma: 'R05', lv: 5,  t: 'Admin sản phẩm',         cong: 'quantri', mau: '#5140B4',
+  { ma: 'R05', to: 'Vận hành', lv: 5,  t: 'Admin sản phẩm',         cong: 'quantri', mau: '#5140B4',
     ln: 'Người giữ kho nội dung và phát hành bản — không chạm hồ sơ của một nhà nào.' },
-  { ma: 'R06', lv: 6,  t: 'Trưởng nhóm Coach',      cong: 'nghe',    mau: '#5140B4',
+  { ma: 'R06', to: 'Dẫn dắt', lv: 6,  t: 'Trưởng nhóm Coach',      cong: 'nghe',    mau: '#5140B4',
     ln: 'Người tạo ra Coach giỏi, không chỉ làm Coach giỏi.' },
-  { ma: 'R07', lv: 7,  t: 'Senior Coach',           cong: 'nghe',    mau: '#5140B4',
+  { ma: 'R07', to: 'Dẫn dắt', lv: 7,  t: 'Senior Coach',           cong: 'nghe',    mau: '#5140B4',
     ln: 'Người gỡ được những nút thắt mà người khác chưa gỡ nổi.' },
-  { ma: 'R08', lv: 8,  t: 'Coach',                  cong: 'nghe',    mau: '#5140B4',
+  { ma: 'R08', to: 'Dẫn dắt', lv: 8,  t: 'Coach',                  cong: 'nghe',    mau: '#5140B4',
     ln: 'Người thắp lửa chuyển hoá cho từng gia đình.' },
-  { ma: 'R09', lv: 9,  t: 'Giáo viên',              cong: 'nghe',    mau: '#0B6675',
+  { ma: 'R09', to: 'Dẫn dắt', lv: 9,  t: 'Giáo viên',              cong: 'nghe',    mau: '#0B6675',
     ln: 'Người dạy đúng thứ học viên đang cần để đi tiếp.' },
-  { ma: 'R10', lv: 10, t: 'Mentor (bậc 5)',         cong: 'nghe',    mau: '#0B6675',
+  { ma: 'R10', to: 'Dẫn dắt', lv: 10, t: 'Mentor (bậc 5)',         cong: 'nghe',    mau: '#0B6675',
     ln: 'Người của chính hệ, quay lại kèm bậc dưới — cửa tự tái tạo.' },
-  { ma: 'R11', lv: 11, t: 'Chuyên gia đánh giá',    cong: 'nghe',    mau: '#0B6675',
+  { ma: 'R11', to: 'Giữ chuẩn', lv: 11, t: 'Chuyên gia đánh giá',    cong: 'nghe',    mau: '#0B6675',
     ln: 'Người trả lại sự thật bằng dữ liệu, độc lập với người dạy.' },
-  { ma: 'R12', lv: 12, t: 'Chuyên gia tư vấn',      cong: 'tuvan',   mau: '#BE0E16',
+  { ma: 'R12', to: 'Cộng đồng', lv: 12, t: 'Chuyên gia tư vấn',      cong: 'tuvan',   mau: '#BE0E16',
     ln: 'Người mở cánh cửa cho gia đình đang tìm đường.' },
-  { ma: 'R13', lv: 13, t: 'Phân tích dữ liệu',      cong: 'quantri', mau: '#185AB4',
+  { ma: 'R13', to: 'Vận hành', lv: 13, t: 'Phân tích dữ liệu',      cong: 'quantri', mau: '#185AB4',
     ln: 'Người đọc ra mô thức trước khi nó thành vấn đề — trên dữ liệu đã ẩn danh.' },
-  { ma: 'R14', lv: 14, t: 'Đội trưởng CLB',         cong: 'clb',     mau: '#0B7350',
+  { ma: 'R14', to: 'Cộng đồng', lv: 14, t: 'Đội trưởng CLB',         cong: 'clb',     mau: '#0B7350',
     ln: 'Người giữ nhịp tuần và bộ quy chuẩn của chi hội.' },
-  { ma: 'R15', lv: 15, t: 'Phụ huynh',              cong: 'nha',     mau: '#0B7350',
+  { ma: 'R15', to: 'Người học và gia đình', lv: 15, t: 'Phụ huynh',              cong: 'nha',     mau: '#0B7350',
     ln: 'Đối tác phát triển, và chủ sở hữu hồ sơ của con mình.' },
-  { ma: 'R16', lv: 16, t: 'Học viên',               cong: 'hoc',     mau: '#185AB4', theoBac: true,
+  { ma: 'R16', to: 'Người học và gia đình', lv: 16, t: 'Học viên',               cong: 'hoc',     mau: '#185AB4', theoBac: true,
     ln: 'Chủ thể phát triển — người duy nhất không được ai làm thay.' },
-  { ma: 'R17', lv: 17, t: 'Đại sứ',                 cong: 'daisu',   mau: '#A8801F',
+  { ma: 'R17', to: 'Cộng đồng', lv: 17, t: 'Đại sứ',                 cong: 'daisu',   mau: '#A8801F',
     ln: 'Người mang câu chuyện thật tới nhà tiếp theo.' }
 ];
 
@@ -152,4 +157,17 @@ GV.LUAT_QUYEN = [
   'Người chấm không được là người dạy: máy chủ từ chối khi người chấm cổng trùng với người dẫn ca đó.',
   'Mọi lần đổi quyền đều vào nhật ký hệ thống, và nhật ký ấy không ai xoá được — kể cả Super Admin.',
   'Gia đình luôn xem được toàn bộ hồ sơ của con mình, xuất được bản sao, và yêu cầu xoá được trong 30 ngày.'
+];
+
+/* ══════════ VAI NGOÀI HỆ ══════════
+   Ba vai có thật trong tổ chức nhưng KHÔNG có tài khoản, nên không
+   nằm trong bảng phân quyền. Tách hẳn ra để không ai phải đoán vì
+   sao đếm vai lại ra hai con số khác nhau. */
+GV.VAI_NGOAI = [
+  { t: 'Hội đồng Chuẩn', to: 'Giữ chuẩn',
+    ln: 'Giữ lớp L0 và L1 · công nhận bậc 5–6 · phê chuẩn mọi thay đổi chuẩn và ký Sổ Chuẩn.' },
+  { t: 'Cố vấn chuyên môn ngoài', to: 'Dẫn dắt',
+    ln: 'Người trong nghề thật, kèm tổ mũi nhọn. Không thuộc biên chế, không có quyền chấm.' },
+  { t: 'Trưởng trại', to: 'Cộng đồng',
+    ln: 'Vai theo sự kiện, giữ trong những ngày trại. Chịu trách nhiệm an toàn cao nhất tại chỗ.' }
 ];

@@ -876,8 +876,37 @@ ul.vai li span{color:var(--muc2); font-size:12.5px}
 .cm dd span{font-family:var(--ma); font-size:9.5px; letter-spacing:.1em;
   text-transform:uppercase; color:var(--muc3)}
 
-@media (max-width:860px){ .tim{flex-basis:150px} }
+/* Thanh đầu trang ở khổ hẹp: bỏ dần thứ ít cần nhất, theo thứ tự
+   mã bản → dòng phụ → số bản. Ô tìm và nút mục lục luôn còn. */
+@media (max-width:860px){
+  .tim{flex-basis:130px}
+  .ban .dau-ban{display:none}
+}
+@media (max-width:620px){
+  .mao{gap:10px; padding:11px 14px}
+  .mao .phu{display:none}
+  .mao .ban{display:none}
+  .tim{flex:1 1 90px}
+}
 @media print{
   .tim{display:none!important}
   .bc li,.ga,.kb article,.tm article,.ch-c,.td-n{box-shadow:none; break-inside:avoid}
 }
+
+/* ══════════ ĐƯỜNG NGANG — màn liên quan ══════════ */
+.lq{margin:26px 0 4px; padding:15px 20px 17px; border:1px solid var(--vien);
+  border-left:3px solid var(--son); border-radius:var(--r); background:var(--the2);
+  min-width:0; overflow:hidden}
+.lq>b{display:block; font-family:var(--ma); font-size:9.5px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muc3); margin-bottom:9px}
+.lq ul{list-style:none; margin:0; padding:0; display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr)); gap:7px 18px}
+.lq li{min-width:0}
+.lq a{display:grid; gap:1px; font-size:13.5px; color:var(--muc); text-decoration:none;
+  border-bottom:1px solid transparent; padding-bottom:2px; min-width:0;
+  overflow-wrap:anywhere}
+.lq a:hover,.lq a:focus-visible{color:var(--son); border-bottom-color:var(--son)}
+.lq a span{font-family:var(--ma); font-size:9.5px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muc3)}
+@media print{ .lq{display:none} }
+.ban .dau-ban{font-size:10px; opacity:.62; letter-spacing:.02em}

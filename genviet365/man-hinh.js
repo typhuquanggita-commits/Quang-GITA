@@ -98,7 +98,7 @@ GV.NHOM = [
     ]},
   { id: 'g11', no: '11', t: 'VẬN HÀNH', s: 'Người, tiền, và ranh giới', mau: '#0B7350',
     ds: [
-      { v: 'vai-tro', t: 'Hai mươi vai', h: '15 vai cũ · 5 vai mới' },
+      { v: 'vai-tro', t: 'Mười bảy vai', h: 'Ai làm gì trong hệ' },
       { v: 'tai-chinh', t: 'Tài chính và quỹ', h: 'Tiền không mua bậc' },
       { v: 'an-toan', t: 'An toàn và đạo đức', h: 'Bảy luật · dấu hiệu chuyển tuyến' },
       { v: 'phan-quyen', t: 'Bảng phân quyền', h: '17 vai · 13 tầng · hai trục' },
@@ -523,11 +523,15 @@ GV.MAN = {
   ]},
 
 /* ══════════ NHÓM 7 · VẬN HÀNH ══════════ */
-'vai-tro': { q: 'chung', k: 'Lớp L4', t: 'Hai mươi vai',
-  p: 'Mười lăm vai của hệ thống hiện tại giữ nguyên. Năm vai mới thuộc phần mà một hệ huấn luyện nhân tài cần mà hệ xử lý ca không cần.',
+'vai-tro': { q: 'chung', k: 'Lớp L4', t: 'Mười bảy vai của hệ',
+  p: 'Mười bảy vai, xếp theo việc chứ không theo cấp. Bảng phân quyền ở nhóm 11 nói cùng mười bảy vai ấy nhưng xếp theo bậc quyền.',
   khoi: [
-    { k: 'vai', tu: 'VAI' },
-    { k: 'van', t: 'Vai *Mentor học viên (bậc 5)* là vai quan trọng nhất trong năm vai mới: nó là cửa duy nhất để sản phẩm của hệ trở thành lực lượng của hệ. Không có vai này, hệ số tự tái tạo vĩnh viễn bằng không.' }
+    { k: 'vai', tu: 'VAI_NHOM' },
+    { k: 'van', t: 'Bảng trên *sinh ra từ chính bảng phân quyền* ở nhóm 11 — cùng mười bảy vai ấy, chỉ xếp theo việc thay vì theo bậc quyền. Hai bảng không lệch nhau được, vì chúng là một.' },
+    { k: 'van', t: 'Vai *Mentor (bậc 5)* là vai quan trọng nhất trong hệ: nó là cửa duy nhất để sản phẩm của hệ trở thành lực lượng của hệ. Không có vai này, hệ số tự tái tạo vĩnh viễn bằng không.' },
+    { k: 'muc', t: 'Ba vai ngoài hệ' },
+    { k: 'van', t: 'Ba vai có thật trong tổ chức nhưng *không có tài khoản*, nên không nằm trong bảng phân quyền. Tách hẳn ra để không ai phải đoán vì sao đếm vai lại ra hai con số khác nhau.' },
+    { k: 'vai', tu: 'VAI_NGOAI_NHOM' }
   ]},
 
 'tai-chinh': { q: 'tai_chinh', k: 'Lớp L4', t: 'Tài chính và Quỹ Nhân tài',
@@ -1092,7 +1096,7 @@ GV.MAN = {
     { k: 'luoi', c: 2, tu: 'TH_AN_Y_NIEM' },
     { k: 'muc', t: 'Năm biến thể và nơi dùng' },
     { k: 'bang', cot: ['Mã', 'Biến thể', 'Là gì', 'Dùng ở đâu', 'Cỡ nhỏ nhất'], tu: 'TH_AN_BT_BANG' },
-    { k: 'muc', t: 'Tám luật dùng ấn' },
+    { k: 'muc', t: 'Mười luật dùng ấn' },
     { k: 'luat', tu: 'TH_AN_LUAT' },
     { k: 'trich', t: 'Nét trái luôn liền — bảy nguyên lý bất biến. Sáu chấm luôn có quãng — lên bậc phải có quãng, không liên tục, không tự động.', n: 'Hai điều không bao giờ được vẽ sai' }
   ]},
@@ -1379,24 +1383,22 @@ GV.MAN = {
 /* ══════════ BẢNG TRA — nối khối "tu" tới dữ liệu thật ══════════
    Khối trong GV.MAN không ôm dữ liệu; nó trỏ tới một khoá ở đây. Nhờ vậy
    một bộ dữ liệu dùng được ở nhiều màn mà không phải chép lần thứ hai. */
+/* ══════════ BẢNG KHOÁ TRA ══════════
+   Chỉ còn những khoá CÓ BIẾN ĐỔI. Khoá chuyển thẳng từ kho ra
+   (X: GV.X) đã bỏ hết — nen/dan-xuat.js để mọi kho tự đăng ký,
+   nên thêm một kho mới không phải chạm vào tệp này nữa. */
 GV.TU = {
+  /* Hai khoá này thuộc BỘ MÁY nhưng cũng là nội dung của hai màn,
+     nên tầng dẫn xuất cố ý không đụng tới — phải khai ở đây. */
+  LUAT_QUYEN: GV.LUAT_QUYEN,
+
   /* nhóm 1 */
   DINH_VI_BANG: GV.DINH_VI.bang.map(function (r) { return [r.truc, r.gita, r.gv]; }),
-  NGUYEN_LY: GV.NGUYEN_LY,
-  LOP: GV.LOP,
   HO_CHIEU_TRUONG: GV.TRUC_DOC.truong.map(function (r) { return [r.k, r.v]; }),
-  BAC: GV.BAC,
   BAC_MUC: GV.BAC_MUC.map(function (r) { return [r.bac, r.doi, r.chinh]; }),
-  TRU: GV.TRU,
-  MUC: GV.MUC,
-  PHAM_CHAT: GV.PHAM_CHAT,
 
   /* nhóm 2 */
-  NHIP: GV.NHIP,
   HINH_THAI: GV.HINH_THAI.map(function (r) { return [r.ma, r.t, r.nhip, r.manh, r.yeu, r.dung, r.bac]; }),
-  LO_TRINH: GV.LO_TRINH,
-  KHOA_NEN: GV.KHOA_NEN,
-  CHUYEN_DE: GV.CHUYEN_DE,
   TRAI_LY: GV.TRAI.ly,
   TRAI_DS: GV.TRAI.ds,
   TRAI_NGAY: GV.TRAI.ngay,
@@ -1421,60 +1423,44 @@ GV.TU = {
   CLB_MOMOI_B: GV.CLB.moMoi.b,
   CLB_MOMOI_N: GV.CLB.moMoi.n,
   CLB_BATANG: GV.CLB.baTang.map(function (r) { return [r.t, r.qm, r.nhip, r.lam]; }),
-  LICH_NAM: GV.LICH_NAM,
 
   /* nhóm 4 */
-  MOI_TRUONG: GV.MOI_TRUONG,
   TUAN: GV.TUAN.map(function (r) { return { a: r.ng, b: r.v }; }),
-  SO_TAY_MT: GV.SO_TAY_MT,
-  SO_TAY: GV.SO_TAY,
 
   /* nhóm 5 */
-  BANG_MAU: GV.BANG_MAU,
   KPI_HE: GV.KPI_HE.map(function (r) { return [r.t, r.vi, r.dv]; }),
   CONG_LUAT: GV.CONG.luat,
   CONG_BANG: GV.CONG.bang,
   CONG_QUYET: GV.CONG.quyet.map(function (r) { return [r.d, r.q]; }),
   BAO_CAO: GV.BAO_CAO.map(function (r) { return [r.c, r.ai, r.gui, r.han, r.gom]; }),
-  BIEU_MAU: GV.BIEU_MAU,
 
   /* nhóm 6 */
   MA_HOA: GV.MA_HOA.map(function (r) { return [r.ma, r.la, r.gt]; }),
   GHEP: { t: GV.GHEP_KHONG_LUU.t, n: GV.GHEP_KHONG_LUU.n, vi: GV.GHEP_KHONG_LUU.vi },
-  HO_CHIEU_JSON: GV.HO_CHIEU_JSON,
-  HO_CHIEU_LUAT: GV.HO_CHIEU_LUAT,
   BANG_LUU: GV.BANG_LUU.map(function (r) { return [r.b, r.k, r.n]; }),
   API: GV.API.map(function (r) { return [r.d, r.v]; }),
   QUYEN: GV.QUYEN.map(function (r) { return [r.q, r.v, r.ai]; }),
   CONG_NGHE: GV.CONG_NGHE.map(function (r) { return [r.ten + ' — ' + r.chang, r.lam, r.duoc, r.han, r.phai]; }),
   LUU_BA_TANG: GV.LUU_BA_TANG.map(function (r) { return { t: r.t, n: r.gi, vi: r.mat }; }),
-  NGUYEN_TAC_KT: GV.NGUYEN_TAC_KT,
 
   /* nhóm 7 */
-  VAI: GV.VAI,
   TC_LUAT: { t: GV.TAI_CHINH.luat, n: GV.TAI_CHINH.vi },
   TC_DONG: GV.TAI_CHINH.dong.map(function (r) { return [r.t, r.vai, r.ty]; }),
   TC_QUY: { t: GV.TAI_CHINH.quy.t, n: GV.TAI_CHINH.quy.n + ' ' + GV.TAI_CHINH.quy.dung, vi: GV.TAI_CHINH.quy.vi },
   AT_LUAT: GV.AN_TOAN.luat,
   AT_DAU: GV.AN_TOAN.dau,
   AT_QUY: GV.AN_TOAN.quy.map(function (r) { return r.v; }),
-  RUI_RO: GV.RUI_RO,
 
   /* nhóm 3 · kho chuyên môn */
   MA_TRAN: GV.MA_TRAN.map(function (r) { return [r.l, r.g, r.i, r.t, r.a, r.dl, r.vai, r.ra]; }),
-  MUOI_BUOC: GV.MUOI_BUOC,
   NHOM_GP: GV.NHOM_GP.map(function (r) {
     return { t: r.m + ' · ' + r.t, n: r.n, vi: 'Trục Gen Việt: ' + r.truc + ' — ' + r.vi };
   }),
-  CHON_CL: GV.CHON_CL,
-  CHIEN_LUOC: GV.CHIEN_LUOC,
   THANG_HT: GV.THANG_HT.map(function (r) { return ['Mức ' + r.m, r.t, r.vd]; }),
-  THANG_HT_LUAT: GV.THANG_HT_LUAT,
   TU_DONG: GV.TU_DONG.map(function (r) { return [r.th, r.muc, r.he, r.hs, r.ph, r.co]; }),
 
   /* nhóm 6 · ngôn ngữ và văn hoá */
   NGON_NGU: GV.NGON_NGU.map(function (r) { return [r.x, r.o, r.vi]; }),
-  NGON_NGU_LUAT: GV.NGON_NGU_LUAT,
   NGHI_LE: GV.NGHI_LE.map(function (r) {
     return { t: r.t, n: 'Khi nào: ' + r.khi + '. ' + r.n, vi: r.vi };
   }),
@@ -1483,10 +1469,7 @@ GV.TU = {
   WOW: GV.WOW.map(function (r) { return { b: r.n, t: r.t, ai: r.ai, n: r.y }; }),
 
   /* nhóm 8 · tư vấn và đường vào */
-  DUONG_VAO: GV.DUONG_VAO,
   MACH_TU_VAN: GV.MACH_TU_VAN.map(function (r) { return [r.nc, r.dh, r.ch, r.tang, r.gt]; }),
-  BUOI_DAU: GV.BUOI_DAU,
-  CHAN_DUNG: GV.CHAN_DUNG,
   DAI_SU_DS: GV.DAI_SU.ds.map(function (r) { return [r.c, r.dk, r.duoc]; }),
   DAI_SU_LUAT: GV.DAI_SU.luat,
 
@@ -1498,9 +1481,6 @@ GV.TU = {
   TUYEN_TIM: GV.TUYEN.tim,
   TUYEN_TRANH: GV.TUYEN.tranh,
   TUYEN_THU: GV.TUYEN.thu.map(function (r) { return { a: r.m, b: r.v }; }),
-  DU_GIO: GV.DU_GIO,
-  DU_GIO_LUAT: GV.DU_GIO_LUAT,
-
 
   /* phân quyền */
   VAI_BANG: GV.VAI.map(function (r) { return [r.ma, 'lv ' + r.lv, r.t, r.ln]; }),
@@ -1518,147 +1498,41 @@ GV.TU = {
     return [ten, (v.cho || []).join(' · ') || '—', (v.cam || []).join(' · ') || '—'];
   }),
   TY_LE_BANG: GV.TY_LE.map(function (r) { return [r.vai.join(' · '), r.pt + '%', r.ghi]; }),
-  LUAT_QUYEN: GV.LUAT_QUYEN,
-
 
   /* nhóm 13 · thư viện Gen Việt */
-  TV_NGUYEN_TAC: GV.TV_NGUYEN_TAC,
-  TV_QUYEN: GV.TV_QUYEN,
   TV_Q1: GV.TV_Q1, TV_Q2: GV.TV_Q2, TV_Q3: GV.TV_Q3,
   TV_Q4: GV.TV_Q4, TV_Q5: GV.TV_Q5, TV_Q6: GV.TV_Q6,
-  TV_MO_THUC: GV.TV_MO_THUC,
   TV_PC_BANG: GV.TV_PHAM_CHAT.map(function (r) { return [r.pc, r.ai, r.hoi]; }),
   TV_CACH_DUNG: GV.TV_CACH_DUNG.map(function (r) { return [r.noi, r.nhip, r.lam, r.kiem]; }),
   TV_NGUON: GV.TV_NGUON.map(function (r) { return [r.t, r.l]; }),
 
   /* nhóm 12 · triển khai */
   NGAY_90: GV.NGAY_90.map(function (r) { return [r.tuan, r.viec, r.ai, r.ra]; }),
-  NAM_DAU: GV.NAM_DAU,
-  CHANG: GV.CHANG,
   NGUON: GV.NGUON.map(function (r) { return [r.t, r.l]; }),
 
   /* nhóm 14 · trải nghiệm và cam kết */
-  TN_HANH_TRINH: GV.TN_HANH_TRINH,
   TN_XUYEN_SUOT: [
     'Mỗi chặng phải để lại *một vật cầm được*. Chặng nào không có vật thì chặng ấy không được nhớ.',
     'Mỗi chặng có một *dấu hiệu đang rơi* được định nghĩa trước — không đợi tới lúc gia đình nói mới biết.',
     'Việc cứu luôn là một *việc*, không phải một lời. Gọi điện thuyết phục không phải việc cứu.'
   ],
-  TN_KHOANH_KHAC: GV.TN_KHOANH_KHAC,
-  TN_CAM_KET: GV.TN_CAM_KET,
-  TN_CONG_PH: GV.TN_CONG_PH,
-  TN_LUAT_PH: GV.TN_LUAT_PH,
   TN_HIEN_VAT_BANG: GV.TN_HIEN_VAT.map(function (r) { return [r.t, r.khi, r.ai, r.cach, r.vi]; }),
-  TN_PHUC_HOI: GV.TN_PHUC_HOI,
-  TN_PHAN_NAN: GV.TN_PHAN_NAN,
-  TN_LUAT_PN: GV.TN_LUAT_PN,
-  TN_NGHI: GV.TN_NGHI,
-  TN_RA_DI: GV.TN_RA_DI,
-  TN_DO_CAM: GV.TN_DO_CAM,
 
   /* nhóm 15 · giá trị và tăng trưởng */
-  GT_GOI: GV.GT_GOI,
-  GT_LUAT_GIA: GV.GT_LUAT_GIA,
-  GT_CHONG: GV.GT_CHONG,
-  GT_BAO_DAM: GV.GT_BAO_DAM,
-  GT_KINH_TE: GV.GT_KINH_TE,
-  GT_LUAT_KT: GV.GT_LUAT_KT,
-  GT_PHEU: GV.GT_PHEU,
   GT_THONG_DIEP_L: GV.GT_THONG_DIEP.map(function (r) { return { t: r.t, n: r.n }; }),
-  GT_PHAN_DOI: GV.GT_PHAN_DOI,
-  GT_NHA_TRUONG: GV.GT_NHA_TRUONG,
-  GT_NHAN_RONG: GV.GT_NHAN_RONG,
-  GT_LOI_BAT_BIEN: GV.GT_LOI_BAT_BIEN,
 
   /* nhóm 16 · bằng chứng và tin cậy */
   TC_TANG_BC: GV.TC_TANG_BC.map(function (r) { return { so: r.so, t: r.t, n: r.n, v: r.v }; }),
-  TC_CHI_SO: GV.TC_CHI_SO,
-  TC_THIET_KE: GV.TC_THIET_KE,
-  TC_LUAT_DO: GV.TC_LUAT_DO,
-  TC_THEO_DOI: GV.TC_THEO_DOI,
-  TC_LUAT_TD: GV.TC_LUAT_TD,
-  TC_KIEM_DINH: GV.TC_KIEM_DINH,
-  TC_BAO_VE: GV.TC_BAO_VE,
-  TC_DU_LIEU: GV.TC_DU_LIEU,
-  TC_KHUNG_HOANG: GV.TC_KHUNG_HOANG,
-  TC_24H: GV.TC_24H,
-  TC_PHAP_LY: GV.TC_PHAP_LY,
-  TC_FAQ: GV.TC_FAQ,
-  TC_SO_LOI: GV.TC_SO_LOI,
-  TC_LOI_MAU: GV.TC_LOI_MAU,
 
   /* nhóm 17 · nhận diện thương hiệu */
-  TH_NEN: GV.TH_NEN,
-  TH_KHAC_BIET: GV.TH_KHAC_BIET,
   TH_KT_THAP: GV.TH_KIEN_TRUC.map(function (r) {
     return { ma: r.ma, t: r.t, toc: r.tang, giu: r.n, ai: 'Admin sản phẩm (R05) gác', chi: r.vd };
   }),
-  TH_LUAT_TEN: GV.TH_LUAT_TEN,
-  TH_AN_Y_NIEM: GV.TH_AN_Y_NIEM,
   TH_AN_BT_BANG: GV.TH_AN_BIEN_THE.map(function (r) { return [r.ma, r.t, r.n, r.dung, r.toi]; }),
-  TH_AN_LUAT: GV.TH_AN_LUAT,
-  TH_AN_SAI: GV.TH_AN_SAI,
-  TH_MAU: GV.TH_MAU,
-  TH_MAU_LUAT: GV.TH_MAU_LUAT,
-  TH_CHU: GV.TH_CHU,
-  TH_THANG_CHU: GV.TH_THANG_CHU,
-  TH_HINH_DAO_DUC: GV.TH_HINH_DAO_DUC,
-  TH_HINH_THAM_MY: GV.TH_HINH_THAM_MY,
-  TH_HOA_TIET: GV.TH_HOA_TIET,
-  TH_GIONG: GV.TH_GIONG,
-  TH_GIONG_BANG: GV.TH_GIONG_BANG,
-  TH_UNG_DUNG: GV.TH_UNG_DUNG,
-  TH_TEP: GV.TH_TEP,
-  TH_LUAT_GIU: GV.TH_LUAT_GIU,
-
-  /* nhóm 18 · bản quyền và toàn cầu */
-  BQ_RANH_GIOI: GV.BQ_RANH_GIOI,
-  BQ_TAI_SAN: GV.BQ_TAI_SAN,
-  BQ_QUYEN_TG: GV.BQ_QUYEN_TG,
-  BQ_HO_SO_TG: GV.BQ_HO_SO_TG,
-  BQ_DONG_DAU_TG: GV.BQ_DONG_DAU_TG,
-  BQ_NHAN_HIEU: GV.BQ_NHAN_HIEU,
-  BQ_NHOM_NICE: GV.BQ_NHOM_NICE,
-  BQ_DE_AN: GV.BQ_DE_AN,
-  BQ_CAU_TRUC_DA: GV.BQ_CAU_TRUC_DA,
-  BQ_ANH_XA_PC: GV.BQ_ANH_XA_PC,
-  BQ_ANH_XA_NL: GV.BQ_ANH_XA_NL,
-  BQ_ANH_XA_LUAT: GV.BQ_ANH_XA_LUAT,
-  BQ_QUOC_TE: GV.BQ_QUOC_TE,
-  BQ_BAN_DIA: GV.BQ_BAN_DIA,
-  BQ_TUAN_THU: GV.BQ_TUAN_THU,
-  BQ_LO_TRINH: GV.BQ_LO_TRINH,
-  BQ_CHONG: GV.BQ_CHONG,
-  BQ_BANG_CHUNG: GV.BQ_BANG_CHUNG,
-
-  /* nhóm 19 · cầm lên dùng được */
-  CT_BAY_CAU: GV.CT_BAY_CAU,
-  CT_BAY_LUAT: GV.CT_BAY_LUAT,
-  CT_DOC_CA: GV.CT_DOC_CA,
-  CT_DOC_CA_LUAT: GV.CT_DOC_CA_LUAT,
-  CT_GIAO_AN: GV.CT_GIAO_AN,
-  CT_GIAO_AN_DUNG: GV.CT_GIAO_AN_DUNG,
-  CT_KICH_BAN: GV.CT_KICH_BAN,
-  CT_GOI_LUAT: GV.CT_GOI_LUAT,
-  CT_THU: GV.CT_THU,
-  CT_BAN_DO_11: GV.CT_BAN_DO_11,
-  CT_GOAL_MAP: GV.CT_GOAL_MAP,
-  CT_SO_PHUC_HOI: GV.CT_SO_PHUC_HOI,
-  CT_SO_LUAT: GV.CT_SO_LUAT,
-  CT_PHONG_VAN: GV.CT_PHONG_VAN,
-  CT_PV_LUAT: GV.CT_PV_LUAT,
-  CT_CHAM: GV.CT_CHAM,
-  CT_CHAM_LUAT: GV.CT_CHAM_LUAT,
 
   /* nhóm 20 · tra cứu */
-  TC_TU_DIEN: GV.TC_TU_DIEN,
-  TC_TU_LUAT: GV.TC_TU_LUAT,
-  TC_SO_CHUAN_LA: GV.TC_SO_CHUAN_LA,
-  TC_SO_CHUAN_COT: GV.TC_SO_CHUAN_COT,
-  TC_SO_CHUAN_MAU: GV.TC_SO_CHUAN_MAU,
   TC_BAN_DO_L: GV.TC_BAN_DO.map(function (r) {
     return { t: r.t + '  ·  ' + r.nhom, n: r.n, vi: r.vi };
   }),
-  TC_DUONG_DOC: GV.TC_DUONG_DOC,
 
 };

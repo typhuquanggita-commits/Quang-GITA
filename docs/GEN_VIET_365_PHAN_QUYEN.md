@@ -167,6 +167,12 @@ Bản cắt cũng **khoá luôn thanh đổi vai**, để không tạo ảo giá
 node genviet365/tools/kiem-tra.cjs
 ```
 
+Bộ kiểm chạy trong một lệnh dựng duy nhất:
+
+```bash
+node genviet365/tools/dung.cjs
+```
+
 Mã thoát khác 0 nghĩa là **không được phát hành**. Sáu lớp:
 
 | Lớp | Bắt gì |
@@ -176,6 +182,9 @@ Mã thoát khác 0 nghĩa là **không được phát hành**. Sáu lớp:
 | **Chạy** | Dựng thật 132 màn bằng Chromium: lỗi JS · màn rỗng ruột · dấu hiệu dựng hỏng |
 | **Cổng** | Với 8 cấu hình vai, thử **vào thẳng bằng `#hash`** vào từng màn ngoài quyền — phải ra thẻ khoá, không được ra nội dung, và mục ấy không được còn trong mục lục |
 | **Ô tìm** | Với 4 cấu hình vai, gõ **đúng tiêu đề** từng màn ngoài quyền vào ô tìm — kết quả không được chứa màn ấy. Ô tìm lọc quyền *trước* khi tìm, nên nó không phải lối vòng qua cổng |
+| **Va chạm tên** | Hai kho cùng đặt `GV.X` — kho nạp sau đè kho trước, âm thầm, và màn dùng tên ấy dựng ra khung rỗng. Đã xảy ra thật một lần với tên `VAI`: màn “vai trò” dựng ra mười bảy thẻ **không có chữ** suốt nhiều bản, và không lớp kiểm nào trước đó thấy |
+| **Khối rỗng** | Một khối dựng ra đủ khung nhưng không có chữ. Cả màn vẫn dài nên phép đo tổng ký tự không bắt được |
+| **Số lệch** | Tiêu đề nói “Mười hai khoảnh khắc” mà mảng có mười ba. `nen/so-lieu.js` đọc số viết bằng chữ tiếng Việt rồi đối chiếu với độ dài mảng thật |
 | **Tương phản** | Mọi mã màu chữ phải đạt WCAG AA **4.5 : 1** trên nền của chính chế độ ấy, ở **cả** chế độ sáng và tối. Màu chữ mờ là một lỗi loại trừ người đọc, và nó trôi vào kho rất dễ vì trên màn hình đẹp thì trông vẫn ổn |
 
 Lần chạy gần nhất:
@@ -186,7 +195,7 @@ LỚP CHẠY  · dựng thử 132 màn với vai Super Admin
 CỔNG      · thử vào thẳng 510 màn ngoài quyền, trên 8 cấu hình vai · không chỗ nào lọt
 KHỔ MÀN   · soi tràn ngang ở 1400, 900 và 390 điểm ảnh
 Ô TÌM     · gõ đúng tiêu đề 320 màn ngoài quyền, trên 4 cấu hình vai · không chỗ nào lọt
-KIỂM TĨNH · 132 màn · 132 mục điều hướng · 63 loại khối · 217 khoá tra
+KIỂM TĨNH · 132 màn · 132 mục điều hướng · 63 loại khối · 238 khoá tra
 
 Không lỗi. Đạt.
 ```
