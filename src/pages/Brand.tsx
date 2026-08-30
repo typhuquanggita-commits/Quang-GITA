@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, M, Note } from '@/components/ui';
 import { Logo } from '@/components/Logo';
+import { GITA_FULL_NAME, GITA_SLOGAN } from '@/content';
 
 /* =====================================================================
    BỘ CHUẨN NHẬN DIỆN THƯƠNG HIỆU GITA
@@ -159,15 +160,16 @@ export const Brand: React.FC = () => (
       <h2>4. Quy chuẩn tài liệu in</h2>
       <div className="grid g2">
         <div>
-          <h4>Cấu trúc bắt buộc của mọi phiếu / đề</h4>
+          <h4>Cấu trúc bắt buộc của một phiếu bài tập GITA</h4>
           <ol className="small">
-            <li><strong>Đầu trang:</strong> logo GITA bên trái, dòng “TRUNG TÂM GITA · Chương trình MATH365 · CHUYÊN · CLC” bên phải, ngăn cách bằng đường kẻ xanh dày 3px.</li>
-            <li><strong>Tiêu đề:</strong> viết hoa, căn giữa, ví dụ “PHIẾU BÀI TẬP TOÁN 9”.</li>
-            <li><strong>Dòng thông tin:</strong> tên chuyên đề, học kỳ, số câu, mức độ.</li>
-            <li><strong>Dòng học sinh:</strong> Họ và tên … Lớp … Ngày …</li>
-            <li><strong>Thân bài:</strong> đánh số “Câu 1.”, “Câu 2.” — số câu in màu xanh GITA, đậm.</li>
-            <li><strong>Trang đáp án:</strong> sang trang mới, đường kẻ vàng dày 3px, tiêu đề “ĐÁP ÁN &amp; LỜI GIẢI CHI TIẾT”.</li>
-            <li><strong>Chân trang:</strong> “MATHGITA — Hệ thống luyện Toán THCS của Trung tâm GITA · Mục tiêu 9+ điểm”.</li>
+            <li><strong>Đầu trang:</strong> dòng <em>“{GITA_FULL_NAME}”</em> căn giữa, in đậm, gạch chân bằng đường kẻ xanh GITA.</li>
+            <li><strong>Khối thông tin:</strong> Giáo viên … / Ngày … / Họ và tên học sinh … / Lớp (ví dụ <code>6CB</code>, <code>6NC</code>) / Mục tiêu …</li>
+            <li><strong>Hộp tiêu đề:</strong> khung viền xanh, ghi <strong>“PHIẾU CƠ BẢN: …”</strong> hoặc <strong>“PHIẾU NÂNG CAO: …”</strong> kèm dòng “Năm học”.</li>
+            <li><strong>TÓM TẮT LÝ THUYẾT:</strong> chỉ ghi công thức và lưu ý trọng tâm, không diễn giải dài.</li>
+            <li><strong>Thân bài:</strong> đánh số <strong>“THỬ THÁCH 1:”, “THỬ THÁCH 2:”…</strong> — nhãn in màu xanh GITA, đậm. Không dùng “Bài 1”, “Câu 1”.</li>
+            <li><strong>VỀ ĐÍCH:</strong> phần cuối phiếu, gồm 2–3 thử thách tổng hợp ở mức cao hơn một bậc.</li>
+            <li><strong>Trang đáp án:</strong> sang trang mới, kẻ vàng GITA, tiêu đề “ĐÁP ÁN &amp; LỜI GIẢI CHI TIẾT”.</li>
+            <li><strong>Chân trang:</strong> khẩu hiệu <em>‘‘{GITA_SLOGAN}’’</em> in đậm, nghiêng, căn giữa.</li>
           </ol>
         </div>
         <div>
@@ -175,6 +177,9 @@ export const Brand: React.FC = () => (
           <div className="table-scroll">
             <table className="table">
               <tbody>
+                <tr><td>Tên đầy đủ trên tài liệu</td><td className="bold">{GITA_FULL_NAME}</td></tr>
+                <tr><td>Mã lớp</td><td className="bold">{'{'}khối{'}'}CB (cơ bản) · {'{'}khối{'}'}NC (nâng cao)</td></tr>
+                <tr><td>Nhãn bài tập</td><td className="bold">THỬ THÁCH n: (không dùng “Bài”, “Câu”)</td></tr>
                 <tr><td>Khổ giấy</td><td className="bold">A4 dọc</td></tr>
                 <tr><td>Cỡ chữ nội dung</td><td className="bold">12 pt</td></tr>
                 <tr><td>Giãn dòng</td><td className="bold">1,3</td></tr>

@@ -18,7 +18,21 @@ thành một hệ thống học liệu trực tuyến hoàn chỉnh cho khối 6
 Học sinh học lý thuyết → đọc vị dạng bài → luyện tập trực tiếp trên web → được chấm điểm
 tự động → xem lời giải chi tiết → nhận phân tích chất lượng và **lộ trình cải thiện cá nhân hoá**.
 
-## 2. Hệ thống học liệu 8 lớp
+## 2. Giáo án GITA số hoá
+
+Toàn bộ chương trình được tổ chức theo **đúng cách GITA đang dạy**, số hoá từ bộ giáo án gốc
+của trung tâm (thư mục Drive `MATHC2 / Giáo Án`):
+
+```
+CHƯƠNG  →  BUỔI HỌC (S1, S2, S3+S4…)  →  PHIẾU CƠ BẢN (lớp {khối}CB)
+                                       →  PHIẾU NÂNG CAO (lớp {khối}NC)
+```
+
+Trang **Giáo án** (`/giao-an`) hiển thị đầy đủ **31 chương · 93 buổi học · 186 phiếu bài tập**,
+mỗi buổi có mục tiêu, nội dung phiếu cơ bản, nội dung phiếu nâng cao, và liên kết trực tiếp tới
+chuyên đề tương ứng để học lý thuyết và luyện tập ngay.
+
+## 3. Hệ thống học liệu 8 lớp
 
 Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 
@@ -37,6 +51,7 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 
 | Hạng mục | Số lượng |
 |---|---|
+| Chương · Buổi học · Phiếu bài tập | **31** · **93** · **186** |
 | Chuyên đề (khối 6–9) | **31** |
 | Khối lý thuyết · Yêu cầu cần đạt | 74 · 94 |
 | Quy tắc “đọc vị bài” | **132** |
@@ -46,10 +61,10 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 | Thẻ Cẩm nang công thức điểm 10 | **86** |
 | Chuyên đề HSG · Kỹ thuật lõi | **8** · 28 |
 | Mốc lộ trình học tập | 24 |
-| Khuôn câu hỏi tham số hoá | **175** |
+| Khuôn câu hỏi tham số hoá | **181** |
 | Đề · Câu hỏi sinh ra | **432** · **7.884** |
 
-## 3. Ngân hàng đề
+## 4. Ngân hàng đề
 
 - **Bộ 100 đề luyện thi mỗi khối** (6 · 7 · 8 · 9) — tổng **400 đề**, chia theo mức độ
   Cơ bản (60 đề) · Nâng cao (30 đề) · Chuyên–CLC (10 đề).
@@ -58,14 +73,14 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 - **Bộ luyện theo chuyên đề** cho từng chuyên đề.
 
 Tổng cộng **432 đề** / **7.884 câu hỏi**, mỗi mã đề sinh ra một bộ câu hỏi riêng, sinh từ
-**175 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
+**181 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
 
 **Cách hoạt động:** câu hỏi được sinh từ *khuôn tham số hoá* (`src/bank/`). Mỗi khuôn tự sinh
 số liệu, đáp án, **lời giải từng bước**, phân tích tư duy và cảnh báo bẫy. Mỗi mã đề gắn với
 một hạt giống cố định nên **cùng một mã đề luôn cho cùng một bộ câu hỏi**, còn các mã đề
 khác nhau cho các bộ câu hỏi khác nhau.
 
-## 4. Ma trận đề & cách chấm (theo chuẩn Bộ GD&ĐT)
+## 5. Ma trận đề & cách chấm (theo chuẩn Bộ GD&ĐT)
 
 | Loại câu | Cách chấm |
 |---|---|
@@ -76,7 +91,7 @@ khác nhau cho các bộ câu hỏi khác nhau.
 
 Điểm được quy về **thang 10**, xếp loại theo Thông tư 22.
 
-## 5. Hai chế độ làm bài
+## 6. Hai chế độ làm bài
 
 | Chế độ | Mục đích | Đặc điểm |
 |---|---|---|
@@ -85,7 +100,7 @@ khác nhau cho các bộ câu hỏi khác nhau.
 
 Nguyên tắc GITA: luyện tập đến khi tỉ lệ đúng ≥ 85% rồi mới chuyển sang chế độ thi.
 
-## 6. Sổ tay lỗi sai
+## 7. Sổ tay lỗi sai
 
 Trang **Sổ tay lỗi sai** (`/so-tay`) tự động gom mọi câu đã làm sai **theo dạng bài**
 (chứ không theo từng câu riêng lẻ), xếp theo tần suất sai giảm dần, kèm:
@@ -95,7 +110,7 @@ Trang **Sổ tay lỗi sai** (`/so-tay`) tự động gom mọi câu đã làm s
 - Quy trình 4 bước chữa lỗi theo phương pháp GITA
 - In được để kẹp vào vở
 
-## 7. Đánh giá chất lượng & định hướng cải thiện
+## 8. Đánh giá chất lượng & định hướng cải thiện
 
 Sau mỗi bài, hệ thống không chỉ trả về điểm mà còn phân tích:
 
@@ -104,14 +119,14 @@ Sau mỗi bài, hệ thống không chỉ trả về điểm mà còn phân tíc
 - **Kế hoạch cải thiện có thứ tự ưu tiên**: làm gì trước, làm gì sau, mỗi việc kèm hành động cụ thể.
 - **Khoảng cách tới mốc 9+** và nhận xét về nhịp độ làm bài.
 
-## 8. Lộ trình học tập 3 giai đoạn
+## 9. Lộ trình học tập 3 giai đoạn
 
 `Giai đoạn 1 — Nền tảng` → `Giai đoạn 2 — Chuyên đề nâng cao` → `Giai đoạn 3 — Luyện đề & Tổng ôn`
 
 Mỗi khối có lộ trình riêng chia thành các mốc theo tuần, mỗi mốc có mục tiêu, chuyên đề,
 **sản phẩm đầu ra kiểm chứng được** và **ngưỡng điểm để được chuyển mốc**.
 
-## 9. Tài khoản & phân quyền
+## 10. Tài khoản & phân quyền
 
 | Vai trò | Quyền |
 |---|---|
@@ -130,16 +145,19 @@ Mỗi khối có lộ trình riêng chia thành các mốc theo tuần, mỗi m�
 | `teacher@gita.edu.vn` | Giáo viên |
 | `admin@gita.edu.vn` | Quản trị viên |
 
-## 10. Kho tài liệu chuẩn nhận diện GITA
+## 11. Kho tài liệu chuẩn nhận diện GITA
 
 Trang **Thư viện** sinh tài liệu in được (A4, có tiêu đề GITA, đánh số câu, trang đáp án):
 
-- **Phiếu bài tập theo chuyên đề** — chọn khối, chuyên đề, mức độ, số câu → sinh phiếu mới bất kỳ lúc nào, kèm lời giải chi tiết.
+- **Phiếu bài tập theo đúng mẫu gốc GITA** — đầu trang “HỌC VIỆN PHÁT TRIỂN TOÀN CẦU — GITA”,
+  khối thông tin Giáo viên / Ngày / Họ tên học sinh / Lớp (6CB, 6NC…) / Mục tiêu, hộp tiêu đề
+  “PHIẾU CƠ BẢN” hoặc “PHIẾU NÂNG CAO”, phần **TÓM TẮT LÝ THUYẾT**, các **THỬ THÁCH 1…n**,
+  phần **VỀ ĐÍCH**, trang đáp án và khẩu hiệu *“TÔI TỰ TIN CHINH PHỤC 10 ĐIỂM TOÁN, TÔI YÊU TOÁN”*.
 - **Sơ đồ tư duy tổng hợp** toàn khối.
 - **Bảng công thức điểm 10**.
 - **Đề cương ôn tập** theo cấu trúc chuẩn.
 
-## 11. Chạy dự án
+## 12. Chạy dự án
 
 ```bash
 npm install     # cài phụ thuộc
@@ -150,7 +168,7 @@ npm run preview # xem bản đã đóng gói
 
 Yêu cầu: Node.js 18+. Dự án dùng **React 19 + TypeScript + Vite**, không phụ thuộc dịch vụ ngoài.
 
-## 12. Cấu trúc mã nguồn
+## 13. Cấu trúc mã nguồn
 
 ```
 src/
@@ -171,7 +189,7 @@ src/
   pages/        Các màn hình của ứng dụng
 ```
 
-## 13. Bộ chuẩn nhận diện thương hiệu GITA
+## 14. Bộ chuẩn nhận diện thương hiệu GITA
 
 Trang `/nhan-dien` tài liệu hoá quy chuẩn áp dụng thống nhất cho **toàn bộ file** của GITA:
 
@@ -182,7 +200,7 @@ Trang `/nhan-dien` tài liệu hoá quy chuẩn áp dụng thống nhất cho **
 - **Quy chuẩn trình bày bài giải**: 4 khối cố định (Đề bài → Phân tích tư duy → Lời giải → Bẫy thường gặp) và nguyên tắc ngôn ngữ.
 - **Quy tắc đặt mã**: cấu trúc mã đề, mã chuyên đề, mã dạng bài, mã khuôn câu hỏi.
 
-## 14. Về lưu trữ dữ liệu
+## 15. Về lưu trữ dữ liệu
 
 Bản này lưu dữ liệu học tập trên trình duyệt (localStorage) để hệ thống chạy độc lập,
 không cần máy chủ. Lớp `src/lib/store.ts` đóng vai trò kho dữ liệu — khi triển khai máy chủ

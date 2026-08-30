@@ -7,6 +7,7 @@ import { getTheme, setTheme } from '@/lib/store';
 const NAV = [
   { to: '/', label: 'Trang chủ' },
   { to: '/lo-trinh', label: 'Lộ trình' },
+  { to: '/giao-an', label: 'Giáo án' },
   { to: '/chuyen-de', label: 'Chuyên đề' },
   { to: '/luyen-tap', label: 'Luyện tập' },
   { to: '/bo-de', label: 'Bộ đề' },

@@ -22,6 +22,7 @@ import { Library } from '@/pages/Library';
 import { Practice } from '@/pages/Practice';
 import { Notebook } from '@/pages/Notebook';
 import { Brand } from '@/pages/Brand';
+import { Curriculum } from '@/pages/Curriculum';
 import { Card } from '@/components/ui';
 
 const Footer: React.FC = () => (
@@ -73,6 +74,7 @@ export const App: React.FC = () => {
   else if (p === '/luyen-tap') body = <Practice />;
   else if (p === '/so-tay') body = <Notebook />;
   else if (p === '/nhan-dien') body = <Brand />;
+  else if (p === '/giao-an') body = <Curriculum />;
   else body = (
     <div className="wrap page">
       <Card className="tc">

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { useAuth, lockReason } from '@/lib/auth';
 import { Card, LockedBox, M, Note } from '@/components/ui';
-import { FORMULAS, GRADES, TERM_LABEL, getRoadmap, getTermMindMap, topicsOfGrade } from '@/content';
+import { FORMULAS, GITA_FULL_NAME, GITA_SLOGAN, GRADES, TERM_LABEL, getRoadmap, getTermMindMap, lessonsOfTopic, topicsOfGrade } from '@/content';
 import { generateDrill } from '@/lib/exams';
 import { Logo } from '@/components/Logo';
 import type { Grade, Level, Question } from '@/types';
@@ -25,11 +25,17 @@ export const Library: React.FC = () => {
   const [count, setCount] = useState(10);
   const [seed, setSeed] = useState(() => Math.floor(Math.random() * 1e6));
   const [showKey, setShowKey] = useState(true);
+  const [sheet, setSheet] = useState<'CB' | 'NC'>('CB');
 
   const topic = topics.find((t) => t.id === topicId) ?? topics[0];
   const questions: Question[] = useMemo(
     () => (topic ? generateDrill(topic.id, levels, count, seed, { kinds: ['MC', 'TF', 'SHORT'] }) : []),
     [topic, levels, count, seed]
+  );
+  /* Phần VỀ ĐÍCH: 3 thử thách tổng hợp ở mức cao hơn một bậc */
+  const finishLine: Question[] = useMemo(
+    () => (topic ? generateDrill(topic.id, sheet === 'CB' ? ['TH', 'VD'] : ['VD', 'VDC'], 3, seed + 7777, { kinds: ['MC', 'SHORT', 'ESSAY'] }) : []),
+    [topic, seed, sheet]
   );
 
   const toggle = (l: Level) => setLevels((ls) => (ls.includes(l) ? ls.filter((x) => x !== l) : [...ls, l]));
@@ -81,6 +87,11 @@ export const Library: React.FC = () => {
             </div>
             <span className="label" style={{ margin: 0 }}>Số câu:</span>
             <input className="input" style={{ width: 90 }} type="number" min={5} max={30} value={count} onChange={(e) => setCount(Number(e.target.value))} />
+            <span className="label" style={{ margin: 0 }}>Loại phiếu:</span>
+            <div className="chip-row">
+              <button className={`chip${sheet === 'CB' ? ' on' : ''}`} onClick={() => { setSheet('CB'); setLevels(['NB', 'TH']); }}>Cơ bản</button>
+              <button className={`chip${sheet === 'NC' ? ' on' : ''}`} onClick={() => { setSheet('NC'); setLevels(['TH', 'VD', 'VDC']); }}>Nâng cao</button>
+            </div>
             <label className="row" style={{ gap: 6 }}>
               <input type="checkbox" checked={showKey} onChange={() => setShowKey((s) => !s)} /> <span className="small">Kèm đáp án &amp; lời giải</span>
             </label>
@@ -99,52 +110,116 @@ export const Library: React.FC = () => {
 
       {/* --------- KHUNG TÀI LIỆU IN --------- */}
       <Card>
-        <div className="between mb4" style={{ borderBottom: '3px solid var(--brand)', paddingBottom: 12 }}>
-          <Logo onLight sub="Tài liệu học tập" />
-          <div className="tr small">
-            <div className="bold">TRUNG TÂM GITA</div>
-            <div className="faint">Chương trình MATH365 · CHUYÊN · CLC</div>
+        {doc !== 'phieu' && (
+          <div className="between mb4" style={{ borderBottom: '3px solid var(--brand)', paddingBottom: 12 }}>
+            <Logo onLight sub="Tài liệu học tập" />
+            <div className="tr small">
+              <div className="bold">TRUNG TÂM GITA</div>
+              <div className="faint">Chương trình MATH365 · CHUYÊN · CLC</div>
+            </div>
           </div>
-        </div>
+        )}
 
         {doc === 'phieu' && topic && (
           <>
-            <div className="tc mb6">
-              <h2 style={{ marginBottom: 4 }}>PHIẾU BÀI TẬP TOÁN {grade}</h2>
-              <div className="bold">{topic.name}</div>
-              <div className="faint">{TERM_LABEL[topic.term]} · {questions.length} câu · Mức độ: {levels.join(' – ')}</div>
-              <div className="mt3 small">Họ và tên học sinh: .............................................. Lớp: ............ Ngày: ......../......../20......</div>
+            {/* ---- Đầu phiếu theo đúng mẫu GITA ---- */}
+            <div className="gita-sheet-head">
+              <div className="gita-academy">{GITA_FULL_NAME}</div>
+              <div className="grid g2 mt3 small">
+                <div>Giáo viên: ......................................................</div>
+                <div className="tr">Ngày: ......../......../20......</div>
+              </div>
+              <div className="small mt2">Họ và tên học sinh: ................................................................ Lớp: {grade}{sheet}</div>
+              <div className="small mt2">Mục tiêu: ..................................................................................................................</div>
             </div>
-            {questions.map((q, i) => (
+
+            <div className="gita-sheet-title">
+              <div>{sheet === 'CB' ? 'PHIẾU CƠ BẢN' : 'PHIẾU NÂNG CAO'}: <M t={topic.name.toUpperCase()} /></div>
+              <div className="gita-sheet-year">Năm học: 2025 – 2026</div>
+            </div>
+
+            {/* ---- Tóm tắt lý thuyết ---- */}
+            <div className="mt6">
+              <div className="gita-section">TÓM TẮT LÝ THUYẾT</div>
+              {topic.theory.map((b, i) => (
+                <div key={i} className="mb4" style={{ breakInside: 'avoid' }}>
+                  <div className="bold">{b.heading}</div>
+                  {b.formulas?.map((f, j) => <div key={j} className="mq-blk" style={{ margin: '6px 0' }}><M t={f} /></div>)}
+                  {b.caution && b.caution.length > 0 && (
+                    <div className="small" style={{ color: 'var(--bad)' }}>
+                      ⚠ {b.caution.map((c, j) => <span key={j}><M t={c} />{j < b.caution!.length - 1 ? ' · ' : ''}</span>)}
+                    </div>
+                  )}
+                </div>
+              ))}
+              {lessonsOfTopic(topic.id).length > 0 && (
+                <div className="small muted">
+                  Buổi học tương ứng trong giáo án GITA:{' '}
+                  {lessonsOfTopic(topic.id).map((x, i) => (
+                    <span key={i}><strong>{x.lesson.code}</strong> — {x.lesson.title}{i < lessonsOfTopic(topic.id).length - 1 ? ' · ' : ''}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* ---- Thử thách ---- */}
+            <div className="mt6">
+              {questions.map((q, i) => (
+                <div key={q.id} style={{ marginBottom: 18, breakInside: 'avoid' }}>
+                  <div className="bold">
+                    <span style={{ color: 'var(--gita-navy-800)' }}>THỬ THÁCH {i + 1}:</span> <M t={q.stem} />
+                  </div>
+                  {q.options && (
+                    <div className="grid g2 mt2" style={{ gap: 6 }}>
+                      {q.options.map((o, j) => (
+                        <div key={j} className="small"><strong>{q.kind === 'TF' ? `${'abcd'[j]}.` : `${'ABCD'[j]}.`}</strong> <M t={o} /></div>
+                      ))}
+                    </div>
+                  )}
+                  {q.kind === 'SHORT' && <div className="faint mt2">Trả lời: ..................................................</div>}
+                  {q.kind === 'ESSAY' && <div className="mt2" style={{ height: 90, borderBottom: '1px dashed var(--border-strong)' }} />}
+                </div>
+              ))}
+            </div>
+
+            {/* ---- Về đích ---- */}
+            <div className="gita-section mt8">VỀ ĐÍCH</div>
+            <p className="small muted">Phần thử thách tổng hợp — làm sau khi đã hoàn thành các thử thách ở trên.</p>
+            {finishLine.map((q, i) => (
               <div key={q.id} style={{ marginBottom: 18, breakInside: 'avoid' }}>
-                <div className="bold"><span style={{ color: 'var(--brand)' }}>Câu {i + 1}.</span> <M t={q.stem} /></div>
+                <div className="bold">
+                  <span style={{ color: 'var(--gita-gold-700)' }}>THỬ THÁCH {i + 1}:</span> <M t={q.stem} />
+                </div>
                 {q.options && (
                   <div className="grid g2 mt2" style={{ gap: 6 }}>
-                    {q.options.map((o, j) => (
-                      <div key={j} className="small"><strong>{'ABCD'[j]}.</strong> <M t={o} /></div>
-                    ))}
+                    {q.options.map((o, j) => <div key={j} className="small"><strong>{'ABCD'[j]}.</strong> <M t={o} /></div>)}
                   </div>
                 )}
-                {q.kind === 'SHORT' && <div className="faint mt2">Đáp số: ..................................................</div>}
-                {q.kind === 'ESSAY' && <div className="faint mt2" style={{ height: 90, borderBottom: '1px dashed var(--border-strong)' }} />}
+                {q.kind !== 'MC' && <div className="faint mt2">Trả lời: ..................................................</div>}
               </div>
             ))}
+
+            {/* ---- Đáp án ---- */}
             {showKey && (
               <div style={{ breakBefore: 'page', borderTop: '3px solid var(--gita-gold-600)', paddingTop: 16, marginTop: 24 }}>
-                <h3>ĐÁP ÁN &amp; LỜI GIẢI CHI TIẾT</h3>
-                {questions.map((q, i) => (
+                <div className="gita-section">ĐÁP ÁN &amp; LỜI GIẢI CHI TIẾT</div>
+                {[...questions, ...finishLine].map((q, i) => (
                   <div key={q.id} className="mb4" style={{ breakInside: 'avoid' }}>
-                    <div className="bold">Câu {i + 1}. Đáp án: {
-                      q.kind === 'MC' ? 'ABCD'[q.answer as number]
-                        : q.kind === 'TF' ? (q.answer as boolean[]).map((b, j) => `${'abcd'[j]}-${b ? 'Đ' : 'S'}`).join('; ')
-                          : q.kind === 'SHORT' ? <M t={String(q.answer)} /> : 'Theo thang điểm'
-                    }</div>
-                    <ol className="small">{q.solution.map((s, j) => <li key={j}><M t={s} /></li>)}</ol>
+                    <div className="bold">
+                      {i < questions.length ? `Thử thách ${i + 1}` : `Về đích — Thử thách ${i - questions.length + 1}`}. Đáp án: {
+                        q.kind === 'MC' ? 'ABCD'[q.answer as number]
+                          : q.kind === 'TF' ? (q.answer as boolean[]).map((b, j) => `${'abcd'[j]}-${b ? 'Đ' : 'S'}`).join('; ')
+                            : q.kind === 'SHORT' ? <M t={String(q.answer)} /> : 'Theo thang điểm'
+                      }
+                    </div>
+                    <ol className="small">{q.solution.map((s2, j) => <li key={j}><M t={s2} /></li>)}</ol>
                     {q.pitfall && <div className="small" style={{ color: 'var(--bad)' }}>⚠ Bẫy: <M t={q.pitfall} /></div>}
                   </div>
                 ))}
               </div>
             )}
+
+            <div className="gita-slogan">‘‘{GITA_SLOGAN}’’</div>
           </>
         )}
 

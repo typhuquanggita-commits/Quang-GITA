@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useRouter } from '@/lib/router';
 import { useAuth, lockReason } from '@/lib/auth';
 import { Bullets, Card, DecodeView, LevelBadge, LockedBox, M, MindMapView, Note, Steps } from '@/components/ui';
-import { STRAND_LABEL, TERM_LABEL, getTermMindMap, getTopic } from '@/content';
+import { STRAND_LABEL, TERM_LABEL, getTermMindMap, getTopic, lessonsOfTopic } from '@/content';
 import { markStudied } from '@/lib/store';
 import { templatesOfTopic } from '@/bank';
 
@@ -45,6 +45,21 @@ export const TopicDetail: React.FC<{ id: string }> = ({ id }) => {
       <Note title="🎯 Yêu cầu cần đạt (theo Chương trình GDPT 2018)">
         <Bullets items={topic.outcomes} />
       </Note>
+
+      {lessonsOfTopic(topic.id).length > 0 && (
+        <Note title="📅 Buổi học tương ứng trong giáo án GITA" tone="gold">
+          <div className="stack" style={{ gap: 8 }}>
+            {lessonsOfTopic(topic.id).map((x, i) => (
+              <div key={i} className="row-wrap">
+                <span className="badge badge-brand">Chương {x.chapter.roman}</span>
+                <span className="badge badge-gold">{x.lesson.code}</span>
+                <span><M t={x.lesson.title} /></span>
+              </div>
+            ))}
+          </div>
+          <div className="mt3"><Link to={`/giao-an?khoi=${topic.grade}`} className="btn btn-sm btn-outline">Xem toàn bộ giáo án khối {topic.grade} →</Link></div>
+        </Note>
+      )}
 
       <div className="tabs mt6">
         {TABS.map((t) => (

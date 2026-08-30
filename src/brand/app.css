@@ -350,3 +350,28 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .sys { display: inline-flex; align-items: center; vertical-align: middle; gap: 2px; }
 .sys-brace { font-size: 2.1em; line-height: .8; font-weight: 300; }
 .sys-rows { display: inline-flex; flex-direction: column; text-align: left; line-height: 1.45; }
+
+/* ============ MẪU PHIẾU BÀI TẬP CHUẨN GITA ============ */
+.gita-sheet-head { border: 1.5px solid var(--border-strong); border-radius: var(--r-md); padding: var(--sp-4); }
+.gita-academy {
+  text-align: center; font-weight: 800; letter-spacing: .06em;
+  color: var(--gita-navy-800); border-bottom: 2px solid var(--gita-navy-800);
+  padding-bottom: 8px; font-size: var(--fs-md);
+}
+.gita-sheet-title {
+  margin-top: var(--sp-4); text-align: center; border: 2px solid var(--gita-navy-800);
+  border-radius: var(--r-md); padding: var(--sp-3) var(--sp-4);
+  font-weight: 800; font-size: var(--fs-lg); color: var(--gita-navy-800);
+  background: var(--gita-navy-050);
+}
+.gita-sheet-year { font-size: var(--fs-sm); font-weight: 600; color: var(--text-muted); margin-top: 4px; }
+.gita-section {
+  font-weight: 800; letter-spacing: .05em; color: var(--gita-navy-800);
+  border-left: 5px solid var(--gita-gold-600); padding-left: 10px; margin-bottom: var(--sp-3);
+  font-size: var(--fs-md);
+}
+.gita-slogan {
+  margin-top: var(--sp-8); text-align: center; font-weight: 800; font-style: italic;
+  letter-spacing: .04em; color: var(--gita-navy-800); border-top: 2px solid var(--gita-gold-600);
+  padding-top: var(--sp-4);
+}
