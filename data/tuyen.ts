@@ -114,6 +114,7 @@ export const TAB_TUYEN: Record<string, TuyenId[]> = {
   chuyende: ['ielts', 'chuyen'],
   bode: ['ielts', 'chuyen'],
   dethi: ['chuyen'],
+  thithu: ['ielts', 'chuyen'],
   lambai: ['ielts', 'chuyen'],
   hoso: ['ielts', 'chuyen'],
   giangsau: ['ielts', 'chuyen'],

@@ -706,32 +706,84 @@ chước chính là chỗ thành bất công giữa hai học viên.
 Hệ thống trước đây mới có **ma trận** đề. Ma trận dạy được cách chia giờ nhưng không cho
 cái cảm giác ngồi trước một đề thật từ câu một tới câu cuối.
 
-**58 câu · 58 lời giải riêng · 10 phần · 10 barem · 2 bài đọc.**
+**206 câu · 206 lời giải riêng · 11 phần · 11 barem · 3 bài đọc · 320 phút.**
 
-| Đề | Kỳ thi | Cấu trúc thật | Bản mẫu |
+| Đề | Kỳ thi | Cấu trúc thật | Bản trong hệ thống |
 |---|---|---|---|
-| Chuyên Anh Sở Hà Nội | Vào 10 chuyên | 120 phút · ~86 câu · 5 phần | 28 câu, phủ đủ 5 phần |
-| Ngoại ngữ chung Hà Nội | Vào 10 công lập | 60 phút · 40 câu · 24 mã đề | 12 câu, có cả 5 dạng thực tế mới |
-| Chuyên KHTN vòng 2 | Chuyên KHTN | 90 phút · nặng suy luận | 8 câu, đúng các cấu trúc vòng 2 hay ra |
-| Tốt nghiệp THPT | Tốt nghiệp | 50 phút · 40 câu · 3 khối | 10 câu, phủ đủ 3 khối |
+| Chuyên Anh Sở Hà Nội | Vào 10 chuyên | 120 phút · 86 câu · 5 phần | **86 câu — đủ độ dài thật** |
+| Ngoại ngữ chung Hà Nội | Vào 10 công lập | 60 phút · 40 câu · 24 mã đề | **40 câu — đủ độ dài thật** |
+| Chuyên KHTN vòng 2 | Chuyên KHTN | 90 phút · nặng suy luận | 40 câu — **số câu là giả định** |
+| Tốt nghiệp THPT | Tốt nghiệp | 50 phút · 40 câu · 3 khối | **40 câu — đủ độ dài thật** |
 
 Mỗi đề có: **thứ tự làm bài khuyến nghị** kèm lý do, **cách chia giờ** từng phần, **barem
 chấm** từng phần, và một **cảnh báo riêng** cho kỳ thi đó. Mỗi câu neo về một dạng bài
 trong hệ thống, nên làm sai là tra ngay được bộ giải đề của dạng đó.
 
-**Vì sao rút gọn, và nói ra thay vì giấu.** Câu thứ hai mươi cùng một dạng gần như không
-dạy thêm gì; một dạng chưa gặp thì dạy rất nhiều. Nên mỗi đề mẫu ít câu hơn đề thật nhưng
-**phủ đủ mọi dạng** của phần đó, và số câu thật được ghi ngay trong đề.
+**Chỗ duy nhất còn là giả định, và nói ra thay vì giấu.** Ba đề đã đúng số câu công bố
+của kỳ thi thật. Riêng chuyên KHTN vòng 2 lấy 40 câu / 90 phút, vì trường **không công
+bố số câu cố định** giữa các năm — con số đó là lựa chọn của hệ thống, không phải trích
+dẫn, và `canhBao` của chính đề đó nói thẳng điều này ra màn hình.
 
 **Không dùng để đoán đề.** Cấu trúc và công thức điểm thay đổi theo từng năm và từng
 trường. Đề mẫu để luyện cảm giác và luyện phân bổ giờ. Trước mỗi mùa thi **phải** đối
 chiếu lại với đề án tuyển sinh chính thức — mỗi đề tự mang lời nhắc đó, và có bài kiểm ép
 lời nhắc phải còn ở đó.
 
-Bài kiểm `tools/kiem-dethi.ts` bắt được **bốn lỗi thật** trong chính bản soạn đầu: một
-barem cụt, một bài đọc quá ngắn so với số câu hỏi, và hai đề quên ghi mình là bản rút gọn.
-Nó cũng soát đáp án có rải đều bốn ô không — dồn vào một ô là thí sinh đoán trúng mà
-không hiểu.
+Bài kiểm `tools/kiem-dethi.ts` bắt được lỗi thật trong chính bản soạn: một barem cụt, một
+bài đọc quá ngắn so với số câu hỏi, **hai đề khai tổng điểm không khớp với tổng điểm các
+phần** (8,6 và 2,5 trên thang 10 — luật cũ chỉ đối chiếu phần với câu, chưa bao giờ đối
+chiếu với con số tự khai), và một lần đáp án dồn lệch (A 37 · B 44 · C 42 · **D 24**).
+Chặn trần 30% không bắt được ca đó, vì không ô nào vượt trần — nên luật nay có **cả sàn
+18%**.
+
+## ⏱ Thi thử bấm giờ — làm thật, chấm ngay
+
+Thẻ **Đề thi mẫu** là để **đọc**: xem cấu trúc, đọc lời giải, hiểu barem. Ở đó đáp án bày
+sẵn là đúng. Nhưng đọc lời giải không phải là làm bài, và một hệ thống chỉ có màn hình đọc
+thì không đo được gì.
+
+Thẻ **Thi thử bấm giờ** là để **làm**: đáp án bị giấu, đồng hồ chạy, nộp rồi mới được xem.
+
+**Đồng hồ chạy theo thời gian ngoài đời.** Hệ thống ghi lại **mốc bắt đầu**, không ghi số
+giây còn lại. Đóng trang rồi mở lại thì đồng hồ đã trôi tiếp đúng bằng thời gian đã qua,
+và bài làm dở vẫn còn nguyên. Ghi số giây còn lại thì đóng trang là đồng hồ dừng — và bài
+thi thử tự cho thêm giờ mà không ai biết. Vì lý do đó, số giây cũng được **tính lại từ mốc
+bắt đầu mỗi nhịp**, không trừ dần một biến đếm: tab chạy nền bị trình duyệt bóp nhịp, và
+biến trừ dần sẽ chạy chậm hơn đời thật.
+
+**Kết quả là hai con số, không phải một.**
+
+| Con số | Nghĩa |
+|---|---|
+| **Điểm đã chấm được** | Phần máy **chứng minh được** là đúng |
+| **Điểm chờ tự chấm** | Phần máy **không đủ tư cách kết luận**, học viên tự đối chiếu barem |
+
+Gộp hai con số lại thành một điểm duy nhất là nói dối theo hướng có lợi. Tách ra thì học
+viên biết chính xác mình đang đứng ở đâu.
+
+**Máy không bao giờ kết luận SAI cho câu tự luận.** Trong 206 câu có 59 câu trả lời tự do.
+Với những câu đó, một câu trả lời không khớp mẫu chỉ được xếp là **chờ tự chấm** — không
+bao giờ là *sai*. Máy so chuỗi ký tự, mà chuỗi khác nhau không có nghĩa là câu trả lời
+sai. Bài kiểm quét cả 59 câu đó bằng câu trả lời rác và ép kết quả: **không câu nào bị máy
+kết luận sai**.
+
+Bộ chấm chuẩn hoá trước khi so — thường hoá chữ, gộp `→ / -> / =>`, bỏ nháy và dấu câu
+cuối — và đọc được cả dạng có phương án thay thế: `"Despite of → Despite (hoặc In spite
+of)"` sinh ra ba chuỗi đáp án nhận được.
+
+**Hai bài kiểm giữ tầng này.**
+
+- `npm run test:chamthi` — bộ chấm thuần hàm. Bất biến mạnh nhất: **điền đáp án mẫu cho
+  mọi câu của một đề thì tổng phải đúng bằng thang điểm đã khai** — không xê xích một
+  phần nghìn. Kèm bài kiểm đồng hồ (hết giờ về đúng 0, quá giờ rất lâu vẫn là 0).
+- `npm run test:thithu` — trình duyệt thật, chạy trọn luồng: chọn đề → làm → **tải lại
+  trang** → nộp → đọc kết quả → lịch sử. Ba điều chỉ trình duyệt mới nói được: đáp án có
+  thật sự bị giấu khỏi DOM trong lúc làm bài không, bài làm có sống sót qua lần tải lại
+  không, và đồng hồ có trôi tiếp theo thời gian thật không. Cả ba đều đã được **thử phá**:
+  cố tình để lộ `Đáp án —` ra màn hình làm bài, và cố tình bỏ lệnh lưu bài — bài kiểm
+  hỏng đúng ở cả hai lần, với mã thoát 1.
+
+Lịch sử thi thử lưu trong trình duyệt của học viên, **không gửi đi đâu**.
 
 ## 🛡 Bảo mật — bốn lỗ hổng đã bịt
 
@@ -1387,7 +1439,7 @@ gì. Nay cả ba đều có thẻ riêng, cùng với SAT và IELTS 9.0:
 | **SAT** | cấu trúc, 8 miền, 36 dạng, lịch thi, ba tuyến so sánh |
 | **IELTS 9.0** | số học của 9.0 (bấm thử được), biên lỗi Nghe/Đọc, 6 tiêu chí, 5 đường sai |
 
-Hệ thống nay có **44 thẻ** và **39 trang công khai xếp hạng được**. Gói tải
+Hệ thống nay có **45 thẻ** và **40 trang công khai xếp hạng được**. Gói tải
 lần đầu chỉ tăng 3 kB nhờ tải theo nhu cầu.
 
 ## 🔎 Tầng SEO — 34 trang xếp hạng được thay vì 1

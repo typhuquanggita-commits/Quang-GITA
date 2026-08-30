@@ -23,11 +23,12 @@ import {DeThiMau, CauDeThi, PhanDeThi} from '../types';
      luyện cảm giác và luyện phân bổ giờ, KHÔNG phải để đoán đề.
 
    VỀ SỐ CÂU
-     Đề chuyên Sở thật có khoảng 86 câu. Ở đây mỗi đề mẫu có số câu ít hơn
-     nhưng PHỦ ĐỦ MỌI DẠNG của phần đó, vì cái học được từ câu thứ hai mươi
-     cùng dạng là gần bằng không, còn cái học được từ một dạng chưa gặp thì
-     rất lớn. Số câu thật của từng phần được ghi trong `theoCauTruc` để học
-     viên biết mình đang luyện trên bản rút gọn.
+     Bốn đề ở đây đã ĐỦ ĐỘ DÀI, không còn là bản rút gọn: chuyên Sở Hà Nội 86
+     câu / 120 phút, ngoại ngữ chung vào 10 Hà Nội 40 câu / 60 phút, tốt
+     nghiệp THPT 40 câu / 50 phút. Riêng KHTN vòng 2 lấy 40 câu / 90 phút là
+     một GIẢ ĐỊNH, vì trường không công bố số câu cố định giữa các năm — chỗ
+     này được nói thẳng trong `canhBao` của đề đó thay vì giấu đi.
+     Số câu thật của từng phần vẫn ghi trong `theoCauTruc` để đối chiếu.
    ========================================================================== */
 
 export const DETHI_CREED = {
@@ -36,8 +37,8 @@ export const DETHI_CREED = {
     'Bốn đề mẫu theo đúng cấu trúc bốn kỳ thi có thật, mỗi câu có đáp án và lời giải riêng, mỗi phần có barem chấm.',
   khongDoanDe:
     'Đề mẫu để luyện cảm giác và luyện phân bổ giờ, KHÔNG phải để đoán đề. Cấu trúc thay đổi theo năm và theo trường; trước mỗi mùa thi phải đối chiếu lại với đề án tuyển sinh chính thức.',
-  rutGon:
-    'Mỗi đề mẫu ít câu hơn đề thật nhưng phủ đủ mọi dạng của phần đó. Câu thứ hai mươi cùng một dạng gần như không dạy thêm gì; một dạng chưa gặp thì dạy rất nhiều.',
+  doDai:
+    'Bốn đề đã đủ độ dài thật: 86 câu/120 phút cho chuyên Sở Hà Nội, 40 câu/60 phút cho ngoại ngữ chung vào 10, 40 câu/50 phút cho tốt nghiệp THPT. Riêng KHTN vòng 2 lấy 40 câu/90 phút là giả định, vì số câu không được công bố cố định giữa các năm.',
   baremThat:
     'Barem nói cả chỗ cho điểm lẫn chỗ trừ điểm. Phần viết có barem theo tiêu chí, không chấm bằng cảm tính.',
 };

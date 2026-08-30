@@ -89,6 +89,7 @@ export const TAB_QUYEN: Record<string, string> = {
   lambai: 'q-lam-phieu',
   bode: 'q-lam-phieu',
   dethi: 'q-lam-phieu',
+  thithu: 'q-lam-phieu',
 
   /* Hồ sơ cá nhân — cần quyền xem hồ sơ của chính mình. */
   hoso: 'q-xem-ho-so-minh',

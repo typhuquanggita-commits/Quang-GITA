@@ -52,6 +52,7 @@ const HoSo = lazy(() => import('./components/engwin/HoSo').then((m) => ({default
 const LamBai = lazy(() => import('./components/engwin/LamBai').then((m) => ({default: m.LamBai})));
 const BoDe = lazy(() => import('./components/engwin/BoDe').then((m) => ({default: m.BoDe})));
 const DeThi = lazy(() => import('./components/engwin/DeThi').then((m) => ({default: m.DeThi})));
+const ThiThu = lazy(() => import('./components/engwin/ThiThu').then((m) => ({default: m.ThiThu})));
 
 /** Bối cảnh truyền xuống tab. Hầu hết tab không cần, nên chúng bỏ qua tham số. */
 interface NavCtx {
@@ -243,9 +244,17 @@ const NAV: Nav[] = [
     id: 'dethi',
     icon: '📄',
     label: 'Đề thi mẫu',
-    hint: '4 đề trọn vẹn · 58 lời giải',
+    hint: '4 đề trọn vẹn · 206 lời giải',
     group: 'learner',
     render: () => <DeThi />,
+  },
+  {
+    id: 'thithu',
+    icon: '⏱️',
+    label: 'Thi thử bấm giờ',
+    hint: '4 đề · 206 câu · chấm ngay',
+    group: 'learner',
+    render: () => <ThiThu />,
   },
   {
     id: 'decuong',

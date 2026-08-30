@@ -101,8 +101,8 @@ export const DeThi: React.FC = () => {
           {DETHI_CREED.khongDoanDe}
         </p>
         <p className="mt-2 text-[13px] leading-relaxed text-slate-300">
-          <span className="font-semibold text-slate-400">Vì sao rút gọn — </span>
-          {DETHI_CREED.rutGon}
+          <span className="font-semibold text-slate-400">Về độ dài — </span>
+          {DETHI_CREED.doDai}
         </p>
       </Card>
 
