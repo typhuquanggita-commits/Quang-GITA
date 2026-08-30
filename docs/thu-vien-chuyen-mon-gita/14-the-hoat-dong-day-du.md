@@ -929,3 +929,247 @@
 
 > **Sai lầm thường gặp khi dẫn:** để đội cho người khoẻ nhất chạy 800 m cho nhanh. Vừa vượt ngưỡng an toàn cá nhân, vừa xoá mất bài học trung tâm là phân bổ theo năng lực; Trainer phải duyệt bảng phân chặng trước khi cho xuất phát.
 
+---
+
+## 5. NGÀY 5 · VALUE-BASED LEADERSHIP
+
+## A5-01 · Cuộc thi ảnh – video team
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| T — Tài năng | 9–18 | 90 phút | 6–8 học viên/đội | Toàn khu trại có ranh giới |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-18` Công nghệ và AI · `NL-11` Giao tiếp · `NL-12` Hợp tác | Thấp | Máy ảnh hoặc điện thoại trại ×1/đội, thẻ nhớ ×1/đội, bảng kịch bản A3 ×1/đội, máy chiếu ×1, phiếu đồng ý ghi hình |
+
+**Mục tiêu học tập** — Đội **sản xuất** được một sản phẩm 60–90 giây thể hiện bản sắc đội, có mở – thân – kết rõ và **100% người xuất hiện đã đồng ý ghi hình**.
+
+**Chuẩn bị** — Thiết bị của trại (không dùng điện thoại cá nhân học viên), thẻ nhớ trống, bảng kịch bản A3 in sẵn 3 ô. **Phiếu đồng ý ghi hình** cho toàn bộ học viên và nhân sự, thu trước khi bấm máy. Máy chiếu và loa cho buổi trình chiếu. Ranh giới quay phim đánh dấu bằng cờ; khu bếp, khu y tế, khu vệ sinh là **vùng cấm quay**.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Chiếu 2 clip mẫu 30 giây, hỏi: *"Clip nào làm em nhớ, và nhớ vì chi tiết nào?"*
+2. **Trải nghiệm (45 phút)** — Bước 1: đội viết kịch bản 3 ô trong 10 phút, chốt thông điệp bằng **một câu**. Bước 2: phân vai — đạo diễn, quay, diễn, dựng. Bước 3: quay 20 phút trong ranh giới cờ. Bước 4: dựng 12 phút bằng ứng dụng có sẵn trên thiết bị. Bước 5: nộp file, ACT kiểm nhanh nội dung trước khi chiếu. Lời dẫn: *"Trước khi quay ai, hỏi bạn ấy một câu: 'mình quay bạn được không?'. Ai lắc đầu thì mình không quay — kể cả bạn ấy đang đứng giữa khung hình."*
+3. **Quan sát và chia sẻ (10 phút)** — Chiếu toàn bộ sản phẩm. Mỗi đội nói **một điều học được** từ clip đội bạn. Không chấm điểm xếp hạng cá nhân.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Thông điệp một câu của đội là gì, và clip có nói được câu đó không? (2) Lúc bị quay, em thấy thế nào? Lúc phải hỏi bạn xin phép, em thấy thế nào? (3) Vì sao cùng một đội mà mỗi clip lại kể một câu chuyện khác? (4) Nguyên lý: người quay quyết định điều gì được nhớ — điều đó tạo ra trách nhiệm nào? (5) Nếu clip này lên mạng, có chi tiết nào có thể làm ai đó khó xử không? (6) Ở nhà, em sẽ hỏi gì trước khi đăng ảnh có mặt người khác?
+5. **Áp dụng (10 phút)** — Đội viết "3 quy tắc đăng ảnh bạn bè" của riêng đội, dán lên bảng đội và mang về nhà.
+
+**An toàn** — Rủi ro: quay ở khu vực nguy hiểm, ngã khi vừa đi vừa nhìn màn hình, và **rủi ro quyền hình ảnh**. Biện pháp: vùng cấm quay được phổ biến và cắm biển; cấm quay khi đang leo, đứng trên cao, hoặc gần bể nước; **phiếu đồng ý ghi hình bắt buộc**; ACT duyệt nội dung trước khi chiếu; file lưu trên thiết bị trại, **không đăng lên mạng xã hội nếu chưa có đồng ý của gia đình**.
+
+**Quyền được dừng** — *"Em không muốn xuất hiện trong clip thì nói 'con xin dừng' — không ai được quay em, và em vẫn có vai trong đội: viết kịch bản, dựng, hoặc quay. Đội không mất điểm, không ai hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** chỉ làm bộ ảnh 6 tấm kèm chú thích, không dựng video; ACT cầm máy. **16–18:** video 90 giây, thêm yêu cầu nêu rõ công cụ AI nào đã dùng (nếu có) và dùng vào khâu nào.
+
+> **Sai lầm thường gặp khi dẫn:** cho học viên mượn điện thoại cá nhân để quay cho tiện. Ảnh và video của trẻ nằm trên thiết bị cá nhân là rủi ro dữ liệu không kiểm soát được; chỉ dùng thiết bị của trại và thu file cuối buổi.
+
+## A5-02b · Tấm áo Leader — Bức tranh của đội *(thay thế cho A5-02)*
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| I — Nội lực | 9–18 | 55 phút | 8–12 học viên/đội | Hội trường, ánh sáng đủ |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-15` Lãnh đạo bản thân · `NL-16` Phản tư | Thấp | Áo trắng trơn ×1/đội (áo của Leader, đã xin phép), bút vẽ vải ×8 màu/đội, khăn trải bàn, giấy nháp A4 |
+
+**Mục tiêu học tập** — Học viên **nhận ra** đóng góp cụ thể của mình đã để lại dấu vết trên hành trình của người dẫn dắt, và **viết** được một câu ghi nhận đích danh, không dùng lời khen chung chung.
+
+**Chuẩn bị** — Áo trắng trơn ×1/đội — **áo do Leader tự nguyện đưa**, hỏi trước ít nhất một buổi. Bút vẽ vải không độc, không dùng mực đổ, **không dùng chất lỏng giả máu, không dùng bất kỳ hình ảnh thương tích nào**. Bàn trải khăn. Giấy nháp để viết thử câu ghi nhận.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Vòng tròn: mỗi người nhớ lại **một khoảnh khắc** trong 5 ngày qua mà mình thấy đội hoạt động tốt.
+2. **Trải nghiệm (20 phút)** — Bước 1: mỗi người viết nháp một câu ghi nhận **đích danh Leader hoặc một đồng đội**, phải nêu việc cụ thể (*"Hôm kéo dây, bạn đã đổi chỗ cho mình khi mình mỏi tay"*). Bước 2: ACT đọc lướt nháp, chặn câu chung chung và câu mỉa mai. Bước 3: từng người lên viết câu đó lên áo, kèm ký hiệu riêng của mình. Bước 4: Leader mặc áo, đứng giữa vòng. Bước 5: cả đội đọc to lần lượt các câu. Lời dẫn: *"Đừng viết 'bạn giỏi lắm'. Viết cái bạn ấy đã làm mà em nhớ. Một câu có việc cụ thể nặng hơn mười câu khen."*
+3. **Quan sát và chia sẻ (5 phút)** — Leader nói: câu nào làm mình bất ngờ, và vì sao.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Trên áo có bao nhiêu chữ ký và bao nhiêu việc cụ thể được nhắc? (2) Lúc thấy tên mình được nhắc trong câu của bạn, em thấy thế nào? (3) Vì sao một việc nhỏ mình làm mà quên rồi lại được người khác nhớ? (4) Nguyên lý: dấu vết của một người trong đội được tạo ra bằng gì — chức vụ hay hành động lặp lại? (5) Có ai trong đội chưa được ai nhắc tới không, và điều đó nói gì với chúng ta? (6) Ở nhà, ai đang để lại dấu trên hành trình của em mà em chưa nói ra?
+5. **Áp dụng (10 phút)** — Mỗi học viên viết **một tin nhắn ghi nhận** gửi cho một người ở nhà, nộp cho ACT để gửi trong ngày Family Day.
+
+**An toàn** — Không sử dụng hình ảnh máu, thương tích, hy sinh, và **không có bất kỳ hình thức kỷ luật liên đới nào**. Rủi ro: mực vẽ dính da và dị ứng; học viên bị bỏ sót không ai nhắc tên. Biện pháp: bút vẽ vải gốc nước, có găng nilon cho học viên dị ứng; **ACT rà soát trước để đảm bảo mọi thành viên đều được nhắc ít nhất một lần** — bổ sung kín đáo nếu thiếu.
+
+**Quyền được dừng** — *"Em không muốn viết lên áo thì nói 'con xin dừng' — em có thể viết ra giấy và đưa riêng cho bạn ấy. Không trừ điểm, không ai hỏi lý do. Leader cũng có quyền nói không muốn dùng áo của mình."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** vẽ ký hiệu hoặc hình thay vì viết câu dài; ACT giúp ghi lời. **16–18:** yêu cầu câu ghi nhận có cấu trúc *việc bạn làm – tác động lên tôi – điều tôi học được*.
+
+> **Sai lầm thường gặp khi dẫn:** để hoạt động trượt về hướng bi thương ("hy sinh", "chịu đựng vì đội"). Bản thay thế này tồn tại chính vì phiên bản cũ tạo áp lực tâm lý và kỷ luật liên đới; giữ trọng tâm ở **ghi nhận đóng góp cụ thể**.
+
+## A5-03 · Bàn tay vàng (tranh A0 + 5 bài học/5 ngón tay)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 9–18 | 55 phút | 8–12 học viên/đội | Hội trường có tường trống |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-16` Phản tư · `NL-01` Nhận thức bản thân · `NL-02` Thiết lập mục tiêu | Thấp | Giấy A0 ×1/đội, bút lông ×6/đội, giấy A4 ×1/HV, băng dính giấy |
+
+**Mục tiêu học tập** — Học viên **rút ra** 5 bài học cá nhân **không trùng nhau và không trùng với bạn cùng đội**, mỗi bài học gắn với một hoạt động cụ thể đã trải qua.
+
+**Chuẩn bị** — Giấy A0 ×1/đội treo lên tường, bút lông 6 màu/đội, giấy A4 để mỗi học viên đồ bàn tay mình. Danh sách 5 ngày hoạt động in sẵn treo cạnh để học viên tra lại.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Trainer đọc lại tên các hoạt động 5 ngày qua; học viên giơ tay ở hoạt động mình nhớ nhất.
+2. **Trải nghiệm (20 phút)** — Bước 1: mỗi người đồ bàn tay mình lên A4. Bước 2: mỗi ngón viết một bài học, **bắt buộc ghi kèm tên hoạt động** mà bài học đến từ đó. Bước 3: ghép cặp, đối chiếu — nếu trùng, một người phải đổi. Bước 4: dán tất cả bàn tay lên A0 thành "bàn tay lớn" của đội. Bước 5: đội đọc lướt và đánh dấu bài học nào lặp lại nhiều nhất. Lời dẫn: *"Không nhận bài học chung chung như 'phải đoàn kết'. Viết: đoàn kết ở chỗ nào, trong hoạt động nào, em đã thấy gì."*
+3. **Quan sát và chia sẻ (5 phút)** — Mỗi đội nói bài học được lặp lại nhiều nhất và đoán vì sao.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Năm bài học của em đến từ những hoạt động nào? (2) Lúc phải đổi vì trùng với bạn, em thấy thế nào? (3) Vì sao cùng một hoạt động mà mỗi người rút ra một điều khác nhau? (4) Nguyên lý: bài học nào có khả năng dùng lại ở nhà, bài học nào chỉ đúng trong trại? (5) Bài học nào của em khó thực hiện nhất khi về nhà? (6) Ai sẽ là người nhắc em bài học đó?
+5. **Áp dụng (10 phút)** — Mỗi học viên khoanh **1 trong 5** bài học làm "bài học chính", viết một hành động tuần đầu tiên sau trại.
+
+**An toàn** — Rủi ro thể chất thấp. Rủi ro tâm lý: học viên viết được ít bài học thấy mình kém hơn bạn. Biện pháp: **không đếm số, không so sánh giữa các học viên**; ACT hỗ trợ riêng bằng cách hỏi lại về hoạt động cụ thể; không đọc to bài học của ai nếu người đó không đồng ý.
+
+**Quyền được dừng** — *"Em chỉ viết được hai ngón cũng được, không sao. Em không muốn dán bàn tay lên tường thì nói 'con xin dừng', em giữ trong sổ trại. Không trừ điểm, không ai hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** 3 ngón thay vì 5, được vẽ hình thay chữ. **16–18:** 5 ngón, yêu cầu mỗi bài học kèm **một bằng chứng** (điều mình đã làm khác đi trong trại) và **một chỉ số** để tự đo sau 30 ngày.
+
+> **Sai lầm thường gặp khi dẫn:** chấp nhận những câu khẩu hiệu ("đoàn kết là sức mạnh") cho đủ 5 ngón. Bài học không gắn với hoạt động cụ thể sẽ không sống sót quá ba ngày sau trại; yêu cầu ghi tên hoạt động là chốt chặn của thẻ này.
+
+## A5-04 · Tiếp sức 4 chặng
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 9–18 | 55 phút | 8–12 học viên/đội | Sân cỏ, tuyến 4 chặng × 25 m |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-09` Tự quản · `NL-14` Thích ứng | Trung bình | Bao bố ×2/đội, bóng nhỏ ×4/đội, thìa và bóng bàn ×4/đội, gậy tiếp sức ×1/đội, thảm/nền cỏ mềm, nón mốc ×12 |
+
+**Mục tiêu học tập** — Đội **chuyển giao** trơn tru qua 4 chặng với ≤ 2 lần rơi gậy, và **nêu** được điều gì làm điểm chuyển giao dễ hỏng nhất.
+
+**Chuẩn bị** — 4 chặng: nhảy bao bố (nền cỏ mềm hoặc thảm), chuyền bóng, giữ thăng bằng bóng trên thìa, chạy nhẹ về đích. **Nền mềm bắt buộc ở chặng bao bố.** Bao bố kiểm không rách, không có dây kim loại. Vạch chuyển giao rộng 2 m đánh dấu rõ. Trạm nước tại đích.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Khởi động cổ chân, gối 4 phút; tập nhảy bao bố tại chỗ 3 nhịp.
+2. **Trải nghiệm (20 phút)** — Bước 1: đội phân công theo chặng, có 3 phút. Bước 2: lượt 1, ACT đếm **số lần rơi gậy ở điểm chuyển giao**, không đếm tốc độ. Bước 3: 3 phút họp, đội thiết kế **tín hiệu chuyển giao** riêng. Bước 4: lượt 2 và 3. Bước 5: so số lần rơi qua 3 lượt. Lời dẫn: *"Tôi không đếm ai chạy nhanh. Tôi đếm gậy rơi mấy lần. Chỗ hỏng của một đội bao giờ cũng nằm ở lúc trao tay, không nằm ở lúc chạy."*
+3. **Quan sát và chia sẻ (5 phút)** — Từng cặp trao – nhận nói: mình cần bạn làm gì để nhận gậy chắc hơn.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Gậy rơi mấy lần ở lượt 1 và lượt 3, rơi ở điểm chuyển giao nào? (2) Lúc làm rơi gậy, em thấy thế nào, và đội đã nói gì với em? (3) Vì sao điểm chuyển giao lại là chỗ dễ hỏng nhất, chứ không phải chặng khó nhất? (4) Nguyên lý: một tín hiệu chuyển giao tốt cần gì — báo trước, nhìn thấy, hay nghe thấy? (5) Trong đội, việc gì đang bị rơi ở lúc bàn giao? (6) Ở nhà, việc bàn giao nào hay hỏng — ví dụ giữa em và bố mẹ về thời gian học?
+5. **Áp dụng (5 phút)** — Đội chốt một quy ước bàn giao dùng cho phần còn lại của trại: *ai báo, báo trước mấy giây, câu báo là gì*.
+
+**An toàn** — Rủi ro: ngã khi nhảy bao bố, va chạm ở vạch chuyển giao, trẹo cổ chân. Biện pháp bắt buộc: **nền cỏ mềm hoặc thảm ở toàn bộ chặng bao bố**; bao bố không rách, cấm nhảy khi không giữ được miệng bao; vạch chuyển giao rộng 2 m để hai người không va nhau; cấm chạy ngược chiều tuyến. Tỉ lệ giám sát **1 ACT / chặng**. **Điều kiện dừng:** dừng khi nền ướt, hoặc khi có 2 lần ngã tại cùng một chặng.
+
+**Quyền được dừng** — *"Em không muốn nhảy bao bố thì nói 'con xin dừng' — em đổi sang chặng khác hoặc làm người đếm gậy rơi. Đội **không** bị trừ điểm và không ai hỏi vì sao."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** chặng 15 m, bao bố cỡ nhỏ, cho phép đi bộ trong bao thay vì nhảy. **16–18:** 4 chặng đủ, thêm ràng buộc chặng 3 phải hoàn thành trong im lặng.
+
+> **Sai lầm thường gặp khi dẫn:** công bố bảng xếp hạng thời gian giữa các đội sau mỗi lượt. Áp lực tốc độ đẩy học viên nhảy bao bố nhanh quá khả năng — nguyên nhân chính của ngã ở chặng này — và làm lu mờ chỉ số thật là số lần rơi gậy.
+
+## A5-05 · Bánh đà giá trị (6 chu kỳ)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 12–18 | 70 phút | 8–12 học viên/đội | Hội trường có bàn và tường trống |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-16` Phản tư · `NL-08` Xây dựng thói quen | Thấp | Giấy A0 ×1/đội, thẻ màu 6 màu ×12/đội, bút lông ×4/đội, đồng hồ ×1/đội, bảng ghi 6 vòng |
+
+**Mục tiêu học tập** — Đội **mô tả** được vòng vận hành của một đội hiệu quả qua 6 chu kỳ lặp và **chỉ ra** chu kỳ nào tạo ra đà, chu kỳ nào làm mất đà, bằng số liệu 6 vòng của chính đội mình.
+
+**Chuẩn bị** — Bài tập lặp đơn giản (xếp 12 thẻ màu theo mẫu đổi mỗi vòng), mỗi vòng đúng 3 phút. Bảng ghi 6 vòng in sẵn: *thời gian · số lỗi · điều đội đổi ở vòng này*. Giấy A0 để vẽ bánh đà cuối buổi.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Hỏi: *"Có việc gì lúc đầu rất khó, làm mãi thành dễ không? Mất bao lâu?"*
+2. **Trải nghiệm (30 phút)** — Bước 1: vòng 1, làm mẫu bài xếp thẻ, ghi thời gian và lỗi. Bước 2: sau mỗi vòng có **60 giây họp**, đội chỉ được đổi **một** thứ và phải ghi lại thứ đã đổi. Bước 3: chạy đủ 6 vòng, ghi bảng. Bước 4: đội vẽ đường biểu diễn thời gian qua 6 vòng lên A0. Bước 5: khoanh vòng có bước nhảy lớn nhất và vòng bị chậm lại. Lời dẫn: *"Mỗi vòng chỉ được đổi một thứ. Đổi nhiều thứ cùng lúc thì lát nữa các em không biết cái gì đã tạo ra kết quả."*
+3. **Quan sát và chia sẻ (5 phút)** — Mỗi đội đọc *thứ đã đổi* ở vòng có bước nhảy lớn nhất.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Sáu con số thời gian của đội là bao nhiêu, và bước nhảy lớn nhất ở vòng mấy? (2) Ở vòng bị chậm lại, đội cảm thấy thế nào? (3) Vì sao đà không xuất hiện ngay từ vòng 1 mà cần vài vòng lặp? (4) Nguyên lý: cái gì làm bánh đà quay tiếp — thêm sức hay bớt ma sát? (5) Đội đã bỏ được "ma sát" nào và bằng cách nào? (6) Ở nhóm học của em, ma sát lớn nhất hiện nay là gì — chờ nhau, hỏi lại, hay không rõ ai làm gì?
+5. **Áp dụng (10 phút)** — Đội vẽ bánh đà 4 mắt xích cho chính đội mình và chọn **một ma sát sẽ bỏ trong ngày mai**.
+
+**An toàn** — Rủi ro thể chất rất thấp. Rủi ro sư phạm: đội mệt vì lặp 6 vòng và bắt đầu làm cho xong. Biện pháp: nghỉ 2 phút sau vòng 3, có nước; đổi mẫu thẻ mỗi vòng để giữ mới; ACT dừng vòng khi thấy đội bỏ ghi bảng.
+
+**Quyền được dừng** — *"Em thấy chán hoặc mệt thì nói 'con xin dừng' — em nhận việc ghi bảng số liệu cho đội, đây là vai then chốt của bài này. Không trừ điểm, không hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** 4 vòng thay vì 6, bài xếp thẻ đơn giản hơn, ACT giúp ghi bảng. **16–18:** 6 vòng, thêm yêu cầu đội dự đoán thời gian vòng sau trước khi chạy và tính sai số dự đoán.
+
+> **Sai lầm thường gặp khi dẫn:** cho đội đổi nhiều thứ cùng một vòng vì "như thế nhanh hơn". Khi đó không đội nào chỉ ra được nguyên nhân của bước nhảy, và bài học về cải tiến từng biến — vốn là cốt lõi của Tầng 2 — bị mất.
+
+## A5-06 · Team cùng tiến — bài học từ đàn sói
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 12–18 | 60 phút | 10–12 học viên/đội | Sân cỏ bằng, tuyến 30 m |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-15` Lãnh đạo bản thân · `NL-13` Quản lý cảm xúc | Trung bình | Cáng cứng ×1/đội, bao cát 15 kg làm "người mô phỏng" ×1/đội, băng vải đánh dấu ×4/đội, nón mốc ×6, thảm xốp ×2 |
+
+**Mục tiêu học tập** — Đội **đưa** được toàn bộ thành viên qua tuyến 30 m không bỏ ai lại, **phân vai cứu hộ** rõ ràng, và **nêu** được cơ chế chọn người dẫn đầu và người đi cuối.
+
+**Chuẩn bị** — Cáng cứng đúng chuẩn, kiểm khung và dây. **Không khiêng người thật** — dùng bao cát 15 kg làm vật mô phỏng, hoặc chỉ khiêng cáng rỗng khi tập kỹ thuật. Băng vải đánh dấu vai (dẫn đầu, đi cuối, hai người khiêng). Nền cỏ bằng, thảm xốp ở điểm đặt cáng. Tuyến 30 m không có bậc, không có dốc.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Trainer kể 60 giây về đội hình đàn sói: kẻ yếu đi đầu để định nhịp, kẻ mạnh đi cuối để không ai rớt lại.
+2. **Trải nghiệm (22 phút)** — Bước 1: đội tự sắp đội hình theo nguyên tắc trên, gắn băng vai. Bước 2: ACT dạy tư thế nâng cáng — **nâng bằng chân, lưng thẳng, không nâng quá tầm hông**, 4 người/cáng. Bước 3: đi tuyến 30 m với cáng mang bao cát, dừng theo còi mỗi 10 m để đổi người khiêng. Bước 4: lượt 2 thêm ràng buộc 1 thành viên "bị thương chân" phải được dìu. Bước 5: đội tự đánh giá có ai bị bỏ lại phía sau quá 5 m không. Lời dẫn: *"Đội đi nhanh bằng người chậm nhất. Người đi cuối là người quan trọng nhất — bạn ấy có quyền hô dừng cả đội, không cần hỏi ai."*
+3. **Quan sát và chia sẻ (5 phút)** — Người đi đầu và người đi cuối nói: mình đã điều chỉnh nhịp thế nào.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Có lúc nào khoảng cách giữa người đầu và người cuối vượt 5 m không? (2) Lúc em là người chậm nhất, em thấy thế nào? (3) Vì sao để người chậm đi đầu lại giúp cả đội đi nhanh hơn? (4) Nguyên lý: một đội mạnh chăm sóc điểm yếu bằng cách nào — kéo lên hay giấu đi? (5) Ai trong đội đang là người đi cuối mà chưa được đặt tên vai? (6) Ở lớp em, ai đang bị rớt lại và đội em làm được gì trong tuần này?
+5. **Áp dụng (5 phút)** — Đội chỉ định một "người đi cuối" cho các hoạt động còn lại và ghi nhiệm vụ cụ thể của vai đó.
+
+**An toàn** — Rủi ro: đau lưng khi nâng cáng, cáng rơi vào chân, ngã khi dìu người. Biện pháp bắt buộc: **4 người/cáng**, **không nâng quá tầm hông**, nâng bằng chân và hô nhịp trước khi nâng; **không khiêng người thật**; đổi người khiêng mỗi 10 m; tuyến bằng phẳng, không bậc, không dốc; đi giày kín mũi. Tỉ lệ giám sát **1 ACT / đội, đi kèm sát cáng**. **Điều kiện dừng:** dừng khi cỏ ướt, khi có học viên kêu đau lưng, hoặc khi cáng bị nghiêng quá 30 độ.
+
+**Quyền được dừng** — *"Em không muốn khiêng cáng, nói 'con xin dừng' — em nhận vai người đi cuối hoặc người hô nhịp. Đội không bị trừ điểm. Ai đau lưng hay mỏi tay, nói ngay để đổi người, không cần chờ tới mốc 10 m."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** không dùng cáng có tải; đi tuyến với nguyên tắc đội hình sói, mang một túi vật tư nhẹ dưới 3 kg luân phiên. **16–18:** thêm ràng buộc đội phải hoàn thành khi 2 vai bị "mất" giữa chừng và phải phân vai lại trong 30 giây.
+
+> **Sai lầm thường gặp khi dẫn:** cho học viên nằm lên cáng cho "giống thật". Khiêng người thật là rủi ro chấn thương cột sống cho cả người khiêng lẫn người nằm, và không thêm được giá trị học tập nào so với vật mô phỏng.
+
+## A5-07 · Sợi dây kết nối
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 9–18 | 50 phút | 10–16 học viên/đội | Hội trường hoặc sân, vòng tròn 8 m |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-11` Giao tiếp · `NL-16` Phản tư | Trung bình | Cuộn dây len to ×2/đội, vòng nhựa mục tiêu ×1/đội, vật cần nâng (chai nước 1 lít) ×1/đội, kéo đầu tù ×1 |
+
+**Mục tiêu học tập** — Đội **nâng và di chuyển** được vật bằng mạng dây mà **mọi thành viên đều phải giữ lực**, và **nêu** được điều xảy ra khi một sợi dây buông.
+
+**Chuẩn bị** — Dây len to, mềm, **không dùng dây dù mảnh** (cứa tay). Vòng nhựa buộc 10–16 sợi dây tỏa đều. Chai nước 1 lít làm vật nâng, đặt trong vòng. Vòng tròn đường kính 8 m, nền phẳng, không vật cản. Kiểm học viên tháo nhẫn và đồng hồ.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Vòng tròn tung cuộn len cho nhau, mỗi lần tung nói một điều mình biết ơn ở người nhận — tạo mạng lưới nhìn thấy được.
+2. **Trải nghiệm (18 phút)** — Bước 1: mỗi người cầm một sợi dây nối vào vòng nhựa. Bước 2: nâng vòng lên, đặt chai nước vào, giữ 30 giây. Bước 3: di chuyển vòng 5 m mà không làm rơi chai. Bước 4: ACT bảo **một người tự nguyện buông tay**, quan sát điều xảy ra, rồi nối lại. Bước 5: lượt cuối, 2 người **im lặng hoàn toàn**, đội phải bù bằng tín hiệu khác. Lời dẫn: *"Không ai kéo mạnh hơn ai. Nếu em kéo mạnh, vòng lệch về phía em và chai đổ. Bài này cần cả đội giữ đúng phần của mình, không hơn."*
+3. **Quan sát và chia sẻ (5 phút)** — Người đã buông tay nói cảm nhận; những người bên cạnh nói mình phải bù thêm bao nhiêu.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Khi một người buông, mạng dây đổi thế nào và ai chịu ảnh hưởng nhiều nhất? (2) Lúc em kéo mạnh mà vòng lệch, em thấy thế nào? (3) Vì sao gắng sức nhiều hơn lại làm hỏng kết quả chung? (4) Nguyên lý: đóng góp đúng mức khác gì đóng góp nhiều nhất? (5) Ai trong đội đang phải bù cho người khác mà ít ai biết? (6) Ở nhóm học của em, việc gì đang do một người gánh?
+5. **Áp dụng (5 phút)** — Đội chia lại một việc đang do một người gánh, ghi tên người nhận phần mới.
+
+**An toàn** — Rủi ro: dây cứa tay, ngã khi bị kéo giật, đổ nước gây trơn. Biện pháp: dùng **dây len to, mềm**; cấm quấn dây quanh tay; **cấm giật dây**; vật nâng là chai nhựa có nắp, không dùng vật nặng hay dễ vỡ; lau ngay khi nước rớt. Tỉ lệ giám sát 1 ACT / đội. **Điều kiện dừng:** dừng khi có ai bị kéo mất thăng bằng hoặc khi dây bị xoắn quanh chi.
+
+**Quyền được dừng** — *"Em muốn dừng thì nói 'con xin dừng' và **đặt sợi dây xuống đất từ từ**, không buông đột ngột. Em ra ngoài làm người quan sát. Không trừ điểm, không hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** 10 sợi, vật nâng nhẹ (cốc rỗng), không có phần buông tay. **16–18:** 16 sợi, thêm chặng vòng qua vật cản và ràng buộc chỉ 3 người được nói.
+
+> **Sai lầm thường gặp khi dẫn:** chỉ định người phải buông tay thay vì hỏi ai tự nguyện. Bị chỉ định "làm người phá vỡ mạng lưới" trước cả đội là tình huống dễ gây xấu hổ, và không cần thiết cho bài học.
+
+## A5-08 · Tiếp nước sự sống
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 9–18 | 50 phút | 8–12 học viên/đội | Sân ngoài trời, tuyến 20 m, gần nguồn nước |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-07` Tập trung · `NL-09` Tự quản | Thấp | Ống nhựa nửa mở 50 cm ×10/đội, bóng bàn ×3/đội hoặc nước, xô đích ×1/đội, cốc đong ×1/đội, khăn lau |
+
+**Mục tiêu học tập** — Đội **chuyển** được nước hoặc bóng qua 20 m bằng chuỗi máng nối tay mà **không ai được di chuyển khi đang cầm máng có vật**, đạt ≥ 60% lượng ban đầu.
+
+**Chuẩn bị** — Ống nhựa cắt dọc làm máng, cạnh cắt **mài nhẵn hoặc bọc băng dính**. Xô nguồn và xô đích, cốc đong để đo. Tuyến 20 m trên nền cỏ, không dốc. Khăn lau và chỗ thay đồ nếu ướt nhiều. Nước sạch, không dùng nước lạnh dưới 20 độ C.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Đội thử chuyền một quả bóng bàn qua tay không, cảm nhận nhịp chuyền.
+2. **Trải nghiệm (18 phút)** — Bước 1: phổ biến ràng buộc: **người đang cầm máng có vật thì đứng yên**, người đã chuyền xong mới được chạy lên đầu hàng. Bước 2: lượt 1, đo lượng nước tới đích. Bước 3: 3 phút họp, đội quyết định khoảng cách đứng và ai chạy vòng. Bước 4: lượt 2 và 3, đo lại. Bước 5: ghi 3 con số lên bảng đội. Lời dẫn: *"Cả đội chỉ nhanh bằng người chạy vòng chậm nhất. Đừng ai đứng yên chờ — chuyền xong là chạy lên đầu ngay."*
+3. **Quan sát và chia sẻ (5 phút)** — Người ở đầu và cuối hàng nói: mình chờ bao lâu và chờ vì lý do gì.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Ba lượt, lượng nước tới đích là bao nhiêu phần trăm? (2) Lúc nước đổ ngay trước mắt em, em thấy thế nào? (3) Vì sao khoảng cách đứng lại quan trọng hơn tốc độ chạy? (4) Nguyên lý: trong một dây chuyền, chỗ nào quyết định tốc độ chung? (5) Có ai trong đội bị "bỏ trống" ở vị trí không có việc không? (6) Ở nhóm học, ai đang là điểm nghẽn và làm sao để bớt nghẽn?
+5. **Áp dụng (5 phút)** — Đội xác định điểm nghẽn của chính mình trong 5 ngày qua và một cách giảm nghẽn cho ngày mai.
+
+**An toàn** — Rủi ro: trơn trượt do nước, cạnh ống cứa tay, va chạm khi chạy vòng. Biện pháp: **mài nhẵn hoặc bọc cạnh ống**; quy định **một chiều chạy vòng duy nhất**, có nón mốc chỉ hướng; nền cỏ, không tổ chức trên gạch trơn; nước sạch, không lạnh; khăn lau tại chỗ. Tỉ lệ giám sát 1 ACT / đội. **Điều kiện dừng:** dừng khi nền trở nên trơn, hoặc khi nhiệt độ dưới 20 độ C (nguy cơ nhiễm lạnh do ướt).
+
+**Quyền được dừng** — *"Em không muốn bị ướt thì nói 'con xin dừng' — em đổi sang bóng bàn thay vì nước, hoặc làm người đo lượng nước. Không trừ điểm, không ai hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** dùng bóng bàn thay nước, tuyến 12 m. **16–18:** dùng nước, tuyến 20 m, thêm ràng buộc 2 thành viên chỉ được dùng một tay.
+
+> **Sai lầm thường gặp khi dẫn:** để học viên chạy vòng theo hai chiều ngược nhau cho nhanh. Đó là nguyên nhân trực tiếp của va chạm ở hoạt động này; một chiều chạy duy nhất là ràng buộc an toàn, không phải luật chơi cho vui.
+

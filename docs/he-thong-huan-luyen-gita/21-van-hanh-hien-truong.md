@@ -343,3 +343,451 @@ trừ khi được ghi rõ. Cột "Báo trong" là hạn cứng.
 > **Quy tắc uỷ quyền:** khi Trưởng khoá rời trại (đi viện cùng học viên, đi mua vật tư),
 > phải **ghi tên người thay vào sổ trực ban kèm giờ**, và thông báo trên kênh 1.
 > Không có ghi chép thì quyền không chuyển — nghĩa là không ai được quyết, và đó là tình huống nguy hiểm.
+
+---
+
+## PHẦN B · HẬU CẦN
+
+---
+
+## 8. Danh mục vật tư đầy đủ theo quy mô
+
+Cột **50** và **100** là số lượng đặt mua, **đã cộng dự phòng**. Quy tắc chung: vật tư tiêu hao dư 20%,
+học liệu dư 10%, vật tư an toàn dư 100% (có cái thứ hai cho mọi thứ không được phép hỏng).
+
+### 8.1 Học liệu và văn phòng phẩm
+
+| Hạng mục | 50 HV | 100 HV | Ghi chú |
+|---|---|---|---|
+| Sổ tay chiến binh | 55 | 110 | Dư 10% |
+| Bút bi | 110 | 220 | 2 bút/HV — bút mất là lý do phổ biến nhất khiến học viên không ghi |
+| Phiếu quan sát `BM-07` | 5 ACT × 8 ngày × 2 = 80 tờ | 160 tờ | In dư 20 tờ |
+| Sổ điểm danh team (bìa cứng) | 5 | 10 | 1 sổ/team, có dây buộc bút |
+| Sổ bàn giao ca | 2 | 3 | |
+| Sổ y tế | 1 | 2 | Đóng gáy, không dùng tờ rời |
+| Sổ sự cố + cận-sự-cố | 1 | 1 | |
+| **Sổ bàn giao học viên** (đón trả) | 1 | 1 | Bìa cứng, đánh số trang liên tục |
+| Giấy A0 | 60 tờ | 120 tờ | |
+| Giấy A3 / A4 | 200 / 1.000 tờ | 400 / 2.000 tờ | |
+| Bút lông bảng, bút dạ màu | 30 / 60 cây | 60 / 120 cây | |
+| Băng dính giấy, băng dính trong | 20 / 20 cuộn | 40 / 40 cuộn | Hạng mục hay thiếu nhất |
+| Kéo an toàn đầu tròn | 25 | 50 | **Vật tư nguy hiểm** — cấp và thu có đếm |
+| Hồ dán, ghim giấy, kẹp bướm | 20 / 5 hộp / 50 | 40 / 10 hộp / 100 | |
+| Giấy note màu | 20 tệp | 40 tệp | |
+| Bảng flipchart + chân | 2 | 4 | 1 dự phòng mỗi hội trường |
+| Máy in + mực + giấy | 1 bộ | 1 bộ | In lại danh sách phân xe, danh sách dị ứng |
+
+### 8.2 Trang phục và nhận diện
+
+| Hạng mục | 50 HV | 100 HV | Ghi chú |
+|---|---|---|---|
+| Áo đồng phục học viên | 105 | 210 | 2 áo/HV + dư 5 áo mỗi size phổ biến |
+| Áo nhân sự (màu khác học viên) | 30 | 55 | 2 áo/người |
+| Thẻ tên đeo cổ | 65 | 125 | Mặt sau in **số trực ban 24/7** |
+| Vòng tay nhận diện nhóm tuổi | 55 | 110 | Màu theo nhóm tuổi, dùng cho di chuyển |
+| **Vòng tay đỏ — cảnh báo dị ứng** | 15 | 30 | Chỉ đeo cho học viên có dị ứng đã khai `BM-01` |
+| Cờ team | 5 | 10 | |
+| Khăn/băng đô theo màu team | 55 | 110 | |
+| Mũ chống nắng | 55 | 110 | |
+| Áo mưa mỏng | 60 | 120 | |
+| Biển chỉ dẫn, bảng nội quy, bản đồ khu vực | 12 bộ | 20 bộ | Dán tại mỗi khu ở + hội trường + nhà ăn |
+
+### 8.3 Vật tư y tế
+
+| Hạng mục | 50 HV | 100 HV | Ghi chú |
+|---|---|---|---|
+| Túi sơ cứu di động cho team | 5 | 10 | **Mỗi team một túi**, ACT giữ |
+| Túi sơ cứu lớn tại phòng y tế | 2 | 3 | 1 để cố định, 1 để mang theo khi di chuyển |
+| Túi sơ cứu trên xe | Theo số xe | Theo số xe | Không dùng chung với túi team |
+| Băng cá nhân | 200 | 400 | Tiêu hao nhanh nhất |
+| Gạc vô trùng, băng cuộn, băng tam giác | 50 / 20 / 10 | 100 / 40 / 20 | |
+| Nước muối sinh lý 500ml | 10 chai | 20 chai | Rửa vết thương và rửa mắt |
+| Sát khuẩn (povidone/cồn 70) | 5 chai | 10 chai | |
+| Nhiệt kế điện tử | 4 | 8 | Dư vì hay hỏng |
+| Túi chườm lạnh dùng ngay | 20 | 40 | Bong gân, va đập |
+| Băng chun cố định | 10 | 20 | |
+| Kem chống nắng SPF ≥ 30 | 6 tuýp | 12 tuýp | |
+| Kem/xịt chống côn trùng | 6 | 12 | |
+| Dung dịch bù nước điện giải (oresol) | 40 gói | 80 gói | Say nắng, tiêu chảy |
+| **Túi nôn** | 100 | 200 | Trên xe và trong phòng ở |
+| Găng tay y tế | 2 hộp | 4 hộp | |
+| Khẩu trang | 200 | 400 | |
+| Thuốc theo đơn của học viên | Theo `BM-01` | Theo `BM-01` | **Cất tủ khoá tại phòng y tế**, không để học viên tự giữ trừ thuốc cấp cứu cá nhân |
+| Tủ thuốc có khoá | 1 | 1 | Y tế giữ chìa |
+| Cáng cứu thương / ghế khiêng | 1 | 2 | |
+| Đèn pin khám | 2 | 3 | |
+| Sổ theo dõi phát thuốc | 1 | 1 | Ký từng lần phát |
+
+### 8.4 Vật tư an toàn và cứu hộ
+
+| Hạng mục | 50 HV | 100 HV | Ghi chú |
+|---|---|---|---|
+| Còi cho ACT và nhân sự | 15 | 28 | **Mỗi nhân sự một còi**, không dùng chung |
+| Bộ đàm + pin dự phòng | 8 + 8 | 14 + 14 | |
+| Đèn pin cầm tay | 15 | 28 | Kèm pin dự phòng |
+| Đèn pin đội đầu (trực đêm) | 4 | 8 | |
+| Bình chữa cháy | Theo quy định địa điểm, kiểm hạn trước D-2 | | Kiểm tại D-2, chụp ảnh tem kiểm định |
+| Phao cứu sinh tròn | 4 | 6 | Đặt sát mép nước, không cất kho |
+| Sào cứu hộ | 2 | 4 | |
+| Áo phao đúng cỡ trẻ em | 30 | 60 | Cho mọi hoạt động dưới nước |
+| Dây thừng cứu hộ 20m | 2 | 4 | |
+| Bảng danh sách dị ứng khổ A2 | 3 bản | 5 bản | Dán bếp, nhà ăn, phòng y tế |
+| Bản đồ khu vực + điểm tập kết an toàn | 8 bản | 14 bản | |
+| Rào chắn/dây phân vùng | 100m | 200m | Khoanh vùng cấm |
+| Ghế cứu hộ cao / vị trí quan sát | 1 | 2 | |
+
+### 8.5 Đồ dùng sinh hoạt
+
+| Hạng mục | 50 HV | 100 HV | Ghi chú |
+|---|---|---|---|
+| **Bình nước cá nhân ghi tên** | 55 | 110 | Nạp đủ **3 lần/ngày**, có bảng tick |
+| Bình nước lớn 20L | 8 | 15 | Tại hội trường, sân, nhà ăn |
+| Xô, chậu | 10 / 20 | 20 / 40 | |
+| Móc treo, dây phơi | 20 / 60m | 40 / 120m | |
+| Chiếu / thảm ngồi | 60 | 120 | |
+| Chăn mỏng dự phòng | 15 | 30 | Cho học viên quên mang |
+| Bàn chải, kem đánh răng, xà phòng dự phòng | 15 bộ | 30 bộ | Luôn có học viên quên |
+| Băng vệ sinh (khu nữ, để sẵn nơi kín đáo) | 3 hộp | 6 hộp | Không để học viên phải đi hỏi |
+| Giấy vệ sinh | 60 cuộn | 120 cuộn | |
+| Túi đựng đồ bẩn | 60 | 120 | |
+| Ổ cắm kéo dài | 10 | 18 | Kiểm tra tải trước khi dùng |
+| Quạt cây dự phòng | 4 | 8 | |
+
+### 8.6 Thiết bị
+
+| Hạng mục | 50 HV | 100 HV | Ghi chú |
+|---|---|---|---|
+| Loa kéo + micro không dây | 2 bộ | 3 bộ | Luôn dư 1 bộ — hỏng loa là mất cả buổi |
+| Micro dự phòng có dây | 2 | 4 | |
+| Máy chiếu + màn chiếu | 1 bộ | 2 bộ | |
+| Laptop | 2 | 3 | 1 máy chuyên dùng cho trình chiếu, không dùng việc khác |
+| Ổ cứng / USB chứa toàn bộ nội dung | 2 | 2 | Bản sao đặt ở hai người khác nhau |
+| Máy ảnh / điện thoại chụp ảnh của khoá | 2 | 3 | **Chỉ chụp theo phạm vi `BM-04`** |
+| Pin sạc dự phòng | 6 | 12 | |
+| Đồng hồ bấm giờ / chuông | 6 | 10 | |
+| Hộp khoá đựng thiết bị cá nhân học viên | 2 | 4 | Có ngăn đánh số theo team |
+| Máy đo nhiệt độ môi trường | 1 | 2 | Quyết định hoãn hoạt động ngoài trời |
+
+**Quy tắc kho tại trại (giữ nguyên từ TL 08):** một người giữ chìa · mọi lần xuất/nhập ghi sổ ·
+cuối mỗi ngày kiểm đếm vật tư ngày mai · **vật tư nguy hiểm (kéo, dao, búa, cọc, dụng cụ sắc)
+chỉ cấp ngay trước hoạt động và thu ngay sau hoạt động, đếm số lượng cả hai chiều**. Thiếu một cái
+kéo thì hoạt động kế tiếp chưa bắt đầu cho tới khi tìm thấy.
+
+---
+
+## 9. Quản lý chỗ ở
+
+### 9.1 Quy tắc phân phòng
+
+| # | Quy tắc | Lý do cơ chế |
+|---|---|---|
+| 1 | **Tách tuyệt đối khu nam – khu nữ**, tốt nhất khác tầng hoặc khác dãy | Giảm rủi ro và giảm tranh cãi ngay từ thiết kế |
+| 2 | Xếp phòng **theo team** để ACT quản lý được | Một người lớn biết chính xác đêm nay ai ở đâu |
+| 3 | **Chênh lệch tuổi trong một phòng ≤ 3 tuổi** | Trẻ 9 tuổi ở chung với trẻ 17 tuổi tạo quan hệ lệch quyền lực |
+| 4 | Không dưới **3 học viên/phòng** | Phòng 2 người tạo cặp khép kín, khó quan sát |
+| 5 | Không quá **sức chứa thật** của phòng; không kê thêm giường | |
+| 6 | Học viên có **nhu cầu y tế cần theo dõi** ở phòng gần phòng y tế nhất | Rút ngắn thời gian tiếp cận ban đêm |
+| 7 | Học viên **đi vệ sinh đêm nhiều / mộng du / lo âu ban đêm** ở giường tầng dưới, gần cửa | |
+| 8 | **Tách bạn thân sang team khác** nhưng có thể cùng khu ở, trừ học viên đang rất lo lắng | Mở rộng quan hệ mà không tạo khủng hoảng |
+| 9 | Danh sách phòng **dán ngoài cửa**, bản tổng ở phòng trực ban | Tìm một em trong đêm phải mất dưới 60 giây |
+| 10 | **Không đổi phòng tuỳ tiện.** Mọi thay đổi phải ghi vào bảng tổng và báo trực ban đêm | Bảng sai một dòng là điểm danh đêm sai |
+
+### 9.2 Bảng phân phòng mẫu — 50 học viên
+
+| Khu | Phòng | Team | Nhóm tuổi | Số HV | ACT phụ trách | Trực đêm |
+|---|---|---|---|---|---|---|
+| Nam A | N1 | Team 1 | 9–11 | 6 | ACT 1 | Trực đêm nam |
+| Nam A | N2 | Team 1 + 2 | 9–12 | 6 | ACT 1 / ACT 2 | Trực đêm nam |
+| Nam A | N3 | Team 2 | 12–14 | 6 | ACT 2 | Trực đêm nam |
+| Nam B | N4 | Team 3 | 14–16 | 6 | ACT 3 | Trực đêm nam |
+| Nữ A | Nu1 | Team 4 | 9–11 | 5 | ACT 4 | Trực đêm nữ |
+| Nữ A | Nu2 | Team 4 | 12–14 | 6 | ACT 4 | Trực đêm nữ |
+| Nữ B | Nu3 | Team 5 | 14–16 | 6 | ACT 5 | Trực đêm nữ |
+| Nữ B | Nu4 | Team 5 | 16–18 | 5 | ACT 5 | Trực đêm nữ |
+| Y tế | — | — | — | 4 giường | Y tế | Y tế |
+
+### 9.3 Kiểm tra phòng trước khi nhận (làm tại D-1 hoặc sáng D1)
+
+- [ ] Ổ điện có nắp, không hở dây; không ổ điện sát giường tầng
+- [ ] Cửa sổ có chốt; **lan can cao ≥ 1,1m, khe hở ≤ 10cm**
+- [ ] Giường tầng có thanh chắn; thang chắc
+- [ ] Đèn, quạt, điều hoà hoạt động; công tắc đủ sáng ban đêm
+- [ ] Nhà tắm có thảm/sàn chống trơn; **cửa nhà tắm mở được từ bên ngoài khi có sự cố**
+- [ ] Không có vật sắc, hoá chất, thuốc diệt côn trùng trong phòng
+- [ ] Lối thoát hiểm không bị chặn; đèn hành lang hoạt động cả đêm
+- [ ] Có bảng dán: **số trực ban đêm · số y tế · bản đồ điểm tập kết an toàn**
+
+### 9.4 Trực đêm
+
+| Nội dung | Quy định |
+|---|---|
+| Số người | **≥ 1 người lớn/khu ở**, tối thiểu 2 người toàn trại. Nam trực khu nam, nữ trực khu nữ |
+| Vị trí | Ngồi tại hành lang/khu vực chung của khu, **không ngủ trong phòng học viên** |
+| Tuần khu | **4 lần/đêm**: 22:30 · 00:30 · 02:30 · 05:00. Ghi giờ + tình hình vào sổ trực đêm |
+| Điểm danh đêm | Đếm đầu người ở mỗi phòng tại lần tuần 22:30 và 05:00, đối chiếu bảng tổng |
+| Học viên dậy đêm | Đi cùng tới nhà vệ sinh, **đứng ngoài cửa**, không vào cùng |
+| Học viên ốm đêm | Gọi y tế; **không tự cho thuốc** |
+| Học viên khóc / nhớ nhà đêm | Đưa ra khu vực chung có ánh sáng, ngồi cùng, **cửa mở, trong tầm nhìn**; báo ACT phụ trách sáng hôm sau |
+| Ghi chép | Sổ trực đêm ghi mọi lần ra khỏi phòng của học viên, có giờ |
+| Bàn giao | 05:45 bàn giao cho ca A theo mẫu §5.3 |
+
+### 9.5 Quy định hai người lớn — bắt buộc tuyệt đối
+
+| Tình huống | Quy định |
+|---|---|
+| Nói chuyện riêng với một học viên | Ở nơi **có thể nhìn thấy nhưng không nghe thấy** — sân, hành lang, cửa mở. Không trong phòng đóng cửa |
+| Vào phòng ở của học viên | **Luôn hai người lớn**; gõ cửa, chờ 5 giây, xưng danh trước khi vào |
+| Vào khu ở của giới khác | **Không**, trừ trường hợp khẩn cấp và **luôn đi hai người**, ghi sổ |
+| Đưa học viên đi y tế / bệnh viện | **Hai người lớn**, ưu tiên có một người cùng giới với học viên |
+| Tắm giặt | Nhân sự **không vào khu tắm** khi có học viên đang tắm; giám sát từ bên ngoài, gọi bằng lời |
+| Xe riêng | **Không chở một học viên một mình trên xe cá nhân**, trừ cấp cứu và có báo Trưởng khoá + gia đình |
+| Chụp ảnh/quay phim | Không ở khu vệ sinh, thay đồ, phòng ngủ. Chỉ chụp trong phạm vi `BM-04` |
+
+> Quy định này bảo vệ **cả học viên và nhân sự**. Nhân sự ở một mình với một trẻ trong không gian kín
+> không chỉ tạo rủi ro cho trẻ — nó khiến chính nhân sự đó không có ai chứng minh được điều gì đã xảy ra.
+
+---
+
+## 10. Ăn uống
+
+### 10.1 Thực đơn mẫu 7 ngày
+
+Nguyên tắc: mỗi bữa chính có **tinh bột + đạm + rau**; bữa phụ chiều **bắt buộc**;
+không lặp món chính trong 3 ngày liền; ngày có hoạt động vận động mạnh thì tăng tinh bột buổi sáng.
+
+| Ngày | Sáng 06:50 | Trưa 11:45 | Phụ chiều 15:30 | Tối 18:30 |
+|---|---|---|---|---|
+| **D1** | Phở gà · chuối | Cơm · thịt kho trứng · canh rau ngót · dưa leo | Sữa tươi + bánh mặn | Cơm · gà rang gừng · canh bí · rau luộc |
+| **D2** | Bánh mì trứng ốp · sữa | Cơm · cá basa sốt cà · canh chua · rau xào | Chuối + bánh quy | Cơm · thịt viên sốt · canh rau cải · trứng chưng |
+| **D3** | Cháo thịt bằm · sữa đậu nành | Cơm · sườn xào chua ngọt · canh khoai mỡ · rau luộc | Sữa chua + bánh mì | Bún thịt nướng · rau sống · nước dùng |
+| **D4** | Xôi mặn · sữa | Cơm · gà kho gừng · canh rau dền · giá xào | Nước cam + bánh bông lan | Cơm · cá thu kho · canh cải · đậu sốt |
+| **D5** | Bún riêu · trái cây | Cơm · thịt heo xào rau củ · canh mướp · trứng luộc | Sữa tươi + trái cây theo mùa | Cơm · gà hấp · canh bí đao · rau muống xào |
+| **D6** | Mì trứng · sữa | Cơm · bò xào hành tây · canh rau ngót · đậu luộc | Bánh mặn + nước ép | Cơm · cá chiên · canh chua · rau xào tỏi |
+| **D7** | Bánh mì pate · sữa · trái cây | Cơm · gà chiên · canh rau · rau luộc (bữa chia tay, **nhẹ, ít dầu**) | Nước + bánh nhẹ trước khi lên xe | — (về nhà) |
+
+**Ba quy tắc cứng của thực đơn:**
+1. Bữa sáng **không chỉ có bánh ngọt** — thiếu đạm buổi sáng làm học viên xuống sức trước 10:00.
+2. Bữa phụ chiều **không được cắt để tiết kiệm hoặc vì lệch giờ**. Cắt bữa phụ là nguyên nhân
+   phổ biến của các ca hạ đường huyết và cáu gắt cuối buổi chiều.
+3. **Không dùng nước ngọt có ga làm phần thưởng thi đua.** Phần thưởng là quyền lợi trải nghiệm:
+   chọn hoạt động, ưu tiên chọn chỗ, được dẫn nghi thức.
+
+### 10.2 Quản lý dị ứng tại bàn ăn — bốn lớp nhận diện
+
+| Lớp | Cơ chế | Ai làm | Kiểm khi nào |
+|---|---|---|---|
+| **1 · Hồ sơ** | Danh sách dị ứng lập từ `BM-01`, có tên – dị nguyên – mức phản ứng – thuốc mang theo | Y tế | D-3 và sáng D1 |
+| **2 · Dán công khai** | Bảng A2 dán tại **bếp · nhà ăn · phòng y tế**, in chữ lớn đọc được từ 2m | Trưởng hậu cần | Mỗi ngày kiểm còn dán |
+| **3 · Nhận diện trên người** | **Vòng tay đỏ** + ghi chú mặt sau thẻ tên | ACT | Mỗi sáng khi điểm danh |
+| **4 · Suất ăn riêng** | Suất riêng **có nhãn in tên học viên**, đặt trên khay riêng, **bếp trưởng bàn giao tận tay ACT của team**, ACT trao tận tay học viên | Bếp → ACT | Mỗi bữa |
+
+**Ba lần đối chiếu mỗi bữa:**
+
+| Thời điểm | Việc | Người ký |
+|---|---|---|
+| Trước bữa 30 phút | Bếp đọc lại danh sách dị ứng, xác nhận đủ số suất riêng | Bếp trưởng |
+| Khi phát suất | ACT đọc tên trên nhãn, gọi tên học viên, học viên xác nhận | ACT |
+| Sau bữa | Y tế hỏi nhanh các học viên có vòng đỏ: có ăn đúng suất không, có biểu hiện gì không | Y tế |
+
+**Khi nghi ngờ phản ứng dị ứng:** ngừng ăn ngay · gọi y tế qua **"GITA ĐỎ"** · giữ lại phần thức ăn
+và bao bì · không cho uống thêm gì · nếu học viên có thuốc cấp cứu cá nhân thì dùng theo đúng chỉ định
+đã ghi trong `BM-01` · báo gia đình **trong 1 giờ**.
+
+> Học viên tự nói "con ăn được mà" **không phải căn cứ**. Chỉ hồ sơ `BM-01` và ý kiến y tế là căn cứ.
+
+### 10.3 Lưu mẫu thức ăn
+
+| Nội dung | Chuẩn |
+|---|---|
+| Phạm vi | **Mọi món của mọi bữa**, gồm cả suất ăn riêng và bữa phụ |
+| Khối lượng | ≥ 100g mỗi món (món lỏng ≥ 150ml) |
+| Dụng cụ | Hộp có nắp, tiệt trùng, **dán nhãn: tên món – bữa – ngày – giờ lấy mẫu – người lấy** |
+| Bảo quản | Tủ mát riêng **2–8°C**, không để chung thực phẩm sống |
+| Thời gian lưu | **24 giờ** kể từ khi kết thúc bữa ăn |
+| Người chịu trách nhiệm | Bếp trưởng lấy mẫu · **Trưởng hậu cần hoặc Y tế ký xác nhận mỗi bữa** |
+| Huỷ mẫu | Sau 24 giờ, ghi sổ trước khi huỷ |
+
+**Đây là điều kiện không thương lượng.** Không lưu mẫu nghĩa là nếu có ngộ độc, khoá không có
+cách nào xác định nguồn và không bảo vệ được ai — kể cả bếp.
+
+### 10.4 Kiểm tra bếp
+
+| Mốc | Nội dung kiểm | Người | Hồ sơ |
+|---|---|---|---|
+| **D-7** | Giấy chứng nhận đủ điều kiện an toàn thực phẩm còn hiệu lực · giấy khám sức khoẻ nhân viên bếp · hợp đồng ghi rõ trách nhiệm | Trưởng hậu cần | Bản sao lưu hồ sơ khoá |
+| **D-1 hoặc D1** | Kiểm hiện trường: khu sơ chế tách khu chín · tủ lạnh có nhiệt kế · nguồn nước · côn trùng · nơi để rác · **tủ lưu mẫu** | Trưởng khoá **hoặc** Y tế | Biên bản kiểm bếp có chữ ký hai bên |
+| **Mỗi ngày** | Nhiệt độ tủ lạnh · mẫu lưu bữa trước · bảng dị ứng còn dán · rác đã đổ | Trưởng hậu cần | Ghi sổ |
+| **Giữa khoá (D4)** | Kiểm lại lần 2 đột xuất, không báo trước | Trưởng khoá hoặc Y tế | Biên bản |
+
+**Bảng kiểm bếp hằng ngày**
+- [ ] Tủ lạnh 0–4°C (mát) / ≤ −18°C (đông), có ghi nhiệt độ
+- [ ] Thực phẩm sống và chín để riêng, dao thớt riêng
+- [ ] Mẫu lưu bữa trước còn đủ, có nhãn đúng
+- [ ] Bảng danh sách dị ứng còn dán, đúng bản mới nhất
+- [ ] Số suất ăn riêng khớp số học viên dị ứng có mặt hôm nay
+- [ ] Nhân viên bếp mặc đồ bảo hộ, không có vết thương hở ở tay chưa băng
+- [ ] Rác đã đổ, thùng có nắp, không ruồi
+- [ ] Nước uống đủ cho ngày mai
+
+### 10.5 Nước uống
+
+| Nội dung | Chuẩn |
+|---|---|
+| Nguồn | Nước đun sôi để nguội **hoặc** nước đóng bình có nguồn gốc, còn hạn, niêm phong nguyên |
+| Lượng | **Tối thiểu 2 lít/học viên/ngày**; ngày nắng ≥ 40°C ngoài trời tăng lên 2,5–3 lít |
+| Bình cá nhân | Mỗi học viên một bình **ghi tên**, nạp đủ **3 lần/ngày** (sáng · trước khối chiều · tối), có bảng tick |
+| Điểm nước | Hội trường · sân hoạt động · nhà ăn · khu ở — bình 20L, luôn đầy |
+| Trên xe | Mỗi xe có nước và cốc giấy |
+| Nhắc uống | **Mỗi giải lao đều uống nước** — ACT nhắc thành nghi thức, không hỏi "ai khát" |
+| Cấm | Không dùng chung bình cá nhân; không uống nước máy chưa xử lý; không uống nước đá không rõ nguồn |
+
+---
+
+## 11. Quản lý đồ dùng cá nhân của học viên
+
+### 11.1 Phân loại và cách xử lý
+
+| Loại đồ | Cách xử lý | Ai giữ | Ký nhận |
+|---|---|---|---|
+| **Điện thoại, đồng hồ thông minh, máy tính bảng** | Thu tại điểm tập kết D1, cất **hộp khoá có ngăn đánh số theo team** | Trưởng khoá | **Có** — phiếu 2 liên |
+| **Tiền mặt > 200.000đ, trang sức, thẻ ngân hàng** | Gửi giữ tập trung, ghi rõ mệnh giá/số lượng | Trưởng khoá | **Có** |
+| Tiền mặt ≤ 200.000đ | Học viên tự giữ, khuyến nghị để trong túi khoá của ba lô | Học viên | Không |
+| **Thuốc theo đơn** | Bàn giao Y tế ngay tại điểm tập kết, kèm đơn/hướng dẫn của gia đình | Y tế | **Có** — sổ thuốc |
+| **Thuốc cấp cứu cá nhân** (hen, dị ứng nặng) | Học viên **giữ theo người**, ACT phụ trách biết vị trí, Y tế có bản dự phòng | Học viên + ACT | **Có** |
+| Kính thuốc, dụng cụ chỉnh nha, máy trợ thính | Học viên tự giữ; ACT ghi nhận vào phiếu team | Học viên | Ghi nhận |
+| Sách, đồ chơi nhỏ, gấu bông | Cho phép; đồ an ủi rất có giá trị với nhóm 9–11 tuổi | Học viên | Không |
+| **Dao, bật lửa, vật sắc nhọn, chất lỏng lạ, thực phẩm tự mang** | **Thu giữ**, ghi sổ, trả khi về; thực phẩm dễ hỏng thì huỷ có ghi nhận | Trưởng khoá | **Có** |
+
+### 11.2 Phiếu gửi giữ tài sản (2 liên — 1 liên gia đình giữ, 1 liên kẹp hồ sơ khoá)
+
+| Trường | Nội dung |
+|---|---|
+| Họ tên học viên / Team / Số thẻ | |
+| Ngày, giờ gửi | |
+| Danh mục (loại · nhãn hiệu · màu · đặc điểm nhận dạng · số lượng) | |
+| Ảnh chụp toàn bộ đồ gửi | Chụp một ảnh, lưu theo tên học viên |
+| Người gửi (học viên/phụ huynh) ký | |
+| Người nhận giữ (Trưởng khoá) ký | |
+| Ngày, giờ trả — người nhận lại ký | |
+
+### 11.3 Chính sách điện thoại — nói rõ với gia đình từ trước khoá
+
+Thu thiết bị là **kỷ luật tập trung, không phải cắt liên lạc**. Đi kèm ba bảo đảm:
+
+| Bảo đảm | Nội dung |
+|---|---|
+| Gọi theo lịch | Mỗi học viên được gọi về nhà **tối thiểu 1 lần** (D3 hoặc D4), 5–7 phút |
+| Gọi khi cần | Được gọi **bất cứ lúc nào** khi có nhu cầu thật sự, **không phải giải trình lý do** |
+| Gia đình gọi vào | **Số trực ban 24/7** luôn có người nghe; cập nhật chung cho nhóm phụ huynh mỗi ngày |
+
+### 11.4 Quy trình trả lại
+
+| Bước | Việc | Ai |
+|---|---|---|
+| 1 | **16:00 D7** — mở hộp khoá, xếp đồ theo team, đối chiếu phiếu gửi | Trưởng khoá + ACT |
+| 2 | Trả theo team, **đọc tên từng người**, học viên kiểm tra tại chỗ trước khi ký | ACT |
+| 3 | Học viên ký nhận vào liên hồ sơ; nhóm 9–11 tuổi thì **phụ huynh ký** | ACT |
+| 4 | Trả thuốc còn lại cho gia đình, **kèm ghi chú đã dùng bao nhiêu liều, ngày nào** | Y tế |
+| 5 | Đồ chưa ai nhận: lập danh sách, **chụp ảnh, đăng nhóm phụ huynh trong 24 giờ**, giữ tại Học viện 30 ngày | Trưởng hậu cần |
+| 6 | Đối chiếu cuối: số phiếu gửi = số phiếu đã trả + số đồ tồn có danh sách | Trưởng khoá |
+
+**Không trả thiết bị trước giờ quy định** kể cả khi học viên nài nỉ — trừ khi cần gọi gia đình,
+và khi đó gọi tại phòng trực ban có người lớn đứng cạnh.
+
+---
+
+## 12. Vệ sinh và môi trường
+
+### 12.1 Lịch dọn hằng ngày
+
+| Giờ | Khu vực | Ai làm | Chuẩn nghiệm thu |
+|---|---|---|---|
+| 06:15–06:45 | Phòng ở: gấp chăn màn, quét, xếp đồ | Học viên theo team, ACT hướng dẫn | Chấm **5S** theo bảng, dán kết quả |
+| Sau mỗi bữa | Bàn ăn, sàn khu ăn của team | Học viên theo team | Bàn sạch, ghế xếp, rác đã bỏ |
+| 08:00 & 14:00 | Nhà vệ sinh chung | Nhân viên vệ sinh của địa điểm | Có bảng ký giờ dọn treo tại cửa |
+| Sau mỗi hoạt động | Sân, hội trường, thu vật tư | Team phụ trách trực nhật + Hậu cần | Không còn vật tư rơi vãi |
+| 20:00 | Hành lang, khu chung | Team trực nhật | |
+| 21:00 | Thu gom rác toàn trại về điểm tập kết rác | Hậu cần | Thùng có nắp, không để qua đêm trong khu ở |
+
+> 5S là nội dung huấn luyện (`NL-09` Tự quản), **không phải hình phạt**. Không bao giờ giao dọn vệ sinh
+> như cách xử lý vi phạm — làm vậy là biến lao động thành hình phạt và phá luôn giá trị của 5S.
+
+### 12.2 Nhà vệ sinh
+
+| Nội dung | Chuẩn |
+|---|---|
+| Tỉ lệ | **≤ 12 học viên/bồn cầu**; nam – nữ riêng, có biển rõ |
+| Dọn | ≥ 2 lần/ngày + kiểm nhanh 3 lần/ngày, có bảng ký giờ |
+| Vật tư | Giấy vệ sinh · xà phòng rửa tay · thùng rác có nắp — **kiểm 3 lần/ngày, không để hết** |
+| Khu nữ | Thùng rác riêng có nắp trong từng buồng; **băng vệ sinh để sẵn nơi kín đáo** |
+| Ban đêm | Đèn hành lang tới nhà vệ sinh **bật cả đêm** |
+| An toàn | Sàn chống trơn; cửa mở được từ ngoài khi sự cố; không khoá trong bằng chốt kẹt |
+
+### 12.3 Rác và giặt
+
+| Nội dung | Quy định |
+|---|---|
+| Phân loại | Tối thiểu 2 loại: rác tái chế · rác thải sinh hoạt. Rác y tế **để riêng**, Y tế xử lý |
+| Tần suất | Thu 2 lần/ngày; **không để rác thực phẩm qua đêm** trong khu ở hoặc gần nhà ăn |
+| Giặt | Học viên tự giặt đồ nhỏ hằng ngày; **túi đồ bẩn có ghi tên**; khoá ≥ 5 ngày bố trí 1 lần giặt tập trung (D4) |
+| Phơi | Dây phơi tách khu nam – nữ; đồ có ghi tên hoặc dấu team |
+| Đồ ướt sau hoạt động nước | Phơi riêng, thu trước 18:00; không để trong phòng ở |
+| Côn trùng | Xịt/đặt bẫy **ngoài giờ có học viên**, thông gió ≥ 60 phút trước khi cho vào |
+
+---
+
+## 13. Vật tư dự phòng cho ba tình huống
+
+Ba tình huống dưới đây có xác suất thấp mỗi khoá nhưng hậu quả lớn, và **không thể mua bổ sung
+khi đã xảy ra** — mưa bão thì không ra khỏi trại được, mất điện thì cửa hàng cũng mất điện.
+
+### 13.1 Mưa bão, ngập, thời tiết cực đoan
+
+| Hạng mục | 50 HV | 100 HV |
+|---|---|---|
+| Áo mưa dự phòng | 20 | 40 |
+| Bạt che 6×8m | 3 | 5 |
+| Dây dù, cọc | 100m / 30 | 200m / 60 |
+| Túi nilon lớn chống ướt (bọc học liệu, thiết bị) | 50 | 100 |
+| Chăn khô dự phòng | 15 | 30 |
+| Khăn khô | 30 | 60 |
+| Giày/dép dự phòng | 10 đôi | 20 đôi |
+| Nước uống đóng chai dự trữ | **150 lít (3 ngày × 1 lít/người)** | 300 lít |
+| Lương khô, mì, đồ ăn không cần nấu | **Đủ 2 bữa cho toàn trại** | như trên |
+| Kịch bản hoạt động trong nhà | **≥ 6 hoạt động** đã chuẩn bị đủ vật tư | |
+
+### 13.2 Mất điện
+
+| Hạng mục | 50 HV | 100 HV |
+|---|---|---|
+| Đèn tích điện / đèn sạc | 12 | 20 |
+| Đèn pin + pin dự phòng | 15 + 60 viên | 28 + 120 viên |
+| Đèn pin đội đầu cho trực đêm | 4 | 8 |
+| Pin sạc dự phòng (điện thoại, bộ đàm) | 10 | 18 |
+| Loa pin dùng được không điện lưới | 1 | 2 |
+| Nến — **không dùng trong khu có học viên** | Chỉ dùng ngoài trời, có người lớn | |
+| Máy phát điện (thuê theo địa điểm) | Kiểm tại D-1 xem địa điểm có không, ai vận hành | |
+| Thùng đá / phương án bảo quản thuốc cần lạnh | 1 | 2 |
+
+**Quy trình 10 phút đầu khi mất điện:** Trưởng khoá phát lệnh **"đứng yên tại chỗ"** → ACT bật đèn,
+điểm danh team ngay tại chỗ → báo số về kênh 1 → chỉ di chuyển khi đã có đèn dẫn đường và đủ số.
+**Không cho học viên di chuyển trong bóng tối để "về phòng cho nhanh".**
+
+### 13.3 Ốm hàng loạt (nghi ngộ độc thực phẩm hoặc bệnh lây)
+
+| Hạng mục | 50 HV | 100 HV |
+|---|---|---|
+| Oresol | 100 gói | 200 gói |
+| Túi nôn | 150 | 300 |
+| Nhiệt kế | 6 | 10 |
+| Găng tay + khẩu trang | 5 hộp / 400 | 10 hộp / 800 |
+| Dung dịch khử khuẩn bề mặt | 10 lít | 20 lít |
+| Nước sát khuẩn tay | 20 chai | 40 chai |
+| Chăn, chiếu để lập **khu cách ly tạm** | 20 bộ | 40 bộ |
+| Túi rác y tế | 50 | 100 |
+| Phòng dự phòng làm khu cách ly | **1 phòng ≥ 20m², có nhà vệ sinh riêng, xác định từ D-1** | 2 phòng |
+
+**Ngưỡng kích hoạt:** ≥ 3 học viên cùng triệu chứng tiêu hoá trong 4 giờ · **hoặc** ≥ 5 học viên sốt
+trong 12 giờ → Y tế báo Trưởng khoá và Giám đốc **ngay**, giữ nguyên mẫu lưu thức ăn 24 giờ,
+lập danh sách người có triệu chứng theo giờ khởi phát và bữa ăn gần nhất, báo y tế địa phương.
+**Không tự công bố nguyên nhân** khi chưa có kết luận chuyên môn — ghi biểu hiện, không ghi chẩn đoán.

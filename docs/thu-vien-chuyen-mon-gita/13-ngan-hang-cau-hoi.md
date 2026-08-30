@@ -112,6 +112,30 @@ phải làm lại cùng người hướng dẫn.
 
 ## 1. CC-01 · Phiếu tự đánh giá học viên (30 câu, 11 nhóm)
 
+> ⚠️ **Hai giới hạn phương pháp phải xử lý trước khi phát phiếu.**
+>
+> **Bản A (9–11 tuổi) — không dùng phiếu hồi tưởng 7 ngày.** Yêu cầu trẻ 9 tuổi nhớ lại tần suất
+> một hành vi suốt bảy ngày **vượt khả năng hồi tưởng của lứa tuổi**; số thu được phản ánh ấn
+> tượng gần nhất chứ không phản ánh cả tuần. **Bắt buộc thay bằng thẻ đếm hằng ngày:** phát thẻ
+> nhỏ kèm `BM-05`, mỗi tối học viên tick một ô cho mỗi câu đang đo, cuối tuần **cộng ô** ra điểm
+> `TS-5`. Người lớn **không tick hộ, không sửa**. Chỉ khi không thể phát thẻ mới dùng phiếu hồi
+> tưởng — và khi đó **ghi rõ trong hồ sơ rằng dữ liệu tuần này là ước lượng**, không dùng để
+> nghiệm thu cổng cấp.
+>
+> **Bản C (16–18 tuổi) — tách vế phản tư khỏi vế hành vi.** Câu ghép hai vế kiểu *"em có làm X
+> và có nhận ra điều đó không"* khiến học viên **làm được X nhưng chưa tự nhận ra** không có ô nào
+> trả lời đúng. Đây là lỗi câu hai vế, làm hỏng cả điểm lẫn cách đọc điểm. Mỗi câu bản C chấm
+> **hai cột riêng**:
+>
+> | Cột | Hỏi gì | Thang |
+> |---|---|---|
+> | **HV — Hành vi** | Mấy ngày trong 7 ngày qua em đã làm việc đó? | `TS-5` |
+> | **PT — Phản tư** | Em có nhận ra lúc nào mình làm được và lúc nào không? | 0 chưa · 1 nhận ra khi có người hỏi · 2 tự nhận ra |
+>
+> **Không cộng hai cột thành một điểm.** Chênh lệch HV–PT là dữ liệu có giá trị riêng: HV cao mà
+> PT thấp nghĩa là hành vi đã có nhưng chưa thành ý thức — cần củng cố `NL-16` Phản tư, không phải
+> củng cố hành vi.
+
 | Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
 |---|---|---|---|
 | `D-30` (baseline) · `D28` · `D118` · `D365` | Học viên tự điền | 20 phút | Tư vấn (mốc `D-30`) · Coach phụ trách (các mốc sau) |
@@ -674,6 +698,15 @@ Cách đọc bộ 7 phiếu:
 ---
 
 ## 6. CC-06 · Bảng chấm rubric 18 năng lực
+
+> ⚠️ **Đọc trước khi dùng CC-06.** Bảng dưới đây chỉ nêu **mốc neo `L3`** cho từng năng lực.
+> Khi phải quyết một học viên đang ở `L2` hay `L4`, **không tự nội suy** — mở
+> [`11-rubric-hanh-vi-18x5.md`](11-rubric-hanh-vi-18x5.md), nơi có **đủ 90 ô** mô tả hành vi
+> quan sát được cho cả 18 năng lực × 5 cấp, kèm bằng chứng chấp nhận được và sai lầm chấm
+> thường gặp riêng của từng năng lực.
+>
+> `CC-06` là **phiếu ghi kết quả chấm**; `11-rubric-hanh-vi-18x5.md` là **thước để chấm**.
+> Dùng phiếu mà không mở thước là chỗ sinh sai lệch lớn nhất trong toàn bộ hệ đánh giá.
 
 | Dùng khi nào | Ai làm | Thời lượng | Nộp cho ai |
 |---|---|---|---|
