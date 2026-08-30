@@ -51,9 +51,11 @@ rủi ro ở đâu. Hai bộ dùng chung một trục GITA và tham chiếu ché
 | **19** | [`19-tuyen-sinh-chi-tiet.md`](19-tuyen-sinh-chi-tiet.md) | 🔧 **Tuyển sinh** — phễu 6 bước · kịch bản tư vấn · bộ câu hỏi sàng lọc | Tư vấn |
 | **20** | [`20-chuan-bi-chi-tiet.md`](20-chuan-bi-chi-tiet.md) | 🔧 **Lịch D-90 → D-1** — 4 cổng kiểm soát · khảo sát địa điểm · ma trận rủi ro | Quản trại |
 | **21** | [`21-van-hanh-hien-truong.md`](21-van-hanh-hien-truong.md) | 🔧 **Vận hành hiện trường** — gộp tổ chức + hậu cần + di chuyển | Toàn đội |
+| **22** | [`22-ho-so-sau-trai-chi-tiet.md`](22-ho-so-sau-trai-chi-tiet.md) | 🔧 **Hồ sơ sau trại** — lịch D+0→D+30 · **Bản đồ Nhận diện mẫu đã điền** · bảng theo dõi cổng C6 | Tư vấn, Coach |
+| **23** | [`23-tai-chinh-chi-tiet.md`](23-tai-chinh-chi-tiet.md) | 🔧 **Tài chính khoá** — cấu trúc chi 9 nhóm · chi phí sau trại · điểm hoà vốn và độ nhạy · 5 khoản không được cắt | Kế toán, Giám đốc |
 
 > **Hai lớp tài liệu.** Tài liệu **01–15** là **bản tóm tắt điều hành** — khung và nguyên lý.
-> Tài liệu **16–21** đánh dấu 🔧 là **bản tác nghiệp** — thứ người vận hành mở ra khi làm việc thật.
+> Tài liệu **từ 16 trở đi** đánh dấu 🔧 là **bản tác nghiệp** — thứ người vận hành mở ra khi làm việc thật.
 > **Khi hai bản khác nhau, bản tác nghiệp là bản đúng.** Mỗi bản tóm tắt có liên kết trỏ sang bản
 > tác nghiệp tương ứng ngay dưới tiêu đề.
 

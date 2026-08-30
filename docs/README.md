@@ -118,7 +118,11 @@ Ghi thẳng, theo đúng nguyên tắc **nói rõ điều chưa biết**.
 
 | Hạng mục | Trạng thái | Ưu tiên |
 |---|---|---|
-| **Ngưỡng số chưa hiệu chuẩn thực địa** | Mọi mốc định lượng là ngưỡng khởi điểm đề xuất, chưa đo trên học viên Việt Nam 9–18 tuổi, và chắc chắn lệch giữa nhóm 9–12 và 15–18 | **Cao nhất** |
+| **Ngưỡng số chưa hiệu chuẩn thực địa** | Đã tách ba dải tuổi tại [`thu-vien-chuyen-mon-gita/18-nguong-theo-dai-tuoi.md`](thu-vien-chuyen-mon-gita/18-nguong-theo-dai-tuoi.md), nhưng **các dải vẫn là ngưỡng đề xuất**, chưa đo trên học viên thật | **Cao nhất** |
+| **Mốc tài chính tham chiếu** | Dải % và bội số trong [`he-thong-huan-luyen-gita/23-tai-chinh-chi-tiet.md`](he-thong-huan-luyen-gita/23-tai-chinh-chi-tiet.md) là ước lượng có luận cứ, chưa đối chiếu chứng từ thật | **Cao** |
+| **Bản đồ Nhận diện mẫu mới có một ca dễ** | Cần thêm 2–3 ca khó: có cờ an toàn · dữ liệu thưa · gia đình mâu thuẫn | Cao |
+| **Biểu mẫu cho chấm mù chéo và lịch so le** | Hai cơ chế đo mạnh nhất nhưng chưa có biểu mẫu nên dễ bị bỏ qua khi thực thi | Trung bình |
+| **Nền tảng số chưa có lược đồ dữ liệu và đặc tả API** | Đặc tả chức năng đã có; đội phát triển vẫn cần một vòng thiết kế kỹ thuật trước khi ước lượng được | Trung bình |
 | **Ca minh hoạ thật đã ẩn danh** | Chưa có — cần dữ liệu từ khoá thật | Cao sau khoá đầu |
 | **Phần T4/T5 của nhiều phác đồ** | Còn lặp khuôn chung, cần cá biệt hoá | Trung bình |
 | **Nền tảng số** | Mới có đặc tả, chưa có sản phẩm | **Cao** — là điều kiện tiên quyết nhượng quyền |

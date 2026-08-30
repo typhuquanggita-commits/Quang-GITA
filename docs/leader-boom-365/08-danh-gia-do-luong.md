@@ -1,5 +1,11 @@
 # 08 · HỆ ĐÁNH GIÁ & ĐO LƯỜNG
 
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`17-do-luong-hieu-qua-chi-tiet.md`](17-do-luong-hieu-qua-chi-tiet.md) — **Phương pháp đo lường chi tiết** — công thức 7 KPI, ba mối đe doạ tới tính hợp lệ, năm thiết kế so sánh khả thi, quy tắc trung thực của báo cáo năm.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 ## 1. Bốn tầng đánh giá (Kirkpatrick) gắn với 5 tầng GITA
 
 | Tầng đánh giá | Đo cái gì | Thời điểm | Công cụ | Ngưỡng đạt |

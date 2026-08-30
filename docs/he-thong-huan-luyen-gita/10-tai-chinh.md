@@ -1,5 +1,11 @@
 # 10 · HỆ THỐNG TÀI CHÍNH
 
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`23-tai-chinh-chi-tiet.md`](23-tai-chinh-chi-tiet.md) — **Quy trình tài chính khoá chi tiết** — cấu trúc chi 9 nhóm gồm bảo hiểm và bốn vị trí chuẩn A1, chi phí sau trại, điểm hoà vốn và độ nhạy, năm khoản không được cắt.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 > **Cảnh báo về số liệu:** các con số tham chiếu dưới đây được đọc từ bảng thu–chi trong file
 > *TRẠI LEADER BOOM 2026.xlsx*. Kế toán phải đối chiếu lại với chứng từ trước khi dùng để ra quyết định.
 > Một số khoản có thể đã gộp hoặc tách khác với cách trình bày ở đây.

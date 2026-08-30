@@ -2958,10 +2958,11 @@ chưa ký · phần trình bày 5 phút do em viết.
 | 75–85 | **Bàn giao sang Coach 90 ngày**: danh sách học viên, ai phụ trách ai, ca cần theo sát |
 | 85–90 | Chốt việc còn lại: hồ sơ chưa xong, `BM-09` chưa bàn giao, gia đình cần gọi lại |
 
-> **Cổng C7 chưa đóng khi khoá kết thúc.** Chuẩn C1 quy định **bàn giao Bản đồ Nhận diện cho 100% học
+> **Cổng C6 chưa đóng khi khoá kết thúc.** Chuẩn C1 quy định **bàn giao Bản đồ Nhận diện cho 100% học
 > viên trong 7 ngày** kể từ ngày kết thúc. Gia đình nào chưa nhận trong buổi Review — vì đón muộn, vì
 > hồ sơ chưa xong — phải có **tên trong danh sách theo dõi và hạn cụ thể**, giao cho một người chịu
-> trách nhiệm. Khoá chỉ được coi là hoàn thành khi danh sách đó về 0.
+> trách nhiệm. **Cổng C6 — Bàn giao hồ sơ (D+7) chỉ đóng khi danh sách đó về 0**, và cổng cuối
+> **C7 — Nghiệm thu 90 ngày (D118)** kiểm lại lần nữa.
 
 > **Sai lầm thường gặp ở ngày này:** đội ngũ **rút ngắn Review xuống 15 phút** vì chạy trễ giờ, và bù
 > lại bằng lễ ghi nhận dài hơn. Đây là đánh đổi sai và nó xảy ra ở gần như mọi khoá đầu tiên. Lễ ghi

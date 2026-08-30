@@ -55,8 +55,9 @@ Khung năng lực chuẩn duy nhất là **18 năng lực** tại [`../thu-vien-
 | **14** | [`14-giao-an-chi-tiet-7-ngay.md`](14-giao-an-chi-tiet-7-ngay.md) | 🔧 **Giáo án chi tiết 7 ngày** — lịch theo giờ · vòng 5 nhịp từng buổi · lời dẫn mẫu · kịch bản Review 30 phút | Trainer, ACT |
 | **15** | [`15-thu-vien-tinh-huong.md`](15-thu-vien-tinh-huong.md) | 🔧 **47 tình huống hiện trường** — dấu hiệu → 5 phút đầu → không được làm → báo ai | **ACT in ra mang theo** |
 | **16** | [`16-tang2-21-ngay-chi-tiet.md`](16-tang2-21-ngay-chi-tiet.md) | 🔧 **Phác đồ 21 ngày** — ba vòng kiểm A→T→I · phép thử phân biệt kỹ năng và thực hiện | Coach |
+| **17** | [`17-do-luong-hieu-qua-chi-tiet.md`](17-do-luong-hieu-qua-chi-tiet.md) | 🔧 **Đo lường hiệu quả** — 4 mức Kirkpatrick · công thức 7 KPI · 3 mối đe doạ tính hợp lệ · 5 thiết kế so sánh | Giáo vụ, Coach, BLĐ |
 
-> **Hai lớp tài liệu.** Tài liệu **01–13** là **bản tóm tắt điều hành**; tài liệu **14–16** đánh dấu 🔧
+> **Hai lớp tài liệu.** Tài liệu **01–13** là **bản tóm tắt điều hành**; tài liệu **từ 14 trở đi** đánh dấu 🔧
 > là **bản tác nghiệp**. Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**.
 
 ---

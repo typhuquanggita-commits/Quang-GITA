@@ -103,13 +103,18 @@ Mọi buổi huấn luyện được chấm theo **12 tiêu chuẩn chất lư�
 
 | Cổng | Thời điểm | Nội dung nghiệm thu |
 |---|---|---|
-| **C1** | D-30 | Hồ sơ tuyển sinh · sàng lọc y tế và tâm lý · hồ sơ đồng ý |
-| **C2** | D-14 | Nhân sự đủ và đạt chuẩn · chứng nhận còn hiệu lực |
-| **C3** | D-7 | Địa điểm · ma trận rủi ro đã ký · diễn tập khẩn cấp |
-| **C4** | D-1 | Hậu cần · y tế · bảo hiểm · danh sách dị ứng |
-| **C5** | Trong trại | Bảng kiểm an toàn hằng ngày · điểm danh 5 mốc |
-| **C6** | D7 | Review từng gia đình · bàn giao cam kết 90 ngày |
-| **C7** | D+7 | **Bàn giao Bản đồ Nhận diện cho 100% học viên** |
+| **C1 — Mở bán** | D-90 | Địa điểm đã ký · giá đã duyệt · nội dung truyền thông đã duyệt |
+| **C2 — Chốt sĩ số** | D-20 | Đạt sĩ số tối thiểu hoà vốn · hồ sơ y tế đủ · thu đủ đợt 1 |
+| **C3 — Sẵn sàng đội ngũ** | D-5 | 100% nhân sự đã tập huấn và ký cam kết · đủ 4 vị trí chuyên trách |
+| **C4 — Sẵn sàng khai giảng** | D-1 | Bảng kiểm đạt · ma trận rủi ro đã ký · bảo hiểm còn hiệu lực |
+| **C5 — Bế mạc an toàn** | D7 | Điểm danh khớp · không có sự cố tồn đọng · bàn giao đủ học viên |
+| **C6 — Bàn giao hồ sơ** | D+7 | **100% học viên có Bản đồ Nhận diện** · đã Review với gia đình |
+| **C7 — Nghiệm thu 90 ngày** | D118 | Báo cáo KPI trước–sau cho 100% học viên đang theo lộ trình |
+
+> **Vì sao cổng cuối đặt ở D118 chứ không ở D+7.** Bảy cổng phải phủ **toàn bộ cam kết**, không chỉ
+> phủ tuần trại. Nếu cổng cuối dừng ở ngày bàn giao hồ sơ thì **chặng 90 ngày — phần thật sự tạo ra
+> thay đổi hành vi — hoàn toàn không có cổng kiểm soát nào**, và chương trình quay về đúng thứ nó
+> tuyên bố không phải: một sự kiện bảy ngày.
 
 ---
 
