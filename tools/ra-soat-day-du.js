@@ -182,7 +182,12 @@ const NGAN = 700;
          chưa ai làm gì. Rỗng ở đây là đúng, không phải chỗ trống. */
       const TRANG_THAI = ['SOI_LUAT','XIN_THEM','CA','AI_HOI','CHAT','THUVIEN',
                           'MINHCHUNG','SECLOG','NHOM','CHUYEN_DOC','TG_DOC'];
-      if (!v.length) { if (TRANG_THAI.indexOf(k) < 0) rong.push(k); return; }
+      /* Kho rỗng CÓ CHỦ Ý phải được khai ở G.RONG_CO_Y, kèm lý do và điều
+         kiện lấp. Danh sách TRANG_THAI cứng ở trên là bản cũ, giữ lại để
+         tương thích; sổ khai mới là đường chính, vì nó bắt người tha phải
+         viết ra vì sao — tha lặng một lần là mở đường tha lần sau. */
+      const KHAI = ((window.G.RONG_CO_Y || []).map(x => x.kho));
+      if (!v.length) { if (TRANG_THAI.indexOf(k) < 0 && KHAI.indexOf(k) < 0) rong.push(k); return; }
       if (typeof v[0] !== 'object' || v[0] === null) return;
       /* Trường nào có ở đa số bản ghi thì coi là trường bắt buộc */
       const dem = {};
@@ -206,7 +211,36 @@ const NGAN = 700;
   });
   bao(!kho.thieu.length, 'không kho nào có bản ghi để trống trường bắt buộc',
     kho.thieu.slice(0, 8).join(' | '));
-  bao(!kho.rong.length, 'không mảng dữ liệu nào khai báo mà rỗng',
+  /* ── Kiểm chính sổ khai rỗng ──
+     Sổ này là chỗ duy nhất được phép tha một kho rỗng, nên nó phải chặt
+     hơn thứ nó tha: mỗi dòng phải nói rõ VÌ SAO và LẤP KHI NÀO, và không
+     dòng nào được ở lại sau khi kho đã có dữ liệu. */
+  const G_RONG = await p.evaluate(() => (window.G.RONG_CO_Y || []).map(x => x.kho));
+  const soKhai = await p.evaluate(() => {
+    const G = window.G, ds = G.RONG_CO_Y || [];
+    return {
+      so: ds.length,
+      mong: ds.filter(x => !x.vi || String(x.vi).length < 80).map(x => x.kho),
+      thieuLap: ds.filter(x => !x.lapKhi || String(x.lapKhi).length < 20).map(x => x.kho),
+      cu: ds.filter(x => Array.isArray(G[x.kho]) && G[x.kho].length).map(x => x.kho),
+      laKho: ds.filter(x => G[x.kho] === undefined).map(x => x.kho)
+    };
+  });
+  /* Không đặt sàn số lượng — một con số tuỳ tiện chỉ tạo áp lực khai thêm
+     cho đủ. Điều thật sự phải chốt là kho đánh giá công khai có mặt trong
+     sổ, vì đó là kho mà việc lấp bừa gây hại nhất. */
+  bao((G_RONG || []).indexOf('DANHGIA_THAT') >= 0,
+    'kho đánh giá công khai được khai rõ là rỗng có chủ ý — không ai lấp nó cho bộ rà soát xanh',
+    soKhai.so + ' kho được khai');
+  bao(!soKhai.mong.length, 'mỗi dòng trong sổ nói rõ VÌ SAO rỗng, đủ dài để người sau hiểu',
+    soKhai.mong.join(' ') || 'mọi lý do đều đủ dài');
+  bao(!soKhai.thieuLap.length, 'và nói rõ LẤP KHI NÀO — không có mốc lấp thì là bỏ quên, không phải chủ ý',
+    soKhai.thieuLap.join(' ') || 'mọi dòng đều có mốc lấp');
+  bao(!soKhai.cu.length, 'không dòng nào ở lại sau khi kho đã có dữ liệu — lời tha cũ phải gỡ đi',
+    soKhai.cu.join(' ') || 'sổ còn đúng');
+  bao(!soKhai.laKho.length, 'sổ không khai kho không tồn tại', soKhai.laKho.join(' ') || 'tên kho đều có thật');
+
+  bao(!kho.rong.length, 'không mảng dữ liệu nào khai báo mà rỗng ngoài sổ khai',
     kho.rong.slice(0, 8).join(' | '));
 
   /* ══════ 3 · CHUỖI CHƯA DỊCH ══════ */

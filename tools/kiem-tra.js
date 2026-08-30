@@ -397,8 +397,26 @@ const { chromium } = require(PW);
       const noi = fsx.readFileSync(px.join(goc, 'src', t), 'utf8');
       for (const m of noi.matchAll(/<(?:img|script|link|iframe)[^>]*?(?:src|href)="(https?:\/\/[^"]+)"/gi)) rong.push(t + ': ' + m[1]);
     }
+    /* Hai chỗ tinh chỉnh, không phải hai ngoại lệ:
+
+       · Tên miền của CHÍNH TRANG không phải "tên miền ngoài". Từ v8.7,
+         index.html mang canonical và og:url trỏ về gita.edu.vn — đó là
+         khai báo địa chỉ của mình, bắt buộc phải có để lập chỉ mục.
+       · <link rel="canonical"> và <link rel="alternate" hreflang> KHÔNG
+         tải tài nguyên nào cả; chúng là siêu dữ liệu. Phép kiểm này đo
+         đường rò khi tải tài nguyên, nên chúng không thuộc phạm vi.
+
+       Vẫn giữ nguyên phần đo thật: ảnh, phông, mã, khung nhúng gọi ra
+       ngoài đều bị bắt như cũ. */
+    const miNha = fsx.existsSync(px.join(goc, 'CNAME'))
+      ? fsx.readFileSync(px.join(goc, 'CNAME'), 'utf8').trim() : '';
     const html = fsx.readFileSync(px.join(goc, 'index.html'), 'utf8');
-    for (const m of html.matchAll(/(?:src|href)="(https?:\/\/[^"]+)"/gi)) rong.push('index.html: ' + m[1]);
+    for (const m of html.matchAll(/<(?:img|script|link|iframe|audio|video|source)[^>]*?(?:src|href)="(https?:\/\/[^"]+)"/gi)) {
+      const the = m[0];
+      if (/rel="(?:canonical|alternate)"/i.test(the)) continue;
+      if (miNha && m[1].indexOf('//' + miNha) >= 0) continue;
+      rong.push('index.html: ' + m[1]);
+    }
     bao(!rong.length, 'trang không tải tài nguyên nào từ tên miền ngoài', rong.slice(0, 3).join(' · ') || 'tự chứa hoàn toàn');
 
     /* Chính sách nội dung phải có và phải khoá đúng chỗ */
@@ -3469,7 +3487,16 @@ const { chromium } = require(PW);
         const f = (G.VIEWS || {})[d.man]; if (!f) return;
         let o = ''; try { o = f(); } catch (e) { o = 'LOI'; }
         if (o.indexOf('CHUYỆN CHO CHỖ NÀY') >= 0) hien++;
-        else im.push(d.man + (o === 'LOI' ? '(lỗi)' : (G.thayMan && !G.thayMan(d.man) ? '(khoá)' : '(HỤT)')));
+        else {
+          /* G.thayMan KHÔNG tồn tại — bản đầu viết nhầm tên hàm, nên nhánh
+             "(khoá)" chưa bao giờ chạy và MỌI màn khoá bị gán "(HỤT)".
+             Mục này chỉ xanh vì đang chạy bằng Super Admin, vai thấy hết.
+             Đổi vai một cái là đỏ oan. Tên đúng: G.vaiThayMan(vai, mục). */
+          let it = null;
+          (G.NAV || []).forEach(g => (g.items || []).forEach(x => { if (x.v === d.man) it = x; }));
+          const khoa = it && G.vaiThayMan && !G.vaiThayMan(G.S.role, it);
+          im.push(d.man + (o === 'LOI' ? '(lỗi)' : (khoa ? '(khoá)' : '(HỤT)')));
+        }
       });
       /* Đứng yên trong ngày: dựng cùng một màn hai lần phải ra cùng một chuyện */
       const a = G.clgChon('ban-do'), b = G.clgChon('ban-do');
@@ -3544,6 +3571,185 @@ const { chromium } = require(PW);
 
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
     await p.waitForTimeout(2000);
+  }
+
+
+  /* ═══════════ 39 · MÁY TÌM KIẾM ĐỌC ĐƯỢC — MÀ KHO VẪN KHOÁ ═══════════
+     Trước v8.7, GITA 365 không xếp hạng thấp — nó KHÔNG TỒN TẠI với máy
+     tìm kiếm, do chính mình khai: robots.txt Disallow toàn bộ, thẻ meta
+     noindex, và 77 ký tự trong <body> trước khi chạy JavaScript.
+
+     Mục này đo hai thứ cùng lúc, vì mở cửa trước mà hở kho thì tệ hơn
+     đóng cả hai. */
+  console.log('\n39 · MÁY TÌM KIẾM ĐỌC ĐƯỢC — MÀ KHO VẪN KHOÁ');
+  {
+    const fs39 = require('fs'), px39 = require('path');
+    const goc39 = px39.join(__dirname, '..');
+    const doc39 = f => fs39.readFileSync(px39.join(goc39, f), 'utf8');
+    const idx = doc39('index.html');
+    const rb = doc39('robots.txt');
+
+    /* ── Chữ trình thu thập thật sự đọc được ── */
+    const t1 = idx.indexOf('<!-- SEO:THAN -->'), t2 = idx.indexOf('<!-- /SEO:THAN -->');
+    const khung = t1 >= 0 && t2 > t1 ? idx.slice(t1, t2) : '';
+    const chu = khung.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    bao(chu.length >= 5000,
+      'trang chủ có đủ chữ để xếp hạng khi chưa chạy JavaScript — trước đây là 77 ký tự',
+      chu.length.toLocaleString('vi-VN') + ' ký tự');
+
+    /* ── Mỗi truy vấn một địa chỉ ──
+       Một địa chỉ không xếp hạng được cho nhiều truy vấn khác nhau.
+       Người tìm "mô thức huấn luyện GITA" và người tìm "con không chịu
+       học phải làm sao" cần hai trang riêng. */
+    const TRANG_CON = ['mo-thuc-huan-luyen-gita.html', 'nam-tang-dong-hanh.html',
+      'hanh-trinh-12-chang.html', 'duong-vao.html', 'cau-hoi-thuong-gap.html'];
+    const chuCua = f => {
+      if (!fs39.existsSync(px39.join(goc39, f))) return -1;
+      return doc39(f).replace(/<(script|style|head)[\s\S]*?<\/\1>/g, '')
+        .replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().length;
+    };
+    const dai = TRANG_CON.map(f => ({ f, n: chuCua(f) }));
+    bao(dai.every(x => x.n >= 2000),
+      'mỗi trang con đủ dày để không bị coi là trang mồi — trang mồi bị Google hạ, không nâng',
+      dai.map(x => x.n < 0 ? x.f + ':THIẾU' : x.n).join(' · '));
+    bao(dai.reduce((a, x) => a + Math.max(0, x.n), chu.length) >= 22000,
+      'tổng nội dung công khai đủ để phủ nhiều truy vấn',
+      dai.reduce((a, x) => a + Math.max(0, x.n), chu.length).toLocaleString('vi-VN') +
+      ' ký tự trên ' + (TRANG_CON.length + 1) + ' địa chỉ');
+
+    /* ── Không trang nào lặp lại trang nào ──
+       Hai địa chỉ cùng nội dung thì Google không biết xếp cái nào, nên
+       xếp thấp cả đôi. Đo bằng tiêu đề mục: mục đã sâu ở trang con thì
+       không được còn nguyên ở trang chủ. */
+    const mucChu = (khung.match(/<h2>([^<]+)<\/h2>/g) || []).map(x => x.replace(/<[^>]+>/g, ''));
+    const lapLai = [];
+    for (const f of TRANG_CON) {
+      if (!fs39.existsSync(px39.join(goc39, f))) continue;
+      for (const m of (doc39(f).match(/<h2>([^<]+)<\/h2>/g) || []))
+        if (mucChu.indexOf(m.replace(/<[^>]+>/g, '')) >= 0)
+          lapLai.push(f + ': ' + m.replace(/<[^>]+>/g, ''));
+    }
+    bao(!lapLai.length, 'trang chủ và trang con không lặp lại phần nào của nhau',
+      lapLai.length ? lapLai.slice(0, 3).join(' · ') : mucChu.length + ' mục ở trang chủ, không mục nào trùng');
+
+    /* ── Trang con phải nối vào nhau, không phải trang mồ côi ── */
+    const moCoi = TRANG_CON.filter(f => {
+      if (!fs39.existsSync(px39.join(goc39, f))) return true;
+      const t = doc39(f);
+      return !/href="\//.test(t) || !/<nav/.test(t);
+    });
+    bao(!moCoi.length, 'trang con nào cũng có đường dẫn sang trang khác — không trang nào mồ côi',
+      moCoi.join(' ') || TRANG_CON.length + ' trang đều nối');
+
+    /* ── Dữ liệu có cấu trúc riêng của trang con ── */
+    const coHowTo = fs39.existsSync(px39.join(goc39, 'duong-vao.html')) &&
+      /"HowTo"/.test(doc39('duong-vao.html'));
+    const coFaqCon = fs39.existsSync(px39.join(goc39, 'cau-hoi-thuong-gap.html')) &&
+      /"FAQPage"/.test(doc39('cau-hoi-thuong-gap.html'));
+    const coBread = TRANG_CON.filter(f => fs39.existsSync(px39.join(goc39, f)) &&
+      !/"BreadcrumbList"/.test(doc39(f)));
+    bao(coHowTo && coFaqCon && !coBread.length,
+      'trang con khai đúng loại dữ liệu của mình — HowTo cho đường vào, FAQ cho hỏi–đáp, ' +
+      'đường dẫn cho tất cả', coBread.length ? 'thiếu đường dẫn: ' + coBread.join(' ') : 'đủ');
+
+    /* ── Không rò kho nghề ra cửa trước ──
+         Mở cửa trước là để người ta tìm thấy Học viện, không phải để
+         phác đồ và kịch bản đi ra ngoài. */
+    const ro = ['phác đồ', 'kịch bản chuyên môn', 'mô thức số', 'hồ sơ gia đình', 'mật khẩu']
+      .filter(x => chu.toLowerCase().indexOf(x) >= 0);
+    bao(!ro.length, 'khung công khai KHÔNG mang nội dung kho nghề ra ngoài',
+      ro.length ? 'rò: ' + ro.join(' ') : 'chỉ có phần giới thiệu vốn đã công khai');
+
+    /* ── Cho lập chỉ mục ── */
+    bao(/<meta name="robots" content="index, follow/.test(idx),
+      'thẻ robots cho phép lập chỉ mục — đây là dòng đã chặn Google suốt các bản trước');
+    bao(/<link rel="canonical"/.test(idx), 'có địa chỉ chuẩn (canonical)');
+    bao(/property="og:image"/.test(idx) && /name="twitter:card"/.test(idx),
+      'có thẻ chia sẻ mạng xã hội — ảnh và mô tả không để Facebook tự đoán');
+
+    /* ── Ảnh chia sẻ phải đúng khổ ── */
+    const anh = px39.join(goc39, 'assets', 'icons', 'chia-se-1200x630.png');
+    let khoAnh = '';
+    if (fs39.existsSync(anh)) {
+      const b = fs39.readFileSync(anh);
+      khoAnh = b.readUInt32BE(16) + '×' + b.readUInt32BE(20);
+    }
+    bao(khoAnh === '1200×630', 'ảnh chia sẻ đúng khổ 1200×630', khoAnh || 'thiếu ảnh');
+
+    /* ── robots.txt: hai đường, hai chính sách ── */
+    bao(!/^User-agent: \*\s*\nDisallow: \/\s*$/m.test(rb) && /Allow:/.test(rb),
+      'robots.txt không còn cấm toàn bộ');
+    bao(/Disallow: \/kho\//.test(rb) && /Disallow: \/\*\.enc\$/.test(rb),
+      'kho mã hoá vẫn bị cấm thu thập — mở cửa trước không phải mở kho');
+    const aiChan = ['GPTBot', 'ClaudeBot', 'Google-Extended', 'CCBot', 'PerplexityBot', 'Bytespider']
+      .filter(b => !new RegExp('User-agent: ' + b + '\\s*\\nDisallow: /').test(rb));
+    bao(!aiChan.length,
+      'vẫn chặn máy thu thập dữ liệu huấn luyện AI — chặn Google-Extended KHÔNG hạ thứ hạng tìm kiếm',
+      aiChan.length ? 'hở: ' + aiChan.join(' ') : '20 máy AI bị chặn, Googlebot được vào');
+    bao(/Sitemap:/.test(rb), 'robots.txt chỉ đường tới sitemap');
+
+    /* ── sitemap ── */
+    const sm = doc39('sitemap.xml');
+    const soUrl = (sm.match(/<loc>/g) || []).length;
+    bao(soUrl === 6 && !/#/.test(sm),
+      'sitemap khai đủ sáu địa chỉ và không khai địa chỉ có dấu # — ứng dụng định tuyến bằng #, ' +
+      'khai địa chỉ có # là khai địa chỉ không tồn tại', soUrl + ' địa chỉ');
+    bao(fs39.existsSync(px39.join(goc39, '.nojekyll')),
+      'có .nojekyll — không thì GitHub Pages nuốt thư mục bắt đầu bằng gạch dưới');
+
+    /* ── Dữ liệu có cấu trúc ── */
+    const m = idx.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+    let ld = null;
+    try { ld = m ? JSON.parse(m[1]) : null; } catch (e) { ld = null; }
+    bao(!!ld, 'dữ liệu có cấu trúc đọc được bằng máy — sai một dấu phẩy là Google bỏ qua cả khối');
+    const loai = ld ? (ld['@graph'] || []).map(x => x['@type']) : [];
+    bao(['EducationalOrganization', 'Person', 'WebSite', 'FAQPage'].every(x => loai.indexOf(x) >= 0),
+      'khai đủ tổ chức, người sáng lập, trang và hỏi–đáp', loai.join(' '));
+    const faq = ld ? (ld['@graph'] || []).filter(x => x['@type'] === 'FAQPage')[0] : null;
+    bao(faq && (faq.mainEntity || []).length >= 12,
+      'đủ câu hỏi–đáp có cấu trúc để chiếm ô trả lời nhanh',
+      faq ? (faq.mainEntity || []).length + ' câu' : '0');
+
+    /* ══ KHÔNG DỰNG ĐÁNH GIÁ GIẢ ══
+       Đây là mục quan trọng nhất của cả phần SEO. Kho có sẵn G.HAILONG
+       với "Nhà Khánh Vy", "Nhà Đức Anh", 87,4% — toàn dữ liệu mẫu. Đem
+       chúng lên trang dưới dạng AggregateRating là vi phạm chính sách
+       đánh giá giả của Google, mà mức phạt là phạt tay: mất hẳn chỉ mục.
+       Tức là làm đúng cái ngược lại với việc muốn lên top. */
+    const dgThat = await p.evaluate(() => (window.G.DANHGIA_THAT || []).length);
+    const coRating = /"aggregateRating"|"AggregateRating"/.test(idx);
+    bao(dgThat > 0 ? coRating : !coRating,
+      dgThat > 0
+        ? 'có đánh giá thật thì phát dữ liệu đánh giá'
+        : 'CHƯA có đánh giá thật thì KHÔNG phát dữ liệu đánh giá — im lặng, không bịa',
+      dgThat + ' đánh giá thật trong kho');
+    bao(!/Khánh Vy|Đức Anh|Gia Huy|Thanh Trúc|Ngọc Diệp/.test(khung),
+      'không đem nhà hư cấu trong dữ liệu mẫu ra trang công khai');
+
+    /* ── Bốn cửa của một đánh giá thật ── */
+    const dg = await p.evaluate(() => {
+      const G = window.G;
+      const truoc = G.dgCongKhai().length;
+      /* Gửi một đánh giá KHÔNG cho phép công khai — nó không được ra ngoài */
+      G.dgGui(5, 'Thử: không cho công khai', '', false, 'RUT');
+      const cho = G.dgChoDuyet();
+      const ma = cho.length ? cho[0].ma : null;
+      const sauGui = G.dgCongKhai().length;
+      if (ma) G.dgDuyet(ma, true);
+      const sauDuyet = G.dgCongKhai().length;
+      return { truoc, sauGui, sauDuyet, luat: (G.DG_LUAT || []).length,
+        hoi: (G.DG_HOI || []).length, ten: (G.DG_TEN || []).length };
+    });
+    bao(dg.sauGui === dg.truoc,
+      'đánh giá chưa duyệt KHÔNG ra tới trang công khai');
+    bao(dg.sauDuyet === dg.truoc,
+      'duyệt rồi mà gia đình KHÔNG cho phép thì vẫn không ra ngoài — sự đồng ý là cửa riêng, ' +
+      'không phải hệ quả của việc duyệt');
+    bao(dg.luat >= 6 && dg.hoi === 3 && dg.ten === 3,
+      'luật đánh giá, câu hỏi và mức hiển thị tên đều đủ',
+      dg.luat + ' luật · ' + dg.hoi + ' câu hỏi · ' + dg.ten + ' mức tên');
+
+    await p.evaluate(() => { try { localStorage.removeItem('gita365_danh_gia'); } catch (e) {} });
   }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));

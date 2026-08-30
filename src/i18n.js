@@ -214,6 +214,8 @@ G.ITEM_EN = {
      rơi vào ô trống nên giao diện EN hiện mã màn hình thay cho tên. */
   'gioi-thieu':['What GITA 365 is','Mission · vision · goals · values · five tiers · culture · how we stay with you'],
   'pham-vi':['My scope','How far my access goes · what is still closed'],
+  'danh-gia':['Rate GITA 365','Three questions · the "what went wrong" part matters most'],
+  'duyet-danh-gia':['Approve public reviews','Four gates before a family\u2019s words go public'],
   'ban-do-ca-nhan':['Personal blueprint · 11 blocks','Why → talent, then loop back and revise the path'],
   'vong-nhac':['Right – Enough – Deep loop','Reading is not doing · three rungs per task'],
   'hanh-trinh-12':['The learner journey · 12 stages','4 pillars · who owns each · WOW touchpoints'],

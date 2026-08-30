@@ -45,6 +45,12 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   /* Sáu trăm chuyện truyền cảm hứng, mỗi cấp tài khoản một trăm. Ở gói nền
      vì vai nào cũng phải có kho của cấp mình; màn hình lọc theo vai. */
   'CH_MACH', 'CH_CAP', 'ROHN', 'CHUYEN',
+  /* Đánh giá của gia đình: luật, câu hỏi, mức hiển thị tên — và mảng
+     đánh giá THẬT (rỗng cho tới khi có người thật gửi và Học viện duyệt).
+     Ở gói nền vì phụ huynh và học viên đều phải gửi được. */
+  'DANHGIA_THAT', 'DG_LUAT', 'DG_HOI', 'DG_MOC', 'DG_TEN',
+  /* Sổ khai kho rỗng có chủ ý — bộ rà soát đọc nó thay cho danh sách tha lặng */
+  'RONG_CO_Y',
   /* Sổ nhật ký từng vị trí và bốn mốc thi viết: mọi vai đều dùng. */
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
