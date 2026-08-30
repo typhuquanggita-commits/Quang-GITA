@@ -8,6 +8,7 @@ const NAV = [
   { to: '/', label: 'Trang chủ' },
   { to: '/lo-trinh', label: 'Lộ trình' },
   { to: '/chuyen-de', label: 'Chuyên đề' },
+  { to: '/luyen-tap', label: 'Luyện tập' },
   { to: '/bo-de', label: 'Bộ đề' },
   { to: '/cam-nang', label: 'Cẩm nang điểm 10' },
   { to: '/hsg', label: 'HSG' },
@@ -21,7 +22,7 @@ export const AppBar: React.FC = () => {
   const [menu, setMenu] = useState(false);
 
   const nav = [...NAV];
-  if (user) nav.push({ to: '/nhiem-vu', label: 'Nhiệm vụ' }, { to: '/bao-cao', label: 'Báo cáo' });
+  if (user) nav.push({ to: '/nhiem-vu', label: 'Nhiệm vụ' }, { to: '/so-tay', label: 'Sổ tay lỗi sai' }, { to: '/bao-cao', label: 'Báo cáo' });
   if (perms.isStaff) nav.push({ to: '/giao-vien', label: 'Giáo viên' });
   if (perms.canManageUsers) nav.push({ to: '/quan-tri', label: 'Quản trị' });
 
@@ -65,6 +66,7 @@ export const AppBar: React.FC = () => {
                 <div className="sidenav">
                   <button onClick={() => { setMenu(false); go('/bao-cao'); }}>📈 Báo cáo học tập</button>
                   <button onClick={() => { setMenu(false); go('/nhiem-vu'); }}>📝 Nhiệm vụ về nhà</button>
+                  <button onClick={() => { setMenu(false); go('/so-tay'); }}>📓 Sổ tay lỗi sai</button>
                   <button onClick={() => { setMenu(false); logout(); go('/'); }}>↩ Đăng xuất</button>
                 </div>
               </div>

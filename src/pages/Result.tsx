@@ -134,6 +134,7 @@ export const Result: React.FC<{ attemptId: string }> = ({ attemptId }) => {
 
       <div className="btn-group mt6 no-print">
         <button className="btn btn-primary" onClick={() => go(`/lam-bai/${attempt.examId}`)}>Làm lại đề này</button>
+        <Link to="/so-tay" className="btn btn-accent">📓 Chữa lại trong Sổ tay lỗi sai</Link>
         <Link to={`/bo-de?khoi=${attempt.grade}`} className="btn btn-outline">Chọn đề khác</Link>
         <Link to="/bao-cao" className="btn">Xem báo cáo tiến bộ</Link>
       </div>

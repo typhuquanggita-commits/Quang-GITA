@@ -4,8 +4,17 @@ import { BANK_G6 } from './g6';
 import { BANK_G7 } from './g7';
 import { BANK_G8 } from './g8';
 import { BANK_G9 } from './g9';
+import { BANK_G6_PLUS } from './g6-plus';
+import { BANK_G7_PLUS } from './g7-plus';
+import { BANK_G8_PLUS } from './g8-plus';
+import { BANK_G9_PLUS } from './g9-plus';
 
-export const ALL_TEMPLATES: Template[] = [...BANK_G6, ...BANK_G7, ...BANK_G8, ...BANK_G9];
+export const ALL_TEMPLATES: Template[] = [
+  ...BANK_G6, ...BANK_G6_PLUS,
+  ...BANK_G7, ...BANK_G7_PLUS,
+  ...BANK_G8, ...BANK_G8_PLUS,
+  ...BANK_G9, ...BANK_G9_PLUS,
+];
 
 export const templatesOfGrade = (g: Grade): Template[] => ALL_TEMPLATES.filter((t) => t.grade === g);
 export const templatesOfTopic = (topicId: string): Template[] => ALL_TEMPLATES.filter((t) => t.topicId === topicId);

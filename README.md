@@ -41,7 +41,8 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 - **Đề thi Học sinh giỏi** vòng trường và vòng huyện/quận.
 - **Bộ luyện theo chuyên đề** cho từng chuyên đề.
 
-Tổng cộng **432 đề**, mỗi mã đề sinh ra một bộ câu hỏi riêng.
+Tổng cộng **432 đề** / **7.884 câu hỏi**, mỗi mã đề sinh ra một bộ câu hỏi riêng, sinh từ
+**175 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
 
 **Cách hoạt động:** câu hỏi được sinh từ *khuôn tham số hoá* (`src/bank/`). Mỗi khuôn tự sinh
 số liệu, đáp án, **lời giải từng bước**, phân tích tư duy và cảnh báo bẫy. Mỗi mã đề gắn với
@@ -59,7 +60,26 @@ khác nhau cho các bộ câu hỏi khác nhau.
 
 Điểm được quy về **thang 10**, xếp loại theo Thông tư 22.
 
-## 5. Đánh giá chất lượng & định hướng cải thiện
+## 5. Hai chế độ làm bài
+
+| Chế độ | Mục đích | Đặc điểm |
+|---|---|---|
+| **Luyện tập** (`/luyen-tap`) | Để **hiểu bài** | Không bấm giờ; chấm và hiện lời giải ngay sau **mỗi câu**; chọn chuyên đề và mức độ |
+| **Thi** (`/bo-de`) | Để **đo năng lực** | Bấm giờ, tự lưu bài đang làm, nộp xong mới xem lời giải và phân tích |
+
+Nguyên tắc GITA: luyện tập đến khi tỉ lệ đúng ≥ 85% rồi mới chuyển sang chế độ thi.
+
+## 6. Sổ tay lỗi sai
+
+Trang **Sổ tay lỗi sai** (`/so-tay`) tự động gom mọi câu đã làm sai **theo dạng bài**
+(chứ không theo từng câu riêng lẻ), xếp theo tần suất sai giảm dần, kèm:
+
+- Lời giải chi tiết và phân tích tư duy của từng câu đã sai
+- Nút **Luyện lại đúng dạng đó** và **Đọc lại Sơ đồ đọc vị bài**
+- Quy trình 4 bước chữa lỗi theo phương pháp GITA
+- In được để kẹp vào vở
+
+## 7. Đánh giá chất lượng & định hướng cải thiện
 
 Sau mỗi bài, hệ thống không chỉ trả về điểm mà còn phân tích:
 
@@ -68,14 +88,14 @@ Sau mỗi bài, hệ thống không chỉ trả về điểm mà còn phân tíc
 - **Kế hoạch cải thiện có thứ tự ưu tiên**: làm gì trước, làm gì sau, mỗi việc kèm hành động cụ thể.
 - **Khoảng cách tới mốc 9+** và nhận xét về nhịp độ làm bài.
 
-## 6. Lộ trình học tập 3 giai đoạn
+## 8. Lộ trình học tập 3 giai đoạn
 
 `Giai đoạn 1 — Nền tảng` → `Giai đoạn 2 — Chuyên đề nâng cao` → `Giai đoạn 3 — Luyện đề & Tổng ôn`
 
 Mỗi khối có lộ trình riêng chia thành các mốc theo tuần, mỗi mốc có mục tiêu, chuyên đề,
 **sản phẩm đầu ra kiểm chứng được** và **ngưỡng điểm để được chuyển mốc**.
 
-## 7. Tài khoản & phân quyền
+## 9. Tài khoản & phân quyền
 
 | Vai trò | Quyền |
 |---|---|
@@ -94,7 +114,7 @@ Mỗi khối có lộ trình riêng chia thành các mốc theo tuần, mỗi m�
 | `teacher@gita.edu.vn` | Giáo viên |
 | `admin@gita.edu.vn` | Quản trị viên |
 
-## 8. Kho tài liệu chuẩn nhận diện GITA
+## 10. Kho tài liệu chuẩn nhận diện GITA
 
 Trang **Thư viện** sinh tài liệu in được (A4, có tiêu đề GITA, đánh số câu, trang đáp án):
 
@@ -103,7 +123,7 @@ Trang **Thư viện** sinh tài liệu in được (A4, có tiêu đề GITA, đ
 - **Bảng công thức điểm 10**.
 - **Đề cương ôn tập** theo cấu trúc chuẩn.
 
-## 9. Chạy dự án
+## 11. Chạy dự án
 
 ```bash
 npm install     # cài phụ thuộc
@@ -114,7 +134,7 @@ npm run preview # xem bản đã đóng gói
 
 Yêu cầu: Node.js 18+. Dự án dùng **React 19 + TypeScript + Vite**, không phụ thuộc dịch vụ ngoài.
 
-## 10. Cấu trúc mã nguồn
+## 12. Cấu trúc mã nguồn
 
 ```
 src/
@@ -135,7 +155,7 @@ src/
   pages/        Các màn hình của ứng dụng
 ```
 
-## 11. Về lưu trữ dữ liệu
+## 13. Về lưu trữ dữ liệu
 
 Bản này lưu dữ liệu học tập trên trình duyệt (localStorage) để hệ thống chạy độc lập,
 không cần máy chủ. Lớp `src/lib/store.ts` đóng vai trò kho dữ liệu — khi triển khai máy chủ

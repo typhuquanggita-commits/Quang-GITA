@@ -19,6 +19,8 @@ import { Teacher } from '@/pages/Teacher';
 import { Admin } from '@/pages/Admin';
 import { Pricing } from '@/pages/Pricing';
 import { Library } from '@/pages/Library';
+import { Practice } from '@/pages/Practice';
+import { Notebook } from '@/pages/Notebook';
 import { Card } from '@/components/ui';
 
 const Footer: React.FC = () => (
@@ -64,6 +66,8 @@ export const App: React.FC = () => {
   else if (p === '/quan-tri') body = <Admin />;
   else if (p === '/bang-gia') body = <Pricing />;
   else if (p === '/thu-vien') body = <Library />;
+  else if (p === '/luyen-tap') body = <Practice />;
+  else if (p === '/so-tay') body = <Notebook />;
   else body = (
     <div className="wrap page">
       <Card className="tc">

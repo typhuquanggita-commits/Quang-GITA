@@ -48,7 +48,9 @@ export const Dashboard: React.FC = () => {
           </div>
           <div className="btn-group">
             <Link to="/chuyen-de" className="btn btn-primary">Học chuyên đề</Link>
+            <Link to="/luyen-tap" className="btn">Luyện tập</Link>
             <Link to="/bo-de" className="btn btn-accent">Luyện đề</Link>
+            <Link to="/so-tay" className="btn btn-outline">📓 Sổ tay lỗi sai</Link>
           </div>
         </div>
       </Card>

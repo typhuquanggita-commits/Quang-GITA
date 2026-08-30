@@ -28,7 +28,7 @@ export const Library: React.FC = () => {
 
   const topic = topics.find((t) => t.id === topicId) ?? topics[0];
   const questions: Question[] = useMemo(
-    () => (topic ? generateDrill(topic.id, levels, count, seed) : []),
+    () => (topic ? generateDrill(topic.id, levels, count, seed, { kinds: ['MC', 'TF', 'SHORT'] }) : []),
     [topic, levels, count, seed]
   );
 

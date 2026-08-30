@@ -152,8 +152,16 @@ export const TopicDetail: React.FC<{ id: string }> = ({ id }) => {
               </Card>
             ))}
           </div>
-          <div className="mt4">
-            <Link to={`/bo-de?khoi=${topic.grade}`} className="btn btn-outline">Xem bộ 100 đề luyện thi khối {topic.grade} →</Link>
+          <div className="note gold mt4">
+            <div className="note-title">🎯 Nên bắt đầu bằng chế độ Luyện tập</div>
+            <p className="mb0 small">
+              Chế độ Luyện tập không bấm giờ, chấm và hiện lời giải ngay sau mỗi câu — dùng để <strong>hiểu bài</strong>.
+              Khi tỉ lệ đúng đạt trên 85%, hãy chuyển sang chế độ thi có bấm giờ ở mục Bộ đề để <strong>đo năng lực</strong>.
+            </p>
+          </div>
+          <div className="btn-group mt4">
+            <Link to={`/luyen-tap?khoi=${topic.grade}&cd=${topic.id}`} className="btn btn-accent btn-lg">Vào chế độ Luyện tập →</Link>
+            <Link to={`/bo-de?khoi=${topic.grade}`} className="btn btn-outline btn-lg">Bộ 100 đề luyện thi khối {topic.grade} →</Link>
           </div>
         </Card>
       )}

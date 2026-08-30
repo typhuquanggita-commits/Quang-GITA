@@ -199,14 +199,26 @@ export function generateExam(spec: ExamSpec): Question[] {
 }
 
 /** Sinh nhanh một bộ câu hỏi luyện tập theo chuyên đề & mức độ. */
-export function generateDrill(topicId: string, levels: Level[], count: number, seed = Date.now()): Question[] {
+export function generateDrill(
+  topicId: string,
+  levels: Level[],
+  count: number,
+  seed = Date.now(),
+  opts: { kinds?: Question['kind'][] } = {}
+): Question[] {
   const r = makeRng(seed);
-  const pool = ALL_TEMPLATES.filter((t) => t.topicId === topicId && levels.includes(t.level));
-  const fallback = ALL_TEMPLATES.filter((t) => t.topicId === topicId);
-  const use = pool.length ? pool : fallback;
+  const inTopic = ALL_TEMPLATES.filter((t) => t.topicId === topicId);
+  const byKind = opts.kinds ? inTopic.filter((t) => opts.kinds!.includes(t.kind)) : inTopic;
+  const pool = byKind.filter((t) => levels.includes(t.level));
+  const use = pool.length ? pool : byKind.length ? byKind : inTopic;
   if (!use.length) return [];
   const out: Question[] = [];
-  for (let i = 0; i < count; i++) out.push(buildQuestion(r.pick(use), seed, i));
+  // Duyệt vòng qua các khuôn để không lặp khuôn khi chưa dùng hết
+  let bag: Template[] = [];
+  for (let i = 0; i < count; i++) {
+    if (!bag.length) bag = r.shuffle(use);
+    out.push(buildQuestion(bag.pop()!, seed, i));
+  }
   return out;
 }
 
