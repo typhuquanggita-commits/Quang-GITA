@@ -97,8 +97,37 @@ if (!G.PHAN) {
     if (!coNhom[n.id])
       L('Nhóm ' + n.id + ' · ' + n.t + ' chưa được xếp vào phần nào — sẽ biến mất khỏi mục lục');
   });
-  console.log('BẢY PHẦN · ' + G.PHAN.length + ' phần · ' + Object.keys(coNhom).length +
-    '/' + (G.NHOM || []).length + ' nhóm đã xếp, không nhóm nào xếp hai lần');
+  /* CÂN ĐỐI GIỮA CÁC PHẦN — một phần mang tên lớn mà nội dung mỏng
+     là lời hứa suông với người đọc. Đo bằng số phần tử dữ liệu thật
+     mà phần ấy dựng ra, so với trung vị của các phần. Đây là CẢNH
+     BÁO chứ không chặn: có phần mỏng là đúng bản chất, ví dụ phần
+     điều hành hệ thống. Người dựng đọc rồi tự quyết. */
+  var demPhan = G.PHAN.map(function (p) {
+    var man = 0, pt = 0;
+    p.nhom.forEach(function (gid) {
+      var n = idNhom[gid];
+      if (!n) return;
+      (n.ds || []).forEach(function (i) {
+        man++;
+        ((G.MAN[i.v] || {}).khoi || []).forEach(function (o) {
+          var d = o.tu ? G.TU[o.tu] : null;
+          if (Array.isArray(d)) pt += d.length;
+        });
+      });
+    });
+    return { t: p.t, no: p.no, man: man, pt: pt };
+  });
+  var sapPt = demPhan.map(function (x) { return x.pt; }).sort(function (a, b) { return a - b; });
+  var giua = sapPt[Math.floor(sapPt.length / 2)] || 1;
+  demPhan.forEach(function (x) {
+    if (x.pt < giua * 0.25)
+      C('CÂN ĐỐI PHẦN: phần ' + x.no + ' · ' + x.t + ' chỉ dựng ra ' + x.pt +
+        ' phần tử dữ liệu, dưới một phần tư trung vị (' + giua +
+        ') — tên phần đang hứa nhiều hơn nội dung');
+  });
+  console.log('CHÍN PHẦN · ' + G.PHAN.length + ' phần · ' + Object.keys(coNhom).length +
+    '/' + (G.NHOM || []).length + ' nhóm đã xếp, không nhóm nào xếp hai lần · ' +
+    'trung vị ' + giua + ' phần tử mỗi phần');
 }
 
 /* ── 2. từng màn ─────────────────────────────────────── */
