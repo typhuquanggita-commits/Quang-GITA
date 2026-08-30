@@ -56,6 +56,7 @@ Luật xương sống: **G2 nuôi G1, G1 nuôi khóa học.** Người ở G2 kh
 | [`27-giong-noi-va-tu-dien.md`](27-giong-noi-va-tu-dien.md) | **Giọng GITA365**: 5 thuộc tính · 7 luật viết · công thức bình luận G–H–M và 7 câu cấm · **từ điển dùng đúng từ** · cách viết về GITA365 · khác biệt giọng G1/G2 · 10 dấu kiểm tra trước khi đăng · 3 ví dụ sửa bài | Content, Care |
 | [`28-hanh-trinh-30-ngay-thanh-vien.md`](28-hanh-trinh-30-ngay-thanh-vien.md) | **Hành trình người mới nhìn từ phía họ**: 6 chặng và chỗ rơi · lịch 30 ngày từng ngày · **6 kỹ thuật gỡ nút thắt "lần đầu lên tiếng"** · 3 nhóm ở ngày 30 và cách xử lý khác nhau · chuỗi 72 giờ · 4 cổng đo · danh mục đóng vai người mới | Ops, Care |
 | [`29-tuan-thu-phap-ly-va-du-lieu.md`](29-tuan-thu-phap-ly-va-du-lieu.md) | **Tuân thủ**: 3 nghĩa vụ của quản trị viên nhóm tại Việt Nam · sổ nghĩa vụ và thời hạn · điều kiện hợp lệ của chương trình trao thưởng · danh mục phải làm trước khi web app thu dữ liệu · bản quyền và hình ảnh · ranh giới trách nhiệm · kiểm tra quý · hồ sơ cần lưu | Admin |
+| [`30-chuyen-giao-tang-2-len-tang-3.md`](30-chuyen-giao-tang-2-len-tang-3.md) | **Chuyển giao tầng 2 → tầng 3**: ai được mời buổi định hướng (4 điều kiện) và ai không · kịch bản 45 phút chia phút · 6 điều tuyệt đối không làm · bảy ngày sau buổi · cách nói về khóa học (mô tả, không hứa; nói cả điều khóa không làm được) · ba cửa tầng 3 và ai hợp cửa nào · 6 chỉ số và số duy nhất đáng nhìn · cách đối xử với người không mua | Admin |
 | [`ban-trinh-duyet.html`](ban-trinh-duyet.html) | **Bản demo tương tác** 7 khu vực: mô hình khả thi kéo tay, lịch 288 bài, GITA CARE, cổng lọc, thi đua, chỉ số | Tất cả |
 
 ### Bộ khởi động — dùng ngay
@@ -79,20 +80,49 @@ Luật xương sống: **G2 nuôi G1, G1 nuôi khóa học.** Người ở G2 kh
 
 ---
 
-## 3. Bắt đầu trong 7 ngày
+## 3. Đọc theo thứ tự nào
 
-1. **Ngày 1** – Đọc `01` + `02`. Chốt đội ngũ, bật 3 câu hỏi duyệt thành viên, đăng lại luật nhóm.
-2. **Ngày 2** – Dựng bảng theo dõi từ `data/bang-theo-doi-kpi.csv`, ghi số nền (baseline) hiện tại.
-3. **Ngày 3** – Nạp `data/lich-dang-bai-12-tuan.csv` vào Meta Business Suite Planner cho 2 tuần đầu.
-4. **Ngày 4** – Huấn luyện Care Team quy trình `04` (GITA CARE) — luyện trên 3 bài cũ.
-5. **Ngày 5** – Bật chuỗi chào mừng 7 ngày (`05`) và chuỗi tự động (`08`).
-6. **Ngày 6** – Chạy bài thử nghiệm đầu tiên có chăm sóc đủ 8 mốc, ghi nhận số liệu.
-7. **Ngày 7** – Họp rà soát tuần đầu theo mẫu `09`, chốt điều chỉnh cho tuần 2.
+Hệ tài liệu đã lớn. Đừng đọc từ 01 đến 30 — đọc theo việc mình sắp làm.
+
+**Nếu bạn sắp mở nhóm (chưa có thành viên nào):**
+`21` hiến chương và nội quy → `khoi-dong-g2/` hoặc `khoi-dong-g1/` → `13` cấu hình chống nick ảo → `28` hành trình 30 ngày đầu → `24.18` bảng số khẩn cấp dán lên bàn.
+Bốn tài liệu đó đủ để chạy tuần đầu. Chưa cần đọc gì thêm.
+
+**Nếu bạn đang vận hành hằng ngày:**
+`18` 14 phác đồ (tra khi gặp việc) → `23` thư viện 52 kịch bản nhắn tin → `27` giọng nói và công thức bình luận G–H–M → `22.5` cấu trúc ca trực 90 phút.
+
+**Nếu bạn sắp soạn nội dung một tháng:**
+`26` kiến trúc 12 tháng → `kho-noi-dung/` bài đã soạn sẵn → `20` hệ thống hình ảnh → chạy `scripts/kiem_tra_kho_noi_dung.py` trước khi chốt.
+
+**Nếu bạn sắp tuyển người vào đội:**
+`22` sổ tay quản trị viên (chương trình 30 ngày, 4 cửa) → `25` chương trình hạt nhân và đại sứ → `23`/H1 lời mời.
+
+**Nếu có chuyện xảy ra:**
+`24` xử lý khủng hoảng — mở đúng mã KH-01…KH-14 → `21.5` bảng chế tài → `21.6` mẫu tin nhắn xử lý.
+
+**Nếu bạn sắp mở buổi định hướng nhóm nhỏ:**
+`30` chuyển giao tầng 2 lên tầng 3 → `19` phễu tầng 1 → `23` nhóm D.
+
+**Nếu bạn cần trả lời câu "việc này có hợp luật không":**
+`29` tuân thủ pháp lý → `15` luật và thuật toán Facebook → `16` chương trình trao thưởng hợp lệ.
 
 ---
 
-## 4. Ba điều tuyệt đối không làm
+## 4. Bảy ngày đầu tiên
+
+1. **Ngày 1** – Đọc `21`. Dán nội quy 10 quy tắc vào phần Quy tắc nhóm của Facebook, đăng bài ghim nội quy.
+2. **Ngày 2** – Cấu hình nhóm theo `13`: câu hỏi cửa vào, bộ lọc từ khóa, chế độ riêng tư. Bật xác thực hai lớp.
+3. **Ngày 3** – Dựng sổ vận hành từ `data/so-van-hanh-gita365.xlsx`, ghi số nền. Dán bảng số khẩn cấp `24.18`.
+4. **Ngày 4** – Đăng 3 bài ghim từ bộ khởi động. Mời 10 người hạt nhân đầu bằng `23`/G3.
+5. **Ngày 5** – Đăng bài đầu tiên từ `kho-noi-dung/`, chăm sóc đủ theo `04` GITA CARE, tự đăng 3 câu hỏi mồi trong 60 giây đầu.
+6. **Ngày 6** – Chạy danh mục đóng vai người mới ở `28.8` bằng một tài khoản khác. Sửa ít nhất một chỗ vướng.
+7. **Ngày 7** – Ghi bốn cổng của `28.7` vào sổ. Chốt điều chỉnh cho tuần 2.
+
+---
+
+## 5. Bốn điều tuyệt đối không làm
 
 1. **Không tài khoản ảo, không bot comment.** Seeder là thành viên thật đã được huấn luyện, nêu trải nghiệm thật. Tương tác giả phá vỡ nền tin cậy và bị Facebook hạ hiển thị.
 2. **Không vượt tầng ở G2.** Không nhắc giá, không mời khóa offline, không bán tầng 3–4 trong nhóm Gia đình Thịnh vượng. Đường đi đúng: G2 → tầng 1 (web app) → tầng 2 (online) → mời sang G1 → mới tới offline.
-3. **Không bán trước khi cho.** Tỉ lệ trần: bài mời gọi trực tiếp ≤ 15% ở G1 và ≤ 10% ở G2. Mỗi bài mời phải kèm một giá trị dùng được ngay.
+3. **Không bán trước khi cho.** Trần cứng: **bài cửa chuyển tầng ≤ 5%** tổng số bài, ở cả hai nhóm — định nghĩa chính xác và cách đo ở `26.6`. Bài mời nhận công cụ **miễn phí tầng 1** không tính vào trần này. Kiểm bằng `python3 scripts/kiem_tra_kho_noi_dung.py`; đo trên kho hiện tại: G2 2,5% · G1 3,9%.
+4. **Không nhắn tin chào bán trong ba tin đầu**, không ngoại lệ, kể cả khi người ta hỏi trước (`23`).
