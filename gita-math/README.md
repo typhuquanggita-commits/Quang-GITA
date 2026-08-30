@@ -81,6 +81,31 @@ Dữ liệu web thay mọi câu lặp lại bằng tham chiếu vào một **b�
 tách dòng bảng Markdown thành ô, nhờ đó nhỏ đi hơn hai lần; trang đọc bằng `JSON.parse`
 kèm hàm reviver nên dựng xong trong khoảng 0,6 giây.
 
+## 3B. BẢN CÔNG KHAI — WEBSITE ĐỂ LÊN GOOGLE
+
+Bản online ở mục 3 là **trang riêng tư**: chỉ người được chia sẻ mới mở được, và nội
+dung do JavaScript dựng sau khi tải. Không cỗ máy tìm kiếm nào đưa được nó vào chỉ mục.
+
+Vì vậy có thêm một bản thứ hai: **website tĩnh công khai**, cùng kho học liệu nhưng
+kết xuất thành HTML thật, để đưa lên tên miền của Học viện.
+
+```
+python3 04-cong-cu/build_site.py     →  2 003 trang · 85 MB
+python3 04-cong-cu/kiem_toan_seo.py  →  SẠCH LỖI · 28 hạng mục đạt
+```
+
+| Nhóm trang | Số lượng | Vai trò trong tìm kiếm |
+|---|---:|---|
+| Trang **dạng bài** | 538 | Trang chủ lực. Mỗi dạng có ví dụ có số thật, lời giải từng bước, bảng dấu hiệu đọc vị và bài tự luyện |
+| Trang phiếu và lời giải | 1 200 | Hai phần đầu mở, phần sau khai báo thu phí trung thực |
+| Trang chuyên đề · nhóm · lớp | 123 | Trụ chủ đề, dẫn uy tín xuống trang dạng bài |
+| Sơ đồ đọc vị · lộ trình · thi vào 6 | 39 | Ba khoảng trống đối thủ chưa làm |
+| Hướng dẫn ôn chắc | 96 | |
+| Trang uy tín và điều hướng | 7 | Đội ngũ, quy trình biên soạn, đánh giá, đăng ký |
+
+Nội dung nằm sẵn trong HTML, không tệp nào tải từ máy chủ ngoài, tải xong trong 18–48 ms
+đo bằng Chromium. Chiến lược, chuẩn kỹ thuật và các bước triển khai ở `11-seo/`.
+
 ## 4. CÂY THƯ MỤC
 
 ```
@@ -102,7 +127,8 @@ gita-math/
 ├── 07-de-thi/            162 đề: ôn tập mốc, thi mốc, đánh giá năng lực
 ├── 08-test-dau-vao/      Test bốn trục cho học sinh mới + công cụ xếp lớp
 ├── 09-online/            Hệ thống làm bài trực tuyến
-└── 10-so-do-doc-vi/      24 sơ đồ đọc vị đề bài (8 nhóm × 3 lớp)
+├── 10-so-do-doc-vi/      24 sơ đồ đọc vị đề bài (8 nhóm × 3 lớp)
+└── 11-seo/               Chiến lược tìm kiếm + bộ sinh website công khai
 ```
 
 ## 5. BỘ CÔNG CỤ — CHẠY THEO ĐÚNG THỨ TỰ NÀY
@@ -124,6 +150,9 @@ gita-math/
 | `python3 04-cong-cu/render_html.py --all` | Kết xuất bản in A4: bản ĐỀ và bản ĐÁP ÁN |
 | `python3 04-cong-cu/build_web_data.py --lop 4` | Đóng gói dữ liệu online cho một khối lớp |
 | `python3 04-cong-cu/build_artifact.py --lop 4` | Ghép thành một trang tự chứa để xuất bản |
+| `python3 04-cong-cu/build_site.py` | **Dựng website công khai — 2 003 trang HTML** vào `11-seo/site/` |
+| `python3 04-cong-cu/kiem_toan_seo.py` | **Kiểm toán website — 28 hạng mục** trước khi đưa lên |
+| `python3 04-cong-cu/nhap_danh_gia.py --kiem` | Kiểm tệp đánh giá của người học |
 | `python3 04-cong-cu/sinh_logo.py` | Dựng lại sáu tệp logo SVG từ hình học tính toán |
 | `python3 04-cong-cu/xep_lop.py --lop 4 --N 20 --K 18 --P 16 --T 22 --tuan 7` | Xếp lớp từ test đầu vào |
 
@@ -147,6 +176,11 @@ dữ liệu nguồn rồi chạy lại bộ sinh, **không sửa tay tệp đã 
 phân quyền trong trang ngăn được nhầm lẫn nhưng không ngăn được người cố tình mở công cụ
 nhà phát triển. Thi thật dùng bản in, hoặc chờ triển khai hệ thống có máy chủ theo lộ
 trình ở `01-kien-truc/07`, mục 6 lớp 3.
+
+**7.1B. Website công khai chưa có tên miền và chưa có tên người.** Bộ sinh đã dựng đủ
+2 003 trang và qua 28 hạng mục kiểm toán, nhưng site chưa được đưa lên đâu cả. Ba chỗ
+trong site đang chờ thông tin thật — đội ngũ biên soạn, thông tin liên hệ, thông tin ghi
+danh — và chúng hiện rõ trên trang, cố ý, để không ai quên. Xem `11-seo/03-trien-khai-len-ten-mien.md`.
 
 **7.2. Ma trận phân quyền đang là thiết kế đề xuất.** Cần đối chiếu với quy định quyền
 hiện hành của **GITA365** và chỉnh cho khớp trước khi áp dụng. Việc này ghi ở

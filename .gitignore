@@ -27,3 +27,7 @@ dist-ssr
 __pycache__/
 *.pyc
 gita-math/04-cong-cu/ban-in/
+# Website sinh ra từ kho học liệu: 2 003 trang, 85 MB, dựng lại trong vài giây
+# bằng `python3 04-cong-cu/build_site.py`. Không đưa vào kho mã — nguồn thật là
+# bộ sinh và dữ liệu, không phải kết quả kết xuất.
+gita-math/11-seo/site/

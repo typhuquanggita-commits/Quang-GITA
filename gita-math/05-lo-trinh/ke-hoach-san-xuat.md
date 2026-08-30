@@ -127,6 +127,18 @@ done
 
 Chỉ phát hành khi cả hai lệnh kiểm tra đều báo **sạch lỗi**.
 
+## 7. PHÁT HÀNH BẢN CÔNG KHAI LÊN GOOGLE
+
+Bản online ở mục 6 là trang riêng tư, không lên được công cụ tìm kiếm. Bản công khai là
+một website tĩnh riêng, dựng từ cùng kho học liệu:
+
+```
+python3 04-cong-cu/build_site.py        # 2 003 trang HTML vào 11-seo/site/
+python3 04-cong-cu/kiem_toan_seo.py     # 28 hạng mục, phải sạch lỗi
+```
+
+Chiến lược, chuẩn kỹ thuật và các bước đưa lên tên miền nằm ở `11-seo/`.
+
 **Luật ghi phải khai lại ở mỗi lần xuất bản.** Cấu hình `capabilities` ở mục 4 của
 `01-kien-truc/07` là tham số của lệnh xuất bản, không nằm trong tệp HTML: xuất bản mà
 quên khai thì bản đó rơi về quyền ghi mặc định — ai mở được trang cũng ghi được vào
