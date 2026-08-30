@@ -3843,6 +3843,97 @@ const { chromium } = require(PW);
       bao(nk.tl >= nk.soNhom, 'nhóm nào cũng có tài liệu phát cho gia đình',
         nk.tl + '/' + nk.soNhom);
     }
+
+    /* ══ GÓI TẦNG CỦA KHÁCH HÀNG KHÔNG ĐƯỢC MANG TÀI SẢN NGHỀ ══
+       Kịch bản chuyên môn từng nằm trong gói tầng, mỗi tầng 200 cái.
+       Một phụ huynh Tầng 3 nhận về máy mình 200 kịch bản coaching:
+       nguyên văn câu mở của Coach, mục tiêu buổi, và danh sách điều
+       Coach tuyệt đối không được làm.
+
+       Màn "Kịch bản" khoá ở quyền nghe_chung nên Ý ĐỊNH đã rõ. Nhưng
+       khoá màn hình mà vẫn gửi dữ liệu là khoá cửa và đưa chìa: gõ
+       G.KICHBAN trong công cụ nhà phát triển là đọc hết.
+
+       Luật chốt ở đây: gói tầng CHỈ được chứa bộ test của tầng và ma
+       trận của tầng. Thêm bất cứ kho nào khác phải qua mục kiểm này. */
+    const fsG = require('fs'), pxG = require('path'), crG = require('crypto');
+    const gocG = pxG.join(__dirname, '..');
+    const tepKhoaG = pxG.join(gocG, 'kho', 'khoa.json');
+    if (fsG.existsSync(tepKhoaG)) {
+      const khoaG = JSON.parse(fsG.readFileSync(tepKhoaG, 'utf8')).khoa;
+      const thua = [];
+      for (let t = 1; t <= 5; t++) {
+        const ten = 'tang' + t;
+        const f = pxG.join(gocG, 'kho', ten + '.enc');
+        if (!fsG.existsSync(f) || !khoaG[ten]) continue;
+        const b = fsG.readFileSync(f);
+        const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG[ten], 'base64'), b.subarray(0, 12));
+        de.setAuthTag(b.subarray(12, 28));
+        const j = JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8'));
+        const CHO_PHEP = ['TEST750', 'MATRAN_T' + t];
+        Object.keys(j).forEach(n => { if (CHO_PHEP.indexOf(n) < 0) thua.push(ten + ':' + n); });
+      }
+      bao(!thua.length,
+        'gói tầng của khách hàng chỉ mang bộ test và ma trận của tầng — không mang tài sản nghề',
+        thua.length ? 'thừa: ' + thua.join(' ') : '5 gói tầng đều sạch');
+
+      /* Và đo từ phía người dùng: vai khách hàng KHÔNG được có kịch bản
+         trong bộ nhớ, dù màn hình đã khoá. Khoá màn mà vẫn gửi dữ liệu
+         là khoá cửa và đưa chìa. */
+      const trongMay = {};
+      for (const [u, ten] of [['phuhuynh@gita365.vn', 'PH'], ['hocvien@gita365.vn', 'HS'],
+                              ['coach@gita365.vn', 'COACH']]) {
+        await p.evaluate(x => window.G.doLogin(x), u);
+        await p.waitForTimeout(2000);
+        trongMay[ten] = await p.evaluate(() => ({
+          kb: (window.G.KICHBAN || []).length,
+          pd: (window.G.PHACDO || []).length,
+          sau: Object.keys(window.G.PD_SAU || {}).length
+        }));
+      }
+      bao(trongMay.PH.kb === 0 && trongMay.HS.kb === 0,
+        'khách hàng KHÔNG giữ kịch bản chuyên môn trong bộ nhớ — khoá màn mà vẫn gửi dữ liệu là khoá cửa và đưa chìa',
+        'phụ huynh ' + trongMay.PH.kb + ' · học viên ' + trongMay.HS.kb + ' · Coach ' + trongMay.COACH.kb);
+      bao(trongMay.PH.pd === 0 && trongMay.PH.sau === 0,
+        'khách hàng cũng không giữ phác đồ và chiều sâu nghề',
+        'phác đồ ' + trongMay.PH.pd + ' · chiều sâu ' + trongMay.PH.sau);
+      bao(trongMay.COACH.kb === 1000 && trongMay.COACH.pd === 220,
+        'người trong nghề vẫn nhận đủ — bịt rò không được làm hỏng việc của Coach',
+        trongMay.COACH.kb + ' kịch bản · ' + trongMay.COACH.pd + ' phác đồ');
+
+      /* ── Luật gốc, thay cho việc nhớ từng tên ──
+         donKho() chỉ xoá những kho có tên trong G.THUOC_CAP_PHEP. Thêm
+         một kho vào gói cấp phép mà quên khai tên ở đó thì máy vừa đăng
+         nhập Coach rồi đăng nhập lại bằng phụ huynh sẽ để phụ huynh giữ
+         nguyên dữ liệu nghề — đúng lỗ vừa bắt được với PD_SAU.
+
+         Nên đối chiếu thẳng: mọi kho có mặt trong bảy gói đều phải nằm
+         trong danh sách dọn. Không phải nhớ, mà đo. */
+      /* Chỉ soi gói NGHỀ và gói TẦNG. Gói NỀN đến với mọi tài khoản đã
+         đăng nhập, nên một kho nền còn sót lại sau khi đổi vai là đúng
+         cái nội dung vai mới cũng được nhận — không phải rò. Soi cả gói
+         nền vào đây là bắt lỗi ở chỗ không có lỗi, và bài kiểm mất giá
+         trị vì người đọc quen với màu đỏ vô hại. */
+      const trongGoi = new Set();
+      for (const ten of ['nghe', 'tang1', 'tang2', 'tang3', 'tang4', 'tang5']) {
+        const f = pxG.join(gocG, 'kho', ten + '.enc');
+        if (!fsG.existsSync(f) || !khoaG[ten]) continue;
+        const b = fsG.readFileSync(f);
+        const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG[ten], 'base64'), b.subarray(0, 12));
+        de.setAuthTag(b.subarray(12, 28));
+        Object.keys(JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8')))
+          .forEach(n => trongGoi.add(n));
+      }
+      const donDuoc = await p.evaluate(() => window.G.THUOC_CAP_PHEP || []);
+      const quenDon = [...trongGoi].filter(n => donDuoc.indexOf(n) < 0);
+      bao(!quenDon.length,
+        'mọi kho ĐỔI THEO VAI đều nằm trong danh sách dọn — đổi vai là dữ liệu vai cũ biến mất',
+        quenDon.length ? 'quên dọn: ' + quenDon.slice(0, 8).join(' ') :
+          trongGoi.size + ' kho, không kho nào sót');
+
+      await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+      await p.waitForTimeout(2200);
+    }
   }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));

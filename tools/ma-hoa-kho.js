@@ -88,6 +88,8 @@ const NGHE = [
      phác đồ/tình huống với kịch bản và chuyện, quy trình riêng từng nhóm,
      và bộ tài liệu phát cho gia đình. Tất cả là tài sản nghề — ở gói NGHỀ. */
   'PD_SAU', 'TH_SAU', 'NOI_KET', 'QT_NHOM', 'TL_GIADINH',
+  /* Kịch bản chuyên môn — xem lý do ở chỗ dựng gói tầng bên dưới */
+  'KICHBAN',
   /* Chuẩn hợp đồng theo tuyến: nó liệt kê mọi điều khoản Học viện tự
      buộc mình phải có, kèm rủi ro khi thiếu. Đưa ra công khai là đưa cho
      đối thủ bản đồ pháp lý và cho bên tranh chấp danh sách chỗ yếu. */
@@ -131,9 +133,23 @@ const NGHE = [
 const goi = {};
 goi.nen  = Object.fromEntries(NEN.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));
 goi.nghe = Object.fromEntries(NGHE.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));
+/* ── KỊCH BẢN CHUYÊN MÔN KHÔNG ĐI THEO GÓI TẦNG ──
+   Kịch bản từng nằm trong gói tầng, mỗi tầng 200 cái. Nghĩa là một
+   phụ huynh Tầng 3 nhận về máy mình 200 kịch bản coaching: nguyên văn
+   câu mở của Coach, mục tiêu từng buổi, và cả danh sách điều Coach
+   tuyệt đối không được làm.
+
+   Màn "Kịch bản" khoá ở quyền nghe_chung (chỉ R01–R12), nên Ý ĐỊNH của
+   sản phẩm đã rõ: đây là tài sản nghề, khách hàng không xem. Nhưng
+   khoá màn hình mà vẫn gửi dữ liệu là khoá cửa và đưa chìa: mở công cụ
+   nhà phát triển gõ G.KICHBAN là đọc được hết.
+
+   Không màn nào của khách hàng hiển thị kịch bản (màn "Kho" chỉ hiện
+   con số, và có số dự phòng ở G.META.soKichBan), nên chuyển sang gói
+   NGHỀ không mất gì của khách. Gói tầng giữ nguyên phần vốn là của
+   khách: ma trận tầng và bộ test của tầng ấy. */
 for (let t = 1; t <= 5; t++)
   goi['tang' + t] = {
-    KICHBAN: (G.KICHBAN || []).filter(k => k.tang === 'T' + t),
     TEST750: (G.TEST750 || []).filter(b => b.tang === 'T' + t),
     ['MATRAN_T' + t]: G['MATRAN_T' + t] || []
   };

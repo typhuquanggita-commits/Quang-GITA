@@ -1541,12 +1541,12 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 66 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 67 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 66 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 67 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -1577,7 +1577,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '8.8',
+  version: '8.9',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -4710,6 +4710,33 @@ G.THUOC_CAP_PHEP = [
   'MOTHUC','SACH','BANDO_A3','POSTER','SODO','PHACDO','DIEMCHAM','NGONTU','NGONTU_TANG',
   'THAYVI','MAUTHOAI','PERSONA','CHUAN1000','HAILONG','TAILIEU','AIPOLICY','KPI','DINHTUYEN',
   'AINANGCAP','LACHAN','BENCH','BENCH_AI','KICHBAN',
+  /* Kho nghề thêm từ v8.9. Thiếu tên ở đây thì donKho() không xoá, và
+     một máy vừa đăng nhập Coach rồi đăng nhập lại bằng phụ huynh sẽ để
+     phụ huynh giữ nguyên chiều sâu nghề trong bộ nhớ — khoá màn hình mà
+     dữ liệu vẫn nằm đó. Bộ kiểm phát hành soi danh sách này đối chiếu
+     với nội dung thật của bảy gói, nên quên một tên là đỏ. */
+  'PD_SAU','TH_SAU','NOI_KET','QT_NHOM','TL_GIADINH',
+  /* ── Bốn mươi bảy kho nghề tích lại qua nhiều bản ──
+     Bộ kiểm phát hành v8.9 đối chiếu nội dung thật của gói NGHỀ và gói
+     TẦNG với danh sách này, và tìm ra 47 kho chưa bao giờ được khai.
+     Mỗi cái là một chỗ dữ liệu nghề nằm lại trong bộ nhớ máy khách sau
+     khi đổi vai: máy vừa đăng nhập Coach, đăng nhập lại bằng phụ huynh,
+     thì phụ huynh vẫn còn học phí, hợp đồng tuyến, mô thức NLP, chiều
+     sâu nghề trong tay.
+
+     Không kho nào trong đây do bản này thêm vào — chúng có sẵn. Cái mới
+     là phép đo tìm ra chúng, và phép đo ấy nay chạy mỗi lần phát hành
+     nên danh sách không tụt lại phía sau kho được nữa. */
+  'MT_SAU','SAU_BOICANH','SAU_TRUONG_CAP','SAU_TRUONG_CHUNG','SAU_LUAT',
+  'HD_CHUAN','HD_RIENG','HD_LUAT','QT_LUONG','QT_RIENG',
+  'QT_LUAT','TD_MUC','TD_CANH','TD_TRITHUC','TD_MAYCHU',
+  'TD_KHONG','TD_THAT','NLP_GOC','NLP_MUC','NLP_CAITIEN',
+  'NLP_LUAT','HP_PHAM_VI','TAILIEU_GOC','TAILIEU_DRIVE','HP_TANG',
+  'HP_LUAT','HP_KICHBAN','HP_SOAT','REF_30S','REF_GAINS_GITA',
+  'REF_121','REF_CHAM','REF_CHAM_MUC','REF_TRANGTHAI','REF_BANGIAO',
+  'REF_CAMON','REF_KHONG','REF_HOI','REF_KPI','REF_LOI',
+  'CD_BO','CD_LUAT','TL_KE','TL_DUONG','TL_LUAT',
+  'TL_TRICH','TL_BAOQUAN',
   'LUAT_TK','TAIKHOAN_KPI','YEUCAU_MO','HANG_TL','DAU_MAT','QUYTRINH',
   'QUA1000','QUA_DANG','KETNOI','LIENKET','VANBAN','TAICHINH_QT','THANHTRA','RASOAT_KH',
   'BANDO_TUVAN','BANDO_COACH','XUAT','TINHHUONG','KHUNG_T5','THANHTOAN','TEST750','KPI100',
@@ -16349,6 +16376,54 @@ G.VIEWS['chieu-sau'] = function(){
     U.stat({k:'VIẾT DỞ', v:d.thieu.length, d:'có bản ghi nhưng còn trường trống', c:'#B45309'})+
   '</div>';
 
+  /* ══ CHIỀU SÂU CỦA PHÁC ĐỒ VÀ TÌNH HUỐNG ══
+     Màn này từng chỉ đếm 42 mô thức, nên nó báo đúng 100% trong khi 220
+     phác đồ và 250 tình huống chưa có lớp nào. Người đọc thấy 100% rồi
+     yên tâm — đó là con số đúng đo sai phạm vi.
+
+     Ba kho viết theo ba mức khác nhau có chủ ý: mô thức viết từng cái
+     (42), phác đồ viết theo nhóm (11 nhóm × 20), tình huống viết theo
+     chủ đề (10 chủ đề × 25). Bảng dưới nói rõ mức nào là mức nào, chứ
+     không gộp thành một con số làm mờ cả ba. */
+  var PDS = G.PD_SAU || {}, THS = G.TH_SAU || {};
+  var soNhomPD = {}; (G.PHACDO || []).forEach(function(x){ soNhomPD[x.nhom] = 1; });
+  var canPD = Object.keys(soNhomPD).length;
+  var coPD = Object.keys(PDS).length, coTH = Object.keys(THS).length;
+  var nk = G.nkSoat ? G.nkSoat() : null;
+
+  o += U.sec('BA KHO, BA MỨC VIẾT', 'Không gộp thành một con số — gộp là làm mờ chỗ còn thiếu');
+  o += U.tbl(['Kho', 'Số bản ghi', 'Viết chiều sâu theo', 'Đã có', 'Còn thiếu'], [
+    ['Mô thức', String((G.MOTHUC || []).length), 'từng mô thức',
+      d.du.length + '/' + d.tong,
+      d.du.length >= d.tong ? '<span style="color:var(--ok)">không</span>'
+        : '<span style="color:var(--alert)">' + (d.tong - d.du.length) + '</span>'],
+    ['Phác đồ', String((G.PHACDO || []).length), 'nhóm vấn đề (' + canPD + ' nhóm)',
+      coPD + '/' + canPD,
+      coPD >= canPD ? '<span style="color:var(--ok)">không</span>'
+        : '<span style="color:var(--alert)">' + (canPD - coPD) + ' nhóm</span>'],
+    ['Tình huống', String((G.TINHHUONG || []).length), 'chủ đề (10 chủ đề)',
+      coTH + '/10',
+      coTH >= 10 ? '<span style="color:var(--ok)">không</span>'
+        : '<span style="color:var(--alert)">' + (10 - coTH) + ' chủ đề</span>']
+  ]);
+
+  if(nk){
+    o += U.sec('LỚP NỐI', 'Kho không thiếu nội dung — kho từng thiếu đường đi giữa các nội dung');
+    o += '<div class="grid g4">' +
+      U.stat({k:'PHÁC ĐỒ CÓ KỊCH BẢN', v:nk.pdCoKB + '/' + nk.pd,
+        d:'trước đây: 0', c:nk.pdCoKB >= nk.pd ? '#0B7350' : '#B45309'}) +
+      U.stat({k:'TÌNH HUỐNG CÓ KỊCH BẢN', v:nk.thCoKB + '/' + nk.th,
+        d:'ưu tiên kịch bản cùng tầng', c:nk.thCoKB >= nk.th ? '#0B7350' : '#B45309'}) +
+      U.stat({k:'QUY TRÌNH RIÊNG NHÓM', v:nk.qt + '/' + canPD,
+        d:'ngoài bảy bước chung', c:nk.qt >= canPD ? '#0B7350' : '#B45309'}) +
+      U.stat({k:'TÀI LIỆU PHÁT GIA ĐÌNH', v:nk.tl + '/' + canPD,
+        d:'mỗi nhóm một tài liệu', c:nk.tl >= canPD ? '#0B7350' : '#B45309'}) +
+      '</div>';
+    o += '<p class="tiny muted mt" style="line-height:1.7">Mối nối do hệ thống dựng bằng độ trùng ' +
+      'từ khoá tiếng Việt có dấu, ghép đôi âm tiết. Mỗi mối nối mang điểm và từ khoá trùng để người ' +
+      'dùng tự kiểm; dưới ngưỡng thì không nối, vì một kịch bản sai gắn vào ca thật là một buổi hỏng.</p>';
+  }
+
   if(kn.lap.length || kn.cut.length)
     o += '<div class="card mt2" style="border-color:var(--gita-do)">'+
       '<div class="tiny up mb" style="color:var(--gita-do-ink)">LUẬT BỊ VI PHẠM</div>'+
@@ -16389,6 +16464,54 @@ G.VIEWS['chieu-sau'] = function(){
               '<span class="tiny mono">'+h((m.tiers||[]).join(' '))+'</span>']
              .concat(CAP.map(o1)).concat([trang]);
     }));
+
+  /* ══ DUYỆT TRỰC TIẾP 11 NHÓM PHÁC ĐỒ VÀ 10 CHỦ ĐỀ TÌNH HUỐNG ══
+     Trước bản này hai kho ấy chỉ mở được khi đi vòng qua một phác đồ
+     hoặc một tình huống cụ thể. Người muốn đọc cả bản đồ năng lực của
+     nghề thì không có cửa nào — mà đó đúng là thứ Coach mới cần nhất
+     khi hỏi "tôi đang ở đâu và còn thiếu gì". */
+  var soNhomPD2 = {}; (G.PHACDO || []).forEach(function(x){ soNhomPD2[x.nhom] = x.nhomTen || x.nhom; });
+  var dsPD = Object.keys(G.PD_SAU || {});
+  if(dsPD.length){
+    o += U.sec('MƯỜI MỘT NHÓM PHÁC ĐỒ', 'Bấm để đọc cả năm cấp — 220 phác đồ chia vào các nhóm này');
+    o += U.tbl(['Nhóm', 'Số phác đồ', 'C1', 'C2', 'C3', 'C4', 'C5', 'Cái bẫy của nhóm'],
+      dsPD.map(function(n){
+        var v = G.PD_SAU[n], dem = (G.PHACDO || []).filter(function(x){ return x.nhom === n; }).length;
+        var oc = function(c){
+          var l = v.c && v.c[c];
+          var du = l && TRUONG_CAP.every(function(f){ return !!l[f]; });
+          return '<span class="mono" style="color:' + (du ? 'var(--ok)' : 'var(--ink-4)') + '">' +
+            (du ? '●' : '○') + '</span>';
+        };
+        return ['<a href="#" data-pdsau="' + h(n) + '"><b class="sm">' + h(n) + '</b></a>' +
+                '<div class="tiny muted">' + h(soNhomPD2[n] || '') + '</div>',
+                '<span class="tiny mono">' + dem + '</span>']
+               .concat(CAP.map(oc))
+               .concat(['<span class="tiny muted">' + h(G.chuHet ? G.chuHet(v.y, 110) : v.y) + '</span>']);
+      }));
+  }
+
+  var dsTH = Object.keys(G.TH_SAU || {});
+  if(dsTH.length){
+    var demTH = {};
+    var nk2 = (G.NOI_KET || {}).th || {};
+    Object.keys(nk2).forEach(function(k){ var c = nk2[k].chuDe; if(c) demTH[c] = (demTH[c] || 0) + 1; });
+    o += U.sec('MƯỜI CHỦ ĐỀ TÌNH HUỐNG', 'Bấm để đọc cả năm cấp — 250 tình huống chia vào các chủ đề này');
+    o += U.tbl(['Chủ đề', 'Số tình huống', 'C1', 'C2', 'C3', 'C4', 'C5', 'Cái bẫy của chủ đề'],
+      dsTH.map(function(n){
+        var v = G.TH_SAU[n];
+        var oc = function(c){
+          var l = v.c && v.c[c];
+          var du = l && TRUONG_CAP.every(function(f){ return !!l[f]; });
+          return '<span class="mono" style="color:' + (du ? 'var(--ok)' : 'var(--ink-4)') + '">' +
+            (du ? '●' : '○') + '</span>';
+        };
+        return ['<a href="#" data-thsau="' + h(n) + '"><b class="sm">' + h(v.ten || n) + '</b></a>',
+                '<span class="tiny mono">' + (demTH[n] || 0) + '</span>']
+               .concat(CAP.map(oc))
+               .concat(['<span class="tiny muted">' + h(G.chuHet ? G.chuHet(v.y, 110) : v.y) + '</span>']);
+      }));
+  }
 
   /* Luật viết — để người viết tiếp không phải đoán */
   o += U.sec('SÁU LUẬT KHI VIẾT CHIỀU SÂU','Viết sai luật thì thà chưa viết — chữ nhiều mà không có tầng làm hỏng cả bảng');
@@ -20684,6 +20807,342 @@ document.addEventListener('click', function(e){
     if(G.render) G.render();
   }
 }, false);
+
+})();
+
+})();
+
+/* ═════════ src/noi-ket.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — ĐƯA LỚP NỐI LÊN GIAO DIỆN
+
+   Kho có 1.000 kịch bản, 600 chuyện theo cấp, 77 chuyện người thật,
+   220 phác đồ, 250 tình huống — mà không một kịch bản nào gắn với phác
+   đồ nào. Người mở một phác đồ chỉ đọc được nguyên nhân và giải pháp;
+   muốn tìm kịch bản cho ca ấy thì phải tự nhớ tên rồi dò trong một
+   nghìn cái. Thực tế là không ai làm.
+
+   Kho không thiếu nội dung. Kho thiếu ĐƯỜNG ĐI GIỮA CÁC NỘI DUNG.
+
+   Tệp này gắn vào hai cửa sổ đã có — phác đồ và tình huống — năm thứ:
+     · Kịch bản dùng được cho ca này
+     · Chuyện của cấp mình, và chuyện người thật
+     · Chiều sâu năm cấp của nhóm phác đồ
+     · Quy trình xử lý riêng của nhóm
+     · Tài liệu phát cho gia đình
+
+   ── NÓI THẲNG VỀ ĐỘ TIN ──
+   Mối nối do máy dựng, không do người duyệt từng cái. Nên mỗi mối nối
+   hiện kèm ĐIỂM và TỪ KHOÁ TRÙNG: người dùng thấy được vì sao nó được
+   gắn vào đây, và tự bỏ qua cái yếu. Giấu điểm đi là bắt người ta tin
+   một thứ họ không kiểm được.
+
+   Mối nối dưới ngưỡng thì công cụ đã không sinh ra; ở đây không có
+   chỗ nào bịa thêm.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+
+function nk(){ return G.NOI_KET || {pd:{}, th:{}}; }
+
+/* ─── Tra một bản ghi theo mã ─── */
+function tim(kho, ma){
+  var a = G[kho] || [];
+  for(var i=0;i<a.length;i++) if(a[i].ma === ma) return a[i];
+  return null;
+}
+
+/* ─── Thẻ một mối nối ───
+   Điểm hiện ra bằng chữ, không bằng số trần: "khớp mạnh / khớp vừa /
+   khớp nhẹ". Số trần làm người đọc tưởng có độ chính xác không có. */
+function mucDo(d){
+  return d >= 4 ? {t:'khớp mạnh', c:'var(--ok)'} :
+         d >= 2.5 ? {t:'khớp vừa', c:'var(--gita)'} :
+                    {t:'khớp nhẹ', c:'var(--ink-3)'};
+}
+
+function the(x, ten, phu, act, maHien){
+  var m = mucDo(x.d);
+  return '<button class="card pad-sm lift mb" ' + (act || '') + ' style="text-align:left;width:100%">' +
+    '<div class="row" style="gap:7px;align-items:baseline;flex-wrap:wrap">' +
+      '<span class="mono tiny" style="color:var(--ink-4)">' + h(maHien || x.ma) + '</span>' +
+      '<span class="chip" style="color:' + m.c + '">' + m.t + '</span></div>' +
+    '<b class="sm" style="display:block;line-height:1.45;margin-top:4px">' + h(ten) + '</b>' +
+    (phu ? '<p class="tiny muted mt" style="line-height:1.5">' + h(phu) + '</p>' : '') +
+    (x.vi && x.vi.length ? '<p class="tiny mt" style="color:var(--ink-4)">trùng: ' +
+      h(x.vi.join(' · ')) + '</p>' : '') +
+    '</button>';
+}
+
+function muc(t, s){
+  return '<div class="tiny up mb mt2" style="color:var(--gita)">' + h(t) +
+    (s ? ' <span class="muted" style="text-transform:none">· ' + h(s) + '</span>' : '') + '</div>';
+}
+
+/* ═══════════ KHỐI NỐI CHO MỘT PHÁC ĐỒ ═══════════ */
+G.nkKhoiPhacDo = function(ma){
+  var d = nk().pd[ma];
+  if(!d) return '';
+  var o = '';
+
+  /* Kịch bản */
+  if(d.kb && d.kb.length){
+    o += muc('KỊCH BẢN DÙNG ĐƯỢC CHO CA NÀY', d.kb.length + ' buổi');
+    o += d.kb.map(function(x){
+      var k = tim('KICHBAN', x.ma); if(!k) return '';
+      return the(x, k.ten, k.tang + ' · ' + k.loai + ' · ' + k.phut + ' phút · ' + k.nhom,
+        'data-kb="' + h(k.ma) + '"');
+    }).join('');
+  }
+
+  /* Chiều sâu năm cấp của nhóm */
+  var s = (G.PD_SAU || {})[d.nhom];
+  if(s){
+    o += muc('CHIỀU SÂU NĂM CẤP NGHỀ', 'nhóm ' + d.nhom);
+    o += '<div class="card pad-sm mb"><p class="sm" style="line-height:1.7">' + h(s.y) + '</p>' +
+      '<button class="btn ghost sm mt2" data-pdsau="' + h(d.nhom) + '">' +
+      ic('chart','w-3 h-3') + ' Xem năm cấp làm được gì với nhóm này</button></div>';
+  }
+
+  /* Quy trình riêng của nhóm */
+  var q = (G.QT_NHOM || []).filter(function(x){ return x.nhom === d.nhom; })[0];
+  if(q){
+    o += muc('QUY TRÌNH XỬ LÝ RIÊNG CỦA NHÓM', q.ten || d.nhom);
+    o += '<div class="card pad-sm mb" style="border-color:var(--gita-do)">' +
+      '<p class="sm" style="line-height:1.7"><b>Khác bảy bước chung ở chỗ:</b> ' + h(q.khac) + '</p>' +
+      '<button class="btn ghost sm mt2" data-qtnhom="' + h(d.nhom) + '">' +
+      ic('map','w-3 h-3') + ' Mở bảy bước của nhóm này</button></div>';
+  }
+
+  /* Tài liệu phát cho gia đình */
+  var tl = (G.TL_GIADINH || []).filter(function(x){ return x.nhom === d.nhom; })[0];
+  if(tl){
+    o += muc('TÀI LIỆU PHÁT CHO GIA ĐÌNH', tl.dai || '');
+    o += '<div class="card pad-sm mb" style="border-color:var(--ok)">' +
+      '<b class="sm">' + h(tl.ten) + '</b>' +
+      '<p class="tiny muted mt">' + h(tl.cho || '') + (tl.khiNao ? ' · ' + h(tl.khiNao) : '') + '</p>' +
+      '<button class="btn ghost sm mt2" data-tlgd="' + h(tl.ma) + '">' +
+      ic('book','w-3 h-3') + ' Mở tài liệu</button></div>';
+  }
+
+  /* Chuyện */
+  var ch = (d.ch || []).map(function(x){
+    var c = tim('CHUYEN', x.ma); if(!c) return '';
+    return the(x, c.ten, c.cap + ' · ' + c.hoc, 'data-chxem="' + h(c.ma) + '"');
+  }).filter(Boolean).join('');
+  var tg = (d.tg || []).map(function(x){
+    var c = tim('CHUYEN_TG', x.ma); if(!c) return '';
+    return the(x, c.ten, (c.nuoc || '') + (c.nam ? ' · ' + c.nam : ''), 'data-tgxem="' + h(c.ma) + '"');
+  }).filter(Boolean).join('');
+  if(ch || tg){
+    o += muc('CHUYỆN KỂ ĐƯỢC TRONG CA NÀY', 'người thật, việc thật');
+    o += ch + tg;
+  }
+
+  if(!o) return '';
+  return '<div class="mt2" style="border-top:1px solid var(--vien);padding-top:12px">' + o +
+    '<p class="tiny muted mt2" style="line-height:1.6">Những mối nối trên do hệ thống dựng bằng độ trùng ' +
+    'từ khoá, không do người duyệt từng cái. Chữ "khớp mạnh / vừa / nhẹ" và danh sách từ trùng là để ' +
+    'anh chị tự kiểm — thấy cái nào lệch thì bỏ qua.</p></div>';
+};
+
+/* ═══════════ KHỐI NỐI CHO MỘT TÌNH HUỐNG ═══════════ */
+G.nkKhoiTinhHuong = function(id){
+  var d = nk().th[id];
+  if(!d) return '';
+  var o = '';
+  if(d.kb && d.kb.length){
+    o += muc('KỊCH BẢN DÙNG ĐƯỢC', d.kb.length + ' buổi, ưu tiên cùng tầng');
+    o += d.kb.map(function(x){
+      var k = tim('KICHBAN', x.ma); if(!k) return '';
+      return the(x, k.ten, k.tang + ' · ' + k.loai + ' · ' + k.phut + ' phút',
+        'data-kb="' + h(k.ma) + '"');
+    }).join('');
+  }
+  /* Chiều sâu theo CHỦ ĐỀ — 250 tình huống chia 50 nhóm, mà chiều sâu
+     viết theo 10 chủ đề. Bảng ánh xạ nằm ở G.NOI_KET.chuDe, do
+     tools/dung-noi-ket.js dựng ra và có bài kiểm soi không nhóm nào
+     rơi ra ngoài. */
+  var cd = d.chuDe && (G.TH_SAU || {})[d.chuDe];
+  if(cd){
+    o += muc('CHIỀU SÂU NĂM CẤP NGHỀ', cd.ten || d.chuDe);
+    o += '<div class="card pad-sm mb"><p class="sm" style="line-height:1.7">' + h(cd.y) + '</p>' +
+      '<button class="btn ghost sm mt2" data-thsau="' + h(d.chuDe) + '">' +
+      ic('chart','w-3 h-3') + ' Xem năm cấp làm được gì với chủ đề này</button></div>';
+  }
+
+  if(d.ch && d.ch.length){
+    o += muc('CHUYỆN KỂ ĐƯỢC', 'người thật, việc thật');
+    o += d.ch.map(function(x){
+      var c = tim('CHUYEN', x.ma); if(!c) return '';
+      return the(x, c.ten, c.cap + ' · ' + c.hoc, 'data-chxem="' + h(c.ma) + '"');
+    }).join('');
+  }
+  if(!o) return '';
+  return '<div class="mt2" style="border-top:1px solid var(--vien);padding-top:12px">' + o +
+    '<p class="tiny muted mt2" style="line-height:1.6">Mối nối do hệ thống dựng bằng độ trùng từ khoá. ' +
+    'Chữ khớp mạnh / vừa / nhẹ là để anh chị tự kiểm.</p></div>';
+};
+
+/* ═══════════ GẮN VÀO HAI CỬA SỔ ĐÃ CÓ ═══════════
+   Bọc hàm cũ thay vì sửa vào ruột nó: hai cửa sổ ấy đổi sau này thì
+   phần nối vẫn chạy y nguyên. U.modal được thay tạm trong lúc gọi để
+   bắt lấy nội dung, rồi trả về đúng như cũ. */
+function boc(ten, them){
+  var cu = G[ten];
+  if(typeof cu !== 'function') return false;
+  G[ten] = function(ma){
+    var giu = U.modal, ra = null;
+    U.modal = function(html){ ra = html; };
+    try { cu.call(this, ma); } catch(e) { ra = null; }
+    U.modal = giu;
+    if(ra == null) return;
+    var t = '';
+    try { t = them(ma) || ''; } catch(e) { t = ''; }
+    U.modal(ra + t);
+  };
+  return true;
+}
+G.NK_DA_BOC = [];
+if(boc('phacDoModal', G.nkKhoiPhacDo)) G.NK_DA_BOC.push('phacDoModal');
+if(boc('tinhHuongModal', G.nkKhoiTinhHuong)) G.NK_DA_BOC.push('tinhHuongModal');
+
+/* ═══════════ BẤM ═══════════ */
+document.addEventListener('click', function(e){
+  var t = e.target; if(!t || !t.closest) return;
+
+  /* data-kb đã có bộ nhận toàn cục ở src/app.js gọi G.kichBanModal.
+     Bắt lại ở đây là mở cửa sổ hai lần. Để nguyên cho app.js lo. */
+
+  var c = t.closest('[data-chxem]');
+  if(c){
+    var x = tim('CHUYEN', c.getAttribute('data-chxem'));
+    if(x && G.veChuyen) U.modal(G.veChuyen(x, true));
+    return;
+  }
+  var g = t.closest('[data-tgxem]');
+  if(g){
+    var y = tim('CHUYEN_TG', g.getAttribute('data-tgxem'));
+    if(y && G.veChuyenTG) U.modal(G.veChuyenTG(y, true));
+    return;
+  }
+  var s = t.closest('[data-pdsau]');
+  if(s){ U.modal(G.nkBangSau(s.getAttribute('data-pdsau'))); return; }
+  var s2 = t.closest('[data-thsau]');
+  if(s2){ U.modal(G.nkBangSau(s2.getAttribute('data-thsau'), true)); return; }
+  var q = t.closest('[data-qtnhom]');
+  if(q){ U.modal(G.nkBangQT(q.getAttribute('data-qtnhom'))); return; }
+  var l = t.closest('[data-tlgd]');
+  if(l){ U.modal(G.nkBangTL(l.getAttribute('data-tlgd'))); return; }
+}, false);
+
+/* ═══════════ BA CỬA SỔ NỘI DUNG ═══════════ */
+var CAP = ['C1','C2','C3','C4','C5'];
+
+/* Một hàm cho cả hai kho chiều sâu: cấu trúc giống hệt nhau nên viết
+   hai bản là mở đường cho hai bản trôi khỏi nhau. */
+G.nkBangSau = function(nhom, laTinhHuong){
+  var s = (laTinhHuong ? (G.TH_SAU || {}) : (G.PD_SAU || {}))[nhom];
+  if(!s) return '<p class="sm">Chưa có chiều sâu cho ' + (laTinhHuong ? 'chủ đề' : 'nhóm') + ' này.</p>';
+  var cd = {}; (G.CAPDO_VANDUNG || []).forEach(function(x){ cd[x.ma] = x; });
+  var o = '<div class="tiny up" style="color:var(--gita)">CHIỀU SÂU NĂM CẤP · ' +
+    h(s.ten || ((laTinhHuong ? 'CHỦ ĐỀ ' : 'NHÓM ') + nhom)) + '</div>' +
+    '<p class="sm mt" style="line-height:1.75">' + h(s.y) + '</p>';
+  o += '<div class="card pad-sm mt2">' +
+    [['Ở nhà', s.nha], ['Ở trường', s.truong], ['Ngoài xã hội', s.xaHoi],
+     ['Thói quen tối thiểu', s.thoiQuen], ['Đường đi', s.di], ['Tư liệu cần', s.tuLieu]]
+    .filter(function(x){ return x[1]; })
+    .map(function(x){ return '<p class="sm mb"><b>' + h(x[0]) + ':</b> ' + h(x[1]) + '</p>'; }).join('') +
+    '</div>';
+  o += CAP.map(function(c){
+    var v = s.c && s.c[c]; if(!v) return '';
+    var d = cd[c] || {ten:c};
+    return '<div class="card pad-sm mt2" style="border-left:3px solid var(--gita)">' +
+      '<div class="row" style="gap:8px;align-items:baseline">' +
+      '<b class="mono" style="color:var(--gita)">' + h(c) + '</b>' +
+      '<b class="sm">' + h(d.ten) + '</b></div>' +
+      '<p class="sm mt"><b>Làm được:</b> ' + h(v.lam) + '</p>' +
+      '<p class="sm mt" style="color:var(--alert)"><b>Chưa làm được:</b> ' + h(v.chua) + '</p>' +
+      '<p class="sm mt"><b>Việc nộp:</b> ' + h(v.viec) + '</p>' +
+      '<p class="sm mt"><b>Lên cấp khi:</b> ' + h(v.len) + '</p></div>';
+  }).join('');
+  return o;
+};
+
+G.nkBangQT = function(nhom){
+  var q = (G.QT_NHOM || []).filter(function(x){ return x.nhom === nhom; })[0];
+  if(!q) return '<p class="sm">Chưa có quy trình riêng cho nhóm này.</p>';
+  var o = '<div class="tiny up" style="color:var(--gita)">QUY TRÌNH NHÓM ' + h(nhom) + '</div>' +
+    '<h2 style="font-size:20px;font-weight:800;margin:6px 0 10px">' + h(q.ten) + '</h2>' +
+    '<div class="card pad-sm mb" style="border-color:var(--gita)"><p class="sm" style="line-height:1.7">' +
+    '<b>Khác bảy bước chung:</b> ' + h(q.khac) + '</p></div>';
+  o += (q.buoc || []).map(function(b){
+    return '<div class="card pad-sm mb"><div class="row" style="gap:8px;align-items:baseline">' +
+      '<b class="mono" style="color:var(--gita)">' + h(b.ma) + '</b></div>' +
+      '<p class="sm mt" style="line-height:1.7">' + h(b.lam) + '</p>' +
+      ((b.hoi || []).length ? '<p class="tiny muted mt"><b>Hỏi:</b> ' +
+        h(b.hoi.join(' · ')) + '</p>' : '') +
+      (b.bay ? '<p class="tiny mt" style="color:var(--alert)"><b>Bẫy:</b> ' + h(b.bay) + '</p>' : '') +
+      '</div>';
+  }).join('');
+  if((q.dungNgay || []).length)
+    o += '<div class="card pad-sm mb" style="border-color:var(--gita-do)">' +
+      '<div class="tiny up mb" style="color:var(--gita-do-ink)">DỪNG NGAY VÀ BÁO CẤP TRÊN</div>' +
+      U.list(q.dungNgay, 'var(--gita-do)') + '</div>';
+  if(q.chuyenTuyen)
+    o += '<div class="card pad-sm mb" style="border-color:var(--alert)">' +
+      '<div class="tiny up mb" style="color:var(--alert)">CHUYỂN TUYẾN</div>' +
+      '<p class="sm" style="line-height:1.7">' + h(q.chuyenTuyen) + '</p></div>';
+  if((q.doBang || []).length)
+    o += '<div class="card pad-sm"><div class="tiny up mb muted">ĐO CA NÀY BẰNG</div>' +
+      U.list(q.doBang, 'var(--ok)') + '</div>';
+  return o;
+};
+
+G.nkBangTL = function(ma){
+  var t = (G.TL_GIADINH || []).filter(function(x){ return x.ma === ma; })[0];
+  if(!t) return '<p class="sm">Chưa có tài liệu này.</p>';
+  var o = '<div class="tiny up" style="color:var(--ok)">TÀI LIỆU PHÁT CHO GIA ĐÌNH · ' + h(t.dai || '') + '</div>' +
+    '<h2 style="font-size:20px;font-weight:800;margin:6px 0 6px">' + h(t.ten) + '</h2>' +
+    '<p class="tiny muted mb">' + h(t.cho || '') + (t.khiNao ? ' · ' + h(t.khiNao) : '') + '</p>' +
+    (t.muc ? '<p class="sm mb" style="line-height:1.75">' + h(t.muc) + '</p>' : '');
+  o += (t.than || []).map(function(x){
+    return '<div class="card pad-sm mb"><b class="sm">' + h(x.h) + '</b>' +
+      '<p class="sm mt" style="line-height:1.75">' + h(x.d) + '</p></div>';
+  }).join('');
+  if(t.bang && (t.bang.cot || []).length)
+    o += '<div class="card pad-sm mb"><div class="tiny up mb" style="color:var(--gita)">' +
+      h(t.bang.ten || 'BẢNG GHI') + '</div>' +
+      U.tbl(t.bang.cot, [t.bang.cot.map(function(){ return '…'; })]) +
+      (t.bang.y ? '<p class="tiny muted mt">' + h(t.bang.y) + '</p>' : '') + '</div>';
+  if((t.khong || []).length)
+    o += '<div class="card pad-sm mb" style="border-color:var(--gita-do)">' +
+      '<div class="tiny up mb" style="color:var(--gita-do-ink)">KHÔNG LÀM NHỮNG ĐIỀU NÀY</div>' +
+      U.list(t.khong, 'var(--gita-do)') + '</div>';
+  if(t.xong)
+    o += '<div class="card pad-sm"><div class="tiny up mb muted">DÙNG XONG KHI</div>' +
+      '<p class="sm" style="line-height:1.7">' + h(t.xong) + '</p></div>';
+  return o;
+};
+
+/* Đếm thật cho bài kiểm và màn tự soát */
+G.nkSoat = function(){
+  var d = nk(), pd = Object.keys(d.pd || {}), th = Object.keys(d.th || {});
+  var coKB = pd.filter(function(m){ return (d.pd[m].kb || []).length; }).length;
+  var thKB = th.filter(function(m){ return (d.th[m].kb || []).length; }).length;
+  return {
+    pd: pd.length, th: th.length, pdCoKB: coKB, thCoKB: thKB,
+    boc: (G.NK_DA_BOC || []).length,
+    sau: Object.keys(G.PD_SAU || {}).length,
+    sauTH: Object.keys(G.TH_SAU || {}).length,
+    qt: (G.QT_NHOM || []).length,
+    tl: (G.TL_GIADINH || []).length
+  };
+};
 
 })();
 

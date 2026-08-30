@@ -35,7 +35,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '8.8',
+  version: '8.9',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3168,6 +3168,33 @@ G.THUOC_CAP_PHEP = [
   'MOTHUC','SACH','BANDO_A3','POSTER','SODO','PHACDO','DIEMCHAM','NGONTU','NGONTU_TANG',
   'THAYVI','MAUTHOAI','PERSONA','CHUAN1000','HAILONG','TAILIEU','AIPOLICY','KPI','DINHTUYEN',
   'AINANGCAP','LACHAN','BENCH','BENCH_AI','KICHBAN',
+  /* Kho nghề thêm từ v8.9. Thiếu tên ở đây thì donKho() không xoá, và
+     một máy vừa đăng nhập Coach rồi đăng nhập lại bằng phụ huynh sẽ để
+     phụ huynh giữ nguyên chiều sâu nghề trong bộ nhớ — khoá màn hình mà
+     dữ liệu vẫn nằm đó. Bộ kiểm phát hành soi danh sách này đối chiếu
+     với nội dung thật của bảy gói, nên quên một tên là đỏ. */
+  'PD_SAU','TH_SAU','NOI_KET','QT_NHOM','TL_GIADINH',
+  /* ── Bốn mươi bảy kho nghề tích lại qua nhiều bản ──
+     Bộ kiểm phát hành v8.9 đối chiếu nội dung thật của gói NGHỀ và gói
+     TẦNG với danh sách này, và tìm ra 47 kho chưa bao giờ được khai.
+     Mỗi cái là một chỗ dữ liệu nghề nằm lại trong bộ nhớ máy khách sau
+     khi đổi vai: máy vừa đăng nhập Coach, đăng nhập lại bằng phụ huynh,
+     thì phụ huynh vẫn còn học phí, hợp đồng tuyến, mô thức NLP, chiều
+     sâu nghề trong tay.
+
+     Không kho nào trong đây do bản này thêm vào — chúng có sẵn. Cái mới
+     là phép đo tìm ra chúng, và phép đo ấy nay chạy mỗi lần phát hành
+     nên danh sách không tụt lại phía sau kho được nữa. */
+  'MT_SAU','SAU_BOICANH','SAU_TRUONG_CAP','SAU_TRUONG_CHUNG','SAU_LUAT',
+  'HD_CHUAN','HD_RIENG','HD_LUAT','QT_LUONG','QT_RIENG',
+  'QT_LUAT','TD_MUC','TD_CANH','TD_TRITHUC','TD_MAYCHU',
+  'TD_KHONG','TD_THAT','NLP_GOC','NLP_MUC','NLP_CAITIEN',
+  'NLP_LUAT','HP_PHAM_VI','TAILIEU_GOC','TAILIEU_DRIVE','HP_TANG',
+  'HP_LUAT','HP_KICHBAN','HP_SOAT','REF_30S','REF_GAINS_GITA',
+  'REF_121','REF_CHAM','REF_CHAM_MUC','REF_TRANGTHAI','REF_BANGIAO',
+  'REF_CAMON','REF_KHONG','REF_HOI','REF_KPI','REF_LOI',
+  'CD_BO','CD_LUAT','TL_KE','TL_DUONG','TL_LUAT',
+  'TL_TRICH','TL_BAOQUAN',
   'LUAT_TK','TAIKHOAN_KPI','YEUCAU_MO','HANG_TL','DAU_MAT','QUYTRINH',
   'QUA1000','QUA_DANG','KETNOI','LIENKET','VANBAN','TAICHINH_QT','THANHTRA','RASOAT_KH',
   'BANDO_TUVAN','BANDO_COACH','XUAT','TINHHUONG','KHUNG_T5','THANHTOAN','TEST750','KPI100',
