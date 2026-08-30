@@ -45,7 +45,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 265 bài test
+npm run test         # 287 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
@@ -137,6 +137,44 @@ PL-TOA-STA-L3-004   Phiếu luyện     — bài để làm
 LG-TOA-STA-L3-004   Phiếu lời giải  — lời giải đầy đủ + bảng phân tích chuyên sâu
 HD-TOA-STA          Phiếu hướng dẫn — một phiếu ôn chắc cho cả chuyên đề
 ```
+
+### Đề cương 32 tuần — cả chặng đường trông như thế nào
+
+Lộ trình hằng ngày trả lời *"hôm nay làm gì"*. Đề cương trả lời câu khác hẳn: **cả chặng
+đường trông như thế nào**. Thiếu câu thứ hai, người học sống trong một chuỗi việc vặt không
+có hình dáng — trạng thái khiến người ta bỏ cuộc dù vẫn đang tiến bộ.
+
+Ba giai đoạn, 32 tuần, 7 cột mốc. Mỗi tuần có mục tiêu viết ở dạng **kết quả quan sát được**
+và một cách **tự kiểm là một việc làm được**, không phải một cảm giác. Mỗi giai đoạn nêu rõ
+**cái bẫy đặc trưng** của nó — ví dụ giai đoạn Nền tảng: *nôn nóng luyện đề khi nền chưa đủ,
+cho ra một chuỗi điểm thấp lặp lại và bào mòn động lực nhanh hơn bất cứ thứ gì.*
+
+Đây cũng là thứ **gia đình đọc được**: một phụ huynh không đọc nổi bảng năng lực Rasch nhưng
+đọc được một bảng 32 tuần, và đó là thứ họ cần để tin rằng có một kế hoạch thật.
+
+### Kỳ thi cấp chứng chỉ HSA365
+
+Một học viên ôn tám tháng vẫn có thể không biết mình đang ở đâu. Điểm các buổi luyện lên
+xuống thất thường, và câu hỏi *"mình có ổn không"* không có câu trả lời nào ngoài cảm giác —
+nên nhiều người bước vào phòng thi thật lần đầu với đúng một thứ: hy vọng.
+
+Kỳ sát hạch này biến cảm giác thành **bằng chứng**. Nó khác một bài thi thử ở ba điểm, và cả
+ba đều có chủ đích:
+
+1. **Có quy chế** — làm một lần, không dừng giữa chừng. Chính sự không thể làm lại tạo ra áp
+   lực giống phòng thi thật, và áp lực đó cần được tập trước.
+2. **Có bậc** — Đồng · Bạc · Vàng · Kim cương. Một con số nói *"bạn được 97 điểm"*; một bậc
+   nói *"bạn đang ở đâu và cần gì để lên tiếp"*.
+3. **Có văn bản** — chứng chỉ in được, có mã tra cứu. Một tờ giấy cầm được làm thay đổi cách
+   một người 17 tuổi nói về bản thân, và sự tự tin đó đi theo họ vào phòng thi.
+
+Điểm quan trọng nhất của barem: **mỗi bậc yêu cầu cả tổng điểm lẫn điểm sàn từng phần.**
+Một người 45/50 Toán nhưng 18/50 Văn có tổng 108 điểm trông đẹp — nhưng sẽ thất bại ở đề
+thật, vì đề thật không cho bỏ qua một phần. *(Có test canh giữ đúng trường hợp này.)*
+
+Và chứng chỉ **in thẳng dòng tuyên bố giới hạn** lên chính nó: đây là chứng chỉ của HSA365,
+không phải của ĐHQGHN, không có giá trị xét tuyển. Một tờ giấy nói quá về chính nó sẽ làm
+hỏng niềm tin vào mọi thứ còn lại.
 
 ### Cửa vào: bài kiểm tra định vị
 
@@ -352,7 +390,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   265 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   287 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -378,7 +416,7 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **265 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **287 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
 - **Không có màn hình trắng** — `ErrorBoundary` ở gốc bắt mọi lỗi hiển thị và đưa ra

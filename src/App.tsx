@@ -29,6 +29,12 @@ const ReportPage = lazy(() =>
 const PricingPage = lazy(() =>
   import('./features/pricing/PricingPage').then((m) => ({ default: m.PricingPage })),
 );
+const SyllabusPage = lazy(() =>
+  import('./features/syllabus/SyllabusPage').then((m) => ({ default: m.SyllabusPage })),
+);
+const CertificatePage = lazy(() =>
+  import('./features/certificate/CertificatePage').then((m) => ({ default: m.CertificatePage })),
+);
 const ExamPage = lazy(() => import('./features/exam/ExamPage').then((m) => ({ default: m.ExamPage })));
 const PracticePage = lazy(() =>
   import('./features/practice/PracticePage').then((m) => ({ default: m.PracticePage })),
@@ -77,6 +83,10 @@ function Routes({ path }: { path: string }) {
       return <DashboardPage />;
     case '/placement':
       return <PlacementPage />;
+    case '/de-cuong':
+      return <SyllabusPage />;
+    case '/chung-chi':
+      return <CertificatePage />;
     case '/paper':
       return <PaperPage />;
     case '/exam':

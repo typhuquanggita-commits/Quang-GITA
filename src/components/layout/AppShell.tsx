@@ -17,6 +17,7 @@ import {
   IconExam,
   IconHome,
   IconMenu,
+  IconMedal,
   IconNotebook,
   IconPaper,
   IconProfile,
@@ -50,9 +51,11 @@ export function AppShell({ children }: { children: ReactNode }) {
   const nav = useMemo<NavItem[]>(
     () => [
       { href: '/', label: 'Tổng quan', icon: IconHome },
+      { href: '/de-cuong', label: 'Đề cương 32 tuần', icon: IconBook },
       { href: '/placement', label: 'Định vị đầu vào', icon: IconCompass },
       { href: '/exam', label: 'Thi thử', icon: IconExam },
       { href: '/paper', label: 'Đề mẫu', icon: IconPaper },
+      { href: '/chung-chi', label: 'Chứng chỉ HSA365', icon: IconMedal },
       { href: '/practice', label: 'Luyện tập', icon: IconTarget },
       { href: '/topic', label: 'Ôn chắc chuyên đề', icon: IconBook },
       { href: '/review', label: 'Sổ tay lỗi sai', icon: IconNotebook, badge: due },

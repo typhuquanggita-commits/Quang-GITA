@@ -190,3 +190,27 @@ describe('báo cáo gia đình', () => {
     ).toBeInTheDocument();
   });
 });
+
+describe('đề cương và chứng chỉ', () => {
+  it('đề cương luôn dựng được và có tiêu đề cấp 1', async () => {
+    renderApp();
+    window.location.hash = '#/de-cuong';
+    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    expect(
+      await screen.findByRole('heading', { level: 1, name: 'Đề cương 32 tuần' }),
+    ).toBeInTheDocument();
+  });
+
+  it('trang chứng chỉ có tiêu đề cấp 1 ngay cả khi chưa đạt bậc nào', async () => {
+    // Truoc khi sua, ca trang khong co h1 nao khi nguoi hoc chua dat bac —
+    // nguoi dung trinh doc man hinh khong biet minh dang o dau.
+    renderApp();
+    window.location.hash = '#/chung-chi';
+    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    expect(
+      await screen.findByRole('heading', { level: 1, name: /Kỳ thi cấp chứng chỉ/ }),
+    ).toBeInTheDocument();
+    // Va chi co DUNG MOT h1 tren trang.
+    expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1);
+  });
+});

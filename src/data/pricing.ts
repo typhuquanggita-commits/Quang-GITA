@@ -26,12 +26,27 @@
  * dinh, khong gian lam viec cho giao vien. Do la loai gia tri khong so sanh
  * duoc theo so gio video, nen cung khong bi keo vao cuoc dua giam gia.
  *
- * Cac con so duoi day la DE XUAT de chu doanh nghiep quyet dinh, khong phai
- * cam ket da chot. Gia thi truong thay doi theo mua — hay khao sat lai truoc
- * moi mua tuyen sinh va cap nhat `SURVEYED_AT`.
+ * TRANG THAI HIEN TAI: gia dang dat NGANG MUC THI TRUONG, cho chu doanh
+ * nghiep chot con so cuoi. Xem `PRICING_STATUS` ben duoi. Toan bo lap luan ve
+ * dinh gia o tren van giu nguyen gia tri — no la khung de quyet dinh, khong
+ * phai con so da quyet.
  */
 
 export const SURVEYED_AT = '2026-08';
+
+/**
+ * Trang thai cua bang gia.
+ *
+ * Viet ra thanh mot hang so thay vi mot ghi chu trong dau ai do, vi mot bang
+ * gia tam thoi ma khong ai nho la tam thoi se tro thanh bang gia chinh thuc
+ * sau ba thang.
+ */
+export const PRICING_STATUS = {
+  state: 'tam-thoi' as const,
+  note: 'Giá đang đặt ngang mức thị trường, chờ chốt con số cuối.',
+  decision:
+    'Khung định giá (một mức giá, không giảm giá theo mùa, cao hơn giá bán thực ~25%) đã sẵn sàng trong PRICING_PRINCIPLES. Khi chốt, chỉ cần đổi `price` của từng gói và đặt state thành "da-chot".',
+};
 export const CURRENCY = 'VNĐ';
 
 /** Le phi thi chinh thuc — khong phai doanh thu cua chung ta, nhung khach can biet. */
@@ -108,9 +123,9 @@ export const PLANS: readonly Plan[] = [
     id: 'tu-hoc',
     name: 'Tự học',
     tagline: 'Toàn bộ hệ thống, bạn tự đi.',
-    price: 990_000,
+    price: 499_000,
     priceUnit: 'trọn mùa thi',
-    perMonth: Math.round(990_000 / SEASON_MONTHS),
+    perMonth: Math.round(499_000 / SEASON_MONTHS),
     bestFor:
       'Người đã có kỷ luật tự học và chỉ thiếu một lộ trình đúng. Nếu bạn từng tự ôn được một môn tới nơi tới chốn, gói này đủ.',
     notFor:
@@ -132,9 +147,9 @@ export const PLANS: readonly Plan[] = [
     id: 'co-kem',
     name: 'Có kèm',
     tagline: 'Có người nhìn bài của bạn mỗi tuần.',
-    price: 4_900_000,
+    price: 2_900_000,
     priceUnit: 'trọn mùa thi',
-    perMonth: Math.round(4_900_000 / SEASON_MONTHS),
+    perMonth: Math.round(2_900_000 / SEASON_MONTHS),
     bestFor:
       'Phần lớn người học. Đây là gói được thiết kế làm mặc định, không phải gói bán thêm.',
     notFor:
@@ -153,9 +168,9 @@ export const PLANS: readonly Plan[] = [
     id: 'coach',
     name: 'Coach GITA 1:1',
     tagline: 'Làm việc với người, không chỉ với đề.',
-    price: 12_900_000,
+    price: 7_900_000,
     priceUnit: 'trọn mùa thi',
-    perMonth: Math.round(12_900_000 / SEASON_MONTHS),
+    perMonth: Math.round(7_900_000 / SEASON_MONTHS),
     bestFor:
       'Người có mục tiêu cao và ít thời gian, hoặc người đã từng ôn mà không lên được điểm dù rất cố gắng.',
     notFor:

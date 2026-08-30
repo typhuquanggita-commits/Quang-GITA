@@ -30,6 +30,11 @@ export interface DocumentShellProps {
   meta?: ReactNode;
   children: ReactNode;
   className?: string;
+  /**
+   * `h2` khi trang da co mot `h1` khac. Mot trang chi duoc co dung mot tieu de
+   * cap 1 — hai cai lam nguoi dung trinh doc man hinh mat moc dinh huong.
+   */
+  headingLevel?: 'h1' | 'h2';
 }
 
 const ACCENT_CLASS: Record<string, string> = {
@@ -46,6 +51,7 @@ export function DocumentShell({
   meta,
   children,
   className,
+  headingLevel: Heading = 'h1',
 }: DocumentShellProps) {
   const spec = DOCUMENT_KINDS.find((d) => d.code === kind);
 
@@ -58,7 +64,7 @@ export function DocumentShell({
             <p className="doc-code">
               {spec?.name ?? 'Tài liệu'} · {code}
             </p>
-            <h1 className="mt-0.5 text-xl font-semibold tracking-tight text-fg">{title}</h1>
+            <Heading className="mt-0.5 text-xl font-semibold tracking-tight text-fg">{title}</Heading>
             {subtitle && <p className="mt-1 text-sm text-fg-muted">{subtitle}</p>}
           </div>
         </div>

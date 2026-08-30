@@ -68,6 +68,14 @@ export const IconBadge = (p: SVGProps<SVGSVGElement>) => (
   </Icon>
 );
 
+export const IconMedal = (p: SVGProps<SVGSVGElement>) => (
+  <Icon {...p}>
+    <circle cx="12" cy="14.5" r="5.5" />
+    <path d="m9 9.2 -2.5-5.7M15 9.2l2.5-5.7M7.5 3.5h9" />
+    <path d="m12 12 .9 1.9 2.1.3-1.5 1.5.4 2.1-1.9-1-1.9 1 .4-2.1L9 14.2l2.1-.3z" />
+  </Icon>
+);
+
 export const IconWallet = (p: SVGProps<SVGSVGElement>) => (
   <Icon {...p}>
     <path d="M3.5 8.2A2.2 2.2 0 0 1 5.7 6h11.6A2.2 2.2 0 0 1 19.5 8.2v8.6a2.2 2.2 0 0 1-2.2 2.2H5.7a2.2 2.2 0 0 1-2.2-2.2Z" />

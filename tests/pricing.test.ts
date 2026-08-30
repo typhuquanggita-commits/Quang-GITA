@@ -7,6 +7,7 @@ import {
   PLANS,
   PLAN_BY_ID,
   PRICING_PRINCIPLES,
+  PRICING_STATUS,
   SEASON_MONTHS,
   formatVnd,
   totalSeasonCost,
@@ -51,13 +52,25 @@ describe('học phí', () => {
     }
   });
 
-  it('giá nằm giữa giá bán thực và giá niêm yết của thị trường', () => {
+  it('giá nằm trong dải thị trường thật, không dưới sàn và không chạm giá neo', () => {
+    // Bien duoi: khong re hon gia ban thuc re nhat cua phan khuc co giao vien
+    // — di duoi do la tu xep minh vao nhom khoa video.
+    // Bien tren: khong cham gia NIEM YET cua thi truong — vi gia niem yet la
+    // gia neo, khong phai gia giao dich, va bam theo no la choi cung tro do.
     const guided = PLAN_BY_ID.get('co-kem')?.price ?? 0;
     const actuals = MARKET_REFERENCE.filter((r) => r.listed !== null).map((r) => r.actual);
     const listeds = MARKET_REFERENCE.map((r) => r.listed).filter((x): x is number => x !== null);
 
-    expect(guided).toBeGreaterThan(Math.max(...actuals));
+    expect(guided).toBeGreaterThanOrEqual(Math.min(...actuals));
     expect(guided).toBeLessThan(Math.min(...listeds));
+  });
+
+  it('bảng giá tạm thời được đánh dấu rõ là tạm thời', () => {
+    // Mot bang gia tam thoi ma khong ai nho la tam thoi se tro thanh bang gia
+    // chinh thuc sau ba thang.
+    expect(['tam-thoi', 'da-chot']).toContain(PRICING_STATUS.state);
+    expect(PRICING_STATUS.note.length).toBeGreaterThan(20);
+    expect(PRICING_STATUS.decision.length).toBeGreaterThan(60);
   });
 
   it('bảng tham chiếu thị trường luôn ghi nguồn và lời giải thích', () => {

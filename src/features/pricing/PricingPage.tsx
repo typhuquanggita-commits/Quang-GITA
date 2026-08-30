@@ -3,6 +3,7 @@ import {
   MAX_EXAM_ATTEMPTS_PER_YEAR,
   OFFICIAL_EXAM_FEE,
   PLANS,
+  PRICING_STATUS,
   SEASON_MONTHS,
   formatVnd,
   totalSeasonCost,
@@ -37,6 +38,13 @@ export function PricingPage() {
           vì cắt bớt nội dung để bán gói cao hơn là bán sự thiếu thốn, không phải bán giá trị.
         </p>
       </header>
+
+      {PRICING_STATUS.state === 'tam-thoi' && (
+        <p className="rounded-lg border border-warn/40 bg-warn-soft p-3 text-xs leading-relaxed text-warn">
+          <strong>Bảng giá tạm thời.</strong> {PRICING_STATUS.note} Các mức dưới đây đang đặt ngang
+          thị trường để tham chiếu, chưa phải mức đã chốt.
+        </p>
+      )}
 
       <p className="rounded-xl border border-brand-line bg-brand-soft p-4 text-sm leading-relaxed text-fg-muted">
         <strong className="text-fg">Một mức giá, không giảm giá theo mùa.</strong> Thị trường luyện
