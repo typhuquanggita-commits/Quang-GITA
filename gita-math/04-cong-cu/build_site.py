@@ -49,6 +49,7 @@ from data.tu_khoa import (Y_DINH, NHOM_TU_KHOA, TRUONG, DUOI,  # noqa: E402
                           MAU_TIEU_DE, MAU_MO_TA)
 from render_html import md, inline                             # noqa: E402
 
+TUAN_MAM = 35
 NGAY = date.today().isoformat()
 
 # Phiếu cho đọc trọn vẹn: đây là phần miễn phí, và cũng là phần đi vào chỉ mục
@@ -323,6 +324,13 @@ class Site:
         if not chu_de:
             return goc
         return goc + chu_de.lower() + ("/" if not buoi else f"/buoi-{buoi}/")
+
+    @staticmethod
+    def dd_mam_khung(khoi: str, loai: str) -> str:
+        goc = Site.dd_mam(khoi)
+        return goc + {"lo_trinh": "lo-trinh-ca-nam/",
+                      "ban_do": "ban-do-kien-thuc/",
+                      "danh_gia": "danh-gia-dau-vao/"}[loai]
 
     @staticmethod
     def dd_de(ma: str) -> str:
@@ -1189,6 +1197,44 @@ class Site:
                     json_ld=[seo.duong_dan_dieu_huong(vet)]),
                     0.75, d0["chu_de_ten"], nguong=200)
 
+            # Ba trang khung năm học. Đây là nhóm truy vấn phụ huynh gõ
+            # nhiều nhất mà các kho tài liệu khác gần như bỏ trống: họ không
+            # tìm một phiếu bài tập, họ tìm **cả năm học trông như thế nào**.
+            KHUNG_MAM = {
+                "lo_trinh": ("lo-trinh", f"lo-trinh-{khoi}.md",
+                             f"Lộ trình học toán {K['ten_ngan'].lower()} cả năm",
+                             f"Lộ trình {TUAN_MAM} tuần cho trẻ {K['tuoi']}: tuần "
+                             f"nào học chủ đề nào, con phải làm được gì, ở nhà làm "
+                             f"gì và khi nào nhìn lại."),
+                "ban_do": ("ban-do", f"ban-do-{khoi}.md",
+                           f"Bản đồ kiến thức toán {K['ten_ngan'].lower()}",
+                           f"Toàn bộ kiến thức toán của trẻ {K['tuoi']} xếp theo ba "
+                           f"mạch, kèm bảng tự đánh dấu ba mức và đối chiếu "
+                           f"Cambridge."),
+                "danh_gia": ("danh-gia", f"danh-gia-dau-vao-{khoi}.md",
+                             f"Đánh giá đầu vào toán {K['ten_ngan'].lower()}",
+                             f"Bài đánh giá đầu vào cho trẻ {K['tuoi']}: đo ba mạch "
+                             f"kiến thức và trục tư duy, kèm đáp án và bảng xếp "
+                             f"điểm bắt đầu."),
+            }
+            for loai, (thu_muc, ten_tep, tieu, mo) in KHUNG_MAM.items():
+                f = GOC / "12-khoi-mam" / thu_muc / ten_tep
+                if not f.exists():
+                    continue
+                dd_k = self.dd_mam_khung(khoi, loai)
+                than_k = md(bo_dau_trang(doc(f)))
+                than_k += (f'<p><a href="{self.dd_mam(khoi)}">Về trang chương '
+                           f'trình {seo.esc(K["ten_ngan"].lower())}</a></p>')
+                vet_k = [("Trang chủ", "/"), (K["ten_ngan"], self.dd_mam(khoi)),
+                         (seo.rut(tieu, 40), dd_k)]
+                self.ghi(dd_k, seo.trang(
+                    dd=dd_k, tieu_de=seo.ghep_tieu_de(tieu, DUOI),
+                    mo_ta=seo.rut(mo, 158), h1=tieu,
+                    than=bang_cuon(than_k), vet=vet_k, ngay=NGAY,
+                    muc_dang=self.dd_mam(khoi),
+                    json_ld=[seo.duong_dan_dieu_huong(vet_k)]),
+                    0.7, tieu, nguong=250)
+
             # trang trụ của khối
             dd = self.dd_mam(khoi)
             dc = DOI_CHIEU_CAM[khoi]
@@ -1220,6 +1266,17 @@ class Site:
                 (theo_cd[c][0]["chu_de_ten"],
                  f"{theo_cd[c][0]['mach_ten']} · {len(theo_cd[c])} buổi",
                  self.dd_mam(khoi, c)) for c in sorted(theo_cd)])
+            than += "<h2>Cả năm học trông như thế nào</h2>" + the_lien_ket([
+                ("Lộ trình cả năm",
+                 f"{TUAN_MAM} tuần: tuần nào học gì, khi nào nhìn lại",
+                 self.dd_mam_khung(khoi, "lo_trinh")),
+                ("Bản đồ kiến thức",
+                 "Toàn bộ kiến thức xếp theo mạch, có bảng tự đánh dấu",
+                 self.dd_mam_khung(khoi, "ban_do")),
+                ("Đánh giá đầu vào",
+                 "Đo con đang đứng ở đâu trước khi bắt đầu",
+                 self.dd_mam_khung(khoi, "danh_gia")),
+            ])
             than += ('<p><a href="/toan-lop-3/">Sau lớp 2 là chương trình toán lớp '
                      '3, 4, 5</a> — nơi bắt đầu hệ chuyên đề và hai tuyến học.</p>')
             vet = [("Trang chủ", "/"), (K["ten_ngan"], dd)]

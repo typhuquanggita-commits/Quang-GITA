@@ -299,6 +299,19 @@ def main() -> None:
                         md = md.split("\n---", 1)[-1].lstrip("-\n")
                     mam_noi.setdefault(x["ma"], {})[khoa] = tach_dong_md(md)
 
+    # Khung năm học của khối Mầm: lộ trình, bản đồ kiến thức, đánh giá đầu vào.
+    # Ba tài liệu này viết cho **người lớn** chứ không cho trẻ, nên để riêng
+    # khỏi `mam_noi` — màn hình mở chúng ra ở một chỗ khác.
+    mam_tai_lieu = []
+    for thu_muc, loai in (("lo-trinh", "lo_trinh"), ("ban-do", "ban_do"),
+                          ("danh-gia", "danh_gia")):
+        for f in sorted((ROOT / "12-khoi-mam" / thu_muc).glob("*.md")):
+            md = f.read_text(encoding="utf-8")
+            khoi = f.stem.rsplit("-", 1)[-1]
+            mam_tai_lieu.append({"ma": f.stem, "khoi": khoi, "loai": loai,
+                                 "ten": md.splitlines()[0].lstrip("# "),
+                                 "md": tach_dong_md(md)})
+
     ban_do = []
     for f in sorted((ROOT / "06-ban-do-kien-thuc").glob("*.md")):
         md = f.read_text(encoding="utf-8")
@@ -344,6 +357,7 @@ def main() -> None:
         "de_soan": de_soan,
         "mam": mam,
         "mam_noi": mam_noi,
+        "mam_tai_lieu": mam_tai_lieu,
         "mam_khung": {"khoi": KHOI_MAM, "twm": TWM_MAM, "mach": MACH_MAM,
                       "cam": DOI_CHIEU_MAM, "hung_thu": LUAT_MAM},
     }
@@ -363,7 +377,7 @@ def main() -> None:
     print(f"✔ {out.relative_to(ROOT)} — {kb:.0f} KB · bảng chuỗi {len(data['bang_chuoi'])} mục")
     print(f"  chỉ mục: {len(gon)} phiếu · đã biên soạn: {len(phieu)} · test: {len(test)}"
           f" · kèm (GP/HD): {len(kem)} · bản đồ: {len(ban_do)} · sơ đồ đọc vị: {len(so_do)}"
-          f" · khối Mầm: {len(mam)} buổi × 2 bản"
+          f" · khối Mầm: {len(mam)} buổi × 2 bản + {len(mam_tai_lieu)} tài liệu khung"
           f" · mạch: {len(mach)}"
           f" · cụm: {len(cum_ds)} · đề thi: {len(de_thi)} (đã soạn {len(de_soan)})")
     print(f"  nhúng trọn nội dung: {len(phieu)} phiếu học + {len(kem)} phiếu kèm"

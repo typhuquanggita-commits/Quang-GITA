@@ -37,6 +37,26 @@ def co(duong: str) -> bool:
     return (GOC / duong).exists()
 
 
+def _o_trong_mam() -> int:
+    """Đếm ô (chủ đề × vai) của khối Mầm chưa có mẫu bài nào của đúng chủ đề.
+
+    Mỗi ô trống là một buổi học phải đi mượn mẫu của chủ đề khác — buổi học
+    phép trừ mở đầu bằng trò đếm số. Đếm được nên kiểm được.
+    """
+    try:
+        from data.khoi_mam import CHU_DE
+        from sinh.mau_mam import KHO_MAM, VAI_THEO_O, vai_cua
+    except Exception:
+        return 999
+    n = 0
+    for khoi, cds in CHU_DE.items():
+        vais = sorted(set(VAI_THEO_O[khoi]))
+        for cd in cds:
+            co_vai = {vai_cua(m["ma"]) for m in KHO_MAM.get(khoi, {}).get(cd[0], [])}
+            n += sum(1 for v in vais if v not in co_vai)
+    return n
+
+
 def _kho():
     import sinh                                            # noqa: F401
     from sinh.khung import KHO
@@ -233,6 +253,20 @@ YEU_CAU = [
                  if not f.stem.endswith("-NL")
                  and "HÔM NAY CON LÀM ĐƯỢC GÌ" in f.read_text("utf-8"))
      if co("12-khoi-mam/MG") else 0, 40, "phiếu mẫu giáo"),
+    ("Khối Mầm",
+     "Mỗi chủ đề có mẫu bài riêng cho cả bốn vai của một buổi",
+     lambda: _o_trong_mam() == 0, True, "không còn ô nào phải mượn mẫu chủ đề khác"),
+    ("Khối Mầm",
+     "Lộ trình cả năm, bản đồ kiến thức và đánh giá đầu vào cho từng khối",
+     lambda: sum(dem_tep(f"12-khoi-mam/{t}")
+                 for t in ("lo-trinh", "ban-do", "danh-gia")
+                 if co(f"12-khoi-mam/{t}")), 9, "tài liệu khung năm học"),
+    ("Khối Mầm",
+     "Ba tài liệu khung ấy lên website công khai cho phụ huynh tìm được",
+     lambda: sum(1 for k in ("toan-tien-tieu-hoc", "toan-lop-1", "toan-lop-2")
+                 for t in ("lo-trinh-ca-nam", "ban-do-kien-thuc",
+                           "danh-gia-dau-vao")
+                 if co(f"11-seo/site/{k}/{t}/index.html")), 9, "trang khung"),
     ("Khối Mầm",
      "Có mặt trong ứng dụng học trực tuyến và trên website công khai",
      lambda: co("11-seo/site/toan-lop-1") and co("11-seo/site/toan-lop-2")

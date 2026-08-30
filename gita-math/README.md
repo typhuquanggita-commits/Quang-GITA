@@ -15,6 +15,7 @@ Hà Nội.
 | Hạng mục | Số lượng | Nơi để |
 |---|---:|---|
 | **Khối Mầm** — buổi học 5–8 tuổi, mỗi buổi hai bản | 190 × 2 | `12-khoi-mam/` |
+| **Khung năm học khối Mầm** — lộ trình, bản đồ kiến thức, đánh giá đầu vào | 9 | `12-khoi-mam/lo-trinh/` · `ban-do/` · `danh-gia/` |
 | Cụm chuyên đề (chương) | 96 | `02-chi-muc/` |
 | Phiếu học 90 phút | 600 | `03-phieu/` |
 | Phiếu Lời giải & Phân tích chuyên sâu | 600 | `03-phieu/` |
@@ -132,7 +133,7 @@ Vì vậy có thêm một bản thứ hai: **website tĩnh công khai**, cùng k
 kết xuất thành HTML thật, để đưa lên tên miền của Học viện.
 
 ```
-python3 04-cong-cu/build_site.py     →  2 402 trang · 85 MB
+python3 04-cong-cu/build_site.py     →  2 411 trang · 85 MB
 python3 04-cong-cu/kiem_toan_seo.py  →  SẠCH LỖI · 28 hạng mục đạt
 ```
 
@@ -175,6 +176,9 @@ gita-math/
 ├── 10-so-do-doc-vi/      24 sơ đồ đọc vị đề bài (8 nhóm × 3 lớp)
 ├── 11-seo/               Chiến lược tìm kiếm + bộ sinh website công khai
 └── 12-khoi-mam/          Tiền tiểu học · lớp 1 · lớp 2 — 190 buổi × 2 bản
+    ├── lo-trinh/         Lộ trình 35 tuần cho từng khối
+    ├── ban-do/           Bản đồ kiến thức cả năm cho từng khối
+    └── danh-gia/         Đánh giá đầu vào cho từng khối
 ```
 
 ## 5. BỘ CÔNG CỤ — CHẠY THEO ĐÚNG THỨ TỰ NÀY
@@ -188,6 +192,7 @@ gita-math/
 | `python3 04-cong-cu/build_de_thi.py` | Sinh chỉ mục 162 đề thi |
 | `python3 04-cong-cu/build_de.py` | **Biên soạn trọn 162 đề thi** kèm đáp án và bảng phân tích |
 | `python3 04-cong-cu/build_mam.py` | **Biên soạn khối Mầm — 190 buổi × 2 bản** |
+| `python3 04-cong-cu/build_mam_khung.py` | **Khung năm học khối Mầm — lộ trình, bản đồ, đánh giá đầu vào** |
 | `python3 04-cong-cu/kiem_mam.py` | **Kiểm định khối Mầm — 15 hạng mục** |
 | `python3 04-cong-cu/build_phan_quyen.py` | Sinh tài liệu phân quyền và bảo mật |
 | `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 254 mẫu bài × mọi lớp × 300 hạt giống, đo độ phủ 538 dạng bài và 16 phương pháp |

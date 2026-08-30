@@ -341,9 +341,11 @@ const DATA = (() => {
   for (const x of (d.so_do || [])) ghep(x);
   for (const x of (d.lo_trinh || [])) ghep(x);
   for (const x of (d.ban_do || [])) ghep(x);
-  // Khối Mầm lồng sâu hơn một tầng: mỗi buổi có hai bản, mỗi bản là một mảng
-  // dòng. Quên tầng này thì màn hình khối Mầm hỏng còn các màn hình khác vẫn
-  // chạy — đúng kiểu lỗi chỉ lộ ra khi mở đúng một trang.
+  (d.mam_tai_lieu || []).forEach(ghep);
+  // Riêng nội dung buổi học của khối Mầm lồng sâu hơn một tầng: mỗi buổi có
+  // hai bản, mỗi bản mới là một mảng dòng. Quên tầng này thì màn hình khối Mầm
+  // hỏng còn các màn hình khác vẫn chạy — đúng kiểu lỗi chỉ lộ ra khi mở đúng
+  // một trang.
   for (const k in (d.mam_noi || {})) {
     const b = d.mam_noi[k];
     for (const ban in b) if (Array.isArray(b[ban])) b[ban] = noi(b[ban]);
@@ -1301,6 +1303,19 @@ function veMam(ma) {
   const K = (DATA.mam_khung || {}).khoi || {};
   if (!ds.length) return chuaPhatHanh("Khối Mầm chưa có trong bản này");
 
+  // Ba tài liệu khung của khối — viết cho bố mẹ và giáo viên, không cho trẻ.
+  const KHUNG = DATA.mam_tai_lieu || [];
+  const TEN_LOAI = {lo_trinh: "Lộ trình cả năm", ban_do: "Bản đồ kiến thức",
+                    danh_gia: "Đánh giá đầu vào"};
+  const khung = ma ? KHUNG.find(x => x.ma === ma) : null;
+  if (khung) {
+    const t = khung;
+    MAIN().innerHTML = `<div class="row" style="margin-bottom:14px">
+      <button class="btn" data-go="mam">← Tất cả buổi học</button></div>
+    <div class="card pad md">${mdToHtml(t.md)}</div>`;
+    return;
+  }
+
   if (ma) {
     const d = ds.find(x => x.ma === ma);
     if (!d) return veMam();
@@ -1348,6 +1363,17 @@ function veMam(ma) {
       <span class="chip">${(k.buoi_moi_chu_de || 0)} buổi mỗi chủ đề</span></div>
     <p style="margin:10px 0 0;font-size:13.5px;color:var(--chu-nhat)">${inline(k.ghi_chu || "")}</p>
   </div>
+  ${(() => {
+    const t = KHUNG.filter(x => x.khoi === LOC_MAM.khoi);
+    if (!t.length) return "";
+    return `<h3 style="font-size:15px;margin:20px 0 8px">Khung năm học
+      <span style="font-weight:400;opacity:.6;font-size:13px">· dành cho bố mẹ và giáo viên</span></h3>
+      <div class="grid g3" style="margin-bottom:6px">${t.map(x =>
+        `<a class="card pad" href="#/mam/${x.ma}"
+          style="text-decoration:none;color:inherit;display:block;border-left:4px solid var(--do)">
+          <div class="eyebrow">${esc(TEN_LOAI[x.loai] || x.loai)}</div>
+          <div style="margin-top:6px;font-size:13.5px">${esc(x.ten)}</div></a>`).join("")}</div>`;
+  })()}
   ${Object.keys(theo).sort().map(cd => {
     const bs = theo[cd].sort((a, b) => a.buoi - b.buoi);
     const d0 = bs[0];
