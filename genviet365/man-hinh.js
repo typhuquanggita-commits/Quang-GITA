@@ -265,6 +265,55 @@ GV.NHOM = [
       { v: 'seo-phan-hoi', t: 'Hệ phản hồi năm sao', h: 'Sáu bước · không mua, không lọc trước' },
       { v: 'seo-do', t: 'Tám chỉ số phải đo', h: 'Đo theo cụm, không đo theo từ khoá đơn' },
       { v: 'seo-90', t: 'Chín mươi ngày đầu tiên', h: 'Nền → phủ ý định → dựng tin cậy' }
+    ]},
+  { id: 'g29', no: '29', t: 'HỆ MƯỜI CẤP ĐỘ', s: 'Một trăm chương trình huấn luyện, viết ra đủ', mau: '#5140B4',
+    ds: [
+      { v: 'cd-muoi-cap', t: 'Mười cấp độ và điều kiện đạt', h: 'Làm quen → Đại sứ hệ thống · 7 cột' },
+      { v: 'cd-tram-ct', t: 'Một trăm chương trình', h: '1.1 → 10.10 · đủ, có thật trong nguồn' },
+      { v: 'cd-nang-luc', t: 'Nhóm năng lực và Pin', h: 'A–F và F1–F4 · năm mức Pin' },
+      { v: 'cd-chuan-ra', t: 'Chuẩn đầu ra bốn góc nhìn', h: 'Gia đình · nhà trường · CLB · chính em' },
+      { v: 'cd-sop', t: 'Ba mươi quy trình chuẩn', h: 'SOP theo Ban · có chỉ tiêu và cách chấm' },
+      { v: 'cd-quy-chuan', t: 'Bộ quy chuẩn CLB', h: 'Trang phục · giao tiếp · tác phong' }
+    ]},
+  { id: 'g30', no: '30', t: 'SÁCH MASTER GEN VIỆT', s: 'Hệ tư tưởng nền, lấy nguyên từ bản thảo của tác giả', mau: '#0B7350',
+    ds: [
+      { v: 'ms-loi-mo', t: 'Vì sao cần một bản đồ', h: 'Tám luận điểm mở đầu' },
+      { v: 'ms-luan-diem', t: 'Mười bốn luận điểm nền', h: 'Câu hỏi sống còn của một đời người' },
+      { v: 'ms-ba-chang', t: 'Ba chặng ba mươi năm', h: 'Gieo Hạt · Rèn Lửa · Bay Cao' },
+      { v: 'ms-mo-thuc', t: 'Mười tám mô thức', h: 'MT-01 → MT-18 · bộ công cụ của sách' },
+      { v: 'ms-rui-ro', t: 'Năm rủi ro chiến lược', h: 'Chính tác giả đặt tên cho chúng' },
+      { v: 'ms-khung-sach', t: 'Khung sách và câu đáng trích', h: 'Bảy phần · hai mươi sáu câu' }
+    ]},
+  { id: 'g31', no: '31', t: 'CHUYÊN ĐỀ MƯỜI HAI KHỐI', s: 'Tám trăm năm mươi chuyên đề, viết ra đủ', mau: '#A8801F',
+    ds: [
+      { v: 'cde-nam-nhom', t: 'Năm nhóm theo tài liệu gốc', h: 'Tên gốc khác cách gọi đang lưu hành' },
+      { v: 'cde-ma-hoa', t: 'Hai trăm năm mươi chuyên đề có mã', h: 'GV<khối>.<nhóm>.<số> · khối 1–5' },
+      { v: 'cde-tai-nang', t: 'Sáu trăm chuyên đề tài năng', h: 'Lớp 1 → lớp 12 · có minh chứng đo được' },
+      { v: 'cde-khung', t: 'Khung chuyên đề đầy đủ', h: 'Bốn mươi hai chuyên đề có khung chi tiết' },
+      { v: 'cde-giao-an', t: 'Giáo án hai chuyên đề mẫu', h: 'Đủ hai tiết, từng pha, từng phút' },
+      { v: 'cde-luat', t: 'Hai mươi luật biên soạn', h: 'Và bảy tuần giá trị' },
+      { v: 'ga-khung', t: 'Khung cứng một buổi và một tiết', h: 'Cùng một khung, chỉ thay ba thứ' },
+      { v: 'ga-khau-quyet', t: 'Hai mươi khẩu quyết', h: 'Hạt nhân của mỗi chuyên đề tiểu học' },
+      { v: 'ga-buoi', t: 'Bảy mươi ba buổi đã soạn', h: 'Có mục tiêu, hoạt động, đầu ra' },
+      { v: 'ga-hoat-dong', t: 'Ngân hàng ba mươi hai hoạt động', h: 'Chơi được ngay · rèn gì thì ghi rõ' },
+      { v: 'ga-hoc-ky', t: 'Mười lăm tuần một học kỳ', h: 'Và mười bốn biểu mẫu đi kèm' }
+    ]},
+  { id: 'g32', no: '32', t: 'CẨM NANG VẬN HÀNH CHI TIẾT', s: 'Chạy được một buổi và một nhiệm kỳ', mau: '#9E470D',
+    ds: [
+      { v: 'vh-so-do', t: 'Sơ đồ tổ chức và ba bộ tên', h: 'Nguồn mâu thuẫn — đã đối chiếu công khai' },
+      { v: 'vh-truoc-trong-sau', t: 'Trước · trong · sau một buổi', h: '57 mốc · từ tối Chủ nhật tới bàn giao' },
+      { v: 'vh-ban12', t: 'Nhiệm vụ mười hai Ban', h: 'Hằng tuần · hằng tháng · không được làm' },
+      { v: 'vh-raci-kpi', t: 'RACI và bộ chỉ số', h: '15 đầu việc · 16 chỉ số có ngưỡng' },
+      { v: 'vh-canh-bao', t: 'Mười lăm cảnh báo sớm', h: 'Cờ Vàng 7 ngày · Cờ Đỏ 24 giờ' },
+      { v: 'vh-bieu-mau', t: 'Hai mươi biểu mẫu', h: 'BM-01 → BM-20 · ai giữ, nhịp nào' }
+    ]},
+  { id: 'g33', no: '33', t: 'TRẠI VÀ HỌC VIỆN VIP', s: 'Leader Boom · chương trình điều hành · tham chiếu Nhật Bản', mau: '#BE0E16',
+    ds: [
+      { v: 'tr-bay-ngay', t: 'Bảy ngày Leader Boom', h: 'Thức tỉnh → bàn giao · từng ngày một cổng' },
+      { v: 'tr-lich-hau', t: 'Lịch ngày một và hậu trại', h: '20 khối giờ · sáu mốc hậu trại 90 ngày' },
+      { v: 'tr-an-toan', t: 'Mười ba điều an toàn trại', h: 'Chỗ tài liệu gốc mỏng nhất — nói rõ' },
+      { v: 'tr-vip', t: 'Học viện Gen Việt VIP', h: 'Mười bước · chuẩn vào ra · quyền và nghĩa vụ' },
+      { v: 'tr-bukatsu', t: 'Tham chiếu Bukatsu', h: 'Tài liệu gốc đã bị thay chữ — đã ghi rõ' }
     ]}
 ];
 
@@ -1818,6 +1867,316 @@ GV.MAN = {
     { k: 'muc', t: 'Sáu luật giữ cho hai thang không lệch nhau' },
     { k: 'luat', tu: 'TY_ANH_XA_LUAT' },
     { k: 'trich', t: 'Khi hai thang mâu thuẫn trong một hồ sơ, giai đoạn là thứ đúng và bậc là thứ phải sửa.', n: 'Luật ánh xạ thứ năm' }
+  ]},
+
+/* ══════════ NHÓM 29 · HỆ MƯỜI CẤP ĐỘ ══════════ */
+'cd-muoi-cap': { q: 'clb_dieu_hanh', k: 'Hệ mười cấp độ', t: 'Mười cấp độ và điều kiện đạt từng cấp',
+  p: 'Bảy cột cho mỗi cấp: ai, bao lâu, đạt khi nào, rèn cái gì, và trọng tâm năng lực. Lấy nguyên từ tài liệu gốc của Học viện.',
+  khoi: [
+    { k: 'bang', cot: ['Cấp', 'Tên gọi', 'Đối tượng', 'Thời gian', 'Điều kiện đạt', 'Trọng tâm huấn luyện', 'Năng lực chính'],
+      tu: 'CD10_CAP' },
+    { k: 'van', t: 'Điều đáng chú ý nhất khi đọc kỹ nguồn: hệ này chấm đạo đức như một *tiêu chí loại*, không phải điểm trừ. Tham gia bắt nạt thì không đạt Cấp 2. Làm xấu hình ảnh CLB thì không đạt Cấp 5. Vi phạm ở Cấp 8 thì xét hạ cấp. Và danh hiệu Cấp 10 có cơ chế thu hồi ghi thành văn.' },
+    { k: 'trich', t: 'Nhân cách được lọc trước khi trao quyền dẫn người, không phải sau.', n: 'Đọc từ vị trí bộ lọc F3 · F4 ở Cấp 5' }
+  ]},
+
+'cd-tram-ct': { q: 'clb_dieu_hanh', k: 'Hệ mười cấp độ', t: 'Một trăm chương trình huấn luyện',
+  p: 'Mười cấp × mười chương trình. Mỗi chương trình có mã, mục tiêu, nội dung, thời lượng, phương thức, biểu mẫu và cách đánh giá.',
+  khoi: [
+    { k: 'van', t: 'Trước bản này, hệ thống *nói* “mỗi cấp mười chương trình huấn luyện” mà chưa chỗ nào viết ra chúng. Cả một trăm chương trình dưới đây đều có thật trong tài liệu gốc — không dòng nào suy ra.' },
+    { k: 'bang', cot: ['Mã', 'Cấp', 'Tên chương trình', 'Mục tiêu', 'Nội dung chính', 'Thời lượng và cách làm', 'Biểu mẫu', 'Đánh giá'],
+      tu: 'CD10_CT' },
+    { k: 'van', t: 'Cột *biểu mẫu* là thứ phân biệt bộ này với một danh mục khoá học: mỗi chương trình đã có sẵn phiếu đi kèm, nên một CLB mới mở không phải tự nghĩ ra cách ghi nhận.' }
+  ]},
+
+'cd-nang-luc': { q: 'clb_dieu_hanh', k: 'Hệ mười cấp độ', t: 'Nhóm năng lực và thang Pin',
+  p: 'Mười nhóm năng lực A–F cộng F1–F4, và năm mức Pin dùng để nói với học sinh về chính tiến bộ của em.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'CD10_NANG_LUC' },
+    { k: 'muc', t: 'Năm mức Pin' },
+    { k: 'van', t: 'Thang Pin là cách hệ này nói chuyện với học sinh nhỏ tuổi về tiến bộ mà không dùng chữ “cấp độ”. Cùng một sự thật, hai ngôn ngữ: người lớn đọc cấp, em đọc màu pin.' },
+    { k: 'luoi', c: 2, tu: 'CD10_PIN' },
+    { k: 'trich', t: 'F3 và F4 — ảnh hưởng tích cực và tư duy phục vụ — đặt ở Cấp 5, tức trước Cấp 6–7 nơi bắt đầu dẫn người.', n: 'Vị trí bộ lọc trong nguồn' }
+  ]},
+
+'cd-chuan-ra': { q: 'nghiem_thu', k: 'Hệ mười cấp độ', t: 'Chuẩn đầu ra bốn góc nhìn',
+  p: 'Cùng một cấp độ, nhìn từ bốn phía sẽ thấy bốn thứ khác nhau. Cả bốn phải cùng thấy thì mới tính là đạt.',
+  khoi: [
+    { k: 'bang', cot: ['Cấp', 'Góc nhìn', 'Nhìn thấy gì'], tu: 'CD10_CHUAN_RA' },
+    { k: 'van', t: 'Bảng này là công cụ chống *lạm phát danh hiệu* mạnh nhất trong cả hệ. Một em được công nhận Cấp 6 mà gia đình không thấy gì khác ở nhà thì hồ sơ ấy có vấn đề — dù CLB chấm đủ điểm.' },
+    { k: 'trich', t: 'Cấp độ nào cũng phải nhìn thấy được từ ngoài hệ, không chỉ từ trong hệ.', n: 'Nguyên tắc đọc bảng bốn góc nhìn' }
+  ]},
+
+'cd-sop': { q: 'clb_dieu_hanh', k: 'Hệ mười cấp độ', t: 'Ba mươi quy trình chuẩn',
+  p: 'SOP theo Ban, mỗi quy trình có mã, chỉ tiêu, và cách chấm xem đã làm đúng chưa.',
+  khoi: [
+    { k: 'bang', cot: ['Ban', 'Mã SOP', 'Quy trình', 'Chỉ tiêu', 'Chấm đạt khi nào'], tu: 'CD10_SOP' },
+    { k: 'van', t: 'Ba mươi quy trình này là thứ khiến một CLB chạy được khi người sáng lập vắng mặt. Không có chúng, mọi thứ phụ thuộc trí nhớ của một người — và đó là cách mọi CLB học đường tan sau một nhiệm kỳ.' }
+  ]},
+
+'cd-quy-chuan': { q: 'kh_hanh_trinh', k: 'Hệ mười cấp độ', t: 'Bộ quy chuẩn CLB',
+  p: 'Trang phục, tác phong, giao tiếp. Những thứ nhỏ mà người ngoài nhìn vào là biết ngay CLB này có chuẩn hay không.',
+  khoi: [
+    { k: 'bang', cot: ['Hạng mục', 'Chi tiết', 'Chuẩn phải giữ'], tu: 'CD10_QUY_CHUAN' },
+    { k: 'muc', t: 'Chuẩn giao tiếp' },
+    { k: 'bang', cot: ['Kênh', 'Hạng mục', 'Chuẩn', 'Không được dùng'], tu: 'CD10_GIAO_TIEP' },
+    { k: 'muc', t: 'Mười hai luật của hệ cấp độ' },
+    { k: 'luat', tu: 'CD10_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 30 · SÁCH MASTER GEN VIỆT ══════════ */
+'ms-loi-mo': { q: 'chung', k: 'Sách Master', t: 'Vì sao một thế hệ cần một bản đồ',
+  p: 'Tám luận điểm mở đầu, lấy nguyên chữ của tác giả. Đây là phần hệ vận hành trước nay chưa hề khai thác — và nó là phần giải thích vì sao mọi thứ còn lại tồn tại.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'MS_LOI_MO' },
+    { k: 'van', t: 'Mệnh đề trung tâm của cả cuốn sách nằm ở đây: *bản lĩnh và giá trị không được tải xuống qua bài giảng — chúng được rèn qua quyết định và nén qua trải nghiệm*. Toàn bộ kiến trúc ba lớp và bốn vòng của Gen Việt dựng ra để làm đúng việc rèn ấy mà không phụ thuộc vào cảm hứng của từng thầy cô.' },
+    { k: 'trich', t: 'Khi không có bản đồ, hai khả năng rất dễ xảy ra: hoặc là đi vòng mãi mà không ra được đường lớn, hoặc là chạy rất nhanh… nhưng đi nhầm hướng.', n: 'Lời dẫn · Master Gen Việt' }
+  ]},
+
+'ms-luan-diem': { q: 'chung', k: 'Sách Master', t: 'Mười bốn luận điểm nền',
+  p: 'Mỗi luận điểm là một câu hỏi sống còn mà sách buộc người đọc phải trả lời trước khi đi tiếp.',
+  khoi: [
+    { k: 'ly', tu: 'MS_LUAN_DIEM' },
+    { k: 'van', t: 'Luận điểm thứ nhất đặt lại trọng tâm của toàn bộ việc nuôi dạy: *trở thành người như thế nào*, chứ không chỉ *làm nghề gì*. Nghề đổi, xu hướng đổi — phẩm chất và hệ giá trị thì đi theo suốt đời. Đây cũng là lý do năm phẩm chất ở nhóm 01 đứng trước khung năng lực chứ không sau.' }
+  ]},
+
+'ms-ba-chang': { q: 'chung', k: 'Sách Master', t: 'Ba chặng của ba mươi năm',
+  p: 'Gieo Hạt · Rèn Lửa · Bay Cao — chia theo tuổi, không chia theo lớp. Mỗi chặng có ba nút gia tốc.',
+  khoi: [
+    { k: 'chang', tu: 'MS_CHANG' },
+    { k: 'van', t: 'Chín nút gia tốc là thứ phân biệt bản đồ này với một lời khuyên chung chung: mỗi nút nói rõ *thứ gì phải xảy ra trong khoảng tuổi nào*, và bỏ lỡ thì về sau đắt hơn nhiều để bù.' },
+    { k: 'trich', t: 'Tầm nhìn là ba mươi năm, nhưng đơn vị hành động là một năm — chín mươi ngày — ba mươi ngày — bảy ngày.', n: 'Luật thứ nhất của sách Master' }
+  ]},
+
+'ms-mo-thuc': { q: 'nghe_chung', k: 'Sách Master', t: 'Mười tám mô thức',
+  p: 'Bộ công cụ tư duy của sách. Mỗi mô thức có mã tra được, dùng lại được trong giáo án và trong buổi tư vấn.',
+  khoi: [
+    { k: 'mt', tu: 'MS_MO_THUC' },
+    { k: 'van', t: 'Mười tám mô thức này nối thẳng vào kho chuyên môn ở nhóm 03 và vào mười hai mô thức Việt ở nhóm 13. Ba bộ ấy không cạnh tranh nhau: nhóm 03 đọc một ca, nhóm 13 lấy tinh thần từ lịch sử, còn đây là khung tư duy dài hạn của người dẫn đường.' }
+  ]},
+
+'ms-rui-ro': { q: 'dh_toan_he', k: 'Sách Master', t: 'Năm rủi ro chiến lược',
+  p: 'Điều hiếm gặp: chính tác giả đặt tên cho năm cách mà mô hình của mình có thể hỏng.',
+  khoi: [
+    { k: 'rui', tu: 'MS_RUI' },
+    { k: 'van', t: 'Một mô hình tự nêu được năm cách nó có thể hỏng thì đáng tin hơn một mô hình chỉ nêu ưu điểm. Năm rủi ro này cũng là năm thứ mà kỳ kiểm định nhượng quyền ở nhóm 27 soi gián tiếp: *phong trào hoá* lộ ra ở phần bằng chứng, *phụ thuộc cá nhân ngôi sao* lộ ra ở phần nhân sự còn chuẩn.' },
+    { k: 'trich', t: 'Hoạt động gắn logo tăng nhanh, nhưng tài liệu hoá, PDCA và đo lường thì ít — đó là dấu hiệu đầu tiên của phong trào hoá.', n: 'Rủi ro thứ nhất' }
+  ]},
+
+'ms-khung-sach': { q: 'qt_noi_dung', k: 'Sách Master', t: 'Khung sách và những câu đáng trích',
+  p: 'Bảy phần của bản dàn ý, và hai mươi sáu câu giữ nguyên chữ tác giả để dùng lại trong tài liệu và truyền thông.',
+  khoi: [
+    { k: 'moc', tu: 'MS_KHUNG_SACH' },
+    { k: 'van', t: 'Một điều phải nói rõ thay vì lấp liếm: bản *Khung sách* và ba bản thảo đã viết mô tả **hai cuốn sách khác nhau** — dàn ý là năm phần mười tám chương, bản đã viết là mười bốn chương theo ba chặng. Kho này giữ cả hai và không tự hoà làm một. Bản dàn ý cũng khuyết tiêu đề PHẦN II; các chương 5–8 nằm ở khoảng trống ấy nên được giữ đúng vị trí nguồn, không đặt tên thay tác giả.' },
+    { k: 'muc', t: 'Hai mươi sáu câu đáng trích' },
+    { k: 'bang', cot: ['Câu', 'Ở đâu trong sách'], tu: 'MS_TRICH' },
+    { k: 'muc', t: 'Mười lăm luật rút ra' },
+    { k: 'luat', tu: 'MS_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 31 · CHUYÊN ĐỀ MƯỜI HAI KHỐI ══════════ */
+'cde-nam-nhom': { q: 'chung', k: 'Chuyên đề', t: 'Năm nhóm cố định, theo đúng tên trong tài liệu gốc',
+  p: 'Một phát hiện phải nói ngay: tên năm nhóm trong tài liệu gốc khác hẳn cách gọi vẫn lưu hành trong hệ này.',
+  khoi: [
+    { k: 'van', t: 'Bản dựng trước ghi năm nhóm là *Văn hoá — Phẩm chất · Tư duy — Trí tuệ · Kỹ năng — Bản lĩnh · Thể chất — Sức bền · Tài năng — Sáng tạo*. Đọc tài liệu gốc thì không có *Thể chất — Sức bền*, cũng không có *Tài năng — Sáng tạo*. Dưới đây là tên gốc. Khi hai bên lệch nhau, tài liệu của Học viện đúng.' },
+    { k: 'luoi', c: 2, tu: 'CD_NHOM' },
+    { k: 'muc', t: 'Khung chương trình năm khối tiểu học' },
+    { k: 'bang', cot: ['Khối', 'Trọng tâm khối', 'Số chuyên đề', 'Nhịp dự án', 'Dải mã'], tu: 'CD_KHUNG_B' },
+    { k: 'trich', t: 'Khi cách gọi trong hệ lệch với tài liệu của Học viện, tài liệu đúng và hệ phải sửa.', n: 'Nguyên tắc đọc kho gốc' }
+  ]},
+
+'cde-ma-hoa': { q: 'nghe_chung', k: 'Chuyên đề', t: 'Hai trăm năm mươi chuyên đề có mã',
+  p: 'Bộ duy nhất trong toàn kho gốc có hệ mã GV<khối>.<nhóm>.<số> thật. Khối 1 đến khối 5, mỗi khối năm mươi chuyên đề.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Khối', 'Nhóm', 'Tên chuyên đề', 'Nội dung cốt lõi'], tu: 'CD_DE_TAI_B' },
+    { k: 'van', t: 'Hai chỗ cần biết trước khi dùng: bản gốc khối 2 *thiếu hẳn* mã GV2.1.03 — nhảy từ .02 sang .04; và bản triển khai chi tiết của khối 4, khối 5 chưa tồn tại, mới chỉ có tên chuyên đề. Đây là khoảng trống thật trong kho của Học viện, không phải chỗ bản dựng bỏ sót.' }
+  ]},
+
+'cde-tai-nang': { q: 'nghe_chung', k: 'Chuyên đề', t: 'Sáu trăm chuyên đề phát triển tài năng',
+  p: 'Trọn mười hai khối, lớp 1 tới lớp 12. Mỗi dòng viết theo đúng ba phần của bản gốc: tên gần gũi, ý tưởng lõi, và minh chứng nhỏ đo được.',
+  khoi: [
+    { k: 'van', t: 'Con số *600 chuyên đề* mà hệ vẫn nói không nằm ở tài liệu Cấp 1 — tài liệu ấy chỉ có 250. Đúng 600 nằm ở một tài liệu khác hẳn, và tài liệu ấy *không đánh mã nào cả*. Hai trục được giữ riêng, không gán mã GV cho sáu trăm dòng này.' },
+    { k: 'bang', cot: ['Khối', 'Nhóm', 'Tên chuyên đề', 'Ý tưởng lõi', 'Minh chứng đầu ra'], tu: 'CD_TAI_NANG_B' },
+    { k: 'trich', t: 'Cột minh chứng đầu ra là thứ phân biệt một chuyên đề với một bài nói chuyện.', n: 'Cách đọc bảng sáu trăm dòng' }
+  ]},
+
+'cde-khung': { q: 'nghe_chung', k: 'Chuyên đề', t: 'Khung chuyên đề đầy đủ',
+  p: 'Bốn mươi hai chuyên đề đã có khung chi tiết: thời lượng, cụm năng lực, giá trị gắn kết, mục tiêu.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Thời lượng', 'Cụm năng lực', 'Giá trị Gen Việt gắn kết', 'Mục tiêu tổng quát'], tu: 'CD_KHUNG_CD_B' },
+    { k: 'muc', t: 'Sáu mươi nhóm năng lực trên mười hai khối' },
+    { k: 'bang', cot: ['Khối', 'Nhóm', 'Tên nhóm năng lực', 'Số chuyên đề'], tu: 'CD_TRUC_B' }
+  ]},
+
+'cde-giao-an': { q: 'nghe_quan_ly', k: 'Chuyên đề', t: 'Giáo án hai chuyên đề mẫu',
+  p: 'Đủ hai tiết, từng pha, từng phút. Đây là thứ một giáo viên mới cầm lên dạy được mà không cần hỏi ai.',
+  khoi: [
+    { k: 'giaoan', tu: 'CD_GIAO_AN' },
+    { k: 'van', t: 'Mốc phút trong giáo án này là tổng dồn từ cột *thời lượng* của bản gốc, không phải con số bản gốc ghi sẵn — nói rõ để ai dùng biết mình đang đọc gì.' }
+  ]},
+
+'cde-luat': { q: 'nghe_quan_ly', k: 'Chuyên đề', t: 'Hai mươi luật biên soạn và bảy tuần giá trị',
+  p: 'Luật rút từ chính cách tài liệu gốc được viết, không phải luật áp từ ngoài vào.',
+  khoi: [
+    { k: 'luat', tu: 'CD_LUAT' },
+    { k: 'muc', t: 'Bảy tuần giá trị' },
+    { k: 'bang', cot: ['Tuần', 'Giá trị', 'Hành động trong tuần', 'Minh chứng bắt buộc', 'Minh chứng nâng', 'Đạt tuần khi nào'],
+      tu: 'CD_GIA_TRI_B' }
+  ]},
+
+/* ══════════ NHÓM 32 · CẨM NANG VẬN HÀNH CHI TIẾT ══════════ */
+'vh-so-do': { q: 'clb_dieu_hanh', k: 'Vận hành', t: 'Sơ đồ tổ chức, và ba bộ tên trong cùng một kho',
+  p: 'Bốn tài liệu gốc dùng ba bộ tên tổ chức khác nhau cho cùng một CLB. Đây là mâu thuẫn thật, và cách xử là nói ra chứ không lặng lẽ chọn một bộ.',
+  khoi: [
+    { k: 'van', t: 'Bộ thứ nhất — trong *Quy trình họp* và *Lịch trình sinh hoạt* — gọi mười hai Ban là Khơi Dậy · Trái Tim · Phẩm Chất · Phong Cách · Văn Hoá · Lan Tỏa · Trí Tuệ · Bản Lĩnh · Kết Nối · Tinh Thần · Bàn Chân · Tài Năng. Bộ thứ hai — trong *Chương trình điều hành* — là một danh sách mười hai Ban khác hẳn. Bộ thứ ba — trong *Cẩm nang vận hành* — không dùng tên Ban mà dùng chức danh quản trị: Chủ tịch, Phó chủ tịch Đối nội, Phó chủ tịch Tài chính và Đối ngoại.' },
+    { k: 'van', t: 'Bộ thứ nhất được lấy làm chuẩn, vì chỉ bộ ấy có mô tả nhiệm vụ hằng tuần chi tiết và kịch bản dẫn chương trình đi kèm. Cột cuối bảng dưới nối sang hệ chức danh của Cẩm nang — phép nối ấy *là suy ra từ nhiệm vụ trùng khớp*, không phải câu chữ có sẵn trong nguồn.' },
+    { k: 'bang', cot: ['Tầng', 'Vị trí hoặc Ban', 'Trực thuộc', 'Nhiệm vụ lõi theo tài liệu gốc', 'Chức danh tương ứng trong Cẩm nang'],
+      tu: 'VH2_SO_DO_B' },
+    { k: 'trich', t: 'Ba bộ tên cho một tổ chức là dấu hiệu tài liệu đã lớn nhanh hơn người giữ nó. Hợp nhất được, nhưng phải do Học viện quyết, không do bản dựng tự chọn.', n: 'Ghi chú khi đối chiếu bốn nguồn' }
+  ]},
+
+'vh-truoc-trong-sau': { q: 'clb_dieu_hanh', k: 'Vận hành', t: 'Trước, trong và sau một buổi sinh hoạt',
+  p: 'Năm mươi bảy mốc, từ tối Chủ nhật tuần trước tới lúc bàn giao nhiệm kỳ.',
+  khoi: [
+    { k: 'muc', t: 'Trước buổi · hai mươi bảy mốc' },
+    { k: 'lich', tu: 'VH2_TRUOC' },
+    { k: 'muc', t: 'Trong buổi · mười bốn mốc' },
+    { k: 'lich', tu: 'VH2_TRONG' },
+    { k: 'muc', t: 'Sau buổi · mười sáu mốc' },
+    { k: 'lich', tu: 'VH2_SAU' },
+    { k: 'van', t: 'Hai con số cứng nhất rút được từ nguồn: nhiệm kỳ ban điều hành *sáu tháng*, và lịch chuyển giao có kèm cặp — làm phó ban từ tháng ba, làm trưởng ban từ tháng năm, người tiền nhiệm rút xuống phó ban. Chính cơ chế ấy là thứ giữ cho một CLB không tan sau một nhiệm kỳ.' }
+  ]},
+
+'vh-ban12': { q: 'clb_dieu_hanh', k: 'Vận hành', t: 'Nhiệm vụ mười hai Ban',
+  p: 'Mỗi Ban có việc hằng tuần, việc hằng tháng, và — quan trọng nhất — danh sách việc không được làm.',
+  khoi: [
+    { k: 'stv', tu: 'VH2_BAN12' },
+    { k: 'van', t: 'Cột *không được làm* là cột thường bị bỏ khi người ta chép lại một bảng phân công. Nó cũng là cột duy nhất ngăn được việc một Ban lấn sang việc của Ban khác — thứ làm hỏng nhiều CLB hơn là lười.' },
+    { k: 'muc', t: 'Vòng cải tiến PDCA' },
+    { k: 'moc', tu: 'VH2_PDCA' }
+  ]},
+
+'vh-raci-kpi': { q: 'kpi_toan_he', k: 'Vận hành', t: 'RACI và bộ chỉ số vận hành',
+  p: 'Mười lăm đầu việc có người chịu trách nhiệm cuối, và mười sáu chỉ số có ngưỡng cùng hành động khi rơi ngưỡng.',
+  khoi: [
+    { k: 'bang', cot: ['Đầu việc', 'R — người làm', 'A — chịu trách nhiệm cuối', 'C — phải hỏi ý', 'I — phải được báo'],
+      tu: 'VH2_RACI_B' },
+    { k: 'muc', t: 'Mười sáu chỉ số' },
+    { k: 'bang', cot: ['Chỉ số', 'Ngưỡng chuẩn', 'Mốc đo', 'Ai đo', 'Rơi ngưỡng thì làm gì'], tu: 'VH2_KPI_B' },
+    { k: 'van', t: 'Cột cuối là cột làm cho bảng này khác một bảng KPI thông thường: mỗi chỉ số rơi ngưỡng đều có sẵn *việc phải làm*, nên không ai phải họp để quyết định xem nên làm gì.' }
+  ]},
+
+'vh-canh-bao': { q: 'clb_dieu_hanh', k: 'Vận hành', t: 'Mười lăm cảnh báo sớm',
+  p: 'Cờ Vàng xử trong bảy ngày. Cờ Đỏ xử trong hai mươi tư giờ. Bốn vùng chạm vào là Đỏ ngay, không qua Vàng.',
+  khoi: [
+    { k: 'rui', tu: 'VH2_CANH_BAO' },
+    { k: 'van', t: 'Mỗi cảnh báo có *dấu hiệu* quan sát được và *phanh* cụ thể. Một hệ cảnh báo mà chỉ nêu rủi ro chung chung thì không ai dùng — vì không biết lúc nào là lúc phải hành động.' }
+  ]},
+
+'vh-bieu-mau': { q: 'clb_dieu_hanh', k: 'Vận hành', t: 'Hai mươi biểu mẫu vận hành',
+  p: 'BM-01 tới BM-20. Mỗi mẫu có người giữ, có nhịp nộp, và có trường bắt buộc không được để trống.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Biểu mẫu', 'Ai giữ', 'Nhịp', 'Trường bắt buộc'], tu: 'VH2_BIEU_MAU_B' },
+    { k: 'muc', t: 'Ba mươi hai luật vận hành' },
+    { k: 'luat', tu: 'VH2_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 33 · TRẠI VÀ HỌC VIỆN VIP ══════════ */
+'tr-bay-ngay': { q: 'kh_gia_dinh', k: 'Trại và VIP', t: 'Bảy ngày trại Leader Boom',
+  p: 'Từ thức tỉnh bản thân tới bàn giao. Mỗi ngày có một cổng, và không ngày nào là ngày chơi.',
+  khoi: [
+    { k: 'chang', tu: 'TV2_TRAI_KHUNG' },
+    { k: 'van', t: 'Tài liệu gốc có *hai phương án bảy ngày mâu thuẫn nhau* — Ngày 2 vừa được ghi là “Soi gương”, vừa được ghi là “Kỷ luật và thói quen”. Bản trên lấy phương án trong bảng huấn luyện viên vì phương án ấy đủ sáu cột. Đây là chỗ Học viện nên chốt lại một bản.' }
+  ]},
+
+'tr-lich-hau': { q: 'kh_gia_dinh', k: 'Trại và VIP', t: 'Lịch ngày một và chương trình hậu trại',
+  p: 'Hai mươi khối giờ từ 06:00 tới 22:00, và sáu mốc hậu trại kéo tới ngày thứ chín mươi.',
+  khoi: [
+    { k: 'lich', tu: 'TV2_TRAI_LICH' },
+    { k: 'van', t: 'Chỉ Ngày 1 được trích trọn vẹn vì chỉ Ngày 1 có lịch chi tiết trong nguồn. Cột *ai phụ trách* là suy ra từ cột “gợi ý phong cách” của bản gốc — nói rõ để không ai tưởng đó là phân công chính thức.' },
+    { k: 'muc', t: 'Sáu mốc hậu trại' },
+    { k: 'moc', tu: 'TV2_TRAI_HAU' },
+    { k: 'trich', t: 'Trại tạo bước ngoặt; chín mươi ngày sau trại quyết định bước ngoặt ấy có ở lại hay không.', n: 'Nguyên lý thứ năm · nhóm 01' }
+  ]},
+
+'tr-an-toan': { q: 'kh_gia_dinh', k: 'Trại và VIP', t: 'Mười ba điều an toàn trại',
+  p: 'Đây là chỗ tài liệu gốc mỏng nhất trong toàn bộ kho, và nói thẳng ra thì tốt hơn là lấp đầy bằng chữ.',
+  khoi: [
+    { k: 'van', t: 'Tài liệu trại *không có chương an toàn riêng*: không quy định y tế, không sơ cứu, không bảo hiểm, không quy trình sự cố. Mười ba điều dưới đây gom từ “Luật chơi Leader Boom”, phiếu cam kết và các ô rủi ro rải rác — không bịa thêm điều nào.' },
+    { k: 'luat', tu: 'TV2_TRAI_AN_TOAN' },
+    { k: 'canh', ds: [
+      'Trước khi tổ chức trại thật, Học viện phải bổ sung: phương án y tế và sơ cứu tại chỗ, danh sách bệnh nền và dị ứng của từng học viên, bảo hiểm, quy trình sự cố và số điện thoại khẩn cấp.',
+      'Bốn thứ trên là điều kiện bắt buộc theo phần bảo vệ trẻ em ở nhóm 16 — trại không được chạy khi còn thiếu.',
+      'Kỳ kiểm định nhượng quyền chấm phần an toàn trẻ em bằng không nếu có một vi phạm chưa xử; trại thiếu phương án y tế thuộc nhóm ấy.'
+    ]}
+  ]},
+
+'tr-vip': { q: 'tu_van', k: 'Trại và VIP', t: 'Học viện Gen Việt VIP',
+  p: 'Chương trình điều hành mười bước, có chuẩn đầu vào bảy bước và chuẩn đầu ra bốn mức.',
+  khoi: [
+    { k: 'bang', cot: ['Bước và khối phút', 'Nội dung', 'Ban phụ trách', 'Mục tiêu của bước'], tu: 'TV2_VIP_CT_B' },
+    { k: 'muc', t: 'Chuẩn đầu vào và đầu ra' },
+    { k: 'luoi', c: 2, tu: 'TV2_VIP_CHUAN' },
+    { k: 'muc', t: 'Quyền và nghĩa vụ đi kèm' },
+    { k: 'bang', cot: ['Trục', 'Quyền của thành viên', 'Nghĩa vụ đi kèm', 'Điều khoản gốc'], tu: 'TV2_VIP_QL_B' },
+    { k: 'van', t: 'Mỗi quyền trong bảng đều có nghĩa vụ nằm ngay cạnh. Đó là cách duy nhất để một chương trình gọi là VIP không biến thành một chương trình bán chỗ ngồi.' }
+  ]},
+
+'tr-bukatsu': { q: 'chung', k: 'Trại và VIP', t: 'Tham chiếu mô hình câu lạc bộ Nhật Bản',
+  p: 'Phần này kèm một cảnh báo về chính tài liệu nguồn, và cảnh báo ấy quan trọng hơn nội dung.',
+  khoi: [
+    { k: 'van', t: 'Tệp *Mô hình Bukatsu* trong kho đã bị **tìm và thay thế toàn văn**: chữ “Bukatsu” bị đổi thành “Gen Việt”, cặp “senpai — kōhai” bị đổi thành “Gen A — Gen V”. Dấu vết còn nguyên trong bản gốc: tiêu đề đọc thành “Mô hình Gen Việt–Gen Việt”, và nhiều câu hụt chữ như *“Chuẩn thành viên và kỷ luật (kiểu … nhưng nhân văn)”*. Nghĩa là tài liệu tham chiếu ấy hiện không còn từ khoá nào để tra cứu ngược — chữ “Bukatsu” chỉ còn sót ở tên tệp.' },
+    { k: 'van', t: 'Phần dưới vì vậy chỉ khẳng định đúng những gì tài liệu *thật sự viết*. Việc gọi tên mô hình Nhật Bản là khôi phục từ tên tệp, không phải từ nội dung. Học viện nên tìm lại bản gốc chưa bị thay chữ trước khi dùng phần này trong hồ sơ chính thức.' },
+    { k: 'cd4', nhan: ['Điều tài liệu lấy', 'Vì sao lấy được', 'Gen Việt làm gì', 'Chỗ không bê nguyên'], tu: 'TV2_BUKATSU' },
+    { k: 'muc', t: 'Đối chiếu chín trục' },
+    { k: 'bang', cot: ['Trục so sánh', 'Mô hình tham chiếu', 'CLB Gen Việt', 'Vì sao khác'], tu: 'TV2_BUKATSU_B' }
+  ]},
+
+/* ══════════ BỔ SUNG NHÓM 31 · GIÁO ÁN ══════════ */
+'ga-khung': { q: 'nghe_quan_ly', k: 'Giáo án', t: 'Khung cứng một buổi và một tiết',
+  p: 'Phát hiện quan trọng nhất khi đọc kho giáo án: các chuyên đề tiểu học không phải giáo án rời. Chúng dùng chung một khung cứng, và chỉ thay ba thứ.',
+  khoi: [
+    { k: 'van', t: 'Mười ba chuyên đề lớp 2 đọc được đều chạy đúng một khung: *hai tiết × 45 phút, năm pha mỗi tiết, cùng mốc 8 – 10 – 12 – 12 – 3*. Mỗi chuyên đề chỉ thay ba thứ: một câu chuyện, một khẩu quyết ba tới năm chữ, và một bộ hai mươi tới bốn mươi thẻ tình huống. Hiểu điều này thì soạn chuyên đề mới không còn là việc sáng tạo từ đầu — nó là việc điền vào ba ô.' },
+    { k: 'muc', t: 'Khung một buổi câu lạc bộ · chín mươi phút' },
+    { k: 'giaoan', tu: 'GA_KHUNG_BUOI' },
+    { k: 'muc', t: 'Khung hai tiết tiểu học · mười một pha' },
+    { k: 'giaoan', tu: 'GA_KHUNG_TIET' },
+    { k: 'muc', t: 'Mười tám luật dạy một buổi Gen Việt' },
+    { k: 'luat', tu: 'GA_LUAT' },
+    { k: 'muc', t: 'Mười lăm dấu hiệu buổi đang hỏng' },
+    { k: 'canh', tu: 'GA_HONG' }
+  ]},
+
+'ga-khau-quyet': { q: 'chung', k: 'Giáo án', t: 'Hai mươi khẩu quyết',
+  p: 'Khẩu quyết là hạt nhân của một chuyên đề tiểu học. Em quên hết mọi thứ khác vẫn còn nhớ ba tới năm chữ này.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'GA_KHAU_QUYET' },
+    { k: 'van', t: 'Đây là chỗ chương trình này khác một bài giảng kỹ năng sống thông thường. *Sớm 5 – Đủ 3 – Sẵn 1* là thứ một em lớp hai đọc được trong ba giây trước khi ra khỏi nhà. Một đoạn giảng về tầm quan trọng của sự đúng giờ thì không.' },
+    { k: 'trich', t: 'Thứ còn lại sau khi quên hết mới là thứ đã dạy được.', n: 'Cách đọc bảng khẩu quyết' }
+  ]},
+
+'ga-buoi': { q: 'nghe_quan_ly', k: 'Giáo án', t: 'Bảy mươi ba buổi đã soạn',
+  p: 'Mỗi buổi có mã, khối, tên, mục tiêu, hoạt động chính và đầu ra.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Khối', 'Tên buổi', 'Mục tiêu', 'Hoạt động chính', 'Đầu ra'], tu: 'GA_BUOI' },
+    { k: 'van', t: 'Một sạn thật của nguồn đã được giữ nguyên thay vì âm thầm sửa: mã **GV2.02** bị gán cho hai chuyên đề khác nhau ở hai tệp, và bảy chuyên đề trong Cẩm nang mang mã không khớp nhóm mô-đun của chính danh mục ở đầu tệp. Mã giữ đúng như nguồn ghi, chỗ trùng được đánh dấu. Học viện nên chốt lại bảng mã trước khi in.' }
+  ]},
+
+'ga-hoat-dong': { q: 'nghe_quan_ly', k: 'Giáo án', t: 'Ngân hàng ba mươi hai hoạt động',
+  p: 'Cầm lên chơi được ngay. Cột cuối nói rõ hoạt động ấy rèn cái gì — nếu không trả lời được thì bỏ hoạt động đó ra.',
+  khoi: [
+    { k: 'bang', cot: ['Tên hoạt động', 'Khối phù hợp', 'Thời lượng', 'Cách chơi', 'Rèn điều gì'], tu: 'GA_HOAT_DONG' },
+    { k: 'van', t: 'Ngân hàng này giải quyết vấn đề thực tế nhất của một giáo viên mới: buổi còn mười phút và không biết làm gì. Có ba mươi hai lựa chọn ghi sẵn thời lượng thì không còn phải ứng biến.' }
+  ]},
+
+'ga-hoc-ky': { q: 'nghe_quan_ly', k: 'Giáo án', t: 'Mười lăm tuần một học kỳ',
+  p: 'Từ tuần khảo sát xuất phát tới tuần tổng kết, kèm mười bốn biểu mẫu đi theo từng tuần.',
+  khoi: [
+    { k: 'bang', cot: ['Tuần', 'Nội dung', 'Trọng tâm', 'Sản phẩm tuần'], tu: 'GA_HOC_KY' },
+    { k: 'muc', t: 'Mười bốn biểu mẫu học kỳ' },
+    { k: 'bang', cot: ['Mã', 'Biểu mẫu', 'Dùng ở tuần', 'Để làm gì'], tu: 'GA_BIEU_MAU' },
+    { k: 'muc', t: 'Chín phần của Phần 0' },
+    { k: 'moc', tu: 'GA_PHAN_0' },
+    { k: 'van', t: 'Tuần 1 là *phiếu khảo sát xuất phát điểm*, và tuần cuối đối chiếu lại chính phiếu ấy. Không có phiếu tuần 1 thì mọi con số cuối kỳ chỉ là mô tả, không phải bằng chứng — đúng như khung nghiên cứu ở nhóm 26 đã đặt ra.' }
   ]}
 
 };
@@ -1836,6 +2195,23 @@ GV.TU = {
 
   /* nhóm 22 · 52 tuần — cùng một kho, chiếu ra bốn bảng theo chu kỳ
      và hai bảng chu kỳ. Chia nhỏ vì một bảng 52 dòng thì không ai đọc. */
+  /* nhóm 31–33 · kho do sáu luồng khai thác nguồn viết ra.
+     Vài bảng mang sẵn dòng tiêu đề trong dữ liệu; khối "bang" đã
+     có cột riêng nên phải cắt dòng ấy đi, nếu không nó hiện hai lần. */
+  CD_KHUNG_B: GV.CD_KHUNG.slice(1),
+  CD_DE_TAI_B: GV.CD_DE_TAI.slice(1),
+  CD_TAI_NANG_B: GV.CD_TAI_NANG.slice(1),
+  CD_TRUC_B: GV.CD_TRUC.slice(1),
+  CD_KHUNG_CD_B: GV.CD_KHUNG_CD.slice(1),
+  CD_GIA_TRI_B: GV.CD_GIA_TRI_7_TUAN.slice(1),
+  VH2_SO_DO_B: GV.VH2_SO_DO.slice(1),
+  VH2_RACI_B: GV.VH2_RACI.slice(1),
+  VH2_KPI_B: GV.VH2_KPI.slice(1),
+  VH2_BIEU_MAU_B: GV.VH2_BIEU_MAU.slice(1),
+  TV2_VIP_CT_B: GV.TV2_VIP_CHUONG_TRINH.slice(1),
+  TV2_VIP_QL_B: GV.TV2_VIP_QUYEN_LOI.slice(1),
+  TV2_BUKATSU_B: GV.TV2_BUKATSU_DOI_CHIEU.slice(1),
+
   /* nhóm 21 · hai thang — viết ra để không ai phải đoán */
   HAI_THANG: [
     { t: 'MƯỜI LĂM GIAI ĐOẠN — thang nội dung',

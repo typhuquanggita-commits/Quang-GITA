@@ -75,8 +75,24 @@
       kho: ['SE_NGUYEN_TAC', 'SE_Y_DINH', 'SE_CUM', 'SE_EEAT', 'SE_KY_THUAT', 'SE_PHAN_HOI', 'SE_DO', 'SE_90'] },
 
     { ma: 'Y12', y: 'Biên soạn đầy đủ kho, không thiếu bất cứ yêu cầu nào, độ chất chuyên đề tốt nhất so với thị trường',
-      man: ['clb-chu-ky', 'clb-52-tuan', 'so-cai-yc', 'so-cai-no'],
-      kho: ['T52_CHU_KY', 'T52_TUAN', 'SC_YEU_CAU', 'SC_MON_NO'] }
+      man: ['clb-chu-ky', 'clb-52-tuan', 'so-cai-yc', 'so-cai-no',
+            'cde-nam-nhom', 'cde-ma-hoa', 'cde-tai-nang', 'cde-khung', 'cde-giao-an', 'cde-luat',
+            'cd-muoi-cap', 'cd-tram-ct', 'cd-nang-luc', 'cd-chuan-ra', 'cd-sop', 'cd-quy-chuan',
+            'ga-khung', 'ga-khau-quyet', 'ga-buoi', 'ga-hoat-dong', 'ga-hoc-ky'],
+      kho: ['T52_CHU_KY', 'T52_TUAN', 'SC_YEU_CAU', 'SC_MON_NO',
+            'CD_DE_TAI', 'CD_TAI_NANG', 'CD_KHUNG_CD', 'CD_GIAO_AN', 'CD10_CAP', 'CD10_CT', 'CD10_CHUAN_RA',
+            'GA_KHUNG_TIET', 'GA_KHAU_QUYET', 'GA_BUOI', 'GA_HOAT_DONG', 'GA_HOC_KY'] },
+
+    { ma: 'Y13', y: 'Nguồn tài liệu, quy trình, phác đồ, nội dung và tài nguyên phải đủ chuẩn, không sơ sài — hoàn thiện theo đúng định hướng đã đặt ra',
+      man: ['vh-so-do', 'vh-truoc-trong-sau', 'vh-ban12', 'vh-raci-kpi', 'vh-canh-bao', 'vh-bieu-mau',
+            'ms-loi-mo', 'ms-luan-diem', 'ms-ba-chang', 'ms-mo-thuc', 'ms-rui-ro', 'ms-khung-sach',
+            'tr-bay-ngay', 'tr-lich-hau', 'tr-an-toan', 'tr-vip', 'tr-bukatsu',
+            'gv-anh-xa-bac'],
+      kho: ['VH2_SO_DO', 'VH2_TRUOC', 'VH2_TRONG', 'VH2_SAU', 'VH2_BAN12', 'VH2_RACI', 'VH2_KPI',
+            'VH2_CANH_BAO', 'VH2_BIEU_MAU', 'VH2_LUAT',
+            'MS_LUAN_DIEM', 'MS_CHANG', 'MS_MO_THUC', 'MS_RUI', 'MS_TRICH',
+            'TV2_TRAI_KHUNG', 'TV2_VIP_CHUONG_TRINH', 'TV2_BUKATSU',
+            'TY_ANH_XA_BAC', 'TY_ANH_XA_LUAT'] }
   ];
 
   /* ── 2 · Món nợ số ────────────────────────────────────────
@@ -107,7 +123,29 @@
     { t: 'Mười hai hạng mục kỹ thuật', so: 12, kho: 'SE_KY_THUAT' },
     { t: 'Tám chỉ số phải đo', so: 8, kho: 'SE_DO' },
     { t: 'Bảy nguyên lý bất biến', so: 7, kho: 'NGUYEN_LY' },
-    { t: 'Mười hai dòng sổ yêu cầu', so: 12, kho: 'SC_YEU_CAU' }
+    { t: 'Mười ba dòng sổ yêu cầu', so: 13, kho: 'SC_YEU_CAU' },
+
+    /* Món nợ trả trong đợt khai thác sáu nguồn gốc song song */
+    { t: 'Một trăm chương trình huấn luyện của hệ mười cấp độ', so: 100, kho: 'CD10_CT' },
+    { t: 'Mười cấp độ thành viên — bảng đầy đủ bảy cột', so: 10, kho: 'CD10_CAP' },
+    { t: 'Ba mươi quy trình chuẩn theo Ban', so: 30, kho: 'CD10_SOP' },
+    { t: 'Hai trăm năm mươi chuyên đề có mã GV', so: 251, kho: 'CD_DE_TAI' },
+    { t: 'Sáu trăm chuyên đề phát triển tài năng mười hai khối', so: 601, kho: 'CD_TAI_NANG' },
+    { t: 'Bốn mươi hai chuyên đề có khung đầy đủ', so: 43, kho: 'CD_KHUNG_CD' },
+    { t: 'Mười hai Ban có nhiệm vụ chi tiết', so: 12, kho: 'VH2_BAN12' },
+    { t: 'Hai mươi biểu mẫu vận hành', so: 21, kho: 'VH2_BIEU_MAU' },
+    { t: 'Mười lăm cảnh báo sớm', so: 15, kho: 'VH2_CANH_BAO' },
+    { t: 'Ba mươi hai luật vận hành', so: 32, kho: 'VH2_LUAT' },
+    { t: 'Mười bốn luận điểm nền của sách Master', so: 14, kho: 'MS_LUAN_DIEM' },
+    { t: 'Mười tám mô thức', so: 18, kho: 'MS_MO_THUC' },
+    { t: 'Năm rủi ro chiến lược', so: 5, kho: 'MS_RUI' },
+    { t: 'Bảy ngày trại Leader Boom', so: 7, kho: 'TV2_TRAI_KHUNG' },
+    { t: 'Sáu bậc ánh xạ sang mười lăm giai đoạn', so: 6, kho: 'TY_ANH_XA_BAC' },
+    { t: 'Bảy mươi ba buổi đã soạn', so: 73, kho: 'GA_BUOI' },
+    { t: 'Ba mươi hai hoạt động trong ngân hàng', so: 32, kho: 'GA_HOAT_DONG' },
+    { t: 'Hai mươi khẩu quyết', so: 20, kho: 'GA_KHAU_QUYET' },
+    { t: 'Mười lăm tuần một học kỳ', so: 15, kho: 'GA_HOC_KY' },
+    { t: 'Mười tám luật dạy một buổi', so: 18, kho: 'GA_LUAT' }
   ];
 
   /* ── 3 · Luật giữ sổ ─────────────────────────────────────── */

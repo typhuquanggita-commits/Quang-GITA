@@ -6,7 +6,7 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
 > Đích cuối: một mạng lưới nhân tài Việt **tự tái tạo** — người được rèn quay lại rèn
 > người tiếp theo, và hệ thống sống lâu hơn người dựng ra nó.
 
-**Tập 1 — kiến trúc.** Bộ tài liệu gồm mười tập:
+**Tập 1 — kiến trúc.** Bộ tài liệu gồm mười bốn tập:
 - Tập 2 — [`GEN_VIET_365_VAN_HANH.md`](GEN_VIET_365_VAN_HANH.md): giáo trình, lịch năm,
   sổ tay từng vai, cổng nghiệm thu, biểu mẫu, mô hình dữ liệu, an toàn.
 - Tập 3 — [`GEN_VIET_365_CHUYEN_MON.md`](GEN_VIET_365_CHUYEN_MON.md): ma trận 8 × 8,
@@ -23,9 +23,13 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
 - Tập 8 — [`GEN_VIET_365_CAM_TAY.md`](GEN_VIET_365_CAM_TAY.md): phần cầm lên dùng được
 - Tập 9 — [`GEN_VIET_365_NHUONG_QUYEN.md`](GEN_VIET_365_NHUONG_QUYEN.md): bộ hồ sơ nhượng quyền
 - Tập 10 — [`GEN_VIET_365_TIM_THAY.md`](GEN_VIET_365_TIM_THAY.md): tìm thấy được và đáng tin
+- Tập 11 — [`GEN_VIET_365_CHUYEN_DE.md`](GEN_VIET_365_CHUYEN_DE.md): chuyên đề và giáo án — 850 chuyên đề
+- Tập 12 — [`GEN_VIET_365_CAP_DO.md`](GEN_VIET_365_CAP_DO.md): hệ mười cấp độ và 52 tuần
+- Tập 13 — [`GEN_VIET_365_VAN_HANH_CHI_TIET.md`](GEN_VIET_365_VAN_HANH_CHI_TIET.md): cẩm nang vận hành chi tiết
+- Tập 14 — [`GEN_VIET_365_MASTER_TRAI.md`](GEN_VIET_365_MASTER_TRAI.md): sách Master, trại và học viện VIP
   ngay, và bộ tra cứu. **Nếu chỉ đọc được một tập thì đọc tập này.**
 
-Bản trực quan đầy đủ (28 nhóm · 167 màn): mở `genviet365/index.html`.
+Bản trực quan đầy đủ (33 nhóm · 206 màn): mở `genviet365/index.html`.
 Gộp thành một tệp để gửi đi: `node genviet365/dong-goi-artifact.cjs`.
 
 ---
