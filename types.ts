@@ -1541,6 +1541,12 @@ export interface CauHoi {
    * tiếng để nghe.
    */
   kichBanId?: string;
+  /**
+   * Đoạn đọc mà câu này hỏi vào, nếu có. Giống kichBanId nhưng cho chữ thay
+   * vì cho tiếng: câu thuộc chuyên đề đọc mà không có trường này là câu hỏi
+   * lý thuyết về kỹ năng đọc.
+   */
+  doanVanId?: string;
 }
 
 /* ==========================================================================

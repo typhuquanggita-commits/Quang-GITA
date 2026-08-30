@@ -161,11 +161,20 @@ trong.tong === 0 && trong.tiLe === 0
  * hằng số chép tay.
  */
 const CHU_SO: Record<string, number> = {
-  'mười': 10, 'hai mươi': 20, 'ba mươi': 30, 'bốn mươi': 40, 'năm mươi': 50,
-  'sáu mươi': 60, 'bảy mươi': 70, 'tám mươi': 80,
+  'mười': 10, 'mười hai': 12, 'mười bốn': 14, 'hai mươi': 20, 'ba mươi': 30,
+  'bốn mươi': 40, 'năm mươi': 50, 'sáu mươi': 60, 'sáu mươi sáu': 66,
+  'bảy mươi': 70, 'bảy mươi sáu': 76, 'tám mươi': 80,
 };
+
+/*
+ * Duyệt từ cụm DÀI NHẤT xuống, vì "sáu mươi" là tiền tố của "sáu mươi sáu".
+ * Duyệt theo thứ tự khai báo thì "sáu mươi sáu chuyên đề" sẽ khớp nhầm
+ * thành 60 — một lỗi im lặng, vì bài kiểm vẫn chạy và vẫn cho ra một con
+ * số, chỉ là con số sai.
+ */
 const doChu = (s: string, sau: string): number | null => {
-  for (const [chu, so] of Object.entries(CHU_SO))
+  const theoDoDai = Object.entries(CHU_SO).sort((a, b) => b[0].length - a[0].length);
+  for (const [chu, so] of theoDoDai)
     if (new RegExp(`${chu} ${sau}`, 'i').test(s)) return so;
   return null;
 };

@@ -48,7 +48,7 @@ export function taoC(giuThuTu: Set<string>) {
     chuyenDeId: string, loaiMa: string, no: number, deBai: string,
     luaChon: [string, string, string, string], dapAn: number,
     giaiThich: string, nhanXet: [string, string, string, string],
-    diemKienThuc: string, bayNo?: number, kichBanId?: string,
+    diemKienThuc: string, bayNo?: number, kichBanId?: string, doanVanId?: string,
   ): CauHoi {
     const id = `q-${chuyenDeId.slice(2)}-${loaiMa}-${String(no).padStart(2, '0')}`;
     return {
@@ -56,6 +56,7 @@ export function taoC(giuThuTu: Set<string>) {
       ...xoay(id, no, luaChon, dapAn, nhanXet),
       ...(bayNo === undefined ? {} : {bayNo}),
       ...(kichBanId === undefined ? {} : {kichBanId}),
+      ...(doanVanId === undefined ? {} : {doanVanId}),
     };
   };
 }

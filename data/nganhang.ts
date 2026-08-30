@@ -5,6 +5,8 @@
 import {CauHoi} from '../types';
 import {taoC} from './xoay-dap-an';
 import {NGAN_HANG_NGHE} from './nganhang-nghe';
+import {NGAN_HANG_TUDUY} from './nganhang-tuduy';
+import {NGAN_HANG_DOCVIET} from './nganhang-docviet';
 import {DANG_BAI} from './phieu';
 import {GIAI_BY_DANG} from './giaide';
 
@@ -46,7 +48,9 @@ export const NGANHANG_CREED = {
   dayNhieu:
     'Dây nhiễu dựng theo đúng ba bẫy đã viết trong bộ giải đề. Chọn sai thì hệ thống biết học viên vừa rơi vào bẫy số mấy — thông tin đó dùng được, khác hẳn việc chỉ biết là chọn sai.',
   phamVi:
-    'Ngân hàng phủ sáu mươi chuyên đề. Hai mươi chuyên đề còn lại — toàn bộ nói, cộng đọc bài dài, viết tự do và một phần tư duy — cần một người chấm hoặc ngữ liệu có bản quyền, nên chúng dùng bộ giải đề và phiếu chuyên đề chứ chưa có câu trắc nghiệm.',
+    'Ngân hàng phủ bảy mươi chuyên đề. Mười chuyên đề còn lại là toàn bộ phần NÓI — chúng cần một người hoặc một máy chấm nghe được, nên chúng dùng bộ giải đề và phiếu chuyên đề chứ chưa có câu trắc nghiệm.',
+  vietDoDuocGiHan:
+    'Câu trắc nghiệm về VIẾT không đo được năng lực viết — không câu bốn lựa chọn nào thay được việc đặt bút viết rồi có người chấm. Nó đo một thứ hẹp hơn mà vẫn dùng được: khả năng NHẬN RA chỗ hỏng trong một đoạn cho sẵn, vốn là điều kiện cần để tự viết được.',
   loiCuVeNghe:
     'Bản trước ghi phần nghe thiếu vì "cần ngữ liệu âm thanh". Nửa lý do đó SAI: bốn giọng tiếng Anh của Piper đã nằm sẵn trong máy nhiều tháng, và giới hạn thanh điệu là của giọng tiếng Việt chứ không phải của cả khâu sinh âm. Mười chuyên đề nghe nay có kịch bản viết gốc ở data/nghe.ts và âm sinh bằng máy, nên lý do cũ không còn.',
 };
@@ -6360,6 +6364,8 @@ const M10: CauHoi[] = [
 
 export const NGAN_HANG: CauHoi[] = [
   ...NGAN_HANG_NGHE,
+  ...NGAN_HANG_TUDUY,
+  ...NGAN_HANG_DOCVIET,
   ...P01, ...P02, ...P03, ...P04, ...P05, ...P06, ...P07, ...P08, ...P09, ...P10, ...G07, ...G01, ...G03, ...G02, ...G06, ...G04, ...G05, ...G08, ...G09,
   ...V01, ...V02, ...V03, ...V04, ...V05, ...V06, ...V07, ...V08, ...V09, ...V10,
   ...R02, ...R03, ...R04, ...R05, ...R06, ...R07, ...R09, ...R10,

@@ -4,6 +4,7 @@
  */
 import React, {useMemo, useState} from 'react';
 import {KICH_BAN, GIONG, tepAm, soTu} from '../../data/nghe';
+import {DOAN_DOC, soTuDoan} from '../../data/docbai';
 import {
   DANG_BAI, LOAI_PHIEU, GIAI_BY_DANG,
   luuLuotNganHang, docLuotNganHang, phanTichNganHang, xoaLuotNganHang,
@@ -102,6 +103,39 @@ const LuaChon: React.FC<{
  * preload="none": ba mươi tệp âm cộng lại 3,7 MB. Nạp sẵn hết là bắt mọi
  * người trả giá cho thứ họ chưa bấm.
  */
+/*
+ * KHUNG ĐỌC ĐOẠN.
+ *
+ * Dựng gập lại bằng <details> chứ không bày sẵn. Lý do: một đoạn 500 từ
+ * lặp lại trên đầu bốn câu liên tiếp thì màn hình không còn đi lại được,
+ * và học viên phải cuộn qua cùng một đoạn bốn lần.
+ *
+ * Gập lại cũng đúng với cách làm bài thật: đọc đoạn một lượt, rồi trả lời
+ * và chỉ mở lại khi cần tra. Thẻ <details> là thẻ HTML có sẵn nên nó dùng
+ * được bằng bàn phím và trình đọc màn hình mà không cần thêm mã nào.
+ */
+const KhungDoc: React.FC<{doanVanId: string}> = ({doanVanId}) => {
+  const dd = DOAN_DOC.find((d) => d.id === doanVanId);
+  if (!dd) return null;
+  return (
+    <details className="mt-2.5 rounded-xl border border-violet-500/25 bg-violet-500/5">
+      <summary className="cursor-pointer list-none p-3 text-[11px] text-slate-400">
+        <span className="font-semibold text-violet-300">📖 {dd.ten}</span>
+        <span className="ml-3">{soTuDoan(dd.loi)} từ</span>
+        <span className="ml-3">đọc trong {dd.phutGoiY} phút</span>
+        <span className="ml-3 text-slate-500">— bấm để mở hoặc gập lại</span>
+      </summary>
+      <div className="max-h-96 overflow-y-auto border-t border-violet-500/20 px-4 py-3">
+        {dd.loi.split(/\n\n+/).map((doan, i) => (
+          <p key={i} className="mb-3 text-[13px] leading-relaxed text-slate-200 last:mb-0">
+            {doan}
+          </p>
+        ))}
+      </div>
+    </details>
+  );
+};
+
 const TrinhPhat: React.FC<{kichBanId: string}> = ({kichBanId}) => {
   const kb = KICH_BAN.find((k) => k.id === kichBanId);
   if (!kb) return null;
@@ -286,6 +320,7 @@ export const LamBai: React.FC = () => {
                 )}
               </div>
               {c.kichBanId && <TrinhPhat kichBanId={c.kichBanId} />}
+              {c.doanVanId && <KhungDoc doanVanId={c.doanVanId} />}
               <p className="mt-2.5 text-[14px] font-medium leading-relaxed text-slate-100">{c.deBai}</p>
               <LuaChon
                 cau={c}
