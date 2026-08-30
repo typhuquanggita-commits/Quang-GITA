@@ -71,6 +71,32 @@ describe('ngân hàng câu hỏi', () => {
     }
   });
 
+  it('mọi chuyên đề đều có đủ câu khó và câu phân loại cho mục tiêu điểm tuyệt đối', () => {
+    /*
+     * Nguoi nham 150 diem phai lam dung CA cau phan loai, nen ho can cho de
+     * luyen dung nhung cau do. Mot kho lech han ve phia de — nhu kho nay tung
+     * lech, chi 4 cau phan loai trong 572 — thi dung de dua nguoi hoc len muc
+     * 120, nhung khong the dua ai len 150: ho khong co gi de luyen o dung cho
+     * quyet dinh.
+     *
+     * Nguong: moi chuyen de it nhat 4 cau van dung cao va 2 cau phan loai.
+     */
+    for (const topic of TOPICS) {
+      const questions = questionsOfTopic(topic.id);
+      const hard = questions.filter((q) => q.difficulty >= 4).length;
+      const hardest = questions.filter((q) => q.difficulty === 5).length;
+      expect(hard, `${topic.id}: câu vận dụng cao`).toBeGreaterThanOrEqual(4);
+      expect(hardest, `${topic.id}: câu phân loại`).toBeGreaterThanOrEqual(2);
+    }
+  });
+
+  it('phân bố độ khó toàn kho không lệch quá xa phân bố của đề chuẩn', () => {
+    // De chuan co 24% cau o muc 4-5. Kho lech han ve phia de thi nguoi hoc
+    // luyen mai van khong gap dang cau quyet diem so.
+    const hard = ALL_QUESTIONS.filter((q) => q.difficulty >= 4).length;
+    expect(hard / ALL_QUESTIONS.length).toBeGreaterThanOrEqual(0.2);
+  });
+
   it('mọi ngữ liệu được tham chiếu đều tồn tại', () => {
     for (const question of ALL_QUESTIONS) {
       if (!question.passageId) continue;

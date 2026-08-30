@@ -22,6 +22,10 @@ import {
 import { englishQuestions2 } from './english-2';
 import { englishQuestions3 } from './english-3';
 import { BIOLOGY_QUESTIONS } from './biology';
+import { HARD_QUANTITATIVE } from './hard-quantitative';
+import { HARD_QUALITATIVE } from './hard-qualitative';
+import { HARD_SCIENCES } from './hard-sciences';
+import { HARD_ENGLISH } from './hard-english';
 
 export const ALL_QUESTIONS: readonly Question[] = [
   ...quantitativeQuestions,
@@ -44,6 +48,10 @@ export const ALL_QUESTIONS: readonly Question[] = [
   ...geographyQuestions3,
   ...geographyQuestions4,
   ...BIOLOGY_QUESTIONS,
+  ...HARD_QUANTITATIVE,
+  ...HARD_QUALITATIVE,
+  ...HARD_SCIENCES,
+  ...HARD_ENGLISH,
   ...englishQuestions,
   ...englishQuestions2,
   ...englishQuestions3,
