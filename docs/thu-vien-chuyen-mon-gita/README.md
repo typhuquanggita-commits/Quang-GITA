@@ -1,4 +1,7 @@
 # THƯ VIỆN CHUYÊN MÔN GITA
+
+> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 124 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
+
 ### Bộ công cụ tác nghiệp cho Tư vấn – Coach – Trainer – Giáo viên · Phiên bản 1.0
 
 ---
@@ -41,6 +44,9 @@
 | **13** | [`13-ngan-hang-cau-hoi.md`](13-ngan-hang-cau-hoi.md) | **Ngân hàng câu hỏi CC-01 → CC-14** · 30 câu × 3 bản tuổi · kịch bản phỏng vấn · quy trình đối chiếu 4 nguồn | Đánh giá |
 | **14** | [`14-the-hoat-dong-day-du.md`](14-the-hoat-dong-day-du.md) | **50 thẻ hoạt động** — lời dẫn mẫu, câu hỏi đúc kết, an toàn, quyền được dừng | Trainer dẫn buổi |
 | **15** | [`15-chuong-trinh-phu-huynh-90-ngay.md`](15-chuong-trinh-phu-huynh-90-ngay.md) | **13 tuần cho cha mẹ** — mỗi tuần một kỹ năng, một việc 10 phút, một điều cần bỏ | Coach dẫn gia đình |
+| **16** | `16-nen-tang-so-chi-tiet.md` | 🔧 **Đặc tả nền tảng số** — 7 nhóm chức năng · phân quyền · nguyên tắc dùng AI | ⏳ đang biên soạn |
+| **17** | [`17-bang-tra-cuu-220.md`](17-bang-tra-cuu-220.md) | 🔧 **Bảng tra cứu 220 phác đồ** — tra theo lời phụ huynh · theo nhóm · ngược từ năng lực | **Coach khi có ca** |
+| **18** | [`18-nguong-theo-dai-tuoi.md`](18-nguong-theo-dai-tuoi.md) | 🔧 **Ngưỡng theo 3 dải tuổi** — hệ số quy đổi · công cụ đo theo dải · quy trình hiệu chuẩn | **Coach khi nghiệm thu** |
 | **★** | [`phac-do/`](phac-do/README.md) | **220 phác đồ đầy đủ** — 11 tệp theo nhóm N01–N11, mỗi phác đồ 16 lớp | **Mọi ca cụ thể** |
 
 > **Hai lớp tài liệu.** Tài liệu **01–10** là **bản tóm tắt điều hành** — khung, nguyên lý, danh mục mã.

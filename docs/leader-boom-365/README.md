@@ -1,4 +1,7 @@
 # LEADER BOOM 365
+
+> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 124 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
+
 ### Chương trình huấn luyện lãnh đạo trẻ theo Mô thức GITA — vận hành trên Kiến trúc 5 tầng
 **Học viện GITA — 21/27 Vũ Ngọc Phan, Láng Hạ, Đống Đa, Hà Nội**
 

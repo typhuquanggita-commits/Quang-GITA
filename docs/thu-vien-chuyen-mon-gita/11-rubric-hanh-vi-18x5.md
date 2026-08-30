@@ -18,7 +18,8 @@ có thấy phù hợp. Dùng cùng `BM-08` (bảng chấm rubric) và `BM-12` (n
 > chưa hiệu chuẩn bằng dữ liệu thực của học viên Việt Nam 9–18 tuổi, và **chắc chắn lệch giữa nhóm
 > 9–12 và nhóm 15–18**. Dùng làm mốc quan sát, **không dùng làm chuẩn phân loại**. Luôn so học viên
 > với chính em ở lần chấm trước. Hiệu chuẩn lại sau mỗi chu kỳ có đủ dữ liệu `BM-08`.
-> Xem thêm [`phac-do/README.md`](phac-do/README.md) §2.
+> **Ngưỡng theo dải tuổi:** [`18-nguong-theo-dai-tuoi.md`](18-nguong-theo-dai-tuoi.md) — dải A 9–11 chỉ
+> chấm `L1`–`L3`, không áp `L4`–`L5`. Xem thêm [`phac-do/README.md`](phac-do/README.md) §2.
 
 ## 1. Cách dùng rubric
 

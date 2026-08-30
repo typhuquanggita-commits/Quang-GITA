@@ -75,7 +75,7 @@ Mọi ngưỡng số trong 220 phác đồ — *"khởi động > 12 phút"*, *"
 
 | Hạng mục | Trạng thái | Ưu tiên |
 |---|---|---|
-| Ngưỡng tách theo dải tuổi 9–12 và 13–18 | Mới tách ở một số phác đồ | **Cao** |
+| Ngưỡng tách theo dải tuổi | ✅ **Đã xử lý** — [`../18-nguong-theo-dai-tuoi.md`](../18-nguong-theo-dai-tuoi.md) nêu 3 dải A/B/C, hệ số quy đổi, và bảng 7 ngưỡng cốt lõi | Xong |
 | Phần T4/T5 của nhiều phác đồ | Còn gần giống nhau giữa các vấn đề, cần cá biệt hoá | Trung bình |
 | Đối chiếu chéo giữa các phác đồ có cơ chế liên quan | Chưa có bảng liên kết | Trung bình |
 | Ca minh hoạ thật đã ẩn danh cho mỗi phác đồ | Chưa có — cần dữ liệu từ khoá thật | Cao sau khoá đầu |
