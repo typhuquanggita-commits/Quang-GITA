@@ -100,3 +100,226 @@
 | 10 | Ôn lặp | Ngày 1 · 3 · 7 · 15 · 30 | Thông báo 1 lần/ngày | 3 |
 
 ---
+
+# CỤM 1 · `K01-N1-01` — **CON LÀ AI – VÀ CON ĐẶC BIỆT THẾ NÀO**
+### Khối 1 · Nhóm 1 Phát triển cá nhân · Chữ GITA trội: **I** · Bài gốc: #1 Em giới thiệu bản thân · #5 Tưởng tượng và sáng tạo
+
+## THÔNG TIN CHUNG
+
+| Mục | Nội dung |
+|---|---|
+| Mã cụm | `K01-N1-01` |
+| Mạch năng lực bên trong | M1 Tự chủ *(tự nhận thức)* · M5 Tư duy & sáng tạo *(tưởng tượng)* |
+| Cấp Độ · Pin | Cấp 1 ⚪ Pin Trắng → hướng tới Cấp 2 🟢 Pin Xanh Lá |
+| Tổng thời lượng online | **85 phút** + 7 ngày vận dụng |
+| Buổi trực tiếp đi kèm | 2 buổi × 180 phút |
+| Học liệu cần sản xuất | 1 video mở · 4 video kiến thức · 1 infographic · 1 trò tương tác · 1 phiếu 5 lớp · 5 thẻ · 1 audio 13' · 10 câu trắc nghiệm |
+| Nhân vật dẫn | **Rối tay Mít** *(rối vải, không dùng người thật)* |
+
+**HAI VẠCH CHUẨN** *(công bố ở P1, đo lại ở P6)*
+- **ĐẠT:** Con nói được **4 câu về mình** *(tên – lớp – con thích – con làm được)* với **1 người** con chưa quen, có nhìn vào mắt.
+- **XUẤT SẮC:** Con nói được **6 câu** trước **nhóm từ 5 người**, thêm **1 điều đặc biệt con tự nghĩ ra**, và **hỏi lại tên bạn**.
+
+---
+
+## 📘 PHẦN 1 — KIẾN THỨC `P1-KT` · 13 phút · Pha **G**
+
+### 1.1. Video mở — 80 giây *(lời thoại thật)*
+
+> **[Rối Mít bước ra, ôm một chiếc hộp]**
+> **MÍT:** *"Chào con! Mình là Mít."*
+> *"Mình có một chiếc hộp. Trong hộp có một điều rất lạ."*
+> **[Mở hộp — bên trong là một tấm gương]**
+> **MÍT:** *"Là con đó! Con nhìn thấy chưa?"*
+> *"Trên đời này có rất nhiều bạn nhỏ."*
+> *"Nhưng không có ai giống hệt con."*
+> *"Không một ai. Thật đấy."*
+> *"Tuần này mình sẽ tìm ra: con là ai."*
+> **[Hiện 2 vạch chuẩn bằng hình]**
+> **MÍT:** *"Đích ĐẠT: con nói được 4 câu về mình."*
+> *"Đích XUẤT SẮC: con nói 6 câu, cho 5 người nghe."*
+> *"Bây giờ con vẽ Thẻ Đích nhé."*
+> *"Vẽ điều cuối tuần con làm được, mà nay chưa làm được."*
+
+**Sản phẩm trẻ nộp:** **Thẻ Đích** — trẻ **vẽ** *(không cần viết)* rồi bấm nút loa **nói 1 câu** vào máy: *"Cuối tuần con sẽ …"*
+
+### 1.2. Bốn video kiến thức *(mỗi video một khái niệm duy nhất)*
+
+| # | Tiêu đề video | Khái niệm duy nhất | Hình ảnh chính | Quiz cuối video *(không tính điểm)* |
+|:--:|---|---|---|---|
+| 1 | **Ai cũng có một cái tên** (3') | Tên là thứ đầu tiên nói cho người khác biết con là ai | Rối Mít gọi tên 6 bạn thú bông, mỗi bạn quay lại | *Khi cô gọi tên con, con làm gì? (Dạ / Im lặng / Chạy đi)* |
+| 2 | **Con thích gì – con làm được gì** (4') | *Thích* và *làm được* là hai điều khác nhau | Hai cái giỏ: giỏ ❤️ THÍCH, giỏ 💪 LÀM ĐƯỢC | *"Con thích vẽ" bỏ vào giỏ nào?* |
+| 3 | **Đặc biệt là KHÁC, không phải HƠN** (4') | Đặc biệt nghĩa là không ai giống mình, không có nghĩa là giỏi nhất | 5 chiếc lá cây khác hình, đặt cạnh nhau | *Bạn Bo chạy chậm nhưng hát rất hay. Bo có đặc biệt không?* |
+| 4 | **Trong đầu con có một cái kho** (3') | Tưởng tượng là nghĩ ra điều chưa có ai thấy | Hộp bút biến thành con tàu, thành cây cầu | *Con nghĩ ra được cái gì từ một cái thìa?* |
+
+### 1.3. Bảng khái niệm cốt lõi
+
+| Từ | Nói cho con hiểu *(≤ 20 từ)* | Ví dụ ĐÚNG | Ví dụ SAI *(dễ nhầm)* |
+|---|---|---|---|
+| **Giới thiệu bản thân** | Nói cho người khác biết con là ai | *"Con tên Na. Con học lớp 1A."* | Đứng im, để mẹ nói thay con |
+| **Sở thích** | Việc con làm mà con thấy vui | *"Con thích tưới cây."* | *"Mẹ con thích tưới cây."* |
+| **Việc con làm được** | Việc con tự làm xong, không cần ai giúp | *"Con tự buộc dây giày."* | *"Con muốn tự buộc dây giày."* |
+| **Điều đặc biệt** | Điều ở con mà bạn khác không giống | *"Con nhớ tên tất cả các bạn."* | *"Con giỏi nhất lớp."* |
+| **Tưởng tượng** | Nghĩ ra điều chưa ai nhìn thấy | *"Con nghĩ cái thìa là mái chèo."* | Chép lại đúng hình trong sách |
+
+### 1.4. Infographic 1 trang — **"BÔNG HOA CON LÀ AI"**
+
+```
+                        ┌──────────────┐
+                        │  TÊN CỦA CON │
+                        └──────┬───────┘
+              ┌────────────────┼────────────────┐
+       ┌──────┴─────┐   ┌──────┴─────┐   ┌──────┴─────┐
+       │ ❤️  CON    │   │ 💪 CON LÀM │   │ ⭐ ĐIỀU   │
+       │    THÍCH   │   │    ĐƯỢC    │   │   ĐẶC BIỆT │
+       └────────────┘   └────────────┘   └────────────┘
+              └────────────────┼────────────────┘
+                        ┌──────┴───────┐
+                        │ 🌈 CON MƠ    │
+                        │    LỚN LÊN...│
+                        └──────────────┘
+```
+
+**Mô tả bản in:** khổ A4 dọc, một **bông hoa 5 cánh** in nét to để trẻ tô màu. Nhuỵ hoa là ô dán ảnh **tranh trẻ tự vẽ chân dung mình** *(không dán ảnh chụp)*. Mỗi cánh một ô: TÊN · CON THÍCH · CON LÀM ĐƯỢC · ĐIỀU ĐẶC BIỆT · CON MƠ. Góc dưới in **thanh an toàn 🆘 111**. Bản đen trắng dùng được, mọi ô đều có biểu tượng để trẻ chưa đọc chữ vẫn hiểu.
+
+### 1.5. "Thế nào là làm đúng" — rubric công bố trước
+
+| Tiêu chí | ĐẠT | XUẤT SẮC |
+|---|---|---|
+| Số câu nói về mình | 4 câu | 6 câu, có 1 câu tự nghĩ |
+| Nhìn vào mắt người nghe | ≥ 2 lần | Nhìn suốt lúc nói |
+| Giọng nói | Người đứng cạnh nghe rõ | Cả nhóm 5 người nghe rõ |
+| Nói với ai | 1 người chưa quen | Nhóm ≥ 5 người |
+| Hỏi lại | Chưa cần | Hỏi được tên bạn và nhớ tên |
+
+> ⚠️ **Kiểm tra:** Sau P1, con **chưa** được dạy cách xếp 4 câu theo thứ tự nào — phần đó nằm ở **P3**. P1 chỉ dừng ở *biết là gì* và *thế nào là tốt*.
+
+---
+
+## 🌊 PHẦN 2 — TRẢI NGHIỆM `P2-TN` · 18 phút · Pha **I**
+
+### Hình thức: **Trò tương tác — "TÚI THẦN KỲ CỦA BẠN MÍT"**
+☑ Mô phỏng tương tác ☑ Câu chuyện có nhánh
+
+**Bối cảnh *(2 phút)*:** Rối Mít mở một chiếc túi vải. *"Trong túi có 12 tấm thẻ. Con chọn 5 thẻ là của con."*
+
+**LUẬT CHƠI**
+1. Màn hình hiện **12 thẻ hình** *(hình vẽ, có nút loa đọc to)*.
+2. Con chọn đúng **5 thẻ**. Chọn thẻ thứ 6 thì một thẻ cũ rơi ra — con phải bỏ bớt.
+3. Mỗi thẻ chọn xong, Mít hỏi lại **một câu**: *"Vì sao thẻ này là của con?"* → con **nói vào máy** *(ghi âm, không cần viết)*.
+4. Không có đáp án đúng — hệ thống **không chấm điểm** vòng này.
+
+**DỮ LIỆU — 12 THẺ**
+
+| Thẻ | Hình | Nhóm |
+|:--:|---|---|
+| 1 | Bút màu | ❤️ Thích |
+| 2 | Quả bóng | ❤️ Thích |
+| 3 | Con mèo | ❤️ Thích |
+| 4 | Cái micro *(hát)* | ❤️ Thích |
+| 5 | Dây giày đã buộc | 💪 Làm được |
+| 6 | Cái chổi | 💪 Làm được |
+| 7 | Cốc nước rót đầy | 💪 Làm được |
+| 8 | Cặp sách tự xếp | 💪 Làm được |
+| 9 | Chiếc lá khác hình các lá kia | ⭐ Đặc biệt |
+| 10 | Đôi tai to *(nghe giỏi)* | ⭐ Đặc biệt |
+| 11 | Con tàu vẽ từ hộp bút | 🌈 Tưởng tượng |
+| 12 | Ngôi sao trống *(con tự vẽ)* | 🌈 Tưởng tượng |
+
+**ĐIỂM DỪNG 1 — phút 6:** Màn hình dừng. Mít nói: *"Bạn Bo cũng chọn 5 thẻ giống hệt con."* → **Con thấy thế nào?**
+
+| Chọn | Hệ quả hệ thống cho xem |
+|:--:|---|
+| **A.** Con buồn, vì con không còn đặc biệt | Mít bật lại **giọng ghi âm của con** ở câu *"vì sao thẻ này là của con"*, rồi bật giọng bạn Bo. **Hai lý do khác nhau hoàn toàn.** Mít: *"Thẻ giống nhau. Nhưng lý do khác nhau. Con vẫn đặc biệt."* |
+| **B.** Con vui, vì con có bạn giống mình | Mít: *"Đúng rồi! Giống nhau thì dễ chơi cùng."* Rồi vẫn bật hai đoạn ghi âm để con nghe sự khác nhau |
+| **C.** Con muốn đổi thẻ khác cho khác Bo | Mít cho đổi. Sau khi đổi, Mít hỏi: *"Thẻ mới này có thật là của con không?"* → nếu con nói *không*, Mít trả thẻ cũ về và nói: *"Con không cần đổi mình để khác bạn."* |
+
+**ĐIỂM DỪNG 2 — phút 11:** Trong sân trường, bạn Bo cười: *"Con trai gì mà thích nhảy dây!"* → **Con làm gì?**
+
+| Chọn | Hệ quả |
+|:--:|---|
+| **A.** Con giấu thẻ nhảy dây đi | Cánh hoa đó **mờ đi**. Mít: *"Cánh hoa này của con mà. Giấu đi thì hoa thiếu một cánh."* |
+| **B.** Con cười lại bạn Bo | Bo im, đi chỗ khác. Mít: *"Bây giờ hai bạn cùng buồn."* |
+| **C.** Con nói: *"Tớ thích nhảy dây. Cậu thích gì?"* | Bo trả lời: *"Tớ thích xếp hình."* → hai bông hoa hiện lên cạnh nhau, **khác cánh nhưng cùng đẹp**. Mở khoá thẻ thưởng ⭐ *"Người hỏi lại"* |
+
+**KẾT CỤC — phút 15:** Năm thẻ của con **ghép lại thành Bông Hoa Con Là Ai**, hiện tên con ở giữa. Mít: *"Đây là con. Không ai có bông hoa giống thế này."*
+
+> **Khoảnh khắc "à há" của cụm:** *Thẻ giống nhau — lý do khác nhau.* Đặc biệt không nằm ở việc con chọn gì, mà nằm ở **vì sao con chọn**.
+
+### Bóc tách 4 lớp *(ô nhập bắt buộc — trẻ nói vào máy hoặc vẽ)*
+
+1. **Ghi nhận:** Con đã chọn 5 thẻ nào?
+2. **Phản ứng:** Lúc bạn Bo cười, con thấy trong người thế nào?
+3. **Suy xét:** Vì sao thẻ giống nhau mà hai bạn vẫn khác nhau?
+4. **Tái áp:** Ở lớp, lúc nào con thấy mình khác các bạn?
+
+### Chạm nội lực *(Lửa 3)*
+
+> Mít hỏi: *"Nếu con biến mất một ngày, ai sẽ thấy nhớ con? Vì sao?"*
+
+**Nộp:** **1 dòng Nhật ký Bằng Chứng** — trẻ nói: *"Hôm nay con biết con …"*
+
+---
+
+## ⚒️ PHẦN 3 — NHIỆM VỤ THỰC HÀNH `P3-TH` · 25 phút · Pha **T**
+
+### 3.1. Nhiệm vụ: **"BỐN CÂU CỦA CON"**
+
+**Quy trình 3 bước dạy ở đây *(không dạy ở P1)*:**
+
+```
+   ①  CHÀO      →   ②  BỐN CÂU        →   ③  HỎI LẠI
+   "Chào cô ạ."     1. Con tên …          "Còn bạn tên gì?"
+                    2. Con học lớp …
+                    3. Con thích …
+                    4. Con làm được …
+```
+
+**Việc con làm:**
+1. Tô màu và điền **Bông Hoa Con Là Ai** *(bản in A4)*.
+2. Tập nói **4 câu** với **rối/gấu bông** ở nhà — **lượt 1**.
+3. Nói với **bố hoặc mẹ** — **lượt 2**.
+4. Nói với **1 người con chưa quen** *(cô hàng xóm, cô giáo lớp khác, ông bà bạn)* — **lượt 3**.
+5. *(Xuất sắc)* Nói trước **nhóm ≥ 5 người** — **lượt 4**.
+
+### 3.2. Vi kỹ năng & ngưỡng
+
+| Vi kỹ năng | Cách đo | ĐẠT | XUẤT SẮC |
+|---|---|:--:|:--:|
+| ① Nói đủ câu | Số câu nói được /6 | ≥ 4 | 6 |
+| ② Nhìn vào mắt | Số lần nhìn trong 1 lượt | ≥ 2 | Nhìn suốt |
+| ③ Giọng nghe rõ | Người nghe giơ ngón cái /3 người | ≥ 2 | 3 |
+| ④ Hỏi lại tên bạn | Có / Không | Chưa cần | Có, và nhớ tên |
+| ⑤ Điều đặc biệt tự nghĩ | Số điều tự nghĩ | 0 | ≥ 1 |
+
+### 3.3. Bảng luyện 4 lượt *(ô số liệu bắt buộc)*
+
+| Lượt | Nói với ai | Số câu /6 | Nhìn mắt *(lần)* | Tự chấm 😟😐🙂😃 | Một điều con chỉnh | Bậc |
+|:--:|---|:--:|:--:|:--:|---|:--:|
+| 1 | Gấu bông / rối | | | | | B1 |
+| 2 | Bố hoặc mẹ | | | | | B2 |
+| 3 | Người chưa quen | | | | | B3 |
+| 4 | Nhóm ≥ 5 người | | | | | B4 |
+
+### 3.4. Tiêu chí hoàn thành *(con nhìn vào đây để biết mình xong chưa)*
+
+- ☑ Bông Hoa đã tô đủ **5 cánh**, mỗi cánh có hình hoặc chữ
+- ☑ Bảng luyện có **≥ 3 lượt** đã điền số
+- ☑ Có **1 bản ghi âm 30 giây** nói 4 câu
+- ☑ Có **1 người lớn** bấm nút xác nhận *"Con đã nói với tôi"*
+- ☑ Con nói được **1 điều con sẽ chỉnh ở lượt sau**
+
+### 3.5. Cách nộp
+
+| Nộp gì | Nộp thế nào | Ghi chú an toàn |
+|---|---|---|
+| Bông Hoa Con Là Ai | **Chụp ảnh tờ giấy** *(chỉ chụp tờ giấy, không chụp mặt con)* | Mặc định riêng tư |
+| 4 câu của con | **Ghi âm 30 giây** trong ứng dụng | Chỉ HLV và phụ huynh nghe |
+| Bảng luyện | Bấm chọn số trên màn hình | Tự vẽ đường tiến bộ |
+| Xác nhận người lớn | Bố/mẹ bấm nút trong tài khoản phụ huynh | Có dấu thời gian |
+
+> ⛔ **Bài đã nộp không sửa được.** Muốn tốt hơn thì nộp **lượt mới** — hệ thống giữ cả hai để con nhìn thấy mình tiến bộ.
+
+### 3.6. Chấm chéo đồng đẳng *(trong Squad 4 bạn)*
+
+Bạn cùng Squad nghe ghi âm rồi bấm **1 trong 3 mặt cười** cho câu hỏi: *"Bạn nói to và rõ chưa?"* và nói **1 điều bạn thích** ở phần giới thiệu đó. **Không được chê, chỉ được nói 1 điều thích và 1 điều mong bạn thử.**
