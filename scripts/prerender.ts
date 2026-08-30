@@ -14,7 +14,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { allIndexablePaths, matchRoute, topicIdFromSlug, paperIdFromSlug, href, topicSlug, paperSlug } from '../src/lib/routes';
+import { allIndexablePaths, appShellPaths, matchRoute, topicIdFromSlug, paperIdFromSlug, href, topicSlug, paperSlug } from '../src/lib/routes';
 import { seoFor, SITE, organizationLd, websiteLd } from '../src/lib/seo';
 import { faqFor } from '../src/data/faq';
 import { TOPICS, topicById } from '../src/data/topics';
@@ -489,6 +489,17 @@ for (const t of targets) {
   written++;
 }
 
+/* Khung tối thiểu cho các trang phụ thuộc dữ liệu cá nhân. */
+let shells = 0;
+for (const t of appShellPaths()) {
+  const { id, params } = matchRoute(t.path);
+  const html = shell(id, params);
+  const dir = path.join(DIST, t.path);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'index.html'), html, 'utf8');
+  shells++;
+}
+
 /* Sơ đồ trang */
 const urls = targets
   .map(
@@ -550,6 +561,6 @@ fs.writeFileSync(
   'utf8',
 );
 
-console.log(`dựng sẵn: ${written} trang HTML tĩnh`);
+console.log(`dựng sẵn: ${written} trang HTML tĩnh + ${shells} khung ứng dụng`);
 console.log(`sơ đồ trang: ${targets.length} địa chỉ`);
 console.log('đã ghi: sitemap.xml, robots.txt, og-image.svg');

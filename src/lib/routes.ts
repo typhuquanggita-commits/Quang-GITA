@@ -227,6 +227,18 @@ export function legacyRedirect(oldPath: string): string | null {
   }
 }
 
+/**
+ * Đường dẫn của các trang không lập chỉ mục nhưng vẫn cần một tệp HTML riêng.
+ *
+ * Những trang này phụ thuộc dữ liệu cá nhân nên không có nội dung để lập chỉ
+ * mục, nhưng nếu không có tệp thì việc mở thẳng đường dẫn sẽ phụ thuộc hoàn
+ * toàn vào quy tắc dự phòng của máy chủ. Dựng sẵn một khung tối thiểu có thẻ
+ * “không lập chỉ mục” khiến ứng dụng mở được ngay cả trên máy chủ tĩnh trần.
+ */
+export function appShellPaths(): { path: string; page: PageDef }[] {
+  return PAGES.filter((p) => !p.indexable && !p.path.includes(':')).map((p) => ({ path: p.path, page: p }));
+}
+
 /** Mọi đường dẫn tĩnh cần dựng sẵn khi build. */
 export function allIndexablePaths(): { path: string; page: PageDef; label: string }[] {
   const out: { path: string; page: PageDef; label: string }[] = [];
