@@ -2679,6 +2679,858 @@ export const LESSONS: readonly Lesson[] = [
       fix: 'Từ bước 3: nhận ra cụm "quần thể có kích thước nhỏ" là dấu hiệu của các yếu tố ngẫu nhiên. Quần thể càng nhỏ thì sai lệch ngẫu nhiên giữa các thế hệ càng lớn, nên một alen dễ biến mất hoặc trở nên phổ biến mà không phụ thuộc giá trị thích nghi của nó.',
     },
   },
+  /* ══ KHOA HỌC — LỊCH SỬ ════════════════════════════════════════════ */
+  {
+    topicId: 'science.history.vietnam',
+    section: 'science',
+    minutes: 40,
+    hook: 'Lịch sử Việt Nam chiếm khoảng 10 câu trong 16–17 câu của chủ đề Lịch sử. Đề hiện nay hiếm khi hỏi thuộc lòng ngày tháng; câu hỏi thường là "vì sao", "ý nghĩa lớn nhất là gì" — nên học theo chuỗi nhân quả hiệu quả hơn học theo mốc rời rạc.',
+    build: [
+      {
+        idea: 'Mỗi sự kiện lớn nằm trong một chuỗi: bối cảnh dẫn tới nó, và nó dẫn tới hệ quả gì.',
+        explain:
+          'Nhớ ba mắt xích liền nhau nhẹ hơn nhớ ba mốc rời, vì mỗi mắt xích gợi ra mắt xích kế tiếp. Câu hỏi "vì sao" và "ý nghĩa" đều là hỏi về hai đầu của chuỗi.',
+        check: 'Bối cảnh trực tiếp dẫn tới Cách mạng tháng Tám 1945 là gì?',
+        checkAnswer: 'Nhật đầu hàng Đồng minh tạo ra khoảng trống quyền lực ở Đông Dương.',
+      },
+      {
+        idea: 'Câu hỏi "ý nghĩa lớn nhất" luôn chọn hệ quả có tầm ảnh hưởng rộng và lâu dài nhất.',
+        explain:
+          'Bốn phương án thường đều là hệ quả có thật, khác nhau ở tầm vóc. Hệ quả làm thay đổi cục diện hoặc mở ra một giai đoạn mới luôn thắng hệ quả cục bộ.',
+        check: 'Giữa "tiêu diệt sinh lực địch" và "buộc địch ký hiệp định", đâu là ý nghĩa lớn hơn?',
+        checkAnswer: 'Buộc địch ký hiệp định — làm thay đổi cục diện chiến tranh.',
+      },
+      {
+        idea: 'Mốc thời gian nên nhớ theo cụm giai đoạn, không nhớ rời từng năm.',
+        explain:
+          '1930 thành lập Đảng, 1945 giành chính quyền, 1954 kết thúc chống Pháp, 1975 thống nhất đất nước, 1986 đổi mới. Năm mốc này là khung để treo mọi sự kiện khác vào.',
+        check: 'Chiến thắng Điện Biên Phủ thuộc giai đoạn nào?',
+        checkAnswer: 'Giai đoạn kháng chiến chống Pháp, kết thúc năm 1954.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.his.meaning',
+        patternId: 'his.meaning',
+        title: 'Chọn ý nghĩa lớn nhất trong bốn hệ quả đều đúng',
+        problem:
+          'Chiến thắng Điện Biên Phủ năm 1954 có nhiều ý nghĩa. Trong các ý nghĩa sau, đâu là ý nghĩa lớn nhất: (A) tiêu diệt được tập đoàn cứ điểm mạnh nhất của Pháp; (B) buộc Pháp ký Hiệp định Giơnevơ, chấm dứt chiến tranh xâm lược Đông Dương; (C) nâng cao uy tín quân đội ta; (D) giải phóng vùng Tây Bắc?',
+        steps: [
+          {
+            do: 'Kiểm tra xem các phương án có phương án nào sai sự thật không.',
+            why: 'Ở dạng câu này thường cả bốn đều đúng, nên không loại được bằng tính đúng sai; phải chuyển sang so tầm vóc.',
+            result: 'Cả bốn đều là hệ quả có thật của chiến thắng',
+          },
+          {
+            do: 'Xếp bốn hệ quả theo phạm vi ảnh hưởng.',
+            why: 'Ý nghĩa lớn nhất là ý nghĩa có phạm vi rộng nhất và tác động lâu dài nhất.',
+            result: 'A và D là quân sự, cục bộ · C là tinh thần · B là chính trị, tầm quốc tế',
+          },
+          {
+            do: 'Kiểm tra hệ quả nào mở ra một giai đoạn mới của lịch sử.',
+            why: 'Sự kiện chấm dứt một giai đoạn và mở ra giai đoạn khác luôn có tầm vóc lớn nhất.',
+            result: 'Hiệp định Giơnevơ kết thúc chín năm kháng chiến chống Pháp',
+          },
+        ],
+        answer: 'Phương án B — buộc Pháp ký Hiệp định Giơnevơ, chấm dứt chiến tranh xâm lược Đông Dương.',
+        takeaway:
+          'Với câu "ý nghĩa lớn nhất", đừng tìm phương án đúng vì cả bốn thường đều đúng. Tìm phương án có phạm vi rộng nhất, và ưu tiên phương án mở ra một giai đoạn mới.',
+      },
+      {
+        id: 'ex.his.cause',
+        patternId: 'his.cause',
+        title: 'Phân biệt nguyên nhân trực tiếp với nguyên nhân sâu xa',
+        problem:
+          'Hãy phân biệt nguyên nhân sâu xa và nguyên nhân trực tiếp dẫn tới thắng lợi của Cách mạng tháng Tám năm 1945.',
+        steps: [
+          {
+            do: 'Tách hai loại nguyên nhân bằng tiêu chí thời gian và tính tất yếu.',
+            why: 'Nguyên nhân sâu xa tích lũy lâu dài và mang tính quyết định; nguyên nhân trực tiếp là sự kiện châm ngòi ngay trước đó.',
+            result: 'Sâu xa nằm ở quá trình chuẩn bị; trực tiếp nằm ở thời điểm bùng nổ',
+          },
+          {
+            do: 'Chỉ ra quá trình tích lũy lâu dài.',
+            why: 'Không có quá trình chuẩn bị thì thời cơ đến cũng không có lực lượng để nắm lấy.',
+            result:
+              'Mười lăm năm Đảng lãnh đạo, ba cuộc tập dượt 1930–1931, 1936–1939, 1939–1945; lực lượng chính trị và vũ trang đã sẵn sàng',
+          },
+          {
+            do: 'Chỉ ra sự kiện tạo ra thời cơ.',
+            why: 'Nguyên nhân trực tiếp là điều kiện khách quan xuất hiện đúng lúc lực lượng đã chuẩn bị xong.',
+            result: 'Nhật đầu hàng Đồng minh tháng 8-1945, quân Nhật ở Đông Dương hoang mang, quân Đồng minh chưa vào',
+          },
+          {
+            do: 'Nêu quan hệ giữa hai loại nguyên nhân.',
+            why: 'Câu hỏi dạng này chấm cả phần liên hệ, không chỉ chấm phần liệt kê.',
+            result: 'Chuẩn bị lâu dài là điều kiện đủ; thời cơ khách quan là điều kiện cần',
+          },
+        ],
+        answer:
+          'Nguyên nhân sâu xa là quá trình chuẩn bị lực lượng suốt mười lăm năm dưới sự lãnh đạo của Đảng; nguyên nhân trực tiếp là việc Nhật đầu hàng Đồng minh tạo ra thời cơ ngàn năm có một. Thiếu một trong hai thì cách mạng không thể thắng lợi nhanh và ít đổ máu như vậy.',
+        takeaway:
+          'Mọi câu hỏi nguyên nhân đều tách được theo trục thời gian: cái tích lũy lâu dài và cái châm ngòi tức thì. Chỉ nêu một trong hai là mất một nửa số điểm.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Câu hỏi: "Nguyên nhân quyết định thắng lợi của Cách mạng tháng Tám năm 1945 là gì?" Một học sinh trả lời như sau.',
+      attempt: [
+        'Tháng 8-1945 Nhật đầu hàng Đồng minh.',
+        'Đây là sự kiện xảy ra ngay trước cách mạng nên nó là nguyên nhân quan trọng nhất.',
+        'Vậy nguyên nhân quyết định là việc Nhật đầu hàng Đồng minh.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 lấy tiêu chí "xảy ra gần nhất về thời gian" làm tiêu chí "quan trọng nhất". Nhật đầu hàng là nguyên nhân KHÁCH QUAN tạo ra thời cơ, nhưng thời cơ chỉ có giá trị khi có lực lượng sẵn sàng nắm lấy — nhiều nước Đông Nam Á cùng gặp khoảng trống quyền lực đó mà không giành được chính quyền. Nguyên nhân quyết định phải là nhân tố CHỦ QUAN: sự lãnh đạo của Đảng và quá trình chuẩn bị lực lượng suốt mười lăm năm.',
+      fix: 'Từ bước 2: phân biệt nguyên nhân khách quan với nguyên nhân chủ quan, và nhớ rằng câu hỏi "quyết định" luôn nhắm tới nhân tố chủ quan. Đáp án đúng là sự lãnh đạo đúng đắn của Đảng cùng quá trình chuẩn bị lực lượng lâu dài.',
+    },
+  },
+  {
+    topicId: 'science.history.world',
+    section: 'science',
+    minutes: 35,
+    hook: 'Lịch sử thế giới chiếm khoảng 6–7 câu của chủ đề Lịch sử. Phần này ít đòi hỏi chi tiết hơn lịch sử Việt Nam nhưng đòi hỏi nhìn ra XU THẾ — câu hỏi thường về trật tự thế giới, xu hướng toàn cầu hóa và quan hệ giữa các cường quốc.',
+    build: [
+      {
+        idea: 'Trật tự thế giới sau 1945 chia làm hai giai đoạn rõ rệt, lấy mốc 1991.',
+        explain:
+          'Trước 1991 là trật tự hai cực Ianta với Mỹ và Liên Xô đối đầu; sau 1991 là trật tự đa cực đang hình thành. Định vị được sự kiện thuộc giai đoạn nào là hiểu được bối cảnh của nó.',
+        check: 'Chiến tranh lạnh kết thúc năm nào và bằng sự kiện gì?',
+        checkAnswer: 'Năm 1989 hai bên tuyên bố chấm dứt; Liên Xô tan rã năm 1991 chấm dứt trật tự hai cực.',
+      },
+      {
+        idea: 'Cách mạng khoa học công nghệ là động lực nằm sau hầu hết biến chuyển kinh tế thế giới.',
+        explain:
+          'Nó tạo ra toàn cầu hóa, làm thay đổi cơ cấu kinh tế các nước và làm xuất hiện các trung tâm kinh tế mới. Nhiều câu hỏi về nguyên nhân sâu xa quy về nhân tố này.',
+        check: 'Xu thế toàn cầu hóa bắt nguồn từ đâu?',
+        checkAnswer: 'Từ cuộc cách mạng khoa học công nghệ, đặc biệt là công nghệ thông tin.',
+      },
+      {
+        idea: 'Các tổ chức khu vực ra đời đều nhằm giải quyết một vấn đề chung cụ thể.',
+        explain:
+          'ASEAN ra đời để giữ hòa bình và hợp tác khu vực; EU để liên kết kinh tế rồi tiến tới chính trị. Nhớ mục đích thành lập là suy ra được vai trò và hoạt động.',
+        check: 'ASEAN thành lập năm nào và với mục tiêu ban đầu là gì?',
+        checkAnswer: 'Năm 1967, nhằm hợp tác phát triển kinh tế và giữ ổn định khu vực.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.wor.order',
+        patternId: 'wor.order',
+        title: 'Đọc sự kiện theo trật tự thế giới đương thời',
+        problem:
+          'Vì sao sau năm 1991, quan hệ quốc tế chuyển từ đối đầu sang đối thoại và hợp tác? Hãy nêu các nguyên nhân chính.',
+        steps: [
+          {
+            do: 'Định vị mốc 1991 trong sơ đồ trật tự thế giới.',
+            why: 'Mọi giải thích về giai đoạn này đều bắt đầu từ việc trật tự hai cực chấm dứt.',
+            result: 'Liên Xô tan rã ⟹ trật tự hai cực Ianta sụp đổ',
+          },
+          {
+            do: 'Chỉ ra hệ quả trực tiếp lên quan hệ giữa các nước lớn.',
+            why: 'Không còn hai cực đối đầu thì cơ sở của Chiến tranh lạnh cũng không còn.',
+            result: 'Không còn hai khối đối lập về ý thức hệ và quân sự',
+          },
+          {
+            do: 'Chỉ ra động lực mới đẩy các nước xích lại.',
+            why: 'Sự thay đổi không chỉ do mất đi cái cũ mà còn do xuất hiện lợi ích chung mới.',
+            result:
+              'Kinh tế trở thành trọng tâm sức mạnh quốc gia; toàn cầu hóa làm các nền kinh tế phụ thuộc nhau',
+          },
+          {
+            do: 'Bổ sung các vấn đề toàn cầu buộc phải hợp tác.',
+            why: 'Đây là nhóm nguyên nhân thường bị bỏ sót nhưng luôn có trong đáp án đầy đủ.',
+            result: 'Khủng bố, dịch bệnh, biến đổi khí hậu — không nước nào giải quyết một mình được',
+          },
+        ],
+        answer:
+          'Vì trật tự hai cực sụp đổ nên cơ sở của đối đầu ý thức hệ không còn; đồng thời kinh tế trở thành trọng tâm cạnh tranh, toàn cầu hóa làm các nền kinh tế phụ thuộc lẫn nhau, và các vấn đề toàn cầu buộc các nước phải hợp tác.',
+        takeaway:
+          'Câu hỏi về xu thế quốc tế luôn có ba lớp nguyên nhân: cái cũ mất đi, cái mới xuất hiện, và sức ép chung buộc phải hợp tác. Nêu đủ ba lớp là câu trả lời trọn vẹn.',
+      },
+      {
+        id: 'ex.wor.trend',
+        patternId: 'wor.trend',
+        title: 'Nhận diện tác động hai mặt của một xu thế',
+        problem:
+          'Toàn cầu hóa tác động thế nào tới các nước đang phát triển? Hãy nêu cả cơ hội và thách thức.',
+        steps: [
+          {
+            do: 'Nhận ra câu hỏi yêu cầu cả hai mặt, không chỉ một mặt.',
+            why: 'Đề dùng chữ "tác động" chứ không dùng "lợi ích", nên trả lời một chiều là mất nửa số điểm.',
+            result: 'Phải nêu cả cơ hội lẫn thách thức',
+          },
+          {
+            do: 'Liệt kê cơ hội theo các nguồn lực mà toàn cầu hóa mang lại.',
+            why: 'Cơ hội của nước đang phát triển chủ yếu nằm ở việc tiếp cận được thứ trước đây không có.',
+            result: 'Tiếp cận vốn, công nghệ, thị trường; rút ngắn khoảng cách phát triển',
+          },
+          {
+            do: 'Liệt kê thách thức theo các rủi ro mà sự mở cửa tạo ra.',
+            why: 'Mở cửa vừa mang cơ hội vào vừa mang cạnh tranh và biến động vào cùng lúc.',
+            result:
+              'Cạnh tranh gay gắt, nguy cơ tụt hậu, phụ thuộc kinh tế bên ngoài, nguy cơ mai một bản sắc văn hóa',
+          },
+          {
+            do: 'Nêu kết luận về thái độ ứng xử.',
+            why: 'Câu hỏi dạng này thường chấm thêm phần nhận định, không dừng ở liệt kê.',
+            result: 'Toàn cầu hóa là xu thế khách quan; vấn đề là chủ động hội nhập chứ không phải chấp nhận hay từ chối',
+          },
+        ],
+        answer:
+          'Toàn cầu hóa mở ra cơ hội tiếp cận vốn, công nghệ và thị trường để rút ngắn khoảng cách phát triển; đồng thời đặt ra thách thức về cạnh tranh gay gắt, nguy cơ phụ thuộc kinh tế và mai một bản sắc văn hóa. Vì đây là xu thế khách quan nên vấn đề đặt ra là chủ động hội nhập.',
+        takeaway:
+          'Bất kỳ câu hỏi nào về "tác động" của một xu thế đều phải trả lời hai mặt. Trả lời một chiều là dấu hiệu rõ nhất của bài làm chưa đọc kỹ đề.',
+      },
+    ],
+    wrongTurn: {
+      problem: 'Chiến tranh lạnh kết thúc vào năm nào? Hãy nêu căn cứ cho câu trả lời.',
+      attempt: [
+        'Liên Xô tan rã năm 1991.',
+        'Chiến tranh lạnh là cuộc đối đầu giữa Mỹ và Liên Xô.',
+        'Vậy Chiến tranh lạnh kết thúc năm 1991 khi Liên Xô tan rã.',
+      ],
+      brokeAtStep: 3,
+      diagnosis:
+        'Bước 3 gộp hai sự kiện khác nhau thành một. Chiến tranh lạnh chấm dứt năm 1989 khi lãnh đạo Mỹ và Liên Xô cùng tuyên bố chấm dứt tại cuộc gặp Manta; còn năm 1991 là mốc Liên Xô tan rã, chấm dứt trật tự hai cực Ianta. Hai mốc cách nhau hai năm và ứng với hai sự kiện có nội dung khác nhau, nên câu hỏi hỏi mốc nào phải trả lời đúng mốc ấy. Lỗi gộp mốc này rất phổ biến vì hai sự kiện liên quan chặt chẽ và thường được kể liền nhau.',
+      fix: 'Từ bước 3: tách rõ hai mốc khi ôn — 1989 chấm dứt Chiến tranh lạnh, 1991 chấm dứt trật tự hai cực. Đọc kỹ đề hỏi mốc nào rồi mới trả lời.',
+    },
+  },
+  /* ══ KHOA HỌC — ĐỊA LÝ ═════════════════════════════════════════════ */
+  {
+    topicId: 'science.geography.nature',
+    section: 'science',
+    minutes: 35,
+    hook: 'Địa lý tự nhiên chiếm khoảng 5–6 câu của chủ đề Địa lý. Toàn bộ chuyên đề dựng trên một chuỗi nhân quả duy nhất: vị trí địa lý quy định khí hậu, khí hậu quy định sông ngòi, đất và sinh vật. Nắm chuỗi đó là suy ra được hầu hết đáp án.',
+    build: [
+      {
+        idea: 'Vị trí địa lý là nguyên nhân gốc của mọi đặc điểm tự nhiên nước ta.',
+        explain:
+          'Nằm trong vùng nội chí tuyến nên nền nhiệt cao; giáp Biển Đông nên ẩm; nằm trong khu vực gió mùa châu Á nên có mùa. Ba đặc điểm khí hậu lớn đều truy được về vị trí.',
+        check: 'Vì sao khí hậu nước ta có tính chất nhiệt đới?',
+        checkAnswer: 'Vì nằm hoàn toàn trong vùng nội chí tuyến bán cầu Bắc.',
+      },
+      {
+        idea: 'Gió mùa mùa đông và gió mùa mùa hạ tạo ra sự phân hóa lớn nhất của khí hậu Việt Nam.',
+        explain:
+          'Gió mùa đông bắc làm miền Bắc có mùa đông lạnh, còn miền Nam thì không. Đây là nguồn gốc của gần như mọi câu hỏi so sánh Bắc — Nam.',
+        check: 'Vì sao miền Nam không có mùa đông lạnh như miền Bắc?',
+        checkAnswer: 'Vì gió mùa đông bắc bị suy yếu và chặn lại bởi dãy Bạch Mã.',
+      },
+      {
+        idea: 'Địa hình ba phần tư là đồi núi nhưng chủ yếu là đồi núi thấp.',
+        explain:
+          'Đồi núi chiếm ba phần tư diện tích, nhưng núi cao trên 2000 m chỉ chiếm khoảng 1%. Nhớ cả hai vế mới trả lời đúng các câu về đặc điểm địa hình.',
+        check: 'Đồi núi chiếm bao nhiêu phần diện tích lãnh thổ và độ cao chủ yếu ra sao?',
+        checkAnswer: 'Ba phần tư diện tích, chủ yếu là đồi núi thấp dưới 1000 m.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.nat.monsoon',
+        patternId: 'nat.monsoon',
+        title: 'Giải thích sự phân hóa khí hậu Bắc — Nam',
+        problem:
+          'Giải thích vì sao miền Bắc nước ta có mùa đông lạnh với hai đến ba tháng nhiệt độ dưới 18°C, trong khi miền Nam nóng quanh năm.',
+        steps: [
+          {
+            do: 'Xác định nhân tố khí hậu gây ra sự khác biệt.',
+            why: 'Cả hai miền cùng nằm trong vùng nội chí tuyến nên vĩ độ không giải thích hết được; phải tìm nhân tố khác.',
+            result: 'Gió mùa đông bắc từ áp cao Xibia',
+          },
+          {
+            do: 'Mô tả đường đi và tác động của khối khí lạnh.',
+            why: 'Hiểu đường đi là hiểu vì sao tác động giảm dần theo hướng nam.',
+            result: 'Tràn xuống miền Bắc theo hướng đông bắc, mang không khí lạnh khô đầu mùa và lạnh ẩm cuối mùa',
+          },
+          {
+            do: 'Chỉ ra rào cản địa hình làm khối khí suy yếu.',
+            why: 'Dãy núi chắn ngang là nguyên nhân trực tiếp khiến ảnh hưởng không xuống tới miền Nam.',
+            result: 'Dãy Bạch Mã ở vĩ tuyến 16°B chặn gió mùa đông bắc',
+          },
+          {
+            do: 'Kết luận theo chuỗi nhân quả đầy đủ.',
+            why: 'Câu hỏi "vì sao" chấm theo chuỗi lập luận, không chấm theo việc gọi tên nhân tố.',
+            result: 'Gió mùa đông bắc + rào chắn Bạch Mã ⟹ mùa đông lạnh chỉ ở miền Bắc',
+          },
+        ],
+        answer:
+          'Miền Bắc chịu tác động trực tiếp của gió mùa đông bắc từ áp cao Xibia nên có mùa đông lạnh; khối khí này suy yếu dần về phía nam và bị dãy Bạch Mã chặn lại, nên miền Nam nóng quanh năm với hai mùa mưa và khô rõ rệt.',
+        takeaway:
+          'Mọi câu hỏi phân hóa khí hậu Việt Nam đều giải bằng cùng một cặp nhân tố: gió mùa và địa hình chắn gió. Nêu đủ cả hai mới thành một lời giải thích trọn vẹn.',
+      },
+      {
+        id: 'ex.nat.explain',
+        patternId: 'nat.explain',
+        title: 'Truy chuỗi nhân quả từ khí hậu sang sông ngòi',
+        problem:
+          'Giải thích vì sao sông ngòi nước ta có lượng nước lớn, nhiều phù sa và có chế độ nước theo mùa.',
+        steps: [
+          {
+            do: 'Truy đặc điểm thứ nhất về nguồn cấp nước.',
+            why: 'Lượng nước của sông phụ thuộc trực tiếp lượng mưa trên lưu vực, nên bắt đầu từ khí hậu.',
+            result: 'Mưa nhiều, trung bình 1500–2000 mm mỗi năm ⟹ sông nhiều nước',
+          },
+          {
+            do: 'Truy đặc điểm thứ hai về nguồn phù sa.',
+            why: 'Phù sa sinh ra từ quá trình xâm thực, mà xâm thực mạnh cần cả địa hình dốc lẫn mưa lớn.',
+            result: 'Địa hình đồi núi dốc cộng mưa lớn tập trung ⟹ xâm thực mạnh ⟹ nhiều phù sa',
+          },
+          {
+            do: 'Truy đặc điểm thứ ba về nhịp mùa.',
+            why: 'Chế độ nước sông lặp lại nhịp của chế độ mưa, vì nguồn cấp nước chính là mưa.',
+            result: 'Khí hậu có mùa mưa và mùa khô ⟹ sông có mùa lũ và mùa cạn',
+          },
+        ],
+        answer:
+          'Cả ba đặc điểm đều bắt nguồn từ khí hậu nhiệt đới ẩm gió mùa kết hợp địa hình đồi núi dốc: mưa nhiều cho lượng nước lớn, mưa lớn trên địa hình dốc gây xâm thực mạnh cho nhiều phù sa, và mùa mưa — mùa khô tạo ra mùa lũ — mùa cạn.',
+        takeaway:
+          'Chuỗi vị trí → khí hậu → sông ngòi, đất, sinh vật giải được phần lớn câu "vì sao" của địa lý tự nhiên. Học chuỗi nhẹ hơn học thuộc từng đặc điểm rời.',
+      },
+    ],
+    wrongTurn: {
+      problem: 'Giải thích vì sao nước ta có lượng mưa lớn, trung bình 1500–2000 mm mỗi năm.',
+      attempt: [
+        'Nước ta nằm trong vùng nội chí tuyến nên nhiệt độ cao.',
+        'Nhiệt độ cao làm nước bốc hơi nhiều.',
+        'Vậy nguyên nhân mưa nhiều là do nằm trong vùng nội chí tuyến.',
+      ],
+      brokeAtStep: 3,
+      diagnosis:
+        'Bước 3 dừng ở nhân tố vĩ độ và bỏ mất nguồn ẩm. Nhiều vùng khác cũng nằm trong nội chí tuyến nhưng lại là hoang mạc — Xahara là ví dụ rõ nhất — nên nội chí tuyến một mình không giải thích được mưa nhiều. Nhân tố còn thiếu là Biển Đông cùng gió mùa mang hơi ẩm vào đất liền. Đây là lỗi lập luận thiếu mắt xích, và cách tự phát hiện là hỏi ngược: nếu nguyên nhân này đủ, tại sao nơi khác cùng điều kiện lại khác kết quả?',
+      fix: 'Từ bước 3: bổ sung nguồn ẩm vào chuỗi. Nước ta giáp Biển Đông và nằm trong khu vực gió mùa, các khối khí đi qua biển mang theo lượng ẩm lớn vào đất liền. Nhiệt độ cao cộng nguồn ẩm dồi dào mới cho lượng mưa lớn.',
+    },
+  },
+  {
+    topicId: 'science.geography.economy',
+    section: 'science',
+    minutes: 35,
+    hook: 'Địa lý kinh tế — xã hội chiếm khoảng 6–7 câu của chủ đề Địa lý, nhiều nhất trong ba chuyên đề. Câu hỏi thường xoay quanh thế mạnh của từng vùng và sự chuyển dịch cơ cấu kinh tế — hai chủ đề có logic rõ ràng chứ không đòi hỏi thuộc số liệu.',
+    build: [
+      {
+        idea: 'Thế mạnh của một vùng bắt nguồn từ điều kiện tự nhiên và vị trí của vùng đó.',
+        explain:
+          'Tây Nguyên có đất badan và khí hậu cận xích đạo nên mạnh về cây công nghiệp lâu năm; Đồng bằng sông Cửu Long có đất phù sa và mạng lưới sông nên mạnh về lúa và thủy sản. Nhớ điều kiện là suy ra thế mạnh.',
+        check: 'Vì sao Tây Nguyên là vùng trồng cà phê lớn nhất cả nước?',
+        checkAnswer: 'Có diện tích đất badan lớn và khí hậu cận xích đạo phân hai mùa rõ rệt.',
+      },
+      {
+        idea: 'Chuyển dịch cơ cấu kinh tế đi theo hướng giảm nông nghiệp, tăng công nghiệp và dịch vụ.',
+        explain:
+          'Đây là hướng chung của mọi nền kinh tế đang công nghiệp hóa. Biết hướng chung thì đọc bảng số liệu chỉ còn là xác nhận, không phải suy đoán.',
+        check: 'Tỉ trọng khu vực nông — lâm — ngư trong GDP nước ta đang tăng hay giảm?',
+        checkAnswer: 'Giảm, phù hợp hướng công nghiệp hóa.',
+      },
+      {
+        idea: 'Dân số đông vừa là thế mạnh về lao động vừa là sức ép về việc làm và tài nguyên.',
+        explain:
+          'Câu hỏi về dân số hầu như luôn hỏi hai mặt. Trả lời một chiều — chỉ nói thuận lợi hoặc chỉ nói khó khăn — là mất một nửa số điểm.',
+        check: 'Cơ cấu dân số vàng mang lại thuận lợi gì và sức ép gì?',
+        checkAnswer: 'Nguồn lao động dồi dào, nhưng sức ép lớn về tạo việc làm.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.eco.strength',
+        patternId: 'eco.strength',
+        title: 'Suy thế mạnh của vùng từ điều kiện tự nhiên',
+        problem:
+          'Phân tích các điều kiện thuận lợi để Đồng bằng sông Cửu Long trở thành vùng sản xuất lương thực và thủy sản lớn nhất cả nước.',
+        steps: [
+          {
+            do: 'Liệt kê điều kiện tự nhiên nổi bật của vùng.',
+            why: 'Thế mạnh kinh tế của một vùng luôn truy được về điều kiện tự nhiên và vị trí, nên đây là điểm xuất phát.',
+            result: 'Đồng bằng rộng nhất nước · đất phù sa màu mỡ · khí hậu cận xích đạo nóng ẩm quanh năm · mạng lưới sông ngòi kênh rạch dày đặc',
+          },
+          {
+            do: 'Nối từng điều kiện với một thế mạnh cụ thể.',
+            why: 'Liệt kê điều kiện mà không nối với kết quả là bỏ dở lập luận, và đề chấm chính phần nối này.',
+            result:
+              'Đất và khí hậu ⟹ trồng lúa quanh năm nhiều vụ · sông ngòi và bờ biển dài ⟹ nuôi trồng và đánh bắt thủy sản',
+          },
+          {
+            do: 'Bổ sung điều kiện kinh tế — xã hội.',
+            why: 'Điều kiện tự nhiên là tiềm năng, còn lao động và thị trường mới biến tiềm năng thành sản lượng thật.',
+            result: 'Người dân giàu kinh nghiệm sản xuất, thị trường xuất khẩu rộng',
+          },
+          {
+            do: 'Nêu thêm hạn chế để câu trả lời cân bằng.',
+            why: 'Câu hỏi phân tích thường chấm cả phần nhận định về khó khăn, không chỉ phần thuận lợi.',
+            result: 'Mùa khô thiếu nước ngọt, xâm nhập mặn, đất phèn đất mặn chiếm diện tích lớn',
+          },
+        ],
+        answer:
+          'Vùng có đồng bằng rộng, đất phù sa màu mỡ, khí hậu cận xích đạo và mạng lưới sông ngòi dày đặc nên thuận lợi cho lúa nhiều vụ và thủy sản; cộng thêm kinh nghiệm sản xuất của người dân và thị trường xuất khẩu. Hạn chế chính là thiếu nước ngọt mùa khô, xâm nhập mặn và diện tích đất phèn, đất mặn lớn.',
+        takeaway:
+          'Công thức trả lời cố định cho câu thế mạnh vùng: điều kiện tự nhiên, nối sang thế mạnh, bổ sung điều kiện kinh tế xã hội, rồi nêu hạn chế. Bốn phần này phủ hết thang điểm.',
+      },
+      {
+        id: 'ex.eco.shift',
+        patternId: 'eco.shift',
+        title: 'Đọc chuyển dịch cơ cấu từ bảng số liệu',
+        problem:
+          'Cho biết tỉ trọng khu vực nông — lâm — ngư trong GDP giảm từ 24% xuống 14%, khu vực công nghiệp — xây dựng tăng từ 36% lên 38%, khu vực dịch vụ tăng từ 40% lên 48%. Nhận xét về chuyển dịch cơ cấu kinh tế.',
+        steps: [
+          {
+            do: 'Tính mức thay đổi tỉ trọng của từng khu vực.',
+            why: 'Nhận xét phải dựa trên con số cụ thể; nói "giảm" mà không nói giảm bao nhiêu là nhận xét chưa đủ.',
+            result: 'Nông nghiệp giảm 10 điểm phần trăm · công nghiệp tăng 2 · dịch vụ tăng 8',
+          },
+          {
+            do: 'Xác định xu hướng chung của cả ba khu vực.',
+            why: 'Ba con số riêng lẻ chỉ có ý nghĩa khi đặt vào một xu hướng chung.',
+            result: 'Giảm nông nghiệp, tăng công nghiệp và dịch vụ',
+          },
+          {
+            do: 'Chỉ ra khu vực chuyển dịch mạnh nhất.',
+            why: 'Đề thường hỏi tiếp về khu vực nào tăng nhanh nhất, nên nêu luôn tiết kiệm một bước.',
+            result: 'Dịch vụ tăng mạnh nhất trong hai khu vực tăng, với 8 điểm phần trăm',
+          },
+          {
+            do: 'Kết luận theo hướng phát triển chung của nền kinh tế.',
+            why: 'Nhận xét trọn vẹn phải nối số liệu với ý nghĩa kinh tế, không dừng ở mô tả.',
+            result: 'Chuyển dịch đúng hướng công nghiệp hóa, hiện đại hóa',
+          },
+        ],
+        answer:
+          'Cơ cấu kinh tế chuyển dịch theo hướng giảm tỉ trọng nông — lâm — ngư (giảm 10 điểm phần trăm), tăng tỉ trọng công nghiệp — xây dựng và dịch vụ, trong đó dịch vụ tăng mạnh nhất. Đây là chuyển dịch đúng hướng công nghiệp hóa, hiện đại hóa.',
+        takeaway:
+          'Nhận xét bảng số liệu luôn gồm bốn phần: số liệu cụ thể, xu hướng chung, cái nổi bật nhất, và ý nghĩa. Thiếu phần ý nghĩa là nhận xét dừng ở mức mô tả.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Bảng số liệu cho thấy sản lượng lúa của một vùng tăng từ 20 triệu tấn lên 22 triệu tấn, còn tỉ trọng của vùng trong sản lượng cả nước giảm từ 55% xuống 52%. Nhận xét nào đúng?',
+      attempt: [
+        'Sản lượng lúa của vùng tăng thêm 2 triệu tấn.',
+        'Nhưng tỉ trọng lại giảm, hai điều này mâu thuẫn nhau.',
+        'Vậy bảng số liệu có sai sót.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 coi sản lượng tăng và tỉ trọng giảm là mâu thuẫn. Thực ra hai chỉ số này hoàn toàn có thể cùng xảy ra: sản lượng là con số tuyệt đối của riêng vùng, còn tỉ trọng là phần của vùng trong tổng cả nước. Nếu cả nước tăng nhanh hơn vùng thì phần của vùng nhỏ đi dù bản thân nó vẫn tăng. Đây là mô hình số liệu được dùng rất nhiều trong đề vì nó phân biệt được người đọc bảng cẩn thận với người đọc lướt.',
+      fix: 'Từ bước 2: tách rõ giá trị tuyệt đối và giá trị tương đối. Nhận xét đúng là sản lượng lúa của vùng vẫn tăng nhưng tăng chậm hơn tốc độ chung của cả nước, nên tỉ trọng giảm.',
+    },
+  },
+  {
+    topicId: 'science.geography.data',
+    section: 'science',
+    minutes: 30,
+    hook: 'Bảng số liệu, biểu đồ và Atlat chiếm khoảng 5 câu của chủ đề Địa lý và là nhóm câu ăn điểm chắc nhất: đáp án nằm sẵn trong bảng hoặc trong Atlat, không cần thuộc gì. Điều duy nhất cần là đọc đúng từ khóa của đề.',
+    build: [
+      {
+        idea: 'Từ khóa trong đề quyết định dạng biểu đồ, không phải cảm nhận về số liệu.',
+        explain:
+          '"Cơ cấu" một năm dùng tròn, nhiều năm dùng miền; "tốc độ tăng trưởng" dùng đường; "so sánh quy mô" dùng cột. Đọc từ khóa là ra ngay dạng, không cần cân nhắc.',
+        check: 'Đề yêu cầu thể hiện tốc độ tăng trưởng qua 10 năm thì vẽ biểu đồ gì?',
+        checkAnswer: 'Biểu đồ đường, với năm gốc quy về 100%.',
+      },
+      {
+        idea: 'Số liệu khác đơn vị phải quy về dạng tương đối trước khi so sánh tốc độ.',
+        explain:
+          'Không so sánh trực tiếp được tấn với hecta hay tỉ đồng. Quy về chỉ số với năm gốc bằng 100% đưa mọi đại lượng về cùng một thang.',
+        check: 'Muốn so tốc độ tăng của hai đại lượng khác đơn vị, phải làm gì trước?',
+        checkAnswer: 'Quy về chỉ số phần trăm với năm đầu tiên bằng 100%.',
+      },
+      {
+        idea: 'Tỉ trọng luôn là thành phần chia cho tổng, nên phải xác định tổng trước.',
+        explain:
+          'Nhiều lỗi tính tỉ trọng đến từ việc lấy nhầm mẫu số — chia cho một thành phần khác thay vì chia cho tổng. Ghi rõ tổng ra trước khi chia là cách chặn lỗi đó.',
+        check: 'Ngành A đạt 30 trong tổng 120 thì tỉ trọng bằng bao nhiêu?',
+        checkAnswer: '30/120 = 25%.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.dat.chart',
+        patternId: 'dat.chart',
+        title: 'Chọn dạng biểu đồ theo từ khóa của đề',
+        problem:
+          'Cho bảng số liệu về cơ cấu giá trị sản xuất công nghiệp phân theo ba nhóm ngành trong bốn năm 2010, 2015, 2020, 2023. Đề yêu cầu vẽ biểu đồ thể hiện sự chuyển dịch cơ cấu. Nên chọn dạng biểu đồ nào?',
+        steps: [
+          {
+            do: 'Gạch chân từ khóa chỉ dạng trong yêu cầu của đề.',
+            why: 'Dạng biểu đồ do từ khóa quyết định; đọc lướt qua từ khóa là mất điểm ở câu vốn rất dễ.',
+            result: 'Từ khóa: "cơ cấu" và "chuyển dịch"',
+          },
+          {
+            do: 'Đếm số mốc thời gian trong bảng.',
+            why: 'Cùng từ khóa "cơ cấu" nhưng số năm khác nhau cho ra hai dạng biểu đồ khác nhau.',
+            result: 'Bốn năm',
+          },
+          {
+            do: 'Đối chiếu cặp (từ khóa, số năm) với quy tắc chọn dạng.',
+            why: 'Quy tắc là cố định nên bước này cho kết quả duy nhất, không cần cân nhắc thẩm mỹ.',
+            result: '"Cơ cấu" với từ 4 năm trở lên ⟹ biểu đồ miền',
+          },
+          {
+            do: 'Kiểm tra tổng các thành phần mỗi năm có bằng 100% không.',
+            why: 'Biểu đồ miền chỉ dùng được cho số liệu đã ở dạng phần trăm; nếu là số tuyệt đối phải xử lý trước.',
+            result: 'Nếu bảng cho số tuyệt đối thì phải tính tỉ trọng trước khi vẽ',
+          },
+        ],
+        answer: 'Chọn biểu đồ miền, sau khi đã quy số liệu về dạng tỉ trọng phần trăm nếu bảng cho số tuyệt đối.',
+        takeaway:
+          'Bảng quy tắc chọn dạng chỉ có bốn dòng và không có ngoại lệ. Học thuộc bốn dòng đó là lấy trọn nhóm câu nhận dạng biểu đồ trong khoảng 30 giây mỗi câu.',
+      },
+      {
+        id: 'ex.dat.calc',
+        patternId: 'dat.calc',
+        title: 'Tính tốc độ tăng trưởng với năm gốc',
+        problem:
+          'Sản lượng điện của một nước là 100 tỉ kWh năm 2015 và 160 tỉ kWh năm 2023; sản lượng than là 40 triệu tấn năm 2015 và 52 triệu tấn năm 2023. Đại lượng nào tăng nhanh hơn?',
+        steps: [
+          {
+            do: 'Nhận ra hai đại lượng khác đơn vị nên không so sánh trực tiếp được.',
+            why: 'Tỉ kWh và triệu tấn là hai thang khác nhau; so hiệu tuyệt đối giữa chúng là vô nghĩa.',
+            result: 'Phải quy về chỉ số tương đối',
+          },
+          {
+            do: 'Quy năm gốc 2015 về 100% cho cả hai đại lượng.',
+            why: 'Đưa cả hai về cùng một điểm xuất phát là cách duy nhất so sánh được tốc độ.',
+            result: 'Điện 2015 = 100% · Than 2015 = 100%',
+          },
+          {
+            do: 'Tính chỉ số của năm 2023 cho từng đại lượng.',
+            why: 'Chỉ số bằng giá trị năm đó chia giá trị năm gốc rồi nhân 100.',
+            result: 'Điện: 160/100 × 100 = 160% · Than: 52/40 × 100 = 130%',
+          },
+          {
+            do: 'So sánh hai chỉ số vừa tính.',
+            why: 'Hai con số nay cùng thang phần trăm nên đặt cạnh nhau là đọc ra ngay.',
+            result: '160% > 130%',
+          },
+        ],
+        answer: 'Sản lượng điện tăng nhanh hơn: tăng 60% so với 30% của than trong cùng giai đoạn.',
+        takeaway:
+          'Quy về năm gốc 100% là thao tác bắt buộc cho mọi câu so sánh tốc độ. Nó cũng là cách vẽ đúng biểu đồ đường khi các đại lượng khác đơn vị.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Đề cho bảng số liệu về cơ cấu lao động theo ba khu vực kinh tế trong năm năm và yêu cầu vẽ biểu đồ thể hiện tốc độ tăng trưởng số lao động. Chọn dạng biểu đồ nào?',
+      attempt: [
+        'Bảng cho số liệu về cơ cấu.',
+        'Từ khóa "cơ cấu" với năm năm thì vẽ biểu đồ miền.',
+        'Vậy chọn biểu đồ miền.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 lấy từ khóa trong phần MÔ TẢ BẢNG thay vì từ khóa trong phần YÊU CẦU của đề. Bảng nói về cơ cấu, nhưng đề yêu cầu thể hiện tốc độ tăng trưởng — và dạng biểu đồ phải theo yêu cầu chứ không theo bảng. Đây là bẫy được cài rất thường xuyên vì nó chỉ khác nhau ở một chỗ đọc, và người làm vội gần như luôn sa vào. Biểu đồ miền thể hiện cơ cấu, không thể hiện được tốc độ.',
+      fix: 'Từ bước 2: gạch chân riêng cụm từ đứng sau chữ "thể hiện" trong yêu cầu của đề. Ở đây là "tốc độ tăng trưởng", nên phải vẽ biểu đồ đường với năm gốc bằng 100%.',
+    },
+  },
+  /* ══ KHOA HỌC — TIẾNG ANH ══════════════════════════════════════════ */
+  {
+    topicId: 'science.english.grammar',
+    section: 'science',
+    minutes: 35,
+    hook: 'Grammar & Structure chiếm khoảng 17 câu nếu bạn chọn đường Tiếng Anh cho phần 3. Điểm mạnh của nhóm câu này: mỗi câu đều có một DẤU HIỆU nhìn thấy được trong đề, nên nó là nhóm câu làm nhanh nhất — mục tiêu 25 giây mỗi câu.',
+    build: [
+      {
+        idea: 'Trạng từ chỉ thời gian trong câu quyết định thì, không phải cảm giác về nghĩa.',
+        explain:
+          '"Yesterday", "last week" đi với quá khứ đơn; "since", "for", "already" đi với hiện tại hoàn thành; "now", "at the moment" đi với hiện tại tiếp diễn. Tìm trạng từ trước khi chọn.',
+        check: 'Câu có "since 2010" thì dùng thì gì?',
+        checkAnswer: 'Hiện tại hoàn thành — have/has + V3.',
+      },
+      {
+        idea: 'Mệnh đề quan hệ chọn who, which hay that theo danh từ đứng ngay trước nó.',
+        explain:
+          'Người dùng "who", vật dùng "which", cả hai dùng được "that" trừ trong mệnh đề không xác định có dấu phẩy. Nhìn danh từ liền trước là chọn được ngay.',
+        check: 'Câu "The book ___ I bought is expensive" điền gì?',
+        checkAnswer: '"which" hoặc "that" — danh từ đứng trước là vật.',
+      },
+      {
+        idea: 'Câu điều kiện chia ba loại theo mức độ có thật, và mỗi loại có một cặp thì cố định.',
+        explain:
+          'Loại 1 có thật ở hiện tại hoặc tương lai; loại 2 giả định trái hiện tại; loại 3 giả định trái quá khứ. Nhận ra loại nào là biết luôn cặp thì phải dùng.',
+        check: '"If I ___ you, I would tell the truth" điền gì?',
+        checkAnswer: '"were" — câu điều kiện loại 2.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.egr.tense',
+        patternId: 'egr.tense',
+        title: 'Chọn thì bằng dấu hiệu thời gian',
+        problem:
+          'Chọn đáp án đúng: "She ___ in this company since she graduated from university." với các lựa chọn: A. works, B. worked, C. has worked, D. is working.',
+        steps: [
+          {
+            do: 'Quét câu tìm trạng từ hoặc cụm chỉ thời gian.',
+            why: 'Thì được quyết định bởi dấu hiệu thời gian trong câu, nên đây là việc phải làm trước khi đọc các phương án.',
+            result: 'Tìm thấy "since she graduated"',
+          },
+          {
+            do: 'Nhớ lại thì đi kèm với dấu hiệu vừa tìm được.',
+            why: 'Mỗi dấu hiệu gắn với một thì cố định; đây là quan hệ một đối một, không có ngoại lệ trong đề thi.',
+            result: '"since" đi với hiện tại hoàn thành',
+          },
+          {
+            do: 'Đối chiếu với bốn phương án và chọn dạng đúng.',
+            why: 'Ba phương án còn lại đều là thì khác nên loại thẳng, không cần cân nhắc nghĩa.',
+            result: 'C. has worked là hiện tại hoàn thành',
+          },
+          {
+            do: 'Kiểm tra nghĩa của câu hoàn chỉnh có hợp lý không.',
+            why: 'Bước kiểm tra cuối bắt được các trường hợp hiếm khi dấu hiệu bị dùng với nghĩa khác.',
+            result: 'Hành động bắt đầu trong quá khứ và kéo dài tới hiện tại ⟹ hợp lý',
+          },
+        ],
+        answer: 'Đáp án C — has worked.',
+        takeaway:
+          'Bảng dấu hiệu thời gian chỉ khoảng mười dòng và giải được gần hết câu chia thì. Đọc dấu hiệu trước, đọc phương án sau — làm ngược lại là mất gấp đôi thời gian.',
+      },
+      {
+        id: 'ex.egr.clause',
+        patternId: 'egr.clause',
+        title: 'Chọn đại từ quan hệ',
+        problem:
+          'Chọn đáp án đúng: "The scientist ___ discovered this vaccine received a Nobel Prize." với các lựa chọn: A. which, B. who, C. whom, D. whose.',
+        steps: [
+          {
+            do: 'Xác định danh từ đứng ngay trước chỗ trống.',
+            why: 'Đại từ quan hệ luôn thay thế cho danh từ liền trước nó, nên danh từ đó quyết định lựa chọn.',
+            result: '"The scientist" — chỉ người',
+          },
+          {
+            do: 'Loại các đại từ dành cho vật.',
+            why: 'Danh từ chỉ người thì không dùng "which"; bước này loại được ngay một phương án.',
+            result: 'Loại A',
+          },
+          {
+            do: 'Xác định đại từ đóng vai chủ ngữ hay tân ngữ trong mệnh đề.',
+            why: '"Who" làm chủ ngữ, "whom" làm tân ngữ; nhìn xem sau chỗ trống là động từ hay chủ ngữ mới.',
+            result: 'Sau chỗ trống là động từ "discovered" ⟹ đại từ làm chủ ngữ',
+          },
+          {
+            do: 'Loại nốt "whose" bằng ý nghĩa sở hữu.',
+            why: '"Whose" chỉ dùng khi có quan hệ sở hữu, và sau nó phải là một danh từ chứ không phải động từ.',
+            result: 'Chọn B. who',
+          },
+        ],
+        answer: 'Đáp án B — who.',
+        takeaway:
+          'Hai câu hỏi giải quyết mọi câu mệnh đề quan hệ: danh từ trước là người hay vật, và sau chỗ trống là động từ hay chủ ngữ mới. Không cần nhớ thêm quy tắc nào.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Chọn đáp án đúng: "I ___ him last week." với các lựa chọn: A. have met, B. met, C. meet, D. will meet.',
+      attempt: [
+        'Việc gặp đã xảy ra và có liên quan tới hiện tại.',
+        'Hiện tại hoàn thành dùng cho hành động đã xảy ra, nên chọn A. have met.',
+        'Đáp án là A.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 chọn thì dựa trên cảm nhận về nghĩa mà bỏ qua trạng từ "last week" nằm ngay trong câu. Hiện tại hoàn thành không bao giờ đi với một mốc thời gian quá khứ xác định — đây là quy tắc tuyệt đối, không phụ thuộc việc hành động có liên quan tới hiện tại hay không. Lỗi này xuất hiện rất nhiều vì cách diễn giải "đã xảy ra và còn liên quan" nghe rất thuyết phục, trong khi dấu hiệu hình thức mới là thứ quyết định.',
+      fix: 'Từ bước 2: quét trạng từ thời gian trước khi cân nhắc nghĩa. "Last week" là mốc quá khứ xác định nên bắt buộc dùng quá khứ đơn. Đáp án đúng là B. met.',
+    },
+  },
+  {
+    topicId: 'science.english.vocabulary',
+    section: 'science',
+    minutes: 35,
+    hook: 'Vocabulary & Collocation chiếm khoảng 15 câu nếu bạn chọn đường Tiếng Anh. Đây là nhóm câu phụ thuộc vốn từ nhiều nhất, nhưng vẫn có quy luật: phần lớn câu kiểm tra COLLOCATION và họ từ, hai thứ học được theo cụm chứ không phải học từng từ rời.',
+    build: [
+      {
+        idea: 'Collocation là các từ quen đi với nhau, và không suy ra được từ nghĩa.',
+        explain:
+          'Người Anh nói "make a decision" chứ không nói "do a decision", dù cả hai đều nghĩa là làm. Phải học theo cụm; suy luận từ nghĩa gần như luôn dẫn tới phương án sai.',
+        check: 'Đi với "a mistake" là "make" hay "do"?',
+        checkAnswer: '"Make a mistake".',
+      },
+      {
+        idea: 'Vị trí của từ trong câu quyết định nó phải ở dạng nào của họ từ.',
+        explain:
+          'Sau mạo từ và tính từ là danh từ; trước danh từ là tính từ; sau động từ thường là trạng từ. Nhìn vị trí là biết dạng cần điền mà chưa cần hiểu nghĩa.',
+        check: 'Chỗ trống trong "He works very ___" cần từ loại gì?',
+        checkAnswer: 'Trạng từ, ví dụ "hard".',
+      },
+      {
+        idea: 'Từ đồng nghĩa trong đề luôn khác nhau ở sắc thái hoặc phạm vi kết hợp.',
+        explain:
+          'Cả bốn phương án thường cùng nghĩa gốc; điều phân biệt là từ nào đi được với các từ xung quanh trong chính câu đó. Vì vậy phải đọc cả câu, không chỉ nhìn chỗ trống.',
+        check: 'Nên dùng "heavy rain" hay "strong rain"?',
+        checkAnswer: '"Heavy rain" — collocation cố định.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.evo.wordform',
+        patternId: 'evo.wordform',
+        title: 'Chọn dạng từ theo vị trí trong câu',
+        problem:
+          'Chọn đáp án đúng: "His ___ to solve the problem impressed everyone." với các lựa chọn: A. able, B. ability, C. ably, D. enable.',
+        steps: [
+          {
+            do: 'Xác định từ loại cần điền dựa vào vị trí chỗ trống.',
+            why: 'Sau tính từ sở hữu "his" bắt buộc là một danh từ; vị trí quyết định trước cả nghĩa.',
+            result: 'Cần một danh từ',
+          },
+          {
+            do: 'Phân loại bốn phương án theo từ loại.',
+            why: 'Phân loại xong thường chỉ còn một phương án đúng loại, không cần cân nhắc nghĩa.',
+            result: 'able là tính từ · ability là danh từ · ably là trạng từ · enable là động từ',
+          },
+          {
+            do: 'Chọn phương án đúng từ loại và kiểm tra lại toàn câu.',
+            why: 'Kiểm tra cả câu bắt được trường hợp hiếm khi có hai phương án cùng từ loại.',
+            result: '"His ability to solve the problem impressed everyone" — đúng ngữ pháp và nghĩa',
+          },
+        ],
+        answer: 'Đáp án B — ability.',
+        takeaway:
+          'Câu chọn dạng từ giải được mà không cần biết nghĩa của từ gốc: chỉ cần đọc vị trí. Đây là nhóm câu nên làm trong 20 giây.',
+      },
+      {
+        id: 'ex.evo.collocation',
+        patternId: 'evo.collocation',
+        title: 'Chọn từ theo collocation',
+        problem:
+          'Chọn đáp án đúng: "The heavy rain caused ___ damage to the crops." với các lựa chọn: A. strong, B. severe, C. powerful, D. mighty.',
+        steps: [
+          {
+            do: 'Nhận ra bốn phương án đều gần nghĩa nhau.',
+            why: 'Khi cả bốn cùng nghĩa gốc thì câu đang kiểm tra collocation chứ không kiểm tra nghĩa.',
+            result: 'Cả bốn đều mang nghĩa mạnh, dữ dội',
+          },
+          {
+            do: 'Xác định danh từ mà từ cần điền phải bổ nghĩa.',
+            why: 'Collocation là quan hệ giữa hai từ cụ thể, nên phải khóa được danh từ đi kèm.',
+            result: 'Danh từ là "damage"',
+          },
+          {
+            do: 'Nhớ lại cụm quen dùng với danh từ đó.',
+            why: 'Collocation không suy ra được; phải nhớ theo cụm đã gặp trong bài đọc hoặc bài nghe.',
+            result: '"Severe damage" là cụm cố định; "strong damage" không được dùng',
+          },
+        ],
+        answer: 'Đáp án B — severe.',
+        takeaway:
+          'Khi bốn phương án cùng nghĩa, đề đang hỏi collocation. Cách ôn hiệu quả là ghi từ mới theo cụm hai ba từ, không ghi từ đơn lẻ.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Chọn đáp án đúng: "She ___ a lot of progress in English this year." với các lựa chọn: A. did, B. made, C. took, D. got.',
+      attempt: [
+        '"Progress" nghĩa là tiến bộ, và tiến bộ là việc mình làm được.',
+        '"Do" nghĩa là làm, nên "did progress" là hợp lý nhất.',
+        'Đáp án là A. did.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 dịch nghĩa từng từ sang tiếng Việt rồi ghép lại, một cách làm luôn thất bại với câu collocation. Trong tiếng Anh, "progress" đi cố định với "make", giống như "make a decision" và "make an effort" — không có lý do ngữ nghĩa nào giải thích được, đó thuần túy là thói quen ngôn ngữ. Cách dịch nghĩa rồi ghép nghe rất hợp lý với người học Việt Nam và chính vì thế nó là bẫy hiệu quả nhất của nhóm câu này.',
+      fix: 'Từ bước 2: nhận ra đây là câu collocation nên phải nhớ theo cụm chứ không dịch. Đáp án đúng là B. made — "make progress". Khi ôn, ghi luôn cả cụm "make progress" vào sổ từ thay vì ghi riêng "progress".',
+    },
+  },
+  {
+    topicId: 'science.english.reading',
+    section: 'science',
+    minutes: 40,
+    hook: 'Reading Comprehension chiếm khoảng 18 câu nếu bạn chọn đường Tiếng Anh — nhóm câu lớn nhất của cả phần 3. Đáp án luôn nằm trong bài đọc, nên vấn đề không phải là biết hay không biết mà là tìm đúng chỗ trong thời gian có hạn.',
+    build: [
+      {
+        idea: 'Đọc câu hỏi trước, đọc bài sau — trừ câu hỏi về ý chính.',
+        explain:
+          'Biết trước cần tìm gì thì mắt quét bài có mục tiêu, nhanh hơn nhiều so với đọc kỹ toàn bài rồi mới xem hỏi gì. Riêng câu ý chính thì cần cảm nhận cả bài nên để làm sau cùng.',
+        check: 'Với bài đọc có 5 câu hỏi, nên làm câu ý chính vào lúc nào?',
+        checkAnswer: 'Sau cùng, khi đã đọc bài qua các câu chi tiết.',
+      },
+      {
+        idea: 'Câu hỏi chi tiết luôn có một câu trong bài trả lời trực tiếp cho nó.',
+        explain:
+          'Nhiệm vụ là định vị câu đó, không phải suy luận. Từ khóa trong câu hỏi — tên riêng, con số, thuật ngữ — là chìa khóa để quét nhanh.',
+        check: 'Từ khóa nào dễ quét nhất trong bài đọc?',
+        checkAnswer: 'Tên riêng, con số và từ viết hoa — chúng nổi bật về mặt hình thức.',
+      },
+      {
+        idea: 'Câu hỏi từ vựng trong bài đọc phải trả lời theo ngữ cảnh, không theo nghĩa từ điển.',
+        explain:
+          'Đề chọn từ đa nghĩa và hỏi nghĩa của nó TRONG CÂU ĐÓ. Cách làm chắc chắn là thay lần lượt bốn phương án vào chính câu đó và xem câu nào vẫn xuôi.',
+        check: 'Cách kiểm tra chắc chắn nhất cho câu hỏi từ vựng là gì?',
+        checkAnswer: 'Thay từng phương án vào đúng câu trong bài và đọc lại.',
+      },
+    ],
+    examples: [
+      {
+        id: 'ex.ere.detail',
+        patternId: 'ere.detail',
+        title: 'Định vị câu trả lời cho câu hỏi chi tiết',
+        problem:
+          'Bài đọc về lịch sử cà phê có câu: "Coffee was first cultivated in Ethiopia in the 9th century, but it did not reach Europe until the 17th century." Câu hỏi: When did coffee arrive in Europe?',
+        steps: [
+          {
+            do: 'Gạch chân từ khóa trong câu hỏi.',
+            why: 'Từ khóa là thứ để quét bài; không có từ khóa thì phải đọc lại toàn bộ, rất tốn thời gian.',
+            result: 'Từ khóa: "arrive" và "Europe"',
+          },
+          {
+            do: 'Quét bài tìm từ khóa hoặc từ đồng nghĩa với nó.',
+            why: 'Bài đọc hiếm khi lặp nguyên từ trong câu hỏi; nó thường dùng một từ đồng nghĩa.',
+            result: '"Europe" xuất hiện cùng cụm "reach Europe" — đồng nghĩa với "arrive"',
+          },
+          {
+            do: 'Đọc kỹ trọn câu chứa từ khóa, chú ý các từ nối.',
+            why: 'Từ "but" và "not… until" đảo hẳn nghĩa; đọc lướt sẽ lấy nhầm mốc thế kỷ 9.',
+            result: '"did not reach Europe until the 17th century" ⟹ tới châu Âu ở thế kỷ 17',
+          },
+          {
+            do: 'Kiểm tra mốc còn lại trong câu để chắc không lẫn.',
+            why: 'Câu chứa hai mốc thời gian, và một trong hai chắc chắn là phương án nhiễu.',
+            result: 'Thế kỷ 9 là mốc trồng ở Ethiopia, không phải mốc tới châu Âu',
+          },
+        ],
+        answer: 'Cà phê đến châu Âu vào thế kỷ 17.',
+        takeaway:
+          'Câu chứa hai mốc thời gian với một từ nối tương phản là mô hình bẫy phổ biến nhất của câu hỏi chi tiết. Đọc trọn câu chứ không dừng ở cụm chứa từ khóa.',
+      },
+      {
+        id: 'ex.ere.vocab',
+        patternId: 'ere.vocab',
+        title: 'Đoán nghĩa từ theo ngữ cảnh',
+        problem:
+          'Trong câu "The company decided to curtail its spending after the financial crisis", từ "curtail" gần nghĩa nhất với từ nào: A. increase, B. reduce, C. maintain, D. analyze?',
+        steps: [
+          {
+            do: 'Đọc trọn câu và tìm manh mối ngữ cảnh.',
+            why: 'Nghĩa của từ lạ được xác định bởi các từ xung quanh, nên phải đọc cả câu chứ không nhìn riêng từ đó.',
+            result: 'Manh mối: "after the financial crisis" — bối cảnh khó khăn tài chính',
+          },
+          {
+            do: 'Suy ra hành động hợp lý trong bối cảnh đó.',
+            why: 'Ngữ cảnh thu hẹp không gian nghĩa; sau khủng hoảng thì hành động hợp lý với chi tiêu là cắt giảm.',
+            result: 'Sau khủng hoảng, công ty nhiều khả năng giảm chi tiêu',
+          },
+          {
+            do: 'Thay lần lượt từng phương án vào chính câu đó.',
+            why: 'Đây là phép kiểm tra chắc chắn nhất, thay cho việc đoán dựa trên cảm giác.',
+            result:
+              '"increase spending after a crisis" nghe vô lý · "maintain" và "analyze" không khớp với "decided to" trong bối cảnh này · "reduce" xuôi hoàn toàn',
+          },
+        ],
+        answer: 'Đáp án B — reduce.',
+        takeaway:
+          'Không cần biết trước nghĩa của "curtail" vẫn làm đúng câu này. Kỹ thuật thay phương án vào câu là công cụ gỡ điểm cho mọi câu từ vựng gặp từ lạ.',
+      },
+    ],
+    wrongTurn: {
+      problem:
+        'Bài đọc viết: "Although solar panels are expensive to install, they save money in the long run." Câu hỏi: What does the author say about solar panels?',
+      attempt: [
+        'Bài nói tấm pin mặt trời đắt tiền khi lắp đặt.',
+        'Vậy tác giả cho rằng tấm pin mặt trời tốn kém và không đáng đầu tư.',
+        'Chọn phương án nói rằng tấm pin mặt trời quá đắt.',
+      ],
+      brokeAtStep: 2,
+      diagnosis:
+        'Bước 2 chỉ đọc vế đầu của câu và bỏ qua từ nối "Although". Từ này báo rằng vế đầu là ý nhượng bộ, còn ý chính nằm ở vế sau: về lâu dài chúng tiết kiệm tiền. Đề dạng này luôn để sẵn một phương án khớp với vế nhượng bộ, vì đó chính là bẫy dành cho người đọc lướt. Quy tắc chung: trong câu có "although", "however", "despite", ý thật luôn nằm ở vế KHÔNG có từ nối.',
+      fix: 'Từ bước 2: đọc trọn câu và xác định ý chính nằm ở vế sau. Tác giả cho rằng tấm pin mặt trời tuy đắt lúc lắp đặt nhưng tiết kiệm tiền về lâu dài — một đánh giá tích cực, không tiêu cực.',
+    },
+  },
 ];
 
 export const LESSON_BY_TOPIC = new Map(LESSONS.map((l) => [l.topicId, l]));
