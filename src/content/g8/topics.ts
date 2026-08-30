@@ -171,7 +171,7 @@ export const G8_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Phân thức và điều kiện xác định',
-        body: [],
+        body: ['Phân thức là "phân số của đa thức". Khác biệt lớn nhất so với phân số là phải luôn kèm **điều kiện xác định**.'],
         formulas: [
           'Phân thức $\\f{A}{B}$ với $A,B$ là đa thức, $B\\ne0$.',
           '**Điều kiện xác định**: mẫu thức khác 0.',
@@ -182,7 +182,7 @@ export const G8_TOPICS: Topic[] = [
       },
       {
         heading: '2. Các phép tính',
-        body: [],
+        body: ['Quy tắc hoàn toàn giống phân số, chỉ khác là tử và mẫu nay là đa thức nên phải phân tích thành nhân tử trước.'],
         formulas: [
           'Cộng, trừ: quy đồng mẫu (mẫu chung là BCNN của các mẫu sau khi phân tích thành nhân tử).',
           '$\\f{A}{B}\\cdot\\f{C}{D}=\\f{AC}{BD}$ ; $\\f{A}{B}:\\f{C}{D}=\\f{A}{B}\\cdot\\f{D}{C}$',
@@ -262,7 +262,7 @@ export const G8_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Phương trình bậc nhất một ẩn',
-        body: [],
+        body: ['Dạng $ax+b=0$ với $a\ne0$. Toàn bộ kỹ thuật giải gói trong hai quy tắc: chuyển vế và nhân chia hai vế.'],
         formulas: [
           'Dạng: $ax+b=0$ ($a\\ne0$), nghiệm duy nhất $x=-\\f{b}{a}$',
           'Quy tắc chuyển vế: chuyển một hạng tử sang vế kia và **đổi dấu**',
@@ -284,7 +284,7 @@ export const G8_TOPICS: Topic[] = [
       },
       {
         heading: '3. Ba mô hình bài toán thường gặp',
-        body: [],
+        body: ['Ba tình huống chiếm phần lớn đề thi. Nhận ra mô hình là biết ngay nên gọi ẩn là đại lượng nào.'],
         formulas: [
           'Chuyển động: $s=v\\cdot t$ ; xuôi dòng $v+v_{n}$, ngược dòng $v-v_{n}$',
           'Năng suất – công việc: coi công việc là 1, năng suất $=\\f{1}{t}$',
@@ -388,7 +388,7 @@ export const G8_TOPICS: Topic[] = [
     theory: [
       {
         heading: 'Hàm số bậc nhất $y=ax+b$ ($a\\ne0$)',
-        body: [],
+        body: ['Đồ thị là một đường thẳng, xác định bởi đúng **hai điểm**. Hệ số $a$ quyết định độ dốc, $b$ quyết định vị trí cắt trục tung.'],
         formulas: [
           'Đồ thị là một **đường thẳng** cắt trục tung tại điểm $(0;b)$ và cắt trục hoành tại $\\left(-\\f{b}{a};0\\right)$.',
           '$a$ là **hệ số góc**: $a>0$ thì hàm số đồng biến (đường thẳng đi lên); $a<0$ thì nghịch biến (đi xuống).',
@@ -465,7 +465,7 @@ export const G8_TOPICS: Topic[] = [
       },
       {
         heading: '2. Dấu hiệu nhận biết (thuộc lòng)',
-        body: [],
+        body: ['Các hình đặc biệt xếp theo sơ đồ từ **chung tới riêng** — mỗi bước đi lên cần thêm đúng một điều kiện.'],
         formulas: [
           '**Hình bình hành**: 2 cặp cạnh đối song song; hoặc 2 cặp cạnh đối bằng nhau; hoặc 1 cặp cạnh đối vừa song song vừa bằng nhau; hoặc 2 cặp góc đối bằng nhau; hoặc 2 đường chéo cắt nhau tại trung điểm mỗi đường.',
           '**Hình chữ nhật**: hình bình hành có 1 góc vuông; hoặc có 2 đường chéo bằng nhau; hoặc tứ giác có 3 góc vuông.',
@@ -548,7 +548,7 @@ export const G8_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Định lí Thalès và hệ quả',
-        body: [],
+        body: ['Thalès là nguồn duy nhất sinh ra tỉ lệ đoạn thẳng ở chuyên đề này. Có song song là có tỉ lệ.'],
         formulas: [
           '**Thuận**: Nếu $MN\\para BC$ ($M\\in AB$, $N\\in AC$) thì $\\f{AM}{MB}=\\f{AN}{NC}$ và $\\f{AM}{AB}=\\f{AN}{AC}$.',
           '**Đảo**: Nếu $\\f{AM}{MB}=\\f{AN}{NC}$ thì $MN\\para BC$.',
@@ -559,7 +559,7 @@ export const G8_TOPICS: Topic[] = [
       },
       {
         heading: '2. Ba trường hợp đồng dạng của tam giác',
-        body: [],
+        body: ['Đồng dạng nghĩa là **cùng hình dạng**, có thể khác kích thước. Ba trường hợp song song với ba trường hợp bằng nhau ở lớp 7.'],
         formulas: [
           '**c.c.c**: ba cặp cạnh tương ứng tỉ lệ.',
           '**c.g.c**: hai cặp cạnh tỉ lệ và góc xen giữa bằng nhau.',
@@ -654,7 +654,7 @@ export const G8_TOPICS: Topic[] = [
     theory: [
       {
         heading: 'Công thức trọng tâm',
-        body: [],
+        body: ['Bộ công thức bắt buộc thuộc của chuyên đề, kèm điều kiện áp dụng và chỗ dễ nhầm.'],
         formulas: [
           'Pythagore thuận: $\\tri ABC$ vuông tại $A$ thì $BC^{2}=AB^{2}+AC^{2}$',
           'Pythagore đảo: nếu $BC^{2}=AB^{2}+AC^{2}$ thì $\\tri ABC$ vuông tại $A$',
@@ -721,7 +721,7 @@ export const G8_TOPICS: Topic[] = [
     theory: [
       {
         heading: 'Xác suất lí thuyết và thực nghiệm',
-        body: [],
+        body: ['Hai khái niệm khác nhau nhưng liên hệ chặt chẽ: số lần thử càng lớn thì xác suất thực nghiệm càng gần lí thuyết.'],
         formulas: [
           'Xác suất lí thuyết: $P(A)=\\f{\\text{số kết quả thuận lợi}}{\\text{số kết quả có thể}}$ (mô hình đồng khả năng)',
           'Xác suất thực nghiệm: $\\f{\\text{số lần A xảy ra}}{\\text{số lần thực hiện}}$',

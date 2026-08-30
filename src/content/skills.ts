@@ -324,6 +324,8 @@ export const TERM_MINDMAPS: Record<string, MindMap> = {
       { title: 'Số nguyên', items: ['So sánh trên trục số', 'Cộng, trừ theo dấu', 'Quy tắc dấu khi nhân, chia', 'Quy tắc dấu ngoặc, chuyển vế'] },
       { title: 'Hình học trực quan', items: ['Tam giác đều, hình vuông, lục giác đều', 'Hình chữ nhật, thoi, bình hành, thang cân', 'Chu vi và diện tích', 'Bài toán thực tế, đổi đơn vị'] },
       { title: 'Dạng bài trọng tâm HK1', items: ['Tính nhanh, tìm $x$', 'Tìm chữ số theo dấu hiệu chia hết', 'Bài toán ƯCLN / BCNN', 'Tính chu vi – diện tích thực tế'] },
+      { title: 'Bẫy thường gặp', items: ['Nhân số mũ khi nhân hai luỹ thừa cùng cơ số', 'Xét chữ số tận cùng cho dấu hiệu chia hết cho $9$', 'Nhầm ƯCLN với BCNN khi đọc đề', 'Đổi đơn vị diện tích theo bậc $1$'] },
+      { title: 'Chiến thuật phòng thi', items: ['Làm trọn phần nhận biết trước ($4$–$6$ câu)', 'Khoanh từ khoá \"nhiều nhất\" / \"ít nhất\" khi đọc đề', 'Câu tính nhanh: tìm cặp tròn chục trước', 'Dành $5$ phút cuối soát lại dấu và đơn vị'] },
     ],
   },
   '6-HK2': {
@@ -334,6 +336,8 @@ export const TERM_MINDMAPS: Record<string, MindMap> = {
       { title: 'Hình học phẳng', items: ['Điểm, đường thẳng, tia', '$AM+MB=AB$', 'Trung điểm: nằm giữa + cách đều', 'Góc và số đo góc'] },
       { title: 'Thống kê & Xác suất', items: ['Bảng, biểu đồ tranh, biểu đồ cột', 'Đọc và phân tích số liệu', 'Xác suất thực nghiệm'] },
       { title: 'Dạng bài trọng tâm HK2', items: ['Tính hợp lí với phân số', 'Bài toán phân số – phần trăm', 'Tính độ dài đoạn thẳng, chứng minh trung điểm', 'Tính số đo góc'] },
+      { title: 'Bẫy thường gặp', items: ['Lấy $\\f{a}{b}$ trên số ban đầu thay vì \"số còn lại\"', 'Tăng $10\\%$ rồi giảm $10\\%$ tưởng về giá cũ', 'Chỉ có $MA=MB$ đã kết luận trung điểm', 'Cắt bỏ đuôi thay vì làm tròn'] },
+      { title: 'Chiến thuật phòng thi', items: ['Vẽ hình và ghi ký hiệu ngay khi đọc đề hình học', 'Bài phần trăm: xác định \"toàn bộ\" trước khi tính', 'Tính hợp lí: tìm nhân tử chung trước', 'Kiểm tra xác suất có nằm trong $[0;1]$'] },
     ],
   },
   '7-HK1': {
@@ -344,6 +348,8 @@ export const TERM_MINDMAPS: Record<string, MindMap> = {
       { title: 'Hình khối', items: ['Hình hộp chữ nhật, lập phương', 'Lăng trụ đứng', '$S_{xq}=C\\cdot h$, $V=S\\cdot h$'] },
       { title: 'Thống kê', items: ['Thu thập, phân loại dữ liệu', 'Biểu đồ đoạn thẳng', 'Biểu đồ hình quạt tròn'] },
       { title: 'Dạng bài trọng tâm HK1', items: ['Tính hợp lí số hữu tỉ', 'Tìm $x$ có dấu giá trị tuyệt đối', 'Tính góc với hai đường song song', 'Bài toán hình khối thực tế'] },
+      { title: 'Bẫy thường gặp', items: ['Viết $\\s{a}=\\pm\\s{a}$ (căn số học luôn không âm)', 'Từ $|x|=a$ chỉ lấy $x=a$, quên $x=-a$', 'Cộng thẳng tử mẫu khi điều kiện có hệ số', 'Gọi sai tên cặp góc so le trong / trong cùng phía'] },
+      { title: 'Chiến thuật phòng thi', items: ['Xác định cát tuyến trước khi gọi tên cặp góc', 'Điều kiện chứa tích hoặc bình phương thì đặt tham số $t$', 'Bài lăng trụ: đọc kỹ có nắp hay không', 'Soát lại điều kiện xác định của mọi căn thức'] },
     ],
   },
   '7-HK2': {
@@ -354,6 +360,8 @@ export const TERM_MINDMAPS: Record<string, MindMap> = {
       { title: 'Tam giác', items: ['Tổng ba góc, góc ngoài', 'c.c.c, c.g.c, g.c.g', 'Tam giác cân, đều', 'Bất đẳng thức tam giác', 'Bốn đường đồng quy'] },
       { title: 'Xác suất', items: ['Biến cố chắc chắn / không thể / ngẫu nhiên', '$P(A)=\\f{m}{k}$'] },
       { title: 'Dạng bài trọng tâm HK2', items: ['Bài toán chia tỉ lệ', 'Tính giá trị, tìm nghiệm đa thức', 'Chứng minh hai tam giác bằng nhau', 'Chứng minh trung trực, vuông góc'] },
+      { title: 'Bẫy thường gặp', items: ['Xác định bậc đa thức khi chưa thu gọn', 'Dùng \"hai cạnh và một góc\" mà góc không xen giữa', 'Quên trường hợp $x+y+z=0$ ở dãy tỉ số', 'Nhầm xác suất lí thuyết với thực nghiệm'] },
+      { title: 'Chiến thuật phòng thi', items: ['Câu hình: lấy trọn ý a, b trước khi nghĩ ý cuối', 'Vẽ hình to, ghi đủ ký hiệu vuông góc và đoạn bằng nhau', 'Chứng minh bằng nhau: tìm hai tam giác chứa chúng', 'Liệt kê không gian mẫu ra giấy, đừng nhẩm'] },
     ],
   },
   '8-HK1': {
@@ -364,6 +372,8 @@ export const TERM_MINDMAPS: Record<string, MindMap> = {
       { title: 'Tứ giác', items: ['Sơ đồ quan hệ các tứ giác', 'Dấu hiệu nhận biết', 'Đường trung bình', 'Trung tuyến cạnh huyền'] },
       { title: 'Pythagore & Hình chóp', items: ['$a^{2}=b^{2}+c^{2}$', 'Pythagore đảo', 'Bộ ba Pythagore', '$V=\\f{1}{3}Sh$'] },
       { title: 'Dạng bài trọng tâm HK1', items: ['Phân tích nhân tử, tìm $x$', 'Rút gọn biểu thức', 'Chứng minh tứ giác đặc biệt', 'Cực trị bằng hoàn thành bình phương'] },
+      { title: 'Bẫy thường gặp', items: ['Viết $(a-b)^{2}=a^{2}-b^{2}$', 'Viết $(a+b)^{3}=a^{3}+b^{3}$', 'Quên điều kiện xác định của phân thức', 'Rút gọn từng hạng tử của một tổng'] },
+      { title: 'Chiến thuật phòng thi', items: ['Phân tích nhân tử theo thứ tự: chung → hằng đẳng thức → nhóm → tách', 'Mọi bài phân thức mở đầu bằng điều kiện xác định', 'Tứ giác: chứng minh hình bình hành trước', 'Kiểm tra phân tích đã triệt để chưa'] },
     ],
   },
   '8-HK2': {
@@ -374,6 +384,8 @@ export const TERM_MINDMAPS: Record<string, MindMap> = {
       { title: 'Thalès & Đồng dạng', items: ['Thalès thuận, đảo, hệ quả', 'Tính chất đường phân giác', 'c.c.c – c.g.c – g.g', 'Tỉ số diện tích $k^{2}$'] },
       { title: 'Xác suất', items: ['Xác suất lí thuyết', 'Xác suất thực nghiệm', 'Ước lượng tần số'] },
       { title: 'Dạng bài trọng tâm HK2', items: ['Giải bài toán bằng cách lập phương trình', 'Bài toán chuyển động, năng suất', 'Chứng minh đồng dạng, hệ thức tích', 'Ứng dụng đồng dạng đo gián tiếp'] },
+      { title: 'Bẫy thường gặp', items: ['Quên đặt điều kiện và đối chiếu ở bài lập phương trình', 'Song song mà quên điều kiện hai tung độ gốc khác nhau', 'Áp tỉ số $k$ cho diện tích thay vì $k^{2}$', 'Dùng chiều cao thay trung đoạn khi tính $S_{xq}$'] },
+      { title: 'Chiến thuật phòng thi', items: ['Bài chuyển động: lập bảng quãng đường – vận tốc – thời gian', 'Đồng dạng: ưu tiên trường hợp g.g', 'Hệ thức tích $\\to$ đưa về tỉ số $\\to$ tìm cặp tam giác đồng dạng', 'Soát lại đơn vị và điều kiện thực tế của nghiệm'] },
     ],
   },
   '9-HK1': {
@@ -384,6 +396,8 @@ export const TERM_MINDMAPS: Record<string, MindMap> = {
       { title: 'Bất phương trình', items: ['Tính chất bất đẳng thức', 'Nhân số âm: đổi chiều', 'Biểu diễn tập nghiệm'] },
       { title: 'Hệ thức lượng & Đường tròn', items: ['$b^{2}=ab\'$, $h^{2}=b\'c\'$, $ah=bc$', 'Tỉ số lượng giác', 'Tiếp tuyến, hai tiếp tuyến cắt nhau', 'Góc nội tiếp, tứ giác nội tiếp'] },
       { title: 'Dạng bài trọng tâm HK1', items: ['Rút gọn biểu thức + câu hỏi phụ', 'Giải bài toán bằng cách lập hệ', 'Giải tam giác vuông', 'Chứng minh tứ giác nội tiếp'] },
+      { title: 'Bẫy thường gặp', items: ['Bỏ dấu căn mà quên giá trị tuyệt đối', 'Căn ở mẫu chỉ ghi điều kiện $\\ge0$', 'Viết $\\s{a+b}=\\s{a}+\\s{b}$', 'Nhầm $h^{2}$ bằng tích hai hình chiếu thành tích hai cạnh góc vuông'] },
+      { title: 'Chiến thuật phòng thi', items: ['Câu 1 rút gọn: điều kiện xác định trước, đặt $t=\\s{x}$ sau', 'Hệ phương trình: quan sát hệ số để chọn thế hay cộng đại số', 'Tam giác vuông: kiểm tra chéo bằng Pythagore', 'Giữ trọn điểm hai câu đầu trước khi làm câu phân loại'] },
     ],
   },
   '9-HK2': {
@@ -394,6 +408,8 @@ export const TERM_MINDMAPS: Record<string, MindMap> = {
       { title: 'Hệ thức Viète', items: ['$S=-\\f{b}{a}$, $P=\\f{c}{a}$', 'Biểu thức đối xứng', 'Dấu của hai nghiệm', 'Hệ thức độc lập tham số'] },
       { title: 'Hình khối tròn xoay', items: ['Hình trụ: $V=\\pi r^{2}h$', 'Hình nón: $V=\\f{1}{3}\\pi r^{2}h$, $l^{2}=r^{2}+h^{2}$', 'Hình cầu: $S=4\\pi R^{2}$, $V=\\f{4}{3}\\pi R^{3}$'] },
       { title: 'Trọng tâm ôn thi vào 10', items: ['Câu 1: rút gọn biểu thức', 'Câu 2: lập hệ / lập phương trình', 'Câu 3: parabol – đường thẳng, Viète tham số', 'Câu 4: hình học 4 ý', 'Câu 5: bất đẳng thức, cực trị'] },
+      { title: 'Bẫy thường gặp', items: ['Dùng Viète mà chưa khẳng định $\\Delta\\ge0$', 'Quên dấu trừ ở công thức $S=-\\f{b}{a}$', 'Chia bất phương trình cho số âm mà không đổi chiều', 'Dùng $h$ thay $l$ trong công thức $S_{xq}$ hình nón'] },
+      { title: 'Chiến thuật phòng thi', items: ['Tương giao: lập phương trình hoành độ giao điểm trước', 'Câu hình vào 10: vẽ hình chuẩn, lấy trọn ý a và b', 'Tứ giác nội tiếp: săn hai góc vuông cùng nhìn một đoạn', 'Bất đẳng thức: dự đoán điểm rơi trước khi biến đổi'] },
     ],
   },
 };

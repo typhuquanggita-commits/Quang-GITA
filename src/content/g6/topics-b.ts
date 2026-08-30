@@ -48,7 +48,7 @@ export const G6_TOPICS_B: Topic[] = [
       },
       {
         heading: '4. Quy tắc dấu ngoặc và chuyển vế',
-        body: [],
+        body: ['Hai quy tắc biến đổi được dùng nhiều nhất khi rút gọn biểu thức và tìm $x$. Điểm chung của cả hai là **đổi dấu**.'],
         formulas: [
           'Bỏ ngoặc đằng trước có dấu “$+$”: giữ nguyên dấu mọi số hạng.',
           'Bỏ ngoặc đằng trước có dấu “$-$”: **đổi dấu** mọi số hạng bên trong.',
@@ -164,7 +164,7 @@ export const G6_TOPICS_B: Topic[] = [
       },
       {
         heading: '2. Bốn phép tính với phân số',
-        body: [],
+        body: ['Quy tắc giống hệt số nguyên, chỉ thêm bước quy đồng ở phép cộng và trừ. Nhân chia thì **không** cần quy đồng.'],
         formulas: [
           '$\\f{a}{m}+\\f{b}{m}=\\f{a+b}{m}$ (cùng mẫu)',
           '$\\f{a}{b}\\cdot\\f{c}{d}=\\f{ac}{bd}$',
@@ -286,7 +286,7 @@ export const G6_TOPICS_B: Topic[] = [
       },
       {
         heading: '2. Tỉ số và tỉ số phần trăm',
-        body: [],
+        body: ['Tỉ số phần trăm chỉ là phân số có mẫu $100$. Việc khó nhất không phải phép tính mà là xác định đúng đâu là "toàn bộ".'],
         formulas: [
           'Tỉ số của $a$ và $b$ ($b\\ne0$) là $\\f{a}{b}$ hay $a:b$',
           'Tỉ số phần trăm của $a$ và $b$: $\\f{a}{b}\\cdot100\\percent$',
@@ -387,7 +387,7 @@ export const G6_TOPICS_B: Topic[] = [
       },
       {
         heading: '2. Dấu hiệu nhận biết nhanh',
-        body: [],
+        body: ['Mỗi hình đặc biệt có một bộ dấu hiệu riêng. Nhớ theo **cặp đối lập** sẽ nhanh hơn học thuộc rời rạc.'],
         formulas: [
           'Hình vuông = hình chữ nhật có 4 cạnh bằng nhau = hình thoi có 4 góc vuông',
           'Hình thoi: 4 cạnh bằng nhau, hai đường chéo vuông góc và cắt nhau tại trung điểm mỗi đường',
@@ -475,7 +475,7 @@ export const G6_TOPICS_B: Topic[] = [
     theory: [
       {
         heading: '1. Điểm, đường thẳng, tia, đoạn thẳng',
-        body: [],
+        body: ['Bốn khái niệm nền tảng của hình học phẳng. Mọi bài tính độ dài đều xuất phát từ quan hệ giữa chúng.'],
         formulas: [
           'Qua hai điểm phân biệt có **một và chỉ một** đường thẳng.',
           'Nếu điểm $M$ nằm giữa $A$ và $B$ thì $AM+MB=AB$.',
@@ -486,7 +486,7 @@ export const G6_TOPICS_B: Topic[] = [
       },
       {
         heading: '2. Góc và số đo góc',
-        body: [],
+        body: ['Góc được đo bằng độ. Tia nằm giữa cho phép **cộng góc**, giống như điểm nằm giữa cho phép cộng đoạn thẳng.'],
         formulas: [
           'Góc nhọn: $0\\deg<\\alpha<90\\deg$ ; Góc vuông: $\\alpha=90\\deg$',
           'Góc tù: $90\\deg<\\alpha<180\\deg$ ; Góc bẹt: $\\alpha=180\\deg$',

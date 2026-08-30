@@ -26,7 +26,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '2. Lũy thừa của số hữu tỉ',
-        body: [],
+        body: ['Các quy tắc lũy thừa của số tự nhiên vẫn đúng nguyên vẹn cho số hữu tỉ, chỉ cần chú ý dấu khi cơ số âm.'],
         formulas: [
           '$x^{m}\\cdot x^{n}=x^{m+n}$ ; $x^{m}:x^{n}=x^{m-n}$ ($x\\ne0$, $m\\ge n$)',
           '$(x^{m})^{n}=x^{mn}$',
@@ -37,7 +37,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '3. Giá trị tuyệt đối và căn bậc hai số học',
-        body: [],
+        body: ['Hai khái niệm có chung một đặc điểm: kết quả **luôn không âm**. Đây là nguồn của gần như mọi bẫy trong chuyên đề.'],
         formulas: [
           '$\\abs{x}\\ge0$ với mọi $x$ ; $\\abs{x}=0\\Leftrightarrow x=0$',
           '$\\abs{x}=a$ ($a>0$) $\\Leftrightarrow x=a$ hoặc $x=-a$',
@@ -141,7 +141,7 @@ export const G7_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Tỉ lệ thức và tính chất',
-        body: [],
+        body: ['Tỉ lệ thức là đẳng thức giữa hai tỉ số. Tính chất cơ bản của nó là cầu nối giữa phân số và phương trình.'],
         formulas: [
           '$\\f{a}{b}=\\f{c}{d}\\Leftrightarrow ad=bc$ (tích chéo)',
           'Từ $ad=bc$ suy ra được 4 tỉ lệ thức: $\\f{a}{b}=\\f{c}{d}$; $\\f{a}{c}=\\f{b}{d}$; $\\f{d}{b}=\\f{c}{a}$; $\\f{d}{c}=\\f{b}{a}$',
@@ -159,7 +159,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '3. Đại lượng tỉ lệ thuận — tỉ lệ nghịch',
-        body: [],
+        body: ['Hai mô hình quan hệ phổ biến nhất trong bài toán thực tế. Phân biệt bằng câu hỏi: đại lượng nào không đổi — **tỉ số** hay **tích**?'],
         formulas: [
           'Tỉ lệ thuận: $y=kx$ ($k\\ne0$) ; $\\f{y_1}{x_1}=\\f{y_2}{x_2}=k$',
           'Tỉ lệ nghịch: $y=\\f{a}{x}$ ($a\\ne0$) ; $x_1y_1=x_2y_2=a$',
@@ -279,7 +279,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '2. Phép tính với đa thức một biến',
-        body: [],
+        body: ['Cộng trừ đa thức thực chất là gộp các hạng tử **cùng bậc**; nhân đa thức là nhân từng hạng tử rồi thu gọn.'],
         formulas: [
           'Cộng/trừ: cộng trừ các hệ số của những hạng tử **đồng dạng**.',
           'Nhân: nhân từng hạng tử rồi thu gọn; $ax^{m}\\cdot bx^{n}=abx^{m+n}$',
@@ -289,7 +289,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '3. Nghiệm của đa thức',
-        body: [],
+        body: ['Nghiệm là giá trị làm đa thức **triệt tiêu**. Đây là cầu nối giữa đa thức và phương trình.'],
         formulas: [
           '$x=a$ là nghiệm của $P(x)$ $\\Leftrightarrow P(a)=0$',
           'Đa thức bậc $n$ có **không quá** $n$ nghiệm.',
@@ -382,7 +382,7 @@ export const G7_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Các cặp góc cơ bản',
-        body: [],
+        body: ['Ba cặp góc dưới đây là toàn bộ công cụ tính góc của chuyên đề. Gọi đúng tên cặp góc là làm đúng bài.'],
         formulas: [
           'Hai góc kề bù: có tổng bằng $180\\deg$',
           'Hai góc đối đỉnh thì **bằng nhau**',
@@ -479,7 +479,7 @@ export const G7_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Tổng ba góc và góc ngoài',
-        body: [],
+        body: ['Hai định lí mở đầu về tam giác, dùng để tính góc thứ ba khi biết hai góc còn lại.'],
         formulas: [
           'Tổng ba góc trong một tam giác bằng $180\\deg$',
           'Góc ngoài của tam giác bằng **tổng hai góc trong không kề** với nó',
@@ -488,7 +488,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '2. Các trường hợp bằng nhau của hai tam giác',
-        body: [],
+        body: ['Chứng minh hai tam giác bằng nhau là con đường chuẩn để suy ra hai đoạn thẳng hoặc hai góc bằng nhau.'],
         formulas: [
           'Tam giác thường: **c.c.c** ; **c.g.c** ; **g.c.g**',
           'Tam giác vuông: hai cạnh góc vuông ; cạnh góc vuông – góc nhọn kề ; cạnh huyền – góc nhọn ; **cạnh huyền – cạnh góc vuông**',
@@ -498,7 +498,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '3. Tam giác cân, tam giác đều, đường trung trực',
-        body: [],
+        body: ['Tam giác cân cho rất nhiều kết luận từ một dữ kiện — đây là hình được khai thác nhiều nhất trong đề học kì.'],
         formulas: [
           'Tam giác cân: hai cạnh bên bằng nhau $\\Leftrightarrow$ hai góc ở đáy bằng nhau',
           'Trong tam giác cân, đường trung tuyến ứng với cạnh đáy đồng thời là đường cao, đường phân giác, đường trung trực',
@@ -508,7 +508,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '4. Quan hệ trong tam giác và các đường đồng quy',
-        body: [],
+        body: ['Phần này trả lời hai câu hỏi: ba đoạn nào tạo được tam giác, và bốn điểm đặc biệt của tam giác nằm ở đâu.'],
         formulas: [
           'Góc lớn hơn đối diện với cạnh lớn hơn (và ngược lại)',
           'Bất đẳng thức tam giác: $\\abs{b-c}<a<b+c$',
@@ -637,7 +637,7 @@ export const G7_TOPICS: Topic[] = [
     theory: [
       {
         heading: 'Công thức cần thuộc',
-        body: [],
+        body: ['Bộ công thức trọng tâm của chuyên đề. Học kèm **điều kiện áp dụng** thì mới dùng đúng chỗ.'],
         formulas: [
           'Hình hộp chữ nhật $a\\times b\\times c$: $S_{xq}=2(a+b)c$ ; $S_{tp}=2(ab+bc+ca)$ ; $V=abc$',
           'Hình lập phương cạnh $a$: $S_{tp}=6a^{2}$ ; $V=a^{3}$',
@@ -702,7 +702,7 @@ export const G7_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Biểu đồ',
-        body: [],
+        body: ['Mỗi loại biểu đồ sinh ra để trả lời một câu hỏi khác nhau. Chọn đúng loại là một phần của điểm số.'],
         formulas: [
           'Biểu đồ đoạn thẳng: mô tả sự **thay đổi theo thời gian**',
           'Biểu đồ hình quạt tròn: mô tả **tỉ lệ phần trăm** của các thành phần trong tổng thể',
@@ -711,7 +711,7 @@ export const G7_TOPICS: Topic[] = [
       },
       {
         heading: '2. Biến cố và xác suất',
-        body: [],
+        body: ['Phân loại biến cố trước giúp xác định ngay khoảng giá trị của xác suất, trước cả khi tính.'],
         formulas: [
           'Biến cố **chắc chắn**: luôn xảy ra, xác suất bằng 1',
           'Biến cố **không thể**: không bao giờ xảy ra, xác suất bằng 0',

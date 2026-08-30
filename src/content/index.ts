@@ -10,6 +10,7 @@ import { EXTRA_TYPES_G9 } from './enrich-g9';
 import { EXTRA_TYPES_MONG } from './enrich-mong';
 import { EXTRA_SKILLS } from './skills';
 import { EXTRA_DECODE } from './decode-plus';
+import { EXTRA_THEORY } from './theory-plus';
 
 /** Dạng bài bổ sung, gộp vào chuyên đề gốc theo mã chuyên đề. */
 /** Gộp nhiều nguồn dạng bài theo mã chuyên đề — **nối mảng** chứ không ghi đè,
@@ -60,8 +61,17 @@ const withDecode = (t: Topic): Topic => {
   return { ...t, decode: [...t.decode, ...add] };
 };
 
+/** Khối lý thuyết bổ sung, gộp theo mã chuyên đề và khử trùng theo tiêu đề. */
+const withTheory = (t: Topic): Topic => {
+  const extra = EXTRA_THEORY[t.id];
+  if (!extra?.length) return t;
+  const seen = new Set(t.theory.map((b) => norm(b.heading)));
+  const add = extra.filter((b) => !seen.has(norm(b.heading)));
+  return { ...t, theory: [...t.theory, ...add] };
+};
+
 export const ALL_TOPICS: Topic[] = [...G6_TOPICS, ...G7_TOPICS, ...G8_TOPICS, ...G9_TOPICS]
-  .map(withExtras).map(withSkills).map(withDecode);
+  .map(withExtras).map(withSkills).map(withDecode).map(withTheory);
 
 export const topicsOfGrade = (g: Grade): Topic[] =>
   ALL_TOPICS.filter((t) => t.grade === g).sort((a, b) => a.order - b.order);

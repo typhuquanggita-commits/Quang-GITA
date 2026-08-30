@@ -16,7 +16,7 @@ export const G9_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Hệ hai phương trình bậc nhất hai ẩn',
-        body: [],
+        body: ['Hai đại lượng chưa biết cần hai phương trình. Có ba cách giải, chọn cách nào tuỳ vào hình dạng hệ số.'],
         formulas: [
           'Dạng: $\\sys{ax+by=c\\\\a\'x+b\'y=c\'}$',
           '**Phương pháp thế**: rút một ẩn từ một phương trình rồi thế vào phương trình còn lại.',
@@ -133,7 +133,7 @@ export const G9_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Điều kiện xác định và hằng đẳng thức căn',
-        body: [],
+        body: ['Mọi bài căn thức mở đầu bằng điều kiện xác định. Hằng đẳng thức $\s{A^{2}}=|A|$ là nguồn của hầu hết bẫy trong chuyên đề.'],
         formulas: [
           '$\\s{A}$ xác định $\\Leftrightarrow A\\ge0$',
           '$\\s{A^{2}}=\\abs{A}$',
@@ -144,7 +144,7 @@ export const G9_TOPICS: Topic[] = [
       },
       {
         heading: '2. Các phép biến đổi',
-        body: [],
+        body: ['Bốn phép biến đổi cơ bản giúp đưa biểu thức chứa căn về dạng gọn nhất trước khi tính hoặc so sánh.'],
         formulas: [
           'Đưa thừa số ra ngoài: $\\s{A^{2}B}=\\abs{A}\\s{B}$',
           'Đưa thừa số vào trong: $A\\s{B}=\\s{A^{2}B}$ (khi $A\\ge0$)',
@@ -246,7 +246,7 @@ export const G9_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Hàm số $y=ax^{2}$ ($a\\ne0$)',
-        body: [],
+        body: ['Đồ thị là một parabol nhận trục $Oy$ làm trục đối xứng, đỉnh tại gốc toạ độ. Dấu của $a$ quyết định bề lõm hướng lên hay xuống.'],
         formulas: [
           'Đồ thị là parabol đỉnh $O(0;0)$, nhận trục $Oy$ làm trục đối xứng.',
           '$a>0$: đồ thị nằm phía trên $Ox$, $O$ là điểm thấp nhất.',
@@ -256,7 +256,7 @@ export const G9_TOPICS: Topic[] = [
       },
       {
         heading: '2. Phương trình bậc hai $ax^{2}+bx+c=0$ ($a\\ne0$)',
-        body: [],
+        body: ['Biệt thức $\Delta$ quyết định số nghiệm; hệ thức Viète cho tổng và tích hai nghiệm mà không cần giải.'],
         formulas: [
           '$\\Delta=b^{2}-4ac$',
           '$\\Delta>0$: hai nghiệm phân biệt $x_{1,2}=\\f{-b\\pm\\s{\\Delta}}{2a}$',
@@ -373,7 +373,7 @@ export const G9_TOPICS: Topic[] = [
     theory: [
       {
         heading: 'Tính chất và quy tắc',
-        body: [],
+        body: ['Bất phương trình biến đổi giống phương trình, trừ một điểm sống còn: nhân hoặc chia cho số **âm** thì phải đổi chiều.'],
         formulas: [
           '$a<b\\Rightarrow a+c<b+c$',
           '$a<b$ và $c>0$ $\\Rightarrow ac<bc$',
@@ -451,7 +451,7 @@ export const G9_TOPICS: Topic[] = [
       },
       {
         heading: '3. Giải tam giác vuông',
-        body: [],
+        body: ['Giải tam giác vuông là tìm tất cả cạnh và góc còn lại khi biết hai yếu tố, trong đó có ít nhất một cạnh.'],
         formulas: [
           'Cạnh góc vuông $=$ cạnh huyền $\\times\\sin$ góc đối $=$ cạnh huyền $\\times\\cos$ góc kề',
           'Cạnh góc vuông $=$ cạnh góc vuông kia $\\times\\tan$ góc đối $=$ cạnh góc vuông kia $\\times\\cot$ góc kề',
@@ -517,7 +517,7 @@ export const G9_TOPICS: Topic[] = [
     theory: [
       {
         heading: '1. Đường tròn, dây và tiếp tuyến',
-        body: [],
+        body: ['Ba đối tượng cơ bản của chuyên đề. Quan hệ vuông góc giữa tiếp tuyến và bán kính là chìa khoá của phần lớn bài chứng minh.'],
         formulas: [
           'Đường kính vuông góc với một dây thì đi qua trung điểm của dây ấy (và ngược lại, với dây không đi qua tâm).',
           'Trong một đường tròn, dây lớn hơn thì gần tâm hơn.',
@@ -527,7 +527,7 @@ export const G9_TOPICS: Topic[] = [
       },
       {
         heading: '2. Góc với đường tròn',
-        body: [],
+        body: ['Mọi loại góc đều quy về **cung bị chắn**. Nắm được bảng quy đổi này là giải được phần lớn câu hình thi vào 10.'],
         formulas: [
           'Góc ở tâm bằng số đo cung bị chắn.',
           'Góc nội tiếp bằng **nửa** số đo cung bị chắn.',
@@ -637,7 +637,7 @@ export const G9_TOPICS: Topic[] = [
     theory: [
       {
         heading: 'Công thức cần thuộc',
-        body: [],
+        body: ['Bộ công thức trọng tâm của chuyên đề. Học kèm **điều kiện áp dụng** thì mới dùng đúng chỗ.'],
         formulas: [
           'Hình trụ: $S_{xq}=2\\pi rh$ ; $S_{tp}=2\\pi rh+2\\pi r^{2}$ ; $V=\\pi r^{2}h$',
           'Hình nón: $S_{xq}=\\pi rl$ ; $S_{tp}=\\pi rl+\\pi r^{2}$ ; $V=\\f{1}{3}\\pi r^{2}h$',
@@ -689,7 +689,7 @@ export const G9_TOPICS: Topic[] = [
     theory: [
       {
         heading: 'Tần số và xác suất',
-        body: [],
+        body: ['Tần số mô tả dữ liệu đã thu thập; xác suất dự đoán khả năng xảy ra. Tần số tương đối là cầu nối giữa hai khái niệm.'],
         formulas: [
           'Tần số $n_i$: số lần xuất hiện của giá trị $x_i$',
           'Tần số tương đối: $f_i=\\f{n_i}{N}$ (thường viết dưới dạng phần trăm)',
