@@ -1,0 +1,571 @@
+<title>Sáu Cửa Vào KNS GITA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;1,400&display=swap">
+<style>
+:root{
+  --paper:#F6F8FC; --surface:#ECF1F8; --surface-2:#DFE7F3; --raised:#FFFFFF;
+  --ink:#0F1726; --ink-2:#33405A; --muted:#5D6A85;
+  --line:#D2DBEA; --line-2:#B9C6DC;
+  --blue:#1C4F9C; --red:#C81C13; --orbit:#3D79BC; --gold:#8A6100;
+  --blue-raw:#1C4F9C; --red-raw:#E1251B; --orbit-raw:#4A86C8; --gold-raw:#F2A900;
+  --shadow:0 1px 2px rgba(15,23,38,.04), 0 10px 30px -18px rgba(15,23,38,.28);
+  --sans:"Be Vietnam Pro",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --serif:"Noto Serif",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#080D18; --surface:#111A2C; --surface-2:#1A2740; --raised:#0E1626;
+    --ink:#E8EEF9; --ink-2:#C2CDE3; --muted:#8E9CB8;
+    --line:#202E48; --line-2:#2E3F5E;
+    --blue:#84B4E8; --red:#FF8578; --orbit:#8FBDEC; --gold:#F2A900;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 34px -18px rgba(0,0,0,.85);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#080D18; --surface:#111A2C; --surface-2:#1A2740; --raised:#0E1626;
+  --ink:#E8EEF9; --ink-2:#C2CDE3; --muted:#8E9CB8;
+  --line:#202E48; --line-2:#2E3F5E;
+  --blue:#84B4E8; --red:#FF8578; --orbit:#8FBDEC; --gold:#F2A900;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 34px -18px rgba(0,0,0,.85);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+p{margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:3px}
+
+/* GITA spine — thiết bị nhận diện bắt buộc của phân hệ 12 */
+.spine{position:fixed;left:0;top:0;bottom:0;width:8px;display:flex;flex-direction:column;z-index:60}
+.spine i{flex:1}
+.spine i:nth-child(1){background:var(--blue-raw)}
+.spine i:nth-child(2){background:var(--red-raw)}
+.spine i:nth-child(3){background:var(--gold-raw)}
+.spine i:nth-child(4){background:var(--orbit-raw)}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px 0 30px}
+.col{max-width:70ch}
+
+/* ── hero ── */
+.hero{padding:clamp(44px,6vw,84px) 0 32px}
+.kicker{font:600 11px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+h1{font-size:clamp(38px,6.4vw,68px);font-weight:800;letter-spacing:-.025em;line-height:1.02;color:var(--blue)}
+.thesis{font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.1vw,21px);
+  line-height:1.55;color:var(--ink-2);max-width:44ch;margin-top:22px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:26px;font:500 13px/1.5 var(--mono);color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ── trục diagram ── */
+.axes{margin:38px 0 0;background:var(--raised);border:1px solid var(--line);border-radius:10px;
+  padding:26px 24px 20px;box-shadow:var(--shadow)}
+.axes h3{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.axes .sub{font-size:14.5px;color:var(--ink-2);max-width:62ch;margin-bottom:16px}
+.axes svg{width:100%;height:auto;display:block;max-width:820px}
+.axes .dr{stroke-dasharray:900;stroke-dashoffset:900;animation:dr 1.15s cubic-bezier(.35,0,.2,1) forwards}
+.axes .dr.b{animation-delay:.16s}.axes .dr.c{animation-delay:.32s}
+.axes .fi{opacity:0;animation:fi .5s ease forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+@keyframes fi{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.axes .dr{animation:none;stroke-dashoffset:0}.axes .fi{animation:none;opacity:1}}
+.axnote{margin-top:16px;padding:13px 15px;border-left:3px solid var(--red-raw);
+  background:color-mix(in srgb,var(--red-raw) 6%,transparent);font-size:14.5px;line-height:1.6;border-radius:0 5px 5px 0}
+.axnote b{color:var(--red)}
+
+/* ── router ── */
+.router{margin:46px 0 0;border-top:1px solid var(--line);padding-top:30px}
+.router h2{font-size:clamp(21px,3vw,27px);font-weight:800;letter-spacing:-.015em}
+.router p.lede{color:var(--muted);font-size:15px;margin-top:8px;max-width:60ch}
+.roles{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.role{font-family:var(--sans);font-size:14px;font-weight:600;color:var(--ink-2);
+  background:var(--surface);border:1px solid var(--line);border-radius:999px;
+  padding:9px 16px;cursor:pointer;transition:background .14s,border-color .14s,color .14s}
+.role:hover{border-color:var(--line-2);color:var(--ink)}
+.role[aria-pressed="true"]{background:var(--blue-raw);border-color:var(--blue-raw);color:#fff}
+.routeout{margin-top:18px;min-height:26px;font-size:14.5px;color:var(--ink-2)}
+.routeout .seq{font-family:var(--mono);font-weight:600;color:var(--blue)}
+.routeout .time{font-family:var(--mono);font-size:13px;color:var(--muted)}
+
+/* ── ladder ── */
+.ladder{margin:56px 0 0}
+.station{border-top:1px solid var(--line);padding:44px 0 40px;
+  display:grid;grid-template-columns:88px 1fr;gap:0 28px;align-items:start;
+  transition:opacity .2s}
+.station.dim{opacity:.34}
+.snum{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--muted);
+  position:sticky;top:20px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.snum .big{font-family:var(--sans);font-size:44px;font-weight:800;line-height:.85;
+  letter-spacing:-.03em;color:var(--line-2)}
+.station[data-on="1"] .snum .big{color:var(--blue)}
+.snum .tag{font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.sbody h2{font-size:clamp(24px,3.6vw,34px);font-weight:800;letter-spacing:-.022em;line-height:1.12}
+.q{font-family:var(--serif);font-style:italic;font-size:16.5px;color:var(--ink-2);
+  margin-top:12px;max-width:60ch;line-height:1.6}
+.sbody>p{margin-top:14px;color:var(--ink-2);max-width:66ch;font-size:15.5px}
+
+.grid{display:grid;gap:12px;margin-top:22px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.card{background:var(--raised);border:1px solid var(--line);border-radius:9px;padding:16px 17px}
+.card h4{font-size:14px;font-weight:700;margin-bottom:6px}
+.card p{font-size:13.5px;color:var(--muted);line-height:1.55}
+
+.files{margin-top:24px;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--raised)}
+.files .fh{font:600 10.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);padding:12px 16px;background:var(--surface);border-bottom:1px solid var(--line)}
+.f{display:grid;grid-template-columns:minmax(210px,270px) 1fr;gap:4px 18px;
+  padding:12px 16px;border-bottom:1px solid var(--line);font-size:14px;line-height:1.55}
+.f:last-child{border-bottom:0}
+.f code{font-family:var(--mono);font-size:12.5px;color:var(--blue);word-break:break-all}
+.f span{color:var(--ink-2)}
+.f.key{background:color-mix(in srgb,var(--blue-raw) 5%,transparent)}
+.f.warn code{color:var(--red)}
+@media (max-width:640px){.f{grid-template-columns:1fr}}
+
+.rule{margin-top:22px;border:1px solid var(--red-raw);border-radius:8px;padding:15px 17px;
+  background:color-mix(in srgb,var(--red-raw) 5%,transparent)}
+.rule b{display:block;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin-bottom:6px}
+.rule p{font-size:14.5px;line-height:1.6;color:var(--ink-2)}
+
+details.check{margin-top:24px;border:1px solid var(--line-2);border-radius:8px;background:var(--surface)}
+details.check summary{cursor:pointer;padding:13px 17px;font-size:13.5px;font-weight:600;color:var(--ink-2);
+  list-style:none;display:flex;align-items:center;gap:9px}
+details.check summary::-webkit-details-marker{display:none}
+details.check summary::before{content:"›";font-family:var(--mono);font-size:19px;color:var(--blue);
+  transition:transform .16s;display:inline-block}
+details.check[open] summary::before{transform:rotate(90deg)}
+details.check ol{margin:0;padding:0 20px 16px 44px;font-size:14.5px;line-height:1.7;color:var(--ink-2)}
+details.check li{margin-bottom:8px}
+
+/* ── fence (phụ lục) ── */
+.fences{margin:60px 0 0;border-top:3px solid var(--red-raw);padding-top:34px}
+.fences>h2{font-size:clamp(22px,3.2vw,30px);font-weight:800;letter-spacing:-.02em}
+.fences>p.lede{color:var(--ink-2);margin-top:10px;max-width:64ch;font-size:15.5px}
+.fence{margin-top:26px;border:1px solid var(--line);border-left:4px solid var(--red-raw);
+  border-radius:0 9px 9px 0;background:var(--raised);padding:20px 22px}
+.fence h3{font-size:18px;font-weight:700;letter-spacing:-.01em}
+.fence p{font-size:14.5px;color:var(--ink-2);margin-top:8px;max-width:64ch}
+.fence .files{margin-top:16px}
+
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:520px}
+.scroll{overflow-x:auto;margin-top:20px;border:1px solid var(--line);border-radius:9px}
+th{background:var(--surface);color:var(--ink);font-weight:700;font-size:12px;text-align:left;
+  padding:11px 14px;letter-spacing:.04em;text-transform:uppercase;border-bottom:1px solid var(--line)}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+tr:last-child td{border-bottom:0}
+td b{color:var(--ink);font-weight:600}
+td code,.mono{font-family:var(--mono);font-size:12.5px;font-variant-numeric:tabular-nums}
+
+footer{margin-top:64px;border-top:1px solid var(--line);padding:30px 0 60px;
+  font-size:13.5px;color:var(--muted);line-height:1.7}
+footer b{color:var(--ink)}
+</style>
+
+<div class="spine" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<div class="wrap">
+
+<header class="hero">
+  <p class="kicker">Học viện GITA · hệ GEN VIỆT · học liệu KNSGITA</p>
+  <h1>Sáu cửa vào<br>KNS GITA</h1>
+  <p class="thesis">Bộ tài liệu có 17 phân hệ và 97 tệp. Đừng đọc từ trên xuống — hãy vào đúng cửa của mình.</p>
+  <div class="facts">
+    <span><b>288</b> cụm chuyên đề</span>
+    <span><b>12</b> khối · lớp 1 → 12</span>
+    <span><b>360</b> phút mỗi cụm</span>
+    <span><b>1.728</b> giờ / học sinh / 12 năm</span>
+  </div>
+
+  <div class="axes">
+    <h3>Thứ làm KNS GITA khác biệt</h3>
+    <p class="sub">Phần lớn chương trình kỹ năng sống dùng <em>một</em> thang để đo mọi thứ. Hệ này tách làm ba trục độc lập — và chính việc tách ba trục đã giải quyết tám chỗ lệch cùng một lúc.</p>
+    <svg viewBox="0 0 820 232" role="img" aria-label="Ba trục của hệ GITA: trục pha G-I-T-A, trục sâu sáu bậc, trục vai mười Cấp Độ">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0,1 L9,5 L0,9 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <g font-family="IBM Plex Mono, monospace" font-size="10.5" font-weight="600" letter-spacing="1.6" fill="currentColor" opacity=".55">
+        <text class="fi" x="0" y="26" style="animation-delay:.9s">TRỤC 3 · VAI</text>
+        <text class="fi" x="0" y="112" style="animation-delay:.75s">TRỤC 2 · SÂU</text>
+        <text class="fi" x="0" y="200" style="animation-delay:.6s">TRỤC 1 · PHA</text>
+      </g>
+
+      <g stroke-width="2.4" fill="none" stroke-linecap="round" color="currentColor">
+        <line class="dr" x1="132" y1="196" x2="700" y2="196" stroke="#4A86C8" marker-end="url(#ar)"/>
+        <line class="dr b" x1="132" y1="108" x2="700" y2="108" stroke="#1C4F9C" marker-end="url(#ar)"/>
+        <line class="dr c" x1="132" y1="22" x2="700" y2="22" stroke="#F2A900" marker-end="url(#ar)"/>
+      </g>
+
+      <g font-family="Be Vietnam Pro, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+        <g class="fi" style="animation-delay:.62s">
+          <circle cx="176" cy="196" r="15" fill="#1C4F9C"/><text x="176" y="201" fill="#fff">G</text>
+          <circle cx="316" cy="196" r="15" fill="#E1251B"/><text x="316" y="201" fill="#fff">I</text>
+          <circle cx="456" cy="196" r="15" fill="#F2A900"/><text x="456" y="201" fill="#1A1000">T</text>
+          <circle cx="596" cy="196" r="15" fill="#4A86C8"/><text x="596" y="201" fill="#fff">A</text>
+        </g>
+      </g>
+      <g class="fi" font-family="Be Vietnam Pro, sans-serif" font-size="11" fill="currentColor" opacity=".72" text-anchor="middle" style="animation-delay:.7s">
+        <text x="176" y="222">định đích</text><text x="316" y="222">thắp lửa</text>
+        <text x="456" y="222">luyện</text><text x="596" y="222">hành động</text>
+      </g>
+
+      <g class="fi" font-family="Be Vietnam Pro, sans-serif" font-size="11.5" fill="currentColor" style="animation-delay:.82s">
+        <g text-anchor="middle">
+          <text x="176" y="96">Nhận thức</text><text x="256" y="96">Thói quen</text>
+          <text x="336" y="96">Kỹ năng</text><text x="416" y="96">Tư duy</text>
+          <text x="502" y="96" font-weight="800" fill="#E1251B">NỘI LỰC</text>
+          <text x="596" y="96">Phẩm chất</text>
+        </g>
+        <g fill="#1C4F9C">
+          <circle cx="176" cy="108" r="4"/><circle cx="256" cy="108" r="4"/><circle cx="336" cy="108" r="4"/>
+          <circle cx="416" cy="108" r="4"/><circle cx="502" cy="108" r="6.5" fill="#E1251B"/><circle cx="596" cy="108" r="4"/>
+        </g>
+      </g>
+
+      <g class="fi" style="animation-delay:.95s">
+        <g>
+          <circle cx="176" cy="22" r="7" fill="#FFFFFF" stroke="#A8AEBC" stroke-width="1.5"/>
+          <circle cx="260" cy="22" r="7" fill="#2E8B4F"/>
+          <circle cx="344" cy="22" r="7" fill="#1C4F9C"/>
+          <circle cx="428" cy="22" r="7" fill="#A8AEBC"/>
+          <circle cx="512" cy="22" r="7" fill="#F2C200"/>
+          <circle cx="596" cy="22" r="8.5" fill="#C9A227"/>
+        </g>
+        <g font-family="Be Vietnam Pro, sans-serif" font-size="10.5" fill="currentColor" opacity=".72" text-anchor="middle">
+          <text x="176" y="48">Trắng</text><text x="260" y="48">Xanh Lá</text><text x="344" y="48">Xanh Dương</text>
+          <text x="428" y="48">Bạc</text><text x="512" y="48">Vàng</text><text x="596" y="48">Đại sứ</text>
+        </g>
+      </g>
+    </svg>
+    <div class="axnote"><b>Nội lực nằm ở bậc 5, không phải bậc 1.</b> Ý chí và bản lĩnh không phải điểm xuất phát — chúng là kết quả của một đống bằng chứng đã tích luỹ. Vì vậy ở hai bậc đầu, việc của huấn luyện viên là <b>cấp bằng chứng</b>, không phải <b>cấp lời khích lệ</b>.</div>
+  </div>
+</header>
+
+<section class="router" aria-label="Chọn lối vào theo vai trò">
+  <h2>Bạn là ai?</h2>
+  <p class="lede">Chọn một vai — trang sẽ chỉ ra đường đi ngắn nhất cho bạn, và làm mờ những mục chưa cần đọc ngay.</p>
+  <div class="roles" id="roles">
+    <button class="role" type="button" aria-pressed="false" data-role="hlv">🧑‍🏫 Huấn luyện viên mới</button>
+    <button class="role" type="button" aria-pressed="false" data-role="ph">👨‍👩‍👧 Phụ huynh</button>
+    <button class="role" type="button" aria-pressed="false" data-role="bgh">🏫 Ban giám hiệu</button>
+    <button class="role" type="button" aria-pressed="false" data-role="hv">🎓 Học viên</button>
+    <button class="role" type="button" aria-pressed="false" data-role="bs">🛠️ Người biên soạn</button>
+    <button class="role" type="button" aria-pressed="false" data-role="qt">🔐 Quản trị hệ thống</button>
+  </div>
+  <p class="routeout" id="routeout">Chưa chọn vai — đang hiện đủ sáu mục.</p>
+</section>
+
+<div class="ladder" id="ladder">
+
+  <!-- ① -->
+  <section class="station" data-s="1">
+    <div class="snum"><span class="big">01</span><span class="tag">Tổng quan</span></div>
+    <div class="sbody">
+      <h2>Giới thiệu tổng quan KNS GITA</h2>
+      <p class="q">KNS GITA là gì, vì sao nó tồn tại, và nó khác gì với những chương trình kỹ năng sống khác?</p>
+      <div class="grid g3">
+        <div class="card"><h4>Mô thức GITA</h4><p>Goal → Inspirits → Talent → Action. Bốn chữ chi phối 100% nội dung, lặp trong mọi buổi 180 phút.</p></div>
+        <div class="card"><h4>Ba trục</h4><p>Pha · Sâu · Vai. Tách ba trục là chẩn đoán gốc — tám chỗ lệch trước đây chỉ là một lỗi lặp tám lần.</p></div>
+        <div class="card"><h4>Bảy giá trị</h4><p>Yêu nước · Trách nhiệm · Chính trực · Kiên trì · Hợp tác · Sáng tạo · Phụng sự.</p></div>
+      </div>
+      <div class="rule"><b>Câu hỏi phủ quyết</b><p>Trước khi đưa bất cứ nội dung nào vào chương trình: <em>“Cái này có làm mạnh thêm bản lĩnh và hệ giá trị Gen Việt không?”</em> Trả lời “không” thì bỏ, dù nội dung đó hay đến đâu.</p></div>
+      <div class="files">
+        <div class="fh">Tệp của mục 1</div>
+        <div class="f key"><code>00-KHUNG-NEN-TANG/09-KIEN-TRUC-HOP-NHAT-GITA.md</code><span><b>Đọc tệp này nếu chỉ có thời gian đọc một tệp.</b> Ba trục, cách chúng ăn khớp, bảng quy đổi giữ nguyên 288 cụm và 19 rubric.</span></div>
+        <div class="f"><code>00-KHUNG-NEN-TANG/01-MO-THUC-HUAN-LUYEN-GITA.md</code><span>Lý thuyết và kỹ thuật vận hành GITA · GOAL STACK 7 tầng · 20/80 · HABIT-5 · Squad 5 vai.</span></div>
+        <div class="f"><code>00-KHUNG-NEN-TANG/07-HE-GEN-VIET.md</code><span>5 trụ cột · quy chuẩn thành viên · tổ chức TRN – ACT – QLHV – Leader.</span></div>
+        <div class="f"><code>00-KHUNG-NEN-TANG/02-CHUAN-DOI-SANH-QUOC-TE-VA-BGD.md</code><span>Đối sánh CT GDPT 2018, TT27, TT22 với CASEL, OECD 2030, UNESCO LSCE, WHO, P21, IB, ISTE.</span></div>
+        <div class="f warn"><code>00-KHUNG-NEN-TANG/08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md</code><span>Những chỗ khớp và những chỗ lệch với nguồn gốc Học viện. <b>Khi mâu thuẫn, nguồn gốc thắng.</b></span></div>
+        <div class="f"><code>12-NHAN-DIEN-THUONG-HIEU/01-HE-NHAN-DIEN-KNSGITA.md</code><span>Logo · màu · chữ · biểu tượng · 12 mẫu tài liệu · giọng điệu · checklist 20 mục trước khi phát hành.</span></div>
+      </div>
+      <details class="check"><summary>Mốc kiểm tra hiểu — trả lời được mà không mở lại tài liệu</summary>
+        <ol>
+          <li>Bốn chữ GITA là gì, và trong một buổi 180 phút chúng xuất hiện theo thứ tự nào?</li>
+          <li>Vì sao nói <em>nội lực nằm ở bậc 5</em>? Điều đó thay đổi cách huấn luyện viên nói chuyện với học sinh như thế nào?</li>
+          <li>Ba trục khác nhau ở chỗ nào? Cho một ví dụ học sinh <b>cao ở trục 3 nhưng thấp ở trục 2</b>.</li>
+          <li>Câu hỏi phủ quyết là gì?</li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <!-- ② -->
+  <section class="station" data-s="2">
+    <div class="snum"><span class="big">02</span><span class="tag">Lớp 1 → 12</span></div>
+    <div class="sbody">
+      <h2>Kỹ năng sống lớp 1 → lớp 12</h2>
+      <p class="q">Học sinh khối nào học gì? Vì sao xếp thứ tự như vậy? Và một cụm chuyên đề trông ra sao?</p>
+      <div class="scroll"><table>
+        <thead><tr><th>Giai đoạn</th><th>Khối</th><th>Cụm</th><th>Đích giai đoạn</th><th>Cấp Độ</th></tr></thead>
+        <tbody>
+          <tr><td><b>🌱 Khởi Mầm</b></td><td class="mono">1–3</td><td class="mono">72</td><td>Con an toàn – tự phục vụ – dám nói</td><td>Cấp 1 → 2</td></tr>
+          <tr><td><b>🌿 Bén Rễ</b></td><td class="mono">4–5</td><td class="mono">48</td><td>Tự học có phương pháp – hợp tác ổn định</td><td>Cấp 3</td></tr>
+          <tr><td><b>🌳 Vươn Cành</b></td><td class="mono">6–9</td><td class="mono">96</td><td>Định vị được mình – dẫn được nhóm – chịu được sức ép</td><td>Cấp 4 → 7</td></tr>
+          <tr><td><b>🚀 Cất Cánh</b></td><td class="mono">10–12</td><td class="mono">72</td><td>Chọn được đường – tạo được tác động – có hồ sơ chứng minh</td><td>Cấp 8 → 10</td></tr>
+        </tbody>
+      </table></div>
+      <p>Mã cụm đọc được cả hệ: <b class="mono">K07-N2-03</b> = khối 7 · nhóm kỹ năng 2 <em>(giao tiếp xã hội)</em> · cụm thứ 3 của nhóm.</p>
+      <div class="rule"><b>Ba định dạng bài trong nguồn gốc — lỗi biên soạn hay gặp nhất</b><p><b>Tiểu học 1–5:</b> 50 bài × 30–35′ → <b>GỘP</b> 2–3 bài thành 1 cụm. &nbsp;·&nbsp; <b>THCS 6–8:</b> 16–18 bài × 90′ → <b>NỞ</b> 1 bài thành 1 cụm 180′ × 2. &nbsp;·&nbsp; <b>THPT 9–12:</b> 9–16 bài × 90–135′ → <b>TÁCH mạch</b>, 1 bài thành 2–3 cụm. Áp dụng nhầm quy tắc của cấp này sang cấp khác là lỗi nghiêm trọng nhất ở mục này.</p></div>
+      <div class="files">
+        <div class="fh">Tệp của mục 2</div>
+        <div class="f key"><code>01-CHUONG-TRINH-KHUNG/PHUONG-AN-HOP-NHAT-24-CUM-180-PHUT.md</code><span>Nền tảng của cả mục. Chìa khoá: <b>50 ÷ 24 = 2,08</b> → 24 chính là cấp <em>cụm</em> của 50 bài gốc. Không bỏ bài nào.</span></div>
+        <div class="f"><code>01-CHUONG-TRINH-KHUNG/BAN-DO-CHUONG-TRINH-288.md</code><span>Ma trận tổng · trục xoắn ốc · cách một mạch năng lực đi xuyên 12 năm.</span></div>
+        <div class="f"><code>01-CHUONG-TRINH-KHUNG/KHOI-01.md … KHOI-12.md</code><span>Đặc tả 24 cụm mỗi khối — dùng để <b>dạy</b>.</span></div>
+        <div class="f"><code>01-CHUONG-TRINH-KHUNG/DOI-CHIEU-KHOI-01 … 12.md</code><span>Đối chiếu với giáo án gốc của Học viện — dùng để <b>kiểm</b>. Khi hai bên khác nhau, lấy theo tệp đối chiếu.</span></div>
+        <div class="f"><code>00-KHUNG-NEN-TANG/05-CHUAN-DAU-RA-THEO-KHOI.md</code><span>Exit Profile từng khối — dùng để trả lời phụ huynh <em>“cuối năm con làm được gì?”</em></span></div>
+      </div>
+      <details class="check"><summary>Mốc kiểm tra hiểu</summary>
+        <ol>
+          <li>Đọc mã <b class="mono">K09-N3-02</b> — bạn biết được những gì?</li>
+          <li>Vì sao khối 6–8 <b>không gộp bài</b> như khối 1–5?</li>
+          <li>Mở một tệp đối chiếu bất kỳ: <b>bài gốc nào của khối đó khiến bạn bất ngờ nhất, vì sao?</b></li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <!-- ③ -->
+  <section class="station" data-s="3">
+    <div class="snum"><span class="big">03</span><span class="tag">Kho tài liệu</span></div>
+    <div class="sbody">
+      <h2>Kho tài liệu</h2>
+      <p class="q">Tôi cần dạy một cụm vào thứ Hai tới. Lấy gì, ở đâu, theo thứ tự nào?</p>
+      <div class="scroll"><table>
+        <thead><tr><th>Bước</th><th>Mở cái gì</th><th>Lấy được gì</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">1</td><td><b>Khối của mình</b></td><td>Chọn cụm, đọc hai vạch ĐẠT / XUẤT SẮC</td></tr>
+          <tr><td class="mono">2</td><td><b>Giáo án cụm</b></td><td>Tiến trình 7 hoạt động × 180 phút</td></tr>
+          <tr><td class="mono">3</td><td><b>Kịch bản từng phút</b></td><td>Lời dẫn gần nguyên văn</td></tr>
+          <tr><td class="mono">4</td><td>Kho <b>04</b> trò chơi · <b>05</b> công cụ tư duy · <b>06</b> phiếu</td><td>Vật liệu cho từng pha</td></tr>
+          <tr><td class="mono">5</td><td><b>Phiếu KNS 5 lớp</b> + Phiếu Sứ Mệnh</td><td>Bản in phát cho học sinh</td></tr>
+          <tr><td class="mono">6</td><td>🔴 <b>Kho tình huống & phác đồ (16)</b></td><td>Bắt buộc — không được bỏ</td></tr>
+          <tr><td class="mono">7</td><td>Checklist 20 mục của phân hệ <b>12</b></td><td>Chạy trước khi in</td></tr>
+        </tbody>
+      </table></div>
+      <div class="files">
+        <div class="fh">Giáo án · kịch bản</div>
+        <div class="f key"><code>02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N1-01.md</code><span>Mẫu chuẩn của khuôn hợp nhất. Mỗi dòng ghi rõ <b class="mono">[GỐC #n]</b> hay <b class="mono">[GITA]</b>, có <b>ĐIỂM CẮT 90′</b>.</span></div>
+        <div class="f warn"><code>02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N3-02.md</code><span>Mẫu chủ đề nhạy cảm — 10 quy tắc an toàn bắt buộc, chuỗi cảm xúc không được đổi thứ tự.</span></div>
+        <div class="f"><code>02-GIAO-AN-KE-HOACH/MAU-GIAO-AN-CUM-K01-N4-05.md</code><span>Mẫu bản sắc Việt — Tết Việt của con, 5 quy tắc bắt buộc về lì xì.</span></div>
+        <div class="f"><code>03-KICH-BAN-DAO-TAO/KICH-BAN-CUM-K01-N1-01 · K04-N1-04 · K07-N2-03.md</code><span>Ba kịch bản cụm đầy đủ, mỗi giai đoạn một cái.</span></div>
+      </div>
+      <div class="files">
+        <div class="fh">Bốn kho học liệu</div>
+        <div class="f key"><code>04-KHO-HOAT-DONG-TRO-CHOI/40-TRO-CHOI-VIET-DAY-DU.md</code><span>40 trò dùng được ngay — 8 trò mỗi pha. Mỗi trò có lời hô mẫu, <b>4 bậc L1–L4 có dấu hiệu đạt</b>, an toàn thể chất và tâm lý, 4–5 phương án dự phòng.</span></div>
+        <div class="f key"><code>05-KHO-CONG-CU-DUNG-CU/40-CONG-CU-TU-DUY-CHI-TIET.md</code><span>40 công cụ, mỗi cái có <b>một ví dụ đã điền đúng khối</b>, dấu hiệu chấm là dùng đúng, ba lỗi hay gặp — kèm lộ trình cài theo khối 1→12.</span></div>
+        <div class="f"><code>06-KHO-PHIEU-THUC-HANH/BO-PHIEU-MAU-DAY-DU.md</code><span>20 phiếu mẫu vẽ đầy đủ, bản in ra dùng được ngay.</span></div>
+        <div class="f key"><code>10-GIAO-TRINH-ONLINE/05-BO-ONLINE-KHOI-01-SAU-CUM.md</code><span>Bộ thí điểm online 6 cụm khối 1 — chuyển thẳng sang khâu sản xuất được: 6 audio ≈81 phút kèm bản chép lời nguyên văn, 60 câu trắc nghiệm, 4 câu an toàn có cơ chế chặn.</span></div>
+      </div>
+      <div class="files">
+        <div class="fh">🔴 Bắt buộc đọc trước khi đứng lớp</div>
+        <div class="f warn"><code>16-KHO-TINH-HUONG-VA-CONG-CU/01-KHO-100-TINH-HUONG-SU-PHAM.md</code><span>100 tình huống, ba mức. Điểm khác biệt là cột thứ ba <b>“Điều thực sự đang xảy ra”</b> — thứ người mới vào nghề không nhìn ra.</span></div>
+        <div class="f warn"><code>16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md</code><span>12 phác đồ: sơ đồ khối, mốc thời gian, điểm quyết định, <b>người chịu trách nhiệm từng bước</b>, điểm dừng an toàn.</span></div>
+      </div>
+      <div class="rule"><b>Quy tắc không có ngoại lệ</b><p>Một huấn luyện viên <b>chưa đọc 12 phác đồ</b> thì <b>chưa được đứng lớp</b>, dù đã thuộc hết nội dung chuyên môn. Dạy sai nội dung thì sửa được ở buổi sau; xử lý sai một tình huống bảo vệ trẻ em thì không.</p></div>
+      <details class="check"><summary>Mốc kiểm tra hiểu</summary>
+        <ol>
+          <li>Bạn được giao dạy cụm <b class="mono">K01-N3-02</b> vào thứ Hai. Liệt kê <b>theo thứ tự</b> những tệp bạn sẽ mở.</li>
+          <li>Trong 12 phác đồ, phác đồ nào áp dụng khi <b>người bị nghi ngờ là chính nhân sự của trường</b>?</li>
+          <li>Tìm <b>một trò chơi không được dùng</b> khi lớp chưa có trợ giảng ACT. Vì sao?</li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <!-- ④ -->
+  <section class="station" data-s="4">
+    <div class="snum"><span class="big">04</span><span class="tag">Lộ trình</span></div>
+    <div class="sbody">
+      <h2>Lộ trình cá nhân hoá KNS với GV – HV</h2>
+      <p class="q">Cùng một chương trình, làm sao mỗi học viên đi con đường riêng? Và giáo viên đi lên theo lộ trình nào?</p>
+      <p>Cá nhân hoá ở đây <b>không</b> làm bằng cách viết 30 giáo án cho 30 học sinh. Nó làm bằng bốn cơ chế chạy song song trong cùng một buổi.</p>
+      <div class="grid g2">
+        <div class="card"><h4>① Hai vạch</h4><p>Mọi mục tiêu có ĐẠT và XUẤT SẮC; học sinh <b>tự chọn vạch mình nhắm</b>. Không ai quá sức, không ai nhàm.</p></div>
+        <div class="card"><h4>② Bốn bậc L1–L4</h4><p>Cùng một hoạt động chạy ở bốn độ khó. Cùng sân, khác tải.</p></div>
+        <div class="card"><h4>③ Bốn ô chấm B1–B4</h4><p>Đo <b>em so với chính em ở lượt trước</b>, không so với bạn. Ai cũng thấy mình tiến.</p></div>
+        <div class="card"><h4>④ Phiếu sứ mệnh riêng</h4><p>Việc mang về do chính em thiết kế bằng HABIT-5 — khả thi với hoàn cảnh thật của em.</p></div>
+      </div>
+      <div class="scroll"><table>
+        <thead><tr><th>Cấp</th><th>Pin</th><th>Tên cấp</th><th>Điều phải chứng minh</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">1</td><td>⚪ Trắng</td><td>Thành viên làm quen</td><td>Dự ≥50% buổi · thuộc nội quy và 7 giá trị</td></tr>
+          <tr><td class="mono">2–3</td><td>🟢 Xanh Lá</td><td>Tích cực → có mục tiêu</td><td>Giữ 1 thói quen <b>21 ngày</b> · đích năm bám ≥80% · 1 dự án nhóm</td></tr>
+          <tr><td class="mono">4–5</td><td>🔵 Xanh Dương</td><td>Nòng cốt → hạt giống phục vụ</td><td>B3 ở ≥5/8 mạch · <b>kèm được ≥1 bạn</b> có xác nhận</td></tr>
+          <tr><td class="mono">6–7</td><td>⚙️ Bạc</td><td>Ban chuyên trách → leader nhóm</td><td>Dẫn nhóm ≥5 người · <b>đào tạo được người thay mình</b></td></tr>
+          <tr><td class="mono">8–9</td><td>🟡 Vàng</td><td>Trưởng ban → thủ lĩnh CLB</td><td>Trọn nhiệm kỳ · vượt ≥2 khủng hoảng · dự án có bên thứ ba xác nhận</td></tr>
+          <tr><td class="mono">10</td><td>🏅 Đại sứ</td><td>Đại sứ hệ thống</td><td>Hội đồng đề cử · dự án liên trường · hồ sơ đã đào tạo và cố vấn</td></tr>
+        </tbody>
+      </table></div>
+      <div class="rule"><b>Bốn chốt chặn chống tác hại của phân tầng</b><p><b>①</b> Tầng năng lực HS-T1→T5 <b>chỉ hiển thị trong hồ sơ cá nhân</b> và với phụ huynh của chính em đó — cấm dán bảng, cấm xếp hạng công khai. <b>②</b> Không có bảng xếp hạng lớp, kể cả bảng “khích lệ”. <b>③</b> Mọi bảng vinh danh phải có cột <em>tiến bộ nhất</em>. <b>④</b> Quyền <b class="mono">= MIN(rào tuổi, tầng năng lực)</b> — giỏi sớm vẫn không mở được nội dung vượt rào tuổi.</p></div>
+      <div class="files">
+        <div class="fh">Tệp của mục 4</div>
+        <div class="f key"><code>16-KHO-TINH-HUONG-VA-CONG-CU/03-HE-10-CAP-DO-CHI-TIET.md</code><span>Đặc tả đầy đủ Cấp 1 → Cấp 10: tiêu chí xét, nhóm năng lực trọng tâm, <b>10 chương trình huấn luyện cho mỗi cấp</b>, biểu mẫu.</span></div>
+        <div class="f"><code>00-KHUNG-NEN-TANG/04-LO-TRINH-BE-PHONG-TAI-NANG.md</code><span>Lộ trình 12 năm · 4 giai đoạn · bảng 10 Cấp Độ hệ Pin · Hộ chiếu năng lực · Hồ sơ tài năng.</span></div>
+        <div class="f"><code>11-PHAN-QUYEN-BAO-MAT/02-TANG-NANG-LUC-HOC-SINH-VA-MO-KHOA.md</code><span>5 tầng HS-T1→T5 × 4 rào tuổi · bảng mở khoá nội dung – công cụ – quyền tự chủ.</span></div>
+        <div class="f"><code>16-KHO-TINH-HUONG-VA-CONG-CU/04-CHI-BAO-G1-G5-VA-RUBRIC-GIAO-VIEN.md</code><span>Dashboard vận hành · rubric M0–M3 cho GVCN, GV bộ môn, HLV, điều phối viên.</span></div>
+        <div class="f"><code>09-VAN-HANH-TRIEN-KHAI/CHUAN-HUAN-LUYEN-VIEN-GITA.md</code><span>Bốn bậc huấn luyện viên · nội dung đào tạo · quy trình cấp và thu hồi chứng nhận.</span></div>
+      </div>
+      <details class="check"><summary>Mốc kiểm tra hiểu</summary>
+        <ol>
+          <li>Một học sinh lớp 6 rất giỏi, đạt B4 ở 7/8 mạch. Em có được lên <b>Cấp 6 ⚙️ Bạc</b> không? Vì sao?</li>
+          <li>Bốn cơ chế cá nhân hoá chạy <b>trong cùng một buổi</b> là gì?</li>
+          <li>Vì sao khối 9 và khối 10 <b>không cài công cụ tư duy mới</b>?</li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <!-- ⑤ -->
+  <section class="station" data-s="5">
+    <div class="snum"><span class="big">05</span><span class="tag">Sản phẩm</span></div>
+    <div class="sbody">
+      <h2>Sản phẩm KNS của GV – HV</h2>
+      <p class="q">Sau 12 năm, học sinh cầm cái gì trong tay? Và giáo viên tạo ra cái gì ngoài buổi dạy?</p>
+      <p style="font-family:var(--serif);font-style:italic;font-size:17px;color:var(--ink)">Không có sản phẩm thì không có bằng chứng. Không có bằng chứng thì không có nội lực.</p>
+      <div class="grid g2">
+        <div class="card"><h4>📘 Hộ chiếu GITA</h4><p>Sổ A5 tám trang. <b>Một cụm một dấu.</b> Dán Cấp Độ và Pin đã đạt. Học sinh giữ, huấn luyện viên đóng dấu.</p></div>
+        <div class="card"><h4>💎 Hồ sơ Tài năng</h4><p>Tập bằng chứng chọn lọc, dựng dần từ lớp 4. Đến lớp 12 thành <b>Hồ sơ Cất Cánh</b>: dự án có số liệu, bài luận, CV, kế hoạch 5 năm.</p></div>
+        <div class="card"><h4>🔥 Nhật ký Bằng Chứng</h4><p><em>“Việc tôi từng nghĩ mình không làm được, và bằng chứng tôi đã làm.”</em> Riêng tư — huấn luyện viên không đọc nếu chưa được phép.</p></div>
+        <div class="card"><h4>🏮 Hồ sơ Di sản cá nhân</h4><p>Câu chuyện gia đình, quê hương, người con biết ơn. Có <b>quy tắc đạo đức lưu trữ riêng</b>.</p></div>
+      </div>
+      <div class="rule"><b>SHOWCASE — bốn quy tắc</b><p>Mỗi cụm kết thúc bằng SHOWCASE 30 phút. <b>①</b> 100% học sinh đều trưng bày, không chọn lọc — chọn lọc biến nó thành cuộc thi. <b>②</b> Trưng bày <b>bằng chứng</b>, không trưng bày điểm. <b>③</b> Có Vòng Ghi Nhận khép lại — không ai ra về mà chưa từng được ghi nhận. <b>④</b> Không xếp hạng; chỉ ba cột: <em>tiến bộ nhất · giúp bạn nhiều nhất · giữ chuỗi dài nhất</em> — ba cột ai cũng có đường vào.</p></div>
+      <div class="files">
+        <div class="fh">Tệp của mục 5</div>
+        <div class="f key"><code>13-TRAI-NGHIEM-DICH-VU/01-BAN-DO-HANH-TRINH-VA-KHOANH-KHAC-WOW.md</code><span>12 khoảnh khắc WOW <b>đặc tả thi công</b>: người làm, hạn, chi phí, nơi kiểm đếm. Tổng dưới <b>20.000đ/học sinh/năm</b>.</span></div>
+        <div class="f"><code>12-NHAN-DIEN-THUONG-HIEU/03-BO-MAU-TAI-LIEU.md</code><span>Bản vẽ bố cục Hộ chiếu GITA (mẫu 08), chứng nhận Cấp Độ (mẫu 09), báo cáo phụ huynh (mẫu 10).</span></div>
+        <div class="f"><code>16-KHO-TINH-HUONG-VA-CONG-CU/05-TRU-DI-SAN-GEN-VIET.md</code><span>Hồ sơ Di sản cá nhân · 1000 Gương Nhân Tài · quy tắc đạo đức lưu trữ câu chuyện học sinh.</span></div>
+      </div>
+      <details class="check"><summary>Mốc kiểm tra hiểu</summary>
+        <ol>
+          <li>Một học sinh lớp 12 đi phỏng vấn học bổng, mở <b>Hồ sơ Cất Cánh</b> ra — trong đó có gì?</li>
+          <li>Vì sao SHOWCASE <b>bắt buộc 100% học sinh trưng bày</b>?</li>
+          <li>Ba cột của Bảng Vàng là gì, và vì sao <b>không có cột “học sinh giỏi nhất”</b>?</li>
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <!-- ⑥ -->
+  <section class="station" data-s="6">
+    <div class="snum"><span class="big">06</span><span class="tag">Đo lường</span></div>
+    <div class="sbody">
+      <h2>Hệ thống đánh giá, đo lường</h2>
+      <p class="q">Làm sao biết chắc điều gì đã thay đổi — và nói điều đó bằng số liệu, không bằng cảm tính?</p>
+      <div class="scroll"><table>
+        <thead><tr><th>Tầng bằng chứng</th><th>Đo cái gì</th><th>Cách đo</th><th>Trọng số</th></tr></thead>
+        <tbody>
+          <tr><td><b>1 · Phản ứng</b></td><td>Học sinh có thích buổi học không</td><td>Phiếu nhanh cuối buổi</td><td class="mono">10%</td></tr>
+          <tr><td><b>2 · Học được</b></td><td>Nói lại được, làm được <em>tại lớp</em></td><td>Rubric + 4 vòng T-DRILL</td><td class="mono">25%</td></tr>
+          <tr><td><b>3 · Chuyển giao</b></td><td>Có làm ở nhà, ở sân trường, <b>khi không ai nhìn</b> không</td><td>Phiếu sứ mệnh có người chứng · bảng chuỗi · 3 bài đo hành vi 12 phút</td><td class="mono"><b>40%</b></td></tr>
+          <tr><td><b>4 · Tác động</b></td><td>Có gì đổi ở lớp, ở trường, ở gia đình</td><td>Khảo sát trước–sau · số liệu nhà trường</td><td class="mono">25%</td></tr>
+        </tbody>
+      </table></div>
+      <p><b>Tầng 3 chiếm trọng số cao nhất — đây là điểm phân biệt.</b> Một chương trình dạy rất hay ở lớp mà không có gì đi ra khỏi lớp thì mất gần một nửa giá trị theo thang này.</p>
+      <div class="grid g2" style="margin-top:20px">
+        <div class="card"><h4>◔ B1 · Biết</h4><p>Nói lại được, gọi tên được. Hiểu luật sau một lần nghe.</p></div>
+        <div class="card"><h4>◑ B2 · Làm đều</h4><p>Làm được <b>khi có nhắc</b>. Đúng ở bậc L1–L2.</p></div>
+        <div class="card"><h4>◕ B3 · Làm giỏi</h4><p>Làm đúng <b>không cần nhắc</b>, giải thích được vì sao. Giữ chất lượng ở L3.</p></div>
+        <div class="card"><h4>● B4 · Tự cháy</h4><p><b>Tự nâng đích</b>, kèm lại bạn. Chủ động xin lên L4, tự dạy nhóm khác.</p></div>
+      </div>
+      <div class="rule"><b>Năm quy tắc đạo đức đo lường — không có ngoại lệ</b><p><b>①</b> Mọi báo cáo phải chứa <b>ít nhất một con số không có lợi cho mình</b>. <b>②</b> Không tuyên bố nhân quả khi thiết kế đo không cho phép — dùng <em>“gợi ý rằng”</em>, không dùng <em>“chứng minh rằng”</em>. <b>③</b> Không xếp hạng học sinh công khai. <b>④</b> Không đo cái mình không định cải thiện. <b>⑤</b> Dữ liệu cảm xúc, cơ thể, tài chính, hoàn cảnh gia đình của trẻ là <b class="mono">D3–D4</b>.</p></div>
+      <div class="files">
+        <div class="fh">Tệp của mục 6</div>
+        <div class="f key"><code>07-KHO-PHIEU-DANH-GIA/BO-RUBRIC-CHI-TIET-19-HO.md</code><span>19 rubric gốc viết đầy đủ bốn mức · 7 quy tắc viết rubric · ngưỡng <b>hiệu chuẩn người chấm ≥80%</b> · quy đổi TT27 và TT22.</span></div>
+        <div class="f key"><code>14-DO-LUONG-TAC-DONG/01-KHUNG-DO-LUONG-VA-BO-CHI-SO.md</code><span>4 tầng bằng chứng · 3 bài đo hành vi 12 phút · <b>5 thiên lệch và cách chống</b> · 18 chỉ số lõi.</span></div>
+        <div class="f"><code>14-DO-LUONG-TAC-DONG/02-BO-BAO-CAO-TAC-DONG-3-CAP.md</code><span>Báo cáo phụ huynh 1 trang · nhà trường 4 trang · hội đồng 8 trang <b>có trang tự nêu hạn chế</b>.</span></div>
+        <div class="f"><code>00-KHUNG-NEN-TANG/06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md</code><span>49 tiêu chí kiểm định một buổi huấn luyện — dùng để dự giờ và xét bậc huấn luyện viên.</span></div>
+      </div>
+      <details class="check"><summary>Mốc kiểm tra hiểu</summary>
+        <ol>
+          <li>Một lớp có 100% học sinh nói <em>“con thích buổi học”</em> nhưng <b>không em nào giữ chuỗi 7 ngày</b>. Theo bốn tầng bằng chứng, lớp đó đang ở đâu?</li>
+          <li>Vì sao mọi báo cáo phải có <b>một con số không có lợi cho mình</b>?</li>
+          <li>Ngưỡng hiệu chuẩn người chấm là bao nhiêu, và nếu không đạt thì làm gì?</li>
+        </ol>
+      </details>
+    </div>
+  </section>
+</div>
+
+<section class="fences">
+  <h2>Hai hàng rào</h2>
+  <p class="lede">Sáu mục ở trên là <b>đường đi</b>. Hai phần dưới đây là <b>hàng rào</b> — chúng cao hơn mọi hướng dẫn nghiệp vụ ở sáu mục trên. Đi theo đường thì nhanh; nhưng hàng rào thì không được bước qua.</p>
+
+  <div class="fence">
+    <h3>Phụ lục A · Vận hành, phân quyền &amp; bảo mật</h3>
+    <p>Khi hướng dẫn nghiệp vụ ở bất kỳ mục nào mâu thuẫn với phần này, <b>áp dụng phần này</b>.</p>
+    <div class="rule" style="margin-top:14px"><b>Hai nguyên tắc phủ quyết của toàn hệ</b><p><b>①</b> <b>Chức vụ cao ≠ quyền dữ liệu cao.</b> Super Admin và Giám đốc điều hành <b>không đọc được</b> hồ sơ bảo vệ trẻ em mức D4. <b>②</b> <b>Cấm tuyệt đối kênh nhắn tin riêng 1-1</b> giữa nhân sự và người học dưới 16 tuổi — trên mọi nền tảng, không có ngoại lệ.</p></div>
+    <div class="files">
+      <div class="fh">Tệp</div>
+      <div class="f"><code>11-PHAN-QUYEN-BAO-MAT/01-KIEN-TRUC-PHAN-QUYEN-RBAC.md</code><span>11 vai · ma trận quyền · tách bạch trách nhiệm · quy tắc 4 mắt · break-glass.</span></div>
+      <div class="f warn"><code>11-PHAN-QUYEN-BAO-MAT/03-CHINH-SACH-BAO-MAT-DU-LIEU.md</code><span>Sổ đăng ký <b>16 lỗ hổng đã bịt L-01 → L-16</b> · phân loại D1–D4 · quy trình ứng phó sự cố.</span></div>
+      <div class="f"><code>11-PHAN-QUYEN-BAO-MAT/04-NHAT-KY-KIEM-TOAN-VA-KIEM-SOAT.md</code><span>Nhật ký <b>chỉ-thêm, không ai xoá được</b> · 12 dấu hiệu bất thường · mẫu biên bản rà quyền 90 ngày.</span></div>
+      <div class="f"><code>09-VAN-HANH-TRIEN-KHAI/SO-TAY-TRIEN-KHAI.md</code><span>Chuẩn lớp · lịch triển khai · phối hợp nhà trường.</span></div>
+    </div>
+  </div>
+
+  <div class="fence">
+    <h3>Phụ lục B · Mô hình dịch vụ, trải nghiệm &amp; phát triển</h3>
+    <p>Chương trình chỉ thành <b>dịch vụ</b> khi có phân hệ 13, thành <b>bằng chứng</b> khi có phân hệ 14, và thành <b>mô hình sống được</b> khi có phân hệ 17.</p>
+    <div class="files">
+      <div class="fh">Tệp</div>
+      <div class="f"><code>17-MO-HINH-DICH-VU-VA-PHAT-TRIEN/01-KIEN-TRUC-GOI-DICH-VU.md</code><span>3 kênh phân phối · 9 gói sản phẩm · cấu trúc chi phí · <b>điểm hoà vốn theo sĩ số</b>.</span></div>
+      <div class="f"><code>17-MO-HINH-DICH-VU-VA-PHAT-TRIEN/02-HO-SO-CHAO-TRUONG.md</code><span>Thư ngỏ · hồ sơ năng lực · dự thảo thoả thuận · kịch bản 30 phút với ban giám hiệu · ma trận RACI.</span></div>
+      <div class="f"><code>17-MO-HINH-DICH-VU-VA-PHAT-TRIEN/03-NHAN-RONG-VA-CHUYEN-GIAO.md</code><span>3 giai đoạn nhân rộng · quy trình chuyển giao 6 bước · <b>điều kiện bất khả thương lượng</b>.</span></div>
+      <div class="f"><code>13-TRAI-NGHIEM-DICH-VU/02-CHUAN-DICH-VU-TU-VAN-VA-KHIEU-NAI.md</code><span>SLA 10 loại việc · 6 cam kết và điều <b>không</b> cam kết · 10 phản đối thường gặp · quy trình khiếu nại LEAD.</span></div>
+      <div class="f"><code>15-SEO-VA-HIEN-DIEN-SO/…</code><span>E-E-A-T · bản đồ từ khoá · 6 mẫu JSON-LD · kế hoạch 12 tháng · trang mẫu đăng được ngay.</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>Sáu cửa vào KNS GITA</b> — bản đồ điều hướng của bộ tài liệu KNS365, phiên bản 2026. Tên tệp trong trang này là <b>đường dẫn trong kho tài liệu</b>, không phải liên kết mạng: mở chúng trong thư mục <code class="mono">KNS365/</code> của kho.</p>
+  <p style="margin-top:10px">Nội dung chạm tới an toàn và bảo vệ trẻ em <b>không thay thế</b> quy trình của nhà trường và quy định pháp luật hiện hành. Khi có mâu thuẫn, áp dụng quy định pháp luật và quy trình nhà trường. Tổng đài Quốc gia Bảo vệ Trẻ em: <b>111</b>.</p>
+  <p style="margin-top:10px">© 2026 Học viện GITA · hệ GEN VIỆT · thương hiệu học liệu KNSGITA.</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var ROUTES={
+    hlv:{seq:[1,3,6],label:"Huấn luyện viên mới",time:"~4 giờ",note:"Bắt buộc đọc kho tình huống và 12 phác đồ ở mục 3 trước khi đứng lớp."},
+    ph:{seq:[1,2,5],label:"Phụ huynh",time:"~40 phút",note:"Ở mục 2, mở thẳng khối của con."},
+    bgh:{seq:[1,6],label:"Ban giám hiệu",time:"~1 giờ",note:"Sau đó xem Phụ lục B — mô hình dịch vụ và điều kiện triển khai."},
+    hv:{seq:[2,4,5],label:"Học viên",time:"tuỳ lộ trình",note:"Bắt đầu từ khối của mình, rồi xem mình đang ở Cấp Độ nào."},
+    bs:{seq:[3,2,6],label:"Người biên soạn học liệu",time:"~1 ngày",note:"Đọc hết mục 3 trước, vì nó chứa mọi khuôn mẫu."},
+    qt:{seq:[],label:"Quản trị hệ thống",time:"~2 giờ",note:"Vào thẳng Phụ lục A — phân quyền và bảo mật — trước mọi thứ khác."}
+  };
+  var KEY="knsgita.role", roles=document.getElementById("roles"),
+      out=document.getElementById("routeout"), stations=[].slice.call(document.querySelectorAll(".station"));
+
+  function clear(){
+    stations.forEach(function(s){ s.classList.remove("dim"); s.removeAttribute("data-on"); });
+    out.textContent="Chưa chọn vai — đang hiện đủ sáu mục.";
+    [].forEach.call(roles.children,function(b){ b.setAttribute("aria-pressed","false"); });
+  }
+  function apply(role){
+    var r=ROUTES[role]; if(!r){ clear(); return; }
+    [].forEach.call(roles.children,function(b){
+      b.setAttribute("aria-pressed", b.dataset.role===role ? "true" : "false");
+    });
+    stations.forEach(function(s){
+      var n=parseInt(s.dataset.s,10), on=r.seq.indexOf(n)>=0;
+      s.classList.toggle("dim", !on);
+      if(on){ s.setAttribute("data-on","1"); } else { s.removeAttribute("data-on"); }
+    });
+    var path = r.seq.length ? r.seq.map(function(n){return "0"+n;}).join(" → ") : "Phụ lục A";
+    out.innerHTML='<span class="seq">'+path+'</span> &nbsp;·&nbsp; '+r.note+' &nbsp;<span class="time">'+r.time+'</span>';
+  }
+  roles.addEventListener("click",function(e){
+    var b=e.target.closest(".role"); if(!b) return;
+    var role=b.dataset.role, already=b.getAttribute("aria-pressed")==="true";
+    if(already){ clear(); try{ localStorage.removeItem(KEY); }catch(_){} return; }
+    apply(role);
+    try{ localStorage.setItem(KEY, role); }catch(_){}
+  });
+  try{ var saved=localStorage.getItem(KEY); if(saved && ROUTES[saved]) apply(saved); }catch(_){}
+})();
+</script>

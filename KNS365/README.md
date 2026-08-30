@@ -6,7 +6,9 @@
 
 ## 🧭 BẮT ĐẦU TỪ ĐÂU — 6 MỤC LỚN
 
-> Bộ tài liệu này có 17 phân hệ và hơn 100 tệp. **Đừng đọc từ trên xuống.** Hãy vào đúng mục của mình.
+> Bộ tài liệu này có 17 phân hệ và 97 tệp. **Đừng đọc từ trên xuống.** Hãy vào đúng mục của mình.
+>
+> 🧭 **[Mở bản đồ trực quan — *Sáu cửa vào KNS GITA*](SAU-CUA-VAO-KNS-GITA.html)** *(mở bằng trình duyệt)* — có bộ chọn vai trò, sơ đồ ba trục, và mốc tự kiểm tra hiểu ở mỗi mục.
 
 ```
    ┌────────────────────────────────────────────────────────────────────────┐
