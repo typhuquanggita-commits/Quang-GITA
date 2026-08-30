@@ -7,8 +7,8 @@ Tháng này nhóm bàn những chuyện khó hơn tháng 1: buổi sáng hỗn l
 |---|---|---|---|
 | 5 | Buổi sáng và nếp ngày | Làm sao để buổi sáng nhà mình bớt hỗn loạn? | ✅ đã soạn |
 | 6 | Bài tập và tiếng nói trong nhà | Làm sao để con tự làm bài tập mà không phải ngồi kèm? | ✅ đã soạn |
-| 7 | Con và điện thoại · tuổi dậy thì | Làm sao để con bớt phụ thuộc điện thoại vào cuối tuần? | ⏳ đang soạn |
-| 8 | Lời hứa và anh chị em · khép tháng | Làm sao để cả nhà giữ lời hứa với nhau? | ⏳ đang soạn |
+| 7 | Con và điện thoại · tuổi dậy thì | Làm sao để con bớt phụ thuộc điện thoại vào cuối tuần? | ✅ đã soạn |
+| 8 | Lời hứa và anh chị em · khép tháng | Làm sao để cả nhà giữ lời hứa với nhau? | ✅ đã soạn |
 
 **Thay đổi so với tháng 1:** từ tuần 5, **mọi bình luận ghim đều dẫn về [Thư viện Gia Đình](https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84)**
 thay vì dẫn thẳng từng bộ công cụ — để mỗi bài đều đưa người ta vào cùng một cửa, và cửa đó có bước tiếp theo
@@ -710,3 +710,726 @@ Thư viện Gia Đình — nhà nào chưa có Mã gia đình thì soạn phiế
 3. Tuần sau nhà mình muốn nghe về chuyện gì?
 ```
 **Lưu ý:** Điền số thật, trích nguyên văn. Không viết lại lời thành viên.
+
+---
+
+# Tuần 7 · Con và điện thoại · tuổi dậy thì
+
+## Thứ Hai 11:45 · Bài nhẹ
+### Cuối tuần con nhà mình dùng điện thoại khoảng mấy tiếng?
+`G2-W07-T2-N` · Kỹ năng cha mẹ – vợ chồng · **CARE-1**
+
+```
+Cuối tuần con nhà mình dùng điện thoại khoảng mấy tiếng?
+
+Ghi một con số ước chừng thôi ạ. Không cần chính xác, và em không phán xét gì cả.
+
+Nhà em thú thật là không đếm nổi — vì bố mẹ cũng đang cầm máy.
+```
+
+*Không có liên kết — không cần bình luận ghim.*
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Con nhà mình mấy tuổi ạ?
+2. Ngày thường có ít hơn không?
+3. Nhà mình có đặt giới hạn nào chưa?
+```
+**Lưu ý:** Câu 'em không phán xét' là chủ ý — chủ đề này khiến bố mẹ dễ thấy xấu hổ và im lặng.
+
+## Thứ Hai 19:45 · Nhiệm Vụ Gia Đình Tuần
+### Làm sao để con bớt phụ thuộc điện thoại vào cuối tuần?
+`G2-W07-T2-NHIEMVU` · Hoạt động gia đình · **CARE-3**
+
+```
+Làm sao để con bớt phụ thuộc điện thoại vào cuối tuần?
+
+Câu trả lời ngắn: đừng lấy đi điện thoại. **Hãy lấp đầy khoảng trống mà nó đang lấp.**
+
+Con cầm điện thoại nhiều vào cuối tuần vì cuối tuần trống. Cấm mà không thay bằng gì thì con ngồi buồn 20 phút rồi lại tìm cách cầm lại.
+
+**Bốn việc, làm cuối tuần này:**
+
+1. **Đặt một "giờ trống có tên"** — ví dụ 16h–17h thứ Bảy là giờ cả nhà không dùng màn hình. Có tên thì dễ giữ hơn "hạn chế điện thoại".
+2. **Trong giờ đó phải có một việc cụ thể đã chuẩn bị sẵn** — đi bộ, nấu, sửa đồ, chơi bài. Trống không thì thất bại.
+3. **Máy của bố mẹ vào giỏ trước.** Vẫn là điều kiện quan trọng nhất, và vẫn là điều khó nhất.
+4. **Không tịch thu như một hình phạt.** Tịch thu biến điện thoại thành thứ quý giá cần giành lại.
+
+Và một điều thật lòng: nếu cuối tuần nhà mình không có hoạt động nào ngoài ăn và nghỉ, thì vấn đề không nằm ở cái điện thoại.
+
+🎯 NHIỆM VỤ TUẦN NÀY
+Đặt một giờ trống có tên vào cuối tuần, và chuẩn bị sẵn một việc để lấp vào.
+
+Bình luận 3 dòng: tên nhà mình — giờ nào — làm gì trong giờ đó.
+
+Nhà mình chọn khung nào ạ?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+Thư viện Gia Đình — có 12 trò chơi để lấp vào giờ trống: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Con nhà mình mấy tuổi ạ?
+2. Nhà mình định lấp giờ đó bằng việc gì?
+3. Có nhà nào bố mẹ khó bỏ máy hơn con không ạ — em thuộc nhóm đó.
+```
+**Lưu ý:** Bài chính tuần 7. Chủ đề dễ làm bố mẹ thấy có lỗi — giữ giọng đồng hành, tuyệt đối không dạy dỗ.
+
+## Thứ Ba 11:45 · Bài nhẹ
+### Hồi bằng tuổi con bây giờ, cuối tuần nhà mình làm gì?
+`G2-W07-T3-N` · Câu chuyện gia đình · **CARE-1**
+
+```
+Hồi bằng tuổi con bây giờ, cuối tuần nhà mình làm gì?
+
+Em hỏi để tối nay có cái kể cho con nghe.
+
+Nhà em hồi đó: cả xóm chơi trốn tìm tới lúc mẹ gọi về ăn cơm.
+```
+
+*Không có liên kết — không cần bình luận ghim.*
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Hồi đó nhà mình ở đâu ạ?
+2. Có trò nào giờ vẫn chơi được với con không?
+3. Anh chị đã kể chuyện này cho con nghe chưa?
+```
+**Lưu ý:** Bài nhẹ nhưng mở ra chất liệu cho bữa tối — nối thẳng vào nghi thức Bàn ăn chiều nay.
+
+## Thứ Ba 17:30 · Bàn Ăn Yêu Thương
+### Hỏi thế nào để con dám nói ra điều con sợ?
+`G2-W07-T3-BANAN` · Hoạt động gia đình · **CARE-2**
+
+```
+Hỏi thế nào để con dám nói ra điều con sợ?
+
+Câu trả lời ngắn: đừng hỏi con sợ gì. Hãy **kể nỗi sợ của mình trước**.
+
+Trẻ giấu nỗi sợ vì nghĩ sợ là yếu, và vì thấy người lớn quanh mình không bao giờ sợ gì cả.
+
+**Cách làm ở bữa tối nay, ba bước:**
+
+1. **Bố hoặc mẹ kể trước, kể thật**: "Hồi bằng tuổi con, bố sợ nhất là bị gọi lên bảng." Không thêm bài học, không thêm "nhưng rồi bố vượt qua".
+2. **Rồi hỏi**: "Còn con, có việc gì làm con thấy hơi lo không?" — dùng chữ **"lo"**, đừng dùng chữ "sợ". Chữ "lo" dễ thừa nhận hơn nhiều.
+3. **Con nói xong thì đừng trấn an ngay.** Đừng nói "có gì đâu mà lo". Nói: **"Ừ, việc đó lo thật."** Rồi im một lúc.
+
+Bước 3 là bước quyết định. Trấn an quá nhanh làm con hiểu rằng nỗi lo của con không đáng kể — và lần sau con giữ trong lòng.
+
+**Nếu con không nói gì:** bình thường. Cứ kể chuyện của mình vài tối. Đến tối thứ ba hoặc thứ tư con sẽ nói.
+
+🍚 NHIỆM VỤ TỐI NAY
+Kể một nỗi sợ hồi nhỏ của anh chị. Rồi hỏi con.
+
+Con nhà mình nói gì ạ?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+30 câu hỏi bàn ăn chia theo tuổi, trong Thư viện Gia Đình: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Bé nhà mình mấy tuổi ạ?
+2. Anh chị kể chuyện gì?
+3. Con có nói ra điều gì làm anh chị bất ngờ không?
+```
+**Lưu ý:** Chủ đề nhạy cảm. Nếu ai kể chuyện con lo lắng nghiêm trọng, chuyển sang tin nhắn riêng và không đưa ra lời khuyên y tế.
+
+## Thứ Tư 11:45 · Bài nhẹ · mời nhận công cụ
+### Nhà nào chưa có Mã gia đình?
+`G2-W07-T4-N` · Mời nhận công cụ tầng 1 · **CARE-1**
+
+```
+Nhà nào chưa có Mã gia đình?
+
+Còn hai tuần nữa là khép tháng và chốt bảng xếp hạng. Nhà nào chưa có mã thì chưa được tính điểm — tiếc lắm ạ.
+
+Cách nhận mã, mất 2 phút:
+1. Mở Thư viện Gia Đình ở bình luận đầu tiên
+2. Kéo xuống cuối trang, điền vài ô
+3. Bấm Chép rồi dán phiếu vào đây
+
+Em cấp mã ngay trong ngày.
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+Thư viện Gia Đình — cuối trang có chỗ soạn phiếu: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+
+Trang này không thu thập gì cả, chỉ soạn sẵn đoạn chữ trên máy nhà mình để dán vào đây thôi ạ.
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Nhà mình ở tỉnh nào ạ?
+2. Con nhỏ nhất mấy tuổi để em xếp bảng?
+3. Nhà mình có ông bà ở cùng không ạ?
+```
+**Lưu ý:** Bài mời duy nhất tuần 7. Nhấn vào yếu tố thời hạn thật (chốt bảng cuối tháng), không tạo khan hiếm giả.
+
+## Thứ Tư 19:45 · Việc Tử Tế Của Gia Đình
+### Con giúp một bạn ở lớp — khuyến khích thế nào mà không thành áp lực?
+`G2-W07-T4-TUTE` · Câu chuyện gia đình · **CARE-2**
+
+```
+Con giúp một bạn ở lớp — khuyến khích thế nào mà không thành áp lực?
+
+Câu trả lời ngắn: đừng giao nhiệm vụ. Hãy **hỏi con thấy ai đang cần**.
+
+Câu "con phải giúp bạn" biến việc tử tế thành bài tập. Con làm cho xong, và không thấy gì cả.
+
+**Ba câu hỏi thay cho một mệnh lệnh, dùng tối nay:**
+1. "Trong lớp con, có bạn nào hôm nay có vẻ buồn không?"
+2. "Con nghĩ bạn ấy đang cần gì?"
+3. "Có việc gì nhỏ con làm được cho bạn ấy ngày mai không?"
+
+Ba câu này để **con tự chọn người và tự chọn việc**. Con làm vì con thấy, không phải vì mẹ bảo.
+
+**Việc nhỏ mà trẻ làm được:** ngồi cạnh bạn trong giờ ăn · rủ bạn chơi cùng · cho mượn bút · nói "cậu ngồi đây với tớ" · hỏi bạn "cậu ổn không".
+
+Việc cuối cùng là việc mạnh nhất, và hầu hết trẻ không nghĩ ra là mình được phép hỏi câu đó.
+
+**Ngày hôm sau chỉ hỏi một câu:** "Bạn ấy phản ứng thế nào?" — không hỏi "con làm chưa", vì câu đó là kiểm tra.
+
+💛 NHIỆM VỤ HÔM NAY
+Hỏi con ba câu trên. Kể lại đây con nhắc tới ai.
+
+Con nhà mình nói gì ạ?
+```
+
+*Không có liên kết — không cần bình luận ghim.*
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Con nhà mình học lớp mấy ạ?
+2. Con có nhắc tên bạn nào không?
+3. Con có ngại không khi phải chủ động?
+```
+**Lưu ý:** Nội dung chạm tới việc trẻ bị cô lập trong lớp. Nếu ai kể con mình đang bị cô lập, nhắn riêng ngay.
+
+## Thứ Năm 20:00 · Cha Mẹ Tỉnh Thức
+### Con tuổi dậy thì không chịu nói chuyện — mở lời thế nào?
+`G2-W07-T5-CHAME` · Kỹ năng cha mẹ – vợ chồng · **CARE-3**
+
+```
+Con tuổi dậy thì không chịu nói chuyện — mở lời thế nào?
+
+Câu trả lời ngắn: bỏ hẳn kiểu **ngồi đối diện hỏi chuyện**. Tuổi này con nói khi đang làm việc khác, không nói khi bị nhìn thẳng vào mặt.
+
+Vì sao con im: không phải con hết yêu bố mẹ. Con đang xây một vùng riêng — đó là việc con **phải** làm ở tuổi này. Càng đẩy cửa, con càng khóa.
+
+**Bốn cách mở lời, xếp theo hiệu quả:**
+
+**1. Nói khi đang đi cạnh nhau.** Trong xe, đi bộ, rửa bát. Không có ánh mắt đối diện thì con dễ nói gấp nhiều lần.
+
+**2. Hỏi về thế giới của con, đừng hỏi về con.** "Nhóm nhạc đó có gì hay?" thay vì "dạo này con thế nào". Con nói về cái con thích trước, rồi mới nói về mình.
+
+**3. Kể chuyện mình, không hỏi chuyện con.** "Hôm nay ở cơ quan mẹ có chuyện này..." Kể xong thì im. Đừng chuyển thành "còn con thì sao". Vài lần như vậy, con tự kể.
+
+**4. Có mặt mà không hỏi gì.** Ngồi cùng phòng, làm việc của mình. Sự có mặt đều đặn nói nhiều hơn mọi câu hỏi.
+
+**Và một điều khó nghe:** nếu con chỉ im với bố mẹ mà vẫn nói nhiều với bạn, đó là bình thường của tuổi này. Nếu con im với tất cả mọi người, đó là chuyện khác — và lúc đó cần tìm người hỗ trợ, không phải cần thêm câu hỏi.
+
+🗣️ NHIỆM VỤ
+Chọn một cách, thử trong tuần. Đừng thử cả bốn cùng lúc.
+
+Con nhà mình mấy tuổi, và anh chị đang thấy khó ở đâu?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+Bản in bốn cách này để giữ lại, cùng 9 tình huống khác: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Con nhà mình mấy tuổi ạ?
+2. Lần gần nhất con chủ động kể chuyện là bao giờ?
+3. Có ai thấy hụt hẫng khi con bắt đầu im không ạ — cảm giác đó rất thật.
+```
+**Lưu ý:** Bài mạnh nhất tuần 7. Nhiều bố mẹ tuổi này thấy cô đơn — ưu tiên đồng cảm trước kỹ thuật.
+
+## Thứ Sáu 19:45 · Khoe Nhà Mình
+### Khoảnh khắc anh chị chợt nhận ra con đã lớn
+`G2-W07-T6-KHOENHA` · Câu chuyện gia đình · **CARE-3**
+
+```
+Khoảnh khắc anh chị chợt nhận ra con đã lớn
+
+Không phải sinh nhật. Là một khoảnh khắc rất thường: con tự dắt xe · con đứng ngang vai mẹ · con an ủi lại bố · con nói một câu người lớn quá.
+
+Chụp một tấm — bàn tay con so với tay mình, đôi giày con để cạnh giày bố, chiều cao con vạch trên tường.
+
+Kèm một câu: **anh chị nhận ra lúc nào, và thấy thế nào?**
+
+Câu sau quan trọng. Phần lớn chúng ta thấy hai thứ cùng lúc: tự hào và hụt hẫng. Nói ra được cả hai thì nhẹ hơn nhiều.
+
+⚠️ Quy tắc nhóm công khai: chụp bàn tay, chụp đôi giày, chụp vạch tường. Không cần mặt con.
+
+Nhà mình nhận ra lúc nào ạ?
+```
+
+*Không có liên kết — không cần bình luận ghim.*
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Con nhà mình mấy tuổi ạ?
+2. Anh chị nhận ra lúc nào?
+3. Lúc đó anh chị thấy tự hào hay hụt hẫng nhiều hơn?
+```
+**Lưu ý:** Bài dễ tạo cảm xúc mạnh nhất tháng. Chuẩn bị nhiều thời gian trả lời, và xin phép câu chuyện hay nhất.
+
+## Thứ Bảy 08:00 · Gia Đình Chơi Cùng Nhau
+### Cả nhà đi bộ 30 phút — biến thành trò chơi thế nào?
+`G2-W07-T7-CHOI` · Hoạt động gia đình · **CARE-2**
+
+```
+Cả nhà đi bộ 30 phút — biến thành trò chơi thế nào?
+
+Đi bộ suông thì con chán sau 5 phút. Thêm một luật nhỏ là thành trò chơi.
+
+**Bốn luật, chọn một cho sáng nay:**
+
+**1. Săn màu.** Mỗi người bốc một màu. Đi đường, ai thấy vật màu của mình thì hô. Cuối đường ai nhiều điểm nhất thì chọn món ăn sáng.
+
+**2. Đi theo chỉ dẫn của con.** Đến mỗi ngã rẽ, một người quyết định rẽ trái hay phải — luân phiên. Đi đâu cũng được, miễn nhớ đường về.
+
+**3. Mỗi 100 bước một câu hỏi.** Ai bước tới số 100 thì được hỏi cả nhà một câu. Câu gì cũng được.
+
+**4. Chụp năm thứ xấu xí.** Cả nhà tìm và chụp năm thứ xấu nhất trên đường. Nghe kỳ nhưng trẻ mê trò này, và nó dạy con quan sát.
+
+**Vì sao đi bộ đáng làm hơn nó có vẻ:** đi cạnh nhau, không nhìn mặt nhau — đúng tư thế mà tuổi dậy thì dễ nói chuyện nhất (bài thứ Năm). Nhiều nhà nói được nhiều chuyện trong 30 phút đi bộ hơn cả tháng ngồi hỏi.
+
+🎲 NHIỆM VỤ SÁNG NAY
+Đi 30 phút với một luật. Chụp một tấm trên đường.
+
+Nhà mình chọn luật nào ạ?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+12 trò chơi gắn kết trong Thư viện Gia Đình: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Nhà mình đi đâu ạ?
+2. Ai đề xuất đi?
+3. Trên đường có nói được chuyện gì không?
+```
+**Lưu ý:** Nối thẳng vào bài thứ Năm về tuổi dậy thì — nhắc mối liên hệ đó trong bình luận đầu.
+
+## Chủ nhật 21:00 · Bảng Vinh Danh Gia Đình
+### Tuần thứ ba của tháng Nuôi Dạy
+`G2-W07-CN-VINHDANH` · Thi đua & vinh danh · **CARE-3**
+
+```
+Tuần thứ ba của tháng Nuôi Dạy
+
+Tuần này nhóm mình chạm vào những chuyện khó nói nhất: nỗi sợ của con, và những đứa con đã lớn mà bố mẹ chưa kịp quen.
+
+📊 CON SỐ CỦA TUẦN
+• [SỐ] gia đình đặt được "giờ trống có tên" cuối tuần
+• [SỐ] bố mẹ kể nỗi sợ hồi nhỏ của mình cho con nghe
+• [SỐ] khoảnh khắc "con đã lớn" được chia sẻ
+• [SỐ] gia đình mới nhận Mã gia đình
+
+💛 BA GIA ĐÌNH EM MUỐN GỌI TÊN
+1. Nhà [TÊN] — [trích nguyên văn]
+2. Nhà [TÊN] — [trích nguyên văn]
+3. Nhà [TÊN] — [trích nguyên văn]
+
+📈 BẢNG ĐIỂM TẠM TÍNH
+[Dán ba nhà đầu mỗi bảng đấu]
+
+⏳ **Còn một tuần nữa là chốt bảng xếp hạng tháng.** Nhà nào chưa có Mã gia đình, tuần này là tuần cuối để kịp.
+
+🌱 TUẦN SAU là tuần khép tháng: chuyện giữ lời hứa trong nhà, và chuyện anh chị em.
+
+Tuần này điều gì làm nhà mình dừng lại lâu nhất ạ?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+Thư viện Gia Đình — soạn phiếu nhận Mã gia đình ở cuối trang, tuần này là tuần cuối để kịp tính điểm tháng: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Tuần này điều gì làm nhà mình dừng lại lâu nhất?
+2. Nhiệm vụ nào khó nhất?
+3. Nhà mình có mã chưa ạ?
+```
+**Lưu ý:** Điền số thật. Nhắc thời hạn chốt bảng — đây là thời hạn thật, không phải tạo áp lực giả.
+
+---
+
+# Tuần 8 · Lời hứa và anh chị em · khép tháng
+
+## Thứ Hai 11:45 · Bài nhẹ
+### Nhà mình có ai hay hứa rồi quên không?
+`G2-W08-T2-N` · Kỹ năng cha mẹ – vợ chồng · **CARE-1**
+
+```
+Nhà mình có ai hay hứa rồi quên không?
+
+Không cần nêu tên ạ, chỉ cần nói "có" hoặc "không có".
+
+Nhà em có. Và người đó là em.
+```
+
+*Không có liên kết — không cần bình luận ghim.*
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Lời hứa hay bị quên nhất là gì ạ?
+2. Con có nhắc lại không?
+3. Con phản ứng thế nào lúc bị lỡ hẹn?
+```
+**Lưu ý:** Việc Admin tự nhận là chủ ý — nó cho phép người khác thừa nhận mà không thấy xấu hổ.
+
+## Thứ Hai 19:45 · Nhiệm Vụ Gia Đình Tuần
+### Làm sao để cả nhà giữ lời hứa với nhau?
+`G2-W08-T2-NHIEMVU` · Hoạt động gia đình · **CARE-3**
+
+```
+Làm sao để cả nhà giữ lời hứa với nhau?
+
+Câu trả lời ngắn: **hứa ít đi**. Phần lớn lời hứa bị vỡ vì nó được nói ra để kết thúc một cuộc tranh cãi, không phải vì thật sự định làm.
+
+Trẻ không đo tình yêu bằng lời hứa lớn. Con đo bằng **tỉ lệ lời hứa được giữ**. Mười lời hứa giữ được ba, con học rằng lời người lớn nói không đáng tin.
+
+**Bốn quy tắc lời hứa trong nhà, áp dụng từ tối nay:**
+
+1. **Không hứa để dỗ.** "Nín đi rồi mai bố mua cho" là lời hứa vỡ ngay từ lúc nói. Thay bằng: "Bố biết con đang buồn. Bố ngồi đây với con."
+2. **Hứa thì phải có ngày giờ.** "Cuối tuần đi công viên nhé" là chưa hứa. "Chiều thứ Bảy 3 giờ" mới là hứa.
+3. **Viết lên tờ giấy dán tủ lạnh.** Cả nhà nhìn thấy. Người lớn cũng bị theo dõi như con.
+4. **Lỡ hẹn thì xin lỗi đủ ba câu** (bài tuần 5): con đã làm gì — người kia thấy thế nào — lần sau sẽ làm gì. Không giải thích lý do bận.
+
+Và quy tắc quan trọng nhất: **con cũng có quyền đòi**. Nếu con nhắc "bố hứa rồi mà", đừng bảo con hỗn. Con đang làm đúng.
+
+🎯 NHIỆM VỤ TUẦN NÀY
+Dán một tờ giấy lên tủ lạnh: mỗi lời hứa trong nhà ghi lên đó, có ngày giờ. Cuối tuần cùng nhìn lại.
+
+Bình luận 3 dòng: tên nhà mình — lời hứa đầu tiên ghi lên — ai hứa với ai.
+
+Nhà mình dám dán tờ giấy đó không ạ?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+Thư viện Gia Đình — bốn bộ công cụ cho cả nhà: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Lời hứa đầu tiên nhà mình ghi là gì ạ?
+2. Ai hứa với ai?
+3. Có ai thấy sợ khi phải ghi ra không ạ — em có.
+```
+**Lưu ý:** Bài chính tuần 8. Chủ đề chạm vào bố mẹ nhiều hơn chạm vào con — giữ giọng đồng hành.
+
+## Thứ Ba 11:45 · Bài nhẹ
+### Nhà mình có câu nói cửa miệng nào không?
+`G2-W08-T3-N` · Câu chuyện gia đình · **CARE-1**
+
+```
+Nhà mình có câu nói cửa miệng nào không?
+
+Câu mà cả nhà ai cũng nói, người ngoài nghe không hiểu.
+
+Nhà em là "để mai tính" — và đó cũng là vấn đề của nhà em.
+```
+
+*Không có liên kết — không cần bình luận ghim.*
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Ai là người nói câu đó nhiều nhất ạ?
+2. Câu đó có từ bao giờ?
+3. Con có bắt chước nói theo không?
+```
+**Lưu ý:** Bài nhẹ vui, tạo bản sắc nhóm. Gom để làm bài tổng hợp cuối tháng.
+
+## Thứ Ba 17:30 · Bàn Ăn Yêu Thương
+### Làm sao để con nói ra điều con biết ơn mà không thấy sáo?
+`G2-W08-T3-BANAN` · Hoạt động gia đình · **CARE-2**
+
+```
+Làm sao để con nói ra điều con biết ơn mà không thấy sáo?
+
+Câu trả lời ngắn: đừng hỏi "con biết ơn điều gì". Câu đó nghe như bài học đạo đức, và con sẽ trả lời cho xong.
+
+Câu hỏi bàn ăn tối nay: **"Hôm nay có ai làm một việc mà con thấy dễ chịu không?"**
+
+Ba khác biệt so với câu "biết ơn":
+1. Nó hỏi về **một việc cụ thể**, không hỏi về một cảm xúc trừu tượng.
+2. Nó dùng chữ **"dễ chịu"** — con hiểu được, còn "biết ơn" là từ của người lớn.
+3. Nó **không có đáp án đúng**, nên con không phải diễn.
+
+**Vòng bàn ăn** (nghi thức tuần 6): mỗi người lần lượt trả lời, bắt đầu từ người ít nói nhất, không ai bình luận lời của ai.
+
+**Mẹo cho tối nay:** người lớn trả lời trước, và **nhắc tới một việc con đã làm**. "Hôm nay lúc mẹ mệt, con tự đi tắm không cần nhắc. Mẹ thấy dễ chịu lắm." Con được nghe rằng việc nhỏ của mình có người để ý — đó là cách dạy biết ơn hiệu quả nhất, vì con học bằng cách được nhận.
+
+🍚 NHIỆM VỤ TỐI NAY
+Chạy một vòng bàn ăn với câu hỏi này. Người lớn đi trước và nhắc tới con.
+
+Con nhà mình nhắc tới ai ạ?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+30 câu hỏi bàn ăn trong Thư viện Gia Đình: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Bé nhà mình mấy tuổi ạ?
+2. Con nhắc tới ai ạ?
+3. Con có bất ngờ khi được nhắc tên không?
+```
+**Lưu ý:** Nối lại nghi thức 'vòng bàn ăn' của tuần 6 — nhắc lại nghi thức cũ làm cộng đồng có ký ức chung.
+
+## Thứ Tư 11:45 · Bài nhẹ · mời nhận công cụ
+### Khép tháng — bốn bộ công cụ để mang sang tháng sau
+`G2-W08-T4-N` · Mời nhận công cụ tầng 1 · **CARE-1**
+
+```
+Khép tháng — bốn bộ công cụ để mang sang tháng sau
+
+Hai tháng qua nhà mình đã dùng:
+• 30 câu hỏi bàn ăn — cho bữa tối
+• 12 trò chơi gắn kết — cho cuối tuần
+• Nhật ký Cho là nhận 21 ngày — cho thói quen
+• Bản đồ 90 ngày — cho bố mẹ
+
+Cả bốn ở cùng một chỗ, miễn phí, in ra dùng thoải mái.
+
+Nhà nào thấy dùng được thì gửi cho một gia đình khác — đó cũng là một việc tử tế.
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+Thư viện Gia Đình — cả bốn bộ và chỗ soạn phiếu nhận Mã gia đình: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Bộ nào nhà mình dùng nhiều nhất ạ?
+2. Có phần nào khó dùng không — em sửa được.
+3. Nhà mình đã gửi cho nhà nào chưa ạ?
+```
+**Lưu ý:** Bài mời cuối tháng. Lời kêu gọi 'gửi cho nhà khác' là cơ chế giới thiệu hợp lệ — không yêu cầu chia sẻ trên Facebook (`15.2.B`).
+
+## Thứ Tư 19:45 · Việc Tử Tế Của Gia Đình
+### Nhà mình giúp được nhà nào trong nhóm này?
+`G2-W08-T4-TUTE` · Câu chuyện gia đình · **CARE-2**
+
+```
+Nhà mình giúp được nhà nào trong nhóm này?
+
+Hai tháng qua cả nhóm nhận rất nhiều. Tuần khép tháng, thử đổi chiều.
+
+**Cách làm, 10 phút:**
+1. Kéo lên đọc 10 bình luận gần nhất.
+2. Tìm **một nhà đang vướng đúng chuyện nhà mình đã đi qua rồi**.
+3. Trả lời họ bằng **điều cụ thể nhà mình đã làm** — không khuyên chung chung, không "cố lên nhé".
+4. Quay lại đây báo: "Nhà mình đã giúp nhà [tên] về [chuyện gì]."
+
+**Ba lý do việc này quan trọng hơn nó có vẻ:**
+— Người được giúp thấy mình không một mình.
+— Người đi giúp nhận ra mình đã đi được một quãng — điều mà tự nhìn vào mình thì không thấy.
+— Cả nhóm học được rằng ở đây ai cũng có cái để cho.
+
+Chủ nhật em vinh danh những nhà cho đi nhiều nhất. Ở nhóm này, **đó là hạng mục em coi trọng nhất** — hơn cả hạng mục nhà chuyên cần nhất.
+
+💛 NHIỆM VỤ HÔM NAY
+Giúp một nhà. Báo lại một dòng.
+
+Nhà mình giúp được nhà nào ạ?
+```
+
+*Không có liên kết — không cần bình luận ghim.*
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Nhà mình giúp nhà nào ạ?
+2. Anh chị đã đi qua chuyện đó bao lâu rồi?
+3. Có nhà nào muốn được giúp mà ngại hỏi không — cứ nói ở đây.
+```
+**Lưu ý:** Ghi lại ai giúp ai để cộng điểm lan tỏa (SOP-06). Đây là chỉ dấu cộng đồng đã trưởng thành.
+
+## Thứ Năm 20:00 · Cha Mẹ Tỉnh Thức
+### Anh chị em đánh nhau — xử lý thế nào cho công bằng?
+`G2-W08-T5-CHAME` · Kỹ năng cha mẹ – vợ chồng · **CARE-3**
+
+```
+Anh chị em đánh nhau — xử lý thế nào cho công bằng?
+
+Câu trả lời ngắn: **đừng làm quan tòa**. Mỗi lần bố mẹ phân xử ai đúng ai sai là một lần dạy các con rằng muốn thắng thì phải gọi người lớn.
+
+Ba cách phổ biến và vì sao cả ba đều hỏng:
+— *"Con lớn phải nhường em"*: đứa lớn học rằng lớn nghĩa là chịu thiệt.
+— *"Đứa nào cũng phạt"*: đứa bị bắt nạt học rằng nói ra cũng vô ích.
+— *Điều tra ai gây trước*: hai đứa học cách kể chuyện sao cho mình vô can.
+
+**Bốn bước thay thế:**
+
+**1. Tách ra trước, hỏi sau.** Đang nóng thì không ai nghe được. Mỗi đứa một chỗ, 5 phút.
+
+**2. Xử lý cảm xúc riêng từng đứa, không đối chất.** "Con đang tức vì em lấy đồ của con." Chỉ cần nói hộ, chưa cần giải quyết.
+
+**3. Đưa vấn đề về cho hai đứa.** "Cái xe chỉ có một, hai đứa đều muốn. Hai con nghĩ cách nào chia được?" Rồi **im lặng và chờ**. Trẻ nghĩ ra cách nhanh hơn ta tưởng, nếu người lớn chịu im.
+
+**4. Không có cách nào thì cất món đồ đi** — không phải để phạt, mà vì "hai con chưa tìm được cách, mai mình thử lại".
+
+**Ngoại lệ duy nhất:** có bạo lực gây đau thì dừng ngay và xử lý hành vi đó riêng, không thương lượng.
+
+Và điều ít ai nói: **anh chị em cãi nhau là cách con học thương lượng.** Một nhà không bao giờ cãi nhau chưa chắc đã là nhà hòa thuận — có thể là nhà mà một đứa luôn im.
+
+🗣️ NHIỆM VỤ
+Lần tới thử bước 3: đưa vấn đề về cho hai đứa rồi im lặng. Kể lại đây.
+
+Nhà mình có mấy con, và hay tranh nhau chuyện gì ạ?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+Bản in bốn bước để dán tủ lạnh, cùng 9 tình huống khác: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Nhà mình mấy con ạ?
+2. Hai đứa hay tranh nhau chuyện gì?
+3. Anh chị thường xử lý thế nào — em hỏi thật, không phán xét.
+```
+**Lưu ý:** Bài mạnh nhất tuần 8. Câu 'nhà không bao giờ cãi nhau chưa chắc đã hòa thuận' thường tạo bình luận sâu nhất.
+
+## Thứ Sáu 19:45 · Khoe Nhà Mình
+### Bức ảnh của tháng Nuôi Dạy
+`G2-W08-T6-KHOENHA` · Câu chuyện gia đình · **CARE-3**
+
+```
+Bức ảnh của tháng Nuôi Dạy
+
+Tháng này nhà mình đã thử nhiều thứ khó: buổi sáng không giục, thôi ngồi kèm con học, nghe con nói câu khó nghe, đi bộ cùng con tuổi lớn.
+
+Chọn **một tấm** của tháng này — tấm mà nhà mình muốn giữ lại.
+
+Kèm một câu: **tháng này nhà mình đã khác đi ở chỗ nào?**
+
+Ba tấm được chọn sẽ vào Kỷ yếu Gia Đình Thịnh Vượng cuối năm — kèm tên nhà mình, nếu nhà mình đồng ý.
+
+⚠️ Quy tắc vẫn giữ: không lộ địa chỉ, tên trường lớp; ảnh có mặt con chỉ bố mẹ được đăng. Ảnh có mặt trẻ em **không dùng cho kỷ yếu** trừ khi anh chị đồng ý riêng bằng tin nhắn.
+
+Tấm của nhà mình là tấm nào ạ?
+```
+
+*Không có liên kết — không cần bình luận ghim.*
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Tấm này chụp hôm nào ạ?
+2. Tháng này nhà mình khác đi ở chỗ nào?
+3. Nhà mình có đồng ý cho vào kỷ yếu không ạ?
+```
+**Lưu ý:** Xin phép kỷ yếu phải theo SOP-11: xác nhận bằng chữ, lưu ảnh chụp tin nhắn. Ảnh trẻ em cần đồng ý riêng.
+
+## Thứ Bảy 08:00 · Gia Đình Chơi Cùng Nhau
+### Ngày hội nhỏ tại nhà — tổ chức thế nào trong một buổi sáng?
+`G2-W08-T7-CHOI` · Hoạt động gia đình · **CARE-2**
+
+```
+Ngày hội nhỏ tại nhà — tổ chức thế nào trong một buổi sáng?
+
+Khép tháng bằng một buổi sáng vui. Không tốn tiền, không cần khách.
+
+**Bốn phần, mỗi phần 20 phút:**
+
+**1. Khai mạc — mỗi người một danh hiệu.** Cả nhà tự đặt danh hiệu cho từng người theo tháng vừa qua: "Người dậy sớm nhất", "Người hay quên nhất", "Người cười nhiều nhất". Viết lên giấy, dán lên áo.
+
+**2. Ba trò thi đấu.** Chọn ba trò cả nhà đã chơi trong tháng. Chấm điểm, có bảng ghi.
+
+**3. Bữa tiệc do con nấu.** Món gì cũng được, con làm chính, người lớn phụ. Trứng chiên cũng là tiệc.
+
+**4. Lễ trao giải.** Mỗi người được nhận một lời khen từ tất cả những người còn lại. **Mỗi người phải nói ra một câu về từng người khác** — đây là phần quan trọng nhất và cũng khó nhất.
+
+Phần 4 nghe đơn giản nhưng nhiều nhà làm xong thì im lặng một lúc lâu. Người trong nhà rất ít khi nói thẳng với nhau điều tốt.
+
+**Nếu chỉ làm được một phần:** làm phần 4.
+
+🎲 NHIỆM VỤ SÁNG NAY
+Tổ chức ngày hội nhỏ. Chụp lại tờ giấy danh hiệu.
+
+Nhà mình đặt danh hiệu gì cho nhau ạ?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+12 trò chơi gắn kết để chọn ba trò thi đấu: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Nhà mình đặt danh hiệu gì ạ?
+2. Ai nấu tiệc?
+3. Phần trao lời khen diễn ra thế nào?
+```
+**Lưu ý:** Bài khép tháng, tạo ảnh và câu chuyện cho bài tổng kết Chủ nhật. Bám cả buổi sáng.
+
+## Chủ nhật 21:00 · Bảng Vinh Danh · Khép Tháng
+### Khép tháng Nuôi Dạy — nhà mình đã đi được tới đâu
+`G2-W08-CN-TONGKET` · Thi đua & vinh danh · **CARE-3**
+
+```
+Khép tháng Nuôi Dạy — nhà mình đã đi được tới đâu
+
+Tháng này là tháng khó. Tháng 1 nói chuyện dễ: bữa cơm, trò chơi, khoảnh khắc đẹp. Tháng này nói chuyện thật: ăn vạ, nói dối, câu "con ghét mẹ", con lớn không chịu nói chuyện, anh em đánh nhau.
+
+Và cả nhà vẫn ở đây.
+
+📊 MỘT THÁNG BẰNG CON SỐ
+• [SỐ] gia đình đang ở đây · [SỐ] gia đình có Mã
+• [SỐ] nhiệm vụ được hoàn thành
+• [SỐ] lần bố mẹ xin lỗi con trước
+• [SỐ] lần một nhà giúp một nhà khác
+• [SỐ] khoảnh khắc "con đã lớn"
+
+🏆 BẢNG XẾP HẠNG THÁNG 2
+**Bảng Mầm:** [3 nhà đầu] · **Bảng Chồi:** [3 nhà đầu]
+**Bảng Cây:** [3 nhà đầu] · **Bảng Cội:** [3 nhà đầu]
+
+Cách tính: chuyên cần 40% · lan tỏa 30% · chuyển hóa 30%.
+
+💛 GIẢI THƯỞNG THÁNG
+Mỗi nhà đứng đầu bảng nhận: kỷ niệm chương · một buổi trò chuyện riêng để kể câu chuyện của nhà mình · suất học bộ khóa nền tảng cho cả nhà.
+Tất cả các nhà hoàn thành từ 3 nhiệm vụ trở lên được ghi tên vào **Kỷ yếu cuối năm**.
+
+📖 BA ĐIỀU EM HỌC ĐƯỢC TỪ CẢ NHÀ THÁNG NÀY
+1. [rút ra từ bình luận thật]
+2. [rút ra từ bình luận thật]
+3. [rút ra từ bình luận thật]
+
+🌱 THÁNG SAU: **THỊNH VƯỢNG** — nếp nhà, tiền bạc trong gia đình, truyền thống, và câu hỏi lớn nhất: mình muốn để lại gì cho con.
+
+Sau hai tháng, điều gì trong nhà mình đã thật sự khác?
+```
+
+**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
+```
+Thư viện Gia Đình — bốn bộ công cụ mang sang tháng mới: https://claude.ai/code/artifact/3799a28b-5be1-4c38-ba04-0bed78027c84
+```
+
+**Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
+```
+1. Sau hai tháng điều gì đã thật sự khác ở nhà mình?
+2. Nhiệm vụ nào nhà mình sẽ giữ tiếp?
+3. Tháng sau nhà mình muốn nhóm nói về chuyện gì?
+```
+**Lưu ý:** Bài quan trọng nhất tháng. Chuẩn bị trước 2 giờ: tính điểm, chọn ảnh, viết ba điều rút ra từ bình luận THẬT. Đây là bài quyết định thành viên có ở lại tháng sau hay không.
