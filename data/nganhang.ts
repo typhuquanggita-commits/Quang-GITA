@@ -7,6 +7,7 @@ import {taoC} from './xoay-dap-an';
 import {NGAN_HANG_NGHE} from './nganhang-nghe';
 import {NGAN_HANG_TUDUY} from './nganhang-tuduy';
 import {NGAN_HANG_DOCVIET} from './nganhang-docviet';
+import {NGAN_HANG_NOI} from './nganhang-noi';
 import {DANG_BAI} from './phieu';
 import {GIAI_BY_DANG} from './giaide';
 
@@ -48,7 +49,9 @@ export const NGANHANG_CREED = {
   dayNhieu:
     'Dây nhiễu dựng theo đúng ba bẫy đã viết trong bộ giải đề. Chọn sai thì hệ thống biết học viên vừa rơi vào bẫy số mấy — thông tin đó dùng được, khác hẳn việc chỉ biết là chọn sai.',
   phamVi:
-    'Ngân hàng phủ bảy mươi chuyên đề. Mười chuyên đề còn lại là toàn bộ phần NÓI — chúng cần một người hoặc một máy chấm nghe được, nên chúng dùng bộ giải đề và phiếu chuyên đề chứ chưa có câu trắc nghiệm.',
+    'Ngân hàng phủ tám mươi chuyên đề, tức là KHÔNG chuyên đề còn lại. Nhưng phủ hết không có nghĩa là đo hết: mười chuyên đề nói chỉ đo được điều kiện cần — đọc vị dạng bài, nhận ra chỗ hỏng, chọn đúng quy trình — chứ không đo được việc mở miệng nói. Bằng chứng cho kỹ năng nói vẫn chỉ đến từ một bản ghi được nghe và chấm.',
+  noiDoDuocGiHan:
+    'Câu trắc nghiệm về NÓI không đo được kỹ năng nói. Không có cách nào để bốn ô A B C D biết được học viên phát âm ra sao hay có nói trôi được hai phút hay không. Nó đo ba việc hẹp mà thật: đọc vị dạng bài, nhận ra chỗ hỏng trong một câu trả lời mẫu, và chọn đúng quy trình. Cả ba là điều kiện cần, không phải điều kiện đủ.',
   vietDoDuocGiHan:
     'Câu trắc nghiệm về VIẾT không đo được năng lực viết — không câu bốn lựa chọn nào thay được việc đặt bút viết rồi có người chấm. Nó đo một thứ hẹp hơn mà vẫn dùng được: khả năng NHẬN RA chỗ hỏng trong một đoạn cho sẵn, vốn là điều kiện cần để tự viết được.',
   loiCuVeNghe:
@@ -6366,6 +6369,7 @@ export const NGAN_HANG: CauHoi[] = [
   ...NGAN_HANG_NGHE,
   ...NGAN_HANG_TUDUY,
   ...NGAN_HANG_DOCVIET,
+  ...NGAN_HANG_NOI,
   ...P01, ...P02, ...P03, ...P04, ...P05, ...P06, ...P07, ...P08, ...P09, ...P10, ...G07, ...G01, ...G03, ...G02, ...G06, ...G04, ...G05, ...G08, ...G09,
   ...V01, ...V02, ...V03, ...V04, ...V05, ...V06, ...V07, ...V08, ...V09, ...V10,
   ...R02, ...R03, ...R04, ...R05, ...R06, ...R07, ...R09, ...R10,

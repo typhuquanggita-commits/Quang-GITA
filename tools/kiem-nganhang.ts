@@ -179,16 +179,32 @@ const doChu = (s: string, sau: string): number | null => {
   return null;
 };
 
-const chuPhu = doChu(NGANHANG_CREED.phamVi, 'chuyên đề\\.');
+// Dấu sau cụm có thể là chấm hoặc phẩy tuỳ cách viết câu.
+const chuPhu = doChu(NGANHANG_CREED.phamVi, 'chuyên đề[.,]');
 chuPhu === NGANHANG_SO.soChuyenDe
   ? ok(`creed viết bằng chữ đúng ${NGANHANG_SO.soChuyenDe} chuyên đề đã phủ`)
   : fail(`creed viết ${chuPhu ?? 'không rõ'} chuyên đề đã phủ, dữ liệu cho ra ${NGANHANG_SO.soChuyenDe}`);
 
+/*
+ * Khi không còn chuyên đề nào thiếu, creed phải nói thẳng là KHÔNG còn —
+ * và đồng thời phải nói rõ phủ hết không đồng nghĩa với đo hết. Đây là chỗ
+ * dễ khai khống nhất trong cả tài liệu: "phủ 80/80" nghe như đã đo được
+ * mọi kỹ năng, mà điều đó không đúng với phần nói.
+ */
 const conLai = NGANHANG_SO.soChuyenDeTong - NGANHANG_SO.soChuyenDe;
-const chuConLai = doChu(NGANHANG_CREED.phamVi, 'chuyên đề còn lại');
-chuConLai === conLai
-  ? ok(`creed viết bằng chữ đúng ${conLai} chuyên đề còn lại`)
-  : fail(`creed viết ${chuConLai ?? 'không rõ'} chuyên đề còn lại, dữ liệu cho ra ${conLai}`);
+if (conLai === 0) {
+  /KHÔNG chuyên đề còn lại/.test(NGANHANG_CREED.phamVi)
+    ? ok('creed nói thẳng là không còn chuyên đề nào thiếu')
+    : fail('đã phủ hết nhưng creed không nói rõ điều đó');
+  /không có nghĩa là đo hết|không đo được/.test(NGANHANG_CREED.phamVi)
+    ? ok('creed nói rõ phủ hết KHÔNG đồng nghĩa với đo hết mọi kỹ năng')
+    : fail('creed để người đọc hiểu nhầm rằng phủ hết là đo hết — chỗ khai khống nặng nhất');
+} else {
+  const chuConLai = doChu(NGANHANG_CREED.phamVi, 'chuyên đề còn lại');
+  chuConLai === conLai
+    ? ok(`creed viết bằng chữ đúng ${conLai} chuyên đề còn lại`)
+    : fail(`creed viết ${chuConLai ?? 'không rõ'} chuyên đề còn lại, dữ liệu cho ra ${conLai}`);
+}
 
 /nghe|đọc|bản quyền|ngữ liệu|người chấm/.test(NGANHANG_CREED.phamVi)
   ? ok('nói thẳng vì sao phần còn lại chưa có câu trắc nghiệm')

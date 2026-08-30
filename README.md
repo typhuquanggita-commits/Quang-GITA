@@ -1166,6 +1166,77 @@ npm run preview  # xem thử bản đã dựng
 không tham chiếu tới bất kỳ tên miền bên ngoài nào; điều này được kiểm chứng
 tự động bằng `npm run test:web`.
 
+## 🎧 Ngân hàng câu hỏi — 960 câu, đủ 80/80 chuyên đề
+
+### Lý do cũ đã sai, và sai trong nhiều tháng
+
+Ngân hàng từng phủ 50/80 chuyên đề, và lý do ghi cho 30 chuyên đề thiếu là
+*"nghe và nói cần ngữ liệu âm thanh và bài đọc có bản quyền"*. Nửa sau đúng —
+đoạn nghe và bài đọc thương mại đều có bản quyền. **Nửa đầu sai**: bốn giọng
+tiếng Anh của Piper đã nằm sẵn trong máy. Giới hạn *"máy đọc không có thanh
+điệu"* là giới hạn của giọng **tiếng Việt**, và nó bị hiểu nhầm thành giới hạn
+của cả khâu sinh âm.
+
+Lối ra là **viết gốc** rồi sinh âm bằng máy: không chép của ai, và có tiếng
+thật để hỏi.
+
+| Phần | Chuyên đề | Câu | Ngữ liệu |
+|---|---|---|---|
+| Nghe | 10 | 120 | 30 kịch bản viết gốc + audio sinh bằng máy |
+| Tư duy | 6 | 72 | câu tình huống, không cần ngữ liệu |
+| Đọc | 2 | 24 | 4 đoạn viết gốc, 227–527 từ |
+| Viết | 2 | 24 | đoạn mẫu để nhận ra chỗ hỏng |
+| Nói | 10 | 120 | dùng lại chính bản ghi của tầng nghe |
+
+### Ba núm độ khó của phần nghe đều thật, và đều đo lại được
+
+- **Nhịp nói** — kịch bản khai **số từ mỗi phút** mong muốn, không khai hệ số
+  dài âm
+- **Giọng** — bốn model, Mỹ và Anh-Anh, nam và nữ
+- **Nhiễu** — trộn tạp âm trắng theo **công suất thật của từng tệp**
+
+Một lỗi đo được đã bắt giữa chừng: bản đầu khai tốc độ bằng hệ số dài âm, và
+nhãn đó **nói dối**. Giọng `anh-nam` đọc 154 từ/phút ở hệ số 1.0 còn `my-nam`
+đọc 248 — cùng một hệ số cho ra hai tốc độ khác hẳn. Kịch bản khai *"nghe
+nhanh"* ở hệ số 0.78 đo ra 200 từ/phút, **đúng bằng một kịch bản tốc độ
+thường**.
+
+Sửa bằng cách đổi ngữ nghĩa của trường: khai đích, để mã tự chạm tới. Bộ sinh
+âm lặp tối đa tám lượt, mỗi lượt đo lại rồi chỉnh. Quan hệ giữa hệ số và nhịp
+không tuyến tính — khoảng lặng đầu cuối không giãn cùng tỉ lệ với âm tiết —
+nên hai lượt không đủ ở vùng chậm. Kết quả: cả 30 tệp chạm đích trong sai số
+8%, và nhóm nghe nhanh nay thật sự **226–229** so với **155–173** từ/phút.
+
+### Phủ hết KHÔNG đồng nghĩa với đo hết
+
+Đây là chỗ dễ khai khống nhất, nên nói thẳng:
+
+> Câu trắc nghiệm về **nói** không đo được kỹ năng nói. Không có cách nào để
+> bốn ô A B C D biết được học viên phát âm ra sao hay có nói trôi được hai
+> phút hay không. Nó đo ba việc hẹp mà thật: đọc vị dạng bài, nhận ra chỗ
+> hỏng trong một câu trả lời mẫu, và chọn đúng quy trình. Cả ba là **điều
+> kiện cần**, không phải điều kiện đủ.
+>
+> Câu trắc nghiệm về **viết** cũng vậy: nó đo khả năng nhận ra chỗ hỏng trong
+> một đoạn cho sẵn, không đo năng lực viết.
+
+Bằng chứng cho kỹ năng nói vẫn chỉ đến từ một **bản ghi được nghe và chấm**.
+Hệ thống chưa có khâu đó, và phần này không giả vờ có. `kiem-nganhang.ts` có
+một mục riêng chặn đúng chỗ khai khống này: khi đã phủ hết, lời tự nhận **bắt
+buộc** phải nói rõ phủ hết không đồng nghĩa với đo hết.
+
+### Bốn lỗi bài kiểm bắt được trong chính nội dung tôi viết
+
+- 7 bước giải cụt và bí kíp hụt ở tầng SAT
+- Đáp án dồn **60/60/0/0** vì đánh số câu 1–2 trong từng loại phiếu thay vì
+  1–12 theo chuyên đề, nên phép xoay chỉ chạy được hai vị trí
+- 4 câu có **ba nhận xét sai giống hệt nhau** — viết ẩu, và bài kiểm bắt đúng
+- Một mục kiểm là phép tính tự triệt tiêu nên **luôn đúng** — một bài kiểm giả
+
+Sửa nội dung, không hạ ngưỡng. Phân bố đáp án cuối cùng trên 960 câu:
+**239 / 242 / 240 / 239** — không tròn đều, vì vài chuyên đề có câu giữ
+nguyên thứ tự lựa chọn. Đoán bừa một ô trúng 25,2%, tức là không đoán được.
+
 ## 🇺🇸 Tuyến SAT — bài thi số hoá, thích ứng theo mô-đun
 
 SAT **không phải** một biến thể của IELTS. Ba khác biệt gốc quyết định toàn
