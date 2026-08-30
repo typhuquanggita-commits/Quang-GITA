@@ -26,7 +26,7 @@
 
 ---
 
-## 2. Bản đồ hệ sinh thái (15 phân hệ)
+## 2. Bản đồ hệ sinh thái (16 phân hệ)
 
 ```
                          ┌──────────────────────────────┐
@@ -189,6 +189,14 @@
 | [01-KHUNG-DO-LUONG-VA-BO-CHI-SO.md](14-DO-LUONG-TAC-DONG/01-KHUNG-DO-LUONG-VA-BO-CHI-SO.md) | **4 tầng bằng chứng** *(phản ứng → học được → **chuyển giao** → tác động)* · thiết kế đo nền–giữa–cuối · **3 bài đo hành vi 12 phút** · **hiệu chuẩn người chấm ≥80%** · quy tắc trung thực về nhân quả · **5 thiên lệch và cách chống** · **18 chỉ số lõi** · lịch đo cả năm · 5 quy tắc đạo đức đo lường |
 | [02-BO-BAO-CAO-TAC-DONG-3-CAP.md](14-DO-LUONG-TAC-DONG/02-BO-BAO-CAO-TAC-DONG-3-CAP.md) | 8 quy tắc trình bày số liệu trung thực · **báo cáo phụ huynh 1 trang** *(mở bằng câu bố mẹ nói tháng 9)* · **báo cáo nhà trường 4 trang** *(có trang đối sánh CT GDPT 2018 dùng lại được)* · **báo cáo hội đồng 8 trang** *(có trang tự nêu hạn chế)* · ngân hàng câu nói về số liệu |
 | [04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md](12-NHAN-DIEN-THUONG-HIEU/04-NHAN-DIEN-SO-VA-DONG-BO-GITA365.md) | 8 quy tắc đồng bộ KNSGITA ↔ GITA365 · thanh tiến trình 7 phần · giao diện theo cấp học · video · audio · huy hiệu số · thông báo · mạng xã hội · **bộ tệp nguồn cần sản xuất** · bảo vệ thương hiệu |
+
+
+### 🔍 15 – SEO & HIỆN DIỆN SỐ
+| Tệp | Nội dung |
+|---|---|
+| [01-CHIEN-LUOC-SEO-VA-EEAT.md](15-SEO-VA-HIEN-DIEN-SO/01-CHIEN-LUOC-SEO-VA-EEAT.md) | ⭐ **Luận điểm gốc: đừng cạnh tranh bằng bài blog — xuất bản công cụ, dữ liệu và quy trình mà chỉ GITA có** · kiến trúc **E-E-A-T** ánh xạ vào tài sản thật · **8 quy tắc YMYL** cho nội dung an toàn trẻ em · 7 nguyên tắc viết theo giọng thương hiệu · **10 điều tuyệt đối không làm** |
+| [02-BAN-DO-TU-KHOA-VA-KIEN-TRUC-NOI-DUNG.md](15-SEO-VA-HIEN-DIEN-SO/02-BAN-DO-TU-KHOA-VA-KIEN-TRUC-NOI-DUNG.md) | **5 cụm ý định tìm kiếm** · **chiến lược 3 bước** *(tài liệu giáo viên → vấn đề phụ huynh → địa phương)* · 6 trang trụ · **30 nội dung ưu tiên** có cột "tài sản riêng" bắt buộc · quy tắc cấu trúc một bài |
+| [03-KY-THUAT-DU-LIEU-CO-CAU-TRUC-VA-DANH-GIA-5-SAO.md](15-SEO-VA-HIEN-DIEN-SO/03-KY-THUAT-DU-LIEU-CO-CAU-TRUC-VA-DANH-GIA-5-SAO.md) | Checklist kỹ thuật · **6 mẫu JSON-LD dùng được ngay** *(Organization · Course · Person · Article có người thẩm định · FAQPage · HowTo)* · quy trình sản xuất nội dung 7 bước · **hệ đánh giá 5 sao tử tế** nối vào 12 khoảnh khắc WOW · đo lường SEO thật |
 
 ---
 
