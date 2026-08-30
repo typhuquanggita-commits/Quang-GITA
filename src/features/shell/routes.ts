@@ -21,7 +21,7 @@ export type Route =
   | { name: 'curriculum' }
   | { name: 'programmes' }
   | { name: 'tactics' }
-  | { name: 'expert-solutions' }
+  | { name: 'expert-solutions'; skill?: string }
   | { name: 'must-know' }
   | { name: 'papers' }
   | { name: 'paper'; paperId: string }
@@ -111,6 +111,10 @@ export function routeToHash(route: Route): string {
       return `#/solutions/${route.attemptId}`;
     case 'attempt-analysis':
       return `#/analysis/${route.attemptId}`;
+    case 'expert-solutions':
+      // The skill is optional: the library has a front page of its own, and a
+      // wrong answer arrives here already knowing which skill it wants.
+      return route.skill ? `#/expert-solutions/${route.skill}` : '#/expert-solutions';
     case 'result':
       return `#/result/${route.attemptId}`;
     default:
@@ -152,7 +156,7 @@ export function hashToRoute(hash: string): Route {
     case 'tactics':
       return { name: 'tactics' };
     case 'expert-solutions':
-      return { name: 'expert-solutions' };
+      return param ? { name: 'expert-solutions', skill: param } : { name: 'expert-solutions' };
     case 'must-know':
       return { name: 'must-know' };
     case 'papers':

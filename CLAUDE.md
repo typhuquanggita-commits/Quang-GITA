@@ -9,10 +9,10 @@ beyond React.
 ```bash
 npm run dev          # dev server on :3000
 npm run typecheck    # tsc --noEmit
-npm test             # 454 unit tests (node --test, native TS stripping)
+npm test             # 473 unit tests (node --test, native TS stripping)
 npm run check:bank   # item bank invariants
 npm run build        # typecheck then production build
-npm run test:browser # 159 checks against the built app via Playwright
+npm run test:browser # 164 checks against the built app via Playwright
 ```
 
 In this sandbox the browser test needs an explicit path:
@@ -102,6 +102,7 @@ to rely on a number deserves to know before they act, not after.
 | What does a learner see after a test? | `src/engine/attemptReview.ts` |
 | What is the personalised route, and why? | `src/engine/dossier.ts` |
 | How is stored or imported state restored? | `src/state/hydrate.ts` |
+| What does a missed item say you needed to recall? | `src/engine/recall.ts` |
 
 ## Known limits
 

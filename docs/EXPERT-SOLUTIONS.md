@@ -112,7 +112,10 @@ justification. The browser suite checks both states.
   the same decision in different clothing, which is what makes a pattern
   visible.
 - The items are authored for the walkthrough rather than drawn from the bank,
-  so a learner cannot yet go from a question they got wrong to the expert
-  solution for that exact item.
+  so a learner cannot go from a question they got wrong to the expert solution
+  for *that exact item*. They can now go to the solutions for that item's
+  skill: every wrong row in `#/solutions/<attempt>` links to
+  `#/expert-solutions/<skill>`, which opens the library narrowed to that skill
+  and says why it is narrowed. Item-level solutions remain the better answer.
 - No solution shows an expert getting it wrong and recovering, which is what
   actually happens under time pressure and would be worth one entry per skill.

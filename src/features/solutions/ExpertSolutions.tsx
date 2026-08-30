@@ -18,9 +18,9 @@
  */
 
 import React, { useMemo, useState } from 'react';
-import { SOLUTIONS, solutionStats, type ExpertSolution } from '../../data/solution-index.ts';
+import { SOLUTIONS, solutionsForSkill, solutionStats, type ExpertSolution } from '../../data/solution-index.ts';
 import { skillLabel, sectionLabel } from '../../data/blueprint.ts';
-import type { SectionId } from '../../types.ts';
+import type { SectionId, SkillId } from '../../types.ts';
 import { useLocale } from '../../i18n/index.ts';
 import { Badge, Button, Card, Empty, Segmented } from '../../components/ui/primitives.tsx';
 import { IconAlert, IconCheck, IconClock, IconSparkle, IconTarget } from '../../components/ui/icons.tsx';
@@ -145,15 +145,31 @@ function SolutionCard({
   );
 }
 
-export function ExpertSolutions({ navigate }: { navigate(route: Route): void }): React.ReactElement {
+export function ExpertSolutions({
+  navigate,
+  skill,
+}: {
+  navigate(route: Route): void;
+  /**
+   * Narrows the library to one skill.
+   *
+   * Set when a learner arrives from an item they got wrong, which is the
+   * journey the library was written for and the one it could not previously
+   * serve: the front page opens on thirty-one solutions and leaves the learner
+   * to find the one that answers the item in front of them.
+   */
+  skill?: string;
+}): React.ReactElement {
   const locale = useLocale();
   const vi = locale === 'vi';
   const [scope, setScope] = useState<Scope>('both');
 
   const stats = useMemo(() => solutionStats(), []);
+  const focused = useMemo(() => (skill ? solutionsForSkill(skill as SkillId) : []), [skill]);
+  const narrowed = skill !== undefined && focused.length > 0;
   const shown = useMemo(
-    () => SOLUTIONS.filter((s) => scope === 'both' || s.section === scope),
-    [scope],
+    () => (narrowed ? focused : SOLUTIONS.filter((s) => scope === 'both' || s.section === scope)),
+    [narrowed, focused, scope],
   );
 
   return (
@@ -192,18 +208,33 @@ export function ExpertSolutions({ navigate }: { navigate(route: Route): void }):
         </div>
       </Card>
 
-      <div className="no-print">
-        <Segmented
-          value={scope}
-          onChange={(next: Scope) => setScope(next)}
-          ariaLabel={vi ? 'Lọc theo phần thi' : 'Filter by section'}
-          options={[
-            { value: 'both', label: vi ? 'Cả hai phần' : 'Both sections' },
-            { value: 'rw', label: sectionLabel('rw', locale) },
-            { value: 'math', label: sectionLabel('math', locale) },
-          ]}
-        />
-      </div>
+      {narrowed ? (
+        <Card className="no-print">
+          <div className="between wrap gap-3">
+            <p className="text-sm">
+              {vi
+                ? `Đang xem lời giải cho kỹ năng ${skillLabel(skill as SkillId, locale)} — kỹ năng của câu bạn vừa làm sai.`
+                : `Showing the solutions for ${skillLabel(skill as SkillId, locale)} — the skill of the item you missed.`}
+            </p>
+            <Button variant="secondary" onClick={() => navigate({ name: 'expert-solutions' })}>
+              {vi ? `Xem cả ${SOLUTIONS.length} lời giải` : `See all ${SOLUTIONS.length} solutions`}
+            </Button>
+          </div>
+        </Card>
+      ) : (
+        <div className="no-print">
+          <Segmented
+            value={scope}
+            onChange={(next: Scope) => setScope(next)}
+            ariaLabel={vi ? 'Lọc theo phần thi' : 'Filter by section'}
+            options={[
+              { value: 'both', label: vi ? 'Cả hai phần' : 'Both sections' },
+              { value: 'rw', label: sectionLabel('rw', locale) },
+              { value: 'math', label: sectionLabel('math', locale) },
+            ]}
+          />
+        </div>
+      )}
 
       {shown.length === 0 ? (
         <Empty level={2} icon={<IconSparkle size={28} />} title={vi ? 'Không có lời giải nào' : 'No solutions'} />

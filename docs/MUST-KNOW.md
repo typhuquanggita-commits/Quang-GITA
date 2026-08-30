@@ -92,12 +92,65 @@ mid-module is losing the same seconds. A test requires at least eight R&W
 entries so the section cannot be quietly dropped in favour of the one with
 formulas.
 
+## The recall check
+
+Each fact names the skills whose items call on it — `invokedBy`, authored by
+hand and not inferred, because the platform uses it to say something to a
+learner and a derived mapping would be a guess wearing the clothes of evidence.
+
+`src/engine/recall.ts` turns that mapping into the panel that follows a test.
+The rule it works under is worth stating on its own line:
+
+> It reports what the items you missed **needed**. It never reports what you
+> do not know.
+
+Nothing in a response record separates a learner who could not recall
+`sin²θ + cos²θ = 1` from one who recalled it instantly and misread the diagram.
+Software that claims the first has invented evidence, and a learner drilled on
+a fact they already hold learns to distrust everything else on the screen. So
+the panel asks, and the learner's own answer to the drill is the only thing
+that reaches the review schedule.
+
+### What counts as evidence
+
+Only a wrong or omitted item, and not all of those:
+
+| Signal | Treatment |
+| --- | --- |
+| Careless error | Excluded. `classifyError` has already judged that the learner holds this material and slipped. |
+| Field-test item | Excluded. Unscored, so it is not evidence about the learner. |
+| Wrong **and** slow | Raises the skill's facts on its own. Deriving instead of recalling costs seconds — that is the premise of this file — so a miss that also ran long is the shape the cost model predicts. |
+| Any other miss | Must happen twice in the same skill. One miss is noise. |
+
+No qualifying evidence produces no candidates: not a short list, not a default
+set of "commonly missed" facts. A clean section is reported as a clean section.
+
+### Ranking
+
+By payback — `cost` × the misses that raised the fact, in seconds a sitting
+would give back. That ranks a cheap fact met constantly above an expensive one
+met once, because the learner is choosing what to spend an evening on and
+seconds recovered is the honest unit for that choice.
+
+### The schedule
+
+A fact enters spaced repetition under its own `mk:` namespace, alongside `q:`
+for questions and `v:` for vocabulary, and only when the learner has sat its
+drill. Three outcomes, not five: *could not recall it* (grade 1), *recalled but
+had to think* (grade 3), *instant* (grade 5). The middle of a five-point scale
+invites "sort of", which schedules nothing useful and feels like progress.
+Recalled-but-slow deliberately grades below a clean hit — not automatic is the
+thing being fixed.
+
+The deck lives on the Review centre's **Must-know recall** tab, and on a fresh
+profile it is empty and says why. `tests/recall.test.ts` holds all of this.
+
 ## Known limits
 
 - `cost` is an editorial estimate of derivation time, not a measurement. It is
   a defensible ranking and not a stopwatch.
-- Nothing connects a learner's wrong answers to the facts they were missing. A
-  learner who fails three vertex-form items is not told that `mk_vertex` is
-  the gap, and that link is the obvious next thing to build.
-- The drill is not scheduled. It sits outside the spaced-repetition system that
-  already exists for vocabulary, which is where it should eventually live.
+- `invokedBy` says an item of this skill *may* call on this fact, not that a
+  particular item did. Item-level tagging would sharpen the panel considerably
+  and is the obvious next step.
+- The recall check reads one attempt at a time. Facts raised repeatedly across
+  several sittings are not yet accumulated into a standing list.

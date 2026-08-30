@@ -20,10 +20,13 @@ import { AnswerArea, Explanation, StimulusView } from '../../components/ui/Quest
 import { BarChart } from '../../components/charts/charts.tsx';
 import { IconCheck, IconSparkle, IconX } from '../../components/ui/icons.tsx';
 import { formatDate, isoDate } from '../../lib/util.ts';
+import { recallProgress } from '../../engine/recall.ts';
+import { RecallDeck } from './RecallDeck.tsx';
+import type { Route } from '../shell/routes.ts';
 
-type Tab = 'due' | 'upcoming' | 'mastered' | 'all';
+type Tab = 'due' | 'upcoming' | 'mastered' | 'all' | 'recall';
 
-export function ReviewCentre(): React.ReactElement {
+export function ReviewCentre({ navigate }: { navigate(route: Route): void }): React.ReactElement {
   const t = useT();
   const locale = useLocale();
   const { state } = useStore();
@@ -50,6 +53,7 @@ export function ReviewCentre(): React.ReactElement {
   const mastered = useMemo(() => questionCards.filter((e) => isMastered(e.card)), [questionCards]);
   const missed = useMemo(() => selectMissedQuestions(state), [state]);
   const forecast = useMemo(() => reviewForecast(state.srs, 14), [state.srs]);
+  const recall = useMemo(() => recallProgress(state.srs), [state.srs]);
 
   if (reviewing) {
     return (
@@ -67,7 +71,9 @@ export function ReviewCentre(): React.ReactElement {
         ? upcoming.map((c) => ({ card: c, question: QUESTION_BY_ID.get(c.ref.slice(2)) }))
         : tab === 'mastered'
           ? mastered
-          : missed.map((q) => ({ card: own(state.srs, `q:${q.id}`), question: q }));
+          : tab === 'all'
+            ? missed.map((q) => ({ card: own(state.srs, `q:${q.id}`), question: q }))
+            : /* recall: facts, not questions — the deck below builds its own rows */ [];
 
   return (
     <div className="page stack gap-6">
@@ -90,6 +96,7 @@ export function ReviewCentre(): React.ReactElement {
         <Kpi label={t('review.upcoming')} value={upcoming.length} />
         <Kpi label={t('review.mastered')} value={mastered.length} />
         <Kpi label={t('review.all')} value={missed.length} />
+        <Kpi label={locale === 'vi' ? 'Kiến thức đến hạn' : 'Facts due'} value={recall.due} />
       </div>
 
       <Card title={locale === 'vi' ? 'Dự báo 14 ngày tới' : 'Next 14 days'}>
@@ -111,10 +118,16 @@ export function ReviewCentre(): React.ReactElement {
           { id: 'upcoming', label: t('review.upcoming') },
           { id: 'mastered', label: t('review.mastered') },
           { id: 'all', label: t('review.all') },
+          {
+            id: 'recall',
+            label: `${locale === 'vi' ? 'Kiến thức phải nhớ' : 'Must-know recall'}${recall.due > 0 ? ` (${recall.due})` : ''}`,
+          },
         ]}
       />
 
-      {rows.length === 0 ? (
+      {tab === 'recall' ? (
+        <RecallDeck navigate={navigate} />
+      ) : rows.length === 0 ? (
         <Empty
           icon={<IconSparkle size={30} />}
           title={tab === 'due' ? t('review.nothingDue') : t('common.none')}

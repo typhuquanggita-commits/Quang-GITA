@@ -533,7 +533,7 @@ function RouteView({
     case 'dossier':
       return <Dossier navigate={navigate} />;
     case 'review':
-      return <ReviewCentre />;
+      return <ReviewCentre navigate={navigate} />;
     case 'analytics':
       return <Analytics navigate={navigate} />;
     case 'console':
@@ -561,7 +561,7 @@ function RouteView({
     case 'roadmap':
       return <Roadmap navigate={navigate} />;
     case 'expert-solutions':
-      return <ExpertSolutions navigate={navigate} />;
+      return <ExpertSolutions navigate={navigate} skill={route.skill} />;
     case 'must-know':
       return <MustKnow />;
     case 'settings':

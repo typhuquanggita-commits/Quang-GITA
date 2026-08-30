@@ -25,6 +25,8 @@ import React, { useMemo, useState } from 'react';
 import { QUESTION_BY_ID } from '../../data/bank.ts';
 import { skillLabel, domainLabel, sectionLabel } from '../../data/blueprint.ts';
 import { lessonFor } from '../../data/lesson-index.ts';
+import { solutionsForSkill } from '../../data/solution-index.ts';
+import { RecallCheck } from './RecallCheck.tsx';
 import {
   buildReview,
   summariseReview,
@@ -35,7 +37,7 @@ import { useStore } from '../../state/store.tsx';
 import { useLocale, useT } from '../../i18n/index.ts';
 import { Badge, Button, Card, Empty, Segmented } from '../../components/ui/primitives.tsx';
 import { AnswerArea, Explanation, StimulusView } from '../../components/ui/QuestionView.tsx';
-import { IconAlert, IconBook, IconCheck, IconClock, IconFlagFilled, IconX } from '../../components/ui/icons.tsx';
+import { IconAlert, IconBook, IconCheck, IconClock, IconFlagFilled, IconSparkle, IconX } from '../../components/ui/icons.tsx';
 import { formatClock } from '../../lib/util.ts';
 import type { Route } from '../shell/routes.ts';
 
@@ -133,6 +135,13 @@ export function AttemptReview({
         </div>
       </div>
 
+      {/*
+        Placed above the item list on purpose. The list answers "what did I get
+        wrong"; this answers "what do I do tonight", and a learner who has just
+        read ninety-eight solutions does not scroll further.
+      */}
+      <RecallCheck rows={rows} />
+
       <div className="between wrap gap-4">
         <Segmented<Filter>
           ariaLabel={vi ? 'Lọc câu hỏi' : 'Filter questions'}
@@ -192,6 +201,7 @@ function SolutionCard({
   const vi = locale === 'vi';
   const { question } = row;
   const lesson = lessonFor(question.skill);
+  const expert = solutionsForSkill(question.skill).length;
 
   const verdictText =
     row.verdict === 'correct'
@@ -282,6 +292,30 @@ function SolutionCard({
           chosen={row.given}
           labels={{ explanation: t('practice.explanation'), whyWrong: t('practice.whyWrong') }}
         />
+
+        {/*
+          A wrong answer now reaches the expert read for its skill. The library
+          existed; the route into it from the item that needed it did not, so a
+          learner had to know it was there and go looking.
+        */}
+        {row.verdict !== 'correct' && expert > 0 && (
+          <div className="solution-lesson">
+            <div>
+              <strong>{vi ? 'Chuyên gia đọc câu này thế nào' : 'How an expert reads this kind of item'}</strong>
+              <p className="text-sm">
+                {vi
+                  ? `${expert} lời giải ở band khó cho kỹ năng này, kèm nước đi sai mà học sinh giỏi vẫn chọn.`
+                  : `${expert} hard-band ${expert === 1 ? 'solution' : 'solutions'} for this skill, each with the wrong turn an able student takes.`}
+              </p>
+            </div>
+            <Button
+              variant="secondary"
+              onClick={() => navigate({ name: 'expert-solutions', skill: question.skill })}
+            >
+              <IconSparkle size={16} /> {vi ? 'Lời giải chuyên gia' : 'Expert solutions'}
+            </Button>
+          </div>
+        )}
 
         {lesson && (
           <div className="solution-lesson">

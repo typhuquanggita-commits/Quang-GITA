@@ -765,6 +765,48 @@ try {
   check('opening one shows the wrong turn and where it breaks', (await page.locator('.solution-wrong').count()) === 1);
   check('and what transfers beyond the item', (await page.locator('.solution-transfer').count()) === 1);
 
+  /*
+   * A wrong answer must reach the expert read for its own skill. The library
+   * existed long before the route into it did, and a library nobody can enter
+   * from the item that needed it is a library nobody enters.
+   */
+  await page.evaluate(() => { window.location.hash = '#/expert-solutions/transitions'; });
+  await page.waitForTimeout(700);
+  const narrowed = await page.locator('.solution-card').count();
+  check(
+    'the library narrows to one skill when a missed item sends you there',
+    narrowed > 0 && narrowed < cards,
+    `${narrowed} of ${cards}`,
+  );
+  const narrowText = await page.locator('.page').innerText();
+  check(
+    'and says why it is narrowed, with a way back to all of them',
+    /kỹ năng của câu bạn vừa làm sai|the skill of the item you missed/.test(narrowText),
+  );
+  await page.getByRole('button', { name: /Xem cả|See all/ }).first().click();
+  await page.waitForTimeout(500);
+  check('the way back works', (await page.locator('.solution-card').count()) === cards);
+
+  /*
+   * The recall deck must never fill itself. A fact enters the schedule only
+   * when the learner has sat its drill and said what happened — so on a fresh
+   * profile the deck is empty and says so, rather than presenting all
+   * forty-six as though they were known or as though they were gaps.
+   */
+  await page.evaluate(() => { window.location.hash = '#/review'; });
+  await page.waitForTimeout(700);
+  await page.getByRole('tab', { name: /Kiến thức phải nhớ|Must-know recall/ }).click();
+  await page.waitForTimeout(400);
+  const deckText = await page.locator('.page').innerText();
+  check(
+    'the recall deck starts empty rather than assuming what is known',
+    /Chưa có kiến thức nào trong lịch ôn|Nothing scheduled yet/.test(deckText),
+  );
+  check(
+    'and says the learner’s own answer is what puts a fact there',
+    /câu trả lời của bạn|your own answer/.test(deckText),
+  );
+
   await page.evaluate(() => { window.location.hash = '#/roadmap'; });
   await page.waitForTimeout(800);
   const roadmapText = await page.locator('.page').innerText();
