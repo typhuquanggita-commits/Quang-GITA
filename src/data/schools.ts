@@ -369,6 +369,78 @@ export const SCHOOLS: School[] = [
     color: '#7c2d12',
   },
   {
+    id: 'ck-thcs',
+    name: 'Kiểm tra định kỳ môn Toán — THCS (lớp 6 đến lớp 9)',
+    shortName: 'Chính khoá THCS',
+    track: 'chinh-khoa',
+    org: 'Trường THCS · theo Thông tư 22/2021/TT-BGDĐT',
+    admissionNote:
+      'Không phải kỳ thi tuyển sinh. Đây là hệ thống đánh giá thường xuyên và định kỳ trong năm học: điểm đánh giá thường xuyên (hệ số 1), điểm giữa kỳ (hệ số 2) và điểm cuối kỳ (hệ số 3). Điểm trung bình môn quyết định xếp loại học lực và hồ sơ học bạ.',
+    rounds: ['Đánh giá thường xuyên', 'Kiểm tra giữa kỳ', 'Kiểm tra cuối kỳ'],
+    mathPapers: [
+      {
+        name: 'Kiểm tra giữa kỳ',
+        minutes: 60,
+        scale: '10,0 điểm',
+        note: 'Thường 30–40% trắc nghiệm và 60–70% tự luận, ma trận theo bốn mức: nhận biết, thông hiểu, vận dụng, vận dụng cao.',
+      },
+      {
+        name: 'Kiểm tra cuối kỳ',
+        minutes: 90,
+        scale: '10,0 điểm',
+        note: 'Phạm vi rộng hơn, phủ toàn bộ nội dung của học kỳ; tỉ trọng câu vận dụng cao lớn hơn bài giữa kỳ.',
+      },
+    ],
+    styleTags: ['Bám sát sách giáo khoa', 'Ma trận bốn mức độ', 'Đề do trường ra', 'Trọng số hệ số 1-2-3'],
+    signature: [
+      'Đề do chính giáo viên bộ môn hoặc tổ chuyên môn của trường ra, nên bám rất sát nội dung đã dạy trên lớp.',
+      'Nhóm câu nhận biết và thông hiểu chiếm khoảng 70% số điểm — đây là phần không được phép mất.',
+      'Hai câu cuối là vận dụng và vận dụng cao, quyết định khoảng cách giữa 8 điểm và 10 điểm.',
+      'Điểm hệ số 1 tích luỹ suốt kỳ và ảnh hưởng tới điểm tổng kết nhiều hơn học sinh thường nghĩ.',
+    ],
+    benchmark:
+      'Để đạt điểm tổng kết môn từ 9,0, thông thường cần điểm hệ số 1 gần tuyệt đối và cả hai bài định kỳ đều từ 8,5 trở lên. Trọng số cụ thể theo Thông tư 22: ĐTB môn = (tổng điểm thường xuyên + 2 × giữa kỳ + 3 × cuối kỳ) / (số điểm thường xuyên + 5).',
+    competitiveness: 3,
+    officialUrl: 'https://moet.gov.vn',
+    color: '#0d9488',
+  },
+  {
+    id: 'ck-thpt',
+    name: 'Kiểm tra định kỳ môn Toán — THPT (lớp 10 đến lớp 12)',
+    shortName: 'Chính khoá THPT',
+    track: 'chinh-khoa',
+    org: 'Trường THPT · theo Thông tư 22/2021/TT-BGDĐT',
+    admissionNote:
+      'Không phải kỳ thi tuyển sinh. Điểm trung bình môn Toán ba năm THPT vào học bạ, ảnh hưởng trực tiếp tới xét học bạ, xét học sinh giỏi và hồ sơ xét tuyển sớm của nhiều trường đại học.',
+    rounds: ['Đánh giá thường xuyên', 'Kiểm tra giữa kỳ', 'Kiểm tra cuối kỳ'],
+    mathPapers: [
+      {
+        name: 'Kiểm tra giữa kỳ',
+        minutes: 60,
+        scale: '10,0 điểm',
+        note: 'Nhiều trường đã chuyển sang định dạng ba phần giống đề tốt nghiệp: nhiều lựa chọn, đúng/sai, trả lời ngắn.',
+      },
+      {
+        name: 'Kiểm tra cuối kỳ',
+        minutes: 90,
+        scale: '10,0 điểm',
+        note: 'Phủ toàn bộ học kỳ; với lớp 12 thường được ra theo đúng cấu trúc đề tốt nghiệp để học sinh làm quen sớm.',
+      },
+    ],
+    styleTags: ['Ba phần như đề tốt nghiệp', 'Ma trận bốn mức độ', 'Vào học bạ', 'Xét tuyển sớm'],
+    signature: [
+      'Từ lớp 10, nhiều trường ra đề theo đúng ba phần của đề tốt nghiệp — luyện sớm là lợi thế kép.',
+      'Phần trả lời ngắn không có phương án để loại trừ, nên rủi ro cao và cần quy trình kiểm tra chéo.',
+      'Câu vận dụng cao thường rơi vào hàm số, tích phân, hình không gian hoặc xác suất tuỳ khối lớp.',
+      'Điểm học bạ ba năm là một kênh xét tuyển đại học thật, không phải chỉ là con số trong sổ.',
+    ],
+    benchmark:
+      'Mục tiêu thực tế của luồng này là điểm tổng kết môn Toán từ 9,0 mỗi kỳ. Công thức theo Thông tư 22 giống bậc THCS, nên vẫn phải giữ điểm hệ số 1 gần tuyệt đối.',
+    competitiveness: 3,
+    officialUrl: 'https://moet.gov.vn',
+    color: '#1B4F9C',
+  },
+  {
     id: 'tong-ket',
     name: 'Mục tiêu Top 1 tổng kết môn Toán lớp 10 – 11 – 12',
     shortName: 'Top 1 tổng kết',

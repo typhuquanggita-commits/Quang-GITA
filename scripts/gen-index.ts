@@ -1,11 +1,13 @@
 import { TOPICS } from '@/data/topics';
 import { EXAM_PAPERS, paperStats } from '@/data/papers';
+import { SYLLABI } from '@/data/syllabus';
 const t = TOPICS.map((x) => `  { id: '${x.id}', name: ${JSON.stringify(x.name)}, tracks: ${JSON.stringify(x.tracks)} },`).join('\n');
 const p = EXAM_PAPERS.map((x) => `  { id: '${x.id}', title: ${JSON.stringify(x.title)} },`).join('\n');
 const cards = EXAM_PAPERS.map((x) => {
   const s = paperStats(x);
   return `  { id: '${x.id}', code: '${x.code}', title: ${JSON.stringify(x.title)}, track: '${x.track}', minutes: ${x.minutes}, totalPoints: ${x.totalPoints}, items: ${s.items}, claims: ${s.claims} },`;
 }).join('\n');
+const sy = SYLLABI.map((x) => `  { id: '${x.id}', title: ${JSON.stringify(x.title)}, grade: ${x.grade}, term: '${x.term}' },`).join('\n');
 console.log(`import type { TrackId } from '@/types';
 
 /**
@@ -28,6 +30,10 @@ ${t}
 
 export const PAPER_INDEX: { id: string; title: string }[] = [
 ${p}
+];
+
+export const SYLLABUS_INDEX: { id: string; title: string; grade: number; term: string }[] = [
+${sy}
 ];
 
 export interface PaperCard {

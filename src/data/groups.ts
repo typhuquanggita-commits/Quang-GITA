@@ -292,6 +292,84 @@ export const GROUPS: Group[] = [
     ],
     color: '#7c3aed',
   },
+  {
+    id: 'ck-vao-nhip',
+    name: 'Nhóm 12 · Vào nhịp',
+    track: 'chinh-khoa',
+    band: 'Điểm kiểm tra hiện tại 5,0 – 7,0',
+    portrait:
+      'Hiểu bài trên lớp nhưng về nhà làm lại thì tắc. Điểm dao động mạnh giữa các bài kiểm tra vì phụ thuộc vào đề dễ hay khó.',
+    diagnosis: [
+      'Không ôn lại trong vòng 48 giờ sau buổi học nên kiến thức phai trước bài kiểm tra.',
+      'Mất điểm nhiều ở câu nhận biết và thông hiểu vì lỗi tính toán, không phải vì không hiểu.',
+      'Chưa có thói quen làm hết bài tập sách giáo khoa trước khi làm sách tham khảo.',
+    ],
+    target: 'Đưa điểm kiểm tra lên ổn định 8,0+ và không còn bài nào dưới 7,0.',
+    weeklyHours: '5 – 7 giờ/tuần',
+    priorities: [
+      'Thói quen ôn 48 giờ: 20 phút sau mỗi buổi học, không thương lượng.',
+      'Làm trọn bài tập sách giáo khoa của chuyên đề đang học trước khi động vào sách nâng cao.',
+      'Sổ tay lỗi tính toán, mỗi lỗi phải làm lại 3 bài cùng dạng.',
+      'Điểm hệ số 1: chuẩn bị bài trước mỗi buổi để luôn trả lời được khi bị gọi.',
+    ],
+    redFlags: [
+      'Học dồn trước ngày kiểm tra. Đây là nguyên nhân số một khiến điểm dao động.',
+      'Nhảy sang sách nâng cao khi bài cơ bản còn sai — vừa mất thời gian vừa mất tự tin.',
+    ],
+    color: '#0d9488',
+  },
+  {
+    id: 'ck-gioi',
+    name: 'Nhóm 13 · Học sinh giỏi',
+    track: 'chinh-khoa',
+    band: 'Điểm kiểm tra hiện tại 7,0 – 8,5',
+    portrait:
+      'Nắm chắc chương trình, làm tốt câu nhận biết và thông hiểu. Rào cản là nhóm câu vận dụng ở cuối đề và tốc độ.',
+    diagnosis: [
+      'Ba phần đầu đề kiểm tra làm sạch, nhưng hai câu cuối thường bỏ dở.',
+      'Trình bày còn tắt, bị trừ điểm dù hướng làm đúng.',
+      'Chưa phân bổ thời gian, hay hết giờ ở câu cuối.',
+    ],
+    target: 'Ổn định 9,0+ ở mọi bài kiểm tra định kỳ.',
+    weeklyHours: '7 – 10 giờ/tuần',
+    priorities: [
+      'Nhóm câu vận dụng: mỗi tuần 5 bài đúng dạng thường ra ở đề của trường.',
+      'Trình bày theo barem: tự chấm bài của mình theo thang điểm trước khi nộp.',
+      'Luyện đề đúng ma trận giữa kỳ và cuối kỳ, tính giờ.',
+      'Ôn ngắt quãng 1–3–7–21 cho các chuyên đề đã học từ đầu năm.',
+    ],
+    redFlags: [
+      'Chỉ ôn chuyên đề đang học mà bỏ quên chuyên đề đầu năm — đề cuối kỳ hỏi cả hai.',
+      'Bỏ luôn câu vận dụng cao vì nghĩ "chỉ 0,5 điểm" — đó chính là 0,5 điểm tách 9,0 khỏi 9,5.',
+    ],
+    color: '#1B4F9C',
+  },
+  {
+    id: 'ck-top1',
+    name: 'Nhóm 14 · Top 1 lớp',
+    track: 'chinh-khoa',
+    band: 'Điểm kiểm tra hiện tại 8,5 – 10',
+    portrait:
+      'Kiến thức đã đủ. Cuộc chiến còn lại là độ chính xác tuyệt đối, tốc độ, và nhóm câu vận dụng cao ở cuối đề.',
+    diagnosis: [
+      'Vẫn mất 0,5 – 1,0 điểm mỗi bài vì lỗi vặt ở câu dễ.',
+      'Câu vận dụng cao làm được nhưng tốn quá nhiều thời gian.',
+      'Điểm hệ số 1 đôi khi bị bỏ lơi vì "đằng nào cũng cao".',
+    ],
+    target: 'Điểm tổng kết môn Toán cao nhất lớp, và mọi bài kiểm tra đều từ 9,0 trở lên.',
+    weeklyHours: '10 – 14 giờ/tuần',
+    priorities: [
+      'Quy trình soát bài 5 phút cuối: đọc lại câu hỏi, không đọc lại lời giải.',
+      'Ngân hàng câu vận dụng cao theo từng chuyên đề của khối lớp.',
+      'Giữ điểm hệ số 1 tuyệt đối — đây là phần dễ nhất nhưng cũng hay bị buông nhất.',
+      'Nếu có định thi đánh giá năng lực (HSA, TSA) thì bổ sung luyện tốc độ riêng từ học kỳ II.',
+    ],
+    redFlags: [
+      'Chủ quan với câu dễ. Ở nhóm này, gần như toàn bộ điểm mất đi đến từ câu dễ chứ không phải câu khó.',
+      'Chạy trước chương trình quá xa mà bỏ bê bài trên lớp — điểm tổng kết tính theo bài trên lớp.',
+    ],
+    color: '#E01B24',
+  },
 ];
 
 export const groupById = (id: string) => GROUPS.find((g) => g.id === id)!;

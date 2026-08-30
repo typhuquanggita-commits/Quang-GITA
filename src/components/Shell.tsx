@@ -25,6 +25,7 @@ export const NAV: NavItem[] = [
   { path: href('ho-so'), label: 'Hồ sơ học viên', icon: '❖', group: 'Học tập' },
   { path: href('bao-cao'), label: 'Báo cáo gia đình', icon: '⎙', group: 'Học tập' },
   { path: href('chuyen-de'), label: 'Chuyên đề Toán', icon: '❑', group: 'Nội dung' },
+  { path: href('de-cuong'), label: 'Đề cương ôn tập', icon: '▦', group: 'Nội dung' },
   { path: href('cau-truc-de-thi'), label: 'Cấu trúc đề thi', icon: '◇', group: 'Nội dung' },
   { path: href('de-thi'), label: 'Đề thi thử có lời giải', icon: '⬢', group: 'Nội dung' },
   { path: href('cong-thuc'), label: 'Sổ tay công thức', icon: '∑', group: 'Nội dung' },
@@ -316,7 +317,7 @@ function SiteFooter() {
  * giai đoạn đã mang sẵn ký tự đầu cho biết thuộc luồng nào (T, C, Q), nên tính
  * được đầy đủ mà không cần tra kho.
  */
-const STAGE_PREFIX: Record<TrackId, string> = { thpt: 'T', chuyen: 'C', 'thpt-qg': 'Q', lop6: 'L' };
+const STAGE_PREFIX: Record<TrackId, string> = { thpt: 'T', chuyen: 'C', 'thpt-qg': 'Q', lop6: 'L', 'chinh-khoa': 'K' };
 
 function miniOverview(state: AppState, track: TrackId) {
   const prefix = STAGE_PREFIX[track];

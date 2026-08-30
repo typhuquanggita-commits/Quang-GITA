@@ -363,7 +363,7 @@ export const GENERATORS_EXTRA: ItemGenerator[] = [
     name: 'Thể tích khối chóp',
     topicId: 'q11-hinh-khong-gian',
     strand: 'hinh-khong-gian',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Áp dụng công thức V = (1/3)·S·h',
     build: (r) => {
@@ -387,7 +387,7 @@ export const GENERATORS_EXTRA: ItemGenerator[] = [
     name: 'Góc giữa đường thẳng và mặt phẳng',
     topicId: 'q11-hinh-khong-gian',
     strand: 'hinh-khong-gian',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 4,
     skill: 'Xác định hình chiếu vuông góc rồi tính góc',
     build: (r) => {
@@ -418,7 +418,7 @@ export const GENERATORS_EXTRA: ItemGenerator[] = [
     name: 'Tính điểm trung bình môn học kỳ',
     topicId: 'q-top1-tong-ket',
     strand: 'dai-so',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 1,
     skill: 'Áp dụng đúng hệ số của từng loại điểm',
     build: (r) => {

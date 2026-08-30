@@ -24,6 +24,10 @@ const SHARES: Record<GroupId, number[]> = {
   'l6-lam-quen': [0.38, 0.3, 0.18, 0.14],
   'l6-vung-chac': [0.24, 0.32, 0.24, 0.2],
   'l6-but-pha': [0.14, 0.26, 0.32, 0.28],
+  /* Luồng chính khoá chia theo bốn mốc kiểm tra của năm học. */
+  'ck-vao-nhip': [0.3, 0.26, 0.24, 0.2],
+  'ck-gioi': [0.24, 0.26, 0.26, 0.24],
+  'ck-top1': [0.2, 0.24, 0.28, 0.28],
 };
 
 function allocateWeeks(total: number, shares: number[]): number[] {
@@ -173,6 +177,11 @@ export function buildRoadmap(profile: Profile): {
 /** Gợi ý nhóm học sinh từ điểm bài test xếp lộ trình. */
 export function suggestGroup(track: TrackId, scorePercent: number): GroupId {
   if (track === 'chuyen') return scorePercent >= 75 ? 'dinh-cao' : 'chuyen-sau';
+  if (track === 'chinh-khoa') {
+    if (scorePercent >= 80) return 'ck-top1';
+    if (scorePercent >= 58) return 'ck-gioi';
+    return 'ck-vao-nhip';
+  }
   if (track === 'lop6') {
     if (scorePercent >= 78) return 'l6-but-pha';
     if (scorePercent >= 55) return 'l6-vung-chac';

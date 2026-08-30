@@ -14,15 +14,16 @@
  * ra từ kho nội dung, và bản dựng bị chặn nếu lệch dù chỉ một đơn vị.
  */
 export const SCALE = {
-  worksheets: 2400,
-  missions: 2400,
+  worksheets: 3000,
+  missions: 3000,
   chuyen: 600,
   thpt: 600,
   quocGia: 800,
   lop6: 400,
-  items: 19994,
+  chinhKhoa: 600,
+  items: 24994,
   generators: 105,
-  packedTopics: 70,
+  packedTopics: 91,
   topics: 58,
   formulas: 225,
   formulaGroups: 26,

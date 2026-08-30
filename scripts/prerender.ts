@@ -14,11 +14,14 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { allIndexablePaths, appShellPaths, matchRoute, topicIdFromSlug, paperIdFromSlug, href, topicSlug, paperSlug } from '../src/lib/routes';
+import { allIndexablePaths, appShellPaths, matchRoute, topicIdFromSlug, paperIdFromSlug, href, topicSlug, paperSlug,
+  syllabusSlug,
+  syllabusIdFromSlug } from '../src/lib/routes';
 import { seoFor, SITE, organizationLd, websiteLd } from '../src/lib/seo';
 import { faqFor } from '../src/data/faq';
 import { TOPICS, topicById } from '../src/data/topics';
 import { EXAM_PAPERS, paperById, paperItems } from '../src/data/papers';
+import { SYLLABI, syllabusById, TERM_LABEL } from '../src/data/syllabus';
 import { BLUEPRINTS } from '../src/data/blueprints';
 import { SCHOOLS, strandById } from '../src/data/schools';
 import { FORMULA_GROUPS } from '../src/data/formulas';
@@ -211,6 +214,82 @@ function bodyFor(pageId: PageId, params: Record<string, string>): string {
         faqBlock('cau-truc-de-thi'),
         relatedBlock([{ to: href('de-thi'), label: 'Làm thử đề chuẩn cấu trúc' }]),
       ].join('');
+
+    case 'de-cuong': {
+      const grades = [...new Set(SYLLABI.map((x) => x.grade))].sort((a, b) => a - b);
+      return [
+        p(
+          `${SYLLABI.length} đề cương ôn tập Toán cho khối ${grades.join(', ')}. Mỗi đề cương gồm phạm vi kiến thức, ma trận tham chiếu theo bốn mức độ, công thức phải thuộc, sơ đồ tư duy tổng hợp, các dạng bài trọng tâm kèm cách đọc vị, kế hoạch ôn theo tuần và danh mục tự kiểm.`,
+        ),
+        ...grades.map((g) =>
+          [
+            h2(`Toán lớp ${g}`),
+            `<ul>${SYLLABI.filter((x) => x.grade === g)
+              .map(
+                (x) =>
+                  `<li>${link(href('de-cuong-detail', { slug: syllabusSlug(x.id) }), x.title)} — ${esc(
+                    TERM_LABEL[x.term].label,
+                  )}, bài ${x.minutes} phút, ${x.keyTypes.length} dạng bài, kế hoạch ${x.plan.length} tuần.</li>`,
+              )
+              .join('')}</ul>`,
+          ].join(''),
+        ),
+        h2('Ma trận ở đây là ma trận tham chiếu'),
+        p(
+          'Ma trận trong mỗi đề cương dựng theo Thông tư 22/2021/TT-BGDĐT và mặt bằng chung của đề kiểm tra định kỳ, không phải ma trận chính thức của một trường cụ thể. Mỗi trường tự ra đề, nên hãy đối chiếu với công bố của tổ chuyên môn trường bạn.',
+        ),
+        faqBlock('de-cuong'),
+        relatedBlock([
+          { to: href('chuyen-de'), label: 'Vào kho chuyên đề Toán' },
+          { to: href('de-thi'), label: 'Luyện đề có lời giải và barem' },
+        ]),
+      ].join('');
+    }
+
+    case 'de-cuong-detail': {
+      const sy = syllabusById(syllabusIdFromSlug(params.slug));
+      if (!sy) return '';
+      return [
+        p(`Bài kiểm tra ${sy.minutes} phút — ${sy.format}.`),
+        h2('1. Phạm vi kiến thức'),
+        ul(sy.scope),
+        h2('2. Ma trận tham chiếu theo bốn mức độ'),
+        `<ul>${sy.matrix
+          .map(
+            (r) =>
+              `<li><strong>${esc(r.topic)}</strong> — nhận biết ${r.nhanBiet}, thông hiểu ${r.thongHieu}, vận dụng ${r.vanDung}, vận dụng cao ${r.vanDungCao} (tổng ${
+                r.nhanBiet + r.thongHieu + r.vanDung + r.vanDungCao
+              } điểm)</li>`,
+          )
+          .join('')}</ul>`,
+        h2('3. Công thức và định lí phải thuộc'),
+        ul(sy.mustKnow),
+        h2('4. Sơ đồ tư duy tổng hợp kiến thức'),
+        `<ul>${sy.mindmap
+          .map((b) => `<li><strong>${esc(b.branch)}</strong>: ${esc(b.nodes.join(' · '))}. Dùng để: ${esc(b.useFor)}</li>`)
+          .join('')}</ul>`,
+        h2('5. Dạng bài trọng tâm — đọc vị và phương pháp'),
+        ...sy.keyTypes.map((t) =>
+          [
+            h3(t.name),
+            p(`Đọc vị đề: ${t.docVi.join(' ')}`),
+            `<ol>${t.method.map((x) => `<li>${esc(x)}</li>`).join('')}</ol>`,
+            p(`Bẫy mất điểm: ${t.trap}`),
+          ].join(''),
+        ),
+        h2('6. Kế hoạch ôn theo tuần'),
+        `<ul>${sy.plan
+          .map((w) => `<li><strong>${esc(w.week)}</strong> — ${esc(w.focus)}. Sản phẩm: ${esc(w.output)}</li>`)
+          .join('')}</ul>`,
+        h2('7. Danh mục tự kiểm trước hôm kiểm tra'),
+        ul(sy.selfCheck),
+        h2('8. Đọc điểm và việc tiếp theo'),
+        `<ul>${sy.targets
+          .map((t) => `<li><strong>${esc(t.band)}</strong> — ${esc(t.meaning)} Việc tiếp theo: ${esc(t.next)}</li>`)
+          .join('')}</ul>`,
+        relatedBlock([{ to: href('de-cuong'), label: 'Xem toàn bộ đề cương ôn tập' }]),
+      ].join('');
+    }
 
     case 'de-thi':
       return [

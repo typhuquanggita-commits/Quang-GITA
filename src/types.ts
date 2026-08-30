@@ -1,5 +1,5 @@
-/** Bốn luồng luyện thi của nền tảng. */
-export type TrackId = 'chuyen' | 'thpt' | 'thpt-qg' | 'lop6';
+/** Năm luồng của nền tảng: bốn luồng luyện thi và một luồng chính khoá. */
+export type TrackId = 'chuyen' | 'thpt' | 'thpt-qg' | 'lop6' | 'chinh-khoa';
 
 /** Nhóm năng lực học sinh (kết quả bài test xếp lộ trình). */
 export type GroupId =
@@ -13,7 +13,10 @@ export type GroupId =
   | 'qg-toi-uu'
   | 'l6-lam-quen'
   | 'l6-vung-chac'
-  | 'l6-but-pha';
+  | 'l6-but-pha'
+  | 'ck-vao-nhip'
+  | 'ck-gioi'
+  | 'ck-top1';
 
 /** Mã kỳ thi / trường. */
 export type SchoolId =
@@ -28,6 +31,8 @@ export type SchoolId =
   | 'tsa'
   | 'lop6-cau-giay'
   | 'lop6-ngoai-ngu'
+  | 'ck-thpt'
+  | 'ck-thcs'
   | 'tong-ket';
 
 /** Mạch kiến thức. */
@@ -97,8 +102,8 @@ export interface Topic {
   name: string;
   strand: StrandId;
   tracks: TrackId[];
-  /** Khối lớp gắn với chuyên đề (5 cho luồng vào 6; 10–12 cho luồng THPT). */
-  grade?: 5 | 9 | 10 | 11 | 12;
+  /** Khối lớp gắn với chuyên đề (5 cho luồng vào 6; 6–9 và 10–12 cho các luồng còn lại). */
+  grade?: 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
   level: 1 | 2 | 3 | 4 | 5; // 1 cơ bản → 5 đỉnh cao
   frequency: number; // % xuất hiện trong đề (ước lượng theo thống kê đề các năm)
   hours: number; // số giờ học đề xuất

@@ -22,6 +22,7 @@ const values: Record<string, number> = {
   thpt: st.thpt,
   quocGia: st.quocGia,
   lop6: st.lop6,
+  chinhKhoa: st.chinhKhoa,
   items: st.items,
   generators: GENERATORS.length,
   packedTopics: st.packedTopics,

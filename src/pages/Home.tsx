@@ -11,7 +11,7 @@ import { PAPER_CARDS, TOPIC_INDEX } from '@/data/catalog-index';
 import { Card, SectionTitle, Badge, Progress } from '@/components/ui';
 import type { TrackId } from '@/types';
 
-const TRACKS: TrackId[] = ['chuyen', 'thpt', 'thpt-qg', 'lop6'];
+const TRACKS: TrackId[] = ['chuyen', 'thpt', 'thpt-qg', 'lop6', 'chinh-khoa'];
 
 export default function Home() {
   const { state, update } = useApp();

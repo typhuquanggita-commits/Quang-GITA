@@ -63,7 +63,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Phép toán trên tập hợp số',
     topicId: 'q10-menh-de-tap-hop',
     strand: 'dai-so',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 1,
     skill: 'Lấy giao – hợp của các khoảng trên trục số',
     build: (r) => {
@@ -87,7 +87,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Xét dấu tam thức bậc hai',
     topicId: 'q10-bpt-tam-thuc',
     strand: 'dai-so',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Quy tắc trong trái ngoài cùng',
     build: (r) => {
@@ -117,7 +117,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Tam thức luôn dương với mọi x',
     topicId: 'q10-bpt-tam-thuc',
     strand: 'dai-so',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Điều kiện a > 0 và Δ < 0',
     build: (r) => {
@@ -145,7 +145,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Toạ độ đỉnh của parabol',
     topicId: 'q10-ham-so-bac-hai',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Xác định đỉnh và trục đối xứng',
     build: (r) => {
@@ -171,7 +171,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Định lí cosin trong tam giác',
     topicId: 'q10-he-thuc-luong',
     strand: 'hinh-hoc',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Áp dụng định lí cosin',
     build: (r) => {
@@ -197,7 +197,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Tích vô hướng & điều kiện vuông góc',
     topicId: 'q10-vecto',
     strand: 'toa-do',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Dùng tích vô hướng bằng 0',
     build: (r) => {
@@ -222,7 +222,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Khoảng cách từ điểm đến đường thẳng',
     topicId: 'q10-toa-do-phang',
     strand: 'toa-do',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Công thức khoảng cách trong mặt phẳng',
     build: (r) => {
@@ -248,7 +248,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Tâm và bán kính đường tròn',
     topicId: 'q10-toa-do-phang',
     strand: 'toa-do',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Đưa phương trình đường tròn về dạng chính tắc',
     build: (r) => {
@@ -277,7 +277,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Hoán vị – chỉnh hợp – tổ hợp',
     topicId: 'q10-to-hop-newton',
     strand: 'xac-suat',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Phân biệt có thứ tự và không thứ tự',
     build: (r) => {
@@ -309,7 +309,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Hệ số trong khai triển nhị thức Newton',
     topicId: 'q10-to-hop-newton',
     strand: 'xac-suat',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Số hạng tổng quát của khai triển',
     build: (r) => {
@@ -337,7 +337,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Phương trình lượng giác cơ bản',
     topicId: 'q11-luong-giac',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Viết đúng và đủ họ nghiệm',
     build: (r) => {
@@ -365,7 +365,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Cấp số cộng & cấp số nhân',
     topicId: 'q11-day-so',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Công thức số hạng tổng quát và tổng',
     build: (r) => {
@@ -412,7 +412,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Giới hạn dạng vô định 0/0',
     topicId: 'q11-gioi-han',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Phân tích thành nhân tử để khử dạng vô định',
     build: (r) => {
@@ -439,7 +439,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Phương trình mũ đưa về cùng cơ số',
     topicId: 'q11-mu-logarit',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Đưa hai vế về cùng cơ số',
     build: (r) => {
@@ -469,7 +469,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Tính giá trị biểu thức logarit',
     topicId: 'q11-mu-logarit',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Vận dụng công thức logarit',
     build: (r) => {
@@ -494,7 +494,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Tính đạo hàm tại một điểm',
     topicId: 'q11-dao-ham',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Quy tắc đạo hàm của đa thức',
     build: (r) => {
@@ -520,7 +520,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Phương trình tiếp tuyến của đồ thị',
     topicId: 'q11-dao-ham',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Viết tiếp tuyến tại điểm có hoành độ cho trước',
     build: (r) => {
@@ -551,7 +551,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Xác suất của biến cố hợp',
     topicId: 'q11-xac-suat',
     strand: 'xac-suat',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Công thức cộng xác suất',
     build: (r) => {
@@ -579,7 +579,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Điểm cực trị của hàm bậc ba',
     topicId: 'q12-khao-sat-ham-so',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Xét dấu đạo hàm để tìm cực trị',
     build: (r) => {
@@ -607,7 +607,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Tiệm cận của hàm phân thức bậc nhất',
     topicId: 'q12-khao-sat-ham-so',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Xác định tiệm cận đứng và tiệm cận ngang',
     build: (r) => {
@@ -638,7 +638,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Tính tích phân của đa thức',
     topicId: 'q12-nguyen-ham-tich-phan',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Áp dụng công thức Newton–Leibniz',
     build: (r) => {
@@ -668,7 +668,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Khoảng cách từ điểm đến mặt phẳng',
     topicId: 'q12-oxyz',
     strand: 'toa-do',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Công thức khoảng cách trong Oxyz',
     build: (r) => {
@@ -696,7 +696,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Tâm và bán kính mặt cầu',
     topicId: 'q12-oxyz',
     strand: 'toa-do',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Chuẩn hoá phương trình mặt cầu',
     build: (r) => {
@@ -726,7 +726,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Phương sai & độ lệch chuẩn',
     topicId: 'q12-thong-ke',
     strand: 'xac-suat',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 2,
     skill: 'Tính đặc trưng đo độ phân tán',
     build: (r) => {
@@ -753,7 +753,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Xác suất toàn phần & xác suất có điều kiện',
     topicId: 'q12-xac-suat-co-dieu-kien',
     strand: 'xac-suat',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 4,
     skill: 'Sơ đồ cây và công thức xác suất toàn phần',
     build: (r) => {
@@ -784,7 +784,7 @@ export const GENERATORS_QG: ItemGenerator[] = [
     name: 'Cách tính điểm Phần II đề thi tốt nghiệp',
     topicId: 'q12-ky-nang-de-moi',
     strand: 'giai-tich',
-    tracks: ['thpt-qg'],
+    tracks: ['thpt-qg', 'chinh-khoa'],
     level: 3,
     skill: 'Hiểu cơ chế tính điểm luỹ tiến',
     build: (r) => {

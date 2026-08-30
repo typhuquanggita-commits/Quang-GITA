@@ -108,6 +108,14 @@ export const KEYWORDS: KeywordTarget[] = [
   { keyword: 'toán chuyển động lớp 5', intent: 'huong-dan', page: 'bi-kip', behind: 'Muốn cách phân biệt gặp nhau, đuổi kịp và dòng nước.', fit: 5 },
   { keyword: 'toán suy luận logic lớp 5', intent: 'huong-dan', page: 'bi-kip', behind: 'Muốn phương pháp làm bài bảng đúng/sai.', fit: 4 },
 
+  /* --- Luồng chính khoá: đề cương và điểm kiểm tra --- */
+  { keyword: 'đề cương ôn tập toán giữa kỳ', intent: 'tai-lieu', page: 'de-cuong', behind: 'Cần biết phạm vi và ma trận trước khi ôn.', fit: 5 },
+  { keyword: 'đề cương ôn tập toán cuối kỳ', intent: 'tai-lieu', page: 'de-cuong', behind: 'Cần danh mục kiến thức và kế hoạch ôn cho bài 90 phút.', fit: 5 },
+  { keyword: 'đề cương ôn hè môn toán', intent: 'tai-lieu', page: 'de-cuong', behind: 'Muốn không mất đà trong hè và vào năm học mới nhẹ hơn.', fit: 4 },
+  { keyword: 'sơ đồ tư duy toán theo chuyên đề', intent: 'tai-lieu', page: 'de-cuong', behind: 'Muốn một bản đồ kiến thức thay vì danh sách công thức rời rạc.', fit: 4 },
+  { keyword: 'cách đạt 9 điểm toán kiểm tra', intent: 'huong-dan', page: 'lo-trinh', behind: 'Muốn biết cần làm gì cụ thể để lên 9 điểm.', fit: 5 },
+  { keyword: 'ma trận đề kiểm tra toán 4 mức độ', intent: 'thong-tin', page: 'cau-truc-de-thi', behind: 'Muốn hiểu tỉ trọng nhận biết – thông hiểu – vận dụng – vận dụng cao.', fit: 4 },
+
   /* --- Thương hiệu --- */
   { keyword: 'math365', intent: 'thuong-hieu', page: 'home', behind: 'Tìm đúng nền tảng đã nghe tên.', fit: 5 },
   { keyword: 'gita365', intent: 'thuong-hieu', page: 'home', behind: 'Tìm tổ chức đứng sau sản phẩm.', fit: 5 },

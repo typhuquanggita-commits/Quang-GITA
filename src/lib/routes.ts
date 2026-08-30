@@ -1,4 +1,4 @@
-import { TOPIC_INDEX, PAPER_INDEX } from '@/data/catalog-index';
+import { TOPIC_INDEX, PAPER_INDEX, SYLLABUS_INDEX } from '@/data/catalog-index';
 import { uniqueSlugs } from '@/lib/slug';
 
 /**
@@ -19,11 +19,14 @@ import { uniqueSlugs } from '@/lib/slug';
 
 const topicSlugs = uniqueSlugs(TOPIC_INDEX, (t) => t.name, (t) => t.id);
 const paperSlugs = uniqueSlugs(PAPER_INDEX, (p) => p.title, (p) => p.id);
+const syllabusSlugs = uniqueSlugs(SYLLABUS_INDEX, (x) => x.title, (x) => x.id);
 
 export const topicSlug = (id: string) => topicSlugs.toSlug.get(id) ?? id;
 export const topicIdFromSlug = (slug: string) => topicSlugs.toId.get(slug) ?? slug;
 export const paperSlug = (id: string) => paperSlugs.toSlug.get(id) ?? id;
 export const paperIdFromSlug = (slug: string) => paperSlugs.toId.get(slug) ?? slug;
+export const syllabusSlug = (id: string) => syllabusSlugs.toSlug.get(id) ?? id;
+export const syllabusIdFromSlug = (slug: string) => syllabusSlugs.toId.get(slug) ?? slug;
 
 /* ---------------- Khai báo trang ---------------- */
 
@@ -43,6 +46,8 @@ export type PageId =
   | 'nhan-dien'
   | 'hoc-vien'
   | 'phan-quyen'
+  | 'de-cuong'
+  | 'de-cuong-detail'
   | 'huong-dan-on'
   | 'hom-nay'
   | 'tien-do'
@@ -81,6 +86,8 @@ export const PAGES: PageDef[] = [
   { id: 'de-thi', path: '/de-thi-thu-co-loi-giai', indexable: true, priority: 0.95, changefreq: 'weekly', label: 'Đề thi thử có lời giải', parent: 'home' },
   { id: 'de-thi-detail', path: '/de-thi-thu-co-loi-giai/:slug', indexable: true, priority: 0.85, changefreq: 'monthly', label: 'Đề thi thử', parent: 'de-thi' },
 
+  { id: 'de-cuong', path: '/de-cuong-on-tap', indexable: true, priority: 0.9, changefreq: 'monthly', label: 'Đề cương ôn tập', parent: 'home' },
+  { id: 'de-cuong-detail', path: '/de-cuong-on-tap/:slug', indexable: true, priority: 0.85, changefreq: 'monthly', label: 'Đề cương', parent: 'de-cuong' },
   { id: 'cong-thuc', path: '/cong-thuc-toan', indexable: true, priority: 0.9, changefreq: 'monthly', label: 'Công thức Toán', parent: 'home' },
   { id: 'bi-kip', path: '/bi-kip-hoc-toan', indexable: true, priority: 0.8, changefreq: 'monthly', label: 'Bí kíp học Toán', parent: 'home' },
   { id: 'lo-trinh', path: '/lo-trinh-hoc-toan', indexable: true, priority: 0.8, changefreq: 'monthly', label: 'Lộ trình học Toán', parent: 'home' },
@@ -202,6 +209,8 @@ export function legacyRedirect(oldPath: string): string | null {
       return href('de-thi');
     case 'paper':
       return a ? href('de-thi-detail', { slug: paperSlug(a) }) : href('de-thi');
+    case 'syllabus':
+      return a ? href('de-cuong-detail', { slug: syllabusSlug(a) }) : href('de-cuong');
     case 'formulas':
       return href('cong-thuc');
     case 'playbook':
@@ -248,6 +257,8 @@ export function allIndexablePaths(): { path: string; page: PageDef; label: strin
       for (const t of TOPIC_INDEX) out.push({ path: href(page.id, { slug: topicSlug(t.id) }), page, label: t.name });
     } else if (page.id === 'de-thi-detail') {
       for (const p of PAPER_INDEX) out.push({ path: href(page.id, { slug: paperSlug(p.id) }), page, label: p.title });
+    } else if (page.id === 'de-cuong-detail') {
+      for (const x of SYLLABUS_INDEX) out.push({ path: href(page.id, { slug: syllabusSlug(x.id) }), page, label: x.title });
     } else if (!page.path.includes(':')) {
       out.push({ path: page.path, page, label: page.label });
     }

@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { useRoute } from '@/state';
-import { href, topicIdFromSlug, paperIdFromSlug, type PageId } from '@/lib/routes';
+import { href, topicIdFromSlug, paperIdFromSlug, syllabusIdFromSlug, type PageId } from '@/lib/routes';
 import { SeoHead } from '@/components/SeoHead';
 import { Shell } from '@/components/Shell';
 import Home from '@/pages/Home';
@@ -28,6 +28,8 @@ const TopicDetail = lazy(() => import('@/pages/Topics').then((m) => ({ default: 
 const Exams = lazy(() => import('@/pages/Exams'));
 const PaperList = lazy(() => import('@/pages/Papers').then((m) => ({ default: m.PaperList })));
 const PaperView = lazy(() => import('@/pages/Papers').then((m) => ({ default: m.PaperView })));
+const SyllabusList = lazy(() => import('@/pages/Syllabus').then((m) => ({ default: m.SyllabusList })));
+const SyllabusView = lazy(() => import('@/pages/Syllabus').then((m) => ({ default: m.SyllabusView })));
 const Playbook = lazy(() => import('@/pages/Playbook'));
 const Formulas = lazy(() => import('@/pages/Formulas'));
 const Gita = lazy(() => import('@/pages/Gita'));
@@ -102,6 +104,12 @@ export default function App() {
       break;
     case 'de-thi-detail':
       page = <PaperView id={paperIdFromSlug(params.slug ?? '')} />;
+      break;
+    case 'de-cuong':
+      page = <SyllabusList />;
+      break;
+    case 'de-cuong-detail':
+      page = <SyllabusView id={syllabusIdFromSlug(params.slug ?? '')} />;
       break;
     case 'bi-kip':
       page = <Playbook />;

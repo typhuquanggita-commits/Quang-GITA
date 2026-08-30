@@ -248,6 +248,54 @@ export const STAGES: Stage[] = [
     description:
       'Đề tính giờ theo đúng định dạng trường mục tiêu, quy trình phân bổ thời gian, kỹ thuật bỏ qua và quay lại, quy trình soát bài 5 phút cuối.',
   },
+  {
+    id: 'K1',
+    track: 'chinh-khoa',
+    order: 1,
+    name: 'GĐ 1 · Bám sát bài trên lớp',
+    goal: 'Không còn bài nào trên lớp bị bỏ lại phía sau; điểm hệ số 1 đạt tuyệt đối.',
+    levels: [1, 2, 2],
+    kpi: 90,
+    duration: 'Từ đầu năm đến giữa kỳ I (6 – 8 tuần)',
+    description:
+      'Ôn trong 48 giờ sau mỗi buổi học, làm chắc bài tập sách giáo khoa, và diệt lỗi tính toán. Ở giai đoạn này điểm miệng và điểm 15 phút quyết định phần lớn khoảng cách trong bảng tổng kết.',
+  },
+  {
+    id: 'K2',
+    track: 'chinh-khoa',
+    order: 2,
+    name: 'GĐ 2 · Chốt giữa kỳ I và cuối kỳ I',
+    goal: 'Đạt 9–10 điểm ở cả bài giữa kỳ I và bài cuối kỳ I.',
+    levels: [2, 3, 3],
+    kpi: 90,
+    duration: 'Từ giữa kỳ I đến hết kỳ I (8 – 10 tuần)',
+    description:
+      'Chuyển từ làm đúng sang làm đúng và nhanh. Học theo đề cương giữa kỳ và cuối kỳ, luyện đề đúng ma trận của trường, tập trình bày theo barem.',
+  },
+  {
+    id: 'K3',
+    track: 'chinh-khoa',
+    order: 3,
+    name: 'GĐ 3 · Vươn lên nhóm vận dụng cao',
+    goal: 'Lấy trọn nhóm câu vận dụng và bắt đầu ăn được câu vận dụng cao.',
+    levels: [3, 4, 4],
+    kpi: 88,
+    duration: 'Học kỳ II, từ đầu kỳ đến giữa kỳ II (8 – 10 tuần)',
+    description:
+      'Đây là chỗ tách nhóm 8 điểm khỏi nhóm 9–10 điểm. Học kỹ thuật của nhóm câu cuối đề, và bắt đầu tích luỹ cho kỳ thi cuối cấp hoặc kỳ đánh giá năng lực.',
+  },
+  {
+    id: 'K4',
+    track: 'chinh-khoa',
+    order: 4,
+    name: 'GĐ 4 · Tổng duyệt cả năm và ôn hè',
+    goal: 'Đạt 9–10 điểm bài cuối kỳ II, giữ Top 1 tổng kết và bắc cầu sang năm học sau.',
+    levels: [4, 4, 5],
+    kpi: 88,
+    duration: 'Từ giữa kỳ II đến hết hè (10 – 14 tuần)',
+    description:
+      'Tổng duyệt theo đề cương cả năm, sau đó chuyển sang đề cương ôn hè để vào năm học mới với nền đã sẵn sàng thay vì bắt đầu lại từ đầu.',
+  },
 ];
 
 export const stagesByTrack = (track: TrackId) => STAGES.filter((s) => s.track === track);

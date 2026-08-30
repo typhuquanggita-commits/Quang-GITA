@@ -6,14 +6,17 @@ import { SCALE } from '@/data/scale';
 import { BRAND } from '@/data/brand';
 import { faqFor } from '@/data/faq';
 import { keywordsFor } from '@/data/keywords';
+import { SYLLABI, syllabusById, TERM_LABEL } from '@/data/syllabus';
 import {
   href,
   breadcrumb,
   pageById,
   topicIdFromSlug,
   paperIdFromSlug,
+  syllabusIdFromSlug,
   topicSlug,
   paperSlug,
+  syllabusSlug,
   type PageId,
 } from '@/lib/routes';
 
@@ -314,6 +317,59 @@ export function seoFor(page: PageId, params: Record<string, string> = {}): SeoMe
               }
             : {}),
         })),
+      });
+      break;
+    }
+
+    case 'de-cuong': {
+      const grades = [...new Set(SYLLABI.map((x) => x.grade))].sort((a, b) => a - b);
+      title = 'Đề cương ôn tập Toán giữa kỳ, cuối kỳ và ôn hè';
+      description = clamp(
+        `${SYLLABI.length} đề cương ôn tập Toán khối ${grades.join(', ')}: phạm vi kiến thức, ma trận bốn mức độ, sơ đồ tư duy, sơ đồ đọc vị dạng bài, kế hoạch ôn theo tuần và danh mục tự kiểm trước hôm kiểm tra.`,
+      );
+      h1 = 'Đề cương ôn tập Toán theo kỳ';
+      intro =
+        'Mỗi đề cương trả lời năm câu hỏi: kỳ này thi những gì và tỉ trọng ra sao, bản đồ kiến thức trông thế nào, có bao nhiêu dạng bài và đọc vị bằng dấu hiệu gì, ôn theo trình tự nào, và tự kiểm bằng danh mục nào trước hôm kiểm tra.';
+      focus = 'đề cương ôn tập toán';
+      extraLd.push({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Đề cương ôn tập Toán theo kỳ',
+        numberOfItems: SYLLABI.length,
+        itemListElement: SYLLABI.map((x, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: x.title,
+          url: abs(href('de-cuong-detail', { slug: syllabusSlug(x.id) })),
+        })),
+      });
+      break;
+    }
+
+    case 'de-cuong-detail': {
+      const sy = syllabusById(syllabusIdFromSlug(params.slug ?? ''));
+      if (!sy) break;
+      leafLabel = TERM_LABEL[sy.term].short;
+      focus = sy.title.toLowerCase();
+      title = `${sy.title} — ma trận, dạng bài và kế hoạch ôn`;
+      description = clamp(
+        `Đề cương Toán ${sy.grade} ${TERM_LABEL[sy.term].short.toLowerCase()}: phạm vi ${sy.scope.length} chương, ma trận bốn mức độ, ${sy.keyTypes.length} dạng bài kèm cách đọc vị, sơ đồ tư duy ${sy.mindmap.length} nhánh, kế hoạch ${sy.plan.length} tuần và ${sy.selfCheck.length} mục tự kiểm.`,
+      );
+      h1 = sy.title;
+      intro = `Bài kiểm tra ${sy.minutes} phút, ${sy.format}. Đề cương gồm phạm vi kiến thức, ma trận tham chiếu, công thức phải thuộc, các dạng bài trọng tâm kèm cách đọc vị, sơ đồ tư duy tổng hợp, kế hoạch ôn theo tuần và danh mục tự kiểm.`;
+      extraLd.push({
+        '@context': 'https://schema.org',
+        '@type': 'LearningResource',
+        name: sy.title,
+        description: sy.format,
+        url: abs(canonicalPath),
+        inLanguage: SITE.lang,
+        educationalLevel: `Lớp ${sy.grade}`,
+        learningResourceType: 'Đề cương ôn tập',
+        isAccessibleForFree: true,
+        provider: { '@id': `${SITE.origin}/#organization` },
+        teaches: sy.keyTypes.map((t) => t.name),
+        timeRequired: `PT${sy.minutes}M`,
       });
       break;
     }

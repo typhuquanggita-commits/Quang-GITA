@@ -15,10 +15,11 @@ import { emptyState } from '../src/lib/storage';
 import type { AppState } from '../src/types';
 import { SCALE } from '../src/data/scale';
 import { TOPIC_INDEX, PAPER_INDEX, PAPER_CARDS } from '../src/data/catalog-index';
-import { PAGES, allIndexablePaths, matchRoute, legacyRedirect, href, topicSlug, paperSlug, topicIdFromSlug, paperIdFromSlug } from '../src/lib/routes';
+import { PAGES, allIndexablePaths, matchRoute, legacyRedirect, href, topicSlug, paperSlug, syllabusSlug, topicIdFromSlug, paperIdFromSlug, syllabusIdFromSlug } from '../src/lib/routes';
 import { seoFor, auditPage, SITE } from '../src/lib/seo';
 import { KEYWORDS, keywordStats } from '../src/data/keywords';
 import { FAQS } from '../src/data/faq';
+import { SYLLABI, matrixTotal } from '../src/data/syllabus';
 import { formulaStats } from '../src/data/formulas';
 import { countFolders, countArtifacts } from '../src/data/library-tree';
 import { LIBRARY_TREE } from '../src/data/library-tree';
@@ -54,8 +55,8 @@ const st = catalogStats();
 console.log('generators:', GENERATORS.length, '| có bảng phân tích:', GENERATORS.length - missingAnalysis.length);
 if (missingAnalysis.length) { console.error('THIẾU phân tích:', missingAnalysis.join(', ')); bad++; }
 console.log('loại phiếu:', SHEET_TYPES.length, '| chuyên đề có bộ phiếu:',
-  packedTopics('thpt').length + packedTopics('chuyen').length + packedTopics('thpt-qg').length + packedTopics('lop6').length);
-console.log('phiếu/luồng: thpt', st.thpt, '| chuyên', st.chuyen, '| THPT 10-12', st.quocGia, '| vào 6', st.lop6);
+  packedTopics('thpt').length + packedTopics('chuyen').length + packedTopics('thpt-qg').length + packedTopics('lop6').length + packedTopics('chinh-khoa').length);
+console.log('phiếu/luồng: thpt', st.thpt, '| chuyên', st.chuyen, '| THPT 10-12', st.quocGia, '| vào 6', st.lop6, '| chính khoá', st.chinhKhoa);
 console.log('worksheets:', WORKSHEETS.length, '| missions:', MISSIONS.length);
 console.log('items generated:', items, '| distinct prompts:', seenPrompts.size);
 console.log('duplicate prompts inside a single sheet:', dupInSheet);
@@ -132,6 +133,37 @@ for (const paper of EXAM_PAPERS) {
 console.log('đề mẫu trọn vẹn:', EXAM_PAPERS.length, '| câu hỏi:', paperItemCount, '| mệnh đề đúng/sai:', paperClaims);
 console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề mẫu:',
   new Set(EXAM_PAPERS.map((p) => p.blueprintId)).size);
+
+/* ---------- Đề cương ôn tập ---------- */
+{
+  let syBad = 0;
+  const topicIdSet = new Set(TOPICS.map((t) => t.id));
+  const ids = new Set<string>();
+  for (const sy of SYLLABI) {
+    if (ids.has(sy.id)) { console.error('ĐỀ CƯƠNG trùng mã', sy.id); syBad++; }
+    ids.add(sy.id);
+    const total = matrixTotal(sy);
+    if (total !== 10) { console.error('MA TRẬN đề cương không cộng đủ 10 điểm', sy.id, total); syBad++; }
+    if (!sy.scope.length || !sy.mustKnow.length) { console.error('ĐỀ CƯƠNG thiếu phạm vi hoặc phần phải thuộc', sy.id); syBad++; }
+    if (sy.keyTypes.length < 3) { console.error('ĐỀ CƯƠNG có quá ít dạng bài', sy.id); syBad++; }
+    if (sy.mindmap.length < 3) { console.error('ĐỀ CƯƠNG thiếu nhánh sơ đồ tư duy', sy.id); syBad++; }
+    if (sy.plan.length < 4) { console.error('ĐỀ CƯƠNG thiếu tuần trong kế hoạch ôn', sy.id); syBad++; }
+    if (sy.selfCheck.length < 5) { console.error('ĐỀ CƯƠNG thiếu mục tự kiểm', sy.id); syBad++; }
+    if (sy.targets.length < 3) { console.error('ĐỀ CƯƠNG thiếu dải điểm', sy.id); syBad++; }
+    for (const t of sy.keyTypes) {
+      if (!t.docVi.length || !t.method.length || !t.trap.trim()) { console.error('DẠNG BÀI thiếu mục', sy.id, t.name); syBad++; }
+    }
+    for (const b of sy.mindmap) {
+      if (!b.nodes.length || !b.useFor.trim()) { console.error('NHÁNH sơ đồ tư duy thiếu mục', sy.id, b.branch); syBad++; }
+    }
+    for (const r of sy.matrix) {
+      if (r.topicId && !topicIdSet.has(r.topicId)) { console.error('ĐỀ CƯƠNG trỏ tới chuyên đề không tồn tại', sy.id, r.topicId); syBad++; }
+    }
+  }
+  bad += syBad;
+  console.log('đề cương:', SYLLABI.length, '| dạng bài:', SYLLABI.reduce((a, x) => a + x.keyTypes.length, 0),
+    '| nhánh sơ đồ tư duy:', SYLLABI.reduce((a, x) => a + x.mindmap.length, 0), '| lỗi:', syBad);
+}
 
 /* ---------- Sổ tay công thức ---------- */
 {
@@ -213,7 +245,7 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
       name: 'Kiểm thử', grade: '9', track: 'thpt', targetSchool: 'hanoi-chung', groupId: 'but-pha',
       examDate: dayKey(new Date(Date.now() + 40 * DAY)), hoursPerWeek: 10, createdAt: day(30),
     },
-    levelUnlocked: { thpt: 2, chuyen: 1, 'thpt-qg': 1, lop6: 1 },
+    levelUnlocked: { thpt: 2, chuyen: 1, 'thpt-qg': 1, lop6: 1, 'chinh-khoa': 1 },
     studyLog: Object.fromEntries([0, 1, 2, 5, 8].map((o) => [dk(o), 30])),
     attempts: missions.flatMap((m, i) =>
       [9, 3].slice(0, i + 1).map((o, k) => ({
@@ -259,6 +291,7 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
     thpt: st.thpt,
     quocGia: st.quocGia,
     lop6: st.lop6,
+    chinhKhoa: st.chinhKhoa,
     items: st.items,
     generators: st.generators,
     packedTopics: st.packedTopics,
@@ -331,6 +364,7 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
   /* Slug phải giải ngược được về đúng mã. */
   for (const t of TOPICS) if (topicIdFromSlug(topicSlug(t.id)) !== t.id) { console.error('SLUG chuyên đề không giải ngược được', t.id); routeBad++; }
   for (const p2 of EXAM_PAPERS) if (paperIdFromSlug(paperSlug(p2.id)) !== p2.id) { console.error('SLUG đề không giải ngược được', p2.id); routeBad++; }
+  for (const x of SYLLABI) if (syllabusIdFromSlug(syllabusSlug(x.id)) !== x.id) { console.error('SLUG đề cương không giải ngược được', x.id); routeBad++; }
   bad += routeBad;
   console.log('đường dẫn lập chỉ mục:', paths.length, '| lỗi:', routeBad);
 }
@@ -345,6 +379,8 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
       for (const t of TOPICS) targets.push({ id: page.id, params: { slug: topicSlug(t.id) } });
     } else if (page.id === 'de-thi-detail') {
       for (const p2 of EXAM_PAPERS) targets.push({ id: page.id, params: { slug: paperSlug(p2.id) } });
+    } else if (page.id === 'de-cuong-detail') {
+      for (const x of SYLLABI) targets.push({ id: page.id, params: { slug: syllabusSlug(x.id) } });
     } else {
       targets.push({ id: page.id, params: {} });
     }

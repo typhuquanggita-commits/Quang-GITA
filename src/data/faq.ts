@@ -189,6 +189,27 @@ export const FAQS: FaqItem[] = [
     q: 'Làm sao để con không nhầm giữa bài chuyển động ngược chiều và cùng chiều?',
     a: 'Đừng học thuộc hai công thức. Hãy vẽ hai mũi tên rồi tự hỏi khoảng cách giữa hai xe đang thay đổi nhanh bằng cách nào: hai mũi tên hướng vào nhau thì khoảng cách giảm bằng tổng hai vận tốc, hai mũi tên cùng hướng thì khoảng cách giảm bằng hiệu hai vận tốc. Với bài trên dòng nước, nhớ một câu: hiệu cho dòng nước, tổng cho ca nô. Cách nhớ bằng sơ đồ không bao giờ lẫn, còn cách nhớ bằng công thức thì lẫn thường xuyên dưới áp lực phòng thi.',
   },
+  /* ---------- Đề cương ôn tập ---------- */
+  {
+    page: 'de-cuong',
+    q: 'Đề cương ôn tập Toán của MATH365 gồm những gì?',
+    a: 'Mỗi đề cương gồm tám phần: phạm vi kiến thức theo chương sách giáo khoa; ma trận tham chiếu theo bốn mức độ nhận biết – thông hiểu – vận dụng – vận dụng cao; danh sách công thức phải thuộc lòng; sơ đồ tư duy tổng hợp kiến thức của kỳ; các dạng bài trọng tâm kèm sơ đồ đọc vị và quy trình giải; kế hoạch ôn theo tuần với sản phẩm kiểm chứng được ở mỗi tuần; danh mục tự kiểm trước hôm kiểm tra; và bảng đọc điểm để biết việc tiếp theo cần làm.',
+  },
+  {
+    page: 'de-cuong',
+    q: 'Ma trận đề trong đề cương có phải ma trận chính thức của trường không?',
+    a: 'Không. Ma trận trong mỗi đề cương được dựng theo Thông tư 22/2021/TT-BGDĐT và mặt bằng chung của đề kiểm tra định kỳ, dùng để bạn biết nên phân bổ thời gian ôn ra sao. Mỗi trường tự ra đề kiểm tra định kỳ, nên tỉ trọng thực tế có thể khác. Hãy đối chiếu với ma trận do tổ chuyên môn của trường công bố trước khi dùng làm kế hoạch ôn, và coi ma trận ở đây là mốc tham chiếu chứ không phải cam kết về đề thật.',
+  },
+  {
+    page: 'de-cuong',
+    q: 'Nên bắt đầu ôn thi giữa kỳ và cuối kỳ từ khi nào?',
+    a: 'Kế hoạch trong mỗi đề cương được thiết kế cho bốn tuần trước ngày kiểm tra, mỗi tuần một trọng tâm và một sản phẩm kiểm chứng được. Với bài giữa kỳ 60 phút, bốn tuần là đủ nếu bạn đã theo kịp bài trên lớp. Với bài cuối kỳ 90 phút có phạm vi rộng hơn, tuần đầu tiên nên dành để làm lại toàn bộ câu sai của bài giữa kỳ trước khi học phần mới — đây là bước hay bị bỏ qua nhất và cũng là bước hiệu quả nhất.',
+  },
+  {
+    page: 'de-cuong',
+    q: 'Làm sao để đạt 9–10 điểm bài kiểm tra Toán trên lớp?',
+    a: 'Theo ma trận bốn mức độ, nhóm câu nhận biết và thông hiểu chiếm khoảng 60–70% số điểm. Nghĩa là 9 điểm không đến từ việc làm được câu khó, mà đến từ việc không mất điểm nào ở nhóm câu dễ rồi lấy thêm phần vận dụng. Ba việc quyết định: ôn lại trong vòng 48 giờ sau mỗi buổi học, lập sổ tay lỗi và làm lại 3 bài cùng dạng cho mỗi lỗi, và luyện ít nhất một đề tính giờ đúng ma trận trước ngày kiểm tra. MATH365 không cam kết điểm số — đây là các điều kiện cần, không phải lời hứa.',
+  },
 ];
 
 export const faqFor = (page: PageId) => FAQS.filter((f) => f.page === page);
