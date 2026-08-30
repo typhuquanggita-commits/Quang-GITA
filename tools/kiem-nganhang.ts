@@ -151,14 +151,38 @@ trong.tong === 0 && trong.tiLe === 0
   ? ok('chấm phiếu rỗng không chia cho không') : fail('chấm phiếu rỗng lỗi');
 
 /* --------------------- CREED PHẢI KHỚP SỐ THẬT -------------------------- */
-NGANHANG_SO.soChuyenDe === 50 && /năm mươi chuyên đề/.test(NGANHANG_CREED.phamVi)
-  ? ok('lời tự nhận "năm mươi chuyên đề" khớp với số chuyên đề thật')
-  : fail(`lời tự nhận không khớp: creed nói gì đó khác ${NGANHANG_SO.soChuyenDe} chuyên đề thật`);
-NGANHANG_SO.soChuyenDeTong - NGANHANG_SO.soChuyenDe === 30 && /Ba mươi chuyên đề còn lại/.test(NGANHANG_CREED.phamVi)
-  ? ok('lời tự nhận "ba mươi chuyên đề còn lại" khớp với phần chưa phủ')
-  : fail(`phần chưa phủ thật là ${NGANHANG_SO.soChuyenDeTong - NGANHANG_SO.soChuyenDe}, creed nói khác`);
-/nghe|đọc|bản quyền|ngữ liệu/.test(NGANHANG_CREED.phamVi)
-  ? ok('nói thẳng vì sao ba mươi chuyên đề kia chưa có câu trắc nghiệm')
+/*
+ * Trước đây chỗ này ghi cứng "phải là 50" và "phải là 30". Mỗi lần phủ thêm
+ * chuyên đề là bài kiểm đỏ vì con số lỗi thời chứ không phải vì creed nói
+ * sai — loại đỏ đó dạy người ta bỏ qua kết quả kiểm.
+ *
+ * Thứ THẬT SỰ phải đúng là: creed viết bằng chữ đúng con số mà dữ liệu cho
+ * ra. Nên đọc chữ số trong creed rồi so với dữ liệu, thay vì so với một
+ * hằng số chép tay.
+ */
+const CHU_SO: Record<string, number> = {
+  'mười': 10, 'hai mươi': 20, 'ba mươi': 30, 'bốn mươi': 40, 'năm mươi': 50,
+  'sáu mươi': 60, 'bảy mươi': 70, 'tám mươi': 80,
+};
+const doChu = (s: string, sau: string): number | null => {
+  for (const [chu, so] of Object.entries(CHU_SO))
+    if (new RegExp(`${chu} ${sau}`, 'i').test(s)) return so;
+  return null;
+};
+
+const chuPhu = doChu(NGANHANG_CREED.phamVi, 'chuyên đề\\.');
+chuPhu === NGANHANG_SO.soChuyenDe
+  ? ok(`creed viết bằng chữ đúng ${NGANHANG_SO.soChuyenDe} chuyên đề đã phủ`)
+  : fail(`creed viết ${chuPhu ?? 'không rõ'} chuyên đề đã phủ, dữ liệu cho ra ${NGANHANG_SO.soChuyenDe}`);
+
+const conLai = NGANHANG_SO.soChuyenDeTong - NGANHANG_SO.soChuyenDe;
+const chuConLai = doChu(NGANHANG_CREED.phamVi, 'chuyên đề còn lại');
+chuConLai === conLai
+  ? ok(`creed viết bằng chữ đúng ${conLai} chuyên đề còn lại`)
+  : fail(`creed viết ${chuConLai ?? 'không rõ'} chuyên đề còn lại, dữ liệu cho ra ${conLai}`);
+
+/nghe|đọc|bản quyền|ngữ liệu|người chấm/.test(NGANHANG_CREED.phamVi)
+  ? ok('nói thẳng vì sao phần còn lại chưa có câu trắc nghiệm')
   : fail('không nói vì sao phần còn lại chưa có câu');
 
 /* Không được nhận suông là câu do người soạn — kiểm chính lời nhận. */

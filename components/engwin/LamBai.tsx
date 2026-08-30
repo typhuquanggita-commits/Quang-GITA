@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, {useMemo, useState} from 'react';
+import {KICH_BAN, GIONG, tepAm, soTu} from '../../data/nghe';
 import {
   DANG_BAI, LOAI_PHIEU, GIAI_BY_DANG,
   luuLuotNganHang, docLuotNganHang, phanTichNganHang, xoaLuotNganHang,
@@ -86,6 +87,45 @@ const LuaChon: React.FC<{
     })}
   </div>
 );
+
+/*
+ * TRÌNH PHÁT KỊCH BẢN NGHE.
+ *
+ * Câu hỏi nghe không trả lời được nếu không có tiếng. Trình phát dựng ngay
+ * trên đề bài, kèm ba thông tin quyết định độ khó — giọng, nhịp nói, và
+ * mức nhiễu — vì học viên cần biết mình đang luyện ở điều kiện nào.
+ *
+ * KHÔNG hiện lời thoại. Đọc lời trước khi nghe thì bài nghe thành bài đọc,
+ * và phần lớn giá trị của chuyên đề mất sạch. Lời vẫn nằm trong data/nghe.ts
+ * cho người soạn và cho công cụ, nhưng không bày ra ở đây.
+ *
+ * preload="none": ba mươi tệp âm cộng lại 3,7 MB. Nạp sẵn hết là bắt mọi
+ * người trả giá cho thứ họ chưa bấm.
+ */
+const TrinhPhat: React.FC<{kichBanId: string}> = ({kichBanId}) => {
+  const kb = KICH_BAN.find((k) => k.id === kichBanId);
+  if (!kb) return null;
+  return (
+    <div className="mt-2.5 rounded-xl border border-sky-500/25 bg-sky-500/5 p-3">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-slate-400">
+        <span className="font-semibold text-sky-300">🎧 {kb.ten}</span>
+        <span>{GIONG[kb.giong].ten}</span>
+        <span>{kb.nhipTu} từ/phút</span>
+        <span>{soTu(kb.loi)} từ</span>
+        {kb.nhieuDb !== undefined && (
+          <span className="text-amber-300">nhiễu {kb.nhieuDb} dB</span>
+        )}
+      </div>
+      <audio
+        controls
+        preload="none"
+        src={`/${tepAm(kb.id)}`}
+        className="mt-2 w-full"
+        aria-label={`Bản ghi: ${kb.ten}`}
+      />
+    </div>
+  );
+};
 
 export const LamBai: React.FC = () => {
   const [cd, setCd] = useState(CHUYEN_DE_CO_CAU[0]);
@@ -245,6 +285,7 @@ export const LamBai: React.FC = () => {
                   </button>
                 )}
               </div>
+              {c.kichBanId && <TrinhPhat kichBanId={c.kichBanId} />}
               <p className="mt-2.5 text-[14px] font-medium leading-relaxed text-slate-100">{c.deBai}</p>
               <LuaChon
                 cau={c}

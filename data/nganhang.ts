@@ -3,6 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import {CauHoi} from '../types';
+import {taoC} from './xoay-dap-an';
+import {NGAN_HANG_NGHE} from './nganhang-nghe';
 import {DANG_BAI} from './phieu';
 import {GIAI_BY_DANG} from './giaide';
 
@@ -44,7 +46,9 @@ export const NGANHANG_CREED = {
   dayNhieu:
     'Dây nhiễu dựng theo đúng ba bẫy đã viết trong bộ giải đề. Chọn sai thì hệ thống biết học viên vừa rơi vào bẫy số mấy — thông tin đó dùng được, khác hẳn việc chỉ biết là chọn sai.',
   phamVi:
-    'Ngân hàng phủ năm mươi chuyên đề nơi tính đúng sai kiểm được chắc chắn. Ba mươi chuyên đề còn lại — toàn bộ nghe và nói, cộng đọc bài dài và viết tự do — cần ngữ liệu âm thanh, bài đọc có bản quyền, hoặc một người chấm, nên chúng dùng bộ giải đề và phiếu chuyên đề chứ chưa có câu trắc nghiệm.',
+    'Ngân hàng phủ sáu mươi chuyên đề. Hai mươi chuyên đề còn lại — toàn bộ nói, cộng đọc bài dài, viết tự do và một phần tư duy — cần một người chấm hoặc ngữ liệu có bản quyền, nên chúng dùng bộ giải đề và phiếu chuyên đề chứ chưa có câu trắc nghiệm.',
+  loiCuVeNghe:
+    'Bản trước ghi phần nghe thiếu vì "cần ngữ liệu âm thanh". Nửa lý do đó SAI: bốn giọng tiếng Anh của Piper đã nằm sẵn trong máy nhiều tháng, và giới hạn thanh điệu là của giọng tiếng Việt chứ không phải của cả khâu sinh âm. Mười chuyên đề nghe nay có kịch bản viết gốc ở data/nghe.ts và âm sinh bằng máy, nên lý do cũ không còn.',
 };
 
 /* ==========================================================================
@@ -74,28 +78,15 @@ const GIU_THU_TU = new Set([
   'q-p03-OC-12', // âm tiết một sang hai, hai sang một
 ]);
 
-function xoayCho(
-  id: string, no: number,
-  luaChon: [string, string, string, string], dapAn: number,
-  nhanXet: [string, string, string, string],
-): {luaChon: [string, string, string, string]; dapAn: number; nhanXet: [string, string, string, string]} {
-  const dich = GIU_THU_TU.has(id) ? 0 : (((no - 1) % 4) - dapAn + 4) % 4;
-  const lay = <T,>(a: T[]): [T, T, T, T] =>
-    [a[(0 - dich + 4) % 4], a[(1 - dich + 4) % 4], a[(2 - dich + 4) % 4], a[(3 - dich + 4) % 4]];
-  return {luaChon: lay(luaChon), dapAn: (dapAn + dich) % 4, nhanXet: lay(nhanXet)};
-}
-
-const C = (
-  chuyenDeId: string, loaiMa: string, no: number, deBai: string,
-  luaChon: [string, string, string, string], dapAn: number,
-  giaiThich: string, nhanXet: [string, string, string, string],
-  diemKienThuc: string, bayNo?: number,
-): CauHoi => ({
-  id: `q-${chuyenDeId.slice(2)}-${loaiMa}-${String(no).padStart(2, '0')}`,
-  chuyenDeId, loaiMa, no, deBai, giaiThich, diemKienThuc,
-  ...xoayCho(`q-${chuyenDeId.slice(2)}-${loaiMa}-${String(no).padStart(2, '0')}`, no, luaChon, dapAn, nhanXet),
-  ...(bayNo ? {bayNo} : {}),
-});
+/*
+ * Phép xoay và bộ dựng câu nay nằm ở data/xoay-dap-an.ts để ngân hàng câu
+ * hỏi nghe dùng chung đúng một cơ chế. Hai bản sao của cùng một phép xoay
+ * là hai chỗ để lệch nhau, và lệch ở đây nghĩa là nhận xét dán vào nhầm
+ * phương án — loại lỗi người dùng phát hiện trước bài kiểm.
+ *
+ * Tập giữ thứ tự vẫn nằm lại đây vì nó thuộc về chính ngân hàng này.
+ */
+const C = taoC(GIU_THU_TU);
 
 /* ------------- CHUYÊN ĐỀ: TRỌNG ÂM TỪ THEO HẬU TỐ (d-p03) ---------------- */
 
@@ -6368,6 +6359,7 @@ const M10: CauHoi[] = [
 /* ------------------------------ GỘP LẠI -------------------------------- */
 
 export const NGAN_HANG: CauHoi[] = [
+  ...NGAN_HANG_NGHE,
   ...P01, ...P02, ...P03, ...P04, ...P05, ...P06, ...P07, ...P08, ...P09, ...P10, ...G07, ...G01, ...G03, ...G02, ...G06, ...G04, ...G05, ...G08, ...G09,
   ...V01, ...V02, ...V03, ...V04, ...V05, ...V06, ...V07, ...V08, ...V09, ...V10,
   ...R02, ...R03, ...R04, ...R05, ...R06, ...R07, ...R09, ...R10,

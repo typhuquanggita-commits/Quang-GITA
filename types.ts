@@ -1534,6 +1534,13 @@ export interface CauHoi {
   diemKienThuc: string;
   /** Bẫy số mấy của chuyên đề, nếu câu này dựng theo một bẫy có sẵn. */
   bayNo?: number;
+  /**
+   * Kịch bản nghe mà câu này hỏi vào, nếu có. Câu thuộc chuyên đề nghe mà
+   * KHÔNG có trường này là câu hỏi lý thuyết về kỹ năng nghe — hợp lệ, và
+   * bài kiểm đếm riêng hai loại để không ai tưởng cả mười hai câu đều có
+   * tiếng để nghe.
+   */
+  kichBanId?: string;
 }
 
 /* ==========================================================================
