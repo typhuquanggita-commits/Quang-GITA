@@ -224,6 +224,55 @@ ok('tiến tới thì mã khoá MỚI mở được', v5.unlock('Engwin999#').ok
 ok('tiến tới thì đọc lại đúng hồ sơ', v5.read().data?.n === 7);
 ok('tiến tới thì không còn tệp dàn sẵn', !fs.existsSync(path.join(dir3, 'vault.json.new')));
 
+/* ===================================================================== *
+ * 15. GHI HỎNG PHẢI ĐƯỢC BÁO, KHÔNG ĐƯỢC NÉM RA NGOÀI
+ *
+ * Đây là đường mất dữ liệu âm thầm: đĩa đầy hoặc thư mục bị khoá quyền thì
+ * fs ném lỗi, lỗi đi thẳng qua IPC, và nếu giao diện không bắt thì học viên
+ * đóng máy trong niềm tin rằng bài vừa làm đã lưu.
+ *
+ * Mô phỏng bằng cách XOÁ thư mục két sau khi đã mở khoá. Cách này chặn được
+ * ở mọi mức quyền — kể cả khi chạy dưới root, và kể cả trên Windows nơi
+ * chmod không có tác dụng. Bỏ quyền ghi bằng chmod thì root vẫn ghi được,
+ * nên phép thử sẽ không chạy mà vẫn báo xanh.
+ * ===================================================================== */
+const dir4 = fs.mkdtempSync(path.join(os.tmpdir(), 'engwin-vault-hong-'));
+const v6 = new Vault(dir4);
+v6.create('Engwin365!');
+v6.write({n: 1});
+fs.rmSync(dir4, {recursive: true, force: true});
+
+const kqGhi = v6.write({n: 2});
+ok('ghi khi thư mục két không còn thì BÁO LỖI, không ném ra ngoài',
+   kqGhi.ok === false, JSON.stringify(kqGhi));
+ok('lời báo lỗi là câu người dùng đọc hiểu được',
+   typeof kqGhi.error === 'string' && kqGhi.error.length > 20 && !/undefined/.test(kqGhi.error),
+   String(kqGhi.error));
+
+/* Đổi mã khoá cũng phải báo lỗi, không được ném ra ngoài. */
+const kqDoi = v6.change('Engwin365!', 'Engwin366?');
+ok('đổi mã khoá khi ghi hỏng thì BÁO LỖI, không ném ra ngoài', kqDoi.ok === false);
+
+/* Và tạo két mới ở chỗ không ghi được cũng vậy. */
+const dir5 = fs.mkdtempSync(path.join(os.tmpdir(), 'engwin-vault-tao-'));
+const v7 = new Vault(dir5);
+fs.rmSync(dir5, {recursive: true, force: true});
+const kqTao = v7.create('Engwin365!');
+ok('tạo két khi ghi hỏng thì BÁO LỖI, không ném ra ngoài', kqTao.ok === false, JSON.stringify(kqTao));
+ok('tạo hỏng thì két KHÔNG tự coi là đã mở', v7.isUnlocked === false);
+
+/* Ghi hỏng không được để lại tệp tạm chiếm nốt chỗ trống còn lại. */
+const dir6 = fs.mkdtempSync(path.join(os.tmpdir(), 'engwin-vault-rac-'));
+const v8 = new Vault(dir6);
+v8.create('Engwin365!');
+const thuMucChan = path.join(dir6, 'profile.enc');
+fs.mkdirSync(thuMucChan); // biến đường ghi thành thư mục: mọi lần ghi đều hỏng
+const kqRac = v8.write({n: 3});
+ok('ghi vào chỗ bị chiếm thì báo lỗi', kqRac.ok === false, JSON.stringify(kqRac));
+const racHong = fs.readdirSync(dir6).filter((f) => f.includes('.tmp-'));
+ok('ghi hỏng không để lại tệp tạm chiếm chỗ', racHong.length === 0, racHong.join(', '));
+fs.rmSync(dir6, {recursive: true, force: true});
+
 fs.rmSync(dir2, {recursive: true, force: true});
 fs.rmSync(dir3, {recursive: true, force: true});
 

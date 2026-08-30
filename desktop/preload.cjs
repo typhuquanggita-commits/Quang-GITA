@@ -26,4 +26,24 @@ contextBridge.exposeInMainWorld('engwin', {
     change: (a, b) => ipcRenderer.invoke('vault:change', a, b),
     destroy: () => ipcRenderer.invoke('vault:destroy'),
   },
+  /*
+   * MỘT KÊNH MỘT CHIỀU, TỪ TIẾN TRÌNH CHÍNH VỀ TRANG
+   *
+   * Két tự khoá khi máy khoá màn hình, khi máy ngủ, hoặc khi không ai đụng
+   * tới trong mười phút. Nếu trang không biết, nó vẫn hiện nguyên hồ sơ trên
+   * màn hình — và người ngồi xuống sau vẫn đọc được, dù két đã đóng. Khoá
+   * két mà không báo cho trang thì mới bảo vệ được tệp trên đĩa, chưa bảo vệ
+   * được cái đang hiện ra.
+   *
+   * Trang KHÔNG nhận được ipcRenderer. Nó chỉ đăng ký được một hàm gọi lại
+   * cho ĐÚNG một kênh cố định, và hàm bọc chỉ chuyển tiếp lý do khoá dưới
+   * dạng chuỗi — không chuyển tiếp đối tượng sự kiện của Electron, vốn có
+   * tham chiếu tới sender.
+   */
+  khiTuKhoa: (goiLai) => {
+    if (typeof goiLai !== 'function') return () => {};
+    const boc = (_e, viSao) => goiLai(String(viSao ?? ''));
+    ipcRenderer.on('vault:da-tu-khoa', boc);
+    return () => ipcRenderer.removeListener('vault:da-tu-khoa', boc);
+  },
 });

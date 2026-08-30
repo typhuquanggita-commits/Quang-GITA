@@ -434,6 +434,20 @@ export const App: React.FC = () => {
   const [moDoiVai, setMoDoiVai] = useState(false);
 
   /*
+   * KÉT TỰ KHOÁ THÌ MÀN HÌNH PHẢI VỀ NGAY MÀN HÌNH MÃ KHOÁ.
+   *
+   * Tiến trình chính khoá két khi máy khoá màn hình, khi máy ngủ, hoặc khi
+   * không ai đụng tới trong mười phút. Nhưng khoá két chỉ bảo vệ tệp trên
+   * đĩa — hồ sơ đang hiện ra vẫn nằm nguyên trên màn hình cho tới khi trang
+   * chuyển đi. Ở phòng máy dùng chung, đó đúng là chỗ rò rỉ.
+   */
+  React.useEffect(() => {
+    const cau = window.engwin;
+    if (!cau?.khiTuKhoa) return;
+    return cau.khiTuKhoa(() => setUnlocked(false));
+  }, []);
+
+  /*
    * Trên bản máy tính, két là nguồn sự thật của vai. Đọc lại ngay sau khi
    * mở khoá: bộ nhớ trình duyệt có thể đã bị sửa bằng tay, còn két thì phải
    * có mã khoá mới ghi được.

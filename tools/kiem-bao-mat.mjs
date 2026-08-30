@@ -112,6 +112,78 @@ main.includes("app.on('web-contents-created'")
   ? ok('luật chặn áp cho mọi webContents, kể cả cái tạo sau')
   : fail('chỉ chặn trên cửa sổ tạo sẵn');
 
+/* ------------------- AN TOÀN DỮ LIỆU TRÊN MÁY NGƯỜI DÙNG ---------------- */
+/*
+ * Hai tiến trình cùng mở một két là đường mất dữ liệu: cả hai đều ghi được,
+ * và tiến trình ghi sau đè lên tiến trình ghi trước mà không báo gì. Ghi
+ * nguyên tử chống được mất điện, KHÔNG chống được chuyện này.
+ * desktop/mot-phien.test.cjs chạy hai tiến trình thật để chứng minh; ở đây
+ * chỉ chặn việc dòng khoá bị gỡ đi mà không ai thấy.
+ */
+main.includes('requestSingleInstanceLock')
+  ? ok('chỉ cho phép một phiên bản chạy — hai tiến trình không ghi đè két của nhau')
+  : fail('thiếu khoá một phiên bản', 'hai tiến trình sẽ ghi đè hồ sơ của nhau');
+/app\.quit\(\);\s*\n\s*process\.exit\(0\);/.test(main)
+  ? ok('tiến trình thứ hai thoát ngay, trước khi chạm vào tệp két')
+  : fail('tiến trình thứ hai không thoát dứt khoát');
+
+/*
+ * Ở phòng máy dùng chung, két mở ra rồi cứ thế mở cho tới khi đóng cửa sổ.
+ * Ba tín hiệu phải bắt đủ: khoá màn hình, máy ngủ, và nhàn rỗi. Bắt hai cái
+ * đầu mà bỏ cái thứ ba là bỏ đúng tình huống hay xảy ra nhất — quên khoá
+ * màn hình rồi bỏ đi.
+ */
+const tinHieuKhoa = [
+  ["powerMonitor.on('lock-screen'", 'khoá màn hình'],
+  ["powerMonitor.on('suspend'", 'máy ngủ'],
+  ['getSystemIdleTime', 'nhàn rỗi'],
+];
+const thieuTinHieu = tinHieuKhoa.filter(([c]) => !main.includes(c));
+thieuTinHieu.length === 0
+  ? ok('két tự khoá theo đủ ba tín hiệu: khoá màn hình, máy ngủ, nhàn rỗi')
+  : fail('thiếu tín hiệu tự khoá két', thieuTinHieu.map((x) => x[1]).join(', '));
+main.includes("webContents.send('vault:da-tu-khoa'")
+  ? ok('tự khoá xong báo cho trang để màn hình về ngay màn hình mã khoá')
+  : fail('khoá két mà không báo cho trang', 'hồ sơ vẫn hiện trên màn hình');
+
+/*
+ * Ghi hỏng phải BÁO, không được ném ra ngoài IPC. Ném ra thì lời hứa ở phía
+ * trang bị từ chối, và nếu chỗ gọi không bắt thì giao diện không hiện gì —
+ * học viên đóng máy tin rằng đã lưu, trong khi không có gì được ghi.
+ */
+const duongGhi = ['write(data)', 'create(passcode)', 'change(oldPass, newPass)'];
+const khongBat = duongGhi.filter((ten) => {
+  const i = vault.indexOf(ten);
+  if (i < 0) return true;
+  const than = vault.slice(i, i + 2200);
+  return !/try \{/.test(than) || !/loiDeHieu\(e\)/.test(than);
+});
+khongBat.length === 0
+  ? ok('cả ba đường ghi đều bắt lỗi và trả về câu người dùng đọc hiểu được')
+  : fail('có đường ghi ném lỗi thẳng ra ngoài', khongBat.join(', '));
+/ENOSPC/.test(vault) && /EACCES/.test(vault)
+  ? ok('lời báo lỗi phân biệt được đĩa đầy với bị chặn quyền')
+  : fail('lời báo lỗi không phân biệt được nguyên nhân');
+
+/* ------------------- NHẸ TAY VỚI MÁY NGƯỜI DÙNG ------------------------- */
+/*
+ * Tắt tiến trình GPU tiết kiệm 77 MB trên máy không có GPU, nhưng ép tắt
+ * trên máy CÓ GPU lại làm cuộn trang giật — đúng những máy yếu chịu thiệt
+ * nặng nhất. Nên quyết định phải đo trên chính máy đó, không được gõ cứng.
+ */
+main.includes('getGPUFeatureStatus')
+  ? ok('quyết định tắt GPU dựa trên đo máy thật, không gõ cứng')
+  : fail('không đo tình trạng GPU của máy người dùng');
+/appendSwitch\('disable-gpu'\)/.test(main) && /docHoSoMay\(\)\.gpuVoDung === true/.test(main)
+  ? ok('chỉ tắt GPU khi máy đó đã được đo là không dùng GPU')
+  : fail('tắt GPU vô điều kiện', 'máy có GPU sẽ bị ép dựng bằng phần mềm');
+/if \(cu\.gpuVoDung !== moi\)/.test(main)
+  ? ok('đo lại mỗi lần chạy — đổi card hay cập nhật trình điều khiển thì tự sửa')
+  : fail('kết quả đo không được xét lại');
+!/may\.json[^\n]*vault|vault[^\n]*may\.json/.test(main) && main.includes("'may.json'")
+  ? ok('tệp ghi nhận máy nằm riêng, không đụng vào két')
+  : fail('tệp ghi nhận máy trộn với két');
+
 /* Mở liên kết ra ngoài phải giới hạn ở https, không mở lược đồ tuỳ ý. */
 const moNgoai = [...main.matchAll(/shell\.openExternal\(/g)].length;
 const canHttps = [...main.matchAll(/\/\^https:\\\/\\\/\/\.test\(url\)/g)].length;
@@ -144,11 +216,51 @@ const thanPreload = boChuThich(preload).replace(
   /const\s*\{[^}]*\}\s*=\s*require\('electron'\);?/,
   '',
 );
-const nhacIpc = [...thanPreload.matchAll(/ipcRenderer(\.\w+)?/g)].map((m) => m[0]);
-const nhacXau = nhacIpc.filter((x) => x !== 'ipcRenderer.invoke');
-nhacXau.length === 0
-  ? ok(`preload chỉ gọi ipcRenderer.invoke (${nhacIpc.length} lần), không trao đối tượng ra trang`)
-  : fail('preload rò ipcRenderer ra trang', nhacXau.join(', '));
+/*
+ * LUẬT CHÍNH XÁC HƠN LUẬT "CHỈ ĐƯỢC DÙNG invoke".
+ *
+ * Két tự khoá khi người dùng rời máy, và trang phải biết để về màn hình mã
+ * khoá — việc đó cần một kênh một chiều từ tiến trình chính về trang, tức là
+ * cần ipcRenderer.on. Luật cũ cấm mọi thứ trừ invoke, nên nó sẽ đỏ cho một
+ * đoạn mã đúng.
+ *
+ * Nới luật thành "cho phép on" thì mất luôn tác dụng. Nên ở đây luật được
+ * siết theo bốn tính chất thật sự quan trọng:
+ *   1. Chỉ ba phương thức được dùng: invoke, on, removeListener.
+ *   2. Mọi tên kênh phải là hằng chuỗi.
+ *   3. Kênh nhận về phải nằm trong danh sách khai báo sẵn dưới đây.
+ *   4. Hàm bọc KHÔNG được chuyển tiếp đối tượng sự kiện — đối tượng đó mang
+ *      tham chiếu tới sender, trao nó ra trang là trao lại đúng thứ
+ *      contextIsolation vừa lấy đi.
+ */
+const KENH_NHAN_CHO_PHEP = ['vault:da-tu-khoa'];
+const nhacIpc = [...thanPreload.matchAll(/ipcRenderer\.(\w+)/g)].map((m) => m[1]);
+const bareIpc = [...thanPreload.matchAll(/ipcRenderer(?!\s*\.)/g)].length;
+const CHO_PHEP = new Set(['invoke', 'on', 'removeListener']);
+const xau = [...new Set(nhacIpc.filter((x) => !CHO_PHEP.has(x)))];
+xau.length === 0 && bareIpc === 0
+  ? ok(`preload chỉ dùng ${[...new Set(nhacIpc)].join(', ')} — không trao đối tượng ipcRenderer ra trang`)
+  : fail('preload dùng phương thức ngoài danh sách hoặc trao cả đối tượng',
+         [...xau, bareIpc ? `${bareIpc} lần nhắc trần` : ''].filter(Boolean).join(', '));
+
+const kenhNhan = [...thanPreload.matchAll(/ipcRenderer\.(?:on|removeListener)\('([^']+)'/g)].map((m) => m[1]);
+const kenhLa = [...new Set(kenhNhan)].filter((k) => !KENH_NHAN_CHO_PHEP.includes(k));
+kenhLa.length === 0
+  ? ok(`${new Set(kenhNhan).size} kênh nhận, đều nằm trong danh sách khai báo sẵn`)
+  : fail('preload nghe một kênh chưa khai báo', kenhLa.join(', '));
+
+/*
+ * Kiểm tính chất 4: tham số đầu của hàm bọc phải mở đầu bằng gạch dưới VÀ
+ * không được xuất hiện lần nào trong thân hàm. Đặt tên _e mà vẫn dùng tới
+ * nó thì vẫn là chuyển tiếp đối tượng sự kiện ra trang.
+ */
+const bocs = [...thanPreload.matchAll(/\((\w+),\s*(\w+)\)\s*=>\s*(\w+)\(([^)]*)\)/g)];
+const roSuKien = bocs.filter(([, thamSo1, , , doiSo]) =>
+  !thamSo1.startsWith('_') || new RegExp(`\\b${thamSo1}\\b`).test(doiSo));
+kenhNhan.length === 0 || roSuKien.length === 0
+  ? ok('hàm bọc không chuyển tiếp đối tượng sự kiện của Electron ra trang')
+  : fail('hàm bọc chuyển tiếp đối tượng sự kiện ra trang',
+         roSuKien.map((m) => m[0].slice(0, 40)).join(' | '));
 /invoke\(\s*(?!')/.test(preload)
   ? fail('preload có kênh động', 'tên kênh phải là hằng, không nhận từ trang')
   : ok('mọi tên kênh trong preload đều là hằng, không nhận từ trang');

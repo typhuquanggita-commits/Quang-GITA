@@ -58,14 +58,36 @@ function phucHoiDoiKhoa(metaPath, dataPath) {
 
 function ghiNguyenTu(dich, noiDung) {
   const tam = `${dich}.tmp-${process.pid}-${Date.now()}`;
-  const fd = fs.openSync(tam, 'w', 0o600);
+  let fd;
   try {
+    fd = fs.openSync(tam, 'w', 0o600);
     fs.writeFileSync(fd, noiDung);
     fs.fsyncSync(fd);
-  } finally {
     fs.closeSync(fd);
+    fd = undefined;
+    fs.renameSync(tam, dich);
+  } catch (e) {
+    /*
+     * Ghi hỏng giữa chừng thì phải dọn tệp tạm. Không dọn thì mỗi lần đầy
+     * đĩa lại để lại một tệp .tmp, và chúng chiếm nốt chỗ trống còn lại —
+     * biến một lần ghi hỏng thành một ổ đĩa không còn ghi được gì.
+     */
+    if (fd !== undefined) { try { fs.closeSync(fd); } catch { /* đã đóng */ } }
+    try { if (fs.existsSync(tam)) fs.rmSync(tam); } catch { /* dọn được tới đâu hay tới đó */ }
+    throw e;
   }
-  fs.renameSync(tam, dich);
+}
+
+/** Đổi mã lỗi của hệ điều hành thành câu người dùng đọc hiểu được. */
+function loiDeHieu(e) {
+  const ma = e && e.code;
+  if (ma === 'ENOSPC') return 'Ổ đĩa đã đầy nên chưa lưu được. Dọn bớt chỗ trống rồi thử lại.';
+  if (ma === 'EACCES' || ma === 'EPERM') {
+    return 'Không có quyền ghi vào thư mục dữ liệu. Kiểm tra xem phần mềm diệt vi-rút có đang chặn không.';
+  }
+  if (ma === 'EROFS') return 'Ổ đĩa đang ở chế độ chỉ đọc nên không ghi được.';
+  if (ma === 'EBUSY') return 'Tệp đang bị chương trình khác giữ. Đóng bớt chương trình rồi thử lại.';
+  return `Không ghi được xuống đĩa (${ma || 'lỗi không rõ'}).`;
 }
 
 class Vault {
@@ -124,22 +146,27 @@ class Vault {
     // 0600 chỉ có tác dụng trên Linux và macOS. Windows không có mode bit;
     // ở đó két được bảo vệ bằng ACL của %APPDATA%, vốn chỉ mở cho chính
     // người dùng, SYSTEM và nhóm quản trị. Xem BAOMAT.md.
-    ghiNguyenTu(
-      this.metaPath,
-      JSON.stringify(
-        {
-          version: 1,
-          kdf: 'scrypt',
-          params: {N: SCRYPT.N, r: SCRYPT.r, p: SCRYPT.p},
-          salt: salt.toString('base64'),
-          probe: this.#seal(key, PROBE),
-          createdAt: new Date().toISOString(),
-          saiLienTiep: 0,
-        },
-        null,
-        2,
-      ),
-    );
+    try {
+      ghiNguyenTu(
+        this.metaPath,
+        JSON.stringify(
+          {
+            version: 1,
+            kdf: 'scrypt',
+            params: {N: SCRYPT.N, r: SCRYPT.r, p: SCRYPT.p},
+            salt: salt.toString('base64'),
+            probe: this.#seal(key, PROBE),
+            createdAt: new Date().toISOString(),
+            saiLienTiep: 0,
+          },
+          null,
+          2,
+        ),
+      );
+    } catch (e) {
+      key.fill(0);
+      return {ok: false, error: loiDeHieu(e)};
+    }
     this.key = key;
     return {ok: true};
   }
@@ -233,10 +260,26 @@ class Vault {
     }
   }
 
+  /**
+   * Ghi hồ sơ.
+   *
+   * GHI HỎNG PHẢI ĐƯỢC BÁO, KHÔNG ĐƯỢC NÉM RA NGOÀI
+   * Bản trước để lỗi của fs ném thẳng qua IPC. Lời hứa ở phía trang bị từ
+   * chối, và nếu chỗ gọi không bắt thì giao diện không hiện gì cả — học
+   * viên đóng máy, tin rằng bài vừa làm đã lưu, trong khi đĩa đầy và không
+   * có gì được ghi. Đó là mất dữ liệu âm thầm, loại tệ nhất.
+   *
+   * Nay mọi lỗi được bắt và trả về thành {ok:false, error} với câu nói rõ
+   * nguyên nhân, để giao diện hiện được và người dùng còn cứu được việc.
+   */
   write(data) {
     if (!this.key) return {ok: false, error: 'Két đang khoá'};
-    ghiNguyenTu(this.dataPath, this.#seal(this.key, JSON.stringify(data)));
-    return {ok: true};
+    try {
+      ghiNguyenTu(this.dataPath, this.#seal(this.key, JSON.stringify(data)));
+      return {ok: true};
+    } catch (e) {
+      return {ok: false, error: loiDeHieu(e)};
+    }
   }
 
   /**
@@ -284,10 +327,24 @@ class Vault {
     meta.changedAt = new Date().toISOString();
     meta.saiLienTiep = 0;
 
-    if (coHoSo) ghiNguyenTu(this.dataPath + NEW, this.#seal(key, JSON.stringify(current.data)));
-    ghiNguyenTu(this.metaPath + NEW, JSON.stringify(meta, null, 2));
-    if (coHoSo) fs.renameSync(this.dataPath + NEW, this.dataPath);
-    fs.renameSync(this.metaPath + NEW, this.metaPath);
+    try {
+      if (coHoSo) ghiNguyenTu(this.dataPath + NEW, this.#seal(key, JSON.stringify(current.data)));
+      ghiNguyenTu(this.metaPath + NEW, JSON.stringify(meta, null, 2));
+      if (coHoSo) fs.renameSync(this.dataPath + NEW, this.dataPath);
+      fs.renameSync(this.metaPath + NEW, this.metaPath);
+    } catch (e) {
+      /*
+       * Hỏng giữa chừng thì dọn hai tệp dàn sẵn và giữ nguyên mã khoá cũ.
+       * Luật phục hồi ở đầu tệp vẫn xử lý được nếu tiến trình chết trước khi
+       * chạy tới đây, nhưng khi còn sống thì dọn ngay tốt hơn: không để lại
+       * trạng thái dở dang cho lần khởi động sau phải đoán.
+       */
+      for (const t of [this.dataPath + NEW, this.metaPath + NEW]) {
+        try { if (fs.existsSync(t)) fs.rmSync(t); } catch { /* dọn tới đâu hay tới đó */ }
+      }
+      key.fill(0);
+      return {ok: false, error: loiDeHieu(e)};
+    }
 
     this.key = key;
     return {ok: true};

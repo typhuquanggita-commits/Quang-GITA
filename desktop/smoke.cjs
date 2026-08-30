@@ -186,6 +186,19 @@ async function chay() {
   await run("window.engwin.vault.write({})");
   await run('localStorage.clear()');
 
+  /* ------------------- CẦU NỐI TỰ KHOÁ CÓ THẬT ---------------------------
+   * Két tự khoá khi máy khoá màn hình, khi máy ngủ, hoặc khi nhàn rỗi mười
+   * phút. Trang phải biết để về màn hình mã khoá — khoá két mà màn hình vẫn
+   * hiện hồ sơ thì mới bảo vệ được tệp trên đĩa, chưa bảo vệ được cái đang
+   * hiện ra. Ở đây kiểm cầu nối tồn tại và đúng hình dạng.
+   */
+  ok('trang đăng ký được hàm chạy khi két tự khoá',
+     (await run("typeof window.engwin.khiTuKhoa")) === 'function');
+  ok('đăng ký xong trả về hàm gỡ đăng ký',
+     (await run("typeof window.engwin.khiTuKhoa(() => {})")) === 'function');
+  ok('trang vẫn KHÔNG chạm được vào ipcRenderer sau khi thêm kênh nhận',
+     (await run("!('ipcRenderer' in window) && typeof window.engwin.on === 'undefined'")) === true);
+
   // Giao thức app:// không được cho đọc ra ngoài thư mục dist.
   // Dạng %2e%2e là dạng nguy hiểm thật: giao thức chuẩn không tự rút gọn nó,
   // nên nó đi thẳng tới bộ xử lý và chỉ bị chặn nhờ kiểm tra đường dẫn ở đó.

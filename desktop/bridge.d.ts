@@ -27,6 +27,11 @@ export interface EngwinBridge {
     change(oldPass: string, newPass: string): Promise<VaultResult>;
     destroy(): Promise<VaultResult>;
   };
+  /**
+   * Đăng ký hàm chạy khi két TỰ khoá (khoá màn hình, máy ngủ, hoặc nhàn rỗi
+   * mười phút). Trả về hàm gỡ đăng ký.
+   */
+  khiTuKhoa(goiLai: (viSao: string) => void): () => void;
 }
 
 declare global {
