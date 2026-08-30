@@ -505,6 +505,39 @@ if (!G.SC_YEU_CAU || !G.SC_MON_NO) {
     G.SC_MON_NO.length + ' món nợ số · mọi viện dẫn đều có thật');
 }
 
+/* ── 6b2. SỔ XUẤT XỨ ───────────────────────────────────
+      Lớp cuối của kiến trúc trung thực: mỗi tệp kho phải khai rõ
+      nó TỪ ĐÂU RA. Ranh giới giữa RÚT (tác phẩm gốc của Học viện)
+      và BIÊN SOẠN (nội dung mới, chưa qua Hội đồng Chuyên môn) có
+      ý nghĩa pháp lý khi nộp hồ sơ quyền tác giả — nên lớp này đối
+      chiếu sổ với danh sách tệp THẬT trên đĩa, không tin lời khai. */
+if (!G.SC_XUAT_XU) {
+  L('Thiếu sổ xuất xứ (GV.SC_XUAT_XU)');
+} else {
+  var LOAI_XX = { 'RÚT': 1, 'DỰNG': 1, 'BIÊN SOẠN': 1, 'THAM CHIẾU': 1 };
+  var khaiXX = {}, demTreo = 0;
+  G.SC_XUAT_XU.forEach(function (d) {
+    if (d.length !== 4) { L('Dòng sổ xuất xứ không đủ 4 ô: ' + d[0]); return; }
+    if (khaiXX[d[0]]) L('Sổ xuất xứ khai hai lần cùng một tệp: ' + d[0]);
+    khaiXX[d[0]] = 1;
+    if (!LOAI_XX[d[1]]) L('Sổ xuất xứ: tệp ' + d[0] + ' mang loại xuất xứ lạ: ' + d[1]);
+    if (d[1] === 'BIÊN SOẠN') {
+      demTreo++;
+      if (!/duyệt|Hội đồng/i.test(d[3]))
+        L('Sổ xuất xứ: tệp BIÊN SOẠN ' + d[0] + ' phải mang trạng thái chờ Hội đồng Chuyên môn duyệt, đang ghi: ' + d[3]);
+    }
+    if (!fs.existsSync(path.join(GOC, d[0])))
+      L('Sổ xuất xứ khai tệp không có trên đĩa: ' + d[0]);
+  });
+  /* chiều ngược lại — tệp có thật mà sổ chưa khai */
+  fs.readdirSync(GOC).forEach(function (t) {
+    if (!/^du-lieu.*\.js$/.test(t)) return;
+    if (!khaiXX[t]) L('Tệp kho ' + t + ' chưa có dòng nào trong sổ xuất xứ');
+  });
+  console.log('SỔ XUẤT XỨ · ' + G.SC_XUAT_XU.length + ' tệp kho đã khai xuất xứ · ' +
+    demTreo + ' tệp biên soạn mới đang chờ Hội đồng Chuyên môn duyệt');
+}
+
 /* ── 6c. SỔ NGUỒN ──────────────────────────────────────
       Sổ yêu cầu soi "đã làm đủ chưa". Sổ này soi câu còn lại:
       "đã đọc hết kho tài liệu chưa" — và quan trọng hơn, mọi dòng

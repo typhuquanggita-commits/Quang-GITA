@@ -204,7 +204,8 @@ GV.NHOM = [
       { v: 'so-cai-yc', t: 'Sổ cái yêu cầu', h: 'Mỗi yêu cầu một dòng · máy soi từng viện dẫn' },
       { v: 'so-cai-no', t: 'Món nợ số', h: 'Hứa bao nhiêu thì phải viết ra bấy nhiêu' },
       { v: 'so-nguon', t: 'Sổ nguồn', h: 'Từng tệp kho gốc · đã rút hay còn nợ' },
-      { v: 'so-nguon-no', t: 'Nợ nguồn và cách gỡ', h: 'Chỗ chưa lấy được, và làm gì thì lấy được' }
+      { v: 'so-nguon-no', t: 'Nợ nguồn và cách gỡ', h: 'Chỗ chưa lấy được, và làm gì thì lấy được' },
+      { v: 'so-xuat-xu', t: 'Sổ xuất xứ', h: 'Mỗi tệp kho từ đâu ra · có ý nghĩa pháp lý' }
     ]},
   { id: 'g21', no: '21', t: 'XƯƠNG SỐNG GEN VIỆT', s: 'Mười lăm giai đoạn và năm tuyến, rút từ tài liệu gốc', mau: '#BE0E16',
     ds: [
@@ -2393,6 +2394,20 @@ GV.MAN = {
       'Bản gốc có sạn: tiêu đề trang V-C-P in nhầm thành “V.C.D”, và một tiêu đề có đơn vị thời gian đọc không rõ nên không chép lại.',
       'Không dùng lại lịch trình họp này nguyên văn trong tài liệu mang tên Gen Việt. Nhóm 32 đã có quy trình riêng, dựng từ tài liệu của chính Học viện.'
     ]}
+  ]},
+
+/* ══════════ BỔ SUNG NHÓM 20 · SỔ XUẤT XỨ ══════════ */
+'so-xuat-xu': { q: 'chung', k: 'Tra cứu', t: 'Sổ xuất xứ',
+  p: 'Sổ nguồn nói đã đọc hết kho tài liệu chưa. Sổ này nói điều nghiêm hơn: mỗi tệp kho trong hệ từ đâu mà ra.',
+  khoi: [
+    { k: 'van', t: 'Ranh giới giữa bốn loại xuất xứ **có ý nghĩa pháp lý** khi nộp hồ sơ quyền tác giả. Gộp chúng làm một cho hồ sơ gọn hơn là tự tạo rủi ro về sau — đây chính là điều đã ghi ở chương ba của bảng kê tác phẩm.' },
+    { k: 'luoi', c: 2, tu: 'XUAT_XU_LOAI' },
+    { k: 'muc', t: 'Sổ xuất xứ từng tệp' },
+    { k: 'bang', cot: ['Tệp kho', 'Xuất xứ', 'Chứa gì', 'Trạng thái'], tu: 'SC_XUAT_XU' },
+    { k: 'van', t: 'Bộ kiểm không tin lời khai: nó đọc danh sách tệp **thật trên đĩa** rồi đối chiếu hai chiều. Tệp khai mà không có thì chặn; tệp có mà chưa khai cũng chặn. Nhờ vậy không thể lặng lẽ thêm một kho mới rồi quên nói nó từ đâu ra.' },
+    { k: 'muc', t: 'Sáu luật xuất xứ' },
+    { k: 'luat', tu: 'SC_XX_LUAT' },
+    { k: 'trich', t: 'Mọi tệp biên soạn mới mang trạng thái chờ Hội đồng Chuyên môn duyệt cho tới khi có văn bản duyệt. Không tự chuyển sang đã chốt.', n: 'Luật xuất xứ thứ tư' }
   ]}
 
 };
@@ -2411,6 +2426,18 @@ GV.TU = {
 
   /* nhóm 22 · 52 tuần — cùng một kho, chiếu ra bốn bảng theo chu kỳ
      và hai bảng chu kỳ. Chia nhỏ vì một bảng 52 dòng thì không ai đọc. */
+  /* nhóm 20 · bốn loại xuất xứ, viết ra để ranh giới không bị nhoè */
+  XUAT_XU_LOAI: [
+    { t: 'RÚT', n: 'Lấy từ tài liệu gốc của Học viện GITA.',
+      vi: 'Tác phẩm gốc của chủ sở hữu. Kê khai đầy đủ trong hồ sơ quyền tác giả. Đây là phần lớn nhất của hệ.' },
+    { t: 'DỰNG', n: 'Kiến trúc, phân quyền, bộ kiểm, cách trình bày, ba sổ kiểm chứng.',
+      vi: 'Sáng tạo mới cho chính hệ này, có tính nguyên gốc rõ rệt. Kê khai là phần sáng tạo mới.' },
+    { t: 'BIÊN SOẠN', n: 'Nội dung mới viết ra để lấp một khoảng trống mà kho gốc chưa có.',
+      vi: 'Loại duy nhất còn treo. Phải được Hội đồng Chuyên môn của Học viện duyệt trước khi đưa vào dạy hoặc nộp hồ sơ.' },
+    { t: 'THAM CHIẾU', n: 'Tài liệu của tổ chức khác — hiện có mô hình chi hội BNI.',
+      vi: 'KHÔNG kê khai là tác phẩm của Học viện. Chỉ phần đối chiếu và bình luận về nó là sáng tạo riêng.' }
+  ],
+
   /* nhóm 34 · đề án — cắt dòng tiêu đề nằm trong dữ liệu */
   DA_CAN_CU_B: GV.DA_CAN_CU.slice(1),
   DA_TO_CHUC_B: GV.DA_TO_CHUC.slice(1),

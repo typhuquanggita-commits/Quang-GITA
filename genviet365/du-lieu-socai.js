@@ -165,6 +165,72 @@
     { t: 'Mười sáu luật viết và bảo vệ đề án', so: 16, kho: 'DA_LUAT' }
   ];
 
+
+  /* ── 4 · SỔ XUẤT XỨ ───────────────────────────────────────
+     Lớp cuối của kiến trúc trung thực. Sổ nguồn nói "đã đọc hết
+     kho tài liệu chưa". Sổ này nói điều nghiêm hơn: MỖI TỆP KHO
+     TRONG HỆ TỪ ĐÂU RA.
+
+     Ba loại xuất xứ, và ranh giới giữa chúng có ý nghĩa pháp lý
+     khi nộp hồ sơ quyền tác giả:
+     · RÚT       — lấy từ tài liệu gốc của Học viện. Tác phẩm gốc
+                   của chủ sở hữu.
+     · DỰNG      — kiến trúc, phân quyền, bộ kiểm, cách trình bày.
+                   Sáng tạo mới cho chính hệ này.
+     · BIÊN SOẠN — nội dung mới viết ra để lấp một khoảng trống mà
+                   kho gốc chưa có. PHẢI được Hội đồng Chuyên môn
+                   của Học viện duyệt trước khi đưa vào dạy hoặc
+                   nộp hồ sơ. Đây là loại duy nhất còn treo.
+     · THAM CHIẾU — tài liệu của tổ chức khác. KHÔNG kê khai là
+                   tác phẩm của Học viện.
+
+     Bộ kiểm soi: mọi tệp du-lieu-*.js phải có đúng một dòng ở
+     đây, không thiếu không thừa.                                */
+  G.SC_XUAT_XU = [
+    ['du-lieu.js', 'DỰNG', 'Nền móng: nguyên lý, kiến trúc, bậc, khung năng lực, phẩm chất', 'đã chốt'],
+    ['du-lieu-daotao.js', 'DỰNG', 'Nhịp 365, hình thái, lộ trình bậc, khoá nền, chuyên đề, trại, bộ test', 'đã chốt'],
+    ['du-lieu-vanhanh.js', 'DỰNG', 'Vai trò, tài chính, an toàn, rủi ro, triển khai', 'đã chốt'],
+    ['du-lieu-kythuat.js', 'DỰNG', 'Mã hoá, hồ sơ, bảng lưu, lộ trình công nghệ', 'đã chốt'],
+    ['du-lieu-chuyenmon.js', 'DỰNG', 'Ma trận 8×8, quy trình mười bước, nhóm giải pháp, chiến lược', 'đã chốt'],
+    ['du-lieu-congdong.js', 'DỰNG', 'Chi hội, vòng tuần, kịch bản, ban điều hành, lịch năm', 'đã chốt'],
+    ['du-lieu-thuvien.js', 'DỰNG', 'Thư viện Gen Việt: sáu quyển, bốn mươi lăm chân dung, mô thức Việt', 'đã chốt'],
+    ['du-lieu-trainghiem.js', 'DỰNG', 'Hành trình 365, khoảnh khắc, cam kết dịch vụ, phục hồi', 'đã chốt'],
+    ['du-lieu-giatri.js', 'DỰNG', 'Gói sản phẩm, bảo đảm, phễu, thông điệp, phản đối, nhân rộng', 'đã chốt'],
+    ['du-lieu-tincay.js', 'DỰNG', 'Ba tầng bằng chứng, kiểm định, bảo vệ trẻ em, khủng hoảng, pháp lý', 'đã chốt'],
+    ['du-lieu-thuonghieu.js', 'DỰNG', 'Bộ nhận diện: ý niệm dấu hiệu, biến thể, luật dùng, bảng màu, chữ', 'đã chốt'],
+    ['du-lieu-banquyen.js', 'DỰNG', 'Tài sản trí tuệ, quyền tác giả, nhãn hiệu, đề án quốc gia, ra quốc tế', 'đã chốt'],
+    ['du-lieu-camtay.js', 'DỰNG', 'Bộ cầm tay: bảy câu hỏi bàn ăn, bản đọc ca, kịch bản gọi, thư mẫu', 'đã chốt'],
+    ['du-lieu-tracuu.js', 'DỰNG', 'Từ điển thuật ngữ, Sổ Chuẩn, bản đồ toàn hệ', 'đã chốt'],
+    ['du-lieu-quyen.js', 'DỰNG', 'Bảng phân quyền: mười bảy vai, tầng hiển thị, luật quyền', 'đã chốt'],
+    ['du-lieu-nhuongquyen.js', 'DỰNG', 'Bộ hồ sơ nhượng quyền: bốn gói, kiểm định, hợp đồng, lãnh thổ', 'đã chốt'],
+    ['du-lieu-seo.js', 'DỰNG', 'Tìm thấy được và đáng tin: nguyên tắc, ý định, E-E-A-T, phản hồi', 'đã chốt'],
+    ['du-lieu-socai.js', 'DỰNG', 'Sổ yêu cầu, món nợ số, sổ xuất xứ — kiến trúc trung thực của hệ', 'đã chốt'],
+    ['du-lieu-songuon.js', 'DỰNG', 'Sổ nguồn: bốn mươi lăm dòng tệp kho gốc và sáu món nợ nguồn', 'đã chốt'],
+
+    ['du-lieu-tuyen.js', 'RÚT', 'Xương sống: mười lăm giai đoạn, năm tuyến, pipeline — từ Bộ Đề Tài Nghiên Cứu Ứng Dụng', 'đã chốt'],
+    ['du-lieu-tuan52.js', 'RÚT', 'Năm mươi hai tuần chuyên đề — từ CHUYÊN ĐỀ 52 TUẦN ĐÀO TẠO TRONG CLB', 'đã chốt'],
+    ['du-lieu-capdo.js', 'RÚT', 'Một trăm chương trình huấn luyện — từ Hệ 10 Cấp Độ Đào Tạo Gen Việt', 'đã chốt'],
+    ['du-lieu-chuyende.js', 'RÚT', 'Tám trăm năm mươi chuyên đề — từ CHƯƠNG TRÌNH CẤP 1 và CHUYÊN ĐỀ PHÁT TRIỂN TÀI NĂNG', 'đã chốt'],
+    ['du-lieu-giaoan.js', 'RÚT', 'Giáo án và khung cứng hai tiết — từ PHẦN 0, CHUYÊN ĐỀ lớp 2, GV2, GV7', 'đã chốt'],
+    ['du-lieu-vanhanh2.js', 'RÚT', 'Cẩm nang vận hành chi tiết — từ CẨM NANG VẬN HÀNH và QUY TRÌNH HỌP CLB', 'đã chốt'],
+    ['du-lieu-master.js', 'RÚT', 'Hệ tư tưởng nền — từ bốn bản MASTER Gen Việt và Khung sách', 'đã chốt'],
+    ['du-lieu-trai-vip.js', 'RÚT', 'Trại Leader Boom và Học viện VIP — từ hai tài liệu cùng tên', 'đã chốt'],
+    ['du-lieu-deana.js', 'RÚT', 'Đề án thành lập — từ ƯƠM MẦM GEN VIỆT và Bộ Đề Tài Nghiên Cứu', 'đã chốt'],
+    ['du-lieu-slide.js', 'RÚT', 'Bộ trình bày — từ SLIDE CLB GEN VIỆT và slide buổi họp tham khảo', 'đã chốt'],
+
+    ['du-lieu-bni.js', 'THAM CHIẾU', 'Mô hình chi hội — tài liệu của BNI Global, LLC. Học cơ chế, không dùng lại thương hiệu hay văn bản', 'không kê khai là tác phẩm của Học viện']
+  ];
+
+  /* ── 5 · Luật xuất xứ ─────────────────────────────────────── */
+  G.SC_XX_LUAT = [
+    'Mỗi tệp kho phải có đúng một dòng trong sổ xuất xứ. Bộ kiểm đối chiếu danh sách tệp thật với sổ này; thiếu một dòng hoặc thừa một dòng đều chặn bản dựng.',
+    'Ranh giới giữa RÚT và BIÊN SOẠN có ý nghĩa pháp lý. Phần RÚT là tác phẩm gốc của Học viện; phần BIÊN SOẠN là nội dung mới, chưa qua Hội đồng Chuyên môn. Gộp hai loại làm một trong hồ sơ quyền tác giả là tạo rủi ro.',
+    'Phần THAM CHIẾU không bao giờ được kê khai là tác phẩm của Học viện. Chỉ phần đối chiếu và bình luận về nó là sáng tạo riêng.',
+    'Mọi tệp BIÊN SOẠN mang trạng thái *chờ Hội đồng Chuyên môn duyệt* cho tới khi có văn bản duyệt. Không tự chuyển sang *đã chốt*.',
+    'Nội dung BIÊN SOẠN được phép sáng tác về sư phạm, nhưng KHÔNG được bịa số liệu nghiên cứu, tên người thật, trích dẫn, hay viện dẫn văn bản pháp luật.',
+    'Khi một tệp BIÊN SOẠN về sau tìm được tài liệu gốc tương ứng, đối chiếu rồi đổi sang RÚT — không giữ song song hai bản.'
+  ];
+
   /* ── 3 · Luật giữ sổ ─────────────────────────────────────── */
   G.SC_LUAT = [
     'Mỗi yêu cầu của Học viện phải thành một dòng sổ trước khi được coi là đã nhận. Nhận bằng lời rồi làm theo trí nhớ là cách một yêu cầu biến mất.',
