@@ -27,7 +27,7 @@ const REASON_LABEL: Record<string, string> = {
  */
 export function ReviewPage() {
   return (
-    <PermissionGate permission="learn.review" title="Chưa mở quyền ôn tập">
+    <PermissionGate heading="h1" permission="learn.review" title="Chưa mở quyền ôn tập">
       <ReviewContent />
     </PermissionGate>
   );

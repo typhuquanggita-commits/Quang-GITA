@@ -26,11 +26,18 @@ export function PermissionGate({
   children,
   fallback,
   title,
+  heading: Heading = 'h2',
 }: {
   permission: Permission;
   children: ReactNode;
   fallback?: ReactNode;
   title?: string;
+  /**
+   * `h1` khi cong quyen CHIEM CA MAN HINH. Mot trang khong co h1 thi nguoi
+   * dung trinh doc man hinh khong biet minh dang o dau, va cap tieu de nhay
+   * thang tu khong len h2.
+   */
+  heading?: 'h1' | 'h2';
 }) {
   const state = useAppState();
   const actor = actorOf(state);
@@ -40,7 +47,9 @@ export function PermissionGate({
 
   return (
     <Card className="border-dashed">
-      <h2 className="text-base font-semibold text-fg">{title ?? 'Tính năng chưa mở'}</h2>
+      <Heading className={Heading === 'h1' ? 'text-xl font-semibold text-fg' : 'text-base font-semibold text-fg'}>
+        {title ?? 'Tính năng chưa mở'}
+      </Heading>
       <p className="mt-2 text-sm text-fg-muted">{lockReason(actor, permission)}</p>
       <Link to="/roles" className="mt-3 inline-block text-sm font-medium text-brand underline underline-offset-2">
         Xem hệ thống phân quyền

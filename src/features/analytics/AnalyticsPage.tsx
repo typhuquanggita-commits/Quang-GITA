@@ -21,7 +21,7 @@ import { PermissionGate } from '../../components/PermissionGate';
  */
 export function AnalyticsPage() {
   return (
-    <PermissionGate permission="learn.analytics" title="Chưa mở quyền xem phân tích">
+    <PermissionGate heading="h1" permission="learn.analytics" title="Chưa mở quyền xem phân tích">
       <AnalyticsContent />
     </PermissionGate>
   );

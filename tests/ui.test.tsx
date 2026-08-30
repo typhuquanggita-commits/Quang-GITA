@@ -147,3 +147,46 @@ describe('ranh giới lỗi', () => {
     quiet.mockRestore();
   });
 });
+
+describe('không gian làm việc', () => {
+  it('học viên bị chặn nhưng vẫn có tiêu đề cấp 1 và lời giải thích', async () => {
+    renderApp();
+    window.location.hash = '#/workspace';
+    window.dispatchEvent(new HashChangeEvent('hashchange'));
+
+    // Cho dung tieu de can tim: man hinh nap dong nen h1 cua trang truoc van
+    // con o do trong vai nhip dau.
+    expect(
+      await screen.findByRole('heading', { level: 1, name: 'Không gian làm việc chưa mở' }),
+    ).toBeInTheDocument();
+    // Mot cho khoa khong giai thich duoc cach mo la trai nguyen tac cua he thong.
+    expect(screen.getByText(/Chỉ các vai trò sau|Cần bậc|Mở khóa khi/)).toBeInTheDocument();
+  });
+
+  it('giáo viên mở được bảng lớp và được nói rõ đây là ảnh chụp, không phải trực tuyến', async () => {
+    const state = createInitialState();
+    state.profile = { ...state.profile, role: 'teacher', rank: 3 };
+    renderApp(state);
+
+    window.location.hash = '#/workspace';
+    window.dispatchEvent(new HashChangeEvent('hashchange'));
+
+    expect(
+      await screen.findByRole('heading', { level: 1, name: 'Không gian làm việc' }),
+    ).toBeInTheDocument();
+    expect(screen.getByText(/ảnh chụp tại thời điểm học viên xuất tệp/)).toBeInTheDocument();
+  });
+});
+
+describe('báo cáo gia đình', () => {
+  it('luôn nêu ba việc gia đình làm được, không chỉ nêu điểm số', async () => {
+    renderApp();
+    window.location.hash = '#/report';
+    window.dispatchEvent(new HashChangeEvent('hashchange'));
+
+    expect(await screen.findByRole('heading', { level: 1, name: /Báo cáo học tập/ })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Ba việc gia đình làm được tuần này' }),
+    ).toBeInTheDocument();
+  });
+});

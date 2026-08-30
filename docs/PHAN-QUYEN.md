@@ -110,7 +110,27 @@ cần bậc nào, hoặc vai trò nào mới có quyền đó. Thông báo "bạ
 nói lý do là một trong những trải nghiệm gây bực bội nhất trong phần mềm — có một bài
 test bảo đảm không quyền nào bị khóa mà thiếu lời giải thích.
 
-Trên giao diện, dùng `<PermissionGate permission="...">` hoặc hook `useCan(...)`.
+Trên giao diện, dùng `<PermissionGate permission="...">` hoặc hook `useCan(...)`. Khi cổng
+quyền chiếm cả màn hình, truyền `heading="h1"` — một trang không có tiêu đề cấp 1 thì người
+dùng trình đọc màn hình không biết mình đang ở đâu.
+
+## Nơi các quyền thật sự điều khiển sản phẩm
+
+Một ma trận quyền mà không màn hình nào thực thi thì chỉ là tài liệu. Bảng dưới đây nói rõ
+quyền nào mở ra cái gì:
+
+| Quyền | Mở ra |
+|---|---|
+| `learn.*` | Phiếu luyện, thi thử, sổ tay lỗi sai, phân tích, Gia sư AI |
+| `class.view` | Không gian làm việc — bảng lớp |
+| `class.approveLevel` · `class.approveStage` | Khu vực **Xét duyệt** trong không gian làm việc |
+| `class.assign` | Khu vực **Giao nhiệm vụ**, sinh gói phiếu và xuất CSV |
+| `report.org` | Khu vực **Báo cáo** lớp |
+| `report.quality` | Bảng độ phủ ngân hàng câu hỏi |
+
+Các quyền còn lại (`content.*`, `coach.*`, `consult.*`, `system.*`) hiện là **hợp đồng cho
+máy chủ** chứ chưa có màn hình riêng — và tài liệu này nói thẳng điều đó thay vì để người
+đọc tự phát hiện.
 
 ## Ranh giới bảo mật
 

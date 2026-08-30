@@ -45,7 +45,7 @@ Các lệnh khác:
 
 ```bash
 npm run verify       # typecheck + toàn bộ test + build
-npm run test         # 236 bài test
+npm run test         # 254 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
 npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
@@ -242,6 +242,61 @@ học ở hai tốc độ khác nhau thay vì bị kéo về cùng một nhịp.
 
 ---
 
+## Không gian làm việc — và bài toán không có máy chủ
+
+Một ma trận 30 quyền mà chỉ 6 quyền điều khiển được thứ gì thì 24 quyền còn lại chỉ tồn
+tại trên giấy. Một "Coach GITA" đăng nhập vào sẽ thấy đúng ứng dụng của học viên.
+
+Nhưng làm cho chúng tồn tại thật vấp ngay một ràng buộc: **HSA365 không có máy chủ** — dữ
+liệu học tập nằm trong trình duyệt của chính người học. Vậy làm sao giáo viên nhìn được cả
+lớp?
+
+Lời giải không phải là dựng một máy chủ tạm bợ, mà là dùng chính thứ đã có: **tệp xuất của
+học viên là định dạng trao đổi**. Nó đã được đánh phiên bản, đã có bước di trú, và đã được
+chuẩn hóa chặt khi nhập. Học viên gửi tệp, giáo viên nạp vào, và có ngay một bảng lớp thật.
+
+Đánh đổi được **nói thẳng trên giao diện** thay vì giấu đi:
+
+| | |
+|---|---|
+| ✓ | Không cần máy chủ, không cần tài khoản; dữ liệu không rời khỏi máy ai trừ khi chính người học gửi đi |
+| ✓ | Chạy được hoàn toàn khi mất mạng |
+| ✗ | Bảng lớp là **ảnh chụp tại thời điểm xuất**, không phải trực tuyến |
+| ✗ | Giáo viên phải chủ động xin tệp; không tự động đồng bộ |
+
+Khi triển khai có máy chủ, tầng này **không phải viết lại**: chỉ đổi nguồn của `loadSnapshot`
+từ tệp sang API, mọi phép tính bên dưới giữ nguyên.
+
+Bốn khu vực, mở theo đúng quyền của vai trò: **Bảng lớp** · **Xét duyệt** (lên cấp, chuyển
+giai đoạn) · **Giao nhiệm vụ** (sinh gói phiếu theo 20/80, xuất CSV) · **Báo cáo** (lớp và
+chất lượng ngân hàng).
+
+Hai nguyên tắc được test canh giữ:
+
+- **Bảng lớp xếp theo ai cần chú ý trước, không xếp theo điểm.** Bảng xếp theo điểm khiến
+  người ở giữa bảng không bao giờ được nhìn tới — mà đó chính là nhóm cứu được nhiều nhất.
+- **Mọi cảnh báo phải kèm một việc cụ thể.** Một bảng lớp chỉ tô đỏ các ô "yếu", "chậm" thì
+  giáo viên đọc xong vẫn không biết làm gì, và sẽ ngừng đọc nó sau vài tuần.
+
+## Báo cáo gia đình
+
+Người trả tiền cho một chương trình luyện thi thường không phải người học — và trước màn
+hình này, họ không có cách nào nhìn thấy bất cứ điều gì.
+
+Báo cáo cố ý **không phải một bản phân tích rút gọn**. Phụ huynh không đọc bảng năng lực
+Rasch, và không nên bắt họ đọc. Họ cần ba câu trả lời:
+
+1. Con tôi đang ở đâu so với mục tiêu?
+2. Có đang tiến lên không?
+3. **Tôi giúp được gì mà không phải giỏi Toán?**
+
+Câu thứ ba quan trọng nhất và gần như luôn bị bỏ qua. Một báo cáo chỉ trả lời hai câu đầu
+sẽ biến phụ huynh thành người giám sát điểm số — vai trò làm hỏng động lực nhanh hơn bất kỳ
+điều gì khác. Nên ba việc ở cuối báo cáo đều **không đòi hỏi kiến thức chuyên môn**, và có
+test canh giữ đúng điều đó.
+
+---
+
 ## Phân quyền
 
 Ba tầng quyết định một người làm được gì: **vai trò** → **cấp bậc** → (riêng học viên)
@@ -297,7 +352,7 @@ src/
   store/                 Reducer + context, mọi thay đổi trạng thái đi qua đây
   components/            Hệ thống thiết kế, biểu đồ SVG tự vẽ, khung ứng dụng
   features/              Từng màn hình
-tests/                   236 bài test cho toàn bộ tầng lib, data và giao diện
+tests/                   254 bài test cho toàn bộ tầng lib, data và giao diện
 ```
 
 Nguyên tắc: **mọi quy tắc nghiệp vụ nằm trong `lib/` dưới dạng hàm thuần** — chấm
@@ -322,7 +377,7 @@ Chi tiết: [`docs/KIEN-TRUC.md`](docs/KIEN-TRUC.md).
 
 - **TypeScript nghiêm ngặt** — bật `strict`, `noUncheckedIndexedAccess`,
   `exactOptionalPropertyTypes`, `noUnusedLocals`. Không có `any` trong mã sản phẩm.
-- **236 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
+- **254 bài test** phủ chấm điểm, chuẩn hóa đáp án, mô hình Rasch, ôn tập ngắt quãng,
   di trú dữ liệu, phân quyền, tiến độ, tính toàn vẹn ngân hàng câu hỏi và khung
   chương trình, mô thức GITA và quy tắc 20/80, cộng với test giao diện đầu-cuối.
 - **Không có màn hình trắng** — `ErrorBoundary` ở gốc bắt mọi lỗi hiển thị và đưa ra

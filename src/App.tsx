@@ -20,6 +20,12 @@ const BrandPage = lazy(() =>
 const PaperPage = lazy(() =>
   import('./features/paper/PaperPage').then((m) => ({ default: m.PaperPage })),
 );
+const WorkspacePage = lazy(() =>
+  import('./features/workspace/WorkspacePage').then((m) => ({ default: m.WorkspacePage })),
+);
+const ReportPage = lazy(() =>
+  import('./features/report/ReportPage').then((m) => ({ default: m.ReportPage })),
+);
 const ExamPage = lazy(() => import('./features/exam/ExamPage').then((m) => ({ default: m.ExamPage })));
 const PracticePage = lazy(() =>
   import('./features/practice/PracticePage').then((m) => ({ default: m.PracticePage })),
@@ -90,6 +96,10 @@ function Routes({ path }: { path: string }) {
       return <GitaPage />;
     case '/brand':
       return <BrandPage />;
+    case '/workspace':
+      return <WorkspacePage />;
+    case '/report':
+      return <ReportPage />;
     case '/roles':
       return <RolesPage />;
     case '/settings':

@@ -24,7 +24,7 @@ import { STAGE_PROMOTION_KPI } from '../../data/curriculum';
  */
 export function PracticePage() {
   return (
-    <PermissionGate permission="learn.worksheet" title="Chưa mở quyền làm phiếu luyện">
+    <PermissionGate heading="h1" permission="learn.worksheet" title="Chưa mở quyền làm phiếu luyện">
       <PracticeContent />
     </PermissionGate>
   );
