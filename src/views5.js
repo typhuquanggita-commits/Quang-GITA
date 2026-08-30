@@ -10,6 +10,11 @@ var U = G.U, h = U.h, ic = U.ic;
 
 /* ═══════════════ KIẾN TRÚC 100 NĂM ═══════════════ */
 G.VIEWS['kien-truc-100'] = function(){
+  /* Kho này về gói NGHỀ từ 9.8. Vai không có gói ấy vẫn có thể gọi thẳng
+     hàm dựng màn — cột trái đã ẩn mục, nhưng ẩn không phải là canh cửa. */
+  if (!G.TAMNHIN100) return U.empty('Chưa mở được kiến trúc một trăm năm',
+    'Phần này nằm trong gói nghề. Đăng nhập bằng tài khoản có phạm vi ấy để mở.');
+
   var T = G.TAMNHIN100;
   var o = U.ph({eyebrow:'NHÓM 02 · HÀNH TRÌNH', ic:'sun', grad:1, t:'Kiến trúc một trăm năm',
     lead:T.cau});
@@ -82,6 +87,10 @@ G.VIEWS['wow'] = function(){
 
 /* ═══════════════ CHUẨN VẬN HÀNH KIỂU NHẬT ═══════════════ */
 G.VIEWS['chuan-nhat'] = function(){
+  /* Kho này về gói NGHỀ từ 9.8 — xem lý do ở tools/ma-hoa-kho.js. */
+  if (!G.NHATBAN) return U.empty('Chưa mở được chuẩn Nhật',
+    'Phần này nằm trong gói nghề. Đăng nhập bằng tài khoản có phạm vi ấy để mở.');
+
   var N = G.NHATBAN;
   var o = U.ph({eyebrow:'NHÓM 04 · CÚ HÍCH & NHỊP SỐNG', ic:'shield', grad:1, t:'Chuẩn vận hành',
     lead:N.cau});

@@ -41,6 +41,16 @@ G.THUOC_CAP_PHEP = [
      với nội dung thật của bảy gói, nên quên một tên là đỏ. */
   'PD_SAU','TH_SAU','NOI_KET','QT_NHOM','TL_GIADINH',
   'MT_RANH','MT_RANH_LUAT','PD_RUOT_SOAT','TH_RUOT_SOAT',
+  /* Ba kho này từ bản 9.8 mang NỬA NGHỀ: chuyện của cấp Coach/Tư vấn/
+     Admin, câu sát hạch của đội ngũ, bài khoá đào tạo nghề. Thiếu tên ở
+     đây thì máy vừa đăng nhập Coach rồi đăng nhập lại bằng phụ huynh sẽ
+     để phụ huynh giữ nguyên nửa ấy. */
+  'CHUYEN','SH_HOI','KH_BAI',
+  /* Tháp chiến lược và bản đồ bốn tầng — bản thiết kế cách Học viện tự lái mình. */
+  'CL_THAP','CL_TANG','CL_MUC','CL_KETQUA','CL_NHIP','CL_NHAT','CL_LUAT',
+  /* Lớp băng của ma trận: từ 9.8 nó về gói nghề cùng MATRAN, vì mọi
+     màn đọc nó đều khoá ở quyền nghề. */
+  'MT_BANG','MT_BANG_MA','MT_BANG_TANG','MT_BANG_NHOM','MT_BANG_LUAT','MT_DO',
   'CV_TRANG','CV_MUC','CV_MUC_DS','CV_LUAT','CV_HANG','CV_KH_NGAY','CV_KH_TANG','CV_KPI_CAP','CV_KPI_CAP_LUAT','DEHIEU_LUAT','DEHIEU_THAY','DEHIEU_TRANG','DEHIEU_NGUONG',
   /* ── Bốn mươi bảy kho nghề tích lại qua nhiều bản ──
      Bộ kiểm phát hành v8.9 đối chiếu nội dung thật của gói NGHỀ và gói
@@ -77,6 +87,11 @@ G.THUOC_CAP_PHEP = [
 ];
 function donKho(){
   G.THUOC_CAP_PHEP.forEach(function(k){ try{ delete G[k]; }catch(e){ G[k] = undefined; } });
+  /* Kho trải ra nhiều gói được NỐI chứ không gán, nên quên dọn là nối
+     chồng: mở kho lần thứ hai trong cùng một trang thì 600 chuyện thành
+     1200, và không có gì báo. Phép đo bắt được đúng lỗi này ngay lần
+     chạy đầu sau khi chia kho. */
+  G.KHO_TRAI_RA.forEach(function(k){ try{ delete G[k]; }catch(e){ G[k] = undefined; } });
   G.KHO.daNap = []; G.KHO.dangNap = []; G.KHO.cheDoMau = false; G.KHO.hanKhoa = null;
   /* Bảng thứ hạng của trần 30% tính từ chính kho đang mở. Đổi vai là kho
      đổi, nên bảng cũ phải bỏ đi — không thì nhà mình được tính theo kho
@@ -233,9 +248,31 @@ function moGoi(ten, khoaB64) {
 }
 
 /* ── Gộp nội dung đã mở vào G, chỉ trong bộ nhớ ── */
+/* ── KHO TRẢI RA NHIỀU GÓI ──
+   Hầu hết kho nằm gọn trong một gói: mở gói ra, gán vào G, xong. Nhưng
+   vài kho phải trải ra nhiều gói vì người đọc chúng thuộc nhiều phạm vi
+   cấp phép khác nhau — bộ test chia theo tầng, danh mục quà chia theo
+   tầng, kho chuyện và bộ sát hạch chia theo VAI (phần của gia đình đi
+   gói nền, phần của đội ngũ đi gói nghề).
+
+   Với những kho ấy, gộp là NỐI chứ không phải GÁN. Gán thì gói mở sau
+   đè mất gói mở trước, và cái mất đi im lặng: màn hình vẫn chạy, chỉ là
+   thiếu một nửa nội dung. Đúng lỗi đã xảy ra thật khi dựng lại kho ở
+   9.6 — TEST750 tụt từ 25 bộ xuống 5 vì một lượt Object.assign.
+
+   Danh sách này phải khớp ĐÚNG với thực tế bảy gói: bộ kiểm phát hành
+   đối chiếu hai chiều — kho nào nằm ở nhiều gói mà không khai ở đây là
+   đỏ, và kho nào khai ở đây mà chỉ nằm một gói cũng đỏ. Nhờ vậy nó
+   không tụt lại phía sau kho như một danh sách viết tay thường thấy. */
+/* KICHBAN từng nằm ở đây khi kịch bản còn đi theo gói tầng. Từ 8.9 nó
+   về gói nghề, nằm gọn một gói, nên nó KHÔNG còn thuộc danh sách này —
+   khai thừa cũng đỏ, và đỏ ở đây là đúng: một cái tên khai thừa hôm nay
+   là một cái tên không ai dám xoá ngày mai. */
+G.KHO_TRAI_RA = ['TEST750', 'QUA1000', 'CHUYEN', 'SH_HOI', 'KH_BAI'];
+
 function gop(du) {
   Object.keys(du).forEach(function (k) {
-    if (k === 'KICHBAN' || k === 'TEST750') G[k] = (G[k] || []).concat(du[k]);
+    if (G.KHO_TRAI_RA.indexOf(k) >= 0) G[k] = (G[k] || []).concat(du[k]);
     else G[k] = du[k];
   });
 }
@@ -263,7 +300,8 @@ function napMau() {
 G.napKho = function () {
   donKho();
   var ds = G.goiDuocCap();
-  G.KICHBAN = []; G.TEST750 = [];
+  G.KICHBAN = [];
+  G.KHO_TRAI_RA.forEach(function(k){ G[k] = []; });
   return xinKhoa(ds)
     .then(function (khoa) {
       if (!khoa) return napMau();

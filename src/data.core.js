@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.7',
+  version: '9.8',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -457,7 +457,13 @@ G.NAV = [
     {v:'cong-nghiem-thu',t:'Cổng nghiệm thu',          h:'Qua chặng bằng bằng chứng, không bằng lời', ic:'shield', perm:'pro_approve', capMo:'nghe'},
     {v:'bo-test',     t:'Bộ test nhận diện 5 tầng',    h:'25 bộ · 750 câu · phân bốn nhóm',    ic:'target', star:1, perm:'kh_hanh_trinh', capMo:'con'},
     {v:'kpi-100',     t:'Mười điểm về đích',           h:'10 điểm mốc · 100 tiêu chí đo được', ic:'crown', star:1, perm:'kh_hanh_trinh', capMo:'con'},
-    {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'nghe_chung', capMo:'nghe'}
+    {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'nghe_chung', capMo:'nghe'},
+    /* Hai màn của lớp chiến lược. Đặt ngay sau "Kiến trúc một trăm năm"
+       vì chúng trả lời đúng câu hỏi màn ấy để ngỏ: một trăm năm thì đẹp,
+       nhưng việc sáng nay đẩy vào chỗ nào của một trăm năm ấy.
+       Khoá ở nghe_chung — đây là bản thiết kế cách Học viện tự lái mình. */
+    {v:'ban-do-chien-luoc',t:'Bản đồ chiến lược',      h:'4 tầng · 18 mục tiêu · chuỗi nhân quả kiểm được', ic:'map', star:1, perm:'nghe_chung', capMo:'nghe'},
+    {v:'the-diem-can-bang',t:'Thẻ điểm cân bằng',      h:'Mỗi mục tiêu một thước · 7 nhịp xem lại', ic:'chart', perm:'nghe_chung', capMo:'nghe'}
    ]},
 
   {id:'g3',no:'03',ic:'vault',c:'#0B6675',

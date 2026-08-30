@@ -29,10 +29,9 @@ for (const t of fs.readdirSync(NGUON).filter(f => f.endsWith('.js')).sort())
 const G = global.window.G;
 
 /* ─── Chia gói theo phạm vi cấp phép ─── */
-const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
-  'NGHILE', 'SUKIEN', 'HEALTH', 'DUYET', 'AUDIT', 'TODAY', 'LEVELS', 'DIEM', 'HUYHIEU', 'KPI100', 'MATRAN',
-  'QUA', 'HOAHONG', 'DANDAT', 'BRAND', 'RASOAT', 'TAMNHIN100', 'TANG100', 'WOW',
-  'NHATBAN', 'CHIPHI', 'NGONTU_RANH', 'DAISU', 'BAIHOC', 'QUA1000', 'QUA_DANG', 'KETNOI', 'LIENKET', 'KICHBAN_AI',
+const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
+  'NGHILE', 'SUKIEN', 'AUDIT', 'TODAY', 'LEVELS', 'DIEM', 'HUYHIEU', 'KPI100', 'QUA', 'HOAHONG', 'WOW',
+  'NGONTU_RANH', 'DAISU', 'BAIHOC', 'QUA_DANG', 'KETNOI', 'LIENKET', 'KICHBAN_AI',
   /* Hành trình 12 chặng mở cho MỌI vai — gia đình cũng phải thấy mình đang
      ở đâu trên đường. Nên nó nằm ở gói nền, không nằm sau kho nghề. */
   'TRU_GITA', 'HANHTRINH12', 'LOI_HUA_GITA',
@@ -91,7 +90,6 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   /* Lớp băng của ma trận: bốn nhóm khách hàng trong mỗi tầng. Ở gói nền
      vì bảng định nghĩa băng và luật xếp băng thì vai nào cũng phải đọc
      được; phần kế hoạch chi tiết vẫn nằm trong gói tầng như cũ. */
-  'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG', 'MT_BANG_NHOM', 'MT_DO', 'MT_BANG_LUAT',
   /* Đường vào sáu bước: người mới chưa có tầng nào cũng phải đọc được,
      nên nó thuộc gói nền. */
   'DV_BUOC', 'DV_CHAN', 'DV_HOI',
@@ -118,6 +116,42 @@ const NGHE = [
   'PD_RUOT_SOAT', 'TH_RUOT_SOAT',
   /* Kịch bản chuyên môn — xem lý do ở chỗ dựng gói tầng bên dưới */
   'KICHBAN',
+  /* ── MƯỜI BẢY KHO CHUYỂN TỪ GÓI NỀN SANG ĐÂY Ở BẢN 9.8 ──
+     Cách tìm ra chúng, ghi lại để sau còn dùng: đăng nhập thật bằng từng
+     vai, thay mỗi kho bằng một getter có đánh dấu, rồi dựng LẦN LƯỢT mọi
+     màn vai ấy mở được. Kho nào không màn nào chạm tới là kho vai ấy
+     nhận mà không dùng. Rồi đọc tay từng chỗ gọi để loại những kho chỉ
+     được dùng trong cửa sổ bật lên hoặc hàm phụ (BAIHOC lọt lưới kiểu
+     ấy — kho của khách hàng có dùng, nên nó ở lại gói nền).
+
+     Còn lại mười bảy kho dưới đây: MỌI màn đọc chúng đều khoá ở quyền
+     nghề hoặc quyền quản trị. Ý định của sản phẩm đã ghi sẵn trong quyền
+     của màn hình; trước bản này kho không đi theo ý định ấy.
+
+     Nặng nhất là MATRAN 106 KB — bản ma trận đủ năm tầng. Khách hàng vẫn
+     có ma trận tầng mình qua MATRAN_T{n} trong gói tầng, nên chuyển sang
+     đây không lấy đi của họ thứ gì.
+
+     Đáng ngại nhất là RASOAT: đó là biên bản rà soát nội bộ, kể tên các
+     lỗ hổng đã tìm thấy. Nó nằm ở gói nền suốt từ 7.0. */
+  /* ── THÁP CHIẾN LƯỢC VÀ BẢN ĐỒ BỐN TẦNG (9.8) ──
+     Đây là bản đồ điều hành của Học viện: chuỗi nhân quả từ việc hôm nay
+     lên tới bốn kết quả ở đỉnh, kèm thước và ngưỡng của từng mắt xích.
+     Mở nó ra công khai là đưa cho người khác đúng bản thiết kế cách Học
+     viện tự lái mình. Hai màn đọc nó đều khoá ở quyền nghề. */
+  'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
+  'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
+  'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
+  'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
+  'MT_BANG_NHOM', 'MT_BANG_LUAT', 'MT_DO',
+  'BRAND',                                       /* thuong-hieu · nghe_chung */
+  'TAMNHIN100', 'TANG100',                       /* kien-truc-100 · nghe_chung */
+  'NHATBAN',                                     /* chuan-nhat · nghe_chung */
+  'DANDAT',                                      /* nguoi-dan-dat · pro_consult */
+  'CHIPHI',                                      /* chi-phi · fin_view */
+  'HEALTH',                                      /* dieu-hanh · dh_toan_he */
+  'DUYET',                                       /* kiem-duyet · qt_trang */
+  'RASOAT',                                      /* ra-soat · qt_trang */
   /* Danh mục đầu việc của đội ngũ R01–R12. Cùng một lý do với KICHBAN:
      đây là cách Học viện vận hành từ bên trong — đối soát dòng tiền, soát
      quyền truy cập, kiểm hành vi lưu trữ, cổng nghiệm thu — kèm bằng
@@ -167,6 +201,39 @@ const NGHE = [
 const goi = {};
 goi.nen  = Object.fromEntries(NEN.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));
 goi.nghe = Object.fromEntries(NGHE.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));
+
+/* ══════════ BỐN KHO CHIA THEO BẢN GHI, KHÔNG THEO TÊN KHO ══════════
+   Ba kho trên chia được vì cả kho thuộc về một phạm vi. Bốn kho dưới đây
+   thì không: mỗi kho phục vụ NHIỀU phạm vi cùng lúc, nên phải cắt theo
+   từng bản ghi.
+
+     CHUYEN   600 chuyện, mỗi cấp tài khoản 100. Một phụ huynh đang nhận
+              cả 100 chuyện của cấp ADMIN và 100 của cấp TƯ VẤN — chuyện
+              nội bộ về cách Học viện được dựng lên.
+     SH_HOI   348 câu sát hạch kèm đáp án, chia sáu vai. Một phụ huynh
+              đang giữ nguyên ngân hàng câu hỏi sát hạch của Coach, Giáo
+              viên và Tư vấn — tức là bộ đề của kỳ thi mà chính họ không
+              thi, và người khác thì phải thi thật.
+     KH_BAI   30 bài khoá đào tạo nghề. Cộng tác viên có phần của mình
+              (15 bài), phần còn lại là của đội ngũ.
+     QUA1000  1000 cẩm nang một trang, chia năm tầng. Một nhà Tầng 1 đang
+              nhận cả tư liệu Tầng 5 — trái đúng luật anh Quang đặt ra:
+              khách hàng chỉ dùng trong giới hạn tầng được cấp phép.
+
+   Chia rồi thì hai nửa mang CÙNG MỘT TÊN KHO ở hai gói khác nhau, và
+   G.KHO_TRAI_RA bên src/kho-khoa.js nối chúng lại khi mở gói. Nhờ vậy
+   không màn hình nào phải sửa: đội ngũ mở đủ hai gói vẫn thấy đủ 600
+   chuyện, gia đình chỉ thấy 300 của mình. */
+const CAP_NHA   = ['HS', 'PH', 'CTV'];        /* cấp tài khoản của phía khách hàng */
+const VAI_NHA   = ['HS', 'PH', 'CTV'];
+goi.nen.CHUYEN  = (G.CHUYEN || []).filter(c => CAP_NHA.includes(c.cap));
+goi.nghe.CHUYEN = (G.CHUYEN || []).filter(c => !CAP_NHA.includes(c.cap));
+goi.nen.SH_HOI  = (G.SH_HOI || []).filter(h => VAI_NHA.includes(h.vai));
+goi.nghe.SH_HOI = (G.SH_HOI || []).filter(h => !VAI_NHA.includes(h.vai));
+/* Bài nào có CTV trong danh sách vai thì cộng tác viên phải đọc được, nên
+   nó đi gói nền. Đội ngũ mở cả hai gói nên vẫn thấy đủ ba mươi bài. */
+goi.nen.KH_BAI  = (G.KH_BAI || []).filter(b => (b.vai || []).includes('CTV'));
+goi.nghe.KH_BAI = (G.KH_BAI || []).filter(b => !(b.vai || []).includes('CTV'));
 /* ── KỊCH BẢN CHUYÊN MÔN KHÔNG ĐI THEO GÓI TẦNG ──
    Kịch bản từng nằm trong gói tầng, mỗi tầng 200 cái. Nghĩa là một
    phụ huynh Tầng 3 nhận về máy mình 200 kịch bản coaching: nguyên văn
@@ -185,6 +252,10 @@ goi.nghe = Object.fromEntries(NGHE.map(k => [k, G[k]]).filter(([, v]) => v !== u
 for (let t = 1; t <= 5; t++)
   goi['tang' + t] = {
     TEST750: (G.TEST750 || []).filter(b => b.tang === 'T' + t),
+    /* Cẩm nang một trang đi theo tầng, cùng đường với bộ test và ma trận.
+       Trước bản 9.8 nó nằm ở gói nền, nên một nhà Tầng 1 nhận đủ 1000 tờ
+       của cả năm tầng — 203 KB, và là tư liệu của những tầng họ chưa mua. */
+    QUA1000: (G.QUA1000 || []).filter(q => q.tang === 'T' + t),
     ['MATRAN_T' + t]: G['MATRAN_T' + t] || []
   };
 

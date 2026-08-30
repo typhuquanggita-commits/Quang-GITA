@@ -52,13 +52,22 @@ function dem(v) {
 }
 function maCua(x) { return (x && (x.ma || x.id || x.code)) || null; }
 
+/* Gộp bảy gói phải NỐI mảng, không gán đè — ứng dụng nối, nên phép so
+   cũng phải nối. Gán đè thì một kho trải năm gói chỉ còn phần của gói
+   cuối, và tệp này sẽ hô "mất tám trăm bản ghi" ở chỗ không mất gì. */
+function gop(dich, nguon) {
+  Object.keys(nguon).forEach(k => {
+    if (Array.isArray(dich[k]) && Array.isArray(nguon[k])) dich[k] = dich[k].concat(nguon[k]);
+    else dich[k] = nguon[k];
+  });
+}
 const CU = {}, NAY = {};
 let coCu = true;
 for (const g of Object.keys(khoa)) {
   const tep = path.join(GOC, 'kho', g + '.enc');
-  if (fs.existsSync(tep)) Object.assign(NAY, mo(khoa[g], fs.readFileSync(tep)));
+  if (fs.existsSync(tep)) gop(NAY, mo(khoa[g], fs.readFileSync(tep)));
   try {
-    Object.assign(CU, mo(khoa[g], execSync('git show HEAD:kho/' + g + '.enc',
+    gop(CU, mo(khoa[g], execSync('git show HEAD:kho/' + g + '.enc',
       { cwd: GOC, maxBuffer: 1 << 30, encoding: 'buffer' })));
   } catch (e) { coCu = false; }
 }

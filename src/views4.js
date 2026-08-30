@@ -385,6 +385,11 @@ G.VIEWS['hoa-hong'] = function(){
 
 /* ═══════════════ NHẬN DIỆN THƯƠNG HIỆU ═══════════════ */
 G.VIEWS['thuong-hieu'] = function(){
+  /* Kho này về gói NGHỀ từ 9.8. Vai không có gói ấy vẫn có thể gọi thẳng
+     hàm dựng màn — cột trái đã ẩn mục, nhưng ẩn không phải là canh cửa. */
+  if (!G.BRAND) return U.empty('Chưa mở được bộ nhận diện',
+    'Bộ nhận diện thương hiệu nằm trong gói nghề. Đăng nhập bằng tài khoản có phạm vi ấy để mở.');
+
   var B = G.BRAND;
   var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'star', grad:1, t:'Nhận diện thương hiệu GITA 365',
     lead:'Một bảng màu, hai bộ chữ, một giọng nói. Ai cũng dùng được mà không làm hỏng — đó là chuẩn của một bộ nhận diện tốt.'});

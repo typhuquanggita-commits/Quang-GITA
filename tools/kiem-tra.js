@@ -2447,6 +2447,12 @@ const { chromium } = require(PW);
   if (!coKhoa) {
     console.log('  (bỏ qua — cần bộ khoá để mở gói nền)');
   } else {
+    /* Lớp bốn băng về gói NGHỀ từ bản 9.8 — mọi màn đọc nó đều khoá ở
+       quyền nghề, nên kho phải đi theo. Mục kiểm này vì thế phải đăng
+       nhập bằng một vai CÓ gói nghề; trước đây nó đo trên vai đang đăng
+       nhập sẵn và đúng được là nhờ kho nằm ở gói nền. */
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForTimeout(2600);
     const mb = await p.evaluate(() => {
       const G = window.G;
       if (!G.MT_BANG) return { co: false };
@@ -2477,7 +2483,7 @@ const { chromium } = require(PW);
         lechMa: (G.MT_DO || []).filter(d => !van.some(v => v.ma === d.ma)).length +
                 van.filter(v => !(G.MT_DO || []).some(d => d.ma === v.ma)).length };
     });
-    bao(mb.co, 'lớp bốn băng nạp được từ gói nền');
+    bao(mb.co, 'lớp bốn băng nạp được từ gói NGHỀ — nó là công cụ nghề, không phải nội dung của gia đình');
     if (mb.co) {
       bao(mb.soDo === 220, 'đủ 220 chỉ số riêng, mỗi vấn đề một chỉ số', mb.soDo + '');
       bao(mb.lechMa === 0, 'mã chỉ số khớp đúng 220 mã vấn đề của ma trận', mb.lechMa + ' lệch');
@@ -4015,7 +4021,11 @@ const { chromium } = require(PW);
         const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG[ten], 'base64'), b.subarray(0, 12));
         de.setAuthTag(b.subarray(12, 28));
         const j = JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8'));
-        const CHO_PHEP = ['TEST750', 'MATRAN_T' + t];
+        /* Cẩm nang một trang về gói tầng từ 9.8: nó là tư liệu CỦA TẦNG,
+           cùng loại với bộ test và ma trận tầng — không phải tài sản nghề.
+           Để nó ở gói nền như trước là gửi tư liệu năm tầng cho một nhà
+           mới mua tầng một. */
+        const CHO_PHEP = ['TEST750', 'QUA1000', 'MATRAN_T' + t];
         Object.keys(j).forEach(n => { if (CHO_PHEP.indexOf(n) < 0) thua.push(ten + ':' + n); });
       }
       bao(!thua.length,
@@ -4039,7 +4049,14 @@ const { chromium } = require(PW);
           cvNoiBo: (window.G.CV_MUC || []).concat(window.G.CV_MUC_DS || [])
             .filter(m => (m.vai || []).some(v => +String(v).slice(1) <= 12)).length,
           cvXongThat: (window.G.CV_MUC || []).concat(window.G.CV_MUC_DS || [])
-            .filter(m => (m.vai || []).some(v => +String(v).slice(1) <= 12) && m.xong).length
+            .filter(m => (m.vai || []).some(v => +String(v).slice(1) <= 12) && m.xong).length,
+          /* Mười tám kho nghề: đo trong BỘ NHỚ, không chỉ trên tệp. Tệp
+             đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất. */
+          khoNghe: ['CHANDUNG', 'MATRAN', 'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',
+            'MT_BANG_NHOM', 'MT_BANG_LUAT', 'MT_DO', 'BRAND', 'TAMNHIN100', 'TANG100',
+            'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
+            'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT']
+            .filter(k => window.G[k] !== undefined)
         }));
       }
       bao(trongMay.PH.kb === 0 && trongMay.HS.kb === 0,
@@ -4066,6 +4083,90 @@ const { chromium } = require(PW);
       bao(trongMay.COACH.cvNoiBo === 30 && trongMay.COACH.cvXongThat === 30,
         'đội ngũ vẫn nhận đủ ba mươi đầu việc kèm bằng chứng đóng việc — bịt rò không được làm hỏng bảng việc',
         trongMay.COACH.cvNoiBo + ' đầu việc · ' + trongMay.COACH.cvXongThat + ' có bằng chứng');
+
+      bao(!trongMay.PH.khoNghe.length && !trongMay.HS.khoNghe.length,
+        'khách hàng KHÔNG giữ hai mươi lăm kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
+        trongMay.PH.khoNghe.concat(trongMay.HS.khoNghe).slice(0, 6).join(' ') ||
+        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/18');
+      bao(trongMay.COACH.khoNghe.length === 25,
+        'người trong nghề vẫn nhận đủ hai mươi lăm kho ấy — dời kho không được làm hỏng việc của Coach',
+        trongMay.COACH.khoNghe.length + '/25');
+
+      /* ══ PHÂN LUỒNG DỮ LIỆU: KHO PHẢI ĐI THEO QUYỀN CỦA MÀN HÌNH ══
+         Ý định của sản phẩm đã ghi sẵn ở quyền của từng màn. Nếu MỌI màn
+         đọc một kho đều khoá ở quyền nghề, thì kho ấy là tài sản nghề —
+         và nó không được nằm trong gói xuống máy khách hàng.
+
+         Mười tám kho dưới đây tìm ra bằng cách đo, không phải bằng cảm
+         giác: đăng nhập thật từng vai, thay mỗi kho bằng một getter có
+         đánh dấu, dựng lần lượt mọi màn vai ấy mở được, rồi đọc tay từng
+         chỗ gọi còn lại. Chốt ở đây để không ai vô tình đưa chúng ngược
+         về gói nền — kể cả tôi, lần sau. */
+      {
+        const b = fsG.readFileSync(pxG.join(gocG, 'kho', 'nen.enc'));
+        const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG.nen, 'base64'), b.subarray(0, 12));
+        de.setAuthTag(b.subarray(12, 28));
+        const nen = JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8'));
+        const CHI_NGHE = ['CHANDUNG', 'MATRAN', 'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',
+          'MT_BANG_NHOM', 'MT_BANG_LUAT', 'MT_DO', 'BRAND', 'TAMNHIN100', 'TANG100',
+          'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
+          'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT'];
+        const lac = CHI_NGHE.filter(k => nen[k] !== undefined);
+        bao(!lac.length,
+          'gói NỀN không mang kho mà mọi màn đọc nó đều khoá ở quyền nghề — ý định nằm ở quyền của màn hình, kho phải đi theo đúng ý định ấy',
+          lac.length ? 'lạc vào gói nền: ' + lac.join(' ') : CHI_NGHE.length + ' kho nghề đều ở đúng chỗ');
+
+        /* Bốn kho phục vụ nhiều phạm vi cùng lúc nên cắt theo bản ghi.
+           Đo hai đầu: nửa của gia đình không được lẫn bản ghi của đội
+           ngũ, và hai nửa cộng lại phải đủ — cắt mất bản ghi thì đội ngũ
+           thiếu nội dung mà không ai thấy. */
+        const nghe = (function () {
+          const x = fsG.readFileSync(pxG.join(gocG, 'kho', 'nghe.enc'));
+          const d = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG.nghe, 'base64'), x.subarray(0, 12));
+          d.setAuthTag(x.subarray(12, 28));
+          return JSON.parse(Buffer.concat([d.update(x.subarray(28)), d.final()]).toString('utf8'));
+        })();
+        const NHA = ['HS', 'PH', 'CTV'];
+        const lanChuyen = (nen.CHUYEN || []).filter(c => NHA.indexOf(c.cap) < 0).map(c => c.ma);
+        const lanHoi = (nen.SH_HOI || []).filter(h => NHA.indexOf(h.vai) < 0).map(h => h.ma);
+        const lanBai = (nen.KH_BAI || []).filter(b2 => (b2.vai || []).indexOf('CTV') < 0).map(b2 => b2.ma);
+        bao(!lanChuyen.length && !lanHoi.length && !lanBai.length,
+          'nửa của gia đình trong ba kho chia theo vai KHÔNG lẫn bản ghi của đội ngũ — chuyện cấp Admin, câu sát hạch của Coach và bài đào tạo nghề không xuống máy một gia đình',
+          [].concat(lanChuyen, lanHoi, lanBai).slice(0, 6).join(' ') ||
+          (nen.CHUYEN || []).length + ' chuyện · ' + (nen.SH_HOI || []).length + ' câu · ' +
+          (nen.KH_BAI || []).length + ' bài, đều của phía khách hàng');
+        bao((nen.CHUYEN || []).length + (nghe.CHUYEN || []).length === 600 &&
+            (nen.SH_HOI || []).length + (nghe.SH_HOI || []).length === 348 &&
+            (nen.KH_BAI || []).length + (nghe.KH_BAI || []).length === 30,
+          'hai nửa cộng lại vẫn ĐỦ — chia kho mà rơi mất bản ghi thì đội ngũ thiếu nội dung và không ai thấy',
+          ((nen.CHUYEN || []).length + (nghe.CHUYEN || []).length) + ' chuyện · ' +
+          ((nen.SH_HOI || []).length + (nghe.SH_HOI || []).length) + ' câu · ' +
+          ((nen.KH_BAI || []).length + (nghe.KH_BAI || []).length) + ' bài');
+
+        /* Kho trải ra nhiều gói được NỐI khi mở. Danh sách khai ở
+           G.KHO_TRAI_RA phải khớp ĐÚNG hai chiều với thực tế bảy gói:
+           thiếu một tên thì gói mở sau đè mất gói mở trước và mất im
+           lặng; thừa một tên thì không ai dám xoá nó về sau. */
+        const oGoi = {};
+        for (const g of Object.keys(khoaG)) {
+          const f = pxG.join(gocG, 'kho', g + '.enc');
+          if (!fsG.existsSync(f)) continue;
+          const x = fsG.readFileSync(f);
+          const d = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG[g], 'base64'), x.subarray(0, 12));
+          d.setAuthTag(x.subarray(12, 28));
+          const j2 = JSON.parse(Buffer.concat([d.update(x.subarray(28)), d.final()]).toString('utf8'));
+          Object.keys(j2).forEach(k => { (oGoi[k] = oGoi[k] || []).push(g); });
+        }
+        const thatSuTrai = Object.keys(oGoi).filter(k => oGoi[k].length > 1).sort();
+        const khaiTrai = (await p.evaluate(() => window.G.KHO_TRAI_RA || [])).slice().sort();
+        const thieuKhai = thatSuTrai.filter(k => khaiTrai.indexOf(k) < 0);
+        const thuaKhai = khaiTrai.filter(k => thatSuTrai.indexOf(k) < 0);
+        bao(!thieuKhai.length && !thuaKhai.length,
+          'danh sách kho TRẢI RA NHIỀU GÓI khớp đúng hai chiều với bảy gói thật — thiếu một tên là gói mở sau đè mất gói mở trước, thừa một tên là một cái tên không ai dám xoá',
+          (thieuKhai.length ? 'chưa khai: ' + thieuKhai.join(' ') + ' ' : '') +
+          (thuaKhai.length ? 'khai thừa: ' + thuaKhai.join(' ') : '') ||
+          thatSuTrai.length + ' kho trải ra: ' + thatSuTrai.join(' '));
+      }
 
       /* Và đo thẳng trên tệp đã mã hoá, không qua trình duyệt: gói NỀN
          xuống MỌI tài khoản, nên bất cứ đầu việc nào của R01–R12 nằm
@@ -4901,13 +5002,27 @@ const { chromium } = require(PW);
         de.setAuthTag(buf.subarray(12, 28));
         return JSON.parse(Buffer.concat([de.update(buf.subarray(28)), de.final()]).toString('utf8'));
       }
+      /* Gộp bảy gói phải NỐI mảng, không được gán đè. Ứng dụng nối
+         (xem G.KHO_TRAI_RA bên src/kho-khoa.js), nên phép so cũng phải
+         nối — gán đè thì một kho trải năm gói chỉ còn phần của gói cuối,
+         và mục kiểm này sẽ báo "mất 816 bản ghi" ở chỗ không mất gì.
+
+         Đúng cái bẫy Object.assign đã nuốt mất hai mươi bộ test khi dựng
+         lại kho ở 9.6. Lần này nó cắn vào phép kiểm chứ không cắn vào
+         kho — nhưng vẫn là cùng một cái bẫy. */
+      function gop45(dich, nguon) {
+        Object.keys(nguon).forEach(function (k) {
+          if (Array.isArray(dich[k]) && Array.isArray(nguon[k])) dich[k] = dich[k].concat(nguon[k]);
+          else dich[k] = nguon[k];
+        });
+      }
       const CU = {}, NAY = {};
       let coCu = true;
       for (const g of Object.keys(khoa45)) {
         const tep = px45.join(goc45, 'kho', g + '.enc');
-        if (fs45.existsSync(tep)) Object.assign(NAY, mo45(khoa45[g], fs45.readFileSync(tep)));
+        if (fs45.existsSync(tep)) gop45(NAY, mo45(khoa45[g], fs45.readFileSync(tep)));
         try {
-          Object.assign(CU, mo45(khoa45[g], cp45.execSync('git show HEAD:kho/' + g + '.enc',
+          gop45(CU, mo45(khoa45[g], cp45.execSync('git show HEAD:kho/' + g + '.enc',
             { cwd: goc45, maxBuffer: 1 << 30, encoding: 'buffer' })));
         } catch (e) { coCu = false; }
       }
@@ -4978,6 +5093,83 @@ const { chromium } = require(PW);
         console.log('  · ' + doiRong + '/' + Object.keys(CU).length + ' kho đổi nội dung (' + tiLe + '%)' +
           (tiLe >= 30 ? '  ⚠ đổi rộng bất thường — nhìn kỹ node tools/soi-doi-kho.js trước khi đẩy' : ''));
       }
+    }
+  }
+
+  /* ── 46. THÁP CHIẾN LƯỢC VÀ CHUỖI NHÂN QUẢ ──
+     Một bản đồ chiến lược hỏng không kêu. Mọi màn vẫn dựng ra, mọi ô vẫn
+     có chữ, và người đọc vẫn gật đầu — chỉ có điều những mũi tên trong đó
+     không dẫn tới đâu. Mục này soi bốn chỗ hỏng lặng lẽ ấy. */
+  console.log('\n46 · THÁP CHIẾN LƯỢC VÀ CHUỖI NHÂN QUẢ');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForTimeout(2600);
+    const cl = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.CL_MUC || !G.clSoiChuoi) return { co: false };
+      const vaiCo = new Set((G.ROLES || []).map(r => r.id));
+      const khoCo = ma => G[ma] !== undefined;
+      return { co: true,
+        soi: G.clSoiChuoi(),
+        nguon: G.clDemNguon(),
+        khongViec: G.clMucKhongCoViec(),
+        soTang: (G.CL_TANG || []).length,
+        tangRong: (G.CL_TANG || []).filter(t => !(G.CL_MUC || []).some(m => m.tang === t.ma)).map(t => t.ma),
+        soBac: (G.CL_THAP || []).length,
+        bacHong: (G.CL_THAP || []).filter(b => !khoCo(b.kho)).map(b => b.ma),
+        bacThieuMan: (G.CL_THAP || []).filter(b => b.man && !G.VIEWS[b.man]).map(b => b.ma),
+        vaiLa: [...new Set((G.CL_MUC || []).flatMap(m => m.vai || []).filter(v => !vaiCo.has(v)))],
+        thieuChuan: (G.CL_MUC || []).filter(m => !m.do || !m.chuan || !m.nhip).map(m => m.ma),
+        nepThieuCoChe: (G.CL_NHAT || []).filter(x => !x.co || x.co.length < 40).map(x => x.ma),
+        nhipTrungCauHoi: (function () {
+          const h2 = (G.CL_NHIP || []).map(n => n.hoi);
+          return h2.length - new Set(h2).size;
+        })(),
+        soKetQua: (G.CL_KETQUA || []).length };
+    });
+    if (!cl.co) {
+      bao(false, 'lớp chiến lược nạp được từ gói nghề', 'không thấy CL_MUC — kiểm lại gói nghề');
+    } else {
+      bao(!cl.soi.lacTang.length,
+        'mọi mục tiêu gắn vào một tầng CÓ THẬT — gắn nhầm tầng thì nó nằm sai chỗ trong chuỗi nhân quả',
+        cl.soi.lacTang.join(' ') || cl.soTang + ' tầng, không mục tiêu nào lạc');
+      bao(!cl.soi.noiHong.length,
+        'mọi mối nối trỏ vào một mã CÓ THẬT — nối vào mã không tồn tại là mũi tên vẽ ra chỗ trống',
+        cl.soi.noiHong.join(' ') || 'mọi mối nối đều có đích');
+      bao(!cl.soi.cut.length,
+        'không mục tiêu nào CỤT — mục tiêu không nối lên đâu nghĩa là làm xong cũng không ai khá hơn',
+        cl.soi.cut.join(' ') || 'không có mục tiêu cụt');
+      bao(!cl.soi.khongToi.length,
+        'mọi nhánh đều đi tới được tầng tài chính — đây là chỗ hỏng khó thấy nhất: có mũi tên, đúng mã, nhưng chạy vòng trong hai tầng dưới rồi dừng',
+        cl.soi.khongToi.join(' ') || 'mọi nhánh đều tới đỉnh');
+      bao(!cl.nguon.thieu.length,
+        'mọi mục tiêu đo bằng một nguồn CÓ THẬT trong hệ thống — mục tiêu không có số là khẩu hiệu, và một bản đồ đầy khẩu hiệu thì không bao giờ đỏ',
+        cl.nguon.thieu.join(' ') || cl.nguon.co + '/' + cl.nguon.tong + ' đo được ngay, ' +
+        cl.nguon.trong + ' có nguồn nhưng chưa đủ dữ liệu');
+      bao(!cl.thieuChuan.length,
+        'mục tiêu nào cũng nói rõ ĐO BẰNG GÌ · ĐẠT KHI NÀO · NHỊP NÀO',
+        cl.thieuChuan.join(' ') || cl.nguon.tong + '/' + cl.nguon.tong);
+      bao(!cl.tangRong.length && cl.soTang === 4,
+        'đủ bốn tầng và không tầng nào rỗng — thiếu một tầng là mất một mắt trong chuỗi nhân quả',
+        cl.tangRong.join(' ') || '4 tầng đều có mục tiêu');
+      bao(cl.soBac === 9 && !cl.bacHong.length,
+        'chín bậc tháp, bậc nào cũng trỏ vào một kho CÓ THẬT — bậc trỏ vào hư không là bậc chưa dựng',
+        cl.bacHong.join(' ') || '9/9 bậc có kho');
+      bao(!cl.bacThieuMan.length,
+        'bậc nào có màn hình thì màn ấy phải tồn tại — nút mở ra trang trắng còn tệ hơn không có nút',
+        cl.bacThieuMan.join(' ') || 'mọi bậc mở được');
+      bao(!cl.vaiLa.length,
+        'mọi mục tiêu giao cho một vị trí CÓ THẬT trong hệ',
+        cl.vaiLa.join(' ') || 'mã vị trí khớp hết');
+      bao(cl.khongViec !== null && !cl.khongViec.length,
+        'mục tiêu nào cũng có đầu việc của một vị trí đẩy nó — bậc năm nối được xuống bậc bảy, nếu không thì bản đồ chỉ sống trên giấy',
+        (cl.khongViec || []).join(' ') || 'mọi mục tiêu đều có việc đẩy');
+      bao(!cl.nepThieuCoChe.length,
+        'mỗi nếp nghề học từ Nhật phải chỉ ra CƠ CHẾ CÓ THẬT đang thi hành nó — chép khẩu hiệu thì dễ và vô ích',
+        cl.nepThieuCoChe.join(' ') || '6/6 nếp có cơ chế');
+      bao(!cl.nhipTrungCauHoi && cl.soKetQua === 4,
+        'mỗi nhịp xem lại hỏi một câu KHÁC nhau, và có đủ bốn kết quả ở đỉnh — hai nhịp hỏi cùng một câu thì một trong hai là buổi họp thừa',
+        cl.nhipTrungCauHoi ? cl.nhipTrungCauHoi + ' nhịp hỏi trùng câu' : '7 nhịp · 4 kết quả');
     }
   }
 

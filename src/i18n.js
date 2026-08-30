@@ -184,6 +184,8 @@ G.ITEM_EN = {
   'bat-dau':['Start here','Your first five steps, in order'],
   'wow':['The WOW chain','Seven moments they will not forget'],
   'kien-truc-100':['The hundred-year architecture','100 value layers · 5 eras · +3–5% a year'],
+  'ban-do-chien-luoc':['Strategy map','4 layers · 18 objectives · a testable chain of cause and effect'],
+  'the-diem-can-bang':['Balanced scorecard','One measure per objective · 7 review rhythms'],
   'chuan-nhat':['Operating standard','Kaizen · Monozukuri · Omotenashi · Shokunin'],
   'ai-dieu-phoi':['AI orchestration','Tier limits · KPI routing · capability review'],
   'an-toan-du-lieu':['The data shield','Anti-copy · anti-impersonation'],

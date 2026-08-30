@@ -553,6 +553,11 @@ G.VIEWS['nhiem-vu'] = function(){
 
 /* ══════════════════ 02 · MƯỜI CHÂN DUNG THÀNH CÔNG ══════════════════ */
 G.VIEWS['chan-dung-tc'] = function(){
+  /* Kho này về gói NGHỀ từ 9.8. Vai không có gói ấy vẫn có thể gọi thẳng
+     hàm dựng màn — cột trái đã ẩn mục, nhưng ẩn không phải là canh cửa. */
+  if (!G.CHANDUNG) return U.empty('Chưa mở được bộ chân dung',
+    'Mười chân dung thành công là công cụ nghề, nằm trong gói nghề. Đăng nhập bằng tài khoản có phạm vi ấy để mở.');
+
   var o = U.ph({eyebrow:'NHÓM 02 · HÀNH TRÌNH', ic:'crown', grad:1, t:'Mười chân dung thành công',
     lead:'Người đi trước trông như thế nào — cho cả học viên và người lớn, ở cả năm tầng. Mỗi chân dung đều nói rõ điều nó CHƯA phải là.'});
   o += '<div class="row wrap mb" style="gap:6px">'+
