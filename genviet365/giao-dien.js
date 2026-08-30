@@ -41,10 +41,25 @@
       if (b && G.BAC_SO[b]) BAC = b;
     } catch (x) {}
   }
+  var TEN_NGUOI = '';
   function luuTT() {
     try {
       localStorage.setItem('genviet365.vai', VAI);
       localStorage.setItem('genviet365.bac', BAC);
+      localStorage.setItem('genviet365.ten', TEN_NGUOI);
+    } catch (x) {}
+  }
+  function docTen() {
+    try { TEN_NGUOI = localStorage.getItem('genviet365.ten') || ''; } catch (x) {}
+  }
+  function daVao() {
+    if (G.KHOA_VAI) return true;          /* bản cắt: vai đã cố định, không hỏi lại */
+    try { return localStorage.getItem('genviet365.vao') === '1'; } catch (x) { return true; }
+  }
+  function ghiVao(co) {
+    try {
+      if (co) localStorage.setItem('genviet365.vao', '1');
+      else localStorage.removeItem('genviet365.vao');
     } catch (x) {}
   }
   G.vaiHienTai = function () { return { vai: VAI, bac: BAC }; };
@@ -1123,6 +1138,8 @@
         '<div class="ban" title="Mã băm nội dung — đổi một chữ trong kho thì mã đổi theo">Bản ' +
           e(m.ban) + (G.DAU ? ' · <span class="dau-ban">' + e(G.DAU.ma) + '</span>' : '') + '</div>' +
         (G.KHOA_VAI ? veVaiKhoa() : veChonVai()) +
+        (G.KHOA_VAI ? '' : '<button type="button" class="ra-cong" title="Về cổng vào để chọn lại vai">' +
+          (TEN_NGUOI ? e(TEN_NGUOI) + ' · ' : '') + 'Ra cổng</button>') +
         '<form class="tim" role="search">' +
           '<label class="an-chu" for="o-tim">Tìm trong hệ thống</label>' +
           '<input id="o-tim" type="search" autocomplete="off" spellcheck="false" ' +
@@ -1241,9 +1258,72 @@
     dungLai();
   }
 
+  /* ── CỔNG VÀO ────────────────────────────────────────────
+     Không phải hàng rào an ninh, và màn hình nói thẳng điều đó —
+     xem màn dn-cong. Cổng này làm ba việc thật: nhận diện người
+     đọc, đặt vai mặc định để mở ra là thấy phần của mình, và
+     nhắc trách nhiệm đi kèm vai đã chọn.
+
+     Hàng rào thật là BẢN CẮT: mỗi vai nhận một tệp riêng, nội
+     dung ngoài quyền không có trong tệp. Trên bản cắt, G.KHOA_VAI
+     đã cố định vai nên cổng này không hiện ra. */
+  function veCong() {
+    var ds = (G.DN_TAI_KHOAN || []).map(function (r) {
+      var vai = G.timVai(r[0]);
+      return '<button type="button" class="cong-vai" data-vai="' + e(r[0]) + '" ' +
+        'style="--c:' + mau(vai && vai.mau) + '">' +
+        '<span class="cv-ma">' + e(r[0]) + '</span>' +
+        '<span class="cv-t">' + e(r[1]) + '</span>' +
+        '<span class="cv-mo">' + e(r[2]) + '</span>' +
+        '<span class="cv-ai">' + e(r[3]) + '</span></button>';
+    }).join('');
+    return '<div class="cong"><div class="cong-hop">' +
+      '<div class="cong-dau">' +
+        (G.HINH ? '<svg class="cong-dh" viewBox="' + e(G.HINH.gvVB) + '" width="52" height="72" ' +
+          'role="img" aria-label="Dấu hiệu Gen Việt">' + G.HINH.gv() + '</svg>' : '') +
+        '<div><h1>GEN VIỆT 365</h1>' +
+        '<p class="cong-phu">Hệ điều hành phát triển con người · Học viện GITA</p></div>' +
+      '</div>' +
+      '<label class="cong-ten"><span>Tên người đang dùng</span>' +
+      '<input type="text" id="cong-ten" autocomplete="name" ' +
+      'placeholder="Ghi tên để hệ biết đang nói với ai"></label>' +
+      '<p class="cong-hoi">Anh chị vào hệ với vai nào?</p>' +
+      '<div class="cong-ds">' + ds + '</div>' +
+      '<div class="cong-that"><b>Nói rõ một điều trước khi vào.</b> ' +
+      'Cổng này <em>không phải</em> hàng rào an ninh. Trang chạy trên máy của anh chị, ' +
+      'nên ai mở công cụ phát triển của trình duyệt cũng đổi được vai của mình. ' +
+      'Hàng rào thật là <b>bản cắt</b>: mỗi vai nhận một tệp riêng, và nội dung ngoài ' +
+      'quyền <em>không có trong tệp</em> — không phải bị ẩn, mà là không tồn tại. ' +
+      'Chi tiết ở màn <b>Cổng đăng nhập và bốn lớp kiểm soát</b>.</div>' +
+      '</div></div>';
+  }
+
+  function moCong(g) {
+    g.className = 'ung-cong';
+    g.innerHTML = veCong();
+    var oTen = g.querySelector('#cong-ten');
+    docTen();
+    if (oTen && TEN_NGUOI) oTen.value = TEN_NGUOI;
+    if (oTen) oTen.focus();
+    g.addEventListener('click', function (ev) {
+      var n = ev.target.closest ? ev.target.closest('.cong-vai') : null;
+      if (!n) return;
+      TEN_NGUOI = oTen ? oTen.value.trim() : '';
+      VAI = n.getAttribute('data-vai');
+      var r = G.timVai(VAI);
+      /* học viên và đại sứ mặc định bậc thấp nhất; vai trong hệ thì
+         không dùng trục bậc nên để nguyên */
+      if (r && r.theoBac) BAC = 'B1';
+      ghiVao(true);
+      luuTT();
+      dung(g);
+    });
+  }
+
   function dung(g) {
     goc = g;
     docTT();
+    docTen();
     goc.className = 'ung';
     goc.innerHTML = veVo();
     chinh = goc.querySelector('.chinh');
@@ -1254,6 +1334,11 @@
     nut.addEventListener('click', function () {
       var mo = goc.classList.toggle('mo');
       nut.setAttribute('aria-expanded', mo ? 'true' : 'false');
+    });
+    var nutRa = goc.querySelector('.ra-cong');
+    if (nutRa) nutRa.addEventListener('click', function () {
+      ghiVao(false);
+      moCong(goc);
     });
     var oTim = goc.querySelector('#o-tim');
     var fTim = goc.querySelector('.tim');
@@ -1328,7 +1413,8 @@
   window.GVdung = dung;
   function batDau() {
     var g = document.getElementById('ung-dung');
-    if (g) dung(g);
+    if (!g) return;
+    if (daVao()) dung(g); else moCong(g);
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', batDau);

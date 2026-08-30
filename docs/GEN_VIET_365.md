@@ -12,7 +12,7 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
 - Tập 3 — [`GEN_VIET_365_CHUYEN_MON.md`](GEN_VIET_365_CHUYEN_MON.md): ma trận 8 × 8,
   quy trình 10 bước, 11 nhóm giải pháp, 100 chiến lược, tư vấn, ngôn ngữ, nghề Coach.
 
-- Tập 4 — [`GEN_VIET_365_PHAN_QUYEN.md`](GEN_VIET_365_PHAN_QUYEN.md): 17 vai, 13 tầng
+- Tập 4 — [`GEN_VIET_365_PHAN_QUYEN.md`](GEN_VIET_365_PHAN_QUYEN.md): 17 vai, 14 tầng
   hiển thị, hai trục phân quyền, và ba lớp phòng thủ.
 - Tập 5 — [`GEN_VIET_365_THU_VIEN.md`](GEN_VIET_365_THU_VIEN.md): thư viện Gen Việt —
   6 quyển, 45 chân dung, 12 mô thức tư duy Việt.
@@ -32,7 +32,7 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
 - Phụ lục — [`GEN_VIET_365_BANG_KE_TAC_PHAM.md`](GEN_VIET_365_BANG_KE_TAC_PHAM.md): bảng kê tác phẩm cho hồ sơ quyền tác giả (sinh tự động)
   ngay, và bộ tra cứu. **Nếu chỉ đọc được một tập thì đọc tập này.**
 
-Bản trực quan đầy đủ (36 nhóm · 222 màn): mở `genviet365/index.html`.
+Bản trực quan đầy đủ (40 nhóm · 246 màn): mở `genviet365/index.html`.
 Gộp thành một tệp để gửi đi: `node genviet365/dong-goi-artifact.cjs`.
 
 ---

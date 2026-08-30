@@ -170,8 +170,19 @@ function dungBangTrinhDuyet(ds) {
   catch (x) { try { pw = require('playwright'); } catch (y) { return Promise.resolve(null); } }
   return pw.chromium.launch().then(function (b) {
     return b.newPage({ viewport: { width: 1100, height: 900 } }).then(function (p) {
-      return p.goto('file://' + path.join(GOC, 'index.html'),
-        { waitUntil: 'domcontentloaded' }).then(function () {
+      /* Cổng vào chặn người vào lần đầu — đúng như nó phải làm. Bộ
+         sinh trang tĩnh thì cần đi thẳng vào nội dung, nên đặt cờ
+         đã-vào trước khi nạp trang. */
+      return p.addInitScript(function () {
+        try {
+          localStorage.setItem('genviet365.vao', '1');
+          localStorage.setItem('genviet365.vai', 'R01');
+          localStorage.setItem('genviet365.bac', 'B6');
+        } catch (x) {}
+      }).then(function () {
+        return p.goto('file://' + path.join(GOC, 'index.html'),
+          { waitUntil: 'domcontentloaded' });
+      }).then(function () {
         return p.evaluate(async function (ds2) {
           var nhip = function () { return new Promise(function (r) { setTimeout(r, 0); }); };
           var ra = {};

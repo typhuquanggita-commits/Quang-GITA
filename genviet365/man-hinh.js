@@ -101,7 +101,7 @@ GV.NHOM = [
       { v: 'vai-tro', t: 'Mười bảy vai', h: 'Ai làm gì trong hệ' },
       { v: 'tai-chinh', t: 'Tài chính và quỹ', h: 'Tiền không mua bậc' },
       { v: 'an-toan', t: 'An toàn và đạo đức', h: 'Bảy luật · dấu hiệu chuyển tuyến' },
-      { v: 'phan-quyen', t: 'Bảng phân quyền', h: '17 vai · 13 tầng · hai trục' },
+      { v: 'phan-quyen', t: 'Bảng phân quyền', h: '17 vai · 14 tầng · hai trục' },
       { v: 'rui-ro', t: 'Bảy rủi ro', h: 'Và phanh tương ứng' }
     ]},
   { id: 'g12', no: '12', t: 'TRIỂN KHAI', s: 'Từ hôm nay tới 2056', mau: '#A8801F',
@@ -361,6 +361,20 @@ GV.NHOM = [
       { v: 'nc-sai-lam', t: 'Mười sai lầm hay mắc', h: 'Và phanh cho từng cái' },
       { v: 'nc-dao-duc', t: 'Đạo đức nghiên cứu với trẻ', h: 'Mười ba điều không thương lượng' },
       { v: 'nc-ho-so', t: 'Bộ hồ sơ nộp cấp Sở', h: 'Và câu hội đồng thường hỏi' }
+    ]},
+  { id: 'g39', no: '39', t: 'MẬT MÃ GEN VIỆT', s: 'Sản phẩm để đời, và quy luật lặp lại xuyên bốn mươi lăm chân dung', mau: '#8A6006',
+    ds: [
+      { v: 'mm-san-pham', t: 'Bốn mươi lăm sản phẩm để đời', h: 'Thứ cụ thể còn lại tới hôm nay' },
+      { v: 'mm-ma', t: 'Các mật mã lặp lại', h: 'Quy luật rút từ nhiều đời người' },
+      { v: 'mm-doi-chieu', t: 'Ai mang mật mã nào', h: 'Ma trận nhân vật × mật mã' },
+      { v: 'mm-ke-chuyen', t: 'Kể một câu chuyện trong bảy phút', h: 'Và bảy câu hỏi mở sau đó' }
+    ]},
+  { id: 'g40', no: '40', t: 'ĐIỀU HÀNH HỆ THỐNG', s: 'Cổng vào, bảng điều khiển, kho tổng tra soát', mau: '#5A6B80',
+    ds: [
+      { v: 'dn-cong', t: 'Cổng đăng nhập và ba lớp kiểm soát', h: 'Lớp nào cưỡng chế được, lớp nào không' },
+      { v: 'dn-may-chu', t: 'Hợp đồng máy chủ tối thiểu', h: 'Khi lên bản có xác thực thật' },
+      { v: 'bang-dieu-khien', t: 'Bảng điều khiển', h: 'Sức khoẻ toàn hệ · máy đếm, không người điền' },
+      { v: 'tra-soat', t: 'Kho tổng tra soát', h: 'Chỉ Super Admin và Admin hệ thống' }
     ]}
 ];
 
@@ -396,11 +410,19 @@ GV.PHAN = [
 
   { id: 'p6', no: '6', t: 'GEN VIỆT TRONG KỶ NGUYÊN VƯƠN MÌNH', mau: '#BE0E16',
     s: 'Tầm vóc quốc gia, bản quyền, nhân rộng và ra thế giới',
-    nhom: ['g13', 'g12', 'g17', 'g18', 'g27', 'g15', 'g28', 'g35'] },
+    nhom: ['g12', 'g17', 'g18', 'g27', 'g15', 'g28', 'g35'] },
 
   { id: 'p7', no: '7', t: 'HOẠT ĐỘNG GEN VIỆT VÀ CỘNG ĐỒNG', mau: '#0B6675',
     s: 'Nơi giá trị của em được người ngoài xác nhận',
-    nhom: ['g25', 'g6', 'g8'] }
+    nhom: ['g25', 'g6', 'g8'] },
+
+  { id: 'p8', no: '8', t: 'MẬT MÃ GEN VIỆT', mau: '#8A6006',
+    s: 'Vĩ nhân, danh tướng, nhà khoa học — chiến tích, sản phẩm và tư duy để đời',
+    nhom: ['g13', 'g39'] },
+
+  { id: 'p9', no: '9', t: 'ĐIỀU HÀNH HỆ THỐNG', mau: '#5A6B80',
+    s: 'Cổng vào, bảng điều khiển và kho tổng tra soát',
+    nhom: ['g40'] }
 ];
 
 GV.MAN = {
@@ -934,11 +956,11 @@ GV.MAN = {
   ]},
 
 'phan-quyen': { q: 'qt_trang', k: 'Lớp L4 · quản trị', t: 'Bảng phân quyền',
-  p: 'Mười bảy vai, mười ba tầng hiển thị, và hai trục quyết định: bậc của vai, và bậc năng lực của học viên. Kế thừa nguyên tắc phân quyền của GITA 365 v8.',
+  p: 'Mười bảy vai, mười bốn tầng hiển thị, và hai trục quyết định: bậc của vai, và bậc năng lực của học viên. Kế thừa nguyên tắc phân quyền của GITA 365 v8.',
   khoi: [
     { k: 'muc', t: 'Mười bảy vai — bậc càng nhỏ càng nhiều quyền' },
     { k: 'bang', cot: ['Mã', 'Bậc', 'Vai', 'Làm gì'], tu: 'VAI_BANG' },
-    { k: 'muc', t: 'Mười ba tầng hiển thị' },
+    { k: 'muc', t: 'Mười bốn tầng hiển thị' },
     { k: 'van', t: 'Mỗi màn thuộc đúng *một* tầng. Muốn đổi phạm vi một màn thì đổi tầng của nó ở một chỗ, không sửa rải rác từng nơi.' },
     { k: 'bang', cot: ['Tầng', 'Mở tới bậc', 'Nghĩa là gì'], tu: 'QUYEN_BANG' },
     { k: 'muc', t: 'Trục thứ hai — bậc năng lực của học viên' },
@@ -2612,6 +2634,104 @@ GV.MAN = {
     { k: 'luoi', c: 2, tu: 'K45_KHAC_BIET' },
     { k: 'muc', t: 'Mười sáu luật dạy khối 4 và khối 5' },
     { k: 'luat', tu: 'K45_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 39 · MẬT MÃ GEN VIỆT ══════════ */
+'mm-san-pham': { q: 'chung', k: 'Mật mã Gen Việt', t: 'Bốn mươi lăm sản phẩm để đời',
+  p: 'Thư viện đã có chiến tích và tư duy của từng người. Cột còn thiếu là thứ cụ thể họ để lại — và hôm nay còn nhìn thấy được ở đâu.',
+  khoi: [
+    { k: 'bang', cot: ['Nhân vật', 'Quyển', 'Sản phẩm hoặc di sản để đời', 'Hôm nay còn thấy ở đâu', 'Em dùng lại được gì ngay tuần này'],
+      tu: 'MM_SAN_PHAM' },
+    { k: 'van', t: 'Cột thứ ba cố ý không nhận những câu như *tinh thần yêu nước*. Một sản phẩm để đời phải chỉ ra được: một cuốn sách, một bộ luật, một công trình, một trường phái, một định chế, một phương pháp. Thứ chỉ ra được thì học sinh mới đi xem được.' },
+    { k: 'canh', ds: [
+      'BIÊN SOẠN MỚI — lớp sản phẩm để đời không có trong kho gốc. Tên nhân vật, chiến tích và mô thức giữ nguyên theo Thư viện.',
+      'Cần một người có chuyên môn sử học rà lại phần niên đại và sử liệu trước khi đưa vào dạy.',
+      'Chỗ nào là truyền thuyết chứ không phải sử liệu đều được ghi rõ ngay trong ô ấy.'
+    ]}
+  ]},
+
+'mm-ma': { q: 'chung', k: 'Mật mã Gen Việt', t: 'Các mật mã lặp lại',
+  p: 'Đọc bốn mươi lăm đời người rồi hỏi: điều gì lặp lại? Những điều lặp lại ấy là mật mã — và mật mã thì dùng lại được.',
+  khoi: [
+    { k: 'ly', tu: 'MM_MA' },
+    { k: 'van', t: 'Đây là chỗ Thư viện thôi là một bộ sưu tập và bắt đầu là một *bộ công cụ*. Một câu chuyện hay thì nghe xong thấy xúc động; một mật mã thì tuần sau dùng được. Hệ này cần cả hai, nhưng chỉ cái thứ hai mới đo được.' },
+    { k: 'van', t: 'Mật mã ở trên rút từ *đời người*; mười hai mô thức Việt ở nhóm 13 rút từ *cách nghĩ*. Hai lớp bổ nhau, không thay nhau — đọc chéo chúng là cách dùng Thư viện sâu nhất.' }
+  ]},
+
+'mm-doi-chieu': { q: 'nghe_chung', k: 'Mật mã Gen Việt', t: 'Ai mang mật mã nào',
+  p: 'Ma trận bốn mươi lăm dòng. Cột cuối giải thích vì sao xếp vậy — vì một ma trận không nêu lý do thì không tranh luận được.',
+  khoi: [
+    { k: 'bang', cot: ['Nhân vật', 'Mật mã chính', 'Mật mã phụ', 'Vì sao xếp vậy'], tu: 'MM_DOI_CHIEU' },
+    { k: 'van', t: 'Bảng này dùng để *chọn nhân vật cho một buổi*, không phải để xếp hạng ai hơn ai. Cần dạy về chuẩn bị thì tra cột mật mã rồi chọn người mang mã ấy — chứ không phải mở Thư viện từ trang đầu.' }
+  ]},
+
+'mm-ke-chuyen': { q: 'nghe_quan_ly', k: 'Mật mã Gen Việt', t: 'Kể một câu chuyện trong bảy phút',
+  p: 'Khớp với hạt giống tri thức bảy phút mà hệ đã có. Từng pha, từng phút, kèm dấu hiệu buổi đang hỏng.',
+  khoi: [
+    { k: 'giaoan', tu: 'MM_KE_CHUYEN' },
+    { k: 'muc', t: 'Bảy câu hỏi mở sau mỗi câu chuyện' },
+    { k: 'luoi', c: 2, tu: 'MM_KHOI_BAY' },
+    { k: 'muc', t: 'Luật dùng nhân vật lịch sử trong dạy trẻ' },
+    { k: 'luat', tu: 'MM_LUAT' },
+    { k: 'trich', t: 'Không thần thánh hoá, và nêu cả chỗ nhân vật sai. Một người không bao giờ sai thì không ai học được gì từ họ.', n: 'Luật dùng nhân vật lịch sử' }
+  ]},
+
+/* ══════════ NHÓM 40 · ĐIỀU HÀNH HỆ THỐNG ══════════ */
+'dn-cong': { q: 'chung', k: 'Điều hành hệ thống', t: 'Cổng đăng nhập và bốn lớp kiểm soát',
+  p: 'Một điều phải nói ngay, vì nói muộn thì thành lừa dối: cổng đăng nhập trong một trang tĩnh không phải hàng rào an ninh.',
+  khoi: [
+    { k: 'van', t: 'Mã chạy trên máy người dùng. Ai mở công cụ phát triển của trình duyệt cũng đổi được vai của mình, và toàn bộ nội dung nằm sẵn trong tệp dù có đăng nhập hay không. Gọi nó là *bảo mật* là bước đầu tiên để ai đó tin nhầm rồi đưa dữ liệu thật vào.' },
+    { k: 'muc', t: 'Vậy cổng này để làm gì' },
+    { k: 'ds', so: true, ds: [
+      '*Nhận diện* — biết ai đang đọc, để màn hình nói đúng ngôn ngữ của vai ấy.',
+      '*Đặt mặc định đúng* — mở ra là thấy phần của mình, không lạc giữa hơn hai trăm màn.',
+      '*Nhắc trách nhiệm* — người bấm “tôi là Coach” đã tự nhận một ràng buộc, và điều đó có giá trị dù không cưỡng chế được.'
+    ]},
+    { k: 'muc', t: 'Bốn lớp, và lớp nào cưỡng chế được' },
+    { k: 'luoi', c: 2, tu: 'DN_BA_LOP' },
+    { k: 'van', t: 'Hàng rào thật là *bản cắt*: mỗi vai nhận một tệp riêng, và nội dung ngoài quyền **không có trong tệp** — không phải bị ẩn, mà là không tồn tại. Bộ kiểm dựng thử năm bản cắt ở mỗi lần phát hành và soi rò rỉ.' },
+    { k: 'muc', t: 'Vai để chọn ở cổng' },
+    { k: 'bang', cot: ['Mã', 'Vai', 'Mở tới đâu', 'Ai là người này'], tu: 'DN_TAI_KHOAN' },
+    { k: 'muc', t: 'Sáu luật cổng' },
+    { k: 'luat', tu: 'DN_LUAT' },
+    { k: 'trich', t: 'Không đặt mật khẩu trong trang tĩnh. Mật khẩu nằm ngay trong tệp mà ai cũng đọc được; nó chỉ tạo ảo giác an toàn và làm người dùng chủ quan hơn.', n: 'Luật cổng thứ hai' }
+  ]},
+
+'dn-may-chu': { q: 'qt_noi_dung', k: 'Điều hành hệ thống', t: 'Hợp đồng máy chủ tối thiểu',
+  p: 'Khi Học viện dựng bản có máy chủ thật, đây là mức thấp nhất chấp nhận được. Ghi ra để lần sau không phải nghĩ lại.',
+  khoi: [
+    { k: 'bang', cot: ['Hạng mục', 'Mức tối thiểu', 'Ghi chú'], tu: 'DN_MAY_CHU' },
+    { k: 'van', t: 'Hạng mục quan trọng nhất là hạng mục thứ hai: *máy chủ quyết định trả về gì, không tin bất cứ giá trị nào do trình duyệt gửi lên*. Bảng phân quyền hiện có dùng lại được nguyên vẹn — chỉ đổi chỗ thực thi, không đổi nội dung.' },
+    { k: 'canh', ds: [
+      'Khi lên máy chủ thật, cổng đăng nhập tĩnh phải bị THAY HẲN chứ không phải bọc thêm.',
+      'Giữ lại một cổng giả bên cạnh một cổng thật là cách chắc chắn để về sau có người đi nhầm cửa.',
+      'Dữ liệu thật của người học không được đưa vào bản dựng tĩnh, ở bất kỳ vai nào.'
+    ]}
+  ]},
+
+'bang-dieu-khien': { q: 'qt_he_thong', k: 'Điều hành hệ thống', t: 'Bảng điều khiển',
+  p: 'Sức khoẻ toàn hệ trong một màn. Mọi con số ở đây do máy đếm lúc dựng, không do người điền.',
+  khoi: [
+    { k: 'so', tu: 'BDK_SO' },
+    { k: 'muc', t: 'Các lớp kiểm phát hành' },
+    { k: 'bang', cot: ['Lớp kiểm', 'Soi điều gì', 'Không đạt thì sao'], tu: 'BDK_LOP' },
+    { k: 'muc', t: 'Đang treo' },
+    { k: 'van', t: 'Những việc dưới đây chưa xong, và bảng này cố ý để chúng ở chỗ dễ nhìn thay vì cuối trang.' },
+    { k: 'bang', cot: ['Việc đang treo', 'Loại', 'Chặn điều gì', 'Ai gỡ được'], tu: 'BDK_TREO' },
+    { k: 'muc', t: 'Phân bố quyền trên toàn hệ' },
+    { k: 'bang', cot: ['Tầng hiển thị', 'Số màn', 'Mở từ vai nào trở lên'], tu: 'BDK_QUYEN' }
+  ]},
+
+'tra-soat': { q: 'qt_he_thong', k: 'Điều hành hệ thống', t: 'Kho tổng tra soát',
+  p: 'Bốn cuốn sổ của hệ, gom về một chỗ. Chỉ Super Admin và Admin hệ thống mở được — không vì nội dung nhạy cảm, mà vì đây là bảng chỉ số dành cho người chịu trách nhiệm về chuẩn.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'TS_MUC' },
+    { k: 'muc', t: 'Bốn sổ, và con số hiện tại của từng sổ' },
+    { k: 'bang', cot: ['Sổ', 'Đếm được', 'Bộ kiểm soi gì', 'Xem chi tiết ở màn'], tu: 'TS_BANG' },
+    { k: 'van', t: 'Người khác đọc bảng này dễ hiểu nhầm: một món nợ *đã ghi công khai* trông giống một lỗi *bị giấu*. Đó là lý do duy nhất kho này giới hạn quyền — chứ không phải vì có gì phải che.' },
+    { k: 'muc', t: 'Sáu luật giữ kho tra soát' },
+    { k: 'luat', tu: 'TS_LUAT' },
+    { k: 'trich', t: 'Bản dựng không sạch thì không phát hành, kể cả khi đã hứa ngày giao. Ngày giao lùi được; một bản sai đã phát ra thì không thu về được.', n: 'Luật tra soát thứ tư' }
   ]}
 
 };
@@ -2638,6 +2758,88 @@ GV.TU = {
   /* nhóm 38 · cắt dòng tiêu đề nằm trong dữ liệu */
   NC_THIET_KE_B: GV.NC_THIET_KE.slice(1),
   NC_HO_SO_SO_B: GV.NC_HO_SO_SO.slice(1),
+
+  /* nhóm 40 · BẢNG ĐIỀU KHIỂN — mọi con số ở đây do MÁY ĐẾM lúc
+     dựng, không do người điền. Một bảng điều khiển mà người tự
+     điền số thì không điều khiển được gì. */
+  BDK_SO: (function () {
+    var soMan = Object.keys(GV.MAN).length, soKhoi = 0;
+    Object.keys(GV.MAN).forEach(function (v) { soKhoi += (GV.MAN[v].khoi || []).length; });
+    var treo = (GV.SC_XUAT_XU || []).filter(function (d) { return d[1] === 'BIÊN SOẠN'; }).length;
+    var no = (GV.SN_TEP || []).filter(function (d) { return d[2] === 'CHƯA ĐỌC ĐƯỢC'; }).length;
+    return [
+      { b: String(GV.PHAN.length), t: 'phần' },
+      { b: String(GV.NHOM.length), t: 'nhóm' },
+      { b: String(soMan), t: 'màn' },
+      { b: String(soKhoi), t: 'khối dựng' },
+      { b: String(GV.VAI.length), t: 'vai trong hệ' },
+      { b: String(treo), t: 'kho chờ duyệt' },
+      { b: String(no), t: 'nguồn còn nợ' }
+    ];
+  })(),
+
+  BDK_LOP: [
+    ['Bảy phần ↔ nhóm', 'Mỗi nhóm thuộc đúng một phần, soi cả hai chiều', 'Chặn phát hành'],
+    ['Sổ cái yêu cầu', 'Mỗi yêu cầu viện dẫn màn và kho có thật', 'Chặn phát hành'],
+    ['Món nợ số', 'Mọi con số hứa trong văn xuôi khớp số phần tử thật', 'Chặn phát hành'],
+    ['Sổ xuất xứ', 'Đối chiếu sổ với danh sách tệp thật trên đĩa, hai chiều', 'Chặn phát hành'],
+    ['Sổ nguồn', 'Mỗi tệp đã rút nêu được kho chứa; mỗi món nợ nêu được cách gỡ', 'Chặn phát hành'],
+    ['Va chạm tên', 'Hai kho cùng đặt một tên, hoặc bảng tra che mất kho', 'Chặn phát hành'],
+    ['Kiểm tĩnh', 'Cấu trúc: màn thiếu, khoá hỏng, bảng lệch cột, ô rỗng, chữ tạm', 'Chặn phát hành'],
+    ['Bản cắt', 'Nội dung ngoài quyền không lọt vào bản phát cho vai thấp', 'Chặn phát hành'],
+    ['Lớp chạy', 'Mọi màn dựng được bằng trình duyệt thật, không màn nào rỗng ruột', 'Chặn phát hành'],
+    ['Cổng quyền', 'Vào thẳng bằng đường dẫn một màn ngoài quyền phải ra thẻ khoá', 'Chặn phát hành'],
+    ['Ô tìm', 'Gõ đúng tiêu đề một màn ngoài quyền cũng không lọt', 'Chặn phát hành'],
+    ['Khổ màn', 'Không tràn ngang ở 1400, 900 và 390 điểm ảnh', 'Chặn phát hành'],
+    ['Mục lục', 'Gập được, nhóm đang đọc tự mở, không phình sau khi duyệt bốn mươi màn', 'Chặn phát hành'],
+    ['Tương phản', 'Mọi mã màu chữ đạt WCAG AA 4.5:1 trên cả hai chế độ', 'Chặn phát hành']
+  ],
+
+  BDK_TREO: (function () {
+    var ra = [];
+    (GV.SC_XUAT_XU || []).forEach(function (d) {
+      if (d[1] !== 'BIÊN SOẠN') return;
+      ra.push([d[0], 'Chờ duyệt', 'Không được đưa vào dạy hay nộp hồ sơ khi còn treo',
+        'Hội đồng Chuyên môn của Học viện']);
+    });
+    (GV.SN_NO || []).forEach(function (x) {
+      ra.push([x.t, 'Nợ nguồn', x.dau, x.phanh]);
+    });
+    return ra;
+  })(),
+
+  BDK_QUYEN: (function () {
+    var dem = {}, ten = {};
+    (GV.TANG_HT_UI || []).forEach(function (x) { ten[x.q] = x.t; });
+    Object.keys(GV.MAN).forEach(function (v) {
+      var q = GV.MAN[v].q; dem[q] = (dem[q] || 0) + 1;
+    });
+    return Object.keys(dem).sort(function (a, b) {
+      return (GV.QUYEN_MAX[a] || 99) - (GV.QUYEN_MAX[b] || 99);
+    }).map(function (q) {
+      var lv = GV.QUYEN_MAX[q];
+      var vai = (GV.VAI || []).filter(function (r) { return r.lv === lv; })[0];
+      return [ten[q] || q, String(dem[q]), 'lv ' + lv + (vai ? ' · ' + vai.t : '')];
+    });
+  })(),
+
+  TS_BANG: (function () {
+    var treo = (GV.SC_XUAT_XU || []).filter(function (d) { return d[1] === 'BIÊN SOẠN'; }).length;
+    var rut = (GV.SN_TEP || []).filter(function (d) { return d[2] === 'ĐÃ RÚT'; }).length;
+    return [
+      ['Sổ cái yêu cầu', (GV.SC_YEU_CAU || []).length + ' dòng yêu cầu',
+       'Từng viện dẫn màn và kho có thật không', 'so-cai-yc'],
+      ['Món nợ số', (GV.SC_MON_NO || []).length + ' con số đã hứa',
+       'Con số hứa có khớp số phần tử thật không', 'so-cai-no'],
+      ['Sổ nguồn', (GV.SN_TEP || []).length + ' dòng tệp · ' + rut + ' đã rút · ' +
+       (GV.SN_NO || []).length + ' món nợ',
+       'Tệp đã rút có nêu được kho chứa không; món nợ có nêu cách gỡ không', 'so-nguon'],
+      ['Sổ xuất xứ', (GV.SC_XUAT_XU || []).length + ' tệp kho · ' + treo + ' chờ duyệt',
+       'Sổ có khớp danh sách tệp thật trên đĩa không, cả hai chiều', 'so-xuat-xu']
+    ];
+  })(),
+
+  DN_TAI_KHOAN: GV.DN_TAI_KHOAN,
 
   /* nhóm 20 · bốn loại xuất xứ, viết ra để ranh giới không bị nhoè */
   XUAT_XU_LOAI: [

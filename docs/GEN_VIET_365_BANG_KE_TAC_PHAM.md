@@ -9,14 +9,14 @@ khả năng lệch với nội dung thật.
 | Tên tác phẩm | GEN VIỆT 365 — Hệ điều hành phát triển con người |
 | Loại hình | Tác phẩm viết · chương trình máy tính (phần giao diện tra cứu) |
 | Chủ sở hữu | Học viện GITA |
-| Mã bản dựng | e5c6b2fe2325 |
+| Mã bản dựng | 81d4622e08f1 |
 | Ngày định hình bản này | 2026-08-30 |
-| Số phần nội dung | 36 nhóm |
-| Số mục nội dung | 222 màn |
-| Số khối trình bày | 845 |
-| Số phần tử dữ liệu | 5318 |
-| Số kho dữ liệu thành phần | 312 |
-| Số tệp mã nguồn | 39 |
+| Số phần nội dung | 40 nhóm |
+| Số mục nội dung | 246 màn |
+| Số khối trình bày | 952 |
+| Số phần tử dữ liệu | 6321 |
+| Số kho dữ liệu thành phần | 350 |
+| Số tệp mã nguồn | 44 |
 
 > **Mã bản dựng là bằng chứng thời điểm.** Nó là mã băm SHA-256 rút gọn của toàn bộ nội
 > dung tác phẩm tại thời điểm dựng. Đổi một chữ trong kho thì mã đổi theo. Giữ lại mã này
@@ -168,6 +168,7 @@ truy cập theo vai**, chứ không phải một tập tài liệu mở.
 | 20 | TRA CỨU | so-cai-no | Món nợ số | chung | 4 |
 | 20 | TRA CỨU | so-nguon | Sổ nguồn | chung | 8 |
 | 20 | TRA CỨU | so-nguon-no | Nợ nguồn, và cách gỡ từng món | chung | 3 |
+| 20 | TRA CỨU | so-xuat-xu | Sổ xuất xứ | chung | 8 |
 | 21 | XƯƠNG SỐNG GEN VIỆT | gv-dinh-vi | Định vị Gen Việt | chung | 3 |
 | 21 | XƯƠNG SỐNG GEN VIỆT | gv-nam-tuyen | Năm tuyến vận hành | chung | 4 |
 | 21 | XƯƠNG SỐNG GEN VIỆT | gv-15-giai-doan | Mười lăm giai đoạn Gen Việt | chung | 3 |
@@ -229,6 +230,10 @@ truy cập theo vai**, chứ không phải một tập tài liệu mở.
 | 31 | CHUYÊN ĐỀ MƯỜI HAI KHỐI | ga-buoi | Bảy mươi ba buổi đã soạn | nghe_quan_ly | 2 |
 | 31 | CHUYÊN ĐỀ MƯỜI HAI KHỐI | ga-hoat-dong | Ngân hàng ba mươi hai hoạt động | nghe_quan_ly | 2 |
 | 31 | CHUYÊN ĐỀ MƯỜI HAI KHỐI | ga-hoc-ky | Mười lăm tuần một học kỳ | nghe_quan_ly | 6 |
+| 31 | CHUYÊN ĐỀ MƯỜI HAI KHỐI | k45-de-tai | Một trăm chuyên đề khối 4 và khối 5 | nghe_chung | 4 |
+| 31 | CHUYÊN ĐỀ MƯỜI HAI KHỐI | k45-khau-quyet | Một trăm khẩu quyết | chung | 3 |
+| 31 | CHUYÊN ĐỀ MƯỜI HAI KHỐI | k45-du-an | Mười dự án mẫu | nghe_quan_ly | 2 |
+| 31 | CHUYÊN ĐỀ MƯỜI HAI KHỐI | k45-giao-an | Hai giáo án mẫu và tám điểm khác khối dưới | nghe_quan_ly | 8 |
 | 32 | CẨM NANG VẬN HÀNH CHI TIẾT | vh-so-do | Sơ đồ tổ chức, và ba bộ tên trong cùng một kho | clb_dieu_hanh | 4 |
 | 32 | CẨM NANG VẬN HÀNH CHI TIẾT | vh-truoc-trong-sau | Trước, trong và sau một buổi sinh hoạt | clb_dieu_hanh | 7 |
 | 32 | CẨM NANG VẬN HÀNH CHI TIẾT | vh-ban12 | Nhiệm vụ mười hai Ban | clb_dieu_hanh | 4 |
@@ -254,6 +259,25 @@ truy cập theo vai**, chứ không phải một tập tài liệu mở.
 | 36 | THAM CHIẾU CHI HỘI BNI | bn-doi-chieu | Đối chiếu hai mươi trục | clb_dieu_hanh | 2 |
 | 36 | THAM CHIẾU CHI HỘI BNI | bn-khong-be | Mười hai thứ không được bê sang môi trường học đường | chung | 5 |
 | 36 | THAM CHIẾU CHI HỘI BNI | bn-van-hanh | Ghế, chỉ số và quy trình họp | clb_dieu_hanh | 7 |
+| 37 | AN TOÀN TRẠI | at-khong-chay | Mười bốn điều kiện mở trại | chung | 6 |
+| 37 | AN TOÀN TRẠI | at-truoc-trai | Chuẩn bị từ D-30 tới D-1 | kh_gia_dinh | 4 |
+| 37 | AN TOÀN TRẠI | at-su-co | Mười hai loại sự cố | kh_gia_dinh | 3 |
+| 37 | AN TOÀN TRẠI | at-ranh-gioi | Ranh giới người lớn, hoạt động dưới nước và giờ đêm | kh_gia_dinh | 6 |
+| 37 | AN TOÀN TRẠI | at-to-giac | Nhận và xử lý tố giác trong thời gian trại | kh_gia_dinh | 2 |
+| 37 | AN TOÀN TRẠI | at-ho-so | Túi y tế và bộ hồ sơ bắt buộc | kh_gia_dinh | 4 |
+| 38 | THIẾT KẾ NGHIÊN CỨU | nc-thiet-ke | Bảy thiết kế nghiên cứu còn thiếu | nghiem_thu | 5 |
+| 38 | THIẾT KẾ NGHIÊN CỨU | nc-chi-tiet | Rủi ro thiết kế của từng đề tài | nghiem_thu | 2 |
+| 38 | THIẾT KẾ NGHIÊN CỨU | nc-sai-lam | Mười sai lầm thiết kế hay mắc | nghiem_thu | 2 |
+| 38 | THIẾT KẾ NGHIÊN CỨU | nc-dao-duc | Đạo đức nghiên cứu khi đối tượng là trẻ | chung | 3 |
+| 38 | THIẾT KẾ NGHIÊN CỨU | nc-ho-so | Bộ hồ sơ nộp cấp Sở | nghiem_thu | 2 |
+| 39 | MẬT MÃ GEN VIỆT | mm-san-pham | Bốn mươi lăm sản phẩm để đời | chung | 3 |
+| 39 | MẬT MÃ GEN VIỆT | mm-ma | Các mật mã lặp lại | chung | 3 |
+| 39 | MẬT MÃ GEN VIỆT | mm-doi-chieu | Ai mang mật mã nào | nghe_chung | 2 |
+| 39 | MẬT MÃ GEN VIỆT | mm-ke-chuyen | Kể một câu chuyện trong bảy phút | nghe_quan_ly | 6 |
+| 40 | ĐIỀU HÀNH HỆ THỐNG | dn-cong | Cổng đăng nhập và bốn lớp kiểm soát | chung | 11 |
+| 40 | ĐIỀU HÀNH HỆ THỐNG | dn-may-chu | Hợp đồng máy chủ tối thiểu | qt_noi_dung | 3 |
+| 40 | ĐIỀU HÀNH HỆ THỐNG | bang-dieu-khien | Bảng điều khiển | qt_he_thong | 8 |
+| 40 | ĐIỀU HÀNH HỆ THỐNG | tra-soat | Kho tổng tra soát | qt_he_thong | 7 |
 
 ---
 
@@ -264,51 +288,62 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 
 | Kho | Số mục | Kho | Số mục | Kho | Số mục |
 |---|---|---|---|---|---|
-| API | 9 | BAC | 6 | BAC_MO | 6 |
-| BAC_MUC | 6 | BANG_LUU | 12 | BANG_MAU | 4 |
-| BAO_CAO | 4 | BAY_NL | 7 | BIEU_MAU | 14 |
-| BN_CHI_SO | 13 | BN_DOI_CHIEU | 20 | BN_HANH_TRINH | 6 |
-| BN_KHONG_BE | 12 | BN_LUAT | 14 | BN_QUY_TRINH_HOP | 20 |
-| BN_TANG_SAU | 14 | BN_VAI | 12 | BQ_ANH_XA_LUAT | 5 |
-| BQ_ANH_XA_NL | 12 | BQ_ANH_XA_PC | 5 | BQ_BANG_CHUNG | 7 |
-| BQ_BAN_DIA | 3 | BQ_CAU_TRUC_DA | 11 | BQ_CHONG | 5 |
-| BQ_DE_AN | 7 | BQ_DONG_DAU_TG | 6 | BQ_HO_SO_TG | 8 |
-| BQ_LO_TRINH | 4 | BQ_NHAN_HIEU | 8 | BQ_NHOM_NICE | 5 |
-| BQ_QUOC_TE | 6 | BQ_QUYEN_TG | 6 | BQ_RANH_GIOI | 5 |
-| BQ_TAI_SAN | 12 | BQ_TUAN_THU | 6 | BUOI_DAU | 6 |
-| CD10_CAP | 10 | CD10_CHUAN_RA | 39 | CD10_CT | 100 |
-| CD10_GIAO_TIEP | 7 | CD10_LUAT | 12 | CD10_NANG_LUC | 10 |
-| CD10_PIN | 5 | CD10_QUY_CHUAN | 11 | CD10_SOP | 30 |
-| CD_DE_TAI | 251 | CD_GIAO_AN | 22 | CD_GIA_TRI_7_TUAN | 8 |
-| CD_KHUNG | 6 | CD_KHUNG_CD | 43 | CD_LUAT | 20 |
-| CD_NHOM | 5 | CD_TAI_NANG | 601 | CD_TRUC | 61 |
-| CHANG | 6 | CHAN_DUNG | 4 | CHIEN_LUOC | 10 |
-| CHUYEN_DE | 4 | CONG_NGHE | 3 | CT_BAN_DO_11 | 11 |
-| CT_BAY_CAU | 7 | CT_BAY_LUAT | 7 | CT_CHAM | 6 |
-| CT_CHAM_LUAT | 6 | CT_DOC_CA | 7 | CT_DOC_CA_LUAT | 6 |
-| CT_GIAO_AN | 9 | CT_GIAO_AN_DUNG | 6 | CT_GOAL_MAP | 6 |
-| CT_GOI_LUAT | 6 | CT_KICH_BAN | 4 | CT_PHONG_VAN | 12 |
-| CT_PV_LUAT | 6 | CT_SO_LUAT | 6 | CT_SO_PHUC_HOI | 5 |
-| CT_THU | 5 | DA_BIEU_MAU | 7 | DA_CAN_CU | 6 |
-| DA_CAU_TRUC | 9 | DA_KE_HOACH_12 | 4 | DA_KPI | 17 |
-| DA_LUAT | 16 | DA_NGHIEN_CUU | 5 | DA_RACI | 10 |
-| DA_TAM_LY | 6 | DA_TO_CHUC | 12 | DUONG_VAO | 6 |
-| DU_GIO | 7 | GA_BIEU_MAU | 14 | GA_BUOI | 73 |
-| GA_HOAT_DONG | 32 | GA_HOC_KY | 15 | GA_HONG | 15 |
-| GA_KHAU_QUYET | 20 | GA_KHUNG_BUOI | 6 | GA_KHUNG_TIET | 11 |
-| GA_LUAT | 18 | GA_PHAN_0 | 9 | GT_BAO_DAM | 3 |
-| GT_CHONG | 12 | GT_GOI | 5 | GT_KINH_TE | 7 |
-| GT_LOI_BAT_BIEN | 7 | GT_LUAT_GIA | 7 | GT_LUAT_KT | 4 |
-| GT_NHAN_RONG | 3 | GT_NHA_TRUONG | 4 | GT_PHAN_DOI | 12 |
-| GT_PHEU | 5 | GT_THONG_DIEP | 5 | HINH_THAI | 5 |
-| HO_CHIEU_LUAT | 5 | KHOA_NEN | 8 | KPI_HE | 7 |
+| API | 9 | AT_HO_SO | 19 | AT_KHONG_CHAY | 14 |
+| AT_LUAT_TRAI | 18 | AT_MUC_BAO_DONG | 3 | AT_NUOC_VA_DEM | 16 |
+| AT_RANH_GIOI | 16 | AT_SU_CO | 12 | AT_TO_GIAC | 8 |
+| AT_TRUOC_TRAI | 20 | AT_TUI_Y_TE | 26 | BAC | 6 |
+| BAC_MO | 6 | BAC_MUC | 6 | BANG_LUU | 12 |
+| BANG_MAU | 4 | BAO_CAO | 4 | BAY_NL | 7 |
+| BIEU_MAU | 14 | BN_CHI_SO | 13 | BN_DOI_CHIEU | 20 |
+| BN_HANH_TRINH | 6 | BN_KHONG_BE | 12 | BN_LUAT | 14 |
+| BN_QUY_TRINH_HOP | 20 | BN_TANG_SAU | 14 | BN_VAI | 12 |
+| BQ_ANH_XA_LUAT | 5 | BQ_ANH_XA_NL | 12 | BQ_ANH_XA_PC | 5 |
+| BQ_BANG_CHUNG | 7 | BQ_BAN_DIA | 3 | BQ_CAU_TRUC_DA | 11 |
+| BQ_CHONG | 5 | BQ_DE_AN | 7 | BQ_DONG_DAU_TG | 6 |
+| BQ_HO_SO_TG | 8 | BQ_LO_TRINH | 4 | BQ_NHAN_HIEU | 8 |
+| BQ_NHOM_NICE | 5 | BQ_QUOC_TE | 6 | BQ_QUYEN_TG | 6 |
+| BQ_RANH_GIOI | 5 | BQ_TAI_SAN | 12 | BQ_TUAN_THU | 6 |
+| BUOI_DAU | 6 | CD10_CAP | 10 | CD10_CHUAN_RA | 39 |
+| CD10_CT | 100 | CD10_GIAO_TIEP | 7 | CD10_LUAT | 12 |
+| CD10_NANG_LUC | 10 | CD10_PIN | 5 | CD10_QUY_CHUAN | 11 |
+| CD10_SOP | 30 | CD_DE_TAI | 251 | CD_GIAO_AN | 22 |
+| CD_GIA_TRI_7_TUAN | 8 | CD_KHUNG | 6 | CD_KHUNG_CD | 43 |
+| CD_LUAT | 20 | CD_NHOM | 5 | CD_TAI_NANG | 601 |
+| CD_TRUC | 61 | CHANG | 6 | CHAN_DUNG | 4 |
+| CHIEN_LUOC | 10 | CHUYEN_DE | 4 | CONG_NGHE | 3 |
+| CT_BAN_DO_11 | 11 | CT_BAY_CAU | 7 | CT_BAY_LUAT | 7 |
+| CT_CHAM | 6 | CT_CHAM_LUAT | 6 | CT_DOC_CA | 7 |
+| CT_DOC_CA_LUAT | 6 | CT_GIAO_AN | 9 | CT_GIAO_AN_DUNG | 6 |
+| CT_GOAL_MAP | 6 | CT_GOI_LUAT | 6 | CT_KICH_BAN | 4 |
+| CT_PHONG_VAN | 12 | CT_PV_LUAT | 6 | CT_SO_LUAT | 6 |
+| CT_SO_PHUC_HOI | 5 | CT_THU | 5 | DA_BIEU_MAU | 7 |
+| DA_CAN_CU | 6 | DA_CAU_TRUC | 9 | DA_KE_HOACH_12 | 4 |
+| DA_KPI | 17 | DA_LUAT | 16 | DA_NGHIEN_CUU | 5 |
+| DA_RACI | 10 | DA_TAM_LY | 6 | DA_TO_CHUC | 12 |
+| DN_BA_LOP | 4 | DN_LUAT | 6 | DN_MAY_CHU | 7 |
+| DN_TAI_KHOAN | 10 | DUONG_VAO | 6 | DU_GIO | 7 |
+| GA_BIEU_MAU | 14 | GA_BUOI | 73 | GA_HOAT_DONG | 32 |
+| GA_HOC_KY | 15 | GA_HONG | 15 | GA_KHAU_QUYET | 20 |
+| GA_KHUNG_BUOI | 6 | GA_KHUNG_TIET | 11 | GA_LUAT | 18 |
+| GA_PHAN_0 | 9 | GT_BAO_DAM | 3 | GT_CHONG | 12 |
+| GT_GOI | 5 | GT_KINH_TE | 7 | GT_LOI_BAT_BIEN | 7 |
+| GT_LUAT_GIA | 7 | GT_LUAT_KT | 4 | GT_NHAN_RONG | 3 |
+| GT_NHA_TRUONG | 4 | GT_PHAN_DOI | 12 | GT_PHEU | 5 |
+| GT_THONG_DIEP | 5 | HINH_THAI | 5 | HO_CHIEU_LUAT | 5 |
+| K45_DE_TAI | 101 | K45_DU_AN | 11 | K45_GIAO_AN_4 | 11 |
+| K45_GIAO_AN_5 | 11 | K45_KHAC_BIET | 8 | K45_KHAU_QUYET | 101 |
+| K45_LUAT | 16 | KHOA_NEN | 8 | KPI_HE | 7 |
 | LICH_NAM | 4 | LOP | 7 | LO_TRINH | 6 |
 | LUAT_QUYEN | 6 | LUU_BA_TANG | 3 | MACH_TU_VAN | 8 |
-| MA_HOA | 6 | MA_TRAN | 8 | MOI_TRUONG | 4 |
+| MA_HOA | 6 | MA_TRAN | 8 | MM_DOI_CHIEU | 45 |
+| MM_KE_CHUYEN | 7 | MM_KHOI_BAY | 7 | MM_LUAT | 15 |
+| MM_MA | 12 | MM_SAN_PHAM | 45 | MOI_TRUONG | 4 |
 | MS_CHANG | 3 | MS_KHUNG_SACH | 7 | MS_LOI_MO | 8 |
 | MS_LUAN_DIEM | 14 | MS_LUAT | 15 | MS_MO_THUC | 18 |
 | MS_RUI | 5 | MS_TRICH | 26 | MUC | 5 |
-| MUOI_BUOC | 10 | NAM_DAU | 4 | NGAY_90 | 7 |
+| MUOI_BUOC | 10 | NAM_DAU | 4 | NC_CHI_TIET | 7 |
+| NC_DAO_DUC | 13 | NC_HO_SO_SO | 13 | NC_LUAT | 16 |
+| NC_SAI_LAM | 10 | NC_THIET_KE | 8 | NGAY_90 | 7 |
 | NGHE_COACH | 6 | NGHI_LE | 7 | NGON_NGU | 12 |
 | NGUON | 10 | NGUYEN_LY | 7 | NGUYEN_TAC_KT | 7 |
 | NHIP | 7 | NHOM_GP | 11 | NQ_BAN_GIAO | 3 |
@@ -316,9 +351,10 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 | NQ_FAQ | 3 | NQ_GOI | 4 | NQ_HOC_PHAN | 5 |
 | NQ_HOP_DONG | 16 | NQ_KIEM_DINH | 6 | NQ_LANH_THO | 6 |
 | NQ_LUAT | 12 | NQ_PHI | 7 | NQ_TRAO | 8 |
-| NQ_TU_CHOI | 7 | PHAM_CHAT | 5 | QUYEN | 10 |
-| RUI_RO | 7 | SC_LUAT | 6 | SC_MON_NO | 53 |
-| SC_YEU_CAU | 13 | SE_90 | 3 | SE_CUM | 6 |
+| NQ_TU_CHOI | 7 | PHAM_CHAT | 5 | PHAN | 9 |
+| QUYEN | 10 | RUI_RO | 7 | SC_LUAT | 6 |
+| SC_MON_NO | 62 | SC_XUAT_XU | 35 | SC_XX_LUAT | 6 |
+| SC_YEU_CAU | 15 | SE_90 | 3 | SE_CUM | 6 |
 | SE_DO | 8 | SE_EEAT | 4 | SE_KHONG | 7 |
 | SE_KY_THUAT | 12 | SE_NGUYEN_TAC | 7 | SE_PHAN_HOI | 6 |
 | SE_PH_LUAT | 6 | SE_Y_DINH | 8 | SL_BO_SLIDE | 22 |
@@ -326,7 +362,7 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 | SL_QUAN_HE | 6 | SL_THONG_DIEP | 12 | SN_LUAT | 6 |
 | SN_NO | 6 | SN_TEP | 45 | SN_TRANG_THAI | 4 |
 | SO_TAY | 6 | SO_TAY_MT | 3 | T52_CHU_KY | 4 |
-| T52_TUAN | 52 | TANG_HT_UI | 13 | TC_24H | 6 |
+| T52_TUAN | 52 | TANG_HT_UI | 14 | TC_24H | 6 |
 | TC_BAN_DO | 8 | TC_BAO_VE | 10 | TC_CHI_SO | 8 |
 | TC_DUONG_DOC | 10 | TC_DU_LIEU | 6 | TC_FAQ | 6 |
 | TC_KHUNG_HOANG | 5 | TC_KIEM_DINH | 7 | TC_LOI_MAU | 6 |
@@ -345,29 +381,30 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 | TN_HANH_TRINH | 9 | TN_HIEN_VAT | 14 | TN_KHOANH_KHAC | 12 |
 | TN_LUAT_PH | 6 | TN_LUAT_PN | 6 | TN_NGHI | 6 |
 | TN_PHAN_NAN | 8 | TN_PHUC_HOI | 5 | TN_RA_DI | 6 |
-| TRU | 4 | TUAN | 5 | TU_DONG | 8 |
-| TV2_BUKATSU | 8 | TV2_BUKATSU_DOI_CHIEU | 10 | TV2_TRAI_AN_TOAN | 13 |
-| TV2_TRAI_HAU | 6 | TV2_TRAI_KHUNG | 7 | TV2_TRAI_LICH | 20 |
-| TV2_VIP_CHUAN | 11 | TV2_VIP_CHUONG_TRINH | 11 | TV2_VIP_QUYEN_LOI | 9 |
-| TV_CACH_DUNG | 6 | TV_MO_THUC | 12 | TV_NGUON | 5 |
-| TV_NGUYEN_TAC | 7 | TV_PHAM_CHAT | 5 | TV_Q1 | 8 |
-| TV_Q2 | 9 | TV_Q3 | 7 | TV_Q4 | 9 |
-| TV_Q5 | 7 | TV_Q6 | 5 | TV_QUYEN | 6 |
-| TY_ANH_XA_BAC | 6 | TY_ANH_XA_LUAT | 6 | TY_CLB_BAN | 12 |
-| TY_CLB_BUOI | 4 | TY_CLB_CAP | 10 | TY_CLB_NL | 9 |
-| TY_CLB_TUAN | 5 | TY_DINH_VI | 8 | TY_GD_5S | 5 |
-| TY_GD_90 | 4 | TY_GD_DANH_HIEU | 3 | TY_GD_LUAT | 5 |
-| TY_GD_NHAT_KY | 4 | TY_GIAI_DOAN | 15 | TY_KHOI_12 | 12 |
-| TY_KHOI_LUAT | 6 | TY_KHOI_NHOM | 5 | TY_KN_DE_TAI | 10 |
-| TY_KN_LUAT | 6 | TY_KN_NGHE | 6 | TY_KN_THIET_KE | 6 |
-| TY_LE | 12 | TY_LUAT_TUYEN | 7 | TY_NGUON | 14 |
-| TY_PIPELINE | 5 | TY_TUYEN | 5 | TY_XH_DU_AN | 4 |
-| TY_XH_LUAT | 6 | TY_XH_SU_KIEN | 6 | VAI | 17 |
-| VAI_NGOAI | 3 | VAI_NGOAI_NHOM | 3 | VAI_NHOM | 5 |
-| VH2_BAN12 | 12 | VH2_BIEU_MAU | 21 | VH2_CANH_BAO | 15 |
-| VH2_KPI | 17 | VH2_LUAT | 32 | VH2_PDCA | 4 |
-| VH2_RACI | 16 | VH2_SAU | 16 | VH2_SO_DO | 15 |
-| VH2_TRONG | 14 | VH2_TRUOC | 27 | WOW | 9 |
+| TRU | 4 | TS_LUAT | 6 | TS_MUC | 6 |
+| TUAN | 5 | TU_DONG | 8 | TV2_BUKATSU | 8 |
+| TV2_BUKATSU_DOI_CHIEU | 10 | TV2_TRAI_AN_TOAN | 13 | TV2_TRAI_HAU | 6 |
+| TV2_TRAI_KHUNG | 7 | TV2_TRAI_LICH | 20 | TV2_VIP_CHUAN | 11 |
+| TV2_VIP_CHUONG_TRINH | 11 | TV2_VIP_QUYEN_LOI | 9 | TV_CACH_DUNG | 6 |
+| TV_MO_THUC | 12 | TV_NGUON | 5 | TV_NGUYEN_TAC | 7 |
+| TV_PHAM_CHAT | 5 | TV_Q1 | 8 | TV_Q2 | 9 |
+| TV_Q3 | 7 | TV_Q4 | 9 | TV_Q5 | 7 |
+| TV_Q6 | 5 | TV_QUYEN | 6 | TY_ANH_XA_BAC | 6 |
+| TY_ANH_XA_LUAT | 6 | TY_CLB_BAN | 12 | TY_CLB_BUOI | 4 |
+| TY_CLB_CAP | 10 | TY_CLB_NL | 9 | TY_CLB_TUAN | 5 |
+| TY_DINH_VI | 8 | TY_GD_5S | 5 | TY_GD_90 | 4 |
+| TY_GD_DANH_HIEU | 3 | TY_GD_LUAT | 5 | TY_GD_NHAT_KY | 4 |
+| TY_GIAI_DOAN | 15 | TY_KHOI_12 | 12 | TY_KHOI_LUAT | 6 |
+| TY_KHOI_NHOM | 5 | TY_KN_DE_TAI | 10 | TY_KN_LUAT | 6 |
+| TY_KN_NGHE | 6 | TY_KN_THIET_KE | 6 | TY_LE | 12 |
+| TY_LUAT_TUYEN | 7 | TY_NGUON | 14 | TY_PIPELINE | 5 |
+| TY_TUYEN | 5 | TY_XH_DU_AN | 4 | TY_XH_LUAT | 6 |
+| TY_XH_SU_KIEN | 6 | VAI | 17 | VAI_NGOAI | 3 |
+| VAI_NGOAI_NHOM | 3 | VAI_NHOM | 5 | VH2_BAN12 | 12 |
+| VH2_BIEU_MAU | 21 | VH2_CANH_BAO | 15 | VH2_KPI | 17 |
+| VH2_LUAT | 32 | VH2_PDCA | 4 | VH2_RACI | 16 |
+| VH2_SAU | 16 | VH2_SO_DO | 15 | VH2_TRONG | 14 |
+| VH2_TRUOC | 27 | WOW | 9 |  |  |
 
 ---
 
@@ -464,6 +501,8 @@ theo yêu cầu cụ thể của chủ sở hữu.
 | Y11 | Tối ưu để tìm kiếm chất lượng lên đầu Google theo hệ giá trị uy tín và ý định người tìm, phản hồi năm sao | seo-nguyen-tac · seo-y-dinh · seo-eeat · seo-ky-thuat · seo-phan-hoi · seo-do · seo-90 |
 | Y12 | Biên soạn đầy đủ kho, không thiếu bất cứ yêu cầu nào, độ chất chuyên đề tốt nhất so với thị trường | clb-chu-ky · clb-52-tuan · so-cai-yc · so-cai-no · cde-nam-nhom · cde-ma-hoa · cde-tai-nang · cde-khung · cde-giao-an · cde-luat · cd-muoi-cap · cd-tram-ct · cd-nang-luc · cd-chuan-ra · cd-sop · cd-quy-chuan · ga-khung · ga-khau-quyet · ga-buoi · ga-hoat-dong · ga-hoc-ky |
 | Y13 | Nguồn tài liệu, quy trình, phác đồ, nội dung và tài nguyên phải đủ chuẩn, không sơ sài — hoàn thiện theo đúng định hướng đã đặt ra | vh-so-do · vh-truoc-trong-sau · vh-ban12 · vh-raci-kpi · vh-canh-bao · vh-bieu-mau · ms-loi-mo · ms-luan-diem · ms-ba-chang · ms-mo-thuc · ms-rui-ro · ms-khung-sach · tr-bay-ngay · tr-lich-hau · tr-an-toan · tr-vip · tr-bukatsu · gv-anh-xa-bac · so-nguon · so-nguon-no · da-cau-truc · da-phap-ly · da-to-chuc · da-kpi · da-ke-hoach · da-nghien-cuu · sl-bo-slide · sl-kich-ban · sl-thong-diep · sl-buoi-hop |
+| Y14 | Sửa giao diện Web App thành tám mục: Tổng quan · Club · Lộ trình cá nhân · Đào tạo 12 khối · Thành tựu · Kỷ nguyên vươn mình · Hoạt động và cộng đồng · Mật Mã Gen Việt | mm-san-pham · mm-ma · mm-doi-chieu · mm-ke-chuyen · thu-vien · mo-thuc-viet |
+| Y15 | Có hệ thống phân quyền khi đăng nhập, có bảng điều khiển, và có kho tổng tra soát toàn hệ chỉ Super Admin và Admin xem được | dn-cong · dn-may-chu · bang-dieu-khien · tra-soat · phan-quyen · vai-tro · pham-vi |
 
 ---
 
@@ -483,7 +522,7 @@ nó chứng minh tác phẩm **không phải một tập tài liệu rời đư�
 | Cổng quyền | Vào thẳng bằng đường dẫn một mục ngoài quyền phải ra thẻ khoá | Chặn phát hành |
 | Tương phản màu | Mọi mã màu chữ đạt ngưỡng WCAG AA 4.5:1 trên cả hai chế độ | Chặn phát hành |
 
-Mã bản dựng `e5c6b2fe2325` ngày 2026-08-30 là bản đã qua đủ tám lớp trên.
+Mã bản dựng `81d4622e08f1` ngày 2026-08-30 là bản đã qua đủ tám lớp trên.
 
 ---
 

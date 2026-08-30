@@ -99,6 +99,18 @@
             'TY_ANH_XA_BAC', 'TY_ANH_XA_LUAT', 'SN_TEP', 'SN_NO', 'SN_LUAT',
             'DA_CAU_TRUC', 'DA_CAN_CU', 'DA_RACI', 'DA_KPI', 'DA_KE_HOACH_12', 'DA_NGHIEN_CUU',
             'SL_BO_SLIDE', 'SL_KICH_BAN', 'SL_THONG_DIEP', 'SL_LUAT'] }
+,
+
+    { ma: 'Y14', y: 'Sửa giao diện Web App thành tám mục: Tổng quan · Club · Lộ trình cá nhân · Đào tạo 12 khối · Thành tựu · Kỷ nguyên vươn mình · Hoạt động và cộng đồng · Mật Mã Gen Việt',
+      man: ['mm-san-pham', 'mm-ma', 'mm-doi-chieu', 'mm-ke-chuyen',
+            'thu-vien', 'mo-thuc-viet'],
+      kho: ['PHAN', 'MM_SAN_PHAM', 'MM_MA', 'MM_DOI_CHIEU', 'MM_LUAT', 'TV_QUYEN'] },
+
+    { ma: 'Y15', y: 'Có hệ thống phân quyền khi đăng nhập, có bảng điều khiển, và có kho tổng tra soát toàn hệ chỉ Super Admin và Admin xem được',
+      man: ['dn-cong', 'dn-may-chu', 'bang-dieu-khien', 'tra-soat',
+            'phan-quyen', 'vai-tro', 'pham-vi'],
+      kho: ['DN_BA_LOP', 'DN_TAI_KHOAN', 'DN_LUAT', 'DN_MAY_CHU',
+            'TS_MUC', 'TS_LUAT', 'QUYEN_MAX', 'TANG_HT_UI'] }
   ];
 
   /* ── 2 · Món nợ số ────────────────────────────────────────
@@ -129,7 +141,7 @@
     { t: 'Mười hai hạng mục kỹ thuật', so: 12, kho: 'SE_KY_THUAT' },
     { t: 'Tám chỉ số phải đo', so: 8, kho: 'SE_DO' },
     { t: 'Bảy nguyên lý bất biến', so: 7, kho: 'NGUYEN_LY' },
-    { t: 'Mười ba dòng sổ yêu cầu', so: 13, kho: 'SC_YEU_CAU' },
+    { t: 'Mười lăm dòng sổ yêu cầu', so: 15, kho: 'SC_YEU_CAU' },
 
     /* Món nợ trả trong đợt khai thác sáu nguồn gốc song song */
     { t: 'Một trăm chương trình huấn luyện của hệ mười cấp độ', so: 100, kho: 'CD10_CT' },
@@ -155,6 +167,15 @@
     { t: 'Bốn trạng thái của một dòng sổ nguồn', so: 4, kho: 'SN_TRANG_THAI' },
     { t: 'Sáu luật giữ sổ nguồn', so: 6, kho: 'SN_LUAT' },
     { t: 'Sáu món nợ nguồn còn lại', so: 6, kho: 'SN_NO' },
+    { t: 'Chín phần của điều hướng', so: 9, kho: 'PHAN' },
+    { t: 'Bốn lớp kiểm soát truy cập', so: 4, kho: 'DN_BA_LOP' },
+    { t: 'Sáu luật cổng đăng nhập', so: 6, kho: 'DN_LUAT' },
+    { t: 'Bảy hạng mục hợp đồng máy chủ', so: 7, kho: 'DN_MAY_CHU' },
+    { t: 'Sáu mục của kho tổng tra soát', so: 6, kho: 'TS_MUC' },
+    { t: 'Sáu luật giữ kho tra soát', so: 6, kho: 'TS_LUAT' },
+    { t: 'Bốn mươi lăm sản phẩm để đời', so: 45, kho: 'MM_SAN_PHAM' },
+    { t: 'Mười hai mật mã lặp lại', so: 12, kho: 'MM_MA' },
+    { t: 'Mười lăm luật dùng nhân vật lịch sử', so: 15, kho: 'MM_LUAT' },
     { t: 'Mười bốn cơ chế tạo chiều sâu học từ mô hình chi hội', so: 14, kho: 'BN_TANG_SAU' },
     { t: 'Hai mươi trục đối chiếu', so: 20, kho: 'BN_DOI_CHIEU' },
     { t: 'Mười hai thứ không được bê sang môi trường học đường', so: 12, kho: 'BN_KHONG_BE' },
@@ -221,6 +242,10 @@
     ['du-lieu-khoi45.js', 'BIÊN SOẠN', 'Một trăm chuyên đề khối 4 và khối 5 — kho gốc chưa có phần này, dựng theo đúng khung khối 1–3', 'chờ Hội đồng Chuyên môn duyệt'],
     ['du-lieu-antoan.js', 'BIÊN SOẠN', 'Chương an toàn trại — tài liệu trại gốc không có chương này, mà chuẩn bảo vệ trẻ em bắt buộc phải có', 'chờ Hội đồng Chuyên môn duyệt, và cần cán bộ y tế cùng luật sư rà lại'],
     ['du-lieu-nghiencuu.js', 'BIÊN SOẠN', 'Thiết kế nghiên cứu cho bảy đề tài GV-R còn thiếu giả thuyết', 'chờ Hội đồng Chuyên môn duyệt'],
+
+    ['du-lieu-dangnhap.js', 'DỰNG', 'Cổng đăng nhập, bốn lớp kiểm soát, hợp đồng máy chủ, kho tổng tra soát', 'đã chốt'],
+
+    ['du-lieu-matma.js', 'BIÊN SOẠN', 'Bốn mươi lăm sản phẩm để đời và mười hai mật mã rút xuyên các chân dung — lớp này không có trong kho gốc', 'chờ Hội đồng Chuyên môn duyệt, và cần người có chuyên môn sử học rà lại niên đại'],
 
     ['du-lieu-bni.js', 'THAM CHIẾU', 'Mô hình chi hội — tài liệu của BNI Global, LLC. Học cơ chế, không dùng lại thương hiệu hay văn bản', 'không kê khai là tác phẩm của Học viện']
   ];

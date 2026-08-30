@@ -65,6 +65,7 @@ GV.VAI = [
 /* ══════════ QUYỀN → BẬC TỐI ĐA ĐƯỢC DÙNG ══════════
    Đọc một dòng: "vai có lv nhỏ hơn hoặc bằng số này thì mở được".  */
 GV.QUYEN_MAX = {
+  qt_he_thong:  2,   /* kho tổng tra soát: chỉ R01 Super Admin và R02 Admin hệ thống */
   qt_trang:     2,   /* quản trị trang: bảng phân quyền, tài khoản */
   tai_chinh:    3,   /* chỉ R01–R03 nhìn thấy tiền */
   dh_toan_he:   4,   /* điều hành toàn hệ, rủi ro, triển khai, tuyển người */
@@ -82,6 +83,7 @@ GV.QUYEN_MAX = {
 
 /* ══════════ TẦNG HIỂN THỊ — "ai thấy gì" nói bằng lời ══════════ */
 GV.TANG_HT_UI = [
+  { q: 'qt_he_thong',  t: 'Điều hành hệ thống',    mo: 'Bảng điều khiển và kho tổng tra soát. Chỉ Super Admin và Admin hệ thống.' },
   { q: 'chung',        t: 'Chung cho mọi tài khoản', mo: 'Kiến trúc, nguyên lý, sáu bậc, bốn môi trường, an toàn trẻ em.' },
   { q: 'kh_hanh_trinh',t: 'Hành trình của học viên', mo: 'Hộ chiếu, khung năng lực, lộ trình bậc, nhịp chi hội. Đại sứ không thấy.' },
   { q: 'kh_gia_dinh',  t: 'Phần gia đình',           mo: 'Sổ tay vai, biểu mẫu, bảng ngôn ngữ, thiết kế trại. Học viên và đại sứ không thấy.' },

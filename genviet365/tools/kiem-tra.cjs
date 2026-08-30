@@ -24,7 +24,7 @@ var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
            'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
-           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-capdo.js', 'du-lieu-master.js', 'du-lieu-chuyende.js', 'du-lieu-vanhanh2.js', 'du-lieu-trai-vip.js', 'du-lieu-giaoan.js', 'du-lieu-socai.js', 'du-lieu-songuon.js', 'du-lieu-deana.js', 'du-lieu-slide.js', 'du-lieu-bni.js', 'du-lieu-antoan.js', 'du-lieu-nghiencuu.js', 'du-lieu-khoi45.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
+           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-capdo.js', 'du-lieu-master.js', 'du-lieu-chuyende.js', 'du-lieu-vanhanh2.js', 'du-lieu-trai-vip.js', 'du-lieu-giaoan.js', 'du-lieu-socai.js', 'du-lieu-songuon.js', 'du-lieu-deana.js', 'du-lieu-slide.js', 'du-lieu-bni.js', 'du-lieu-antoan.js', 'du-lieu-nghiencuu.js', 'du-lieu-khoi45.js', 'du-lieu-dangnhap.js', 'du-lieu-matma.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js', 'nen/dau-hieu.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = [];
 
@@ -718,7 +718,41 @@ function lopChay(xong) {
     return b.newPage({ viewport: { width: 1400, height: 1000 } }).then(function (p) {
       var loiJs = [];
       p.on('pageerror', function (er) { loiJs.push(er.message); });
-      return p.goto(duong, { waitUntil: 'domcontentloaded' }).then(function () {
+      /* 0. CỔNG VÀO — người vào lần đầu phải gặp cổng, không phải
+            gặp thẳng nội dung. Kiểm điều đó TRƯỚC, rồi mới đặt cờ
+            đã-vào để các lớp sau chạy như một người dùng quen. */
+      return p.goto(duong, { waitUntil: 'domcontentloaded' })
+        .then(function () { return p.waitForTimeout(120); })
+        .then(function () {
+          return p.evaluate(function () {
+            var g = document.getElementById('ung-dung');
+            return {
+              coCong: !!document.querySelector('.cong'),
+              soVai: document.querySelectorAll('.cong-vai').length,
+              coCanhBao: /không phải/.test((document.querySelector('.cong-that') || {}).textContent || ''),
+              lop: g ? g.className : ''
+            };
+          });
+        }).then(function (c) {
+          if (!c.coCong) L('Cổng vào: người vào lần đầu không gặp cổng mà thấy thẳng nội dung');
+          if (c.soVai < 5) L('Cổng vào: chỉ dựng ra ' + c.soVai + ' vai để chọn');
+          if (!c.coCanhBao)
+            L('Cổng vào: thiếu câu nói rõ cổng này KHÔNG phải hàng rào an ninh — ' +
+              'bỏ câu ấy là để người dùng tin nhầm rồi đưa dữ liệu thật vào');
+          console.log('CỔNG VÀO  · hiện ra ở lần vào đầu · ' + c.soVai +
+            ' vai để chọn · có nói rõ đây không phải hàng rào an ninh');
+        })
+        .then(function () {
+          return p.addInitScript(function () {
+            try {
+              localStorage.setItem('genviet365.vao', '1');
+              localStorage.setItem('genviet365.vai', 'R01');
+              localStorage.setItem('genviet365.bac', 'B6');
+            } catch (x) {}
+          });
+        })
+        .then(function () { return p.goto(duong, { waitUntil: 'domcontentloaded' }); })
+        .then(function () {
         /* 1. mọi màn dựng được, với vai Super Admin */
         return p.evaluate(async function () {
           var G = window.GV, xau = [];

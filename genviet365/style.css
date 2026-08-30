@@ -115,7 +115,7 @@ a{color:var(--son)}
          color:var(--muc2); background:var(--the2); border:1px solid var(--vien);
          border-radius:7px; cursor:pointer}
 .muc-nut:hover{background:var(--the); color:var(--muc)}
-.muc-nut:focus-visible{outline:2px solid var(--lam); outline-offset:2px}
+.muc-nut:focus-visible{outline:2px solid var(--son); outline-offset:2px}
 .muc .n-dau .no{font-family:var(--ma); font-size:10px; color:var(--c)}
 .muc .n-dau .t{font-size:11.5px; font-weight:700; letter-spacing:.09em; color:var(--c)}
 .muc .n-dau .s{grid-column:2; font-size:11px; color:var(--muc3); font-weight:400}
@@ -1006,3 +1006,39 @@ ul.vai li span{color:var(--muc2); font-size:12.5px}
   padding:26px; border:1px solid var(--vien); border-radius:var(--r); background:var(--the)}
 .an-cap .vach{width:1px; height:70px; background:var(--vien2)}
 .an-cap .van{margin-top:10px}
+
+
+/* ── CỔNG VÀO ─────────────────────────────────────
+   Không phải hàng rào an ninh — xem màn dn-cong. Cổng nhận diện
+   người đọc, đặt vai mặc định và nhắc trách nhiệm. */
+.ung-cong{display:block; min-height:100vh; background:var(--nen); padding:32px 16px 64px}
+.cong-hop{max-width:880px; margin:0 auto}
+.cong-dau{display:flex; gap:16px; align-items:center; padding:8px 0 22px}
+.cong-dau h1{margin:0; font-size:26px; letter-spacing:.06em}
+.cong-phu{margin:3px 0 0; font-size:13px; color:var(--muc3)}
+.cong-dh{flex:none}
+.cong-ten{display:grid; gap:6px; margin:0 0 20px}
+.cong-ten span{font-size:12px; letter-spacing:.06em; color:var(--muc3)}
+.cong-ten input{font:inherit; font-size:15px; padding:11px 14px; border-radius:9px;
+  border:1px solid var(--vien); background:var(--the); color:var(--muc)}
+.cong-ten input:focus-visible{outline:2px solid var(--son); outline-offset:1px}
+.cong-hoi{margin:0 0 12px; font-size:15px; font-weight:600; color:var(--muc)}
+.cong-ds{display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr)); gap:10px}
+.cong-vai{display:grid; gap:3px; text-align:left; font:inherit; cursor:pointer;
+  padding:12px 14px; border-radius:10px; border:1px solid var(--vien);
+  border-left:3px solid var(--c); background:var(--the); color:var(--muc)}
+.cong-vai:hover{background:var(--the2); box-shadow:var(--bong)}
+.cong-vai:focus-visible{outline:2px solid var(--c); outline-offset:2px}
+.cv-ma{font-family:var(--ma); font-size:10px; color:var(--c); letter-spacing:.08em}
+.cv-t{font-size:15px; font-weight:700}
+.cv-mo{font-size:12.5px; color:var(--muc2)}
+.cv-ai{font-size:11.5px; color:var(--muc3); font-style:italic}
+.cong-that{margin:24px 0 0; padding:14px 16px; border-radius:10px;
+  border:1px solid var(--vien); border-left:3px solid var(--do);
+  background:var(--the2); font-size:13px; line-height:1.6; color:var(--muc2)}
+.cong-that b{color:var(--muc)}
+.ra-cong{font:inherit; font-size:11.5px; padding:6px 11px; border-radius:8px;
+  border:1px solid var(--vien); background:var(--the2); color:var(--muc2); cursor:pointer}
+.ra-cong:hover{background:var(--the); color:var(--muc)}
+.ra-cong:focus-visible{outline:2px solid var(--son); outline-offset:2px}
+@media (max-width: 860px){ .ra-cong{display:none} }
