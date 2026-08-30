@@ -3923,6 +3923,52 @@ const { chromium } = require(PW);
     bao(thr.giuGon >= thr.tong,
       'bản tóm cũ của tình huống được giữ lại ở ttGon', thr.giuGon + '/' + thr.tong);
 
+    /* ══ 42 MÔ THỨC PHẢI CÓ RANH GIỚI SỬ DỤNG ══
+       Đây là bộ công cụ nghề nặng nhất của Học viện, và trước v9.1
+       không cái nào ghi khi nào KHÔNG được dùng.
+
+       Chỗ hở thật: MT-05 là kỹ thuật "từ bảng tính năng sang bảng lợi
+       ích", dùng với một phụ huynh đang quyết chuyện học của con mình.
+       Không ranh giới thì nó thành công cụ dẫn dắt — đúng thứ luật
+       LV-01 của Học viện cấm. */
+    const mtr = await p.evaluate(() => {
+      const G = window.G, ds = G.MOTHUC || [], R = G.MT_RANH || {};
+      const co = ds.filter(x => R[x.id]);
+      const thieu = ds.filter(x => !R[x.id]).map(x => x.id);
+      const la = Object.keys(R).filter(id => !ds.some(x => x.id === id));
+      const mong = [];
+      co.forEach(x => {
+        const r = R[x.id];
+        if (!r.khiKhong || r.khiKhong.length < 120) mong.push(x.id + '.khiKhong');
+        if (!(r.khong || []).length || r.khong.some(k => k.length < 40)) mong.push(x.id + '.khong');
+        if (!r.hong || r.hong.length < 80) mong.push(x.id + '.hong');
+        if (!r.ai || r.ai.length < 60) mong.push(x.id + '.ai');
+      });
+      const kk = co.map(x => R[x.id].khiKhong);
+      return { tong: ds.length, co: co.length, thieu, la, mong,
+        trung: kk.length - new Set(kk).size,
+        luat: (G.MT_RANH_LUAT || []).length };
+    });
+    bao(mtr.co >= mtr.tong, 'mô thức nào cũng có ranh giới sử dụng — công cụ không ranh giới là công cụ dẫn dắt',
+      mtr.co + '/' + mtr.tong + (mtr.thieu.length ? ' · thiếu: ' + mtr.thieu.slice(0, 5).join(' ') : ''));
+    bao(!mtr.la.length, 'ranh giới không khai mô thức không tồn tại', mtr.la.join(' ') || 'mã khớp hết');
+    bao(!mtr.mong.length, 'ranh giới nào cũng đủ bốn phần: khi nào không dùng, không làm gì, dấu hiệu dùng sai, ai không được dùng',
+      mtr.mong.length ? mtr.mong.slice(0, 4).join(' ') : '4 phần × ' + mtr.co + ' mô thức');
+    bao(!mtr.trung, 'không hai mô thức nào chung một ranh giới',
+      mtr.trung ? mtr.trung + ' ranh giới bị dùng lại' : mtr.co + ' ranh giới khác nhau');
+    bao(mtr.luat >= 5, 'có luật chung khi dùng bất kỳ mô thức nào', mtr.luat + ' luật');
+
+    /* Ranh giới phải HIỆN RA trên cửa sổ mô thức, không nằm im trong kho */
+    const mtHien = await p.evaluate(() => {
+      const G = window.G; let o = '';
+      const giu = G.U.modal; G.U.modal = x => { o = x; };
+      try { G.moThucModal((G.MOTHUC || [])[0].id); } catch (e) { o = ''; }
+      G.U.modal = giu;
+      return { dai: o.length, co: /KHI NÀO KHÔNG DÙNG/.test(o) && /TUYỆT ĐỐI KHÔNG LÀM/.test(o) };
+    });
+    bao(mtHien.co, 'ranh giới hiện ngay trên cửa sổ mô thức, không giấu xuống cuối — ai đọc cách dùng phải đọc luôn ranh giới',
+      mtHien.dai.toLocaleString('vi-VN') + ' ký tự');
+
     /* ══ GÓI TẦNG CỦA KHÁCH HÀNG KHÔNG ĐƯỢC MANG TÀI SẢN NGHỀ ══
        Kịch bản chuyên môn từng nằm trong gói tầng, mỗi tầng 200 cái.
        Một phụ huynh Tầng 3 nhận về máy mình 200 kịch bản coaching:

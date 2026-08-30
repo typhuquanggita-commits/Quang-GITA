@@ -93,6 +93,8 @@ const NGHE = [
      phác đồ/tình huống với kịch bản và chuyện, quy trình riêng từng nhóm,
      và bộ tài liệu phát cho gia đình. Tất cả là tài sản nghề — ở gói NGHỀ. */
   'PD_SAU', 'TH_SAU', 'NOI_KET', 'QT_NHOM', 'TL_GIADINH',
+  /* Ranh giới sử dụng của 42 mô thức — khi nào KHÔNG dùng */
+  'MT_RANH', 'MT_RANH_LUAT',
   /* Kịch bản chuyên môn — xem lý do ở chỗ dựng gói tầng bên dưới */
   'KICHBAN',
   /* Chuẩn hợp đồng theo tuyến: nó liệt kê mọi điều khoản Học viện tự

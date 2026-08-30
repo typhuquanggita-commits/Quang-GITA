@@ -193,6 +193,35 @@ G.moThucModal = function(id){
   if(m.keywords && m.keywords.length) o += '<div class="mt2"><div class="tiny up muted mb">TỪ KHOÁ</div>'+
     '<div class="row wrap" style="gap:5px">'+m.keywords.map(function(k){return U.chip(k);}).join('')+'</div></div>';
   if(m.source) o += '<p class="tiny muted mt2">Nguồn: '+h(m.source)+'</p>';
+
+  /* ══ RANH GIỚI SỬ DỤNG ══
+     42 mô thức là bộ công cụ nghề nặng nhất của Học viện, và trước bản
+     này không cái nào ghi khi nào KHÔNG được dùng.
+
+     Đó là chỗ hở thật, không phải chuyện hình thức. MT-05 là kỹ thuật
+     "từ bảng tính năng sang bảng lợi ích" — dùng với một phụ huynh đang
+     quyết chuyện học của con mình. Không có ranh giới thì nó thành công
+     cụ dẫn dắt, đúng thứ luật Học viện cấm.
+
+     Khối này đặt NGAY DƯỚI phần "dùng khi nào", không giấu xuống cuối:
+     ai đọc cách dùng thì phải đọc luôn ranh giới. */
+  var r = (G.MT_RANH || {})[m.id];
+  if(r){
+    o += '<div class="card pad-sm mt2" style="border-color:var(--gita-do)">'+
+      '<div class="tiny up mb" style="color:var(--gita-do-ink)">KHI NÀO KHÔNG DÙNG</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(r.khiKhong)+'</p></div>';
+    if((r.khong||[]).length)
+      o += '<div class="card pad-sm mt2" style="border-color:var(--gita-do)">'+
+        '<div class="tiny up mb" style="color:var(--gita-do-ink)">TUYỆT ĐỐI KHÔNG LÀM</div>'+
+        U.list(r.khong, 'var(--gita-do)')+'</div>';
+    if(r.hong)
+      o += '<div class="card pad-sm mt2" style="border-color:var(--alert)">'+
+        '<div class="tiny up mb" style="color:var(--alert)">DẤU HIỆU ĐANG DÙNG SAI</div>'+
+        '<p class="sm" style="line-height:1.7">'+h(r.hong)+'</p></div>';
+    if(r.ai)
+      o += '<div class="card pad-sm mt2"><div class="tiny up mb muted">AI KHÔNG ĐƯỢC DÙNG</div>'+
+        '<p class="sm" style="line-height:1.7">'+h(r.ai)+'</p></div>';
+  }
   U.modal(o);
 };
 
