@@ -159,10 +159,32 @@ Chạy lại bất cứ lúc nào bằng `python3 tools/kiem_dinh.py` để có 
 
 ---
 
-## 9. Liên kết
+## 9. Bảng trạng thái trình bày được
+
+Cùng số liệu, nhưng ở dạng gửi được cho đối tác, hội đồng chuyên môn hoặc cơ quan quản lý:
+
+```bash
+python3 tools/dung_bang_trang_thai.py   # → brand/trang/bang-trang-thai-leader-boom.html
+```
+
+Trang này dùng đúng bảng màu và bộ chữ ở [`nhan-dien-thuong-hieu/03-mau-sac.md`](nhan-dien-thuong-hieu/03-mau-sac.md)
+và [`nhan-dien-thuong-hieu/04-typography.md`](nhan-dien-thuong-hieu/04-typography.md) — nó là ấn phẩm
+mang nhận diện, nên chịu cùng chuẩn với áo, backdrop hay biển hiệu.
+
+Trang gồm bốn phần: kết quả chín nhóm kiểm · **trục 455 ngày** vẽ theo tỉ lệ ngày thật với bảy cổng
+kiểm soát · chín bộ tài liệu kèm số đo · sáu bất biến an toàn · và tám khoảng trống còn tồn.
+
+> **Trục vẽ theo tỉ lệ đã cho thấy một điều khó nói bằng lời:** bảy ngày trại — phần dễ bán nhất,
+> dễ chụp ảnh nhất — chiếm **1,5%** quãng cam kết 455 ngày. Đó là dải hẹp nhất trên trục. Một
+> biểu đồ không theo tỉ lệ sẽ giấu mất điều này.
+
+---
+
+## 10. Liên kết
 
 - Chỉ mục toàn hệ: [`README.md`](README.md)
 - Chuẩn giọng viết chi tiết: [`nhan-dien-thuong-hieu/08-chuan-bien-tap.md`](nhan-dien-thuong-hieu/08-chuan-bien-tap.md)
 - Quy trình chốt phiên bản: [`ho-so-bao-ho/07-chot-phien-ban.md`](ho-so-bao-ho/07-chot-phien-ban.md)
 - Chuẩn trình bày tài liệu: [`ho-so-bao-ho/06-chuan-trinh-bay-tai-lieu.md`](ho-so-bao-ho/06-chuan-trinh-bay-tai-lieu.md)
 - Mã nguồn bộ kiểm: [`../tools/kiem_dinh.py`](../tools/kiem_dinh.py)
+- Trang trạng thái: [`../tools/dung_bang_trang_thai.py`](../tools/dung_bang_trang_thai.py)
