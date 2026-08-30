@@ -791,3 +791,358 @@ khi đã xảy ra** — mưa bão thì không ra khỏi trại được, mất �
 trong 12 giờ → Y tế báo Trưởng khoá và Giám đốc **ngay**, giữ nguyên mẫu lưu thức ăn 24 giờ,
 lập danh sách người có triệu chứng theo giờ khởi phát và bữa ăn gần nhất, báo y tế địa phương.
 **Không tự công bố nguyên nhân** khi chưa có kết luận chuyên môn — ghi biểu hiện, không ghi chẩn đoán.
+
+---
+
+## PHẦN C · DI CHUYỂN
+
+---
+
+## 14. Quy trình đưa đón đầu và cuối khoá
+
+Di chuyển là **khoảng thời gian rủi ro cao nhất của cả khoá**: học viên rời khuôn viên có kiểm soát
+để vào môi trường giao thông. Bàn giao cuối khoá là **điểm dễ sai sót nhất** — đông người, cảm xúc cao,
+đội ngũ đã mệt sau 7 ngày.
+
+### 14.1 Đón đầu khoá (D1)
+
+| Giờ | Việc | Người | Kiểm chứng |
+|---|---|---|---|
+| 05:30 | Dựng điểm tập kết: bàn đón theo team, biển số xe, khu để hành lý, bàn y tế, bàn gửi tài sản | Hậu cần | Ảnh chụp hiện trạng |
+| 05:45 | Nhân sự nhận danh sách in: danh sách team · danh sách phân xe · **danh sách người đón trả `BM-01`** · danh sách dị ứng · danh sách thuốc | ACT trưởng | Mỗi ACT ký nhận bộ danh sách |
+| 06:00 | Gia đình đưa học viên tới. **Đón theo bàn team**, không dồn một cửa | ACT | |
+| 06:00–06:15 | Ba bàn xử lý song song: (1) đối chiếu danh sách + phát thẻ tên + vòng tay; (2) **Y tế nhận thuốc, xác nhận dị ứng, hỏi tình trạng sức khoẻ 24 giờ qua**; (3) thu thiết bị và tài sản, ký phiếu | ACT · Y tế · Trưởng khoá | Ba chữ ký trên phiếu tiếp nhận |
+| 06:15 | **Điểm danh lần 1** tại điểm tập kết, đối chiếu tổng danh sách | ACT → Trưởng khoá | Số khớp mới chia xe |
+| 06:30 | Chia xe theo danh sách đã in; ACT phụ trách xe cầm bảng số xe đứng cố định | Điều phối di chuyển | |
+| 06:45 | **Điểm danh lần 2 trên xe** — đếm đầu người, đối chiếu danh sách xe | ACT trên xe → Trưởng khoá | Báo qua bộ đàm từng xe |
+| 07:00 | Xuất phát. Nhắn nhóm phụ huynh: đã xuất phát, dự kiến đến lúc mấy giờ | Trưởng khoá | Ảnh chụp tin nhắn |
+| 08:00 | Đến nơi. **Điểm danh lần 3 TRƯỚC KHI mở cửa xuống** | ACT trên xe | |
+| 08:10 | Xuống theo hàng, tập kết hành lý. **Điểm danh lần 4** | ACT | |
+| 08:15 | Trưởng khoá xác nhận tổng khớp → báo nhóm phụ huynh: đoàn đã đến an toàn | Trưởng khoá | |
+
+**Học viên gia đình tự đưa thẳng tới trại:** phải đăng ký trước, tới trong khung giờ quy định,
+làm đủ ba bàn thủ tục như trên, và **được cộng vào bảng tổng ngay khi tới** — không đợi tới điểm danh sau.
+
+### 14.2 Trả cuối khoá (D7)
+
+| Giờ | Việc | Người |
+|---|---|---|
+| 16:00 | Trả thiết bị và tài sản gửi giữ theo §11.4 | Trưởng khoá + ACT |
+| 16:30 | Thu gọn hành lý, tập kết theo team. **ACT kiểm phòng lần cuối** (gầm giường, sau cửa, dây phơi, nhà tắm) | ACT |
+| 16:45 | Phân luồng: **Nhóm A** — gia đình đón tại trại · **Nhóm B** — đi xe về Học viện | Trưởng khoá |
+| 17:00 | Nhóm A bàn giao tại bàn có biển "BÀN GIAO", ký **Sổ bàn giao học viên** | ACT + Trưởng khoá |
+| 17:00 | Nhóm B: điểm danh → lên xe → điểm danh trên xe → xuất phát | Điều phối di chuyển |
+| 18:00 | Về tới Học viện. Điểm danh. **Học viên chờ trong khu vực có người lớn trông**, không đứng ngoài cổng | ACT |
+| 18:00–19:00 | Gia đình đón, ký Sổ bàn giao | ACT + Trưởng khoá |
+| 19:00 | **Đối chiếu cổng cuối**: tổng sĩ số = nhóm A đã bàn giao + nhóm B đã bàn giao. Chỉ đóng khoá khi khớp tuyệt đối | Trưởng khoá |
+
+### 14.3 Xác minh người đón — ba lớp, không có ngoại lệ
+
+| Lớp | Việc | Ai làm |
+|---|---|---|
+| **1 · Có tên** | Đối chiếu tên người đón với **danh sách người đón trả trong `BM-01`**. **Không có tên → không giao.** | ACT tại bàn bàn giao |
+| **2 · Có giấy tờ** | Kiểm CCCD/giấy tờ tuỳ thân, đối chiếu **họ tên khớp từng chữ** với danh sách | ACT |
+| **3 · Có xác nhận** | Nếu người đón **không phải cha/mẹ đã đăng ký**: gọi điện trực tiếp cho phụ huynh đã đăng ký, **gọi từ số của khoá tới số trong hồ sơ** (không gọi số do người đón đọc), xác nhận đúng tên và ghi vào sổ: giờ gọi – người nghe – nội dung xác nhận | **Trưởng khoá** |
+
+**Bốn tình huống và cách xử lý:**
+
+| Tình huống | Xử lý |
+|---|---|
+| Người đón không có trong danh sách, phụ huynh gọi được | Trưởng khoá gọi tới **số trong hồ sơ**, xác nhận, ghi sổ, chụp giấy tờ người đón, **rồi mới giao** |
+| Người đón không có trong danh sách, **không gọi được phụ huynh** | **Không giao.** Học viên ở lại cùng ACT, tiếp tục gọi các số trong hồ sơ theo thứ tự. Báo Trưởng khoá và Giám đốc |
+| Học viên nói "con biết chú này mà" | **Không phải căn cứ.** Vẫn phải đủ ba lớp trên |
+| Có tranh chấp quyền nuôi dưỡng / người lớn tranh giành đón | **Không giao cho bên nào.** Đưa học viên vào khu vực an toàn có người lớn, gọi Giám đốc và **CSO trong 1 giờ**. Tuân theo hồ sơ pháp lý nộp trước khoá, không phán xử tại chỗ |
+
+**Nếu quá 19:30 chưa có người đón:** ACT phụ trách **ở lại cùng học viên** (luôn **hai người lớn**,
+không một mình), gọi lần lượt các số trong hồ sơ, báo Trưởng khoá mỗi 15 phút.
+**Không bao giờ để học viên một mình, không giao cho hàng xóm, không gọi xe cho học viên tự về.**
+
+### 14.4 Mẫu Sổ bàn giao học viên (đóng gáy, đánh số trang, lưu 12 tháng)
+
+| STT | Họ tên học viên | Team | Giờ bàn giao | Họ tên người nhận | Quan hệ | Số giấy tờ | Có trong `BM-01`? (Có/Không) | Nếu Không: ai xác nhận, giờ nào | Chữ ký người nhận | Chữ ký ACT |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | | | | | | | | | | |
+| 2 | | | | | | | | | | |
+
+**Cuối trang mỗi ngày:** Trưởng khoá ghi tổng số đã bàn giao, đối chiếu sĩ số, ký tên và ghi giờ.
+
+---
+
+## 15. Quy trình di chuyển trong khoá
+
+### 15.1 Bốn mốc điểm danh cho mỗi chặng — không rút gọn
+
+| Mốc | Khi nào | Ai đếm | Báo cho ai |
+|---|---|---|---|
+| **Đ1** | Trước khi lên xe, tại điểm tập kết | ACT của xe | Điều phối di chuyển |
+| **Đ2** | Sau khi lên xe, ngồi yên tại ghế | ACT của xe | Trưởng khoá qua bộ đàm/điện thoại |
+| **Đ3** | **Trước khi mở cửa xuống** | ACT của xe | — |
+| **Đ4** | Sau khi xuống, đã tập kết đủ đội hình | ACT của xe | Trưởng khoá — chốt tổng |
+
+> **Số không khớp ở bất kỳ mốc nào: dừng toàn bộ, không di chuyển tiếp, rà lại từ đầu.**
+> Không có trường hợp "chắc em ấy đi xe kia" mà không xác minh bằng lời của một người lớn đang nhìn thấy em đó.
+
+Với di chuyển đi bộ trong khuôn viên giữa các khu hoạt động: vẫn điểm danh **trước và sau**, do ACT
+đếm tại chỗ, không cần báo bộ đàm nếu quãng đường trong ranh giới tự do trên bản đồ khu vực.
+
+### 15.2 Phân công theo xe
+
+| Nội dung | Quy định |
+|---|---|
+| Người lớn mỗi xe | **1 người phụ trách xe + 1 ACT**, tối thiểu. Xe chở nhóm 9–11 tuổi: **thêm 1 ACT** |
+| Người phụ trách xe giữ | Danh sách in của xe · số điện thoại phụ huynh từng em · điện thoại đã sạc đầy · túi sơ cứu · túi nôn · nước · danh sách dị ứng |
+| Nguyên tắc ghép | **Giữ nguyên team trên cùng một xe** — ACT quen mặt team mình, đếm nhanh và phát hiện thiếu nhanh |
+| Xe có học viên cần theo dõi y tế | Ưu tiên xe có **Y tế đi cùng**; nếu chỉ 1 người y tế thì đi xe giữa đoàn |
+| Đoàn nhiều xe | Xe đầu có Trưởng khoá hoặc Điều phối; **xe cuối là "xe chốt"**, không xe nào được ở sau xe chốt |
+| Thứ tự chạy | Cố định, thông báo trước khi xuất phát; **điểm hẹn dự phòng thống nhất trước khi lăn bánh** |
+
+### 15.3 Vị trí ngồi
+
+| Vị trí | Bố trí | Lý do |
+|---|---|---|
+| Hàng ghế đầu | **Người lớn phụ trách xe** + học viên hay say xe + học viên cần theo dõi y tế | Quan sát được và can thiệp nhanh |
+| Giữa xe | Học viên nhỏ tuổi (9–11) | Vùng êm nhất, ít xóc |
+| Cuối xe | **1 ACT ngồi hàng cuối** | Nhìn được toàn bộ khoang, phát hiện đứng dậy/đổi chỗ |
+| Cạnh cửa thoát hiểm | **Người lớn**, không phải học viên | |
+| Ghế | **Mỗi học viên một ghế**, không ngồi lối đi, không ngồi chung ghế, **không chở quá số ghế** | Quy tắc cứng, không ngoại lệ |
+| Sơ đồ chỗ ngồi | **Vẽ và in trước**, dán ở cửa xe; ACT đếm theo sơ đồ nên phát hiện chỗ trống ngay | Đếm theo sơ đồ nhanh và chính xác hơn đếm đầu người |
+
+### 15.4 Quy định trên xe — ACT đọc to trước khi xuất phát, 60 giây
+
+1. **Thắt dây an toàn** trước khi xe lăn bánh; ACT kiểm từng ghế, không hỏi chung cả xe.
+2. **Ngồi yên tại ghế**, không đứng, không đi lại, không đổi chỗ khi xe đang chạy.
+3. Không thò tay, thò đầu ra cửa sổ; **không mở cửa sổ quá vạch quy định**.
+4. Ba lô nhỏ để dưới chân hoặc ôm; **hành lý lớn để khoang hành lý**, không để trên giá đầu.
+5. Ai thấy chóng mặt, buồn nôn, khó thở **giơ tay báo ngay** — nói sớm không bị nhắc nhở gì.
+6. Không ăn đồ dễ hóc trên xe (kẹo cứng, hạt); nước thì uống được.
+7. Chỉ xuống xe khi **người lớn phụ trách xe nói xuống**, xuống theo hàng từ trước ra sau.
+8. Điểm dừng dọc đường: **luôn có người lớn đi cùng**, không ai rời khu vực đã khoanh.
+
+**Việc của ACT trên đường:** đếm lại đầu người mỗi **20 phút** hoặc sau mỗi điểm dừng ·
+quan sát dấu hiệu say xe (tái mặt, im khác thường, ôm bụng) · nhắc uống nước ·
+**không dùng điện thoại cá nhân cho việc riêng suốt hành trình**.
+
+---
+
+## 16. Tiêu chuẩn phương tiện và lái xe
+
+### 16.1 Tiêu chuẩn hồ sơ — kiểm tại D-7, lưu bản sao
+
+| Hạng mục | Yêu cầu | Bằng chứng lưu hồ sơ |
+|---|---|---|
+| Nhà cung cấp | Giấy phép kinh doanh vận tải còn hiệu lực | Bản sao |
+| Hợp đồng | Ghi rõ trách nhiệm, số xe, biển số, tên tài xế, phương án xe thay thế | Bản gốc |
+| Kiểm định xe | **Tem kiểm định còn hạn** cho từng xe | Ảnh chụp tem từng xe |
+| Bảo hiểm | Bảo hiểm trách nhiệm dân sự + **bảo hiểm hành khách** còn hiệu lực | Bản sao |
+| Bằng lái | Hạng phù hợp, còn hạn, đúng người sẽ lái | Ảnh chụp bằng + CCCD |
+| Số ghế | Số ghế thực tế ≥ số người đi, **không chở quá số ghế** | Bảng đối chiếu |
+
+### 16.2 Bảng kiểm xe trước khi khởi hành — Điều phối di chuyển làm, mỗi xe một bản
+
+| # | Hạng mục | Đạt | Không đạt — xử lý |
+|---|---|---|---|
+| 1 | Biển số khớp hợp đồng, tài xế khớp tên đăng ký | ⬜ | Không khớp → **không cho xuất phát**, gọi nhà xe |
+| 2 | Tem kiểm định còn hạn | ⬜ | Hết hạn → đổi xe |
+| 3 | **Dây an toàn đủ và dùng được ở mọi ghế sẽ dùng** | ⬜ | Thiếu → không xếp học viên vào ghế đó |
+| 4 | Lốp: không mòn trơ, không phồng; có lốp dự phòng và dụng cụ | ⬜ | Đổi xe |
+| 5 | Đèn, phanh, còi, gạt nước, gương hoạt động | ⬜ | Đổi xe |
+| 6 | Điều hoà hoạt động ở mọi khoang | ⬜ | Mùa nóng: đổi xe |
+| 7 | **Cửa thoát hiểm mở được, không bị chặn bởi hành lý** | ⬜ | Dọn ngay trước khi xuất phát |
+| 8 | Bình chữa cháy trên xe còn hạn | ⬜ | Bổ sung |
+| 9 | Sàn xe, lối đi không có vật cản | ⬜ | Dọn |
+| 10 | Xe sạch, không mùi xăng dầu trong khoang | ⬜ | Đổi xe |
+| 11 | **Tài xế: hỏi trực tiếp giờ ngủ đêm qua và ca lái trước đó** | ⬜ | Ngủ < 6 giờ hoặc vừa lái đêm → **đổi tài xế** |
+| 12 | Tài xế không có dấu hiệu dùng rượu bia, chất kích thích | ⬜ | Đổi tài xế ngay, báo nhà xe và Giám đốc |
+| 13 | Số điện thoại tài xế đã đăng ký với Trưởng khoá và lưu vào máy 3 người | ⬜ | Bổ sung |
+| 14 | Lộ trình và điểm dừng đã thống nhất với tài xế | ⬜ | Thống nhất trước khi lăn bánh |
+| 15 | Điểm hẹn dự phòng đã thống nhất giữa các xe | ⬜ | |
+
+### 16.3 Quy định với tài xế — nói rõ bằng lời trước mỗi chặng
+
+| Nội dung | Chuẩn |
+|---|---|
+| Giờ lái | **Không lái quá 4 giờ liên tục**; nghỉ ≥ 30 phút giữa hai chặng; không quá 10 giờ lái/ngày |
+| Tốc độ | Tuân thủ biển báo; **đoàn chở trẻ chạy chậm hơn giới hạn 10 km/h** ở đường đèo, đường xấu, trời mưa |
+| Điện thoại | Không dùng khi lái, kể cả tai nghe |
+| Dừng đỗ | Chỉ dừng ở điểm đã thống nhất hoặc nơi Điều phối yêu cầu; **không dừng ở làn khẩn cấp** trừ sự cố |
+| Người trên xe | Không chở thêm bất kỳ ai ngoài danh sách |
+| Quyền của đoàn | **Người phụ trách xe có quyền yêu cầu dừng xe** khi thấy nguy hiểm; tài xế phải thực hiện |
+
+---
+
+## 17. Phương án sự cố di chuyển
+
+### 17.1 Bảng xử lý
+
+| Tình huống | Xử lý ngay (0–5 phút) | Tiếp theo | Báo ai, trong bao lâu |
+|---|---|---|---|
+| **Học viên say xe** | Túi nôn, nước, chuyển lên ghế trước, mở thông gió | Nếu nôn nhiều lần hoặc lả: dừng xe nơi an toàn, gọi Y tế | Y tế ngay · gia đình trong ngày |
+| **Học viên cần đi vệ sinh** | Dừng tại điểm an toàn có nhà vệ sinh | **Luôn có người lớn đi cùng**; **điểm danh lại trước khi đi tiếp** | — |
+| **Xe hỏng giữa đường** | Bật cảnh báo, đưa **toàn bộ học viên xuống nơi an toàn cách xa lòng đường**, đặt biển cảnh báo | Điểm danh ngay khi xuống · che nắng/mưa · phát nước · nhà xe điều xe thay | Trưởng khoá ngay · nhóm phụ huynh trong 30 phút với giờ đến mới |
+| **Tắc đường kéo dài > 30 phút** | Giữ học viên trên xe nếu an toàn, bật điều hoà/thông gió | Kiểm nước và nhu cầu vệ sinh; tính lại giờ đến | Nhóm phụ huynh — giờ đến mới, **trong 30 phút** |
+| **Tai nạn giao thông** | Kích hoạt quy trình khẩn cấp (TL 09 §3): **đưa học viên khỏi khu vực nguy hiểm trước**, sau đó **điểm danh**, gọi **115** | Y tế phân loại thương tích; giữ hiện trường theo yêu cầu cơ quan chức năng; **một người lớn phụ trách một nhóm học viên cụ thể** | **Giám đốc ngay** · gia đình học viên bị thương ngay · toàn bộ gia đình trong 1 giờ với thông tin đã xác minh |
+| **Lạc mất một xe trong đoàn** | Gọi người phụ trách xe đó; xe chốt dừng tại điểm an toàn chờ | Về **điểm hẹn dự phòng** đã thống nhất | Trưởng khoá ngay |
+| **Mất sóng điện thoại trên đường** | Đoàn giữ khoảng cách nhìn thấy nhau; xe đầu giảm tốc | Dừng tại điểm hẹn gần nhất, đếm đủ xe rồi đi tiếp | Trưởng khoá khi có sóng |
+| **Học viên bỏ xuống xe tại điểm dừng** | **"GITA TRẮNG"** — mọi người lớn về vị trí của mình, không ai chạy tán loạn | Theo quy trình §17.2 | Trưởng khoá ngay |
+| **Thời tiết xấu đột ngột (mưa lớn, gió mạnh)** | Tài xế giảm tốc hoặc dừng tại nơi an toàn | Không đi tiếp qua đoạn ngập/sạt lở; chờ hoặc quay lại | Trưởng khoá + Giám đốc trong 15 phút |
+| **Học viên có biểu hiện cấp cứu trên xe** (khó thở, co giật, phản ứng dị ứng) | Dừng xe nơi an toàn, Y tế xử lý, gọi **115** | Chuyển viện gần nhất theo danh sách đã lập tại D-1; **hai người lớn đi cùng** | Giám đốc + gia đình **ngay lập tức** |
+
+### 17.2 Thiếu người khi điểm danh — quy trình theo phút
+
+```
+PHÚT 0   ACT đếm lệch → đếm lại một lần theo SƠ ĐỒ CHỖ NGỒI (không đếm đầu người lần hai)
+         → vẫn lệch → phát "GITA TRẮNG + tên team" trên kênh 1
+             ↓
+PHÚT 0–2 KHÔNG AI TỰ ĐI TÌM QUÁ 2 PHÚT. Mọi người lớn giữ nguyên nhóm học viên của mình.
+         Xe KHÔNG lăn bánh. Trưởng khoá nhận báo cáo.
+             ↓
+PHÚT 2   Trưởng khoá phát lệnh tập hợp toàn bộ → điểm danh ĐỒNG LOẠT theo team,
+         đọc TÊN từng người (không đếm số), ACT xác nhận "nhìn thấy em X ngay lúc này"
+             ↓
+PHÚT 5   Xác định: ai vắng · ai nhìn thấy em đó lần cuối · lúc mấy giờ · ở đâu · mặc gì
+         → ghi ra giấy, không giữ trong đầu
+             ↓
+PHÚT 5–15 Chia khu tìm theo bản đồ/khu vực điểm dừng: MỖI KHU 2 NGƯỜI LỚN, có bộ đàm.
+         Ưu tiên: nhà vệ sinh · xe khác trong đoàn · khu ăn uống · nơi có bóng mát · nơi có nước
+         → Một người ở lại cố định tại điểm tập kết, phòng em đó tự quay lại
+             ↓
+PHÚT 15  Chưa thấy → báo GIÁM ĐỐC + GIA ĐÌNH + CƠ QUAN CHỨC NĂNG ĐỊA PHƯƠNG.
+         Cung cấp: ảnh mới nhất, mô tả trang phục, giờ và nơi thấy lần cuối
+             ↓
+MỌI TRƯỜNG HỢP  Ghi biên bản đầy đủ mốc thời gian — KỂ CẢ KHI TÌM THẤY SAU 3 PHÚT.
+                Đây là cận-sự-cố, phải được ghi và rà tại giao ban tối.
+```
+
+**Ba lỗi hay gặp phải tránh:**
+1. **Đếm lại nhiều lần thay vì đọc tên.** Đếm số có thể trùng khớp nhầm khi có em đi lạc sang xe khác.
+   Chỉ có đọc tên và một người lớn xác nhận đang nhìn thấy mới là bằng chứng.
+2. **Nhiều người cùng chạy đi tìm**, để lại nhóm học viên không có người phụ trách — tạo ra rủi ro thứ hai.
+3. **Chờ thêm cho chắc** trước khi báo. Ngưỡng 15 phút là ngưỡng cứng, không phải gợi ý.
+
+---
+
+## 18. Bảng kiểm trước mỗi lần di chuyển (in ra, tick, ký — mỗi chặng một bản)
+
+**Chặng: ………………  Ngày: ……/……  Xe số: ……  Biển số: ……………  Số HV trên xe: ……**
+
+**A · Trước khi xuất phát**
+- [ ] Danh sách phân xe đã in, mỗi xe một bản, có số điện thoại phụ huynh
+- [ ] **Sơ đồ chỗ ngồi đã in, dán tại cửa xe**
+- [ ] Mỗi xe có **1 người lớn phụ trách + 1 ACT** (xe nhóm 9–11 tuổi: + 1 ACT)
+- [ ] Bảng kiểm xe §16.2 đã làm, 15 mục đạt
+- [ ] Tài xế đã xác nhận giờ ngủ đêm qua ≥ 6 giờ
+- [ ] Túi sơ cứu · túi nôn · nước · danh sách dị ứng có trên mỗi xe
+- [ ] Điện thoại/bộ đàm của người phụ trách đã sạc ≥ 80%
+- [ ] Học viên cần theo dõi y tế đã xếp đúng xe, Y tế biết
+- [ ] Thuốc cần dùng trong hành trình đã ở đúng người giữ
+- [ ] **Đ1 — điểm danh trước khi lên xe: số khớp** ⬜ (…… / ……)
+- [ ] **Đ2 — điểm danh trên xe: số khớp** ⬜ (…… / ……)
+- [ ] Dây an toàn đã kiểm **từng ghế**
+- [ ] ACT đã đọc 8 quy định trên xe
+- [ ] Điểm hẹn dự phòng đã thống nhất giữa các xe và với tài xế
+- [ ] Đã nhắn nhóm phụ huynh: giờ xuất phát + giờ dự kiến đến
+
+**B · Trên đường**
+- [ ] Đếm lại đầu người mỗi 20 phút và sau mỗi điểm dừng
+- [ ] Điểm dừng: luôn có người lớn đi cùng, điểm danh lại trước khi đi tiếp
+- [ ] Không có học viên đứng, đi lại, đổi chỗ khi xe chạy
+
+**C · Khi đến nơi**
+- [ ] **Đ3 — điểm danh TRƯỚC KHI mở cửa: số khớp** ⬜ (…… / ……)
+- [ ] Xuống theo hàng, người lớn xuống trước đứng đón
+- [ ] **Đ4 — điểm danh sau khi xuống: số khớp** ⬜ (…… / ……)
+- [ ] Hành lý đã tập kết đủ, không còn đồ trên xe (**kiểm gầm ghế và giá để đồ**)
+- [ ] Đã báo nhóm phụ huynh: đoàn đến an toàn
+
+**D · Khi bàn giao cho gia đình (chặng cuối khoá)**
+- [ ] Sổ bàn giao có đủ chữ ký cho **từng học viên**
+- [ ] Mọi người đón đã qua **ba lớp xác minh** §14.3
+- [ ] Trường hợp người đón ngoài `BM-01` đã có xác nhận điện thoại ghi sổ
+- [ ] Tài sản và thiết bị gửi giữ đã trả đủ, có ký nhận
+- [ ] Thuốc còn lại đã trả gia đình kèm ghi chú liều đã dùng
+- [ ] Tổng số bàn giao **khớp tuyệt đối** với sĩ số
+- [ ] Đồ thất lạc đã tập hợp, chụp ảnh, đăng nhóm phụ huynh
+- [ ] Không có học viên nào ở lại một mình với một người lớn
+
+**Người phụ trách xe ký: ………………  ACT ký: ………………  Trưởng khoá xác nhận: ………………**
+
+---
+
+## 19. Ba bảng kiểm tổng hợp của khoá
+
+### 19.1 Bảng kiểm mở khoá (Trưởng khoá ký sáng D1)
+
+- [ ] Đủ nhân sự theo tỉ lệ **≤ 1:10** và **≤ 1:8** cho nhóm 9–11 tuổi
+- [ ] Bảng phân ca 7 ngày đã lập, mỗi người có ô nghỉ 90 phút và ≥ 6,5 giờ ngủ
+- [ ] Danh sách dị ứng đã dán 3 nơi; thuốc đã bàn giao Y tế có ký
+- [ ] Bản đồ khu vực + điểm tập kết an toàn đã dán và **đi thử một lần cùng toàn trại**
+- [ ] Diễn tập mất liên lạc 20 phút đã làm
+- [ ] Sổ: điểm danh · bàn giao ca · bàn giao học viên · y tế · sự cố — đã mở, đánh số trang
+- [ ] Số trực ban 24/7 đã dán tại mọi phòng ở và in mặt sau thẻ tên
+- [ ] Kiểm phòng ở theo §9.3 xong, có biên bản
+- [ ] Biên bản kiểm bếp có chữ ký hai bên
+
+### 19.2 Bảng kiểm an toàn hằng ngày (Trưởng khoá ký mỗi tối)
+
+- [ ] Điểm danh đủ **5 mốc**, khớp số; điểm danh trước + sau mọi lần di chuyển và mọi hoạt động nước
+- [ ] Không có học viên rời khu vực mà không có người lớn đi cùng
+- [ ] Bình nước cá nhân được nạp đủ **3 lần**
+- [ ] Không có hoạt động ngoài trời cường độ cao trong khung **11:00–15:00**
+- [ ] Cứu hộ trực đủ thời gian có hoạt động dưới nước
+- [ ] Sổ y tế đã cập nhật; các ca đã thông báo gia đình đúng hạn
+- [ ] Danh sách quan tâm đặc biệt đã rà; **mỗi tên có người phụ trách và việc cụ thể cho ngày mai**
+- [ ] **Không ghi nhận trường hợp hình phạt thân thể, kỷ luật liên đới, phạt bằng bài tập hoặc phạt tiền**
+- [ ] Học viên tắt đèn đúng giờ, **bảo đảm ngủ ≥ 8,5 giờ**
+- [ ] **Nhân sự: không ai làm quá 10 giờ liên tục; mọi người đã có 90 phút nghỉ**
+- [ ] Không có người lớn ở một mình với một học viên nơi khuất tầm nhìn
+- [ ] Thiết bị và tài sản cá nhân bảo quản đúng quy định, có ký nhận
+- [ ] Mẫu thức ăn 24 giờ đã lưu đủ mọi bữa, có nhãn
+- [ ] **Cận-sự-cố trong ngày đã được ghi sổ**
+- [ ] Mọi việc liên quan an toàn đã báo **trong 1 giờ**; sổ ghi cả giờ phát hiện và giờ báo
+
+### 19.3 Bảng kiểm đóng khoá (Trưởng khoá + Giám đốc ký)
+
+- [ ] Sổ bàn giao học viên khớp tuyệt đối sĩ số
+- [ ] Toàn bộ tài sản, thiết bị, thuốc đã trả, có ký nhận
+- [ ] Đồ thất lạc đã chụp ảnh, đăng nhóm phụ huynh, giữ tại Học viện 30 ngày
+- [ ] Kiểm kê vật tư còn lại, ghi sổ dùng cho khoá sau
+- [ ] Bàn giao địa điểm có biên bản và ảnh hiện trạng
+- [ ] Tổng hợp sự cố + cận-sự-cố của khoá, chuyển vào họp rút kinh nghiệm trong **7 ngày**
+- [ ] Toàn bộ hồ sơ khoá (điểm danh · bàn giao ca · y tế · sự cố · bàn giao học viên) đã đóng gói lưu trữ
+
+---
+
+## 20. Điều hệ thống chưa biết và cần đo ở khoá tới
+
+Bốn con số dưới đây hiện đang **đặt theo kinh nghiệm, chưa có dữ liệu nội bộ kiểm chứng**.
+Khoá tới cần ghi lại để hiệu chỉnh, không nên coi là chuẩn cố định:
+
+| Thông số | Giá trị đang dùng | Cách đo ở khoá tới |
+|---|---|---|
+| Thời lượng bàn giao ca | 10 phút | Bấm giờ thật 3 lần/ngày × 7 ngày, xem trung bình và số lần thiếu thông tin |
+| Tần suất tuần khu ban đêm | 4 lần/đêm | Ghi số lần phát hiện việc cần xử lý theo từng khung giờ |
+| Lượng nước 2 lít/HV/ngày | Ước tính | Đếm số lần nạp bình thực tế và số ca có dấu hiệu mất nước |
+| Ngưỡng "ốm hàng loạt" 3 ca/4 giờ | Đặt theo nguyên tắc thận trọng | Ghi mọi cụm triệu chứng, kể cả cụm nhỏ, để xác định ngưỡng thực tế |
+
+**Dấu hiệu vượt phạm vi tài liệu này — phải chuyển cho người có chuyên môn:**
+mọi việc nghi ngờ xâm hại hoặc bạo hành (**CSO trong 1 giờ**) · dấu hiệu tự hại hoặc ý định tự tử
+(**chuyên viên tâm lý + gia đình ngay**) · cấp cứu y tế (**115 và cơ sở y tế**) ·
+sự cố có yếu tố pháp lý hoặc tranh chấp quyền nuôi dưỡng (**Giám đốc và tư vấn pháp lý**).
+Tài liệu này là quy trình vận hành, **không thay thế ý kiến chuyên môn y tế, tâm lý hoặc pháp lý**.
+
+---
+
+## 21. Liên kết
+
+- Tổ chức và điều hành trại (bản khung): [`07-to-chuc-dieu-hanh.md`](07-to-chuc-dieu-hanh.md)
+- Hậu cần (bản khung): [`08-hau-can.md`](08-hau-can.md)
+- Di chuyển (bản khung): [`11-di-chuyen.md`](11-di-chuyen.md)
+- Y tế và an toàn — quy trình khẩn cấp: [`09-y-te-an-toan.md`](09-y-te-an-toan.md)
+- Chuẩn bị D-90 → D1: [`04-chuan-bi-D90-D1.md`](04-chuan-bi-D90-D1.md)
+- Đào tạo đội ngũ — tập huấn ACT: [`05-dao-tao-doi-ngu.md`](05-dao-tao-doi-ngu.md)
+- Hệ thống huấn luyện — kịch bản 7 ngày: [`06-he-thong-huan-luyen.md`](06-he-thong-huan-luyen.md)
+- Tài chính — hạn mức chi tại hiện trường: [`10-tai-chinh.md`](10-tai-chinh.md)
+- Bản đồ tối ưu hoá — việc phải làm trước khoá tới: [`15-ban-do-toi-uu-hoa.md`](15-ban-do-toi-uu-hoa.md)
+- Thư viện tình huống — xử lý ca khó tại trại: [`../leader-boom-365/15-thu-vien-tinh-huong.md`](../leader-boom-365/15-thu-vien-tinh-huong.md)
+- Phân quyền và bảo mật hồ sơ: [`../an-toan-va-phan-quyen/01-mo-hinh-phan-quyen.md`](../an-toan-va-phan-quyen/01-mo-hinh-phan-quyen.md)
+- An toàn trẻ em trên mạng — quy tắc hình ảnh: [`../cong-dong-leader-boom/02-an-toan-tre-em-tren-mang.md`](../cong-dong-leader-boom/02-an-toan-tre-em-tren-mang.md)

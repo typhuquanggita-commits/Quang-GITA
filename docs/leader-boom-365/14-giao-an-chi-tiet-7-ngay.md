@@ -1581,3 +1581,1390 @@ học viên chưa gọi được ở D3.
 > chuẩn duy nhất sau mọi lượt: *"Em ở vùng nào?"*
 
 ---
+
+# NGÀY 4 · MỤC TIÊU — PHÂN BIỆT MONG MUỐN VÀ MỤC TIÊU
+
+Ngày 4 phải biến những câu mơ hồ kiểu "con muốn học giỏi hơn" thành **mục tiêu có số, có mốc thời gian,
+có bước đầu tiên làm được trong 48 giờ**. Ngày này đặt sau ngày nội lực vì học viên vừa có một bằng chứng
+tươi mới rằng mình làm được nhiều hơn mình tưởng — đó là thời điểm đặt mục tiêu ít bị hạ thấp nhất; và đặt
+trước ngày hành động vì phải có đích rồi mới thiết kế được đường đi.
+
+Trọng tâm trụ **G – Mục tiêu**, năng lực `NL-02`. Lưu ý: trại **không hứa kết quả**. Mục tiêu học viên viết
+hôm nay là mục tiêu **của học viên**, sẽ được rà lại cùng gia đình ở D7 và điều chỉnh ở Tầng 2.
+
+## 1. Lịch ngày 4
+
+| Giờ | Hoạt động | Ai phụ trách | Ghi chú |
+|---|---|---|---|
+| 06:00 – 06:20 | Thức dậy, vệ sinh, gấp chăn màn | ACT phòng | Y tế kiểm nhóm có va chạm D3 |
+| 06:20 – 06:35 | Tập hợp · **ĐD-1** · nghi thức chào | MC + ACT | |
+| 06:35 – 06:50 | Thể dục nhẹ — **giảm 30% cường độ so với D3** | MC + Y tế | Ngày phục hồi thể chất |
+| 06:50 – 07:40 | Ăn sáng + 5S | ACT team | |
+| 07:40 – 08:00 | Sinh hoạt team: **Leader mới nhận nhiệm kỳ** (đổi Leader lần 1) | Team + ACT | Bàn giao 5 phút, ACT không can thiệp |
+| **08:00 – 09:30** | **BUỔI SÁNG 1 — "Mong muốn không phải là mục tiêu"** | Trainer | Khối kiến thức trọng tâm của ngày |
+| 09:30 – 09:45 | Giải lao — uống nước bắt buộc | ACT | |
+| **09:45 – 11:15** | **BUỔI SÁNG 2 — Xưởng mục tiêu: viết Bảng mục tiêu 5 cột** | Trainer + ACT | Sản phẩm cá nhân, mỗi học viên 1 bảng A3 |
+| 11:15 – 11:35 | **Đúc kết buổi sáng** | Trainer | |
+| 11:35 – 11:45 | 5S khu vực | ACT team | |
+| 11:45 – 12:30 | Ăn trưa · **ĐD-2** | Quản trại | |
+| 12:30 – 13:45 | **Nghỉ trưa bắt buộc ≥ 45 phút** | ACT trực | |
+| 13:45 – 14:00 | Tập hợp · **ĐD-3** | MC | |
+| **14:00 – 15:30** | **BUỔI CHIỀU 1 — "Đánh đổi": bài toán nguồn lực có ràng buộc** | Trainer + MC | Trong nhà, tư duy chiến lược |
+| 15:30 – 15:45 | Giải lao — uống nước | ACT | |
+| **15:45 – 17:15** | **BUỔI CHIỀU 2 — "Người vận chuyển": thi đấu có ràng buộc nguồn lực** | MC + ACT | Ngoài trời có bóng râm, cường độ trung bình |
+| 17:15 – 17:35 | **Đúc kết buổi chiều** + công bố điểm theo team | Trainer | |
+| 17:35 – 18:30 | Bơi có cứu hộ / tắm giặt | Cứu hộ + ACT | |
+| 18:30 – 19:30 | Ăn tối · **ĐD-4** | Quản trại | |
+| **19:30 – 21:00** | **BUỔI TỐI — "Bản thiết kế học tập xuất sắc" + gọi về nhà đợt bù** | Trainer + ACT | Sản phẩm cá nhân 6 ô |
+| 21:00 – 21:20 | Nhật ký `BM-02` + ACT chấm rubric | Học viên + ACT | |
+| 21:20 – 21:30 | Vệ sinh, về phòng · **ĐD-5** | ACT phòng | |
+| **21:30** | **Tắt đèn** (9–11: 21:15) | ACT trực đêm | |
+| 21:35 – 21:55 | **Họp đội cuối ngày 20 phút** | Quản trại | |
+| 21:55 – 22:15 | Giao ban ban huấn luyện — **chốt sơ bộ giả thuyết GITA từng học viên** | Trainer trưởng | Mốc giữa trại |
+| 23:00 / 02:00 | Kiểm phòng đêm 2 lượt | Trực đêm | |
+
+## 2. Buổi sáng
+
+### Buổi sáng 1 (08:00 – 09:30) — "Mong muốn không phải là mục tiêu"
+
+**Mục tiêu buổi.** Học viên **phân loại đúng ≥ 8/10 câu** thành mong muốn hay mục tiêu, và **chuyển được
+3 mong muốn của chính mình thành 3 mục tiêu** đủ 5 yếu tố.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | Trainer: hôm nay không hỏi "em muốn gì", hỏi "làm sao biết em đã đạt" |
+| 2. Trải nghiệm | 40 phút | **Hai cái rổ** (12') → **Năm câu hỏi biến mong muốn thành mục tiêu** (16') → **Kiểm chéo trong cặp** (12') |
+| 3. Ghi dữ liệu | song song | ACT ghi chất lượng mục tiêu, mức tự chủ khi lập kế hoạch |
+| 4. **Đúc kết** | **26 phút** | 6 câu hỏi, vòng team 13' + vòng chung 13' |
+| 5. Neo & chuyển | 8 phút | Mỗi người chọn **1 mục tiêu có bước đầu tiên làm được trong 48 giờ**, viết lên thẻ |
+
+**Chi tiết nhịp 2**
+
+**Hai cái rổ (12').** Hai rổ trên sàn: **MONG MUỐN** và **MỤC TIÊU**. MC đọc 10 câu, học viên bỏ thẻ vào rổ.
+
+| Câu | Rổ | Vì sao |
+|---|---|---|
+| "Con muốn học giỏi hơn" | Mong muốn | Không biết giỏi hơn là bao nhiêu, so với mốc nào |
+| "Học kỳ I, môn Toán từ 6,5 lên 7,5; kiểm bằng điểm tổng kết" | Mục tiêu | Có số, có mốc, có cách đo |
+| "Con muốn tự tin hơn" | Mong muốn | Không đo được |
+| "Trong 4 tuần tới, mỗi tuần giơ tay phát biểu ≥ 2 lần, ghi vào sổ" | Mục tiêu | Đo được bằng số lần |
+| "Con muốn bố mẹ bớt cằn nhằn" | Mong muốn | Kết quả nằm ở người khác, không nằm ở việc mình làm |
+| "Mỗi tối 20:30 con ngồi vào bàn, bố mẹ không cần nhắc; ghi vào bảng theo dõi 21 ngày" | Mục tiêu | Có giờ, có hành vi, có cách đo, **nằm trong tầm mình làm** |
+| "Con muốn khoẻ hơn" | Mong muốn | |
+| "Ba tuần tới, chạy 3 buổi/tuần, mỗi buổi 15 phút, sáng thứ 3–5–7" | Mục tiêu | |
+| "Con muốn được vào đội tuyển" | Mong muốn | Kết quả do người khác quyết |
+| "Trước ngày 30/11 hoàn thành 40 bài luyện, mỗi ngày 2 bài sau bữa tối" | Mục tiêu | |
+
+Trainer chốt **hai điểm phân biệt then chốt**: (a) mục tiêu **đo được**, (b) mục tiêu nằm trong
+**việc mình làm**, không nằm trong **kết quả người khác quyết**. Mong muốn không xấu — mong muốn là
+nguyên liệu, mục tiêu là bản vẽ.
+
+**Năm câu hỏi biến mong muốn thành mục tiêu (16').** Học viên áp dụng cho 3 mong muốn của chính mình:
+
+| # | Câu hỏi | Yếu tố |
+|---|---|---|
+| 1 | Em muốn làm được **việc gì** — nói bằng động từ? | Cụ thể |
+| 2 | **Bao nhiêu, mấy lần**, thì gọi là đạt? | Đo được |
+| 3 | Với sức em hiện nay, con số đó có **khó vừa** không, hay quá dễ / quá xa? | Vừa sức |
+| 4 | Việc này **phục vụ điều gì** em đã viết trong chân dung tương lai ở ngày 2? | Có ý nghĩa |
+| 5 | **Đến ngày nào** thì kiểm, và kiểm **bằng cách nào**? | Có mốc và cách đo |
+
+**Kiểm chéo trong cặp (12').** Hai học viên đổi bảng, mỗi người chấm bảng của bạn theo 5 yếu tố, đánh dấu
+ô nào chưa đạt và **hỏi bạn một câu để giúp bạn sửa**, không viết hộ.
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Sáng nay thầy không hỏi 'em muốn gì'. Câu đó ai cũng trả lời được và trả lời xong thì không làm gì cả.
+> Thầy hỏi câu khó hơn: **'Làm sao em biết mình đã đạt?'** Nếu không trả lời được câu này, thứ em đang có
+> là một mong muốn, chưa phải mục tiêu."
+
+> "Có một loại mục tiêu thầy đề nghị các em tránh: mục tiêu mà **người khác quyết kết quả**. 'Con muốn được
+> cô khen', 'con muốn vào đội tuyển' — em không cầm được kết quả đó. Hãy đặt mục tiêu vào **việc em làm**:
+> số buổi luyện, số bài, số lần giơ tay. Việc em làm thì em cầm được, và kết quả thường đi theo sau."
+
+> "Con số các em đặt phải **khó vừa**. Từ 6,5 lên 9,5 trong một học kỳ thường không phải mục tiêu, đó là
+> lời hứa để người lớn hài lòng. Từ 6,5 lên 7,5 thì thầy tin. Mục tiêu bị đặt quá cao không tạo động lực —
+> nó tạo lý do để bỏ sớm."
+
+> "Cuối buổi, mỗi em chọn một mục tiêu và tìm **bước đầu tiên làm được trong 48 giờ**, tức là còn ở trong
+> trại này. Vì một mục tiêu chưa có bước đầu tiên thì nó vẫn chỉ là chữ trên giấy."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Mong muốn nào của em khó chuyển thành mục tiêu nhất? Vướng ở câu hỏi số mấy?
+2. **Mô tả:** Bạn kiểm chéo đã chỉ ra ô nào trong bảng của em chưa đạt?
+3. **Cảm nhận:** Khi phải viết một con số cụ thể thay vì "cố gắng hơn", em thấy thế nào?
+4. **Cảm nhận:** Có mục tiêu nào em viết ra chủ yếu để bố mẹ hài lòng không? *(chỉ cần trả lời có/không)*
+5. **Nguyên lý:** Vì sao mục tiêu đặt vào **việc mình làm** lại bền hơn mục tiêu đặt vào **kết quả người khác quyết**?
+6. **Áp dụng:** Bước đầu tiên trong 48 giờ của em là gì? Em làm nó vào lúc nào, ở đâu, trong trại này?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Chất lượng mục tiêu: đủ 5 yếu tố / thiếu yếu tố nào | `BM-05` | Học viên + ACT chấm |
+| Mức tự chủ khi lập kế hoạch: tự làm · cần mẫu · cần kèm từng bước | `BM-01` | ACT team |
+| Mục tiêu đặt vào **hành vi mình làm** hay **kết quả người khác quyết** | `BM-05` | ACT |
+| Học viên trả lời "có" ở câu hỏi 4 (mục tiêu để làm vừa lòng người lớn) | `BM-01` — dữ liệu động lực, **không kết luận** | ACT team |
+| Đối chiếu với chân dung tương lai D2: mục tiêu có nối với chân dung không | Hồ sơ học viên | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Chỉ **1 mục tiêu**, dùng 3 câu hỏi (việc gì – mấy lần – đến bao giờ). "Hai cái rổ" chơi bằng tranh. ACT viết hộ phần bảng; học viên đọc lại và gật đầu xác nhận. Khối kiến thức 60 phút |
+| **12–15** | Chuẩn, 3 mục tiêu |
+| **16–18** | Thêm cột **"điều gì có thể làm hỏng mục tiêu này"** và **"tôi làm gì khi đứt chuỗi"** — dẫn nhập khái niệm `recovery time` (KPI quan trọng nhất của hệ 90 ngày, tốt ≤ 3 ngày). Yêu cầu ≥ 1 mục tiêu thuộc lĩnh vực ngoài học tập |
+
+### Buổi sáng 2 (09:45 – 11:15) — Xưởng mục tiêu: Bảng mục tiêu 5 cột
+
+**Mục tiêu buổi.** Mỗi học viên hoàn thành **Bảng mục tiêu 5 cột khổ A3** cho **≥ 2 lĩnh vực**
+(học tập và một lĩnh vực ngoài học tập), có chữ ký của chính mình và của một bạn kiểm chéo.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 5 phút | Trainer làm mẫu 1 dòng đầy đủ trên bảng lớn |
+| 2. Trải nghiệm | 48 phút | Viết bảng (30') → **Trạm tư vấn** (10') → Kiểm chéo và ký (8') |
+| 3. Ghi dữ liệu | song song | ACT chấm chất lượng từng dòng, ghi ai cần hỗ trợ mức nào |
+| 4. **Đúc kết** | **20 phút** | 6 câu hỏi bên dưới |
+| 5. Neo & chuyển | 7 phút | Treo bảng lên "Tường mục tiêu"; chụp ảnh lưu hồ sơ dùng cho D7 |
+
+**Bảng mục tiêu 5 cột** *(mẫu in sẵn khổ A3, mỗi học viên 1 bản)*
+
+| Lĩnh vực | Mục tiêu (đủ 5 yếu tố) | Đo bằng gì | Bước đầu tiên (làm trong 48 giờ) | Ai hỗ trợ và hỗ trợ thế nào |
+|---|---|---|---|---|
+| Học tập | | | | |
+| Thói quen / sức khoẻ | | | | |
+| Quan hệ (gia đình, bạn) | | | | |
+| Sở thích / dự án riêng | | | | |
+
+**Trạm tư vấn (10').** Ba bàn: **Bàn "Số"** (giúp chọn con số vừa sức) · **Bàn "Cách đo"** (giúp tìm cách
+kiểm tra được) · **Bàn "Bước đầu tiên"** (giúp thu nhỏ bước một xuống dưới 15 phút). Học viên **tự chọn**
+bàn nào cần tới. ACT ở bàn **chỉ hỏi, không viết hộ**.
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Cột khó nhất không phải cột mục tiêu. Là cột **bước đầu tiên**. Nếu bước đầu tiên của em mất hơn 15 phút
+> hoặc cần chờ ai đó cho phép, thì đó chưa phải bước đầu tiên — hãy chẻ nhỏ tiếp."
+
+> "Cột cuối là **ai hỗ trợ**. Nhiều bạn để trống cột này vì nghĩ nhờ giúp là yếu. Thầy nghĩ ngược lại:
+> người biết mình cần gì và biết nhờ đúng người là người đi xa nhất. Nhưng phải ghi rõ **hỗ trợ thế nào** —
+> 'mẹ nhắc con' là hỗ trợ dở; **'mẹ để điện thoại ra khỏi phòng lúc 20:30'** là hỗ trợ dùng được."
+
+> "Ba bàn tư vấn ở kia. Em tự quyết định mình cần bàn nào. Thầy không gọi tên ai lên — biết mình đang
+> vướng ở đâu cũng là một năng lực."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Em ghé bàn tư vấn nào? Câu hỏi em mang tới bàn đó là gì?
+2. **Mô tả:** Bước đầu tiên của em mất bao nhiêu phút? Em rút gọn nó từ bao nhiêu xuống bao nhiêu?
+3. **Cảm nhận:** Viết tên người hỗ trợ vào cột cuối, em thấy thế nào?
+4. **Cảm nhận:** Nhìn bảng đã xong, em thấy mục tiêu nào làm em muốn bắt đầu ngay nhất?
+5. **Nguyên lý:** Vì sao viết "mẹ để điện thoại ra khỏi phòng lúc 20:30" lại hiệu quả hơn viết "mẹ nhắc con học"?
+6. **Áp dụng:** Ở ngày 7 em sẽ trao bảng này cho gia đình. Câu đầu tiên em định nói với bố mẹ là gì?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Bảng mục tiêu 5 cột — chụp ảnh, lưu hồ sơ, **dùng lại ở D7** | Hồ sơ học viên | ACT team |
+| Số lĩnh vực học viên đặt được mục tiêu (mục tiêu buổi: ≥ 2) | `BM-05` | ACT |
+| **Mức hỗ trợ đã dùng** để hoàn thành bảng: tự làm · cần mẫu · cần ACT kèm từng bước | `BM-08` | ACT team |
+| Cột "ai hỗ trợ" — nội dung đề nghị dành cho gia đình, dùng ở Review D7 | Hồ sơ học viên | ACT team |
+
+> **Ghi kèm mức hỗ trợ là bắt buộc.** Một bảng mục tiêu hoàn hảo do ACT kèm từng bước và một bảng khá do
+> học viên tự làm là **hai dữ liệu hoàn toàn khác nhau**. Không ghi mức hỗ trợ thì baseline vô nghĩa.
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Bảng 3 cột (mục tiêu – đo bằng gì – bước đầu tiên), 2 lĩnh vực. Dùng hình dán thay chữ ở cột lĩnh vực. ACT ngồi cùng nhóm 4 học viên |
+| **12–15** | Chuẩn, 4 lĩnh vực, tối thiểu hoàn thành 2 |
+| **16–18** | Đủ 4 lĩnh vực bắt buộc + thêm cột **"tín hiệu sớm cho biết tôi đang chệch"** (ví dụ: hai ngày liền không ghi sổ). Yêu cầu 1 mục tiêu có liên quan tới định hướng nghề nghiệp hoặc dự án `N11` |
+
+## 3. Buổi chiều
+
+### Buổi chiều 1 (14:00 – 15:30) — "Đánh đổi": bài toán nguồn lực có ràng buộc
+
+**Mục tiêu buổi.** Nhóm **đề xuất ≥ 2 phương án kèm đánh đổi** cho một bài toán nhiều ràng buộc, và
+**giải trình được vì sao chọn phương án cuối**; học viên nói được **một đánh đổi trong đời sống của chính mình**.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | Trainer: mọi mục tiêu đều có giá, hôm nay học cách nhìn cái giá đó |
+| 2. Trải nghiệm | 40 phút | **Bài toán trại hè** (22') → **Bảo vệ phương án trước ban giám khảo học viên** (18') |
+| 3. Ghi dữ liệu | song song | ACT ghi cách ra quyết định khi thiếu thông tin |
+| 4. **Đúc kết** | **26 phút** | 6 câu hỏi bên dưới |
+| 5. Neo & chuyển | 8 phút | Mỗi người viết vào `BM-02`: "Để đạt mục tiêu ngày 4, tôi sẽ phải bớt…" |
+
+**Bài toán trại hè (22').** Mỗi nhóm 5–6 người nhận cùng một tình huống: tổ chức một ngày hoạt động cho
+30 bạn với **ngân sách giới hạn, 6 giờ đồng hồ, 3 tình nguyện viên, thời tiết có 40% khả năng mưa**.
+Yêu cầu: **2 phương án**, mỗi phương án ghi rõ **được gì – mất gì**, và **một phương án dự phòng khi mưa**.
+Nhóm được phát thêm 1 mẩu thông tin bất ngờ ở phút thứ 12 (một tình nguyện viên báo bận) — quan sát cách
+nhóm điều chỉnh.
+
+**Bảo vệ phương án (18').** Ban giám khảo là **học viên các nhóm khác** (mỗi nhóm cử 1 người), hỏi đúng
+2 câu cho mỗi nhóm: "Phương án này mất gì?" và "Nếu mất thêm 1 người nữa thì sao?".
+Không chấm điểm cao thấp công khai theo cá nhân; chấm theo nhóm ở 3 tiêu chí: **có nêu đánh đổi ·
+có phương án dự phòng · có căn cứ số**.
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Không có phương án nào chỉ có ưu điểm. Nếu nhóm em trình bày một phương án mà không nói được nó **mất gì**,
+> nghĩa là nhóm chưa nhìn đủ — chứ không phải phương án đó hoàn hảo."
+
+> "Vừa nãy thầy báo mất một tình nguyện viên. Thầy làm thế có chủ ý. Ngoài đời, thông tin luôn tới muộn và
+> tới sai lúc. **Kỹ năng thầy muốn nhìn thấy không phải là lập kế hoạch đẹp, mà là sửa kế hoạch nhanh.**"
+
+> "Mục tiêu các em viết sáng nay cũng có giá. Nếu em muốn mỗi tối ngồi vào bàn lúc 20:30, em sẽ phải bớt
+> một thứ gì đó. Cuối buổi thầy muốn mỗi em viết ra: **để đạt mục tiêu của mình, tôi sẽ phải bớt cái gì.**
+> Câu đó thật hơn mọi lời quyết tâm."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Hai phương án của nhóm em khác nhau ở điểm nào?
+2. **Mô tả:** Khi mất một tình nguyện viên, nhóm em đã đổi cái gì đầu tiên?
+3. **Cảm nhận:** Khi bị ban giám khảo hỏi "phương án này mất gì", em thấy thế nào?
+4. **Cảm nhận:** Trong nhóm, có ý kiến nào của em không được chọn không? Lúc đó em xử lý thế nào?
+5. **Nguyên lý:** Vì sao một kế hoạch có phương án dự phòng lại đáng tin hơn một kế hoạch hoàn hảo không dự phòng?
+6. **Áp dụng:** Để đạt mục tiêu em viết sáng nay, em sẽ phải bớt việc gì? Bớt bao nhiêu thời gian mỗi ngày?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Cách ra quyết định khi thiếu thông tin: hỏi thêm · giả định · chờ · đoán bừa | `BM-01` | ACT team |
+| Phản ứng khi kế hoạch bị phá: đổi cách · lặp cách cũ · trách người báo tin | `BM-01` | ACT team |
+| Khả năng nêu đánh đổi (có/không, mức cụ thể) | `BM-01` | ACT team |
+| Câu "tôi sẽ phải bớt…" — nguyên văn, dùng lại D5 và D7 | `BM-02` + hồ sơ | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Bài toán đơn giản hơn: tổ chức bữa liên hoan cho lớp với 3 ràng buộc. Chỉ 1 phương án + 1 dự phòng. Bỏ phần ban giám khảo, thay bằng trình bày cho ACT |
+| **12–15** | Chuẩn |
+| **16–18** | Thêm ràng buộc tài chính có số cụ thể và yêu cầu **bảng chi phí**. Thêm câu hỏi giám khảo thứ 3: "Ai chịu thiệt trong phương án của bạn?" — dẫn nhập khái niệm đánh đổi có người chịu ảnh hưởng |
+
+### Buổi chiều 2 (15:45 – 17:15) — "Người vận chuyển": thi đấu có ràng buộc nguồn lực
+
+**Mục tiêu buổi.** Team hoàn thành nhiệm vụ vận chuyển với **nguồn lực bị giới hạn và bị cắt giảm giữa chừng**;
+mỗi thành viên nói được **một quyết định đánh đổi mà đội đã làm**.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | MC: 4 pha, luật, an toàn, nhắc quyền được dừng |
+| 2. Trải nghiệm | 45 phút | Pha 1 đủ nguồn lực (10') → Pha 2 **cắt 1 nguồn lực** (12') → Pha 3 **thêm bài toán giải mã** (13') → Pha 4 chạy tổng hợp (10') |
+| 3. Ghi dữ liệu | song song | ACT ghi thời gian từng pha, cách phân bổ, cách đổi chiến thuật |
+| 4. **Đúc kết** | **25 phút** | 6 câu hỏi bên dưới |
+| 5. Neo & chuyển | 7 phút | Team viết **quy trình 5 bước** để đội khác dùng lại được |
+
+**Luật.** Đội vận chuyển vật tư qua 4 chặng bằng dụng cụ được cấp. Sau pha 1, MC **thu lại một dụng cụ**
+mà đội đang dùng nhiều nhất. Pha 3 thêm một bài toán phải giải đúng mới được đi tiếp.
+Ràng buộc an toàn: không mang vác người, không chạy trên nền trơn, vật nặng tối đa **3 kg/người**,
+**mọi mức đều được điểm tham gia như nhau** (giữ nguyên nguyên tắc D3).
+
+**Lời dẫn mẫu cho MC/Trainer**
+
+> "Pha hai, thầy sẽ lấy đi một dụng cụ. Thầy nói trước để các em biết — vì thầy không thử độ bất ngờ,
+> thầy thử **khả năng chuẩn bị**. Đội nào ở pha một đã nghĩ 'nếu mất cái này thì làm sao' sẽ nhẹ nhàng
+> hơn hẳn ở pha hai."
+
+> "Đội nhanh nhất chưa chắc là đội thắng hôm nay. Có ba tiêu chí: **thời gian · số lần đổi chiến thuật
+> thành công · quy trình 5 bước viết cho đội khác dùng lại được.** Tiêu chí thứ ba nặng nhất — vì làm được
+> một lần là may, viết ra để người khác làm lại được mới là năng lực."
+
+> "Nhắc lại luật của ngày ba, vẫn còn hiệu lực: vật nặng tối đa ba cân một người, không ai vác người,
+> và thẻ dừng vẫn dùng được bất cứ lúc nào."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Dụng cụ bị thu là gì? Đội em thay bằng cách nào?
+2. **Mô tả:** Pha nào đội em nhanh nhất? Vì sao?
+3. **Cảm nhận:** Lúc bị thu dụng cụ, phản ứng đầu tiên trong đội là gì — bực, cười, hay bắt tay tìm cách?
+4. **Cảm nhận:** Có ai trong đội thấy ý kiến mình bị bỏ qua vì đang vội không?
+5. **Nguyên lý:** Vì sao viết được **quy trình 5 bước** lại khó hơn làm xong nhiệm vụ?
+6. **Áp dụng:** Trong việc học của em, có việc nào em làm được nhưng chưa viết thành quy trình để lặp lại không?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Thời gian từng pha; số lần đổi chiến thuật | `BM-01` | ACT team |
+| Khả năng chịu áp lực thời gian | `BM-01` | ACT team |
+| Chất lượng **quy trình 5 bước** → chỉ báo thuộc tính **khái quát** | `BM-01` + `BM-07` | ACT team |
+| Ai bị bỏ qua ý kiến khi đội vội | `BM-01` | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | 3 pha, không có pha giải mã (hoặc bài toán rất đơn giản). Vật nặng tối đa **1,5 kg/người**. Cự ly giảm 40%. Quy trình 5 bước vẽ thành tranh |
+| **12–15** | Chuẩn, 4 pha |
+| **16–18** | Thêm ràng buộc **"ngân sách hành động"**: mỗi lần dùng dụng cụ tốn điểm, đội phải tối ưu chi phí. Yêu cầu quy trình viết dạng bảng có điều kiện rẽ nhánh ("nếu… thì…") |
+
+## 4. Buổi tối (19:30 – 21:00) — "Bản thiết kế học tập xuất sắc"
+
+**Mục tiêu buổi.** Mỗi học viên hoàn thành **Bản thiết kế học tập xuất sắc 6 ô** cho năm học tới, trong đó
+ô 3 (khung giờ) và ô 4 (xử lý mất tập trung) phải có **nội dung cụ thể, không dùng từ "cố gắng"**.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | Trainer giải thích 6 ô, làm mẫu ô 4 trên bảng |
+| 2. Trải nghiệm | 50 phút | Viết 6 ô (32') → **Vòng "thử phá"** trong cặp (10') → Sửa lại (8') |
+| 3. Ghi dữ liệu | song song | ACT chấm chất lượng từng ô, ghi mức hỗ trợ |
+| 4. **Đúc kết** | **18 phút** | 6 câu hỏi bên dưới |
+| 5. Neo & chuyển | 8 phút | Ký tên, cất vào hồ sơ **để trao cho gia đình ở D7** |
+
+**Sáu ô bắt buộc**
+
+| Ô | Nội dung | Tiêu chí đạt |
+|---|---|---|
+| 1 | **Mục tiêu năm học** — SMART, ≥ 3 lĩnh vực | Có số và mốc thời gian ở cả 3 |
+| 2 | **Ba môn/kỹ năng ưu tiên** và lý do | Lý do gắn với chân dung tương lai D2 |
+| 3 | **Khung giờ học cố định trong tuần** | Có giờ bắt đầu cụ thể, gắn vào **một việc đã cố định** (sau bữa tối, sau khi tắm) |
+| 4 | **Cách xử lý khi mất tập trung** — 3 giải pháp cụ thể | Cả 3 phải là thay đổi **môi trường hoặc quy trình**, không phải "cố gắng tập trung hơn" |
+| 5 | **Người hỗ trợ và cách nhờ hỗ trợ** | Ghi rõ **câu sẽ nói** để nhờ |
+| 6 | **Cách tự kiểm tra tiến độ mỗi tuần** | Có ngày cố định trong tuần và cách ghi |
+
+**Vòng "thử phá" (10').** Bạn trong cặp đọc bản thiết kế và **cố tìm chỗ nó sẽ hỏng**: "Nếu hôm đó em về
+muộn thì sao?", "Nếu điện thoại ở trong phòng thì sao?", "Nếu ba ngày liền em quên thì sao?".
+Đây là bài tập dẫn nhập `recovery time` — chủ đề chính của Tầng 3.
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Ô số bốn là ô thầy đọc kỹ nhất. Nếu em viết 'cố gắng tập trung hơn', thầy trả lại bản thiết kế.
+> Vì đó là điều em đã cố suốt mấy năm qua rồi. Ô này cần **thay đổi môi trường hoặc quy trình**:
+> điện thoại để ở phòng khác, đặt hẹn giờ 25 phút, viết sẵn ba dòng đầu trước khi bắt đầu."
+
+> "Bây giờ đưa bản thiết kế cho bạn bên cạnh, và nhiệm vụ của bạn ấy là **tìm cách làm nó hỏng**.
+> Đây không phải là chê. Một kế hoạch chưa bị ai thử phá thì lần đầu gặp sự cố ngoài đời sẽ vỡ."
+
+> "Cuối cùng, câu hỏi mà cả hệ thống của Học viện quan tâm nhất không phải 'em có đứt chuỗi không' —
+> **ai cũng đứt**. Câu hỏi là **'đứt rồi bao lâu em quay lại'**. Ba ngày là tốt. Hãy viết sẵn câu trả lời
+> cho ngày em đứt, ngay từ hôm nay, lúc em còn đang khoẻ."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Ba giải pháp ở ô 4 của em là gì? Cái nào là thay đổi môi trường?
+2. **Mô tả:** Bạn kiểm chéo đã tìm ra chỗ nào trong bản thiết kế của em sẽ hỏng?
+3. **Cảm nhận:** Khi bạn "thử phá" kế hoạch của em, em thấy thế nào?
+4. **Cảm nhận:** Ô nào em viết dễ nhất? Ô nào khó nhất?
+5. **Nguyên lý:** Vì sao gắn giờ học vào **một việc đã cố định** lại bền hơn là đặt giờ theo đồng hồ?
+6. **Áp dụng:** Nếu em đứt chuỗi 3 ngày, câu đầu tiên em sẽ tự nói với mình là gì?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Bản thiết kế 6 ô — lưu hồ sơ, **trao cho gia đình D7** | Hồ sơ học viên | ACT team |
+| Ô 4: giải pháp thuộc loại môi trường/quy trình hay loại "cố gắng" | `BM-05` | ACT |
+| Ô 5: câu học viên định nói để nhờ hỗ trợ — dùng ở Review D7 | Hồ sơ học viên | ACT team |
+| Câu trả lời cho "đứt chuỗi 3 ngày" — baseline nhận thức về `recovery time` | `BM-08` | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | 4 ô (mục tiêu – giờ học – khi mất tập trung – ai giúp). Kết thúc **20:15**. ACT viết hộ, học viên vẽ minh hoạ. Vòng "thử phá" làm cả nhóm cùng ACT, không làm cặp |
+| **12–15** | Chuẩn, 6 ô |
+| **16–18** | Thêm ô 7: **"công cụ AI tôi dùng và ranh giới tôi tự đặt"** — nêu 1 việc dùng AI để học và 1 việc tự đặt luật không dùng (`NL-18`, quy tắc trung thực học thuật). Thêm ô 8: mốc kiểm 30–60–90 ngày |
+
+## 5. Việc của ACT trong ngày 4
+
+| Thời điểm | Việc | Tiêu chí làm đúng |
+|---|---|---|
+| 06:00 | Cùng Y tế kiểm nhóm có va chạm D3; xác nhận ai giảm tải hôm nay | Danh sách giảm tải có trước 06:35 |
+| 06:20 | **ĐD-1** + bấm giờ tập hợp (ngày thứ 4 — so sánh chuỗi 4 ngày) | `BM-08` có đủ 4 điểm dữ liệu |
+| 07:40 – 08:00 | Quan sát bàn giao Leader, **không can thiệp** | Ghi cách Leader cũ bàn giao và cách Leader mới nhận việc |
+| 08:00 – 09:30 | Chấm chất lượng mục tiêu; ghi mức tự chủ | Mỗi học viên có mức tự chủ được ghi (tự làm / cần mẫu / cần kèm) |
+| 09:45 – 11:15 | Trực trạm tư vấn: **chỉ hỏi, không viết hộ** | Không bảng nào có nét chữ của ACT ở cột mục tiêu |
+| 11:15 | Dẫn đúc kết theo team | Mỗi học viên nói ≥ 1 lần |
+| 11:45 / 14:00 / 18:30 / 21:20 | **ĐD-2, 3, 4, 5** | |
+| 12:30 – 13:45 | Trực nghỉ trưa | Ghi ai đã 3 ngày liền ngủ trưa kém → báo Y tế |
+| 14:00 – 15:30 | Ghi cách nhóm ra quyết định khi mất thông tin | Có ≥ 1 dòng cho mỗi học viên |
+| 15:45 – 17:15 | Bấm giờ 4 pha; quan sát ai bị bỏ qua ý kiến | Số liệu 4 pha đầy đủ cho từng team |
+| 17:35 – 18:30 | Giám sát bể bơi cùng cứu hộ | Đếm đầu người mỗi 10 phút |
+| 19:30 – 21:00 | Chấm 6 ô; **trả lại bản thiết kế** nếu ô 4 chỉ ghi "cố gắng"; tổ chức gọi về nhà đợt bù | 100% học viên đã gọi về nhà ở D3 hoặc D4 |
+| 21:00 – 21:20 | Hoàn tất `BM-01`, `BM-05`, `BM-08`; chụp ảnh bảng mục tiêu và bản thiết kế | Hồ sơ đủ cho 100% học viên trong team |
+| 21:35 | Dự họp đội | Mang theo: **giả thuyết GITA sơ bộ cho từng học viên** kèm bằng chứng ủng hộ **và** bằng chứng phản bác |
+
+## 6. An toàn ngày 4
+
+**Rủi ro đặc thù và biện pháp**
+
+| Rủi ro | Vì sao xảy ra ở D4 | Biện pháp |
+|---|---|---|
+| **Mệt tích luỹ đỉnh điểm sau D3** | Ngày 3 cường độ cao, ngày 4 là ngày dễ chấn thương thứ phát | Giảm 30% cường độ thể dục sáng; buổi chiều 2 giới hạn 3 kg/người; Y tế kiểm nhóm va chạm từ 06:00 |
+| **Đặt mục tiêu quá cao dẫn tới thất vọng sau trại** | Không khí trại phấn khích, học viên hứa nhiều | Tiêu chí "khó vừa" ở câu hỏi 3; ACT kiểm và cùng học viên hạ số nếu vượt xa năng lực hiện tại; **không người lớn nào được khen mục tiêu vì nó cao** |
+| **Áp lực viết mục tiêu để làm vừa lòng bố mẹ** | Học viên biết bảng này sẽ đưa cho gia đình ở D7 | Nói rõ: học viên có quyền **giữ riêng 1 mục tiêu không đưa vào bản trao gia đình**; ACT tôn trọng tuyệt đối |
+| **Chán, mất tập trung do ngày thiên về viết** | 3 khối viết trong 1 ngày | Xen kẽ trạm tư vấn (di chuyển), buổi chiều 2 vận động; giải lao đúng giờ; cho phép viết ở nhiều tư thế/vị trí |
+| **Đuối nước ở khối bơi** | Có bể bơi từ 17:35 | Như D2: cứu hộ + ACT, đếm đầu người mỗi 10 phút, cấm bơi khi có sấm |
+| **Học viên bị bỏ qua khi nhóm vội (chiều 1 và 2)** | Bài toán có sức ép thời gian | ACT ghi tên; MC dừng đồng hồ 60 giây nếu thấy 1 thành viên không được nói suốt 10 phút |
+
+**Điểm danh:** đủ 5 mốc, thêm đếm vào/ra bể bơi.
+
+**Điều kiện dừng hoạt động:** như danh sách chung; bổ sung cho D4 — (a) dừng buổi chiều 2 nếu nhiệt độ
+≥ 33 °C hoặc nền trơn sau mưa; (b) dừng và chuyển sang hoạt động nhẹ nếu > 30% học viên trong team có dấu
+hiệu kiệt sức (ngáp liên tục, nằm ra sân, không phản hồi hiệu lệnh); (c) dừng khối viết buổi tối sớm 15 phút
+nếu chất lượng chú ý giảm rõ — **ưu tiên giấc ngủ hơn hoàn thành sản phẩm**.
+
+## 7. Cuối ngày 4 — họp đội 20 phút (21:35 – 21:55)
+
+| Phút | Nội dung | Ai |
+|---|---|---|
+| 0–3 | An toàn – y tế: chấn thương thứ phát từ D3, mức mệt chung, thời tiết D5 | Y tế + Quản trại |
+| 3–10 | Mỗi ACT báo cáo theo team, 90 giây | ACT team |
+| 10–16 | **Mốc giữa trại: rà chuẩn dữ liệu.** Học viên nào chưa đủ dữ liệu để lập Bản đồ Nhận diện | Trainer trưởng + ACT trưởng |
+| 16–20 | Chuẩn bị D5 và phân công | Quản trại |
+
+**Mỗi ACT báo đúng 4 mục:**
+1. **Số:** số học viên có bảng mục tiêu đạt ≥ 2 lĩnh vực · số học viên có bản thiết kế đủ 6 ô · mức tự chủ trung bình của team.
+2. **Giả thuyết GITA sơ bộ** cho **từng** học viên: nêu **1 giả thuyết + 1 bằng chứng ủng hộ + 1 bằng chứng phản bác**. Bắt buộc dùng từ "giả thuyết", cấm dùng "nguyên nhân là".
+3. **Ba tên cần lưu ý** kèm biểu hiện quan sát được.
+4. **Học viên còn trống dữ liệu** ở nhóm nào (13.2 Hành vi / 13.5 Tự quản trị / 13.6 Động lực / 13.9 Tài năng) — để D5–D6 bù.
+
+**Dấu hiệu phải báo ngay trong đêm:** chấn thương từ D3 nặng lên · học viên nói tới việc "về nhà chắc chắn
+không làm được đâu" kèm biểu hiện buồn kéo dài · học viên viết mục tiêu có nội dung gây lo ngại về an toàn ·
+mọi mục trong ngưỡng leo thang chung.
+
+**Chuẩn bị cho ngày 5:** in bảng **Thói quen 21 ngày** khổ A4 cho từng học viên · chuẩn bị bộ ảnh
+"môi trường học tập" (12 ảnh phòng học/góc học khác nhau) để phân tích · vật tư cho hoạt động 5S nâng cao ·
+chuẩn bị **hộp neo** (mỗi học viên 1 vật nhỏ làm neo thói quen) · rà danh sách học viên cần giảm tải vận động.
+
+> **Sai lầm thường gặp ở ngày này:** Trainer và ACT **khen mục tiêu vì nó cao**. Một học viên viết
+> "Toán từ 5,0 lên 9,0 trong một học kỳ" và được cả trại vỗ tay; một học viên viết "từ 5,0 lên 6,0" thì
+> được đáp lại bằng im lặng. Sau trại, học viên thứ nhất đứt trong hai tuần và kết luận rằng mình không
+> làm được gì cả — còn học viên thứ hai đã học được rằng nói thật thì không ai vỗ tay. Cả hai kết quả đều
+> do người lớn tạo ra. **Kiểm soát cụ thể:** ghi nhận theo **độ cụ thể và tính khả thi** của mục tiêu, không
+> theo độ cao của con số; câu chuẩn của ACT là *"Con số này em dựa vào đâu?"*, không phải *"Hay quá, cao thế!"*.
+
+---
+
+# NGÀY 5 · HÀNH ĐỘNG — THÓI QUEN — MÔI TRƯỜNG
+
+Ngày 5 phải chuyển mục tiêu của ngày 4 thành **một chuỗi hành động có neo, có môi trường được sửa, và có
+cách quay lại khi đứt**. Ngày này đặt sau ngày mục tiêu vì đích phải có trước đường đi, và đặt trước ngày
+dẫn dắt vì học viên chỉ dẫn dắt được người khác khi đã tự vận hành được một hệ thống nhỏ của chính mình.
+
+Trọng tâm trụ **A – Hành động**, năng lực `NL-08` Xây dựng thói quen, `NL-06` Quản lý thời gian,
+`NL-09` Tự quản. Đây cũng là **ngày quan trọng thứ hai để thu tín hiệu điểm mạnh** sau D2 — vì hôm nay
+học viên làm việc thật, dài, và ít được nhắc.
+
+## 1. Lịch ngày 5
+
+| Giờ | Hoạt động | Ai phụ trách | Ghi chú |
+|---|---|---|---|
+| 06:00 – 06:20 | Thức dậy, vệ sinh, gấp chăn màn — **ACT không đánh thức lần hai** | ACT phòng | **Bài kiểm tra tự quản**: đo `start rate` không hỗ trợ |
+| 06:20 – 06:35 | Tập hợp · **ĐD-1** · nghi thức chào | MC + ACT | So sánh với D1: giảm bao nhiêu lần nhắc |
+| 06:35 – 06:50 | Thể dục + nghi thức biết ơn | MC | |
+| 06:50 – 07:40 | Ăn sáng + 5S — **team tự chấm 5S, ACT chỉ đối chiếu** | Team + ACT | `BM-03` |
+| 07:40 – 08:00 | Sinh hoạt team | Leader + ACT | |
+| **08:00 – 09:30** | **BUỔI SÁNG 1 — "Neo, không phải quyết tâm": cách một thói quen thật sự hình thành** | Trainer | Khối kiến thức trọng tâm |
+| 09:30 – 09:45 | Giải lao — uống nước bắt buộc | ACT | |
+| **09:45 – 11:15** | **BUỔI SÁNG 2 — "Xưởng môi trường": sửa chỗ học của em** | Trainer + ACT | Có phần dựng mô hình góc học tập |
+| 11:15 – 11:35 | **Đúc kết buổi sáng** | Trainer | |
+| 11:35 – 11:45 | 5S khu vực | Team | |
+| 11:45 – 12:30 | Ăn trưa · **ĐD-2** | Quản trại | |
+| 12:30 – 13:45 | **Nghỉ trưa bắt buộc ≥ 45 phút** | ACT trực | |
+| 13:45 – 14:00 | Tập hợp · **ĐD-3** | MC | |
+| **14:00 – 15:30** | **BUỔI CHIỀU 1 — "Bảng 21 ngày": thiết kế chuỗi và đường quay lại** | Trainer + ACT | Sản phẩm mang về nhà |
+| 15:30 – 15:45 | Giải lao — uống nước | ACT | |
+| **15:45 – 17:15** | **BUỔI CHIỀU 2 — "Bàn tay vàng": làm ra một sản phẩm thật trong 90 phút** | MC + ACT | Ngoài trời/xưởng. Thu tín hiệu điểm mạnh |
+| 17:15 – 17:35 | **Đúc kết buổi chiều** + công bố điểm theo team | Trainer | |
+| 17:35 – 18:30 | Bơi có cứu hộ / tắm giặt | Cứu hộ + ACT | |
+| 18:30 – 19:30 | Ăn tối · **ĐD-4** | Quản trại | |
+| **19:30 – 21:00** | **BUỔI TỐI — "Bánh đà giá trị" + ghi nhận chéo giữa các team** | Trainer + ACT | Điểm Giá trị do team đề cử chéo |
+| 21:00 – 21:20 | Nhật ký `BM-02` + `BM-05` tự đánh giá lần 2 + ACT chấm rubric | Học viên + ACT | So sánh với `BM-05` ngày 2 |
+| 21:20 – 21:30 | Vệ sinh, về phòng · **ĐD-5** | ACT phòng | |
+| **21:30** | **Tắt đèn** (9–11: 21:15) | ACT trực đêm | |
+| 21:35 – 21:55 | **Họp đội cuối ngày 20 phút** | Quản trại | |
+| 21:55 – 22:15 | Giao ban — **chốt danh sách tín hiệu điểm mạnh đủ 3/học viên** | Trainer trưởng | |
+| 23:00 / 02:00 | Kiểm phòng đêm 2 lượt | Trực đêm | |
+
+## 2. Buổi sáng
+
+### Buổi sáng 1 (08:00 – 09:30) — "Neo, không phải quyết tâm"
+
+**Mục tiêu buổi.** Học viên **gắn được 1 hành động mục tiêu vào 1 neo có sẵn** trong ngày của mình, viết
+theo công thức chuẩn, và giải thích được **vì sao quyết tâm không phải là cơ chế**.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | Trainer: hôm nay không nói về ý chí, nói về **thiết kế** |
+| 2. Trải nghiệm | 40 phút | **Bản đồ một ngày của em** (14') → **Săn neo** (12') → **Viết công thức neo** (14') |
+| 3. Ghi dữ liệu | song song | ACT ghi cấu trúc ngày của học viên — dữ liệu 13.3 Thói quen và 13.5 Tự quản trị |
+| 4. **Đúc kết** | **26 phút** | 6 câu hỏi, vòng team 13' + chung 13' |
+| 5. Neo & chuyển | 8 phút | Mỗi học viên nhận **một vật neo** nhỏ, viết công thức lên thẻ gắn kèm |
+
+**Chi tiết nhịp 2**
+
+**Bản đồ một ngày của em (14').** Học viên vẽ dải thời gian một ngày thường ở nhà, đánh dấu:
+việc **cố định** (dậy, ăn, đi học, về nhà, ăn tối, đi ngủ) và việc **trôi nổi** (học bài, đọc sách, tập thể dục).
+Trainer chỉ ra: **việc trôi nổi luôn bị việc bất ngờ nuốt mất** — không phải vì thiếu quyết tâm.
+
+**Săn neo (12').** Neo = một việc **đã cố định, hằng ngày, không cần nhớ cũng làm**. Học viên liệt kê
+≥ 6 neo trong ngày của mình (ví dụ: cất cặp sau khi về nhà · rửa bát xong · đánh răng tối · cắm sạc điện thoại).
+Yêu cầu: neo phải **xảy ra ở mọi ngày trong tuần**, kể cả cuối tuần, nếu không thì chọn 2 neo.
+
+**Viết công thức neo (14').** Công thức chuẩn của trại, dán ở mọi phòng:
+
+> **SAU KHI [neo] · TÔI SẼ [hành động ≤ 10 phút] · TẠI [địa điểm cụ thể]**
+
+Ví dụ đạt: *"Sau khi ăn tối xong và cất bát, tôi sẽ ngồi vào bàn viết 3 dòng đầu bài văn, tại bàn học ở phòng ngủ."*
+Ví dụ chưa đạt: *"Mỗi tối tôi sẽ chăm học hơn."*
+Ba tiêu chí kiểm: **có neo cụ thể · hành động dưới 10 phút · có địa điểm**.
+
+> **Nguyên tắc chuyên môn nhắc lại tại buổi này:** khi một thói quen không hình thành, **giả thuyết đầu
+> tiên không phải "thiếu ý chí"**. Thứ tự kiểm: hành động có quá lớn không → neo có đúng không →
+> môi trường có cản không → có sự kiện đời sống không → **cuối cùng mới xét động lực**.
+> Trainer dán thứ tự này lên bảng và dùng nó suốt hai buổi hôm nay.
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Nhìn vào bản đồ ngày của em. Những việc đã cố định — dậy, ăn, đi học — em có bao giờ phải quyết tâm để
+> làm không? Không. Em chỉ làm thôi. Còn những việc trôi nổi thì ngày nào cũng phải quyết tâm lại từ đầu.
+> **Vấn đề không nằm ở ý chí của em. Nó nằm ở chỗ việc đó chưa được gắn vào đâu cả.**"
+
+> "Công thức của trại có ba phần và cả ba đều bắt buộc: **sau khi… tôi sẽ… tại…**. Thiếu 'sau khi' thì không
+> có neo. Thiếu 'tại' thì đến lúc làm em còn phải quyết định ngồi ở đâu — mà mỗi quyết định thêm là một cơ
+> hội để bỏ."
+
+> "Hành động phải **dưới mười phút**. Nhiều bạn phản đối: mười phút thì học được gì. Thầy trả lời thế này:
+> mười phút mà làm được 21 ngày liền thì hơn hai tiếng mà làm được ba hôm. **Chúng ta đang xây cái neo,
+> chưa xây con tàu.** Khi neo đã chắc, kéo dài thời gian là việc dễ."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Trong bản đồ ngày của em, có bao nhiêu việc cố định và bao nhiêu việc trôi nổi?
+2. **Mô tả:** Neo em chọn là gì? Nó xảy ra vào khoảng mấy giờ, kể cả cuối tuần chứ?
+3. **Cảm nhận:** Khi nhìn thấy việc học của mình nằm ở nhóm "trôi nổi", em nghĩ gì?
+4. **Cảm nhận:** Có bao giờ em bị nói là "thiếu quyết tâm" chưa? Sau buổi sáng nay em nghĩ lại thế nào?
+5. **Nguyên lý:** Vì sao gắn vào một việc đã cố định lại bền hơn đặt chuông báo thức?
+6. **Áp dụng:** Đọc to công thức của em. Ngay tối nay trong trại, em có neo nào tương đương để thử không?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Cấu trúc ngày ở nhà (số việc cố định / trôi nổi) — dữ liệu 13.3 và 13.1 Môi trường | `BM-05` | ACT team |
+| Công thức neo — đủ 3 phần hay không | `BM-05` | ACT chấm |
+| Học viên không tìm được neo nào ổn định | `BM-01` cờ vàng — **dữ liệu về môi trường sống, không phải về học viên** | ACT team |
+| Phản ứng với câu hỏi 4 (từng bị gọi là thiếu quyết tâm) — nguyên văn, dùng ở Review D7 | `BM-01` | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Bản đồ ngày vẽ bằng tranh 6 ô. Chỉ 3 neo. Công thức rút còn 2 phần: "Sau khi… con sẽ…". Hành động ≤ 5 phút. Khối kiến thức 60 phút |
+| **12–15** | Chuẩn |
+| **16–18** | Thêm khái niệm **chuỗi neo** (2–3 hành động nối tiếp sau một neo) và **neo ngược** (loại bỏ một tín hiệu kích hoạt thói quen không mong muốn: để điện thoại ngoài phòng trước khi ngồi vào bàn). Yêu cầu viết cả 2 loại |
+
+### Buổi sáng 2 (09:45 – 11:15) — "Xưởng môi trường": sửa chỗ học của em
+
+**Mục tiêu buổi.** Học viên **chỉ ra ≥ 4 yếu tố môi trường** đang cản việc học của mình và **đề xuất
+3 thay đổi làm được trong tuần đầu về nhà**, trong đó ≥ 2 thay đổi **không cần ai cho phép**.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 5 phút | MC: môi trường là biến dễ đổi nhất, và bị bỏ quên nhiều nhất |
+| 2. Trải nghiệm | 48 phút | **Đọc 12 bức ảnh** (12') → **Vẽ và mổ xẻ góc học của em** (18') → **Dựng mô hình góc học lý tưởng bằng vật liệu trại** (18') |
+| 3. Ghi dữ liệu | song song | ACT ghi mô tả môi trường học tại nhà — nhóm 13.1 |
+| 4. **Đúc kết** | **20 phút** | 6 câu hỏi bên dưới |
+| 5. Neo & chuyển | 7 phút | Viết **3 thay đổi** vào phiếu, đánh dấu cái nào cần gia đình đồng ý (dùng ở D7) |
+
+**Chi tiết nhịp 2**
+
+- **Đọc 12 bức ảnh (12').** 12 ảnh góc học khác nhau. Nhóm xếp theo thứ tự "dễ tập trung nhất → khó nhất"
+  và **nói lý do bằng yếu tố quan sát được** (ánh sáng, tiếng ồn, số vật gây nhiễu trong tầm mắt, khoảng
+  cách tới điện thoại/TV, ghế và bàn có vừa người không, đồ dùng có ở trong tầm với không).
+- **Vẽ và mổ xẻ góc học của em (18').** Học viên vẽ góc học thật của mình, khoanh tròn **4 yếu tố cản**.
+  ACT hỏi bằng câu mô tả, **không nhận xét gia đình**: "Bàn em quay mặt về đâu?", "Từ chỗ em ngồi nhìn
+  thấy TV không?", "Điện thoại lúc học nằm ở đâu?".
+- **Dựng mô hình (18').** Nhóm dựng mô hình bằng bìa/vật liệu trại. Tiêu chí: **giảm số vật gây nhiễu trong
+  tầm mắt · tăng ánh sáng · đưa đồ dùng cần vào tầm với · đưa vật gây nhiễu ra ngoài tầm với**.
+
+> **Nguyên tắc bắt buộc với ACT ở buổi này:** nhiều học viên học ở phòng khách, ở góc bếp, ở giường, chung
+> phòng với em nhỏ. **Không câu nào của người lớn được ngụ ý rằng gia đình học viên làm chưa đúng.**
+> Ghi hiện trạng bằng mô tả; ở D7 trình bày với gia đình theo hướng "một việc thay thế làm được ngay trong
+> tuần", không quy lỗi. Giải pháp phải phù hợp với điều kiện thật: nếu học viên không có bàn riêng, thiết
+> kế giải pháp cho bàn ăn (hộp đựng đồ học dọn ra – cất vào trong 60 giây).
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Trong bốn thứ quyết định việc em có làm được hay không — nhiệm vụ, neo, môi trường, động lực — thì
+> **môi trường là thứ dễ đổi nhất và bị bỏ quên nhiều nhất**. Đổi động lực mất nhiều tháng. Xoay cái bàn
+> mất năm phút."
+
+> "Không có góc học nào là sai. Có bạn học ở bàn ăn, có bạn học chung phòng với em nhỏ — đó là thực tế của
+> nhà em, và thầy không đánh giá. Việc của chúng ta là hỏi: **trong điều kiện thật của nhà em, đổi được gì?**"
+
+> "Ba thay đổi em viết ra, thầy yêu cầu **ít nhất hai cái em tự làm được mà không cần xin phép ai**.
+> Vì nếu cả ba đều phải chờ bố mẹ đồng ý, thì tuần sau về nhà em vẫn chưa bắt đầu."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Bốn yếu tố cản ở góc học của em là gì?
+2. **Mô tả:** Trong 12 bức ảnh, ảnh nào giống chỗ học của em nhất?
+3. **Cảm nhận:** Khi vẽ ra góc học của mình, em nhận ra điều gì mà trước đây em không để ý?
+4. **Cảm nhận:** Thay đổi nào em thấy dễ làm nhất? Thay đổi nào làm em ngại vì phải nói với bố mẹ?
+5. **Nguyên lý:** Vì sao chỉ cần đưa điện thoại ra khỏi tầm mắt đã làm việc học dễ hơn, dù em không hề chạm vào nó?
+6. **Áp dụng:** Thay đổi nào em làm được **ngay trong ngày đầu tiên** về nhà? Vào lúc nào?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Mô tả môi trường học tại nhà — nhóm 13.1, **bằng câu mô tả, không đánh giá** | `BM-05` | ACT team |
+| 3 thay đổi đề xuất, đánh dấu cái nào cần gia đình đồng ý | Hồ sơ học viên, **dùng ở Review D7** | ACT team |
+| Học viên không có không gian học ổn định | `BM-01` — đưa vào phần "Vùng cần giải mã sâu ở Tầng 2" | ACT team |
+| Mức nhiễu học viên tự nhận (số vật gây nhiễu trong tầm mắt) | `BM-08` baseline | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | 6 ảnh thay vì 12. Chỉ 2 yếu tố cản, 2 thay đổi. Dựng mô hình bằng lego/bìa, làm theo nhóm. Không yêu cầu vẽ tỉ lệ |
+| **12–15** | Chuẩn |
+| **16–18** | Thêm phần **môi trường số**: liệt kê ứng dụng gây nhiễu, thời lượng ước tính/ngày, và 2 thay đổi cụ thể về thiết bị (tắt thông báo, để máy ở phòng khác, hẹn giờ). Thêm câu hỏi: "Môi trường nào ở trường đang cản em, và em xoay sở thế nào?" |
+
+## 3. Buổi chiều
+
+### Buổi chiều 1 (14:00 – 15:30) — "Bảng 21 ngày": thiết kế chuỗi và đường quay lại
+
+**Mục tiêu buổi.** Mỗi học viên hoàn thành **Bảng thói quen 21 ngày** cho **1 hành động duy nhất**, có
+neo, có cách đánh dấu, và có **kế hoạch quay lại khi đứt** viết sẵn.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | Trainer: chọn **một** thói quen, không phải năm |
+| 2. Trải nghiệm | 40 phút | **Chọn một** (8') → **Điền bảng 21 ngày** (14') → **Kịch bản đứt chuỗi** (18') |
+| 3. Ghi dữ liệu | song song | ACT ghi lựa chọn và chất lượng kế hoạch quay lại |
+| 4. **Đúc kết** | **26 phút** | 6 câu hỏi, vòng team 13' + chung 13' |
+| 5. Neo & chuyển | 8 phút | Ký tên vào bảng; cất vào hồ sơ trao gia đình D7 |
+
+**Bảng thói quen 21 ngày** *(A4, in sẵn)*: 21 ô đánh dấu · dòng công thức neo · dòng "dấu hiệu tôi sắp bỏ" ·
+dòng "việc tôi làm khi đã đứt 1 ngày" · dòng "việc tôi làm khi đã đứt 3 ngày" · ô ghi tên **một người
+sẽ hỏi tôi mỗi tuần** và **câu người đó sẽ hỏi**.
+
+**Kịch bản đứt chuỗi (18').** Đây là phần quan trọng nhất của buổi. Ba tình huống, học viên viết sẵn phản ứng:
+
+| Tình huống | Câu hỏi học viên phải trả lời sẵn |
+|---|---|
+| **Đứt 1 ngày** | Ngày mai em bắt đầu lại **ở phiên bản nhỏ hơn** như thế nào? (ví dụ: 10 phút → 3 phút) |
+| **Đứt 3 ngày** | Em sẽ nói gì với chính mình? Em báo cho ai? |
+| **Đứt 7 ngày trở lên** | Em sẽ **đổi thiết kế** chỗ nào — nhiệm vụ, neo, hay môi trường? *(không đổi "quyết tâm")* |
+
+> **`recovery time` là KPI quan trọng nhất của hệ 90 ngày** (tốt ≤ 3 ngày). Trại không dạy học viên
+> "đừng bao giờ đứt" — điều đó không xảy ra với ai. Trại dạy **quay lại nhanh**.
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Mỗi em chọn **một** thói quen. Một thôi. Bạn nào viết ba, thầy sẽ đề nghị bỏ hai. Không phải vì em không
+> làm nổi ba — mà vì ba thói quen mới cùng lúc thì thường hỏng cả ba, còn một thói quen giữ được 21 ngày
+> sẽ kéo theo cái thứ hai một cách tự nhiên."
+
+> "Bây giờ đến phần quan trọng nhất hôm nay: **em sẽ đứt chuỗi.** Thầy không nói 'có thể' — thầy nói
+> **sẽ**. Ai cũng đứt. Việc của người giỏi không phải là không đứt, mà là **quay lại trong ba ngày**.
+> Nên chúng ta viết sẵn kế hoạch quay lại từ hôm nay, lúc em còn đang khoẻ và còn nghĩ sáng suốt."
+
+> "Câu em viết cho ngày đứt ba hôm — thầy đề nghị đừng viết 'mình thật kém'. Câu đó không giúp em quay lại,
+> nó chỉ làm em tránh nhìn vào bảng. Hãy viết một câu **hướng về việc làm tiếp theo**, ví dụ:
+> **'Ba hôm rồi. Tối nay làm bản ba phút.'**"
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Thói quen em chọn là gì? Vì sao chọn nó chứ không phải cái khác?
+2. **Mô tả:** Người sẽ hỏi em mỗi tuần là ai? Câu người đó sẽ hỏi là gì?
+3. **Cảm nhận:** Khi thầy nói "em **sẽ** đứt chuỗi", em thấy thế nào?
+4. **Cảm nhận:** Câu em viết cho ngày đứt 3 hôm — đọc lại, em thấy nó tử tế với chính mình chưa?
+5. **Nguyên lý:** Vì sao "quay lại nhanh" lại quan trọng hơn "không bao giờ đứt"?
+6. **Áp dụng:** Ngày đầu tiên về nhà, em bắt đầu bảng này vào lúc nào? Ô số 1 đánh dấu lúc mấy giờ?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Bảng 21 ngày — lưu hồ sơ, **trao gia đình D7** | Hồ sơ học viên | ACT team |
+| Thói quen được chọn + lý do | `BM-05` | ACT |
+| Chất lượng kế hoạch quay lại (có phiên bản nhỏ hơn / chỉ có lời hứa) | `BM-05` | ACT |
+| Tên người hỗ trợ hằng tuần — **là đầu vào trực tiếp cho Review D7** | Hồ sơ học viên | ACT team |
+| Học viên không nêu được ai sẽ hỏi mình mỗi tuần | `BM-01` cờ vàng → Coach lưu ý ở D7 | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Bảng **14 ngày** thay vì 21, hành động ≤ 5 phút. Đánh dấu bằng sticker. Chỉ 1 kịch bản đứt (đứt 1 ngày). Người hỗ trợ mặc định là người lớn trong nhà, ACT giúp học viên viết câu đề nghị |
+| **12–15** | Chuẩn, 21 ngày |
+| **16–18** | Bảng 21 ngày + thêm cột **ghi mức độ khó cảm nhận mỗi ngày (1–5)** để tự phát hiện xu hướng. Thêm kịch bản thứ 4: "khi có kỳ thi/sự kiện lớn, tôi hạ thói quen xuống mức tối thiểu nào để **không đứt hẳn**" |
+
+### Buổi chiều 2 (15:45 – 17:15) — "Bàn tay vàng": làm ra một sản phẩm thật trong 90 phút
+
+**Mục tiêu buổi.** Team **hoàn thành một sản phẩm dùng được** theo tiêu chí kỹ thuật cho trước; mỗi thành
+viên **có ít nhất một phần việc của riêng mình** và nói được **phần đó dùng điểm mạnh nào**.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | MC nêu tiêu chí kỹ thuật, vật tư, an toàn dụng cụ |
+| 2. Trải nghiệm | 47 phút | Lập kế hoạch và chia việc (10') → Chế tạo (30') → Thử nghiệm và sửa (7') |
+| 3. Ghi dữ liệu | song song | **ACT thu tín hiệu điểm mạnh theo 3 dấu hiệu** — trọng tâm dữ liệu của D5 |
+| 4. **Đúc kết** | **25 phút** | 6 câu hỏi bên dưới |
+| 5. Neo & chuyển | 7 phút | Mỗi người viết lên **bàn tay giấy**: 5 ngón = 5 bài học, dán lên tranh A0 của team |
+
+**Sản phẩm.** Một trong ba lựa chọn (team tự chọn, cùng tiêu chí chấm): **(a)** cầu chịu tải bằng vật liệu
+nhẹ đỡ được 2 kg; **(b)** hệ dẫn nước/bóng qua 3 chặng bằng ống và máng; **(c)** tranh A0 "5 ngày của team"
+kèm phần thuyết minh 3 phút. Tiêu chí chấm theo team: **đạt tiêu chí kỹ thuật · mọi thành viên có phần
+việc riêng · sản phẩm sửa được sau thử nghiệm**.
+
+**An toàn dụng cụ:** kéo mũi tù · không dùng dao rọc giấy cho nhóm 9–11 · súng bắn keo chỉ dùng ở bàn có
+ACT trực · găng tay khi cắt dây · dọn dụng cụ sắc ngay sau khi dùng.
+
+**Lời dẫn mẫu cho MC/Trainer**
+
+> "Chín mươi phút, và cuối giờ phải có một thứ **dùng được**, không phải một thứ trông đẹp. Cầu của các em
+> sẽ được đặt hai cân lên. Nó gãy cũng không sao — nhưng nếu gãy, thầy sẽ hỏi các em gãy ở đâu và vì sao."
+
+> "Luật của buổi này: **mỗi người phải có một phần việc mang tên mình.** Nếu có một bạn cả buổi chỉ đứng
+> xem, thì đội đó chưa đạt tiêu chí, dù sản phẩm có tốt đến đâu."
+
+> "Trong lúc các em làm, anh chị ACT sẽ đi quanh và ghi chép. Các anh chị **không chấm ai giỏi ai kém** —
+> các anh chị ghi ba thứ: **việc gì em nắm nhanh, việc gì em làm mà không ai phải nhắc, và việc gì em làm
+> mà bạn bè tự nhiên khen.** Ba thứ đó gọi là tín hiệu điểm mạnh."
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Phần việc mang tên em là gì? Em làm nó trong bao lâu?
+2. **Mô tả:** Khi thử nghiệm, sản phẩm hỏng ở chỗ nào? Đội sửa thế nào?
+3. **Cảm nhận:** Lúc nào trong 90 phút em thấy thời gian trôi nhanh nhất?
+4. **Cảm nhận:** Có ai trong đội gần như không có việc gì không? Đội đã xử lý thế nào?
+5. **Nguyên lý:** Vì sao "sửa được sau khi thử" lại quan trọng hơn "làm đúng ngay lần đầu"?
+6. **Áp dụng:** Điểm mạnh em dùng hôm nay, em dùng lại được vào việc gì ở trường trong tháng tới?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| **Tín hiệu điểm mạnh theo 3 dấu hiệu** (vùng học nhanh · làm không cần thúc · chất lượng vượt trội) | `BM-07` — mục tiêu **≥ 3 tín hiệu/học viên tính đến hết D5** | ACT team |
+| Bằng chứng nguyên văn cho từng tín hiệu | `BM-07` | ACT team |
+| Học viên không có phần việc riêng | `BM-01` cờ đỏ | ACT team |
+| Phản ứng khi sản phẩm hỏng | `BM-01` | ACT team |
+
+> ⚠️ Ghi là **"tín hiệu điểm mạnh"**, kèm bằng chứng. **Chưa được gọi là tài năng.**
+> Xác nhận tài năng thuộc Tầng 5.
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | 60 phút thay vì 90. Vật liệu an toàn (bìa, ống hút, băng dính giấy). Không súng keo, không dao. Tiêu chí kỹ thuật hạ xuống (cầu đỡ 0,5 kg). ACT chia việc giúp để không ai bị bỏ trống |
+| **12–15** | Chuẩn |
+| **16–18** | Thêm ràng buộc **ngân sách vật tư** và yêu cầu **bản vẽ trước khi lấy vật tư**. Sau thử nghiệm, bắt buộc **một vòng cải tiến có đo lường** (ghi số trước – sau). Yêu cầu team viết 1 trang "quy trình để đội khác làm lại được" |
+
+## 4. Buổi tối (19:30 – 21:00) — "Bánh đà giá trị" và ghi nhận chéo
+
+**Mục tiêu buổi.** Team **diễn giải được 6 chu kỳ bánh đà** bằng chính trải nghiệm 5 ngày; mỗi học viên
+**ghi nhận ≥ 3 bạn bằng ví dụ cụ thể**; các team **đề cử chéo** cho Điểm Giá trị.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 6 phút | Trainer giới thiệu 6 chu kỳ bánh đà |
+| 2. Trải nghiệm | 48 phút | **Team gắn bằng chứng vào 6 chu kỳ** (20') → **Trình bày 3 phút/team** (16') → **Vòng ghi nhận chéo giữa các team** (12') |
+| 3. Ghi dữ liệu | song song | ACT ghi ai được đề cử, vì hành vi gì |
+| 4. **Đúc kết** | **19 phút** | 6 câu hỏi bên dưới |
+| 5. Neo & chuyển | 7 phút | Viết `BM-05` tự đánh giá lần 2, so với bản D2 |
+
+**Sáu chu kỳ bánh đà giá trị:** Hiểu nhau → Mục tiêu rõ ràng → Văn hoá – nội quy → Cống hiến tài năng →
+Hợp lực – đoàn kết → Chiến lược. Team phải gắn **một sự việc thật trong 5 ngày qua** vào mỗi chu kỳ.
+
+**Vòng ghi nhận chéo (12').** Mỗi team đề cử **2 học viên của team khác** cho Điểm Giá trị, kèm bằng chứng
+cụ thể. **Đây là quy tắc bắt buộc của hệ thi đua: Điểm Giá trị không do BTC chấm một mình.**
+Công bố theo tên **người được ghi nhận và hành vi**, không công bố bảng xếp hạng.
+
+**Lời dẫn mẫu cho Trainer**
+
+> "Bánh đà nặng nhất ở vòng quay đầu tiên. Ngày một các em đẩy rất mệt — không ai biết tên ai, không ai
+> biết luật. Bây giờ là ngày năm, bánh đà đang quay. Đó không phải phép màu, đó là **năm ngày các em đã đẩy**."
+
+> "Mỗi team đề cử hai bạn của **team khác**. Nghe có vẻ lạ, vì đây là cuộc thi. Nhưng thầy thiết kế như vậy
+> có lý do: **giá trị mà chỉ đội mình công nhận thì chưa phải giá trị.**"
+
+> "Khi đề cử, nói bằng chứng. Không nói 'bạn ấy tốt tính'. Nói: **'Chiều nay khi đội tớ thiếu băng dính,
+> bạn Minh của đội hai đã chạy sang đưa cuộn của đội mình, dù lúc đó đội bạn ấy cũng đang vội.'**"
+
+**Câu hỏi đúc kết**
+
+1. **Mô tả:** Chu kỳ nào team em gắn bằng chứng dễ nhất? Chu kỳ nào khó tìm bằng chứng?
+2. **Mô tả:** Em được team khác đề cử vì hành vi gì? Hoặc em đã đề cử ai, vì gì?
+3. **Cảm nhận:** Nghe một bạn đội khác nói về việc mình làm, em thấy thế nào?
+4. **Cảm nhận:** So với phiếu tự đánh giá ngày 2, hôm nay em thấy mình khác ở chỗ nào?
+5. **Nguyên lý:** Vì sao đội hợp lực tốt lại chạy nhanh hơn đội có nhiều người giỏi nhưng rời rạc?
+6. **Áp dụng:** Ngày mai là ngày dẫn dắt. Em sẽ nhận việc gì trong team để đội chạy nhanh hơn?
+
+**Dữ liệu cần thu**
+
+| Dữ liệu | Biểu mẫu | Ai ghi |
+|---|---|---|
+| Đề cử chéo: ai được đề cử, vì hành vi gì | `BM-01` + bảng Điểm Giá trị | ACT team |
+| Học viên **không được team nào đề cử và cũng không đề cử ai** | `BM-01` cờ vàng | ACT team |
+| `BM-05` tự đánh giá lần 2 — so sánh với lần 1 (D2) | `BM-05` | ACT team |
+| Khoảng chênh tự đánh giá D2 → D5 (tăng, giảm, không đổi) | `BM-08` | ACT team |
+
+**Điều chỉnh theo nhóm tuổi**
+
+| Nhóm | Điều chỉnh |
+|---|---|
+| **9–11** | Rút còn 3 chu kỳ (hiểu nhau – cùng làm – cùng vui). Kết thúc **20:15**. Ghi nhận chéo bằng cách dán ngôi sao lên áo bạn kèm nói một câu |
+| **12–15** | Chuẩn, 6 chu kỳ |
+| **16–18** | Thêm yêu cầu: mỗi team chỉ ra **chu kỳ nào đội mình đang yếu nhất** và **một việc sẽ làm ở D6 để cải thiện** — có đo kết quả vào tối D6 |
+
+## 5. Việc của ACT trong ngày 5
+
+| Thời điểm | Việc | Tiêu chí làm đúng |
+|---|---|---|
+| 06:00 | **Không đánh thức lần hai**; đếm số học viên tự dậy trong 20 phút | Có số chính xác ghi `BM-08` — đây là baseline `autonomy index` |
+| 06:20 | **ĐD-1** + đo số lần nhắc so với D1 | So sánh được: reminder rate D1 → D5 |
+| 06:50 – 07:40 | Để team tự chấm 5S; ACT chỉ đối chiếu sau | Chênh lệch giữa team tự chấm và ACT chấm được ghi lại |
+| 08:00 – 09:30 | Chấm công thức neo đủ 3 phần | 100% học viên có ≥ 1 công thức đạt |
+| 09:45 – 11:15 | Ghi mô tả môi trường học tại nhà — **mô tả, không đánh giá gia đình** | Không dòng nào chứa nhận xét về cách nuôi dạy |
+| 11:15 | Dẫn đúc kết | Mỗi học viên nói ≥ 1 lần |
+| 11:45 / 14:00 / 18:30 / 21:20 | **ĐD-2, 3, 4, 5** | |
+| 12:30 – 13:45 | Trực nghỉ trưa | |
+| 14:00 – 15:30 | Kiểm kế hoạch quay lại: trả lại nếu chỉ có lời hứa, không có phiên bản nhỏ hơn | 100% bảng 21 ngày có dòng "đứt 1 ngày" và "đứt 3 ngày" điền đủ |
+| 15:45 – 17:15 | **Thu tín hiệu điểm mạnh theo 3 dấu hiệu**, kèm bằng chứng nguyên văn | Tính đến hết D5: **≥ 3 tín hiệu/học viên** trong `BM-07` |
+| 17:35 – 18:30 | Giám sát bể bơi | Đếm đầu người mỗi 10 phút |
+| 19:30 – 21:00 | Ghi đề cử chéo; phát hiện học viên không được ai đề cử | Có danh sách trước 21:00 |
+| 21:00 – 21:20 | Hoàn tất `BM-01`, `BM-05` lần 2, `BM-07`, `BM-08`; chụp bảng 21 ngày | Hồ sơ đủ cho 100% học viên |
+| 21:35 | Dự họp đội | Mang theo: **bảng đối chiếu tín hiệu điểm mạnh** và danh sách học viên còn thiếu tín hiệu |
+
+## 6. An toàn ngày 5
+
+**Rủi ro đặc thù và biện pháp**
+
+| Rủi ro | Vì sao xảy ra ở D5 | Biện pháp |
+|---|---|---|
+| **Chấn thương do dụng cụ chế tác** (kéo, dao, súng keo, dây) | Buổi chiều 2 có chế tạo thật | Kéo mũi tù; **không dao rọc giấy cho 9–11**; súng keo chỉ ở bàn có ACT; găng tay khi cắt dây; dọn dụng cụ sắc ngay sau dùng; bảng kiểm dụng cụ trước và sau buổi (đếm đủ số lượng) |
+| **Học viên hé lộ hoàn cảnh gia đình khó khăn khi mổ xẻ môi trường học** | Buổi sáng 2 chạm vào điều kiện sống thật | ACT tuyệt đối không bình luận; chuyển CVTL nếu học viên bộc lộ khó khăn nghiêm trọng; **ghi mô tả, không quy lỗi gia đình**; nội dung này chỉ được trình bày ở D7 theo hướng "một việc thay thế làm được ngay" |
+| **Mệt của ngày thứ 5 — dễ cáu, dễ va chạm lời nói** | Tích luỹ mệt và thiếu riêng tư 5 ngày | Giữ nghỉ trưa nghiêm; cho phép 10 phút "im lặng riêng" sau bữa tối nếu học viên đề nghị; ACT nhắc lại thoả thuận nhóm khi thấy lời nói gay gắt |
+| **Nhớ nhà đợt hai (thường xuất hiện D5)** | Đã xa nhà 4 đêm, phấn khích ban đầu đã hết | Áp dụng lại quy trình 4 bước của D1; bố trí gọi về nhà bổ sung nếu cần; CVTL rà danh sách sau buổi tối |
+| **So sánh ngầm khi nhìn sản phẩm của các đội** | Sản phẩm hiện hữu, dễ so | Chấm theo 3 tiêu chí trong đó có "mọi thành viên có phần việc riêng"; mọi đội đều có ít nhất một hạng mục thắng; **không xếp hạng cá nhân** |
+| **Đuối nước ở khối bơi** | Có bể bơi | Như D2/D4 |
+
+**Điểm danh:** đủ 5 mốc; thêm đếm vào/ra bể bơi; **đếm dụng cụ sắc trước và sau buổi chiều 2**, ghi `BM-06`.
+
+**Điều kiện dừng hoạt động:** như danh sách chung; bổ sung cho D5 — (a) dừng bàn chế tác nếu thiếu 1 dụng
+cụ sắc khi đếm giữa buổi, tìm đủ mới tiếp tục; (b) dừng phần chia sẻ về môi trường gia đình nếu học viên
+bộc lộ nội dung nhạy cảm trước tập thể — chuyển sang trao đổi riêng; (c) dừng và chuyển sang hoạt động
+nhẹ nếu xuất hiện ≥ 2 va chạm lời nói trong 30 phút ở cùng một team (dấu hiệu quá tải mệt của cả nhóm).
+
+## 7. Cuối ngày 5 — họp đội 20 phút (21:35 – 21:55)
+
+| Phút | Nội dung | Ai |
+|---|---|---|
+| 0–3 | An toàn – y tế: dụng cụ, chấn thương nhỏ, mức mệt ngày 5, thời tiết D6 | Y tế + Quản trại |
+| 3–10 | Mỗi ACT báo cáo theo team, 90 giây | ACT team |
+| 10–15 | **Chốt tín hiệu điểm mạnh**: học viên nào chưa đủ 3 tín hiệu → phân công quan sát có chủ đích ở D6 | Trainer trưởng |
+| 15–20 | Chuẩn bị D6 (ngày dẫn dắt + lửa trại) và rà an toàn lửa trại | Quản trại + Logistics |
+
+**Mỗi ACT báo đúng 4 mục:**
+1. **Số:** số học viên tự dậy không cần nhắc lần hai · reminder rate D5 so với D1 · số học viên có ≥ 3 tín hiệu điểm mạnh · số bảng 21 ngày hoàn chỉnh.
+2. **Chênh lệch tự đánh giá D2 → D5** — nêu 2 trường hợp thay đổi rõ nhất, kèm bằng chứng, **không kết luận**.
+3. **Ba tên cần lưu ý** kèm biểu hiện: học viên không được ai đề cử · học viên không có phần việc riêng trong chế tác · học viên có dấu hiệu nhớ nhà đợt hai.
+4. **Học viên chưa nêu được ai sẽ hỗ trợ mình ở nhà** — danh sách này chuyển thẳng cho Coach chuẩn bị Review D7.
+
+**Dấu hiệu phải báo ngay trong đêm:** học viên bộc lộ hoàn cảnh gia đình có yếu tố bạo lực, thiếu an toàn,
+hoặc thiếu điều kiện sống cơ bản · chấn thương do dụng cụ · nhớ nhà đợt hai không dịu sau 60 phút ·
+thiếu dụng cụ sắc chưa tìm thấy.
+
+**Chuẩn bị cho ngày 6:** rà toàn bộ an toàn lửa trại theo bảng kiểm (khu đốt cách vật liệu dễ cháy ≥ 5 m,
+≥ 2 bình chữa cháy, 2 xô cát/nước, vòng ngoài do người lớn giữ) · chuẩn bị vật tư bệ phóng · in rubric
+hùng biện · chuẩn bị máy quay và **xin đồng ý quay hình của học viên và gia đình** · in bảng tổng hợp
+6 ngày khổ A0 cho từng team · chuẩn bị **danh sách quan sát có chủ đích** cho học viên còn thiếu tín hiệu.
+
+> **Sai lầm thường gặp ở ngày này:** ACT để học viên viết **ba đến năm thói quen** trong bảng 21 ngày, vì
+> nhìn vào thì "nhiều hơn thì tốt hơn" và học viên đang hào hứng. Kết quả sau trại: cả ba đến năm chuỗi cùng
+> đứt trong tuần thứ hai, và học viên rút ra kết luận sai rằng mình không giữ được lời hứa — đúng thứ kết
+> luận mà Tầng 1 phải tránh tạo ra. **Kiểm soát cụ thể:** ACT kiểm bảng 21 ngày trước khi ký, chỉ chấp nhận
+> **một** hành động; các thói quen còn lại ghi vào ô "danh sách chờ", đưa vào Tầng 2 sau khi thói quen đầu
+> đã chạy được 14 ngày.
+
+---
+
+# NGÀY 6 · TỔNG HỢP — DẪN DẮT — LÀM VIỆC NHÓM
+
+Ngày 6 là ngày **học viên trả lại những gì đã nhận**. Năm ngày trước em là người được dẫn; hôm nay em
+dẫn một việc thật cho người khác. Đây cũng là ngày cuối cùng để thu tín hiệu còn thiếu trước khi chốt
+Bản đồ Nhận diện — nên mọi hoạt động hôm nay đều được thiết kế để **lộ ra hành vi trong nhóm**, thứ mà
+năm ngày trước chưa đo được đầy đủ.
+
+Trọng tâm trụ **T + I**, năng lực `NL-11` Giao tiếp, `NL-12` Hợp tác, `NL-15` Lãnh đạo bản thân,
+`NL-16` Phản tư.
+
+> **Nguyên tắc chi phối cả ngày:** lãnh đạo ở lứa tuổi này **không phải chức danh, mà là làm cho người
+> khác làm tốt hơn**. Mọi vai được giao hôm nay đều phải có **một người khác được hưởng lợi** — nếu không
+> thì đó chỉ là bài trình diễn cá nhân.
+
+## 1. Lịch ngày 6
+
+| Giờ | Hoạt động | Ai phụ trách | Ghi chú |
+|---|---|---|---|
+| 06:00 – 06:20 | Thức dậy, vệ sinh, gấp chăn màn | ACT phòng | Ngày 6 đo `autonomy index` — **ACT không nhắc** |
+| 06:20 – 06:35 | Tập hợp · **ĐD-1** · nghi thức chào — **do học viên điều hành** | Học viên + ACT giám sát | Vai MC lần đầu giao cho học viên |
+| 06:35 – 06:50 | Thể dục — **một team tự dẫn** | Team trực | Team đăng ký từ tối hôm trước |
+| 06:50 – 07:40 | Ăn sáng + 5S — team tự chấm chéo team khác | Team + ACT | `BM-03` · quan sát cách góp ý |
+| 07:40 – 08:00 | Sinh hoạt team — **phân vai cho ngày** | Leader + ACT | Mỗi người một vai có người hưởng lợi |
+| **08:00 – 09:30** | **BUỔI SÁNG 1 — "Dẫn một việc": mỗi học viên dẫn 8 phút cho nhóm nhỏ** | Trainer + ACT | Trọng tâm thu tín hiệu `NL-11`, `NL-15` |
+| 09:30 – 09:45 | Giải lao — uống nước bắt buộc | ACT | |
+| **09:45 – 11:15** | **BUỔI SÁNG 2 — "Bệ phóng": dự án nhóm có ràng buộc thật** | Trainer + ACT | Ngoài trời · thu tín hiệu `NL-12` |
+| 11:15 – 11:35 | **Đúc kết buổi sáng** | Trainer | ≥ 15 phút, bắt buộc |
+| 11:35 – 11:45 | 5S khu vực | Team | |
+| 11:45 – 12:30 | Ăn trưa · **ĐD-2** | Quản trại | |
+| 12:30 – 13:45 | **Nghỉ trưa bắt buộc ≥ 45 phút** | ACT trực | |
+| 13:45 – 14:00 | Tập hợp · **ĐD-3** | Học viên MC | |
+| **14:00 – 15:30** | **BUỔI CHIỀU 1 — "Xung đột có thật": xử lý bất đồng trong nhóm** | Trainer + ACT | Buổi khó nhất ngày 6 |
+| 15:30 – 15:45 | Giải lao — uống nước | ACT | |
+| **15:45 – 17:15** | **BUỔI CHIỀU 2 — "Bảng tổng hợp 6 ngày": học viên tự dựng bản đồ của mình** | Trainer + ACT | Sản phẩm vào `BM-09` |
+| 17:15 – 17:35 | **Đúc kết buổi chiều** | Trainer | |
+| 17:35 – 18:30 | Tắm giặt · **chuẩn bị đồ về** | ACT phòng | Nhắc soát đồ cá nhân |
+| 18:30 – 19:30 | Ăn tối · **ĐD-4** | Quản trại | |
+| **19:30 – 21:00** | **BUỔI TỐI — Lửa trại: ghi nhận chéo và thư gửi chính mình** | Trainer + MC + ACT | **Hoạt động rủi ro cao — xem §6** |
+| 21:00 – 21:20 | Nhật ký `BM-02` · **viết thư gửi chính mình sau 90 ngày** | Học viên + ACT | Thư niêm phong, Coach gửi lại ở D+90 |
+| 21:20 – 21:30 | Vệ sinh, về phòng · **ĐD-5** | ACT phòng | |
+| **21:30** | **Tắt đèn** (9–11: 21:15) | ACT trực đêm | Không kéo dài lửa trại quá giờ |
+| 21:35 – 21:55 | **Họp đội cuối ngày 20 phút** | Quản trại | |
+| 21:55 – 23:00 | **Giao ban dài — chốt Bản đồ Nhận diện cho từng học viên** | Trainer trưởng + Coach | Buổi làm việc dài nhất của cả khoá |
+| 23:00 / 02:00 | Kiểm phòng đêm 2 lượt | Trực đêm | |
+
+## 2. Buổi sáng
+
+### Buổi sáng 1 (08:00 – 09:30) — "Dẫn một việc"
+
+**Mục tiêu buổi.** Mỗi học viên **dẫn được 8 phút** một việc cụ thể cho nhóm 5–6 bạn, và nhận được
+phản hồi theo cấu trúc ba câu.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 8 phút | Trainer nêu định nghĩa dẫn dắt của ngày hôm nay và giao cấu trúc phản hồi ba câu |
+| 2. Chuẩn bị | 12 phút | Mỗi học viên chọn **một việc mình làm được** và dựng dàn ý 8 phút |
+| 3. Trải nghiệm | 45 phút | Nhóm 6 người · mỗi người dẫn 8 phút, nhóm phản hồi 2 phút. ACT bấm giờ, **không can thiệp nội dung** |
+| 4. **Đúc kết** | **17 phút** | Theo thang mô tả → cảm nhận → nguyên lý → áp dụng |
+| 5. Áp dụng | 8 phút | Mỗi người ghi **một điều sẽ làm khác** khi dẫn lần sau |
+
+**Lời dẫn mẫu cho Trainer**
+
+> *"Hôm nay mỗi bạn sẽ dẫn tám phút. Không phải thuyết trình — dẫn. Khác nhau ở chỗ: thuyết trình thì
+> người nghe ngồi im, dẫn thì người nghe làm được một việc gì đó sau đó."*
+
+> *"Chọn một việc em thật sự làm được. Không cần to. Buộc dây giày kiểu khác cũng được, miễn là cuối
+> tám phút có người trong nhóm làm được việc đó."*
+
+> *"Phản hồi theo đúng ba câu, không thêm: **Điều mình thấy rõ nhất là… · Điều mình chưa theo kịp là… ·
+> Nếu là mình thì mình sẽ thử…** Không có câu 'bạn nên', không có câu 'bạn sai rồi'."*
+
+**Câu hỏi đúc kết**
+
+1. Kể lại: trong tám phút của em, khoảnh khắc nào nhóm bắt đầu theo được?
+2. Lúc đứng trước nhóm, cảm giác đầu tiên của em là gì?
+3. Người dẫn tốt trong nhóm em hôm nay làm gì mà người khác không làm?
+4. Vậy dẫn dắt là kỹ năng hay là tính cách? Dựa vào đâu em nói vậy?
+5. Ở nhà hoặc ở lớp, có việc gì em có thể dẫn cho một người khác trong tuần tới?
+
+**Dữ liệu cần thu** — `BM-07` mục `NL-11` và `NL-15`. ACT ghi: học viên nhìn vào nhóm hay nhìn xuống
+giấy · có kiểm tra nhóm theo kịp không · phản ứng khi nhóm không hiểu · cách nhận phản hồi.
+
+**Điều chỉnh theo nhóm tuổi** — 9–11 tuổi: rút xuống **5 phút**, cho phép dẫn theo cặp, đề tài do
+Trainer gợi ý sẵn ba lựa chọn. 16–18 tuổi: **12 phút**, thêm yêu cầu nhóm phải **làm được** việc đó
+cuối buổi, không chỉ hiểu.
+
+### Buổi sáng 2 (09:45 – 11:15) — "Bệ phóng"
+
+**Mục tiêu buổi.** Nhóm 6 người **hoàn thành một sản phẩm có ràng buộc thật** — thời gian, vật tư,
+tiêu chí nghiệm thu — và mỗi thành viên **giữ đúng một vai** đã phân từ đầu buổi.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 7 phút | Công bố ràng buộc và tiêu chí nghiệm thu. **Không gợi ý cách làm** |
+| 2. Phân vai | 8 phút | Nhóm tự phân 6 vai: điều phối · vật tư · thiết kế · thi công · kiểm định · giữ giờ |
+| 3. Trải nghiệm | 45 phút | Thi công. ACT **chỉ can thiệp khi có rủi ro an toàn** |
+| 4. **Đúc kết** | **17 phút** | Sau khi nghiệm thu sản phẩm |
+| 5. Áp dụng | 8 phút | Mỗi nhóm ghi một quy tắc làm việc nhóm rút ra được |
+
+**Lời dẫn mẫu**
+
+> *"Sáu vai, sáu người, không ai làm hai vai. Bạn giữ giờ mà đi thi công thì nhóm mất người giữ giờ —
+> đó cũng là một kết quả đáng để thấy."*
+
+> *"Vật tư phát một lần. Hỏng thì không cấp lại. Không phải để phạt — để em thấy quyết định nào là
+> quyết định không quay lại được."*
+
+**Câu hỏi đúc kết**
+
+1. Mô tả lại: nhóm em quyết định cách làm vào phút thứ mấy?
+2. Lúc nhóm bế tắc, ai là người làm nhóm đi tiếp? Người đó đã làm gì?
+3. Có vai nào bị bỏ trống giữa chừng không? Điều gì xảy ra sau đó?
+4. Nguyên lý: khi nhóm gấp, việc gì bị bỏ đầu tiên? Vì sao đó thường là việc quan trọng?
+5. Ở lớp em, chỗ nào đang thiếu một trong sáu vai này?
+
+**Dữ liệu cần thu** — `BM-07` mục `NL-12`. ACT ghi **hành vi khi nhóm gặp khó**: ai rút lui, ai ôm việc,
+ai hỏi ý người ít nói. Đây là dữ liệu không thu được ở năm ngày trước.
+
+## 3. Buổi chiều
+
+### Buổi chiều 1 (14:00 – 15:30) — "Xung đột có thật"
+
+**Mục tiêu buổi.** Học viên **phân biệt được xung đột việc và xung đột người**, và thực hành một cách
+nói giữ được quan hệ trong khi vẫn nêu được bất đồng.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 8 phút | Xung đột không phải dấu hiệu nhóm hỏng — nhóm không có xung đột thường là nhóm có người im lặng |
+| 2. Trải nghiệm | 40 phút | Ba tình huống dựng sẵn, đóng vai, đổi vai giữa chừng |
+| 3. Quan sát | 10 phút | Nhóm quan sát ghi lại câu nào làm căng thẳng tăng, câu nào làm giảm |
+| 4. **Đúc kết** | **17 phút** | |
+| 5. Áp dụng | 10 phút | Mỗi người viết một câu sẽ dùng lần tới khi bất đồng với bạn hoặc với cha mẹ |
+
+> ⚠️ **Ba tình huống dùng trong buổi này là tình huống dựng sẵn, không lấy từ mâu thuẫn có thật đang
+> xảy ra trong trại.** Dùng mâu thuẫn thật của học viên làm bài tập là biến buổi học thành buổi phân xử
+> công khai — vi phạm nguyên tắc xử lý riêng tư ở [`15-thu-vien-tinh-huong.md`](15-thu-vien-tinh-huong.md) C-01.
+
+**Lời dẫn mẫu**
+
+> *"Câu 'bạn lúc nào cũng vậy' và câu 'hôm nay việc này chưa xong' nói về cùng một chuyện. Nhưng một
+> câu nói về con người, một câu nói về việc. Thử cả hai rồi xem nhóm phản ứng khác nhau thế nào."*
+
+**Câu hỏi đúc kết**
+
+1. Câu nào trong buổi hôm nay làm không khí căng lên nhanh nhất?
+2. Khi bị nói câu đó, em thấy thế nào? Em muốn làm gì tiếp theo?
+3. Nguyên lý: khác nhau giữa nói về việc và nói về người là gì?
+4. Có khi nào giữ hoà khí lại làm hỏng việc không? Ví dụ?
+5. Trong tuần tới, có cuộc nói chuyện nào ở nhà em muốn thử cách này?
+
+### Buổi chiều 2 (15:45 – 17:15) — "Bảng tổng hợp 6 ngày"
+
+**Mục tiêu buổi.** Học viên **tự dựng bản đồ của chính mình** từ dữ liệu sáu ngày, bằng lời của em —
+đây là nguyên liệu chính của `BM-09` Bản đồ Nhận diện.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 7 phút | Trainer phát bảng A0 của team, giải thích: bản đồ này em viết, không ai viết hộ |
+| 2. Trải nghiệm | 50 phút | Bốn ô: **Điều em đã biết về mình · Điều em mới phát hiện · Điều em muốn giữ · Điều em muốn thử** |
+| 3. Chia sẻ | 10 phút | Mỗi team chọn một điều muốn nói với cả trại |
+| 4. **Đúc kết** | **16 phút** | |
+| 5. Áp dụng | 7 phút | Nối bản đồ với **một hành động** của bảng 21 ngày ngày 5 |
+
+> **Quy tắc bắt buộc của buổi này:** ACT và Trainer **không sửa chữ của học viên** trên bản đồ. Nếu em
+> viết điều mà người lớn thấy chưa chính xác, đó là dữ liệu — ghi vào `BM-07`, không tẩy đi. Bản đồ do
+> người lớn viết lại thì không còn là bản đồ của em, và học viên nhận ra điều đó ngay.
+
+**Dữ liệu cần thu** — Ảnh chụp bản đồ A0 của từng học viên, đưa vào hồ sơ. Đây là bằng chứng gốc cho
+phần "Điều học viên tự nhận ra" trong `BM-09`.
+
+## 4. Buổi tối (19:30 – 21:00) — Lửa trại
+
+**Mục tiêu buổi.** Đóng lại sáu ngày bằng **ghi nhận chéo giữa các học viên**, và mỗi em viết một
+lá thư gửi chính mình sau 90 ngày.
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Mở | 10 phút | Nghi thức lửa. MC là học viên, Trainer đứng vòng ngoài |
+| 2. Ghi nhận chéo | 40 phút | Mỗi học viên nhận **ít nhất hai lời ghi nhận** từ bạn khác team — ACT theo dõi để **không ai bị bỏ sót** |
+| 3. Lặng | 5 phút | Không nói, chỉ ngồi |
+| 4. **Đúc kết** | **15 phút** | Trainer dẫn, giọng thấp, không cao trào |
+| 5. Thư gửi chính mình | 20 phút | Viết tay, niêm phong, **Coach gửi lại đúng ngày D+90** |
+
+> **Việc quan trọng nhất của ACT trong buổi này không phải giữ trật tự mà là đếm.** Đếm xem mỗi học
+> viên đã nhận được mấy lời ghi nhận. Em nào chưa có đủ hai thì ACT **kín đáo gợi ý bạn cùng team** —
+> không bao giờ tự mình nói thay, và tuyệt đối không công bố rằng em đó đang thiếu.
+
+**Câu hỏi đúc kết**
+
+1. Lời ghi nhận nào hôm nay làm em bất ngờ nhất?
+2. Có điều gì bạn thấy ở em mà chính em chưa thấy không?
+3. Nguyên lý: vì sao người khác đôi khi nhìn ra điểm mạnh của mình rõ hơn mình?
+4. Ngày mai gặp bố mẹ, em muốn kể điều gì đầu tiên?
+
+**Điều chỉnh theo nhóm tuổi** — 9–11 tuổi: rút ghi nhận chéo còn 25 phút, thư viết ngắn ba câu theo
+gợi ý. 16–18 tuổi: thêm phần **"điều em muốn xin lỗi hoặc cảm ơn"**, tự nguyện, không ép nói ra.
+
+## 5. Việc của ACT trong ngày 6
+
+| Thời điểm | Việc | Tiêu chí làm đúng |
+|---|---|---|
+| 06:00 | **Không đánh thức lần hai** | Ghi số học viên tự dậy — dữ liệu `autonomy index` |
+| 08:00 – 11:15 | Bấm giờ, ghi `BM-07` mục `NL-11`, `NL-12`, `NL-15` | Ghi **hành vi**, không ghi nhận định |
+| 09:45 – 11:15 | Giám sát an toàn dự án nhóm | Chỉ can thiệp khi có rủi ro, không gợi ý cách làm |
+| 14:00 – 15:30 | Quan sát cách học viên nêu bất đồng | Ghi nguyên văn câu nói, không diễn giải |
+| 15:45 – 17:15 | **Không sửa chữ trên bản đồ của học viên** | Chụp ảnh bản đồ, nộp hồ sơ |
+| 19:30 – 21:00 | **Đếm lời ghi nhận mỗi học viên nhận được** | Không ai dưới hai · không công bố ai thiếu |
+| 21:00 | Thu thư niêm phong, ghi mã học viên ngoài phong bì | **Không đọc thư** |
+| 21:35 | Báo cáo họp đội | Nêu học viên còn thiếu tín hiệu cho `BM-09` |
+
+## 6. An toàn ngày 6
+
+| Rủi ro | Biện pháp |
+|---|---|
+| **Lửa trại** — bỏng, cháy lan | Khu đốt cách vật liệu dễ cháy ≥ 5 m · **≥ 2 bình chữa cháy và 2 xô cát/nước trong tầm với** · vòng ngoài do người lớn giữ, học viên không tiếp cận nguồn lửa · dập hẳn trước khi rời |
+| **Dự án nhóm** — vật tư sắc, độ cao | Kiểm dụng cụ trước phát · không dùng vật sắc với nhóm 9–11 · không thi công quá tầm với |
+| **Xung đột leo thang** trong buổi chiều 1 | Tình huống dựng sẵn, không dùng mâu thuẫn thật · ACT tách ngay nếu chuyển sang công kích cá nhân |
+| **Cảm xúc dâng cao** ở lửa trại | Chuyên viên tâm lý có mặt vòng ngoài · học viên khóc được đưa ra khu yên tĩnh, **không để một mình** |
+| **Học viên bị bỏ sót** trong ghi nhận chéo | ACT đếm theo danh sách, can thiệp kín đáo |
+| Điểm danh | **Đủ 5 mốc** · đếm lại trước và sau khi di chuyển ra khu lửa trại |
+
+**Điều kiện dừng lửa trại:** gió mạnh · mưa · bất kỳ dấu hiệu cháy lan nào · có học viên khủng hoảng
+cảm xúc cần cả đội xử lý.
+
+## 7. Cuối ngày 6 — họp đội 20 phút (21:35 – 21:55)
+
+| Phút | Nội dung |
+|---|---|
+| 0–5 | Mỗi ACT nêu **học viên còn thiếu tín hiệu** cho `BM-09` — đây là ưu tiên số một tối nay |
+| 5–10 | Tình huống trong ngày theo mã thư viện · việc chưa xử lý xong |
+| 10–15 | **Rà danh sách quan tâm đặc biệt** trước ngày gặp gia đình — em nào cần Coach chuẩn bị kỹ hơn |
+| 15–18 | Phân công slot Review ngày 7: ai gặp gia đình nào, phòng nào, giờ nào |
+| 18–20 | Chốt hậu cần ngày 7: đồ cá nhân, biên bản bàn giao, hồ sơ in |
+
+**Giao ban dài 21:55 – 23:00 — chốt Bản đồ Nhận diện.** Đây là buổi làm việc dài nhất của cả khoá.
+Với mỗi học viên: đối chiếu `BM-02` `BM-03` `BM-05` `BM-07` và bản đồ A0 em tự viết, chốt nội dung
+`BM-09`. **Không học viên nào được bàn giao bản đồ chưa qua đối chiếu đủ bốn nguồn.**
+
+> **Sai lầm thường gặp ở ngày này:** đội ngũ dồn sức vào **lửa trại cho thật cảm động** và coi đó là
+> đỉnh của khoá. Lửa trại tạo ra cảm xúc mạnh, ảnh đẹp, và phụ huynh hài lòng — nhưng cảm xúc đêm thứ
+> sáu **không phải kết quả của chương trình**, và nó sẽ hết trong hai tuần. Thứ tạo ra thay đổi là
+> bảng 21 ngày của ngày 5 và Bản đồ Nhận diện chốt trong buổi giao ban đêm nay.
+> **Kiểm soát cụ thể:** Trainer trưởng kiểm tra buổi giao ban 21:55–23:00 có đủ mặt và làm đủ từng
+> học viên hay không. Nếu đội quá mệt sau lửa trại để làm việc này tử tế, thì **lửa trại đã được thiết
+> kế quá dài** — rút ngắn ở khoá sau, không rút ngắn buổi giao ban.
+
+---
+
+# NGÀY 7 · KẾT NỐI GIA ĐÌNH — REVIEW TỪNG GIA ĐÌNH — CAM KẾT 90 NGÀY
+
+Ngày 7 quyết định **chương trình này có tiếp tục sau khi học viên về nhà hay không**. Sáu ngày trước
+tạo ra nhận thức; hôm nay chuyển nhận thức đó cho người sẽ đồng hành hằng ngày — cha mẹ.
+
+> **Điều phải hiểu về ngày 7:** đây **không phải lễ bế mạc có phần gặp phụ huynh**. Đây là **ngày làm
+> việc chuyên môn với từng gia đình**, có phần lễ ở cuối. Nếu đảo thứ tự ưu tiên — làm lễ hoành tráng
+> rồi gặp gia đình vội vàng 10 phút — thì sáu ngày trước mất phần lớn giá trị, vì không ai mang được
+> nó về nhà.
+
+Trọng tâm trụ **G + A**, năng lực `NL-02` Thiết lập mục tiêu, `NL-16` Phản tư.
+
+## 1. Lịch ngày 7
+
+| Giờ | Hoạt động | Ai phụ trách | Ghi chú |
+|---|---|---|---|
+| 06:00 – 06:20 | Thức dậy, vệ sinh, **thu dọn đồ cá nhân** | ACT phòng | Soát đồ theo danh sách gửi giữ |
+| 06:20 – 06:35 | Tập hợp · **ĐD-1** | Học viên MC | |
+| 06:35 – 07:00 | Thể dục nhẹ · nghi thức chào ngày cuối | MC | Không hoạt động cường độ cao |
+| 07:00 – 07:45 | Ăn sáng + 5S tổng | Team + ACT | |
+| 07:45 – 08:15 | **Trả đồ gửi giữ · ký nhận** | ACT + hậu cần | Điện thoại, thuốc, tài sản có giá trị |
+| **08:15 – 09:45** | **BUỔI SÁNG — "Nói với bố mẹ thế nào": học viên chuẩn bị phần trình bày 5 phút** | Trainer + ACT | **Buổi quyết định chất lượng Review** |
+| 09:45 – 10:00 | Giải lao — uống nước | ACT | |
+| **10:00 – 11:15** | **Hoàn thiện `BM-09` cùng ACT · học viên ký bản đồ của mình** | ACT + học viên | Học viên đọc lại và **được quyền sửa** |
+| 11:15 – 11:45 | Tổng duyệt phần trình bày chung · dọn khu vực | MC + Team | |
+| 11:45 – 12:30 | Ăn trưa · **ĐD-2** | Quản trại | |
+| 12:30 – 13:15 | Nghỉ · **đội ngũ vào vị trí Review** | ACT trực | Coach kiểm hồ sơ lần cuối |
+| 13:15 – 13:45 | **Gia đình tới · đón tiếp · xác minh người đón** | Hậu cần + ACT | Đối chiếu danh sách đón trả |
+| **13:45 – 14:15** | **Phiên chung 30 phút** — Nhà sáng lập hoặc Trainer trưởng nói với toàn bộ gia đình | Trainer trưởng | Nội dung ở §3 |
+| **14:15 – 18:00** | **REVIEW TỪNG GIA ĐÌNH — 30 phút mỗi gia đình, chạy song song** | Coach + Trainer | **Phần quan trọng nhất cả khoá** — xem §4 |
+| 14:15 – 18:00 | Song song: học viên chưa tới lượt sinh hoạt tại khu riêng | ACT | Có hoạt động nhẹ, **không để trẻ ngồi chờ suông** |
+| **18:00 – 18:45** | **Lễ ghi nhận · trao chứng nhận · công bố mốc D+7 và D+21** | MC + Trainer trưởng | 45 phút, không kéo dài |
+| 18:45 – 19:15 | **Bàn giao học viên · ký biên bản · ĐD cuối** | ACT + hậu cần | Chỉ giao cho người có tên trong hồ sơ |
+| 19:15 – 20:30 | Đội ngũ dọn, kiểm khu vực, thu hồi vật tư | Toàn đội | |
+| **20:30 – 22:00** | **Họp tổng kết khoá** | Toàn đội | Xem §7 |
+
+> **Về việc chạy song song 30 phút mỗi gia đình:** với **50 học viên** và **6 người có thể dẫn Review**
+> đồng thời, cần **9 lượt × 30 phút ≈ 4 giờ 30**. Đây là ràng buộc toán học, không phải vấn đề tổ chức
+> — **số người dẫn Review quyết định giờ kết thúc ngày 7**. Nếu chỉ có 3 Coach, khoá 50 học viên cần
+> 9 giờ Review và ngày 7 không đủ thời gian. **Tính ngược từ đây khi lập kế hoạch nhân sự ở cổng C2**,
+> đừng để phát hiện vào chiều ngày 7.
+
+## 2. Buổi sáng (08:15 – 09:45) — "Nói với bố mẹ thế nào"
+
+**Mục tiêu buổi.** Mỗi học viên **chuẩn bị được phần trình bày 5 phút** cho gia đình mình, gồm ba
+phần: điều em phát hiện · điều em muốn thử trong 90 ngày · điều em cần bố mẹ giúp.
+
+**Vòng 5 nhịp**
+
+| Nhịp | Thời lượng | Nội dung |
+|---|---|---|
+| 1. Khung | 8 phút | Trainer: hôm nay em là người nói trước, không phải người lớn nói về em |
+| 2. Chuẩn bị | 35 phút | Viết ba phần theo mẫu, ACT hỗ trợ cá nhân cho em nào khó diễn đạt |
+| 3. Tập thử | 25 phút | Tập theo cặp, bạn nghe đóng vai phụ huynh và hỏi lại |
+| 4. **Đúc kết** | **15 phút** | |
+| 5. Chốt | 7 phút | Mỗi em gấp phần trình bày vào `BM-09`, mang theo vào phòng Review |
+
+**Lời dẫn mẫu**
+
+> *"Chiều nay em sẽ là người nói trước, không phải bố mẹ, không phải anh chị Coach. Ba phần thôi, năm
+> phút. Em phát hiện gì, em muốn thử gì, và em cần bố mẹ giúp gì."*
+
+> *"Phần thứ ba khó nhất và quan trọng nhất. 'Con cần bố mẹ giúp' không phải là xin xỏ — đó là em nói
+> rõ cách giúp nào có tác dụng. Nếu em không nói, bố mẹ sẽ giúp theo cách bố mẹ nghĩ là đúng."*
+
+> *"Nếu có điều gì em muốn nói mà thấy khó nói trước mặt bố mẹ, nói với anh/chị trước. Anh/chị sẽ giúp
+> em tìm cách nói, hoặc nói giúp nếu em muốn."*
+
+**Câu hỏi đúc kết**
+
+1. Phần nào trong ba phần em thấy khó viết nhất? Vì sao?
+2. Khi bạn đóng vai bố mẹ hỏi lại, câu hỏi nào làm em lúng túng?
+3. Nguyên lý: vì sao nói rõ mình cần giúp kiểu nào lại hiệu quả hơn là chờ người khác đoán?
+4. Nếu chiều nay bố mẹ phản ứng khác với điều em mong, em định làm gì?
+
+> ⚠️ **Việc bắt buộc của ACT ở nhịp 2:** đi từng em, hỏi *"có điều gì em thấy khó nói trước mặt bố mẹ
+> không?"* Nếu có, **báo Coach dẫn Review của gia đình đó ngay trước 13:00** để Coach chuẩn bị. Với
+> nội dung liên quan an toàn hoặc bảo vệ trẻ em, **báo CSO trong 1 giờ** và **không đưa vào Review**
+> — xử lý theo quy trình riêng tại [`15-thu-vien-tinh-huong.md`](15-thu-vien-tinh-huong.md) nhóm F.
+
+## 3. Phiên chung với toàn bộ gia đình (13:45 – 14:15)
+
+Ba mươi phút, không dài hơn. Nội dung cố định:
+
+| Phút | Nội dung |
+|---|---|
+| 0–5 | Cảm ơn · **nêu thẳng con số của khoá**: bao nhiêu học viên, bao nhiêu buổi, bao nhiêu sự cố đã xử lý |
+| 5–12 | **Bảy ngày làm được gì và không làm được gì** — nói rõ trại tạo đột phá nhận thức, 90 ngày tới mới tạo thay đổi hành vi |
+| 12–20 | **Bốn cam kết chuẩn 7 / 21 / 90 / 365 ngày** — nêu đúng, không hứa vượt |
+| 20–26 | **Việc của gia đình trong 90 ngày**: 10 phút mỗi ngày, ghi 2 dòng, dự Review tuần. Nói rõ **đây là cam kết khó nhất trong cả chương trình** |
+| 26–30 | Quy trình Review 30 phút · lịch từng gia đình · nơi chờ |
+
+**Ba câu bắt buộc phải nói trong phiên này**
+
+> *"Bảy ngày không thay đổi được một đứa trẻ. Bảy ngày làm cho em nhìn thấy điều em chưa nhìn thấy.
+> Phần thay đổi nằm ở chín mươi ngày tới, và phần đó diễn ra ở nhà anh chị, không ở đây."*
+
+> *"Chúng tôi sẽ không nói với anh chị rằng con anh chị đã thành người khác. Nếu có ai nói vậy với
+> anh chị ở bất kỳ chương trình nào, xin anh chị nghi ngờ điều đó."*
+
+> *"Điều chúng tôi xin anh chị là mười phút mỗi ngày, không nhắc bài, không hỏi điểm. Nghe ít, nhưng
+> đây là con số nhỏ nhất tạo ra khác biệt và là con số lớn nhất phần lớn gia đình giữ được trong chín
+> mươi ngày."*
+
+> **Không làm trong phiên chung:** không chiếu video cảm động rồi bán gói tiếp theo · không mời phụ
+> huynh lên phát biểu cảm nghĩ · không công bố xếp hạng học viên · không nêu tên học viên gắn với
+> khó khăn của em.
+
+## 4. REVIEW TỪNG GIA ĐÌNH — kịch bản 30 phút
+
+**Có mặt:** học viên · cha mẹ · **một** Coach hoặc Trainer. Không có người thứ tư trong phòng trừ khi
+gia đình đồng ý.
+**Tài liệu trên bàn:** `BM-09` Bản đồ Nhận diện · bảng 21 ngày của học viên · `BM-06` Cam kết 3 bên
+chưa ký · phần trình bày 5 phút do em viết.
+
+| Phút | Ai nói | Nội dung |
+|---|---|---|
+| **0–2** | Coach | Chào, nêu cấu trúc buổi: *"Con sẽ nói trước năm phút, sau đó anh/chị nói, cuối cùng em nói. Rồi mình chốt việc của chín mươi ngày tới."* |
+| **2–7** | **Học viên** | **Em trình bày ba phần đã chuẩn bị.** Coach và cha mẹ **không ngắt lời** |
+| **7–11** | Cha mẹ | Coach hỏi: *"Anh/chị nghe con nói xong thấy thế nào? Có điều gì bất ngờ không?"* |
+| **11–18** | Coach | **Đi qua Bản đồ Nhận diện**: điểm mạnh có bằng chứng trước, rồi tới điều cần rèn. Mỗi điều **nêu bằng hành vi quan sát được, không dán nhãn** |
+| **18–23** | Ba bên | **Chốt bảng 21 ngày**: một hành động, một neo, một giờ cụ thể, một phiên bản tối thiểu cho ngày tệ |
+| **23–27** | Ba bên | **Chốt việc của gia đình**: 10 phút mỗi ngày làm lúc nào · ai ghi 2 dòng · giờ Review tuần với Coach |
+| **27–30** | Coach | Ký `BM-06` ba bên · trao lịch các mốc D+7, D+21, D+30, D+118 · số điện thoại Coach |
+
+### 4.1 Nói thế nào khi phải trao đổi điều chưa tốt
+
+Đây là phần khó nhất và là phần phân biệt Coach có nghề với Coach chưa có nghề.
+
+| ❌ Không nói | ✅ Nói thế này |
+|---|---|
+| "Cháu khá lười và thiếu tập trung." | "Trong sáu ngày, thời gian từ lúc con ngồi vào bàn tới lúc bắt đầu trung bình là 18 phút. Chúng tôi thử thu nhỏ nhiệm vụ đầu xuống còn mở vở, con số xuống 4 phút." |
+| "Cháu hơi nhút nhát." | "Con thường phát biểu sau khi có hai bạn nói trước. Khi được hỏi trực tiếp thì con trả lời đầy đủ. Đây là dữ liệu về thứ tự, không phải về khả năng." |
+| "Ở nhà anh chị nên bớt nhắc con đi." | "Con nói với chúng tôi là con thấy khó nhất khi bị nhắc lúc đang định làm. Chúng tôi đề xuất tuần đầu anh chị chỉ **đếm số lần nhắc**, chưa cần giảm. Đo trước, sửa sau." |
+| "Cháu có vấn đề về tâm lý." | "Có mấy dấu hiệu chúng tôi thấy nhưng nằm ngoài phạm vi chuyên môn của chương trình. Chúng tôi đề nghị anh chị gặp chuyên viên tâm lý để được đánh giá đúng. Đây là việc nên làm sớm, không phải việc đáng lo." |
+
+**Bốn nguyên tắc của phần này**
+
+1. **Mở bằng điểm mạnh có bằng chứng**, không mở bằng lời khen chung chung.
+2. **Mỗi điều chưa tốt đi kèm một việc gia đình làm được trong tuần này** — không nêu vấn đề rồi để đó.
+3. **Không so sánh với học viên khác**, kể cả khi cha mẹ hỏi *"con tôi so với các bạn thì sao"*.
+   Trả lời: *"Chúng tôi chỉ so con với chính con ở ngày đầu."*
+4. **Nói rõ điều chương trình chưa biết.** Bảy ngày không đủ hiểu hết một đứa trẻ, và nói ra điều đó
+   làm tăng độ tin cậy chứ không giảm.
+
+### 4.2 Bốn tình huống khó trong Review và cách xử lý
+
+| Tình huống | Xử lý |
+|---|---|
+| **Cha mẹ phản ứng mạnh khi nghe điều chưa tốt** | Dừng nội dung, quay lại bằng chứng cụ thể. *"Đây là điều chúng tôi quan sát được, không phải nhận định về con."* Nếu tiếp tục căng, **đề nghị em ra ngoài với ACT** rồi mới nói tiếp — không để trẻ chứng kiến |
+| **Cha mẹ hỏi "bao giờ con tôi thay đổi"** | *"Ba mươi ngày đầu là dựng khung, còn cần nhắc. Ngày thứ sáu mươi bắt đầu tự khởi động. Chúng tôi không hứa mốc nào sớm hơn."* Không đưa con số dễ nghe hơn |
+| **Cha mẹ muốn nghe điều tiêu cực về con trước mặt con** | *"Phần này con nghe được, vì nó nói về việc chứ không nói về con."* Nếu thật sự cần nói riêng, hẹn cuộc gọi riêng sau, **không nói sau lưng ngay trong buổi** |
+| **Học viên im lặng, không chịu trình bày** | Không ép. Coach nói: *"Không sao, để anh/chị bắt đầu, khi nào con muốn thêm gì thì nói."* Ghi vào hồ sơ, **không bình luận về việc em im lặng** |
+
+## 5. Việc của ACT trong ngày 7
+
+| Thời điểm | Việc | Tiêu chí làm đúng |
+|---|---|---|
+| 06:00 – 07:45 | Soát đồ cá nhân theo danh sách gửi giữ | Ký nhận từng món, không sót |
+| 08:15 – 09:45 | Hỗ trợ học viên khó diễn đạt · **hỏi câu "có điều gì khó nói không"** | Báo Coach trước 13:00 · báo CSO trong 1 giờ nếu thuộc nhóm F |
+| 10:00 – 11:15 | Hoàn thiện `BM-09`, để học viên đọc lại và sửa | **Không sửa chữ của em** |
+| 13:15 – 13:45 | Đón tiếp, **xác minh người đón theo hồ sơ** | Không giao cho người ngoài danh sách |
+| 14:15 – 18:00 | Giữ nhóm học viên chưa tới lượt | **Có hoạt động nhẹ, không để ngồi chờ suông** |
+| 18:45 – 19:15 | Bàn giao học viên, ký biên bản, điểm danh cuối | Đếm đủ, khớp danh sách |
+
+## 6. An toàn ngày 7
+
+| Rủi ro | Biện pháp |
+|---|---|
+| **Giao nhầm người đón** | Đối chiếu giấy tờ tuỳ thân với hồ sơ đón trả · **có tranh chấp quyền nuôi con thì dừng và báo M3** |
+| **Học viên đi lạc trong lúc đông người** | ACT giữ nhóm cố định · điểm danh trước và sau mỗi lần chuyển khu · không để trẻ tự ra bãi xe |
+| **Cảm xúc dâng cao khi chia tay** | Chuyên viên tâm lý có mặt · khu yên tĩnh sẵn sàng |
+| **Xung đột gia đình bùng lên trong Review** | Coach dừng buổi, đưa học viên ra ngoài với ACT trước |
+| **Người lạ trà trộn khi có đông phụ huynh** | Kiểm soát lối vào · thẻ khách · ACT vòng ngoài |
+| **Trẻ nghe được nội dung nhạy cảm về mình** | Nội dung thuộc nhóm F không đưa vào Review, xử lý riêng |
+
+## 7. Cuối ngày 7 — họp tổng kết khoá (20:30 – 22:00)
+
+| Phút | Nội dung |
+|---|---|
+| 0–15 | **Số liệu khoá**: sĩ số, sự cố và cận-sự-cố, số ca chuyển chuyên môn, tỉ lệ bàn giao `BM-09` |
+| 15–35 | **Điều gì đã hiệu quả** — làm rõ cơ chế để lặp lại được, không chỉ kể lại |
+| 35–60 | **Điều chưa được — tìm cơ chế, không tìm lỗi.** Mỗi việc: chuyện gì xảy ra, hệ thống nào đã cho phép nó xảy ra |
+| 60–75 | **Tình huống mới chưa có trong thư viện** — ghi lại để bổ sung vào [`15-thu-vien-tinh-huong.md`](15-thu-vien-tinh-huong.md) |
+| 75–85 | **Bàn giao sang Coach 90 ngày**: danh sách học viên, ai phụ trách ai, ca cần theo sát |
+| 85–90 | Chốt việc còn lại: hồ sơ chưa xong, `BM-09` chưa bàn giao, gia đình cần gọi lại |
+
+> **Cổng C7 chưa đóng khi khoá kết thúc.** Chuẩn C1 quy định **bàn giao Bản đồ Nhận diện cho 100% học
+> viên trong 7 ngày** kể từ ngày kết thúc. Gia đình nào chưa nhận trong buổi Review — vì đón muộn, vì
+> hồ sơ chưa xong — phải có **tên trong danh sách theo dõi và hạn cụ thể**, giao cho một người chịu
+> trách nhiệm. Khoá chỉ được coi là hoàn thành khi danh sách đó về 0.
+
+> **Sai lầm thường gặp ở ngày này:** đội ngũ **rút ngắn Review xuống 15 phút** vì chạy trễ giờ, và bù
+> lại bằng lễ ghi nhận dài hơn. Đây là đánh đổi sai và nó xảy ra ở gần như mọi khoá đầu tiên. Lễ ghi
+> nhận tạo cảm xúc trong một buổi tối; Review 30 phút là **lúc duy nhất trong cả khoá cha mẹ, con và
+> Coach cùng ngồi một bàn và chốt việc của chín mươi ngày**. Cắt nó là cắt đúng thứ tạo ra kết quả.
+> **Kiểm soát cụ thể:** số người dẫn Review được tính ngược từ sĩ số ở **cổng C2 ngày D-14**, không
+> phải sắp xếp vào sáng ngày 7. Nếu chiều ngày 7 phát hiện không đủ giờ, phương án đúng là **hẹn Review
+> qua cuộc gọi 30 phút trong 3 ngày tới**, không phải rút ngắn xuống 15 phút.
+
+---

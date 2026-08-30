@@ -1173,3 +1173,465 @@
 
 > **Sai lầm thường gặp khi dẫn:** để học viên chạy vòng theo hai chiều ngược nhau cho nhanh. Đó là nguyên nhân trực tiếp của va chạm ở hoạt động này; một chiều chạy duy nhất là ràng buộc an toàn, không phải luật chơi cho vui.
 
+---
+
+## 6. NGÀY 6 · FUTURE LEADER
+
+## A6-01 · Bệ phóng tương lai (chế tạo + phóng thử)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| T — Tài năng | 9–18 | 90 phút + 30 phút thi lại buổi tối | 6–8 học viên/đội | Khu bàn chế tác + bãi phóng ngoài trời |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-03` Tư duy · `NL-10` Giải quyết vấn đề · `NL-12` Hợp tác | **Cao** | Ống nhựa ×4/đội, chai ×2/đội, keo nguội ×2/đội, băng dính ×2/đội, thước, bút màu, ảnh mẫu, **kính bảo hộ ×8/đội**, dây chun phóng, cọc đánh dấu hướng phóng |
+
+**Mục tiêu học tập** — Đội **thiết kế – chế tạo – thử – cải tiến** một sản phẩm đạt tiêu chí kỹ thuật đề ra và **giải thích** được nguyên lý làm sản phẩm bay cao hơn giữa hai lần thử.
+
+**Chuẩn bị** — Khu chế tác tách hẳn khỏi bãi phóng ≥ 20 m. Bãi phóng: **hướng phóng cố định, đánh dấu bằng cọc**, **khu vực cấm người phía trước bệ phóng ≥ 10 m** có dây chăng và biển. Kính bảo hộ đủ cho mọi người trong bán kính 5 m khi thử. Keo nguội (**không dùng súng keo nóng cho học viên**). **Không dùng áp lực khí nén tự chế** — chỉ dùng dây chun hoặc lò xo cơ học. Bộ sơ cứu tại bãi phóng.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Xem ảnh 3 mẫu bệ phóng, đội đoán mẫu nào bay xa và vì sao.
+2. **Trải nghiệm (45 phút)** — Bước 1: Leader nhận hướng dẫn kỹ thuật riêng từ ACT rồi **truyền lại cho đội** (ACT không giảng cho cả đội). Bước 2: đội vẽ thiết kế 8 phút, ghi dự đoán độ cao. Bước 3: chế tạo 20 phút tại khu bàn. Bước 4: **thử lần 1** tại bãi phóng — đeo kính bảo hộ, ACT kiểm hướng phóng và vùng cấm trước khi cho phóng. Bước 5: 10 phút cải tiến, **thử lần 2**, đo và ghi. Lời dẫn tại bãi phóng: *"Không ai đứng trước bệ phóng, kể cả để nhặt. Nhặt sau khi tôi hô 'an toàn'. Ai đeo kính rồi thì giơ tay cho tôi thấy."*
+3. **Quan sát và chia sẻ (10 phút)** — Mỗi đội nói: thay đổi nào giữa hai lần thử tạo ra khác biệt lớn nhất.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Lần phóng đầu và lần cuối khác nhau bao nhiêu, và đội đã đổi đúng một chi tiết nào? (2) Lúc bệ phóng hỏng giữa chừng, đội phản ứng ra sao? (3) Điều gì làm sản phẩm bay cao hơn — vật tư tốt hơn hay cách bố trí lực? (4) Nguyên lý: vì sao "thử – sửa – thử lại" cho kết quả tốt hơn "nghĩ thật kỹ rồi làm một lần"? (5) Việc truyền hướng dẫn qua Leader làm đội mất hay được gì? (6) Cách thử – sửa này em dùng vào việc học nào ở nhà?
+5. **Áp dụng (15 phút)** — Đội ghi **nhật ký cải tiến** cho buổi thi lại tối: dự định đổi gì, vì sao, dự đoán kết quả.
+
+**An toàn — mức cao** — Rủi ro: vật phóng bắn vào mắt và mặt, dây chun bật, bỏng keo nóng, cắt tay. Biện pháp **bắt buộc**: **hướng phóng cố định đánh dấu bằng cọc**; **vùng cấm người phía trước ≥ 10 m**, có dây chăng; **kính bảo hộ cho mọi người trong bán kính 5 m**; **keo nguội, người lớn thao tác nếu cần keo nóng**; **cấm dùng áp lực khí nén tự chế**; chỉ ACT hô lệnh phóng và lệnh "an toàn" trước khi ai đó ra nhặt. Tỉ lệ giám sát **1 ACT / đội tại khu chế tác + 2 ACT chuyên trách bãi phóng**. **Điều kiện dừng:** dừng khi có gió mạnh đổi hướng, khi có người vào vùng cấm, hoặc sau bất kỳ lần phóng lệch hướng nào — kiểm lại toàn bộ trước khi tiếp tục.
+
+**Quyền được dừng** — *"Em không muốn đứng ở bãi phóng thì nói 'con xin dừng' — em ở khu bàn ghi số liệu cho đội. Đội **không** bị trừ điểm. Ai thấy chói mắt hay khó chịu với kính bảo hộ, báo ngay, chúng ta đổi kính khác."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** bộ vật tư **cắt sẵn**, chỉ lắp ráp; lực phóng giảm một nửa; ACT là người bấm phóng. **16–18:** tự thiết kế, được thay đổi cấu hình, thêm yêu cầu tính toán góc phóng tối ưu và kiểm bằng 3 lần thử.
+
+> **Sai lầm thường gặp khi dẫn:** cho các đội phóng cùng lúc để tiết kiệm thời gian. Nhiều vật phóng bay cùng lúc là tình huống không kiểm soát được hướng và người; mỗi lần chỉ một đội phóng, ACT hô lệnh, các đội khác đứng sau vạch chờ.
+
+## A6-02 · Tôi tự tin – Rung chuông vàng
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| T — Tài năng | 9–18 | 60 phút | 40–120 học viên | Hội trường, sàn ngồi |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-17` Học thuật · `NL-13` Quản lý cảm xúc · `NL-07` Tập trung | Thấp | Bảng con ×1/HV, bút lông ×1/HV, khăn lau ×1/HV, bộ 25 câu hỏi, máy chiếu, chuông ×1 |
+
+**Mục tiêu học tập** — Học viên **huy động** được kiến thức dưới áp lực thời gian 15 giây/câu và **nêu** được chiến lược giữ bình tĩnh khi trả lời sai liên tiếp.
+
+**Chuẩn bị** — Bảng con và bút lông cho **từng** học viên (dư 20%). Bộ 25 câu hỏi trải đều 5 lĩnh vực, độ khó tăng dần. **Luật quan trọng: không ai bị loại khỏi sàn.** Ai sai vẫn ngồi tiếp và tiếp tục trả lời; điểm tính cá nhân **chỉ mình học viên biết**, bảng trên màn hình chỉ hiển thị **tổng số người trả lời đúng mỗi câu**. Sàn ngồi có đệm, lối đi rộng 1 m.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — 3 câu hỏi vui khởi động, cả hội trường cùng giơ bảng để quen nhịp.
+2. **Trải nghiệm (25 phút)** — Bước 1: phổ biến luật, nhấn mạnh **không loại ai**. Bước 2: mỗi câu 15 giây, giơ bảng khi có tiếng chuông. Bước 3: sau mỗi 5 câu, Trainer công bố **số người đúng của cả hội trường**, không đọc tên. Bước 4: sau câu 15 có **cửa cứu trợ**: học viên được hỏi một bạn bên cạnh trong 20 giây. Bước 5: 5 câu cuối làm theo đội, cả đội chung một bảng. Lời dẫn: *"Ở đây không ai bị mời ra khỏi sàn. Sai câu này thì câu sau vẫn trả lời tiếp. Tôi muốn xem các em xử lý cảm giác vừa sai như thế nào."*
+3. **Quan sát và chia sẻ (5 phút)** — Hỏi 3 học viên: sau khi sai 2 câu liền, em đã làm gì để quay lại?
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Ở câu nào số người đúng tụt mạnh nhất? (2) Ngay sau khi sai, trong người em xảy ra chuyện gì — tim đập, đầu trống, hay muốn bỏ? (3) Vì sao sai một câu lại làm câu tiếp theo khó hơn, dù độ khó không đổi? (4) Nguyên lý: cách quay lại sau một lỗi quan trọng hơn việc không bao giờ sai — vì sao? (5) Ở cửa cứu trợ, em có dám hỏi không, và điều gì cản em? (6) Trong bài kiểm tra ở trường, em sẽ làm gì khác ở câu ngay sau câu bị sai?
+5. **Áp dụng (10 phút)** — Mỗi học viên viết một "quy trình 20 giây" để reset sau khi làm sai một câu, dán vào sổ trại.
+
+**An toàn** — Rủi ro thể chất thấp: chen lấn khi ra vào sàn, mực bút lông. Biện pháp: lối đi 1 m, ra vào theo hàng; bút lông không mùi, không độc; khăn lau riêng từng người. Rủi ro tâm lý: xấu hổ khi sai công khai. Biện pháp: **không loại ai khỏi sàn, không đọc tên người sai, không hiển thị bảng xếp hạng cá nhân**.
+
+**Quyền được dừng** — *"Em không muốn trả lời nữa thì nói 'con xin dừng' — em úp bảng xuống và vẫn ngồi cùng mọi người, không ai hỏi vì sao. Đội không mất điểm."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** 15 câu, 20 giây/câu, câu hỏi hình ảnh, cửa cứu trợ mở từ câu 5. **16–18:** 25 câu, 15 giây/câu, có câu hỏi mở phải viết luận điểm trong 30 giây.
+
+> **Sai lầm thường gặp khi dẫn:** dùng luật loại dần cho "giống chương trình truyền hình". Loại dần biến hoạt động thành xếp hạng công khai, và những học viên cần luyện xử lý sai sót nhất lại là những người bị mời ra ngoài sớm nhất.
+
+## A6-03 · Chuyên đề AI: máy làm được gì, con người làm được gì
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| T — Tài năng | 12–18 | 75 phút | 8–12 học viên/đội | Hội trường có máy chiếu và bàn |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-18` Công nghệ và AI · `NL-03` Tư duy · `NL-16` Phản tư | Thấp | Máy chiếu ×1, thiết bị của trại ×1/đội, bộ 6 tình huống in ×1/đội, bảng 2 cột A2 ×1/đội, bút lông ×4/đội |
+
+**Mục tiêu học tập** — Học viên **phân biệt** được *dùng AI để học* với *dùng AI để né học* qua ≥ 4 tình huống cụ thể, và **viết** được quy tắc dùng AI của riêng mình cho việc học ở trường.
+
+**Chuẩn bị** — 6 tình huống in sẵn (làm bài văn, giải toán, ôn từ vựng, viết tin nhắn xin lỗi, tra cứu sự kiện lịch sử, làm slide thuyết trình). Bảng 2 cột A2: *AI làm hộ – tôi vẫn học được gì*. Thiết bị của trại có công cụ AI, **có lọc nội dung và ACT giám sát màn hình**. Không dùng tài khoản cá nhân của học viên.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Hỏi giơ tay: *"Ai đã từng dùng AI làm bài? Kết quả thế nào?"* Ghi nhận, không phán xét.
+2. **Trải nghiệm (30 phút)** — Bước 1: mỗi đội nhận 6 tình huống, thử **thật** 2 tình huống trên thiết bị, ACT giám sát. Bước 2: đội đánh giá kết quả AI: chỗ nào đúng, chỗ nào sai, chỗ nào bịa. Bước 3: xếp 6 tình huống vào 2 cột trên bảng A2. Bước 4: đội chọn 1 tình huống và viết lại thành **cách dùng AI mà mình vẫn học được** (ví dụ: bắt AI ra 5 câu hỏi kiểm tra thay vì đưa đáp án). Bước 5: trình bày 2 phút/đội. Lời dẫn: *"Bảo AI làm hộ bài thì bài xong, nhưng đầu em không đổi gì. Bây giờ thử hỏi nó theo cách khác: bảo nó ra đề kiểm tra em, đừng bảo nó làm bài cho em."*
+3. **Quan sát và chia sẻ (10 phút)** — Mỗi đội chỉ ra **một chỗ AI trả lời sai hoặc bịa** mà đội phát hiện được.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Trong 2 tình huống đã thử, AI làm tốt phần nào và hỏng phần nào? (2) Lúc thấy AI viết ra bài hoàn chỉnh trong 10 giây, em thấy thế nào? (3) Vì sao dùng AI làm hộ lại làm em yếu đi ở đúng kỹ năng em đang cần luyện? (4) Nguyên lý: đâu là ranh giới giữa công cụ hỗ trợ và người làm thay? (5) Làm sao em biết một câu trả lời của AI là sai — em kiểm bằng gì? (6) Ở trường, môn nào em sẽ dùng AI theo cách mới này, và dùng vào khâu nào?
+5. **Áp dụng (10 phút)** — Mỗi học viên viết **3 quy tắc dùng AI** của riêng mình, có một điều "tôi sẽ không nhờ AI làm", mang về ký với gia đình ở Family Day.
+
+**An toàn** — Rủi ro: tiếp cận nội dung không phù hợp, lộ thông tin cá nhân, phụ thuộc công cụ. Biện pháp: **chỉ dùng thiết bị của trại**, có bộ lọc; ACT ngồi sau nhìn được màn hình; **cấm nhập tên thật, trường, địa chỉ, ảnh của học viên** vào công cụ; không dùng công cụ đánh giá tính cách hoặc "đo trí tuệ" của học viên. **Dấu hiệu vượt phạm vi:** học viên chia sẻ đang dùng AI để né hoàn toàn việc học ở trường trong thời gian dài — chuyển thông tin cho Coach để trao đổi riêng với gia đình.
+
+**Quyền được dừng** — *"Em không muốn thao tác trên máy thì nói 'con xin dừng' — em làm người phản biện kết quả cho đội. Không trừ điểm, không hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** không thao tác trực tiếp; ACT trình chiếu và cả nhóm cùng đánh giá kết quả, tập trung vào việc "AI cũng nói sai". **16–18:** thêm yêu cầu viết prompt và so sánh 2 prompt khác nhau cho cùng một nhiệm vụ, đánh giá chất lượng.
+
+> **Sai lầm thường gặp khi dẫn:** dạy theo hướng "AI là xấu, đừng dùng". Học viên sẽ vẫn dùng và chỉ giấu đi. Mục tiêu của thẻ này là **phân biệt cách dùng**, nên phải cho học viên thao tác thật và tự nhìn thấy chỗ AI sai.
+
+## A6-04 · Trình diễn bản sắc team
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| I — Nội lực | 9–18 | 80 phút | 8–12 học viên/đội | Sân khấu hội trường |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-11` Giao tiếp · `NL-12` Hợp tác · `NL-15` Lãnh đạo bản thân | Thấp | Sân khấu có bậc ≤ 20 cm, micro ×3, loa, đạo cụ tự làm, thảm sân khấu chống trơn, đèn chiếu |
+
+**Mục tiêu học tập** — Đội **trình diễn** 4–5 phút thể hiện bản sắc đội với **100% thành viên có vai trên sân khấu hoặc ở hậu đài**, và **nêu** được cách đội xử lý sự cố trong lúc diễn.
+
+**Chuẩn bị** — Sân khấu bậc thấp ≤ 20 cm, mép bậc dán băng phản quang, **thảm chống trơn**. Micro thử tiếng trước. Đạo cụ tự làm, **cấm lửa, cấm vật sắc, cấm nhảy từ trên bậc xuống**. Danh sách vai của từng đội nộp trước cho ACT. Ghế khán giả cách sân khấu ≥ 2 m.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Bài khởi động giọng và cơ mặt 3 phút cho toàn bộ học viên, kể cả người ở hậu đài.
+2. **Trải nghiệm (40 phút)** — Bước 1: đội có 25 phút dựng tiết mục từ tên đội, khẩu hiệu và cờ đã làm ở A1-04. Bước 2: **phân vai bắt buộc phủ hết đội** — diễn, dẫn, âm thanh, đạo cụ, nhắc thoại. Bước 3: chạy thử 1 lần trên sân khấu thật, ACT kiểm an toàn đạo cụ. Bước 4: diễn chính thức 4–5 phút/đội. Bước 5: mỗi đội tự ghi lại **một sự cố** đã xảy ra và cách xử lý. Lời dẫn: *"Ai cũng có vai. Người nhắc thoại ở cánh gà cũng là người diễn — không có ai chỉ ngồi xem đội mình diễn."*
+3. **Quan sát và chia sẻ (10 phút)** — Sau mỗi tiết mục, hai đội khác nói **một điều làm mình nhớ**. Không chấm điểm cá nhân, không xếp hạng công khai học viên.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Tiết mục của đội có bao nhiêu vai và ai làm vai gì? (2) Lúc đứng trước 100 người, trong người em thế nào — trước khi lên và sau khi lên? (3) Vì sao nỗi lo trước khi lên lớn hơn cảm giác thật khi đang diễn? (4) Nguyên lý: điều gì làm một tiết mục có bản sắc — kỹ thuật diễn hay câu chuyện thật của đội? (5) Sự cố đã xảy ra, ai là người xử lý và bạn ấy xử lý bằng cách nào? (6) Ở lớp, tình huống nào em từng né vì sợ đứng trước đám đông, và giờ em nghĩ sao?
+5. **Áp dụng (10 phút)** — Mỗi học viên chọn **một dịp cụ thể trong tháng tới** sẽ đứng nói trước lớp, ghi ngày dự kiến vào sổ trại.
+
+**An toàn** — Rủi ro: ngã từ bậc sân khấu, vấp dây micro, va đạo cụ, quá tải âm thanh. Biện pháp: bậc ≤ 20 cm có băng phản quang, thảm chống trơn; dây micro dán sát sàn; **cấm lửa, pháo, vật sắc, nhảy từ bậc xuống**; âm lượng loa giới hạn; ACT trực hai cánh gà. Tỉ lệ giám sát 1 ACT / đội đang diễn + 1 ACT hậu đài.
+
+**Quyền được dừng** — *"Em không muốn lên sân khấu thì nói 'con xin dừng' — em nhận vai hậu đài, và vai đó được ghi nhận đầy đủ như vai diễn. Đội không mất điểm. Đang diễn mà em muốn xuống, em bước vào cánh gà, không cần xin phép ai."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** tiết mục 3 phút, có kịch bản mẫu, ACT dẫn chuyện giúp. **16–18:** 5 phút, tự viết kịch bản, thêm yêu cầu tiết mục phải chứa một thông điệp giá trị và giải thích được lựa chọn thông điệp đó.
+
+> **Sai lầm thường gặp khi dẫn:** cho những học viên "diễn tốt" chiếm hết thời lượng để tiết mục hay hơn. Kết quả là một nửa đội đứng làm nền và không có gì để trả lời ở nhịp đúc kết; ràng buộc phủ hết vai phải được kiểm trước khi chạy thử.
+
+## A6-05 · Hùng biện 5 phút — Bản lĩnh Leader trong kỷ nguyên mới
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| I — Nội lực | 12–18 | 90 phút | 1 học viên/lượt, khán giả ≥ 30 | Hội trường có bục và micro |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-11` Giao tiếp · `NL-15` Lãnh đạo bản thân · `NL-01` Nhận thức bản thân | Thấp | Micro ×2, bục nói ×1, đồng hồ đếm ngược chiếu ×1, phiếu phản hồi ×3/người nói, khung dàn ý in ×1/HV, nước uống |
+
+**Mục tiêu học tập** — Học viên **trình bày** 5 phút trước ≥ 30 người với cấu trúc mở – 3 luận điểm – kết, có **ít nhất 1 ví dụ từ trải nghiệm 6 ngày qua**.
+
+**Chuẩn bị** — Khung dàn ý in sẵn (câu mở · luận điểm 1-2-3 · ví dụ · câu kết). Đồng hồ đếm ngược chiếu lên màn hình. Phiếu phản hồi chỉ có 2 ô: *điều tôi nhớ nhất* và *một gợi ý*. **Không có ô chấm điểm.** Nước uống ở bục. Ghế khán giả xếp gần bục để người nói không thấy khoảng trống lớn.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (8 phút)** — Bài thở 4 nhịp; luyện nói 30 giây theo cặp về một chủ đề dễ để làm nóng giọng.
+2. **Trải nghiệm (40 phút)** — Bước 1: 12 phút viết dàn ý theo khung. Bước 2: tập theo cặp, mỗi người 3 phút, bạn cặp bấm giờ. Bước 3: lần lượt lên nói 5 phút, đồng hồ chiếu công khai. Bước 4: khán giả viết phiếu phản hồi, **không vỗ tay so sánh, không cho điểm**. Bước 5: người nói nhận phiếu và đọc riêng, không đọc to. Lời dẫn: *"Nếu quên bài, em dừng lại, uống một ngụm nước, nhìn vào dàn ý rồi nói tiếp. Đứng im 5 giây trên sân khấu không phải là thất bại — đó là điều mọi diễn giả đều làm."*
+3. **Quan sát và chia sẻ (12 phút)** — Mỗi người nói chọn **một** gợi ý từ phiếu để chia sẻ với nhóm nếu muốn.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Bài nói của em có đủ mở – 3 luận điểm – kết không, và phần nào bị hụt? (2) Trước khi lên và sau khi nói xong, cảm giác trong người khác nhau thế nào? (3) Vì sao ví dụ có thật lại giữ được sự chú ý của khán giả tốt hơn lý lẽ chung? (4) Nguyên lý: bản lĩnh khi nói trước đám đông đến từ chuẩn bị hay từ tính cách? (5) Ở phút thứ ba, điều gì làm em muốn nói nhanh cho xong? (6) Trong tháng tới, em sẽ nói 5 phút ở đâu, trước ai?
+5. **Áp dụng (15 phút)** — Mỗi học viên sửa lại dàn ý theo phản hồi và ghi một dịp cụ thể sẽ dùng lại bài nói này.
+
+**An toàn** — Rủi ro thể chất thấp. Rủi ro tâm lý: căng thẳng sân khấu, so sánh giữa học viên, sợ nói trước đám đông. Biện pháp: **phiếu phản hồi không có ô chấm điểm**; **không xếp hạng công khai**; cho phép nói với nhóm nhỏ 10 người thay vì hội trường; ACT đứng ở góc nhìn thấy được người nói làm điểm tựa; nước uống tại bục. **Dấu hiệu vượt phạm vi:** học viên có phản ứng lo âu mạnh (run rẩy, khó thở) — dừng ngay, chuyển ra ngoài với chuyên viên tâm lý, không ép lên lại.
+
+**Quyền được dừng** — *"Đang nói mà em muốn dừng, em nói 'con xin dừng' và về chỗ. Không ai hỏi lý do, và bài nói của em vẫn được tính là đã tham gia. Nếu em muốn nói lại với nhóm 10 người thay vì cả hội trường, nói với ACT, chúng ta sắp xếp."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** không dùng bản 5 phút; thay bằng 2 phút trước nhóm 12 người, có dàn ý điền sẵn một nửa. **16–18:** 5 phút đủ, thêm phần trả lời 1 câu hỏi từ khán giả trong 60 giây.
+
+> **Sai lầm thường gặp khi dẫn:** cho khán giả chấm điểm và công bố người nói hay nhất. Việc này khiến những học viên vốn ngại nói — nhóm cần hoạt động này nhất — sẽ tìm cách không lên; phản hồi phải ở dạng gợi ý riêng, không phải điểm số công khai.
+
+## A6-06 · Nghi thức lửa trại
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| I — Nội lực | 9–18 | 75 phút | Toàn trại | Bãi lửa trại ngoài trời, thoáng |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-16` Phản tư · `NL-13` Quản lý cảm xúc · `NL-12` Hợp tác | **Cao** | Củi khô, mồi lửa, **2 bình chữa cháy + 2 xô cát + 2 xô nước**, đèn pin ×1/ACT, vòng ngồi đánh dấu, micro ×2, bộ sơ cứu bỏng |
+
+**Mục tiêu học tập** — Học viên **ghi dấu** hành trình 6 ngày bằng một lời phát biểu ngắn trước tập thể, và **nêu** được một điều mình mang về từ trại.
+
+**Chuẩn bị** — Khu đốt cách vật dễ cháy **≥ 5 m**, quang cây khô, không dưới tán cây. Vòng ngồi cách lửa **≥ 3 m**, đánh dấu bằng dây. **2 bình chữa cháy + 2 xô cát + 2 xô nước** đặt sẵn ở 4 hướng. Vòng ngoài **do người lớn giữ**, không có học viên nào ở giữa vòng trong và lửa. Đèn pin cho toàn bộ ACT. Kiểm hướng gió trước khi nhóm lửa. Bộ sơ cứu bỏng và người trực y tế tại chỗ.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (10 phút)** — Toàn trại vào vòng theo đội, ACT điểm danh **theo danh sách**, phổ biến vạch an toàn và hiệu lệnh sơ tán.
+2. **Trải nghiệm (25 phút)** — Bước 1: người lớn nhóm lửa, học viên ngồi ngoài vạch quan sát. Bước 2: mỗi đội cử 2 người phát biểu 60 giây về hành trình đội. Bước 3: nghi thức truyền đèn — truyền **đèn pin hoặc nến điện**, không truyền lửa thật. Bước 4: hát chung theo đội. Bước 5: Trainer chốt bằng lời tổng kết 3 phút. Lời dẫn: *"Không ai bước qua vạch dây, kể cả để chụp ảnh. Chúng ta không đốt bất cứ thứ gì có tên các em trên đó — cái các em mang về đêm nay là lời nói, không phải tro."*
+3. **Quan sát và chia sẻ (10 phút)** — Mỗi đội nói **một câu** đội muốn cả trại nhớ.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Trong 6 ngày, khoảnh khắc nào đội mình thay đổi rõ nhất? (2) Ngồi đây nhìn lửa, trong người em thế nào? (3) Vì sao những việc khó lại là những việc em nhớ lâu nhất? (4) Nguyên lý: điều gì làm một trải nghiệm biến thành một thay đổi thật sự — cảm xúc đêm nay hay việc làm ngày mai? (5) Điều em mang về nhà là một cảm giác hay một việc làm cụ thể? (6) Sáng mai về nhà, việc đầu tiên em làm khác đi là gì?
+5. **Áp dụng (15 phút)** — Mỗi học viên viết một dòng cam kết vào sổ trại và đọc cho đội nghe; **không viết lên vật rồi đốt**.
+
+**An toàn — mức cao** — Rủi ro: bỏng, cháy lan, khói gây khó thở, vấp ngã trong tối, hoảng loạn đám đông. Biện pháp **bắt buộc**: khu đốt **cách vật dễ cháy ≥ 5 m**; vòng ngồi **cách lửa ≥ 3 m** có dây đánh dấu; **2 bình chữa cháy + 2 xô cát + 2 xô nước**; **vòng ngoài do người lớn giữ**; **không đốt vật gắn danh tính học viên**; chỉ người lớn tiếp củi; cấm chất lỏng dễ cháy; kiểm hướng gió, huỷ khi gió mạnh hoặc hanh khô cấp cảnh báo cháy; **kiểm tra lại điểm lửa sau 30 phút và dội nước dập hoàn toàn trước khi rời**. Tỉ lệ giám sát **1 ACT / 10 học viên**, cộng 2 người trực bình chữa cháy và 1 y tế. Học viên hen suyễn ngồi **phía đầu gió**, có danh sách riêng. **Điều kiện dừng:** dừng ngay khi gió đổi hướng thổi khói vào vòng ngồi, khi có tàn lửa bay ra ngoài vòng, hoặc khi có học viên khó thở.
+
+**Quyền được dừng** — *"Em thấy nóng, cay mắt, hay khó thở thì nói 'con xin dừng' — ACT sẽ đưa em ra khu ghế phía ngoài có nước và ánh sáng. Không ai hỏi lý do, đội không mất điểm. Em không muốn phát biểu cũng không sao."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** ngồi ở vòng ngoài cùng, cách lửa ≥ 5 m, thời lượng 45 phút, kết thúc trước 21:00. **16–18:** được nhận vai hỗ trợ nghi thức (dẫn chương trình, giữ nhịp hát) dưới giám sát; vẫn **không tiếp củi**.
+
+> **Sai lầm thường gặp khi dẫn:** cho học viên viết điều muốn bỏ lên giấy rồi ném vào lửa. Đây chính là thiết kế đã bị loại ở A2-08 — gắn danh tính học viên với vật bị tiêu huỷ, cộng thêm rủi ro cháy. Nghi thức chuyển hoá đã có chỗ riêng của nó ở A2-08b.
+
+---
+
+## 7. NGÀY 7 · CEREMONY & FAMILY DAY
+
+## A7-01 · Xếp hình tập thể + chụp ảnh
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| A — Hành động | 9–18 | 45 phút | Toàn trại, 80–150 người | Sân rộng, có điểm cao để chụp |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-07` Tập trung · `NL-11` Giao tiếp | Trung bình | Sơ đồ xếp hình A0 ×1/đội, vôi kẻ vạch, loa cầm tay ×2, máy ảnh ×1, thang hoặc ban công có lan can, nón mốc ×20 |
+
+**Mục tiêu học tập** — Toàn trại **hoàn thành** hình tập thể theo sơ đồ trong ≤ 12 phút, với **mọi học viên đứng đúng vị trí đã phân**, không ai bị thiếu chỗ.
+
+**Chuẩn bị** — Kẻ vôi khung hình trên sân trước. Sơ đồ A0 phát cho từng đội, mỗi đội biết **cung đường vào vị trí của mình**, tránh cắt ngang nhau. Điểm chụp cao có **lan can chắc chắn** — người chụp là người lớn, không cho học viên leo. Loa để hiệu lệnh nghe được ở rìa sân. Nước và bóng mát ở rìa sân.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Ôn lại hiệu lệnh tập hợp từ A1-01; toàn trại tập hợp thử 1 lần.
+2. **Trải nghiệm (15 phút)** — Bước 1: mỗi đội nhận sơ đồ, có 3 phút bàn cung đường và thứ tự vào. Bước 2: lượt 1 vào vị trí, ACT bấm giờ và chụp một ảnh thử. Bước 3: chiếu ảnh thử lên loa hoặc cho Leader xem, đội tự sửa chỗ lệch. Bước 4: lượt 2, chụp chính thức. Bước 5: chụp thêm ảnh từng đội. Lời dẫn: *"Mỗi đội đi theo đúng cung đường của mình, không cắt ngang đội khác. Hình này chỉ đẹp khi không ai phải chen — cả trại vào chỗ trong bốn phút là được."*
+3. **Quan sát và chia sẻ (5 phút)** — Leader các đội nói: chỗ nào bị chồng chéo và đã sửa thế nào.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Lượt 1 và lượt 2 mất bao nhiêu phút, và chỗ lệch nằm ở đâu? (2) Đứng trong hình mà không nhìn thấy tổng thể, em thấy thế nào? (3) Vì sao mỗi người chỉ thấy phần của mình mà cả hình vẫn thành? (4) Nguyên lý: một việc lớn cần gì để mỗi người làm đúng phần mình — chỉ dẫn rõ hay giám sát chặt? (5) Nếu một người đứng sai chỗ, ảnh hưởng tới bao nhiêu người khác? (6) Ở lớp em, việc chung nào đang thiếu "sơ đồ" cho từng người?
+5. **Áp dụng (5 phút)** — Mỗi đội viết một câu về vai trò của mình trong bức ảnh chung của cả trại, dán vào album đội.
+
+**An toàn** — Rủi ro: chen lấn khi di chuyển đông người, say nắng khi đứng lâu, ngã từ điểm chụp cao. Biện pháp bắt buộc: **cung đường riêng cho từng đội, không cắt ngang**; **học viên không được leo lên điểm chụp cao**, người chụp là người lớn ở nơi có lan can; thời gian đứng liên tục ≤ 6 phút, có nước và bóng mát; **không tổ chức 11:00–15:00**. Tỉ lệ giám sát **1 ACT / đội**, cộng 2 ACT điều phối lối vào.
+
+**Quyền được dừng** — *"Em thấy chóng mặt hoặc nắng quá thì nói 'con xin dừng' — em ra chỗ bóng mát có nước, ACT đi cùng. Bức ảnh vẫn có đội em, và không ai hỏi em vì sao."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** đứng ở vòng ngoài của hình, cung đường ngắn nhất, thời gian đứng ≤ 4 phút. **16–18:** nhận vai điều phối lối vào cho các đội nhỏ tuổi và tự đề xuất phương án xếp hình.
+
+> **Sai lầm thường gặp khi dẫn:** chụp đi chụp lại chục lần cho ảnh đẹp trong khi cả trại đứng dưới nắng. Đây là hoạt động dễ gây kiệt sức nhất mà lại bị đánh giá thấp về rủi ro; giới hạn 2 lượt chụp và tôn trọng mốc 6 phút.
+
+## A7-02 · Mái nhà thịnh vượng (8 gạch móng · 4 trụ · cửa · mái)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| G — Mục tiêu | 9–18 + gia đình | 70 phút | 1 học viên + 1–2 người nhà/bàn | Hội trường có bàn tròn |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-12` Hợp tác · `NL-11` Giao tiếp · `NL-02` Thiết lập mục tiêu | Thấp | Bộ mô hình nhà bằng bìa (8 gạch + 4 trụ + cửa + mái) ×1/gia đình, bút ×3/bàn, giấy A3 nền nhà ×1/bàn |
+
+**Mục tiêu học tập** — Học viên và gia đình **cùng đặt tên** cho 8 gạch móng và 4 trụ của gia đình mình, và **thống nhất** được 1 trụ cần củng cố trong 90 ngày tới.
+
+**Chuẩn bị** — Bàn tròn 4–6 người, mỗi gia đình một bộ mô hình bìa đã cắt sẵn. Giấy A3 làm nền nhà. Bút đủ cho cả người lớn và học viên. Ghế đủ, lối đi rộng. Nhắc trước với phụ huynh: **hoạt động này không phải để đánh giá gia đình**, không so sánh giữa các bàn.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Mỗi bàn: học viên nói **một điều mình biết ơn** ở người nhà đang ngồi cạnh.
+2. **Trải nghiệm (25 phút)** — Bước 1: cả bàn viết lên 8 gạch móng những điều nền tảng của gia đình (ví dụ: bữa tối chung, cách nói khi giận, giờ ngủ). Bước 2: viết 4 trụ — 4 điều gia đình muốn giữ vững. Bước 3: viết lên cửa: *điều gia đình muốn mở ra với bên ngoài*. Bước 4: viết lên mái: *điều gia đình muốn bảo vệ*. Bước 5: dựng mô hình, chụp ảnh cùng nhau. Lời dẫn: *"Không có ngôi nhà nào giống ngôi nhà nào, và cũng không có nhà nào đủ tám gạch cả. Chúng ta chỉ đang gọi tên xem nhà mình đang có gì và đang thiếu gì."*
+3. **Quan sát và chia sẻ (10 phút)** — Ba gia đình xung phong chia sẻ **một viên gạch** của mình. Không mời đích danh gia đình nào.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Nhà mình đã đặt tên được mấy viên gạch và mấy trụ? (2) Lúc bố mẹ và con viết khác nhau về cùng một điều, cảm giác thế nào? (3) Vì sao có những điều con thấy quan trọng mà bố mẹ chưa từng biết là quan trọng với con? (4) Nguyên lý: một nền móng vững được xây bằng việc lớn hay bằng việc lặp lại hằng ngày? (5) Trụ nào của nhà mình đang yếu nhất, và cả nhà đồng ý chọn trụ nào để củng cố? (6) Từ tuần này, mỗi người làm một việc gì cho trụ đó?
+5. **Áp dụng (10 phút)** — Cả nhà viết **một việc mỗi người** lên nền nhà A3, ký tên, mang về treo ở nhà.
+
+**An toàn** — Rủi ro thể chất thấp. Rủi ro tâm lý: chủ đề gia đình có thể chạm vào ly hôn, mất người thân, xung đột. Biện pháp: **không hỏi về cơ cấu gia đình, thu nhập, nghề nghiệp**; bộ mô hình dùng từ trung tính ("người nhà" thay vì "bố mẹ"); học viên đi cùng người thân khác hoặc đi một mình vẫn có bàn riêng với ACT; **chuyên viên tâm lý có mặt**. **Dấu hiệu vượt phạm vi:** gia đình bộc lộ xung đột gay gắt tại chỗ — ACT mời ra phòng riêng, không xử lý trước hội trường.
+
+**Quyền được dừng** — *"Nếu có viên gạch nào cả nhà không muốn viết, để trống cũng được. Con hoặc người nhà muốn dừng thì nói 'con xin dừng' hoặc ra hiệu với ACT, cả nhà ra phòng bên. Không ai hỏi lý do trước hội trường."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** vẽ hình thay chữ, 5 gạch thay vì 8, người nhà hỗ trợ ghi. **16–18:** yêu cầu học viên **chủ trì** cuộc trò chuyện ở bàn mình và tự đề xuất trụ cần củng cố trước khi nghe ý người lớn.
+
+> **Sai lầm thường gặp khi dẫn:** để phụ huynh viết hết còn học viên ngồi nghe. Ở hoạt động này học viên phải cầm bút ít nhất một nửa số gạch; ACT đi vòng và nhắc riêng từng bàn khi thấy mất cân bằng.
+
+## A7-03 · Bài toán tài chính gia đình (6 nhóm khoản mục)
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| T — Tài năng | 12–18 + gia đình | 70 phút | 1 học viên + 1–2 người nhà/bàn | Hội trường có bàn |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-03` Tư duy · `NL-10` Giải quyết vấn đề · `NL-06` Quản lý thời gian | Thấp | Bộ thẻ khoản mục 6 nhóm ×1/bàn, "tiền giấy" mô phỏng ×1 bộ/bàn, bảng ngân sách A3 ×1/bàn, bút ×3/bàn |
+
+**Mục tiêu học tập** — Học viên **ra quyết định** phân bổ một ngân sách mô phỏng qua 3 tình huống bất ngờ và **giải trình** được đánh đổi của mỗi lựa chọn.
+
+**Chuẩn bị** — Bộ thẻ 6 nhóm khoản mục (ăn uống · học tập · sức khoẻ · đi lại · tiết kiệm · phát sinh). "Tiền giấy" mô phỏng — **dùng số liệu giả định chung cho mọi bàn, không dùng thu nhập thật của gia đình**. Bảng ngân sách A3. 3 thẻ tình huống bất ngờ (xe hỏng, ốm, cơ hội học thêm). Quy định rõ: **cha mẹ chỉ quan sát trong 2/3 thời gian**, chỉ được vào ở 1/3 cuối.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Hỏi học viên: *"Tháng vừa rồi, khoản chi nào của em là lớn nhất?"* Không hỏi con số của gia đình.
+2. **Trải nghiệm (25 phút)** — Bước 1: **học viên tự phân bổ** ngân sách giả định vào 6 nhóm, 8 phút, cha mẹ **chỉ quan sát và ghi chép, không nói**. Bước 2: mở thẻ tình huống 1, học viên điều chỉnh. Bước 3: mở tình huống 2 và 3, mỗi lần điều chỉnh phải ghi *cắt ở đâu và vì sao*. Bước 4: **cha mẹ vào cuộc** ở 8 phút cuối, cùng rà lại bảng. Bước 5: cả bàn chốt phương án cuối. Lời dẫn với phụ huynh: *"Hai phần ba thời gian đầu, anh chị chỉ quan sát và ghi lại điều mình thấy. Chưa sửa, chưa gợi ý. Cái anh chị quan sát được sẽ là phần giá trị nhất của buổi hôm nay."*
+3. **Quan sát và chia sẻ (10 phút)** — Phụ huynh nói **một điều mình quan sát được ở con**, bắt đầu bằng *"Tôi thấy con..."*, không bắt đầu bằng *"Đáng lẽ con phải..."*.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Sau 3 tình huống, em đã cắt những khoản nào và giữ những khoản nào? (2) Lúc phải cắt một khoản mình thích, em thấy thế nào? (3) Vì sao khoản tiết kiệm thường là khoản bị cắt đầu tiên? (4) Nguyên lý: một quyết định tốt là quyết định không mất gì, hay quyết định biết rõ mình đánh đổi gì? (5) Cha mẹ đã quan sát được điều gì mới về cách con suy nghĩ? (6) Ở nhà, khoản chi nào con có thể tự quản từ tháng sau, và ở mức bao nhiêu?
+5. **Áp dụng (10 phút)** — Gia đình thống nhất **một khoản** học viên tự quản trong 30 ngày và cách ghi chép đơn giản.
+
+**An toàn** — Rủi ro thể chất không đáng kể. Rủi ro tâm lý: chạm vào khó khăn tài chính thật của gia đình, so sánh giàu nghèo giữa các bàn. Biện pháp: **dùng số liệu giả định giống nhau cho mọi bàn**; **cấm hỏi thu nhập thật**; không chia sẻ số liệu giữa các bàn; ACT chuyển hướng ngay khi có câu nói so sánh điều kiện. **Không quy lỗi cho cha mẹ** trong mọi phần dẫn.
+
+**Quyền được dừng** — *"Bàn nào không muốn tiếp tục thì nói 'con xin dừng', gia đình chuyển sang phần viết cam kết luôn. Không ai hỏi lý do và không có bàn nào bị nhắc tên."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** không dùng bản này; thay bằng trò phân bổ 10 đồng xu vào 4 nhóm nhu cầu, không có tình huống bất ngờ. **16–18:** thêm nhóm khoản mục thứ 7 là "đầu tư cho tương lai" và yêu cầu tính tỉ lệ phần trăm từng nhóm.
+
+> **Sai lầm thường gặp khi dẫn:** để phụ huynh cầm bút ngay từ phút đầu. Toàn bộ giá trị của thẻ này nằm ở việc **cha mẹ quan sát con ra quyết định** — mất 2/3 thời gian quan sát là mất luôn dữ liệu cho câu hỏi số 5 ở nhịp đúc kết.
+
+## A7-04 · Hành trình 90 ngày hạnh phúc
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| G — Mục tiêu | 9–18 + gia đình | 70 phút | 1 học viên + 1–2 người nhà/bàn | Hội trường có bàn |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-02` Thiết lập mục tiêu · `NL-08` Xây dựng thói quen · `NL-16` Phản tư | Thấp | Bảng lộ trình 90 ngày A3 ×1/gia đình, thẻ thói quen ×6/gia đình, bút ×3/bàn, sổ theo dõi ×1/HV, phong bì ×1/gia đình |
+
+**Mục tiêu học tập** — Gia đình **thiết kế** được cam kết 90 ngày gồm **2 thói quen của học viên và 1 việc của người lớn**, có mốc kiểm ngày 7 – 21 – 90 và **kế hoạch quay lại khi đứt chuỗi**.
+
+**Chuẩn bị** — Bảng lộ trình A3 in sẵn 3 mốc: ngày 7 (nhận diện), ngày 21 (giải mã), ngày 90 (kiến tạo). Thẻ thói quen. Sổ theo dõi đơn giản có 7 cột KPI. Phong bì để niêm bản cam kết. Nhắc trước: **không hứa "sau 7 ngày con sẽ thay đổi"** — 7 ngày là mốc quan sát, không phải mốc kết quả.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Học viên đọc lại **bài học chính** đã chọn ở A5-03 cho gia đình nghe.
+2. **Trải nghiệm (25 phút)** — Bước 1: học viên chọn **2 thói quen**, mỗi thói quen có giờ cố định và bản nhỏ nhất dưới 2 phút. Bước 2: người lớn chọn **1 việc của mình** hỗ trợ (ví dụ: không nhắc quá 1 lần/ngày). Bước 3: điền mốc ngày 7 – 21 – 90, ghi **dấu hiệu quan sát được** ở mỗi mốc. Bước 4: viết **kế hoạch quay lại**: nếu đứt chuỗi thì quay lại trong bao nhiêu ngày (mục tiêu ≤ 3 ngày) và bằng cách nào. Bước 5: ký tên cả hai bên, cho vào phong bì. Lời dẫn: *"Chín mươi ngày sẽ có ngày đứt. Điều tôi muốn cả nhà viết ra hôm nay không phải là 'sẽ không bao giờ bỏ', mà là 'khi bỏ một hôm thì hôm sau quay lại thế nào'."*
+3. **Quan sát và chia sẻ (10 phút)** — Ba gia đình chia sẻ **việc của người lớn** mà mình đã chọn.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Hai thói quen của con và một việc của người lớn là gì? (2) Lúc người lớn phải chọn một việc cho chính mình, cảm giác thế nào? (3) Vì sao cam kết chỉ của một phía thường đứt sớm hơn? (4) Nguyên lý: chỉ số quan trọng nhất của 90 ngày là *thời gian quay lại sau khi đứt*, không phải chuỗi ngày liên tục — vì sao? (5) Ngày nào trong tuần dễ đứt nhất, và nhà mình phòng bằng cách nào? (6) Ai sẽ là người nhắc, và nhắc bằng câu nói nào để không gây căng thẳng?
+5. **Áp dụng (10 phút)** — Gia đình đặt lịch **3 buổi trao đổi** vào ngày 7, 21, 90 ngay trên điện thoại, và ghi tên người khởi xướng mỗi buổi.
+
+**An toàn** — Rủi ro thể chất không đáng kể. Rủi ro chuyên môn: cam kết quá tham vọng dẫn tới đứt sớm và cảm giác thất bại; kỳ vọng cha mẹ vượt bốn cam kết chuẩn. Biện pháp: **giới hạn tối đa 2 thói quen**; ACT duyệt bảng, cắt bớt khi thấy quá 2; **Trainer nói rõ 7 ngày là mốc quan sát, không phải mốc kết quả**; ngôn ngữ dẫn dắt **không quy lỗi cho cha mẹ**.
+
+**Quyền được dừng** — *"Nhà nào chưa muốn cam kết hôm nay thì nói 'con xin dừng' — mang bảng về nhà bàn thêm rồi gửi lại cho Coach trong tuần. Không ai bị nhắc tên và không ai bị coi là chưa hợp tác."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** 1 thói quen thay vì 2, bảng theo dõi dạng tô màu ô. **16–18:** 2 thói quen cộng 1 dự án 90 ngày, tự thiết kế bộ chỉ số theo dõi và tự báo cáo ở mốc 21.
+
+> **Sai lầm thường gặp khi dẫn:** để gia đình liệt kê 5–6 thói quen vì đang hào hứng sau trại. Cam kết quá tải là nguyên nhân số một của đứt chuỗi trong tuần thứ hai; ACT phải chủ động cắt xuống 2 và giải thích lý do cho phụ huynh.
+
+## A7-05 · Hai bức mật thư
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| I — Nội lực | 9–18 + gia đình | 60 phút | 1 học viên + 1–2 người nhà/bàn | Hội trường, ánh sáng dịu, nhạc nhẹ |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-13` Quản lý cảm xúc · `NL-11` Giao tiếp · `NL-01` Nhận thức bản thân | Trung bình, **cần chuyên viên tâm lý** | Giấy thư ×2/người, phong bì ×2/người, bút ×1/người, khăn giấy, nước uống, phòng riêng bên cạnh |
+
+**Mục tiêu học tập** — Học viên và người nhà **viết và trao** được cho nhau một điều lâu nay chưa nói, và **nói** được một câu cảm ơn trực tiếp.
+
+**Chuẩn bị** — Ánh sáng dịu, nhạc không lời nhỏ. Ghế xếp đủ riêng tư giữa các bàn. Giấy thư và phong bì cho **cả hai phía**. Khăn giấy và nước ở mỗi bàn. **Chuyên viên tâm lý có mặt trong phòng.** Một phòng nhỏ yên tĩnh bên cạnh đã chuẩn bị sẵn. Nhịp hạ 15 phút đã lên lịch ngay sau hoạt động, không xếp hoạt động khác nối tiếp.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (5 phút)** — Bài thở 4 nhịp cho cả hội trường, kể cả phụ huynh. Trainer nói rõ luật: **không ai phải đọc to thư của mình**.
+2. **Trải nghiệm (20 phút)** — Bước 1: học viên viết thư cho người nhà, người nhà viết thư cho học viên, **viết cùng lúc, ngồi quay lưng lại nhau**, 12 phút. Bước 2: gấp thư, cho vào phong bì. Bước 3: quay lại đối diện, trao thư cho nhau. Bước 4: cùng đọc thư trong im lặng. Bước 5: mỗi người nói **một câu** với người kia — chỉ một câu. Lời dẫn: *"Không ai phải đọc to bức thư này. Nội dung thư là của hai người, không phải của hội trường. Sau khi đọc xong, mỗi người chỉ nói một câu thôi — câu ngắn nhất thường là câu thật nhất."*
+3. **Quan sát và chia sẻ (5 phút)** — Ai muốn thì chia sẻ **cảm giác** của mình, **không chia sẻ nội dung thư**.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Điều gì đã xảy ra ở bàn mình trong 20 phút vừa rồi? (2) Lúc cầm thư mà chưa mở, trong người em thế nào? (3) Vì sao có những điều dễ viết ra hơn là nói ra? (4) Nguyên lý: điều gì khiến một câu chưa nói được tồn tại lâu trong một gia đình? (5) Có điều gì hôm nay em vẫn chưa viết được không — không cần nói là gì? (6) Từ tuần này, khi có điều muốn nói, cả nhà sẽ dùng cách nào — nói trực tiếp, viết giấy, hay hẹn một giờ cố định?
+5. **Áp dụng (15 phút)** — Gia đình thống nhất **một "kênh nói khó"**: hình thức, tần suất, và câu mở đầu quy ước. Ghi vào bảng cam kết A7-04.
+
+**An toàn** — Rủi ro chính là cường độ cảm xúc cao và nội dung nhạy cảm. Biện pháp bắt buộc: **không đọc to nội dung nếu người viết không đồng ý**; **chuyên viên tâm lý có mặt**; ACT quan sát, tiếp cận riêng khi thấy học viên hoặc phụ huynh khóc kéo dài hơn 3 phút; **nhịp hạ 15 phút sau hoạt động** với nước, ánh sáng bật lại, trò chuyện nhóm nhỏ; **không xếp hoạt động khác ngay sau**. **Dấu hiệu vượt phạm vi:** nội dung thư nhắc tới bạo lực, xâm hại, hoặc ý định tự hại — kích hoạt quy trình bảo vệ trẻ em và chuyển chuyên viên tâm lý ngay, **không xử lý trong hội trường**.
+
+**Quyền được dừng** — *"Em không muốn viết thì để giấy trắng, không ai kiểm tra. Em muốn ra ngoài thì nói 'con xin dừng', ACT đi cùng em sang phòng bên. Không trừ điểm, không ai hỏi vì sao trước mặt mọi người. Điều này áp dụng cho cả phụ huynh."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** có mẫu câu gợi ý điền vào chỗ trống, thời gian viết 8 phút, được vẽ thay vì viết. **16–18:** không dùng mẫu câu; thêm gợi ý viết **một điều mình muốn được tin tưởng làm** trong năm tới.
+
+> **Sai lầm thường gặp khi dẫn:** mời một gia đình lên sân khấu đọc thư cho cả hội trường nghe vì "xúc động quá". Đó là phơi bày nội dung riêng tư trước đám đông; luật không đọc to không có ngoại lệ, kể cả khi gia đình đó có vẻ đồng ý ngay lúc cảm xúc đang cao.
+
+## A7-06 · Nghi lễ tốt nghiệp + trao mục tiêu
+
+| Trụ GITA | Nhóm tuổi | Thời lượng | Quy mô | Không gian |
+|---|---|---|---|---|
+| G — Mục tiêu | 9–18 + gia đình | 75 phút | Toàn trại + gia đình | Hội trường lớn có sân khấu |
+
+| Năng lực rèn | Rủi ro | Vật tư |
+|---|---|---|
+| `NL-02` Thiết lập mục tiêu · `NL-15` Lãnh đạo bản thân · `NL-11` Giao tiếp | Thấp | Chứng nhận ×1/HV, bảng mục tiêu 90 ngày ×1/HV, micro ×3, sân khấu bậc ≤ 20 cm, nhạc nền, ghế đủ cho gia đình |
+
+**Mục tiêu học tập** — Học viên **công bố** cam kết 90 ngày của mình trước gia đình bằng một câu rõ ràng, và **nhận** chứng nhận cùng người thân.
+
+**Chuẩn bị** — Chứng nhận in sẵn đủ **cho 100% học viên** (không có hạng, không có thứ tự xếp hạng). Bảng mục tiêu 90 ngày lấy từ A7-04. Sân khấu bậc thấp có băng phản quang, thảm chống trơn. Danh sách gọi tên **theo đội và theo thứ tự bảng chữ cái**, không theo thành tích. Ghế đủ cho gia đình, lối đi 1,2 m. Micro thử trước.
+
+**Cách dẫn — 5 nhịp**
+
+1. **Khởi động và kết nối (10 phút)** — Toàn trại và gia đình ổn định chỗ. Trainer tóm tắt 7 ngày bằng 3 phút, nói về **quá trình**, không nêu tên cá nhân xuất sắc.
+2. **Trải nghiệm (30 phút)** — Bước 1: gọi tên theo đội, học viên lên cùng **một người nhà**. Bước 2: học viên đọc **một câu cam kết 90 ngày** vào micro. Bước 3: nhận chứng nhận, người nhà ký vào bảng mục tiêu. Bước 4: chụp ảnh, xuống theo lối riêng. Bước 5: sau khi hết đội, Leader từng đội nói 30 giây về đội mình. Lời dẫn: *"Một câu thôi. Nói cái em sẽ làm, có giờ, có tần suất. 'Em sẽ chăm chỉ hơn' thì không ai kiểm được. 'Mỗi tối 9 giờ em để điện thoại ngoài phòng' thì cả nhà kiểm được."*
+3. **Quan sát và chia sẻ (10 phút)** — 3 phụ huynh xung phong nói **một điều mình nhận thấy khác ở con** sau 7 ngày, bắt đầu bằng *"Tôi thấy..."*.
+4. **Đúc kết — 15 phút, bắt buộc** — (1) Câu cam kết của em là gì, và ai đã nghe được câu đó hôm nay? (2) Lúc đứng trên sân khấu nói cam kết trước gia đình, em thấy thế nào? (3) Vì sao một cam kết nói ra trước người khác lại khó bỏ hơn cam kết trong đầu? (4) Nguyên lý: cam kết công khai giúp gì và có rủi ro gì khi mình lỡ đứt chuỗi? (5) Nếu tuần sau em đứt một hôm, em muốn gia đình phản ứng thế nào? (6) Ngày mai, việc đầu tiên em làm khi về nhà là gì?
+5. **Áp dụng (10 phút)** — Gia đình dán bảng mục tiêu vào sổ, chốt ngày liên hệ Coach lần đầu (mốc ngày 7).
+
+**An toàn** — Rủi ro: chen lấn khi lên xuống sân khấu, ngã ở bậc, quá tải cảm xúc cuối trại. Biện pháp: **lối lên và lối xuống riêng biệt**, bậc ≤ 20 cm có băng phản quang, ACT đỡ ở hai đầu bậc; lối đi khán giả 1,2 m; nước uống ở rìa hội trường. Rủi ro tâm lý: học viên không có người nhà tới. Biện pháp: **ACT hoặc Coach đứng cùng học viên đó**, sắp xếp trước, không để tình huống này lộ ra tại chỗ.
+
+**Quyền được dừng** — *"Em không muốn lên sân khấu thì nói 'con xin dừng' — chứng nhận của em sẽ được trao tại bàn đội, không ai bị thiếu chứng nhận. Em không muốn đọc cam kết ra micro thì đưa Trainer đọc giúp hoặc chỉ đưa cho gia đình. Không ai hỏi lý do."*
+
+**Điều chỉnh theo lứa tuổi** — **9–11:** cam kết 1 câu ngắn có mẫu sẵn, lên theo nhóm 4 bạn cho đỡ áp lực. **16–18:** cam kết 2 câu gồm mục tiêu và chỉ số đo, thêm vai dẫn chương trình cho 2 học viên.
+
+> **Sai lầm thường gặp khi dẫn:** trao giải "học viên xuất sắc nhất trại" ở phần cuối. Xếp hạng công khai trước gia đình ở đúng khoảnh khắc kết thúc là cách nhanh nhất phá bỏ 7 ngày xây dựng an toàn tâm lý; ghi nhận cá nhân nên được viết riêng trong nhận xét gửi từng gia đình.
+
+---
+
+## 8. Bảng tra nhanh 50 hoạt động
+
+| Mã | Tên | Trụ | Tuổi | Thời lượng | Năng lực chính | Rủi ro |
+|---|---|---|---|---|---|---|
+| A1-01 | Làm quen hiệu lệnh trại | A | 9–18 | 40' | `NL-12` | Thấp |
+| A1-02 | Ghi nhớ văn hoá – nội quy | A | 9–18 | 50' | `NL-16` | Thấp |
+| A1-03 | Tôi là Leader xuất sắc | I | 9–18 | 45' | `NL-11` | Thấp |
+| A1-04 | Màu cờ sắc áo | I | 9–18 | 60' | `NL-12` | Thấp |
+| A1-05b | Cầu người – Vận chuyển bảo vật | A | 12–18 | 50' | `NL-12` | Trung bình |
+| A1-06 | Bản lĩnh và ý chí — 4 gói | T | 9–18 | 75' | `NL-10` | Trung bình |
+| A1-07 | Sức mạnh lòng kiên trì | I | 12–18 | 50' | `NL-14` | Trung bình |
+| A2-01 | Follow the Leader | I | 9–18 | 35' | `NL-15` | Thấp |
+| A2-02 | Đòn bẩy của tôi | T | 9–18 | 55' | `NL-03` | Trung bình |
+| A2-03 | Nguyên tắc thành công | A | 9–18 | 60' | `NL-12` | Thấp |
+| A2-04 | Thắp sáng bản lĩnh | A | 9–18 | 70' | `NL-07` | Trung bình |
+| A2-05 | Sự lựa chọn | I | 12–18 | 55' | `NL-15` | Thấp |
+| A2-06 | Tiến lên 1 bước – 1% thành công | A | 9–18 | 45' | `NL-12` | Trung bình |
+| A2-07 | Tôi là người trí tuệ | T | 9–18 | 60' | `NL-03` | Thấp |
+| A2-08b | Nghi thức chuyển hoá hai thẻ | I | 9–18 | 55' | `NL-01` | Thấp, cần trực tâm lý |
+| A2-09 | Tôi trong tương lai | G | 9–18 | 60' | `NL-02` | Thấp |
+| A3-01 | Nói một đằng làm một nẻo | A | 9–18 | 35' | `NL-07` | Thấp |
+| A3-02 | Xây thành, đắp luỹ | T | 12–18 | 80' | `NL-10` | Trung bình |
+| A3-03 | Bức tường thép ý chí | I | 9–18 | 60' | `NL-13` | Thấp, cần trực tâm lý |
+| A3-04 | Đấu trường sức mạnh (kéo co) | A | 12–18 | 45' | `NL-12` | **Cao** |
+| A3-05 | Chiến dịch Bạch Đằng | T | 9–18 | 80' | `NL-10` | Trung bình |
+| A3-06 | Chiến dịch Điệp viên 007 | T | 9–18 | 70' | `NL-03` | Thấp |
+| A3-07 | Vượt thác | A | 12–18 | 55' | `NL-12` | **Cao** |
+| A3-08 | Mắt xích đoàn kết | A | 9–18 | 45' | `NL-12` | Trung bình |
+| A4-01 | Mật mã thông tin | T | 9–18 | 70' | `NL-06` | Thấp |
+| A4-02 | Đấu pháp cờ | T | 9–18 | 50' | `NL-03` | Thấp |
+| A4-03 | Nghệ thuật của nước | T | 9–18 | 65' | `NL-03` | Thấp |
+| A4-04 | Người vận chuyển | A | 9–18 | 70' | `NL-07` | Trung bình |
+| A4-05 | Thử thách liên hoàn (20 cốc) | A | 9–18 | 50' | `NL-12` | Thấp |
+| A4-06 | Đấu pháp tiếp sức (2 km) | A | 12–18 | 70' | `NL-06` | **Cao** |
+| A5-01 | Cuộc thi ảnh – video team | T | 9–18 | 90' | `NL-18` | Thấp |
+| A5-02b | Tấm áo Leader — Bức tranh của đội | I | 9–18 | 55' | `NL-12` | Thấp |
+| A5-03 | Bàn tay vàng | A | 9–18 | 55' | `NL-16` | Thấp |
+| A5-04 | Tiếp sức 4 chặng | A | 9–18 | 55' | `NL-12` | Trung bình |
+| A5-05 | Bánh đà giá trị | A | 12–18 | 70' | `NL-12` | Thấp |
+| A5-06 | Team cùng tiến — bài học từ đàn sói | A | 12–18 | 60' | `NL-12` | Trung bình |
+| A5-07 | Sợi dây kết nối | A | 9–18 | 50' | `NL-12` | Trung bình |
+| A5-08 | Tiếp nước sự sống | A | 9–18 | 50' | `NL-12` | Thấp |
+| A6-01 | Bệ phóng tương lai | T | 9–18 | 90'+30' | `NL-10` | **Cao** |
+| A6-02 | Tôi tự tin – Rung chuông vàng | T | 9–18 | 60' | `NL-17` | Thấp |
+| A6-03 | Chuyên đề AI | T | 12–18 | 75' | `NL-18` | Thấp |
+| A6-04 | Trình diễn bản sắc team | I | 9–18 | 80' | `NL-11` | Thấp |
+| A6-05 | Hùng biện 5 phút | I | 12–18 | 90' | `NL-11` | Thấp |
+| A6-06 | Nghi thức lửa trại | I | 9–18 | 75' | `NL-16` | **Cao** |
+| A7-01 | Xếp hình tập thể + chụp ảnh | A | 9–18 | 45' | `NL-12` | Trung bình |
+| A7-02 | Mái nhà thịnh vượng | G | 9–18 | 70' | `NL-12` | Thấp |
+| A7-03 | Bài toán tài chính gia đình | T | 12–18 | 70' | `NL-03` | Thấp |
+| A7-04 | Hành trình 90 ngày hạnh phúc | G | 9–18 | 70' | `NL-02` | Thấp |
+| A7-05 | Hai bức mật thư | I | 9–18 | 60' | `NL-13` | Trung bình, cần trực tâm lý |
+| A7-06 | Nghi lễ tốt nghiệp + trao mục tiêu | G | 9–18 | 75' | `NL-02` | Thấp |
+
+**Tổng hợp phân bố:**
+
+| Chỉ số | Số hoạt động | Ghi chú |
+|---|---|---|
+| Rủi ro **Cao** | 5 | A3-04 · A3-07 · A4-06 · A6-01 · A6-06 — bắt buộc có bảng kiểm an toàn ký trước giờ chạy |
+| Rủi ro Trung bình | 13 | Cần tỉ lệ giám sát ghi rõ trong thẻ |
+| Rủi ro Thấp | 32 | Vẫn phải có quyền được dừng |
+| Cần chuyên viên tâm lý trực | 3 | A2-08b · A3-03 · A7-05 |
+| Không dùng cho 9–11 tuổi ở bản gốc | 9 | Đều có phương án thay thế ghi trong thẻ |
+
+---
+
+## 9. Sáu bước phê duyệt hoạt động mới
+
+| Bước | Việc phải làm | Sản phẩm đầu ra | Người duyệt | Thời hạn |
+|---|---|---|---|---|
+| **1** | Tác giả viết **thẻ đầy đủ** theo đúng cấu trúc của tài liệu này: bảng đầu thẻ · mục tiêu học tập · chuẩn bị · 5 nhịp (đúc kết ≥ 15 phút) · an toàn · quyền được dừng · điều chỉnh lứa tuổi · sai lầm thường gặp | Bản thẻ nháp | Tác giả | — |
+| **2** | **Rà soát sư phạm**: mục tiêu có đo được không · 5 nhịp có dẫn tới chuyển giao về nhà không · lời dẫn mẫu có dùng được thật không · năng lực khai báo có khớp `NL` chuẩn không | Phiếu rà soát sư phạm | Trainer trưởng | 3 ngày làm việc |
+| **3** | **Rà soát rủi ro**: liệt kê **mọi** cách hoạt động có thể gây thương tích; ghi rõ tỉ lệ giám sát, điều kiện dừng, vật tư bảo hộ, phương án sơ cứu | Bảng rủi ro có chữ ký | Trainer trưởng + Y tế | 3 ngày làm việc |
+| **4** | **Kiểm bốn nguyên tắc bảo vệ**: không hình phạt thân thể · không phạt bằng bài tập hay tiền · không kỷ luật liên đới · không xếp hạng công khai học viên. Kiểm quyền được dừng có ghi **cách nói cụ thể** không | Phiếu xác nhận BVTE | Cán bộ Bảo vệ trẻ em | 2 ngày làm việc |
+| **5** | **Chạy thử** với nhóm nhỏ ≤ 12 học viên, có 2 quan sát viên độc lập ghi biểu hiện. Đo: thời lượng thực tế từng nhịp, số học viên dùng quyền dừng, số sự cố an toàn | Biên bản chạy thử | Trainer trưởng | 1 buổi |
+| **6** | **Nhập kho thư viện**: cấp mã theo quy tắc `A<ngày>-<số>`, cập nhật bảng tra nhanh, đưa vào danh mục vật tư và bảng kiểm an toàn của trại | Thẻ chính thức có mã | Giáo vụ | 2 ngày làm việc |
+
+**Ba câu hỏi loại bỏ nhanh** — trả lời "có" ở bất kỳ câu nào thì **thiết kế lại trước khi đưa vào bước 2**:
+
+1. Hoạt động này có khiến một học viên phải chịu hậu quả vì lỗi của người khác không?
+2. Hoạt động này có dùng đau đớn, xấu hổ, hay sợ hãi làm công cụ giáo dục không?
+3. Nếu học viên nói "con xin dừng", em có bị thiệt hại gì không — mất điểm, mất vai, hay bị hỏi lý do trước nhóm?
+
+> **Quy tắc nền:** hoạt động **không có thẻ đầy đủ trong thư viện này thì không được đưa vào kịch bản trại**.
+> Thẻ thiếu phần **an toàn** hoặc phần **quyền được dừng** bị coi là chưa hoàn thành, không phụ thuộc
+> mức rủi ro được khai báo.
+
+**Rà soát định kỳ:** toàn bộ 50 thẻ được rà soát lại **sau mỗi mùa trại**. Ba dữ liệu bắt buộc thu:
+số lần học viên dùng quyền được dừng theo từng hoạt động · số sự cố an toàn · thời lượng thực tế của
+nhịp đúc kết. Hoạt động có **nhịp đúc kết bị cắt xuống dưới 15 phút ở quá 2 lần chạy** phải được
+thiết kế lại thời lượng, không phải nhắc Trainer cố giữ giờ.
