@@ -2,17 +2,19 @@
   "name": "sat365",
   "private": true,
   "version": "1.0.0",
-  "description": "SAT365 \u2014 Digital SAT preparation and assessment platform built to international testing standards.",
+  "description": "SAT365 — Digital SAT preparation and assessment platform built to international testing standards.",
   "type": "module",
   "license": "Apache-2.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && npm run clean && vite build && npm run build:site",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "node --test --experimental-strip-types tests/*.test.ts",
     "test:browser": "node scripts/browser-test.mjs",
-    "check:bank": "node --experimental-strip-types scripts/check-bank.ts"
+    "check:bank": "node --experimental-strip-types scripts/check-bank.ts",
+    "build:site": "node --experimental-strip-types scripts/build-site.ts",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\""
   },
   "dependencies": {
     "react": "^19.1.0",

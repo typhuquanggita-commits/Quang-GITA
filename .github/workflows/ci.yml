@@ -33,8 +33,13 @@ jobs:
       - name: Unit tests
         run: npm test
 
+      # Builds the application into dist/app and the crawlable static site
+      # into dist. A broken canonical or a page that fails to generate is a
+      # silent failure in production, so it fails here instead.
       - name: Build
         run: npm run build
+        env:
+          SITE_ORIGIN: https://sat365.gita.edu.vn
 
       # The item bank is the one thing a code change can silently corrupt, so
       # its invariants are checked as a separate, named step: a failure here

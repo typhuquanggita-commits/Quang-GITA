@@ -9,6 +9,15 @@ export default defineConfig({
   plugins: [react()],
   resolve: { alias: { '@': path.resolve(__dirname, 'src') } },
   build: {
+    /*
+     * The application is built into dist/app/ so that dist/ itself can hold
+     * the static, crawlable pages. A hash-routed app cannot be indexed —
+     * everything after the # never reaches a server — so the site's most
+     * valuable URL, the root, must be a document rather than an app shell.
+     * `base: './'` keeps the asset paths relative, so the bundle works from
+     * /app/ without knowing it is there.
+     */
+    outDir: 'dist/app',
     target: 'es2022',
     sourcemap: true,
     // Chunking is split three ways so a first paint does not wait on the
