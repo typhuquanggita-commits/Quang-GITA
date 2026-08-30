@@ -104,6 +104,21 @@ export const PAPER_INDEX: { id: string; title: string }[] = [
 ];
 
 export const SYLLABUS_INDEX: { id: string; title: string; grade: number; term: string }[] = [
+  { id: 'sy-6-gk1', title: "Toán 6 — Đề cương giữa học kỳ I", grade: 6, term: 'giua-ky-1' },
+  { id: 'sy-6-ck1', title: "Toán 6 — Đề cương cuối học kỳ I", grade: 6, term: 'cuoi-ky-1' },
+  { id: 'sy-6-ck2', title: "Toán 6 — Đề cương cuối học kỳ II và tổng ôn cả năm", grade: 6, term: 'cuoi-ky-2' },
+  { id: 'sy-6-he', title: "Toán 6 — Đề cương ôn hè bắc cầu lên lớp 7", grade: 6, term: 'on-he' },
+  { id: 'sy-7-gk1', title: "Toán 7 — Đề cương giữa học kỳ I", grade: 7, term: 'giua-ky-1' },
+  { id: 'sy-7-ck1', title: "Toán 7 — Đề cương cuối học kỳ I", grade: 7, term: 'cuoi-ky-1' },
+  { id: 'sy-7-ck2', title: "Toán 7 — Đề cương cuối học kỳ II và tổng ôn cả năm", grade: 7, term: 'cuoi-ky-2' },
+  { id: 'sy-7-he', title: "Toán 7 — Đề cương ôn hè bắc cầu lên lớp 8", grade: 7, term: 'on-he' },
+  { id: 'sy-8-gk1', title: "Toán 8 — Đề cương giữa học kỳ I", grade: 8, term: 'giua-ky-1' },
+  { id: 'sy-8-ck1', title: "Toán 8 — Đề cương cuối học kỳ I", grade: 8, term: 'cuoi-ky-1' },
+  { id: 'sy-8-ck2', title: "Toán 8 — Đề cương cuối học kỳ II và tổng ôn cả năm", grade: 8, term: 'cuoi-ky-2' },
+  { id: 'sy-8-he', title: "Toán 8 — Đề cương ôn hè bắc cầu lên lớp 9", grade: 8, term: 'on-he' },
+  { id: 'sy-9-gk1', title: "Toán 9 — Đề cương giữa học kỳ I", grade: 9, term: 'giua-ky-1' },
+  { id: 'sy-9-ck1', title: "Toán 9 — Đề cương cuối học kỳ I", grade: 9, term: 'cuoi-ky-1' },
+  { id: 'sy-9-ck2', title: "Toán 9 — Đề cương cuối học kỳ II và tổng ôn cả năm", grade: 9, term: 'cuoi-ky-2' },
   { id: 'sy-10-gk1', title: "Toán 10 — Đề cương giữa học kỳ I", grade: 10, term: 'giua-ky-1' },
   { id: 'sy-10-ck1', title: "Toán 10 — Đề cương cuối học kỳ I", grade: 10, term: 'cuoi-ky-1' },
   { id: 'sy-10-gk2', title: "Toán 10 — Đề cương giữa học kỳ II", grade: 10, term: 'giua-ky-2' },
