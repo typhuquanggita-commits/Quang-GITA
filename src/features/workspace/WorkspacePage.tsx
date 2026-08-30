@@ -13,6 +13,8 @@ import {
 import { cn } from '../../lib/cn';
 import { formatNumber, formatPercent } from '../../lib/format';
 import { PermissionGate, useCan } from '../../components/PermissionGate';
+import { CoachTab } from './CoachTab';
+import { ConsultTab } from './ConsultTab';
 import {
   Badge,
   Button,
@@ -42,7 +44,7 @@ import {
  * thoi diem xuat, khong phai truc tuyen.
  */
 
-type Tab = 'lop' | 'duyet' | 'giao' | 'baocao';
+type Tab = 'lop' | 'duyet' | 'giao' | 'huanluyen' | 'tuvan' | 'baocao';
 
 export function WorkspacePage() {
   const toast = useToast();
@@ -55,6 +57,8 @@ export function WorkspacePage() {
   const canApproveStage = useCan('class.approveStage');
   const canAssign = useCan('class.assign');
   const canReport = useCan('report.org');
+  const canCoach = useCan('coach.session');
+  const canConsult = useCan('consult.profile');
 
   const rows = useMemo(() => attentionOrder(snapshots.map((s) => buildRow(s))), [snapshots]);
   const summary = useMemo(() => summarizeCohort(rows), [rows]);
@@ -87,6 +91,8 @@ export function WorkspacePage() {
     { value: 'lop', label: 'Bảng lớp' },
     ...(canApproveLevel || canApproveStage ? [{ value: 'duyet' as Tab, label: 'Xét duyệt' }] : []),
     ...(canAssign ? [{ value: 'giao' as Tab, label: 'Giao nhiệm vụ' }] : []),
+    ...(canCoach ? [{ value: 'huanluyen' as Tab, label: 'Sổ huấn luyện' }] : []),
+    ...(canConsult ? [{ value: 'tuvan' as Tab, label: 'Tư vấn & học phí' }] : []),
     ...(canReport ? [{ value: 'baocao' as Tab, label: 'Báo cáo' }] : []),
   ];
 
@@ -172,6 +178,8 @@ export function WorkspacePage() {
               <ApprovalTab rows={rows} canLevel={canApproveLevel} canStage={canApproveStage} />
             )}
             {tab === 'giao' && <AssignmentTab rows={rows} />}
+            {tab === 'huanluyen' && <CoachTab rows={rows} />}
+            {tab === 'tuvan' && <ConsultTab rows={rows} />}
             {tab === 'baocao' && <ReportTab rows={rows} summary={summary} />}
           </>
         )}

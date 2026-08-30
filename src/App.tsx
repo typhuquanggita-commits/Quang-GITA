@@ -26,6 +26,9 @@ const WorkspacePage = lazy(() =>
 const ReportPage = lazy(() =>
   import('./features/report/ReportPage').then((m) => ({ default: m.ReportPage })),
 );
+const PricingPage = lazy(() =>
+  import('./features/pricing/PricingPage').then((m) => ({ default: m.PricingPage })),
+);
 const ExamPage = lazy(() => import('./features/exam/ExamPage').then((m) => ({ default: m.ExamPage })));
 const PracticePage = lazy(() =>
   import('./features/practice/PracticePage').then((m) => ({ default: m.PracticePage })),
@@ -96,6 +99,8 @@ function Routes({ path }: { path: string }) {
       return <GitaPage />;
     case '/brand':
       return <BrandPage />;
+    case '/hoc-phi':
+      return <PricingPage />;
     case '/workspace':
       return <WorkspacePage />;
     case '/report':

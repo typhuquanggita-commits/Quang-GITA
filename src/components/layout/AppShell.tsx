@@ -27,6 +27,7 @@ import {
   IconSpark,
   IconTarget,
   IconUsers,
+  IconWallet,
 } from './icons';
 
 interface NavItem {
@@ -61,6 +62,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       { href: '/report', label: 'Báo cáo gia đình', icon: IconPaper },
       { href: '/gita', label: 'Mô thức GITA', icon: IconSpark },
       { href: '/workspace', label: 'Không gian làm việc', icon: IconUsers },
+      { href: '/hoc-phi', label: 'Học phí', icon: IconWallet },
       { href: '/brand', label: 'Nhận diện', icon: IconBadge },
       { href: '/roles', label: 'Phân quyền', icon: IconShield },
       { href: '/settings', label: 'Cài đặt', icon: IconSettings },
