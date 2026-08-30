@@ -9,14 +9,14 @@ khả năng lệch với nội dung thật.
 | Tên tác phẩm | GEN VIỆT 365 — Hệ điều hành phát triển con người |
 | Loại hình | Tác phẩm viết · chương trình máy tính (phần giao diện tra cứu) |
 | Chủ sở hữu | Học viện GITA |
-| Mã bản dựng | a2034693fee0 |
+| Mã bản dựng | 842175afe901 |
 | Ngày định hình bản này | 2026-08-30 |
-| Số phần nội dung | 47 nhóm |
-| Số mục nội dung | 288 màn |
-| Số khối trình bày | 1092 |
-| Số phần tử dữ liệu | 7443 |
-| Số kho dữ liệu thành phần | 411 |
-| Số tệp mã nguồn | 51 |
+| Số phần nội dung | 49 nhóm |
+| Số mục nội dung | 300 màn |
+| Số khối trình bày | 1127 |
+| Số phần tử dữ liệu | 7704 |
+| Số kho dữ liệu thành phần | 427 |
+| Số tệp mã nguồn | 53 |
 
 > **Mã bản dựng là bằng chứng thời điểm.** Nó là mã băm SHA-256 rút gọn của toàn bộ nội
 > dung tác phẩm tại thời điểm dựng. Đổi một chữ trong kho thì mã đổi theo. Giữ lại mã này
@@ -320,6 +320,18 @@ truy cập theo vai**, chứ không phải một tập tài liệu mở.
 | 47 | SÁU SỰ KIỆN TRỤ CỘT | sk-kich-ban | Kịch bản một sự kiện | clb_dieu_hanh | 2 |
 | 47 | SÁU SỰ KIỆN TRỤ CỘT | sk-ngan-sach | Mười tám hạng mục ngân sách | tai_chinh | 3 |
 | 47 | SÁU SỰ KIỆN TRỤ CỘT | sk-do | Đo một sự kiện, và mười bốn rủi ro | nghiem_thu | 6 |
+| 48 | ĐƯỜNG VÀO CHI TIẾT | dv-mach | Mạch tư vấn bảy chặng | tu_van | 2 |
+| 48 | ĐƯỜNG VÀO CHI TIẾT | dv-cau-hoi | Ba mươi hai câu hỏi hiểu gia đình | tu_van | 2 |
+| 48 | ĐƯỜNG VÀO CHI TIẾT | dv-khong-hop | Mười hai lúc nên khuyên gia đình đi nơi khác | tu_van | 3 |
+| 48 | ĐƯỜNG VÀO CHI TIẾT | dv-buoi-dau | Buổi gặp đầu tiên | tu_van | 2 |
+| 48 | ĐƯỜNG VÀO CHI TIẾT | dv-tra-loi | Mười câu khó gia đình hay hỏi | tu_van | 2 |
+| 48 | ĐƯỜNG VÀO CHI TIẾT | dv-ba-muoi-ngay | Ba mươi ngày đầu và hồ sơ vào hệ | tu_van | 7 |
+| 49 | HẠ TẦNG SỐ VÀ HỌC LIỆU | ht-ma-hoa | Hệ mã hoá mười tám loại | qt_noi_dung | 2 |
+| 49 | HẠ TẦNG SỐ VÀ HỌC LIỆU | ht-hoc-lieu | Mười sáu loại học liệu | qt_noi_dung | 2 |
+| 49 | HẠ TẦNG SỐ VÀ HỌC LIỆU | ht-cau-hoi | Ngân hàng hai mươi loại câu hỏi | nghe_quan_ly | 2 |
+| 49 | HẠ TẦNG SỐ VÀ HỌC LIỆU | ht-quy-trinh | Từ ý tưởng tới học liệu phát được | qt_noi_dung | 2 |
+| 49 | HẠ TẦNG SỐ VÀ HỌC LIỆU | ht-truc-tuyen | Lớp trực tuyến và ranh giới số | chung | 2 |
+| 49 | HẠ TẦNG SỐ VÀ HỌC LIỆU | ht-luu-tru | Lưu trữ, sao lưu và đường lên máy chủ | qt_noi_dung | 7 |
 
 ---
 
@@ -369,104 +381,110 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 | DL_DU_LIEU_TRE | 20 | DL_LUAT | 20 | DL_MAU_BAO_CAO | 8 |
 | DL_NHIP | 24 | DL_SO_XAU | 14 | DN_BA_LOP | 4 |
 | DN_LUAT | 6 | DN_MAY_CHU | 7 | DN_TAI_KHOAN | 10 |
-| DUONG_VAO | 6 | DU_GIO | 7 | GA_BIEU_MAU | 14 |
-| GA_BUOI | 73 | GA_HOAT_DONG | 32 | GA_HOC_KY | 15 |
-| GA_HONG | 15 | GA_KHAU_QUYET | 20 | GA_KHUNG_BUOI | 6 |
-| GA_KHUNG_TIET | 11 | GA_LUAT | 18 | GA_PHAN_0 | 9 |
-| GT_BAO_DAM | 3 | GT_CHONG | 12 | GT_GOI | 5 |
-| GT_KINH_TE | 7 | GT_LOI_BAT_BIEN | 7 | GT_LUAT_GIA | 7 |
-| GT_LUAT_KT | 4 | GT_NHAN_RONG | 3 | GT_NHA_TRUONG | 4 |
-| GT_PHAN_DOI | 12 | GT_PHEU | 5 | GT_THONG_DIEP | 5 |
-| HD_DOI_TAC | 10 | HD_DO_TAC_DONG | 12 | HD_LICH_NAM | 4 |
-| HD_LOAI | 9 | HD_LUAT | 16 | HD_NGAN_HANG | 40 |
-| HD_QUY_TRINH | 10 | HD_RA_NGOAI | 18 | HD_SAI | 12 |
-| HD_TRUYEN_THONG | 15 | HINH_THAI | 5 | HO_CHIEU_LUAT | 5 |
-| K45_DE_TAI | 101 | K45_DU_AN | 11 | K45_GIAO_AN_4 | 11 |
-| K45_GIAO_AN_5 | 11 | K45_KHAC_BIET | 8 | K45_KHAU_QUYET | 101 |
-| K45_LUAT | 16 | KHOA_NEN | 8 | KPI_HE | 7 |
-| LICH_NAM | 4 | LOP | 7 | LO_TRINH | 6 |
-| LT_CHUYEN_BAC | 6 | LT_GIA_DINH | 6 | LT_HO_CHIEU | 12 |
-| LT_LUAT | 17 | LT_MAC_KET | 12 | LT_MOT_NAM | 4 |
-| LT_MUOI_LAM | 15 | LT_NGHE | 14 | LUAT_QUYEN | 6 |
-| LUU_BA_TANG | 3 | MACH_TU_VAN | 8 | MA_HOA | 6 |
-| MA_TRAN | 8 | MM_DOI_CHIEU | 45 | MM_KE_CHUYEN | 7 |
-| MM_KHOI_BAY | 7 | MM_LUAT | 15 | MM_MA | 12 |
-| MM_SAN_PHAM | 45 | MOI_TRUONG | 4 | MS_CHANG | 3 |
-| MS_KHUNG_SACH | 7 | MS_LOI_MO | 8 | MS_LUAN_DIEM | 14 |
-| MS_LUAT | 15 | MS_MO_THUC | 18 | MS_RUI | 5 |
-| MS_TRICH | 26 | MUC | 5 | MUOI_BUOC | 10 |
-| NAM_DAU | 4 | NC_CHI_TIET | 7 | NC_DAO_DUC | 13 |
-| NC_HO_SO_SO | 13 | NC_LUAT | 16 | NC_SAI_LAM | 10 |
-| NC_THIET_KE | 8 | NGAY_90 | 7 | NGHE_COACH | 6 |
-| NGHI_LE | 7 | NGON_NGU | 12 | NGUON | 10 |
-| NGUYEN_LY | 7 | NGUYEN_TAC_KT | 7 | NG_CAU_HOI | 36 |
-| NG_DU_GIO | 7 | NG_GIU_NGUOI | 12 | NG_HONG | 12 |
-| NG_LO_TRINH | 5 | NG_LUAT | 18 | NG_PHAN_HOI | 6 |
-| NG_RANH_GIOI | 18 | NG_TUYEN | 10 | NHIP | 7 |
-| NHOM_GP | 11 | NQ_BAN_GIAO | 3 | NQ_CHANG | 5 |
-| NQ_CHE_TAI | 4 | NQ_DIEU_KIEN | 6 | NQ_FAQ | 3 |
-| NQ_GOI | 4 | NQ_HOC_PHAN | 5 | NQ_HOP_DONG | 16 |
-| NQ_KIEM_DINH | 6 | NQ_LANH_THO | 6 | NQ_LUAT | 12 |
-| NQ_PHI | 7 | NQ_TRAO | 8 | NQ_TU_CHOI | 7 |
-| PHAM_CHAT | 5 | PHAN | 9 | QUYEN | 10 |
-| RUI_RO | 7 | SC_LUAT | 6 | SC_MON_NO | 90 |
-| SC_XUAT_XU | 42 | SC_XX_LUAT | 6 | SC_YEU_CAU | 15 |
-| SE_90 | 3 | SE_CUM | 6 | SE_DO | 8 |
-| SE_EEAT | 4 | SE_KHONG | 7 | SE_KY_THUAT | 12 |
-| SE_NGUYEN_TAC | 7 | SE_PHAN_HOI | 6 | SE_PH_LUAT | 6 |
-| SE_Y_DINH | 8 | SK_BAN | 12 | SK_DO | 11 |
-| SK_KHUNG | 6 | SK_KICH_BAN | 26 | SK_LUAT | 20 |
-| SK_NGAN_SACH | 18 | SK_RUI_RO | 14 | SK_SAU_TRU | 6 |
-| SL_BO_SLIDE | 22 | SL_BUOI_HOP | 22 | SL_KICH_BAN | 9 |
-| SL_LUAT | 12 | SL_QUAN_HE | 6 | SL_THONG_DIEP | 12 |
-| SN_LUAT | 6 | SN_NO | 6 | SN_TEP | 45 |
-| SN_TRANG_THAI | 4 | SO_TAY | 6 | SO_TAY_MT | 3 |
-| T52_CHU_KY | 4 | T52_TUAN | 52 | TANG_HT_UI | 14 |
-| TC_24H | 6 | TC_BAN_DO | 8 | TC_BAO_VE | 10 |
-| TC_CHI_SO | 8 | TC_DUONG_DOC | 10 | TC_DU_LIEU | 6 |
-| TC_FAQ | 6 | TC_KHUNG_HOANG | 5 | TC_KIEM_DINH | 7 |
-| TC_LOI_MAU | 6 | TC_LUAT_DO | 6 | TC_LUAT_TD | 5 |
-| TC_PHAP_LY | 10 | TC_SO_CHUAN_COT | 8 | TC_SO_CHUAN_LA | 6 |
-| TC_SO_CHUAN_MAU | 5 | TC_SO_LOI | 4 | TC_TANG_BC | 3 |
-| TC_THEO_DOI | 6 | TC_THIET_KE | 5 | TC_TU_DIEN | 12 |
-| TC_TU_LUAT | 5 | THANG_HT | 6 | TH_AN_BIEN_THE | 5 |
-| TH_AN_LUAT | 10 | TH_AN_SAI | 8 | TH_AN_Y_NIEM | 6 |
-| TH_CHU | 4 | TH_GIONG | 5 | TH_GIONG_BANG | 8 |
-| TH_HINH_DAO_DUC | 6 | TH_HINH_THAM_MY | 4 | TH_HOA_TIET | 3 |
-| TH_KHAC_BIET | 4 | TH_KIEN_TRUC | 5 | TH_LUAT_GIU | 7 |
-| TH_LUAT_TEN | 7 | TH_MAU | 10 | TH_MAU_LUAT | 7 |
-| TH_NEN | 6 | TH_TEP | 8 | TH_THANG_CHU | 6 |
-| TH_UNG_DUNG | 16 | TN_CAM_KET | 12 | TN_CONG_PH | 7 |
-| TN_DO_CAM | 6 | TN_HANH_TRINH | 9 | TN_HIEN_VAT | 14 |
-| TN_KHOANH_KHAC | 12 | TN_LUAT_PH | 6 | TN_LUAT_PN | 6 |
-| TN_NGHI | 6 | TN_PHAN_NAN | 8 | TN_PHUC_HOI | 5 |
-| TN_RA_DI | 6 | TRU | 4 | TS_LUAT | 6 |
-| TS_MUC | 6 | TT_BAC_THANH_TUU | 5 | TT_HE_DANH_HIEU | 38 |
-| TT_HO_SO | 16 | TT_LAM_PHAT | 10 | TT_LE | 19 |
-| TT_LUAT | 18 | TT_THAT_GIA | 12 | TT_TRUNG_BAY | 10 |
-| TT_VINH_DANH | 18 | TUAN | 5 | TU_DONG | 8 |
-| TV2_BUKATSU | 8 | TV2_BUKATSU_DOI_CHIEU | 10 | TV2_TRAI_AN_TOAN | 13 |
-| TV2_TRAI_HAU | 6 | TV2_TRAI_KHUNG | 7 | TV2_TRAI_LICH | 20 |
-| TV2_VIP_CHUAN | 11 | TV2_VIP_CHUONG_TRINH | 11 | TV2_VIP_QUYEN_LOI | 9 |
-| TV_CACH_DUNG | 6 | TV_MO_THUC | 12 | TV_NGUON | 5 |
-| TV_NGUYEN_TAC | 7 | TV_PHAM_CHAT | 5 | TV_Q1 | 8 |
-| TV_Q2 | 9 | TV_Q3 | 7 | TV_Q4 | 9 |
-| TV_Q5 | 7 | TV_Q6 | 5 | TV_QUYEN | 6 |
-| TY_ANH_XA_BAC | 6 | TY_ANH_XA_LUAT | 7 | TY_CLB_BAN | 12 |
-| TY_CLB_BUOI | 4 | TY_CLB_CAP | 10 | TY_CLB_NL | 9 |
-| TY_CLB_TUAN | 5 | TY_DINH_VI | 8 | TY_GD_5S | 5 |
-| TY_GD_90 | 4 | TY_GD_DANH_HIEU | 3 | TY_GD_LUAT | 5 |
-| TY_GD_NHAT_KY | 4 | TY_GIAI_DOAN | 15 | TY_KHOI_12 | 12 |
-| TY_KHOI_LUAT | 6 | TY_KHOI_NHOM | 5 | TY_KN_DE_TAI | 10 |
-| TY_KN_LUAT | 6 | TY_KN_NGHE | 6 | TY_KN_THIET_KE | 6 |
-| TY_LE | 12 | TY_LUAT_TUYEN | 7 | TY_NGUON | 14 |
-| TY_PIPELINE | 5 | TY_TUYEN | 5 | TY_XH_DU_AN | 4 |
-| TY_XH_LUAT | 6 | TY_XH_SU_KIEN | 6 | VAI | 17 |
-| VAI_NGOAI | 3 | VAI_NGOAI_NHOM | 3 | VAI_NHOM | 5 |
-| VH2_BAN12 | 12 | VH2_BIEU_MAU | 21 | VH2_CANH_BAO | 15 |
-| VH2_KPI | 17 | VH2_LUAT | 32 | VH2_PDCA | 4 |
-| VH2_RACI | 16 | VH2_SAU | 16 | VH2_SO_DO | 15 |
-| VH2_TRONG | 14 | VH2_TRUOC | 27 | WOW | 9 |
+| DUONG_VAO | 6 | DU_GIO | 7 | DV_BA_MUOI_NGAY | 16 |
+| DV_BUOI_DAU | 18 | DV_CAU_HOI | 32 | DV_HO_SO_VAO | 15 |
+| DV_KHONG_HOP | 12 | DV_LUAT | 20 | DV_MACH | 7 |
+| DV_TRA_LOI | 10 | GA_BIEU_MAU | 14 | GA_BUOI | 73 |
+| GA_HOAT_DONG | 32 | GA_HOC_KY | 15 | GA_HONG | 15 |
+| GA_KHAU_QUYET | 20 | GA_KHUNG_BUOI | 6 | GA_KHUNG_TIET | 11 |
+| GA_LUAT | 18 | GA_PHAN_0 | 9 | GT_BAO_DAM | 3 |
+| GT_CHONG | 12 | GT_GOI | 5 | GT_KINH_TE | 7 |
+| GT_LOI_BAT_BIEN | 7 | GT_LUAT_GIA | 7 | GT_LUAT_KT | 4 |
+| GT_NHAN_RONG | 3 | GT_NHA_TRUONG | 4 | GT_PHAN_DOI | 12 |
+| GT_PHEU | 5 | GT_THONG_DIEP | 5 | HD_DOI_TAC | 10 |
+| HD_DO_TAC_DONG | 12 | HD_LICH_NAM | 4 | HD_LOAI | 9 |
+| HD_LUAT | 16 | HD_NGAN_HANG | 40 | HD_QUY_TRINH | 10 |
+| HD_RA_NGOAI | 18 | HD_SAI | 12 | HD_TRUYEN_THONG | 15 |
+| HINH_THAI | 5 | HO_CHIEU_LUAT | 5 | HT_HOC_LIEU | 16 |
+| HT_LO_TRINH | 5 | HT_LUAT | 18 | HT_LUU_TRU | 14 |
+| HT_MA_HOA | 18 | HT_NGAN_HANG_CAU_HOI | 20 | HT_QUY_TRINH_HOC_LIEU | 10 |
+| HT_TRUC_TUYEN | 12 | K45_DE_TAI | 101 | K45_DU_AN | 11 |
+| K45_GIAO_AN_4 | 11 | K45_GIAO_AN_5 | 11 | K45_KHAC_BIET | 8 |
+| K45_KHAU_QUYET | 101 | K45_LUAT | 16 | KHOA_NEN | 8 |
+| KPI_HE | 7 | LICH_NAM | 4 | LOP | 7 |
+| LO_TRINH | 6 | LT_CHUYEN_BAC | 6 | LT_GIA_DINH | 6 |
+| LT_HO_CHIEU | 12 | LT_LUAT | 17 | LT_MAC_KET | 12 |
+| LT_MOT_NAM | 4 | LT_MUOI_LAM | 15 | LT_NGHE | 14 |
+| LUAT_QUYEN | 6 | LUU_BA_TANG | 3 | MACH_TU_VAN | 8 |
+| MA_HOA | 6 | MA_TRAN | 8 | MM_DOI_CHIEU | 45 |
+| MM_KE_CHUYEN | 7 | MM_KHOI_BAY | 7 | MM_LUAT | 15 |
+| MM_MA | 12 | MM_SAN_PHAM | 45 | MOI_TRUONG | 4 |
+| MS_CHANG | 3 | MS_KHUNG_SACH | 7 | MS_LOI_MO | 8 |
+| MS_LUAN_DIEM | 14 | MS_LUAT | 15 | MS_MO_THUC | 18 |
+| MS_RUI | 5 | MS_TRICH | 26 | MUC | 5 |
+| MUOI_BUOC | 10 | NAM_DAU | 4 | NC_CHI_TIET | 7 |
+| NC_DAO_DUC | 13 | NC_HO_SO_SO | 13 | NC_LUAT | 16 |
+| NC_SAI_LAM | 10 | NC_THIET_KE | 8 | NGAY_90 | 7 |
+| NGHE_COACH | 6 | NGHI_LE | 7 | NGON_NGU | 12 |
+| NGUON | 10 | NGUYEN_LY | 7 | NGUYEN_TAC_KT | 7 |
+| NG_CAU_HOI | 36 | NG_DU_GIO | 7 | NG_GIU_NGUOI | 12 |
+| NG_HONG | 12 | NG_LO_TRINH | 5 | NG_LUAT | 18 |
+| NG_PHAN_HOI | 6 | NG_RANH_GIOI | 18 | NG_TUYEN | 10 |
+| NHIP | 7 | NHOM_GP | 11 | NQ_BAN_GIAO | 3 |
+| NQ_CHANG | 5 | NQ_CHE_TAI | 4 | NQ_DIEU_KIEN | 6 |
+| NQ_FAQ | 3 | NQ_GOI | 4 | NQ_HOC_PHAN | 5 |
+| NQ_HOP_DONG | 16 | NQ_KIEM_DINH | 6 | NQ_LANH_THO | 6 |
+| NQ_LUAT | 12 | NQ_PHI | 7 | NQ_TRAO | 8 |
+| NQ_TU_CHOI | 7 | PHAM_CHAT | 5 | PHAN | 9 |
+| QUYEN | 10 | RUI_RO | 7 | SC_LUAT | 6 |
+| SC_MON_NO | 97 | SC_XUAT_XU | 44 | SC_XX_LUAT | 6 |
+| SC_YEU_CAU | 15 | SE_90 | 3 | SE_CUM | 6 |
+| SE_DO | 8 | SE_EEAT | 4 | SE_KHONG | 7 |
+| SE_KY_THUAT | 12 | SE_NGUYEN_TAC | 7 | SE_PHAN_HOI | 6 |
+| SE_PH_LUAT | 6 | SE_Y_DINH | 8 | SK_BAN | 12 |
+| SK_DO | 11 | SK_KHUNG | 6 | SK_KICH_BAN | 26 |
+| SK_LUAT | 20 | SK_NGAN_SACH | 18 | SK_RUI_RO | 14 |
+| SK_SAU_TRU | 6 | SL_BO_SLIDE | 22 | SL_BUOI_HOP | 22 |
+| SL_KICH_BAN | 9 | SL_LUAT | 12 | SL_QUAN_HE | 6 |
+| SL_THONG_DIEP | 12 | SN_LUAT | 6 | SN_NO | 6 |
+| SN_TEP | 45 | SN_TRANG_THAI | 4 | SO_TAY | 6 |
+| SO_TAY_MT | 3 | T52_CHU_KY | 4 | T52_TUAN | 52 |
+| TANG_HT_UI | 14 | TC_24H | 6 | TC_BAN_DO | 8 |
+| TC_BAO_VE | 10 | TC_CHI_SO | 8 | TC_DUONG_DOC | 10 |
+| TC_DU_LIEU | 6 | TC_FAQ | 6 | TC_KHUNG_HOANG | 5 |
+| TC_KIEM_DINH | 7 | TC_LOI_MAU | 6 | TC_LUAT_DO | 6 |
+| TC_LUAT_TD | 5 | TC_PHAP_LY | 10 | TC_SO_CHUAN_COT | 8 |
+| TC_SO_CHUAN_LA | 6 | TC_SO_CHUAN_MAU | 5 | TC_SO_LOI | 4 |
+| TC_TANG_BC | 3 | TC_THEO_DOI | 6 | TC_THIET_KE | 5 |
+| TC_TU_DIEN | 12 | TC_TU_LUAT | 5 | THANG_HT | 6 |
+| TH_AN_BIEN_THE | 5 | TH_AN_LUAT | 10 | TH_AN_SAI | 8 |
+| TH_AN_Y_NIEM | 6 | TH_CHU | 4 | TH_GIONG | 5 |
+| TH_GIONG_BANG | 8 | TH_HINH_DAO_DUC | 6 | TH_HINH_THAM_MY | 4 |
+| TH_HOA_TIET | 3 | TH_KHAC_BIET | 4 | TH_KIEN_TRUC | 5 |
+| TH_LUAT_GIU | 7 | TH_LUAT_TEN | 7 | TH_MAU | 10 |
+| TH_MAU_LUAT | 7 | TH_NEN | 6 | TH_TEP | 8 |
+| TH_THANG_CHU | 6 | TH_UNG_DUNG | 16 | TN_CAM_KET | 12 |
+| TN_CONG_PH | 7 | TN_DO_CAM | 6 | TN_HANH_TRINH | 9 |
+| TN_HIEN_VAT | 14 | TN_KHOANH_KHAC | 12 | TN_LUAT_PH | 6 |
+| TN_LUAT_PN | 6 | TN_NGHI | 6 | TN_PHAN_NAN | 8 |
+| TN_PHUC_HOI | 5 | TN_RA_DI | 6 | TRU | 4 |
+| TS_LUAT | 6 | TS_MUC | 6 | TT_BAC_THANH_TUU | 5 |
+| TT_HE_DANH_HIEU | 38 | TT_HO_SO | 16 | TT_LAM_PHAT | 10 |
+| TT_LE | 19 | TT_LUAT | 18 | TT_THAT_GIA | 12 |
+| TT_TRUNG_BAY | 10 | TT_VINH_DANH | 18 | TUAN | 5 |
+| TU_DONG | 8 | TV2_BUKATSU | 8 | TV2_BUKATSU_DOI_CHIEU | 10 |
+| TV2_TRAI_AN_TOAN | 13 | TV2_TRAI_HAU | 6 | TV2_TRAI_KHUNG | 7 |
+| TV2_TRAI_LICH | 20 | TV2_VIP_CHUAN | 11 | TV2_VIP_CHUONG_TRINH | 11 |
+| TV2_VIP_QUYEN_LOI | 9 | TV_CACH_DUNG | 6 | TV_MO_THUC | 12 |
+| TV_NGUON | 5 | TV_NGUYEN_TAC | 7 | TV_PHAM_CHAT | 5 |
+| TV_Q1 | 8 | TV_Q2 | 9 | TV_Q3 | 7 |
+| TV_Q4 | 9 | TV_Q5 | 7 | TV_Q6 | 5 |
+| TV_QUYEN | 6 | TY_ANH_XA_BAC | 6 | TY_ANH_XA_LUAT | 7 |
+| TY_CLB_BAN | 12 | TY_CLB_BUOI | 4 | TY_CLB_CAP | 10 |
+| TY_CLB_NL | 9 | TY_CLB_TUAN | 5 | TY_DINH_VI | 8 |
+| TY_GD_5S | 5 | TY_GD_90 | 4 | TY_GD_DANH_HIEU | 3 |
+| TY_GD_LUAT | 5 | TY_GD_NHAT_KY | 4 | TY_GIAI_DOAN | 15 |
+| TY_KHOI_12 | 12 | TY_KHOI_LUAT | 6 | TY_KHOI_NHOM | 5 |
+| TY_KN_DE_TAI | 10 | TY_KN_LUAT | 6 | TY_KN_NGHE | 6 |
+| TY_KN_THIET_KE | 6 | TY_LE | 12 | TY_LUAT_TUYEN | 7 |
+| TY_NGUON | 14 | TY_PIPELINE | 5 | TY_TUYEN | 5 |
+| TY_XH_DU_AN | 4 | TY_XH_LUAT | 6 | TY_XH_SU_KIEN | 6 |
+| VAI | 17 | VAI_NGOAI | 3 | VAI_NGOAI_NHOM | 3 |
+| VAI_NHOM | 5 | VH2_BAN12 | 12 | VH2_BIEU_MAU | 21 |
+| VH2_CANH_BAO | 15 | VH2_KPI | 17 | VH2_LUAT | 32 |
+| VH2_PDCA | 4 | VH2_RACI | 16 | VH2_SAU | 16 |
+| VH2_SO_DO | 15 | VH2_TRONG | 14 | VH2_TRUOC | 27 |
+| WOW | 9 |  |  |  |  |
 
 ---
 
@@ -584,7 +602,7 @@ nó chứng minh tác phẩm **không phải một tập tài liệu rời đư�
 | Cổng quyền | Vào thẳng bằng đường dẫn một mục ngoài quyền phải ra thẻ khoá | Chặn phát hành |
 | Tương phản màu | Mọi mã màu chữ đạt ngưỡng WCAG AA 4.5:1 trên cả hai chế độ | Chặn phát hành |
 
-Mã bản dựng `a2034693fee0` ngày 2026-08-30 là bản đã qua đủ tám lớp trên.
+Mã bản dựng `842175afe901` ngày 2026-08-30 là bản đã qua đủ tám lớp trên.
 
 ---
 

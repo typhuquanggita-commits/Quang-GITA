@@ -210,6 +210,13 @@
     { t: 'Mười hai ban tổ chức sự kiện', so: 12, kho: 'SK_BAN' },
     { t: 'Mười bốn rủi ro sự kiện', so: 14, kho: 'SK_RUI_RO' },
     { t: 'Hai mươi luật tổ chức sự kiện', so: 20, kho: 'SK_LUAT' },
+    { t: 'Ba mươi hai câu hỏi hiểu gia đình', so: 32, kho: 'DV_CAU_HOI' },
+    { t: 'Mười hai lúc nên khuyên gia đình đi nơi khác', so: 12, kho: 'DV_KHONG_HOP' },
+    { t: 'Hai mươi luật tư vấn', so: 20, kho: 'DV_LUAT' },
+    { t: 'Mười tám loại mã trong hệ', so: 18, kho: 'HT_MA_HOA' },
+    { t: 'Mười sáu loại học liệu', so: 16, kho: 'HT_HOC_LIEU' },
+    { t: 'Hai mươi loại câu hỏi', so: 20, kho: 'HT_NGAN_HANG_CAU_HOI' },
+    { t: 'Mười tám luật hạ tầng và học liệu', so: 18, kho: 'HT_LUAT' },
     { t: 'Mười bốn cơ chế tạo chiều sâu học từ mô hình chi hội', so: 14, kho: 'BN_TANG_SAU' },
     { t: 'Hai mươi trục đối chiếu', so: 20, kho: 'BN_DOI_CHIEU' },
     { t: 'Mười hai thứ không được bê sang môi trường học đường', so: 12, kho: 'BN_KHONG_BE' },
@@ -294,6 +301,10 @@
     ['du-lieu-dolo.js', 'BIÊN SOẠN', 'Ba mươi lăm báo cáo, bốn mươi tám chỉ số có công thức và hai ngưỡng, hai mươi hai biểu mẫu đo, mười bốn cách một con số bị làm hỏng, hai mươi quy tắc dữ liệu trẻ em', 'chờ Hội đồng Chuyên môn duyệt'],
 
     ['du-lieu-sukien.js', 'BIÊN SOẠN', 'Thiết kế sáu sự kiện trụ cột, khung D-60 tới D+14, mười hai ban tổ chức, kịch bản, mười tám hạng mục ngân sách không ghi tiền', 'chờ Hội đồng Chuyên môn duyệt'],
+
+    ['du-lieu-duongvao.js', 'BIÊN SOẠN', 'Mạch tư vấn bảy chặng, ba mươi hai câu hỏi hiểu gia đình, mười hai lúc nên khuyên đi nơi khác, buổi gặp đầu, ba mươi ngày đầu', 'chờ Hội đồng Chuyên môn duyệt'],
+
+    ['du-lieu-hatang.js', 'BIÊN SOẠN', 'Hệ mã hoá mười tám loại, mười sáu loại học liệu, ngân hàng hai mươi loại câu hỏi, lớp trực tuyến, lưu trữ và lộ trình lên máy chủ', 'chờ Hội đồng Chuyên môn duyệt; phần lưu trữ dữ liệu trẻ em cần rà theo quy định hiện hành'],
 
     ['du-lieu-bni.js', 'THAM CHIẾU', 'Mô hình chi hội — tài liệu của BNI Global, LLC. Học cơ chế, không dùng lại thương hiệu hay văn bản', 'không kê khai là tác phẩm của Học viện']
   ];

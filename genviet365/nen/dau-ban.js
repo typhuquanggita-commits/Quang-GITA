@@ -4,5 +4,5 @@
    bằng chứng thời điểm cho hồ sơ quyền tác giả. */
 'use strict';
 (function (G) {
-  G.DAU = { ma: 'a2034693fee0', ngay: '2026-08-30' };
+  G.DAU = { ma: '842175afe901', ngay: '2026-08-30' };
 })(window.GV = window.GV || {});

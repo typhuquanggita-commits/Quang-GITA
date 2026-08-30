@@ -22,7 +22,7 @@ Tập 8 — [`GEN_VIET_365_CAM_TAY.md`](GEN_VIET_365_CAM_TAY.md) — phần **gi
 sáng mai**: bảy câu hỏi bàn ăn, bản đọc ca, giáo án từng phút, kịch bản gọi, thư mẫu, ba
 cuốn sổ của học viên, câu hỏi phỏng vấn, bảng chấm chi tiết, từ điển và Sổ Chuẩn.
 
-Bản trực quan đầy đủ (47 nhóm · 288 màn): mở `genviet365/index.html`.
+Bản trực quan đầy đủ (49 nhóm · 300 màn): mở `genviet365/index.html`.
 
 ---
 

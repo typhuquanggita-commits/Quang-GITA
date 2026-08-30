@@ -32,7 +32,7 @@ Học viện GITA · Sứ mệnh: *Nâng tầm trí tuệ vàng Việt Nam*
 - Phụ lục — [`GEN_VIET_365_BANG_KE_TAC_PHAM.md`](GEN_VIET_365_BANG_KE_TAC_PHAM.md): bảng kê tác phẩm cho hồ sơ quyền tác giả (sinh tự động)
   ngay, và bộ tra cứu. **Nếu chỉ đọc được một tập thì đọc tập này.**
 
-Bản trực quan đầy đủ (47 nhóm · 288 màn): mở `genviet365/index.html`.
+Bản trực quan đầy đủ (49 nhóm · 300 màn): mở `genviet365/index.html`.
 Gộp thành một tệp để gửi đi: `node genviet365/dong-goi-artifact.cjs`.
 
 ---

@@ -438,6 +438,24 @@ GV.NHOM = [
       { v: 'sk-kich-ban', t: 'Kịch bản một sự kiện', h: 'Hai mươi sáu mốc từ 06:30' },
       { v: 'sk-ngan-sach', t: 'Mười tám hạng mục ngân sách', h: 'Cắt được không · cắt thì mất gì' },
       { v: 'sk-do', t: 'Đo và rủi ro sự kiện', h: 'Có đáng tổ chức lại không' }
+    ]},
+  { id: 'g48', no: '48', t: 'ĐƯỜNG VÀO CHI TIẾT', s: 'Cách một gia đình bước vào hệ, và khi nào nên khuyên họ đi nơi khác', mau: '#0B7350',
+    ds: [
+      { v: 'dv-mach', t: 'Mạch tư vấn bảy chặng', h: 'Từ lần nghe tên tới lúc gia đình quyết' },
+      { v: 'dv-cau-hoi', t: 'Ba mươi hai câu hỏi hiểu gia đình', h: 'Nghe gì trong câu trả lời' },
+      { v: 'dv-khong-hop', t: 'Mười hai lúc nên khuyên đi nơi khác', h: 'Một hệ nhận mọi người là hệ không có chuẩn' },
+      { v: 'dv-buoi-dau', t: 'Buổi gặp đầu tiên', h: 'Mười tám mốc · cháu ngồi ngang hàng' },
+      { v: 'dv-tra-loi', t: 'Mười câu khó gia đình hay hỏi', h: 'Và điều không được nói' },
+      { v: 'dv-ba-muoi-ngay', t: 'Ba mươi ngày đầu và hồ sơ vào hệ', h: 'Mười sáu mốc · mười lăm giấy tờ' }
+    ]},
+  { id: 'g49', no: '49', t: 'HẠ TẦNG SỐ VÀ HỌC LIỆU', s: 'Mã hoá, kho học liệu, ngân hàng câu hỏi và đường lên máy chủ', mau: '#5A6B80',
+    ds: [
+      { v: 'ht-ma-hoa', t: 'Hệ mã hoá mười tám loại', h: 'Quy tắc sinh mã · điều không được làm với mã' },
+      { v: 'ht-hoc-lieu', t: 'Mười sáu loại học liệu', h: 'Chuẩn tối thiểu · hạn rà lại · ai duyệt' },
+      { v: 'ht-cau-hoi', t: 'Ngân hàng hai mươi loại câu hỏi', h: 'Đo năng lực gì · bẫy khi ra đề' },
+      { v: 'ht-quy-trinh', t: 'Từ ý tưởng tới học liệu phát được', h: 'Mười bước · có bước thử với học sinh thật' },
+      { v: 'ht-truc-tuyen', t: 'Lớp trực tuyến và ranh giới số', h: 'Dạy được gì · không dạy được gì' },
+      { v: 'ht-luu-tru', t: 'Lưu trữ và lộ trình lên máy chủ', h: 'Mười bốn loại dữ liệu · năm chặng' }
     ]}
 ];
 
@@ -453,7 +471,7 @@ GV.NHOM = [
 GV.PHAN = [
   { id: 'p1', no: '1', t: 'TỔNG QUAN GEN VIỆT', mau: '#185AB4',
     s: 'Gen Việt là gì, dựng trên nền nào, và tra ở đâu',
-    nhom: ['g1', 'g21', 'g30', 'g10', 'g20'] },
+    nhom: ['g1', 'g21', 'g30', 'g10', 'g49', 'g20'] },
 
   { id: 'p2', no: '2', t: 'CLUB GEN VIỆT', mau: '#0B7350',
     s: 'Hạt nhân vận hành — nơi em được trao vai thật',
@@ -477,7 +495,7 @@ GV.PHAN = [
 
   { id: 'p7', no: '7', t: 'HOẠT ĐỘNG GEN VIỆT VÀ CỘNG ĐỒNG', mau: '#0B6675',
     s: 'Nơi giá trị của em được người ngoài xác nhận',
-    nhom: ['g25', 'g42', 'g47', 'g6', 'g8'] },
+    nhom: ['g25', 'g42', 'g47', 'g6', 'g8', 'g48'] },
 
   { id: 'p8', no: '8', t: 'MẬT MÃ GEN VIỆT', mau: '#8A6006',
     s: 'Vĩ nhân, danh tướng, nhà khoa học — chiến tích, sản phẩm và tư duy để đời',
@@ -3189,6 +3207,107 @@ GV.MAN = {
     { k: 'rui', tu: 'SK_RUI_RO' },
     { k: 'muc', t: 'Hai mươi luật tổ chức sự kiện' },
     { k: 'luat', tu: 'SK_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 48 · ĐƯỜNG VÀO CHI TIẾT ══════════ */
+'dv-mach': { q: 'tu_van', k: 'Đường vào', t: 'Mạch tư vấn bảy chặng',
+  p: 'Từ lần một gia đình nghe tên, tới lúc họ quyết. Chặng đầu bắt đầu trước cuộc gọi một tới tám tuần — tức là trước khi hệ biết họ tồn tại.',
+  khoi: [
+    { k: 'chang', tu: 'DV_MACH' },
+    { k: 'van', t: 'Đặt *chạm đầu* thành một chặng riêng là cách nhìn thẳng vào sự thật: phần lớn quyết định của một gia đình đã hình thành trước cuộc gọi đầu tiên. Thứ hệ làm ở chặng ấy không phải thuyết phục, mà là **có mặt đúng chỗ với đúng thứ** khi họ đang tìm.' }
+  ]},
+
+'dv-cau-hoi': { q: 'tu_van', k: 'Đường vào', t: 'Ba mươi hai câu hỏi hiểu gia đình',
+  p: 'Bốn nhóm: hiểu đứa trẻ · hiểu gia đình · hiểu kỳ vọng · thử ranh giới. Cột thứ ba quan trọng hơn chính câu hỏi.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Câu hỏi', 'Nghe gì trong câu trả lời', 'Dấu hiệu gia đình hợp với hệ', 'Dấu hiệu nên khuyên đi nơi khác'],
+      tu: 'DV_CAU_HOI' },
+    { k: 'van', t: 'Câu mở đầu không hỏi về mong muốn mà hỏi về **một ngày thường của cháu, từ lúc dậy tới lúc ngủ**. Câu trả lời cho biết ngay hai điều mà mọi câu hỏi khác phải mất nửa buổi mới ra: gia đình có nhìn thấy con mình cụ thể tới đâu, và nhà ấy có nhịp hay không có nhịp.' }
+  ]},
+
+'dv-khong-hop': { q: 'tu_van', k: 'Đường vào', t: 'Mười hai lúc nên khuyên gia đình đi nơi khác',
+  p: 'Đây là phần giá trị nhất của cả nhóm. Một hệ nhận mọi người là một hệ không có chuẩn.',
+  khoi: [
+    { k: 'cd4', nhan: ['Dấu hiệu nhận ra', 'Gia đình thật sự cần gì', 'Nói gì và làm gì', 'Bẫy khi từ chối'], tu: 'DV_KHONG_HOP' },
+    { k: 'van', t: 'Trường hợp đầu tiên là trường hợp **khủng hoảng cấp có nguy cơ với thân thể** — và ở đó việc đúng không phải là nhận rồi cố, mà là chuyển tới nơi có chuyên môn y tế, ngay. Nhận một ca vượt năng lực vì thương là cách gây hại tử tế nhất.' },
+    { k: 'trich', t: 'Nói rõ điều hệ không làm được là một phần của việc tư vấn, không phải một thất bại của nó.', n: 'Luật tư vấn' }
+  ]},
+
+'dv-buoi-dau': { q: 'tu_van', k: 'Đường vào', t: 'Buổi gặp đầu tiên',
+  p: 'Mười tám mốc theo phút. Mốc đầu tiên đã nói lên toàn bộ thái độ của hệ.',
+  khoi: [
+    { k: 'lich', tu: 'DV_BUOI_DAU' },
+    { k: 'van', t: 'Ba phút đầu: đón ở cửa, xếp chỗ — và **cháu ngồi ngang hàng với người lớn, không ngồi lệch ra một góc**. Đứa trẻ ngồi ngoài rìa cuộc nói chuyện về chính mình sẽ hiểu ngay vai của em trong hệ này là gì, dù không ai nói câu nào.' }
+  ]},
+
+'dv-tra-loi': { q: 'tu_van', k: 'Đường vào', t: 'Mười câu khó gia đình hay hỏi',
+  p: 'Mỗi câu có ba câu giữa để trả lời, và một mục điều không được nói.',
+  khoi: [
+    { k: 'kichban', tu: 'DV_TRA_LOI' },
+    { k: 'van', t: 'Câu khó nhất — *bao lâu thì thấy kết quả* — gần như luôn xuất hiện ở buổi gặp đầu, và nó là câu dễ đánh mất uy tín nhất. Trả lời bằng một con số là hứa thứ không kiểm soát được; trả lời bằng *tuỳ* là né. Kịch bản này trả lời bằng thứ hệ **thật sự cam kết được**: nhịp gặp, thời gian phản hồi, và mốc đo đầu tiên.' }
+  ]},
+
+'dv-ba-muoi-ngay': { q: 'tu_van', k: 'Đường vào', t: 'Ba mươi ngày đầu và hồ sơ vào hệ',
+  p: 'Mười sáu mốc từ ngày 0. Và mười lăm giấy tờ, mỗi thứ nêu rõ dùng vào việc gì.',
+  khoi: [
+    { k: 'lich', tu: 'DV_BA_MUOI_NGAY' },
+    { k: 'van', t: 'Ngày 0 là **lễ nhập hệ**: trao hộ chiếu bằng hai tay trước mặt cả tổ, cháu tự đọc lời cam kết. Một nghi thức nhỏ nhưng nó làm việc mà không lời giới thiệu nào làm được — nó nói với đứa trẻ rằng em vừa bước vào chỗ nào.' },
+    { k: 'muc', t: 'Hồ sơ vào hệ' },
+    { k: 'bang', cot: ['Mã', 'Giấy tờ hoặc phiếu', 'Ai điền', 'Bắt buộc hay tuỳ chọn', 'Dùng vào việc gì'], tu: 'DV_HO_SO_VAO' },
+    { k: 'muc', t: 'Hai mươi luật tư vấn' },
+    { k: 'luat', tu: 'DV_LUAT' },
+    { k: 'trich', t: 'Không hứa kết quả. Hệ chỉ cam kết những gì hệ làm.', n: 'Luật tư vấn thứ nhất' }
+  ]},
+
+/* ══════════ NHÓM 49 · HẠ TẦNG SỐ VÀ HỌC LIỆU ══════════ */
+'ht-ma-hoa': { q: 'qt_noi_dung', k: 'Hạ tầng số', t: 'Hệ mã hoá mười tám loại',
+  p: 'Mọi thứ trong hệ đều có mã, và cột cuối nói điều không được làm với mã ấy.',
+  khoi: [
+    { k: 'bang', cot: ['Loại đối tượng', 'Dạng mã', 'Ví dụ', 'Quy tắc sinh mã', 'Điều không được làm với mã'], tu: 'HT_MA_HOA' },
+    { k: 'van', t: 'Mã học viên `GV-<năm vào>-<vùng>-<sáu số>` cấp **một lần lúc nhập hệ** và không đổi khi em chuyển vùng hay lên bậc. Mã đổi theo trạng thái là cách chắc chắn nhất để mất dấu một hồ sơ sau vài năm.' }
+  ]},
+
+'ht-hoc-lieu': { q: 'qt_noi_dung', k: 'Hạ tầng số', t: 'Mười sáu loại học liệu',
+  p: 'Mỗi loại có chuẩn kỹ thuật tối thiểu, thời hạn rà lại, và người duyệt trước khi phát.',
+  khoi: [
+    { k: 'bang', cot: ['Loại học liệu', 'Dùng ở đâu', 'Ai làm', 'Chuẩn kỹ thuật tối thiểu', 'Thời hạn rà lại', 'Ai duyệt trước khi phát'],
+      tu: 'HT_HOC_LIEU' },
+    { k: 'van', t: 'Cột **thời hạn rà lại** là cột hiếm gặp và cần thiết. Học liệu không có hạn rà lại thì sau ba năm sẽ có những slide nói về công cụ đã biến mất và ví dụ về thứ học sinh chưa từng thấy — mà không ai chịu trách nhiệm gỡ chúng.' }
+  ]},
+
+'ht-cau-hoi': { q: 'nghe_quan_ly', k: 'Hạ tầng số', t: 'Ngân hàng hai mươi loại câu hỏi',
+  p: 'Phần hệ chưa từng có. Mỗi loại nêu rõ đo năng lực gì, cấp độ nhận thức nào, và bẫy khi ra đề.',
+  khoi: [
+    { k: 'bang', cot: ['Loại câu hỏi', 'Đo năng lực gì', 'Cấp độ', 'Ví dụ một câu', 'Cách chấm', 'Bẫy khi ra đề'],
+      tu: 'HT_NGAN_HANG_CAU_HOI' },
+    { k: 'van', t: 'Cột *bẫy khi ra đề* giữ cho ngân hàng không trôi về phía dễ. Câu trắc nghiệm dễ ra và dễ chấm, nên một ngân hàng không có chốt sẽ dần chỉ còn trắc nghiệm — và lúc ấy nó chỉ đo được trí nhớ, đúng thứ hệ này nói là không đủ.' }
+  ]},
+
+'ht-quy-trinh': { q: 'qt_noi_dung', k: 'Hạ tầng số', t: 'Từ ý tưởng tới học liệu phát được',
+  p: 'Mười bước. Bước một chặn đúng nguồn gốc của phần lớn học liệu thừa.',
+  khoi: [
+    { k: 'buoc', tu: 'HT_QUY_TRINH_HOC_LIEU' },
+    { k: 'van', t: 'Bước một: **nhu cầu phải đến từ giáo án, không đến từ ý thích** — người đề nghị phải chỉ ra mã chuyên đề cụ thể đang thiếu. Không có ràng buộc ấy, kho học liệu sẽ đầy những thứ đẹp mà không buổi nào dùng.' }
+  ]},
+
+'ht-truc-tuyen': { q: 'chung', k: 'Hạ tầng số', t: 'Lớp trực tuyến và ranh giới số',
+  p: 'Cái gì dạy trực tuyến được, cái gì không — và ranh giới giữa người lớn với trẻ trên kênh số.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'HT_TRUC_TUYEN' },
+    { k: 'van', t: 'Thứ dạy trực tuyến được là *truyền kiến thức, hướng dẫn thao tác, chữa bài, ôn tập*. Thứ không dạy được là phần lớn cái hệ này tồn tại vì nó: nhận vai thật trước mặt người thật, chịu trách nhiệm khi có người trông vào, và những khoảnh khắc chỉ xảy ra khi ở cùng một phòng.' }
+  ]},
+
+'ht-luu-tru': { q: 'qt_noi_dung', k: 'Hạ tầng số', t: 'Lưu trữ, sao lưu và đường lên máy chủ',
+  p: 'Mười bốn loại dữ liệu, và năm chặng từ bản tĩnh hiện nay tới hệ có máy chủ.',
+  khoi: [
+    { k: 'bang', cot: ['Loại dữ liệu', 'Lưu ở đâu', 'Giữ bao lâu', 'Ai xoá được', 'Thử phục hồi bao lâu một lần'],
+      tu: 'HT_LUU_TRU' },
+    { k: 'van', t: 'Cột cuối là cột phân biệt sao lưu thật với sao lưu trên giấy: **sao lưu chưa thử phục hồi thì chưa tính là có sao lưu**. Đây cũng là điều đã ghi trong hợp đồng máy chủ tối thiểu ở nhóm 40.' },
+    { k: 'muc', t: 'Năm chặng lên máy chủ' },
+    { k: 'chang', tu: 'HT_LO_TRINH' },
+    { k: 'muc', t: 'Mười tám luật hạ tầng và học liệu' },
+    { k: 'luat', tu: 'HT_LUAT' },
+    { k: 'trich', t: 'Không đưa dữ liệu thật của trẻ vào bản dựng tĩnh, ở bất kỳ vai nào, kể cả để trình diễn một buổi duy nhất.', n: 'Luật hạ tầng thứ nhất' }
   ]}
 
 };
