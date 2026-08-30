@@ -52,38 +52,56 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số |
-| 2 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian |
-| 3 | So sánh phân số | Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu |
-| 4 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối |
-| 5 | Tỉ số phần trăm có lời văn | Tỉ số phần trăm |
-| 6 | Đọc bảng số liệu thống kê | Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm |
-| 7 | Phần trăm thay đổi nhiều lần | Tỉ số phần trăm, mốc quy chiếu |
-| 8 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, tăng giảm theo phần trăm |
-| 9 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân |
-| 10 | Tìm phân số của một số | Nhân số tự nhiên với phân số |
-| 11 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân |
-| 12 | Rút gọn phân số | Tính chất cơ bản của phân số |
+| 1 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số |
+| 2 | Bốn phép tính với phân số | Quy đồng, nhân chia phân số |
+| 3 | Tỉ số phần trăm có lời văn | Tỉ số phần trăm |
+| 4 | So sánh phân số bằng kĩ thuật đặc biệt | Phần bù tới 1, phân số trung gian |
+| 5 | Tỉ số phần trăm nhiều bước | Ba dạng tỉ số phần trăm; mốc quy chiếu |
+| 6 | Tỉ số phần trăm trong mua bán | Tỉ số phần trăm, tăng giảm theo phần trăm |
+| 7 | Bốn phép tính với số thập phân | Kĩ thuật tính với số thập phân |
+| 8 | Nồng độ phần trăm của dung dịch | Tỉ số phần trăm; phân biệt chất tan và dung dịch |
+| 9 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối |
+| 10 | Rút gọn phân số | Tính chất cơ bản của phân số |
+| 11 | Rút gọn, so sánh, sắp thứ tự phân số | Tính chất cơ bản của phân số; so sánh phân số |
+| 12 | Số thập phân — hàng, so sánh, chuyển đổi | Cấu tạo số thập phân, quan hệ phân số – số thập phân |
+| 13 | Tìm phân số của một số | Nhân số tự nhiên với phân số |
 
 ---
 
 ## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT
 
+Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. Bản đầy đủ kèm bộ đề luyện đọc vị ở `10-so-do-doc-vi/so-do-H-L5.md`.
+
+```
+ĐỌC ĐỀ → Đề có phân số, số thập phân, phần trăm, hay một bảng số liệu?
+1. Đề bảo rút gọn, quy đồng, hoặc so sánh phân số?
+     ĐÚNG → Cùng mẫu so tử; cùng tử thì mẫu bé hơn là phân số lớn hơn
+2. Đề có cụm “… của …” đi với một phân số?
+     ĐÚNG → Tìm phân số của một số; đọc kĩ của số nào
+3. Đề có kí hiệu %?
+     ĐÚNG → Ba dạng phần trăm: tìm tỉ số, tìm giá trị phần, tìm toàn bộ. Xác định đại lượng nào ứng với 100%
+4. Đề có hai lần thay đổi phần trăm liên tiếp?
+     ĐÚNG → Mốc 100% đổi sau mỗi bước; tính tuần tự, không cộng trừ hai tỉ lệ
+5. Đề cho một bảng hoặc một biểu đồ?
+     ĐÚNG → Đọc chú thích trước, rồi quy về tổng, so sánh, trung bình cộng, tỉ số phần trăm
+```
+
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
+| Dãy phân số, so sánh bằng phần bù | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
 | Bốn phép tính với phân số | Biểu thức chỉ gồm phân số | Chọn quy tắc theo phép tính, rút gọn cuối cùng | Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. |
-| So sánh phân số bằng kĩ thuật đặc biệt | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
-| So sánh phân số | Hai phân số nối bởi dấu … | Xét cùng mẫu → cùng tử → quy đồng | So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. |
-| Biểu thức phân số nhiều phép tính | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. |
 | Tỉ số phần trăm có lời văn | Cụm “chiếm bao nhiêu phần trăm”, “so với cả lớp” | Chốt đại lượng 100% rồi chọn dạng | Nếu tỉ số là 1 phần 4 thì bằng 25%; nhớ vài mốc quen để nhẩm. |
-| Đọc bảng số liệu thống kê | Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi | Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng | Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. |
-| Phần trăm thay đổi nhiều lần | Hai lần tăng giảm liên tiếp | Tính tuần tự, xác định lại mốc 100% sau mỗi bước | Tăng 20% rồi giảm 20% thì còn 96% giá ban đầu — luôn thấp hơn giá cũ. |
-| Ba dạng toán tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. |
+| So sánh phân số bằng kĩ thuật đặc biệt | Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 | So phần bù; hoặc chèn phân số trung gian | Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. |
+| Tỉ số phần trăm nhiều bước | Hai tỉ lệ phần trăm nối tiếp nhau trong cùng một bài | Xác định lại mốc 100% trước mỗi bước | Nhân hai tỉ lệ rồi chia 100 là ra tỉ lệ so với mốc gốc. |
 | Tỉ số phần trăm trong mua bán | Từ khoá “tăng giá”, “giảm giá”, “lãi”, “lỗ” | Chốt mốc 100% rồi cộng trừ phần trăm | Giảm 20% nghĩa là còn 80% — nhân thẳng một lần thay vì trừ hai bước. |
+| Bốn phép tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. |
+| Nồng độ phần trăm của dung dịch | “Dung dịch … %”, “đổ thêm nước”, “bỏ thêm muối” | Kẻ bảng theo dõi tử số và mẫu số qua từng thao tác | Thêm nước thì nồng độ giảm, thêm muối thì nồng độ tăng — dùng để loại đáp số sai ngay. |
+| Biểu thức phân số nhiều phép tính | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. |
+| Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. |
+| Ba dạng toán tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. |
+| Rút gọn, so sánh, sắp thứ tự phân số | Một nhóm phân số cần sắp thứ tự | Rút gọn → so cùng mẫu hoặc quy đồng | So với 1 và với một nửa trước — nhiều phân số phân loại được ngay. |
 | Số thập phân — hàng, so sánh, chuyển đổi | Số có dấu phẩy; phân số mẫu 10, 100, 1 000 | Xét theo hàng từ trái sang phải | Thêm 0 vào cuối phần thập phân không làm thay đổi giá trị. |
 | Tìm phân số của một số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. |
-| Bốn phép tính với số thập phân | Các số có dấu phẩy | Chọn quy tắc đặt dấu phẩy theo phép tính | Ước lượng bằng cách làm tròn để kiểm tra vị trí dấu phẩy. |
-| Rút gọn phân số | Tử số và mẫu số có ước chung lớn hơn 1 | Chia cả tử và mẫu cho ước chung | Tìm ngay ước chung lớn nhất để rút gọn một lần là xong. |
 
 ---
 
@@ -102,26 +120,26 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với phân số” chứ?
-- [ ] **2.** Em nhớ công thức: Quy đồng, nhân chia phân số?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số bằng kĩ thuật đặc biệt” chứ?
-- [ ] **4.** Em nhớ công thức: Phần bù tới 1, phân số trung gian?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số” chứ?
-- [ ] **6.** Em nhớ công thức: Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Biểu thức phân số nhiều phép tính” chứ?
-- [ ] **8.** Em nhớ công thức: Thứ tự thực hiện phép tính, tính chất phân phối?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm có lời văn” chứ?
-- [ ] **10.** Em nhớ công thức: Tỉ số phần trăm?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Đọc bảng số liệu thống kê” chứ?
-- [ ] **12.** Em nhớ công thức: Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Phần trăm thay đổi nhiều lần” chứ?
-- [ ] **14.** Em nhớ công thức: Tỉ số phần trăm, mốc quy chiếu?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Ba dạng toán tỉ số phần trăm” chứ?
-- [ ] **16.** Em nhớ công thức: Tỉ số phần trăm?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm trong mua bán” chứ?
-- [ ] **18.** Em nhớ công thức: Tỉ số phần trăm, tăng giảm theo phần trăm?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Số thập phân — hàng, so sánh, chuyển đổi” chứ?
-- [ ] **20.** Em nhớ công thức: Cấu tạo số thập phân, quan hệ phân số – số thập phân?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Dãy phân số, so sánh bằng phần bù” chứ?
+- [ ] **2.** Em nhớ công thức: Phần bù tới 1; quy luật dãy phân số?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với phân số” chứ?
+- [ ] **4.** Em nhớ công thức: Quy đồng, nhân chia phân số?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm có lời văn” chứ?
+- [ ] **6.** Em nhớ công thức: Tỉ số phần trăm?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “So sánh phân số bằng kĩ thuật đặc biệt” chứ?
+- [ ] **8.** Em nhớ công thức: Phần bù tới 1, phân số trung gian?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm nhiều bước” chứ?
+- [ ] **10.** Em nhớ công thức: Ba dạng tỉ số phần trăm; mốc quy chiếu?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ số phần trăm trong mua bán” chứ?
+- [ ] **12.** Em nhớ công thức: Tỉ số phần trăm, tăng giảm theo phần trăm?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với số thập phân” chứ?
+- [ ] **14.** Em nhớ công thức: Kĩ thuật tính với số thập phân?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Nồng độ phần trăm của dung dịch” chứ?
+- [ ] **16.** Em nhớ công thức: Tỉ số phần trăm; phân biệt chất tan và dung dịch?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Biểu thức phân số nhiều phép tính” chứ?
+- [ ] **18.** Em nhớ công thức: Thứ tự thực hiện phép tính, tính chất phân phối?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Rút gọn phân số” chứ?
+- [ ] **20.** Em nhớ công thức: Tính chất cơ bản của phân số?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -133,19 +151,19 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
-| 2 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
-| 3 | Thấy mẫu số lớn thì kết luận phân số lớn. | Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé. |
-| 4 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
-| 5 | Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. | Viết rõ một dòng: “Cả lớp = 100%” trước khi tính. |
-| 6 | Đọc nhầm cột, hoặc quên một môn khi cộng tổng. | Đánh dấu từng số đã cộng để không sót và không cộng lặp. |
-| 7 | Cộng trừ hai số phần trăm rồi áp một lần vào giá ban đầu. | Viết ba dòng: giá ban đầu, giá sau lần 1, giá sau lần 2. |
-| 8 | Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. | Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. |
-| 9 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết rõ “Giá mua = 100%” ở dòng đầu tiên. |
-| 10 | Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. | Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. |
-| 11 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
-| 12 | Nhân xong đặt dấu phẩy thẳng cột như phép cộng. | Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. |
-| 13 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
+| 1 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| 2 | Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. | Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”. |
+| 3 | Lấy số học sinh giỏi làm mẫu số khi tính tỉ số phần trăm. | Viết rõ một dòng: “Cả lớp = 100%” trước khi tính. |
+| 4 | Lấy tỉ lệ nam giỏi nhân thẳng với sĩ số cả lớp. | Viết trước mỗi phép tính: “100% ở đây là …”. |
+| 5 | Chia tiền lãi cho giá bán nên ra tỉ lệ nhỏ hơn thực tế. | Viết rõ “Giá mua = 100%” ở dòng đầu tiên. |
+| 6 | Nhân xong đặt dấu phẩy thẳng cột như phép cộng. | Đếm số chữ số sau dấu phẩy ngay khi viết đề bài. |
+| 7 | Khi bỏ thêm muối thì chỉ cộng vào tử số mà quên cộng vào mẫu số. | Kẻ bảng hai dòng: lượng muối và khối lượng dung dịch, cập nhật sau mỗi thao tác. |
+| 8 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| 9 | Chỉ chia tử số hoặc chỉ chia mẫu số. | Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược. |
+| 10 | Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. | Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. |
+| 11 | Rút gọn xong quên rằng thứ tự vẫn giữ nguyên, đi quy đồng lại từ đầu. | Ghi cả phân số gốc và phân số tối giản cạnh nhau để đối chiếu. |
+| 12 | Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. | Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so. |
+| 13 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
 
 ---
 

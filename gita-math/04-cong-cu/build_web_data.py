@@ -24,6 +24,7 @@ from nhom_chuyen_de import NHOM, TU_DUY  # noqa: E402
 from ban_do_kien_thuc import BAN_DO  # noqa: E402
 from loai_phieu import LOAI, CHUOI_BUOI  # noqa: E402
 from phan_quyen import VAI_TRO, TAI_NGUYEN, QUYEN, TANG, BAT_BIEN  # noqa: E402
+from so_do_doc_vi import CAU_MO, CAY, CHOT, DOC_NHAM  # noqa: E402
 
 OUT_DIR = ROOT / "09-online" / "data"
 MOC_DAP_AN = "## HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN"
@@ -259,6 +260,13 @@ def main() -> None:
         d = doc_test(p)
         test[d["meta"]["ma_de"]] = d
 
+    so_do = []
+    for f in sorted((ROOT / "10-so-do-doc-vi").glob("so-do-*.md")):
+        md = f.read_text(encoding="utf-8")
+        g, lop = f.stem.split("-")[2], int(f.stem.split("-")[3][1:])
+        so_do.append({"ma": f.stem, "g": g, "l": lop,
+                      "ten": md.splitlines()[0].lstrip("# "), "md": tach_dong_md(md)})
+
     ban_do = []
     for f in sorted((ROOT / "06-ban-do-kien-thuc").glob("*.md")):
         md = f.read_text(encoding="utf-8")
@@ -293,6 +301,8 @@ def main() -> None:
         "chi_muc": gon,
         "cum": cum_ds,
         "ban_do": ban_do,
+        "so_do": so_do,
+        "cay_doc_vi": {"mo": CAU_MO, "cay": CAY, "chot": CHOT, "nham": DOC_NHAM},
         "mach": mach,
         "phieu": phieu,
         "kem": kem,
@@ -315,7 +325,8 @@ def main() -> None:
     kb = out.stat().st_size / 1024
     print(f"✔ {out.relative_to(ROOT)} — {kb:.0f} KB · bảng chuỗi {len(data['bang_chuoi'])} mục")
     print(f"  chỉ mục: {len(gon)} phiếu · đã biên soạn: {len(phieu)} · test: {len(test)}"
-          f" · kèm (GP/HD): {len(kem)} · bản đồ: {len(ban_do)} · mạch: {len(mach)}"
+          f" · kèm (GP/HD): {len(kem)} · bản đồ: {len(ban_do)} · sơ đồ đọc vị: {len(so_do)}"
+          f" · mạch: {len(mach)}"
           f" · cụm: {len(cum_ds)} · đề thi: {len(de_thi)} (đã soạn {len(de_soan)})")
     print(f"  nhúng trọn nội dung: {len(phieu)} phiếu học + {len(kem)} phiếu kèm"
           + (f" (khối lớp {a.lop})" if a.lop else " (toàn bộ ba khối)"))

@@ -52,23 +52,55 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
 | 1 | Quy tắc nhân | Quy tắc nhân trong phép đếm |
-| 2 | Suy luận loại trừ có bảng | Phương pháp lập bảng |
-| 3 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất |
+| 2 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp |
+| 3 | Suy luận loại trừ có bảng | Phương pháp lập bảng |
 | 4 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm |
-| 5 | Đếm số cặp | Đếm cặp, nguyên tắc đếm lặp |
-| 6 | Đếm bằng quy tắc cộng, nhân, bù trừ | Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ |
-| 7 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ |
+| 5 | Nguyên lí ngăn kéo | Lập luận trường hợp xấu nhất |
+| 6 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba |
+| 7 | Bài toán trồng cây, chia đoạn | Quan hệ số điểm – số khoảng |
+| 8 | Đếm số cặp | Đếm cặp, nguyên tắc đếm lặp |
+| 9 | Nguyên lý bù trừ, sơ đồ Ven | Đếm có phần chung; sơ đồ Ven |
+| 10 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ |
+| 11 | Suy luận thứ tự, vị trí trong hàng | Đếm vị trí, quan hệ trước – sau |
+| 12 | Chia hết và chia có dư trong tình huống chia phần | Phép chia có dư; số dư bé hơn số chia |
+| 13 | Đếm bằng quy tắc cộng, nhân, bù trừ | Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ |
 
 ---
 
 ## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT
 
+Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. Bản đầy đủ kèm bộ đề luyện đọc vị ở `10-so-do-doc-vi/so-do-G-L3.md`.
+
+```
+ĐỌC ĐỀ → Đề hỏi có bao nhiêu cách, ít nhất bao nhiêu, hay suy luận ai làm gì?
+1. Đề hỏi “có bao nhiêu cách”?
+     ĐÚNG → Quy tắc đếm: hai việc nối tiếp thì nhân, hai khả năng rời nhau thì cộng
+2. Đề hỏi “ít nhất bao nhiêu để chắc chắn”?
+     ĐÚNG → Nguyên lý ngăn kéo: dựng trường hợp xấu nhất rồi cộng 1
+3. Đề nói mỗi người với tất cả những người còn lại, hoặc hai … bất kì?
+     ĐÚNG → Đếm cặp: n × (n − 1) : 2, chia 2 vì mỗi cặp đếm hai lần
+4. Đề có “cả hai”, “ít nhất một”, “không … nào”?
+     ĐÚNG → Nguyên lý bù trừ: vẽ sơ đồ Ven, điền miền giữa trước
+5. Đề cho các câu nói, biết mấy người nói thật?
+     ĐÚNG → Nói thật – nói dối: tìm cặp câu phủ định nhau làm điểm tựa
+6. Đề mô tả một quá trình lặp nhiều bước rồi hỏi trạng thái cuối?
+     ĐÚNG → Bất biến: tìm đại lượng không đổi qua mỗi bước
+7. Đề nói cân đĩa không có quả cân?
+     ĐÚNG → Chia ba mỗi lần cân, vì cân đĩa cho ba kết quả
+```
+
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
 | Quy tắc nhân | Chọn một phần tử từ mỗi nhóm | Nhân số cách của các bước | Vẽ sơ đồ cây hai tầng là thấy ngay phép nhân. |
+| Bài toán bất biến | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. |
 | Suy luận loại trừ có bảng | Mỗi người ứng với đúng một đối tượng | Kẻ bảng, đánh dấu, lan toả | Bắt đầu từ dữ kiện khẳng định trước dữ kiện phủ định. |
 | Nguyên lí ngăn kéo | “Ít nhất … để chắc chắn …” | Dựng trường hợp xấu nhất rồi cộng 1 | Số loại × (số cần − 1) + 1. |
+| Cân đĩa, tìm vật khác biệt | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. |
+| Bài toán trồng cây, chia đoạn | “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn” | Tính số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. |
 | Đếm số cặp | “Mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | 5 bạn có 10 cái bắt tay; 10 bạn có 45 cái. |
+| Nguyên lý bù trừ, sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” | Vẽ Ven, điền miền giữa trước, trừ dần ra | Số thích ít nhất một môn = A + B − cả hai. |
+| Suy luận thứ tự, vị trí trong hàng | “Đứng thứ … từ đầu”, “cao hơn”, “thấp hơn” | Vẽ hàng ô, đánh dấu, cộng kiểm tra | Thứ tự từ đầu + thứ tự từ cuối = tổng số người + 1. |
+| Chia hết và chia có dư trong tình huống chia phần | “Chia đều cho … bạn”, “còn thừa” | Chia lấy thương và dư, rồi lập luận thêm hoặc bớt | Thử lại bằng công thức số bị chia = số chia × thương + số dư. |
 | Đếm bằng quy tắc cộng, nhân, bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” | Vẽ hai vòng tròn giao nhau, đếm theo miền | Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. |
 
 ---
@@ -90,20 +122,26 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 - [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Quy tắc nhân” chứ?
 - [ ] **2.** Em nhớ công thức: Quy tắc nhân trong phép đếm?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Suy luận loại trừ có bảng” chứ?
-- [ ] **4.** Em nhớ công thức: Phương pháp lập bảng?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Nguyên lí ngăn kéo” chứ?
-- [ ] **6.** Em nhớ công thức: Lập luận trường hợp xấu nhất?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán bất biến” chứ?
+- [ ] **4.** Em nhớ công thức: Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Suy luận loại trừ có bảng” chứ?
+- [ ] **6.** Em nhớ công thức: Phương pháp lập bảng?
 - [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Quy tắc nhân” chứ?
 - [ ] **8.** Em nhớ công thức: Quy tắc nhân, quy tắc cộng trong phép đếm?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Đếm số cặp” chứ?
-- [ ] **10.** Em nhớ công thức: Đếm cặp, nguyên tắc đếm lặp?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Đếm bằng quy tắc cộng, nhân, bù trừ” chứ?
-- [ ] **12.** Em nhớ công thức: Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Suy luận loại trừ có bảng” chứ?
-- [ ] **14.** Em nhớ công thức: Phương pháp lập bảng, loại trừ?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Nguyên lí ngăn kéo” chứ?
+- [ ] **10.** Em nhớ công thức: Lập luận trường hợp xấu nhất?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Cân đĩa, tìm vật khác biệt” chứ?
+- [ ] **12.** Em nhớ công thức: Lập luận trường hợp xấu nhất; chia nhóm ba?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán trồng cây, chia đoạn” chứ?
+- [ ] **14.** Em nhớ công thức: Quan hệ số điểm – số khoảng?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Đếm số cặp” chứ?
+- [ ] **16.** Em nhớ công thức: Đếm cặp, nguyên tắc đếm lặp?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Nguyên lý bù trừ, sơ đồ Ven” chứ?
+- [ ] **18.** Em nhớ công thức: Đếm có phần chung; sơ đồ Ven?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Suy luận loại trừ có bảng” chứ?
+- [ ] **20.** Em nhớ công thức: Phương pháp lập bảng, loại trừ?
 
-**Chuẩn đạt:** ✔ từ 12/14 câu trở lên.
+**Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
 ---
 
@@ -114,12 +152,18 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
 | 1 | Cộng số loại bánh với số loại nước. | Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ. |
-| 2 | Suy luận nhẩm trong đầu nên bỏ sót khả năng. | Luôn kẻ bảng, dù bài trông dễ. |
-| 3 | Nhân số màu với số chiếc cần rồi lấy luôn kết quả. | Viết rõ câu “Xấu nhất là mỗi màu lấy được … chiếc mà vẫn chưa đủ”. |
+| 2 | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước? |
+| 3 | Suy luận nhẩm trong đầu nên bỏ sót khả năng. | Luôn kẻ bảng, dù bài trông dễ. |
 | 4 | Cộng số áo với số quần. | Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân. |
-| 5 | Quên chia 2 nên đáp số gấp đôi. | Thử với 3 bạn: phải ra 3 cái bắt tay, không phải 6. |
-| 6 | Cộng thẳng hai nhóm khi chúng có phần tử chung. | Vẽ hai vòng tròn giao nhau, ghi số vào từng miền. |
-| 7 | Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. | Luôn kẻ bảng, kể cả khi bài có vẻ dễ. |
+| 5 | Nhân số màu với số chiếc cần rồi lấy luôn kết quả. | Viết rõ câu “Xấu nhất là mỗi màu lấy được … chiếc mà vẫn chưa đủ”. |
+| 6 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
+| 7 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn. |
+| 8 | Quên chia 2 nên đáp số gấp đôi. | Thử với 3 bạn: phải ra 3 cái bắt tay, không phải 6. |
+| 9 | Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. | Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số. |
+| 10 | Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. | Luôn kẻ bảng, kể cả khi bài có vẻ dễ. |
+| 11 | Lấy tổng số bạn trừ thứ tự từ đầu rồi ghi luôn, quên cộng 1. | Vẽ hàng ô và đếm thử với 5 bạn trước khi làm với số lớn. |
+| 12 | Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. | Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất? |
+| 13 | Cộng thẳng hai nhóm khi chúng có phần tử chung. | Vẽ hai vòng tròn giao nhau, ghi số vào từng miền. |
 
 ---
 

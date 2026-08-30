@@ -19,6 +19,19 @@ sys.path.insert(0, str(CC))
 
 from sinh.khung import KHO, Bai                   # noqa: E402
 
+sys.path.insert(0, str(CC / "data"))
+from so_do_doc_vi import CAU_MO, CAY, CHOT, DOC_NHAM   # noqa: E402
+
+
+def cay_goi_y(g: str) -> str:
+    """Cây quyết định đọc vị của nhóm, viết gọn thành khối mã trong phiếu."""
+    L = ["```", f"ĐỌC ĐỀ → {CAU_MO.get(g, '').replace('**', '')}"]
+    for i, (hoi, dung, _sai) in enumerate(CAY.get(g, []), 1):
+        L.append(f"{i}. {hoi.replace('**', '')}")
+        L.append(f"     ĐÚNG → {dung.replace('**', '').lstrip('→ ')}")
+    L.append("```")
+    return "\n".join(L)
+
 
 def ho_so_cum(rng: random.Random, nhom: str, lop: int, so: int = 12) -> list[Bai]:
     """Một bộ bài đại diện của nhóm chuyên đề, dùng làm nguyên liệu cho các phần
@@ -273,8 +286,13 @@ def lt_theo_key(rng, row, hs) -> list[Bai]:
 def db_so_do_dang(rng, row, hs) -> list[Bai]:
     dang = row["dang_bai"]
     ra = [_bai(
-        "Bảng tổng quát các dạng bài của chương",
-        "Kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp. Điền cột thứ nhất.",
+        "Cây quyết định đọc vị và bảng tổng quát dạng bài",
+        f"Đọc cây quyết định của nhóm **{row['nhom_ma']} — {row['nhom_ten']}** dưới đây, "
+        f"dừng ở câu hỏi đầu tiên trả lời ĐÚNG. Bản đầy đủ ở "
+        f"`10-so-do-doc-vi/so-do-{row['nhom_ma']}-L{row['lop']}.md`.\n\n"
+        f"{cay_goi_y(row['nhom_ma'])}\n\n"
+        "Sau đó kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp, "
+        "rồi điền cột thứ nhất.",
         [(f"Dạng bài thứ {i + 1} của chương?", d) for i, d in enumerate(dang[:8])],
         "Chép đúng tên các dạng bài theo thứ tự học. Đây là khung xương của cả chương.",
         ["TD3"], "Nhớ **số lượng dạng bài** trước, nhớ tên từng dạng sau.",

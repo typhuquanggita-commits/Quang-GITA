@@ -42,68 +42,67 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L3-C07-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Đại lượng tỉ lệ thuận, phép chia và phép nhân
-> 2. Phương pháp giả thiết tạm
-> 3. Bốn phép tính, từ khoá chỉ quan hệ
+> 1. Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền
+> 2. Sơ đồ đoạn thẳng; số bé = (tổng − hiệu) : 2
+> 3. Đại lượng tỉ lệ thuận, phép chia và phép nhân
 > 4. Quan hệ gấp – kém, phép cộng
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đặt tính rồi tính (cộng, trừ)
-
-Đặt tính rồi tính.
-
-a) 104 + 432
-b) 946 − 876
-c) 869 + 273
-d) 574 − 321
-e) 602 − 69
-f) 569 + 601
-
-### Bài 2. (5 điểm) Tìm hai số khi biết tổng và hiệu
+### Bài 1. (5 điểm) Tìm hai số khi biết tổng và hiệu
 
 Tìm hai số trong mỗi trường hợp.
 
-a) Tổng hai số là 338, hiệu hai số là 54. Tìm hai số đó.
-b) Tổng hai số là 212, hiệu hai số là 42. Tìm hai số đó.
-c) Tổng hai số là 340, hiệu hai số là 104. Tìm hai số đó.
-d) Tổng hai số là 102, hiệu hai số là 6. Tìm hai số đó.
-e) Tổng hai số là 260, hiệu hai số là 46. Tìm hai số đó.
-f) Tổng hai số là 144, hiệu hai số là 28. Tìm hai số đó.
-g) Tổng hai số là 74, hiệu hai số là 18. Tìm hai số đó.
+a) Tổng hai số là 200, hiệu hai số là 56. Tìm hai số đó.
+b) Tổng hai số là 72, hiệu hai số là 24. Tìm hai số đó.
+c) Tổng hai số là 106, hiệu hai số là 12. Tìm hai số đó.
+d) Tổng hai số là 148, hiệu hai số là 8. Tìm hai số đó.
+e) Tổng hai số là 158, hiệu hai số là 32. Tìm hai số đó.
+f) Tổng hai số là 272, hiệu hai số là 44. Tìm hai số đó.
+g) Tổng hai số là 146, hiệu hai số là 4. Tìm hai số đó.
 
-### Bài 3. (5 điểm) Tìm trung bình cộng của nhiều số
-
-Tính trung bình cộng.
-
-a) Tìm trung bình cộng của 5 số: 30, 28, 20, 24, 28.
-b) Tìm trung bình cộng của 2 số: 28, 20.
-c) Tìm trung bình cộng của 4 số: 22, 37, 23, 18.
-d) Tìm trung bình cộng của 3 số: 28, 16, 19.
-e) Tìm trung bình cộng của 3 số: 51, 40, 56.
-f) Tìm trung bình cộng của 2 số: 32, 36.
-
-### Bài 4. (5 điểm) Bài toán rút về đơn vị
+### Bài 2. (5 điểm) Bài toán rút về đơn vị
 
 Giải bằng phương pháp rút về đơn vị.
 
-a) 7 bao muối nặng 49 kg. Hỏi 12 bao như thế nặng bao nhiêu kg?
-b) 2 bao đường nặng 6 kg. Hỏi 18 bao như thế nặng bao nhiêu kg?
-c) 6 bao xi măng nặng 174 kg. Hỏi 20 bao như thế nặng bao nhiêu kg?
-d) 2 bao phân bón nặng 78 kg. Hỏi 10 bao như thế nặng bao nhiêu kg?
+a) 12 bao thóc nặng 420 kg. Hỏi 16 bao như thế nặng bao nhiêu kg?
+b) 10 bao thóc nặng 590 kg. Hỏi 17 bao như thế nặng bao nhiêu kg?
+c) 6 bao thóc nặng 342 kg. Hỏi 7 bao như thế nặng bao nhiêu kg?
+d) 9 bao thóc nặng 360 kg. Hỏi 15 bao như thế nặng bao nhiêu kg?
+e) 7 bao gạo nặng 371 kg. Hỏi 5 bao như thế nặng bao nhiêu kg?
 
-### Bài 5. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
+### Bài 3. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
 
 Đọc kĩ rồi trả lời từng câu.
 
-a) Dũng có 40 quyển vở, số vở của Tuấn kém 2 lần số vở của Dũng. Tuấn có bao nhiêu quyển vở?
-b) Dũng có 25 quyển vở, Tuấn có nhiều hơn Dũng 8 quyển. Tuấn có bao nhiêu quyển vở?
-c) Dũng có 30 quyển vở, Tuấn có số vở gấp 3 lần Dũng. Tuấn có bao nhiêu quyển vở?
-d) Dũng có 38 quyển vở, Tuấn có ít hơn Dũng 18 quyển. Tuấn có bao nhiêu quyển vở?
-e) Dũng có 39 quyển vở, Tuấn có ít hơn Dũng 14 quyển. Tuấn có bao nhiêu quyển vở?
-f) Dũng có 200 quyển vở, số vở của Tuấn kém 4 lần số vở của Dũng. Tuấn có bao nhiêu quyển vở?
+a) Vy có 21 quyển vở, Tuấn có số vở gấp 4 lần Vy. Tuấn có bao nhiêu quyển vở?
+b) Vy có 52 quyển vở, số vở của Tuấn kém 2 lần số vở của Vy. Tuấn có bao nhiêu quyển vở?
+c) Vy có 51 quyển vở, Tuấn có ít hơn Vy 12 quyển. Tuấn có bao nhiêu quyển vở?
+d) Vy có 32 quyển vở, Tuấn có nhiều hơn Vy 29 quyển. Tuấn có bao nhiêu quyển vở?
+e) Vy có 34 quyển vở, Tuấn có nhiều hơn Vy 21 quyển. Tuấn có bao nhiêu quyển vở?
+f) Vy có 132 quyển vở, số vở của Tuấn kém 6 lần số vở của Vy. Tuấn có bao nhiêu quyển vở?
+
+### Bài 4. (5 điểm) Bài toán giải bằng hai phép tính
+
+Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải.
+
+a) Tổ Hai có 34 lá cờ. Nhóm Hoa Phượng có gấp 2 lần tổ Hai. Hỏi cả hai tổ có bao nhiêu lá cờ?
+b) Tổ Một có 16 lá cờ. Tổ Hai có nhiều hơn tổ Một 12 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+c) Tổ Ba có 40 lá cờ. Tổ Hai có ít hơn tổ Ba 8 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+d) Tổ Ba có 34 lá cờ. Tổ Một có gấp 3 lần tổ Ba. Hỏi cả hai tổ có bao nhiêu lá cờ?
+e) Tổ Ba có 52 lá cờ. Nhóm Sao Mai có nhiều hơn tổ Ba 13 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+
+### Bài 5. (5 điểm) Tìm trung bình cộng của nhiều số
+
+Tính trung bình cộng.
+
+a) Tìm trung bình cộng của 2 số: 33, 27.
+b) Tìm trung bình cộng của 3 số: 16, 23, 24.
+c) Tìm trung bình cộng của 4 số: 44, 48, 60, 64.
+d) Tìm trung bình cộng của 5 số: 29, 44, 33, 37, 27.
+e) Tìm trung bình cộng của 5 số: 40, 56, 55, 49, 50.
 
 ---
 
@@ -123,11 +122,11 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
-a) Câu lời giải mở đầu cho dạng “Bài toán tổng – hiệu”?
-b) Câu lời giải mở đầu cho dạng “Bài toán tổng – hiệu”?
-c) Câu lời giải mở đầu cho dạng “Bài toán giải bằng hai phép tính”?
-d) Câu lời giải mở đầu cho dạng “Tìm trung bình cộng”?
-e) Câu lời giải mở đầu cho dạng “Ba dạng bài trung bình cộng”?
+a) Câu lời giải mở đầu cho dạng “Toán điển hình: gấp, kém, nhiều hơn, ít hơn”?
+b) Câu lời giải mở đầu cho dạng “Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ”?
+c) Câu lời giải mở đầu cho dạng “Giả thiết tạm”?
+d) Câu lời giải mở đầu cho dạng “Tổng – tỉ, hiệu – tỉ mức làm quen”?
+e) Câu lời giải mở đầu cho dạng “Bài toán giải bằng hai phép tính”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
 
@@ -144,12 +143,12 @@ f) Vận tốc ghi đơn vị gì?
 
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
-a) Lỗi: Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. — cách phòng?
-b) Lỗi: Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. — cách phòng?
-c) Lỗi: Dừng lại ở bước một, trả lời số cây của một tổ. — cách phòng?
-d) Lỗi: Đếm sai số lượng số hạng nên chia nhầm. — cách phòng?
-e) Lỗi: Đi tìm ngay số còn thiếu mà chưa tính tổng. — cách phòng?
-f) Lỗi: Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. — cách phòng?
+a) Lỗi: Nhầm hai tình huống: cho thêm và chuyển qua lại. — cách phòng?
+b) Lỗi: Trừ ngay số tiền đưa cho giá một quyển vở. — cách phòng?
+c) Lỗi: Chia số chân thiếu cho 4. — cách phòng?
+d) Lỗi: Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. — cách phòng?
+e) Lỗi: Dừng lại ở bước một, trả lời số cây của một tổ. — cách phòng?
+f) Lỗi: Đi tìm ngay số còn thiếu mà chưa tính tổng. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -177,7 +176,7 @@ e) Dò ba tầng mất bao lâu cho một bài?
 
 ### Bài 2. (3 điểm) Dò soát tình huống 1
 
-**Tình huống:** một bạn làm bài dạng “Bài toán tổng – hiệu” và mắc lỗi: Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé.
+**Tình huống:** một bạn làm bài dạng “Toán điển hình: gấp, kém, nhiều hơn, ít hơn” và mắc lỗi: Nhầm hai tình huống: cho thêm và chuyển qua lại.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -187,7 +186,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 3. (3 điểm) Dò soát tình huống 2
 
-**Tình huống:** một bạn làm bài dạng “Tìm trung bình cộng” và mắc lỗi: Đếm sai số lượng số hạng nên chia nhầm.
+**Tình huống:** một bạn làm bài dạng “Tổng – tỉ, hiệu – tỉ mức làm quen” và mắc lỗi: Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -197,7 +196,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 4. (3 điểm) Dò soát tình huống 3
 
-**Tình huống:** một bạn làm bài dạng “Giả thiết tạm” và mắc lỗi: Chia số chân thiếu cho 4.
+**Tình huống:** một bạn làm bài dạng “Bài toán tổng – hiệu” và mắc lỗi: Chia đôi tổng ngay rồi cộng hiệu vào cả hai số.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -229,7 +228,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — Bài toán tổng – hiệu
+### Bài 2. (5 điểm) Nhánh 1 — Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -239,7 +238,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 3. (5 điểm) Nhánh 2 — Tìm trung bình cộng
+### Bài 3. (5 điểm) Nhánh 2 — Tổng – tỉ, hiệu – tỉ mức làm quen
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -249,7 +248,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Quan hệ nhiều hơn – ít hơn, gấp – kém
+### Bài 4. (5 điểm) Nhánh 3 — Ba dạng bài trung bình cộng
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -259,7 +258,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Tổng – hiệu có lời văn
+### Bài 5. (5 điểm) Nhánh 4 — Tìm trung bình cộng
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -284,7 +283,7 @@ d) Phút 4 nói gì?
 e) Phút 5 nói gì?
 f) Ai trong nhóm nói phần nào?
 
-### Bài 2. (4 điểm) Nội dung giảng — Bài toán tổng – hiệu
+### Bài 2. (4 điểm) Nội dung giảng — Toán điển hình: gấp, kém, nhiều hơn, ít hơn
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -295,7 +294,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Bài toán giải bằng hai phép tính
+### Bài 3. (4 điểm) Nội dung giảng — Giả thiết tạm
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -306,7 +305,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 4. (4 điểm) Nội dung giảng — Ba dạng bài trung bình cộng
+### Bài 4. (4 điểm) Nội dung giảng — Bài toán giải bằng hai phép tính
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -317,7 +316,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 5. (4 điểm) Nội dung giảng — Giả thiết tạm
+### Bài 5. (4 điểm) Nội dung giảng — Bài toán tổng – hiệu
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -335,34 +334,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 536 · b) 70 · c) 1 142 · d) 253 · e) 533 · f) 1 170
-**Hướng giải:** Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ từ phải sang trái, nhớ sang hàng liền trước khi tổng vượt quá 9 hoặc khi phải mượn.
-**Nhãn tư duy:** TD1. Điểm chốt: Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
-**Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
-
-### Bài A.2
-**Đáp số:** a) số lớn 196, số bé 142 · b) số lớn 127, số bé 85 · c) số lớn 222, số bé 118 · d) số lớn 54, số bé 48 · e) số lớn 153, số bé 107 · f) số lớn 86, số bé 58 · g) số lớn 46, số bé 28
+**Đáp số:** a) số lớn 128, số bé 72 · b) số lớn 48, số bé 24 · c) số lớn 59, số bé 47 · d) số lớn 78, số bé 70 · e) số lớn 95, số bé 63 · f) số lớn 158, số bé 114 · g) số lớn 75, số bé 71
 **Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
 **Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
 
-### Bài A.3
-**Đáp số:** a) 26 · b) 24 · c) 25 · d) 21 · e) 49 · f) 34
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
-**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
-
-### Bài A.4
-**Đáp số:** a) 84 · b) 54 · c) 580 · d) 390
+### Bài A.2
+**Đáp số:** a) 560 · b) 1 003 · c) 399 · d) 600 · e) 265
 **Hướng giải:** Bước 1 — rút về đơn vị: tìm giá trị của **một** đơn vị bằng phép chia. Bước 2: nhân giá trị một đơn vị với số đơn vị cần tìm.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Bước rút về đơn vị luôn là phép **chia**, và phải làm trước.
 **Lỗi thường gặp:** Nhân ngay hai số đã cho mà bỏ qua bước chia. Phòng: Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai.
 
-### Bài A.5
-**Đáp số:** a) 20 · b) 33 · c) 90 · d) 20 · e) 25 · f) 50
+### Bài A.3
+**Đáp số:** a) 84 · b) 26 · c) 39 · d) 61 · e) 55 · f) 22
 **Hướng giải:** BẪY — Gấp và kém dùng hai phép tính ngược nhau. “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
 **Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+
+### Bài A.4
+**Đáp số:** a) 102 lá cờ · b) 44 lá cờ · c) 72 lá cờ · d) 136 lá cờ · e) 117 lá cờ
+**Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
+**Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
+
+### Bài A.5
+**Đáp số:** a) 30 · b) 21 · c) 54 · d) 34 · e) 50
+**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
+**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
+**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -371,7 +370,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Bài toán tổng – hiệu là:” · b) “Bài toán tổng – hiệu là:” · c) “Bài toán giải bằng hai phép tính là:” · d) “Tìm trung bình cộng là:” · e) “Ba dạng bài trung bình cộng là:”
+**Đáp số:** a) “Toán điển hình: gấp, kém, nhiều hơn, ít hơn là:” · b) “Toán điển hình lớp 3: tuổi, mua bán, tỉ lệ là:” · c) “Giả thiết tạm là:” · d) “Tổng – tỉ, hiệu – tỉ mức làm quen là:” · e) “Bài toán giải bằng hai phép tính là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -383,7 +382,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · b) Vẽ sơ đồ và tô phần hiệu bằng bút khác màu. · c) Đọc lại câu hỏi sau khi tính xong bước một. · d) Đánh số thứ tự từng số trước khi cộng. · e) Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. · f) Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Đáp số:** a) Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi. · b) Viết rõ dòng “Tiền hàng là …” trước khi trừ. · c) Thử lại: nhân ngược ra tổng số chân xem có khớp đề không. · d) Gạch chân “có tất cả” hay “nhiều hơn” trước khi vẽ sơ đồ. · e) Đọc lại câu hỏi sau khi tính xong bước một. · f) Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -401,22 +400,22 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Dò lại phép tính nhưng không đọc lại câu hỏi. Phòng: Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số.
 
 ### Bài C.2
-**Đáp số:** a) tầng 2 · b) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · c) toàn bộ số điểm của ý sai · d) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · e) Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
+**Đáp số:** a) tầng 2 · b) Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi. · c) toàn bộ số điểm của ý sai · d) Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi. · e) Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 
 ### Bài C.3
-**Đáp số:** a) tầng 2 · b) Đánh số thứ tự từng số trước khi cộng. · c) toàn bộ số điểm của ý sai · d) Đánh số thứ tự từng số trước khi cộng. · e) Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Hướng giải:** Trung bình cộng của nhiều số bằng tổng các số đó chia cho số lượng các số. Cộng cho hết rồi mới chia, không chia từng số một.
-**Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
-**Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
+**Đáp số:** a) tầng 2 · b) Gạch chân “có tất cả” hay “nhiều hơn” trước khi vẽ sơ đồ. · c) toàn bộ số điểm của ý sai · d) Gạch chân “có tất cả” hay “nhiều hơn” trước khi vẽ sơ đồ. · e) Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần.
+**Hướng giải:** Tỉ số cho biết số phần bằng nhau. Bài cho tổng thì chia tổng cho **tổng số phần**; bài cho hiệu thì chia hiệu cho **hiệu số phần**. So sánh một phần mấy là lấy số bé chia số lớn.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần.
+**Lỗi thường gặp:** Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. Phòng: Gạch chân “có tất cả” hay “nhiều hơn” trước khi vẽ sơ đồ.
 
 ### Bài C.4
-**Đáp số:** a) tầng 2 · b) Thử lại: nhân ngược ra tổng số chân xem có khớp đề không. · c) toàn bộ số điểm của ý sai · d) Thử lại: nhân ngược ra tổng số chân xem có khớp đề không. · e) Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
-**Hướng giải:** Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
-**Lỗi thường gặp:** Chia số chân thiếu cho 4. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp đề không.
+**Đáp số:** a) tầng 2 · b) Vẽ sơ đồ và tô phần hiệu bằng bút khác màu. · c) toàn bộ số điểm của ý sai · d) Vẽ sơ đồ và tô phần hiệu bằng bút khác màu. · e) Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
+**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
+**Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 
 ### Bài C.5
 **Đáp số:** a) tầng 2 · b) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · c) toàn bộ số điểm của ý sai · d) Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. · e) Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
@@ -432,66 +431,66 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) “Có tất cả …” và “nhiều hơn … là …” · b) Sơ đồ đoạn thẳng đưa về hai phần bằng nhau · c) Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. · d) Sơ đồ đoạn thẳng, công thức tổng – hiệu · e) Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu.
+**Đáp số:** a) “Gấp … lần” + “hơn … tuổi”; “đưa … đồng”; “… hộp có … chiếc” · b) Tìm đại lượng trung gian rồi trả lời câu hỏi · c) Trừ ngay số tiền đưa cho giá một quyển vở. · d) Hiệu – tỉ; nhân chia rút về đơn vị; phép trừ tiền · e) Bài tỉ lệ có số hộp mới chia hết cho số hộp cũ thì nhân thẳng tỉ số.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
-**Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Ba dạng khác nhau nhưng cùng một thói quen: **tính đại lượng trung gian trước**.
+**Lỗi thường gặp:** Trừ ngay số tiền đưa cho giá một quyển vở. Phòng: Viết rõ dòng “Tiền hàng là …” trước khi trừ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
+**Đáp số:** a) “Gấp … lần” đi cùng “có tất cả” hoặc “nhiều hơn” · b) Sơ đồ phần bằng nhau → giá trị một phần → nhân · c) Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. · d) Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ · e) Tổng chia hết cho tổng số phần; không chia hết là đã đọc sai tỉ số.
+**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Cho tổng thì chia cho tổng số phần, cho hiệu thì chia cho hiệu số phần.
+**Lỗi thường gặp:** Dùng nhầm công thức tổng – tỉ cho bài hiệu – tỉ. Phòng: Gạch chân “có tất cả” hay “nhiều hơn” trước khi vẽ sơ đồ.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.4
+**Đáp số:** a) Cụm “trung bình mỗi …” · b) Đi qua tổng làm trung gian · c) Đi tìm ngay số còn thiếu mà chưa tính tổng. · d) Quan hệ tổng – số lượng – trung bình cộng · e) Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
+**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.5
 **Đáp số:** a) Từ khoá “trung bình cộng”, “trung bình mỗi …” · b) Tổng chia số lượng · c) Đếm sai số lượng số hạng nên chia nhầm. · d) Định nghĩa trung bình cộng · e) Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 **Nhãn tư duy:** TD1. Điểm chốt: Chia cho **số lượng số hạng**, không phải chia cho một số bất kì.
 **Lỗi thường gặp:** Đếm sai số lượng số hạng nên chia nhầm. Phòng: Đánh số thứ tự từng số trước khi cộng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài D.4
-**Đáp số:** a) Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” · b) Đọc vị từ khoá → chọn phép tính · c) Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. · d) Bốn phép tính, từ khoá chỉ quan hệ · e) Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính.
-**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài D.5
-**Đáp số:** a) “Có tất cả …” và “… nhiều hơn … là …” · b) Đọc vị tổng và hiệu → sơ đồ → công thức · c) Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. · d) Công thức tổng – hiệu, sơ đồ đoạn thẳng · e) Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần.
-**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
 ### Bài E.1
 **Đáp số:** a) giới thiệu chương “Bài toán ẩn dữ kiện và hai đại lượng tỉ lệ” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-**Hướng giải:** BẪY — Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình.. Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+**Hướng giải:** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Giảng được cho bạn hiểu mới là **đã hiểu**.
 **Lỗi thường gặp:** Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. Phòng: Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
-**Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán tổng – hiệu.” · b) Đề cho **tổng** và **hiệu** của hai số · c) Công thức tổng – hiệu, sơ đồ đoạn thẳng · d) Tổng hai số là 100, hiệu là 20. Tìm hai số. → 60 và 40 · e) Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. · f) Số lớn và số bé luôn có trung bình cộng bằng nửa tổng.
-**Hướng giải:** Số lớn = (tổng + hiệu) : 2. Số bé = (tổng − hiệu) : 2. Cách hiểu: vẽ hai đoạn thẳng, đoạn dài hơn phần hiệu; bớt phần hiệu đi thì hai đoạn bằng nhau, mỗi đoạn là số bé.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng hiệu ra **số lớn**, trừ hiệu ra **số bé** — nhớ đúng chiều.
-**Lỗi thường gặp:** Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. Phòng: Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Toán điển hình: gấp, kém, nhiều hơn, ít hơn.” · b) “Gấp … lần”, “nhiều hơn”, “cho thêm”, “để bằng nhau” · c) Bốn quan hệ cơ bản; phép cộng, trừ, nhân, chia · d) Tổ Một 12 lá, tổ Hai gấp 3 lần. Tổ Hai nhiều hơn bao nhiêu lá? → 24 lá · e) Nhầm hai tình huống: cho thêm và chuyển qua lại. · f) Cho thêm: thêm đúng hiệu. Chuyển qua lại: chuyển nửa hiệu.
+**Hướng giải:** Bốn quan hệ quen: gấp lần thì nhân, kém lần thì chia, nhiều hơn thì cộng, ít hơn thì trừ. Muốn hai bên bằng nhau bằng cách **chỉ thêm cho một bên** thì thêm đúng phần hơn.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Chỉ thêm cho một bên thì thêm **đúng phần hơn**; nếu chuyển qua lại thì chỉ chuyển **nửa phần hơn**.
+**Lỗi thường gặp:** Nhầm hai tình huống: cho thêm và chuyển qua lại. Phòng: Hỏi lại: tổng có đổi không? Cho thêm thì tổng đổi, chuyển thì tổng không đổi.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
+**Đáp số:** a) “Hôm nay nhóm mình nói về Giả thiết tạm.” · b) Hai loại con vật, biết tổng số con và tổng số chân · c) Phương pháp giả thiết tạm · d) Có 10 con gà và chó, 26 chân. Mấy con chó? → 3 con chó · e) Chia số chân thiếu cho 4. · f) Số chó = (số chân − 2 × số con) : 2.
+**Hướng giải:** Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
+**Lỗi thường gặp:** Chia số chân thiếu cho 4. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp đề không.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài E.4
 **Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán giải bằng hai phép tính.” · b) Đề cho một đại lượng và quan hệ, hỏi tổng · c) Quan hệ gấp – kém, phép cộng · d) Tổ Một trồng 12 cây, tổ Hai gấp 3 lần. Cả hai tổ trồng mấy cây? → 48 cây · e) Dừng lại ở bước một, trả lời số cây của một tổ. · f) Cả hai tổ bằng (1 + k) lần tổ thứ nhất — nhẩm được ngay.
 **Hướng giải:** Bước 1: tìm đại lượng chưa biết bằng quan hệ gấp – kém. Bước 2: cộng hai đại lượng lại theo yêu cầu của đề. Mỗi bước phải có một câu lời giải riêng.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai.
 **Lỗi thường gặp:** Dừng lại ở bước một, trả lời số cây của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài E.4
-**Đáp số:** a) “Hôm nay nhóm mình nói về Ba dạng bài trung bình cộng.” · b) Cụm “trung bình mỗi …” · c) Quan hệ tổng – số lượng – trung bình cộng · d) Trung bình mỗi ngày bán 40 kg, hỏi 5 ngày bán bao nhiêu? → 200 kg · e) Đi tìm ngay số còn thiếu mà chưa tính tổng. · f) Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng.
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
 ### Bài E.5
-**Đáp số:** a) “Hôm nay nhóm mình nói về Giả thiết tạm.” · b) Hai loại con vật, biết tổng số con và tổng số chân · c) Phương pháp giả thiết tạm · d) Có 10 con gà và chó, 26 chân. Mấy con chó? → 3 con chó · e) Chia số chân thiếu cho 4. · f) Số chó = (số chân − 2 × số con) : 2.
-**Hướng giải:** Giả sử tất cả đều là gà thì số chân bằng số con nhân 2. Số chân đó thiếu so với thực tế; mỗi con chó bị tính thiếu 2 chân, nên lấy số chân thiếu chia 2 được số chó.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia số chân thiếu cho **2** (là 4 − 2), không chia cho 4.
-**Lỗi thường gặp:** Chia số chân thiếu cho 4. Phòng: Thử lại: nhân ngược ra tổng số chân xem có khớp đề không.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán tổng – hiệu.” · b) “Có tất cả …” và “nhiều hơn … là …” · c) Sơ đồ đoạn thẳng, công thức tổng – hiệu · d) Hai bạn có 30 quyển vở, bạn thứ nhất nhiều hơn 4 quyển. Mỗi bạn mấy quyển? → 17 và 13 · e) Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. · f) Số bé = (tổng − hiệu) : 2; số lớn = số bé + hiệu.
+**Hướng giải:** Vẽ hai đoạn thẳng, đoạn trên dài hơn đoạn dưới đúng phần hiệu. Nếu bớt phần hiệu ở đoạn trên thì hai đoạn bằng nhau; chia đôi tổng mới được số bé, rồi cộng hiệu được số lớn.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bớt hiệu rồi mới chia đôi — thứ tự không được đảo.
+**Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Vẽ sơ đồ và tô phần hiệu bằng bút khác màu.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ---

@@ -43,288 +43,295 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L5-C05-NC-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Công thức thể tích, diện tích xung quanh, toàn phần
-> 2. Quy tắc đếm, tổ hợp đơn giản
-> 3. Công thức chu vi, diện tích; phép chia
-> 4. Công thức diện tích hình bình hành, hình thoi, hình tam giác
+> 1. Diện tích hình chữ nhật, phân tích hình
+> 2. Diện tích hình tròn, hình vuông; phép trừ diện tích
+> 3. Số đo góc; hai đường thẳng vuông góc, song song
+> 4. Công thức diện tích hình thang
 
 ---
 
 ## PHẦN I — KHỞI ĐỘNG · NỀN CHẮC · Mức M1 — Nhận biết · 12 phút · 15 điểm
 
-### Bài 1. (3 điểm) Đổi đơn vị đo diện tích
-
-Điền số thích hợp.
-
-a) 62 m² = … cm²
-b) 24 m² = … dm²
-c) 63 ha = … m²
-d) 5 dm² = … cm²
-e) 71 km² = … ha
-f) 51 km² = … ha
-g) 75 dm² = … cm²
-
-### Bài 2. (3 điểm) Đặt tính rồi tính (nhân, chia)
-
-Đặt tính rồi tính.
-
-a) 18 937 490 : 494
-b) 20 651 344 : 686
-c) 87 207 × 881
-d) 25 432 × 899
-e) 10 770 × 795
-
-### Bài 3. (3 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
-
-Tính theo yêu cầu, ghi rõ đơn vị.
-
-a) Hình chữ nhật có chiều dài 40 cm, chiều rộng 25 cm. Tính chu vi.
-b) Hình vuông có cạnh 58 cm. Tính chu vi.
-c) Hình vuông có cạnh 38 cm. Tính diện tích.
-d) Hình chữ nhật có chiều dài 7 cm, chiều rộng 3 cm. Tính diện tích.
-e) Hình chữ nhật có chiều dài 8 cm, chiều rộng 7 cm. Tính chu vi.
-
-### Bài 4. (3 điểm) Tìm kích thước khi biết chu vi hoặc diện tích
-
-Làm ngược từ công thức.
-
-a) Hình vuông có chu vi 220 cm. Tính cạnh và diện tích.
-b) Hình chữ nhật có diện tích 816 cm², chiều rộng 16 cm. Tính chiều dài.
-c) Hình chữ nhật có chu vi 100 cm, chiều dài 41 cm. Tính chiều rộng.
-d) Hình vuông có chu vi 168 cm. Tính cạnh và diện tích.
-e) Hình chữ nhật có chu vi 18 cm, chiều dài 6 cm. Tính chiều rộng.
-
-### Bài 5. (3 điểm) Đếm hình trong lưới ô vuông
+### Bài 1. (3 điểm) Đếm hình trong lưới ô vuông
 
 Đếm có hệ thống, không đếm mò.
 
-a) Lưới ô vuông gồm 4 hàng và 4 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
+a) Lưới ô vuông gồm 2 hàng và 5 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
 b) Có bao nhiêu hình chữ nhật (kể cả hình vuông) trong lưới đó?
 c) Có bao nhiêu hình vuông trong lưới đó?
 d) Nếu mỗi ô vuông nhỏ có cạnh 1 cm thì chu vi cả lưới bằng bao nhiêu?
 e) Diện tích cả lưới bằng bao nhiêu?
 
+### Bài 2. (3 điểm) Tìm kích thước khi biết chu vi hoặc diện tích
+
+Làm ngược từ công thức.
+
+a) Hình chữ nhật có chu vi 46 cm, chiều dài 16 cm. Tính chiều rộng.
+b) Hình vuông có chu vi 220 cm. Tính cạnh và diện tích.
+c) Hình chữ nhật có diện tích 2 668 cm², chiều rộng 46 cm. Tính chiều dài.
+d) Hình vuông có chu vi 72 cm. Tính cạnh và diện tích.
+e) Hình chữ nhật có diện tích 957 cm², chiều rộng 29 cm. Tính chiều dài.
+
+### Bài 3. (3 điểm) Đổi đơn vị đo diện tích
+
+Điền số thích hợp.
+
+a) 10 dm² = … cm²
+b) 84 m² = … dm²
+c) 79 dm² = … cm²
+d) 62 m² = … dm²
+e) 24 m² = … cm²
+f) 63 ha = … m²
+g) 5 dm² = … cm²
+
+### Bài 4. (3 điểm) Góc nhọn, góc tù, góc bẹt; vuông góc và song song
+
+Dùng ê ke và thước đo góc để kiểm chứng.
+
+a) Góc có số đo 45° là góc gì?
+b) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
+c) Góc 135° so với góc vuông thì lớn hơn, bé hơn hay bằng?
+d) Góc có số đo 120° là góc gì?
+e) Hình chữ nhật có mấy cặp cạnh song song và mấy cặp cạnh vuông góc?
+f) Góc 30° so với góc vuông thì lớn hơn, bé hơn hay bằng?
+
+### Bài 5. (3 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
+
+Tính theo yêu cầu, ghi rõ đơn vị.
+
+a) Hình vuông có cạnh 37 cm. Tính diện tích.
+b) Hình chữ nhật có chiều dài 59 cm, chiều rộng 6 cm. Tính chu vi.
+c) Hình vuông có cạnh 55 cm. Tính chu vi.
+d) Hình chữ nhật có chiều dài 53 cm, chiều rộng 29 cm. Tính diện tích.
+e) Hình vuông có cạnh 26 cm. Tính chu vi.
+
 ---
 
 ## PHẦN II — LUYỆN CHUẨN · THÀNH THẠO · Mức M2 — Thông hiểu · 15 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tính chất chia hết của tổng và hiệu
+### Bài 1. (4 điểm) Nhận dạng hình khối và tính thể tích
 
-Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng.
+Cầm mô hình hoặc vẽ hình khai triển ra nháp.
 
-a) Tổng 138 + 174 có chia hết cho 3 không?
-b) Hiệu 255 − 90 có chia hết cho 5 không?
-c) Tổng 115 + 2 có chia hết cho 5 không? Nếu không, số dư bằng bao nhiêu?
-d) Tổng 65 + 175 có chia hết cho 5 không?
-e) Tổng 440 + 3 có chia hết cho 5 không? Nếu không, số dư bằng bao nhiêu?
-f) Tổng 145 + 2 có chia hết cho 5 không? Nếu không, số dư bằng bao nhiêu?
+a) Hình hộp chữ nhật có mấy mặt, mấy đỉnh, mấy cạnh?
+b) Hình lập phương khác hình hộp chữ nhật ở điểm nào?
+c) Hình trụ có mấy mặt đáy và hai mặt đáy đó là hình gì?
+d) Hình cầu có mặt đáy không?
+e) Hình hộp chữ nhật ba kích thước 2 cm, 7 cm, 2 cm có thể tích bằng bao nhiêu?
+f) Tổng độ dài tất cả các cạnh của hình hộp ấy bằng bao nhiêu?
+g) Hình lập phương cạnh 2 cm có diện tích toàn phần bằng bao nhiêu?
 
 ### Bài 2. (4 điểm) Diện tích hình bình hành, hình thoi, hình tam giác
 
 Áp dụng đúng công thức từng hình.
 
-a) Hình thoi có hai đường chéo dài 24 cm và 24 cm. Tính diện tích.
-b) Hình bình hành có đáy 16 cm, chiều cao 15 cm. Tính diện tích.
-c) Hình tam giác có đáy 39 cm, chiều cao 8 cm. Tính diện tích.
-d) Hình tam giác có đáy 35 cm, chiều cao 30 cm. Tính diện tích.
-e) Hình bình hành có đáy 17 cm, chiều cao 15 cm. Tính diện tích.
-f) Hình thoi có hai đường chéo dài 30 cm và 26 cm. Tính diện tích.
-g) Hình thoi có hai đường chéo dài 12 cm và 26 cm. Tính diện tích.
+a) Hình tam giác có đáy 29 cm, chiều cao 30 cm. Tính diện tích.
+b) Hình bình hành có đáy 38 cm, chiều cao 7 cm. Tính diện tích.
+c) Hình thoi có hai đường chéo dài 10 cm và 12 cm. Tính diện tích.
+d) Hình bình hành có đáy 21 cm, chiều cao 29 cm. Tính diện tích.
 
-### Bài 3. (4 điểm) Bài toán thực tế về chu vi và diện tích
+### Bài 3. (4 điểm) Hình tròn: tâm, bán kính, đường kính
+
+Vẽ hình tròn và ghi kí hiệu lên hình.
+
+a) Hình tròn A có bán kính 21 cm, hình tròn B có đường kính 42 cm. Hình nào lớn hơn?
+b) Hình tròn có đường kính 44 cm. Bán kính dài bao nhiêu?
+c) Hình tròn có bán kính 8 cm. Đường kính dài bao nhiêu?
+d) Hình tròn có bán kính 32 cm. Đường kính dài bao nhiêu?
+e) Hình tròn có đường kính 26 cm. Bán kính dài bao nhiêu?
+
+### Bài 4. (4 điểm) Bài toán thực tế về chu vi và diện tích
 
 Đọc kĩ xem bài hỏi chu vi hay diện tích.
 
-a) Một mảnh vườn hình chữ nhật dài 14 m, rộng 10 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
-b) Một mảnh vườn hình chữ nhật dài 73 m, rộng 40 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
-c) Một mảnh đất hình chữ nhật dài 64 m, rộng 8 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 4 m. Hỏi cần bao nhiêu cây?
-d) Một mảnh đất hình chữ nhật dài 69 m, rộng 24 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 2 m. Hỏi cần bao nhiêu cây?
-e) Một mảnh đất hình chữ nhật dài 37 m, rộng 26 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 2 m. Hỏi cần bao nhiêu cây?
+a) Một mảnh vườn hình chữ nhật dài 46 m, rộng 6 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
+b) Một nền nhà hình chữ nhật dài 57 dm, rộng 9 dm, lát bằng gạch vuông cạnh 5 dm. Hỏi cần bao nhiêu viên gạch?
+c) Một mảnh đất hình chữ nhật dài 29 m, rộng 16 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 4 m. Hỏi cần bao nhiêu cây?
+d) Một mảnh đất hình chữ nhật dài 28 m, rộng 5 m. Người ta trồng cây quanh mảnh đất, hai cây liền nhau cách nhau 2 m. Hỏi cần bao nhiêu cây?
+e) Một mảnh vườn hình chữ nhật dài 59 m, rộng 34 m. Người ta rào xung quanh mảnh vườn. Hỏi cần bao nhiêu mét rào?
+f) Một nền nhà hình chữ nhật dài 33 dm, rộng 13 dm, lát bằng gạch vuông cạnh 2 dm. Hỏi cần bao nhiêu viên gạch?
 
-### Bài 4. (4 điểm) Diện tích hình thang
+### Bài 5. (4 điểm) Diện tích hình thang
 
 Áp dụng công thức, ghi rõ đơn vị.
 
-a) Hình thang có đáy lớn 19 cm, đáy bé 16 cm, chiều cao 30 cm. Tính diện tích.
-b) Hình thang có đáy lớn 29 cm, đáy bé 23 cm, chiều cao 14 cm. Tính diện tích.
-c) Hình thang có đáy lớn 32 cm, đáy bé 22 cm, chiều cao 18 cm. Tính diện tích.
-d) Hình thang có đáy lớn 36 cm, đáy bé 20 cm, chiều cao 23 cm. Tính diện tích.
-
-### Bài 5. (4 điểm) Đại lượng tỉ lệ thuận
-
-Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
-
-a) Mua 15 quyển vở hết 180 nghìn đồng. Mua 24 quyển vở như thế hết bao nhiêu nghìn đồng?
-b) Mua 12 quyển vở hết 888 nghìn đồng. Mua 15 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 7 quyển vở hết 112 nghìn đồng. Với 160 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 13 quyển vở hết 1 131 nghìn đồng. Mua 19 quyển vở như thế hết bao nhiêu nghìn đồng?
-e) Mua 7 quyển vở hết 322 nghìn đồng. Mua 3 quyển vở như thế hết bao nhiêu nghìn đồng?
-f) Mua 14 quyển vở hết 1 036 nghìn đồng. Mua 23 quyển vở như thế hết bao nhiêu nghìn đồng?
+a) Hình thang có đáy lớn 40 cm, đáy bé 25 cm, chiều cao 14 cm. Tính diện tích.
+b) Hình thang có đáy lớn 29 cm, đáy bé 16 cm, chiều cao 24 cm. Tính diện tích.
+c) Hình thang có đáy lớn 34 cm, đáy bé 25 cm, chiều cao 20 cm. Tính diện tích.
+d) Hình thang có đáy lớn 21 cm, đáy bé 15 cm, chiều cao 13 cm. Tính diện tích.
+e) Hình thang có đáy lớn 35 cm, đáy bé 4 cm, chiều cao 12 cm. Tính diện tích.
 
 ---
 
 ## PHẦN III — VẬN DỤNG · Mức M3 — Vận dụng · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Chu vi và diện tích hình tròn
+### Bài 1. (5 điểm) Tìm hai số khi biết tổng và tỉ số
 
-Lấy π = 3,14. Ghi rõ đơn vị.
+Vẽ sơ đồ đoạn thẳng rồi giải.
 
-a) Hình tròn có đường kính 8 cm. Bán kính bằng bao nhiêu?
-b) Hình tròn có đường kính 26 cm. Tính chu vi (lấy π = 3,14).
-c) Hình tròn có bán kính 3 cm. Tính chu vi (lấy π = 3,14).
-d) Hình tròn có bán kính 24 cm. Tính diện tích (lấy π = 3,14).
-e) Hình tròn có bán kính 27 cm. Tính chu vi (lấy π = 3,14).
-f) Hình tròn có đường kính 4 cm. Tính chu vi (lấy π = 3,14).
+a) Tổ Ba và nhóm Sao Mai trồng được tất cả 148 cây. Số cây của tổ Ba bằng 1 phần 3 số cây của nhóm Sao Mai. Mỗi tổ trồng được bao nhiêu cây?
+b) Tổ Ba và nhóm Hoa Phượng trồng được tất cả 319 cây. Số cây của tổ Ba bằng 5 phần 6 số cây của nhóm Hoa Phượng. Mỗi tổ trồng được bao nhiêu cây?
+c) Nhóm Hoa Phượng và tổ Một trồng được tất cả 824 cây. Số cây của nhóm Hoa Phượng bằng 1 phần 7 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
+d) Nhóm Sao Mai và tổ Một trồng được tất cả 1 140 cây. Số cây của nhóm Sao Mai bằng 5 phần 7 số cây của tổ Một. Mỗi tổ trồng được bao nhiêu cây?
 
-### Bài 2. (5 điểm) Tính nhanh với phân số
+### Bài 2. (5 điểm) Tìm x qua ba bước, có dấu ngoặc
 
-Tính bằng cách thuận tiện nhất.
+Tìm x, trình bày đủ các bước.
 
-a) 3 phần 11 + 8 phần 11
-b) 7 phần 18 + 11 phần 18
-c) 5 phần 11 × 11 phần 5
-d) 8 phần 7 × 7 phần 8
-e) 3 phần 7 + 3 phần 7 + 1 phần 7
-f) 6 phần 13 + 7 phần 13
+a) (44 + x) × 6 + 7 = 367
+b) (35 + x) × 2 + 4 = 288
+c) (x + 46) × 3 − 7 = 323
+d) (24 + x) × 8 + 9 = 273
+e) (x + 47) × 3 − 9 = 324
 
 ### Bài 3. (5 điểm) Đếm tam giác và đoạn thẳng
 
 Đếm có hệ thống, nêu cách đếm.
 
-a) Từ một đỉnh của tam giác lớn kẻ 2 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
+a) Từ một đỉnh của tam giác lớn kẻ 4 đoạn thẳng tới cạnh đối diện. Có tất cả bao nhiêu tam giác trong hình?
 b) Trong đó có bao nhiêu tam giác nhỏ nhất (không bị chia tiếp)?
-c) Trên một đường thẳng lấy 4 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
+c) Trên một đường thẳng lấy 6 điểm phân biệt. Có bao nhiêu đoạn thẳng được tạo thành?
 d) Nếu lấy thêm một điểm nữa trên đường thẳng đó thì có thêm bao nhiêu đoạn thẳng?
-e) Với 5 điểm thì có tất cả bao nhiêu đoạn thẳng?
+e) Với 7 điểm thì có tất cả bao nhiêu đoạn thẳng?
 
-### Bài 4. (5 điểm) Số chia hết cho nhiều số cùng lúc
+### Bài 4. (5 điểm) Chu vi và diện tích hình tròn
 
-Trả lời gọn, có thể dùng dãy cách đều.
+Lấy π = 3,14. Ghi rõ đơn vị.
 
-a) Có bao nhiêu số từ 254 đến 719 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-b) Có bao nhiêu số từ 197 đến 727 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-c) Có bao nhiêu số từ 177 đến 282 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-d) Có bao nhiêu số từ 183 đến 1 077 vừa chia hết cho 3 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-e) Có bao nhiêu số từ 130 đến 299 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
+a) Hình tròn có bán kính 10 cm. Tính diện tích (lấy π = 3,14).
+b) Hình tròn có đường kính 32 cm. Tính chu vi (lấy π = 3,14).
+c) Hình tròn có bán kính 6 cm. Tính chu vi (lấy π = 3,14).
+d) Hình tròn có đường kính 38 cm. Bán kính bằng bao nhiêu?
+e) Hình tròn có đường kính 46 cm. Tính chu vi (lấy π = 3,14).
+f) Hình tròn có bán kính 27 cm. Tính chu vi (lấy π = 3,14).
+g) Hình tròn có đường kính 8 cm. Bán kính bằng bao nhiêu?
 
 ### Bài 5. (5 điểm) Hình hộp chữ nhật và hình lập phương
 
 Ghi rõ đơn vị: cm² cho diện tích, cm³ cho thể tích.
 
-a) Hình hộp chữ nhật có đáy 20 cm × 14 cm, chiều cao 8 cm. Tính diện tích xung quanh.
-b) Hình hộp chữ nhật có đáy 10 cm × 13 cm, chiều cao 8 cm. Tính diện tích toàn phần.
-c) Hình hộp chữ nhật có ba kích thước 10 cm, 3 cm, 5 cm. Tính thể tích.
-d) Hình lập phương có cạnh 15 cm. Tính thể tích và diện tích toàn phần.
-e) Hình hộp chữ nhật có ba kích thước 3 cm, 13 cm, 12 cm. Tính thể tích.
+a) Hình lập phương có cạnh 5 cm. Tính thể tích và diện tích toàn phần.
+b) Hình hộp chữ nhật có đáy 3 cm × 19 cm, chiều cao 3 cm. Tính diện tích xung quanh.
+c) Hình hộp chữ nhật có ba kích thước 16 cm, 2 cm, 7 cm. Tính thể tích.
+d) Hình hộp chữ nhật có đáy 6 cm × 8 cm, chiều cao 11 cm. Tính diện tích toàn phần.
+e) Hình hộp chữ nhật có ba kích thước 17 cm, 18 cm, 8 cm. Tính thể tích.
+f) Hình hộp chữ nhật có đáy 13 cm × 15 cm, chiều cao 3 cm. Tính diện tích xung quanh.
 
 ---
 
 ## PHẦN IV — VẬN DỤNG CAO · Mức M4 — Vận dụng cao · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Thêm, bớt, đổi chỗ chữ số
-
-Phân tích số theo cấu tạo rồi trả lời.
-
-a) Viết thêm chữ số 1 vào bên trái số 556 thì được số mới. Số mới hơn số ban đầu bao nhiêu đơn vị?
-b) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 600 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 3 và chữ số hàng đơn vị là 8.
-c) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 519 ta được số mới. Hiệu hai số bằng bao nhiêu?
-d) Đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị của số 607 ta được số mới. Hiệu hai số bằng bao nhiêu?
-e) Một số có ba chữ số, nếu xoá chữ số hàng trăm thì được số mới kém số ban đầu 700 đơn vị. Tìm số ban đầu, biết chữ số hàng chục là 6 và chữ số hàng đơn vị là 3.
-
-### Bài 2. (5 điểm) Nhận ra thừa số 0 để tính tức thì
+### Bài 1. (5 điểm) Nhận ra thừa số 0 để tính tức thì
 
 Tính bằng cách nhanh nhất.
 
-a) 47 × 54 + 47 × 33 − 47 × (54 + 33)
-b) (76 × 69 − 69 × 76) × 14
-c) 39 × 13 + 39 × 92 − 39 × (13 + 92)
-d) (14 × 58 − 58 × 14) × 26
-e) (78 × 67 − 67 × 78) × 32
+a) (13 × 56 − 56 × 13) × 96
+b) 86 × 91 × (14 − 14)
+c) (93 × 87 − 87 × 93) × 91
+d) (72 × 56 − 56 × 72) × 47
+e) (95 × 42 − 42 × 95) × 70
 
-### Bài 3. (5 điểm) Đếm số lập được thoả nhiều điều kiện
-
-Cho bốn chữ số **1, 3, 4, 6**. Xét các số có ba chữ số **khác nhau** lập từ bốn chữ số đó.
-
-a) Lập được tất cả bao nhiêu số?
-b) Trong đó có bao nhiêu số chẵn?
-c) Có bao nhiêu số chia hết cho 5?
-d) Có bao nhiêu số chia hết cho 3?
-e) Số lớn nhất và số bé nhất lập được là những số nào?
-f) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
-
-### Bài 4. (5 điểm) Tỉ số diện tích hai tam giác chung chiều cao
-
-Dùng nhận xét về chiều cao chung.
-
-a) Tam giác ABC có diện tích 135 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 3 phần bằng nhau. Tính diện tích tam giác ABM.
-b) Tam giác ABC có diện tích 324 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 4 phần bằng nhau. Tính diện tích tam giác ABM.
-c) Tam giác ABC có diện tích 207 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
-d) Tam giác ABC có diện tích 322 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 3 phần bằng nhau. Tính diện tích tam giác ABM.
-e) Tam giác ABC có diện tích 376 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 5 phần và MC gấp 3 phần bằng nhau. Tính diện tích tam giác ABM.
-
-### Bài 5. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
+### Bài 2. (5 điểm) Diện tích thay đổi khi kích thước thay đổi
 
 Vẽ hình minh hoạ phần tăng thêm.
 
-a) Hình chữ nhật dài 27 cm, rộng 24 cm. Nếu tăng cả chiều dài và chiều rộng thêm 15 cm thì diện tích tăng thêm bao nhiêu?
-b) Hình chữ nhật dài 42 cm, rộng 25 cm. Nếu tăng chiều dài thêm 13 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
-c) Hình chữ nhật dài 34 cm, rộng 18 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
-d) Hình chữ nhật dài 17 cm, rộng 11 cm. Nếu tăng chiều dài thêm 6 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+a) Hình chữ nhật dài 35 cm, rộng 23 cm. Nếu tăng cả chiều dài và chiều rộng thêm 2 cm thì diện tích tăng thêm bao nhiêu?
+b) Hình chữ nhật dài 37 cm, rộng 27 cm. Nếu tăng chiều dài thêm 10 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+c) Hình chữ nhật dài 39 cm, rộng 22 cm. Nếu gấp đôi chiều dài và giữ nguyên chiều rộng thì diện tích mới gấp mấy lần diện tích cũ?
+d) Hình chữ nhật dài 30 cm, rộng 14 cm. Nếu tăng chiều dài thêm 5 cm (giữ nguyên chiều rộng) thì diện tích tăng thêm bao nhiêu?
+
+### Bài 3. (5 điểm) Hình chữ nhật — tổng hợp chu vi, diện tích và chuyển động
+
+Bài nhiều ý nối tiếp, ý sau dùng kết quả ý trước.
+
+a) Hình chữ nhật có chiều dài 24 m, chiều rộng 18 m. Tính chu vi.
+b) Tính diện tích hình chữ nhật đó.
+c) Một người đi bộ quanh hình chữ nhật ấy với vận tốc 5 m/giây. Hỏi đi hết một vòng mất bao nhiêu giây?
+d) Nếu tăng chiều dài thêm 6 m thì diện tích tăng thêm bao nhiêu?
+e) Khi đó chu vi tăng thêm bao nhiêu mét?
+f) Nếu tăng cả chiều dài và chiều rộng thêm 6 m thì diện tích mới bằng bao nhiêu?
+g) Diện tích tăng thêm khi tăng cả hai chiều bằng bao nhiêu?
+
+### Bài 4. (5 điểm) Khối lập phương sơn màu
+
+Tưởng tượng khối lớn và xét theo vị trí: góc, cạnh, mặt, trong lõi.
+
+a) Một khối lập phương lớn ghép từ 4 × 4 × 4 khối lập phương nhỏ. Hỏi có tất cả bao nhiêu khối nhỏ?
+b) Sơn toàn bộ mặt ngoài khối lớn. Có bao nhiêu khối nhỏ được sơn 3 mặt?
+c) Có bao nhiêu khối nhỏ được sơn 2 mặt?
+d) Có bao nhiêu khối nhỏ được sơn 1 mặt?
+e) Có bao nhiêu khối nhỏ không được sơn mặt nào?
+f) Cộng bốn loại trên lại có bằng tổng số khối nhỏ không?
+
+### Bài 5. (5 điểm) Tỉ số diện tích hai tam giác chung chiều cao
+
+Dùng nhận xét về chiều cao chung.
+
+a) Tam giác ABC có diện tích 93 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 1 phần và MC gấp 2 phần bằng nhau. Tính diện tích tam giác ABM.
+b) Tam giác ABC có diện tích 110 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 6 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
+c) Tam giác ABC có diện tích 182 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 3 phần bằng nhau. Tính diện tích tam giác ABM.
+d) Tam giác ABC có diện tích 182 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 4 phần và MC gấp 3 phần bằng nhau. Tính diện tích tam giác ABM.
+e) Tam giác ABC có diện tích 70 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 2 phần và MC gấp 5 phần bằng nhau. Tính diện tích tam giác ABM.
+f) Tam giác ABC có diện tích 168 cm². Điểm M nằm trên cạnh BC sao cho BM gấp 3 phần và MC gấp 1 phần bằng nhau. Tính diện tích tam giác ABM.
 
 ---
 
 ## PHẦN V — VƯỢT NGƯỠNG · ĐIỂM 10 · Mức M5 — Sáng tạo · vượt ngưỡng · 18 phút · 15 điểm
 
-### Bài 1. (3 điểm) Tỉ lệ nghịch — so sánh hai phương án
+### Bài 1. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
 
-Tính rồi so sánh hai phương án.
+Chú ý các cạnh bị ghép vào bên trong.
 
-a) 9 người làm xong một công việc trong 19 ngày. Nếu có thêm 7 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-b) 5 người làm xong một công việc trong 16 ngày. Nếu có thêm 2 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-c) 4 người làm xong một công việc trong 15 ngày. Nếu có thêm 6 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-d) 5 người làm xong một công việc trong 17 ngày. Nếu có thêm 2 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
-e) 12 người làm xong một công việc trong 12 ngày. Nếu có thêm 1 người nữa (làm khoẻ như nhau) thì công việc đó hoàn thành sớm hơn bao nhiêu ngày?
+a) Ghép 25 hình vuông cạnh 8 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
+b) Ghép 9 hình vuông cạnh 4 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
+c) Ghép 2 hình vuông cạnh 13 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
+d) Cắt một hình vuông cạnh 12 cm thành hai hình chữ nhật bằng nhau. Tổng chu vi hai hình chữ nhật đó bằng bao nhiêu?
+e) Ghép 5 hình vuông cạnh 8 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
+f) Ghép 6 hình vuông cạnh 15 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
 
 ### Bài 2. (3 điểm) Diện tích phần tô màu
 
 Phân tích hình thành hiệu của các hình quen thuộc.
 
-a) Một hình vuông cạnh 4 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
-b) Hai hình tròn đồng tâm có bán kính 18 cm và 11 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
-c) Một hình tròn bán kính 19 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
-d) Một hình tròn bán kính 11 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
+a) Một hình tròn bán kính 9 cm nội tiếp trong một hình vuông (hình tròn tiếp xúc cả bốn cạnh). Tính diện tích phần hình vuông nằm ngoài hình tròn (lấy π = 3,14).
+b) Một hình vuông cạnh 12 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
+c) Hai hình tròn đồng tâm có bán kính 10 cm và 4 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
+d) Một hình vuông cạnh 38 cm. Tính diện tích hình tròn có đường kính bằng cạnh hình vuông đó (lấy π = 3,14).
+e) Hai hình tròn đồng tâm có bán kính 7 cm và 3 cm. Tính diện tích phần nằm giữa hai đường tròn (lấy π = 3,14).
 
-### Bài 3. (3 điểm) Chữ số tận cùng của tích nhiều thừa số giống nhau
+### Bài 3. (3 điểm) Cắt, ghép hình và tỉ số diện tích
 
-Tìm quy luật rồi trả lời.
+Vẽ hình và tô phần cần tính trước khi làm.
 
-a) Tích của 9 thừa số đều bằng 2 có chữ số tận cùng là chữ số nào?
-b) Tích của 30 thừa số đều bằng 7 có chữ số tận cùng là chữ số nào?
-c) Tích của 42 thừa số đều bằng 7 có chữ số tận cùng là chữ số nào?
-d) Tích của 36 thừa số đều bằng 2 có chữ số tận cùng là chữ số nào?
-e) Tích của 51 thừa số đều bằng 7 có chữ số tận cùng là chữ số nào?
-f) Tích của 15 thừa số đều bằng 2 có chữ số tận cùng là chữ số nào?
+a) Hình chữ nhật có chiều dài 11 cm, chiều rộng 4 cm. Tính diện tích.
+b) Cắt hình ấy thành 2 phần bằng nhau. Mỗi phần có diện tích bao nhiêu?
+c) Nối trung điểm hai cạnh dài lại, hình bị chia thành hai phần. Mỗi phần có diện tích bao nhiêu?
+d) Nối một đỉnh với trung điểm cạnh đối diện, được một tam giác. Diện tích tam giác ấy bằng bao nhiêu phần diện tích hình chữ nhật?
+e) Diện tích tam giác ấy bằng bao nhiêu xăng-ti-mét vuông?
+f) Nếu ghép hai hình chữ nhật ấy theo chiều rộng thì hình mới có diện tích và chu vi bằng bao nhiêu?
 
-### Bài 4. (3 điểm) Cắt và ghép hình — chu vi thay đổi thế nào
+### Bài 4. (3 điểm) Dãy có hiệu tăng đều
 
-Chú ý các cạnh bị ghép vào bên trong.
+Dãy số bắt đầu bằng 4; hiệu giữa hai số hạng liên tiếp lần lượt là 3, 6, 9, 12, … (mỗi hiệu hơn hiệu trước 3 đơn vị).
 
-a) Ghép 4 hình vuông cạnh 9 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
-b) Ghép 4 hình vuông cạnh 7 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
-c) Ghép 3 hình vuông cạnh 14 cm thành một hàng ngang. Tính chu vi hình chữ nhật thu được.
-d) Ghép 9 hình vuông cạnh 15 cm thành một hình vuông lớn. Tính chu vi hình vuông lớn.
+a) Viết bốn số hạng đầu của dãy.
+b) Số hạng thứ 6 là số nào?
+c) Số hạng thứ 10 là số nào?
+d) Hiệu giữa số hạng thứ 10 và số hạng thứ 9 bằng bao nhiêu?
+e) Dãy các hiệu của dãy trên có phải dãy cách đều không? Khoảng cách bằng bao nhiêu?
+f) Tổng của bốn số hạng đầu bằng bao nhiêu?
 
-### Bài 5. (3 điểm) Dãy số lặp lại theo chu kì
+### Bài 5. (3 điểm) Diện tích và chu vi khi kích thước thay đổi — dạng đề chuyên
 
-Cho dãy lặp lại vô hạn theo nhóm: 6, 3, 4, 9, 6, 9, 6, 3, 4, 9, 6, 9, 6, …
+Trả lời bằng lập luận tỉ lệ, hạn chế tính số lớn.
 
-a) Số hạng thứ 346 của dãy là số nào?
-b) Số hạng thứ 153 của dãy là số nào?
-c) Số hạng thứ 421 của dãy là số nào?
-d) Số hạng thứ 71 của dãy là số nào?
-e) Số hạng thứ 434 của dãy là số nào?
-f) Số hạng thứ 379 của dãy là số nào?
-g) Tổng 100 số hạng đầu tiên bằng bao nhiêu?
+a) Hình chữ nhật có chiều dài 39 cm, chiều rộng 36 cm. Tính diện tích.
+b) Gấp chiều dài lên 3 lần, giữ nguyên chiều rộng. Diện tích mới gấp mấy lần?
+c) Gấp cả hai chiều lên 3 lần. Diện tích mới gấp mấy lần diện tích cũ?
+d) Diện tích mới khi gấp cả hai chiều bằng bao nhiêu?
+e) Chu vi mới khi gấp cả hai chiều gấp mấy lần chu vi cũ?
+f) Nếu giảm chiều rộng đi 5 cm và tăng chiều dài thêm 5 cm thì diện tích mới bằng bao nhiêu?
+g) Diện tích khi đó tăng hay giảm so với ban đầu, và chênh bao nhiêu?
 
 ---
 
@@ -333,164 +340,164 @@ g) Tổng 100 số hạng đầu tiên bằng bao nhiêu?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài I.1
-**Đáp số:** a) 620 000 · b) 2 400 · c) 630 000 · d) 500 · e) 7 100 · f) 5 100 · g) 7 500
-**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
-**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
-
-### Bài I.2
-**Đáp số:** a) 38 335 · b) 30 104 · c) 76 829 367 · d) 22 863 368 · e) 8 562 150
-**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
-
-### Bài I.3
-**Đáp số:** a) 130 cm · b) 232 cm · c) 1 444 cm² · d) 21 cm² · e) 30 cm
-**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
-**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
-
-### Bài I.4
-**Đáp số:** a) cạnh 55 cm, diện tích 3 025 cm² · b) 51 cm · c) 9 cm · d) cạnh 42 cm, diện tích 1 764 cm² · e) 3 cm
-**Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
-**Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
-
-### Bài I.5
-**Đáp số:** a) 16 · b) 100 · c) 30 · d) 16 cm · e) 16 cm²
+**Đáp số:** a) 10 · b) 45 · c) 14 · d) 14 cm · e) 10 cm²
 **Hướng giải:** Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
 **Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
 
+### Bài I.2
+**Đáp số:** a) 7 cm · b) cạnh 55 cm, diện tích 3 025 cm² · c) 58 cm · d) cạnh 18 cm, diện tích 324 cm² · e) 33 cm
+**Hướng giải:** Từ chu vi hình chữ nhật, chia đôi được nửa chu vi (chính là dài + rộng), rồi trừ đi chiều đã biết. Từ diện tích, chia cho một chiều được chiều kia. Từ chu vi hình vuông, chia 4 được cạnh.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chia chu vi cho **2** ra nửa chu vi — bước trung gian không được bỏ.
+**Lỗi thường gặp:** Trừ thẳng chiều dài khỏi chu vi mà chưa chia đôi. Phòng: Viết dòng “Nửa chu vi = …” trước khi trừ.
+
+### Bài I.3
+**Đáp số:** a) 1 000 · b) 8 400 · c) 7 900 · d) 6 200 · e) 240 000 · f) 630 000 · g) 500
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
+**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
+
+### Bài I.4
+**Đáp số:** a) góc nhọn · b) 2 cặp song song, 4 cặp vuông góc · c) lớn hơn · d) góc tù · e) 2 cặp song song, 4 cặp vuông góc · f) bé hơn
+**Hướng giải:** Chỉ cần hai mốc: 90° và 180°. Bé hơn 90° là nhọn, đúng 90° là vuông, giữa 90° và 180° là tù, đúng 180° là bẹt.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Hai mốc **90°** và **180°** chia hết các loại góc.
+**Lỗi thường gặp:** Gọi góc 90° là góc nhọn vì thấy “nhỏ”. Phòng: Áp ê ke vào góc trước khi gọi tên.
+
+### Bài I.5
+**Đáp số:** a) 1 369 cm² · b) 130 cm · c) 220 cm · d) 1 537 cm² · e) 104 cm
+**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
+**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+
 ### Bài II.1
-**Đáp số:** a) có · b) có · c) không, dư 2 · d) có · e) không, dư 3 · f) không, dư 2
-**Hướng giải:** Nếu hai số cùng chia hết cho một số thì tổng và hiệu của chúng cũng chia hết cho số đó. Nếu một số chia hết còn số kia dư r thì tổng cũng dư đúng r.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả.
-**Lỗi thường gặp:** Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. Phòng: Ghi số dư của từng số hạng ngay bên dưới nó.
+**Đáp số:** a) 6 mặt, 8 đỉnh, 12 cạnh · b) có ba kích thước bằng nhau, sáu mặt đều là hình vuông · c) 2 mặt đáy, đều là hình tròn bằng nhau · d) không có mặt đáy · e) 28 cm³ · f) 44 cm · g) 24 cm²
+**Hướng giải:** Nhớ bộ ba số của hình hộp chữ nhật: 6 mặt, 8 đỉnh, 12 cạnh. 12 cạnh chia thành ba nhóm, mỗi nhóm 4 cạnh bằng nhau, nên tổng độ dài các cạnh bằng 4 lần tổng ba kích thước.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: 12 cạnh = **4 nhóm ba kích thước**, nên nhân 4 chứ không nhân 12.
+**Lỗi thường gặp:** Nhân tổng ba kích thước với 12. Phòng: Đếm cạnh theo nhóm: 4 cạnh dài, 4 cạnh rộng, 4 cạnh cao.
 
 ### Bài II.2
-**Đáp số:** a) 288 cm² · b) 240 cm² · c) 156 cm² · d) 525 cm² · e) 255 cm² · f) 390 cm² · g) 156 cm²
+**Đáp số:** a) 435 cm² · b) 266 cm² · c) 60 cm² · d) 609 cm²
 **Hướng giải:** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
 **Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
 
 ### Bài II.3
-**Đáp số:** a) 48 m · b) 226 m · c) 36 cây · d) 93 cây · e) 63 cây
+**Đáp số:** a) hai hình bằng nhau · b) 22 cm · c) 16 cm · d) 64 cm · e) 13 cm
+**Hướng giải:** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
+**Lỗi thường gặp:** So bán kính của hình này với đường kính của hình kia. Phòng: Đổi hết về bán kính trước khi so sánh.
+
+### Bài II.4
+**Đáp số:** a) 104 m · b) 21 viên (làm tròn lên) · c) không chia hết (90 m không chia hết cho 4 m) · d) 33 cây · e) 186 m · f) 108 viên (làm tròn lên)
 **Hướng giải:** Rào xung quanh, trồng cây quanh mảnh đất là bài toán **chu vi**. Lát gạch, trải thảm, gieo hạt khắp mặt đất là bài toán **diện tích**. Số viên gạch = diện tích nền : diện tích một viên.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: “Xung quanh” → chu vi; “khắp mặt” → diện tích.
 **Lỗi thường gặp:** Lấy chu vi để tính số gạch lát nền. Phòng: Gạch chân từ khoá chỉ vị trí: xung quanh, bao quanh, khắp, phủ kín.
 
-### Bài II.4
-**Đáp số:** a) 525 cm² · b) 364 cm² · c) 486 cm² · d) 644 cm²
+### Bài II.5
+**Đáp số:** a) 455 cm² · b) 540 cm² · c) 590 cm² · d) 234 cm² · e) 234 cm²
 **Hướng giải:** Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao : 2. Cách nhớ: ghép hai hình thang bằng nhau thành một hình bình hành có đáy bằng tổng hai đáy, nên phải chia đôi.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng **hai đáy** trước rồi mới nhân chiều cao và chia 2.
 **Lỗi thường gặp:** Nhân riêng từng đáy với chiều cao rồi cộng, quên chia 2. Phòng: Viết công thức đầy đủ ra trước khi thay số.
 
-### Bài II.5
-**Đáp số:** a) 288 nghìn đồng · b) 1 110 nghìn đồng · c) 10 quyển · d) 1 653 nghìn đồng · e) 138 nghìn đồng · f) 1 702 nghìn đồng
-**Hướng giải:** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
-**Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
-
 ### Bài III.1
-**Đáp số:** a) 4 cm · b) 81,64 cm · c) 18,84 cm · d) 1 808,64 cm² · e) 169,56 cm · f) 12,56 cm
-**Hướng giải:** Chu vi hình tròn = đường kính × 3,14 = bán kính × 2 × 3,14. Diện tích hình tròn = bán kính × bán kính × 3,14. Đường kính gấp đôi bán kính.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**.
-**Lỗi thường gặp:** Lấy đường kính nhân đường kính khi tính diện tích. Phòng: Ghi rõ r = … và d = … lên hình trước khi thay số.
+**Đáp số:** a) tổ Ba: 37 cây, nhóm Sao Mai: 111 cây · b) tổ Ba: 145 cây, nhóm Hoa Phượng: 174 cây · c) nhóm Hoa Phượng: 103 cây, tổ Một: 721 cây · d) nhóm Sao Mai: 475 cây, tổ Một: 665 cây
+**Hướng giải:** Tỉ số cho biết số phần bằng nhau của mỗi đại lượng. Tổng số phần = số phần thứ nhất + số phần thứ hai. Giá trị một phần = tổng : tổng số phần. Nhân giá trị một phần với số phần của từng đại lượng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Phải tính **tổng số phần** trước khi chia.
+**Lỗi thường gặp:** Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. Phòng: Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng.
 
 ### Bài III.2
-**Đáp số:** a) 1 · b) 1 · c) 1 · d) 1 · e) 1 · f) 1
-**Hướng giải:** Quan sát trước khi tính: các phân số cùng mẫu số cộng lại có thể bằng đúng 1; một phân số nhân với phân số đảo ngược của nó bằng 1. Nhận ra được thì không phải quy đồng.
-**Nhãn tư duy:** TD5, TD3. Điểm chốt: Nhìn xem **tổng các tử số** có bằng mẫu số chung không.
-**Lỗi thường gặp:** Quy đồng ngay lập tức mà không quan sát, làm dài dòng. Phòng: Cộng nhẩm các tử số trước rồi so với mẫu số.
+**Đáp số:** a) x = 16 · b) x = 107 · c) x = 64 · d) x = 9 · e) x = 64
+**Hướng giải:** Gỡ dần từ ngoài vào trong: xác định phép tính ngoài cùng, coi phần còn lại là một số, tìm giá trị của nó, rồi lặp lại cho tới khi x đứng riêng.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Mỗi bước chỉ gỡ **một** phép tính, đừng gỡ hai phép cùng lúc.
+**Lỗi thường gặp:** Nhân phá ngoặc sai dấu, hoặc gỡ phép trong ngoặc trước. Phòng: Ghi rõ từng bước trên một dòng riêng, mỗi dòng chỉ khác dòng trên một phép.
 
 ### Bài III.3
-**Đáp số:** a) 6 · b) 3 · c) 6 · d) 4 · e) 10
+**Đáp số:** a) 15 · b) 5 · c) 15 · d) 6 · e) 21
 **Hướng giải:** Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
 **Lỗi thường gặp:** Chỉ đếm tam giác nhỏ, quên các tam giác ghép. Phòng: Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự.
 
 ### Bài III.4
-**Đáp số:** a) 25 số, bé nhất là 270 · b) 30 số, bé nhất là 198 · c) 6 số, bé nhất là 180 · d) 59 số, bé nhất là 195 · e) 4 số, bé nhất là 135
-**Hướng giải:** Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
-**Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
+**Đáp số:** a) 314 cm² · b) 100,48 cm · c) 37,68 cm · d) 19 cm · e) 144,44 cm · f) 169,56 cm · g) 4 cm
+**Hướng giải:** Chu vi hình tròn = đường kính × 3,14 = bán kính × 2 × 3,14. Diện tích hình tròn = bán kính × bán kính × 3,14. Đường kính gấp đôi bán kính.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi dùng **đường kính**, diện tích dùng **bán kính nhân bán kính**.
+**Lỗi thường gặp:** Lấy đường kính nhân đường kính khi tính diện tích. Phòng: Ghi rõ r = … và d = … lên hình trước khi thay số.
 
 ### Bài III.5
-**Đáp số:** a) 544 cm² · b) 628 cm² · c) 150 cm³ · d) thể tích 3 375 cm³, diện tích toàn phần 1 350 cm² · e) 468 cm³
+**Đáp số:** a) thể tích 125 cm³, diện tích toàn phần 150 cm² · b) 132 cm² · c) 224 cm³ · d) 404 cm² · e) 2 448 cm³ · f) 168 cm²
 **Hướng giải:** Thể tích hình hộp chữ nhật = dài × rộng × cao. Diện tích xung quanh = chu vi đáy × chiều cao. Diện tích toàn phần = diện tích xung quanh + 2 lần diện tích đáy. Hình lập phương là hình hộp có ba kích thước bằng nhau.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Diện tích **xung quanh** không tính hai mặt đáy; **toàn phần** thì có.
 **Lỗi thường gặp:** Cộng thiếu một mặt đáy khi tính diện tích toàn phần. Phòng: Đếm đủ 6 mặt của hình hộp trước khi cộng.
 
 ### Bài IV.1
-**Đáp số:** a) 1 000 · b) 638 · c) 396 · d) 99 · e) 763
-**Hướng giải:** BẪY — Bên trái hay bên phải. Viết số có ba chữ số dạng **a × 100 + b × 10 + c**. Xoá chữ số hàng trăm là bớt đi a × 100. Viết thêm chữ số 1 vào bên trái một số có ba chữ số là cộng thêm 1 000. Đổi chỗ hàng trăm với hàng đơn vị làm số thay đổi 99 lần hiệu hai chữ số đó.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Thêm chữ số vào **bên trái** là cộng thêm; thêm vào **bên phải** là nhân 10 rồi cộng.
-**Lỗi thường gặp:** Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. Phòng: Viết cả số cũ và số mới ra rồi mới so sánh.
-**Gợi ý 3 tầng:** (1) Viết số theo cấu tạo a × 100 + b × 10 + c. — (2) Viết số mới cũng theo cấu tạo như vậy. — (3) Trừ hai biểu thức, các phần giống nhau triệt tiêu.
-
-### Bài IV.2
 **Đáp số:** a) 0 · b) 0 · c) 0 · d) 0 · e) 0
 **Hướng giải:** BẪY — Biểu thức lớn nhưng kết quả bằng 0. Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
 **Lỗi thường gặp:** Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. Phòng: Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau.
 **Gợi ý 3 tầng:** (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
 
-### Bài IV.3
-**Đáp số:** a) 24 · b) 12 · c) 0 · d) 0 · e) 643 và 134 · f) 777
-**Hướng giải:** BẪY — Chữ số 0 ở hàng trăm. Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
-**Lỗi thường gặp:** Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. Phòng: Viết rõ thứ tự chọn hàng trước khi nhân các số cách.
-**Gợi ý 3 tầng:** (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
-
-### Bài IV.4
-**Đáp số:** a) 54 cm² · b) 108 cm² · c) 92 cm² · d) 184 cm² · e) 235 cm²
-**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
-**Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
-**Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
-
-### Bài IV.5
-**Đáp số:** a) 990 cm² · b) 325 cm² · c) 2 lần · d) 66 cm²
+### Bài IV.2
+**Đáp số:** a) 120 cm² · b) 270 cm² · c) 2 lần · d) 70 cm²
 **Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Tăng một chiều thêm k đơn vị thì diện tích tăng thêm đúng một hình chữ nhật có kích thước k × chiều còn lại. Tăng cả hai chiều thì phần tăng gồm ba mảnh: hai dải và một hình vuông ở góc — nên **không** bằng tích của hai phần tăng.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần tăng gồm **ba mảnh**, không phải một.
 **Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là phần diện tích tăng thêm. Phòng: Vẽ hình chữ nhật cũ nằm trong hình mới, tô phần dôi ra.
 **Gợi ý 3 tầng:** (1) Vẽ hình cũ và hình mới chồng lên nhau. — (2) Phần dôi ra gồm mấy mảnh? — (3) Tính diện tích từng mảnh rồi cộng.
 
+### Bài IV.3
+**Đáp số:** a) 84 m · b) 432 m² · c) 16,8 giây · d) 108 m² · e) 12 m · f) 720 m² · g) 288 m²
+**Hướng giải:** BẪY — Phần tăng gồm ba mảnh. Đi một vòng quanh hình là đi hết **chu vi**. Tăng một chiều thì phần diện tích dôi ra là một hình chữ nhật có kích thước bằng phần tăng nhân chiều còn lại. Tăng cả hai chiều thì phần dôi gồm **ba mảnh**.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Tăng cả hai chiều thì phần dôi ra **không phải** tích của hai phần tăng.
+**Lỗi thường gặp:** Nhân hai lượng tăng với nhau rồi coi đó là diện tích tăng thêm. Phòng: Vẽ hình cũ nằm trong hình mới rồi tô phần dôi ra.
+**Gợi ý 3 tầng:** (1) Đi một vòng là đi hết đại lượng nào? — (2) Phần diện tích dôi ra có hình dạng gì? — (3) Tăng cả hai chiều thì phần dôi gồm mấy mảnh?
+
+### Bài IV.4
+**Đáp số:** a) 64 · b) 8 · c) 24 · d) 24 · e) 8 · f) có, 8 + 24 + 24 + 8 = 64
+**Hướng giải:** BẪY — Đếm trùng khối ở đỉnh và ở cạnh. Phân loại khối nhỏ theo **vị trí**: ở đỉnh sơn 3 mặt, ở cạnh sơn 2 mặt, ở giữa mặt sơn 1 mặt, ở trong lõi không sơn. Bốn loại cộng lại phải đúng bằng tổng số khối — đó là cách tự kiểm tra.
+**Nhãn tư duy:** TD6, TD4. Điểm chốt: Phân loại theo vị trí, và **cộng bốn loại lại để thử**.
+**Lỗi thường gặp:** Đếm cả khối ở đỉnh vào nhóm khối ở cạnh, thành ra đếm trùng. Phòng: Trừ hai đầu mỗi cạnh khi đếm khối sơn 2 mặt.
+**Gợi ý 3 tầng:** (1) Khối ở đỉnh có mấy mặt lộ ra ngoài? — (2) Mỗi cạnh có bao nhiêu khối không nằm ở đỉnh? — (3) Cộng bốn loại lại xem có bằng tổng số khối không.
+
+### Bài IV.5
+**Đáp số:** a) 31 cm² · b) 60 cm² · c) 104 cm² · d) 104 cm² · e) 20 cm² · f) 126 cm²
+**Hướng giải:** Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
+**Lỗi thường gặp:** Đi tìm chiều cao cụ thể trong khi đề không cho. Phòng: Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào?
+**Gợi ý 3 tầng:** (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
+
 ### Bài V.1
-**Đáp số:** a) 8,31 ngày · b) 4,57 ngày · c) 9 ngày · d) 4,86 ngày · e) 0,92 ngày
-**Hướng giải:** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Đại lượng bất biến ở đây là **tổng số ngày công**.
-**Lỗi thường gặp:** Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. Phòng: Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .
-**Gợi ý 3 tầng:** (1) Tổng số ngày công là bao nhiêu? — (2) Với số người mới thì cần bao nhiêu ngày? — (3) Lấy số ngày cũ trừ số ngày mới.
+**Đáp số:** a) 160 cm · b) 48 cm · c) 78 cm · d) 72 cm · e) 96 cm · f) 210 cm
+**Hướng giải:** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
+**Lỗi thường gặp:** Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính.
+**Gợi ý 3 tầng:** (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
 
 ### Bài V.2
-**Đáp số:** a) 12,56 cm² · b) 637,42 cm² · c) 310,46 cm² · d) 104,06 cm²
+**Đáp số:** a) 69,66 cm² · b) 113,04 cm² · c) 263,76 cm² · d) 1 133,54 cm² · e) 125,6 cm²
 **Hướng giải:** Diện tích phần tô màu = diện tích hình lớn − diện tích hình bị khoét. Bước quan trọng nhất là nhận ra hình lớn và hình bị khoét là những hình nào, và tìm đúng kích thước của chúng từ dữ kiện đề cho.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Đọc quan hệ hình học để suy ra kích thước: hình tròn nội tiếp hình vuông thì **đường kính bằng cạnh hình vuông**.
 **Lỗi thường gặp:** Lấy bán kính hình tròn làm cạnh hình vuông. Phòng: Vẽ lại hình, ghi số đo lên hình trước khi tính.
 **Gợi ý 3 tầng:** (1) Phần tô màu là hiệu của những hình nào? — (2) Kích thước của hình lớn suy từ đâu? — (3) Tính từng diện tích rồi trừ.
 
 ### Bài V.3
-**Đáp số:** a) 2 · b) 9 · c) 9 · d) 6 · e) 3 · f) 8
-**Hướng giải:** Viết chữ số tận cùng của các tích 1 thừa số, 2 thừa số, 3 thừa số… Dãy chữ số tận cùng lặp lại tuần hoàn với chu kì không quá 4. Lấy số thừa số chia cho độ dài chu kì, số dư cho biết vị trí trong chu kì.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chu kì lặp lại của chữ số tận cùng dài **không quá 4**.
-**Lỗi thường gặp:** Chia lấy dư rồi quên rằng số dư 0 ứng với **số cuối** của chu kì. Phòng: Đánh số vị trí trong chu kì từ 1, và quy ước dư 0 là vị trí cuối.
-**Gợi ý 3 tầng:** (1) Viết chữ số tận cùng của vài tích đầu tiên. — (2) Dãy đó lặp lại sau mấy bước? — (3) Chia số thừa số cho độ dài chu kì và xét số dư.
+**Đáp số:** a) 44 cm² · b) 22 cm² · c) 22 cm² · d) 1 phần 4 · e) 11 cm² · f) diện tích 88 cm², chu vi 38 cm
+**Hướng giải:** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Ghép hình: **diện tích cộng, chu vi không cộng**.
+**Lỗi thường gặp:** Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính chu vi.
+**Gợi ý 3 tầng:** (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?
 
 ### Bài V.4
-**Đáp số:** a) 72 cm · b) 56 cm · c) 112 cm · d) 180 cm
-**Hướng giải:** Khi ghép hai hình lại, các cạnh dán vào nhau **không còn nằm trên đường bao** nên không tính vào chu vi. Ngược lại, khi cắt một hình thành hai phần thì xuất hiện thêm hai cạnh mới trên đường bao, nên tổng chu vi tăng lên đúng hai lần đường cắt.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích giữ nguyên khi cắt ghép, nhưng **chu vi thay đổi**.
-**Lỗi thường gặp:** Cộng chu vi các hình nhỏ lại rồi coi đó là chu vi hình ghép. Phòng: Tô đậm đường bao của hình mới rồi mới tính.
-**Gợi ý 3 tầng:** (1) Vẽ hình sau khi ghép hoặc cắt. — (2) Đường bao của hình mới gồm những cạnh nào? — (3) Cạnh nào bị dán vào trong thì không tính.
+**Đáp số:** a) 4, 7, 13, 22 · b) 49 · c) 139 · d) 27 · e) có, khoảng cách 3 · f) 46
+**Hướng giải:** Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**.
+**Lỗi thường gặp:** Cộng n hiệu thay vì (n − 1) hiệu. Phòng: Kiểm chứng với n = 2: chỉ cộng đúng một hiệu.
+**Gợi ý 3 tầng:** (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.
 
 ### Bài V.5
-**Đáp số:** a) 9 · b) 4 · c) 6 · d) 6 · e) 3 · f) 6 · g) 614
-**Hướng giải:** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
-**Lỗi thường gặp:** Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. Phòng: Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn.
-**Gợi ý 3 tầng:** (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
+**Đáp số:** a) 1 404 cm² · b) 3 lần · c) 9 lần · d) 12 636 cm² · e) 3 lần · f) 1 364 cm² · g) giảm 40 cm²
+**Hướng giải:** Diện tích là **tích** hai chiều nên gấp cả hai chiều lên k lần thì diện tích gấp k × k lần. Chu vi là **tổng** nên chỉ gấp k lần. Khi một chiều tăng và chiều kia giảm cùng một lượng, phải tính ra mới biết diện tích tăng hay giảm.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Diện tích gấp **k × k** lần, chu vi chỉ gấp **k** lần.
+**Lỗi thường gặp:** Cho rằng gấp đôi hai chiều thì diện tích cũng chỉ gấp đôi. Phòng: Thử với hình 1 × 1 và 2 × 2 để thấy diện tích gấp 4 lần.
+**Gợi ý 3 tầng:** (1) Diện tích là tích hay tổng hai chiều? — (2) Gấp mỗi chiều lên k lần thì tích gấp mấy lần? — (3) Chu vi là tổng nên gấp bao nhiêu lần?
 
 ---
 

@@ -43,18 +43,34 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L3-C13-DB-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Bảng đơn vị đo lớp 3
-> 2. Nhân, trừ; đơn vị khối lượng
-> 3. Quan hệ giờ – phút – giây
-> 4. Phép chia hết và chia có dư; đơn vị khối lượng
+> 1. Bảng đơn vị khối lượng
+> 2. Bảng đơn vị đo lớp 3
+> 3. Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam
+> 4. Quan hệ giờ – phút – giây
 
 ---
 
 ## PHẦN A — SƠ ĐỒ TƯ DUY DẠNG BÀI · Mức M1 — Nhận biết · 10 phút · 10 điểm
 
-### Bài 1. (2 điểm) Bảng tổng quát các dạng bài của chương
+### Bài 1. (2 điểm) Cây quyết định đọc vị và bảng tổng quát dạng bài
 
-Kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp. Điền cột thứ nhất.
+Đọc cây quyết định của nhóm **E — Đại lượng – Đo lường – Thời gian** dưới đây, dừng ở câu hỏi đầu tiên trả lời ĐÚNG. Bản đầy đủ ở `10-so-do-doc-vi/so-do-E-L3.md`.
+
+```
+ĐỌC ĐỀ → Đề có đơn vị đo — mét, ki-lô-gam, lít, giờ, đồng?
+1. Hai vế của đề dùng hai đơn vị khác nhau?
+     ĐÚNG → Đổi về cùng đơn vị trước, rồi mới tính hoặc so sánh
+2. Đơn vị có mũ hai (m², cm², ha) hay mũ ba (m³, cm³, lít)?
+     ĐÚNG → Nhớ bậc nhảy: độ dài 10, diện tích 100, thể tích 1 000
+3. Đề nói về giờ, phút, giây, hoặc ngày tháng?
+     ĐÚNG → Cơ số 60 và chu kì 7: đổi hết về phút rồi tính, cuối cùng đổi lại
+4. Đề có tiền, giá, chiết khấu, thuế?
+     ĐÚNG → Tính tiền hàng trước; mỗi lần phần trăm phải xác định lại mốc 100%
+5. Đề có vận tốc kèm đơn vị km/giờ hay m/giây?
+     ĐÚNG → s = v × t; kiểm tra ba đơn vị có khớp nhau không
+```
+
+Sau đó kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp, rồi điền cột thứ nhất.
 
 a) Dạng bài thứ 1 của chương?
 b) Dạng bài thứ 2 của chương?
@@ -66,217 +82,217 @@ d) Dạng bài thứ 4 của chương?
 Với mỗi dạng bài dưới đây, điền cột **Dấu hiệu nhận biết** của bảng.
 
 a) Dạng “Bài toán đại lượng hai bước” — dấu hiệu nhận biết?
-b) Dạng “Số đo có nhiều đơn vị” — dấu hiệu nhận biết?
-c) Dạng “Bài toán cân, chia hết” — dấu hiệu nhận biết?
-d) Dạng “Tính thời gian trong ngày” — dấu hiệu nhận biết?
-e) Dạng “Đổi đơn vị đo” — dấu hiệu nhận biết?
+b) Dạng “Đổi đơn vị đo” — dấu hiệu nhận biết?
+c) Dạng “Thời gian biểu, cộng thời gian” — dấu hiệu nhận biết?
+d) Dạng “Bài toán tiền tệ hai bước” — dấu hiệu nhận biết?
+e) Dạng “Đổi và so sánh đơn vị dung tích” — dấu hiệu nhận biết?
 
 ### Bài 3. (2 điểm) Điền cột “Phương pháp áp dụng”
 
 Với mỗi dạng bài dưới đây, điền cột **Phương pháp áp dụng** của bảng.
 
-a) Dạng “Bài toán cân, chia hết” — phương pháp áp dụng?
-b) Dạng “Tính thời gian trong ngày” — phương pháp áp dụng?
-c) Dạng “Đổi đơn vị đo” — phương pháp áp dụng?
-d) Dạng “Đổi đơn vị đo” — phương pháp áp dụng?
+a) Dạng “Thời gian biểu, cộng thời gian” — phương pháp áp dụng?
+b) Dạng “Bài toán tiền tệ hai bước” — phương pháp áp dụng?
+c) Dạng “Đổi và so sánh đơn vị dung tích” — phương pháp áp dụng?
+d) Dạng “Bài toán cân, chia hết” — phương pháp áp dụng?
 e) Dạng “Đổi và tính toán với đơn vị thời gian” — phương pháp áp dụng?
 
 ### Bài 4. (2 điểm) Điền cột “Kiến thức phải thuộc”
 
 Với mỗi dạng bài dưới đây, điền cột **Kiến thức phải thuộc** của bảng.
 
-a) Dạng “Đổi đơn vị đo” — kiến thức phải thuộc?
-b) Dạng “Đổi đơn vị đo” — kiến thức phải thuộc?
+a) Dạng “Đổi và so sánh đơn vị dung tích” — kiến thức phải thuộc?
+b) Dạng “Bài toán cân, chia hết” — kiến thức phải thuộc?
 c) Dạng “Đổi và tính toán với đơn vị thời gian” — kiến thức phải thuộc?
-d) Dạng “Bài toán đại lượng hai bước” — kiến thức phải thuộc?
-e) Dạng “Số đo có nhiều đơn vị” — kiến thức phải thuộc?
+d) Dạng “Bài toán đại lượng nhiều bước” — kiến thức phải thuộc?
+e) Dạng “Tính thời gian trong ngày” — kiến thức phải thuộc?
 
 ### Bài 5. (2 điểm) Điền cột “Cách xử lý nhanh nhất”
 
 Với mỗi dạng bài dưới đây, điền cột **Cách xử lý nhanh nhất** của bảng.
 
 a) Dạng “Đổi và tính toán với đơn vị thời gian” — cách xử lý nhanh nhất?
-b) Dạng “Bài toán đại lượng hai bước” — cách xử lý nhanh nhất?
-c) Dạng “Số đo có nhiều đơn vị” — cách xử lý nhanh nhất?
-d) Dạng “Bài toán cân, chia hết” — cách xử lý nhanh nhất?
-e) Dạng “Tính thời gian trong ngày” — cách xử lý nhanh nhất?
+b) Dạng “Bài toán đại lượng nhiều bước” — cách xử lý nhanh nhất?
+c) Dạng “Tính thời gian trong ngày” — cách xử lý nhanh nhất?
+d) Dạng “Lịch, tháng, năm nhuận” — cách xử lý nhanh nhất?
+e) Dạng “Số đo có nhiều đơn vị” — cách xử lý nhanh nhất?
 
 ---
 
 ## PHẦN B — DẠNG 1 – DẠNG 2 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đổi đơn vị đo ở lớp 3
+### Bài 1. (5 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
+
+Tính và ghi rõ đơn vị.
+
+a) Hình vuông cạnh 25 cm. Tính diện tích.
+b) Hình chữ nhật dài 16 cm, rộng 5 cm. Tính chu vi.
+c) Hình chữ nhật dài 9 cm, rộng 3 cm. Tính diện tích.
+d) Hình vuông cạnh 29 cm. Tính chu vi.
+e) Hình chữ nhật dài 32 cm, rộng 16 cm. Tính diện tích.
+f) Hình chữ nhật dài 25 cm, rộng 4 cm. Tính chu vi.
+g) Hình vuông cạnh 17 cm. Tính chu vi.
+h) Hình vuông cạnh 7 cm. Tính diện tích.
+
+### Bài 2. (5 điểm) Tiền Việt Nam: mua bán, đổi tiền, trả lại
+
+Ghi rõ đơn vị đồng ở mọi kết quả.
+
+a) Đổi một tờ 10 000 đồng ra các tờ 2 000 đồng thì được mấy tờ?
+b) Mua 3 quyển vở, mỗi quyển 12 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+c) Mua 4 quyển vở, mỗi quyển 15 000 đồng. Hết bao nhiêu tiền?
+d) Mua 3 quyển vở, mỗi quyển 12 000 đồng. Hết bao nhiêu tiền?
+e) Đổi một tờ 10 000 đồng ra các tờ 1 000 đồng thì được mấy tờ?
+
+### Bài 3. (5 điểm) Đổi đơn vị đo ở lớp 3
 
 Điền số thích hợp.
 
-a) 44 km = … m
-b) 81 m = … cm
-c) 9 kg = … g
-d) 72 l = … ml
-e) 26 cm = … mm
-f) 30 cm = … mm
-g) 58 kg = … g
-h) 87 m = … cm
+a) 7 kg = … g
+b) 45 cm = … mm
+c) 12 l = … ml
+d) 69 m = … cm
+e) 11 km = … m
+f) 47 l = … ml
 
-### Bài 2. (5 điểm) Đếm số cách chọn bằng quy tắc nhân
+### Bài 4. (5 điểm) Đếm số cách chọn bằng quy tắc nhân
 
 Vẽ sơ đồ cây rồi đếm.
 
-a) Có 4 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-b) Có 5 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-c) Có 3 loại bánh và 5 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-d) Có 2 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-e) Có 2 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-f) Có 3 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+a) Có 4 loại bánh và 6 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+b) Có 5 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+c) Có 3 loại bánh và 6 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+d) Có 6 loại bánh và 5 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+e) Có 6 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
 
-### Bài 3. (5 điểm) Tính nhanh bằng cách ghép số tròn
-
-Tính bằng cách thuận tiện nhất.
-
-a) 61 + 273 + 39
-b) 70 + 56 − 56
-c) 52 + 277 + 48
-d) 21 + 160 + 79
-
-### Bài 4. (5 điểm) Trung bình cộng trong tình huống thực tế
+### Bài 5. (5 điểm) Trung bình cộng trong tình huống thực tế
 
 Giải từng bài toán nhỏ.
 
-a) 5 ngày đầu tuần một cửa hàng bán được lần lượt 90, 98, 106, 91, 105 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) Trung bình mỗi ngày cửa hàng bán được 55 kg gạo. 4 ngày đầu bán được 43, 64, 59, 55 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-c) 5 ngày đầu tuần một cửa hàng bán được lần lượt 18, 34, 28, 32, 23 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-d) Trung bình mỗi ngày bán được 227 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
-e) 4 ngày đầu tuần một cửa hàng bán được lần lượt 98, 114, 120, 104 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-f) 3 ngày đầu tuần một cửa hàng bán được lần lượt 92, 90, 94 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-
-### Bài 5. (5 điểm) Đọc bảng số liệu
-
-Bảng ghi số bông hoa mỗi bạn gấp được: Lan: 14 · Bình: 25 · Khánh: 6 · Thảo: 23.
-
-a) Cả bốn bạn gấp được bao nhiêu bông hoa?
-b) Bạn nào gấp được nhiều nhất?
-c) Bạn nào gấp được ít nhất?
-d) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu bông?
-e) Nếu bốn bạn khác gấp được 25, 6, 10, 27 bông thì trung bình mỗi bạn gấp được bao nhiêu bông?
+a) Trung bình mỗi ngày bán được 89 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+b) Trung bình mỗi ngày bán được 185 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+c) Trung bình mỗi ngày bán được 86 kg gạo. Hỏi 5 ngày bán được tất cả bao nhiêu ki-lô-gam?
+d) Trung bình mỗi ngày bán được 20 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
+e) 6 ngày đầu tuần một cửa hàng bán được lần lượt 224, 242, 242, 239, 236, 233 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
 
 ---
 
 ## PHẦN C — DẠNG 3 – DẠNG 4 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Phép chia có dư
-
-Thực hiện phép chia, ghi rõ thương và số dư.
-
-a) 1 286 : 7 = ? (dư ?)
-b) 2 798 : 8 = ? (dư ?)
-c) 271 : 3 = ? (dư ?)
-d) 556 : 3 = ? (dư ?)
-e) 2 540 : 9 = ? (dư ?)
-f) 453 : 5 = ? (dư ?)
-
-### Bài 2. (5 điểm) Đổi đơn vị đo ở lớp 3
-
-Điền số thích hợp.
-
-a) 78 m = … cm
-b) 28 l = … ml
-c) 3 cm = … mm
-d) 76 kg = … g
-e) 11 km = … m
-f) 78 l = … ml
-g) 16 km = … m
-h) 24 m = … cm
-
-### Bài 3. (5 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
-
-Tính và ghi rõ đơn vị.
-
-a) Hình chữ nhật dài 39 cm, rộng 10 cm. Tính chu vi.
-b) Hình vuông cạnh 30 cm. Tính diện tích.
-c) Hình vuông cạnh 37 cm. Tính chu vi.
-d) Hình chữ nhật dài 24 cm, rộng 9 cm. Tính diện tích.
-e) Hình vuông cạnh 9 cm. Tính diện tích.
-f) Hình chữ nhật dài 28 cm, rộng 25 cm. Tính diện tích.
-g) Hình vuông cạnh 21 cm. Tính chu vi.
-h) Hình chữ nhật dài 29 cm, rộng 27 cm. Tính chu vi.
-
-### Bài 4. (5 điểm) Bài toán tổng – hiệu có lời văn
-
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
-
-a) Kho B và trang trại chứa tất cả 414 kg phân bón. Kho B chứa nhiều hơn trang trại 134 kg. Mỗi nơi chứa bao nhiêu kg?
-b) Hai lớp 5B và 4B có tất cả 396 quyển sách. Lớp 5B có nhiều hơn lớp 4B 90 quyển. Mỗi lớp có bao nhiêu quyển?
-c) Tổ Hai và nhóm Hoa Phượng trồng được 874 cây. Tổ Hai trồng nhiều hơn nhóm Hoa Phượng 244 cây. Mỗi tổ trồng bao nhiêu cây?
-d) Hai lớp 5B và 3B có tất cả 306 quyển sách. Lớp 5B có nhiều hơn lớp 3B 96 quyển. Mỗi lớp có bao nhiêu quyển?
-e) Đội Một và nhóm Sao Mai trồng được 898 cây. Đội Một trồng nhiều hơn nhóm Sao Mai 194 cây. Mỗi tổ trồng bao nhiêu cây?
-
-### Bài 5. (5 điểm) Đếm số hạng của dãy cách đều
+### Bài 1. (5 điểm) Đếm số hạng của dãy cách đều
 
 Đếm số số hạng của mỗi dãy.
 
-a) Dãy 1, 4, 7, …, 112 có bao nhiêu số hạng?
-b) Dãy 13, 16, 19, …, 52 có bao nhiêu số hạng?
-c) Dãy 6, 10, 14, …, 130 có bao nhiêu số hạng?
-d) Dãy 13, 18, 23, …, 188 có bao nhiêu số hạng?
-e) Dãy 14, 24, 34, …, 164 có bao nhiêu số hạng?
-f) Dãy 7, 10, 13, …, 112 có bao nhiêu số hạng?
-g) Dãy 14, 24, 34, …, 244 có bao nhiêu số hạng?
+a) Dãy 4, 8, 12, …, 144 có bao nhiêu số hạng?
+b) Dãy 6, 8, 10, …, 50 có bao nhiêu số hạng?
+c) Dãy 17, 20, 23, …, 32 có bao nhiêu số hạng?
+d) Dãy 20, 23, 26, …, 89 có bao nhiêu số hạng?
+e) Dãy 17, 19, 21, …, 31 có bao nhiêu số hạng?
+f) Dãy 3, 7, 11, …, 99 có bao nhiêu số hạng?
+g) Dãy 2, 6, 10, …, 126 có bao nhiêu số hạng?
+
+### Bài 2. (5 điểm) Tổng – hiệu bằng sơ đồ đoạn thẳng
+
+Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
+
+a) Hùng và Dũng có tất cả 22 viên bi. Hùng có nhiều hơn Dũng 8 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Quân và Vy có tất cả 118 viên bi. Quân có nhiều hơn Vy 28 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Quân và Sơn có tất cả 64 viên bi. Quân có nhiều hơn Sơn 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Sơn và Minh có tất cả 96 viên bi. Sơn có nhiều hơn Minh 30 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+e) Khánh và Đức có tất cả 198 viên bi. Khánh có nhiều hơn Đức 42 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+f) Khánh và Phúc có tất cả 46 viên bi. Khánh có nhiều hơn Phúc 14 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+
+### Bài 3. (5 điểm) Đọc và lập biểu đồ tranh
+
+Biểu đồ tranh số quyển sách của bốn bạn — mỗi hình ● ứng với **10 quyển sách**:
+
+Thảo: ●●●●● · Hùng: ●●●●●●● · Chi: ●●● · Quân: ●●●●●●●
+
+a) Mỗi hình ● ứng với 10 quyển sách. Bạn Thảo có bao nhiêu quyển sách?
+b) Bạn Hùng có bao nhiêu quyển sách?
+c) Cả bốn bạn có tất cả bao nhiêu quyển sách?
+d) Bạn nào có nhiều quyển sách nhất?
+e) Bạn nào có ít quyển sách nhất?
+f) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu quyển sách?
+g) Nếu một bạn có 60 quyển sách thì phải vẽ mấy hình ●?
+
+### Bài 4. (5 điểm) Chia kẹo — chia hết và chia có dư
+
+Ghi rõ thương và số dư trong mọi câu trả lời.
+
+a) Có 83 cái kẹo chia đều cho 10 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
+c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
+d) Nếu thêm 7 cái thì mỗi bạn được mấy cái?
+e) Nếu chỉ chia cho 9 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
+f) Số kẹo phải là số như thế nào để chia hết cho 10 bạn?
+
+### Bài 5. (5 điểm) Tính nhanh bằng cách ghép số tròn
+
+Tính bằng cách thuận tiện nhất.
+
+a) 178 + 24 − 24
+b) 15 + 127 + 85
+c) 177 + 74 − 74
+d) 239 + 22 − 22
+e) 244 + 22 − 22
+f) 310 + 67 − 67
 
 ---
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Lập số có ba chữ số khác nhau
+### Bài 1. (4 điểm) Dấu hiệu chia hết cho 2, 3, 5, 9
 
-Cho ba chữ số **1, 4, 6**.
+Không đặt tính chia, chỉ dùng dấu hiệu.
 
-a) Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
-b) Lập được bao nhiêu số?
-c) Số lớn nhất là số nào?
-d) Số bé nhất là số nào?
-e) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
-f) Trong các số đó, có bao nhiêu số chẵn?
+a) Số 9 146 có chia hết cho 2 không? Vì sao?
+b) Số 887 có chia hết cho 3 không? Vì sao?
+c) Số 3 463 có chia hết cho 9 không? Vì sao?
+d) Số 6 580 có chia hết cho 5 không? Vì sao?
+e) Số 8 794 có chia hết cho 3 không? Vì sao?
+f) Số 673 có chia hết cho 5 không? Vì sao?
 
-### Bài 2. (4 điểm) Tìm quy luật của dãy số
+### Bài 2. (4 điểm) Tháng, năm và cách xem lịch
 
-Tìm quy luật rồi viết số hạng tiếp theo.
+Kẻ một bảng lịch nhỏ ra nháp rồi trả lời.
 
-a) 8, 24, 72, 216, 648, …
-b) 9, 13, 17, 21, 25, …
-c) 1, 2, 4, 7, 11, …
-d) 8, 9, 11, 14, 18, …
+a) Tháng 2 năm 2035 có bao nhiêu ngày?
+b) Năm 2035 có phải năm nhuận không?
+c) Ngày 1 tháng 2 là Thứ Bảy. Hỏi ngày 9 tháng ấy là thứ mấy?
+d) Tháng ấy có bao nhiêu ngày Chủ nhật?
+e) Ngày cuối cùng của tháng là thứ mấy?
+f) Một năm thường có bao nhiêu ngày, năm nhuận có bao nhiêu ngày?
 
-### Bài 3. (4 điểm) Đếm hình trong lưới ô vuông
+### Bài 3. (4 điểm) Dãy hình xếp theo quy luật
 
-Cho lưới gồm 3 hàng và 2 cột ô vuông nhỏ bằng nhau.
+Vẽ ba hình đầu ra nháp rồi tìm quy luật.
 
-a) Lưới có bao nhiêu ô vuông nhỏ?
-b) Lưới có bao nhiêu đường kẻ ngang, bao nhiêu đường kẻ dọc?
-c) Có tất cả bao nhiêu hình chữ nhật (kể cả hình vuông)?
-d) Có bao nhiêu hình vuông?
-e) Có bao nhiêu hình chữ nhật không phải hình vuông?
+a) Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình trước 2 que. Hình thứ 2 có bao nhiêu que?
+b) Hình thứ 3 có bao nhiêu que?
+c) Hình thứ 16 có bao nhiêu que?
+d) Hình nào có đúng 13 que?
+e) Xếp 16 hình đầu tiên cần tất cả bao nhiêu que?
 
-### Bài 4. (4 điểm) Xem đồng hồ và tính thời gian
+### Bài 4. (4 điểm) Tính nhanh bằng cách quan sát
+
+Tính bằng cách thuận tiện nhất.
+
+a) 112 + 87 − 87
+b) 70 + 75 + 30
+c) 7 × 298 × 0
+d) 71 + 190 + 29
+e) 9 × 65 × 0
+f) 33 + 30 − 30
+
+### Bài 5. (4 điểm) Xem đồng hồ và tính thời gian
 
 Ghi kết quả theo giờ và phút.
 
-a) 4 giờ 45 phút = … phút
-b) Bây giờ là 2 giờ 40 phút. Sau 10 phút nữa là mấy giờ?
-c) Bây giờ là 5 giờ 5 phút. Cách đây 30 phút là mấy giờ?
-d) Bây giờ là 6 giờ 0 phút. Sau 45 phút nữa là mấy giờ?
-e) Bây giờ là 1 giờ 55 phút. Cách đây 20 phút là mấy giờ?
-f) 2 giờ 30 phút = … phút
-g) Bây giờ là 6 giờ 40 phút. Sau 20 phút nữa là mấy giờ?
-
-### Bài 5. (4 điểm) Suy luận bằng bảng loại trừ
-
-Ba bạn Dũng, Quân, Sơn mỗi bạn thích đúng một loại quả khác nhau trong ba loại lê, cam, táo. Biết **Dũng thích lê** và **Quân không thích táo**.
-
-a) Kẻ bảng ba hàng, ba cột. Dấu ✔ đầu tiên đặt vào ô nào?
-b) Sau dấu ✔ đó, cột lê còn ô nào có thể đúng không?
-c) Dữ kiện thứ hai cho đánh ✘ vào ô nào?
-d) Vậy Quân thích quả gì?
-e) Vậy Sơn thích quả gì?
+a) 8 giờ 0 phút = … phút
+b) Bây giờ là 4 giờ 45 phút. Sau 10 phút nữa là mấy giờ?
+c) Bây giờ là 6 giờ 15 phút. Cách đây 30 phút là mấy giờ?
+d) Bây giờ là 4 giờ 25 phút. Sau 25 phút nữa là mấy giờ?
 
 ---
 
@@ -284,7 +300,7 @@ e) Vậy Sơn thích quả gì?
 
 ### Bài 1. (4 điểm) Đọc vị đề số 1
 
-**Đề:** Điền vào chỗ chấm. 4 719 kg = … tấn … tạ … kg
+**Đề:** Điền số thích hợp vào chỗ chấm. 28 km = … hm
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -295,7 +311,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 2. (4 điểm) Đọc vị đề số 2
 
-**Đề:** Ghi kết quả theo giờ và phút. 4 giờ 25 phút = … phút
+**Đề:** Ghi rõ đơn vị đồng ở mọi kết quả. Mua 6 quyển vở, mỗi quyển 18 000 đồng. Đưa cô bán hàng một tờ 200 000 đồng. Cô phải trả lại bao nhiêu tiền?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -306,7 +322,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Điền số thích hợp vào chỗ chấm. 50 dm = … mm
+**Đề:** Suy nghĩ theo số lần chứa. Một chiếc cân đĩa chỉ có các quả cân loại 200 g. Muốn cân một vật nặng 1 200 g thì cần bao nhiêu quả cân như thế?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -317,7 +333,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 4. (4 điểm) Đọc vị đề số 4
 
-**Đề:** Trình bày lời giải cho từng bước. Có 4 gói kẹo, mỗi gói 200 g. Lấy ra 1 gói. Hỏi số kẹo còn lại nặng bao nhiêu gam?
+**Đề:** Trình bày lời giải có câu trả lời cho từng bước. Có 5 tấm vải, mỗi tấm dài 6 m. Cắt mỗi tấm đi 2 m. Hỏi còn lại tất cả bao nhiêu mét vải?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -328,7 +344,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Suy nghĩ theo số lần chứa. Một chiếc cân đĩa chỉ có các quả cân loại 100 g. Muốn cân một vật nặng 600 g thì cần bao nhiêu quả cân như thế?
+**Đề:** Kẻ một bảng lịch nhỏ ra nháp rồi trả lời. Tháng 10 năm 2030 có bao nhiêu ngày?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -350,157 +366,157 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Kể thiếu dạng bài. Phòng: Đếm số dạng rồi mới kể; kể xong đếm lại.
 
 ### Bài A.2
-**Đáp số:** a) Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · b) Số đo viết dưới dạng “… tấn … tạ … kg” · c) Cân đĩa với một loại quả cân · d) Có chữ “giờ”, “phút”, “sau … phút nữa” · e) Hai đơn vị khác nhau nối bởi dấu …
+**Đáp số:** a) Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · b) Dấu … giữa hai đơn vị khác nhau · c) Có nhiều tiết học và thời gian nghỉ giữa các tiết · d) “Đưa … đồng”, “trả lại”, “đổi ra tờ …” · e) Có chữ l, ml trong đề
 **Hướng giải:** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.3
-**Đáp số:** a) Chia và xét số dư · b) Quy về phút, tính, đổi lại · c) Nhớ quan hệ rồi nhân · d) Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 · e) Quy về phút rồi tính, cuối cùng đổi lại giờ và phút
+**Đáp số:** a) Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại · b) Tính tiền hàng rồi trừ; đổi tiền thì chia · c) Đưa về cùng đơn vị rồi tính hoặc so sánh · d) Chia và xét số dư · e) Quy về phút rồi tính, cuối cùng đổi lại giờ và phút
 **Hướng giải:** Cột “Phương pháp áp dụng” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.4
-**Đáp số:** a) Bảng đơn vị đo lớp 3 · b) Bảng đơn vị đo độ dài, khối lượng · c) Quan hệ giờ – phút – giây · d) Nhân, trừ; đơn vị khối lượng · e) Bảng đơn vị khối lượng
+**Đáp số:** a) Quan hệ lít – mi-li-lít · b) Phép chia hết và chia có dư; đơn vị khối lượng · c) Quan hệ giờ – phút – giây · d) Nhân, trừ; đơn vị khối lượng, độ dài, dung tích · e) Quan hệ giờ – phút
 **Hướng giải:** Cột “Kiến thức phải thuộc” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.5
-**Đáp số:** a) Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. · b) So hai đường giải, chọn đường ít phép tính. · c) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. · d) Đổi cả hai về cùng đơn vị rồi chia. · e) Cộng tròn giờ trước, cộng phút lẻ sau.
+**Đáp số:** a) Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. · b) Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. · c) Cộng tròn giờ trước, cộng phút lẻ sau. · d) Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. · e) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
 **Hướng giải:** Cột “Cách xử lý nhanh nhất” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài B.1
-**Đáp số:** a) 44 000 · b) 8 100 · c) 9 000 · d) 72 000 · e) 260 · f) 300 · g) 58 000 · h) 8 700
-**Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
-**Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
-**Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
-
-### Bài B.2
-**Đáp số:** a) 12 cách · b) 10 cách · c) 15 cách · d) 8 cách · e) 6 cách · f) 6 cách
-**Hướng giải:** Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
-**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
-
-### Bài B.3
-**Đáp số:** a) 373 · b) 70 · c) 377 · d) 260
-**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
-**Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
-**Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
-
-### Bài B.4
-**Đáp số:** a) 98 kg · b) 54 kg · c) 27 kg · d) 1 362 kg · e) 109 kg · f) 92 kg
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
-
-### Bài B.5
-**Đáp số:** a) 68 · b) Bình (25 bông) · c) Khánh (6 bông) · d) 19 · e) 17
-**Hướng giải:** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
-**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
-
-### Bài C.1
-**Đáp số:** a) 183 dư 5 · b) 349 dư 6 · c) 90 dư 1 · d) 185 dư 1 · e) 282 dư 2 · f) 90 dư 3
-**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
-**Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
-**Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
-
-### Bài C.2
-**Đáp số:** a) 7 800 · b) 28 000 · c) 30 · d) 76 000 · e) 11 000 · f) 78 000 · g) 16 000 · h) 2 400
-**Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
-**Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
-**Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
-
-### Bài C.3
-**Đáp số:** a) 98 cm · b) 900 cm² · c) 148 cm · d) 216 cm² · e) 81 cm² · f) 700 cm² · g) 84 cm · h) 112 cm
+**Đáp số:** a) 625 cm² · b) 42 cm · c) 27 cm² · d) 116 cm · e) 512 cm² · f) 58 cm · g) 68 cm · h) 49 cm²
 **Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
 **Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
 
-### Bài C.4
-**Đáp số:** a) kho B: 274 kg, trang trại: 140 kg · b) 5B: 243 quyển, 4B: 153 quyển · c) tổ Hai: 559 cây, nhóm Hoa Phượng: 315 cây · d) 5B: 201 quyển, 3B: 105 quyển · e) đội Một: 546 cây, nhóm Sao Mai: 352 cây
-**Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
+### Bài B.2
+**Đáp số:** a) 5 tờ · b) 14 000 đồng · c) 60 000 đồng · d) 36 000 đồng · e) 10 tờ
+**Hướng giải:** Tính tiền hàng trước bằng phép nhân, rồi mới lấy tiền đưa trừ đi tiền hàng. Đổi tiền là phép chia: tờ lớn chia cho tờ nhỏ.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Phải tính **tiền hàng** trước khi trừ.
+**Lỗi thường gặp:** Lấy tiền đưa trừ ngay giá một quyển vở. Phòng: Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai.
 
-### Bài C.5
-**Đáp số:** a) 38 · b) 14 · c) 32 · d) 36 · e) 16 · f) 36 · g) 24
+### Bài B.3
+**Đáp số:** a) 7 000 · b) 450 · c) 12 000 · d) 6 900 · e) 11 000 · f) 47 000
+**Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
+**Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
+**Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
+
+### Bài B.4
+**Đáp số:** a) 24 cách · b) 15 cách · c) 18 cách · d) 30 cách · e) 12 cách
+**Hướng giải:** Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
+**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
+
+### Bài B.5
+**Đáp số:** a) 534 kg · b) 925 kg · c) 430 kg · d) 80 kg · e) 236 kg
+**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
+**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+
+### Bài C.1
+**Đáp số:** a) 36 · b) 23 · c) 6 · d) 24 · e) 8 · f) 25 · g) 32
 **Hướng giải:** Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng ít hơn số số hạng đúng **1**.
 **Lỗi thường gặp:** Quên cộng 1. Phòng: Thử với dãy ngắn ba số để kiểm tra công thức.
 
+### Bài C.2
+**Đáp số:** a) Hùng: 15 viên, Dũng: 7 viên · b) Quân: 73 viên, Vy: 45 viên · c) Quân: 35 viên, Sơn: 29 viên · d) Sơn: 63 viên, Minh: 33 viên · e) Khánh: 120 viên, Đức: 78 viên · f) Khánh: 30 viên, Phúc: 16 viên
+**Hướng giải:** Vẽ hai đoạn thẳng, đoạn dài hơn đúng phần hiệu. Bớt phần hiệu đi thì hai đoạn bằng nhau; chia đôi tổng mới ra số bé, cộng hiệu ra số lớn.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: **Bớt hiệu rồi mới chia đôi** — đảo thứ tự là sai.
+**Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Tô phần hiệu bằng bút khác màu trên sơ đồ.
+
+### Bài C.3
+**Đáp số:** a) 50 · b) 70 · c) 220 · d) Hùng (70) · e) Chi (30) · f) 40 · g) 6 hình
+**Hướng giải:** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
+**Lỗi thường gặp:** Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. Phòng: Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
+
+### Bài C.4
+**Đáp số:** a) mỗi bạn 8 cái, thừa 3 cái · b) 3 cái · c) 7 cái · d) 9 cái · e) mỗi bạn 9 cái, thừa 2 cái · f) phải là số chia hết cho 10
+**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
+**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
+
+### Bài C.5
+**Đáp số:** a) 178 · b) 227 · c) 177 · d) 239 · e) 244 · f) 310
+**Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
+**Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
+**Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
+
 ### Bài D.1
-**Đáp số:** a) 146 · 164 · 416 · 461 · 614 · 641 · b) 6 · c) 641 · d) 146 · e) 495 · f) 4
-**Hướng giải:** Chọn chữ số hàng trăm trước, rồi hàng chục, rồi hàng đơn vị; mỗi chữ số dùng đúng một lần. Viết theo nhóm cùng chữ số hàng trăm để không sót và không trùng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Viết **có thứ tự** thì mới chắc chắn đủ và không lặp.
-**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng. Phòng: Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại.
-**Gợi ý 3 tầng:** (1) Chữ số hàng trăm có mấy cách chọn? — (2) Với mỗi hàng trăm, hai chữ số còn lại xếp mấy cách? — (3) Viết theo nhóm để kiểm soát.
+**Đáp số:** a) có (tận cùng là 6) · b) không (tổng các chữ số bằng 23) · c) không (tổng các chữ số bằng 16) · d) có (tận cùng là 0) · e) không (tổng các chữ số bằng 28) · f) không (tận cùng là 3)
+**Hướng giải:** BẪY — Dấu hiệu của 2, 5 khác hẳn dấu hiệu của 3, 9. Chia hết cho 2: tận cùng 0, 2, 4, 6, 8. Chia hết cho 5: tận cùng 0 hoặc 5. Chia hết cho 3 hoặc 9: cộng các chữ số rồi xét tổng.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**.
+**Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2. Phòng: Ghi tổng các chữ số ra bên cạnh trước khi kết luận.
+**Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì nhìn chữ số cuối. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng vẫn còn lớn thì cộng tiếp một lần nữa.
 
 ### Bài D.2
-**Đáp số:** a) 1 944 · b) 29 · c) 16 · d) 23
-**Hướng giải:** Thử theo thứ tự: (1) lấy hiệu hai số liên tiếp — bằng nhau thì là dãy cách đều; (2) lấy thương — bằng nhau thì là dãy nhân; (3) xem dãy hiệu có tăng đều không.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất.
-**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
-**Gợi ý 3 tầng:** (1) Lấy hiệu các số liên tiếp — có bằng nhau không? — (2) Lấy thương — có bằng nhau không? — (3) Dãy hiệu có tăng đều không?
+**Đáp số:** a) 28 · b) không · c) Chủ nhật · d) 4 · e) Thứ Sáu · f) 365 ngày và 366 ngày
+**Hướng giải:** BẪY — Tháng 2 và năm nhuận. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận 29 ngày. Thứ trong tuần lặp lại sau mỗi 7 ngày, nên chia cho 7 lấy số dư.
+**Nhãn tư duy:** TD4, TD1. Điểm chốt: Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra.
+**Lỗi thường gặp:** Đếm tay từng ngày nên vừa lâu vừa sai. Phòng: Đếm số ngày cách nhau rồi chia 7 lấy dư.
+**Gợi ý 3 tầng:** (1) Tháng này có bao nhiêu ngày? — (2) Từ ngày 1 đến ngày cần tìm cách nhau bao nhiêu ngày? — (3) Chia số đó cho 7 và lấy số dư.
 
 ### Bài D.3
-**Đáp số:** a) 6 · b) 4 đường ngang, 3 đường dọc · c) 18 · d) 8 · e) 10
-**Hướng giải:** BẪY — Bỏ sót hình ghép. Chọn hai đường kẻ ngang và hai đường kẻ dọc thì được đúng một hình chữ nhật. Số cách chọn 2 trong k đường là k × (k − 1) : 2. Đếm hình vuông thì đếm theo từng cỡ cạnh 1, 2, 3…
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ** — không đếm mò.
-**Lỗi thường gặp:** Chỉ đếm ô nhỏ, quên hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình rồi cộng.
-**Gợi ý 3 tầng:** (1) Lưới có bao nhiêu đường kẻ mỗi chiều? — (2) Chọn hai đường ngang và hai đường dọc được gì? — (3) Đếm hình vuông theo từng cỡ cạnh.
+**Đáp số:** a) 5 · b) 7 · c) 33 · d) hình thứ 6 · e) 288
+**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số que các hình lập thành dãy cách đều. Số hạng thứ n = số đầu + (n − 1) × khoảng cách. Nhân với **(n − 1)** vì đếm khoảng, không đếm hình.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên thừa đúng một khoảng. Phòng: Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n.
+**Gợi ý 3 tầng:** (1) Từ hình 1 đến hình thứ n phải thêm mấy lần? — (2) Mỗi lần thêm bao nhiêu que? — (3) Cộng vào số que hình đầu.
 
 ### Bài D.4
-**Đáp số:** a) 285 · b) 2 giờ 50 phút · c) 4 giờ 35 phút · d) 6 giờ 45 phút · e) 1 giờ 35 phút · f) 150 · g) 7 giờ 0 phút
-**Hướng giải:** BẪY — Phần phút vượt quá 60. 1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
+**Đáp số:** a) 112 · b) 175 · c) 0 · d) 290 · e) 0 · f) 33
+**Hướng giải:** BẪY — Thừa số 0. Trước khi tính, hãy nhìn cả biểu thức: có cặp nào cộng lại tròn trăm không, có thừa số 0 không, có hai số giống nhau cộng rồi trừ không. Nhận ra được thì viết đáp số gần như ngay lập tức.
+**Nhãn tư duy:** TD5, TD6. Điểm chốt: **Nhìn trước, tính sau** — đó là toàn bộ bí quyết tính nhanh.
+**Lỗi thường gặp:** Lao vào tính từ trái sang phải, bỏ lỡ mọi lối tắt. Phòng: Đọc hết biểu thức một lượt trước khi đặt bút.
+**Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn trăm không? — (2) Có thừa số nào bằng 0 không? — (3) Có hai số giống nhau cộng rồi trừ không?
+
+### Bài D.5
+**Đáp số:** a) 480 · b) 4 giờ 55 phút · c) 5 giờ 45 phút · d) 4 giờ 50 phút
+**Hướng giải:** 1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10.
 **Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra: phần phút của đáp số phải bé hơn 60.
 **Gợi ý 3 tầng:** (1) Đổi giờ hiện tại ra phút. — (2) Cộng hoặc trừ số phút đề cho. — (3) Chia kết quả cho 60 lấy thương và số dư.
 
-### Bài D.5
-**Đáp số:** a) ô (Dũng; lê) · b) không · c) ô (Quân; táo) · d) cam · e) táo
-**Hướng giải:** Kẻ bảng tên người × loại quả. Mỗi dữ kiện cho một dấu ✔ hoặc ✘. Sau mỗi dấu ✔, gạch bỏ toàn bộ hàng và toàn bộ cột chứa nó. Khi một hàng chỉ còn một ô trống thì ô đó là ✔.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi dấu ✔ **lan toả** ra cả hàng và cả cột.
-**Lỗi thường gặp:** Suy luận nhẩm trong đầu nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, dù bài trông dễ.
-**Gợi ý 3 tầng:** (1) Kẻ bảng tên người × loại quả. — (2) Dữ kiện nào cho dấu chắc chắn? — (3) Gạch bỏ cả hàng và cả cột sau mỗi dấu ✔.
-
 ### Bài E.1
-**Đáp số:** a) Số đo có nhiều đơn vị · b) Số đo viết dưới dạng “… tấn … tạ … kg” · c) Bảng đơn vị khối lượng · d) Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · e) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. · f) Cộng thẳng các số đứng trước những đơn vị khác nhau.
-**Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
-**Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
-
-### Bài E.2
-**Đáp số:** a) Tính thời gian trong ngày · b) Có chữ “giờ”, “phút”, “sau … phút nữa” · c) Quan hệ giờ – phút · d) Quy về phút, tính, đổi lại · e) Cộng tròn giờ trước, cộng phút lẻ sau. · f) Cộng phần phút thành hơn 60 mà quên đổi thành giờ.
-**Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra: phần phút của đáp số phải bé hơn 60.
-**Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
-
-### Bài E.3
 **Đáp số:** a) Đổi đơn vị đo · b) Dấu … giữa hai đơn vị khác nhau · c) Bảng đơn vị đo độ dài, khối lượng · d) Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 · e) Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). · f) Đổi ngược chiều nên nhân thành chia.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
-### Bài E.4
-**Đáp số:** a) Bài toán đại lượng hai bước · b) Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · c) Nhân, trừ; đơn vị khối lượng · d) Trừ trước, nhân sau · e) So hai đường giải, chọn đường ít phép tính. · f) Trừ số gói cho số gam, hai đại lượng khác loại.
+### Bài E.2
+**Đáp số:** a) Bài toán tiền tệ hai bước · b) “Đưa … đồng”, “trả lại”, “đổi ra tờ …” · c) Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam · d) Tính tiền hàng rồi trừ; đổi tiền thì chia · e) Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. · f) Lấy tiền đưa trừ ngay giá một quyển vở.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Trừ số gói cho số gam, hai đại lượng khác loại. Phòng: Ghi đơn vị sau mỗi số để không trừ nhầm.
+**Lỗi thường gặp:** Lấy tiền đưa trừ ngay giá một quyển vở. Phòng: Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
-### Bài E.5
+### Bài E.3
 **Đáp số:** a) Bài toán cân, chia hết · b) Cân đĩa với một loại quả cân · c) Phép chia hết và chia có dư; đơn vị khối lượng · d) Chia và xét số dư · e) Đổi cả hai về cùng đơn vị rồi chia. · f) Làm tròn lên rồi coi như cân được.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
 **Lỗi thường gặp:** Làm tròn lên rồi coi như cân được. Phòng: Kiểm tra phép chia có dư hay không trước khi kết luận.
+**Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
+
+### Bài E.4
+**Đáp số:** a) Bài toán đại lượng nhiều bước · b) Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt · c) Nhân, trừ; đơn vị khối lượng, độ dài, dung tích · d) Tính đại lượng trung gian rồi trả lời · e) Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. · f) Nhân số bao với giá tiền một ki-lô-gam.
+**Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
+**Lỗi thường gặp:** Nhân số bao với giá tiền một ki-lô-gam. Phòng: Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ.
+**Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
+
+### Bài E.5
+**Đáp số:** a) Lịch, tháng, năm nhuận · b) Đề nhắc tới ngày, tháng, thứ trong tuần · c) Số ngày các tháng, năm nhuận, chu kì 7 ngày · d) Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ · e) Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. · f) Đếm tay từng ngày nên vừa lâu vừa sai.
+**Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
+**Lỗi thường gặp:** Đếm tay từng ngày nên vừa lâu vừa sai. Phòng: Đếm số ngày cách nhau rồi chia 7 lấy dư.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ---

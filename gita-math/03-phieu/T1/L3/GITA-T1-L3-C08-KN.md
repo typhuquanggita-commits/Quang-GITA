@@ -42,8 +42,8 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L3-C08-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Phân số một phần mấy, phép trừ liên tiếp
-> 2. Phân số dạng một phần mấy
+> 1. Quan hệ ngược của phép chia
+> 2. Phân số một phần mấy, phép trừ liên tiếp
 > 3. Phân số một phần mấy, phép trừ
 > 4. Thống kê đơn giản, trung bình cộng
 
@@ -51,56 +51,63 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Điền số còn thiếu trong dãy
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 18, …, 32, 39, 46, 53
-b) 26, 30, 34, 38, …, 46
-c) 32, 47, …, 77, 92, 107
-d) 12, 19, …, 33, 40, 47
-
-### Bài 2. (5 điểm) Đếm hình trong lưới ô vuông
-
-Đếm có hệ thống, không đếm mò.
-
-a) Lưới ô vuông gồm 4 hàng và 4 cột ô vuông nhỏ. Có tất cả bao nhiêu ô vuông nhỏ?
-b) Có bao nhiêu hình chữ nhật (kể cả hình vuông) trong lưới đó?
-c) Có bao nhiêu hình vuông trong lưới đó?
-d) Nếu mỗi ô vuông nhỏ có cạnh 1 cm thì chu vi cả lưới bằng bao nhiêu?
-e) Diện tích cả lưới bằng bao nhiêu?
-
-### Bài 3. (5 điểm) Nhiều hơn – ít hơn, gấp – kém
-
-Đọc kĩ rồi trả lời từng câu.
-
-a) Vy có 123 quyển vở, số vở của Khánh kém 3 lần số vở của Vy. Khánh có bao nhiêu quyển vở?
-b) Vy có 39 quyển vở, Khánh có nhiều hơn Vy 11 quyển. Khánh có bao nhiêu quyển vở?
-c) Vy có 60 quyển vở, Khánh có số vở gấp 3 lần Vy. Khánh có bao nhiêu quyển vở?
-d) Vy có 39 quyển vở, Khánh có ít hơn Vy 24 quyển. Khánh có bao nhiêu quyển vở?
-
-### Bài 4. (5 điểm) Điền dấu <, >, = thích hợp
-
-Điền dấu thích hợp vào chỗ chấm.
-
-a) 94 657 … 91 657
-b) 65 843 … 65 873
-c) 81 949 … 81 854
-d) 67 943 … 74 525
-e) 74 458 … 74 550
-f) 73 269 … 37 245
-g) 39 897 … 39 963
-h) 84 492 … 73 820
-
-### Bài 5. (5 điểm) Tìm một phần mấy của một số
+### Bài 1. (5 điểm) Tìm một phần mấy của một số
 
 Tính rồi ghi kết quả.
 
-a) Tìm 1 phần 5 của 90.
-b) Tìm 1 phần 8 của 48.
-c) Tìm 1 phần 10 của 140.
+a) Tìm 1 phần 4 của 72.
+b) Tìm 1 phần 5 của 90.
+c) Tìm 1 phần 8 của 56.
 d) Tìm 1 phần 6 của 18.
-e) Tìm 1 phần 8 của 136.
+e) Tìm 1 phần 5 của 90.
+f) Tìm 1 phần 8 của 48.
+g) Tìm 1 phần 10 của 140.
+
+### Bài 2. (5 điểm) Tìm một phần mấy của một số
+
+Tính rồi ghi kết quả.
+
+a) Tìm 1 phần 8 của 104.
+b) Tìm 1 phần 5 của 65.
+c) Tìm 1 phần 6 của 90.
+d) Tìm 1 phần 4 của 32.
+e) Tìm 1 phần 3 của 30.
+
+### Bài 3. (5 điểm) Đặt tính rồi tính (nhân, chia)
+
+Đặt tính rồi tính.
+
+a) 107 × 7
+b) 353 × 3
+c) 1 770 : 2
+d) 254 × 9
+e) 614 × 4
+f) 155 × 2
+g) 3 656 : 8
+h) 3 688 : 4
+
+### Bài 4. (5 điểm) Đọc, viết và phân tích cấu tạo số
+
+Cho số **73 677**.
+
+a) Số 73 677 có bao nhiêu chữ số?
+b) Chữ số hàng đơn vị là chữ số nào?
+c) Chữ số hàng trăm là chữ số nào?
+d) Chữ số hàng nghìn là chữ số nào?
+e) Viết số 73 677 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 73 677 bằng bao nhiêu?
+g) Số liền sau của 73 677 là số nào?
+
+### Bài 5. (5 điểm) Viết tiếp ba số hạng của dãy
+
+Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
+
+a) 29, 33, 37, 41, …
+b) 30, 41, 52, 63, …
+c) 5, 11, 17, 23, …
+d) 13, 22, 31, 40, …
+e) 21, 32, 43, 54, …
+f) 13, 28, 43, 58, …
 
 ---
 
@@ -120,11 +127,11 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
-a) Câu lời giải mở đầu cho dạng “Tìm một phần mấy của một số”?
+a) Câu lời giải mở đầu cho dạng “Tìm một phần mấy rồi tính phần còn lại”?
 b) Câu lời giải mở đầu cho dạng “Tìm phân số của một số qua nhiều bước”?
-c) Câu lời giải mở đầu cho dạng “Tìm một phần mấy rồi tính phần còn lại”?
-d) Câu lời giải mở đầu cho dạng “Đọc bảng số liệu”?
-e) Câu lời giải mở đầu cho dạng “Tìm số khi biết một phần mấy của nó”?
+c) Câu lời giải mở đầu cho dạng “Tìm số khi biết một phần mấy”?
+d) Câu lời giải mở đầu cho dạng “Tìm một phần mấy của một số”?
+e) Câu lời giải mở đầu cho dạng “Tìm một phần mấy của một số”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
 
@@ -141,11 +148,12 @@ f) Vận tốc ghi đơn vị gì?
 
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
-a) Lỗi: Nhân thay vì chia. — cách phòng?
+a) Lỗi: Dừng ở bước một, trả lời số gạo đã bán. — cách phòng?
 b) Lỗi: Lấy cả hai phân số tính trên tổng ban đầu. — cách phòng?
-c) Lỗi: Dừng ở bước một, trả lời số gạo đã bán. — cách phòng?
-d) Lỗi: Đọc lệch cột nên gán nhầm số cho bạn khác. — cách phòng?
-e) Lỗi: Chia thay vì nhân. — cách phòng?
+c) Lỗi: Chia thay vì nhân khi đã biết giá trị một phần. — cách phòng?
+d) Lỗi: Nhân thay vì chia. — cách phòng?
+e) Lỗi: Nhân thay vì chia. — cách phòng?
+f) Lỗi: Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -173,7 +181,7 @@ e) Dò ba tầng mất bao lâu cho một bài?
 
 ### Bài 2. (3 điểm) Dò soát tình huống 1
 
-**Tình huống:** một bạn làm bài dạng “Tìm một phần mấy của một số” và mắc lỗi: Nhân thay vì chia.
+**Tình huống:** một bạn làm bài dạng “Tìm một phần mấy rồi tính phần còn lại” và mắc lỗi: Dừng ở bước một, trả lời số gạo đã bán.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -183,7 +191,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 3. (3 điểm) Dò soát tình huống 2
 
-**Tình huống:** một bạn làm bài dạng “Đọc bảng số liệu” và mắc lỗi: Đọc lệch cột nên gán nhầm số cho bạn khác.
+**Tình huống:** một bạn làm bài dạng “Tìm một phần mấy của một số” và mắc lỗi: Nhân thay vì chia.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -193,7 +201,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 4. (3 điểm) Dò soát tình huống 3
 
-**Tình huống:** một bạn làm bài dạng “Tìm phân số của một số qua nhiều bước” và mắc lỗi: Lấy cả hai phân số tính trên tổng ban đầu.
+**Tình huống:** một bạn làm bài dạng “Đọc bảng số liệu” và mắc lỗi: Đọc lệch cột nên gán nhầm số cho ngày khác.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -235,7 +243,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 3. (5 điểm) Nhánh 2 — Đọc bảng số liệu
+### Bài 3. (5 điểm) Nhánh 2 — Tìm một phần mấy của một số
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -245,7 +253,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Tìm một phần mấy của một số
+### Bài 4. (5 điểm) Nhánh 3 — Đọc và lập biểu đồ tranh
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -255,7 +263,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Tìm một phần mấy rồi tính phần còn lại
+### Bài 5. (5 điểm) Nhánh 4 — Đọc bảng số liệu
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -280,7 +288,7 @@ d) Phút 4 nói gì?
 e) Phút 5 nói gì?
 f) Ai trong nhóm nói phần nào?
 
-### Bài 2. (4 điểm) Nội dung giảng — Tìm một phần mấy của một số
+### Bài 2. (4 điểm) Nội dung giảng — Tìm một phần mấy rồi tính phần còn lại
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -291,7 +299,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Tìm một phần mấy rồi tính phần còn lại
+### Bài 3. (4 điểm) Nội dung giảng — Tìm số khi biết một phần mấy
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -302,7 +310,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 4. (4 điểm) Nội dung giảng — Tìm số khi biết một phần mấy của nó
+### Bài 4. (4 điểm) Nội dung giảng — Tìm một phần mấy của một số
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -313,7 +321,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 5. (4 điểm) Nội dung giảng — Tìm phân số của một số qua nhiều bước
+### Bài 5. (4 điểm) Nội dung giảng — Đọc bảng số liệu
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -331,34 +339,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 25 · b) 42 · c) 62 · d) 26
-**Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
-**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
-**Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
-
-### Bài A.2
-**Đáp số:** a) 16 · b) 100 · c) 30 · d) 16 cm · e) 16 cm²
-**Hướng giải:** BẪY — Bỏ sót các hình ghép nhiều ô. Một hình chữ nhật trong lưới được xác định bởi hai đường kẻ ngang và hai đường kẻ dọc. Lưới m hàng có m + 1 đường ngang, n cột có n + 1 đường dọc, nên số hình chữ nhật bằng số cách chọn hai đường ngang nhân số cách chọn hai đường dọc. Đếm hình vuông thì đếm theo từng cỡ cạnh.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Đếm **theo cỡ** hoặc **theo đường kẻ**, tuyệt đối không đếm ngẫu nhiên.
-**Lỗi thường gặp:** Chỉ đếm các ô vuông nhỏ, quên các hình ghép từ nhiều ô. Phòng: Kẻ bảng theo cỡ hình: cỡ 1×1, 1×2, 2×2… rồi cộng.
-
-### Bài A.3
-**Đáp số:** a) 41 · b) 50 · c) 180 · d) 15
-**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
-
-### Bài A.4
-**Đáp số:** a) > · b) < · c) > · d) < · e) < · f) > · g) < · h) >
-**Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
-**Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
-
-### Bài A.5
-**Đáp số:** a) 18 · b) 6 · c) 14 · d) 3 · e) 17
-**Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
+**Đáp số:** a) 18 · b) 18 · c) 7 · d) 3 · e) 18 · f) 6 · g) 14
+**Hướng giải:** BẪY — Chia chứ không nhân. Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+
+### Bài A.2
+**Đáp số:** a) 13 · b) 13 · c) 15 · d) 8 · e) 10
+**Hướng giải:** BẪY — Chia chứ không nhân. Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
+**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
+**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+
+### Bài A.3
+**Đáp số:** a) 749 · b) 1 059 · c) 885 · d) 2 286 · e) 2 456 · f) 310 · g) 457 · h) 922
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+
+### Bài A.4
+**Đáp số:** a) 5 · b) 7 · c) 6 · d) 3 · e) 70 000 + 3 000 + 600 + 70 + 7 · f) 30 · g) 73 678
+**Hướng giải:** Đếm hàng từ phải sang trái. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị hàng nó đứng. Hàng nào khuyết thì viết chữ số 0.
+**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** với **giá trị** của chữ số.
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Đánh dấu hàng đơn vị trước, rồi đi ngược về bên trái.
+
+### Bài A.5
+**Đáp số:** a) 45, 49, 53 · b) 74, 85, 96 · c) 29, 35, 41 · d) 49, 58, 67 · e) 65, 76, 87 · f) 73, 88, 103
+**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
+**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
+**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -367,7 +375,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Tìm một phần mấy của một số là:” · b) “Tìm phân số của một số qua nhiều bước là:” · c) “Tìm một phần mấy rồi tính phần còn lại là:” · d) “Đọc bảng số liệu là:” · e) “Tìm số khi biết một phần mấy của nó là:”
+**Đáp số:** a) “Tìm một phần mấy rồi tính phần còn lại là:” · b) “Tìm phân số của một số qua nhiều bước là:” · c) “Tìm số khi biết một phần mấy là:” · d) “Tìm một phần mấy của một số là:” · e) “Tìm một phần mấy của một số là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -379,7 +387,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Kiểm tra: kết quả phải **bé hơn** số ban đầu. · b) Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau. · c) Đọc lại câu hỏi sau khi tính xong bước một. · d) Dùng ngón tay dò theo cột khi đọc bảng. · e) Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
+**Đáp số:** a) Đọc lại câu hỏi sau khi tính xong bước một. · b) Viết một dòng “còn lại … quyển” sau mỗi bước. · c) Kiểm tra: số tìm được phải **lớn hơn** số đã cho. · d) Kiểm tra: kết quả phải bé hơn số ban đầu. · e) Kiểm tra: kết quả phải **bé hơn** số ban đầu. · f) Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -397,22 +405,22 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Dò lại phép tính nhưng không đọc lại câu hỏi. Phòng: Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số.
 
 ### Bài C.2
-**Đáp số:** a) tầng 2 · b) Kiểm tra: kết quả phải **bé hơn** số ban đầu. · c) toàn bộ số điểm của ý sai · d) Kiểm tra: kết quả phải **bé hơn** số ban đầu. · e) Một phần mấy thì **chia** cho số đó.
-**Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
-**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
-**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
+**Đáp số:** a) tầng 2 · b) Đọc lại câu hỏi sau khi tính xong bước một. · c) toàn bộ số điểm của ý sai · d) Đọc lại câu hỏi sau khi tính xong bước một. · e) Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
+**Hướng giải:** Bước 1: tìm số gạo đã bán bằng cách chia tổng cho mẫu số. Bước 2: lấy tổng trừ đi số đã bán để ra số còn lại.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
+**Lỗi thường gặp:** Dừng ở bước một, trả lời số gạo đã bán. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
 
 ### Bài C.3
-**Đáp số:** a) tầng 2 · b) Dùng ngón tay dò theo cột khi đọc bảng. · c) toàn bộ số điểm của ý sai · d) Dùng ngón tay dò theo cột khi đọc bảng. · e) Đọc **đúng cột** — mỗi số gắn với đúng một tên.
-**Hướng giải:** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
-**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
+**Đáp số:** a) tầng 2 · b) Kiểm tra: kết quả phải bé hơn số ban đầu. · c) toàn bộ số điểm của ý sai · d) Kiểm tra: kết quả phải bé hơn số ban đầu. · e) Một phần mấy thì **chia**, không nhân.
+**Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
+**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
+**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
 
 ### Bài C.4
-**Đáp số:** a) tầng 2 · b) Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau. · c) toàn bộ số điểm của ý sai · d) Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau. · e) Cụm “số còn lại” đổi hẳn số bị chia ở bước hai.
-**Hướng giải:** Bước 1: tính số vở phát ngày đầu và số vở còn lại sau ngày đầu. Bước 2: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu. Bước 3: trừ tiếp để ra số cuối cùng.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cụm “số còn lại” đổi hẳn số bị chia ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau.
+**Đáp số:** a) tầng 2 · b) Dùng ngón tay dò theo cột khi đọc bảng. · c) toàn bộ số điểm của ý sai · d) Dùng ngón tay dò theo cột khi đọc bảng. · e) Đọc **đúng cột** — mỗi số gắn với đúng một ngày.
+**Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số ngày.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một ngày.
+**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho ngày khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
 
 ### Bài C.5
 **Đáp số:** a) tầng 2 · b) Kiểm tra: số tìm được phải **lớn hơn** số đã cho. · c) toàn bộ số điểm của ý sai · d) Kiểm tra: số tìm được phải **lớn hơn** số đã cho. · e) Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
@@ -430,29 +438,29 @@ f) Mẹo nhanh em sẽ tặng lớp?
 ### Bài D.2
 **Đáp số:** a) Cụm “… số còn lại” · b) Tính tuần tự, ghi lại số còn lại sau mỗi bước · c) Lấy cả hai phân số tính trên tổng ban đầu. · d) Phân số một phần mấy, phép trừ liên tiếp · e) Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cụm “số còn lại” đổi hẳn số bị chia ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Phân số của bước hai tính trên **số còn lại**, không phải tổng ban đầu.
+**Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Viết một dòng “còn lại … quyển” sau mỗi bước.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
+**Đáp số:** a) Cụm “một phần mấy của …” · b) Chia số đó cho mẫu số · c) Nhân thay vì chia. · d) Phân số dạng một phần mấy · e) Kết quả luôn nhỏ hơn số ban đầu.
+**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
+**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.4
+**Đáp số:** a) Có hình vẽ lặp lại kèm một dòng chú thích · b) Đọc chú thích → nhân số hình với đơn vị · c) Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. · d) Biểu đồ tranh, phép nhân và chia · e) Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất.
+**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
+**Lỗi thường gặp:** Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. Phòng: Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.5
 **Đáp số:** a) Đề cho bảng số liệu kèm nhiều câu hỏi · b) Ghi lại số liệu rồi trả lời từng câu · c) Đọc lệch cột nên gán nhầm số cho bạn khác. · d) Thống kê đơn giản, trung bình cộng · e) Tính tổng một lần rồi dùng lại cho các câu sau.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
 **Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài D.4
-**Đáp số:** a) Cụm “một phần mấy của …” · b) Chia số đó cho mẫu số · c) Nhân thay vì chia. · d) Phân số dạng một phần mấy · e) Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay.
-**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
-**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài D.5
-**Đáp số:** a) “Đã bán một phần mấy”, hỏi “còn lại” · b) Chia để tìm phần đã dùng rồi trừ · c) Dừng ở bước một, trả lời số gạo đã bán. · d) Phân số một phần mấy, phép trừ · e) Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong.
-**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
-**Lỗi thường gặp:** Dừng ở bước một, trả lời số gạo đã bán. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -463,31 +471,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm một phần mấy của một số.” · b) Cụm “một phần mấy của …” · c) Phân số dạng một phần mấy · d) Tìm 1 phần 4 của 20. → 5 · e) Nhân thay vì chia. · f) Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay.
-**Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
-**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
-**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài E.3
 **Đáp số:** a) “Hôm nay nhóm mình nói về Tìm một phần mấy rồi tính phần còn lại.” · b) “Đã bán một phần mấy”, hỏi “còn lại” · c) Phân số một phần mấy, phép trừ · d) Có 20 kg gạo, bán 1 phần 4. Còn bao nhiêu kg? → 15 kg · e) Dừng ở bước một, trả lời số gạo đã bán. · f) Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong.
 **Hướng giải:** Bước 1: tìm số gạo đã bán bằng cách chia tổng cho mẫu số. Bước 2: lấy tổng trừ đi số đã bán để ra số còn lại.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số gạo đã bán. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
+### Bài E.3
+**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm số khi biết một phần mấy.” · b) “Một phần mấy của một số là …” · c) Quan hệ ngược của phép chia · d) 1 phần 3 của một số là 7. Tìm số đó. → 21 · e) Chia thay vì nhân khi đã biết giá trị một phần. · f) Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay.
+**Hướng giải:** Biết một phần thì **nhân** với mẫu số để ra cả số; biết cả số thì **chia** để ra một phần. Bài hỏi phần còn lại thì phải trừ ở bước cuối.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì nhân; biết cả số thì chia.
+**Lỗi thường gặp:** Chia thay vì nhân khi đã biết giá trị một phần. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
 ### Bài E.4
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm số khi biết một phần mấy của nó.” · b) “Một phần mấy của một số là …, tìm số đó” · c) Quan hệ ngược của phép chia · d) 1 phần 3 của một số là 7. Tìm số đó. → 21 · e) Chia thay vì nhân. · f) Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay.
-**Hướng giải:** Nếu một phần mấy của một số bằng a thì số đó bằng a nhân với mẫu số. Vì số đó được chia thành mấy phần bằng nhau, mỗi phần bằng a.
-**Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
-**Lỗi thường gặp:** Chia thay vì nhân. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm một phần mấy của một số.” · b) Cụm “một phần mấy của …” · c) Phân số dạng một phần mấy · d) Tìm 1 phần 4 của 20. → 5 · e) Nhân thay vì chia. · f) Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay.
+**Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
+**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
+**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.5
-**Đáp số:** a) “Hôm nay nhóm mình nói về Tìm phân số của một số qua nhiều bước.” · b) Cụm “… số còn lại” · c) Phân số một phần mấy, phép trừ liên tiếp · d) Có 24 quyển vở, phát 1 phần 2, rồi phát 1 phần 3 số còn lại. Còn mấy quyển? → 8 quyển · e) Lấy cả hai phân số tính trên tổng ban đầu. · f) Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh.
-**Hướng giải:** Bước 1: tính số vở phát ngày đầu và số vở còn lại sau ngày đầu. Bước 2: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu. Bước 3: trừ tiếp để ra số cuối cùng.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cụm “số còn lại” đổi hẳn số bị chia ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Đọc bảng số liệu.” · b) Đề cho bảng số liệu kèm nhiều câu hỏi · c) Thống kê đơn giản, trung bình cộng · d) Ba ngày bán 5, 8, 11 quyển. Trung bình mỗi ngày mấy quyển? → 8 quyển · e) Đọc lệch cột nên gán nhầm số cho ngày khác. · f) Tính tổng một lần rồi dùng lại cho các câu sau.
+**Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số ngày.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một ngày.
+**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho ngày khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ---

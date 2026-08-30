@@ -1,0 +1,210 @@
+# -*- coding: utf-8 -*-
+"""SƠ ĐỒ ĐỌC VỊ ĐỀ BÀI — tám nhóm chuyên đề.
+
+“Đọc vị” là trả lời xong năm câu hỏi trước khi đặt bút tính:
+    1. Đề đang nói về cái gì?          → nhóm chuyên đề
+    2. Dấu hiệu nào trong đề?          → dạng bài
+    3. Kiến thức nào phải dùng?        → công thức gốc
+    4. Làm theo phương pháp nào?       → các bước
+    5. Có lối tắt nào không, bẫy ở đâu? → tốc độ và độ an toàn
+
+Mỗi nhóm có một **cây quyết định** do người biên soạn viết: dãy câu hỏi
+đóng — mở, hỏi theo đúng thứ tự mà một học sinh giỏi tự hỏi trong đầu.
+Bảng dấu hiệu chi tiết bên dưới cây được máy rút thẳng từ thư viện mẫu bài
+nên luôn khớp với đề thật mà học viên đang làm.
+
+Cấu trúc mỗi nút của cây:  (câu hỏi, kết luận khi ĐÚNG, ghi chú khi SAI)
+Nếu "kết luận khi ĐÚNG" bắt đầu bằng "→" thì đó là tên một dạng bài.
+"""
+
+CAU_MO = {
+    "A": "Đề nói về **bản thân các con số** — chữ số, hàng, chia hết, tận cùng?",
+    "B": "Đề bảo **tính** một biểu thức, hay tìm x trong một phép tính?",
+    "C": "Đề cho một **dãy** số, dãy hình, hoặc hỏi số hạng thứ mấy?",
+    "D": "Đề là một **câu chuyện có lời văn**, hỏi tìm một hay vài đại lượng?",
+    "E": "Đề có **đơn vị đo** — mét, ki-lô-gam, lít, giờ, đồng?",
+    "F": "Đề có **hình vẽ** hoặc nói về chu vi, diện tích, thể tích?",
+    "G": "Đề hỏi **có bao nhiêu cách**, **ít nhất bao nhiêu**, hay suy luận ai làm gì?",
+    "H": "Đề có **phân số**, **số thập phân**, **phần trăm**, hay một bảng số liệu?",
+}
+
+CAY = {
+    "A": [
+        ("Đề hỏi chữ số ở một hàng, hoặc bảo viết số thành tổng?",
+         "→ Cấu tạo số: đánh số hàng từ phải sang trái",
+         "Chưa phải; đọc tiếp"),
+        ("Đề hỏi “có chia hết cho … không”, hoặc “chia … dư mấy”?",
+         "→ Dấu hiệu chia hết: 2 và 5 nhìn đuôi, 3 và 9 nhìn tổng chữ số",
+         "Chưa phải; đọc tiếp"),
+        ("Đề chỉ hỏi **chữ số tận cùng**, không hỏi kết quả?",
+         "→ Chữ số tận cùng: che phần đầu, chỉ tính với chữ số cuối",
+         "Chưa phải; đọc tiếp"),
+        ("Đề cho một bộ chữ số và bảo lập số?",
+         "→ Lập số và đếm số: cố định hàng cao nhất rồi hoán vị",
+         "Chưa phải; đọc tiếp"),
+        ("Đề mô tả quan hệ giữa các chữ số của một số cần tìm?",
+         "→ Cấu tạo số nâng cao: đặt ẩn cho từng chữ số, viết số theo cấu tạo",
+         "Nếu đến đây vẫn chưa khớp thì bài không thuộc nhóm A — quay lại câu mở đầu"),
+    ],
+    "B": [
+        ("Trong biểu thức có chữ **x**?",
+         "→ Tìm thành phần chưa biết: gọi tên vai trò của x rồi dùng quy tắc",
+         "Chưa phải; đọc tiếp"),
+        ("Đề ghi “tính bằng cách thuận tiện nhất”?",
+         "→ Tính nhanh: quét tìm cặp tròn, thừa số chung, thừa số 0 trước khi tính",
+         "Chưa phải; đọc tiếp"),
+        ("Biểu thức có dấu ba chấm — một dãy cộng dài?",
+         "→ Tổng dãy cách đều: đếm số hạng rồi (đầu + cuối) × số hạng : 2",
+         "Chưa phải; đọc tiếp"),
+        ("Hai vế có phần giống hệt nhau, đề bảo so sánh?",
+         "→ So sánh không cần tính: gạch bỏ phần chung, so phần riêng",
+         "Chưa phải; đọc tiếp"),
+        ("Còn lại: chỉ là một biểu thức cần tính giá trị?",
+         "→ Thứ tự thực hiện: ngoặc → nhân chia → cộng trừ",
+         "Không thuộc nhóm B — quay lại câu mở đầu"),
+    ],
+    "C": [
+        ("Lấy số sau trừ số trước, các hiệu có bằng nhau không?",
+         "→ Dãy cách đều: dùng công thức số hạng thứ n và tổng dãy",
+         "Chưa đều; thử tiếp"),
+        ("Lấy số sau chia số trước, các thương có bằng nhau không?",
+         "→ Dãy nhân: nhân tiếp với thương ấy",
+         "Chưa đều; thử tiếp"),
+        ("Dãy các hiệu có cách đều không?",
+         "→ Dãy hiệu bậc hai: số hạng thứ n = số đầu + tổng (n − 1) hiệu đầu",
+         "Chưa đều; thử tiếp"),
+        ("Dãy có lặp lại một nhóm số cố định?",
+         "→ Dãy tuần hoàn: chia vị trí cho độ dài chu kì, xét số dư",
+         "Chưa phải; thử tiếp"),
+        ("Đề nói về trồng cây, cột điện, cưa gỗ, số tiết học?",
+         "→ Quan hệ số điểm – số khoảng: tính số khoảng trước, rồi cộng 1, bằng, hay trừ 1",
+         "Không thuộc nhóm C — quay lại câu mở đầu"),
+    ],
+    "D": [
+        ("Đề cho **tổng** và **hiệu** của hai đại lượng?",
+         "→ Tổng – hiệu: số bé = (tổng − hiệu) : 2",
+         "Chưa đủ hai dữ kiện ấy; đọc tiếp"),
+        ("Đề cho **tổng** và **tỉ số** (gấp mấy lần, bằng mấy phần mấy)?",
+         "→ Tổng – tỉ: chia tổng cho **tổng số phần**",
+         "Chưa phải; đọc tiếp"),
+        ("Đề cho **hiệu** và **tỉ số**?",
+         "→ Hiệu – tỉ: chia hiệu cho **hiệu số phần**",
+         "Chưa phải; đọc tiếp"),
+        ("Đề có cụm “trung bình mỗi …”?",
+         "→ Trung bình cộng: đi qua **tổng** làm trung gian",
+         "Chưa phải; đọc tiếp"),
+        ("Đề cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại?",
+         "→ Rút về đơn vị hoặc dùng tỉ số; hỏi trước: cùng tăng hay ngược chiều?",
+         "Chưa phải; đọc tiếp"),
+        ("Đề có vận tốc, quãng đường, thời gian, hoặc hai xe gặp nhau?",
+         "→ Chuyển động: ngược chiều dùng **tổng** vận tốc, cùng chiều dùng **hiệu**",
+         "Chưa phải; đọc tiếp"),
+        ("Đề nói “làm một mình trong … giờ” rồi “cùng làm”?",
+         "→ Công việc chung: cộng **năng suất** một giờ, không cộng thời gian",
+         "Chưa phải; đọc tiếp"),
+        ("Đề có mốc thời gian: hiện nay, sau … năm, cách đây … năm?",
+         "→ Bài toán tuổi: bám vào **hiệu số tuổi không đổi**",
+         "Chưa phải; đọc tiếp"),
+        ("Đề nói “nếu … thì hai bên bằng nhau”, hoặc dữ kiện bị mô tả vòng?",
+         "→ Dạng ẩn: dịch câu mô tả thành một con số rồi quay lại các dạng chuẩn ở trên",
+         "Không thuộc nhóm D — quay lại câu mở đầu"),
+    ],
+    "E": [
+        ("Hai vế của đề dùng **hai đơn vị khác nhau**?",
+         "→ Đổi về cùng đơn vị trước, rồi mới tính hoặc so sánh",
+         "Cùng đơn vị rồi; đọc tiếp"),
+        ("Đơn vị có mũ hai (m², cm², ha) hay mũ ba (m³, cm³, lít)?",
+         "→ Nhớ bậc nhảy: độ dài 10, diện tích 100, thể tích 1 000",
+         "Không phải; đọc tiếp"),
+        ("Đề nói về giờ, phút, giây, hoặc ngày tháng?",
+         "→ Cơ số 60 và chu kì 7: đổi hết về phút rồi tính, cuối cùng đổi lại",
+         "Không phải; đọc tiếp"),
+        ("Đề có tiền, giá, chiết khấu, thuế?",
+         "→ Tính tiền hàng trước; mỗi lần phần trăm phải xác định lại mốc 100%",
+         "Không phải; đọc tiếp"),
+        ("Đề có vận tốc kèm đơn vị km/giờ hay m/giây?",
+         "→ s = v × t; kiểm tra ba đơn vị có khớp nhau không",
+         "Không thuộc nhóm E — quay lại câu mở đầu"),
+    ],
+    "F": [
+        ("Đề hỏi **xung quanh**, **rào**, **viền**, **đi một vòng**?",
+         "→ Chu vi; đơn vị đáp số là đơn vị độ dài",
+         "Không phải; đọc tiếp"),
+        ("Đề hỏi **lát gạch**, **trải thảm**, **phủ kín**, **trồng khắp**?",
+         "→ Diện tích; đơn vị đáp số có mũ hai",
+         "Không phải; đọc tiếp"),
+        ("Đề nói về bể nước, thùng, khối, hoặc hỏi chứa được bao nhiêu?",
+         "→ Thể tích; chú ý chiều cao là **mực nước** hay chiều cao vật chứa",
+         "Không phải; đọc tiếp"),
+        ("Đề bảo đếm hình trong một hình vẽ?",
+         "→ Đếm có phân loại: theo cỡ, theo đường kẻ, hoặc theo cách chọn hai điểm",
+         "Không phải; đọc tiếp"),
+        ("Đề nói tăng, giảm, gấp một hoặc hai chiều?",
+         "→ Biến thiên: gấp k lần cả hai chiều thì diện tích gấp k × k, chu vi chỉ gấp k",
+         "Không phải; đọc tiếp"),
+        ("Đề nói cắt, ghép, xếp hình?",
+         "→ Diện tích cộng được, **chu vi thì không**; tô lại đường bao rồi tính",
+         "Không thuộc nhóm F — quay lại câu mở đầu"),
+    ],
+    "G": [
+        ("Đề hỏi “có bao nhiêu **cách**”?",
+         "→ Quy tắc đếm: hai việc nối tiếp thì nhân, hai khả năng rời nhau thì cộng",
+         "Không phải; đọc tiếp"),
+        ("Đề hỏi “**ít nhất** bao nhiêu để **chắc chắn**”?",
+         "→ Nguyên lý ngăn kéo: dựng trường hợp xấu nhất rồi cộng 1",
+         "Không phải; đọc tiếp"),
+        ("Đề nói mỗi người với tất cả những người còn lại, hoặc hai … bất kì?",
+         "→ Đếm cặp: n × (n − 1) : 2, chia 2 vì mỗi cặp đếm hai lần",
+         "Không phải; đọc tiếp"),
+        ("Đề có “cả hai”, “ít nhất một”, “không … nào”?",
+         "→ Nguyên lý bù trừ: vẽ sơ đồ Ven, điền miền giữa trước",
+         "Không phải; đọc tiếp"),
+        ("Đề cho các câu nói, biết mấy người nói thật?",
+         "→ Nói thật – nói dối: tìm cặp câu phủ định nhau làm điểm tựa",
+         "Không phải; đọc tiếp"),
+        ("Đề mô tả một quá trình lặp nhiều bước rồi hỏi trạng thái cuối?",
+         "→ Bất biến: tìm đại lượng không đổi qua mỗi bước",
+         "Không phải; đọc tiếp"),
+        ("Đề nói cân đĩa không có quả cân?",
+         "→ Chia ba mỗi lần cân, vì cân đĩa cho ba kết quả",
+         "Không thuộc nhóm G — quay lại câu mở đầu"),
+    ],
+    "H": [
+        ("Đề bảo rút gọn, quy đồng, hoặc so sánh phân số?",
+         "→ Cùng mẫu so tử; cùng tử thì mẫu bé hơn là phân số lớn hơn",
+         "Không phải; đọc tiếp"),
+        ("Đề có cụm “… của …” đi với một phân số?",
+         "→ Tìm phân số của một số; đọc kĩ **của số nào**",
+         "Không phải; đọc tiếp"),
+        ("Đề có kí hiệu %?",
+         "→ Ba dạng phần trăm: tìm tỉ số, tìm giá trị phần, tìm toàn bộ. "
+         "Xác định đại lượng nào ứng với 100%",
+         "Không phải; đọc tiếp"),
+        ("Đề có hai lần thay đổi phần trăm liên tiếp?",
+         "→ Mốc 100% **đổi sau mỗi bước**; tính tuần tự, không cộng trừ hai tỉ lệ",
+         "Không phải; đọc tiếp"),
+        ("Đề cho một bảng hoặc một biểu đồ?",
+         "→ Đọc chú thích trước, rồi quy về tổng, so sánh, trung bình cộng, tỉ số phần trăm",
+         "Không thuộc nhóm H — quay lại câu mở đầu"),
+    ],
+}
+
+# Ba câu hỏi cuối cùng, dùng chung cho mọi nhóm, hỏi sau khi đã gọi tên được dạng bài.
+CHOT = [
+    "Đề hỏi **cái gì** — mình sắp trả lời đúng câu ấy chứ?",
+    "Đáp số phải mang **đơn vị** nào?",
+    "Có **bẫy** nào trong bài này không — đơn vị lệch, mốc đổi, hay số dư bị bỏ quên?",
+]
+
+# Lỗi đọc vị kinh điển: đọc sai một chữ là đi sai cả bài.
+DOC_NHAM = [
+    ("“gấp … lần” và “kém … lần”", "một cái nhân, một cái chia"),
+    ("“nhiều hơn” và “gấp”", "một cái cộng, một cái nhân"),
+    ("“của số đó” và “của số còn lại”", "đổi hẳn số bị nhân ở bước sau"),
+    ("“tổng” và “hiệu”", "quyết định chia cho tổng số phần hay hiệu số phần"),
+    ("“xung quanh” và “khắp mặt”", "một cái chu vi, một cái diện tích"),
+    ("“ít nhất để chắc chắn” và “ít nhất có thể”",
+     "một cái xét trường hợp xấu nhất, một cái xét trường hợp may nhất"),
+    ("“ngược chiều” và “cùng chiều”", "một cái tổng vận tốc, một cái hiệu vận tốc"),
+    ("“lãi bao nhiêu phần trăm”", "luôn tính theo **giá mua**, không theo giá bán"),
+]

@@ -43,17 +43,33 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Dãy cách đều, dãy nhân, dãy hiệu tăng đều
-> 2. Phép chia có dư, tính tuần hoàn
-> 3. Dãy số cách đều
-> 4. Dãy cách đều
+> 2. Dãy số cách đều
+> 3. Dãy cách đều
+> 4. Phép chia có dư, tính tuần hoàn
 
 ---
 
 ## PHẦN A — SƠ ĐỒ TƯ DUY DẠNG BÀI · Mức M1 — Nhận biết · 10 phút · 10 điểm
 
-### Bài 1. (2 điểm) Bảng tổng quát các dạng bài của chương
+### Bài 1. (2 điểm) Cây quyết định đọc vị và bảng tổng quát dạng bài
 
-Kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp. Điền cột thứ nhất.
+Đọc cây quyết định của nhóm **C — Dãy số & Quy luật** dưới đây, dừng ở câu hỏi đầu tiên trả lời ĐÚNG. Bản đầy đủ ở `10-so-do-doc-vi/so-do-C-L3.md`.
+
+```
+ĐỌC ĐỀ → Đề cho một dãy số, dãy hình, hoặc hỏi số hạng thứ mấy?
+1. Lấy số sau trừ số trước, các hiệu có bằng nhau không?
+     ĐÚNG → Dãy cách đều: dùng công thức số hạng thứ n và tổng dãy
+2. Lấy số sau chia số trước, các thương có bằng nhau không?
+     ĐÚNG → Dãy nhân: nhân tiếp với thương ấy
+3. Dãy các hiệu có cách đều không?
+     ĐÚNG → Dãy hiệu bậc hai: số hạng thứ n = số đầu + tổng (n − 1) hiệu đầu
+4. Dãy có lặp lại một nhóm số cố định?
+     ĐÚNG → Dãy tuần hoàn: chia vị trí cho độ dài chu kì, xét số dư
+5. Đề nói về trồng cây, cột điện, cưa gỗ, số tiết học?
+     ĐÚNG → Quan hệ số điểm – số khoảng: tính số khoảng trước, rồi cộng 1, bằng, hay trừ 1
+```
+
+Sau đó kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp, rồi điền cột thứ nhất.
 
 a) Dạng bài thứ 1 của chương?
 b) Dạng bài thứ 2 của chương?
@@ -67,211 +83,213 @@ f) Dạng bài thứ 6 của chương?
 Với mỗi dạng bài dưới đây, điền cột **Dấu hiệu nhận biết** của bảng.
 
 a) Dạng “Dãy tuần hoàn” — dấu hiệu nhận biết?
-b) Dạng “Tìm quy luật dãy cách đều” — dấu hiệu nhận biết?
-c) Dạng “Bài toán trồng cây” — dấu hiệu nhận biết?
-d) Dạng “Tìm quy luật dãy số” — dấu hiệu nhận biết?
+b) Dạng “Tìm quy luật dãy số” — dấu hiệu nhận biết?
+c) Dạng “Tìm quy luật dãy cách đều” — dấu hiệu nhận biết?
+d) Dạng “Đếm số hạng dãy cách đều theo điều kiện” — dấu hiệu nhận biết?
 e) Dạng “Điền số hạng còn thiếu của dãy cách đều” — dấu hiệu nhận biết?
 
 ### Bài 3. (2 điểm) Điền cột “Phương pháp áp dụng”
 
 Với mỗi dạng bài dưới đây, điền cột **Phương pháp áp dụng** của bảng.
 
-a) Dạng “Bài toán trồng cây” — phương pháp áp dụng?
-b) Dạng “Tìm quy luật dãy số” — phương pháp áp dụng?
+a) Dạng “Tìm quy luật dãy cách đều” — phương pháp áp dụng?
+b) Dạng “Đếm số hạng dãy cách đều theo điều kiện” — phương pháp áp dụng?
 c) Dạng “Điền số hạng còn thiếu của dãy cách đều” — phương pháp áp dụng?
-d) Dạng “Đếm số hạng dãy cách đều” — phương pháp áp dụng?
-e) Dạng “Dãy tuần hoàn” — phương pháp áp dụng?
+d) Dạng “Dãy có hiệu tăng đều” — phương pháp áp dụng?
+e) Dạng “Điền số hạng còn thiếu” — phương pháp áp dụng?
 
 ### Bài 4. (2 điểm) Điền cột “Kiến thức phải thuộc”
 
 Với mỗi dạng bài dưới đây, điền cột **Kiến thức phải thuộc** của bảng.
 
 a) Dạng “Điền số hạng còn thiếu của dãy cách đều” — kiến thức phải thuộc?
-b) Dạng “Đếm số hạng dãy cách đều” — kiến thức phải thuộc?
-c) Dạng “Dãy tuần hoàn” — kiến thức phải thuộc?
-d) Dạng “Tìm quy luật dãy cách đều” — kiến thức phải thuộc?
-e) Dạng “Bài toán trồng cây” — kiến thức phải thuộc?
+b) Dạng “Dãy có hiệu tăng đều” — kiến thức phải thuộc?
+c) Dạng “Điền số hạng còn thiếu” — kiến thức phải thuộc?
+d) Dạng “Bài toán trồng cây” — kiến thức phải thuộc?
+e) Dạng “Đếm số hạng dãy cách đều” — kiến thức phải thuộc?
 
 ### Bài 5. (2 điểm) Điền cột “Cách xử lý nhanh nhất”
 
 Với mỗi dạng bài dưới đây, điền cột **Cách xử lý nhanh nhất** của bảng.
 
-a) Dạng “Dãy tuần hoàn” — cách xử lý nhanh nhất?
-b) Dạng “Tìm quy luật dãy cách đều” — cách xử lý nhanh nhất?
-c) Dạng “Bài toán trồng cây” — cách xử lý nhanh nhất?
-d) Dạng “Tìm quy luật dãy số” — cách xử lý nhanh nhất?
-e) Dạng “Điền số hạng còn thiếu của dãy cách đều” — cách xử lý nhanh nhất?
+a) Dạng “Điền số hạng còn thiếu” — cách xử lý nhanh nhất?
+b) Dạng “Bài toán trồng cây” — cách xử lý nhanh nhất?
+c) Dạng “Đếm số hạng dãy cách đều” — cách xử lý nhanh nhất?
+d) Dạng “Quy luật hình đưa về dãy số” — cách xử lý nhanh nhất?
+e) Dạng “Dãy tuần hoàn” — cách xử lý nhanh nhất?
 
 ---
 
 ## PHẦN B — DẠNG 1 – DẠNG 2 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đọc bảng số liệu
-
-Bảng ghi số bông hoa mỗi bạn gấp được: Quân: 20 · Tuấn: 19 · Ngọc: 4 · Minh: 7.
-
-a) Cả bốn bạn gấp được bao nhiêu bông hoa?
-b) Bạn nào gấp được nhiều nhất?
-c) Bạn nào gấp được ít nhất?
-d) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu bông?
-e) Nếu bốn bạn khác gấp được 11, 5, 22, 18 bông thì trung bình mỗi bạn gấp được bao nhiêu bông?
-
-### Bài 2. (5 điểm) Đếm số hạng của dãy cách đều
+### Bài 1. (5 điểm) Đếm số hạng của dãy cách đều
 
 Đếm số số hạng của mỗi dãy.
 
-a) Dãy 4, 6, 8, …, 30 có bao nhiêu số hạng?
-b) Dãy 17, 22, 27, …, 42 có bao nhiêu số hạng?
-c) Dãy 14, 17, 20, …, 128 có bao nhiêu số hạng?
-d) Dãy 11, 13, 15, …, 67 có bao nhiêu số hạng?
-e) Dãy 9, 19, 29, …, 209 có bao nhiêu số hạng?
+a) Dãy 15, 20, 25, …, 55 có bao nhiêu số hạng?
+b) Dãy 11, 15, 19, …, 59 có bao nhiêu số hạng?
+c) Dãy 9, 13, 17, …, 53 có bao nhiêu số hạng?
+d) Dãy 17, 20, 23, …, 74 có bao nhiêu số hạng?
+e) Dãy 17, 21, 25, …, 169 có bao nhiêu số hạng?
+f) Dãy 4, 9, 14, …, 189 có bao nhiêu số hạng?
 
-### Bài 3. (5 điểm) Đếm số cách chọn bằng quy tắc nhân
+### Bài 2. (5 điểm) Điền số còn thiếu trong dãy
 
-Vẽ sơ đồ cây rồi đếm.
+Điền số thích hợp vào chỗ chấm.
 
-a) Có 2 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-b) Có 6 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-c) Có 4 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-d) Có 3 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-e) Có 6 loại bánh và 5 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-f) Có 5 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-g) Có 5 loại bánh và 5 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+a) 24, 26, 28, …, 32, 34
+b) 16, 18, 20, 22, …, 26
+c) 29, 31, …, 35, 37, 39
+d) 10, 13, …, 19, 22, 25
+e) 21, 27, 33, …, 45, 51
+f) 16, 22, 28, 34, …, 46
+g) 19, 22, …, 28, 31, 34
 
-### Bài 4. (5 điểm) Bài toán tổng – hiệu có lời văn
-
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
-
-a) Đội Một và nhóm Hoa Phượng trồng được 718 cây. Đội Một trồng nhiều hơn nhóm Hoa Phượng 154 cây. Mỗi tổ trồng bao nhiêu cây?
-b) Kho B và kho A chứa tất cả 276 kg xi măng. Kho B chứa nhiều hơn kho A 44 kg. Mỗi nơi chứa bao nhiêu kg?
-c) Hai lớp 5A và 4C có tất cả 360 quyển sách. Lớp 5A có nhiều hơn lớp 4C 112 quyển. Mỗi lớp có bao nhiêu quyển?
-d) Tổ Một và tổ Ba trồng được 532 cây. Tổ Một trồng nhiều hơn tổ Ba 116 cây. Mỗi tổ trồng bao nhiêu cây?
-e) Cửa hàng và xưởng chứa tất cả 396 kg gạo. Cửa hàng chứa nhiều hơn xưởng 32 kg. Mỗi nơi chứa bao nhiêu kg?
-f) Hai lớp 5A và 3A có tất cả 204 quyển sách. Lớp 5A có nhiều hơn lớp 3A 68 quyển. Mỗi lớp có bao nhiêu quyển?
-
-### Bài 5. (5 điểm) Tính nhanh bằng cách ghép số tròn
+### Bài 3. (5 điểm) Tính nhanh bằng cách ghép số tròn
 
 Tính bằng cách thuận tiện nhất.
 
-a) 77 + 25 + 23 + 75
-b) 375 + 75 − 75
-c) 47 + 48 − 48
-d) 75 + 148 + 25
-e) 71 + 12 + 29 + 88
-f) 78 + 337 + 22
+a) 71 + 123 + 29
+b) 72 + 20 + 28 + 80
+c) 353 + 55 − 55
+d) 16 + 12 + 84 + 88
+e) 122 + 81 − 81
+
+### Bài 4. (5 điểm) Nhân, chia với số có một chữ số
+
+Đặt tính rồi tính.
+
+a) 1 453 : 3
+b) 211 × 8
+c) 1 479 : 3
+d) 214 × 8
+e) 1 202 : 5
+f) 4 109 : 7
+g) 640 × 6
+h) 1 420 : 4
+
+### Bài 5. (5 điểm) Tìm x và tính chất của phép nhân
+
+Tìm x hoặc điền số thích hợp.
+
+a) x + 75 = 432
+b) 4 × 295 = 295 × …
+c) 256 × 1 × 0 = …
+d) x − 8 = 70
+e) x + 208 = 392
+f) x − 246 = 395
+g) 145 × 1 × 0 = …
 
 ---
 
 ## PHẦN C — DẠNG 3 – DẠNG 4 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Trung bình cộng trong tình huống thực tế
+### Bài 1. (5 điểm) Hình tròn: tâm, bán kính, đường kính
 
-Giải từng bài toán nhỏ.
+Vẽ hình tròn và ghi kí hiệu lên hình.
 
-a) 6 ngày đầu tuần một cửa hàng bán được lần lượt 124, 129, 126, 115, 113, 131 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-b) Trung bình mỗi ngày cửa hàng bán được 201 kg gạo. 3 ngày đầu bán được 207, 206, 200 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
-c) 3 ngày đầu tuần một cửa hàng bán được lần lượt 68, 76, 84 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-d) Trung bình mỗi ngày bán được 54 kg gạo. Hỏi 6 ngày bán được tất cả bao nhiêu ki-lô-gam?
+a) Hình tròn có đường kính 36 cm. Bán kính dài bao nhiêu?
+b) Hình tròn có bán kính 32 cm. Đường kính dài bao nhiêu?
+c) Hình tròn A có bán kính 33 cm, hình tròn B có đường kính 74 cm. Hình nào lớn hơn?
+d) Hình tròn có đường kính 42 cm. Bán kính dài bao nhiêu?
 
-### Bài 2. (5 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
+### Bài 2. (5 điểm) Chia kẹo — chia hết và chia có dư
 
-Tính và ghi rõ đơn vị.
+Ghi rõ thương và số dư trong mọi câu trả lời.
 
-a) Hình chữ nhật dài 34 cm, rộng 2 cm. Tính chu vi.
-b) Hình vuông cạnh 15 cm. Tính diện tích.
-c) Hình vuông cạnh 21 cm. Tính chu vi.
-d) Hình chữ nhật dài 6 cm, rộng 2 cm. Tính diện tích.
-e) Hình vuông cạnh 34 cm. Tính chu vi.
-f) Hình chữ nhật dài 16 cm, rộng 6 cm. Tính diện tích.
+a) Có 44 cái kẹo chia đều cho 10 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
+c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
+d) Nếu thêm 6 cái thì mỗi bạn được mấy cái?
+e) Nếu chỉ chia cho 9 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
+f) Số kẹo phải là số như thế nào để chia hết cho 10 bạn?
 
-### Bài 3. (5 điểm) Đổi đơn vị đo ở lớp 3
+### Bài 3. (5 điểm) Tổng – hiệu bằng sơ đồ đoạn thẳng
 
-Điền số thích hợp.
+Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) 22 m = … cm
-b) 51 km = … m
-c) 42 cm = … mm
-d) 86 l = … ml
-e) 19 kg = … g
-f) 34 cm = … mm
+a) Yến và Bình có tất cả 106 viên bi. Yến có nhiều hơn Bình 32 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Quân và Nam có tất cả 54 viên bi. Quân có nhiều hơn Nam 14 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Ngọc và Minh có tất cả 94 viên bi. Ngọc có nhiều hơn Minh 28 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Yến và Chi có tất cả 184 viên bi. Yến có nhiều hơn Chi 20 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
-### Bài 4. (5 điểm) Phép chia có dư
+### Bài 4. (5 điểm) Tiền Việt Nam: mua bán, đổi tiền, trả lại
 
-Thực hiện phép chia, ghi rõ thương và số dư.
+Ghi rõ đơn vị đồng ở mọi kết quả.
 
-a) 181 : 4 = ? (dư ?)
-b) 579 : 5 = ? (dư ?)
-c) 562 : 4 = ? (dư ?)
-d) 1 767 : 6 = ? (dư ?)
-e) 386 : 6 = ? (dư ?)
-f) 1 148 : 3 = ? (dư ?)
+a) Đổi một tờ 10 000 đồng ra các tờ 5 000 đồng thì được mấy tờ?
+b) Mua 3 quyển vở, mỗi quyển 15 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+c) Mua 5 quyển vở, mỗi quyển 25 000 đồng. Hết bao nhiêu tiền?
+d) Mua 6 quyển vở, mỗi quyển 5 000 đồng. Đưa cô bán hàng một tờ 50 000 đồng. Cô phải trả lại bao nhiêu tiền?
+e) Mua 5 quyển vở, mỗi quyển 12 000 đồng. Hết bao nhiêu tiền?
 
-### Bài 5. (5 điểm) Đếm số hạng của dãy cách đều
+### Bài 5. (5 điểm) Đếm số cách chọn bằng quy tắc nhân
 
-Đếm số số hạng của mỗi dãy.
+Vẽ sơ đồ cây rồi đếm.
 
-a) Dãy 2, 12, 22, …, 132 có bao nhiêu số hạng?
-b) Dãy 12, 16, 20, …, 96 có bao nhiêu số hạng?
-c) Dãy 10, 14, 18, …, 86 có bao nhiêu số hạng?
-d) Dãy 18, 22, 26, …, 58 có bao nhiêu số hạng?
-e) Dãy 15, 20, 25, …, 200 có bao nhiêu số hạng?
-f) Dãy 4, 6, 8, …, 40 có bao nhiêu số hạng?
-g) Dãy 20, 24, 28, …, 56 có bao nhiêu số hạng?
+a) Có 5 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+b) Có 2 loại bánh và 5 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+c) Có 2 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+d) Có 2 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+e) Có 6 loại bánh và 5 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+f) Có 3 loại bánh và 5 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+g) Có 2 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
 
 ---
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Bài toán giải bằng hai phép tính
+### Bài 1. (4 điểm) Dấu hiệu chia hết cho 2, 3, 5, 9
 
-Trình bày lời giải có câu trả lời cho từng bước.
+Không đặt tính chia, chỉ dùng dấu hiệu.
 
-a) Đội Một trồng được 60 cây. Tổ Một trồng được gấp 3 lần đội Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
-b) Nhóm Hoa Phượng trồng được 26 cây. Đội Hai trồng được gấp 4 lần nhóm Hoa Phượng. Hỏi cả hai tổ trồng được bao nhiêu cây?
-c) Đội Một trồng được 25 cây. Tổ Một trồng được gấp 4 lần đội Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
-d) Tổ Một trồng được 39 cây. Đội Hai trồng được gấp 4 lần tổ Một. Hỏi cả hai tổ trồng được bao nhiêu cây?
-e) Tổ Hai trồng được 54 cây. Đội Một trồng được gấp 4 lần tổ Hai. Hỏi cả hai tổ trồng được bao nhiêu cây?
-f) Nhóm Sao Mai trồng được 44 cây. Đội Một trồng được gấp 3 lần nhóm Sao Mai. Hỏi cả hai tổ trồng được bao nhiêu cây?
+a) Số 588 có chia hết cho 5 không? Vì sao?
+b) Số 9 734 có chia hết cho 2 không? Vì sao?
+c) Số 6 714 có chia hết cho 9 không? Vì sao?
+d) Số 9 679 có chia hết cho 3 không? Vì sao?
+e) Số 9 163 có chia hết cho 5 không? Vì sao?
+f) Số 6 276 có chia hết cho 9 không? Vì sao?
+g) Số 9 123 có chia hết cho 3 không? Vì sao?
+h) Số 4 285 có chia hết cho 2 không? Vì sao?
 
-### Bài 2. (4 điểm) Một phần mấy của một số — bài toán có lời văn
+### Bài 2. (4 điểm) Dãy hình xếp theo quy luật
 
-Trình bày lời giải hai bước.
+Vẽ ba hình đầu ra nháp rồi tìm quy luật.
 
-a) Một cửa hàng có 63 kg gạo, đã bán 1 phần 3 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-b) Một cửa hàng có 24 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-c) Một cửa hàng có 50 kg gạo, đã bán 1 phần 5 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
-d) Một cửa hàng có 20 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+a) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình trước 2 que. Hình thứ 2 có bao nhiêu que?
+b) Hình thứ 3 có bao nhiêu que?
+c) Hình thứ 17 có bao nhiêu que?
+d) Hình nào có đúng 14 que?
+e) Xếp 17 hình đầu tiên cần tất cả bao nhiêu que?
 
-### Bài 3. (4 điểm) Tính nhanh bằng cách quan sát
+### Bài 3. (4 điểm) Nguyên lý bù trừ với hai tập hợp
 
-Tính bằng cách thuận tiện nhất.
+Vẽ hai vòng tròn giao nhau và điền số vào từng miền.
 
-a) 5 × 228 × 0
-b) 174 + 59 − 59
-c) 14 + 321 + 86
-d) 319 + 62 − 62
+a) Lớp có 48 học sinh. Có 32 bạn thích môn Toán, 19 bạn thích môn Tiếng Việt, 11 bạn thích cả hai môn. Hỏi bao nhiêu bạn thích ít nhất một trong hai môn?
+b) Bao nhiêu bạn chỉ thích môn Toán?
+c) Bao nhiêu bạn chỉ thích môn Tiếng Việt?
+d) Bao nhiêu bạn không thích môn nào trong hai môn đó?
+e) Nếu cộng thẳng số bạn thích Toán với số bạn thích Tiếng Việt thì được bao nhiêu?
+f) Con số vừa cộng lớn hơn số bạn thích ít nhất một môn bao nhiêu? Vì sao?
 
 ### Bài 4. (4 điểm) Tìm quy luật của dãy số
 
 Tìm quy luật rồi viết số hạng tiếp theo.
 
-a) 9, 18, 36, 72, 144, …
-b) 9, 10, 12, 15, 19, …
-c) 2, 7, 12, 17, 22, …
-d) 3, 11, 19, 27, 35, …
-e) 3, 4, 6, 9, 13, …
-f) 5, 10, 20, 40, 80, …
+a) 5, 8, 11, 14, 17, …
+b) 4, 5, 7, 10, 14, …
+c) 4, 12, 36, 108, 324, …
+d) 3, 6, 12, 24, 48, …
 
-### Bài 5. (4 điểm) Lập số có ba chữ số khác nhau
+### Bài 5. (4 điểm) Một phần mấy của một số — bài toán có lời văn
 
-Cho ba chữ số **4, 7, 9**.
+Trình bày lời giải hai bước.
 
-a) Viết tất cả các số có ba chữ số khác nhau lập được, từ bé đến lớn.
-b) Lập được bao nhiêu số?
-c) Số lớn nhất là số nào?
-d) Số bé nhất là số nào?
-e) Hiệu của số lớn nhất và số bé nhất bằng bao nhiêu?
-f) Trong các số đó, có bao nhiêu số chẵn?
+a) Một cửa hàng có 100 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+b) Một cửa hàng có 44 kg gạo, đã bán 1 phần 4 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+c) Một cửa hàng có 95 kg gạo, đã bán 1 phần 5 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
+d) Một cửa hàng có 90 kg gạo, đã bán 1 phần 5 số gạo đó. Hỏi cửa hàng còn lại bao nhiêu ki-lô-gam gạo?
 
 ---
 
@@ -279,7 +297,7 @@ f) Trong các số đó, có bao nhiêu số chẵn?
 
 ### Bài 1. (4 điểm) Đọc vị đề số 1
 
-**Đề:** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 34, 49, 64, 79, …
+**Đề:** Tìm quy luật rồi viết số hạng tiếp theo. 4, 5, 7, 10, 14, …
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -290,7 +308,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 2. (4 điểm) Đọc vị đề số 2
 
-**Đề:** Tìm quy luật rồi viết số hạng tiếp theo. 1, 2, 4, 7, 11, …
+**Đề:** Đếm số lượng, không cần liệt kê. Có bao nhiêu số lẻ từ 190 đến 434?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -301,7 +319,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Đếm số số hạng của mỗi dãy. Dãy 15, 17, 19, …, 31 có bao nhiêu số hạng?
+**Đề:** Dãy bắt đầu bằng 3; hiệu giữa hai số hạng liên tiếp lần lượt là 1, 2, 3, 4, … Viết năm số hạng đầu của dãy.
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -312,7 +330,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 4. (4 điểm) Đọc vị đề số 4
 
-**Đề:** Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy. 34, 49, 64, 79, …
+**Đề:** Vẽ hình minh hoạ trước khi tính. Quanh một cái ao có chu vi 24 m, trồng cây cách nhau 2 m. Cần bao nhiêu cây?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -323,7 +341,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Tìm quy luật rồi viết số hạng tiếp theo. 1, 2, 4, 7, 11, …
+**Đề:** Vẽ ba hình đầu ra nháp rồi tìm quy luật. Hình thứ 1 có 6 que diêm, mỗi hình sau hơn hình trước 4 que. Hình thứ 2 có bao nhiêu que?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -345,157 +363,157 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Kể thiếu dạng bài. Phòng: Đếm số dạng rồi mới kể; kể xong đếm lại.
 
 ### Bài A.2
-**Đáp số:** a) Dãy lặp lại một nhóm số cố định · b) Dãy số kèm dấu … ở cuối · c) “Trồng cây”, “cột điện”, “quanh ao” · d) Dãy số kết thúc bằng dấu … · e) Dãy có ô trống ở giữa
+**Đáp số:** a) Dãy lặp lại một nhóm số cố định · b) Dãy số kết thúc bằng dấu … · c) Dãy số kèm dấu … ở cuối · d) “Có bao nhiêu số … từ … đến …” · e) Dãy có ô trống ở giữa
 **Hướng giải:** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.3
-**Đáp số:** a) Số khoảng rồi chọn công thức theo trường hợp · b) Thử hiệu → thử thương → thử dãy hiệu · c) Xác định khoảng cách từ cặp liền nhau đã biết · d) (cuối − đầu) : khoảng cách + 1 · e) Chia lấy dư để định vị
+**Đáp số:** a) Tính hiệu các cặp liên tiếp rồi cộng tiếp · b) Tìm hai đầu hợp lệ rồi đếm · c) Xác định khoảng cách từ cặp liền nhau đã biết · d) Lập dãy hiệu rồi cộng dần · e) Xác định khoảng cách từ cặp liền nhau
 **Hướng giải:** Cột “Phương pháp áp dụng” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.4
-**Đáp số:** a) Dãy số cách đều · b) Dãy cách đều · c) Phép chia có dư, tính tuần hoàn · d) Dãy số cách đều · e) Quan hệ số cây – số khoảng
+**Đáp số:** a) Dãy số cách đều · b) Dãy hiệu, tổng dãy cách đều · c) Dãy số cách đều · d) Quan hệ số cây – số khoảng · e) Dãy cách đều
 **Hướng giải:** Cột “Kiến thức phải thuộc” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.5
-**Đáp số:** a) Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư. · b) Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. · c) Khép kín thì số cây bằng đúng số khoảng. · d) Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. · e) Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy.
+**Đáp số:** a) Chỗ trống nằm giữa hai số đã biết thì bằng trung bình cộng của chúng. · b) Khép kín thì số cây bằng đúng số khoảng. · c) Dãy số liên tiếp từ a đến b có b − a + 1 số hạng. · d) Ba hình đầu là đủ để khẳng định quy luật cách đều. · e) Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư.
 **Hướng giải:** Cột “Cách xử lý nhanh nhất” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài B.1
-**Đáp số:** a) 50 · b) Quân (20 bông) · c) Ngọc (4 bông) · d) 16 · e) 14
-**Hướng giải:** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
-**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
-
-### Bài B.2
-**Đáp số:** a) 14 · b) 6 · c) 39 · d) 29 · e) 21
+**Đáp số:** a) 9 · b) 13 · c) 12 · d) 20 · e) 39 · f) 38
 **Hướng giải:** Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng ít hơn số số hạng đúng **1**.
 **Lỗi thường gặp:** Quên cộng 1. Phòng: Thử với dãy ngắn ba số để kiểm tra công thức.
 
+### Bài B.2
+**Đáp số:** a) 30 · b) 24 · c) 33 · d) 16 · e) 39 · f) 40 · g) 25
+**Hướng giải:** Tìm khoảng cách từ hai số liền nhau đã biết, rồi cộng khoảng cách ấy vào số đứng trước chỗ trống. Kiểm tra lại bằng số đứng sau.
+**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở chỗ có **hai số liền nhau** đã biết.
+**Lỗi thường gặp:** Lấy hiệu hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+
 ### Bài B.3
-**Đáp số:** a) 8 cách · b) 12 cách · c) 8 cách · d) 12 cách · e) 30 cách · f) 20 cách · g) 25 cách
-**Hướng giải:** Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
-**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
-
-### Bài B.4
-**Đáp số:** a) đội Một: 436 cây, nhóm Hoa Phượng: 282 cây · b) kho B: 160 kg, kho A: 116 kg · c) 5A: 236 quyển, 4C: 124 quyển · d) tổ Một: 324 cây, tổ Ba: 208 cây · e) cửa hàng: 214 kg, xưởng: 182 kg · f) 5A: 136 quyển, 3A: 68 quyển
-**Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
-
-### Bài B.5
-**Đáp số:** a) 200 · b) 375 · c) 47 · d) 248 · e) 200 · f) 437
+**Đáp số:** a) 223 · b) 200 · c) 353 · d) 200 · e) 122
 **Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 
+### Bài B.4
+**Đáp số:** a) 484 dư 1 · b) 1 688 · c) 493 · d) 1 712 · e) 240 dư 2 · f) 587 · g) 3 840 · h) 355
+**Hướng giải:** Nhân từ hàng đơn vị sang trái, nhớ sang hàng liền trước. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. Số dư luôn bé hơn số chia.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là bắt buộc viết một chữ số ở thương.
+**Lỗi thường gặp:** Quên chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
+
+### Bài B.5
+**Đáp số:** a) x = 357 · b) 4 · c) 0 · d) x = 78 · e) x = 184 · f) x = 641 · g) 0
+**Hướng giải:** Gọi tên vai trò của x trước: số hạng, số bị trừ hay số trừ. Phép nhân có tính giao hoán và kết hợp; nhân với 1 giữ nguyên, nhân với 0 luôn bằng 0.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu.
+**Lỗi thường gặp:** Áp dụng quy tắc của số trừ cho số bị trừ. Phòng: Viết ra vai trò của x trước khi viết phép tính.
+
 ### Bài C.1
-**Đáp số:** a) 123 kg · b) 191 kg · c) 76 kg · d) 324 kg
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
+**Đáp số:** a) 18 cm · b) 64 cm · c) B · d) 21 cm
+**Hướng giải:** Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
+**Lỗi thường gặp:** So bán kính của hình này với đường kính của hình kia. Phòng: Đổi hết về bán kính trước khi so sánh.
 
 ### Bài C.2
-**Đáp số:** a) 72 cm · b) 225 cm² · c) 84 cm · d) 12 cm² · e) 136 cm · f) 96 cm²
-**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi **cm**, diện tích ghi **cm²**.
-**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+**Đáp số:** a) mỗi bạn 4 cái, thừa 4 cái · b) 4 cái · c) 6 cái · d) 5 cái · e) mỗi bạn 4 cái, thừa 8 cái · f) phải là số chia hết cho 10
+**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
+**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
 
 ### Bài C.3
-**Đáp số:** a) 2 200 · b) 51 000 · c) 420 · d) 86 000 · e) 19 000 · f) 340
-**Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
-**Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
-**Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
+**Đáp số:** a) Yến: 69 viên, Bình: 37 viên · b) Quân: 34 viên, Nam: 20 viên · c) Ngọc: 61 viên, Minh: 33 viên · d) Yến: 102 viên, Chi: 82 viên
+**Hướng giải:** Vẽ hai đoạn thẳng, đoạn dài hơn đúng phần hiệu. Bớt phần hiệu đi thì hai đoạn bằng nhau; chia đôi tổng mới ra số bé, cộng hiệu ra số lớn.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: **Bớt hiệu rồi mới chia đôi** — đảo thứ tự là sai.
+**Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Tô phần hiệu bằng bút khác màu trên sơ đồ.
 
 ### Bài C.4
-**Đáp số:** a) 45 dư 1 · b) 115 dư 4 · c) 140 dư 2 · d) 294 dư 3 · e) 64 dư 2 · f) 382 dư 2
-**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
-**Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
-**Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Đáp số:** a) 2 tờ · b) 5 000 đồng · c) 125 000 đồng · d) 20 000 đồng · e) 60 000 đồng
+**Hướng giải:** Tính tiền hàng trước bằng phép nhân, rồi mới lấy tiền đưa trừ đi tiền hàng. Đổi tiền là phép chia: tờ lớn chia cho tờ nhỏ.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Phải tính **tiền hàng** trước khi trừ.
+**Lỗi thường gặp:** Lấy tiền đưa trừ ngay giá một quyển vở. Phòng: Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai.
 
 ### Bài C.5
-**Đáp số:** a) 14 · b) 22 · c) 20 · d) 11 · e) 38 · f) 19 · g) 10
-**Hướng giải:** Số số hạng = (số cuối − số đầu) : khoảng cách + 1. Phần chia cho biết số khoảng; số số hạng nhiều hơn số khoảng đúng 1.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng ít hơn số số hạng đúng **1**.
-**Lỗi thường gặp:** Quên cộng 1. Phòng: Thử với dãy ngắn ba số để kiểm tra công thức.
+**Đáp số:** a) 10 cách · b) 10 cách · c) 6 cách · d) 6 cách · e) 30 cách · f) 15 cách · g) 8 cách
+**Hướng giải:** Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
+**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
 
 ### Bài D.1
-**Đáp số:** a) 240 cây · b) 130 cây · c) 125 cây · d) 195 cây · e) 270 cây · f) 176 cây
-**Hướng giải:** BẪY — Đọc kĩ câu hỏi cuối. Bước 1: tìm đại lượng chưa biết bằng quan hệ gấp – kém. Bước 2: cộng hai đại lượng lại theo yêu cầu của đề. Mỗi bước phải có một câu lời giải riêng.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên phải cộng ở bước hai.
-**Lỗi thường gặp:** Dừng lại ở bước một, trả lời số cây của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
-**Gợi ý 3 tầng:** (1) Tổ thứ hai trồng được bao nhiêu cây? — (2) Đề hỏi số cây của một tổ hay cả hai tổ? — (3) Cộng hai kết quả lại.
+**Đáp số:** a) không (tận cùng là 8) · b) có (tận cùng là 4) · c) có (tổng các chữ số bằng 18) · d) không (tổng các chữ số bằng 31) · e) không (tận cùng là 3) · f) không (tổng các chữ số bằng 21) · g) có (tổng các chữ số bằng 15) · h) không (tận cùng là 5)
+**Hướng giải:** BẪY — Dấu hiệu của 2, 5 khác hẳn dấu hiệu của 3, 9. Chia hết cho 2: tận cùng 0, 2, 4, 6, 8. Chia hết cho 5: tận cùng 0 hoặc 5. Chia hết cho 3 hoặc 9: cộng các chữ số rồi xét tổng.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**.
+**Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2. Phòng: Ghi tổng các chữ số ra bên cạnh trước khi kết luận.
+**Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì nhìn chữ số cuối. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng vẫn còn lớn thì cộng tiếp một lần nữa.
 
 ### Bài D.2
-**Đáp số:** a) 42 kg · b) 18 kg · c) 40 kg · d) 15 kg
-**Hướng giải:** BẪY — Câu hỏi hỏi phần còn lại. Bước 1: tìm số gạo đã bán bằng cách chia tổng cho mẫu số. Bước 2: lấy tổng trừ đi số đã bán để ra số còn lại.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
-**Lỗi thường gặp:** Dừng ở bước một, trả lời số gạo đã bán. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
-**Gợi ý 3 tầng:** (1) Đã bán bao nhiêu ki-lô-gam? — (2) Đề hỏi số đã bán hay số còn lại? — (3) Lấy tổng trừ đi số đã bán.
+**Đáp số:** a) 6 · b) 8 · c) 36 · d) hình thứ 6 · e) 340
+**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số que các hình lập thành dãy cách đều. Số hạng thứ n = số đầu + (n − 1) × khoảng cách. Nhân với **(n − 1)** vì đếm khoảng, không đếm hình.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên thừa đúng một khoảng. Phòng: Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n.
+**Gợi ý 3 tầng:** (1) Từ hình 1 đến hình thứ n phải thêm mấy lần? — (2) Mỗi lần thêm bao nhiêu que? — (3) Cộng vào số que hình đầu.
 
 ### Bài D.3
-**Đáp số:** a) 0 · b) 174 · c) 421 · d) 319
-**Hướng giải:** BẪY — Thừa số 0. Trước khi tính, hãy nhìn cả biểu thức: có cặp nào cộng lại tròn trăm không, có thừa số 0 không, có hai số giống nhau cộng rồi trừ không. Nhận ra được thì viết đáp số gần như ngay lập tức.
-**Nhãn tư duy:** TD5, TD6. Điểm chốt: **Nhìn trước, tính sau** — đó là toàn bộ bí quyết tính nhanh.
-**Lỗi thường gặp:** Lao vào tính từ trái sang phải, bỏ lỡ mọi lối tắt. Phòng: Đọc hết biểu thức một lượt trước khi đặt bút.
-**Gợi ý 3 tầng:** (1) Có cặp nào cộng lại tròn trăm không? — (2) Có thừa số nào bằng 0 không? — (3) Có hai số giống nhau cộng rồi trừ không?
+**Đáp số:** a) 40 · b) 21 · c) 8 · d) 8 · e) 51 · f) 11, vì nhóm thích cả hai môn bị đếm hai lần
+**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
+**Lỗi thường gặp:** Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. Phòng: Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số.
+**Gợi ý 3 tầng:** (1) Bao nhiêu bạn thích cả hai môn? — (2) Chỉ thích Toán thì bằng số thích Toán trừ đi đâu? — (3) Cộng ba miền lại rồi lấy sĩ số trừ đi.
 
 ### Bài D.4
-**Đáp số:** a) 288 · b) 24 · c) 27 · d) 43 · e) 18 · f) 160
+**Đáp số:** a) 20 · b) 19 · c) 972 · d) 96
 **Hướng giải:** Thử theo thứ tự: (1) lấy hiệu hai số liên tiếp — bằng nhau thì là dãy cách đều; (2) lấy thương — bằng nhau thì là dãy nhân; (3) xem dãy hiệu có tăng đều không.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Thử đủ **ba hướng**, đừng dừng ở hướng thứ nhất.
 **Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
 **Gợi ý 3 tầng:** (1) Lấy hiệu các số liên tiếp — có bằng nhau không? — (2) Lấy thương — có bằng nhau không? — (3) Dãy hiệu có tăng đều không?
 
 ### Bài D.5
-**Đáp số:** a) 479 · 497 · 749 · 794 · 947 · 974 · b) 6 · c) 974 · d) 479 · e) 495 · f) 2
-**Hướng giải:** Chọn chữ số hàng trăm trước, rồi hàng chục, rồi hàng đơn vị; mỗi chữ số dùng đúng một lần. Viết theo nhóm cùng chữ số hàng trăm để không sót và không trùng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Viết **có thứ tự** thì mới chắc chắn đủ và không lặp.
-**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng. Phòng: Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại.
-**Gợi ý 3 tầng:** (1) Chữ số hàng trăm có mấy cách chọn? — (2) Với mỗi hàng trăm, hai chữ số còn lại xếp mấy cách? — (3) Viết theo nhóm để kiểm soát.
+**Đáp số:** a) 75 kg · b) 33 kg · c) 76 kg · d) 72 kg
+**Hướng giải:** BẪY — Câu hỏi hỏi phần còn lại. Bước 1: tìm số gạo đã bán bằng cách chia tổng cho mẫu số. Bước 2: lấy tổng trừ đi số đã bán để ra số còn lại.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
+**Lỗi thường gặp:** Dừng ở bước một, trả lời số gạo đã bán. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
+**Gợi ý 3 tầng:** (1) Đã bán bao nhiêu ki-lô-gam? — (2) Đề hỏi số đã bán hay số còn lại? — (3) Lấy tổng trừ đi số đã bán.
 
 ### Bài E.1
-**Đáp số:** a) Tìm quy luật dãy cách đều · b) Dãy số kèm dấu … ở cuối · c) Dãy số cách đều · d) Tính hiệu các cặp liên tiếp rồi cộng tiếp · e) Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. · f) Chỉ xét hai số đầu rồi vội kết luận.
+**Đáp số:** a) Tìm quy luật dãy số · b) Dãy số kết thúc bằng dấu … · c) Dãy cách đều, dãy nhân, dãy hiệu tăng đều · d) Thử hiệu → thử thương → thử dãy hiệu · e) Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. · f) Không tìm ra hiệu đều thì bỏ cuộc.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.2
-**Đáp số:** a) Tìm quy luật dãy số · b) Dãy số kết thúc bằng dấu … · c) Dãy cách đều, dãy nhân, dãy hiệu tăng đều · d) Thử hiệu → thử thương → thử dãy hiệu · e) Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. · f) Không tìm ra hiệu đều thì bỏ cuộc.
+**Đáp số:** a) Đếm số hạng dãy cách đều theo điều kiện · b) “Có bao nhiêu số … từ … đến …” · c) Dãy cách đều, dấu hiệu chia hết · d) Tìm hai đầu hợp lệ rồi đếm · e) Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. · f) Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
+**Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy. Phòng: Viết ba số đầu và ba số cuối của dãy trước khi áp công thức.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.3
-**Đáp số:** a) Đếm số hạng dãy cách đều · b) Dãy có số đầu, số cuối, khoảng cách đều · c) Dãy cách đều · d) (cuối − đầu) : khoảng cách + 1 · e) Dãy số liên tiếp từ a đến b có b − a + 1 số hạng. · f) Quên cộng 1.
+**Đáp số:** a) Dãy có hiệu tăng đều · b) Hiệu giữa các số hạng tăng đều đặn · c) Dãy hiệu, tổng dãy cách đều · d) Lập dãy hiệu rồi cộng dần · e) Số hạng thứ n = số đầu + (n − 1) × n : 2 khi hiệu là 1, 2, 3… · f) Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Quên cộng 1. Phòng: Thử với dãy ngắn ba số để kiểm tra công thức.
+**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu. Phòng: Luôn viết dãy hiệu trước khi kết luận không có quy luật.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.4
-**Đáp số:** a) Tìm quy luật dãy cách đều · b) Dãy số kèm dấu … ở cuối · c) Dãy số cách đều · d) Tính hiệu các cặp liên tiếp rồi cộng tiếp · e) Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. · f) Chỉ xét hai số đầu rồi vội kết luận.
+**Đáp số:** a) Bài toán trồng cây · b) “Trồng cây”, “cột điện”, “quanh ao” · c) Quan hệ số cây – số khoảng · d) Số khoảng rồi chọn công thức theo trường hợp · e) Khép kín thì số cây bằng đúng số khoảng. · f) Máy móc cộng 1 cho mọi trường hợp.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+**Lỗi thường gặp:** Máy móc cộng 1 cho mọi trường hợp. Phòng: Vẽ một hình nhỏ với ba khoảng để đếm thử.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.5
-**Đáp số:** a) Tìm quy luật dãy số · b) Dãy số kết thúc bằng dấu … · c) Dãy cách đều, dãy nhân, dãy hiệu tăng đều · d) Thử hiệu → thử thương → thử dãy hiệu · e) Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. · f) Không tìm ra hiệu đều thì bỏ cuộc.
+**Đáp số:** a) Quy luật hình đưa về dãy số · b) Hình xếp thêm đều đặn theo thứ tự · c) Dãy cách đều, số hạng thứ n · d) Lập bảng ba hình đầu rồi áp công thức · e) Ba hình đầu là đủ để khẳng định quy luật cách đều. · f) Nhân khoảng cách với n nên thừa đúng một khoảng.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Không tìm ra hiệu đều thì bỏ cuộc. Phòng: Viết dãy hiệu xuống ngay dưới dãy gốc.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên thừa đúng một khoảng. Phòng: Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ---

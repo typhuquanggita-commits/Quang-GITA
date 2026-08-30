@@ -30,197 +30,563 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) 1 280 · b) 768 · c) 324 · d) 512 · e) 1 536
-- **Bài I.2** — a) 952 638 · b) 365 442 · c) 1 006 307 · d) 1 146 908 · e) 1 059 941 · f) 1 487 919
-- **Bài I.3** — a) 45 · b) 28 · c) 50 · d) 42 · e) 56 · f) 14
-- **Bài I.4** — a) 64, 75, 86 · b) 74, 83, 92 · c) 39, 46, 53 · d) 38, 42, 46
-- **Bài I.5** — a) 362 · b) 437 · c) 512 · d) 812
+- **Bài I.1** — a) 1 875 · b) 162 · c) 768 · d) 1 250 · e) 1 875
+- **Bài I.2** — a) 18 · b) 46 · c) 47 · d) 46
+- **Bài I.3** — a) 40 · b) 99 313 và 99 315 · c) < · d) 3 738 000 · e) 10 000 · f) 8 423 100 · g) > · h) 3 842 341 và 3 842 343
+- **Bài I.4** — a) 36 · b) 45 · c) 57 · d) 60 · e) 75 · f) 84
+- **Bài I.5** — a) 56, 63, 70 · b) 111, 136, 161 · c) 44, 48, 52 · d) 56, 63, 70 · e) 59, 70, 81 · f) 55, 66, 77
 
 **Phần II**
 
-- **Bài II.1** — a) 24 · b) 28 · c) 32 · d) 36 · e) 44 · f) 420
-- **Bài II.2** — a) 194 · b) 158 · c) 25 · d) 188 · e) 190 · f) 64
-- **Bài II.3** — a) 12 · b) 18 · c) 144 · d) 64 · e) 15
-- **Bài II.4** — a) 585 · b) 525 · c) 1 250 · d) 1 170
-- **Bài II.5** — a) 31 · b) 3 tuần 6 ngày · c) XXI · d) không · e) XXI
+- **Bài II.1** — a) 640 · b) 1 825 · c) 1 080 · d) 1 010 · e) 1 270 · f) 6 525
+- **Bài II.2** — a) 17 · b) 32 · c) 68 · d) 80 · e) 83 · f) 1 276
+- **Bài II.3** — a) 47 · b) 32 · c) 110 · d) 144
+- **Bài II.4** — a) 29 · b) 198 · c) 169 · d) 67 · e) 23
+- **Bài II.5** — a) 122 · b) 101 · c) 21 · d) 200 · e) 113 · f) 147
 
 **Phần III**
 
-- **Bài III.1** — a) 74 · b) 300 · c) 7 · d) 41 · e) không · f) 22 496
-- **Bài III.2** — a) 40 · b) 91 · c) 40 · d) 60 · e) 31 · f) 40
-- **Bài III.3** — a) 72 kg · b) 108 kg · c) 104 kg · d) 144 kg
-- **Bài III.4** — a) 3, 11, 21 · b) 67 · c) 169 · d) 383 · e) 92
-- **Bài III.5** — a) 6 · b) 3 · c) 3 · d) 3 · e) 6
+- **Bài III.1** — a) 79 · b) 313 · c) 22 · d) 52 · e) không · f) 25 359
+- **Bài III.2** — a) 100 · b) 200 · c) 200 · d) 160
+- **Bài III.3** — a) 1 · b) 1 · c) 1 · d) 1
+- **Bài III.4** — a) 2, 8, 16 · b) 52 · c) 132 · d) 300 · e) 72
+- **Bài III.5** — a) 6 175 · b) 5 050 · c) 650 · d) 630 · e) 235
 
 **Phần IV**
 
-- **Bài IV.1** — a) 49 · b) 166 · c) 4 300 · d) 107,5 · e) 215 · f) 215
-- **Bài IV.2** — a) 298 · b) 1 786 · c) 298 · d) 298 · e) 266 710 · f) 266 710
-- **Bài IV.3** — a) 32 · b) 34 · c) 23 · d) 12 · e) 35 · f) 12
-- **Bài IV.4** — a) 61 phần 36 · b) 83 phần 60 · c) 15 phần 11 · d) 87 phần 110 · e) 63 phần 40
-- **Bài IV.5** — a) 1 680 · b) 5 100 · c) 5 100 · d) 1 300 · e) 330 · f) 1 050
+- **Bài IV.1** — a) 41 · b) 59 · c) 17 · d) 44
+- **Bài IV.2** — a) 90 · b) 147 · c) 2 370 · d) 118,5 · e) 237 · f) 237
+- **Bài IV.3** — a) 163 · b) 982 · c) 33 · d) 163 · e) 80 848 · f) 80 848
+- **Bài IV.4** — a) 6 375 · b) 10 200 · c) 1 890 · d) 1 260 · e) 630 · f) 1 300
+- **Bài IV.5** — a) 25 phần 24 · b) 51 phần 35 · c) 167 phần 507 · d) 2 phần 5
 
 **Phần V**
 
-- **Bài V.1** — a) < · b) 9 · c) 625 · d) < · e) 27 · f) <
-- **Bài V.2** — a) 9 phần 10 · b) 6 phần 7 · c) 6 phần 7 · d) 12 phần 13 · e) 10 phần 11
-- **Bài V.3** — a) 7 · b) 7 · c) 4 · d) 2 · e) 4 · f) 4 · g) 1 550
-- **Bài V.4** — a) 5 050 · b) 420 · c) 400 · d) 625
-- **Bài V.5** — a) 3, 6, 12, 21 · b) 48 · c) 138 · d) 27 · e) có, khoảng cách 3 · f) 42
+- **Bài V.1** — a) 1 · b) 6 · c) 1 · d) 6 · e) 6 · f) 6 · g) 364
+- **Bài V.2** — a) 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · b) 8 phần 9 · c) đều bé hơn 1 · d) tăng dần · e) vì phần bù tới 1 là 1 phần (n + 1) càng lúc càng bé · f) 1 phần 9
+- **Bài V.3** — a) 8 phần 9 · b) 8 phần 9 · c) 8 phần 9 · d) 12 phần 13 · e) 10 phần 11 · f) 6 phần 7
+- **Bài V.4** — a) 420 · b) 210 · c) 10 000 · d) 55
+- **Bài V.5** — a) 2, 3, 5, 8 · b) 17 · c) 47 · d) 9 · e) có, khoảng cách 1 · f) 18
 
 ---
 
 ## 2. LỜI GIẢI ĐẦY ĐỦ
 
-Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
+Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
 ### Bài I.1 — Dãy số theo quy luật nhân
 
-Nếu các hiệu không bằng nhau, hãy thử phép chia: lấy số hạng sau chia số hạng liền trước. Nếu các thương bằng nhau thì đó là dãy nhân, viết tiếp bằng cách nhân với thương đó.
+**Các bước giải**
+
+Xét ý a: 3, 15, 75, 375, …
+
+Đọc vị: đây là dạng **Dãy số theo quy luật nhân**; dấu hiệu là Các số tăng rất nhanh, hiệu không đều.
+
+Kiến thức phải dùng: Dãy nhân, phép nhân liên tiếp.
+
+Cách làm: Thử hiệu, rồi thử thương.
+
+Lối tắt: Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân.
+
+Kết quả: **1 875**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nếu các hiệu không bằng nhau, hãy thử phép chia: lấy số hạng sau chia số hạng liền trước. Nếu các thương bằng nhau thì đó là dãy nhân, viết tiếp bằng cách nhân với thương đó.
 
 *Điểm chốt:* Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
 
-### Bài I.2 — Đặt tính rồi tính (cộng, trừ)
+### Bài I.2 — Điền số còn thiếu trong dãy
 
-Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ từ phải sang trái, nhớ sang hàng liền trước khi tổng vượt quá 9 hoặc khi phải mượn.
+**Các bước giải**
 
-*Điểm chốt:* Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
+Xét ý a: 10, 12, 14, 16, …, 20
 
-### Bài I.3 — Điền số còn thiếu trong dãy
+Đọc vị: đây là dạng **Điền số hạng còn thiếu của dãy cách đều**; dấu hiệu là Dãy có ô trống ở giữa.
 
-Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
+Kiến thức phải dùng: Dãy số cách đều.
+
+Cách làm: Xác định khoảng cách từ cặp liền nhau đã biết.
+
+Lối tắt: Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy.
+
+Kết quả: **18**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 
 *Điểm chốt:* Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 
-### Bài I.4 — Viết tiếp ba số hạng của dãy
+### Bài I.3 — Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
 
-Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
+**Các bước giải**
 
-*Điểm chốt:* Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
+Xét ý a: Chữ số hàng chục của số 8 935 646 có giá trị bằng bao nhiêu?
 
-### Bài I.5 — Tìm số hạng thứ n của dãy cách đều
+Đọc vị: đây là dạng **Ôn tập số tự nhiên**; dấu hiệu là Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn.
 
-Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+Kiến thức phải dùng: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn.
+
+Cách làm: Đếm chữ số, xét hàng từ trái sang phải.
+
+Lối tắt: Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
+
+Kết quả: **40**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
+
+*Điểm chốt:* So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
+
+*Muốn khó hơn:* Trộn thêm phân số và số thập phân vào cùng một dãy để sắp thứ tự.
+
+*Phải chắc trước khi làm bài này:* Bảng hàng và lớp của số tự nhiên.
+
+### Bài I.4 — Tìm số hạng thứ n của dãy cách đều
+
+**Các bước giải**
+
+Xét ý a: Số hạng thứ 10 của dãy là số nào?
+
+Đọc vị: đây là dạng **Tìm số hạng thứ n của dãy cách đều**; dấu hiệu là Đề hỏi “số hạng thứ …”.
+
+Kiến thức phải dùng: Công thức số hạng tổng quát của dãy cách đều.
+
+Cách làm: Đếm số khoảng rồi nhân với khoảng cách.
+
+Lối tắt: Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng.
+
+Kết quả: **36**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 
 *Điểm chốt:* Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 
-### Bài II.1 — Dãy hình xếp theo quy luật
+### Bài I.5 — Viết tiếp ba số hạng của dãy
 
-Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
+**Các bước giải**
 
-*Điểm chốt:* Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
+Xét ý a: 28, 35, 42, 49, …
 
-### Bài II.2 — Đếm số hạng của dãy cách đều
+Đọc vị: đây là dạng **Tìm quy luật dãy cách đều**; dấu hiệu là Dãy số kèm dấu … ở cuối.
 
-Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
+Kiến thức phải dùng: Dãy số cách đều.
 
-*Điểm chốt:* Số khoảng luôn **ít hơn số số hạng đúng 1**.
+Cách làm: Tính hiệu các cặp liên tiếp rồi cộng tiếp.
 
-### Bài II.3 — Dãy số có quy luật phức tạp
+Lối tắt: Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay.
 
-Khi hiệu không đều, hãy tính hiệu của các hiệu. Nếu dãy hiệu lại là dãy cách đều thì quy luật là “cộng thêm một lượng tăng đều”. Cũng có dãy gồm hai dãy con xen kẽ nhau — tách riêng các số ở vị trí lẻ và vị trí chẵn ra xét.
+Kết quả: **56, 63, 70**.
 
-*Điểm chốt:* Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
 
-### Bài II.4 — Tính tổng dãy số cách đều
+*Điểm chốt:* Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
 
-Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
+### Bài II.1 — Tính tổng dãy số cách đều
+
+**Các bước giải**
+
+Xét ý a: Tính tổng: 19 + 29 + 39 + … + 109
+
+Đọc vị: đây là dạng **Tổng dãy số cách đều**; dấu hiệu là Dãy cộng dài, các số cách đều.
+
+Kiến thức phải dùng: Công thức tổng dãy cách đều.
+
+Cách làm: Đếm số hạng → (đầu + cuối) × số hạng : 2.
+
+Lối tắt: Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng.
+
+Kết quả: **640**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
 
 *Điểm chốt:* Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp.
 
-### Bài II.5 — Lịch, thế kỉ, năm nhuận
+### Bài II.2 — Dãy hình xếp theo quy luật
 
-Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
+**Các bước giải**
 
-*Điểm chốt:* Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
+Xét ý a: Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 3 que. Hình thứ 6 có bao nhiêu que diêm?
+
+Đọc vị: đây là dạng **Quy luật hình đưa về dãy số**; dấu hiệu là Đề mô tả hình xếp thêm đều đặn theo thứ tự.
+
+Kiến thức phải dùng: Dãy cách đều, số hạng thứ n, tổng dãy.
+
+Cách làm: Lập bảng vài hình đầu, tìm khoảng cách, áp công thức.
+
+Lối tắt: Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều.
+
+Kết quả: **17**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
+
+*Điểm chốt:* Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
+
+### Bài II.3 — Dãy số có quy luật phức tạp
+
+**Các bước giải**
+
+Xét ý a: 2, 5, 11, 20, 32, …
+
+Đọc vị: đây là dạng **Dãy số quy luật bậc hai hoặc xen kẽ**; dấu hiệu là Hiệu giữa các số hạng không bằng nhau.
+
+Kiến thức phải dùng: Dãy hiệu, dãy con xen kẽ.
+
+Cách làm: Lập dãy hiệu; tách dãy con theo vị trí.
+
+Lối tắt: Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay.
+
+Kết quả: **47**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi hiệu không đều, hãy tính hiệu của các hiệu. Nếu dãy hiệu lại là dãy cách đều thì quy luật là “cộng thêm một lượng tăng đều”. Cũng có dãy gồm hai dãy con xen kẽ nhau — tách riêng các số ở vị trí lẻ và vị trí chẵn ra xét.
+
+*Điểm chốt:* Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**.
+
+### Bài II.4 — Đếm số hạng của dãy cách đều
+
+**Các bước giải**
+
+Xét ý a: Dãy 6, 16, 26, …, 286 có bao nhiêu số hạng?
+
+Đọc vị: đây là dạng **Đếm số hạng dãy cách đều**; dấu hiệu là Dãy có số đầu, số cuối và khoảng cách đều.
+
+Kiến thức phải dùng: Công thức đếm số hạng.
+
+Cách làm: (cuối − đầu) : khoảng cách + 1.
+
+Lối tắt: Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng.
+
+Kết quả: **29**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
+
+*Điểm chốt:* Số khoảng luôn **ít hơn số số hạng đúng 1**.
+
+### Bài II.5 — Đếm số thoả điều kiện trong một khoảng
+
+**Các bước giải**
+
+Xét ý a: Có bao nhiêu số chia hết cho 3 từ 241 đến 608?
+
+Đọc vị: đây là dạng **Đếm số hạng của dãy cách đều theo điều kiện chia hết**; dấu hiệu là Cụm “có bao nhiêu số … từ … đến …”.
+
+Kiến thức phải dùng: Dãy số cách đều, dấu hiệu chia hết.
+
+Cách làm: Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm.
+
+Lối tắt: Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d.
+
+Kết quả: **122**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Các số cần đếm lập thành một dãy cách đều. Số lượng số hạng bằng (số cuối − số đầu) : khoảng cách + 1. Phải tìm đúng số đầu và số cuối **nằm trong khoảng đã cho**.
+
+*Điểm chốt:* Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị.
 
 ### Bài III.1 — Định vị số hạng trong dãy cách đều
 
-Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
+**Các bước giải**
+
+Xét ý a: Dãy có bao nhiêu số hạng?
+
+Đọc vị: đây là dạng **Định vị số hạng, kiểm tra một số có thuộc dãy**; dấu hiệu là Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không”.
+
+Kiến thức phải dùng: Dãy cách đều, phép chia có dư.
+
+Cách làm: (số − đầu) : khoảng cách, xét dư rồi cộng 1.
+
+Lối tắt: Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách.
+
+Kết quả: **79**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
 
 *Điểm chốt:* Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
 
 ### Bài III.2 — Đếm số lần xuất hiện của một chữ số
 
-Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Các bước giải**
+
+Xét ý a: Từ 1 đến 500, chữ số 7 xuất hiện bao nhiêu lần?
+
+Đọc vị: đây là dạng **Đếm số lần xuất hiện của một chữ số**; dấu hiệu là Câu hỏi “chữ số … xuất hiện bao nhiêu lần”.
+
+Kiến thức phải dùng: Dãy cách đều, cấu tạo số.
+
+Cách làm: Đếm theo từng hàng rồi cộng.
+
+Lối tắt: Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100).
+
+Kết quả: **100**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
 
 *Điểm chốt:* Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
 
-### Bài III.3 — Tìm phân số của một số qua hai bước
+### Bài III.3 — Tính nhanh với phân số
 
-Bước 1: tính số gạo bán ngày đầu bằng cách lấy tổng nhân với phân số. Bước 2: tính số gạo **còn lại** sau ngày đầu. Bước 3: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu.
+**Các bước giải**
 
-*Điểm chốt:* Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai.
+Xét ý a: 1 phần 3 + 1 phần 2 + 1 phần 6
+
+Đọc vị: đây là dạng **Tính nhanh biểu thức phân số**; dấu hiệu là Các phân số cùng mẫu, tử số cộng lại tròn mẫu.
+
+Kiến thức phải dùng: Cộng phân số cùng mẫu, phân số đảo ngược.
+
+Cách làm: Quan sát tổng tử số; nhận diện cặp phân số đảo ngược.
+
+Lối tắt: Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm.
+
+Kết quả: **1**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Quan sát trước khi tính: các phân số cùng mẫu số cộng lại có thể bằng đúng 1; một phân số nhân với phân số đảo ngược của nó bằng 1. Nhận ra được thì không phải quy đồng.
+
+*Điểm chốt:* Nhìn xem **tổng các tử số** có bằng mẫu số chung không.
 
 ### Bài III.4 — Dãy số cho bởi quy tắc truy hồi
 
-Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
+**Các bước giải**
+
+Xét ý a: Viết ba số hạng đầu tiên của dãy.
+
+Đọc vị: đây là dạng **Dãy số truy hồi có quy tắc rẽ nhánh**; dấu hiệu là Đề mô tả cách lập số hạng từ số hạng liền trước.
+
+Kiến thức phải dùng: Dãy số cho bởi quy tắc, tính lần lượt.
+
+Cách làm: Lập bảng, tính lần lượt, bám sát vị trí.
+
+Lối tắt: Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy.
+
+Kết quả: **2, 8, 16**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
 
 *Điểm chốt:* Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
 
-### Bài III.5 — Đếm tam giác và đoạn thẳng
+### Bài III.5 — Tính nhanh tổng dãy số cách đều
 
-Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
+**Các bước giải**
 
-*Điểm chốt:* Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
+Xét ý a: 1 + 6 + 11 + … + 246
 
-### Bài IV.1 — Tổng, trung bình cộng của dãy cách đều
+Đọc vị: đây là dạng **Tổng dãy số cách đều**; dấu hiệu là Dãy cộng có dấu … và các số cách đều nhau.
 
-Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+Kiến thức phải dùng: Công thức tổng dãy cách đều.
 
-*Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+Cách làm: Đếm số số hạng rồi áp công thức tổng.
 
-### Bài IV.2 — Lọc số hạng theo điều kiện chia hết
+Lối tắt: Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp.
 
-Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+Kết quả: **6 175**.
 
-*Điểm chốt:* Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm số số hạng: (số cuối − số đầu) : khoảng cách + 1. Tổng bằng (số đầu + số cuối) × số số hạng : 2. Cách hiểu: ghép số đầu với số cuối, số thứ hai với số áp chót… mỗi cặp có tổng bằng nhau.
 
-### Bài IV.3 — Bài toán trồng cây — bốn trường hợp
+*Điểm chốt:* Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất.
 
-**BẪY — Bốn trường hợp trồng cây khác nhau.** Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
+### Bài IV.1 — Bài toán trồng cây — bốn trường hợp
+
+> **BẪY — Bốn trường hợp trồng cây khác nhau.**
+
+**Các bước giải**
+
+Xét ý a: Trồng cây trên đoạn đường dài 168 m, hai cây liền nhau cách nhau 4 m, không trồng ở cả hai đầu. Cần bao nhiêu cây?
+
+Đọc vị: đây là dạng **Bài toán trồng cây**; dấu hiệu là Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu”.
+
+Kiến thức phải dùng: Quan hệ số cây – số khoảng.
+
+Cách làm: Tính số khoảng rồi chọn đúng công thức theo trường hợp.
+
+Lối tắt: Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
+
+Kết quả: **41**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
 
 *Điểm chốt:* Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
 
-### Bài IV.4 — Biểu thức nhiều phép tính với phân số
+### Bài IV.2 — Tổng, trung bình cộng của dãy cách đều
 
-Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+**Các bước giải**
 
-*Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+Xét ý a: Số hạng đầu của dãy là số nào?
 
-### Bài IV.5 — Tính nhanh tổng nhiều tích có thừa số chung
+Đọc vị: đây là dạng **Tổng và trung bình cộng của dãy cách đều**; dấu hiệu là Đề cho số số hạng, khoảng cách và một đầu của dãy.
 
-Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
+Kiến thức phải dùng: Dãy cách đều, trung bình cộng.
+
+Cách làm: Tìm hai đầu dãy → tổng → trung bình cộng.
+
+Lối tắt: Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau.
+
+Kết quả: **90**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đi ngược từ số hạng cuối về số hạng đầu: đầu = cuối − (n − 1) × khoảng cách. Tổng = (đầu + cuối) × n : 2. Trung bình cộng của một dãy cách đều bằng trung bình cộng của số hạng đầu và số hạng cuối.
+
+*Điểm chốt:* Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng.
+
+### Bài IV.3 — Lọc số hạng theo điều kiện chia hết
+
+**Các bước giải**
+
+Xét ý a: Dãy có bao nhiêu số hạng?
+
+Đọc vị: đây là dạng **Đếm và tính tổng dãy con thoả điều kiện chia hết**; dấu hiệu là Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy.
+
+Kiến thức phải dùng: Dãy cách đều, bội chung nhỏ nhất.
+
+Cách làm: Xác định dãy con cách đều rồi đếm, tính tổng.
+
+Lối tắt: Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện.
+
+Kết quả: **163**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Các số hạng thoả thêm một điều kiện chia hết cũng lập thành một dãy cách đều mới, có khoảng cách là bội chung nhỏ nhất của khoảng cách cũ và số chia. Tìm số hạng đầu tiên thoả điều kiện rồi đếm trên dãy mới.
+
+*Điểm chốt:* Dãy con cũng **cách đều**, chỉ khác khoảng cách.
+
+### Bài IV.4 — Tính nhanh tổng nhiều tích có thừa số chung
+
+**Các bước giải**
+
+Xét ý a: 5 × 1 + 5 × 2 + 5 × 3 + … + 5 × 50
+
+Đọc vị: đây là dạng **Tổng các tích có thừa số chung**; dấu hiệu là Dãy cộng gồm nhiều tích cùng một thừa số.
+
+Kiến thức phải dùng: Nhân một số với một tổng, tổng dãy cách đều.
+
+Cách làm: Đặt thừa số chung → tính tổng trong ngoặc bằng công thức.
+
+Lối tắt: 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay.
+
+Kết quả: **6 375**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tất cả các tích đều có chung một thừa số. Đặt thừa số chung ra ngoài, trong ngoặc còn tổng của dãy số tự nhiên liên tiếp — dùng công thức tổng dãy cách đều để tính.
 
 *Điểm chốt:* Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**.
 
-### Bài V.1 — Kĩ thuật tách – bù để tính và so sánh
+### Bài IV.5 — Biểu thức nhiều phép tính với phân số
 
-**BẪY — Hai tích trông bằng nhau nhưng không bằng.** Khi hai tích có các thừa số gần nhau, viết chúng theo cùng một số gốc rồi so phần chênh lệch. Khi hai tích cùng một thừa số, hiệu của chúng bằng thừa số chung nhân với hiệu hai thừa số kia.
+**Các bước giải**
 
-*Điểm chốt:* Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ.
+Xét ý a: 1 phần 2 : 12 phần 13 + 1 phần 2
 
-### Bài V.2 — Tổng dãy phân số khử liên tiếp
+Đọc vị: đây là dạng **Biểu thức phân số nhiều phép tính**; dấu hiệu là Biểu thức gồm nhiều phân số và nhiều phép tính.
 
-Mỗi mẫu số là tích của hai số tự nhiên liên tiếp: 2 = 1 × 2, 6 = 2 × 3, 12 = 3 × 4… Mỗi phân số dạng 1 phần (n × (n + 1)) tách được thành 1 phần n trừ 1 phần (n + 1). Khi cộng cả dãy, các phần giữa khử hết nhau, chỉ còn số hạng đầu và số hạng cuối.
+Kiến thức phải dùng: Thứ tự thực hiện phép tính, tính chất phân phối.
 
-*Điểm chốt:* Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau.
+Cách làm: Quan sát rút gọn trước, sau đó theo thứ tự thực hiện.
 
-### Bài V.3 — Dãy số lặp lại theo chu kì
+Lối tắt: Rút gọn chéo tử với mẫu trước khi nhân.
 
-**BẪY — Số dư 0 ứng với phần tử cuối chu kì.** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
+Kết quả: **25 phần 24**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Thứ tự thực hiện với phân số giống hệt với số tự nhiên: trong ngoặc trước, rồi nhân chia, cuối cùng cộng trừ. Nhận ra thừa số chung thì đặt ra ngoài để tính nhanh.
+
+*Điểm chốt:* Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều.
+
+### Bài V.1 — Dãy số lặp lại theo chu kì
+
+> **BẪY — Số dư 0 ứng với phần tử cuối chu kì.**
+
+**Các bước giải**
+
+Xét ý a: Số hạng thứ 346 của dãy là số nào?
+
+Đọc vị: đây là dạng **Dãy tuần hoàn**; dấu hiệu là Dãy lặp lại một nhóm số cố định.
+
+Kiến thức phải dùng: Phép chia có dư, tính tuần hoàn.
+
+Cách làm: Chia vị trí cho chu kì, dùng số dư định vị.
+
+Lối tắt: Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư.
+
+Kết quả: **1**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
 
 *Điểm chốt:* Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
 
+### Bài V.2 — Dãy phân số dạng n phần (n + 1)
+
+> **BẪY — Chiều của phần bù.**
+
+**Các bước giải**
+
+Bốn phân số đầu: 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5.
+
+Phân số thứ n có tử là n và mẫu là n + 1.
+
+Phân số thứ 8 là 8 phần 9.
+
+Mỗi phân số còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1.
+
+Phần thiếu ấy càng lúc càng bé, nên dãy **tăng dần**.
+
+Đáp số ý b: **8 phần 9**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+
+*Điểm chốt:* Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
+
+*Muốn khó hơn:* Dãy 1 phần 2, 2 phần 3, 3 phần 4 … nhân tất cả lại bằng bao nhiêu?
+
+*Phải chắc trước khi làm bài này:* So sánh phân số và phép trừ phân số.
+
+### Bài V.3 — Tổng dãy phân số khử liên tiếp
+
+**Các bước giải**
+
+Xét ý a: 1 phần 2 + 1 phần 6 + 1 phần 12 + … + 1 phần 72
+
+Đọc vị: đây là dạng **Tổng dãy phân số có mẫu là tích hai số liên tiếp**; dấu hiệu là Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp).
+
+Kiến thức phải dùng: Tách phân số thành hiệu, phép trừ phân số.
+
+Cách làm: Tách thành hiệu, khử liên tiếp, giữ lại hai đầu.
+
+Lối tắt: Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1).
+
+Kết quả: **8 phần 9**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi mẫu số là tích của hai số tự nhiên liên tiếp: 2 = 1 × 2, 6 = 2 × 3, 12 = 3 × 4… Mỗi phân số dạng 1 phần (n × (n + 1)) tách được thành 1 phần n trừ 1 phần (n + 1). Khi cộng cả dãy, các phần giữa khử hết nhau, chỉ còn số hạng đầu và số hạng cuối.
+
+*Điểm chốt:* Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau.
+
 ### Bài V.4 — Ba công thức tổng phải thuộc
 
-**BẪY — Nhầm số hạng cuối với số lượng số hạng.** Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
+> **BẪY — Nhầm số hạng cuối với số lượng số hạng.**
+
+**Các bước giải**
+
+Xét ý a: 2 + 4 + 6 + … + 40 (tổng 20 số chẵn đầu tiên)
+
+Đọc vị: đây là dạng **Tổng dãy đặc biệt**; dấu hiệu là Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp.
+
+Kiến thức phải dùng: Ba công thức tổng cơ bản.
+
+Cách làm: Đếm số số hạng rồi áp công thức.
+
+Lối tắt: Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh.
+
+Kết quả: **420**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tổng n số tự nhiên đầu tiên bằng n × (n + 1) : 2. Tổng n số lẻ đầu tiên bằng n × n. Tổng n số chẵn đầu tiên bằng n × (n + 1). Cả ba đều suy ra từ công thức tổng dãy cách đều.
 
 *Điểm chốt:* Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối.
 
 ### Bài V.5 — Dãy có hiệu tăng đều
 
-Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
+**Các bước giải**
+
+Xét ý a: Viết bốn số hạng đầu của dãy.
+
+Đọc vị: đây là dạng **Dãy có hiệu tăng đều (hiệu bậc hai)**; dấu hiệu là Hiệu giữa các số hạng tăng đều đặn.
+
+Kiến thức phải dùng: Dãy hiệu, tổng dãy cách đều.
+
+Cách làm: Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu.
+
+Lối tắt: Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2.
+
+Kết quả: **2, 3, 5, 8**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
 
 *Điểm chốt:* Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**.
 
@@ -232,31 +598,31 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | Dãy số theo quy luật nhân | Dãy nhân, phép nhân liên tiếp | Các số tăng rất nhanh, hiệu không đều | Thử hiệu, rồi thử thương | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | 1 280 · 768 · 324 · 512… |
-| I.2 | Cộng, trừ số tự nhiên | Kĩ thuật đặt tính, nhớ và mượn | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng hàng, tính từ hàng đơn vị | Làm tròn một số hạng để ước lượng trước, dùng kết quả ước lượng để phát hiện sai sót. | 952 638 · 365 442 · 1 006 307 · 1 146 908… |
-| I.3 | Điền số hạng còn thiếu của dãy cách đều | Dãy số cách đều | Dãy có ô trống ở giữa | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. | 45 · 28 · 50 · 42… |
-| I.4 | Tìm quy luật dãy cách đều | Dãy số cách đều | Dãy số kèm dấu … ở cuối | Tính hiệu các cặp liên tiếp rồi cộng tiếp | Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. | 64, 75, 86 · 74, 83, 92 · 39, 46, 53 · 38, 42, 46 |
-| I.5 | Tìm số hạng thứ n của dãy cách đều | Công thức số hạng tổng quát của dãy cách đều | Đề hỏi “số hạng thứ …” | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | 362 · 437 · 512 · 812 |
-| II.1 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | 24 · 28 · 32 · 36… |
-| II.2 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 194 · 158 · 25 · 188… |
-| II.3 | Dãy số quy luật bậc hai hoặc xen kẽ | Dãy hiệu, dãy con xen kẽ | Hiệu giữa các số hạng không bằng nhau | Lập dãy hiệu; tách dãy con theo vị trí | Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. | 12 · 18 · 144 · 64… |
-| II.4 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 585 · 525 · 1 250 · 1 170 |
-| II.5 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 31 · 3 tuần 6 ngày · XXI · không… |
-| III.1 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 74 · 300 · 7 · 41… |
-| III.2 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | 40 · 91 · 40 · 60… |
-| III.3 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. | 72 kg · 108 kg · 104 kg · 144 kg |
-| III.4 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 3, 11, 21 · 67 · 169 · 383… |
-| III.5 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 6 · 3 · 3 · 3… |
-| IV.1 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | 49 · 166 · 4 300 · 107,5… |
-| IV.2 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Dãy cách đều, bội chung nhỏ nhất | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | 298 · 1 786 · 298 · 298… |
-| IV.3 | Bài toán trồng cây | Quan hệ số cây – số khoảng | Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” | Tính số khoảng rồi chọn đúng công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | 32 · 34 · 23 · 12… |
-| IV.4 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 61 phần 36 · 83 phần 60 · 15 phần 11 · 87 phần 110… |
-| IV.5 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 1 680 · 5 100 · 5 100 · 1 300… |
-| V.1 | Tính, so sánh tích bằng kĩ thuật tách – bù | Nhân một số với một tổng, một hiệu | Các thừa số hơn kém nhau rất ít | Quy về số gốc chung, so phần chênh | Với hai tích có tổng hai thừa số bằng nhau, tích nào có hai thừa số gần nhau hơn thì lớn hơn. | < · 9 · 625 · <… |
-| V.2 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Tách phân số thành hiệu, phép trừ phân số | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) | Tách thành hiệu, khử liên tiếp, giữ lại hai đầu | Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1). | 9 phần 10 · 6 phần 7 · 6 phần 7 · 12 phần 13… |
-| V.3 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 7 · 7 · 4 · 2… |
-| V.4 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 5 050 · 420 · 400 · 625 |
-| V.5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Dãy hiệu, tổng dãy cách đều | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu | Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2. | 3, 6, 12, 21 · 48 · 138 · 27… |
+| I.1 | Dãy số theo quy luật nhân | Dãy nhân, phép nhân liên tiếp | Các số tăng rất nhanh, hiệu không đều | Thử hiệu, rồi thử thương | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. | 1 875 · 162 · 768 · 1 250… |
+| I.2 | Điền số hạng còn thiếu của dãy cách đều | Dãy số cách đều | Dãy có ô trống ở giữa | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. | 18 · 46 · 47 · 46 |
+| I.3 | Ôn tập số tự nhiên | Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn | Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn | Đếm chữ số, xét hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. | 40 · 99 313 và 99 315 · < · 3 738 000… |
+| I.4 | Tìm số hạng thứ n của dãy cách đều | Công thức số hạng tổng quát của dãy cách đều | Đề hỏi “số hạng thứ …” | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | 36 · 45 · 57 · 60… |
+| I.5 | Tìm quy luật dãy cách đều | Dãy số cách đều | Dãy số kèm dấu … ở cuối | Tính hiệu các cặp liên tiếp rồi cộng tiếp | Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. | 56, 63, 70 · 111, 136, 161 · 44, 48, 52 · 56, 63, 70… |
+| II.1 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng dài, các số cách đều | Đếm số hạng → (đầu + cuối) × số hạng : 2 | Tổng = trung bình cộng của số đầu và số cuối, nhân với số số hạng. | 640 · 1 825 · 1 080 · 1 010… |
+| II.2 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | 17 · 32 · 68 · 80… |
+| II.3 | Dãy số quy luật bậc hai hoặc xen kẽ | Dãy hiệu, dãy con xen kẽ | Hiệu giữa các số hạng không bằng nhau | Lập dãy hiệu; tách dãy con theo vị trí | Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. | 47 · 32 · 110 · 144 |
+| II.4 | Đếm số hạng dãy cách đều | Công thức đếm số hạng | Dãy có số đầu, số cuối và khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số tự nhiên liên tiếp từ a đến b có b − a + 1 số hạng. | 29 · 198 · 169 · 67… |
+| II.5 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. | 122 · 101 · 21 · 200… |
+| III.1 | Định vị số hạng, kiểm tra một số có thuộc dãy | Dãy cách đều, phép chia có dư | Câu hỏi “là số hạng thứ mấy”, “có thuộc dãy không” | (số − đầu) : khoảng cách, xét dư rồi cộng 1 | Mọi số hạng của dãy đều có cùng số dư khi chia cho khoảng cách. | 79 · 313 · 22 · 52… |
+| III.2 | Đếm số lần xuất hiện của một chữ số | Dãy cách đều, cấu tạo số | Câu hỏi “chữ số … xuất hiện bao nhiêu lần” | Đếm theo từng hàng rồi cộng | Từ 1 đến 100, mỗi chữ số từ 1 đến 9 xuất hiện đúng 20 lần (riêng chữ số 1 là 21 lần vì có số 100). | 100 · 200 · 200 · 160 |
+| III.3 | Tính nhanh biểu thức phân số | Cộng phân số cùng mẫu, phân số đảo ngược | Các phân số cùng mẫu, tử số cộng lại tròn mẫu | Quan sát tổng tử số; nhận diện cặp phân số đảo ngược | Nếu tổng các tử số bằng mẫu số thì kết quả bằng 1, không cần tính gì thêm. | 1 · 1 · 1 · 1 |
+| III.4 | Dãy số truy hồi có quy tắc rẽ nhánh | Dãy số cho bởi quy tắc, tính lần lượt | Đề mô tả cách lập số hạng từ số hạng liền trước | Lập bảng, tính lần lượt, bám sát vị trí | Chỉ cần tính tới số hạng được hỏi, không cần tính cả dãy. | 2, 8, 16 · 52 · 132 · 300… |
+| III.5 | Tổng dãy số cách đều | Công thức tổng dãy cách đều | Dãy cộng có dấu … và các số cách đều nhau | Đếm số số hạng rồi áp công thức tổng | Ghép cặp đầu – cuối: mọi cặp đều có cùng tổng, chỉ cần nhân với số cặp. | 6 175 · 5 050 · 650 · 630… |
+| IV.1 | Bài toán trồng cây | Quan hệ số cây – số khoảng | Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” | Tính số khoảng rồi chọn đúng công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | 41 · 59 · 17 · 44 |
+| IV.2 | Tổng và trung bình cộng của dãy cách đều | Dãy cách đều, trung bình cộng | Đề cho số số hạng, khoảng cách và một đầu của dãy | Tìm hai đầu dãy → tổng → trung bình cộng | Mọi cặp số hạng cách đều hai đầu đều có tổng bằng nhau. | 90 · 147 · 2 370 · 118,5… |
+| IV.3 | Đếm và tính tổng dãy con thoả điều kiện chia hết | Dãy cách đều, bội chung nhỏ nhất | Đề hỏi riêng các số chẵn, số chia hết cho … trong một dãy | Xác định dãy con cách đều rồi đếm, tính tổng | Nếu khoảng cách của dãy gốc đã chia hết cho số chia thì hoặc tất cả, hoặc không số hạng nào thoả điều kiện. | 163 · 982 · 33 · 163… |
+| IV.4 | Tổng các tích có thừa số chung | Nhân một số với một tổng, tổng dãy cách đều | Dãy cộng gồm nhiều tích cùng một thừa số | Đặt thừa số chung → tính tổng trong ngoặc bằng công thức | 1 + 2 + … + 100 = 5 050; nhớ vài mốc để nhân ngay. | 6 375 · 10 200 · 1 890 · 1 260… |
+| IV.5 | Biểu thức phân số nhiều phép tính | Thứ tự thực hiện phép tính, tính chất phân phối | Biểu thức gồm nhiều phân số và nhiều phép tính | Quan sát rút gọn trước, sau đó theo thứ tự thực hiện | Rút gọn chéo tử với mẫu trước khi nhân. | 25 phần 24 · 51 phần 35 · 167 phần 507 · 2 phần 5 |
+| V.1 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 1 · 6 · 1 · 6… |
+| V.2 | Dãy phân số, so sánh bằng phần bù | Phần bù tới 1; quy luật dãy phân số | Tử và mẫu hơn kém nhau đúng 1 đơn vị | Xét phần bù tới 1 rồi so sánh | n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. | 1 phần 2 · 2 phần 3 · 3 phần 4 · 4 phần 5 · 8 phần 9 · đều bé hơn 1 · tăng dần… |
+| V.3 | Tổng dãy phân số có mẫu là tích hai số liên tiếp | Tách phân số thành hiệu, phép trừ phân số | Mẫu số là 2, 6, 12, 20, 30… (tích hai số liên tiếp) | Tách thành hiệu, khử liên tiếp, giữ lại hai đầu | Kết quả luôn là 1 trừ 1 phần (n + 1), tức là n phần (n + 1). | 8 phần 9 · 8 phần 9 · 8 phần 9 · 12 phần 13… |
+| V.4 | Tổng dãy đặc biệt | Ba công thức tổng cơ bản | Dãy toàn số lẻ, toàn số chẵn, hoặc số tự nhiên liên tiếp | Đếm số số hạng rồi áp công thức | Tổng n số lẻ đầu tiên luôn là một số chính phương — dùng để kiểm tra nhanh. | 420 · 210 · 10 000 · 55 |
+| V.5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Dãy hiệu, tổng dãy cách đều | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu | Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2. | 2, 3, 5, 8 · 17 · 47 · 9… |
 
 ---
 
@@ -265,28 +631,28 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
 | I.1 | TD4 | Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc. |
-| I.2 | TD1 | Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu. |
-| I.3 | TD4, TD1 | Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**. |
-| I.4 | TD4 | Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật. |
-| I.5 | TD4, TD3 | Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng. |
-| II.1 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
-| II.2 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
+| I.2 | TD4, TD1 | Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**. |
+| I.3 | TD1, TD5 | So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**. |
+| I.4 | TD4, TD3 | Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng. |
+| I.5 | TD4 | Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật. |
+| II.1 | TD4, TD5 | Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp. |
+| II.2 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
 | II.3 | TD4, TD6 | Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**. |
-| II.4 | TD4, TD5 | Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp. |
-| II.5 | TD1, TD2 | Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận). |
+| II.4 | TD4, TD3 | Số khoảng luôn **ít hơn số số hạng đúng 1**. |
+| II.5 | TD4, TD1 | Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị. |
 | III.1 | TD4, TD2 | Phép chia **có dư** là bằng chứng số đó không thuộc dãy. |
 | III.2 | TD4, TD6 | Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót. |
-| III.3 | TD2, TD3 | Cụm “số gạo **còn lại**” đổi hẳn số bị nhân ở bước hai. |
+| III.3 | TD5, TD3 | Nhìn xem **tổng các tử số** có bằng mẫu số chung không. |
 | III.4 | TD3, TD6 | Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước. |
-| III.5 | TD4, TD3 | Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm. |
-| IV.1 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
-| IV.2 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
-| IV.3 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
-| IV.4 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
-| IV.5 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
-| V.1 | TD5, TD6 | Đưa mọi số về **cùng một số gốc** rồi mới so hoặc trừ. |
-| V.2 | TD4, TD6 | Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau. |
-| V.3 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
+| III.5 | TD4, TD5 | Phải đếm **số số hạng** trước; đây là chỗ sai nhiều nhất. |
+| IV.1 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
+| IV.2 | TD4, TD3 | Trung bình cộng dãy cách đều = **(đầu + cuối) : 2**, không cần tính tổng. |
+| IV.3 | TD4, TD2 | Dãy con cũng **cách đều**, chỉ khác khoảng cách. |
+| IV.4 | TD3, TD4 | Hai kĩ thuật nối tiếp nhau: **đặt thừa số chung** rồi **tổng dãy cách đều**. |
+| IV.5 | TD3, TD5 | Thấy dạng a × b + a × c thì đưa ngay về a × (b + c) — rút ngắn rất nhiều. |
+| V.1 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
+| V.2 | TD6, TD5 | Phần bù **bé hơn** nghĩa là phân số **lớn hơn**. |
+| V.3 | TD4, TD6 | Tách mỗi phân số thành **hiệu hai phân số** rồi để chúng khử nhau. |
 | V.4 | TD4, TD5 | Phải xác định đúng **n là số lượng số hạng**, không phải số hạng cuối. |
 | V.5 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |
 
@@ -299,28 +665,28 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
 | I.1 | Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. | Thử cả hai: hiệu trước, thương sau. |
-| I.2 | Viết lệch hàng khi hai số có số chữ số khác nhau. | Kẻ cột dọc cho từng hàng trước khi viết số. |
-| I.3 | Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. | Đánh số thứ tự vị trí rồi mới tính khoảng cách. |
-| I.4 | Chỉ xét hai số đầu rồi vội kết luận. | Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng. |
-| I.5 | Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. | Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. |
-| II.1 | Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. | Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức. |
-| II.2 | Quên cộng 1 nên thiếu một số hạng. | Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức. |
+| I.2 | Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. | Đánh số thứ tự vị trí rồi mới tính khoảng cách. |
+| I.3 | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Gạch một nét ngăn ngay sau hàng cần làm tròn. |
+| I.4 | Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. | Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. |
+| I.5 | Chỉ xét hai số đầu rồi vội kết luận. | Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng. |
+| II.1 | Quên chia 2, kết quả gấp đôi đáp số đúng. | Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6. |
+| II.2 | Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. | Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức. |
 | II.3 | Chỉ thử một hướng rồi bỏ cuộc. | Luôn viết dãy hiệu xuống dưới dãy gốc trước khi kết luận. |
-| II.4 | Quên chia 2, kết quả gấp đôi đáp số đúng. | Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6. |
-| II.5 | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. |
+| II.4 | Quên cộng 1 nên thiếu một số hạng. | Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức. |
+| II.5 | Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. | Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức. |
 | III.1 | Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. | Luôn ghi rõ thương và số dư khi chia. |
 | III.2 | Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. | Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng. |
-| III.3 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
+| III.3 | Quy đồng ngay lập tức mà không quan sát, làm dài dòng. | Cộng nhẩm các tử số trước rồi so với mẫu số. |
 | III.4 | Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. | Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng. |
-| III.5 | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự. |
-| IV.1 | Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. | Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng. |
-| IV.2 | Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. | Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới. |
-| IV.3 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng. |
-| IV.4 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
-| IV.5 | Nhân từng tích rồi cộng dồn, rất dài và dễ sai. | Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. |
-| V.1 | Nhân hết ra rồi mới so sánh — số lớn, dễ sai và mất thời gian. | Viết mỗi thừa số dưới dạng “số gốc cộng hoặc trừ mấy đơn vị”. |
-| V.2 | Quy đồng cả dãy — mẫu số chung khổng lồ, không làm nổi. | Viết ba số hạng đầu dưới dạng hiệu để thấy quy luật khử trước khi viết cả dãy. |
-| V.3 | Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. | Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
+| III.5 | Lấy số cuối chia khoảng cách làm số số hạng, quên cộng 1. | Viết ra ba số đầu và ba số cuối để kiểm tra khoảng cách rồi mới đếm. |
+| IV.1 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng. |
+| IV.2 | Tính tổng rồi chia — dài hơn và dễ sai khi số hạng nhiều. | Nhớ tính chất trung bình cộng để kiểm tra chéo kết quả tổng. |
+| IV.3 | Duyệt từng số hạng để đếm — không kịp khi dãy dài hàng trăm số. | Tìm số hạng đầu tiên thoả điều kiện rồi xác định khoảng cách mới. |
+| IV.4 | Nhân từng tích rồi cộng dồn, rất dài và dễ sai. | Viết lại biểu thức dưới dạng a × (1 + 2 + … + n) trước khi tính. |
+| IV.5 | Quy đồng ngay từ đầu dù biểu thức có thể rút gọn trước. | Đọc hết biểu thức, tìm thừa số chung trước khi đặt bút. |
+| V.1 | Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. | Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
+| V.2 | So phần bù rồi kết luận cùng chiều với phần bù. | Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn. |
+| V.3 | Quy đồng cả dãy — mẫu số chung khổng lồ, không làm nổi. | Viết ba số hạng đầu dưới dạng hiệu để thấy quy luật khử trước khi viết cả dãy. |
 | V.4 | Nhầm số hạng cuối với số lượng số hạng khi áp công thức. | Đếm số số hạng trước rồi mới thay vào công thức. |
 | V.5 | Cộng n hiệu thay vì (n − 1) hiệu. | Kiểm chứng với n = 2: chỉ cộng đúng một hiệu. |
 
@@ -331,28 +697,28 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
 **Bài I.1** — (1) Các hiệu có bằng nhau không? — (2) Nếu không, hãy chia số sau cho số trước. — (3) Các thương có bằng nhau không?
-**Bài I.2** — (1) Viết số dưới sao cho hàng đơn vị thẳng hàng đơn vị. — (2) Tính từ phải sang trái. — (3) Nhớ 1 sang hàng liền trước khi cần.
-**Bài I.3** — (1) Tìm hai số liền nhau đã biết. — (2) Hiệu của chúng chính là khoảng cách. — (3) Cộng khoảng cách vào số đứng ngay trước chỗ trống.
-**Bài I.4** — (1) Lấy số thứ hai trừ số thứ nhất. — (2) Lấy số thứ ba trừ số thứ hai — có bằng không? — (3) Bằng nhau thì cộng tiếp khoảng cách đó.
-**Bài I.5** — (1) Từ số hạng đầu tới số hạng thứ n đi qua mấy khoảng? — (2) Mỗi khoảng dài bao nhiêu? — (3) Số hạng thứ n = đầu + số khoảng × khoảng cách.
-**Bài II.1** — (1) Hình thứ hai hơn hình thứ nhất mấy que? — (2) Hình thứ ba hơn hình thứ hai mấy que? — (3) Đưa về dãy cách đều rồi dùng công thức.
-**Bài II.2** — (1) Từ số đầu tới số cuối có bao nhiêu khoảng? — (2) Mỗi khoảng bằng bao nhiêu đơn vị? — (3) Số số hạng nhiều hơn số khoảng 1 đơn vị.
+**Bài I.2** — (1) Tìm hai số liền nhau đã biết. — (2) Hiệu của chúng chính là khoảng cách. — (3) Cộng khoảng cách vào số đứng ngay trước chỗ trống.
+**Bài I.3** — (1) Hai số có cùng số chữ số không? — (2) So chữ số đầu tiên bên trái trước. — (3) Làm tròn thì chỉ xét đúng một chữ số liền sau.
+**Bài I.4** — (1) Từ số hạng đầu tới số hạng thứ n đi qua mấy khoảng? — (2) Mỗi khoảng dài bao nhiêu? — (3) Số hạng thứ n = đầu + số khoảng × khoảng cách.
+**Bài I.5** — (1) Lấy số thứ hai trừ số thứ nhất. — (2) Lấy số thứ ba trừ số thứ hai — có bằng không? — (3) Bằng nhau thì cộng tiếp khoảng cách đó.
+**Bài II.1** — (1) Dãy có bao nhiêu số hạng? — (2) Ghép số đầu với số cuối — tổng mỗi cặp bằng bao nhiêu? — (3) Có bao nhiêu cặp như thế?
+**Bài II.2** — (1) Hình thứ hai hơn hình thứ nhất mấy que? — (2) Hình thứ ba hơn hình thứ hai mấy que? — (3) Đưa về dãy cách đều rồi dùng công thức.
 **Bài II.3** — (1) Viết dãy các hiệu xuống dưới. — (2) Dãy hiệu có đều không? Nếu không, tính hiệu của dãy hiệu. — (3) Thử tách các số ở vị trí lẻ và vị trí chẵn thành hai dãy riêng.
-**Bài II.4** — (1) Dãy có bao nhiêu số hạng? — (2) Ghép số đầu với số cuối — tổng mỗi cặp bằng bao nhiêu? — (3) Có bao nhiêu cặp như thế?
-**Bài II.5** — (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
+**Bài II.4** — (1) Từ số đầu tới số cuối có bao nhiêu khoảng? — (2) Mỗi khoảng bằng bao nhiêu đơn vị? — (3) Số số hạng nhiều hơn số khoảng 1 đơn vị.
+**Bài II.5** — (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng trong khoảng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
 **Bài III.1** — (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
 **Bài III.2** — (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
-**Bài III.3** — (1) Ngày đầu bán bao nhiêu ki-lô-gam? — (2) Sau ngày đầu còn lại bao nhiêu? — (3) Phân số của ngày thứ hai tính trên số nào?
+**Bài III.3** — (1) Các phân số có cùng mẫu số không? — (2) Cộng thử các tử số lại. — (3) Tổng tử số có bằng mẫu số không?
 **Bài III.4** — (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
-**Bài III.5** — (1) Cạnh đối diện bị chia thành mấy phần? — (2) Mỗi tam giác ứng với việc chọn hai điểm nào? — (3) Số cách chọn 2 trong k điểm là k × (k − 1) : 2.
-**Bài IV.1** — (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
-**Bài IV.2** — (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
-**Bài IV.3** — (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
-**Bài IV.4** — (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
-**Bài IV.5** — (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
-**Bài V.1** — (1) Hai tích có thừa số nào giống nhau không? — (2) Viết các thừa số theo cùng một số gốc. — (3) Hiệu hai tích cùng thừa số chung bằng thừa số chung nhân hiệu hai thừa số kia.
-**Bài V.2** — (1) Phân tích các mẫu số thành tích hai số liên tiếp. — (2) Tách 1 phần (n × (n + 1)) thành hiệu hai phân số. — (3) Viết cả dãy thành hiệu rồi xem phần nào khử nhau.
-**Bài V.3** — (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
+**Bài III.5** — (1) Khoảng cách giữa hai số liên tiếp là bao nhiêu? — (2) Dãy có bao nhiêu số hạng? — (3) Tổng = (đầu + cuối) × số số hạng : 2.
+**Bài IV.1** — (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
+**Bài IV.2** — (1) Từ số hạng cuối lùi về số hạng đầu qua mấy khoảng? — (2) Trung bình cộng bằng nửa tổng của hai số hạng ở hai đầu. — (3) Tổng bằng trung bình cộng nhân số số hạng.
+**Bài IV.3** — (1) Số hạng nào đầu tiên thoả điều kiện? — (2) Số hạng tiếp theo thoả điều kiện cách nó bao nhiêu? — (3) Dãy con cũng cách đều — dùng công thức đếm.
+**Bài IV.4** — (1) Các tích có thừa số nào giống nhau? — (2) Đặt thừa số đó ra ngoài dấu ngoặc. — (3) Tổng trong ngoặc là dãy số cách đều — tính bằng công thức.
+**Bài IV.5** — (1) Biểu thức có dấu ngoặc không? — (2) Có thừa số chung ở hai tích không? — (3) Làm nhân chia trước, cộng trừ sau.
+**Bài V.1** — (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
+**Bài V.2** — (1) Mỗi phân số còn thiếu bao nhiêu nữa thì bằng 1? — (2) Phần thiếu ấy thay đổi thế nào khi n tăng? — (3) Thiếu ít hơn thì phân số lớn hơn.
+**Bài V.3** — (1) Phân tích các mẫu số thành tích hai số liên tiếp. — (2) Tách 1 phần (n × (n + 1)) thành hiệu hai phân số. — (3) Viết cả dãy thành hiệu rồi xem phần nào khử nhau.
 **Bài V.4** — (1) Dãy này có bao nhiêu số hạng? — (2) Đây là dãy số lẻ, số chẵn, hay số tự nhiên liên tiếp? — (3) Chọn đúng công thức tương ứng.
 **Bài V.5** — (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.
 
@@ -365,28 +731,28 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Viết tiếp: 3, 6, 12, 24, … | 48 |
-| I.2 | Đặt tính rồi tính: 4 328 + 1 795 | 6 123 |
-| I.3 | Điền số: 4, 9, …, 19, 24 | 14 |
-| I.4 | Viết tiếp ba số: 2, 5, 8, 11, … | 14, 17, 20 |
-| I.5 | Dãy 5, 9, 13, … số hạng thứ 20 là số nào? | 81 |
-| II.1 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
-| II.2 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
+| I.2 | Điền số: 4, 9, …, 19, 24 | 14 |
+| I.3 | Làm tròn 4 762 đến hàng trăm. | 4 800 |
+| I.4 | Dãy 5, 9, 13, … số hạng thứ 20 là số nào? | 81 |
+| I.5 | Viết tiếp ba số: 2, 5, 8, 11, … | 14, 17, 20 |
+| II.1 | Tính: 2 + 4 + 6 + … + 20 | 110 |
+| II.2 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
 | II.3 | Viết tiếp: 1, 2, 4, 7, 11, … | 16 |
-| II.4 | Tính: 2 + 4 + 6 + … + 20 | 110 |
-| II.5 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
+| II.4 | Dãy 3, 6, 9, …, 99 có bao nhiêu số hạng? | 33 |
+| II.5 | Có bao nhiêu số chẵn từ 10 đến 40? | 16 |
 | III.1 | Dãy 2, 7, 12, … Số 47 là số hạng thứ mấy? | 10 |
 | III.2 | Từ 1 đến 50, chữ số 3 xuất hiện bao nhiêu lần? | 15 |
-| III.3 | Có 60 kg gạo, bán 1 phần 3 rồi bán tiếp 1 phần 2 số còn lại. Còn bao nhiêu? | 20 kg |
+| III.3 | Tính nhanh: 3 phần 7 + 4 phần 7 | 1 |
 | III.4 | Dãy: số đầu là 2, mỗi số sau bằng số trước nhân 2. Số thứ 5 là số nào? | 32 |
-| III.5 | Trên một đường thẳng có 5 điểm. Có bao nhiêu đoạn thẳng? | 10 |
-| IV.1 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
-| IV.2 | Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? | 17 |
-| IV.3 | Trồng cây hai bên một đoạn đường dài 20 m, cách nhau 4 m, trồng cả hai đầu, mỗi bên cần mấy cây? | 6 cây |
-| IV.4 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
-| IV.5 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
-| V.1 | So sánh: 99 × 101 … 100 × 100 | < |
-| V.2 | Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 | 3 phần 4 |
-| V.3 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
+| III.5 | Tính nhanh: 1 + 2 + 3 + … + 100 | 5 050 |
+| IV.1 | Trồng cây hai bên một đoạn đường dài 20 m, cách nhau 4 m, trồng cả hai đầu, mỗi bên cần mấy cây? | 6 cây |
+| IV.2 | Dãy cách đều 10 số hạng, đầu 5, cuối 50. Tổng bằng bao nhiêu? | 275 |
+| IV.3 | Dãy 1, 4, 7, …, 100 có bao nhiêu số chẵn? | 17 |
+| IV.4 | Tính nhanh: 5 × 1 + 5 × 2 + … + 5 × 10 | 275 |
+| IV.5 | Tính: (1 phần 2 + 1 phần 3) × 6 phần 5 | 1 |
+| V.1 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
+| V.2 | So sánh 5 phần 6 và 7 phần 8. | 5 phần 6 < 7 phần 8 |
+| V.3 | Tính nhanh: 1 phần 2 + 1 phần 6 + 1 phần 12 | 3 phần 4 |
 | V.4 | Tính: 1 + 3 + 5 + … + 19 | 100 |
 | V.5 | Dãy 1, 2, 4, 7, 11, … số hạng thứ 8 là số nào? | 29 |
 

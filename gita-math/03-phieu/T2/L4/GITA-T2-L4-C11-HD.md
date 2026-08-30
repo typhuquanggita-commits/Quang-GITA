@@ -69,6 +69,22 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 ## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT
 
+Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. Bản đầy đủ kèm bộ đề luyện đọc vị ở `10-so-do-doc-vi/so-do-C-L4.md`.
+
+```
+ĐỌC ĐỀ → Đề cho một dãy số, dãy hình, hoặc hỏi số hạng thứ mấy?
+1. Lấy số sau trừ số trước, các hiệu có bằng nhau không?
+     ĐÚNG → Dãy cách đều: dùng công thức số hạng thứ n và tổng dãy
+2. Lấy số sau chia số trước, các thương có bằng nhau không?
+     ĐÚNG → Dãy nhân: nhân tiếp với thương ấy
+3. Dãy các hiệu có cách đều không?
+     ĐÚNG → Dãy hiệu bậc hai: số hạng thứ n = số đầu + tổng (n − 1) hiệu đầu
+4. Dãy có lặp lại một nhóm số cố định?
+     ĐÚNG → Dãy tuần hoàn: chia vị trí cho độ dài chu kì, xét số dư
+5. Đề nói về trồng cây, cột điện, cưa gỗ, số tiết học?
+     ĐÚNG → Quan hệ số điểm – số khoảng: tính số khoảng trước, rồi cộng 1, bằng, hay trừ 1
+```
+
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
 | Dãy số theo quy luật nhân | Các số tăng rất nhanh, hiệu không đều | Thử hiệu, rồi thử thương | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. |

@@ -17,7 +17,7 @@ sys.path.insert(0, str(CC))
 sys.path.insert(0, str(CC / "data"))
 
 from loai_phieu import LOAI                        # noqa: E402
-from .meta import ho_so_cum                        # noqa: E402
+from .meta import cay_goi_y, ho_so_cum             # noqa: E402
 from .phieu import CHU_Y, _hat, _yv, dung          # noqa: E402
 
 CHAN = ["**Người biên soạn:** Ban chuyên môn Học viện GITA",
@@ -73,14 +73,25 @@ def render_gp(row_gp: dict, row_hoc: dict) -> str:
         L.append("")
 
     L += ["---", "", "## 2. LỜI GIẢI ĐẦY ĐỦ", "",
-          "Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.", ""]
+          "Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, "
+          "và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — "
+          "đó là câu cần nhớ, không phải con số.", ""]
     for i, p in enumerate(phan):
         for j, b in enumerate(p):
-            hg = b.huong_giai
+            L += [f"### Bài {nhan[i]}.{j + 1} — {b.tieu_de}", ""]
             if (i, j) in bay:
-                hg = f"**BẪY — {bay[(i, j)]}.** {hg}"
-            L += [f"### Bài {nhan[i]}.{j + 1} — {b.tieu_de}", "", hg, "",
+                L += [f"> **BẪY — {bay[(i, j)]}.**", ""]
+            L.append("**Các bước giải**")
+            L.append("")
+            for buoc in b.cac_buoc:
+                L.append(f"{buoc}")
+                L.append("")
+            L += ["**Cách nghĩ chung cho mọi bài cùng dạng.** " + b.huong_giai, "",
                   f"*Điểm chốt:* {b.diem_chot}", ""]
+            if b.mo_rong:
+                L += [f"*Muốn khó hơn:* {b.mo_rong}", ""]
+            if b.chuan_bi:
+                L += [f"*Phải chắc trước khi làm bài này:* {b.chuan_bi}", ""]
 
     L += ["---", "", "## 3. BẢNG PHÂN TÍCH CHUYÊN SÂU", "",
           "Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thuộc **cách đọc "
@@ -173,6 +184,10 @@ def render_hd(row: dict) -> str:
         L.append(f"| {n} | {_o(b.pt_dang)} | {_o(b.pt_kien_thuc)} |")
 
     L += ["", "---", "", "## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT", "",
+          "Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. "
+          f"Bản đầy đủ kèm bộ đề luyện đọc vị ở "
+          f"`10-so-do-doc-vi/so-do-{row['nhom_ma']}-L{row['lop']}.md`.", "",
+          cay_goi_y(row["nhom_ma"]), "",
           "| Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |",
           "|---|---|---|---|"]
     thay = set()

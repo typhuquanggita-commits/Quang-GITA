@@ -51,24 +51,47 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Đếm số hạng dãy cách đều | Dãy cách đều |
-| 2 | Bài toán trồng cây | Quan hệ số cây – số khoảng |
-| 3 | Tìm quy luật dãy cách đều | Dãy số cách đều |
-| 4 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn |
-| 5 | Tìm quy luật dãy số | Dãy cách đều, dãy nhân, dãy hiệu tăng đều |
+| 1 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n |
+| 2 | Tìm quy luật dãy số | Dãy cách đều, dãy nhân, dãy hiệu tăng đều |
+| 3 | Bài toán trồng cây | Quan hệ số cây – số khoảng |
+| 4 | Tìm quy luật dãy cách đều | Dãy số cách đều |
+| 5 | Đếm số hạng dãy cách đều | Dãy cách đều |
+| 6 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn |
+| 7 | Dãy có hiệu tăng đều | Dãy hiệu, tổng dãy cách đều |
+| 8 | Đếm số hạng dãy cách đều theo điều kiện | Dãy cách đều, dấu hiệu chia hết |
 
 ---
 
 ## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT
 
+Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. Bản đầy đủ kèm bộ đề luyện đọc vị ở `10-so-do-doc-vi/so-do-C-L3.md`.
+
+```
+ĐỌC ĐỀ → Đề cho một dãy số, dãy hình, hoặc hỏi số hạng thứ mấy?
+1. Lấy số sau trừ số trước, các hiệu có bằng nhau không?
+     ĐÚNG → Dãy cách đều: dùng công thức số hạng thứ n và tổng dãy
+2. Lấy số sau chia số trước, các thương có bằng nhau không?
+     ĐÚNG → Dãy nhân: nhân tiếp với thương ấy
+3. Dãy các hiệu có cách đều không?
+     ĐÚNG → Dãy hiệu bậc hai: số hạng thứ n = số đầu + tổng (n − 1) hiệu đầu
+4. Dãy có lặp lại một nhóm số cố định?
+     ĐÚNG → Dãy tuần hoàn: chia vị trí cho độ dài chu kì, xét số dư
+5. Đề nói về trồng cây, cột điện, cưa gỗ, số tiết học?
+     ĐÚNG → Quan hệ số điểm – số khoảng: tính số khoảng trước, rồi cộng 1, bằng, hay trừ 1
+```
+
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối, khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số liên tiếp từ a đến b có b − a + 1 số hạng. |
+| Quy luật hình đưa về dãy số | Hình xếp thêm đều đặn theo thứ tự | Lập bảng ba hình đầu rồi áp công thức | Ba hình đầu là đủ để khẳng định quy luật cách đều. |
+| Tìm quy luật dãy số | Dãy số kết thúc bằng dấu … | Thử hiệu → thử thương → thử dãy hiệu | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. |
 | Bài toán trồng cây | “Trồng cây”, “cột điện”, “quanh ao” | Số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng. |
 | Tìm quy luật dãy cách đều | Dãy số kèm dấu … ở cuối | Tính hiệu các cặp liên tiếp rồi cộng tiếp | Ghi khoảng cách vào giữa các số hạng để nhìn ra quy luật ngay. |
+| Đếm số hạng dãy cách đều | Dãy có số đầu, số cuối, khoảng cách đều | (cuối − đầu) : khoảng cách + 1 | Dãy số liên tiếp từ a đến b có b − a + 1 số hạng. |
 | Dãy tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia lấy dư để định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + phần dư. |
 | Điền số hạng còn thiếu của dãy cách đều | Dãy có ô trống ở giữa | Xác định khoảng cách từ cặp liền nhau đã biết | Nếu chỗ trống nằm giữa hai số đã biết thì nó bằng trung bình cộng của hai số ấy. |
-| Tìm quy luật dãy số | Dãy số kết thúc bằng dấu … | Thử hiệu → thử thương → thử dãy hiệu | Số sau gấp đôi số trước là dấu hiệu quen nhất của dãy nhân. |
+| Dãy có hiệu tăng đều | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu rồi cộng dần | Số hạng thứ n = số đầu + (n − 1) × n : 2 khi hiệu là 1, 2, 3… |
+| Điền số hạng còn thiếu | Dãy có ô trống ở giữa | Xác định khoảng cách từ cặp liền nhau | Chỗ trống nằm giữa hai số đã biết thì bằng trung bình cộng của chúng. |
+| Đếm số hạng dãy cách đều theo điều kiện | “Có bao nhiêu số … từ … đến …” | Tìm hai đầu hợp lệ rồi đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d. |
 
 ---
 
@@ -87,20 +110,28 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Đếm số hạng dãy cách đều” chứ?
-- [ ] **2.** Em nhớ công thức: Dãy cách đều?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán trồng cây” chứ?
-- [ ] **4.** Em nhớ công thức: Quan hệ số cây – số khoảng?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tìm quy luật dãy cách đều” chứ?
-- [ ] **6.** Em nhớ công thức: Dãy số cách đều?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Dãy tuần hoàn” chứ?
-- [ ] **8.** Em nhớ công thức: Phép chia có dư, tính tuần hoàn?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Điền số hạng còn thiếu của dãy cách đều” chứ?
-- [ ] **10.** Em nhớ công thức: Dãy số cách đều?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Tìm quy luật dãy số” chứ?
-- [ ] **12.** Em nhớ công thức: Dãy cách đều, dãy nhân, dãy hiệu tăng đều?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Quy luật hình đưa về dãy số” chứ?
+- [ ] **2.** Em nhớ công thức: Dãy cách đều, số hạng thứ n?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Tìm quy luật dãy số” chứ?
+- [ ] **4.** Em nhớ công thức: Dãy cách đều, dãy nhân, dãy hiệu tăng đều?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán trồng cây” chứ?
+- [ ] **6.** Em nhớ công thức: Quan hệ số cây – số khoảng?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Tìm quy luật dãy cách đều” chứ?
+- [ ] **8.** Em nhớ công thức: Dãy số cách đều?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Đếm số hạng dãy cách đều” chứ?
+- [ ] **10.** Em nhớ công thức: Dãy cách đều?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Dãy tuần hoàn” chứ?
+- [ ] **12.** Em nhớ công thức: Phép chia có dư, tính tuần hoàn?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Điền số hạng còn thiếu của dãy cách đều” chứ?
+- [ ] **14.** Em nhớ công thức: Dãy số cách đều?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Dãy có hiệu tăng đều” chứ?
+- [ ] **16.** Em nhớ công thức: Dãy hiệu, tổng dãy cách đều?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Điền số hạng còn thiếu” chứ?
+- [ ] **18.** Em nhớ công thức: Dãy số cách đều?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Đếm số hạng dãy cách đều theo điều kiện” chứ?
+- [ ] **20.** Em nhớ công thức: Dãy cách đều, dấu hiệu chia hết?
 
-**Chuẩn đạt:** ✔ từ 10/12 câu trở lên.
+**Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
 ---
 
@@ -110,12 +141,16 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Quên cộng 1. | Thử với dãy ngắn ba số để kiểm tra công thức. |
-| 2 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ một hình nhỏ với ba khoảng để đếm thử. |
-| 3 | Chỉ xét hai số đầu rồi vội kết luận. | Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng. |
-| 4 | Dư 0 mà lấy phần tử đầu tiên. | Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
-| 5 | Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. | Đánh số thứ tự vị trí rồi mới tính khoảng cách. |
-| 6 | Không tìm ra hiệu đều thì bỏ cuộc. | Viết dãy hiệu xuống ngay dưới dãy gốc. |
+| 1 | Nhân khoảng cách với n nên thừa đúng một khoảng. | Kiểm chứng công thức với hình thứ 2 trước khi dùng cho hình thứ n. |
+| 2 | Không tìm ra hiệu đều thì bỏ cuộc. | Viết dãy hiệu xuống ngay dưới dãy gốc. |
+| 3 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ một hình nhỏ với ba khoảng để đếm thử. |
+| 4 | Chỉ xét hai số đầu rồi vội kết luận. | Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng. |
+| 5 | Quên cộng 1. | Thử với dãy ngắn ba số để kiểm tra công thức. |
+| 6 | Dư 0 mà lấy phần tử đầu tiên. | Kiểm chứng với một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
+| 7 | Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. | Đánh số thứ tự vị trí rồi mới tính khoảng cách. |
+| 8 | Không tìm ra hiệu đều thì bỏ cuộc, không thử dãy hiệu. | Luôn viết dãy hiệu trước khi kết luận không có quy luật. |
+| 9 | Lấy hiệu hai số cách nhau một chỗ trống làm khoảng cách. | Đánh số thứ tự vị trí rồi mới tính khoảng cách. |
+| 10 | Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy. | Viết ba số đầu và ba số cuối của dãy trước khi áp công thức. |
 
 ---
 

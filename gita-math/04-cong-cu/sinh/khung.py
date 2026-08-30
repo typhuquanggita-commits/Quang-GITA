@@ -196,7 +196,10 @@ class Bai:
         i = min(self.y_mau, self.so_y - 1)
         de, dap = self.y[i]
         return [f"Xét ý {chr(97 + i)}: {de}",
-                self.huong_giai,
+                f"Đọc vị: đây là dạng **{self.pt_dang}**; dấu hiệu là {self.pt_du_lieu}.",
+                f"Kiến thức phải dùng: {self.pt_kien_thuc}.",
+                f"Cách làm: {self.pt_phuong_phap}.",
+                f"Lối tắt: {self.pt_nhanh}",
                 f"Kết quả: **{dap}**."]
 
     @property

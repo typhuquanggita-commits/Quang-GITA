@@ -55,55 +55,52 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 33, 43, 53, 63, …, 83
-b) 40, 47, 54, 61, …, 75
-c) 40, 42, …, 46, 48, 50
-d) 38, 43, 48, 53, …, 63
-e) 1, 12, …, 34, 45, 56
+a) 31, 46, 61, 76, …, 106
+b) 40, 42, …, 46, 48, 50
+c) 38, 43, 48, 53, …, 63
+d) 1, 12, …, 34, 45, 56
+e) 34, 45, 56, 67, …, 89
 
-### Bài 2. (5 điểm) Viết tiếp ba số hạng của dãy
+### Bài 2. (5 điểm) Ôn tập bốn phép tính với số tự nhiên
 
-Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
+Đặt tính rồi tính. Ước lượng trước để tự kiểm tra.
 
-a) 28, 33, 38, 43, …
-b) 19, 21, 23, 25, …
-c) 25, 35, 45, 55, …
-d) 17, 21, 25, 29, …
-e) 20, 30, 40, 50, …
+a) 498 344 − 470 853
+b) 269 672 × 188
+c) 60 914 140 : 70
+d) 905 512 + 319 220
+e) 504 236 + 487 971
+f) 11 338 196 : 908
 
-### Bài 3. (5 điểm) Đặt tính rồi tính (nhân, chia)
-
-Đặt tính rồi tính.
-
-a) 80 172 : 68
-b) 5 155 × 56
-c) 7 021 × 51
-d) 6 066 × 37
-e) 5 604 × 29
-f) 640 730 : 85
-g) 5 803 × 68
-h) 7 776 × 73
-
-### Bài 4. (5 điểm) Dãy số theo quy luật nhân
+### Bài 3. (5 điểm) Dãy số theo quy luật nhân
 
 Tìm quy luật rồi viết số hạng tiếp theo.
 
-a) 1, 2, 4, 8, …
-b) 4, 20, 100, 500, …
-c) 5, 10, 20, 40, …
-d) 1, 2, 4, 8, …
-e) 5, 25, 125, 625, …
-f) 5, 25, 125, 625, …
+a) 2, 8, 32, 128, …
+b) 3, 9, 27, 81, …
+c) 2, 8, 32, 128, …
+d) 3, 6, 12, 24, …
+e) 6, 24, 96, 384, …
+
+### Bài 4. (5 điểm) Viết tiếp ba số hạng của dãy
+
+Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
+
+a) 7, 22, 37, 52, …
+b) 10, 15, 20, 25, …
+c) 26, 41, 56, 71, …
+d) 38, 53, 68, 83, …
+e) 40, 46, 52, 58, …
 
 ### Bài 5. (5 điểm) Tìm số hạng thứ n của dãy cách đều
 
-Cho dãy số: 24, 29, 34, 39, … (mỗi số hơn số liền trước 5 đơn vị).
+Cho dãy số: 15, 25, 35, 45, … (mỗi số hơn số liền trước 10 đơn vị).
 
-a) Số hạng thứ 5 của dãy là số nào?
-b) Số hạng thứ 15 của dãy là số nào?
-c) Số hạng thứ 16 của dãy là số nào?
-d) Số hạng thứ 18 của dãy là số nào?
-e) Số hạng thứ 28 của dãy là số nào?
+a) Số hạng thứ 6 của dãy là số nào?
+b) Số hạng thứ 9 của dãy là số nào?
+c) Số hạng thứ 12 của dãy là số nào?
+d) Số hạng thứ 22 của dãy là số nào?
+e) Số hạng thứ 25 của dãy là số nào?
 
 ---
 
@@ -335,31 +332,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 73 · b) 68 · c) 44 · d) 58 · e) 23
+**Đáp số:** a) 91 · b) 44 · c) 58 · d) 23 · e) 78
 **Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 
 ### Bài A.2
-**Đáp số:** a) 48, 53, 58 · b) 27, 29, 31 · c) 65, 75, 85 · d) 33, 37, 41 · e) 60, 70, 80
-**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
-**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+**Đáp số:** a) 27 491 · b) 50 698 336 · c) 870 202 · d) 1 224 732 · e) 992 207 · f) 12 487
+**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. Phòng: Đếm trước xem thương có mấy chữ số rồi mới chia.
 
 ### Bài A.3
-**Đáp số:** a) 1 179 · b) 288 680 · c) 358 071 · d) 224 442 · e) 162 516 · f) 7 538 · g) 394 604 · h) 567 648
-**Hướng giải:** BẪY — Chữ số 0 ở giữa thương. Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
-
-### Bài A.4
-**Đáp số:** a) 16 · b) 2 500 · c) 80 · d) 16 · e) 3 125 · f) 3 125
+**Đáp số:** a) 512 · b) 243 · c) 512 · d) 48 · e) 1 536
 **Hướng giải:** Nếu các hiệu không bằng nhau, hãy thử phép chia: lấy số hạng sau chia số hạng liền trước. Nếu các thương bằng nhau thì đó là dãy nhân, viết tiếp bằng cách nhân với thương đó.
 **Nhãn tư duy:** TD4. Điểm chốt: Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
 **Lỗi thường gặp:** Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. Phòng: Thử cả hai: hiệu trước, thương sau.
 
+### Bài A.4
+**Đáp số:** a) 67, 82, 97 · b) 30, 35, 40 · c) 86, 101, 116 · d) 98, 113, 128 · e) 64, 70, 76
+**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
+**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
+**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+
 ### Bài A.5
-**Đáp số:** a) 44 · b) 94 · c) 99 · d) 109 · e) 159
+**Đáp số:** a) 65 · b) 95 · c) 125 · d) 225 · e) 255
 **Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.

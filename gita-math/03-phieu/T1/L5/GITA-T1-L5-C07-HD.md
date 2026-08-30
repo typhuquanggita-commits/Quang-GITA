@@ -51,40 +51,56 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số |
-| 2 | Đếm số hạng của dãy cách đều theo điều kiện chia hết | Dãy số cách đều, dấu hiệu chia hết |
-| 3 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng |
-| 4 | Kiểm tra chia hết bằng dấu hiệu | Dấu hiệu chia hết cho 2, 3, 5, 9 |
-| 5 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết |
-| 6 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số |
-| 7 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu |
-| 8 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên |
-| 9 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 |
-| 10 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên |
-| 11 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số |
-| 12 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư |
-| 13 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 |
+| 1 | Xét chia hết của tổng, hiệu | Tính chất chia hết của tổng và hiệu |
+| 2 | Số và tổng chữ số của nó | Cấu tạo thập phân, phép chia có dư |
+| 3 | Ôn tập số tự nhiên | Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn |
+| 4 | Tìm chữ số tận cùng của một phép tính | Tính chất chữ số tận cùng |
+| 5 | Điền chữ số theo điều kiện chia hết | Dấu hiệu chia hết, chữ số hàng cao nhất khác 0 |
+| 6 | Nhận biết số nguyên tố, hợp số | Định nghĩa số nguyên tố, dấu hiệu chia hết |
+| 7 | Đếm chữ số, tính tổng chữ số | Cấu tạo số, tổng chữ số |
+| 8 | Xét số dư của tổng | Tính chất số dư của tổng |
+| 9 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên |
+| 10 | Dãy số tự nhiên liên tiếp có tổng cho trước | Trung bình cộng, dãy cách đều |
+| 11 | So sánh hai số tự nhiên | Thứ tự trong tập số tự nhiên |
+| 12 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Cấu tạo thập phân, hiệu hai số |
+| 13 | Đếm chữ số theo nhóm độ dài | Đếm số hạng dãy cách đều, cấu tạo số |
 
 ---
 
 ## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT
 
+Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. Bản đầy đủ kèm bộ đề luyện đọc vị ở `10-so-do-doc-vi/so-do-A-L5.md`.
+
+```
+ĐỌC ĐỀ → Đề nói về bản thân các con số — chữ số, hàng, chia hết, tận cùng?
+1. Đề hỏi chữ số ở một hàng, hoặc bảo viết số thành tổng?
+     ĐÚNG → Cấu tạo số: đánh số hàng từ phải sang trái
+2. Đề hỏi “có chia hết cho … không”, hoặc “chia … dư mấy”?
+     ĐÚNG → Dấu hiệu chia hết: 2 và 5 nhìn đuôi, 3 và 9 nhìn tổng chữ số
+3. Đề chỉ hỏi chữ số tận cùng, không hỏi kết quả?
+     ĐÚNG → Chữ số tận cùng: che phần đầu, chỉ tính với chữ số cuối
+4. Đề cho một bộ chữ số và bảo lập số?
+     ĐÚNG → Lập số và đếm số: cố định hàng cao nhất rồi hoán vị
+5. Đề mô tả quan hệ giữa các chữ số của một số cần tìm?
+     ĐÚNG → Cấu tạo số nâng cao: đặt ẩn cho từng chữ số, viết số theo cấu tạo
+```
+
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Đếm chữ số theo nhóm độ dài | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. |
-| Đếm số hạng của dãy cách đều theo điều kiện chia hết | Cụm “có bao nhiêu số … từ … đến …” | Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm | Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. |
+| Xét chia hết của tổng, hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. |
+| Số và tổng chữ số của nó | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. |
+| Ôn tập số tự nhiên | Câu hỏi ngắn về so sánh, hàng, số liền kề, làm tròn | Đếm chữ số, xét hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. |
 | Tìm chữ số tận cùng của một phép tính | Câu hỏi chỉ hỏi “chữ số tận cùng”, không hỏi kết quả | Rút gọn về chữ số tận cùng rồi tính | Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. |
-| Kiểm tra chia hết bằng dấu hiệu | Câu hỏi “có chia hết cho … không” | Chọn đúng dấu hiệu theo số chia rồi kiểm tra | Cộng chữ số theo cặp tròn 9, phần dư chính là số dư khi chia 9. |
+| Điền chữ số theo điều kiện chia hết | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. |
 | Nhận biết số nguyên tố, hợp số | Câu hỏi “là số nguyên tố hay hợp số” | Thử chia theo dãy số nguyên tố tăng dần, dừng đúng ngưỡng | Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5. |
 | Đếm chữ số, tính tổng chữ số | Yêu cầu “có mấy chữ số”, “tổng các chữ số” | Tách lớp để đếm; cộng rời từng chữ số | Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. |
-| Xét chia hết của tổng, hiệu | Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể | Xét số dư từng số hạng rồi cộng, trừ các số dư | Chỉ cộng các **số dư**, không cộng các số. |
+| Xét số dư của tổng | Đề hỏi chia hết hay số dư của một tổng dài | Rút gọn từng số hạng về số dư rồi cộng | Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. |
 | Xác định chữ số và giá trị chữ số theo hàng | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. |
 | Viết số từ dạng tổng theo hàng | Tổng gồm các số tròn chục, tròn trăm, tròn nghìn… | Kẻ bảng hàng, điền chữ số, bù 0 vào hàng khuyết | Đếm số chữ số 0 của số hạng lớn nhất là biết số cần viết dài mấy chữ số. |
-| Điền chữ số theo điều kiện chia hết | Số có ô trống hoặc dấu *, kèm điều kiện chia hết | Dùng dấu hiệu để lập điều kiện cho dấu * rồi thử 0–9 | Với 3 và 9: tính tổng các chữ số đã biết một lần duy nhất, rồi tìm phần bù cần thêm. |
+| Dãy số tự nhiên liên tiếp có tổng cho trước | Cụm “… số tự nhiên liên tiếp có tổng bằng …” | Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy | Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. |
 | So sánh hai số tự nhiên | Dấu … giữa hai số, yêu cầu điền <, >, = | Đếm chữ số → so từng hàng từ trái sang phải | Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số. |
 | Biến đổi số bằng cách thêm, bớt, đổi chỗ chữ số | Đề nói “xoá chữ số”, “viết thêm chữ số”, “đổi chỗ” | Viết cả hai số theo cấu tạo rồi lấy hiệu | Đổi chỗ hàng trăm với hàng đơn vị: hiệu = 99 × (hiệu hai chữ số). |
-| Số và tổng chữ số của nó | Đề liên hệ số với tổng các chữ số của chính nó | Đặt ẩn cho chữ số, viết hai biểu thức, lập bảng thử | a × 10 + b − (a + b) = 9 × a — hiệu luôn là bội của 9. |
-| Nhận biết chẵn – lẻ và số liền kề | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. |
+| Đếm chữ số theo nhóm độ dài | Bài toán đánh số trang, đánh số nhà, đánh số vé | Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng | Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. |
 
 ---
 
@@ -103,26 +119,26 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Đếm chữ số theo nhóm độ dài” chứ?
-- [ ] **2.** Em nhớ công thức: Đếm số hạng dãy cách đều, cấu tạo số?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Đếm số hạng của dãy cách đều theo điều kiện chia hết” chứ?
-- [ ] **4.** Em nhớ công thức: Dãy số cách đều, dấu hiệu chia hết?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tìm chữ số tận cùng của một phép tính” chứ?
-- [ ] **6.** Em nhớ công thức: Tính chất chữ số tận cùng?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Kiểm tra chia hết bằng dấu hiệu” chứ?
-- [ ] **8.** Em nhớ công thức: Dấu hiệu chia hết cho 2, 3, 5, 9?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết số nguyên tố, hợp số” chứ?
-- [ ] **10.** Em nhớ công thức: Định nghĩa số nguyên tố, dấu hiệu chia hết?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Đếm chữ số, tính tổng chữ số” chứ?
-- [ ] **12.** Em nhớ công thức: Cấu tạo số, tổng chữ số?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Xét chia hết của tổng, hiệu” chứ?
-- [ ] **14.** Em nhớ công thức: Tính chất chia hết của tổng và hiệu?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Xác định chữ số và giá trị chữ số theo hàng” chứ?
-- [ ] **16.** Em nhớ công thức: Cấu tạo thập phân của số tự nhiên?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Viết số từ dạng tổng theo hàng” chứ?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Xét chia hết của tổng, hiệu” chứ?
+- [ ] **2.** Em nhớ công thức: Tính chất chia hết của tổng và hiệu?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Số và tổng chữ số của nó” chứ?
+- [ ] **4.** Em nhớ công thức: Cấu tạo thập phân, phép chia có dư?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Ôn tập số tự nhiên” chứ?
+- [ ] **6.** Em nhớ công thức: Thứ tự số tự nhiên, giá trị hàng, quy tắc làm tròn?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Tìm chữ số tận cùng của một phép tính” chứ?
+- [ ] **8.** Em nhớ công thức: Tính chất chữ số tận cùng?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Điền chữ số theo điều kiện chia hết” chứ?
+- [ ] **10.** Em nhớ công thức: Dấu hiệu chia hết, chữ số hàng cao nhất khác 0?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Nhận biết số nguyên tố, hợp số” chứ?
+- [ ] **12.** Em nhớ công thức: Định nghĩa số nguyên tố, dấu hiệu chia hết?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Đếm chữ số, tính tổng chữ số” chứ?
+- [ ] **14.** Em nhớ công thức: Cấu tạo số, tổng chữ số?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Xét số dư của tổng” chứ?
+- [ ] **16.** Em nhớ công thức: Tính chất số dư của tổng?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Xác định chữ số và giá trị chữ số theo hàng” chứ?
 - [ ] **18.** Em nhớ công thức: Cấu tạo thập phân của số tự nhiên?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Điền chữ số theo điều kiện chia hết” chứ?
-- [ ] **20.** Em nhớ công thức: Dấu hiệu chia hết, chữ số hàng cao nhất khác 0?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Viết số từ dạng tổng theo hàng” chứ?
+- [ ] **20.** Em nhớ công thức: Cấu tạo thập phân của số tự nhiên?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -134,20 +150,20 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Lấy số trang nhân với số chữ số của trang cuối. | Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối. |
-| 2 | Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. | Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức. |
-| 3 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. |
-| 4 | Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. | Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận. |
-| 5 | Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. | Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc. |
-| 6 | Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). | Viết rời từng chữ số ra rồi mới cộng. |
-| 7 | Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. | Ghi số dư của từng số hạng ngay bên dưới nó. |
-| 8 | Đếm hàng từ trái sang phải nên lệch hàng. | Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. |
-| 9 | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng. |
-| 10 | Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. | Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt. |
-| 11 | So từ hàng đơn vị (phải sang trái) nên kết luận sai. | Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. |
-| 12 | Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. | Viết cả số cũ và số mới ra rồi mới so sánh. |
-| 13 | Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. | Kiểm tra lại đáp số bằng cách thay ngược vào đề. |
-| 14 | Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. | Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị. |
+| 1 | Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. | Ghi số dư của từng số hạng ngay bên dưới nó. |
+| 2 | Chia bừa mà không kiểm tra điều kiện chia hết nên nhận đáp số không nguyên. | Kiểm tra lại đáp số bằng cách thay ngược vào đề. |
+| 3 | So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. | Gạch một nét ngăn ngay sau hàng cần làm tròn. |
+| 4 | Tính trọn cả phép tính, vừa lâu vừa dễ sai. | Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng. |
+| 5 | Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. | Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt. |
+| 6 | Thử chia cho mọi số từ 2 đến số đó nên mất thời gian, hoặc kết luận vội. | Thử theo thứ tự 2, 3, 5, 7, 11, 13 và dừng đúng lúc. |
+| 7 | Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). | Viết rời từng chữ số ra rồi mới cộng. |
+| 8 | Cộng hết cả dãy rồi mới chia, mất thời gian và dễ sai. | Ghi số dư của từng số ngay dưới số đó rồi cộng dòng số dư. |
+| 9 | Đếm hàng từ trái sang phải nên lệch hàng. | Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. |
+| 10 | Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. | Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng. |
+| 11 | Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. | Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu. |
+| 12 | So từ hàng đơn vị (phải sang trái) nên kết luận sai. | Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. |
+| 13 | Nhầm “viết thêm bên trái” thành “viết thêm bên phải”. | Viết cả số cũ và số mới ra rồi mới so sánh. |
+| 14 | Lấy số trang nhân với số chữ số của trang cuối. | Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối. |
 
 ---
 

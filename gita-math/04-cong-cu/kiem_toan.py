@@ -353,6 +353,24 @@ def kiem_ban_do():
                 E(f"{f.name}: thiếu mục `{c}`.")
     OK("Chín bản đồ đủ sáu mục bắt buộc.")
 
+    fs = sorted((ROOT / "10-so-do-doc-vi").glob("so-do-*.md"))
+    if len(fs) != 24:
+        E(f"Có {len(fs)} sơ đồ đọc vị, phải 24 (8 nhóm × 3 lớp).")
+    can = ["## 1. CÂY QUYẾT ĐỊNH ĐỌC VỊ", "## 2. BẢNG DẤU HIỆU",
+           "## 3. TÁM CẶP CHỮ DỄ ĐỌC NHẦM", "## 4. LUYỆN ĐỌC VỊ", "## 5. TỰ KIỂM"]
+    thieu_de = []
+    for f in fs:
+        t = f.read_text(encoding="utf-8")
+        for c in can:
+            if c not in t:
+                E(f"{f.name}: thiếu mục `{c}`.")
+        if t.count("**Đề ") < 10:
+            thieu_de.append(f.name)
+    if thieu_de:
+        E(f"{len(thieu_de)} sơ đồ có ít hơn 10 đề luyện đọc vị: {thieu_de[:3]}")
+    else:
+        OK("24 sơ đồ đọc vị đủ năm mục và đủ 10 đề luyện mỗi sơ đồ.")
+
 
 # ────────────────── 10. BẢO MẬT ──────────────────
 def kiem_bao_mat():

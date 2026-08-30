@@ -51,41 +51,55 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công |
-| 2 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít |
-| 3 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng |
-| 4 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng |
-| 5 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên |
-| 6 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ |
-| 7 | Ba dạng cơ bản của chuyển động đều | Công thức s = v × t |
-| 8 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích |
-| 9 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số |
-| 10 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây |
-| 11 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng |
-| 12 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại |
-| 13 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư |
-| 14 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính |
+| 1 | Đổi đơn vị thể tích, dung tích | Bảng đơn vị thể tích; quan hệ dm³ – lít |
+| 2 | Bốn phép tính với số đo | Đổi đơn vị, bốn phép tính |
+| 3 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ |
+| 4 | So sánh số đo đại lượng | Bảng đơn vị đo, so sánh số tự nhiên |
+| 5 | Bài toán đại lượng nhiều bước | Nhân, trừ; đại lượng cùng loại |
+| 6 | Đổi đơn vị diện tích | Bảng đơn vị đo diện tích |
+| 7 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng |
+| 8 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng |
+| 9 | Tính thời điểm trong ngày | Quan hệ giờ – phút, phép chia có dư |
+| 10 | Vận tốc trung bình | Công thức vận tốc; trung bình cộng có trọng số |
+| 11 | Đại lượng khối lượng, chia phần và làm tròn lên | Bảng đơn vị khối lượng; phép chia có dư |
+| 12 | Tỉ lệ nghịch, so sánh hai phương án | Đại lượng tỉ lệ nghịch, tổng số ngày công |
+| 13 | Bài toán đại lượng có lời văn | Nhân, chia số tự nhiên; đổi đơn vị khối lượng |
 
 ---
 
 ## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT
 
+Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. Bản đầy đủ kèm bộ đề luyện đọc vị ở `10-so-do-doc-vi/so-do-E-L5.md`.
+
+```
+ĐỌC ĐỀ → Đề có đơn vị đo — mét, ki-lô-gam, lít, giờ, đồng?
+1. Hai vế của đề dùng hai đơn vị khác nhau?
+     ĐÚNG → Đổi về cùng đơn vị trước, rồi mới tính hoặc so sánh
+2. Đơn vị có mũ hai (m², cm², ha) hay mũ ba (m³, cm³, lít)?
+     ĐÚNG → Nhớ bậc nhảy: độ dài 10, diện tích 100, thể tích 1 000
+3. Đề nói về giờ, phút, giây, hoặc ngày tháng?
+     ĐÚNG → Cơ số 60 và chu kì 7: đổi hết về phút rồi tính, cuối cùng đổi lại
+4. Đề có tiền, giá, chiết khấu, thuế?
+     ĐÚNG → Tính tiền hàng trước; mỗi lần phần trăm phải xác định lại mốc 100%
+5. Đề có vận tốc kèm đơn vị km/giờ hay m/giây?
+     ĐÚNG → s = v × t; kiểm tra ba đơn vị có khớp nhau không
+```
+
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Tỉ lệ nghịch, so sánh hai phương án | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. |
 | Đổi đơn vị thể tích, dung tích | Đơn vị có mũ ba, hoặc lít, mi-li-lít | Đếm bậc rồi nhân, chia 1 000 | Mỗi bậc thêm ba chữ số 0. |
-| Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. |
-| Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). |
-| So sánh số đo đại lượng | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. |
-| Lịch và đơn vị thời gian lớn | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. |
-| Ba dạng cơ bản của chuyển động đều | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị | Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức. |
-| Đổi đơn vị diện tích | Đơn vị có mũ hai: m², cm², km², ha | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. |
-| Vận tốc trung bình | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. |
-| Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. |
-| Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. |
-| Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. |
-| Tính thời điểm trong ngày | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. |
 | Bốn phép tính với số đo | Các số hạng có đơn vị khác nhau trong cùng một phép tính | Đổi về đơn vị của kết quả rồi tính | Đọc chỗ chấm trước, biết ngay đơn vị đích. |
+| Lịch và đơn vị thời gian lớn | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. |
+| So sánh số đo đại lượng | Hai vế có đơn vị khác nhau | Đổi về cùng đơn vị rồi so sánh | Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số. |
+| Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng | Rút gọn số bước bằng cách trừ trước, nhân sau | So sánh hai đường giải, chọn đường ít phép tính hơn. |
+| Đổi đơn vị diện tích | Đơn vị có mũ hai, hoặc ha, km² | Đếm bậc rồi nhân, chia 100 | Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. |
+| Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. |
+| Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). |
+| Tính thời điểm trong ngày | Cho thời điểm bắt đầu và khoảng thời gian | Quy về phút, cộng trừ, đổi lại | Cộng tròn giờ trước rồi cộng phần phút lẻ sau. |
+| Vận tốc trung bình | Hai chặng có vận tốc khác nhau | Tính tổng quãng đường, tổng thời gian rồi chia | Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho. |
+| Đại lượng khối lượng, chia phần và làm tròn lên | Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” | Quy về một đơn vị, chia, xét phần dư | 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. |
+| Tỉ lệ nghịch, so sánh hai phương án | Thay đổi số người, hỏi thay đổi thời gian | Bám vào tổng số ngày công không đổi | Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. |
+| Bài toán đại lượng có lời văn | Đơn vị trong câu hỏi khác đơn vị trong dữ kiện | Tính theo đơn vị dữ kiện rồi đổi ở bước cuối | 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ. |
 
 ---
 
@@ -104,26 +118,26 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ lệ nghịch, so sánh hai phương án” chứ?
-- [ ] **2.** Em nhớ công thức: Đại lượng tỉ lệ nghịch, tổng số ngày công?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị thể tích, dung tích” chứ?
-- [ ] **4.** Em nhớ công thức: Bảng đơn vị thể tích; quan hệ dm³ – lít?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán đại lượng có lời văn” chứ?
-- [ ] **6.** Em nhớ công thức: Nhân, chia số tự nhiên; đổi đơn vị khối lượng?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị đo” chứ?
-- [ ] **8.** Em nhớ công thức: Bảng đơn vị đo độ dài, khối lượng?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “So sánh số đo đại lượng” chứ?
-- [ ] **10.** Em nhớ công thức: Bảng đơn vị đo, so sánh số tự nhiên?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Lịch và đơn vị thời gian lớn” chứ?
-- [ ] **12.** Em nhớ công thức: Số ngày các tháng, năm nhuận, thế kỉ?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Ba dạng cơ bản của chuyển động đều” chứ?
-- [ ] **14.** Em nhớ công thức: Công thức s = v × t?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị diện tích” chứ?
-- [ ] **16.** Em nhớ công thức: Bảng đơn vị đo diện tích?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Vận tốc trung bình” chứ?
-- [ ] **18.** Em nhớ công thức: Công thức vận tốc; trung bình cộng có trọng số?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Đổi và tính toán với đơn vị thời gian” chứ?
-- [ ] **20.** Em nhớ công thức: Quan hệ giờ – phút – giây?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị thể tích, dung tích” chứ?
+- [ ] **2.** Em nhớ công thức: Bảng đơn vị thể tích; quan hệ dm³ – lít?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Bốn phép tính với số đo” chứ?
+- [ ] **4.** Em nhớ công thức: Đổi đơn vị, bốn phép tính?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Lịch và đơn vị thời gian lớn” chứ?
+- [ ] **6.** Em nhớ công thức: Số ngày các tháng, năm nhuận, thế kỉ?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “So sánh số đo đại lượng” chứ?
+- [ ] **8.** Em nhớ công thức: Bảng đơn vị đo, so sánh số tự nhiên?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán đại lượng nhiều bước” chứ?
+- [ ] **10.** Em nhớ công thức: Nhân, trừ; đại lượng cùng loại?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị diện tích” chứ?
+- [ ] **12.** Em nhớ công thức: Bảng đơn vị đo diện tích?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Số đo có nhiều đơn vị” chứ?
+- [ ] **14.** Em nhớ công thức: Bảng đơn vị khối lượng?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị đo” chứ?
+- [ ] **16.** Em nhớ công thức: Bảng đơn vị đo độ dài, khối lượng?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tính thời điểm trong ngày” chứ?
+- [ ] **18.** Em nhớ công thức: Quan hệ giờ – phút, phép chia có dư?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Vận tốc trung bình” chứ?
+- [ ] **20.** Em nhớ công thức: Công thức vận tốc; trung bình cộng có trọng số?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -135,20 +149,19 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
-| 2 | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. |
-| 3 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
-| 4 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
-| 5 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
-| 6 | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. |
-| 7 | Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. | Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức. |
-| 8 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc. |
-| 9 | Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. | Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. |
-| 10 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
-| 11 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
-| 12 | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. |
-| 13 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
-| 14 | Cộng số mét với số xăng-ti-mét mà chưa đổi. | Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó. |
+| 1 | Đổi như đơn vị diện tích, chỉ nhân 100. | Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. |
+| 2 | Cộng số mét với số xăng-ti-mét mà chưa đổi. | Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó. |
+| 3 | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. |
+| 4 | So thẳng hai con số, bỏ qua đơn vị. | Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị. |
+| 5 | Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. | Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. |
+| 6 | Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. | Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau. |
+| 7 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
+| 8 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
+| 9 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra phần phút của đáp số phải bé hơn 60. |
+| 10 | Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. | Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. |
+| 11 | Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. | Hỏi lại: phần thóc dư có tự bay đi được không? |
+| 12 | Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. | Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … . |
+| 13 | Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. | Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. |
 
 ---
 

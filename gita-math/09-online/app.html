@@ -68,6 +68,12 @@ button{font:inherit;color:inherit}
 .khoi{display:flex;gap:5px;align-items:center;flex-wrap:wrap;font-size:11.5px;color:#AFC9E8}
 .khoi b{background:rgba(255,255,255,.16);border-radius:6px;padding:1px 7px;color:#fff;font-weight:700}
 .khoi a{color:#DCE9F8;text-decoration:underline;text-underline-offset:2px}
+/* ---------- cây quyết định đọc vị ---------- */
+ol.cay{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:7px}
+ol.cay li{font-size:13.5px;line-height:1.5}
+ol.cay li b{font-weight:600;color:var(--ink)}
+ol.cay .dung{display:block;margin-top:2px;padding-left:10px;color:var(--ink-2);
+  border-left:2px solid var(--xanh-3)}
 .nav{display:flex;flex-direction:column;gap:2px}
 .nav-h{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#7F9CC4;padding:10px 10px 4px}
 .nav button{display:flex;align-items:center;gap:9px;width:100%;text-align:left;background:none;border:0;
@@ -281,6 +287,7 @@ input[type=search]{min-width:230px}
       <button data-v="thu-vien">Thư viện tài liệu<span class="k">3</span></button>
       <div class="nav-h">Kiến thức</div>
       <button data-v="ban-do">Bản đồ kiến thức<span class="k">4</span></button>
+      <button data-v="doc-vi">Sơ đồ đọc vị<span class="k">D</span></button>
       <button data-v="chuyen-de">8 nhóm chuyên đề<span class="k">5</span></button>
       <button data-v="cum">96 cụm chuyên đề<span class="k">8</span></button>
       <div class="nav-h">Đánh giá</div>
@@ -325,12 +332,15 @@ const DATA = (() => {
     return v;
   });
   delete d.bang_chuoi;
-  for (const k in (d.kem || {})) {          // dòng bảng Markdown được tách thành ô
-    const m = d.kem[k].md;
-    if (Array.isArray(m)) {
-      d.kem[k].md = m.map(x => Array.isArray(x) ? "| " + x.join(" | ") + " |" : x).join("\n");
+  // Dòng bảng Markdown được tách thành mảng ô khi nén — ghép lại thành văn bản.
+  const ghep = o => {
+    if (Array.isArray(o.md)) {
+      o.md = o.md.map(x => Array.isArray(x) ? "| " + x.join(" | ") + " |" : x).join("\n");
     }
-  }
+  };
+  for (const k in (d.kem || {})) ghep(d.kem[k]);
+  for (const x of (d.so_do || [])) ghep(x);
+  for (const x of (d.ban_do || [])) ghep(x);
   return d;
 })();
 
@@ -1239,6 +1249,61 @@ function veKem(ma) {
     <div class="card pad md">${mdToHtml(d.md)}</div>`;
 }
 
+/* ============================ TRANG: SƠ ĐỒ ĐỌC VỊ ============================ */
+let LOC_DV = { lop: 4 };
+function veDocVi(ma) {
+  if (ma) {
+    const d = (DATA.so_do || []).find(x => x.ma === ma);
+    if (!d) return veDocVi();
+    MAIN().innerHTML = `<div class="row" style="margin-bottom:14px">
+      <button class="btn" data-go="doc-vi">← Tất cả sơ đồ đọc vị</button></div>
+      <div class="card pad md">${mdToHtml(d.md)}</div>`;
+    return;
+  }
+  const c = DATA.cay_doc_vi || { mo: {}, cay: {}, chot: [], nham: [] };
+  const L = LOC_DV.lop;
+  MAIN().innerHTML = `
+  <div class="page-h"><div><div class="eyebrow">Đọc đề trước khi tính</div>
+    <h1>Sơ đồ đọc vị đề bài</h1>
+    <p class="sub">Đọc vị là trả lời xong năm câu hỏi <b>trước khi</b> đặt bút tính: đề nói về cái gì ·
+    dấu hiệu nào · kiến thức nào · phương pháp nào · lối tắt và bẫy ở đâu. Học sinh giỏi không giải
+    nhanh hơn — họ nhận ra dạng bài nhanh hơn.</p></div>
+    <div><label class="eyebrow" for="dvlop">Lớp</label>
+      <select id="dvlop">${[3, 4, 5].map(x =>
+        `<option value="${x}"${x === L ? " selected" : ""}>Lớp ${x}</option>`).join("")}</select>
+    </div></div>
+
+  <div class="grid g2" style="margin-bottom:18px">
+  ${Object.keys(DATA.nhom).map(g => {
+    const n = DATA.nhom[g], cay = c.cay[g] || [];
+    const sd = (DATA.so_do || []).find(x => x.g === g && x.l === L);
+    return `<div class="card pad" style="border-top:3px solid ${n.mau}">
+      <h3 style="font-size:15px"><span class="mono" style="color:${n.mau}">${g}</span> — ${esc(n.ten)}</h3>
+      <p class="sub" style="margin:6px 0 10px">${mdToHtml(c.mo[g] || "").replace(/<\/?p>/g, "")}</p>
+      <ol class="cay">${cay.map(x =>
+        `<li><b>${mdToHtml(x[0]).replace(/<\/?p>/g, "")}</b>
+         <span class="dung">${mdToHtml(String(x[1]).replace(/^→\s*/, "")).replace(/<\/?p>/g, "")}</span></li>`).join("")}</ol>
+      ${sd ? `<a class="btn" href="#/doc-vi/${sd.ma}">Sơ đồ đầy đủ · lớp ${L}</a>` : ""}
+    </div>`;
+  }).join("")}
+  </div>
+
+  <div class="card pad" style="margin-bottom:18px">
+    <h3 style="font-size:15px;margin-bottom:8px">Ba câu chốt — hỏi sau khi đã gọi tên được dạng bài</h3>
+    <ol class="cay">${(c.chot || []).map(x =>
+      `<li><b>${mdToHtml(x).replace(/<\/?p>/g, "")}</b></li>`).join("")}</ol></div>
+
+  <div class="card pad">
+    <h3 style="font-size:15px;margin-bottom:8px">Tám cặp chữ dễ đọc nhầm</h3>
+    <p class="sub" style="margin-bottom:10px">Đọc sai một chữ là đi sai cả bài.</p>
+    <table><thead><tr><th>Cặp chữ</th><th>Khác nhau ở chỗ</th></tr></thead><tbody>
+    ${(c.nham || []).map(x => `<tr><td>${mdToHtml(x[0]).replace(/<\/?p>/g, "")}</td>
+      <td>${mdToHtml(x[1]).replace(/<\/?p>/g, "")}</td></tr>`).join("")}
+    </tbody></table></div>`;
+  const sel = $("#dvlop");
+  if (sel) sel.addEventListener("change", e => { LOC_DV.lop = +e.target.value; veDocVi(); });
+}
+
 /* ============================ TRANG: CỤM CHUYÊN ĐỀ ============================ */
 let LOC_CUM = { lop: 4, tuyen: "T1" };
 function veDanhSachCum() {
@@ -1643,7 +1708,7 @@ function veHoSo() {
 /* ============================== ĐIỀU HƯỚNG ============================== */
 const TRANG = {
   "tong-quan": veTongQuan, "lo-trinh": veLoTrinh, "thu-vien": veThuVien,
-  "ban-do": veBanDo, "chuyen-de": veChuyenDe, "cum": veDanhSachCum,
+  "ban-do": veBanDo, "doc-vi": veDocVi, "chuyen-de": veChuyenDe, "cum": veDanhSachCum,
   "de-thi": veDeThi, "phan-quyen": vePhanQuyen, "test": veTest, "ho-so": veHoSo
 };
 function dinhTuyen() {
@@ -1656,6 +1721,7 @@ function dinhTuyen() {
   else if (v === "kem" && a) { veKem(decodeURIComponent(a)); }
   else if (v === "de" && a) { veDe(decodeURIComponent(a)); }
   else if (v === "ban-do") { veBanDo(a); }
+  else if (v === "doc-vi") { veDocVi(a); }
   else (TRANG[v] || veTongQuan)();
   MAIN().focus({ preventScroll: true });
   window.scrollTo({ top: 0 });
@@ -1693,7 +1759,8 @@ function capNhatGhiChuVai() {
 }
 /* Ẩn mục điều hướng mà vai trò hiện tại không có quyền xem */
 const NAV_QUYEN = { "de-thi": "de_moc", "ho-so": "ho_so_minh", "thu-vien": "chi_muc",
-  "ban-do": "ban_do", "chuyen-de": "chi_muc", "cum": "chi_muc", "test": "test_dv" };
+  "ban-do": "ban_do", "doc-vi": "ban_do", "chuyen-de": "chi_muc",
+  "cum": "chi_muc", "test": "test_dv" };
 function loc_nav_theo_quyen() {
   $$("#nav button[data-v]").forEach(b => {
     const tn = NAV_QUYEN[b.dataset.v];

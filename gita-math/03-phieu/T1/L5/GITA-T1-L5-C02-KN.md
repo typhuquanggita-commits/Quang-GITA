@@ -42,73 +42,67 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L5-C02-KN-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Công thức s = v × t
-> 2. Nhân, trừ; đại lượng cùng loại
-> 3. Số ngày các tháng, năm nhuận, thế kỉ
-> 4. Quan hệ giờ – phút – giây
+> 1. Quan hệ giờ – phút – giây
+> 2. Bảng đơn vị thể tích; quan hệ dm³ – lít
+> 3. Đại lượng tỉ lệ nghịch, tổng số ngày công
+> 4. Bảng đơn vị khối lượng
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Số thập phân: hàng, so sánh, đổi từ phân số
-
-Chú ý dấu phẩy và các hàng sau dấu phẩy.
-
-a) Viết phân số 622 phần 1 000 dưới dạng số thập phân.
-b) 331,837 … 333,203
-c) Trong số 341,909, chữ số ở hàng phần mười là chữ số nào?
-d) Trong số 793,006, chữ số ở hàng phần mười là chữ số nào?
-e) 597,963 … 601,604
-f) Viết phân số 62 phần 100 dưới dạng số thập phân.
-g) Viết phân số 38 phần 100 dưới dạng số thập phân.
-h) Trong số 442,004, chữ số ở hàng phần mười là chữ số nào?
-
-### Bài 2. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
-
-Điền số thích hợp vào chỗ chấm.
-
-a) 33 dam = … m
-b) 11 dag = … g
-c) 61 dam = … cm
-d) 40 hg = … g
-e) 37 dm = … mm
-f) 22 tạ = … dag
-g) 58 tạ = … kg
-
-### Bài 3. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
-
-Điền vào chỗ chấm.
-
-a) 8 tạ 27 kg = … kg
-b) 4 tấn 6 tạ 56 kg = … kg
-c) 1 837 kg = … tấn … tạ … kg
-d) 6 021 kg = … tấn … tạ … kg
-e) 3 tấn 5 tạ 37 kg = … kg
-f) 6 516 kg = … tấn … tạ … kg
-
-### Bài 4. (5 điểm) Đổi đơn vị đo diện tích
+### Bài 1. (5 điểm) Đổi đơn vị đo diện tích
 
 Điền số thích hợp.
 
-a) 5 dm² = … cm²
-b) 4 km² = … m²
-c) 61 km² = … ha
-d) 74 m² = … dm²
-e) 38 km² = … ha
-f) 14 m² = … dm²
-g) 18 dm² = … cm²
+a) 28 m² = … dm²
+b) 63 km² = … ha
+c) 60 dm² = … cm²
+d) 8 m² = … cm²
+e) 28 m² = … dm²
+f) 43 m² = … cm²
 
-### Bài 5. (5 điểm) Đơn vị đo thời gian: giờ và phút
+### Bài 2. (5 điểm) Đơn vị đo thời gian: giờ và phút
 
 Điền kết quả, viết dạng giờ và phút.
 
-a) 1 giờ 9 phút − 18 phút = … (viết dạng giờ và phút)
-b) 6 giờ 52 phút + 149 phút = … (viết dạng giờ và phút)
-c) 288 phút = … giờ … phút
-d) 3 giờ 55 phút = … phút
-e) 372 phút = … giờ … phút
-f) 2 giờ 44 phút + 28 phút = … (viết dạng giờ và phút)
+a) 6 giờ 3 phút + 98 phút = … (viết dạng giờ và phút)
+b) 228 phút = … giờ … phút
+c) 5 giờ 25 phút = … phút
+d) 5 giờ 16 phút − 248 phút = … (viết dạng giờ và phút)
+e) 6 giờ 15 phút + 60 phút = … (viết dạng giờ và phút)
+f) 7 giờ 54 phút = … phút
+
+### Bài 3. (5 điểm) Đổi đơn vị đo độ dài và khối lượng
+
+Điền số thích hợp vào chỗ chấm.
+
+a) 59 tạ = … hg
+b) 52 dm = … mm
+c) 22 yến = … kg
+d) 14 dam = … dm
+e) 48 m = … cm
+f) 46 tạ = … yến
+
+### Bài 4. (5 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
+
+Trả lời nhanh, mỗi ý không quá 20 giây.
+
+a) Làm tròn 516 330 đến hàng trăm.
+b) 4 623 949 … 4 624 934
+c) Chữ số hàng đơn vị của số 372 714 có giá trị bằng bao nhiêu?
+d) Số liền trước và số liền sau của 9 185 198 là những số nào?
+e) Làm tròn 1 543 814 đến hàng trăm.
+
+### Bài 5. (5 điểm) Đổi số đo khối lượng có nhiều đơn vị
+
+Điền vào chỗ chấm.
+
+a) 1 tấn 3 tạ 1 kg = … kg
+b) 64 kg = … kg
+c) 5 tấn 7 tạ 59 kg = … kg
+d) 4 tấn 32 kg = … kg
+e) 3 tấn 1 tạ 49 kg = … kg
 
 ---
 
@@ -128,11 +122,11 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
-a) Câu lời giải mở đầu cho dạng “Bài toán đại lượng nhiều bước”?
-b) Câu lời giải mở đầu cho dạng “Lịch và đơn vị thời gian lớn”?
-c) Câu lời giải mở đầu cho dạng “Bài toán đại lượng có lời văn”?
+a) Câu lời giải mở đầu cho dạng “Đổi đơn vị thể tích, dung tích”?
+b) Câu lời giải mở đầu cho dạng “Đại lượng khối lượng, chia phần và làm tròn lên”?
+c) Câu lời giải mở đầu cho dạng “Vận tốc trung bình”?
 d) Câu lời giải mở đầu cho dạng “Tính thời điểm trong ngày”?
-e) Câu lời giải mở đầu cho dạng “Bốn phép tính với số đo”?
+e) Câu lời giải mở đầu cho dạng “Phần trăm nhiều bước trong mua bán”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
 
@@ -149,12 +143,12 @@ f) Vận tốc ghi đơn vị gì?
 
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
-a) Lỗi: Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. — cách phòng?
-b) Lỗi: Coi mọi năm chia hết cho 4 đều là năm nhuận. — cách phòng?
-c) Lỗi: Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. — cách phòng?
+a) Lỗi: Đổi như đơn vị diện tích, chỉ nhân 100. — cách phòng?
+b) Lỗi: Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. — cách phòng?
+c) Lỗi: Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. — cách phòng?
 d) Lỗi: Cộng phần phút thành hơn 60 mà quên đổi thành giờ. — cách phòng?
-e) Lỗi: Cộng số mét với số xăng-ti-mét mà chưa đổi. — cách phòng?
-f) Lỗi: Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. — cách phòng?
+e) Lỗi: Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. — cách phòng?
+f) Lỗi: Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -182,7 +176,7 @@ e) Dò ba tầng mất bao lâu cho một bài?
 
 ### Bài 2. (3 điểm) Dò soát tình huống 1
 
-**Tình huống:** một bạn làm bài dạng “Bài toán đại lượng nhiều bước” và mắc lỗi: Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại.
+**Tình huống:** một bạn làm bài dạng “Đổi đơn vị thể tích, dung tích” và mắc lỗi: Đổi như đơn vị diện tích, chỉ nhân 100.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -212,7 +206,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “Vận tốc trung bình” và mắc lỗi: Cộng hai vận tốc rồi chia đôi trong mọi trường hợp.
+**Tình huống:** một bạn làm bài dạng “Bài toán đại lượng nhiều bước” và mắc lỗi: Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -234,7 +228,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — Lịch và đơn vị thời gian lớn
+### Bài 2. (5 điểm) Nhánh 1 — Đại lượng khối lượng, chia phần và làm tròn lên
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -254,7 +248,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Đổi và tính toán với đơn vị thời gian
+### Bài 4. (5 điểm) Nhánh 3 — Bài toán đại lượng có lời văn
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -264,7 +258,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — So sánh số đo đại lượng
+### Bài 5. (5 điểm) Nhánh 4 — Ba dạng cơ bản của chuyển động đều
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -289,7 +283,7 @@ d) Phút 4 nói gì?
 e) Phút 5 nói gì?
 f) Ai trong nhóm nói phần nào?
 
-### Bài 2. (4 điểm) Nội dung giảng — Bài toán đại lượng nhiều bước
+### Bài 2. (4 điểm) Nội dung giảng — Đổi đơn vị thể tích, dung tích
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -300,7 +294,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Bài toán đại lượng có lời văn
+### Bài 3. (4 điểm) Nội dung giảng — Vận tốc trung bình
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -311,7 +305,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 4. (4 điểm) Nội dung giảng — Bốn phép tính với số đo
+### Bài 4. (4 điểm) Nội dung giảng — Phần trăm nhiều bước trong mua bán
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -340,34 +334,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 0,622 · b) < · c) 9 · d) 0 · e) < · f) 0,62 · g) 0,38 · h) 0
-**Hướng giải:** BẪY — Nhiều chữ số sau dấu phẩy không có nghĩa là lớn hơn. Sau dấu phẩy lần lượt là hàng phần mười, phần trăm, phần nghìn. So sánh số thập phân: so phần nguyên trước; phần nguyên bằng nhau thì so lần lượt hàng phần mười, phần trăm, phần nghìn. Phân số có mẫu là 10, 100, 1 000 đổi được thẳng sang số thập phân.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh theo **hàng**, không so theo số chữ số sau dấu phẩy.
-**Lỗi thường gặp:** Cho rằng số có nhiều chữ số sau dấu phẩy hơn thì lớn hơn. Phòng: Viết thêm chữ số 0 vào cuối để hai số có cùng số chữ số thập phân rồi mới so.
-
-### Bài A.2
-**Đáp số:** a) 330 · b) 110 · c) 61 000 · d) 4 000 · e) 3 700 · f) 220 000 · g) 5 800
-**Hướng giải:** BẪY — Chiều đổi đơn vị. Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
-
-### Bài A.3
-**Đáp số:** a) 827 · b) 4 656 · c) 1 tấn 8 tạ 37 kg · d) 6 tấn 21 kg · e) 3 537 · f) 6 tấn 5 tạ 16 kg
-**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
-**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
-
-### Bài A.4
-**Đáp số:** a) 500 · b) 4 000 000 · c) 6 100 · d) 7 400 · e) 3 800 · f) 1 400 · g) 1 800
-**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Đáp số:** a) 2 800 · b) 6 300 · c) 6 000 · d) 80 000 · e) 2 800 · f) 430 000
+**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
 **Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
 
-### Bài A.5
-**Đáp số:** a) 51 phút · b) 9 giờ 21 phút · c) 4 giờ 48 phút · d) 235 · e) 6 giờ 12 phút · f) 3 giờ 12 phút
-**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+### Bài A.2
+**Đáp số:** a) 7 giờ 41 phút · b) 3 giờ 48 phút · c) 325 · d) 1 giờ 8 phút · e) 7 giờ 15 phút · f) 474
+**Hướng giải:** BẪY — Cơ số 60 chứ không phải 10. 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+
+### Bài A.3
+**Đáp số:** a) 59 000 · b) 5 200 · c) 220 · d) 1 400 · e) 4 800 · f) 460
+**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+
+### Bài A.4
+**Đáp số:** a) 516 300 · b) < · c) 4 · d) 9 185 197 và 9 185 199 · e) 1 543 800
+**Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
+**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
+
+### Bài A.5
+**Đáp số:** a) 1 301 · b) 64 · c) 5 759 · d) 4 032 · e) 3 149
+**Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
+**Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -376,7 +370,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Bài toán đại lượng nhiều bước là:” · b) “Lịch và đơn vị thời gian lớn là:” · c) “Bài toán đại lượng có lời văn là:” · d) “Tính thời điểm trong ngày là:” · e) “Bốn phép tính với số đo là:”
+**Đáp số:** a) “Đổi đơn vị thể tích, dung tích là:” · b) “Đại lượng khối lượng, chia phần và làm tròn lên là:” · c) “Vận tốc trung bình là:” · d) “Tính thời điểm trong ngày là:” · e) “Phần trăm nhiều bước trong mua bán là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -388,7 +382,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. · b) Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. · c) Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút. · d) Kiểm tra phần phút của đáp số phải bé hơn 60. · e) Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó. · f) Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Đáp số:** a) Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. · b) Hỏi lại: phần thóc dư có tự bay đi được không? · c) Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. · d) Kiểm tra phần phút của đáp số phải bé hơn 60. · e) Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả. · f) Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -406,10 +400,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Dò lại phép tính nhưng không đọc lại câu hỏi. Phòng: Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số.
 
 ### Bài C.2
-**Đáp số:** a) tầng 2 · b) Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. · c) toàn bộ số điểm của ý sai · d) Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. · e) Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
-**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
+**Đáp số:** a) tầng 1 · b) Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. · c) toàn bộ số điểm của ý sai · d) Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích. · e) Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
+**Hướng giải:** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
+**Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
 
 ### Bài C.3
 **Đáp số:** a) tầng 2 · b) Kiểm tra phần phút của đáp số phải bé hơn 60. · c) toàn bộ số điểm của ý sai · d) Kiểm tra phần phút của đáp số phải bé hơn 60. · e) Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
@@ -424,10 +418,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
 ### Bài C.5
-**Đáp số:** a) tầng 2 · b) Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. · c) toàn bộ số điểm của ý sai · d) Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia. · e) Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc.
-**Hướng giải:** Vận tốc trung bình = **tổng quãng đường : tổng thời gian**. Phải tính riêng quãng đường của từng chặng rồi cộng lại, sau đó chia cho tổng thời gian.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc.
-**Lỗi thường gặp:** Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. Phòng: Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia.
+**Đáp số:** a) tầng 2 · b) Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. · c) toàn bộ số điểm của ý sai · d) Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng. · e) Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
+**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
+**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
 
 ### Bài D.1
 **Đáp số:** a) Đơn vị đo độ dài, khối lượng, diện tích, thể tích và thời gian · b) 5 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -437,10 +431,10 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) Đề hỏi về tháng, năm, thế kỉ · b) Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 · c) Coi mọi năm chia hết cho 4 đều là năm nhuận. · d) Số ngày các tháng, năm nhuận, thế kỉ · e) Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ.
+**Đáp số:** a) Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” · b) Quy về một đơn vị, chia, xét phần dư · c) Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. · d) Bảng đơn vị khối lượng; phép chia có dư · e) 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
-**Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
+**Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
@@ -451,17 +445,17 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
-**Đáp số:** a) Số đo có chữ “giờ”, “phút”, “giây” · b) Quy về phút rồi tính, cuối cùng đổi lại giờ và phút · c) Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. · d) Quan hệ giờ – phút – giây · e) Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
+**Đáp số:** a) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện · b) Tính theo đơn vị dữ kiện rồi đổi ở bước cuối · c) Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. · d) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · e) 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
-**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
+**Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) Hai vế có đơn vị khác nhau · b) Đổi về cùng đơn vị rồi so sánh · c) So thẳng hai con số, bỏ qua đơn vị. · d) Bảng đơn vị đo, so sánh số tự nhiên · e) Đổi về đơn vị **bé hơn** để cả hai vế đều là số tự nhiên, khỏi phải làm việc với phân số.
+**Đáp số:** a) Có hai trong ba đại lượng quãng đường, vận tốc, thời gian · b) Chọn công thức theo đại lượng cần tìm; đồng bộ đơn vị · c) Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. · d) Công thức s = v × t · e) Vẽ tam giác s ở trên, v và t ở dưới: che đại lượng cần tìm là ra công thức.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
-**Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của vận tốc quy định đơn vị của hai đại lượng còn lại.
+**Lỗi thường gặp:** Vận tốc tính bằng km/giờ nhưng thời gian lại để bằng phút. Phòng: Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -472,24 +466,24 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
-**Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán đại lượng nhiều bước.” · b) Cho số nhóm, giá trị mỗi nhóm và số nhóm đã dùng · c) Nhân, trừ; đại lượng cùng loại · d) Có 10 thùng dầu, mỗi thùng 20 lít, đã bán 3 thùng. Còn bao nhiêu lít? → 140 lít · e) Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. · f) So sánh hai đường giải, chọn đường ít phép tính hơn.
-**Hướng giải:** Có thể tính theo hai đường: tính tổng rồi trừ phần đã bán; hoặc tính số thùng còn lại rồi nhân. Đường thứ hai ngắn hơn — chọn đường ít phép tính hơn.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Trừ **số thùng** trước khi nhân thì ít phép tính hơn.
-**Lỗi thường gặp:** Trừ số thùng cho số lít, cộng trừ hai đại lượng khác loại. Phòng: Ghi rõ đơn vị sau mỗi số để không trừ nhầm hai loại đại lượng.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Đổi đơn vị thể tích, dung tích.” · b) Đơn vị có mũ ba, hoặc lít, mi-li-lít · c) Bảng đơn vị thể tích; quan hệ dm³ – lít · d) 2 m³ = … lít → 2 000 · e) Đổi như đơn vị diện tích, chỉ nhân 100. · f) Mỗi bậc thêm ba chữ số 0.
+**Hướng giải:** Hai đơn vị thể tích liền kề hơn kém nhau **1 000 lần**. 1 dm³ = 1 lít; 1 lít = 1 000 ml; 1 m³ = 1 000 dm³ = 1 000 lít.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thể tích nhảy **1 000 lần** mỗi bậc (độ dài 10, diện tích 100, thể tích 1 000).
+**Lỗi thường gặp:** Đổi như đơn vị diện tích, chỉ nhân 100. Phòng: Nhớ dãy 10 – 100 – 1 000 ứng với độ dài – diện tích – thể tích.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
-**Đáp số:** a) “Hôm nay nhóm mình nói về Bài toán đại lượng có lời văn.” · b) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện · c) Nhân, chia số tự nhiên; đổi đơn vị khối lượng · d) Xe chở 20 bao gạo, mỗi bao 50 kg. Xe chở mấy tạ? → 10 tạ · e) Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. · f) 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
-**Hướng giải:** Tính tổng khối lượng theo ki-lô-gam trước, sau đó mới đổi sang đơn vị mà đề hỏi. Đừng đổi đơn vị ngay từ đầu vì dễ nhầm.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi đòi đơn vị nào thì bước **cuối cùng** mới đổi sang đơn vị đó.
-**Lỗi thường gặp:** Ghi kết quả bằng ki-lô-gam trong khi đề hỏi tạ. Phòng: Khoanh tròn đơn vị trong câu hỏi trước khi đặt bút.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Vận tốc trung bình.” · b) Hai chặng có vận tốc khác nhau · c) Công thức vận tốc; trung bình cộng có trọng số · d) Đi 2 giờ với 30 km/giờ rồi 2 giờ với 50 km/giờ. Vận tốc trung bình? → 40 km/giờ · e) Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. · f) Kiểm tra: vận tốc trung bình luôn nằm giữa hai vận tốc đã cho.
+**Hướng giải:** Vận tốc trung bình = **tổng quãng đường : tổng thời gian**. Phải tính riêng quãng đường của từng chặng rồi cộng lại, sau đó chia cho tổng thời gian.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Chỉ khi hai chặng **cùng thời gian** thì vận tốc trung bình mới bằng trung bình cộng hai vận tốc.
+**Lỗi thường gặp:** Cộng hai vận tốc rồi chia đôi trong mọi trường hợp. Phòng: Luôn viết hai dòng: tổng quãng đường = … ; tổng thời gian = … rồi mới chia.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.4
-**Đáp số:** a) “Hôm nay nhóm mình nói về Bốn phép tính với số đo.” · b) Các số hạng có đơn vị khác nhau trong cùng một phép tính · c) Đổi đơn vị, bốn phép tính · d) 2 m 30 cm + 150 cm = … cm → 380 · e) Cộng số mét với số xăng-ti-mét mà chưa đổi. · f) Đọc chỗ chấm trước, biết ngay đơn vị đích.
-**Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
-**Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Phần trăm nhiều bước trong mua bán.” · b) Có cả “chiết khấu” và “thuế” trong một bài · c) Tỉ số phần trăm, mốc quy chiếu · d) Giá 500 000 đồng, chiết khấu 10%, thuế 10% trên giá đã giảm. Phải trả bao nhiêu? → 495 000 đồng · e) Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. · f) Giảm p% là nhân với (100 − p) rồi chia 100 — một bước thay vì hai.
+**Hướng giải:** Mỗi lần tính phần trăm phải xác định lại **mốc 100%**. Chiết khấu tính trên giá niêm yết; thuế tính trên giá đã chiết khấu. Vì cả hai đều là phép nhân với một tỉ lệ nên đổi thứ tự không làm đổi kết quả.
+**Nhãn tư duy:** TD6, TD2. Điểm chốt: Mốc 100% **đổi sau mỗi bước** — đây là bẫy hay gặp nhất.
+**Lỗi thường gặp:** Tính thuế trên giá niêm yết thay vì trên giá đã chiết khấu. Phòng: Viết ba dòng: giá niêm yết, giá sau chiết khấu, giá phải trả.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.5

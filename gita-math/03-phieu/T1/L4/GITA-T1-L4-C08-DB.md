@@ -51,9 +51,25 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — SƠ ĐỒ TƯ DUY DẠNG BÀI · Mức M1 — Nhận biết · 10 phút · 10 điểm
 
-### Bài 1. (2 điểm) Bảng tổng quát các dạng bài của chương
+### Bài 1. (2 điểm) Cây quyết định đọc vị và bảng tổng quát dạng bài
 
-Kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp. Điền cột thứ nhất.
+Đọc cây quyết định của nhóm **C — Dãy số & Quy luật** dưới đây, dừng ở câu hỏi đầu tiên trả lời ĐÚNG. Bản đầy đủ ở `10-so-do-doc-vi/so-do-C-L4.md`.
+
+```
+ĐỌC ĐỀ → Đề cho một dãy số, dãy hình, hoặc hỏi số hạng thứ mấy?
+1. Lấy số sau trừ số trước, các hiệu có bằng nhau không?
+     ĐÚNG → Dãy cách đều: dùng công thức số hạng thứ n và tổng dãy
+2. Lấy số sau chia số trước, các thương có bằng nhau không?
+     ĐÚNG → Dãy nhân: nhân tiếp với thương ấy
+3. Dãy các hiệu có cách đều không?
+     ĐÚNG → Dãy hiệu bậc hai: số hạng thứ n = số đầu + tổng (n − 1) hiệu đầu
+4. Dãy có lặp lại một nhóm số cố định?
+     ĐÚNG → Dãy tuần hoàn: chia vị trí cho độ dài chu kì, xét số dư
+5. Đề nói về trồng cây, cột điện, cưa gỗ, số tiết học?
+     ĐÚNG → Quan hệ số điểm – số khoảng: tính số khoảng trước, rồi cộng 1, bằng, hay trừ 1
+```
+
+Sau đó kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp, rồi điền cột thứ nhất.
 
 a) Dạng bài thứ 1 của chương?
 b) Dạng bài thứ 2 của chương?
@@ -106,178 +122,172 @@ e) Dạng “Dãy tuần hoàn” — cách xử lý nhanh nhất?
 
 ## PHẦN B — DẠNG 1 – DẠNG 2 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Dãy số có quy luật phức tạp
+### Bài 1. (5 điểm) Nhân một số với một tổng, một hiệu
+
+Tính bằng cách thuận tiện nhất.
+
+a) 57 × 52 − 57 × 31
+b) 92 × 46 − 92 × 41
+c) 98 × 31 − 98 × 25
+d) 95 × 40 + 95 × 22
+e) 54 × 15 + 54 × 31
+f) 52 × 33 + 52 × 23
+
+### Bài 2. (5 điểm) Đếm số hạng của dãy cách đều
+
+Tính số số hạng của mỗi dãy.
+
+a) Dãy 3, 10, 17, …, 1 025 có bao nhiêu số hạng?
+b) Dãy 28, 32, 36, …, 796 có bao nhiêu số hạng?
+c) Dãy 8, 14, 20, …, 566 có bao nhiêu số hạng?
+d) Dãy 8, 18, 28, …, 1 828 có bao nhiêu số hạng?
+
+### Bài 3. (5 điểm) Dãy số có quy luật phức tạp
 
 Tìm quy luật rồi viết số hạng tiếp theo.
 
-a) 3, 12, 30, 57, 93, …
-b) 5, 7, 11, 17, 25, …
-c) 64, 81, 100, 121, 144, …
-d) 9, 18, 36, 63, 99, …
-
-### Bài 2. (5 điểm) Dãy hình xếp theo quy luật
-
-Quan sát quy luật số que diêm rồi trả lời.
-
-a) Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 10 có bao nhiêu que diêm?
-b) Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 11 có bao nhiêu que diêm?
-c) Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 13 có bao nhiêu que diêm?
-d) Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 18 có bao nhiêu que diêm?
-e) Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 20 có bao nhiêu que diêm?
-f) Hình thứ 1 có 3 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 23 có bao nhiêu que diêm?
-g) Xếp liên tiếp 24 hình đầu tiên thì cần tất cả bao nhiêu que diêm?
-
-### Bài 3. (5 điểm) Bốn phép tính với phân số
-
-Tính rồi rút gọn kết quả.
-
-a) 6 phần 7 − 2 phần 5
-b) 1 phần 2 + 3 phần 5
-c) 4 phần 5 : 2 phần 5
-d) 4 phần 7 × 7 phần 12
-e) 2 + 1 phần 2
-f) 6 phần 7 − 6 phần 11
-g) 3 phần 7 : 9 phần 13
-h) 3 phần 5 × 3 phần 5
+a) 5, 3, 8, 8, 11, …
+b) 6, 12, 24, 42, 66, …
+c) 6, 9, 9, 14, 12, …
+d) 3, 4, 6, 9, 9, …
+e) 81, 100, 121, 144, 169, …
 
 ### Bài 4. (5 điểm) Tính tổng dãy số cách đều
 
 Tính tổng mỗi dãy.
 
-a) Tính tổng: 20 + 21 + 22 + … + 69
-b) Tính tổng: 4 + 5 + 6 + … + 33
-c) Tính tổng: 16 + 19 + 22 + … + 73
-d) Tính tổng: 1 + 6 + 11 + … + 121
-e) Tính tổng: 2 + 5 + 8 + … + 59
-f) Tính tổng: 7 + 17 + 27 + … + 497
+a) Tính tổng: 4 + 5 + 6 + … + 33
+b) Tính tổng: 16 + 19 + 22 + … + 73
+c) Tính tổng: 1 + 6 + 11 + … + 121
+d) Tính tổng: 2 + 5 + 8 + … + 59
+e) Tính tổng: 7 + 17 + 27 + … + 497
+f) Tính tổng: 1 + 2 + 3 + … + 20
 
-### Bài 5. (5 điểm) Đếm số hạng của dãy cách đều
+### Bài 5. (5 điểm) Dãy hình xếp theo quy luật
 
-Tính số số hạng của mỗi dãy.
+Quan sát quy luật số que diêm rồi trả lời.
 
-a) Dãy 1, 11, 21, …, 651 có bao nhiêu số hạng?
-b) Dãy 16, 19, 22, …, 340 có bao nhiêu số hạng?
-c) Dãy 13, 15, 17, …, 393 có bao nhiêu số hạng?
-d) Dãy 13, 17, 21, …, 773 có bao nhiêu số hạng?
+a) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 12 có bao nhiêu que diêm?
+b) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 14 có bao nhiêu que diêm?
+c) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 15 có bao nhiêu que diêm?
+d) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 5 que. Hình thứ 20 có bao nhiêu que diêm?
+e) Xếp liên tiếp 20 hình đầu tiên thì cần tất cả bao nhiêu que diêm?
 
 ---
 
 ## PHẦN C — DẠNG 3 – DẠNG 4 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Đại lượng tỉ lệ thuận
-
-Giải bằng cách rút về đơn vị hoặc dùng tỉ số.
-
-a) Mua 9 quyển vở hết 684 nghìn đồng. Với 1 520 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-b) Mua 15 quyển vở hết 885 nghìn đồng. Mua 5 quyển vở như thế hết bao nhiêu nghìn đồng?
-c) Mua 5 quyển vở hết 370 nghìn đồng. Với 1 036 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-d) Mua 3 quyển vở hết 231 nghìn đồng. Mua 9 quyển vở như thế hết bao nhiêu nghìn đồng?
-e) Mua 4 quyển vở hết 352 nghìn đồng. Với 2 024 nghìn đồng thì mua được bao nhiêu quyển vở như thế?
-
-### Bài 2. (5 điểm) Tính nhanh bằng cách ghép số tròn
+### Bài 1. (5 điểm) Tính nhanh bằng cách ghép số tròn
 
 Tính bằng cách thuận tiện nhất.
 
-a) 310 + 31 − 31
-b) 35 + 41 + 65 + 59
-c) 31 + 228 + 69
-d) 34 + 52 + 66 + 48
-e) 84 + 81 + 16 + 19
-f) 87 + 30 − 30
+a) 81 + 50 + 19 + 50
+b) 84 + 38 + 16
+c) 33 + 358 + 67
+d) 67 + 178 + 33
 
-### Bài 3. (5 điểm) Diện tích hình bình hành, hình thoi, hình tam giác
+### Bài 2. (5 điểm) Đại lượng tỉ lệ nghịch
 
-Áp dụng đúng công thức từng hình.
+Giải bằng cách quy về tổng số ngày công.
 
-a) Hình bình hành có đáy 29 cm, chiều cao 21 cm. Tính diện tích.
-b) Hình tam giác có đáy 39 cm, chiều cao 6 cm. Tính diện tích.
-c) Hình thoi có hai đường chéo dài 6 cm và 36 cm. Tính diện tích.
-d) Hình thoi có hai đường chéo dài 4 cm và 34 cm. Tính diện tích.
+a) 3 người làm xong một công việc trong 40 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+b) 3 người làm xong một công việc trong 20 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+c) 3 người làm xong một công việc trong 20 ngày. Hỏi 4 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+d) 4 người làm xong một công việc trong 12 ngày. Hỏi 6 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+e) 6 người làm xong một công việc trong 12 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
+f) 2 người làm xong một công việc trong 18 ngày. Hỏi 3 người (làm khoẻ như nhau) làm xong công việc đó trong bao nhiêu ngày?
 
-### Bài 4. (5 điểm) Bài toán nói thật – nói dối
+### Bài 3. (5 điểm) Đơn vị đo diện tích
 
-Ba bạn Lan, Đức, An, trong đó đúng một bạn làm vỡ lọ hoa.
-- Lan nói: “Tôi không làm.”
-- Đức nói: “An làm.”
-- An nói: “Đức nói dối.”
+Điền số thích hợp vào chỗ chấm.
 
-Biết rằng trong ba bạn chỉ có đúng **một** bạn nói thật.
+a) 41 dm² = … cm²
+b) 18 m² = … dm²
+c) 810 000 cm² = … m²
+d) 67 dm² = … cm²
+e) 4 m² = … cm²
+f) 2 700 dm² = … m²
 
-a) Câu nói của Đức và câu nói của An có thể cùng đúng được không? Vì sao?
-b) Hai câu đó có thể cùng sai được không?
-c) Vậy trong hai bạn Đức và An có đúng mấy bạn nói thật?
-d) Đề cho biết cả ba bạn chỉ có một bạn nói thật. Suy ra Lan nói thật hay nói dối?
-e) Câu của Lan là “Tôi không làm.” Câu đó sai thì điều gì đúng?
-f) Ai là người làm vỡ lọ hoa?
+### Bài 4. (5 điểm) Chia kẹo — chia hết và chia có dư
 
-### Bài 5. (5 điểm) Nhân một số với một tổng, một hiệu
+Ghi rõ thương và số dư trong mọi câu trả lời.
 
-Tính bằng cách thuận tiện nhất.
+a) Có 18 cái kẹo chia đều cho 4 bạn. Mỗi bạn được mấy cái và còn thừa mấy cái?
+b) Muốn chia hết, phải bớt đi ít nhất bao nhiêu cái kẹo?
+c) Hoặc phải thêm vào ít nhất bao nhiêu cái kẹo?
+d) Nếu thêm 2 cái thì mỗi bạn được mấy cái?
+e) Nếu chỉ chia cho 3 bạn thì mỗi bạn được mấy cái, thừa mấy cái?
+f) Số kẹo phải là số như thế nào để chia hết cho 4 bạn?
 
-a) 74 × 27 − 74 × 20
-b) 17 × 60 + 17 × 24
-c) 59 × 42 + 59 × 56
-d) 56 × 58 − 56 × 40
+### Bài 5. (5 điểm) So sánh hai số đo khác đơn vị
+
+Điền dấu <, >, = thích hợp.
+
+a) 49 km … 8 080 dm
+b) 46 m² … 7 524 cm²
+c) 39 dag … 4 615 hg
+d) 49 cm … 2 566 dam
+e) 73 km² … 5 852 cm²
+f) 88 hg … 900 tạ
 
 ---
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 1. (4 điểm) Đếm số lần xuất hiện của một chữ số
+
+Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
+
+a) Từ 1 đến 300, chữ số 0 xuất hiện bao nhiêu lần?
+b) Từ 1 đến 200, chữ số 7 xuất hiện bao nhiêu lần?
+c) Từ 1 đến 200, chữ số 2 xuất hiện bao nhiêu lần?
+d) Từ 1 đến 300, chữ số 1 xuất hiện bao nhiêu lần?
+
+### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
 
 Với mỗi ý, tìm số theo yêu cầu.
 
-a) Tổng của 9 số tự nhiên liên tiếp bằng 954. Tìm số bé nhất trong 9 số đó.
-b) Tổng của 7 số tự nhiên liên tiếp bằng 1 365. Tìm số bé nhất trong 7 số đó.
-c) Tổng của 7 số tự nhiên liên tiếp bằng 1 596. Tìm số bé nhất trong 7 số đó.
-d) Tổng của 5 số tự nhiên liên tiếp bằng 390. Tìm số bé nhất trong 5 số đó.
-e) Tổng của 5 số tự nhiên liên tiếp bằng 1 280. Tìm số bé nhất trong 5 số đó.
+a) Tổng của 9 số tự nhiên liên tiếp bằng 2 070. Tìm số bé nhất trong 9 số đó.
+b) Tổng của 7 số tự nhiên liên tiếp bằng 1 057. Tìm số bé nhất trong 7 số đó.
+c) Tổng của 3 số tự nhiên liên tiếp bằng 402. Tìm số bé nhất trong 3 số đó.
+d) Tổng của 9 số tự nhiên liên tiếp bằng 342. Tìm số bé nhất trong 9 số đó.
 
-### Bài 2. (4 điểm) Định vị số hạng trong dãy cách đều
+### Bài 3. (4 điểm) Định vị số hạng trong dãy cách đều
 
-Cho dãy: 5, 12, 19, …, 1 195.
+Cho dãy: 12, 20, 28, …, 732.
 
 a) Dãy có bao nhiêu số hạng?
-b) Số hạng thứ 85 là số nào?
-c) Số 54 là số hạng thứ mấy?
-d) Số 642 là số hạng thứ mấy?
-e) Số 860 có thuộc dãy không? Vì sao?
+b) Số hạng thứ 45 là số nào?
+c) Số 212 là số hạng thứ mấy?
+d) Số 324 là số hạng thứ mấy?
+e) Số 629 có thuộc dãy không? Vì sao?
 f) Tổng của cả dãy bằng bao nhiêu?
 
-### Bài 3. (4 điểm) Đọc và phân tích bảng số liệu
+### Bài 4. (4 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
 
-Bảng thống kê số học sinh đăng kí câu lạc bộ theo môn: **Toán: 21 · Tiếng Việt: 6 · Tiếng Anh: 9 · Khoa học: 6**.
+Ba tình huống, cùng một cách đếm.
 
-a) Tổng số học sinh đăng kí là bao nhiêu?
-b) Môn nào có nhiều học sinh đăng kí nhất?
-c) Môn nào có ít học sinh đăng kí nhất?
-d) Môn nhiều nhất hơn môn ít nhất bao nhiêu bạn?
-e) Trung bình mỗi môn có bao nhiêu học sinh đăng kí?
-f) Số học sinh đăng kí môn Toán chiếm bao nhiêu phần trăm tổng số (làm tròn đến hàng đơn vị)?
+a) Cho 5 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+b) Một giải đấu có 9 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+c) Có 6 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+d) Có 13 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+e) Một giải đấu có 9 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+f) Cho 20 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+g) Có 19 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
 
-### Bài 4. (4 điểm) Dãy số cho bởi quy tắc truy hồi
+### Bài 5. (4 điểm) Dãy số cho bởi quy tắc truy hồi
 
 Dãy số được lập theo ba quy tắc sau.
 
-- Số hạng đầu bằng 4.
-- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 4.
-- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 4 nhân với số thứ tự của số hạng liền trước.
+- Số hạng đầu bằng 2.
+- Số hạng ở **vị trí chẵn** bằng số hạng liền trước nhân 2 rồi cộng 2.
+- Số hạng ở **vị trí lẻ** bằng số hạng liền trước cộng 2 nhân với số thứ tự của số hạng liền trước.
 
 a) Viết ba số hạng đầu tiên của dãy.
 b) Số hạng thứ 5 của dãy là số nào?
 c) Số hạng thứ 7 của dãy là số nào?
 d) Số hạng thứ 9 của dãy là số nào?
 e) Từ số hạng thứ 4 đến số hạng thứ 6, dãy tăng thêm bao nhiêu đơn vị?
-
-### Bài 5. (4 điểm) Đếm số lần xuất hiện của một chữ số
-
-Đếm số lần xuất hiện, tính cả khi chữ số đó xuất hiện nhiều lần trong một số.
-
-a) Từ 1 đến 150, chữ số 2 xuất hiện bao nhiêu lần?
-b) Từ 1 đến 100, chữ số 3 xuất hiện bao nhiêu lần?
-c) Từ 1 đến 300, chữ số 3 xuất hiện bao nhiêu lần?
-d) Từ 1 đến 200, chữ số 2 xuất hiện bao nhiêu lần?
-e) Từ 1 đến 150, chữ số 0 xuất hiện bao nhiêu lần?
 
 ---
 
@@ -379,99 +389,99 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài B.1
-**Đáp số:** a) 138 · b) 35 · c) 169 · d) 144
+**Đáp số:** a) 1 197 · b) 460 · c) 588 · d) 5 890 · e) 2 484 · f) 2 912
+**Hướng giải:** Nhận ra thừa số chung rồi đặt nó ra ngoài: a × b + a × c = a × (b + c) và a × b − a × c = a × (b − c). Sau khi đặt thừa số chung, phép tính trong ngoặc thường ra số tròn.
+**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được.
+**Lỗi thường gặp:** Đặt ra ngoài một số chỉ có ở một tích. Phòng: Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc.
+
+### Bài B.2
+**Đáp số:** a) 147 · b) 193 · c) 94 · d) 183
+**Hướng giải:** Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng luôn **ít hơn số số hạng đúng 1**.
+**Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
+
+### Bài B.3
+**Đáp số:** a) 13 · b) 96 · c) 19 · d) 14 · e) 196
 **Hướng giải:** Khi hiệu không đều, hãy tính hiệu của các hiệu. Nếu dãy hiệu lại là dãy cách đều thì quy luật là “cộng thêm một lượng tăng đều”. Cũng có dãy gồm hai dãy con xen kẽ nhau — tách riêng các số ở vị trí lẻ và vị trí chẵn ra xét.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Hai hướng thử: **hiệu của hiệu** và **tách dãy con xen kẽ**.
 **Lỗi thường gặp:** Chỉ thử một hướng rồi bỏ cuộc. Phòng: Luôn viết dãy hiệu xuống dưới dãy gốc trước khi kết luận.
 
-### Bài B.2
-**Đáp số:** a) 39 · b) 43 · c) 51 · d) 71 · e) 79 · f) 91 · g) 1 176
-**Hướng giải:** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
-**Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
-
-### Bài B.3
-**Đáp số:** a) 16 phần 35 · b) 11 phần 10 · c) 2 · d) 1 phần 3 · e) 5 phần 2 · f) 24 phần 77 · g) 13 phần 21 · h) 9 phần 25
-**Hướng giải:** Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
-**Lỗi thường gặp:** Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. Phòng: Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.
-
 ### Bài B.4
-**Đáp số:** a) 2 225 · b) 555 · c) 890 · d) 1 525 · e) 610 · f) 12 600
+**Đáp số:** a) 555 · b) 890 · c) 1 525 · d) 610 · e) 12 600 · f) 210
 **Hướng giải:** Đếm số số hạng trước. Sau đó ghép số đầu với số cuối, số thứ hai với số áp chót…, mỗi cặp có tổng bằng nhau. Tổng = (đầu + cuối) × số số hạng : 2.
 **Nhãn tư duy:** TD4, TD5. Điểm chốt: Chia cho 2 ở cuối vì mỗi số hạng đã được **đếm hai lần** khi ghép cặp.
 **Lỗi thường gặp:** Quên chia 2, kết quả gấp đôi đáp số đúng. Phòng: Kiểm tra bằng dãy ngắn: 1 + 2 + 3 = 6, công thức phải cho đúng 6.
 
 ### Bài B.5
-**Đáp số:** a) 66 · b) 109 · c) 191 · d) 191
-**Hướng giải:** Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng luôn **ít hơn số số hạng đúng 1**.
-**Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
+**Đáp số:** a) 57 · b) 67 · c) 72 · d) 97 · e) 990
+**Hướng giải:** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
+**Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
 
 ### Bài C.1
-**Đáp số:** a) 20 quyển · b) 295 nghìn đồng · c) 14 quyển · d) 693 nghìn đồng · e) 23 quyển
-**Hướng giải:** Số vở tăng bao nhiêu lần thì số tiền tăng bấy nhiêu lần. Có hai cách: rút về đơn vị (tìm giá một quyển rồi nhân) hoặc dùng tỉ số (số vở mới gấp mấy lần số vở cũ thì tiền cũng gấp bấy nhiêu lần).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Hai đại lượng **cùng tăng, cùng giảm** thì tỉ lệ thuận.
-**Lỗi thường gặp:** Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. Phòng: Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn?
-
-### Bài C.2
-**Đáp số:** a) 310 · b) 200 · c) 328 · d) 200 · e) 200 · f) 87
+**Đáp số:** a) 200 · b) 138 · c) 458 · d) 278
 **Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 
+### Bài C.2
+**Đáp số:** a) 20 ngày · b) 15 ngày · c) 15 ngày · d) 8 ngày · e) 24 ngày · f) 12 ngày
+**Hướng giải:** Tổng số ngày công là không đổi: số người × số ngày = hằng số. Tính tổng số ngày công trước, rồi chia cho số người mới để ra số ngày mới.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Càng nhiều người thì càng **ít** ngày — đại lượng biến đổi **ngược chiều**.
+**Lỗi thường gặp:** Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. Phòng: Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu?
+
 ### Bài C.3
-**Đáp số:** a) 609 cm² · b) 117 cm² · c) 108 cm² · d) 68 cm²
-**Hướng giải:** Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
-**Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
+**Đáp số:** a) 4 100 · b) 1 800 · c) 81 · d) 6 700 · e) 40 000 · f) 27
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
+**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
 
 ### Bài C.4
-**Đáp số:** a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Lan chính là người làm vỡ lọ hoa · f) Lan
-**Hướng giải:** Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
-**Lỗi thường gặp:** Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. Phòng: Đánh số các câu nói, ghi rõ câu nào phủ định câu nào.
+**Đáp số:** a) mỗi bạn 4 cái, thừa 2 cái · b) 2 cái · c) 2 cái · d) 5 cái · e) mỗi bạn 6 cái, thừa 0 cái · f) phải là số chia hết cho 4
+**Hướng giải:** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
+**Lỗi thường gặp:** Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. Phòng: Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất?
 
 ### Bài C.5
-**Đáp số:** a) 518 · b) 1 428 · c) 5 782 · d) 1 008
-**Hướng giải:** Nhận ra thừa số chung rồi đặt nó ra ngoài: a × b + a × c = a × (b + c) và a × b − a × c = a × (b − c). Sau khi đặt thừa số chung, phép tính trong ngoặc thường ra số tròn.
-**Nhãn tư duy:** TD3, TD5. Điểm chốt: Thừa số chung phải xuất hiện ở **cả hai** tích thì mới đặt ra ngoài được.
-**Lỗi thường gặp:** Đặt ra ngoài một số chỉ có ở một tích. Phòng: Khoanh thừa số giống nhau ở hai tích trước khi viết dấu ngoặc.
+**Đáp số:** a) > · b) > · c) < · d) < · e) > · f) <
+**Hướng giải:** Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
+**Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
+**Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
 
 ### Bài D.1
-**Đáp số:** a) 102 · b) 192 · c) 225 · d) 76 · e) 254
+**Đáp số:** a) 51 · b) 40 · c) 41 · d) 160
+**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
+**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
+**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
+
+### Bài D.2
+**Đáp số:** a) 226 · b) 148 · c) 133 · d) 34
 **Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 **Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
 **Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
 
-### Bài D.2
-**Đáp số:** a) 171 · b) 593 · c) 8 · d) 92 · e) không · f) 102 600
+### Bài D.3
+**Đáp số:** a) 91 · b) 364 · c) 26 · d) 40 · e) không · f) 33 852
 **Hướng giải:** BẪY — Số không thuộc dãy. Muốn biết một số là số hạng thứ mấy: lấy số đó trừ số hạng đầu, chia cho khoảng cách rồi cộng 1. Nếu phép chia còn dư thì số đó **không thuộc** dãy.
 **Nhãn tư duy:** TD4, TD2. Điểm chốt: Phép chia **có dư** là bằng chứng số đó không thuộc dãy.
 **Lỗi thường gặp:** Chia được số nguyên rồi quên cộng 1, hoặc bỏ qua phần dư. Phòng: Luôn ghi rõ thương và số dư khi chia.
 **Gợi ý 3 tầng:** (1) Lấy số đó trừ số hạng đầu. — (2) Chia hiệu cho khoảng cách — có chia hết không? — (3) Chia hết thì cộng 1 để ra thứ tự; không chia hết thì số đó không thuộc dãy.
 
-### Bài D.3
-**Đáp số:** a) 42 · b) Toán (21 bạn) · c) Tiếng Việt (6 bạn) · d) 15 · e) 10,5 · f) 50%
-**Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
-**Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
-**Gợi ý 3 tầng:** (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất và bé nhất.
-
 ### Bài D.4
-**Đáp số:** a) 4, 12, 20 · b) 60 · c) 148 · d) 332 · e) 80
+**Đáp số:** a) 10 đường thẳng · b) 36 trận · c) 15 cái · d) 78 cái · e) 36 trận · f) 190 đường thẳng · g) 171 cái
+**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
+**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
+**Gợi ý 3 tầng:** (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
+
+### Bài D.5
+**Đáp số:** a) 2, 6, 10 · b) 30 · c) 74 · d) 166 · e) 40
 **Hướng giải:** BẪY — Quy tắc khác nhau ở vị trí chẵn và lẻ. Lập bảng và tính lần lượt từng số hạng theo đúng quy tắc, không nhảy cóc. Ghi rõ số thứ tự của mỗi số hạng để chọn đúng nhánh quy tắc.
 **Nhãn tư duy:** TD3, TD6. Điểm chốt: Quy tắc phụ thuộc **vị trí chẵn hay lẻ** — phải đánh số thứ tự trước.
 **Lỗi thường gặp:** Áp dụng nhầm nhánh quy tắc vì không để ý vị trí. Phòng: Kẻ bảng hai dòng: dòng trên ghi vị trí, dòng dưới ghi số hạng.
 **Gợi ý 3 tầng:** (1) Kẻ bảng vị trí và số hạng. — (2) Xác định vị trí đang xét là chẵn hay lẻ. — (3) Áp dụng đúng nhánh quy tắc cho vị trí đó.
-
-### Bài D.5
-**Đáp số:** a) 35 · b) 20 · c) 61 · d) 41 · e) 25
-**Hướng giải:** BẪY — Số 33, 44… chứa hai lần cùng một chữ số. Đếm theo từng hàng: đếm số lần chữ số đó đứng ở hàng đơn vị, rồi hàng chục, rồi hàng trăm. Ở mỗi hàng, các số thoả mãn lập thành dãy cách đều, dùng công thức đếm số hạng.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Một số có thể chứa chữ số đó **nhiều lần**; đếm theo hàng thì không sót.
-**Lỗi thường gặp:** Đếm số lượng **số** chứa chữ số đó thay vì số **lần** xuất hiện. Phòng: Kẻ bảng: hàng đơn vị – hàng chục – hàng trăm, đếm riêng rồi cộng.
-**Gợi ý 3 tầng:** (1) Đếm riêng theo từng hàng. — (2) Ở hàng đơn vị, các số đó cách nhau bao nhiêu đơn vị? — (3) Cộng kết quả của cả ba hàng.
 
 ### Bài E.1
 **Đáp số:** a) Dãy số quy luật bậc hai hoặc xen kẽ · b) Hiệu giữa các số hạng không bằng nhau · c) Dãy hiệu, dãy con xen kẽ · d) Lập dãy hiệu; tách dãy con theo vị trí · e) Dãy 1, 4, 9, 16, 25 là các số chính phương — nhớ để nhận ra ngay. · f) Chỉ thử một hướng rồi bỏ cuộc.

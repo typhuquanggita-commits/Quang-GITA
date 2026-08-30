@@ -42,73 +42,69 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T1-L4-C09-LT-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu
-> 2. Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm
-> 3. Phần bù tới 1, phân số trung gian
-> 4. Quy đồng, nhân chia phân số
+> 1. Tính chất cơ bản của phân số; so sánh phân số
+> 2. Phần bù tới 1; quy luật dãy phân số
+> 3. Biểu đồ tranh, phép nhân và chia
+> 4. Tính chất cơ bản của phân số
 
 ---
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Tính giá trị biểu thức
+### Bài 1. (1 điểm) Đặt tính rồi tính (nhân, chia)
 
-Tính giá trị của mỗi biểu thức.
+Đặt tính rồi tính.
 
-a) 54 − 4 × 9
-b) (293 + 11) × 4
-c) 93 − 19 × 4
-d) 39 × 21 + 39 × 6
-e) 221 − 7 × 4
-f) (283 + 9) × 6
-g) 197 − 13 × 6
-h) 260 × (10 + 5)
+a) 8 899 × 63
+b) 116 160 : 30
+c) 5 989 × 78
+d) 390 735 : 57
+e) 5 596 × 96
+f) 411 792 : 46
+g) 9 404 × 97
 
 ### Bài 2. (1 điểm) Rút gọn phân số
 
 Rút gọn đến phân số tối giản.
 
-a) Rút gọn phân số 2 phần 2.
+a) Rút gọn phân số 2 phần 20.
 b) Rút gọn phân số 3 phần 24.
 c) Rút gọn phân số 21 phần 9.
 d) Rút gọn phân số 72 phần 99.
 e) Rút gọn phân số 45 phần 81.
 
-### Bài 3. (1 điểm) Đếm chữ số và tính tổng các chữ số
+### Bài 3. (1 điểm) Ôn tập số tự nhiên: đọc, viết, so sánh, làm tròn
 
-Với mỗi số dưới đây, trả lời đủ hai ý.
+Trả lời nhanh, mỗi ý không quá 20 giây.
 
-a) Số 52 447 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-b) Số 312 348 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-c) Số 153 311 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-d) Số 286 698 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-e) Số 511 177 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-f) Số 283 959 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+a) Số liền trước và số liền sau của 6 921 812 là những số nào?
+b) 6 734 935 … 6 734 610
+c) Chữ số hàng chục của số 8 624 475 có giá trị bằng bao nhiêu?
+d) Làm tròn 2 030 245 đến hàng nghìn.
+e) Làm tròn 490 507 đến hàng nghìn.
 
-### Bài 4. (1 điểm) Đặt tính rồi tính (cộng, trừ)
+### Bài 4. (1 điểm) Tính giá trị biểu thức
 
-Đặt tính rồi tính.
+Tính giá trị của mỗi biểu thức.
 
-a) 63 998 − 57 538
-b) 39 583 − 10 195
-c) 39 373 − 25 783
-d) 46 979 − 41 213
-e) 72 526 − 55 427
-f) 92 175 − 24 929
-g) 89 652 − 55 097
+a) 216 × (17 + 8)
+b) (295 + 22) × 4
+c) (241 + 5) × 6
+d) (22 + 19) × 8
+e) 285 × (16 + 3)
+f) (69 + 3) × 8
+g) 282 × 22 + 282 × 5
 
 ### Bài 5. (1 điểm) So sánh hai phân số
 
 Điền dấu <, >, = thích hợp.
 
-a) 9 phần 7 … 8 phần 7
-b) 3 … 9 phần 13
-c) 2 phần 11 … 2
-d) 3 phần 5 … 3 phần 7
-e) 4 phần 13 … 7 phần 13
-f) 3 phần 13 … 1
-g) 3 phần 4 … 2 phần 3
-h) 1 phần 10 … 1 phần 7
+a) 1 phần 2 … 1 phần 4
+b) 3 phần 5 … 1 phần 10
+c) 3 phần 5 … 3
+d) 2 phần 7 … 3 phần 7
+e) 2 phần 3 … 6 phần 11
+f) 9 phần 4 … 3 phần 5
 
 ---
 
@@ -150,10 +146,10 @@ e) Cụm này gồm mấy buổi học?
 
 Mỗi dạng bài có những từ khoá riêng. Ghi lại từ khoá em nhận ra.
 
-a) Nêu một dấu hiệu nhận biết của dạng “So sánh phân số”.
-b) Nêu một dấu hiệu nhận biết của dạng “Đọc bảng số liệu thống kê”.
+a) Nêu một dấu hiệu nhận biết của dạng “Đọc bảng số liệu thống kê”.
+b) Nêu một dấu hiệu nhận biết của dạng “Dãy phân số, so sánh bằng phần bù”.
 c) Nêu một dấu hiệu nhận biết của dạng “Biểu thức phân số nhiều phép tính”.
-d) Nêu một dấu hiệu nhận biết của dạng “Bốn phép tính với phân số”.
+d) Nêu một dấu hiệu nhận biết của dạng “Đọc và lập biểu đồ tranh”.
 e) Nêu một dấu hiệu nhận biết của dạng “So sánh phân số bằng kĩ thuật đặc biệt”.
 f) Nêu một dấu hiệu nhận biết của dạng “Tìm phân số của một số”.
 
@@ -185,10 +181,10 @@ e) Kể tên nội dung chính cuối cùng.
 
 Điền các công thức, quy tắc bắt buộc của chương.
 
-a) Công thức hoặc quy tắc dùng cho dạng “So sánh phân số”?
-b) Công thức hoặc quy tắc dùng cho dạng “Đọc bảng số liệu thống kê”?
+a) Công thức hoặc quy tắc dùng cho dạng “Đọc bảng số liệu thống kê”?
+b) Công thức hoặc quy tắc dùng cho dạng “Dãy phân số, so sánh bằng phần bù”?
 c) Công thức hoặc quy tắc dùng cho dạng “Biểu thức phân số nhiều phép tính”?
-d) Công thức hoặc quy tắc dùng cho dạng “Bốn phép tính với phân số”?
+d) Công thức hoặc quy tắc dùng cho dạng “Đọc và lập biểu đồ tranh”?
 e) Công thức hoặc quy tắc dùng cho dạng “So sánh phân số bằng kĩ thuật đặc biệt”?
 f) Công thức hoặc quy tắc dùng cho dạng “Tìm phân số của một số”?
 
@@ -196,20 +192,20 @@ f) Công thức hoặc quy tắc dùng cho dạng “Tìm phân số của một
 
 Với mỗi dạng bài, chọn một cách minh hoạ.
 
-a) Dạng “So sánh phân số” nên minh hoạ bằng hình vẽ hay bằng bảng?
-b) Dạng “Đọc bảng số liệu thống kê” nên minh hoạ bằng hình vẽ hay bằng bảng?
+a) Dạng “Đọc bảng số liệu thống kê” nên minh hoạ bằng hình vẽ hay bằng bảng?
+b) Dạng “Dãy phân số, so sánh bằng phần bù” nên minh hoạ bằng hình vẽ hay bằng bảng?
 c) Dạng “Biểu thức phân số nhiều phép tính” nên minh hoạ bằng hình vẽ hay bằng bảng?
-d) Dạng “Bốn phép tính với phân số” nên minh hoạ bằng hình vẽ hay bằng bảng?
+d) Dạng “Đọc và lập biểu đồ tranh” nên minh hoạ bằng hình vẽ hay bằng bảng?
 e) Dạng “So sánh phân số bằng kĩ thuật đặc biệt” nên minh hoạ bằng hình vẽ hay bằng bảng?
 
 ### Bài 4. (4 điểm) Ô 6 — dạng bài và dấu hiệu nhận biết
 
 Ghép mỗi dạng bài với dấu hiệu nhận biết của nó.
 
-a) Dấu hiệu nào cho biết đề thuộc dạng “So sánh phân số”?
-b) Dấu hiệu nào cho biết đề thuộc dạng “Đọc bảng số liệu thống kê”?
+a) Dấu hiệu nào cho biết đề thuộc dạng “Đọc bảng số liệu thống kê”?
+b) Dấu hiệu nào cho biết đề thuộc dạng “Dãy phân số, so sánh bằng phần bù”?
 c) Dấu hiệu nào cho biết đề thuộc dạng “Biểu thức phân số nhiều phép tính”?
-d) Dấu hiệu nào cho biết đề thuộc dạng “Bốn phép tính với phân số”?
+d) Dấu hiệu nào cho biết đề thuộc dạng “Đọc và lập biểu đồ tranh”?
 e) Dấu hiệu nào cho biết đề thuộc dạng “So sánh phân số bằng kĩ thuật đặc biệt”?
 f) Dấu hiệu nào cho biết đề thuộc dạng “Tìm phân số của một số”?
 
@@ -217,10 +213,10 @@ f) Dấu hiệu nào cho biết đề thuộc dạng “Tìm phân số của m�
 
 Ghi lại cách xử lý nhanh nhất của từng dạng.
 
-a) Cách xử lý nhanh nhất của dạng “So sánh phân số” là gì?
-b) Cách xử lý nhanh nhất của dạng “Đọc bảng số liệu thống kê” là gì?
+a) Cách xử lý nhanh nhất của dạng “Đọc bảng số liệu thống kê” là gì?
+b) Cách xử lý nhanh nhất của dạng “Dãy phân số, so sánh bằng phần bù” là gì?
 c) Cách xử lý nhanh nhất của dạng “Biểu thức phân số nhiều phép tính” là gì?
-d) Cách xử lý nhanh nhất của dạng “Bốn phép tính với phân số” là gì?
+d) Cách xử lý nhanh nhất của dạng “Đọc và lập biểu đồ tranh” là gì?
 e) Cách xử lý nhanh nhất của dạng “So sánh phân số bằng kĩ thuật đặc biệt” là gì?
 f) Cách xử lý nhanh nhất của dạng “Tìm phân số của một số” là gì?
 
@@ -228,9 +224,9 @@ f) Cách xử lý nhanh nhất của dạng “Tìm phân số của một số�
 
 ## PHẦN D — HỆ THỐNG LÝ THUYẾT THEO KEY · Mức M2 — Thông hiểu · 25 phút · 30 điểm
 
-### Bài 1. (6 điểm) Key 1 — So sánh phân số
+### Bài 1. (6 điểm) Key 1 — Đọc bảng số liệu thống kê
 
-**Phát biểu:** Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu. **Ví dụ mẫu:** So sánh: 3 phần 5 … 3 phần 7 → >.
+**Phát biểu:** Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm. **Ví dụ mẫu:** Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? → 6,67 bạn.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -239,9 +235,9 @@ d) Phương pháp áp dụng key này là gì?
 e) Lỗi thường gặp khi dùng key này?
 f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
-### Bài 2. (6 điểm) Key 2 — Đọc bảng số liệu thống kê
+### Bài 2. (6 điểm) Key 2 — Dãy phân số, so sánh bằng phần bù
 
-**Phát biểu:** Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm. **Ví dụ mẫu:** Bảng: Toán 10, Văn 6, Anh 4. Trung bình mỗi môn bao nhiêu bạn? → 6,67 bạn.
+**Phát biểu:** Phần bù tới 1; quy luật dãy phân số. **Ví dụ mẫu:** So sánh 5 phần 6 và 7 phần 8. → 5 phần 6 < 7 phần 8.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -261,9 +257,9 @@ d) Phương pháp áp dụng key này là gì?
 e) Lỗi thường gặp khi dùng key này?
 f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
-### Bài 4. (6 điểm) Key 4 — Bốn phép tính với phân số
+### Bài 4. (6 điểm) Key 4 — Đọc và lập biểu đồ tranh
 
-**Phát biểu:** Quy đồng, nhân chia phân số. **Ví dụ mẫu:** Tính: 2 phần 3 + 1 phần 6 → 5 phần 6.
+**Phát biểu:** Biểu đồ tranh, phép nhân và chia. **Ví dụ mẫu:** Mỗi hình ứng với 5 quyển sách, bạn A có 4 hình. A có mấy quyển? → 20 quyển.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -287,54 +283,63 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Đếm số thoả điều kiện trong một khoảng
+### Bài 1. (8 điểm) Đọc và lập biểu đồ tranh
 
-Đếm số lượng, không cần liệt kê.
+Biểu đồ tranh số bông hoa của bốn bạn — mỗi hình ● ứng với **10 bông hoa**:
 
-a) Có bao nhiêu số lẻ từ 28 đến 475?
-b) Có bao nhiêu số chia hết cho 5 từ 338 đến 472?
-c) Có bao nhiêu số chia hết cho 3 từ 62 đến 203?
-d) Có bao nhiêu số chẵn từ 87 đến 517?
+Sơn: ●● · An: ●●●●● · Trang: ●●●● · Yến: ●●●●●●●●
 
-### Bài 2. (8 điểm) Tính chất chia hết của tổng và hiệu
+a) Mỗi hình ● ứng với 10 bông hoa. Bạn Sơn có bao nhiêu bông hoa?
+b) Bạn An có bao nhiêu bông hoa?
+c) Cả bốn bạn có tất cả bao nhiêu bông hoa?
+d) Bạn nào có nhiều bông hoa nhất?
+e) Bạn nào có ít bông hoa nhất?
+f) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu bông hoa?
+g) Nếu một bạn có 60 bông hoa thì phải vẽ mấy hình ●?
 
-Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng.
+### Bài 2. (8 điểm) Dùng dấu hiệu chia hết để trả lời nhanh
 
-a) Hiệu 873 − 630 có chia hết cho 9 không?
-b) Tổng 205 + 250 có chia hết cho 5 không?
-c) Hiệu 369 − 252 có chia hết cho 9 không?
-d) Hiệu 513 − 153 có chia hết cho 9 không?
+Không đặt tính chia, hãy dùng dấu hiệu chia hết.
 
-### Bài 3. (8 điểm) Bốn phép tính với phân số
+a) Số 1 129 có chia hết cho 9 không? Vì sao?
+b) Số 2 386 có chia hết cho 9 không? Vì sao?
+c) Số 2 585 có chia hết cho 2 không? Vì sao?
+d) Số 3 996 có chia hết cho 5 không? Vì sao?
+e) Số 5 371 có chia hết cho 5 không? Vì sao?
+f) Số 6 907 có chia hết cho 9 không? Vì sao?
+g) Số 9 693 có chia hết cho 5 không? Vì sao?
 
-Tính rồi rút gọn kết quả.
-
-a) 2 phần 13 × 3 phần 10
-b) 2 : 3 phần 2
-c) 1 phần 2 + 2 phần 7
-d) 4 phần 3 − 1 phần 8
-e) 4 phần 7 × 1 phần 3
-f) 6 phần 5 − 1 phần 2
-g) 4 phần 3 : 2 phần 5
-
-### Bài 4. (8 điểm) Giả thiết tạm với hai loại đối tượng
-
-Dùng phương pháp giả thiết tạm.
-
-a) Trong sân có 34 chiếc xe ba bánh và xe ô tô, đếm được tất cả 108 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-b) Trong sân có 36 chiếc xe đạp và xe ba bánh, đếm được tất cả 92 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-c) Trong sân có 41 chiếc xe ô tô và xe ba bánh, đếm được tất cả 146 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-d) Trong sân có 32 chiếc xe đạp và xe ô tô, đếm được tất cả 104 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
-
-### Bài 5. (8 điểm) Nhân nhẩm với số gần tròn chục, tròn trăm
+### Bài 3. (8 điểm) Nhân nhẩm với số gần tròn chục, tròn trăm
 
 Tính nhẩm, nêu cách nhẩm.
 
-a) 32 × 9
-b) 17 × 21
-c) 84 × 19
-d) 70 × 9
-e) 14 × 11
+a) 15 × 101
+b) 49 × 19
+c) 48 × 101
+d) 22 × 99
+e) 34 × 11
+f) 73 × 11
+
+### Bài 4. (8 điểm) Hình tròn: tâm, bán kính, đường kính
+
+Vẽ hình tròn và ghi kí hiệu lên hình.
+
+a) Hình tròn có đường kính 54 cm. Bán kính dài bao nhiêu?
+b) Hình tròn có bán kính 3 cm. Đường kính dài bao nhiêu?
+c) Hình tròn A có bán kính 9 cm, hình tròn B có đường kính 58 cm. Hình nào lớn hơn?
+d) Hình tròn có đường kính 44 cm. Bán kính dài bao nhiêu?
+e) Hình tròn có bán kính 16 cm. Đường kính dài bao nhiêu?
+f) Hình tròn A có bán kính 21 cm, hình tròn B có đường kính 4 cm. Hình nào lớn hơn?
+
+### Bài 5. (8 điểm) Bốn phép tính với phân số
+
+Tính rồi rút gọn kết quả.
+
+a) 5 phần 4 − 1 phần 7
+b) 1 : 9 phần 8
+c) 10 phần 9 + 11 phần 8
+d) 2 phần 9 × 1 phần 2
+e) 3 phần 2 : 1 phần 5
 
 ---
 
@@ -343,31 +348,31 @@ e) 14 × 11
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 18 · b) 1 216 · c) 17 · d) 1 053 · e) 193 · f) 1 752 · g) 119 · h) 3 900
-**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
-**Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
+**Đáp số:** a) 560 637 · b) 3 872 · c) 467 142 · d) 6 855 · e) 537 216 · f) 8 952 · g) 912 188
+**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
 
 ### Bài A.2
-**Đáp số:** a) 1 · b) 1 phần 8 · c) 7 phần 3 · d) 8 phần 11 · e) 5 phần 9
+**Đáp số:** a) 1 phần 10 · b) 1 phần 8 · c) 7 phần 3 · d) 8 phần 11 · e) 5 phần 9
 **Hướng giải:** Chia cả tử số và mẫu số cho cùng một số tự nhiên lớn hơn 1. Rút gọn đến khi tử số và mẫu số không cùng chia hết cho số nào lớn hơn 1 nữa thì được phân số tối giản.
 **Nhãn tư duy:** TD1. Điểm chốt: Phải chia **cả tử và mẫu** cho cùng một số.
 **Lỗi thường gặp:** Chỉ chia tử số hoặc chỉ chia mẫu số. Phòng: Viết phép chia cho cả hai dòng, kiểm tra lại bằng cách nhân ngược.
 
 ### Bài A.3
-**Đáp số:** a) 5 chữ số, tổng 22 · b) 6 chữ số, tổng 21 · c) 6 chữ số, tổng 14 · d) 6 chữ số, tổng 39 · e) 6 chữ số, tổng 22 · f) 6 chữ số, tổng 36
-**Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
-**Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
-**Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
+**Đáp số:** a) 6 921 811 và 6 921 813 · b) > · c) 70 · d) 2 030 000 · e) 491 000
+**Hướng giải:** So sánh: số nhiều chữ số hơn thì lớn hơn; bằng số chữ số thì so từng hàng từ trái sang phải. Làm tròn: nhìn chữ số ở hàng **liền sau** hàng cần làm tròn.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: So sánh đi từ **trái sang phải**, làm tròn nhìn **một chữ số liền sau**.
+**Lỗi thường gặp:** So sánh từ hàng đơn vị; hoặc làm tròn nhìn nhầm sang chính hàng cần làm tròn. Phòng: Gạch một nét ngăn ngay sau hàng cần làm tròn.
 
 ### Bài A.4
-**Đáp số:** a) 6 460 · b) 29 388 · c) 13 590 · d) 5 766 · e) 17 099 · f) 67 246 · g) 34 555
-**Hướng giải:** Viết các số thẳng hàng theo đúng hàng đơn vị, cộng hoặc trừ từ phải sang trái, nhớ sang hàng liền trước khi tổng vượt quá 9 hoặc khi phải mượn.
-**Nhãn tư duy:** TD1. Điểm chốt: Thẳng hàng **đơn vị**, không thẳng theo chữ số đầu.
-**Lỗi thường gặp:** Viết lệch hàng khi hai số có số chữ số khác nhau. Phòng: Kẻ cột dọc cho từng hàng trước khi viết số.
+**Đáp số:** a) 5 400 · b) 1 268 · c) 1 476 · d) 328 · e) 5 415 · f) 576 · g) 7 614
+**Hướng giải:** Trong biểu thức không có dấu ngoặc: nhân và chia làm trước, cộng và trừ làm sau; cùng mức thì làm từ trái sang phải. Có dấu ngoặc thì làm trong ngoặc trước.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Dấu ngoặc **đảo ngược** thứ tự ưu tiên — nhìn ngoặc trước khi tính.
+**Lỗi thường gặp:** Cộng trước nhân khi biểu thức không có ngoặc. Phòng: Gạch chân phép nhân, phép chia trước khi bắt đầu tính.
 
 ### Bài A.5
-**Đáp số:** a) > · b) > · c) < · d) > · e) < · f) < · g) > · h) <
+**Đáp số:** a) > · b) > · c) < · d) < · e) > · f) >
 **Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
 **Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
@@ -391,7 +396,7 @@ e) 14 × 11
 **Lỗi thường gặp:** Không nhớ mốc kiểm tra nên ôn muộn. Phòng: Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm.
 
 ### Bài B.4
-**Đáp số:** a) Hai phân số nối bởi dấu … · b) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Biểu thức chỉ gồm phân số · e) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · f) Cụm “bằng … của …”
+**Đáp số:** a) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · b) Tử và mẫu hơn kém nhau đúng 1 đơn vị · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Có hình vẽ lặp lại kèm một dòng chú thích · e) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · f) Cụm “bằng … của …”
 **Hướng giải:** Dấu hiệu nhận biết là những chữ có mặt trong đề bài, không phải là cách giải. Đọc lại cột “Dữ liệu nhận biết” trong bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD2. Điểm chốt: Dấu hiệu nằm ở **chữ trong đề**, không nằm ở phép tính.
 **Lỗi thường gặp:** Trả lời bằng cách giải thay vì bằng dấu hiệu. Phòng: Tự hỏi: em nhìn thấy chữ gì trong đề thì biết đây là dạng này?
@@ -409,41 +414,41 @@ e) 14 × 11
 **Lỗi thường gặp:** Vẽ sơ đồ thành danh sách gạch đầu dòng, mất tính liên kết. Phòng: Bắt buộc vẽ toả từ tâm, mỗi nhánh một màu.
 
 ### Bài C.2
-**Đáp số:** a) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · b) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · c) Thứ tự thực hiện phép tính, tính chất phân phối · d) Quy đồng, nhân chia phân số · e) Phần bù tới 1, phân số trung gian · f) Nhân số tự nhiên với phân số
+**Đáp số:** a) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · b) Phần bù tới 1; quy luật dãy phân số · c) Thứ tự thực hiện phép tính, tính chất phân phối · d) Biểu đồ tranh, phép nhân và chia · e) Phần bù tới 1, phân số trung gian · f) Nhân số tự nhiên với phân số
 **Hướng giải:** Mỗi dạng bài có một công thức hoặc một quy tắc gốc. Chép lại từ cột “Kiến thức liên quan” của bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Công thức phải **thuộc lòng**, không tra sách khi làm bài.
 **Lỗi thường gặp:** Nhớ công thức nhưng không nhớ nó dùng cho dạng nào. Phòng: Luôn viết công thức kèm tên dạng bài đi cùng nó.
 
 ### Bài C.3
-**Đáp số:** a) Xét cùng mẫu → cùng tử → quy đồng · b) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · c) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) So phần bù; hoặc chèn phân số trung gian
+**Đáp số:** a) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · b) Xét phần bù tới 1 rồi so sánh · c) Quan sát rút gọn trước, sau đó theo thứ tự thực hiện · d) Đọc chú thích → nhân số hình với đơn vị · e) So phần bù; hoặc chèn phân số trung gian
 **Hướng giải:** Dạng nào có quan hệ hơn kém thì vẽ sơ đồ đoạn thẳng; dạng nào có nhiều trường hợp thì kẻ bảng; dạng nào về hình thì vẽ hình và ghi số đo lên hình.
 **Nhãn tư duy:** TD3. Điểm chốt: Chọn đúng **kiểu minh hoạ** giúp nhìn ra lời giải nhanh hơn hẳn.
 **Lỗi thường gặp:** Dạng nào cũng vẽ sơ đồ đoạn thẳng, kể cả bài đếm. Phòng: Hỏi trước: bài này có quan hệ hơn kém, có nhiều trường hợp, hay có hình?
 
 ### Bài C.4
-**Đáp số:** a) Hai phân số nối bởi dấu … · b) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Biểu thức chỉ gồm phân số · e) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · f) Cụm “bằng … của …”
+**Đáp số:** a) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · b) Tử và mẫu hơn kém nhau đúng 1 đơn vị · c) Biểu thức gồm nhiều phân số và nhiều phép tính · d) Có hình vẽ lặp lại kèm một dòng chú thích · e) Tử và mẫu hơn kém nhau đúng 1 đơn vị; hoặc hai phân số nằm hai bên 1 phần 2 · f) Cụm “bằng … của …”
 **Hướng giải:** Dấu hiệu nhận biết luôn là **chữ có trong đề**: một cụm từ khoá, một kiểu dữ kiện, hoặc một cách hỏi.
 **Nhãn tư duy:** TD2. Điểm chốt: Đọc vị được đề là **đã đi được nửa đường**.
 **Lỗi thường gặp:** Lẫn dấu hiệu nhận biết với phương pháp giải. Phòng: Dấu hiệu trả lời câu “thấy gì?”, phương pháp trả lời câu “làm gì?”.
 
 ### Bài C.5
-**Đáp số:** a) So với 1 hoặc với 1 phần 2 trước — nhiều cặp kết luận được ngay. · b) Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. · c) Rút gọn chéo tử với mẫu trước khi nhân. · d) Rút gọn chéo trước khi nhân để số nhỏ, tính nhanh và ít sai. · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
+**Đáp số:** a) Tính tổng một lần rồi dùng lại cho mọi câu hỏi phần trăm. · b) n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · c) Rút gọn chéo tử với mẫu trước khi nhân. · d) Nếu mọi bạn đều dùng cùng một loại hình thì so số hình là đủ để biết ai nhiều nhất. · e) Phân số dạng n phần (n + 1) càng có n lớn thì càng gần 1, tức càng lớn. · f) Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được.
 **Hướng giải:** Cách xử lý nhanh nhất thường là một nhận xét giúp bỏ bớt một hai bước tính. Chép lại từ cột “Cách xử lý nhanh nhất”.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt.
 **Lỗi thường gặp:** Dùng mẹo mà không hiểu vì sao đúng nên áp dụng sai chỗ. Phòng: Với mỗi mẹo, viết thêm một dòng “mẹo này đúng vì …”.
 
 ### Bài D.1
-**Đáp số:** a) Quy đồng mẫu số, so sánh phân số cùng tử, cùng mẫu · b) So sánh phân số · c) Hai phân số nối bởi dấu … · d) Xét cùng mẫu → cùng tử → quy đồng · e) Thấy mẫu số lớn thì kết luận phân số lớn. · f) >
-**Hướng giải:** Cùng mẫu số: phân số nào có tử số lớn hơn thì lớn hơn. Cùng tử số: phân số nào có mẫu số **bé** hơn thì lớn hơn. Khác cả tử lẫn mẫu: quy đồng mẫu số rồi so tử số.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Cùng tử số thì **mẫu bé hơn là phân số lớn hơn** — ngược với trực giác.
-**Lỗi thường gặp:** Thấy mẫu số lớn thì kết luận phân số lớn. Phòng: Nghĩ tới chiếc bánh: chia càng nhiều phần thì mỗi phần càng bé.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài D.2
 **Đáp số:** a) Thống kê mô tả sơ cấp, trung bình cộng, tỉ số phần trăm · b) Đọc bảng số liệu thống kê · c) Đề cho bảng hoặc biểu đồ kèm nhiều câu hỏi · d) Ghi lại số liệu, trả lời từng câu bằng công cụ tương ứng · e) Đọc nhầm cột, hoặc quên một môn khi cộng tổng. · f) 6,67 bạn
 **Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình là tổng chia số môn; tỉ số phần trăm là phần chia tổng rồi nhân 100.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Mọi câu hỏi đều quy về **tổng, so sánh, trung bình cộng, tỉ số phần trăm**.
 **Lỗi thường gặp:** Đọc nhầm cột, hoặc quên một môn khi cộng tổng. Phòng: Đánh dấu từng số đã cộng để không sót và không cộng lặp.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.2
+**Đáp số:** a) Phần bù tới 1; quy luật dãy phân số · b) Dãy phân số, so sánh bằng phần bù · c) Tử và mẫu hơn kém nhau đúng 1 đơn vị · d) Xét phần bù tới 1 rồi so sánh · e) So phần bù rồi kết luận cùng chiều với phần bù. · f) 5 phần 6 < 7 phần 8
+**Hướng giải:** Phân số dạng n phần (n + 1) luôn bé hơn 1 và còn thiếu đúng 1 phần (n + 1) nữa thì bằng 1. Phần thiếu càng bé thì phân số càng lớn — đó là kỹ thuật **so sánh bằng phần bù**.
+**Nhãn tư duy:** TD6, TD5. Điểm chốt: Phần bù **bé hơn** nghĩa là phân số **lớn hơn**.
+**Lỗi thường gặp:** So phần bù rồi kết luận cùng chiều với phần bù. Phòng: Nghĩ tới chiếc bánh: thiếu ít hơn thì phần đang có nhiều hơn.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
@@ -454,10 +459,10 @@ e) 14 × 11
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.4
-**Đáp số:** a) Quy đồng, nhân chia phân số · b) Bốn phép tính với phân số · c) Biểu thức chỉ gồm phân số · d) Chọn quy tắc theo phép tính, rút gọn cuối cùng · e) Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. · f) 5 phần 6
-**Hướng giải:** Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
-**Lỗi thường gặp:** Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. Phòng: Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.
+**Đáp số:** a) Biểu đồ tranh, phép nhân và chia · b) Đọc và lập biểu đồ tranh · c) Có hình vẽ lặp lại kèm một dòng chú thích · d) Đọc chú thích → nhân số hình với đơn vị · e) Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. · f) 20 quyển
+**Hướng giải:** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
+**Lỗi thường gặp:** Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. Phòng: Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
@@ -468,39 +473,39 @@ e) 14 × 11
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) 224 · b) 27 · c) 47 · d) 215
-**Hướng giải:** BẪY — Hai đầu khoảng chưa chắc thoả điều kiện. Các số cần đếm lập thành một dãy cách đều. Số lượng số hạng bằng (số cuối − số đầu) : khoảng cách + 1. Phải tìm đúng số đầu và số cuối **nằm trong khoảng đã cho**.
-**Nhãn tư duy:** TD4, TD1. Điểm chốt: Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị.
-**Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. Phòng: Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức.
-**Gợi ý 3 tầng:** (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng trong khoảng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
+**Đáp số:** a) 20 · b) 50 · c) 190 · d) Yến (80) · e) Sơn (20) · f) 60 · g) 6 hình
+**Hướng giải:** BẪY — Một hình không phải một đơn vị. Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
+**Lỗi thường gặp:** Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. Phòng: Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
+**Gợi ý 3 tầng:** (1) Mỗi hình ● ứng với bao nhiêu đơn vị? — (2) Bạn ấy có bao nhiêu hình ●? — (3) Nhân hai số ấy với nhau.
 
 ### Bài E.2
-**Đáp số:** a) có · b) có · c) có · d) có
-**Hướng giải:** Nếu hai số cùng chia hết cho một số thì tổng và hiệu của chúng cũng chia hết cho số đó. Nếu một số chia hết còn số kia dư r thì tổng cũng dư đúng r.
-**Nhãn tư duy:** TD2, TD5. Điểm chốt: Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả.
-**Lỗi thường gặp:** Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. Phòng: Ghi số dư của từng số hạng ngay bên dưới nó.
-**Gợi ý 3 tầng:** (1) Mỗi số hạng có chia hết cho số đó không? — (2) Nếu cả hai cùng chia hết thì tổng chia hết. — (3) Nếu một số dư r, tổng cũng dư r.
+**Đáp số:** a) không (tổng chữ số 13) · b) không (tổng chữ số 19) · c) không (chữ số tận cùng 5) · d) không (chữ số tận cùng 6) · e) không (chữ số tận cùng 1) · f) không (tổng chữ số 22) · g) không (chữ số tận cùng 3)
+**Hướng giải:** Chia hết cho 2: tận cùng 0, 2, 4, 6, 8. Chia hết cho 5: tận cùng 0 hoặc 5. Chia hết cho 3: tổng các chữ số chia hết cho 3. Chia hết cho 9: tổng các chữ số chia hết cho 9.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**.
+**Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. Phòng: Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận.
+**Gợi ý 3 tầng:** (1) Số chia là 2 hay 5 thì nhìn chữ số tận cùng. — (2) Số chia là 3 hay 9 thì cộng các chữ số. — (3) Tổng chữ số vẫn lớn thì cộng tiếp lần nữa.
 
 ### Bài E.3
-**Đáp số:** a) 3 phần 65 · b) 4 phần 3 · c) 11 phần 14 · d) 29 phần 24 · e) 4 phần 21 · f) 7 phần 10 · g) 10 phần 3
-**Hướng giải:** BẪY — Nhân chia không cần quy đồng. Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
-**Lỗi thường gặp:** Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. Phòng: Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.
-**Gợi ý 3 tầng:** (1) Phép tính là cộng, trừ hay nhân, chia? — (2) Cộng trừ thì quy đồng mẫu số trước. — (3) Chia thì đổi thành nhân với phân số đảo ngược.
-
-### Bài E.4
-**Đáp số:** a) xe ba bánh: 28 chiếc, xe ô tô: 6 chiếc · b) xe đạp: 16 chiếc, xe ba bánh: 20 chiếc · c) xe ô tô: 23 chiếc, xe ba bánh: 18 chiếc · d) xe đạp: 12 chiếc, xe ô tô: 20 chiếc
-**Hướng giải:** BẪY — Chia cho hiệu, không chia cho một loại. Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
-**Lỗi thường gặp:** Chia số bánh thiếu cho số bánh của loại nhiều hơn. Phòng: Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề.
-**Gợi ý 3 tầng:** (1) Giả sử tất cả đều là loại ít bánh thì có bao nhiêu bánh? — (2) So với thực tế thì thiếu bao nhiêu bánh? — (3) Mỗi lần đổi một chiếc thì số bánh tăng thêm bao nhiêu?
-
-### Bài E.5
-**Đáp số:** a) 288 · b) 357 · c) 1 596 · d) 630 · e) 154
+**Đáp số:** a) 1 515 · b) 931 · c) 4 848 · d) 2 178 · e) 374 · f) 803
 **Hướng giải:** Đưa thừa số về dạng tròn chục, tròn trăm cộng hoặc trừ một ít: × 9 = × 10 − 1 lần; × 11 = × 10 + 1 lần; × 99 = × 100 − 1 lần; × 101 = × 100 + 1 lần.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tách thừa số thành **tròn chục ± 1 đơn vị** rồi dùng nhân với một tổng, một hiệu.
 **Lỗi thường gặp:** Nhân với 10 rồi quên cộng hoặc trừ phần bù. Phòng: Viết luôn dấu ± và số bù ra bên cạnh trước khi nhân.
 **Gợi ý 3 tầng:** (1) Thừa số kia gần số tròn nào? — (2) Viết nó thành số tròn cộng hoặc trừ mấy đơn vị. — (3) Nhân với số tròn trước rồi bù lại.
+
+### Bài E.4
+**Đáp số:** a) 27 cm · b) 6 cm · c) B · d) 22 cm · e) 32 cm · f) A
+**Hướng giải:** BẪY — Bán kính hay đường kính. Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
+**Lỗi thường gặp:** So bán kính của hình này với đường kính của hình kia. Phòng: Đổi hết về bán kính trước khi so sánh.
+**Gợi ý 3 tầng:** (1) Đường kính gấp mấy lần bán kính? — (2) Đưa cả hai hình về cùng bán kính. — (3) So hai bán kính vừa tính.
+
+### Bài E.5
+**Đáp số:** a) 31 phần 28 · b) 8 phần 9 · c) 179 phần 72 · d) 1 phần 9 · e) 15 phần 2
+**Hướng giải:** BẪY — Nhân chia không cần quy đồng. Cộng, trừ phân số phải **quy đồng mẫu số** trước. Nhân phân số thì nhân tử với tử, mẫu với mẫu. Chia phân số thì nhân với phân số đảo ngược của số chia. Cuối cùng luôn rút gọn.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Cộng trừ **cần** quy đồng, nhân chia **không cần** quy đồng.
+**Lỗi thường gặp:** Quy đồng cả khi nhân, hoặc cộng thẳng tử với tử và mẫu với mẫu. Phòng: Trước khi tính, khoanh dấu phép tính và tự nhắc “có phải quy đồng không”.
+**Gợi ý 3 tầng:** (1) Phép tính là cộng, trừ hay nhân, chia? — (2) Cộng trừ thì quy đồng mẫu số trước. — (3) Chia thì đổi thành nhân với phân số đảo ngược.
 
 ---
 

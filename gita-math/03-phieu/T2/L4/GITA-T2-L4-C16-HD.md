@@ -52,40 +52,65 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Bài toán tuổi | Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ |
-| 2 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân |
-| 3 | Quan hệ nhiều hơn – ít hơn, gấp – kém | Bốn phép tính, từ khoá chỉ quan hệ |
-| 4 | Giả thiết tạm | Phương pháp giả thiết tạm |
-| 5 | Tìm phân số của một số, nhiều bước | Tìm phân số của một số |
-| 6 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi |
-| 7 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu |
-| 8 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ |
-| 9 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng |
-| 10 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng |
-| 11 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận |
-| 12 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công |
-| 13 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng |
+| 1 | Tỉ lệ thuận, rút về đơn vị | Đại lượng tỉ lệ thuận |
+| 2 | Tỉ lệ nghịch | Đại lượng tỉ lệ nghịch, tổng số ngày công |
+| 3 | Tổng – hiệu có lời văn | Công thức tổng – hiệu, sơ đồ đoạn thẳng |
+| 4 | Công việc chung | Năng suất, cộng và chia phân số |
+| 5 | Tìm trung bình cộng | Định nghĩa trung bình cộng |
+| 6 | Ba dạng bài trung bình cộng | Quan hệ tổng – số lượng – trung bình cộng |
+| 7 | Bài toán tổng – tỉ | Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ |
+| 8 | Tổng nhiều số có ràng buộc; tổng – tỉ | Trung bình cộng của dãy cách đều; tổng – tỉ |
+| 9 | Rút về đơn vị | Đại lượng tỉ lệ thuận, phép chia và phép nhân |
+| 10 | Chuyển đổi giữa hai đại lượng, tổng không đổi | Bất biến tổng, biến thiên hiệu |
+| 11 | Tổng – tỉ có tỉ số thay đổi | Tổng – tỉ, đại lượng không đổi |
+| 12 | Giả thiết tạm | Phương pháp giả thiết tạm |
+| 13 | Bài toán tuổi | Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ |
+| 14 | Ba dạng cơ bản của chuyển động đều | s = v × t |
 
 ---
 
 ## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT
 
+Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. Bản đầy đủ kèm bộ đề luyện đọc vị ở `10-so-do-doc-vi/so-do-D-L4.md`.
+
+```
+ĐỌC ĐỀ → Đề là một câu chuyện có lời văn, hỏi tìm một hay vài đại lượng?
+1. Đề cho tổng và hiệu của hai đại lượng?
+     ĐÚNG → Tổng – hiệu: số bé = (tổng − hiệu) : 2
+2. Đề cho tổng và tỉ số (gấp mấy lần, bằng mấy phần mấy)?
+     ĐÚNG → Tổng – tỉ: chia tổng cho tổng số phần
+3. Đề cho hiệu và tỉ số?
+     ĐÚNG → Hiệu – tỉ: chia hiệu cho hiệu số phần
+4. Đề có cụm “trung bình mỗi …”?
+     ĐÚNG → Trung bình cộng: đi qua tổng làm trung gian
+5. Đề cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại?
+     ĐÚNG → Rút về đơn vị hoặc dùng tỉ số; hỏi trước: cùng tăng hay ngược chiều?
+6. Đề có vận tốc, quãng đường, thời gian, hoặc hai xe gặp nhau?
+     ĐÚNG → Chuyển động: ngược chiều dùng tổng vận tốc, cùng chiều dùng hiệu
+7. Đề nói “làm một mình trong … giờ” rồi “cùng làm”?
+     ĐÚNG → Công việc chung: cộng năng suất một giờ, không cộng thời gian
+8. Đề có mốc thời gian: hiện nay, sau … năm, cách đây … năm?
+     ĐÚNG → Bài toán tuổi: bám vào hiệu số tuổi không đổi
+9. Đề nói “nếu … thì hai bên bằng nhau”, hoặc dữ kiện bị mô tả vòng?
+     ĐÚNG → Dạng ẩn: dịch câu mô tả thành một con số rồi quay lại các dạng chuẩn ở trên
+```
+
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Bài toán tuổi | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm | Kẻ bảng thời gian, bám vào hiệu tuổi không đổi | Tổng tuổi của n người sau k năm tăng thêm đúng n × k. |
-| Rút về đơn vị | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. |
-| Quan hệ nhiều hơn – ít hơn, gấp – kém | Các cụm “nhiều hơn”, “ít hơn”, “gấp … lần”, “kém … lần” | Đọc vị từ khoá → chọn phép tính | Kết quả lớn hơn hay bé hơn số đã cho? Trả lời được là biết ngay phép tính. |
-| Giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. |
-| Tìm phân số của một số, nhiều bước | Cụm “… số còn lại”, “… số đó” | Tính tuần tự, sau mỗi bước ghi lại số còn lại | Còn lại sau ngày đầu là (1 − phân số) của tổng; nhân trực tiếp cho nhanh. |
-| Tổng – tỉ có tỉ số thay đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). |
-| Chuyển đổi giữa hai đại lượng, tổng không đổi | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. |
-| Bài toán tổng – tỉ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. |
-| Tổng – hiệu có lời văn | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. |
-| Bài toán hiệu – tỉ | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. |
 | Tỉ lệ thuận, rút về đơn vị | Hai đại lượng cùng tăng cùng giảm | Rút về đơn vị hoặc dùng tỉ số | Nếu số lượng mới gấp số lượng cũ một số nguyên lần thì nhân thẳng, không cần rút về đơn vị. |
-| Bài toán tổng – hiệu | Đề cho **tổng** và **hiệu** của hai số | Vẽ sơ đồ, đưa về hai phần bằng nhau | Số lớn và số bé luôn có trung bình cộng bằng nửa tổng. |
 | Tỉ lệ nghịch | Số người tăng thì thời gian giảm | Quy về tổng số ngày công rồi chia | Số người gấp đôi thì số ngày giảm một nửa — nhẩm được ngay khi tỉ số đẹp. |
+| Tổng – hiệu có lời văn | “Có tất cả …” và “… nhiều hơn … là …” | Đọc vị tổng và hiệu → sơ đồ → công thức | Tìm số lớn trước rồi lấy tổng trừ đi, khỏi phải chia hai lần. |
+| Công việc chung | “Làm một mình trong … giờ” đi cùng “cùng làm” | Quy công việc về 1, cộng năng suất, lấy nghịch đảo | Thời gian làm chung luôn **bé hơn** thời gian của người nhanh nhất — dùng để loại đáp số sai ngay lập tức. |
+| Tìm trung bình cộng | Từ khoá “trung bình cộng”, “trung bình mỗi …” | Tổng chia số lượng | Ước lượng: trung bình cộng luôn nằm giữa số bé nhất và số lớn nhất. |
 | Ba dạng bài trung bình cộng | Cụm “trung bình mỗi …” | Đi qua tổng làm trung gian | Tổng = trung bình cộng × số lượng — công thức cầu nối của mọi dạng. |
+| Bài toán tổng – tỉ | Đề cho **tổng** và **tỉ số** (phân số hoặc “gấp … lần”) | Sơ đồ phần bằng nhau → giá trị một phần → nhân | Tổng luôn chia hết cho tổng số phần — nếu không chia hết là đọc sai tỉ số. |
+| Tổng nhiều số có ràng buộc; tổng – tỉ | Ba số hơn kém nhau cùng một lượng; hoặc tổng đi cùng tỉ số | Tìm số giữa trước; sau đó chia theo tỉ lệ | Tổng ba số cách đều luôn chia hết cho 3. |
+| Rút về đơn vị | Cho giá trị của một nhóm, hỏi giá trị của nhóm khác cùng loại | Chia để rút về một đơn vị rồi nhân | Nếu số bao mới gấp đôi số bao cũ thì khối lượng cũng gấp đôi — dùng tỉ số để bỏ qua bước chia. |
+| Chuyển đổi giữa hai đại lượng, tổng không đổi | “Chuyển … từ bên này sang bên kia” | Xét đại lượng không đổi (tổng) và đại lượng đổi gấp đôi (hiệu) | Sau khi chuyển, mỗi bên bằng nửa tổng — tính nửa tổng rồi trừ là ra ngay. |
+| Tổng – tỉ có tỉ số thay đổi | “Phải thêm (bớt) bao nhiêu để tỉ số trở thành …” | Xác định đại lượng bất biến → tính lại đại lượng kia | Số cần thêm = số bé × (tỉ số mới − tỉ số cũ). |
+| Giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng khác | Giả sử đồng nhất một loại → tính phần chênh → chia cho hiệu đơn vị | Số chó = (số chân − 2 × số con) : 2 — thuộc công thức rút gọn để nhẩm. |
+| Bài toán tuổi | Xuất hiện mốc thời gian: hiện nay, sau … năm, cách đây … năm | Kẻ bảng thời gian, bám vào hiệu tuổi không đổi | Tổng tuổi của n người sau k năm tăng thêm đúng n × k. |
+| Ba dạng cơ bản của chuyển động đều | Có hai trong ba đại lượng quãng đường, vận tốc, thời gian | Chọn công thức theo đại lượng cần tìm, đồng bộ đơn vị | Vẽ tam giác: s ở trên, v và t ở dưới; che đại lượng cần tìm là ra công thức. |
 
 ---
 
@@ -104,26 +129,26 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán tuổi” chứ?
-- [ ] **2.** Em nhớ công thức: Bất biến hiệu số tuổi, tổng – hiệu, tổng – tỉ?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Rút về đơn vị” chứ?
-- [ ] **4.** Em nhớ công thức: Đại lượng tỉ lệ thuận, phép chia và phép nhân?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Quan hệ nhiều hơn – ít hơn, gấp – kém” chứ?
-- [ ] **6.** Em nhớ công thức: Bốn phép tính, từ khoá chỉ quan hệ?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Giả thiết tạm” chứ?
-- [ ] **8.** Em nhớ công thức: Phương pháp giả thiết tạm?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Tìm phân số của một số, nhiều bước” chứ?
-- [ ] **10.** Em nhớ công thức: Tìm phân số của một số?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Tổng – tỉ có tỉ số thay đổi” chứ?
-- [ ] **12.** Em nhớ công thức: Tổng – tỉ, đại lượng không đổi?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Chuyển đổi giữa hai đại lượng, tổng không đổi” chứ?
-- [ ] **14.** Em nhớ công thức: Bất biến tổng, biến thiên hiệu?
-- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán tổng – tỉ” chứ?
-- [ ] **16.** Em nhớ công thức: Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ?
-- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Tổng – hiệu có lời văn” chứ?
-- [ ] **18.** Em nhớ công thức: Công thức tổng – hiệu, sơ đồ đoạn thẳng?
-- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán hiệu – tỉ” chứ?
-- [ ] **20.** Em nhớ công thức: Tỉ số, sơ đồ đoạn thẳng?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ lệ thuận, rút về đơn vị” chứ?
+- [ ] **2.** Em nhớ công thức: Đại lượng tỉ lệ thuận?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Tỉ lệ nghịch” chứ?
+- [ ] **4.** Em nhớ công thức: Đại lượng tỉ lệ nghịch, tổng số ngày công?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tổng – hiệu có lời văn” chứ?
+- [ ] **6.** Em nhớ công thức: Công thức tổng – hiệu, sơ đồ đoạn thẳng?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Công việc chung” chứ?
+- [ ] **8.** Em nhớ công thức: Năng suất, cộng và chia phân số?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Tìm trung bình cộng” chứ?
+- [ ] **10.** Em nhớ công thức: Định nghĩa trung bình cộng?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Ba dạng bài trung bình cộng” chứ?
+- [ ] **12.** Em nhớ công thức: Quan hệ tổng – số lượng – trung bình cộng?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán tổng – tỉ” chứ?
+- [ ] **14.** Em nhớ công thức: Tỉ số, sơ đồ đoạn thẳng, chia theo tỉ lệ?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Tổng nhiều số có ràng buộc; tổng – tỉ” chứ?
+- [ ] **16.** Em nhớ công thức: Trung bình cộng của dãy cách đều; tổng – tỉ?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Rút về đơn vị” chứ?
+- [ ] **18.** Em nhớ công thức: Đại lượng tỉ lệ thuận, phép chia và phép nhân?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Chuyển đổi giữa hai đại lượng, tổng không đổi” chứ?
+- [ ] **20.** Em nhớ công thức: Bất biến tổng, biến thiên hiệu?
 
 **Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
@@ -135,20 +160,20 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Cộng thêm số năm vào cả hiệu số tuổi. | Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người. |
-| 2 | Nhân ngay hai số đã cho mà bỏ qua bước chia. | Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai. |
-| 3 | Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. | Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh. |
-| 4 | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Thử lại: nhân ngược ra tổng số chân xem có khớp không. |
-| 5 | Lấy cả hai phân số nhân với tổng ban đầu. | Sau mỗi bước, viết rõ “còn lại … kg” rồi mới sang bước sau. |
-| 6 | Lấy hiệu hai tỉ số nhân với tổng ban đầu. | Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. |
-| 7 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
-| 8 | Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. | Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng. |
-| 9 | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính. |
-| 10 | Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. | Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ. |
-| 11 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
-| 12 | Lấy (tổng + hiệu) : 2 rồi gọi đó là số bé. | Vẽ sơ đồ đoạn thẳng trước, đoạn dài hơn luôn là số lớn. |
-| 13 | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? |
-| 14 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
+| 1 | Nhân chia ngược chiều vì tưởng là tỉ lệ nghịch. | Tự hỏi: mua nhiều hơn thì trả nhiều hơn hay ít hơn? |
+| 2 | Nhân chia như tỉ lệ thuận nên càng nhiều người lại càng lâu. | Ước lượng trước: kết quả phải lớn hơn hay bé hơn số ngày ban đầu? |
+| 3 | Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. | Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính. |
+| 4 | Cộng hai khoảng thời gian rồi chia đôi. | Luôn viết dòng “Mỗi giờ vòi thứ nhất chảy được … bể” trước. |
+| 5 | Đếm sai số lượng số hạng nên chia nhầm. | Đánh số thứ tự từng số trước khi cộng. |
+| 6 | Đi tìm ngay số còn thiếu mà chưa tính tổng. | Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”. |
+| 7 | Chia tổng cho một trong hai số của tỉ số thay vì cho tổng số phần. | Vẽ sơ đồ, đếm tổng số đoạn nhỏ trên cả hai đoạn thẳng. |
+| 8 | Đặt ba ẩn rồi giải vòng vo, mất thời gian trong phòng thi. | Nhìn ra “cách đều” trước khi đặt bút. |
+| 9 | Nhân ngay hai số đã cho mà bỏ qua bước chia. | Viết rõ câu “Một bao nặng … kg” trước khi làm bước hai. |
+| 10 | Chuyển đúng bằng hiệu hai bên nên bên ít lại thành bên nhiều. | Thử lại: sau khi chuyển, cộng trừ ra hai số rồi so xem có bằng nhau không. |
+| 11 | Lấy hiệu hai tỉ số nhân với tổng ban đầu. | Viết rõ ba dòng: số bé, số lớn cũ, số lớn mới. |
+| 12 | Chia số chân thiếu cho 4 thay vì cho hiệu số chân của hai loài. | Thử lại: nhân ngược ra tổng số chân xem có khớp không. |
+| 13 | Cộng thêm số năm vào cả hiệu số tuổi. | Kẻ bảng ba dòng: trước kia – hiện nay – sau này, ghi rõ tuổi từng người. |
+| 14 | Vận tốc km/giờ nhưng thời gian lại để bằng phút. | Ghi đơn vị bên cạnh mọi số trước khi thay vào công thức. |
 
 ---
 

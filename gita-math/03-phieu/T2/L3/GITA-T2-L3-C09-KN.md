@@ -43,65 +43,64 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Cấu tạo thập phân của số tự nhiên
-> 2. Thứ tự trong tập số tự nhiên
-> 3. Đếm số hạng, cấu tạo số
-> 4. Cấu tạo số, tổng chữ số
+> 2. Tính chất chữ số tận cùng của tổng, tích
+> 3. Quan hệ các thành phần phép tính; giao hoán, kết hợp, nhân 0 và 1
+> 4. Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2
 
 ---
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Số chẵn – số lẻ, số liền trước – số liền sau
+### Bài 1. (5 điểm) Đọc, viết và phân tích cấu tạo số
+
+Cho số **49 200**.
+
+a) Số 49 200 có bao nhiêu chữ số?
+b) Chữ số hàng đơn vị là chữ số nào?
+c) Chữ số hàng trăm là chữ số nào?
+d) Chữ số hàng nghìn là chữ số nào?
+e) Viết số 49 200 thành tổng các giá trị hàng.
+f) Tổng các chữ số của số 49 200 bằng bao nhiêu?
+g) Số liền sau của 49 200 là số nào?
+
+### Bài 2. (5 điểm) Số chẵn – số lẻ, số liền trước – số liền sau
 
 Trả lời ngắn gọn từng câu.
 
-a) Số chẵn bé nhất lớn hơn 15 119 là số nào?
-b) Số 36 375 là số chẵn hay số lẻ?
-c) Số chẵn bé nhất lớn hơn 54 929 là số nào?
-d) Số liền sau của 71 278 là số nào?
-
-### Bài 2. (5 điểm) Đọc giá trị của chữ số theo hàng
-
-Cho số **1 874**.
-
-a) Chữ số ở hàng **nghìn** của số 1 874 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-b) Chữ số ở hàng **trăm** của số 1 874 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-c) Chữ số ở hàng **chục** của số 1 874 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-d) Chữ số ở hàng **đơn vị** của số 1 874 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+a) Số liền trước của 6 651 là số nào?
+b) Số chẵn bé nhất lớn hơn 43 133 là số nào?
+c) Số liền trước của 94 073 là số nào?
+d) Số liền sau của 94 539 là số nào?
+e) Số liền trước của 96 300 là số nào?
 
 ### Bài 3. (5 điểm) Điền dấu <, >, = thích hợp
 
 Điền dấu thích hợp vào chỗ chấm.
 
-a) 4 396 … 35 185
-b) 73 472 … 73 430
-c) 68 198 … 28 198
-d) 78 686 … 70 176
-e) 58 196 … 88 196
-f) 83 799 … 86 799
-g) 65 689 … 65 751
+a) 29 281 … 16 153
+b) 24 460 … 9 239
+c) 45 120 … 45 041
+d) 51 984 … 51 384
+e) 84 237 … 24 237
 
-### Bài 4. (5 điểm) Đếm chữ số và tính tổng các chữ số
+### Bài 4. (5 điểm) Đọc giá trị của chữ số theo hàng
+
+Cho số **66 810**.
+
+a) Chữ số ở hàng **nghìn** của số 66 810 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+b) Chữ số ở hàng **trăm** của số 66 810 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+c) Chữ số ở hàng **chục** của số 66 810 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+d) Chữ số ở hàng **đơn vị** của số 66 810 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+
+### Bài 5. (5 điểm) Đếm chữ số và tính tổng các chữ số
 
 Với mỗi số dưới đây, trả lời đủ hai ý.
 
-a) Số 41 438 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-b) Số 62 102 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-c) Số 50 773 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-d) Số 56 874 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-e) Số 10 537 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-f) Số 21 424 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
-
-### Bài 5. (5 điểm) Viết tiếp ba số hạng của dãy
-
-Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
-
-a) 25, 31, 37, 43, …
-b) 26, 36, 46, 56, …
-c) 37, 39, 41, 43, …
-d) 19, 26, 33, 40, …
-e) 8, 13, 18, 23, …
-f) 12, 15, 18, 21, …
+a) Số 72 343 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+b) Số 70 432 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+c) Số 13 758 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+d) Số 24 441 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
+e) Số 57 850 có bao nhiêu chữ số, và tổng các chữ số của nó bằng bao nhiêu?
 
 ---
 
@@ -122,10 +121,10 @@ e) Thiếu câu lời giải thì bị trừ bao nhiêu phần điểm của bà
 Với mỗi dạng bài, viết một câu lời giải mẫu.
 
 a) Câu lời giải mở đầu cho dạng “Nhận biết chẵn – lẻ và số liền kề”?
-b) Câu lời giải mở đầu cho dạng “So sánh hai số tự nhiên”?
-c) Câu lời giải mở đầu cho dạng “Phép chia có dư”?
-d) Câu lời giải mở đầu cho dạng “Lập số từ bộ chữ số”?
-e) Câu lời giải mở đầu cho dạng “Đếm chữ số, tính tổng chữ số”?
+b) Câu lời giải mở đầu cho dạng “Thêm, bớt chữ số”?
+c) Câu lời giải mở đầu cho dạng “Đọc, viết, cấu tạo số”?
+d) Câu lời giải mở đầu cho dạng “Đếm số thoả điều kiện về chữ số”?
+e) Câu lời giải mở đầu cho dạng “Phép chia có dư”?
 
 ### Bài 3. (3 điểm) Ghi đơn vị đúng chỗ
 
@@ -143,11 +142,11 @@ f) Vận tốc ghi đơn vị gì?
 Mỗi ý nêu một lỗi. Hãy nói cách sửa.
 
 a) Lỗi: Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. — cách phòng?
-b) Lỗi: So từ hàng đơn vị (phải sang trái) nên kết luận sai. — cách phòng?
-c) Lỗi: Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. — cách phòng?
-d) Lỗi: Viết lộn xộn nên vừa sót vừa trùng. — cách phòng?
-e) Lỗi: Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). — cách phòng?
-f) Lỗi: Coi hiệu hai số bằng hiệu hai chữ số. — cách phòng?
+b) Lỗi: Nhầm “thêm bên trái” thành “thêm bên phải”. — cách phòng?
+c) Lỗi: Đếm hàng từ trái sang phải nên lệch hàng. — cách phòng?
+d) Lỗi: Viết lộn xộn nên vừa sót vừa lặp; hoặc quên điều kiện ba chữ số khác nhau. — cách phòng?
+e) Lỗi: Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. — cách phòng?
+f) Lỗi: So từ hàng đơn vị (phải sang trái) nên kết luận sai. — cách phòng?
 
 ### Bài 5. (3 điểm) Tự chấm bài theo thang điểm
 
@@ -185,7 +184,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 3. (3 điểm) Dò soát tình huống 2
 
-**Tình huống:** một bạn làm bài dạng “Lập số từ bộ chữ số” và mắc lỗi: Viết lộn xộn nên vừa sót vừa trùng.
+**Tình huống:** một bạn làm bài dạng “Đếm số thoả điều kiện về chữ số” và mắc lỗi: Viết lộn xộn nên vừa sót vừa lặp; hoặc quên điều kiện ba chữ số khác nhau.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -195,7 +194,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 4. (3 điểm) Dò soát tình huống 3
 
-**Tình huống:** một bạn làm bài dạng “Xác định chữ số và giá trị chữ số theo hàng” và mắc lỗi: Đếm hàng từ trái sang phải nên lệch hàng.
+**Tình huống:** một bạn làm bài dạng “Đếm chữ số, tính tổng chữ số” và mắc lỗi: Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3).
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -205,7 +204,7 @@ e) Điểm chốt của dạng này là gì?
 
 ### Bài 5. (3 điểm) Dò soát tình huống 4
 
-**Tình huống:** một bạn làm bài dạng “So sánh hai số tự nhiên” và mắc lỗi: So từ hàng đơn vị (phải sang trái) nên kết luận sai.
+**Tình huống:** một bạn làm bài dạng “Đổi chỗ chữ số” và mắc lỗi: Coi hiệu hai số bằng hiệu hai chữ số.
 
 a) Lỗi này bị bắt ở tầng dò soát nào?
 b) Cách phòng lỗi này là gì?
@@ -227,7 +226,7 @@ c) Mỗi nhánh chính đặt tên theo gì?
 d) Mỗi nhánh chính có mấy nhánh con bắt buộc?
 e) Vẽ xong, tự chấm bằng cách nào?
 
-### Bài 2. (5 điểm) Nhánh 1 — So sánh hai số tự nhiên
+### Bài 2. (5 điểm) Nhánh 1 — Thêm, bớt chữ số
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -237,7 +236,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 3. (5 điểm) Nhánh 2 — Lập số từ bộ chữ số
+### Bài 3. (5 điểm) Nhánh 2 — Đếm số thoả điều kiện về chữ số
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -247,7 +246,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 4. (5 điểm) Nhánh 3 — Đổi chỗ chữ số
+### Bài 4. (5 điểm) Nhánh 3 — So sánh hai số tự nhiên
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -257,7 +256,7 @@ c) Nhánh con 3 — lỗi hay mắc?
 d) Ghi thêm: kiến thức phải thuộc?
 e) Ghi thêm: cách xử lý nhanh nhất?
 
-### Bài 5. (5 điểm) Nhánh 4 — Đếm chữ số theo nhóm
+### Bài 5. (5 điểm) Nhánh 4 — Kiểm tra chia hết bằng dấu hiệu
 
 Điền ba nhánh con bắt buộc của nhánh này.
 
@@ -293,7 +292,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 3. (4 điểm) Nội dung giảng — Phép chia có dư
+### Bài 3. (4 điểm) Nội dung giảng — Đọc, viết, cấu tạo số
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -304,7 +303,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 4. (4 điểm) Nội dung giảng — Đếm chữ số, tính tổng chữ số
+### Bài 4. (4 điểm) Nội dung giảng — Phép chia có dư
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -315,7 +314,7 @@ d) Ví dụ mẫu em sẽ giảng?
 e) Lỗi em sẽ cảnh báo cho lớp?
 f) Mẹo nhanh em sẽ tặng lớp?
 
-### Bài 5. (4 điểm) Nội dung giảng — Xác định chữ số và giá trị chữ số theo hàng
+### Bài 5. (4 điểm) Nội dung giảng — Đếm chữ số, tính tổng chữ số
 
 Chuẩn bị nội dung để giảng dạng bài này cho lớp.
 
@@ -333,34 +332,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 15 120 · b) số lẻ · c) 54 930 · d) 71 279
+**Đáp số:** a) 5 · b) 0 · c) 2 · d) 9 · e) 40 000 + 9 000 + 200 · f) 15 · g) 49 201
+**Hướng giải:** Đếm hàng từ phải sang trái. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị hàng nó đứng. Hàng nào khuyết thì viết chữ số 0.
+**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** với **giá trị** của chữ số.
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Đánh dấu hàng đơn vị trước, rồi đi ngược về bên trái.
+
+### Bài A.2
+**Đáp số:** a) 6 650 · b) 43 134 · c) 94 072 · d) 94 540 · e) 96 299
 **Hướng giải:** Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
 **Nhãn tư duy:** TD1. Điểm chốt: Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
 **Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 
-### Bài A.2
-**Đáp số:** a) chữ số 1, giá trị 1 000 · b) chữ số 8, giá trị 800 · c) chữ số 7, giá trị 70 · d) chữ số 4, giá trị 4
-**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
-**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
-**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
-
 ### Bài A.3
-**Đáp số:** a) < · b) > · c) > · d) > · e) < · f) < · g) <
+**Đáp số:** a) > · b) > · c) > · d) > · e) >
 **Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
 
 ### Bài A.4
-**Đáp số:** a) 5 chữ số, tổng 20 · b) 5 chữ số, tổng 11 · c) 5 chữ số, tổng 22 · d) 5 chữ số, tổng 30 · e) 5 chữ số, tổng 16 · f) 5 chữ số, tổng 13
+**Đáp số:** a) chữ số 6, giá trị 6 000 · b) chữ số 8, giá trị 800 · c) chữ số 1, giá trị 10 · d) chữ số 0, giá trị 0
+**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
+**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
+
+### Bài A.5
+**Đáp số:** a) 5 chữ số, tổng 19 · b) 5 chữ số, tổng 16 · c) 5 chữ số, tổng 24 · d) 5 chữ số, tổng 15 · e) 5 chữ số, tổng 25
 **Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
 **Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 **Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
-
-### Bài A.5
-**Đáp số:** a) 49, 55, 61 · b) 66, 76, 86 · c) 45, 47, 49 · d) 47, 54, 61 · e) 28, 33, 38 · f) 24, 27, 30
-**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
-**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
@@ -369,7 +368,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Viết thẳng phép tính, bỏ câu lời giải. Phòng: Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa.
 
 ### Bài B.2
-**Đáp số:** a) “Nhận biết chẵn – lẻ và số liền kề là:” · b) “So sánh hai số tự nhiên là:” · c) “Phép chia có dư là:” · d) “Lập số từ bộ chữ số là:” · e) “Đếm chữ số, tính tổng chữ số là:”
+**Đáp số:** a) “Nhận biết chẵn – lẻ và số liền kề là:” · b) “Thêm, bớt chữ số là:” · c) “Đọc, viết, cấu tạo số là:” · d) “Đếm số thoả điều kiện về chữ số là:” · e) “Phép chia có dư là:”
 **Hướng giải:** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 **Nhãn tư duy:** TD1. Điểm chốt: Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 **Lỗi thường gặp:** Viết câu lời giải chung chung cho mọi bài. Phòng: Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải.
@@ -381,7 +380,7 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Ghi diện tích bằng cm thay vì cm². Phòng: Trước khi viết đáp số, hỏi: đại lượng này đo bằng gì?
 
 ### Bài B.4
-**Đáp số:** a) Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị. · b) Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · c) Thử lại bằng công thức số bị chia = số chia × thương + số dư. · d) Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại. · e) Viết rời từng chữ số ra rồi mới cộng. · f) Tính thử vài trường hợp nhỏ để thấy quy luật nhân 9.
+**Đáp số:** a) Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị. · b) Viết cả hai số ra giấy rồi mới so sánh. · c) Đánh dấu hàng đơn vị trước, rồi đi ngược về bên trái. · d) Kẻ bảng theo chữ số hàng trăm tăng dần. · e) Thử lại bằng công thức số bị chia = số chia × thương + số dư. · f) Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
 **Hướng giải:** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 **Nhãn tư duy:** TD2. Điểm chốt: Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 **Lỗi thường gặp:** Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. Phòng: Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng.
@@ -405,22 +404,22 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 
 ### Bài C.3
-**Đáp số:** a) tầng 2 · b) Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại. · c) toàn bộ số điểm của ý sai · d) Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại. · e) Viết **có thứ tự** thì mới chắc chắn đủ và không lặp.
-**Hướng giải:** Chọn chữ số hàng trăm trước, rồi hàng chục, rồi hàng đơn vị; mỗi chữ số dùng đúng một lần. Viết theo nhóm cùng chữ số hàng trăm để không sót và không trùng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Viết **có thứ tự** thì mới chắc chắn đủ và không lặp.
-**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng. Phòng: Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại.
+**Đáp số:** a) tầng 2 · b) Kẻ bảng theo chữ số hàng trăm tăng dần. · c) toàn bộ số điểm của ý sai · d) Kẻ bảng theo chữ số hàng trăm tăng dần. · e) Liệt kê **có thứ tự** thì mới không sót và không trùng.
+**Hướng giải:** Liệt kê có hệ thống: cố định chữ số hàng trăm rồi tìm cặp chữ số còn lại. Nhớ hai ràng buộc: chữ số hàng trăm khác 0, và ba chữ số khác nhau.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Liệt kê **có thứ tự** thì mới không sót và không trùng.
+**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa lặp; hoặc quên điều kiện ba chữ số khác nhau. Phòng: Kẻ bảng theo chữ số hàng trăm tăng dần.
 
 ### Bài C.4
-**Đáp số:** a) tầng 2 · b) Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. · c) toàn bộ số điểm của ý sai · d) Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. · e) Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
-**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
-**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
-**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
+**Đáp số:** a) tầng 2 · b) Viết rời từng chữ số ra rồi mới cộng. · c) toàn bộ số điểm của ý sai · d) Viết rời từng chữ số ra rồi mới cộng. · e) Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
+**Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
+**Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
+**Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
 
 ### Bài C.5
-**Đáp số:** a) tầng 1 · b) Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · c) toàn bộ số điểm của ý sai · d) Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái. · e) Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
-**Hướng giải:** So sánh hai số tự nhiên: số nào nhiều chữ số hơn thì lớn hơn; nếu bằng số chữ số thì so từng cặp chữ số cùng hàng, kể từ trái sang phải, gặp cặp khác nhau đầu tiên là kết luận được ngay.
-**Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
-**Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
+**Đáp số:** a) tầng 2 · b) Tính thử vài trường hợp nhỏ để thấy quy luật nhân 9. · c) toàn bộ số điểm của ý sai · d) Tính thử vài trường hợp nhỏ để thấy quy luật nhân 9. · e) Hiệu hai số luôn là **bội của 9**.
+**Hướng giải:** Số có hai chữ số viết được thành chục nhân 10 cộng đơn vị. Khi đổi chỗ hai chữ số, phần chục và phần đơn vị hoán đổi vai trò, nên hiệu hai số luôn bằng **9 lần hiệu hai chữ số**.
+**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hiệu hai số luôn là **bội của 9**.
+**Lỗi thường gặp:** Coi hiệu hai số bằng hiệu hai chữ số. Phòng: Tính thử vài trường hợp nhỏ để thấy quy luật nhân 9.
 
 ### Bài D.1
 **Đáp số:** a) Chia hết, đếm chữ số và số thoả điều kiện · b) 6 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
@@ -430,31 +429,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
+**Đáp số:** a) “Viết thêm chữ số … vào bên trái / bên phải” · b) Viết cả hai số theo cấu tạo rồi lấy hiệu · c) Nhầm “thêm bên trái” thành “thêm bên phải”. · d) Cấu tạo thập phân của số tự nhiên · e) Thêm một chữ số vào bên phải thì số mới bằng số cũ nhân 10 cộng chữ số ấy.
+**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Bên phải thì **nhân 10**, bên trái thì **cộng thêm**.
+**Lỗi thường gặp:** Nhầm “thêm bên trái” thành “thêm bên phải”. Phòng: Viết cả hai số ra giấy rồi mới so sánh.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.3
+**Đáp số:** a) “Số có ba chữ số khác nhau, tổng các chữ số bằng …” · b) Cố định hàng cao nhất rồi liệt kê phần còn lại · c) Viết lộn xộn nên vừa sót vừa lặp; hoặc quên điều kiện ba chữ số khác nhau. · d) Cấu tạo số, tổng chữ số, quy tắc đếm · e) Số lớn nhất luôn xếp chữ số lớn ở hàng cao nhất, số bé nhất thì ngược lại.
+**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Liệt kê **có thứ tự** thì mới không sót và không trùng.
+**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa lặp; hoặc quên điều kiện ba chữ số khác nhau. Phòng: Kẻ bảng theo chữ số hàng trăm tăng dần.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.4
 **Đáp số:** a) Dấu … giữa hai số, yêu cầu điền <, >, = · b) Đếm chữ số → so từng hàng từ trái sang phải · c) So từ hàng đơn vị (phải sang trái) nên kết luận sai. · d) Thứ tự trong tập số tự nhiên · e) Số nhiều chữ số hơn thì lớn hơn — không cần đọc hết số.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Đếm số chữ số **trước**, chỉ khi bằng nhau mới so từng hàng.
 **Lỗi thường gặp:** So từ hàng đơn vị (phải sang trái) nên kết luận sai. Phòng: Gạch chân cặp chữ số khác nhau đầu tiên tính từ bên trái.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài D.3
-**Đáp số:** a) Cho ba chữ số, yêu cầu lập số · b) Cố định hàng trăm rồi hoán vị hai hàng còn lại · c) Viết lộn xộn nên vừa sót vừa trùng. · d) Cấu tạo số có ba chữ số · e) Ba chữ số khác 0 luôn lập được đúng 6 số.
-**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Viết **có thứ tự** thì mới chắc chắn đủ và không lặp.
-**Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng. Phòng: Cố định chữ số hàng trăm rồi mới đổi chỗ hai chữ số còn lại.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài D.4
-**Đáp số:** a) “Viết theo thứ tự ngược lại”, “đổi chỗ hai chữ số” · b) Viết cả hai số theo cấu tạo rồi lấy hiệu · c) Coi hiệu hai số bằng hiệu hai chữ số. · d) Cấu tạo số có hai chữ số · e) Hiệu = 9 × (chữ số hàng chục − chữ số hàng đơn vị).
-**Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD3, TD4. Điểm chốt: Hiệu hai số luôn là **bội của 9**.
-**Lỗi thường gặp:** Coi hiệu hai số bằng hiệu hai chữ số. Phòng: Tính thử vài trường hợp nhỏ để thấy quy luật nhân 9.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
 ### Bài D.5
-**Đáp số:** a) Bài toán đánh số trang · b) Chia nhóm theo độ dài số rồi nhân, cộng · c) Lấy số trang nhân với 2 hoặc 3 cho toàn bộ. · d) Đếm số hạng, cấu tạo số · e) Sách 99 trang dùng đúng 189 chữ số — nhớ mốc này.
+**Đáp số:** a) Câu hỏi “có chia hết cho … không” · b) Chọn dấu hiệu theo số chia rồi kiểm tra · c) Dùng dấu hiệu của 3 để kết luận cho 2. · d) Dấu hiệu chia hết cho 2, 3, 5, 9 · e) Số chia hết cho 9 thì chắc chắn chia hết cho 3; điều ngược lại không đúng.
 **Hướng giải:** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Nhóm cuối cùng **không đầy đủ** — phải đếm đúng số trang còn lại.
-**Lỗi thường gặp:** Lấy số trang nhân với 2 hoặc 3 cho toàn bộ. Phòng: Kẻ bảng: khoảng trang – số trang – số chữ số.
+**Nhãn tư duy:** TD1, TD5. Điểm chốt: 2 và 5 nhìn **đuôi**; 3 và 9 nhìn **tổng**.
+**Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2. Phòng: Ghi tổng các chữ số ra bên cạnh trước khi kết luận.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
@@ -465,31 +464,31 @@ f) Mẹo nhanh em sẽ tặng lớp?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.2
-**Đáp số:** a) “Hôm nay nhóm mình nói về Nhận biết chẵn – lẻ và số liền kề.” · b) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · c) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · d) Số liền sau của 32 116 là số nào? → 32 117 · e) Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. · f) Che hết các chữ số, chỉ để lộ chữ số cuối.
+**Đáp số:** a) “Hôm nay nhóm mình nói về Nhận biết chẵn – lẻ và số liền kề.” · b) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · c) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · d) Số liền sau của 1 288 là số nào? → 1 289 · e) Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. · f) Che hết các chữ số, chỉ để lộ chữ số cuối.
 **Hướng giải:** BẪY — Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn.. Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
 **Nhãn tư duy:** TD1. Điểm chốt: Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
 **Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.3
+**Đáp số:** a) “Hôm nay nhóm mình nói về Đọc, viết, cấu tạo số.” · b) Câu hỏi về hàng, về tổng chữ số, về số liền kề · c) Cấu tạo thập phân của số tự nhiên · d) Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? → 5 chữ số, tổng 15 · e) Đếm hàng từ trái sang phải nên lệch hàng. · f) Số chữ số đứng sau một chữ số chính là số chữ số 0 khi ghi giá trị của nó.
+**Hướng giải:** Đếm hàng từ phải sang trái. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị hàng nó đứng. Hàng nào khuyết thì viết chữ số 0.
+**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** với **giá trị** của chữ số.
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Đánh dấu hàng đơn vị trước, rồi đi ngược về bên trái.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài E.4
 **Đáp số:** a) “Hôm nay nhóm mình nói về Phép chia có dư.” · b) Đề yêu cầu ghi cả thương và số dư · c) Quan hệ giữa số bị chia, số chia, thương và số dư · d) Tìm thương và số dư của 1 234 : 7 → 176 dư 2 · e) Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. · f) Ước lượng thương bằng cách làm tròn số chia trước khi chia.
 **Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
 **Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
 **Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài E.4
+### Bài E.5
 **Đáp số:** a) “Hôm nay nhóm mình nói về Đếm chữ số, tính tổng chữ số.” · b) Yêu cầu “có mấy chữ số”, “tổng các chữ số” · c) Cấu tạo số, tổng chữ số · d) Số 40 506 có mấy chữ số và tổng các chữ số bằng bao nhiêu? → 5 chữ số, tổng 15 · e) Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). · f) Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh.
 **Hướng giải:** Đếm số chữ số bằng cách tách số theo lớp (mỗi lớp 3 chữ số). Tổng các chữ số là cộng tất cả các chữ số lại, không phân biệt hàng.
 **Nhãn tư duy:** TD1. Điểm chốt: Tổng các chữ số **không** phụ thuộc thứ tự các chữ số.
 **Lỗi thường gặp:** Cộng cả giá trị hàng (ví dụ cộng 300 thay vì cộng 3). Phòng: Viết rời từng chữ số ra rồi mới cộng.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài E.5
-**Đáp số:** a) “Hôm nay nhóm mình nói về Xác định chữ số và giá trị chữ số theo hàng.” · b) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · c) Cấu tạo thập phân của số tự nhiên · d) Chữ số hàng chục của số 24 754 có giá trị bao nhiêu? → 50 · e) Đếm hàng từ trái sang phải nên lệch hàng. · f) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị.
-**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
-**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
-**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ---

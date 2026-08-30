@@ -52,26 +52,52 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 | # | Dùng cho dạng bài | Công thức hoặc quy tắc |
 |---:|---|---|
-| 1 | Bài toán cân, chia hết | Phép chia hết và chia có dư; đơn vị khối lượng |
-| 2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng |
-| 3 | Tính thời gian trong ngày | Quan hệ giờ – phút |
-| 4 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng |
-| 5 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng |
-| 6 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây |
-| 7 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 |
+| 1 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng |
+| 2 | Thời gian biểu, cộng thời gian | Quan hệ giờ – phút; quan hệ số khoảng – số điểm |
+| 3 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng |
+| 4 | Bài toán đại lượng nhiều bước | Nhân, trừ; đơn vị khối lượng, độ dài, dung tích |
+| 5 | Đổi và so sánh đơn vị dung tích | Quan hệ lít – mi-li-lít |
+| 6 | Bài toán cân, chia hết | Phép chia hết và chia có dư; đơn vị khối lượng |
+| 7 | Lịch, tháng, năm nhuận | Số ngày các tháng, năm nhuận, chu kì 7 ngày |
+| 8 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây |
+| 9 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 |
+| 10 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng |
+| 11 | Bài toán tiền tệ hai bước | Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam |
+| 12 | Tính thời gian trong ngày | Quan hệ giờ – phút |
 
 ---
 
 ## 3. BẢNG DẠNG BÀI VÀ DẤU HIỆU NHẬN BIẾT
 
+Trước khi tra bảng, đi qua cây quyết định đọc vị của nhóm chuyên đề. Bản đầy đủ kèm bộ đề luyện đọc vị ở `10-so-do-doc-vi/so-do-E-L3.md`.
+
+```
+ĐỌC ĐỀ → Đề có đơn vị đo — mét, ki-lô-gam, lít, giờ, đồng?
+1. Hai vế của đề dùng hai đơn vị khác nhau?
+     ĐÚNG → Đổi về cùng đơn vị trước, rồi mới tính hoặc so sánh
+2. Đơn vị có mũ hai (m², cm², ha) hay mũ ba (m³, cm³, lít)?
+     ĐÚNG → Nhớ bậc nhảy: độ dài 10, diện tích 100, thể tích 1 000
+3. Đề nói về giờ, phút, giây, hoặc ngày tháng?
+     ĐÚNG → Cơ số 60 và chu kì 7: đổi hết về phút rồi tính, cuối cùng đổi lại
+4. Đề có tiền, giá, chiết khấu, thuế?
+     ĐÚNG → Tính tiền hàng trước; mỗi lần phần trăm phải xác định lại mốc 100%
+5. Đề có vận tốc kèm đơn vị km/giờ hay m/giây?
+     ĐÚNG → s = v × t; kiểm tra ba đơn vị có khớp nhau không
+```
+
 | Dạng bài | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất |
 |---|---|---|---|
-| Bài toán cân, chia hết | Cân đĩa với một loại quả cân | Chia và xét số dư | Đổi cả hai về cùng đơn vị rồi chia. |
-| Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. |
-| Tính thời gian trong ngày | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. |
-| Bài toán đại lượng hai bước | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. |
 | Đổi đơn vị đo | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). |
+| Thời gian biểu, cộng thời gian | Có nhiều tiết học và thời gian nghỉ giữa các tiết | Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại | Bài này chính là bài trồng cây đội lốt thời gian. |
+| Bài toán đại lượng hai bước | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. |
+| Bài toán đại lượng nhiều bước | Cho số nhóm, giá trị mỗi nhóm và một thao tác thêm bớt | Tính đại lượng trung gian rồi trả lời | Trừ trước rồi nhân thường ít phép tính hơn nhân trước rồi trừ. |
+| Đổi và so sánh đơn vị dung tích | Có chữ l, ml trong đề | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. |
+| Bài toán cân, chia hết | Cân đĩa với một loại quả cân | Chia và xét số dư | Đổi cả hai về cùng đơn vị rồi chia. |
+| Lịch, tháng, năm nhuận | Đề nhắc tới ngày, tháng, thứ trong tuần | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. |
 | Đổi và tính toán với đơn vị thời gian | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. |
+| Số đo có nhiều đơn vị | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. |
+| Bài toán tiền tệ hai bước | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” | Tính tiền hàng rồi trừ; đổi tiền thì chia | Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. |
+| Tính thời gian trong ngày | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. |
 
 ---
 
@@ -90,22 +116,28 @@ Học thuộc theo cặp **dạng bài – công thức**, không học rời.
 
 Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì đánh ✘ và làm lại phần tương ứng.
 
-- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán cân, chia hết” chứ?
-- [ ] **2.** Em nhớ công thức: Phép chia hết và chia có dư; đơn vị khối lượng?
-- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Số đo có nhiều đơn vị” chứ?
-- [ ] **4.** Em nhớ công thức: Bảng đơn vị khối lượng?
-- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Tính thời gian trong ngày” chứ?
-- [ ] **6.** Em nhớ công thức: Quan hệ giờ – phút?
-- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán đại lượng hai bước” chứ?
-- [ ] **8.** Em nhớ công thức: Nhân, trừ; đơn vị khối lượng?
-- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị đo” chứ?
-- [ ] **10.** Em nhớ công thức: Bảng đơn vị đo độ dài, khối lượng?
-- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Đổi và tính toán với đơn vị thời gian” chứ?
-- [ ] **12.** Em nhớ công thức: Quan hệ giờ – phút – giây?
-- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị đo” chứ?
-- [ ] **14.** Em nhớ công thức: Bảng đơn vị đo lớp 3?
+- [ ] **1.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị đo” chứ?
+- [ ] **2.** Em nhớ công thức: Bảng đơn vị đo độ dài, khối lượng?
+- [ ] **3.** Em nêu được dấu hiệu nhận biết của dạng “Thời gian biểu, cộng thời gian” chứ?
+- [ ] **4.** Em nhớ công thức: Quan hệ giờ – phút; quan hệ số khoảng – số điểm?
+- [ ] **5.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán đại lượng hai bước” chứ?
+- [ ] **6.** Em nhớ công thức: Nhân, trừ; đơn vị khối lượng?
+- [ ] **7.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán đại lượng nhiều bước” chứ?
+- [ ] **8.** Em nhớ công thức: Nhân, trừ; đơn vị khối lượng, độ dài, dung tích?
+- [ ] **9.** Em nêu được dấu hiệu nhận biết của dạng “Đổi và so sánh đơn vị dung tích” chứ?
+- [ ] **10.** Em nhớ công thức: Quan hệ lít – mi-li-lít?
+- [ ] **11.** Em nêu được dấu hiệu nhận biết của dạng “Bài toán cân, chia hết” chứ?
+- [ ] **12.** Em nhớ công thức: Phép chia hết và chia có dư; đơn vị khối lượng?
+- [ ] **13.** Em nêu được dấu hiệu nhận biết của dạng “Lịch, tháng, năm nhuận” chứ?
+- [ ] **14.** Em nhớ công thức: Số ngày các tháng, năm nhuận, chu kì 7 ngày?
+- [ ] **15.** Em nêu được dấu hiệu nhận biết của dạng “Đổi và tính toán với đơn vị thời gian” chứ?
+- [ ] **16.** Em nhớ công thức: Quan hệ giờ – phút – giây?
+- [ ] **17.** Em nêu được dấu hiệu nhận biết của dạng “Đổi đơn vị đo” chứ?
+- [ ] **18.** Em nhớ công thức: Bảng đơn vị đo lớp 3?
+- [ ] **19.** Em nêu được dấu hiệu nhận biết của dạng “Số đo có nhiều đơn vị” chứ?
+- [ ] **20.** Em nhớ công thức: Bảng đơn vị khối lượng?
 
-**Chuẩn đạt:** ✔ từ 12/14 câu trở lên.
+**Chuẩn đạt:** ✔ từ 18/20 câu trở lên.
 
 ---
 
@@ -115,13 +147,18 @@ Trả lời được ngay trong 10 giây thì đánh ✔. Phải nghĩ lâu thì
 
 | # | Lỗi thường gặp | Cách phòng |
 |---:|---|---|
-| 1 | Làm tròn lên rồi coi như cân được. | Kiểm tra phép chia có dư hay không trước khi kết luận. |
-| 2 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
-| 3 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
-| 4 | Trừ số gói cho số gam, hai đại lượng khác loại. | Ghi đơn vị sau mỗi số để không trừ nhầm. |
-| 5 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
-| 6 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
-| 7 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
+| 1 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
+| 2 | Nhân số lần nghỉ bằng số tiết nên thừa một lần nghỉ. | Vẽ một hàng: tiết – nghỉ – tiết – nghỉ – tiết, rồi đếm. |
+| 3 | Trừ số gói cho số gam, hai đại lượng khác loại. | Ghi đơn vị sau mỗi số để không trừ nhầm. |
+| 4 | Nhân số bao với giá tiền một ki-lô-gam. | Ghi đơn vị sau mỗi số, hai số khác đơn vị thì không được cộng trừ. |
+| 5 | So thẳng hai con số mà bỏ qua đơn vị. | Viết lại cả hai vế theo mi-li-lít rồi mới so. |
+| 6 | Làm tròn lên rồi coi như cân được. | Kiểm tra phép chia có dư hay không trước khi kết luận. |
+| 7 | Đếm tay từng ngày nên vừa lâu vừa sai. | Đếm số ngày cách nhau rồi chia 7 lấy dư. |
+| 8 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
+| 9 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
+| 10 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
+| 11 | Lấy tiền đưa trừ ngay giá một quyển vở. | Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. |
+| 12 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
 
 ---
 

@@ -30,199 +30,585 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần I**
 
-- **Bài I.1** — a) 15 cách · b) 24 cách · c) 35 cách · d) 35 cách · e) 15 cách
-- **Bài I.2** — a) 79 · b) 123 · c) 134 · d) 387 · e) 431 · f) 574
-- **Bài I.3** — a) 120 cách · b) 12 bạn · c) 14 cách · d) 11 bạn
-- **Bài I.4** — a) ô (Quân; Mĩ thuật) · b) toàn bộ hàng Quân và toàn bộ cột Mĩ thuật · c) ô (Trang; Toán) · d) Tiếng Anh · e) Toán · f) phương pháp lập bảng và loại trừ
-- **Bài I.5** — a) 58 295 220 · b) 15 818 · c) 99 775 · d) 30 030 471 · e) 57 362 · f) 77 941 906
+- **Bài I.1** — a) 30 cách · b) 30 cách · c) 48 cách · d) 24 cách
+- **Bài I.2** — a) 880 732 · b) 33 838 · c) 680 912 908 · d) 1 427 579 · e) 723 183 · f) 1 009 358 · g) 379 897 · h) 256 633 192
+- **Bài I.3** — a) 15 cách · b) 44 cách · c) 15 bạn · d) 30 cách
+- **Bài I.4** — a) ô (Tuấn; Tiếng Anh) · b) toàn bộ hàng Tuấn và toàn bộ cột Tiếng Anh · c) ô (Minh; Toán) · d) Âm nhạc · e) Toán · f) phương pháp lập bảng và loại trừ
+- **Bài I.5** — a) 2 giờ 52 phút · b) 3 giờ 18 phút · c) 470 · d) 1 giờ 50 phút · e) 10 giờ 32 phút · f) 6 giờ 17 phút
 
 **Phần II**
 
-- **Bài II.1** — a) 200 · b) 48 · c) 25% · d) 40 · e) 10 · f) 50% · g) 15%
-- **Bài II.2** — a) xe ô tô: 28 chiếc, xe đạp: 15 chiếc · b) xe ba bánh: 21 chiếc, xe đạp: 5 chiếc · c) xe đạp: 16 chiếc, xe ô tô: 29 chiếc · d) xe đạp: 15 chiếc, xe ba bánh: 30 chiếc
-- **Bài II.3** — a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Khánh chính là người làm vỡ lọ hoa · f) Khánh
-- **Bài II.4** — a) 12 · b) 32 · c) 36 · d) 48 · e) 312
-- **Bài II.5** — a) 2 tuần 5 ngày · b) XXI · c) có · d) 31 · e) 30 · f) 5 tuần 0 ngày
+- **Bài II.1** — a) mỗi bạn 4 cái, thừa 5 cái · b) 5 cái · c) 2 cái · d) 5 cái · e) mỗi bạn 5 cái, thừa 3 cái · f) phải là số chia hết cho 7
+- **Bài II.2** — a) không, vì hai câu phủ định nhau · b) không, vì chúng phủ định nhau · c) đúng một bạn · d) nói dối · e) Ngọc chính là người làm vỡ lọ hoa · f) Ngọc
+- **Bài II.3** — a) 25 · b) 29 · c) 27 · d) 13 · e) 10 · f) 26 · g) 15
+- **Bài II.4** — a) xe đạp: 23 chiếc, xe ô tô: 19 chiếc · b) xe ô tô: 4 chiếc, xe ba bánh: 6 chiếc · c) xe đạp: 27 chiếc, xe ba bánh: 3 chiếc · d) xe đạp: 5 chiếc, xe ô tô: 9 chiếc · e) xe ba bánh: 24 chiếc, xe ô tô: 29 chiếc
+- **Bài II.5** — a) 200 · b) 75% · c) 60 · d) 300
 
 **Phần III**
 
-- **Bài III.1** — a) 3 lần · b) 3 phần · c) vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · d) 4 · e) 1 lần · f) 2 lần
-- **Bài III.2** — a) 28 · b) 7 · c) 10 · d) 5 · e) 15
-- **Bài III.3** — a) 16 viên · b) 7 viên · c) 13 viên · d) 13 viên · e) 3 viên · f) 7 viên
-- **Bài III.4** — a) 28 trận · b) 28 đường thẳng · c) 6 cái · d) 15 cái · e) 91 đường thẳng
-- **Bài III.5** — a) 90 cây · b) 34 cây · c) 105 cây · d) 19 cây · e) 34 cây · f) 60 cây
+- **Bài III.1** — a) trang trại: 140 kg, xưởng: 490 kg · b) kho B: 456 kg, kho A: 570 kg · c) hợp tác xã: 132 kg, trang trại: 176 kg · d) kho B: 384 kg, hợp tác xã: 672 kg · e) hợp tác xã: 404 kg, kho B: 505 kg · f) cửa hàng: 60 kg, thư viện: 240 kg
+- **Bài III.2** — a) 3 lần · b) 3 phần · c) vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · d) 9 · e) 1 lần · f) 2 lần
+- **Bài III.3** — a) 15 cái · b) 28 đường thẳng · c) 15 trận · d) 171 đường thẳng · e) 171 cái · f) 136 trận · g) 15 đường thẳng
+- **Bài III.4** — a) 31 · b) 16 · c) 6 · d) 5 · e) 40 · f) 9, vì nhóm thích cả hai môn bị đếm hai lần
+- **Bài III.5** — a) 5 viên · b) 10 viên · c) 13 viên · d) 9 viên · e) 5 viên
 
 **Phần IV**
 
-- **Bài IV.1** — a) 49 · b) 14 · c) 32 · d) 29
-- **Bài IV.2** — a) 0 · b) 0 · c) 0 · d) 0 · e) 0
-- **Bài IV.3** — a) 76 cm² · b) 115 cm² · c) 160 cm² · d) 72 cm² · e) 275 cm²
-- **Bài IV.4** — a) 24 · b) 18 · c) 6 · d) 6 · e) 865 và 256 · f) 1 121
-- **Bài IV.5** — a) chẵn · b) 666 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) có
+- **Bài IV.1** — a) 18 · b) 10 · c) 6 · d) 0 · e) 974 và 407 · f) 1 381
+- **Bài IV.2** — a) 3 lần · b) 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · c) 3 phần · d) 9 · e) Ngọc · f) 2 lần
+- **Bài IV.3** — a) x = 77 · b) x = 33 · c) x = 25 · d) x = 58 · e) x = 20 · f) x = 7
+- **Bài IV.4** — a) lẻ · b) 21 · c) giảm đi 2 lần số bé · d) không thay đổi · e) tính chẵn lẻ của tổng các số trên bảng · f) không
+- **Bài IV.5** — a) 10 · b) 37 · c) 2 · d) 19
 
 **Phần V**
 
-- **Bài V.1** — a) không còn đúng (10 bạn có thể chia đều 2 bạn mỗi tháng) · b) không còn đúng (24 bạn có thể chia đều 3 bạn mỗi tháng) · c) không còn đúng (44 bạn có thể chia đều 4 bạn mỗi tháng) · d) không còn đúng (27 bạn có thể chia đều 3 bạn mỗi tháng) · e) không còn đúng (32 bạn có thể chia đều 4 bạn mỗi tháng)
-- **Bài V.2** — a) 4 · b) 9 · c) 8 · d) 2
-- **Bài V.3** — a) 2 · b) 2 · c) 2 · d) 4 · e) 4 · f) 499
-- **Bài V.4** — a) 16 · b) 8 · c) có · d) 1 ô đen và 1 ô trắng · e) không, vì số ô đen và ô trắng không còn bằng nhau · f) hiệu giữa số ô đen và số ô trắng chưa bị phủ
-- **Bài V.5** — a) 1, 5, 13, 25 · b) 61 · c) 181 · d) 36 · e) có, khoảng cách 4 · f) 44
+- **Bài V.1** — a) không còn đúng (9 bạn có thể chia đều 3 bạn mỗi tháng) · b) không còn đúng (12 bạn có thể chia đều 1 bạn mỗi tháng) · c) không còn đúng (3 bạn có thể chia đều 1 bạn mỗi tháng) · d) không còn đúng (18 bạn có thể chia đều 2 bạn mỗi tháng) · e) không còn đúng (32 bạn có thể chia đều 4 bạn mỗi tháng)
+- **Bài V.2** — a) 45 · b) 56 · c) 9 · d) 7 · e) 6 · f) 45 · g) 5 ngày
+- **Bài V.3** — a) 144 cm² · b) 36 cm² · c) 72 cm² · d) 1 phần 4 · e) 36 cm² · f) diện tích 288 cm², chu vi 72 cm
+- **Bài V.4** — a) 15 · b) không thay đổi · c) 15 · d) giảm đi 2 lần số bé — luôn là một số chẵn · e) không thay đổi · f) lẻ · g) không
+- **Bài V.5** — a) 25 · b) 13 · c) không, vì số ô là số lẻ · d) 1 ô đen và 1 ô trắng · e) không, vì số ô còn lại là số lẻ · f) hiệu giữa số ô đen và số ô trắng chưa bị phủ
 
 ---
 
 ## 2. LỜI GIẢI ĐẦY ĐỦ
 
-Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
+Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
 ### Bài I.1 — Quy tắc nhân trong phép đếm
 
-Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Các bước giải**
+
+Xét ý a: Có 6 chiếc áo và 5 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+
+Đọc vị: đây là dạng **Quy tắc nhân**; dấu hiệu là Chọn một phần tử từ mỗi nhóm để ghép thành một bộ.
+
+Kiến thức phải dùng: Quy tắc nhân, quy tắc cộng trong phép đếm.
+
+Cách làm: Nhân số cách của các bước liên tiếp.
+
+Lối tắt: Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân.
+
+Kết quả: **30 cách**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
 
 *Điểm chốt:* Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
 
-### Bài I.2 — Tìm số hạng thứ n của dãy cách đều
+### Bài I.2 — Ôn tập bốn phép tính với số tự nhiên
 
-Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Các bước giải**
 
-*Điểm chốt:* Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
+Xét ý a: 410 421 112 : 466
+
+Đọc vị: đây là dạng **Bốn phép tính với số tự nhiên**; dấu hiệu là Yêu cầu “đặt tính rồi tính”.
+
+Kiến thức phải dùng: Kĩ thuật đặt tính cộng, trừ, nhân, chia.
+
+Cách làm: Đặt tính thẳng cột, tính từ hàng đơn vị.
+
+Lối tắt: Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn.
+
+Kết quả: **880 732**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Cộng, trừ thì viết thẳng hàng đơn vị. Nhân thì viết các tích riêng lùi đúng cột rồi cộng. Chia thì mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0.
+
+*Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương.
+
+*Muốn khó hơn:* Thêm phép tính có dấu ngoặc để ôn thứ tự thực hiện.
+
+*Phải chắc trước khi làm bài này:* Bảng nhân chia và kĩ thuật đặt tính.
 
 ### Bài I.3 — Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
 
-Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
+**Các bước giải**
+
+Xét ý a: Trên bàn có 8 quyển sách Toán và 7 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
+
+Đọc vị: đây là dạng **Đếm bằng quy tắc cộng, nhân, bù trừ**; dấu hiệu là Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một”.
+
+Kiến thức phải dùng: Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ.
+
+Cách làm: Vẽ hai vòng tròn giao nhau, đếm theo miền.
+
+Lối tắt: Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước.
+
+Kết quả: **15 cách**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
 
 *Điểm chốt:* Có phần chung thì phải **trừ đi một lần** phần chung.
 
 ### Bài I.4 — Suy luận bằng phương pháp lập bảng và loại trừ
 
-Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
+**Các bước giải**
+
+Xét ý a: Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Tuấn thích Tiếng Anh” cho phép đánh dấu ✔ vào ô nào?
+
+Đọc vị: đây là dạng **Suy luận loại trừ có bảng**; dấu hiệu là Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định.
+
+Kiến thức phải dùng: Phương pháp lập bảng, loại trừ.
+
+Cách làm: Kẻ bảng, đánh dấu, lan toả theo hàng và cột.
+
+Lối tắt: Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định.
+
+Kết quả: **ô (Tuấn; Tiếng Anh)**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
 
 *Điểm chốt:* Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
 
-### Bài I.5 — Đặt tính rồi tính (nhân, chia)
+### Bài I.5 — Đơn vị đo thời gian: giờ và phút
 
-Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
+**Các bước giải**
 
-*Điểm chốt:* Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
+Xét ý a: 1 giờ 39 phút + 73 phút = … (viết dạng giờ và phút)
 
-### Bài II.1 — Ba dạng cơ bản của tỉ số phần trăm
+Đọc vị: đây là dạng **Đổi và tính toán với đơn vị thời gian**; dấu hiệu là Số đo có chữ “giờ”, “phút”, “giây”.
 
-Dạng 1 — tìm tỉ số phần trăm của a và b: lấy a chia b rồi nhân 100 và viết kí hiệu %. Dạng 2 — tìm p% của b: lấy b chia 100 rồi nhân p. Dạng 3 — biết p% của một số là a, tìm số đó: lấy a chia p rồi nhân 100.
+Kiến thức phải dùng: Quan hệ giờ – phút – giây.
 
-*Điểm chốt:* Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
+Cách làm: Quy về phút rồi tính, cuối cùng đổi lại giờ và phút.
 
-### Bài II.2 — Giả thiết tạm với hai loại đối tượng
+Lối tắt: Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
 
-Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
+Kết quả: **2 giờ 52 phút**.
 
-*Điểm chốt:* Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 
-### Bài II.3 — Bài toán nói thật – nói dối
+*Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 
-Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
+### Bài II.1 — Chia kẹo — chia hết và chia có dư
+
+**Các bước giải**
+
+Bước 1 — chia: 33 : 7 = 4 dư 5.
+
+Mỗi bạn được 4 cái, còn thừa 5 cái.
+
+Muốn chia hết thì bớt đúng phần dư: bớt 5 cái.
+
+Hoặc thêm cho đủ một suất nữa: thêm 7 − 5 = 2 (cái).
+
+Thử lại: 7 × 4 + 5 = 33 ✓
+
+Đáp số: **mỗi bạn 4 cái, thừa 5 cái**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Trong phép chia có dư, **số dư luôn bé hơn số chia**. Muốn chia hết thì hoặc bớt đi đúng phần dư, hoặc thêm vào phần còn thiếu để đủ một suất — phần còn thiếu bằng số chia trừ số dư.
+
+*Điểm chốt:* Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư.
+
+*Muốn khó hơn:* Chia sao cho mỗi bạn được số kẹo khác nhau và chênh nhau 1 cái.
+
+*Phải chắc trước khi làm bài này:* Phép chia có dư trong bảng và ngoài bảng.
+
+### Bài II.2 — Bài toán nói thật – nói dối
+
+**Các bước giải**
+
+Xét ý a: Câu nói của Minh và câu nói của Thảo có thể cùng đúng được không? Vì sao?
+
+Đọc vị: đây là dạng **Suy luận nói thật – nói dối**; dấu hiệu là “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau.
+
+Kiến thức phải dùng: Logic mệnh đề sơ cấp, phương pháp loại trừ.
+
+Cách làm: Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại.
+
+Lối tắt: Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai.
+
+Kết quả: **không, vì hai câu phủ định nhau**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tìm hai câu nói **phủ định nhau**: trong hai câu đó chắc chắn có đúng một câu đúng. Vì cả ba chỉ có một câu đúng, câu đúng ấy nằm trong cặp phủ định, nên câu còn lại (của người thứ ba) là sai. Đọc nội dung câu sai đó để kết luận.
 
 *Điểm chốt:* Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa.
 
-### Bài II.4 — Dãy hình xếp theo quy luật
+### Bài II.3 — Trồng cây và chia đoạn — năm trường hợp
 
-Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
+**Các bước giải**
 
-*Điểm chốt:* Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
+Xét ý a: Quanh một hồ nước có chu vi 125 m, trồng cây cách nhau 5 m. Cần bao nhiêu cây?
 
-### Bài II.5 — Lịch, thế kỉ, năm nhuận
+Đọc vị: đây là dạng **Bài toán trồng cây, chia đoạn**; dấu hiệu là “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn”.
 
-Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
+Kiến thức phải dùng: Quan hệ số điểm – số khoảng.
 
-*Điểm chốt:* Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
+Cách làm: Tính số khoảng rồi chọn công thức theo trường hợp.
 
-### Bài III.1 — Bài toán cân đĩa tìm vật khác biệt
+Lối tắt: Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ.
 
-Mỗi lần cân bằng cân đĩa cho **ba** kết quả có thể, nên mỗi lần cân chia được số vật thành ba phần và loại đi hai phần. Sau k lần cân, phân biệt được tối đa 3 nhân với chính nó k lần vật.
+Kết quả: **25**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tính **số khoảng** trước: độ dài chia khoảng cách. Rồi chọn công thức theo trường hợp — trồng cả hai đầu thì cộng 1, một đầu thì bằng, không đầu nào thì trừ 1, khép kín thì bằng, cưa thành đoạn thì trừ 1.
+
+*Điểm chốt:* Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng.
+
+*Muốn khó hơn:* Trồng cây hai bên đường — nhân đôi kết quả một bên.
+
+*Phải chắc trước khi làm bài này:* Phép chia hết và thói quen vẽ hình kiểm tra.
+
+### Bài II.4 — Giả thiết tạm với hai loại đối tượng
+
+**Các bước giải**
+
+Xét ý a: Trong sân có 42 chiếc xe đạp và xe ô tô, đếm được tất cả 122 bánh xe. Hỏi mỗi loại có bao nhiêu chiếc?
+
+Đọc vị: đây là dạng **Giả thiết tạm hai loại**; dấu hiệu là Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ.
+
+Kiến thức phải dùng: Phương pháp giả thiết tạm.
+
+Cách làm: Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị.
+
+Lối tắt: Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất).
+
+Kết quả: **xe đạp: 23 chiếc, xe ô tô: 19 chiếc**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Giả sử tất cả đều là loại có ít bánh hơn, tính tổng số bánh giả định. Số bánh còn thiếu so với thực tế chia cho hiệu số bánh của hai loại cho biết số xe loại nhiều bánh hơn.
+
+*Điểm chốt:* Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại.
+
+### Bài II.5 — Ba dạng cơ bản của tỉ số phần trăm
+
+**Các bước giải**
+
+Xét ý a: Biết 75% của một số là 150. Tìm số đó.
+
+Đọc vị: đây là dạng **Ba dạng toán tỉ số phần trăm**; dấu hiệu là Kí hiệu %, cụm “… % của …”.
+
+Kiến thức phải dùng: Tỉ số phần trăm.
+
+Cách làm: Xác định đại lượng ứng với 100% rồi chọn dạng.
+
+Lối tắt: Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%.
+
+Kết quả: **200**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Dạng 1 — tìm tỉ số phần trăm của a và b: lấy a chia b rồi nhân 100 và viết kí hiệu %. Dạng 2 — tìm p% của b: lấy b chia 100 rồi nhân p. Dạng 3 — biết p% của một số là a, tìm số đó: lấy a chia p rồi nhân 100.
+
+*Điểm chốt:* Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài.
+
+### Bài III.1 — Tìm hai số khi biết hiệu và tỉ số
+
+**Các bước giải**
+
+Xét ý a: Xưởng chứa nhiều hơn trang trại 350 kg phân bón. Số phân bón ở trang trại bằng 2 phần 7 số phân bón ở xưởng. Mỗi nơi chứa bao nhiêu kg?
+
+Đọc vị: đây là dạng **Bài toán hiệu – tỉ**; dấu hiệu là Đề cho **hiệu** và **tỉ số**.
+
+Kiến thức phải dùng: Tỉ số, sơ đồ đoạn thẳng.
+
+Cách làm: Sơ đồ → hiệu số phần → giá trị một phần.
+
+Lối tắt: Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa.
+
+Kết quả: **trang trại: 140 kg, xưởng: 490 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Hiệu số phần = số phần lớn − số phần bé. Giá trị một phần = hiệu : hiệu số phần. Sau đó nhân với số phần của từng đại lượng.
+
+*Điểm chốt:* Chia cho **hiệu số phần**, không phải tổng số phần.
+
+### Bài III.2 — Bài toán cân đĩa tìm vật khác biệt
+
+**Các bước giải**
+
+Xét ý a: Có 27 đồng tiền giống hệt nhau, trong đó có đúng một đồng nhẹ hơn. Dùng cân đĩa (không quả cân), cần cân ít nhất mấy lần để tìm ra đồng nhẹ?
+
+Đọc vị: đây là dạng **Cân đĩa, chia ba**; dấu hiệu là Cân đĩa không có quả cân, tìm vật khác biệt.
+
+Kiến thức phải dùng: Lập luận trường hợp xấu nhất, chia nhóm.
+
+Cách làm: Chia ba phần bằng nhau mỗi lần cân.
+
+Lối tắt: 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần.
+
+Kết quả: **3 lần**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần cân bằng cân đĩa cho **ba** kết quả có thể, nên mỗi lần cân chia được số vật thành ba phần và loại đi hai phần. Sau k lần cân, phân biệt được tối đa 3 nhân với chính nó k lần vật.
 
 *Điểm chốt:* Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi.
 
-### Bài III.2 — Đếm tam giác và đoạn thẳng
+### Bài III.3 — Đếm số cặp — bắt tay, trận đấu, đường thẳng
 
-Kẻ n đoạn thẳng từ một đỉnh chia cạnh đối diện thành n + 1 phần, tạo ra n + 1 tam giác nhỏ. Mỗi tam giác trong hình ứng với việc chọn hai trong n + 2 điểm trên cạnh đối diện, nên số tam giác = (n + 2) × (n + 1) : 2. Tương tự, k điểm trên một đường thẳng cho k × (k − 1) : 2 đoạn thẳng.
+**Các bước giải**
 
-*Điểm chốt:* Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm.
+Xét ý a: Có 6 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
 
-### Bài III.3 — Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
+Đọc vị: đây là dạng **Đếm số cặp**; dấu hiệu là “Hai … bất kì”, “mỗi người với tất cả những người còn lại”.
 
-Xét trường hợp **xấu nhất**: lấy được nhiều nhất bao nhiêu viên mà vẫn chưa đủ điều kiện? Đó là mỗi màu lấy (k − 1) viên. Lấy thêm đúng một viên nữa thì chắc chắn có k viên cùng màu.
+Kiến thức phải dùng: Tổ hợp chập hai, nguyên tắc đếm lặp.
 
-*Điểm chốt:* Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
+Cách làm: n × (n − 1) : 2.
 
-### Bài III.4 — Đếm số cặp — bắt tay, trận đấu, đường thẳng
+Lối tắt: Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp.
 
-Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
+Kết quả: **15 cái**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
 
 *Điểm chốt:* Chia cho 2 vì mỗi cặp được đếm **hai lần**.
 
-### Bài III.5 — Tìm phân số của một số
+### Bài III.4 — Nguyên lý bù trừ với hai tập hợp
 
-Muốn tìm phân số của một số, ta lấy số đó nhân với phân số. Cách hiểu: chia số đó thành số phần bằng mẫu số, rồi lấy số phần bằng tử số.
+**Các bước giải**
 
-*Điểm chốt:* Phân số tính trên **số nào** — đọc kĩ cụm “… của …”.
+Vẽ hai vòng tròn giao nhau. Miền giữa là 9 bạn thích cả hai môn.
 
-### Bài IV.1 — Bài toán trồng cây — bốn trường hợp
+Chỉ thích Toán: 25 − 9 = 16 (bạn).
 
-**BẪY — Bốn trường hợp trồng cây khác nhau.** Số khoảng = độ dài : khoảng cách. Từ số khoảng suy ra số cây: trồng cả hai đầu thì số cây hơn số khoảng 1; trồng một đầu thì bằng số khoảng; không trồng đầu nào thì kém số khoảng 1; trồng khép kín (quanh ao, quanh sân) thì bằng đúng số khoảng.
+Chỉ thích Tiếng Việt: 15 − 9 = 6 (bạn).
 
-*Điểm chốt:* Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau.
+Thích ít nhất một môn: 16 + 9 + 6 = 31 (bạn).
 
-### Bài IV.2 — Nhận ra thừa số 0 để tính tức thì
+Không thích môn nào: 36 − 31 = 5 (bạn).
 
-**BẪY — Biểu thức lớn nhưng kết quả bằng 0.** Một tích có thừa số bằng 0 thì bằng 0, dù các thừa số khác lớn đến đâu. Vì vậy phải quan sát toàn bộ biểu thức trước khi tính, tìm cụm nào có giá trị bằng 0.
+Đáp số ý a: **31 bạn**.
 
-*Điểm chốt:* Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Vẽ sơ đồ Ven hai vòng tròn. **Điền miền giữa trước**, rồi trừ ra hai miền riêng. Cộng thẳng hai nhóm sẽ đếm nhóm chung **hai lần**, nên phải trừ đi một lần.
 
-### Bài IV.3 — Tỉ số diện tích hai tam giác chung chiều cao
+*Điểm chốt:* Điền **miền giữa trước** — mọi miền khác suy ra từ đó.
 
-Hai tam giác ABM và ACM có **chung chiều cao** hạ từ A xuống BC. Diện tích của chúng tỉ lệ thuận với hai đáy BM và MC. Vì vậy diện tích tam giác ABM bằng diện tích tam giác ABC nhân với tỉ số BM trên BC.
+*Muốn khó hơn:* Thêm môn thứ ba — sơ đồ Ven ba vòng, cộng ba rồi trừ ba đôi rồi cộng lại phần chung của cả ba.
 
-*Điểm chốt:* Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu.
+*Phải chắc trước khi làm bài này:* Phép cộng, trừ và cách vẽ sơ đồ Ven.
 
-### Bài IV.4 — Đếm số lập được thoả nhiều điều kiện
+### Bài III.5 — Nguyên lí Đi-rích-lê (nguyên lí ngăn kéo)
 
-**BẪY — Chữ số 0 ở hàng trăm.** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
+**Các bước giải**
+
+Xét ý a: Trong một hộp có bi thuộc 4 màu (đỏ, xanh, vàng, trắng), mỗi màu có rất nhiều viên. Hỏi phải lấy ra ít nhất bao nhiêu viên (không nhìn) để chắc chắn có 2 viên cùng màu?
+
+Đọc vị: đây là dạng **Nguyên lí Đi-rích-lê**; dấu hiệu là Cụm “ít nhất … để chắc chắn …”.
+
+Kiến thức phải dùng: Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất.
+
+Cách làm: Dựng tình huống xấu nhất rồi cộng 1.
+
+Lối tắt: Công thức: số loại × (số cần − 1) + 1.
+
+Kết quả: **5 viên**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Xét trường hợp **xấu nhất**: lấy được nhiều nhất bao nhiêu viên mà vẫn chưa đủ điều kiện? Đó là mỗi màu lấy (k − 1) viên. Lấy thêm đúng một viên nữa thì chắc chắn có k viên cùng màu.
+
+*Điểm chốt:* Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1.
+
+### Bài IV.1 — Đếm số lập được thoả nhiều điều kiện
+
+> **BẪY — Chữ số 0 ở hàng trăm.**
+
+**Các bước giải**
+
+Xét ý a: Lập được tất cả bao nhiêu số?
+
+Đọc vị: đây là dạng **Đếm số lập được có điều kiện**; dấu hiệu là Bộ chữ số cho trước kèm điều kiện chia hết.
+
+Kiến thức phải dùng: Quy tắc nhân, dấu hiệu chia hết.
+
+Cách làm: Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại.
+
+Lối tắt: Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba.
+
+Kết quả: **18**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm theo từng bước có ràng buộc: với điều kiện về chữ số tận cùng (chẵn, chia hết cho 5) thì chọn **chữ số tận cùng trước**, rồi mới chọn các hàng còn lại. Nhớ loại các số có chữ số 0 ở hàng trăm.
 
 *Điểm chốt:* Có ràng buộc ở hàng nào thì **chọn hàng đó trước**.
 
-### Bài IV.5 — Bài toán bất biến — tính chẵn lẻ của tổng
+### Bài IV.2 — Cân đĩa và số lần cân ít nhất
 
-**BẪY — Phải chứng minh, không được thử vài trường hợp.** Khi thay a và b (giả sử a ≥ b) bằng a − b, tổng giảm đi 2b — luôn là một số chẵn. Vì vậy **tính chẵn lẻ của tổng không bao giờ thay đổi**. Số còn lại cuối cùng chính là tổng lúc đó, nên nó cùng tính chẵn lẻ với tổng ban đầu.
+> **BẪY — Chia ba chứ không chia đôi.**
+
+**Các bước giải**
+
+Cân đĩa cho **ba** kết quả, nên mỗi lần cân chia được số gói thành ba phần và loại ngay hai phần.
+
+Chia 27 gói thành ba phần, mỗi phần nhiều nhất 9 gói.
+
+Đặt hai phần bằng nhau lên hai đĩa: bên nào nhẹ hơn thì gói nhẹ ở đó; cân bằng thì gói nhẹ ở phần còn lại.
+
+Lặp lại cách ấy, sau 3 lần thì còn đúng một gói.
+
+Đáp số: **3 lần**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lần cân bằng cân đĩa cho ba kết quả, nên chia ba chứ không chia đôi. Sau k lần cân phân biệt được nhiều nhất 3 nhân với chính nó k lần vật. Luôn lập luận theo **trường hợp xấu nhất**.
+
+*Điểm chốt:* Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi.
+
+*Muốn khó hơn:* Không biết gói khác biệt nặng hơn hay nhẹ hơn — số lần cân tăng lên.
+
+*Phải chắc trước khi làm bài này:* Phép chia và thói quen lập luận theo trường hợp xấu nhất.
+
+### Bài IV.3 — Tìm x khi x xuất hiện ở cả hai vế
+
+**Các bước giải**
+
+Xét ý a: x × 2 + 77 = x × 3
+
+Đọc vị: đây là dạng **Tìm x xuất hiện hai vế**; dấu hiệu là Chữ x xuất hiện ở cả hai vế của dấu bằng.
+
+Kiến thức phải dùng: So sánh hai biểu thức, sơ đồ đoạn thẳng.
+
+Cách làm: Trừ bớt số lần x chung rồi đưa về phép chia.
+
+Lối tắt: Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh.
+
+Kết quả: **x = 77**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Vế phải có nhiều x hơn vế trái. Bớt đi ở cả hai vế số lần x của vế ít hơn, phần chênh lệch số lần x ở vế phải chính bằng số hạng còn lại ở vế trái. Từ đó tìm x bằng một phép chia.
+
+*Điểm chốt:* Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó.
+
+### Bài IV.4 — Bài toán bất biến — tính chẵn lẻ của tổng
+
+> **BẪY — Phải chứng minh, không được thử vài trường hợp.**
+
+**Các bước giải**
+
+Xét ý a: Trên bảng viết các số từ 1 đến 6. Mỗi bước, xoá hai số bất kì và viết thay vào **hiệu** của chúng (số lớn trừ số bé). Sau nhiều bước chỉ còn một số. Số cuối cùng là số chẵn hay số lẻ?
+
+Đọc vị: đây là dạng **Bài toán bất biến**; dấu hiệu là Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối.
+
+Kiến thức phải dùng: Tính chẵn lẻ, đại lượng bất biến.
+
+Cách làm: Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối.
+
+Lối tắt: Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến.
+
+Kết quả: **lẻ**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Khi thay a và b (giả sử a ≥ b) bằng a − b, tổng giảm đi 2b — luôn là một số chẵn. Vì vậy **tính chẵn lẻ của tổng không bao giờ thay đổi**. Số còn lại cuối cùng chính là tổng lúc đó, nên nó cùng tính chẵn lẻ với tổng ban đầu.
 
 *Điểm chốt:* Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này.
 
+### Bài IV.5 — Tìm số theo hai điều kiện chia có dư
+
+**Các bước giải**
+
+Xét ý a: Tìm số bé nhất không quá 500 chia cho 7 dư 3 và chia cho 3 dư 1.
+
+Đọc vị: đây là dạng **Tìm số thoả nhiều điều kiện chia có dư**; dấu hiệu là Hai điều kiện “chia cho … dư …” đi cùng nhau.
+
+Kiến thức phải dùng: Phép chia có dư, dãy cách đều.
+
+Cách làm: Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại.
+
+Lối tắt: Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn.
+
+Kết quả: **10**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Liệt kê các số thoả điều kiện thứ nhất — chúng lập thành dãy cách đều khoảng cách bằng số chia thứ nhất. Đi dọc dãy đó, thử điều kiện thứ hai, gặp số đầu tiên thoả mãn thì dừng.
+
+*Điểm chốt:* Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số.
+
 ### Bài V.1 — Đi-rích-lê ở dạng chứng minh
 
-Coi mỗi tháng là một “ngăn kéo”, mỗi học sinh là một “đồ vật”. Nếu mỗi ngăn kéo chứa nhiều nhất k − 1 đồ vật thì tổng số đồ vật nhiều nhất là số ngăn × (k − 1). Có nhiều hơn thế thì chắc chắn có một ngăn chứa từ k đồ vật trở lên.
+**Các bước giải**
+
+Xét ý a: Có 10 học sinh sinh trong 3 tháng khác nhau. Chứng tỏ rằng có ít nhất 4 bạn sinh cùng một tháng. Hỏi nếu bớt đi một bạn thì kết luận đó còn đúng không?
+
+Đọc vị: đây là dạng **Đi-rích-lê dạng chứng minh**; dấu hiệu là “Chứng tỏ rằng có ít nhất … cùng …”.
+
+Kiến thức phải dùng: Nguyên lí ngăn kéo.
+
+Cách làm: Đặt tên ngăn kéo và đồ vật, tính ngưỡng.
+
+Lối tắt: Ngưỡng = số ngăn × (số cần − 1) + 1.
+
+Kết quả: **không còn đúng (9 bạn có thể chia đều 3 bạn mỗi tháng)**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Coi mỗi tháng là một “ngăn kéo”, mỗi học sinh là một “đồ vật”. Nếu mỗi ngăn kéo chứa nhiều nhất k − 1 đồ vật thì tổng số đồ vật nhiều nhất là số ngăn × (k − 1). Có nhiều hơn thế thì chắc chắn có một ngăn chứa từ k đồ vật trở lên.
 
 *Điểm chốt:* Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt.
 
-### Bài V.2 — Chữ số tận cùng của tích nhiều thừa số giống nhau
+### Bài V.2 — Trắc nghiệm nhanh — sáu kỹ thuật đếm
 
-Viết chữ số tận cùng của các tích 1 thừa số, 2 thừa số, 3 thừa số… Dãy chữ số tận cùng lặp lại tuần hoàn với chu kì không quá 4. Lấy số thừa số chia cho độ dài chu kì, số dư cho biết vị trí trong chu kì.
+> **BẪY — Chia 2 và cộng 1 — hai chỗ hay quên nhất.**
 
-*Điểm chốt:* Chu kì lặp lại của chữ số tận cùng dài **không quá 4**.
+**Các bước giải**
 
-### Bài V.3 — Dãy số lặp lại theo chu kì
+Ý a — bắt tay: mỗi bạn bắt tay 9 bạn, tổng 10 × 9 = 90 lượt.
 
-Dãy lặp lại theo chu kì độ dài k. Muốn tìm số hạng thứ n, lấy n chia cho k: số dư cho biết vị trí trong chu kì (dư 0 ứng với phần tử cuối chu kì). Muốn tính tổng n số hạng đầu, lấy tổng một chu kì nhân số chu kì đầy đủ rồi cộng phần dư.
+Mỗi cái bắt tay có hai người nên bị đếm hai lần: 90 : 2 = 45 (cái).
 
-*Điểm chốt:* Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu.
+Ý c — xấu nhất mỗi màu lấy 2 viên mà vẫn chưa đủ: 4 × 2 = 8 viên; lấy thêm 1 viên nữa là chắc chắn đủ.
 
-### Bài V.4 — Tô màu và phủ bàn cờ
+Ý d — số khoảng 24 : 4 = 6; trồng cả hai đầu nên cộng 1.
 
-Tô bàn cờ xen kẽ hai màu. Mỗi quân đô-mi-nô, dù đặt ngang hay dọc, luôn phủ đúng **một ô mỗi màu**. Vì vậy nếu phủ kín được thì số ô đen phải bằng số ô trắng. Hai ô ở hai góc đối diện của bàn cờ luôn **cùng màu**, bỏ chúng đi làm hai màu lệch nhau 2 ô, nên không thể phủ kín.
+Đáp số ý a: **45 cái bắt tay**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Sáu kỹ thuật quen: đếm cặp thì chia 2; chọn mỗi nhóm một phần tử thì nhân; “chắc chắn có” thì xét trường hợp xấu nhất rồi cộng 1; trồng cây thì tính số khoảng trước; lập số thì cố định hàng cao nhất; thứ trong tuần thì chia 7 lấy dư.
+
+*Điểm chốt:* Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi.
+
+*Muốn khó hơn:* Bấm giờ 6 phút cho cả bảy ý, chấm theo tốc độ.
+
+*Phải chắc trước khi làm bài này:* Bốn công thức đếm cơ bản và nguyên lý ngăn kéo.
+
+### Bài V.3 — Cắt, ghép hình và tỉ số diện tích
+
+**Các bước giải**
+
+Diện tích hình chữ nhật: 24 × 6 = 144 (cm²).
+
+Nối một đỉnh với trung điểm cạnh đối diện được một tam giác có đáy bằng nửa cạnh và chiều cao bằng cạnh kia.
+
+Diện tích tam giác = đáy × chiều cao : 2, tức bằng (nửa cạnh × cạnh kia) : 2 = **một phần tư** diện tích hình chữ nhật.
+
+Cụ thể: 144 : 4 = 36 (cm²).
+
+Ghép hai hình theo chiều rộng: diện tích cộng lại, nhưng chu vi thì không cộng vì hai cạnh dán vào trong.
+
+Đáp số ý d: **một phần tư**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Diện tích cộng được khi ghép hình, **chu vi thì không**. Tam giác có đáy bằng nửa một cạnh và chiều cao bằng cạnh kia thì diện tích bằng một phần tư hình chữ nhật.
+
+*Điểm chốt:* Ghép hình: **diện tích cộng, chu vi không cộng**.
+
+*Muốn khó hơn:* Nối hai trung điểm của hai cạnh kề — tỉ số diện tích bằng bao nhiêu?
+
+*Phải chắc trước khi làm bài này:* Diện tích hình chữ nhật và tam giác; khái niệm trung điểm.
+
+### Bài V.4 — Đại lượng bất biến: tính chẵn lẻ của tổng
+
+**Các bước giải**
+
+Tổng ban đầu: 1 + 2 + … + 5 = (5 × 6) : 2 = 15.
+
+Thay hai số a và b bằng a + b: tổng **không đổi**, nên số cuối cùng chính là 15.
+
+Thay hai số a và b (a ≥ b) bằng a − b: tổng giảm đi 2 × b — luôn chẵn.
+
+Giảm đi một số chẵn thì tính chẵn lẻ của tổng giữ nguyên.
+
+Tổng ban đầu 15 là số lẻ, nên số cuối cùng cũng là số lẻ.
+
+Đáp số ý f: **số lẻ**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Chìa khoá là tìm một đại lượng **không đổi** qua mỗi bước. Ở đây là tính chẵn lẻ của tổng: mỗi bước tổng giảm đi một số chẵn nên tính chẵn lẻ giữ nguyên từ đầu đến cuối.
+
+*Điểm chốt:* Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối.
+
+*Muốn khó hơn:* Thay bằng tích thay vì tổng — bất biến lúc này là gì?
+
+*Phải chắc trước khi làm bài này:* Tổng dãy số tự nhiên liên tiếp và khái niệm chẵn lẻ.
+
+### Bài V.5 — Tô màu và phủ bàn cờ
+
+**Các bước giải**
+
+Xét ý a: Một bàn cờ vuông 5 × 5 ô. Hỏi có tất cả bao nhiêu ô?
+
+Đọc vị: đây là dạng **Tô màu, bất biến trên bàn cờ**; dấu hiệu là Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không”.
+
+Kiến thức phải dùng: Kĩ thuật tô màu, bất biến, tính chẵn lẻ.
+
+Cách làm: Tô màu xen kẽ, đếm hai màu, so sánh.
+
+Lối tắt: Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu.
+
+Kết quả: **25**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tô bàn cờ xen kẽ hai màu. Mỗi quân đô-mi-nô, dù đặt ngang hay dọc, luôn phủ đúng **một ô mỗi màu**. Vì vậy nếu phủ kín được thì số ô đen phải bằng số ô trắng. Hai ô ở hai góc đối diện của bàn cờ luôn **cùng màu**, bỏ chúng đi làm hai màu lệch nhau 2 ô, nên không thể phủ kín.
 
 *Điểm chốt:* Tô màu biến bài toán hình thành bài toán **đếm** — đó là toàn bộ ý tưởng.
-
-### Bài V.5 — Dãy có hiệu tăng đều
-
-Đây là dãy có **hiệu bậc hai đều**. Số hạng thứ n bằng số hạng đầu cộng với tổng của (n − 1) hiệu đầu tiên; các hiệu ấy lập thành dãy cách đều nên tổng của chúng tính được bằng công thức tổng dãy cách đều.
-
-*Điểm chốt:* Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**.
 
 ---
 
@@ -232,31 +618,31 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| I.1 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | 15 cách · 24 cách · 35 cách · 35 cách… |
-| I.2 | Tìm số hạng thứ n của dãy cách đều | Công thức số hạng tổng quát của dãy cách đều | Đề hỏi “số hạng thứ …” | Đếm số khoảng rồi nhân với khoảng cách | Thử công thức với n = 1 và n = 2 để chắc chắn không lệch một khoảng. | 79 · 123 · 134 · 387… |
-| I.3 | Đếm bằng quy tắc cộng, nhân, bù trừ | Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” | Vẽ hai vòng tròn giao nhau, đếm theo miền | Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. | 120 cách · 12 bạn · 14 cách · 11 bạn |
-| I.4 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (Quân; Mĩ thuật) · toàn bộ hàng Quân và toàn bộ cột Mĩ thuật · ô (Trang; Toán) · Tiếng Anh… |
-| I.5 | Nhân, chia số tự nhiên | Kĩ thuật đặt tính nhân, chia | Yêu cầu “đặt tính rồi tính” với phép nhân, chia | Nhân từng chữ số, cộng tích riêng; chia theo lượt hạ chữ số | Kiểm tra kết quả bằng phép tính ngược: thương × số chia = số bị chia. | 58 295 220 · 15 818 · 99 775 · 30 030 471… |
-| II.1 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 200 · 48 · 25% · 40… |
-| II.2 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe ô tô: 28 chiếc, xe đạp: 15 chiếc · xe ba bánh: 21 chiếc, xe đạp: 5 chiếc · xe đạp: 16 chiếc, xe ô tô: 29 chiếc · xe đạp: 15 chiếc, xe ba bánh: 30 chiếc |
-| II.3 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
-| II.4 | Quy luật hình đưa về dãy số | Dãy cách đều, số hạng thứ n, tổng dãy | Đề mô tả hình xếp thêm đều đặn theo thứ tự | Lập bảng vài hình đầu, tìm khoảng cách, áp công thức | Chỉ cần ba hình đầu là đủ để khẳng định quy luật cách đều. | 12 · 32 · 36 · 48… |
-| II.5 | Lịch và đơn vị thời gian lớn | Số ngày các tháng, năm nhuận, thế kỉ | Đề hỏi về tháng, năm, thế kỉ | Tra quy tắc tháng; kiểm tra chia hết cho 4 và 400 | Năm 2000 nhuận, năm 1900 và 2100 không nhuận — nhớ ba mốc này là đủ. | 2 tuần 5 ngày · XXI · có · 31… |
-| III.1 | Cân đĩa, chia ba | Lập luận trường hợp xấu nhất, chia nhóm | Cân đĩa không có quả cân, tìm vật khác biệt | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. | 3 lần · 3 phần · vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · 4… |
-| III.2 | Đếm hình bằng quy tắc chọn hai điểm | Quy tắc đếm, tổ hợp chập hai | Hình có nhiều đoạn kẻ từ cùng một đỉnh, hoặc nhiều điểm trên một đường | Quy về số cách chọn hai điểm | Số cách chọn 2 trong k là k × (k − 1) : 2 — thuộc công thức này là xong. | 28 · 7 · 10 · 5… |
-| III.3 | Nguyên lí Đi-rích-lê | Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất | Cụm “ít nhất … để chắc chắn …” | Dựng tình huống xấu nhất rồi cộng 1 | Công thức: số loại × (số cần − 1) + 1. | 16 viên · 7 viên · 13 viên · 13 viên… |
-| III.4 | Đếm số cặp | Tổ hợp chập hai, nguyên tắc đếm lặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp. | 28 trận · 28 đường thẳng · 6 cái · 15 cái… |
-| III.5 | Tìm phân số của một số | Nhân số tự nhiên với phân số | Cụm “bằng … của …” | Chia theo mẫu số rồi nhân theo tử số | Chia trước, nhân sau — số nhỏ hơn nên tính nhẩm được. | 90 cây · 34 cây · 105 cây · 19 cây… |
-| IV.1 | Bài toán trồng cây | Quan hệ số cây – số khoảng | Từ khoá “trồng cây”, “cột điện”, “quanh ao”, “hai đầu” | Tính số khoảng rồi chọn đúng công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | 49 · 14 · 32 · 29 |
-| IV.2 | Tính nhanh nhờ thừa số 0 | Tính chất nhân với 0, phép trừ hai số bằng nhau | Trong biểu thức có ngoặc chứa hai số giống nhau trừ nhau | Quét tìm cụm bằng 0 trước khi tính | Nhìn dấu ngoặc trước tiên — bẫy thường nằm ở đó. | 0 · 0 · 0 · 0… |
-| IV.3 | Tỉ số diện tích tam giác | Diện tích tam giác, tỉ lệ thuận | Hai tam giác chung đỉnh, đáy nằm trên cùng một đường thẳng | Chia diện tích theo tỉ số hai đáy | Tỉ số diện tích bằng tỉ số đáy — chia tổng theo tỉ số như bài tổng – tỉ. | 76 cm² · 115 cm² · 160 cm² · 72 cm²… |
-| IV.4 | Đếm số lập được có điều kiện | Quy tắc nhân, dấu hiệu chia hết | Bộ chữ số cho trước kèm điều kiện chia hết | Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại | Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba. | 24 · 18 · 6 · 6… |
-| IV.5 | Bài toán bất biến | Tính chẵn lẻ, đại lượng bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | chẵn · 666 · giảm đi 2 lần số bé · không thay đổi… |
-| V.1 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (10 bạn có thể chia đều 2 bạn mỗi tháng) · không còn đúng (24 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (44 bạn có thể chia đều 4 bạn mỗi tháng) · không còn đúng (27 bạn có thể chia đều 3 bạn mỗi tháng)… |
-| V.2 | Chữ số tận cùng của luỹ thừa | Tính tuần hoàn của chữ số tận cùng | Tích nhiều thừa số giống nhau, số thừa số lớn | Tìm chu kì rồi chia lấy dư để định vị | Chữ số 0, 1, 5, 6 giữ nguyên tận cùng ở mọi số thừa số. | 4 · 9 · 8 · 2 |
-| V.3 | Dãy tuần hoàn | Phép chia có dư, tính tuần hoàn | Dãy lặp lại một nhóm số cố định | Chia vị trí cho chu kì, dùng số dư định vị | Tổng n số hạng = tổng một chu kì × số chu kì đầy đủ + tổng phần dư. | 2 · 2 · 2 · 4… |
-| V.4 | Tô màu, bất biến trên bàn cờ | Kĩ thuật tô màu, bất biến, tính chẵn lẻ | Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” | Tô màu xen kẽ, đếm hai màu, so sánh | Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu. | 16 · 8 · có · 1 ô đen và 1 ô trắng… |
-| V.5 | Dãy có hiệu tăng đều (hiệu bậc hai) | Dãy hiệu, tổng dãy cách đều | Hiệu giữa các số hạng tăng đều đặn | Lập dãy hiệu, tính tổng hiệu, cộng vào số hạng đầu | Với hiệu 1, 2, 3, … thì số hạng thứ n = số đầu + (n − 1) × n : 2. | 1, 5, 13, 25 · 61 · 181 · 36… |
+| I.1 | Quy tắc nhân | Quy tắc nhân, quy tắc cộng trong phép đếm | Chọn một phần tử từ mỗi nhóm để ghép thành một bộ | Nhân số cách của các bước liên tiếp | Vẽ sơ đồ cây với hai ba nhánh đầu để thấy rõ phép nhân. | 30 cách · 30 cách · 48 cách · 24 cách |
+| I.2 | Bốn phép tính với số tự nhiên | Kĩ thuật đặt tính cộng, trừ, nhân, chia | Yêu cầu “đặt tính rồi tính” | Đặt tính thẳng cột, tính từ hàng đơn vị | Ước lượng bằng cách làm tròn để phát hiện sai sót về độ lớn. | 880 732 · 33 838 · 680 912 908 · 1 427 579… |
+| I.3 | Đếm bằng quy tắc cộng, nhân, bù trừ | Quy tắc cộng, quy tắc nhân, nguyên lí bù trừ | Từ khoá “và”, “hoặc”, “cả hai”, “ít nhất một” | Vẽ hai vòng tròn giao nhau, đếm theo miền | Vẽ sơ đồ Ven ba miền, điền số vào miền giữa trước. | 15 cách · 44 cách · 15 bạn · 30 cách |
+| I.4 | Suy luận loại trừ có bảng | Phương pháp lập bảng, loại trừ | Mỗi người ứng với đúng một đối tượng, đề cho các dữ kiện phủ định | Kẻ bảng, đánh dấu, lan toả theo hàng và cột | Bắt đầu từ dữ kiện khẳng định (“thích”, “là”) trước dữ kiện phủ định. | ô (Tuấn; Tiếng Anh) · toàn bộ hàng Tuấn và toàn bộ cột Tiếng Anh · ô (Minh; Toán) · Âm nhạc… |
+| I.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 2 giờ 52 phút · 3 giờ 18 phút · 470 · 1 giờ 50 phút… |
+| II.1 | Chia hết và chia có dư trong tình huống chia phần | Phép chia có dư; số dư bé hơn số chia | “Chia đều cho … bạn”, “còn thừa” | Chia lấy thương và dư, rồi lập luận thêm hoặc bớt | Thử lại bằng công thức số bị chia = số chia × thương + số dư. | mỗi bạn 4 cái, thừa 5 cái · 5 cái · 2 cái · 5 cái… |
+| II.2 | Suy luận nói thật – nói dối | Logic mệnh đề sơ cấp, phương pháp loại trừ | “Chỉ một người nói thật”, các câu nói mâu thuẫn nhau | Tìm cặp mâu thuẫn, khoá số câu đúng, suy ra phần còn lại | Cặp mâu thuẫn đã dùng hết “suất” nói thật, nên mọi câu ngoài cặp đều sai. | không, vì hai câu phủ định nhau · không, vì chúng phủ định nhau · đúng một bạn · nói dối… |
+| II.3 | Bài toán trồng cây, chia đoạn | Quan hệ số điểm – số khoảng | “Trồng cây”, “cột điện”, “quanh hồ”, “cưa thành đoạn” | Tính số khoảng rồi chọn công thức theo trường hợp | Khép kín thì số cây bằng đúng số khoảng — không cộng, không trừ. | 25 · 29 · 27 · 13… |
+| II.4 | Giả thiết tạm hai loại | Phương pháp giả thiết tạm | Hai loại đối tượng, biết tổng số và tổng của một đại lượng phụ | Giả sử đồng nhất → tính chênh → chia cho hiệu đơn vị | Kiểm tra ngay: số bánh phải nằm giữa tổng × (số bánh ít nhất) và tổng × (số bánh nhiều nhất). | xe đạp: 23 chiếc, xe ô tô: 19 chiếc · xe ô tô: 4 chiếc, xe ba bánh: 6 chiếc · xe đạp: 27 chiếc, xe ba bánh: 3 chiếc · xe đạp: 5 chiếc, xe ô tô: 9 chiếc… |
+| II.5 | Ba dạng toán tỉ số phần trăm | Tỉ số phần trăm | Kí hiệu %, cụm “… % của …” | Xác định đại lượng ứng với 100% rồi chọn dạng | Coi 100% là “cả phần”, 1% là “cả phần chia 100” — mọi dạng đều quy về 1%. | 200 · 75% · 60 · 300 |
+| III.1 | Bài toán hiệu – tỉ | Tỉ số, sơ đồ đoạn thẳng | Đề cho **hiệu** và **tỉ số** | Sơ đồ → hiệu số phần → giá trị một phần | Hiệu luôn chia hết cho hiệu số phần — dùng để kiểm tra đã đọc đúng tỉ số chưa. | trang trại: 140 kg, xưởng: 490 kg · kho B: 456 kg, kho A: 570 kg · hợp tác xã: 132 kg, trang trại: 176 kg · kho B: 384 kg, hợp tác xã: 672 kg… |
+| III.2 | Cân đĩa, chia ba | Lập luận trường hợp xấu nhất, chia nhóm | Cân đĩa không có quả cân, tìm vật khác biệt | Chia ba phần bằng nhau mỗi lần cân | 3 đồng → 1 lần; 9 đồng → 2 lần; 27 đồng → 3 lần. | 3 lần · 3 phần · vì mỗi lần cân có ba kết quả: trái nặng hơn, phải nặng hơn, hoặc cân bằng · 9… |
+| III.3 | Đếm số cặp | Tổ hợp chập hai, nguyên tắc đếm lặp | “Hai … bất kì”, “mỗi người với tất cả những người còn lại” | n × (n − 1) : 2 | Nhớ vài giá trị: 5 người có 10 cặp, 10 người có 45 cặp. | 15 cái · 28 đường thẳng · 15 trận · 171 đường thẳng… |
+| III.4 | Nguyên lý bù trừ, sơ đồ Ven | Đếm có phần chung; sơ đồ Ven | Có cụm “cả hai”, “ít nhất một”, “không … nào” | Vẽ Ven, điền miền giữa trước, trừ dần ra | Số thích ít nhất một môn = A + B − cả hai. | 31 · 16 · 6 · 5… |
+| III.5 | Nguyên lí Đi-rích-lê | Nguyên lí ngăn kéo, lập luận trường hợp xấu nhất | Cụm “ít nhất … để chắc chắn …” | Dựng tình huống xấu nhất rồi cộng 1 | Công thức: số loại × (số cần − 1) + 1. | 5 viên · 10 viên · 13 viên · 9 viên… |
+| IV.1 | Đếm số lập được có điều kiện | Quy tắc nhân, dấu hiệu chia hết | Bộ chữ số cho trước kèm điều kiện chia hết | Chọn hàng bị ràng buộc trước rồi nhân số cách các hàng còn lại | Số chia hết cho 3 nhận diện qua tổng ba chữ số được chọn — xét theo bộ ba. | 18 · 10 · 6 · 0… |
+| IV.2 | Cân đĩa, tìm vật khác biệt | Lập luận trường hợp xấu nhất; chia nhóm ba | Cân đĩa không có quả cân, tìm vật nhẹ hơn | Chia ba phần mỗi lần cân | 3 gói → 1 lần; 9 gói → 2 lần; 27 gói → 3 lần. | 3 lần · 3 kết quả: nghiêng trái, nghiêng phải, thăng bằng · 3 phần · 9… |
+| IV.3 | Tìm x xuất hiện hai vế | So sánh hai biểu thức, sơ đồ đoạn thẳng | Chữ x xuất hiện ở cả hai vế của dấu bằng | Trừ bớt số lần x chung rồi đưa về phép chia | Vẽ sơ đồ đoạn thẳng cho mỗi vế — nhìn ra ngay phần chênh. | x = 77 · x = 33 · x = 25 · x = 58… |
+| IV.4 | Bài toán bất biến | Tính chẵn lẻ, đại lượng bất biến | Một quá trình lặp lại nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so trạng thái đầu với trạng thái cuối | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | lẻ · 21 · giảm đi 2 lần số bé · không thay đổi… |
+| IV.5 | Tìm số thoả nhiều điều kiện chia có dư | Phép chia có dư, dãy cách đều | Hai điều kiện “chia cho … dư …” đi cùng nhau | Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại | Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. | 10 · 37 · 2 · 19 |
+| V.1 | Đi-rích-lê dạng chứng minh | Nguyên lí ngăn kéo | “Chứng tỏ rằng có ít nhất … cùng …” | Đặt tên ngăn kéo và đồ vật, tính ngưỡng | Ngưỡng = số ngăn × (số cần − 1) + 1. | không còn đúng (9 bạn có thể chia đều 3 bạn mỗi tháng) · không còn đúng (12 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (3 bạn có thể chia đều 1 bạn mỗi tháng) · không còn đúng (18 bạn có thể chia đều 2 bạn mỗi tháng)… |
+| V.2 | Trắc nghiệm đếm nhanh | Đếm cặp, quy tắc nhân, ngăn kéo, trồng cây, chu kì 7 | Nhiều câu ngắn, mỗi câu một kỹ thuật khác nhau | Nhận dạng kỹ thuật trước, tính sau | Học thuộc bốn công thức: n(n−1):2, a×b, loại×(cần−1)+1, khoảng+1. | 45 · 56 · 9 · 7… |
+| V.3 | Cắt ghép hình, tỉ số diện tích | Diện tích hình chữ nhật, tam giác; đường bao | “Cắt thành … phần”, “nối trung điểm”, “ghép hai hình” | Vẽ hình, xác định đáy và chiều cao, so tỉ số | Tam giác nối một đỉnh với trung điểm cạnh đối diện luôn bằng một phần tư. | 144 cm² · 36 cm² · 72 cm² · 1 phần 4… |
+| V.4 | Bài toán bất biến | Tính chẵn lẻ; tổng dãy số tự nhiên liên tiếp | Một quá trình lặp nhiều bước, hỏi trạng thái cuối | Tìm đại lượng không đổi rồi so hai đầu quá trình | Thử với n nhỏ (n = 3, 4) để đoán, rồi chứng minh bằng bất biến. | 15 · không thay đổi · 15 · giảm đi 2 lần số bé — luôn là một số chẵn… |
+| V.5 | Tô màu, bất biến trên bàn cờ | Kĩ thuật tô màu, bất biến, tính chẵn lẻ | Bàn cờ, quân đô-mi-nô, câu hỏi “có thể phủ kín không” | Tô màu xen kẽ, đếm hai màu, so sánh | Hai ô ở hai góc đối diện của bàn cờ luôn cùng màu. | 25 · 13 · không, vì số ô là số lẻ · 1 ô đen và 1 ô trắng… |
 
 ---
 
@@ -265,30 +651,30 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | Bài | Nhãn tư duy | Điểm chốt |
 |---|---|---|
 | I.1 | TD2, TD4 | Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng. |
-| I.2 | TD4, TD3 | Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng. |
+| I.2 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương. |
 | I.3 | TD2, TD6 | Có phần chung thì phải **trừ đi một lần** phần chung. |
 | I.4 | TD2, TD6 | Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột. |
-| I.5 | TD1 | Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0. |
-| II.1 | TD2, TD3 | Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài. |
-| II.2 | TD6, TD3 | Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại. |
-| II.3 | TD2, TD6 | Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa. |
-| II.4 | TD4, TD3 | Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính. |
-| II.5 | TD1, TD2 | Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận). |
-| III.1 | TD6, TD2 | Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi. |
-| III.2 | TD4, TD3 | Mọi bài đếm ở đây quy về **chọn hai điểm** trong một dãy điểm. |
-| III.3 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
-| III.4 | TD4, TD6 | Chia cho 2 vì mỗi cặp được đếm **hai lần**. |
-| III.5 | TD2, TD3 | Phân số tính trên **số nào** — đọc kĩ cụm “… của …”. |
-| IV.1 | TD3, TD6 | Đọc kĩ **có trồng ở hai đầu hay không** — bốn trường hợp cho bốn đáp số khác nhau. |
-| IV.2 | TD5, TD6 | Quét tìm **cụm bằng 0** trước; thấy rồi thì viết đáp số ngay. |
-| IV.3 | TD6, TD3 | Chung chiều cao thì diện tích **tỉ lệ với đáy** — không cần biết chiều cao là bao nhiêu. |
-| IV.4 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
-| IV.5 | TD6, TD2 | Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này. |
+| I.5 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
+| II.1 | TD1, TD2 | Thêm vào thì thêm **số chia trừ số dư**, không phải thêm số dư. |
+| II.2 | TD2, TD6 | Cặp câu **phủ định nhau** luôn có đúng một câu đúng — đó là điểm tựa. |
+| II.3 | TD3, TD6 | Năm trường hợp cho **năm đáp số khác nhau** với cùng một số khoảng. |
+| II.4 | TD6, TD3 | Chia cho **hiệu** số bánh của hai loại, không chia cho số bánh của một loại. |
+| II.5 | TD2, TD3 | Nhận đúng **dạng nào trong ba dạng** là xong một nửa bài. |
+| III.1 | TD3, TD2 | Chia cho **hiệu số phần**, không phải tổng số phần. |
+| III.2 | TD6, TD2 | Cân đĩa cho **ba** kết quả, nên chia ba chứ không chia đôi. |
+| III.3 | TD4, TD6 | Chia cho 2 vì mỗi cặp được đếm **hai lần**. |
+| III.4 | TD2, TD6 | Điền **miền giữa trước** — mọi miền khác suy ra từ đó. |
+| III.5 | TD6, TD2 | Luôn xuất phát từ **trường hợp xấu nhất** rồi cộng thêm 1. |
+| IV.1 | TD4, TD6 | Có ràng buộc ở hàng nào thì **chọn hàng đó trước**. |
+| IV.2 | TD6, TD2 | Cân đĩa cho **ba** kết quả nên chia ba, không chia đôi. |
+| IV.3 | TD3, TD6 | Lấy **hiệu số lần x** giữa hai vế, rồi chia số đã biết cho hiệu đó. |
+| IV.4 | TD6, TD2 | Tìm đại lượng **không đổi** qua mỗi bước là chìa khoá của cả lớp bài này. |
+| IV.5 | TD2, TD6 | Chỉ **đi dọc một dãy** rồi thử điều kiện còn lại, không thử tất cả số. |
 | V.1 | TD6, TD2 | Phải gọi tên rõ **ngăn kéo** và **đồ vật** thì lập luận mới chặt. |
-| V.2 | TD4, TD6 | Chu kì lặp lại của chữ số tận cùng dài **không quá 4**. |
-| V.3 | TD4, TD6 | Số dư **0** ứng với phần tử **cuối** chu kì, không phải phần tử đầu. |
-| V.4 | TD6, TD2 | Tô màu biến bài toán hình thành bài toán **đếm** — đó là toàn bộ ý tưởng. |
-| V.5 | TD4, TD6 | Số hạng thứ n = số đầu + **tổng (n − 1) hiệu đầu tiên**. |
+| V.2 | TD4, TD5 | Nhận **đúng kỹ thuật** trong 5 giây rồi mới tính — đó là kỹ năng thi. |
+| V.3 | TD6, TD3 | Ghép hình: **diện tích cộng, chu vi không cộng**. |
+| V.4 | TD6, TD2 | Tìm đại lượng **bất biến** rồi so trạng thái đầu với trạng thái cuối. |
+| V.5 | TD6, TD2 | Tô màu biến bài toán hình thành bài toán **đếm** — đó là toàn bộ ý tưởng. |
 
 ---
 
@@ -299,30 +685,30 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | Bài | Lỗi thường gặp | Cách phòng |
 |---|---|---|
 | I.1 | Cộng số áo với số quần. | Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân. |
-| I.2 | Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. | Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu. |
+| I.2 | Quên viết chữ số 0 ở giữa thương nên thương thiếu chữ số. | Đếm trước xem thương có mấy chữ số rồi mới chia. |
 | I.3 | Cộng thẳng hai nhóm khi chúng có phần tử chung. | Vẽ hai vòng tròn giao nhau, ghi số vào từng miền. |
 | I.4 | Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. | Luôn kẻ bảng, kể cả khi bài có vẻ dễ. |
-| I.5 | Quên viết chữ số 0 ở thương nên thương thiếu chữ số. | Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số. |
-| II.1 | Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. | Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. |
-| II.2 | Chia số bánh thiếu cho số bánh của loại nhiều hơn. | Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề. |
-| II.3 | Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. | Đánh số các câu nói, ghi rõ câu nào phủ định câu nào. |
-| II.4 | Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. | Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức. |
-| II.5 | Coi mọi năm chia hết cho 4 đều là năm nhuận. | Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400. |
-| III.1 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
-| III.2 | Chỉ đếm tam giác nhỏ, quên các tam giác ghép. | Đánh dấu tên các điểm rồi liệt kê từng cặp một cách có thứ tự. |
-| III.3 | Nhân số màu với số viên cần rồi lấy luôn kết quả đó. | Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”. |
-| III.4 | Quên chia 2, đáp số gấp đôi. | Thử với 3 người: phải ra 3 cái bắt tay, không phải 6. |
-| III.5 | Nhân phân số với đại lượng khác, không phải đại lượng đề chỉ định. | Gạch chân cụm “bằng … số cây của …” để xác định số bị nhân. |
-| IV.1 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ một đoạn ngắn với 3 khoảng để đếm thử trước khi áp dụng. |
-| IV.2 | Lao vào nhân từng cặp số lớn rồi mới phát hiện kết quả bằng 0. | Đọc hết biểu thức một lượt, khoanh các cụm giống nhau bị trừ cho nhau. |
-| IV.3 | Đi tìm chiều cao cụ thể trong khi đề không cho. | Đọc lại: hai tam giác có chung đỉnh nào, chung chiều cao xuống cạnh nào? |
-| IV.4 | Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. | Viết rõ thứ tự chọn hàng trước khi nhân các số cách. |
-| IV.5 | Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước? |
+| I.5 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
+| II.1 | Nhầm “thêm bao nhiêu” với “bớt bao nhiêu”, cả hai đều lấy số dư. | Vẽ một hàng ô: phần dư còn thiếu bao nhiêu ô nữa thì đầy một suất? |
+| II.2 | Thử từng người một cách rời rạc mà không dùng ràng buộc tổng số câu nói thật. | Đánh số các câu nói, ghi rõ câu nào phủ định câu nào. |
+| II.3 | Máy móc cộng 1 cho mọi trường hợp. | Vẽ hình ba khoảng, đếm tay rồi mới áp dụng cho số lớn. |
+| II.4 | Chia số bánh thiếu cho số bánh của loại nhiều hơn. | Thử lại: nhân ngược ra tổng số bánh, phải khớp với đề. |
+| II.5 | Nhầm dạng 2 với dạng 3 nên nhân thay vì chia. | Gạch chân: cái gì là “toàn bộ” (ứng với 100%), cái gì là “một phần”. |
+| III.1 | Dùng nhầm công thức của tổng – tỉ cho bài hiệu – tỉ. | Đọc kĩ: đề cho “tổng” hay cho “nhiều hơn”? Ghi rõ ra trước khi vẽ. |
+| III.2 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
+| III.3 | Quên chia 2, đáp số gấp đôi. | Thử với 3 người: phải ra 3 cái bắt tay, không phải 6. |
+| III.4 | Cộng thẳng hai nhóm rồi coi đó là số bạn thích ít nhất một môn. | Vẽ sơ đồ Ven, ghi số vào từng miền rồi cộng lại kiểm tra với sĩ số. |
+| III.5 | Nhân số màu với số viên cần rồi lấy luôn kết quả đó. | Viết rõ câu “Xấu nhất là mỗi màu lấy được … viên mà vẫn chưa đủ”. |
+| IV.1 | Chọn hàng trăm trước rồi mới xét điều kiện tận cùng, dẫn đến đếm trùng hoặc sót. | Viết rõ thứ tự chọn hàng trước khi nhân các số cách. |
+| IV.2 | Chia đôi như tìm kiếm thông thường nên cần nhiều lần cân hơn mức cần thiết. | Nhớ ba kết quả: nghiêng trái, nghiêng phải, thăng bằng. |
+| IV.3 | Chuyển vế nhưng quên đổi dấu, hoặc trừ nhầm số lần x. | Vẽ sơ đồ đoạn thẳng: vế trái mấy đoạn x, vế phải mấy đoạn x. |
+| IV.4 | Thử mò vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, hãy kiểm tra: đại lượng đó thay đổi thế nào sau **một** bước? |
+| IV.5 | Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. | Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc. |
 | V.1 | Nói chung chung “vì nhiều người quá nên phải trùng” mà không chỉ ra con số. | Viết hẳn hai dòng: “Ngăn kéo là …”, “Đồ vật là …”. |
-| V.2 | Chia lấy dư rồi quên rằng số dư 0 ứng với **số cuối** của chu kì. | Đánh số vị trí trong chu kì từ 1, và quy ước dư 0 là vị trí cuối. |
-| V.3 | Lấy số dư 0 rồi lấy phần tử đầu tiên của chu kì. | Kiểm chứng bằng một vị trí nhỏ đã biết trước khi làm vị trí lớn. |
-| V.4 | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Luôn tô màu và đếm hai màu trước khi kết luận. |
-| V.5 | Cộng n hiệu thay vì (n − 1) hiệu. | Kiểm chứng với n = 2: chỉ cộng đúng một hiệu. |
+| V.2 | Đếm cặp mà quên chia 2; “chắc chắn có” mà quên cộng 1. | Trước mỗi ý, viết một chữ tắt cho kỹ thuật: cặp, nhân, xấu nhất, khoảng. |
+| V.3 | Cộng chu vi hai hình nhỏ lại thành chu vi hình ghép. | Tô đậm đường bao của hình mới rồi mới tính chu vi. |
+| V.4 | Thử vài trường hợp rồi kết luận, không chứng minh được cho mọi cách làm. | Sau khi đoán, kiểm tra: đại lượng đó đổi thế nào sau **một** bước? |
+| V.5 | Thử xếp bằng tay rồi kết luận “không xếp được” mà không chứng minh. | Luôn tô màu và đếm hai màu trước khi kết luận. |
 
 ---
 
@@ -331,30 +717,30 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 Đọc tầng 1 trước; chỉ đọc tầng sau khi đã thử lại ít nhất 3 phút.
 
 **Bài I.1** — (1) Chọn xong áo đã có một bộ chưa? — (2) Với mỗi áo có bao nhiêu cách chọn quần? — (3) Nhân hai số lại.
-**Bài I.2** — (1) Từ số hạng đầu tới số hạng thứ n đi qua mấy khoảng? — (2) Mỗi khoảng dài bao nhiêu? — (3) Số hạng thứ n = đầu + số khoảng × khoảng cách.
+**Bài I.2** — (1) Viết các số thẳng hàng đơn vị. — (2) Với phép nhân, tích riêng lùi sang trái một cột. — (3) Với phép chia, hạ một chữ số thì viết một chữ số ở thương.
 **Bài I.3** — (1) Hai nhóm có phần tử nào thuộc cả hai không? — (2) Nếu có, phần chung bị đếm mấy lần khi cộng? — (3) Trừ bớt phần chung đi một lần.
 **Bài I.4** — (1) Kẻ bảng tên người × môn học. — (2) Dữ kiện nào cho một dấu chắc chắn? — (3) Sau mỗi dấu ✔, gạch bỏ cả hàng và cả cột.
-**Bài I.5** — (1) Viết các tích riêng lùi đúng cột. — (2) Khi chia, mỗi lần hạ một chữ số thì viết một chữ số ở thương. — (3) Thử lại bằng phép tính ngược.
-**Bài II.1** — (1) Trong bài, số nào ứng với 100%? — (2) Đề hỏi tỉ số, hỏi giá trị của phần, hay hỏi toàn bộ? — (3) Chọn công thức của đúng dạng đó.
-**Bài II.2** — (1) Giả sử tất cả đều là loại ít bánh thì có bao nhiêu bánh? — (2) So với thực tế thì thiếu bao nhiêu bánh? — (3) Mỗi lần đổi một chiếc thì số bánh tăng thêm bao nhiêu?
-**Bài II.3** — (1) Có hai câu nào phủ định lẫn nhau không? — (2) Trong hai câu đó có mấy câu đúng? — (3) Vậy câu của người thứ ba đúng hay sai?
-**Bài II.4** — (1) Hình thứ hai hơn hình thứ nhất mấy que? — (2) Hình thứ ba hơn hình thứ hai mấy que? — (3) Đưa về dãy cách đều rồi dùng công thức.
-**Bài II.5** — (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
-**Bài III.1** — (1) Một lần cân cho mấy kết quả khác nhau? — (2) Vậy nên chia số đồng tiền thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu đồng?
-**Bài III.2** — (1) Cạnh đối diện bị chia thành mấy phần? — (2) Mỗi tam giác ứng với việc chọn hai điểm nào? — (3) Số cách chọn 2 trong k điểm là k × (k − 1) : 2.
-**Bài III.3** — (1) Xấu nhất thì mỗi màu lấy được bao nhiêu viên mà vẫn chưa đủ? — (2) Tổng số viên ở tình huống xấu nhất là bao nhiêu? — (3) Lấy thêm một viên nữa thì sao?
-**Bài III.4** — (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
-**Bài III.5** — (1) Phân số đó tính trên số nào? — (2) Chia số đó thành mấy phần bằng nhau? — (3) Lấy mấy phần trong số đó?
-**Bài IV.1** — (1) Tính số khoảng trước. — (2) Đề có nói trồng ở hai đầu, một đầu, hay khép kín? — (3) Vẽ thử một hình nhỏ để kiểm tra.
-**Bài IV.2** — (1) Có cụm nào trong ngoặc bằng 0 không? — (2) Có hai cụm giống hệt nhau bị trừ cho nhau không? — (3) Tích có một thừa số bằng 0 thì bằng bao nhiêu?
-**Bài IV.3** — (1) Hai tam giác có chung đỉnh nào? — (2) Chiều cao hạ từ đỉnh đó xuống BC có chung không? — (3) Diện tích tỉ lệ thuận với đáy.
-**Bài IV.4** — (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
-**Bài IV.5** — (1) Sau mỗi bước, tổng các số trên bảng thay đổi bao nhiêu? — (2) Lượng thay đổi đó là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
+**Bài I.5** — (1) 1 giờ bằng bao nhiêu phút? — (2) Chia số phút cho 60, lấy thương và số dư. — (3) Phần phút của kết quả phải bé hơn 60.
+**Bài II.1** — (1) Chia thử xem mỗi bạn được mấy cái, thừa mấy cái. — (2) Bớt đi thì bớt đúng phần thừa. — (3) Thêm vào thì thêm phần còn thiếu để đủ một suất nữa.
+**Bài II.2** — (1) Có hai câu nào phủ định lẫn nhau không? — (2) Trong hai câu đó có mấy câu đúng? — (3) Vậy câu của người thứ ba đúng hay sai?
+**Bài II.3** — (1) Số khoảng bằng bao nhiêu? — (2) Đề nói trồng cả hai đầu, một đầu, hay khép kín? — (3) Cưa thành đoạn thì số nhát cưa ít hơn số đoạn 1.
+**Bài II.4** — (1) Giả sử tất cả đều là loại ít bánh thì có bao nhiêu bánh? — (2) So với thực tế thì thiếu bao nhiêu bánh? — (3) Mỗi lần đổi một chiếc thì số bánh tăng thêm bao nhiêu?
+**Bài II.5** — (1) Trong bài, số nào ứng với 100%? — (2) Đề hỏi tỉ số, hỏi giá trị của phần, hay hỏi toàn bộ? — (3) Chọn công thức của đúng dạng đó.
+**Bài III.1** — (1) Đề cho tổng hay cho hiệu? — (2) Vẽ sơ đồ, phần dôi ra ứng với hiệu. — (3) Hiệu chia cho hiệu số phần ra giá trị một phần.
+**Bài III.2** — (1) Một lần cân cho mấy kết quả khác nhau? — (2) Vậy nên chia số đồng tiền thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu đồng?
+**Bài III.3** — (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
+**Bài III.4** — (1) Bao nhiêu bạn thích cả hai môn? — (2) Chỉ thích Toán thì bằng số thích Toán trừ đi đâu? — (3) Cộng ba miền lại rồi lấy sĩ số trừ đi.
+**Bài III.5** — (1) Xấu nhất thì mỗi màu lấy được bao nhiêu viên mà vẫn chưa đủ? — (2) Tổng số viên ở tình huống xấu nhất là bao nhiêu? — (3) Lấy thêm một viên nữa thì sao?
+**Bài IV.1** — (1) Điều kiện của đề ràng buộc hàng nào? — (2) Chọn hàng bị ràng buộc trước tiên. — (3) Nhớ loại trường hợp chữ số 0 đứng ở hàng trăm.
+**Bài IV.2** — (1) Một lần cân cho mấy kết quả? — (2) Vậy nên chia số gói thành mấy phần? — (3) Sau mỗi lần cân còn lại nhiều nhất bao nhiêu gói?
+**Bài IV.3** — (1) Vế trái có mấy lần x? Vế phải có mấy lần x? — (2) Vế phải hơn vế trái mấy lần x? — (3) Phần hơn đó ứng với số nào đã biết?
+**Bài IV.4** — (1) Sau mỗi bước, tổng các số trên bảng thay đổi bao nhiêu? — (2) Lượng thay đổi đó là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
+**Bài IV.5** — (1) Viết vài số chia cho số thứ nhất dư đúng như đề. — (2) Chúng cách đều nhau bao nhiêu đơn vị? — (3) Đi dọc dãy đó và kiểm tra điều kiện thứ hai.
 **Bài V.1** — (1) Cái gì đóng vai trò ngăn kéo? — (2) Nếu mỗi ngăn chỉ có k − 1 đồ vật thì tổng cộng nhiều nhất bao nhiêu? — (3) So sánh với số đồ vật thực tế.
-**Bài V.2** — (1) Viết chữ số tận cùng của vài tích đầu tiên. — (2) Dãy đó lặp lại sau mấy bước? — (3) Chia số thừa số cho độ dài chu kì và xét số dư.
-**Bài V.3** — (1) Chu kì của dãy dài bao nhiêu số hạng? — (2) Chia vị trí cần tìm cho độ dài chu kì. — (3) Số dư cho biết vị trí trong chu kì; dư 0 là phần tử cuối.
-**Bài V.4** — (1) Tô bàn cờ xen kẽ hai màu. — (2) Một quân đô-mi-nô phủ mấy ô mỗi màu? — (3) So sánh số ô của hai màu sau khi bỏ ô.
-**Bài V.5** — (1) Từ số hạng đầu tới số hạng thứ n phải cộng bao nhiêu hiệu? — (2) Các hiệu đó lập thành dãy gì? — (3) Tính tổng các hiệu bằng công thức tổng dãy cách đều.
+**Bài V.2** — (1) Ý này thuộc kỹ thuật đếm nào? — (2) Có cần chia 2 vì đếm trùng không? — (3) Có phải cộng 1 ở bước cuối không?
+**Bài V.3** — (1) Tam giác ấy có đáy và chiều cao bằng bao nhiêu? — (2) Diện tích tam giác bằng đáy nhân chiều cao chia 2. — (3) So với diện tích hình chữ nhật thì bằng mấy phần?
+**Bài V.4** — (1) Sau mỗi bước, tổng các số trên bảng đổi bao nhiêu? — (2) Lượng thay đổi ấy là số chẵn hay số lẻ? — (3) Vậy tính chẵn lẻ của tổng có đổi không?
+**Bài V.5** — (1) Tô bàn cờ xen kẽ hai màu. — (2) Một quân đô-mi-nô phủ mấy ô mỗi màu? — (3) So sánh số ô của hai màu sau khi bỏ ô.
 
 ---
 
@@ -365,30 +751,30 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
 | I.1 | Có 3 áo và 4 quần, có bao nhiêu cách chọn một bộ? | 12 cách |
-| I.2 | Dãy 5, 9, 13, … số hạng thứ 20 là số nào? | 81 |
+| I.2 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
 | I.3 | 20 bạn giỏi Toán, 15 giỏi Văn, 8 giỏi cả hai. Bao nhiêu bạn giỏi ít nhất một môn? | 27 bạn |
 | I.4 | Ba bạn thích ba môn khác nhau, An thích Toán, Bình không thích Anh. Bình thích môn nào? | Tiếng Việt |
-| I.5 | Đặt tính rồi tính: 3 045 × 24 | 73 080 |
-| II.1 | Tìm 25% của 200. | 50 |
-| II.2 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
-| II.3 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
-| II.4 | Hình 1 có 3 que, mỗi hình sau hơn 2 que. Hình thứ 10 có mấy que? | 21 |
-| II.5 | Năm 1975 thuộc thế kỉ thứ mấy? | XX |
-| III.1 | Có 9 đồng tiền, một đồng nhẹ hơn. Cần cân mấy lần? | 2 lần |
-| III.2 | Trên một đường thẳng có 5 điểm. Có bao nhiêu đoạn thẳng? | 10 |
-| III.3 | Hộp có bi 3 màu, lấy ít nhất mấy viên để chắc chắn có 2 viên cùng màu? | 4 viên |
-| III.4 | 6 đội bóng đấu vòng tròn một lượt. Có bao nhiêu trận? | 15 trận |
-| III.5 | Tổ Một trồng 60 cây, tổ Hai bằng 2 phần 3 tổ Một. Tổ Hai trồng mấy cây? | 40 cây |
-| IV.1 | Trồng cây hai bên một đoạn đường dài 20 m, cách nhau 4 m, trồng cả hai đầu, mỗi bên cần mấy cây? | 6 cây |
-| IV.2 | Tính nhanh: 1 234 × 567 × (89 − 89) | 0 |
-| IV.3 | Tam giác ABC diện tích 30 cm², M trên BC với BM = MC. Diện tích ABM bằng bao nhiêu? | 15 cm² |
-| IV.4 | Từ 1, 2, 3, 4 lập được bao nhiêu số có ba chữ số khác nhau? | 24 |
-| IV.5 | Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? | chẵn |
+| I.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
+| II.1 | Có 26 cái kẹo chia đều cho 5 bạn. Mỗi bạn mấy cái, thừa mấy cái? | 5 cái, thừa 1 cái |
+| II.2 | An nói “tôi không làm”, Bình nói “Chi làm”, Chi nói “Bình nói dối”, chỉ một người nói thật. Ai làm? | An |
+| II.3 | Đường dài 20 m, cây cách nhau 4 m, trồng cả hai đầu. Mấy cây? | 6 cây |
+| II.4 | 10 xe đạp và ô tô, 28 bánh. Có mấy ô tô? | 4 ô tô |
+| II.5 | Tìm 25% của 200. | 50 |
+| III.1 | Số lớn hơn số bé 24, số bé bằng 1 phần 3 số lớn. Tìm hai số. | 12 và 36 |
+| III.2 | Có 9 đồng tiền, một đồng nhẹ hơn. Cần cân mấy lần? | 2 lần |
+| III.3 | 6 đội bóng đấu vòng tròn một lượt. Có bao nhiêu trận? | 15 trận |
+| III.4 | 20 bạn giỏi Toán, 15 giỏi Văn, 8 giỏi cả hai. Bao nhiêu bạn giỏi ít nhất một môn? | 27 bạn |
+| III.5 | Hộp có bi 3 màu, lấy ít nhất mấy viên để chắc chắn có 2 viên cùng màu? | 4 viên |
+| IV.1 | Từ 1, 2, 3, 4 lập được bao nhiêu số có ba chữ số khác nhau? | 24 |
+| IV.2 | Có 9 gói kẹo, một gói nhẹ hơn. Cần cân mấy lần? | 2 lần |
+| IV.3 | Tìm x: x × 3 + 24 = x × 5 | x = 12 |
+| IV.4 | Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? | chẵn |
+| IV.5 | Tìm số bé nhất chia cho 5 dư 2 và chia cho 3 dư 1. | 7 |
 | V.1 | 13 bạn sinh trong 12 tháng, chứng tỏ có 2 bạn cùng tháng sinh. | đúng, vì 13 > 12 × 1 |
-| V.2 | Tích của 20 thừa số đều bằng 3 có chữ số tận cùng là chữ số nào? | 1 |
-| V.3 | Dãy 1, 2, 3, 1, 2, 3, … số hạng thứ 100 là số nào? | 1 |
-| V.4 | Bàn cờ 8 × 8 bỏ hai ô góc đối diện, có phủ kín bằng đô-mi-nô được không? | không |
-| V.5 | Dãy 1, 2, 4, 7, 11, … số hạng thứ 8 là số nào? | 29 |
+| V.2 | 6 bạn bắt tay nhau. Có bao nhiêu cái bắt tay? | 15 cái |
+| V.3 | Hình chữ nhật 8 cm × 6 cm, nối một đỉnh với trung điểm cạnh đối diện. Diện tích tam giác bằng bao nhiêu? | 12 cm² |
+| V.4 | Viết các số 1 đến 4, mỗi bước thay hai số bằng hiệu. Số cuối chẵn hay lẻ? | chẵn |
+| V.5 | Bàn cờ 8 × 8 bỏ hai ô góc đối diện, có phủ kín bằng đô-mi-nô được không? | không |
 
 ---
 

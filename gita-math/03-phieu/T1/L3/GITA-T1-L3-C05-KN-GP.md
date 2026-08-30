@@ -30,199 +30,557 @@ Tự chấm trước, đọc lời giải sau. Mỗi ý đúng được tính đ
 
 **Phần A**
 
-- **Bài A.1** — a) chữ số 3, giá trị 30 000 · b) chữ số 5, giá trị 5 000 · c) chữ số 5, giá trị 500 · d) chữ số 5, giá trị 50 · e) chữ số 8, giá trị 8
-- **Bài A.2** — a) 5 574 · b) 1 649 · c) 829 · d) 6 527
-- **Bài A.3** — a) 6 212 · b) 6 753 · c) 35 432 · d) 63 375 · e) 76 318 · f) 77 011
-- **Bài A.4** — a) 1 100 · b) 810 · c) 87 000 · d) 3 400 000 · e) 88 000 · f) 4 000 · g) 120
-- **Bài A.5** — a) 3 giờ 39 phút · b) 56 phút · c) 8 giờ 41 phút · d) 383 · e) 6 giờ 12 phút · f) 5 giờ 11 phút
+- **Bài A.1** — a) chữ số 6, giá trị 60 000 · b) chữ số 8, giá trị 8 000 · c) chữ số 6, giá trị 600 · d) chữ số 8, giá trị 80 · e) chữ số 7, giá trị 7
+- **Bài A.2** — a) 6 tấn 4 tạ 46 kg · b) 6 tấn 9 tạ 80 kg · c) 1 tấn 5 tạ 47 kg · d) 1 tấn 2 tạ 3 kg
+- **Bài A.3** — a) 6 000 · b) 2 000 · c) 110 · d) 310 · e) 460 · f) 30 · g) 3 800
+- **Bài A.4** — a) 9 812 · b) > · c) 40 · d) 22 000 · e) 8 · f) 36 535 · g) > · h) 39 000
+- **Bài A.5** — a) 4 giờ 52 phút · b) 9 giờ 51 phút · c) 428 · d) 2 giờ 19 phút
 
 **Phần B**
 
 - **Bài B.1** — a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài
-- **Bài B.2** — a) “Bài toán đại lượng hai bước là:” · b) “Đổi đơn vị đo là:” · c) “Đổi và tính toán với đơn vị thời gian là:” · d) “Tính thời gian trong ngày là:” · e) “Bài toán cân, chia hết là:”
+- **Bài B.2** — a) “Tính thời gian trong ngày là:” · b) “Số đo có nhiều đơn vị là:” · c) “Bài toán cân, chia hết là:” · d) “Bài toán tiền tệ hai bước là:” · e) “Bài toán đại lượng hai bước là:”
 - **Bài B.3** — a) không ghi trong dấu ngoặc phép tính · b) có, bắt buộc · c) có, bắt buộc · d) đơn vị vuông, ví dụ cm² · e) đơn vị khối, ví dụ cm³ · f) km/giờ hoặc m/phút
-- **Bài B.4** — a) Ghi đơn vị sau mỗi số để không trừ nhầm. · b) Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. · c) Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. · d) Kiểm tra: phần phút của đáp số phải bé hơn 60. · e) Kiểm tra phép chia có dư hay không trước khi kết luận. · f) Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
+- **Bài B.4** — a) Kiểm tra: phần phút của đáp số phải bé hơn 60. · b) Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. · c) Kiểm tra phép chia có dư hay không trước khi kết luận. · d) Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. · e) Ghi đơn vị sau mỗi số để không trừ nhầm. · f) Đếm số ngày cách nhau rồi chia 7 lấy dư.
 - **Bài B.5** — a) 1 phần trong 4 · b) 2 phần trong 4 · c) 1 phần trong 4 · d) 3 phần trong 4 · e) 1 đến 2 phần trong 4
 
 **Phần C**
 
 - **Bài C.1** — a) đơn vị đo — mọi số có cùng đơn vị chưa · b) phép tính — cộng trừ nhân chia có đúng thứ tự chưa · c) đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · d) tầng 3 — trả lời lệch câu hỏi · e) khoảng 30 giây
-- **Bài C.2** — a) tầng 2 · b) Ghi đơn vị sau mỗi số để không trừ nhầm. · c) toàn bộ số điểm của ý sai · d) Ghi đơn vị sau mỗi số để không trừ nhầm. · e) Trừ **số gói** trước khi nhân thì ít phép tính hơn.
-- **Bài C.3** — a) tầng 2 · b) Kiểm tra: phần phút của đáp số phải bé hơn 60. · c) toàn bộ số điểm của ý sai · d) Kiểm tra: phần phút của đáp số phải bé hơn 60. · e) Thời gian đếm theo **60**, không theo 10.
-- **Bài C.4** — a) tầng 2 · b) Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. · c) toàn bộ số điểm của ý sai · d) Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. · e) Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-- **Bài C.5** — a) tầng 2 · b) Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. · c) toàn bộ số điểm của ý sai · d) Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. · e) Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
+- **Bài C.2** — a) tầng 2 · b) Kiểm tra: phần phút của đáp số phải bé hơn 60. · c) toàn bộ số điểm của ý sai · d) Kiểm tra: phần phút của đáp số phải bé hơn 60. · e) Thời gian đếm theo **60**, không theo 10.
+- **Bài C.3** — a) tầng 2 · b) Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. · c) toàn bộ số điểm của ý sai · d) Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. · e) Phải tính **tiền hàng** trước khi trừ.
+- **Bài C.4** — a) tầng 2 · b) Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. · c) toàn bộ số điểm của ý sai · d) Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. · e) Nhớ đúng **số lần** giữa hai đơn vị.
+- **Bài C.5** — a) tầng 2 · b) Vẽ một hàng: tiết – nghỉ – tiết – nghỉ – tiết, rồi đếm. · c) toàn bộ số điểm của ý sai · d) Vẽ một hàng: tiết – nghỉ – tiết – nghỉ – tiết, rồi đếm. · e) Số lần nghỉ = số tiết − 1, không phải bằng số tiết.
 
 **Phần D**
 
 - **Bài D.1** — a) Đo độ dài, khối lượng, thời gian và tiền Việt Nam · b) 5 · c) tên một dạng bài của chương · d) 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc · e) so với bảng dạng bài ở phiếu Dạng bài & Đọc vị
-- **Bài D.2** — a) Hai đơn vị khác nhau nối bởi dấu … · b) Nhớ quan hệ rồi nhân · c) Nhầm 1 m = 10 cm. · d) Bảng đơn vị đo lớp 3 · e) Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm.
-- **Bài D.3** — a) Có chữ “giờ”, “phút”, “sau … phút nữa” · b) Quy về phút, tính, đổi lại · c) Cộng phần phút thành hơn 60 mà quên đổi thành giờ. · d) Quan hệ giờ – phút · e) Cộng tròn giờ trước, cộng phút lẻ sau.
-- **Bài D.4** — a) Số đo viết dưới dạng “… tấn … tạ … kg” · b) Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · c) Cộng thẳng các số đứng trước những đơn vị khác nhau. · d) Bảng đơn vị khối lượng · e) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
-- **Bài D.5** — a) Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · b) Trừ trước, nhân sau · c) Trừ số gói cho số gam, hai đại lượng khác loại. · d) Nhân, trừ; đơn vị khối lượng · e) So hai đường giải, chọn đường ít phép tính.
+- **Bài D.2** — a) Số đo viết dưới dạng “… tấn … tạ … kg” · b) Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · c) Cộng thẳng các số đứng trước những đơn vị khác nhau. · d) Bảng đơn vị khối lượng · e) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
+- **Bài D.3** — a) “Đưa … đồng”, “trả lại”, “đổi ra tờ …” · b) Tính tiền hàng rồi trừ; đổi tiền thì chia · c) Lấy tiền đưa trừ ngay giá một quyển vở. · d) Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam · e) Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
+- **Bài D.4** — a) Đề nhắc tới ngày, tháng, thứ trong tuần · b) Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ · c) Đếm tay từng ngày nên vừa lâu vừa sai. · d) Số ngày các tháng, năm nhuận, chu kì 7 ngày · e) Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28.
+- **Bài D.5** — a) Số đo có chữ “giờ”, “phút”, “giây” · b) Quy về phút rồi tính, cuối cùng đổi lại giờ và phút · c) Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. · d) Quan hệ giờ – phút – giây · e) Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
 
 **Phần E**
 
 - **Bài E.1** — a) giới thiệu chương “Đo độ dài, khối lượng, thời gian và tiền Việt Nam” và mục tiêu · b) trình bày sơ đồ tư duy chương · c) giảng một dạng bài kèm ví dụ mẫu · d) nêu lỗi hay mắc và cách phòng · e) ra một bài cho lớp làm và chữa nhanh · f) tự phân công, mỗi bạn ít nhất một phút
-- **Bài E.2** — a) “Hôm nay nhóm mình nói về Bài toán đại lượng hai bước.” · b) Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · c) Nhân, trừ; đơn vị khối lượng · d) Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? → 600 g · e) Trừ số gói cho số gam, hai đại lượng khác loại. · f) So hai đường giải, chọn đường ít phép tính.
-- **Bài E.3** — a) “Hôm nay nhóm mình nói về Đổi và tính toán với đơn vị thời gian.” · b) Số đo có chữ “giờ”, “phút”, “giây” · c) Quan hệ giờ – phút – giây · d) 155 phút = … giờ … phút → 2 giờ 35 phút · e) Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. · f) Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
-- **Bài E.4** — a) “Hôm nay nhóm mình nói về Bài toán cân, chia hết.” · b) Cân đĩa với một loại quả cân · c) Phép chia hết và chia có dư; đơn vị khối lượng · d) Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? → 5 quả · e) Làm tròn lên rồi coi như cân được. · f) Đổi cả hai về cùng đơn vị rồi chia.
-- **Bài E.5** — a) “Hôm nay nhóm mình nói về Đổi đơn vị đo.” · b) Dấu … giữa hai đơn vị khác nhau · c) Bảng đơn vị đo độ dài, khối lượng · d) 5 km = … m → 5 000 · e) Đổi ngược chiều nên nhân thành chia. · f) Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
+- **Bài E.2** — a) “Hôm nay nhóm mình nói về Tính thời gian trong ngày.” · b) Có chữ “giờ”, “phút”, “sau … phút nữa” · c) Quan hệ giờ – phút · d) 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? → 8 giờ 10 phút · e) Cộng phần phút thành hơn 60 mà quên đổi thành giờ. · f) Cộng tròn giờ trước, cộng phút lẻ sau.
+- **Bài E.3** — a) “Hôm nay nhóm mình nói về Bài toán cân, chia hết.” · b) Cân đĩa với một loại quả cân · c) Phép chia hết và chia có dư; đơn vị khối lượng · d) Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? → 5 quả · e) Làm tròn lên rồi coi như cân được. · f) Đổi cả hai về cùng đơn vị rồi chia.
+- **Bài E.4** — a) “Hôm nay nhóm mình nói về Bài toán đại lượng hai bước.” · b) Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · c) Nhân, trừ; đơn vị khối lượng · d) Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? → 600 g · e) Trừ số gói cho số gam, hai đại lượng khác loại. · f) So hai đường giải, chọn đường ít phép tính.
+- **Bài E.5** — a) “Hôm nay nhóm mình nói về Đổi đơn vị đo.” · b) Hai đơn vị khác nhau nối bởi dấu … · c) Bảng đơn vị đo lớp 3 · d) 5 m = … cm → 500 · e) Nhầm 1 m = 10 cm. · f) Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm.
 
 ---
 
 ## 2. LỜI GIẢI ĐẦY ĐỦ
 
-Đọc kĩ phần chữ đậm: đó là câu cần nhớ, không phải con số.
+Mỗi bài có hai phần: **các bước giải** với số liệu thật của chính bài ấy, và **cách nghĩ** áp dụng cho mọi bài cùng dạng. Đọc kĩ phần chữ đậm — đó là câu cần nhớ, không phải con số.
 
 ### Bài A.1 — Đọc giá trị của chữ số theo hàng
 
-Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
+**Các bước giải**
+
+Xét ý a: Chữ số ở hàng **chục nghìn** của số 68 687 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+
+Đọc vị: đây là dạng **Xác định chữ số và giá trị chữ số theo hàng**; dấu hiệu là Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …”.
+
+Kiến thức phải dùng: Cấu tạo thập phân của số tự nhiên.
+
+Cách làm: Đánh số hàng từ phải sang trái rồi tra bảng hàng.
+
+Lối tắt: Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị.
+
+Kết quả: **chữ số 6, giá trị 60 000**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
 
 *Điểm chốt:* Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
 
 ### Bài A.2 — Đổi số đo khối lượng có nhiều đơn vị
 
-1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
+**Các bước giải**
+
+Xét ý a: 6 446 kg = … tấn … tạ … kg
+
+Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
+
+Kiến thức phải dùng: Bảng đơn vị khối lượng.
+
+Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
+
+Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
+
+Kết quả: **6 tấn 4 tạ 46 kg**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 
 *Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
 
-### Bài A.3 — Số chẵn – số lẻ, số liền trước – số liền sau
+### Bài A.3 — Đổi đơn vị đo độ dài và khối lượng
 
-Số chẵn là số có chữ số tận cùng 0, 2, 4, 6, 8; số lẻ tận cùng 1, 3, 5, 7, 9. Số liền trước kém 1 đơn vị, số liền sau hơn 1 đơn vị. Hai số chẵn liên tiếp hơn kém nhau 2 đơn vị.
+> **BẪY — Chiều đổi đơn vị.**
 
-*Điểm chốt:* Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu.
+**Các bước giải**
 
-### Bài A.4 — Đổi đơn vị đo độ dài và khối lượng
+Xét ý a: 6 hm = … dm
 
-**BẪY — Chiều đổi đơn vị.** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Dấu … giữa hai đơn vị khác nhau.
+
+Kiến thức phải dùng: Bảng đơn vị đo độ dài, khối lượng.
+
+Cách làm: Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10.
+
+Lối tắt: Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi).
+
+Kết quả: **6 000**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 
 *Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 
+### Bài A.4 — Mi-li-lít và lít
+
+> **BẪY — Đơn vị khác nhau.**
+
+**Các bước giải**
+
+Xét ý a: 9 l 812 ml = … ml
+
+Đọc vị: đây là dạng **Đổi và so sánh đơn vị dung tích**; dấu hiệu là Có chữ l, ml trong đề.
+
+Kiến thức phải dùng: Quan hệ lít – mi-li-lít.
+
+Cách làm: Đưa về cùng đơn vị rồi tính hoặc so sánh.
+
+Lối tắt: Nhân 1 000 là thêm ba chữ số 0 vào bên phải.
+
+Kết quả: **9 812**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 lít = 1 000 mi-li-lít. Đổi từ đơn vị lớn sang đơn vị bé thì nhân, ngược lại thì chia. Muốn so sánh thì phải đưa về cùng một đơn vị trước.
+
+*Điểm chốt:* So sánh **chỉ sau khi** đã đưa về cùng đơn vị.
+
+*Muốn khó hơn:* Bài rót nước: một can 5 lít rót đầy mấy chai 500 ml.
+
+*Phải chắc trước khi làm bài này:* Nhân, chia với 1 000 và so sánh số tự nhiên.
+
 ### Bài A.5 — Đơn vị đo thời gian: giờ và phút
 
-**BẪY — Cơ số 60 chứ không phải 10.** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+**Các bước giải**
+
+Xét ý a: 2 giờ 46 phút + 126 phút = … (viết dạng giờ và phút)
+
+Đọc vị: đây là dạng **Đổi và tính toán với đơn vị thời gian**; dấu hiệu là Số đo có chữ “giờ”, “phút”, “giây”.
+
+Kiến thức phải dùng: Quan hệ giờ – phút – giây.
+
+Cách làm: Quy về phút rồi tính, cuối cùng đổi lại giờ và phút.
+
+Lối tắt: Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
+
+Kết quả: **4 giờ 52 phút**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 
 *Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 
 ### Bài B.1 — Bốn dòng bắt buộc của một lời giải
 
-Trình bày là một kỹ năng chấm được. Bốn dòng trên là chuẩn chấm của GITA và cũng là chuẩn chấm phổ biến ở các kỳ thi.
+**Các bước giải**
+
+Xét ý a: Dòng 1 của lời giải viết gì?
+
+Đọc vị: đây là dạng **Kỹ năng trình bày**; dấu hiệu là Yêu cầu “trình bày lời giải”.
+
+Kiến thức phải dùng: Chuẩn trình bày bài giải.
+
+Cách làm: Viết đủ bốn dòng.
+
+Lối tắt: Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại.
+
+Kết quả: **câu lời giải nêu rõ đang tìm đại lượng nào**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Trình bày là một kỹ năng chấm được. Bốn dòng trên là chuẩn chấm của GITA và cũng là chuẩn chấm phổ biến ở các kỳ thi.
 
 *Điểm chốt:* Có lời giải đúng mà trình bày thiếu vẫn **mất điểm thật**.
 
 ### Bài B.2 — Viết câu lời giải cho từng dạng
 
-Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
+**Các bước giải**
+
+Xét ý a: Câu lời giải mở đầu cho dạng “Tính thời gian trong ngày”?
+
+Đọc vị: đây là dạng **Kỹ năng viết câu lời giải**; dấu hiệu là Đề hỏi gì thì câu lời giải nhắc lại điều đó.
+
+Kiến thức phải dùng: Chuẩn trình bày.
+
+Cách làm: Lấy cụm từ trong câu hỏi làm câu lời giải.
+
+Lối tắt: Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất.
+
+Kết quả: **“Tính thời gian trong ngày là:”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Câu lời giải chỉ cần nhắc lại đại lượng đang tìm, không cần dài dòng.
 
 *Điểm chốt:* Câu lời giải phải **nêu đúng đại lượng** đang tìm.
 
 ### Bài B.3 — Ghi đơn vị đúng chỗ
 
-Đơn vị là một phần của đáp số. Sai đơn vị coi như sai đáp số.
+**Các bước giải**
+
+Xét ý a: Trong phép tính trung gian có ghi đơn vị không?
+
+Đọc vị: đây là dạng **Kỹ năng ghi đơn vị**; dấu hiệu là Đáp số của bài có đại lượng đo.
+
+Kiến thức phải dùng: Đơn vị đo các đại lượng.
+
+Cách làm: Kiểm tra đơn vị ở bước cuối.
+
+Lối tắt: Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không.
+
+Kết quả: **không ghi trong dấu ngoặc phép tính**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Đơn vị là một phần của đáp số. Sai đơn vị coi như sai đáp số.
 
 *Điểm chốt:* Diện tích **luôn** có đơn vị vuông, thể tích luôn có đơn vị khối.
 
 ### Bài B.4 — Sửa lỗi trình bày
 
-Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
+**Các bước giải**
+
+Xét ý a: Lỗi: Cộng phần phút thành hơn 60 mà quên đổi thành giờ. — cách phòng?
+
+Đọc vị: đây là dạng **Sổ lỗi và cách phòng**; dấu hiệu là Cột “Lỗi thường gặp” trong bảng phân tích.
+
+Kiến thức phải dùng: Lỗi thường gặp của chương.
+
+Cách làm: Ghép cặp lỗi với cách phòng.
+
+Lối tắt: Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra.
+
+Kết quả: **Kiểm tra: phần phút của đáp số phải bé hơn 60.**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Mỗi lỗi đều có một cách phòng cụ thể, làm được ngay trong lúc làm bài. Chép cả cặp lỗi – cách phòng vào sổ lỗi.
 
 *Điểm chốt:* Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi.
 
 ### Bài B.5 — Tự chấm bài theo thang điểm
 
-Biết thang chấm thì biết chỗ nào không được bỏ. Đây cũng là cách tự chấm trong buổi thi đấu cặp đôi ở phiếu Ôn thi.
+**Các bước giải**
+
+Xét ý a: Câu lời giải được mấy phần điểm?
+
+Đọc vị: đây là dạng **Kỹ năng tự chấm**; dấu hiệu là Bài đã làm xong, cần tự đánh giá.
+
+Kiến thức phải dùng: Thang điểm và chuẩn chấm.
+
+Cách làm: Chia bài thành bốn phần rồi chấm từng phần.
+
+Lối tắt: Tự chấm bài của bạn giúp nhớ chuẩn chấm nhanh hơn tự chấm bài của mình.
+
+Kết quả: **1 phần trong 4**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Biết thang chấm thì biết chỗ nào không được bỏ. Đây cũng là cách tự chấm trong buổi thi đấu cặp đôi ở phiếu Ôn thi.
 
 *Điểm chốt:* Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**.
 
 ### Bài C.1 — Ba tầng dò soát
 
-Ba tầng dò soát là thói quen bắt buộc của học viên GITA, làm sau mỗi bài chứ không để dồn tới cuối giờ.
+**Các bước giải**
+
+Xét ý a: Tầng 1 dò gì?
+
+Đọc vị: đây là dạng **Kỹ năng dò soát**; dấu hiệu là Bài đã làm xong, còn thời gian.
+
+Kiến thức phải dùng: Quy trình ba tầng.
+
+Cách làm: Dò theo thứ tự đơn vị → phép tính → câu hỏi.
+
+Lối tắt: Đọc lại **câu hỏi** trước, đọc lại bài làm sau.
+
+Kết quả: **đơn vị đo — mọi số có cùng đơn vị chưa**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba tầng dò soát là thói quen bắt buộc của học viên GITA, làm sau mỗi bài chứ không để dồn tới cuối giờ.
 
 *Điểm chốt:* Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất.
 
 ### Bài C.2 — Dò soát tình huống 1
 
-Có hai đường: tính tổng rồi trừ phần lấy ra; hoặc tính số gói còn lại rồi nhân. Đường thứ hai ngắn hơn.
+**Các bước giải**
 
-*Điểm chốt:* Trừ **số gói** trước khi nhân thì ít phép tính hơn.
+Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
+
+Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
+
+Kiến thức phải dùng: Quan hệ giờ – phút.
+
+Cách làm: Quy về phút, tính, đổi lại.
+
+Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
+
+Kết quả: **tầng 2**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
+
+*Điểm chốt:* Thời gian đếm theo **60**, không theo 10.
 
 ### Bài C.3 — Dò soát tình huống 2
 
-1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
+**Các bước giải**
 
-*Điểm chốt:* Thời gian đếm theo **60**, không theo 10.
+Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
+
+Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
+
+Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
+
+Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
+
+Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
+
+Kết quả: **tầng 2**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Tính tiền hàng trước bằng phép nhân, rồi mới lấy tiền đưa trừ đi tiền hàng. Đổi tiền là phép chia: tờ lớn chia cho tờ nhỏ.
+
+*Điểm chốt:* Phải tính **tiền hàng** trước khi trừ.
 
 ### Bài C.4 — Dò soát tình huống 3
 
-Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Các bước giải**
 
-*Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
 
-### Bài C.5 — Dò soát tình huống 4
+Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Hai đơn vị khác nhau nối bởi dấu ….
 
-1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+Kiến thức phải dùng: Bảng đơn vị đo lớp 3.
 
-*Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
+Cách làm: Nhớ quan hệ rồi nhân.
 
-### Bài D.1 — Khung sơ đồ tổng hợp chương
+Lối tắt: Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm.
 
-Vẽ từ trí nhớ trước, so với phiếu sau. Chỗ nào quên chính là chỗ chưa chắc.
+Kết quả: **tầng 2**.
 
-*Điểm chốt:* Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không.
-
-### Bài D.2 — Nhánh 1 — Đổi đơn vị đo
-
-Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
 
 *Điểm chốt:* Nhớ đúng **số lần** giữa hai đơn vị.
 
-### Bài D.3 — Nhánh 2 — Tính thời gian trong ngày
+### Bài C.5 — Dò soát tình huống 4
 
-Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Các bước giải**
 
-*Điểm chốt:* Thời gian đếm theo **60**, không theo 10.
+Xét ý a: Lỗi này bị bắt ở tầng dò soát nào?
 
-### Bài D.4 — Nhánh 3 — Số đo có nhiều đơn vị
+Đọc vị: đây là dạng **Thời gian biểu, cộng thời gian**; dấu hiệu là Có nhiều tiết học và thời gian nghỉ giữa các tiết.
 
-Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+Kiến thức phải dùng: Quan hệ giờ – phút; quan hệ số khoảng – số điểm.
+
+Cách làm: Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại.
+
+Lối tắt: Bài này chính là bài trồng cây đội lốt thời gian.
+
+Kết quả: **tầng 2**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số lần nghỉ **ít hơn số tiết đúng 1** — giống hệt bài trồng cây. Đổi hết về phút, cộng lại, rồi chia 60 lấy thương và số dư.
+
+*Điểm chốt:* Số lần nghỉ = số tiết − 1, không phải bằng số tiết.
+
+### Bài D.1 — Khung sơ đồ tổng hợp chương
+
+**Các bước giải**
+
+Xét ý a: Tâm sơ đồ ghi gì?
+
+Đọc vị: đây là dạng **Sơ đồ tư duy tổng hợp**; dấu hiệu là Yêu cầu vẽ lại sơ đồ không nhìn tài liệu.
+
+Kiến thức phải dùng: Hệ thống hoá toàn chương.
+
+Cách làm: Vẽ từ trí nhớ rồi đối chiếu.
+
+Lối tắt: Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên.
+
+Kết quả: **Đo độ dài, khối lượng, thời gian và tiền Việt Nam**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Vẽ từ trí nhớ trước, so với phiếu sau. Chỗ nào quên chính là chỗ chưa chắc.
+
+*Điểm chốt:* Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không.
+
+### Bài D.2 — Nhánh 1 — Số đo có nhiều đơn vị
+
+**Các bước giải**
+
+Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
+
+Đọc vị: đây là dạng **Số đo có nhiều đơn vị**; dấu hiệu là Số đo viết dưới dạng “… tấn … tạ … kg”.
+
+Kiến thức phải dùng: Bảng đơn vị khối lượng.
+
+Cách làm: Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư.
+
+Lối tắt: Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ.
+
+Kết quả: **Số đo viết dưới dạng “… tấn … tạ … kg”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
 *Điểm chốt:* Đổi hết về **một đơn vị chung** trước khi cộng.
 
-### Bài D.5 — Nhánh 4 — Bài toán đại lượng hai bước
+### Bài D.3 — Nhánh 2 — Bài toán tiền tệ hai bước
 
-Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+**Các bước giải**
 
-*Điểm chốt:* Trừ **số gói** trước khi nhân thì ít phép tính hơn.
+Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
 
-### Bài E.1 — Kịch bản thuyết trình 5 phút
+Đọc vị: đây là dạng **Bài toán tiền tệ hai bước**; dấu hiệu là “Đưa … đồng”, “trả lại”, “đổi ra tờ …”.
 
-Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+Kiến thức phải dùng: Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam.
 
-*Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
+Cách làm: Tính tiền hàng rồi trừ; đổi tiền thì chia.
 
-### Bài E.2 — Nội dung giảng — Bài toán đại lượng hai bước
+Lối tắt: Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa.
 
-Có hai đường: tính tổng rồi trừ phần lấy ra; hoặc tính số gói còn lại rồi nhân. Đường thứ hai ngắn hơn.
+Kết quả: **“Đưa … đồng”, “trả lại”, “đổi ra tờ …”**.
 
-*Điểm chốt:* Trừ **số gói** trước khi nhân thì ít phép tính hơn.
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
-### Bài E.3 — Nội dung giảng — Đổi và tính toán với đơn vị thời gian
+*Điểm chốt:* Phải tính **tiền hàng** trước khi trừ.
 
-1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
+### Bài D.4 — Nhánh 3 — Lịch, tháng, năm nhuận
+
+**Các bước giải**
+
+Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
+
+Đọc vị: đây là dạng **Lịch, tháng, năm nhuận**; dấu hiệu là Đề nhắc tới ngày, tháng, thứ trong tuần.
+
+Kiến thức phải dùng: Số ngày các tháng, năm nhuận, chu kì 7 ngày.
+
+Cách làm: Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ.
+
+Lối tắt: Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28.
+
+Kết quả: **Đề nhắc tới ngày, tháng, thứ trong tuần**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
+
+*Điểm chốt:* Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra.
+
+### Bài D.5 — Nhánh 4 — Đổi và tính toán với đơn vị thời gian
+
+**Các bước giải**
+
+Xét ý a: Nhánh con 1 — dấu hiệu nhận biết?
+
+Đọc vị: đây là dạng **Đổi và tính toán với đơn vị thời gian**; dấu hiệu là Số đo có chữ “giờ”, “phút”, “giây”.
+
+Kiến thức phải dùng: Quan hệ giờ – phút – giây.
+
+Cách làm: Quy về phút rồi tính, cuối cùng đổi lại giờ và phút.
+
+Lối tắt: Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm.
+
+Kết quả: **Số đo có chữ “giờ”, “phút”, “giây”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Ba nhánh con là bộ khung tối thiểu; hai dòng ghi thêm là phần nâng cao giúp em giải nhanh trong phòng thi.
 
 *Điểm chốt:* Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 
-### Bài E.4 — Nội dung giảng — Bài toán cân, chia hết
+### Bài E.1 — Kịch bản thuyết trình 5 phút
 
-Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
+**Các bước giải**
+
+Xét ý a: Phút 1 nói gì?
+
+Đọc vị: đây là dạng **Kỹ năng thuyết trình theo nhóm**; dấu hiệu là Yêu cầu giảng lại chương theo nhóm.
+
+Kiến thức phải dùng: Hệ thống hoá và diễn đạt.
+
+Cách làm: Chia kịch bản theo phút, phân công rõ người.
+
+Lối tắt: Người giảng nhớ lâu hơn người nghe khoảng ba lần.
+
+Kết quả: **giới thiệu chương “Đo độ dài, khối lượng, thời gian và tiền Việt Nam” và mục tiêu**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Giảng lại là cách học hiệu quả nhất: chỉ khi giảng được cho người khác hiểu thì mới thật sự nắm chắc.
+
+*Điểm chốt:* Giảng được cho bạn hiểu mới là **đã hiểu**.
+
+### Bài E.2 — Nội dung giảng — Tính thời gian trong ngày
+
+**Các bước giải**
+
+Xét ý a: Câu mở đầu giới thiệu dạng bài?
+
+Đọc vị: đây là dạng **Tính thời gian trong ngày**; dấu hiệu là Có chữ “giờ”, “phút”, “sau … phút nữa”.
+
+Kiến thức phải dùng: Quan hệ giờ – phút.
+
+Cách làm: Quy về phút, tính, đổi lại.
+
+Lối tắt: Cộng tròn giờ trước, cộng phút lẻ sau.
+
+Kết quả: **“Hôm nay nhóm mình nói về Tính thời gian trong ngày.”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 giờ = 60 phút. Đổi cả hai về phút rồi cộng hoặc trừ, sau đó đổi kết quả trở lại thành giờ và phút bằng phép chia cho 60 lấy thương và dư.
+
+*Điểm chốt:* Thời gian đếm theo **60**, không theo 10.
+
+### Bài E.3 — Nội dung giảng — Bài toán cân, chia hết
+
+**Các bước giải**
+
+Xét ý a: Câu mở đầu giới thiệu dạng bài?
+
+Đọc vị: đây là dạng **Bài toán cân, chia hết**; dấu hiệu là Cân đĩa với một loại quả cân.
+
+Kiến thức phải dùng: Phép chia hết và chia có dư; đơn vị khối lượng.
+
+Cách làm: Chia và xét số dư.
+
+Lối tắt: Đổi cả hai về cùng đơn vị rồi chia.
+
+Kết quả: **“Hôm nay nhóm mình nói về Bài toán cân, chia hết.”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Số quả cân cần dùng bằng khối lượng của vật chia cho khối lượng một quả cân. Nếu chia không hết thì không thể cân chính xác bằng loại quả cân đó.
 
 *Điểm chốt:* Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy.
 
+### Bài E.4 — Nội dung giảng — Bài toán đại lượng hai bước
+
+**Các bước giải**
+
+Xét ý a: Câu mở đầu giới thiệu dạng bài?
+
+Đọc vị: đây là dạng **Bài toán đại lượng hai bước**; dấu hiệu là Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy.
+
+Kiến thức phải dùng: Nhân, trừ; đơn vị khối lượng.
+
+Cách làm: Trừ trước, nhân sau.
+
+Lối tắt: So hai đường giải, chọn đường ít phép tính.
+
+Kết quả: **“Hôm nay nhóm mình nói về Bài toán đại lượng hai bước.”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** Có hai đường: tính tổng rồi trừ phần lấy ra; hoặc tính số gói còn lại rồi nhân. Đường thứ hai ngắn hơn.
+
+*Điểm chốt:* Trừ **số gói** trước khi nhân thì ít phép tính hơn.
+
 ### Bài E.5 — Nội dung giảng — Đổi đơn vị đo
 
-Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
+**Các bước giải**
 
-*Điểm chốt:* Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
+Xét ý a: Câu mở đầu giới thiệu dạng bài?
+
+Đọc vị: đây là dạng **Đổi đơn vị đo**; dấu hiệu là Hai đơn vị khác nhau nối bởi dấu ….
+
+Kiến thức phải dùng: Bảng đơn vị đo lớp 3.
+
+Cách làm: Nhớ quan hệ rồi nhân.
+
+Lối tắt: Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm.
+
+Kết quả: **“Hôm nay nhóm mình nói về Đổi đơn vị đo.”**.
+
+**Cách nghĩ chung cho mọi bài cùng dạng.** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
+
+*Điểm chốt:* Nhớ đúng **số lần** giữa hai đơn vị.
 
 ---
 
@@ -232,31 +590,31 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 
 | Bài | Dạng bài | Kiến thức liên quan | Dữ liệu nhận biết | Phương pháp áp dụng | Cách xử lý nhanh nhất | Kết quả |
 |---|---|---|---|---|---|---|
-| A.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 3, giá trị 30 000 · chữ số 5, giá trị 5 000 · chữ số 5, giá trị 500 · chữ số 5, giá trị 50… |
-| A.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 5 574 · 1 649 · 829 · 6 527 |
-| A.3 | Nhận biết chẵn – lẻ và số liền kề | Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 | Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” | Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị | Che hết các chữ số, chỉ để lộ chữ số cuối. | 6 212 · 6 753 · 35 432 · 63 375… |
-| A.4 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 1 100 · 810 · 87 000 · 3 400 000… |
-| A.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 3 giờ 39 phút · 56 phút · 8 giờ 41 phút · 383… |
+| A.1 | Xác định chữ số và giá trị chữ số theo hàng | Cấu tạo thập phân của số tự nhiên | Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” | Đánh số hàng từ phải sang trái rồi tra bảng hàng | Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. | chữ số 6, giá trị 60 000 · chữ số 8, giá trị 8 000 · chữ số 6, giá trị 600 · chữ số 8, giá trị 80… |
+| A.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | 6 tấn 4 tạ 46 kg · 6 tấn 9 tạ 80 kg · 1 tấn 5 tạ 47 kg · 1 tấn 2 tạ 3 kg |
+| A.3 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | 6 000 · 2 000 · 110 · 310… |
+| A.4 | Đổi và so sánh đơn vị dung tích | Quan hệ lít – mi-li-lít | Có chữ l, ml trong đề | Đưa về cùng đơn vị rồi tính hoặc so sánh | Nhân 1 000 là thêm ba chữ số 0 vào bên phải. | 9 812 · > · 40 · 22 000… |
+| A.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | 4 giờ 52 phút · 9 giờ 51 phút · 428 · 2 giờ 19 phút |
 | B.1 | Kỹ năng trình bày | Chuẩn trình bày bài giải | Yêu cầu “trình bày lời giải” | Viết đủ bốn dòng | Viết câu lời giải trước, phép tính sau — không bao giờ ngược lại. | câu lời giải nêu rõ đang tìm đại lượng nào · phép tính, viết đủ dấu và đủ đơn vị · kết quả kèm đơn vị · câu đáp số… |
-| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Bài toán đại lượng hai bước là:” · “Đổi đơn vị đo là:” · “Đổi và tính toán với đơn vị thời gian là:” · “Tính thời gian trong ngày là:”… |
+| B.2 | Kỹ năng viết câu lời giải | Chuẩn trình bày | Đề hỏi gì thì câu lời giải nhắc lại điều đó | Lấy cụm từ trong câu hỏi làm câu lời giải | Sao chép cụm từ trong câu hỏi là cách viết câu lời giải nhanh và chắc nhất. | “Tính thời gian trong ngày là:” · “Số đo có nhiều đơn vị là:” · “Bài toán cân, chia hết là:” · “Bài toán tiền tệ hai bước là:”… |
 | B.3 | Kỹ năng ghi đơn vị | Đơn vị đo các đại lượng | Đáp số của bài có đại lượng đo | Kiểm tra đơn vị ở bước cuối | Nhìn đơn vị của đáp số là biết ngay mình có nhầm chu vi với diện tích không. | không ghi trong dấu ngoặc phép tính · có, bắt buộc · có, bắt buộc · đơn vị vuông, ví dụ cm²… |
-| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Ghi đơn vị sau mỗi số để không trừ nhầm. · Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. · Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. · Kiểm tra: phần phút của đáp số phải bé hơn 60.… |
+| B.4 | Sổ lỗi và cách phòng | Lỗi thường gặp của chương | Cột “Lỗi thường gặp” trong bảng phân tích | Ghép cặp lỗi với cách phòng | Đọc lại sổ lỗi 3 phút trước mỗi bài kiểm tra. | Kiểm tra: phần phút của đáp số phải bé hơn 60. · Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. · Kiểm tra phép chia có dư hay không trước khi kết luận. · Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai.… |
 | B.5 | Kỹ năng tự chấm | Thang điểm và chuẩn chấm | Bài đã làm xong, cần tự đánh giá | Chia bài thành bốn phần rồi chấm từng phần | Tự chấm bài của bạn giúp nhớ chuẩn chấm nhanh hơn tự chấm bài của mình. | 1 phần trong 4 · 2 phần trong 4 · 1 phần trong 4 · 3 phần trong 4… |
 | C.1 | Kỹ năng dò soát | Quy trình ba tầng | Bài đã làm xong, còn thời gian | Dò theo thứ tự đơn vị → phép tính → câu hỏi | Đọc lại **câu hỏi** trước, đọc lại bài làm sau. | đơn vị đo — mọi số có cùng đơn vị chưa · phép tính — cộng trừ nhân chia có đúng thứ tự chưa · đề hỏi gì — mình đã trả lời đúng câu hỏi chưa · tầng 3 — trả lời lệch câu hỏi… |
-| C.2 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | tầng 2 · Ghi đơn vị sau mỗi số để không trừ nhầm. · toàn bộ số điểm của ý sai · Ghi đơn vị sau mỗi số để không trừ nhầm.… |
-| C.3 | Tính thời gian trong ngày | Quan hệ giờ – phút | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | tầng 2 · Kiểm tra: phần phút của đáp số phải bé hơn 60. · toàn bộ số điểm của ý sai · Kiểm tra: phần phút của đáp số phải bé hơn 60.… |
-| C.4 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | tầng 2 · Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. · toàn bộ số điểm của ý sai · Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.… |
-| C.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | tầng 2 · Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. · toàn bộ số điểm của ý sai · Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.… |
+| C.2 | Tính thời gian trong ngày | Quan hệ giờ – phút | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | tầng 2 · Kiểm tra: phần phút của đáp số phải bé hơn 60. · toàn bộ số điểm của ý sai · Kiểm tra: phần phút của đáp số phải bé hơn 60.… |
+| C.3 | Bài toán tiền tệ hai bước | Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” | Tính tiền hàng rồi trừ; đổi tiền thì chia | Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. | tầng 2 · Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. · toàn bộ số điểm của ý sai · Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai.… |
+| C.4 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | tầng 2 · Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. · toàn bộ số điểm của ý sai · Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.… |
+| C.5 | Thời gian biểu, cộng thời gian | Quan hệ giờ – phút; quan hệ số khoảng – số điểm | Có nhiều tiết học và thời gian nghỉ giữa các tiết | Quy về phút, đếm số lần nghỉ, cộng rồi đổi lại | Bài này chính là bài trồng cây đội lốt thời gian. | tầng 2 · Vẽ một hàng: tiết – nghỉ – tiết – nghỉ – tiết, rồi đếm. · toàn bộ số điểm của ý sai · Vẽ một hàng: tiết – nghỉ – tiết – nghỉ – tiết, rồi đếm.… |
 | D.1 | Sơ đồ tư duy tổng hợp | Hệ thống hoá toàn chương | Yêu cầu vẽ lại sơ đồ không nhìn tài liệu | Vẽ từ trí nhớ rồi đối chiếu | Chỗ nào quên khi vẽ chính là chỗ phải ôn lại đầu tiên. | Đo độ dài, khối lượng, thời gian và tiền Việt Nam · 5 · tên một dạng bài của chương · 3 nhánh con: dấu hiệu · phương pháp · lỗi hay mắc… |
-| D.2 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | Hai đơn vị khác nhau nối bởi dấu … · Nhớ quan hệ rồi nhân · Nhầm 1 m = 10 cm. · Bảng đơn vị đo lớp 3… |
-| D.3 | Tính thời gian trong ngày | Quan hệ giờ – phút | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | Có chữ “giờ”, “phút”, “sau … phút nữa” · Quy về phút, tính, đổi lại · Cộng phần phút thành hơn 60 mà quên đổi thành giờ. · Quan hệ giờ – phút… |
-| D.4 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | Số đo viết dưới dạng “… tấn … tạ … kg” · Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · Cộng thẳng các số đứng trước những đơn vị khác nhau. · Bảng đơn vị khối lượng… |
-| D.5 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · Trừ trước, nhân sau · Trừ số gói cho số gam, hai đại lượng khác loại. · Nhân, trừ; đơn vị khối lượng… |
+| D.2 | Số đo có nhiều đơn vị | Bảng đơn vị khối lượng | Số đo viết dưới dạng “… tấn … tạ … kg” | Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư | Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. | Số đo viết dưới dạng “… tấn … tạ … kg” · Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · Cộng thẳng các số đứng trước những đơn vị khác nhau. · Bảng đơn vị khối lượng… |
+| D.3 | Bài toán tiền tệ hai bước | Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” | Tính tiền hàng rồi trừ; đổi tiền thì chia | Thử lại bằng cách cộng tiền hàng với tiền trả lại, phải đúng bằng tiền đưa. | “Đưa … đồng”, “trả lại”, “đổi ra tờ …” · Tính tiền hàng rồi trừ; đổi tiền thì chia · Lấy tiền đưa trừ ngay giá một quyển vở. · Nhân, trừ với số tròn nghìn; mệnh giá tiền Việt Nam… |
+| D.4 | Lịch, tháng, năm nhuận | Số ngày các tháng, năm nhuận, chu kì 7 ngày | Đề nhắc tới ngày, tháng, thứ trong tuần | Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ | Cùng một thứ lặp lại ở các ngày cách nhau 7, 14, 21, 28. | Đề nhắc tới ngày, tháng, thứ trong tuần · Tra quy tắc tháng; chia cho 7 lấy dư để tìm thứ · Đếm tay từng ngày nên vừa lâu vừa sai. · Số ngày các tháng, năm nhuận, chu kì 7 ngày… |
+| D.5 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | Số đo có chữ “giờ”, “phút”, “giây” · Quy về phút rồi tính, cuối cùng đổi lại giờ và phút · Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. · Quan hệ giờ – phút – giây… |
 | E.1 | Kỹ năng thuyết trình theo nhóm | Hệ thống hoá và diễn đạt | Yêu cầu giảng lại chương theo nhóm | Chia kịch bản theo phút, phân công rõ người | Người giảng nhớ lâu hơn người nghe khoảng ba lần. | giới thiệu chương “Đo độ dài, khối lượng, thời gian và tiền Việt Nam” và mục tiêu · trình bày sơ đồ tư duy chương · giảng một dạng bài kèm ví dụ mẫu · nêu lỗi hay mắc và cách phòng… |
-| E.2 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | “Hôm nay nhóm mình nói về Bài toán đại lượng hai bước.” · Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · Nhân, trừ; đơn vị khối lượng · Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? → 600 g… |
-| E.3 | Đổi và tính toán với đơn vị thời gian | Quan hệ giờ – phút – giây | Số đo có chữ “giờ”, “phút”, “giây” | Quy về phút rồi tính, cuối cùng đổi lại giờ và phút | Đổi hết về phút, tính xong mới đổi ngược lại — tránh nhớ nhầm. | “Hôm nay nhóm mình nói về Đổi và tính toán với đơn vị thời gian.” · Số đo có chữ “giờ”, “phút”, “giây” · Quan hệ giờ – phút – giây · 155 phút = … giờ … phút → 2 giờ 35 phút… |
-| E.4 | Bài toán cân, chia hết | Phép chia hết và chia có dư; đơn vị khối lượng | Cân đĩa với một loại quả cân | Chia và xét số dư | Đổi cả hai về cùng đơn vị rồi chia. | “Hôm nay nhóm mình nói về Bài toán cân, chia hết.” · Cân đĩa với một loại quả cân · Phép chia hết và chia có dư; đơn vị khối lượng · Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? → 5 quả… |
-| E.5 | Đổi đơn vị đo | Bảng đơn vị đo độ dài, khối lượng | Dấu … giữa hai đơn vị khác nhau | Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 | Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). | “Hôm nay nhóm mình nói về Đổi đơn vị đo.” · Dấu … giữa hai đơn vị khác nhau · Bảng đơn vị đo độ dài, khối lượng · 5 km = … m → 5 000… |
+| E.2 | Tính thời gian trong ngày | Quan hệ giờ – phút | Có chữ “giờ”, “phút”, “sau … phút nữa” | Quy về phút, tính, đổi lại | Cộng tròn giờ trước, cộng phút lẻ sau. | “Hôm nay nhóm mình nói về Tính thời gian trong ngày.” · Có chữ “giờ”, “phút”, “sau … phút nữa” · Quan hệ giờ – phút · 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? → 8 giờ 10 phút… |
+| E.3 | Bài toán cân, chia hết | Phép chia hết và chia có dư; đơn vị khối lượng | Cân đĩa với một loại quả cân | Chia và xét số dư | Đổi cả hai về cùng đơn vị rồi chia. | “Hôm nay nhóm mình nói về Bài toán cân, chia hết.” · Cân đĩa với một loại quả cân · Phép chia hết và chia có dư; đơn vị khối lượng · Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? → 5 quả… |
+| E.4 | Bài toán đại lượng hai bước | Nhân, trừ; đơn vị khối lượng | Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy | Trừ trước, nhân sau | So hai đường giải, chọn đường ít phép tính. | “Hôm nay nhóm mình nói về Bài toán đại lượng hai bước.” · Cho số nhóm, khối lượng mỗi nhóm, số nhóm đã lấy · Nhân, trừ; đơn vị khối lượng · Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? → 600 g… |
+| E.5 | Đổi đơn vị đo | Bảng đơn vị đo lớp 3 | Hai đơn vị khác nhau nối bởi dấu … | Nhớ quan hệ rồi nhân | Thêm đúng số chữ số 0 tương ứng: 3 số 0 cho km→m, 2 số 0 cho m→cm. | “Hôm nay nhóm mình nói về Đổi đơn vị đo.” · Hai đơn vị khác nhau nối bởi dấu … · Bảng đơn vị đo lớp 3 · 5 m = … cm → 500… |
 
 ---
 
@@ -266,8 +624,8 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 |---|---|---|
 | A.1 | TD1 | Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng). |
 | A.2 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
-| A.3 | TD1 | Chỉ cần nhìn **chữ số tận cùng** là biết chẵn hay lẻ, dù số dài bao nhiêu. |
-| A.4 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
+| A.3 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
+| A.4 | TD1 | So sánh **chỉ sau khi** đã đưa về cùng đơn vị. |
 | A.5 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
 | B.1 | TD1 | Có lời giải đúng mà trình bày thiếu vẫn **mất điểm thật**. |
 | B.2 | TD1 | Câu lời giải phải **nêu đúng đại lượng** đang tìm. |
@@ -275,20 +633,20 @@ Sáu cột dưới đây là bộ khung đọc vị mọi đề bài. Học thu�
 | B.4 | TD2 | Sổ lỗi chỉ có ích khi ghi **cả cách phòng**, không chỉ ghi lỗi. |
 | B.5 | TD1, TD2 | Biết thang chấm để **không bỏ những dòng dễ ăn điểm nhất**. |
 | C.1 | TD1, TD6 | Tầng 3 — **đề hỏi gì** — là tầng bắt được nhiều lỗi nhất. |
-| C.2 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
-| C.3 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10. |
-| C.4 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
-| C.5 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
+| C.2 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10. |
+| C.3 | TD2, TD3 | Phải tính **tiền hàng** trước khi trừ. |
+| C.4 | TD1 | Nhớ đúng **số lần** giữa hai đơn vị. |
+| C.5 | TD3, TD6 | Số lần nghỉ = số tiết − 1, không phải bằng số tiết. |
 | D.1 | TD3 | Vẽ **từ trí nhớ** mới có tác dụng; chép lại thì không. |
-| D.2 | TD1 | Nhớ đúng **số lần** giữa hai đơn vị. |
-| D.3 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10. |
-| D.4 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
-| D.5 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
+| D.2 | TD1, TD3 | Đổi hết về **một đơn vị chung** trước khi cộng. |
+| D.3 | TD2, TD3 | Phải tính **tiền hàng** trước khi trừ. |
+| D.4 | TD4, TD1 | Thứ trong tuần **tuần hoàn chu kì 7** — chia lấy dư là ra. |
+| D.5 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
 | E.1 | TD3, TD6 | Giảng được cho bạn hiểu mới là **đã hiểu**. |
-| E.2 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
-| E.3 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác. |
-| E.4 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
-| E.5 | TD1 | Đếm đúng **số bậc** giữa hai đơn vị trên bảng. |
+| E.2 | TD1, TD3 | Thời gian đếm theo **60**, không theo 10. |
+| E.3 | TD2, TD6 | Chia không hết nghĩa là **không cân được** bằng loại quả cân ấy. |
+| E.4 | TD3, TD5 | Trừ **số gói** trước khi nhân thì ít phép tính hơn. |
+| E.5 | TD1 | Nhớ đúng **số lần** giữa hai đơn vị. |
 
 ---
 
@@ -300,8 +658,8 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 |---|---|---|
 | A.1 | Đếm hàng từ trái sang phải nên lệch hàng. | Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái. |
 | A.2 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
-| A.3 | Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. | Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị. |
-| A.4 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
+| A.3 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
+| A.4 | So thẳng hai con số mà bỏ qua đơn vị. | Viết lại cả hai vế theo mi-li-lít rồi mới so. |
 | A.5 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
 | B.1 | Viết thẳng phép tính, bỏ câu lời giải. | Đọc lại bài đã làm, đếm xem có đủ bốn dòng chưa. |
 | B.2 | Viết câu lời giải chung chung cho mọi bài. | Lấy đúng cụm từ trong câu hỏi của đề làm câu lời giải. |
@@ -309,20 +667,20 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 | B.4 | Ghi lỗi vào sổ nhưng không ghi cách phòng nên lần sau vẫn sai. | Mỗi dòng sổ lỗi bắt buộc có hai cột: lỗi và cách phòng. |
 | B.5 | Bỏ câu lời giải vì nghĩ “không quan trọng”. | Tự chấm bài của bạn cùng bàn theo đúng thang này một lần mỗi tuần. |
 | C.1 | Dò lại phép tính nhưng không đọc lại câu hỏi. | Sau mỗi bài, đọc to lại câu hỏi rồi đối chiếu với đáp số. |
-| C.2 | Trừ số gói cho số gam, hai đại lượng khác loại. | Ghi đơn vị sau mỗi số để không trừ nhầm. |
-| C.3 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
-| C.4 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
-| C.5 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
+| C.2 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
+| C.3 | Lấy tiền đưa trừ ngay giá một quyển vở. | Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. |
+| C.4 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
+| C.5 | Nhân số lần nghỉ bằng số tiết nên thừa một lần nghỉ. | Vẽ một hàng: tiết – nghỉ – tiết – nghỉ – tiết, rồi đếm. |
 | D.1 | Vừa vẽ vừa nhìn phiếu Lý thuyết. | Úp phiếu Lý thuyết xuống bàn trước khi bắt đầu vẽ. |
-| D.2 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
-| D.3 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
-| D.4 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
-| D.5 | Trừ số gói cho số gam, hai đại lượng khác loại. | Ghi đơn vị sau mỗi số để không trừ nhầm. |
+| D.2 | Cộng thẳng các số đứng trước những đơn vị khác nhau. | Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng. |
+| D.3 | Lấy tiền đưa trừ ngay giá một quyển vở. | Viết rõ dòng “Tiền hàng là …” rồi mới sang bước hai. |
+| D.4 | Đếm tay từng ngày nên vừa lâu vừa sai. | Đếm số ngày cách nhau rồi chia 7 lấy dư. |
+| D.5 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
 | E.1 | Đọc thuộc lòng phiếu thay vì giảng bằng lời của mình. | Cấm cầm phiếu khi thuyết trình; chỉ được cầm sơ đồ tư duy tự vẽ. |
-| E.2 | Trừ số gói cho số gam, hai đại lượng khác loại. | Ghi đơn vị sau mỗi số để không trừ nhầm. |
-| E.3 | Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. | Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không. |
-| E.4 | Làm tròn lên rồi coi như cân được. | Kiểm tra phép chia có dư hay không trước khi kết luận. |
-| E.5 | Đổi ngược chiều nên nhân thành chia. | Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay. |
+| E.2 | Cộng phần phút thành hơn 60 mà quên đổi thành giờ. | Kiểm tra: phần phút của đáp số phải bé hơn 60. |
+| E.3 | Làm tròn lên rồi coi như cân được. | Kiểm tra phép chia có dư hay không trước khi kết luận. |
+| E.4 | Trừ số gói cho số gam, hai đại lượng khác loại. | Ghi đơn vị sau mỗi số để không trừ nhầm. |
+| E.5 | Nhầm 1 m = 10 cm. | Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm. |
 
 ---
 
@@ -332,8 +690,8 @@ Chép cả hai cột vào sổ lỗi. Chỉ chép cột trái là vô ích.
 
 **Bài A.1** — (1) Hàng đơn vị là chữ số cuối cùng bên phải. — (2) Đếm ngược: đơn vị, chục, trăm, nghìn… — (3) Giá trị = chữ số × 1, 10, 100, 1 000… tuỳ hàng.
 **Bài A.2** — (1) 1 tấn bằng bao nhiêu ki-lô-gam? — (2) Đổi từng phần về ki-lô-gam. — (3) Cộng tất cả lại.
-**Bài A.3** — (1) Nhìn chữ số cuối cùng bên phải. — (2) Liền trước = trừ 1; liền sau = cộng 1. — (3) Hai số chẵn liên tiếp cách nhau 2 đơn vị.
-**Bài A.4** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
+**Bài A.3** — (1) Viết bảng đơn vị từ lớn đến bé. — (2) Đếm xem hai đơn vị cách nhau mấy bậc. — (3) Từ lớn sang bé thì nhân, mỗi bậc nhân 10.
+**Bài A.4** — (1) 1 lít bằng bao nhiêu mi-li-lít? — (2) Đơn vị nào lớn hơn? — (3) Từ lớn sang bé thì nhân.
 **Bài A.5** — (1) 1 giờ bằng bao nhiêu phút? — (2) Chia số phút cho 60, lấy thương và số dư. — (3) Phần phút của kết quả phải bé hơn 60.
 **Bài B.1** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 **Bài B.2** — (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
@@ -364,10 +722,10 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 
 | Bài | Đề tương tự | Đáp số |
 |---|---|---|
-| A.1 | Chữ số hàng chục của số 35 558 có giá trị bao nhiêu? | 50 |
+| A.1 | Chữ số hàng chục của số 68 687 có giá trị bao nhiêu? | 80 |
 | A.2 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
-| A.3 | Số liền sau của 6 211 là số nào? | 6 212 |
-| A.4 | 5 km = … m | 5 000 |
+| A.3 | 5 km = … m | 5 000 |
+| A.4 | 3 l = … ml | 3 000 |
 | A.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | B.1 | Một lời giải đạt chuẩn GITA có mấy dòng bắt buộc? | 4 dòng |
 | B.2 | Đề hỏi “mỗi tổ trồng mấy cây” thì câu lời giải viết thế nào? | “Số cây mỗi tổ trồng được là:” |
@@ -375,20 +733,20 @@ Làm lại vào vở, che cột đáp số. Đúng cả 25 bài mới coi là đ
 | B.4 | Ghi lỗi mà không ghi cách phòng thì sao? | lần sau vẫn mắc lại lỗi đó |
 | B.5 | Thiếu đơn vị ở đáp số bị trừ bao nhiêu? | một phần trong bốn phần điểm |
 | C.1 | Tầng nào bắt được lỗi trả lời lệch câu hỏi? | tầng 3 |
-| C.2 | Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? | 600 g |
-| C.3 | 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? | 8 giờ 10 phút |
-| C.4 | 5 km = … m | 5 000 |
-| C.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
+| C.2 | 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? | 8 giờ 10 phút |
+| C.3 | Mua 3 quyển vở 5 000 đồng một quyển, đưa 20 000 đồng. Trả lại bao nhiêu? | 5 000 đồng |
+| C.4 | 5 m = … cm | 500 |
+| C.5 | Học 3 tiết, mỗi tiết 40 phút, nghỉ 10 phút. Cả buổi mấy phút? | 140 phút |
 | D.1 | Vẽ sơ đồ mà nhìn tài liệu thì mất tác dụng gì? | mất tác dụng kiểm tra trí nhớ |
-| D.2 | 5 m = … cm | 500 |
-| D.3 | 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? | 8 giờ 10 phút |
-| D.4 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
-| D.5 | Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? | 600 g |
+| D.2 | 3 450 kg = … tấn … tạ … kg | 3 tấn 4 tạ 50 kg |
+| D.3 | Mua 3 quyển vở 5 000 đồng một quyển, đưa 20 000 đồng. Trả lại bao nhiêu? | 5 000 đồng |
+| D.4 | Ngày 1 tháng 5 là Thứ Ba, ngày 15 tháng 5 là thứ mấy? | Thứ Ba |
+| D.5 | 155 phút = … giờ … phút | 2 giờ 35 phút |
 | E.1 | Vì sao phải giảng lại cho bạn? | vì giảng được mới là hiểu thật |
-| E.2 | Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? | 600 g |
-| E.3 | 155 phút = … giờ … phút | 2 giờ 35 phút |
-| E.4 | Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? | 5 quả |
-| E.5 | 5 km = … m | 5 000 |
+| E.2 | 7 giờ 40 phút, sau 30 phút nữa là mấy giờ? | 8 giờ 10 phút |
+| E.3 | Quả cân 200 g, vật nặng 1 000 g. Cần mấy quả? | 5 quả |
+| E.4 | Có 5 gói kẹo, mỗi gói 200 g, lấy ra 2 gói. Còn lại bao nhiêu gam? | 600 g |
+| E.5 | 5 m = … cm | 500 |
 
 ---
 

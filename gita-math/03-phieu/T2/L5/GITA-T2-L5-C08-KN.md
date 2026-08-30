@@ -55,53 +55,48 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 22, 24, …, 28, 30, 32
-b) 13, 15, 17, …, 21, 23
-c) 26, 37, 48, 59, …, 81
-d) 40, 55, …, 85, 100, 115
-e) 22, …, 34, 40, 46, 52
+a) 24, …, 34, 39, 44, 49
+b) 20, 29, 38, 47, …, 65
+c) 32, …, 62, 77, 92, 107
+d) 13, 20, 27, …, 41, 48
 
-### Bài 2. (5 điểm) Quy tắc cộng, quy tắc nhân và phép đếm có phần chung
+### Bài 2. (5 điểm) Tìm số hạng thứ n của dãy cách đều
 
-Đọc kĩ chữ “và” hay chữ “hoặc”.
+Cho dãy số: 1, 3, 5, 7, … (mỗi số hơn số liền trước 2 đơn vị).
 
-a) Trên bàn có 10 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-b) Có 12 quyển sách Toán và 4 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-c) Lớp có 10 bạn giỏi Toán, 4 bạn giỏi Tiếng Việt, trong đó 2 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-d) Lớp có 5 bạn giỏi Toán, 12 bạn giỏi Tiếng Việt, trong đó 2 bạn giỏi cả hai môn. Hỏi có bao nhiêu bạn giỏi ít nhất một môn?
-e) Trên bàn có 12 quyển sách Toán và 5 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một** quyển sách bất kì?
-f) Có 9 quyển sách Toán và 6 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
-g) Có 10 quyển sách Toán và 6 quyển sách Tiếng Việt. Có bao nhiêu cách chọn **một quyển Toán và một quyển Tiếng Việt**?
+a) Số hạng thứ 17 của dãy là số nào?
+b) Số hạng thứ 30 của dãy là số nào?
+c) Số hạng thứ 31 của dãy là số nào?
+d) Số hạng thứ 32 của dãy là số nào?
 
-### Bài 3. (5 điểm) Tìm số hạng thứ n của dãy cách đều
+### Bài 3. (5 điểm) Viết tiếp ba số hạng của dãy
 
-Cho dãy số: 24, 39, 54, 69, … (mỗi số hơn số liền trước 15 đơn vị).
+Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
 
-a) Số hạng thứ 13 của dãy là số nào?
-b) Số hạng thứ 14 của dãy là số nào?
-c) Số hạng thứ 20 của dãy là số nào?
-d) Số hạng thứ 21 của dãy là số nào?
-e) Số hạng thứ 46 của dãy là số nào?
+a) 30, 39, 48, 57, …
+b) 31, 35, 39, 43, …
+c) 36, 61, 86, 111, …
+d) 8, 23, 38, 53, …
+e) 31, 34, 37, 40, …
 
 ### Bài 4. (5 điểm) Dãy số theo quy luật nhân
 
 Tìm quy luật rồi viết số hạng tiếp theo.
 
-a) 1, 3, 9, 27, …
-b) 6, 30, 150, 750, …
-c) 1, 3, 9, 27, …
+a) 5, 15, 45, 135, …
+b) 5, 15, 45, 135, …
+c) 3, 15, 75, 375, …
 d) 2, 8, 32, 128, …
-e) 2, 6, 18, 54, …
 
-### Bài 5. (5 điểm) Viết tiếp ba số hạng của dãy
+### Bài 5. (5 điểm) Đọc giá trị của chữ số theo hàng
 
-Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
+Cho số **7 567 180**.
 
-a) 7, 32, 57, 82, …
-b) 10, 17, 24, 31, …
-c) 24, 28, 32, 36, …
-d) 18, 33, 48, 63, …
-e) 20, 24, 28, 32, …
+a) Chữ số ở hàng **triệu** của số 7 567 180 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+b) Chữ số ở hàng **chục nghìn** của số 7 567 180 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+c) Chữ số ở hàng **trăm** của số 7 567 180 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+d) Chữ số ở hàng **chục** của số 7 567 180 là chữ số nào, và nó có giá trị bằng bao nhiêu?
+e) Chữ số ở hàng **đơn vị** của số 7 567 180 là chữ số nào, và nó có giá trị bằng bao nhiêu?
 
 ---
 
@@ -333,34 +328,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 26 · b) 19 · c) 70 · d) 70 · e) 28
+**Đáp số:** a) 29 · b) 56 · c) 47 · d) 34
 **Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
 
 ### Bài A.2
-**Đáp số:** a) 15 cách · b) 48 cách · c) 12 bạn · d) 15 bạn · e) 17 cách · f) 54 cách · g) 60 cách
-**Hướng giải:** BẪY — Phần chung bị đếm hai lần. Chọn **một trong hai nhóm rời nhau** thì cộng. Chọn **mỗi nhóm một phần tử** thì nhân. Khi hai nhóm có phần tử chung, số phần tử thuộc ít nhất một nhóm bằng tổng hai nhóm trừ đi phần chung (vì phần chung đã bị đếm hai lần).
-**Nhãn tư duy:** TD2, TD6. Điểm chốt: Có phần chung thì phải **trừ đi một lần** phần chung.
-**Lỗi thường gặp:** Cộng thẳng hai nhóm khi chúng có phần tử chung. Phòng: Vẽ hai vòng tròn giao nhau, ghi số vào từng miền.
-
-### Bài A.3
-**Đáp số:** a) 204 · b) 219 · c) 309 · d) 324 · e) 699
-**Hướng giải:** Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Đáp số:** a) 33 · b) 59 · c) 61 · d) 63
+**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
 **Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
 **Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
 
+### Bài A.3
+**Đáp số:** a) 66, 75, 84 · b) 47, 51, 55 · c) 136, 161, 186 · d) 68, 83, 98 · e) 43, 46, 49
+**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
+**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
+**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+
 ### Bài A.4
-**Đáp số:** a) 81 · b) 3 750 · c) 81 · d) 512 · e) 162
+**Đáp số:** a) 405 · b) 405 · c) 1 875 · d) 512
 **Hướng giải:** Nếu các hiệu không bằng nhau, hãy thử phép chia: lấy số hạng sau chia số hạng liền trước. Nếu các thương bằng nhau thì đó là dãy nhân, viết tiếp bằng cách nhân với thương đó.
 **Nhãn tư duy:** TD4. Điểm chốt: Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
 **Lỗi thường gặp:** Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. Phòng: Thử cả hai: hiệu trước, thương sau.
 
 ### Bài A.5
-**Đáp số:** a) 107, 132, 157 · b) 38, 45, 52 · c) 40, 44, 48 · d) 78, 93, 108 · e) 36, 40, 44
-**Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
-**Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
-**Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
+**Đáp số:** a) chữ số 7, giá trị 7 000 000 · b) chữ số 6, giá trị 60 000 · c) chữ số 1, giá trị 100 · d) chữ số 8, giá trị 80 · e) chữ số 0, giá trị 0
+**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
+**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

@@ -44,68 +44,68 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
 > 1. Số ngày các tháng, năm nhuận, thế kỉ
-> 2. Bảng đơn vị đo diện tích
-> 3. Bảng đơn vị đo độ dài, khối lượng
-> 4. Đại lượng tỉ lệ nghịch, tổng số ngày công
+> 2. Nhân, trừ; đại lượng cùng loại
+> 3. Bảng đơn vị khối lượng; phép chia có dư
+> 4. Nhân, trừ; đơn vị khối lượng, độ dài, dung tích
 
 ---
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
+### Bài 1. (1 điểm) Chu vi và diện tích hình chữ nhật, hình vuông
+
+Tính theo yêu cầu, ghi rõ đơn vị.
+
+a) Hình vuông có cạnh 31 cm. Tính diện tích.
+b) Hình vuông có cạnh 7 cm. Tính chu vi.
+c) Hình chữ nhật có chiều dài 26 cm, chiều rộng 4 cm. Tính chu vi.
+d) Hình chữ nhật có chiều dài 55 cm, chiều rộng 42 cm. Tính diện tích.
+e) Hình vuông có cạnh 57 cm. Tính chu vi.
+
+### Bài 2. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 46 kg = … dag
-b) 35 dam = … cm
-c) 65 tạ = … hg
-d) 22 dm = … cm
-e) 69 tạ = … hg
-f) 43 dm = … mm
-
-### Bài 2. (1 điểm) Đổi đơn vị đo diện tích
-
-Điền số thích hợp.
-
-a) 26 ha = … m²
-b) 27 dm² = … cm²
-c) 22 m² = … dm²
-d) 7 km² = … m²
-e) 76 km² = … ha
+a) 31 yến = … g
+b) 45 km = … dm
+c) 83 tấn = … yến
+d) 89 m = … cm
+e) 39 hm = … cm
+f) 15 dag = … g
 
 ### Bài 3. (1 điểm) Đổi số đo khối lượng có nhiều đơn vị
 
 Điền vào chỗ chấm.
 
-a) 2 tấn 1 tạ 82 kg = … kg
-b) 5 tấn 3 tạ 81 kg = … kg
-c) 5 tấn 1 tạ 44 kg = … kg
-d) 1 896 kg = … tấn … tạ … kg
-e) 8 tạ 48 kg = … kg
-f) 5 649 kg = … tấn … tạ … kg
+a) 390 kg = … tấn … tạ … kg
+b) 6 814 kg = … tấn … tạ … kg
+c) 2 tấn 6 tạ 96 kg = … kg
+d) 5 tấn 6 tạ 45 kg = … kg
+e) 3 818 kg = … tấn … tạ … kg
+f) 3 tấn 3 tạ 73 kg = … kg
 
 ### Bài 4. (1 điểm) Đơn vị đo thời gian: giờ và phút
 
 Điền kết quả, viết dạng giờ và phút.
 
-a) 326 phút = … giờ … phút
-b) 9 giờ 37 phút − 395 phút = … (viết dạng giờ và phút)
-c) 1 giờ 17 phút = … phút
-d) 7 giờ 32 phút + 38 phút = … (viết dạng giờ và phút)
-e) 5 giờ 50 phút = … phút
-f) 6 giờ 15 phút − 40 phút = … (viết dạng giờ và phút)
+a) 7 giờ 32 phút + 38 phút = … (viết dạng giờ và phút)
+b) 1 giờ 57 phút − 87 phút = … (viết dạng giờ và phút)
+c) 7 giờ 39 phút = … phút
+d) 126 phút = … giờ … phút
+e) 5 giờ 18 phút − 217 phút = … (viết dạng giờ và phút)
+f) 317 phút = … giờ … phút
 
-### Bài 5. (1 điểm) Đặt tính rồi tính (nhân, chia)
+### Bài 5. (1 điểm) Đổi đơn vị đo diện tích
 
-Đặt tính rồi tính.
+Điền số thích hợp.
 
-a) 3 336 × 92
-b) 3 781 × 96
-c) 3 621 × 72
-d) 9 008 × 14
-e) 5 783 × 29
-f) 115 196 : 62
-g) 193 596 : 34
+a) 13 km² = … ha
+b) 40 ha = … m²
+c) 53 km² = … ha
+d) 21 m² = … dm²
+e) 83 m² = … dm²
+f) 53 m² = … cm²
+g) 58 km² = … ha
 
 ---
 
@@ -144,12 +144,12 @@ e) Cụm này gồm mấy buổi học?
 
 Mỗi dạng bài có những từ khoá riêng. Ghi lại từ khoá em nhận ra.
 
-a) Nêu một dấu hiệu nhận biết của dạng “Bốn phép tính với số đo”.
-b) Nêu một dấu hiệu nhận biết của dạng “Tỉ lệ nghịch, so sánh hai phương án”.
+a) Nêu một dấu hiệu nhận biết của dạng “Tính thời điểm trong ngày”.
+b) Nêu một dấu hiệu nhận biết của dạng “Đại lượng khối lượng, chia phần và làm tròn lên”.
 c) Nêu một dấu hiệu nhận biết của dạng “Đổi đơn vị diện tích”.
 d) Nêu một dấu hiệu nhận biết của dạng “Số đo có nhiều đơn vị”.
-e) Nêu một dấu hiệu nhận biết của dạng “Đổi đơn vị đo”.
-f) Nêu một dấu hiệu nhận biết của dạng “Bài toán đại lượng có lời văn”.
+e) Nêu một dấu hiệu nhận biết của dạng “Tỉ lệ nghịch, so sánh hai phương án”.
+f) Nêu một dấu hiệu nhận biết của dạng “Đổi đơn vị diện tích”.
 
 ### Bài 5. (1 điểm) Mục tiêu của riêng em
 
@@ -179,52 +179,52 @@ e) Kể tên nội dung chính cuối cùng.
 
 Điền các công thức, quy tắc bắt buộc của chương.
 
-a) Công thức hoặc quy tắc dùng cho dạng “Bốn phép tính với số đo”?
-b) Công thức hoặc quy tắc dùng cho dạng “Tỉ lệ nghịch, so sánh hai phương án”?
+a) Công thức hoặc quy tắc dùng cho dạng “Tính thời điểm trong ngày”?
+b) Công thức hoặc quy tắc dùng cho dạng “Đại lượng khối lượng, chia phần và làm tròn lên”?
 c) Công thức hoặc quy tắc dùng cho dạng “Đổi đơn vị diện tích”?
 d) Công thức hoặc quy tắc dùng cho dạng “Số đo có nhiều đơn vị”?
-e) Công thức hoặc quy tắc dùng cho dạng “Đổi đơn vị đo”?
-f) Công thức hoặc quy tắc dùng cho dạng “Bài toán đại lượng có lời văn”?
+e) Công thức hoặc quy tắc dùng cho dạng “Tỉ lệ nghịch, so sánh hai phương án”?
+f) Công thức hoặc quy tắc dùng cho dạng “Đổi đơn vị diện tích”?
 
 ### Bài 3. (4 điểm) Ô 4 và ô 5 — hình vẽ và bài tập minh hoạ
 
 Với mỗi dạng bài, chọn một cách minh hoạ.
 
-a) Dạng “Bốn phép tính với số đo” nên minh hoạ bằng hình vẽ hay bằng bảng?
-b) Dạng “Tỉ lệ nghịch, so sánh hai phương án” nên minh hoạ bằng hình vẽ hay bằng bảng?
+a) Dạng “Tính thời điểm trong ngày” nên minh hoạ bằng hình vẽ hay bằng bảng?
+b) Dạng “Đại lượng khối lượng, chia phần và làm tròn lên” nên minh hoạ bằng hình vẽ hay bằng bảng?
 c) Dạng “Đổi đơn vị diện tích” nên minh hoạ bằng hình vẽ hay bằng bảng?
 d) Dạng “Số đo có nhiều đơn vị” nên minh hoạ bằng hình vẽ hay bằng bảng?
-e) Dạng “Đổi đơn vị đo” nên minh hoạ bằng hình vẽ hay bằng bảng?
+e) Dạng “Tỉ lệ nghịch, so sánh hai phương án” nên minh hoạ bằng hình vẽ hay bằng bảng?
 
 ### Bài 4. (4 điểm) Ô 6 — dạng bài và dấu hiệu nhận biết
 
 Ghép mỗi dạng bài với dấu hiệu nhận biết của nó.
 
-a) Dấu hiệu nào cho biết đề thuộc dạng “Bốn phép tính với số đo”?
-b) Dấu hiệu nào cho biết đề thuộc dạng “Tỉ lệ nghịch, so sánh hai phương án”?
+a) Dấu hiệu nào cho biết đề thuộc dạng “Tính thời điểm trong ngày”?
+b) Dấu hiệu nào cho biết đề thuộc dạng “Đại lượng khối lượng, chia phần và làm tròn lên”?
 c) Dấu hiệu nào cho biết đề thuộc dạng “Đổi đơn vị diện tích”?
 d) Dấu hiệu nào cho biết đề thuộc dạng “Số đo có nhiều đơn vị”?
-e) Dấu hiệu nào cho biết đề thuộc dạng “Đổi đơn vị đo”?
-f) Dấu hiệu nào cho biết đề thuộc dạng “Bài toán đại lượng có lời văn”?
+e) Dấu hiệu nào cho biết đề thuộc dạng “Tỉ lệ nghịch, so sánh hai phương án”?
+f) Dấu hiệu nào cho biết đề thuộc dạng “Đổi đơn vị diện tích”?
 
 ### Bài 5. (4 điểm) Ô 7 — phương pháp ghi điểm 10
 
 Ghi lại cách xử lý nhanh nhất của từng dạng.
 
-a) Cách xử lý nhanh nhất của dạng “Bốn phép tính với số đo” là gì?
-b) Cách xử lý nhanh nhất của dạng “Tỉ lệ nghịch, so sánh hai phương án” là gì?
+a) Cách xử lý nhanh nhất của dạng “Tính thời điểm trong ngày” là gì?
+b) Cách xử lý nhanh nhất của dạng “Đại lượng khối lượng, chia phần và làm tròn lên” là gì?
 c) Cách xử lý nhanh nhất của dạng “Đổi đơn vị diện tích” là gì?
 d) Cách xử lý nhanh nhất của dạng “Số đo có nhiều đơn vị” là gì?
-e) Cách xử lý nhanh nhất của dạng “Đổi đơn vị đo” là gì?
-f) Cách xử lý nhanh nhất của dạng “Bài toán đại lượng có lời văn” là gì?
+e) Cách xử lý nhanh nhất của dạng “Tỉ lệ nghịch, so sánh hai phương án” là gì?
+f) Cách xử lý nhanh nhất của dạng “Đổi đơn vị diện tích” là gì?
 
 ---
 
 ## PHẦN D — HỆ THỐNG LÝ THUYẾT THEO KEY · Mức M2 — Thông hiểu · 25 phút · 30 điểm
 
-### Bài 1. (6 điểm) Key 1 — Bốn phép tính với số đo
+### Bài 1. (6 điểm) Key 1 — Tính thời điểm trong ngày
 
-**Phát biểu:** Đổi đơn vị, bốn phép tính. **Ví dụ mẫu:** 2 m 30 cm + 150 cm = … cm → 380.
+**Phát biểu:** Quan hệ giờ – phút, phép chia có dư. **Ví dụ mẫu:** Tàu chạy lúc 7 giờ 40 phút, đi hết 2 giờ 35 phút. Đến lúc mấy giờ? → 10 giờ 15 phút.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -233,9 +233,9 @@ d) Phương pháp áp dụng key này là gì?
 e) Lỗi thường gặp khi dùng key này?
 f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
-### Bài 2. (6 điểm) Key 2 — Tỉ lệ nghịch, so sánh hai phương án
+### Bài 2. (6 điểm) Key 2 — Đại lượng khối lượng, chia phần và làm tròn lên
 
-**Phát biểu:** Đại lượng tỉ lệ nghịch, tổng số ngày công. **Ví dụ mẫu:** 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? → 4 ngày.
+**Phát biểu:** Bảng đơn vị khối lượng; phép chia có dư. **Ví dụ mẫu:** 3 tấn 4 tạ 50 kg = … kg → 3 450 kg.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -266,9 +266,9 @@ d) Phương pháp áp dụng key này là gì?
 e) Lỗi thường gặp khi dùng key này?
 f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
-### Bài 5. (6 điểm) Key 5 — Đổi đơn vị đo
+### Bài 5. (6 điểm) Key 5 — Tỉ lệ nghịch, so sánh hai phương án
 
-**Phát biểu:** Bảng đơn vị đo độ dài, khối lượng. **Ví dụ mẫu:** 5 km = … m → 5 000.
+**Phát biểu:** Đại lượng tỉ lệ nghịch, tổng số ngày công. **Ví dụ mẫu:** 6 người làm xong trong 10 ngày. Thêm 4 người thì sớm hơn mấy ngày? → 4 ngày.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -281,58 +281,64 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) So sánh hai số đo khác đơn vị
+### Bài 1. (8 điểm) Dãy hình xếp theo quy luật
+
+Quan sát quy luật số que diêm rồi trả lời.
+
+a) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 2 que. Hình thứ 4 có bao nhiêu que diêm?
+b) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 2 que. Hình thứ 10 có bao nhiêu que diêm?
+c) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 2 que. Hình thứ 11 có bao nhiêu que diêm?
+d) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 2 que. Hình thứ 17 có bao nhiêu que diêm?
+e) Hình thứ 1 có 2 que diêm, mỗi hình sau hơn hình liền trước 2 que. Hình thứ 24 có bao nhiêu que diêm?
+f) Xếp liên tiếp 25 hình đầu tiên thì cần tất cả bao nhiêu que diêm?
+
+### Bài 2. (8 điểm) So sánh hai số đo khác đơn vị
 
 Điền dấu <, >, = thích hợp.
 
-a) 57 ha … 6 246 dm²
-b) 26 cm … 447 km
-c) 48 kg … 3 153 g
-d) 74 m² … 4 531 cm²
-e) 88 dag … 5 762 hg
-f) 37 km … 7 829 m
+a) 71 yến … 2 942 kg
+b) 28 km … 7 741 mm
+c) 56 dm² … 7 302 cm²
+d) 84 yến … 3 109 tấn
+e) 9 mm … 7 528 hm
+f) 42 ha … 6 512 cm²
 
-### Bài 2. (8 điểm) Đếm số thoả điều kiện trong một khoảng
+### Bài 3. (8 điểm) Đơn vị đo diện tích
 
-Đếm số lượng, không cần liệt kê.
+Điền số thích hợp vào chỗ chấm.
 
-a) Có bao nhiêu số chia hết cho 5 từ 297 đến 785?
-b) Có bao nhiêu số chẵn từ 347 đến 837?
-c) Có bao nhiêu số chia hết cho 3 từ 236 đến 308?
-d) Có bao nhiêu số lẻ từ 142 đến 423?
-e) Có bao nhiêu số chia hết cho 3 từ 201 đến 647?
-f) Có bao nhiêu số chẵn từ 73 đến 596?
+a) 52 dm² = … cm²
+b) 77 m² = … cm²
+c) 60 m² = … dm²
+d) 2 m² = … cm²
+e) 2 600 cm² = … dm²
+f) 4 000 dm² = … m²
+g) 29 dm² = … cm²
+h) 83 m² = … dm²
 
-### Bài 3. (8 điểm) Diện tích hình bình hành, hình thoi, hình tam giác
-
-Áp dụng đúng công thức từng hình.
-
-a) Hình thoi có hai đường chéo dài 16 cm và 34 cm. Tính diện tích.
-b) Hình tam giác có đáy 34 cm, chiều cao 15 cm. Tính diện tích.
-c) Hình bình hành có đáy 21 cm, chiều cao 5 cm. Tính diện tích.
-d) Hình tam giác có đáy 7 cm, chiều cao 26 cm. Tính diện tích.
-
-### Bài 4. (8 điểm) Lịch, thế kỉ, năm nhuận
-
-Trả lời ngắn gọn.
-
-a) Năm 1984 có phải năm nhuận không?
-b) 33 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-c) Năm 1968 thuộc thế kỉ thứ mấy?
-d) Tháng 10 năm 1906 có bao nhiêu ngày?
-e) 30 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-
-### Bài 5. (8 điểm) Tính toán với số đo đại lượng
+### Bài 4. (8 điểm) Tính toán với số đo đại lượng
 
 Đổi về cùng đơn vị rồi tính.
 
-a) 2 kg 334 g − 167 g = … g
-b) 13 kg 408 g − 204 g = … g
-c) 20 m 63 cm + 363 cm = … cm
-d) 22 m 13 cm × 2 = … cm
-e) 18 kg 539 g − 269 g = … g
-f) 6 m 9 cm × 4 = … cm
-g) 4 756 cm : 4 = … cm
+a) 34 m 68 cm + 168 cm = … cm
+b) 25 m 58 cm × 8 = … cm
+c) 13 kg 179 g − 89 g = … g
+d) 37 kg 703 g − 351 g = … g
+e) 13 m 54 cm + 254 cm = … cm
+f) 6 190 cm : 2 = … cm
+g) 34 m 12 cm + 712 cm = … cm
+
+### Bài 5. (8 điểm) Lịch, thế kỉ, năm nhuận
+
+Trả lời ngắn gọn.
+
+a) Tháng 12 năm 1897 có bao nhiêu ngày?
+b) Năm 1918 thuộc thế kỉ thứ mấy?
+c) Năm 2056 có phải năm nhuận không?
+d) 46 ngày bằng bao nhiêu tuần lễ và mấy ngày?
+e) Tháng 6 năm 1950 có bao nhiêu ngày?
+f) Năm 2062 thuộc thế kỉ thứ mấy?
+g) 37 ngày bằng bao nhiêu tuần lễ và mấy ngày?
 
 ---
 
@@ -341,34 +347,34 @@ g) 4 756 cm : 4 = … cm
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 4 600 · b) 35 000 · c) 65 000 · d) 220 · e) 69 000 · f) 4 300
+**Đáp số:** a) 961 cm² · b) 28 cm · c) 60 cm · d) 2 310 cm² · e) 228 cm
+**Hướng giải:** Chu vi hình chữ nhật = (dài + rộng) × 2. Diện tích hình chữ nhật = dài × rộng. Chu vi hình vuông = cạnh × 4. Diện tích hình vuông = cạnh × cạnh.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Chu vi ghi đơn vị **cm**, diện tích ghi đơn vị **cm²** — sai đơn vị là mất điểm.
+**Lỗi thường gặp:** Nhầm công thức chu vi với diện tích; quên nhân 2 ở chu vi. Phòng: Vẽ hình và ghi số đo lên hình trước khi tính.
+
+### Bài A.2
+**Đáp số:** a) 310 000 · b) 450 000 · c) 8 300 · d) 8 900 · e) 390 000 · f) 150
 **Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
 **Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
 **Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
 
-### Bài A.2
-**Đáp số:** a) 260 000 · b) 2 700 · c) 2 200 · d) 7 000 000 · e) 7 600
-**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
-**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
-
 ### Bài A.3
-**Đáp số:** a) 2 182 · b) 5 381 · c) 5 144 · d) 1 tấn 8 tạ 96 kg · e) 848 · f) 5 tấn 6 tạ 49 kg
+**Đáp số:** a) 3 tạ 90 kg · b) 6 tấn 8 tạ 14 kg · c) 2 696 · d) 5 645 · e) 3 tấn 8 tạ 18 kg · f) 3 373
 **Hướng giải:** 1 tấn = 10 tạ = 1 000 kg; 1 tạ = 100 kg; 1 yến = 10 kg. Đổi tất cả về ki-lô-gam rồi cộng lại; hoặc ngược lại, chia dần từ đơn vị lớn xuống đơn vị bé và lấy phần dư.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đổi hết về **một đơn vị chung** trước khi cộng.
 **Lỗi thường gặp:** Cộng thẳng các số đứng trước những đơn vị khác nhau. Phòng: Viết mỗi thành phần thành số ki-lô-gam ngay bên dưới rồi mới cộng.
 
 ### Bài A.4
-**Đáp số:** a) 5 giờ 26 phút · b) 3 giờ 2 phút · c) 77 · d) 8 giờ 10 phút · e) 350 · f) 5 giờ 35 phút
+**Đáp số:** a) 8 giờ 10 phút · b) 30 phút · c) 459 · d) 2 giờ 6 phút · e) 1 giờ 41 phút · f) 5 giờ 17 phút
 **Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
 **Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
 
 ### Bài A.5
-**Đáp số:** a) 306 912 · b) 362 976 · c) 260 712 · d) 126 112 · e) 167 707 · f) 1 858 · g) 5 694
-**Hướng giải:** Nhân lần lượt từng chữ số của thừa số thứ hai với số thứ nhất, mỗi tích riêng viết lùi sang trái một cột rồi cộng lại. Chia thì lấy từng phần của số bị chia, mỗi lần hạ một chữ số phải viết một chữ số ở thương.
-**Nhãn tư duy:** TD1. Điểm chốt: Mỗi lần hạ một chữ số là **bắt buộc** viết một chữ số ở thương, kể cả chữ số 0.
-**Lỗi thường gặp:** Quên viết chữ số 0 ở thương nên thương thiếu chữ số. Phòng: Đếm số chữ số của thương trước khi chia để biết mình cần viết mấy chữ số.
+**Đáp số:** a) 1 300 · b) 400 000 · c) 5 300 · d) 2 100 · e) 8 300 · f) 530 000 · g) 5 800
+**Hướng giải:** Hai đơn vị diện tích liền kề hơn kém nhau **100 lần** (chứ không phải 10 lần như đơn vị độ dài), vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc.
+**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết bảng đơn vị diện tích riêng, ghi rõ “×100” giữa hai bậc.
 
 ### Bài B.1
 **Đáp số:** a) Đơn vị đo khối lượng, thời gian và diện tích · b) E — Đại lượng – Đo lường – Thời gian · c) 4 · d) ở mọi bài thuộc đại lượng – đo lường – thời gian, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài yến, tạ, tấn — đổi đơn vị đo khối lượng
@@ -389,7 +395,7 @@ g) 4 756 cm : 4 = … cm
 **Lỗi thường gặp:** Không nhớ mốc kiểm tra nên ôn muộn. Phòng: Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm.
 
 ### Bài B.4
-**Đáp số:** a) Các số hạng có đơn vị khác nhau trong cùng một phép tính · b) Thay đổi số người, hỏi thay đổi thời gian · c) Đơn vị có mũ hai: m², cm², km², ha · d) Số đo viết dưới dạng “… tấn … tạ … kg” · e) Dấu … giữa hai đơn vị khác nhau · f) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện
+**Đáp số:** a) Cho thời điểm bắt đầu và khoảng thời gian · b) Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” · c) Đơn vị có mũ hai: m², cm², km², ha · d) Số đo viết dưới dạng “… tấn … tạ … kg” · e) Thay đổi số người, hỏi thay đổi thời gian · f) Đơn vị có mũ hai, hoặc ha, km²
 **Hướng giải:** Dấu hiệu nhận biết là những chữ có mặt trong đề bài, không phải là cách giải. Đọc lại cột “Dữ liệu nhận biết” trong bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD2. Điểm chốt: Dấu hiệu nằm ở **chữ trong đề**, không nằm ở phép tính.
 **Lỗi thường gặp:** Trả lời bằng cách giải thay vì bằng dấu hiệu. Phòng: Tự hỏi: em nhìn thấy chữ gì trong đề thì biết đây là dạng này?
@@ -407,41 +413,41 @@ g) 4 756 cm : 4 = … cm
 **Lỗi thường gặp:** Vẽ sơ đồ thành danh sách gạch đầu dòng, mất tính liên kết. Phòng: Bắt buộc vẽ toả từ tâm, mỗi nhánh một màu.
 
 ### Bài C.2
-**Đáp số:** a) Đổi đơn vị, bốn phép tính · b) Đại lượng tỉ lệ nghịch, tổng số ngày công · c) Bảng đơn vị đo diện tích · d) Bảng đơn vị khối lượng · e) Bảng đơn vị đo độ dài, khối lượng · f) Nhân, chia số tự nhiên; đổi đơn vị khối lượng
+**Đáp số:** a) Quan hệ giờ – phút, phép chia có dư · b) Bảng đơn vị khối lượng; phép chia có dư · c) Bảng đơn vị đo diện tích · d) Bảng đơn vị khối lượng · e) Đại lượng tỉ lệ nghịch, tổng số ngày công · f) Bảng đơn vị đo diện tích
 **Hướng giải:** Mỗi dạng bài có một công thức hoặc một quy tắc gốc. Chép lại từ cột “Kiến thức liên quan” của bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Công thức phải **thuộc lòng**, không tra sách khi làm bài.
 **Lỗi thường gặp:** Nhớ công thức nhưng không nhớ nó dùng cho dạng nào. Phòng: Luôn viết công thức kèm tên dạng bài đi cùng nó.
 
 ### Bài C.3
-**Đáp số:** a) Đổi về đơn vị của kết quả rồi tính · b) Bám vào tổng số ngày công không đổi · c) Đếm bậc rồi nhân, chia 100 · d) Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · e) Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10
+**Đáp số:** a) Quy về phút, cộng trừ, đổi lại · b) Quy về một đơn vị, chia, xét phần dư · c) Đếm bậc rồi nhân, chia 100 · d) Quy về một đơn vị rồi cộng; hoặc chia dần lấy dư · e) Bám vào tổng số ngày công không đổi
 **Hướng giải:** Dạng nào có quan hệ hơn kém thì vẽ sơ đồ đoạn thẳng; dạng nào có nhiều trường hợp thì kẻ bảng; dạng nào về hình thì vẽ hình và ghi số đo lên hình.
 **Nhãn tư duy:** TD3. Điểm chốt: Chọn đúng **kiểu minh hoạ** giúp nhìn ra lời giải nhanh hơn hẳn.
 **Lỗi thường gặp:** Dạng nào cũng vẽ sơ đồ đoạn thẳng, kể cả bài đếm. Phòng: Hỏi trước: bài này có quan hệ hơn kém, có nhiều trường hợp, hay có hình?
 
 ### Bài C.4
-**Đáp số:** a) Các số hạng có đơn vị khác nhau trong cùng một phép tính · b) Thay đổi số người, hỏi thay đổi thời gian · c) Đơn vị có mũ hai: m², cm², km², ha · d) Số đo viết dưới dạng “… tấn … tạ … kg” · e) Dấu … giữa hai đơn vị khác nhau · f) Đơn vị trong câu hỏi khác đơn vị trong dữ kiện
+**Đáp số:** a) Cho thời điểm bắt đầu và khoảng thời gian · b) Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” · c) Đơn vị có mũ hai: m², cm², km², ha · d) Số đo viết dưới dạng “… tấn … tạ … kg” · e) Thay đổi số người, hỏi thay đổi thời gian · f) Đơn vị có mũ hai, hoặc ha, km²
 **Hướng giải:** Dấu hiệu nhận biết luôn là **chữ có trong đề**: một cụm từ khoá, một kiểu dữ kiện, hoặc một cách hỏi.
 **Nhãn tư duy:** TD2. Điểm chốt: Đọc vị được đề là **đã đi được nửa đường**.
 **Lỗi thường gặp:** Lẫn dấu hiệu nhận biết với phương pháp giải. Phòng: Dấu hiệu trả lời câu “thấy gì?”, phương pháp trả lời câu “làm gì?”.
 
 ### Bài C.5
-**Đáp số:** a) Đọc chỗ chấm trước, biết ngay đơn vị đích. · b) Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. · c) Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. · d) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. · e) Số bậc chính là số chữ số 0 phải thêm vào (hoặc bớt đi). · f) 1 tạ = 100 kg, nên chia số ki-lô-gam cho 100 là ra số tạ.
+**Đáp số:** a) Cộng tròn giờ trước rồi cộng phần phút lẻ sau. · b) 1 tấn = 1 000 kg nên chia cho 1 000 là bớt ba chữ số 0. · c) Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”. · d) Chia số ki-lô-gam cho 1 000 lấy thương là tấn, phần dư chia tiếp cho 100 là tạ. · e) Số người tăng gấp k lần thì số ngày giảm còn 1 phần k. · f) Mỗi bậc thêm hai chữ số 0 — nhớ “diện tích thì gấp đôi số 0”.
 **Hướng giải:** Cách xử lý nhanh nhất thường là một nhận xét giúp bỏ bớt một hai bước tính. Chép lại từ cột “Cách xử lý nhanh nhất”.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt.
 **Lỗi thường gặp:** Dùng mẹo mà không hiểu vì sao đúng nên áp dụng sai chỗ. Phòng: Với mỗi mẹo, viết thêm một dòng “mẹo này đúng vì …”.
 
 ### Bài D.1
-**Đáp số:** a) Đổi đơn vị, bốn phép tính · b) Bốn phép tính với số đo · c) Các số hạng có đơn vị khác nhau trong cùng một phép tính · d) Đổi về đơn vị của kết quả rồi tính · e) Cộng số mét với số xăng-ti-mét mà chưa đổi. · f) 380
-**Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
-**Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
+**Đáp số:** a) Quan hệ giờ – phút, phép chia có dư · b) Tính thời điểm trong ngày · c) Cho thời điểm bắt đầu và khoảng thời gian · d) Quy về phút, cộng trừ, đổi lại · e) Cộng phần phút thành hơn 60 mà quên đổi thành giờ. · f) 10 giờ 15 phút
+**Hướng giải:** Đổi cả giờ khởi hành lẫn thời gian đi về **phút**, cộng lại, rồi đổi kết quả ngược lại thành giờ và phút. Cách này tránh được lỗi nhớ khi phần phút vượt 60.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Đổi hết về phút rồi mới cộng — an toàn hơn cộng trực tiếp.
+**Lỗi thường gặp:** Cộng phần phút thành hơn 60 mà quên đổi thành giờ. Phòng: Kiểm tra phần phút của đáp số phải bé hơn 60.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
-**Đáp số:** a) Đại lượng tỉ lệ nghịch, tổng số ngày công · b) Tỉ lệ nghịch, so sánh hai phương án · c) Thay đổi số người, hỏi thay đổi thời gian · d) Bám vào tổng số ngày công không đổi · e) Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. · f) 4 ngày
-**Hướng giải:** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
-**Nhãn tư duy:** TD6, TD3. Điểm chốt: Đại lượng bất biến ở đây là **tổng số ngày công**.
-**Lỗi thường gặp:** Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. Phòng: Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .
+**Đáp số:** a) Bảng đơn vị khối lượng; phép chia có dư · b) Đại lượng khối lượng, chia phần và làm tròn lên · c) Số đo nhiều đơn vị; câu hỏi “ít nhất bao nhiêu” · d) Quy về một đơn vị, chia, xét phần dư · e) Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. · f) 3 450 kg
+**Hướng giải:** Quy hết về một đơn vị rồi mới tính. Với câu hỏi “cần ít nhất bao nhiêu xe”, phần dư vẫn phải có một xe chở, nên **làm tròn lên**.
+**Nhãn tư duy:** TD3, TD6. Điểm chốt: Câu hỏi “ít nhất bao nhiêu xe” luôn **làm tròn lên**.
+**Lỗi thường gặp:** Chia rồi lấy phần nguyên, bỏ quên phần dư vẫn cần một xe. Phòng: Hỏi lại: phần thóc dư có tự bay đi được không?
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.3
@@ -459,46 +465,46 @@ g) 4 756 cm : 4 = … cm
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.5
-**Đáp số:** a) Bảng đơn vị đo độ dài, khối lượng · b) Đổi đơn vị đo · c) Dấu … giữa hai đơn vị khác nhau · d) Đếm bậc trên bảng đơn vị rồi nhân hoặc chia 10 · e) Đổi ngược chiều nên nhân thành chia. · f) 5 000
-**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Đáp số:** a) Đại lượng tỉ lệ nghịch, tổng số ngày công · b) Tỉ lệ nghịch, so sánh hai phương án · c) Thay đổi số người, hỏi thay đổi thời gian · d) Bám vào tổng số ngày công không đổi · e) Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. · f) 4 ngày
+**Hướng giải:** Tổng số ngày công không đổi: số người × số ngày. Tính tổng số ngày công, chia cho số người mới ra số ngày mới, rồi lấy số ngày cũ trừ số ngày mới để biết sớm hơn bao nhiêu.
+**Nhãn tư duy:** TD6, TD3. Điểm chốt: Đại lượng bất biến ở đây là **tổng số ngày công**.
+**Lỗi thường gặp:** Trừ thẳng số người rồi lấy hiệu làm số ngày rút ngắn. Phòng: Viết rõ: tổng ngày công = … ; số ngày mới = … ; sớm hơn = … .
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài E.1
-**Đáp số:** a) > · b) < · c) > · d) > · e) < · f) >
+**Đáp số:** a) 8 · b) 20 · c) 22 · d) 34 · e) 48 · f) 650
+**Hướng giải:** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
+**Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
+**Gợi ý 3 tầng:** (1) Hình thứ hai hơn hình thứ nhất mấy que? — (2) Hình thứ ba hơn hình thứ hai mấy que? — (3) Đưa về dãy cách đều rồi dùng công thức.
+
+### Bài E.2
+**Đáp số:** a) < · b) > · c) < · d) < · e) < · f) >
 **Hướng giải:** BẪY — Đơn vị khác nhau. Không so sánh trực tiếp hai số đứng trước hai đơn vị khác nhau. Phải đổi cả hai về **cùng một đơn vị** rồi mới so sánh các số.
 **Nhãn tư duy:** TD2, TD1. Điểm chốt: Đổi về cùng đơn vị **trước**, so sánh **sau**.
 **Lỗi thường gặp:** So thẳng hai con số, bỏ qua đơn vị. Phòng: Viết cả hai vế theo đơn vị bé nhất trong hai đơn vị.
 **Gợi ý 3 tầng:** (1) Hai vế đang dùng đơn vị nào? — (2) Chọn một đơn vị chung, nên chọn đơn vị bé hơn. — (3) Đổi cả hai vế rồi so sánh.
 
-### Bài E.2
-**Đáp số:** a) 98 · b) 245 · c) 24 · d) 141 · e) 149 · f) 262
-**Hướng giải:** BẪY — Hai đầu khoảng chưa chắc thoả điều kiện. Các số cần đếm lập thành một dãy cách đều. Số lượng số hạng bằng (số cuối − số đầu) : khoảng cách + 1. Phải tìm đúng số đầu và số cuối **nằm trong khoảng đã cho**.
-**Nhãn tư duy:** TD4, TD1. Điểm chốt: Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị.
-**Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. Phòng: Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức.
-**Gợi ý 3 tầng:** (1) Số đầu tiên trong khoảng thoả điều kiện là số nào? — (2) Số cuối cùng trong khoảng thoả điều kiện là số nào? — (3) Số lượng = (cuối − đầu) : khoảng cách + 1.
-
 ### Bài E.3
-**Đáp số:** a) 272 cm² · b) 255 cm² · c) 105 cm² · d) 91 cm²
-**Hướng giải:** BẪY — Chia 2 hay không chia 2. Hình bình hành: S = đáy × chiều cao. Hình thoi: S = tích hai đường chéo chia 2. Hình tam giác: S = đáy × chiều cao chia 2.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hình bình hành **không** chia 2; hình tam giác và hình thoi **có** chia 2.
-**Lỗi thường gặp:** Chia 2 cho hình bình hành, hoặc quên chia 2 cho hình tam giác. Phòng: Nhớ theo cặp: bình hành ↔ chữ nhật (không chia); tam giác ↔ nửa bình hành (chia 2).
-**Gợi ý 3 tầng:** (1) Đây là hình gì? — (2) Viết công thức diện tích của hình đó. — (3) Kiểm tra xem công thức có chia 2 không.
+**Đáp số:** a) 5 200 · b) 770 000 · c) 6 000 · d) 20 000 · e) 26 · f) 40 · g) 2 900 · h) 8 300
+**Hướng giải:** BẪY — 100 lần chứ không phải 10 lần. Hai đơn vị diện tích liền kề hơn kém nhau **100 lần**, vì diện tích là tích của hai chiều dài. Riêng 1 ha = 10 000 m² và 1 km² = 100 ha.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đơn vị diện tích nhảy **100 lần** mỗi bậc, không phải 10 lần.
+**Lỗi thường gặp:** Đổi như đơn vị độ dài, chỉ nhân 10 mỗi bậc. Phòng: Viết riêng bảng đơn vị diện tích, ghi rõ “× 100” giữa hai bậc liền nhau.
+**Gợi ý 3 tầng:** (1) Hai đơn vị này cách nhau mấy bậc? — (2) Mỗi bậc hơn kém nhau bao nhiêu lần? — (3) Từ lớn sang bé thì nhân.
 
 ### Bài E.4
-**Đáp số:** a) có · b) 4 tuần 5 ngày · c) XX · d) 31 · e) 4 tuần 2 ngày
-**Hướng giải:** BẪY — Năm tròn trăm. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
-**Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
-**Gợi ý 3 tầng:** (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
-
-### Bài E.5
-**Đáp số:** a) 2 167 · b) 13 204 · c) 2 426 · d) 4 426 · e) 18 270 · f) 2 436 · g) 1 189
+**Đáp số:** a) 3 636 · b) 20 464 · c) 13 090 · d) 37 352 · e) 1 608 · f) 3 095 · g) 4 124
 **Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
 **Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
 **Gợi ý 3 tầng:** (1) Kết quả cần ghi theo đơn vị nào? — (2) Đổi mọi số hạng về đơn vị ấy. — (3) Tính như số tự nhiên rồi ghi đơn vị.
+
+### Bài E.5
+**Đáp số:** a) 31 · b) XX · c) có · d) 6 tuần 4 ngày · e) 30 · f) XXI · g) 5 tuần 2 ngày
+**Hướng giải:** BẪY — Năm tròn trăm. Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
+**Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
+**Gợi ý 3 tầng:** (1) Tháng đó nằm trong nhóm 31 ngày hay 30 ngày? — (2) Năm đó có chia hết cho 4 không? — (3) Nếu là năm tròn trăm, có chia hết cho 400 không?
 
 ---
 

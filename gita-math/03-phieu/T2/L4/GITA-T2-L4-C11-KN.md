@@ -51,59 +51,51 @@ Họ và tên: ......................................... Lớp: ......... Điể
 
 ## PHẦN A — CỦNG CỐ NỀN — 30 CÂU TỐC ĐỘ · Mức M1 — Nhận biết · 20 phút · 25 điểm
 
-### Bài 1. (5 điểm) Dãy số theo quy luật nhân
+### Bài 1. (5 điểm) Viết số khi biết tổng các giá trị hàng
 
-Tìm quy luật rồi viết số hạng tiếp theo.
+Viết số tự nhiên ứng với mỗi tổng dưới đây.
 
-a) 5, 10, 20, 40, …
-b) 4, 8, 16, 32, …
-c) 5, 20, 80, 320, …
-d) 3, 9, 27, 81, …
-e) 2, 6, 18, 54, …
-f) 4, 8, 16, 32, …
+a) Viết số gồm tổng: 200 000 + 30 000 + 5 000 + 200 + 30 + 1
+b) Viết số gồm tổng: 200 000 + 60 000 + 700 + 20 + 5
+c) Viết số gồm tổng: 100 000 + 60 000 + 5 000 + 700 + 80 + 6
+d) Viết số gồm tổng: 500 000 + 10 000 + 2 000 + 400 + 30 + 7
+e) Viết số gồm tổng: 900 000 + 2 000 + 600 + 70 + 4
 
-### Bài 2. (5 điểm) Đọc giá trị của chữ số theo hàng
-
-Cho số **215 095**.
-
-a) Chữ số ở hàng **trăm nghìn** của số 215 095 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-b) Chữ số ở hàng **nghìn** của số 215 095 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-c) Chữ số ở hàng **chục** của số 215 095 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-d) Chữ số ở hàng **đơn vị** của số 215 095 là chữ số nào, và nó có giá trị bằng bao nhiêu?
-
-### Bài 3. (5 điểm) Viết tiếp ba số hạng của dãy
+### Bài 2. (5 điểm) Viết tiếp ba số hạng của dãy
 
 Tìm quy luật rồi viết tiếp ba số hạng của mỗi dãy.
 
-a) 28, 30, 32, 34, …
-b) 9, 16, 23, 30, …
-c) 24, 34, 44, 54, …
-d) 2, 11, 20, 29, …
-e) 32, 36, 40, 44, …
-f) 33, 38, 43, 48, …
-g) 38, 53, 68, 83, …
+a) 13, 23, 33, 43, …
+b) 7, 22, 37, 52, …
+c) 9, 13, 17, 21, …
+d) 28, 30, 32, 34, …
 
-### Bài 4. (5 điểm) Tìm số hạng thứ n của dãy cách đều
+### Bài 3. (5 điểm) Dãy số theo quy luật nhân
 
-Cho dãy số: 12, 14, 16, 18, … (mỗi số hơn số liền trước 2 đơn vị).
+Tìm quy luật rồi viết số hạng tiếp theo.
 
-a) Số hạng thứ 7 của dãy là số nào?
-b) Số hạng thứ 17 của dãy là số nào?
-c) Số hạng thứ 18 của dãy là số nào?
-d) Số hạng thứ 25 của dãy là số nào?
-e) Số hạng thứ 28 của dãy là số nào?
-f) Số hạng thứ 34 của dãy là số nào?
+a) 6, 24, 96, 384, …
+b) 6, 24, 96, 384, …
+c) 4, 16, 64, 256, …
+d) 1, 5, 25, 125, …
 
-### Bài 5. (5 điểm) Điền số còn thiếu trong dãy
+### Bài 4. (5 điểm) Điền số còn thiếu trong dãy
 
 Điền số thích hợp vào chỗ chấm.
 
-a) 16, 41, …, 91, 116, 141
-b) 9, 11, …, 15, 17, 19
-c) 12, 27, 42, 57, …, 87
-d) 35, …, 57, 68, 79, 90
-e) 29, 40, 51, …, 73, 84
-f) 2, 9, 16, …, 30, 37
+a) 32, 36, …, 44, 48, 52
+b) 11, …, 41, 56, 71, 86
+c) 12, 14, 16, 18, …, 22
+d) 5, 30, 55, …, 105, 130
+
+### Bài 5. (5 điểm) Tìm số hạng thứ n của dãy cách đều
+
+Cho dãy số: 16, 41, 66, 91, … (mỗi số hơn số liền trước 25 đơn vị).
+
+a) Số hạng thứ 6 của dãy là số nào?
+b) Số hạng thứ 9 của dãy là số nào?
+c) Số hạng thứ 10 của dãy là số nào?
+d) Số hạng thứ 25 của dãy là số nào?
 
 ---
 
@@ -335,34 +327,34 @@ f) Mẹo nhanh em sẽ tặng lớp?
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 80 · b) 64 · c) 1 280 · d) 243 · e) 162 · f) 64
-**Hướng giải:** Nếu các hiệu không bằng nhau, hãy thử phép chia: lấy số hạng sau chia số hạng liền trước. Nếu các thương bằng nhau thì đó là dãy nhân, viết tiếp bằng cách nhân với thương đó.
-**Nhãn tư duy:** TD4. Điểm chốt: Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
-**Lỗi thường gặp:** Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. Phòng: Thử cả hai: hiệu trước, thương sau.
+**Đáp số:** a) 235 231 · b) 260 725 · c) 165 786 · d) 512 437 · e) 902 674
+**Hướng giải:** Mỗi số hạng cho biết một hàng. Xếp các chữ số vào đúng hàng của nó, hàng nào khuyết thì viết chữ số 0.
+**Nhãn tư duy:** TD1, TD3. Điểm chốt: Hàng khuyết trong tổng vẫn phải có chữ số **0** trong số viết ra.
+**Lỗi thường gặp:** Bỏ qua hàng khuyết nên số viết ra bị ngắn đi một chữ số. Phòng: Kẻ sẵn các ô hàng rồi mới điền chữ số vào ô tương ứng.
 
 ### Bài A.2
-**Đáp số:** a) chữ số 2, giá trị 200 000 · b) chữ số 5, giá trị 5 000 · c) chữ số 9, giá trị 90 · d) chữ số 5, giá trị 5
-**Hướng giải:** Đếm hàng từ phải sang trái: đơn vị – chục – trăm – nghìn – chục nghìn – trăm nghìn – triệu. Giá trị của một chữ số bằng chính chữ số đó nhân với giá trị của hàng nó đứng.
-**Nhãn tư duy:** TD1. Điểm chốt: Phân biệt **chữ số** (một kí hiệu) với **giá trị** của chữ số (chữ số nhân giá trị hàng).
-**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
-
-### Bài A.3
-**Đáp số:** a) 36, 38, 40 · b) 37, 44, 51 · c) 64, 74, 84 · d) 38, 47, 56 · e) 48, 52, 56 · f) 53, 58, 63 · g) 98, 113, 128
+**Đáp số:** a) 53, 63, 73 · b) 67, 82, 97 · c) 25, 29, 33 · d) 36, 38, 40
 **Hướng giải:** Lấy số hạng sau trừ số hạng liền trước để tìm khoảng cách. Nếu các hiệu bằng nhau thì đó là dãy cách đều; cứ cộng thêm khoảng cách để viết tiếp.
 **Nhãn tư duy:** TD4. Điểm chốt: Kiểm tra hiệu ở **ít nhất ba cặp** liên tiếp trước khi kết luận quy luật.
 **Lỗi thường gặp:** Chỉ xét hai số đầu rồi vội kết luận. Phòng: Viết hiệu giữa các số hạng ngay dưới dấu ngoặc giữa chúng.
 
-### Bài A.4
-**Đáp số:** a) 24 · b) 44 · c) 46 · d) 60 · e) 66 · f) 78
-**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
-**Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
+### Bài A.3
+**Đáp số:** a) 1 536 · b) 1 536 · c) 1 024 · d) 625
+**Hướng giải:** Nếu các hiệu không bằng nhau, hãy thử phép chia: lấy số hạng sau chia số hạng liền trước. Nếu các thương bằng nhau thì đó là dãy nhân, viết tiếp bằng cách nhân với thương đó.
+**Nhãn tư duy:** TD4. Điểm chốt: Hiệu không đều thì **thử thương** — đó là bước tiếp theo bắt buộc.
+**Lỗi thường gặp:** Cố ép dãy nhân thành dãy cộng nên tìm ra quy luật sai. Phòng: Thử cả hai: hiệu trước, thương sau.
 
-### Bài A.5
-**Đáp số:** a) 66 · b) 13 · c) 72 · d) 46 · e) 62 · f) 23
+### Bài A.4
+**Đáp số:** a) 40 · b) 26 · c) 20 · d) 80
 **Hướng giải:** BẪY — Hai số hai bên chỗ trống cách nhau hai khoảng. Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
 **Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
 **Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
+
+### Bài A.5
+**Đáp số:** a) 141 · b) 216 · c) 241 · d) 616
+**Hướng giải:** BẪY — Nhân với n thay vì (n − 1). Số hạng thứ n = số hạng đầu + (n − 1) × khoảng cách. Chữ **(n − 1)** vì từ số hạng đầu đến số hạng thứ n phải đi qua n − 1 khoảng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Nhân với **(n − 1)** chứ không phải n — đếm khoảng chứ không đếm số hạng.
+**Lỗi thường gặp:** Nhân khoảng cách với n nên kết quả thừa đúng một khoảng. Phòng: Kiểm chứng công thức với n = 1: phải ra đúng số hạng đầu.
 
 ### Bài B.1
 **Đáp số:** a) câu lời giải nêu rõ đang tìm đại lượng nào · b) phép tính, viết đủ dấu và đủ đơn vị · c) kết quả kèm đơn vị · d) câu đáp số · e) một phần tư số điểm của bài

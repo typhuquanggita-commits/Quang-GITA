@@ -42,67 +42,68 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L3-C15-LT-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Phân số dạng một phần mấy
-> 2. Quan hệ ngược của phép chia
-> 3. Phân số một phần mấy, phép trừ liên tiếp
-> 4. Phân số một phần mấy, phép trừ
+> 1. Quan hệ ngược của phép chia
+> 2. Phân số một phần mấy, phép trừ liên tiếp
+> 3. Phân số dạng một phần mấy
+> 4. Biểu đồ tranh, phép nhân và chia
 
 ---
 
 ## PHẦN A — VÍ DỤ DẪN VÀO CHỦ ĐỀ · Mức M1 — Nhận biết · 5 phút · 5 điểm
 
-### Bài 1. (1 điểm) Nhiều hơn – ít hơn, gấp – kém
+### Bài 1. (1 điểm) Bài toán giải bằng hai phép tính
 
-Đọc kĩ rồi trả lời từng câu.
+Mỗi bài trình bày đủ hai bước, mỗi bước một câu lời giải.
 
-a) Yến có 47 quyển vở, Nam có số vở gấp 5 lần Yến. Nam có bao nhiêu quyển vở?
-b) Yến có 10 quyển vở, Nam có ít hơn Yến 4 quyển. Nam có bao nhiêu quyển vở?
-c) Yến có 52 quyển vở, Nam có nhiều hơn Yến 28 quyển. Nam có bao nhiêu quyển vở?
-d) Yến có 240 quyển vở, số vở của Nam kém 5 lần số vở của Yến. Nam có bao nhiêu quyển vở?
+a) Tổ Một có 9 lá cờ. Nhóm Hoa Phượng có gấp 3 lần tổ Một. Hỏi cả hai tổ có bao nhiêu lá cờ?
+b) Đội Hai có 58 lá cờ. Tổ Hai có nhiều hơn đội Hai 8 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+c) Tổ Hai có 49 lá cờ. Tổ Một có ít hơn tổ Hai 15 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+d) Đội Một có 59 lá cờ. Nhóm Sao Mai có nhiều hơn đội Một 24 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+e) Đội Một có 60 lá cờ. Tổ Một có ít hơn đội Một 25 lá cờ. Hỏi cả hai tổ có bao nhiêu lá cờ?
+f) Đội Hai có 42 lá cờ. Nhóm Sao Mai có gấp 2 lần đội Hai. Hỏi cả hai tổ có bao nhiêu lá cờ?
 
-### Bài 2. (1 điểm) Đơn vị đo thời gian: giờ và phút
+### Bài 2. (1 điểm) Tìm một phần mấy của một số
 
-Điền kết quả, viết dạng giờ và phút.
+Tính rồi ghi kết quả.
 
-a) 6 giờ 27 phút − 112 phút = … (viết dạng giờ và phút)
-b) 8 giờ 19 phút = … phút
-c) 312 phút = … giờ … phút
-d) 9 giờ 3 phút + 136 phút = … (viết dạng giờ và phút)
-e) 2 giờ 38 phút − 39 phút = … (viết dạng giờ và phút)
-f) 2 giờ 26 phút = … phút
+a) Tìm 1 phần 6 của 120.
+b) Tìm 1 phần 8 của 80.
+c) Tìm 1 phần 8 của 128.
+d) Tìm 1 phần 10 của 70.
+e) Tìm 1 phần 6 của 54.
+f) Tìm 1 phần 3 của 60.
 
-### Bài 3. (1 điểm) Điền số còn thiếu trong dãy
+### Bài 3. (1 điểm) Quy tắc nhân trong phép đếm
 
-Điền số thích hợp vào chỗ chấm.
+Đếm số cách chọn.
 
-a) 13, …, 23, 28, 33, 38
-b) 21, 32, 43, 54, …, 76
-c) 20, 23, 26, …, 32, 35
-d) 29, 44, …, 74, 89, 104
-e) 11, …, 33, 44, 55, 66
-f) 15, 24, 33, …, 51, 60
-g) 17, 23, …, 35, 41, 47
+a) Có 8 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+b) Có 3 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+c) Có 7 chiếc áo và 3 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
+d) Có 6 chiếc áo và 2 chiếc quần. Hỏi có bao nhiêu cách chọn một bộ gồm một áo và một quần?
 
 ### Bài 4. (1 điểm) Tìm một phần mấy của một số
 
 Tính rồi ghi kết quả.
 
-a) Tìm 1 phần 5 của 95.
-b) Tìm 1 phần 6 của 90.
-c) Tìm 1 phần 6 của 84.
-d) Tìm 1 phần 3 của 57.
-e) Tìm 1 phần 8 của 40.
+a) Tìm 1 phần 5 của 65.
+b) Tìm 1 phần 3 của 6.
+c) Tìm 1 phần 8 của 88.
+d) Tìm 1 phần 2 của 4.
+e) Tìm 1 phần 6 của 24.
+f) Tìm 1 phần 4 của 56.
+g) Tìm 1 phần 3 của 9.
 
-### Bài 5. (1 điểm) Đổi đơn vị đo độ dài và khối lượng
+### Bài 5. (1 điểm) Suy luận bằng phương pháp lập bảng và loại trừ
 
-Điền số thích hợp vào chỗ chấm.
+Ba bạn Tuấn, Nam, Hà mỗi bạn thích đúng một môn khác nhau trong ba môn Toán, Âm nhạc, Tiếng Anh. Biết **Tuấn thích Toán** và **Nam không thích Tiếng Anh**.
 
-a) 16 km = … dam
-b) 80 tạ = … yến
-c) 50 tạ = … kg
-d) 87 km = … hm
-e) 57 m = … cm
-f) 16 kg = … dag
+a) Kẻ bảng ba hàng (tên bạn) và ba cột (môn học). Dữ kiện “Tuấn thích Toán” cho phép đánh dấu ✔ vào ô nào?
+b) Sau dấu ✔ đó, những ô nào chắc chắn phải đánh ✘?
+c) Dữ kiện “Nam không thích Tiếng Anh” cho phép đánh ✘ vào ô nào?
+d) Đến đây, hàng Nam còn lại đúng một ô trống. Vậy Nam thích môn nào?
+e) Suy ra Hà thích môn nào?
+f) Phương pháp vừa dùng tên là gì?
 
 ---
 
@@ -143,10 +144,11 @@ e) Cụm này gồm mấy buổi học?
 Mỗi dạng bài có những từ khoá riêng. Ghi lại từ khoá em nhận ra.
 
 a) Nêu một dấu hiệu nhận biết của dạng “Tìm một phần mấy của một số”.
-b) Nêu một dấu hiệu nhận biết của dạng “Tìm một phần mấy rồi tính phần còn lại”.
-c) Nêu một dấu hiệu nhận biết của dạng “Tìm số khi biết một phần mấy của nó”.
-d) Nêu một dấu hiệu nhận biết của dạng “Đọc bảng số liệu”.
-e) Nêu một dấu hiệu nhận biết của dạng “Tìm phân số của một số qua nhiều bước”.
+b) Nêu một dấu hiệu nhận biết của dạng “Đọc bảng số liệu”.
+c) Nêu một dấu hiệu nhận biết của dạng “Tìm một phần mấy của một số”.
+d) Nêu một dấu hiệu nhận biết của dạng “Tìm một phần mấy rồi tính phần còn lại”.
+e) Nêu một dấu hiệu nhận biết của dạng “Tìm số khi biết một phần mấy của nó”.
+f) Nêu một dấu hiệu nhận biết của dạng “Tìm số khi biết một phần mấy”.
 
 ### Bài 5. (1 điểm) Mục tiêu của riêng em
 
@@ -177,40 +179,43 @@ e) Kể tên nội dung chính cuối cùng.
 Điền các công thức, quy tắc bắt buộc của chương.
 
 a) Công thức hoặc quy tắc dùng cho dạng “Tìm một phần mấy của một số”?
-b) Công thức hoặc quy tắc dùng cho dạng “Tìm một phần mấy rồi tính phần còn lại”?
-c) Công thức hoặc quy tắc dùng cho dạng “Tìm số khi biết một phần mấy của nó”?
-d) Công thức hoặc quy tắc dùng cho dạng “Đọc bảng số liệu”?
-e) Công thức hoặc quy tắc dùng cho dạng “Tìm phân số của một số qua nhiều bước”?
+b) Công thức hoặc quy tắc dùng cho dạng “Đọc bảng số liệu”?
+c) Công thức hoặc quy tắc dùng cho dạng “Tìm một phần mấy của một số”?
+d) Công thức hoặc quy tắc dùng cho dạng “Tìm một phần mấy rồi tính phần còn lại”?
+e) Công thức hoặc quy tắc dùng cho dạng “Tìm số khi biết một phần mấy của nó”?
+f) Công thức hoặc quy tắc dùng cho dạng “Tìm số khi biết một phần mấy”?
 
 ### Bài 3. (4 điểm) Ô 4 và ô 5 — hình vẽ và bài tập minh hoạ
 
 Với mỗi dạng bài, chọn một cách minh hoạ.
 
 a) Dạng “Tìm một phần mấy của một số” nên minh hoạ bằng hình vẽ hay bằng bảng?
-b) Dạng “Tìm một phần mấy rồi tính phần còn lại” nên minh hoạ bằng hình vẽ hay bằng bảng?
-c) Dạng “Tìm số khi biết một phần mấy của nó” nên minh hoạ bằng hình vẽ hay bằng bảng?
-d) Dạng “Đọc bảng số liệu” nên minh hoạ bằng hình vẽ hay bằng bảng?
-e) Dạng “Tìm phân số của một số qua nhiều bước” nên minh hoạ bằng hình vẽ hay bằng bảng?
+b) Dạng “Đọc bảng số liệu” nên minh hoạ bằng hình vẽ hay bằng bảng?
+c) Dạng “Tìm một phần mấy của một số” nên minh hoạ bằng hình vẽ hay bằng bảng?
+d) Dạng “Tìm một phần mấy rồi tính phần còn lại” nên minh hoạ bằng hình vẽ hay bằng bảng?
+e) Dạng “Tìm số khi biết một phần mấy của nó” nên minh hoạ bằng hình vẽ hay bằng bảng?
 
 ### Bài 4. (4 điểm) Ô 6 — dạng bài và dấu hiệu nhận biết
 
 Ghép mỗi dạng bài với dấu hiệu nhận biết của nó.
 
 a) Dấu hiệu nào cho biết đề thuộc dạng “Tìm một phần mấy của một số”?
-b) Dấu hiệu nào cho biết đề thuộc dạng “Tìm một phần mấy rồi tính phần còn lại”?
-c) Dấu hiệu nào cho biết đề thuộc dạng “Tìm số khi biết một phần mấy của nó”?
-d) Dấu hiệu nào cho biết đề thuộc dạng “Đọc bảng số liệu”?
-e) Dấu hiệu nào cho biết đề thuộc dạng “Tìm phân số của một số qua nhiều bước”?
+b) Dấu hiệu nào cho biết đề thuộc dạng “Đọc bảng số liệu”?
+c) Dấu hiệu nào cho biết đề thuộc dạng “Tìm một phần mấy của một số”?
+d) Dấu hiệu nào cho biết đề thuộc dạng “Tìm một phần mấy rồi tính phần còn lại”?
+e) Dấu hiệu nào cho biết đề thuộc dạng “Tìm số khi biết một phần mấy của nó”?
+f) Dấu hiệu nào cho biết đề thuộc dạng “Tìm số khi biết một phần mấy”?
 
 ### Bài 5. (4 điểm) Ô 7 — phương pháp ghi điểm 10
 
 Ghi lại cách xử lý nhanh nhất của từng dạng.
 
 a) Cách xử lý nhanh nhất của dạng “Tìm một phần mấy của một số” là gì?
-b) Cách xử lý nhanh nhất của dạng “Tìm một phần mấy rồi tính phần còn lại” là gì?
-c) Cách xử lý nhanh nhất của dạng “Tìm số khi biết một phần mấy của nó” là gì?
-d) Cách xử lý nhanh nhất của dạng “Đọc bảng số liệu” là gì?
-e) Cách xử lý nhanh nhất của dạng “Tìm phân số của một số qua nhiều bước” là gì?
+b) Cách xử lý nhanh nhất của dạng “Đọc bảng số liệu” là gì?
+c) Cách xử lý nhanh nhất của dạng “Tìm một phần mấy của một số” là gì?
+d) Cách xử lý nhanh nhất của dạng “Tìm một phần mấy rồi tính phần còn lại” là gì?
+e) Cách xử lý nhanh nhất của dạng “Tìm số khi biết một phần mấy của nó” là gì?
+f) Cách xử lý nhanh nhất của dạng “Tìm số khi biết một phần mấy” là gì?
 
 ---
 
@@ -227,7 +232,29 @@ d) Phương pháp áp dụng key này là gì?
 e) Lỗi thường gặp khi dùng key này?
 f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
-### Bài 2. (6 điểm) Key 2 — Tìm một phần mấy rồi tính phần còn lại
+### Bài 2. (6 điểm) Key 2 — Đọc bảng số liệu
+
+**Phát biểu:** Thống kê đơn giản, trung bình cộng. **Ví dụ mẫu:** Ba ngày bán 5, 8, 11 quyển. Trung bình mỗi ngày mấy quyển? → 8 quyển.
+
+a) Phát biểu lại key này bằng lời của em.
+b) Key này dùng cho dạng bài nào?
+c) Dấu hiệu nào trong đề cho biết phải dùng key này?
+d) Phương pháp áp dụng key này là gì?
+e) Lỗi thường gặp khi dùng key này?
+f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
+
+### Bài 3. (6 điểm) Key 3 — Tìm một phần mấy của một số
+
+**Phát biểu:** Phân số dạng một phần mấy. **Ví dụ mẫu:** Tìm 1 phần 4 của 20. → 5.
+
+a) Phát biểu lại key này bằng lời của em.
+b) Key này dùng cho dạng bài nào?
+c) Dấu hiệu nào trong đề cho biết phải dùng key này?
+d) Phương pháp áp dụng key này là gì?
+e) Lỗi thường gặp khi dùng key này?
+f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
+
+### Bài 4. (6 điểm) Key 4 — Tìm một phần mấy rồi tính phần còn lại
 
 **Phát biểu:** Phân số một phần mấy, phép trừ. **Ví dụ mẫu:** Có 20 kg gạo, bán 1 phần 4. Còn bao nhiêu kg? → 15 kg.
 
@@ -238,31 +265,9 @@ d) Phương pháp áp dụng key này là gì?
 e) Lỗi thường gặp khi dùng key này?
 f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
-### Bài 3. (6 điểm) Key 3 — Tìm số khi biết một phần mấy của nó
+### Bài 5. (6 điểm) Key 5 — Tìm số khi biết một phần mấy của nó
 
 **Phát biểu:** Quan hệ ngược của phép chia. **Ví dụ mẫu:** 1 phần 3 của một số là 7. Tìm số đó. → 21.
-
-a) Phát biểu lại key này bằng lời của em.
-b) Key này dùng cho dạng bài nào?
-c) Dấu hiệu nào trong đề cho biết phải dùng key này?
-d) Phương pháp áp dụng key này là gì?
-e) Lỗi thường gặp khi dùng key này?
-f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
-
-### Bài 4. (6 điểm) Key 4 — Đọc bảng số liệu
-
-**Phát biểu:** Thống kê đơn giản, trung bình cộng. **Ví dụ mẫu:** Ba bạn gấp 5, 8, 11 bông. Trung bình mỗi bạn mấy bông? → 8 bông.
-
-a) Phát biểu lại key này bằng lời của em.
-b) Key này dùng cho dạng bài nào?
-c) Dấu hiệu nào trong đề cho biết phải dùng key này?
-d) Phương pháp áp dụng key này là gì?
-e) Lỗi thường gặp khi dùng key này?
-f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
-
-### Bài 5. (6 điểm) Key 5 — Tìm phân số của một số qua nhiều bước
-
-**Phát biểu:** Phân số một phần mấy, phép trừ liên tiếp. **Ví dụ mẫu:** Có 24 quyển vở, phát 1 phần 2, rồi phát 1 phần 3 số còn lại. Còn mấy quyển? → 8 quyển.
 
 a) Phát biểu lại key này bằng lời của em.
 b) Key này dùng cho dạng bài nào?
@@ -275,56 +280,58 @@ f) Làm lại ví dụ mẫu ở trên và ghi đáp số.
 
 ## PHẦN E — LUYỆN NHẬN BIẾT – THÔNG HIỂU · Mức M2 — Thông hiểu · 30 phút · 40 điểm
 
-### Bài 1. (8 điểm) Trung bình cộng trong tình huống thực tế
+### Bài 1. (8 điểm) Hình tròn: tâm, bán kính, đường kính
 
-Giải từng bài toán nhỏ.
+Vẽ hình tròn và ghi kí hiệu lên hình.
 
-a) Trung bình mỗi ngày bán được 122 kg gạo. Hỏi 4 ngày bán được tất cả bao nhiêu ki-lô-gam?
-b) 4 ngày đầu tuần một cửa hàng bán được lần lượt 248, 249, 266, 253 kg gạo. Trung bình mỗi ngày cửa hàng bán được bao nhiêu ki-lô-gam gạo?
-c) Trung bình mỗi ngày bán được 272 kg gạo. Hỏi 3 ngày bán được tất cả bao nhiêu ki-lô-gam?
-d) Trung bình mỗi ngày cửa hàng bán được 139 kg gạo. 2 ngày đầu bán được 133, 134 kg. Ngày cuối bán được bao nhiêu ki-lô-gam?
+a) Hình tròn có đường kính 56 cm. Bán kính dài bao nhiêu?
+b) Hình tròn A có bán kính 35 cm, hình tròn B có đường kính 26 cm. Hình nào lớn hơn?
+c) Hình tròn có bán kính 32 cm. Đường kính dài bao nhiêu?
+d) Hình tròn A có bán kính 13 cm, hình tròn B có đường kính 6 cm. Hình nào lớn hơn?
 
-### Bài 2. (8 điểm) Đọc bảng số liệu
+### Bài 2. (8 điểm) Đổi đơn vị đo ở lớp 3
 
-Bảng ghi số bông hoa mỗi bạn gấp được: Hùng: 11 · Tuấn: 5 · Chi: 23 · Dũng: 16.
+Điền số thích hợp.
+
+a) 47 kg = … g
+b) 53 cm = … mm
+c) 60 m = … cm
+d) 2 l = … ml
+e) 47 km = … m
+f) 61 cm = … mm
+
+### Bài 3. (8 điểm) Đọc bảng số liệu
+
+Bảng ghi số bông hoa mỗi bạn gấp được: Phúc: 3 · Minh: 13 · Thảo: 18 · Nam: 13.
 
 a) Cả bốn bạn gấp được bao nhiêu bông hoa?
 b) Bạn nào gấp được nhiều nhất?
 c) Bạn nào gấp được ít nhất?
 d) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu bông?
-e) Nếu bốn bạn khác gấp được 3, 8, 23, 26 bông thì trung bình mỗi bạn gấp được bao nhiêu bông?
+e) Nếu bốn bạn khác gấp được 3, 13, 10, 14 bông thì trung bình mỗi bạn gấp được bao nhiêu bông?
 
-### Bài 3. (8 điểm) Đếm số cách chọn bằng quy tắc nhân
+### Bài 4. (8 điểm) Tổng – hiệu bằng sơ đồ đoạn thẳng
 
-Vẽ sơ đồ cây rồi đếm.
+Vẽ sơ đồ trước, tính sau. Không vẽ thì không được tính.
 
-a) Có 2 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-b) Có 3 loại bánh và 3 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-c) Có 2 loại bánh và 6 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-d) Có 2 loại bánh và 2 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-e) Có 4 loại bánh và 4 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
-f) Có 6 loại bánh và 6 loại nước. Chọn một loại bánh và một loại nước thì có bao nhiêu cách chọn?
+a) Tuấn và Bình có tất cả 100 viên bi. Tuấn có nhiều hơn Bình 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+b) Vy và An có tất cả 192 viên bi. Vy có nhiều hơn An 6 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+c) Lan và Trang có tất cả 116 viên bi. Lan có nhiều hơn Trang 38 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
+d) Minh và Vy có tất cả 108 viên bi. Minh có nhiều hơn Vy 24 viên. Hỏi mỗi bạn có bao nhiêu viên bi?
 
-### Bài 4. (8 điểm) Bài toán tổng – hiệu có lời văn
+### Bài 5. (8 điểm) Đọc và lập biểu đồ tranh
 
-Tóm tắt bằng sơ đồ đoạn thẳng rồi giải.
+Biểu đồ tranh số quyển sách của bốn bạn — mỗi hình ● ứng với **2 quyển sách**:
 
-a) Thư viện và hợp tác xã chứa tất cả 80 kg đường. Thư viện chứa nhiều hơn hợp tác xã 10 kg. Mỗi nơi chứa bao nhiêu kg?
-b) Hai lớp 5C và 4C có tất cả 566 quyển sách. Lớp 5C có nhiều hơn lớp 4C 112 quyển. Mỗi lớp có bao nhiêu quyển?
-c) Tổ Ba và đội Một trồng được 396 cây. Tổ Ba trồng nhiều hơn đội Một 116 cây. Mỗi tổ trồng bao nhiêu cây?
-d) Cửa hàng và thư viện chứa tất cả 528 kg đường. Cửa hàng chứa nhiều hơn thư viện 2 kg. Mỗi nơi chứa bao nhiêu kg?
-e) Hai lớp 5A và 3B có tất cả 764 quyển sách. Lớp 5A có nhiều hơn lớp 3B 192 quyển. Mỗi lớp có bao nhiêu quyển?
+Quân: ●● · Vy: ●●●● · Phúc: ●●●●●●●● · Khánh: ●●●
 
-### Bài 5. (8 điểm) Phép chia có dư
-
-Thực hiện phép chia, ghi rõ thương và số dư.
-
-a) 524 : 3 = ? (dư ?)
-b) 1 972 : 5 = ? (dư ?)
-c) 704 : 7 = ? (dư ?)
-d) 1 174 : 3 = ? (dư ?)
-e) 689 : 4 = ? (dư ?)
-f) 181 : 6 = ? (dư ?)
+a) Mỗi hình ● ứng với 2 quyển sách. Bạn Quân có bao nhiêu quyển sách?
+b) Bạn Vy có bao nhiêu quyển sách?
+c) Cả bốn bạn có tất cả bao nhiêu quyển sách?
+d) Bạn nào có nhiều quyển sách nhất?
+e) Bạn nào có ít quyển sách nhất?
+f) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu quyển sách?
+g) Nếu một bạn có 12 quyển sách thì phải vẽ mấy hình ●?
 
 ---
 
@@ -333,34 +340,34 @@ f) 181 : 6 = ? (dư ?)
 > Dành cho huấn luyện viên và phụ huynh. Không phát cho học sinh trước khi làm bài.
 
 ### Bài A.1
-**Đáp số:** a) 235 · b) 6 · c) 80 · d) 48
-**Hướng giải:** “Nhiều hơn, ít hơn” là quan hệ **cộng, trừ**; “gấp … lần, kém … lần” là quan hệ **nhân, chia**. Gạch chân cụm từ khoá trước khi chọn phép tính.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Bốn từ khoá — bốn phép tính khác nhau. Đọc sai một chữ là sai cả bài.
-**Lỗi thường gặp:** Thấy chữ “lần” là nhân, không phân biệt “gấp” với “kém”. Phòng: Gạch chân từ khoá và viết ngay dấu phép tính bên cạnh.
+**Đáp số:** a) 36 lá cờ · b) 124 lá cờ · c) 83 lá cờ · d) 142 lá cờ · e) 95 lá cờ · f) 126 lá cờ
+**Hướng giải:** Bước 1 tìm đại lượng còn thiếu bằng quan hệ nhiều hơn – ít hơn – gấp. Bước 2 mới trả lời câu hỏi của đề. Không được gộp hai bước làm một.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Câu hỏi cuối hỏi **cả hai tổ**, nên bước hai bắt buộc phải cộng.
+**Lỗi thường gặp:** Dừng ở bước một, trả lời số lá cờ của một tổ. Phòng: Đọc lại câu hỏi sau khi tính xong bước một, gạch chân chữ “cả hai”.
 
 ### Bài A.2
-**Đáp số:** a) 4 giờ 35 phút · b) 499 · c) 5 giờ 12 phút · d) 11 giờ 19 phút · e) 1 giờ 59 phút · f) 146
-**Hướng giải:** 1 giờ = 60 phút. Đổi phút sang giờ thì chia cho 60, thương là số giờ, số dư là số phút. Cộng trừ thời gian thì cộng trừ riêng phần giờ và phần phút, nếu phút vượt quá 60 thì đổi 60 phút thành 1 giờ.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Thời gian đếm theo **60**, không theo 10 — đây là điểm khác mọi đơn vị khác.
-**Lỗi thường gặp:** Nhớ 1 khi phút vượt quá 100 thay vì khi vượt quá 60. Phòng: Sau mỗi phép cộng, kiểm tra phần phút có nhỏ hơn 60 không.
-
-### Bài A.3
-**Đáp số:** a) 18 · b) 65 · c) 29 · d) 59 · e) 22 · f) 42 · g) 29
-**Hướng giải:** Tìm khoảng cách của dãy từ những cặp số đã biết đứng cạnh nhau, rồi lấy số đứng trước chỗ trống cộng thêm khoảng cách đó.
-**Nhãn tư duy:** TD4, TD1. Điểm chốt: Tìm khoảng cách ở **chỗ có hai số liền nhau đã biết**.
-**Lỗi thường gặp:** Lấy hiệu của hai số cách nhau một chỗ trống làm khoảng cách. Phòng: Đánh số thứ tự vị trí rồi mới tính khoảng cách.
-
-### Bài A.4
-**Đáp số:** a) 19 · b) 15 · c) 14 · d) 19 · e) 5
+**Đáp số:** a) 20 · b) 10 · c) 16 · d) 7 · e) 9 · f) 20
 **Hướng giải:** Muốn tìm một phần mấy của một số, ta chia số đó cho mẫu số. Ví dụ tìm một phần tư của 20 thì lấy 20 chia 4.
 **Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia** cho số đó.
 **Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải **bé hơn** số ban đầu.
 
+### Bài A.3
+**Đáp số:** a) 24 cách · b) 9 cách · c) 21 cách · d) 12 cách
+**Hướng giải:** Nếu công việc gồm hai bước liên tiếp, bước một có a cách, bước hai có b cách, thì cả công việc có a × b cách. Đây là **quy tắc nhân**.
+**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc phải làm **cùng lúc, nối tiếp** thì nhân; chọn một trong hai khả năng rời nhau thì cộng.
+**Lỗi thường gặp:** Cộng số áo với số quần. Phòng: Tự hỏi: chọn xong áo đã đủ một bộ chưa? Chưa đủ thì phải nhân.
+
+### Bài A.4
+**Đáp số:** a) 13 · b) 2 · c) 11 · d) 2 · e) 4 · f) 14 · g) 3
+**Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
+**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
+**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+
 ### Bài A.5
-**Đáp số:** a) 1 600 · b) 800 · c) 5 000 · d) 870 · e) 5 700 · f) 1 600
-**Hướng giải:** Mỗi đơn vị liền kề trong bảng hơn kém nhau 10 lần. Đổi từ đơn vị lớn sang đơn vị bé thì **nhân**, đổi từ bé sang lớn thì **chia**; mỗi bậc trên bảng ứng với một lần nhân hoặc chia 10.
-**Nhãn tư duy:** TD1. Điểm chốt: Đếm đúng **số bậc** giữa hai đơn vị trên bảng.
-**Lỗi thường gặp:** Đổi ngược chiều nên nhân thành chia. Phòng: Viết bảng đơn vị ra lề rồi đếm bậc bằng ngón tay.
+**Đáp số:** a) ô (Tuấn; Toán) · b) toàn bộ hàng Tuấn và toàn bộ cột Toán · c) ô (Nam; Tiếng Anh) · d) Âm nhạc · e) Tiếng Anh · f) phương pháp lập bảng và loại trừ
+**Hướng giải:** Kẻ bảng: hàng là tên người, cột là môn học. Mỗi dữ kiện cho phép đánh dấu ✘ vào một ô (không thể) hoặc ✔ vào một ô (chắc chắn). Khi một hàng chỉ còn đúng một ô trống thì ô đó là ✔; khi một cột đã có ✔ thì các ô còn lại của cột đó đều là ✘.
+**Nhãn tư duy:** TD2, TD6. Điểm chốt: Mỗi lần đánh một dấu, phải **lan toả** ngay sang cả hàng và cả cột.
+**Lỗi thường gặp:** Suy luận trong đầu, không kẻ bảng, nên bỏ sót khả năng. Phòng: Luôn kẻ bảng, kể cả khi bài có vẻ dễ.
 
 ### Bài B.1
 **Đáp số:** a) Phân số, tỉ số và thống kê nâng cao · b) H — Phân số – Số thập phân – Tỉ số phần trăm – Thống kê · c) 5 · d) ở mọi bài thuộc phân số – số thập phân – tỉ số phần trăm – thống kê, vì các chương sau đều dùng lại nền này · e) giải nhanh và chắc các bài một phần mấy — tìm số khi biết phân số của nó
@@ -381,7 +388,7 @@ f) 181 : 6 = ? (dư ?)
 **Lỗi thường gặp:** Không nhớ mốc kiểm tra nên ôn muộn. Phòng: Ghi mốc kiểm tra vào lịch học ngay buổi đầu của cụm.
 
 ### Bài B.4
-**Đáp số:** a) Cụm “một phần mấy của …” · b) “Đã bán một phần mấy”, hỏi “còn lại” · c) “Một phần mấy của một số là …, tìm số đó” · d) Đề cho bảng số liệu kèm nhiều câu hỏi · e) Cụm “… số còn lại”
+**Đáp số:** a) Cụm “một phần mấy của …” · b) Đề cho bảng số liệu kèm nhiều câu hỏi · c) Cụm “một phần mấy của …” · d) “Đã bán một phần mấy”, hỏi “còn lại” · e) “Một phần mấy của một số là …, tìm số đó” · f) “Một phần mấy của một số là …”
 **Hướng giải:** Dấu hiệu nhận biết là những chữ có mặt trong đề bài, không phải là cách giải. Đọc lại cột “Dữ liệu nhận biết” trong bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD2. Điểm chốt: Dấu hiệu nằm ở **chữ trong đề**, không nằm ở phép tính.
 **Lỗi thường gặp:** Trả lời bằng cách giải thay vì bằng dấu hiệu. Phòng: Tự hỏi: em nhìn thấy chữ gì trong đề thì biết đây là dạng này?
@@ -399,25 +406,25 @@ f) 181 : 6 = ? (dư ?)
 **Lỗi thường gặp:** Vẽ sơ đồ thành danh sách gạch đầu dòng, mất tính liên kết. Phòng: Bắt buộc vẽ toả từ tâm, mỗi nhánh một màu.
 
 ### Bài C.2
-**Đáp số:** a) Phân số dạng một phần mấy · b) Phân số một phần mấy, phép trừ · c) Quan hệ ngược của phép chia · d) Thống kê đơn giản, trung bình cộng · e) Phân số một phần mấy, phép trừ liên tiếp
+**Đáp số:** a) Phân số dạng một phần mấy · b) Thống kê đơn giản, trung bình cộng · c) Phân số dạng một phần mấy · d) Phân số một phần mấy, phép trừ · e) Quan hệ ngược của phép chia · f) Quan hệ ngược của phép chia
 **Hướng giải:** Mỗi dạng bài có một công thức hoặc một quy tắc gốc. Chép lại từ cột “Kiến thức liên quan” của bảng phân tích chuyên sâu.
 **Nhãn tư duy:** TD1, TD3. Điểm chốt: Công thức phải **thuộc lòng**, không tra sách khi làm bài.
 **Lỗi thường gặp:** Nhớ công thức nhưng không nhớ nó dùng cho dạng nào. Phòng: Luôn viết công thức kèm tên dạng bài đi cùng nó.
 
 ### Bài C.3
-**Đáp số:** a) Chia số đó cho mẫu số · b) Chia để tìm phần đã dùng rồi trừ · c) Nhân giá trị một phần với mẫu số · d) Ghi lại số liệu rồi trả lời từng câu · e) Tính tuần tự, ghi lại số còn lại sau mỗi bước
+**Đáp số:** a) Chia số đó cho mẫu số · b) Ghi lại số liệu rồi trả lời từng câu · c) Chia số đó cho mẫu số · d) Chia để tìm phần đã dùng rồi trừ · e) Nhân giá trị một phần với mẫu số
 **Hướng giải:** Dạng nào có quan hệ hơn kém thì vẽ sơ đồ đoạn thẳng; dạng nào có nhiều trường hợp thì kẻ bảng; dạng nào về hình thì vẽ hình và ghi số đo lên hình.
 **Nhãn tư duy:** TD3. Điểm chốt: Chọn đúng **kiểu minh hoạ** giúp nhìn ra lời giải nhanh hơn hẳn.
 **Lỗi thường gặp:** Dạng nào cũng vẽ sơ đồ đoạn thẳng, kể cả bài đếm. Phòng: Hỏi trước: bài này có quan hệ hơn kém, có nhiều trường hợp, hay có hình?
 
 ### Bài C.4
-**Đáp số:** a) Cụm “một phần mấy của …” · b) “Đã bán một phần mấy”, hỏi “còn lại” · c) “Một phần mấy của một số là …, tìm số đó” · d) Đề cho bảng số liệu kèm nhiều câu hỏi · e) Cụm “… số còn lại”
+**Đáp số:** a) Cụm “một phần mấy của …” · b) Đề cho bảng số liệu kèm nhiều câu hỏi · c) Cụm “một phần mấy của …” · d) “Đã bán một phần mấy”, hỏi “còn lại” · e) “Một phần mấy của một số là …, tìm số đó” · f) “Một phần mấy của một số là …”
 **Hướng giải:** Dấu hiệu nhận biết luôn là **chữ có trong đề**: một cụm từ khoá, một kiểu dữ kiện, hoặc một cách hỏi.
 **Nhãn tư duy:** TD2. Điểm chốt: Đọc vị được đề là **đã đi được nửa đường**.
 **Lỗi thường gặp:** Lẫn dấu hiệu nhận biết với phương pháp giải. Phòng: Dấu hiệu trả lời câu “thấy gì?”, phương pháp trả lời câu “làm gì?”.
 
 ### Bài C.5
-**Đáp số:** a) Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. · b) Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. · c) Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. · d) Tính tổng một lần rồi dùng lại cho các câu sau. · e) Lấy đi 1 phần m thì còn (m − 1) phần m — nhân trực tiếp cho nhanh.
+**Đáp số:** a) Kết quả luôn nhỏ hơn số ban đầu — dùng để kiểm tra ngay. · b) Tính tổng một lần rồi dùng lại cho các câu sau. · c) Kết quả luôn nhỏ hơn số ban đầu. · d) Bán 1 phần 4 thì còn 3 phần 4 — chia rồi nhân 3, một bước là xong. · e) Kết quả phải lớn hơn số đã cho — dùng để loại đáp số sai ngay. · f) Kết quả phải lớn hơn số đã cho — loại đáp số sai ngay.
 **Hướng giải:** Cách xử lý nhanh nhất thường là một nhận xét giúp bỏ bớt một hai bước tính. Chép lại từ cột “Cách xử lý nhanh nhất”.
 **Nhãn tư duy:** TD5, TD6. Điểm chốt: Điểm 10 đến từ **mẹo đúng bản chất**, không phải mẹo học vẹt.
 **Lỗi thường gặp:** Dùng mẹo mà không hiểu vì sao đúng nên áp dụng sai chỗ. Phòng: Với mỗi mẹo, viết thêm một dòng “mẹo này đúng vì …”.
@@ -430,67 +437,67 @@ f) 181 : 6 = ? (dư ?)
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
 ### Bài D.2
+**Đáp số:** a) Thống kê đơn giản, trung bình cộng · b) Đọc bảng số liệu · c) Đề cho bảng số liệu kèm nhiều câu hỏi · d) Ghi lại số liệu rồi trả lời từng câu · e) Đọc lệch cột nên gán nhầm số cho ngày khác. · f) 8 quyển
+**Hướng giải:** Đọc bảng theo cột, ghi lại từng số liệu. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số ngày.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một ngày.
+**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho ngày khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.3
+**Đáp số:** a) Phân số dạng một phần mấy · b) Tìm một phần mấy của một số · c) Cụm “một phần mấy của …” · d) Chia số đó cho mẫu số · e) Nhân thay vì chia. · f) 5
+**Hướng giải:** Chia số đã cho cho mẫu số. Chia hình thành mấy phần bằng nhau thì lấy một phần trong số đó.
+**Nhãn tư duy:** TD1. Điểm chốt: Một phần mấy thì **chia**, không nhân.
+**Lỗi thường gặp:** Nhân thay vì chia. Phòng: Kiểm tra: kết quả phải bé hơn số ban đầu.
+**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
+
+### Bài D.4
 **Đáp số:** a) Phân số một phần mấy, phép trừ · b) Tìm một phần mấy rồi tính phần còn lại · c) “Đã bán một phần mấy”, hỏi “còn lại” · d) Chia để tìm phần đã dùng rồi trừ · e) Dừng ở bước một, trả lời số gạo đã bán. · f) 15 kg
 **Hướng giải:** Bước 1: tìm số gạo đã bán bằng cách chia tổng cho mẫu số. Bước 2: lấy tổng trừ đi số đã bán để ra số còn lại.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Đề hỏi số **còn lại**, nên phải trừ ở bước hai.
 **Lỗi thường gặp:** Dừng ở bước một, trả lời số gạo đã bán. Phòng: Đọc lại câu hỏi sau khi tính xong bước một.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài D.3
+### Bài D.5
 **Đáp số:** a) Quan hệ ngược của phép chia · b) Tìm số khi biết một phần mấy của nó · c) “Một phần mấy của một số là …, tìm số đó” · d) Nhân giá trị một phần với mẫu số · e) Chia thay vì nhân. · f) 21
 **Hướng giải:** Nếu một phần mấy của một số bằng a thì số đó bằng a nhân với mẫu số. Vì số đó được chia thành mấy phần bằng nhau, mỗi phần bằng a.
 **Nhãn tư duy:** TD3, TD2. Điểm chốt: Biết một phần thì **nhân** để ra cả số; biết cả số thì **chia** để ra một phần.
 **Lỗi thường gặp:** Chia thay vì nhân. Phòng: Kiểm tra: số tìm được phải **lớn hơn** số đã cho.
 **Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
 
-### Bài D.4
-**Đáp số:** a) Thống kê đơn giản, trung bình cộng · b) Đọc bảng số liệu · c) Đề cho bảng số liệu kèm nhiều câu hỏi · d) Ghi lại số liệu rồi trả lời từng câu · e) Đọc lệch cột nên gán nhầm số cho bạn khác. · f) 8 bông
-**Hướng giải:** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
-**Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
-### Bài D.5
-**Đáp số:** a) Phân số một phần mấy, phép trừ liên tiếp · b) Tìm phân số của một số qua nhiều bước · c) Cụm “… số còn lại” · d) Tính tuần tự, ghi lại số còn lại sau mỗi bước · e) Lấy cả hai phân số tính trên tổng ban đầu. · f) 8 quyển
-**Hướng giải:** Bước 1: tính số vở phát ngày đầu và số vở còn lại sau ngày đầu. Bước 2: phân số của ngày thứ hai tính trên **số còn lại**, không phải trên tổng ban đầu. Bước 3: trừ tiếp để ra số cuối cùng.
-**Nhãn tư duy:** TD6, TD2. Điểm chốt: Cụm “số còn lại” đổi hẳn số bị chia ở bước hai.
-**Lỗi thường gặp:** Lấy cả hai phân số tính trên tổng ban đầu. Phòng: Sau mỗi bước, viết rõ “còn lại … quyển” rồi mới sang bước sau.
-**Gợi ý 3 tầng:** (1) Đọc lại phần đầu phiếu và bảng dạng bài. — (2) Trả lời bằng chính lời của em, không chép nguyên văn. — (3) So lại với bảng tổng hợp cuối phiếu để tự chấm.
-
 ### Bài E.1
-**Đáp số:** a) 488 kg · b) 254 kg · c) 816 kg · d) 150 kg
-**Hướng giải:** Ba dạng ngược nhau: biết các số tìm trung bình cộng (cộng rồi chia); biết trung bình cộng tìm tổng (nhân); biết trung bình cộng và một số số hạng, tìm số hạng còn thiếu (lấy tổng trừ đi các số đã biết).
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Từ trung bình cộng luôn tìm được **tổng** trước, rồi mới tính tiếp.
-**Lỗi thường gặp:** Đi tìm ngay số còn thiếu mà chưa tính tổng. Phòng: Bước đầu tiên luôn viết: “Tổng = trung bình cộng × số ngày”.
-**Gợi ý 3 tầng:** (1) Đề cho gì và hỏi gì? — (2) Tính tổng trước bằng cách nhân trung bình cộng với số lượng. — (3) Lấy tổng trừ các số đã biết để ra số còn thiếu.
+**Đáp số:** a) 28 cm · b) A · c) 64 cm · d) A
+**Hướng giải:** BẪY — Bán kính hay đường kính. Mọi bán kính của một hình tròn đều bằng nhau. Đường kính đi qua tâm và bằng **hai lần** bán kính. Muốn so sánh hai hình tròn thì đưa về cùng một đại lượng: cùng bán kính hoặc cùng đường kính.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: So sánh phải **cùng loại đại lượng** — bán kính với bán kính.
+**Lỗi thường gặp:** So bán kính của hình này với đường kính của hình kia. Phòng: Đổi hết về bán kính trước khi so sánh.
+**Gợi ý 3 tầng:** (1) Đường kính gấp mấy lần bán kính? — (2) Đưa cả hai hình về cùng bán kính. — (3) So hai bán kính vừa tính.
 
 ### Bài E.2
-**Đáp số:** a) 55 · b) Chi (23 bông) · c) Tuấn (5 bông) · d) 18 · e) 15
+**Đáp số:** a) 47 000 · b) 530 · c) 6 000 · d) 2 000 · e) 47 000 · f) 610
+**Hướng giải:** 1 km = 1 000 m; 1 m = 100 cm; 1 cm = 10 mm; 1 kg = 1 000 g; 1 l = 1 000 ml. Đổi từ đơn vị lớn sang đơn vị bé thì nhân.
+**Nhãn tư duy:** TD1. Điểm chốt: Nhớ đúng **số lần** giữa hai đơn vị.
+**Lỗi thường gặp:** Nhầm 1 m = 10 cm. Phòng: Học thuộc bảng năm quan hệ trên và đọc lại trước khi làm.
+**Gợi ý 3 tầng:** (1) Đơn vị nào lớn hơn? — (2) Một đơn vị lớn bằng bao nhiêu đơn vị bé? — (3) Nhân số đã cho với số lần đó.
+
+### Bài E.3
+**Đáp số:** a) 47 · b) Thảo (18 bông) · c) Phúc (3 bông) · d) 15 · e) 10
 **Hướng giải:** Đọc bảng theo từng cột, ghi lại các số. Tổng là cộng tất cả; nhiều nhất, ít nhất là so sánh; trung bình cộng là tổng chia số bạn.
 **Nhãn tư duy:** TD1, TD2. Điểm chốt: Đọc **đúng cột** — mỗi số gắn với đúng một tên.
 **Lỗi thường gặp:** Đọc lệch cột nên gán nhầm số cho bạn khác. Phòng: Dùng ngón tay dò theo cột khi đọc bảng.
 **Gợi ý 3 tầng:** (1) Ghi lại các số liệu ra một hàng. — (2) Cộng tất cả để có tổng. — (3) So sánh để tìm lớn nhất, bé nhất.
 
-### Bài E.3
-**Đáp số:** a) 6 cách · b) 9 cách · c) 12 cách · d) 4 cách · e) 16 cách · f) 36 cách
-**Hướng giải:** BẪY — Cộng hay nhân. Với mỗi loại bánh có đủ số cách chọn nước, nên tổng số cách bằng số loại bánh nhân số loại nước. Vẽ sơ đồ cây để nhìn thấy điều đó.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Hai việc **nối tiếp nhau** thì nhân, không cộng.
-**Lỗi thường gặp:** Cộng số loại bánh với số loại nước. Phòng: Vẽ sơ đồ cây với hai nhánh đầu để thấy rõ.
-**Gợi ý 3 tầng:** (1) Chọn xong bánh đã đủ một bộ chưa? — (2) Với mỗi loại bánh có mấy cách chọn nước? — (3) Nhân hai số lại.
-
 ### Bài E.4
-**Đáp số:** a) thư viện: 45 kg, hợp tác xã: 35 kg · b) 5C: 339 quyển, 4C: 227 quyển · c) tổ Ba: 256 cây, đội Một: 140 cây · d) cửa hàng: 265 kg, thư viện: 263 kg · e) 5A: 478 quyển, 3B: 286 quyển
-**Hướng giải:** Đọc đề, xác định đâu là **tổng**, đâu là **hiệu**. Vẽ sơ đồ hai đoạn thẳng. Số lớn = (tổng + hiệu) : 2; số bé = tổng − số lớn.
-**Nhãn tư duy:** TD2, TD3. Điểm chốt: Cụm “có tất cả” cho **tổng**; cụm “nhiều hơn” cho **hiệu**.
-**Lỗi thường gặp:** Nhầm hiệu thành tổng khi đề diễn đạt vòng vo. Phòng: Ghi riêng ra hai dòng: Tổng = … ; Hiệu = … trước khi tính.
-**Gợi ý 3 tầng:** (1) Câu nào cho biết tổng của hai đại lượng? — (2) Câu nào cho biết chúng hơn kém nhau bao nhiêu? — (3) Vẽ sơ đồ rồi áp công thức.
+**Đáp số:** a) Tuấn: 53 viên, Bình: 47 viên · b) Vy: 99 viên, An: 93 viên · c) Lan: 77 viên, Trang: 39 viên · d) Minh: 66 viên, Vy: 42 viên
+**Hướng giải:** Vẽ hai đoạn thẳng, đoạn dài hơn đúng phần hiệu. Bớt phần hiệu đi thì hai đoạn bằng nhau; chia đôi tổng mới ra số bé, cộng hiệu ra số lớn.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: **Bớt hiệu rồi mới chia đôi** — đảo thứ tự là sai.
+**Lỗi thường gặp:** Chia đôi tổng ngay rồi cộng hiệu vào cả hai số. Phòng: Tô phần hiệu bằng bút khác màu trên sơ đồ.
+**Gợi ý 3 tầng:** (1) Vẽ hai đoạn, đoạn nào dài hơn? — (2) Bớt phần hơn đi thì tổng còn lại bao nhiêu? — (3) Chia đôi tổng mới để ra số bé.
 
 ### Bài E.5
-**Đáp số:** a) 174 dư 2 · b) 394 dư 2 · c) 100 dư 4 · d) 391 dư 1 · e) 172 dư 1 · f) 30 dư 1
-**Hướng giải:** BẪY — Số dư phải bé hơn số chia. Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
-**Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
-**Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
-**Gợi ý 3 tầng:** (1) Đặt tính chia theo cột. — (2) Mỗi lần hạ một chữ số phải viết một chữ số ở thương, kể cả chữ số 0. — (3) Thử lại: nhân thương với số chia rồi cộng số dư.
+**Đáp số:** a) 4 · b) 8 · c) 34 · d) Phúc (16) · e) Quân (4) · f) 12 · g) 6 hình
+**Hướng giải:** BẪY — Một hình không phải một đơn vị. Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
+**Lỗi thường gặp:** Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. Phòng: Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
+**Gợi ý 3 tầng:** (1) Mỗi hình ● ứng với bao nhiêu đơn vị? — (2) Bạn ấy có bao nhiêu hình ●? — (3) Nhân hai số ấy với nhau.
 
 ---
 

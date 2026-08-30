@@ -42,18 +42,34 @@ Phiếu lời giải và phân tích chuyên sâu đi kèm: `GITA-T2-L4-C01-DB-G
 Họ và tên: ......................................... Lớp: ......... Điểm: ......../100
 
 > **KIẾN THỨC NỀN CỦA CHƯƠNG**
-> 1. Cấu tạo thập phân của số tự nhiên
-> 2. Bội chung nhỏ nhất, dãy số cách đều
-> 3. Phép chia có dư, dãy cách đều
-> 4. Thứ tự trong tập số tự nhiên
+> 1. Định nghĩa số nguyên tố, dấu hiệu chia hết
+> 2. Quy tắc nhân trong phép đếm, điều kiện chữ số đứng đầu
+> 3. Thứ tự trong tập số tự nhiên
+> 4. Cấu tạo thập phân của số tự nhiên
 
 ---
 
 ## PHẦN A — SƠ ĐỒ TƯ DUY DẠNG BÀI · Mức M1 — Nhận biết · 10 phút · 10 điểm
 
-### Bài 1. (2 điểm) Bảng tổng quát các dạng bài của chương
+### Bài 1. (2 điểm) Cây quyết định đọc vị và bảng tổng quát dạng bài
 
-Kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp. Điền cột thứ nhất.
+Đọc cây quyết định của nhóm **A — Số học & Cấu tạo số** dưới đây, dừng ở câu hỏi đầu tiên trả lời ĐÚNG. Bản đầy đủ ở `10-so-do-doc-vi/so-do-A-L4.md`.
+
+```
+ĐỌC ĐỀ → Đề nói về bản thân các con số — chữ số, hàng, chia hết, tận cùng?
+1. Đề hỏi chữ số ở một hàng, hoặc bảo viết số thành tổng?
+     ĐÚNG → Cấu tạo số: đánh số hàng từ phải sang trái
+2. Đề hỏi “có chia hết cho … không”, hoặc “chia … dư mấy”?
+     ĐÚNG → Dấu hiệu chia hết: 2 và 5 nhìn đuôi, 3 và 9 nhìn tổng chữ số
+3. Đề chỉ hỏi chữ số tận cùng, không hỏi kết quả?
+     ĐÚNG → Chữ số tận cùng: che phần đầu, chỉ tính với chữ số cuối
+4. Đề cho một bộ chữ số và bảo lập số?
+     ĐÚNG → Lập số và đếm số: cố định hàng cao nhất rồi hoán vị
+5. Đề mô tả quan hệ giữa các chữ số của một số cần tìm?
+     ĐÚNG → Cấu tạo số nâng cao: đặt ẩn cho từng chữ số, viết số theo cấu tạo
+```
+
+Sau đó kẻ bảng ba cột: Dạng bài · Dấu hiệu nhận biết · Phương pháp, rồi điền cột thứ nhất.
 
 a) Dạng bài thứ 1 của chương?
 b) Dạng bài thứ 2 của chương?
@@ -65,99 +81,99 @@ e) Dạng bài thứ 5 của chương?
 
 Với mỗi dạng bài dưới đây, điền cột **Dấu hiệu nhận biết** của bảng.
 
-a) Dạng “Số và tổng chữ số của nó” — dấu hiệu nhận biết?
+a) Dạng “Lập số và đếm số lập được từ một bộ chữ số” — dấu hiệu nhận biết?
 b) Dạng “Dãy số tự nhiên liên tiếp có tổng cho trước” — dấu hiệu nhận biết?
-c) Dạng “Đếm số hạng của dãy cách đều theo điều kiện chia hết” — dấu hiệu nhận biết?
+c) Dạng “Tìm số thoả nhiều điều kiện chia có dư” — dấu hiệu nhận biết?
 d) Dạng “Đếm số chia hết đồng thời cho nhiều số” — dấu hiệu nhận biết?
-e) Dạng “Xác định chữ số và giá trị chữ số theo hàng” — dấu hiệu nhận biết?
+e) Dạng “Tìm số theo điều kiện của các chữ số” — dấu hiệu nhận biết?
 
 ### Bài 3. (2 điểm) Điền cột “Phương pháp áp dụng”
 
 Với mỗi dạng bài dưới đây, điền cột **Phương pháp áp dụng** của bảng.
 
-a) Dạng “Đếm số hạng của dãy cách đều theo điều kiện chia hết” — phương pháp áp dụng?
+a) Dạng “Tìm số thoả nhiều điều kiện chia có dư” — phương pháp áp dụng?
 b) Dạng “Đếm số chia hết đồng thời cho nhiều số” — phương pháp áp dụng?
-c) Dạng “Xác định chữ số và giá trị chữ số theo hàng” — phương pháp áp dụng?
-d) Dạng “Đếm chữ số theo nhóm độ dài” — phương pháp áp dụng?
-e) Dạng “Tìm chữ số tận cùng của một phép tính” — phương pháp áp dụng?
+c) Dạng “Tìm số theo điều kiện của các chữ số” — phương pháp áp dụng?
+d) Dạng “Nhận biết chẵn – lẻ và số liền kề” — phương pháp áp dụng?
+e) Dạng “Đếm số hạng của dãy cách đều theo điều kiện chia hết” — phương pháp áp dụng?
 
 ### Bài 4. (2 điểm) Điền cột “Kiến thức phải thuộc”
 
 Với mỗi dạng bài dưới đây, điền cột **Kiến thức phải thuộc** của bảng.
 
-a) Dạng “Xác định chữ số và giá trị chữ số theo hàng” — kiến thức phải thuộc?
-b) Dạng “Đếm chữ số theo nhóm độ dài” — kiến thức phải thuộc?
-c) Dạng “Tìm chữ số tận cùng của một phép tính” — kiến thức phải thuộc?
-d) Dạng “Tìm số theo điều kiện của các chữ số” — kiến thức phải thuộc?
-e) Dạng “Đếm chữ số, tính tổng chữ số” — kiến thức phải thuộc?
+a) Dạng “Tìm số theo điều kiện của các chữ số” — kiến thức phải thuộc?
+b) Dạng “Nhận biết chẵn – lẻ và số liền kề” — kiến thức phải thuộc?
+c) Dạng “Đếm số hạng của dãy cách đều theo điều kiện chia hết” — kiến thức phải thuộc?
+d) Dạng “Xét chia hết của tổng, hiệu” — kiến thức phải thuộc?
+e) Dạng “Xét số dư của tổng” — kiến thức phải thuộc?
 
 ### Bài 5. (2 điểm) Điền cột “Cách xử lý nhanh nhất”
 
 Với mỗi dạng bài dưới đây, điền cột **Cách xử lý nhanh nhất** của bảng.
 
-a) Dạng “Tìm chữ số tận cùng của một phép tính” — cách xử lý nhanh nhất?
-b) Dạng “Tìm số theo điều kiện của các chữ số” — cách xử lý nhanh nhất?
-c) Dạng “Đếm chữ số, tính tổng chữ số” — cách xử lý nhanh nhất?
-d) Dạng “Tìm số thoả nhiều điều kiện chia có dư” — cách xử lý nhanh nhất?
-e) Dạng “Phép chia có dư” — cách xử lý nhanh nhất?
+a) Dạng “Đếm số hạng của dãy cách đều theo điều kiện chia hết” — cách xử lý nhanh nhất?
+b) Dạng “Xét chia hết của tổng, hiệu” — cách xử lý nhanh nhất?
+c) Dạng “Xét số dư của tổng” — cách xử lý nhanh nhất?
+d) Dạng “Xác định chữ số và giá trị chữ số theo hàng” — cách xử lý nhanh nhất?
+e) Dạng “Nhận biết số nguyên tố, hợp số” — cách xử lý nhanh nhất?
 
 ---
 
 ## PHẦN B — DẠNG 1 – DẠNG 2 · Mức M2 — Thông hiểu · 25 phút · 25 điểm
 
-### Bài 1. (5 điểm) Dùng dấu hiệu chia hết để trả lời nhanh
+### Bài 1. (5 điểm) Phép chia có dư
+
+Thực hiện phép chia, ghi rõ thương và số dư.
+
+a) 665 : 3 = ? (dư ?)
+b) 18 418 : 19 = ? (dư ?)
+c) 14 279 : 4 = ? (dư ?)
+d) 7 793 : 17 = ? (dư ?)
+e) 112 289 : 13 = ? (dư ?)
+f) 38 113 : 14 = ? (dư ?)
+g) 105 893 : 18 = ? (dư ?)
+
+### Bài 2. (5 điểm) Dùng dấu hiệu chia hết để trả lời nhanh
 
 Không đặt tính chia, hãy dùng dấu hiệu chia hết.
 
-a) Số 3 763 có chia hết cho 3 không? Vì sao?
-b) Số 3 826 có chia hết cho 3 không? Vì sao?
-c) Số 4 021 có chia hết cho 9 không? Vì sao?
-d) Số 5 778 có chia hết cho 2 không? Vì sao?
-e) Số 9 209 có chia hết cho 2 không? Vì sao?
+a) Số 580 có chia hết cho 9 không? Vì sao?
+b) Số 2 894 có chia hết cho 3 không? Vì sao?
+c) Số 3 513 có chia hết cho 3 không? Vì sao?
+d) Số 4 654 có chia hết cho 5 không? Vì sao?
+e) Số 6 499 có chia hết cho 9 không? Vì sao?
+f) Số 7 696 có chia hết cho 2 không? Vì sao?
+g) Số 8 625 có chia hết cho 3 không? Vì sao?
 
-### Bài 2. (5 điểm) Tìm chữ số để số chia hết cho một số cho trước
+### Bài 3. (5 điểm) Tìm chữ số để số chia hết cho một số cho trước
 
 Với mỗi câu, tìm **tất cả** các chữ số thoả mãn.
 
-a) Tìm tất cả chữ số thay cho dấu * để số *447 chia hết cho 9.
-b) Tìm tất cả chữ số thay cho dấu * để số *25 chia hết cho 3.
-c) Tìm tất cả chữ số thay cho dấu * để số 54* chia hết cho 9.
-d) Tìm tất cả chữ số thay cho dấu * để số 538* chia hết cho 3.
-e) Tìm tất cả chữ số thay cho dấu * để số 28*0 chia hết cho 5.
-f) Tìm tất cả chữ số thay cho dấu * để số 59*0 chia hết cho 9.
-
-### Bài 3. (5 điểm) Đếm số thoả điều kiện trong một khoảng
-
-Đếm số lượng, không cần liệt kê.
-
-a) Có bao nhiêu số lẻ từ 257 đến 416?
-b) Có bao nhiêu số chẵn từ 128 đến 424?
-c) Có bao nhiêu số chia hết cho 3 từ 337 đến 793?
-d) Có bao nhiêu số chia hết cho 5 từ 50 đến 629?
-e) Có bao nhiêu số chia hết cho 5 từ 109 đến 697?
+a) Tìm tất cả chữ số thay cho dấu * để số 77*9 chia hết cho 9.
+b) Tìm tất cả chữ số thay cho dấu * để số 7*38 chia hết cho 9.
+c) Tìm tất cả chữ số thay cho dấu * để số 12*0 chia hết cho 9.
+d) Tìm tất cả chữ số thay cho dấu * để số 46*6 chia hết cho 3.
+e) Tìm tất cả chữ số thay cho dấu * để số 51*3 chia hết cho 9.
+f) Tìm tất cả chữ số thay cho dấu * để số *944 chia hết cho 5.
 
 ### Bài 4. (5 điểm) Tính chất chia hết của tổng và hiệu
 
 Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng.
 
-a) Hiệu 693 − 630 có chia hết cho 9 không?
-b) Hiệu 540 − 342 có chia hết cho 9 không?
-c) Hiệu 159 − 138 có chia hết cho 3 không?
-d) Hiệu 265 − 165 có chia hết cho 5 không?
-e) Tổng 183 + 1 có chia hết cho 3 không? Nếu không, số dư bằng bao nhiêu?
-f) Tổng 207 + 657 có chia hết cho 9 không?
+a) Tổng 183 + 1 có chia hết cho 3 không? Nếu không, số dư bằng bao nhiêu?
+b) Tổng 207 + 657 có chia hết cho 9 không?
+c) Tổng 306 + 8 có chia hết cho 9 không? Nếu không, số dư bằng bao nhiêu?
+d) Tổng 306 + 8 có chia hết cho 9 không? Nếu không, số dư bằng bao nhiêu?
+e) Tổng 164 + 184 có chia hết cho 2 không?
 
-### Bài 5. (5 điểm) Phép chia có dư
+### Bài 5. (5 điểm) Đếm số thoả điều kiện trong một khoảng
 
-Thực hiện phép chia, ghi rõ thương và số dư.
+Đếm số lượng, không cần liệt kê.
 
-a) 61 439 : 8 = ? (dư ?)
-b) 150 206 : 20 = ? (dư ?)
-c) 75 221 : 10 = ? (dư ?)
-d) 178 508 : 20 = ? (dư ?)
-e) 10 511 : 3 = ? (dư ?)
-f) 17 699 : 25 = ? (dư ?)
-g) 28 989 : 18 = ? (dư ?)
+a) Có bao nhiêu số chia hết cho 5 từ 390 đến 911?
+b) Có bao nhiêu số chia hết cho 3 từ 59 đến 362?
+c) Có bao nhiêu số chẵn từ 167 đến 354?
+d) Có bao nhiêu số lẻ từ 356 đến 844?
 
 ---
 
@@ -167,97 +183,99 @@ g) 28 989 : 18 = ? (dư ?)
 
 Tính bằng cách thuận tiện nhất.
 
-a) 1 800 : 4 : 10
-b) 80 × 25 × 4
-c) 32 × 25 × 4
-d) 50 × 80 × 2
+a) 14 × 125 × 8
+b) 2 800 : 4 : 10
+c) 50 × 22 × 2
+d) 79 × 25 × 4
+e) 50 × 72 × 2
+f) 50 × 60 × 2
 
-### Bài 2. (5 điểm) Lịch, thế kỉ, năm nhuận
-
-Trả lời ngắn gọn.
-
-a) Tháng 9 năm 1912 có bao nhiêu ngày?
-b) Năm 2026 thuộc thế kỉ thứ mấy?
-c) Năm 2013 có phải năm nhuận không?
-d) 33 ngày bằng bao nhiêu tuần lễ và mấy ngày?
-e) Tháng 9 năm 2061 có bao nhiêu ngày?
-
-### Bài 3. (5 điểm) Tính nhanh bằng cách ghép số tròn
+### Bài 2. (5 điểm) Tính nhanh bằng cách ghép số tròn
 
 Tính bằng cách thuận tiện nhất.
 
-a) 75 + 247 + 25
-b) 35 + 314 + 65
-c) 71 + 284 + 29
-d) 385 + 56 − 56
-e) 389 + 64 − 64
-f) 24 + 315 + 76
-g) 213 + 76 − 76
+a) 362 + 82 − 82
+b) 64 + 12 + 36 + 88
+c) 35 + 314 + 65
+d) 71 + 284 + 29
+e) 385 + 56 − 56
+f) 389 + 64 − 64
+g) 24 + 315 + 76
 
-### Bài 4. (5 điểm) Dãy hình xếp theo quy luật
+### Bài 3. (5 điểm) Đếm số hạng của dãy cách đều
 
-Quan sát quy luật số que diêm rồi trả lời.
+Tính số số hạng của mỗi dãy.
 
-a) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 5 có bao nhiêu que diêm?
-b) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 8 có bao nhiêu que diêm?
-c) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 13 có bao nhiêu que diêm?
-d) Hình thứ 1 có 4 que diêm, mỗi hình sau hơn hình liền trước 4 que. Hình thứ 17 có bao nhiêu que diêm?
-e) Xếp liên tiếp 17 hình đầu tiên thì cần tất cả bao nhiêu que diêm?
+a) Dãy 23, 29, 35, …, 1 019 có bao nhiêu số hạng?
+b) Dãy 22, 27, 32, …, 472 có bao nhiêu số hạng?
+c) Dãy 1, 5, 9, …, 413 có bao nhiêu số hạng?
+d) Dãy 21, 24, 27, …, 315 có bao nhiêu số hạng?
+e) Dãy 25, 31, 37, …, 91 có bao nhiêu số hạng?
+f) Dãy 5, 12, 19, …, 1 216 có bao nhiêu số hạng?
+g) Dãy 5, 10, 15, …, 915 có bao nhiêu số hạng?
 
-### Bài 5. (5 điểm) Tính toán với số đo đại lượng
+### Bài 4. (5 điểm) Tỉ lệ bản đồ
 
-Đổi về cùng đơn vị rồi tính.
+Chú ý đổi đơn vị ở bước cuối.
 
-a) 10 kg 759 g − 379 g = … g
-b) 19 m 57 cm × 3 = … cm
-c) 14 kg 291 g − 145 g = … g
-d) 25 m 84 cm + 584 cm = … cm
+a) Trên bản đồ tỉ lệ 1 : 500, một đoạn đường đo được 5 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+b) Một đoạn đường dài 65 m được vẽ trên bản đồ tỉ lệ 1 : 500. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+c) Một đoạn đường dài 140 m được vẽ trên bản đồ tỉ lệ 1 : 2 000. Trên bản đồ đoạn ấy dài bao nhiêu xăng-ti-mét?
+d) Trên bản đồ tỉ lệ 1 : 100, một đoạn đường đo được 28 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+e) Trên bản đồ tỉ lệ 1 : 5 000, một đoạn đường đo được 19 cm. Hỏi đoạn đường đó dài bao nhiêu mét trên thực tế?
+
+### Bài 5. (5 điểm) Đọc và lập biểu đồ tranh
+
+Biểu đồ tranh số chiếc bút của bốn bạn — mỗi hình ● ứng với **2 chiếc bút**:
+
+An: ●●●●●●● · Hùng: ●●●●●●● · Chi: ●●●● · Lan: ●●●●●
+
+a) Mỗi hình ● ứng với 2 chiếc bút. Bạn An có bao nhiêu chiếc bút?
+b) Bạn Hùng có bao nhiêu chiếc bút?
+c) Cả bốn bạn có tất cả bao nhiêu chiếc bút?
+d) Bạn nào có nhiều chiếc bút nhất?
+e) Bạn nào có ít chiếc bút nhất?
+f) Bạn nhiều nhất hơn bạn ít nhất bao nhiêu chiếc bút?
+g) Nếu một bạn có 12 chiếc bút thì phải vẽ mấy hình ●?
 
 ---
 
 ## PHẦN D — DẠNG 5 – DẠNG 6 VÀ DẠNG PHỐI HỢP · Mức M3 — Vận dụng · 20 phút · 20 điểm
 
-### Bài 1. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
+### Bài 1. (4 điểm) Cấu tạo số có hai chữ số
 
-Không tính hết phép tính, chỉ tìm chữ số tận cùng.
+Trình bày lời giải ngắn gọn cho từng ý.
 
-a) Tích 1 120 × 5 912 có chữ số tận cùng là chữ số nào?
-b) Tổng 1 311 + 6 290 có chữ số tận cùng là chữ số nào?
-c) Hiệu 9 406 − 7 831 có chữ số tận cùng là chữ số nào?
-d) Tích 6 774 × 5 649 có chữ số tận cùng là chữ số nào?
-e) Tổng 3 422 + 3 106 có chữ số tận cùng là chữ số nào?
+a) Tìm số có hai chữ số, biết tổng hai chữ số bằng 9 và chữ số hàng chục hơn chữ số hàng đơn vị 3 đơn vị.
+b) Số có hai chữ số 29; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+c) Chữ số hàng chục của số 76 gấp mấy lần chữ số hàng đơn vị (nếu chia hết), hoặc hơn bao nhiêu đơn vị?
+d) Số có hai chữ số 93; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+e) Tìm số có hai chữ số, biết tổng hai chữ số bằng 5 và chữ số hàng đơn vị hơn chữ số hàng chục 3 đơn vị.
+f) Tìm số có hai chữ số, biết tổng hai chữ số bằng 4 và chữ số hàng chục hơn chữ số hàng đơn vị 4 đơn vị.
 
-### Bài 2. (4 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
-
-Ba tình huống, cùng một cách đếm.
-
-a) Cho 16 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
-b) Một giải đấu có 20 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
-c) Có 20 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
-d) Cho 10 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
-
-### Bài 3. (4 điểm) Tổng của các số tự nhiên liên tiếp
+### Bài 2. (4 điểm) Tổng của các số tự nhiên liên tiếp
 
 Với mỗi ý, tìm số theo yêu cầu.
 
-a) Tổng của 3 số tự nhiên liên tiếp bằng 501. Tìm số bé nhất trong 3 số đó.
-b) Tổng của 5 số tự nhiên liên tiếp bằng 670. Tìm số bé nhất trong 5 số đó.
-c) Tổng của 3 số tự nhiên liên tiếp bằng 405. Tìm số bé nhất trong 3 số đó.
-d) Tổng của 9 số tự nhiên liên tiếp bằng 4 122. Tìm số bé nhất trong 9 số đó.
-e) Tổng của 5 số tự nhiên liên tiếp bằng 1 170. Tìm số bé nhất trong 5 số đó.
+a) Tổng của 5 số tự nhiên liên tiếp bằng 1 170. Tìm số bé nhất trong 5 số đó.
+b) Tổng của 3 số tự nhiên liên tiếp bằng 234. Tìm số bé nhất trong 3 số đó.
+c) Tổng của 3 số tự nhiên liên tiếp bằng 723. Tìm số bé nhất trong 3 số đó.
+d) Tổng của 9 số tự nhiên liên tiếp bằng 3 690. Tìm số bé nhất trong 9 số đó.
+e) Tổng của 5 số tự nhiên liên tiếp bằng 2 320. Tìm số bé nhất trong 5 số đó.
 
-### Bài 4. (4 điểm) Số chia hết cho nhiều số cùng lúc
+### Bài 3. (4 điểm) Chữ số tận cùng của tổng, hiệu, tích
 
-Trả lời gọn, có thể dùng dãy cách đều.
+Không tính hết phép tính, chỉ tìm chữ số tận cùng.
 
-a) Có bao nhiêu số từ 55 đến 598 vừa chia hết cho 2 vừa chia hết cho 5? Số bé nhất trong đó là số nào?
-b) Có bao nhiêu số từ 254 đến 1 135 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-c) Có bao nhiêu số từ 100 đến 597 vừa chia hết cho 2 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
-d) Có bao nhiêu số từ 35 đến 670 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
+a) Hiệu 3 516 − 590 có chữ số tận cùng là chữ số nào?
+b) Tích 7 836 × 7 596 có chữ số tận cùng là chữ số nào?
+c) Tổng 6 701 + 6 596 có chữ số tận cùng là chữ số nào?
+d) Tích 3 675 × 4 418 có chữ số tận cùng là chữ số nào?
+e) Tổng 7 603 + 4 857 có chữ số tận cùng là chữ số nào?
 
-### Bài 5. (4 điểm) Lập số có ba chữ số khác nhau
+### Bài 4. (4 điểm) Lập số có ba chữ số khác nhau
 
-Cho ba chữ số **0, 7, 9**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
+Cho ba chữ số **2, 5, 9**. Lập các số có ba chữ số khác nhau từ ba chữ số này.
 
 a) Viết tất cả các số lập được (theo thứ tự từ bé đến lớn).
 b) Lập được tất cả bao nhiêu số?
@@ -266,6 +284,15 @@ d) Số bé nhất lập được là số nào?
 e) Trong các số đó có bao nhiêu số chẵn?
 f) Có bao nhiêu số chia hết cho 5?
 g) Tổng của số lớn nhất và số bé nhất bằng bao nhiêu?
+
+### Bài 5. (4 điểm) Đếm số cặp — bắt tay, trận đấu, đường thẳng
+
+Ba tình huống, cùng một cách đếm.
+
+a) Cho 4 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
+b) Một giải đấu có 12 đội, hai đội bất kì đấu với nhau đúng một trận. Hỏi có tất cả bao nhiêu trận?
+c) Có 19 người, mỗi người bắt tay với tất cả những người còn lại đúng một lần. Hỏi có tất cả bao nhiêu cái bắt tay?
+d) Cho 7 điểm, không có ba điểm nào thẳng hàng. Qua hai điểm bất kì kẻ một đường thẳng. Hỏi kẻ được bao nhiêu đường thẳng?
 
 ---
 
@@ -284,7 +311,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 2. (4 điểm) Đọc vị đề số 2
 
-**Đề:** Trả lời gọn, có thể dùng dãy cách đều. Có bao nhiêu số từ 39 đến 418 vừa chia hết cho 2 vừa chia hết cho 3? Số bé nhất trong đó là số nào?
+**Đề:** Trả lời gọn, có thể dùng dãy cách đều. Có bao nhiêu số từ 238 đến 926 vừa chia hết cho 5 vừa chia hết cho 9? Số bé nhất trong đó là số nào?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -295,7 +322,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 3. (4 điểm) Đọc vị đề số 3
 
-**Đề:** Tính số chữ số cần dùng. Một quyển sách có 79 trang, đánh số trang từ 1. Phải dùng tất cả bao nhiêu chữ số?
+**Đề:** Trả lời ngắn gọn từng câu. Số 35 581 là số chẵn hay số lẻ?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -306,7 +333,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 4. (4 điểm) Đọc vị đề số 4
 
-**Đề:** Trình bày lời giải ngắn gọn cho từng ý. Số có hai chữ số 37; đổi chỗ hai chữ số ta được số nào? Hiệu của hai số đó bằng bao nhiêu?
+**Đề:** Trả lời và giải thích ngắn gọn, không cần tính ra kết quả tổng. Tổng 258 + 267 có chia hết cho 3 không?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -317,7 +344,7 @@ f) Lỗi nào dễ mắc ở đề này?
 
 ### Bài 5. (4 điểm) Đọc vị đề số 5
 
-**Đề:** Tìm số bé nhất thoả mãn. Tìm số bé nhất không quá 200 chia cho 4 dư 2 và chia cho 7 dư 2.
+**Đề:** Cho số **815 877**. Chữ số ở hàng **trăm nghìn** của số 815 877 là chữ số nào, và nó có giá trị bằng bao nhiêu?
 
 a) Đề này thuộc dạng bài nào?
 b) Dấu hiệu nào giúp em nhận ra?
@@ -339,123 +366,123 @@ f) Lỗi nào dễ mắc ở đề này?
 **Lỗi thường gặp:** Kể thiếu dạng bài. Phòng: Đếm số dạng rồi mới kể; kể xong đếm lại.
 
 ### Bài A.2
-**Đáp số:** a) Đề liên hệ số với tổng các chữ số của chính nó · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Cụm “có bao nhiêu số … từ … đến …” · d) Cụm “vừa chia hết cho … vừa chia hết cho …” · e) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …”
+**Đáp số:** a) Đề cho một bộ chữ số và yêu cầu lập số · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Hai điều kiện “chia cho … dư …” đi cùng nhau · d) Cụm “vừa chia hết cho … vừa chia hết cho …” · e) Đề cho quan hệ giữa các chữ số chứ không cho số
 **Hướng giải:** Cột “Dấu hiệu nhận biết” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.3
-**Đáp số:** a) Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm · b) Quy về một số chia duy nhất là BCNN rồi đếm · c) Đánh số hàng từ phải sang trái rồi tra bảng hàng · d) Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng · e) Rút gọn về chữ số tận cùng rồi tính
+**Đáp số:** a) Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại · b) Quy về một số chia duy nhất là BCNN rồi đếm · c) Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện · d) Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị · e) Tìm số đầu, số cuối hợp lệ rồi dùng công thức đếm
 **Hướng giải:** Cột “Phương pháp áp dụng” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.4
-**Đáp số:** a) Cấu tạo thập phân của số tự nhiên · b) Đếm số hạng dãy cách đều, cấu tạo số · c) Tính chất chữ số tận cùng · d) Cấu tạo thập phân, bài toán tổng – hiệu · e) Cấu tạo số, tổng chữ số
+**Đáp số:** a) Cấu tạo thập phân, bài toán tổng – hiệu · b) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · c) Dãy số cách đều, dấu hiệu chia hết · d) Tính chất chia hết của tổng và hiệu · e) Tính chất số dư của tổng
 **Hướng giải:** Cột “Kiến thức phải thuộc” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài A.5
-**Đáp số:** a) Với phép trừ, nếu chữ số cuối của số bị trừ nhỏ hơn thì mượn 10 rồi trừ. · b) Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. · c) Ghép cặp các chữ số cộng lại tròn 10 rồi cộng nhanh. · d) Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. · e) Ước lượng thương bằng cách làm tròn số chia trước khi chia.
+**Đáp số:** a) Số các số chia hết cho d từ 1 đến n bằng phần nguyên của n : d, nên đếm từ a đến b là b : d trừ đi (a − 1) : d. · b) Chỉ cộng các **số dư**, không cộng các số. · c) Với d = 9, số dư của một số bằng số dư của tổng các chữ số của nó. · d) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. · e) Loại ngay các số chẵn lớn hơn 2 và các số tận cùng bằng 5 lớn hơn 5.
 **Hướng giải:** Cột “Cách xử lý nhanh nhất” lấy từ bảng phân tích chuyên sâu của các phiếu đã học. Điền xong, đọc ngang từng hàng để thấy mạch từ đề bài tới lời giải.
 **Nhãn tư duy:** TD2, TD3. Điểm chốt: Bảng chỉ có giá trị khi **đọc ngang được từng hàng**.
 **Lỗi thường gặp:** Điền từng cột rời rạc, không đối chiếu ngang. Phòng: Điền xong thì đọc lại theo hàng, mỗi hàng phải thành một câu có nghĩa.
 
 ### Bài B.1
-**Đáp số:** a) không (tổng chữ số 19) · b) không (tổng chữ số 19) · c) không (tổng chữ số 7) · d) có (chữ số tận cùng 8) · e) không (chữ số tận cùng 9)
+**Đáp số:** a) 221 dư 2 · b) 969 dư 7 · c) 3 569 dư 3 · d) 458 dư 7 · e) 8 637 dư 8 · f) 2 722 dư 5 · g) 5 882 dư 17
+**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
+**Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
+**Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+
+### Bài B.2
+**Đáp số:** a) không (tổng chữ số 13) · b) không (tổng chữ số 23) · c) có (tổng chữ số 12) · d) không (chữ số tận cùng 4) · e) không (tổng chữ số 28) · f) có (chữ số tận cùng 6) · g) có (tổng chữ số 21)
 **Hướng giải:** Chia hết cho 2: tận cùng 0, 2, 4, 6, 8. Chia hết cho 5: tận cùng 0 hoặc 5. Chia hết cho 3: tổng các chữ số chia hết cho 3. Chia hết cho 9: tổng các chữ số chia hết cho 9.
 **Nhãn tư duy:** TD1, TD5. Điểm chốt: Dấu hiệu cho 2 và 5 nhìn **đuôi**; dấu hiệu cho 3 và 9 nhìn **tổng**.
 **Lỗi thường gặp:** Dùng dấu hiệu của 3 để kết luận cho 2, hoặc cộng thiếu một chữ số. Phòng: Viết rõ tổng các chữ số ra bên cạnh trước khi kết luận.
 
-### Bài B.2
-**Đáp số:** a) 3 · b) 2, 5, 8 · c) 0, 9 · d) 2, 5, 8 · e) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 · f) 4
+### Bài B.3
+**Đáp số:** a) 4 · b) 0, 9 · c) 6 · d) 2, 5, 8 · e) 0, 9 · f) không có chữ số nào
 **Hướng giải:** Xét dấu hiệu chia hết ứng với số chia, rồi thử lần lượt 10 chữ số từ 0 đến 9. Nếu dấu * đứng ở hàng cao nhất thì loại chữ số 0.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Phải tìm **tất cả** chữ số thoả mãn, không dừng ở chữ số đầu tiên tìm được.
 **Lỗi thường gặp:** Chỉ nêu một đáp số, hoặc nhận cả chữ số 0 ở hàng cao nhất. Phòng: Liệt kê đủ 10 chữ số ra nháp rồi gạch dần chữ số không đạt.
 
-### Bài B.3
-**Đáp số:** a) 80 · b) 149 · c) 152 · d) 116 · e) 118
-**Hướng giải:** Các số cần đếm lập thành một dãy cách đều. Số lượng số hạng bằng (số cuối − số đầu) : khoảng cách + 1. Phải tìm đúng số đầu và số cuối **nằm trong khoảng đã cho**.
-**Nhãn tư duy:** TD4, TD1. Điểm chốt: Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị.
-**Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. Phòng: Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức.
-
 ### Bài B.4
-**Đáp số:** a) có · b) có · c) có · d) có · e) không, dư 1 · f) có
+**Đáp số:** a) không, dư 1 · b) có · c) không, dư 8 · d) không, dư 8 · e) có
 **Hướng giải:** Nếu hai số cùng chia hết cho một số thì tổng và hiệu của chúng cũng chia hết cho số đó. Nếu một số chia hết còn số kia dư r thì tổng cũng dư đúng r.
 **Nhãn tư duy:** TD2, TD5. Điểm chốt: Xét **số dư** của từng số hạng là đủ, không cần cộng ra kết quả.
 **Lỗi thường gặp:** Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. Phòng: Ghi số dư của từng số hạng ngay bên dưới nó.
 
 ### Bài B.5
-**Đáp số:** a) 7 679 dư 7 · b) 7 510 dư 6 · c) 7 522 dư 1 · d) 8 925 dư 8 · e) 3 503 dư 2 · f) 707 dư 24 · g) 1 610 dư 9
-**Hướng giải:** Đặt tính chia. Trong phép chia có dư, luôn có **số bị chia = số chia × thương + số dư** và **số dư bé hơn số chia**.
-**Nhãn tư duy:** TD1. Điểm chốt: Số dư luôn **bé hơn** số chia — dư bằng hoặc lớn hơn số chia là chia chưa xong.
-**Lỗi thường gặp:** Để số dư lớn hơn số chia, hoặc quên hạ chữ số 0 nên thương thiếu chữ số. Phòng: Thử lại bằng công thức số bị chia = số chia × thương + số dư.
+**Đáp số:** a) 105 · b) 101 · c) 94 · d) 244
+**Hướng giải:** Các số cần đếm lập thành một dãy cách đều. Số lượng số hạng bằng (số cuối − số đầu) : khoảng cách + 1. Phải tìm đúng số đầu và số cuối **nằm trong khoảng đã cho**.
+**Nhãn tư duy:** TD4, TD1. Điểm chốt: Công thức có **+ 1** ở cuối; quên cộng 1 là sai một đơn vị.
+**Lỗi thường gặp:** Lấy luôn hai đầu khoảng làm số đầu và số cuối của dãy dù chúng không thoả điều kiện. Phòng: Viết ra ba số đầu và ba số cuối của dãy trước khi áp công thức.
 
 ### Bài C.1
-**Đáp số:** a) 45 · b) 8 000 · c) 3 200 · d) 8 000
+**Đáp số:** a) 14 000 · b) 70 · c) 2 200 · d) 7 900 · e) 7 200 · f) 6 000
 **Hướng giải:** Trong một tích, được phép đổi chỗ và nhóm các thừa số. Ghép các cặp cho tích tròn: 25 × 4 = 100, 125 × 8 = 1 000, 50 × 2 = 100, 20 × 5 = 100. Chia liên tiếp cho hai số bằng chia cho tích hai số đó.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Thuộc lòng bốn cặp tròn: **25 × 4**, **125 × 8**, **50 × 2**, **20 × 5**.
 **Lỗi thường gặp:** Nhân lần lượt từ trái sang phải nên số trung gian rất lớn. Phòng: Quét cả tích tìm cặp tròn trước khi đặt bút tính.
 
 ### Bài C.2
-**Đáp số:** a) 30 · b) XXI · c) không · d) 4 tuần 5 ngày · e) 30
-**Hướng giải:** Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày; các tháng 4, 6, 9, 11 có 30 ngày; tháng 2 có 28 ngày, năm nhuận có 29 ngày. Năm nhuận là năm chia hết cho 4, riêng năm tròn trăm thì phải chia hết cho 400. Thế kỉ thứ n gồm các năm từ (n − 1) × 100 + 1 đến n × 100.
-**Nhãn tư duy:** TD1, TD2. Điểm chốt: Năm tròn trăm chỉ nhuận khi chia hết cho **400** (1900 không nhuận, 2000 có nhuận).
-**Lỗi thường gặp:** Coi mọi năm chia hết cho 4 đều là năm nhuận. Phòng: Gặp năm tròn trăm thì kiểm tra thêm điều kiện chia hết cho 400.
-
-### Bài C.3
-**Đáp số:** a) 347 · b) 414 · c) 384 · d) 385 · e) 389 · f) 415 · g) 213
+**Đáp số:** a) 362 · b) 200 · c) 414 · d) 384 · e) 385 · f) 389 · g) 415
 **Hướng giải:** Dùng tính chất giao hoán và kết hợp của phép cộng để đổi chỗ, nhóm những số cộng lại thành số tròn chục, tròn trăm rồi mới cộng phần còn lại.
 **Nhãn tư duy:** TD5, TD3. Điểm chốt: Tìm **cặp cộng tròn 100** trước khi cộng theo thứ tự.
 **Lỗi thường gặp:** Cộng lần lượt từ trái sang phải nên bỏ lỡ cặp số tròn. Phòng: Đọc lướt cả dãy, khoanh tròn cặp số cộng lại tròn chục, tròn trăm.
 
+### Bài C.3
+**Đáp số:** a) 167 · b) 91 · c) 104 · d) 99 · e) 12 · f) 174 · g) 183
+**Hướng giải:** Số số hạng = (số hạng cuối − số hạng đầu) : khoảng cách + 1. Phần chia cho biết số khoảng, cộng 1 để đổi từ số khoảng sang số số hạng.
+**Nhãn tư duy:** TD4, TD3. Điểm chốt: Số khoảng luôn **ít hơn số số hạng đúng 1**.
+**Lỗi thường gặp:** Quên cộng 1 nên thiếu một số hạng. Phòng: Thử với dãy ngắn (3 số hạng) để kiểm chứng công thức.
+
 ### Bài C.4
-**Đáp số:** a) 20 · b) 32 · c) 52 · d) 68 · e) 612
-**Hướng giải:** Số que của các hình lập thành dãy cách đều. Dùng công thức số hạng thứ n để tính cho một hình bất kì, dùng công thức tổng dãy cách đều khi hỏi tổng số que của nhiều hình.
-**Nhãn tư duy:** TD4, TD3. Điểm chốt: Bài toán hình nhưng lời giải là **dãy số** — đổi ngôn ngữ trước khi tính.
-**Lỗi thường gặp:** Vẽ tay từng hình để đếm, không kịp thời gian với hình thứ hai, ba chục. Phòng: Lập bảng ba hình đầu để tìm khoảng cách rồi mới dùng công thức.
+**Đáp số:** a) 25 m · b) 13 cm · c) 7 cm · d) 28 m · e) 950 m
+**Hướng giải:** Tỉ lệ 1 : n nghĩa là 1 đơn vị trên bản đồ ứng với n đơn vị thật, **cùng một loại đơn vị**. Từ bản đồ ra thật thì nhân với n; từ thật về bản đồ thì chia cho n. Đổi đơn vị chỉ làm ở bước cuối.
+**Nhãn tư duy:** TD2, TD3. Điểm chốt: Nhân hay chia với n trước, **đổi đơn vị sau** — làm ngược là rối.
+**Lỗi thường gặp:** Đổi mét sang xăng-ti-mét ngay từ đầu rồi lại nhân tỉ lệ một lần nữa. Phòng: Viết rõ một dòng: “1 cm bản đồ = … cm thật” trước khi tính.
 
 ### Bài C.5
-**Đáp số:** a) 10 380 · b) 5 871 · c) 14 146 · d) 3 168
-**Hướng giải:** Chỉ cộng, trừ được các số đo **cùng đơn vị**. Bước đầu tiên luôn là đổi tất cả về đơn vị mà đề yêu cầu ở kết quả, sau đó tính như với số tự nhiên rồi ghi kèm đơn vị.
-**Nhãn tư duy:** TD1, TD3. Điểm chốt: Đơn vị của **kết quả** quyết định ta đổi về đơn vị nào.
-**Lỗi thường gặp:** Cộng số mét với số xăng-ti-mét mà chưa đổi. Phòng: Gạch chân đơn vị ở chỗ chấm rồi đổi mọi số hạng về đơn vị đó.
+**Đáp số:** a) 14 · b) 14 · c) 46 · d) An (14) · e) Chi (8) · f) 6 · g) 6 hình
+**Hướng giải:** Việc đầu tiên khi đọc biểu đồ tranh là đọc **chú thích**: mỗi hình ứng với bao nhiêu đơn vị. Sau đó nhân số hình với số ấy. Muốn lập biểu đồ thì làm ngược lại: chia số thật cho số đơn vị mỗi hình.
+**Nhãn tư duy:** TD1, TD2. Điểm chốt: Mỗi hình **không phải một đơn vị** — phải đọc chú thích trước.
+**Lỗi thường gặp:** Đếm số hình rồi trả lời luôn, quên nhân với số đơn vị mỗi hình. Phòng: Khoanh tròn dòng chú thích trước khi trả lời bất kỳ câu nào.
 
 ### Bài D.1
-**Đáp số:** a) 0 · b) 1 · c) 5 · d) 6 · e) 8
-**Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
-**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
-**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
-**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
+**Đáp số:** a) 63 · b) 92, hiệu 63 · c) hơn 1 đơn vị · d) 39, hiệu 54 · e) 14 · f) 40
+**Hướng giải:** Viết số có hai chữ số dưới dạng **ab = a × 10 + b** với a là chữ số hàng chục (khác 0), b là chữ số hàng đơn vị. Từ điều kiện của đề, lập quan hệ giữa a và b rồi dùng bài toán tổng – hiệu.
+**Nhãn tư duy:** TD3, TD2. Điểm chốt: Chữ số hàng chục **khác 0** và mỗi chữ số chỉ nhận giá trị từ 0 đến 9.
+**Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
+**Gợi ý 3 tầng:** (1) Gọi chữ số hàng chục là a, hàng đơn vị là b. — (2) Viết số đó thành a × 10 + b. — (3) Đưa về bài toán tổng – hiệu của a và b.
 
 ### Bài D.2
-**Đáp số:** a) 120 đường thẳng · b) 190 trận · c) 190 cái · d) 45 đường thẳng
-**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
-**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
-**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
-**Gợi ý 3 tầng:** (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
-
-### Bài D.3
-**Đáp số:** a) 166 · b) 132 · c) 134 · d) 454 · e) 232
+**Đáp số:** a) 232 · b) 77 · c) 240 · d) 406 · e) 462
 **Hướng giải:** Với một số **lẻ** các số tự nhiên liên tiếp, số ở giữa chính là trung bình cộng: số giữa = tổng : số lượng. Số bé nhất bằng số giữa trừ đi một nửa số lượng còn lại.
 **Nhãn tư duy:** TD3, TD4. Điểm chốt: Với số lượng lẻ thì **số giữa = tổng : số lượng** — đó là chìa khoá.
 **Lỗi thường gặp:** Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất. Phòng: Vẽ dãy số ra, đánh dấu vị trí số giữa trước khi lùi về số đầu.
 **Gợi ý 3 tầng:** (1) Số lượng số hạng là số chẵn hay lẻ? — (2) Với số lượng lẻ, số ở giữa bằng tổng chia số lượng. — (3) Từ số giữa lùi về đầu dãy mấy đơn vị?
 
-### Bài D.4
-**Đáp số:** a) 54 số, bé nhất là 60 · b) 49 số, bé nhất là 270 · c) 28 số, bé nhất là 108 · d) 106 số, bé nhất là 36
-**Hướng giải:** BẪY — BCNN chứ không phải tích hai số chia. Số vừa chia hết cho hai số thì chia hết cho bội chung nhỏ nhất của chúng. Các số đó lập thành dãy cách đều với khoảng cách bằng bội chung nhỏ nhất; dùng công thức đếm số hạng của dãy cách đều.
-**Nhãn tư duy:** TD2, TD4. Điểm chốt: Khoảng cách của dãy là **bội chung nhỏ nhất**, không phải tích hai số khi hai số không nguyên tố cùng nhau.
-**Lỗi thường gặp:** Lấy tích hai số làm khoảng cách (ví dụ dùng 27 cho “chia hết cho 3 và 9”). Phòng: Kiểm tra bằng cách viết ba số đầu tiên của dãy rồi xem khoảng cách thật.
-**Gợi ý 3 tầng:** (1) Số chia hết cho cả hai số thì chia hết cho số nào? — (2) Tìm bội chung nhỏ nhất của hai số đó. — (3) Các số cần tìm cách đều nhau đúng bằng bội chung nhỏ nhất.
+### Bài D.3
+**Đáp số:** a) 6 · b) 6 · c) 7 · d) 0 · e) 0
+**Hướng giải:** Chữ số tận cùng của tổng, hiệu, tích chỉ phụ thuộc vào chữ số tận cùng của các số tham gia. Chỉ cần lấy các chữ số tận cùng ra tính với nhau rồi lấy chữ số tận cùng của kết quả.
+**Nhãn tư duy:** TD5, TD2. Điểm chốt: Chỉ làm việc với **chữ số cuối**, bỏ hết phần đầu của số.
+**Lỗi thường gặp:** Tính trọn cả phép tính, vừa lâu vừa dễ sai. Phòng: Che phần đầu của hai số, chỉ để lộ chữ số cuối cùng.
+**Gợi ý 3 tầng:** (1) Chữ số tận cùng của mỗi số là chữ số nào? — (2) Thực hiện phép tính với riêng hai chữ số tận cùng đó. — (3) Lấy chữ số tận cùng của kết quả vừa tính.
 
-### Bài D.5
-**Đáp số:** a) 709 · 790 · 907 · 970 · b) 4 · c) 970 · d) 709 · e) 2 · f) 2 · g) 1 679
+### Bài D.4
+**Đáp số:** a) 259 · 295 · 529 · 592 · 925 · 952 · b) 6 · c) 952 · d) 259 · e) 2 · f) 2 · g) 1 211
 **Hướng giải:** BẪY — Chữ số 0 không đứng đầu. Lập số theo thứ tự: chọn chữ số hàng trăm trước (khác 0), rồi hàng chục, rồi hàng đơn vị, mỗi chữ số dùng đúng một lần. Viết có hệ thống theo nhóm cùng chữ số hàng trăm để không bỏ sót và không trùng lặp.
 **Nhãn tư duy:** TD4, TD6. Điểm chốt: Chữ số **0 không được đứng ở hàng trăm**, nên nếu bộ có chữ số 0 thì số lượng số lập được ít hơn.
 **Lỗi thường gặp:** Viết lộn xộn nên vừa sót vừa trùng; hoặc nhận cả số bắt đầu bằng 0. Phòng: Liệt kê theo nhóm: cố định hàng trăm rồi mới hoán vị hai chữ số còn lại.
 **Gợi ý 3 tầng:** (1) Chọn chữ số hàng trăm trước — chữ số nào không được chọn? — (2) Với mỗi chữ số hàng trăm, hai chữ số còn lại xếp được mấy cách? — (3) Liệt kê theo nhóm để kiểm soát, đừng viết ngẫu nhiên.
+
+### Bài D.5
+**Đáp số:** a) 6 đường thẳng · b) 66 trận · c) 171 cái · d) 21 đường thẳng
+**Hướng giải:** BẪY — Mỗi cặp bị đếm hai lần. Mỗi người bắt tay với n − 1 người còn lại, nên tổng số lượt bắt tay là n × (n − 1). Nhưng mỗi cái bắt tay được đếm **hai lần** (một lần từ mỗi phía), nên số bắt tay thật sự là n × (n − 1) : 2.
+**Nhãn tư duy:** TD4, TD6. Điểm chốt: Chia cho 2 vì mỗi cặp được đếm **hai lần**.
+**Lỗi thường gặp:** Quên chia 2, đáp số gấp đôi. Phòng: Thử với 3 người: phải ra 3 cái bắt tay, không phải 6.
+**Gợi ý 3 tầng:** (1) Mỗi người bắt tay với bao nhiêu người? — (2) Nhân với số người thì mỗi cái bắt tay bị đếm mấy lần? — (3) Chia kết quả cho 2.
 
 ### Bài E.1
 **Đáp số:** a) Dãy số tự nhiên liên tiếp có tổng cho trước · b) Cụm “… số tự nhiên liên tiếp có tổng bằng …” · c) Trung bình cộng, dãy cách đều · d) Tìm số giữa bằng phép chia rồi suy ra hai đầu dãy · e) Tổng của n số liên tiếp (n lẻ) luôn chia hết cho n. · f) Lấy tổng chia cho số lượng rồi nhận luôn kết quả là số bé nhất.
@@ -472,24 +499,24 @@ f) Lỗi nào dễ mắc ở đề này?
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.3
-**Đáp số:** a) Đếm chữ số theo nhóm độ dài · b) Bài toán đánh số trang, đánh số nhà, đánh số vé · c) Đếm số hạng dãy cách đều, cấu tạo số · d) Chia nhóm 1 chữ số – 2 chữ số – 3 chữ số rồi nhân và cộng · e) Sách 100 trang luôn dùng 192 chữ số; nhớ mốc này để kiểm tra nhanh. · f) Lấy số trang nhân với số chữ số của trang cuối.
+**Đáp số:** a) Nhận biết chẵn – lẻ và số liền kề · b) Từ khoá “chẵn”, “lẻ”, “liền trước”, “liền sau” · c) Dãy số tự nhiên liên tiếp, dấu hiệu chia hết cho 2 · d) Xét chữ số tận cùng; cộng hoặc trừ 1 đơn vị · e) Che hết các chữ số, chỉ để lộ chữ số cuối. · f) Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Lấy số trang nhân với số chữ số của trang cuối. Phòng: Kẻ bảng ba cột: khoảng trang – số trang – số chữ số, rồi cộng cột cuối.
+**Lỗi thường gặp:** Nhầm “liền trước” với “bé hơn”, trả lời một số bất kì bé hơn. Phòng: Liền trước – liền sau chỉ hơn kém đúng **1** đơn vị.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.4
-**Đáp số:** a) Tìm số theo điều kiện của các chữ số · b) Đề cho quan hệ giữa các chữ số chứ không cho số · c) Cấu tạo thập phân, bài toán tổng – hiệu · d) Đặt ẩn cho từng chữ số, viết số theo cấu tạo, giải hệ điều kiện · e) Đổi chỗ hai chữ số của số có hai chữ số thì hiệu luôn bằng 9 lần hiệu hai chữ số. · f) Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số.
+**Đáp số:** a) Xét chia hết của tổng, hiệu · b) Câu hỏi về tổng hoặc hiệu, không yêu cầu kết quả cụ thể · c) Tính chất chia hết của tổng và hiệu · d) Xét số dư từng số hạng rồi cộng, trừ các số dư · e) Chỉ cộng các **số dư**, không cộng các số. · f) Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Tìm ra a hoặc b lớn hơn 9 mà vẫn nhận đáp số. Phòng: Sau khi tính xong, kiểm tra lại từng chữ số có nằm trong khoảng 0–9 không.
+**Lỗi thường gặp:** Cộng hai số ra rồi mới chia — mất thời gian và dễ sai tính. Phòng: Ghi số dư của từng số hạng ngay bên dưới nó.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ### Bài E.5
-**Đáp số:** a) Tìm số thoả nhiều điều kiện chia có dư · b) Hai điều kiện “chia cho … dư …” đi cùng nhau · c) Phép chia có dư, dãy cách đều · d) Lập dãy theo điều kiện chặt hơn rồi lọc theo điều kiện còn lại · e) Chọn điều kiện có số chia **lớn hơn** để lập dãy — dãy thưa hơn nên thử nhanh hơn. · f) Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót.
+**Đáp số:** a) Xác định chữ số và giá trị chữ số theo hàng · b) Đề hỏi “chữ số hàng …” hoặc “giá trị của chữ số …” · c) Cấu tạo thập phân của số tự nhiên · d) Đánh số hàng từ phải sang trái rồi tra bảng hàng · e) Đếm số chữ số đứng sau chữ số cần tìm — đó chính là số chữ số 0 phải viết thêm khi ghi giá trị. · f) Đếm hàng từ trái sang phải nên lệch hàng.
 **Hướng giải:** Đọc vị là trả lời năm câu hỏi theo thứ tự: dạng gì → dấu hiệu nào → kiến thức nào → phương pháp nào → có lối tắt không. Chỉ khi trả lời xong năm câu ấy mới bắt đầu tính.
 **Nhãn tư duy:** TD2, TD6. Điểm chốt: Đọc vị xong mới đặt bút — **không tính trước khi gọi tên dạng**.
-**Lỗi thường gặp:** Thử từng số từ 1 trở đi nên quá lâu và dễ bỏ sót. Phòng: Viết dãy số thoả điều kiện thứ nhất trước, rồi mới lọc.
+**Lỗi thường gặp:** Đếm hàng từ trái sang phải nên lệch hàng. Phòng: Luôn viết số ra nháp rồi đánh dấu hàng đơn vị trước, đi ngược về trái.
 **Gợi ý 3 tầng:** (1) Gạch chân các từ khoá trong đề. — (2) Đối chiếu từ khoá với bảng dạng bài ở phần A. — (3) Gọi tên dạng bài rồi mới nghĩ tới phép tính.
 
 ---
