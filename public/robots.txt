@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /placement
+Disallow: /exam
+Disallow: /practice
+Disallow: /topic
+Disallow: /review
+Disallow: /analytics
+Disallow: /profile
+Disallow: /roadmap
+Disallow: /solutions
+Disallow: /report
+Disallow: /workspace
+Disallow: /brand
+Disallow: /roles
+Disallow: /settings
+Disallow: /worksheet
+
+# Đặt VITE_SITE_URL rồi chạy lại để có dòng Sitemap

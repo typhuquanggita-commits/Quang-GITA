@@ -6,14 +6,16 @@
   "description": "HSA365 — nen tang luyen thi Danh gia nang luc HSA (DHQGHN) theo lo trinh ca nhan hoa.",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run seo && tsc --noEmit && vite build && npm run prerender",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "verify": "npm run typecheck && npm run test && npm run build",
-    "catalogue": "tsx scripts/export-catalogue.ts"
+    "catalogue": "tsx scripts/export-catalogue.ts",
+    "seo": "tsx scripts/export-seo.ts",
+    "prerender": "node scripts/prerender.mjs"
   },
   "dependencies": {
     "@google/genai": "^1.9.0",

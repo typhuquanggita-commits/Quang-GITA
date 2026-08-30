@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { hrefOf } from '../../lib/router';
 import {
   ABSORPTION_TIERS,
   ACTION_LEVELS,
@@ -292,7 +293,7 @@ function ParetoPanel() {
               {formatPercent(topic.share, 0)} điểm có thể lấy lại
             </span>
             <a
-              href={`#/practice?topic=${encodeURIComponent(topic.topicId)}`}
+              href={hrefOf(`/practice?topic=${encodeURIComponent(topic.topicId)}`)}
               className="shrink-0 text-sm font-medium text-brand underline underline-offset-2"
             >
               Luyện
@@ -794,7 +795,7 @@ function PractitionerLadder({ currentId }: { currentId: string | null }) {
         Ánh xạ sang vai trò trong hệ thống được định nghĩa ở{' '}
         <code className="rounded bg-surface-2 px-1">practitionerLevelOf()</code> trong{' '}
         <code className="rounded bg-surface-2 px-1">src/lib/gita.ts</code>. Xem thêm{' '}
-        <a href="#/roles" className="font-medium text-brand underline underline-offset-2">
+        <a href={hrefOf('/roles')} className="font-medium text-brand underline underline-offset-2">
           màn hình Phân quyền
         </a>
         .

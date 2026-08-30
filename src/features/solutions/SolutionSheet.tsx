@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { hrefOf } from '../../lib/router';
 import { cn } from '../../lib/cn';
 import { formatClock, formatPercent } from '../../lib/format';
 import { ERROR_LABEL, ERROR_MEANING, type SolutionEntry } from '../../lib/solutions';
@@ -216,7 +217,7 @@ function SolutionCard({
             })}
           </ul>
           <a
-            href={`#/practice?topic=${encodeURIComponent(entry.question.topicId)}`}
+            href={hrefOf(`/practice?topic=${encodeURIComponent(entry.question.topicId)}`)}
             className="mt-2 inline-block text-sm font-medium text-brand underline underline-offset-2"
           >
             Mở phiếu luyện chuyên đề này

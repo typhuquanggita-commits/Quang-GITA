@@ -19,8 +19,21 @@ function renderApp(state?: PersistedState) {
   );
 }
 
+/**
+ * Dieu huong trong test.
+ *
+ * Ung dung nay dung History API khi chay tren http (jsdom la http://localhost),
+ * va chi lui ve hash khi mo bang file://. Nen test phai dieu huong dung cach
+ * ung dung that dieu huong — dung hash o day se test mot duong di ma nguoi
+ * dung khong bao gio di.
+ */
+function goTo(path: string) {
+  window.history.pushState(null, '', path);
+  window.dispatchEvent(new Event('hsa365:route'));
+}
+
 beforeEach(() => {
-  window.location.hash = '#/';
+  window.history.replaceState(null, '', '/');
   localStorage.clear();
   sessionStorage.clear();
 });
@@ -39,17 +52,15 @@ describe('khung ứng dụng', () => {
     expect(screen.getByText('Bỏ qua điều hướng, đến nội dung chính')).toHaveAttribute('href', '#main');
   });
 
-  it('điều hướng bằng hash đổi đúng màn hình', async () => {
+  it('điều hướng đổi đúng màn hình và đổi luôn đường dẫn thật', async () => {
     renderApp();
-    window.location.hash = '#/roles';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/roles');
     expect(await screen.findByRole('heading', { level: 1, name: 'Phân quyền hệ thống' })).toBeInTheDocument();
   });
 
   it('đường dẫn không tồn tại hiện trang 404 thay vì màn hình trắng', async () => {
     renderApp();
-    window.location.hash = '#/khong-ton-tai';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/khong-ton-tai');
     expect(await screen.findByText('404')).toBeInTheDocument();
   });
 });
@@ -57,8 +68,7 @@ describe('khung ứng dụng', () => {
 describe('phân quyền trên giao diện', () => {
   it('học viên mới bị chặn đề full 3 phần và được giải thích lý do', async () => {
     renderApp();
-    window.location.hash = '#/exam';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/exam');
     expect(await screen.findByText('Đề full 3 phần chưa mở')).toBeInTheDocument();
   });
 
@@ -68,8 +78,7 @@ describe('phân quyền trên giao diện', () => {
     state.profile = { ...state.profile, role: 'superAdmin', rank: 1 };
     renderApp(state);
 
-    window.location.hash = '#/roles';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/roles');
 
     const heading = await screen.findByRole('heading', { level: 1, name: 'Phân quyền hệ thống' });
     expect(heading).toBeInTheDocument();
@@ -90,8 +99,7 @@ describe('phân quyền trên giao diện', () => {
 describe('phiếu luyện', () => {
   it('mở đúng phiếu theo mã và hiện lời giao nhiệm vụ trước khi làm', async () => {
     renderApp();
-    window.location.hash = '#/worksheet?id=PL-TOA-ARI-L1-001';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/worksheet?id=PL-TOA-ARI-L1-001');
 
     expect(await screen.findByText(/Nhiệm vụ NV-/)).toBeInTheDocument();
     expect(screen.getByText('Bạn sẽ đi qua 3 chặng')).toBeInTheDocument();
@@ -100,16 +108,14 @@ describe('phiếu luyện', () => {
 
   it('mã phiếu sai không làm hỏng ứng dụng', async () => {
     renderApp();
-    window.location.hash = '#/worksheet?id=KHONG-CO-THAT';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/worksheet?id=KHONG-CO-THAT');
     expect(await screen.findByText('Không tìm thấy phiếu luyện')).toBeInTheDocument();
   });
 
   it('làm được chặng 1: chọn phương án rồi đi tiếp', async () => {
     const user = userEvent.setup();
     renderApp();
-    window.location.hash = '#/worksheet?id=PL-TOA-ARI-L1-001';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/worksheet?id=PL-TOA-ARI-L1-001');
 
     await user.click(await screen.findByRole('button', { name: 'Bắt đầu chặng 1' }));
     const group = await screen.findByRole('radiogroup', { name: /Phương án cho câu 1/ });
@@ -151,8 +157,7 @@ describe('ranh giới lỗi', () => {
 describe('không gian làm việc', () => {
   it('học viên bị chặn nhưng vẫn có tiêu đề cấp 1 và lời giải thích', async () => {
     renderApp();
-    window.location.hash = '#/workspace';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/workspace');
 
     // Cho dung tieu de can tim: man hinh nap dong nen h1 cua trang truoc van
     // con o do trong vai nhip dau.
@@ -168,8 +173,7 @@ describe('không gian làm việc', () => {
     state.profile = { ...state.profile, role: 'teacher', rank: 3 };
     renderApp(state);
 
-    window.location.hash = '#/workspace';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/workspace');
 
     expect(
       await screen.findByRole('heading', { level: 1, name: 'Không gian làm việc' }),
@@ -181,8 +185,7 @@ describe('không gian làm việc', () => {
 describe('báo cáo gia đình', () => {
   it('luôn nêu ba việc gia đình làm được, không chỉ nêu điểm số', async () => {
     renderApp();
-    window.location.hash = '#/report';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/report');
 
     expect(await screen.findByRole('heading', { level: 1, name: /Báo cáo học tập/ })).toBeInTheDocument();
     expect(
@@ -194,8 +197,7 @@ describe('báo cáo gia đình', () => {
 describe('đề cương và chứng chỉ', () => {
   it('đề cương luôn dựng được và có tiêu đề cấp 1', async () => {
     renderApp();
-    window.location.hash = '#/de-cuong';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/de-cuong');
     expect(
       await screen.findByRole('heading', { level: 1, name: 'Đề cương 32 tuần' }),
     ).toBeInTheDocument();
@@ -205,8 +207,7 @@ describe('đề cương và chứng chỉ', () => {
     // Truoc khi sua, ca trang khong co h1 nao khi nguoi hoc chua dat bac —
     // nguoi dung trinh doc man hinh khong biet minh dang o dau.
     renderApp();
-    window.location.hash = '#/chung-chi';
-    window.dispatchEvent(new HashChangeEvent('hashchange'));
+    goTo('/chung-chi');
     expect(
       await screen.findByRole('heading', { level: 1, name: /Kỳ thi cấp chứng chỉ/ }),
     ).toBeInTheDocument();

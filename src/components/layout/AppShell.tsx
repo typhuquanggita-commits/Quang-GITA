@@ -16,6 +16,7 @@ import {
   IconClose,
   IconExam,
   IconHome,
+  IconInfo,
   IconMenu,
   IconMedal,
   IconNotebook,
@@ -52,6 +53,7 @@ export function AppShell({ children }: { children: ReactNode }) {
     () => [
       { href: '/', label: 'Tổng quan', icon: IconHome },
       { href: '/de-cuong', label: 'Đề cương 32 tuần', icon: IconBook },
+      { href: '/hsa-la-gi', label: 'Kiến thức về kỳ thi', icon: IconInfo },
       { href: '/placement', label: 'Định vị đầu vào', icon: IconCompass },
       { href: '/exam', label: 'Thi thử', icon: IconExam },
       { href: '/paper', label: 'Đề mẫu', icon: IconPaper },

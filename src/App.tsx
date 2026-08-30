@@ -1,6 +1,7 @@
 import { Suspense, lazy, useEffect } from 'react';
 import { AppShell } from './components/layout/AppShell';
-import { useRoute } from './lib/router';
+import { Link, useRoute } from './lib/router';
+import { applyHead, applyStructuredData } from './lib/head';
 import { useAppState } from './store/AppStore';
 import { DashboardPage } from './features/dashboard/DashboardPage';
 import { WorksheetPage } from './features/practice/WorksheetPage';
@@ -35,6 +36,12 @@ const SyllabusPage = lazy(() =>
 const CertificatePage = lazy(() =>
   import('./features/certificate/CertificatePage').then((m) => ({ default: m.CertificatePage })),
 );
+const ArticlePage = lazy(() =>
+  import('./features/content/ArticlePage').then((m) => ({ default: m.ArticlePage })),
+);
+const FaqPage = lazy(() =>
+  import('./features/content/ArticlePage').then((m) => ({ default: m.FaqPage })),
+);
 const ExamPage = lazy(() => import('./features/exam/ExamPage').then((m) => ({ default: m.ExamPage })));
 const PracticePage = lazy(() =>
   import('./features/practice/PracticePage').then((m) => ({ default: m.PracticePage })),
@@ -64,6 +71,7 @@ const TopicGuidePage = lazy(() =>
 export function App() {
   const route = useRoute();
   useThemeEffect();
+  useHeadEffect(route.path);
 
   // Bài làm chiếm toàn màn hình: mọi thứ không phải câu hỏi đều là nhiễu.
   if (route.path === '/worksheet') return <WorksheetPage />;
@@ -83,6 +91,13 @@ function Routes({ path }: { path: string }) {
       return <DashboardPage />;
     case '/placement':
       return <PlacementPage />;
+    case '/hsa-la-gi':
+    case '/cau-truc-de-thi-hsa':
+    case '/lo-trinh-on-thi-hsa':
+    case '/bao-nhieu-diem-la-cao':
+      return <ArticlePage />;
+    case '/cau-hoi-thuong-gap':
+      return <FaqPage />;
     case '/de-cuong':
       return <SyllabusPage />;
     case '/chung-chi':
@@ -154,11 +169,25 @@ function NotFound({ path }: { path: string }) {
       <p className="mt-2 text-sm text-fg-muted">
         Hãy dùng thanh điều hướng bên trái, hoặc nhấn ⌘K để tìm nhanh.
       </p>
-      <a href="#/" className="mt-6 inline-block text-sm font-medium text-brand underline underline-offset-4">
+      <Link to="/" className="mt-6 inline-block text-sm font-medium text-brand underline underline-offset-4">
         Về màn hình Tổng quan
-      </a>
+      </Link>
     </div>
   );
+}
+
+/**
+ * Cập nhật thẻ mô tả trang mỗi lần đổi đường dẫn.
+ *
+ * Một ứng dụng một trang đổi nội dung mà không đổi <title> sẽ cho kết quả tìm
+ * kiếm toàn một dòng giống nhau — và người dùng mở một chục tab thì không phân
+ * biệt được tab nào là tab nào.
+ */
+function useHeadEffect(path: string) {
+  useEffect(() => {
+    applyHead(path);
+    applyStructuredData(path);
+  }, [path]);
 }
 
 /** Đồng bộ cài đặt hiển thị xuống thẻ <html>. */

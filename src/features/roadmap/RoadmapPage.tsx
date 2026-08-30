@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { hrefOf } from '../../lib/router';
 import { MAX_TOTAL_SCORE } from '../../config';
 import { STAGES, STAGE_PROMOTION_KPI } from '../../data/curriculum';
 import { summarize } from '../../lib/analytics';
@@ -211,7 +212,7 @@ export function RoadmapPage() {
                 thành thạo {formatPercent(topic.mastery, 0)}
               </span>
               <a
-                href={`#/practice?topic=${encodeURIComponent(topic.topicId)}`}
+                href={hrefOf(`/practice?topic=${encodeURIComponent(topic.topicId)}`)}
                 className="shrink-0 text-sm font-medium text-brand underline underline-offset-2"
               >
                 Luyện
