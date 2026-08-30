@@ -14896,6 +14896,54 @@ G.VIEWS['chieu-sau'] = function(){
              .concat(CAP.map(o1)).concat([trang]);
     }));
 
+  /* ══ DUYỆT TRỰC TIẾP 11 NHÓM PHÁC ĐỒ VÀ 10 CHỦ ĐỀ TÌNH HUỐNG ══
+     Trước bản này hai kho ấy chỉ mở được khi đi vòng qua một phác đồ
+     hoặc một tình huống cụ thể. Người muốn đọc cả bản đồ năng lực của
+     nghề thì không có cửa nào — mà đó đúng là thứ Coach mới cần nhất
+     khi hỏi "tôi đang ở đâu và còn thiếu gì". */
+  var soNhomPD2 = {}; (G.PHACDO || []).forEach(function(x){ soNhomPD2[x.nhom] = x.nhomTen || x.nhom; });
+  var dsPD = Object.keys(G.PD_SAU || {});
+  if(dsPD.length){
+    o += U.sec('MƯỜI MỘT NHÓM PHÁC ĐỒ', 'Bấm để đọc cả năm cấp — 220 phác đồ chia vào các nhóm này');
+    o += U.tbl(['Nhóm', 'Số phác đồ', 'C1', 'C2', 'C3', 'C4', 'C5', 'Cái bẫy của nhóm'],
+      dsPD.map(function(n){
+        var v = G.PD_SAU[n], dem = (G.PHACDO || []).filter(function(x){ return x.nhom === n; }).length;
+        var oc = function(c){
+          var l = v.c && v.c[c];
+          var du = l && TRUONG_CAP.every(function(f){ return !!l[f]; });
+          return '<span class="mono" style="color:' + (du ? 'var(--ok)' : 'var(--ink-4)') + '">' +
+            (du ? '●' : '○') + '</span>';
+        };
+        return ['<a href="#" data-pdsau="' + h(n) + '"><b class="sm">' + h(n) + '</b></a>' +
+                '<div class="tiny muted">' + h(soNhomPD2[n] || '') + '</div>',
+                '<span class="tiny mono">' + dem + '</span>']
+               .concat(CAP.map(oc))
+               .concat(['<span class="tiny muted">' + h(G.chuHet ? G.chuHet(v.y, 110) : v.y) + '</span>']);
+      }));
+  }
+
+  var dsTH = Object.keys(G.TH_SAU || {});
+  if(dsTH.length){
+    var demTH = {};
+    var nk2 = (G.NOI_KET || {}).th || {};
+    Object.keys(nk2).forEach(function(k){ var c = nk2[k].chuDe; if(c) demTH[c] = (demTH[c] || 0) + 1; });
+    o += U.sec('MƯỜI CHỦ ĐỀ TÌNH HUỐNG', 'Bấm để đọc cả năm cấp — 250 tình huống chia vào các chủ đề này');
+    o += U.tbl(['Chủ đề', 'Số tình huống', 'C1', 'C2', 'C3', 'C4', 'C5', 'Cái bẫy của chủ đề'],
+      dsTH.map(function(n){
+        var v = G.TH_SAU[n];
+        var oc = function(c){
+          var l = v.c && v.c[c];
+          var du = l && TRUONG_CAP.every(function(f){ return !!l[f]; });
+          return '<span class="mono" style="color:' + (du ? 'var(--ok)' : 'var(--ink-4)') + '">' +
+            (du ? '●' : '○') + '</span>';
+        };
+        return ['<a href="#" data-thsau="' + h(n) + '"><b class="sm">' + h(v.ten || n) + '</b></a>',
+                '<span class="tiny mono">' + (demTH[n] || 0) + '</span>']
+               .concat(CAP.map(oc))
+               .concat(['<span class="tiny muted">' + h(G.chuHet ? G.chuHet(v.y, 110) : v.y) + '</span>']);
+      }));
+  }
+
   /* Luật viết — để người viết tiếp không phải đoán */
   o += U.sec('SÁU LUẬT KHI VIẾT CHIỀU SÂU','Viết sai luật thì thà chưa viết — chữ nhiều mà không có tầng làm hỏng cả bảng');
   o += '<div class="card">'+ (G.SAU_LUAT || []).map(function(x, i){
