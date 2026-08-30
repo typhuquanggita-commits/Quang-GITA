@@ -8,6 +8,7 @@ import { BLUEPRINTS } from '../src/data/blueprints';
 import { TOPICS } from '../src/data/topics';
 import { FORMULA_GROUPS, ALL_FORMULAS, searchFormulas, formulaStats } from '../src/data/formulas';
 import { LESSON_PLANS, TEACHING_MOVES, FEEDBACK_SCRIPTS, CLASS_RITUALS, OBSERVATION_RUBRIC } from '../src/data/academy';
+import { RESOURCES } from '../src/data/resources';
 import { searchIndex, searchAll, indexStats, KIND_META } from '../src/lib/search';
 import { buildTodayPlan, buildReviewQueue, studyStreak, examCountdown, dayKey } from '../src/lib/review';
 import { buildWeeklyReport } from '../src/lib/report';
@@ -312,6 +313,13 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
   }
   const w = OBSERVATION_RUBRIC.reduce((s, r) => s + r.weight, 0);
   if (w !== 100) { console.error('TRỌNG SỐ bảng dự giờ không cộng đủ 100', w); bad++; }
+  /* Mỗi luồng phải có ít nhất một giáo án và một nguồn tài liệu riêng. */
+  const ALL_TRACKS: TrackId[] = ['thpt', 'chuyen', 'thpt-qg', 'lop6', 'chinh-khoa'];
+  for (const t of ALL_TRACKS) {
+    if (!LESSON_PLANS.some((p3) => p3.tracks.includes(t))) { console.error('LUỒNG chưa có giáo án nào:', t); bad++; }
+    if (!RESOURCES.some((r) => r.tracks.includes(t))) { console.error('LUỒNG chưa có nguồn tài liệu nào:', t); bad++; }
+  }
+  console.log('nguồn tài liệu:', RESOURCES.length, '| luồng đủ giáo án và nguồn:', ALL_TRACKS.length);
   console.log('học viện:', LESSON_PLANS.length, 'giáo án /', LESSON_PLANS.reduce((s, p) => s + p.blocks.length, 0),
     'khối |', TEACHING_MOVES.length, 'nước đi |', FEEDBACK_SCRIPTS.length, 'kịch bản |', CLASS_RITUALS.length, 'nghi thức');
 }

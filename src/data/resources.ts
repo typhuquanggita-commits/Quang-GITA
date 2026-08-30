@@ -5,6 +5,95 @@ import type { Resource } from '@/types';
  * để lấy thông báo tuyển sinh và đề thi bản gốc của mùa thi hiện tại.
  */
 export const RESOURCES: Resource[] = [
+  /* --------- NGUỒN CHO LUỒNG CHÍNH KHOÁ 6 – 12 --------- */
+  {
+    id: 'r-ck-tt22',
+    title: 'Thông tư 22/2021/TT-BGDĐT về đánh giá học sinh THCS và THPT',
+    type: 'website',
+    tracks: ['chinh-khoa'],
+    strands: [],
+    level: 1,
+    official: true,
+    url: 'https://moet.gov.vn',
+    description:
+      'Văn bản quy định cách tính điểm đánh giá thường xuyên, giữa kỳ, cuối kỳ và điểm trung bình môn, cùng cách xếp loại kết quả học tập.',
+    usage:
+      'Đọc một lần để hiểu chính xác trọng số: ĐTB môn = (tổng điểm thường xuyên + 2 × giữa kỳ + 3 × cuối kỳ) : (số điểm thường xuyên + 5). Biết công thức này thì tính được ngay mình cần bao nhiêu điểm cuối kỳ để đạt mục tiêu tổng kết, thay vì học trong mơ hồ.',
+  },
+  {
+    id: 'r-ck-ctgdpt',
+    title: 'Chương trình giáo dục phổ thông môn Toán 2018',
+    type: 'website',
+    tracks: ['chinh-khoa', 'thpt', 'chuyen', 'thpt-qg'],
+    strands: [],
+    level: 1,
+    official: true,
+    url: 'https://moet.gov.vn',
+    description:
+      'Văn bản gốc quy định nội dung và yêu cầu cần đạt của môn Toán từ lớp 1 đến lớp 12, theo ba mạch: Số và Đại số, Hình học và Đo lường, Thống kê và Xác suất.',
+    usage:
+      'Dùng làm mốc kiểm tra phạm vi: nếu một tài liệu ôn tập yêu cầu công cụ nằm ngoài yêu cầu cần đạt của khối lớp đó thì nên cân nhắc — đề kiểm tra định kỳ bám theo văn bản này, không bám theo sách tham khảo.',
+  },
+  {
+    id: 'r-ck-sgk',
+    title: 'Sách giáo khoa Toán theo ba bộ sách hiện hành',
+    type: 'sach',
+    tracks: ['chinh-khoa'],
+    strands: [],
+    level: 1,
+    description:
+      'Kết nối tri thức với cuộc sống, Chân trời sáng tạo, Cánh Diều — ba bộ sách được phép sử dụng, cùng bám một chương trình nhưng khác nhau về thứ tự bài và cách trình bày.',
+    usage:
+      'Dùng đúng bộ sách trường bạn đang học làm gốc, vì đề kiểm tra định kỳ do giáo viên của trường ra và bám sát bộ sách đó. Hai bộ còn lại dùng làm nguồn bài tập bổ sung khi đã làm hết bài trong sách chính.',
+  },
+  {
+    id: 'r-ck-sbt',
+    title: 'Sách bài tập Toán cùng bộ với sách giáo khoa',
+    type: 'sach',
+    tracks: ['chinh-khoa'],
+    strands: [],
+    level: 2,
+    description:
+      'Bộ bài tập đi kèm sách giáo khoa, bám sát từng bài học và có độ khó tăng dần trong mỗi mục.',
+    usage:
+      'Nguyên tắc thứ tự: làm hết bài trong sách giáo khoa trước, rồi mới sang sách bài tập, cuối cùng mới tới sách tham khảo. Đảo thứ tự này là nguyên nhân phổ biến khiến học sinh mất tự tin dù nền chưa hổng.',
+  },
+  {
+    id: 'r-ck-de-truong',
+    title: 'Đề kiểm tra định kỳ các năm trước của chính trường mình',
+    type: 'de-thi',
+    tracks: ['chinh-khoa'],
+    strands: [],
+    level: 2,
+    description:
+      'Nguồn sát nhất với đề bạn sẽ làm, vì cùng một tổ chuyên môn ra đề và thường giữ ổn định ma trận qua các năm.',
+    usage:
+      'Xin lại đề hai đến ba năm gần nhất từ giáo viên bộ môn hoặc anh chị khoá trên. Đối chiếu ma trận thật của trường với ma trận tham chiếu trong đề cương MATH365, rồi điều chỉnh trọng số ôn tập theo ma trận thật.',
+  },
+  {
+    id: 'r-ck-so-tay-cong-thuc',
+    title: 'Sổ tay công thức tự viết theo từng chương',
+    type: 'cong-cu',
+    tracks: ['chinh-khoa', 'thpt', 'chuyen', 'thpt-qg', 'lop6'],
+    strands: [],
+    level: 1,
+    description:
+      'Một quyển sổ mỏng, mỗi chương một trang: công thức, điều kiện áp dụng, và một dòng "dùng khi nào" viết bằng lời của chính mình.',
+    usage:
+      'Bắt buộc tự viết, không in sẵn. Việc tự chọn công thức nào đáng ghi và tự diễn đạt "dùng khi nào" chính là phần tạo ra trí nhớ; một bảng công thức in sẵn đọc thì hiểu nhưng vào phòng thi không nhớ ra.',
+  },
+  {
+    id: 'r-ck-de-cuong-truong',
+    title: 'Đề cương ôn tập do trường phát',
+    type: 'chuyen-de',
+    tracks: ['chinh-khoa'],
+    strands: [],
+    level: 1,
+    description:
+      'Bản đề cương chính thức do tổ chuyên môn phát trước mỗi kỳ kiểm tra, nêu phạm vi và các dạng bài trọng tâm.',
+    usage:
+      'Đây là nguồn có thẩm quyền cao nhất về phạm vi kỳ kiểm tra sắp tới. Dùng nó làm chuẩn, và dùng đề cương của MATH365 để bổ sung phần mà đề cương của trường thường không có: sơ đồ đọc vị dạng bài, bẫy mất điểm và kế hoạch ôn theo tuần.',
+  },
   /* --------- NGUỒN CHO LUỒNG VÀO LỚP 6 --------- */
   {
     id: 'r-l6-hanoi-edu',
