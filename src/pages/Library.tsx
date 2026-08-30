@@ -4,6 +4,8 @@ import { Card, LockedBox, M, Note } from '@/components/ui';
 import { FORMULAS, GITA_FULL_NAME, GITA_SLOGAN, GRADES, TERM_LABEL, getRoadmap, getTermMindMap, lessonsOfTopic, topicsOfGrade } from '@/content';
 import { generateDrill } from '@/lib/exams';
 import { GEO_PROBLEMS } from '@/bank/g9-hinh';
+import { GEO_PROBLEMS_G7 } from '@/bank/g7-hinh';
+import { GEO_PROBLEMS_G8 } from '@/bank/g8-hinh';
 import { Logo } from '@/components/Logo';
 import type { Grade, Level, Question } from '@/types';
 
@@ -14,7 +16,7 @@ const DOCS: { k: Doc; icon: string; name: string; desc: string }[] = [
   { k: 'so-do', icon: '🗺', name: 'Sơ đồ tư duy tổng hợp', desc: 'Sơ đồ tư duy toàn chuyên đề / học kỳ, in khổ A4 dán góc học tập.' },
   { k: 'cong-thuc', icon: '📐', name: 'Bảng công thức điểm 10', desc: 'Bảng công thức trọng tâm theo khối, kèm điều kiện và bẫy thường gặp.' },
   { k: 'de-cuong', icon: '📚', name: 'Đề cương ôn tập', desc: 'Đề cương giữa kỳ, cuối kỳ, cả năm và ôn hè theo cấu trúc chuẩn.' },
-  { k: 'bai-hinh', icon: '📐', name: 'Tuyển tập bài hình thi vào 10', desc: 'Các câu hình nhiều ý theo cấu trúc đề tuyển sinh, kèm thang điểm và lời giải.' },
+  { k: 'bai-hinh', icon: '📐', name: 'Tuyển tập bài hình tự luận', desc: 'Các câu hình nhiều ý theo cấu trúc đề học kì và đề tuyển sinh, kèm thang điểm và lời giải.' },
 ];
 
 export const Library: React.FC = () => {
@@ -35,6 +37,16 @@ export const Library: React.FC = () => {
     [topic, levels, count, seed]
   );
   /* Phần VỀ ĐÍCH: 3 thử thách tổng hợp ở mức cao hơn một bậc */
+  const geoSet = grade === 7 ? GEO_PROBLEMS_G7 : grade === 8 ? GEO_PROBLEMS_G8 : grade === 9 ? GEO_PROBLEMS : [];
+  const geoTitle = grade === 9
+    ? 'TUYỂN TẬP BÀI HÌNH THI VÀO LỚP 10'
+    : `TUYỂN TẬP BÀI HÌNH TỰ LUẬN — TOÁN ${grade}`;
+  const geoSub = grade === 9
+    ? 'Thách thức tài năng Toán 9 — theo cấu trúc câu hình đề tuyển sinh'
+    : grade === 8
+      ? 'Tam giác đồng dạng — theo cấu trúc câu hình đề học kì'
+      : 'Tam giác bằng nhau và tam giác cân — theo cấu trúc câu hình đề học kì';
+
   const finishLine: Question[] = useMemo(
     () => (topic ? generateDrill(topic.id, sheet === 'CB' ? ['TH', 'VD'] : ['VD', 'VDC'], 3, seed + 7777, { kinds: ['MC', 'SHORT', 'ESSAY'] }) : []),
     [topic, seed, sheet]
@@ -227,18 +239,27 @@ export const Library: React.FC = () => {
 
         {doc === 'bai-hinh' && (
           perms.canVDC ? (
+            geoSet.length === 0 ? (
+              <Note title="Chưa có tuyển tập cho khối này" tone="gold">
+                <p className="mb0 small">
+                  Tuyển tập bài hình tự luận nhiều ý hiện có cho khối 7, 8 và 9. Với khối 6, em hãy
+                  dùng mục <b>Phiếu bài tập theo chuyên đề</b> — phần <b>VỀ ĐÍCH</b> đã có câu hình
+                  vận dụng cao.
+                </p>
+              </Note>
+            ) : (
             <>
               <div className="tc mb6">
-                <h2 style={{ marginBottom: 4 }}>TUYỂN TẬP BÀI HÌNH THI VÀO LỚP 10</h2>
-                <div className="faint">Thách thức tài năng Toán 9 · {GEO_PROBLEMS.length} bài · mỗi bài 3–4 ý theo cấu trúc đề tuyển sinh</div>
+                <h2 style={{ marginBottom: 4 }}>{geoTitle}</h2>
+                <div className="faint">{geoSub} · {geoSet.length} bài · mỗi bài 3–4 ý, kèm thang điểm chi tiết</div>
               </div>
-              <Note title="🧭 Chiến thuật làm câu hình thi vào 10" tone="gold">
+              <Note title="🧭 Chiến thuật làm câu hình tự luận" tone="gold">
                 <p className="mb0 small">
-                  Ý a và ý b hầu như luôn làm được — phải lấy trọn điểm trước khi nghĩ tới ý cuối.
+                  Ý a và ý b hầu như luôn làm được — phải lấy trọn điểm hai ý này trước khi nghĩ tới ý cuối.
                   Vẽ hình to, ghi đủ ký hiệu vuông góc và đoạn bằng nhau; hình đúng là nửa lời giải.
                 </p>
               </Note>
-              {GEO_PROBLEMS.map((g, i) => (
+              {geoSet.map((g, i) => (
                 <div key={i} className="mb8" style={{ breakInside: 'avoid' }}>
                   <div className="gita-section">BÀI {i + 1}</div>
                   {g.stem.split('\n').map((line, j) => (line.trim() ? <p key={j} className={/^[a-d]\)/.test(line.trim()) ? 'small' : 'bold'}><M t={line} /></p> : null))}
@@ -263,7 +284,9 @@ export const Library: React.FC = () => {
                   </div>
                 </div>
               ))}
+              <div className="gita-slogan">‘‘{GITA_SLOGAN}’’</div>
             </>
+            )
           ) : <LockedBox reason={lockReason(perms)} />
         )}
 
