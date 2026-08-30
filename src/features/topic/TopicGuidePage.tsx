@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { PLAYBOOK_BY_TOPIC } from '../../data/playbook';
+import { LessonSection } from './LessonSection';
 import { PatternDetail } from '../solutions/PlaybookPanel';
 import { KINDS } from '../../data/curriculum';
 import { TOPICS } from '../../data/topics';
@@ -244,6 +245,8 @@ export function TopicGuidePage() {
           </p>
         </Card>
       )}
+
+      <LessonSection topicId={topicId} />
 
       {playbook && (
         <Card>
