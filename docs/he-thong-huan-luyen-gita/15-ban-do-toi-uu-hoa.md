@@ -125,6 +125,10 @@ Nếu chỉ làm được mười việc, làm đúng mười việc này. Thứ
 
 Hỏi mỗi quý. Nếu cả ba đều "chưa", lộ trình đang không chạy dù danh sách việc có được tick.
 
-1. **Một phụ huynh bất kỳ có nhận được Bản đồ Nhận diện của con trong 7 ngày sau trại không?**
-2. **Chúng ta có số liệu hành vi tại ngày 118 của khoá gần nhất không?**
-3. **Có ghi nhận trường hợp trừng phạt thân thể nào trong 3 tháng qua không — và nếu có, hệ thống đã làm gì?**
+Ba câu hỏi đó là **ba câu hỏi sức khoẻ hệ thống**, đặt tại
+[`../thu-vien-chuyen-mon-gita/10-quan-tri-chat-luong.md`](../thu-vien-chuyen-mon-gita/10-quan-tri-chat-luong.md) §6 —
+một bộ câu hỏi, dùng chung cho cả rà chất lượng lẫn rà tiến độ lộ trình.
+
+**Đọc kết quả theo góc của tài liệu này:** ở §6 kia, ba câu hỏi đo *hệ thống có đang chạy thật không*.
+Ở đây chúng đo *lộ trình tối ưu hoá có đang tiến không*. Cùng câu hỏi, khác việc phải làm khi câu
+trả lời là "chưa" — xem bảng ưu tiên 🔴 🟠 🟡 ở §§2–6 trên.

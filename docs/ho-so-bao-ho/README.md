@@ -1,6 +1,6 @@
 # HỒ SƠ BẢO HỘ SỞ HỮU TRÍ TUỆ
 
-> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 124 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
+> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 132 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
 
 ### Chương trình huấn luyện Leader Boom · Học viện GITA · Phiên bản 1.0
 

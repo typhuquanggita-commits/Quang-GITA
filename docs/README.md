@@ -1,7 +1,11 @@
 # HỆ THỐNG TÀI LIỆU HỌC VIỆN GITA — LEADER BOOM
 
-**124 tài liệu · 9 bộ · khoảng 554.000 từ.**
+**132 tài liệu · 9 bộ · khoảng 593.000 từ.**
 Đây là cửa vào duy nhất. Nếu chưa biết bắt đầu từ đâu, đọc §1 rồi §2.
+
+> **Chất lượng của hệ này kiểm được bằng máy, không bằng lời cam kết.**
+> Chạy `python3 tools/kiem_dinh.py` để có số liệu hiện tại — chín nhóm kiểm, ba mức nghiêm trọng,
+> sáu bất biến an toàn. Cách đọc kết quả: [`00-he-thong-chat-luong.md`](00-he-thong-chat-luong.md).
 
 ---
 
@@ -36,6 +40,8 @@ Mọi bộ tài liệu đều có hai lớp. Nhầm lớp là nguyên nhân đ�
 | **Chuẩn bị hồ sơ đăng ký bảo hộ** | [`ho-so-bao-ho/README.md`](ho-so-bao-ho/README.md) |
 | **Viết nội dung cho website** | [`seo-va-hien-dien-so/10-chuan-trien-khai.md`](seo-va-hien-dien-so/10-chuan-trien-khai.md) |
 | **Thiết kế ấn phẩm mang logo** | [`nhan-dien-thuong-hieu/README.md`](nhan-dien-thuong-hieu/README.md) |
+| **Viết hoặc biên tập một tài liệu của hệ** | [`nhan-dien-thuong-hieu/08-chuan-bien-tap.md`](nhan-dien-thuong-hieu/08-chuan-bien-tap.md) |
+| **Kiểm tra tài liệu trước khi phát hành** | [`00-he-thong-chat-luong.md`](00-he-thong-chat-luong.md) |
 
 ---
 

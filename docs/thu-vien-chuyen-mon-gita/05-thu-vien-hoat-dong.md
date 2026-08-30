@@ -52,7 +52,7 @@ Năm mươi ba mã hoạt động từ kịch bản Leader Boom, đã rà soát 
 | A1-04 | Màu cờ sắc áo (chia team, tên đội, khẩu hiệu) | Đồng thuận được bản sắc nhóm | NL-12 | 🟢 |
 | A1-05 | ⛔ ~~Nghị lực nhà vô địch~~ (xếp người 2 tầng, di chuyển 100 m) | — | — | **Đã loại — chấn thương cột sống, ngã** |
 | A1-05b | **Cầu người – Vận chuyển bảo vật** *(thay thế)* | Phối hợp toàn đội chuyển vật qua địa hình | NL-12 | 🟡 |
-| A1-06 | Bản lĩnh và ý chí — 4 gói (Sức mạnh · Sáng tạo · Sợi dây kỳ diệu · Giải mật mã) | Chọn phương án phù hợp năng lực đội | NL-10, NL-12 | 🟡 gói Sức mạnh: giới hạn quãng cõng ≤ 20 m, chỉ nhóm Lớn |
+| A1-06 | Bản lĩnh và ý chí — 4 gói (*Sức mạnh* · *Sáng tạo* · **Sợi dây kỳ diệu** · Giải mật mã) | Chọn phương án phù hợp năng lực đội | NL-10, NL-12 | 🟡 gói Sức mạnh: giới hạn quãng cõng ≤ 20 m, chỉ nhóm Lớn |
 | A1-07 | Sức mạnh lòng kiên trì (dùng dây dù cưa gỗ) | Duy trì nỗ lực khi tiến độ chậm | NL-14 | 🟡 găng tay bắt buộc, đổi người mỗi 2 phút |
 
 ### NGÀY 2 · SELF LEADERSHIP

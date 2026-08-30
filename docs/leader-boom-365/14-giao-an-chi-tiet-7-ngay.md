@@ -2477,10 +2477,13 @@ Công bố theo tên **người được ghi nhận và hành vi**, không công
 
 **Điểm danh:** đủ 5 mốc; thêm đếm vào/ra bể bơi; **đếm dụng cụ sắc trước và sau buổi chiều 2**, ghi `BM-06`.
 
-**Điều kiện dừng hoạt động:** như danh sách chung; bổ sung cho D5 — (a) dừng bàn chế tác nếu thiếu 1 dụng
-cụ sắc khi đếm giữa buổi, tìm đủ mới tiếp tục; (b) dừng phần chia sẻ về môi trường gia đình nếu học viên
-bộc lộ nội dung nhạy cảm trước tập thể — chuyển sang trao đổi riêng; (c) dừng và chuyển sang hoạt động
-nhẹ nếu xuất hiện ≥ 2 va chạm lời nói trong 30 phút ở cùng một team (dấu hiệu quá tải mệt của cả nhóm).
+**Điều kiện dừng hoạt động:** như danh sách chung, bổ sung ba điều kiện riêng của D5.
+
+| # | Dừng khi | Làm gì tiếp |
+|---|---|---|
+| **a** | Thiếu 1 dụng cụ sắc khi đếm giữa buổi | Dừng bàn chế tác, tìm đủ mới tiếp tục |
+| **b** | Học viên bộc lộ nội dung nhạy cảm về gia đình trước tập thể | Dừng phần chia sẻ, chuyển sang trao đổi riêng |
+| **c** | ≥ 2 va chạm lời nói trong 30 phút ở cùng một team | Chuyển sang hoạt động nhẹ — đây là dấu hiệu quá tải mệt của cả nhóm, không phải vấn đề kỷ luật |
 
 ## 7. Cuối ngày 5 — họp đội 20 phút (21:35 – 21:55)
 
@@ -2501,10 +2504,16 @@ nhẹ nếu xuất hiện ≥ 2 va chạm lời nói trong 30 phút ở cùng m�
 hoặc thiếu điều kiện sống cơ bản · chấn thương do dụng cụ · nhớ nhà đợt hai không dịu sau 60 phút ·
 thiếu dụng cụ sắc chưa tìm thấy.
 
-**Chuẩn bị cho ngày 6:** rà toàn bộ an toàn lửa trại theo bảng kiểm (khu đốt cách vật liệu dễ cháy ≥ 5 m,
-≥ 2 bình chữa cháy, 2 xô cát/nước, vòng ngoài do người lớn giữ) · chuẩn bị vật tư bệ phóng · in rubric
-hùng biện · chuẩn bị máy quay và **xin đồng ý quay hình của học viên và gia đình** · in bảng tổng hợp
-6 ngày khổ A0 cho từng team · chuẩn bị **danh sách quan sát có chủ đích** cho học viên còn thiếu tín hiệu.
+**Chuẩn bị cho ngày 6 — sáu đầu việc, việc đầu tiên là việc chặn:**
+
+| ⬜ | Việc | Chuẩn đạt |
+|---|---|---|
+| ⬜ | 🔴 **Rà an toàn lửa trại theo bảng kiểm** | Khu đốt cách vật liệu dễ cháy ≥ 5 m · ≥ 2 bình chữa cháy · 2 xô cát/nước · vòng ngoài do người lớn giữ |
+| ⬜ | Chuẩn bị vật tư bệ phóng | Đủ cho từng team, có bộ dự phòng |
+| ⬜ | In rubric hùng biện | Đủ số ACT + Trainer |
+| ⬜ | 🔴 **Xin đồng ý quay hình của học viên và gia đình** | Có văn bản trước khi máy quay bật — không quay trước rồi xin sau |
+| ⬜ | In bảng tổng hợp 6 ngày khổ A0 | Một bảng mỗi team |
+| ⬜ | Lập **danh sách quan sát có chủ đích** | Nêu tên từng học viên còn thiếu tín hiệu điểm mạnh và ai quan sát |
 
 > **Sai lầm thường gặp ở ngày này:** ACT để học viên viết **ba đến năm thói quen** trong bảng 21 ngày, vì
 > nhìn vào thì "nhiều hơn thì tốt hơn" và học viên đang hào hứng. Kết quả sau trại: cả ba đến năm chuỗi cùng

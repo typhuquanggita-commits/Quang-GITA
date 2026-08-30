@@ -1,5 +1,11 @@
 # 12 · HỒ SƠ SAU TRẠI & BÀN GIAO
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`22-ho-so-sau-trai-chi-tiet.md`](22-ho-so-sau-trai-chi-tiet.md) — **Quy trình hồ sơ sau trại** — lịch D+0→D+30 · Bản đồ Nhận diện mẫu đã điền · bảng theo dõi cổng C6.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**.
+
 > Đây là khâu quyết định trại có trở thành đầu vào của hành trình 365 ngày hay chỉ là một kỷ niệm đẹp.
 > **Nếu bỏ khâu này, mọi dữ liệu thu được trong 7 ngày trở thành vô ích.**
 

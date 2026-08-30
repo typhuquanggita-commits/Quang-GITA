@@ -1,6 +1,6 @@
 # THƯ VIỆN CHUYÊN MÔN GITA
 
-> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 124 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
+> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 132 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
 
 ### Bộ công cụ tác nghiệp cho Tư vấn – Coach – Trainer – Giáo viên · Phiên bản 1.0
 

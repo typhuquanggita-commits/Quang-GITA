@@ -1,6 +1,6 @@
 # HỆ THỐNG HUẤN LUYỆN GITA — VẬN HÀNH TOÀN TRẠI A→Z
 
-> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 124 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
+> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 132 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
 
 ### Từ tuyển sinh đến 365 ngày tạo kỳ tích · Bản hợp nhất & tối ưu hoá · Phiên bản 1.0
 

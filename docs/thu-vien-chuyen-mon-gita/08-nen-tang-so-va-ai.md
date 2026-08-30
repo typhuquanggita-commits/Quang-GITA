@@ -1,5 +1,11 @@
 # 08 · NỀN TẢNG SỐ & TRÍ TUỆ NHÂN TẠO
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`16-nen-tang-so-chi-tiet.md`](16-nen-tang-so-chi-tiet.md) — **Đặc tả chức năng nền tảng số** — 7 nhóm chức năng · phân quyền 13 vai trò · nguyên tắc dùng AI.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**.
+
 > Nền tảng số không phải mục tiêu — nó là **cách duy nhất để hệ 365 chạy được ở quy mô lớn**
 > mà không đánh mất chất lượng chuyên môn. Không có nền tảng, mỗi Coach chỉ theo được ~12 học viên
 > và toàn bộ dữ liệu nằm trên giấy, không đối chiếu được.

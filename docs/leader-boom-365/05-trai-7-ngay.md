@@ -102,7 +102,7 @@ Hành trình của niềm tin và bí mật của nhà vô địch. Kết nối 
   **Tôi là Leader xuất sắc** (tranh biện ứng cử Leader — **mỗi team bầu 1 Leader + 2 đội phó**).
 - *Chiều:* **Màu cờ sắc áo** (chia team, đồng phục, tên đội, khẩu hiệu, nghi thức ăn mừng) ·
   **Nghị lực nhà vô địch** *(xem mục 5 — hoạt động này đã được thay thế)* ·
-  **Bản lĩnh và ý chí** (4 gói: Sức mạnh · Sáng tạo · Sợi dây kỳ diệu · Giải mật mã) ·
+  **Bản lĩnh và ý chí** (4 gói: *Sức mạnh* · *Sáng tạo* · *Sợi dây kỳ diệu* · *Giải mật mã*) ·
   **Sức mạnh lòng kiên trì** (dùng dây dù cưa thanh gỗ).
 - *Tối:* Đúc kết ngày · Hoạt động thử niềm tin, vượt rào cản suy nghĩ *(có quyền được dừng)*.
 

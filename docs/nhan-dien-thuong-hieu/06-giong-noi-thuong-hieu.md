@@ -1,5 +1,10 @@
 # 06 · GIỌNG NÓI THƯƠNG HIỆU
 
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu khung và nguyên lý. Bản tác nghiệp — 13 quy tắc
+> viết, bảng đối chiếu ❌/✅, bảng kiểm trước phát hành:
+> [`08-chuan-bien-tap.md`](08-chuan-bien-tap.md).
+> Khi hai bản nói khác nhau, **bản tác nghiệp là bản đúng**.
+
 ## 1. Bốn tính chất của giọng nói
 
 | Tính chất | Nghĩa là | Nghe như thế nào |

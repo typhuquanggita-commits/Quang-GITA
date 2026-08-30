@@ -1,6 +1,6 @@
 # SEO & HIỆN DIỆN SỐ LEADER BOOM
 
-> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 124 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
+> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 132 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
 
 ### Chiến lược tìm kiếm gắn với uy tín thật · Phiên bản 1.0
 

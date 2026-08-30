@@ -2,29 +2,30 @@
 
 ---
 
-# PHẦN A — TẦNG 3: KIẾN TẠO (90 NGÀY, D29 → D118)
+## PHẦN A — TẦNG 3: KIẾN TẠO (90 NGÀY, D29 → D118)
 
 **Câu hỏi trung tâm: Làm gì và làm thế nào cho đúng?**
 Tầng 3 biến hiểu biết thành **cấu trúc hành động được kiểm chứng trong đời sống thật**.
 
-## A1. Nguyên tắc thiết kế lộ trình
+### A1. Nguyên tắc thiết kế lộ trình
 
 Mỗi mục tiêu phải có **lý do tồn tại**. Mỗi hành động phải **phục vụ một mục tiêu**.
 Mỗi KPI phải **đo được một thay đổi có ý nghĩa**. Không có mục nào tồn tại chỉ vì "nên có".
 
-## A2. Ba cấp trong 90 ngày
+### A2. Ba cấp trong 90 ngày
 
-| Cấp | Ngày | Tên | Trọng tâm | Cổng nghiệm thu |
-|---|---|---|---|---|
-| **Cấp 1** | 1 – 30 | **Có cấu trúc** | Dựng khung: giờ cố định, không gian học, checklist, quy tắc gia đình | Thực hiện đúng khung ≥ 70% số ngày, dù còn cần nhắc |
-| **Cấp 2** | 31 – 60 | **Tự điều hành** | Giảm dần hỗ trợ: học viên tự khởi động, tự theo dõi | Reminder rate giảm ≥ 50% so với baseline; start rate ≥ 80% |
-| **Cấp 3** | 61 – 90 | **Thích ứng & chuyển giao** | Giữ được khi lịch thay đổi; áp dụng sang bối cảnh khác | Duy trì ≥ 70% trong tuần có biến động (thi, ốm, đi chơi) |
+**Cấp 1 · Có cấu trúc** (ngày 1–30) → **Cấp 2 · Tự điều hành** (31–60) →
+**Cấp 3 · Thích ứng & chuyển giao** (61–90).
+
+> **Bảng đầy đủ — trọng tâm và cổng nghiệm thu từng cấp — chỉ có ở một nơi:**
+> [`../he-thong-huan-luyen-gita/13-he-thong-90-ngay.md`](../he-thong-huan-luyen-gita/13-he-thong-90-ngay.md).
+> Ngưỡng nghiệm thu là con số vận hành; chép lại ở tài liệu thứ hai là tạo ra khả năng hai bản lệch nhau.
 
 Mỗi cấp chạy theo **PDCA**: Plan (đầu cấp) → Do (thực thi) → Check (Review giữa cấp) → Act (điều chỉnh),
 và kết thúc bằng **cổng nghiệm thu có văn bản**. Không đạt cổng thì **không sang cấp sau** — kéo dài
 cấp hiện tại và ghi rõ lý do.
 
-## A3. Bộ KPI chuẩn của Tầng 3
+### A3. Bộ KPI chuẩn của Tầng 3
 
 | KPI | Định nghĩa | Nguồn | Ngưỡng tốt |
 |---|---|---|---|
@@ -40,7 +41,7 @@ cấp hiện tại và ghi rõ lý do.
 > Ai cũng có ngày đứt chuỗi. Người tiến bộ bền là người quay lại nhanh. Hệ thống phải dạy điều này
 > một cách tường minh, thay vì coi việc đứt chuỗi là thất bại.
 
-## A4. Bốn buổi ôn luyện kiến thức đi kèm
+### A4. Bốn buổi ôn luyện kiến thức đi kèm
 
 Bố trí vào tuần 2, 5, 8, 12 của giai đoạn 90 ngày, mỗi buổi 120 phút:
 1. **Buổi 1 — Phương pháp học**: chia nhỏ bài khó, ghi chú hiệu quả, ôn tập ngắt quãng.
@@ -48,7 +49,7 @@ Bố trí vào tuần 2, 5, 8, 12 của giai đoạn 90 ngày, mỗi buổi 120 
 3. **Buổi 3 — Chiến lược làm bài và quản trị thời gian trong kỳ kiểm tra.**
 4. **Buổi 4 — Rà soát trước năm học / học kỳ mới**, gắn lại với mục tiêu đã đặt ở trại.
 
-## A5. Vai trò gia đình trong 90 ngày
+### A5. Vai trò gia đình trong 90 ngày
 
 | Nên làm | Không nên làm |
 |---|---|
@@ -63,13 +64,13 @@ mà phần lớn gia đình duy trì được trong 90 ngày. Cam kết 60 phút
 
 ---
 
-# PHẦN B — TẦNG 4: CHUYỂN HOÁ (365 NGÀY, 4 CHU KỲ 90)
+## PHẦN B — TẦNG 4: CHUYỂN HOÁ (365 NGÀY, 4 CHU KỲ 90)
 
 **Câu hỏi trung tâm: Hành vi mới có thật sự đã thành năng lực chưa?**
 
 > **Nguyên tắc mở đầu của Tầng 4: hành vi mới chưa đồng nghĩa với năng lực mới.**
 
-## B1. Bốn thuộc tính của năng lực
+### B1. Bốn thuộc tính của năng lực
 
 | Thuộc tính | Câu hỏi kiểm chứng | Cách đo |
 |---|---|---|
@@ -78,7 +79,7 @@ mà phần lớn gia đình duy trì được trong 90 ngày. Cam kết 60 phút
 | **Khả năng thích nghi** | Khi hoàn cảnh đổi, em có tự điều chỉnh cách làm không? | Sự kiện cụ thể + giải trình của học viên |
 | **Mức tự chủ** | Mức phụ thuộc Coach và cha mẹ có giảm rõ rệt không? | Autonomy index, reminder rate, ai là người khởi xướng Review |
 
-## B2. Bốn chu kỳ 90 ngày
+### B2. Bốn chu kỳ 90 ngày
 
 | Chu kỳ | Ngày | Tên | Mục tiêu | Mức hỗ trợ |
 |---|---|---|---|---|
@@ -90,7 +91,7 @@ mà phần lớn gia đình duy trì được trong 90 ngày. Cam kết 60 phút
 **Nguyên tắc xuyên suốt Tầng 4: tăng dần độ khó, giảm dần hỗ trợ.**
 Cuối mỗi chu kỳ đánh giá lại toàn bộ 4 thuộc tính và điều chỉnh chu kỳ kế tiếp.
 
-## B3. Sự chuyển giao quyền điều khiển
+### B3. Sự chuyển giao quyền điều khiển
 
 | Chu kỳ | Ai mở đầu buổi Review | Ai mang dữ liệu | Ai đề xuất điều chỉnh |
 |---|---|---|---|
@@ -102,7 +103,7 @@ Cuối mỗi chu kỳ đánh giá lại toàn bộ 4 thuộc tính và điều c
 > **Dấu hiệu Tầng 4 chưa hoàn thành:** thành tích tăng nhưng học viên vẫn chờ Coach hỏi
 > "tuần này em làm thế nào". Thành tích cao đi kèm phụ thuộc cao **không** được xem là chuyển hoá.
 
-## B4. Sinh hoạt cộng đồng Leader Boom trong Tầng 4
+### B4. Sinh hoạt cộng đồng Leader Boom trong Tầng 4
 
 | Hoạt động | Tần suất | Nội dung |
 |---|---|---|
@@ -114,13 +115,13 @@ Cuối mỗi chu kỳ đánh giá lại toàn bộ 4 thuộc tính và điều c
 
 ---
 
-# PHẦN C — TẦNG 5: BỨT PHÁ (365 NGÀY NÂNG CAO)
+## PHẦN C — TẦNG 5: BỨT PHÁ (365 NGÀY NÂNG CAO)
 
 **Câu hỏi trung tâm: Em muốn tạo ra giá trị gì, bằng năng lực nào, trong môi trường nào?**
 
 Ở Tầng 5, trọng tâm chuyển từ **sửa cái đang thiếu** sang **phát triển cái có thể thành lợi thế**.
 
-## C1. Điều kiện vào Tầng 5
+### C1. Điều kiện vào Tầng 5
 
 - Nền tự quản trị tương đối tốt (Tầng 4 đã hoàn thành đủ 4 thuộc tính ở ≥ 2 năng lực cốt lõi).
 - Các điểm nghẽn lớn không còn chi phối toàn hệ thống.
@@ -129,7 +130,7 @@ Cuối mỗi chu kỳ đánh giá lại toàn bộ 4 thuộc tính và điều c
 > **Cảnh báo:** bứt phá trên nền tự quản trị yếu thường tạo thành tích ngắn hạn nhưng khó duy trì —
 > và để lại tổn thương khi thành tích rơi.
 
-## C2. Chuỗi phát triển của Tầng 5 — phải đi hết, không dừng ở "khám phá bản thân"
+### C2. Chuỗi phát triển của Tầng 5 — phải đi hết, không dừng ở "khám phá bản thân"
 
 ```
 Khám phá     Kiểm chứng      Chuyên sâu       Sản phẩm        Portfolio      Roadmap
@@ -140,7 +141,7 @@ Khám phá     Kiểm chứng      Chuyên sâu       Sản phẩm        Portfo
 Nhiều chương trình dừng ở bước 1 và gọi đó là phát hiện tài năng. **Đó là lỗi chuyên môn.**
 Sở thích chưa phải tài năng; một kết quả tốt đơn lẻ chưa phải tài năng.
 
-## C3. Dự án phụng sự — tiêu chí
+### C3. Dự án phụng sự — tiêu chí
 
 | Tiêu chí | Yêu cầu tối thiểu |
 |---|---|
@@ -151,7 +152,7 @@ Sở thích chưa phải tài năng; một kết quả tốt đơn lẻ chưa ph
 | **Có bằng chứng kết quả** | Số liệu, hình ảnh, phản hồi của người thụ hưởng |
 | **Có báo cáo phản tư** | Điều gì hiệu quả, điều gì không, sẽ làm khác gì lần sau |
 
-## C4. Portfolio Leader Boom
+### C4. Portfolio Leader Boom
 
 | Mục | Nội dung |
 |---|---|
@@ -166,7 +167,7 @@ Sở thích chưa phải tài năng; một kết quả tốt đơn lẻ chưa ph
 Portfolio là **hồ sơ sống**, cập nhật mỗi quý; là tài sản học viên mang theo khi chuyển cấp,
 xét tuyển, ứng tuyển học bổng hoặc chương trình trao đổi.
 
-## C5. Con đường của cựu học viên
+### C5. Con đường của cựu học viên
 
 | Vai trò | Điều kiện | Ý nghĩa |
 |---|---|---|

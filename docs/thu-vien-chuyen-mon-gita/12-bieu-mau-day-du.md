@@ -902,6 +902,8 @@ Người duyệt: ______________ (xác nhận thứ tự kiểm 5 bước đã t
 | Reminder / ngày | Tổng số lần bị nhắc trong tuần ÷ 7 | Giảm **≥ 50 %** so với baseline |
 | Chuỗi dài nhất | Số ngày liên tiếp dài nhất giữ được thói quen | **≥ 14 ngày** |
 | **Recovery time** | Số ngày quay lại được sau khi đứt chuỗi | **≤ 3 ngày** — KPI quan trọng nhất |
+| Autonomy index | Số nhiệm vụ tự khởi xướng ÷ tổng số nhiệm vụ × 100 | Tăng đều qua các tuần |
+| Ngủ đúng giờ | Số ngày giờ ngủ lệch ≤ 30 phút so với giờ đã hẹn ÷ 7 × 100 | **≥ 80 %** |
 
 **Ví dụ đã điền — tuần 5 của một học viên, dùng để đối chiếu cách tính**
 
@@ -940,8 +942,6 @@ Dữ liệu thô lấy từ 7 dòng nhật ký `BM-05` của tuần đó:
 - **Recovery time:** đếm từ **ngày đứt đầu tiên tới ngày làm lại được**, không đếm cả chuỗi ngày nghỉ
   nếu học viên dùng vé nghỉ có kế hoạch — ngày dùng vé nghỉ **không tính là đứt**.
 
-| Autonomy index | Số nhiệm vụ tự khởi xướng ÷ tổng số nhiệm vụ × 100 | Tăng đều qua các tuần |
-| Ngủ đúng giờ | Số ngày giờ ngủ lệch ≤ 30 phút so với giờ đã hẹn ÷ 7 × 100 | **≥ 80 %** |
 
 **Bảng ghi 13 tuần**
 

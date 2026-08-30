@@ -1,6 +1,6 @@
 # NHẬN DIỆN THƯƠNG HIỆU LEADER BOOM
 
-> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 124 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
+> 🏠 **Chỉ mục toàn hệ:** [`../README.md`](../README.md) — 132 tài liệu · 9 bộ · cấu trúc hai lớp · 11 nguyên tắc chuyên môn · 10 chuẩn an toàn.
 
 ### Cẩm nang thương hiệu chuẩn cho chuyển giao toàn quốc · Phiên bản 1.0
 
@@ -25,6 +25,7 @@ Cẩm nang này là **tài liệu bắt buộc kèm theo hợp đồng nhượng
 | 05 | [`05-ung-dung.md`](05-ung-dung.md) | Đồng phục · ấn phẩm · biển hiệu · cúp – huy hiệu · số hoá · xe | Vận hành, Đối tác |
 | 06 | [`06-giong-noi-thuong-hieu.md`](06-giong-noi-thuong-hieu.md) | Tính cách ngôn ngữ · điều được nói và không được nói · mẫu câu chuẩn | Marketing, Tư vấn, Đối tác |
 | 07 | [`07-dong-thuong-hieu.md`](07-dong-thuong-hieu.md) | Khoá thương hiệu đơn vị nhượng quyền · đồng thương hiệu với trường học, đối tác | BLĐ, Đối tác |
+| 08 | [`08-chuan-bien-tap.md`](08-chuan-bien-tap.md) | 🔧 **Bản tác nghiệp của 06** — 13 quy tắc viết, bảng đối chiếu ❌/✅, bốn sắc giọng theo người đọc, bảng kiểm trước phát hành | Người viết mọi tài liệu, Marketing, Đối tác |
 
 **Tài sản logo:** [`../../brand/logo/`](../../brand/logo/) — 8 tệp, đã tách nền, đủ biến thể.
 
