@@ -50,7 +50,7 @@ const ok = (n, c, x = '') => {
 
 console.log('\n  KIỂM BẢN GIAO VIỆC CỦA TRỢ LÝ\n');
 await p.goto(B, {waitUntil: 'networkidle'});
-await p.locator('aside nav button').filter({hasText: 'Trợ lý AI'}).first().click();
+await p.locator('aside nav [data-tab]').filter({hasText: 'Trợ lý AI'}).first().click();
 await p.waitForTimeout(800);
 
 const tongPhut = async () => {

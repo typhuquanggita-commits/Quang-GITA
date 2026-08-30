@@ -24,23 +24,43 @@ export const Chip: React.FC<{
   );
 };
 
+/*
+ * ĐẦU MỤC CỦA MỘT THẺ.
+ *
+ * `bac` mặc định là 1, tức thẻ <h1>. Đây không phải chuyện thẩm mỹ: mỗi
+ * địa chỉ phải có đúng MỘT <h1> nói trang này là trang gì. Trước đây chỗ
+ * này dựng <h2>, nên cả 39 trang không trang nào có <h1> — máy tìm kiếm
+ * mất tín hiệu quan trọng nhất trên trang, và trình đọc màn hình không có
+ * điểm bắt đầu để nhảy tới.
+ *
+ * Vài thẻ dựng hai đầu mục trong cùng một trang. Đầu mục thứ hai phải
+ * truyền bac={2}, vì hai <h1> trong một trang thì không cái nào còn nghĩa
+ * là "trang này là trang gì".
+ *
+ * Cỡ chữ giữ nguyên ở cả hai bậc: bậc của đầu mục là chuyện cấu trúc tài
+ * liệu, không phải chuyện chữ to hay nhỏ.
+ */
 export const SectionHeader: React.FC<{
   eyebrow: string;
   title: string;
   lead: string;
-}> = ({eyebrow, title, lead}) => (
-  <header className="mb-8 border-b border-slate-800 pb-6">
-    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
-      {eyebrow}
-    </p>
-    <h2 className="mt-2 text-2xl font-bold text-slate-100 md:text-3xl">
-      {title}
-    </h2>
-    <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">
-      {lead}
-    </p>
-  </header>
-);
+  bac?: 1 | 2;
+}> = ({eyebrow, title, lead, bac = 1}) => {
+  const H = (bac === 1 ? 'h1' : 'h2') as 'h1' | 'h2';
+  return (
+    <header className="mb-8 border-b border-slate-800 pb-6">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
+        {eyebrow}
+      </p>
+      <H className="mt-2 text-2xl font-bold text-slate-100 md:text-3xl">
+        {title}
+      </H>
+      <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">
+        {lead}
+      </p>
+    </header>
+  );
+};
 
 export const Card: React.FC<{
   children: React.ReactNode;

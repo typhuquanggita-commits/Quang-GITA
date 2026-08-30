@@ -1635,6 +1635,107 @@ export interface DeThiMau {
   canhBao: string;
 }
 
+/* ==========================================================================
+   ĐỀ CƯƠNG · TEST CHUYÊN SÂU · CẨM NANG ĐIỂM 10
+   ========================================================================== */
+
+/** Một tuần trong đề cương: dạy gì, làm gì, và đo bằng gì. */
+export interface TuanDeCuong {
+  tuan: number;
+  ten: string;
+  day: string[];
+  lam: string[];
+  /** Đo bằng con số, không đo bằng cảm giác. */
+  doBang: string;
+  /** Chưa đụng tới cái gì trong tuần này — để không ai kỳ vọng nhầm. */
+  chuaDung: string;
+}
+
+/** Một đề cương cho một tầng của một tuyến. */
+export interface DeCuong {
+  id: string;
+  tuyenId: string;
+  tuyenTen: string;
+  tierId: string;
+  tangTen: string;
+  no: number;
+  ten: string;
+  /** Ai học đề cương này, nói bằng dấu hiệu quan sát được. */
+  danhCho: string;
+  vaoDuocKhi: string;
+  soTuan: number;
+  phutMoiNgay: number;
+  /** Ra khỏi đề cương này thì LÀM ĐƯỢC gì — động từ quan sát được. */
+  dauRa: string[];
+  tuan: TuanDeCuong[];
+  /** Cách đánh giá, kèm ngưỡng bằng số. */
+  danhGia: {cach: string; trongSo: number; nguong: string}[];
+  quaKhi: string;
+  /** Đề cương này KHÔNG dạy gì. Ranh giới thật, không phải lời khiêm tốn. */
+  khongDay: string[];
+  /** Bốn chữ GITA trong đề cương này: mỗi chữ một việc cụ thể. */
+  gita: {chu: string; viec: string}[];
+}
+
+/** Một bậc sâu trong bài test chẩn đoán. */
+export interface BacSau {
+  bac: number;
+  ten: string;
+  hoi: string;
+  /** Làm được bậc này nghĩa là gì. */
+  ngiaLa: string;
+  /** Gãy ở bậc này thì chữa bằng cách nào. */
+  neuGay: string;
+  phut: number;
+}
+
+/** Một bài test chuyên sâu: thang bậc để tìm CHỖ GÃY, không phải để chấm điểm. */
+export interface TestChuyenSau {
+  id: string;
+  truId: string;
+  truTen: string;
+  skill: SkillId;
+  ten: string;
+  /** Bài test này tìm ra cái gì mà bài chấm điểm không tìm ra. */
+  timRa: string;
+  bac: BacSau[];
+  tongPhut: number;
+  /** Cách đọc kết quả: dừng ở bậc nào thì kết luận gì. */
+  docKetQua: string[];
+  /** Sai lầm khi dùng bài test này. */
+  dungSaiCach: string;
+}
+
+/** Một mục trong cẩm nang: chỗ mất điểm cuối cùng giữa 9 và 10. */
+export interface MucCamNang {
+  no: number;
+  ten: string;
+  /** Người được 9 làm gì, người được 10 làm gì — khác nhau ở đúng chỗ nào. */
+  chinLaChoNay: string;
+  matDiemVi: string;
+  cachChan: string[];
+  /** Tự kiểm được hay không, và kiểm bằng cách nào. */
+  tuKiem: string;
+  /** Mất bao nhiêu điểm nếu bỏ qua mục này, theo barem của phần đó. */
+  giaCuaLoi: string;
+}
+
+/** Cẩm nang ôn luyện cho một phần của đề. */
+export interface CamNang {
+  id: string;
+  phanTen: string;
+  soCau: number;
+  trongSo: number;
+  phut: number;
+  /** Điều kiện cần để chạm tới điểm tuyệt đối của phần này. */
+  dieuKienCan: string;
+  muc: MucCamNang[];
+  /** Ngân sách thời gian, tính từ số phút và số câu thật. */
+  chiaGio: string[];
+  /** Ba việc làm trong bảy ngày cuối trước kỳ thi. */
+  bayNgayCuoi: string[];
+}
+
 /** Một lần làm phiếu đã lưu vào hồ sơ. */
 export interface LanLam {
   id: string;

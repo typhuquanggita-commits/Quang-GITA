@@ -37,7 +37,7 @@ const errs=[]; p.on('pageerror',e=>errs.push(e.message.slice(0,150)));
 p.on('console',m=>m.type()==='error'&&errs.push(m.text().slice(0,150)));
 let bad=0;
 const ok=(n,c,x='')=>{ if(c) console.log(`  ✓ ${n}`); else {bad++;console.log(`  ✗ ${n}${x?` — ${x}`:''}`);} };
-const tab=async n=>{await p.locator('aside nav button').filter({hasText:n}).first().click();await p.waitForTimeout(600);};
+const tab=async n=>{await p.locator('aside nav [data-tab]').filter({hasText:n}).first().click();await p.waitForTimeout(600);};
 
 await p.goto(B,{waitUntil:'networkidle'});
 console.log('\n  KIỂM TƯƠNG TÁC SÂU\n');
@@ -95,8 +95,8 @@ ok('tab kế hoạch dựng được điều khiển', btns>5, `${btns} nút`);
 // 7. Bộ lọc tuyến phải THẬT SỰ ẩn mục, không chỉ đổi màu nút
 //    Lưu ý: innerText trả về chữ đã hoa theo CSS uppercase, nên các biểu thức
 //    so khớp tiêu đề bên dưới đều dùng cờ i.
-const hv=()=>p.locator('aside nav > div').first().locator('button').count();
-const co=async id=>(await p.locator(`aside nav button[data-tab="${id}"]`).count())>0;
+const hv=()=>p.locator('aside nav > div').first().locator('[data-tab]').count();
+const co=async id=>(await p.locator(`aside nav [data-tab="${id}"]`).count())>0;
 const locTuyen=async n=>{await p.locator('aside').getByRole('button',{name:n,exact:true}).click();await p.waitForTimeout(400);};
 
 const caHai=await hv();
@@ -254,9 +254,9 @@ ok('làm lại giữ nguyên lịch sử đã lưu', /trung bình/i.test(lai));
   const p2 = await ctx2.newPage();
   await p2.goto(B, {waitUntil: 'networkidle'});
 
-  const dem = async (pg) => (await pg.locator('aside nav button[data-tab]').count());
+  const dem = async (pg) => (await pg.locator('aside nav [data-tab]').count());
   const co = async (pg, id) =>
-    (await pg.locator(`aside nav button[data-tab="${id}"]`).count()) > 0;
+    (await pg.locator(`aside nav [data-tab="${id}"]`).count()) > 0;
 
   /*
    * Không gõ cứng con số. Thêm một thẻ mới là con số đổi, và một bài kiểm
@@ -264,7 +264,7 @@ ok('làm lại giữ nguyên lịch sử đã lưu', /trung bình/i.test(lai));
    * QUAN HỆ: vai mặc định phải mở ÍT hơn tổng số thẻ, còn vai chủ nhiệm
    * chuyên môn phải mở ĐỦ. Quan hệ đó vỡ thì mới là phân quyền hỏng thật.
    */
-  const tongThe = await p.locator('aside nav button[data-tab]').count();
+  const tongThe = await p.locator('aside nav [data-tab]').count();
   const soMacDinh = await dem(p2);
   ok('vai mặc định mở ít thẻ hơn tổng — phân quyền có tác dụng thật',
      soMacDinh > 0 && soMacDinh < tongThe, `mặc định ${soMacDinh} / tổng ${tongThe}`);

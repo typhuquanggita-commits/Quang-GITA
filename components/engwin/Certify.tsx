@@ -218,6 +218,7 @@ export const Certify: React.FC = () => {
         eyebrow="Đào tạo tự động trên app"
         title={`${TRAINING_COURSES.length} khoá nghề — CTV · Tư vấn · Coach · Giáo viên`}
         lead={TRAINING_ENGINE.proof}
+        bac={2}
       />
       <Card className="mb-4 border-emerald-500/25">
         <Field label="Bộ máy chạy thế nào">

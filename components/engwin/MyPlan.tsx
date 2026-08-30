@@ -219,9 +219,9 @@ const Result: React.FC<{plan: DerivedPlan; onEdit: () => void}> = ({
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-400">
             Kế hoạch của riêng tôi
           </p>
-          <h2 className="mt-1.5 text-2xl font-bold text-slate-100">
+          <h1 className="mt-1.5 text-2xl font-bold text-slate-100">
             Lộ trình đã chỉnh theo đúng con người và hoàn cảnh của bạn
-          </h2>
+          </h1>
         </div>
         <button
           onClick={onEdit}

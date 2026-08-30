@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import React, {useState, lazy, Suspense} from 'react';
-import {NORTH_STAR, TAB_TUYEN, TUYEN, docVai, luuVai, tabDuocXem, phamViVai, BAC_QUYEN, VAI_MAC_DINH, docVaiTuKet, luuVaiVaoKet, laBanMayTinh} from './data';
+import {NORTH_STAR, TAB_TUYEN, TUYEN, docVai, luuVai, tabDuocXem, phamViVai, BAC_QUYEN, VAI_MAC_DINH, docVaiTuKet, luuVaiVaoKet, laBanMayTinh,
+  TRANG_THEO_TAB, duongDanCuaTab, tabCuaDuongDan, duLieuCoCauTruc, anhOg, GOC} from './data';
 import type {TuyenId} from './types';
 const Charter = lazy(() => import('./components/engwin/Charter').then((m) => ({default: m.Charter})));
 const MyPlan = lazy(() => import('./components/engwin/MyPlan').then((m) => ({default: m.MyPlan})));
@@ -409,7 +410,28 @@ const DangTai: React.FC = () => (
 );
 
 export const App: React.FC = () => {
-  const [tab, setTab] = useState('tuyen');
+  /* ==========================================================================
+     MỖI THẺ MỘT ĐỊA CHỈ RIÊNG
+
+     Trước phần này, ba mươi chín thẻ nội dung nằm sau đúng MỘT địa chỉ. Máy
+     tìm kiếm xếp hạng địa chỉ chứ không xếp hạng thẻ, nên ba mươi tám thẻ
+     kia không tồn tại với người đang tìm kiếm — và người dùng cũng không gửi
+     được đường dẫn tới đúng chỗ mình muốn chỉ cho bạn.
+
+     Dùng History API chứ không dùng thư viện định tuyến: cả ứng dụng chỉ cần
+     đọc một đường dẫn và ghi một đường dẫn, thêm một thư viện cho việc đó là
+     bắt mọi người tải thêm mã cho một thứ mười dòng làm xong.
+
+     Trên bản MÁY TÍNH thì không đụng vào địa chỉ. Ở đó trang chạy qua giao
+     thức app:// và không có ai tìm kiếm nó; đổi địa chỉ chỉ thêm một đường
+     hỏng mà không đổi lại được gì.
+     ========================================================================== */
+  const dungDiaChi = typeof window !== 'undefined' && !window.engwin;
+
+  // Vào thẳng một đường dẫn thì mở đúng thẻ đó, không bật về thẻ mặc định.
+  const [tab, setTab] = useState(
+    () => (dungDiaChi ? tabCuaDuongDan(window.location.pathname) : undefined) ?? 'tuyen',
+  );
   const [menuOpen, setMenuOpen] = useState(false);
   // Bộ lọc tuyến: 'ca-hai' hiện đủ mục, chọn một tuyến thì ẩn mục không thuộc
   // tuyến đó. Mục vận hành học viện không bị lọc vì không thuộc tuyến nào.
@@ -462,6 +484,93 @@ export const App: React.FC = () => {
       conSong = false;
     };
   }, [unlocked]);
+
+  /*
+   * ĐỒNG BỘ HAI CHIỀU VỚI ĐỊA CHỈ
+   *
+   * Đi tới: đổi thẻ thì ghi địa chỉ mới, đổi luôn tiêu đề và mô tả của
+   * trang. Tiêu đề là dòng người ta thấy trên kết quả tìm kiếm và trên thẻ
+   * trình duyệt; để nguyên một tiêu đề cho cả ba mươi chín trang thì ba mươi
+   * chín trang trông như một.
+   *
+   * Đi lui: bấm nút quay lại của trình duyệt thì về đúng thẻ trước đó. Không
+   * xử lý popstate thì nút quay lại đưa người dùng ra khỏi hẳn ứng dụng —
+   * đó là chỗ mất người dùng nhiều nhất trong mọi ứng dụng một trang.
+   */
+  React.useEffect(() => {
+    if (!dungDiaChi) return;
+    const t = TRANG_THEO_TAB[tab];
+    if (!t) return;
+    const duong = duongDanCuaTab(tab);
+    if (window.location.pathname !== duong) {
+      window.history.pushState({tab}, '', duong);
+    }
+    document.title = `${t.tieuDe} — ENGWIN365`;
+    const dat = (ten: string, noiDung: string, theo: 'name' | 'property' = 'name') => {
+      let m = document.head.querySelector<HTMLMetaElement>(`meta[${theo}="${ten}"]`);
+      if (!m) {
+        m = document.createElement('meta');
+        m.setAttribute(theo, ten);
+        document.head.appendChild(m);
+      }
+      m.content = noiDung;
+    };
+    dat('description', t.moTa);
+    dat('og:title', t.tieuDe, 'property');
+    dat('og:description', t.moTa, 'property');
+    dat('og:url', `${GOC}${duong}`, 'property');
+    dat('og:type', 'website', 'property');
+    dat('og:locale', 'vi_VN', 'property');
+    dat('og:site_name', 'ENGWIN365', 'property');
+    dat('og:image', anhOg(tab), 'property');
+    dat('og:image:width', '1200', 'property');
+    dat('og:image:height', '630', 'property');
+    dat('og:image:alt', t.tieuDe, 'property');
+    dat('twitter:card', 'summary_large_image');
+    dat('twitter:title', t.tieuDe);
+    dat('twitter:description', t.moTa);
+    dat('twitter:image', anhOg(tab));
+
+    /*
+     * Thẻ chỉ mở cho vai vận hành thì KHÔNG cho vào chỉ mục.
+     *
+     * Khách vãng lai vào thẳng địa chỉ đó sẽ bị đưa về thẻ khác. Một kết
+     * quả tìm kiếm dẫn tới chỗ người ta không vào được là kết quả hỏng:
+     * người dùng bấm vào rồi bấm quay lại ngay, và Google đọc đúng chuỗi
+     * đó là trang không đáp ứng truy vấn.
+     */
+    dat('robots', t.congKhai ? 'index, follow, max-image-preview:large' : 'noindex, follow');
+
+    let can = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!can) {
+      can = document.createElement('link');
+      can.rel = 'canonical';
+      document.head.appendChild(can);
+    }
+    can.href = `${GOC}${duong}`;
+
+    // Dữ liệu có cấu trúc: thay cả khối, không chồng thêm khối mới mỗi lần
+    // đổi thẻ — chồng lên nhau thì máy tìm kiếm đọc được nhiều mô tả mâu
+    // thuẫn cho cùng một trang.
+    document.head.querySelectorAll('script[data-seo]').forEach((n) => n.remove());
+    for (const o of duLieuCoCauTruc(tab)) {
+      const sc = document.createElement('script');
+      sc.type = 'application/ld+json';
+      sc.setAttribute('data-seo', '1');
+      sc.textContent = JSON.stringify(o);
+      document.head.appendChild(sc);
+    }
+  }, [tab, dungDiaChi]);
+
+  React.useEffect(() => {
+    if (!dungDiaChi) return;
+    const lui = () => {
+      const t = tabCuaDuongDan(window.location.pathname);
+      if (t) setTab(t);
+    };
+    window.addEventListener('popstate', lui);
+    return () => window.removeEventListener('popstate', lui);
+  }, [dungDiaChi]);
 
   // Đổi vai: ghi vào cả hai chỗ. Két là nguồn sự thật, localStorage là bản sao.
   const doiVai = (id: string) => {
@@ -587,6 +696,63 @@ export const App: React.FC = () => {
     </div>
   );
 
+  /*
+   * MỘT MỤC ĐIỀU HƯỚNG LÀ MỘT LIÊN KẾT THẬT, KHÔNG PHẢI MỘT CÁI NÚT.
+   *
+   * Đây là chỗ có đòn bẩy lớn thứ hai trong cả tầng SEO, sau việc tách địa
+   * chỉ. Trước đây điều hướng dựng bằng <button onClick>. Máy tìm kiếm
+   * KHÔNG bấm nút — nó chỉ đi theo thẻ <a href>. Nghĩa là 34 trang công
+   * khai không có một đường nào dẫn tới nhau: chúng là 34 trang mồ côi,
+   * chỉ tìm thấy được qua sitemap, và không trang nào chuyển được chút uy
+   * tín nào cho trang nào.
+   *
+   * Đổi sang <a href> được thêm ba thứ mà người dùng thật sự cần, và cả ba
+   * đều KHÔNG có ở cái nút:
+   *   · bấm giữa chuột hoặc Ctrl+bấm mở sang thẻ mới — nên phải để trình
+   *     duyệt tự xử lý khi có phím bổ trợ, không được chặn
+   *   · chuột đặt lên thì hiện địa chỉ ở góc dưới, người dùng biết mình
+   *     sắp đi đâu trước khi bấm
+   *   · sao chép địa chỉ liên kết
+   *
+   * Trên bản MÁY TÍNH thì giữ nguyên cái nút: ở đó trang chạy qua app://,
+   * không có máy tìm kiếm nào, và một thẻ <a href> chỉ thêm một đường
+   * người dùng bấm nhầm ra ngoài ứng dụng.
+   */
+  const NavMuc: React.FC<{
+    n: Nav;
+    className: string;
+    children: React.ReactNode;
+  }> = ({n, className, children}) => {
+    const di = () => {
+      setTab(n.id);
+      setMenuOpen(false);
+      window.scrollTo({top: 0});
+    };
+    if (!dungDiaChi) {
+      return (
+        <button data-tab={n.id} onClick={di} className={className}>
+          {children}
+        </button>
+      );
+    }
+    return (
+      <a
+        data-tab={n.id}
+        href={duongDanCuaTab(n.id)}
+        aria-current={tabHopLe === n.id ? 'page' : undefined}
+        onClick={(e) => {
+          // Có phím bổ trợ hoặc không phải chuột trái thì để trình duyệt
+          // làm việc của nó: mở thẻ mới, mở cửa sổ mới, tải về.
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+          e.preventDefault();
+          di();
+        }}
+        className={className}>
+        {children}
+      </a>
+    );
+  };
+
   const NavList = (
     <nav className="space-y-1">
       {(['learner', 'academy'] as const).map((g) => (
@@ -595,14 +761,9 @@ export const App: React.FC = () => {
             {GROUP_LABEL[g]}
           </p>
           {NAV.filter((n) => n.group === g && hienTab(n)).map((n) => (
-            <button
+            <NavMuc
               key={n.id}
-              data-tab={n.id}
-              onClick={() => {
-                setTab(n.id);
-                setMenuOpen(false);
-                window.scrollTo({top: 0});
-              }}
+              n={n}
               className={`flex w-full items-center gap-2.5 rounded-lg px-2.5 py-1 text-left transition ${
                 tabHopLe === n.id
                   ? g === 'academy'
@@ -619,7 +780,7 @@ export const App: React.FC = () => {
                   {n.hint}
                 </span>
               </span>
-            </button>
+            </NavMuc>
           ))}
           {g === 'learner' && soAn > 0 && (
             <p className="px-3 pt-1.5 text-[11px] leading-snug text-slate-400">

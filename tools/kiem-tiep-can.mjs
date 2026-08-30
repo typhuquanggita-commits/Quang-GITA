@@ -55,7 +55,7 @@ await p.goto(B, {waitUntil: 'networkidle'});
 
 console.log('\n  KIỂM TIẾP CẬN — WCAG 2.1 mức A và AA\n');
 
-const tabs = await p.$$eval('aside nav button[data-tab]', (es) => es.map((e) => e.dataset.tab));
+const tabs = await p.$$eval('aside nav [data-tab]', (es) => es.map((e) => e.dataset.tab));
 const CAN_QUET = 39;
 if (tabs.length !== CAN_QUET) {
   console.log(
@@ -69,7 +69,7 @@ if (tabs.length !== CAN_QUET) {
 const gop = {};
 let tong = 0;
 for (const t of tabs) {
-  await p.click(`aside nav button[data-tab="${t}"]`);
+  await p.click(`aside nav [data-tab="${t}"]`);
   await p.waitForTimeout(300);
   await p.addScriptTag({content: axe});
   const loi = await p.evaluate(async () => {

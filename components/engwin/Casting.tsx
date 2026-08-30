@@ -154,6 +154,7 @@ export const Casting: React.FC = () => {
         eyebrow="Chuẩn phát âm"
         title={ACCENT_STANDARD.title}
         lead={ACCENT_STANDARD.why}
+        bac={2}
       />
       <div className="mb-6 grid gap-3 md:grid-cols-2">
         <Card className="border-sky-500/25 bg-sky-500/5">

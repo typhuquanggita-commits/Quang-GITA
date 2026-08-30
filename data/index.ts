@@ -59,3 +59,18 @@ export * from './phien';
  *   import {DE_THI_MAU} from '../../data/dethi';
  *   import {boDe} from '../../data/bode';
  */
+/*
+ * seo.ts nằm trong thùng chung vì App.tsx cần nó ngay từ lượt dựng đầu:
+ * bảng địa chỉ quyết định mở thẻ nào khi người dùng vào thẳng một đường
+ * dẫn. Không có nó thì không định tuyến được.
+ *
+ * BA TỆP TÀI LIỆU KHÔNG NẰM Ở ĐÂY, VÀ ĐÓ LÀ CỐ Ý
+ *   decuong.ts, baitest.ts, camnang.ts cộng lại 59 kB nguồn và HIỆN CHƯA
+ *   có thẻ giao diện nào đọc chúng. Tái xuất ở đây thì Rollup gộp cả ba
+ *   vào gói tải lần đầu, và mọi người tải thêm 48 kB cho thứ chưa ai xem
+ *   được. Bài kiểm hiệu năng bắt đúng chỗ đó.
+ *
+ *   Khi dựng thẻ cho chúng thì nhập thẳng từ tệp, đúng như lối đã ghi ở
+ *   trên: import {deCuong} from '../../data/decuong';
+ */
+export * from './seo';

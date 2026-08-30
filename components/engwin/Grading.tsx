@@ -90,6 +90,7 @@ export const Grading: React.FC = () => {
         eyebrow="Thư viện lỗi"
         title={`${ERROR_REMEDIES.length} phác đồ khắc phục — tra mã, dán vào, cá nhân hoá`}
         lead="Mỗi phác đồ có nguyên nhân gốc (vì sao người Việt mắc lỗi này), chiến lược, các bước sửa, hai bài luyện dưới 20 phút, và tiêu chí quan sát được để biết khi nào lỗi đã đóng. Mã lỗi thống nhất toàn học viện."
+        bac={2}
       />
 
       <Filters

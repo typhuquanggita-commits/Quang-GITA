@@ -1166,11 +1166,118 @@ npm run preview  # xem thử bản đã dựng
 không tham chiếu tới bất kỳ tên miền bên ngoài nào; điều này được kiểm chứng
 tự động bằng `npm run test:web`.
 
+## 🔎 Tầng SEO — 34 trang xếp hạng được thay vì 1
+
+### Vấn đề gốc, nói thẳng
+
+Trước tầng này, cả ứng dụng có **39 thẻ nội dung nhưng đúng một địa chỉ**.
+Google xếp hạng địa chỉ, không xếp hạng thẻ. Ba mươi tám thẻ còn lại không
+tồn tại đối với người đang tìm kiếm — không phải xếp hạng thấp, mà là **không
+có gì để xếp hạng**.
+
+Và trước khi nói bất cứ điều gì khác: **không ai bảo đảm được vị trí số một**,
+ai nói bảo đảm được thì đang bán một thứ họ không có. Thứ hạng phụ thuộc vào
+đối thủ trong cùng truy vấn, vào số trang uy tín dẫn link về, vào tuổi tên
+miền — không thứ nào nằm trong mã nguồn. Cái mã nguồn quyết định được là
+**điều kiện cần**, và phần này làm cho đủ điều kiện cần.
+
+### Bốn thứ đã sửa, theo thứ tự đòn bẩy
+
+| # | Trước | Sau | Vì sao quan trọng |
+|---|---|---|---|
+| 1 | 1 địa chỉ cho 39 thẻ | 39 địa chỉ riêng, mỗi thẻ một trang | Google xếp hạng địa chỉ |
+| 2 | Điều hướng bằng `<button onClick>` | `<a href>` thật | Máy tìm kiếm **không bấm nút**; 34 trang từng là 34 trang mồ côi |
+| 3 | Không trang nào có `<h1>` | Đúng một `<h1>` mỗi trang | Tín hiệu mạnh nhất trên trang, và là điểm vào cho trình đọc màn hình |
+| 4 | HTML rỗng, nội dung do JS dựng | 34 trang HTML dựng sẵn có nội dung | Máy tìm kiếm đọc được ở **lượt đầu**, không đợi lượt chạy JS |
+
+### Trang công khai và trang nội bộ — vì sao phải tách
+
+Năm thẻ chỉ mở cho vai vận hành (chấm bài, đào tạo giáo viên, podcast, tuyển
+giọng đọc, xưởng học liệu). Nếu đưa chúng vào sitemap thì người tìm kiếm bấm
+vào, vào tới nơi, **bị đẩy sang trang khác**, rồi bấm quay lại. Google đọc
+đúng chuỗi đó là "trang không đáp ứng truy vấn" — vừa mất một kết quả, vừa để
+lại tín hiệu xấu cho cả tên miền.
+
+Nên: sitemap, liên kết nội bộ và bản dựng sẵn **chỉ gồm 34 trang công khai**;
+5 trang nội bộ mang `noindex` đặt sẵn trong HTML. Danh sách này **không gõ
+tay** — nó tính thẳng từ bảng phân quyền, nên sửa quyền là nó đổi theo.
+
+Cũng vì thế **không dùng `Disallow`** trong robots.txt: `Disallow` nghĩa là
+"đừng tải", mà không tải thì không đọc được `noindex`, và trang vẫn lọt vào
+kết quả — lọt vào mà không có mô tả.
+
+### Ba thứ cố tình không làm
+
+| Không dùng | Vì sao |
+|---|---|
+| `FAQPage` | Cần cặp hỏi/đáp **hiện ra trên trang**; đánh dấu hỏi/đáp không có là vi phạm chính sách. Ngoài ra từ 2023 Google chỉ hiện FAQ cho trang y tế và cơ quan nhà nước |
+| `SearchAction` | Google đã ngừng ô tìm kiếm trong kết quả từ cuối 2024 — giữ lại chỉ là mã chết |
+| `hreflang` | Chỉ có nghĩa khi có nhiều bản ngôn ngữ. Trang này chỉ có tiếng Việt |
+
+Vụn bánh mì cũng chỉ **hai bậc**, không ba: địa chỉ ở đây phẳng, bịa ra một
+tầng trung gian không tồn tại thì Google đối chiếu với địa chỉ thật và bỏ luôn
+cả vụn.
+
+### `lastmod` là ngày sửa thật, không phải ngày đóng gói
+
+Cách phổ biến là ghi ngày hôm nay vào mọi địa chỉ mỗi lần dựng. Đó là nói
+dối, và khi Google thấy sai nhiều lần thì nó **bỏ qua `lastmod` của cả tên
+miền** — lúc đó trang sửa thật cũng không được thu thập lại sớm nữa.
+
+`tools/ngay-sua.mjs` tính ngày thật của từng trang: tra thẻ nào dựng bằng
+thành phần nào, đọc các tên nhập từ kho dữ liệu, tra mỗi tên khai báo ở tệp
+nào, rồi lấy ngày commit **muộn nhất** trong số đó. Mỗi trang phụ thuộc 3–6
+tệp và có một mốc thời gian của riêng nó.
+
+### Ảnh chia sẻ sinh bằng mã
+
+34 ảnh 1200×630 sinh lúc đóng gói từ chính tiêu đề trang, màu lấy từ bộ nhận
+diện GITA (`data/brand.ts`). Không có ảnh thì mọi liên kết dán vào Zalo hay
+Messenger hiện ra một ô trống — và ô trống thì gần như không ai bấm. Sinh bằng
+mã nên tiêu đề trên ảnh **luôn khớp** tiêu đề trang, không có đường lệch.
+
+### Chạy và kiểm
+
+```bash
+npm run build:web    # dựng + sinh tệp SEO + kiểm lại, cả ba trong một lệnh
+npm run seo          # chỉ sinh: 34 ảnh og, robots.txt, sitemap.xml, 39 HTML, 404.html
+npm run test:seo     # 14 nhóm kiểm, đọc dist/ chứ không đọc mã nguồn
+```
+
+`tools/kiem-seo.mjs` đọc **bản đã đóng gói**, không đọc mã nguồn: máy tìm kiếm
+cũng chỉ tải đúng những tệp đó. Bảy phép thử ngược đã chạy để chứng minh bài
+kiểm đỏ được thật — bỏ một liên kết, đổi `<h1>` thành `<h2>`, thêm
+`changefreq`, gỡ `noindex`, đặt `Disallow: /`, xoá `404.html`, làm hỏng một
+khối JSON-LD; cả bảy đều bị bắt.
+
+### Còn thiếu gì — nói thẳng
+
+Mã nguồn đã lo xong phần kỹ thuật. Ba thứ còn lại **không nằm trong mã nguồn**
+và không ai lập trình thay được:
+
+- **Tên miền thật.** `data/seo.ts` đang đặt `GOC = 'https://engwin365.gita365.vn'`.
+  Đổi một dòng đó là sitemap, canonical và ảnh chia sẻ đổi theo.
+- **Liên kết từ nơi khác dẫn về.** Đây là yếu tố xếp hạng lớn nhất còn lại, và
+  nó đến từ việc có người thật thấy nội dung đáng dẫn link.
+- **Đăng ký Google Search Console** rồi nộp `sitemap.xml`. Không nộp thì Google
+  vẫn tìm ra, nhưng chậm hơn nhiều và không có số liệu để sửa.
+
 ## Xuất bản web
 
-`npm run build` sinh ra thư mục `dist/` — tải thẳng lên Netlify, Cloudflare
-Pages, Vercel, hoặc bất kỳ máy chủ tĩnh nào. Tệp `dist/_headers` đã có sẵn các
-tiêu đề bảo mật cho Netlify và Cloudflare Pages.
+`npm run build:web` sinh ra thư mục `dist/` đầy đủ — tải thẳng lên Netlify,
+Cloudflare Pages, Vercel, hoặc bất kỳ máy chủ tĩnh nào. Dùng `build:web` chứ
+không dùng `build`: bản chỉ `build` thiếu toàn bộ tệp SEO nên **không xếp hạng
+được**.
+
+Tệp `dist/_headers` đã có sẵn tiêu đề bảo mật và quy tắc nhớ đệm cho Netlify
+và Cloudflare Pages: `/assets/*` mang mã băm trong tên nên nhớ vĩnh viễn, còn
+HTML thì luôn hỏi lại máy chủ — nhớ lâu HTML nghĩa là người dùng xem bản cũ
+sau khi đã phát hành bản mới.
+
+Nơi đăng phải trả `404.html` cho địa chỉ không có thật, **đừng** đặt quy tắc
+chuyển mọi địa chỉ về `index.html`: làm thế thì địa chỉ hỏng trả về mã 200 kèm
+nội dung không khớp — đúng định nghĩa "404 mềm", một trong những lỗi bị hạ giá
+rõ nhất.
 
 Muốn giới hạn ai xem được, phải chặn ở **tầng máy chủ** — xem
 [BAOMAT.md](BAOMAT.md). Đừng đặt màn hình đăng nhập bằng JavaScript vào trang
@@ -1204,6 +1311,8 @@ npm run audit         # kiểu dữ liệu · dựng · tham chiếu chéo · ch
 npm run test:vault    # 36 phép thử két dữ liệu
 npm run test:desktop  # 19 phép thử bản máy tính
 npm run test:web      # kiểm tra bản web bằng trình duyệt thật
+npm run test:seo      # 14 nhóm kiểm tầng SEO trên bản đã đóng gói
+npm run test:a11y     # WCAG 2.1 mức A và AA trên cả 39 thẻ
 npx tsx tools/kiem-danh-gia.ts   # kiểm kho 1.000 đơn và 4 bộ đề
 ```
 

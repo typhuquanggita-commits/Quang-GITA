@@ -105,6 +105,7 @@ export const Studio: React.FC = () => {
         eyebrow="Triển khai"
         title={ROLLOUT.title}
         lead={ROLLOUT.note}
+        bac={2}
       />
       <div className="grid gap-3 md:grid-cols-3">
         {ROLLOUT.phases.map((f) => (

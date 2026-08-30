@@ -124,20 +124,23 @@ async function chay() {
   await new Promise((r) => wc.once('did-finish-load', r));
   await new Promise((r) => setTimeout(r, 2000));
 
-  const soTab = await run("document.querySelectorAll('aside nav button').length");
+  const soTab = await run("document.querySelectorAll('aside nav [data-tab]').length");
   ok('két đang mở thì nạp lại vào thẳng giao diện', soTab >= 23, `thấy ${soTab} thẻ`);
 
   // Bấm sang một tab khác để buộc nạp một chunk chưa từng tải. Đây là chỗ dễ
   // hỏng nhất sau khi tách mã theo tab: dynamic import trên giao thức tự đăng ký.
   await run(`(() => {
-    const b = [...document.querySelectorAll('aside nav button')]
+    const b = [...document.querySelectorAll('aside nav [data-tab]')]
       .find(x => x.textContent.includes('Hồ sơ 365 ngày'));
     if (!b) throw new Error('không thấy thẻ Hồ sơ 365 ngày');
     b.click();
     return true;
   })()`);
   await new Promise((r) => setTimeout(r, 2500));
-  const tieuDe = await run("document.querySelector('h2')?.textContent ?? ''");
+  // Tiêu đề của một thẻ nội dung là <h1> — mỗi địa chỉ đúng một <h1>. Màn
+  // hình mã khoá thì khác: ở đó <h1> là tên ứng dụng, nên chỗ kiểm mã khoá
+  // bên dưới vẫn đọc <h2>.
+  const tieuDe = await run("document.querySelector('main h1')?.textContent ?? ''");
   ok('chunk tải động nạp được qua app://', tieuDe.includes('365'), tieuDe);
   ok('tab Hồ sơ dựng đủ 90 ngày của quý 1',
      (await run("document.querySelectorAll('h4').length")) === 90);
@@ -150,7 +153,7 @@ async function chay() {
   const sauKhoa = await run("document.querySelector('h2')?.textContent ?? ''");
   ok('khoá rồi nạp lại thì phải hỏi mã khoá', sauKhoa.includes('Mở khoá'), sauKhoa);
   ok('khoá rồi thì giao diện chính KHÔNG dựng',
-     (await run("document.querySelectorAll('aside nav button').length")) === 0);
+     (await run("document.querySelectorAll('aside nav [data-tab]').length")) === 0);
   await run("window.engwin.vault.unlock('Engwin365!')");
 
   /* ------------------- VAI NẰM TRONG KÉT, KHÔNG PHẢI TRONG localStorage ----
@@ -170,11 +173,11 @@ async function chay() {
   const vaiSauNap = await run("localStorage.getItem('engwin365.vai.v1')");
   ok('vai lấy lại được từ KÉT sau khi localStorage bị xoá sạch',
      vaiSauNap === 'qt-3', String(vaiSauNap));
-  const soTheSuper = await run("document.querySelectorAll('aside nav button[data-tab]').length");
+  const soTheSuper = await run("document.querySelectorAll('aside nav [data-tab]').length");
   ok('vai từ két được thi hành thật — SUPER ADMIN chỉ mở 26 thẻ',
      soTheSuper === 26, String(soTheSuper));
   ok('SUPER ADMIN KHÔNG thấy thẻ chấm bài trên bản máy tính',
-     (await run("document.querySelectorAll('aside nav button[data-tab=\"grading\"]').length")) === 0);
+     (await run("document.querySelectorAll('aside nav [data-tab=\"grading\"]').length")) === 0);
 
   // Két khoá lại thì không đọc được vai nữa — đó chính là hàng rào.
   await run('window.engwin.vault.lock()');

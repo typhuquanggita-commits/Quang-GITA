@@ -42,7 +42,7 @@ const ok = (n, c, x = '') => {
 
 console.log('\n  KIỂM MÁY TÍNH ĐIỂM CHUYÊN ANH\n');
 await p.goto(B, {waitUntil: 'networkidle'});
-await p.locator('aside nav button').filter({hasText: 'Luyện thi chuyên Anh'}).first().click();
+await p.locator('aside nav [data-tab]').filter({hasText: 'Luyện thi chuyên Anh'}).first().click();
 await p.waitForTimeout(900);
 
 // Bốn ô thống kê đầu trang là của tab, ba ô tiếp theo mới là của máy tính.

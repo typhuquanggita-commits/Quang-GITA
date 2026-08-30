@@ -51,14 +51,14 @@ console.log('\n  KIỂM TRA BẢN WEB\n');
 await page.goto(BASE, {waitUntil: 'networkidle'});
 await page.waitForTimeout(1200);
 
-const tabs = await page.locator('aside nav button').count();
+const tabs = await page.locator('aside nav [data-tab]').count();
 ok('mọi thẻ điều hướng đều dựng được', tabs >= 28, `chỉ có ${tabs}`);
 
 ok('web KHÔNG hiện màn hình mã khoá', (await page.getByText('Đặt mã khoá').count()) === 0);
 
 // Mở lần lượt từng thẻ, không thẻ nào được ném lỗi.
 for (let i = 0; i < tabs; i++) {
-  const btn = page.locator('aside nav button').nth(i);
+  const btn = page.locator('aside nav [data-tab]').nth(i);
   const label = (await btn.innerText()).split('\n')[0];
   await btn.click();
   await page.waitForTimeout(120);
@@ -71,7 +71,7 @@ for (let i = 0; i < tabs; i++) {
 ok(`cả ${tabs} thẻ đều có nội dung`, true);
 
 // Hồ sơ 365 ngày
-await page.locator('aside nav button').filter({hasText: 'Hồ sơ 365 ngày'}).first().click();
+await page.locator('aside nav [data-tab]').filter({hasText: 'Hồ sơ 365 ngày'}).first().click();
 await page.waitForTimeout(500);
 ok('quý 1 hiện đủ 90 ngày', (await page.locator('h4').count()) === 90);
 await page.locator('#dossier-jump').fill('21');
