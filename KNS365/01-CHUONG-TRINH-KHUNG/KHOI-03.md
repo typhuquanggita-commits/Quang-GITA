@@ -396,7 +396,7 @@
 **Thực hành:** `PTH-K03-M6-03` – Nhật ký Đôi Bạn · 4 vòng · **L4**
 **Trải nghiệm & Sứ mệnh:** `I-F` thí nghiệm học tập 3 tuần · **PSM:** ≥3 phiên/tuần, cả hai ký xác nhận
 **Đánh giá:** `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-HOC-10`
-**Bắc cầu học tập:** Mô hình đôi bạn cùng tiến dùng cho cả năm; **nghĩa vụ kèm cặp** – nền tảng của đai cao hơn.
+**Bắc cầu học tập:** Mô hình đôi bạn cùng tiến dùng cho cả năm; **nghĩa vụ kèm cặp** – nền tảng của Cấp Độ cao hơn.
 
 ---
 
@@ -539,7 +539,7 @@
 | 13–14 | 23–26 | K03-M3-02 · K03-M8-01 |
 | 15–16 | 27–30 | K03-M4-02 · K03-M5-03 |
 | 17–18 | 31–34 | K03-M7-02 · K03-M6-03 |
-| 19–20 | – | **Đấu trường Kỹ năng HK1** · Rà soát Đích · Thăng đai |
+| 19–20 | – | **Đấu trường Kỹ năng HK1** · Rà soát Đích · Công nhận Cấp Độ |
 | 21–22 | 35–38 | K03-M3-03 (chuỗi biết ơn 21 ngày) · K03-M1-03 |
 | 23–24 | 39–42 | K03-M4-03 · K03-M5-02 |
 | 25–26 | 43–46 | K03-M7-03 · K03-M2-03 |

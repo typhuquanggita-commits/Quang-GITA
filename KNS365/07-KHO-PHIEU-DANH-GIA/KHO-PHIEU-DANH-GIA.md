@@ -34,7 +34,7 @@
 | `PDG-TALENT-01` | Phiếu ghi nhận dấu hiệu tài năng | Quan sát | HLV | Liên tục |
 | `PDG-DAUNAM` / `PDG-CUOINAM` | Phiếu đo nền đầu năm / cuối năm | Tổng hợp | HLV + HS | 2 lần/năm |
 | `PDG-HK` | Phiếu sơ kết học kỳ | Tổng hợp | HLV | 2 lần/năm |
-| `PDG-DAI` | Hồ sơ xét thăng đai | Tổng hợp | Hội đồng | Cuối bậc đai |
+| `PDG-CAP` | Hồ sơ xét công nhận Cấp Độ | Tổng hợp | Hội đồng | Cuối mỗi Cấp Độ |
 | `PDG-QC` | Phiếu kiểm định GITA-QC (dự giờ) | Chất lượng | Quan sát viên | Dự giờ |
 | `R-xxx-nn` | Bộ rubric năng lực theo mạch | Sản phẩm | HLV | Theo chuyên đề |
 
@@ -242,16 +242,16 @@ Bằng chứng của tôi: ……………………………………………�
 
 ---
 
-### 📋 `PDG-DAI` · HỒ SƠ XÉT THĂNG ĐAI
+### 📋 `PDG-CAP` · HỒ SƠ XÉT THĂNG ĐAI
 
 **Họ tên:** ………… **Lớp:** ……… **Đai xét:** ☐ Trắng ☐ Vàng ☐ Xanh Lá ☐ Xanh Dương ☐ Đỏ ☐ Kim
 
 | Điều kiện | Yêu cầu | Bằng chứng nộp | Đạt |
 |:--:|---|---|:--:|
 | ① | % chuyên đề hoàn thành ≥ …… % | Bản đồ 288 ô trong Hộ chiếu | ☐ |
-| ② | Mức năng lực theo bậc đai | Bảng năng lực 8 mạch + phiếu đánh giá | ☐ |
-| ③ | Thói quen / mũi nhọn theo bậc đai | Bảng Chuỗi Ngày / Tuyên bố Mũi Nhọn | ☐ |
-| ④ | Sản phẩm / dự án / kèm cặp theo bậc đai | Hồ sơ sản phẩm, biên bản kèm cặp | ☐ |
+| ② | Mức năng lực theo Cấp Độ | Bảng năng lực 8 mạch + phiếu đánh giá | ☐ |
+| ③ | Thói quen / mũi nhọn theo Cấp Độ | Bảng Chuỗi Ngày / Tuyên bố Mũi Nhọn | ☐ |
+| ④ | Sản phẩm / dự án / kèm cặp theo Cấp Độ | Hồ sơ sản phẩm, biên bản kèm cặp | ☐ |
 
 **Kết luận hội đồng:** ☐ **ĐỦ ĐIỀU KIỆN THĂNG ĐAI** ☐ **CHƯA ĐỦ** – còn thiếu điều kiện số: ……
 
@@ -259,7 +259,7 @@ Bằng chứng của tôi: ……………………………………………�
 
 **Hội đồng:** HLV GITA ………… · GVCN ………… · Đại diện phụ huynh ………… **Ngày:** …………
 
-> ⚠️ **Nguyên tắc:** Không trao đai vì lý do tình cảm. Đai mất giá trị nếu ai cũng có. Với HS chưa đủ điều kiện, công bố rõ **thiếu gì** và **lộ trình bổ sung** — đó cũng là một bài học của mô thức GITA.
+> ⚠️ **Nguyên tắc:** Không trao Pin vì lý do tình cảm. Đai mất giá trị nếu ai cũng có. Với HS chưa đủ điều kiện, công bố rõ **thiếu gì** và **lộ trình bổ sung** — đó cũng là một bài học của mô thức GITA.
 
 ---
 
@@ -351,5 +351,5 @@ Bằng chứng của tôi: ……………………………………………�
 | Số mạch đạt mức kỳ vọng | …/8 |
 | Số mạch đạt **DD – Dẫn Dắt** | …/8 |
 | Mũi nhọn được xác định | ………………… |
-| Đủ điều kiện thăng đai? | ☐ Có ☐ Chưa – thiếu: ………… |
+| Đủ điều kiện công nhận Cấp Độ? | ☐ Có ☐ Chưa – thiếu: ………… |
 | Khuyến nghị cho năm sau | ………………… |

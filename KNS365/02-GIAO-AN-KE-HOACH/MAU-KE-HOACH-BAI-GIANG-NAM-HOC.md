@@ -48,9 +48,9 @@
 | 3 | 3–4 | | | | | |
 | 4 | 5–6 | | | | | |
 | … | … | | | | | |
-| 19–20 | — | — | **Đấu trường Kỹ năng HK1** · Rà soát Đích · Lễ Thăng Đai | A | — | |
+| 19–20 | — | — | **Đấu trường Kỹ năng HK1** · Rà soát Đích · Lễ Công Nhận Cấp Độ | A | — | |
 | … | … | | | | | |
-| 37–38 | — | — | **Ngày Hội Tài Năng** · Tổng kết Hộ chiếu · Trao đai | A | — | Có phụ huynh & cộng đồng |
+| 37–38 | — | — | **Ngày Hội Tài Năng** · Tổng kết Hộ chiếu · **Trao Pin & công nhận Cấp Độ** | A | — | Có phụ huynh & cộng đồng |
 
 > Điền theo bảng phân phối chuẩn ở cuối mỗi file `KHOI-xx.md` (mục C).
 
@@ -62,9 +62,9 @@
 |---|---|---|---|
 | Tuần 1–2 | **Đo nền đầu năm**: thang tự tin 8 mạch, 3 chỉ số 3T | `PDG-DAUNAM` | Xác định Điểm A, phân hoá |
 | Sau mỗi chuyên đề | Đánh giá 4 nguồn | `PDG-QS/SP/TDG/DD/PSM` | Hộ chiếu GITA |
-| Tuần 19–20 | **Sơ kết HK1** + Đấu trường | `PDG-HK` | Điều chỉnh HK2, thăng đai |
+| Tuần 19–20 | **Sơ kết HK1** + Đấu trường | `PDG-HK` | Điều chỉnh HK2, công nhận Cấp Độ |
 | Cuối HK1 (từ L4) | **Sàng lọc Lộ trình Mũi Nhọn** | `PDG-TALENT-01` | Chọn HS vào Lộ trình Mũi Nhọn |
-| Tuần 37–38 | **Tổng kết năm** + đo lại thang tự tin & 3T | `PDG-CUOINAM` | Báo cáo phụ huynh, thăng đai, Hồ sơ Tài năng |
+| Tuần 37–38 | **Tổng kết năm** + đo lại thang tự tin & 3T | `PDG-CUOINAM` | Báo cáo phụ huynh, công nhận Cấp Độ, Hồ sơ Tài năng |
 
 ---
 
@@ -76,7 +76,7 @@
 | Hằng tuần | Nhắc & thu Phiếu Sứ Mệnh | Nhóm liên lạc | QLHV |
 | Sau mỗi chuyên đề (48h) | Phản hồi tiến bộ của con | Tin nhắn/báo cáo ngắn | HLV |
 | Hằng tháng | **Học viện Phụ huynh** – 1 chủ đề đồng hành | Trực tiếp/trực tuyến | HLV + chuyên gia |
-| Sơ kết HK1 & Tổng kết năm | Showcase + trao đai | Sự kiện | Toàn đội |
+| Sơ kết HK1 & Tổng kết năm | Showcase + trao Pin | Sự kiện | Toàn đội |
 
 ---
 

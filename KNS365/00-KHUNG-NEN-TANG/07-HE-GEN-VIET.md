@@ -3,37 +3,67 @@
 
 ---
 
-## PHẦN A. ĐỊNH VỊ HỆ GEN VIỆT
+## PHẦN A. NĂM TRỤ CỘT MASTER GEN VIỆT
 
-**GEN VIỆT** là **hệ đào tạo con người** của Học viện GITA. **KNS365** là **chương trình học thuật lõi** của hệ đó, vận hành bằng **mô thức GITA**.
+> ✅ **Bản đúng theo nguồn gốc của Học viện** *(`PHẦN 0.doc`, Phần III — thư mục "KNS 365")*.
+> Bản trước của tài liệu này liệt kê năm **sản phẩm** *(KNS365 · CLB · Trại · GITA365 · Học viện Phụ huynh)* và gọi nhầm chúng là "5 trụ". Thực tế **năm sản phẩm đó nằm gọn bên trong trụ 2, 4 và 5** — còn **trụ 1 (Bản lĩnh & Hệ giá trị)** và **trụ 3 (Di sản)** đã bị bỏ sót, trong khi đó lại chính là hai trụ tạo nên bản sắc Gen Việt.
 
 ```
-                    ┌─────────────────────────────────────────┐
-                    │            HỆ  GEN VIỆT                 │
-                    │  "Thế hệ vàng – Kỷ nguyên vươn mình"    │
-                    └────────────────────┬────────────────────┘
-                                         │
-        ┌────────────────┬───────────────┼───────────────┬────────────────┐
-        ▼                ▼               ▼               ▼                ▼
- ┌────────────┐  ┌──────────────┐ ┌────────────┐ ┌─────────────┐ ┌──────────────┐
- │ KNS365     │  │ CLB GEN VIỆT │ │ TRẠI HUẤN  │ │ GITA 365    │ │ HỌC VIỆN     │
- │ Chương     │  │ Sinh hoạt    │ │ LUYỆN      │ │ Nền tảng số │ │ PHỤ HUYNH    │
- │ trình lõi  │  │ định kỳ      │ │ GEN ALPHA  │ │ Hồ sơ – Đai │ │ Đồng hành    │
- │ L1→L12     │  │ hằng tuần    │ │ LEADER BOOM│ │ – Đánh giá  │ │ 3 sân        │
- │ 288 CĐ     │  │              │ │ Cường độ   │ │             │ │              │
- └────────────┘  └──────────────┘ └────────────┘ └─────────────┘ └──────────────┘
-   Chiều SÂU       Chiều BỀN        Chiều BỨT PHÁ    Chiều ĐO       Chiều GỐC RỄ
+        ┌──────────────────────────────────────────────────────────────┐
+        │              MASTER GEN VIỆT — 5 TRỤ CỘT                     │
+        └──────────────────────────────────────────────────────────────┘
+   ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────────┐ ┌──────────────┐
+   │ TRỤ 1    │ │ TRỤ 2    │ │ TRỤ 3    │ │ TRỤ 4        │ │ TRỤ 5        │
+   │ BẢN LĨNH │ │ NĂNG LỰC │ │ DI SẢN   │ │ HỆ SINH THÁI │ │ DỮ LIỆU –    │
+   │ & HỆ GIÁ │ │ CỐT LÕI  │ │ NGÀN NĂM │ │ GD–CLB–      │ │ CÔNG NGHỆ –  │
+   │ TRỊ      │ │          │ │ VĂN HIẾN │ │ KHỞI NGHIỆP  │ │ QUẢN TRỊ HỆ  │
+   ├──────────┤ ├──────────┤ ├──────────┤ ├──────────────┤ ├──────────────┤
+   │ 7 giá trị│ │ KNS365   │ │ Thư viện │ │ CLB GEN VIỆT │ │ GITA365      │
+   │ Hiến     │ │ 288 CĐ   │ │ Di sản   │ │ 10 Cấp Độ    │ │ Portfolio    │
+   │ chương   │ │ 8 mạch   │ │ 1000     │ │ TRẠI GEN     │ │ 30 năm       │
+   │ Nghi thức│ │ Thang 6  │ │ Gương    │ │ ALPHA ·      │ │ Phân hệ 11   │
+   │          │ │ bậc      │ │ Nhân Tài │ │ LEADER BOOM  │ │ Phân hệ 14   │
+   │          │ │          │ │ Mạng lưới│ │ HỌC VIỆN     │ │ PDCA · RACI  │
+   │          │ │          │ │ Mentor   │ │ PHỤ HUYNH    │ │              │
+   └──────────┘ └──────────┘ └──────────┘ └──────────────┘ └──────────────┘
+    "Có làm     "Năng lực    "Điều này    "Ai vận hành,   "Đo bằng gì,
+     mạnh thêm   nào được     để lại       theo nhịp       ai được
+     giá trị?"   nâng?"       được gì?"    nào?"           xem?"
 ```
 
-| Trụ | Vai trò trong hệ | Nhịp | Sản phẩm đặc trưng |
-|---|---|---|---|
-| **KNS365** | Chương trình chính quy 12 năm, 288 chuyên đề | 2 buổi/chuyên đề, 48 buổi/năm | Hộ chiếu GITA · Hồ sơ Tài năng |
-| **CLB GEN VIỆT** | Duy trì thói quen & môi trường thi đua giữa các chuyên đề | Hằng tuần | Chuỗi ngày · Bảng vàng · Dự án CLB |
-| **TRẠI HUẤN LUYỆN** (GEN ALPHA · LEADER BOOM) | Cú hích cường độ cao, tạo bước ngoặt bản lĩnh | 1–2 lần/năm, 3–5 ngày | Lễ tốt nghiệp trại · Video bứt phá |
-| **GITA 365** | Nền tảng số lưu hồ sơ, phân tầng, cấp quyền, đo lường | Liên tục | Dữ liệu tiến bộ · Cấp đai |
-| **HỌC VIỆN PHỤ HUYNH** | Đồng bộ 3 sân: gia đình – nhà trường – xã hội | Hằng tháng | Cam kết đồng hành · Nhật ký nhân chứng |
+| Trụ | Tên | Câu hỏi kiểm tra bắt buộc | Sản phẩm nằm trong trụ |
+|:--:|---|---|---|
+| **1** | **Bản lĩnh & Hệ giá trị Gen Việt** | *"Đây có làm mạnh thêm bản lĩnh và hệ giá trị Gen Việt không?"* | **7 giá trị**: Yêu nước · Trách nhiệm · Chính trực · Kiên trì · Hợp tác · Sáng tạo · Phụng sự · Hiến chương lớp/CLB · nghi thức |
+| **2** | **Năng lực cốt lõi** | *"Năng lực nào được nâng, lên bậc nào?"* | **KNS365** — 288 chuyên đề · 8 mạch · **thang sâu 6 bậc** · Hộ chiếu GITA · Hồ sơ Tài năng |
+| **3** | **Di sản Gen Việt – Ngàn năm văn hiến** | *"Điều này để lại được gì?"* | Thư viện Di sản · **1000 Gương Nhân Tài** · Mạng lưới Mentor · học phần Di sản |
+| **4** | **Hệ sinh thái Giáo dục – CLB – Khởi nghiệp** *(mô hình BNI + Startup Club)* | *"Ai vận hành, theo nhịp nào?"* | **CLB GEN VIỆT & 10 Cấp Độ** · **Trại GEN ALPHA · LEADER BOOM** · **Học viện Phụ huynh** · CLB Doanh nhân bậc ĐH |
+| **5** | **Dữ liệu – Công nghệ – Quản trị hệ** | *"Đo bằng gì, ai được xem?"* | **GITA365** · portfolio 30 năm · **phân hệ 11** *(phân quyền)* · **phân hệ 14** *(đo lường)* · PDCA · RACI |
 
-> **Nguyên lý hệ:** Một mình chương trình học không tạo ra thế hệ vàng. **GEN VIỆT = Chương trình (sâu) × Câu lạc bộ (bền) × Trại huấn luyện (bứt phá) × Nền tảng đo (khách quan) × Gia đình (gốc rễ).**
+### Năm sản phẩm — vị trí đúng trong năm trụ
+
+| Sản phẩm | Thuộc trụ | Vai trò | Nhịp |
+|---|:--:|---|---|
+| **KNS365** | 2 | Chương trình chính quy 12 năm, 288 chuyên đề — **chiều SÂU** | 2 buổi/chuyên đề · 48 buổi/năm |
+| **CLB GEN VIỆT** | 4 | Duy trì thói quen & môi trường thi đua, vận hành **10 Cấp Độ** — **chiều BỀN** | Hằng tuần |
+| **TRẠI HUẤN LUYỆN** *(GEN ALPHA · LEADER BOOM)* | 4 | Cú hích cường độ cao tạo bước ngoặt bản lĩnh — **chiều BỨT PHÁ** | 1–2 lần/năm · 3–5 ngày |
+| **HỌC VIỆN PHỤ HUYNH** | 4 | Đồng bộ ba sân gia đình – nhà trường – xã hội — **chiều GỐC RỄ** | Hằng tháng |
+| **GITA 365** | 5 | Nền tảng số: hồ sơ, phân quyền, đo lường — **chiều ĐO** | Liên tục |
+
+> **Nguyên lý hệ:** Một mình chương trình học không tạo ra thế hệ vàng.
+> **GEN VIỆT = Giá trị (trụ 1) × Năng lực (trụ 2) × Di sản (trụ 3) × Hệ sinh thái vận hành (trụ 4) × Dữ liệu & quản trị (trụ 5).**
+> Thiếu trụ 1 thì chương trình chỉ đào tạo được người giỏi mà không có bản lĩnh. Thiếu trụ 3 thì mọi thứ tan theo từng khoá học.
+
+### Kiến trúc thời gian — Bản Đồ 30 Năm
+
+| Chặng | Tuổi | Tên chặng | Phạm vi phụ trách |
+|:--:|:--:|---|---|
+| **1** | 10–15 | **Thức tỉnh** | KNS365 · giai đoạn Vươn Cành 🌳 |
+| **2** | 16–20 | **Khai mở & Rèn lửa** | KNS365 · giai đoạn Cất Cánh 🚀 → CLB |
+| **3** | 21–30 | **Dấn thân & Lập nghiệp** | CLB Gen Việt Doanh nhân · Khởi nghiệp |
+| **4** | 31–40 | **Kiến tạo & Khai sáng thế hệ sau** | Mạng lưới Mentor · Trụ 3 Di sản |
+
+> ⚠️ **KNS365 phủ lớp 1–12 (6–18 tuổi) — tức chặng 1 và nửa chặng 2.** Đây là **đoạn mở đầu của Bản Đồ 30 Năm**, không phải toàn bộ nó. Phải nói rõ điều này với phụ huynh và nhà trường — và chính nó tạo lý do tự nhiên để học sinh đi tiếp sang CLB và hệ 10 Cấp Độ sau khi tốt nghiệp.
+> Bốn tầng thời gian đầy đủ *(1000 năm · 1945–2045 · 30 năm · 90 ngày)* nằm ở **GOAL STACK 7 tầng**, [`01-MO-THUC-HUAN-LUYEN-GITA.md`](01-MO-THUC-HUAN-LUYEN-GITA.md) mục C1.
 
 ---
 
@@ -180,4 +210,4 @@ Tài liệu này tổng hợp và chuẩn hoá từ các nguồn nội bộ củ
 
 > ✅ **ĐÃ TIẾP CẬN NGUỒN GỐC — 30/08/2026.** Thư mục Drive **"KNS 365"** (`.../folders/17v059L2536aGQUlNVTKpKi_njVEJW-CA`, chủ sở hữu `truongnhatquang.gita@gmail.com`) đã được chia sẻ tới `typhuquanggita@gmail.com` và đã đọc được. **Kết quả đối chiếu — gồm cả những chỗ tài liệu này đang SAI so với nguồn gốc — ghi tại [`08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md`](08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md).**
 >
-> 🔴 **Riêng mục "5 trụ" ở Phần A của chính tài liệu này đã được xác định là SAI** so với 5 trụ cột Master Gen Việt trong nguồn gốc *(lệch **L5**)*. Danh sách ở đây là **danh mục sản phẩm**, không phải trụ cột chiến lược. **Chưa sửa — chờ anh Quang quyết**; khi triển khai, dùng bản trong `08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md`.
+> ✅ **Mục "5 trụ" ở Phần A đã được sửa** theo 5 trụ cột Master Gen Việt trong nguồn gốc *(giải lệch **L5**)*. Kiến trúc hợp nhất ba trục xem tại [`09-KIEN-TRUC-HOP-NHAT-GITA.md`](09-KIEN-TRUC-HOP-NHAT-GITA.md).

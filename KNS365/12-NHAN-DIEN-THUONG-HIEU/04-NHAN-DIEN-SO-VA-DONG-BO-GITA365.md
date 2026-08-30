@@ -23,7 +23,7 @@ Học viện GITA vận hành **hai nền tảng dùng chung một hồ sơ ngư
 | 3 | **Màu 4 chữ GITA thống nhất tuyệt đối** — `G` xanh, `I` đỏ, `T` vàng sao, `A` xanh quỹ đạo, ở cả hai nền tảng |
 | 4 | **Cùng hệ chữ** *(Be Vietnam Pro · Noto Serif · IBM Plex Mono)* |
 | 5 | **Cùng thang mức GITA-4** *(KM ◔ · ĐH ◑ · TT ◕ · DD ●)* — người học chỉ học **một ngôn ngữ đánh giá** cho cả đời học |
-| 6 | **Cùng mã người học (GITA ID)** — hồ sơ, đai, Talent Portfolio hiển thị nhất quán trên cả hai nơi |
+| 6 | **Cùng mã người học (GITA ID)** — hồ sơ, Cấp Độ & Pin, Talent Portfolio hiển thị nhất quán trên cả hai nơi |
 | 7 | **Cùng quy tắc phân quyền** *(phân hệ 11)* — vai và quyền không đổi khi chuyển nền tảng |
 | 8 | Phân biệt hai nền tảng bằng **dải định danh mảnh** ở chân màn hình, **không phải bằng đổi màu giao diện** |
 
@@ -139,7 +139,7 @@ Học viện GITA vận hành **hai nền tảng dùng chung một hồ sơ ngư
 
 | Huy hiệu | Hình thức | Quy tắc hiển thị |
 |---|---|---|
-| **Đai GITA** | Vòng tròn viền màu đai, giữa `LOGO-08` | Hiện ở hồ sơ cá nhân và trên Talent Portfolio |
+| **Pin Cấp Độ** | Vòng tròn viền màu Pin, giữa `LOGO-08` | Hiện ở hồ sơ cá nhân và trên Talent Portfolio |
 | **Tầng năng lực HS-T1→T5** | 1→5 ngôi sao Vàng Sao | 🔒 **Chỉ hiện với chính học sinh, phụ huynh của em, và vai được phân công.** Cấm hiện ở danh sách lớp, bảng tổng, màn hình chung |
 | **Chuỗi ngày** | Dải ô vuông nhỏ, tô dần | Hiện mức **cá nhân**, **không so với bạn** |
 | **Mức GITA-4 theo mạch** | 8 thanh ngang, màu theo mạch | Hiện ở báo cáo cá nhân |
@@ -196,7 +196,7 @@ Học viện GITA vận hành **hai nền tảng dùng chung một hồ sơ ngư
 | 4 | Mẫu tài liệu | `.docx` + `.indd` + `.pdf` mẫu | 12 × 3 |
 | 5 | Mẫu slide | `.pptx` + `.key` | 2 |
 | 6 | Thẻ pha GITA & biểu tượng | `.svg` bộ đầy đủ | ~60 hình |
-| 7 | Huy hiệu đai & tầng | `.svg` + `.png` | 6 + 5 |
+| 7 | Huy hiệu Pin & tầng | `.svg` + `.png` | 6 + 5 |
 | 8 | Khung mở/kết video | `.mp4` + tệp dự án dựng | 2 |
 | 9 | Nhạc hiệu audio 5 giây | `.wav` | 1 |
 | 10 | Bộ mẫu mạng xã hội | `.psd` / `.fig` | 6 |

@@ -113,7 +113,7 @@
 - **Không báo cáo** khi phát hiện dấu hiệu HS bị xâm hại/nguy cơ.
 - Có hành vi **hạ nhục, kỳ thị, bạo lực** với HS (thể chất hoặc lời nói).
 - **Tiết lộ thông tin riêng tư** của HS.
-- Làm sai lệch hồ sơ đánh giá hoặc **cấp đai không đủ điều kiện**.
+- Làm sai lệch hồ sơ đánh giá hoặc **công nhận Cấp Độ không đủ điều kiện**.
 
 ---
 
@@ -129,7 +129,7 @@
 6. Tôi **giữ ranh giới nghề nghiệp**: không liên hệ riêng ngoài kênh chính thức, không nhận quà có giá trị, không có quan hệ tài chính với gia đình học sinh.
 7. Tôi **không chẩn đoán, không trị liệu** — tôi kết nối học sinh tới người có chuyên môn.
 8. Tôi **đánh giá bằng bằng chứng**, không bằng cảm tính, và không để định kiến chi phối.
-9. Tôi **không cấp đai, không cho điểm** khi học sinh chưa đủ bằng chứng — kể cả vì lý do tình cảm.
+9. Tôi **không công nhận Cấp Độ, không cho điểm** khi học sinh chưa đủ bằng chứng — kể cả vì lý do tình cảm.
 10. Tôi **làm mẫu trước**: tôi không yêu cầu học sinh làm điều mà chính tôi không dám làm trước lớp.
 11. Tôi **nhận phản hồi về mình** với cùng tinh thần tôi yêu cầu ở học sinh.
 12. Tôi hiểu rằng **công việc này ảnh hưởng tới tôi**, và tôi có trách nhiệm **tự chăm sóc bản thân** để còn đủ sức đồng hành.

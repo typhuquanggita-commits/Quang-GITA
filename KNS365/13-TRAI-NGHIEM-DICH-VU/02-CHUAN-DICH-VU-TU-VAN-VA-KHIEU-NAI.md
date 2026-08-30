@@ -16,7 +16,7 @@
 | **Sự cố an toàn / sức khoẻ** | **≤ 1 giờ, và phải GỌI ĐIỆN** | HLV → QLHV | ☎️ Gọi — **tuyệt đối không nhắn tin** |
 | Con vắng học không báo trước | **Trong ngày** | QLHV | Gọi |
 | Báo cáo sau chuyên đề | **≤ 48 giờ** | HLV | Hệ thống |
-| Kết quả thăng đai | **≤ 7 ngày** sau hội đồng | QLHV | Hệ thống + lễ trao |
+| Kết quả công nhận Cấp Độ | **≤ 7 ngày** sau hội đồng | QLHV | Hệ thống + lễ trao |
 | Tiếp nhận khiếu nại | **≤ 4 giờ** | QLHV | Gọi |
 | Phương án xử lý khiếu nại | **≤ 48 giờ** | QLHV / GDĐH | Gọi + văn bản |
 | Đóng khiếu nại | **≤ 7 ngày** | QLHV | Văn bản có xác nhận PH |
@@ -30,7 +30,7 @@
 | 2 | **Mỗi tháng, mỗi học sinh có ít nhất 1 tin nhắn quan sát cá nhân hoá** | Bảng đếm lượt chạm |
 | 3 | **Không bao giờ chấm điểm hay xếp hạng học sinh công khai** | Rà soát tài liệu & nền tảng |
 | 4 | **Con có quyền "pass" — không ai được hỏi lý do** | Nội quy lớp, nhắc 3 lần/buổi nhạy cảm |
-| 5 | **Đai không phát hàng loạt — có bằng chứng mới có đai** | Hồ sơ 4 minh chứng/HS |
+| 5 | **Pin không phát hàng loạt — có bằng chứng mới có Pin** | Hồ sơ 4 minh chứng/HS |
 | 6 | **Mọi buổi học đều được tự chấm GITA-QC** | Phiếu tự đánh giá HLV, QLHV kiểm 20% ngẫu nhiên |
 
 > ⚠️ **Điều chúng ta KHÔNG cam kết** — và nói thẳng điều này với phụ huynh:
@@ -173,7 +173,7 @@ Bốn câu hỏi đào sâu, hỏi theo thứ tự:
 
 | Tình huống | 🎤 Nói thế nào |
 |---|---|
-| **Phụ huynh yêu cầu điều trái nguyên tắc** *(xin nâng đai cho con, xin xem hồ sơ trẻ khác)* | *"Việc này em không làm được ạ, và em nói rõ vì sao: đai của con có giá trị chính vì nó không cấp cho ai chưa đủ bằng chứng. Nếu em phá lệ một lần, cái đai của con mất ý nghĩa. Em xin đề xuất cách khác: ……"* |
+| **Phụ huynh yêu cầu điều trái nguyên tắc** *(xin nâng Cấp Độ cho con, xin xem hồ sơ trẻ khác)* | *"Việc này em không làm được ạ, và em nói rõ vì sao: Cấp Độ của con có giá trị chính vì nó không cấp cho ai chưa đủ bằng chứng. Nếu em phá lệ một lần, cái Pin của con mất ý nghĩa. Em xin đề xuất cách khác: ……"* |
 | **Phụ huynh đặt mục tiêu vượt quá sức con** | *"Em ghi nhận mong muốn của anh/chị. Em xin đề xuất chia làm hai chặng — chặng gần đến tháng 12, chặng xa đến cuối năm. Nếu đặt thẳng đích xa, con dễ bỏ cuộc ở tháng thứ hai."* |
 | **Phụ huynh so sánh con mình với con nhà khác** | *"Em không so sánh các con với nhau ạ — đó là nguyên tắc của chương trình. Nhưng em so sánh **con với chính con của ba tháng trước** được: đây là số liệu."* |
 | **Con muốn dừng học** | Nói chuyện **với con trước**, phụ huynh sau. *"Con cứ nói thật, cô không giận. Điều gì làm con không muốn đến nữa?"* → Nếu vì bị trêu, vì sợ một hoạt động, vì mệt — đều xử lý được. **Không thuyết phục trẻ ở lại trước khi hiểu lý do.** |
@@ -192,7 +192,7 @@ Bốn câu hỏi đào sâu, hỏi theo thứ tự:
 | Số khiếu nại/100 học sinh/tháng | ≤ 1 | ≥ 3 |
 | Tỷ lệ khiếu nại đóng trong 7 ngày | **100%** | < 90% |
 | Khiếu nại lặp cùng một loại | **0** | ≥ 3/quý |
-| Tỷ lệ dự lễ thăng đai của phụ huynh | **≥ 75%** | < 50% |
+| Tỷ lệ dự lễ công nhận Cấp Độ của phụ huynh | **≥ 75%** | < 50% |
 | Tỷ lệ gia hạn năm sau | **≥ 80%** | < 65% |
 | Tỷ lệ học sinh đến từ giới thiệu | **≥ 40%** | < 20% |
 

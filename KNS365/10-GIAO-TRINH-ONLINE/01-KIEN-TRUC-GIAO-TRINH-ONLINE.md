@@ -199,7 +199,7 @@ Tệp media:
 | **Phụ huynh** | Xem tiến độ con · **ký xác nhận Sứ mệnh** · nhận Báo cáo tiến bộ tự động sau mỗi chuyên đề · câu hỏi gợi ý hằng ngày |
 | **Huấn luyện viên** | Chấm rubric · xem số liệu luyện tập của từng HS · **bảng theo dõi lượt phản hồi** · cảnh báo HS chưa hoàn thành · ghi nhận dấu hiệu tài năng |
 | **Quản lý** | Báo cáo KPI theo lớp/khối/trường · tỷ lệ hoàn thành từng phần · tỷ lệ có chữ ký nhân chứng · điểm GITA-QC |
-| **Hệ thống** | Hộ chiếu GITA số (288 ô) · hồ sơ đai · **Talent Portfolio xuất bản được** (PDF + trang chia sẻ) |
+| **Hệ thống** | Hộ chiếu GITA số (288 ô) · hồ sơ Cấp Độ · **Talent Portfolio xuất bản được** (PDF + trang chia sẻ) |
 
 ### F2. Nguyên tắc an toàn & dữ liệu trẻ em
 

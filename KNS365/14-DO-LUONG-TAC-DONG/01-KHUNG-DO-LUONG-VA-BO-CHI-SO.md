@@ -156,7 +156,7 @@ Rubric chỉ có giá trị khi **hai người chấm cùng một bài cho ra k�
 | **19–20** | **Đo giữa** + rà chỉ số 11 | HLV + QLHV | 1 buổi |
 | 21 | **Điều chỉnh bằng dữ liệu** — không bằng cảm giác | QLHV + HLV | Họp 90 phút |
 | **37–38** | **Đo cuối** *(đúng bộ công cụ đo nền)* + chấm chéo 30% | HLV khác + GVCN | 1 buổi |
-| 39 | Hội đồng thăng đai · tổng hợp số liệu | QLHV | — |
+| 39 | Hội đồng công nhận Cấp Độ · tổng hợp số liệu | QLHV | — |
 | 40 | **Báo cáo 3 cấp** *(xem 14/02)* + Phiên Nhìn Lại với phụ huynh | QLHV + HLV | — |
 | **+3 tháng** | **Đo theo dõi bền vững** — chỉ số 16 | QLHV | 20 phút/lớp |
 

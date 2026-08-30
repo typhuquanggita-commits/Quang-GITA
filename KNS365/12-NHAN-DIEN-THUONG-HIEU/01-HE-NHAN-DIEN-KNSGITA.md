@@ -228,22 +228,30 @@
 | **Vươn Cành** *(L6–9)* | 🌳 | `#1C4F9C` | Chuẩn, nhiều số liệu |
 | **Cất Cánh** *(L10–12)* | 🚀 | `#123A76` | Đậm, gọn, ngôn ngữ chuyên nghiệp |
 
-**6 đai GITA**
+**Hệ Pin — 10 Cấp Độ CLB Gen Việt**
 
-| Bậc | Đai | HEX | Bậc | Đai | HEX |
-|:--:|---|:--:|:--:|---|:--:|
-| 1 | ⚪ Trắng – *Người Khởi Hành* | `#FFFFFF` *(viền `#A8AEBC`)* | 4 | 🔵 Xanh Dương – *Người Vươn Cành* | `#1C4F9C` |
-| 2 | 🟡 Vàng – *Người Gieo Hạt* | `#F2C200` | 5 | 🔴 Đỏ – *Người Dẫn Dắt* | `#E1251B` |
-| 3 | 🟢 Xanh Lá – *Người Bén Rễ* | `#2E8B4F` | 6 | 🟨 Kim – *Người Cất Cánh* | `#C9A227` *(hiệu ứng ánh kim)* |
+| Pin | Cấp | HEX | Ghi chú |
+|:--:|:--:|:--:|---|
+| ⚪ **Trắng** | Cấp 1 | `#FFFFFF` *(viền `#A8AEBC`)* | Thành viên làm quen |
+| 🟢 **Xanh Lá** | Cấp 2–3 | `#2E8B4F` | Tích cực → Có mục tiêu |
+| 🔵 **Xanh Dương** | Cấp 4–5 | `#1C4F9C` | Nòng cốt → Hạt giống phục vụ |
+| ⚙️ **Bạc** | Cấp 6–7 | `#9AA5B4` *(hiệu ứng ánh kim bạc)* | Ban chuyên trách → Leader nhóm |
+| 🟡 **Vàng** | Cấp 8–9 | `#F2C200` | Trưởng ban → Thủ lĩnh CLB |
+| 🏅 **Đại sứ** | Cấp 10 | `#C9A227` *(ánh kim vàng + viền Xanh GITA)* | Đại sứ / Thủ lĩnh hệ thống |
 
-**Thang GITA-4** *(mức thành thạo)*
+> 🔴 **Thay hoàn toàn bảng "6 đai" ở các bản trước.** Hệ chính thức là **10 Cấp Độ · hệ Pin** — xem [`../00-KHUNG-NEN-TANG/09-KIEN-TRUC-HOP-NHAT-GITA.md`](../00-KHUNG-NEN-TANG/09-KIEN-TRUC-HOP-NHAT-GITA.md) Phần C.
+> ⚠️ **Lưu ý màu:** trong hệ chính thức, **Vàng là Cấp 8–9 — tầng lãnh đạo vận hành**, không phải bậc thứ hai như bảng cũ ghi nhầm.
 
-| Mức | Tên | HEX | Ký hiệu |
-|:--:|---|:--:|:--:|
-| **KM** | Khởi Mở | `#A8AEBC` | ◔ |
-| **ĐH** | Định Hình | `#4A86C8` | ◑ |
-| **TT** | Thành Thạo | `#1C4F9C` | ◕ |
-| **DD** | Dẫn Dắt | `#F2A900` | ● |
+**Thang sâu 6 bậc & 4 ô chấm trong buổi**
+
+| Ô chấm | Bậc sâu | Tên | HEX | Ký hiệu |
+|:--:|:--:|---|:--:|:--:|
+| **B1** | ① | Nhận thức — *"biết"* | `#A8AEBC` | ◔ |
+| **B2** | ② | Thói quen — *"làm đều"* | `#4A86C8` | ◑ |
+| **B3** | ③④ | Kỹ năng · Tư duy — *"làm giỏi"* | `#1C4F9C` | ◕ |
+| **B4** | ⑤⑥ | Nội lực · Phẩm chất — *"tự cháy"* | `#F2A900` | ● |
+
+> 🔴 **Thay nhãn cũ `KM · ĐH · TT · DD`.** Thang chính thức là **6 bậc: Nhận thức → Thói quen → Kỹ năng → Tư duy → Nội lực → Phẩm chất**; khi chấm trong một buổi gom thành **4 ô B1–B4**.
 
 **Mức bảo mật dữ liệu** *(nhãn góc trên phải mọi tài liệu có dữ liệu học sinh — nối phân hệ 11)*
 
@@ -356,7 +364,7 @@
 
 | Loại | Hình | Quy tắc |
 |---|---|---|
-| **Đai GITA** | Vòng tròn, viền màu đai, giữa là dấu rút gọn `LOGO-08` | 6 màu theo C4 · in trên Hộ chiếu và chứng nhận |
+| **Pin Cấp Độ** | Vòng tròn, viền màu Pin, giữa là dấu rút gọn `LOGO-08` | 6 màu Pin theo C4 · in trên Hộ chiếu và chứng nhận |
 | **Tầng năng lực HS-T1→T5** | Chùm sao 1→5 ngôi, màu Vàng Sao | ⚠️ **Chỉ hiển thị trong hồ sơ cá nhân và với phụ huynh của chính em đó — cấm dán bảng, cấm xếp hạng công khai** *(phân hệ 11, chốt chặn 1)* |
 | **Mạch năng lực** | Ô tròn chữ `M1`…`M8`, màu theo C4 | Dùng làm tab, nhãn gáy |
 | **Con dấu Hộ chiếu** | Dấu tròn 18mm: vành ngoài ghi mã chuyên đề, giữa là `LOGO-08` | Một chuyên đề = một dấu |

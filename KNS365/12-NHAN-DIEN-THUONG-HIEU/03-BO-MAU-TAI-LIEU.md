@@ -269,9 +269,9 @@
  │ ▌                                                           ▌ │   chạy 4 cạnh
  │ ▌            ⟨LOGO-07 khoá dọc⟩                             ▌ │
  │ ▌                                                           ▌ │
- │ ▌            CHỨNG NHẬN THĂNG ĐAI                           ▌ │ ← 28pt Xanh
+ │ ▌            CHỨNG NHẬN CÔNG NHẬN CẤP ĐỘ                           ▌ │ ← 28pt Xanh
  │ ▌            ───────────────────                            ▌ │
- │ ▌                  🔵                                        ▌ │ ← huy hiệu đai
+ │ ▌                  🔵                                        ▌ │ ← huy hiệu Pin
  │ ▌            ĐAI XANH DƯƠNG                                  ▌ │   Ø 40mm
  │ ▌            "Người Vươn Cành"                               ▌ │
  │ ▌                                                           ▌ │
@@ -279,7 +279,7 @@
  │ ▌            NGUYỄN VĂN A                                   ▌ │ ← 24pt
  │ ▌            Lớp 7A · Trường ……………                          ▌ │
  │ ▌                                                           ▌ │
- │ ▌  Đã hoàn thành đủ 4 điều kiện thăng đai, có bằng chứng     ▌ │ ← 11pt
+ │ ▌  Đã hoàn thành đủ 4 điều kiện công nhận Cấp Độ, có bằng chứng     ▌ │ ← 11pt
  │ ▌  lưu trong Hồ sơ Tài năng.                                 ▌ │
  │ ▌                                                           ▌ │
  │ ▌  HLV GITA        GVCN        Đại diện PH     Học viện     ▌ │ ← 4 chữ ký
@@ -387,7 +387,7 @@
 | Phiếu đánh giá / rubric `PDG` `R-` | 06 | **D3** | A4 dọc |
 | Phiếu sứ mệnh `PSM` | 07 | **D3** | A5 ngang |
 | Hộ chiếu GITA | 08 | **D3** | A5, 8 trang |
-| Chứng nhận đai | 09 | D2 | A4 ngang |
+| Chứng nhận Cấp Độ | 09 | D2 | A4 ngang |
 | Báo cáo phụ huynh | 10 | **D3** | A4 dọc |
 | Thẻ bỏ túi HLV | 11 | D2 | A6 ép plastic |
 | Slide lớp học | 12 | D2 | 16:9 |

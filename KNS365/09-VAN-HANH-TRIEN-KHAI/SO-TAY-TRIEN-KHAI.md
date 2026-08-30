@@ -188,7 +188,7 @@
 | **Trước tuần 1** | Tập huấn đầu năm · kiểm kê kit · gặp mặt phụ huynh |
 | **1–2** | **Khai giảng KNSGITA** · Đo nền đầu năm · Lập Squad · Đích năm |
 | **3–18** | 11 chuyên đề (22 buổi) · dự giờ chéo hằng tháng · Học viện Phụ huynh hằng tháng |
-| **19–20** | **Đấu trường Kỹ năng HK1** · Sơ kết · Lễ Thăng Đai đợt 1 · **Sàng lọc Mũi Nhọn** (từ L4) |
+| **19–20** | **Đấu trường Kỹ năng HK1** · Sơ kết · Lễ Công Nhận Cấp Độ đợt 1 · **Sàng lọc Mũi Nhọn** (từ L4) |
 | **21–36** | 13 chuyên đề (26 buổi) · kiểm định độc lập 1 lần |
-| **37–38** | **Ngày Hội Tài Năng** · Đo cuối năm · Tổng kết Hộ chiếu · Trao đai · Bảo vệ hồ sơ (L11–12) |
+| **37–38** | **Ngày Hội Tài Năng** · Đo cuối năm · Tổng kết Hộ chiếu · **Trao Pin & công nhận Cấp Độ** · Bảo vệ hồ sơ (L11–12) |
 | **Sau năm học** | Rà soát KPI · điều chỉnh giáo án · cập nhật nội dung M7, M8 · lập kế hoạch năm sau |

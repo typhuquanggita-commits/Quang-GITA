@@ -69,13 +69,57 @@ Học sinh KNSGITA không có "một mục tiêu". Học sinh có **một hệ m
 
 | Tầng | Tên | Chu kỳ | Câu hỏi | Công cụ |
 |:--:|---|---|---|---|
-| **G5** | **ĐÍCH ĐỜI – Ngôi sao Bắc Đẩu** | 5–20 năm | *"Con người mình muốn trở thành là ai?"* | Tuyên ngôn Bắc Đẩu (North Star Statement) |
+| **G7** | **DI SẢN NGÀN NĂM** | 1000 năm | *"Mình nối tiếp dòng hiền tài Việt nào?"* | Thư viện Di sản · 1000 Gương Nhân Tài |
+| **G6** | **ĐÍCH QUỐC GIA 2045** | 1945–2045 | *"Mình góp gì cho 100 năm độc lập?"* | Đề án Master Gen Việt |
+| **G5** | **BẢN ĐỒ 30 NĂM – Ngôi sao Bắc Đẩu** | 10–40 tuổi | *"Con người mình muốn trở thành là ai?"* | Tuyên ngôn Bắc Đẩu · 4 chặng 30 năm |
 | **G4** | **ĐÍCH NĂM – Cột mốc vàng** | 1 năm học | *"Năm nay mình phải khác đi ở điểm nào?"* | Bản đồ Năm Xuất Sắc |
-| **G3** | **ĐÍCH CHUYÊN ĐỀ** | 2 buổi | *"Kết thúc chuyên đề, mình làm được gì mà nay chưa làm được?"* | Thẻ Đích Chuyên Đề |
-| **G2** | **ĐÍCH BUỔI** | 180' | *"Hôm nay mình phải mang về điều gì?"* | Thẻ Đích Buổi (viết tay, dán bảng nhóm) |
-| **G1** | **ĐÍCH VI MÔ** | 5–20' | *"Trong hoạt động này, làm sao là làm tốt?"* | Tiêu chí thành công công bố trước |
+| **G3** | **ĐÍCH 90 NGÀY** | 90 ngày | *"Chu kỳ này mình đạt chỉ số nào?"* | Lộ trình 90 ngày *(GITA365)* |
+| **G2** | **ĐÍCH CHUYÊN ĐỀ / TUẦN** | 2 buổi · 7 ngày | *"Kết thúc chuyên đề, mình làm được gì mà nay chưa làm được?"* | Thẻ Đích Chuyên Đề · `PSM` |
+| **G1** | **ĐÍCH BUỔI & VI MÔ** | 180' · 5–20' | *"Hôm nay mình phải mang về điều gì?"* | Thẻ Đích Buổi · tiêu chí thành công công bố trước |
 
-**Quy tắc thẳng hàng (Alignment Rule):** HLV phải chỉ ra được đường nối từ G1 lên G5 bất cứ lúc nào. Nếu một hoạt động không phục vụ đích nào ở tầng trên, hoạt động đó bị loại khỏi giáo án.
+> 💡 **Chữ G có tính phân dạng:** cùng một cơ chế đặt đích vận hành ở mọi thang thời gian — từ 5 phút của một hoạt động đến ngàn năm văn hiến. Đây là điều làm GITA khác các mô hình khác.
+
+**Quy tắc thẳng hàng (Alignment Rule):** HLV phải chỉ ra được đường nối từ **G1 lên G5** bất cứ lúc nào. Nếu một hoạt động không phục vụ đích nào ở tầng trên, hoạt động đó bị loại khỏi giáo án. Nối từ **G5 lên G7** là việc của người dẫn dắt hệ thống *(Cấp Độ 9–10)*.
+
+---
+
+### C1-b. THANG SÂU 6 BẬC — chữ GITA nhìn theo chiều dọc
+
+> Bốn chữ **G–I–T–A** mô tả **một vòng huấn luyện**. Sáu bậc dưới đây mô tả **điều đã học ngấm tới tầng nào của con người** sau nhiều vòng.
+
+| Bậc | Tên | Nghĩa | Chữ GITA | Đo bằng |
+|:--:|---|---|:--:|---|
+| **①** | **Nhận thức** | *"biết"* | **G** | Nói lại được đích và vị trí hiện tại của mình |
+| **②** | **Thói quen** | *"làm đều"* | **A** | Chuỗi ngày · `PSM` có chữ ký người chứng |
+| **③** | **Kỹ năng** | *"làm giỏi"* | **T** | Rubric · số liệu T-DRILL |
+| **④** | **Tư duy** | *"hiểu vì sao"* | **T** | Giải thích được nguyên lý, chuyển sang tình huống mới |
+| **⑤** | **Nội lực** | *"tự cháy"* | **I** | Duy trì khi không ai nhắc · vượt khủng hoảng |
+| **⑥** | **Phẩm chất** | *"thành người"* | **A′** | Người thứ ba xác nhận · giữ nguyên tắc khi bất lợi |
+
+> 🎯 **Điều quan trọng nhất phải hiểu đúng: NỘI LỰC NẰM Ở BẬC 5, KHÔNG PHẢI BẬC 1.**
+> Hầu hết chương trình kỹ năng sống mở đầu bằng truyền cảm hứng — và ba ngày sau học sinh trở lại như cũ. Thang này nói điều ngược lại: **nội lực là kết quả, không phải điểm xuất phát.** Đứa trẻ chỉ có nội lực thật sau khi đã biết đích, giữ được thói quen, làm được kỹ năng và hiểu vì sao mình làm được — lúc đó nó **có bằng chứng về chính mình**, và nội lực mọc lên từ đống bằng chứng đó.
+>
+> ⚠️ **Hệ quả vận hành:** HLV **không được** đánh giá học sinh *"thiếu động lực"* ở giai đoạn đầu. Ở bậc ①–②, thiếu nội lực là **đúng lộ trình**. Việc của HLV lúc đó là **cấp bằng chứng**, không phải cấp lời khích lệ.
+
+**Chấm trong buổi — 4 ô:** `B1 Biết` ◔ · `B2 Làm đều` ◑ · `B3 Làm giỏi` ◕ · `B4 Tự cháy` ●
+*(bảng quy đổi đầy đủ 6 bậc ↔ 4 ô ở [`09-KIEN-TRUC-HOP-NHAT-GITA.md`](09-KIEN-TRUC-HOP-NHAT-GITA.md) Phần B3)*
+
+---
+
+### C1-c. BẢY GIÁ TRỊ CỐT LÕI GEN VIỆT — đích của bậc ⑥
+
+**Yêu nước · Trách nhiệm · Chính trực · Kiên trì · Hợp tác · Sáng tạo · Phụng sự**
+
+| Giá trị | Chữ nuôi nó | Giá trị | Chữ nuôi nó |
+|---|:--:|---|:--:|
+| Yêu nước | **G** *(G6–G7)* | Hợp tác | **A** |
+| Chính trực | **A′** | Sáng tạo | **T** |
+| Kiên trì | **A** | Phụng sự | **I → A′** |
+| Trách nhiệm | **A** | | |
+
+> 🎯 **CÂU HỎI PHỦ QUYẾT — hỏi trước mọi hoạt động, mọi chuyên đề, mọi dự án:**
+> *"Cái này có làm mạnh thêm **bản lĩnh và hệ giá trị Gen Việt** không?"*
+> Nếu **không** → loại khỏi giáo án, **bất kể nó vui đến đâu hay hiệu quả kỹ năng đến đâu**. Đây là tiêu chí phủ quyết thứ hai của GITA-QC, ngang hàng với nhóm **A – An toàn**.
 
 ### C2. Chuẩn viết mục tiêu **SMART-E**
 
@@ -368,7 +412,7 @@ Thi đua trong KNSGITA là **thi đua với chính mình trước, với chuẩn
 | **Đấu trường Kỹ năng (Skill Arena)** | Thi đấu nhóm theo chuyên đề (hùng biện, giải cứu, thiết kế, tài chính…) | Cuối mỗi chuyên đề |
 | **Showcase Chuyên Đề** | Trình diễn sản phẩm cuối buổi 2 trước khán giả thật | 2 tuần/lần |
 | **Bảng Vàng Xuất Sắc** | Vinh danh theo **6 phẩm chất hành động**, mỗi tháng đổi tiêu chí | Hằng tháng |
-| **Lễ Thăng Đai GITA** | Trao đai khi đủ bằng chứng năng lực | Cuối học kỳ |
+| **Lễ Công Nhận Cấp Độ GITA** | Trao Pin khi đủ bằng chứng năng lực | Cuối học kỳ |
 | **Ngày Hội Tài Năng KNSGITA** | Liên khối, có phụ huynh & cộng đồng | Cuối năm học |
 
 **4 luật đạo đức của môi trường thi đua:**

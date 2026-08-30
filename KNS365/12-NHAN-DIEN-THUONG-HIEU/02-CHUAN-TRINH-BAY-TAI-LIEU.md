@@ -13,7 +13,7 @@
 | **Phiếu thực hành · Phiếu đánh giá** | A4 | Dọc | 15mm | 15mm | 20mm | 15mm |
 | **Phiếu học sinh lớp 1–2** | A4 | Dọc | 20mm | 20mm | 20mm | 20mm |
 | **Hộ chiếu GITA** | A5 | Dọc | 12mm | 12mm | 15mm | 10mm |
-| **Chứng nhận đai** | A4 | **Ngang** | 20mm | 20mm | 20mm | 20mm |
+| **Chứng nhận Cấp Độ** | A4 | **Ngang** | 20mm | 20mm | 20mm | 20mm |
 | **Slide / bảng chiếu** | 16:9 | Ngang | 40px | 40px | 60px | 60px |
 | **Thẻ bỏ túi HLV** | A6 | Dọc | 8mm | 8mm | 8mm | 8mm |
 
@@ -173,7 +173,7 @@
 | **Giấy nội dung** | Ford 80gsm *(tài liệu HLV)* · 100gsm *(phiếu học sinh, viết bút mực không thấm)* |
 | **Giấy bìa** | Couche mờ 250gsm, cán màng mờ |
 | **Hộ chiếu GITA** | Bìa 300gsm cán mờ · ruột 120gsm · đóng ghim giữa |
-| **Chứng nhận đai** | Giấy mỹ thuật 250gsm · **ép kim** logo và tên đai *(riêng đai Kim)* |
+| **Chứng nhận Cấp Độ** | Giấy mỹ thuật 250gsm · **ép kim** logo và tên Cấp Độ *(riêng Pin Đại sứ)* |
 | **In 2 mặt** | Bắt buộc với tài liệu >8 trang · căn lề trong/ngoài đối xứng |
 | **Bản đen trắng** | Mọi tài liệu phải có **bản đen trắng dùng được** — kiểm tra bằng cách chuyển xám |
 | **Đóng gáy** | Gáy xoắn cho tài liệu HLV *(lật phẳng khi đứng lớp)* · gáy keo cho cẩm nang |

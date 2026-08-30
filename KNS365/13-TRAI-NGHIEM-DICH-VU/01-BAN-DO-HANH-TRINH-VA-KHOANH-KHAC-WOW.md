@@ -86,9 +86,9 @@
 |---|---|
 | **Cảm xúc** | Hồi hộp — đây là lúc phụ huynh "nghiệm thu" |
 | **Nếu làm như bình thường** | Phát giấy khen hàng loạt, ai cũng có |
-| **Thiết kế KNSGITA** | **Đai không phát hàng loạt** — có bằng chứng mới có đai *(4 điều kiện, `04-LO-TRINH-BE-PHONG`)*. Lễ thăng đai: **phụ huynh là người trao đai cho con**, không phải HLV ⭐ **WOW #6** · **Hộ chiếu đóng dấu trước mặt con** ⭐ **WOW #7** · báo cáo mở bằng điều con làm được ⭐ **WOW #8** |
+| **Thiết kế KNSGITA** | **Pin không phát hàng loạt** — có bằng chứng mới có Pin *(4 điều kiện, `04-LO-TRINH-BE-PHONG`)*. Lễ công nhận Cấp Độ: **phụ huynh là người trao Pin cho con**, không phải HLV ⭐ **WOW #6** · **Hộ chiếu đóng dấu trước mặt con** ⭐ **WOW #7** · báo cáo mở bằng điều con làm được ⭐ **WOW #8** |
 | **Chịu trách nhiệm** | HLV + QLHV |
-| **Bằng chứng** | Hồ sơ thăng đai có 4 minh chứng · ảnh khoảnh khắc trao đai |
+| **Bằng chứng** | Hồ sơ công nhận Cấp Độ có 4 minh chứng · ảnh khoảnh khắc trao Pin |
 
 ### GĐ 7 · GIA HẠN / GIỚI THIỆU
 
@@ -157,8 +157,8 @@
 
 | | |
 |---|---|
-| **Khi nào** | Lễ Thăng Đai `TC-A-024` |
-| **Làm gì** | HLV đọc **đúng 4 minh chứng** con đã đạt, rồi **mời phụ huynh lên trao đai**. HLV lùi lại một bước |
+| **Khi nào** | Lễ Công Nhận Cấp Độ `TC-A-024` |
+| **Làm gì** | HLV đọc **đúng 4 minh chứng** con đã đạt, rồi **mời phụ huynh lên trao Pin**. HLV lùi lại một bước |
 | **Vì sao WOW** | Đảo ngược nghi thức thông thường. Người trao là người con muốn được công nhận nhất. **Đây là khoảnh khắc phụ huynh quay video nhiều nhất** |
 | **Chi tiết quan trọng** | Đọc **minh chứng cụ thể**, không đọc lời khen chung. *"Con giữ thói quen dậy sớm 94 ngày liên tiếp"* mạnh hơn mọi mỹ từ |
 
@@ -224,7 +224,7 @@
 | 3 | Trong kỳ | HLV | Chuyên đề nói đầu tiên | 0đ | Kho video có mã đồng ý |
 | 4 | Trong kỳ | HLV | ≥1 lần/tháng/HS | 0đ | **Bảng đếm lượt chạm** |
 | 5 | Ghi danh | QLHV | Bộ Đón Nhập | ~15.000đ | Biên nhận |
-| 6 | Thăng đai | HLV + QLHV | Lễ thăng đai | Chi phí đai | Hồ sơ thăng đai |
+| 6 | Công nhận Cấp Độ | HLV + QLHV | Lễ công nhận Cấp Độ | Chi phí Pin | Hồ sơ công nhận Cấp Độ |
 | 7 | Mỗi chuyên đề | HLV | Cuối buổi 2 | ~0đ | Hộ chiếu |
 | 8 | Mỗi chuyên đề | HLV | ≤48h | 0đ | Hệ thống báo cáo |
 | 9 | Khi có dấu hiệu | HLV | ≤24h | 0đ | Nhật ký cuộc gọi |

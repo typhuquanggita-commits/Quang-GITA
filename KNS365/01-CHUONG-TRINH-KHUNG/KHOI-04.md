@@ -526,7 +526,7 @@
 **Thực hành:** `PTH-K04-M8-03` – Hồ sơ dự án 5 bước · 4 vòng · **L5**
 **Trải nghiệm & Sứ mệnh:** `I-E` dự án phục vụ thực địa · **PSM:** 3 tuần triển khai, người thụ hưởng ký xác nhận
 **Đánh giá:** `PDG-QS-TH`, `PDG-SP`, `PDG-DD-TH`, rubric `R-PHS-04`
-**Bắc cầu học tập:** Kỹ năng dự án; **đưa vào Hồ sơ Tài năng** – bằng chứng đầu tiên cho đai Xanh Lá.
+**Bắc cầu học tập:** Kỹ năng dự án; **đưa vào Hồ sơ Tài năng** – bằng chứng đầu tiên cho **Cấp 3 · Pin Xanh Lá**.
 
 ---
 

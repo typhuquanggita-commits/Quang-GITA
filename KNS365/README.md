@@ -21,7 +21,7 @@
 | Toàn cấp | 576 buổi ≈ **1.728 giờ huấn luyện/học sinh/12 năm** |
 | Mạch năng lực | **8 mạch × 3 chuyên đề/mạch/khối** |
 | Giai đoạn phát triển | 4 giai đoạn: Khởi Mầm → Bén Rễ → Vươn Cành → Cất Cánh |
-| Hệ đai năng lực | 6 đai GITA: Trắng → Vàng → Xanh Lá → Xanh Dương → Đỏ → Kim |
+| Hệ cấp độ năng lực | **10 Cấp Độ CLB Gen Việt** · hệ **Pin**: Trắng → Xanh Lá → Xanh Dương → Bạc → Vàng → Đại sứ |
 | Giáo trình online | **7 phần/chuyên đề** · phiếu KNS **5 lớp chiều sâu** · ~88 phút online + 360 phút trực tiếp |
 
 ---
@@ -102,11 +102,12 @@
 | [01-MO-THUC-HUAN-LUYEN-GITA.md](00-KHUNG-NEN-TANG/01-MO-THUC-HUAN-LUYEN-GITA.md) | Toàn bộ lý thuyết & kỹ thuật vận hành GITA: Goal – Inspirits – Talent – Action/Academy; 5 tầng cài đặt, 12 nguyên tắc, phương trình xuất sắc, 20/80, thói quen thành công, Squad |
 | [02-CHUAN-DOI-SANH-QUOC-TE-VA-BGD.md](00-KHUNG-NEN-TANG/02-CHUAN-DOI-SANH-QUOC-TE-VA-BGD.md) | Đối sánh CT GDPT 2018, TT04/2014, TT27/2020, TT22/2021 với CASEL, OECD 2030, UNESCO LSCE, WHO, P21, IB, ISTE, Cambridge |
 | [03-KHUNG-NANG-LUC-KNS365.md](00-KHUNG-NEN-TANG/03-KHUNG-NANG-LUC-KNS365.md) | 8 mạch năng lực × 40 năng lực thành phần × 4 mức độ thành thạo |
-| [04-LO-TRINH-BE-PHONG-TAI-NANG.md](00-KHUNG-NEN-TANG/04-LO-TRINH-BE-PHONG-TAI-NANG.md) | Lộ trình 12 năm, 4 giai đoạn, 6 đai GITA, Hộ chiếu năng lực, Hồ sơ tài năng |
+| [04-LO-TRINH-BE-PHONG-TAI-NANG.md](00-KHUNG-NEN-TANG/04-LO-TRINH-BE-PHONG-TAI-NANG.md) | Lộ trình 12 năm, 4 giai đoạn, 10 Cấp Độ · hệ Pin, Hộ chiếu năng lực, Hồ sơ tài năng |
 | [05-CHUAN-DAU-RA-THEO-KHOI.md](00-KHUNG-NEN-TANG/05-CHUAN-DAU-RA-THEO-KHOI.md) | Chuẩn đầu ra (Exit Profile) từng khối 1→12 |
 | [06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md](00-KHUNG-NEN-TANG/06-QUY-CHUAN-CHAT-LUONG-GITA-QC.md) | Bộ 49 tiêu chí kiểm định chất lượng một buổi huấn luyện GITA |
 | [07-HE-GEN-VIET.md](00-KHUNG-NEN-TANG/07-HE-GEN-VIET.md) | Kiến trúc hệ GEN VIỆT: 5 trụ, gắn Kỷ nguyên vươn mình, quy chuẩn thành viên, tổ chức TRN–ACT–QLHV–Leader, GITA hoá ba sân |
-| **[08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md](00-KHUNG-NEN-TANG/08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md)** | 🔴 **ƯU TIÊN CAO NHẤT** — đối chiếu với thư mục nguồn "KNS 365" của Học viện *(đọc 30/08/2026)*: những chỗ **KHỚP** và **8 chỗ LỆCH phải sửa** (hệ Pin 10 cấp vs 6 đai · thang 6 bậc vs GITA-4 · 6 nhóm năng lực · Bản Đồ 30 Năm · 5 trụ cột · 7 giá trị cốt lõi · 15 cấu phần còn thiếu · 12 giáo án thật chưa đối chiếu). **Khi mâu thuẫn, nguồn gốc thắng.** |
+| **[08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md](00-KHUNG-NEN-TANG/08-DOI-CHIEU-NGUON-GOC-HOC-VIEN.md)** | 🔴 **ƯU TIÊN CAO NHẤT** — đối chiếu với thư mục nguồn "KNS 365" của Học viện *(đọc 30/08/2026)*: những chỗ **KHỚP** và **8 chỗ LỆCH phải sửa** (hệ Pin 10 cấp vs 10 Cấp Độ · thang 6 bậc vs GITA-4 · 6 nhóm năng lực · Bản Đồ 30 Năm · 5 trụ cột · 7 giá trị cốt lõi · 15 cấu phần còn thiếu · 12 giáo án thật chưa đối chiếu). **Khi mâu thuẫn, nguồn gốc thắng.** |
+| **[09-KIEN-TRUC-HOP-NHAT-GITA.md](00-KHUNG-NEN-TANG/09-KIEN-TRUC-HOP-NHAT-GITA.md)** | ⭐ **BẢN NÂNG CẤP TOÀN DIỆN** — chẩn đoán: 8 chỗ lệch là **một lỗi lặp 8 lần** *(trộn ba trục vào một thang)*. Tách **3 trục**: PHA `G-I-T-A` · **SÂU 6 bậc** *(Nhận thức→Thói quen→Kỹ năng→Tư duy→**Nội lực**→Phẩm chất)* · **VAI 10 Cấp Độ hệ Pin**. Kèm **GOAL STACK 7 tầng** *(tới 1000 năm)*, ánh xạ 3 hệ năng lực, 7 giá trị cốt lõi, bảng quy đổi giữ nguyên 288 chuyên đề & 19 rubric |
 
 ### 📗 01 – CHƯƠNG TRÌNH KHUNG (288 chuyên đề)
 | Tệp | Nội dung |
@@ -167,9 +168,9 @@
 ### 🎨 12 – NHẬN DIỆN THƯƠNG HIỆU TÀI LIỆU **KNSGITA**
 | Tệp | Nội dung |
 |---|---|
-| [01-HE-NHAN-DIEN-KNSGITA.md](12-NHAN-DIEN-THUONG-HIEU/01-HE-NHAN-DIEN-KNSGITA.md) | Kiến trúc thương hiệu · đọc logo theo mô thức GITA · 8 biến thể logo · vùng an toàn · **12 lỗi cấm** · bảng màu lõi + **màu 4 chữ GITA** + màu chức năng (8 mạch · 4 giai đoạn · 6 đai · GITA-4 · D1–D4) · hệ chữ tiếng Việt · hệ biểu tượng · giọng điệu · hệ mã tài liệu |
+| [01-HE-NHAN-DIEN-KNSGITA.md](12-NHAN-DIEN-THUONG-HIEU/01-HE-NHAN-DIEN-KNSGITA.md) | Kiến trúc thương hiệu · đọc logo theo mô thức GITA · 8 biến thể logo · vùng an toàn · **12 lỗi cấm** · bảng màu lõi + **màu 4 chữ GITA** + màu chức năng (8 mạch · 4 giai đoạn · 10 Cấp Độ · GITA-4 · D1–D4) · hệ chữ tiếng Việt · hệ biểu tượng · giọng điệu · hệ mã tài liệu |
 | [02-CHUAN-TRINH-BAY-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/02-CHUAN-TRINH-BAY-TAI-LIEU.md) | Khổ & lề · lưới 6 cột · **gáy GITA 4 màu** · đầu–chân trang · cấp tiêu đề · bảng · vùng học sinh viết · hình ảnh · in ấn · tệp số · **checklist 20 mục trước khi phát hành** |
-| [03-BO-MAU-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/03-BO-MAU-TAI-LIEU.md) | **12 mẫu dựng sẵn**: bìa bộ · bìa giáo án · trang tiến trình · kịch bản · phiếu KNS 5 lớp · rubric · `PSM` · Hộ chiếu GITA · chứng nhận đai · báo cáo phụ huynh · thẻ bỏ túi HLV · slide |
+| [03-BO-MAU-TAI-LIEU.md](12-NHAN-DIEN-THUONG-HIEU/03-BO-MAU-TAI-LIEU.md) | **12 mẫu dựng sẵn**: bìa bộ · bìa giáo án · trang tiến trình · kịch bản · phiếu KNS 5 lớp · rubric · `PSM` · Hộ chiếu GITA · chứng nhận Cấp Độ · báo cáo phụ huynh · thẻ bỏ túi HLV · slide |
 | **[SO-TAY-NHAN-DIEN-KNSGITA.html](12-NHAN-DIEN-THUONG-HIEU/SO-TAY-NHAN-DIEN-KNSGITA.html)** | 🎨 **Sổ tay nhận diện bản trực quan** — mở bằng trình duyệt: xem được màu thật, chữ thật, thẻ pha, hộp chú ý và 3 mẫu tài liệu dựng thu nhỏ |
 
 ### 💛 13 – TRẢI NGHIỆM KHÁCH HÀNG & CHUẨN DỊCH VỤ

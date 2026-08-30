@@ -139,7 +139,7 @@
 | Cờ & biển tên Squad | 12 bộ | |
 | Đai GITA 6 màu | Theo sĩ số | Trắng · Vàng · Xanh Lá · Xanh Dương · Đỏ · Kim |
 | Hộ chiếu GITA (sổ in) | 1/HS/giai đoạn | Sản phẩm nhận diện thương hiệu |
-| Giấy chứng nhận thăng đai | Theo sĩ số | |
+| Giấy chứng nhận công nhận Cấp Độ | Theo sĩ số | |
 | Cup & huy hiệu Đấu trường | 1 bộ | |
 | Trống/chiêng khai mạc | 1 | |
 | Bảng vàng vinh danh (A0) | 1 | ≥3 hạng mục |
@@ -221,7 +221,7 @@
 | **Chi phí hằng năm** | Vật tư tiêu hao | Theo lượt | Giấy, bút, băng dính, trứng, mì… |
 | | In phiếu PTH/PDG/PSM (48 buổi × 30 HS) | Hằng năm | ~3–4 phiếu/HS/buổi |
 | | Hộ chiếu GITA | 1/HS/giai đoạn | Chi phí nhận diện thương hiệu |
-| | Đai & giấy chứng nhận | Theo số HS thăng đai | |
+| | Đai & giấy chứng nhận | Theo số HS công nhận Cấp Độ | |
 | **Chi phí sự kiện** | Đấu trường HK1 | 1 lần/năm | |
 | | Ngày Hội Tài Năng | 1 lần/năm | Có phụ huynh & cộng đồng |
 | | Khách mời & thực địa | 6–10 lần/năm | Xe, phí, quà cảm ơn |

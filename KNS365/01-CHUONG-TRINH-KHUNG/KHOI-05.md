@@ -379,7 +379,7 @@
 **Thực hành:** `PTH-K05-M6-02` – Phiếu 4 bước Feynman + nhật ký kèm cặp · 4 vòng · **L5**
 **Trải nghiệm & Sứ mệnh:** `I-A` lớp học đảo ngược · **PSM:** dạy lại ≥3 khái niệm, người nghe ký xác nhận
 **Đánh giá:** `PDG-QS-TH`, `PDG-SP`, rubric `R-HOC-16`
-**Bắc cầu học tập:** **Kỹ thuật học hiệu quả nhất**; đồng thời là **nghĩa vụ kèm cặp** để thăng đai.
+**Bắc cầu học tập:** **Kỹ thuật học hiệu quả nhất**; đồng thời là **nghĩa vụ kèm cặp** để công nhận Cấp Độ.
 
 ---
 

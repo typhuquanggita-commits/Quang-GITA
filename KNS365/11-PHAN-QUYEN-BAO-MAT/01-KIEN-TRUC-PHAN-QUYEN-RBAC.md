@@ -102,7 +102,7 @@
 | Đổi mục tiêu / KPI / cấu trúc chu kỳ | 🔒 | 🔒 | 🔶 | 🔒 | 🔶 | 🔒 | 🔒 | ✅ | 🔒 | 🔒 | 🔒 | 🔒 |
 | **Phát hành** báo cáo 90 ngày | 🔒 | 🔒 | 🔒 | 🔒 | 🔶 | 🔒 | 🔒 | ✅ | 🔒 | 🔒 | 🔒 | 🔒 |
 | Xem báo cáo **sau khi phát hành** | 👁 | 👁 | 👁 | 🔒 | 👁 | 👁 | 🔒 | 👁 | 🔒 | 🔒 | 🔒 | 📊 |
-| Phát hành Hộ chiếu GITA / chứng nhận đai | 🔒 | 🔒 | 🔶 | 🔒 | 🔶 | 🔒 | 🔒 | ✅ | 🔒 | 🔒 | 🔒 | 🔒 |
+| Phát hành Hộ chiếu GITA / chứng nhận Cấp Độ | 🔒 | 🔒 | 🔶 | 🔒 | 🔶 | 🔒 | 🔒 | ✅ | 🔒 | 🔒 | 🔒 | 🔒 |
 
 ### C3. Dữ liệu nhạy cảm & bảo vệ trẻ em ← **vùng nghiêm ngặt nhất**
 
@@ -151,7 +151,7 @@
 | **ADM-HT + bất kỳ vai đọc dữ liệu HS** | Quyền kỹ thuật + quyền nghiệp vụ = quyền tuyệt đối, không ai kiểm soát được | Không có |
 | **Người chấm + người phê duyệt điểm** | Chống sửa điểm khép kín | Không có |
 
-**Quy tắc 4 mắt** *(bắt buộc với 6 hành động)*: cấp/thu hồi vai · xoá dữ liệu HS · break-glass · đóng ca bảo vệ trẻ em · phát hành chứng nhận đai · xuất dữ liệu hàng loạt.
+**Quy tắc 4 mắt** *(bắt buộc với 6 hành động)*: cấp/thu hồi vai · xoá dữ liệu HS · break-glass · đóng ca bảo vệ trẻ em · phát hành chứng nhận Cấp Độ · xuất dữ liệu hàng loạt.
 
 ---
 

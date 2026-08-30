@@ -40,7 +40,7 @@
 | **D3** | Sửa điểm/rubric **đã chốt** · sửa bài đã khoá | QLHV + TRN chấm gốc |
 | **D3** | Xuất dữ liệu hàng loạt · tải file có định danh | GDĐH + SADM |
 | **D3** | Xoá dữ liệu học sinh | GDĐH + SADM *(4 mắt)* |
-| **Vận hành** | Kích hoạt lộ trình · phát hành báo cáo · phát hành chứng nhận đai | Lưu vết, không cảnh báo |
+| **Vận hành** | Kích hoạt lộ trình · phát hành báo cáo · phát hành chứng nhận Cấp Độ | Lưu vết, không cảnh báo |
 | **Vận hành** | Gia hạn nhiệm vụ *(lưu **cả hạn cũ và hạn mới** — chuẩn GITA365)* | Lưu vết |
 | **Hệ thống** | **Break-glass** *(mở phiên, hết phiên)* | **GDĐH + TV trưởng + SADM — tức thì** |
 | **Hệ thống** | Phục hồi sao lưu · thay đổi cấu hình bảo mật · tích hợp bên thứ ba | GDĐH |
@@ -55,7 +55,7 @@
 | 1 | Một người xem **nhiều hồ sơ HS ngoài phân công** trong thời gian ngắn | Dò quét dữ liệu | Khoá tạm + QLHV xác minh trong 24h |
 | 2 | Truy cập D4 **ngoài giờ làm việc** mà không có ca đang mở | Không có lý do nghiệp vụ | TV trưởng xác minh ngay |
 | 3 | **Break-glass** ≥2 lần trong 30 ngày bởi cùng một người | Lạm dụng cơ chế khẩn cấp | GDĐH rà soát toàn bộ |
-| 4 | Sửa điểm đã chốt **sát thời điểm phát hành** báo cáo/đai | Can thiệp kết quả | QLHV + TRN gốc đối chiếu |
+| 4 | Sửa điểm đã chốt **sát thời điểm phát hành** báo cáo / công nhận Cấp Độ | Can thiệp kết quả | QLHV + TRN gốc đối chiếu |
 | 5 | Một tài khoản đăng nhập từ **nhiều nơi cùng lúc** | Chia sẻ tài khoản hoặc bị chiếm | Huỷ toàn bộ phiên · đổi mật khẩu |
 | 6 | **Xuất dữ liệu** lớn bất thường so với thói quen của vai đó | Rò rỉ hàng loạt | Chặn trước, hỏi sau |
 | 7 | Nhân sự **đã nghỉ việc** còn thao tác | Thu hồi quyền sót | Khoá ngay + rà soát toàn danh sách |

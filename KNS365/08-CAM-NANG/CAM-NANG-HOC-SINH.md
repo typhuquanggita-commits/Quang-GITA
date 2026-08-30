@@ -53,7 +53,7 @@ Mỗi tuần trả lời 5 dòng:
 > **Sự thật khó chịu:** Người giỏi không phải người làm nhiều nhất. Là người **biết bỏ đúng thứ cần bỏ**.
 
 ### 2.6. Hộ chiếu GITA
-Cuốn sổ đi cùng em suốt 12 năm: 288 ô chuyên đề · trang đích · nhật ký bằng chứng · bản đồ điểm mạnh · bảng chuỗi ngày · sổ phụng sự · trang thăng đai.
+Cuốn sổ đi cùng em suốt 12 năm: 288 ô chuyên đề · trang đích · nhật ký bằng chứng · bản đồ điểm mạnh · bảng chuỗi ngày · sổ phụng sự · trang công nhận Cấp Độ.
 **Giữ nó như giữ một tài sản.** Cuối lớp 12, nó trở thành **Hồ sơ Tài năng** của em.
 
 ---
@@ -141,7 +141,7 @@ Bị từ chối, thi trượt, nói vấp trước cả lớp — cảm giác r
 Không hỏi vì sợ bị coi là dốt là cách chắc chắn nhất để **thật sự** không hiểu. Câu hỏi của em có thể là câu 10 bạn khác cũng đang thắc mắc.
 
 ### 6.7. Em có nghĩa vụ kèm cặp người sau em.
-Ở KNSGITA, càng lên đai cao thì nghĩa vụ này càng lớn. Không phải vì hình thức — mà vì **dạy lại là cách học sâu nhất**, và vì em đã từng được người khác nâng đỡ.
+Ở KNSGITA, càng lên Cấp Độ cao thì nghĩa vụ này càng lớn. Không phải vì hình thức — mà vì **dạy lại là cách học sâu nhất**, và vì em đã từng được người khác nâng đỡ.
 
 ---
 

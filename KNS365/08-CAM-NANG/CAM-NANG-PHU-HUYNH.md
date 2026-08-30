@@ -140,7 +140,7 @@ Cán bộ tâm lý học đường: ………… · Huấn luyện viên GITA c�
 | **Hằng tuần** | 15 phút cùng con rà kế hoạch tuần · ký Phiếu Sứ Mệnh |
 | **Mỗi chuyên đề (2 tuần)** | Đọc Báo cáo tiến bộ · làm 1 việc gợi ý trong mục "Gia đình đồng hành" |
 | **Hằng tháng** | Dự **Học viện Phụ huynh** (1 buổi) |
-| **Mỗi học kỳ** | Dự Đấu trường Kỹ năng / Lễ Thăng Đai |
+| **Mỗi học kỳ** | Dự Đấu trường Kỹ năng / Lễ Công Nhận Cấp Độ |
 | **Cuối năm** | Dự **Ngày Hội Tài Năng**; cùng con xem lại Hộ chiếu GITA |
 
 ---

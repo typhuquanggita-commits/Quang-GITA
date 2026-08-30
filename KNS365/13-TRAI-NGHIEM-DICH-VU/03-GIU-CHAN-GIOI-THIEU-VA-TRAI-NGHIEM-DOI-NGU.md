@@ -15,7 +15,7 @@
 | 1 | **Vắng 2 buổi liên tiếp** không báo trước | 3 | Mất nhịp là bước đầu của rời bỏ |
 | 2 | **`PSM` không có chữ ký 3 tuần liền** | 3 | Gia đình đã ngừng tham gia — phần chuyển giao đứt |
 | 3 | **Không mở báo cáo** 2 kỳ liên tiếp *(nếu nền tảng đo được)* | 2 | Mất quan tâm |
-| 4 | **Không dự lễ thăng đai / Showcase** | 2 | Bỏ qua khoảnh khắc gắn kết mạnh nhất |
+| 4 | **Không dự lễ công nhận Cấp Độ / Showcase** | 2 | Bỏ qua khoảnh khắc gắn kết mạnh nhất |
 | 5 | **Phụ huynh chuyển từ hỏi han sang im lặng hoàn toàn** | 3 | Im lặng nguy hiểm hơn phàn nàn |
 | 6 | Học sinh **nói không muốn đi học** | 4 | Trẻ luôn là người biết trước |
 | 7 | Có **một khiếu nại chưa được đóng vòng** | 4 | Khiếu nại không đóng = rời bỏ đã quyết |
@@ -65,10 +65,10 @@
 
 | # | Cơ chế | Cách làm |
 |:--:|---|---|
-| **1** | **Cho phụ huynh thứ đáng khoe** | Video 45 giây, ảnh Thẻ Đích, khoảnh khắc trao đai — **phụ huynh tự đăng, tự kể**. Đây là kênh giới thiệu mạnh nhất và hoàn toàn tự nhiên |
+| **1** | **Cho phụ huynh thứ đáng khoe** | Video 45 giây, ảnh Thẻ Đích, khoảnh khắc trao Pin — **phụ huynh tự đăng, tự kể**. Đây là kênh giới thiệu mạnh nhất và hoàn toàn tự nhiên |
 | **2** | **Mở cửa cho người ngoài xem thật** | Mỗi kỳ 1 **Buổi Mở** — phụ huynh dẫn theo 1 gia đình bạn đến dự nguyên buổi. Không thuyết trình, chỉ ngồi xem |
 | **3** | **Ghi nhận bằng giá trị, không bằng tiền** | Người giới thiệu được: mời làm khách mời chia sẻ ở buổi định hướng · ưu tiên chọn lịch học · một buổi tư vấn 1-1 chuyên sâu với HLV về con mình |
-| **4** | **Nhờ đúng lúc** | Thời điểm hỏi tốt nhất là **ngay sau một khoảnh khắc WOW** — sau lễ thăng đai, sau Ngày Hội Tác Động — chứ không phải khi đến kỳ tuyển sinh |
+| **4** | **Nhờ đúng lúc** | Thời điểm hỏi tốt nhất là **ngay sau một khoảnh khắc WOW** — sau lễ công nhận Cấp Độ, sau Ngày Hội Tác Động — chứ không phải khi đến kỳ tuyển sinh |
 
 > 🎤 **Câu nhờ giới thiệu đúng cách:** *"Nếu anh/chị thấy chương trình này hợp với con nhà mình, em xin phép nhờ một việc: khi nào có người bạn đang băn khoăn giống anh/chị hồi tháng 9, anh/chị **kể lại đúng những gì mình thấy** — kể cả phần chưa tốt. Em cần người phù hợp, không cần đông."*
 

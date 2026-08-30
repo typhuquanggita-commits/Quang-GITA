@@ -118,7 +118,7 @@ HLV nói **≤30%** · HS thực hành **≥40%** · còn lại tương tác hai
 | **HS hỏi câu bạn không biết** | *"Cô chưa biết. Cô sẽ tìm và trả lời em buổi sau."* — và **thực sự trả lời** |
 | **HS chia sẻ chuyện cá nhân nặng** | Ghi nhận, **không đào sâu trước lớp**. Gặp riêng sau buổi. Nếu có dấu hiệu nguy cơ → chuyển ngay theo Mục 7 |
 | **Phụ huynh không ký Phiếu Sứ Mệnh** | Gọi điện trực tiếp giải thích vai trò nhân chứng. Nếu vẫn không được → đổi nhân chứng sang GVCN/anh chị |
-| **HS không đủ điều kiện thăng đai** | Công bố rõ **thiếu điều kiện nào** và lộ trình bổ sung. Không trao đai vì tình cảm |
+| **HS không đủ điều kiện công nhận Cấp Độ** | Công bố rõ **thiếu điều kiện nào** và lộ trình bổ sung. Không trao Pin vì tình cảm |
 
 ---
 

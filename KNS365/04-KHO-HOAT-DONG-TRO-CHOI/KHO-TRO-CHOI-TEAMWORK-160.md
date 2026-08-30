@@ -243,7 +243,7 @@
 | TC-A-021 | Lễ Bàn Giao Di Sản | 🟣 | 30 | Chuyển giao A4 | Có tài liệu vận hành |
 | TC-A-022 | Hội Đồng Bảo Vệ | 🔵🟣 | 45 | Bảo vệ dự án/hồ sơ | Khách mời ngoài trường |
 | TC-A-023 | Ngày Hội Tài Năng | 🟢🔵🟣 | 180 | Sự kiện liên khối | Có phụ huynh & cộng đồng |
-| TC-A-024 | Lễ Thăng Đai GITA | 🟢🔵🟣 | 60 | Nghi thức ghi nhận | Hội đồng 3 bên |
+| TC-A-024 | Lễ Công Nhận Cấp Độ GITA | 🟢🔵🟣 | 60 | Nghi thức ghi nhận | Hội đồng 3 bên |
 | TC-A-025 | Lễ Ký Cam Kết Phụng Sự | 🟣 | 30 | Khép vòng 12 năm | Chỉ dùng ở K12 |
 
 ---
@@ -327,7 +327,7 @@
 ---
 
 ### `TC-A-024` · LỄ THĂNG ĐAI GITA
-**Tuổi:** 🟢🔵🟣 · **Thời lượng:** 60 phút · **Dụng cụ:** đai, Hộ chiếu GITA, backdrop, giấy chứng nhận
+**Tuổi:** 🟢🔵🟣 · **Thời lượng:** 60 phút · **Dụng cụ:** Pin Cấp Độ, Hộ chiếu GITA, backdrop, giấy chứng nhận
 
 **Mục tiêu GITA:** Pha **A/Academy** – nghi thức ghi nhận có sức nặng.
 
@@ -335,9 +335,9 @@
 | Phút | Nội dung |
 |:--:|---|
 | 00–10 | Ổn định · chiếu video hành trình của khối |
-| 10–20 | Công bố **4 điều kiện thăng đai** và cách hội đồng đã kiểm chứng bằng chứng |
-| 20–45 | **Trao đai từng em**: HLV đọc 1 câu về bằng chứng cụ thể của em đó (không đọc chung chung) |
+| 10–20 | Công bố **4 điều kiện công nhận Cấp Độ** và cách hội đồng đã kiểm chứng bằng chứng |
+| 20–45 | **Trao Pin từng em**: HLV đọc 1 câu về bằng chứng cụ thể của em đó (không đọc chung chung) |
 | 45–55 | Đại diện HS phát biểu · đại diện phụ huynh phát biểu |
-| 55–60 | Công bố **đích của bậc đai tiếp theo** – nghi thức Nâng Đích |
+| 55–60 | Công bố **đích của Cấp Độ tiếp theo** – nghi thức Nâng Đích |
 
-**⚠️ Nguyên tắc:** Không trao đai cho HS chưa đủ bằng chứng, dù vì lý do tình cảm. **Đai mất giá trị nếu ai cũng có.** Thay vào đó, công bố công khai HS đó còn thiếu điều kiện nào và lộ trình bổ sung.
+**⚠️ Nguyên tắc:** Không trao Pin cho HS chưa đủ bằng chứng, dù vì lý do tình cảm. **Đai mất giá trị nếu ai cũng có.** Thay vào đó, công bố công khai HS đó còn thiếu điều kiện nào và lộ trình bổ sung.
