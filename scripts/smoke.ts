@@ -276,6 +276,15 @@ console.log('ma trận đề:', BLUEPRINTS.length, '| ma trận đã có đề m
     }
   }
   if (!searchFormulas('dinh li cosin').length) { console.error('TÌM KIẾM không dấu của sổ tay hỏng'); bad++; }
+  /* Mỗi chuyên đề phải được ít nhất một nhóm công thức trỏ tới, để trang chuyên đề
+     nào cũng có phần tra cứu đi kèm. */
+  const linked = new Set(FORMULA_GROUPS.flatMap((g) => g.topicIds));
+  const noFormula = TOPICS.filter((t) => !linked.has(t.id));
+  if (noFormula.length) {
+    console.error('CHUYÊN ĐỀ chưa có nhóm công thức nào trỏ tới:', noFormula.map((t) => t.id).join(', '));
+    bad += noFormula.length;
+  }
+  console.log('chuyên đề chưa có nhóm công thức:', noFormula.length);
   const fs = formulaStats();
   console.log('sổ tay công thức:', fs.items, 'công thức /', fs.groups, 'nhóm | phải thuộc:', fs.starred, '| có cảnh báo bẫy:', fs.withTrap);
 }

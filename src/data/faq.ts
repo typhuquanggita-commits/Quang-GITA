@@ -25,7 +25,7 @@ export const FAQS: FaqItem[] = [
   {
     page: 'home',
     q: 'MATH365 là gì?',
-    a: 'MATH365 là nền tảng luyện Toán năm luồng của GITA365: Toán thi vào lớp 6 trường THCS chất lượng cao, Toán chuyên thi vào lớp 10 chuyên, Toán vào lớp 10 mục tiêu 9–10 điểm, Toán THPT lớp 10–12 hướng tới trên 9 điểm thi đại học, và Toán chính khoá lớp 6 đến 12 với mục tiêu 9–10 điểm kiểm tra và Top 1 lớp. Hệ thống gồm 3.000 phiếu luyện theo chuyên đề, 700 đề luyện có chấm điểm tự động, 10 đề thi thử trọn vẹn có lời giải và barem, 30 đề cương ôn tập theo kỳ, 285 công thức tra cứu, cùng một lộ trình cá nhân hoá sinh ra từ chính dữ liệu làm bài của người học.',
+    a: 'MATH365 là nền tảng luyện Toán năm luồng của GITA365: Toán thi vào lớp 6 trường THCS chất lượng cao, Toán chuyên thi vào lớp 10 chuyên, Toán vào lớp 10 mục tiêu 9–10 điểm, Toán THPT lớp 10–12 hướng tới trên 9 điểm thi đại học, và Toán chính khoá lớp 6 đến 12 với mục tiêu 9–10 điểm kiểm tra và Top 1 lớp. Hệ thống gồm 3.000 phiếu luyện theo chuyên đề, 700 đề luyện có chấm điểm tự động, 10 đề thi thử trọn vẹn có lời giải và barem, 30 đề cương ôn tập theo kỳ, 320 công thức tra cứu, cùng một lộ trình cá nhân hoá sinh ra từ chính dữ liệu làm bài của người học.',
   },
   {
     page: 'home',

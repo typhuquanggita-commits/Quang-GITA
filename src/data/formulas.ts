@@ -187,7 +187,7 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
     strand: 'bat-dang-thuc',
     grade: 'diem-10',
     tracks: ['thpt', 'chuyen', 'chinh-khoa'],
-    topicIds: ['ds-viete', 'hh-duong-tron-co-ban', 'bdt-co-ban', 'ds-can-thuc'],
+    topicIds: ['ds-viete', 'hh-duong-tron-co-ban', 'bdt-co-ban', 'ds-can-thuc', 'hh-he-thuc-luong', 'ds-viete-khong-doi-xung', 'tt-cuc-tri-thuc-te', 'hh-cuc-tri-co-dinh'],
     intro:
       'Ở đề vào 10 và đề kiểm tra lớp 9, khoảng cách giữa 9,0 và 10 gần như luôn nằm ở đúng một nhóm nhỏ: câu bất đẳng thức cuối đề, ý cuối bài hình học, và câu hỏi phụ của bài rút gọn. Đây là danh sách tối thiểu cho nhóm đó.',
     items: [
@@ -208,7 +208,7 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
     strand: 'giai-tich',
     grade: 'diem-10',
     tracks: ['thpt-qg', 'chinh-khoa'],
-    topicIds: ['q12-khao-sat-ham-so', 'q12-nguyen-ham-tich-phan', 'q12-oxyz', 'q12-xac-suat-co-dieu-kien'],
+    topicIds: ['q12-khao-sat-ham-so', 'q12-nguyen-ham-tich-phan', 'q12-oxyz', 'q12-xac-suat-co-dieu-kien', 'q12-ky-nang-de-moi'],
     intro:
       'Ở đề tốt nghiệp và đề kiểm tra lớp 10 – 12, phần trả lời ngắn và nhóm câu vận dụng cao là chỗ tách 9,0 khỏi 10. Đây là danh sách tối thiểu cho nhóm đó — không phải toàn bộ công thức, mà là những công thức có tần suất xuất hiện cao nhất ở đúng nhóm câu này.',
     items: [
@@ -224,6 +224,90 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
       { name: 'Xác suất toàn phần và công thức Bayes', expr: 'P(B) = ΣP(Aᵢ)P(B|Aᵢ);  P(Aᵢ|B) = P(Aᵢ)P(B|Aᵢ)/P(B)', use: 'Câu xác suất có điều kiện, thường ra ở phần đúng/sai.', trap: 'Nhầm P(A|B) với P(B|A).', star: true },
       { name: 'Phương sai mẫu ghép nhóm', expr: 's² = Σfᵢxᵢ²/n − x̄², với xᵢ là TRUNG ĐIỂM nhóm', use: 'Câu thống kê của chương trình 2018.', trap: 'Dùng đầu mút nhóm thay vì trung điểm.', star: true },
       { name: 'Quy tắc kiểm tra chéo cho phần trả lời ngắn', expr: 'Mọi đáp số phải được tính lại bằng một cách thứ hai trước khi điền', use: 'Phần III đề tốt nghiệp — không có phương án để loại trừ, sai là mất trọn điểm.', star: true },
+    ],
+  },
+  /* ==================== QUY TRÌNH VÀ MÔ HÌNH ==================== */
+  {
+    id: 'f-loi-van',
+    name: 'Mô hình giải toán có lời văn — bốn khuôn quen thuộc',
+    strand: 'thuc-te',
+    grade: 'thcs',
+    tracks: ['thpt', 'chuyen', 'chinh-khoa', 'lop6'],
+    topicIds: ['ds-toan-loi-van', 'ck8-pt-ham-so', 'l6-doc-hieu-du-lieu', 'ck6-phan-so'],
+    intro:
+      'Toán có lời văn không có "công thức" theo nghĩa thông thường, nhưng có bốn khuôn mô hình hoá lặp đi lặp lại từ tiểu học tới lớp 12. Nhận ra khuôn nào là xong nửa bài; phần còn lại chỉ là tính toán.',
+    items: [
+      { name: 'Khuôn chuyển động', expr: 's = v × t; ngược chiều cộng vận tốc, cùng chiều trừ vận tốc; xuôi dòng = thực + dòng, ngược dòng = thực − dòng', use: 'Bài có xe, tàu, ca nô, người đi bộ.', trap: 'Không đổi mọi đơn vị thời gian về cùng một hệ trước khi tính.', star: true },
+      { name: 'Khuôn năng suất', expr: 'Năng suất một đơn vị thời gian = 1 : tổng thời gian; làm chung thì cộng năng suất', use: 'Bài hai tổ làm chung, hai vòi cùng chảy.', trap: 'Đặt ẩn là năng suất rồi quên quay lại tìm thời gian.', star: true },
+      { name: 'Khuôn tỉ lệ', expr: 'Tỉ lệ thuận: thương không đổi. Tỉ lệ nghịch: tích không đổi', use: 'Bài số công nhân – số ngày, số máy – sản lượng.', trap: 'Dùng tỉ lệ thuận cho bài tỉ lệ nghịch — sai ngay từ mô hình.', star: true },
+      { name: 'Khuôn phần trăm nhiều bước', expr: 'Giá cuối = gốc × (1 ± a/100) × (1 ± b/100), KHÔNG cộng trừ phần trăm', use: 'Bài tăng giá rồi giảm giá, lãi kép.', trap: 'Cộng trừ trực tiếp hai số phần trăm tính trên hai mốc khác nhau.', star: true },
+      { name: 'Quy trình đặt ẩn', expr: 'Đặt ẩn → ghi ĐƠN VỊ → ghi ĐIỀU KIỆN → biểu diễn các đại lượng còn lại theo ẩn → lập phương trình', use: 'Mọi bài giải bằng cách lập phương trình hoặc hệ.', trap: 'Đặt ẩn không kèm điều kiện nên nhận nghiệm vô lý (thời gian âm, số người lẻ).', star: true },
+      { name: 'Bảng biểu diễn đại lượng', expr: 'Kẻ bảng: mỗi hàng một đối tượng, mỗi cột một đại lượng (quãng đường, vận tốc, thời gian)', use: 'Bài có từ hai đối tượng trở lên.', star: true },
+      { name: 'Đối chiếu và kết luận', expr: 'Giải xong → đối chiếu điều kiện → loại nghiệm vô lý → trả lời đúng đại lượng đề hỏi kèm đơn vị', use: 'Bước cuối bắt buộc của mọi bài lời văn; barem có mốc điểm riêng cho bước này.', trap: 'Tìm được kích thước rồi trả lời luôn, trong khi đề hỏi chi phí hoặc diện tích.', star: true },
+    ],
+  },
+  {
+    id: 'f-thong-ke-thcs',
+    name: 'Thống kê và xác suất — tiểu học đến THCS',
+    strand: 'xac-suat',
+    grade: 'thcs',
+    tracks: ['thpt', 'chuyen', 'chinh-khoa', 'lop6'],
+    topicIds: ['tt-thong-ke-xac-suat', 'ck6-du-lieu-xac-suat', 'ck7-thong-ke-xac-suat', 'ck8-hinh-chop-xac-suat', 'l6-doc-hieu-du-lieu'],
+    intro:
+      'Mảng mới của Chương trình GDPT 2018, có mặt ở mọi khối từ lớp 6 tới lớp 9 và luôn thuộc nhóm câu lấy điểm — với điều kiện đọc bảng cẩn thận và không lẫn hai loại xác suất.',
+    items: [
+      { name: 'Số trung bình cộng', expr: 'Tổng các giá trị : số các giá trị', use: 'Bài đọc bảng số liệu.', trap: 'Chia sai số phần vì đếm sót một cột.', star: true },
+      { name: 'Trung vị', expr: 'Sắp xếp tăng dần trước; n lẻ lấy giá trị giữa, n chẵn lấy trung bình hai giá trị giữa', use: 'Mẫu có giá trị bất thường làm lệch số trung bình.', trap: 'Tính trung vị mà quên sắp xếp mẫu — lỗi phổ biến nhất.', star: true },
+      { name: 'Mốt', expr: 'Giá trị có tần số lớn nhất', use: 'Bài hỏi giá trị xuất hiện nhiều nhất.', star: true },
+      { name: 'Tần số tương đối', expr: 'Tần số của một giá trị : cỡ mẫu, thường viết dưới dạng phần trăm', use: 'Bài lập bảng tần số tương đối, vẽ biểu đồ hình quạt.', star: true },
+      { name: 'Kiểm tra bảng số liệu', expr: 'Tổng các tần số phải bằng cỡ mẫu; tổng các phần của biểu đồ hình quạt phải bằng 100%', use: 'Bước đầu tiên trước khi tính bất kỳ thứ gì.', trap: 'Bỏ qua bước này nên không phát hiện mình đọc sót một hàng.', star: true },
+      { name: 'Xác suất thực nghiệm', expr: 'Số lần sự kiện xảy ra : tổng số lần thực hiện', use: 'Bài gieo xúc xắc, tung đồng xu có số liệu thực tế.', trap: 'Lẫn với xác suất lý thuyết; hai giá trị này thường khác nhau.', star: true },
+      { name: 'Xác suất của biến cố đồng khả năng', expr: 'Số kết quả thuận lợi : tổng số kết quả', condition: 'Các kết quả có khả năng xảy ra như nhau', use: 'Bài rút thẻ, chọn ngẫu nhiên một học sinh.', star: true },
+      { name: 'Biến cố đối', expr: 'P(biến cố đối) = 1 − P(biến cố)', use: 'Bài có cụm "ít nhất một", "không phải".', trap: 'Mô tả sai biến cố đối: đối của "ít nhất một" là "không có cái nào".', star: true },
+      { name: 'Khoảng giá trị hợp lý', expr: '0 ≤ P ≤ 1; số trung bình nằm giữa giá trị nhỏ nhất và lớn nhất', use: 'Dùng để tự kiểm tra kết quả trước khi ghi đáp số.', star: true },
+    ],
+  },
+  {
+    id: 'f-menh-de',
+    name: 'Mệnh đề, tập hợp và ký hiệu toán học',
+    strand: 'dai-so',
+    grade: 10,
+    tracks: ['thpt-qg', 'chinh-khoa'],
+    topicIds: ['q10-menh-de-tap-hop'],
+    intro:
+      'Chương mở đầu lớp 10 và là ngôn ngữ dùng suốt ba năm THPT. Không nắm chắc phần này thì sai ngay từ bước đọc đề, trước cả khi tính toán.',
+    items: [
+      { name: 'Phủ định mệnh đề chứa lượng từ', expr: 'Phủ định của "∀x, P(x)" là "∃x, ¬P(x)"; phủ định của "∃x, P(x)" là "∀x, ¬P(x)"', use: 'Câu hỏi "viết mệnh đề phủ định".', trap: 'Đổi lượng từ mà quên phủ định phần kết luận, hoặc ngược lại.', star: true },
+      { name: 'Phủ định các quan hệ', expr: 'Phủ định của > là ≤; của = là ≠; của "chia hết" là "không chia hết"', use: 'Đi kèm bước đổi lượng từ.', star: true },
+      { name: 'Điều kiện cần và đủ', expr: 'P ⟹ Q: P là điều kiện đủ để có Q, Q là điều kiện cần để có P', use: 'Câu hỏi về mối quan hệ giữa hai mệnh đề.', trap: 'Nói ngược cần với đủ.', star: true },
+      { name: 'Các phép toán trên tập hợp', expr: 'A ∩ B (thuộc cả hai); A ∪ B (thuộc ít nhất một); A \\ B (thuộc A, không thuộc B)', use: 'Bài giao, hợp, hiệu của các khoảng số.', star: true },
+      { name: 'Các tập con của ℝ', expr: '(a; b) không lấy hai đầu; [a; b] lấy cả hai; [a; b) lấy đầu trái', use: 'Viết tập nghiệm, tập xác định.', trap: 'Sai ở đầu mút — chỗ mất điểm nhiều nhất của cả chương.', star: true },
+      { name: 'Phần bù', expr: 'C_A B = A \\ B khi B ⊂ A', use: 'Bài tìm phần bù trong ℝ.', star: true },
+      { name: 'Quy tắc vẽ trục số', expr: 'Tô hai tập bằng hai nét khác nhau rồi ĐỌC kết quả từ hình, không suy luận trong đầu', use: 'Mọi bài giao hợp khoảng — cách chắc chắn nhất để không sai đầu mút.', star: true },
+    ],
+  },
+  {
+    id: 'f-trinh-bay',
+    name: 'Quy tắc trình bày, ăn điểm barem và chiến thuật phòng thi',
+    strand: 'thuc-te',
+    grade: 'diem-10',
+    tracks: ['thpt', 'chuyen', 'thpt-qg', 'chinh-khoa', 'lop6'],
+    topicIds: ['ky-nang-trinh-bay', 'ky-nang-quan-ly-thoi-gian', 'q12-ky-nang-de-moi', 'q-top1-tong-ket'],
+    intro:
+      'Đây không phải công thức Toán mà là "công thức lấy điểm". Rất nhiều học sinh mất 0,5 đến 1,0 điểm mỗi bài không vì không biết làm, mà vì thiếu đúng những dòng dưới đây. Đó là loại điểm dễ lấy lại nhất trong toàn bộ đề.',
+    items: [
+      { name: 'Dòng điều kiện xác định', expr: 'Viết ĐKXĐ ngay dòng đầu, trước mọi biến đổi; đối chiếu lại ở dòng cuối', use: 'Mọi bài có căn thức, phân thức, logarit.', trap: 'Thiếu dòng này bị trừ điểm dù đáp số đúng.', star: true },
+      { name: 'Dòng đặt ẩn', expr: 'Gọi … là x (đơn vị), điều kiện …', use: 'Mọi bài giải bằng cách lập phương trình hoặc hệ.', star: true },
+      { name: 'Dòng dấu bằng của bất đẳng thức', expr: 'Đánh giá → nêu dấu bằng xảy ra khi nào → kết luận giá trị lớn nhất hoặc nhỏ nhất', use: 'Câu bất đẳng thức và cực trị.', trap: 'Thiếu dòng dấu bằng chỉ được nửa số điểm của câu.', star: true },
+      { name: 'Căn cứ cho mỗi bước hình học', expr: 'Mỗi khẳng định phải kèm lý do trong ngoặc: (giả thiết), (hai góc đối đỉnh), (tính chất tiếp tuyến)', use: 'Mọi bài chứng minh hình học.', trap: 'Viết kết quả không kèm căn cứ — barem chấm theo căn cứ.', star: true },
+      { name: 'Thứ tự đỉnh khi viết hai tam giác', expr: 'Viết tên hai tam giác theo đúng cặp đỉnh tương ứng để tỉ số lập ra không bị sai', use: 'Bài tam giác bằng nhau và tam giác đồng dạng.', star: true },
+      { name: 'Đơn vị và câu trả lời', expr: 'Đáp số phải có đơn vị và phải đúng đại lượng đề hỏi', use: 'Mọi bài toán thực tế.', trap: 'Tìm được kích thước rồi trả lời luôn trong khi đề hỏi chi phí.', star: true },
+      { name: 'Phân bổ thời gian theo điểm', expr: 'Số phút cho một câu ≈ (tổng thời gian : tổng điểm) × điểm của câu đó', use: 'Lập kế hoạch trước khi bắt đầu làm bài.', star: true },
+      { name: 'Quy tắc bỏ qua', expr: 'Câu nào vượt gấp đôi thời gian dự kiến mà chưa thấy hướng thì khoanh số thứ tự và bỏ qua, quay lại ở phút cuối', use: 'Mọi đề tính giờ.', trap: 'Ngồi lì một câu — cách mất điểm nhanh nhất trong phòng thi.', star: true },
+      { name: 'Kiểm tra chéo cho câu trả lời ngắn', expr: 'Tính lại bằng cách thứ hai (thay ngược, ước lượng, công thức khác) trước khi điền', use: 'Phần trả lời ngắn của đề tốt nghiệp — không có phương án để loại trừ.', star: true },
+      { name: 'Soát bài đúng cách', expr: 'Đọc lại CÂU HỎI rồi nhìn đáp số, KHÔNG đọc lại lời giải của chính mình', use: 'Năm phút cuối giờ.', trap: 'Đọc lại lời giải thì mắt lướt qua đúng chỗ sai.', star: true },
+      { name: 'Công thức điểm trung bình môn', expr: 'ĐTB = (tổng điểm thường xuyên + 2 × giữa kỳ + 3 × cuối kỳ) : (số điểm thường xuyên + 5)', condition: 'Theo Thông tư 22/2021/TT-BGDĐT', use: 'Tính xem cần bao nhiêu điểm cuối kỳ để đạt mục tiêu tổng kết.', star: true },
+      { name: 'Nguyên tắc giữ Top 1', expr: 'Điểm hệ số 1 phải gần tuyệt đối; không thể bù bằng điểm cuối kỳ vì trọng số đã cố định', use: 'Chiến lược cả học kỳ, không phải chiến thuật một bài kiểm tra.', star: true },
     ],
   },
   /* ==================== THCS — ĐẠI SỐ ==================== */
@@ -257,7 +341,7 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
     strand: 'dai-so',
     grade: 'thcs',
     tracks: ['thpt', 'chuyen'],
-    topicIds: ['ds-can-thuc'],
+    topicIds: ['ds-can-thuc', 'ds-ptvt'],
     intro:
       'Bài I của đề vào 10 Hà Nội và Bài 1 của nhiều đề chuyên đều nằm gọn trong nhóm này. Điều kiện xác định phải viết ở dòng đầu tiên, luôn luôn.',
     items: [
@@ -278,7 +362,7 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
     strand: 'dai-so',
     grade: 'thcs',
     tracks: ['thpt', 'chuyen'],
-    topicIds: ['ds-pt-hpt', 'ds-viete'],
+    topicIds: ['ds-pt-hpt', 'ds-viete', 'ds-viete-khong-doi-xung'],
     intro:
       'Bài III đề vào 10 và bài tham số của mọi đề chuyên đều xoay quanh nhóm này. Quy tắc bất di bất dịch: có Viète thì phải có điều kiện Δ.',
     items: [
@@ -302,7 +386,7 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
     strand: 'bat-dang-thuc',
     grade: 'thcs',
     tracks: ['thpt', 'chuyen'],
-    topicIds: ['bdt-co-ban', 'bdt-nang-cao'],
+    topicIds: ['bdt-co-ban', 'bdt-nang-cao', 'tt-cuc-tri-thuc-te'],
     intro:
       'Bài V đề Hà Nội và câu chốt đề chuyên đều giải được bằng bốn công cụ dưới đây. Quy trình luôn là: dò điểm rơi trước, chọn kỹ thuật sau.',
     items: [
@@ -324,7 +408,7 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
     strand: 'hinh-hoc',
     grade: 'thcs',
     tracks: ['thpt', 'chuyen'],
-    topicIds: ['hh-duong-tron-co-ban', 'hh-phuong-tich'],
+    topicIds: ['hh-duong-tron-co-ban', 'hh-phuong-tich', 'hh-he-thuc-luong'],
     intro:
       'Bốn hệ thức dưới đây xuất hiện trong hầu hết bài hình có tiếp tuyến hoặc đường cao. Viết cả bốn ra góc nháp ngay khi phát đề.',
     items: [
@@ -370,7 +454,7 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
     strand: 'hinh-hoc',
     grade: 'thcs',
     tracks: ['chuyen'],
-    topicIds: ['hh-mo-hinh-chuan', 'hh-ti-so-dong-quy', 'hh-phuong-tich'],
+    topicIds: ['hh-mo-hinh-chuan', 'hh-ti-so-dong-quy', 'hh-phuong-tich', 'hh-cuc-tri-co-dinh'],
     intro:
       'Đề hình chuyên thưởng cho người thuộc mô hình. Năm bổ đề dưới đây phủ phần lớn ý b và ý c của các đề KHTN, Sư phạm và chuyên Sở.',
     items: [
@@ -412,7 +496,7 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
     strand: 'so-hoc',
     grade: 'thcs',
     tracks: ['chuyen'],
-    topicIds: ['sh-chia-het', 'sh-dong-du', 'sh-so-nguyen-to', 'sh-nghiem-nguyen'],
+    topicIds: ['sh-chia-het', 'sh-dong-du', 'sh-so-nguyen-to', 'sh-nghiem-nguyen', 'sh-phan-nguyen'],
     intro:
       'Bảng số dư dưới đây giải quyết phần lớn bài số học nhập môn chuyên. Học thuộc ba dòng đầu tiên là đủ cho 80% đề.',
     items: [
