@@ -113,6 +113,7 @@
 | Tệp | Nội dung |
 |---|---|
 | [BAN-DO-CHUONG-TRINH-288.md](01-CHUONG-TRINH-KHUNG/BAN-DO-CHUONG-TRINH-288.md) | Ma trận tổng 288 chuyên đề, mã hoá, trục xoắn ốc |
+| **[DOI-CHIEU-KHOI-01-VOI-GIAO-AN-THAT.md](01-CHUONG-TRINH-KHUNG/DOI-CHIEU-KHOI-01-VOI-GIAO-AN-THAT.md)** | 🔴 Đối chiếu khối 1 với **giáo án thật của Học viện**: 4 điểm lệch cấu trúc *(thời lượng 35′ vs 180′ · 50 chủ đề vs 24 · 5 nhóm kỹ năng vs 8 mạch · khuôn 3 pha Khám phá–Luyện tập–Vận dụng)* · **29 chủ đề bị bỏ sót** · **3 phương án hợp nhất chờ quyết** |
 | [KHOI-01.md](01-CHUONG-TRINH-KHUNG/KHOI-01.md) → [KHOI-12.md](01-CHUONG-TRINH-KHUNG/KHOI-12.md) | Đặc tả đầy đủ 24 chuyên đề/khối: mục tiêu GITA, chiến lược, hoạt động đào tạo – thực hành – trải nghiệm, sản phẩm, đánh giá |
 
 ### 📙 02 – GIÁO ÁN & KẾ HOẠCH BÀI GIẢNG

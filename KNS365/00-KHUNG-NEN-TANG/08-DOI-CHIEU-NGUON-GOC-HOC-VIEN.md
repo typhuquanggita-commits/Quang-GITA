@@ -22,7 +22,7 @@
 
 | Nhóm | Tệp |
 |---|---|
-| **Giáo án thực tế 12 khối** | `GA LỚP 1–5 GITA - HN` · `LOP 6–9 - HA NOI` · `LỚP 10–12 - HÀ NỘI` *(docx + pdf)* |
+| **Giáo án thực tế 12 khối** | ✅ **Khối 1 đã đối chiếu xong** *(30/08/2026)* · ⚠️ còn `GA LỚP 2–5` · `LOP 6–9` · `LỚP 10–12` |
 | **Khung lõi còn lại** | `MASTER Gen Việt 3.docx` *(91 MB)* · `PHẦN 0 CHI TIẾT.doc` *(5,4 MB)* · `HỌC VIỆN GEN VIỆT. VIP.docx` |
 | **Chương trình & chuyên đề** | `CHƯƠNG TRÌNH ĐÀO TẠO GEN VIỆT CẤP 1.doc` · `CHUYÊN ĐỀ PHÁT TRIỂN TÀI NĂNG GEN VIỆT.doc` · `KỸ NĂNG HỌC GIỎI GITA 1.doc` *(134 MB)* · `🧭 CHUYÊN ĐỀ GV7.doc` |
 | **Theo khối** | `KHỐI LỚP 1.doc` · `KHỐI LỚP 2.doc` · `KHỐI LỚP 3.doc` |
@@ -134,7 +134,24 @@ Kèm câu hỏi sàng lọc bắt buộc cho mọi chương trình, CLB, dự á
 | 14 | **Hồ sơ năng lực điện tử – portfolio 30 năm** | Trụ 5 | Bộ KNS365 có Talent Portfolio nhưng chỉ 12 năm |
 | 15 | **Bộ đề tài nghiên cứu ứng dụng** | Tệp riêng | Chưa đọc |
 
-### 🟡 L8 · GIÁO ÁN THỰC TẾ — chưa đối chiếu
+### 🔴 L9–L12 · CẤU TRÚC GIÁO ÁN THẬT — phát hiện 30/08/2026
+
+Sau khi đọc `GA LỚP 1 GITA - HN (pdf.io).docx`, phát hiện **4 điểm lệch cấu trúc căn bản**. Chi tiết đầy đủ tại **[`../01-CHUONG-TRINH-KHUNG/DOI-CHIEU-KHOI-01-VOI-GIAO-AN-THAT.md`](../01-CHUONG-TRINH-KHUNG/DOI-CHIEU-KHOI-01-VOI-GIAO-AN-THAT.md)**.
+
+| Mã | Điểm lệch | Bộ KNS365 đã dựng | **Giáo án thật** |
+|:--:|---|---|---|
+| **L9** | **Thời lượng** | 180 phút × 2 buổi = **360 phút** | **30–35 phút × 1 buổi** *(41/41 chủ đề trích được đều ghi vậy)* |
+| **L10** | **Số chủ đề/khối** | **24** | **50** |
+| **L11** | **Phân nhóm** | 8 mạch M1–M8 | **5 nhóm kỹ năng**: Phát triển cá nhân · Giao tiếp xã hội · Ứng phó–bảo vệ bản thân · Công dân toàn cầu–trách nhiệm xã hội · Hướng nghiệp–định hướng tương lai |
+| **L12** | **Cấu trúc bài** | 7 hoạt động theo bảng phút, pha G-I-T-A | **3 pha**: KHÁM PHÁ–KẾT NỐI → LUYỆN TẬP → VẬN DỤNG; mỗi hoạt động là bảng *Mục tiêu / Sản phẩm hoạt động của HS / Cách tiến hành* |
+
+> ✅ **Điều đáng mừng:** ba pha thật **khớp với mô thức GITA** — Khám phá–Kết nối = **G+I**, Luyện tập = **T**, Vận dụng = **A** *(có việc về nhà, chính là `PSM` thu nhỏ)*. GITA là **cách đọc sâu hơn** của đúng khuôn Học viện đang dùng, không mâu thuẫn với nó.
+>
+> ⚠️ **Điều phải quyết:** con số **180 phút × 24 chuyên đề** đến từ **yêu cầu ban đầu của anh Quang**, không phải em tự đặt. Nhưng nay đã thấy giáo án thật, hai con số không thể cùng tồn tại mà không giải thích. **Ba phương án hợp nhất** nêu ở Phần D của tài liệu đối chiếu khối 1 — cần anh Quang quyết định.
+
+> ⭐ **Nhận xét chuyên môn:** chương trình gốc **tốt hơn bản em dựng ở hai điểm** — ① có **lớp bản sắc Việt** *(Tục lì xì ngày Tết · Em yêu chú bộ đội · Thầy cô mến yêu)* mà không khung quốc tế nào có; ② **cụ thể và thân thể hoá đúng lứa 6 tuổi** *(Bí mật của mồ hôi · Chảy máu cam · Ứng phó với côn trùng)*. Bản em dựng đi từ khung CASEL/OECD xuống nên thiên về nhận thức, hợp lớp 3–4 hơn lớp 1.
+
+### 🟡 L8 · GIÁO ÁN THỰC TẾ — đối chiếu tới đâu
 
 Thư mục có **giáo án thật cho cả 12 khối** *(Hà Nội)*. Bộ **288 chuyên đề** trong `01-CHUONG-TRINH-KHUNG` **được dựng khi chưa đọc các tệp này**.
 
