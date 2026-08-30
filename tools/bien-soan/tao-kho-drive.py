@@ -66,10 +66,23 @@ if __name__ == '__main__':
         # đoạn văn dài: giữ để trợ lý tra được
         doan = [d.strip() for d in t.split('\n')
                 if 120 <= len(d.strip()) <= 1200 and not d.strip().startswith('|')]
-        kho.append({'ma': mã, 'ten': ten, 'mo': mo, 'soChu': len(t.split()),
-                    'danY': dy[:100],
-                    'bang': [{'cot': b['cot'], 'hang': b['hang'][:80]} for b in bs[:40]],
-                    'doan': doan[:400]})
+        # ── Bốn chỗ chặn cứng đã gỡ ──
+        # Bản đầu cắt dàn ý ở 100 mục, bảng ở 40 bảng, mỗi bảng 80 hàng,
+        # và đoạn văn ở 400. Đo lại thì ba tài liệu bị cắt đúng ở 400 —
+        # "Nôi nuôi dưỡng nhân tài", "Quyển 1", "Quyển 3" — nghĩa là
+        # phần sau của chúng chưa bao giờ vào kho. Riêng đoạn văn, gỡ
+        # chặn lấy lại 702 đoạn và 243.565 ký tự.
+        #
+        # Chặn để tệp kho khỏi phình là đúng ý định, nhưng nó cắt im
+        # lặng: không dòng cảnh báo nào, và con số "chữ gốc" trên màn
+        # hình vẫn đếm theo tệp nguồn chứ không theo phần đã vào kho.
+        # Người đọc thấy 510.788 chữ và tin là mình đọc được chừng ấy.
+        kho.append({'ma': mã, 'ten': ten, 'mo': mo,
+                    'soChu': len(t.split()),
+                    'soChuKho': sum(len(d) for d in doan),   # ký tự THẬT đã vào kho
+                    'danY': dy,
+                    'bang': [{'cot': b['cot'], 'hang': b['hang']} for b in bs],
+                    'doan': doan})
     with open(RA, 'w', encoding='utf-8') as o:
         o.write('/* ═══════════════════════════════════════════════════════════════\n')
         o.write('   GITA 365 — TÀI LIỆU HỌC VIỆN LẤY TỪ GOOGLE DRIVE\n')

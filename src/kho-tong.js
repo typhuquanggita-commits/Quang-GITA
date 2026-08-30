@@ -120,7 +120,11 @@ G.KHO_TONG = [
   mo:'Nguồn của mọi thứ ở trên. Biên soạn từ chính tài liệu người sáng lập viết ra.',
   kho:[
    {t:'Tài liệu gốc (5 bộ Word)',k:'TAILIEU_GOC',v:'tai-lieu-goc',d:'599.708 chữ · 161 bảng · 1.647 dòng dữ liệu'},
-   {t:'Tài liệu Drive (10 bộ)',  k:'TAILIEU_DRIVE',v:'tai-lieu-goc',d:'510.788 chữ · 2.909 đoạn nội dung'},
+   /* Con số này từng ghi cứng "2.909 đoạn" — đúng vào lúc bộ nhập còn
+      chặn ở 400 đoạn mỗi bộ. Gỡ chặn xong là số cũ sai. Đếm thẳng từ kho. */
+   {t:'Tài liệu Drive (10 bộ)',  k:'TAILIEU_DRIVE',v:'tai-lieu-goc',
+    d:function(){ return (G.TAILIEU_DRIVE||[]).reduce(function(a,x){return a+(x.doan||[]).length;},0)
+      .toLocaleString('vi-VN')+' đoạn nội dung · giữ nguyên văn'; }},
    {t:'Sách gốc & tư liệu',      k:'SACH',      v:'sach',        d:'11 chương · 515 đoạn · tra cứu được'},
    {t:'Sách tham khảo',          k:'SACH_THAMKHAO',v:'sach',     d:'Nguồn bổ trợ, không thay thế mô thức gốc'},
    {t:'Thư viện tài liệu chung', k:null,        v:'thu-vien',    d:'Nơi mọi vị trí gửi tài liệu lên, R01–R02 kiểm duyệt'},
@@ -210,7 +214,10 @@ G.VIEWS['kho-tong'] = function(){
     o += U.tbl(['Kho tư liệu','Bản ghi','Mở được',''], n.kho.map(function(m){
       var d = dem(m.k), mo = moDuoc(m);
       return [
-        '<b class="sm">'+h(m.t)+'</b><div class="tiny muted mt">'+h(m.d)+'</div>',
+        /* m.d nhận cả chuỗi lẫn hàm: vài dòng phải ĐẾM từ kho thay vì
+           ghi cứng, vì số ghi cứng đúng đúng một lần rồi sai mãi. */
+        '<b class="sm">'+h(m.t)+'</b><div class="tiny muted mt">'+
+          h(typeof m.d === 'function' ? m.d() : m.d)+'</div>',
         d === null ? '<span class="muted tiny">—</span>'
           : d ? '<b class="mono" style="color:'+n.c+'">'+d.toLocaleString('vi-VN')+'</b>'
               : '<span class="tiny" style="color:var(--gita-do-ink)">chưa nạp</span>',
