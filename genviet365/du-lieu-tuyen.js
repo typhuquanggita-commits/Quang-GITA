@@ -449,18 +449,24 @@
        Nó tồn tại vì phân quyền cần một thang thô, sáu nấc; mười
        lăm nấc thì quá mịn để gắn quyền.
      Bảng dưới đây là ánh xạ chính thức giữa hai thang.          */
+  /* Tên bậc lấy NGUYÊN theo GV.BAC — nơi sáu bậc quyền được định
+     nghĩa. Bản dựng đầu của bảng này từng tự nghĩ ra một bộ tên
+     khác (RỄ · THÂN · TÁN · QUẢ), và điều đó tạo ra đúng thứ nhầm
+     lẫn mà chính luật ánh xạ sinh ra để chặn: "THÂN" vừa là tên
+     giai đoạn 1 vừa là tên một bậc. Đã sửa; bộ kiểm nay đối chiếu
+     bảng này với GV.BAC ở mỗi lần dựng. */
   G.TY_ANH_XA_BAC = [
     ['B1', 'HẠT', 'Giai đoạn 1–3 · THÂN · TÂM · TRÍ', 'Nề nếp, cảm xúc, cách học — ba thứ nền',
      'Mở phần chung và hành trình của chính em'],
     ['B2', 'MẦM', 'Giai đoạn 4–6 · VĂN · THỂ · MĨ', 'Ứng xử, sức bền, thẩm mỹ — trọn sáu giai đoạn Nền',
      'Thêm sổ tay vai và biểu mẫu gia đình'],
-    ['B3', 'RỄ', 'Giai đoạn 7–9 · Cách học', 'Tư duy phát triển, phương pháp riêng, kỹ năng toàn diện',
+    ['B3', 'THÂN', 'Giai đoạn 7–9 · Cách học', 'Tư duy phát triển, phương pháp riêng, kỹ năng toàn diện',
      'Thêm nhịp chi hội và lịch năm'],
-    ['B4', 'THÂN', 'Giai đoạn 10–11 · Kết quả', 'Kết quả thấy được và bắt đầu tạo giá trị cho người khác',
+    ['B4', 'TRỤ', 'Giai đoạn 10–11 · Kết quả', 'Kết quả thấy được và bắt đầu tạo giá trị cho người khác',
      'Thêm điều hành chi hội: ghế, nhiệm kỳ, bàn giao'],
-    ['B5', 'TÁN', 'Giai đoạn 12–14 · Bộ công cụ', 'Bốn yếu tố bứt phá, ba giai đoạn thói quen, bảy bước Gen Việt',
+    ['B5', 'NGƯỜI DẪN', 'Giai đoạn 12–14 · Bộ công cụ', 'Bốn yếu tố bứt phá, ba giai đoạn thói quen, bảy bước Gen Việt',
      'Mở kho nghề: ma trận, phác đồ, chiến lược'],
-    ['B6', 'QUẢ', 'Giai đoạn 15 · Hội tụ', 'Đại diện được cho lớp, cho trường, cho Gen Việt',
+    ['B6', 'KIẾN TRÚC SƯ', 'Giai đoạn 15 · Hội tụ', 'Đại diện được cho lớp, cho trường, cho Gen Việt',
      'Mở phần nghiệm thu và cố vấn cho bậc dưới']
   ];
 
@@ -470,7 +476,8 @@
     'Không em nào được lên bậc mà chưa đi hết các giai đoạn thuộc bậc ấy. Ánh xạ này là điều kiện, không phải mô tả.',
     'Một em có thể ở giai đoạn 11 mà vẫn giữ bậc B3 nếu chưa có bằng chứng tầng ba. Bậc đi sau giai đoạn, không đi trước.',
     'Khi hai thang mâu thuẫn trong một hồ sơ, giai đoạn là thứ đúng và bậc là thứ phải sửa.',
-    'Không thêm thang thứ ba. Mọi cách xếp hạng mới phải quy về một trong hai thang này, hoặc thay thế hẳn một thang.'
+    'Không thêm thang thứ ba. Mọi cách xếp hạng mới phải quy về một trong hai thang này, hoặc thay thế hẳn một thang.',
+    'Tên sáu bậc chỉ được đặt ở MỘT chỗ: GV.BAC. Mọi bảng khác viện dẫn tên bậc đều phải khớp với nó, và bộ kiểm đối chiếu ở mỗi lần dựng. Luật này sinh ra vì chính bảng ánh xạ trên đã từng tự nghĩ ra một bộ tên khác — làm cho chữ THÂN vừa là tên một giai đoạn vừa là tên một bậc.'
   ];
 
   /* ── 9 · Nguồn ────────────────────────────────────────────── */

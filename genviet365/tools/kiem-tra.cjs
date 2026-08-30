@@ -24,7 +24,7 @@ var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
            'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
-           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-capdo.js', 'du-lieu-master.js', 'du-lieu-chuyende.js', 'du-lieu-vanhanh2.js', 'du-lieu-trai-vip.js', 'du-lieu-giaoan.js', 'du-lieu-socai.js', 'du-lieu-songuon.js', 'du-lieu-deana.js', 'du-lieu-slide.js', 'du-lieu-bni.js', 'du-lieu-antoan.js', 'du-lieu-nghiencuu.js', 'du-lieu-khoi45.js', 'du-lieu-dangnhap.js', 'du-lieu-matma.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
+           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-tuan52.js', 'du-lieu-capdo.js', 'du-lieu-master.js', 'du-lieu-chuyende.js', 'du-lieu-vanhanh2.js', 'du-lieu-trai-vip.js', 'du-lieu-giaoan.js', 'du-lieu-socai.js', 'du-lieu-songuon.js', 'du-lieu-deana.js', 'du-lieu-slide.js', 'du-lieu-bni.js', 'du-lieu-antoan.js', 'du-lieu-nghiencuu.js', 'du-lieu-khoi45.js', 'du-lieu-dangnhap.js', 'du-lieu-matma.js', 'du-lieu-thanhtuu.js', 'du-lieu-hoatdong.js', 'du-lieu-lotrinh.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
            'quyen.js', 'man-hinh.js', 'nen/dau-hieu.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = [];
 
@@ -128,6 +128,36 @@ if (!G.PHAN) {
   console.log('CHÍN PHẦN · ' + G.PHAN.length + ' phần · ' + Object.keys(coNhom).length +
     '/' + (G.NHOM || []).length + ' nhóm đã xếp, không nhóm nào xếp hai lần · ' +
     'trung vị ' + giua + ' phần tử mỗi phần');
+}
+
+/* ── 1c. TÊN SÁU BẬC CHỈ ĐƯỢC ĐẶT Ở MỘT CHỖ ────────────
+      GV.BAC là nơi duy nhất định nghĩa tên sáu bậc quyền. Mọi bảng
+      khác viện dẫn tên bậc phải khớp với nó.
+
+      Luật này sinh ra sau một lỗi thật: bảng ánh xạ hai thang tự
+      nghĩ ra bộ tên RỄ · THÂN · TÁN · QUẢ trong khi hệ đã có HẠT ·
+      MẦM · THÂN · TRỤ · NGƯỜI DẪN · KIẾN TRÚC SƯ. Hệ quả là chữ
+      THÂN vừa là tên giai đoạn 1 vừa là tên bậc B4 — đúng thứ nhầm
+      lẫn mà chính luật ánh xạ sinh ra để chặn. */
+if (G.BAC && G.TY_ANH_XA_BAC) {
+  var tenBac = {};
+  G.BAC.forEach(function (b) { tenBac[b.ma] = b.t; });
+  G.TY_ANH_XA_BAC.forEach(function (r) {
+    if (tenBac[r[0]] === undefined)
+      L('Bảng ánh xạ bậc nhắc tới bậc lạ: ' + r[0]);
+    else if (tenBac[r[0]] !== r[1])
+      L('TÊN BẬC LỆCH: GV.BAC gọi ' + r[0] + ' là "' + tenBac[r[0]] +
+        '" nhưng bảng ánh xạ gọi là "' + r[1] +
+        '" — tên bậc chỉ được đặt ở một chỗ');
+  });
+  if (G.BAC_MO) {
+    G.BAC_MO.forEach(function (b) {
+      if (tenBac[b.bac] !== undefined && tenBac[b.bac] !== b.t)
+        L('TÊN BẬC LỆCH: GV.BAC gọi ' + b.bac + ' là "' + tenBac[b.bac] +
+          '" nhưng GV.BAC_MO gọi là "' + b.t + '"');
+    });
+  }
+  console.log('TÊN BẬC  · sáu bậc mang đúng một bộ tên trên toàn hệ');
 }
 
 /* ── 2. từng màn ─────────────────────────────────────── */

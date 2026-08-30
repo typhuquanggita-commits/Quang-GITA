@@ -9,14 +9,14 @@ khả năng lệch với nội dung thật.
 | Tên tác phẩm | GEN VIỆT 365 — Hệ điều hành phát triển con người |
 | Loại hình | Tác phẩm viết · chương trình máy tính (phần giao diện tra cứu) |
 | Chủ sở hữu | Học viện GITA |
-| Mã bản dựng | 81d4622e08f1 |
+| Mã bản dựng | 0fad58033194 |
 | Ngày định hình bản này | 2026-08-30 |
-| Số phần nội dung | 40 nhóm |
-| Số mục nội dung | 246 màn |
-| Số khối trình bày | 952 |
-| Số phần tử dữ liệu | 6321 |
-| Số kho dữ liệu thành phần | 350 |
-| Số tệp mã nguồn | 44 |
+| Số phần nội dung | 43 nhóm |
+| Số mục nội dung | 264 màn |
+| Số khối trình bày | 1017 |
+| Số phần tử dữ liệu | 6730 |
+| Số kho dữ liệu thành phần | 377 |
+| Số tệp mã nguồn | 47 |
 
 > **Mã bản dựng là bằng chứng thời điểm.** Nó là mã băm SHA-256 rút gọn của toàn bộ nội
 > dung tác phẩm tại thời điểm dựng. Đổi một chữ trong kho thì mã đổi theo. Giữ lại mã này
@@ -278,6 +278,24 @@ truy cập theo vai**, chứ không phải một tập tài liệu mở.
 | 40 | ĐIỀU HÀNH HỆ THỐNG | dn-may-chu | Hợp đồng máy chủ tối thiểu | qt_noi_dung | 3 |
 | 40 | ĐIỀU HÀNH HỆ THỐNG | bang-dieu-khien | Bảng điều khiển | qt_he_thong | 8 |
 | 40 | ĐIỀU HÀNH HỆ THỐNG | tra-soat | Kho tổng tra soát | qt_he_thong | 7 |
+| 41 | DANH HIỆU VÀ VINH DANH | tt-danh-hieu | Ba mươi tám danh hiệu | nghiem_thu | 3 |
+| 41 | DANH HIỆU VÀ VINH DANH | tt-bac | Năm bậc thành tựu | nghiem_thu | 3 |
+| 41 | DANH HIỆU VÀ VINH DANH | tt-that-gia | Thành tựu thật và thành tích ảo | chung | 3 |
+| 41 | DANH HIỆU VÀ VINH DANH | tt-vinh-danh | Vinh danh, và kịch bản một buổi lễ | clb_dieu_hanh | 5 |
+| 41 | DANH HIỆU VÀ VINH DANH | tt-ho-so | Hồ sơ thành tích và cách trưng bày | nghiem_thu | 4 |
+| 41 | DANH HIỆU VÀ VINH DANH | tt-lam-phat | Chống lạm phát danh hiệu | nghiem_thu | 5 |
+| 42 | NGÂN HÀNG HOẠT ĐỘNG | hd-ngan-hang | Bốn mươi dự án phụng sự | chung | 4 |
+| 42 | NGÂN HÀNG HOẠT ĐỘNG | hd-quy-trinh | Chạy một dự án từ ý tưởng tới bàn giao | nghe_quan_ly | 4 |
+| 42 | NGÂN HÀNG HOẠT ĐỘNG | hd-doi-tac | Làm việc với đối tác cộng đồng | clb_dieu_hanh | 3 |
+| 42 | NGÂN HÀNG HOẠT ĐỘNG | hd-do-tac-dong | Đo tác động thật | nghiem_thu | 3 |
+| 42 | NGÂN HÀNG HOẠT ĐỘNG | hd-ra-ngoai | An toàn khi đưa học sinh ra khỏi trường | kh_gia_dinh | 5 |
+| 42 | NGÂN HÀNG HOẠT ĐỘNG | hd-sai | Mười hai cách làm hỏng một dự án phụng sự | chung | 4 |
+| 43 | LỘ TRÌNH CHI TIẾT | lt-muoi-lam | Mười lăm giai đoạn, nhìn từ chỗ ngồi của một em | kh_hanh_trinh | 3 |
+| 43 | LỘ TRÌNH CHI TIẾT | lt-ho-chieu | Hộ chiếu nhân tài, từng trang một | kh_hanh_trinh | 2 |
+| 43 | LỘ TRÌNH CHI TIẾT | lt-chuyen-bac | Sáu lễ chuyển bậc | kh_hanh_trinh | 3 |
+| 43 | LỘ TRÌNH CHI TIẾT | lt-mac-ket | Mười hai kiểu mắc kẹt | nghe_chung | 3 |
+| 43 | LỘ TRÌNH CHI TIẾT | lt-gia-dinh | Vai của gia đình theo từng bậc | kh_gia_dinh | 2 |
+| 43 | LỘ TRÌNH CHI TIẾT | lt-nghe | Mười bốn hướng nghề | kh_hanh_trinh | 6 |
 
 ---
 
@@ -329,11 +347,17 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 | GT_GOI | 5 | GT_KINH_TE | 7 | GT_LOI_BAT_BIEN | 7 |
 | GT_LUAT_GIA | 7 | GT_LUAT_KT | 4 | GT_NHAN_RONG | 3 |
 | GT_NHA_TRUONG | 4 | GT_PHAN_DOI | 12 | GT_PHEU | 5 |
-| GT_THONG_DIEP | 5 | HINH_THAI | 5 | HO_CHIEU_LUAT | 5 |
-| K45_DE_TAI | 101 | K45_DU_AN | 11 | K45_GIAO_AN_4 | 11 |
-| K45_GIAO_AN_5 | 11 | K45_KHAC_BIET | 8 | K45_KHAU_QUYET | 101 |
-| K45_LUAT | 16 | KHOA_NEN | 8 | KPI_HE | 7 |
-| LICH_NAM | 4 | LOP | 7 | LO_TRINH | 6 |
+| GT_THONG_DIEP | 5 | HD_DOI_TAC | 10 | HD_DO_TAC_DONG | 12 |
+| HD_LICH_NAM | 4 | HD_LOAI | 9 | HD_LUAT | 16 |
+| HD_NGAN_HANG | 40 | HD_QUY_TRINH | 10 | HD_RA_NGOAI | 18 |
+| HD_SAI | 12 | HD_TRUYEN_THONG | 15 | HINH_THAI | 5 |
+| HO_CHIEU_LUAT | 5 | K45_DE_TAI | 101 | K45_DU_AN | 11 |
+| K45_GIAO_AN_4 | 11 | K45_GIAO_AN_5 | 11 | K45_KHAC_BIET | 8 |
+| K45_KHAU_QUYET | 101 | K45_LUAT | 16 | KHOA_NEN | 8 |
+| KPI_HE | 7 | LICH_NAM | 4 | LOP | 7 |
+| LO_TRINH | 6 | LT_CHUYEN_BAC | 6 | LT_GIA_DINH | 6 |
+| LT_HO_CHIEU | 12 | LT_LUAT | 17 | LT_MAC_KET | 12 |
+| LT_MOT_NAM | 4 | LT_MUOI_LAM | 15 | LT_NGHE | 14 |
 | LUAT_QUYEN | 6 | LUU_BA_TANG | 3 | MACH_TU_VAN | 8 |
 | MA_HOA | 6 | MA_TRAN | 8 | MM_DOI_CHIEU | 45 |
 | MM_KE_CHUYEN | 7 | MM_KHOI_BAY | 7 | MM_LUAT | 15 |
@@ -353,7 +377,7 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 | NQ_LUAT | 12 | NQ_PHI | 7 | NQ_TRAO | 8 |
 | NQ_TU_CHOI | 7 | PHAM_CHAT | 5 | PHAN | 9 |
 | QUYEN | 10 | RUI_RO | 7 | SC_LUAT | 6 |
-| SC_MON_NO | 62 | SC_XUAT_XU | 35 | SC_XX_LUAT | 6 |
+| SC_MON_NO | 74 | SC_XUAT_XU | 38 | SC_XX_LUAT | 6 |
 | SC_YEU_CAU | 15 | SE_90 | 3 | SE_CUM | 6 |
 | SE_DO | 8 | SE_EEAT | 4 | SE_KHONG | 7 |
 | SE_KY_THUAT | 12 | SE_NGUYEN_TAC | 7 | SE_PHAN_HOI | 6 |
@@ -382,6 +406,9 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 | TN_LUAT_PH | 6 | TN_LUAT_PN | 6 | TN_NGHI | 6 |
 | TN_PHAN_NAN | 8 | TN_PHUC_HOI | 5 | TN_RA_DI | 6 |
 | TRU | 4 | TS_LUAT | 6 | TS_MUC | 6 |
+| TT_BAC_THANH_TUU | 5 | TT_HE_DANH_HIEU | 38 | TT_HO_SO | 16 |
+| TT_LAM_PHAT | 10 | TT_LE | 19 | TT_LUAT | 18 |
+| TT_THAT_GIA | 12 | TT_TRUNG_BAY | 10 | TT_VINH_DANH | 18 |
 | TUAN | 5 | TU_DONG | 8 | TV2_BUKATSU | 8 |
 | TV2_BUKATSU_DOI_CHIEU | 10 | TV2_TRAI_AN_TOAN | 13 | TV2_TRAI_HAU | 6 |
 | TV2_TRAI_KHUNG | 7 | TV2_TRAI_LICH | 20 | TV2_VIP_CHUAN | 11 |
@@ -390,7 +417,7 @@ tập dữ liệu độc lập, dùng lại được ở nhiều mục.
 | TV_PHAM_CHAT | 5 | TV_Q1 | 8 | TV_Q2 | 9 |
 | TV_Q3 | 7 | TV_Q4 | 9 | TV_Q5 | 7 |
 | TV_Q6 | 5 | TV_QUYEN | 6 | TY_ANH_XA_BAC | 6 |
-| TY_ANH_XA_LUAT | 6 | TY_CLB_BAN | 12 | TY_CLB_BUOI | 4 |
+| TY_ANH_XA_LUAT | 7 | TY_CLB_BAN | 12 | TY_CLB_BUOI | 4 |
 | TY_CLB_CAP | 10 | TY_CLB_NL | 9 | TY_CLB_TUAN | 5 |
 | TY_DINH_VI | 8 | TY_GD_5S | 5 | TY_GD_90 | 4 |
 | TY_GD_DANH_HIEU | 3 | TY_GD_LUAT | 5 | TY_GD_NHAT_KY | 4 |
@@ -500,7 +527,7 @@ theo yêu cầu cụ thể của chủ sở hữu.
 | Y10 | Thực hiện nhượng quyền với tiêu chuẩn cao nhất, độc quyền trên thị trường | nq-goi · nq-dieu-kien · nq-chang · nq-dao-tao · nq-kiem-dinh · nq-phi · nq-lanh-tho · nq-hop-dong · nq-luat · nq-faq |
 | Y11 | Tối ưu để tìm kiếm chất lượng lên đầu Google theo hệ giá trị uy tín và ý định người tìm, phản hồi năm sao | seo-nguyen-tac · seo-y-dinh · seo-eeat · seo-ky-thuat · seo-phan-hoi · seo-do · seo-90 |
 | Y12 | Biên soạn đầy đủ kho, không thiếu bất cứ yêu cầu nào, độ chất chuyên đề tốt nhất so với thị trường | clb-chu-ky · clb-52-tuan · so-cai-yc · so-cai-no · cde-nam-nhom · cde-ma-hoa · cde-tai-nang · cde-khung · cde-giao-an · cde-luat · cd-muoi-cap · cd-tram-ct · cd-nang-luc · cd-chuan-ra · cd-sop · cd-quy-chuan · ga-khung · ga-khau-quyet · ga-buoi · ga-hoat-dong · ga-hoc-ky |
-| Y13 | Nguồn tài liệu, quy trình, phác đồ, nội dung và tài nguyên phải đủ chuẩn, không sơ sài — hoàn thiện theo đúng định hướng đã đặt ra | vh-so-do · vh-truoc-trong-sau · vh-ban12 · vh-raci-kpi · vh-canh-bao · vh-bieu-mau · ms-loi-mo · ms-luan-diem · ms-ba-chang · ms-mo-thuc · ms-rui-ro · ms-khung-sach · tr-bay-ngay · tr-lich-hau · tr-an-toan · tr-vip · tr-bukatsu · gv-anh-xa-bac · so-nguon · so-nguon-no · da-cau-truc · da-phap-ly · da-to-chuc · da-kpi · da-ke-hoach · da-nghien-cuu · sl-bo-slide · sl-kich-ban · sl-thong-diep · sl-buoi-hop |
+| Y13 | Nguồn tài liệu, quy trình, phác đồ, nội dung và tài nguyên phải đủ chuẩn, không sơ sài — hoàn thiện theo đúng định hướng đã đặt ra | vh-so-do · vh-truoc-trong-sau · vh-ban12 · vh-raci-kpi · vh-canh-bao · vh-bieu-mau · ms-loi-mo · ms-luan-diem · ms-ba-chang · ms-mo-thuc · ms-rui-ro · ms-khung-sach · tr-bay-ngay · tr-lich-hau · tr-an-toan · tr-vip · tr-bukatsu · gv-anh-xa-bac · so-nguon · so-nguon-no · lt-muoi-lam · lt-ho-chieu · lt-chuyen-bac · lt-mac-ket · lt-gia-dinh · lt-nghe · tt-danh-hieu · tt-bac · tt-that-gia · tt-vinh-danh · tt-ho-so · tt-lam-phat · hd-ngan-hang · hd-quy-trinh · hd-doi-tac · hd-do-tac-dong · hd-ra-ngoai · hd-sai · da-cau-truc · da-phap-ly · da-to-chuc · da-kpi · da-ke-hoach · da-nghien-cuu · sl-bo-slide · sl-kich-ban · sl-thong-diep · sl-buoi-hop |
 | Y14 | Sửa giao diện Web App thành tám mục: Tổng quan · Club · Lộ trình cá nhân · Đào tạo 12 khối · Thành tựu · Kỷ nguyên vươn mình · Hoạt động và cộng đồng · Mật Mã Gen Việt | mm-san-pham · mm-ma · mm-doi-chieu · mm-ke-chuyen · thu-vien · mo-thuc-viet |
 | Y15 | Có hệ thống phân quyền khi đăng nhập, có bảng điều khiển, và có kho tổng tra soát toàn hệ chỉ Super Admin và Admin xem được | dn-cong · dn-may-chu · bang-dieu-khien · tra-soat · phan-quyen · vai-tro · pham-vi |
 
@@ -522,7 +549,7 @@ nó chứng minh tác phẩm **không phải một tập tài liệu rời đư�
 | Cổng quyền | Vào thẳng bằng đường dẫn một mục ngoài quyền phải ra thẻ khoá | Chặn phát hành |
 | Tương phản màu | Mọi mã màu chữ đạt ngưỡng WCAG AA 4.5:1 trên cả hai chế độ | Chặn phát hành |
 
-Mã bản dựng `81d4622e08f1` ngày 2026-08-30 là bản đã qua đủ tám lớp trên.
+Mã bản dựng `0fad58033194` ngày 2026-08-30 là bản đã qua đủ tám lớp trên.
 
 ---
 

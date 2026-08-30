@@ -90,6 +90,9 @@
             'ms-loi-mo', 'ms-luan-diem', 'ms-ba-chang', 'ms-mo-thuc', 'ms-rui-ro', 'ms-khung-sach',
             'tr-bay-ngay', 'tr-lich-hau', 'tr-an-toan', 'tr-vip', 'tr-bukatsu',
             'gv-anh-xa-bac', 'so-nguon', 'so-nguon-no',
+            'lt-muoi-lam', 'lt-ho-chieu', 'lt-chuyen-bac', 'lt-mac-ket', 'lt-gia-dinh', 'lt-nghe',
+            'tt-danh-hieu', 'tt-bac', 'tt-that-gia', 'tt-vinh-danh', 'tt-ho-so', 'tt-lam-phat',
+            'hd-ngan-hang', 'hd-quy-trinh', 'hd-doi-tac', 'hd-do-tac-dong', 'hd-ra-ngoai', 'hd-sai',
             'da-cau-truc', 'da-phap-ly', 'da-to-chuc', 'da-kpi', 'da-ke-hoach', 'da-nghien-cuu',
             'sl-bo-slide', 'sl-kich-ban', 'sl-thong-diep', 'sl-buoi-hop'],
       kho: ['VH2_SO_DO', 'VH2_TRUOC', 'VH2_TRONG', 'VH2_SAU', 'VH2_BAN12', 'VH2_RACI', 'VH2_KPI',
@@ -97,6 +100,9 @@
             'MS_LUAN_DIEM', 'MS_CHANG', 'MS_MO_THUC', 'MS_RUI', 'MS_TRICH',
             'TV2_TRAI_KHUNG', 'TV2_VIP_CHUONG_TRINH', 'TV2_BUKATSU',
             'TY_ANH_XA_BAC', 'TY_ANH_XA_LUAT', 'SN_TEP', 'SN_NO', 'SN_LUAT',
+            'LT_MUOI_LAM', 'LT_MAC_KET', 'LT_GIA_DINH', 'LT_NGHE',
+            'TT_HE_DANH_HIEU', 'TT_THAT_GIA', 'TT_LAM_PHAT',
+            'HD_NGAN_HANG', 'HD_SAI', 'HD_DO_TAC_DONG',
             'DA_CAU_TRUC', 'DA_CAN_CU', 'DA_RACI', 'DA_KPI', 'DA_KE_HOACH_12', 'DA_NGHIEN_CUU',
             'SL_BO_SLIDE', 'SL_KICH_BAN', 'SL_THONG_DIEP', 'SL_LUAT'] }
 ,
@@ -176,6 +182,18 @@
     { t: 'Bốn mươi lăm sản phẩm để đời', so: 45, kho: 'MM_SAN_PHAM' },
     { t: 'Mười hai mật mã lặp lại', so: 12, kho: 'MM_MA' },
     { t: 'Mười lăm luật dùng nhân vật lịch sử', so: 15, kho: 'MM_LUAT' },
+    { t: 'Ba mươi tám danh hiệu', so: 38, kho: 'TT_HE_DANH_HIEU' },
+    { t: 'Năm bậc thành tựu', so: 5, kho: 'TT_BAC_THANH_TUU' },
+    { t: 'Mười hai cặp thành tựu thật và thành tích ảo', so: 12, kho: 'TT_THAT_GIA' },
+    { t: 'Mười tám luật vinh danh', so: 18, kho: 'TT_VINH_DANH' },
+    { t: 'Bốn mươi dự án phụng sự', so: 40, kho: 'HD_NGAN_HANG' },
+    { t: 'Mười bước chạy một dự án', so: 10, kho: 'HD_QUY_TRINH' },
+    { t: 'Mười hai cách làm hỏng một dự án', so: 12, kho: 'HD_SAI' },
+    { t: 'Mười sáu luật hoạt động cộng đồng', so: 16, kho: 'HD_LUAT' },
+    { t: 'Mười lăm giai đoạn chi tiết', so: 15, kho: 'LT_MUOI_LAM' },
+    { t: 'Mười hai kiểu mắc kẹt', so: 12, kho: 'LT_MAC_KET' },
+    { t: 'Sáu lễ chuyển bậc', so: 6, kho: 'LT_CHUYEN_BAC' },
+    { t: 'Mười bảy luật đi lộ trình', so: 17, kho: 'LT_LUAT' },
     { t: 'Mười bốn cơ chế tạo chiều sâu học từ mô hình chi hội', so: 14, kho: 'BN_TANG_SAU' },
     { t: 'Hai mươi trục đối chiếu', so: 20, kho: 'BN_DOI_CHIEU' },
     { t: 'Mười hai thứ không được bê sang môi trường học đường', so: 12, kho: 'BN_KHONG_BE' },
@@ -246,6 +264,12 @@
     ['du-lieu-dangnhap.js', 'DỰNG', 'Cổng đăng nhập, bốn lớp kiểm soát, hợp đồng máy chủ, kho tổng tra soát', 'đã chốt'],
 
     ['du-lieu-matma.js', 'BIÊN SOẠN', 'Bốn mươi lăm sản phẩm để đời và mười hai mật mã rút xuyên các chân dung — lớp này không có trong kho gốc', 'chờ Hội đồng Chuyên môn duyệt, và cần người có chuyên môn sử học rà lại niên đại'],
+
+    ['du-lieu-thanhtuu.js', 'BIÊN SOẠN', 'Ba mươi tám danh hiệu, năm bậc thành tựu, phân biệt thành tựu thật với thành tích ảo, chống lạm phát danh hiệu', 'chờ Hội đồng Chuyên môn duyệt từng mã danh hiệu và từng ngưỡng'],
+
+    ['du-lieu-hoatdong.js', 'BIÊN SOẠN', 'Bốn mươi dự án phụng sự, quy trình mười bước, đối tác cộng đồng, đo tác động, an toàn ra ngoài trong ngày', 'chờ Hội đồng Chuyên môn duyệt'],
+
+    ['du-lieu-lotrinh.js', 'BIÊN SOẠN', 'Mười lăm giai đoạn chi tiết, hộ chiếu từng trang, sáu lễ chuyển bậc, mười hai kiểu mắc kẹt, vai gia đình theo bậc, mười bốn hướng nghề', 'chờ Hội đồng Chuyên môn duyệt'],
 
     ['du-lieu-bni.js', 'THAM CHIẾU', 'Mô hình chi hội — tài liệu của BNI Global, LLC. Học cơ chế, không dùng lại thương hiệu hay văn bản', 'không kê khai là tác phẩm của Học viện']
   ];

@@ -375,6 +375,33 @@ GV.NHOM = [
       { v: 'dn-may-chu', t: 'Hợp đồng máy chủ tối thiểu', h: 'Khi lên bản có xác thực thật' },
       { v: 'bang-dieu-khien', t: 'Bảng điều khiển', h: 'Sức khoẻ toàn hệ · máy đếm, không người điền' },
       { v: 'tra-soat', t: 'Kho tổng tra soát', h: 'Chỉ Super Admin và Admin hệ thống' }
+    ]},
+  { id: 'g41', no: '41', t: 'DANH HIỆU VÀ VINH DANH', s: 'Ba mươi tám danh hiệu, và cách vinh danh không hỏng người được vinh danh', mau: '#9E470D',
+    ds: [
+      { v: 'tt-danh-hieu', t: 'Ba mươi tám danh hiệu', h: 'Bảy trục · có ngưỡng đếm được · có thu hồi' },
+      { v: 'tt-bac', t: 'Năm bậc thành tựu', h: 'T1 được ghi → T5 lặp lại qua hai chu kỳ' },
+      { v: 'tt-that-gia', t: 'Thành tựu thật và thành tích ảo', h: 'Mười hai cặp · kiểm được trong vài phút' },
+      { v: 'tt-vinh-danh', t: 'Vinh danh và kịch bản lễ', h: 'Mười tám luật · mười chín mốc' },
+      { v: 'tt-ho-so', t: 'Hồ sơ thành tích và trưng bày', h: 'Mười sáu mục · mười hình thức' },
+      { v: 'tt-lam-phat', t: 'Chống lạm phát danh hiệu', h: 'Mười dấu hiệu và phanh' }
+    ]},
+  { id: 'g42', no: '42', t: 'NGÂN HÀNG HOẠT ĐỘNG', s: 'Bốn mươi dự án phụng sự, quy trình chạy, và cách không làm hỏng chúng', mau: '#0B6675',
+    ds: [
+      { v: 'hd-ngan-hang', t: 'Bốn mươi dự án phụng sự', h: 'Có người thụ hưởng gọi được tên' },
+      { v: 'hd-quy-trinh', t: 'Chạy một dự án từ đầu tới bàn giao', h: 'Mười bước · bước một là đi bộ' },
+      { v: 'hd-doi-tac', t: 'Làm việc với đối tác cộng đồng', h: 'Hỏi gì trước · hứa gì · không hứa gì' },
+      { v: 'hd-do-tac-dong', t: 'Đo tác động thật', h: 'Và dấu hiệu số liệu đang bị thổi' },
+      { v: 'hd-ra-ngoai', t: 'An toàn khi ra khỏi trường', h: 'Mười tám điều · hoạt động trong ngày' },
+      { v: 'hd-sai', t: 'Mười hai cách làm hỏng một dự án', h: 'Và lịch hoạt động cả năm' }
+    ]},
+  { id: 'g43', no: '43', t: 'LỘ TRÌNH CHI TIẾT', s: 'Mười lăm giai đoạn nhìn từ chỗ ngồi của một em và của người lớn kèm em', mau: '#5140B4',
+    ds: [
+      { v: 'lt-muoi-lam', t: 'Mười lăm giai đoạn chi tiết', h: 'Em trông thế nào · làm gì tuần này · kẹt ở đâu' },
+      { v: 'lt-ho-chieu', t: 'Hộ chiếu nhân tài · từng trang', h: 'Mười hai trang · ai ghi · nhịp nào' },
+      { v: 'lt-chuyen-bac', t: 'Sáu lễ chuyển bậc', h: 'Điều kiện đóng giai đoạn trước khi lên bậc' },
+      { v: 'lt-mac-ket', t: 'Mười hai kiểu mắc kẹt', h: 'Dấu hiệu · em cần gì · làm gì · bẫy' },
+      { v: 'lt-gia-dinh', t: 'Vai gia đình theo từng bậc', h: 'Việc tuần · việc tháng · việc không được làm' },
+      { v: 'lt-nghe', t: 'Mười bốn hướng nghề', h: 'Từ bậc 5–6 sang nghề · thử trong 90 ngày' }
     ]}
 ];
 
@@ -398,7 +425,7 @@ GV.PHAN = [
 
   { id: 'p3', no: '3', t: 'LỘ TRÌNH CÁ NHÂN GEN VIỆT', mau: '#5140B4',
     s: 'Một em đi qua hệ này thế nào, từ ngày đầu tới lúc có nghề',
-    nhom: ['g2', 'g5', 'g14', 'g24', 'g26'] },
+    nhom: ['g2', 'g43', 'g5', 'g14', 'g24', 'g26'] },
 
   { id: 'p4', no: '4', t: 'HỆ THỐNG ĐÀO TẠO MƯỜI HAI KHỐI', mau: '#A8801F',
     s: 'Dạy cái gì, dạy thế nào, ai dạy và dạy an toàn ra sao',
@@ -406,7 +433,7 @@ GV.PHAN = [
 
   { id: 'p5', no: '5', t: 'THÀNH TỰU GEN VIỆT', mau: '#9E470D',
     s: 'Chứng minh được gì, bằng bằng chứng nào',
-    nhom: ['g7', 'g16', 'g38'] },
+    nhom: ['g7', 'g16', 'g41', 'g38'] },
 
   { id: 'p6', no: '6', t: 'GEN VIỆT TRONG KỶ NGUYÊN VƯƠN MÌNH', mau: '#BE0E16',
     s: 'Tầm vóc quốc gia, bản quyền, nhân rộng và ra thế giới',
@@ -414,7 +441,7 @@ GV.PHAN = [
 
   { id: 'p7', no: '7', t: 'HOẠT ĐỘNG GEN VIỆT VÀ CỘNG ĐỒNG', mau: '#0B6675',
     s: 'Nơi giá trị của em được người ngoài xác nhận',
-    nhom: ['g25', 'g6', 'g8'] },
+    nhom: ['g25', 'g42', 'g6', 'g8'] },
 
   { id: 'p8', no: '8', t: 'MẬT MÃ GEN VIỆT', mau: '#8A6006',
     s: 'Vĩ nhân, danh tướng, nhà khoa học — chiến tích, sản phẩm và tư duy để đời',
@@ -1972,7 +1999,7 @@ GV.MAN = {
     { k: 'muc', t: 'Ánh xạ chính thức giữa hai thang' },
     { k: 'bang', cot: ['Bậc quyền', 'Tên bậc', 'Giai đoạn tương ứng', 'Em đang rèn gì', 'Bậc này mở thêm gì'],
       tu: 'TY_ANH_XA_BAC' },
-    { k: 'muc', t: 'Sáu luật giữ cho hai thang không lệch nhau' },
+    { k: 'muc', t: 'Bảy luật giữ cho hai thang không lệch nhau' },
     { k: 'luat', tu: 'TY_ANH_XA_LUAT' },
     { k: 'trich', t: 'Khi hai thang mâu thuẫn trong một hồ sơ, giai đoạn là thứ đúng và bậc là thứ phải sửa.', n: 'Luật ánh xạ thứ năm' }
   ]},
@@ -2732,6 +2759,178 @@ GV.MAN = {
     { k: 'muc', t: 'Sáu luật giữ kho tra soát' },
     { k: 'luat', tu: 'TS_LUAT' },
     { k: 'trich', t: 'Bản dựng không sạch thì không phát hành, kể cả khi đã hứa ngày giao. Ngày giao lùi được; một bản sai đã phát ra thì không thu về được.', n: 'Luật tra soát thứ tư' }
+  ]},
+
+/* ══════════ NHÓM 41 · DANH HIỆU VÀ VINH DANH ══════════ */
+'tt-danh-hieu': { q: 'nghiem_thu', k: 'Danh hiệu', t: 'Ba mươi tám danh hiệu',
+  p: 'Hệ đã có nhiều thứ để đo — ba tầng bằng chứng, chuẩn đầu ra bốn góc nhìn, mười dấu ghi nhận — nhưng chưa có chỗ nào nối chúng lại thành một điều kiện trao danh hiệu. Đây là chỗ ấy.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Danh hiệu', 'Cấp trao', 'Ai được xét', 'Điều kiện đạt đo được', 'Ai xác nhận', 'Thời hạn và thu hồi'],
+      tu: 'TT_HE_DANH_HIEU' },
+    { k: 'van', t: 'Bảy trục: cá nhân năng lực · **nỗ lực và tiến bộ** · đội nhóm · Ban · lớp và khối · gia đình · Coach và giáo viên · điểm nhượng quyền. Trục thứ hai quan trọng ngang trục thứ nhất — một hệ chỉ vinh danh người giỏi sẵn thì không dạy được ai điều gì về nỗ lực.' },
+    { k: 'canh', ds: [
+      'BIÊN SOẠN MỚI — chưa có hiệu lực cho tới khi Hội đồng Chuyên môn duyệt từng mã danh hiệu và từng ngưỡng.',
+      'Mỗi ngưỡng đều dựa trên một sổ sách đã tồn tại trong hệ: bảng ba màu, hộ chiếu, sổ ghế, sổ giao việc, biên bản dự giờ, phiếu quan sát của giáo viên chủ nhiệm.',
+      'Không danh hiệu nào lấy thời gian ở lâu làm điều kiện đạt — đó là nguyên lý nâng theo bằng chứng.'
+    ]}
+  ]},
+
+'tt-bac': { q: 'nghiem_thu', k: 'Danh hiệu', t: 'Năm bậc thành tựu',
+  p: 'Từ được ghi một dòng vào hộ chiếu, tới thứ lặp lại được qua hai chu kỳ.',
+  khoi: [
+    { k: 'thang', tu: 'TT_BAC_THANH_TUU' },
+    { k: 'van', t: 'Hai bậc trên cùng đóng đinh hai nguyên lý bất biến vào chính cấu trúc, chứ không chỉ nhắc trong lời văn. **T4 chỉ đạt khi có người thứ hai làm lại được theo bộ tài liệu chuyển giao** — tức mọi kỳ tích phải để lại một năng lực chuyển giao được. **T5 chỉ đạt khi lặp lại qua hai chu kỳ** — tức không có nhân tài một mùa.' },
+    { k: 'trich', t: 'Một giải thưởng không kèm năng lực chuyển giao thì tính là chưa nghiệm thu.', n: 'Nguyên lý thứ sáu · nhóm 01' }
+  ]},
+
+'tt-that-gia': { q: 'chung', k: 'Danh hiệu', t: 'Thành tựu thật và thành tích ảo',
+  p: 'Mười hai cặp đặt cạnh nhau. Cột cách kiểm luôn là một thao tác mất vài phút — không phải một cuộc điều tra.',
+  khoi: [
+    { k: 'cd4', nhan: ['Thành tựu thật trông thế nào', 'Thành tích ảo trông thế nào', 'Cách kiểm trong vài phút', 'Bẫy khi kiểm'],
+      tu: 'TT_THAT_GIA' },
+    { k: 'van', t: 'Ba cách kiểm rẻ nhất và hiệu quả nhất: **gọi ba số điện thoại** người thụ hưởng để hỏi họ có nhớ việc ấy không · **đếm tỉ lệ người được giải** trên tổng số dự · **đối chiếu ngày công bố tiêu chí với ngày chọn người** — tiêu chí công bố sau khi đã biết ai thắng thì không phải tiêu chí.' },
+    { k: 'trich', t: 'Sản phẩm có người dùng, hay sản phẩm chỉ có ảnh chụp — đó là câu hỏi đầu tiên.', n: 'Cặp thứ nhất' }
+  ]},
+
+'tt-vinh-danh': { q: 'clb_dieu_hanh', k: 'Danh hiệu', t: 'Vinh danh, và kịch bản một buổi lễ',
+  p: 'Mười tám luật để việc vinh danh không hỏng chính người được vinh danh — thứ xảy ra thường xuyên hơn người ta tưởng.',
+  khoi: [
+    { k: 'luat', tu: 'TT_VINH_DANH' },
+    { k: 'van', t: 'Bốn luật đáng nhớ nhất: *không so em này với em khác trước đám đông* — mọi so sánh chỉ đặt giữa em hôm nay và chính em ở mốc đo trước; *vinh danh việc làm chứ không vinh danh phẩm chất bẩm sinh*; *người được vinh danh phải kể được mình đã làm gì*; và *không vinh danh cùng một người quá nhiều lần* — điều thứ tư bảo vệ cả người được vinh danh lẫn những em còn lại.' },
+    { k: 'muc', t: 'Kịch bản lễ · từ D-14 tới D+7' },
+    { k: 'lich', tu: 'TT_LE' },
+    { k: 'van', t: 'Mốc **D-14** là mốc quyết định cả buổi lễ: chốt danh sách đạt ngưỡng bằng cách đối chiếu từng người với mã danh hiệu và điều kiện *đã công bố từ đầu chu kỳ*. Chốt danh sách sau khi đã nhìn kết quả là cách một lễ vinh danh biến thành một buổi chia phần.' }
+  ]},
+
+'tt-ho-so': { q: 'nghiem_thu', k: 'Danh hiệu', t: 'Hồ sơ thành tích và cách trưng bày',
+  p: 'Mười sáu mục hồ sơ, và mười hình thức trưng bày — mỗi hình thức hợp với một loại thành tựu, và mỗi cái có bẫy riêng.',
+  khoi: [
+    { k: 'bang', cot: ['Mục hồ sơ', 'Nội dung', 'Ai nộp', 'Ai xác nhận', 'Dùng vào việc gì về sau'], tu: 'TT_HO_SO' },
+    { k: 'van', t: 'Mục đáng chú ý nhất là **trang thu hồi và khiếu nại**. Nó làm cho việc thu hồi một danh hiệu trở thành *thủ tục có giấy tờ* thay vì một quyết định miệng — và nhờ vậy thu hồi mới thật sự dùng được khi cần.' },
+    { k: 'muc', t: 'Mười hình thức trưng bày' },
+    { k: 'bang', cot: ['Hình thức', 'Hợp với thành tựu loại nào', 'Giữ bao lâu', 'Bẫy thường gặp'], tu: 'TT_TRUNG_BAY' }
+  ]},
+
+'tt-lam-phat': { q: 'nghiem_thu', k: 'Danh hiệu', t: 'Chống lạm phát danh hiệu',
+  p: 'Mười dấu hiệu cho thấy hệ danh hiệu đang mất giá — và phanh cho từng cái.',
+  khoi: [
+    { k: 'rui', tu: 'TT_LAM_PHAT' },
+    { k: 'van', t: 'Dấu hiệu đầu tiên và dễ bỏ qua nhất: **in thêm danh hiệu để không ai buồn**. Nhận ra nó bằng hai điều quan sát được — số danh hiệu tăng giữa chu kỳ, và xuất hiện các mục được đặt tên *sau khi* đã nhìn thấy ai sẽ đạt.' },
+    { k: 'muc', t: 'Mười tám luật danh hiệu' },
+    { k: 'luat', tu: 'TT_LUAT' },
+    { k: 'trich', t: 'Lạm phát danh hiệu giết mọi hệ đào tạo sau khoảng năm thứ mười.', n: 'Nguyên lý thứ nhất · nhóm 01' }
+  ]},
+
+/* ══════════ NHÓM 42 · NGÂN HÀNG HOẠT ĐỘNG ══════════ */
+'hd-ngan-hang': { q: 'chung', k: 'Ngân hàng hoạt động', t: 'Bốn mươi dự án phụng sự',
+  p: 'Luật gốc của cả kho, không có ngoại lệ: không có người thụ hưởng thật thì không tính là dự án phụng sự. Nên cột thứ tư của bảng này là cột bắt buộc.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Tên dự án', 'Khối lớp phù hợp', 'Người thụ hưởng là ai', 'Việc học sinh thật sự làm', 'Sản phẩm cuối', 'Đo tác động trước–sau'],
+      tu: 'HD_NGAN_HANG' },
+    { k: 'van', t: 'Bốn mươi dự án trải đủ các loại: trong trường · khu dân cư · môi trường · người cao tuổi · trẻ nhỏ hơn · người khuyết tật · văn hoá địa phương · an toàn giao thông · số hoá cộng đồng · thiên tai. Tất cả đều trong tầm học sinh tự làm được, đi bộ tới được, không cần kinh phí lớn.' },
+    { k: 'muc', t: 'Chín loại hoạt động và ranh giới từng loại' },
+    { k: 'cd4', nhan: ['Loại này trông thế nào', 'Cần gì để chạy được', 'Làm gì', 'Bẫy của loại này'], tu: 'HD_LOAI' }
+  ]},
+
+'hd-quy-trinh': { q: 'nghe_quan_ly', k: 'Ngân hàng hoạt động', t: 'Chạy một dự án từ ý tưởng tới bàn giao',
+  p: 'Mười bước. Bước thứ nhất không phải họp nghĩ ý tưởng — mà là đi bộ trong bán kính hai ki-lô-mét quanh trường.',
+  khoi: [
+    { k: 'buoc', tu: 'HD_QUY_TRINH' },
+    { k: 'van', t: 'Thứ tự này có lý do. *Đi tìm vấn đề* khác hẳn *ngồi nghĩ ra vấn đề*: nhóm ngồi trong phòng sẽ nghĩ ra những dự án nghe hay mà không ai cần, còn nhóm đi bộ sẽ về với những việc nhỏ mà có người đang thật sự vướng.' },
+    { k: 'muc', t: 'Lịch hoạt động cả năm' },
+    { k: 'quy', tu: 'HD_LICH_NAM' }
+  ]},
+
+'hd-doi-tac': { q: 'clb_dieu_hanh', k: 'Ngân hàng hoạt động', t: 'Làm việc với đối tác cộng đồng',
+  p: 'Uỷ ban phường xã, hội người cao tuổi, doanh nghiệp địa phương, cơ sở bảo trợ — mỗi loại tiếp cận một kiểu, và cột cuối là cột giữ uy tín.',
+  khoi: [
+    { k: 'bang', cot: ['Loại đối tác', 'Tiếp cận thế nào', 'Hỏi họ điều gì trước', 'Cam kết được phép đưa ra', 'Điều tuyệt đối không hứa'],
+      tu: 'HD_DOI_TAC' },
+    { k: 'van', t: 'Cột *hỏi họ điều gì trước* quan trọng hơn cột *cam kết*. Một nhóm học sinh đến gặp đối tác với một kế hoạch làm sẵn thì đang mang việc của mình tới; đến với một câu hỏi thì mới có cơ hội tìm ra việc của họ.' },
+    { k: 'trich', t: 'Điều tuyệt đối không hứa là cột giữ uy tín cho cả hệ, không riêng cho một dự án.', n: 'Cách đọc bảng đối tác' }
+  ]},
+
+'hd-do-tac-dong': { q: 'nghiem_thu', k: 'Ngân hàng hoạt động', t: 'Đo tác động thật',
+  p: 'Mười hai loại dự án, mỗi loại đo bằng gì và đo lúc nào — kèm dấu hiệu số liệu đang bị thổi.',
+  khoi: [
+    { k: 'bang', cot: ['Loại dự án', 'Đo bằng gì', 'Đo lúc nào', 'Dấu hiệu số liệu đang bị thổi'], tu: 'HD_DO_TAC_DONG' },
+    { k: 'van', t: 'Nguyên tắc rẻ nhất và đúng nhất: **đo bằng sổ sách sẵn có của trường** — lượt mượn sách, lượt vào phòng y tế, số điểm rác được ghi nhận. Số từ sổ sách có sẵn thì không ai thổi được, vì nó đã tồn tại trước khi dự án bắt đầu.' },
+    { k: 'trich', t: 'Đo bằng số suất quà thay vì thay đổi thật là cách một dự án phụng sự biến thành một buổi phát đồ.', n: 'Cách làm hỏng thứ tư' }
+  ]},
+
+'hd-ra-ngoai': { q: 'kh_gia_dinh', k: 'Ngân hàng hoạt động', t: 'An toàn khi đưa học sinh ra khỏi trường',
+  p: 'Mười tám điều cho hoạt động trong ngày. Phần trại ở lại qua đêm nằm ở nhóm 37 — hai phần cố ý không chép lại nhau.',
+  khoi: [
+    { k: 'luat', tu: 'HD_RA_NGOAI' },
+    { k: 'muc', t: 'Truyền thông hoạt động' },
+    { k: 'van', t: 'Mười lăm điều dưới đây trả lời một câu khó: làm sao kể được việc tốt mà **không biến trẻ và người thụ hưởng thành đạo cụ**. Đây là chỗ nhiều chương trình tử tế đánh mất sự tử tế của mình.' },
+    { k: 'luat', tu: 'HD_TRUYEN_THONG' },
+    { k: 'trich', t: 'Không đăng ảnh có mặt học sinh khi chưa có đồng thuận văn bản của người giám hộ. Rút đồng thuận thì gỡ trong hai mươi tư giờ.', n: 'Luật truyền thông thứ nhất' }
+  ]},
+
+'hd-sai': { q: 'chung', k: 'Ngân hàng hoạt động', t: 'Mười hai cách làm hỏng một dự án phụng sự',
+  p: 'Bốn cách đầu là bốn cách phổ biến nhất, và cả bốn đều xuất phát từ ý tốt.',
+  khoi: [
+    { k: 'rui', tu: 'HD_SAI' },
+    { k: 'van', t: 'Cách hỏng nặng nhất: **người lớn làm hộ, trẻ đứng vào chụp ảnh**. Nhận ra nó bằng một dấu hiệu quan sát được — phụ huynh và thầy cô làm phần khó vào buổi tối, học sinh xuất hiện vào lúc bàn giao. Dự án ấy vẫn có sản phẩm, vẫn có ảnh đẹp, và không em nào học được gì.' },
+    { k: 'muc', t: 'Mười sáu luật hoạt động cộng đồng' },
+    { k: 'luat', tu: 'HD_LUAT' }
+  ]},
+
+/* ══════════ NHÓM 43 · LỘ TRÌNH CHI TIẾT ══════════ */
+'lt-muoi-lam': { q: 'kh_hanh_trinh', k: 'Lộ trình chi tiết', t: 'Mười lăm giai đoạn, nhìn từ chỗ ngồi của một em',
+  p: 'Xương sống đã có tên mười lăm giai đoạn. Cái còn thiếu là thứ người lớn cần để nhận ra: em ở giai đoạn này thì trông như thế nào, và đang kẹt thì nhận ra bằng dấu gì.',
+  khoi: [
+    { k: 'bang', cot: ['Giai đoạn', 'Tên', 'Em trông như thế nào', 'Ba việc hằng tuần', 'Bằng chứng để qua giai đoạn', 'Người lớn làm gì và không làm gì', 'Dấu hiệu em đang mắc kẹt'],
+      tu: 'LT_MUOI_LAM' },
+    { k: 'van', t: 'Cột thứ sáu có hai nửa, và nửa sau khó hơn nửa trước. *Người lớn không làm gì* là cột thực thi nguyên lý thứ hai của hệ — mọi can thiệp đều nhắm tới việc tự xoá mình. Một người lớn không biết mình phải thôi làm gì thì sẽ giữ em ở giai đoạn ấy mãi.' },
+    { k: 'canh', ds: [
+      'BIÊN SOẠN MỚI — lớp chi tiết này không có trong kho gốc. Tên và thứ tự mười lăm giai đoạn giữ nguyên theo xương sống.',
+      'Mười lăm giai đoạn là thang NỘI DUNG và là thang chuẩn; sáu bậc B1–B6 là thang QUYỀN. Đừng trộn hai thang.',
+      'Nâng theo bằng chứng, không theo thời gian: em ở giai đoạn 11 vẫn có thể giữ bậc B3 nếu chưa có bằng chứng tầng ba.'
+    ]}
+  ]},
+
+'lt-ho-chieu': { q: 'kh_hanh_trinh', k: 'Lộ trình chi tiết', t: 'Hộ chiếu nhân tài, từng trang một',
+  p: 'Mười hai trang. Mỗi trang nói rõ ai ghi, nhịp cập nhật, và dùng vào việc gì về sau — vì một cuốn sổ không ai biết dùng để làm gì thì sẽ không ai ghi.',
+  khoi: [
+    { k: 'bang', cot: ['Trang', 'Ghi gì', 'Ai ghi', 'Nhịp cập nhật', 'Dùng vào việc gì về sau'], tu: 'LT_HO_CHIEU' },
+    { k: 'van', t: 'Cột cuối là cột giữ cho hộ chiếu sống. Ghi một thứ mà không biết nó dẫn tới đâu thì việc ghi sẽ tắt sau vài tháng — đây là lý do phần lớn sổ theo dõi trong trường học chết yểu.' }
+  ]},
+
+'lt-chuyen-bac': { q: 'kh_hanh_trinh', k: 'Lộ trình chi tiết', t: 'Sáu lễ chuyển bậc',
+  p: 'Từ lễ nhận Hạt tới bậc cuối. Mỗi lễ có điều kiện đóng giai đoạn cụ thể — không có lễ nào trao vì đã đủ thời gian.',
+  khoi: [
+    { k: 'buoc', tu: 'LT_CHUYEN_BAC' },
+    { k: 'van', t: 'Ánh xạ giữa hai thang nằm ngay trong cột điều kiện: lên B1 phải *đóng* giai đoạn 1, 2, 3 — chứ không phải đi qua chúng. Đóng nghĩa là có bằng chứng, và bằng chứng ấy do người ngoài hệ xác nhận ở các bậc cao.' },
+    { k: 'trich', t: 'Bậc đi sau giai đoạn, không đi trước.', n: 'Luật ánh xạ thứ tư · nhóm 21' }
+  ]},
+
+'lt-mac-ket': { q: 'nghe_chung', k: 'Lộ trình chi tiết', t: 'Mười hai kiểu mắc kẹt',
+  p: 'Mười hai chỗ mà một em thật sự dừng lại. Không phải mười hai kiểu tính cách — mười hai tình huống, và mỗi tình huống có lối ra.',
+  khoi: [
+    { k: 'cd4', nhan: ['Dấu hiệu nhận ra', 'Em thật sự cần gì', 'Người lớn làm gì', 'Bẫy hay mắc'], tu: 'LT_MAC_KET' },
+    { k: 'van', t: 'Kiểu đầu tiên — *mất động lực giữa chừng* — có một dấu hiệu rất cụ thể: nó rơi vào **tuần thứ năm tới tuần thứ tám**, và em vẫn đi đều nhưng đi cho có. Biết mốc ấy thì can thiệp được trước khi em nghỉ hẳn, thay vì sau.' },
+    { k: 'trich', t: 'Mắc kẹt là một tình huống, không phải một loại người. Đọc nó như loại người thì hết đường ra.', n: 'Cách đọc bảng mắc kẹt' }
+  ]},
+
+'lt-gia-dinh': { q: 'kh_gia_dinh', k: 'Lộ trình chi tiết', t: 'Vai của gia đình theo từng bậc',
+  p: 'Người lớn có mặt hằng ngày ở bậc một, và gần như đứng ngoài ở bậc sáu. Đó không phải buông — đó là đích của cả lộ trình.',
+  khoi: [
+    { k: 'stv', tu: 'LT_GIA_DINH' },
+    { k: 'van', t: 'Cột *không được làm* dày lên theo từng bậc, còn cột *việc hằng tuần* mỏng đi. Đọc sáu thẻ theo thứ tự thì thấy rõ nguyên lý thứ hai của hệ đang chạy: **mọi can thiệp nhắm tới việc tự xoá mình**. Chỉ số quan trọng nhất của một chặng không phải kết quả, mà là mức hỗ trợ đã giảm được bao nhiêu mà kết quả vẫn giữ.' }
+  ]},
+
+'lt-nghe': { q: 'kh_hanh_trinh', k: 'Lộ trình chi tiết', t: 'Mười bốn hướng nghề',
+  p: 'Từ bậc năm và sáu sang nghề. Mỗi hướng có dấu hiệu em hợp, một việc thử trong chín mươi ngày, người cần gặp, và sản phẩm để vào hồ sơ.',
+  khoi: [
+    { k: 'bang', cot: ['Hướng nghề', 'Dấu hiệu em hợp hướng này', 'Việc thử trong 90 ngày', 'Người cần gặp', 'Sản phẩm để vào hồ sơ'],
+      tu: 'LT_NGHE' },
+    { k: 'van', t: 'Cột *dấu hiệu* cố ý viết bằng hành vi quan sát được chứ không bằng sở thích tự khai. Ví dụ hướng sư phạm: *em giảng lại thì bạn hiểu, và em thích lúc người khác vỡ ra hơn cả lúc chính em hiểu ra* — đó là thứ nhìn thấy được, khác hẳn câu “em thích dạy học”.' },
+    { k: 'muc', t: 'Một năm của một học viên' },
+    { k: 'quy', tu: 'LT_MOT_NAM' },
+    { k: 'muc', t: 'Mười bảy luật đi lộ trình' },
+    { k: 'luat', tu: 'LT_LUAT' }
   ]}
 
 };
