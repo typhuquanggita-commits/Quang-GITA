@@ -14,8 +14,8 @@ export const Formulas: React.FC = () => {
       (!q || (f.name + f.topic + f.usage).toLowerCase().includes(q.toLowerCase()))),
     [grade, q]
   );
-  const free = list.slice(0, 4);
-  const rest = list.slice(4);
+  const free = list.slice(0, 6);
+  const rest = list.slice(6);
 
   return (
     <div className="wrap page">

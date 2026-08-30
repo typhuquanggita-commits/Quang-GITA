@@ -33,6 +33,22 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 | **Bài vận dụng – vận dụng cao** | Phần quyết định để chạm mốc 9+ |
 | **Cẩm nang công thức điểm 10** | Mỗi thẻ gồm: công thức · điều kiện · dùng khi nào · bẫy |
 
+### Quy mô học liệu
+
+| Hạng mục | Số lượng |
+|---|---|
+| Chuyên đề (khối 6–9) | **31** |
+| Khối lý thuyết · Yêu cầu cần đạt | 74 · 94 |
+| Quy tắc “đọc vị bài” | **132** |
+| Sơ đồ tư duy | 31 theo chuyên đề + **8 theo học kỳ** |
+| Dạng bài · Ví dụ mẫu có phân tích tư duy | **117** · **119** |
+| Bước phương pháp · Bộ kỹ năng luyện bài | 359 · 44 |
+| Thẻ Cẩm nang công thức điểm 10 | **86** |
+| Chuyên đề HSG · Kỹ thuật lõi | **8** · 28 |
+| Mốc lộ trình học tập | 24 |
+| Khuôn câu hỏi tham số hoá | **175** |
+| Đề · Câu hỏi sinh ra | **432** · **7.884** |
+
 ## 3. Ngân hàng đề
 
 - **Bộ 100 đề luyện thi mỗi khối** (6 · 7 · 8 · 9) — tổng **400 đề**, chia theo mức độ
@@ -155,7 +171,18 @@ src/
   pages/        Các màn hình của ứng dụng
 ```
 
-## 13. Về lưu trữ dữ liệu
+## 13. Bộ chuẩn nhận diện thương hiệu GITA
+
+Trang `/nhan-dien` tài liệu hoá quy chuẩn áp dụng thống nhất cho **toàn bộ file** của GITA:
+
+- **Logo**: hai phiên bản nền tối / nền sáng, quy tắc nên – không nên, kích thước tối thiểu khi in.
+- **Bảng màu**: 8 màu thương hiệu kèm mã hex và ngữ cảnh sử dụng; 4 màu gắn cố định với 4 mức độ nhận thức.
+- **Hệ thống chữ**: chữ chính (Be Vietnam Pro), chữ trích dẫn (Lora), chữ toán học (Cambria Math) và thang cỡ chữ.
+- **Quy chuẩn tài liệu in**: cấu trúc 7 phần bắt buộc của mọi phiếu/đề, khổ giấy, cỡ chữ, giãn dòng, mã màu in ấn.
+- **Quy chuẩn trình bày bài giải**: 4 khối cố định (Đề bài → Phân tích tư duy → Lời giải → Bẫy thường gặp) và nguyên tắc ngôn ngữ.
+- **Quy tắc đặt mã**: cấu trúc mã đề, mã chuyên đề, mã dạng bài, mã khuôn câu hỏi.
+
+## 14. Về lưu trữ dữ liệu
 
 Bản này lưu dữ liệu học tập trên trình duyệt (localStorage) để hệ thống chạy độc lập,
 không cần máy chủ. Lớp `src/lib/store.ts` đóng vai trò kho dữ liệu — khi triển khai máy chủ

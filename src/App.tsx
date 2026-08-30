@@ -21,6 +21,7 @@ import { Pricing } from '@/pages/Pricing';
 import { Library } from '@/pages/Library';
 import { Practice } from '@/pages/Practice';
 import { Notebook } from '@/pages/Notebook';
+import { Brand } from '@/pages/Brand';
 import { Card } from '@/components/ui';
 
 const Footer: React.FC = () => (
@@ -31,8 +32,11 @@ const Footer: React.FC = () => (
           <div className="bold" style={{ color: '#fff', fontSize: 18, letterSpacing: '.4px' }}>MATHGITA</div>
           <div className="small">Hệ thống luyện Toán THCS 6–9 của Trung tâm GITA · Mục tiêu 9+ điểm</div>
         </div>
-        <div className="small">
+        <div className="small tr">
           Chuẩn Chương trình GDPT 2018 · Ma trận đề theo Bộ GD&amp;ĐT
+          <div className="mt2">
+            <a href="#/nhan-dien" style={{ color: 'var(--gita-gold-500)' }}>Bộ chuẩn nhận diện thương hiệu GITA →</a>
+          </div>
         </div>
       </div>
     </div>
@@ -68,6 +72,7 @@ export const App: React.FC = () => {
   else if (p === '/thu-vien') body = <Library />;
   else if (p === '/luyen-tap') body = <Practice />;
   else if (p === '/so-tay') body = <Notebook />;
+  else if (p === '/nhan-dien') body = <Brand />;
   else body = (
     <div className="wrap page">
       <Card className="tc">

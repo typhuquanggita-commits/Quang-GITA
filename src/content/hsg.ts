@@ -15,7 +15,7 @@ export interface HsgTopic {
   examples: WorkedExample[];
 }
 
-export const HSG_TOPICS: HsgTopic[] = [
+export const HSG_TOPICS_BASE: HsgTopic[] = [
   {
     id: 'hsg-6-1', grade: 6,
     name: 'Số học nâng cao lớp 6 — Chia hết và Nguyên tố cùng nhau',

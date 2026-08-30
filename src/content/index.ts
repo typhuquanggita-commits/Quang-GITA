@@ -55,7 +55,7 @@ export const TERM_LABEL: Record<Term, string> = { HK1: 'Học kỳ I', HK2: 'H�
 
 export const GRADES: Grade[] = [6, 7, 8, 9];
 
-export * from './formulas';
-export * from './hsg';
+export { FORMULAS } from './formulas-merged';
+export * from './hsg-all';
 export * from './roadmap';
 export * from './skills';
