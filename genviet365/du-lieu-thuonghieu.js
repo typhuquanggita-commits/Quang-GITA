@@ -69,77 +69,85 @@
 
   /* ── 3 · Dấu hiệu — ẤN GEN VIỆT ────────────────────────────── */
   G.TH_AN_Y_NIEM = [
-    { t: 'Vì sao là một con dấu', n: 'Ấn triện là vật chứng nhận của người Việt suốt nghìn năm: đóng dấu nghĩa là *tôi chịu trách nhiệm về điều này*. Hệ này sống bằng bằng chứng có người xác nhận — nên dấu hiệu của nó phải là một con dấu.',
-      vi: 'Hệ vốn đã có “con dấu chi hội” là hiện vật. Dấu hiệu và hiện vật là một, không phải hai thứ rời nhau.' },
-    { t: 'Chữ V', n: 'Hai nét chụm ở đáy, mở lên trên: chữ V của *Việt*, và hình một mầm đang tách vỏ vươn lên.',
-      vi: 'Đáy chụm — mọi người bắt đầu từ cùng một điểm. Trên mở — mỗi người đi một hướng.' },
-    { t: 'Nét trái liền', n: 'Nét bên trái không đứt: **bảy nguyên lý bất biến**, phần không đổi trong ba mươi năm.',
-      vi: 'Nét này luôn dày hơn và luôn liền. Vẽ đứt là vẽ sai.' },
-    { t: 'Sáu chấm bên phải', n: 'Nét bên phải là **sáu bậc nhân tài** B1 → B6, đi lên từng chấm một, có khoảng cách giữa các chấm.',
-      vi: 'Khoảng cách là phần quan trọng nhất: lên bậc phải có quãng, không liên tục, không tự động.' },
-    { t: 'Khung vuông', n: 'Bốn cạnh khép kín: cam kết, ranh giới, và luật an toàn. Bo góc nhẹ để đọc được ở cỡ nhỏ.',
-      vi: 'Không bao giờ mở khung. Khung hở là dấu hiệu bị dùng sai.' },
-    { t: 'Mực son', n: 'Bản nghi lễ — con dấu thật, bằng bậc, trang đầu hộ chiếu — đóng bằng **đỏ son**. Bản thường ngày dùng **lam GITA**.',
-      vi: 'Đỏ son chỉ dùng cho thứ có chữ ký và có trách nhiệm. Dùng đỏ son cho tờ rơi là làm mòn nó.' }
+    { t: 'Chữ V vươn lên', n: 'Nét đỏ lớn quét từ chân lên đỉnh: chữ **V** của *Việt*, và cũng là dấu tích — dấu của việc đã làm xong. Nét thắt dần về phía trên: càng lên cao càng phải gọn.',
+      vi: 'Đây là nét chủ. Mọi biến thể đều giữ nguyên hướng và độ nghiêng của nét này.' },
+    { t: 'Ngôi sao vàng ở đỉnh', n: 'Sao năm cánh đặt đúng đỉnh nét vươn: đích của hành trình, và màu sao vàng trên nền cờ đỏ.',
+      vi: 'Sao không bao giờ rời khỏi đỉnh nét. Đặt sao ở chỗ khác là làm mất câu chuyện.' },
+    { t: 'Chuỗi xoắn kép — chữ GEN', n: 'Nét trái là **chuỗi xoắn kép** với các nấc vàng nối hai sợi: đây chính là chữ *GEN* trong cái tên, vẽ ra chứ không viết ra.',
+      vi: 'Không có chi tiết này thì dấu hiệu chỉ còn là một dấu tích. Vì thế cỡ nhỏ nhất được xác định bởi chỗ này.' },
+    { t: 'Các nấc vàng', n: 'Nối hai sợi lại thành một chuỗi. Không có nấc thì hai sợi rời nhau — và một chuỗi gen rời nhau thì không truyền được gì.',
+      vi: 'Nấc phải nằm đúng chỗ hai sợi xa nhau nhất, không phải chỗ chúng giao nhau.' },
+    { t: 'Vành quỹ đạo lam', n: 'Vòng lam hở ở chân: thế giới mà em bước ra. Vòng *hở phía trên* để chữ V xuyên qua được — không có gì chặn đường vươn.',
+      vi: 'Không bao giờ khép kín vòng này. Khép lại là biến quỹ đạo thành cái cũi.' },
+    { t: 'Ba màu quốc kỳ', n: 'Đỏ · vàng · lam. Hai màu đầu là màu cờ; lam là màu của biển và của thế giới bên ngoài.',
+      vi: 'Ba màu, không hơn. Thêm màu thứ tư là mất bản sắc.' }
   ];
 
   G.TH_AN_BIEN_THE = [
-    { ma: 'A', t: 'Ấn đơn', n: 'Chỉ dấu hiệu, không chữ.', dung: 'Huy hiệu, con dấu, thêu áo, ảnh đại diện, dấu nước, favicon.', toi: '16 px · 6 mm' },
-    { ma: 'B', t: 'Khoá ngang', n: 'Ấn bên trái, tên hai dòng bên phải.', dung: 'Giấy tiêu đề, chữ ký thư điện tử, biển hiệu, phông nền.', toi: '120 px · 30 mm' },
-    { ma: 'C', t: 'Khoá dọc', n: 'Ấn trên, tên dưới, canh giữa.', dung: 'Bìa ấn phẩm, cờ tổ, áo, khung vuông trên mạng xã hội.', toi: '90 px · 24 mm' },
-    { ma: 'D', t: 'Bản đảo', n: 'Ấn trắng trên nền màu đặc.', dung: 'Nền ảnh, nền lam, nền đỏ son, bao bì.', toi: '20 px · 8 mm' },
-    { ma: 'E', t: 'Bản một nét', n: 'Một màu, không sắc độ, nét đều.', dung: 'Dập nổi kim loại, khắc gỗ, in một màu, fax và bản sao đen trắng.', toi: '20 px · 8 mm' }
+    { ma: 'A', t: 'Bản màu đầy đủ', n: 'Ba màu đỏ · vàng · lam.', dung: 'Mọi nơi có nền sáng: web, ấn phẩm, biển hiệu, phông nền.', toi: '26 px · 9 mm' },
+    { ma: 'B', t: 'Khoá dọc', n: 'Dấu hiệu trên, tên và khẩu hiệu dưới, canh giữa.', dung: 'Bìa ấn phẩm, cờ, áo, khung vuông trên mạng xã hội.', toi: '90 px · 26 mm' },
+    { ma: 'C', t: 'Bản đảo', n: 'Trắng toàn phần trên nền màu đặc.', dung: 'Nền đỏ, nền lam, nền ảnh có khối màu đặc, bao bì.', toi: '30 px · 10 mm' },
+    { ma: 'D', t: 'Một màu đỏ', n: 'Toàn bộ một sắc đỏ.', dung: 'In một màu, dấu, con dấu chi hội.', toi: '30 px · 10 mm' },
+    { ma: 'E', t: 'Một màu mực', n: 'Toàn bộ một sắc mực.', dung: 'Dập nổi kim loại, khắc gỗ, thêu chỉ một màu, fax và bản sao đen trắng.', toi: '30 px · 10 mm' }
   ];
 
   G.TH_AN_LUAT = [
-    'Vùng an toàn quanh ấn = **một phần tư cạnh khung**. Không đặt chữ, ảnh hay đường kẻ nào vào vùng ấy.',
-    'Cỡ nhỏ nhất: **16 px** trên màn hình, **6 mm** khi in. Nhỏ hơn thì sáu chấm dính vào nhau và ý nghĩa mất.',
-    'Ấn luôn đứng thẳng. Không xoay, kể cả 15 độ cho “sinh động”.',
-    'Ấn dùng **một màu duy nhất** mỗi lần. Không tô mỗi chấm một màu, không đổ bóng, không chuyển sắc.',
-    'Không kéo giãn theo một chiều. Khoá tỉ lệ, luôn luôn.',
-    'Không đặt ấn lên ảnh nhiều chi tiết. Cần đặt lên ảnh thì dùng bản đảo trên một khối màu đặc.',
-    'Không ghép ấn với dấu hiệu của đối tác trong cùng một khối. Hai dấu hiệu cách nhau ít nhất hai vùng an toàn và có một đường kẻ mảnh phân cách.',
-    'Không vẽ lại ấn bằng tay hay bằng phông chữ khác. Chỉ dùng tệp gốc trong bộ bàn giao.',
-    '*Không bao giờ đóng dấu lên mặt người.* Đây là luật đạo đức, không phải luật thẩm mỹ.',
-    'Không dùng bản đỏ son cho quảng cáo hay khuyến mại. Đỏ son dành cho thứ có chữ ký và có trách nhiệm — dùng tràn thì mòn.'
+    'Vùng an toàn quanh dấu hiệu = **chiều cao ngôi sao**. Không đặt chữ, ảnh hay đường kẻ nào vào vùng ấy.',
+    'Cỡ nhỏ nhất: **26 px** trên màn hình, **9 mm** khi in. Ngưỡng này do chuỗi xoắn quyết định, không do khung.',
+    'Dấu hiệu luôn đứng thẳng. Không xoay, không lật gương, kể cả để “cân bố cục”.',
+    'Khoá tỉ lệ khi phóng to thu nhỏ. Không kéo giãn một chiều.',
+    'Ba màu đỏ — vàng — lam là bắt buộc ở bản đầy đủ. Bản một màu chỉ dùng khi in một màu, khắc, dập nổi, hoặc thêu.',
+    'Không đổ bóng, không viền ngoài, không chuyển sắc, không hiệu ứng kim loại.',
+    'Đặt lên ảnh thì dùng **bản đảo trên một khối màu đặc**, không đặt thẳng lên ảnh nhiều chi tiết.',
+    'GEN VIỆT đứng trước, GITA đứng sau ở dòng bảo chứng. Hai dấu hiệu cách nhau ít nhất một vùng an toàn và có đường kẻ mảnh phân cách.',
+    '*Không bao giờ đặt dấu hiệu lên mặt người.* Đây là luật đạo đức, không phải luật thẩm mỹ.',
+    'Không vẽ lại dấu hiệu bằng tay hay bằng phông chữ khác. Chỉ dùng tệp gốc của Học viện.'
   ];
 
   G.TH_AN_SAI = [
-    ['Xoay nghiêng', 'Ấn triện đóng nghiêng là ấn đóng hỏng. Ý nghĩa “chịu trách nhiệm” mất theo.'],
-    ['Đổi màu từng chấm', 'Sáu chấm là sáu bậc của MỘT con đường, không phải sáu thứ khác nhau.'],
-    ['Nối sáu chấm thành nét liền', 'Xoá mất điều quan trọng nhất: lên bậc phải có quãng.'],
-    ['Vẽ nét trái đứt', 'Nét trái là bảy nguyên lý bất biến. Đứt nghĩa là nguyên lý đổi được.'],
-    ['Bỏ khung, chỉ lấy chữ V', 'Không còn là con dấu. Còn lại một chữ V mà ai cũng có.'],
-    ['Đổ bóng, làm nổi khối', 'Con dấu là vật phẳng. Đổ bóng làm nó thành một nút bấm.'],
-    ['Kéo giãn theo một chiều', 'Khung vuông thành chữ nhật, sáu chấm lệch nhịp. Luôn khoá tỉ lệ.'],
-    ['Đặt lên nền nhiều chi tiết', 'Không đọc được thì không còn là dấu hiệu. Cần đặt lên ảnh thì dùng bản đảo trên một khối màu đặc.']
+    ['Xoay nghiêng', 'Nét vươn có hướng cố định. Xoay là làm mất hướng vươn — thứ duy nhất dấu hiệu này nói.'],
+    ['Kéo giãn một chiều', 'Chuỗi xoắn kép méo đi thì không còn là chuỗi gen. Khoá tỉ lệ, luôn luôn.'],
+    ['Đổ bóng, làm nổi khối', 'Dấu hiệu là hình phẳng. Đổ bóng biến nó thành một nút bấm.'],
+    ['Đổi sang màu khác', 'Đỏ — vàng — lam là màu cờ và màu biển. Đổi màu là đổi câu chuyện.'],
+    ['Làm mờ, làm xám', 'Dùng khi không đủ tương phản là dấu hiệu chọn sai nền, không phải lý do làm mờ dấu hiệu.'],
+    ['Lật gương', 'Nét vươn phải đi từ trái dưới lên phải trên. Lật lại là đi ngược.'],
+    ['Đặt lên nền nhiều chi tiết', 'Không đọc được thì không còn là dấu hiệu. Cần đặt lên ảnh thì dùng bản đảo trên một khối màu đặc.'],
+    ['Thu nhỏ quá ngưỡng', 'Dưới 26 px các nấc vàng dính vào nhau, chuỗi xoắn thành một vệt, và chữ GEN mất nghĩa.']
   ];
 
   /* ── 4 · Màu ────────────────────────────────────────────────
      Bảng màu kế thừa nguyên vẹn nhận diện Học viện GITA. Mọi mã
      màu chữ đều đã qua bộ kiểm tương phản WCAG AA ở cả hai chế độ. */
+  /* Hai họ màu, và phải phân biệt rõ:
+     · MÀU DẤU HIỆU — dùng cho hình, không dùng cho chữ dài. Ba màu
+       này lấy từ dấu hiệu gốc và không được đổi.
+     · MÀU CHỮ — dùng cho văn bản, bắt buộc đạt tương phản WCAG AA
+       4.5:1. Đây là lý do màu chữ đỏ đậm hơn màu đỏ của dấu hiệu. */
   G.TH_MAU = [
-    { t: 'Lam GITA', hex: '#185AB4', rgb: '24 · 90 · 180', cmyk: '87 · 60 · 0 · 6', pantone: 'gần 2145 C',
-      vai: 'Màu chủ. Dấu hiệu bản thường ngày, tiêu đề, đường dẫn.', tp: '5.70 : 1', mau: '#185AB4' },
-    { t: 'Đỏ son', hex: '#BE0E16', rgb: '190 · 14 · 22', cmyk: '13 · 100 · 100 · 4', pantone: 'gần 186 C',
-      vai: 'Màu nghi lễ. Con dấu thật, bằng bậc, trang đầu hộ chiếu, mức đền trong bảng cam kết.', tp: '5.52 : 1', mau: '#BE0E16' },
+    { t: 'Đỏ dấu hiệu', hex: '#E01B22', rgb: '224 · 27 · 34', cmyk: '4 · 96 · 92 · 0', pantone: 'gần 485 C',
+      vai: 'HÌNH — nét chữ V, tên GEN VIỆT trên dấu hiệu. **Không dùng cho chữ chạy.**', tp: '4.06 : 1 · chỉ đạt chữ lớn', mau: '#E01B22' },
+    { t: 'Vàng sao', hex: '#F7C013', rgb: '247 · 192 · 19', cmyk: '2 · 25 · 100 · 0', pantone: 'gần 7408 C',
+      vai: 'HÌNH — ngôi sao và các nấc chuỗi xoắn. **Không bao giờ dùng cho chữ.**', tp: '1.68 : 1 · chỉ dùng cho hình', mau: '#F7C013' },
+    { t: 'Lam quỹ đạo', hex: '#1C60AE', rgb: '28 · 96 · 174', cmyk: '90 · 60 · 0 · 5', pantone: 'gần 2945 C',
+      vai: 'HÌNH — vành quỹ đạo, và chữ GITA trên dấu hiệu mẹ.', tp: '5.34 : 1 · đạt AA', mau: '#1C60AE' },
+    { t: 'Lam nhạt GITA', hex: '#4A8FD0', rgb: '74 · 143 · 208', cmyk: '68 · 33 · 0 · 0', pantone: 'gần 2925 C',
+      vai: 'HÌNH — vệt ngoài của dấu hiệu GITA.', tp: '2.71 : 1 · chỉ dùng cho hình', mau: '#4A8FD0' },
+    { t: 'Lam chữ', hex: '#185AB4', rgb: '24 · 90 · 180', cmyk: '87 · 60 · 0 · 6', pantone: 'gần 2145 C',
+      vai: 'CHỮ — màu chủ của văn bản, tiêu đề, đường dẫn.', tp: '5.70 : 1 · đạt AA', mau: '#185AB4' },
+    { t: 'Đỏ chữ', hex: '#BE0E16', rgb: '190 · 14 · 22', cmyk: '13 · 100 · 100 · 4', pantone: 'gần 186 C',
+      vai: 'CHỮ — cảnh báo, mức đền, băng ĐỎ. Đậm hơn đỏ dấu hiệu để đạt tương phản.', tp: '5.52 : 1 · đạt AA', mau: '#BE0E16' },
     { t: 'Tím trí', hex: '#5140B4', rgb: '81 · 64 · 180', cmyk: '77 · 76 · 0 · 6', pantone: 'gần 2725 C',
-      vai: 'Huấn luyện và tri thức. Nhóm giáo trình, chuyên đề, GITA 365.', tp: '6.28 : 1', mau: '#5140B4' },
-    { t: 'Lục lam', hex: '#0B6675', rgb: '11 · 102 · 117', cmyk: '91 · 40 · 33 · 20', pantone: 'gần 315 C',
-      vai: 'Chi hội và cộng đồng. Nơi có nhiều người cùng làm.', tp: '5.62 : 1', mau: '#0B6675' },
+      vai: 'CHỮ — huấn luyện và tri thức.', tp: '6.28 : 1 · đạt AA', mau: '#5140B4' },
     { t: 'Lục bằng chứng', hex: '#0B7350', rgb: '11 · 115 · 80', cmyk: '87 · 30 · 79 · 19', pantone: 'gần 342 C',
-      vai: 'Đạt, xác nhận, băng XANH. Chỉ dùng khi đã có bằng chứng.', tp: '5.03 : 1', mau: '#0B7350' },
-    { t: 'Vàng chí', hex: '#8A6006', rgb: '138 · 96 · 6', cmyk: '25 · 50 · 100 · 25', pantone: 'gần 111 C',
-      vai: 'Cảnh báo sớm, băng VÀNG, giới hạn phải nói rõ.', tp: '4.80 : 1', mau: '#8A6006' },
-    { t: 'Cam chú ý', hex: '#9E470D', rgb: '158 · 71 · 13', cmyk: '20 · 75 · 100 · 12', pantone: 'gần 1595 C',
-      vai: 'Băng CAM, việc phải xử trong tuần.', tp: '5.28 : 1', mau: '#9E470D' },
+      vai: 'CHỮ — đạt, xác nhận, băng XANH. Chỉ dùng khi đã có bằng chứng.', tp: '5.03 : 1 · đạt AA', mau: '#0B7350' },
     { t: 'Mực', hex: '#0E1826', rgb: '14 · 24 · 38', cmyk: '90 · 75 · 55 · 70', pantone: 'gần 5255 C',
-      vai: 'Chữ chính, Học viện GITA, bản một nét.', tp: '15.31 : 1', mau: '#0E1826' },
+      vai: 'CHỮ — chữ chính, và bản một màu của dấu hiệu.', tp: '15.31 : 1 · đạt AA', mau: '#0E1826' },
     { t: 'Nền lệch lam', hex: '#EAEEF3', rgb: '234 · 238 · 243', cmyk: '6 · 3 · 2 · 0', pantone: 'gần 656 C',
-      vai: 'Nền. Xám lệch lam, cố ý không phải xám trung tính, để sáu màu trên đứng không chói.', tp: 'nền', mau: '#EAEEF3' }
+      vai: 'NỀN — xám lệch lam, cố ý không phải xám trung tính.', tp: 'nền', mau: '#EAEEF3' }
   ];
 
   G.TH_MAU_LUAT = [
+    '*Phân biệt hai họ màu.* **Màu dấu hiệu** dùng cho hình và không phải đạt tương phản chữ. **Màu chữ** dùng cho văn bản và bắt buộc đạt WCAG AA 4.5:1. Đỏ dấu hiệu #E01B22 chỉ đạt 4.06:1 nên KHÔNG dùng cho chữ chạy — chữ đỏ dùng #BE0E16.',
     'Tỉ lệ **60 · 30 · 10**: 60 nền, 30 mực, 10 màu nhấn. Một trang dùng quá hai màu nhấn là một trang mất trật tự.',
     'Mọi mã màu **đi vào chữ** phải đạt tương phản ≥ **4.5 : 1** trên nền của chính chế độ ấy. Bộ kiểm phát hành chặn nếu không đạt — ở cả chế độ sáng và tối.',
     'Màu không bao giờ là **thông tin duy nhất**. Băng màu luôn kèm chữ; biểu đồ luôn kèm nhãn. Khoảng 8% nam giới không phân biệt được đỏ và lục.',

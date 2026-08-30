@@ -83,7 +83,8 @@ ok(MOI.length + ' tệp JS · cú pháp sạch');
 
 /* ── 3 · sinh lại tài liệu và dấu hiệu ─────────────────────── */
 tieu('SINH LẠI TÀI LIỆU VÀ DẤU HIỆU');
-['sinh-thu-vien.cjs', 'sinh-trainghiem.cjs', 'sinh-thuonghieu.cjs', 'sinh-camtay.cjs']
+['ve-dau-hieu.cjs', 'sinh-thu-vien.cjs', 'sinh-trainghiem.cjs', 'sinh-thuonghieu.cjs',
+ 'sinh-camtay.cjs', 'sinh-nhuongquyen.cjs']
   .forEach(function (t) {
     var r = chay('node ' + JSON.stringify(path.join(GOC, 'tools', t)));
     if (r.loi) chet('Bộ sinh ' + t + ' hỏng', r.ra);
@@ -156,7 +157,18 @@ ban.forEach(function (b) {
   ok(b[2] + '  ' + kb + ' KB  · ' + b[3]);
 });
 
-/* ── 7 · bảng số ───────────────────────────────────────────── */
+/* ── 7 · trang tĩnh cho máy tìm kiếm ────────────────────────
+   Bản đầy đủ đổi màn bằng dấu thăng, và máy tìm kiếm không lập
+   chỉ mục phần sau dấu thăng. Nên mỗi màn công khai còn được dựng
+   thành một tệp riêng có địa chỉ riêng — xem nhóm 28. */
+tieu('TRANG TĨNH CHO MÁY TÌM KIẾM');
+var rTim = chay('node ' + JSON.stringify(path.join(GOC, 'tools/sinh-trang-tim.cjs')));
+if (rTim.loi) chet('Sinh trang tĩnh hỏng', rTim.ra);
+String(rTim).trim().split('\n').forEach(function (d) {
+  if (d.trim()) console.log('   ' + d.trim().replace(/^[✓!]\s*/, function (m) { return m; }));
+});
+
+/* ── 8 · bảng số ───────────────────────────────────────────── */
 tieu('BẢN VỪA DỰNG');
 var d2 = [
   ['mã bản', ma], ['ngày', ngay],

@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════
    GEN VIỆT 365 · ĐỊNH NGHĨA MÀN HÌNH
-   Hai mươi sáu nhóm · 150 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
+   Hai mươi tám nhóm · 167 màn. Mỗi màn là một danh sách KHỐI; lớp giao diện biết
    dựng từng loại khối. Thêm màn mới thì thêm ở đây, không đụng vào
    giao-dien.js — trừ khi cần một loại khối chưa từng có.
    Trong khối "van", dấu *…* thành chữ đậm.
@@ -237,6 +237,29 @@ GV.NHOM = [
       { v: 'kn-sau-buoc', t: 'Sáu bước vào nghề', h: 'Chạm tài năng → hồ sơ hướng nghiệp' },
       { v: 'kn-de-tai', t: 'Mười đề tài nghiên cứu', h: 'GV-R1 → GV-R10 · đăng ký được cấp Sở' },
       { v: 'kn-thiet-ke', t: 'Thiết kế nghiên cứu', h: 'Có nhóm đối chứng, tối thiểu 6–12 tháng' }
+    ]},
+  { id: 'g27', no: '27', t: 'NHƯỢNG QUYỀN', s: 'Người khác cầm hệ này đi mở thì cầm gì', mau: '#0B7350',
+    ds: [
+      { v: 'nq-goi', t: 'Bốn gói nhượng quyền', h: 'Chi hội trường · Trung tâm · Vùng · Quốc gia' },
+      { v: 'nq-dieu-kien', t: 'Điều kiện tiên quyết', h: 'Sáu nhóm · thiếu một nhóm là không xét' },
+      { v: 'nq-chang', t: 'Hành trình 180 ngày', h: 'Thẩm định → công nhận · năm chặng' },
+      { v: 'nq-dao-tao', t: 'Đào tạo và chứng nhận', h: 'Năm học phần · 96 giờ · có thi' },
+      { v: 'nq-kiem-dinh', t: 'Kiểm định và chế tài', h: 'Sáu phần · 100 điểm · bốn mức' },
+      { v: 'nq-phi', t: 'Cấu trúc phí', h: 'Bảy khoản · nói rõ khoản nào hoàn lại' },
+      { v: 'nq-lanh-tho', t: 'Lãnh thổ và độc quyền', h: 'Độc quyền có điều kiện, xét lại mỗi năm' },
+      { v: 'nq-hop-dong', t: 'Hợp đồng và bàn giao', h: 'Mười sáu điều khoản · ba lớp hồ sơ' },
+      { v: 'nq-luat', t: 'Luật nhượng quyền', h: 'Mười hai luật · bảy điều từ chối' },
+      { v: 'nq-faq', t: 'Câu hỏi thường gặp', h: 'Nhà trường · nhà đầu tư · gia đình' }
+    ]},
+  { id: 'g28', no: '28', t: 'TÌM THẤY ĐƯỢC VÀ ĐÁNG TIN', s: 'Để người cần hệ này tìm ra nó', mau: '#185AB4',
+    ds: [
+      { v: 'seo-nguyen-tac', t: 'Bảy nguyên tắc', h: 'Xếp hạng là hệ quả, không phải mục tiêu' },
+      { v: 'seo-y-dinh', t: 'Bản đồ ý định tìm kiếm', h: 'Tám nhóm người · sáu cụm nội dung' },
+      { v: 'seo-eeat', t: 'Bốn tín hiệu uy tín', h: 'E-E-A-T · và chỗ hệ này chứng minh từng cái' },
+      { v: 'seo-ky-thuat', t: 'Mười hai hạng mục kỹ thuật', h: 'Thẻ, dữ liệu cấu trúc, tốc độ, tiếp cận' },
+      { v: 'seo-phan-hoi', t: 'Hệ phản hồi năm sao', h: 'Sáu bước · không mua, không lọc trước' },
+      { v: 'seo-do', t: 'Tám chỉ số phải đo', h: 'Đo theo cụm, không đo theo từ khoá đơn' },
+      { v: 'seo-90', t: 'Chín mươi ngày đầu tiên', h: 'Nền → phủ ý định → dựng tin cậy' }
     ]}
 ];
 
@@ -1148,7 +1171,7 @@ GV.MAN = {
   p: 'Kế thừa nguyên vẹn nhận diện Học viện GITA. Mọi mã màu chữ đều đã qua bộ kiểm tương phản, ở cả chế độ sáng và tối.',
   khoi: [
     { k: 'swatch', tu: 'TH_MAU' },
-    { k: 'muc', t: 'Sáu luật dùng màu' },
+    { k: 'muc', t: 'Bảy luật dùng màu' },
     { k: 'luat', tu: 'TH_MAU_LUAT' },
     { k: 'trich', t: 'Màu không bao giờ là thông tin duy nhất. Khoảng tám phần trăm nam giới không phân biệt được đỏ và lục.', n: 'Luật thứ ba' }
   ]},
@@ -1572,6 +1595,162 @@ GV.MAN = {
     { k: 'luoi', c: 2, tu: 'TY_KN_THIET_KE' },
     { k: 'van', t: 'Khung này nối thẳng vào nhóm 16 — ba tầng bằng chứng và tám chỉ số đo được ngoài hệ — và vào nhóm 18, phần ánh xạ sang chuẩn quốc gia. Một hồ sơ đề tài đủ mạnh là hồ sơ có cả ba: thiết kế đúng, bằng chứng tầng ba, và ngôn ngữ chuẩn quốc gia.' },
     { k: 'trich', t: 'Không có nhóm đối chứng thì mọi con số chỉ là mô tả, không phải bằng chứng.', n: 'Dòng đầu tiên của khung' }
+  ]},
+
+/* ══════════ NHÓM 27 · NHƯỢNG QUYỀN ══════════ */
+'nq-goi': { q: 'tu_van', k: 'Nhượng quyền', t: 'Bốn gói nhượng quyền',
+  p: 'Bốn gói không khác nhau ở chất lượng, chỉ khác nhau ở phạm vi. Gói nhỏ nhất cũng phải qua đúng năm chặng và đúng ngưỡng kiểm định như gói lớn nhất.',
+  khoi: [
+    { k: 'goi', tu: 'NQ_GOI' },
+    { k: 'muc', t: 'Được trao gì và không được trao gì' },
+    { k: 'van', t: 'Phần lớn tranh chấp nhượng quyền trên thị trường bắt đầu ở chỗ hai bên hiểu khác nhau về *cái đã được trao*. Bảng dưới đây viết ra để không còn chỗ hiểu khác.' },
+    { k: 'bang', cot: ['Hạng mục', 'Được trao', 'Không được trao', 'Vì sao'], tu: 'NQ_TRAO' },
+    { k: 'trich', t: 'Tên là tài sản chung của cả hệ. Một điểm làm hỏng tên thì mọi điểm cùng chịu.', n: 'Dòng đầu bảng trao quyền' }
+  ]},
+
+'nq-dieu-kien': { q: 'dh_toan_he', k: 'Nhượng quyền', t: 'Điều kiện tiên quyết',
+  p: 'Sáu nhóm điều kiện. Không có nhóm nào được bù bằng nhóm khác — đủ tiền không bù được thiếu người, và đủ người không bù được thiếu giấy tờ pháp lý.',
+  khoi: [
+    { k: 'moc', tu: 'NQ_DIEU_KIEN' },
+    { k: 'van', t: 'Nhóm cuối cùng — *ý định* — là nhóm duy nhất không đo được bằng hồ sơ, và cũng là nhóm loại nhiều hồ sơ nhất. Một đơn vị đủ tiền, đủ người, đủ giấy mà trả lời câu "mở cái này để làm gì trong mười năm" bằng một con số doanh thu thì hồ sơ dừng ở đó.' },
+    { k: 'trich', t: 'Quyền trao cho một người, không trao cho một địa chỉ.', n: 'Luật nhượng quyền thứ nhất' }
+  ]},
+
+'nq-chang': { q: 'dh_toan_he', k: 'Nhượng quyền', t: 'Hành trình 180 ngày mở một điểm',
+  p: 'Năm chặng, sáu tháng, không rút gọn cho ai. Mỗi chặng có một cổng, và cổng chỉ có hai trạng thái: qua hoặc chưa qua.',
+  khoi: [
+    { k: 'chang', tu: 'NQ_CHANG' },
+    { k: 'van', t: 'Điểm dễ hỏng nhất của mọi hệ nhượng quyền nằm ở chặng năm: *cấp phép có điều kiện* để giữ quan hệ. Trong lịch sử vận hành, điều kiện kèm theo một giấy phép đã cấp gần như chưa bao giờ được hoàn thành. Nên hệ này không có trạng thái ở giữa.' },
+    { k: 'trich', t: 'Đạt thì cấp, chưa đạt thì quay lại chặng trước.', n: 'Luật nhượng quyền thứ ba' }
+  ]},
+
+'nq-dao-tao': { q: 'nghe_quan_ly', k: 'Nhượng quyền', t: 'Đào tạo và cấp chứng nhận',
+  p: 'Chất lượng đi theo người, không đi theo giấy phép. Nên phần này là phần dài nhất của toàn bộ hành trình: 96 giờ, năm học phần, có thi và có ngưỡng đạt.',
+  khoi: [
+    { k: 'bang', cot: ['Mã', 'Học phần', 'Thời lượng', 'Nội dung', 'Đạt khi nào'], tu: 'NQ_HOC_PHAN' },
+    { k: 'van', t: 'Chứng nhận có thời hạn hai năm và gắn với *người*, không gắn với cơ sở. Người chuyển nơi làm thì mang chứng nhận đi; cơ sở phải đưa người thay thế qua đào tạo trong sáu tháng. Đây là lý do một điểm không thể mua chuẩn một lần rồi giữ mãi.' },
+    { k: 'trich', t: 'Người chưa có chứng nhận không đứng lớp, kể cả buổi khai giảng.', n: 'Luật nhượng quyền thứ tư' }
+  ]},
+
+'nq-kiem-dinh': { q: 'nghiem_thu', k: 'Nhượng quyền', t: 'Kiểm định và bốn mức chế tài',
+  p: 'Sáu phần, 100 điểm, ngưỡng đạt 85. Phần an toàn trẻ em có một luật riêng: bằng không thì cả kỳ không đạt, bất kể tổng điểm là bao nhiêu.',
+  khoi: [
+    { k: 'cham', nguong: 85, tu: 'NQ_KIEM_DINH' },
+    { k: 'muc', t: 'Bốn mức chế tài' },
+    { k: 'van', t: 'Chế tài đi theo trình tự, và trình tự ghi trong hợp đồng chứ không quyết định tuỳ nghi từng trường hợp. Ngoại lệ duy nhất là vi phạm an toàn trẻ em — vào thẳng mức bốn ngay lần đầu.' },
+    { k: 'thang', tu: 'NQ_CHE_TAI' },
+    { k: 'trich', t: 'Người chấm và người được chấm không được là một.', n: 'Bảng trao quyền · dòng kiểm định' }
+  ]},
+
+'nq-phi': { q: 'tai_chinh', k: 'Nhượng quyền', t: 'Cấu trúc phí',
+  p: 'Bảy khoản. Kho này ghi cấu trúc và nguyên tắc, không ghi con số — con số nằm trong biểu phí có hiệu lực theo năm, ký kèm hợp đồng.',
+  khoi: [
+    { k: 'bang', cot: ['Khoản', 'Nộp khi nào', 'Hoàn lại hay không', 'Đổi lấy gì'], tu: 'NQ_PHI' },
+    { k: 'van', t: 'Hai khoản đáng chú ý. *Phí bản quyền theo doanh thu* gắn lợi ích hai bên vào cùng một chiều — bên nhận quyền tốt lên thì cả hai cùng tốt lên; đây là lý do nó tồn tại, không phải để thu thêm. *Quỹ phát triển chung* công khai thu chi mỗi sáu tháng cho toàn bộ bên nhận quyền: không công khai được thì không thu.' },
+    { k: 'canh', ds: [
+      'Học viện không cam kết bất kỳ con số doanh thu hay số học sinh nào cho bên nhận quyền.',
+      'Không nhận đặt cọc giữ chỗ lãnh thổ khi hồ sơ chưa qua thẩm định.',
+      'Phí thẩm định trả lại toàn bộ nếu Hội đồng Chuẩn không duyệt hồ sơ.'
+    ]}
+  ]},
+
+'nq-lanh-tho': { q: 'dh_toan_he', k: 'Nhượng quyền', t: 'Lãnh thổ và độc quyền',
+  p: 'Độc quyền là phần thưởng cho việc giữ chuẩn, không phải quyền tự nhiên có được nhờ đã nộp phí.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'NQ_LANH_THO' },
+    { k: 'van', t: 'Luật thứ tư trong sáu luật trên là luật khó chịu nhất với bên nhận quyền và cũng là luật không thương lượng được: *ranh giới không chặn được người học*. Lãnh thổ ràng buộc bên nhận quyền, không ràng buộc gia đình. Ràng buộc người học vào một điểm là đặt lợi ích kinh doanh lên trên lợi ích đứa trẻ — và đó là chỗ hệ này không đi qua.' },
+    { k: 'trich', t: 'Quyền vùng là nghĩa vụ mở, không phải quyền chặn.', n: 'Gói NQ-3 · phần không phù hợp với ai' }
+  ]},
+
+'nq-hop-dong': { q: 'dh_toan_he', k: 'Nhượng quyền', t: 'Hợp đồng và bộ hồ sơ bàn giao',
+  p: 'Mười sáu điều khoản bắt buộc. Không điều nào chỉ để ràng buộc — mỗi điều bảo vệ một thứ cụ thể, và cột cuối bảng nói rõ thứ đó là gì.',
+  khoi: [
+    { k: 'bang', cot: ['Điều', 'Nội dung bắt buộc', 'Bảo vệ điều gì'], tu: 'NQ_HOP_DONG' },
+    { k: 'muc', t: 'Bộ hồ sơ bàn giao · ba lớp' },
+    { k: 'van', t: 'Bàn giao bằng lời rồi bổ sung giấy sau là cách nhanh nhất để về sau không ai chứng minh được đã trao gì. Ba lớp dưới đây bàn giao một lần, có biên bản, có chữ ký hai bên.' },
+    { k: 'moc', tu: 'NQ_BAN_GIAO' }
+  ]},
+
+'nq-luat': { q: 'dh_toan_he', k: 'Nhượng quyền', t: 'Mười hai luật và bảy điều từ chối',
+  p: 'Luật là thứ không thương lượng trong phòng họp. Viết ra trước để không phải quyết định lúc đang có áp lực.',
+  khoi: [
+    { k: 'luat', tu: 'NQ_LUAT' },
+    { k: 'muc', t: 'Bảy điều Học viện từ chối làm' },
+    { k: 'van', t: 'Danh sách này quan trọng ngang danh sách những điều Học viện làm được. Một hệ nhượng quyền nói rõ chỗ mình từ chối thì bên nhận quyền biết mình đang bước vào cái gì — và bên nào thấy các điều dưới đây là trở ngại thì nên dừng ở đây, sớm và không mất gì.' },
+    { k: 'canh', tu: 'NQ_TU_CHOI' },
+    { k: 'trich', t: 'Không bán quyền độc quyền vĩnh viễn cho bất kỳ ai, ở bất kỳ mức phí nào.', n: 'Điều từ chối thứ nhất' }
+  ]},
+
+'nq-faq': { q: 'tu_van', k: 'Nhượng quyền', t: 'Câu hỏi thường gặp về nhượng quyền',
+  p: 'Chín câu, chia theo người hỏi. Bao gồm cả những câu mà trả lời thẳng sẽ làm mất một số hồ sơ.',
+  khoi: [
+    { k: 'faq', tu: 'NQ_FAQ' },
+    { k: 'van', t: 'Câu khó nhất là câu *bao lâu thì hoàn vốn*. Học viện không trả lời bằng một con số, vì trả lời được nghĩa là đang cam kết một kết quả phụ thuộc vào cách bên khác vận hành. Điều nói rõ được là điều kiện tài chính bắt buộc — và ai không đáp ứng thì hồ sơ dừng ở vòng thẩm định, kể cả khi rất muốn.' }
+  ]},
+
+/* ══════════ NHÓM 28 · TÌM THẤY ĐƯỢC VÀ ĐÁNG TIN ══════════ */
+'seo-nguyen-tac': { q: 'chung', k: 'Hiện diện số', t: 'Bảy nguyên tắc để được tìm thấy',
+  p: 'Không ai — kể cả Google — bảo đảm được vị trí số một. Thứ làm được là làm cho trang này thành câu trả lời tốt nhất hiện có cho một câu hỏi cụ thể, rồi để máy tìm kiếm không còn lựa chọn nào tốt hơn.',
+  khoi: [
+    { k: 'ly', tu: 'SE_NGUYEN_TAC' },
+    { k: 'van', t: 'Bảy nguyên tắc này không phải bảy thủ thuật. Chúng là *cùng một hệ giá trị* mà nhóm 16 đã dùng cho bằng chứng và nhóm 12 đã dùng cho cam kết dịch vụ, chỉ đem áp vào một chỗ khác. Đó cũng là lý do phần này đặt được: một hệ đã quen nói rõ giới hạn của mình thì không phải học lại điều gì để làm E-E-A-T.' },
+    { k: 'muc', t: 'Bảy việc không làm' },
+    { k: 'canh', tu: 'SE_KHONG' },
+    { k: 'trich', t: 'Mọi thủ thuật xếp hạng đều có tuổi thọ ngắn hơn một thuật toán. Chất lượng thì không.', n: 'Nguyên tắc thứ nhất' }
+  ]},
+
+'seo-y-dinh': { q: 'tu_van', k: 'Hiện diện số', t: 'Bản đồ ý định tìm kiếm',
+  p: 'Tám nhóm người gõ tám kiểu câu khác nhau về cùng một thứ. Ai gõ câu nào thì đang ở đâu trong quyết định của họ — và trang phải trả lời đúng chỗ đó.',
+  khoi: [
+    { k: 'bang', cot: ['Người tìm', 'Câu họ gõ', 'Ý định thật', 'Trang phải trả lời', 'Bằng chứng đi kèm'], tu: 'SE_Y_DINH' },
+    { k: 'van', t: 'Bảng này *cố ý không ghi lượng tìm kiếm*. Lượng tìm kiếm phải đo bằng số thật từ báo cáo truy vấn sau khi trang đã chạy, không đoán trước bằng công cụ ước lượng. Ghi một con số đoán vào đây rồi nhiều tháng sau vẫn dùng nó để quyết định là cách một bản kế hoạch tự lừa mình.' },
+    { k: 'muc', t: 'Sáu cụm nội dung' },
+    { k: 'van', t: 'Mỗi cụm có một màn *trụ* trả lời câu hỏi lớn, và các màn *vệ tinh* trả lời từng phần nhỏ. Mỗi màn vệ tinh dẫn về trụ, và trụ dẫn ra hết vệ tinh. Cấu trúc này hệ đã có sẵn qua khối liên quan tự tính — phần thêm ở đây chỉ là đặt tên cho sáu cụm để biết chỗ nào còn thiếu.' },
+    { k: 'moc', tu: 'SE_CUM' }
+  ]},
+
+'seo-eeat': { q: 'chung', k: 'Hiện diện số', t: 'Bốn tín hiệu uy tín',
+  p: 'E-E-A-T không phải một chỉ số Google công bố. Nó là cách người chấm chất lượng của Google đọc một trang — và bốn thứ họ tìm thì hệ này chứng minh được bằng vật liệu đã có.',
+  khoi: [
+    { k: 'luoi', c: 2, tu: 'SE_EEAT' },
+    { k: 'van', t: 'Tín hiệu thứ tư — *đáng tin* — có trọng số cao nhất, và cũng là tín hiệu khó làm giả nhất, vì nó đo bằng những chỗ một trang tự nói điều bất lợi cho mình. Hệ này có sẵn ba chỗ như thế: mục *không phù hợp với ai* trong mọi gói, bảy điều Học viện từ chối, và khoản đền kèm mọi cam kết dịch vụ.' },
+    { k: 'trich', t: 'Một trang toàn năm sao không có lấy một lời chê là dấu hiệu đầu tiên người đọc nhận ra là giả.', n: 'Nguyên tắc thứ tư' }
+  ]},
+
+'seo-ky-thuat': { q: 'qt_noi_dung', k: 'Hiện diện số', t: 'Mười hai hạng mục kỹ thuật',
+  p: 'Cột cuối bảng không ghi việc phải làm — nó ghi chỗ việc ấy đã được làm trong chính bản dựng này.',
+  khoi: [
+    { k: 'bang', cot: ['Hạng mục', 'Chuẩn phải đạt', 'Làm ở đâu trong bản này'], tu: 'SE_KY_THUAT' },
+    { k: 'van', t: 'Ba hạng mục cuối — tốc độ, đọc được trên điện thoại, tiếp cận được — vốn đã là điều kiện phát hành của hệ này từ trước khi có phần SEO. Bộ kiểm chặn mọi bản dựng tràn ngang ở 390 điểm ảnh hoặc có mã màu chữ dưới ngưỡng WCAG AA. Đó là lý do phần kỹ thuật ở đây ngắn: phần lớn đã xong trước khi được gọi tên.' },
+    { k: 'muc', t: 'Dữ liệu có cấu trúc · mẫu khai báo' },
+    { k: 'ma', tu: 'SE_SCHEMA' },
+    { k: 'van', t: 'Khai báo này sinh tự động từ kho vào thẻ *script* kiểu ld+json ở đầu trang, nên nó không bao giờ lệch với nội dung thật — sửa kho là khai báo đổi theo.' }
+  ]},
+
+'seo-phan-hoi': { q: 'tu_van', k: 'Hiện diện số', t: 'Hệ phản hồi năm sao',
+  p: 'Sáu bước, theo đúng thứ tự. Bước khó nhất là bước thứ tư: gửi lời mời cho tất cả, kể cả những gia đình biết chắc sẽ chê.',
+  khoi: [
+    { k: 'buoc', tu: 'SE_PHAN_HOI' },
+    { k: 'muc', t: 'Sáu luật phản hồi' },
+    { k: 'luat', tu: 'SE_PH_LUAT' },
+    { k: 'van', t: 'Luật cuối cùng đáng nói riêng: *không gộp điểm trung bình của nhiều điểm nhượng quyền thành một con số chung*. Gộp lại thì điểm tốt che điểm kém, gia đình không biết mình đang chọn cái gì, và điểm kém không có áp lực phải sửa. Mỗi điểm chịu trách nhiệm về điểm của mình — điều này ăn khớp với danh bạ công khai kỳ kiểm định gần nhất ở nhóm 27.' },
+    { k: 'trich', t: 'Im lặng trước một lời chê có sức nặng hơn chính lời chê ấy.', n: 'Bước thứ năm' }
+  ]},
+
+'seo-do': { q: 'kpi_toan_he', k: 'Hiện diện số', t: 'Tám chỉ số phải đo',
+  p: 'Đo theo cụm, không đo theo từ khoá đơn lẻ. Vị trí của một từ khoá đơn dao động hằng ngày và không nói lên điều gì.',
+  khoi: [
+    { k: 'bang', cot: ['Chỉ số', 'Đo bằng gì', 'Nhịp đọc', 'Đọc ra điều gì'], tu: 'SE_DO' },
+    { k: 'van', t: 'Chỉ số thứ tư — *câu người ta thật sự gõ* — là chỉ số duy nhất phải đọc bằng mắt chứ không chỉ nhìn số. Nó là nguồn tốt nhất để biết nên viết màn tiếp theo về gì, và nó thường chỉ ra những câu hỏi mà cả hệ chưa từng nghĩ tới.' },
+    { k: 'trich', t: 'Một lần được dẫn từ nguồn ngành giá trị hơn trăm lần tự đăng.', n: 'Chỉ số thứ tám' }
+  ]},
+
+'seo-90': { q: 'dh_toan_he', k: 'Hiện diện số', t: 'Chín mươi ngày đầu tiên',
+  p: 'Ba đợt ba mươi ngày: dựng nền, phủ ý định, dựng tin cậy. Đúng thứ tự — phủ nội dung trước khi có nền kỹ thuật là viết cho không ai đọc.',
+  khoi: [
+    { k: 'quy', tu: 'SE_90' },
+    { k: 'van', t: 'Đợt ba là đợt chậm thấy kết quả nhất và cũng là đợt quyết định. Hai đợt đầu đưa trang vào chỉ mục và đưa nội dung tới đúng người; đợt ba là thứ khiến người ấy tin. Sau chín mươi ngày, việc lặp lại là đọc báo cáo truy vấn và chọn ba câu hỏi mới cho chu kỳ sau — không có đợt thứ tư, chỉ có vòng lặp.' },
+    { k: 'trich', t: 'Người tìm kiếm không bao giờ vào từ trang chủ. Chỗ nào cũng phải là cửa vào tử tế.', n: 'Nguyên tắc thứ bảy' }
   ]}
 
 };

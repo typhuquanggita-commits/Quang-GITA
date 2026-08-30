@@ -954,3 +954,19 @@ ul.vai li span{color:var(--muc2); font-size:12.5px}
 .gd-n .o.moc{border-left-color:var(--vang)}
 .gd-n .o.do-g{border-left-color:var(--xanh)}
 @media print{ .tuy article,.gd-h{box-shadow:none; break-inside:avoid} }
+
+/* ══════════ DẤU HIỆU THẬT ══════════ */
+.dh{display:block; height:auto}
+.kdoc{display:grid; justify-items:center; gap:10px; color:var(--t,inherit)}
+.kd-chu{display:grid; justify-items:center; gap:2px}
+.kd-chu .ten{font-family:var(--chu); font-weight:700; font-size:26px; letter-spacing:.02em; color:#E01B22}
+.kd-chu .phu{font-family:var(--chu); font-weight:600; font-size:12.5px; letter-spacing:.03em; color:#E01B22}
+.an-y{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; margin-bottom:6px}
+.an-y .y{border:1px solid var(--vien); border-left:5px solid var(--c); border-radius:var(--r);
+  background:var(--the); padding:13px 17px 15px; font-size:13.5px; color:var(--muc2); line-height:1.55}
+.an-y .y b{display:block; font-family:var(--ma); font-size:10px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--c); margin-bottom:4px}
+.an-cap .o{display:flex; align-items:center; justify-content:center; gap:26px; flex-wrap:wrap;
+  padding:26px; border:1px solid var(--vien); border-radius:var(--r); background:var(--the)}
+.an-cap .vach{width:1px; height:70px; background:var(--vien2)}
+.an-cap .van{margin-top:10px}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GITA — một màu lam
+     Học viện GITA · GITA — một màu lam
+     BẢN DỰNG LẠI cho hệ thống trình bày. Khi nộp hồ sơ quyền tác
+     giả, đăng ký nhãn hiệu, hoặc giao cho nhà in thì PHẢI dùng
+     TỆP GỐC của Học viện, không dùng tệp này. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 165" role="img" aria-label="GITA — một màu lam">
+  <title>GITA — một màu lam</title>
+  <path transform="rotate(-6 232 118)" d="M8 118 A224 92 0 0 1 415.68 46.24 L407.68 57.76 A208 76 0 0 0 24 118 Z" fill="#1C60AE"/>
+  <path transform="rotate(-6 232 118)" d="M32 118 A200 76 0 0 1 396 58.72 L388.5 69.52 A185 61 0 0 0 47 118 Z" fill="#1C60AE"/>
+  <path transform="rotate(-6 232 118)" d="M56 118 A176 60 0 0 1 376.32 71.2 L370.32 79.84 A164 48 0 0 0 68 118 Z" fill="#1C60AE"/>
+  <text x="250" y="146" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="700" fill="#1C60AE" letter-spacing="1">GITA</text>
+  <g fill="#1C60AE"><path d="M384 6L386.25 12.91L393.51 12.91L387.63 17.18L389.88 24.09L384 19.82L378.12 24.09L380.37 17.18L374.49 12.91L381.75 12.91Z"/><path d="M404 10L406.25 16.91L413.51 16.91L407.63 21.18L409.88 28.09L404 23.82L398.12 28.09L400.37 21.18L394.49 16.91L401.75 16.91Z"/><path d="M424 14L426.25 20.91L433.51 20.91L427.63 25.18L429.88 32.09L424 27.82L418.12 32.09L420.37 25.18L414.49 20.91L421.75 20.91Z"/><path d="M444 10L446.25 16.91L453.51 16.91L447.63 21.18L449.88 28.09L444 23.82L438.12 28.09L440.37 21.18L434.49 16.91L441.75 16.91Z"/><path d="M464 6L466.25 12.91L473.51 12.91L467.63 17.18L469.88 24.09L464 19.82L458.12 24.09L460.37 17.18L454.49 12.91L461.75 12.91Z"/></g>
+</svg>

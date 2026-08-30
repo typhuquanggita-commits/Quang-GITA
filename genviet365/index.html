@@ -3,9 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kiến trúc Gen Việt 365</title>
-<meta name="description" content="Hệ thống huấn luyện nhân tài GEN VIỆT 365 — kiến trúc bảy lớp, sáu bậc nhân tài, mô hình chi hội, bảng phân quyền và lộ trình ba mươi năm của Học viện GITA.">
+<title>GEN VIỆT 365 — hệ điều hành phát triển con người</title>
+<meta name="description" content="Hệ huấn luyện nhân tài GEN VIỆT 365 của Học viện GITA: mười lăm giai đoạn, năm tuyến vận hành, mười hai khối lớp, mười cấp độ câu lạc bộ, và lộ trình ba mươi năm.">
 <meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://genviet365.vn/">
+<!-- Thẻ chia sẻ. Ảnh do tools/ve-dau-hieu.cjs sinh ra từ chính dấu hiệu thật,
+     nên không bao giờ lệch với bộ nhận diện. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GEN VIỆT 365">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="GEN VIỆT 365 — hệ điều hành phát triển con người">
+<meta property="og:description" content="Mười lăm giai đoạn, năm tuyến vận hành, mười hai khối lớp, mười cấp độ câu lạc bộ. Hệ huấn luyện nhân tài của Học viện GITA.">
+<meta property="og:url" content="https://genviet365.vn/">
+<meta property="og:image" content="https://genviet365.vn/nhan-dien/chia-se.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Dữ liệu có cấu trúc. Thẻ script kiểu ld+json không phải mã chạy được nên
+     không vướng chính sách nguồn ở trên. Khai báo này chỉ nói những điều màn
+     hình thật sự hiển thị — xem nhóm 28, hạng mục dữ liệu có cấu trúc. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "EducationalOrganization",
+      "@id": "https://genviet365.vn/#hocvien",
+      "name": "Học viện GITA",
+      "alternateName": "GEN VIỆT 365",
+      "slogan": "Gen Việt Thắp Sáng Vươn Mình",
+      "description": "Hệ điều hành phát triển con người của Học viện GITA: mười lăm giai đoạn, năm tuyến vận hành, mười hai khối lớp, mười cấp độ câu lạc bộ.",
+      "areaServed": "VN",
+      "inLanguage": "vi-VN",
+      "knowsAbout": ["giáo dục phẩm chất", "câu lạc bộ học đường", "huấn luyện lãnh đạo trẻ", "hoạt động trải nghiệm hướng nghiệp", "nghiên cứu khoa học học sinh"] },
+    { "@type": "EducationalOccupationalProgram",
+      "@id": "https://genviet365.vn/#chuongtrinh",
+      "name": "GEN VIỆT 365",
+      "provider": { "@id": "https://genviet365.vn/#hocvien" },
+      "educationalProgramMode": "part-time",
+      "programPrerequisites": "Học sinh phổ thông từ lớp 1 đến lớp 12",
+      "occupationalCategory": "Phát triển năng lực và phẩm chất",
+      "inLanguage": "vi-VN" },
+    { "@type": "WebSite",
+      "@id": "https://genviet365.vn/#trang",
+      "url": "https://genviet365.vn/",
+      "name": "GEN VIỆT 365",
+      "inLanguage": "vi-VN",
+      "publisher": { "@id": "https://genviet365.vn/#hocvien" } }
+  ]
+}
+</script>
 <!-- Khoá chặt nguồn: chỉ mã của chính trang, phông từ Google Fonts.
      style-src cần 'unsafe-inline' vì các khối tô màu bằng thuộc tính
      style="--c:#rrggbb"; giá trị ấy được lọc bằng regex trong
@@ -38,9 +84,12 @@
 <script src="du-lieu-camtay.js"></script>
 <script src="du-lieu-tracuu.js"></script>
 <script src="du-lieu-tuyen.js"></script>
+<script src="du-lieu-nhuongquyen.js"></script>
+<script src="du-lieu-seo.js"></script>
 <script src="du-lieu-quyen.js"></script>
 <script src="quyen.js"></script>
 <script src="man-hinh.js"></script>
+<script src="nen/dau-hieu.js"></script>
 <script src="nen/dan-xuat.js"></script>
 <script src="nen/so-lieu.js"></script>
 <script src="nen/dau-ban.js"></script>

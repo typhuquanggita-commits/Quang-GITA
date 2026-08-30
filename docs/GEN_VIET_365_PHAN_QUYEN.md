@@ -179,7 +179,7 @@ Mã thoát khác 0 nghĩa là **không được phát hành**. Sáu lớp:
 |---|---|
 | **Tĩnh** | Màn thiếu · điều hướng trỏ sai · mã màn trùng · khối lạ · khoá tra hỏng hoặc mồ côi · bảng lệch cột · ô rỗng · chữ tạm · mã màu sai · màn chưa gắn quyền · vai không mở được màn nào · tỉ lệ hiển thị lệch · vỏ hoặc bộ gộp thiếu tệp · thiếu CSP · có `eval` · trường dữ liệu vào HTML chưa thoát |
 | **Bản cắt** | Dựng 5 bản cho vai thấp rồi soi: tệp có còn mang theo tiêu đề hay dữ liệu của màn ngoài quyền không (so **số lần xuất hiện**, để không báo nhầm chỗ được nhắc hợp lệ) |
-| **Chạy** | Dựng thật 150 màn bằng Chromium: lỗi JS · màn rỗng ruột · dấu hiệu dựng hỏng |
+| **Chạy** | Dựng thật 167 màn bằng Chromium: lỗi JS · màn rỗng ruột · dấu hiệu dựng hỏng |
 | **Cổng** | Với 8 cấu hình vai, thử **vào thẳng bằng `#hash`** vào từng màn ngoài quyền — phải ra thẻ khoá, không được ra nội dung, và mục ấy không được còn trong mục lục |
 | **Ô tìm** | Với 4 cấu hình vai, gõ **đúng tiêu đề** từng màn ngoài quyền vào ô tìm — kết quả không được chứa màn ấy. Ô tìm lọc quyền *trước* khi tìm, nên nó không phải lối vòng qua cổng |
 | **Va chạm tên** | Hai kho cùng đặt `GV.X` — kho nạp sau đè kho trước, âm thầm, và màn dùng tên ấy dựng ra khung rỗng. Đã xảy ra thật một lần với tên `VAI`: màn “vai trò” dựng ra mười bảy thẻ **không có chữ** suốt nhiều bản, và không lớp kiểm nào trước đó thấy |
@@ -191,11 +191,11 @@ Lần chạy gần nhất:
 
 ```
 BẢN CẮT   · dựng 5 bản cho vai thấp và soi rò rỉ nội dung ngoài quyền
-LỚP CHẠY  · dựng thử 150 màn với vai Super Admin
+LỚP CHẠY  · dựng thử 167 màn với vai Super Admin
 CỔNG      · thử vào thẳng 510 màn ngoài quyền, trên 8 cấu hình vai · không chỗ nào lọt
 KHỔ MÀN   · soi tràn ngang ở 1400, 900 và 390 điểm ảnh
 Ô TÌM     · gõ đúng tiêu đề 320 màn ngoài quyền, trên 4 cấu hình vai · không chỗ nào lọt
-KIỂM TĨNH · 150 màn · 150 mục điều hướng · 65 loại khối · 267 khoá tra
+KIỂM TĨNH · 167 màn · 167 mục điều hướng · 65 loại khối · 293 khoá tra
 
 Không lỗi. Đạt.
 ```

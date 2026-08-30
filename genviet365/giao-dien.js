@@ -548,119 +548,79 @@
     });
   };
 
-  /* ── ẤN GEN VIỆT ────────────────────────────────────────
-     Dấu hiệu được VẼ ở đây chứ không nằm trong kho, vì nó là hình
-     chứ không phải dữ liệu. Toạ độ trong lưới 120 × 120:
-       khung  ô vuông bo góc, nét 7          — cam kết và ranh giới
-       nét trái  (38,40) → (60,84), nét 8    — bảy nguyên lý, LUÔN LIỀN
-       sáu chấm  trên đoạn (60,84) → (82,40) — sáu bậc, LUÔN CÓ QUÃNG
-     Mọi biến thể đều gọi cùng một hàm này. Không vẽ tay bản nào. */
-  var AN_CHAM = [[63.74, 76.52], [67.39, 69.22], [71.04, 61.91],
-                 [74.70, 54.61], [78.35, 47.30], [82.00, 40.00]];
-
-  function veAn(o) {
+  /* ── DẤU HIỆU THẬT ──────────────────────────────────────
+     Hình do tools/ve-dau-hieu.cjs sinh ra và nạp qua nen/dau-hieu.js,
+     nên trang web và tệp in trong nhan-dien/ dùng CHUNG một hình.
+     Bản dựng trước của hệ này có một dấu hiệu TỰ CHẾ — sai, vì Học
+     viện đã có dấu hiệu riêng. Đã thay. */
+  function veDau(loai, o) {
     o = o || {};
-    var c = o.mau ? mau(o.mau) : 'currentColor';
-    var co = o.co || 120;
-    var t = [];
-    if (!o.khongKhung)
-      t.push('<rect x="10" y="10" width="100" height="100" rx="16" fill="none" ' +
-             'stroke="' + c + '" stroke-width="7"/>');
-    t.push('<path d="M38 40L60 84" fill="none" stroke="' + c + '" stroke-width="8" ' +
-           'stroke-linecap="round"' + (o.traiDut ? ' stroke-dasharray="9 7"' : '') + '/>');
-    if (o.noiLien) {
-      t.push('<path d="M60 84L82 40" fill="none" stroke="' + c + '" stroke-width="8" ' +
-             'stroke-linecap="round"/>');
-    } else {
-      AN_CHAM.forEach(function (d, i) {
-        var cc = o.chamNhieuMau ? mau(['#BE0E16', '#9E470D', '#8A6006', '#0B7350', '#0B6675', '#5140B4'][i]) : c;
-        t.push('<circle cx="' + d[0] + '" cy="' + d[1] + '" r="3.4" fill="' + cc + '"/>');
-      });
-    }
-    return '<svg class="an-h" viewBox="0 0 120 120" width="' + co + '" height="' + co + '" ' +
-      'role="img" aria-label="Ấn Gen Việt">' + t.join('') + '</svg>';
+    var H = G.HINH;
+    if (!H) return '';
+    var gita = loai === 'gita';
+    var vb = gita ? H.gitaVB : H.gvVB;
+    var than = gita ? H.gita(o.mot) : H.gv(o.mot);
+    var w = o.co || (gita ? 240 : 150);
+    return '<svg class="dh" viewBox="' + vb + '" width="' + w + '" ' +
+      'role="img" aria-label="' + (gita ? 'Học viện GITA' : 'GEN VIỆT — Thắp sáng, Vươn mình') + '">' +
+      than + '</svg>';
   }
 
-  /* khoá ngang / dọc — ấn cộng tên hệ */
-  function veKhoa(doc, c) {
-    var m = G.META;
-    return '<div class="khoa' + (doc ? ' doc' : '') + '" style="--c:' + mau(c) + '">' +
-      veAn({ mau: c, co: doc ? 76 : 58 }) +
-      '<div class="khoa-chu"><span class="ten">' + e(m.ten) + '</span>' +
-      '<span class="phu">' + e(m.phu) + '</span></div></div>';
+  function khoaDoc(mot) {
+    return '<div class="kdoc"' + (mot ? ' style="--t:' + mau(mot) + '"' : '') + '>' +
+      veDau('gv', { mot: mot, co: 120 }) +
+      '<div class="kd-chu"><span class="ten">GEN VIỆT</span>' +
+      '<span class="phu">THẮP SÁNG — VƯƠN MÌNH</span></div></div>';
   }
 
-  K.an = function (o) {
-    var LAM = '#185AB4', SON = '#BE0E16';
+  K.an = function () {
     var h = '<div class="an-bo">';
-
-    /* bản chính, cỡ lớn, hai màu nghi lễ và thường ngày */
     h += '<div class="an-lon">' +
-      '<figure><div class="o lam">' + veAn({ mau: LAM, co: 150 }) + '</div>' +
-      '<figcaption>Bản thường ngày · lam GITA #185AB4</figcaption></figure>' +
-      '<figure><div class="o son">' + veAn({ mau: SON, co: 150 }) + '</div>' +
-      '<figcaption>Bản nghi lễ · đỏ son #BE0E16</figcaption></figure>' +
-      '<figure><div class="o dao">' + veAn({ mau: '#FFFFFF', co: 150 }) + '</div>' +
-      '<figcaption>Bản đảo · trắng trên nền đặc</figcaption></figure>' +
+      '<figure><div class="o">' + veDau('gv', { co: 190 }) + '</div>' +
+      '<figcaption>Bản màu đầy đủ — dùng ở mọi nơi có nền sáng</figcaption></figure>' +
+      '<figure><div class="o">' + khoaDoc() + '</div>' +
+      '<figcaption>Khoá dọc — dấu hiệu cùng tên và khẩu hiệu</figcaption></figure>' +
+      '<figure><div class="o dao">' + veDau('gv', { mot: '#FFFFFF', co: 190 }) + '</div>' +
+      '<figcaption>Bản đảo — trắng trên nền đỏ hoặc nền ảnh đặc</figcaption></figure>' +
       '</div>';
-
-    /* dựng hình và vùng an toàn */
-    h += '<h3 class="muc-con">Dựng hình và vùng an toàn</h3>' +
-      '<div class="an-dung">' +
-      '<figure><div class="o luoi-an">' +
-        '<svg viewBox="-25 -25 170 170" width="200" height="200" role="img" ' +
-        'aria-label="Lưới dựng ấn với vùng an toàn">' +
-        '<rect x="-25" y="-25" width="170" height="170" fill="none" ' +
-          'stroke="currentColor" stroke-width="1" stroke-dasharray="4 4" opacity=".45"/>' +
-        '<g opacity=".28" stroke="currentColor" stroke-width="0.8">' +
-        '<line x1="60" y1="-25" x2="60" y2="145"/><line x1="-25" y1="60" x2="145" y2="60"/>' +
-        '<line x1="10" y1="-25" x2="10" y2="145"/><line x1="110" y1="-25" x2="110" y2="145"/>' +
-        '<line x1="-25" y1="10" x2="145" y2="10"/><line x1="-25" y1="110" x2="145" y2="110"/>' +
-        '</g>' +
-        '<rect x="10" y="10" width="100" height="100" rx="16" fill="none" ' +
-          'stroke="currentColor" stroke-width="7"/>' +
-        '<path d="M38 40L60 84" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>' +
-        AN_CHAM.map(function (d) {
-          return '<circle cx="' + d[0] + '" cy="' + d[1] + '" r="3.4" fill="currentColor"/>';
-        }).join('') +
-        '</svg></div>' +
-        '<figcaption>Lưới 120 × 120. Vùng an toàn 25 đơn vị mỗi phía — bằng *một phần tư* cạnh khung. Không đặt gì vào vùng ấy.</figcaption></figure>' +
-      '<figure><div class="o co-nho">' +
-        '<span>' + veAn({ mau: LAM, co: 64 }) + '<i>64 px</i></span>' +
-        '<span>' + veAn({ mau: LAM, co: 32 }) + '<i>32 px</i></span>' +
-        '<span>' + veAn({ mau: LAM, co: 16 }) + '<i>16 px</i></span>' +
-        '</div><figcaption>Cỡ nhỏ nhất là *16 px* trên màn hình và *6 mm* khi in. Nhỏ hơn thì sáu chấm dính vào nhau và ý nghĩa mất.</figcaption></figure>' +
-      '</div>';
-
-    /* năm biến thể khoá */
-    h += '<h3 class="muc-con">Năm biến thể</h3><div class="an-bt">' +
-      '<figure>' + veAn({ mau: LAM, co: 84 }) + '<figcaption><b>A · Ấn đơn</b>Huy hiệu, con dấu, thêu, ảnh đại diện</figcaption></figure>' +
-      '<figure>' + veKhoa(false, LAM) + '<figcaption><b>B · Khoá ngang</b>Giấy tiêu đề, chữ ký thư, biển hiệu</figcaption></figure>' +
-      '<figure>' + veKhoa(true, LAM) + '<figcaption><b>C · Khoá dọc</b>Bìa ấn phẩm, cờ tổ, áo</figcaption></figure>' +
-      '<figure><div class="nen-dac">' + veAn({ mau: '#FFFFFF', co: 84 }) + '</div><figcaption><b>D · Bản đảo</b>Trên nền màu đặc, trên ảnh</figcaption></figure>' +
-      '<figure>' + veAn({ mau: '#0E1826', co: 84 }) + '<figcaption><b>E · Bản một nét</b>Dập nổi, khắc, in một màu</figcaption></figure>' +
-      '</div>';
+    h += '<h3 class="muc-con">Ba màu, ba ý</h3>' +
+      '<div class="an-y"><div class="y" style="--c:' + mau(G.HINH.mau) + '">' +
+        '<b>Đỏ</b>Nét chữ V vươn lên — màu cờ, màu của ý chí</div>' +
+      '<div class="y" style="--c:' + mau(G.HINH.vang) + '">' +
+        '<b>Vàng</b>Ngôi sao ở đỉnh và các nấc chuỗi xoắn — màu sao vàng, đích của hành trình</div>' +
+      '<div class="y" style="--c:' + mau(G.HINH.lam) + '">' +
+        '<b>Lam</b>Vành quỹ đạo dưới chân — thế giới mà em bước ra</div></div>';
+    h += '<h3 class="muc-con">Cỡ nhỏ dần</h3><div class="an-dung"><figure><div class="o co-nho">' +
+      '<span>' + veDau('gv', { co: 88 }) + '<i>88 px</i></span>' +
+      '<span>' + veDau('gv', { co: 48 }) + '<i>48 px</i></span>' +
+      '<span>' + veDau('gv', { co: 26 }) + '<i>26 px</i></span></div>' +
+      '<figcaption>Cỡ nhỏ nhất *26 px* trên màn hình và *9 mm* khi in. Nhỏ hơn thì các nấc vàng của chuỗi xoắn dính vào nhau và chữ *GEN* trong dấu hiệu mất nghĩa.</figcaption></figure>' +
+      '<figure><div class="o">' + veDau('gita', { co: 250 }) + '</div>' +
+      '<figcaption>Dấu hiệu Học viện GITA — thương hiệu mẹ, đứng ở dòng bảo chứng</figcaption></figure></div>';
+    h += '<h3 class="muc-con">Đứng cùng nhau</h3>' +
+      '<div class="an-cap"><div class="o">' + veDau('gv', { co: 96 }) +
+      '<span class="vach"></span>' + veDau('gita', { co: 190 }) + '</div>' +
+      '<p class="van">GEN VIỆT đứng *trước*, GITA đứng *sau* ở dòng bảo chứng. Hai dấu hiệu cách nhau ít nhất một vùng an toàn và có một đường kẻ mảnh phân cách. Không bao giờ chồng lên nhau, không bao giờ ghép thành một hình mới.</p></div>';
     return h + '</div>';
   };
 
   /* tám cách dùng sai — vẽ ra thì hiểu nhanh hơn kể ra */
   K.ansai = function (o) {
-    var LAM = '#185AB4';
     var kieu = [
-      { s: 'transform:rotate(-12deg)', a: {} },
-      { a: { chamNhieuMau: true } },
-      { a: { noiLien: true } },
-      { a: { traiDut: true } },
-      { a: { khongKhung: true } },
-      { s: 'filter:drop-shadow(3px 5px 4px rgba(0,0,0,.45))', a: {} },
-      { s: 'transform:scaleX(1.38)', a: {} },
-      { nen: true, a: { mau: '#FFFFFF' } }
+      { s: 'transform:rotate(-12deg)' },
+      { s: 'transform:scaleX(1.42)' },
+      { s: 'filter:drop-shadow(3px 5px 4px rgba(0,0,0,.45))' },
+      { mot: '#0B7350' },
+      { s: 'filter:grayscale(1) contrast(.55)' },
+      { s: 'transform:scaleX(-1)' },
+      { nen: true, mot: '#FFFFFF' },
+      { s: 'filter:blur(1.2px)', co: 40 }
     ];
     return '<div class="an-sai">' + ds(lay(o), function (x, i) {
-      var k = kieu[i] || { a: {} };
-      var v = veAn(k.a.mau ? k.a : (function () { var b = {}; for (var q in k.a) b[q] = k.a[q]; b.mau = LAM; return b; })());
+      var k = kieu[i] || {};
       return '<figure><div class="o' + (k.nen ? ' ron' : '') + '">' +
-        '<div class="hinh"' + (k.s ? ' style="' + e(k.s) + '"' : '') + '>' + v + '</div>' +
+        '<div class="hinh"' + (k.s ? ' style="' + e(k.s) + '"' : '') + '>' +
+        veDau('gv', { mot: k.mot, co: k.co || 76 }) + '</div>' +
         '<span class="x" aria-hidden="true">✕</span></div>' +
         '<figcaption><b>' + e(x[0]) + '</b>' + e(x[1]) + '</figcaption></figure>';
     }) + '</div>';
@@ -1118,6 +1078,42 @@
   function nho(v) { try { localStorage.setItem('genviet365.man', v); } catch (x) {} }
   function nhoLai() { try { return localStorage.getItem('genviet365.man'); } catch (x) { return null; } }
 
+  /* ── ĐẦU TRANG THEO MÀN ──────────────────────────────────
+     Bản đầy đủ là một trang đổi màn bằng dấu thăng. Máy tìm kiếm
+     không lập chỉ mục phần sau dấu thăng như một địa chỉ riêng —
+     việc đó do các trang tĩnh trong ban-phat-hanh/trang/ lo. Phần
+     dưới đây phục vụ NGƯỜI: thẻ trên trình duyệt, tên khi lưu dấu
+     trang, và tấm thẻ hiện ra khi ai đó dán liên kết vào tin nhắn.
+     Màn ngoài quyền cố ý KHÔNG ghi tiêu đề thật ra đầu trang. */
+  function datDauTrang(v, duoc) {
+    var m = G.MAN[v];
+    if (!m) return;
+    var t = duoc ? m.t + ' · GEN VIỆT 365' : 'Chưa mở · GEN VIỆT 365';
+    var mo = duoc ? String(m.p || m.t).replace(/\*/g, '').replace(/\s+/g, ' ').trim()
+                  : 'Màn này cần quyền cao hơn vai đang chọn.';
+    if (mo.length > 160) {
+      var c = mo.slice(0, 157), k = c.lastIndexOf(' ');
+      mo = (k > 120 ? c.slice(0, k) : c) + '…';
+    }
+    document.title = t;
+    theMeta('name', 'description', mo);
+    theMeta('property', 'og:title', t);
+    theMeta('property', 'og:description', mo);
+    theMeta('property', 'og:url', location.href);
+    var can = document.querySelector('link[rel="canonical"]');
+    if (can) can.setAttribute('href', location.href);
+  }
+
+  function theMeta(loai, ten, giaTri) {
+    var el = document.querySelector('meta[' + loai + '="' + ten + '"]');
+    if (!el) {
+      el = document.createElement('meta');
+      el.setAttribute(loai, ten);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('content', giaTri);
+  }
+
   function ve() {
     var v = location.hash.replace(/^#/, '');
     if (v === 'noi-dung') return;
@@ -1134,6 +1130,7 @@
       goc.classList.remove('mo');
       if (nut) nut.setAttribute('aria-expanded', 'false');
       if (docTo) docTo.textContent = 'Kết quả tìm: ' + q;
+      document.title = 'Tìm: ' + q + ' · GEN VIỆT 365';
       window.scrollTo(0, 0);
       return;
     }
@@ -1151,6 +1148,7 @@
       if (o) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
     nho(v);
+    datDauTrang(v, duoc);
     goc.classList.remove('mo');
     if (nut) nut.setAttribute('aria-expanded', 'false');
     if (docTo) docTo.textContent = (duoc ? '' : 'Chưa mở: ') + ((G.MAN[v] || {}).t || v);

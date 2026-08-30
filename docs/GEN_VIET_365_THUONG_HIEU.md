@@ -97,65 +97,65 @@ vùng an toàn  25 đơn vị mỗi phía = một phần tư cạnh khung
 cỡ nhỏ nhất   16 px trên màn hình · 6 mm khi in
 ```
 
-**Vì sao là một con dấu.** Ấn triện là vật chứng nhận của người Việt suốt nghìn năm: đóng dấu nghĩa là *tôi chịu trách nhiệm về điều này*. Hệ này sống bằng bằng chứng có người xác nhận — nên dấu hiệu của nó phải là một con dấu.
+**Chữ V vươn lên.** Nét đỏ lớn quét từ chân lên đỉnh: chữ **V** của *Việt*, và cũng là dấu tích — dấu của việc đã làm xong. Nét thắt dần về phía trên: càng lên cao càng phải gọn.
 
-> Hệ vốn đã có “con dấu chi hội” là hiện vật. Dấu hiệu và hiện vật là một, không phải hai thứ rời nhau.
+> Đây là nét chủ. Mọi biến thể đều giữ nguyên hướng và độ nghiêng của nét này.
 
-**Chữ V.** Hai nét chụm ở đáy, mở lên trên: chữ V của *Việt*, và hình một mầm đang tách vỏ vươn lên.
+**Ngôi sao vàng ở đỉnh.** Sao năm cánh đặt đúng đỉnh nét vươn: đích của hành trình, và màu sao vàng trên nền cờ đỏ.
 
-> Đáy chụm — mọi người bắt đầu từ cùng một điểm. Trên mở — mỗi người đi một hướng.
+> Sao không bao giờ rời khỏi đỉnh nét. Đặt sao ở chỗ khác là làm mất câu chuyện.
 
-**Nét trái liền.** Nét bên trái không đứt: **bảy nguyên lý bất biến**, phần không đổi trong ba mươi năm.
+**Chuỗi xoắn kép — chữ GEN.** Nét trái là **chuỗi xoắn kép** với các nấc vàng nối hai sợi: đây chính là chữ *GEN* trong cái tên, vẽ ra chứ không viết ra.
 
-> Nét này luôn dày hơn và luôn liền. Vẽ đứt là vẽ sai.
+> Không có chi tiết này thì dấu hiệu chỉ còn là một dấu tích. Vì thế cỡ nhỏ nhất được xác định bởi chỗ này.
 
-**Sáu chấm bên phải.** Nét bên phải là **sáu bậc nhân tài** B1 → B6, đi lên từng chấm một, có khoảng cách giữa các chấm.
+**Các nấc vàng.** Nối hai sợi lại thành một chuỗi. Không có nấc thì hai sợi rời nhau — và một chuỗi gen rời nhau thì không truyền được gì.
 
-> Khoảng cách là phần quan trọng nhất: lên bậc phải có quãng, không liên tục, không tự động.
+> Nấc phải nằm đúng chỗ hai sợi xa nhau nhất, không phải chỗ chúng giao nhau.
 
-**Khung vuông.** Bốn cạnh khép kín: cam kết, ranh giới, và luật an toàn. Bo góc nhẹ để đọc được ở cỡ nhỏ.
+**Vành quỹ đạo lam.** Vòng lam hở ở chân: thế giới mà em bước ra. Vòng *hở phía trên* để chữ V xuyên qua được — không có gì chặn đường vươn.
 
-> Không bao giờ mở khung. Khung hở là dấu hiệu bị dùng sai.
+> Không bao giờ khép kín vòng này. Khép lại là biến quỹ đạo thành cái cũi.
 
-**Mực son.** Bản nghi lễ — con dấu thật, bằng bậc, trang đầu hộ chiếu — đóng bằng **đỏ son**. Bản thường ngày dùng **lam GITA**.
+**Ba màu quốc kỳ.** Đỏ · vàng · lam. Hai màu đầu là màu cờ; lam là màu của biển và của thế giới bên ngoài.
 
-> Đỏ son chỉ dùng cho thứ có chữ ký và có trách nhiệm. Dùng đỏ son cho tờ rơi là làm mòn nó.
+> Ba màu, không hơn. Thêm màu thứ tư là mất bản sắc.
 
 ### Năm biến thể
 
 | Mã | Biến thể | Là gì | Dùng ở đâu | Cỡ nhỏ nhất |
 |---|---|---|---|---|
-| A | Ấn đơn | Chỉ dấu hiệu, không chữ. | Huy hiệu, con dấu, thêu áo, ảnh đại diện, dấu nước, favicon. | 16 px · 6 mm |
-| B | Khoá ngang | Ấn bên trái, tên hai dòng bên phải. | Giấy tiêu đề, chữ ký thư điện tử, biển hiệu, phông nền. | 120 px · 30 mm |
-| C | Khoá dọc | Ấn trên, tên dưới, canh giữa. | Bìa ấn phẩm, cờ tổ, áo, khung vuông trên mạng xã hội. | 90 px · 24 mm |
-| D | Bản đảo | Ấn trắng trên nền màu đặc. | Nền ảnh, nền lam, nền đỏ son, bao bì. | 20 px · 8 mm |
-| E | Bản một nét | Một màu, không sắc độ, nét đều. | Dập nổi kim loại, khắc gỗ, in một màu, fax và bản sao đen trắng. | 20 px · 8 mm |
+| A | Bản màu đầy đủ | Ba màu đỏ · vàng · lam. | Mọi nơi có nền sáng: web, ấn phẩm, biển hiệu, phông nền. | 26 px · 9 mm |
+| B | Khoá dọc | Dấu hiệu trên, tên và khẩu hiệu dưới, canh giữa. | Bìa ấn phẩm, cờ, áo, khung vuông trên mạng xã hội. | 90 px · 26 mm |
+| C | Bản đảo | Trắng toàn phần trên nền màu đặc. | Nền đỏ, nền lam, nền ảnh có khối màu đặc, bao bì. | 30 px · 10 mm |
+| D | Một màu đỏ | Toàn bộ một sắc đỏ. | In một màu, dấu, con dấu chi hội. | 30 px · 10 mm |
+| E | Một màu mực | Toàn bộ một sắc mực. | Dập nổi kim loại, khắc gỗ, thêu chỉ một màu, fax và bản sao đen trắng. | 30 px · 10 mm |
 
 ### Mười luật dùng ấn
 
-1. Vùng an toàn quanh ấn = **một phần tư cạnh khung**. Không đặt chữ, ảnh hay đường kẻ nào vào vùng ấy.
-2. Cỡ nhỏ nhất: **16 px** trên màn hình, **6 mm** khi in. Nhỏ hơn thì sáu chấm dính vào nhau và ý nghĩa mất.
-3. Ấn luôn đứng thẳng. Không xoay, kể cả 15 độ cho “sinh động”.
-4. Ấn dùng **một màu duy nhất** mỗi lần. Không tô mỗi chấm một màu, không đổ bóng, không chuyển sắc.
-5. Không kéo giãn theo một chiều. Khoá tỉ lệ, luôn luôn.
-6. Không đặt ấn lên ảnh nhiều chi tiết. Cần đặt lên ảnh thì dùng bản đảo trên một khối màu đặc.
-7. Không ghép ấn với dấu hiệu của đối tác trong cùng một khối. Hai dấu hiệu cách nhau ít nhất hai vùng an toàn và có một đường kẻ mảnh phân cách.
-8. Không vẽ lại ấn bằng tay hay bằng phông chữ khác. Chỉ dùng tệp gốc trong bộ bàn giao.
-9. *Không bao giờ đóng dấu lên mặt người.* Đây là luật đạo đức, không phải luật thẩm mỹ.
-10. Không dùng bản đỏ son cho quảng cáo hay khuyến mại. Đỏ son dành cho thứ có chữ ký và có trách nhiệm — dùng tràn thì mòn.
+1. Vùng an toàn quanh dấu hiệu = **chiều cao ngôi sao**. Không đặt chữ, ảnh hay đường kẻ nào vào vùng ấy.
+2. Cỡ nhỏ nhất: **26 px** trên màn hình, **9 mm** khi in. Ngưỡng này do chuỗi xoắn quyết định, không do khung.
+3. Dấu hiệu luôn đứng thẳng. Không xoay, không lật gương, kể cả để “cân bố cục”.
+4. Khoá tỉ lệ khi phóng to thu nhỏ. Không kéo giãn một chiều.
+5. Ba màu đỏ — vàng — lam là bắt buộc ở bản đầy đủ. Bản một màu chỉ dùng khi in một màu, khắc, dập nổi, hoặc thêu.
+6. Không đổ bóng, không viền ngoài, không chuyển sắc, không hiệu ứng kim loại.
+7. Đặt lên ảnh thì dùng **bản đảo trên một khối màu đặc**, không đặt thẳng lên ảnh nhiều chi tiết.
+8. GEN VIỆT đứng trước, GITA đứng sau ở dòng bảo chứng. Hai dấu hiệu cách nhau ít nhất một vùng an toàn và có đường kẻ mảnh phân cách.
+9. *Không bao giờ đặt dấu hiệu lên mặt người.* Đây là luật đạo đức, không phải luật thẩm mỹ.
+10. Không vẽ lại dấu hiệu bằng tay hay bằng phông chữ khác. Chỉ dùng tệp gốc của Học viện.
 
 ### Tám cách dùng sai
 
 | Cách sai | Vì sao sai |
 |---|---|
-| Xoay nghiêng | Ấn triện đóng nghiêng là ấn đóng hỏng. Ý nghĩa “chịu trách nhiệm” mất theo. |
-| Đổi màu từng chấm | Sáu chấm là sáu bậc của MỘT con đường, không phải sáu thứ khác nhau. |
-| Nối sáu chấm thành nét liền | Xoá mất điều quan trọng nhất: lên bậc phải có quãng. |
-| Vẽ nét trái đứt | Nét trái là bảy nguyên lý bất biến. Đứt nghĩa là nguyên lý đổi được. |
-| Bỏ khung, chỉ lấy chữ V | Không còn là con dấu. Còn lại một chữ V mà ai cũng có. |
-| Đổ bóng, làm nổi khối | Con dấu là vật phẳng. Đổ bóng làm nó thành một nút bấm. |
-| Kéo giãn theo một chiều | Khung vuông thành chữ nhật, sáu chấm lệch nhịp. Luôn khoá tỉ lệ. |
+| Xoay nghiêng | Nét vươn có hướng cố định. Xoay là làm mất hướng vươn — thứ duy nhất dấu hiệu này nói. |
+| Kéo giãn một chiều | Chuỗi xoắn kép méo đi thì không còn là chuỗi gen. Khoá tỉ lệ, luôn luôn. |
+| Đổ bóng, làm nổi khối | Dấu hiệu là hình phẳng. Đổ bóng biến nó thành một nút bấm. |
+| Đổi sang màu khác | Đỏ — vàng — lam là màu cờ và màu biển. Đổi màu là đổi câu chuyện. |
+| Làm mờ, làm xám | Dùng khi không đủ tương phản là dấu hiệu chọn sai nền, không phải lý do làm mờ dấu hiệu. |
+| Lật gương | Nét vươn phải đi từ trái dưới lên phải trên. Lật lại là đi ngược. |
 | Đặt lên nền nhiều chi tiết | Không đọc được thì không còn là dấu hiệu. Cần đặt lên ảnh thì dùng bản đảo trên một khối màu đặc. |
+| Thu nhỏ quá ngưỡng | Dưới 26 px các nấc vàng dính vào nhau, chuỗi xoắn thành một vệt, và chữ GEN mất nghĩa. |
 
 ---
 
@@ -166,24 +166,26 @@ WCAG AA ở cả hai chế độ sáng và tối** — bộ kiểm phát hành c
 
 | Màu | HEX | RGB | CMYK | Pantone (gần đúng) | Vai trò | Tương phản nền sáng |
 |---|---|---|---|---|---|---|
-| Lam GITA | #185AB4 | 24 · 90 · 180 | 87 · 60 · 0 · 6 | gần 2145 C | Màu chủ. Dấu hiệu bản thường ngày, tiêu đề, đường dẫn. | 5.70 : 1 |
-| Đỏ son | #BE0E16 | 190 · 14 · 22 | 13 · 100 · 100 · 4 | gần 186 C | Màu nghi lễ. Con dấu thật, bằng bậc, trang đầu hộ chiếu, mức đền trong bảng cam kết. | 5.52 : 1 |
-| Tím trí | #5140B4 | 81 · 64 · 180 | 77 · 76 · 0 · 6 | gần 2725 C | Huấn luyện và tri thức. Nhóm giáo trình, chuyên đề, GITA 365. | 6.28 : 1 |
-| Lục lam | #0B6675 | 11 · 102 · 117 | 91 · 40 · 33 · 20 | gần 315 C | Chi hội và cộng đồng. Nơi có nhiều người cùng làm. | 5.62 : 1 |
-| Lục bằng chứng | #0B7350 | 11 · 115 · 80 | 87 · 30 · 79 · 19 | gần 342 C | Đạt, xác nhận, băng XANH. Chỉ dùng khi đã có bằng chứng. | 5.03 : 1 |
-| Vàng chí | #8A6006 | 138 · 96 · 6 | 25 · 50 · 100 · 25 | gần 111 C | Cảnh báo sớm, băng VÀNG, giới hạn phải nói rõ. | 4.80 : 1 |
-| Cam chú ý | #9E470D | 158 · 71 · 13 | 20 · 75 · 100 · 12 | gần 1595 C | Băng CAM, việc phải xử trong tuần. | 5.28 : 1 |
-| Mực | #0E1826 | 14 · 24 · 38 | 90 · 75 · 55 · 70 | gần 5255 C | Chữ chính, Học viện GITA, bản một nét. | 15.31 : 1 |
-| Nền lệch lam | #EAEEF3 | 234 · 238 · 243 | 6 · 3 · 2 · 0 | gần 656 C | Nền. Xám lệch lam, cố ý không phải xám trung tính, để sáu màu trên đứng không chói. | nền |
+| Đỏ dấu hiệu | #E01B22 | 224 · 27 · 34 | 4 · 96 · 92 · 0 | gần 485 C | HÌNH — nét chữ V, tên GEN VIỆT trên dấu hiệu. **Không dùng cho chữ chạy.** | 4.06 : 1 · chỉ đạt chữ lớn |
+| Vàng sao | #F7C013 | 247 · 192 · 19 | 2 · 25 · 100 · 0 | gần 7408 C | HÌNH — ngôi sao và các nấc chuỗi xoắn. **Không bao giờ dùng cho chữ.** | 1.68 : 1 · chỉ dùng cho hình |
+| Lam quỹ đạo | #1C60AE | 28 · 96 · 174 | 90 · 60 · 0 · 5 | gần 2945 C | HÌNH — vành quỹ đạo, và chữ GITA trên dấu hiệu mẹ. | 5.34 : 1 · đạt AA |
+| Lam nhạt GITA | #4A8FD0 | 74 · 143 · 208 | 68 · 33 · 0 · 0 | gần 2925 C | HÌNH — vệt ngoài của dấu hiệu GITA. | 2.71 : 1 · chỉ dùng cho hình |
+| Lam chữ | #185AB4 | 24 · 90 · 180 | 87 · 60 · 0 · 6 | gần 2145 C | CHỮ — màu chủ của văn bản, tiêu đề, đường dẫn. | 5.70 : 1 · đạt AA |
+| Đỏ chữ | #BE0E16 | 190 · 14 · 22 | 13 · 100 · 100 · 4 | gần 186 C | CHỮ — cảnh báo, mức đền, băng ĐỎ. Đậm hơn đỏ dấu hiệu để đạt tương phản. | 5.52 : 1 · đạt AA |
+| Tím trí | #5140B4 | 81 · 64 · 180 | 77 · 76 · 0 · 6 | gần 2725 C | CHỮ — huấn luyện và tri thức. | 6.28 : 1 · đạt AA |
+| Lục bằng chứng | #0B7350 | 11 · 115 · 80 | 87 · 30 · 79 · 19 | gần 342 C | CHỮ — đạt, xác nhận, băng XANH. Chỉ dùng khi đã có bằng chứng. | 5.03 : 1 · đạt AA |
+| Mực | #0E1826 | 14 · 24 · 38 | 90 · 75 · 55 · 70 | gần 5255 C | CHỮ — chữ chính, và bản một màu của dấu hiệu. | 15.31 : 1 · đạt AA |
+| Nền lệch lam | #EAEEF3 | 234 · 238 · 243 | 6 · 3 · 2 · 0 | gần 656 C | NỀN — xám lệch lam, cố ý không phải xám trung tính. | nền |
 
 ### Sáu luật dùng màu
 
-1. Tỉ lệ **60 · 30 · 10**: 60 nền, 30 mực, 10 màu nhấn. Một trang dùng quá hai màu nhấn là một trang mất trật tự.
-2. Mọi mã màu **đi vào chữ** phải đạt tương phản ≥ **4.5 : 1** trên nền của chính chế độ ấy. Bộ kiểm phát hành chặn nếu không đạt — ở cả chế độ sáng và tối.
-3. Màu không bao giờ là **thông tin duy nhất**. Băng màu luôn kèm chữ; biểu đồ luôn kèm nhãn. Khoảng 8% nam giới không phân biệt được đỏ và lục.
-4. Đỏ son chỉ dùng cho thứ có chữ ký và có trách nhiệm — không dùng cho khuyến mại, không dùng cho tờ rơi.
-5. Lục bằng chứng chỉ dùng khi thật sự đã có bằng chứng. Dùng lục cho thứ chưa đạt là nói dối bằng màu.
-6. Mã Pantone trong bảng là **gần đúng** — trước khi in số lượng lớn phải chạy bản thử màu và duyệt bằng mắt trên đúng chất liệu.
+1. *Phân biệt hai họ màu.* **Màu dấu hiệu** dùng cho hình và không phải đạt tương phản chữ. **Màu chữ** dùng cho văn bản và bắt buộc đạt WCAG AA 4.5:1. Đỏ dấu hiệu #E01B22 chỉ đạt 4.06:1 nên KHÔNG dùng cho chữ chạy — chữ đỏ dùng #BE0E16.
+2. Tỉ lệ **60 · 30 · 10**: 60 nền, 30 mực, 10 màu nhấn. Một trang dùng quá hai màu nhấn là một trang mất trật tự.
+3. Mọi mã màu **đi vào chữ** phải đạt tương phản ≥ **4.5 : 1** trên nền của chính chế độ ấy. Bộ kiểm phát hành chặn nếu không đạt — ở cả chế độ sáng và tối.
+4. Màu không bao giờ là **thông tin duy nhất**. Băng màu luôn kèm chữ; biểu đồ luôn kèm nhãn. Khoảng 8% nam giới không phân biệt được đỏ và lục.
+5. Đỏ son chỉ dùng cho thứ có chữ ký và có trách nhiệm — không dùng cho khuyến mại, không dùng cho tờ rơi.
+6. Lục bằng chứng chỉ dùng khi thật sự đã có bằng chứng. Dùng lục cho thứ chưa đạt là nói dối bằng màu.
+7. Mã Pantone trong bảng là **gần đúng** — trước khi in số lượng lớn phải chạy bản thử màu và duyệt bằng mắt trên đúng chất liệu.
 
 ---
 

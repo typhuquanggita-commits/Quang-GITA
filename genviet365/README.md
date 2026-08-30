@@ -3,7 +3,7 @@
 Ứng dụng trình bày **toàn bộ** hệ thống GEN VIỆT 365 của Học viện GITA: kiến trúc, giáo
 trình, mô hình chi hội, bộ đo, biểu mẫu, dữ liệu và lộ trình 30 năm (2026 – 2056).
 
-**26 nhóm · 150 màn · 17 vai.** Có ô tìm — gõ `/` để nhảy vào. Không cần cài gì, không có bước dựng.
+**28 nhóm · 167 màn · 17 vai.** Có ô tìm — gõ `/` để nhảy vào. Không cần cài gì, không có bước dựng.
 
 Bản viết đầy đủ:
 - [`../docs/GEN_VIET_365.md`](../docs/GEN_VIET_365.md) — tập 1 · kiến trúc
@@ -14,6 +14,8 @@ Bản viết đầy đủ:
 - [`../docs/GEN_VIET_365_TRAI_NGHIEM.md`](../docs/GEN_VIET_365_TRAI_NGHIEM.md) — tập 6 · trải nghiệm, giá trị và tin cậy (bản sinh ra)
 - [`../docs/GEN_VIET_365_THUONG_HIEU.md`](../docs/GEN_VIET_365_THUONG_HIEU.md) — tập 7 · nhận diện thương hiệu, bản quyền và toàn cầu (bản sinh ra)
 - [`../docs/GEN_VIET_365_CAM_TAY.md`](../docs/GEN_VIET_365_CAM_TAY.md) — tập 8 · cầm lên dùng được, và tra cứu (bản sinh ra)
+- [`../docs/GEN_VIET_365_NHUONG_QUYEN.md`](../docs/GEN_VIET_365_NHUONG_QUYEN.md) — tập 9 · bộ hồ sơ nhượng quyền (bản sinh ra)
+- [`../docs/GEN_VIET_365_TIM_THAY.md`](../docs/GEN_VIET_365_TIM_THAY.md) — tập 10 · tìm thấy được và đáng tin (bản sinh ra)
 
 ## Dựng — MỘT lệnh
 
@@ -115,7 +117,7 @@ ra** — không sửa tay; sửa xong nguồn thì gộp lại.
 | `tools/sinh-camtay.cjs` | Sinh `docs/GEN_VIET_365_CAM_TAY.md` từ hai kho cầm tay và tra cứu |
 | `tools/kiem-tra.cjs` | **Bộ kiểm phát hành** — bốn lớp: tĩnh · bản cắt · chạy thật · cổng phân quyền |
 | `du-lieu-kythuat.js` | Cấu trúc hộ chiếu JSON · 5 luật ghi dữ liệu · 12 bảng lưu · 9 đường máy chủ · 10 quyền · 7 nguyên tắc dựng phần mềm |
-| `man-hinh.js` | `GV.NHOM` (26 nhóm điều hướng) · `GV.MAN` (150 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
+| `man-hinh.js` | `GV.NHOM` (28 nhóm điều hướng) · `GV.MAN` (167 màn, mỗi màn là danh sách KHỐI) · `GV.TU` (bảng tra nối khối tới dữ liệu) |
 | `giao-dien.js` | Lớp dựng: 65 loại khối · vẽ Ấn Gen Việt bằng SVG · bộ máy tìm bỏ dấu, lọc theo quyền · vỏ ứng dụng · định tuyến theo hash · nhớ màn đang đọc |
 | `style.css` | Bảng màu lấy từ nhận diện GITA · kiểu chữ · bố cục · sáng và tối |
 | `index.html` | Vỏ — nạp phông rồi nạp mười tám tệp JS theo đúng thứ tự |
@@ -138,5 +140,5 @@ Cùng quy ước với hệ thống GITA 365 v8: không thư viện ngoài, mọ
 node --check genviet365/*.js
 ```
 
-Rồi mở thử toàn bộ 150 màn ở cả hai chế độ sáng và tối, và ở khổ điện thoại — bộ kiểm cần
+Rồi mở thử toàn bộ 167 màn ở cả hai chế độ sáng và tối, và ở khổ điện thoại — bộ kiểm cần
 bắt được ba thứ: màn dựng ra quá ngắn, khối thiếu loại, và trang tràn ngang.

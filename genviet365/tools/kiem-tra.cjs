@@ -24,8 +24,8 @@ var TEP = ['du-lieu.js', 'du-lieu-daotao.js', 'du-lieu-vanhanh.js', 'du-lieu-kyt
            'du-lieu-chuyenmon.js', 'du-lieu-congdong.js', 'du-lieu-thuvien.js',
            'du-lieu-trainghiem.js', 'du-lieu-giatri.js', 'du-lieu-tincay.js',
            'du-lieu-thuonghieu.js', 'du-lieu-banquyen.js',
-           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-quyen.js',
-           'quyen.js', 'man-hinh.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
+           'du-lieu-camtay.js', 'du-lieu-tracuu.js', 'du-lieu-tuyen.js', 'du-lieu-nhuongquyen.js', 'du-lieu-seo.js', 'du-lieu-quyen.js',
+           'quyen.js', 'man-hinh.js', 'nen/dau-hieu.js', 'nen/dan-xuat.js', 'nen/so-lieu.js', 'nen/dau-ban.js'];
 var MAY = [];
 
 var loi = [], canh = [];
@@ -300,7 +300,7 @@ var mSai = /var kieu = \[([\s\S]*?)\n    \];/.exec(
   fs.readFileSync(path.join(GOC, 'giao-dien.js'), 'utf8'));
 if (!mSai) L('Không tìm thấy danh sách hình vẽ của khối ansai trong giao-dien.js');
 else {
-  var soHinh = (mSai[1].match(/\{\s*(s:|a:|nen:)/g) || []).length;
+  var soHinh = (mSai[1].match(/\{\s*(s:|a:|nen:|mot:|co:)/g) || []).length;
   var soChu = (G.TH_AN_SAI || []).length;
   if (soHinh !== soChu)
     L('Ấn: khối ansai vẽ ' + soHinh + ' hình nhưng kho TH_AN_SAI có ' +
@@ -475,6 +475,53 @@ TEP.concat(['giao-dien.js']).forEach(function (t) {
   if (goi.indexOf(t) < 0) L('dong-goi-artifact.cjs chưa gộp ' + t);
 });
 if (html.indexOf('Content-Security-Policy') < 0) L('index.html chưa đặt Content-Security-Policy');
+
+/* ── 7b. đầu trang phải đủ để máy tìm kiếm đọc được ────
+      Không kiểm "trang có lên top không" — không ai kiểm được điều
+      đó. Chỉ kiểm những thứ CÓ THỂ kiểm: thẻ nào phải có, dài bao
+      nhiêu, và khai báo dữ liệu có cấu trúc có hợp lệ không. */
+function theCua(loai, ten) {
+  var m = html.match(new RegExp('<meta\\s+' + loai + '="' + ten +
+    '"\\s+content="([^"]*)"'));
+  return m ? m[1] : null;
+}
+var tdChinh = (html.match(/<title>([\s\S]*?)<\/title>/) || [])[1];
+if (!tdChinh) L('index.html không có thẻ tiêu đề');
+else if (tdChinh.length > 60) C('Thẻ tiêu đề dài ' + tdChinh.length +
+  ' ký tự — Google cắt quanh mốc 60');
+var mtChinh = theCua('name', 'description');
+if (!mtChinh) L('index.html không có thẻ mô tả');
+else if (mtChinh.length < 100 || mtChinh.length > 165)
+  C('Thẻ mô tả dài ' + mtChinh.length + ' ký tự — nên nằm trong khoảng 140–160');
+['og:title', 'og:description', 'og:url', 'og:image', 'og:type', 'og:site_name']
+  .forEach(function (t) {
+    if (!theCua('property', t)) L('index.html thiếu thẻ chia sẻ ' + t);
+  });
+if (html.indexOf('rel="canonical"') < 0) L('index.html thiếu thẻ chuẩn tắc');
+var anhCS = theCua('property', 'og:image');
+if (anhCS) {
+  var tenAnh = anhCS.replace(/^.*\//, '');
+  if (!fs.existsSync(path.join(GOC, 'nhan-dien', tenAnh)))
+    L('Thẻ og:image trỏ tới nhan-dien/' + tenAnh + ' nhưng tệp không có');
+}
+var ldm = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+if (!ldm) L('index.html thiếu khai báo dữ liệu có cấu trúc (ld+json)');
+else {
+  try {
+    var ld = JSON.parse(ldm[1]);
+    var loaiCo = {};
+    (ld['@graph'] || []).forEach(function (x) { loaiCo[x['@type']] = 1; });
+    ['EducationalOrganization', 'EducationalOccupationalProgram', 'WebSite']
+      .forEach(function (t) {
+        if (!loaiCo[t]) L('Khai báo ld+json thiếu loại ' + t);
+      });
+  } catch (x) { L('Khai báo ld+json không phải JSON hợp lệ: ' + x.message); }
+}
+/* lớp giao diện phải đổi tiêu đề theo màn — nếu không, mọi màn
+   cùng một tên trên thẻ trình duyệt và trong dấu trang đã lưu */
+if (gd.indexOf('document.title') < 0)
+  L('giao-dien.js không đặt lại tiêu đề trang khi đổi màn');
+
 
 /* ── 8. lớp giao diện: những thứ không được có ───────── */
 if (/\beval\s*\(|new Function\s*\(/.test(gd)) L('giao-dien.js có eval hoặc new Function');
