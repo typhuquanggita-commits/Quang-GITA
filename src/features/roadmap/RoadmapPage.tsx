@@ -12,6 +12,7 @@ import { Badge, Button, Card, CardHeader, Field, Input, Progress, Stat } from '.
 import { TrendLine } from '../../components/charts';
 import { CoachPanel } from '../ai/TutorPanel';
 import { PlanBudget } from './PlanBudget';
+import { PerfectPlan } from './PerfectPlan';
 
 /**
  * LO TRINH
@@ -68,6 +69,8 @@ export function RoadmapPage() {
       </div>
 
       <PlanBudget />
+
+      <PerfectPlan />
 
       <Card>
         <CardHeader
