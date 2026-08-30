@@ -4524,6 +4524,195 @@ const { chromium } = require(PW);
     }
   }
 
+  /* ═══════════ 44 · BẢNG CÔNG VIỆC · LUÂN CHUYỂN · KPI ═══════════
+     Anh Quang đặt: checklist việc trong ngày cho từng vị trí, bảng tiến
+     trình bốn cột, chốt ngày thành KPI, trung bình tháng để xét lương
+     thưởng, danh mục đầu việc tích chọn được, biết việc đang ở tay ai,
+     KPI có trách nhiệm liên đới — và phía khách hàng thì KPI ngày cùng
+     KPI tầng để xét phân hạng.
+
+     Mục này đo cái dễ hỏng nhất của một hệ KPI: chỗ nó có thể bị thổi.
+     Một hệ chấm bằng lời khai, hoặc chia cho một mẫu số rỗng, thì mọi
+     con số nó in ra đều vô nghĩa — mà vẫn trông như có nghĩa. */
+  console.log('\n44 · BẢNG CÔNG VIỆC · LUÂN CHUYỂN · KPI');
+  {
+    const r44 = await p.evaluate(() => {
+      const G = window.G, ra = {}, D = 86400000;
+
+      /* ── Danh mục phủ đủ vị trí ── */
+      const vaiCo = new Set((G.ROLES || []).map(r => r.id));
+      ra.mucLa = [...new Set((G.CV_MUC || []).flatMap(m => m.vai).filter(v => !vaiCo.has(v)))];
+      ra.chuyenLa = (G.CV_MUC || []).filter(m => m.chuyen && !vaiCo.has(m.chuyen)).map(m => m.ma);
+      const nhipCo = new Set((G.TG_NHIEMVU || []).map(x => x.ma));
+      ra.nhipLa = (G.CV_MUC || []).filter(m => !nhipCo.has(m.nhip)).map(m => m.ma + '→' + m.nhip);
+      ra.viTriThieu = (G.ROLES || []).filter(r => r.lv <= 12 || r.id === 'R15')
+        .filter(r => !(G.CV_MUC || []).some(m => m.vai.indexOf(r.id) >= 0)).map(r => r.id);
+      ra.soMuc = (G.CV_MUC || []).length;
+      ra.thieuXong = (G.CV_MUC || []).filter(m => !m.xong || m.xong.length < 40).map(m => m.ma);
+      ra.thieuDiem = (G.CV_MUC || []).filter(m => !(m.diem > 0)).map(m => m.ma);
+
+      /* ── Vòng đời một việc, chạy thật ── */
+      const giu = G.S.viec, giuChot = G.S.chotNgay, giuVai = G.S.roleObj;
+      G.S.viec = {}; G.S.chotNgay = {};
+      G.S.roleObj = G.roleById('R11');
+      const ma = (G.cvMucCuaToi('R11')[0] || {}).ma;
+      const n1 = G.cvNhan(ma);
+      ra.nhanDuoc = n1.ok;
+      const id = n1.ok ? n1.viec.id : null;
+      ra.nhanTrung = G.cvNhan(ma).ok === false;
+      ra.trangMoi = id && G.cvTrangThai(G.cvSo()[id]) === 'moi';
+      G.cvBatDau(id);
+      ra.trangDang = id && G.cvTrangThai(G.cvSo()[id]) === 'dang';
+      ra.chanLoiKhai = G.cvXong(id, 'xong rồi').ok === false;
+      ra.chanRong = G.cvXong(id, '').ok === false;
+      ra.dongDuoc = G.cvXong(id, 'Gọi lúc 15h20, mẹ cháu nghe máy, lo nhất chuyện thức khuya.').ok;
+      ra.trangXong = id && G.cvTrangThai(G.cvSo()[id]) === 'xong';
+      ra.dongLai = G.cvXong(id, 'Bằng chứng khác đủ dài để qua ngưỡng kiểm tra.').ok === false;
+
+      /* ── Đồng hồ tự đẩy sang TRỄ, không ai bấm ── */
+      const n2 = G.cvNhan((G.cvMucCuaToi('R11')[2] || {}).ma);
+      G.cvSo()[n2.viec.id].hanLuc = Date.now() - 3600000;
+      ra.treTuDong = G.cvTrangThai(G.cvSo()[n2.viec.id]) === 'tre';
+
+      /* ── Luân chuyển: việc rời bảng mình, sang bảng người nhận ── */
+      const mChuyen = (G.CV_MUC || []).filter(m => m.chuyen && m.vai.indexOf('R11') >= 0)[0];
+      const n3 = G.cvNhan(mChuyen.ma);
+      const rc = G.cvChuyen(n3.viec.id, mChuyen.chuyen, 'Bàn giao thử');
+      ra.chuyenDuoc = rc.ok;
+      ra.roiBangMinh = !G.cvViecCuaToi('R11').some(v => v.id === n3.viec.id);
+      ra.vaoBangHo = G.cvViecCuaToi(mChuyen.chuyen).some(v => v.id === n3.viec.id);
+      ra.duongDiGhiLai = (G.cvSo()[n3.viec.id].lichSu || []).length >= 2;
+      ra.bietOTayAi = G.cvSo()[n3.viec.id].nguoi === mChuyen.chuyen;
+      ra.lienDoiHien = G.cvLienDoi('R11').some(x => x.ma === mChuyen.ma);
+
+      /* ── KPI: mọi ngày phải nằm trong 0–100, tử số không vượt mẫu số ── */
+      G.S.viec = {};
+      const mucs = G.cvMucCuaToi('R11').slice(0, 2);
+      const nay = Date.now();
+      for (let d = 14; d >= 3; d--)
+        mucs.forEach((m, j) => {
+          const han = nay - d * D, k = m.ma + '|' + han + '|' + j;
+          G.S.viec[k] = { id: k, ma: m.ma, nguoi: 'R11', nhanLuc: han - D, hanLuc: han,
+            batDauLuc: han - D / 2, xongLuc: (d % 4 === 0 && j === 1) ? 0 : han - 3600000,
+            bangChung: 'Bằng chứng thử đủ dài để qua ngưỡng.', giaoTu: '', lichSu: [] };
+        });
+      const kt = G.cvKpiThang(null, 'R11');
+      ra.thangDu = kt.du;
+      ra.thangPt = kt.pt;
+      ra.hang = kt.hang && kt.hang.ma;
+      ra.moiNgayHopLe = kt.ngay.every(x => x.pt >= 0 && x.pt <= 100);
+      ra.tuSoTrongMauSo = kt.ngay.every(x => x.tuSo <= x.mauSo);
+      ra.khongMauSoRong = kt.ngay.every(x => x.mauSo > 0);
+      ra.ngayTrongKhongTinh = G.cvKpiNgay('2020-01-01', 'R11').tinh === false;
+      ra.treCoTru = kt.ngay.some(x => x.tru > 0);
+
+      /* Sàn: tháng ít ngày thì KHÔNG ra số */
+      G.S.viec = {};
+      const m0 = mucs[0], h0 = nay - 2 * D;
+      G.S.viec['x'] = { id: 'x', ma: m0.ma, nguoi: 'R11', nhanLuc: h0 - D, hanLuc: h0,
+        batDauLuc: 0, xongLuc: 0, bangChung: '', giaoTu: '', lichSu: [] };
+      const kt2 = G.cvKpiThang(null, 'R11');
+      ra.sanChanSoAo = kt2.du === false && kt2.pt === null;
+
+      G.S.viec = giu; G.S.chotNgay = giuChot; G.S.roleObj = giuVai;
+      return ra;
+    });
+
+    bao(!r44.mucLa.length && !r44.chuyenLa.length,
+      'danh mục đầu việc không gọi tên vị trí nào không tồn tại',
+      r44.mucLa.concat(r44.chuyenLa).join(' ') || r44.soMuc + ' đầu việc, mã vị trí khớp hết');
+    bao(!r44.nhipLa.length,
+      'mọi đầu việc gắn đúng một lớp nhịp CÓ THẬT trong chuẩn thời gian — hạn giờ đọc từ đó, không viết lại lần thứ hai',
+      r44.nhipLa.join(' ') || 'khớp hết');
+    bao(!r44.viTriThieu.length,
+      'mọi vị trí trong hệ đều có đầu việc chuẩn — vị trí không có đầu việc thì không chấm KPI được',
+      r44.viTriThieu.join(' ') || 'đủ 13 vị trí');
+    bao(!r44.thieuXong.length && !r44.thieuDiem.length,
+      'đầu việc nào cũng nói rõ ĐÓNG BẰNG BẰNG CHỨNG GÌ và đáng bao nhiêu điểm',
+      r44.thieuXong.concat(r44.thieuDiem).join(' ') || r44.soMuc + '/' + r44.soMuc);
+
+    bao(r44.nhanDuoc && r44.trangMoi && r44.trangDang && r44.trangXong,
+      'một việc đi đủ vòng: nhận → bắt đầu → đóng, trạng thái đổi đúng từng bước',
+      'mới → đang làm → đã xong');
+    bao(r44.nhanTrung,
+      'không nhận trùng một đầu việc đang mở — hai bản ghi cùng hạn thì KPI đếm mẫu số hai lần cho một việc');
+    bao(r44.chanLoiKhai && r44.chanRong,
+      'ĐÓNG BẰNG LỜI KHAI BỊ CHẶN — "xong rồi" và chuỗi rỗng đều không đóng được việc',
+      'một hệ KPI chấm bằng lời khai là một hệ trả lương cho lời khai');
+    bao(r44.dongDuoc && r44.dongLai,
+      'có bằng chứng thì đóng được, và đóng rồi thì không đóng lại được');
+    bao(r44.treTuDong,
+      'quá hạn thì ĐỒNG HỒ tự đẩy sang cột trễ — không ai phải bấm, nên không bao giờ lệch');
+
+    bao(r44.chuyenDuoc && r44.roiBangMinh && r44.vaoBangHo,
+      'luân chuyển: việc rời bảng người giao và sang đúng bảng người nhận — một bản ghi, không nhân đôi');
+    bao(r44.bietOTayAi && r44.duongDiGhiLai,
+      'luôn trả lời được "việc này đang ở tay ai" và "đã đi qua những ai"',
+      'lịch sử luân chuyển ghi lại từng chặng');
+    bao(r44.lienDoiHien,
+      'người giao vẫn thấy phần LIÊN ĐỚI của mình sau khi việc rời tay — không dồn hết cho người cuối cầm việc');
+
+    bao(r44.thangDu && r44.moiNgayHopLe && r44.tuSoTrongMauSo,
+      'KPI ngày nào cũng nằm trong 0–100 và tử số không bao giờ vượt mẫu số',
+      r44.thangDu ? 'tháng ' + r44.thangPt + '% · hạng ' + r44.hang : 'không dựng được tháng để đo');
+    bao(r44.khongMauSoRong,
+      'không ngày nào được chấm trên MẪU SỐ RỖNG — bản đầu tính tử số theo ngày bấm nút, nên làm sớm là có tử số mà không có mẫu số, và tỉ lệ vọt lên 100% trên một phép chia rỗng',
+      'mọi ngày được tính đều có việc đến hạn');
+    bao(r44.ngayTrongKhongTinh,
+      'ngày không có việc đến hạn thì KHÔNG TÍNH, không phải 0% — đưa 0% vào trung bình là phạt người ta vì hệ thống không giao việc');
+    bao(r44.treCoTru,
+      'ngày có việc trễ thì bị trừ theo bảng phạt đã có, không viết lại thang phạt lần thứ hai');
+    bao(r44.sanChanSoAo,
+      'tháng dưới sàn ngày thì KHÔNG ra một con số — trung bình của hai ngày không nói được gì về một tháng, mà một con số thì trông như đã nói');
+
+    /* ── Phía khách hàng ── */
+    const r45 = await p.evaluate(() => {
+      const G = window.G, ra = {};
+      /* Dọn SẠCH mọi dấu vết trước khi đo, không chỉ sổ nhật ký. Các mục
+         kiểm phía trên đã chạy qua hàng trăm màn và để lại checks với
+         thoigian trong bộ nhớ; đo trên nền ấy thì "sổ trống" vẫn ra 15%
+         và phép đo bắt lỗi ở chỗ không có lỗi. */
+      const giuVai = G.S.roleObj, giuJ = G.S.journal, giuC = G.S.chotKhNgay;
+      const giuCh = G.S.checks, giuTg = G.S.thoigian, giuNk = G.S.nhatky;
+      G.S.roleObj = G.roleById('R13');
+      G.S.journal = {}; G.S.chotKhNgay = {};
+      G.S.checks = {}; G.S.thoigian = {}; G.S.nhatky = {};
+      ra.ngay0 = G.khKpiNgay().pt;
+      G.S.journal = { d1: 'Ngồi vào bàn 20h, rời 21h30, phải nhắc hai lần.' };
+      ra.ngay1 = G.khKpiNgay().pt;
+      ra.tangChuaDu = G.khKpiTang().du === false;
+      for (let i = 1; i <= 14; i++) G.S.chotKhNgay['2026-08-' + ('0' + i).slice(-2)] = { pt: 80 };
+      const t = G.khKpiTang();
+      ra.tangDu = t.du; ra.tangPt = t.pt; ra.nhipPt = t.nhipPt;
+      ra.congThucDung = t.pt === Math.round(t.nhipPt * 0.6 + t.mocPt * 0.4);
+      ra.coNguong = !!(t.nguong && t.nguong.ma);
+      ra.soNhip = (G.CV_KH_NGAY || []).length;
+      ra.tongDiem = (G.CV_KH_NGAY || []).reduce((a, x) => a + x.diem, 0);
+      G.S.roleObj = giuVai; G.S.journal = giuJ; G.S.chotKhNgay = giuC;
+      G.S.checks = giuCh; G.S.thoigian = giuTg; G.S.nhatky = giuNk;
+      return ra;
+    });
+    bao(r45.ngay0 === 0 && r45.ngay1 > 0,
+      'KPI ngày của gia đình đọc từ DẤU VẾT THẬT — sổ trống thì 0%, ghi một dòng nhật ký là điểm lên ngay',
+      r45.ngay0 + '% → ' + r45.ngay1 + '%');
+    bao(r45.soNhip >= 5 && r45.tongDiem === 100,
+      'năm nhịp ngày của gia đình cộng tròn 100 điểm', r45.soNhip + ' nhịp · ' + r45.tongDiem + ' điểm');
+    bao(r45.tangChuaDu,
+      'chưa đủ ngày thì KPI TẦNG không ra số — xét phân tầng bằng trung bình vài ngày là xét bằng may rủi');
+    bao(r45.tangDu && r45.congThucDung,
+      'KPI tầng tính đúng công thức đã công bố: 60% nhịp ngày cộng 40% tiêu chí mốc',
+      r45.tangDu ? r45.nhipPt + '% nhịp → ' + r45.tangPt + '% tầng' : 'chưa dựng được');
+    bao(r45.coNguong,
+      'KPI tầng rơi vào đúng một trong ba ngưỡng xét phân hạng');
+
+    /* ── Không bịa số tiền ── */
+    const tienAo = require('fs').readFileSync(
+      require('path').join(__dirname, '..', 'kho-goc', 'data.cong-viec.js'), 'utf8');
+    bao(!/heSo:\s*\d/.test(tienAo) && !/(triệu|VNĐ|VND)\s*\d/.test(tienAo),
+      'bảng hạng KHÔNG bịa hệ số lương hay số tiền — con số sai đi vào bảng lương thì không rút lại được bằng một lần sửa mã',
+      'chỉ ghi điều kiện và quyền lợi, phần tiền để chủ Học viện điền');
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

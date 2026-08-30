@@ -59,6 +59,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   'NGHILE_TH', 'NGHILE_THEM', 'NGHILE_LUAT',
   /* Sổ khai dữ liệu mẫu — để không ai tưởng số dựng là số đo */
   'DL_MAU', 'DL_MAU_LUAT',
+  /* Bảng công việc, luật chấm KPI và hạng tháng. Ở gói NỀN vì MỌI vai
+     đều phải mở được bảng việc của mình — kể cả cộng tác viên, và kể cả
+     gia đình (phần CV_KH_*). Danh mục đầu việc tự lọc theo vai ngay trên
+     màn hình, nên để ở nền không mở thêm gì cho ai. */
+  'CV_TRANG', 'CV_MUC', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */

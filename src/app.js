@@ -942,6 +942,16 @@ on('[data-pq]', function(el){
 });
 on('[data-lang]', function(el){ G.setLang(el.getAttribute('data-lang')); });
 on('[data-ct]', function(el){ G.doiPhanCuaTruoc(el.getAttribute('data-ct')); });
+/* ── Bảng công việc ── */
+on('[data-cvnhan]',   function(el){ G.cvNhanHoiDap(el.getAttribute('data-cvnhan')); });
+on('[data-cvbatdau]', function(el){ G.cvBatDauHoiDap(el.getAttribute('data-cvbatdau')); });
+on('[data-cvxong]',   function(el){ G.cvMoDongViec(el.getAttribute('data-cvxong')); });
+on('[data-cvchuyen]', function(el){ G.cvMoChuyen(el.getAttribute('data-cvchuyen')); });
+on('[data-cvduong]',  function(el){ G.cvMoDuongDi(el.getAttribute('data-cvduong')); });
+on('[data-cvdong]',   function(el){ G.cvDongThat(el.getAttribute('data-cvdong')); });
+on('[data-cvchuyenthat]', function(el){ G.cvChuyenThat(el.getAttribute('data-cvchuyenthat')); });
+on('[data-cvchot]',   function(){ G.cvChotHoiDap(); });
+on('[data-khchot]',   function(){ G.khChotHoiDap(); });
 on('[data-v]', function(el){ G.go(el.getAttribute('data-v')); });
 on('[data-go]', function(el){ document.getElementById('cmd').classList.remove('on'); G.go(el.getAttribute('data-go')); });
 on('[data-grp]', function(el){
@@ -1073,6 +1083,8 @@ on('[data-act]', function(el){
   if(a==='kt-lam') return G.lamViecTaiKhoan();
   if(a==='kt-xoa-that') return G.xoaTaiKhoanThat(el);
   if(a==='xem-truoc') return G.moCuaTruoc();
+  if(a==='cv-chot') return G.cvChotHoiDap();
+  if(a==='kh-chot') return G.khChotHoiDap();
   if(a==='ct-dong') return G.dongCuaTruoc();
   if(a==='mo-dang-ky') return G.moDangKy();
   if(a==='gui-dang-ky') return G.guiDangKy();
