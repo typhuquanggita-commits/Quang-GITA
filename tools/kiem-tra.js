@@ -2246,14 +2246,31 @@ const { chromium } = require(PW);
       r.soBai = ds.length;
       r.duBaPhan = ds.every(x => x.hoc && x.lam && x.nop);
       r.loTrinh = (G.khLoTrinh() || {}).vai;
-      r.yeu = Object.keys(G.khTrucYeu()).length;
-      /* Bài của trục yếu phải mở ngay, không phải xếp hàng */
+      /* Trước v9.3 chỗ này đọc kết quả bài thi mà bước kiểm liền trước
+         vừa nộp — mà bài thi ấy chấm ra trục yếu nào là tuỳ đáp án được
+         chọn. Có lần ra một trục yếu, có lần ra cả tám. Ra cả tám thì
+         `khac` rỗng, `some` trên mảng rỗng là false, và phép đo đỏ dù mã
+         không đổi. Chạy ba lần liên tiếp cùng một mã: xanh · đỏ · xanh.
+
+         Nay phép đo tự DỰNG trạng thái nó muốn kiểm — đúng một trục yếu,
+         chọn từ chính trục của bài đầu tiên — rồi mới đo. Kiểm được đúng
+         cái luật cần kiểm, và kiểm được mỗi lần chạy. Trả state về chỗ cũ
+         sau khi đo, để bước sau không thừa hưởng đồ giả. */
+      const giuSH = G.S.sathach;
+      const trucMot = ds[0] && ds[0].truc;
+      G.S.sathach = { 'bai|dung': { trucYeu: [trucMot] } };
       const yeu = Object.keys(G.khTrucYeu());
-      const baiYeu = ds.filter(x => yeu.indexOf(x.truc) >= 0);
+      r.yeu = yeu.length;
+      r.dungMotTruc = yeu.length === 1 && yeu[0] === trucMot;
+      const baiYeu = ds.filter(x => x.truc === trucMot);
       r.baiYeuMo = baiYeu.length > 0 && baiYeu.every(x => G.khMoDuoc(x.ma));
-      /* Bài cuối cùng của một trục KHÔNG yếu thì phải còn khoá */
-      const khac = ds.filter(x => yeu.indexOf(x.truc) < 0);
-      r.coKhoa = khac.some(x => !G.khMoDuoc(x.ma));
+      /* Bài KHÔNG thuộc trục yếu, không phải bài đầu, và bài liền trước
+         chưa nộp — bài ấy phải còn khoá. */
+      const khac = ds.filter((x, i) => i > 0 && x.truc !== trucMot &&
+        G.khTrangThai(ds[i - 1].ma) !== 'xong');
+      r.soKhac = khac.length;
+      r.coKhoa = khac.length > 0 && khac.some(x => !G.khMoDuoc(x.ma));
+      G.S.sathach = giuSH;
       r.dai = G.VIEWS['khoa-dao-tao']().length;
       r.soLuat = (G.KH_LUAT || []).length;
       return r;
@@ -2261,9 +2278,12 @@ const { chromium } = require(PW);
     bao(kdt.soBai > 0 && kdt.duBaPhan,
       'bài nào cũng đủ ba phần Học · Làm · Nộp', kdt.soBai + ' bài');
     bao(kdt.loTrinh === 'COACH', 'mở đúng lộ trình của vai đang đăng nhập', kdt.loTrinh);
-    bao(kdt.yeu > 0 && kdt.baiYeuMo,
-      'trục bài thi chỉ ra còn yếu thì bài của trục đó mở NGAY, không xếp hàng', kdt.yeu + ' trục');
-    bao(kdt.coKhoa, 'bài không thuộc trục yếu vẫn khoá cho tới khi nộp bài liền trước');
+    bao(kdt.dungMotTruc && kdt.baiYeuMo,
+      'trục bài thi chỉ ra còn yếu thì bài của trục đó mở NGAY, không xếp hàng',
+      kdt.dungMotTruc ? 'dựng đúng 1 trục yếu · bài của trục đó đều mở' : 'không dựng được trạng thái để đo');
+    bao(kdt.coKhoa,
+      'bài không thuộc trục yếu vẫn khoá cho tới khi nộp bài liền trước',
+      kdt.soKhac ? kdt.soKhac + ' bài ngoài trục yếu, có bài còn khoá' : 'không có bài nào ngoài trục yếu để đo');
     bao(kdt.dai > 6000, 'màn khoá đào tạo dựng ra nội dung thật', kdt.dai + ' ký tự');
     bao(kdt.soLuat >= 6, 'có bộ luật học', kdt.soLuat + ' điều');
 
@@ -4356,6 +4376,151 @@ const { chromium } = require(PW);
       bao(!/tầm nhìn|chín vai/i.test(khac.ctv || ''),
         'chuỗi của cộng tác viên không chứa việc của một gia đình — họ có mã liên kết và trần hoa hồng, không có "nhà mình" trong hệ thống',
         /tầm nhìn|chín vai/i.test(khac.ctv || '') ? 'vẫn còn việc của gia đình' : 'đã tách');
+    }
+  }
+
+  /* ═══════════ 43 · CỘT TRÁI CHỈ HIỆN PHẦN CỦA MÌNH ═══════════
+     Anh Quang: thư mục nào ngoài phạm vi thì ẩn khỏi cột bên trái, chỉ
+     cho nhìn thấy phần trong quyền hạn; lên cấp rồi mới được thấy.
+
+     Đo trước khi sửa: cột trái gấp mọi mục ngoài phạm vi vào một khối
+     "N mục ngoài phạm vi vai này" — bấm mở ra là thấy đủ TÊN. Phụ huynh
+     86 tên, học viên 93, cộng tác viên 98, chuyên gia tư vấn 37. Trong
+     đó có "220 phác đồ × 5 tầng", "1.000 kịch bản chuyên môn", "Kho báu
+     vật", "Xương sống phương pháp", "Hệ quản trị tài chính", "Mật mã kín
+     trên tài liệu". Cột trái đang phát danh mục màn hình của cả hệ thống
+     cho mọi tài khoản.
+
+     Mục này khoá lại ba điều: không tên nào lọt ra, cột lọc theo CẢ gói
+     nội dung chứ không chỉ theo vai, và lên tầng thì mục mới tự hiện kèm
+     một dòng báo — vì ẩn đi rồi thì lúc được cấp thêm sẽ không ai nhận
+     ra, nếu không nói. */
+  console.log('\n43 · CỘT TRÁI CHỈ HIỆN PHẦN CỦA MÌNH');
+  {
+    const fs43 = require('fs'), px43 = require('path');
+    const goc43 = px43.join(__dirname, '..');
+
+    /* Không còn kiểu dáng nào cho mục khoá — còn kiểu là còn đường quay lại */
+    const css43 = fs43.readFileSync(px43.join(goc43, 'assets', 'style.css'), 'utf8');
+    const jsCot = fs43.readFileSync(px43.join(goc43, 'src', 'app.js'), 'utf8');
+    bao(!/^\s*\.nav-khoa\b/m.test(css43) && !/^\s*\.nav-i\.lock\b/m.test(css43),
+      'không còn kiểu dáng cho mục ngoài phạm vi — mục ấy không dựng ra nữa thì cũng không còn gì để tô',
+      'đã gỡ .nav-khoa và .nav-i.lock');
+    /* Bỏ chú thích trước khi soi, và soi đúng hai dấu vết của thẻ khoá:
+       khối gấp .nav-khoa, và lớp ' lock' gắn vào nav-i. KHÔNG soi chữ
+       "lock" trơn — nút đổi mật khẩu ở chân cột dùng biểu tượng ic('lock')
+       và nó hoàn toàn hợp lệ. */
+    const maCot = jsCot.replace(/\/\*[\s\S]*?\*\//g, '');
+    bao(!/nav-khoa/.test(maCot) && !/nav-i'\s*\+[^;]*'\s+lock'/.test(maCot) &&
+        !/class="nav-i[^"]*\block\b/.test(maCot),
+      'cột trái không dựng thẻ khoá nào — kiểm trên mã đã bỏ chú thích',
+      'không khối .nav-khoa, không lớp lock trên nav-i');
+
+    const VAI43 = [['phụ huynh', 'phuhuynh@gita365.vn'], ['học viên', 'hocvien@gita365.vn'],
+                   ['cộng tác viên', 'daisu@gita365.vn'], ['chuyên gia tư vấn', 'tuvan@gita365.vn'],
+                   ['Super Admin', 'superadmin@gita365.vn']];
+    for (const [ten43, u43] of VAI43) {
+      const q = await b.newPage();
+      if (coKhoa) {
+        const k43 = JSON.parse(fs43.readFileSync(px43.join(goc43, 'kho', 'khoa.json'), 'utf8'));
+        await q.addInitScript(x => { window.GITA_KHOA = x; }, k43.khoa);
+      }
+      await q.goto(URL, { waitUntil: 'networkidle' });
+      await q.evaluate(() => localStorage.clear());
+      await q.reload({ waitUntil: 'networkidle' });
+      await q.evaluate(x => window.G.doLogin(x), u43);
+      await q.waitForTimeout(2400);
+      const r43 = await q.evaluate(() => {
+        const G = window.G;
+        const cot = document.getElementById('left').innerText;
+        const hien = [], an = [];
+        G.NAV.forEach(g => g.items.forEach(it => (G.hienTrongCot(it) ? hien : an).push(it)));
+        return {
+          hien: hien.length, an: an.length,
+          lot: an.filter(it => cot.indexOf(it.t) >= 0).map(it => it.t),
+          /* mọi mục cột trái hiện đều phải nằm trong quyền của vai */
+          quaQuyen: hien.filter(it => it.perm && !G.can(it.perm)).map(it => it.v),
+          nut: [...document.querySelectorAll('#left .nav-i[data-v]')]
+            .map(n => n.getAttribute('data-v')),
+          thieuNut: hien.map(it => it.v).filter(v =>
+            ![...document.querySelectorAll('#left .grp .nav-i[data-v]')]
+              .some(n => n.getAttribute('data-v') === v)),
+          thuaNut: [...document.querySelectorAll('#left .grp .nav-i[data-v]')]
+            .map(n => n.getAttribute('data-v'))
+            .filter(v => !hien.some(it => it.v === v)),
+          disabled: document.querySelectorAll('#left .nav-i[disabled]').length,
+          dai: cot
+        };
+      });
+      /* So bằng TẬP, không bằng số đếm. Chân cột có nút "toi" và, với vai
+         được sửa nội dung, một nút "sap-xep" thứ hai — nên đếm thô lệch
+         đúng một, và lệch ấy là của phép đo chứ không của cột. */
+      const tapNut = new Set(r43.nut);
+      bao(!r43.lot.length,
+        ten43 + ': KHÔNG tên mục ngoài phạm vi nào lọt vào cột trái — trước v9.3 mở khối gấp ra là thấy đủ ' + r43.an + ' tên',
+        r43.lot.length ? 'lọt: ' + r43.lot.slice(0, 4).join(' · ') : r43.an + ' mục ẩn, không tên nào lọt');
+      bao(!r43.quaQuyen.length,
+        ten43 + ': không mục nào hiện vượt quyền của vai',
+        r43.quaQuyen.length ? 'vượt: ' + r43.quaQuyen.join(' ') : r43.hien + ' mục đều trong quyền');
+      bao(r43.disabled === 0,
+        ten43 + ': không nút khoá nào trong cột — nút bấm không được là nút không nên có',
+        r43.disabled + ' nút khoá');
+      bao(!r43.thieuNut.length && !r43.thuaNut.length,
+        ten43 + ': tập nút trong cột khớp đúng tập mục được phép — không mục nào thiếu nút, không nút nào trỏ tới mục đã ẩn',
+        r43.thieuNut.length ? 'thiếu nút: ' + r43.thieuNut.join(' ')
+          : r43.thuaNut.length ? 'nút thừa: ' + r43.thuaNut.join(' ')
+          : r43.hien + ' mục đều có đúng một lối vào');
+      /* Khách hàng không được nghe con số gộp cả kho nghề */
+      if (['phụ huynh', 'học viên', 'cộng tác viên'].indexOf(ten43) >= 0)
+        bao(!/ngoài phạm vi|chưa tới lượt/.test(r43.dai),
+          ten43 + ': dải phạm vi KHÔNG đếm to số mục ngoài vai — một phụ huynh sẽ không bao giờ "tới lượt" kho nghề, hứa thế là hứa sai',
+          /mở ở tầng sau/.test(r43.dai) ? 'chỉ đếm mục chờ tầng' : 'chỉ đếm mục đang mở');
+      await q.close();
+    }
+
+    /* ── Lọc theo GÓI, và hiện lại khi được cấp thêm ── */
+    if (coKhoa) {
+      const all43 = JSON.parse(fs43.readFileSync(px43.join(goc43, 'kho', 'khoa.json'), 'utf8')).khoa;
+      const q2 = await b.newPage();
+      await q2.addInitScript(x => { window.GITA_KHOA = x; }, { nen: all43.nen });
+      await q2.goto(URL, { waitUntil: 'networkidle' });
+      await q2.evaluate(() => localStorage.clear());
+      await q2.reload({ waitUntil: 'networkidle' });
+      await q2.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
+      await q2.waitForTimeout(2400);
+      const r44 = await q2.evaluate(() => {
+        const G = window.G, ra = {};
+        ra.chiNen = G.KHO.daNap.slice().sort().join(',');
+        ra.anVietGoi = [];
+        G.NAV.forEach(g => g.items.forEach(it => {
+          if (!G.hienTrongCot(it) && (!it.perm || G.can(it.perm)))
+            ra.anVietGoi.push(it.v);
+        }));
+        ra.daiLan1 = /vừa mở cho anh chị/.test(document.getElementById('left').innerText);
+        /* máy chủ cấp thêm gói tầng một */
+        G.KHO.daNap.push('tang1');
+        const moi = G.mucVuaMo();
+        ra.vuaMo = moi;
+        G.S.daThay = (G.S.daThay || []).filter(v => moi.indexOf(v) < 0);
+        document.getElementById('left').innerHTML = G.leftNav();
+        ra.daiLan2 = /vừa mở cho anh chị/.test(document.getElementById('left').innerText);
+        document.getElementById('left').innerHTML = G.leftNav();
+        ra.daiLan3 = /vừa mở cho anh chị/.test(document.getElementById('left').innerText);
+        return ra;
+      });
+      await q2.close();
+      bao(r44.chiNen === 'nen' && r44.anVietGoi.indexOf('bo-test') >= 0,
+        'chỉ được cấp gói nền thì mục cần gói tầng KHÔNG hiện trong cột — thấy tên rồi bị chặn tệ hơn không thấy',
+        'nạp ' + r44.chiNen + ' · ẩn vì thiếu gói: ' + (r44.anVietGoi.join(' ') || 'không mục nào'));
+      bao(!r44.daiLan1,
+        'lần đầu đăng nhập KHÔNG báo "vừa mở" — chưa có gì để so thì im, không báo 44 mục vừa mở cho người mới vào');
+      bao(r44.vuaMo.length === 1 && r44.vuaMo[0] === 'bo-test',
+        'được cấp thêm gói tầng thì nhận ra ĐÚNG mục vừa mở',
+        (r44.vuaMo || []).join(' ') || 'không nhận ra mục nào');
+      bao(r44.daiLan2 === true,
+        'và nói ra cho người dùng biết — ẩn đi rồi thì lúc được cấp thêm phải có ai đó nói, không thì mục mới chen vào giữa bốn mươi mục cũ mà không ai thấy');
+      bao(r44.daiLan3 === false,
+        'nói đúng một lần rồi thôi — dải báo mãi thì lần sau không ai đọc');
     }
   }
 

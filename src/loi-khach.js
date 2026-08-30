@@ -122,13 +122,20 @@ G.NOI_KHACH = {
 };
 
 /* Chữ trên dải phạm vi ở thanh trái — hai hệ nói hai kiểu */
-G.LOI_PHAM_VI = function(mo, khoa){
+/* Tham số thứ ba là số mục CHỜ TẦNG: quyền vai đã đủ, chỉ thiếu gói nội
+   dung của tầng chưa mở. Khách hàng chỉ được nghe con số ấy.
+
+   Con số thứ hai (tổng số mục ngoài tầm) gộp cả kho nghề, tài chính và
+   quản trị — những thứ một phụ huynh sẽ không bao giờ tới lượt. Nói
+   "86 mục chưa tới lượt" với họ là hứa một thứ không bao giờ tới, và là
+   đếm to danh mục nội bộ ngay trên thanh điều hướng của khách. */
+G.LOI_PHAM_VI = function(mo, khoa, choTang){
   if(G.LA_KHACH())
     return {
       nhan: (G.S.roleObj && G.S.roleObj.n) || '',
       phu:  '',
       so:   '<b>' + mo + '</b> mục đang mở' +
-            (khoa ? ' · <span class="pv-khoa">' + khoa + ' mục chưa tới lượt</span>' : '')
+            (choTang ? ' · <span class="pv-khoa">' + choTang + ' mục mở ở tầng sau</span>' : '')
     };
   return {
     nhan: (G.S.roleObj && G.S.roleObj.n) || '',

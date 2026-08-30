@@ -35,7 +35,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.2',
+  version: '9.3',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2087,13 +2087,20 @@ G.NOI_KHACH = {
 };
 
 /* Chữ trên dải phạm vi ở thanh trái — hai hệ nói hai kiểu */
-G.LOI_PHAM_VI = function(mo, khoa){
+/* Tham số thứ ba là số mục CHỜ TẦNG: quyền vai đã đủ, chỉ thiếu gói nội
+   dung của tầng chưa mở. Khách hàng chỉ được nghe con số ấy.
+
+   Con số thứ hai (tổng số mục ngoài tầm) gộp cả kho nghề, tài chính và
+   quản trị — những thứ một phụ huynh sẽ không bao giờ tới lượt. Nói
+   "86 mục chưa tới lượt" với họ là hứa một thứ không bao giờ tới, và là
+   đếm to danh mục nội bộ ngay trên thanh điều hướng của khách. */
+G.LOI_PHAM_VI = function(mo, khoa, choTang){
   if(G.LA_KHACH())
     return {
       nhan: (G.S.roleObj && G.S.roleObj.n) || '',
       phu:  '',
       so:   '<b>' + mo + '</b> mục đang mở' +
-            (khoa ? ' · <span class="pv-khoa">' + khoa + ' mục chưa tới lượt</span>' : '')
+            (choTang ? ' · <span class="pv-khoa">' + choTang + ' mục mở ở tầng sau</span>' : '')
     };
   return {
     nhan: (G.S.roleObj && G.S.roleObj.n) || '',
@@ -20406,13 +20413,18 @@ var KEY = 'gita365.v7';
 G.S = {
   role:null, acc:null, roleObj:null,
   view:'ban-do', open:['g1'], rtab:'labon', rightOpen:true, leftOpen:false,
-  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, nhatky:{}, baithi:{}, thoigian:{}, sathach:{}, khoahoc:{}, mtb:{}, famId:'F-001', kbShown:60
+  checks:{}, vision:{}, journal:{}, test:{}, bando:{}, nhatky:{}, baithi:{}, thoigian:{}, sathach:{}, khoahoc:{}, mtb:{}, famId:'F-001', kbShown:60,
+  /* Danh sách mục đã từng thấy trong cột trái. Dùng để nhận ra lúc thăng
+     hạng: tầng mở thêm thì tập mục mở rộng ra, và chênh lệch chính là
+     phần vừa được cấp. Không có sổ này thì mục mới lặng lẽ xuất hiện
+     giữa bốn mươi mục cũ và không ai biết mình vừa được cấp thêm gì. */
+  daThay:null
 };
 function save(){
   try{ localStorage.setItem(KEY, JSON.stringify({
     role:G.S.role, u:G.S.acc && G.S.acc.u, view:G.S.view, open:G.S.open, rtab:G.S.rtab,
     checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test, bando:G.S.bando, nhatky:G.S.nhatky, baithi:G.S.baithi, thoigian:G.S.thoigian, sathach:G.S.sathach, khoahoc:G.S.khoahoc,
-    rightOpen:G.S.rightOpen, mood:G.S.mood
+    rightOpen:G.S.rightOpen, mood:G.S.mood, daThay:G.S.daThay
   })); }catch(e){}
 }
 function load(){
@@ -20422,6 +20434,7 @@ function load(){
     G.S.checks = d.checks || {}; G.S.vision = d.vision || {}; G.S.journal = d.journal || {};
     G.S.test = d.test || {};
     G.S.bando = d.bando || {};
+    G.S.daThay = d.daThay || null;
     G.S.nhatky = d.nhatky || {};
     G.S.baithi = d.baithi || {};
     G.S.thoigian = d.thoigian || {};
@@ -20785,35 +20798,106 @@ function groupOf(v){
       if(G.NAV[i].items[j].v===v) return G.NAV[i].id;
   return null;
 }
-function visible(it){ return !it.perm || G.can(it.perm); }
+/* ── Mục nào ĐƯỢC HIỆN trong cột trái ──
+   Hai điều kiện, phải đủ cả hai.
+
+   1. Quyền của VAI. Đây là điều kiện cũ, giữ nguyên.
+   2. GÓI NỘI DUNG của mục đó đã được cấp cho tài khoản này.
+
+   Điều kiện 2 là phần thêm ở v9.3, và nó là phần anh Quang hỏi: thư mục
+   nào giới hạn theo tầng thì đừng hiện ra ở cột trái. Trước đây cột trái
+   chỉ lọc theo vai, nên một nhà đang ở tầng một vẫn nhìn thấy tên mọi
+   mục của tầng năm, bấm vào thì gặp tường "phần này chưa mở". Thấy tên
+   rồi bị chặn thì tệ hơn không thấy: nó biến mỗi lần bấm thành một lần
+   bị từ chối.
+
+   Gói đang trên đường nạp vẫn tính là hiện — nếu không thì lúc đăng nhập
+   xong, cột trái sẽ rụng gần hết mục rồi mọc lại sau một hai giây.
+
+   Lên tầng thì tự hiện: G.KHO.daNap đổi sau khi máy chủ cấp khoá mới,
+   leftNav() dựng lại mỗi lần vẽ, nên không cần làm gì thêm. */
+function visible(it){
+  if(it.perm && !G.can(it.perm)) return false;
+  var goi = G.goiCanCho ? G.goiCanCho(it.v) : null;
+  if(!goi) return true;
+  if(G.KHO && G.KHO.dangNap && G.KHO.dangNap.indexOf(goi) >= 0) return true;
+  return !G.coGoi || G.coGoi(goi);
+}
+G.hienTrongCot = visible;
+
+/* ── Mục vừa được cấp thêm sau khi thăng hạng ──
+   So tập mục đang mở với tập đã ghi lần trước. Chênh lệch dương là phần
+   vừa được cấp — lên tầng, đổi vai, hoặc máy chủ mở thêm phạm vi.
+
+   Vì sao cần: từ v9.3 mục ngoài phạm vi KHÔNG hiện trong cột trái nữa.
+   Được cái là khách hàng không còn nhìn thấy danh mục của nghề; mất cái
+   là lúc thăng hạng, mục mới lặng lẽ chen vào giữa bốn mươi mục cũ và
+   không ai nhận ra mình vừa được cấp thêm gì. Dải này trả lại đúng phần
+   đã mất, và chỉ trả lại phần của CHÍNH họ.
+
+   Lần đầu tiên chạy thì ghi sổ rồi im — không có gì để so, và báo "vừa
+   mở 45 mục" cho một người mới đăng nhập là báo sai. */
+G.mucVuaMo = function(){
+  var NAV = G.navDung ? G.navDung() : G.NAV, nay = [];
+  NAV.forEach(function(g){ g.items.forEach(function(it){ if(visible(it)) nay.push(it.v); }); });
+  var cu = G.S.daThay;
+  G.S.daThay = nay;
+  if(!cu || !cu.length) return [];
+  var moi = nay.filter(function(v){ return cu.indexOf(v) < 0; });
+  return moi;
+};
 
 function leftNav(){
   var r = G.S.roleObj || {};
   var NAV = G.navDung ? G.navDung() : G.NAV;
-  var tongMo = 0, tongKhoa = 0;
-  NAV.forEach(function(g){ g.items.forEach(function(it){ visible(it) ? tongMo++ : tongKhoa++; }); });
+  /* Ba con số, không phải hai. Mục chưa hiện chia làm hai loại khác hẳn
+     nhau, và gộp chúng lại là nói sai với khách hàng:
+
+       · CHỜ TẦNG — quyền vai đã đủ, chỉ thiếu gói nội dung của tầng.
+         Lên tầng là mở. Nói "chưa tới lượt" với loại này là đúng.
+       · NGOÀI VAI — kho nghề, tài chính, quản trị. Một phụ huynh sẽ
+         KHÔNG BAO GIỜ tới lượt, vì đó không phải việc của họ.
+
+     Dải cũ gộp cả hai thành "86 mục chưa tới lượt" cho phụ huynh — hứa
+     một thứ không bao giờ tới. Nay khách hàng chỉ thấy số CHỜ TẦNG; đội
+     ngũ vẫn thấy số ngoài phạm vi vì với họ đó là thông tin vận hành. */
+  var tongMo = 0, tongKhoa = 0, choTang = 0;
+  NAV.forEach(function(g){ g.items.forEach(function(it){
+    if(visible(it)){ tongMo++; return; }
+    tongKhoa++;
+    if(!it.perm || G.can(it.perm)) choTang++;   /* hụt gói, không hụt quyền */
+  }); });
+
+  /* Chỉ so khi kho đã nạp xong. Đang nạp mà so thì tập mục còn dao động,
+     và dải sẽ báo "vừa mở" rồi "vừa mở" lần nữa trong cùng một lần vào. */
+  var vuaMo = (G.KHO && G.KHO.dangNap && G.KHO.dangNap.length) ? [] : G.mucVuaMo();
+  var daiMoi = vuaMo.length
+    ? '<div class="pv-moi">'+ic('star','w-4 h-4')+
+      '<div><b>'+vuaMo.length+' mục vừa mở cho anh chị</b>'+
+      '<span>Phạm vi của tài khoản vừa được cấp rộng thêm. Bấm để xem đúng phần nào.</span></div>'+
+      '<button class="btn ghost sm" data-v="pham-vi">Xem</button></div>'
+    : '';
 
   /* Dải phạm vi — nhìn một cái là biết đang đăng nhập bằng vai nào và
      vai đó mở được bao nhiêu màn. Trước đây mọi vai trông như nhau. */
-  var L = G.LOI_PHAM_VI ? G.LOI_PHAM_VI(tongMo, tongKhoa)
+  var L = G.LOI_PHAM_VI ? G.LOI_PHAM_VI(tongMo, tongKhoa, choTang)
         : {nhan:r.n||'—', phu:'bậc '+(r.lv||'—'), so:'<b>'+tongMo+'</b> màn hình mở'};
   var dai = '<div class="pv-dai" style="--pv:'+(r.c||'var(--gita)')+'">'+
     '<div class="pv-vai">'+ic('shield','w-4 h-4')+'<b>'+h(L.nhan)+'</b>'+
       (L.phu ? '<span class="pv-bac">'+h(L.phu)+'</span>' : '')+'</div>'+
     '<div class="pv-so">'+L.so+'</div></div>';
 
-  return '<div class="scroll">'+ dai +
+  return '<div class="scroll">'+ dai + daiMoi +
     '<div class="nav-eyebrow">'+h(G.L('fiveGroups'))+'</div>' +
     NAV.map(function(g){
-      var mo   = g.items.filter(visible);
-      var khoa = g.items.filter(function(it){ return !visible(it); });
+      var mo = g.items.filter(visible);
       if(!mo.length) return '';                 /* nhóm không mở được mục nào thì không hiện */
       var open = G.S.open.indexOf(g.id)>=0;
-      function nut(it, duoc){
+      function nut(it){
         var on = it.v===G.S.view;
-        return '<button class="nav-i'+(on?' on':'')+(duoc?'':' lock')+'" data-v="'+h(it.v)+'"'+(duoc?'':' disabled')+'>'+
-          ic(duoc?it.ic:'lock')+'<span class="lb">'+h(G.iname(it))+'</span>'+
-          (duoc && it.star?'<span style="color:var(--gold-ink)">'+ic('star','w-3 h-3')+'</span>':'')+'</button>';
+        return '<button class="nav-i'+(on?' on':'')+'" data-v="'+h(it.v)+'">'+
+          ic(it.ic)+'<span class="lb">'+h(G.iname(it))+'</span>'+
+          (it.star?'<span style="color:var(--gold-ink)">'+ic('star','w-3 h-3')+'</span>':'')+'</button>';
       }
       return '<div class="grp'+(open?' open':'')+'">'+
         '<button class="grp-h" data-grp="'+h(g.id)+'">'+
@@ -20822,12 +20906,7 @@ function leftNav(){
           '<span class="no">'+mo.length+'</span>'+ic('chev','cv')+'</button>'+
         '<div class="grp-b">'+
           '<p class="tiny muted" style="padding:2px 10px 9px;line-height:1.5">'+h(G.gess(g))+'</p>'+
-          mo.map(function(it){ return nut(it,true); }).join('')+
-          (khoa.length ?
-            '<details class="nav-khoa"><summary>'+ic('lock','w-3 h-3')+
-              '<span>'+khoa.length+' mục ngoài phạm vi vai này</span></summary>'+
-              khoa.map(function(it){ return nut(it,false); }).join('')+
-            '</details>' : '')+
+          mo.map(nut).join('')+
         '</div></div>';
     }).join('') + '</div>'+
     '<div class="foot"><button class="nav-i" data-v="toi">'+ic('home')+'<span class="lb">'+h(G.L('myAccount'))+'</span></button>'+
