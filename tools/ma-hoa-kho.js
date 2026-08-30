@@ -84,6 +84,10 @@ const NGHE = [
      được gì. Đây là bản đồ năng lực nội bộ của Học viện — mở ra công khai
      là chỉ cho đối thủ đúng cách dựng đội ngũ. Ở gói NGHỀ. */
   'MT_SAU', 'SAU_BOICANH', 'SAU_TRUONG_CAP', 'SAU_TRUONG_CHUNG', 'SAU_LUAT',
+  /* Chiều sâu cho 11 nhóm phác đồ và 10 chủ đề tình huống, lớp nối giữa
+     phác đồ/tình huống với kịch bản và chuyện, quy trình riêng từng nhóm,
+     và bộ tài liệu phát cho gia đình. Tất cả là tài sản nghề — ở gói NGHỀ. */
+  'PD_SAU', 'TH_SAU', 'NOI_KET', 'QT_NHOM', 'TL_GIADINH',
   /* Chuẩn hợp đồng theo tuyến: nó liệt kê mọi điều khoản Học viện tự
      buộc mình phải có, kèm rủi ro khi thiếu. Đưa ra công khai là đưa cho
      đối thủ bản đồ pháp lý và cho bên tranh chấp danh sách chỗ yếu. */

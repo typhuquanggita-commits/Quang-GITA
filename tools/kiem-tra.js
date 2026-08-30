@@ -3752,6 +3752,99 @@ const { chromium } = require(PW);
     await p.evaluate(() => { try { localStorage.removeItem('gita365_danh_gia'); } catch (e) {} });
   }
 
+
+  /* ═══════════ 40 · KHO PHẢI CÓ ĐƯỜNG ĐI GIỮA CÁC KHO ═══════════
+     Đo trước khi làm: kho có 1.000 kịch bản, 600 chuyện theo cấp, 77
+     chuyện người thật, 220 phác đồ, 250 tình huống — mà KHÔNG một kịch
+     bản nào gắn với phác đồ nào.
+
+     Người mở một phác đồ chỉ đọc được nguyên nhân và giải pháp; muốn
+     tìm kịch bản cho ca ấy phải tự nhớ tên rồi dò trong một nghìn cái.
+     Thực tế là không ai làm. Kho không thiếu nội dung — kho thiếu
+     ĐƯỜNG ĐI giữa các nội dung. */
+  console.log('\n40 · LỚP NỐI VÀ CHIỀU SÂU');
+  {
+    const nk = await p.evaluate(() => {
+      const G = window.G;
+      const s = G.nkSoat ? G.nkSoat() : null;
+      if (!s) return null;
+      /* Dựng THẬT hai cửa sổ rồi tìm chuỗi — không đọc bảng khai.
+         Bảng khai đúng mà hàm bọc hỏng thì bản kiểm đọc bảng vẫn xanh. */
+      const giu = G.U.modal;
+      let pd = '', th = '';
+      G.U.modal = x => { pd = x; }; G.phacDoModal('PH-01');
+      G.U.modal = x => { th = x; }; G.tinhHuongModal('T1-1');
+      G.U.modal = giu;
+      /* Chất lượng mối nối: điểm và số mối nối có từ khoá giải thích */
+      const d = G.NOI_KET || { pd: {} };
+      const moi = [];
+      Object.keys(d.pd || {}).forEach(m => (d.pd[m].kb || []).forEach(x => moi.push(x)));
+      const khongVi = moi.filter(x => !x.vi || !x.vi.length).length;
+      /* Nhóm phác đồ nào cũng phải có chiều sâu */
+      const nhom = {}; (G.PHACDO || []).forEach(x => { nhom[x.nhom] = 1; });
+      const thieuSau = Object.keys(nhom).filter(n => !(G.PD_SAU || {})[n]);
+      /* Năm cấp phải nói năm việc KHÁC nhau — trùng nhau là chữ, không phải sâu */
+      const lap = [];
+      Object.keys(G.PD_SAU || {}).forEach(n => {
+        const c = G.PD_SAU[n].c || {};
+        const lam = ['C1', 'C2', 'C3', 'C4', 'C5'].map(k => (c[k] || {}).lam || '');
+        if (new Set(lam).size !== 5) lap.push(n);
+      });
+      /* Trường "chua" bắt buộc có ở MỌI cấp, kể cả C5 */
+      const thieuChua = [];
+      Object.keys(G.PD_SAU || {}).forEach(n => {
+        const c = G.PD_SAU[n].c || {};
+        ['C1', 'C2', 'C3', 'C4', 'C5'].forEach(k => {
+          if (!(c[k] || {}).chua || String(c[k].chua).length < 30) thieuChua.push(n + '.' + k);
+        });
+      });
+      return { ...s, pdDai: pd.length, thDai: th.length,
+        pdCoKB2: /KỊCH BẢN DÙNG ĐƯỢC/.test(pd), pdCoSau: /CHIỀU SÂU NĂM CẤP/.test(pd),
+        pdCoChuyen: /CHUYỆN KỂ ĐƯỢC/.test(pd), thCoKB2: /KỊCH BẢN DÙNG ĐƯỢC/.test(th),
+        soMoi: moi.length, khongVi, thieuSau, lap, thieuChua, soNhom: Object.keys(nhom).length };
+    });
+
+    bao(!!nk, 'lớp nối có mặt trong ứng dụng');
+    if (nk) {
+      bao(nk.pdCoKB >= nk.pd, 'mọi phác đồ đều có kịch bản dùng được — trước đây là 0',
+        nk.pdCoKB + '/' + nk.pd);
+      bao(nk.thCoKB >= nk.th, 'mọi tình huống đều có kịch bản, ưu tiên cùng tầng',
+        nk.thCoKB + '/' + nk.th);
+      bao(nk.boc === 2, 'lớp nối bọc được cả hai cửa sổ phác đồ và tình huống', nk.boc + '/2');
+
+      /* Đo cửa sổ THẬT, không đo bảng khai */
+      bao(nk.pdDai >= 5000 && nk.pdCoKB2 && nk.pdCoSau && nk.pdCoChuyen,
+        'mở một phác đồ là thấy đủ kịch bản, chiều sâu và chuyện — dựng thật rồi tìm chuỗi',
+        nk.pdDai.toLocaleString('vi-VN') + ' ký tự');
+      bao(nk.thDai >= 4000 && nk.thCoKB2,
+        'mở một tình huống là thấy kịch bản dùng được', nk.thDai.toLocaleString('vi-VN') + ' ký tự');
+
+      /* ── Mối nối phải giải thích được vì sao nó ở đó ──
+         Nối tự động có cái trúng có cái trật. Giấu điểm và từ khoá đi là
+         bắt người dùng tin một thứ họ không kiểm được. */
+      bao(!nk.khongVi, 'mối nối nào cũng mang từ khoá trùng để người dùng tự kiểm',
+        nk.khongVi ? nk.khongVi + '/' + nk.soMoi + ' mối nối không giải thích được' :
+        nk.soMoi.toLocaleString('vi-VN') + ' mối nối đều có lý do');
+
+      /* ── Chiều sâu ── */
+      bao(!nk.thieuSau.length, 'nhóm phác đồ nào cũng có chiều sâu năm cấp',
+        nk.thieuSau.join(' ') || nk.sau + '/' + nk.soNhom + ' nhóm');
+      bao(!nk.lap.length,
+        'năm cấp nói năm việc KHÁC nhau — hai cấp làm được cùng một việc là chữ, không phải chiều sâu',
+        nk.lap.join(' ') || 'cả ' + nk.sau + ' nhóm đều phân biệt được');
+      bao(!nk.thieuChua.length,
+        'cấp nào cũng ghi rõ CHƯA làm được gì, kể cả C5 — không cấp nào toàn năng',
+        nk.thieuChua.slice(0, 4).join(' ') || 'đủ cả ' + (nk.sau * 5) + ' ô');
+
+      /* ── Ba kho còn lại, báo trung thực khi chưa xong ── */
+      bao(nk.sauTH >= 10, 'mười chủ đề tình huống đều có chiều sâu', nk.sauTH + '/10');
+      bao(nk.qt >= nk.soNhom, 'nhóm nào cũng có quy trình xử lý riêng ngoài bảy bước chung',
+        nk.qt + '/' + nk.soNhom);
+      bao(nk.tl >= nk.soNhom, 'nhóm nào cũng có tài liệu phát cho gia đình',
+        nk.tl + '/' + nk.soNhom);
+    }
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

@@ -97,6 +97,54 @@ G.VIEWS['chieu-sau'] = function(){
     U.stat({k:'VIẾT DỞ', v:d.thieu.length, d:'có bản ghi nhưng còn trường trống', c:'#B45309'})+
   '</div>';
 
+  /* ══ CHIỀU SÂU CỦA PHÁC ĐỒ VÀ TÌNH HUỐNG ══
+     Màn này từng chỉ đếm 42 mô thức, nên nó báo đúng 100% trong khi 220
+     phác đồ và 250 tình huống chưa có lớp nào. Người đọc thấy 100% rồi
+     yên tâm — đó là con số đúng đo sai phạm vi.
+
+     Ba kho viết theo ba mức khác nhau có chủ ý: mô thức viết từng cái
+     (42), phác đồ viết theo nhóm (11 nhóm × 20), tình huống viết theo
+     chủ đề (10 chủ đề × 25). Bảng dưới nói rõ mức nào là mức nào, chứ
+     không gộp thành một con số làm mờ cả ba. */
+  var PDS = G.PD_SAU || {}, THS = G.TH_SAU || {};
+  var soNhomPD = {}; (G.PHACDO || []).forEach(function(x){ soNhomPD[x.nhom] = 1; });
+  var canPD = Object.keys(soNhomPD).length;
+  var coPD = Object.keys(PDS).length, coTH = Object.keys(THS).length;
+  var nk = G.nkSoat ? G.nkSoat() : null;
+
+  o += U.sec('BA KHO, BA MỨC VIẾT', 'Không gộp thành một con số — gộp là làm mờ chỗ còn thiếu');
+  o += U.tbl(['Kho', 'Số bản ghi', 'Viết chiều sâu theo', 'Đã có', 'Còn thiếu'], [
+    ['Mô thức', String((G.MOTHUC || []).length), 'từng mô thức',
+      d.du.length + '/' + d.tong,
+      d.du.length >= d.tong ? '<span style="color:var(--ok)">không</span>'
+        : '<span style="color:var(--alert)">' + (d.tong - d.du.length) + '</span>'],
+    ['Phác đồ', String((G.PHACDO || []).length), 'nhóm vấn đề (' + canPD + ' nhóm)',
+      coPD + '/' + canPD,
+      coPD >= canPD ? '<span style="color:var(--ok)">không</span>'
+        : '<span style="color:var(--alert)">' + (canPD - coPD) + ' nhóm</span>'],
+    ['Tình huống', String((G.TINHHUONG || []).length), 'chủ đề (10 chủ đề)',
+      coTH + '/10',
+      coTH >= 10 ? '<span style="color:var(--ok)">không</span>'
+        : '<span style="color:var(--alert)">' + (10 - coTH) + ' chủ đề</span>']
+  ]);
+
+  if(nk){
+    o += U.sec('LỚP NỐI', 'Kho không thiếu nội dung — kho từng thiếu đường đi giữa các nội dung');
+    o += '<div class="grid g4">' +
+      U.stat({k:'PHÁC ĐỒ CÓ KỊCH BẢN', v:nk.pdCoKB + '/' + nk.pd,
+        d:'trước đây: 0', c:nk.pdCoKB >= nk.pd ? '#0B7350' : '#B45309'}) +
+      U.stat({k:'TÌNH HUỐNG CÓ KỊCH BẢN', v:nk.thCoKB + '/' + nk.th,
+        d:'ưu tiên kịch bản cùng tầng', c:nk.thCoKB >= nk.th ? '#0B7350' : '#B45309'}) +
+      U.stat({k:'QUY TRÌNH RIÊNG NHÓM', v:nk.qt + '/' + canPD,
+        d:'ngoài bảy bước chung', c:nk.qt >= canPD ? '#0B7350' : '#B45309'}) +
+      U.stat({k:'TÀI LIỆU PHÁT GIA ĐÌNH', v:nk.tl + '/' + canPD,
+        d:'mỗi nhóm một tài liệu', c:nk.tl >= canPD ? '#0B7350' : '#B45309'}) +
+      '</div>';
+    o += '<p class="tiny muted mt" style="line-height:1.7">Mối nối do hệ thống dựng bằng độ trùng ' +
+      'từ khoá tiếng Việt có dấu, ghép đôi âm tiết. Mỗi mối nối mang điểm và từ khoá trùng để người ' +
+      'dùng tự kiểm; dưới ngưỡng thì không nối, vì một kịch bản sai gắn vào ca thật là một buổi hỏng.</p>';
+  }
+
   if(kn.lap.length || kn.cut.length)
     o += '<div class="card mt2" style="border-color:var(--gita-do)">'+
       '<div class="tiny up mb" style="color:var(--gita-do-ink)">LUẬT BỊ VI PHẠM</div>'+
