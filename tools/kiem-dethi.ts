@@ -47,14 +47,46 @@ tuLuan.every((c) => c.dapAn.trim().length > 1)
   ? ok(`${tuLuan.length} câu tự luận, mọi câu có đáp án viết ra`)
   : fail('có câu tự luận bỏ trống đáp án');
 
+/*
+ * LỜI GIẢI KHÔNG ĐƯỢC NHẮC TỚI CHỮ CÁI CỦA Ô.
+ *
+ * Đề dùng phép xoay tất định để rải đáp án cho đều bốn ô. Phép xoay đổi
+ * chữ cái của phương án đúng, nên bất kỳ lời giải nào viết "đáp án B" sẽ
+ * lập tức sai mà không ai thấy — lời giải vẫn đọc trôi, chỉ là chỉ nhầm ô.
+ * Mọi lời giải phải nói về NỘI DUNG của phương án.
+ */
+{
+  const nhacChu = moiCau.filter(
+    (c) => c.luaChon && /(?:đáp án|phương án|ô)\s+[ABCD](?![a-zà-ỹ])/.test(c.loiGiai),
+  );
+  nhacChu.length === 0
+    ? ok('không lời giải nào chỉ ô bằng chữ cái — an toàn với phép xoay đáp án')
+    : fail(`${nhacChu.length} lời giải nhắc chữ cái của ô, sẽ sai khi xoay`,
+        nhacChu.slice(0, 4).map((c) => `câu ${c.no}`).join(', '));
+}
+
 /* Đáp án rải đều — dồn vào một ô là thí sinh đoán trúng mà không hiểu. */
 const dem: Record<string, number> = {A: 0, B: 0, C: 0, D: 0};
 for (const c of tracNghiem) if (dem[c.dapAn] !== undefined) dem[c.dapAn]++;
 const lechNhat = Math.max(...Object.values(dem)) / tracNghiem.length;
-lechNhat <= 0.4
+const thapNhat = Math.min(...Object.values(dem)) / tracNghiem.length;
+/*
+ * PHẢI CHẶN CẢ HAI ĐẦU, KHÔNG CHỈ ĐẦU CAO.
+ *
+ * Ngưỡng cũ 0,4 quá lỏng, nhưng siết xuống 0,3 vẫn CHƯA ĐỦ — và bản trước
+ * chứng minh điều đó: phân bố A37 B44 C42 D24 có ô cao nhất chiếm 29,9%,
+ * lọt qua ngưỡng 0,3 trong gang tấc, trong khi ô D chỉ có 16,3%.
+ *
+ * Chỗ rò rỉ nằm ở đầu THẤP: gặp câu không biết thì loại ô D trước, và phép
+ * loại đó đúng nhiều hơn ngẫu nhiên. Nên sàn 18% cho ô thấp nhất là mục
+ * bắt được lệch thật, còn trần 30% chỉ bắt được lệch thô.
+ */
+lechNhat <= 0.3 && thapNhat >= 0.18
   ? ok(`đáp án rải đều (A${dem.A} B${dem.B} C${dem.C} D${dem.D}), đoán theo vị trí không ăn`)
-  : fail(`đáp án dồn vào một ô: A${dem.A} B${dem.B} C${dem.C} D${dem.D}`,
-         `đoán theo vị trí trúng ${Math.round(lechNhat * 100)}%`);
+  : fail(
+      `đáp án lệch: A${dem.A} B${dem.B} C${dem.C} D${dem.D}`,
+      `ô cao nhất ${(lechNhat * 100).toFixed(1)}% (trần 30%), ô thấp nhất ${(thapNhat * 100).toFixed(1)}% (sàn 18%)`,
+    );
 
 /* ------------------------------ LỜI GIẢI -------------------------------- */
 moiCau.every((c) => c.loiGiai.trim().length > 40)
@@ -82,6 +114,18 @@ for (const d of DE_THI_MAU) {
   tongPhan === tongCau
     ? ok(`${d.id}: điểm các phần khớp tổng điểm các câu (${tongCau})`)
     : fail(`${d.id}: điểm phần ${tongPhan} lệch điểm câu ${tongCau}`);
+
+  /*
+   * TỔNG ĐIỂM KHAI PHẢI BẰNG TỔNG ĐIỂM CÁC PHẦN.
+   *
+   * Bản trước chỉ so điểm PHẦN với điểm CÂU, nên để lọt một chỗ hỏng thật:
+   * đề chuyên Hà Nội khai tongDiem 10 trong khi năm phần chỉ cộng được 8,6.
+   * Một đề mà thang điểm không cộng đúng thì mọi con số phái sinh từ nó —
+   * barem, mốc đạt, quy đổi — đều sai theo, và không ai phát hiện ra.
+   */
+  Math.abs(tongPhan - d.tongDiem) < 0.01
+    ? ok(`${d.id}: tổng điểm khai ${d.tongDiem} khớp tổng điểm các phần`)
+    : fail(`${d.id}: khai tổng ${d.tongDiem} điểm nhưng các phần chỉ cộng được ${tongPhan}`);
   d.soCau === d.phan.reduce((s, p) => s + p.cau.length, 0)
     ? ok(`${d.id}: số câu công bố khớp số câu thật (${d.soCau})`)
     : fail(`${d.id}: công bố ${d.soCau} câu`, `đếm được ${d.phan.reduce((s, p) => s + p.cau.length, 0)}`);
@@ -166,9 +210,49 @@ coNguLieu.every((p) => p.nguLieu!.split(/\s+/).length >= 120)
 DE_THI_MAU.every((d) => /PHẢI đối chiếu|đối chiếu lại/.test(d.theoCauTruc))
   ? ok('mỗi đề tự ghi rõ nó dựng theo cấu trúc nào và phải đối chiếu lại')
   : fail('có đề không ghi nguồn cấu trúc');
-DE_THI_MAU.every((d) => /rút gọn|Đề mẫu này/i.test(d.theoCauTruc))
-  ? ok('mỗi đề nói rõ nó là bản rút gọn, không giấu số câu thật')
-  : fail('có đề không nói rõ mình là bản rút gọn');
+/*
+ * CON SỐ TRONG LỜI MÔ TẢ PHẢI KHỚP SỐ CÂU THẬT.
+ *
+ * Bản trước chỉ kiểm sự CÓ MẶT của cụm "rút gọn". Nó để lọt một lỗi thật:
+ * đề chung được nối dài từ 12 lên 40 câu mà lời mô tả vẫn ghi "rút còn 12
+ * câu". Bài kiểm vẫn xanh, và tài liệu nói sai về chính nó.
+ *
+ * Nay: tìm mọi con số đứng ngay trước chữ "câu" trong lời mô tả, và mỗi
+ * con số đó phải hoặc bằng số câu thật của đề, hoặc bằng số câu của đề
+ * THẬT ngoài đời (đề mẫu được phép nhắc tới cả hai).
+ */
+{
+  let lech = 0;
+  for (const d of DE_THI_MAU) {
+    const soThat = d.phan.reduce((s, p) => s + p.cau.length, 0);
+    const conSo = [...d.theoCauTruc.matchAll(/(\d+)\s*câu/g)].map((m) => Number(m[1]));
+    // Con số nhỏ hơn số câu thật mà lại được gọi là "rút còn" thì là lời cũ.
+    const rutCon = [...d.theoCauTruc.matchAll(/rút (?:gọn )?(?:còn|xuống)\s*(\d+)/g)].map((m) => Number(m[1]));
+    for (const n of rutCon) {
+      if (n !== soThat) {
+        fail(`${d.id}: mô tả nói "rút còn ${n} câu" nhưng đề có ${soThat} câu`);
+        lech++;
+      }
+    }
+    if (conSo.length === 0) {
+      fail(`${d.id}: mô tả không nêu số câu nào — không đối chiếu được`);
+      lech++;
+    }
+  }
+  lech === 0
+    ? ok('mọi con số câu trong lời mô tả đều khớp với số câu thật của đề')
+    : undefined;
+}
+
+/*
+ * Mỗi đề phải TỰ KHAI quan hệ giữa nó và đề thật: hoặc dựng đủ số câu, hoặc
+ * là bản rút gọn, hoặc — như đề KHTN — dựng theo một giả định về độ dài vì
+ * số câu thật không được công bố nhất quán. Im lặng về chuyện này là để
+ * người dùng tự suy ra, và họ sẽ suy ra rằng đây là bản sao.
+ */
+DE_THI_MAU.every((d) => /rút gọn|dựng ĐỦ|GIẢ ĐỊNH/i.test(d.theoCauTruc))
+  ? ok('mỗi đề tự khai rõ nó dựng đủ số câu, rút gọn, hay dựng theo giả định')
+  : fail('có đề không nói rõ quan hệ giữa nó và đề thật');
 
 DETHI_SO.soCau === moiCau.length && DETHI_SO.soDe === DE_THI_MAU.length
   ? ok('mọi con số công bố suy ra từ dữ liệu')

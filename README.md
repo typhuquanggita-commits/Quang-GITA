@@ -1166,6 +1166,58 @@ npm run preview  # xem thử bản đã dựng
 không tham chiếu tới bất kỳ tên miền bên ngoài nào; điều này được kiểm chứng
 tự động bằng `npm run test:web`.
 
+## 📄 Bốn đề thi mẫu — nay đủ độ dài thật
+
+Trước đây bốn đề đều tự khai là **bản rút gọn**: 28/86, 12/40, 8/?, 10/40 câu.
+Rút gọn thì luyện được dạng nhưng **không luyện được nhịp** — mà nhịp mới là
+thứ quyết định trong phòng thi.
+
+| Đề | Trước | Nay | Thời gian | Thang |
+|---|---|---|---|---|
+| Chuyên Anh — Sở Hà Nội | 28 | **86** | 120′ | 10 |
+| Ngoại ngữ chung — vào 10 | 12 | **40** | 60′ | 10 |
+| Chuyên KHTN — vòng 2 | 8 | **40** | 90′ | 10 |
+| Tốt nghiệp THPT | 10 | **40** | 50′ | 10 |
+
+Tổng **58 → 206 câu**, mỗi câu một lời giải riêng, ba ngữ liệu đọc viết gốc.
+
+### Điểm và số thứ tự đều tính ra, không gõ tay
+
+Một đề 86 câu trên thang 10 thì mỗi câu đáng 0,116 điểm — không có cách chia
+nào ra số đẹp. Gõ tay thì hoặc tổng lệch, hoặc phải bịa cho tròn, và **cả hai
+đã xảy ra**: bản trước khai `tongDiem: 10` trong khi năm phần chỉ cộng được
+**8,6**, còn đề KHTN cộng được **2,5**.
+
+Nay mỗi *phần* khai trọng số của nó và điểm từng câu chia ra từ đó, câu cuối
+nhận phần dư nên tổng luôn khớp tuyệt đối. Số thứ tự cũng đánh lại 1..N lúc
+dựng đề, nên thêm hay bớt câu ở giữa không làm gãy dãy.
+
+### Bốn luật kiểm mới, cả bốn đều đỏ được thật
+
+| Luật | Lỗi có sẵn mà nó bắt được |
+|---|---|
+| Tổng điểm khai = tổng điểm các phần | `dt-hanoi-5` khai 10, cộng ra 8,6 · `dt-khtn-v2` cộng ra 2,5 |
+| Con số trong lời mô tả = số câu thật | mô tả vẫn ghi "rút còn 12 câu" sau khi đề đã lên 40 |
+| Lời giải không được chỉ ô bằng chữ cái | phép xoay đáp án sẽ làm mọi "đáp án B" thành sai |
+| Đáp án rải đều — chặn **cả hai đầu** | A37 B44 C42 D24: ô cao nhất 29,9% lọt trần 30%, nhưng ô D chỉ **16,3%** |
+
+Luật cuối là bài học đáng nhớ nhất: chỉ chặn đầu cao là **chưa đủ**. Chỗ rò rỉ
+nằm ở đầu thấp — gặp câu không biết thì loại ô D trước, và phép loại đó đúng
+nhiều hơn ngẫu nhiên. Nay chặn cả trần 30% lẫn sàn 18%, và phân bố sau khi
+rải là **A38 B37 C36 D36**.
+
+> Một phép thử ngược của tôi ban đầu **không đỏ mà cũng không đúng**: nó đếm
+> dấu `✗` trong đầu ra, nên khi tệp hỏng cú pháp và bài kiểm sập thì nó đọc ra
+> "0 lỗi". Phép thử ngược phải xét **mã thoát**, không đếm chữ.
+
+### Đề KHTN — nói rõ chỗ không biết
+
+Số câu chính xác của vòng 2 **không được công bố nhất quán** theo năm, khác
+với đề Sở và đề tốt nghiệp. Đề mẫu dựng đủ 40 câu trong 90 phút để luyện đúng
+nhịp, nhưng độ dài đó là một **giả định**, không phải bản sao — và `theoCauTruc`
+của nó nói thẳng điều đó. Bài kiểm có một mục buộc mỗi đề phải tự khai nó dựng
+đủ, rút gọn, hay dựng theo giả định; im lặng là đỏ.
+
 ## 🎧 Ngân hàng câu hỏi — 960 câu, đủ 80/80 chuyên đề
 
 ### Lý do cũ đã sai, và sai trong nhiều tháng
