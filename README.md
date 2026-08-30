@@ -61,8 +61,8 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 | Thẻ Cẩm nang công thức điểm 10 | **86** |
 | Chuyên đề HSG · Kỹ thuật lõi | **8** · 28 |
 | Mốc lộ trình học tập | 24 |
-| Khuôn câu hỏi tham số hoá | **182** |
-| Bài hình thi vào 10 nhiều ý (có thang điểm) | **6** |
+| Khuôn câu hỏi tham số hoá | **236** |
+| Bài hình tự luận nhiều ý (có thang điểm) — khối 7 · 8 · 9 | **6** · **5** · **6** |
 | Đề · Câu hỏi sinh ra | **432** · **7.884** |
 
 ## 4. Ngân hàng đề
@@ -74,7 +74,7 @@ Mỗi chuyên đề được biên soạn theo một chuẩn thống nhất:
 - **Bộ luyện theo chuyên đề** cho từng chuyên đề.
 
 Tổng cộng **432 đề** / **7.884 câu hỏi**, mỗi mã đề sinh ra một bộ câu hỏi riêng, sinh từ
-**182 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
+**236 khuôn câu hỏi tham số hoá** phủ kín 4 mức độ nhận thức và 4 loại câu hỏi.
 
 **Cách hoạt động:** câu hỏi được sinh từ *khuôn tham số hoá* (`src/bank/`). Mỗi khuôn tự sinh
 số liệu, đáp án, **lời giải từng bước**, phân tích tư duy và cảnh báo bẫy. Mỗi mã đề gắn với
@@ -157,11 +157,39 @@ Trang **Thư viện** sinh tài liệu in được (A4, có tiêu đề GITA, đ
 - **Sơ đồ tư duy tổng hợp** toàn khối.
 - **Bảng công thức điểm 10**.
 - **Đề cương ôn tập** theo cấu trúc chuẩn.
-- **Tuyển tập bài hình thi vào 10** — biên soạn theo bộ “Thách thức tài năng Toán 9” của GITA:
-  mỗi bài 3–4 ý theo đúng cấu trúc câu hình đề tuyển sinh, kèm phân tích tư duy, lời giải đầy đủ
-  và thang điểm chi tiết 5,0 điểm.
+- **Tuyển tập bài hình tự luận nhiều ý** cho cả ba khối 7 · 8 · 9 — mỗi bài 3–4 ý theo đúng
+  cấu trúc câu hình của đề học kì và đề tuyển sinh, kèm phân tích tư duy, lời giải đầy đủ và
+  thang điểm chi tiết:
+  - **Khối 7** (6 bài): tam giác bằng nhau, tam giác cân, đường trung trực, ba đường phân giác
+    đồng quy — thang điểm 3,5 điểm theo chuẩn câu hình đề học kì.
+  - **Khối 8** (5 bài): tam giác đồng dạng, hệ thức trong tam giác vuông, định lí Thalès,
+    hình bình hành — thang điểm 5,0 điểm.
+  - **Khối 9** (6 bài): biên soạn theo bộ “Thách thức tài năng Toán 9” của GITA, đúng cấu trúc
+    câu hình đề tuyển sinh vào 10 — thang điểm 5,0 điểm.
 
-## 12. Chạy dự án
+## 12. Nguồn tư liệu biên soạn
+
+Toàn bộ học liệu được biên soạn lại từ kho tư liệu gốc của GITA trên Google Drive, rồi
+chuẩn hoá về bộ nhận diện và cấu trúc thống nhất của MATHGITA. Không sao chép nguyên văn:
+mỗi dạng bài trong tài liệu gốc được chuyển thành một **khuôn câu hỏi tham số hoá**, tự sinh
+đề, đáp án, lời giải từng bước, phân tích tư duy và bẫy thường gặp.
+
+| Khối | Tài liệu gốc | Nội dung rút ra |
+|---|---|---|
+| 6 | Giáo án GITA theo chương – buổi (phiếu CB/NC) | 31 chương · 93 buổi · 186 phiếu, mẫu phiếu chuẩn |
+| 6 | *Đề cương học kì 1 Toán 6 – KNTT* | Tổng luỹ thừa chia hết, chữ số tận cùng, ƯCLN–BCNN ngược, dạng “đều thiếu”, tích hai thừa số, chứng minh chia hết bằng tổ hợp tuyến tính |
+| 7 | *Đề cương học kì I Toán 7* (Archimedes) | Số thập phân tuần hoàn, tìm x chứa căn, phương trình tích, cực trị chứa giá trị tuyệt đối, biểu đồ quạt/đoạn thẳng, 6 câu hình 4 ý |
+| 7 | *Đề cương giữa kì 1 Toán 7 – KNTT*, phiếu nâng cao GITA “Hai tam giác bằng nhau” | Dãy tỉ số có hệ số, làm tròn, hai dạng chứng minh tam giác bằng nhau |
+| 8 | *Đề cương ôn tập cuối kì II Toán 8 – KNTT* | Phương trình có mẫu, lập phương trình (giảm giá, ca nô, chu vi), hệ số góc, xác suất thực nghiệm, hình chóp đều, 5 câu hình đồng dạng |
+| 9 | *Đề cương ôn tập học kì II Toán 9* | Viète đảo, dấu hai nghiệm, tương giao có tham số, điểm cố định, căn kép, năng suất vượt mức, vị trí tương đối hai đường tròn, đa giác đều nội tiếp, hình nón |
+| 9 | Bộ “Thách thức tài năng Toán 9” của GITA | 6 câu hình thi vào 10 nhiều ý kèm thang điểm |
+
+Các trang tham khảo bên ngoài được nêu trong yêu cầu ban đầu (mathx.vn, toanmath.com,
+tailieumontoan.com, hocmai.vn và các nhóm Facebook chuyên đề) **không truy cập được** từ môi
+trường biên soạn do chính sách chặn kết nối ra ngoài. Phần tư liệu của các nguồn này đã có sẵn
+trong Drive của GITA (ví dụ bộ đề cương MATHX lớp 8) và được sử dụng từ đó.
+
+## 13. Chạy dự án
 
 ```bash
 npm install     # cài phụ thuộc
@@ -172,7 +200,7 @@ npm run preview # xem bản đã đóng gói
 
 Yêu cầu: Node.js 18+. Dự án dùng **React 19 + TypeScript + Vite**, không phụ thuộc dịch vụ ngoài.
 
-## 13. Cấu trúc mã nguồn
+## 14. Cấu trúc mã nguồn
 
 ```
 src/
@@ -193,7 +221,7 @@ src/
   pages/        Các màn hình của ứng dụng
 ```
 
-## 14. Bộ chuẩn nhận diện thương hiệu GITA
+## 15. Bộ chuẩn nhận diện thương hiệu GITA
 
 Trang `/nhan-dien` tài liệu hoá quy chuẩn áp dụng thống nhất cho **toàn bộ file** của GITA:
 
@@ -204,7 +232,7 @@ Trang `/nhan-dien` tài liệu hoá quy chuẩn áp dụng thống nhất cho **
 - **Quy chuẩn trình bày bài giải**: 4 khối cố định (Đề bài → Phân tích tư duy → Lời giải → Bẫy thường gặp) và nguyên tắc ngôn ngữ.
 - **Quy tắc đặt mã**: cấu trúc mã đề, mã chuyên đề, mã dạng bài, mã khuôn câu hỏi.
 
-## 15. Về lưu trữ dữ liệu
+## 16. Về lưu trữ dữ liệu
 
 Bản này lưu dữ liệu học tập trên trình duyệt (localStorage) để hệ thống chạy độc lập,
 không cần máy chủ. Lớp `src/lib/store.ts` đóng vai trò kho dữ liệu — khi triển khai máy chủ

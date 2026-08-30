@@ -14,13 +14,14 @@ import { BANK_G9_HINH } from './g9-hinh';
 import { BANK_G7_HINH } from './g7-hinh';
 import { BANK_G8_DECUONG } from './g8-decuong';
 import { BANK_G8_HINH } from './g8-hinh';
+import { BANK_G9_DECUONG } from './g9-decuong';
 import { BANK_G6_DECUONG } from './g6-decuong';
 
 export const ALL_TEMPLATES: Template[] = [
   ...BANK_G6, ...BANK_G6_PLUS, ...BANK_G6_GITA, ...BANK_G6_DECUONG,
   ...BANK_G7, ...BANK_G7_PLUS, ...BANK_G7_DECUONG, ...BANK_G7_HINH,
   ...BANK_G8, ...BANK_G8_PLUS, ...BANK_G8_DECUONG, ...BANK_G8_HINH,
-  ...BANK_G9, ...BANK_G9_PLUS, ...BANK_G9_HINH,
+  ...BANK_G9, ...BANK_G9_PLUS, ...BANK_G9_HINH, ...BANK_G9_DECUONG,
 ];
 
 export const templatesOfGrade = (g: Grade): Template[] => ALL_TEMPLATES.filter((t) => t.grade === g);
