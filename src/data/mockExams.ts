@@ -169,11 +169,41 @@ function pickForSection(
   const chosen: Question[] = [];
   const used = new Set<string>();
 
-  // Chi giu cho cau dien den muc ngan hang thuc su co. Neu giu cho nhieu hon
-  // so cau dien ton tai (vi du duong Tieng Anh khong co cau dien), cac cho do
-  // se khong bao gio duoc lap day va de bi thieu cau ma khong bao loi.
-  const needFill = Math.min(spec.fillCount, pool.filter((q) => q.format === 'fill').length);
-  let takenFill = 0;
+  /*
+   * HAN NGACH CAU DIEN
+   *
+   * O phan 3, quy che rang buoc theo CHU DE chu khong theo ca phan: moi chu de
+   * Ly, Hoa, Sinh phai co it nhat mot cau dien. Vi vay han ngach o day duoc
+   * chia theo tung nhom, va mot chu de da du cau dien thi khong nhan them —
+   * neu dem tong thi ba cau dien co the don het vao mot chu de.
+   *
+   * Han ngach con bi cat theo so cau dien ngan hang thuc su co: giu cho nhieu
+   * hon so cau ton tai (duong Tieng Anh khong co cau dien nao) se de lai cac
+   * cho trong khong bao gio lap day duoc, va de bi thieu cau ma khong bao loi.
+   */
+  const fillQuota = new Map<string, number>();
+  const fillTaken = new Map<string, number>();
+  const groupOf = (question: Question): string => question.subject ?? section;
+
+  if (section === 'science') {
+    for (const subject of FILL_REQUIRED_SUBJECTS) {
+      if (!subjectsOf(section3).includes(subject)) continue;
+      const available = pool.filter((q) => q.subject === subject && q.format === 'fill').length;
+      if (available > 0) fillQuota.set(subject, 1);
+    }
+  } else {
+    const available = pool.filter((q) => q.format === 'fill').length;
+    fillQuota.set(section, Math.min(spec.fillCount, available));
+  }
+
+  const needFill = [...fillQuota.values()].reduce((n, v) => n + v, 0);
+  const takenFillCount = (): number => [...fillTaken.values()].reduce((n, v) => n + v, 0);
+  const canTakeFill = (question: Question): boolean =>
+    (fillTaken.get(groupOf(question)) ?? 0) < (fillQuota.get(groupOf(question)) ?? 0);
+  const noteFill = (question: Question): void => {
+    const key = groupOf(question);
+    fillTaken.set(key, (fillTaken.get(key) ?? 0) + 1);
+  };
 
   for (const [i, topic] of topics.entries()) {
     const quota = quotas[i] ?? 0;
@@ -186,13 +216,13 @@ function pickForSection(
       // Giu du cho cho cau dien: khong lay them trac nghiem khi so cho trac
       // nghiem con lai vua du cho phan cau dien chua lay.
       const remaining = spec.questionCount - chosen.length;
-      const fillStillNeeded = needFill - takenFill;
+      const fillStillNeeded = needFill - takenFillCount();
       if (question.format === 'mcq' && remaining <= fillStillNeeded) continue;
-      if (question.format === 'fill' && takenFill >= needFill) continue;
+      if (question.format === 'fill' && !canTakeFill(question)) continue;
 
       chosen.push(question);
       used.add(question.id);
-      if (question.format === 'fill') takenFill += 1;
+      if (question.format === 'fill') noteFill(question);
     }
   }
 
@@ -203,19 +233,65 @@ function pickForSection(
       .sort((a, b) => orderKey(a, random) - orderKey(b, random));
     for (const question of rest) {
       if (chosen.length >= spec.questionCount) break;
-      const fillStillNeeded = needFill - takenFill;
+      const fillStillNeeded = needFill - takenFillCount();
       const remaining = spec.questionCount - chosen.length;
       if (question.format === 'mcq' && remaining <= fillStillNeeded) continue;
-      if (question.format === 'fill' && takenFill >= needFill) continue;
+      if (question.format === 'fill' && !canTakeFill(question)) continue;
       chosen.push(question);
       used.add(question.id);
-      if (question.format === 'fill') takenFill += 1;
+      if (question.format === 'fill') noteFill(question);
     }
+  }
+
+  // Quy che doi moi chu de Ly, Hoa, Sinh phai co it nhat mot cau dien. Han
+  // ngach theo chuyen de o tren khong bao dam duoc dieu do, nen phai sua lai
+  // o day: chu de nao thieu cau dien thi doi mot cau trac nghiem cua chinh no.
+  for (const subject of FILL_REQUIRED_SUBJECTS) {
+    if (!subjectsOf(section3).includes(subject)) continue;
+    if (chosen.some((q) => q.subject === subject && q.format === 'fill')) continue;
+
+    const replacement = pool.find((q) => q.subject === subject && q.format === 'fill' && !used.has(q.id));
+    if (!replacement) continue;
+    // Bo cau trac nghiem KHO NHAT cua chu de do: giu lai cac cau de de thi sinh
+    // van vao nhip duoc, va cau dien vua them thuong da o muc van dung.
+    const dropIndex = chosen.reduce(
+      (best, q, i) =>
+        q.subject === subject && q.format === 'mcq' && (best < 0 || q.difficulty > (chosen[best]?.difficulty ?? 0))
+          ? i
+          : best,
+      -1,
+    );
+    if (dropIndex < 0) continue;
+    used.delete(chosen[dropIndex]?.id ?? '');
+    chosen[dropIndex] = replacement;
+    used.add(replacement.id);
+    noteFill(replacement);
   }
 
   // Thu tu trinh bay: de truoc, kho sau. Thi sinh gap cau de o dau de vao nhip,
   // va khong mat thoi gian quy o cau kho khi con nhieu cau de chua lam.
   return chosen.sort((a, b) => a.difficulty - b.difficulty || a.id.localeCompare(b.id));
+}
+
+/**
+ * Cac chu de bat buoc co cau dien theo quy che.
+ *
+ * Duong Tieng Anh khong nam trong danh sach nay: ca phan la trac nghiem.
+ */
+export const FILL_REQUIRED_SUBJECTS = ['physics', 'chemistry', 'biology'] as const;
+
+/**
+ * So cau dien cua mot phan trong mot de cu the.
+ *
+ * Phan 3 khong co mot con so co dinh: no phu thuoc to hop thi sinh chon. Chon
+ * Ly — Hoa — Sinh thi co ba cau dien; chon Sinh — Su — Dia thi chi mot; chon
+ * Tieng Anh thi khong cau nao. Dung `spec.fillCount` cho moi de la sai.
+ */
+export function fillQuotaOf(section: SectionId, section3: Section3Choice): number {
+  const spec = SECTIONS.find((s) => s.id === section);
+  if (!spec) return 0;
+  if (section !== 'science') return spec.fillCount;
+  return FILL_REQUIRED_SUBJECTS.filter((s) => subjectsOf(section3).includes(s)).length;
 }
 
 /** Khoa sap xep on dinh: uu tien do kho gan phan bo chuan, pha the bang hat giong. */

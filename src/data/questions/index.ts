@@ -21,6 +21,7 @@ import {
 } from './sciences-5';
 import { englishQuestions2 } from './english-2';
 import { englishQuestions3 } from './english-3';
+import { BIOLOGY_QUESTIONS } from './biology';
 
 export const ALL_QUESTIONS: readonly Question[] = [
   ...quantitativeQuestions,
@@ -42,6 +43,7 @@ export const ALL_QUESTIONS: readonly Question[] = [
   ...geographyQuestions2,
   ...geographyQuestions3,
   ...geographyQuestions4,
+  ...BIOLOGY_QUESTIONS,
   ...englishQuestions,
   ...englishQuestions2,
   ...englishQuestions3,

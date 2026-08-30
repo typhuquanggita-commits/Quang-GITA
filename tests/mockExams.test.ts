@@ -2,11 +2,13 @@ import { describe, expect, it } from 'vitest';
 import { SECTIONS } from '../src/config';
 import {
   BAREM_RULES,
+  FILL_REQUIRED_SUBJECTS,
   MOCK_EXAMS,
   SCORE_BANDS,
   apportionByWeight,
   bandOf,
   buildPaper,
+  fillQuotaOf,
 } from '../src/data/mockExams';
 import { TOPICS } from '../src/data/topics';
 import { subjectsOf } from '../src/lib/section3';
@@ -56,8 +58,26 @@ describe('đề mẫu trọn vẹn', () => {
 
         const mcq = section?.items.filter((i) => i.question.format === 'mcq').length ?? 0;
         const fill = section?.items.filter((i) => i.question.format === 'fill').length ?? 0;
-        expect(mcq, `${spec.code}/${sectionSpec.id} trắc nghiệm`).toBe(sectionSpec.mcqCount);
-        expect(fill, `${spec.code}/${sectionSpec.id} điền đáp án`).toBe(sectionSpec.fillCount);
+        // Phan 3 khong co so cau dien co dinh: no bang so chu de Ly/Hoa/Sinh
+        // trong to hop cua de. Duong Tieng Anh thi ca phan la trac nghiem.
+        const needFill = fillQuotaOf(sectionSpec.id, spec.section3);
+        expect(fill, `${spec.code}/${sectionSpec.id} điền đáp án`).toBe(needFill);
+        expect(mcq, `${spec.code}/${sectionSpec.id} trắc nghiệm`).toBe(sectionSpec.questionCount - needFill);
+      }
+    }
+  });
+
+  it('mỗi chủ đề Lý, Hóa, Sinh trong tổ hợp đều có ít nhất một câu điền', () => {
+    // Quy che yeu cau dieu nay o cap CHU DE, khong phai cap ca phan — mot de
+    // du ba cau dien nhung don het vao mot chu de van la de sai.
+    for (const { spec, paper } of papers) {
+      const science = paper?.sections.find((s) => s.section === 'science');
+      for (const subject of FILL_REQUIRED_SUBJECTS) {
+        if (!subjectsOf(spec.section3).includes(subject)) continue;
+        const fills = science?.items.filter(
+          (i) => i.question.subject === subject && i.question.format === 'fill',
+        ).length;
+        expect(fills, `${spec.code} · ${subject}`).toBeGreaterThanOrEqual(1);
       }
     }
   });

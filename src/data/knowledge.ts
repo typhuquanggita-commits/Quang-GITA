@@ -702,6 +702,99 @@ export const KNOWLEDGE: readonly KnowledgeSheet[] = [
     timing: '45 giây cho câu nhận dạng biểu đồ, 90 giây cho câu tính toán trên bảng. Đọc kỹ tiêu đề bảng trước.',
   },
 
+  /* ── Phần 3: Sinh học ──────────────────────────────────────────────── */
+  {
+    topicId: 'science.biology.cell',
+    section: 'science',
+    coreIdeas: [
+      'Cấu trúc quyết định chức năng: hỏi "bào quan này có gì" thì nhìn ngay ra nó làm được việc gì.',
+      'Mọi vận chuyển qua màng chỉ có hai câu hỏi: đi xuôi hay ngược gradien, và có tốn ATP không.',
+      'Nguyên phân giữ nguyên bộ nhiễm sắc thể, giảm phân chia đôi bộ nhiễm sắc thể — mọi bài đếm đều bắt đầu từ chỗ này.',
+      'Enzim chỉ hạ năng lượng hoạt hóa; nó không cấp năng lượng và không đổi chiều phản ứng.',
+    ],
+    formulas: [
+      'Sau k lần nguyên phân: số tế bào con = 2^k',
+      'Nguyên liệu môi trường cung cấp = (2^k − 1) × 2n nhiễm sắc thể đơn',
+      'Kì giữa nguyên phân: số crômatit = 2 × số nhiễm sắc thể kép',
+      'Hô hấp hiếu khí 1 glucôzơ ≈ 30–32 ATP; lên men chỉ 2 ATP',
+      'Pha sáng cho ATP + NADPH + O₂; pha tối dùng ATP + NADPH + CO₂',
+    ],
+    patterns: [
+      { name: 'Nhận diện bào quan theo chức năng', cue: 'Hỏi nơi diễn ra một quá trình cụ thể' },
+      { name: 'Thẩm thấu và co nguyên sinh', cue: 'Đặt tế bào vào dung dịch ưu trương/nhược trương' },
+      { name: 'Đếm nhiễm sắc thể và crômatit', cue: 'Cho 2n và một kì phân bào cụ thể' },
+      { name: 'Tính nguyên liệu nguyên phân', cue: 'Cho số lần phân bào, hỏi nguyên liệu môi trường' },
+    ],
+    traps: [
+      { trap: 'Quên trừ bộ nhiễm sắc thể ban đầu khi tính nguyên liệu', fix: 'Dùng (2^k − 1), không dùng 2^k' },
+      { trap: 'Nhầm chuỗi chuyền electron của quang hợp với của hô hấp', fix: 'Hỏi lại quá trình nào trước khi chọn bào quan' },
+      { trap: 'Cho rằng thành xenlulôzơ ngăn được nước đi ra', fix: 'Thành giữ hình dạng, không cản thẩm thấu' },
+      { trap: 'Coi "cần prôtêin màng" là dấu hiệu của vận chuyển chủ động', fix: 'Khuếch tán tăng cường cũng cần prôtêin; dấu hiệu thật là ngược gradien và tốn ATP' },
+    ],
+    timing: '45 giây cho câu nhận biết bào quan, 90 giây cho câu đếm nhiễm sắc thể. Vẽ nhanh sơ đồ kì phân bào ra nháp trước khi đếm.',
+  },
+  {
+    topicId: 'science.biology.genetics',
+    section: 'science',
+    coreIdeas: [
+      'Nguyên tắc bổ sung A–T, G–X là gốc của mọi phép tính trên ADN.',
+      'Bài lai luôn đi theo một chiều: kiểu gen bố mẹ → giao tử → tổ hợp → kiểu hình. Không nhảy bước.',
+      'Các cặp gen phân li độc lập thì tính riêng từng cặp rồi nhân kết quả — nhanh hơn kẻ bảng nhiều lần.',
+      'Alen lặn ẩn được trong thể dị hợp, nên chọn lọc và thống kê kiểu hình luôn thấy ít lặn hơn thực tế.',
+    ],
+    formulas: [
+      'A = T, G = X; %A + %G = 50%',
+      'Tổng liên kết hiđrô H = 2A + 3G',
+      'Số bộ ba mã hóa = số nuclêôtit trên mạch gốc / 3',
+      'Hacđi – Vanbec: p² + 2pq + q² = 1, với p + q = 1',
+      'Tần số hoán vị f: giao tử hoán vị mỗi loại = f/2; giao tử liên kết mỗi loại = (1 − f)/2',
+    ],
+    patterns: [
+      { name: 'Tính số nuclêôtit và liên kết hiđrô', cue: 'Cho tổng nuclêôtit và tỉ lệ một loại' },
+      { name: 'Lai một và hai cặp tính trạng', cue: 'Cho kiểu gen bố mẹ, hỏi tỉ lệ đời con' },
+      { name: 'Di truyền liên kết giới tính', cue: 'Đề nhắc tới nhiễm sắc thể X, Y hoặc chênh lệch nam nữ' },
+      { name: 'Cân bằng di truyền quần thể', cue: 'Cho tỉ lệ kiểu hình lặn trong quần thể' },
+      { name: 'Hoán vị gen', cue: 'Cho kiểu gen dạng AB/ab kèm tần số hoán vị' },
+    ],
+    traps: [
+      { trap: 'Lấy q² làm tần số alen', fix: 'q² là tỉ lệ kiểu gen lặn; tần số alen là q = √(q²)' },
+      { trap: 'Quên chia đôi khi tính giao tử hoán vị', fix: 'f là tổng của hai loại giao tử hoán vị' },
+      { trap: 'Cộng tỉ lệ của hai cặp gen phân li độc lập', fix: 'Phân li độc lập thì nhân xác suất, không cộng' },
+      { trap: 'Nhầm 9 : 7 (tương tác gen) với 9 : 3 : 3 : 1 (phân li độc lập)', fix: 'Đếm số nhóm kiểu hình trước khi kết luận quy luật' },
+    ],
+    timing: '60 giây cho câu lai một cặp, 120 giây cho câu quần thể hoặc hoán vị. Viết sơ đồ lai ra nháp — nhẩm trong đầu là nguồn sai lớn nhất.',
+  },
+  {
+    topicId: 'science.biology.organism',
+    section: 'science',
+    coreIdeas: [
+      'Mọi cơ chế điều hòa nội môi đều là vòng ngược âm tính: lệch đi thì cơ thể kéo ngược lại.',
+      'Cấu trúc tiến hóa nào cũng trả lời một sức ép môi trường cụ thể — hỏi "để làm gì" là ra đáp án.',
+      'Chọn lọc tự nhiên định hướng, đột biến cung cấp nguyên liệu. Không đảo hai vai này.',
+      'Năng lượng qua mỗi bậc dinh dưỡng chỉ còn khoảng 10%, nên chuỗi thức ăn không thể dài.',
+    ],
+    formulas: [
+      'Hiệu suất sinh thái giữa hai bậc liên tiếp ≈ 10%',
+      'Sinh vật sản xuất là bậc dinh dưỡng 1 — đếm bậc bắt đầu từ đây',
+      'Kích thước quần thể cuối kì = đầu kì + sinh ra − chết đi + nhập cư − xuất cư',
+      'Thoát hơi nước ở lá là động lực chính; áp suất rễ chỉ là động lực phụ',
+    ],
+    patterns: [
+      { name: 'Vận chuyển vật chất ở thực vật', cue: 'Hỏi động lực đẩy nước, mạch gỗ, mạch rây' },
+      { name: 'So sánh C₃ – C₄ – CAM', cue: 'Đề nhắc điều kiện nóng, khô, hô hấp sáng' },
+      { name: 'Cân bằng nội môi', cue: 'Cho một chỉ số máu tăng hoặc giảm, hỏi cơ thể phản ứng thế nào' },
+      { name: 'Nhân tố tiến hóa', cue: 'Hỏi nhân tố nào định hướng, nhân tố nào cung cấp nguyên liệu' },
+      { name: 'Dòng năng lượng trong hệ sinh thái', cue: 'Cho năng lượng bậc đầu và hiệu suất, hỏi bậc sau' },
+    ],
+    traps: [
+      { trap: 'Đếm sinh vật sản xuất là bậc 0', fix: 'Sinh vật sản xuất là bậc 1; bậc 3 chỉ nhân 10% hai lần' },
+      { trap: 'Đảo vai insulin và glucagôn', fix: 'Insulin hạ đường huyết, glucagôn nâng đường huyết' },
+      { trap: 'Coi đột biến là nhân tố định hướng tiến hóa', fix: 'Đột biến vô hướng; chọn lọc tự nhiên mới định hướng' },
+      { trap: 'Nhầm hội sinh với cộng sinh', fix: 'Cộng sinh phải cả hai bên cùng có lợi; hội sinh chỉ một bên lợi, bên kia trung tính' },
+    ],
+    timing: '45 giây cho câu lí thuyết cơ chế, 90 giây cho câu tính dòng năng lượng. Câu tiến hóa thường trả lời được bằng một câu hỏi "để làm gì".',
+  },
+
   /* ── Phần 3: Tiếng Anh ─────────────────────────────────────────────── */
   {
     topicId: 'science.english.grammar',

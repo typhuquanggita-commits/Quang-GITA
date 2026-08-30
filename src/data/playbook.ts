@@ -1842,6 +1842,365 @@ export const PLAYBOOKS: readonly TopicPlaybook[] = [
       },
     ],
   },
+  /* ══ KHOA HỌC — SINH HỌC ═══════════════════════════════════════════ */
+  {
+    topicId: 'science.biology.cell',
+    bigQuestion: 'Cấu trúc này làm được việc gì, và bộ nhiễm sắc thể thay đổi ra sao qua mỗi lần phân bào?',
+    patterns: [
+      {
+        id: 'bio.transport',
+        name: 'Vận chuyển qua màng và thẩm thấu',
+        tell: [
+          'Đề đặt tế bào vào dung dịch ưu trương, nhược trương hoặc đẳng trương',
+          'Đề hỏi chất đi vào tế bào theo cách nào, có tốn năng lượng hay không',
+        ],
+        method:
+          'Mọi câu vận chuyển qua màng chỉ có hai biến: chiều đi so với gradien nồng độ, và có tiêu tốn ATP hay không. Xác định hai biến đó là ra ngay loại vận chuyển, không cần nhớ danh sách ví dụ. Với thẩm thấu thì nước luôn đi từ nơi thế nước cao sang nơi thế nước thấp, tức từ nhược trương sang ưu trương.',
+        steps: [
+          {
+            action: 'Xác định nồng độ chất tan bên trong so với bên ngoài tế bào.',
+            why: 'Đây là dữ kiện quyết định chiều đi của nước; mọi kết luận sau đều treo vào bước này.',
+          },
+          {
+            action: 'Xác định chiều di chuyển: xuôi gradien là thụ động, ngược gradien là chủ động.',
+            why: 'Đi ngược gradien không thể tự xảy ra, nên bắt buộc phải có bơm tiêu tốn ATP.',
+          },
+          {
+            action: 'Với tế bào thực vật, nhớ có thành xenlulôzơ nên chỉ co nguyên sinh chứ không vỡ.',
+            why: 'Thành tế bào giữ hình dạng ngoài, đó là điểm khác biệt then chốt so với tế bào động vật.',
+          },
+          {
+            action: 'Đối chiếu kết luận với phương án, loại các phương án nhầm giữa hai loại tế bào.',
+            why: 'Đề thường trộn hiện tượng của tế bào động vật vào câu hỏi về tế bào thực vật để bẫy.',
+          },
+        ],
+        trick:
+          'Nhớ một câu duy nhất: "nước chạy về phía mặn". Nước luôn đi về phía dung dịch đặc hơn, nên chỉ cần biết bên nào đặc là biết ngay chiều đi.',
+        pitfall:
+          'Lấy "có prôtêin màng tham gia" làm dấu hiệu của vận chuyển chủ động. Khuếch tán tăng cường cũng dùng prôtêin kênh nhưng vẫn là thụ động.',
+      },
+      {
+        id: 'bio.mitosis',
+        name: 'Đếm nhiễm sắc thể và tính nguyên liệu phân bào',
+        tell: [
+          'Đề cho bộ nhiễm sắc thể 2n và nêu rõ một kì cụ thể của phân bào',
+          'Đề cho số lần nguyên phân liên tiếp và hỏi nguyên liệu môi trường cung cấp',
+        ],
+        method:
+          'Bài đếm nhiễm sắc thể không cần thuộc bảng, chỉ cần bám hai mốc: ADN nhân đôi ở kì trung gian, và tâm động tách ở kì sau. Trước khi tâm động tách thì mỗi nhiễm sắc thể là kép gồm hai crômatit; sau khi tách thì thành hai nhiễm sắc thể đơn. Mọi con số suy ra từ hai mốc này.',
+        steps: [
+          {
+            action: 'Ghi rõ tế bào đang ở kì nào và ADN đã nhân đôi chưa.',
+            why: 'Toàn bộ phép đếm phụ thuộc câu trả lời của bước này, nên viết ra thay vì nhẩm.',
+          },
+          {
+            action: 'Xác định nhiễm sắc thể đang ở dạng kép hay đơn dựa vào việc tâm động đã tách chưa.',
+            why: 'Số crômatit chỉ khác 0 khi nhiễm sắc thể còn ở dạng kép, đây là chỗ sai nhiều nhất.',
+          },
+          {
+            action: 'Với bài tính nguyên liệu, dùng công thức (2^k − 1) × 2n cho nhiễm sắc thể đơn.',
+            why: 'Bộ nhiễm sắc thể của tế bào mẹ ban đầu không do môi trường cấp, nên phải trừ đi một bộ.',
+          },
+          {
+            action: 'Kiểm tra lại đơn vị đề hỏi: nhiễm sắc thể đơn, nhiễm sắc thể kép hay crômatit.',
+            why: 'Ba đơn vị này khác nhau và đề luôn cài sẵn phương án cho cả ba để bắt lỗi đọc đề.',
+          },
+        ],
+        trick:
+          'Số crômatit ở kì đầu và kì giữa luôn bằng 2 lần số nhiễm sắc thể, và bằng 0 từ kì sau trở đi. Nhớ hai mốc này thì không cần vẽ lại sơ đồ.',
+        pitfall:
+          'Dùng 2^k thay cho (2^k − 1) khi tính nguyên liệu môi trường. Đây là lỗi cho ra đúng một phương án nhiễu đã được đề chuẩn bị sẵn.',
+      },
+      {
+        id: 'bio.energy',
+        name: 'Chuyển hóa năng lượng: hô hấp và quang hợp',
+        tell: [
+          'Đề hỏi giai đoạn nào tạo ra nhiều ATP nhất hoặc sản phẩm của từng pha',
+          'Đề nhắc tới điều kiện thiếu oxi, lên men, hoặc so sánh hiệu suất năng lượng',
+        ],
+        method:
+          'Hai quá trình này soi gương nhau: quang hợp nạp năng lượng vào chất hữu cơ, hô hấp rút năng lượng đó ra. Chỉ cần nhớ đầu vào và đầu ra của từng pha, cộng một sự thật xuyên suốt là phần lớn ATP đến từ chuỗi chuyền electron chứ không phải từ các phản ứng trực tiếp.',
+        steps: [
+          {
+            action: 'Xác định đề đang hỏi quang hợp hay hô hấp, và pha nào của quá trình đó.',
+            why: 'Hai quá trình đều có chuỗi chuyền electron nên gọi tên nhầm là chọn nhầm bào quan.',
+          },
+          {
+            action: 'Viết ra đầu vào và đầu ra của pha đó.',
+            why: 'Hầu hết câu hỏi lí thuyết chỉ là kiểm tra đúng cặp đầu vào — đầu ra này.',
+          },
+          {
+            action: 'Với câu về lượng ATP, kiểm tra có oxi hay không trước khi tính.',
+            why: 'Không có oxi thì chuỗi chuyền electron tắc, chỉ còn 2 ATP của đường phân.',
+          },
+          {
+            action: 'Đối chiếu với bào quan tương ứng: ti thể cho hô hấp, lục lạp cho quang hợp.',
+            why: 'Câu hỏi thường kết thúc bằng việc chỉ ra nơi diễn ra, nên bước này chốt đáp án.',
+          },
+        ],
+        trick:
+          'Nhớ cặp "ATP và NADPH" là sản phẩm pha sáng được pha tối dùng, còn O₂ chỉ là chất thải. Riêng cặp từ này giải được phần lớn câu quang hợp lí thuyết.',
+        pitfall:
+          'Cho rằng lên men không phân giải glucôzơ. Glucôzơ vẫn qua đường phân, chỉ là không phân giải hoàn toàn nên thu rất ít năng lượng.',
+      },
+    ],
+    secrets: [
+      {
+        title: 'Đọc tên bào quan là đọc được chức năng',
+        body: 'Hầu hết câu hỏi bào quan chỉ kiểm tra một cặp tên — chức năng. Lập bảng sáu dòng: ti thể hô hấp, lục lạp quang hợp, ribôxôm tổng hợp prôtêin, lizôxôm phân giải, Gôngi đóng gói, lưới nội chất vận chuyển. Thuộc bảng này là lấy trọn nhóm câu dễ của chuyên đề.',
+        when: 'Dùng ngay khi đề hỏi "nơi diễn ra", "bào quan nào" — nhóm câu chiếm tỉ lệ lớn nhất ở mức nhận biết.',
+      },
+      {
+        title: 'Hai mốc quyết định mọi phép đếm phân bào',
+        body: 'Chỉ có hai thời điểm làm số liệu thay đổi: ADN nhân đôi ở kì trung gian và tâm động tách ở kì sau. Trước mốc hai thì nhiễm sắc thể kép, sau mốc hai thì đơn và số nhiễm sắc thể tăng gấp đôi. Không cần thuộc bảng bốn kì, chỉ cần định vị câu hỏi nằm trước hay sau hai mốc đó.',
+        when: 'Dùng cho mọi câu đếm nhiễm sắc thể, crômatit hay số ADN ở một kì cụ thể.',
+      },
+      {
+        title: 'Enzim không cho năng lượng, chỉ hạ rào cản',
+        body: 'Ba phương án nhiễu quen thuộc của câu enzim là "cung cấp năng lượng", "làm đổi chiều phản ứng" và "làm tăng nhiệt độ". Cả ba đều sai vì enzim chỉ hạ năng lượng hoạt hóa. Khi mất phương hướng ở câu enzim, loại thẳng mọi phương án nói enzim tạo ra hay đổi hướng năng lượng.',
+        when: 'Dùng khi gặp câu về cơ chế enzim, đặc biệt là câu hỏi vì sao enzim mất hoạt tính.',
+      },
+    ],
+  },
+  {
+    topicId: 'science.biology.genetics',
+    bigQuestion: 'Bố mẹ cho những loại giao tử nào, và các giao tử đó tổ hợp lại ra tỉ lệ kiểu hình bao nhiêu?',
+    patterns: [
+      {
+        id: 'bio.dna',
+        name: 'Tính toán trên phân tử ADN',
+        tell: [
+          'Đề cho tổng số nuclêôtit của gen kèm tỉ lệ phần trăm một loại',
+          'Đề hỏi số liên kết hiđrô, số chu kì xoắn hoặc chiều dài của gen',
+        ],
+        method:
+          'Toàn bộ bài tính ADN đứng trên đúng hai đẳng thức của nguyên tắc bổ sung: A = T, G = X, và do đó %A + %G = 50%. Từ một dữ kiện phần trăm bất kì, suy ra được cả bốn loại nuclêôtit, rồi mọi đại lượng khác chỉ là thay số vào công thức.',
+        steps: [
+          {
+            action: 'Viết ra hai đẳng thức A = T, G = X trước khi làm bất cứ phép tính nào.',
+            why: 'Hai đẳng thức này biến bốn ẩn thành hai ẩn, và đó là điều làm bài toán giải được.',
+          },
+          {
+            action: 'Dùng %A + %G = 50% để tìm phần trăm loại còn lại.',
+            why: 'Đề hầu như luôn chỉ cho một tỉ lệ và bắt thí sinh tự suy ra tỉ lệ kia qua quan hệ này.',
+          },
+          {
+            action: 'Đổi phần trăm ra số nuclêôtit tuyệt đối bằng cách nhân với tổng số nuclêôtit.',
+            why: 'Các công thức về liên kết hiđrô và chiều dài đều cần số tuyệt đối, không dùng phần trăm.',
+          },
+          {
+            action: 'Thay vào công thức đề hỏi, ví dụ H = 2A + 3G cho tổng liên kết hiđrô.',
+            why: 'Đến bước này bài toán chỉ còn là số học, mọi rủi ro sai đã nằm ở ba bước trên.',
+          },
+        ],
+        trick:
+          'Nhớ %A + %G = 50% chứ không phải 100%. Một nửa số nuclêôtit đã bị A và T chiếm, nên phần trăm của A và G cộng lại chỉ bằng nửa tổng.',
+        pitfall:
+          'Lấy phần trăm của một loại nhân với tổng rồi coi đó là kết quả của loại khác. Luôn kiểm tra tên loại nuclêôtit ở câu hỏi trước khi ghi đáp án.',
+      },
+      {
+        id: 'bio.cross',
+        name: 'Bài lai và tỉ lệ kiểu hình đời con',
+        tell: [
+          'Đề cho kiểu gen hoặc kiểu hình bố mẹ và hỏi tỉ lệ đời con',
+          'Đề nhắc "trội hoàn toàn", "phân li độc lập" hoặc cho phép lai phân tích',
+        ],
+        method:
+          'Đi theo đúng một chiều: kiểu gen bố mẹ cho giao tử nào, giao tử tổ hợp ra kiểu gen nào, kiểu gen biểu hiện thành kiểu hình nào. Với nhiều cặp gen phân li độc lập thì tính riêng từng cặp rồi nhân xác suất, nhanh hơn và ít sai hơn kẻ bảng lớn.',
+        steps: [
+          {
+            action: 'Quy ước gen và viết kiểu gen bố mẹ ra giấy nháp.',
+            why: 'Quy ước rõ ràng ngăn việc nhầm alen trội với alen lặn ở các bước sau.',
+          },
+          {
+            action: 'Liệt kê các loại giao tử mỗi bên tạo ra và tỉ lệ của chúng.',
+            why: 'Giao tử là cầu nối duy nhất giữa hai thế hệ; sai ở đây thì mọi tỉ lệ sau đều sai.',
+          },
+          {
+            action: 'Tách từng cặp gen, tính tỉ lệ riêng rồi nhân các kết quả với nhau.',
+            why: 'Phân li độc lập nghĩa là các cặp không ảnh hưởng nhau, nên xác suất nhân được.',
+          },
+          {
+            action: 'Chuyển tỉ lệ kiểu gen sang kiểu hình theo quan hệ trội lặn của đề.',
+            why: 'Đề hỏi kiểu hình chứ không hỏi kiểu gen, và trội hoàn toàn gộp AA với Aa làm một.',
+          },
+        ],
+        trick:
+          'Với n cặp gen dị hợp tự thụ và trội hoàn toàn, tỉ lệ kiểu hình luôn là (3 : 1)^n. Hai cặp cho 9 : 3 : 3 : 1 mà không cần kẻ bảng 16 ô.',
+        pitfall:
+          'Cộng tỉ lệ của hai cặp gen thay vì nhân. Xác suất của các sự kiện độc lập được nhân, và đây là lỗi làm hỏng cả bài hai cặp tính trạng.',
+      },
+      {
+        id: 'bio.population',
+        name: 'Cân bằng di truyền quần thể',
+        tell: [
+          'Đề nói quần thể đang ở trạng thái cân bằng di truyền hoặc cân bằng Hacđi – Vanbec',
+          'Đề cho tỉ lệ phần trăm cá thể mang kiểu hình lặn trong quần thể',
+        ],
+        method:
+          'Cấu trúc bài luôn là: từ kiểu hình lặn tính ra tần số alen, rồi từ tần số alen tính mọi thứ còn lại. Lý do bắt đầu từ kiểu hình lặn là vì chỉ kiểu gen đồng hợp lặn mới biểu hiện ra một kiểu hình riêng, còn hai kiểu gen trội trông giống hệt nhau.',
+        steps: [
+          {
+            action: 'Đặt q là tần số alen lặn và nhận ra tỉ lệ kiểu hình lặn chính là q².',
+            why: 'Chỉ kiểu gen aa cho kiểu hình lặn, nên số liệu đề cho tương ứng trực tiếp với q².',
+          },
+          {
+            action: 'Lấy căn bậc hai để có q, rồi tính p = 1 − q.',
+            why: 'Hai alen chiếm trọn vốn gen của locut nên tần số của chúng luôn cộng lại bằng 1.',
+          },
+          {
+            action: 'Tính các tỉ lệ kiểu gen: AA là p², Aa là 2pq, aa là q².',
+            why: 'Đây là toàn bộ nội dung công thức Hacđi – Vanbec, mọi câu hỏi đều rơi vào ba số này.',
+          },
+          {
+            action: 'Kiểm tra tổng ba tỉ lệ có bằng 1 hay không trước khi chọn đáp án.',
+            why: 'Phép kiểm tra một dòng này bắt được gần như mọi lỗi số học của cả bài.',
+          },
+        ],
+        trick:
+          'Hệ số 2 trong 2pq rất hay bị quên. Có hai cách tạo thể dị hợp — alen trội từ bố hoặc từ mẹ — nên xác suất phải nhân đôi.',
+        pitfall:
+          'Lấy thẳng tỉ lệ kiểu hình lặn làm tần số alen lặn. Tỉ lệ đó là q², phải khai căn mới ra q, và bỏ qua bước này thì sai toàn bộ các câu sau.',
+      },
+    ],
+    secrets: [
+      {
+        title: 'Sơ đồ lai viết ra giấy, không nhẩm trong đầu',
+        body: 'Bài lai có bốn tầng: kiểu gen bố mẹ, giao tử, kiểu gen đời con, kiểu hình đời con. Nhẩm trong đầu thì hầu như luôn nhảy mất một tầng, mà tầng nào mất cũng cho ra một tỉ lệ trông rất hợp lý và hoàn toàn sai. Viết bốn dòng tốn 20 giây và loại bỏ gần hết rủi ro.',
+        when: 'Dùng cho mọi câu lai từ hai cặp gen trở lên, kể cả khi cảm thấy bài dễ.',
+      },
+      {
+        title: 'Chia đôi khi gặp tần số hoán vị',
+        body: 'Tần số hoán vị f là tổng của hai loại giao tử hoán vị, nên mỗi loại chỉ chiếm f/2, còn mỗi loại giao tử liên kết chiếm (1 − f)/2. Đề luôn để sẵn phương án bằng đúng f để bắt người quên chia đôi. Kiểm tra nhanh: bốn loại giao tử phải cộng lại bằng 100%.',
+        when: 'Dùng ngay khi đề viết kiểu gen dạng AB/ab kèm một tần số hoán vị.',
+      },
+      {
+        title: 'Đọc số nhóm kiểu hình để đoán quy luật',
+        body: 'Tỉ lệ 9 : 3 : 3 : 1 là phân li độc lập, 9 : 7 hoặc 9 : 6 : 1 là tương tác gen, 1 : 2 : 1 là trội không hoàn toàn, 3 : 1 phân bố lệch theo giới là liên kết giới tính. Đếm số nhóm kiểu hình trước, rồi mới chọn công cụ giải — làm ngược lại sẽ dùng nhầm quy luật.',
+        when: 'Dùng khi đề cho sẵn tỉ lệ đời con và hỏi ngược lại về quy luật di truyền hoặc kiểu gen bố mẹ.',
+      },
+    ],
+  },
+  {
+    topicId: 'science.biology.organism',
+    bigQuestion: 'Cơ thể giữ ổn định bằng cách nào, và đặc điểm này giúp sinh vật sống sót trước sức ép nào?',
+    patterns: [
+      {
+        id: 'bio.homeostasis',
+        name: 'Cân bằng nội môi và điều hòa bằng hoocmôn',
+        tell: [
+          'Đề cho một chỉ số của máu tăng hoặc giảm và hỏi cơ thể phản ứng thế nào',
+          'Đề nhắc tên một hoocmôn cụ thể như insulin, glucagôn, ADH hay ađrênalin',
+        ],
+        method:
+          'Mọi cơ chế điều hòa nội môi đều là một vòng ngược âm tính: bộ phận tiếp nhận phát hiện sai lệch, bộ phận điều khiển phát tín hiệu, bộ phận thực hiện kéo chỉ số về mức chuẩn. Xác định chỉ số đang lệch theo hướng nào là suy ra ngay chiều của mọi phản ứng còn lại.',
+        steps: [
+          {
+            action: 'Ghi rõ chỉ số nào đang lệch và lệch theo hướng tăng hay giảm.',
+            why: 'Toàn bộ chuỗi phản ứng của cơ thể chỉ nhằm đảo ngược đúng hướng lệch này.',
+          },
+          {
+            action: 'Xác định hoocmôn được tiết ra để kéo chỉ số ngược trở lại.',
+            why: 'Các hoocmôn đi thành cặp đối lập, nên chọn đúng một cái là loại được cái kia.',
+          },
+          {
+            action: 'Truy ra cơ quan đích và tác động cụ thể của hoocmôn đó.',
+            why: 'Phương án nhiễu thường đúng tên hoocmôn nhưng sai cơ quan đích hoặc sai tác động.',
+          },
+          {
+            action: 'Kiểm tra kết quả cuối có đưa chỉ số về mức chuẩn hay không.',
+            why: 'Nếu kết luận làm chỉ số lệch thêm thì chắc chắn đã chọn nhầm chiều điều hòa.',
+          },
+        ],
+        trick:
+          'Thuộc bốn cặp đối lập là đủ cho hầu hết câu: insulin – glucagôn cho đường huyết, ADH – bài niệu cho nước, canxitônin – parathoocmôn cho canxi, giãn – co mạch cho huyết áp.',
+        pitfall:
+          'Đảo vai insulin và glucagôn. Insulin hạ đường huyết còn glucagôn nâng lên; đây là cặp bị nhầm nhiều nhất trong toàn chuyên đề.',
+      },
+      {
+        id: 'bio.evolution',
+        name: 'Nhân tố tiến hóa và hình thành loài',
+        tell: [
+          'Đề hỏi nhân tố nào định hướng tiến hóa hoặc cung cấp nguyên liệu cho tiến hóa',
+          'Đề nhắc tới cách li địa lí, cách li sinh sản hoặc quần thể có kích thước nhỏ',
+        ],
+        method:
+          'Phân vai rành mạch là giải được: đột biến và biến dị tổ hợp cung cấp nguyên liệu nhưng vô hướng; chọn lọc tự nhiên là nhân tố duy nhất có hướng; di – nhập gen và các yếu tố ngẫu nhiên làm thay đổi tần số alen nhưng cũng vô hướng. Câu hỏi thường chỉ kiểm tra xem thí sinh có trộn lẫn các vai này không.',
+        steps: [
+          {
+            action: 'Đọc kỹ đề đang hỏi vai trò nào: định hướng, nguyên liệu hay làm thay đổi tần số.',
+            why: 'Ba vai này khác nhau và mỗi vai chỉ có một nhóm nhân tố đảm nhiệm.',
+          },
+          {
+            action: 'Loại ngay các nhân tố vô hướng nếu đề hỏi về sự định hướng.',
+            why: 'Chỉ chọn lọc tự nhiên có hướng, nên bước loại này thường để lại đúng một phương án.',
+          },
+          {
+            action: 'Với câu hình thành loài, kiểm tra đã có cách li sinh sản hay chưa.',
+            why: 'Cách li sinh sản là mốc xác nhận loài mới; thiếu nó thì mới chỉ là phân hóa trong loài.',
+          },
+          {
+            action: 'Với quần thể nhỏ, ưu tiên xét vai trò của các yếu tố ngẫu nhiên.',
+            why: 'Kích thước quần thể càng nhỏ thì biến động ngẫu nhiên càng lấn át chọn lọc.',
+          },
+        ],
+        trick:
+          'Gặp cụm từ "quần thể có kích thước nhỏ" thì gần như chắc chắn đề đang nói về các yếu tố ngẫu nhiên. Đây là tín hiệu ổn định nhất của cả chuyên đề tiến hóa.',
+        pitfall:
+          'Coi đột biến là nhân tố định hướng vì nó tạo ra cái mới. Tạo nguyên liệu và định hướng là hai vai khác nhau, và đột biến xảy ra hoàn toàn vô hướng.',
+      },
+      {
+        id: 'bio.ecosystem',
+        name: 'Dòng năng lượng và quan hệ trong hệ sinh thái',
+        tell: [
+          'Đề cho năng lượng của một bậc dinh dưỡng kèm hiệu suất sinh thái',
+          'Đề mô tả hai loài sống cùng nhau và hỏi đó là kiểu quan hệ nào',
+        ],
+        method:
+          'Với dòng năng lượng, quy tắc duy nhất là mỗi bậc chỉ nhận khoảng 10% của bậc liền trước, và sinh vật sản xuất đã là bậc 1. Với quan hệ sinh thái, chỉ cần xác định mỗi bên được lợi, bị hại hay trung tính, rồi tra vào bảng tên gọi.',
+        steps: [
+          {
+            action: 'Đánh số bậc dinh dưỡng, bắt đầu từ sinh vật sản xuất là bậc 1.',
+            why: 'Đếm nhầm bậc đầu tiên làm lệch kết quả đúng một lần nhân 10%, và đề có sẵn phương án cho lỗi đó.',
+          },
+          {
+            action: 'Đếm số lần chuyển bậc, tức số bậc đích trừ đi 1.',
+            why: 'Số lần nhân hiệu suất bằng số lần chuyển bậc chứ không bằng số thứ tự của bậc.',
+          },
+          {
+            action: 'Nhân năng lượng ban đầu với hiệu suất đúng số lần vừa đếm.',
+            why: 'Đến đây bài chỉ còn phép nhân, mọi rủi ro đã nằm ở hai bước đếm phía trên.',
+          },
+          {
+            action: 'Với câu quan hệ sinh thái, ghi dấu lợi, hại hoặc trung tính cho từng bên rồi mới gọi tên.',
+            why: 'Tên gọi chỉ là nhãn dán lên cặp dấu đó, nên xác định dấu trước thì không thể nhầm tên.',
+          },
+        ],
+        trick:
+          'Bảng dấu cho quan hệ sinh thái: cộng sinh là lợi – lợi và bắt buộc, hợp tác là lợi – lợi nhưng không bắt buộc, hội sinh là lợi – trung tính, kí sinh và ăn thịt là lợi – hại, cạnh tranh là hại – hại.',
+        pitfall:
+          'Đếm sinh vật sản xuất là bậc 0. Sai lệch một bậc làm kết quả lệch đúng một bậc mười, và phương án đó luôn có sẵn trong đề.',
+      },
+    ],
+    secrets: [
+      {
+        title: 'Hỏi "để làm gì" là ra đáp án câu tiến hóa',
+        body: 'Mọi đặc điểm thích nghi đều trả lời một sức ép cụ thể của môi trường. Túi khí của chim để bay cần nhiều oxi; con đường C₄ để giữ năng suất khi trời nóng khô; lá biến thành gai để giảm mất nước. Thay vì học thuộc từng ví dụ, hãy hỏi đặc điểm này giải quyết vấn đề gì — phương án đúng luôn là phương án nêu được vấn đề đó.',
+        when: 'Dùng cho các câu hỏi vì sao một nhóm sinh vật có cấu tạo hay cơ chế đặc biệt.',
+      },
+      {
+        title: 'Vòng ngược âm tính giải được mọi câu nội môi',
+        body: 'Cơ thể luôn phản ứng theo hướng ngược lại với sai lệch: đường huyết cao thì hạ xuống, mất nước thì giữ nước lại, nhiệt độ tăng thì tỏa nhiệt. Chỉ cần đọc ra hướng lệch rồi chọn phương án đi ngược hướng đó là gần như chắc đúng, kể cả khi không nhớ chính xác tên hoocmôn.',
+        when: 'Dùng khi gặp câu điều hòa nội môi mà không nhớ rõ cơ chế chi tiết.',
+      },
+      {
+        title: 'Quy tắc 10% và cái bẫy đếm bậc',
+        body: 'Năng lượng giảm mười lần qua mỗi bậc dinh dưỡng, nên chuỗi thức ăn hiếm khi dài quá năm bậc. Điều bị sai nhiều hơn cả công thức là việc đếm bậc: sinh vật sản xuất là bậc 1, nên tới bậc 3 chỉ nhân 10% đúng hai lần. Đếm bậc trên đầu ngón tay trước khi bấm máy.',
+        when: 'Dùng cho mọi câu tính năng lượng hoặc sinh khối qua các bậc dinh dưỡng.',
+      },
+    ],
+  },
+
   /* ══ KHOA HỌC — LỊCH SỬ ════════════════════════════════════════════ */
   {
     topicId: 'science.history.vietnam',
