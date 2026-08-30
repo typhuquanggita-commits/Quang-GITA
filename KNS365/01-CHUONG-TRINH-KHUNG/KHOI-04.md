@@ -1,6 +1,9 @@
-# KHỐI 4 – CHƯƠNG TRÌNH CHI TIẾT 24 CHUYÊN ĐỀ
-### Giai đoạn **BÉN RỄ** 🌿 · Hướng tới **Đai Xanh Lá** (cuối lớp 5)
-### Tuyên ngôn khối: *"Con tự học có phương pháp và có tiếng nói trong nhóm"*
+# KHỐI 4 — CHƯƠNG TRÌNH CHI TIẾT **24 CỤM CHUYÊN ĐỀ**
+### Giai đoạn **BÉN RỄ** 🌿 *(năm mở giai đoạn)* · Cấp Độ mục tiêu: **Cấp 3 🟢 Pin Xanh Lá (vững)**
+### Tuyên ngôn khối: *"Em học có phương pháp, làm việc có trách nhiệm, và biết nói không đúng lúc"*
+
+> 🔴 **BẢN ĐÃ HỢP NHẤT VỚI NGUỒN GỐC HỌC VIỆN.** 24 cụm dưới đây **hấp thụ đủ 50 bài gốc** của khối 4.
+> Căn cứ: [`DOI-CHIEU-KHOI-04.md`](DOI-CHIEU-KHOI-04.md).
 
 ---
 
@@ -8,545 +11,563 @@
 
 | Hạng mục | Quy định |
 |---|---|
-| **Đặc điểm lứa tuổi** | 9–10 tuổi · chú ý 20–25 phút · tư duy logic hình thành · nhu cầu được công nhận trong nhóm rất mạnh |
-| **Nguyên tắc vàng** | Bắt đầu **ghi số liệu luyện tập**; Squad ổn định cả học kỳ, luân phiên đủ 5 vai; HS được tự chọn 1 phần nội dung |
-| **Chữ GITA trọng tâm** | **T – Talent** (phương pháp học & bản đồ điểm mạnh) và **A – Action** (kỷ luật, Squad) |
-| **Cấp độ hành động** | **A2 – Ưu tiên** (gấp × quan trọng) – rèn tường minh |
-| **Chỉ số 3T cuối năm** | Tập trung **25 phút** · Tốc độ: bắt tay vào việc trong **60 giây** · Trội: **Bản đồ Điểm Mạnh v1** hoàn chỉnh |
-| **Thói quen chủ lực** | ① Kế hoạch tuần ② Phiên tập trung 25 phút ③ Ghi chép Cornell |
-| **Mốc quan trọng** | **Sàng lọc Lộ trình Mũi Nhọn lần đầu** vào cuối HK1 |
-| **An toàn đặc thù** | Chuyên đề đuối nước bắt buộc có hồ bơi/bể an toàn hoặc mô phỏng trên cạn có huấn luyện viên bơi |
+| **Đặc điểm lứa tuổi** | 9–10 tuổi · chú ý 20–25 phút · **tư duy logic bắt đầu vững** · cơ thể một số em bắt đầu thay đổi · nhóm bạn thành thế lực xã hội |
+| **Nguyên tắc vàng** | Đây là năm **chuyển từ "làm theo" sang "làm có phương pháp"** — mọi kỹ năng đều phải kèm **cách kiểm tra mình đã làm đúng chưa** |
+| **Chữ GITA trọng tâm** | **A – Action** *(kỷ luật học tập, trách nhiệm)* và **T – Talent** *(phương pháp học, giải quyết vấn đề)* |
+| **Bậc sâu mục tiêu** | ③ Kỹ năng |
+| **Chỉ số 3T cuối năm** | Tập trung **20–25 phút** · Tốc độ: bắt tay vào việc trong **60 giây** · Trội: **1 mũi nhọn được định vị** |
+| **Thói quen chủ lực năm** | ① Kế hoạch tuần ② Ôn tập ngắt quãng ③ Nhật ký học tập 5 dòng/ngày |
+| **Sĩ số khuyến nghị** | 24–30 HS · Squad 5 HS, **luân phiên đủ 5 vai, đổi vai mỗi cụm** |
+| **Ngôn ngữ HLV** | Chuyển sang xưng *"thầy/cô – em"*. Bắt đầu **yêu cầu số liệu**: *"em đo bằng gì?"* thay vì *"em thấy thế nào?"* |
+| **An toàn đặc thù** | 🔴 Khối 4 có **hai chủ đề nặng đi riêng**: xâm hại *(`N3-01`)* và dậy thì *(`N3-02`)*. Cả hai phải có **HLV đã tập huấn**, có phương án tách nhóm, và có kênh báo cho bộ phận tâm lý |
+
+### A2. Phân bổ 24 cụm
+
+| Nhóm | Tên nhóm | Số bài gốc | Số cụm |
+|:--:|---|:--:|:--:|
+| **N1** | Kỹ năng phát triển cá nhân | 14 | **7** |
+| **N2** | Kỹ năng giao tiếp xã hội | 13 | **6** |
+| **N3** | Kỹ năng ứng phó – bảo vệ bản thân | 11 | **5** |
+| **N4** | Kỹ năng công dân toàn cầu – trách nhiệm xã hội | 6 | **3** |
+| **N5** | Kỹ năng hướng nghiệp – định hướng tương lai | 6 | **3** |
+| | **Tổng** | **50** | **24** |
+
+> ✅ **Khối 4 là khối cân bằng nhất trong năm khối tiểu học.** Nhóm 4 và nhóm 5 đã có đủ 6 bài mỗi nhóm — không còn phải ghép các cặp gượng ép như khối 2 và 3.
+
+**Chuẩn đầu ra khối:** xem [`../00-KHUNG-NEN-TANG/05-CHUAN-DAU-RA-THEO-KHOI.md`](../00-KHUNG-NEN-TANG/05-CHUAN-DAU-RA-THEO-KHOI.md) → Khối 4.
 
 ---
 
-## B. ĐẶC TẢ 24 CHUYÊN ĐỀ
+## B. ĐẶC TẢ 24 CỤM CHUYÊN ĐỀ
 
 ---
 
-### `K04-M1-01` · KẾ HOẠCH TUẦN: VIỆC GẤP & VIỆC QUAN TRỌNG
-**NL:** M1.2, M5.5 · **Trội:** **G** (G40·I10·T30·A20) · **Hành động:** A2 · **Kit:** DC-KIT-01
+### `K04-N1-01` · CƠ THỂ EM – NẾP SỐNG EM
+**Bài gốc hấp thụ:** #1 Ngoại hình của em · #2 Rèn luyện thói quen sinh hoạt hằng ngày
+**Nhóm:** N1 · **Trội:** **A** · **Mạch:** M1 · M2 · **Kit:** `DC-KIT-01`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Lập kế hoạch tuần phân 4 ô **Gấp × Quan trọng**; bám ≥70% | Bám ≥85%; bảo vệ được khung giờ cho ô "Quan trọng – Không gấp" |
-| **I** | Nhận ra mình hay bị việc gấp cuốn đi | Nói được cái giá phải trả khi bỏ bê việc quan trọng |
-| **T** | Phân loại đúng **10/12 việc** vào 4 ô; xếp thứ tự thực hiện có lý do | 12/12; nhận ra "việc gấp của người khác" và biết thương lượng |
-| **A** | Thực hiện kế hoạch 4 tuần liên tiếp, có bảng đối chiếu kế hoạch – thực tế | Điều chỉnh kế hoạch giữa tuần khi lệch; giảm được ≥30% việc bỏ dở |
+| **G** | Đích: *"Em giữ được nếp sinh hoạt 6 việc"* | Đích: *"Em tự điều chỉnh nếp khi lịch thay đổi"* |
+| **I** | Chấp nhận ngoại hình của mình mà không so với ai | Nói được điều mình thích ở cơ thể mình |
+| **T** | Giữ đúng **5/6 nếp** *(ngủ · ăn sáng · vận động · vệ sinh · học · nghỉ mắt)*; ghi được số liệu | 6/6 và tự nhận ra nếp nào mình hay bỏ nhất |
+| **A** | Chuỗi **≥18/21 ngày** | 21/21 và giữ được qua tuần thi |
 
-**BUỔI 1** `G` Đo điểm xuất phát: liệt kê mọi việc tuần trước và đánh dấu việc đã bỏ dở → `I` **Bình Đá – Sỏi – Cát**: đổ cát trước thì không nhét được đá – ẩn dụ kinh điển, HS làm thật → `T` **Ma trận 4 ô**; T-DRILL v1–v3: phân loại 12 thẻ việc, lập kế hoạch tuần mẫu, chấm chéo → `A` Phát **Sổ Kế Hoạch Tuần** (36 tuần); `PSM-K04-M1-01`.
+**BUỔI 1** `G` Thẻ Đích **Sáu Nếp Của Em** → `I` **Tấm Gương Không Phán Xét**: mỗi em viết **một điều mình thích ở cơ thể mình** *(riêng tư, không đọc to)* → `T` **T-DRILL v1–v2**: thiết kế nếp bằng `CT-05 HABIT-5`, đo *số nếp giữ được/ngày* → `A` Bảng chuỗi 21 ngày; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(giữ khi lịch đổi)* → `I` **Ngày Lịch Vỡ**: mô phỏng ngày có việc đột xuất — nếp nào giữ, nếp nào rút gọn → `T` **T-DRILL v3–v4**: nếp rút gọn 3 việc cốt lõi → `A` **SHOWCASE**: đường cong 21 ngày của Squad *(không so cá nhân)*.
 
-**BUỔI 2** `G` Báo công tuần 1 + nâng đích: bảo vệ ô Quan trọng–Không gấp → `I` **Tuần Của Người Bận Rộn**: mô phỏng tuần bị chèn việc đột xuất liên tục → `T` T-DRILL v4 ở L4: lập lại kế hoạch khi có 3 việc phát sinh; luyện thương lượng dời việc → `A` **SHOWCASE**: mỗi HS trình bày kế hoạch tuần tới + khung giờ bất khả xâm phạm cho việc quan trọng.
-
-**Thực hành:** `PTH-K04-M1-01` – Sổ Kế Hoạch Tuần + bảng đối chiếu · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-F` thí nghiệm hành vi 4 tuần · **PSM:** thực hiện & đối chiếu kế hoạch, phụ huynh ký
-**Đánh giá:** `PDG-QS-TH`, `PDG-PH-01`, rubric `R-KEH-04`
-**Bắc cầu học tập:** **Kế hoạch ôn tập, làm bài lớn** – công cụ dùng suốt các khối trên.
+**Phiếu:** `PTH-K04-N1-01` · **Sứ mệnh:** `PSM-K04-N1-01` · **Rubric:** `R-THQ-01`
+**Bắc cầu:** nối `K03-N1-02` · nền cho `K04-N3-02` *(dậy thì)*.
+> 🔴 **Ngoại hình là chủ đề rủi ro ở lứa 9–10 tuổi.** Cấm tuyệt đối: cân đo trước lớp · so sánh chiều cao, cân nặng · nói về ăn kiêng · bình luận về cơ thể bất kỳ học sinh nào. Nội dung chỉ xoay quanh **nếp sống**, không xoay quanh **hình thể**.
 
 ---
 
-### `K04-M1-02` · ĐÁNH BẠI TRÌ HOÃN
-**NL:** M1.3, M1.4 · **Trội:** **A** (G20·I25·T30·A25) · **Hành động:** A2 · **Kit:** DC-KIT-01
+### `K04-N1-02` · EM NHỚ ĐƯỢC – EM NHỚ LÂU
+**Bài gốc hấp thụ:** #5 Trí nhớ · #6 Các cách ghi nhớ
+**Nhóm:** N1 · **Trội:** **T** · **Mạch:** M6 · **Kit:** `DC-KIT-06`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con bắt tay vào việc trong 60 giây"* | Đích: *"Con làm việc khó nhất trước"* |
-| **I** | Nhận ra trì hoãn là do cảm xúc, không phải do lười bẩm sinh | Chia sẻ được "cái bẫy trì hoãn" riêng của mình |
-| **T** | Dùng đúng **3 vũ khí**: luật 5 giây – chia việc thành mảnh 10 phút – bắt đầu bằng phần dễ nhất; giảm độ trễ khởi động xuống **<60 giây** | <30 giây; áp dụng nguyên tắc **"ăn con ếch trước"** (làm việc khó nhất đầu ngày) |
-| **A** | Ghi **Bảng Độ Trễ** 7 ngày (thời gian từ ngồi xuống đến bắt đầu thật) | Giảm ≥50% độ trễ so với ngày 1; duy trì 21 ngày |
+| **G** | Đích: *"Em nhớ được 15 mục sau 1 ngày"* | Đích: *"Em vẫn nhớ sau 7 ngày"* |
+| **I** | Tin trí nhớ luyện được, không phải trời cho | Thích thử cách nhớ mới |
+| **T** | Dùng đúng **3 kỹ thuật** *(nhóm ý · gắn hình · lặp ngắt quãng)*; nhớ **≥12/20 mục** sau 1 ngày | ≥17/20 sau 1 ngày và ≥14/20 sau 7 ngày |
+| **A** | Áp dụng lịch **1–3–7** cho ít nhất 1 môn | Lịch đủ **1–3–7–15–30**, có bảng ghi số quên mỗi lần |
 
-**BUỔI 1** `G` Đo điểm xuất phát: bấm giờ độ trễ khởi động thật của từng HS → `I` **Vòng tròn Trì Hoãn**: HS kể việc mình hay trì hoãn nhất và lý do thật (mệt? sợ khó? sợ sai?) – gọi đúng tên cảm xúc → `T` **3 vũ khí**; T-DRILL v1–v3: luyện luật 5 giây, chia việc, bắt đầu ngay, đo độ trễ mỗi lượt → `A` Phát **Bảng Độ Trễ**; `PSM-K04-M1-02`.
+**BUỔI 1** `G` Đo điểm xuất phát: nhớ 20 mục ngay tại lớp, đếm số đúng → `I` **Đường Cong Quên**: đo lại sau 20 phút — cả lớp thấy mình quên bao nhiêu → `T` **Ba kỹ thuật** + **T-DRILL v1–v2**: nhớ lại 20 mục có kỹ thuật, so số trước – sau → `A` Lập lịch **1–3–7**; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(lần ôn ngày 1 và ngày 3)* → `I` **Cung Điện Trí Nhớ Mini**: gắn 10 mục vào 10 vị trí trong lớp → `T` **T-DRILL v3–v4** ở L3: nhớ dưới sức ép thời gian và tiếng ồn → `A` **SHOWCASE**: bảng *"số mục quên mỗi lần ôn"* — con số phải **giảm dần**.
 
-**BUỔI 2** `G` Báo công biểu đồ độ trễ + nâng đích: ăn con ếch trước → `I` **Thử thách Việc Khó Nhất**: HS mang theo việc mình sợ nhất và làm ngay 15 phút tại lớp → `T` T-DRILL v4 ở L4: bắt đầu việc khó có nhiều cám dỗ xung quanh → `A` **SHOWCASE**: biểu đồ giảm độ trễ của cả Squad; trao *Huy hiệu Bắt Đầu Ngay*.
-
-**Thực hành:** `PTH-K04-M1-02` – Bảng Độ Trễ 21 ngày · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-F` thí nghiệm hành vi · **PSM:** đo & ghi độ trễ mỗi phiên học 7 ngày
-**Đánh giá:** `PDG-QS-TH`, `PDG-PH-01`, rubric `R-TCH-03`
-**Bắc cầu học tập:** **Trực tiếp tăng số bài tập hoàn thành đúng hạn**; giảm học khuya.
+**Phiếu:** `PTH-K04-N1-02` · **Sứ mệnh:** `PSM-K04-N1-02` · **Rubric:** `R-HOC-01`
+**Bắc cầu:** mọi môn · **nền trực tiếp của `CT-23` lặp ngắt quãng**.
+**Học liệu đã có:** 📕 [Kịch bản cụm K04-N1-04 — phương pháp học](../03-KICH-BAN-DAO-TAO/KICH-BAN-CUM-K04-N1-04.md) *(dùng chéo được cho cụm này)*
 
 ---
 
-### `K04-M1-03` · BẢN ĐỒ ĐIỂM MẠNH V1
-**NL:** M1.1 · **Trội:** **T** (G20·I25·T40·A15) · **Hành động:** A2 · **Kit:** DC-KIT-01
-> ⭐ **Chuyên đề mốc:** kết quả là căn cứ cho **Sàng lọc Lộ trình Mũi Nhọn** cuối HK1.
+### `K04-N1-03` · TRÍ CỦA EM – CÂU HỎI CỦA EM
+**Bài gốc hấp thụ:** #3 Trí thông minh của em · #12 Trí tò mò
+**Nhóm:** N1 · **Trội:** **I** · **Mạch:** M6 · M5 · **Kit:** `DC-KIT-06`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con vẽ được bản đồ điểm mạnh có bằng chứng"* | Đích: *"Con chọn được 1 mũi nhọn để đầu tư"* |
-| **I** | Tin rằng mình có điểm mạnh riêng, không cần giống bạn | Chấp nhận cả điểm yếu mà không tự ti |
-| **T** | Nêu **≥3 điểm mạnh**, mỗi cái ≥1 bằng chứng thật; nêu 1 điểm cần cải thiện | ≥5 điểm mạnh có bằng chứng; dùng **ma trận Giỏi × Thích × Cần** để chọn mũi nhọn |
-| **A** | Dùng điểm mạnh giải quyết 1 việc thật trong 7 ngày | Lập **Kế hoạch mài mũi nhọn** 4 tuần và bắt đầu thực hiện |
+| **G** | Đích: *"Em biết mình mạnh ở kiểu thông minh nào"* | Đích: *"Em dùng thế mạnh đó vào một môn em đang yếu"* |
+| **I** | Bỏ được ý nghĩ *"mình dốt"* | Hiểu **thông minh có nhiều kiểu**, không chỉ một |
+| **T** | Nhận diện **≥2 kiểu thông minh** của mình có bằng chứng; đặt **≥5 câu hỏi** về một chủ đề, có ≥2 câu *"vì sao"* | ≥3 kiểu có bằng chứng; ≥8 câu hỏi, có câu *"nếu như"* |
+| **A** | Ghi **≥5 câu hỏi tò mò** trong tuần và tìm câu trả lời cho 1 câu | ≥10 câu, trả lời được 3, có ghi nguồn |
 
-**BUỔI 1** `G` Đích: *"Vũ khí mạnh nhất của con là gì?"* → `I` **Ba Tấm Gương**: (1) mình tự thấy, (2) bạn thấy ở mình, (3) bố mẹ thấy (phiếu gửi trước) – đối chiếu 3 góc nhìn, thường gây bất ngờ mạnh → `T` **9 Dấu Hiệu Tài Năng** phiên bản tiểu học; T-DRILL v1–v3: liệt kê – tìm bằng chứng – chấm chéo độ cụ thể → `A` Vẽ **Bản Đồ Điểm Mạnh v1**; `PSM-K04-M1-03`.
+**BUỔI 1** `G` Thẻ Đích **Kiểu Thông Minh Của Em** → `I` **Tám Trạm Thông Minh**: ngôn ngữ · logic · không gian · vận động · âm nhạc · giao tiếp · nội tâm · thiên nhiên — trẻ đi qua và tự thấy → `T` **T-DRILL v1–v2**: tìm bằng chứng thật cho kiểu mình mạnh → `A` **Sổ Câu Hỏi Tò Mò**; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(bao nhiêu câu hỏi)* → `I` **Câu Hỏi Không Ai Trả Lời Được**: HLV nhận một câu mình không biết và **nói thật là không biết**, rồi cùng tra → `T` **T-DRILL v3–v4**: dùng thế mạnh vào môn đang yếu *(ví dụ: người mạnh không gian vẽ sơ đồ cho bài Sử)* → `A` **SHOWCASE "Bức Tường Câu Hỏi"** của lớp, để cả năm.
 
-**BUỔI 2** `G` Báo công + nâng đích: chọn mũi nhọn → `I` **Trạm Thử Tài Nâng Cao** (8 trạm: ngôn ngữ, logic, không gian, vận động, âm nhạc, tổ chức, thuyết phục, chăm sóc) – HS đo mình bằng trải nghiệm → `T` **Ma trận Giỏi × Thích × Cần**; T-DRILL v4 ở L4: chọn – bảo vệ lựa chọn trước Squad → `A` **SHOWCASE**: mỗi HS công bố **Tuyên bố Mũi Nhọn** và kế hoạch 4 tuần.
-
-**Thực hành:** `PTH-K04-M1-03` – Bản Đồ Điểm Mạnh + Ma trận 3 vòng · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-B` trạm thử tài · **PSM:** phỏng vấn 2 người lớn *"Anh/chị/bố/mẹ thấy con mạnh ở đâu?"*
-**Đánh giá:** `PDG-TALENT-01` (hồ sơ tài năng), `PDG-PH-01`, rubric `R-TCH-04`
-**Bắc cầu học tập:** Chọn môn/hoạt động để đầu tư sâu; nền tảng hướng nghiệp K09.
+**Phiếu:** `PTH-K04-N1-03` · **Sứ mệnh:** `PSM-K04-N1-03` · **Rubric:** `R-HOC-01`
+**Bắc cầu:** mọi môn · nền cho Bản Đồ Điểm Mạnh ở khối 5.
+> ⚠️ **Không dùng kết quả tám trạm để phân loại hay xếp lớp.** Đây là **công cụ tự nhận biết**, không phải bài trắc nghiệm chẩn đoán. Không gửi kết quả cho phụ huynh dưới dạng "con thuộc loại…".
 
 ---
 
-### `K04-M2-01` · AN TOÀN VỚI NƯỚC – PHÒNG CHỐNG ĐUỐI NƯỚC
-**NL:** M2.2 · **Trội:** **T** (G10·I20·T55·A15) · **Hành động:** A2 · **Kit:** DC-KIT-02
-> ⚠️ **Bắt buộc:** có huấn luyện viên bơi/nhân viên cứu hộ nếu tổ chức dưới nước; tuyệt đối cấm HS nhảy xuống cứu người; ưu tiên mô phỏng trên cạn nếu không đủ điều kiện.
+### `K04-N1-04` · ĐÔI TAY KHÉO – TRÍ TƯỞNG TƯỢNG BAY
+**Bài gốc hấp thụ:** #4 Em là nhà văn nhí · #7 Rèn luyện vận động tinh
+**Nhóm:** N1 · **Trội:** **I** · **Mạch:** M5 · **Kit:** `DC-KIT-05`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con nổi được 30 giây và biết cứu bạn đúng cách"* | Đích: *"Con nổi 2 phút và chỉ huy được một tình huống cứu hộ"* |
-| **I** | Không hoảng loạn khi ở trong nước | Trấn an được bạn sợ nước |
-| **T** | Thực hiện **kỹ thuật nổi ngửa/nổi sao** ≥30 giây; nhận đúng 6/8 dấu hiệu nơi nước nguy hiểm; thực hiện **cứu gián tiếp**: HÔ TO – NÉM VẬT NỔI – ĐƯA SÀO – GỌI NGƯỜI LỚN (tuyệt đối không nhảy xuống) | Nổi ≥2 phút; xử lý đúng cả tình huống có dòng chảy/bùn; phân công được nhóm cứu hộ |
-| **A** | Cùng gia đình khảo sát **nơi nước nguy hiểm** gần nhà và lập quy tắc | Đăng ký học bơi hoặc duy trì luyện bơi ≥1 buổi/tuần |
+| **G** | Đích: *"Em viết được một truyện ngắn có đủ 3 phần"* | Đích: *"Truyện của em có một chi tiết bất ngờ"* |
+| **I** | Không sợ viết sai, viết xấu | Thích đọc truyện mình viết cho người khác nghe |
+| **T** | Truyện đủ **3 phần** *(mở · rắc rối · kết)*, ≥120 chữ; làm được **3 kỹ thuật tay khéo** | ≥250 chữ, có **hội thoại**; 5 kỹ thuật tay khéo, tốc độ tăng |
+| **A** | Viết **≥3 lần** trong 2 tuần | ≥6 lần, và làm được một sản phẩm thủ công hoàn chỉnh |
 
-**BUỔI 1** `G` Đích + số liệu thật về đuối nước trẻ em Việt Nam → `I` **Trải nghiệm Áo Quần Ướt**: mặc quần áo dài rồi thử di chuyển – cảm nhận sức nặng bất ngờ (trên cạn hoặc bể nông) → `T` T-DRILL v1–v3: kỹ thuật nổi (trên cạn mô phỏng tư thế → dưới nước nếu có điều kiện); nhận diện nơi nguy hiểm qua ảnh → `A` Phiếu khảo sát nơi nước gần nhà; `PSM-K04-M2-01`.
+**BUỔI 1** `G` Thẻ Đích **Ba Phần Một Truyện** → `I` **Hộp Ba Thứ**: bốc ngẫu nhiên một nhân vật, một nơi, một rắc rối → viết → `T` **T-DRILL v1–v2**: viết 10 phút, đếm *số chữ* và *đủ mấy phần* → `A` Sổ truyện của em; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(chi tiết bất ngờ)* → `I` **Xưởng Tay Khéo**: gấp · cắt · buộc · đan · nặn — 5 trạm, đo tốc độ và độ chính xác → `T` **T-DRILL v3–v4**: viết có hội thoại; đọc truyện cho Squad, nhận **phản hồi 1-1-1** → `A` **SHOWCASE "Tuyển Tập Lớp Mình"**: đóng thành một cuốn, mỗi em một trang.
 
-**BUỔI 2** `G` Báo công khảo sát + nâng đích: chỉ huy cứu hộ → `I` **Hiện trường Cứu Hộ Giả Định**: 1 "nạn nhân" ở xa bờ, Squad phải xử lý – HS thường phản xạ sai (định nhảy xuống) → khoảnh khắc học rất mạnh → `T` T-DRILL v4 ở L4–L5: cứu gián tiếp bằng 3 dụng cụ khác nhau, phân vai, bấm giờ → `A` **SHOWCASE**: Squad trình bày **Bản đồ Nước Nguy Hiểm** khu vực mình ở + quy tắc gia đình.
-
-**Thực hành:** `PTH-K04-M2-01` – Bảng chấm nổi + quy trình cứu gián tiếp · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-B`/`I-E` thực hành thể chất + khảo sát · **PSM:** khảo sát nơi nước nguy hiểm cùng gia đình
-**Đánh giá:** `PDG-QS-AT`, `PDG-PH-01`, rubric `R-ATT-09`
-**Bắc cầu học tập:** Thể dục (bơi lội); Tự nhiên & Xã hội (an toàn môi trường nước).
+**Phiếu:** `PTH-K04-N1-04` · **Sứ mệnh:** `PSM-K04-N1-04` · **Rubric:** `R-STA-01`
+**Bắc cầu:** Tiếng Việt *(tập làm văn)* · Mĩ thuật · Thủ công.
+> ⚠️ **Không chấm chính tả trong cụm này.** Mục tiêu là **dám viết** và **đủ cấu trúc**. Lỗi chính tả xử ở môn Tiếng Việt, không xử ở đây — chấm chính tả sẽ giết ý muốn viết.
 
 ---
 
-### `K04-M2-02` · NGƯỜI LẠ & NHỮNG CHIẾC BẪY DỤ DỖ
-**NL:** M2.3 · **Trội:** **T** (G15·I25·T45·A15) · **Hành động:** A2 · **Kit:** DC-KIT-02
-> ⚠️ Chuyên đề nhạy cảm – thông báo phụ huynh trước; quyền "pass" nhắc rõ; không dùng hình ảnh gây sợ hãi.
+### `K04-N1-05` · VIỆC CỦA EM – EM CHỊU TRÁCH NHIỆM
+**Bài gốc hấp thụ:** #8 Chịu trách nhiệm bản thân · #14 Kỷ luật trong học tập
+**Nhóm:** N1 · **Trội:** **A** · **Mạch:** M1 · **Kit:** `DC-KIT-01`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con nhận ra bẫy trước khi sập bẫy"* | Đích: *"Con giúp bạn thoát khỏi tình huống nguy hiểm"* |
-| **I** | Tin rằng nói ra không phải là "mách lẻo" | Chủ động cảnh báo bạn khi thấy dấu hiệu |
-| **T** | Nhận đúng **5/6 kiểu bẫy** (nhờ giúp đỡ, cho quà, giả người quen của bố mẹ, doạ nạt, hứa hẹn phần thưởng, giữ bí mật); thực hiện **HÉT – CHẠY – KỂ** trong <3 giây | Nhận cả bẫy tinh vi (quen dần qua nhiều lần, dụ qua mạng); xử lý đúng khi kẻ dụ là người quen |
-| **A** | Thống nhất **mật khẩu gia đình** và 5 người tin cậy | Diễn tập 1 tình huống với gia đình; ghi số điện thoại tổng đài bảo vệ trẻ em |
+| **G** | Đích: *"Em nộp bài đúng hạn 4/5 lần"* | Đích: *"Em tự đặt hạn sớm hơn hạn thật"* |
+| **I** | Không đổ lỗi cho hoàn cảnh | Nhận trách nhiệm mà không tự trách |
+| **T** | Phân biệt đúng **8/10 thẻ** *(việc của mình · việc của người khác · việc ngoài tầm)*; lập được **hạn nội bộ** | 10/10; và tự lập lịch ngược từ hạn nộp |
+| **A** | Nộp đúng hạn **≥4/5 lần** trong 2 tuần | 5/5 và có 1 lần **báo sớm** khi biết sẽ trễ |
 
-**BUỔI 1** `G` Đích: *"Nhận diện bẫy"* → `I` **Hộp Bẫy**: 6 kịch bản dụ dỗ in trên thẻ, HS xếp từ dễ nhận nhất đến khó nhận nhất – tự phát hiện mình dễ sập bẫy nào → `T` **6 kiểu bẫy** + quy trình HÉT – CHẠY – KỂ; T-DRILL v1–v3 mô phỏng có bấm giờ phản xạ → `A` Phiếu mật khẩu gia đình; `PSM-K04-M2-02`.
+**BUỔI 1** `G` Đo điểm xuất phát: đếm số lần trễ hạn 2 tuần qua *(tự ghi, không thu)* → `I` **Ba Cái Vòng**: việc của mình · việc của người khác · việc ngoài tầm — trẻ xếp 10 tình huống → `T` **T-DRILL v1–v2**: lập **hạn nội bộ sớm 2 ngày** → `A` Bảng hạn của em; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(nộp đúng hạn mấy lần)* → `I` **Câu "Tại Vì"**: nghe 8 câu đổ lỗi, tìm phần **mình vẫn làm được** trong mỗi câu → `T` **T-DRILL v3–v4**: lịch ngược từ hạn nộp; xử khi có việc đột xuất → `A` **SHOWCASE**: **Bảng Hạn Của Squad** treo cả học kỳ.
 
-**BUỔI 2** `G` Báo công + nâng đích: bẫy tinh vi → `I` **Kịch Người Quen**: tình huống kẻ dụ là người quen của gia đình – khó xử nhất; HS bàn cách → `T` T-DRILL v4 ở L4: 4 tình huống liên tiếp bất ngờ; luyện kể lại đủ ý cho người lớn → `A` **SHOWCASE**: Squad làm **Bảng 6 Kiểu Bẫy** dán ở lớp; mang bản sao về nhà.
-
-**Thực hành:** `PTH-K04-M2-02` – Phiếu nhận diện bẫy + mật khẩu gia đình · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-G` kịch tương tác · **PSM:** thống nhất mật khẩu & 5 người tin cậy với gia đình
-**Đánh giá:** `PDG-QS-AT`, `PDG-PH-01`, rubric `R-ATT-10`
-**Bắc cầu học tập:** Nối K01-M2-01, chuẩn bị cho K07-M2-02 (phòng chống xâm hại tuổi teen).
+**Phiếu:** `PTH-K04-N1-05` · **Sứ mệnh:** `PSM-K04-N1-05` · **Rubric:** `R-TCH-01`
+**Bắc cầu:** mọi môn · nền cho `CT-03` Gấp × Quan trọng.
+> ⚠️ **Trách nhiệm không phải tự trách.** Với học sinh có hoàn cảnh khiến việc học khó *(phải trông em, nhà không có góc học tập)*, HLV **thiết kế lại việc mang về cho khả thi** — nếu không, cụm này biến thành bảng nhắc em rằng em thua kém.
 
 ---
 
-### `K04-M2-03` · VỆ SINH – DINH DƯỠNG – THỊ LỰC TUỔI HỌC TRÒ
-**NL:** M2.4 · **Trội:** **A** (G20·I20·T30·A30) · **Hành động:** A2 · **Kit:** DC-KIT-02
+### `K04-N1-06` · THẮNG CÙNG ĐỘI – KHÔNG THẮNG BẰNG MỌI GIÁ
+**Bài gốc hấp thụ:** #9 Sức mạnh đoàn kết và sáng tạo đồng đội · #10 Tính hiếu thắng
+**Nhóm:** N1 · **Trội:** **A** · **Mạch:** M4 · **Kit:** `DC-KIT-04`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con giữ được 3 thói quen sức khoẻ trong 21 ngày"* | Đích: *"Con cải thiện được 1 chỉ số đo được"* |
-| **I** | Muốn khoẻ vì hiểu liên hệ *khoẻ → học tốt* | Thuyết phục gia đình thay đổi 1 thói quen |
-| **T** | Thực hiện đúng **quy trình rửa tay 6 bước**; áp dụng **quy tắc 20-20-20** bảo vệ mắt; đọc được nhãn dinh dưỡng cơ bản (đường, muối) | Thiết kế thực đơn 1 tuần cân đối; nhận ra 3 loại đồ ăn "bẫy" quảng cáo lành mạnh |
-| **A** | Nhật ký 3 thói quen 21 ngày | Cải thiện đo được: giảm đồ ngọt / tăng giờ ngủ / giảm giờ nhìn màn hình |
+| **G** | Đích: *"Squad em thắng mà không ai bị bỏ lại"* | Đích: *"Em nhận thua đúng lúc thay vì kéo cả đội xuống"* |
+| **I** | Thấy thắng một mình không vui bằng thắng cùng đội | Hiểu **hiếu thắng làm đội yếu đi** |
+| **T** | Nhận đúng **4/5 dấu hiệu hiếu thắng** ở chính mình; giữ **luật chơi** khi đang thua | 5/5; và can được bạn đang hiếu thắng mà không cãi nhau |
+| **A** | Chơi ≥3 trận đội, **không vi phạm luật lần nào** | ≥5 trận, và có 1 lần chủ động nhận lỗi khi đội thua |
 
-**BUỔI 1** `G` Đo điểm xuất phát: khảo sát nhanh thói quen của lớp (đồ ngọt, giờ ngủ, giờ màn hình) → `I` **Thí nghiệm Đèn UV Rửa Tay** (gel phát quang) – HS thấy vi khuẩn "còn sót" → hiệu ứng mạnh; **Cột Đường**: đong lượng đường trong 1 chai nước ngọt → `T` T-DRILL v1–v3: rửa tay 6 bước bấm giờ; đọc nhãn 3 sản phẩm; luyện 20-20-20 → `A` Phát **Nhật ký 3 Thói Quen**; `PSM-K04-M2-03`.
+**BUỔI 1** `G` Thẻ Đích **Thắng Cùng Đội** → `I` **Nhiệm Vụ Cần Đủ Năm Người**: thiếu một người là không xong → `T` **T-DRILL v1–v2**: chia việc theo khả năng; đo *thời gian ngồi ngoài của mỗi thành viên* → `A` Luật Squad; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích → `I` **Năm Dấu Hiệu Hiếu Thắng**: cãi trọng tài · đổ lỗi đồng đội · giành phần dễ · bỏ cuộc khi thua · ăn mừng quá đà — trẻ tự soi → `T` **T-DRILL v3–v4** ở L3: chơi khi **đang thua**, giữ luật và giữ thái độ → `A` **SHOWCASE**: **Giải Đấu Có Điểm Tinh Thần** — điểm tinh thần **nặng bằng điểm thắng**.
 
-**BUỔI 2** `G` Báo công tuần 1 + nâng đích: cải thiện chỉ số → `I` **Siêu Thị Đọc Nhãn**: HS so sánh 6 sản phẩm quen thuộc, xếp hạng lành mạnh → `T` T-DRILL v4 ở L4: thiết kế thực đơn 1 tuần trong ngân sách; xử lý tình huống "bị rủ ăn vặt" → `A` **SHOWCASE**: biểu đồ cải thiện của Squad; **Cam kết Sức Khoẻ Gia Đình**.
-
-**Thực hành:** `PTH-K04-M2-03` – Nhật ký 3 Thói Quen 21 ngày · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-F` thí nghiệm hành vi · **PSM:** duy trì 3 thói quen, phụ huynh ký hằng ngày
-**Đánh giá:** `PDG-QS-TH`, `PDG-PH-01`, rubric `R-SKH-02`
-**Bắc cầu học tập:** Bảo vệ thị lực khi học; ngủ đủ → trí nhớ tốt hơn.
+**Phiếu:** `PTH-K04-N1-06` · **Sứ mệnh:** `PSM-K04-N1-06` · **Rubric:** `R-NHO-01`
+**Bắc cầu:** nối `K03-N1-05` *(thua cũng không sao)* · `K03-N3-09`.
+> ⚠️ **Điểm tinh thần phải nặng bằng điểm thắng** — nếu không, cụm này dạy ngược lại điều mình muốn dạy.
 
 ---
 
-### `K04-M3-01` · ĐỌC CẢM XÚC NGƯỜI KHÁC
-**NL:** M3.3 · **Trội:** **T** (G15·I25·T45·A15) · **Hành động:** A2 · **Kit:** DC-KIT-03
+### `K04-N1-07` · TỪ NHẬN XÉT ĐẾN GIẢI PHÁP
+**Bài gốc hấp thụ:** #11 Cách nhận xét · #13 Kỹ năng giải quyết vấn đề
+**Nhóm:** N1 · **Trội:** **T** · **Mạch:** M5 · **Kit:** `DC-KIT-05`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con đoán đúng cảm xúc của bạn và hỏi lại để kiểm chứng"* | Đích: *"Con nhận ra cảm xúc bạn đang giấu"* |
-| **I** | Quan tâm thật sự tới cảm xúc người khác | Chủ động đến với bạn đang buồn mà không ai để ý |
-| **T** | Đọc đúng **8/10** biểu cảm khuôn mặt + ngôn ngữ cơ thể; dùng câu kiểm chứng *"Hình như bạn đang… đúng không?"* | 10/10 kể cả biểu cảm mờ; nhận ra mâu thuẫn giữa lời nói và cơ thể |
-| **A** | Hỏi thăm ≥3 người trong 7 ngày khi thấy dấu hiệu bất thường | Ghi lại 1 lần giúp được ai đó nhờ đọc đúng cảm xúc |
+| **G** | Đích: *"Em nhận xét kèm được một đề xuất"* | Đích: *"Em giải quyết được một vấn đề thật của lớp"* |
+| **I** | Thấy nhận xét là để giúp, không phải để chê | Dám nêu vấn đề thay vì im lặng chịu |
+| **T** | Nhận xét đủ **1-1-1**; chạy đủ **5 bước GQVĐ** cho một vấn đề nhỏ | 1-1-1 tự nhiên; 5 bước có **≥3 phương án** và có bước kiểm lại |
+| **A** | Nhận xét 1-1-1 **≥3 lần/tuần** | ≥5 lần; và giải quyết trọn 1 vấn đề của Squad, có số liệu |
 
-**BUỔI 1** `G` Đo điểm xuất phát: đọc 10 ảnh biểu cảm → `I` **Phim Câm**: xem 3 phút phim không tiếng, đoán cảm xúc và câu chuyện → `T` **3 kênh đọc**: mặt – cơ thể – giọng; T-DRILL v1–v3: đọc ảnh → đọc video → đọc bạn thật → `A` Nhiệm vụ hỏi thăm; `PSM-K04-M3-01`.
+**BUỔI 1** `G` Thẻ Đích **Nhận Xét Có Đề Xuất** → `I` **Hai Lời Nhận Xét**: *"bài này chán"* và *"phần mở hơi dài, cậu thử bỏ đoạn đầu xem"* — nghe khác nhau thế nào → `T` **`CT-13` phản hồi 1-1-1** + **T-DRILL v1–v2**: nhận xét sản phẩm thật, đếm *số góp ý bạn làm được ngay* → `A` Thẻ 1-1-1; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(giải quyết vấn đề thật)* → `I` **Vấn Đề Của Lớp Mình**: cả lớp nêu, chọn một vấn đề có thật → `T` **`CT-15` 5 bước GQVĐ** + **T-DRILL v3–v4**: chạy đủ 5 bước, bắt buộc **≥3 phương án** → `A` **SHOWCASE**: triển khai phương án đã chọn, hẹn **ngày kiểm lại**.
 
-**BUỔI 2** `G` Báo công + nâng đích: cảm xúc bị giấu → `I` **Trò chơi Mặt Nạ**: HS được giao cảm xúc bí mật phải giấu; các bạn đoán – trải nghiệm việc người ta hay giấu cảm xúc → `T` T-DRILL v4 ở L4: nhận diện mâu thuẫn lời nói – cơ thể ("Mình ổn mà" nhưng vai chùng, mắt đỏ) → `A` **SHOWCASE**: Squad trình bày **Bản đồ Dấu Hiệu** – 10 dấu hiệu cho thấy một người cần được hỏi thăm.
-
-**Thực hành:** `PTH-K04-M3-01` – Phiếu 3 kênh đọc cảm xúc · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-G` kịch – phim câm · **PSM:** hỏi thăm ≥3 người, ghi lại kết quả
-**Đánh giá:** `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-CAM-09`
-**Bắc cầu học tập:** Hiểu nhân vật văn học; xây dựng lớp học quan tâm nhau.
+**Phiếu:** `PTH-K04-N1-07` · **Sứ mệnh:** `PSM-K04-N1-07` · **Rubric:** `R-TUD-01`
+**Bắc cầu:** **nền trực tiếp của `CT-13` và `CT-15`** · mọi hoạt động Squad.
 
 ---
 
-### `K04-M3-02` · VƯỢT QUA NỖI SỢ NÓI TRƯỚC ĐÁM ĐÔNG
-**NL:** M3.5, M4.2 · **Trội:** **I** (G20·I40·T30·A10) · **Hành động:** A2 · **Kit:** DC-KIT-03, DC-KIT-04
+### `K04-N2-01` · LỜI THẬT – LỜI GIỮ KÍN
+**Bài gốc hấp thụ:** #15 Bài học về sự trung thực · #18 Giữ bí mật
+**Nhóm:** N2 · **Trội:** **A** · **Mạch:** M1 · M4 · **Kit:** `DC-KIT-04`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con nói 2 phút trước cả lớp mà giọng không run"* | Đích: *"Con nói trước khối/khán giả lạ và làm họ nhớ"* |
-| **I** | Gọi tên được nỗi sợ của mình và vẫn bước lên | Xung phong nói đầu tiên |
-| **T** | Dùng **4 kỹ thuật ổn định**: hít thở trước khi lên – tư thế đứng vững – nhìn 3 điểm neo – dừng thay vì "ừm"; hoàn thành 2 phút | Hoàn thành trước khán giả lạ; xử lý được sự cố (quên ý, bị cười) mà không bỏ dở |
-| **A** | Nói trước ≥3 nhóm người khác nhau trong 7 ngày | Quay video 2 phút và tự chấm theo rubric |
+| **G** | Đích: *"Em nói thật cả khi nói thật thì thiệt"* | Đích: *"Em phân biệt được bí mật giữ được và bí mật phải kể"* |
+| **I** | Không sợ bị phạt khi nói thật | Hiểu giữ bí mật của bạn là tôn trọng, **trừ khi bạn đang không an toàn** |
+| **T** | Phân loại đúng **9/10 thẻ bí mật** *(giữ được · phải kể · chưa rõ)*; nêu được **3 dấu hiệu bí mật phải kể** | 10/10; và nói được **câu mở lời** khi phải kể một bí mật của bạn |
+| **A** | Nói thật ≥1 lần trong tình huống bất lợi | 3 lần; và biết **báo đúng người** khi gặp bí mật nguy hiểm |
 
-**BUỔI 1** `G` **Thang tự tin 1–10** trước buổi (đo điểm xuất phát) → `I` **Lật Niềm Tin Giới Hạn**: bắt câu *"Em không có khiếu nói"* → tách sự thật/phán xét → tìm phản chứng → viết lại → chạm Lửa 3 → `T` **4 kỹ thuật ổn định**; T-DRILL v1–v3: nói 30" trước 2 bạn → 60" trước Squad → 90" trước nửa lớp → `A` Nhiệm vụ nói trước 3 nhóm; `PSM-K04-M3-02`.
+**BUỔI 1** `G` Thẻ Đích **Hai Loại Bí Mật** → `I` **Cái Cốc Vỡ Không Ai Thấy**: dừng hình cho trẻ quyết → `T` **T-DRILL v1–v2**: phân loại 10 thẻ bí mật → `A` **Ba dấu hiệu bí mật phải kể**; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích → `I` **Bạn Nhờ Em Giữ Một Bí Mật**: bí mật làm bạn không an toàn — dừng hình → `T` **T-DRILL v3–v4**: câu mở lời *"Tớ vẫn là bạn cậu. Nhưng chuyện này tớ phải nói với cô, vì tớ lo cho cậu."* → `A` **SHOWCASE**: **Bảng Ba Dấu Hiệu** dán ở lớp.
 
-**BUỔI 2** `G` Báo công + nâng đích: khán giả lạ; **thang tự tin lần 2** → `I` **Sân Khấu Thật**: bục, micro, đèn, khán giả là lớp khác → `T` T-DRILL v4 ở L4–L5: nói khi bị gây nhiễu nhẹ; xử lý sự cố quên ý (kỹ thuật "dừng – nhìn ghi chú – tiếp tục") → `A` **SHOWCASE**: quay video 2 phút; đối chiếu **thang tự tin trước – sau** (bằng chứng tiến bộ mạnh nhất).
-
-**Thực hành:** `PTH-K04-M3-02` – Thang tự tin trước/sau + rubric tự chấm · 4 vòng · **L5**
-**Trải nghiệm & Sứ mệnh:** `I-A` sân khấu thật · **PSM:** nói trước 3 nhóm người khác nhau
-**Đánh giá:** `PDG-QS-TH`, `PDG-SP`, rubric `R-NOI-03`
-**Bắc cầu học tập:** **Phát biểu, thuyết trình mọi môn**; tăng điểm phần trình bày.
+**Phiếu:** `PTH-K04-N2-01` · **Sứ mệnh:** `PSM-K04-N2-01` · **Rubric:** `R-TCH-01`
+**Bắc cầu:** nối `K01-N2-05` · `K03-N2-05` · **nối thẳng phác đồ tiết lộ**.
+> 🔴 **Ba dấu hiệu bí mật phải kể — dạy nguyên văn:** ① bí mật làm **ai đó không an toàn** · ② bí mật do **người lớn dặn giấu bố mẹ** · ③ bí mật làm **chính em thấy sợ**. Gặp một trong ba, **kể ngay**, và **kể không phải là phản bội**.
 
 ---
 
-### `K04-M3-03` · THUA CUỘC ĐẸP – THẮNG CUỘC ĐẸP
-**NL:** M3.4 · **Trội:** **I** (G20·I35·T30·A15) · **Hành động:** A2 · **Kit:** DC-KIT-03
+### `K04-N2-02` · KHIÊM NHƯỜNG VÀ NỤ CƯỜI
+**Bài gốc hấp thụ:** #16 Bài học về sự kiêu ngạo · #17 Giá trị nụ cười
+**Nhóm:** N2 · **Trội:** **I** · **Mạch:** M4 · **Kit:** `DC-KIT-04`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con thua mà vẫn bắt tay chúc mừng và rút được bài học"* | Đích: *"Con thắng mà không làm bạn thua thấy tệ"* |
-| **I** | Chịu được cảm giác thua mà không bỏ cuộc | Quay lại thi đấu ngay sau khi thua |
-| **T** | Thực hiện **nghi thức sau trận**: bắt tay – nói 1 điều bạn làm tốt – nói 1 điều mình sẽ cải thiện; hoàn thành trong 3/3 lần | Phân tích được nguyên nhân thua bằng dữ liệu, không bằng cảm tính hoặc đổ lỗi |
-| **A** | Áp dụng nghi thức trong 3 tình huống thi đua thật | Ghi **Sổ Bài Học Sau Trận** cho 5 lần thắng/thua |
+| **G** | Đích: *"Em kể việc mình làm được mà không so với ai"* | Đích: *"Em hỏi lại về người kia sau khi kể"* |
+| **I** | Thấy khiêm nhường không phải hạ mình | Vui thật khi bạn làm được việc hay hơn mình |
+| **T** | Kể thành tích **không so sánh** ở 4/5 lượt; nhận diện **4/5 dấu hiệu kiêu ngạo** ở chính mình | 5/5 cả hai; và khen được người vừa hơn mình |
+| **A** | Chào và cười với **≥5 người/ngày** trong 5/7 ngày | 7/7 ngày, có cả người mình chưa quen |
 
-**BUỔI 1** `G` Đích: *"Cách con thua nói lên con là ai"* → `I` **Giải đấu Nhanh** (3 vòng thi đua có thắng thua thật) – tạo cảm xúc thật rồi mới bóc tách → `T` **Nghi thức sau trận 3 bước**; T-DRILL v1–v3 sau mỗi vòng đấu → `A` Phát **Sổ Bài Học Sau Trận**; `PSM-K04-M3-03`.
+**BUỔI 1** `G` Thẻ Đích **Kể Mà Không So** → `I` **Hai Cách Kể**: cùng một thành tích, hai cách nói → `T` **T-DRILL v1–v2**: kể thành tích, đếm *số lần vô tình so sánh* → `A` Bảng chuỗi nụ cười; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(hỏi lại)* → `I` **Thí nghiệm Nụ Cười**: nửa lớp chào có cười, nửa không — đếm phản ứng nhận lại → `T` **T-DRILL v3–v4**: khen người vừa hơn mình; câu chuyển *"Cậu làm thế nào vậy?"* → `A` **SHOWCASE**: *"Bảy ngày cười trước"* — bảng đếm theo Squad.
 
-**BUỔI 2** `G` Báo công + nâng đích: thắng đẹp → `I` **Vòng tròn Thất Bại Của Người Lớn**: HLV/khách mời kể một thất bại lớn và điều học được → `T` T-DRILL v4 ở L4: giải đấu có tính điểm thật, áp lực cao; luyện phân tích nguyên nhân bằng dữ liệu → `A` **SHOWCASE**: Squad trình bày *"Trận thua dạy chúng em điều gì"*; trao *Giải Tinh Thần Thể Thao*.
-
-**Thực hành:** `PTH-K04-M3-03` – Sổ Bài Học Sau Trận · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-B` thi đấu thật · **PSM:** áp dụng nghi thức trong 3 tình huống thi đua thật
-**Đánh giá:** `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-SUC-02`
-**Bắc cầu học tập:** **Xử lý điểm kém**; duy trì động lực sau thất bại – nối K09-M6-03.
+**Phiếu:** `PTH-K04-N2-02` · **Sứ mệnh:** `PSM-K04-N2-02` · **Rubric:** `R-GIA-01`
+**Bắc cầu:** nối `K03-N2-05` *(khiêm tốn)*.
 
 ---
 
-### `K04-M4-01` · THUYẾT TRÌNH 3 PHÚT ĐẦU ĐỜI
-**NL:** M4.2 · **Trội:** **T** (G15·I15·T55·A15) · **Hành động:** A2 · **Kit:** DC-KIT-04
+### `K04-N2-03` · YÊU THƯƠNG NGƯỜI QUANH EM
+**Bài gốc hấp thụ:** #19 Những người hàng xóm · #20 Giá trị của yêu thương
+**Nhóm:** N2 · **Trội:** **I** · **Mạch:** M4 · **Kit:** `DC-KIT-04`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con thuyết trình 3 phút có mở – thân – kết và 1 hình minh hoạ"* | Đích: *"Khán giả nhắc lại đúng thông điệp của con sau 10 phút"* |
-| **I** | Tự tin đứng trước lớp | Chọn chủ đề mình thật sự quan tâm và truyền được nhiệt |
-| **T** | Đủ **5 vi kỹ năng**: mở đầu 15 giây gây chú ý – 3 ý chính – giao mắt ≥5 người – dừng thay vì "ừm" – câu chốt; đúng thời lượng ±15 giây | Có số liệu/dữ kiện; trả lời được 2 câu hỏi từ khán giả; đúng thời lượng ±5 giây |
-| **A** | Thuyết trình lại cho gia đình, quay video | Thuyết trình trong 1 tiết học chính khoá của môn khác |
+| **G** | Đích: *"Em biết tên và làm được 1 việc cho một người hàng xóm"* | Đích: *"Em làm được cho 3 người, có 1 người sống một mình"* |
+| **I** | Thấy khu mình ở là một cộng đồng, không chỉ là chỗ ngủ | Muốn góp phần làm khu mình dễ chịu hơn |
+| **T** | Kể được **≥3 người** quanh nhà và họ làm gì; làm đúng **4 việc giúp hàng xóm an toàn** | ≥5 người; và biết **việc nào không được tự làm** *(vào nhà người khác một mình)* |
+| **A** | Làm **1 việc** cho hàng xóm trong 2 tuần | 3 việc, có 1 việc cho người cao tuổi hoặc sống một mình |
 
-**BUỔI 1** `G` Công bố **rubric thuyết trình 5 vi kỹ năng** trước khi làm → `I` Xem 2 clip: người nói cuốn hút và người nói buồn tẻ – HS tự rút ra tiêu chí → `T` T-DRILL v1–v3: luyện **từng vi kỹ năng riêng** (chỉ luyện mở đầu 15 giây × 3 lượt; chỉ luyện giao mắt; chỉ luyện câu chốt) – đây là điểm mấu chốt của deliberate practice → `A` Chọn chủ đề, làm dàn ý; `PSM-K04-M4-01`.
+**BUỔI 1** `G` Thẻ Đích **Ba Người Quanh Nhà** → `I` **Bản Đồ Khu Em Ở**: vẽ và đánh dấu người mình biết → `T` **T-DRILL v1–v2**: 4 việc giúp an toàn *(chào · nhắc thư · giúp xách nhẹ · gọi người lớn khi cần)* → `A` Phiếu việc cho hàng xóm; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích → `I` **Người Sống Một Mình**: câu chuyện về một cụ già cả tuần không ai nói chuyện cùng → `T` **T-DRILL v3–v4**: bắt chuyện với người lớn tuổi; **ranh giới: không vào nhà một mình, không nhận đồ giá trị** → `A` **SHOWCASE**: **Bản Đồ Tử Tế Của Khu** — dán ở lớp.
 
-**BUỔI 2** `G` Báo công video ở nhà + nâng đích: khán giả nhớ thông điệp → `I` **Khán giả thật**: mời lớp khác/phụ huynh dự → `T` T-DRILL v4 ở L4–L5: thuyết trình đủ 3 phút, có Q&A 2 câu; ghép cả 5 vi kỹ năng → `A` **SHOWCASE**: chấm rubric công khai; **kiểm tra khán giả nhớ gì sau 10 phút** (bằng chứng khách quan nhất).
-
-**Thực hành:** `PTH-K04-M4-01` – Dàn ý + rubric 5 vi kỹ năng · 4 vòng · **L5**
-**Trải nghiệm & Sứ mệnh:** `I-A` sân khấu · **PSM:** thuyết trình cho gia đình, quay video
-**Đánh giá:** `PDG-QS-TH`, `PDG-SP`, `PDG-DD-TH`, rubric `R-NOI-04`
-**Bắc cầu học tập:** **Áp dụng ngay cho thuyết trình các môn**; kỹ năng lõi tới hết lớp 12.
+**Phiếu:** `PTH-K04-N2-03` · **Sứ mệnh:** `PSM-K04-N2-03` · **Rubric:** `R-PHS-01`
+**Bắc cầu:** nối `K03-N2-02` · nền cho dự án phục vụ ở khối 5.
+> 🔴 **Ranh giới an toàn bắt buộc:** trẻ **không vào nhà người khác một mình**, **không nhận tiền hay đồ giá trị**, **không đi đâu cùng người lớn không có trong danh sách của gia đình** — kể cả hàng xóm quen. Nội dung này gửi kèm cho phụ huynh.
 
 ---
 
-### `K04-M4-02` · NĂM VAI TRONG SQUAD
-**NL:** M4.3 · **Trội:** **A** (G20·I15·T35·A30) · **Hành động:** A2 · **Kit:** DC-KIT-04
+### `K04-N2-04` · LỊCH SỰ Ở MỌI NƠI EM ĐẾN
+**Bài gốc hấp thụ:** #21 Ứng xử lịch sự · #24 Ứng xử khi đi dã ngoại
+**Nhóm:** N2 · **Trội:** **A** · **Mạch:** M4 · **Kit:** `DC-KIT-09`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con làm tốt vai được giao và báo cáo được kết quả vai đó"* | Đích: *"Con làm tốt cả 5 vai qua các chuyên đề"* |
-| **I** | Nhận vai không thích mà vẫn làm tốt | Xung phong nhận vai khó nhất |
-| **T** | Thực hiện đúng nhiệm vụ của **1 trong 5 vai**: Đội trưởng Đích – Người Giữ Lửa – Người Chất Vấn – Người Giữ Nhịp – Người Ghi Bằng Chứng | Làm tốt 3 vai khác nhau; hỗ trợ bạn hoàn thành vai của bạn |
-| **A** | Squad hoàn thành nhiệm vụ với **5/5 vai có đóng góp ghi nhận được** | Squad tự xử lý 1 trục trặc mà không cần HLV can thiệp |
+| **G** | Đích: *"Em ứng xử đúng ở 5 nơi công cộng"* | Đích: *"Em nhắc được bạn mà không làm bạn xấu hổ"* |
+| **I** | Thấy lịch sự là cách tôn trọng người lạ | Tự hào vì lớp mình được nhận xét tốt |
+| **T** | Ứng xử đúng ở **4/5 nơi** *(thang máy · rạp · nhà hàng · phương tiện công cộng · bảo tàng)*; dã ngoại đủ **4 luật** | 5/5 nơi; 4/4 luật và **mang hết rác về** |
+| **A** | Giữ đúng ở ≥2 nơi thật trong 2 tuần | ≥4 nơi và có phản hồi của người lớn đi cùng |
 
-**BUỔI 1** `G` Hợp đồng Squad học kỳ: đích chung + chuẩn nội bộ cao hơn chuẩn lớp → `I` **Nhiệm vụ Không Vai**: giao việc phức tạp mà không phân vai – nhóm rối, sau đó bóc tách nguyên nhân → `T` **5 vai + huy hiệu**; T-DRILL v1–v3: 3 nhiệm vụ ngắn, mỗi lần đổi vai, có bảng chấm vai → `A` Bảng luân phiên vai cả học kỳ; `PSM-K04-M4-02`.
+**BUỔI 1** `G` Thẻ Đích **Năm Nơi – Năm Cách** → `I` **Nơi Này Ồn Quá**: mô phỏng 5 nơi trong lớp, trẻ trải nghiệm mức âm lượng phù hợp → `T` **T-DRILL v1–v2**: 10 thẻ tình huống nơi công cộng → `A` Thẻ bỏ túi 5 nơi; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(nhắc bạn)* → `I` **Chuyến Dã Ngoại Có Chuyện**: 8 tình huống nối tiếp → `T` **T-DRILL v3–v4**: 4 luật dã ngoại *(đi theo nhóm · không tách đoàn · không hái/bắt · mang rác về)*; câu nhắc bạn không làm bạn xấu hổ → `A` **SHOWCASE**: **Bộ Luật Dã Ngoại Của Lớp** dùng cho chuyến đi thật.
 
-**BUỔI 2** `G` Báo công + nâng đích: tự xử lý trục trặc → `I` **Đấu trường Squad**: nhiệm vụ lớn 30 phút có tính điểm → `T` T-DRILL v4 ở L4: nhiệm vụ có sự cố cài sẵn (mất 1 thành viên, thiếu vật tư, đổi yêu cầu giữa chừng) → `A` **SHOWCASE**: **mỗi vai báo cáo 1 phút** về phần việc của mình + bằng chứng; bình chọn *Vai Xuất Sắc*.
-
-**Thực hành:** `PTH-K04-M4-02` – Bảng vai & báo cáo vai · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-B` thử thách hợp tác · **PSM:** đảm nhận 1 vai trong công việc gia đình 7 ngày
-**Đánh giá:** `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-NHO-02`
-**Bắc cầu học tập:** **Vận hành nhóm cho mọi dự án học tập** từ lớp 4 đến lớp 12.
+**Phiếu:** `PTH-K04-N2-04` · **Sứ mệnh:** `PSM-K04-N2-04` · **Rubric:** `R-TCH-01`
+**Bắc cầu:** nối `K02-N4-01` · dùng trước mọi chuyến đi thực tế của trường.
 
 ---
 
-### `K04-M4-03` · GIẢI QUYẾT MÂU THUẪN: DỪNG – NGHE – NÓI – CHỐT
-**NL:** M4.4 · **Trội:** **T** (G15·I25·T45·A15) · **Hành động:** A2 · **Kit:** DC-KIT-04
+### `K04-N2-05` · NGHE CHO HẾT – TỪ CHỐI CHO ĐÚNG
+**Bài gốc hấp thụ:** #23 Kỹ năng lắng nghe · #22 Nói lời từ chối
+**Nhóm:** N2 · **Trội:** **T** · **Mạch:** M4 · **Kit:** `DC-KIT-04`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con giải quyết mâu thuẫn mà không cần người lớn"* | Đích: *"Con hoà giải được cho 2 bạn khác"* |
-| **I** | Kiềm được cơn nóng để nghe bạn trước | Tách được vấn đề khỏi con người ("mình giận việc, không ghét bạn") |
-| **T** | Thực hiện đủ **4 bước**: DỪNG (hạ nhiệt) – NGHE (bạn nói trước, tóm lại) – NÓI (dùng "Tôi cảm thấy…") – CHỐT (thống nhất cách khác); giải quyết 2/3 tình huống | 3/3 kể cả mâu thuẫn có 3 bên; tìm được giải pháp cả hai cùng có lợi |
-| **A** | Giải quyết **1 mâu thuẫn thật** trong 7 ngày | Làm trọng tài hoà giải ≥1 vụ; ghi lại kết quả |
+| **G** | Đích: *"Em từ chối được mà vẫn giữ bạn"* | Đích: *"Em từ chối được người em ngại nhất"* |
+| **I** | Không thấy nói không là mất lòng | Hiểu **người bạn thật vẫn ở lại sau lời từ chối** |
+| **T** | Nhắc lại đúng ý ở 4/5 lượt; dùng đủ **3 tầng từ chối** ở 3/4 tình huống | 5/5; 4/4 tình huống và **tầng 3 có rời đi thật** |
+| **A** | Từ chối ≥1 lần trong tuần mà không mất bạn | ≥3 lần, có 1 lần với bạn thân |
 
-**BUỔI 1** `G` Đích + quy tắc an toàn của hoạt động → `I` **Ngân hàng Mâu Thuẫn** ẩn danh của lớp; chọn 3 vụ điển hình → `T` **4 bước**; T-DRILL v1–v3 với 3 tình huống, đóng vai cả hai phía → `A` Chọn 1 mâu thuẫn thật để xử lý; `PSM-K04-M4-03`.
+**BUỔI 1** `G` Thẻ Đích **Ba Tầng Từ Chối** → `I` **Bị Rủ Làm Điều Không Muốn**: kịch dừng-chọn, tình huống hợp khối 4 *(rủ trốn tiết · rủ hùa trêu bạn · rủ chép bài)* → `T` **`CT-11` từ chối 3 tầng** + **T-DRILL v1–v2** → `A` Thẻ 3 tầng; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(người em ngại nhất)* → `I` **Nghe Trước Đã**: nhiều lời rủ nghe hấp dẫn vì mình chưa nghe hết → `T` **T-DRILL v3–v4** ở L3–L4: bị ép 3 lần, có nhóm rủ, có ACT đóng vai → `A` **SHOWCASE**: diễn 3 tầng trước lớp, có **ra vai** sau khi diễn.
 
-**BUỔI 2** `G` Báo công + nâng đích: làm trọng tài → `I` **Vòng tròn Phục Hồi** thật (nếu có vụ việc phù hợp, cả hai bên đồng ý) → `T` T-DRILL v4 ở L4–L5: mâu thuẫn 3 bên; hoà giải cho người khác → `A` **SHOWCASE**: lớp lập **Tổ Hoà Giải Học Sinh** – mỗi Squad cử 1 trọng tài, có quy trình 4 bước dán tường.
-
-**Thực hành:** `PTH-K04-M4-03` – Phiếu 4 bước + nhật ký hoà giải · 4 vòng · **L5**
-**Trải nghiệm & Sứ mệnh:** `I-G` vòng tròn phục hồi · **PSM:** giải quyết 1 mâu thuẫn thật
-**Đánh giá:** `PDG-QS-TH`, `PDG-DD-TH`, rubric `R-GIA-08`
-**Bắc cầu học tập:** Giảm thời gian lớp mất vì mâu thuẫn; nhóm học tập ổn định hơn.
+**Phiếu:** `PTH-K04-N2-05` · **Sứ mệnh:** `PSM-K04-N2-05` · **Rubric:** `R-GIA-01`
+**Bắc cầu:** **nền trực tiếp của `CT-11`** · nối `K01-N2-04` · nền cho áp lực bạn bè ở khối 6–9.
+> ⚠️ **Đóng vai bắt buộc có mật khẩu dừng và bước "ra vai".** Người đóng vai rủ **cấm chạm, cấm chặn đường**. Chi tiết ở `TC-T-010`.
 
 ---
 
-### `K04-M5-01` · SỰ KIỆN & Ý KIẾN
-**NL:** M5.1 · **Trội:** **T** (G15·I20·T50·A15) · **Hành động:** A2 · **Kit:** DC-KIT-05
+### `K04-N2-06` · LỚP HỌC AN LÀNH
+**Bài gốc hấp thụ:** #25 Bạn tốt – bạn xấu · #26 Xây dựng lớp học tích cực · #27 Giá trị hoà bình
+**Nhóm:** N2 · **Trội:** **A** · **Mạch:** M4 · **Kit:** `DC-KIT-04`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con phân biệt được điều gì là sự kiện, điều gì là ý kiến"* | Đích: *"Con hỏi được câu hỏi làm lộ ra ý kiến đội lốt sự kiện"* |
-| **I** | Không tin ngay vì "ai cũng nói thế" | Dám nói *"Bạn có bằng chứng không?"* một cách lịch sự |
-| **T** | Phân loại đúng **10/12 câu**; nêu **2 câu hỏi kiểm chứng** cho một khẳng định | 12/12; nhận ra câu vừa có sự kiện vừa có ý kiến và tách được |
-| **A** | Soi **1 mẩu tin/quảng cáo** trong 7 ngày, tách sự kiện – ý kiến | Soi 3 mẩu; phát hiện 1 khẳng định không có bằng chứng |
+| **G** | Đích: *"Lớp em có bộ luật do chính lớp viết và giữ được"* | Đích: *"Em giải quyết được xung đột mà không cần cô"* |
+| **I** | Thấy lớp là chỗ mình góp phần tạo ra | Chủ động làm dịu khi lớp căng thẳng |
+| **T** | Nêu **3 dấu hiệu bạn tốt** và **3 dấu hiệu quan hệ độc hại**; áp dụng **4 bước làm hoà** | Cả hai bộ dấu hiệu đầy đủ; làm hoà thành công 1 ca thật |
+| **A** | Lớp giữ được bộ luật **≥3 tuần** | ≥8 tuần, có bảng theo dõi và có điều chỉnh luật |
 
-**BUỔI 1** `G` Đích: *"Kính lúp sự thật"* → `I` **Bảng Tin Lớp Học** cài sẵn: 6 tin, một nửa là ý kiến trá hình – HS đọc và tranh luận → `T` Tiêu chí phân biệt (kiểm chứng được / phụ thuộc người nói); T-DRILL v1–v3 với 12 câu → `A` Nhiệm vụ soi tin; `PSM-K04-M5-01`.
+**BUỔI 1** `G` Thẻ Đích **Luật Do Lớp Viết** → `I` **Lớp Em Đang Thế Nào**: khảo sát ẩn danh 5 câu về không khí lớp → `T` **T-DRILL v1–v2**: nhận diện bạn tốt và quan hệ độc hại qua 10 thẻ → `A` Dự thảo bộ luật lớp; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(dự thảo luật)* → `I` **Hoà Bình Bắt Đầu Từ Đâu**: hai đoạn kịch — lớp có luật và lớp không → `T` **`CT-10` 4 bước làm hoà** + **T-DRILL v3–v4** với ca thật nhẹ → `A` **SHOWCASE**: **Hiến Chương Lớp** cả lớp ký, treo cả năm.
 
-**BUỔI 2** `G` Báo công + nâng đích: câu hỗn hợp → `I` **Phiên Toà Nhỏ**: một khẳng định gây tranh cãi của lớp, hai bên đưa bằng chứng → `T` T-DRILL v4 ở L4: soi bài quảng cáo/bài đăng thật, tách sự kiện – ý kiến – bằng chứng → `A` **SHOWCASE**: Squad trình bày **1 tin đã soi** với bảng 3 cột (Sự kiện | Ý kiến | Bằng chứng thiếu).
-
-**Thực hành:** `PTH-K04-M5-01` – Bảng 3 cột soi thông tin · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-D` điều tra thông tin · **PSM:** soi 1 mẩu tin/quảng cáo, nộp bảng 3 cột
-**Đánh giá:** `PDG-QS-TH`, rubric `R-TUD-09`
-**Bắc cầu học tập:** Đọc hiểu văn bản thông tin; nền tảng nghiên cứu & chống tin giả (K07-M7-01).
+**Phiếu:** `PTH-K04-N2-06` · **Sứ mệnh:** `PSM-K04-N2-06` · **Rubric:** `R-NHO-01`
+**Bắc cầu:** nối `K03-N3-02` · công cụ [`16/02 Hiến chương lớp`](../16-KHO-TINH-HUONG-VA-CONG-CU/02-BO-CONG-CU-LOI-GEN-VIET.md).
+> 🔴 **Không dán nhãn "bạn xấu" lên học sinh nào trong lớp.** Cụm này dạy **nhận diện hành vi**, không dạy phân loại người. Câu chuẩn: *"Chúng ta nhận ra **hành vi** không ổn — không gọi tên bạn nào cả."*
 
 ---
 
-### `K04-M5-02` · QUY TRÌNH 5 BƯỚC GIẢI QUYẾT VẤN ĐỀ
-**NL:** M5.3 · **Trội:** **T** (G20·I15·T50·A15) · **Hành động:** A2 · **Kit:** DC-KIT-05
+### `K04-N3-01` ⚠️ · THÂN THỂ EM – KHÔNG AI ĐƯỢC PHÉP
+**Bài gốc hấp thụ:** #29 Hành vi quấy rối, xâm hại
+**Nhóm:** N3 · **Trội:** **T** · **Mạch:** M2 · **Kit:** `DC-KIT-02`
+
+> 🔴 **CỤM ĐI RIÊNG — KHÔNG GHÉP VỚI BẤT KỲ BÀI NÀO.** Đây là quyết định có chủ đích: chủ đề này cần **trọn 180 phút × 2 buổi** và cần lớp ở trạng thái tâm lý riêng. Ghép nó với một chủ đề khác là làm hỏng cả hai.
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con giải quyết vấn đề theo quy trình, không theo cảm tính"* | Đích: *"Con giải quyết được vấn đề của nhóm/lớp"* |
-| **I** | Kiên trì qua bước thử nghiệm dù chưa thành công ngay | Coi vấn đề là cơ hội |
-| **T** | Thực hiện đủ **5 bước**: ① Xác định vấn đề gốc ② Sinh ≥3 phương án ③ Chọn theo tiêu chí ④ Thử nghiệm ⑤ Đánh giá & cải tiến | Dùng **5-Whys** tìm gốc; đặt tiêu chí có trọng số; cải tiến qua ≥2 vòng |
-| **A** | Giải quyết trọn vẹn **1 vấn đề thật** trong 2 tuần, có báo cáo 5 bước | Vấn đề có nhiều bên liên quan; kết quả đo được |
+| **G** | Đích: *"Em nhận ra hành vi không được phép và biết làm gì"* | Đích: *"Em kể được, và biết kể với ai"* |
+| **I** | Không xấu hổ, không sợ bị mắng | Tin chắc **lỗi luôn thuộc về người làm sai** |
+| **T** | Nhận đúng **9/10 thẻ hành vi**; làm đủ **4 bước** *(nói KHÔNG · rời đi · kể ngay · kể tiếp nếu chưa ai tin)* | 10/10; và biết **kể tiếp người thứ hai** nếu người thứ nhất không xử lý |
+| **A** | **Bàn Tay Tin Cậy** đủ 3 tên, có **1 người ngoài gia đình** | 3 tên + biết **111** + biết đường tới phòng tâm lý / y tế của trường |
 
-**BUỔI 1** `G` Mỗi Squad chọn **1 vấn đề thật của lớp** → `I` **Thử thách Trứng Rơi** (bảo vệ trứng rơi từ độ cao): bắt buộc chạy đủ 5 bước, có 2 vòng thử → `T` T-DRILL v1–v3: chạy quy trình cho 3 vấn đề nhỏ; luyện 5-Whys → `A` Phát **Phiếu 5 Bước**; `PSM-K04-M5-02`.
+**BUỔI 1** `G` Thẻ Đích *"Thân thể em – không ai được phép"* → `I` **Vòng Tròn An Toàn nâng cấp**: dùng **hình vẽ và búp bê**; giới thiệu khái niệm **quấy rối bằng lời và bằng ánh mắt**, không chỉ bằng động chạm → `T` **T-DRILL v1–v2**: 10 thẻ hành vi *(được phép · không được phép · chưa rõ)* → `A` Cập nhật Bàn Tay Tin Cậy, **bắt buộc có 1 người ngoài gia đình**; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(kể tiếp nếu chưa ai tin)* → `I` **Khi Người Lớn Không Tin Em**: tình huống khó nhất và ít được dạy nhất — kể mà không được tin thì làm gì → `T` **T-DRILL v3–v4** ở L4: 4 bước, có bấm giờ; luyện **câu mở lời** *("Con cần nói với cô một chuyện. Con thấy không ổn.")* → `A` **SHOWCASE**: dán Bàn Tay Tin Cậy vào Hộ chiếu; công bố **kênh báo của trường** và **111**.
 
-**BUỔI 2** `G` Báo công tiến độ + nâng đích: tiêu chí có trọng số → `I` **Hiện trường Vấn Đề Lớp Học**: Squad đi quan sát, phỏng vấn để tìm gốc → `T` T-DRILL v4 ở L4–L5: giải quyết vấn đề có nhiều bên liên quan (giờ ra chơi ồn, xếp hàng ăn lộn xộn) → `A` **SHOWCASE**: báo cáo 5 bước + **kết quả đo được trước – sau**.
-
-**Thực hành:** `PTH-K04-M5-02` – Phiếu Quy trình 5 Bước · 4 vòng · **L5**
-**Trải nghiệm & Sứ mệnh:** `I-C`/`I-D` chế tác + điều tra · **PSM:** giải quyết 1 vấn đề thật ở nhà theo 5 bước
-**Đánh giá:** `PDG-QS-TH`, `PDG-SP`, rubric `R-TUD-10`
-**Bắc cầu học tập:** Quy trình giải bài Toán khó; nền tảng Design Thinking (K08-M5-03).
+**Phiếu:** `PTH-K04-N3-01` · **Sứ mệnh:** `PSM-K04-N3-01` · **Rubric:** `R-ATT-01`
+**Bắc cầu:** nối `K01-N3-02` · `K02-N3-06` · `K03-N3-01` · **nối thẳng phác đồ tiết lộ**.
+> 🔴 **Điều kiện tiên quyết để dạy cụm này:** HLV **đã tập huấn** về bảo vệ trẻ em · trường **đã có kênh báo** hoạt động được · **có người của bộ phận tâm lý sẵn sàng** trong và sau buổi. Thiếu một điều kiện thì **hoãn**, không dạy nửa vời.
+> 🔴 **Câu HLV phải nói ít nhất hai lần:** *"KHÔNG. Lỗi luôn thuộc về người làm sai. Em không bao giờ có lỗi trong chuyện này."*
+> 🔴 **Điểm mới quan trọng nhất của khối 4:** dạy **kể tiếp người thứ hai**. Rất nhiều trẻ kể một lần, không được tin, rồi im lặng mãi mãi. Câu chuẩn: *"Nếu người đầu tiên chưa giúp được em, em kể tiếp người thứ hai. Em kể đến khi có người giúp."*
+> 🔴 **Nếu có trẻ tiết lộ:** không hỏi thêm chi tiết, không hứa giữ bí mật, ghi nguyên văn lời trẻ, chuyển **ngay trong ngày** theo [phác đồ](../16-KHO-TINH-HUONG-VA-CONG-CU/06-PHAC-DO-XU-LY-CHUAN.md).
 
 ---
 
-### `K04-M5-03` · SÁNG TẠO: PHÁ KHUÔN – KẾT HỢP LẠ
-**NL:** M5.2 · **Trội:** **I** (G15·I35·T35·A15) · **Hành động:** A2 · **Kit:** DC-KIT-05
+### `K04-N3-02` · CƠ THỂ LỚN LÊN – NAM NỮ NHƯ NHAU
+**Bài gốc hấp thụ:** #28 Sức khoẻ tuổi dậy thì · #33 Bình đẳng giới
+**Nhóm:** N3 · **Trội:** **I** · **Mạch:** M2 · **Kit:** `DC-KIT-02`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con nghĩ ra 10 ý tưởng trong 5 phút"* | Đích: *"Con có 1 ý tưởng vừa lạ vừa dùng được"* |
-| **I** | Không tự kiểm duyệt ý tưởng của mình | Dám đưa ý tưởng "điên rồ" trước lớp |
-| **T** | Dùng **3 kỹ thuật**: kết hợp ngẫu nhiên – đảo ngược – ràng buộc cực đoan; sinh ≥10 ý trong 5 phút | ≥20 ý; chọn được ý vừa **mới** vừa **khả thi** và giải thích được |
-| **A** | Áp dụng 1 ý tưởng vào việc thật trong 7 ngày | Sản phẩm được người khác dùng/khen |
+| **G** | Đích: *"Em biết cơ thể sẽ thay đổi và đó là bình thường"* | Đích: *"Em hỏi được người lớn khi có thắc mắc"* |
+| **I** | Không sợ, không xấu hổ về thay đổi của cơ thể | Không cười vào thay đổi của bạn |
+| **T** | Nêu đúng **4/6 thay đổi** sẽ xảy ra; nhận đúng **8/10 thẻ định kiến giới** | 6/6; 10/10 và nói được **vì sao định kiến đó sai** |
+| **A** | Có **1 người lớn** em hỏi được về chuyện cơ thể | 1 người + biết chỗ tra thông tin đáng tin |
 
-**BUỔI 1** `G` Đích + luật vàng: **không phán xét ý tưởng trong lúc sinh ý** → `I` **Cuộc thi 30 Công Dụng Của Cái Kẹp Giấy** – phá rào tự kiểm duyệt → `T` T-DRILL v1–v3: 3 kỹ thuật, mỗi kỹ thuật 1 vòng bấm giờ, đếm số ý → `A` Chọn 1 ý áp dụng thật; `PSM-K04-M5-03`.
+**BUỔI 1** `G` Thẻ Đích **Cơ Thể Đang Lớn** → `I` **Hộp Câu Hỏi Ẩn Danh**: trẻ viết thắc mắc, HLV trả lời **đúng khoa học, đúng lứa tuổi** → `T` **T-DRILL v1–v2**: nhận diện 6 thay đổi; **vệ sinh cá nhân tuổi dậy thì** → `A` Chọn người lớn để hỏi; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích → `I` **Mười Câu Nói Quen Tai**: *"con gái thì phải…"*, *"con trai không được khóc"* — trẻ nhận diện định kiến → `T` **T-DRILL v3–v4**: bác bỏ định kiến bằng ví dụ thật; câu chặn *"Cái đó ai cũng làm được."* → `A` **SHOWCASE**: **Bảng "Ai cũng làm được"** — mỗi ô một việc từng bị gán cho một giới.
 
-**BUỔI 2** `G` Báo công + nâng đích: lạ **và** dùng được → `I` **Ràng Buộc Cực Đoan**: thiết kế cặp sách cho người không có tay / lớp học không có bàn ghế → `T` T-DRILL v4 ở L4: sinh ý dưới ràng buộc + sàng lọc bằng ma trận Mới × Khả thi → `A` **SHOWCASE**: **Chợ Ý Tưởng** – các Squad "bán" ý tưởng, lớp bỏ phiếu bằng phiếu bình chọn.
-
-**Thực hành:** `PTH-K04-M5-03` – Phiếu sinh ý + ma trận Mới × Khả thi · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-C` chế tác sáng tạo · **PSM:** áp dụng 1 ý tưởng vào việc thật
-**Đánh giá:** `PDG-QS-TH`, `PDG-SP`, rubric `R-STA-02`
-**Bắc cầu học tập:** Tập làm văn sáng tạo; tìm nhiều cách giải Toán; Mĩ thuật.
+**Phiếu:** `PTH-K04-N3-02` · **Sứ mệnh:** `PSM-K04-N3-02` · **Rubric:** `R-SKH-01`
+**Bắc cầu:** nối `K04-N1-01` · nền cho sức khoẻ sinh sản ở khối 8.
+> 🔴 **Quy tắc dạy nội dung dậy thì ở khối 4:**
+> ① **Dạy chung cả lớp phần khái quát; tách nhóm chỉ khi nói về vệ sinh cá nhân riêng của từng giới** — và **thời lượng hai nhóm phải bằng nhau**.
+> ② **Hộp câu hỏi ẩn danh là bắt buộc.** Không gọi tên ai trả lời.
+> ③ **Trả lời đúng khoa học, dùng đúng tên bộ phận cơ thể.** Không dùng từ lóng, không né tránh.
+> ④ **Cấm mọi lời trêu chọc về cơ thể** trong và sau buổi — HLV nói rõ và xử lý ngay nếu xảy ra.
+> ⑤ **Gửi trước nội dung cho phụ huynh** và có phương án cho gia đình muốn tự dạy phần này ở nhà.
 
 ---
 
-### `K04-M6-01` · GHI CHÉP CORNELL
-**NL:** M6.2 · **Trội:** **T** (G15·I15·T55·A15) · **Hành động:** A2 · **Kit:** DC-KIT-06
+### `K04-N3-03` ⚠️ · RA KHỎI TẦM MẮT NGƯỜI LỚN
+**Bài gốc hấp thụ:** #31 Phòng chống bắt cóc · #32 An toàn bơi lội
+**Nhóm:** N3 · **Trội:** **T** · **Mạch:** M2 · **Kit:** `DC-KIT-02`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con ghi Cornell được 1 bài giảng 15 phút"* | Đích: *"Con dùng vở Cornell để ôn và nhớ được ≥80%"* |
-| **I** | Thấy ghi chép là công cụ của mình, không phải nghĩa vụ | Tự thiết kế biến thể phù hợp với môn mình học |
-| **T** | Chia đúng **3 vùng** (ghi chính – từ khoá/câu hỏi – tóm tắt); viết bằng **từ khoá & ký hiệu**, không chép nguyên văn; hoàn thành ô tóm tắt trong 3 phút cuối | Ghi kịp bài giảng nhanh; đặt ≥5 câu hỏi ở cột trái; dùng để tự kiểm tra |
-| **A** | Ghi Cornell cho **≥5 tiết học** trong 7 ngày | Ghi cả tuần cho ≥3 môn; báo cáo hiệu quả khi ôn |
+| **G** | Đích: *"Em không đi đâu một mình mà không ai biết"* | Đích: *"Em xử đúng cả khi bị dụ bằng thứ em rất muốn"* |
+| **I** | Không sợ hãi, chỉ có quy tắc rõ | Bình tĩnh giúp được bạn nhỏ hơn |
+| **T** | Nhớ và dùng **mật khẩu gia đình**; nêu đúng **5 quy tắc an toàn nước** | Xử đúng 6/6 tình huống dụ dỗ; và biết **cứu đuối gián tiếp** *(gọi – ném – không nhảy xuống)* |
+| **A** | Luôn báo **đi đâu, với ai, về lúc nào** — 5/7 ngày | 7/7 ngày, thành nếp tự động |
 
-**BUỔI 1** `G` Đo điểm xuất phát: ghi 1 bài giảng 5 phút theo cách cũ → `I` **So Sánh 3 Trang Vở** (chép nguyên văn / gạch đầu dòng lộn xộn / Cornell): thử nhớ lại sau 5 phút → `T` **3 vùng Cornell** + bộ ký hiệu viết tắt; T-DRILL v1–v3: ghi 3 đoạn giảng tăng dần tốc độ → `A` Chuẩn bị vở Cornell; `PSM-K04-M6-01`.
+**BUỔI 1** `G` Thẻ Đích **Ba Thông Tin Trước Khi Đi** → `I` **Lời Dụ Nghe Rất Hợp Lý**: kịch dừng-chọn — dụ bằng thú cưng, bằng game, bằng *"mẹ nhờ"* → `T` **T-DRILL v1–v2**: mật khẩu gia đình; báo 3 thông tin → `A` Phiếu **Mật Khẩu & Ba Thông Tin**; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(gia đình đã thống nhất mật khẩu chưa)* → `I` **Nước Không Báo Trước**: vì sao đuối nước xảy ra nhanh và im lặng → `T` **T-DRILL v3–v4**: **5 quy tắc nước** *(không bơi một mình · không bơi chỗ lạ · khởi động · không đùa dìm nhau · không cứu bằng cách nhảy xuống)*; luyện **gọi – ném – không nhảy** → `A` **SHOWCASE**: **Bảng An Toàn Hè** gửi về gia đình.
 
-**BUỔI 2** `G` Báo công 5 tiết + nâng đích: dùng để ôn → `I` **Bài giảng Tốc Độ**: HLV giảng nhanh 10 phút – HS phải chắt lọc, không thể chép hết → `T` T-DRILL v4 ở L4: ghi bài giảng thật của môn khác; che cột phải, dùng cột trái tự kiểm tra → `A` **SHOWCASE**: triển lãm vở Cornell; **kiểm tra nhớ lại** để chứng minh hiệu quả.
-
-**Thực hành:** `PTH-K04-M6-01` – Mẫu trang Cornell + checklist 3 vùng · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-F` thí nghiệm học tập · **PSM:** ghi Cornell cho ≥5 tiết, nộp vở
-**Đánh giá:** `PDG-QS-TH`, `PDG-SP`, rubric `R-HOC-11`
-**Bắc cầu học tập:** **Dùng cho toàn bộ các môn tới hết lớp 12** – một trong những kỹ thuật có tác động lớn nhất.
+**Phiếu:** `PTH-K04-N3-03` · **Sứ mệnh:** `PSM-K04-N3-03` · **Rubric:** `R-ATT-01`
+**Bắc cầu:** nối `K02-N3-07` · `K03-N3-06`.
+> 🔴 **Cụm này KHÔNG thay khoá bơi an toàn.** Nội dung ở đây là **quy tắc và ứng xử**, không phải kỹ năng bơi. Trường có điều kiện nên tổ chức khoá bơi riêng do huấn luyện viên bơi phụ trách.
+> 🔴 **Dạy nguyên văn: trẻ em KHÔNG cứu người đuối nước bằng cách nhảy xuống.** Ba việc trẻ làm: **gọi to người lớn · ném vật nổi · không xuống nước**. Đây là nội dung cứu mạng, không được rút gọn.
+> ⚠️ **Không dùng tin tức, ảnh, video thật về vụ bắt cóc hay đuối nước.**
 
 ---
 
-### `K04-M6-02` · PHIÊN TẬP TRUNG 25 PHÚT
-**NL:** M6.1 · **Trội:** **A** (G20·I15·T35·A30) · **Hành động:** A2 · **Kit:** DC-KIT-06
+### `K04-N3-04` · SƠ CỨU BA TÌNH HUỐNG THƯỜNG GẶP
+**Bài gốc hấp thụ:** #30 Kỹ năng xử lý khi bị hóc · #37 Cách xử lý khi bị bỏng · #38 Xử lý khi bị chuột rút
+**Nhóm:** N3 · **Trội:** **T** · **Mạch:** M2 · **Kit:** `DC-KIT-02`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con học 25 phút liên tục, ≤2 lần xao nhãng"* | Đích: *"Con làm 3 phiên liên tiếp trong 1 buổi tối"* |
-| **I** | Tin rằng tập trung là kỹ năng luyện được | Tự bảo vệ phiên học trước lời rủ rê |
-| **T** | Vận hành đúng **quy trình phiên**: dọn bàn – tắt thông báo – ghi mục tiêu phiên – hẹn giờ – ghi số lần xao nhãng – nghỉ 5 phút; đạt 25 phút, ≤2 lần xao nhãng | ≤1 lần; nhận ra nguồn xao nhãng chính của mình và loại bỏ nó |
-| **A** | **≥10 phiên** trong 7 ngày, có nhật ký phiên | ≥20 phiên; biểu đồ cho thấy số lần xao nhãng giảm |
+| **G** | Đích: *"Em xử đúng bước đầu và gọi được người lớn"* | Đích: *"Em xử đúng cả ba tình huống dưới sức ép thời gian"* |
+| **I** | Không hoảng khi thấy người khác gặp nạn | Bình tĩnh phân công người gọi cấp cứu |
+| **T** | Làm đúng **bước đầu** của cả 3 tình huống; gọi cấp cứu đủ **3 thông tin** | 3/3 đúng và nhanh; và biết **việc nào tuyệt đối không làm** |
+| **A** | Biết vị trí **hộp sơ cứu** ở lớp và ở nhà | Biết vị trí + số cấp cứu **115** + đường tới trạm y tế gần nhất |
 
-**BUỔI 1** `G` Đo điểm xuất phát: 1 phiên 25 phút, đếm số lần xao nhãng → `I` **Bản đồ Xao Nhãng**: cả lớp thống kê nguồn xao nhãng phổ biến nhất – HS nhận ra kẻ thù chung → `T` **Quy trình 6 bước phiên**; T-DRILL v1–v3: 3 phiên ngắn dần tăng độ dài 10 → 15 → 25 phút → `A` Phát **Nhật ký Phiên**; `PSM-K04-M6-02`.
+**BUỔI 1** `G` Thẻ Đích **Ba Tình Huống – Ba Bước Đầu** → `I` **Ai Gọi, Ai Làm**: mô phỏng — không phân công thì ai cũng tưởng người khác gọi → `T` **T-DRILL v1–v2**: **hóc** *(ho mạnh · vỗ lưng · gọi người lớn — không móc họng)*; **bỏng** *(làm mát bằng nước sạch 15–20 phút · không bôi kem đánh răng, nước mắm, mỡ · không chọc vỡ bọng nước)* → `A` Thẻ bỏ túi 3 tình huống; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công → `I` **Chuột Rút Giữa Sân**: mô phỏng → `T` **T-DRILL v3–v4**: **chuột rút** *(dừng vận động · kéo giãn nhẹ · xoa ấm · uống nước)*; gọi **115** đủ 3 thông tin, có bấm giờ → `A` **SHOWCASE**: **Góc Sơ Cứu Của Lớp** — vị trí hộp, ai giữ, kiểm hạn dùng.
 
-**BUỔI 2** `G` Báo công số phiên + nâng đích: 3 phiên liên tiếp → `I` **Phòng Học Yên Lặng** (mô phỏng thư viện) – trải nghiệm môi trường tối ưu → `T` T-DRILL v4 ở L4: phiên có cám dỗ cài sẵn (điện thoại rung, bạn rủ, tiếng ồn) → `A` **SHOWCASE**: biểu đồ tập trung Squad; trao *Huy hiệu Tập Trung Sâu*.
-
-**Thực hành:** `PTH-K04-M6-02` – Nhật ký Phiên (10 phiên) · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-F` thí nghiệm hành vi · **PSM:** ≥10 phiên trong 7 ngày, phụ huynh ký
-**Đánh giá:** `PDG-QS-TH`, `PDG-PH-01`, rubric `R-HOC-12`
-**Bắc cầu học tập:** **Chỉ số 3T – Tập trung**; nền tảng cho học sâu 40' (K06), 60–90' (K10).
+**Phiếu:** `PTH-K04-N3-04` · **Sứ mệnh:** `PSM-K04-N3-04` · **Rubric:** `R-ATT-01`
+**Bắc cầu:** nối `K02-N3-03` · `K01-N3-04`.
+> 🔴 **Ba điều tuyệt đối không dạy sai — HLV kiểm lại trước buổi:** ① **Bỏng: không bôi kem đánh răng, nước mắm, mỡ, thuốc lá.** Chỉ làm mát bằng **nước sạch mát 15–20 phút**. ② **Hóc: không móc họng, không dốc ngược trẻ lớn.** ③ **Trẻ khối 4 không làm thủ thuật Heimlich cho người khác** — chỉ **gọi người lớn** và **ho mạnh** nếu chính mình bị hóc nhẹ.
+> 🔴 **Mọi mô phỏng dùng mô hình hoặc búp bê.** Không dùng dụng cụ y tế thật, không dùng nước nóng thật, không dùng máu giả trông thật.
 
 ---
 
-### `K04-M6-03` · TRUY HỒI CHỦ ĐỘNG & LẶP NGẮT QUÃNG
-**NL:** M6.2, M6.3 · **Trội:** **T** (G20·I15·T50·A15) · **Hành động:** A2 · **Kit:** DC-KIT-06
+### `K04-N3-05` · ÁP LỰC HỌC TẬP – EM CÂN BẰNG ĐƯỢC
+**Bài gốc hấp thụ:** #34 Ứng phó với căng thẳng trong học tập · #35 Giải quyết tình huống trong học tập · #36 Giải trí lành mạnh
+**Nhóm:** N3 · **Trội:** **A** · **Mạch:** M3 · M6 · **Kit:** `DC-KIT-03`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con ôn theo lịch 1–3–7 ngày thay vì ôn dồn"* | Đích: *"Con nhớ được sau 30 ngày"* |
-| **I** | Tin vào phương pháp dù ban đầu thấy "khó hơn đọc lại" | Kiên trì đủ 3 chu kỳ để thấy kết quả |
-| **T** | Lập **lịch ôn 1–3–7**; tự kiểm tra không nhìn sách; đánh dấu **3 mức** (thuộc / lơ mơ / chưa thuộc) và ưu tiên ôn mức yếu | Lịch 1–3–7–15–30; điều chỉnh khoảng cách theo độ khó từng nội dung |
-| **A** | Áp dụng cho **1 môn** trong 3 tuần, có bảng theo dõi | Áp dụng 2 môn; có bằng chứng điểm số cải thiện |
+| **G** | Đích: *"Em nhận ra mình đang căng và biết hạ xuống"* | Đích: *"Em giữ được cân bằng cả trong tuần thi"* |
+| **I** | Không thấy căng thẳng là dấu hiệu mình kém | Nói được với người lớn khi quá tải |
+| **T** | Nhận đúng **4/5 dấu hiệu căng thẳng** trong cơ thể mình; dùng đủ **3 cách hạ** *(thở · vận động · nói ra)* | 5/5; và **thiết kế lại lịch** khi thấy quá tải |
+| **A** | Dùng ≥1 cách hạ **≥3 lần/tuần** | ≥5 lần; và có **≥3 hoạt động giải trí lành mạnh** đang duy trì |
 
-**BUỔI 1** `G` Đích + **đường cong quên** vẽ trên bảng → `I` **Thí nghiệm Hai Nhóm** (ôn dồn vs ôn ngắt quãng), kiểm tra ngay và hẹn kiểm tra lại sau 7 ngày → `T` **Lịch 1–3–7** + hệ 3 mức đánh dấu; T-DRILL v1–v3: lập lịch, tự kiểm tra, phân loại → `A` Phát **Bảng Ôn 1–3–7**; `PSM-K04-M6-03`.
+**BUỔI 1** `G` Thẻ Đích **Năm Dấu Hiệu Của Em** → `I` **Cái Bình Đầy**: mô hình — đổ thêm nước vào bình đã đầy thì gì xảy ra → `T` **T-DRILL v1–v2**: nhận dấu hiệu trong cơ thể; thở 4-4-4 → `A` Danh sách **3 cách hạ của em**; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(tuần thi)* → `I` **Giải Trí Nạp Lại và Giải Trí Rút Cạn**: so hai loại — chơi ngoài trời với lướt màn hình liên tục → `T` **T-DRILL v3–v4**: thiết kế lại lịch tuần thi; **`CT-03` gấp × quan trọng** bản đơn giản → `A` **SHOWCASE**: **Bảng Cân Bằng Của Lớp** — bốn mảng, mỗi em tự chấm *(riêng tư)*.
 
-**BUỔI 2** `G` **Kiểm tra lại nội dung buổi 1 sau 7 ngày** – bằng chứng thuyết phục nhất; nâng đích: 1–3–7–15–30 → `I` **Bảng Xếp Hạng Trí Nhớ Squad** (so với chính mình tuần trước) → `T` T-DRILL v4 ở L4: lập lịch ôn cho 1 tuần có kiểm tra thật; xử lý khi lịch bị vỡ → `A` **SHOWCASE**: mỗi HS trình bày **lịch ôn 3 tuần tới** cho môn mình chọn.
-
-**Thực hành:** `PTH-K04-M6-03` – Bảng Ôn 1–3–7 · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-F` thí nghiệm học tập 3 tuần · **PSM:** áp dụng cho 1 môn, ghi bảng theo dõi
-**Đánh giá:** `PDG-QS-TH`, rubric `R-HOC-13`
-**Bắc cầu học tập:** **Kỹ thuật có tác động lớn nhất tới điểm số dài hạn**; nền tảng ôn thi K08, K09, K12.
+**Phiếu:** `PTH-K04-N3-05` · **Sứ mệnh:** `PSM-K04-N3-05` · **Rubric:** `R-CAM-01`
+**Bắc cầu:** nối `K01-N3-01` · nền cho `CT-39` bánh xe cân bằng ở khối 11.
+> 🔴 **Dấu hiệu cần chuyển bộ phận tâm lý:** căng thẳng kéo dài **>2 tuần** · mất ngủ · bỏ ăn · nói những câu về việc biến mất · không còn hứng thú với mọi thứ. HLV **không tự tư vấn**, chuyển theo quy trình và nhắc **111**.
+> ⚠️ **Nguyên nhân áp lực học tập ở khối 4 thường đến từ người lớn.** Bản gửi phụ huynh phải nói rõ điều này, kèm đề nghị cụ thể về kỳ vọng và lịch học thêm.
 
 ---
 
-### `K04-M7-01` · MẬT KHẨU MẠNH & BẢO VỆ TÀI KHOẢN
-**NL:** M7.1 · **Trội:** **T** (G15·I20·T50·A15) · **Hành động:** A2 · **Kit:** DC-KIT-07
+### `K04-N4-01` · NÓI THAY CHO MÔI TRƯỜNG SỐNG
+**Bài gốc hấp thụ:** #42 Thuyết trình chủ đề ô nhiễm tiếng ồn · #43 Thuyết trình chủ đề bảo vệ động vật
+**Nhóm:** N4 · **Trội:** **T** · **Mạch:** M8 · M4 · **Kit:** `DC-KIT-08`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Tài khoản của con được bảo vệ đúng cách"* | Đích: *"Con giúp gia đình bảo vệ tài khoản"* |
-| **I** | Coi bảo mật là trách nhiệm của mình | Chủ động rà soát định kỳ |
-| **T** | Tạo mật khẩu đạt 4 tiêu chí bằng kỹ thuật câu bí mật; **bật xác thực 2 lớp** (có hướng dẫn); nhận ra **4/5 dấu hiệu tài khoản bị xâm nhập** | Quản lý 5 mật khẩu khác nhau an toàn; xử lý đúng quy trình khi nghi bị hack |
-| **A** | Rà soát & củng cố **≥2 tài khoản** cùng bố mẹ | Lập **Sổ Bảo Mật Gia Đình** (không ghi mật khẩu trực tiếp) |
+| **G** | Đích: *"Em thuyết trình 2 phút có số liệu"* | Đích: *"Em đề xuất được một việc trường mình làm được"* |
+| **I** | Thấy mình nói được về việc lớn | Muốn làm chứ không chỉ muốn nói |
+| **T** | Thuyết trình đủ **4 phần** *(vấn đề · số liệu · nguyên nhân · đề xuất)*; **tự đo được ≥1 số liệu** | 4/4 và trả lời được 2 câu hỏi; số liệu đo bằng **≥2 cách** |
+| **A** | Làm **1 việc** giảm ồn hoặc bảo vệ động vật | Giữ 4 tuần, có số liệu trước – sau |
 
-**BUỔI 1** `G` Đích + đo điểm xuất phát (chấm độ mạnh mật khẩu hiện tại – ẩn danh) → `I` **Mô phỏng Bị Hack**: HLV trình diễn hậu quả khi tài khoản bị chiếm (trên tài khoản demo) → `T` Kỹ thuật câu bí mật + xác thực 2 lớp; T-DRILL v1–v3 → `A` Nhiệm vụ rà soát; `PSM-K04-M7-01`.
+**BUỔI 1** `G` Thẻ Đích **Bốn Phần Một Bài Nói** → `I` **Đo Tiếng Ồn Sân Trường**: đo 5 điểm, 3 thời điểm, vẽ biểu đồ → `T` **T-DRILL v1–v2**: dựng bài nói 4 phần, đo *đủ mấy phần* → `A` Chọn chủ đề và thu số liệu; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(số liệu thu được)* → `I` **Con Vật Ở Gần Em**: khảo sát động vật quanh trường, ghi lại → `T` **T-DRILL v3–v4** ở L4: thuyết trình trước lớp khác, có hỏi đáp, có **phản hồi 1-1-1** → `A` **SHOWCASE**: gửi **một đề xuất có số liệu** cho ban giám hiệu.
 
-**BUỔI 2** `G` Báo công + nâng đích: quy trình khi bị hack → `I` **Điều tra Vụ Mất Tài Khoản**: HS phân tích 1 tình huống mẫu, tìm ra lỗ hổng → `T` T-DRILL v4 ở L4: nhận diện email/tin nhắn lừa lấy mật khẩu (phishing); xử lý khi nghi bị xâm nhập → `A` **SHOWCASE**: Squad trình bày **Quy tắc Bảo Mật Gia Đình** 5 điều.
-
-**Thực hành:** `PTH-K04-M7-01` – Phiếu rà soát tài khoản · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-H` mô phỏng số · **PSM:** rà soát & củng cố ≥2 tài khoản cùng bố mẹ
-**Đánh giá:** `PDG-QS-AT`, `PDG-PH-01`, rubric `R-SO-10`
-**Bắc cầu học tập:** Bảo vệ tài khoản học trực tuyến, email nhà trường.
+**Phiếu:** `PTH-K04-N4-01` · **Sứ mệnh:** `PSM-K04-N4-01` · **Rubric:** `R-NOI-01`
+**Bắc cầu:** nối `K03-N3-05` · nền cho `CT-35` lý thuyết thay đổi ở khối 11.
+> ⚠️ **Bắt buộc có số liệu do chính học sinh đo.** Thuyết trình không có số liệu tự đo thì chưa đạt — đây là năm đầu tiên hệ yêu cầu **bằng chứng định lượng**.
 
 ---
 
-### `K04-M7-02` · NHẬN DIỆN LỪA ĐẢO TRỰC TUYẾN
-**NL:** M7.1, M7.4 · **Trội:** **T** (G15·I25·T45·A15) · **Hành động:** A2 · **Kit:** DC-KIT-07
+### `K04-N4-02` ⭐ · HƯƠNG VỊ QUÊ EM – NGÀY TẾT CỦA EM
+**Bài gốc hấp thụ:** #41 Thuyết trình chủ đề ẩm thực quê em · #44 Tết Nguyên đán
+**Nhóm:** N4 · **Trội:** **I** · **Mạch:** M4 · **Kit:** `DC-KIT-10`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con nhận ra 5 dấu hiệu lừa đảo và không bấm vào"* | Đích: *"Con cảnh báo được cho người khác"* |
-| **I** | Không xấu hổ khi suýt bị lừa; dám kể lại | Chủ động cảnh báo ông bà, bố mẹ |
-| **T** | Nhận đúng **5/6 dấu hiệu**: quá hấp dẫn để là thật – giục gấp – yêu cầu thông tin/mật khẩu – đường link lạ – lỗi chính tả – người lạ xưng người quen; xử lý đúng **KHÔNG BẤM – KHÔNG TRẢ LỜI – KIỂM CHỨNG – BÁO NGƯỜI LỚN** | 6/6 kể cả lừa đảo tinh vi (giả trang web thật, giả bạn bè nhắn tin mượn tiền) |
-| **A** | Cảnh báo **≥1 người thân** về 1 kiểu lừa đảo | Làm 1 sản phẩm cảnh báo (poster/video) chia sẻ cho cộng đồng lớp |
+| **G** | Đích: *"Em giới thiệu được một món ăn quê em và một nếp Tết"* | Đích: *"Em kể được **câu chuyện** đằng sau món ăn đó"* |
+| **I** | Tự hào về nơi mình sinh ra | Muốn giữ và truyền lại nếp của gia đình |
+| **T** | Giới thiệu đủ **3 phần** *(món gì · làm thế nào · ai trong nhà làm)*; kể đúng **4 nếp Tết** và ý nghĩa | 3/3 có chi tiết cảm quan *(mùi, vị, âm thanh)*; 6 nếp Tết |
+| **A** | Làm hoặc phụ làm **1 món** cùng gia đình | 3 lần; và ghi lại công thức của gia đình vào **Hồ sơ Di sản** |
 
-**BUỔI 1** `G` Đích: *"Không ai quá thông minh để không bị lừa – chỉ có người biết dấu hiệu"* → `I` **Thử Thách Bấm Hay Không**: 8 tin nhắn/email mẫu chiếu lên màn hình, HS bỏ phiếu – kết quả cho thấy nhiều em bị lừa → `T` **6 dấu hiệu** + quy trình 4 bước; T-DRILL v1–v3 với 12 mẫu → `A` Nhiệm vụ cảnh báo người thân; `PSM-K04-M7-02`.
+**BUỔI 1** `G` Thẻ Đích **Món Của Nhà Em** → `I` **Bản Đồ Vị Việt**: ba miền, ba kiểu vị — **không so hơn kém** → `T` **T-DRILL v1–v2**: giới thiệu đủ 3 phần, có chi tiết cảm quan → `A` Phiếu hỏi gia đình về công thức; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(công thức thu được)* → `I` **Nếp Tết Nhà Mình**: kể *"một cái Tết con nhớ"* — **không hỏi quà, không hỏi tiền** → `T` **T-DRILL v3–v4**: thuyết trình món ăn có **câu chuyện gia đình** kèm theo → `A` **SHOWCASE "Chợ Quê Của Lớp"**: mỗi Squad một gian, có công thức viết tay.
 
-**BUỔI 2** `G` Báo công + nâng đích: lừa đảo tinh vi → `I` **Phòng Trưng Bày Lừa Đảo**: các mẫu thật (đã ẩn thông tin) từ tin nhắn trúng thưởng, giả shipper, giả người quen → `T` T-DRILL v4 ở L4: phân biệt trang web thật/giả; xử lý khi "bạn thân" nhắn mượn tiền → `A` **SHOWCASE**: Squad làm **Poster/Video cảnh báo 6 dấu hiệu** gửi về gia đình.
-
-**Thực hành:** `PTH-K04-M7-02` – Phiếu nhận diện 6 dấu hiệu · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-D`/`I-H` điều tra – mô phỏng số · **PSM:** cảnh báo ≥1 người thân, ghi phản hồi của họ
-**Đánh giá:** `PDG-QS-AT`, `PDG-SP`, rubric `R-SO-11`
-**Bắc cầu học tập:** Tư duy phản biện; nối K09-M7-01 (lừa đảo tài chính online).
+**Phiếu:** `PTH-K04-N4-02` · **Sứ mệnh:** `PSM-K04-N4-02` · **Rubric:** `R-NOI-01`
+**Bắc cầu:** nối `K01-N4-05` · `K03-N4-02` · **nền của trụ Di sản Gen Việt**.
+> ⭐ **Cụm mang bản sắc Việt** — công thức món ăn gia đình là **tư liệu Di sản cá nhân**, lưu vào Hồ sơ Di sản theo quy tắc đạo đức ở `16/05`.
+> ⚠️ **Không yêu cầu mang đồ ăn thật tới lớp** *(vệ sinh, dị ứng, chênh lệch hoàn cảnh)*. Nếu tổ chức chợ quê có đồ ăn, phải theo quy định an toàn thực phẩm của trường và **kiểm dị ứng trước**.
+> ⚠️ **Áp dụng nguyên 5 quy tắc Tết của `K01-N4-05`.**
 
 ---
 
-### `K04-M7-03` · DẤU CHÂN SỐ ĐẦU TIÊN
-**NL:** M7.2 · **Trội:** **G** (G30·I25·T30·A15) · **Hành động:** A2 · **Kit:** DC-KIT-07
+### `K04-N4-03` 🔍 · THÀNH VIÊN CÓ CHÍNH KIẾN TRONG NHÀ
+**Bài gốc hấp thụ:** #40 Ứng xử trong gia đình · #39 Nhận diện quảng cáo
+**Nhóm:** N4 · **Trội:** **A** · **Mạch:** M4 · M7 · **Kit:** `DC-KIT-07`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con biết mọi thứ con đăng đều để lại dấu vết lâu dài"* | Đích: *"Con chủ động xây hình ảnh số tích cực"* |
-| **I** | Suy nghĩ trước khi đăng, không đăng theo cảm xúc | Xoá/sửa được nội dung mình thấy không phù hợp |
-| **T** | Áp dụng **Bộ lọc 4 câu hỏi trước khi đăng**: *Ai có thể thấy? 5 năm nữa mình còn thấy ổn không? Có làm ai tổn thương không? Có lộ thông tin riêng không?*; đánh giá đúng 8/10 nội dung mẫu | 10/10; nhận ra rủi ro ẩn trong ảnh (biển số, đồng phục, vị trí) |
-| **A** | Rà soát nội dung đã đăng (của mình/gia đình) và xử lý ≥1 nội dung rủi ro | Lập **Quy tắc Đăng Bài Gia Đình** |
+| **G** | Đích: *"Em nói được mong muốn của mình một cách lễ phép"* | Đích: *"Em thương lượng được với bố mẹ về một việc"* |
+| **I** | Không thấy có ý kiến là hỗn | Hiểu gia đình là nơi thương lượng được, nếu nói đúng cách |
+| **T** | Nói mong muốn đủ **3 phần** *(điều em muốn · lý do · điều tốt cho cả nhà)*; nhận đúng **8/10 thủ thuật quảng cáo** | 3/3 tự nhiên; 10/10 thủ thuật và nói được **quảng cáo đang nhắm vào cảm xúc nào** |
+| **A** | Nói mong muốn đúng cách **≥2 lần** | ≥4 lần; và có 1 lần **thay đổi được quyết định** của gia đình bằng lý do |
 
-**BUỔI 1** `G` Đích qua ẩn dụ *dấu chân trên xi măng ướt* → `I` **Thám Tử Ảnh**: từ 1 bức ảnh đăng công khai, HS tìm ra được trường học, khu phố, giờ tan học – gây sốc lành mạnh → `T` **Bộ lọc 4 câu hỏi**; T-DRILL v1–v3 đánh giá 10 nội dung mẫu → `A` Nhiệm vụ rà soát; `PSM-K04-M7-03`.
+**BUỔI 1** `G` Thẻ Đích **Ba Phần Một Mong Muốn** → `I` **Hai Cách Xin Phép**: nài nỉ và thương lượng — cùng một yêu cầu → `T` **T-DRILL v1–v2**: 8 tình huống gia đình, nói đủ 3 phần → `A` Chọn một việc để thương lượng; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(thương lượng ra sao)* → `I` **Quảng Cáo Muốn Gì Ở Em**: xem 5 quảng cáo *(đã biên tập, không nêu nhãn hàng)*, tìm thủ thuật → `T` **T-DRILL v3–v4**: 10 thủ thuật *(người nổi tiếng · sợ bỏ lỡ · số liệu mơ hồ · trẻ em vui vẻ · quà tặng kèm …)*; nối sang **thương lượng có lý do** thay vì **đòi vì quảng cáo** → `A` **SHOWCASE**: **Bảng Mười Thủ Thuật** dán ở lớp.
 
-**BUỔI 2** `G` Báo công + nâng đích: xây hình ảnh tích cực → `I` **Cỗ Máy Thời Gian**: HS viết thư cho mình 5 năm sau về những gì mình đăng hôm nay → `T` T-DRILL v4 ở L4: soi rủi ro ẩn trong ảnh; viết lại 3 nội dung cho an toàn hơn mà vẫn thú vị → `A` **SHOWCASE**: Squad trình bày **Quy tắc Đăng Bài** và 3 kiểu nội dung nên đăng.
-
-**Thực hành:** `PTH-K04-M7-03` – Phiếu Bộ lọc 4 câu hỏi · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-D` điều tra ảnh · **PSM:** rà soát & xử lý ≥1 nội dung rủi ro cùng gia đình
-**Đánh giá:** `PDG-QS-AT`, `PDG-PH-01`, rubric `R-SO-12`
-**Bắc cầu học tập:** Nền tảng cho hồ sơ số xét tuyển (K12-M7-01); trách nhiệm phát ngôn.
+**Phiếu:** `PTH-K04-N4-03` · **Sứ mệnh:** `PSM-K04-N4-03` · **Rubric:** `R-SO-01`
+**Bắc cầu:** nối `K03-N4-01` · nền cho `CT-20` thang bằng chứng và `CT-21` nguỵ biện ở khối 7–8.
+> 🔍 **Cặp ghép cần chú ý:** hai bài gốc khác nhau khá xa. Sợi nối là *"em là thành viên có chính kiến — biết nói mong muốn của mình, và biết ai đang cố tạo ra mong muốn cho mình"*. Khi dạy, **buổi 1 lấy đích gia đình, buổi 2 lấy đích quảng cáo**, và nối lại ở pha A.
+> ⚠️ **Không phán xét quyết định của gia đình học sinh.** Cụm này dạy **cách nói**, không dạy **đòi hỏi**. HLV nói rõ: *"Bố mẹ vẫn có quyền nói không — và em nói đúng cách là em đã làm đúng phần của mình."*
 
 ---
 
-### `K04-M8-01` · NGÂN SÁCH CÁ NHÂN 1 THÁNG
-**NL:** M8.1 · **Trội:** **G** (G35·I15·T35·A15) · **Hành động:** A2 · **Kit:** DC-KIT-08
+### `K04-N5-01` · THỜI GIAN CỦA EM – TIỀN CỦA EM
+**Bài gốc hấp thụ:** #45 Tiền và thu nhập · #46 Kế hoạch nghỉ hè
+**Nhóm:** N5 · **Trội:** **G** · **Mạch:** M8 · M1 · **Kit:** `DC-KIT-08`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con lập và bám ngân sách 1 tháng"* | Đích: *"Con có kết dư và biết vì sao"* |
-| **I** | Trung thực ghi cả khoản chi mình thấy ngại | Chủ động điều chỉnh khi thấy vượt |
-| **T** | Ghi đủ **thu – chi – kết dư**; phân 3 nhóm chi (cần / muốn / cho đi); tính đúng chênh lệch | Phát hiện **khoản chi "rò rỉ"** (chi nhỏ lặp lại); dự báo được chi tháng sau |
-| **A** | Ghi sổ **≥25/30 ngày**, không bỏ trống | 30/30 ngày; có kết dư và chuyển vào tiết kiệm |
+| **G** | Đích: *"Em có kế hoạch hè đủ 4 mục và có mục tiêu để dành"* | Đích: *"Em giữ được kế hoạch 4 tuần đầu hè"* |
+| **I** | Thấy tiền đến từ công sức, không tự có | Tự hào vì để dành đủ cho một món mình muốn |
+| **T** | Giải thích được **tiền đến từ đâu** *(công sức · thời gian · giá trị tạo ra)*; chia đúng **4 hũ** *(Giữ · Dùng · Cho · Học)* | Tính được **bao lâu nữa đủ**; và lập kế hoạch hè có **mốc kiểm** |
+| **A** | Kế hoạch hè đủ **4 mục** *(học · rèn · chơi · giúp nhà)* | Giữ 4 tuần, có bảng đánh dấu và bố mẹ ký |
 
-**BUỔI 1** `G` Mỗi HS đặt mục tiêu ngân sách tháng → `I` **Trò chơi Một Tháng Trong 30 Phút**: mô phỏng 30 ngày, mỗi ngày rút 1 thẻ sự kiện (được cho tiền, bị mất, bạn rủ mua) – trải nghiệm dòng tiền → `T` **Mẫu sổ 3 cột**; T-DRILL v1–v3: ghi sổ, tính kết dư, phân nhóm chi → `A` Phát **Sổ Ngân Sách 30 ngày**; `PSM-K04-M8-01`.
+**BUỔI 1** `G` Thẻ Đích **Bốn Hũ Của Em** → `I` **Một Giờ Của Người Lớn**: quy đổi — một món đồ bằng bao nhiêu giờ làm việc *(dùng số giả định, không hỏi thu nhập gia đình)* → `T` **`CT-31` ba hũ nâng lên bốn hũ** + **T-DRILL v1–v2** với tiền mô hình → `A` Làm bốn hũ; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(kế hoạch hè)* → `I` **Mùa Hè Trôi Qua Rất Nhanh**: 10 tuần hè trên một dải giấy, trẻ chia việc lên đó → `T` **T-DRILL v3–v4**: lập kế hoạch hè 4 mục có **mốc kiểm hằng tuần** → `A` **SHOWCASE**: **Bảng Hè Của Con** gửi về gia đình, có ô cho bố mẹ ký.
 
-**BUỔI 2** `G` Báo công tuần 1 + nâng đích: tìm khoản rò rỉ → `I` **Bảng Rò Rỉ Của Lớp**: thống kê ẩn danh, chỉ ra khoản chi nhỏ lặp lại tốn nhất → `T` T-DRILL v4 ở L4: lập lại ngân sách khi thu nhập giảm 30%; quyết định cắt gì → `A` **SHOWCASE**: biểu đồ thu–chi cá nhân; công bố **1 khoản sẽ cắt tháng tới**.
-
-**Thực hành:** `PTH-K04-M8-01` – Sổ Ngân Sách 30 ngày · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-F` thí nghiệm hành vi 30 ngày · **PSM:** ghi sổ hằng ngày, phụ huynh ký cuối tuần
-**Đánh giá:** `PDG-QS-TH`, `PDG-PH-01`, rubric `R-TAI-05`
-**Bắc cầu học tập:** Toán (thống kê đơn giản, biểu đồ); nền tảng kế hoạch tài chính K06, K09.
+**Phiếu:** `PTH-K04-N5-01` · **Sứ mệnh:** `PSM-K04-N5-01` · **Rubric:** `R-TAI-01`
+**Bắc cầu:** nối `K03-N4-01` · nền cho `CT-02 SMART-E` ở khối 5.
+> 🔴 **Cấm hỏi thu nhập gia đình, cấm hỏi tiền tiêu vặt thật.** Dùng **số giả định bằng nhau cho cả lớp**. Với trẻ không có tiền tiêu vặt, dùng phương án **chia thời gian rảnh** thành bốn hũ — cùng bài học.
 
 ---
 
-### `K04-M8-02` · GIÁ TRỊ CỦA LAO ĐỘNG: KIẾM TIỀN TỬ TẾ
-**NL:** M8.1, M8.2 · **Trội:** **I** (G20·I35·T30·A15) · **Hành động:** A2 · **Kit:** DC-KIT-08
+### `K04-N5-02` ⭐ · BẢN ĐỒ NGHỀ – GỐC NGHỀ VIỆT
+**Bài gốc hấp thụ:** #48 Nghề nghiệp cho em · #49 Em tìm hiểu nghề truyền thống
+**Nhóm:** N5 · **Trội:** **I** · **Mạch:** M8 · **Kit:** `DC-KIT-08`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Con tạo ra giá trị trước khi nhận về"* | Đích: *"Con kiếm được thu nhập chính đáng đầu tiên"* |
-| **I** | Trân trọng công sức lao động của mình và người khác | Từ chối cách kiếm tiền không tử tế |
-| **T** | Tính đúng **công sức – thời gian – giá trị** cho 1 công việc; phân biệt **kiếm tiền tử tế** và **không tử tế** trong 4/5 tình huống | Định giá hợp lý cho dịch vụ của mình; nhận ra bẫy "việc nhẹ lương cao" |
-| **A** | Thực hiện **1 việc tạo giá trị** trong 7 ngày (giúp việc nhà có thoả thuận, làm sản phẩm, dạy lại bạn) | Duy trì 3 tuần; ghi lại tổng thời gian và giá trị tạo ra |
+| **G** | Đích: *"Em kể được 5 nghề và việc từng nghề làm"* | Đích: *"Em phỏng vấn được một người làm nghề"* |
+| **I** | Thấy mọi nghề đều đang giữ một phần cuộc sống | Tò mò muốn biết một nghề làm việc ra sao |
+| **T** | Kể đúng **5 nghề** kèm việc cụ thể; giới thiệu **1 nghề truyền thống** đủ 3 phần | 8 nghề; và phỏng vấn được 1 người, ghi lại **≥5 câu trả lời** |
+| **A** | Hỏi **≥1 người lớn** về nghề của họ | Phỏng vấn 3 người và làm **thẻ nghề** cho mỗi người |
 
-**BUỔI 1** `G` Đích: *"Tiền là kết quả, không phải điểm bắt đầu"* → `I` **Phỏng vấn 3 nghề** (video/khách mời): mỗi người kể *một giờ làm việc của họ tạo ra giá trị gì cho ai* → `T` T-DRILL v1–v3: tính công sức – thời gian – giá trị; phân loại 5 tình huống kiếm tiền (bán đồ tự làm / xin tiền / lấy đồ của bạn đem bán / dạy kèm / lừa em nhỏ) → `A` Chọn việc tạo giá trị; `PSM-K04-M8-02`.
+**BUỔI 1** `G` Thẻ Đích **Bản Đồ Nghề Quanh Em** → `I` **Một Ngày Không Có Nghề Đó**: chọn 5 nghề, hình dung một ngày thiếu họ → `T` **T-DRILL v1–v2**: kể nghề đủ 3 phần; **soạn 5 câu hỏi phỏng vấn** → `A` Phiếu phỏng vấn; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công *(phỏng vấn được ai)* → `I` **Nghề Của Ông Bà** *(bài gốc #49)*: nghề truyền thống ở địa phương — gốm, dệt, đúc, làm nón, làm bánh… → `T` **T-DRILL v3–v4**: giới thiệu nghề truyền thống trước lớp, có hỏi đáp → `A` **SHOWCASE "Bản Đồ Nghề Của Lớp"**: dán thẻ nghề, có cả nghề truyền thống địa phương.
 
-**BUỔI 2** `G` Báo công + nâng đích: định giá dịch vụ → `I` **Chợ Dịch Vụ Lớp Học**: HS chào bán kỹ năng của mình (dạy vẽ, sửa xe đạp, chép bài giúp bạn ốm) → `T` T-DRILL v4 ở L4: định giá và thương lượng; nhận diện bẫy "việc nhẹ lương cao" → `A` **SHOWCASE**: báo cáo *giá trị đã tạo ra cho ai – mất bao lâu – nhận được gì*.
-
-**Thực hành:** `PTH-K04-M8-02` – Phiếu Giá trị lao động · 4 vòng · **L4**
-**Trải nghiệm & Sứ mệnh:** `I-E` mô phỏng thị trường · **PSM:** thực hiện 1 việc tạo giá trị, ghi lại
-**Đánh giá:** `PDG-QS-TH`, `PDG-PH-01`, rubric `R-TAI-06`
-**Bắc cầu học tập:** Thái độ với lao động; nền tảng khởi tạo K05, K07, K08.
+**Phiếu:** `PTH-K04-N5-02` · **Sứ mệnh:** `PSM-K04-N5-02` · **Rubric:** `R-HNG-01`
+**Bắc cầu:** nối `K02-N5-01` · `K03-N5-01` · **nền của trụ Di sản Gen Việt** · nền cho hướng nghiệp khối 8–12.
+> ⭐ **Cụm mang bản sắc Việt** — nghề truyền thống địa phương là tư liệu Di sản.
+> ⚠️ **Không xếp hạng nghề, không nói nghề nào "tốt hơn", không hỏi bố mẹ em làm nghề gì trước lớp.** Câu chuẩn: *"Nghề nào cũng đang giữ một phần cuộc sống của chúng ta."*
 
 ---
 
-### `K04-M8-03` · DỰ ÁN TỬ TẾ CỦA SQUAD
-**NL:** M8.5, M4.3 · **Trội:** **A** (G20·I20·T25·A35) · **Hành động:** A2→A3 · **Kit:** DC-KIT-08
+### `K04-N5-03` ⭐ · NGƯỜI GIỮ NƯỚC – NGƯỜI DẠY CHỮ
+**Bài gốc hấp thụ:** #47 Quân đội nhân dân Việt Nam · #50 Thầy cô của em
+**Nhóm:** N5 · **Trội:** **I** · **Mạch:** M4 · **Kit:** `DC-KIT-10`
 
 | Pha | **ĐẠT** | **XUẤT SẮC** |
 |:--:|---|---|
-| **G** | Đích: *"Squad con hoàn thành 1 dự án tử tế có người thụ hưởng thật"* | Đích: *"Dự án tạo ra thay đổi đo được"* |
-| **I** | Kiên trì tới cùng dù gặp trở ngại | Rủ thêm được người ngoài Squad tham gia |
-| **T** | Chạy đủ **5 bước dự án**: xác định người cần – khảo sát nhu cầu – lập kế hoạch – thực hiện – báo cáo; phân đủ 5 vai | Đo được kết quả bằng số liệu; xử lý được ≥1 sự cố phát sinh |
-| **A** | Hoàn thành trong 3 tuần, có ảnh và lời chứng người thụ hưởng | Dự án được duy trì sau khi chuyên đề kết thúc |
+| **G** | Đích: *"Em kể được một câu chuyện về người giữ nước hoặc người dạy chữ"* | Đích: *"Em nói lời biết ơn trực tiếp"* |
+| **I** | Cảm nhận có người đang làm việc thầm lặng cho mình | Muốn sống sao cho xứng với điều đó |
+| **T** | Kể đủ **3 phần** *(người đó là ai · họ làm gì · vì sao em biết ơn)*, có **1 chi tiết cụ thể** | Kể trước lớp không cầm giấy; trả lời được câu hỏi |
+| **A** | Nói hoặc gửi lời biết ơn cho **1 người** | 3 người, có 1 người ngoài trường |
 
-**BUỔI 1** `G` Squad chọn đối tượng & đặt đích có số liệu → `I` **Đi Tìm Nhu Cầu Thật**: khảo sát trong trường/khu phố – *"Điều gì làm họ khó khăn nhất?"* – tránh dự án làm cho có → `T` **5 bước dự án**; T-DRILL v1–v3: lập kế hoạch, phân vai, dự trù rủi ro → `A` Khởi động dự án; `PSM-K04-M8-03`.
+**BUỔI 1** `G` Thẻ Đích **Người Em Biết Ơn** → `I` **Những Người Thức Khi Em Ngủ**: chiến sĩ canh biên giới, canh hải đảo — hình vẽ, giọng kể, **không dùng hình ảnh chiến sự** → `T` **T-DRILL v1–v2**: kể đủ 3 phần có chi tiết cụ thể → `A` Làm **Thiệp Tri Ân**; `PSM`. ⚠️ Điểm cắt 90′.
+**BUỔI 2** `G` Báo công + nâng đích *(nói trực tiếp)* → `I` **Thầy Cô Của Em** *(bài gốc #50)*: mỗi em kể một chi tiết thật về thầy cô mình → `T` **T-DRILL v3–v4** ở L4: nói lời biết ơn trước mặt người thật, có ACT làm mẫu trước → `A` **SHOWCASE ĐÓNG NĂM "Ngày Biết Ơn"**: mời thầy cô, bác bảo vệ, cô lao công — trao thiệp tận tay.
 
-**BUỔI 2** `G` Báo công tiến độ + nâng đích: đo kết quả → `I` **Triển khai thực địa** 45 phút → `T` T-DRILL v4 ở L4–L5: xử lý sự cố (người thụ hưởng từ chối, thiếu nguồn lực, hết giờ) → `A` **SHOWCASE**: báo cáo *ai được giúp – số liệu trước/sau – lời chứng*; quyết định có duy trì dự án không.
-
-**Thực hành:** `PTH-K04-M8-03` – Hồ sơ dự án 5 bước · 4 vòng · **L5**
-**Trải nghiệm & Sứ mệnh:** `I-E` dự án phục vụ thực địa · **PSM:** 3 tuần triển khai, người thụ hưởng ký xác nhận
-**Đánh giá:** `PDG-QS-TH`, `PDG-SP`, `PDG-DD-TH`, rubric `R-PHS-04`
-**Bắc cầu học tập:** Kỹ năng dự án; **đưa vào Hồ sơ Tài năng** – bằng chứng đầu tiên cho **Cấp 3 · Pin Xanh Lá**.
+**Phiếu:** `PTH-K04-N5-03` · **Sứ mệnh:** `PSM-K04-N5-03` · **Rubric:** `R-GIA-01`
+**Bắc cầu:** nối `K01-N5-02` · `K02-N5-01` · `K03-N5-01` · **nền của trụ Di sản Gen Việt**.
+> ⭐ **Cụm mang bản sắc Việt** — giữ nguyên cả hai bài gốc.
+> ⚠️ **Không dùng hình ảnh chiến sự, thương vong, vũ khí cận cảnh.** Nội dung tập trung vào **công việc thường ngày** của người giữ nước: canh gác, cứu hộ, giúp dân sau bão lũ.
 
 ---
 
-## C. PHÂN PHỐI CHƯƠNG TRÌNH NĂM HỌC – KHỐI 4
+## C. KIỂM ĐẾM — KHÔNG BỎ BÀI NÀO
 
-| Tuần | Buổi | Chuyên đề |
-|:--:|:--:|---|
-| 1–2 | 1–2 | **Khai giảng KNSGITA** – Squad học kỳ, Đích năm, Hợp đồng mục tiêu |
-| 3–4 | 3–6 | K04-M1-01 (Kế hoạch tuần – dùng cả năm) · K04-M6-02 |
-| 5–6 | 7–10 | K04-M6-01 (Cornell) · K04-M4-02 (5 vai Squad) |
-| 7–8 | 11–14 | K04-M1-02 · K04-M2-02 |
-| 9–10 | 15–18 | K04-M3-02 · K04-M4-01 |
-| 11–12 | 19–22 | K04-M6-03 · K04-M5-01 |
-| 13–14 | 23–26 | K04-M7-01 · K04-M8-01 |
-| 15–16 | 27–30 | **K04-M1-03 (Bản đồ Điểm Mạnh)** · K04-M3-01 |
-| 17–18 | 31–34 | K04-M5-02 · K04-M7-02 |
-| 19–20 | – | **Đấu trường HK1** · **SÀNG LỌC LỘ TRÌNH MŨI NHỌN LẦN ĐẦU** |
-| 21–22 | 35–38 | K04-M2-01 (an toàn nước) · K04-M4-03 |
-| 23–24 | 39–42 | K04-M5-03 · K04-M7-03 |
-| 25–26 | 43–46 | K04-M3-03 · K04-M8-02 |
-| 27–28 | 47–48 | K04-M2-03 · **K04-M8-03 (Dự án tử tế)** |
-| 29–36 | – | Triển khai dự án Squad · Củng cố · Chuẩn bị Showcase |
-| 37–38 | – | **Ngày Hội Tài Năng** · Tổng kết Hộ chiếu · Cập nhật Hồ sơ Tài năng |
+| Nhóm | Bài gốc | Cụm | Bài gốc đã hấp thụ |
+|:--:|:--:|:--:|---|
+| N1 | 14 | 7 | #1 #2 #3 #4 #5 #6 #7 #8 #9 #10 #11 #12 #13 #14 |
+| N2 | 13 | 6 | #15 #16 #17 #18 #19 #20 #21 #22 #23 #24 #25 #26 #27 |
+| N3 | 11 | 5 | #28 #29 #30 #31 #32 #33 #34 #35 #36 #37 #38 |
+| N4 | 6 | 3 | #39 #40 #41 #42 #43 #44 |
+| N5 | 6 | 3 | #45 #46 #47 #48 #49 #50 |
+| **Tổng** | **50** | **24** | **50/50 bài gốc đã có chỗ** ✅ |
+
+---
+
+## D. BA ĐIỂM CẦN BÁO LẠI HỌC VIỆN
+
+| # | Phát hiện | Đề xuất |
+|:--:|---|---|
+| 1 | ✅ **Khối 4 là khối cân bằng nhất trong tiểu học** — cả 5 nhóm đều có ≥6 bài | Nên lấy khối 4 làm **mẫu cân đối** khi rà soát khối 2 và 3 |
+| 2 | 🔴 **#29 Hành vi quấy rối, xâm hại** được để **đi riêng một cụm**, không ghép | Đây là quyết định có chủ đích và **đề nghị Học viện giữ nguyên** ở mọi phiên bản sau. Chủ đề này cần trọn thời lượng và trạng thái tâm lý riêng của lớp |
+| 3 | ⚠️ **#28 Sức khoẻ tuổi dậy thì ở khối 4 là khá sớm** so với thực tế phát triển | Giữ ở khối 4 là hợp lý *(một số em bắt đầu thay đổi từ 9–10 tuổi)*, nhưng **nội dung phải ở mức khái quát**; phần chi tiết để khối 8. Bản gửi phụ huynh cần nói rõ điều này |
+
+---
+
+## E. TRẠNG THÁI HỌC LIỆU KHỐI 4
+
+| Loại học liệu | Đã có | Còn thiếu |
+|---|:--:|:--:|
+| Bản đồ 24 cụm | ✅ 24/24 | — |
+| Giáo án cụm đầy đủ | 0 | 24 |
+| Kịch bản từng phút | 1 *(`K04-N1-04`)* | 23 |
+| Bộ online 7 phần | 0 | 24 |
+
+> 🎯 **Ưu tiên biên soạn tiếp:** `K04-N3-01` *(thân thể em)* và `K04-N3-02` *(cơ thể lớn lên)* — hai cụm nặng nhất khối, cần giáo án và kịch bản đầy đủ **trước khi bất kỳ huấn luyện viên nào đứng lớp**.
