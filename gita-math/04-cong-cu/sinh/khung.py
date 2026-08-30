@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import random
 import unicodedata
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from fractions import Fraction
 
 # ───────────────────────────── ĐỊNH DẠNG SỐ ─────────────────────────────
@@ -169,6 +169,11 @@ class Bai:
     thuc_te: bool = False                         # có phải bài bối cảnh thực tế
     lien_ket: str = ""                            # nhóm chuyên đề được liên kết
     ma_mau: str = ""                              # mã mẫu đã sinh ra bài này
+    # ── ba trường của thế hệ mẫu bài v2, để trống thì bộ lắp tự bù ──
+    giai_mau: list[str] = field(default_factory=list)   # các bước giải CÓ SỐ THẬT
+    y_mau: int = 0                                # giải mẫu đang giải ý thứ mấy (0 = ý a)
+    mo_rong: str = ""                             # hướng mở rộng, biến thể khó hơn
+    chuan_bi: str = ""                            # kiến thức phải có trước khi làm bài
 
     @property
     def so_y(self) -> int:
@@ -177,6 +182,26 @@ class Bai:
     @property
     def pt_ket_qua(self) -> str:
         return " · ".join(d for _n, d in self.y[:4]) + ("…" if self.so_y > 4 else "")
+
+    @property
+    def cac_buoc(self) -> list[str]:
+        """Lời giải từng bước. Mẫu v2 tự viết; mẫu cũ được bù từ hướng giải.
+
+        Bù cho mẫu cũ không phải là bịa: nó ghép hướng giải (đã đúng cho mọi ý
+        của bài) với đề và đáp số của ý tiêu biểu, nên vẫn là một lời giải đọc
+        được, chỉ kém chi tiết hơn bản do mẫu v2 tự viết.
+        """
+        if self.giai_mau:
+            return self.giai_mau
+        i = min(self.y_mau, self.so_y - 1)
+        de, dap = self.y[i]
+        return [f"Xét ý {chr(97 + i)}: {de}",
+                self.huong_giai,
+                f"Kết quả: **{dap}**."]
+
+    @property
+    def co_giai_mau(self) -> bool:
+        return bool(self.giai_mau)
 
 
 @dataclass
@@ -188,6 +213,7 @@ class Mau:
     lop: tuple[int, ...]
     sinh: object                                  # Callable[[Random, int], Bai]
     tu_khoa: tuple[str, ...] = ()                 # để khớp dạng bài của cụm
+    dang_bai: tuple[str, ...] = ()                # tên dạng bài khớp chính xác
     thuc_te: bool = False
     bay: str = ""                                 # mẫu này cài bẫy loại gì
     y_min: int = 4
@@ -209,14 +235,27 @@ KHO: dict[str, dict[str, list[Mau]]] = {}
 
 
 def dang_ky(ma: str, nhom: str, muc: str, lop=(3, 4, 5), tu_khoa=(),
-            thuc_te: bool = False, bay: str = ""):
-    """Trang trí một hàm sinh để đưa vào kho mẫu."""
+            dang_bai=(), thuc_te: bool = False, bay: str = ""):
+    """Trang trí một hàm sinh để đưa vào kho mẫu.
+
+    `tu_khoa` khớp mềm theo từ; `dang_bai` khai báo thẳng tên dạng bài trong
+    ngân hàng mà mẫu này phục vụ, dùng để đo độ phủ và để bộ chọn ưu tiên đúng
+    mẫu cho đúng chương.
+    """
+    if ma in MA_DA_DUNG:
+        raise ValueError(f"Mã mẫu bị trùng: {ma}")
+    MA_DA_DUNG.add(ma)
+
     def bao(f):
         m = Mau(ma=ma, nhom=nhom, muc=muc, lop=tuple(lop), sinh=f,
-                tu_khoa=tuple(tu_khoa), thuc_te=thuc_te, bay=bay)
+                tu_khoa=tuple(tu_khoa), dang_bai=tuple(dang_bai),
+                thuc_te=thuc_te, bay=bay)
         KHO.setdefault(nhom, {}).setdefault(muc, []).append(m)
         return f
     return bao
+
+
+MA_DA_DUNG: set[str] = set()
 
 
 def lay_mau(nhom: str, muc: str, lop: int, thuc_te: bool | None = None,

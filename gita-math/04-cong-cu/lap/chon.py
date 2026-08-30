@@ -20,8 +20,14 @@ from sinh.khung import KHO, khong_dau            # noqa: E402
 
 
 def diem_khop(mau, kho_dang: str) -> int:
-    """Số từ khoá của mẫu xuất hiện trong danh sách dạng bài của cụm."""
-    return sum(1 for t in mau.tu_khoa if khong_dau(t) in kho_dang)
+    """Mức khớp giữa mẫu và danh sách dạng bài của cụm.
+
+    Khai báo `dang_bai` là khớp đích danh nên tính 5 điểm mỗi tên trùng; từ khoá
+    chỉ khớp mềm nên tính 1 điểm. Nhờ vậy mẫu viết riêng cho một dạng bài luôn
+    được chọn trước mẫu chỉ tình cờ trùng vài từ.
+    """
+    diem = sum(5 for d in mau.dang_bai if khong_dau(d) in kho_dang)
+    return diem + sum(1 for t in mau.tu_khoa if khong_dau(t) in kho_dang)
 
 
 def kho_muc(nhom: str, muc: str, lop: int) -> list:

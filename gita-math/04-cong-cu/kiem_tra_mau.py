@@ -9,6 +9,7 @@ trường mà Chuẩn biên soạn phiếu v2.0 đòi hỏi. Chạy trước m�
 """
 from __future__ import annotations
 
+import json
 import random
 import sys
 from pathlib import Path
@@ -18,6 +19,7 @@ sys.path.insert(0, str(ROOT / "04-cong-cu"))
 
 import sinh                                  # noqa: E402
 from sinh import KHO                         # noqa: E402
+from sinh.khung import khong_dau             # noqa: E402
 
 MUC = ("M1", "M2", "M3", "M4", "M5")
 NHOM = "ABCDEFGH"
@@ -47,6 +49,33 @@ def kiem_mot(b) -> list[str]:
     return e
 
 
+def phu_dang_bai() -> list:
+    """Những dạng bài trong ngân hàng chưa có mẫu nào khớp.
+
+    Khai báo `dang_bai` của mẫu tính là khớp đích danh; từ khoá khớp mềm. Một
+    dạng bài không có mẫu nào khớp nghĩa là phiếu của chương ấy sẽ phải mượn bài
+    của chương khác — chính là chỗ chất lượng rơi.
+    """
+    rows = json.loads((ROOT / "02-chi-muc" / "index-master.json")
+                      .read_text(encoding="utf-8"))
+    dang = set()
+    for r in rows:
+        if r.get("nhom_ma") in ("*", None):
+            continue
+        for d in r.get("dang_bai") or []:
+            dang.add((r["lop"], r["nhom_ma"], d))
+    thieu = []
+    for lop, nhom, d in sorted(dang):
+        kho_d = khong_dau(d)
+        if not any(
+                any(khong_dau(x) in kho_d for x in m.dang_bai)
+                or any(khong_dau(t) in kho_d for t in m.tu_khoa)
+                for muc in MUC for m in KHO.get(nhom, {}).get(muc, [])
+                if lop in m.lop):
+            thieu.append((lop, nhom, d))
+    return thieu
+
+
 def main() -> int:
     hat = int(sys.argv[1]) if len(sys.argv) > 1 else 300
     print(f"KIỂM ĐỊNH THƯ VIỆN MẪU BÀI — {hat} hạt giống mỗi mẫu × lớp\n" + "─" * 72)
@@ -63,6 +92,15 @@ def main() -> int:
              if not [x for x in KHO[g].get(m, []) if l in x.lop]]
     print(f"  {V if not trong else X} Phủ kín 8 nhóm × 5 mức × 3 lớp = 120 ô"
           + ("" if not trong else f" — còn trống: {trong}"))
+
+    mong = [(l, g, m) for l in (3, 4, 5) for g in NHOM for m in MUC
+            if len([x for x in KHO[g].get(m, []) if l in x.lop]) < 2]
+    print(f"  {V if not mong else X} Mọi ô có từ hai mẫu trở lên"
+          + ("" if not mong else f" — còn mỏng: {mong}"))
+
+    thieu_dang = phu_dang_bai()
+    print(f"  {V if not thieu_dang else X} Mọi dạng bài trong ngân hàng đều có mẫu khớp"
+          + ("" if not thieu_dang else f" — thiếu {len(thieu_dang)}: {thieu_dang[:5]}"))
 
     loi, n = {}, 0
     for g in KHO:
@@ -87,11 +125,13 @@ def main() -> int:
         print(f"      {D}lớp {lp}: {c} mẫu dùng được\033[0m")
 
     print("─" * 72)
-    if loi or trong:
-        print(f"\033[31m\033[1m  KẾT LUẬN: CÒN LỖI — {len(loi)} mẫu hỏng, {len(trong)} ô trống\033[0m")
+    if loi or trong or mong or thieu_dang:
+        print(f"\033[31m\033[1m  KẾT LUẬN: CÒN LỖI — {len(loi)} mẫu hỏng, "
+              f"{len(trong)} ô trống, {len(mong)} ô mỏng, "
+              f"{len(thieu_dang)} dạng bài chưa phủ\033[0m")
         return 1
-    print(f"\033[32m\033[1m  KẾT LUẬN: SẠCH LỖI · {tong_mau} mẫu · {n:,} bài sinh thử đều đạt\033[0m"
-          .replace(",", " "))
+    print(f"\033[32m\033[1m  KẾT LUẬN: SẠCH LỖI · {tong_mau} mẫu · "
+          f"{n:,} bài sinh thử · 538/538 dạng bài đã phủ\033[0m".replace(",", " "))
     return 0
 
 
