@@ -816,12 +816,13 @@ function lopChay(xong) {
         return p.evaluate(async function () {
           var G = window.GV, xau = [];
           var nhip = function () { return new Promise(function (r) { setTimeout(r, 0); }); };
-          var ds = Object.keys(G.MAN);
+          var ds = Object.keys(G.MAN), doDaiMan = [];
           for (var i = 0; i < ds.length; i++) {
             location.hash = ds[i];
             await nhip();
             var m = document.querySelector('.chinh');
             var t = m.innerText || '';
+            doDaiMan.push([ds[i], t.length]);
             if (t.length < 400) xau.push(ds[i] + ' dựng ra chỉ ' + t.length + ' ký tự');
             if (/thiếu loại khối|undefined|\[object Object\]/.test(m.innerHTML))
               xau.push(ds[i] + ' có dấu hiệu dựng hỏng');
@@ -838,11 +839,30 @@ function lopChay(xong) {
             if (rong > 0)
               xau.push(ds[i] + ' có ' + rong + '/' + oCon.length + ' khối dựng ra RỖNG');
           }
-          return xau;
+          /* MÀN MỎNG — song song với luật cân đối phần, nhưng ở cấp
+             màn. Một màn dựng ra ít hơn một nửa trung vị thì tiêu
+             đề của nó đang hứa nhiều hơn nội dung. Trả về
+             riêng để lớp ngoài ghi thành CẢNH BÁO chứ không chặn:
+             vài màn ngắn là đúng bản chất, ví dụ màn phạm vi của
+             chính vai đang xem. */
+          var sap = doDaiMan.map(function (x) { return x[1]; }).sort(function (a, b) { return a - b; });
+          var giuaMan = sap[Math.floor(sap.length / 2)] || 1;
+          var mong = doDaiMan.filter(function (x) { return x[1] < giuaMan * 0.5; })
+            .sort(function (a, b) { return a[1] - b[1]; })
+            .map(function (x) { return x[0] + ' (' + x[1] + ' ký tự)'; });
+          return { xau: xau, giua: giuaMan, mong: mong, soMan: doDaiMan.length };
         });
-      }).then(function (xau) {
+      }).then(function (kq) {
+        var xau = kq.xau;
         console.log('LỚP CHẠY  · dựng thử ' + Object.keys(G.MAN).length + ' màn với vai Super Admin');
         xau.forEach(function (m) { L('Lớp chạy: ' + m); });
+        console.log('ĐỘ DÀY MÀN· trung vị ' + kq.giua + ' ký tự · ' + kq.mong.length +
+          '/' + kq.soMan + ' màn dưới một nửa trung vị');
+        kq.mong.slice(0, 12).forEach(function (m) {
+          C('MÀN MỎNG: ' + m + ' — dưới một nửa trung vị, tiêu đề đang hứa nhiều hơn nội dung');
+        });
+        if (kq.mong.length > 12)
+          C('MÀN MỎNG: còn ' + (kq.mong.length - 12) + ' màn nữa dưới ngưỡng, không liệt kê hết');
         /* 2. CỔNG: vào thẳng bằng hash một màn ngoài quyền phải ra thẻ khoá */
         return p.evaluate(async function () {
           var G = window.GV, hong = [];
