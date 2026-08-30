@@ -56,6 +56,8 @@ G.NOI_KHACH = {
   'nav.chu-ky.h':'Làm từng đợt ngắn. Xong đợt nào ngồi lại xem đợt đó.',
   'nav.nhiem-vu.t':'Việc hôm nay',
   'nav.nhiem-vu.h':'Hôm nay làm gì, và ghi lại một dòng cho mình',
+  'nav.tien-bo.t':'Nhà mình đã đổi gì',
+  'nav.tien-bo.h':'Tuần này so với tuần trước, xem nhà mình nhích được chỗ nào',
   'nav.kpi-toi.t':'Nhịp của nhà mình',
   'nav.kpi-toi.h':'Hôm nay nhà mình giữ được mấy nhịp, và đã đủ để xét lên tầng chưa',
   'nav.bang-viec.t':'Việc nhà mình đang giữ',

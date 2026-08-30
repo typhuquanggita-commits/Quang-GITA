@@ -57,6 +57,8 @@ G.NOI_HOCVIEN = {
   'nav.chu-ky.h':'Hai mươi mốt ngày để bắt đầu, chín mươi ngày để giữ',
   'nav.nhiem-vu.t':'Việc của em hôm nay',
   'nav.nhiem-vu.h':'Làm xong thì ghi lại. Ghi lại mới tính.',
+  'nav.tien-bo.t':'Em đã đổi gì',
+  'nav.tien-bo.h':'Tuần này so với tuần trước, xem em nhích được chỗ nào',
   'nav.kpi-toi.t':'Nhịp của em',
   'nav.kpi-toi.h':'Hôm nay em giữ được mấy nhịp, và đã đủ để lên chặng sau chưa',
   'nav.bang-viec.t':'Việc em đang giữ',

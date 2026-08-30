@@ -257,6 +257,7 @@ G.ITEM_EN = {
   'hang-vip':['VIP & VVIP tiers','4 tiers · service standards · AI care'],
   'cay-tien':['Money tree — VIP care','4 moves · money-tree score · 12 cadences'],
   'nhan-su-tt':['Loyal staff profile','5 levels · 7 metrics · 5 rules'],
+  'tien-bo':['What changed at home','This week next to last week, with the gap explained'],
   'bang-viec':['My work board','Overdue · in progress · new · done · close the day'],
   'danh-muc-viec':['Task catalogue','Tick to take a task · each says what evidence closes it'],
   'kpi-toi':['My KPI','Daily · monthly · shared responsibility · pay band'],

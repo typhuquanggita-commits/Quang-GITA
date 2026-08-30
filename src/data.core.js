@@ -316,8 +316,8 @@ G.TAM_NHIN = [
      không mở thêm một dòng tư liệu nghề nào. Ghi con số thật ở đây, và
      giữ nguyên trần nội dung ở chỗ của nó. */
   {vai:['R13'], pt:35, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
-  {vai:['R14'], pt:29, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'},
-  {vai:['R15'], pt:25, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết'}
+  {vai:['R14'], pt:31, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
+  {vai:['R15'], pt:27, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -419,6 +419,7 @@ G.NAV = [
        thấy KPI công việc: cùng một mục, hai nội dung, theo đúng vai. */
     {v:'bang-viec',   t:'Bảng công việc của tôi',     h:'Trễ hạn · đang làm · mới nhận · đã xong · chốt ngày', ic:'pulse', star:1, capMo:'chung', hienKhi:'cvVaiCoDauViec'},
     {v:'danh-muc-viec',t:'Danh mục đầu việc',         h:'Tích chọn để nhận việc · nói rõ đóng bằng bằng chứng gì', ic:'list', capMo:'chung', hienKhi:'cvVaiCoDauViec'},
+    {v:'tien-bo',     t:'Nhà mình đã đổi gì',          h:'Tuần này so với tuần trước, và phần chênh lệch nói bằng lời', ic:'chart', star:1, capMo:'chung'},
     {v:'kpi-toi',     t:'KPI của tôi',                h:'KPI ngày · KPI tháng · liên đới · hạng lương thưởng', ic:'chart', star:1, capMo:'chung'},
     {v:'gioi-thieu',  t:'GITA 365 là gì',              h:'Sứ mệnh · tầm nhìn · mục tiêu · giá trị · năm tầng · văn hoá · cách đồng hành', ic:'seed', star:1, capMo:'chung'},
     {v:'bat-dau',     t:'Bắt đầu ở đây',               h:'Năm bước đầu tiên, đúng thứ tự',     ic:'seed', star:1, capMo:'chung'},

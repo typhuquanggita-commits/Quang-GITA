@@ -67,6 +67,7 @@
     "src/noi-ket.js",
     "src/du-lieu-mau.js",
     "src/cong-viec.js",
+    "src/tien-bo.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",
