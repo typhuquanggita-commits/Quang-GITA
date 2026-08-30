@@ -10,9 +10,10 @@ import { BANK_G8_PLUS } from './g8-plus';
 import { BANK_G9_PLUS } from './g9-plus';
 import { BANK_G6_GITA } from './g6-gita';
 import { BANK_G9_HINH } from './g9-hinh';
+import { BANK_G6_DECUONG } from './g6-decuong';
 
 export const ALL_TEMPLATES: Template[] = [
-  ...BANK_G6, ...BANK_G6_PLUS, ...BANK_G6_GITA,
+  ...BANK_G6, ...BANK_G6_PLUS, ...BANK_G6_GITA, ...BANK_G6_DECUONG,
   ...BANK_G7, ...BANK_G7_PLUS,
   ...BANK_G8, ...BANK_G8_PLUS,
   ...BANK_G9, ...BANK_G9_PLUS, ...BANK_G9_HINH,

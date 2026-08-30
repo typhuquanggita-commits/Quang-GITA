@@ -18,6 +18,7 @@ export const BANK_G9: Template[] = [
         return {
           stem: 'Giải hệ phương trình $\\sys{3x+2y=7\\\\2x-2y=3}$. (Nhập theo dạng x,y.)',
           answer: '2,0.5',
+          thinking: ['Quan sát hệ số của $y$ đã đối nhau ($2$ và $-2$) → cộng đại số ngay để khử $y$.'],
           solution: ['Cộng theo vế: $5x=10\\Rightarrow x=2$.', 'Thay vào: $6+2y=7\\Rightarrow y=0{,}5$.'],
         };
       }
@@ -193,6 +194,7 @@ export const BANK_G9: Template[] = [
         return {
           stem: 'Cho phương trình $x^{2}-6x+4=0$ có hai nghiệm $x_1$, $x_2$. Tính $A=x_1^{2}+x_2^{2}$.',
           answer: '28',
+          thinking: ['$A$ là biểu thức đối xứng → biểu diễn qua $S$ và $P$, KHÔNG cần giải phương trình.', '$x_1^{2}+x_2^{2}=(x_1+x_2)^{2}-2x_1x_2=S^{2}-2P$.'],
           solution: ['$S=6$; $P=4$.', '$A=S^{2}-2P=36-8=28$.'],
         };
       }

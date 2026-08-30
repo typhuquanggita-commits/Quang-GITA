@@ -55,7 +55,7 @@ export const BANK_G6_PLUS: Template[] = [
         solution: [
           `$${ok}=${d}\\cdot${ok / d}$ nên $${ok}\;\\vdots\;${d}$.`,
           d === 3 || d === 9
-            ? `Kiểm tra nhanh: tổng các chữ số của $${ok}$ là $${String(ok).split('').reduce((s, c) => s + Number(c), 0)}$, chia hết cho ${d}$.`
+            ? `Kiểm tra nhanh: tổng các chữ số của $${ok}$ là $${String(ok).split('').reduce((s, c) => s + Number(c), 0)}$, chia hết cho $${d}$.`
             : `Chữ số tận cùng của $${ok}$ là $${String(ok).slice(-1)}$.`,
         ],
       };
@@ -74,7 +74,7 @@ export const BANK_G6_PLUS: Template[] = [
         options, answer,
         thinking: ['Số nguyên tố là số tự nhiên lớn hơn 1, chỉ có đúng hai ước là 1 và chính nó.'],
         solution: [
-          `$${p}$ chỉ chia hết cho 1 và ${p}$ nên là số nguyên tố.`,
+          `$${p}$ chỉ chia hết cho $1$ và $${p}$ nên là số nguyên tố.`,
           'Các số còn lại đều có thêm ước khác nên là hợp số.',
         ],
         pitfall: 'Số 1 không phải số nguyên tố, cũng không phải hợp số.',

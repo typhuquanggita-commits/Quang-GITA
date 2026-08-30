@@ -136,8 +136,8 @@ export const BANK_G6: Template[] = [
         thinking: [`Xét từng số với số chia ${m}, rồi áp dụng tính chất chia hết của tổng và hiệu.`],
         solution: [
           `$${a}=${m}\\cdot${a / m}$ nên $${a}\;\\vdots\;${m}$.`,
-          `$${b}=${m}\\cdot${b / m}$ nên $${b}\;\\vdots\;${m}$; do đó tổng và hiệu của chúng đều chia hết cho ${m}$.`,
-          `$${c}$ chia ${m} dư ${c % m}$ nên $${a}+${c}$ **không** chia hết cho ${m}$.`,
+          `$${b}=${m}\\cdot${b / m}$ nên $${b}\;\\vdots\;${m}$; do đó tổng và hiệu của chúng đều chia hết cho $${m}$.`,
+          `$${c}$ chia $${m}$ dư $${c % m}$ nên $${a}+${c}$ **không** chia hết cho $${m}$.`,
         ],
         pitfall: 'Một số chia hết cộng một số không chia hết thì tổng KHÔNG chia hết.',
       };
@@ -308,7 +308,7 @@ export const BANK_G6: Template[] = [
       const [n0, d0] = [r.int(2, 9), r.int(2, 11)];
       const g = gcd(n0, d0);
       const n = n0 / g, d = d0 / g;
-      if (d === 1) return { stem: 'Rút gọn phân số $\\f{12}{18}$.', answer: '2/3', solution: ['$\\f{12}{18}=\\f{12:6}{18:6}=\\f{2}{3}$.'] };
+      if (d === 1) return { stem: 'Rút gọn phân số $\\f{12}{18}$.', answer: '2/3', thinking: ['Muốn tối giản, chia cả tử và mẫu cho **ƯCLN** của chúng: ƯCLN$(12;18)=6$.'], solution: ['$\\f{12}{18}=\\f{12:6}{18:6}=\\f{2}{3}$.'] };
       return {
         stem: `Rút gọn phân số $\\f{${n * k}}{${d * k}}$ về dạng tối giản (nhập theo dạng a/b).`,
         answer: `${n}/${d}`,

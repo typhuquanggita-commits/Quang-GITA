@@ -213,6 +213,7 @@ export const BANK_G7: Template[] = [
         return {
           stem: `Tìm $m$ để đa thức $P(x)=x^{2}-(m+1)x+6$ nhận $x=2$ làm nghiệm.`,
           answer: '4',
+          thinking: ['$x=2$ là nghiệm nghĩa là $P(2)=0$ — thay vào rồi giải phương trình bậc nhất theo $m$.'],
           solution: ['$P(2)=4-2(m+1)+6=0\\Rightarrow 8-2m=0\\Rightarrow m=4$.'],
         };
       }

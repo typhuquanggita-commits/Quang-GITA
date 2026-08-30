@@ -179,6 +179,7 @@ export const BANK_G8_PLUS: Template[] = [
       if (x === a || x === -a || x === 0) return {
         stem: `Cho $P=\\f{x^{2}-4}{x^{2}+2x}$. Tính giá trị của $P$ tại $x=3$.`,
         answer: '1/3',
+        thinking: ['Rút gọn trước rồi mới thay số — nhanh hơn và tránh số lớn.'],
         solution: ['$P=\\f{(x-2)(x+2)}{x(x+2)}=\\f{x-2}{x}$.', 'Tại $x=3$: $P=\\f{1}{3}$.'],
       };
       const [n, d] = reduce(x - a, x);

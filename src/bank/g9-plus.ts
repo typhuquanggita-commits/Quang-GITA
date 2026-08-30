@@ -210,6 +210,7 @@ export const BANK_G9_PLUS: Template[] = [
         stem: 'Tìm hoành độ giao điểm của $(P): y=x^{2}$ và $(d): y=2x+3$. (Nhập cách nhau bởi dấu phẩy.)',
         answer: '-1,3',
         accept: ['3,-1'],
+        thinking: ['Hoành độ giao điểm là nghiệm của **phương trình hoành độ giao điểm**: cho hai vế bằng nhau.'],
         solution: ['$x^{2}=2x+3\\Leftrightarrow x^{2}-2x-3=0$.', '$\\Delta\'=1+3=4>0$, nghiệm $x=-1$ và $x=3$.'],
       };
       // a x^2 = m x + n  ->  a x^2 - m x - n = 0 có nghiệm x1, x2
@@ -311,6 +312,7 @@ export const BANK_G9_PLUS: Template[] = [
       if (D <= 0) return {
         stem: 'Cho phương trình $x^{2}-5x+2=0$ có hai nghiệm $x_1$, $x_2$. Tính $A=(x_1-x_2)^{2}$.',
         answer: '17',
+        thinking: ['$(x_1-x_2)^{2}=(x_1+x_2)^{2}-4x_1x_2=S^{2}-4P$ — đưa về $S$, $P$ rồi dùng Viète.'],
         solution: ['$S=5$; $P=2$.', '$(x_1-x_2)^{2}=S^{2}-4P=25-8=17$.'],
       };
       const S = -b, P = c;
@@ -322,6 +324,7 @@ export const BANK_G9_PLUS: Template[] = [
         return {
           stem: `Cho phương trình $x^{2}${sgn(b)}x${sgn(c)}=0$ có hai nghiệm $x_1$, $x_2$. Tính $A=(x_1-x_2)^{2}$.`,
           answer: String(S * S - 4 * P),
+          thinking: ['$(x_1-x_2)^{2}=S^{2}-4P$ — biểu thức đối xứng nên quy về $S$, $P$.'],
           solution: [`$S=${S}$; $P=${P}$.`, `$(x_1-x_2)^{2}=S^{2}-4P=${S * S}-${4 * P}=${S * S - 4 * P}$.`],
         };
       }
@@ -487,6 +490,7 @@ export const BANK_G9_PLUS: Template[] = [
         return {
           stem: 'Từ điểm $M$ ngoài đường tròn $(O)$ kẻ tiếp tuyến $MT$ và cát tuyến $MCD$. Biết $MT=6$, $MC=4$. Tính $MD$.',
           answer: '9',
+          thinking: ['Tiếp tuyến + cát tuyến từ một điểm → nghĩ ngay tới hệ thức $MT^{2}=MC\\cdot MD$.'],
           solution: ['$MT^{2}=MC\\cdot MD$ (phương tích).', '$36=4\\cdot MD\\Rightarrow MD=9$.'],
         };
       }
@@ -557,6 +561,7 @@ export const BANK_G9_PLUS: Template[] = [
             { criterion: 'Giải đúng', points: 1 },
             { criterion: 'Đối chiếu điều kiện và kết luận', points: 1 },
           ],
+          thinking: ['Năng suất mỗi ngày = tổng sản phẩm : số ngày — bài toán quy về hai phép chia độc lập.'],
           solution: ['Xưởng I: $90:3=30$ áo/ngày. Xưởng II: $60:3=20$ áo/ngày.'],
         };
       }
