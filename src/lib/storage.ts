@@ -41,6 +41,7 @@ export function createInitialState(now: number = Date.now()): PersistedState {
     stage: 1,
     xp: 0,
     habits: {},
+    executionErrors: [],
     worksheetRuns: [],
     placement: null,
   };
@@ -98,6 +99,8 @@ const MIGRATIONS: Record<number, Migration> = {
     const { scienceSubject: _dropped, ...rest } = settings;
     return { ...state, version: 7, settings: { ...rest, section3 } };
   },
+  /** v7 → v8: bo sung so loi thuc thi cua giao thuc diem tuyet doi. */
+  7: (state) => ({ ...state, version: 8, executionErrors: [] }),
 };
 
 export function migrate(raw: Record<string, unknown>): PersistedState {
@@ -138,6 +141,7 @@ function reconcile(raw: Record<string, unknown>): PersistedState {
     stage: clampInt(candidate.stage, 1, STAGES.length, 1),
     xp: clampInt(candidate.xp, 0, Number.MAX_SAFE_INTEGER, 0),
     habits: isRecord(candidate.habits) ? candidate.habits : {},
+    executionErrors: Array.isArray(candidate.executionErrors) ? candidate.executionErrors : [],
     worksheetRuns: Array.isArray(candidate.worksheetRuns) ? candidate.worksheetRuns : [],
     placement: isRecord(candidate.placement) ? (candidate.placement as PlacementRecord) : null,
   };

@@ -501,6 +501,26 @@ export interface WorksheetRecord {
 }
 
 /** Toan bo trang thai ben vung, co danh phien ban de di tru an toan. */
+/**
+ * MOT LOI THUC THI DA GHI NHAN
+ *
+ * Tach hoan toan khoi so tay loi sai kien thuc. Hai loai loi nay can hai cach
+ * chua khac nhau: lo hong kien thuc chua bang cach hoc lai chuyen de, con loi
+ * thuc thi chua bang mot thao tac vat ly trong phong thi. Gop chung mot so se
+ * lam ca hai chi so mat y nghia.
+ */
+export interface ExecutionError {
+  id: string;
+  at: number;
+  /** Ma nhom loi, khop voi ERROR_CLASSES trong data/perfect.ts. */
+  classId: string;
+  section: SectionId;
+  /** Cau chu cua nguoi hoc: de hoi gi, minh da lam gi, doc luot cho nao. */
+  note: string;
+  /** Ma cau hoi neu loi phat sinh tu mot cau cu the. */
+  questionId?: string;
+}
+
 export interface PersistedState {
   version: number;
   profile: Profile;
@@ -522,6 +542,11 @@ export interface PersistedState {
   xp: number;
   /** Nhat ky thoi quen GITA, khoa la habitId. */
   habits: Record<string, HabitLog>;
+  /**
+   * So loi thuc thi. Moi nhat o cuoi, giu toi da 500 muc gan nhat.
+   * Tach rieng khoi `srs` vi day khong phai lo hong kien thuc.
+   */
+  executionErrors: ExecutionError[];
   /**
    * Lich su tung luot lam phieu, moi nhat o cuoi. Giu toi da 300 luot gan nhat
    * de ho so khong phinh vo han tren may nguoi dung.

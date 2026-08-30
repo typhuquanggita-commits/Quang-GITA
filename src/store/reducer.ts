@@ -14,7 +14,9 @@ import type {
   PersistedState,
   Profile,
   Response,
+  ExecutionError,
   Section3Choice,
+  SectionId,
   Settings,
   WorksheetProgress,
   WorksheetRecord,
@@ -52,6 +54,15 @@ export type Action =
   | { type: 'track/levelUp'; topicId: string }
   | { type: 'stage/promote' }
   | { type: 'habit/toggle'; habitId: string; date?: string }
+  | {
+      type: 'execError/log';
+      classId: string;
+      section: SectionId;
+      note: string;
+      questionId?: string;
+      now?: number;
+    }
+  | { type: 'execError/remove'; id: string }
   | { type: 'srs/grade'; questionId: string; grade: Grade; now?: number; maxIntervalDays?: number }
   | { type: 'srs/remove'; questionId: string }
   | {
@@ -193,6 +204,24 @@ export function reducer(state: PersistedState, action: Action): PersistedState {
         : [...log.done, key].sort().slice(-180);
       return { ...state, habits: { ...state.habits, [action.habitId]: { habitId: action.habitId, done } } };
     }
+
+    case 'execError/log': {
+      const at = action.now ?? Date.now();
+      const entry: ExecutionError = {
+        id: `ee_${at.toString(36)}_${state.executionErrors.length.toString(36)}`,
+        at,
+        classId: action.classId,
+        section: action.section,
+        note: action.note.trim().slice(0, 400),
+        ...(action.questionId ? { questionId: action.questionId } : {}),
+      };
+      // Giu 500 muc gan nhat: du de tinh ti le tren muoi de, du nho de khong
+      // phinh localStorage sau ca mua thi.
+      return { ...state, executionErrors: [...state.executionErrors, entry].slice(-500) };
+    }
+
+    case 'execError/remove':
+      return { ...state, executionErrors: state.executionErrors.filter((e) => e.id !== action.id) };
 
     case 'srs/grade': {
       const card = state.srs[action.questionId];

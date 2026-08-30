@@ -53,7 +53,7 @@ export const PERFECT_PILLARS: readonly PerfectPillar[] = [
     why:
       'Đây là trụ cột quyết định ở vùng điểm trên 140, và là trụ cột bị bỏ qua ở gần như mọi tài liệu luyện thi. Lý do nằm ở phép nhân: xác suất làm sạch cả bài bằng (1 − p)^150. Sai 1% mỗi câu — nghe rất nhỏ, tương đương sai 1 trong 100 câu — chỉ cho 22% cơ hội làm đúng cả bài. Muốn 50% cơ hội thì phải xuống dưới một lỗi trong 217 câu.',
     metric:
-      'Tỉ lệ sai trên các câu thuộc chuyên đề ĐÃ thành thạo. Ngưỡng cho mốc 50% cơ hội: dưới 0,46%, tức nhiều nhất 7 lỗi trong 10 đề gần nhất (1500 câu).',
+      'Tỉ lệ sai trên các câu thuộc chuyên đề ĐÃ thành thạo. Ngưỡng cho mốc 50% cơ hội: dưới 0,46%, tức nhiều nhất 6 lỗi trong 10 đề gần nhất (1500 câu) — đúng 7 lỗi đã kéo cơ hội xuống 49,6%.',
     protocol: [
       'Lập sổ lỗi thực thi RIÊNG, tách hẳn khỏi sổ tay lỗi sai kiến thức — hai loại lỗi cần hai cách chữa khác nhau.',
       'Mỗi lỗi thực thi ghi đúng ba dòng: đề hỏi gì, tôi đã làm gì, và câu chữ nào trong đề tôi đã đọc lướt qua.',
@@ -229,7 +229,7 @@ export const PERFECT_PHASES: readonly PerfectPhase[] = [
     share: 0.2,
     goal: 'Kéo tỉ lệ sai trên các câu đã thành thạo xuống dưới ngưỡng, bằng sổ lỗi thực thi và các quy tắc chống theo nhóm lỗi.',
     focus: 'execution',
-    exit: 'Không quá 7 lỗi thực thi trong 10 đề gần nhất, tức dưới 0,46%.',
+    exit: 'Không quá 6 lỗi thực thi trong 10 đề gần nhất, tức dưới 0,46%.',
   },
   {
     order: 4,

@@ -13,6 +13,7 @@ import { TrendLine } from '../../components/charts';
 import { CoachPanel } from '../ai/TutorPanel';
 import { PlanBudget } from './PlanBudget';
 import { PerfectPlan } from './PerfectPlan';
+import { ExecutionLog } from './ExecutionLog';
 
 /**
  * LO TRINH
@@ -71,6 +72,8 @@ export function RoadmapPage() {
       <PlanBudget />
 
       <PerfectPlan />
+
+      <ExecutionLog />
 
       <Card>
         <CardHeader
