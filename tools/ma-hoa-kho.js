@@ -57,6 +57,8 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
      kết quả xấu, người lớn kiệt sức. Ở gói NỀN vì đây là việc của chính
      gia đình, không phải công cụ nghề. */
   'NGHILE_TH', 'NGHILE_THEM', 'NGHILE_LUAT',
+  /* Sổ khai dữ liệu mẫu — để không ai tưởng số dựng là số đo */
+  'DL_MAU', 'DL_MAU_LUAT',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */
@@ -95,6 +97,11 @@ const NGHE = [
   'PD_SAU', 'TH_SAU', 'NOI_KET', 'QT_NHOM', 'TL_GIADINH',
   /* Ranh giới sử dụng của 42 mô thức — khi nào KHÔNG dùng */
   'MT_RANH', 'MT_RANH_LUAT',
+  /* Biên nhận áp ruột: bộ áp chạy lúc đóng gói, ghi lại đã áp được bao
+     nhiêu phác đồ / tình huống và còn mã nào chưa có ruột. Không có nó thì
+     màn soát trên trình duyệt không phân biệt được "chưa áp" với "áp hụt".
+     Đi cùng PHACDO và TINHHUONG nên ở gói NGHỀ. */
+  'PD_RUOT_SOAT', 'TH_RUOT_SOAT',
   /* Kịch bản chuyên môn — xem lý do ở chỗ dựng gói tầng bên dưới */
   'KICHBAN',
   /* Chuẩn hợp đồng theo tuyến: nó liệt kê mọi điều khoản Học viện tự

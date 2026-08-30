@@ -65,6 +65,7 @@
     "src/thu-vien.js",
     "src/danh-gia.js",
     "src/noi-ket.js",
+    "src/du-lieu-mau.js",
     "src/app.js",
     "src/chuyen-long-ghep.js",
     "src/may-khach.js"

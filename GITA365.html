@@ -1541,12 +1541,12 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 67 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 68 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 67 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 68 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -1577,7 +1577,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.0',
+  version: '9.1',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -4716,6 +4716,7 @@ G.THUOC_CAP_PHEP = [
      dữ liệu vẫn nằm đó. Bộ kiểm phát hành soi danh sách này đối chiếu
      với nội dung thật của bảy gói, nên quên một tên là đỏ. */
   'PD_SAU','TH_SAU','NOI_KET','QT_NHOM','TL_GIADINH',
+  'MT_RANH','MT_RANH_LUAT','PD_RUOT_SOAT','TH_RUOT_SOAT',
   /* ── Bốn mươi bảy kho nghề tích lại qua nhiều bản ──
      Bộ kiểm phát hành v8.9 đối chiếu nội dung thật của gói NGHỀ và gói
      TẦNG với danh sách này, và tìm ra 47 kho chưa bao giờ được khai.
@@ -5949,8 +5950,70 @@ G.VIEWS['chu-ky'] = function(){
   var nl = G.NGHILE[2];
   o += '<div class="card" style="border-color:'+nl.c+'33">'+U.list(nl.buoc, nl.c)+
     '<p class="sm dim mt2" style="padding-top:12px;border-top:1px dashed var(--phu-4)">'+h(nl.qua)+'</p></div>';
+
+  /* ══ MƯỜI NGHI LỄ CHO LÚC LỆCH NHỊP ══
+     Bốn nghi lễ nhịp đều chỉ phủ được lúc nhà mình đang chạy êm. Còn
+     lúc đứt chuỗi, cãi nhau, con thi trượt, người lớn kiệt sức — đó
+     đúng là lúc gia đình cần một khuôn để bám vào nhất, mà trước bản
+     này không có nghi lễ nào. Lúc bình thường thì ai cũng xoay xở được.
+
+     Mỗi nghi lễ có MỐC KÍCH HOẠT rõ, để không ai phải tự hỏi "giờ có
+     nên làm không". */
+  var TH = G.NGHILE_TH || [];
+  if(TH.length){
+    o += U.sec('MƯỜI NGHI LỄ CHO LÚC NHÀ MÌNH LỆCH NHỊP',
+      'Mỗi cái có mốc kích hoạt rõ · bấm để mở các bước');
+    o += '<div class="grid g-auto">'+ TH.map(function(x){
+      return '<button class="card pad-sm lift" data-nlth="'+h(x.ma)+'" style="text-align:left;'+
+        'border-left:3px solid '+x.c+'">'+
+        '<div class="row" style="gap:7px;align-items:baseline;flex-wrap:wrap">'+
+          '<span class="mono tiny" style="color:'+x.c+'">'+h(x.phut)+'</span>'+
+          '<span class="chip" style="color:var(--ink-4)">'+h(x.khi)+'</span></div>'+
+        '<b class="sm" style="display:block;line-height:1.4;margin-top:5px">'+h(x.ten)+'</b>'+
+        '<p class="tiny muted mt" style="line-height:1.55">'+h(x.kich)+'</p></button>';
+    }).join('') +'</div>';
+  }
+
+  var LU = G.NGHILE_LUAT || [];
+  if(LU.length){
+    o += U.sec('SÁU LUẬT CHUNG CHO MỌI NGHI LỄ',
+      'Nghi lễ hỏng không phải vì làm thiếu, mà vì làm thừa');
+    o += '<div class="card">'+ LU.map(function(x, i){
+      return '<div style="'+(i ? 'border-top:1px solid var(--line);padding-top:13px;margin-top:13px' : '')+'">'+
+        '<b class="sm">'+h(x.t)+'</b>'+
+        '<p class="sm muted mt" style="line-height:1.7">'+h(x.y)+'</p></div>';
+    }).join('') +'</div>';
+  }
   return o;
 };
+
+/* Cửa sổ một nghi lễ tình huống */
+G.nghiLeModal = function(ma){
+  var x = (G.NGHILE_TH || []).filter(function(y){ return y.ma === ma; })[0];
+  if(!x) return;
+  U.modal('<div class="row wrap" style="gap:7px;margin-bottom:9px">'+
+    U.chip(x.phut, x.c)+U.chip(x.khi)+'</div>'+
+    '<h2 style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:10px">'+h(x.ten)+'</h2>'+
+    '<div class="card pad-sm mb" style="border-color:'+x.c+'44">'+
+      '<div class="tiny up mb" style="color:'+x.c+'">LÀM KHI NÀO</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(x.kich)+'</p></div>'+
+    '<div class="card pad-sm mb"><div class="tiny up mb muted">CÁC BƯỚC</div>'+
+      U.list(x.buoc, x.c)+'</div>'+
+    '<div class="card pad-sm mb" style="border-color:var(--gita-do)">'+
+      '<div class="tiny up mb" style="color:var(--gita-do-ink)">KHÔNG LÀM NHỮNG ĐIỀU NÀY</div>'+
+      U.list(x.khong, 'var(--gita-do)')+'</div>'+
+    '<div class="card pad-sm mb"><div class="tiny up mb muted">AI CHỦ TRÌ</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(x.ai)+'</p></div>'+
+    '<div class="card pad-sm mb" style="border-color:var(--alert)">'+
+      '<div class="tiny up mb" style="color:var(--alert)">DẤU HIỆU NGHI LỄ ĐANG HỎNG</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(x.hong)+'</p></div>'+
+    '<div class="card pad-sm"><div class="tiny up mb" style="color:var(--ok)">ĐƯỢC GÌ</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(x.qua)+'</p></div>');
+};
+document.addEventListener('click', function(e){
+  var a = e.target && e.target.closest && e.target.closest('[data-nlth]');
+  if(a) G.nghiLeModal(a.getAttribute('data-nlth'));
+}, false);
 
 /* ══════════════════ 02 · NHIỆM VỤ & NHẬT KÝ 365 ══════════════════ */
 G.VIEWS['nhiem-vu'] = function(){
@@ -6270,6 +6333,35 @@ G.moThucModal = function(id){
   if(m.keywords && m.keywords.length) o += '<div class="mt2"><div class="tiny up muted mb">TỪ KHOÁ</div>'+
     '<div class="row wrap" style="gap:5px">'+m.keywords.map(function(k){return U.chip(k);}).join('')+'</div></div>';
   if(m.source) o += '<p class="tiny muted mt2">Nguồn: '+h(m.source)+'</p>';
+
+  /* ══ RANH GIỚI SỬ DỤNG ══
+     42 mô thức là bộ công cụ nghề nặng nhất của Học viện, và trước bản
+     này không cái nào ghi khi nào KHÔNG được dùng.
+
+     Đó là chỗ hở thật, không phải chuyện hình thức. MT-05 là kỹ thuật
+     "từ bảng tính năng sang bảng lợi ích" — dùng với một phụ huynh đang
+     quyết chuyện học của con mình. Không có ranh giới thì nó thành công
+     cụ dẫn dắt, đúng thứ luật Học viện cấm.
+
+     Khối này đặt NGAY DƯỚI phần "dùng khi nào", không giấu xuống cuối:
+     ai đọc cách dùng thì phải đọc luôn ranh giới. */
+  var r = (G.MT_RANH || {})[m.id];
+  if(r){
+    o += '<div class="card pad-sm mt2" style="border-color:var(--gita-do)">'+
+      '<div class="tiny up mb" style="color:var(--gita-do-ink)">KHI NÀO KHÔNG DÙNG</div>'+
+      '<p class="sm" style="line-height:1.7">'+h(r.khiKhong)+'</p></div>';
+    if((r.khong||[]).length)
+      o += '<div class="card pad-sm mt2" style="border-color:var(--gita-do)">'+
+        '<div class="tiny up mb" style="color:var(--gita-do-ink)">TUYỆT ĐỐI KHÔNG LÀM</div>'+
+        U.list(r.khong, 'var(--gita-do)')+'</div>';
+    if(r.hong)
+      o += '<div class="card pad-sm mt2" style="border-color:var(--alert)">'+
+        '<div class="tiny up mb" style="color:var(--alert)">DẤU HIỆU ĐANG DÙNG SAI</div>'+
+        '<p class="sm" style="line-height:1.7">'+h(r.hong)+'</p></div>';
+    if(r.ai)
+      o += '<div class="card pad-sm mt2"><div class="tiny up mb muted">AI KHÔNG ĐƯỢC DÙNG</div>'+
+        '<p class="sm" style="line-height:1.7">'+h(r.ai)+'</p></div>';
+  }
   U.modal(o);
 };
 
@@ -21190,6 +21282,138 @@ G.nkSoat = function(){
     qt: (G.QT_NHOM || []).length,
     tl: (G.TL_GIADINH || []).length
   };
+};
+
+})();
+
+})();
+
+/* ═════════ src/du-lieu-mau.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — DẢI NHẮC DỮ LIỆU MẪU
+
+   Bảng điều hành hiện "Doanh thu quý 6,84 tỷ · +18% so với quý trước",
+   "78% khách từ giới thiệu", "Giữ chân 12 tháng 89,3%". Không con số
+   nào được đo từ hoạt động thật — chúng nằm ở G.ECO và G.HAILONG, là
+   dữ liệu dựng để xem giao diện.
+
+   Vấn đề không phải là có dữ liệu mẫu; hệ thống nào cũng cần. Vấn đề
+   là không có dấu nào phân biệt. Người mở màn Tài chính không có cách
+   nào biết đó là số dựng — và nếu con số ấy đi vào một bản báo cáo
+   hay một buổi gọi vốn thì cái giá của một dòng chữ thiếu là rất đắt.
+
+   Tệp này bọc các màn khai trong G.DL_MAU_MAN và gắn dải nhắc lên đầu.
+   Không xoá số nào: xoá đi thì giao diện rỗng và không ai dựng hay
+   kiểm thử được nữa.
+
+   Gỡ tên một kho khỏi G.DL_MAU là dải nhắc tự biến mất ở mọi màn đọc
+   kho ấy — không phải đi sửa từng màn.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+(function(){
+var U = G.U, h = U.h, ic = U.ic;
+
+/* Kho mẫu nào đang còn — trả tên kho, không trả true/false, để dải
+   nhắc nói được CHÍNH XÁC màn này đang đọc số mẫu từ đâu. */
+G.dlMauCon = function(){
+  return (G.DL_MAU || []).filter(function(x){
+    var v = G[x.kho];
+    return v !== undefined && v !== null &&
+      (Array.isArray(v) ? v.length > 0 : Object.keys(v).length > 0);
+  });
+};
+
+G.dlMauDai = function(man){
+  var ds = G.dlMauCon();
+  if(!ds.length) return '';
+  return '<div class="card mb" style="border-color:var(--alert);background:rgba(251,146,60,.06)">' +
+    '<div class="row" style="gap:10px;align-items:flex-start">' +
+      '<span style="color:var(--alert);flex:none">' + ic('bell','w-4 h-4') + '</span>' +
+      '<div style="flex:1">' +
+        '<b class="sm">Số trên màn này là DỮ LIỆU MẪU, chưa phải số đo được</b>' +
+        '<p class="sm muted mt" style="line-height:1.7">Chúng dựng để xem giao diện và kiểm thử. ' +
+        'Đừng đưa vào báo cáo, hồ sơ gọi vốn, bài đăng hay bất kỳ chỗ nào người ngoài đọc — ' +
+        'đó là chỗ cái giá của một dòng chữ thiếu trở nên rất đắt.</p>' +
+        '<p class="tiny mt2" style="color:var(--ink-4)">Kho mẫu đang dùng: ' +
+        h(ds.map(function(x){ return x.kho; }).join(' · ')) + '</p>' +
+        '<button class="btn ghost sm mt2" data-dlmau="1">' + ic('search','w-3 h-3') +
+        ' Kho nào là mẫu, và khi nào thành thật</button>' +
+      '</div></div></div>';
+};
+
+/* Bọc màn: dải nhắc lên ĐẦU, ngay dưới tiêu đề, không nhét xuống cuối.
+   Người đọc số phải gặp dải nhắc trước khi đọc số. */
+function noi(ten){
+  var cu = G.VIEWS && G.VIEWS[ten];
+  if(typeof cu !== 'function') return false;
+  G.VIEWS[ten] = function(){
+    var o = cu.apply(this, arguments);
+    if(typeof o !== 'string' || o.length < 400) return o;   /* màn khoá thì để nguyên */
+    var dai = '';
+    try { dai = G.dlMauDai(ten); } catch(e) { dai = ''; }
+    if(!dai) return o;
+    /* Chèn ngay sau khối tiêu đề đầu tiên */
+    var i = o.indexOf('</div>', o.indexOf('class="ph'));
+    return i > 0 ? o.slice(0, i + 6) + dai + o.slice(i + 6) : dai + o;
+  };
+  return true;
+}
+
+/* ── Danh sách màn phải nằm Ở ĐÂY, không nằm trong kho ──
+   Bản đầu đọc G.DL_MAU_MAN từ kho. Nhưng kho chỉ nạp SAU khi đăng
+   nhập, còn tệp này chạy lúc nạp mã — nên lúc bọc thì danh sách còn
+   rỗng và không màn nào được bọc. Đo ra: 0/16.
+
+   Đây là lỗi cùng loại đã gặp ở lớp nối: dữ liệu trong kho không có
+   mặt lúc mã khởi tạo. Cái gì cần biết lúc khởi tạo thì phải nằm
+   trong src.
+
+   Chia đúng chỗ: DANH SÁCH MÀN là hiểu biết của giao diện (màn nào
+   đọc số mẫu) — để ở đây. DANH SÁCH KHO là nội dung (kho nào còn là
+   mẫu, khi nào thành thật) — vẫn ở trong kho, và gỡ một dòng ở đó là
+   dải nhắc tự đổi. */
+G.DL_MAU_MAN = ['dieu-hanh','tai-chinh-qt','tuvan-deck','coach-deck','tang-truong',
+                've-tinh','doi-ngu','bang-so','hai-long','nhat-ky-ht','su-kien',
+                'wow','dau-mat','chuan-nhat','xu-ly-ca','ra-soat-kh'];
+
+G.DL_MAU_DA_NOI = [];
+G.DL_MAU_MAN.forEach(function(m){ if(noi(m)) G.DL_MAU_DA_NOI.push(m); });
+
+/* Cửa sổ giải thích */
+document.addEventListener('click', function(e){
+  var a = e.target && e.target.closest && e.target.closest('[data-dlmau]');
+  if(!a) return;
+  var ds = G.DL_MAU || [], con = G.dlMauCon().map(function(x){ return x.kho; });
+  U.modal('<div class="tiny up" style="color:var(--alert)">DỮ LIỆU MẪU TRONG HỆ THỐNG</div>' +
+    '<h2 style="font-size:20px;font-weight:800;margin:6px 0 12px">Kho nào là mẫu, và khi nào thành thật</h2>' +
+    '<p class="sm mb" style="line-height:1.75">Không kho nào bị xoá. Xoá đi thì giao diện rỗng và ' +
+    'không ai dựng hay kiểm thử được nữa. Cái cần là người xem biết mình đang nhìn gì.</p>' +
+    ds.map(function(x){
+      var dang = con.indexOf(x.kho) >= 0;
+      return '<div class="card pad-sm mb" style="border-color:' + (dang ? 'var(--alert)' : 'var(--ok)') + '">' +
+        '<div class="row" style="gap:8px;align-items:baseline;flex-wrap:wrap">' +
+        '<b class="mono sm">' + h(x.kho) + '</b>' +
+        '<span class="chip" style="color:' + (dang ? 'var(--alert)' : 'var(--ok)') + '">' +
+        (dang ? 'còn là mẫu' : 'đã có số thật') + '</span></div>' +
+        '<p class="sm mt" style="line-height:1.7">' + h(x.la) + '</p>' +
+        '<p class="sm muted mt" style="line-height:1.7"><b>Thành thật khi:</b> ' + h(x.thatKhi) + '</p></div>';
+    }).join('') +
+    U.sec('BỐN LUẬT', 'Để dữ liệu mẫu không bao giờ đi ra ngoài dưới dạng sự thật') +
+    '<div class="card">' + (G.DL_MAU_LUAT || []).map(function(x, i){
+      return '<div style="' + (i ? 'border-top:1px solid var(--line);padding-top:13px;margin-top:13px' : '') + '">' +
+        '<b class="sm">' + h(x.t) + '</b>' +
+        '<p class="sm muted mt" style="line-height:1.7">' + h(x.y) + '</p></div>';
+    }).join('') + '</div>');
+}, false);
+
+/* Đếm thật cho bài kiểm */
+G.dlMauSoat = function(){
+  return { khai: (G.DL_MAU || []).length, con: G.dlMauCon().length,
+    man: (G.DL_MAU_MAN || []).length, daNoi: (G.DL_MAU_DA_NOI || []).length,
+    luat: (G.DL_MAU_LUAT || []).length };
 };
 
 })();

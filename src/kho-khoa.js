@@ -40,7 +40,7 @@ G.THUOC_CAP_PHEP = [
      dữ liệu vẫn nằm đó. Bộ kiểm phát hành soi danh sách này đối chiếu
      với nội dung thật của bảy gói, nên quên một tên là đỏ. */
   'PD_SAU','TH_SAU','NOI_KET','QT_NHOM','TL_GIADINH',
-  'MT_RANH','MT_RANH_LUAT',
+  'MT_RANH','MT_RANH_LUAT','PD_RUOT_SOAT','TH_RUOT_SOAT',
   /* ── Bốn mươi bảy kho nghề tích lại qua nhiều bản ──
      Bộ kiểm phát hành v8.9 đối chiếu nội dung thật của gói NGHỀ và gói
      TẦNG với danh sách này, và tìm ra 47 kho chưa bao giờ được khai.
