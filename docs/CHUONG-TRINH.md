@@ -117,7 +117,7 @@ lặp lại câu cũ. Nếu cả phần thi cũng không đủ, số câu của 
 một cách trung thực** — màn hình *Thư viện phiếu luyện* hiển thị chỉ số **độ phủ
 ngân hàng** để nói rõ chuyên đề nào đang thiếu bao nhiêu câu.
 
-**Trạng thái hiện tại: đủ 100%.** Ngân hàng có 572 câu, mỗi chuyên đề trong số 33
+**Trạng thái hiện tại: đủ 100%.** Ngân hàng có 992 câu, mỗi chuyên đề trong số 33
 chuyên đề đều có tối thiểu 15 câu — bằng đúng số câu của phiếu cấp 6, là phiếu dài
 nhất. Nghĩa là hiện không phiếu nào phải mượn câu khác chuyên đề hay bị rút ngắn.
 Hai cơ chế bù ở trên vẫn giữ nguyên, vì chúng là lưới an toàn cho lúc khung chương

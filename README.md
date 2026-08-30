@@ -294,6 +294,55 @@ Tỉ lệ sai bất cẩn chỉ đo trên chuyên đề **đã thành thạo** �
 hổng kiến thức chứ không phải lỗi bất cẩn, và hai thứ đó cần hai cách chữa khác nhau. Chưa
 đủ 30 câu thì hệ thống trả về "chưa đo được" thay vì một con số bịa.
 
+### Bộ 10 đề cho mỗi tổ hợp — và vì sao số lượng chưa đủ
+
+Giao thức 150 điểm đặt KPI độ chính xác thực thi trên **"10 đề gần nhất"**, nhưng hệ
+thống ban đầu chỉ có **một** đề cho mỗi tổ hợp. Nó đang đòi một thứ chính nó không cung
+cấp được — và đó là kiểu lỗi chỉ lộ ra khi đối chiếu hai phần của hệ thống với nhau.
+
+Nay mỗi tổ hợp có trọn 10 đề, tổng **50 đề**. Nhưng số lượng đề không có giá trị nếu các
+đề lặp lại nhau: đề thứ năm trở đi sẽ chỉ còn đo trí nhớ. Vì vậy chuẩn được chốt thành
+test — **hai đề bất kỳ trong cùng một bộ không dùng chung quá 40% số câu**, trung bình
+không quá 30%.
+
+Đạt chuẩn đó cần cả sửa thuật toán lẫn biên soạn thêm, và hai cách chia đề hiển nhiên
+đều thất bại — cả hai đều đo được bằng số:
+
+| Cách chia | Trùng lặp cao nhất | Vì sao hỏng |
+|---|---|---|
+| Cắt khối theo hạn ngạch | **94%** | Khi ngân hàng nhỏ hơn tổng nhu cầu, các khối phải cuộn vòng nhiều lần. Trường hợp tệ nhất: chuyên đề Từ vựng 45 câu, hạn ngạch 15 → chỉ ba vị trí bắt đầu, nên đề 1, 4, 7 và 10 **trùng hệt nhau** |
+| Đan xen theo cấp số cộng | **>90%** | Hai đề lệch nhau đúng một vị trí trong dãy |
+| **Chia theo mức đã dùng** | **34–38%** | Cả mười đề chia cùng lúc; đến lượt đề nào thì nó lấy các câu **đang được dùng ít nhất**, phá thế bằng khóa băm riêng từng đề |
+
+Song song đó, phép đo chỉ ra nút thắt **dịch chuyển sau mỗi đợt bổ sung**: đầu tiên là
+Ngữ văn, rồi các chủ đề khoa học, rồi Toán, cuối cùng là Tiếng Anh — đường mỏng nhất vì
+một mình nó gánh cả 50 câu phần 3 trong khi tổ hợp khoa học chia đều cho ba chủ đề. Kho
+đi từ 689 lên **992 câu**.
+
+### Sổ lỗi thực thi — chỉ số cho trụ cột thứ hai
+
+Giao thức bảo người học *"lập sổ lỗi thực thi RIÊNG, tách hẳn khỏi sổ tay lỗi sai kiến
+thức"* — rồi để họ tự xoay xở, vì ứng dụng không có tính năng đó. Đây là khoảng trống thứ
+hai mà chính hệ thống tự tạo ra khi đặt chuẩn.
+
+Vì sao phải tách hai loại lỗi: **chúng cần hai cách chữa khác hẳn nhau.** Lỗ hổng kiến
+thức chữa bằng cách học lại chuyên đề; lỗi thực thi chữa bằng một thao tác vật lý trong
+phòng thi. Gộp chung một sổ thì cả hai chỉ số đều mất ý nghĩa, và người học sẽ đổ thêm
+giờ vào đúng chỗ *không phải* điểm nghẽn.
+
+Ba quyết định về cách làm:
+
+1. **Bắt buộc phân nhóm.** Một cuốn sổ ghi "hôm nay sai 3 câu" không dẫn tới hành động
+   nào; ghi "3 câu đều do đọc nhầm từ phủ định" thì dẫn thẳng tới một thao tác cho ngày
+   mai. Chọn nhóm xong là màn hình hiện luôn thao tác chống nhóm đó.
+2. **Ghi chú hỏi đúng ba việc**: đề hỏi gì, mình đã làm gì, đọc lướt chỗ nào.
+3. **Dưới 150 câu thì nói "chưa đo được"** thay vì một tỉ lệ bịa — tỉ lệ tính trên vài
+   chục câu dao động quá mạnh để kết luận điều gì.
+
+Việc xây màn hình này còn lộ ra một sai số trong chính giao thức: văn bản viết "tối đa 7
+lỗi trong 10 đề", nhưng 7 lỗi trên 1500 câu cho **49,6%** cơ hội — đã tụt dưới mốc 50%.
+Ngưỡng đúng là **6 lỗi** (54,8%). Văn bản được sửa theo phép tính, không phải ngược lại.
+
 ### Đề mẫu trọn vẹn kèm barem
 
 Hệ thống vẫn sinh được đề thi thử từ ma trận — nhưng **ma trận không phải đề**. Một ma trận
@@ -387,7 +436,7 @@ thành lời giải đúng.
 
 ### Ngân hàng câu hỏi
 
-Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **689 câu** trải đều 33
+Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **992 câu** trải đều 33
 chuyên đề, mỗi chuyên đề **tối thiểu 15 câu** — đúng bằng số câu của một phiếu cấp 6,
 nên không phiếu nào phải lặp câu để đủ số. Mọi câu đều kèm lời giải, và câu có phương
 án nhiễu đáng chú ý thì kèm luôn chú thích bẫy.
@@ -397,8 +446,8 @@ người nhắm điểm tuyệt đối:
 
 | Mức | Số câu | Tỉ lệ | Đề chuẩn |
 |---|---|---|---|
-| 4 — Vận dụng cao | 119 | 17,3% | 17% |
-| 5 — Phân loại | 67 | 9,7% | 7% |
+| 4 — Vận dụng cao | 193 | 19,5% | 17% |
+| 5 — Phân loại | 73 | 7,4% | 7% |
 
 Kho từng lệch hẳn về phía dễ — chỉ **4 câu phân loại trong 572**, và 12 chuyên đề không
 có lấy một câu khó nào. Một kho như vậy vẫn đưa được người học lên mức 120 điểm, nhưng
