@@ -77,6 +77,7 @@ export const TOPIC_INDEX: { id: string; name: string; tracks: TrackId[] }[] = [
 
 export const PAPER_INDEX: { id: string; title: string }[] = [
   { id: 'dm-hanoi-01', title: "Đề mẫu 01 · Toán tuyển sinh lớp 10 THPT Hà Nội" },
+  { id: 'dm-hanoi-02', title: "Đề mẫu 10 · Toán tuyển sinh lớp 10 THPT Hà Nội (đề 2)" },
   { id: 'dm-ntt-01', title: "Đề mẫu 06 · Toán — THCS & THPT Nguyễn Tất Thành" },
   { id: 'dm-chuyen-so-01', title: "Đề mẫu 03 · Toán chuyên — khối chuyên Sở Hà Nội" },
   { id: 'dm-khtn-v1-01', title: "Đề mẫu 05 · Toán vòng 1 — Chuyên KHTN" },
@@ -100,6 +101,7 @@ export interface PaperCard {
 
 export const PAPER_CARDS: PaperCard[] = [
   { id: 'dm-hanoi-01', code: 'M365-V10-DM01', title: "Đề mẫu 01 · Toán tuyển sinh lớp 10 THPT Hà Nội", track: 'thpt', minutes: 90, totalPoints: 10, items: 12, claims: 0 },
+  { id: 'dm-hanoi-02', code: 'M365-HN-02', title: "Đề mẫu 10 · Toán tuyển sinh lớp 10 THPT Hà Nội (đề 2)", track: 'thpt', minutes: 90, totalPoints: 10, items: 12, claims: 0 },
   { id: 'dm-ntt-01', code: 'M365-CT-DM06', title: "Đề mẫu 06 · Toán — THCS & THPT Nguyễn Tất Thành", track: 'chuyen', minutes: 90, totalPoints: 10, items: 12, claims: 0 },
   { id: 'dm-chuyen-so-01', code: 'M365-CT-DM03', title: "Đề mẫu 03 · Toán chuyên — khối chuyên Sở Hà Nội", track: 'chuyen', minutes: 150, totalPoints: 10, items: 8, claims: 0 },
   { id: 'dm-khtn-v1-01', code: 'M365-CT-DM05', title: "Đề mẫu 05 · Toán vòng 1 — Chuyên KHTN", track: 'chuyen', minutes: 120, totalPoints: 10, items: 9, claims: 0 },

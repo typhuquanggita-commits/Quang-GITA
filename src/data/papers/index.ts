@@ -1,5 +1,6 @@
 import type { ExamPaper, PaperItem } from '@/types';
 import { PAPER_HANOI_01 } from './hanoi';
+import { PAPER_HANOI_02 } from './hanoi-02';
 import { PAPER_KHTN_V2_01 } from './khtn';
 import { PAPER_CHUYEN_SO_01 } from './chuyen-so';
 import { PAPER_TN_THPT_01 } from './tn-thpt';
@@ -12,6 +13,7 @@ import { PAPER_LOP6_NN_01 } from './lop6-ngoai-ngu';
 /** Kho đề mẫu trọn vẹn — mỗi đề bám sát một ma trận đề trong BLUEPRINTS. */
 export const EXAM_PAPERS: ExamPaper[] = [
   PAPER_HANOI_01,
+  PAPER_HANOI_02,
   PAPER_NTT_01,
   PAPER_CHUYEN_SO_01,
   PAPER_KHTN_V1_01,

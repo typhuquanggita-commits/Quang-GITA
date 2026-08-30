@@ -27,8 +27,8 @@ export const SCALE = {
   formulas: 225,
   formulaGroups: 26,
   formulasStarred: 190,
-  papers: 9,
-  paperItems: 110,
+  papers: 10,
+  paperItems: 122,
   libraryFolders: 445,
   libraryArtifacts: 1195,
 } as const;
