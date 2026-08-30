@@ -266,120 +266,75 @@ function Shell(): React.ReactElement {
     return <Redirect to={{ name: 'tests' }} navigate={navigate} />;
   }
 
+  /*
+   * Five groups of at most six.
+   *
+   * This was one group of seventeen, which is what happens when routes are
+   * added one at a time and each addition looks harmless. A learner cannot
+   * find anything in a flat list that long, which defeats the point of every
+   * surface in it — a resource that cannot be reached at the moment of need
+   * is a resource nobody has.
+   *
+   * The grouping is by *when a learner reaches for it*, not by what the code
+   * calls it: what you open today, what you consult while working, what you
+   * plan with, what you sit and read afterwards, and what only staff touch.
+   */
   const groups: Array<{ label: string; items: NavItem[] }> = [
     {
-      label: t('nav.study'),
+      label: t('nav.daily'),
       items: [
         { route: { name: 'today' }, label: t('nav.today'), icon: <IconLightning size={18} /> },
         { route: { name: 'dashboard' }, label: t('nav.dashboard'), icon: <IconHome size={18} /> },
         { route: { name: 'practice' }, label: t('nav.practice'), icon: <IconTarget size={18} /> },
-        { route: { name: 'vocab' }, label: t('nav.vocab'), icon: <IconCards size={18} /> },
-        { route: { name: 'lessons' }, label: t('nav.lessons'), icon: <IconBook size={18} /> },
-        {
-          route: { name: 'curriculum' },
-          label: locale === 'vi' ? 'Đề cương' : 'Syllabus',
-          icon: <IconBook size={18} />,
-        },
-        {
-          route: { name: 'programmes' },
-          label: locale === 'vi' ? 'Chương trình & học phí' : 'Programmes',
-          icon: <IconCalendar size={18} />,
-        },
-        {
-          route: { name: 'topics' },
-          label: locale === 'vi' ? 'Bộ phiếu' : 'Packets',
-          icon: <IconClipboard size={18} />,
-        },
-        {
-          route: { name: 'tactics' },
-          label: locale === 'vi' ? 'Kho bí kíp' : 'Tactics',
-          icon: <IconLightning size={18} />,
-        },
-        {
-          route: { name: 'expert-solutions' },
-          label: locale === 'vi' ? 'Lời giải chuyên gia' : 'Expert solutions',
-          icon: <IconSparkle size={18} />,
-        },
-        {
-          route: { name: 'must-know' },
-          label: locale === 'vi' ? 'Phải thuộc lòng' : 'Must know',
-          icon: <IconSigma size={18} />,
-        },
-        {
-          route: { name: 'roadmap' },
-          label: locale === 'vi' ? 'Lộ trình dài hạn' : 'Roadmap',
-          icon: <IconTarget size={18} />,
-        },
-        { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
-        {
-          route: { name: 'test-dates' },
-          label: locale === 'vi' ? 'Lịch thi SAT' : 'Test dates',
-          icon: <IconClock size={18} />,
-        },
-        {
-          route: { name: 'certificate' },
-          label: locale === 'vi' ? 'Chứng nhận' : 'Certificate',
-          icon: <IconSparkle size={18} />,
-        },
-        {
-          route: { name: 'guardian-report' },
-          label: locale === 'vi' ? 'Phiếu báo phụ huynh' : 'Guardian report',
-          icon: <IconClipboard size={18} />,
-        },
-        { route: { name: 'gita' }, label: t('nav.gita'), icon: <IconSparkle size={18} /> },
-      ],
-    },
-    {
-      label: t('nav.assess'),
-      items: [
-        { route: { name: 'tests' }, label: t('nav.tests'), icon: <IconTarget size={18} /> },
-        {
-          route: { name: 'papers' },
-          label: locale === 'vi' ? 'Bộ đề công bố' : 'Papers',
-          icon: <IconClipboard size={18} />,
-        },
         {
           route: { name: 'review' },
           label: t('nav.review'),
           icon: <IconRefresh size={18} />,
           badge: due > 0 ? due : undefined,
         },
+        { route: { name: 'vocab' }, label: t('nav.vocab'), icon: <IconCards size={18} /> },
+        { route: { name: 'gita' }, label: t('nav.gita'), icon: <IconSparkle size={18} /> },
+      ],
+    },
+    {
+      label: t('nav.library'),
+      items: [
+        { route: { name: 'lessons' }, label: t('nav.lessons'), icon: <IconBook size={18} /> },
+        { route: { name: 'topics' }, label: t('nav.topics'), icon: <IconClipboard size={18} /> },
+        { route: { name: 'expert-solutions' }, label: t('nav.solutions'), icon: <IconSparkle size={18} /> },
+        { route: { name: 'must-know' }, label: t('nav.mustKnow'), icon: <IconSigma size={18} /> },
+        { route: { name: 'tactics' }, label: t('nav.tactics'), icon: <IconLightning size={18} /> },
+      ],
+    },
+    {
+      label: t('nav.pathway'),
+      items: [
+        { route: { name: 'roadmap' }, label: t('nav.roadmap'), icon: <IconTarget size={18} /> },
+        { route: { name: 'curriculum' }, label: t('nav.curriculum'), icon: <IconBook size={18} /> },
+        { route: { name: 'plan' }, label: t('nav.plan'), icon: <IconCalendar size={18} /> },
+        { route: { name: 'test-dates' }, label: t('nav.testDates'), icon: <IconClock size={18} /> },
+        { route: { name: 'programmes' }, label: t('nav.programmes'), icon: <IconCalendar size={18} /> },
+      ],
+    },
+    {
+      label: t('nav.assess'),
+      items: [
+        { route: { name: 'tests' }, label: t('nav.tests'), icon: <IconTarget size={18} /> },
+        { route: { name: 'papers' }, label: t('nav.papers'), icon: <IconClipboard size={18} /> },
         { route: { name: 'analytics' }, label: t('nav.analytics'), icon: <IconChart size={18} /> },
-        {
-          route: { name: 'dossier' },
-          label: locale === 'vi' ? 'Hồ sơ học viên' : 'Dossier',
-          icon: <IconClipboard size={18} />,
-        },
+        { route: { name: 'dossier' }, label: t('nav.dossier'), icon: <IconClipboard size={18} /> },
+        { route: { name: 'certificate' }, label: t('nav.certificate'), icon: <IconSparkle size={18} /> },
+        { route: { name: 'guardian-report' }, label: t('nav.guardianReport'), icon: <IconClipboard size={18} /> },
       ],
     },
     {
       label: t('nav.system'),
       items: [
-        {
-          route: { name: 'console' },
-          label: locale === 'vi' ? 'Giảng dạy' : 'Teaching',
-          icon: <IconClipboard size={18} />,
-        },
-        {
-          route: { name: 'metrics' },
-          label: locale === 'vi' ? 'Chỉ số tổ chức' : 'Metrics',
-          icon: <IconChart size={18} />,
-        },
-        {
-          route: { name: 'calibration' },
-          label: locale === 'vi' ? 'Hiệu chuẩn' : 'Calibration',
-          icon: <IconSigma size={18} />,
-        },
-        {
-          route: { name: 'brand' },
-          label: locale === 'vi' ? 'Nhận diện' : 'Identity',
-          icon: <IconSparkle size={18} />,
-        },
-        {
-          route: { name: 'shortcuts' },
-          label: locale === 'vi' ? 'Phím tắt' : 'Shortcuts',
-          icon: <IconKeyboard size={18} />,
-        },
+        { route: { name: 'console' }, label: t('nav.console'), icon: <IconClipboard size={18} /> },
+        { route: { name: 'metrics' }, label: t('nav.metrics'), icon: <IconChart size={18} /> },
+        { route: { name: 'calibration' }, label: t('nav.calibration'), icon: <IconSigma size={18} /> },
+        { route: { name: 'brand' }, label: t('nav.brand'), icon: <IconSparkle size={18} /> },
+        { route: { name: 'shortcuts' }, label: t('nav.shortcuts'), icon: <IconKeyboard size={18} /> },
         { route: { name: 'settings' }, label: t('nav.settings'), icon: <IconSettings size={18} /> },
       ],
     },

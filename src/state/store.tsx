@@ -34,7 +34,8 @@ import type {
   TestForm,
   ThemeMode,
 } from '../types.ts';
-import { loadRaw, makeDebouncedSaver, migrate, SCHEMA_VERSION, clearAll } from '../lib/storage.ts';
+import { loadRaw, makeDebouncedSaver, migrate, clearAll } from '../lib/storage.ts';
+import { hydrateState, initialState } from './hydrate.ts';
 import { own } from '../lib/record.ts';
 import { addDays, isoDate, uid } from '../lib/util.ts';
 import { estimateAbility } from '../engine/irt.ts';
@@ -53,7 +54,6 @@ import {
 } from '../auth/model.ts';
 import type { HabitEntry } from '../gita/habits.ts';
 import type { AbsorptionTier, PractitionerLevel } from '../gita/framework.ts';
-import { TIERS } from '../gita/framework.ts';
 import {
   can,
   levelForScore,
@@ -66,60 +66,6 @@ import {
 /* ------------------------------------------------------------------ */
 /* Defaults                                                            */
 /* ------------------------------------------------------------------ */
-
-export const DEFAULT_PREFERENCES: Preferences = {
-  locale: 'vi',
-  theme: 'system',
-  fontScale: 1,
-  dyslexicFont: false,
-  reduceMotion: false,
-  timeMultiplier: 1,
-  proctoring: 'monitor',
-  showTimerByDefault: true,
-  soundCues: false,
-};
-
-export const DEFAULT_PROFILE: Profile = {
-  name: '',
-  email: '',
-  targetScore: 1500,
-  testDate: null,
-  createdAt: Date.now(),
-  onboarded: false,
-};
-
-function initialState(): AppState {
-  return {
-    version: SCHEMA_VERSION,
-    profile: { ...DEFAULT_PROFILE },
-    preferences: { ...DEFAULT_PREFERENCES },
-    ability: {},
-    sectionAbility: {
-      rw: { theta: 0, se: 1, n: 0, updatedAt: Date.now() },
-      math: { theta: 0, se: 1, n: 0, updatedAt: Date.now() },
-    },
-    attempts: [],
-    forms: [],
-    srs: {},
-    plan: null,
-    bookmarks: [],
-    activity: {},
-    lessons: {},
-    packets: {},
-    org: seedOrg('', ''),
-    gita: {
-      // A new learner starts at tier 1, whose habits are the only two that
-      // matter before attendance is real.
-      activeHabitIds: [...TIERS[1].habitIds],
-      habitLog: [],
-      selfReport: {},
-      observedIndicators: [],
-      practitionerLevel: null,
-      tierOverride: null,
-    },
-    autopilot: { completedBlocks: {}, queue: null },
-  };
-}
 
 /* ------------------------------------------------------------------ */
 /* Actions                                                             */
@@ -682,21 +628,7 @@ const StoreContext = createContext<StoreValue | null>(null);
 function loadInitial(): AppState {
   const migrated = migrate(loadRaw());
   if (!migrated) return initialState();
-  const base = initialState();
-  // Merge field by field so a payload written by an older build that lacks a
-  // newer key still produces a complete state object.
-  return {
-    ...base,
-    ...(migrated as Partial<AppState>),
-    profile: { ...base.profile, ...((migrated as Partial<AppState>).profile ?? {}) },
-    preferences: { ...base.preferences, ...((migrated as Partial<AppState>).preferences ?? {}) },
-    sectionAbility: { ...base.sectionAbility, ...((migrated as Partial<AppState>).sectionAbility ?? {}) },
-    gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
-    autopilot: { ...base.autopilot, ...((migrated as Partial<AppState>).autopilot ?? {}) },
-    lessons: { ...base.lessons, ...((migrated as Partial<AppState>).lessons ?? {}) },
-    packets: { ...base.packets, ...((migrated as Partial<AppState>).packets ?? {}) },
-    version: SCHEMA_VERSION,
-  };
+  return hydrateState(migrated);
 }
 
 export function StoreProvider({ children }: { children: React.ReactNode }): React.ReactElement {
@@ -778,21 +710,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }): Reac
     }
     const migrated = migrate(parsed);
     if (!migrated) return { ok: false, error: 'Backup was written by an incompatible version.' };
-    const base = initialState();
-    dispatch({
-      type: 'hydrate',
-      state: {
-        ...base,
-        ...(migrated as Partial<AppState>),
-        profile: { ...base.profile, ...((migrated as Partial<AppState>).profile ?? {}) },
-        preferences: { ...base.preferences, ...((migrated as Partial<AppState>).preferences ?? {}) },
-        gita: { ...base.gita, ...((migrated as Partial<AppState>).gita ?? {}) },
-        autopilot: { ...base.autopilot, ...((migrated as Partial<AppState>).autopilot ?? {}) },
-    lessons: { ...base.lessons, ...((migrated as Partial<AppState>).lessons ?? {}) },
-    packets: { ...base.packets, ...((migrated as Partial<AppState>).packets ?? {}) },
-        version: SCHEMA_VERSION,
-      } as AppState,
-    });
+    dispatch({ type: 'hydrate', state: hydrateState(migrated) });
     return { ok: true };
   }, []);
 

@@ -73,6 +73,13 @@ export const ROUTE_PERMISSION: Partial<Record<RouteName, Permission>> = {
   'test-dates': 'plan.own',
   roadmap: 'plan.own',
   exam: 'test.take',
+  /*
+   * A score report is the same class of thing as the solutions and analysis
+   * built from it, and those both require a permission. It carried none —
+   * harmless today because every current role holds review.own, and a hole
+   * the moment a guardian role is added without it.
+   */
+  result: 'review.own',
   review: 'review.own',
   'attempt-review': 'review.own',
   'attempt-analysis': 'analytics.own',

@@ -25,9 +25,21 @@ export default defineConfig({
     chunkSizeWarningLimit: 700,
     rollupOptions: {
       output: {
+        /*
+         * The rule used to be "anything under /src/data/ is the bank", which
+         * was right when that directory held only items. It now also holds the
+         * vocabulary deck, the expert solutions, the must-know reference, the
+         * syllabus and the fee table — none of which the store needs, all of
+         * which were being downloaded before a learner could open Settings.
+         *
+         * The store imports QUESTION_BY_ID, so the item bank is genuinely
+         * eager and stays a named chunk. Everything else is left to Rollup,
+         * which splits it into the lazily-loaded route that actually imports
+         * it. Content a learner never opens is content they never download.
+         */
         manualChunks(id) {
           if (id.includes('node_modules')) return 'vendor';
-          if (id.includes('/src/data/')) return 'bank';
+          if (/\/src\/data\/(bank|generator|blueprint)/.test(id)) return 'bank';
           return undefined;
         },
       },

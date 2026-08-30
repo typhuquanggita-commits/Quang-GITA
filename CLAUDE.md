@@ -9,10 +9,10 @@ beyond React.
 ```bash
 npm run dev          # dev server on :3000
 npm run typecheck    # tsc --noEmit
-npm test             # 277 unit tests (node --test, native TS stripping)
+npm test             # 454 unit tests (node --test, native TS stripping)
 npm run check:bank   # item bank invariants
 npm run build        # typecheck then production build
-npm run test:browser # 112 checks against the built app via Playwright
+npm run test:browser # 159 checks against the built app via Playwright
 ```
 
 In this sandbox the browser test needs an explicit path:
@@ -56,6 +56,17 @@ holding this line in `tests/gita.test.ts` and `tests/autopilot.test.ts`.
 `src/lib/util.ts`. `toISOString().slice(0,10)` shifts the day boundary for
 every user east of Greenwich and silently drops entries.
 
+**State restored from outside the app is shape-checked before it is state.**
+Local storage and an imported backup are both untrusted input. Everything
+that rebuilds `AppState` from a payload goes through `hydrateState` in
+`src/state/hydrate.ts`, which merges key by key, discards a slice of the wrong
+runtime kind, and rebuilds open-keyed records with a null prototype. A blanket
+spread of parsed JSON is how `attempts: 4` becomes a crash on `.map` and a
+truncated `org` becomes a blank page — `currentAccount` reads
+`org.accounts.find` before anything renders. There were two hand-written
+copies of this merge and they had already drifted; there is one now, with
+tests in `tests/hydrate.test.ts`.
+
 **Every automated decision must be explainable.** A rule in
 `src/engine/interventions.ts` records the evidence that triggered it and a
 rationale written for a human. If you cannot state why a rule should exist, it
@@ -90,6 +101,7 @@ to rely on a number deserves to know before they act, not after.
 | How is a topic worked end to end? | `src/engine/packets.ts`, `src/data/topics.ts` |
 | What does a learner see after a test? | `src/engine/attemptReview.ts` |
 | What is the personalised route, and why? | `src/engine/dossier.ts` |
+| How is stored or imported state restored? | `src/state/hydrate.ts` |
 
 ## Known limits
 
