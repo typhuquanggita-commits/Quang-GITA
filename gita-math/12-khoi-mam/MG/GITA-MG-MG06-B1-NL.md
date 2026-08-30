@@ -1,0 +1,187 @@
+---
+ma: "GITA-MG-MG06-B1-NL"
+khoi: "MG"
+khoi_ten: "Mẫu giáo lớn — tiền tiểu học"
+chu_de: "MG06"
+chu_de_ten: "Nhận biết hình phẳng và khối"
+mach: "H"
+mach_ten: "Hình học và Đo lường"
+buoi: "1"
+thoi_luong: "25"
+thang_diem: "không chấm điểm"
+chuan: "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán"
+cap_nhat: "2026-08-30"
+---
+
+# Nhận biết hình phẳng và khối — buổi 1/4
+
+**HỌC VIỆN PHÁT TRIỂN TÀI NĂNG TOÀN CẦU — GITA** · gita.edu.vn  
+Mẫu giáo lớn — tiền tiểu học · 5 – 6 tuổi · Mã: **GITA-MG-MG06-B1-NL**  
+Mạch: **Hình học và Đo lường** *(Cambridge: Geometry and Measure)*  
+Thời lượng: **25 phút** · **Không chấm điểm**  
+Bản dành cho: **người lớn ngồi cùng**
+
+---
+
+## YÊU CẦU CẦN ĐẠT CỦA BUỔI NÀY
+
+*Theo Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán.*
+
+- Gọi tên hình tròn, hình vuông, hình tam giác, hình chữ nhật
+- Gọi tên khối cầu, khối trụ, khối vuông, khối chữ nhật
+- Tìm được đồ vật quanh mình có dạng các hình khối ấy
+
+## TƯ DUY BUỔI NÀY RÈN
+
+*Theo khung Thinking and Working Mathematically của Cambridge Primary Mathematics.*
+
+- **Xếp thành nhóm** *(Classifying)* — Chia các thứ vào các nhóm theo một tiêu chí.  
+  Câu người lớn hỏi: “Con xếp chúng thành mấy nhóm? Vì sao xếp thế?”
+- **Chỉ ra chỗ giống nhau** *(Characterising)* — Nói được các thứ trong một nhóm giống nhau ở điểm nào.  
+  Câu người lớn hỏi: “Mấy cái này giống nhau ở chỗ nào?”
+
+## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
+
+- Một quả bóng hoặc một con thú bông
+- Một rổ đồ vật khác nhau về màu, hình, cỡ
+- Bút chì màu
+- Tranh các hoạt động trong ngày
+
+---
+
+## Chơi khởi động
+
+**Trên – dưới, trước – sau, phải – trái**
+
+> **Cô/mẹ đọc lên:** Con đứng dậy nhé. Cô nói hướng nào thì con đặt quả bóng ở hướng ấy.
+
+**Đáp án từng việc**
+
+a) Con đặt quả bóng ở phía dưới mình. Rồi kể tên một đồ vật đang ở phía dưới con.
+   → **vật nào ở dưới chân con**
+
+b) Con đặt quả bóng ở bên trái mình. Rồi kể tên một đồ vật đang ở bên trái con.
+   → **vật nào ở tay trái con**
+
+c) Con đặt quả bóng ở phía trên mình. Rồi kể tên một đồ vật đang ở phía trên con.
+   → **vật nào ở trên đầu con**
+
+d) Con đặt quả bóng ở phía trước mình. Rồi kể tên một đồ vật đang ở phía trước con.
+   → **vật nào ở trước mặt con**
+
+**Hỏi thêm một câu** *(rèn: Cho một ví dụ · Nói cho người khác tin)*: Nếu con quay người lại thì quả bóng còn ở bên phải con nữa không?
+
+**Thế nào là con đã hiểu:** Trẻ nhận ra phải – trái **đổi theo hướng mình đứng**, còn trên – dưới thì không đổi. Đây là chỗ khó thật của chủ đề.
+
+**Con tắc thì làm gì:** Buộc một sợi dây màu vào cổ tay phải làm dấu. Bỏ dây khi trẻ đã quen.
+
+**Nếu con làm nhanh:** Đứng đối diện nhau rồi hỏi tay phải của cô ở phía nào của con.
+
+
+---
+
+## Cùng khám phá
+
+**Xếp thành nhóm**
+
+> **Cô/mẹ đọc lên:** Con xếp các thứ này thành từng nhóm. Xếp xong nói cho cô vì sao con xếp thế.
+
+**Đáp án từng việc**
+
+a) Con xếp các đồ vật này thành nhóm theo loại đồ vật. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở loại đồ vật là đúng**
+
+b) Con xếp các đồ vật này thành nhóm theo hình dạng. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở hình dạng là đúng**
+
+c) Con xếp các đồ vật này thành nhóm theo màu sắc. Được mấy nhóm?
+   → **trẻ tự xếp — miễn là mọi vật trong một nhóm giống nhau ở màu sắc là đúng**
+
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Chỉ ra chỗ giống nhau)*: Có cách xếp nào khác không? Cùng số đồ này mà xếp kiểu khác được không?
+
+**Thế nào là con đã hiểu:** Trẻ xếp được **cùng một rổ đồ theo hai tiêu chí khác nhau**. Đó là dấu hiệu trẻ hiểu tiêu chí là do mình chọn, không phải là thuộc tính cố định của đồ vật.
+
+**Con tắc thì làm gì:** Chọn hộ tiêu chí đầu tiên: “Con để tất cả cái màu đỏ vào đây”.
+
+**Nếu con làm nhanh:** Người lớn xếp sẵn rồi hỏi trẻ đoán mình đã xếp theo tiêu chí gì.
+
+
+---
+
+## Tự làm thử
+
+**Khoanh, nối, tô**
+
+> **Cô/mẹ đọc lên:** Con làm từng việc một, làm xong việc này mới sang việc kia.
+
+**Đáp án từng việc**
+
+a) Con tô màu hình tròn.
+   → **chỉ tô hình tròn**
+
+b) Con khoanh tròn nhóm có nhiều hơn.
+   → **nhóm nhiều hơn**
+
+c) Con khoanh vào vật ở giữa hàng.
+   → **vật chính giữa**
+
+**Hỏi thêm một câu** *(rèn: Xếp thành nhóm · Xem chỗ nào chưa ổn)*: Con kiểm lại xem có bỏ sót cái nào không?
+
+**Thế nào là con đã hiểu:** Trẻ tự kiểm lại sau khi làm xong, không nộp ngay. Thói quen nhìn lại bài là thứ phải tập từ tuổi này.
+
+**Con tắc thì làm gì:** Làm mẫu việc đầu tiên rồi để trẻ làm tiếp.
+
+**Nếu con làm nhanh:** Đổi vai: người lớn làm sai một chỗ cho trẻ tìm ra.
+
+
+---
+
+## Đố vui cuối buổi
+
+**Sáng, trưa, chiều, tối**
+
+> **Cô/mẹ đọc lên:** Mình kể lại một ngày của con nhé, từ lúc thức dậy đến lúc đi ngủ.
+
+**Đáp án từng việc**
+
+a) Con ăn sáng vào buổi nào trong ngày?
+   → **buổi sáng**
+
+b) Con đi ngủ vào buổi nào trong ngày?
+   → **buổi tối**
+
+c) Con tan học vào buổi nào trong ngày?
+   → **buổi chiều**
+
+d) Con đánh răng buổi sớm vào buổi nào trong ngày?
+   → **buổi sáng**
+
+**Hỏi thêm một câu** *(rèn: Nói cho người khác tin · Cho một ví dụ)*: Hôm qua là thứ mấy? Vậy ngày mai là thứ mấy?
+
+**Thế nào là con đã hiểu:** Trẻ kể lại được thứ tự các buổi trong ngày, và dùng đúng hôm qua – hôm nay – ngày mai.
+
+**Con tắc thì làm gì:** Xếp tranh theo thứ tự cùng trẻ, vừa xếp vừa kể.
+
+**Nếu con làm nhanh:** Hỏi việc gì làm trước, việc gì làm sau trong một chuỗi ba việc.
+
+
+---
+
+## BỐN ĐIỀU GIỮ CHO CON THÍCH TOÁN
+
+1. **Mỗi buổi mở bằng một trò chơi hoặc một câu đố, không mở bằng bài tập.** — Ấn tượng của ba phút đầu quyết định trẻ ngồi vào bàn với tâm thế nào.
+2. **Mỗi buổi có ít nhất một việc dùng **đồ vật thật** — que tính, hột hạt, cúc áo, ngón tay — chứ không chỉ có giấy bút.** — Ở tuổi này khái niệm số hình thành qua tay trước khi hình thành qua mắt.
+3. **Mỗi buổi kết bằng một việc trẻ **chắc chắn làm được**.** — Buổi học kết thúc ở cảm giác nào thì trẻ nhớ cảm giác ấy, không nhớ nội dung.
+4. **Không dùng bút đỏ, không xếp hạng, không so sánh trẻ này với trẻ khác. Sai thì ghi lại để buổi sau làm lại, không ghi điểm trừ.** — Trẻ sợ sai sẽ ngừng đoán, mà ngừng đoán là ngừng học toán.
+
+## ĐỐI CHIẾU VỚI CAMBRIDGE
+
+Khối này tương ứng **Cambridge Early Years / đầu Stage 1**. Phần trùng nhau: Đếm tới 10, nhận biết chữ số, so sánh nhiều – ít, nhận dạng hình phẳng và khối, xếp theo quy luật.
+
+*Cambridge đi sớm hơn ở:* Cambridge Stage 1 đã bắt đầu cộng trừ trong phạm vi 10 và làm quen số chẵn lẻ; chương trình mầm non Việt Nam để phần ấy sang lớp 1.
+
+*Chương trình Việt Nam đi sớm hơn ở:* Định hướng không gian so với bản thân và định hướng thời gian trong ngày được chương trình mầm non Việt Nam làm kỹ hơn và sớm hơn.
+
+---
+
+*Buổi học do bộ sinh GITA biên soạn ngày 2026-08-30. Mọi đáp số do mã tính ra. Bám Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán, bổ sung khung Thinking and Working Mathematically của Cambridge Primary Mathematics.*

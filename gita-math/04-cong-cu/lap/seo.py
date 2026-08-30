@@ -382,7 +382,9 @@ LOGO_SVG = (
     '<circle cx="50" cy="50" r="9" fill="currentColor"/></svg>'
 )
 
-MUC_CHINH = [("Lớp 3", "/toan-lop-3/"), ("Lớp 4", "/toan-lop-4/"),
+MUC_CHINH = [("Trước lớp 3", "/toan-tien-tieu-hoc/"),
+             ("Lớp 1", "/toan-lop-1/"), ("Lớp 2", "/toan-lop-2/"),
+             ("Lớp 3", "/toan-lop-3/"), ("Lớp 4", "/toan-lop-4/"),
              ("Lớp 5", "/toan-lop-5/"), ("Đề thi", "/de-thi/"),
              ("Đọc vị đề", "/doc-vi/"), ("Lộ trình", "/lo-trinh/"),
              ("Thi vào 6", "/thi-vao-6/")]

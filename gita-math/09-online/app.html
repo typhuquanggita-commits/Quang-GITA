@@ -289,6 +289,7 @@ input[type=search]{min-width:230px}
       <button data-v="ban-do">Bản đồ kiến thức<span class="k">4</span></button>
       <button data-v="doc-vi">Sơ đồ đọc vị<span class="k">D</span></button>
       <button data-v="lo-trinh-chuan">Lộ trình chuẩn<span class="k">L</span></button>
+      <button data-v="mam">Tiền tiểu học · Lớp 1 · 2<span class="k">M</span></button>
       <button data-v="chuyen-de">8 nhóm chuyên đề<span class="k">5</span></button>
       <button data-v="cum">96 cụm chuyên đề<span class="k">8</span></button>
       <div class="nav-h">Đánh giá</div>
@@ -334,15 +335,19 @@ const DATA = (() => {
   });
   delete d.bang_chuoi;
   // Dòng bảng Markdown được tách thành mảng ô khi nén — ghép lại thành văn bản.
-  const ghep = o => {
-    if (Array.isArray(o.md)) {
-      o.md = o.md.map(x => Array.isArray(x) ? "| " + x.join(" | ") + " |" : x).join("\n");
-    }
-  };
+  const noi = a => a.map(x => Array.isArray(x) ? "| " + x.join(" | ") + " |" : x).join("\n");
+  const ghep = o => { if (Array.isArray(o.md)) o.md = noi(o.md); };
   for (const k in (d.kem || {})) ghep(d.kem[k]);
   for (const x of (d.so_do || [])) ghep(x);
   for (const x of (d.lo_trinh || [])) ghep(x);
   for (const x of (d.ban_do || [])) ghep(x);
+  // Khối Mầm lồng sâu hơn một tầng: mỗi buổi có hai bản, mỗi bản là một mảng
+  // dòng. Quên tầng này thì màn hình khối Mầm hỏng còn các màn hình khác vẫn
+  // chạy — đúng kiểu lỗi chỉ lộ ra khi mở đúng một trang.
+  for (const k in (d.mam_noi || {})) {
+    const b = d.mam_noi[k];
+    for (const ban in b) if (Array.isArray(b[ban])) b[ban] = noi(b[ban]);
+  }
   return d;
 })();
 
@@ -1285,6 +1290,81 @@ function veLoTrinhChuan(ma) {
     }).join("")}</div>`).join("")}`;
 }
 
+/* ============================ TRANG: KHỐI MẦM ============================ */
+/* Ba khối 5–8 tuổi. Màn hình này khác hẳn màn hình phiếu của lớp 3–5 ở một chỗ:
+   mỗi buổi có **hai bản** — bản của trẻ và bản người lớn ngồi cùng — và mặc định
+   mở bản người lớn, vì người mở ứng dụng ở tuổi này luôn là người lớn. */
+let LOC_MAM = { khoi: "MG", ban: "nguoi_lon" };
+
+function veMam(ma) {
+  const ds = DATA.mam || [];
+  const K = (DATA.mam_khung || {}).khoi || {};
+  if (!ds.length) return chuaPhatHanh("Khối Mầm chưa có trong bản này");
+
+  if (ma) {
+    const d = ds.find(x => x.ma === ma);
+    if (!d) return veMam();
+    const noi = (DATA.mam_noi || {})[ma] || {};
+    const ban = LOC_MAM.ban;
+    const md = noi[ban];
+    MAIN().innerHTML = `<div class="row" style="margin-bottom:14px">
+      <button class="btn" data-go="mam">← Tất cả buổi học</button>
+      <button class="btn${ban === "tre" ? " on" : ""}" data-mam-ban="tre">Bản của trẻ</button>
+      <button class="btn${ban === "nguoi_lon" ? " on" : ""}" data-mam-ban="nguoi_lon">Bản người lớn ngồi cùng</button>
+    </div>
+    <div class="card pad" style="margin-bottom:14px">
+      <div class="eyebrow">${esc(d.khoi_ten)} · ${esc(d.tuoi)} · ${esc(d.mach_ten)}
+        <span style="opacity:.6">(Cambridge: ${esc(d.cam)})</span></div>
+      <div class="row" style="margin-top:8px">
+        <span class="chip">${d.thoi_luong} phút</span>
+        <span class="chip">${d.thang_diem && d.thang_diem !== "None"
+          ? "thang " + esc(String(d.thang_diem)) : "không chấm điểm"}</span>
+        <span class="chip">${esc(d.chuan)}</span></div>
+    </div>
+    <div class="card pad md">${md ? mdToHtml(md) : "<p>Chưa có nội dung.</p>"}</div>`;
+    return;
+  }
+
+  const theo = {};
+  ds.filter(x => x.khoi === LOC_MAM.khoi).forEach(x => {
+    (theo[x.chu_de] = theo[x.chu_de] || []).push(x);
+  });
+  const k = K[LOC_MAM.khoi] || {};
+  MAIN().innerHTML = `
+  <div class="page-h"><div><div class="eyebrow">Trước lớp 3</div>
+    <h1>Tiền tiểu học, lớp 1 và lớp 2</h1>
+    <p class="sub">Ba khối này có khung riêng, không dùng khung 90 phút của lớp 3–5:
+    buổi ngắn hơn, câu lệnh ngắn hơn, luôn có đồ vật thật, và khối mẫu giáo thì
+    không chấm điểm. Bám Chương trình của Bộ Giáo dục và Đào tạo, bổ sung khung
+    tư duy Thinking and Working Mathematically của Cambridge Primary Mathematics.</p>
+  </div></div>
+  <div class="row" style="margin-bottom:16px">${
+    Object.keys(K).map(x => `<button class="btn${x === LOC_MAM.khoi ? " on" : ""}"
+      data-mam-khoi="${x}">${esc(K[x].ten_ngan)} · ${esc(K[x].tuoi)}</button>`).join("")}</div>
+  <div class="card pad" style="margin-bottom:18px">
+    <div class="row"><span class="chip">${k.phut || ""} phút mỗi buổi</span>
+      <span class="chip">${k.thang ? "thang " + k.thang : "không chấm điểm"}</span>
+      <span class="chip">${(k.so_chu_de || 0)} chủ đề</span>
+      <span class="chip">${(k.buoi_moi_chu_de || 0)} buổi mỗi chủ đề</span></div>
+    <p style="margin:10px 0 0;font-size:13.5px;color:var(--chu-nhat)">${inline(k.ghi_chu || "")}</p>
+  </div>
+  ${Object.keys(theo).sort().map(cd => {
+    const bs = theo[cd].sort((a, b) => a.buoi - b.buoi);
+    const d0 = bs[0];
+    return `<h3 style="font-size:15px;margin:20px 0 8px">${esc(d0.chu_de_ten)}
+      <span style="font-weight:400;opacity:.6;font-size:13px">· ${esc(d0.mach_ten)}</span></h3>
+      <div class="card pad" style="margin-bottom:8px">
+        <div class="eyebrow">Yêu cầu cần đạt theo chương trình của Bộ</div>
+        <ul style="margin:8px 0 0;padding-left:18px;font-size:13.5px">${
+          (d0.yeu_cau || []).map(y => `<li>${esc(y)}</li>`).join("")}</ul></div>
+      <div class="grid g3">${bs.map(x => `<a class="card pad" href="#/mam/${x.ma}"
+        style="text-decoration:none;color:inherit;display:block;border-left:4px solid var(--xanh)">
+        <div class="eyebrow">Buổi ${x.buoi}</div>
+        <div class="row" style="margin-top:6px"><span class="chip">${x.thoi_luong} phút</span>
+        <span class="chip">2 bản</span></div></a>`).join("")}</div>`;
+  }).join("")}`;
+}
+
 /* ============================ TRANG: SƠ ĐỒ ĐỌC VỊ ============================ */
 let LOC_DV = { lop: 4 };
 function veDocVi(ma) {
@@ -1745,6 +1825,7 @@ function veHoSo() {
 const TRANG = {
   "tong-quan": veTongQuan, "lo-trinh": veLoTrinh, "thu-vien": veThuVien,
   "ban-do": veBanDo, "doc-vi": veDocVi, "lo-trinh-chuan": veLoTrinhChuan,
+  "mam": veMam,
   "chuyen-de": veChuyenDe, "cum": veDanhSachCum,
   "de-thi": veDeThi, "phan-quyen": vePhanQuyen, "test": veTest, "ho-so": veHoSo
 };
@@ -1760,13 +1841,24 @@ function dinhTuyen() {
   else if (v === "ban-do") { veBanDo(a); }
   else if (v === "doc-vi") { veDocVi(a); }
   else if (v === "lo-trinh-chuan") { veLoTrinhChuan(a); }
+  else if (v === "mam") { veMam(a); }
   else (TRANG[v] || veTongQuan)();
   MAIN().focus({ preventScroll: true });
   window.scrollTo({ top: 0 });
 }
 document.addEventListener("click", e => {
   const b = e.target.closest("[data-go]");
-  if (b) { location.hash = "#/" + b.dataset.go; }
+  if (b) { location.hash = "#/" + b.dataset.go; return; }
+  // Hai nút lọc của khối Mầm: đổi khối đang xem, và đổi giữa bản của trẻ với
+  // bản người lớn. Vẽ lại tại chỗ chứ không đổi địa chỉ, để người dùng không
+  // mất vị trí đang đọc khi chỉ muốn liếc sang bản kia.
+  const k = e.target.closest("[data-mam-khoi]");
+  if (k) { LOC_MAM.khoi = k.dataset.mamKhoi; veMam(); return; }
+  const n = e.target.closest("[data-mam-ban]");
+  if (n) {
+    LOC_MAM.ban = n.dataset.mamBan;
+    veMam((location.hash.split("/")[2] || ""));
+  }
 });
 $("#nav").addEventListener("click", e => {
   const b = e.target.closest("button[data-v]"); if (b) location.hash = "#/" + b.dataset.v;
@@ -1797,7 +1889,7 @@ function capNhatGhiChuVai() {
 }
 /* Ẩn mục điều hướng mà vai trò hiện tại không có quyền xem */
 const NAV_QUYEN = { "de-thi": "de_moc", "ho-so": "ho_so_minh", "thu-vien": "chi_muc",
-  "ban-do": "ban_do", "doc-vi": "ban_do", "lo-trinh-chuan": "ban_do",
+  "ban-do": "ban_do", "doc-vi": "ban_do", "lo-trinh-chuan": "ban_do", "mam": "ban_do",
   "chuyen-de": "chi_muc",
   "cum": "chi_muc", "test": "test_dv" };
 function loc_nav_theo_quyen() {

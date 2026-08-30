@@ -201,6 +201,43 @@ YEU_CAU = [
      lambda: len(list((GOC / "11-seo" / "site" / "de-thi").rglob("index.html")))
      if co("11-seo/site/de-thi") else 0, 166, "trang đề thi"),
 
+    # ── khối Mầm: tiền tiểu học, lớp 1, lớp 2 ─────────────────────────
+    ("Khối Mầm",
+     "Bổ sung tiền tiểu học, lớp 1, lớp 2 vào hệ thống",
+     lambda: len(json.loads((GOC / "12-khoi-mam" / "index-khoi-mam.json")
+                            .read_text("utf-8"))) if co("12-khoi-mam") else 0,
+     190, "buổi học"),
+    ("Khối Mầm",
+     "Mỗi buổi có bản của trẻ và bản người lớn ngồi cùng",
+     lambda: dem_tep("12-khoi-mam"), 380, "tệp"),
+    ("Khối Mầm",
+     "Chuẩn quy định của Bộ Giáo dục và Đào tạo Việt Nam",
+     lambda: co("04-cong-cu/data/khoi_mam.py")
+     and all(k in (GOC / "04-cong-cu" / "data" / "khoi_mam.py").read_text("utf-8")
+             for k in ("Chương trình GDPT 2018", "Chương trình Giáo dục mầm non")),
+     True, "cả hai chuẩn đã khai"),
+    ("Khối Mầm",
+     "Tổng hợp chương trình toán quốc tế hệ Cambridge",
+     # Chuẩn hoá khoảng trắng trước khi tìm: cụm từ dài bị ngắt dòng trong mã
+     # nguồn, và tìm nguyên văn trên chuỗi thô sẽ báo thiếu một thứ đang có.
+     lambda: co("04-cong-cu/data/khoi_mam.py")
+     and "Thinking and Working Mathematically" in " ".join(
+         (GOC / "04-cong-cu" / "data" / "khoi_mam.py").read_text("utf-8").split()),
+     True, "khung TWM và đối chiếu Stage"),
+    ("Khối Mầm",
+     "Tối ưu để trẻ thích học toán — bốn luật được máy cưỡng chế",
+     lambda: co("04-cong-cu/kiem_mam.py"), True, "có bộ kiểm định riêng"),
+    ("Khối Mầm",
+     "Khối mẫu giáo không chấm điểm, đánh giá bằng ba mức",
+     lambda: sum(1 for f in (GOC / "12-khoi-mam" / "MG").glob("*.md")
+                 if not f.stem.endswith("-NL")
+                 and "HÔM NAY CON LÀM ĐƯỢC GÌ" in f.read_text("utf-8"))
+     if co("12-khoi-mam/MG") else 0, 40, "phiếu mẫu giáo"),
+    ("Khối Mầm",
+     "Có mặt trong ứng dụng học trực tuyến và trên website công khai",
+     lambda: co("11-seo/site/toan-lop-1") and co("11-seo/site/toan-lop-2")
+     and co("11-seo/site/toan-tien-tieu-hoc"), True, "đủ ba khối trên web"),
+
     # ── việc của người, chưa máy nào thay được ────────────────────────
     ("Việc của người",
      "Vòng đọc duyệt của chủ biên trước khi phát cho học viên",

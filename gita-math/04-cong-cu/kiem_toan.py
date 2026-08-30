@@ -266,6 +266,14 @@ def kiem_lien_ket():
     hop_le |= {f"GITA-{t}-L{l}-C{k:02d}" for t in ("T1", "T2") for l in (3, 4, 5)
                for k in range(1, 17)}
     hop_le |= {f"GITA-TEST-L{l}" for l in (3, 4, 5)}
+    # Khối Mầm có chỉ mục riêng (12-khoi-mam/index-khoi-mam.json) vì nó không
+    # nằm trong hệ 1 296 tài liệu của lớp 3–5 — khung buổi học, cách đánh giá và
+    # cả chuẩn chương trình đều khác. Nạp thêm chỉ mục ấy vào tập mã hợp lệ,
+    # kèm hậu tố -NL của bản dành cho người lớn ngồi cùng.
+    p_mam = ROOT / "12-khoi-mam" / "index-khoi-mam.json"
+    if p_mam.exists():
+        for x in json.loads(p_mam.read_text(encoding="utf-8")):
+            hop_le |= {x["ma"], x["ma"] + "-NL"}
     hong = {}
     for p in ROOT.rglob("*.md"):
         t = p.read_text(encoding="utf-8")

@@ -1,0 +1,5680 @@
+[
+ {
+  "ma": "GITA-MG-MG01-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG01",
+  "chu_de_ten": "Đếm và nhận ra số lượng trong phạm vi 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đếm đúng số lượng nhóm có tới 5 đối tượng",
+   "Nói được kết quả đếm là số cuối cùng đọc lên",
+   "Đếm được khi các đồ vật xếp không thẳng hàng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-01",
+   "MM-MG-18",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG01-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG01",
+  "chu_de_ten": "Đếm và nhận ra số lượng trong phạm vi 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đếm đúng số lượng nhóm có tới 5 đối tượng",
+   "Nói được kết quả đếm là số cuối cùng đọc lên",
+   "Đếm được khi các đồ vật xếp không thẳng hàng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-01",
+   "MM-MG-18",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG01-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG01",
+  "chu_de_ten": "Đếm và nhận ra số lượng trong phạm vi 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đếm đúng số lượng nhóm có tới 5 đối tượng",
+   "Nói được kết quả đếm là số cuối cùng đọc lên",
+   "Đếm được khi các đồ vật xếp không thẳng hàng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-01",
+   "MM-MG-18",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG01-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG01",
+  "chu_de_ten": "Đếm và nhận ra số lượng trong phạm vi 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đếm đúng số lượng nhóm có tới 5 đối tượng",
+   "Nói được kết quả đếm là số cuối cùng đọc lên",
+   "Đếm được khi các đồ vật xếp không thẳng hàng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-01",
+   "MM-MG-18",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG02-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG02",
+  "chu_de_ten": "Đếm và nhận ra số lượng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đếm đúng số lượng nhóm có tới 10 đối tượng",
+   "Nhận ra chữ số từ 1 đến 10",
+   "Nối được chữ số với nhóm có đúng số lượng ấy"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-01",
+   "MM-MG-02",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG02-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG02",
+  "chu_de_ten": "Đếm và nhận ra số lượng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đếm đúng số lượng nhóm có tới 10 đối tượng",
+   "Nhận ra chữ số từ 1 đến 10",
+   "Nối được chữ số với nhóm có đúng số lượng ấy"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-01",
+   "MM-MG-15",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG02-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG02",
+  "chu_de_ten": "Đếm và nhận ra số lượng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đếm đúng số lượng nhóm có tới 10 đối tượng",
+   "Nhận ra chữ số từ 1 đến 10",
+   "Nối được chữ số với nhóm có đúng số lượng ấy"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-01",
+   "MM-MG-15",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG02-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG02",
+  "chu_de_ten": "Đếm và nhận ra số lượng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đếm đúng số lượng nhóm có tới 10 đối tượng",
+   "Nhận ra chữ số từ 1 đến 10",
+   "Nối được chữ số với nhóm có đúng số lượng ấy"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-01",
+   "MM-MG-15",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG03-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG03",
+  "chu_de_ten": "Nhiều hơn, ít hơn, bằng nhau",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "So sánh số lượng hai nhóm bằng cách ghép đôi",
+   "Nói được nhóm nào nhiều hơn, ít hơn, hay bằng nhau",
+   "Làm cho hai nhóm bằng nhau bằng cách thêm hoặc bớt"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-19",
+   "MM-MG-14",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG03-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG03",
+  "chu_de_ten": "Nhiều hơn, ít hơn, bằng nhau",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "So sánh số lượng hai nhóm bằng cách ghép đôi",
+   "Nói được nhóm nào nhiều hơn, ít hơn, hay bằng nhau",
+   "Làm cho hai nhóm bằng nhau bằng cách thêm hoặc bớt"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-10",
+   "MM-MG-14",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG03-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG03",
+  "chu_de_ten": "Nhiều hơn, ít hơn, bằng nhau",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "So sánh số lượng hai nhóm bằng cách ghép đôi",
+   "Nói được nhóm nào nhiều hơn, ít hơn, hay bằng nhau",
+   "Làm cho hai nhóm bằng nhau bằng cách thêm hoặc bớt"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-19",
+   "MM-MG-14",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG03-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG03",
+  "chu_de_ten": "Nhiều hơn, ít hơn, bằng nhau",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "So sánh số lượng hai nhóm bằng cách ghép đôi",
+   "Nói được nhóm nào nhiều hơn, ít hơn, hay bằng nhau",
+   "Làm cho hai nhóm bằng nhau bằng cách thêm hoặc bớt"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-19",
+   "MM-MG-14",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG04-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG04",
+  "chu_de_ten": "Tách một nhóm thành hai nhóm nhỏ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Tách nhóm 10 đối tượng thành hai nhóm bằng nhiều cách",
+   "Gộp hai nhóm nhỏ lại và đếm ra số cũ",
+   "Nhận ra tách kiểu nào thì gộp lại vẫn bằng nhau"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-04",
+   "MM-MG-12"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG04-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG04",
+  "chu_de_ten": "Tách một nhóm thành hai nhóm nhỏ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Tách nhóm 10 đối tượng thành hai nhóm bằng nhiều cách",
+   "Gộp hai nhóm nhỏ lại và đếm ra số cũ",
+   "Nhận ra tách kiểu nào thì gộp lại vẫn bằng nhau"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-15",
+   "MM-MG-12"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG04-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG04",
+  "chu_de_ten": "Tách một nhóm thành hai nhóm nhỏ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Tách nhóm 10 đối tượng thành hai nhóm bằng nhiều cách",
+   "Gộp hai nhóm nhỏ lại và đếm ra số cũ",
+   "Nhận ra tách kiểu nào thì gộp lại vẫn bằng nhau"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-04",
+   "MM-MG-12"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG04-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG04",
+  "chu_de_ten": "Tách một nhóm thành hai nhóm nhỏ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Tách nhóm 10 đối tượng thành hai nhóm bằng nhiều cách",
+   "Gộp hai nhóm nhỏ lại và đếm ra số cũ",
+   "Nhận ra tách kiểu nào thì gộp lại vẫn bằng nhau"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-15",
+   "MM-MG-12"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG05-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG05",
+  "chu_de_ten": "Số thứ tự trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Nói được vị trí thứ nhất đến thứ mười trong một dãy",
+   "Phân biệt “ba bạn” với “bạn thứ ba”"
+  ],
+  "twm": [
+   "characterising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-02",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG05-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG05",
+  "chu_de_ten": "Số thứ tự trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Nói được vị trí thứ nhất đến thứ mười trong một dãy",
+   "Phân biệt “ba bạn” với “bạn thứ ba”"
+  ],
+  "twm": [
+   "characterising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-19",
+   "MM-MG-13",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG05-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG05",
+  "chu_de_ten": "Số thứ tự trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Nói được vị trí thứ nhất đến thứ mười trong một dãy",
+   "Phân biệt “ba bạn” với “bạn thứ ba”"
+  ],
+  "twm": [
+   "characterising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-02",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG05-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG05",
+  "chu_de_ten": "Số thứ tự trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Nói được vị trí thứ nhất đến thứ mười trong một dãy",
+   "Phân biệt “ba bạn” với “bạn thứ ba”"
+  ],
+  "twm": [
+   "characterising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-13",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG06-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG06",
+  "chu_de_ten": "Nhận biết hình phẳng và khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Gọi tên hình tròn, hình vuông, hình tam giác, hình chữ nhật",
+   "Gọi tên khối cầu, khối trụ, khối vuông, khối chữ nhật",
+   "Tìm được đồ vật quanh mình có dạng các hình khối ấy"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-11",
+   "MM-MG-18",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG06-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG06",
+  "chu_de_ten": "Nhận biết hình phẳng và khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Gọi tên hình tròn, hình vuông, hình tam giác, hình chữ nhật",
+   "Gọi tên khối cầu, khối trụ, khối vuông, khối chữ nhật",
+   "Tìm được đồ vật quanh mình có dạng các hình khối ấy"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-05",
+   "MM-MG-18",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG06-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG06",
+  "chu_de_ten": "Nhận biết hình phẳng và khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Gọi tên hình tròn, hình vuông, hình tam giác, hình chữ nhật",
+   "Gọi tên khối cầu, khối trụ, khối vuông, khối chữ nhật",
+   "Tìm được đồ vật quanh mình có dạng các hình khối ấy"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-11",
+   "MM-MG-18",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG06-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG06",
+  "chu_de_ten": "Nhận biết hình phẳng và khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Gọi tên hình tròn, hình vuông, hình tam giác, hình chữ nhật",
+   "Gọi tên khối cầu, khối trụ, khối vuông, khối chữ nhật",
+   "Tìm được đồ vật quanh mình có dạng các hình khối ấy"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-05",
+   "MM-MG-18",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG07-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG07",
+  "chu_de_ten": "So sánh kích thước: dài – ngắn, cao – thấp, to – nhỏ",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "So sánh trực tiếp hai vật về chiều dài, chiều cao, độ lớn",
+   "Xếp ba vật theo thứ tự tăng dần hoặc giảm dần"
+  ],
+  "twm": [
+   "classifying",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-05",
+   "MM-MG-18",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG07-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG07",
+  "chu_de_ten": "So sánh kích thước: dài – ngắn, cao – thấp, to – nhỏ",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "So sánh trực tiếp hai vật về chiều dài, chiều cao, độ lớn",
+   "Xếp ba vật theo thứ tự tăng dần hoặc giảm dần"
+  ],
+  "twm": [
+   "classifying",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-05",
+   "MM-MG-20",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG07-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG07",
+  "chu_de_ten": "So sánh kích thước: dài – ngắn, cao – thấp, to – nhỏ",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "So sánh trực tiếp hai vật về chiều dài, chiều cao, độ lớn",
+   "Xếp ba vật theo thứ tự tăng dần hoặc giảm dần"
+  ],
+  "twm": [
+   "classifying",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-05",
+   "MM-MG-20",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG07-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG07",
+  "chu_de_ten": "So sánh kích thước: dài – ngắn, cao – thấp, to – nhỏ",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "So sánh trực tiếp hai vật về chiều dài, chiều cao, độ lớn",
+   "Xếp ba vật theo thứ tự tăng dần hoặc giảm dần"
+  ],
+  "twm": [
+   "classifying",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-05",
+   "MM-MG-18",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG08-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG08",
+  "chu_de_ten": "Định hướng không gian và thời gian",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Xác định phía trên – phía dưới, phía trước – phía sau, bên phải – bên trái so với bản thân",
+   "Gọi đúng hôm qua – hôm nay – ngày mai, sáng – trưa – chiều – tối"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-17",
+   "MM-MG-13",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG08-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG08",
+  "chu_de_ten": "Định hướng không gian và thời gian",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Xác định phía trên – phía dưới, phía trước – phía sau, bên phải – bên trái so với bản thân",
+   "Gọi đúng hôm qua – hôm nay – ngày mai, sáng – trưa – chiều – tối"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-17",
+   "MM-MG-13",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG08-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG08",
+  "chu_de_ten": "Định hướng không gian và thời gian",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Xác định phía trên – phía dưới, phía trước – phía sau, bên phải – bên trái so với bản thân",
+   "Gọi đúng hôm qua – hôm nay – ngày mai, sáng – trưa – chiều – tối"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-17",
+   "MM-MG-13",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG08-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG08",
+  "chu_de_ten": "Định hướng không gian và thời gian",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Xác định phía trên – phía dưới, phía trước – phía sau, bên phải – bên trái so với bản thân",
+   "Gọi đúng hôm qua – hôm nay – ngày mai, sáng – trưa – chiều – tối"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-17",
+   "MM-MG-13",
+   "MM-MG-16"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG09-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG09",
+  "chu_de_ten": "Xếp theo quy luật",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Nhận ra quy luật xen kẽ hai hoặc ba loại đối tượng",
+   "Xếp tiếp được dãy theo đúng quy luật",
+   "Tự nghĩ ra một quy luật mới và xếp theo"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-11",
+   "MM-MG-18",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG09-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG09",
+  "chu_de_ten": "Xếp theo quy luật",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Nhận ra quy luật xen kẽ hai hoặc ba loại đối tượng",
+   "Xếp tiếp được dãy theo đúng quy luật",
+   "Tự nghĩ ra một quy luật mới và xếp theo"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-11",
+   "MM-MG-18",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG09-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG09",
+  "chu_de_ten": "Xếp theo quy luật",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Nhận ra quy luật xen kẽ hai hoặc ba loại đối tượng",
+   "Xếp tiếp được dãy theo đúng quy luật",
+   "Tự nghĩ ra một quy luật mới và xếp theo"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-11",
+   "MM-MG-20",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG09-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG09",
+  "chu_de_ten": "Xếp theo quy luật",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Nhận ra quy luật xen kẽ hai hoặc ba loại đối tượng",
+   "Xếp tiếp được dãy theo đúng quy luật",
+   "Tự nghĩ ra một quy luật mới và xếp theo"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-11",
+   "MM-MG-20",
+   "MM-MG-06"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG10-B1",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG10",
+  "chu_de_ten": "Đo bằng đơn vị tự chọn và làm quen bảng đếm",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 1,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đo chiều dài một vật bằng gang tay, bước chân, que tính",
+   "Đếm và ghi lại kết quả vào bảng có sẵn ô",
+   "Nói được nhóm nào nhiều nhất, ít nhất từ bảng đếm"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-20",
+   "MM-MG-12"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG10-B2",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG10",
+  "chu_de_ten": "Đo bằng đơn vị tự chọn và làm quen bảng đếm",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 2,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đo chiều dài một vật bằng gang tay, bước chân, que tính",
+   "Đếm và ghi lại kết quả vào bảng có sẵn ô",
+   "Nói được nhóm nào nhiều nhất, ít nhất từ bảng đếm"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-17",
+   "MM-MG-20",
+   "MM-MG-12"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG10-B3",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG10",
+  "chu_de_ten": "Đo bằng đơn vị tự chọn và làm quen bảng đếm",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 3,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đo chiều dài một vật bằng gang tay, bước chân, que tính",
+   "Đếm và ghi lại kết quả vào bảng có sẵn ô",
+   "Nói được nhóm nào nhiều nhất, ít nhất từ bảng đếm"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-07",
+   "MM-MG-17",
+   "MM-MG-08",
+   "MM-MG-12"
+  ]
+ },
+ {
+  "ma": "GITA-MG-MG10-B4",
+  "khoi": "MG",
+  "khoi_ten": "Mẫu giáo lớn — tiền tiểu học",
+  "tuoi": "5 – 6 tuổi",
+  "chu_de": "MG10",
+  "chu_de_ten": "Đo bằng đơn vị tự chọn và làm quen bảng đếm",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 4,
+  "thoi_luong": 25,
+  "thang_diem": null,
+  "yeu_cau": [
+   "Đo chiều dài một vật bằng gang tay, bước chân, que tính",
+   "Đếm và ghi lại kết quả vào bảng có sẵn ô",
+   "Nói được nhóm nào nhiều nhất, ít nhất từ bảng đếm"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình Giáo dục mầm non — lĩnh vực phát triển nhận thức, phần cho trẻ làm quen với toán",
+  "ma_mau": [
+   "MM-MG-09",
+   "MM-MG-17",
+   "MM-MG-14",
+   "MM-MG-12"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L101-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L101",
+  "chu_de_ten": "Các số đến 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết được các số trong phạm vi 10",
+   "So sánh được hai số trong phạm vi 10",
+   "Sắp xếp được các số theo thứ tự"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-07",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L101-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L101",
+  "chu_de_ten": "Các số đến 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết được các số trong phạm vi 10",
+   "So sánh được hai số trong phạm vi 10",
+   "Sắp xếp được các số theo thứ tự"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-07",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L101-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L101",
+  "chu_de_ten": "Các số đến 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết được các số trong phạm vi 10",
+   "So sánh được hai số trong phạm vi 10",
+   "Sắp xếp được các số theo thứ tự"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-07",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L101-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L101",
+  "chu_de_ten": "Các số đến 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết được các số trong phạm vi 10",
+   "So sánh được hai số trong phạm vi 10",
+   "Sắp xếp được các số theo thứ tự"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-07",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L101-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L101",
+  "chu_de_ten": "Các số đến 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết được các số trong phạm vi 10",
+   "So sánh được hai số trong phạm vi 10",
+   "Sắp xếp được các số theo thứ tự"
+  ],
+  "twm": [
+   "specialising",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-07",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L102-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L102",
+  "chu_de_ten": "Phép cộng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép cộng trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép cộng là gộp lại",
+   "Nêu được bài toán tương ứng với một phép cộng"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-07",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L102-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L102",
+  "chu_de_ten": "Phép cộng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép cộng trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép cộng là gộp lại",
+   "Nêu được bài toán tương ứng với một phép cộng"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-16",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L102-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L102",
+  "chu_de_ten": "Phép cộng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép cộng trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép cộng là gộp lại",
+   "Nêu được bài toán tương ứng với một phép cộng"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-07",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L102-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L102",
+  "chu_de_ten": "Phép cộng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép cộng trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép cộng là gộp lại",
+   "Nêu được bài toán tương ứng với một phép cộng"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-07",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L102-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L102",
+  "chu_de_ten": "Phép cộng trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép cộng trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép cộng là gộp lại",
+   "Nêu được bài toán tương ứng với một phép cộng"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-16",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L103-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L103",
+  "chu_de_ten": "Phép trừ trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép trừ trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép trừ là bớt đi",
+   "Nhận ra quan hệ giữa phép cộng và phép trừ"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-12",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L103-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L103",
+  "chu_de_ten": "Phép trừ trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép trừ trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép trừ là bớt đi",
+   "Nhận ra quan hệ giữa phép cộng và phép trừ"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-12",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L103-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L103",
+  "chu_de_ten": "Phép trừ trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép trừ trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép trừ là bớt đi",
+   "Nhận ra quan hệ giữa phép cộng và phép trừ"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-16",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L103-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L103",
+  "chu_de_ten": "Phép trừ trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép trừ trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép trừ là bớt đi",
+   "Nhận ra quan hệ giữa phép cộng và phép trừ"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-12",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L103-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L103",
+  "chu_de_ten": "Phép trừ trong phạm vi 10",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Thực hiện được phép trừ trong phạm vi 10",
+   "Nhận biết ý nghĩa của phép trừ là bớt đi",
+   "Nhận ra quan hệ giữa phép cộng và phép trừ"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-16",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L104-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L104",
+  "chu_de_ten": "Hình phẳng và hình khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận dạng, gọi tên hình vuông, tròn, tam giác, chữ nhật",
+   "Nhận dạng khối lập phương, khối hộp chữ nhật",
+   "Ghép được hình từ các hình đã cho"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L104-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L104",
+  "chu_de_ten": "Hình phẳng và hình khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận dạng, gọi tên hình vuông, tròn, tam giác, chữ nhật",
+   "Nhận dạng khối lập phương, khối hộp chữ nhật",
+   "Ghép được hình từ các hình đã cho"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L104-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L104",
+  "chu_de_ten": "Hình phẳng và hình khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận dạng, gọi tên hình vuông, tròn, tam giác, chữ nhật",
+   "Nhận dạng khối lập phương, khối hộp chữ nhật",
+   "Ghép được hình từ các hình đã cho"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L104-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L104",
+  "chu_de_ten": "Hình phẳng và hình khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận dạng, gọi tên hình vuông, tròn, tam giác, chữ nhật",
+   "Nhận dạng khối lập phương, khối hộp chữ nhật",
+   "Ghép được hình từ các hình đã cho"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L104-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L104",
+  "chu_de_ten": "Hình phẳng và hình khối",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận dạng, gọi tên hình vuông, tròn, tam giác, chữ nhật",
+   "Nhận dạng khối lập phương, khối hộp chữ nhật",
+   "Ghép được hình từ các hình đã cho"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L105-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L105",
+  "chu_de_ten": "Các số đến 20 và phép cộng trừ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết, so sánh các số trong phạm vi 20",
+   "Cộng, trừ không nhớ trong phạm vi 20"
+  ],
+  "twm": [
+   "specialising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-12",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L105-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L105",
+  "chu_de_ten": "Các số đến 20 và phép cộng trừ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết, so sánh các số trong phạm vi 20",
+   "Cộng, trừ không nhớ trong phạm vi 20"
+  ],
+  "twm": [
+   "specialising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-12",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L105-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L105",
+  "chu_de_ten": "Các số đến 20 và phép cộng trừ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết, so sánh các số trong phạm vi 20",
+   "Cộng, trừ không nhớ trong phạm vi 20"
+  ],
+  "twm": [
+   "specialising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-12",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L105-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L105",
+  "chu_de_ten": "Các số đến 20 và phép cộng trừ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết, so sánh các số trong phạm vi 20",
+   "Cộng, trừ không nhớ trong phạm vi 20"
+  ],
+  "twm": [
+   "specialising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-12",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L105-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L105",
+  "chu_de_ten": "Các số đến 20 và phép cộng trừ",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết, so sánh các số trong phạm vi 20",
+   "Cộng, trừ không nhớ trong phạm vi 20"
+  ],
+  "twm": [
+   "specialising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-12",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L106-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L106",
+  "chu_de_ten": "Đo độ dài",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đo độ dài bằng đơn vị tự chọn rồi bằng xăng-ti-mét",
+   "So sánh độ dài hai vật qua kết quả đo",
+   "Dùng được thước có vạch xăng-ti-mét"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L106-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L106",
+  "chu_de_ten": "Đo độ dài",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đo độ dài bằng đơn vị tự chọn rồi bằng xăng-ti-mét",
+   "So sánh độ dài hai vật qua kết quả đo",
+   "Dùng được thước có vạch xăng-ti-mét"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L106-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L106",
+  "chu_de_ten": "Đo độ dài",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đo độ dài bằng đơn vị tự chọn rồi bằng xăng-ti-mét",
+   "So sánh độ dài hai vật qua kết quả đo",
+   "Dùng được thước có vạch xăng-ti-mét"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L106-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L106",
+  "chu_de_ten": "Đo độ dài",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đo độ dài bằng đơn vị tự chọn rồi bằng xăng-ti-mét",
+   "So sánh độ dài hai vật qua kết quả đo",
+   "Dùng được thước có vạch xăng-ti-mét"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L106-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L106",
+  "chu_de_ten": "Đo độ dài",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đo độ dài bằng đơn vị tự chọn rồi bằng xăng-ti-mét",
+   "So sánh độ dài hai vật qua kết quả đo",
+   "Dùng được thước có vạch xăng-ti-mét"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L107-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L107",
+  "chu_de_ten": "Các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết các số trong phạm vi 100",
+   "Nhận biết chục và đơn vị",
+   "So sánh, sắp thứ tự các số trong phạm vi 100"
+  ],
+  "twm": [
+   "characterising",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-09",
+   "MM-L1-15",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L107-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L107",
+  "chu_de_ten": "Các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết các số trong phạm vi 100",
+   "Nhận biết chục và đơn vị",
+   "So sánh, sắp thứ tự các số trong phạm vi 100"
+  ],
+  "twm": [
+   "characterising",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-09",
+   "MM-L1-15",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L107-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L107",
+  "chu_de_ten": "Các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết các số trong phạm vi 100",
+   "Nhận biết chục và đơn vị",
+   "So sánh, sắp thứ tự các số trong phạm vi 100"
+  ],
+  "twm": [
+   "characterising",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-09",
+   "MM-L1-15",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L107-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L107",
+  "chu_de_ten": "Các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết các số trong phạm vi 100",
+   "Nhận biết chục và đơn vị",
+   "So sánh, sắp thứ tự các số trong phạm vi 100"
+  ],
+  "twm": [
+   "characterising",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-09",
+   "MM-L1-15",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L107-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L107",
+  "chu_de_ten": "Các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đếm, đọc, viết các số trong phạm vi 100",
+   "Nhận biết chục và đơn vị",
+   "So sánh, sắp thứ tự các số trong phạm vi 100"
+  ],
+  "twm": [
+   "characterising",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-09",
+   "MM-L1-15",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L108-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L108",
+  "chu_de_ten": "Cộng trừ không nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ không nhớ trong phạm vi 100",
+   "Tính nhẩm với các số tròn chục"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-17",
+   "MM-L1-03",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L108-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L108",
+  "chu_de_ten": "Cộng trừ không nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ không nhớ trong phạm vi 100",
+   "Tính nhẩm với các số tròn chục"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-17",
+   "MM-L1-03",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L108-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L108",
+  "chu_de_ten": "Cộng trừ không nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ không nhớ trong phạm vi 100",
+   "Tính nhẩm với các số tròn chục"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-17",
+   "MM-L1-03",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L108-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L108",
+  "chu_de_ten": "Cộng trừ không nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ không nhớ trong phạm vi 100",
+   "Tính nhẩm với các số tròn chục"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-09",
+   "MM-L1-03",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L108-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L108",
+  "chu_de_ten": "Cộng trừ không nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ không nhớ trong phạm vi 100",
+   "Tính nhẩm với các số tròn chục"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-09",
+   "MM-L1-03",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L109-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L109",
+  "chu_de_ten": "Bài toán có lời văn một phép tính",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đọc và hiểu bài toán có một phép tính",
+   "Viết được phép tính và câu trả lời",
+   "Tự đặt được một bài toán từ một phép tính cho sẵn"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L109-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L109",
+  "chu_de_ten": "Bài toán có lời văn một phép tính",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đọc và hiểu bài toán có một phép tính",
+   "Viết được phép tính và câu trả lời",
+   "Tự đặt được một bài toán từ một phép tính cho sẵn"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L109-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L109",
+  "chu_de_ten": "Bài toán có lời văn một phép tính",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đọc và hiểu bài toán có một phép tính",
+   "Viết được phép tính và câu trả lời",
+   "Tự đặt được một bài toán từ một phép tính cho sẵn"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L109-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L109",
+  "chu_de_ten": "Bài toán có lời văn một phép tính",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đọc và hiểu bài toán có một phép tính",
+   "Viết được phép tính và câu trả lời",
+   "Tự đặt được một bài toán từ một phép tính cho sẵn"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L109-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L109",
+  "chu_de_ten": "Bài toán có lời văn một phép tính",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Đọc và hiểu bài toán có một phép tính",
+   "Viết được phép tính và câu trả lời",
+   "Tự đặt được một bài toán từ một phép tính cho sẵn"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L110-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L110",
+  "chu_de_ten": "Xem giờ đúng và ngày trong tuần",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Xem được giờ đúng trên đồng hồ kim",
+   "Gọi tên các thứ trong tuần và xác định hôm nay là thứ mấy"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L110-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L110",
+  "chu_de_ten": "Xem giờ đúng và ngày trong tuần",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Xem được giờ đúng trên đồng hồ kim",
+   "Gọi tên các thứ trong tuần và xác định hôm nay là thứ mấy"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L110-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L110",
+  "chu_de_ten": "Xem giờ đúng và ngày trong tuần",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Xem được giờ đúng trên đồng hồ kim",
+   "Gọi tên các thứ trong tuần và xác định hôm nay là thứ mấy"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L110-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L110",
+  "chu_de_ten": "Xem giờ đúng và ngày trong tuần",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Xem được giờ đúng trên đồng hồ kim",
+   "Gọi tên các thứ trong tuần và xác định hôm nay là thứ mấy"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L110-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L110",
+  "chu_de_ten": "Xem giờ đúng và ngày trong tuần",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Xem được giờ đúng trên đồng hồ kim",
+   "Gọi tên các thứ trong tuần và xác định hôm nay là thứ mấy"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-05",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L111-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L111",
+  "chu_de_ten": "Điểm, đoạn thẳng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng",
+   "Vẽ được đoạn thẳng nối hai điểm",
+   "Đếm số đoạn thẳng trong một hình"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L111-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L111",
+  "chu_de_ten": "Điểm, đoạn thẳng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng",
+   "Vẽ được đoạn thẳng nối hai điểm",
+   "Đếm số đoạn thẳng trong một hình"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L111-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L111",
+  "chu_de_ten": "Điểm, đoạn thẳng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng",
+   "Vẽ được đoạn thẳng nối hai điểm",
+   "Đếm số đoạn thẳng trong một hình"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L111-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L111",
+  "chu_de_ten": "Điểm, đoạn thẳng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng",
+   "Vẽ được đoạn thẳng nối hai điểm",
+   "Đếm số đoạn thẳng trong một hình"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L111-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L111",
+  "chu_de_ten": "Điểm, đoạn thẳng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng",
+   "Vẽ được đoạn thẳng nối hai điểm",
+   "Đếm số đoạn thẳng trong một hình"
+  ],
+  "twm": [
+   "classifying",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-11",
+   "MM-L1-08",
+   "MM-L1-15",
+   "MM-L1-04"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L112-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L112",
+  "chu_de_ten": "Số và quy luật dãy số đơn giản",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận ra quy luật của dãy số cách đều",
+   "Viết tiếp được vài số của dãy"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-08",
+   "MM-L1-06",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L112-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L112",
+  "chu_de_ten": "Số và quy luật dãy số đơn giản",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận ra quy luật của dãy số cách đều",
+   "Viết tiếp được vài số của dãy"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-17",
+   "MM-L1-06",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L112-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L112",
+  "chu_de_ten": "Số và quy luật dãy số đơn giản",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận ra quy luật của dãy số cách đều",
+   "Viết tiếp được vài số của dãy"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-08",
+   "MM-L1-06",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L112-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L112",
+  "chu_de_ten": "Số và quy luật dãy số đơn giản",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận ra quy luật của dãy số cách đều",
+   "Viết tiếp được vài số của dãy"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-17",
+   "MM-L1-06",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L112-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L112",
+  "chu_de_ten": "Số và quy luật dãy số đơn giản",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Nhận ra quy luật của dãy số cách đều",
+   "Viết tiếp được vài số của dãy"
+  ],
+  "twm": [
+   "conjecturing",
+   "generalising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-08",
+   "MM-L1-06",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L113-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L113",
+  "chu_de_ten": "Làm quen tách gộp số và cấu tạo số",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Tách một số thành hai số bằng nhiều cách",
+   "Dùng tách gộp để tính nhẩm cộng trừ"
+  ],
+  "twm": [
+   "generalising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-07",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L113-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L113",
+  "chu_de_ten": "Làm quen tách gộp số và cấu tạo số",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Tách một số thành hai số bằng nhiều cách",
+   "Dùng tách gộp để tính nhẩm cộng trừ"
+  ],
+  "twm": [
+   "generalising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-07",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L113-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L113",
+  "chu_de_ten": "Làm quen tách gộp số và cấu tạo số",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Tách một số thành hai số bằng nhiều cách",
+   "Dùng tách gộp để tính nhẩm cộng trừ"
+  ],
+  "twm": [
+   "generalising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-07",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L113-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L113",
+  "chu_de_ten": "Làm quen tách gộp số và cấu tạo số",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Tách một số thành hai số bằng nhiều cách",
+   "Dùng tách gộp để tính nhẩm cộng trừ"
+  ],
+  "twm": [
+   "generalising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-07",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L113-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L113",
+  "chu_de_ten": "Làm quen tách gộp số và cấu tạo số",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Tách một số thành hai số bằng nhiều cách",
+   "Dùng tách gộp để tính nhẩm cộng trừ"
+  ],
+  "twm": [
+   "generalising",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-02",
+   "MM-L1-07",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L114-B1",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L114",
+  "chu_de_ten": "Ôn tập cuối năm",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Vận dụng tổng hợp các nội dung đã học trong năm"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L114-B2",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L114",
+  "chu_de_ten": "Ôn tập cuối năm",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Vận dụng tổng hợp các nội dung đã học trong năm"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L114-B3",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L114",
+  "chu_de_ten": "Ôn tập cuối năm",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Vận dụng tổng hợp các nội dung đã học trong năm"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L114-B4",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L114",
+  "chu_de_ten": "Ôn tập cuối năm",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Vận dụng tổng hợp các nội dung đã học trong năm"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-13"
+  ]
+ },
+ {
+  "ma": "GITA-L1-L114-B5",
+  "khoi": "L1",
+  "khoi_ten": "Lớp 1",
+  "tuoi": "6 – 7 tuổi",
+  "chu_de": "L114",
+  "chu_de_ten": "Ôn tập cuối năm",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 35,
+  "thang_diem": 20,
+  "yeu_cau": [
+   "Vận dụng tổng hợp các nội dung đã học trong năm"
+  ],
+  "twm": [
+   "critiquing",
+   "improving"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 1",
+  "ma_mau": [
+   "MM-L1-01",
+   "MM-L1-14",
+   "MM-L1-06",
+   "MM-L1-10"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L201-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L201",
+  "chu_de_ten": "Ôn tập các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 100",
+   "Nhận biết số hạng, tổng, số bị trừ, số trừ, hiệu"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L201-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L201",
+  "chu_de_ten": "Ôn tập các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 100",
+   "Nhận biết số hạng, tổng, số bị trừ, số trừ, hiệu"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L201-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L201",
+  "chu_de_ten": "Ôn tập các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 100",
+   "Nhận biết số hạng, tổng, số bị trừ, số trừ, hiệu"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L201-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L201",
+  "chu_de_ten": "Ôn tập các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 100",
+   "Nhận biết số hạng, tổng, số bị trừ, số trừ, hiệu"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L201-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L201",
+  "chu_de_ten": "Ôn tập các số đến 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 100",
+   "Nhận biết số hạng, tổng, số bị trừ, số trừ, hiệu"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L202-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L202",
+  "chu_de_ten": "Phép cộng có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép cộng"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L202-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L202",
+  "chu_de_ten": "Phép cộng có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép cộng"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L202-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L202",
+  "chu_de_ten": "Phép cộng có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép cộng"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L202-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L202",
+  "chu_de_ten": "Phép cộng có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép cộng"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L202-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L202",
+  "chu_de_ten": "Phép cộng có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép cộng"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L203-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L203",
+  "chu_de_ten": "Phép trừ có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính trừ có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép trừ"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L203-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L203",
+  "chu_de_ten": "Phép trừ có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính trừ có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép trừ"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L203-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L203",
+  "chu_de_ten": "Phép trừ có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính trừ có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép trừ"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L203-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L203",
+  "chu_de_ten": "Phép trừ có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính trừ có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép trừ"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L203-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L203",
+  "chu_de_ten": "Phép trừ có nhớ trong phạm vi 100",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính trừ có nhớ trong phạm vi 100",
+   "Giải bài toán có một phép trừ"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-01",
+   "MM-L2-07",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L204-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L204",
+  "chu_de_ten": "Nhiều hơn, ít hơn một số đơn vị",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Giải bài toán về nhiều hơn, ít hơn một số đơn vị",
+   "Vẽ được sơ đồ đoạn thẳng đơn giản cho bài toán"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-03",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L204-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L204",
+  "chu_de_ten": "Nhiều hơn, ít hơn một số đơn vị",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Giải bài toán về nhiều hơn, ít hơn một số đơn vị",
+   "Vẽ được sơ đồ đoạn thẳng đơn giản cho bài toán"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-03",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L204-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L204",
+  "chu_de_ten": "Nhiều hơn, ít hơn một số đơn vị",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Giải bài toán về nhiều hơn, ít hơn một số đơn vị",
+   "Vẽ được sơ đồ đoạn thẳng đơn giản cho bài toán"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-03",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L204-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L204",
+  "chu_de_ten": "Nhiều hơn, ít hơn một số đơn vị",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Giải bài toán về nhiều hơn, ít hơn một số đơn vị",
+   "Vẽ được sơ đồ đoạn thẳng đơn giản cho bài toán"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-13",
+   "MM-L2-03",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L204-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L204",
+  "chu_de_ten": "Nhiều hơn, ít hơn một số đơn vị",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Giải bài toán về nhiều hơn, ít hơn một số đơn vị",
+   "Vẽ được sơ đồ đoạn thẳng đơn giản cho bài toán"
+  ],
+  "twm": [
+   "convincing",
+   "conjecturing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-13",
+   "MM-L2-03",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L205-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L205",
+  "chu_de_ten": "Phép nhân và bảng nhân 2, bảng nhân 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép nhân là phép cộng các số hạng bằng nhau",
+   "Thuộc bảng nhân 2 và bảng nhân 5",
+   "Giải bài toán có một phép nhân"
+  ],
+  "twm": [
+   "generalising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L205-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L205",
+  "chu_de_ten": "Phép nhân và bảng nhân 2, bảng nhân 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép nhân là phép cộng các số hạng bằng nhau",
+   "Thuộc bảng nhân 2 và bảng nhân 5",
+   "Giải bài toán có một phép nhân"
+  ],
+  "twm": [
+   "generalising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L205-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L205",
+  "chu_de_ten": "Phép nhân và bảng nhân 2, bảng nhân 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép nhân là phép cộng các số hạng bằng nhau",
+   "Thuộc bảng nhân 2 và bảng nhân 5",
+   "Giải bài toán có một phép nhân"
+  ],
+  "twm": [
+   "generalising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L205-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L205",
+  "chu_de_ten": "Phép nhân và bảng nhân 2, bảng nhân 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép nhân là phép cộng các số hạng bằng nhau",
+   "Thuộc bảng nhân 2 và bảng nhân 5",
+   "Giải bài toán có một phép nhân"
+  ],
+  "twm": [
+   "generalising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L205-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L205",
+  "chu_de_ten": "Phép nhân và bảng nhân 2, bảng nhân 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép nhân là phép cộng các số hạng bằng nhau",
+   "Thuộc bảng nhân 2 và bảng nhân 5",
+   "Giải bài toán có một phép nhân"
+  ],
+  "twm": [
+   "generalising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L206-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L206",
+  "chu_de_ten": "Phép chia và bảng chia 2, bảng chia 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép chia từ phép nhân",
+   "Thuộc bảng chia 2 và bảng chia 5",
+   "Giải bài toán có một phép chia"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L206-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L206",
+  "chu_de_ten": "Phép chia và bảng chia 2, bảng chia 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép chia từ phép nhân",
+   "Thuộc bảng chia 2 và bảng chia 5",
+   "Giải bài toán có một phép chia"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L206-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L206",
+  "chu_de_ten": "Phép chia và bảng chia 2, bảng chia 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép chia từ phép nhân",
+   "Thuộc bảng chia 2 và bảng chia 5",
+   "Giải bài toán có một phép chia"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L206-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L206",
+  "chu_de_ten": "Phép chia và bảng chia 2, bảng chia 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép chia từ phép nhân",
+   "Thuộc bảng chia 2 và bảng chia 5",
+   "Giải bài toán có một phép chia"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-03",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L206-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L206",
+  "chu_de_ten": "Phép chia và bảng chia 2, bảng chia 5",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết phép chia từ phép nhân",
+   "Thuộc bảng chia 2 và bảng chia 5",
+   "Giải bài toán có một phép chia"
+  ],
+  "twm": [
+   "generalising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-14",
+   "MM-L2-08",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L207-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L207",
+  "chu_de_ten": "Các số đến 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 1 000",
+   "Nhận biết trăm, chục, đơn vị"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-03",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L207-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L207",
+  "chu_de_ten": "Các số đến 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 1 000",
+   "Nhận biết trăm, chục, đơn vị"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-03",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L207-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L207",
+  "chu_de_ten": "Các số đến 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 1 000",
+   "Nhận biết trăm, chục, đơn vị"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-03",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L207-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L207",
+  "chu_de_ten": "Các số đến 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 1 000",
+   "Nhận biết trăm, chục, đơn vị"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-03",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L207-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L207",
+  "chu_de_ten": "Các số đến 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc, viết, so sánh các số trong phạm vi 1 000",
+   "Nhận biết trăm, chục, đơn vị"
+  ],
+  "twm": [
+   "characterising",
+   "specialising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-03",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L208-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L208",
+  "chu_de_ten": "Cộng trừ trong phạm vi 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ trong phạm vi 1 000",
+   "Tính nhẩm với các số tròn trăm"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-01",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L208-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L208",
+  "chu_de_ten": "Cộng trừ trong phạm vi 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ trong phạm vi 1 000",
+   "Tính nhẩm với các số tròn trăm"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-01",
+   "MM-L2-03",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L208-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L208",
+  "chu_de_ten": "Cộng trừ trong phạm vi 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ trong phạm vi 1 000",
+   "Tính nhẩm với các số tròn trăm"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-01",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L208-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L208",
+  "chu_de_ten": "Cộng trừ trong phạm vi 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ trong phạm vi 1 000",
+   "Tính nhẩm với các số tròn trăm"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-01",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L208-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L208",
+  "chu_de_ten": "Cộng trừ trong phạm vi 1 000",
+  "mach": "S",
+  "mach_ten": "Số và phép tính",
+  "cam": "Number",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đặt tính và tính cộng, trừ trong phạm vi 1 000",
+   "Tính nhẩm với các số tròn trăm"
+  ],
+  "twm": [
+   "improving",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-14",
+   "MM-L2-01",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L209-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L209",
+  "chu_de_ten": "Đơn vị đo độ dài: đề-xi-mét, mét, ki-lô-mét",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết và đổi được đề-xi-mét, mét, ki-lô-mét",
+   "Ước lượng độ dài trong tình huống thực tế"
+  ],
+  "twm": [
+   "conjecturing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-12",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L209-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L209",
+  "chu_de_ten": "Đơn vị đo độ dài: đề-xi-mét, mét, ki-lô-mét",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết và đổi được đề-xi-mét, mét, ki-lô-mét",
+   "Ước lượng độ dài trong tình huống thực tế"
+  ],
+  "twm": [
+   "conjecturing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-12",
+   "MM-L2-15",
+   "MM-L2-04",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L209-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L209",
+  "chu_de_ten": "Đơn vị đo độ dài: đề-xi-mét, mét, ki-lô-mét",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết và đổi được đề-xi-mét, mét, ki-lô-mét",
+   "Ước lượng độ dài trong tình huống thực tế"
+  ],
+  "twm": [
+   "conjecturing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-12",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L209-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L209",
+  "chu_de_ten": "Đơn vị đo độ dài: đề-xi-mét, mét, ki-lô-mét",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết và đổi được đề-xi-mét, mét, ki-lô-mét",
+   "Ước lượng độ dài trong tình huống thực tế"
+  ],
+  "twm": [
+   "conjecturing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-12",
+   "MM-L2-15",
+   "MM-L2-04",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L209-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L209",
+  "chu_de_ten": "Đơn vị đo độ dài: đề-xi-mét, mét, ki-lô-mét",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết và đổi được đề-xi-mét, mét, ki-lô-mét",
+   "Ước lượng độ dài trong tình huống thực tế"
+  ],
+  "twm": [
+   "conjecturing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-12",
+   "MM-L2-15",
+   "MM-L2-04",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L210-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L210",
+  "chu_de_ten": "Đơn vị đo khối lượng và dung tích",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết ki-lô-gam và lít",
+   "Đọc được số đo trên cân và trên ca đong"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-12",
+   "MM-L2-15",
+   "MM-L2-04",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L210-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L210",
+  "chu_de_ten": "Đơn vị đo khối lượng và dung tích",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết ki-lô-gam và lít",
+   "Đọc được số đo trên cân và trên ca đong"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-12",
+   "MM-L2-15",
+   "MM-L2-04",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L210-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L210",
+  "chu_de_ten": "Đơn vị đo khối lượng và dung tích",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết ki-lô-gam và lít",
+   "Đọc được số đo trên cân và trên ca đong"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-12",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L210-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L210",
+  "chu_de_ten": "Đơn vị đo khối lượng và dung tích",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết ki-lô-gam và lít",
+   "Đọc được số đo trên cân và trên ca đong"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-12",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L210-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L210",
+  "chu_de_ten": "Đơn vị đo khối lượng và dung tích",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết ki-lô-gam và lít",
+   "Đọc được số đo trên cân và trên ca đong"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-12",
+   "MM-L2-15",
+   "MM-L2-04",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L211-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L211",
+  "chu_de_ten": "Điểm, đoạn thẳng, đường thẳng, ba điểm thẳng hàng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng, đường thẳng, đường cong",
+   "Nhận biết ba điểm thẳng hàng",
+   "Tính độ dài đường gấp khúc"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L211-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L211",
+  "chu_de_ten": "Điểm, đoạn thẳng, đường thẳng, ba điểm thẳng hàng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng, đường thẳng, đường cong",
+   "Nhận biết ba điểm thẳng hàng",
+   "Tính độ dài đường gấp khúc"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L211-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L211",
+  "chu_de_ten": "Điểm, đoạn thẳng, đường thẳng, ba điểm thẳng hàng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng, đường thẳng, đường cong",
+   "Nhận biết ba điểm thẳng hàng",
+   "Tính độ dài đường gấp khúc"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L211-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L211",
+  "chu_de_ten": "Điểm, đoạn thẳng, đường thẳng, ba điểm thẳng hàng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng, đường thẳng, đường cong",
+   "Nhận biết ba điểm thẳng hàng",
+   "Tính độ dài đường gấp khúc"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L211-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L211",
+  "chu_de_ten": "Điểm, đoạn thẳng, đường thẳng, ba điểm thẳng hàng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận biết điểm, đoạn thẳng, đường thẳng, đường cong",
+   "Nhận biết ba điểm thẳng hàng",
+   "Tính độ dài đường gấp khúc"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L212-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L212",
+  "chu_de_ten": "Hình tứ giác, khối trụ, khối cầu",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận dạng và gọi tên hình tứ giác",
+   "Nhận dạng khối trụ, khối cầu trong thực tế"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L212-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L212",
+  "chu_de_ten": "Hình tứ giác, khối trụ, khối cầu",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận dạng và gọi tên hình tứ giác",
+   "Nhận dạng khối trụ, khối cầu trong thực tế"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L212-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L212",
+  "chu_de_ten": "Hình tứ giác, khối trụ, khối cầu",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận dạng và gọi tên hình tứ giác",
+   "Nhận dạng khối trụ, khối cầu trong thực tế"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L212-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L212",
+  "chu_de_ten": "Hình tứ giác, khối trụ, khối cầu",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận dạng và gọi tên hình tứ giác",
+   "Nhận dạng khối trụ, khối cầu trong thực tế"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L212-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L212",
+  "chu_de_ten": "Hình tứ giác, khối trụ, khối cầu",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Nhận dạng và gọi tên hình tứ giác",
+   "Nhận dạng khối trụ, khối cầu trong thực tế"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-09",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L213-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L213",
+  "chu_de_ten": "Xem đồng hồ, ngày và tháng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Xem được giờ đúng và giờ rưỡi",
+   "Đọc được lịch, biết một tuần có mấy ngày, một năm có mấy tháng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L213-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L213",
+  "chu_de_ten": "Xem đồng hồ, ngày và tháng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Xem được giờ đúng và giờ rưỡi",
+   "Đọc được lịch, biết một tuần có mấy ngày, một năm có mấy tháng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-08",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L213-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L213",
+  "chu_de_ten": "Xem đồng hồ, ngày và tháng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Xem được giờ đúng và giờ rưỡi",
+   "Đọc được lịch, biết một tuần có mấy ngày, một năm có mấy tháng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-05",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L213-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L213",
+  "chu_de_ten": "Xem đồng hồ, ngày và tháng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Xem được giờ đúng và giờ rưỡi",
+   "Đọc được lịch, biết một tuần có mấy ngày, một năm có mấy tháng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-01",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L213-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L213",
+  "chu_de_ten": "Xem đồng hồ, ngày và tháng",
+  "mach": "H",
+  "mach_ten": "Hình học và Đo lường",
+  "cam": "Geometry and Measure",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Xem được giờ đúng và giờ rưỡi",
+   "Đọc được lịch, biết một tuần có mấy ngày, một năm có mấy tháng"
+  ],
+  "twm": [
+   "specialising",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-04",
+   "MM-L2-15",
+   "MM-L2-16",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L214-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L214",
+  "chu_de_ten": "Thu thập, phân loại và kiểm đếm số liệu",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Thu thập được số liệu từ một tình huống quen thuộc",
+   "Phân loại và kiểm đếm số liệu vào bảng",
+   "Nêu nhận xét đơn giản từ bảng số liệu"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-16",
+   "MM-L2-05",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L214-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L214",
+  "chu_de_ten": "Thu thập, phân loại và kiểm đếm số liệu",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Thu thập được số liệu từ một tình huống quen thuộc",
+   "Phân loại và kiểm đếm số liệu vào bảng",
+   "Nêu nhận xét đơn giản từ bảng số liệu"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-05",
+   "MM-L2-16",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L214-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L214",
+  "chu_de_ten": "Thu thập, phân loại và kiểm đếm số liệu",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Thu thập được số liệu từ một tình huống quen thuộc",
+   "Phân loại và kiểm đếm số liệu vào bảng",
+   "Nêu nhận xét đơn giản từ bảng số liệu"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-16",
+   "MM-L2-05",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L214-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L214",
+  "chu_de_ten": "Thu thập, phân loại và kiểm đếm số liệu",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Thu thập được số liệu từ một tình huống quen thuộc",
+   "Phân loại và kiểm đếm số liệu vào bảng",
+   "Nêu nhận xét đơn giản từ bảng số liệu"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-16",
+   "MM-L2-05",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L214-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L214",
+  "chu_de_ten": "Thu thập, phân loại và kiểm đếm số liệu",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Thu thập được số liệu từ một tình huống quen thuộc",
+   "Phân loại và kiểm đếm số liệu vào bảng",
+   "Nêu nhận xét đơn giản từ bảng số liệu"
+  ],
+  "twm": [
+   "classifying",
+   "characterising"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-11",
+   "MM-L2-05",
+   "MM-L2-16",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L215-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L215",
+  "chu_de_ten": "Biểu đồ tranh",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc được biểu đồ tranh đơn giản",
+   "Trả lời câu hỏi từ biểu đồ tranh",
+   "Vẽ được biểu đồ tranh từ bảng số liệu"
+  ],
+  "twm": [
+   "convincing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-11",
+   "MM-L2-16",
+   "MM-L2-05",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L215-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L215",
+  "chu_de_ten": "Biểu đồ tranh",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc được biểu đồ tranh đơn giản",
+   "Trả lời câu hỏi từ biểu đồ tranh",
+   "Vẽ được biểu đồ tranh từ bảng số liệu"
+  ],
+  "twm": [
+   "convincing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-05",
+   "MM-L2-16",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L215-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L215",
+  "chu_de_ten": "Biểu đồ tranh",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc được biểu đồ tranh đơn giản",
+   "Trả lời câu hỏi từ biểu đồ tranh",
+   "Vẽ được biểu đồ tranh từ bảng số liệu"
+  ],
+  "twm": [
+   "convincing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-05",
+   "MM-L2-16",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L215-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L215",
+  "chu_de_ten": "Biểu đồ tranh",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc được biểu đồ tranh đơn giản",
+   "Trả lời câu hỏi từ biểu đồ tranh",
+   "Vẽ được biểu đồ tranh từ bảng số liệu"
+  ],
+  "twm": [
+   "convincing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-11",
+   "MM-L2-16",
+   "MM-L2-05",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L215-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L215",
+  "chu_de_ten": "Biểu đồ tranh",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Đọc được biểu đồ tranh đơn giản",
+   "Trả lời câu hỏi từ biểu đồ tranh",
+   "Vẽ được biểu đồ tranh từ bảng số liệu"
+  ],
+  "twm": [
+   "convincing",
+   "critiquing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-16",
+   "MM-L2-05",
+   "MM-L2-06"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L216-B1",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L216",
+  "chu_de_ten": "Chắc chắn, có thể, không thể",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 1,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Dùng đúng từ chắc chắn, có thể, không thể cho một sự kiện",
+   "Nêu ví dụ cho mỗi mức khả năng xảy ra"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-11",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L216-B2",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L216",
+  "chu_de_ten": "Chắc chắn, có thể, không thể",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 2,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Dùng đúng từ chắc chắn, có thể, không thể cho một sự kiện",
+   "Nêu ví dụ cho mỗi mức khả năng xảy ra"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-10",
+   "MM-L2-11",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L216-B3",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L216",
+  "chu_de_ten": "Chắc chắn, có thể, không thể",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 3,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Dùng đúng từ chắc chắn, có thể, không thể cho một sự kiện",
+   "Nêu ví dụ cho mỗi mức khả năng xảy ra"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L216-B4",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L216",
+  "chu_de_ten": "Chắc chắn, có thể, không thể",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 4,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Dùng đúng từ chắc chắn, có thể, không thể cho một sự kiện",
+   "Nêu ví dụ cho mỗi mức khả năng xảy ra"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ },
+ {
+  "ma": "GITA-L2-L216-B5",
+  "khoi": "L2",
+  "khoi_ten": "Lớp 2",
+  "tuoi": "7 – 8 tuổi",
+  "chu_de": "L216",
+  "chu_de_ten": "Chắc chắn, có thể, không thể",
+  "mach": "T",
+  "mach_ten": "Thống kê và Xác suất",
+  "cam": "Statistics and Probability",
+  "buoi": 5,
+  "thoi_luong": 40,
+  "thang_diem": 40,
+  "yeu_cau": [
+   "Dùng đúng từ chắc chắn, có thể, không thể cho một sự kiện",
+   "Nêu ví dụ cho mỗi mức khả năng xảy ra"
+  ],
+  "twm": [
+   "conjecturing",
+   "convincing"
+  ],
+  "chuan": "Chương trình GDPT 2018 — môn Toán lớp 2",
+  "ma_mau": [
+   "MM-L2-02",
+   "MM-L2-11",
+   "MM-L2-15",
+   "MM-L2-06",
+   "MM-L2-07"
+  ]
+ }
+]

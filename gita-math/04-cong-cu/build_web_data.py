@@ -25,6 +25,9 @@ from ban_do_kien_thuc import BAN_DO  # noqa: E402
 from loai_phieu import LOAI, CHUOI_BUOI  # noqa: E402
 from phan_quyen import VAI_TRO, TAI_NGUYEN, QUYEN, TANG, BAT_BIEN  # noqa: E402
 from so_do_doc_vi import CAU_MO, CAY, CHOT, DOC_NHAM  # noqa: E402
+from khoi_mam import (KHOI as KHOI_MAM, TWM as TWM_MAM,  # noqa: E402
+                       MACH as MACH_MAM, DOI_CHIEU_CAM as DOI_CHIEU_MAM,
+                       LUAT_HUNG_THU as LUAT_MAM)
 
 OUT_DIR = ROOT / "09-online" / "data"
 MOC_DAP_AN = "## HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN"
@@ -274,6 +277,28 @@ def main() -> None:
         so_do.append({"ma": f.stem, "g": g, "l": lop,
                       "ten": md.splitlines()[0].lstrip("# "), "md": tach_dong_md(md)})
 
+    # Khối Mầm — mẫu giáo lớn, lớp 1, lớp 2. Nhúng cả hai bản của mỗi buổi:
+    # bản của trẻ và bản người lớn ngồi cùng. Ở tuổi này người lớn là một phần
+    # của học liệu, nên thiếu bản người lớn là thiếu một nửa bộ tài liệu.
+    mam, mam_noi = [], {}
+    p_mam = ROOT / "12-khoi-mam" / "index-khoi-mam.json"
+    if p_mam.exists():
+        for x in json.loads(p_mam.read_text(encoding="utf-8")):
+            mam.append({k: x[k] for k in
+                        ("ma", "khoi", "khoi_ten", "tuoi", "chu_de", "chu_de_ten",
+                         "mach", "mach_ten", "cam", "buoi", "thoi_luong",
+                         "thang_diem", "yeu_cau", "twm", "chuan")})
+            for hau, khoa in (("", "tre"), ("-NL", "nguoi_lon")):
+                f = ROOT / "12-khoi-mam" / x["khoi"] / f"{x['ma']}{hau}.md"
+                if f.exists():
+                    # Bóc khối khai báo YAML đầu tệp: nó là siêu dữ liệu cho bộ
+                    # sinh, không phải nội dung cho người đọc. Để nguyên thì màn
+                    # hình mở ra bằng một đoạn `ma: "..." khoi: "..."` khó hiểu.
+                    md = f.read_text(encoding="utf-8")
+                    if md.startswith("---"):
+                        md = md.split("\n---", 1)[-1].lstrip("-\n")
+                    mam_noi.setdefault(x["ma"], {})[khoa] = tach_dong_md(md)
+
     ban_do = []
     for f in sorted((ROOT / "06-ban-do-kien-thuc").glob("*.md")):
         md = f.read_text(encoding="utf-8")
@@ -317,6 +342,10 @@ def main() -> None:
         "test": test,
         "de_thi": de_thi,
         "de_soan": de_soan,
+        "mam": mam,
+        "mam_noi": mam_noi,
+        "mam_khung": {"khoi": KHOI_MAM, "twm": TWM_MAM, "mach": MACH_MAM,
+                      "cam": DOI_CHIEU_MAM, "hung_thu": LUAT_MAM},
     }
     if a.lop:
         data["phieu"] = {k: v for k, v in phieu.items() if v["meta"]["lop"] == a.lop}
@@ -334,6 +363,7 @@ def main() -> None:
     print(f"✔ {out.relative_to(ROOT)} — {kb:.0f} KB · bảng chuỗi {len(data['bang_chuoi'])} mục")
     print(f"  chỉ mục: {len(gon)} phiếu · đã biên soạn: {len(phieu)} · test: {len(test)}"
           f" · kèm (GP/HD): {len(kem)} · bản đồ: {len(ban_do)} · sơ đồ đọc vị: {len(so_do)}"
+          f" · khối Mầm: {len(mam)} buổi × 2 bản"
           f" · mạch: {len(mach)}"
           f" · cụm: {len(cum_ds)} · đề thi: {len(de_thi)} (đã soạn {len(de_soan)})")
     print(f"  nhúng trọn nội dung: {len(phieu)} phiếu học + {len(kem)} phiếu kèm"

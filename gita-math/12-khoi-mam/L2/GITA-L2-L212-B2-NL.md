@@ -1,0 +1,229 @@
+---
+ma: "GITA-L2-L212-B2-NL"
+khoi: "L2"
+khoi_ten: "Lớp 2"
+chu_de: "L212"
+chu_de_ten: "Hình tứ giác, khối trụ, khối cầu"
+mach: "H"
+mach_ten: "Hình học và Đo lường"
+buoi: "2"
+thoi_luong: "40"
+thang_diem: "40"
+chuan: "Chương trình GDPT 2018 — môn Toán lớp 2"
+cap_nhat: "2026-08-30"
+---
+
+# Hình tứ giác, khối trụ, khối cầu — buổi 2/5
+
+**HỌC VIỆN PHÁT TRIỂN TÀI NĂNG TOÀN CẦU — GITA** · gita.edu.vn  
+Lớp 2 · 7 – 8 tuổi · Mã: **GITA-L2-L212-B2-NL**  
+Mạch: **Hình học và Đo lường** *(Cambridge: Geometry and Measure)*  
+Thời lượng: **40 phút** · Thang điểm: **40**  
+Bản dành cho: **người lớn ngồi cùng**
+
+---
+
+## YÊU CẦU CẦN ĐẠT CỦA BUỔI NÀY
+
+*Theo Chương trình GDPT 2018 — môn Toán lớp 2.*
+
+- Nhận dạng và gọi tên hình tứ giác
+- Nhận dạng khối trụ, khối cầu trong thực tế
+
+## TƯ DUY BUỔI NÀY RÈN
+
+*Theo khung Thinking and Working Mathematically của Cambridge Primary Mathematics.*
+
+- **Xếp thành nhóm** *(Classifying)* — Chia các thứ vào các nhóm theo một tiêu chí.  
+  Câu người lớn hỏi: “Con xếp chúng thành mấy nhóm? Vì sao xếp thế?”
+- **Chỉ ra chỗ giống nhau** *(Characterising)* — Nói được các thứ trong một nhóm giống nhau ở điểm nào.  
+  Câu người lớn hỏi: “Mấy cái này giống nhau ở chỗ nào?”
+
+## ĐỒ VẬT CẦN CHUẨN BỊ TRƯỚC
+
+- Que tính xếp thành nhóm bằng nhau
+- Thước kẻ
+- Giấy có sẵn các điểm
+- Thước mét
+- Bảng đơn vị đo độ dài
+- Một hộp bi có bi hai màu để thử thật
+- Giấy ô li
+
+---
+
+## PHẦN A — Khởi động — nhắc lại buổi trước
+
+**Bảng nhân, bảng chia 2 và 5**
+
+> **Cô/mẹ đọc lên:** Con đọc to bảng nhân một lượt trước khi làm.
+
+**Đáp án từng việc**
+
+a) 2 × 9 = …
+   → **18**
+
+b) Viết phép nhân thay cho phép cộng: 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 2
+   → **2 × 9 = 18**
+
+c) 12 : 2 = …
+   → **6**
+
+d) 2 × 6 = …
+   → **12**
+
+**Hỏi thêm một câu** *(rèn: Rút ra quy luật · Cho một ví dụ)*: Con biết 2 × 6 rồi. Vậy 6 × 2 bằng mấy? Có phải lúc nào cũng thế không?
+
+**Thế nào là con đã hiểu:** Trẻ hiểu phép nhân là cộng các số hạng bằng nhau, và dùng được phép nhân đã thuộc để suy ra phép chia tương ứng.
+
+**Con tắc thì làm gì:** Xếp que tính thành từng nhóm rồi đếm — thấy được mới nhớ được.
+
+**Nếu con làm nhanh:** Hỏi 2 × 11, một phép ngoài bảng, xem trẻ có tự cộng thêm 2 không.
+
+
+---
+
+## PHẦN B — Học cái mới
+
+**Đường gấp khúc và điểm thẳng hàng**
+
+> **Cô/mẹ đọc lên:** Con dùng thước đặt qua ba điểm xem chúng có cùng nằm trên một đường không.
+
+**Đáp án từng việc**
+
+a) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
+   → **ba điểm thẳng hàng**
+
+b) Đường gấp khúc gồm 4 đoạn dài 14 cm, 6 cm, 3 cm, 13 cm. Tính độ dài đường gấp khúc.
+   → **36 cm**
+
+c) Đường gấp khúc gồm 3 đoạn dài 25 cm, 11 cm, 16 cm. Tính độ dài đường gấp khúc.
+   → **52 cm**
+
+d) Ba điểm A, B, C cùng nằm trên một đường thẳng. Ba điểm ấy gọi là gì?
+   → **ba điểm thẳng hàng**
+
+**Hỏi thêm một câu** *(rèn: Chỉ ra chỗ giống nhau · Xem chỗ nào chưa ổn)*: Độ dài đường gấp khúc có bằng khoảng cách từ điểm đầu tới điểm cuối không? Vì sao?
+
+**Thế nào là con đã hiểu:** Trẻ nhận ra đi theo đường gấp khúc **dài hơn** đi thẳng. Đây là một hiểu biết hình học thật, không phải phép cộng.
+
+**Con tắc thì làm gì:** Dùng sợi dây đặt theo đường gấp khúc rồi kéo thẳng ra đo.
+
+**Nếu con làm nhanh:** Vẽ hai đường gấp khúc cùng điểm đầu điểm cuối, hỏi đường nào dài hơn.
+
+
+---
+
+## PHẦN C — Luyện tay
+
+**Đổi đơn vị và tính trên số đo**
+
+> **Cô/mẹ đọc lên:** Muốn so hai số đo thì phải đưa về cùng một đơn vị đã.
+
+**Đáp án từng việc**
+
+a) 6 m = … cm
+   → **600 cm**
+
+b) 26 cm + 21 cm = … cm
+   → **47 cm**
+
+c) Điền dấu >, < hoặc = : 5 dm … 97 cm
+   → **<**
+
+d) 8 cm + 15 cm = … cm
+   → **23 cm**
+
+e) Điền dấu >, < hoặc = : 6 dm … 15 cm
+   → **>**
+
+f) 3 m = … cm
+   → **300 cm**
+
+**Hỏi thêm một câu** *(rèn: Làm cách gọn hơn · Xem chỗ nào chưa ổn)*: Vì sao không so thẳng 5 với 40 được?
+
+**Thế nào là con đã hiểu:** Trẻ tự đổi về cùng đơn vị trước khi so, không so thẳng hai con số. Đây là lỗi mất điểm phổ biến nhất của cả mạch đo lường.
+
+**Con tắc thì làm gì:** Viết bảng đơn vị ra, chỉ vào từng bậc khi đổi.
+
+**Nếu con làm nhanh:** Cho ba số đo ba đơn vị khác nhau, bảo xếp thứ tự.
+
+
+---
+
+## PHẦN D — Bài toán có lời văn
+
+**Chắc chắn, có thể, không thể**
+
+> **Cô/mẹ đọc lên:** Con nghĩ kỹ rồi chọn một trong ba từ: chắc chắn, có thể, không thể.
+
+**Đáp án từng việc**
+
+a) “Hôm nay con được điểm 10” — chắc chắn, có thể hay không thể?
+   → **có thể**
+
+b) “Một năm có 12 tháng” — chắc chắn, có thể hay không thể?
+   → **chắc chắn**
+
+c) “Con mèo biết nói tiếng người” — chắc chắn, có thể hay không thể?
+   → **không thể**
+
+d) “Ngày mai trời mưa” — chắc chắn, có thể hay không thể?
+   → **có thể**
+
+**Hỏi thêm một câu** *(rèn: Đoán thử · Nói cho người khác tin)*: Vì sao con chọn từ đó? Con cho cô một ví dụ nữa cùng loại.
+
+**Thế nào là con đã hiểu:** Trẻ phân biệt được “không thể” với “khó xảy ra”. Đây là chỗ nhầm nhiều nhất, và cũng là gốc của khái niệm xác suất sau này.
+
+**Con tắc thì làm gì:** Thử thật bằng hộp bi. Bốc mấy lần cho trẻ thấy.
+
+**Nếu con làm nhanh:** Cho trẻ tự nghĩ ba câu, mỗi câu một mức, rồi đố lại người lớn.
+
+
+---
+
+## PHẦN E — Thử thách vui
+
+**Tìm chỗ sai giúp bạn**
+
+> **Cô/mẹ đọc lên:** Con làm giám khảo nhé. Xem bạn sai ở bước nào rồi sửa lại.
+
+**Đáp án từng việc**
+
+a) Một bạn tính 18 + 86 = 94. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+   → **bạn quên nhớ sang hàng chục; kết quả đúng là 104**
+
+b) Một bạn tính 57 + 68 = 115. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+   → **bạn quên nhớ sang hàng chục; kết quả đúng là 125**
+
+c) Một bạn tính 74 + 81 = 164. Bạn ấy sai ở đâu? Kết quả đúng là bao nhiêu?
+   → **bạn quên nhớ sang hàng chục; kết quả đúng là 155**
+
+**Hỏi thêm một câu** *(rèn: Xem chỗ nào chưa ổn · Làm cách gọn hơn)*: Làm sao để lần sau bạn ấy không sai như thế nữa?
+
+**Thế nào là con đã hiểu:** Trẻ chỉ ra **bước nào** sai chứ không chỉ nói kết quả sai. Tìm được lỗi của người khác là bước trước khi tự tìm được lỗi của mình.
+
+**Con tắc thì làm gì:** Tính lại cùng trẻ từng hàng, so với bài của bạn ở từng bước.
+
+**Nếu con làm nhanh:** Cho một bài đúng để trẻ khỏi quen là bài nào cũng có lỗi.
+
+
+---
+
+## BỐN ĐIỀU GIỮ CHO CON THÍCH TOÁN
+
+1. **Mỗi buổi mở bằng một trò chơi hoặc một câu đố, không mở bằng bài tập.** — Ấn tượng của ba phút đầu quyết định trẻ ngồi vào bàn với tâm thế nào.
+2. **Mỗi buổi có ít nhất một việc dùng **đồ vật thật** — que tính, hột hạt, cúc áo, ngón tay — chứ không chỉ có giấy bút.** — Ở tuổi này khái niệm số hình thành qua tay trước khi hình thành qua mắt.
+3. **Mỗi buổi kết bằng một việc trẻ **chắc chắn làm được**.** — Buổi học kết thúc ở cảm giác nào thì trẻ nhớ cảm giác ấy, không nhớ nội dung.
+4. **Không dùng bút đỏ, không xếp hạng, không so sánh trẻ này với trẻ khác. Sai thì ghi lại để buổi sau làm lại, không ghi điểm trừ.** — Trẻ sợ sai sẽ ngừng đoán, mà ngừng đoán là ngừng học toán.
+
+## ĐỐI CHIẾU VỚI CAMBRIDGE
+
+Khối này tương ứng **Cambridge Stage 2**. Phần trùng nhau: Số tới 1 000, cộng trừ có nhớ, làm quen nhân chia, đơn vị đo, thu thập số liệu và biểu đồ tranh, ngôn ngữ khả năng xảy ra.
+
+*Cambridge đi sớm hơn ở:* Stage 2 làm quen phân số đơn giản (một nửa, một phần tư) sớm hơn chương trình Việt Nam.
+
+*Chương trình Việt Nam đi sớm hơn ở:* Bảng nhân 2, 5 và bảng chia 2, 5 được yêu cầu thuộc lòng, chặt hơn Cambridge ở cùng độ tuổi.
+
+---
+
+*Buổi học do bộ sinh GITA biên soạn ngày 2026-08-30. Mọi đáp số do mã tính ra. Bám Chương trình GDPT 2018 — môn Toán lớp 2, bổ sung khung Thinking and Working Mathematically của Cambridge Primary Mathematics.*

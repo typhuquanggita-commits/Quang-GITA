@@ -3,8 +3,10 @@
 **HỌC VIỆN PHÁT TRIỂN TÀI NĂNG TOÀN CẦU — GITA** · gita.edu.vn
 *Tư duy xuất sắc — Bản lĩnh dẫn đầu*
 
-Hệ tài liệu toán lớp 3 → lớp 5, hai tuyến, phục vụ mục tiêu thi chất lượng cao và thi
-chuyên vào các trường top đầu Hà Nội.
+Hệ tài liệu toán **từ tiền tiểu học tới lớp 5**. Ba khối đầu — mẫu giáo lớn, lớp 1,
+lớp 2 — nhắm việc xây nền và giữ cho trẻ thích toán. Ba khối sau — lớp 3, 4, 5 — chia
+hai tuyến, phục vụ mục tiêu thi chất lượng cao và thi chuyên vào các trường top đầu
+Hà Nội.
 
 ---
 
@@ -12,6 +14,7 @@ chuyên vào các trường top đầu Hà Nội.
 
 | Hạng mục | Số lượng | Nơi để |
 |---|---:|---|
+| **Khối Mầm** — buổi học 5–8 tuổi, mỗi buổi hai bản | 190 × 2 | `12-khoi-mam/` |
 | Cụm chuyên đề (chương) | 96 | `02-chi-muc/` |
 | Phiếu học 90 phút | 600 | `03-phieu/` |
 | Phiếu Lời giải & Phân tích chuyên sâu | 600 | `03-phieu/` |
@@ -22,7 +25,7 @@ chuyên vào các trường top đầu Hà Nội.
 | Bộ test đầu vào bốn trục | 3 | `08-test-dau-vao/` |
 | Sơ đồ đọc vị đề bài | 24 | `10-so-do-doc-vi/` |
 | Lộ trình học 34 tuần | 6 | `05-lo-trinh/` |
-| **Tổng tài liệu** | **1500** | |
+| **Tổng tài liệu** | **1880** | |
 
 **Cấu trúc bất biến của mọi phiếu học:** 90 phút · thang 100 · 5 phần × 5 bài ×
 4–10 ý · 115–170 ý một phiếu.
@@ -30,6 +33,31 @@ chuyên vào các trường top đầu Hà Nội.
 **Chuỗi sáu buổi của một cụm:** `LT` Lý thuyết → `DB` Dạng bài & Đọc vị →
 `KN` Kỹ năng & Phương pháp → `NC` Luyện nâng cao → `OT` Ôn thi → `TH` Thi chương.
 Mỗi buổi kèm một phiếu `GP` lời giải; mỗi cụm có một phiếu `HD` hướng dẫn ôn chắc.
+
+### Khối Mầm dùng khung riêng, không dùng khung của lớp 3–5
+
+| Khối | Tuổi | Một buổi | Cấu trúc | Đánh giá |
+|---|:--:|:--:|---|---|
+| Tiền tiểu học | 5–6 | 25 phút | 4 hoạt động | ba mức, **không chấm điểm** |
+| Lớp 1 | 6–7 | 35 phút | 4 phần × 4 bài | thang 20 |
+| Lớp 2 | 7–8 | 40 phút | 5 phần × 4 bài | thang 40 |
+
+Đặt một phiếu 90 phút thang điểm 100 trước mặt trẻ năm tuổi là sai ở mọi mặt: trẻ chưa
+đọc trôi chảy, sức tập trung chỉ quãng 20–25 phút, và một thang điểm kèm bút đỏ ở tuổi
+này dạy trẻ sợ sai trước khi kịp thấy toán là thứ đáng chơi. Yêu cầu *học sinh thích học
+toán* không phải lời chúc thêm vào cuối — nó là ràng buộc thiết kế, và bốn luật giữ hứng
+thú được `kiem_mam.py` cưỡng chế như mọi ràng buộc kỹ thuật khác.
+
+Mỗi buổi ra **hai tệp**: bản của trẻ, và bản người lớn ngồi cùng có câu đọc lên cho trẻ
+nghe, đồ vật cần chuẩn bị, đáp án, dấu hiệu nhận ra con đã hiểu, và phải làm gì khi con
+tắc. Ở tuổi này người lớn là một phần của học liệu, không phải người đứng ngoài chấm bài.
+
+Hai chuẩn được hợp nhất, không phải chọn một: **Chương trình GDPT 2018** của Bộ Giáo dục
+và Đào tạo (với khối mẫu giáo là Chương trình Giáo dục mầm non) là chuẩn bắt buộc về nội
+dung; **Cambridge Primary Mathematics** bổ sung khung **Thinking and Working
+Mathematically** — tám đặc điểm tư duy xếp thành bốn cặp, mỗi đặc điểm kèm một câu hỏi
+người lớn nói ra miệng. Chỗ lệch giữa hai chương trình được ghi rõ thay vì giả vờ trùng
+khít.
 
 ## 2. ĐÃ BIÊN SOẠN XONG
 
@@ -104,7 +132,7 @@ Vì vậy có thêm một bản thứ hai: **website tĩnh công khai**, cùng k
 kết xuất thành HTML thật, để đưa lên tên miền của Học viện.
 
 ```
-python3 04-cong-cu/build_site.py     →  2 169 trang · 80 MB
+python3 04-cong-cu/build_site.py     →  2 402 trang · 85 MB
 python3 04-cong-cu/kiem_toan_seo.py  →  SẠCH LỖI · 28 hạng mục đạt
 ```
 
@@ -116,6 +144,7 @@ python3 04-cong-cu/kiem_toan_seo.py  →  SẠCH LỖI · 28 hạng mục đạt
 | Trang chuyên đề · nhóm · lớp | 123 | Trụ chủ đề, dẫn uy tín xuống trang dạng bài |
 | Sơ đồ đọc vị · lộ trình · thi vào 6 | 39 | Ba khoảng trống đối thủ chưa làm |
 | Hướng dẫn ôn chắc | 96 | |
+| Trang **khối Mầm** | 233 | Ba khối 5–8 tuổi: trang trụ, trang chủ đề, trang từng buổi |
 | Trang uy tín và điều hướng | 7 | Đội ngũ, quy trình biên soạn, đánh giá, đăng ký |
 
 Nội dung nằm sẵn trong HTML, không tệp nào tải từ máy chủ ngoài, tải xong trong 18–48 ms
@@ -144,7 +173,8 @@ gita-math/
 ├── 08-test-dau-vao/      Test bốn trục cho học sinh mới + công cụ xếp lớp
 ├── 09-online/            Hệ thống làm bài trực tuyến
 ├── 10-so-do-doc-vi/      24 sơ đồ đọc vị đề bài (8 nhóm × 3 lớp)
-└── 11-seo/               Chiến lược tìm kiếm + bộ sinh website công khai
+├── 11-seo/               Chiến lược tìm kiếm + bộ sinh website công khai
+└── 12-khoi-mam/          Tiền tiểu học · lớp 1 · lớp 2 — 190 buổi × 2 bản
 ```
 
 ## 5. BỘ CÔNG CỤ — CHẠY THEO ĐÚNG THỨ TỰ NÀY
@@ -157,6 +187,8 @@ gita-math/
 | `python3 04-cong-cu/build_ban_do.py` | Sinh 9 bản đồ kiến thức |
 | `python3 04-cong-cu/build_de_thi.py` | Sinh chỉ mục 162 đề thi |
 | `python3 04-cong-cu/build_de.py` | **Biên soạn trọn 162 đề thi** kèm đáp án và bảng phân tích |
+| `python3 04-cong-cu/build_mam.py` | **Biên soạn khối Mầm — 190 buổi × 2 bản** |
+| `python3 04-cong-cu/kiem_mam.py` | **Kiểm định khối Mầm — 15 hạng mục** |
 | `python3 04-cong-cu/build_phan_quyen.py` | Sinh tài liệu phân quyền và bảo mật |
 | `python3 04-cong-cu/kiem_tra_mau.py` | Kiểm định 254 mẫu bài × mọi lớp × 300 hạt giống, đo độ phủ 538 dạng bài và 16 phương pháp |
 | `python3 04-cong-cu/sinh_kho.py` | **Sinh trọn kho 1 296 tài liệu** (`--ghi-de` để dựng lại) |

@@ -317,6 +317,14 @@ class Site:
         return f"/doc-vi/{seo.slug(NHOM[g]['ten'])}-lop-{lop}/"
 
     @staticmethod
+    def dd_mam(khoi: str, chu_de: str = "", buoi: int = 0) -> str:
+        goc = {"MG": "/toan-tien-tieu-hoc/", "L1": "/toan-lop-1/",
+               "L2": "/toan-lop-2/"}[khoi]
+        if not chu_de:
+            return goc
+        return goc + chu_de.lower() + ("/" if not buoi else f"/buoi-{buoi}/")
+
+    @staticmethod
     def dd_de(ma: str) -> str:
         return f"/de-thi/{ma.lower()}/"
 
@@ -1050,6 +1058,193 @@ class Site:
             0.95, "Đề thi toán tiểu học",
             tu_khoa="đề thi toán tiểu học có đáp án", nguong=150)
 
+    # ── 9C. khối Mầm ─────────────────────────────────────────────────────
+    def lam_mam(self) -> None:
+        """Ba khối 5–8 tuổi: tiền tiểu học, lớp 1, lớp 2.
+
+        Nhóm trang này nhắm một tập truy vấn khác hẳn phần lớp 3–5: người tìm
+        gần như luôn là **phụ huynh**, không phải học sinh, và câu họ gõ là
+        "dạy toán cho bé 5 tuổi", "toán lớp 1 học gì". Vì vậy trang viết cho
+        người lớn đọc, và thứ đặt lên trước là *cách ngồi học cùng con* chứ
+        không phải danh sách bài tập.
+        """
+        p = GOC / "12-khoi-mam" / "index-khoi-mam.json"
+        if not p.exists():
+            return
+        idx = json.loads(doc(p))
+        from data.khoi_mam import (CHU_DE as CD_MAM, DOI_CHIEU_CAM, KHOI as K_MAM,
+                                   LUAT_HUNG_THU, TWM as TWM_MAM)
+        theo_khoi = defaultdict(list)
+        for x in idx:
+            theo_khoi[x["khoi"]].append(x)
+
+        for khoi, ds in theo_khoi.items():
+            K = K_MAM[khoi]
+            theo_cd = defaultdict(list)
+            for x in ds:
+                theo_cd[x["chu_de"]].append(x)
+
+            # trang từng buổi
+            for cd, bs in theo_cd.items():
+                for x in sorted(bs, key=lambda z: z["buoi"]):
+                    f = GOC / "12-khoi-mam" / khoi / f"{x['ma']}-NL.md"
+                    if not f.exists():
+                        continue
+                    _fm, than = tach_fm(doc(f))
+                    dd = self.dd_mam(khoi, cd, x["buoi"])
+                    tieu_de = seo.ghep_tieu_de(
+                        f"{x['chu_de_ten']} — {K['ten_ngan'].lower()}", DUOI,
+                        giu=f" buổi {x['buoi']}")
+                    mo_ta = seo.rut(
+                        f"Buổi {x['buoi']} chủ đề {x['chu_de_ten']} cho trẻ "
+                        f"{K['tuoi']}: {x['thoi_luong']} phút, có đồ vật cần chuẩn "
+                        f"bị, câu người lớn đọc lên, đáp án và dấu hiệu nhận ra con "
+                        f"đã hiểu.", 158)
+                    than_html = (
+                        f"<p>Buổi {x['buoi']} của chủ đề "
+                        f"<strong>{seo.esc(x['chu_de_ten'])}</strong>, dành cho trẻ "
+                        f"{K['tuoi']}. Học trong {x['thoi_luong']} phút.</p>"
+                        f'<div class="tom"><p><strong>Đây là bản dành cho người lớn '
+                        f'ngồi cùng.</strong> Ở tuổi này người lớn là một phần của '
+                        f'học liệu chứ không phải người đứng ngoài chấm bài: trang '
+                        f'có câu đọc lên cho trẻ nghe, đồ vật cần chuẩn bị, dấu hiệu '
+                        f'nhận ra con đã hiểu, và phải làm gì khi con tắc.</p></div>'
+                        + md(bo_dau_trang(than)))
+                    than_html += (f'<p><a href="{self.dd_mam(khoi)}">Xem toàn bộ '
+                                  f'chương trình {seo.esc(K["ten_ngan"].lower())}</a></p>')
+                    vet = [("Trang chủ", "/"), (K["ten_ngan"], self.dd_mam(khoi)),
+                           (seo.rut(x["chu_de_ten"], 36), self.dd_mam(khoi, cd)),
+                           (f"Buổi {x['buoi']}", dd)]
+                    self.ghi(dd, seo.trang(
+                        dd=dd, tieu_de=tieu_de, mo_ta=mo_ta,
+                        h1=f"{x['chu_de_ten']} — buổi {x['buoi']}",
+                        than=bang_cuon(than_html), vet=vet, ngay=NGAY,
+                        muc_dang=self.dd_mam(khoi),
+                        json_ld=[seo.duong_dan_dieu_huong(vet)]),
+                        0.6, tieu_de, nguong=250)
+
+                # trang chủ đề
+                dd = self.dd_mam(khoi, cd)
+                d0 = bs[0]
+                than = (f"<p>Chủ đề <strong>{seo.esc(d0['chu_de_ten'])}</strong> cho "
+                        f"trẻ {K['tuoi']}, học trong {len(bs)} buổi, mỗi buổi "
+                        f"{K['phut']} phút.</p>"
+                        "<h2>Yêu cầu cần đạt theo chương trình của Bộ</h2>"
+                        f"<p><em>Theo {seo.esc(K['chuan'])}.</em></p><ul>"
+                        + "".join(f"<li>{seo.esc(y)}</li>" for y in d0["yeu_cau"])
+                        + "</ul>"
+                        "<h2>Tư duy được rèn ở chủ đề này</h2>"
+                        "<p>Theo khung <em>Thinking and Working Mathematically</em> "
+                        "của Cambridge Primary Mathematics.</p><ul>"
+                        + "".join(
+                            f"<li><strong>{seo.esc(TWM_MAM[k]['ten'])}</strong> "
+                            f"<em>({seo.esc(TWM_MAM[k]['goc'])})</em> — "
+                            f"{seo.esc(TWM_MAM[k]['la_gi'])} Câu người lớn hỏi: "
+                            f"“{seo.esc(TWM_MAM[k]['cau_hoi'])}”</li>"
+                            for k in d0["twm"] if k in TWM_MAM) + "</ul>")
+                # Gom đồ vật và dấu hiệu hiểu bài từ chính các mẫu bài của chủ
+                # đề. Đây là hai thứ phụ huynh cần trước khi ngồi vào bàn với con,
+                # và cũng là hai thứ không kho tài liệu nào khác đưa ra.
+                import random as _rd
+                from sinh.mau_mam import KHO_MAM as _KM
+                do_ds, hieu_ds = [], []
+                for m in _KM.get(khoi, {}).get(cd, []):
+                    try:
+                        bb = m["sinh"](_rd.Random(7))
+                    except Exception:
+                        continue
+                    for z in bb.do_dung:
+                        if z not in do_ds:
+                            do_ds.append(z)
+                    if bb.dau_hieu_hieu and bb.dau_hieu_hieu not in hieu_ds:
+                        hieu_ds.append(bb.dau_hieu_hieu)
+                if do_ds:
+                    than += ("<h2>Chuẩn bị gì trước khi học</h2><ul>"
+                             + "".join(f"<li>{seo.esc(z)}</li>" for z in do_ds)
+                             + "</ul><p>Ở tuổi này khái niệm số hình thành qua tay "
+                               "trước khi hình thành qua mắt, nên buổi nào cũng cần "
+                               "có đồ vật thật để trẻ cầm, xếp và chia.</p>")
+                if hieu_ds:
+                    than += ("<h2>Làm sao biết con đã hiểu</h2><ul>"
+                             + "".join(f"<li>{inline(z)}</li>" for z in hieu_ds[:4])
+                             + "</ul>")
+
+                than += "<h2>Các buổi của chủ đề</h2>" + the_lien_ket([
+                    (f"Buổi {x['buoi']}",
+                     f"{x['thoi_luong']} phút · có bản của trẻ và bản người lớn",
+                     self.dd_mam(khoi, cd, x["buoi"]))
+                    for x in sorted(bs, key=lambda z: z["buoi"])])
+                vet = [("Trang chủ", "/"), (K["ten_ngan"], self.dd_mam(khoi)),
+                       (seo.rut(d0["chu_de_ten"], 40), dd)]
+                self.ghi(dd, seo.trang(
+                    dd=dd,
+                    tieu_de=seo.ghep_tieu_de(
+                        f"{d0['chu_de_ten']} — {K['ten_ngan'].lower()}", DUOI),
+                    mo_ta=seo.rut(
+                        f"Dạy trẻ {K['tuoi']} chủ đề {d0['chu_de_ten']} qua "
+                        f"{len(bs)} buổi {K['phut']} phút, bám chương trình của Bộ "
+                        f"và khung tư duy Cambridge.", 158),
+                    h1=f"{d0['chu_de_ten']} — {K['ten_ngan'].lower()}",
+                    than=than, vet=vet, ngay=NGAY, muc_dang=self.dd_mam(khoi),
+                    json_ld=[seo.duong_dan_dieu_huong(vet)]),
+                    0.75, d0["chu_de_ten"], nguong=200)
+
+            # trang trụ của khối
+            dd = self.dd_mam(khoi)
+            dc = DOI_CHIEU_CAM[khoi]
+            than = (
+                f"<p>Chương trình toán cho trẻ <strong>{K['tuoi']}</strong>, gồm "
+                f"{len(theo_cd)} chủ đề, mỗi chủ đề {K['buoi_moi_chu_de']} buổi, "
+                f"mỗi buổi <strong>{K['phut']} phút</strong>"
+                + (f", thang điểm {K['thang']}" if K["thang"]
+                   else " và <strong>không chấm điểm</strong>") + ".</p>"
+                f'<div class="tom"><p><strong>Vì sao khối này không dùng khung của '
+                f'lớp 3–5.</strong> {seo.esc(K["ghi_chu"])} Một phiếu 90 phút với '
+                f'thang điểm 100 đặt trước mặt trẻ tuổi này là sai ở mọi mặt — và '
+                f'cái sai lớn nhất là nó dạy trẻ sợ sai trước khi kịp thấy toán là '
+                f'thứ đáng chơi.</p></div>'
+                "<h2>Bốn điều giữ cho con thích toán</h2><ol>"
+                + "".join(f"<li><strong>{seo.esc(a)}</strong> {seo.esc(b)}</li>"
+                          for a, b in LUAT_HUNG_THU) + "</ol>"
+                f"<h2>Bám chuẩn nào</h2>"
+                f"<p><strong>{seo.esc(K['chuan'])}</strong> — đây là chuẩn bắt buộc: "
+                f"nội dung nào Bộ quy định cho lứa tuổi nào thì nằm đúng ở đó, không "
+                f"dạy trước chương trình. Dạy trước là cách nhanh nhất làm trẻ chán "
+                f"toán.</p>"
+                f"<p>Bổ sung thêm <strong>{seo.esc(dc['stage'])}</strong> của "
+                f"Cambridge Primary Mathematics. Phần trùng nhau: "
+                f"{seo.esc(dc['trung'])} Cambridge đi sớm hơn ở: "
+                f"{seo.esc(dc['cam_som_hon'])} Chương trình Việt Nam đi sớm hơn ở: "
+                f"{seo.esc(dc['vn_som_hon'])}</p>")
+            than += "<h2>Các chủ đề</h2>" + the_lien_ket([
+                (theo_cd[c][0]["chu_de_ten"],
+                 f"{theo_cd[c][0]['mach_ten']} · {len(theo_cd[c])} buổi",
+                 self.dd_mam(khoi, c)) for c in sorted(theo_cd)])
+            than += ('<p><a href="/toan-lop-3/">Sau lớp 2 là chương trình toán lớp '
+                     '3, 4, 5</a> — nơi bắt đầu hệ chuyên đề và hai tuyến học.</p>')
+            vet = [("Trang chủ", "/"), (K["ten_ngan"], dd)]
+            tk = {"MG": "dạy toán cho trẻ 5 tuổi", "L1": "toán lớp 1 học gì",
+                  "L2": "toán lớp 2 học gì"}[khoi]
+            self.ghi(dd, seo.trang(
+                dd=dd,
+                tieu_de=seo.ghep_tieu_de(
+                    {"MG": "Toán tiền tiểu học cho trẻ 5 – 6 tuổi",
+                     "L1": "Toán lớp 1 — chương trình và cách dạy",
+                     "L2": "Toán lớp 2 — chương trình và cách dạy"}[khoi], DUOI),
+                mo_ta=seo.rut(
+                    f"Chương trình toán cho trẻ {K['tuoi']}: {len(theo_cd)} chủ đề, "
+                    f"buổi {K['phut']} phút, bám chương trình của Bộ Giáo dục và "
+                    f"khung tư duy Cambridge, thiết kế để trẻ thích học.", 158),
+                h1={"MG": "Toán tiền tiểu học — trẻ 5 đến 6 tuổi",
+                    "L1": "Toán lớp 1 — chương trình, chủ đề và cách dạy",
+                    "L2": "Toán lớp 2 — chương trình, chủ đề và cách dạy"}[khoi],
+                than=than, vet=vet, ngay=NGAY, muc_dang=dd,
+                json_ld=[seo.duong_dan_dieu_huong(vet),
+                         seo.khoa_hoc(K["ten"], K["chuan"], dd,
+                                      1 if khoi != "MG" else 1,
+                                      len(theo_cd) * K["buoi_moi_chu_de"])]),
+                0.95, K["ten"], tu_khoa=tk, nguong=250)
+
     # ── 10. trang chủ ────────────────────────────────────────────────────
     def lam_chu(self) -> None:
         so_dang = len(self.dang)
@@ -1400,6 +1595,7 @@ class Site:
         self.lam_lo_trinh()
         self.lam_thi_vao_6()
         self.lam_de_thi()
+        self.lam_mam()
         self.lam_uy_tin()
         self.lam_ky_thuat()
 
