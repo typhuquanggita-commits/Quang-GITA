@@ -5,6 +5,9 @@
 Bám đúng cấu trúc bài thi HSA: **150 câu / 195 phút / thang 150 điểm**, chia ba phần
 Tư duy định lượng (Toán, 50 câu / 75 phút), Tư duy định tính (Ngôn ngữ — Văn học,
 50 câu / 60 phút) và phần tự chọn Khoa học hoặc Tiếng Anh (50 câu / 60 phút).
+Theo dạng thức chính thức áp dụng từ 2026, chọn Khoa học nghĩa là chọn **đúng ba
+trong năm chủ đề** — Vật lý, Hóa học, Sinh học, Lịch sử, Địa lý — mỗi chủ đề 16–17
+câu, và mỗi chủ đề Lý, Hóa, Sinh có ít nhất một câu điền đáp án.
 
 > **Về mốc điểm.** HSA chấm trên thang **150**, nên không tồn tại mốc 1400 điểm.
 > Mục tiêu mặc định của ứng dụng đặt ở **140/150** — mức tương ứng nhóm dẫn đầu phổ
@@ -48,7 +51,7 @@ npm run verify       # typecheck + toàn bộ test + build
 npm run test         # 300 bài test
 npm run build        # dựng bản phát hành vào dist/
 npm run preview      # xem thử bản đã dựng
-npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 30 phiếu hướng dẫn ra catalogue/*.csv
+npm run catalogue    # xuất 2000 phiếu + 2000 nhiệm vụ + 33 phiếu hướng dẫn ra catalogue/*.csv
 ```
 
 **Gia sư AI (tùy chọn).** Ứng dụng chạy đầy đủ khi không có khóa API. Muốn bật, đặt
@@ -107,8 +110,8 @@ tính nhất quán và sẽ lệch ngay khi khung chương trình thay đổi. M
 ra từ một đặc tả**: `(chuyên đề × cấp độ × dạng phiếu)`. Ba tính chất được bảo đảm
 bằng xây dựng và có bài test canh giữ:
 
-1. **Đúng 2.000 phiếu** — phân bổ bằng phương pháp số dư lớn nhất (Hare) trên 180 ô
-   (30 chuyên đề × 6 cấp độ).
+1. **Đúng 2.000 phiếu** — phân bổ bằng phương pháp số dư lớn nhất (Hare) trên 198 ô
+   (33 chuyên đề × 6 cấp độ).
 2. **Đúng tỉ trọng đề thật** — số phiếu của một chuyên đề tỉ lệ thuận với tỉ trọng
    xuất hiện của chuyên đề đó trong đề thi, nên thời gian học đi đúng chỗ.
 3. **Tái lập được** — không dùng `Math.random` ở bất kỳ đâu; cùng một mã phiếu luôn
@@ -183,7 +186,7 @@ rồi chọn câu tiếp theo có độ khó gần năng lực đó nhất. Mộ
 không mang thông tin gì — ai cũng đúng, hoặc ai cũng sai — nên 12 câu cho ra sai số tương
 đương một đề cố định dài gấp đôi.
 
-Kết quả gieo **cấp độ khởi điểm cho cả 30 tuyến**, mức thành thạo ban đầu, điểm dự báo và
+Kết quả gieo **cấp độ khởi điểm cho cả 33 tuyến**, mức thành thạo ban đầu, điểm dự báo và
 đưa mọi câu sai thẳng vào sổ tay lỗi sai. Không có bước này thì mọi người học đều xuất
 phát từ cùng một điểm mặc định — nghĩa là người mới, người cần giúp nhất, lại nhận được
 ít hướng dẫn nhất.
@@ -192,6 +195,48 @@ Hai giới hạn được tuyên bố thẳng trên màn hình thay vì giấu �
 **phần thi, không phải từng chuyên đề** (12 câu không đủ định vị 10 chuyên đề riêng biệt),
 và nó chỉ xếp tới **tối đa cấp 4** — cấp cao hơn phải chứng minh bằng phiếu thật.
 
+### Lộ trình cá nhân hóa — ngân sách giờ và phân bổ theo lợi ích biên
+
+Bài định vị nói *"bạn đang ở đâu"*. Lộ trình trả lời hai câu tiếp theo: **giờ học tiếp
+theo nên đặt vào đâu**, và **với nhịp này thì trong 6 tháng đến 1 năm bạn chạm được bao
+nhiêu điểm**.
+
+Mô hình dựng trên ba nguyên tắc:
+
+1. **Mọi con số đều truy ngược được.** Điểm dự báo đi qua đúng một chuỗi: độ thành thạo →
+   năng lực θ → tỉ lệ đúng kỳ vọng trên phân bố độ khó chuẩn → điểm trên thang 50 mỗi
+   phần. Không có hệ số tùy ý nào được thêm vào giữa chuỗi đó. Cùng một chuỗi này được
+   dùng ở bảng tổng quan và ở bài định vị, có test khóa lại để ba nơi không bao giờ lệch.
+
+2. **Phân bổ giờ theo lợi ích biên, không theo cảm tính.** Đường học tập bão hòa —
+   `mastery(h) = trần − (trần − nay)·e^(−h/τ)` với τ ≈ 11 giờ mỗi chuyên đề — nên mỗi giờ
+   thêm vào một chuyên đề cho ít điểm hơn giờ trước. Thuật toán đặt từng giờ vào chuyên đề
+   đang cho **nhiều điểm nhất cho chính giờ đó**. Hệ quả đáng chú ý: chuyên đề yếu nhất
+   không phải lúc nào cũng là chỗ đáng đầu tư nhất — chuyên đề có trọng số lớn trong đề và
+   còn nhiều dư địa mới là.
+
+3. **Nói thẳng khi mục tiêu không khả thi.** Nếu quỹ thời gian còn lại không đủ chạm mục
+   tiêu, hệ thống nói ra và đưa hai lựa chọn có thật: tăng nhịp lên bao nhiêu giờ mỗi
+   tuần, hoặc điểm cao nhất quỹ này thực sự cho phép. Một lộ trình hứa hẹn điều không xảy
+   ra là một lộ trình có hại — người học chỉ phát hiện sự thật vào đúng ngày thi.
+
+Ví dụ với một người mới bắt đầu (điểm nền 83,9):
+
+| Nhịp | 6 tháng | 8 tháng | 12 tháng |
+|---|---|---|---|
+| 30 câu/ngày (9,1 h/tuần) | 117 | 121 | **131** |
+| 50 câu/ngày (15,2 h/tuần) | 127 | 131 | **139** |
+
+Một lưu ý về mục tiêu: HSA chấm trên **thang 150**, nên "1400 điểm" không tồn tại — mục
+tiêu tinh hoa tương đương là **140/150**. Nhưng điểm cao nhất các mùa gần đây nằm trong
+khoảng **125–135**, nên hệ thống gắn nhãn cảnh báo cho mọi mục tiêu trên 135 thay vì im
+lặng nhận lời.
+
+Một lần chạy phân bổ tới trần rồi ghi lại đường điểm theo số giờ, nên ba con số — điểm với
+nhịp hiện tại, trần của quỹ, nhịp tối thiểu cần có — luôn nhất quán vì đến từ cùng một lần
+chạy. Lợi ích biên tính trong thời gian hằng số, vì điểm một phần chỉ phụ thuộc độ thành
+thạo trung bình có trọng số của phần đó.
+
 ### Đề mẫu trọn vẹn kèm barem
 
 Hệ thống vẫn sinh được đề thi thử từ ma trận — nhưng **ma trận không phải đề**. Một ma trận
@@ -199,7 +244,7 @@ nói "35 câu trắc nghiệm, 15 câu điền, độ khó phân bố thế này
 cụ thể**: có mã số, thứ tự câu cố định, có đáp án và có barem — thứ giáo viên in ra phát
 cho cả lớp, và hai người đọc thì thấy đúng một nội dung.
 
-**Năm đề mẫu chính thức**, mỗi môn tự chọn của phần 3 một đề, mỗi đề **150 câu / 195 phút /
+**Năm đề mẫu chính thức**, mỗi tổ hợp phần 3 một đề, mỗi đề **150 câu / 195 phút /
 thang 150 điểm**. Bốn chế độ xem, và thứ tự của chúng có chủ ý — *Đề thi* đứng trước *Đáp
 án*, vì một tài liệu mở ra là thấy đáp án thì không còn là đề thi nữa:
 
@@ -231,11 +276,11 @@ Kèm theo là mẹo xử lý nhanh và sai lầm đặc trưng của riêng từ
 
 | | |
 |---|---|
-| 30 chuyên đề | mỗi chuyên đề một "câu hỏi lớn" |
-| **90 dạng bài** | mỗi dạng có phương pháp riêng |
-| **194 dấu hiệu đọc vị** | đều là thứ **nhìn thấy được trên đề** |
-| **362 bước giải** | mỗi bước nói được nó để làm gì |
-| **90 bí kíp** | kèm điều kiện "dùng khi nào" |
+| 33 chuyên đề | mỗi chuyên đề một "câu hỏi lớn" |
+| **99 dạng bài** | mỗi dạng có phương pháp riêng |
+| **212 dấu hiệu đọc vị** | đều là thứ **nhìn thấy được trên đề** |
+| **396 bước giải** | mỗi bước nói được nó để làm gì |
+| **99 bí kíp** | kèm điều kiện "dùng khi nào" |
 
 Vì sao tách thành một tầng riêng: lời giải của *một* câu chỉ dạy được câu đó. Người học
 đọc xong gật gù "hiểu rồi", hôm sau gặp câu tương tự vẫn tắc — vì thứ họ thiếu không phải
@@ -250,9 +295,42 @@ Có test canh giữ chất lượng chứ không chỉ canh số lượng: mỗi
 thì quên ngay trong phòng thi); mỗi dấu hiệu đọc vị phải đủ cụ thể; mỗi bí kíp phải nói rõ
 lúc nào thì dùng.
 
+### Hệ bài giảng — tầng giữa BIẾT và LÀM ĐƯỢC
+
+Phiếu kiến thức nói *"phải nắm gì"*. Kho bí kíp nói *"gặp dạng này thì làm thế nào"*.
+Giữa chúng còn một khoảng trống mà hầu hết tài liệu trên thị trường cũng bỏ: **nhìn một
+người làm mẫu từ đầu đến cuối**, có con số cụ thể, có cả chỗ họ dừng lại để cân nhắc.
+
+Mỗi chuyên đề có một bài giảng bốn phần:
+
+1. **Vì sao chuyên đề này đáng học** — nói bằng số câu trong đề, không bằng lời động viên.
+2. **Mạch kiến thức** — các ý theo đúng thứ tự dạy, mỗi ý kèm một câu tự kiểm có đáp án.
+3. **Ví dụ mẫu giải từng bước** — mỗi bước có **việc làm** và **lý do làm bước đó**.
+4. **Một lời giải SAI, mổ tận nơi** — trình bày đầy đủ như thật, đánh dấu đúng bước nó rẽ
+   nhầm, giải thích vì sao lỗi đó dễ mắc, rồi sửa lại từ bước đó.
+
+| | |
+|---|---|
+| 33 bài giảng | phủ hết mọi chuyên đề |
+| **66 ví dụ mẫu** | giải từng bước, có số cụ thể |
+| **238 bước giải** | mỗi bước nói được nó để làm gì |
+| **99 ý kiến thức** | mỗi ý có câu tự kiểm kèm đáp án |
+| **33 lời giải sai** | được mổ tới đúng bước rẽ nhầm |
+
+Phần thứ tư là phần hiếm gặp nhất trong tài liệu luyện thi và có giá trị sư phạm cao nhất.
+Một cảnh báo trừu tượng kiểu "chú ý đừng cộng phần trăm" trôi qua đầu người học không để
+lại gì. Nhưng khi họ đọc một lời giải sai trông hoàn toàn hợp lý, thấy nó cho ra một con số
+tròn trịa khớp với một phương án trong đề, rồi mới thấy chỗ nó gãy — đó là lúc họ nhận ra
+**lỗi của chính mình**.
+
+Trên màn hình, câu tự kiểm và phần chẩn đoán lỗi đều gập lại, phải bấm mới mở: người học
+tự trả lời trước khi thấy đáp án thì mới biết mình có thật sự hiểu. Bước sai được tô đỏ
+ngay tại chỗ, vì nếu để cả lời giải sai hiện phẳng như nhau thì có nguy cơ nhớ nhầm nó
+thành lời giải đúng.
+
 ### Ngân hàng câu hỏi
 
-Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **455 câu** trải đều 30
+Phiếu chỉ tốt bằng ngân hàng câu hỏi đứng sau nó. Hiện có **572 câu** trải đều 33
 chuyên đề, mỗi chuyên đề **tối thiểu 15 câu** — đúng bằng số câu của một phiếu cấp 6,
 nên không phiếu nào phải lặp câu để đủ số. Mọi câu đều kèm lời giải, và câu có phương
 án nhiễu đáng chú ý thì kèm luôn chú thích bẫy.

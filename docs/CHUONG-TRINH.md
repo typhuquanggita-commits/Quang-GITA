@@ -23,13 +23,14 @@ phiếu tự động lấy câu mới mà không phải sửa gì.
 
 ## 2. Phân bổ 2.000 phiếu
 
-Có **180 ô** = 30 chuyên đề × 6 cấp độ. Mỗi ô nhận một số phiếu tỉ lệ với:
+Có **198 ô** = 33 chuyên đề × 6 cấp độ. Mỗi ô nhận một số phiếu tỉ lệ với:
 
 ```
 trọng số ô = tỉ trọng phần thi × tỉ trọng chuyên đề trong phần × tỉ trọng cấp độ
 ```
 
-- **Tỉ trọng phần thi**: mỗi phần 1/3. Trong phần 3, mỗi môn tự chọn được 1/5 của 1/3.
+- **Tỉ trọng phần thi**: mỗi phần 1/3. Trong phần 3 có sáu nhóm tự chọn (năm chủ đề
+  khoa học cộng Tiếng Anh), mỗi nhóm được 1/6 của 1/3.
 - **Tỉ trọng chuyên đề**: khai báo trong `src/data/topics.ts`, cộng lại đúng bằng 1
   trong mỗi nhóm (có bài test canh giữ).
 - **Tỉ trọng cấp độ**: 14% / 18% / 20% / 20% / 16% / 12% — dày ở giữa, vì cấp 3–4 là
@@ -111,12 +112,12 @@ phiếu lý thuyết ("điều kiện & ngoại lệ") khác hẳn chặng 3 c�
 | Phiếu thi | Phần dễ ăn điểm | Phần lõi | Phần phân loại |
 
 **Không câu nào lặp lại trong cùng một phiếu.** Nếu kho câu của chuyên đề chưa đủ,
-phiếu được bù bằng câu **cùng phần thi** (cùng môn tự chọn nếu là phần 3) thay vì
+phiếu được bù bằng câu **cùng phần thi** (cùng chủ đề tự chọn nếu là phần 3) thay vì
 lặp lại câu cũ. Nếu cả phần thi cũng không đủ, số câu của phiếu được **rút ngắn
 một cách trung thực** — màn hình *Thư viện phiếu luyện* hiển thị chỉ số **độ phủ
 ngân hàng** để nói rõ chuyên đề nào đang thiếu bao nhiêu câu.
 
-**Trạng thái hiện tại: đủ 100%.** Ngân hàng có 455 câu, mỗi chuyên đề trong số 30
+**Trạng thái hiện tại: đủ 100%.** Ngân hàng có 572 câu, mỗi chuyên đề trong số 33
 chuyên đề đều có tối thiểu 15 câu — bằng đúng số câu của phiếu cấp 6, là phiếu dài
 nhất. Nghĩa là hiện không phiếu nào phải mượn câu khác chuyên đề hay bị rút ngắn.
 Hai cơ chế bù ở trên vẫn giữ nguyên, vì chúng là lưới an toàn cho lúc khung chương

@@ -11,7 +11,7 @@
 
 | Bước | Việc | Sản phẩm |
 |---|---|---|
-| 1 | Tạo hồ sơ, chọn môn tự chọn của phần 3 | Tài khoản đã cấu hình |
+| 1 | Tạo hồ sơ, chọn đường thi phần 3 (ba chủ đề khoa học hoặc Tiếng Anh) | Tài khoản đã cấu hình |
 | 2 | Đặt ngày thi và điểm mục tiêu cùng người học | Trụ G có dữ liệu |
 | 3 | Giải thích bốn trụ cột trong 5 phút, không hơn | Người học nhắc lại được bằng lời của mình |
 | 4 | Giao đúng **một** phiếu khởi động, làm ngay tại chỗ | Phiếu đầu tiên đã nộp |
