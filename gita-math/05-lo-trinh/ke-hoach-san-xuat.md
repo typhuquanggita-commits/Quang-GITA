@@ -126,3 +126,8 @@ done
 ```
 
 Chỉ phát hành khi cả hai lệnh kiểm tra đều báo **sạch lỗi**.
+
+**Luật ghi phải khai lại ở mỗi lần xuất bản.** Cấu hình `capabilities` ở mục 4 của
+`01-kien-truc/07` là tham số của lệnh xuất bản, không nằm trong tệp HTML: xuất bản mà
+quên khai thì bản đó rơi về quyền ghi mặc định — ai mở được trang cũng ghi được vào
+vùng dữ liệu chung. Sau mỗi lần phát hành, đối chiếu cả ba bản đều báo `db[2 rules]`.
