@@ -1118,7 +1118,7 @@ Bài: 7 · Bình luận: [SỐ] · Người mới: [SỐ] · Người lần đ�
 
 Tuần sau là tuần cuối của tháng NHÂN BẢN. Nhóm nhìn lại: sống có ảnh hưởng mà không mất mình.
 
-Và tôi sẽ mở lại **buổi định hướng nhóm nhỏ 45 phút** cho những ai muốn đi sâu hơn.
+Và có một câu tôi để dành cho bài khép tháng: *việc bạn đang làm cho người khác — nếu bạn dừng lại một tháng, họ sẽ tự làm được, hay họ sẽ đứng lại?*
 
 ---
 

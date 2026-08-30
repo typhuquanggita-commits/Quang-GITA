@@ -73,6 +73,8 @@ Luật xương sống: **G2 nuôi G1, G1 nuôi khóa học.** Người ở G2 kh
 | [`data/thu-vien-chu-de.json`](data/thu-vien-chu-de.json) | Ngân hàng chủ đề theo trụ cột, dùng để sinh lịch các quý tiếp theo |
 | [`data/so-van-hanh-gita365.xlsx`](data/so-van-hanh-gita365.xlsx) | **Sổ vận hành 10 bảng**: hướng dẫn · thành viên · gia đình · điểm tuần · KPI · sổ ca · sổ đen · nhật ký gỡ nội dung · từ khóa · lịch 288 bài. Có công thức tự tính bảng đấu, tổng điểm và trạng thái KPI |
 | [`data/bang-theo-doi-kpi.csv`](data/bang-theo-doi-kpi.csv) | Mẫu bảng đo tuần dạng CSV (bản rút gọn của sổ trên) |
+| [`data/chi-muc-kho-noi-dung.csv`](data/chi-muc-kho-noi-dung.csv) | **Chỉ mục máy đọc được của toàn bộ kho nội dung**: 237 dòng × 15 cột — nhóm, tháng, tuần, thứ, giờ, nghi thức, mã bài, tiêu đề, trụ cột chuẩn, mốc CARE, có bình luận ghim hay không, có phải cửa chuyển tầng hay không. Sinh lại bằng script bên dưới |
+| [`scripts/kiem_tra_kho_noi_dung.py`](scripts/kiem_tra_kho_noi_dung.py) | **Kiểm tra kho nội dung**: sinh lại chỉ mục, in tỉ lệ trụ cột thật của từng nhóm, đếm bài cửa chuyển tầng và so với trần 5%, cảnh báo bài G2 chạm tầng 3. Chạy sau mỗi tháng soạn xong: `python3 scripts/kiem_tra_kho_noi_dung.py` |
 | [`scripts/generate_calendar.py`](scripts/generate_calendar.py) | Sinh lại lịch 12 tuần bất kỳ lúc nào: `python3 scripts/generate_calendar.py --tuan 12 --batdau 2026-09-07` |
 
 ---

@@ -270,7 +270,7 @@ Mẫu thiết kế buổi sáng in sẵn trong Bản đồ 90 ngày: https://cla
 
 ## Chủ nhật 21:00 · Tổng Kết & Vinh Danh
 ### Tuần đầu tháng Năng lực — và những ma sát vừa được đổi
-Mời gọi hành động · **CARE-3**
+Cộng đồng · **CARE-3**
 
 ```
 Tuần đầu tháng Năng lực — và những ma sát vừa được đổi
@@ -293,16 +293,10 @@ Tôi không chọn người có kế hoạch hay nhất. Tôi chọn người **
 📖 BA ĐIỀU TÔI HỌC ĐƯỢC TUẦN NÀY
 1. [rút ra] · 2. [rút ra] · 3. [rút ra]
 
-🌱 LỜI MỜI DUY NHẤT TRONG TUẦN
-Nhiều người tuần này mắc ở [vấn đề nổi bật]. Trên web app GITA365 có [tên khóa nền tảng], phần [tên bài] xử lý đúng chỗ đó. Tạo tài khoản ở bình luận đầu tiên.
-
 Tuần này bạn đổi được ma sát nào?
 ```
 
-**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
-```
-Khóa nền tảng trên web app GITA365: [LINK_WEBAPP]
-```
+*Không có liên kết — không cần bình luận ghim.*
 
 **Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
 ```
@@ -551,7 +545,7 @@ Bảng bảy ngày in sẵn trong Bản đồ 90 ngày: https://claude.ai/code/a
 
 ## Chủ nhật 21:00 · Tổng Kết & Vinh Danh
 ### Tuần hai — chúng ta đang tỉnh táo nhất lúc mấy giờ?
-Mời gọi hành động · **CARE-3**
+Cộng đồng · **CARE-3**
 
 ```
 Tuần hai — chúng ta đang tỉnh táo nhất lúc mấy giờ?
@@ -580,10 +574,7 @@ Và một người tôi nhắc riêng: [Tên] — tuần này không nộp bài 
 Tuần này bạn chuyển được việc nào vào khung giờ tốt?
 ```
 
-**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
-```
-Khóa nền tảng trên web app GITA365: [LINK_WEBAPP]
-```
+*Không có liên kết — không cần bình luận ghim.*
 
 **Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
 ```
@@ -839,7 +830,7 @@ Mẫu ba con số in sẵn trong Bản đồ 90 ngày: https://claude.ai/code/ar
 
 ## Chủ nhật 21:00 · Tổng Kết & Vinh Danh
 ### Tuần ba — tuần chúng ta dám nhìn
-Mời gọi hành động · **CARE-3**
+Cộng đồng · **CARE-3**
 
 ```
 Tuần ba — tuần chúng ta dám nhìn
@@ -870,10 +861,7 @@ Tôi không chọn người có con số đẹp nhất. Tôi chọn người **d
 Tuần này bạn dám nhìn vào con số nào?
 ```
 
-**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
-```
-Khóa nền tảng trên web app GITA365: [LINK_WEBAPP]
-```
+*Không có liên kết — không cần bình luận ghim.*
 
 **Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
 ```

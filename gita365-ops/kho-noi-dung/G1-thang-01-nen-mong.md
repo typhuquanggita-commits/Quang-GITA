@@ -254,7 +254,7 @@ Mẫu bản đồ ngày, in sẵn trong Bản đồ 90 ngày: https://claude.ai/
 
 ## Chủ nhật 21:00 · Tổng Kết & Vinh Danh
 ### Tuần hai — và con số xanh của cả nhóm
-Mời gọi hành động · **CARE-3**
+Cộng đồng · **CARE-3**
 
 ```
 Tuần hai — và con số xanh của cả nhóm
@@ -281,16 +281,10 @@ Tôi không chọn người có con số xanh cao nhất. Tôi chọn người *
 2. [rút ra]
 3. [rút ra]
 
-🌱 LỜI MỜI DUY NHẤT TRONG TUẦN
-Nhiều người tuần này mắc ở chỗ [vấn đề nổi bật]. Trên web app GITA365 có [tên khóa nền tảng], phần [tên bài] xử lý đúng chỗ đó. Tạo tài khoản ở bình luận đầu tiên — miễn phí, và tôi đi cùng nếu bạn cần.
-
 Tuần này bạn mang được gì sang tuần sau?
 ```
 
-**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
-```
-Khóa nền tảng trên web app GITA365: [LINK_WEBAPP]
-```
+*Không có liên kết — không cần bình luận ghim.*
 
 **Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
 ```
@@ -542,7 +536,7 @@ Bảy câu hỏi này in sẵn trong Bản đồ 90 ngày: https://claude.ai/cod
 
 ## Chủ nhật 21:00 · Tổng Kết & Vinh Danh
 ### Tuần ba — những câu chúng ta khoanh tròn
-Mời gọi hành động · **CARE-3**
+Cộng đồng · **CARE-3**
 
 ```
 Tuần ba — những câu chúng ta khoanh tròn
@@ -574,10 +568,7 @@ Và một người tôi muốn nhắc riêng: [Tên] — tuần này không nộ
 Tuần này bạn mang được gì sang tuần sau?
 ```
 
-**Bình luận ghim** (đăng trong 60 giây đầu rồi ghim):
-```
-Khóa nền tảng trên web app GITA365: [LINK_WEBAPP]
-```
+*Không có liên kết — không cần bình luận ghim.*
 
 **Ba câu hỏi mồi** *(dễ · tăng số lượng · tăng độ sâu)*:
 ```

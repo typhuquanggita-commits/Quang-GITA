@@ -96,20 +96,79 @@ Mọi tháng ở cả hai nhóm đều theo khung này. Ai soạn bài cũng bi�
 
 ---
 
-## 26.6 · Tỉ lệ trụ cột nội dung — kiểm tra mỗi tháng
+## 26.6 · Tỉ lệ trụ cột nội dung — do kiến trúc nghi thức quyết định
 
-Áp cho cả hai nhóm, tính trên tổng số bài trong tháng (`03`):
+**Điều quan trọng nhất của mục này:** tỉ lệ trụ cột **không phải là thứ người soạn bài chọn mỗi tháng**.
+Nó đã được cố định bởi **bộ nghi thức tuần** của từng nhóm (`03`). Mỗi khung giờ nghi thức thuộc đúng một trụ cột,
+nên chỉ cần giữ đủ nghi thức là tỉ lệ tự đúng.
 
-| Trụ cột | Tỉ lệ | Vai trò |
-|---|---|---|
-| Kết nối & nghi thức | 15% | Giữ nhịp, dễ tham gia |
-| Kỹ năng / hoạt động cụ thể | 30% | Giá trị dùng được ngay |
-| Câu chuyện thật | 20% | Tạo niềm tin, tạo chiều sâu |
-| Giải mã / cơ chế | 20% | Định vị chuyên môn, nội dung tìm kiếm tốt nhất |
-| Cộng đồng (vinh danh, thi đua, hỏi–đáp) | 10% | Gắn bó |
-| Cửa sang tầng tiếp theo | **≤5%** | Chuyển đổi |
+Đây là bản đối chiếu thật, tính bằng `scripts/kiem_tra_kho_noi_dung.py` trên toàn bộ kho nội dung hiện có
+(160 bài G2 + 77 bài G1 trong `kho-noi-dung/`, chưa kể 7 bài tuần 1 của G1 nằm ở `khoi-dong-g1/`).
 
-**Cột cuối là trần cứng.** Vượt 5% là nguyên nhân số một của rời nhóm hàng loạt (`24.14`). Kiểm tra bằng một phép đếm 5 phút cuối mỗi tháng: *bao nhiêu bài trong tháng có liên kết dẫn ra ngoài hoặc lời mời?* Chia cho tổng số bài.
+### G2 · một tuần 10 bài
+
+| Khung nghi thức | Trụ cột | Bài/tuần | Tỉ lệ |
+|---|---|---|---|
+| Bài nhẹ (T2, T3 · 11:45) | Kết nối & nghi thức | 2 | 20% |
+| Bài nhẹ · mời nhận công cụ (T4 · 11:45) | Cửa tầng 1 (công cụ miễn phí) | 1 | 10% |
+| Nhiệm Vụ Gia Đình Tuần · Bàn Ăn Yêu Thương · Gia Đình Chơi Cùng Nhau | Kỹ năng & hoạt động | 3 | 30% |
+| Việc Tử Tế Của Gia Đình · Cha Mẹ Tỉnh Thức | Giải mã & cơ chế | 2 | 20% |
+| Khoe Nhà Mình | Câu chuyện thật | 1 | 10% |
+| Bảng Vinh Danh Gia Đình | Cộng đồng | 1 | 10% |
+
+**Đo được trên 160 bài đã soạn: 30% · 20% · 20% · 10% · 10% · 10% — khớp tuyệt đối.**
+
+### G1 · một tuần 7 bài
+
+| Khung nghi thức | Trụ cột | Bài/tuần | Tỉ lệ |
+|---|---|---|---|
+| Khởi Nguyên (T2) · Cho Là Nhận (T4) | Kết nối & nghi thức | 2 | 28,6% |
+| Giải Mã (T3 · 19:45) | Giải mã & cơ chế | 1 | 14,3% |
+| Hỏi & Đáp Cùng Cố Vấn (T5) · Tổng Kết & Vinh Danh (CN) | Cộng đồng | 2 | 28,6% |
+| Bằng Chứng (T6) | Câu chuyện thật | 1 | 14,3% |
+| Thực Chiến (T7) | Kỹ năng & hoạt động | 1 | 14,3% |
+
+**Đo được trên 77 bài đã soạn: khớp tuyệt đối.**
+
+### Vì sao hai nhóm có tỉ lệ khác nhau — và đó là đúng
+
+G2 nặng về **hoạt động** (30%) vì người đọc G2 cần *việc làm cùng cả nhà tối nay*.
+G1 nặng về **nghi thức và cộng đồng** (57% cộng lại) vì người đọc G1 cần *nhịp lặp lại và người đi cùng* —
+với họ, một buổi hỏi–đáp có mặt người thật giá trị hơn thêm một bài kỹ năng.
+
+Một tỉ lệ chung cho cả hai nhóm là sai. Mỗi nhóm giữ tỉ lệ của kiến trúc nghi thức của mình.
+
+### Hai luật cứng vẫn phải kiểm mỗi tháng
+
+**Luật 1 — Trần cửa chuyển tầng ≤ 5%.**
+Định nghĩa chính xác của "cửa chuyển tầng": bài **mời người ta bước sang một tầng cao hơn** — buổi định hướng
+nhóm nhỏ, khóa trên web app, khóa offline.
+
+**Không tính vào trần này:** bài mời nhận **công cụ miễn phí tầng 1** (bộ 30 câu hỏi, trò chơi, nhật ký, bản đồ,
+Thư viện Gia Đình). Đó là tầng 1 phục vụ tầng 1, không phải bán.
+
+Đo thật trên kho hiện có (chạy script ở cuối mục này):
+- **G2:** 4/160 = **2,5%** — bốn bài khép tháng/khép mùa, nơi giải thưởng có suất học khóa nền tảng. Dưới trần.
+  (16 bài "Cửa tầng 1" là công cụ miễn phí, **không tính vào trần**.)
+- **G1:** 3/77 = **3,9%** — đúng ba bài khép tháng của ba tháng. Dưới trần.
+
+> **Ghi lại một lỗi đã phát hiện và đã sửa.** Khi dựng script kiểm tra lần đầu, G1 đo được **11,7%** — vượt trần hơn gấp đôi.
+> Nguyên nhân: kho nội dung G1 tháng 1 và tháng 2 (soạn trước khi có chương này) đặt lời mời khóa học trên web app
+> vào **mọi bài tổng kết tuần**, không chỉ bài khép tháng — trái với `21` Điều 3.
+> Đã gỡ lời mời khỏi 5 bài tổng kết tuần, giữ nguyên ở 3 bài khép tháng. Đây chính là loại lỗi mà mắt người không bắt được
+> khi đọc từng bài một, và là lý do mục này tồn tại.
+
+**Luật 2 — G2 không có bài nào chạm tầng 3.** Kiểm bằng cách tìm các từ khóa `khóa học`, `học phí`, `đăng ký`,
+`ưu đãi` trong file tháng. Script kiểm tra làm việc này tự động.
+
+### Cách kiểm
+
+```bash
+python3 scripts/kiem_tra_kho_noi_dung.py
+```
+
+Script đọc toàn bộ `kho-noi-dung/`, sinh lại `data/chi-muc-kho-noi-dung.csv`, in tỉ lệ trụ cột thật của
+từng nhóm, đếm bài cửa chuyển tầng, và cảnh báo nếu có bài G2 chạm tầng 3. Chạy sau mỗi lần soạn xong một tháng.
 
 ---
 
@@ -156,8 +215,8 @@ Chạy vào **tuần thứ 3 của tháng trước**. Tổng khoảng 8–10 gi�
 - [ ] Bốn bài chính theo đúng khung Mở – Đào – Làm – Khép
 - [ ] Tuần 3 có ít nhất một bài yêu cầu **báo lại kết quả**
 - [ ] Tuần 4 có bài khép: đếm điểm, vinh danh, mời sang tháng sau
-- [ ] Tỉ lệ trụ cột khớp 26.6 (± 5%)
-- [ ] Số bài có cửa/liên kết ≤ 5% tổng số bài
+- [ ] Chạy `python3 scripts/kiem_tra_kho_noi_dung.py` — tỉ lệ trụ cột khớp kiến trúc nghi thức của nhóm (26.6)
+- [ ] Số bài **cửa chuyển tầng** ≤ 5% (bài mời công cụ miễn phí tầng 1 không tính — xem 26.6)
 - [ ] G2: không bài nào chạm tầng 3 · G1: chỉ bài khép tháng mở tầng 3
 - [ ] Mọi bài có bình luận ghim (nếu có liên kết) và 3 câu hỏi mồi
 - [ ] Ít nhất 3 bài dùng câu nói thật của thành viên tháng trước
