@@ -4033,7 +4033,13 @@ const { chromium } = require(PW);
         trongMay[ten] = await p.evaluate(() => ({
           kb: (window.G.KICHBAN || []).length,
           pd: (window.G.PHACDO || []).length,
-          sau: Object.keys(window.G.PD_SAU || {}).length
+          sau: Object.keys(window.G.PD_SAU || {}).length,
+          /* Đầu việc của ĐỘI NGŨ trong bộ nhớ: R01–R12. Đo cả hai kho vì
+             danh mục nằm ở hai chỗ — quên một chỗ là phép đo nói dối. */
+          cvNoiBo: (window.G.CV_MUC || []).concat(window.G.CV_MUC_DS || [])
+            .filter(m => (m.vai || []).some(v => +String(v).slice(1) <= 12)).length,
+          cvXongThat: (window.G.CV_MUC || []).concat(window.G.CV_MUC_DS || [])
+            .filter(m => (m.vai || []).some(v => +String(v).slice(1) <= 12) && m.xong).length
         }));
       }
       bao(trongMay.PH.kb === 0 && trongMay.HS.kb === 0,
@@ -4045,6 +4051,36 @@ const { chromium } = require(PW);
       bao(trongMay.COACH.kb === 1000 && trongMay.COACH.pd === 220,
         'người trong nghề vẫn nhận đủ — bịt rò không được làm hỏng việc của Coach',
         trongMay.COACH.kb + ' kịch bản · ' + trongMay.COACH.pd + ' phác đồ');
+
+      /* ── DANH MỤC ĐẦU VIỆC NỘI BỘ CŨNG KHÔNG ĐƯỢC XUỐNG MÁY KHÁCH ──
+         Cùng một lỗi với KICHBAN, lặp lại ở bản 9.5: ba mươi đầu việc
+         của đội ngũ nằm ở gói NỀN với lý do "màn hình tự lọc theo vai".
+         Màn hình có lọc thật, nhưng gõ G.CV_MUC là đọc được nguyên văn
+         cách Học viện đối soát dòng tiền, soát quyền truy cập, kiểm hành
+         vi lưu trữ — kèm bằng chứng phải có để đóng mỗi việc và điều
+         khoản liên đới. Nay CV_MUC đi gói NGHỀ; mục kiểm này giữ nó ở đó. */
+      bao(trongMay.PH.cvNoiBo === 0 && trongMay.HS.cvNoiBo === 0,
+        'khách hàng KHÔNG giữ danh mục đầu việc nội bộ trong bộ nhớ — lọc trên màn hình không phải là bảo vệ dữ liệu',
+        'phụ huynh ' + trongMay.PH.cvNoiBo + ' · học viên ' + trongMay.HS.cvNoiBo +
+        ' · Coach ' + trongMay.COACH.cvNoiBo);
+      bao(trongMay.COACH.cvNoiBo === 30 && trongMay.COACH.cvXongThat === 30,
+        'đội ngũ vẫn nhận đủ ba mươi đầu việc kèm bằng chứng đóng việc — bịt rò không được làm hỏng bảng việc',
+        trongMay.COACH.cvNoiBo + ' đầu việc · ' + trongMay.COACH.cvXongThat + ' có bằng chứng');
+
+      /* Và đo thẳng trên tệp đã mã hoá, không qua trình duyệt: gói NỀN
+         xuống MỌI tài khoản, nên bất cứ đầu việc nào của R01–R12 nằm
+         trong đó là rò, dù màn hình có lọc hay không. */
+      {
+        const b = fsG.readFileSync(pxG.join(gocG, 'kho', 'nen.enc'));
+        const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG.nen, 'base64'), b.subarray(0, 12));
+        de.setAuthTag(b.subarray(12, 28));
+        const nen = JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8'));
+        const lot = [].concat(nen.CV_MUC || [], nen.CV_MUC_DS || [])
+          .filter(m => (m.vai || []).some(v => +String(v).slice(1) <= 12)).map(m => m.ma);
+        bao(!lot.length,
+          'gói NỀN không mang đầu việc của đội ngũ — gói nền xuống mọi tài khoản, để một đầu việc R01–R12 ở đó là gửi cách vận hành nội bộ về máy từng gia đình',
+          lot.length ? 'lọt: ' + lot.join(' ') : (nen.CV_MUC_DS || []).length + ' đầu việc cộng tác viên, 0 đầu việc đội ngũ');
+      }
 
       /* ── Luật gốc, thay cho việc nhớ từng tên ──
          donKho() chỉ xoá những kho có tên trong G.THUOC_CAP_PHEP. Thêm
@@ -4556,15 +4592,15 @@ const { chromium } = require(PW);
 
       /* ── Danh mục phủ đủ vị trí ── */
       const vaiCo = new Set((G.ROLES || []).map(r => r.id));
-      ra.mucLa = [...new Set((G.CV_MUC || []).flatMap(m => m.vai).filter(v => !vaiCo.has(v)))];
-      ra.chuyenLa = (G.CV_MUC || []).filter(m => m.chuyen && !vaiCo.has(m.chuyen)).map(m => m.ma);
+      ra.mucLa = [...new Set(G.cvDanhMuc().flatMap(m => m.vai).filter(v => !vaiCo.has(v)))];
+      ra.chuyenLa = G.cvDanhMuc().filter(m => m.chuyen && !vaiCo.has(m.chuyen)).map(m => m.ma);
       const nhipCo = new Set((G.TG_NHIEMVU || []).map(x => x.ma));
-      ra.nhipLa = (G.CV_MUC || []).filter(m => !nhipCo.has(m.nhip)).map(m => m.ma + '→' + m.nhip);
+      ra.nhipLa = G.cvDanhMuc().filter(m => !nhipCo.has(m.nhip)).map(m => m.ma + '→' + m.nhip);
       ra.viTriThieu = (G.ROLES || []).filter(r => r.lv <= 12 || r.id === 'R15')
-        .filter(r => !(G.CV_MUC || []).some(m => m.vai.indexOf(r.id) >= 0)).map(r => r.id);
-      ra.soMuc = (G.CV_MUC || []).length;
-      ra.thieuXong = (G.CV_MUC || []).filter(m => !m.xong || m.xong.length < 40).map(m => m.ma);
-      ra.thieuDiem = (G.CV_MUC || []).filter(m => !(m.diem > 0)).map(m => m.ma);
+        .filter(r => !G.cvDanhMuc().some(m => m.vai.indexOf(r.id) >= 0)).map(r => r.id);
+      ra.soMuc = G.cvDanhMuc().length;
+      ra.thieuXong = G.cvDanhMuc().filter(m => !m.xong || m.xong.length < 40).map(m => m.ma);
+      ra.thieuDiem = G.cvDanhMuc().filter(m => !(m.diem > 0)).map(m => m.ma);
 
       /* ── Vòng đời một việc, chạy thật ── */
       const giu = G.S.viec, giuChot = G.S.chotNgay, giuVai = G.S.roleObj;
@@ -4590,7 +4626,7 @@ const { chromium } = require(PW);
       ra.treTuDong = G.cvTrangThai(G.cvSo()[n2.viec.id]) === 'tre';
 
       /* ── Luân chuyển: việc rời bảng mình, sang bảng người nhận ── */
-      const mChuyen = (G.CV_MUC || []).filter(m => m.chuyen && m.vai.indexOf('R11') >= 0)[0];
+      const mChuyen = G.cvDanhMuc().filter(m => m.chuyen && m.vai.indexOf('R11') >= 0)[0];
       const n3 = G.cvNhan(mChuyen.ma);
       const rc = G.cvChuyen(n3.viec.id, mChuyen.chuyen, 'Bàn giao thử');
       ra.chuyenDuoc = rc.ok;
@@ -4680,6 +4716,45 @@ const { chromium } = require(PW);
     bao(r44.sanChanSoAo,
       'tháng dưới sàn ngày thì KHÔNG ra một con số — trung bình của hai ngày không nói được gì về một tháng, mà một con số thì trông như đã nói');
 
+    /* ── SỔ VIỆC PHẢI SỐNG QUA LẦN TẢI LẠI, VÀ CHẾT KHI ĐỔI NGƯỜI ──
+       Hai điều ngược nhau, và thiếu một điều nào cũng hỏng:
+
+       Bản 9.5 lưu sổ việc chỉ trong bộ nhớ. Sáng nhận việc, trưa đóng
+       việc, chiều bấm F5 là sổ trống — KPI ngày về không, KPI tháng cộng
+       từ KPI ngày nên cũng về không, và cả phần xét lương thưởng chạy
+       trên sổ trống mà không báo gì.
+
+       Nhưng lưu rồi thì sang chuyện thứ hai: bằng chứng đóng việc mang
+       tên nhà và chuyện của nhà. Máy chung ở văn phòng, Coach đăng xuất,
+       phụ huynh đăng nhập — sổ ấy không được ở lại. */
+    const r44b = await p.evaluate(async () => {
+      const G = window.G, ra = {};
+      await G.doLogin('tuvan@gita365.vn');
+      await new Promise(r => setTimeout(r, 1800));
+      const m = G.cvMucCuaToi()[0];
+      const v = G.cvNhan(m.ma).viec;
+      G.cvBatDau(v.id);
+      G.cvXong(v.id, 'Đã gọi nhà Minh An lúc 9 giờ, mẹ lo con mất tập trung, hẹn thứ Năm.');
+      let kho = '';
+      try { kho = localStorage.getItem('gita365.v7') || ''; } catch (e) { }
+      ra.luuXuongMay = kho.indexOf(v.id) >= 0 && kho.indexOf('mẹ lo con mất tập trung') >= 0;
+      ra.chuNhan = JSON.parse(kho || '{}').viecCua === 'tuvan@gita365.vn';
+
+      await G.doLogin('phuhuynh@gita365.vn');
+      await new Promise(r => setTimeout(r, 1800));
+      let kho2 = '';
+      try { kho2 = localStorage.getItem('gita365.v7') || ''; } catch (e) { }
+      ra.doiNguoiLaSach = Object.keys(G.cvSo()).length === 0 &&
+        kho2.indexOf('mẹ lo con mất tập trung') < 0;
+      return ra;
+    });
+    bao(r44b.luuXuongMay && r44b.chuNhan,
+      'sổ việc sống qua lần tải lại trang — bản trước giữ trong bộ nhớ, nên bấm F5 là KPI ngày và KPI tháng cùng về không mà không báo gì',
+      r44b.luuXuongMay ? 'ghi xuống máy kèm tên chủ sổ' : 'KHÔNG ghi xuống máy');
+    bao(r44b.doiNguoiLaSach,
+      'đổi người đăng nhập trên cùng máy là sổ việc bị dọn — bằng chứng đóng việc mang tên nhà và chuyện của nhà, không được ở lại cho người sau',
+      r44b.doiNguoiLaSach ? 'sạch cả bộ nhớ lẫn kho máy' : 'CÒN SÓT bằng chứng của người trước');
+
     /* ── Phía khách hàng ── */
     const r45 = await p.evaluate(() => {
       const G = window.G, ra = {};
@@ -4756,8 +4831,8 @@ const { chromium } = require(PW);
       /* Hạn phải KHÁC nhau theo lớp nhịp — thiếu TG_NHIEMVU thì mọi việc
          cùng rơi về 24 giờ và bảng chạy được nhưng chạy sai, sai lặng lẽ. */
       G.S.roleObj = G.roleById('R11'); G.S.viec = {};
-      const mNgay = (G.CV_MUC || []).filter(m => m.nhip === 'NV-NGAY' && m.vai.indexOf('R11') >= 0)[0];
-      const mThang = (G.CV_MUC || []).filter(m => m.nhip === 'NV-THANG' && m.vai.indexOf('R11') >= 0)[0];
+      const mNgay = G.cvDanhMuc().filter(m => m.nhip === 'NV-NGAY' && m.vai.indexOf('R11') >= 0)[0];
+      const mThang = G.cvDanhMuc().filter(m => m.nhip === 'NV-THANG' && m.vai.indexOf('R11') >= 0)[0];
       if (mNgay && mThang) {
         const a = G.cvNhan(mNgay.ma), b2 = G.cvNhan(mThang.ma);
         if (a.ok && b2.ok) {
@@ -4848,12 +4923,38 @@ const { chromium } = require(PW);
           'không kho nào BIẾN MẤT so với bản đã phát hành — một kho vắng mặt là cả một mảng nội dung không còn đường về',
           bienMat.length ? 'mất: ' + bienMat.join(' ') : Object.keys(CU).length + ' kho đều còn');
 
+        /* ── BẢN GHI CHUYỂN KHO KHÔNG PHẢI BẢN GHI MẤT ──
+           Tách một kho làm hai vì lý do cấp phép — như CV_MUC tách ra
+           CV_MUC_DS ở bản 9.7 để đầu việc đội ngũ không xuống máy gia
+           đình — làm kho cũ hụt bản ghi mà không mất chữ nào. Nếu phép
+           kiểm này đỏ ở đó thì mỗi lần chia kho cho đúng phạm vi lại
+           phải tắt nó đi, và một phép kiểm hay bị tắt là một phép kiểm
+           đã chết.
+
+           Nên hỏi câu đúng: mã ấy có còn ở ĐÂU ĐÓ trong bảy gói không.
+           Còn là chuyển kho — ghi ra để người đọc thấy, không đỏ. Không
+           còn ở đâu cả mới là mất. */
+        const maToanKho = new Set();
+        Object.keys(NAY).forEach(k => {
+          if (Array.isArray(NAY[k])) NAY[k].forEach(x => { const m = ma45(x); if (m) maToanKho.add(m); });
+        });
+        const chuyenKho = [];
         const hut = [];
         Object.keys(CU).forEach(k => {
           if (NAY[k] === undefined) return;
           const na = dem45(CU[k]), nb = dem45(NAY[k]);
-          if (nb < na) hut.push(k + ' ' + na + ' → ' + nb);
+          if (nb >= na) return;
+          if (Array.isArray(CU[k]) && Array.isArray(NAY[k]) && CU[k].length && ma45(CU[k][0])) {
+            const conO = new Set(NAY[k].map(ma45));
+            const roiKho = CU[k].map(ma45).filter(x => x && !conO.has(x));
+            if (roiKho.length === na - nb && roiKho.every(x => maToanKho.has(x))) {
+              chuyenKho.push(k + ' ' + na + ' → ' + nb + ' (' + roiKho.join(' ') + ' sang kho khác)');
+              return;
+            }
+          }
+          hut.push(k + ' ' + na + ' → ' + nb);
         });
+        if (chuyenKho.length) console.log('  · chuyển kho, không mất chữ: ' + chuyenKho.join(' · '));
         bao(!hut.length,
           'không kho nào ÍT BẢN GHI ĐI — nội dung ít đi hầu như luôn là hỏng, không phải sửa',
           hut.length ? hut.slice(0, 6).join(' · ') : 'không kho nào hụt');
@@ -4862,8 +4963,8 @@ const { chromium } = require(PW);
         Object.keys(CU).forEach(k => {
           const a = CU[k], b = NAY[k];
           if (!Array.isArray(a) || !Array.isArray(b) || !a.length || !ma45(a[0])) return;
-          const co = new Set(b.map(ma45));
-          const m = a.map(ma45).filter(x => x && !co.has(x));
+          /* Mã còn ở kho khác thì không phải mất — xem lý do bên trên */
+          const m = a.map(ma45).filter(x => x && !maToanKho.has(x));
           if (m.length) bay.push(k + ': ' + m.slice(0, 4).join(' ') + (m.length > 4 ? ' …' : ''));
         });
         bao(!bay.length,

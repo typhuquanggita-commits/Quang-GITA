@@ -61,9 +61,16 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'CHANDUNG', 'LOTRINH', 'FAMILIES', 'TEAM',
   'DL_MAU', 'DL_MAU_LUAT',
   /* Bảng công việc, luật chấm KPI và hạng tháng. Ở gói NỀN vì MỌI vai
      đều phải mở được bảng việc của mình — kể cả cộng tác viên, và kể cả
-     gia đình (phần CV_KH_*). Danh mục đầu việc tự lọc theo vai ngay trên
-     màn hình, nên để ở nền không mở thêm gì cho ai. */
-  'CV_TRANG', 'CV_MUC', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
+     gia đình (phần CV_KH_*).
+
+     CV_MUC thì KHÔNG ở đây, và đó là điểm sửa của bản này. Nó từng nằm ở
+     gói nền với lý do "màn hình tự lọc theo vai" — nhưng lọc trên màn
+     hình không phải bảo vệ dữ liệu. Ba mươi đầu việc đội ngũ, kèm bằng
+     chứng đóng việc và điều khoản liên đới, đã xuống máy mọi tài khoản
+     phụ huynh; gõ G.CV_MUC trong công cụ nhà phát triển là đọc hết. Nay
+     CV_MUC đi gói NGHỀ, còn ba đầu việc của cộng tác viên ở CV_MUC_DS
+     giữ lại đây vì R15 không được cấp gói nghề. */
+  'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
@@ -111,6 +118,12 @@ const NGHE = [
   'PD_RUOT_SOAT', 'TH_RUOT_SOAT',
   /* Kịch bản chuyên môn — xem lý do ở chỗ dựng gói tầng bên dưới */
   'KICHBAN',
+  /* Danh mục đầu việc của đội ngũ R01–R12. Cùng một lý do với KICHBAN:
+     đây là cách Học viện vận hành từ bên trong — đối soát dòng tiền, soát
+     quyền truy cập, kiểm hành vi lưu trữ, cổng nghiệm thu — kèm bằng
+     chứng phải có để đóng mỗi việc. Chỉ vai được cấp gói nghề mới cần nó,
+     và chỉ vai ấy mới nhận được. */
+  'CV_MUC',
   /* Chuẩn hợp đồng theo tuyến: nó liệt kê mọi điều khoản Học viện tự
      buộc mình phải có, kèm rủi ro khi thiếu. Đưa ra công khai là đưa cho
      đối thủ bản đồ pháp lý và cho bên tranh chấp danh sách chỗ yếu. */
@@ -364,6 +377,18 @@ function cauMau(b) {
   return b.cau.filter(c => da.has(c.id));   /* giữ nguyên thứ tự gốc */
 }
 
+
+/* Rút một đầu việc xuống bản khung cho gói công khai: giữ mã · vị trí ·
+   nhịp · điểm · tên · bước luân chuyển, cắt phần dạy nghề. */
+function rutDauViec(m) {
+  const r = { ma: m.ma, vai: m.vai, nhip: m.nhip, diem: m.diem, ten: m.ten,
+    mo: (m.mo || '').slice(0, 80) + '… [cần cấp phép]',
+    xong: '[Cách đóng việc mở khi được cấp phép]' };
+  if (m.chuyen) r.chuyen = m.chuyen;
+  if (m.lienDoi) r.lienDoi = '[Điều khoản liên đới mở khi được cấp phép]';
+  return r;
+}
+
 const mau = {
   ...Object.fromEntries(MO_RA.map(k => [k, G[k]]).filter(([, v]) => v !== undefined)),
   KICHBAN: (G.KICHBAN || []).filter(k => k.tang === 'T1').slice(0, 8)
@@ -403,14 +428,8 @@ const mau = {
      phải mở khung: thiếu CV_MUC thì cả ba màn chỉ dựng ra một thẻ "chưa
      mở được" 1.4 nghìn ký tự, và người mở bản xem thử kết luận đúng như
      anh Quang đã kết luận — không nhìn thấy bảng đầu việc nào cả. */
-  CV_MUC: (G.CV_MUC || []).map(m => {
-    const r = { ma: m.ma, vai: m.vai, nhip: m.nhip, diem: m.diem, ten: m.ten,
-      mo: (m.mo || '').slice(0, 80) + '… [cần cấp phép]',
-      xong: '[Cách đóng việc mở khi được cấp phép]' };
-    if (m.chuyen) r.chuyen = m.chuyen;
-    if (m.lienDoi) r.lienDoi = '[Điều khoản liên đới mở khi được cấp phép]';
-    return r;
-  }),
+  CV_MUC: (G.CV_MUC || []).map(rutDauViec),
+  CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')
     .map(b => ({ ...b, mau: true, soCauThat: b.cau.length, cau: cauMau(b) }))
 };

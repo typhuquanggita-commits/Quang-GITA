@@ -22,7 +22,18 @@ function save(){
   try{ localStorage.setItem(KEY, JSON.stringify({
     role:G.S.role, u:G.S.acc && G.S.acc.u, view:G.S.view, open:G.S.open, rtab:G.S.rtab,
     checks:G.S.checks, vision:G.S.vision, journal:G.S.journal, test:G.S.test, bando:G.S.bando, nhatky:G.S.nhatky, baithi:G.S.baithi, thoigian:G.S.thoigian, sathach:G.S.sathach, khoahoc:G.S.khoahoc,
-    rightOpen:G.S.rightOpen, mood:G.S.mood, daThay:G.S.daThay
+    rightOpen:G.S.rightOpen, mood:G.S.mood, daThay:G.S.daThay,
+    /* Sổ việc và sổ chốt ngày. Thiếu hai dòng này thì mọi thứ người ta
+       làm trên bảng công việc bay hết khi tải lại trang: sáng nhận việc,
+       trưa đóng việc, chiều bấm F5 là KPI về không. KPI tháng cộng từ
+       KPI ngày, nên KPI tháng cũng luôn bằng không — cả phần xét lương
+       thưởng chạy trên một sổ trống mà không báo gì.
+
+       viecCua là TÊN ĐĂNG NHẬP của người sở hữu hai sổ này. Máy chung ở
+       văn phòng thì Coach đăng xuất, phụ huynh đăng nhập vào cùng trình
+       duyệt — không ghi tên chủ sổ thì bằng chứng đóng việc của Coach,
+       viết về nhà nào có chuyện gì, nằm lại trong máy cho người sau. */
+    viec:G.S.viec, chotNgay:G.S.chotNgay, chotKhNgay:G.S.chotKhNgay, viecCua:G.S.viecCua
   })); }catch(e){}
 }
 function load(){
@@ -39,6 +50,10 @@ function load(){
     G.S.sathach = d.sathach || {};
     G.S.khoahoc = d.khoahoc || {};
     G.S.mood = d.mood || null;
+    G.S.viec = d.viec || {};
+    G.S.chotNgay = d.chotNgay || {};
+    G.S.chotKhNgay = d.chotKhNgay || {};
+    G.S.viecCua = d.viecCua || null;
     if(d.rightOpen !== undefined) G.S.rightOpen = d.rightOpen;
     return d;
   }catch(e){ return null; }
@@ -363,6 +378,12 @@ function doLogin(u, p){
   if(p !== undefined && p !== null && String(p).length && a.p !== p){
     U.toast('Mật khẩu chưa đúng.','err'); return;
   }
+  /* Đổi người là dọn sổ việc. Sổ việc mang bằng chứng đóng việc — tên
+     nhà, chuyện của nhà, chỗ đang vướng — nên nó không được ở lại máy
+     khi người khác đăng nhập. Cùng luật với donKho() bên kho khoá. */
+  if (G.S.viecCua && G.S.viecCua !== a.u) { G.S.viec = {}; G.S.chotNgay = {}; G.S.chotKhNgay = {}; }
+  G.S.viecCua = a.u;
+
   G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role);
   var portal = G.PORTALS[G.S.roleObj.portal];
   G.S.view = (portal && portal.home) || 'ban-do';

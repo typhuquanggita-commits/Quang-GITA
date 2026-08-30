@@ -37,8 +37,8 @@ G.VIEWS = G.VIEWS || {};
 
   /* ═══════════ BẢNG TIẾN TRÌNH ═══════════ */
   G.VIEWS['bang-viec'] = function () {
-    if (!G.CV_MUC) return U.empty('Chưa mở được bảng công việc',
-      'Danh mục đầu việc nằm trong gói nền. Đăng nhập lại để nạp.');
+    if (!G.cvDanhMuc().length) return U.empty('Chưa mở được bảng công việc',
+      'Danh mục đầu việc đi theo gói cấp phép của vị trí. Đăng nhập lại để nạp.');
 
     var bo = G.cvTheoTrang();
     var homNay = G.cvNgay(Date.now());
@@ -147,9 +147,11 @@ G.VIEWS = G.VIEWS || {};
   /* ═══════════ DANH MỤC ĐẦU VIỆC ═══════════ */
   G.VIEWS['danh-muc-viec'] = function () {
     var ds = G.cvMucCuaToi();
-    if (!G.CV_MUC) return U.empty('Chưa mở được danh mục', 'Danh mục đầu việc nằm trong gói nền.');
+    var tong = G.cvDanhMuc().length;
+    if (!tong) return U.empty('Chưa mở được danh mục',
+      'Danh mục đầu việc đi theo gói cấp phép của vị trí.');
     if (!ds.length) return U.empty('Vị trí này chưa có đầu việc chuẩn',
-      'Danh mục hiện có ' + (G.CV_MUC || []).length + ' đầu việc, chưa đầu việc nào gắn cho vị trí đang đăng nhập.');
+      'Danh mục mở cho tài khoản này có ' + tong + ' đầu việc, chưa đầu việc nào gắn cho vị trí đang đăng nhập.');
 
     var o = U.ph({ eyebrow: 'DANH MỤC ĐẦU VIỆC', ic: 'list', grad: 1,
       t: 'Đầu việc chuẩn của ' + h((G.S.roleObj || {}).n || ''),

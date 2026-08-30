@@ -68,7 +68,16 @@ if (!coCu) {
 }
 
 const ten = [...new Set(Object.keys(CU).concat(Object.keys(NAY)))].sort();
-const doi = [], mat = [], them = [], hut = [];
+const doi = [], mat = [], them = [], hut = [], chuyen = [];
+
+/* Mọi mã bản ghi đang có mặt ở BẤT KỲ kho nào của bản vừa đóng. Tách một
+   kho làm hai cho đúng phạm vi cấp phép làm kho cũ hụt bản ghi mà không
+   mất chữ nào — hỏi "mã này còn ở đâu không" mới phân biệt được chuyển
+   kho với mất nội dung. */
+const maToanKho = new Set();
+Object.keys(NAY).forEach(k => {
+  if (Array.isArray(NAY[k])) NAY[k].forEach(x => { const m = maCua(x); if (m) maToanKho.add(m); });
+});
 ten.forEach(k => {
   const a = CU[k], b = NAY[k];
   if (a !== undefined && b === undefined) { mat.push(k); return; }
@@ -76,11 +85,15 @@ ten.forEach(k => {
   if (JSON.stringify(a) === JSON.stringify(b)) return;
   const na = dem(a), nb = dem(b);
   doi.push({ k, na, nb });
-  if (nb < na) hut.push(k + ' ' + na + ' → ' + nb);
-  /* Bản ghi biến mất theo mã — đây là dấu hiệu hỏng rõ nhất */
-  if (Array.isArray(a) && Array.isArray(b) && a.length && maCua(a[0])) {
-    const co = new Set(b.map(maCua));
-    const bay = a.map(maCua).filter(m => m && !co.has(m));
+  const coMa = Array.isArray(a) && Array.isArray(b) && a.length && maCua(a[0]);
+  const roiKho = coMa ? a.map(maCua).filter(m => m && b.map(maCua).indexOf(m) < 0) : [];
+  const sangKhoKhac = roiKho.length && roiKho.every(m => maToanKho.has(m));
+  if (sangKhoKhac) chuyen.push(k + ' ' + na + ' → ' + nb + ' (' + roiKho.join(' ') + ' sang kho khác)');
+  else if (nb < na) hut.push(k + ' ' + na + ' → ' + nb);
+  /* Bản ghi biến mất theo mã — đây là dấu hiệu hỏng rõ nhất. Mã còn ở
+     kho khác thì là chuyển kho, không phải mất. */
+  if (coMa) {
+    const bay = a.map(maCua).filter(m => m && !maToanKho.has(m));
     if (bay.length) hut.push(k + ' mất mã: ' + bay.slice(0, 5).join(' ') + (bay.length > 5 ? ' …' : ''));
   }
 });
@@ -94,6 +107,10 @@ if (doi.length) {
   console.log('\n  KHO ĐỔI NỘI DUNG');
   doi.forEach(d => console.log('    ' + d.k.padEnd(20) +
     (d.na === d.nb ? d.na + ' bản ghi, đổi nội dung' : d.na + ' → ' + d.nb + ' bản ghi')));
+}
+if (chuyen.length) {
+  console.log('\n  BẢN GHI CHUYỂN KHO — hụt ở kho cũ nhưng không mất chữ nào');
+  chuyen.forEach(x => console.log('    ' + x));
 }
 if (hut.length) {
   console.log('\n  ⚠⚠ CHỖ CẦN NHÌN KỸ — có thứ ÍT ĐI hoặc BIẾN MẤT');

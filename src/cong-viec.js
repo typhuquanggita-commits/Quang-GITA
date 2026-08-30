@@ -42,8 +42,21 @@ var G = window.G || {}; window.G = G;
   G.cvNgay = ngayCua;
   G.cvThang = thangCua;
 
+  /* ── Danh mục đầu việc nằm ở HAI kho, cố ý ──
+     G.CV_MUC (đội ngũ R01–R12) đi trong gói NGHỀ; G.CV_MUC_DS (cộng tác
+     viên R15) đi trong gói NỀN. Chia như thế thì một tài khoản gia đình
+     không nhận về máy đầu việc nội bộ của Học viện — xem lời giải thích
+     đầy đủ ở kho-goc/data.cong-viec.js.
+
+     Mọi chỗ trong ứng dụng hỏi danh mục đều đi qua hàm này, không đọc
+     thẳng G.CV_MUC. Đọc thẳng là chỗ dễ quên một kho nhất. */
+  function danhMuc() {
+    return (G.CV_MUC || []).concat(G.CV_MUC_DS || []);
+  }
+  G.cvDanhMuc = danhMuc;
+
   function mucCua(ma) {
-    var ds = G.CV_MUC || [];
+    var ds = danhMuc();
     for (var i = 0; i < ds.length; i++) if (ds[i].ma === ma) return ds[i];
     return null;
   }
@@ -68,7 +81,7 @@ var G = window.G || {}; window.G = G;
   G.cvMucCuaToi = function (vai) {
     var v = vai || (G.S.roleObj && G.S.roleObj.id);
     if (!v) return [];
-    return (G.CV_MUC || []).filter(function (m) { return m.vai.indexOf(v) >= 0; });
+    return danhMuc().filter(function (m) { return m.vai.indexOf(v) >= 0; });
   };
 
   /* ─── Nhận việc ───
@@ -84,6 +97,15 @@ var G = window.G || {}; window.G = G;
   G.cvNhan = function (ma, giaoTu) {
     var m = mucCua(ma);
     if (!m) return { ok: false, loi: 'Không có đầu việc mang mã ' + ma + ' trong danh mục.' };
+    /* Chỉ nhận được đầu việc GẮN CHO VỊ TRÍ MÌNH, trừ khi là bàn giao.
+       Màn hình vốn chỉ bày việc của vai đang đăng nhập, nên đường thường
+       không chạm tới chỗ này. Nhưng gọi thẳng G.cvNhan trong công cụ nhà
+       phát triển thì nhận được việc của vai khác, và KPI cộng thêm điểm
+       của một việc mình không được giao. Điều kiện chặn ở đây, nơi bản
+       ghi thật sự sinh ra, chứ không chặn ở nút bấm. */
+    var vai = (G.S.roleObj && G.S.roleObj.id) || '';
+    if (!giaoTu && m.vai.indexOf(vai) < 0)
+      return { ok: false, loi: 'Đầu việc này không gắn cho vị trí đang đăng nhập.' };
     if (G.cvDangMo(ma)) return { ok: false, loi: 'Việc này đang mở rồi. Đóng bản ghi cũ trước khi nhận lại.' };
     var n = nhipCua(m.nhip);
     var luc = Date.now();
