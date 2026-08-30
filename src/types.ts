@@ -29,6 +29,7 @@ export type SchoolId =
   | 'tn-thpt'
   | 'hsa'
   | 'tsa'
+  | 'sat'
   | 'lop6-cau-giay'
   | 'lop6-ngoai-ngu'
   | 'ck-thpt'

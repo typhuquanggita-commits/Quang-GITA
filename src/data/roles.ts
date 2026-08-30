@@ -27,7 +27,7 @@ export type Permission =
 
 export const PERMISSION_LABEL: Record<Permission, string> = {
   'practice.basic': 'Làm phiếu Level 1–2',
-  'practice.all': 'Làm toàn bộ 2400 phiếu (mọi Level)',
+  'practice.all': 'Làm toàn bộ 3000 phiếu (mọi Level)',
   'solution.full': 'Xem lời giải chi tiết từng bước',
   'mock.exam': 'Thi thử tính giờ theo cấu trúc đề',
   'analytics.self': 'Xem thống kê tiến độ cá nhân',
@@ -132,7 +132,7 @@ export const ROLES: Role[] = [
       'track.both',
     ],
     limits: [
-      { label: 'Phiếu được mở', value: 'Toàn bộ 2400 phiếu' },
+      { label: 'Phiếu được mở', value: 'Toàn bộ 3000 phiếu' },
       { label: 'Phân tích', value: 'Bản đồ năng lực theo mạch và theo kỹ năng' },
       { label: 'Luồng', value: 'Cả hai luồng' },
     ],

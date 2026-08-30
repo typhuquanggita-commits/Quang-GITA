@@ -10,7 +10,7 @@ export const BRAND = {
   fullName: 'MATH365 · Hệ sinh thái luyện Toán GITA365',
   tagline: 'Học đúng lộ trình — Đo bằng KPI — Lên cấp bằng kết quả',
   promise:
-    'Bốn luồng, một hệ thống: Toán vào lớp 6 trường chất lượng cao, Toán chuyên vào 10, Toán vào 10 mục tiêu 9–10, và Toán THPT 10–12 hướng tới 9+ thi đại học cùng Top 1 tổng kết.',
+    'Năm luồng, một hệ thống: Toán vào lớp 6 trường chất lượng cao, Toán chuyên vào 10, Toán vào 10 mục tiêu 9–10, Toán THPT 10–12 hướng tới 9+ thi đại học, và Toán chính khoá lớp 6 đến 12 với mục tiêu 9–10 điểm kiểm tra cùng Top 1 lớp.',
   domainHint: 'gita365.vn',
   /** Câu định vị ngắn dùng ở chân mọi tài liệu in. */
   docSignature: 'GITA365 · MATH365 — Goal · Inspirits · Talent · Action',
@@ -118,7 +118,7 @@ export const DOC_CODE_RULE = {
   example: 'M365-V10-T2-CANTHUC-KN03',
   parts: [
     { token: 'M365', mean: 'Sản phẩm MATH365 thuộc hệ sinh thái GITA365.' },
-    { token: 'LUỒNG', mean: 'L6 · CT · V10 · QG — bốn luồng luyện thi.' },
+    { token: 'LUỒNG', mean: 'L6 · CT · V10 · QG · CK — năm luồng của hệ thống.' },
     { token: 'GIAI ĐOẠN', mean: 'T1–T5 / C1–C5 / Q1–Q5 — giai đoạn trong lộ trình.' },
     { token: 'CHUYÊN ĐỀ', mean: 'Mã rút gọn của chuyên đề.' },
     { token: 'LOẠI', mean: 'LT · DB · KN · NC · OT · TH — sáu loại phiếu; LG lời giải; HD hướng dẫn ôn chắc; DM đề mẫu.' },

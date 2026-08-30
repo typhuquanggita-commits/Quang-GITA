@@ -441,6 +441,36 @@ export const SCHOOLS: School[] = [
     color: '#1B4F9C',
   },
   {
+    id: 'sat',
+    name: 'SAT — phần Toán (College Board)',
+    shortName: 'SAT Math',
+    track: 'thpt-qg',
+    org: 'College Board (Hoa Kỳ)',
+    admissionNote:
+      'Chứng chỉ quốc tế, được nhiều trường đại học Việt Nam dùng trong phương thức xét tuyển kết hợp và là yêu cầu phổ biến khi nộp hồ sơ du học Mỹ. Bài thi hiện ở dạng số hoá và thích ứng theo module. Điều kiện và mức điểm quy đổi do từng trường công bố lại theo năm — phải đọc đề án tuyển sinh của trường mục tiêu.',
+    rounds: ['Đăng ký theo đợt thi của College Board', 'Thi trên máy tại điểm thi được uỷ quyền'],
+    mathPapers: [
+      {
+        name: 'Math section (2 module)',
+        minutes: 70,
+        scale: '200 – 800 điểm cho phần Toán',
+        note: 'Khoảng 44 câu, phần lớn là trắc nghiệm bốn phương án, một phần là câu điền đáp số. Được dùng máy tính cho toàn bộ phần Toán.',
+      },
+    ],
+    styleTags: ['Đề tiếng Anh', 'Thi trên máy', 'Thích ứng theo module', 'Nặng đọc hiểu dữ liệu'],
+    signature: [
+      'Đề bằng tiếng Anh: rào cản đầu tiên là đọc hiểu đề, không phải kiến thức Toán.',
+      'Tỉ trọng lớn dành cho đại số, phân tích dữ liệu và giải quyết vấn đề — nhẹ hình học hơn đề Việt Nam.',
+      'Nhiều câu gắn với bối cảnh thực tế và bảng biểu, đòi hỏi đọc số rồi mới tính.',
+      'Module thứ hai thay đổi độ khó theo kết quả module thứ nhất.',
+    ],
+    benchmark:
+      'Kiến thức Toán của SAT nằm gọn trong chương trình phổ thông Việt Nam và thường được đánh giá là nhẹ hơn đề tốt nghiệp về độ khó kỹ thuật. Khó khăn thật nằm ở tiếng Anh, ở tốc độ và ở dạng câu đọc hiểu dữ liệu.',
+    competitiveness: 3,
+    officialUrl: 'https://satsuite.collegeboard.org',
+    color: '#0f766e',
+  },
+  {
     id: 'tong-ket',
     name: 'Mục tiêu Top 1 tổng kết môn Toán lớp 10 – 11 – 12',
     shortName: 'Top 1 tổng kết',

@@ -30,7 +30,7 @@ export interface FormulaGroup {
   name: string;
   strand: StrandId;
   /** 'tieu-hoc' cho luồng vào 6; 'thcs' cho luồng vào 10 và chuyên; 10/11/12 cho luồng THPT. */
-  grade: 'tieu-hoc' | 'thcs' | 10 | 11 | 12;
+  grade: 'tieu-hoc' | 6 | 7 | 8 | 'thcs' | 10 | 11 | 12 | 'diem-10';
   tracks: TrackId[];
   topicIds: string[];
   intro: string;
@@ -103,6 +103,127 @@ export const FORMULA_GROUPS: FormulaGroup[] = [
       { name: 'Tổng dãy cách đều', expr: '(số đầu + số cuối) × số số hạng : 2', use: 'Bài tính tổng một dãy dài.', trap: 'Quên chia 2 sau khi nhân.', star: true },
       { name: 'Đếm hình chữ nhật trong lưới', expr: 'Số cách chọn 2 trong (m+1) đường ngang × số cách chọn 2 trong (n+1) đường dọc, với số cách chọn 2 trong k đường = k × (k − 1) : 2', use: 'Hình chia lưới ô vuông, hỏi tổng số hình chữ nhật.', trap: 'Chỉ đếm các ô nhỏ, bỏ sót hình ghép.' },
       { name: 'Cân đĩa tìm vật khác biệt', expr: 'n lần cân phân biệt được tối đa 3ⁿ vật', use: 'Bài cân thăng bằng không dùng quả cân.', trap: 'Chia đôi theo phản xạ thay vì chia ba.' },
+    ],
+  },
+  /* ==================== CHÍNH KHOÁ LỚP 6 – 8 ==================== */
+  {
+    id: 'f-ck6',
+    name: 'Toán 6 — số tự nhiên, số nguyên, phân số và hình trực quan',
+    strand: 'so-hoc',
+    grade: 6,
+    tracks: ['chinh-khoa'],
+    topicIds: ['ck6-so-tu-nhien', 'ck6-so-nguyen', 'ck6-phan-so', 'ck6-hinh-truc-quan'],
+    intro:
+      'Toàn bộ công thức và quy tắc của Toán 6. Ba nhóm đầu quyết định thói quen tính toán cho cả bốn năm THCS; sai quy tắc dấu ở đây sẽ kéo dài hậu quả tới tận lớp 9.',
+    items: [
+      { name: 'Thứ tự thực hiện phép tính', expr: 'Luỹ thừa → nhân chia → cộng trừ; có ngoặc thì trong ngoặc trước', use: 'Mọi biểu thức nhiều phép tính.', trap: 'Tính tuần tự từ trái sang phải, bỏ qua ưu tiên của luỹ thừa.', star: true },
+      { name: 'Nhân chia hai luỹ thừa cùng cơ số', expr: 'aᵐ · aⁿ = aᵐ⁺ⁿ;  aᵐ : aⁿ = aᵐ⁻ⁿ', condition: 'm ≥ n và a ≠ 0 với phép chia', use: 'Rút gọn biểu thức có luỹ thừa trước khi tính ra số.', star: true },
+      { name: 'Dấu hiệu chia hết', expr: 'Cho 2: chữ số tận cùng chẵn. Cho 5: tận cùng 0 hoặc 5. Cho 3 (hoặc 9): tổng các chữ số chia hết cho 3 (hoặc 9)', use: 'Bài tìm chữ số, bài rút gọn phân số nhanh.', star: true },
+      { name: 'ƯCLN và BCNN', expr: 'ƯCLN: thừa số nguyên tố chung, mũ nhỏ nhất. BCNN: thừa số chung và riêng, mũ lớn nhất', use: '"Chia đều, nhiều nhất" là ƯCLN; "cùng lặp lại, xếp hàng vừa đủ" là BCNN.', trap: 'Nhầm hai bài toán thực tế nghe rất giống nhau.', star: true },
+      { name: 'Quan hệ ƯCLN và BCNN', expr: 'ƯCLN(a, b) × BCNN(a, b) = a × b', use: 'Biết một trong hai, tính nhanh cái còn lại.' },
+      { name: 'Bỏ ngoặc có dấu trừ', expr: 'a − (b + c) = a − b − c;  a − (b − c) = a − b + c', use: 'Mọi biểu thức có dấu trừ trước ngoặc.', trap: 'Chỉ đổi dấu số hạng đầu tiên — lỗi phổ biến nhất của chương số nguyên.', star: true },
+      { name: 'Quy tắc dấu khi nhân chia', expr: '(−a)(−b) = ab;  (−a)b = −(ab)', use: 'Mọi phép nhân chia có số âm.', trap: 'Nhầm −a² với (−a)²: số đầu âm, số sau dương.', star: true },
+      { name: 'Cộng, trừ phân số', expr: 'a/b ± c/d = (a·d ± c·b)/(b·d), rồi rút gọn', use: 'Quy đồng bằng bội chung nhỏ nhất để số không bị lớn.', trap: 'Cộng tử với tử và mẫu với mẫu.', star: true },
+      { name: 'Nhân, chia phân số', expr: 'a/b × c/d = (ac)/(bd);  a/b : c/d = a/b × d/c', use: 'Rút gọn chéo trước khi nhân.', star: true },
+      { name: 'Tìm phân số của một số và ngược lại', expr: 'm/n của A = A × m : n;  A = giá trị : m × n', use: 'Bài toán phân số nhiều bước.', trap: 'Làm ngược chiều: nhân trong khi phải chia.', star: true },
+      { name: 'Ba bài toán phần trăm', expr: 'p% của A = A × p : 100;  A = m : p × 100;  tỉ số phần trăm của a so với b = a : b × 100%', use: 'Giảm giá, lãi lỗ, tỉ lệ học sinh.', star: true },
+      { name: 'Diện tích hình bình hành và hình thoi', expr: 'S hình bình hành = a × h;  S hình thoi = (d₁ × d₂) : 2', use: 'Bài tính diện tích hình ghép.', trap: 'Quên chia 2 ở công thức hình thoi.', star: true },
+      { name: 'Xác suất thực nghiệm', expr: 'Số lần sự kiện xảy ra : tổng số lần thực hiện', use: 'Bài tung đồng xu, gieo xúc xắc, rút thẻ.', star: true },
+    ],
+  },
+  {
+    id: 'f-ck7',
+    name: 'Toán 7 — số hữu tỉ, tỉ lệ thức, đa thức và tam giác',
+    strand: 'so-hoc',
+    grade: 7,
+    tracks: ['chinh-khoa'],
+    topicIds: ['ck7-so-huu-ti-so-thuc', 'ck7-ti-le-thuc', 'ck7-bieu-thuc-da-thuc', 'ck7-tam-giac-bang-nhau'],
+    intro:
+      'Lớp 7 là năm bước từ số sang chữ và từ nhận biết sang chứng minh. Hai nhóm quan trọng nhất là tỉ lệ thức (ứng dụng nhiều nhất) và tam giác bằng nhau (định hình cách trình bày cho ba năm còn lại).',
+    items: [
+      { name: 'Luỹ thừa của số hữu tỉ', expr: '(aᵐ)ⁿ = aᵐⁿ;  aᵐ · aⁿ = aᵐ⁺ⁿ;  (ab)ⁿ = aⁿbⁿ', use: 'Rút gọn biểu thức luỹ thừa.', trap: 'Nhầm (aᵐ)ⁿ thành aᵐ⁺ⁿ.', star: true },
+      { name: 'Căn bậc hai số học', expr: '√(a²) = |a|;  √(ab) = √a · √b', condition: 'a, b ≥ 0', use: 'Rút gọn biểu thức chứa căn.', trap: 'Viết √(a²) = a mà quên dấu giá trị tuyệt đối.', star: true },
+      { name: 'Phương trình chứa giá trị tuyệt đối', expr: '|x| = a (a ≥ 0) ⟺ x = a hoặc x = −a', use: 'Bài tìm x có dấu giá trị tuyệt đối.', trap: 'Chỉ lấy một nghiệm.', star: true },
+      { name: 'Tính chất tỉ lệ thức', expr: 'a/b = c/d ⟺ a·d = b·c', use: 'Bài tìm x trong tỉ lệ thức.', star: true },
+      { name: 'Dãy tỉ số bằng nhau', expr: 'a/x = b/y = c/z = (a + b + c)/(x + y + z)', condition: 'x + y + z ≠ 0', use: 'Chia một số thành các phần tỉ lệ.', trap: 'Áp dụng khi mẫu có thể triệt tiêu nhau.', star: true },
+      { name: 'Đại lượng tỉ lệ thuận và tỉ lệ nghịch', expr: 'Tỉ lệ thuận: y = kx (thương không đổi). Tỉ lệ nghịch: x·y = a (tích không đổi)', use: 'Bài năng suất, số công nhân, vận tốc.', trap: 'Dùng tỉ lệ thuận cho bài tỉ lệ nghịch.', star: true },
+      { name: 'Bậc và nghiệm của đa thức', expr: 'Bậc là bậc cao nhất SAU KHI thu gọn; x = a là nghiệm ⟺ P(a) = 0', use: 'Bài thu gọn đa thức và tìm nghiệm.', trap: 'Xác định bậc trước khi thu gọn.', star: true },
+      { name: 'Tổng ba góc và góc ngoài tam giác', expr: 'Tổng ba góc trong = 180°; góc ngoài = tổng hai góc trong không kề', use: 'Bài tính số đo góc.', star: true },
+      { name: 'Ba trường hợp bằng nhau của tam giác', expr: 'c–c–c, c–g–c, g–c–g (thêm cạnh huyền – cạnh góc vuông và cạnh huyền – góc nhọn cho tam giác vuông)', use: 'Mọi bài chứng minh hình học lớp 7.', trap: 'Viết trường hợp cạnh – cạnh – góc; trường hợp này KHÔNG tồn tại.', star: true },
+      { name: 'Bất đẳng thức tam giác', expr: '|b − c| < a < b + c', use: 'Kiểm tra ba số có là ba cạnh tam giác không.', trap: 'Chỉ viết một vế của bất đẳng thức.', star: true },
+      { name: 'Trọng tâm tam giác', expr: 'Ba trung tuyến đồng quy tại G; GA = (2/3)·AM với M là trung điểm BC', use: 'Bài về đường trung tuyến.', star: true },
+      { name: 'Xác suất của biến cố đồng khả năng', expr: 'P = số kết quả thuận lợi : tổng số kết quả;  0 ≤ P ≤ 1', use: 'Bài rút thẻ, gieo xúc xắc.', star: true },
+    ],
+  },
+  {
+    id: 'f-ck8',
+    name: 'Toán 8 — hằng đẳng thức, phân thức, phương trình và đồng dạng',
+    strand: 'dai-so',
+    grade: 8,
+    tracks: ['chinh-khoa'],
+    topicIds: ['ck8-hang-dang-thuc', 'ck8-phan-thuc', 'ck8-pt-ham-so', 'ck8-thales-dong-dang', 'ck8-hinh-chop-xac-suat'],
+    intro:
+      'Lớp 8 là năm cung cấp bốn công cụ mà đề vào 10 dùng gần như toàn bộ: hằng đẳng thức, phân thức, phương trình – hàm số bậc nhất, và tam giác đồng dạng. Học chắc lớp 8 thì lớp 9 nhẹ đi một nửa.',
+    items: [
+      { name: 'Bình phương một tổng, một hiệu', expr: '(a ± b)² = a² ± 2ab + b²', use: 'Khai triển và nhận dạng để viết ngược thành bình phương.', star: true },
+      { name: 'Hiệu hai bình phương', expr: 'a² − b² = (a − b)(a + b)', use: 'Phân tích nhân tử, tính nhanh, trục căn thức.', star: true },
+      { name: 'Lập phương một tổng, một hiệu', expr: '(a ± b)³ = a³ ± 3a²b + 3ab² ± b³', use: 'Khai triển và rút gọn biểu thức bậc ba.', star: true },
+      { name: 'Tổng và hiệu hai lập phương', expr: 'a³ + b³ = (a + b)(a² − ab + b²);  a³ − b³ = (a − b)(a² + ab + b²)', use: 'Phân tích nhân tử.', trap: 'Nhớ nhầm dấu ở giữa của thừa số thứ hai.', star: true },
+      { name: 'Bốn phương pháp phân tích nhân tử', expr: 'Đặt nhân tử chung → dùng hằng đẳng thức → nhóm hạng tử → tách hạng tử', use: 'Luôn thử đặt nhân tử chung trước tiên.', trap: 'Phân tích chưa triệt để, còn nhân tử tiếp tục phân tích được.', star: true },
+      { name: 'Điều kiện xác định của phân thức', expr: 'Mẫu thức khác 0, lấy từ mẫu BAN ĐẦU', use: 'Dòng đầu tiên của mọi bài phân thức.', trap: 'Lấy điều kiện từ mẫu sau khi đã rút gọn.', star: true },
+      { name: 'Bốn phép tính với phân thức', expr: 'A/B ± C/D = (AD ± CB)/(BD);  A/B × C/D = AC/BD;  A/B : C/D = A/B × D/C', condition: 'B, D ≠ 0 và C ≠ 0 với phép chia', use: 'Rút gọn biểu thức tổng hợp.', star: true },
+      { name: 'Phương trình bậc nhất một ẩn', expr: 'ax + b = 0 (a ≠ 0) ⟺ x = −b/a', use: 'Bài giải phương trình và bài lập phương trình.', trap: 'Chia hai vế cho biểu thức chứa ẩn mà chưa xét nó khác 0.', star: true },
+      { name: 'Hàm số bậc nhất và vị trí tương đối', expr: 'y = ax + b; song song ⟺ a = a′ và b ≠ b′; cắt nhau ⟺ a ≠ a′', use: 'Bài tham số về hai đường thẳng.', trap: 'Quên điều kiện b ≠ b′ nên nhận cả trường hợp trùng nhau.', star: true },
+      { name: 'Định lí Thalès', expr: 'MN ∥ BC ⟹ AM/AB = AN/AC = MN/BC', use: 'Tính độ dài đoạn thẳng trong tam giác có đường song song.', star: true },
+      { name: 'Ba trường hợp đồng dạng', expr: 'g–g, c–g–c, c–c–c', use: 'Chứng minh đồng dạng rồi suy ra hệ thức tích.', trap: 'Viết tên hai tam giác sai thứ tự đỉnh tương ứng.', star: true },
+      { name: 'Tỉ số diện tích hai tam giác đồng dạng', expr: 'S₁/S₂ = k² với k là tỉ số đồng dạng', use: 'Bài tính diện tích qua đồng dạng.', trap: 'Quên bình phương, dùng luôn k.', star: true },
+      { name: 'Định lí Pythagore và định lí đảo', expr: 'a² + b² = c² với c là cạnh huyền', use: 'Tính độ dài và chứng minh tam giác vuông.', star: true },
+      { name: 'Hình chóp đều', expr: 'S xq = (nửa chu vi đáy) × trung đoạn;  V = (1/3) × S đáy × chiều cao', use: 'Bài hình chóp tam giác đều và tứ giác đều.', trap: 'Dùng chiều cao hình chóp thay cho trung đoạn khi tính diện tích xung quanh.', star: true },
+    ],
+  },
+  {
+    id: 'f-diem-10-thcs',
+    name: 'Cẩm nang điểm 10 — THCS: nhóm công thức quyết định 0,5 điểm cuối',
+    strand: 'bat-dang-thuc',
+    grade: 'diem-10',
+    tracks: ['thpt', 'chuyen', 'chinh-khoa'],
+    topicIds: ['ds-viete', 'hh-duong-tron-co-ban', 'bdt-co-ban', 'ds-can-thuc'],
+    intro:
+      'Ở đề vào 10 và đề kiểm tra lớp 9, khoảng cách giữa 9,0 và 10 gần như luôn nằm ở đúng một nhóm nhỏ: câu bất đẳng thức cuối đề, ý cuối bài hình học, và câu hỏi phụ của bài rút gọn. Đây là danh sách tối thiểu cho nhóm đó.',
+    items: [
+      { name: 'Biểu thức đối xứng theo S và P', expr: 'x₁² + x₂² = S² − 2P;  (x₁ − x₂)² = S² − 4P;  x₁³ + x₂³ = S³ − 3PS;  1/x₁ + 1/x₂ = S/P', condition: 'P ≠ 0 với biểu thức nghịch đảo', use: 'Ý cuối bài Viète — nhận ra hệ thức đối xứng thì viết được ngay theo S và P.', star: true },
+      { name: 'Hạ bậc bằng chính phương trình', expr: 'x₁ là nghiệm của x² − bx + c = 0 ⟹ x₁² = bx₁ − c', use: 'Hệ thức KHÔNG đối xứng chứa luỹ thừa bậc cao của một nghiệm.', trap: 'Sai dấu khi chuyển vế.', star: true },
+      { name: 'AM–GM cho hai số dương', expr: 'a + b ≥ 2√(ab), dấu bằng khi a = b', use: 'Bài V bất đẳng thức của đề vào 10; tích không đổi thì tổng nhỏ nhất.', trap: 'Áp dụng khi tích của hai số không phải hằng số.', star: true },
+      { name: 'Hệ quả của AM–GM', expr: 'ab ≤ ((a + b)/2)²; tổng không đổi thì tích lớn nhất khi hai số bằng nhau', use: 'Bài diện tích lớn nhất với chu vi cho trước.', star: true },
+      { name: 'Bất đẳng thức Cauchy–Schwarz dạng phân thức', expr: 'a²/x + b²/y ≥ (a + b)²/(x + y)', condition: 'x, y > 0', use: 'Bất đẳng thức có mẫu, dạng hay gặp ở đề chuyên và Bài V khó.', star: true },
+      { name: 'Phương tích của một điểm', expr: 'Từ A ngoài (O), cát tuyến ADE và tiếp tuyến AB: AB² = AD · AE', use: 'Ý 2 và ý 3 của bài hình học đề vào 10.', star: true },
+      { name: 'Hệ thức lượng trong tam giác vuông', expr: 'b² = a·b′;  h² = b′·c′;  a·h = b·c;  1/h² = 1/b² + 1/c²', use: 'Ghép với phương tích để chứng minh bốn điểm đồng viên.', trap: 'Ghép nhầm cạnh góc vuông với hình chiếu.', star: true },
+      { name: 'Ba dấu hiệu tứ giác nội tiếp', expr: 'Tổng hai góc đối bằng 180°; hai đỉnh kề cùng nhìn một cạnh dưới góc bằng nhau; góc ngoài bằng góc trong đối diện', use: 'Ý chốt của bài hình học.', trap: 'Cộng hai góc KHÔNG đối nhau.', star: true },
+      { name: 'Tách phần nguyên để xét tính nguyên', expr: '(ax + b)/(cx + d) = k + m/(cx + d)', use: 'Câu hỏi phụ "tìm x nguyên để biểu thức nguyên" của Bài I.', star: true },
+    ],
+  },
+  {
+    id: 'f-diem-10-thpt',
+    name: 'Cẩm nang điểm 10 — THPT: nhóm công thức quyết định câu vận dụng cao',
+    strand: 'giai-tich',
+    grade: 'diem-10',
+    tracks: ['thpt-qg', 'chinh-khoa'],
+    topicIds: ['q12-khao-sat-ham-so', 'q12-nguyen-ham-tich-phan', 'q12-oxyz', 'q12-xac-suat-co-dieu-kien'],
+    intro:
+      'Ở đề tốt nghiệp và đề kiểm tra lớp 10 – 12, phần trả lời ngắn và nhóm câu vận dụng cao là chỗ tách 9,0 khỏi 10. Đây là danh sách tối thiểu cho nhóm đó — không phải toàn bộ công thức, mà là những công thức có tần suất xuất hiện cao nhất ở đúng nhóm câu này.',
+    items: [
+      { name: 'Điều kiện hàm bậc ba có hai cực trị', expr: "y' = 3ax² + 2bx + c có Δ > 0 (và a ≠ 0)", use: 'Bài tham số về số điểm cực trị.', trap: 'Quên xét riêng trường hợp a = 0 khi a chứa tham số.', star: true },
+      { name: 'Đơn điệu của hàm phân thức bậc nhất', expr: "y = (ax + b)/(cx + d) có y' = (ad − bc)/(cx + d)²", use: 'Đồng biến ⟺ ad − bc > 0 trên từng khoảng xác định.', trap: 'Kết luận đồng biến trên toàn tập xác định thay vì trên từng khoảng.', star: true },
+      { name: 'Số nghiệm của f(u(x)) = m', expr: 'Đặt t = u(x): đếm số nghiệm t trước, rồi với mỗi t đếm số x tương ứng', use: 'Câu vận dụng cao dạng hàm hợp.', trap: 'Dừng ở số nghiệm t mà quên đếm ngược ra số nghiệm x.', star: true },
+      { name: 'Tích phân đổi biến và đổi cận', expr: 'Đặt t = u(x) ⟹ dt = u′(x) dx, đổi cận NGAY tại dòng đặt', use: 'Đa số câu tích phân của đề tốt nghiệp.', trap: 'Quên đổi cận — lỗi mất điểm số một của chương tích phân.', star: true },
+      { name: 'Thứ tự ưu tiên chọn u khi tính từng phần', expr: 'Logarit → Đa thức → Lượng giác → Mũ', use: 'Tích phân của tích hai loại hàm khác nhau.', star: true },
+      { name: 'Diện tích hình phẳng giữa hai đồ thị', expr: 'S = ∫|f(x) − g(x)| dx trên đoạn giao', use: 'Nhóm câu ứng dụng tích phân.', trap: 'Bỏ dấu giá trị tuyệt đối khi hai đồ thị cắt nhau giữa đoạn.', star: true },
+      { name: 'Ba loại tích trong Oxyz', expr: 'Vô hướng u·v = x₁x₂ + y₁y₂ + z₁z₂; có hướng [u, v] ⊥ cả hai; hỗn tạp [u, v]·w', use: 'Diện tích tam giác = (1/2)|[AB, AC]|; thể tích tứ diện = (1/6)|[AB, AC]·AD|.', trap: 'Quên hệ số 1/2 hoặc 1/6, hoặc quên lấy trị tuyệt đối.', star: true },
+      { name: 'Khoảng cách trong Oxyz', expr: 'd(M, (P)) = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²)', use: 'Bài mặt cầu tiếp xúc, bài cực trị trong Oxyz.', star: true },
+      { name: 'Bán kính đường tròn giao tuyến', expr: 'r = √(R² − d²) với d là khoảng cách từ tâm mặt cầu tới mặt phẳng', use: 'Bài mặt phẳng cắt mặt cầu.', star: true },
+      { name: 'Xác suất toàn phần và công thức Bayes', expr: 'P(B) = ΣP(Aᵢ)P(B|Aᵢ);  P(Aᵢ|B) = P(Aᵢ)P(B|Aᵢ)/P(B)', use: 'Câu xác suất có điều kiện, thường ra ở phần đúng/sai.', trap: 'Nhầm P(A|B) với P(B|A).', star: true },
+      { name: 'Phương sai mẫu ghép nhóm', expr: 's² = Σfᵢxᵢ²/n − x̄², với xᵢ là TRUNG ĐIỂM nhóm', use: 'Câu thống kê của chương trình 2018.', trap: 'Dùng đầu mút nhóm thay vì trung điểm.', star: true },
+      { name: 'Quy tắc kiểm tra chéo cho phần trả lời ngắn', expr: 'Mọi đáp số phải được tính lại bằng một cách thứ hai trước khi điền', use: 'Phần III đề tốt nghiệp — không có phương án để loại trừ, sai là mất trọn điểm.', star: true },
     ],
   },
   /* ==================== THCS — ĐẠI SỐ ==================== */

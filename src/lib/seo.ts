@@ -180,7 +180,7 @@ export function seoFor(page: PageId, params: Record<string, string> = {}): SeoMe
   switch (page) {
     case 'home': {
       title = `Luyện thi Toán vào 10 và Toán chuyên — ${SITE.name} · ${SITE.org}`;
-      description = `Luyện Toán bốn luồng: ${st.lop6} phiếu vào lớp 6, ${st.chuyen} phiếu chuyên, ${st.thpt} phiếu vào 10, ${st.quocGia} phiếu THPT. Đề thi thử có lời giải và barem, ${fs.items} công thức tra cứu, lộ trình theo KPI.`;
+      description = `Luyện Toán năm luồng lớp 6–12: ${st.worksheets} phiếu chuyên đề, ${st.papers} đề mẫu có barem, 700 đề luyện chấm tự động, ${fs.items} công thức tra cứu và lộ trình cá nhân hoá theo KPI.`;
       h1 = 'Luyện thi Toán vào 10 và Toán chuyên theo lộ trình cá nhân hoá';
       intro =
         'MATH365 là hệ sinh thái luyện Toán của GITA365 cho ba đích đến: đỗ lớp chuyên Toán, đạt 9–10 điểm Toán vào lớp 10, và trên 9 điểm Toán thi đại học. Mỗi phiếu luyện được chấm ngay, chỉ ra nguyên nhân sai, xếp lịch ôn lại và cập nhật lại lộ trình.';
@@ -420,7 +420,7 @@ export function seoFor(page: PageId, params: Record<string, string> = {}): SeoMe
     case 'kho-tai-lieu': {
       title = 'Kho tài liệu Toán ôn thi theo tầng năng lực người học';
       description =
-        `Cấu trúc kho tài liệu ${st.libraryFolders} thư mục và ${st.libraryArtifacts} đầu tài liệu bổ trợ, phân theo bốn luồng, năm tầng hấp thu và ba môi trường gia đình – nhà trường – xã hội.`;
+        `Cấu trúc kho tài liệu ${st.libraryFolders} thư mục và ${st.libraryArtifacts} đầu tài liệu bổ trợ, phân theo năm luồng, năm tầng hấp thu và ba môi trường gia đình – nhà trường – xã hội.`;
       h1 = 'Kiến trúc kho tài liệu MATH365';
       intro =
         'Tài liệu nhiều không giúp gì nếu không biết lấy cái nào lúc nào. Kho được tổ chức theo tầng năng lực của người học, mỗi thư mục ghi rõ ai chịu trách nhiệm và dùng vào lúc nào.';

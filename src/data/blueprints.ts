@@ -769,6 +769,243 @@ export const BLUEPRINTS: Blueprint[] = [
       { group: 'Nhóm Bứt phá', target: '9,0+/10', giveUp: 'Không' },
     ],
   },
+  {
+    id: 'bp-hsa',
+    schoolId: 'hsa',
+    title: 'Toán học và Xử lí số liệu — bài đánh giá năng lực HSA (ĐHQGHN)',
+    minutes: 75,
+    totalPoints: 50,
+    format: 'Trắc nghiệm bốn phương án và câu điền đáp án — 50 câu — thang 50 điểm',
+    updatedNote:
+      'Ma trận dựng theo mô tả bài thi HSA được ĐHQGHN công bố và theo mặt bằng đề tham khảo. Cấu trúc bài thi có thể thay đổi giữa các năm — bắt buộc đối chiếu với thông tin chính thức tại trang của Trung tâm Khảo thí ĐHQGHN cho đợt thi bạn đăng ký.',
+    parts: [
+      {
+        label: 'Nhóm 1 · Đại số và hàm số',
+        points: 18,
+        minutes: 26,
+        strand: 'giai-tich',
+        content: 'Phương trình, bất phương trình, hàm số, mũ – logarit, dãy số và cấp số',
+        gate: 'bat-buoc',
+        requirements: [
+          'Giải nhanh phương trình và bất phương trình quen thuộc.',
+          'Đọc đồ thị và bảng biến thiên để trả lời trực tiếp.',
+          'Mũ – logarit ở mức vận dụng cơ bản.',
+        ],
+        tips: [
+          'Trung bình 1,5 phút một câu — câu nào quá 2 phút thì bỏ qua, quay lại sau.',
+          'Nhiều câu giải nhanh hơn bằng cách thử phương án so với giải trực tiếp.',
+        ],
+      },
+      {
+        label: 'Nhóm 2 · Hình học và đo lường',
+        points: 14,
+        minutes: 21,
+        strand: 'hinh-khong-gian',
+        content: 'Hình học phẳng, hình không gian, toạ độ trong mặt phẳng và trong không gian',
+        gate: 'phan-hoa',
+        requirements: [
+          'Công thức thể tích, diện tích của các khối quen thuộc.',
+          'Toạ độ điểm, đường thẳng, mặt phẳng, mặt cầu.',
+          'Ước lượng hình học để loại phương án.',
+        ],
+        tips: [
+          'Vẽ phác hình ngay cả khi đề không cho hình.',
+          'Với câu toạ độ, thay toạ độ vào phương án thường nhanh hơn giải xuôi.',
+        ],
+      },
+      {
+        label: 'Nhóm 3 · Xử lí số liệu, thống kê và xác suất',
+        points: 18,
+        minutes: 28,
+        strand: 'xac-suat',
+        content: 'Đọc bảng biểu, biểu đồ, thống kê mô tả, tổ hợp và xác suất',
+        gate: 'lay-diem-toi-da',
+        requirements: [
+          'Đọc nhanh bảng số liệu và biểu đồ nhiều tầng.',
+          'Tính số trung bình, trung vị, phương sai, độ lệch chuẩn.',
+          'Đếm và tính xác suất, kể cả xác suất có điều kiện.',
+        ],
+        tips: [
+          'Đọc câu hỏi trước, đọc bảng sau — quy tắc tiết kiệm thời gian nhất của cả bài thi.',
+          'Đây là nhóm câu nhiều điểm nhất và cũng ổn định nhất, nên ưu tiên làm chắc.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Quét toàn phần', minutes: '0–2', action: 'Xem nhóm câu nào có bảng biểu dài để phân bổ giờ.' },
+      { phase: 'Nhóm đại số', minutes: '2–28', action: 'Làm nhanh, bỏ qua câu quá 2 phút.' },
+      { phase: 'Nhóm hình học', minutes: '28–49', action: 'Vẽ phác hình, ưu tiên câu công thức trực tiếp.' },
+      { phase: 'Nhóm số liệu', minutes: '49–72', action: 'Đọc câu hỏi trước; đây là nhóm lấy điểm.' },
+      { phase: 'Quay lại', minutes: '72–75', action: 'Làm nốt câu đã bỏ qua, không để trống câu nào.' },
+    ],
+    scoreTargets: [
+      { group: 'Ngưỡng xét tuyển phổ biến', target: 'Trên 75/150 toàn bài', giveUp: 'Có thể bỏ vài câu hình học khó' },
+      { group: 'Nhóm trường top', target: 'Trên 100/150 toàn bài', giveUp: 'Rất ít' },
+    ],
+  },
+  {
+    id: 'bp-tsa',
+    schoolId: 'tsa',
+    title: 'Tư duy Toán học — bài đánh giá tư duy TSA (ĐHBK Hà Nội)',
+    minutes: 60,
+    totalPoints: 40,
+    format: 'Trắc nghiệm nhiều lựa chọn, đúng/sai và kéo thả — thang 40 điểm cho phần Toán',
+    updatedNote:
+      'Ma trận dựng theo mô tả bài thi TSA được ĐHBK Hà Nội công bố. Cấu trúc và thang điểm có thể thay đổi giữa các năm — bắt buộc đối chiếu với thông tin chính thức của trường cho đợt thi bạn đăng ký.',
+    parts: [
+      {
+        label: 'Phần 1 · Tư duy định lượng',
+        points: 16,
+        minutes: 24,
+        strand: 'giai-tich',
+        content: 'Số học, đại số, hàm số — nhấn mạnh vào lập luận hơn là kỹ thuật tính',
+        gate: 'bat-buoc',
+        requirements: [
+          'Biến đổi đại số nhanh và chính xác.',
+          'Đọc và khai thác đồ thị, bảng biến thiên.',
+          'Suy luận từ điều kiện cho trước thay vì áp công thức máy móc.',
+        ],
+        tips: [
+          'TSA hỏi "vì sao" nhiều hơn "bằng bao nhiêu" — đọc kỹ yêu cầu trước khi tính.',
+          'Câu kéo thả và đúng/sai chấm theo từng ý, nên đừng bỏ trống.',
+        ],
+      },
+      {
+        label: 'Phần 2 · Tư duy hình học và không gian',
+        points: 12,
+        minutes: 18,
+        strand: 'hinh-khong-gian',
+        content: 'Hình học phẳng, hình không gian, toạ độ và biến đổi hình',
+        gate: 'phan-hoa',
+        requirements: [
+          'Hình dung vật thể trong không gian và mặt cắt của nó.',
+          'Toạ độ hoá bài hình khi cần.',
+          'Ước lượng để loại phương án phi lý.',
+        ],
+        tips: [
+          'Nhiều câu giải bằng hình dung nhanh hơn nhiều so với tính toán.',
+          'Vẽ phác hình luôn rẻ hơn tưởng tượng trong đầu.',
+        ],
+      },
+      {
+        label: 'Phần 3 · Tư duy dữ liệu và xác suất',
+        points: 12,
+        minutes: 18,
+        strand: 'xac-suat',
+        content: 'Đọc dữ liệu, suy luận thống kê, tổ hợp và xác suất',
+        gate: 'lay-diem-toi-da',
+        requirements: [
+          'Đọc biểu đồ nhiều tầng và bảng chéo.',
+          'Phân biệt tương quan với nhân quả khi đọc dữ liệu.',
+          'Tính xác suất trong tình huống nhiều bước.',
+        ],
+        tips: [
+          'Câu suy luận dữ liệu thường có một phương án "nghe hợp lý nhưng không suy ra được từ dữ liệu" — đó là bẫy chính.',
+          'Đọc chú giải biểu đồ trước khi đọc số.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Quét đề', minutes: '0–2', action: 'Đếm số câu mỗi phần.' },
+      { phase: 'Tư duy định lượng', minutes: '2–26', action: 'Làm nhanh, không sa đà vào tính toán dài.' },
+      { phase: 'Tư duy hình học', minutes: '26–44', action: 'Vẽ phác hình cho mọi câu.' },
+      { phase: 'Tư duy dữ liệu', minutes: '44–58', action: 'Đọc câu hỏi trước, cảnh giác bẫy suy luận.' },
+      { phase: 'Soát', minutes: '58–60', action: 'Không để trống câu nào; câu kéo thả và đúng/sai chấm từng ý.' },
+    ],
+    scoreTargets: [
+      { group: 'Ngưỡng xét tuyển phổ biến', target: 'Trên 50/100 toàn bài', giveUp: 'Một vài câu hình học không gian khó' },
+      { group: 'Nhóm ngành top', target: 'Trên 70/100 toàn bài', giveUp: 'Rất ít' },
+    ],
+  },
+  {
+    id: 'bp-sat',
+    schoolId: 'sat',
+    title: 'SAT — phần Toán (Math section)',
+    minutes: 70,
+    totalPoints: 800,
+    format: 'Hai module thích ứng, khoảng 44 câu — thang 200 đến 800 điểm',
+    updatedNote:
+      'Ma trận dựng theo mô tả bài thi SAT số hoá do College Board công bố. Nội dung, tỉ trọng và thang điểm do College Board quyết định và có thể thay đổi — bắt buộc đối chiếu với tài liệu chính thức tại satsuite.collegeboard.org trước khi lên kế hoạch ôn.',
+    parts: [
+      {
+        label: 'Algebra',
+        points: 280,
+        minutes: 24,
+        strand: 'dai-so',
+        content: 'Phương trình và bất phương trình bậc nhất, hệ phương trình, hàm số bậc nhất',
+        gate: 'bat-buoc',
+        requirements: [
+          'Giải và lập phương trình bậc nhất từ tình huống bằng lời.',
+          'Hệ hai phương trình bậc nhất hai ẩn và ý nghĩa hình học của nghiệm.',
+          'Đọc hàm số bậc nhất từ bảng, đồ thị hoặc mô tả bằng lời.',
+        ],
+        tips: [
+          'Rào cản lớn nhất là tiếng Anh, không phải Toán — hãy học trước bộ từ vựng toán học.',
+          'Được dùng máy tính cho toàn bộ phần Toán, nhưng lạm dụng máy tính làm chậm hơn nhẩm.',
+        ],
+      },
+      {
+        label: 'Advanced Math',
+        points: 280,
+        minutes: 24,
+        strand: 'giai-tich',
+        content: 'Hàm số bậc hai, hàm mũ, đa thức, phương trình phi tuyến',
+        gate: 'phan-hoa',
+        requirements: [
+          'Hàm bậc hai ở cả ba dạng: tổng quát, đỉnh, nhân tử.',
+          'Tăng trưởng mũ trong bối cảnh thực tế.',
+          'Hệ phương trình có một phương trình phi tuyến.',
+        ],
+        tips: [
+          'Nhiều câu giải nhanh hơn bằng cách thay phương án vào đề.',
+          'Nhận dạng dạng viết của hàm bậc hai cho biết đề muốn hỏi gì: đỉnh, nghiệm hay giao với trục tung.',
+        ],
+      },
+      {
+        label: 'Problem-Solving and Data Analysis',
+        points: 160,
+        minutes: 14,
+        strand: 'xac-suat',
+        content: 'Tỉ lệ, phần trăm, đơn vị, đọc bảng biểu, thống kê mô tả, xác suất',
+        gate: 'lay-diem-toi-da',
+        requirements: [
+          'Tỉ lệ, tỉ số và đổi đơn vị trong bối cảnh thực tế.',
+          'Đọc biểu đồ tán xạ, bảng chéo, biểu đồ cột.',
+          'Suy luận từ mẫu ra tổng thể và phân biệt tương quan với nhân quả.',
+        ],
+        tips: [
+          'Đây là nhóm gần với đề Việt Nam nhất về kỹ thuật nhưng xa nhất về cách hỏi.',
+          'Bẫy phổ biến: phương án đúng về mặt số nhưng sai đơn vị.',
+        ],
+      },
+      {
+        label: 'Geometry and Trigonometry',
+        points: 80,
+        minutes: 8,
+        strand: 'hinh-hoc',
+        content: 'Diện tích, thể tích, tam giác đồng dạng, đường tròn, lượng giác cơ bản',
+        gate: 'bat-buoc',
+        requirements: [
+          'Công thức diện tích, thể tích cơ bản (đề có cho bảng công thức).',
+          'Tam giác đồng dạng và định lí Pythagore.',
+          'Tỉ số lượng giác của góc nhọn và đường tròn lượng giác cơ bản.',
+        ],
+        tips: [
+          'Đề cho sẵn bảng công thức hình học ở đầu phần — hãy biết trước nó có gì để không học thuộc thừa.',
+          'Nhóm này chiếm tỉ trọng nhỏ nhất, đừng dành quá nhiều thời gian ôn.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Module 1', minutes: '0–35', action: 'Làm hết, không bỏ trống; kết quả module này quyết định độ khó module sau.' },
+      { phase: 'Nghỉ chuyển module', minutes: '35–36', action: 'Hít thở, đặt lại nhịp.' },
+      { phase: 'Module 2', minutes: '36–70', action: 'Giữ nhịp; đánh dấu câu chưa chắc để quay lại.' },
+    ],
+    scoreTargets: [
+      { group: 'Xét tuyển kết hợp tại Việt Nam', target: 'Thường từ 1200/1600 toàn bài trở lên', giveUp: 'Tuỳ đề án từng trường' },
+      { group: 'Du học nhóm cạnh tranh', target: 'Toán 750+/800', giveUp: 'Rất ít' },
+    ],
+  },
 ];
 
 export const blueprintsBySchool = (schoolId: string) =>

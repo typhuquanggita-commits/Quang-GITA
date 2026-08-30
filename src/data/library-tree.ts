@@ -231,7 +231,7 @@ export const LIBRARY_TREE: Folder[] = [
         name: 'P1 · Tư vấn viên lộ trình',
         purpose: 'Đủ năng lực tiếp nhận và định hướng học sinh mới.',
         owner: 'P4 · Coach',
-        artifacts: ['Kịch bản tư vấn đầu vào', 'Bộ câu hỏi thường gặp của phụ huynh', 'Bảng so sánh bốn luồng'],
+        artifacts: ['Kịch bản tư vấn đầu vào', 'Bộ câu hỏi thường gặp của phụ huynh', 'Bảng so sánh năm luồng'],
       },
       {
         code: '40.2',

@@ -20,6 +20,10 @@ import type { TrackId } from '@/types';
 
 const GRADE_LABEL: Record<string, string> = {
   'tieu-hoc': 'Tiểu học · vào lớp 6',
+  '6': 'Lớp 6',
+  '7': 'Lớp 7',
+  '8': 'Lớp 8',
+  'diem-10': 'Cẩm nang điểm 10',
   thcs: 'THCS · vào 10 & chuyên',
   '10': 'Lớp 10',
   '11': 'Lớp 11',
