@@ -190,8 +190,8 @@ export const CONTENT_GAPS: ContentGap[] = [
       'Tên hai nhóm cộng đồng được cung cấp (ôn thi vào lớp 6, ôn thi cấp 2 chất lượng cao) và độ phủ của MathX ở mảng này.',
     why: 'Đây là một kỳ thi riêng với hệ thống trường riêng, định dạng đề riêng và nhóm người học riêng — không phải phần mở rộng của Toán trung học. Nhóm người dùng của GITA365 đang có nhu cầu này mà MATH365 chưa phục vụ.',
     action:
-      'Bổ sung Luồng 4 với hệ thống trường, ma trận đề đánh giá năng lực, cây chuyên đề Toán tiểu học nâng cao, bộ sinh đề và đề mẫu trọn vẹn.',
-    status: 'da-lap',
+      'Đã bổ sung Luồng 4: 8 chuyên đề Toán tiểu học nâng cao, 17 bộ sinh đề, 400 phiếu luyện, 2 trường, 3 nhóm học sinh, 4 giai đoạn, 2 ma trận đề đánh giá năng lực và 2 đề mẫu trọn vẹn (31 câu) kèm lời giải, barem và bảng phân tích. Còn thiếu: bộ đề theo từng trường cụ thể và tài liệu dành riêng cho phụ huynh.',
+    status: 'dang-lam',
     priority: 1,
   },
   {

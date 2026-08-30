@@ -25,7 +25,7 @@ export const FAQS: FaqItem[] = [
   {
     page: 'home',
     q: 'MATH365 là gì?',
-    a: 'MATH365 là nền tảng luyện Toán ba luồng của GITA365: Toán chuyên thi vào lớp 10 chuyên, Toán vào lớp 10 mục tiêu 9–10 điểm, và Toán THPT lớp 10–12 hướng tới trên 9 điểm thi đại học. Hệ thống gồm 2.000 phiếu luyện theo chuyên đề, 7 đề thi thử trọn vẹn có lời giải và barem, 195 công thức tra cứu, cùng một lộ trình cá nhân hoá sinh ra từ chính dữ liệu làm bài của người học.',
+    a: 'MATH365 là nền tảng luyện Toán bốn luồng của GITA365: Toán thi vào lớp 6 trường THCS chất lượng cao, Toán chuyên thi vào lớp 10 chuyên, Toán vào lớp 10 mục tiêu 9–10 điểm, và Toán THPT lớp 10–12 hướng tới trên 9 điểm thi đại học. Hệ thống gồm 2.400 phiếu luyện theo chuyên đề, 9 đề thi thử trọn vẹn có lời giải và barem, 225 công thức tra cứu, cùng một lộ trình cá nhân hoá sinh ra từ chính dữ liệu làm bài của người học.',
   },
   {
     page: 'home',
@@ -162,6 +162,32 @@ export const FAQS: FaqItem[] = [
     page: 'hoc-vien',
     q: 'Giáo viên dùng MATH365 để dạy như thế nào?',
     a: 'Có ba giáo án chuẩn chia tới từng khối thời gian: buổi kiến thức mới 90 phút, buổi luyện nâng cao 120 phút, và buổi thi thử kèm chữa đề 150 phút. Mỗi khối ghi rõ mục đích, việc của giáo viên, việc của học sinh, dấu hiệu quan sát được cho biết đã đạt, và lỗi giáo viên hay mắc. Kèm theo là 12 nước đi sư phạm, 8 kịch bản nhận xét theo tình huống và bảng dự giờ 6 tiêu chí.',
+  },
+  /* ---------- Luồng vào lớp 6 ---------- */
+  {
+    page: 'lo-trinh',
+    q: 'Nên bắt đầu ôn thi vào lớp 6 từ khi nào?',
+    a: 'Hợp lý nhất là từ đầu lớp 4 hoặc đầu lớp 5, với nhịp 3–6 giờ mỗi tuần chia thành nhiều buổi ngắn. Luồng vào 6 của MATH365 chia thành bốn giai đoạn: chắc bốn phép tính (4–6 tuần), thành thạo dạng có lời văn (5–7 tuần), suy luận và quy luật (5–6 tuần), rồi luyện đề và tâm lý phòng thi (4–6 tuần). Bắt đầu quá sớm bằng cách học trước chương trình cấp hai là phản tác dụng: đề vào 6 không hỏi kiến thức lớp 6–7, và trẻ dễ mất hứng thú với môn Toán trước khi tới ngày thi.',
+  },
+  {
+    page: 'cau-truc-de-thi',
+    q: 'Bài đánh giá năng lực vào lớp 6 thi những gì và trong bao lâu?',
+    a: 'Phần Toán thường kéo dài khoảng 45 phút, thang 10, kết hợp trắc nghiệm với tự luận ngắn, và nằm trọn trong chương trình tiểu học. MATH365 dựng hai ma trận cho luồng này: một theo mặt bằng chung của nhóm trường THCS chất lượng cao (4,0 trắc nghiệm – 3,0 trả lời ngắn – 3,0 tự luận) và một theo hướng đọc hiểu, suy luận. Lưu ý quan trọng: đây là ma trận biên soạn theo mặt bằng chung, không phải cấu trúc chính thức của trường nào. Mỗi trường công bố phương án tuyển sinh lại theo từng năm, nên phải đối chiếu thông báo chính thức của năm dự thi.',
+  },
+  {
+    page: 'chuyen-de',
+    q: 'Thi vào lớp 6 cần ôn những dạng toán nào?',
+    a: 'MATH365 chia luồng vào 6 thành tám chuyên đề: phân số và số thập phân; tỉ số và tỉ số phần trăm; toán chuyển động; toán tính ngược và sơ đồ đoạn thẳng; hình học tiểu học và hình ghép; suy luận logic; dãy số theo quy luật và đếm hình; đọc hiểu bảng biểu và toán có lời văn nhiều bước. Ba chuyên đề đầu chiếm phần lớn số câu; ba chuyên đề cuối là chỗ tạo khác biệt giữa các thí sinh, vì chúng không cần công thức mới mà cần một cách nghĩ có hệ thống.',
+  },
+  {
+    page: 'de-thi',
+    q: 'Đề thi thử vào lớp 6 của MATH365 có phải đề thi thật không?',
+    a: 'Không. Toàn bộ đề trên MATH365 do đội biên soạn tự viết theo ma trận, không sao chép đề của bất kỳ trường nào. Mỗi đề nêu rõ ở phần đầu rằng đây là đề mẫu và ma trận dựng theo mặt bằng chung của kỳ thi. Điều MATH365 cam kết là đề đúng số phần, đúng thang điểm, đúng thời gian và đúng nhóm dạng bài; kèm lời giải từng bước, barem tới từng 0,25 điểm và bảng phân tích cho mọi câu. Đề thi thật do các trường công bố sau kỳ thi — hãy tìm ở kênh chính thức của trường.',
+  },
+  {
+    page: 'bi-kip',
+    q: 'Làm sao để con không nhầm giữa bài chuyển động ngược chiều và cùng chiều?',
+    a: 'Đừng học thuộc hai công thức. Hãy vẽ hai mũi tên rồi tự hỏi khoảng cách giữa hai xe đang thay đổi nhanh bằng cách nào: hai mũi tên hướng vào nhau thì khoảng cách giảm bằng tổng hai vận tốc, hai mũi tên cùng hướng thì khoảng cách giảm bằng hiệu hai vận tốc. Với bài trên dòng nước, nhớ một câu: hiệu cho dòng nước, tổng cho ca nô. Cách nhớ bằng sơ đồ không bao giờ lẫn, còn cách nhớ bằng công thức thì lẫn thường xuyên dưới áp lực phòng thi.',
   },
 ];
 

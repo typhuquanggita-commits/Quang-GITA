@@ -176,7 +176,7 @@ export const PILLARS: Pillar[] = [
       },
     ],
     artifacts: [
-      '2000 phiếu luyện & 2000 nhiệm vụ',
+      '2400 phiếu luyện & 2400 nhiệm vụ',
       'Bộ thói quen thành công theo nhịp ngày – tuần – tháng',
       'Bảng cấp độ hành động 20/80',
       'Khung vận hành nhóm bạn xuất sắc',
@@ -399,13 +399,13 @@ export const PRO_LEVELS: ProLevel[] = [
     roleHint: 'Thường gắn với vai trò Trợ giảng trong hệ thống phân quyền.',
     scope: 'Tiếp nhận, khảo sát và giới thiệu lộ trình phù hợp.',
     competencies: [
-      'Nắm rõ ba luồng và mục tiêu của từng luồng.',
+      'Nắm rõ bốn luồng và mục tiêu của từng luồng.',
       'Đọc được kết quả bài test xếp lộ trình và nhóm năng lực.',
       'Giải thích được cơ chế KPI và thăng cấp bằng ngôn ngữ đơn giản.',
     ],
     canDeliver: ['Buổi tư vấn đầu vào', 'Giải thích lộ trình cho phụ huynh'],
     certification: [
-      'Hoàn thành module “Bản đồ kỳ thi” của cả ba luồng.',
+      'Hoàn thành module “Bản đồ kỳ thi” của cả bốn luồng.',
       'Tư vấn thử 5 hồ sơ, được P3 trở lên duyệt.',
     ],
     color: '#64748B',
@@ -714,7 +714,7 @@ export const STANDARDS: StandardRef[] = [
     name: 'Interleaved Practice',
     origin: 'Rohrer & Taylor',
     idea: 'Trộn dạng bài giúp hình thành kỹ năng nhận dạng — thứ quyết định điểm số trong đề thi thật.',
-    where: 'Các phiếu Tổng duyệt ở giai đoạn 5 của cả ba luồng.',
+    where: 'Các phiếu Tổng duyệt ở giai đoạn cuối của cả bốn luồng.',
   },
   {
     name: 'Growth Mindset',

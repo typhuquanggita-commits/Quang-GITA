@@ -694,6 +694,81 @@ export const BLUEPRINTS: Blueprint[] = [
       { group: 'Nhóm Bứt phá', target: '9,0+/10', giveUp: 'Không' },
     ],
   },
+  {
+    id: 'bp-lop6-ngoai-ngu',
+    schoolId: 'lop6-ngoai-ngu',
+    title: 'Toán – bài đánh giá năng lực vào lớp 6 THCS Ngoại ngữ (ĐHNN – ĐHQGHN)',
+    minutes: 45,
+    totalPoints: 10,
+    format: 'Trắc nghiệm và trả lời ngắn – thiên về suy luận và đọc hiểu – thang điểm 10',
+    updatedNote:
+      'Ma trận dựng theo đặc điểm được ghi nhận của bài đánh giá năng lực trường ĐH Ngoại ngữ: nhẹ tính toán, nặng đọc hiểu và suy luận. ĐÂY KHÔNG PHẢI cấu trúc chính thức do trường công bố. Trường ra thông báo tuyển sinh theo từng năm — bắt buộc đối chiếu trước khi dùng.',
+    parts: [
+      {
+        label: 'Phần I · Đọc hiểu & tính toán cơ bản',
+        points: 3.5,
+        minutes: 13,
+        strand: 'thuc-te',
+        content: 'Đọc bảng biểu, biểu đồ, đoạn văn có số liệu – 7 câu',
+        gate: 'bat-buoc',
+        requirements: [
+          'Đọc đúng số liệu từ bảng, biểu đồ cột và biểu đồ tranh.',
+          'Bốn phép tính với phân số, số thập phân và tỉ số phần trăm.',
+          'Trung bình cộng và so sánh số liệu.',
+        ],
+        tips: [
+          'Đọc câu hỏi trước, đọc dữ liệu sau.',
+          'Dùng bút chì dò dòng để không lệch cột.',
+        ],
+      },
+      {
+        label: 'Phần II · Toán có lời văn nhiều bước',
+        points: 3.5,
+        minutes: 15,
+        strand: 'thuc-te',
+        content: 'Bài toán lời văn dài, dữ kiện gài trong câu chữ – 5 câu',
+        gate: 'phan-hoa',
+        requirements: [
+          'Toán chuyển động và toán tỉ lệ trong ngữ cảnh đời sống.',
+          'Bài hai đến ba bước, có bước trung gian không được hỏi trực tiếp.',
+          'Toán tính ngược và các bài toán điển hình.',
+        ],
+        tips: [
+          'Gạch chân dữ kiện, viết ra sơ đồ các bước trước khi tính bước nào.',
+          'Đọc lại câu hỏi cuối cùng trước khi ghi đáp số.',
+        ],
+      },
+      {
+        label: 'Phần III · Suy luận & quy luật',
+        points: 3,
+        minutes: 15,
+        strand: 'to-hop',
+        content: 'Suy luận logic, dãy số quy luật, đếm hình – 4 câu',
+        gate: 'lay-diem-toi-da',
+        requirements: [
+          'Bảng đúng/sai, bài toán sắp xếp, bài toán cân đĩa.',
+          'Dãy số theo quy luật cộng và quy luật hai tầng.',
+          'Đếm hình theo cách có hệ thống.',
+        ],
+        tips: [
+          'Kẻ bảng ra nháp, không suy luận trong đầu.',
+          'Đây là phần tạo khác biệt — đừng để hết giờ mới bắt đầu.',
+        ],
+      },
+    ],
+    timeStrategy: [
+      { phase: 'Đọc lướt', minutes: '0–2', action: 'Xem phần nào dài nhất để phân bổ giờ.' },
+      { phase: 'Phần I', minutes: '2–15', action: 'Làm nhanh, đây là phần lấy điểm.' },
+      { phase: 'Phần II', minutes: '15–30', action: 'Sơ đồ hoá từng bài trước khi tính.' },
+      { phase: 'Phần III', minutes: '30–43', action: 'Kẻ bảng cho câu suy luận, đừng bỏ trống câu nào.' },
+      { phase: 'Soát', minutes: '43–45', action: 'Đọc lại câu hỏi, kiểm tra đơn vị.' },
+    ],
+    scoreTargets: [
+      { group: 'Nhóm Làm quen', target: '6,0+/10', giveUp: 'Có thể bỏ hai câu cuối Phần III' },
+      { group: 'Nhóm Vững chắc', target: '7,5+/10', giveUp: 'Chỉ bỏ câu suy luận khó nhất' },
+      { group: 'Nhóm Bứt phá', target: '9,0+/10', giveUp: 'Không' },
+    ],
+  },
 ];
 
 export const blueprintsBySchool = (schoolId: string) =>

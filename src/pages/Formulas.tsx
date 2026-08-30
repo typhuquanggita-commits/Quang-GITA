@@ -19,6 +19,7 @@ import { href } from '@/lib/routes';
 import type { TrackId } from '@/types';
 
 const GRADE_LABEL: Record<string, string> = {
+  'tieu-hoc': 'Tiểu học · vào lớp 6',
   thcs: 'THCS · vào 10 & chuyên',
   '10': 'Lớp 10',
   '11': 'Lớp 11',

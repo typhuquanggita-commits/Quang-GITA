@@ -237,6 +237,109 @@ export const TIPS: Tip[] = [
     title: 'Sơ đồ cây cho mọi bài xác suất nhiều giai đoạn',
     body: 'Vẽ cây, nhân dọc theo nhánh, cộng ngang các nhánh thoả mãn. Đây là cách ít sai nhất cho xác suất toàn phần và Bayes.',
   },
+  /* ============ LUỒNG 4 · TOÁN VÀO LỚP 6 ============ */
+  {
+    id: 'tip-l6-01',
+    category: 'tu-duy',
+    tracks: ['lop6'],
+    title: 'Đọc đề bằng bút chì, không đọc bằng mắt',
+    body: 'Gạch chân mọi số liệu, khoanh tròn câu hỏi cuối cùng, đánh dấu các từ khoá "còn lại", "nhiều hơn", "gấp". Phần lớn câu sai của đề vào 6 là sai vì đọc, không phải vì tính.',
+    example: 'Đề "bán 1/3 số gạo còn lại" — khoanh tròn hai chữ "còn lại" là đủ để không lấy nhầm 1/3 của tổng.',
+  },
+  {
+    id: 'tip-l6-02',
+    category: 'tu-duy',
+    tracks: ['lop6'],
+    title: 'Vẽ sơ đồ đoạn thẳng trước khi tính',
+    body: 'Mọi bài tổng – tỉ, hiệu – tỉ, tổng – hiệu và mọi bài chuyển động đều trở nên hiển nhiên khi có sơ đồ. Mất 15 giây vẽ, tiết kiệm vài phút loay hoay.',
+    example: 'Tổng 96, số bé bằng 1/3 số lớn: vẽ 1 phần và 3 phần, thấy ngay tổng là 4 phần.',
+  },
+  {
+    id: 'tip-l6-03',
+    category: 'ghi-nho',
+    tracks: ['lop6'],
+    title: 'Mũi tên hướng vào nhau thì cộng, cùng hướng thì trừ',
+    body: 'Đừng học thuộc hai công thức chuyển động. Vẽ hai mũi tên rồi tự hỏi: khoảng cách giữa hai xe đang giảm nhanh bằng cách nào. Cách nhớ này không bao giờ lẫn.',
+  },
+  {
+    id: 'tip-l6-04',
+    category: 'ghi-nho',
+    tracks: ['lop6'],
+    title: 'Dòng nước: hiệu cho dòng, tổng cho ca nô',
+    body: 'Lấy hiệu hai vận tốc rồi chia đôi thì được vận tốc dòng nước; lấy tổng rồi chia đôi thì được vận tốc thực của ca nô. Đây là hai kết quả bị lẫn nhiều nhất.',
+  },
+  {
+    id: 'tip-l6-05',
+    category: 'tinh-nhanh',
+    tracks: ['lop6'],
+    title: 'Tìm cặp số cộng lại tròn trăm',
+    body: 'Trong bài "tính nhanh", đề luôn cài sẵn một cặp số cộng lại thành 10, 100 hoặc 1000. Tìm cặp đó trước khi đặt bút tính bất kỳ phép nào.',
+    example: '12,5 × 37 + 12,5 × 63 = 12,5 × 100 = 1250.',
+  },
+  {
+    id: 'tip-l6-06',
+    category: 'tinh-nhanh',
+    tracks: ['lop6'],
+    title: 'Giảm p% thì nhân thẳng với (100 − p)%',
+    body: 'Thay vì tính phần giảm rồi trừ, hãy nhân thẳng giá gốc với phần còn lại. Một phép tính thay vì hai, và không còn nguy cơ trả lời nhầm phần đã giảm.',
+    example: 'Giảm 20% của 350 000: lấy 350 000 × 80 : 100 = 280 000 đồng.',
+  },
+  {
+    id: 'tip-l6-07',
+    category: 'tu-duy',
+    tracks: ['lop6'],
+    title: 'Kẻ bảng cho mọi bài suy luận',
+    body: 'Bài toán ghép người với thuộc tính luôn giải được bằng bảng đúng/sai. Kẻ bảng, bắt đầu từ dữ kiện chắc chắn nhất (không nhất thiết là dữ kiện đầu tiên), mỗi ✓ thì loại cả hàng lẫn cột.',
+  },
+  {
+    id: 'tip-l6-08',
+    category: 'tu-duy',
+    tracks: ['lop6'],
+    title: 'Cân đĩa thì chia ba, không chia đôi',
+    body: 'Mỗi lần cân cho ba kết quả: trái nhẹ, phải nhẹ, hoặc bằng nhau. Vì thế chia ba nhóm mới là tối ưu. Ghi nhớ mốc: 1 lần cân cho 3, 2 lần cho 9, 3 lần cho 27.',
+  },
+  {
+    id: 'tip-l6-09',
+    category: 'ghi-nho',
+    tracks: ['lop6'],
+    title: 'Dãy cách đều: một cộng, một trừ, một chia',
+    body: 'Ba công thức của dãy cách đều đều có một con số 1 hoặc 2 dễ quên. Số số hạng thì CỘNG 1, số hạng thứ n thì TRỪ 1, tổng thì CHIA 2. Đọc câu này ba lần là nhớ.',
+  },
+  {
+    id: 'tip-l6-10',
+    category: 'trinh-bay',
+    tracks: ['lop6'],
+    title: 'Mỗi phép tính một câu lời giải',
+    body: 'Ở phần tự luận tiểu học, barem chấm cả câu lời giải chứ không chỉ chấm phép tính. Viết "Số gạo bán ngày đầu là:" trước mỗi phép tính là cách chắc chắn nhất để không mất 0,25 điểm trình bày.',
+  },
+  {
+    id: 'tip-l6-11',
+    category: 'trinh-bay',
+    tracks: ['lop6'],
+    title: 'Đáp số phải có đơn vị',
+    body: 'Ở phần trả lời ngắn, đáp số thiếu đơn vị thường bị tính là sai vì không có lời giải để bù. Viết đơn vị ngay khi viết số, đừng để lát nữa quay lại thêm.',
+  },
+  {
+    id: 'tip-l6-12',
+    category: 'phong-thi',
+    tracks: ['lop6'],
+    title: 'Quy tắc 2 phút và dấu khoanh tròn',
+    body: 'Đề 45 phút với 15 câu nghĩa là trung bình dưới 3 phút một câu. Câu nào quá 2 phút mà chưa thấy hướng thì khoanh tròn số thứ tự và bỏ qua, quay lại ở 5 phút cuối. Ngồi lì một câu là cách mất điểm nhanh nhất.',
+  },
+  {
+    id: 'tip-l6-13',
+    category: 'phong-thi',
+    tracks: ['lop6'],
+    title: 'Soát bài bằng cách đọc lại câu hỏi, không đọc lại bài giải',
+    body: 'Đọc lại bài giải của chính mình thì mắt sẽ lướt qua đúng chỗ sai. Thay vào đó, hãy đọc lại câu hỏi rồi nhìn đáp số: mình đã trả lời đúng thứ đề hỏi chưa, đúng đơn vị chưa, số có hợp lý không.',
+  },
+  {
+    id: 'tip-l6-14',
+    category: 'tinh-nhanh',
+    tracks: ['lop6'],
+    title: 'Ước lượng để loại phương án',
+    body: 'Ở phần trắc nghiệm, nhiều câu loại được ba phương án chỉ bằng ước lượng thô. Giảm 20% thì kết quả phải còn khoảng bốn phần năm; trung bình cộng phải nằm giữa số nhỏ nhất và số lớn nhất.',
+  },
 ];
 
 export const tipsFor = (track: TrackId) => TIPS.filter((t) => t.tracks.includes(track));
@@ -359,6 +462,45 @@ export const HABITS: Habit[] = [
     ],
     tracks: ['thpt', 'chuyen', 'thpt-qg'],
   },
+  {
+    id: 'h-l6-nham',
+    name: 'Mười phút tính nhẩm mỗi ngày',
+    cadence: 'hằng ngày',
+    minutes: 10,
+    why: 'Đề vào 6 rất chặt thời gian. Tính nhẩm nhanh không phải năng khiếu mà là kết quả của việc lặp lại ngắn, đều, mỗi ngày.',
+    how: [
+      'Mười phép tính phân số và mười phép tính phần trăm, bấm giờ.',
+      'Ghi lại thời gian mỗi ngày để thấy mình nhanh dần.',
+      'Chỉ dùng nháp khi thật cần, còn lại nhẩm trong đầu.',
+    ],
+    tracks: ['lop6'],
+  },
+  {
+    id: 'h-l6-so-loi',
+    name: 'Sổ tay lỗi viết bằng lời của con',
+    cadence: 'hằng tuần',
+    minutes: 20,
+    why: 'Trẻ tiểu học nhớ lỗi của mình lâu hơn nhiều khi tự viết ra bằng ngôn ngữ của chính mình, thay vì được người lớn giải thích.',
+    how: [
+      'Mỗi câu sai ghi ba dòng: đề hỏi gì, mình đã làm gì, đúng ra phải làm gì.',
+      'Không chép lời giải mẫu — phải viết bằng lời của con.',
+      'Cuối tuần đọc lại sổ, chọn hai lỗi hay lặp nhất để luyện riêng.',
+    ],
+    tracks: ['lop6'],
+  },
+  {
+    id: 'h-l6-de-tinh-gio',
+    name: 'Một đề tính giờ mỗi tuần',
+    cadence: 'hằng tuần',
+    minutes: 45,
+    why: 'Kỹ năng làm bài dưới áp lực thời gian là một kỹ năng riêng, không tự có từ việc làm đúng nhiều bài lẻ.',
+    how: [
+      'Đúng 45 phút, đồng hồ đặt trên bàn, không gián đoạn.',
+      'Chấm theo barem thật, không nới tay.',
+      'Dành 30 phút chữa kỹ — chữa một đề tốt hơn làm ba đề qua loa.',
+    ],
+    tracks: ['lop6'],
+  },
 ];
 
 /* ============================================================
@@ -455,6 +597,29 @@ export const METHODS: Method[] = [
     apply: [
       'Đặt một khung giờ cố định trong ngày cho môn Toán.',
       'Ngày bận thì giảm khối lượng, nhưng không bỏ hẳn — giữ chuỗi ngày liên tục.',
+    ],
+  },
+  {
+    id: 'm-l6-tuoi-nho',
+    name: 'Giữ hứng thú là ưu tiên số một ở tuổi tiểu học',
+    principle:
+      'Với học sinh lớp 4 – 5, mất hứng thú với môn Toán là tổn thất lớn hơn nhiều so với việc chậm mất vài tuần. Một đứa trẻ còn thích Toán sẽ đuổi kịp; một đứa trẻ sợ Toán thì không.',
+    apply: [
+      'Mỗi buổi học không quá 45 – 60 phút, có nghỉ giữa giờ.',
+      'Khen quá trình ("con đã vẽ sơ đồ trước khi tính") thay vì khen kết quả ("con giỏi quá").',
+      'Không so sánh với bạn khác, và không lấy tỉ lệ chọi ra để tạo áp lực.',
+      'Nếu con làm sai, hỏi "con nghĩ thế nào" trước khi giải thích.',
+    ],
+  },
+  {
+    id: 'm-l6-du-phong',
+    name: 'Luôn có phương án dự phòng',
+    principle:
+      'Tỉ lệ chọi vào các trường THCS chất lượng cao rất cao, và kết quả phụ thuộc nhiều yếu tố ngoài năng lực. Chuẩn bị sẵn phương án thứ hai là cách bảo vệ đứa trẻ, không phải cách hạ thấp mục tiêu.',
+    apply: [
+      'Chọn trước một trường nguyện vọng hai mà gia đình thực sự hài lòng.',
+      'Nói rõ với con từ đầu rằng không đỗ không phải là thất bại.',
+      'Nhấn mạnh phần kiến thức học được sẽ dùng tiếp ở lớp 6 dù học trường nào.',
     ],
   },
 ];

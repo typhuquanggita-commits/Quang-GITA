@@ -173,6 +173,11 @@ export function buildRoadmap(profile: Profile): {
 /** Gợi ý nhóm học sinh từ điểm bài test xếp lộ trình. */
 export function suggestGroup(track: TrackId, scorePercent: number): GroupId {
   if (track === 'chuyen') return scorePercent >= 75 ? 'dinh-cao' : 'chuyen-sau';
+  if (track === 'lop6') {
+    if (scorePercent >= 78) return 'l6-but-pha';
+    if (scorePercent >= 55) return 'l6-vung-chac';
+    return 'l6-lam-quen';
+  }
   if (track === 'thpt-qg') {
     if (scorePercent >= 78) return 'qg-toi-uu';
     if (scorePercent >= 58) return 'qg-vung-chac';

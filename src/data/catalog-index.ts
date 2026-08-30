@@ -84,6 +84,7 @@ export const PAPER_INDEX: { id: string; title: string }[] = [
   { id: 'dm-su-pham-01', title: "Đề mẫu 07 · Toán chuyên — Chuyên ĐH Sư phạm Hà Nội" },
   { id: 'dm-tn-thpt-01', title: "Đề mẫu 04 · Toán tốt nghiệp THPT" },
   { id: 'dm-lop6-clc-01', title: "Đề mẫu 08 · Toán đánh giá năng lực vào lớp 6 chất lượng cao" },
+  { id: 'dm-lop6-nn-01', title: "Đề mẫu 09 · Toán đánh giá năng lực vào lớp 6 THCS Ngoại ngữ" },
 ];
 
 export interface PaperCard {
@@ -106,4 +107,5 @@ export const PAPER_CARDS: PaperCard[] = [
   { id: 'dm-su-pham-01', code: 'M365-CT-DM07', title: "Đề mẫu 07 · Toán chuyên — Chuyên ĐH Sư phạm Hà Nội", track: 'chuyen', minutes: 120, totalPoints: 10, items: 9, claims: 0 },
   { id: 'dm-tn-thpt-01', code: 'M365-QG-DM04', title: "Đề mẫu 04 · Toán tốt nghiệp THPT", track: 'thpt-qg', minutes: 90, totalPoints: 10, items: 22, claims: 16 },
   { id: 'dm-lop6-clc-01', code: 'M365-L6-CLC-01', title: "Đề mẫu 08 · Toán đánh giá năng lực vào lớp 6 chất lượng cao", track: 'lop6', minutes: 45, totalPoints: 10, items: 15, claims: 0 },
+  { id: 'dm-lop6-nn-01', code: 'M365-L6-NN-01', title: "Đề mẫu 09 · Toán đánh giá năng lực vào lớp 6 THCS Ngoại ngữ", track: 'lop6', minutes: 45, totalPoints: 10, items: 16, claims: 0 },
 ];

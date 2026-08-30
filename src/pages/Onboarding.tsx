@@ -25,7 +25,11 @@ export default function Onboarding() {
   const [answers, setAnswers] = useState<Record<string, number>>({});
 
   const quiz = useMemo(
-    () => PLACEMENT.filter((q) => q.track === 'both' || q.track === track),
+    () =>
+      /* Luồng vào 6 có bộ câu riêng ở trình độ tiểu học, không dùng chung câu 'both'. */
+      track === 'lop6'
+        ? PLACEMENT.filter((q) => q.track === 'lop6')
+        : PLACEMENT.filter((q) => q.track === 'both' || q.track === track),
     [track],
   );
 

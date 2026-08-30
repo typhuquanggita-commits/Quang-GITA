@@ -13,6 +13,14 @@ import { href } from '@/lib/routes';
 import { Card, SectionTitle, Badge, Callout } from '@/components/ui';
 import { GitaLogo } from '@/components/Logo';
 import { Faq } from '@/components/Faq';
+import {
+  REFERENCE_SOURCES,
+  CONTENT_GAPS,
+  sourceStats,
+  ACCESS_LABEL,
+  KIND_LABEL,
+  GAP_STATUS_LABEL,
+} from '@/data/sources';
 
 /**
  * Trang minh bạch nguồn và phương pháp.
@@ -28,6 +36,7 @@ const official = RESOURCES.filter((r) => r.official);
 export default function Sources() {
   const st = catalogStats();
   const fs = formulaStats();
+  const src = sourceStats();
 
   return (
     <div className="space-y-6">
@@ -254,10 +263,128 @@ export default function Sources() {
         </Card>
       </section>
 
-      {/* 6. Không cam kết */}
+
+      {/* 6. Đối chiếu với các nguồn tham chiếu */}
       <section>
         <h2 className="mb-3 text-[17px] font-extrabold text-slate-900">
-          6. Những điều chúng tôi không cam kết
+          6. Đối chiếu với các nguồn tham chiếu trong ngành
+        </h2>
+        <Callout tone="brand" title="Cách đọc bảng này">
+          Chúng tôi khảo sát các kho tài liệu, nền tảng học và cộng đồng lớn của thị trường để
+          đối chiếu độ phủ, KHÔNG để sao chép nội dung. Cột trạng thái nói thật về giới hạn của
+          từng lần khảo sát: có nguồn đọc được trực tiếp, có nguồn chỉ khảo sát gián tiếp qua kết
+          quả tìm kiếm, và có nguồn hoàn toàn không truy cập được từ môi trường biên soạn.
+        </Callout>
+        <div className="mt-3 grid gap-3 sm:grid-cols-3">
+          {[
+            { k: 'Nguồn đã đối chiếu', v: String(src.total) },
+            { k: 'Khảo sát được', v: String(src.surveyed) },
+            { k: 'Không truy cập được', v: String(src.blocked) },
+          ].map((x) => (
+            <Card key={x.k} className="p-4">
+              <div className="text-[12px] font-semibold uppercase tracking-wide text-slate-500">{x.k}</div>
+              <div className="mt-1 text-2xl font-extrabold text-slate-900">{x.v}</div>
+            </Card>
+          ))}
+        </div>
+        <div className="mt-3 space-y-3">
+          {REFERENCE_SOURCES.map((s2) => (
+            <Card key={s2.url} className="p-5">
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="text-[15px] font-extrabold text-slate-900">{s2.name}</div>
+                <Badge tone="slate">{KIND_LABEL[s2.kind]}</Badge>
+                <span
+                  className="rounded-full px-2 py-0.5 text-[11px] font-bold text-white"
+                  style={{ background: ACCESS_LABEL[s2.access].color }}
+                >
+                  {ACCESS_LABEL[s2.access].label}
+                </span>
+              </div>
+              <div className="mt-1 text-[13px] leading-relaxed text-slate-600">{s2.what}</div>
+              <div className="mt-3 grid gap-3 md:grid-cols-2">
+                <div>
+                  <div className="text-[12px] font-bold uppercase tracking-wide text-slate-500">
+                    Nội dung họ phủ
+                  </div>
+                  <ul className="mt-1 space-y-1">
+                    {s2.covers.map((c) => (
+                      <li key={c} className="text-[12.5px] leading-relaxed text-slate-700">
+                        · {c}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="text-[12px] font-bold uppercase tracking-wide text-slate-500">
+                    MATH365 rút ra được gì
+                  </div>
+                  <ul className="mt-1 space-y-1">
+                    {s2.learned.map((c) => (
+                      <li key={c} className="text-[12.5px] leading-relaxed text-slate-700">
+                        · {c}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              {s2.caveat && (
+                <div className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-[12.5px] leading-relaxed text-amber-900">
+                  Giới hạn khảo sát: {s2.caveat}
+                </div>
+              )}
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      {/* 7. Khoảng trống nội dung */}
+      <section>
+        <h2 className="mb-3 text-[17px] font-extrabold text-slate-900">
+          7. Khoảng trống nội dung và tiến độ lấp
+        </h2>
+        <Callout tone="amber" title="Vì sao công khai phần còn thiếu">
+          Một hệ thống nói mình đã đủ mọi thứ là một hệ thống không đáng tin. Bảng dưới đây liệt
+          kê những chỗ MATH365 phát hiện là còn thiếu sau khi đối chiếu với thị trường, kèm trạng
+          thái thật của từng mục — kể cả những mục chưa làm.
+        </Callout>
+        <div className="mt-3 space-y-3">
+          {[...CONTENT_GAPS]
+            .sort((a, b) => a.priority - b.priority)
+            .map((g) => (
+              <Card key={g.title} className="p-5">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span
+                    className="rounded-full px-2 py-0.5 text-[11px] font-bold text-white"
+                    style={{ background: GAP_STATUS_LABEL[g.status].color }}
+                  >
+                    {GAP_STATUS_LABEL[g.status].label}
+                  </span>
+                  <Badge tone="slate">Ưu tiên {g.priority}</Badge>
+                  <div className="text-[15px] font-extrabold text-slate-900">{g.title}</div>
+                </div>
+                <div className="mt-2 grid gap-2 text-[12.5px] leading-relaxed text-slate-700">
+                  <div>
+                    <span className="font-bold text-slate-900">Phát hiện từ: </span>
+                    {g.foundVia}
+                  </div>
+                  <div>
+                    <span className="font-bold text-slate-900">Vì sao đáng lấp: </span>
+                    {g.why}
+                  </div>
+                  <div>
+                    <span className="font-bold text-slate-900">Việc đã/sẽ làm: </span>
+                    {g.action}
+                  </div>
+                </div>
+              </Card>
+            ))}
+        </div>
+      </section>
+
+      {/* 8. Không cam kết */}
+      <section>
+        <h2 className="mb-3 text-[17px] font-extrabold text-slate-900">
+          8. Những điều chúng tôi không cam kết
         </h2>
         <Card className="p-5">
           <div className="grid gap-2 sm:grid-cols-2">

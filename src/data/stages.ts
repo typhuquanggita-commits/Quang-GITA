@@ -1,7 +1,7 @@
 import type { TrackId } from '@/types';
 
 /**
- * Danh sách giai đoạn của ba luồng.
+ * Danh sách giai đoạn của bốn luồng.
  *
  * Tách khỏi kho phiếu vì trang chủ cần dữ liệu này ngay ở lần tải đầu, trong
  * khi kho phiếu kéo theo toàn bộ bộ sinh đề. Kho phiếu nhập lại từ đây, nên chỉ

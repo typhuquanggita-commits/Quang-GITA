@@ -99,6 +99,15 @@ export const KEYWORDS: KeywordTarget[] = [
   { keyword: 'bộ nhận diện gita365', intent: 'thuong-hieu', page: 'nhan-dien', behind: 'Logo, màu, quy chuẩn tài liệu chính thức.', fit: 5 },
   { keyword: 'phân quyền học viên và giáo viên', intent: 'thong-tin', page: 'phan-quyen', behind: 'Mỗi vai trò làm được gì trong hệ thống.', fit: 4 },
 
+  /* --- Luồng vào lớp 6 trường chất lượng cao --- */
+  { keyword: 'ôn thi vào lớp 6 môn toán', intent: 'huong-dan', page: 'lo-trinh', behind: 'Phụ huynh muốn biết lộ trình ôn từ đâu tới đâu.', fit: 5 },
+  { keyword: 'đề thi vào lớp 6 trường chất lượng cao có đáp án', intent: 'tai-lieu', page: 'de-thi', behind: 'Cần đề đúng định dạng đánh giá năng lực, có lời giải.', fit: 5 },
+  { keyword: 'cấu trúc bài đánh giá năng lực vào lớp 6', intent: 'thong-tin', page: 'cau-truc-de-thi', behind: 'Muốn biết đề gồm mấy phần, bao nhiêu phút, thang điểm nào.', fit: 4 },
+  { keyword: 'các dạng toán thi vào lớp 6', intent: 'thong-tin', page: 'chuyen-de', behind: 'Muốn danh sách dạng bài để biết phải ôn những gì.', fit: 5 },
+  { keyword: 'công thức toán tiểu học lớp 5', intent: 'tai-lieu', page: 'cong-thuc', behind: 'Cần bảng công thức gọn để tra khi làm bài.', fit: 5 },
+  { keyword: 'toán chuyển động lớp 5', intent: 'huong-dan', page: 'bi-kip', behind: 'Muốn cách phân biệt gặp nhau, đuổi kịp và dòng nước.', fit: 5 },
+  { keyword: 'toán suy luận logic lớp 5', intent: 'huong-dan', page: 'bi-kip', behind: 'Muốn phương pháp làm bài bảng đúng/sai.', fit: 4 },
+
   /* --- Thương hiệu --- */
   { keyword: 'math365', intent: 'thuong-hieu', page: 'home', behind: 'Tìm đúng nền tảng đã nghe tên.', fit: 5 },
   { keyword: 'gita365', intent: 'thuong-hieu', page: 'home', behind: 'Tìm tổ chức đứng sau sản phẩm.', fit: 5 },

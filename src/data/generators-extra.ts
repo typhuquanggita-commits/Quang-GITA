@@ -4,7 +4,7 @@ import type { ItemGenerator } from './generators';
 
 /**
  * Bộ sinh đề bổ sung cho các chuyên đề còn thiếu — sau file này, 100% chuyên đề
- * của cả ba luồng đều dựng được bộ phiếu đầy đủ.
+ * của cả các luồng đều dựng được bộ phiếu đầy đủ.
  */
 
 /** [R, độ dài dây, khoảng cách từ tâm tới dây] — đã kiểm chứng R² = d² + (a/2)². */

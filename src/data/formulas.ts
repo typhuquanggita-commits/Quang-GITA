@@ -29,8 +29,8 @@ export interface FormulaGroup {
   id: string;
   name: string;
   strand: StrandId;
-  /** 'thcs' cho luồng vào 10 và chuyên; 10/11/12 cho luồng THPT. */
-  grade: 'thcs' | 10 | 11 | 12;
+  /** 'tieu-hoc' cho luồng vào 6; 'thcs' cho luồng vào 10 và chuyên; 10/11/12 cho luồng THPT. */
+  grade: 'tieu-hoc' | 'thcs' | 10 | 11 | 12;
   tracks: TrackId[];
   topicIds: string[];
   intro: string;
@@ -38,6 +38,73 @@ export interface FormulaGroup {
 }
 
 export const FORMULA_GROUPS: FormulaGroup[] = [
+  /* ==================== TIỂU HỌC — LUỒNG VÀO LỚP 6 ==================== */
+  {
+    id: 'f-l6-so-hoc',
+    name: 'Phân số, số thập phân & tỉ số phần trăm',
+    strand: 'so-hoc',
+    grade: 'tieu-hoc',
+    tracks: ['lop6'],
+    topicIds: ['l6-phan-so-thap-phan', 'l6-ti-so-phan-tram'],
+    intro:
+      'Bộ công cụ nền của mọi câu trong đề vào 6. Không có công thức nào khó, nhưng sai một bước ở đây thì cả câu mất điểm dù cách làm hoàn toàn đúng.',
+    items: [
+      { name: 'Cộng, trừ phân số khác mẫu', expr: 'a/b ± c/d = (a·d ± c·b)/(b·d), rồi rút gọn', use: 'Mọi phép cộng trừ phân số không cùng mẫu.', trap: 'Cộng tử với tử và mẫu với mẫu — lỗi kinh điển.', star: true },
+      { name: 'Nhân, chia phân số', expr: 'a/b × c/d = (a·c)/(b·d);  a/b : c/d = a/b × d/c', use: 'Rút gọn chéo trước khi nhân để tránh số lớn.', trap: 'Đảo ngược số bị chia thay vì số chia.', star: true },
+      { name: 'Tìm phân số của một số', expr: 'm/n của A = A × m : n', use: 'Bài "đã dùng 2/5 số gạo", "bán được 3/4 số vở".', trap: 'Lấy phân số của tổng trong khi đề nói "của số còn lại".', star: true },
+      { name: 'Tìm một số khi biết phân số của nó', expr: 'Nếu m/n của A bằng B thì A = B : m × n', use: 'Bài cho phần và hỏi tổng.', star: true },
+      { name: 'Tỉ số phần trăm của a so với b', expr: 'a : b × 100%', use: 'Bài hỏi "chiếm bao nhiêu phần trăm".', trap: 'Đảo thứ tự a và b.', star: true },
+      { name: 'Tìm giá trị phần trăm', expr: 'p% của A = A × p : 100', use: 'Giảm giá, tiền lãi, tỉ lệ học sinh.', trap: 'Trả lời phần đã giảm trong khi đề hỏi phần còn lại.', star: true },
+      { name: 'Tìm số khi biết p% của nó', expr: 'Nếu p% của A bằng m thì A = m : p × 100', use: 'Bài cho phần trăm và giá trị tương ứng, hỏi tổng.', star: true },
+      { name: 'Tăng a% rồi giảm b%', expr: 'Giá cuối = gốc × (100 + a) : 100 × (100 − b) : 100', use: 'Bài có hai lần thay đổi giá liên tiếp.', trap: 'Cộng trừ trực tiếp hai số phần trăm — sai vì chúng tính trên hai số khác nhau.', star: true },
+      { name: 'Trung bình cộng', expr: 'Trung bình = tổng các số : số các số', use: 'Bài đọc bảng số liệu, bài "trung bình mỗi ngày".', trap: 'Chia sai số phần vì đếm sót một cột.', star: true },
+    ],
+  },
+  {
+    id: 'f-l6-chuyen-dong',
+    name: 'Chuyển động & các bài toán điển hình',
+    strand: 'thuc-te',
+    grade: 'tieu-hoc',
+    tracks: ['lop6'],
+    topicIds: ['l6-toan-chuyen-dong', 'l6-toan-tinh-nguoc'],
+    intro:
+      'Ba mô hình chuyển động chuẩn và bốn bài toán điển hình. Nhớ theo sơ đồ mũi tên và sơ đồ đoạn thẳng thì không bao giờ nhầm cộng với trừ.',
+    items: [
+      { name: 'Quan hệ quãng đường – vận tốc – thời gian', expr: 's = v × t;  v = s : t;  t = s : v', condition: 'Mọi đại lượng phải cùng hệ đơn vị', use: 'Nền của mọi bài chuyển động.', trap: 'Để lẫn phút với giờ trong cùng một phép chia.', star: true },
+      { name: 'Ngược chiều gặp nhau', expr: 't = s : (v₁ + v₂)', use: 'Hai vật đi về phía nhau, đề cho khoảng cách ban đầu.', trap: 'Trừ vận tốc vì nhớ nhầm sang dạng đuổi kịp.', star: true },
+      { name: 'Cùng chiều đuổi kịp', expr: 't = (khoảng cách đầu) : (v₁ − v₂)', condition: 'Vật đuổi phải nhanh hơn', use: 'Một vật xuất phát trước hoặc đã đi được một đoạn.', trap: 'Cộng vận tốc, hoặc quên đổi thời gian đi trước thành quãng đường.', star: true },
+      { name: 'Chuyển động trên dòng nước', expr: 'v xuôi = v thực + v dòng;  v ngược = v thực − v dòng', use: 'Ca nô, thuyền, bè trên sông.', trap: 'Lấy tổng chia đôi rồi trả lời là vận tốc dòng nước.', star: true },
+      { name: 'Hai công thức hệ quả của dòng nước', expr: 'v dòng = (v xuôi − v ngược) : 2;  v thực = (v xuôi + v ngược) : 2', use: 'Đề cho hai vận tốc, hỏi một thành phần.', star: true },
+      { name: 'Tổng – hiệu', expr: 'Số lớn = (tổng + hiệu) : 2;  Số bé = (tổng − hiệu) : 2', use: 'Đề cho tổng và hiệu của hai số.', star: true },
+      { name: 'Tổng – tỉ', expr: 'Giá trị một phần = tổng : (số phần lớn + số phần bé)', use: 'Đề cho tổng và tỉ số.', trap: 'Trả lời giá trị một phần thay vì giá trị đại lượng đề hỏi.', star: true },
+      { name: 'Hiệu – tỉ', expr: 'Giá trị một phần = hiệu : (số phần lớn − số phần bé)', use: 'Đề cho hiệu và tỉ số.', trap: 'Dùng nhầm mẫu số của bài tổng – tỉ.', star: true },
+      { name: 'Tính ngược', expr: 'Đi từ kết quả về đầu, mỗi bước làm phép tính ngược lại', use: 'Đề mô tả chuỗi phép tính rồi cho kết quả cuối.', trap: 'Đi ngược nhưng vẫn dùng đúng phép tính trong đề.', star: true },
+    ],
+  },
+  {
+    id: 'f-l6-hinh-quy-luat',
+    name: 'Hình học tiểu học, dãy số & đếm hình',
+    strand: 'hinh-hoc',
+    grade: 'tieu-hoc',
+    tracks: ['lop6'],
+    topicIds: ['l6-hinh-hoc-tieu-hoc', 'l6-day-so-quy-luat', 'l6-suy-luan-logic'],
+    intro:
+      'Nhóm công thức dễ nhớ nhất nhưng mất điểm nhiều nhất, vì điểm rơi luôn nằm ở chi tiết đề (không nắp, hình ghép, quên cộng 1) chứ không nằm ở công thức.',
+    items: [
+      { name: 'Diện tích tam giác', expr: 'S = a × h : 2', use: 'Mọi tam giác, với h là chiều cao ứng với cạnh a.', trap: 'Quên chia 2; hoặc dùng chiều cao của hình khác trong hình ghép.', star: true },
+      { name: 'Diện tích hình thang', expr: 'S = (a + b) × h : 2', use: 'Hình thang và các hình ghép có một cạnh xiên.', trap: 'Quên chia 2.', star: true },
+      { name: 'Hình tròn', expr: 'C = d × 3,14 = r × 2 × 3,14;  S = r × r × 3,14', use: 'Bài bánh xe, mặt bàn tròn, đường chạy.', trap: 'Dùng đường kính thay bán kính trong công thức diện tích.', star: true },
+      { name: 'Hình hộp chữ nhật', expr: 'S xq = chu vi đáy × chiều cao;  S tp = S xq + 2 × S đáy;  V = a × b × c', use: 'Bể nước, thùng hàng, hộp quà.', trap: 'Tính cả nắp cho bể không nắp.', star: true },
+      { name: 'Hình lập phương', expr: 'S xq = a × a × 4;  S tp = a × a × 6;  V = a × a × a', use: 'Khối rubik, viên xúc xắc, thùng vuông.', star: true },
+      { name: 'Đổi đơn vị thể tích và dung tích', expr: '1 dm³ = 1 lít;  1 m³ = 1000 dm³;  1 dm³ = 1000 cm³', use: 'Bài hỏi bể chứa được bao nhiêu lít nước.', trap: 'Nhân chia sai 1000 lần vì đổi thiếu một bậc.', star: true },
+      { name: 'Thay đổi kích thước', expr: 'Nhân đôi cạnh: diện tích gấp 4, thể tích gấp 8', use: 'Bài "nếu tăng gấp đôi chiều dài thì diện tích thay đổi thế nào".', trap: 'Nghĩ diện tích cũng gấp đôi.' },
+      { name: 'Số số hạng của dãy cách đều', expr: '(số cuối − số đầu) : khoảng cách + 1', use: 'Mọi bài đếm số hạng, đếm cây trồng dọc đường.', trap: 'Quên cộng 1.', star: true },
+      { name: 'Số hạng thứ n', expr: 'số đầu + (n − 1) × khoảng cách', use: 'Bài hỏi số hạng ở vị trí xa.', trap: 'Quên trừ 1.', star: true },
+      { name: 'Tổng dãy cách đều', expr: '(số đầu + số cuối) × số số hạng : 2', use: 'Bài tính tổng một dãy dài.', trap: 'Quên chia 2 sau khi nhân.', star: true },
+      { name: 'Đếm hình chữ nhật trong lưới', expr: 'Số cách chọn 2 trong (m+1) đường ngang × số cách chọn 2 trong (n+1) đường dọc, với số cách chọn 2 trong k đường = k × (k − 1) : 2', use: 'Hình chia lưới ô vuông, hỏi tổng số hình chữ nhật.', trap: 'Chỉ đếm các ô nhỏ, bỏ sót hình ghép.' },
+      { name: 'Cân đĩa tìm vật khác biệt', expr: 'n lần cân phân biệt được tối đa 3ⁿ vật', use: 'Bài cân thăng bằng không dùng quả cân.', trap: 'Chia đôi theo phản xạ thay vì chia ba.' },
+    ],
+  },
   /* ==================== THCS — ĐẠI SỐ ==================== */
   {
     id: 'f-hang-dang-thuc',

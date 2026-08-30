@@ -393,7 +393,7 @@ export default function Brand() {
 
       {/* ---------- Luồng ---------- */}
       <Card className="p-6">
-        <div className="text-sm font-bold text-slate-900">Nhận diện ba luồng</div>
+        <div className="text-sm font-bold text-slate-900">Nhận diện bốn luồng</div>
         <div className="mt-4 grid gap-3 lg:grid-cols-3">
           {Object.entries(BRAND_TRACK_STYLE).map(([id, s]) => (
             <div

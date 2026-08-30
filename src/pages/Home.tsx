@@ -50,8 +50,8 @@ export default function Home() {
 
           <dl className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
-              ['2.000', 'phiếu luyện'],
-              ['2.000', 'nhiệm vụ'],
+              ['2.400', 'phiếu luyện'],
+              ['2.400', 'nhiệm vụ'],
               [stats.items.toLocaleString('vi-VN'), 'câu hỏi có lời giải & phân tích'],
               ['90%', 'KPI chuẩn thăng cấp'],
             ].map(([v, l]) => (
@@ -64,10 +64,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ba luồng */}
+      {/* Bốn luồng */}
       <section>
         <SectionTitle
-          eyebrow="Ba luồng — một hệ thống"
+          eyebrow="Bốn luồng — một hệ thống"
           title="Chọn luồng phù hợp với đích đến của bạn"
           desc="Mỗi luồng có bản đồ kỳ thi riêng, cây chuyên đề riêng và ngân hàng phiếu luyện riêng, nhưng dùng chung một mô thức huấn luyện."
         />
@@ -255,8 +255,8 @@ export default function Home() {
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { label: 'Phiếu luyện', value: '2.000', sub: `${stats.chuyen} chuyên · ${stats.thpt} vào 10 · ${stats.quocGia} THPT` },
-            { label: 'Nhiệm vụ', value: '2.000', sub: 'mỗi nhiệm vụ có KPI và điều kiện mở khoá' },
+            { label: 'Phiếu luyện', value: '2.400', sub: `${stats.chuyen} chuyên · ${stats.thpt} vào 10 · ${stats.quocGia} THPT · ${stats.lop6} vào 6` },
+            { label: 'Nhiệm vụ', value: '2.400', sub: 'mỗi nhiệm vụ có KPI và điều kiện mở khoá' },
             { label: 'Thư mục tài liệu', value: String(folders), sub: `${artifacts} đầu tài liệu bổ trợ` },
             { label: 'Dạng bài tự sinh', value: String(stats.generators), sub: 'mỗi dạng có bảng phân tích chuyên sâu riêng' },
           ].map((s) => (
@@ -276,7 +276,7 @@ export default function Home() {
         <SectionTitle
           eyebrow="Đề mẫu chuẩn cấu trúc"
           title="Đề trọn vẹn theo đúng ma trận từng kỳ thi"
-          desc="Ngoài 2.000 phiếu luyện theo chuyên đề, hệ thống có các đề mẫu hoàn chỉnh dựng đúng cấu trúc thật — đủ số bài, đúng thang điểm, đúng thời gian — kèm lời giải từng bước, barem chấm tới từng 0,25 điểm và bảng phân tích chi tiết cho mọi câu."
+          desc="Ngoài 2.400 phiếu luyện theo chuyên đề, hệ thống có các đề mẫu hoàn chỉnh dựng đúng cấu trúc thật — đủ số bài, đúng thang điểm, đúng thời gian — kèm lời giải từng bước, barem chấm tới từng 0,25 điểm và bảng phân tích chi tiết cho mọi câu."
           right={
             <button className="btn btn-primary text-sm" onClick={() => go('/papers')}>
               Vào kho đề mẫu
