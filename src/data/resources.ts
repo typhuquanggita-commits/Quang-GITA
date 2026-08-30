@@ -5,6 +5,59 @@ import type { Resource } from '@/types';
  * để lấy thông báo tuyển sinh và đề thi bản gốc của mùa thi hiện tại.
  */
 export const RESOURCES: Resource[] = [
+  /* --------- NGUỒN CHO LUỒNG VÀO LỚP 6 --------- */
+  {
+    id: 'r-l6-hanoi-edu',
+    title: 'Sở GD&ĐT Hà Nội — tuyển sinh đầu cấp',
+    type: 'website',
+    tracks: ['lop6'],
+    strands: [],
+    level: 1,
+    official: true,
+    url: 'https://hanoi.edu.vn',
+    description:
+      'Nơi công bố kế hoạch tuyển sinh đầu cấp hằng năm, trong đó có phương án tuyển sinh lớp 6 của các trường THCS chất lượng cao trên địa bàn.',
+    usage:
+      'Kiểm tra mỗi mùa tuyển sinh ba việc: (1) trường mục tiêu năm nay có tuyển bằng bài đánh giá năng lực không, (2) mốc thời gian đăng ký, (3) chỉ tiêu. Mọi ma trận đề trong MATH365 đều phải đối chiếu lại với thông báo của năm dự thi.',
+  },
+  {
+    id: 'r-l6-ulis',
+    title: 'Trường ĐH Ngoại ngữ – ĐHQGHN (THCS Ngoại ngữ)',
+    type: 'website',
+    tracks: ['lop6'],
+    strands: [],
+    level: 1,
+    official: true,
+    url: 'https://ulis.vnu.edu.vn',
+    description:
+      'Trang chính thức của trường, nơi công bố thông báo tuyển sinh lớp 6 và các thông tin về bài đánh giá năng lực.',
+    usage:
+      'Đọc thông báo tuyển sinh của đúng năm dự thi. Không dùng lại thông tin của các năm trước, vì hình thức và nội dung bài đánh giá có thể thay đổi.',
+  },
+  {
+    id: 'r-l6-sgk-toan-5',
+    title: 'Sách giáo khoa Toán 5 (Chương trình GDPT 2018)',
+    type: 'sach',
+    tracks: ['lop6'],
+    strands: ['so-hoc', 'hinh-hoc', 'thuc-te'],
+    level: 1,
+    description:
+      'Chuẩn kiến thức gốc của toàn bộ luồng vào 6. Mọi câu trong đề đánh giá năng lực đều nằm trong phạm vi kiến thức của sách này, chỉ khác ở cách hỏi.',
+    usage:
+      'Dùng làm mốc kiểm tra: nếu một tài liệu ôn thi yêu cầu công cụ ngoài sách này (phương trình, số âm, luỹ thừa cấp hai), hãy cân nhắc — đề vào 6 không cho điểm cách giải ngoài chương trình.',
+  },
+  {
+    id: 'r-l6-so-tay-loi',
+    title: 'Sổ tay lỗi cá nhân (tự lập)',
+    type: 'cong-cu',
+    tracks: ['lop6', 'thpt', 'chuyen', 'thpt-qg'],
+    strands: [],
+    level: 1,
+    description:
+      'Một quyển vở mỏng, mỗi trang ghi một lỗi theo ba dòng: đề hỏi gì — mình đã làm gì — đúng ra phải làm gì.',
+    usage:
+      'Bắt buộc viết bằng lời của chính người học, không chép lời giải mẫu. Với học sinh tiểu học, đây là công cụ hiệu quả nhất và rẻ nhất trong toàn bộ danh sách này.',
+  },
   /* --------- NGUỒN CHÍNH THỨC --------- */
   {
     id: 'r-hanoi-edu',

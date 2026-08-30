@@ -339,6 +339,295 @@ export const LESSON_PLANS: LessonPlan[] = [
       'Thời gian dành cho bài hình tiệm cận kế hoạch chuẩn của đề.',
     ],
   },
+  {
+    id: 'lp-60-vao-6',
+    name: 'Buổi luyện Toán vào lớp 6 · 60 phút',
+    minutes: 60,
+    sheetTypes: ['dang-bai', 'ky-nang'],
+    tracks: ['lop6'],
+    goal:
+      'Học sinh lớp 4–5 thành thạo một dạng toán có lời văn và giữ được hứng thú tới cuối buổi. Với lứa tuổi này, giữ hứng thú là mục tiêu ngang hàng với kiến thức, không phải mục tiêu phụ.',
+    prepare: [
+      'Chọn đúng MỘT dạng cho cả buổi. Trẻ tiểu học không tiếp thu được hai dạng mới trong một buổi 60 phút.',
+      'In phiếu DB của dạng đó và chuẩn bị sẵn giấy nháp kẻ ô để vẽ sơ đồ đoạn thẳng.',
+      'Chuẩn bị hai đề: một đề chuẩn dạng và một đề đã đổi lớp vỏ tình huống nhưng cùng cấu trúc.',
+      'Xem lại sổ tay lỗi của lớp, chọn một lỗi để nhắc lại ngay đầu buổi.',
+    ],
+    blocks: [
+      {
+        minutes: 8,
+        name: 'Khởi động tính nhẩm',
+        purpose: 'Vào nhịp bằng việc dễ, đồng thời giữ kỹ năng tính toán nền không bị mai một.',
+        teacher: [
+          'Đọc 10 phép tính phân số và phần trăm, mỗi phép 20 giây.',
+          'Chữa ngay tại chỗ, chỉ nói đáp số, không giảng.',
+          'Ghi lại số phép mỗi em làm đúng để so với tuần trước.',
+        ],
+        student: ['Làm nhanh vào bảng con hoặc vở nháp.', 'Tự chấm và ghi số câu đúng.'],
+        success: 'Cả lớp làm xong 10 phép trong 8 phút và trung bình đúng từ 7 câu trở lên.',
+        pitfall: 'Biến khối này thành giờ giảng lại phân số. Nếu nhiều em sai, ghi lại để dạy ở buổi riêng, đừng dừng buổi này.',
+      },
+      {
+        minutes: 10,
+        name: 'Đọc đề bằng bút chì',
+        purpose: 'Dạy thao tác đọc đề trước khi dạy cách giải — đây là gốc của phần lớn lỗi ở lứa tuổi này.',
+        teacher: [
+          'Chiếu một đề, yêu cầu cả lớp gạch chân số liệu và khoanh tròn câu hỏi cuối.',
+          'Gọi hai em đọc lại đề bằng lời của mình, không nhìn đề.',
+          'Hỏi riêng một câu: "phân số này là của số nào" trước khi cho ai đặt bút tính.',
+        ],
+        student: ['Gạch chân, khoanh tròn trực tiếp trên đề.', 'Kể lại đề bằng lời của mình.'],
+        success: 'Trên đề của mọi học sinh đều có ít nhất ba chỗ được gạch chân hoặc khoanh tròn.',
+        pitfall: 'Bỏ qua khối này vì "đề dễ mà". Đúng ở những đề dễ thì thao tác mới thành phản xạ khi gặp đề khó.',
+      },
+      {
+        minutes: 15,
+        name: 'Làm mẫu một bài — vẽ sơ đồ trước, tính sau',
+        purpose: 'Cho học sinh thấy quy trình đầy đủ, trong đó bước vẽ sơ đồ đứng trước mọi phép tính.',
+        teacher: [
+          'Vẽ sơ đồ đoạn thẳng lên bảng trước, chưa viết một phép tính nào.',
+          'Hỏi cả lớp "nhìn sơ đồ, con thấy phải tìm gì trước" rồi mới viết phép tính đầu tiên.',
+          'Viết lời giải đầy đủ theo chuẩn tiểu học: mỗi phép tính một câu lời giải.',
+        ],
+        student: ['Vẽ lại sơ đồ vào vở.', 'Đọc to câu lời giải trước khi chép phép tính.'],
+        success: 'Vở của học sinh có sơ đồ nằm trước phép tính, không phải sau.',
+        pitfall: 'Giáo viên viết luôn phép tính rồi mới vẽ sơ đồ minh hoạ — làm hỏng đúng thứ tự tư duy cần dạy.',
+      },
+      {
+        minutes: 15,
+        name: 'Học sinh tự làm bài đổi vỏ',
+        purpose: 'Kiểm chứng học sinh nắm cấu trúc dạng chứ không phải thuộc lòng bài mẫu.',
+        teacher: [
+          'Phát đề thứ hai: cùng cấu trúc, khác hoàn toàn bối cảnh.',
+          'Đi quanh lớp, chỉ hỏi ngược "con đang mắc ở bước nào", không giải hộ.',
+          'Ghi lại hai lỗi phổ biến nhất để chữa chung.',
+        ],
+        student: ['Làm độc lập trong im lặng.', 'Giơ tay khi bí quá 2 phút.'],
+        success: 'Ít nhất 60% học sinh vẽ đúng sơ đồ, kể cả khi phép tính còn sai.',
+        pitfall: 'Cho đề y hệt bài mẫu chỉ đổi số. Đổi số không kiểm chứng được gì, phải đổi bối cảnh.',
+      },
+      {
+        minutes: 8,
+        name: 'Chữa chung hai lỗi',
+        purpose: 'Chữa đúng hai lỗi phổ biến nhất, không chữa từng bài.',
+        teacher: [
+          'Viết hai lỗi lên bảng dưới dạng "đề hỏi gì — bạn đã làm gì — đúng ra phải làm gì".',
+          'Không nêu tên học sinh mắc lỗi.',
+          'Yêu cầu cả lớp ghi vào sổ tay lỗi bằng lời của chính mình.',
+        ],
+        student: ['Ghi sổ tay lỗi bằng lời của mình, không chép bảng.'],
+        success: 'Mỗi học sinh có ít nhất một dòng mới trong sổ tay lỗi sau buổi học.',
+        pitfall: 'Chữa hết mọi lỗi. Hai lỗi được nhớ tốt hơn bảy lỗi được nghe.',
+      },
+      {
+        minutes: 4,
+        name: 'Chốt buổi và giao việc',
+        purpose: 'Đóng buổi bằng một câu học sinh tự nói ra, và giao việc vừa sức.',
+        teacher: [
+          'Hỏi "hôm nay con học được cách nhận ra dạng này bằng dấu hiệu gì".',
+          'Giao đúng 3 bài về nhà, không nhiều hơn.',
+          'Khen quá trình cụ thể ("con đã vẽ sơ đồ trước khi tính"), không khen chung chung.',
+        ],
+        student: ['Nói ra một dấu hiệu nhận dạng.', 'Ghi việc về nhà vào sổ.'],
+        success: 'Ít nhất ba học sinh nêu được dấu hiệu nhận dạng bằng lời của mình.',
+        pitfall: 'Giao 10 bài về nhà cho chắc. Ở lứa tuổi này, giao quá tay là cách nhanh nhất làm trẻ chán môn Toán.',
+      },
+    ],
+    homework: [
+      'Ba bài cùng dạng trên hệ thống, làm trong hai buổi khác nhau chứ không làm một lượt.',
+      'Ghi vào sổ tay lỗi mọi câu sai, viết bằng lời của con.',
+      'Mười phút tính nhẩm mỗi ngày, có bấm giờ.',
+    ],
+    evidence: [
+      'Tỉ lệ học sinh vẽ sơ đồ trước khi tính, đếm trực tiếp trên vở.',
+      'Số câu đúng trong phần khởi động tính nhẩm so với tuần trước.',
+      'KPI của phiếu DB cùng dạng trong tuần kế tiếp.',
+    ],
+  },
+  {
+    id: 'lp-90-luyen-de',
+    name: 'Buổi luyện đề tính giờ · 90 phút',
+    minutes: 90,
+    sheetTypes: ['thi', 'on-thi'],
+    tracks: ['thpt', 'chuyen', 'thpt-qg', 'lop6'],
+    goal:
+      'Học sinh làm một đề trong đúng thời gian quy định và tự chấm được theo barem. Mục tiêu của buổi không phải là điểm số mà là dữ liệu: biết chính xác mình mất điểm ở đâu và vì sao.',
+    prepare: [
+      'Chọn đề đúng cấu trúc kỳ thi mục tiêu, in kèm barem nhưng giữ riêng, chưa phát.',
+      'Chuẩn bị đồng hồ đếm ngược hiển thị cho cả lớp thấy.',
+      'Xem lại phổ điểm lần luyện đề trước để biết cần dừng lại ở phần nào khi chữa.',
+      'Bố trí chỗ ngồi giãn cách như phòng thi thật.',
+    ],
+    blocks: [
+      {
+        minutes: 5,
+        name: 'Thiết lập điều kiện phòng thi',
+        purpose: 'Tạo đúng áp lực của phòng thi thật, vì đây chính là biến số buổi này muốn luyện.',
+        teacher: [
+          'Nhắc lại kế hoạch phân bổ thời gian của đề, viết lên bảng.',
+          'Đặt đồng hồ đếm ngược, tuyên bố không giải đáp thắc mắc sau khi bắt đầu.',
+          'Yêu cầu cất toàn bộ tài liệu và điện thoại.',
+        ],
+        student: ['Ghi kế hoạch thời gian lên đầu tờ đề.', 'Cất tài liệu.'],
+        success: 'Mọi học sinh có mốc thời gian ghi trên tờ đề trước khi tính giờ.',
+        pitfall: 'Bắt đầu bấm giờ mà chưa thống nhất kế hoạch phân bổ thời gian — mất đi một nửa giá trị của buổi.',
+      },
+      {
+        minutes: 45,
+        name: 'Làm đề trong im lặng tuyệt đối',
+        purpose: 'Tái tạo điều kiện thi thật, kể cả áp lực khi gặp câu bí.',
+        teacher: [
+          'Không trả lời bất kỳ câu hỏi nào về nội dung đề.',
+          'Đi quanh lớp ghi lại: em nào dừng quá lâu ở câu nào, em nào bỏ trắng, em nào nộp sớm.',
+          'Báo mốc thời gian còn lại ở phút thứ 20 và phút thứ 40.',
+        ],
+        student: ['Làm bài độc lập, tự quản lý thời gian.', 'Khoanh tròn câu bỏ qua để quay lại.'],
+        success: 'Ít nhất 80% học sinh làm hết lượt toàn đề, kể cả khi chưa giải xong mọi câu.',
+        pitfall:
+          'Nhắc bài hoặc gợi ý khi thấy học sinh bí. Việc học sinh tự xoay xở khi bí chính là kỹ năng buổi này cần luyện.',
+      },
+      {
+        minutes: 15,
+        name: 'Tự chấm theo barem',
+        purpose: 'Chuyển học sinh từ vai người làm bài sang vai người chấm bài — góc nhìn thay đổi hoàn toàn.',
+        teacher: [
+          'Phát barem, hướng dẫn chấm từng mốc điểm một, không chấm cảm tính.',
+          'Yêu cầu ghi rõ mất điểm vì lỗi kiến thức, lỗi tính toán hay lỗi trình bày.',
+          'Đi kiểm tra ngẫu nhiên vài bài để chắc học sinh không tự nới tay.',
+        ],
+        student: ['Chấm bài của chính mình theo barem.', 'Phân loại từng chỗ mất điểm theo ba nhóm nguyên nhân.'],
+        success: 'Mỗi bài có bảng phân loại nguyên nhân mất điểm, không chỉ có con số điểm.',
+        pitfall: 'Giáo viên chấm hộ. Học sinh tự chấm theo barem học được nhiều hơn nhận lại bài đã chấm.',
+      },
+      {
+        minutes: 20,
+        name: 'Chữa theo phổ lỗi, không chữa tuần tự',
+        purpose: 'Dành thời gian cho câu nhiều người sai nhất, không chữa lần lượt từ câu 1.',
+        teacher: [
+          'Thống kê nhanh trên bảng: câu nào bao nhiêu em sai.',
+          'Chữa ba câu có nhiều lỗi nhất, mỗi câu nói rõ dấu hiệu đọc vị đã bị bỏ qua.',
+          'Các câu còn lại chỉ nêu đáp số và chỉ chỗ tra trong hệ thống.',
+        ],
+        student: ['Ghi lại dấu hiệu đọc vị bị bỏ sót.', 'Đánh dấu chuyên đề cần ôn lại.'],
+        success: 'Ba câu sai nhiều nhất đều được chữa kỹ, và học sinh chỉ ra được dấu hiệu đã bỏ sót.',
+        pitfall: 'Chữa tuần tự từ câu 1 rồi hết giờ ở câu 5 — trong khi câu sai nhiều nhất lại nằm ở cuối đề.',
+      },
+      {
+        minutes: 5,
+        name: 'Chốt và giao lộ trình cá nhân',
+        purpose: 'Biến kết quả đề thành việc cụ thể cho từng em, thay vì một con điểm.',
+        teacher: [
+          'Đối chiếu điểm từng em với dải điểm trong phần đọc điểm của đề.',
+          'Giao đúng một chuyên đề ưu tiên cho mỗi em cho tuần kế tiếp.',
+        ],
+        student: ['Ghi chuyên đề ưu tiên của mình vào sổ.'],
+        success: 'Mỗi học sinh rời lớp với đúng một chuyên đề ưu tiên, không phải một danh sách dài.',
+        pitfall: 'Kết thúc buổi bằng việc đọc điểm cả lớp. Điểm là dữ liệu đầu vào, không phải kết quả của buổi.',
+      },
+    ],
+    homework: [
+      'Làm lại toàn bộ câu sai trên giấy sạch, không nhìn lời giải.',
+      'Làm hai phiếu của chuyên đề ưu tiên được giao.',
+      'Cập nhật sổ tay lỗi, ghi rõ nguyên nhân theo ba nhóm đã phân loại.',
+    ],
+    evidence: [
+      'Phổ điểm của lớp so với lần luyện đề trước.',
+      'Số học sinh làm hết lượt toàn đề trong thời gian quy định.',
+      'Tỉ lệ lỗi trình bày so với lỗi kiến thức — lỗi trình bày phải giảm nhanh nhất.',
+    ],
+  },
+  {
+    id: 'lp-60-phu-dao',
+    name: 'Buổi phụ đạo chữa lỗi · 60 phút',
+    minutes: 60,
+    sheetTypes: ['ky-nang', 'dang-bai'],
+    tracks: ['thpt', 'chuyen', 'thpt-qg', 'lop6'],
+    goal:
+      'Nhóm nhỏ học sinh đang tụt lại xoá được đúng một lỗi hệ thống của mình. Buổi này không dạy kiến thức mới, chỉ chữa một chỗ hỏng và chữa cho dứt điểm.',
+    prepare: [
+      'Lọc sổ tay lỗi của nhóm, chọn đúng MỘT lỗi mà nhiều em cùng mắc.',
+      'Chuẩn bị 6 bài chỉ khác nhau ở chính chỗ gây ra lỗi đó.',
+      'Nhóm tối đa 6 học sinh — đông hơn thì không còn là phụ đạo.',
+      'Chuẩn bị một câu mở đầu không đổ lỗi cho học sinh.',
+    ],
+    blocks: [
+      {
+        minutes: 7,
+        name: 'Gọi tên lỗi, không gọi tên người',
+        purpose: 'Đặt lỗi lên bàn như một đối tượng để cùng xử lý, thay vì như một khuyết điểm cá nhân.',
+        teacher: [
+          'Viết lỗi lên bảng dưới dạng một câu mô tả hành vi, ví dụ "quên đối chiếu điều kiện sau khi giải".',
+          'Nói rõ đây là lỗi phổ biến, không phải dấu hiệu kém.',
+          'Hỏi từng em xem em nghĩ vì sao mình mắc lỗi này.',
+        ],
+        student: ['Nói ra lý do của chính mình.'],
+        success: 'Mọi học sinh trong nhóm phát biểu được một lý do, dù ngắn.',
+        pitfall: 'Bắt đầu bằng "sao em cứ sai chỗ này mãi". Câu đó đóng buổi phụ đạo lại ngay từ phút đầu.',
+      },
+      {
+        minutes: 13,
+        name: 'Xây quy trình chống lỗi',
+        purpose: 'Biến việc "nhớ đừng quên" thành một thao tác cụ thể luôn làm được.',
+        teacher: [
+          'Cùng nhóm viết ra một quy trình 3–4 bước để lỗi đó không thể xảy ra.',
+          'Yêu cầu quy trình phải kiểm chứng được bằng mắt trên tờ giấy, không phải "nhớ kỹ hơn".',
+          'Cho cả nhóm chép quy trình vào trang đầu vở.',
+        ],
+        student: ['Góp ý xây quy trình.', 'Chép quy trình vào trang đầu vở.'],
+        success: 'Quy trình viết ra chỉ gồm các bước quan sát được, không có bước nào là "cẩn thận hơn".',
+        pitfall: 'Giáo viên tự đọc quy trình cho học sinh chép. Quy trình do chính học sinh nói ra mới được dùng thật.',
+      },
+      {
+        minutes: 25,
+        name: 'Luyện sáu bài cùng một chỗ hỏng',
+        purpose: 'Lặp đúng một thao tác đủ nhiều lần để nó thành phản xạ.',
+        teacher: [
+          'Cho làm từng bài một, chấm ngay sau mỗi bài.',
+          'Chỉ chấm bước có chứa lỗi cần chữa, bỏ qua các lỗi khác trong buổi này.',
+          'Sau bài thứ ba, yêu cầu học sinh tự đọc lại quy trình trước khi làm bài thứ tư.',
+        ],
+        student: ['Làm từng bài, tự soát theo quy trình trước khi nộp.'],
+        success: 'Từ bài thứ tư trở đi, không còn em nào mắc đúng lỗi đó.',
+        pitfall:
+          'Chấm cả những lỗi khác trong buổi này. Chữa nhiều lỗi cùng lúc là lý do phổ biến khiến buổi phụ đạo không đọng lại gì.',
+      },
+      {
+        minutes: 10,
+        name: 'Kiểm chứng bằng bài lạ',
+        purpose: 'Xác nhận học sinh đã chữa được lỗi chứ không phải quen với bối cảnh quen thuộc.',
+        teacher: [
+          'Phát một bài khác hẳn bối cảnh nhưng vẫn có đúng cái bẫy cũ.',
+          'Không nhắc gì trước khi phát.',
+          'Chấm ngay và công bố kết quả cho từng em.',
+        ],
+        student: ['Làm bài kiểm chứng, tự soát theo quy trình.'],
+        success: 'Ít nhất 5 trên 6 học sinh vượt qua bẫy ở bài kiểm chứng.',
+        pitfall: 'Nhắc trước "chú ý điều kiện nhé". Nhắc trước thì bài kiểm chứng không còn kiểm chứng được gì.',
+      },
+      {
+        minutes: 5,
+        name: 'Chốt cam kết',
+        purpose: 'Neo quy trình vào việc học hằng ngày, không để nó chỉ sống trong buổi phụ đạo.',
+        teacher: [
+          'Yêu cầu mỗi em nói ra khi nào sẽ dùng quy trình này trong tuần tới.',
+          'Hẹn kiểm tra lại đúng lỗi này sau một tuần.',
+        ],
+        student: ['Nói ra thời điểm cụ thể sẽ áp dụng.'],
+        success: 'Mỗi học sinh nêu được một thời điểm cụ thể, không nói chung chung "em sẽ cố".',
+        pitfall: 'Không hẹn kiểm tra lại. Lỗi hệ thống chỉ mất hẳn khi được kiểm tra lại ít nhất một lần.',
+      },
+    ],
+    homework: [
+      'Bốn bài cùng chứa bẫy đã chữa, làm rải trong tuần.',
+      'Dán quy trình chống lỗi lên góc bàn học.',
+      'Tự đánh dấu vào sổ mỗi lần áp dụng được quy trình.',
+    ],
+    evidence: [
+      'Tỉ lệ mắc lại đúng lỗi đó trong các phiếu tuần kế tiếp.',
+      'Kết quả bài kiểm chứng cuối buổi.',
+      'Số lần học sinh tự đánh dấu đã áp dụng quy trình.',
+    ],
+  },
 ];
 
 /* ============================================================
@@ -486,6 +775,72 @@ export const TEACHING_MOVES: TeachingMove[] = [
     why: 'Giáo viên trung bình chờ chưa tới 1 giây. Kéo lên 5 giây làm tăng rõ rệt độ dài và chất lượng câu trả lời.',
     avoid: 'Tự trả lời câu hỏi của mình — lớp sẽ học được rằng không cần suy nghĩ, chờ là có đáp án.',
   },
+  {
+    name: 'Chấm mù theo barem',
+    when: 'Sau mỗi bài luyện đề, khi muốn học sinh hiểu barem thay vì chỉ nhận điểm.',
+    how: [
+      'Phát barem và một bài làm ẩn danh (có thể là bài dựng sẵn chứa lỗi điển hình).',
+      'Cho học sinh chấm bài đó theo từng mốc điểm, ghi rõ vì sao cho hoặc không cho điểm.',
+      'So kết quả chấm giữa các nhóm, tranh luận ở chỗ lệch nhau.',
+    ],
+    why: 'Học sinh chỉ thực sự hiểu barem khi phải đứng ở vị trí người chấm. Sau một lần chấm mù, lỗi trình bày giảm rất nhanh.',
+    avoid: 'Dùng bài của một học sinh trong lớp mà không ẩn danh — biến hoạt động học thành sự kiện xấu hổ.',
+  },
+  {
+    name: 'Ba mươi giây đọc vị trước khi giải',
+    when: 'Mọi lúc trước khi cho học sinh bắt tay vào giải một bài mới.',
+    how: [
+      'Chiếu đề, không cho viết gì trong 30 giây.',
+      'Hỏi đúng ba câu: dạng gì, dấu hiệu nào cho biết, đi hướng nào.',
+      'Chỉ sau khi có câu trả lời mới cho đặt bút.',
+    ],
+    why: 'Học sinh yếu thường lao vào tính ngay và đi sai hướng. Ba mươi giây này rẻ hơn nhiều so với năm phút đi lạc.',
+    avoid: 'Rút ngắn xuống 5 giây vì sốt ruột. Dưới 20 giây thì chỉ những em nhanh nhất kịp nghĩ.',
+  },
+  {
+    name: 'Hỏi ngược thay vì giải hộ',
+    when: 'Khi đi quanh lớp và học sinh giơ tay vì bí.',
+    how: [
+      'Hỏi "em đang mắc ở bước nào" thay vì nhìn vào bài rồi chỉ luôn.',
+      'Nếu em không chỉ ra được bước, yêu cầu em đọc to đề cho mình nghe.',
+      'Chỉ gợi ý một bước, rồi đi tiếp, quay lại sau hai phút.',
+    ],
+    why: 'Giải hộ một bài giúp học sinh qua được bài đó; hỏi ngược giúp em qua được cả những bài sau.',
+    avoid: 'Ngồi xuống cạnh một em và giải trọn bài. Vừa mất 10 phút, vừa dạy em ấy rằng cứ giơ tay là có lời giải.',
+  },
+  {
+    name: 'Bảng hai cột: dấu hiệu | hướng đi',
+    when: 'Khi dạy phần đọc vị dạng bài của một chuyên đề.',
+    how: [
+      'Kẻ bảng hai cột trên bảng, cột trái ghi dấu hiệu xuất hiện trong đề, cột phải ghi hướng xử lý.',
+      'Mỗi dạng của chuyên đề là một dòng, do học sinh nói ra chứ không do giáo viên đọc.',
+      'Cuối buổi chụp lại bảng gửi vào nhóm lớp.',
+    ],
+    why: 'Kiến thức nằm rời rạc trong đầu học sinh cho tới khi được xếp thành một bảng có cấu trúc. Bảng này chính là thứ các em nhớ lại trong phòng thi.',
+    avoid: 'Phát sẵn bảng đã điền đầy. Giá trị nằm ở quá trình học sinh tự điền, không nằm ở tờ giấy.',
+  },
+  {
+    name: 'Đếm ngược thời gian công khai',
+    when: 'Mọi hoạt động có tính giờ, đặc biệt ở luồng vào 6 và luồng thi tốt nghiệp.',
+    how: [
+      'Hiển thị đồng hồ đếm ngược cho cả lớp nhìn thấy.',
+      'Báo mốc ở nửa thời gian và ở 5 phút cuối.',
+      'Dừng đúng giờ, kể cả khi nhiều em chưa xong.',
+    ],
+    why: 'Áp lực thời gian là một biến số của kỳ thi và phải được luyện như mọi kỹ năng khác. Học sinh chỉ quen với nó khi được tiếp xúc thường xuyên.',
+    avoid: 'Cho thêm giờ vì thương. Cho thêm giờ ở lớp nghĩa là để học sinh bất ngờ ở phòng thi.',
+  },
+  {
+    name: 'Khen quá trình, không khen năng lực',
+    when: 'Mọi lần ghi nhận học sinh, đặc biệt với học sinh tiểu học.',
+    how: [
+      'Nói rõ hành vi được ghi nhận: "con đã vẽ sơ đồ trước khi tính".',
+      'Tránh các nhãn cố định như "con giỏi Toán", "em có năng khiếu".',
+      'Với học sinh làm sai nhưng làm đúng quy trình, vẫn ghi nhận phần quy trình.',
+    ],
+    why: 'Khen năng lực khiến học sinh né bài khó để giữ nhãn "giỏi". Khen quá trình khiến các em sẵn sàng thử bài khó hơn.',
+    avoid: 'Khen chung chung "giỏi lắm" — không cho học sinh biết cần lặp lại điều gì.',
+  },
 ];
 
 /* ============================================================
@@ -568,6 +923,38 @@ export const FEEDBACK_SCRIPTS: FeedbackScript[] = [
     then: 'Cho thử thật, dùng kết quả làm dữ liệu thay vì tranh luận.',
     never: 'Từ chối thẳng — làm mất động lực và mất luôn cơ hội để em tự nhận ra khoảng cách.',
   },
+  {
+    situation: 'Học sinh lớp 4–5 làm sai nhưng đã vẽ đúng sơ đồ',
+    signal: 'Sơ đồ đoạn thẳng đúng, phép tính sai ở bước cuối.',
+    say:
+      '“Phần khó nhất con đã làm đúng rồi: con nhìn ra được bài này có mấy phần. Chỗ sai nằm ở phép chia thôi, mình sửa lại một chút là xong.”',
+    then: 'Chỉ chữa đúng phép tính sai, giữ nguyên phần sơ đồ để học sinh thấy phần mình làm đúng.',
+    never: 'Gạch cả bài và bảo làm lại từ đầu — xoá mất phần học sinh đã làm đúng và làm em nghĩ mình sai toàn bộ.',
+  },
+  {
+    situation: 'Học sinh mất điểm vì trình bày, không phải vì kiến thức',
+    signal: 'Đáp số đúng nhưng barem trừ điểm do thiếu điều kiện, thiếu câu lời giải hoặc thiếu đơn vị.',
+    say:
+      '“Về Toán em đã đúng. Nhưng bài thi chấm theo barem, mà barem cho điểm ở những dòng em bỏ qua. Đây là loại điểm dễ lấy lại nhất trong toàn bộ đề.”',
+    then: 'Cho làm lại đúng bài đó, chỉ chấm phần trình bày; lặp lại ở hai bài nữa trong tuần.',
+    never: 'Nói “lần sau nhớ ghi đơn vị nhé” rồi thôi. Lỗi trình bày chỉ mất khi được luyện, không mất vì được nhắc.',
+  },
+  {
+    situation: 'Học sinh bỏ trắng câu khó dù còn thời gian',
+    signal: 'Bài nộp còn 10 phút thừa nhưng câu cuối để trắng hoàn toàn.',
+    say:
+      '“Barem chấm theo từng bước, nên viết được bước một vẫn có điểm bước một. Bỏ trắng là cách duy nhất chắc chắn được 0 điểm.”',
+    then: 'Cho em viết lại bước đầu tiên của chính câu đó ngay tại lớp, rồi chỉ ra em vừa kiếm được bao nhiêu điểm.',
+    never: 'Nói “câu đó khó, bỏ cũng được”. Câu nói này khiến học sinh bỏ luôn cả những câu vừa sức ở đề sau.',
+  },
+  {
+    situation: 'Phụ huynh sốt ruột vì con chưa tiến bộ sau một tháng',
+    signal: 'Phụ huynh nhắn hỏi về kết quả, so sánh với bạn cùng lớp.',
+    say:
+      '“Anh/chị xem giúp em ba số này: KPI trung bình, số lỗi lặp lại, và số chuyên đề đã đạt chuẩn. Điểm số dao động theo từng đề, nhưng ba số này cho thấy xu hướng thật, và cả ba đều đang cải thiện.”',
+    then: 'Gửi báo cáo tuần trong hệ thống kèm đúng một việc gia đình có thể hỗ trợ trong tuần tới.',
+    never: 'Hứa một mốc điểm hoặc hứa đỗ. Không ai kiểm chứng được lời hứa đó, và nó sẽ quay lại làm hỏng niềm tin.',
+  },
 ];
 
 /* ============================================================
@@ -637,6 +1024,39 @@ export const CLASS_RITUALS: Ritual[] = [
       'Ghi lại một điều chỉnh cho tuần sau.',
     ],
     why: 'Học sinh rơi rụng không phải trong một buổi, mà qua ba tuần không ai để ý.',
+  },
+  {
+    name: 'Sổ tay lỗi cuối buổi',
+    when: 'Năm phút cuối mọi buổi học',
+    minutes: 5,
+    steps: [
+      'Mỗi học sinh chọn đúng một lỗi mình mắc trong buổi.',
+      'Ghi ba dòng: đề hỏi gì — mình đã làm gì — đúng ra phải làm gì.',
+      'Bắt buộc viết bằng lời của chính mình, không chép bảng.',
+    ],
+    why: 'Lỗi được viết lại bằng ngôn ngữ của chính người mắc thì được nhớ lâu hơn nhiều so với lỗi được nghe giảng.',
+  },
+  {
+    name: 'Một phút dự đoán điểm',
+    when: 'Ngay sau khi nộp bài luyện đề, trước khi biết kết quả',
+    minutes: 1,
+    steps: [
+      'Học sinh viết ra điểm dự đoán của mình lên góc tờ đề.',
+      'Sau khi chấm, so điểm thật với điểm dự đoán.',
+      'Ghi lại độ lệch và nguyên nhân lệch.',
+    ],
+    why: 'Khoảng cách giữa điểm dự đoán và điểm thật đo được mức độ học sinh hiểu chính mình. Khoảng cách này thu hẹp dần là dấu hiệu tiến bộ rõ hơn cả điểm số.',
+  },
+  {
+    name: 'Bảng chuyên đề ưu tiên của tuần',
+    when: 'Đầu mỗi tuần, trong 4 phút',
+    minutes: 4,
+    steps: [
+      'Mỗi học sinh viết tên đúng một chuyên đề ưu tiên lên bảng lớp.',
+      'Giáo viên nhóm các em cùng chuyên đề lại để ghép cặp hỗ trợ.',
+      'Cuối tuần xoá tên những em đã đạt chuẩn chuyên đề đó.',
+    ],
+    why: 'Một chuyên đề ưu tiên tại một thời điểm là nguyên tắc 20/80 áp dụng ở cấp độ tuần. Danh sách dài khiến học sinh làm dàn trải và không dứt điểm được chỗ nào.',
   },
 ];
 
