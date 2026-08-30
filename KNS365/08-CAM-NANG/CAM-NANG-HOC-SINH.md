@@ -145,18 +145,35 @@ Không hỏi vì sợ bị coi là dốt là cách chắc chắn nhất để **
 
 ---
 
-## 7. HỆ ĐAI GITA – EM ĐANG Ở ĐÂU
+## 7. 10 CẤP ĐỘ GEN VIỆT – EM ĐANG Ở ĐÂU
 
-| Đai | Tên | Khối | Điều em phải chứng minh |
-|:--:|---|:--:|---|
-| ⚪ | **Trắng** – Người Khởi Hành | Cuối L2 | Giữ 1 thói quen 21 ngày · dám nói trước lớp |
-| 🟡 | **Vàng** – Người Gieo Hạt | Cuối L3 | 2 thói quen · 1 sản phẩm Showcase |
-| 🟢 | **Xanh Lá** – Người Bén Rễ | Cuối L5 | 1 thói quen 90 ngày · 1 dự án nhóm hoàn chỉnh |
-| 🔵 | **Xanh Dương** – Người Vươn Cành | Cuối L7 | Bản đồ Điểm Mạnh + 1 mũi nhọn · dẫn dắt Squad thành công |
-| 🔴 | **Đỏ** – Người Dẫn Dắt | Cuối L9 | Dự án phụng sự có tác động đo được · kèm cặp 1 đàn em ≥1 học kỳ |
-| 🟨 | **Kim** – Người Cất Cánh | Cuối L12 | Hồ sơ Tài năng + bảo vệ trước hội đồng · dự án có bên thứ ba xác nhận |
+Trong CLB Gen Việt, em đi lên theo **10 Cấp Độ**, mỗi nhóm cấp mang một màu **Pin**. Pin không phải phần thưởng cho em ngoan — nó là **bằng chứng em đã làm được việc gì**.
 
-> **Đai không mua được bằng điểm danh.** Mỗi điều kiện đều cần **bằng chứng vật lý** trong Hộ chiếu GITA của em.
+| Cấp | Pin | Tên cấp | Khối gợi ý | Điều em phải chứng minh |
+|:--:|:--:|---|:--:|---|
+| **1** | ⚪ Trắng | Thành viên làm quen | L1–2 | Đi học ≥50% buổi · thuộc nội quy và 7 giá trị · không vi phạm |
+| **2** | 🟢 Xanh Lá | Thành viên tích cực | L3 | Đi học ≥70% · giữ 1 thói quen đủ **21 ngày** · có 1 sản phẩm Showcase |
+| **3** | 🟢 Xanh Lá *(vững)* | Thành viên có mục tiêu | L4–5 | Có đích năm rõ ràng, bám ≥80% · làm xong 1 dự án nhóm |
+| **4** | 🔵 Xanh Dương | Thành viên nòng cốt | L6–7 | Đạt **◕ B3 – Làm giỏi** ở ≥5/8 mạch · giữ một vai Squad trọn 1 học kỳ |
+| **5** | 🔵 Xanh Dương *(vững)* | Hạt giống phục vụ | L7–8 | Kèm được ≥1 bạn *(bạn ấy xác nhận)* · làm 1 việc phục vụ cộng đồng |
+| **6** | ⚙️ Bạc | Thành viên ban chuyên trách | L8–9 | Đạt B3 trở lên ở ≥6/8 mạch · phụ trách một mảng ≥1 học kỳ |
+| **7** | ⚙️ Bạc *(vững)* | Leader nhóm nhỏ / tiểu ban | L9–10 | Dẫn nhóm ≥5 người đạt mục tiêu · **đào tạo được người thay mình** |
+| **8** | 🟡 Vàng | Trưởng/phó ban | L10–11 | Vận hành một ban trọn nhiệm kỳ · vượt được ≥2 lần khủng hoảng |
+| **9** | 🟡 Vàng *(vững)* | Thủ lĩnh CLB tại đơn vị | L11–12 | Nhiệm kỳ thành công · dự án có **người ngoài trường** xác nhận tác động |
+| **10** | 🏅 Đại sứ | Đại sứ / Thủ lĩnh hệ thống | L12 & sau THPT | Được Hội đồng đề cử · dự án tầm liên trường · có hồ sơ đã đào tạo và cố vấn cho người khác |
+
+**Bốn ô chấm em sẽ thấy trong mỗi buổi học:**
+
+| Ký hiệu | Bậc | Nghĩa |
+|:--:|:--:|---|
+| ◔ | **B1 – Biết** | Em nói lại được, gọi tên được |
+| ◑ | **B2 – Làm đều** | Em làm được khi có người nhắc |
+| ◕ | **B3 – Làm giỏi** | Em làm đúng không cần nhắc, và giải thích được vì sao |
+| ● | **B4 – Tự cháy** | Em tự nâng đích cho mình và kèm lại được bạn |
+
+> **Cấp Độ không mua được bằng điểm danh.** Mỗi điều kiện đều cần **bằng chứng vật lý** trong Hộ chiếu GITA của em.
+>
+> 💡 **Một điều quan trọng em nên biết trước:** nội lực — sức mạnh bên trong — nằm ở **bậc thứ 5**, không phải bậc đầu tiên. Nghĩa là em không cần "có sẵn ý chí" mới bắt đầu được. Em bắt đầu bằng việc **làm được một việc nhỏ và nhìn thấy bằng chứng**; ý chí sẽ đến sau, từ chính đống bằng chứng đó.
 
 ---
 

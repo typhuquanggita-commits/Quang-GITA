@@ -93,7 +93,7 @@ Hầu hết chương trình kỹ năng sống dừng ở **"biết kỹ năng"**
 
 ---
 
-## PHẦN C. HỆ ĐAI GITA – 6 BẬC
+## PHẦN C. 10 CẤP ĐỘ CLB GEN VIỆT – HỆ PIN
 
 | Cấp | Tên cấp | **Pin** | Khối gợi ý | Bậc sâu tối thiểu | Điều kiện công nhận |
 |:--:|---|:--:|:--:|:--:|---|
