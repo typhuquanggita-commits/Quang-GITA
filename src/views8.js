@@ -121,14 +121,31 @@ function manThuVien(T){
   tangs.sort();
   var soCau = T.reduce(function(a,b){ return a + b.cau.length; },0);
   var xong = Object.keys(G.S.test||{}).filter(function(k){ return G.S.test[k] && G.S.test[k].xong; }).length;
+  /* Bản xem thử mở cả năm bài của tầng một nhưng mỗi bài rút còn sáu
+     câu. Nói thẳng con số ấy ngay đầu màn: người xem thử phải biết mình
+     đang cầm bản rút, và người đã đăng nhập phải biết mình cầm bản đủ. */
+  var rut = T.filter(function(b){ return b.mau && b.soCauThat > b.cau.length; });
+  var soCauThat = T.reduce(function(a,b){ return a + (b.soCauThat || b.cau.length); },0);
 
   var o = U.ph({eyebrow:'NHÓM 02 · NHẬN DIỆN', ic:'target', grad:1, t:'Bộ test nhận diện năm tầng',
     lead:'Năm nhóm bài cho mỗi tầng. Mỗi câu có bốn lựa chọn, mỗi lựa chọn ứng với một mức và một nhóm khách hàng. '+
     'Bài này không xếp loại ai — nó chỉ nói cho cả nhà biết mình đang đứng ở đâu, để gửi đúng lộ trình và đúng tài liệu.'});
 
+  if(rut.length)
+    o += '<div class="card mb" style="border-color:var(--alert);background:rgba(251,146,60,.06)">'+
+      '<div class="row" style="gap:10px;align-items:flex-start">'+
+      '<span style="color:var(--alert);flex:none">'+ic('shield','w-4 h-4')+'</span>'+
+      '<div style="flex:1"><b class="sm">Bản xem thử — '+rut.length+' bài, mỗi bài rút còn '+
+      rut[0].cau.length+' trong '+rut[0].soCauThat+' câu</b>'+
+      '<p class="tiny mt" style="line-height:1.7;color:var(--ink-2)">'+
+      'Sáu câu này trải đủ '+rut[0].mien.length+' miền đo nên chấm thử vẫn ra nhóm và ra cảnh báo, '+
+      'nhưng điểm đo trên sáu câu KHÔNG dùng để kết luận về một gia đình thật. '+
+      'Đăng nhập bằng tài khoản đã được cấp phép tầng là mở đủ '+soCauThat+' câu của '+T.length+' bài, '+
+      'và kết quả mới được ghi vào hồ sơ nhà mình.</p></div></div></div>';
+
   o += '<div class="grid g4 mb">'+
     U.stat({k:'Bộ bài',   v:String(T.length),   d:'năm nhóm mỗi tầng', c:'#185AB4'})+
-    U.stat({k:'Câu hỏi',  v:String(soCau),      d:'mỗi câu bốn lựa chọn', c:'#5140B4'})+
+    U.stat({k:'Câu hỏi',  v:String(soCau),      d:rut.length ? 'bản rút · đủ là '+soCauThat+' câu' : 'mỗi câu bốn lựa chọn', c:'#5140B4'})+
     U.stat({k:'Lựa chọn', v:String(soCau*4),    d:'đã quy ước mức điểm', c:'#0B6675'})+
     U.stat({k:'Đã làm',   v:String(xong),       d:'bài trong máy này', c:'#0B7350'})+
     '</div>';
@@ -158,7 +175,9 @@ function manThuVien(T){
     var c = tierColor(b.tang), r = G.S.test[b.ma];
     return '<button class="card lift" data-test="'+h(b.ma)+'" data-f="'+h(b.tang)+'" style="text-align:left;border-color:'+c+'22">'+
       '<div class="row wrap" style="gap:7px;margin-bottom:8px">'+U.chip(b.tang,c)+U.chip('Bài '+b.bo)+
-      '<span class="tiny muted">'+b.cau.length+' câu · '+b.phut+' phút · '+h(b.ai)+'</span>'+
+      '<span class="tiny muted">'+b.cau.length+(b.mau && b.soCauThat > b.cau.length ? '/'+b.soCauThat : '')+
+        ' câu · '+b.phut+' phút · '+h(b.ai)+'</span>'+
+      (b.mau && b.soCauThat > b.cau.length ? U.chip('bản rút','#FB923C') : '')+
       (r && r.xong ? '<span class="chip" style="color:'+r.nhom.color+';border-color:'+r.nhom.color+'40;background:'+r.nhom.color+'1a">'+h(r.nhom.code)+' · '+r.diem+'</span>' : '')+
       '</div>'+
       '<b class="sm" style="display:block;line-height:1.4;margin-bottom:6px;color:'+c+'">'+h(b.ten)+'</b>'+
@@ -233,6 +252,17 @@ function manKetQua(b, kq){
 
   o += U.ph({eyebrow:'KẾT QUẢ · '+b.tang+' · BÀI '+b.bo, ic:'crown', grad:1, t:b.ten,
     lead:b.ra});
+
+  /* Điểm chấm trên bản rút phải tự khai là điểm trên bản rút. Một con
+     số ba chữ số nằm trong vòng tròn màu trông y hệt nhau dù đằng sau
+     là sáu câu hay ba mươi câu — nên chỗ nói ra sự khác biệt ấy phải
+     nằm ngay trên con số, không nằm dưới chân trang. */
+  if(b.mau && b.soCauThat > b.cau.length)
+    o += '<div class="card mb" style="border-color:var(--alert);background:rgba(251,146,60,.06)">'+
+      '<p class="tiny" style="line-height:1.7;color:var(--ink-2)"><b>Điểm này chấm trên '+
+      b.cau.length+' câu, bài đủ có '+b.soCauThat+' câu.</b> Đủ để thấy cách chấm và cách phân nhóm, '+
+      'không đủ để kết luận về một gia đình thật — sáu câu thì mỗi miền chỉ có một câu, '+
+      'trả lời lệch một câu là miền đó lệch cả miền. Kết quả này không ghi vào hồ sơ.</p></div>';
 
   o += '<div class="card" style="border-color:'+n.color+'44;background:'+n.color+'0d">'+
     '<div class="row wrap" style="gap:20px;align-items:center">'+

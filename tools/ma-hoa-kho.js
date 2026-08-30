@@ -312,6 +312,23 @@ const MO_RA = [
      bắt buộc của từng kho và số bản ghi phải có — đưa vào gói mẫu công khai
      là vẽ sẵn bản đồ kho cho người chưa được cấp phép. Nó ở gói NỀN. */
 ];
+/* Sáu câu trải đều các miền, không phải sáu câu đầu: sáu câu đầu của
+   một bài ba mươi câu thường rơi hết vào miền thứ nhất, nên bản xem thử
+   chấm ra một miền có điểm và bốn miền trống. Lấy mỗi miền một câu
+   trước, còn chỗ thì bù thêm theo thứ tự gốc. */
+function cauMau(b) {
+  const ra = [], da = new Set();
+  for (const m of b.mien) {
+    const c = b.cau.find(x => x.mien === m);
+    if (c) { ra.push(c); da.add(c.id); }
+  }
+  for (const c of b.cau) {
+    if (ra.length >= Math.max(6, b.mien.length)) break;
+    if (!da.has(c.id)) { ra.push(c); da.add(c.id); }
+  }
+  return b.cau.filter(c => da.has(c.id));   /* giữ nguyên thứ tự gốc */
+}
+
 const mau = {
   ...Object.fromEntries(MO_RA.map(k => [k, G[k]]).filter(([, v]) => v !== undefined)),
   KICHBAN: (G.KICHBAN || []).filter(k => k.tang === 'T1').slice(0, 8)
@@ -328,9 +345,20 @@ const mau = {
       ...d, tc: i === 0 ? d.tc : d.tc.map(() => '[Tiêu chí mở khi được cấp phép]')
     }))
   },
-  /* Một bài test rút gọn, đủ để thấy cách chấm và cách phân nhóm. */
-  TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1').slice(0, 1)
-    .map(b => ({ ...b, mau: true, cau: b.cau.slice(0, 6) }))
+  /* CẢ NĂM bài của tầng một, mỗi bài rút còn sáu câu.
+     Trước đây chỗ này chỉ mở MỘT bài. Hậu quả: đường vào sáu bước hứa ở
+     bước ba là "làm bài test đánh giá" và màn test tự giới thiệu là "năm
+     nhóm bài cho mỗi tầng", nhưng người mở bản xem thử chỉ thấy đúng một
+     thẻ. Lời hứa và màn hình nói khác nhau ngay ở bước người lạ gặp đầu
+     tiên — và người xem kết luận là phần năm bài không tồn tại.
+
+     Mở tên, miền đo, mức phân nhóm và sáu câu của mỗi bài: đủ để thấy
+     hình dạng cả năm bài và chấm thử được. Ba mươi câu trên bảy trăm
+     năm mươi là 4% — kho câu hỏi vẫn nằm trong gói tầng đã mã hoá.
+     soCauThat đi kèm để màn hình nói đúng đây là bản rút, không để
+     người xem tưởng bài thật chỉ có sáu câu. */
+  TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')
+    .map(b => ({ ...b, mau: true, soCauThat: b.cau.length, cau: cauMau(b) }))
 };
 fs.writeFileSync(path.join(RA, 'mau.json'), JSON.stringify(mau));
 

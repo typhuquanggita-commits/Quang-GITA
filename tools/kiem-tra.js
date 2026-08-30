@@ -4061,6 +4061,123 @@ const { chromium } = require(PW);
     }
   }
 
+  /* ═══════════ 41 · CỬA TRƯỚC CHO NGƯỜI CHƯA CÓ TÀI KHOẢN ═══════════
+     Anh Quang kể hành trình của anh Hoàng — người lạ tình cờ biết tới
+     GITA365, tò mò vào xem, rồi mới đăng ký và làm năm bài đánh giá —
+     và hỏi phần giao diện ấy đâu. Đo lại thì ra hai chỗ hụt thật:
+
+       · màn đăng nhập không có nút nào cho người CHƯA có tài khoản
+         nhìn vào; màn giới thiệu và màn đường vào sáu bước đều đã dựng
+         xong nhưng nằm SAU tường đăng nhập;
+       · bản xem thử chỉ mở MỘT bài test trong khi cả lời hứa ở bước ba
+         lẫn màn test đều nói năm bài.
+
+     Mục này khoá cả hai chỗ ấy lại, và khoá luôn điều kiện đi kèm: mở
+     cửa trước KHÔNG được kéo theo một chữ nào của kho nghề. */
+  console.log('\n41 · CỬA TRƯỚC CHO NGƯỜI CHƯA CÓ TÀI KHOẢN');
+  {
+    const fs41 = require('fs'), px41 = require('path');
+    const goc41 = px41.join(__dirname, '..');
+    const mau41 = JSON.parse(fs41.readFileSync(px41.join(goc41, 'kho', 'mau.json'), 'utf8'));
+
+    /* ── Gói công khai mang đủ năm bài của tầng một ── */
+    const t1 = (mau41.TEST750 || []).filter(b => b.tang === 'T1');
+    bao(t1.length === 5,
+      'gói công khai mang đủ NĂM bài của tầng một — trước đây chỉ có một, nên người xem kết luận là phần năm bài không tồn tại',
+      t1.length + '/5 bài');
+    bao(t1.length === 5 && ['A', 'B', 'C', 'D', 'E'].every(x => t1.some(b => b.bo === x)),
+      'đủ cả năm mã bài A B C D E — thiếu một mã là thiếu một miền đo, không phải thiếu một thẻ',
+      t1.map(b => b.bo).sort().join(''));
+    bao(t1.length > 0 && t1.every(b => b.mau === true && b.soCauThat > b.cau.length),
+      'mỗi bài trong gói công khai đều tự khai là BẢN RÚT và khai số câu thật — không để người xem tưởng bài thật chỉ có sáu câu',
+      t1.length ? t1[0].cau.length + '/' + t1[0].soCauThat + ' câu mỗi bài' : '—');
+    /* Sáu câu đầu của một bài ba mươi câu thường rơi hết vào miền thứ
+       nhất; chấm thử khi ấy ra một miền có điểm và năm miền trống. */
+    bao(t1.length > 0 && t1.every(b => new Set(b.cau.map(c => c.mien)).size === b.mien.length),
+      'câu mẫu trải đủ mọi miền đo của bài — chấm thử phải ra đủ miền, không ra một miền có điểm và năm miền trống',
+      t1.length ? t1[0].mien.length + ' miền đều có câu' : '—');
+    const cauMo = (mau41.TEST750 || []).reduce((a, b) => a + b.cau.length, 0);
+    const cauThat = (mau41.TEST750 || []).reduce((a, b) => a + (b.soCauThat || b.cau.length), 0);
+    bao(cauMo <= 40 && cauMo < cauThat * 0.3,
+      'kho câu hỏi vẫn khoá — gói công khai chỉ mở phần rất nhỏ',
+      cauMo + ' câu mở / 750 câu toàn bộ = ' + (cauMo / 750 * 100).toFixed(1) + '%');
+    bao(!(mau41.TEST750 || []).some(b => b.tang !== 'T1'),
+      'gói công khai KHÔNG mở bài của tầng hai trở lên — tầng trên là nội dung đã trả phí',
+      [...new Set((mau41.TEST750 || []).map(b => b.tang))].join(' ') || '—');
+
+    /* ── Bước ba của đường vào phải khớp dữ liệu test thật ── */
+    const b3 = (mau41.DV_BUOC || []).filter(x => x.ma === 'B3')[0];
+    const noiNamBai = b3 && /năm bài/i.test(b3.lam || '');
+    bao(!!b3 && noiNamBai,
+      'bước ba của đường vào nói đúng NĂM bài — trước đây nó nói "bài A, bài B, thêm bài C" trong khi dữ liệu có năm bài',
+      b3 ? (noiNamBai ? 'khớp' : 'còn nói khác: ' + String(b3.lam).slice(0, 60)) : 'không có bước ba');
+    bao(!!b3 && t1.length > 0 && b3.lau.indexOf(String(t1.length * t1[0].phut)) >= 0,
+      'thời gian ở bước ba tính đúng từ dữ liệu bài — nói ít hơn thực tế là hẹn sai với gia đình ngay ở lời mời',
+      b3 ? b3.lau.slice(0, 46) : '—');
+    /* Nút chấm chỉ mở khi trả lời ĐỦ câu (views8.js). Bước ba từng hứa
+       ngưỡng 80%, lỏng hơn cái ứng dụng thật sự làm. */
+    bao(!!b3 && !/80%/.test(b3.chan || '') && /ĐỦ|đủ /.test(b3.chan || ''),
+      'điều kiện chấm ở bước ba khớp với ứng dụng — ứng dụng đòi trả lời ĐỦ câu, lời hứa không được nói ngưỡng lỏng hơn',
+      b3 ? b3.chan.slice(0, 52) : '—');
+
+    /* ── Cửa mở thật trên trình duyệt ── */
+    const p41 = await b.newPage();
+    const loi41 = [];
+    p41.on('pageerror', e => loi41.push(String(e)));
+    await p41.goto(URL, { waitUntil: 'networkidle' });
+
+    const soNut = await p41.locator('[data-act="xem-truoc"]').count();
+    bao(soNut > 0,
+      'màn đăng nhập có cửa cho người CHƯA có tài khoản — mời người ta bước qua cửa thì không được khoá chính cái cửa ấy',
+      soNut + ' lối vào');
+
+    if (soNut) {
+      await p41.locator('[data-act="xem-truoc"]').first().click();
+      await p41.waitForTimeout(1200);
+      const soTab = await p41.locator('[data-ct]').count();
+      bao(soTab === 3, 'cửa trước có đủ ba phần: làm gì · đường vào · năm bài test', soTab + '/3');
+
+      const chuGT = (await p41.locator('#app').innerText()).length;
+      bao(chuGT > 3000,
+        'phần "GITA 365 làm gì" mở ra có ruột thật, không phải một thẻ mời đăng ký',
+        chuGT.toLocaleString('vi-VN') + ' ký tự');
+
+      await p41.locator('[data-ct="duong"]').click(); await p41.waitForTimeout(600);
+      const chuDV = await p41.locator('#app').innerText();
+      bao(chuDV.indexOf('Làm bài test đánh giá') >= 0 && chuDV.length > 4000,
+        'người lạ xem được cả sáu bước đường vào trước khi quyết định đăng ký',
+        chuDV.length.toLocaleString('vi-VN') + ' ký tự');
+
+      await p41.locator('[data-ct="test"]').click(); await p41.waitForTimeout(600);
+      const chuTS = await p41.locator('#app').innerText();
+      bao(['A', 'B', 'C', 'D', 'E'].every(x => chuTS.indexOf('Bài ' + x) >= 0),
+        'người lạ nhìn thấy đủ NĂM bài đánh giá — đây chính là phần anh Quang mở ứng dụng và không thấy',
+        'A B C D E');
+      const nutLam = await p41.locator('[data-test],[data-tlam],[data-txong]').count();
+      bao(nutLam === 0,
+        'người CHƯA đăng ký xem được hình dạng bài nhưng không làm được — bài xong phải có mã gia đình để ghi vào, cho làm rồi vứt kết quả là lấy không của gia đình 75 phút',
+        nutLam + ' nút làm bài');
+
+      /* ── Mở cửa trước KHÔNG được kéo theo kho nghề ── */
+      const ro41 = await p41.evaluate(() => {
+        const G = window.G, ds = ['KICHBAN', 'PHACDO', 'MOTHUC', 'TINHHUONG', 'MATRAN', 'PD_SAU',
+          'TH_SAU', 'NOI_KET', 'QT_NHOM', 'TL_GIADINH', 'MT_RANH', 'MT_SAU', 'HP_TANG', 'HP_KICHBAN',
+          'HD_CHUAN', 'QT_LUONG', 'NLP_GOC', 'KPI100', 'CHUAN1000'];
+        return ds.filter(k => G[k] !== undefined && (!Array.isArray(G[k]) || G[k].length));
+      });
+      bao(!ro41.length,
+        'mở cửa trước KHÔNG kéo theo một chữ nào của kho nghề — cửa trước rộng ra mà kho hở là tệ hơn đóng cả hai',
+        ro41.length ? 'rò: ' + ro41.join(' ') : '19 kho nghề đều vắng mặt');
+
+      await p41.locator('[data-act="ct-dong"]').first().click(); await p41.waitForTimeout(600);
+      const veCong = await p41.locator('#inU').count();
+      bao(veCong === 1, 'quay lại được màn đăng nhập — cửa trước là cửa hai chiều', veCong ? 'về được' : 'kẹt lại');
+    }
+    bao(!loi41.length, 'không lỗi trang nào trong suốt đường đi của người lạ',
+      loi41.length ? loi41[0].slice(0, 90) : '0 lỗi');
+    await p41.close();
+  }
+
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
   await b.close();
   process.exit(loi ? 1 : 0);

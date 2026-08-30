@@ -249,6 +249,7 @@ function tamNhinBanDo(){
     '</div></div>';
 }
 
+G.veCong = function(){ gate(); };
 function gate(){
   var o = '<div id="gate">'+
    '<div class="gate-top"><div class="brand"><span class="mark">'+G.dauGita()+'</span>'+
@@ -267,6 +268,12 @@ function gate(){
     '<p class="lead">'+U.nl(G.L('heroLead'))+'</p>'+
     '<div class="row wrap" style="gap:10px">'+
       '<button class="btn pri" data-act="scroll-login">'+ic('arrow')+h(G.L('heroBtn1'))+'</button>'+
+      /* Cửa cho người CHƯA có tài khoản. Hai nút cũ đều dẫn vào ô mật
+         khẩu — không nút nào trả lời câu hỏi đầu tiên của một người
+         lạ: chỗ này làm gì, tôi có đúng chỗ không. Đặt trước nút tài
+         khoản thử vì thứ tự nút là thứ tự người ta đọc, và người lạ
+         đông hơn người đến để xem bảng tài khoản nội bộ. */
+      '<button class="btn ghost" data-act="xem-truoc">'+ic('compass')+h(G.L('heroBtn3'))+'</button>'+
       '<button class="btn ghost" data-act="show-accounts">'+ic('users')+h(G.L('heroBtn2'))+'</button></div>'+
     '</div>'+
 
@@ -284,6 +291,7 @@ function gate(){
        'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none">'+
        '<button class="btn pri blk mt" data-act="do-login">'+ic('arrow')+h(G.L('login'))+'</button>'+
        '<button class="btn ghost blk mt" data-act="mo-dang-ky">'+ic('plus')+h(G.L('signUp'))+'</button>'+
+       '<button class="btn ghost blk mt" data-act="xem-truoc" style="font-size:12.5px">'+h(G.L('heroBtn3'))+'</button>'+
        '<button class="btn ghost blk mt" data-act="quen-mk" style="font-size:12.5px">'+h(G.L('forgot'))+'</button>'+
        '<p class="tiny muted mt center">'+h(G.L('auditorsNote'))+'</p>'+
      '</div></div></div></div>';
@@ -861,6 +869,7 @@ on('[data-pq]', function(el){
   G.doiO(p[0], p[1]);
 });
 on('[data-lang]', function(el){ G.setLang(el.getAttribute('data-lang')); });
+on('[data-ct]', function(el){ G.doiPhanCuaTruoc(el.getAttribute('data-ct')); });
 on('[data-v]', function(el){ G.go(el.getAttribute('data-v')); });
 on('[data-go]', function(el){ document.getElementById('cmd').classList.remove('on'); G.go(el.getAttribute('data-go')); });
 on('[data-grp]', function(el){
@@ -991,6 +1000,8 @@ on('[data-act]', function(el){
   if(a==='mc-gui') return G.guiMinhChung();
   if(a==='kt-lam') return G.lamViecTaiKhoan();
   if(a==='kt-xoa-that') return G.xoaTaiKhoanThat(el);
+  if(a==='xem-truoc') return G.moCuaTruoc();
+  if(a==='ct-dong') return G.dongCuaTruoc();
   if(a==='mo-dang-ky') return G.moDangKy();
   if(a==='gui-dang-ky') return G.guiDangKy();
   if(a==='gui-otp') return G.guiOTP();
