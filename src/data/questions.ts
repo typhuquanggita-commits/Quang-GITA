@@ -1,5 +1,8 @@
 import type { Question } from '@/types';
 import { QUESTIONS_EXTRA } from './questions-extra';
+import { QUESTIONS_L6 } from './questions-l6';
+import { QUESTIONS_THCS2 } from './questions-thcs2';
+import { QUESTIONS_QG2 } from './questions-qg2';
 
 /**
  * Ngân hàng bài tập có lời giải chi tiết.
@@ -549,7 +552,7 @@ const QUESTIONS_CORE: Question[] = [
   },
 ];
 
-export const QUESTIONS: Question[] = [...QUESTIONS_CORE, ...QUESTIONS_EXTRA];
+export const QUESTIONS: Question[] = [...QUESTIONS_CORE, ...QUESTIONS_EXTRA, ...QUESTIONS_L6, ...QUESTIONS_THCS2, ...QUESTIONS_QG2];
 
 export const questionById = (id: string) => QUESTIONS.find((q) => q.id === id);
 export const questionsByTopic = (topicId: string) => QUESTIONS.filter((q) => q.topicId === topicId);

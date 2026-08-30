@@ -190,7 +190,7 @@ const TOPICS_10: Topic[] = [
     ],
     prerequisites: ['ds-can-thuc'],
     keyFormulas: ['b² = ab′ và c² = ac′', 'h² = b′c′', 'a·h = b·c', 'sin²α + cos²α = 1'],
-    questionIds: [],
+    questionIds: ['q-htl-01', 'q-htl-02'],
   },
   {
     id: 'ds-viete-khong-doi-xung',
@@ -224,7 +224,7 @@ const TOPICS_10: Topic[] = [
     ],
     prerequisites: ['ds-viete'],
     keyFormulas: ['ax₁² + bx₁ + c = 0 nên ax₁² = −bx₁ − c', 'S = −b/a và P = c/a'],
-    questionIds: [],
+    questionIds: ['q-vkdx-01', 'q-vkdx-02'],
   },
   {
     id: 'tt-cuc-tri-thuc-te',
@@ -258,7 +258,7 @@ const TOPICS_10: Topic[] = [
     ],
     prerequisites: ['ds-toan-loi-van', 'bdt-co-ban'],
     keyFormulas: ['x + y ≥ 2√(xy), dấu bằng khi x = y', 'xy ≤ (x + y)²/4', 'Đỉnh parabol: x = −b/(2a)'],
-    questionIds: [],
+    questionIds: ['q-ctt-01', 'q-ctt-02'],
   },
   {
     id: 'hh-duong-tron-co-ban',
@@ -374,7 +374,7 @@ const TOPICS_10: Topic[] = [
     ],
     pitfalls: ['Đếm sót/đếm trùng kết quả.', 'Nhầm tần số với tần số tương đối.'],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-tk-01', 'q-tkxs-01', 'q-tkxs-02'],
   },
   {
     id: 'ds-ptvt',
@@ -564,7 +564,7 @@ const TOPICS_10: Topic[] = [
     techniques: ['[x] ≤ x < [x] + 1; [x + n] = [x] + n với n nguyên.', 'Chứng minh dãy nguyên bằng quy nạp theo hai bước liên tiếp.'],
     pitfalls: ['Nhầm [x] với làm tròn.', 'Quy nạp thiếu số bước cơ sở khi hệ thức truy hồi bậc hai.'],
     prerequisites: ['sh-chia-het'],
-    questionIds: [],
+    questionIds: ['q-sh-07', 'q-pn-01', 'q-pn-02'],
   },
 
   /* ================= HÌNH HỌC CHUYÊN ================= */
@@ -720,7 +720,7 @@ const TOPICS_10: Topic[] = [
     ],
     pitfalls: ['Áp dụng cực hạn cho tập vô hạn không có phần tử nhỏ nhất.', 'Phủ định mệnh đề sai khi phản chứng.'],
     prerequisites: ['th-bat-bien'],
-    questionIds: [],
+    questionIds: ['q-th-04', 'q-ch-01', 'q-ch-02'],
   },
 
   /* ================= BĐT NÂNG CAO ================= */
@@ -777,7 +777,7 @@ const TOPICS_10: Topic[] = [
       'Trình bày lộn xộn khiến giám khảo không tìm được ý.',
     ],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-kn-01'],
   },
   {
     id: 'ky-nang-quan-ly-thoi-gian',
@@ -797,7 +797,7 @@ const TOPICS_10: Topic[] = [
     ],
     pitfalls: ['Sa lầy vào một ý khó quá 15 phút.', 'Làm tuần tự cứng nhắc dù bài sau dễ hơn.'],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-kn-02'],
   },
 ];
 

@@ -48,7 +48,7 @@ export const TOPICS_L6: Topic[] = [
       'a/b : c/d = a/b × d/c',
       'Thứ tự: ngoặc → nhân chia → cộng trừ, trái sang phải',
     ],
-    questionIds: [],
+    questionIds: ['q-l6-01', 'q-l6-02'],
   },
   {
     id: 'l6-ti-so-phan-tram',
@@ -84,7 +84,7 @@ export const TOPICS_L6: Topic[] = [
       'Tìm a biết p% của a bằng m: a = m : p × 100',
       'Tăng a% rồi giảm b%: giá trị cuối = gốc × (1 + a/100) × (1 − b/100)',
     ],
-    questionIds: [],
+    questionIds: ['q-l6-03', 'q-l6-04'],
   },
   {
     id: 'l6-toan-chuyen-dong',
@@ -121,7 +121,7 @@ export const TOPICS_L6: Topic[] = [
       'Cùng chiều: t đuổi kịp = khoảng cách đầu : (v₁ − v₂)',
       'v xuôi − v ngược = 2 × v dòng nước',
     ],
-    questionIds: [],
+    questionIds: ['q-l6-05', 'q-l6-06'],
   },
   {
     id: 'l6-toan-tinh-nguoc',
@@ -157,7 +157,7 @@ export const TOPICS_L6: Topic[] = [
       'Tổng – tỉ: giá trị một phần = tổng : (số phần lớn + số phần bé)',
       'Hiệu – tỉ: giá trị một phần = hiệu : (số phần lớn − số phần bé)',
     ],
-    questionIds: [],
+    questionIds: ['q-l6-07', 'q-l6-08'],
   },
   {
     id: 'l6-hinh-hoc-tieu-hoc',
@@ -194,7 +194,7 @@ export const TOPICS_L6: Topic[] = [
       'S hình tròn = r × r × 3,14;  C = d × 3,14',
       'V hình hộp chữ nhật = a × b × c;  S xq = chu vi đáy × chiều cao',
     ],
-    questionIds: [],
+    questionIds: ['q-l6-09', 'q-l6-10'],
   },
   {
     id: 'l6-suy-luan-logic',
@@ -229,7 +229,7 @@ export const TOPICS_L6: Topic[] = [
       'Nguyên tắc bảng: mỗi hàng và mỗi cột chỉ có đúng một dấu ✓',
       'Cân đĩa: n lần cân phân biệt được tối đa 3ⁿ trường hợp',
     ],
-    questionIds: [],
+    questionIds: ['q-l6-11', 'q-l6-12'],
   },
   {
     id: 'l6-day-so-quy-luat',
@@ -266,7 +266,7 @@ export const TOPICS_L6: Topic[] = [
       'Tổng = (số đầu + số cuối) × số số hạng : 2',
       'Số hình chữ nhật trong lưới m × n ô: (số cách chọn 2 đường dọc) × (số cách chọn 2 đường ngang)',
     ],
-    questionIds: [],
+    questionIds: ['q-l6-13', 'q-l6-14'],
   },
   {
     id: 'l6-doc-hieu-du-lieu',
@@ -300,6 +300,6 @@ export const TOPICS_L6: Topic[] = [
     keyFormulas: [
       'Quy trình 4 bước: đọc câu hỏi → lấy dữ kiện → lập sơ đồ bước → tính và soát',
     ],
-    questionIds: [],
+    questionIds: ['q-l6-15', 'q-l6-16'],
   },
 ];

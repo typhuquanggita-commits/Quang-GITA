@@ -34,7 +34,7 @@ export const TOPICS_QG: Topic[] = [
       'Phủ định sai mệnh đề có hai lượng từ.',
     ],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-q10-01', 'q-q10-b01'],
   },
   {
     id: 'q10-bpt-tam-thuc',
@@ -63,7 +63,7 @@ export const TOPICS_QG: Topic[] = [
       'Bỏ sót trường hợp a = 0 khi hệ số chứa tham số.',
     ],
     prerequisites: ['q10-menh-de-tap-hop'],
-    questionIds: [],
+    questionIds: ['q-q10-02', 'q-q10-b02'],
   },
   {
     id: 'q10-ham-so-bac-hai',
@@ -91,7 +91,7 @@ export const TOPICS_QG: Topic[] = [
       'Nhầm dấu khi tính −b/2a.',
     ],
     prerequisites: ['q10-bpt-tam-thuc'],
-    questionIds: [],
+    questionIds: ['q-q10-03', 'q-q10-b03'],
   },
   {
     id: 'q10-he-thuc-luong',
@@ -119,7 +119,7 @@ export const TOPICS_QG: Topic[] = [
     ],
     prerequisites: [],
     keyFormulas: ['a² = b² + c² − 2bc·cosA', 'a/sinA = 2R', 'S = ½ab·sinC'],
-    questionIds: [],
+    questionIds: ['q-q10-04', 'q-q10-b04'],
   },
   {
     id: 'q10-vecto',
@@ -147,7 +147,7 @@ export const TOPICS_QG: Topic[] = [
       'Sai dấu khi áp dụng quy tắc trừ.',
     ],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-q10-05', 'q-q10-b05'],
   },
   {
     id: 'q10-toa-do-phang',
@@ -174,7 +174,7 @@ export const TOPICS_QG: Topic[] = [
       'Quên điều kiện a² + b² − c > 0 để phương trình là đường tròn.',
     ],
     prerequisites: ['q10-vecto'],
-    questionIds: [],
+    questionIds: ['q-q10-06', 'q-q10-b06'],
   },
   {
     id: 'q10-to-hop-newton',
@@ -202,7 +202,7 @@ export const TOPICS_QG: Topic[] = [
     ],
     prerequisites: [],
     keyFormulas: ['C(n,k) = n!/(k!(n−k)!)', 'A(n,k) = n!/(n−k)!'],
-    questionIds: [],
+    questionIds: ['q-q10-07', 'q-q10-b07'],
   },
 
   /* ================= LỚP 11 ================= */
@@ -235,7 +235,7 @@ export const TOPICS_QG: Topic[] = [
     ],
     prerequisites: [],
     keyFormulas: ['sin²x + cos²x = 1', 'sin2x = 2sinx·cosx', 'cos2x = 1 − 2sin²x = 2cos²x − 1'],
-    questionIds: [],
+    questionIds: ['q-q11-01', 'q-q11-b01'],
   },
   {
     id: 'q11-day-so',
@@ -259,7 +259,7 @@ export const TOPICS_QG: Topic[] = [
     ],
     pitfalls: ['Nhầm n với n − 1 trong công thức số hạng tổng quát.', 'Quên trường hợp q = 1 khi tính tổng CSN.'],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-q11-02', 'q-q11-b02'],
   },
   {
     id: 'q11-gioi-han',
@@ -287,7 +287,7 @@ export const TOPICS_QG: Topic[] = [
       'Quên xét giới hạn một bên với hàm cho bởi nhiều công thức.',
     ],
     prerequisites: ['q11-day-so'],
-    questionIds: [],
+    questionIds: ['q-q11-03', 'q-q11-b03'],
   },
   {
     id: 'q11-mu-logarit',
@@ -318,7 +318,7 @@ export const TOPICS_QG: Topic[] = [
     ],
     prerequisites: ['q10-bpt-tam-thuc'],
     keyFormulas: ['a^log_a x = x', 'log_a b = log_c b / log_c a'],
-    questionIds: [],
+    questionIds: ['q-q11-04', 'q-q11-b04'],
   },
   {
     id: 'q11-dao-ham',
@@ -346,7 +346,7 @@ export const TOPICS_QG: Topic[] = [
       'Nhầm giữa “tiếp tuyến tại điểm” và “tiếp tuyến đi qua điểm”.',
     ],
     prerequisites: ['q11-gioi-han'],
-    questionIds: [],
+    questionIds: ['q-q11-05', 'q-q11-b05'],
   },
   {
     id: 'q11-hinh-khong-gian',
@@ -376,7 +376,7 @@ export const TOPICS_QG: Topic[] = [
       'Quên chứng minh chân đường vuông góc trước khi tính.',
     ],
     prerequisites: ['q10-vecto'],
-    questionIds: [],
+    questionIds: ['q-q11-06', 'q-q11-b06'],
   },
   {
     id: 'q11-xac-suat',
@@ -403,7 +403,7 @@ export const TOPICS_QG: Topic[] = [
       'Quên trừ phần giao khi tính xác suất của hợp.',
     ],
     prerequisites: ['q10-to-hop-newton'],
-    questionIds: [],
+    questionIds: ['q-q11-07', 'q-q11-b07'],
   },
 
   /* ================= LỚP 12 ================= */
@@ -437,7 +437,7 @@ export const TOPICS_QG: Topic[] = [
       'Quên loại nghiệm của mẫu trùng nghiệm của tử khi tìm tiệm cận đứng.',
     ],
     prerequisites: ['q11-dao-ham'],
-    questionIds: [],
+    questionIds: ['q-q12-01', 'q-q12-b01'],
   },
   {
     id: 'q12-nguyen-ham-tich-phan',
@@ -467,7 +467,7 @@ export const TOPICS_QG: Topic[] = [
       'Quên hằng số C khi tính nguyên hàm.',
     ],
     prerequisites: ['q11-dao-ham'],
-    questionIds: [],
+    questionIds: ['q-q12-02', 'q-q12-b02'],
   },
   {
     id: 'q12-oxyz',
@@ -497,7 +497,7 @@ export const TOPICS_QG: Topic[] = [
       'Quên chuẩn hoá phương trình mặt cầu về dạng chính tắc trước khi đọc tâm và bán kính.',
     ],
     prerequisites: ['q10-toa-do-phang'],
-    questionIds: [],
+    questionIds: ['q-q12-03', 'q-q12-b03'],
   },
   {
     id: 'q12-thong-ke',
@@ -521,7 +521,7 @@ export const TOPICS_QG: Topic[] = [
     ],
     pitfalls: ['Dùng đầu mút nhóm thay vì trung điểm nhóm.', 'Nhầm phương sai với độ lệch chuẩn.'],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-q12-04', 'q-q12-b04'],
   },
   {
     id: 'q12-xac-suat-co-dieu-kien',
@@ -550,7 +550,7 @@ export const TOPICS_QG: Topic[] = [
       'Quên chuẩn hoá mẫu số khi dùng Bayes.',
     ],
     prerequisites: ['q11-xac-suat'],
-    questionIds: [],
+    questionIds: ['q-q12-05', 'q-q12-b05'],
   },
   {
     id: 'q12-ky-nang-de-moi',
@@ -579,7 +579,7 @@ export const TOPICS_QG: Topic[] = [
       'Điền đáp án Phần III sai định dạng (số thập phân, đơn vị).',
     ],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-q12-06', 'q-q12-b06'],
   },
   {
     id: 'q-top1-tong-ket',
@@ -606,6 +606,6 @@ export const TOPICS_QG: Topic[] = [
       'Chỉ ôn trước kỳ thi lớn, bỏ trống giai đoạn giữa.',
     ],
     prerequisites: [],
-    questionIds: [],
+    questionIds: ['q-q12-07', 'q-q12-b07'],
   },
 ];
