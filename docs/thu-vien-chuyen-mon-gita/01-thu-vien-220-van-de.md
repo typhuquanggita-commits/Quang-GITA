@@ -1,5 +1,12 @@
 # 01 · THƯ VIỆN 220 VẤN ĐỀ & PHÁC ĐỒ
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`phac-do/README.md`](phac-do/README.md) — **220 phác đồ đầy đủ** — 11 tệp theo nhóm, mỗi vấn đề một phác đồ 16 lớp dùng được tại buổi Review.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 > **Bộ này còn là nguồn nội dung SEO chính của Học viện.** Mỗi phác đồ chuyển được thành một
 > bài viết trả lời đúng một truy vấn thật của phụ huynh — xem
 > [`../seo-va-hien-dien-so/01-nguoi-tim-kiem-va-tu-khoa.md`](../seo-va-hien-dien-so/01-nguoi-tim-kiem-va-tu-khoa.md) §2.

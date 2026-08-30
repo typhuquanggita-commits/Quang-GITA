@@ -1,5 +1,12 @@
 # 11 · HỆ THỐNG DI CHUYỂN
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`21-van-hanh-hien-truong.md`](21-van-hanh-hien-truong.md) — **Vận hành hiện trường** — tổ chức, hậu cần, di chuyển gộp trong một tài liệu tác nghiệp.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 ## 1. Nguyên tắc
 
 1. **Di chuyển là khoảng thời gian rủi ro cao nhất của cả trại** — trẻ ra khỏi khuôn viên có kiểm soát,

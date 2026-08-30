@@ -1,5 +1,12 @@
 # 02 · KHUNG NĂNG LỰC HỢP NHẤT — 18 NĂNG LỰC
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`11-rubric-hanh-vi-18x5.md`](11-rubric-hanh-vi-18x5.md) — **Rubric 90 ô** — mô tả hành vi quan sát được cho 18 năng lực × 5 cấp, kèm bằng chứng chấp nhận được.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 Hệ thống trước đây có hai khung năng lực chạy song song. Đây là **bản chuẩn duy nhất**:
 18 năng lực của hệ GITA 365, được **nhóm lại theo bốn trụ G-I-T-A** và ánh xạ sang
 Chương trình GDPT 2018 và CASEL để dùng được cả trong báo cáo nội bộ lẫn hồ sơ đối ngoại.

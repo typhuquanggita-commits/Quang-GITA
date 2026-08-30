@@ -42,6 +42,17 @@ rủi ro ở đâu. Hai bộ dùng chung một trục GITA và tham chiếu ché
 | 13 | [`13-he-thong-90-ngay.md`](13-he-thong-90-ngay.md) | 90 ngày thói quen | Coach |
 | 14 | [`14-he-thong-365-ngay.md`](14-he-thong-365-ngay.md) | 365 ngày kỳ tích | Coach trưởng |
 | 15 | [`15-ban-do-toi-uu-hoa.md`](15-ban-do-toi-uu-hoa.md) | Tối ưu hoá & lộ trình | Giám đốc chương trình |
+| **16** | [`16-365-ngay-chi-tiet.md`](16-365-ngay-chi-tiet.md) | 🔧 **Phác đồ 365 ngày** — 4 chu kỳ · 12 mốc · phép thử 30 ngày rút hoàn toàn | Coach trưởng |
+| **17** | [`17-dao-tao-doi-ngu-chi-tiet.md`](17-dao-tao-doi-ngu-chi-tiet.md) | 🔧 **Giáo trình đào tạo** — ACT 5 ngày · Trainer 10 ngày · Coach · 5 cấp chứng nhận | Đào tạo |
+| **18** | [`18-y-te-an-toan-chi-tiet.md`](18-y-te-an-toan-chi-tiet.md) | 🔧 **Quy trình y tế** — 4 vị trí chuyên trách · cấp cứu 6 bước · ma trận rủi ro | Y tế, CSO |
+| **19** | [`19-tuyen-sinh-chi-tiet.md`](19-tuyen-sinh-chi-tiet.md) | 🔧 **Tuyển sinh** — phễu 6 bước · kịch bản tư vấn · bộ câu hỏi sàng lọc | Tư vấn |
+| **20** | [`20-chuan-bi-chi-tiet.md`](20-chuan-bi-chi-tiet.md) | 🔧 **Lịch D-90 → D-1** — 4 cổng kiểm soát · khảo sát địa điểm · ma trận rủi ro | Quản trại |
+| **21** | [`21-van-hanh-hien-truong.md`](21-van-hanh-hien-truong.md) | 🔧 **Vận hành hiện trường** — gộp tổ chức + hậu cần + di chuyển | Toàn đội |
+
+> **Hai lớp tài liệu.** Tài liệu **01–15** là **bản tóm tắt điều hành** — khung và nguyên lý.
+> Tài liệu **16–21** đánh dấu 🔧 là **bản tác nghiệp** — thứ người vận hành mở ra khi làm việc thật.
+> **Khi hai bản khác nhau, bản tác nghiệp là bản đúng.** Mỗi bản tóm tắt có liên kết trỏ sang bản
+> tác nghiệp tương ứng ngay dưới tiêu đề.
 
 **Bộ tài liệu liên quan:** [`../leader-boom-365/`](../leader-boom-365/README.md) chuyên môn trại · [`../thu-vien-chuyen-mon-gita/`](../thu-vien-chuyen-mon-gita/README.md) thư viện tác nghiệp · [`../an-toan-va-phan-quyen/`](../an-toan-va-phan-quyen/README.md) **phân quyền và bảo mật** · [`../nhan-dien-thuong-hieu/`](../nhan-dien-thuong-hieu/README.md) nhận diện thương hiệu · [`../nhuong-quyen-leader-boom/`](../nhuong-quyen-leader-boom/README.md) **chuẩn nhượng quyền toàn quốc** · [`../cong-dong-leader-boom/`](../cong-dong-leader-boom/README.md) **cộng đồng và thử thách sau trại** · [`../ho-so-bao-ho/`](../ho-so-bao-ho/README.md) **hồ sơ bảo hộ sở hữu trí tuệ** · [`../seo-va-hien-dien-so/`](../seo-va-hien-dien-so/README.md) **SEO và hiện diện số**.
 

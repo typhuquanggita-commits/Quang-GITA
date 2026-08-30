@@ -1,5 +1,9 @@
 # 15 · CHƯƠNG TRÌNH ĐỒNG HÀNH PHỤ HUYNH — 13 TUẦN
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`07-dong-hanh-phu-huynh.md`](07-dong-hanh-phu-huynh.md) — Nguyên lý đồng hành phụ huynh.
+
 > Trong hệ 90 ngày, **người hành động hằng ngày là cha mẹ**, không phải Coach. Coach gọi hai lần
 > một tuần; cha mẹ có mặt mỗi ngày. Cam kết của cha mẹ sụp thì lộ trình của con sụp theo.
 >

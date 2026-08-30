@@ -1,5 +1,9 @@
 # 17 · ĐÀO TẠO ĐỘI NGŨ — GIÁO TRÌNH CHI TIẾT
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`05-dao-tao-doi-ngu.md`](05-dao-tao-doi-ngu.md) — Khung đào tạo đội ngũ.
+
 > Tài liệu này chi tiết hoá [`05-dao-tao-doi-ngu.md`](05-dao-tao-doi-ngu.md).
 > Tệp 05 nêu **khung vai trò và tiêu chuẩn**; tệp này là **giáo trình dùng để dạy và sát hạch thật**:
 > nội dung từng buổi, hoạt động thực hành, cách kiểm tra đạt, thang điểm quan sát hiện trường,

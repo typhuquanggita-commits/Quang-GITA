@@ -1,5 +1,9 @@
 # 11 · RUBRIC HÀNH VI — 18 NĂNG LỰC × 5 CẤP ĐỘ
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`02-khung-nang-luc-18.md`](02-khung-nang-luc-18.md) — Khung 18 năng lực và 5 cấp độ.
+
 Tài liệu này điền nội dung cho **90 ô** của ma trận 18 năng lực × 5 cấp độ. Bảng cấp độ chung ở
 `02-khung-nang-luc-18.md` chỉ mô tả mức hỗ trợ; ở đây mỗi năng lực có **mô tả hành vi riêng**, kèm
 **bằng chứng chấp nhận được** cho từng ô. Người chấm đọc mô tả hành vi trước, tìm bằng chứng sau;

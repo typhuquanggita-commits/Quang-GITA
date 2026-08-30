@@ -1,5 +1,12 @@
 # 03 · HỆ THỐNG TUYỂN SINH
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`19-tuyen-sinh-chi-tiet.md`](19-tuyen-sinh-chi-tiet.md) — **Quy trình tuyển sinh chi tiết** — phễu 6 bước, kịch bản tư vấn, bộ câu hỏi sàng lọc.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 ## 1. Nguyên tắc
 
 1. **Tuyển đúng hơn tuyển đủ.** Một học viên không phù hợp làm hỏng trải nghiệm của cả team

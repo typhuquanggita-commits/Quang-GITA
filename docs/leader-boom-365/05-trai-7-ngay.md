@@ -1,5 +1,12 @@
 # 05 · TẦNG 1 – TRẠI LEADER BOOM 7 NGÀY (GIÁO ÁN CHUẨN)
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`14-giao-an-chi-tiet-7-ngay.md`](14-giao-an-chi-tiet-7-ngay.md) — **Giáo án chi tiết 7 ngày** — lịch theo giờ, vòng 5 nhịp từng buổi, lời dẫn mẫu, câu hỏi đúc kết.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 > **Định vị:** 7 ngày trại là **Tầng 1 – Nhận diện** vận hành ở mật độ cao nhất.
 > Nhiệm vụ: (a) khởi phát trụ **I – Nội lực**; (b) thu **baseline 11 nhóm dữ liệu**;
 > (c) hình thành **giả thuyết GITA**; (d) mở **cổng ngày 7** sang Tầng 2.

@@ -49,6 +49,12 @@ Khung năng lực chuẩn duy nhất là **18 năng lực** tại [`../thu-vien-
 | 11 | [`11-chat-luong-kpi.md`](11-chat-luong-kpi.md) | PDCA · 3 lớp kiểm soát · 18 KPI · khảo sát · họp rút kinh nghiệm · quản lý dữ liệu | BLĐ |
 | 12 | [`12-hoc-lieu-bieu-mau.md`](12-hoc-lieu-bieu-mau.md) | 11 học liệu học viên · 6 học liệu phụ huynh · 8 tài liệu nhân sự · 20 biểu mẫu | Vận hành, In ấn |
 | 13 | [`13-ke-hoach-trien-khai.md`](13-ke-hoach-trien-khai.md) | Lộ trình 4 giai đoạn · **10 việc ưu tiên trước khoá tới** · rủi ro · nguồn lực · bảng kiểm khai giảng | BLĐ |
+| **14** | [`14-giao-an-chi-tiet-7-ngay.md`](14-giao-an-chi-tiet-7-ngay.md) | 🔧 **Giáo án chi tiết 7 ngày** — lịch theo giờ · vòng 5 nhịp từng buổi · lời dẫn mẫu · kịch bản Review 30 phút | Trainer, ACT |
+| **15** | [`15-thu-vien-tinh-huong.md`](15-thu-vien-tinh-huong.md) | 🔧 **47 tình huống hiện trường** — dấu hiệu → 5 phút đầu → không được làm → báo ai | **ACT in ra mang theo** |
+| **16** | [`16-tang2-21-ngay-chi-tiet.md`](16-tang2-21-ngay-chi-tiet.md) | 🔧 **Phác đồ 21 ngày** — ba vòng kiểm A→T→I · phép thử phân biệt kỹ năng và thực hiện | Coach |
+
+> **Hai lớp tài liệu.** Tài liệu **01–13** là **bản tóm tắt điều hành**; tài liệu **14–16** đánh dấu 🔧
+> là **bản tác nghiệp**. Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**.
 
 ---
 

@@ -1,5 +1,9 @@
 # 14 · GIÁO ÁN CHI TIẾT 7 NGÀY — TRẠI LEADER BOOM (BẢN DẪN TRỰC TIẾP)
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`05-trai-7-ngay.md`](05-trai-7-ngay.md) — Khung trại 7 ngày và 12 tiêu chuẩn buổi huấn luyện.
+
 > **Cách dùng tài liệu này.** TL 05 là **khung** 7 ngày. Tài liệu 14 là **bản dẫn**: Trainer và ACT
 > cầm lên là dẫn được ngay, không cần soạn thêm. Mỗi ngày có lịch theo khung giờ, kịch bản từng buổi
 > theo Vòng 5 nhịp, lời dẫn mẫu, câu hỏi đúc kết, biểu mẫu phải thu, phân công ACT, phần an toàn và

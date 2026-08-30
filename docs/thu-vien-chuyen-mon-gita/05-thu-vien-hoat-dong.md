@@ -1,5 +1,12 @@
 # 05 · THƯ VIỆN HOẠT ĐỘNG
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`14-the-hoat-dong-day-du.md`](14-the-hoat-dong-day-du.md) — **50 thẻ hoạt động** — lời dẫn mẫu, câu hỏi đúc kết, an toàn, quyền được dừng.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 > **Quy tắc nền:** hoạt động không có phiếu trong thư viện này **không được đưa vào kịch bản**.
 > Phiếu phải có đủ 8 phần, đặc biệt là phần **rủi ro và biện pháp**.
 

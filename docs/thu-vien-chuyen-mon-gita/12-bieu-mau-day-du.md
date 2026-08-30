@@ -1,5 +1,9 @@
 # 12 · BỘ BIỂU MẪU ĐẦY ĐỦ — NỘI DUNG IN ĐƯỢC BM-01 → BM-20
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`04-bo-bieu-mau.md`](04-bo-bieu-mau.md) — Danh mục và vai trò 20 biểu mẫu.
+
 > Tệp này là **bản nội dung đầy đủ** của bộ biểu mẫu đã liệt kê tại TL `04-bo-bieu-mau.md`.
 > Mã và tên biểu mẫu giữ nguyên. Tệp 04 dùng để tra danh mục; tệp 12 dùng để **in ra và điền**.
 

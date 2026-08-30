@@ -1,5 +1,12 @@
 # 07 · HỆ ĐỒNG HÀNH PHỤ HUYNH 365 NGÀY
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`15-chuong-trinh-phu-huynh-90-ngay.md`](15-chuong-trinh-phu-huynh-90-ngay.md) — **Chương trình 13 tuần cho cha mẹ** — mỗi tuần một kỹ năng, một việc 10 phút, một điều cần bỏ.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 > **Phụ huynh là đối tác đồng hành, không phải người giám sát thi hành.**
 > Đây là nguyên tắc thứ 7 của hệ GITA và là điều khó thực hiện nhất trong toàn bộ hệ thống.
 

@@ -1,5 +1,12 @@
 # 06 · TẦNG 2 – GIẢI MÃ (21 NGÀY, D8 → D28)
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`16-tang2-21-ngay-chi-tiet.md`](16-tang2-21-ngay-chi-tiet.md) — **Phác đồ 21 ngày theo từng ngày** — ba vòng kiểm A→T→I, phép thử phân biệt kỹ năng và thực hiện.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 **Câu hỏi trung tâm: Vì sao vấn đề xảy ra?**
 Nếu Tầng 1 tạo ra *bản đồ hiện trạng*, Tầng 2 phải tạo ra *bản đồ cơ chế*.
 Đây là tầng quyết định chất lượng chuyên môn của toàn bộ hành trình: giải pháp chỉ chính xác khi

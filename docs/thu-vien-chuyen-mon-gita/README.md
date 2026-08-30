@@ -43,6 +43,19 @@
 | **15** | [`15-chuong-trinh-phu-huynh-90-ngay.md`](15-chuong-trinh-phu-huynh-90-ngay.md) | **13 tuần cho cha mẹ** — mỗi tuần một kỹ năng, một việc 10 phút, một điều cần bỏ | Coach dẫn gia đình |
 | **★** | [`phac-do/`](phac-do/README.md) | **220 phác đồ đầy đủ** — 11 tệp theo nhóm N01–N11, mỗi phác đồ 16 lớp | **Mọi ca cụ thể** |
 
+> **Hai lớp tài liệu.** Tài liệu **01–10** là **bản tóm tắt điều hành** — khung, nguyên lý, danh mục mã.
+> Tài liệu **11–15** và thư mục **`phac-do/`** là **bản tác nghiệp** — thứ mở ra khi làm việc với một
+> học viên cụ thể. **Khi hai bản khác nhau, bản tác nghiệp là bản đúng.**
+>
+> | Bản tóm tắt | → | Bản tác nghiệp |
+> |---|---|---|
+> | `01` Danh mục 220 vấn đề | → | [`phac-do/`](phac-do/README.md) 220 phác đồ đầy đủ |
+> | `02` Khung 18 năng lực | → | [`11`](11-rubric-hanh-vi-18x5.md) Rubric 90 ô |
+> | `03` Bộ công cụ đánh giá | → | [`13`](13-ngan-hang-cau-hoi.md) Ngân hàng câu hỏi |
+> | `04` Danh mục 20 biểu mẫu | → | [`12`](12-bieu-mau-day-du.md) Nội dung biểu mẫu |
+> | `05` Thư viện hoạt động | → | [`14`](14-the-hoat-dong-day-du.md) 50 thẻ hoạt động |
+> | `07` Đồng hành phụ huynh | → | [`15`](15-chuong-trinh-phu-huynh-90-ngay.md) Chương trình 13 tuần |
+
 ---
 
 ## 3. Quy trình tra cứu một ca — bốn bước

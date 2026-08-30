@@ -1,5 +1,12 @@
 # 04 · BỘ BIỂU MẪU BM-01 → BM-20
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`12-bieu-mau-day-du.md`](12-bieu-mau-day-du.md) — **Nội dung 20 biểu mẫu** — in ra điền tay được, có ví dụ KPI đã điền.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 > Nội dung dưới đây là **bản in được**. Bộ phận thiết kế chỉ cần dàn trang, không cần biên soạn lại nội dung.
 > Cỡ chữ tối thiểu 12pt; nhóm 9–11 tuổi dùng 14pt. Mọi biểu mẫu thu dữ liệu đều có ô **"không quan sát được"**.
 

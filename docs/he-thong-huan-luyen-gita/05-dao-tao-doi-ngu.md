@@ -1,5 +1,12 @@
 # 05 · HỆ THỐNG ĐÀO TẠO ĐỘI NGŨ
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`17-dao-tao-doi-ngu-chi-tiet.md`](17-dao-tao-doi-ngu-chi-tiet.md) — **Giáo trình đào tạo chi tiết** — ACT 5 ngày, Trainer 10 ngày, Coach, 5 cấp chứng nhận.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 ## 1. Bốn tác nhân và ranh giới vai trò
 
 Lẫn vai là nguyên nhân phổ biến nhất làm hỏng chất lượng chuyên môn.

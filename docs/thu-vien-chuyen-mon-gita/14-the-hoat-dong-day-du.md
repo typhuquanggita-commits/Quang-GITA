@@ -1,5 +1,9 @@
 # 14 · THẺ HOẠT ĐỘNG ĐẦY ĐỦ — 50 HOẠT ĐỘNG LEADER BOOM
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`05-thu-vien-hoat-dong.md`](05-thu-vien-hoat-dong.md) — Nguyên tắc thiết kế hoạt động và danh mục mã.
+
 > **Cách dùng:** mỗi thẻ là một trang Trainer cầm lên và dẫn được ngay, không cần tra thêm tài liệu.
 > Mã và tên hoạt động giữ nguyên theo `05-thu-vien-hoat-dong.md`. Ba hoạt động đã loại
 > (A1-05, A2-08, A5-02) không có thẻ; bản thay thế A1-05b, A2-08b, A5-02b có thẻ đầy đủ.

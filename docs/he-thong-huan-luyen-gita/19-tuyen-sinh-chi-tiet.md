@@ -1,5 +1,9 @@
 # 19 · TUYỂN SINH — QUY TRÌNH CHI TIẾT
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`03-tuyen-sinh.md`](03-tuyen-sinh.md) — Khung tuyển sinh.
+
 Tài liệu này là **bản tác nghiệp** của [`03-tuyen-sinh.md`](03-tuyen-sinh.md). TL 03 nêu nguyên tắc và
 khung 9 bước; TL 19 nêu **từng phút, từng câu hỏi, từng biểu mẫu, từng ngưỡng quyết định** để một
 người mới vào vị trí Tư vấn có thể chạy được ngay mà không cần ai kèm.

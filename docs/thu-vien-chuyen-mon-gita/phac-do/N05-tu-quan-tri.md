@@ -743,7 +743,7 @@ D1 rà bảng deadline 4 tuần tới, đánh dấu tuần cao điểm · D2 ghi
 
 **T2 · 21 ngày** — Vòng 1 kiểm A: nhận diện sớm và bảng deadline. Vòng 2 kiểm T: kỹ thuật dời tải và cắt hoạt động. Vòng 3 kiểm I: niềm tin về học dồn. Mỗi vòng đổi một biến.
 
-**T3 · 90 ngày** — Cấp 1: lập kế hoạch tuần cao điểm cùng Coach. Cấp 2: tự lập trước 14 ngày, ngủ ≥ 6,5 giờ mọi đêm trong tuần cao điểm. Cấp 3: KPI tuần kế tiếp giảm ≤ 10%, tự xử lý được 2 tuần cao điểm liên tiếp.
+**T3 · 90 ngày** — Cấp 1: lập kế hoạch tuần cao điểm cùng Coach. Cấp 2: tự lập trước 14 ngày, **giữ giấc ngủ ≥ 8,5 giờ mọi đêm kể cả tuần cao điểm** — kế hoạch nào phải cắt ngủ để chạy được là kế hoạch sai, chỉnh lại khối lượng chứ không chỉnh giờ ngủ. Cấp 3: KPI tuần kế tiếp giảm ≤ 10%, tự xử lý được 2 tuần cao điểm liên tiếp.
 
 **T4/T5** — T4: áp dụng cho cả 2 kỳ thi trong năm. T5: học viên hướng dẫn nhóm bạn lập kế hoạch mùa thi.
 

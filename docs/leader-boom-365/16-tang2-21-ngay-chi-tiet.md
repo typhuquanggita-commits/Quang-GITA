@@ -1,5 +1,9 @@
 # 16 · TẦNG 2 — PHÁC ĐỒ 21 NGÀY CHI TIẾT (D8 → D28)
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`06-tang2-giai-ma-21-ngay.md`](06-tang2-giai-ma-21-ngay.md) — Nguyên lý tầng giải mã và 6 lớp phân tích.
+
 > Tài liệu [`06-tang2-giai-ma-21-ngay.md`](06-tang2-giai-ma-21-ngay.md) nêu **nguyên lý** của tầng
 > giải mã. Tài liệu này nêu **việc phải làm từng ngày**. Coach mở ra buổi sáng và biết hôm nay
 > làm gì, thu dữ liệu gì, và cuối ngày phải có gì trong tay.

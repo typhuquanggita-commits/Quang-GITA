@@ -1,5 +1,9 @@
 # 16 · PHÁC ĐỒ 365 NGÀY CHI TIẾT — BỐN CHU KỲ
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`14-he-thong-365-ngay.md`](14-he-thong-365-ngay.md) — Kiến trúc 365 ngày.
+
 > [`14-he-thong-365-ngay.md`](14-he-thong-365-ngay.md) nêu kiến trúc. Tài liệu này nêu **việc phải
 > làm từng chu kỳ, từng tháng, từng mốc** — để Coach trưởng mở ra và biết tháng này đang ở đâu,
 > phải nghiệm thu gì, và dấu hiệu nào cho biết đang chệch hướng.

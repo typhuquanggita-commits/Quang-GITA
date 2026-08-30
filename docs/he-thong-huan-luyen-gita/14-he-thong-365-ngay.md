@@ -1,5 +1,12 @@
 # 14 · HỆ THỐNG VẬN DỤNG 365 NGÀY — TẠO KỲ TÍCH
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`16-365-ngay-chi-tiet.md`](16-365-ngay-chi-tiet.md) — **Phác đồ 365 ngày theo chu kỳ** — 4 chu kỳ, 12 mốc, phép thử 30 ngày rút hoàn toàn.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 > **"Kỳ tích" trong hệ GITA không phải một kết quả may mắn.** Nó là hệ quả có thể dự đoán của
 > bốn chu kỳ 90 ngày liên tiếp, mỗi chu kỳ tăng độ khó và giảm mức hỗ trợ.
 > Tài liệu này định nghĩa kỳ tích thành thứ đo được, và mô tả cỗ máy tạo ra nó.

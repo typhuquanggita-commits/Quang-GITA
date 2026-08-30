@@ -1,5 +1,9 @@
 # 13 · NGÂN HÀNG CÂU HỎI VÀ NỘI DUNG TÁC NGHIỆP — CC-01 → CC-14
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`03-bo-cong-cu-danh-gia.md`](03-bo-cong-cu-danh-gia.md) — Bộ công cụ đánh giá và rà soát tính hợp lệ.
+
 > Tài liệu này là **phần ruột** của bộ công cụ đánh giá. `03-bo-cong-cu-danh-gia.md` quy định
 > *có những công cụ nào và dùng khi nào*; tài liệu này quy định **hỏi cái gì, quan sát cái gì,
 > chấm thế nào**. Mã và tên 14 công cụ giữ nguyên theo bảng mã chuẩn duy nhất tại `03 §2`.

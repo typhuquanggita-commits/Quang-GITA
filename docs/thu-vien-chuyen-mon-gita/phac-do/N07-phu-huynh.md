@@ -557,7 +557,7 @@ D1 ghi thời lượng dùng theo ngày · D2 ghi khung giờ dùng nhiều nh�
 
 **T2 · 21 ngày** — Vòng 1 kiểm A: viết hợp đồng thiết bị, ưu tiên bảo vệ giấc ngủ. Vòng 2 kiểm T: hẹn giờ tự tắt và nghi thức kết thúc phiên dùng. Vòng 3 kiểm I: mở kênh gặp bạn ngoài đời để giảm phụ thuộc kênh trực tuyến.
 
-**T3 · 90 ngày** — Cấp 1: hợp đồng được giữ ≥ 5/7 ngày, có nhắc. Cấp 2: học viên tự cất thiết bị đúng giờ ≥ 6/7 ngày, ngủ ≥ 8 giờ. Cấp 3: 0 lần thu đột ngột trong 30 ngày, `sleep consistency` ≥ 80%.
+**T3 · 90 ngày** — Cấp 1: hợp đồng được giữ ≥ 5/7 ngày, có nhắc. Cấp 2: học viên tự cất thiết bị đúng giờ ≥ 6/7 ngày, **ngủ ≥ 8,5 giờ**. Cấp 3: 0 lần thu đột ngột trong 30 ngày, `sleep consistency` ≥ 80%.
 
 **T4/T5** — T4: hợp đồng được cập nhật theo tuổi và nhu cầu học tập. T5: học viên tự đề xuất quy tắc thiết bị cho em nhỏ trong nhà.
 

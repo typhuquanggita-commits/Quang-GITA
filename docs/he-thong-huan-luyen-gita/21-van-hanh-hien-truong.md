@@ -1,5 +1,12 @@
 # 21 · VẬN HÀNH HIỆN TRƯỜNG — TỔ CHỨC · HẬU CẦN · DI CHUYỂN
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Tài liệu này **gộp ba bản tóm tắt** thành một bản vận hành duy nhất —
+> khi khác nhau, **bản này là bản đúng**:
+> [`07-to-chuc-dieu-hanh.md`](07-to-chuc-dieu-hanh.md) tổ chức ·
+> [`08-hau-can.md`](08-hau-can.md) hậu cần ·
+> [`11-di-chuyen.md`](11-di-chuyen.md) di chuyển.
+
 Tài liệu này là **bản chi tiết dùng được ngay tại hiện trường** cho ba tài liệu khung
 07 (Tổ chức & điều hành), 08 (Hậu cần), 11 (Di chuyển). Ba tài liệu gốc nêu nguyên tắc;
 tài liệu này nêu **con số, biểu mẫu, giờ giấc, ai ký, ai quyết** — đủ để một khoá vận hành

@@ -1,5 +1,9 @@
 # 18 · Y TẾ & AN TOÀN — QUY TRÌNH CHI TIẾT
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`09-y-te-an-toan.md`](09-y-te-an-toan.md) — Khung y tế và an toàn.
+
 > Tài liệu này chi tiết hoá [`09-y-te-an-toan.md`](09-y-te-an-toan.md).
 > Tệp 09 nêu **khung**; tệp này là **quy trình vận hành tại hiện trường**: ai làm gì, ở đâu,
 > trong bao lâu, ghi vào đâu, và khi nào phải dừng.

@@ -1,5 +1,12 @@
 # 03 · BỘ CÔNG CỤ ĐÁNH GIÁ
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`13-ngan-hang-cau-hoi.md`](13-ngan-hang-cau-hoi.md) — **Ngân hàng câu hỏi đầy đủ** — 30 câu × 3 bản tuổi, kịch bản phỏng vấn, quy trình đối chiếu 4 nguồn.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 ## 1. Nguyên tắc đánh giá của GITA
 
 1. **Đánh giá để phát triển, không đánh giá để phán xét.**

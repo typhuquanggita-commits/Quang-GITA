@@ -1,5 +1,12 @@
 # 09 · HỆ THỐNG Y TẾ & AN TOÀN
 
+
+> 📘 **BẢN TÓM TẮT ĐIỀU HÀNH.** Tài liệu này nêu **khung và nguyên lý**.
+> **BẢN TÁC NGHIỆP:** [`18-y-te-an-toan-chi-tiet.md`](18-y-te-an-toan-chi-tiet.md) — **Quy trình y tế chi tiết** — 4 vị trí chuyên trách, cấp cứu 6 bước, ma trận rủi ro theo hoạt động.
+>
+> Khi hai bản khác nhau, **bản tác nghiệp là bản đúng**. Người vận hành mở bản tác nghiệp;
+> tài liệu này dành cho người cần hiểu tổng thể trước khi đi vào chi tiết.
+
 > Thiết kế lại các hoạt động có rủi ro (9 điểm) nằm ở
 > [`../leader-boom-365/09-an-toan-bao-ve-tre-em.md`](../leader-boom-365/09-an-toan-bao-ve-tre-em.md) §2.
 > Tài liệu này là **hệ vận hành y tế – an toàn** tại hiện trường.

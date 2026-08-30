@@ -1,5 +1,9 @@
 # 20 · CHUẨN BỊ KHOÁ — LỊCH CÔNG VIỆC D-90 → D-1
 
+
+> 🔧 **BẢN TÁC NGHIỆP.** Đây là bản người vận hành dùng — khi khác với bản tóm tắt,
+> **bản này là bản đúng**. Bản tóm tắt: [`04-chuan-bi-D90-D1.md`](04-chuan-bi-D90-D1.md) — Khung chuẩn bị khoá.
+
 Tài liệu này là **bản tác nghiệp** của [`04-chuan-bi-D90-D1.md`](04-chuan-bi-D90-D1.md).
 TL 04 nêu bảng điều phối tổng; TL 20 nêu **từng đầu việc có mã, người chịu trách nhiệm, đầu ra
 nghiệm thu được, và việc nào phụ thuộc việc nào** — đủ để đưa thẳng vào bảng kế hoạch và theo dõi
@@ -327,7 +331,7 @@ Ký ở `CB-39` (D-7) bởi **Quản trại + Y tế + Trainer trưởng**. Đâ
 | 4 | **Phản vệ do dị ứng** | Thấp | **Nặng** | Thẻ dị ứng; bếp ký nhận danh sách; ACT phụ trách biết ca của mình; bút tiêm cá nhân để tại khu y tế và người được phép dùng đã được chỉ định | Y tế | Dùng bút tiêm theo chỉ định; gọi 115 ngay; không chờ theo dõi thêm |
 | 5 | **Chấn thương khi vận động** (bong gân, gãy, va đập) | **Cao** | Trung bình | Khởi động bắt buộc; kiểm mặt sân trước mỗi hoạt động; loại trò chơi va chạm mạnh; hạn chế theo nhóm tuổi | Trainer phụ trách hoạt động | Sơ cứu tại chỗ; y tế đánh giá; chụp chiếu nếu nghi gãy; báo gia đình trong 30 phút |
 | 6 | **Sốt, bệnh lây lan trong khu ngủ** | Trung bình | Trung bình | Đo thân nhiệt sáng cho ca có triệu chứng; thông gió; có phòng cách ly; rửa tay trước bữa ăn | Y tế | Cách ly; báo gia đình; nếu ≥ 3 ca cùng triệu chứng trong 24h → báo y tế địa phương và xem xét dừng hoạt động chung |
-| 7 | **Học viên đi lạc hoặc tự ý rời khu vực** | Trung bình | **Nặng** | Đếm số ở 6 mốc cố định/ngày; hệ thống bạn đôi; kiểm soát cổng ra; ACT biết mặt từng học viên của mình | ACT phụ trách | Kích hoạt quy trình tìm kiếm 3 vòng (khu ngủ → khuôn viên → ngoài khuôn viên); sau **30 phút** không thấy → báo công an và gia đình |
+| 7 | **Học viên đi lạc hoặc tự ý rời khu vực** | Trung bình | **Nặng** | Đếm số ở **5 mốc cố định/ngày theo chuẩn A8**, cộng trước và sau mọi lần di chuyển và mọi hoạt động nước; hệ thống bạn đôi; kiểm soát cổng ra; ACT biết mặt từng học viên của mình | ACT phụ trách | Kích hoạt quy trình tìm kiếm 3 vòng (khu ngủ → khuôn viên → ngoài khuôn viên); sau **30 phút** không thấy → báo công an và gia đình |
 | 8 | **Cháy** | Thấp | **Nặng** | Diễn tập D-7; lối thoát thông suốt; bình chữa cháy còn hạn; cấm thiết bị đun nấu trong phòng; kiểm ổ điện quá tải | Quản trại | Báo động; sơ tán theo lối đã tập; điểm danh tại điểm tập kết; gọi 114 |
 | 9 | **Mưa lớn cả ngày, bão, thời tiết cực đoan** | Trung bình | Trung bình | Theo dõi dự báo từ D-3, cập nhật 2 lần/ngày; **kịch bản B trong nhà cho từng ngày**; xác định ngưỡng dừng và ngưỡng trả học viên sớm | Quản trại + Trainer trưởng | Chuyển kịch bản B; nếu có cảnh báo bão cấp nguy hiểm → dừng khoá, báo gia đình, tổ chức trả học viên an toàn |
 | 10 | **Mất điện kéo dài** | Trung bình | Nhẹ | Điều khoản hợp đồng; đèn pin và sạc dự phòng cho mỗi khu; kịch bản hoạt động không cần điện | Hậu cần | Chuyển hoạt động; ưu tiên điện cho khu y tế; nếu > 6 giờ vào ban đêm → đánh giá phương án di chuyển |
