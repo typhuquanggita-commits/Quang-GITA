@@ -1,0 +1,175 @@
+<title>Nhật Ký Cho Là Nhận</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap">
+<style>
+
+:root{
+  --paper:#F2F4F0; --surface:#FFFFFF; --sunk:#E8ECE5; --raised:#FBFCFA;
+  --ink:#111815; --ink-2:#39463F; --muted:#65746B; --faint:#8B978F;
+  --line:#D5DCD2; --hair:#E5EAE2;
+  --jade:#1B5E4F; --jade-ink:#14493D; --jade-wash:#DEEAE5;
+  --lacquer:#A63E27; --lacquer-wash:#F6E2DB;
+  --amber:#8A6110; --amber-wash:#F4EAD3;
+  --s1:#0B8A6C; --s2:#C0670A; --s3:#3060A8;
+  --good:#1B6E4A; --good-wash:#DCEDE2;
+  --warn:#8A6110; --warn-wash:#F4EAD3;
+  --bad:#A63E27; --bad-wash:#F6E2DB;
+  --sh-1:0 1px 2px rgba(17,24,21,.05);
+  --sh-2:0 1px 2px rgba(17,24,21,.05), 0 10px 28px -20px rgba(17,24,21,.5);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1210; --surface:#141B18; --sunk:#0F1614; --raised:#1A221E;
+    --ink:#E9EEE9; --ink-2:#C2CDC6; --muted:#8C9A92; --faint:#6E7C74;
+    --line:#252F2A; --hair:#1D2621;
+    --jade:#6FC3A9; --jade-ink:#8FD3BD; --jade-wash:#14302A;
+    --lacquer:#E08466; --lacquer-wash:#331F19;
+    --amber:#D4A54A; --amber-wash:#2D2615;
+    --s1:#12A47D; --s2:#C8851E; --s3:#5A8FD6;
+    --good:#5CBE8C; --good-wash:#14291D;
+    --warn:#D4A54A; --warn-wash:#2D2615;
+    --bad:#E08466; --bad-wash:#331F19;
+    --sh-1:0 1px 2px rgba(0,0,0,.5);
+    --sh-2:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -22px #000;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1210; --surface:#141B18; --sunk:#0F1614; --raised:#1A221E;
+  --ink:#E9EEE9; --ink-2:#C2CDC6; --muted:#8C9A92; --faint:#6E7C74;
+  --line:#252F2A; --hair:#1D2621;
+  --jade:#6FC3A9; --jade-ink:#8FD3BD; --jade-wash:#14302A;
+  --lacquer:#E08466; --lacquer-wash:#331F19;
+  --amber:#D4A54A; --amber-wash:#2D2615;
+  --s1:#12A47D; --s2:#C8851E; --s3:#5A8FD6;
+  --good:#5CBE8C; --good-wash:#14291D;
+  --warn:#D4A54A; --warn-wash:#2D2615;
+  --bad:#E08466; --bad-wash:#331F19;
+  --sh-1:0 1px 2px rgba(0,0,0,.5);
+  --sh-2:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -22px #000;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Lora,Georgia,serif;margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--jade);outline-offset:2px;border-radius:4px}
+.num{font-variant-numeric:tabular-nums}
+
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Lora,Georgia,serif;margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--jade);outline-offset:2px;border-radius:4px}
+.num{font-variant-numeric:tabular-nums}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,sans-serif;font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Lora,Georgia,serif;margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+a{color:var(--jade)}
+:focus-visible{outline:2px solid var(--jade);outline-offset:3px}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px 80px}
+header{padding:56px 0 30px;border-bottom:2px solid var(--jade)}
+.kicker{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--jade);margin-bottom:14px}
+h1{font-size:clamp(34px,6vw,52px);font-weight:600;letter-spacing:-.022em}
+h1 em{font-style:italic;color:var(--jade)}
+.deck{margin-top:16px;font-size:18px;color:var(--ink-2);font-weight:300;max-width:56ch}
+.by{margin-top:20px;font-size:13px;color:var(--muted)}
+section{padding:40px 0 0}
+h2{font-size:23px;font-weight:600;margin-bottom:6px}
+h2 .n{font-family:"Be Vietnam Pro",sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--jade);
+  display:block;margin-bottom:8px;text-transform:uppercase}
+.sub{font-size:14.5px;color:var(--muted);margin-bottom:18px;max-width:60ch}
+.rules{display:grid;gap:12px;margin-top:20px}
+@media(min-width:680px){.rules{grid-template-columns:repeat(2,1fr)}}
+.rule{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:17px 19px;box-shadow:var(--sh-1)}
+.rule b{display:block;font-family:Lora,serif;font-size:16.5px;font-weight:600;margin-bottom:5px}
+.rule span{font-size:14.5px;color:var(--ink-2);line-height:1.55}
+ol.q{list-style:none;counter-reset:q;margin:0;padding:0;border:1px solid var(--line);border-radius:12px;
+  overflow:hidden;background:var(--surface);box-shadow:var(--sh-1)}
+ol.q li{counter-increment:q;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:14px 18px;
+  border-bottom:1px solid var(--hair);align-items:baseline}
+ol.q li:last-child{border-bottom:none}
+ol.q li::before{content:counter(q);font-family:Lora,serif;font-weight:700;font-size:14px;color:var(--jade);
+  font-variant-numeric:tabular-nums}
+ol.q li span{font-size:16.5px;color:var(--ink);line-height:1.5}
+.age{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:4px 10px;border-radius:6px;background:var(--jade-wash);color:var(--jade);margin-bottom:12px}
+.rescue{margin-top:22px;background:var(--amber-wash);border:1px solid color-mix(in srgb,var(--amber) 22%,transparent);
+  border-left:3px solid var(--amber);border-radius:0 12px 12px 0;padding:20px 22px}
+.rescue .k{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.rescue ul{margin:12px 0 0;padding-left:20px}
+.rescue li{margin-bottom:9px;color:var(--ink)}
+.rescue li b{font-weight:600}
+.note{margin-top:26px;border:1px solid var(--line);border-left:3px solid var(--jade);background:var(--surface);
+  padding:18px 22px;border-radius:0 12px 12px 0}
+.note .k{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
+.note p{margin-top:8px;color:var(--ink-2);max-width:62ch}
+footer{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;max-width:62ch}
+footer b{color:var(--ink-2)}
+.print{margin-top:24px}
+.print button{font:inherit;font-size:14px;font-weight:600;color:var(--jade);background:var(--surface);
+  border:1px solid var(--line);padding:9px 18px;border-radius:9px;cursor:pointer}
+.print button:hover{border-color:var(--jade)}
+@media print{
+  body{background:#fff;color:#000;font-size:12pt}
+  .print,footer{display:none}
+  header{padding-top:0}
+  ol.q{box-shadow:none;break-inside:auto}
+  ol.q li{break-inside:avoid}
+  section{break-inside:avoid-page;padding-top:22px}
+}
+</style>
+<div class="wrap">
+<header>
+  <div class="kicker">Bộ công cụ gia đình · GITA365</div>
+  <h1>Nhật ký <em>cho là nhận</em></h1>
+  <p class="deck">Hai mươi mốt ngày, mỗi ngày một việc tử tế nhỏ — cả nhà cùng ghi. Kèm bốn quy tắc để cuốn nhật ký này không bỏ dở sau ba hôm.</p>
+  <p class="by">Tặng các gia đình trong cộng đồng <b>Gia Đình Thịnh Vượng</b>. In ra treo tường, để con cầm bút.</p>
+  <div class="print"><button onclick="window.print()">In ra để dán tường</button></div>
+</header>
+
+<section>
+  <h2><span class="n">Cách dùng</span>Bốn quy tắc của cuốn nhật ký này</h2>
+  <p class="sub">Hai mươi mốt ngày là đủ dài để thành nếp, đủ ngắn để không bỏ cuộc. Nhưng chỉ khi làm đúng bốn điều này.</p>
+  <div class="rules">
+    <div class="rule"><b>Việc nhỏ tới mức buồn cười</b><span>Rót nước cho ông. Nhặt hộ cái dép. Nhắn tin hỏi thăm một người. Việc càng nhỏ càng dễ làm mỗi ngày — và làm mỗi ngày mới là điều quan trọng.</span></div>
+    <div class="rule"><b>Con tự trao, không làm hộ</b><span>Bố mẹ chuẩn bị rồi bảo "đây là của con" thì con không học được gì. Con phải là người đưa tận tay.</span></div>
+    <div class="rule"><b>Không khen "con giỏi quá"</b><span>Hỏi thay vào đó: "Lúc người ta cảm ơn, con thấy trong người thế nào?" Câu hỏi này dạy nhiều hơn lời khen.</span></div>
+    <div class="rule"><b>Bỏ lỡ một ngày thì ghi "hôm nay chưa"</b><span>Đừng bỏ trống, đừng bỏ cuộc, đừng làm bù hai việc hôm sau. Ghi "chưa" rồi đi tiếp — đó cũng là một bài học.</span></div>
+  </div>
+</section>
+<section>
+  <span class="age">21 ngày</span>
+  <h2>Bảng ghi của nhà mình</h2>
+  <p class="sub">In ra treo tường. Mỗi tối trước khi đi ngủ, cả nhà cùng điền một dòng. Để con cầm bút.</p>
+  <ol class="q"><li><span><b>Ngày 1</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 2</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 3</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 4</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 5</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 6</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 7</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 8</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 9</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 10</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 11</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 12</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 13</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 14</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 15</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 16</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 17</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 18</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 19</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 20</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li><li><span><b>Ngày 21</b> · ai làm ____________ · làm gì ______________________ · người nhận nói gì ______________________</span></li></ol>
+</section>
+<section>
+  <h2><span class="n">Ba chặng nghỉ</span>Câu hỏi cho cả nhà cùng nhìn lại</h2>
+  <div class="rescue">
+    <div class="k">Hỏi vào tối cuối mỗi tuần</div>
+    <ul><li><b>Sau tuần 1:</b> Việc tử tế nào làm nhà mình nhớ nhất? Vì sao?</li><li><b>Sau tuần 2:</b> Có ai trong nhà bắt đầu tự nghĩ ra việc tử tế mà không cần nhắc chưa?</li><li><b>Sau tuần 3:</b> Điều gì trong nhà mình đã khác so với ngày đầu tiên?</li></ul>
+  </div>
+  <div class="note">
+    <div class="k">Sau ngày thứ 21</div>
+    <p>Đừng dừng lại và cũng đừng ăn mừng to. Chỉ cần hỏi cả nhà một câu: <b>"Nhà mình có muốn đi tiếp 21 ngày nữa không?"</b> Nếu cả nhà gật đầu, in tờ mới. Nếu chưa muốn, cứ nghỉ — điều đã học được thì không mất đi đâu cả.</p>
+  </div>
+</section>
+
+<footer>
+  <p><b>Gia Đình Thịnh Vượng</b> — cộng đồng các gia đình cùng nhau xây nếp nhà. Mỗi tuần cả nhà nhận một việc nhỏ làm được ngay tối nay.</p>
+  <p style="margin-top:12px">Bộ công cụ này miễn phí. Anh chị dùng được thì cứ gửi cho gia đình khác — ở đây chúng tôi tin <b>cho là nhận</b>.</p>
+</footer>
+</div>

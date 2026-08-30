@@ -44,19 +44,24 @@ Luật xương sống: **G2 nuôi G1, G1 nuôi khóa học.** Người ở G2 kh
 | [`15-luat-va-thuat-toan-facebook.md`](15-luat-va-thuat-toan-facebook.md) | **Luật & thuật toán 2026**: sáu thay đổi lớn, mồi tương tác, chính sách trao thưởng, nội dung gốc, Nghị định 147/2024, bảng đèn giao thông | Toàn đội |
 | [`16-marketing-0-dong-va-trao-thuong.md`](16-marketing-0-dong-va-trao-thuong.md) | **Marketing 0 đồng**: bảy động cơ miễn phí, bộ công cụ, phân bổ kênh, hai chiến dịch trao thưởng hợp lệ và thể lệ mẫu | Growth, Content, Admin |
 | [`17-chien-luoc-len-top-tim-kiem.md`](17-chien-luoc-len-top-tim-kiem.md) | **Lên top tìm kiếm**: bốn mặt trận, quyết định công khai/riêng tư, 70 từ khóa hạt giống, 9 điểm chạm hồ sơ nhóm, kiến trúc trụ–cụm, lộ trình 90 ngày và cách đo thứ hạng | Admin, Growth, Content |
+| [`18-phac-do-van-hanh.md`](18-phac-do-van-hanh.md) | **14 phác đồ chuẩn**: duyệt thành viên · onboarding · đăng bài · trả lời bình luận · cấp mã gia đình · chấm điểm · vinh danh · xử lý vi phạm · nick đi săn · khủng hoảng · xin phép câu chuyện · báo cáo · kiểm toán · gỡ nội dung theo luật | Toàn đội |
 | [`ban-trinh-duyet.html`](ban-trinh-duyet.html) | **Bản demo tương tác** 7 khu vực: mô hình khả thi kéo tay, lịch 288 bài, GITA CARE, cổng lọc, thi đua, chỉ số | Tất cả |
 
 ### Bộ khởi động — dùng ngay
 | Thư mục | Nội dung |
 |---|---|
-| [`khoi-dong-g2/`](khoi-dong-g2/) | **Bộ khởi động tuần test cho nhóm Gia Đình Thịnh Vượng**: cấu hình Ngày 0, 3 bài ghim, 10 bài đăng đầy đủ của tuần 1, 5 kịch bản tin nhắn, bảng đo và 7 chỉ tiêu chấm cuối tuần. Kèm trang `bo-khoi-dong.html` bấm chép–dán |
+| [`khoi-dong-g2/`](khoi-dong-g2/) | **Bộ khởi động G2 · Gia Đình Thịnh Vượng**: cấu hình Ngày 0, 3 bài ghim, 10 bài tuần 1, 5 kịch bản tin nhắn, phiên bản nhóm mới một người vận hành, bảng đo. Kèm trang `bo-khoi-dong.html` bấm chép–dán |
+| [`khoi-dong-g1/`](khoi-dong-g1/) | **Bộ khởi động G1 · Cộng đồng GITA365**: mô tả nhóm, 4 câu hỏi cổng vào, 3 bài ghim, **7 bài nghi thức tuần 1 viết trọn vẹn** |
+| [`kho-noi-dung/`](kho-noi-dung/) | **Kho nội dung**: 40 bài đầy đủ của tháng 1 cho G2 (chủ đề Kết nối), mỗi bài kèm bình luận ghim, 3 câu hỏi mồi và lưu ý vận hành |
+| [`tai-nguyen/`](tai-nguyen/) | **4 bộ tài nguyên tặng thành viên**: 30 câu hỏi bàn ăn · 12 trò chơi gắn kết · Nhật ký Cho là nhận 21 ngày · Bản đồ 90 ngày |
 
 ### Dữ liệu vận hành
 | Tệp | Mô tả |
 |---|---|
 | [`data/lich-dang-bai-12-tuan.csv`](data/lich-dang-bai-12-tuan.csv) | Lịch đăng chi tiết 12 tuần × 2 nhóm: ngày, giờ, nghi thức, tiêu đề, định dạng, CTA, tầng, người phụ trách |
 | [`data/thu-vien-chu-de.json`](data/thu-vien-chu-de.json) | Ngân hàng chủ đề theo trụ cột, dùng để sinh lịch các quý tiếp theo |
-| [`data/bang-theo-doi-kpi.csv`](data/bang-theo-doi-kpi.csv) | Mẫu bảng đo tuần, nhập số vào là ra tình trạng |
+| [`data/so-van-hanh-gita365.xlsx`](data/so-van-hanh-gita365.xlsx) | **Sổ vận hành 10 bảng**: hướng dẫn · thành viên · gia đình · điểm tuần · KPI · sổ ca · sổ đen · nhật ký gỡ nội dung · từ khóa · lịch 288 bài. Có công thức tự tính bảng đấu, tổng điểm và trạng thái KPI |
+| [`data/bang-theo-doi-kpi.csv`](data/bang-theo-doi-kpi.csv) | Mẫu bảng đo tuần dạng CSV (bản rút gọn của sổ trên) |
 | [`scripts/generate_calendar.py`](scripts/generate_calendar.py) | Sinh lại lịch 12 tuần bất kỳ lúc nào: `python3 scripts/generate_calendar.py --tuan 12 --batdau 2026-09-07` |
 
 ---

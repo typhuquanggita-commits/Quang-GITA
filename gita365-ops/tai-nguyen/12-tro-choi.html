@@ -1,0 +1,174 @@
+<title>12 Trò Chơi Gắn Kết</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap">
+<style>
+
+:root{
+  --paper:#F2F4F0; --surface:#FFFFFF; --sunk:#E8ECE5; --raised:#FBFCFA;
+  --ink:#111815; --ink-2:#39463F; --muted:#65746B; --faint:#8B978F;
+  --line:#D5DCD2; --hair:#E5EAE2;
+  --jade:#1B5E4F; --jade-ink:#14493D; --jade-wash:#DEEAE5;
+  --lacquer:#A63E27; --lacquer-wash:#F6E2DB;
+  --amber:#8A6110; --amber-wash:#F4EAD3;
+  --s1:#0B8A6C; --s2:#C0670A; --s3:#3060A8;
+  --good:#1B6E4A; --good-wash:#DCEDE2;
+  --warn:#8A6110; --warn-wash:#F4EAD3;
+  --bad:#A63E27; --bad-wash:#F6E2DB;
+  --sh-1:0 1px 2px rgba(17,24,21,.05);
+  --sh-2:0 1px 2px rgba(17,24,21,.05), 0 10px 28px -20px rgba(17,24,21,.5);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1210; --surface:#141B18; --sunk:#0F1614; --raised:#1A221E;
+    --ink:#E9EEE9; --ink-2:#C2CDC6; --muted:#8C9A92; --faint:#6E7C74;
+    --line:#252F2A; --hair:#1D2621;
+    --jade:#6FC3A9; --jade-ink:#8FD3BD; --jade-wash:#14302A;
+    --lacquer:#E08466; --lacquer-wash:#331F19;
+    --amber:#D4A54A; --amber-wash:#2D2615;
+    --s1:#12A47D; --s2:#C8851E; --s3:#5A8FD6;
+    --good:#5CBE8C; --good-wash:#14291D;
+    --warn:#D4A54A; --warn-wash:#2D2615;
+    --bad:#E08466; --bad-wash:#331F19;
+    --sh-1:0 1px 2px rgba(0,0,0,.5);
+    --sh-2:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -22px #000;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1210; --surface:#141B18; --sunk:#0F1614; --raised:#1A221E;
+  --ink:#E9EEE9; --ink-2:#C2CDC6; --muted:#8C9A92; --faint:#6E7C74;
+  --line:#252F2A; --hair:#1D2621;
+  --jade:#6FC3A9; --jade-ink:#8FD3BD; --jade-wash:#14302A;
+  --lacquer:#E08466; --lacquer-wash:#331F19;
+  --amber:#D4A54A; --amber-wash:#2D2615;
+  --s1:#12A47D; --s2:#C8851E; --s3:#5A8FD6;
+  --good:#5CBE8C; --good-wash:#14291D;
+  --warn:#D4A54A; --warn-wash:#2D2615;
+  --bad:#E08466; --bad-wash:#331F19;
+  --sh-1:0 1px 2px rgba(0,0,0,.5);
+  --sh-2:0 1px 2px rgba(0,0,0,.5), 0 12px 32px -22px #000;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Lora,Georgia,serif;margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--jade);outline-offset:2px;border-radius:4px}
+.num{font-variant-numeric:tabular-nums}
+
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:Lora,Georgia,serif;margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--jade);outline-offset:2px;border-radius:4px}
+.num{font-variant-numeric:tabular-nums}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Be Vietnam Pro",system-ui,sans-serif;font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Lora,Georgia,serif;margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+a{color:var(--jade)}
+:focus-visible{outline:2px solid var(--jade);outline-offset:3px}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px 80px}
+header{padding:56px 0 30px;border-bottom:2px solid var(--jade)}
+.kicker{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--jade);margin-bottom:14px}
+h1{font-size:clamp(34px,6vw,52px);font-weight:600;letter-spacing:-.022em}
+h1 em{font-style:italic;color:var(--jade)}
+.deck{margin-top:16px;font-size:18px;color:var(--ink-2);font-weight:300;max-width:56ch}
+.by{margin-top:20px;font-size:13px;color:var(--muted)}
+section{padding:40px 0 0}
+h2{font-size:23px;font-weight:600;margin-bottom:6px}
+h2 .n{font-family:"Be Vietnam Pro",sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--jade);
+  display:block;margin-bottom:8px;text-transform:uppercase}
+.sub{font-size:14.5px;color:var(--muted);margin-bottom:18px;max-width:60ch}
+.rules{display:grid;gap:12px;margin-top:20px}
+@media(min-width:680px){.rules{grid-template-columns:repeat(2,1fr)}}
+.rule{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:17px 19px;box-shadow:var(--sh-1)}
+.rule b{display:block;font-family:Lora,serif;font-size:16.5px;font-weight:600;margin-bottom:5px}
+.rule span{font-size:14.5px;color:var(--ink-2);line-height:1.55}
+ol.q{list-style:none;counter-reset:q;margin:0;padding:0;border:1px solid var(--line);border-radius:12px;
+  overflow:hidden;background:var(--surface);box-shadow:var(--sh-1)}
+ol.q li{counter-increment:q;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:14px 18px;
+  border-bottom:1px solid var(--hair);align-items:baseline}
+ol.q li:last-child{border-bottom:none}
+ol.q li::before{content:counter(q);font-family:Lora,serif;font-weight:700;font-size:14px;color:var(--jade);
+  font-variant-numeric:tabular-nums}
+ol.q li span{font-size:16.5px;color:var(--ink);line-height:1.5}
+.age{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:4px 10px;border-radius:6px;background:var(--jade-wash);color:var(--jade);margin-bottom:12px}
+.rescue{margin-top:22px;background:var(--amber-wash);border:1px solid color-mix(in srgb,var(--amber) 22%,transparent);
+  border-left:3px solid var(--amber);border-radius:0 12px 12px 0;padding:20px 22px}
+.rescue .k{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
+.rescue ul{margin:12px 0 0;padding-left:20px}
+.rescue li{margin-bottom:9px;color:var(--ink)}
+.rescue li b{font-weight:600}
+.note{margin-top:26px;border:1px solid var(--line);border-left:3px solid var(--jade);background:var(--surface);
+  padding:18px 22px;border-radius:0 12px 12px 0}
+.note .k{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
+.note p{margin-top:8px;color:var(--ink-2);max-width:62ch}
+footer{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;max-width:62ch}
+footer b{color:var(--ink-2)}
+.print{margin-top:24px}
+.print button{font:inherit;font-size:14px;font-weight:600;color:var(--jade);background:var(--surface);
+  border:1px solid var(--line);padding:9px 18px;border-radius:9px;cursor:pointer}
+.print button:hover{border-color:var(--jade)}
+@media print{
+  body{background:#fff;color:#000;font-size:12pt}
+  .print,footer{display:none}
+  header{padding-top:0}
+  ol.q{box-shadow:none;break-inside:auto}
+  ol.q li{break-inside:avoid}
+  section{break-inside:avoid-page;padding-top:22px}
+}
+</style>
+<div class="wrap">
+<header>
+  <div class="kicker">Bộ công cụ gia đình · GITA365</div>
+  <h1>12 trò chơi <em>gắn kết</em></h1>
+  <p class="deck">Mười hai trò chơi cho cha mẹ và con cái — không cần mua gì, không cần chuẩn bị, chia theo thời lượng 5, 15 và 30 phút.</p>
+  <p class="by">Tặng các gia đình trong cộng đồng <b>Gia Đình Thịnh Vượng</b>. In ra dán tường, mỗi cuối tuần chọn một trò.</p>
+  <div class="print"><button onclick="window.print()">In ra để dán tường</button></div>
+</header>
+
+<section>
+  <h2><span class="n">Đọc trước khi chơi</span>Bốn quy tắc — quan trọng hơn cả mười hai trò</h2>
+  <p class="sub">Cùng một trò, chơi đúng cách thì con nhớ cả đời, chơi sai cách thì con không muốn chơi lần hai.</p>
+  <div class="rules">
+    <div class="rule"><b>Bố mẹ chơi thật, thua thật</b><span>Nhường giả là con biết ngay và mất hứng. Thua thật rồi cười — đó là bài học lớn hơn cả trò chơi.</span></div>
+    <div class="rule"><b>Không vừa chơi vừa nhìn điện thoại</b><span>Con đo tình yêu bằng sự chú ý, không bằng thời lượng. Mười lăm phút trọn vẹn hơn hai tiếng nửa vời.</span></div>
+    <div class="rule"><b>Không biến trò chơi thành bài học</b><span>Chơi xong đừng giảng "con thấy chưa, phải kiên nhẫn". Chỉ hỏi: "Lúc nào con thấy khó nhất?"</span></div>
+    <div class="rule"><b>Dừng khi đang vui</b><span>Dừng lúc còn muốn chơi thêm thì lần sau con sẽ đòi. Chơi tới lúc chán là lần sau con từ chối.</span></div>
+  </div>
+</section>
+<section><span class="age">5 phút</span><h2>Trò chơi 5 phút</h2><ol class="q"><li><span><b>Đoán đồ trong nhà</b> <span style="color:var(--muted);font-size:13.5px">· 3–10 tuổi</span><br>Một người nghĩ ra một đồ vật trong nhà. Người kia hỏi tối đa 10 câu chỉ trả lời có/không để đoán ra. Ai đoán bằng ít câu hơn thì thắng.<br><span style="color:var(--jade);font-size:14.5px">→ Dạy con đặt câu hỏi để thu hẹp dần — nền tảng của tư duy logic.</span></span></li><li><span><b>Kể chuyện nối câu</b> <span style="color:var(--muted);font-size:13.5px">· 4 tuổi trở lên</span><br>Mỗi người nói đúng một câu để nối thành một chuyện. Chuyện càng vô lý càng vui. Không ai được sửa câu của người trước.<br><span style="color:var(--jade);font-size:14.5px">→ Dạy con lắng nghe trước khi nói, và chấp nhận ý người khác.</span></span></li><li><span><b>Ai nhớ giỏi hơn</b> <span style="color:var(--muted);font-size:13.5px">· 4 tuổi trở lên</span><br>Bày 7 món đồ lên bàn, nhìn 30 giây, úp khăn lại, mỗi người kể tên món nhớ được. Bố mẹ cứ thua thật, đừng nhường giả.<br><span style="color:var(--jade);font-size:14.5px">→ Rèn trí nhớ ngắn hạn. Và dạy con rằng người lớn cũng có lúc thua.</span></span></li><li><span><b>Nói chậm nhất</b> <span style="color:var(--muted);font-size:13.5px">· 6 tuổi trở lên</span><br>Mỗi người kể một chuyện ngắn; ai nói chậm nhất mà vẫn kể xong trong một phút thì thắng.<br><span style="color:var(--jade);font-size:14.5px">→ Trẻ hiếu động rất thích trò này, và nó dạy con điều tiết bản thân.</span></span></li><section><span class="age">15 phút</span><h2>Trò chơi 15 phút</h2><ol class="q"><li><span><b>Tháp cốc chậm</b> <span style="color:var(--muted);font-size:13.5px">· 3–9 tuổi</span><br>Xếp cốc nhựa thành tháp, mỗi lượt chỉ được đặt một cốc và phải đếm tới ba mới được đặt tiếp. Vội là tháp đổ.<br><span style="color:var(--jade);font-size:14.5px">→ Cho con thấy tận mắt cái giá của việc vội — hiệu quả hơn mọi lời nhắc.</span></span></li><li><span><b>Truyền nước không đổ</b> <span style="color:var(--muted);font-size:13.5px">· 5 tuổi trở lên</span><br>Một cốc nước đầy, cả nhà đứng thành hàng, truyền tay nhau đi hết một vòng nhà. Đo xem còn lại bao nhiêu. Chơi ba vòng, cố cải thiện.<br><span style="color:var(--jade);font-size:14.5px">→ Cả nhà cùng thắng hoặc cùng thua — không ai bị loại, không ai bị đổ lỗi.</span></span></li><li><span><b>Phỏng vấn ông bà</b> <span style="color:var(--muted);font-size:13.5px">· 6 tuổi trở lên</span><br>Con làm phóng viên, hỏi ông bà 5 câu về hồi ông bà bằng tuổi con. Ghi âm hoặc quay lại.<br><span style="color:var(--jade);font-size:14.5px">→ Nối ba thế hệ, và giữ được những câu chuyện sẽ mất nếu không ai hỏi.</span></span></li><li><span><b>Vẽ chân dung mù</b> <span style="color:var(--muted);font-size:13.5px">· 4 tuổi trở lên</span><br>Hai người ngồi đối diện, vẽ chân dung nhau nhưng không được nhìn xuống giấy. Kết quả luôn buồn cười.<br><span style="color:var(--jade);font-size:14.5px">→ Trò phá băng tốt nhất khi cả nhà đang căng thẳng với nhau.</span></span></li><section><span class="age">30 phút</span><h2>Trò chơi 30 phút</h2><ol class="q"><li><span><b>Săn tìm kho báu trong nhà</b> <span style="color:var(--muted);font-size:13.5px">· 4 tuổi trở lên</span><br>Bố mẹ giấu một phần thưởng nhỏ và viết 5 mẩu gợi ý, mỗi mẩu chỉ tới chỗ mẩu tiếp theo. Gợi ý là câu đố về kỷ niệm gia đình, không phải câu đố kiến thức.<br><span style="color:var(--jade);font-size:14.5px">→ Phần hay nhất không phải kho báu, mà là lúc dừng lại kể kỷ niệm ở mỗi chỗ giấu.</span></span></li><li><span><b>Cả nhà cùng nấu một món</b> <span style="color:var(--muted);font-size:13.5px">· 3 tuổi trở lên</span><br>Chia việc theo tuổi để con có một việc có kết quả nhìn thấy được: rửa rau, đập trứng, nêm nếm, nấu chính một món.<br><span style="color:var(--jade);font-size:14.5px">→ Con làm hỏng thì để hỏng. Giành lại làm hộ là con hiểu mình thừa trong bếp.</span></span></li><li><span><b>Đổi vai một buổi tối</b> <span style="color:var(--muted);font-size:13.5px">· 8 tuổi trở lên</span><br>Con làm bố mẹ, bố mẹ làm con — trong đúng một tiếng. Con quyết định giờ ăn, nhắc nhở, phân việc.<br><span style="color:var(--jade);font-size:14.5px">→ Anh chị sẽ nghe lại chính giọng mình từ miệng con. Đây là trò dạy bố mẹ nhiều hơn dạy con.</span></span></li><li><span><b>Bản đồ nhà mình</b> <span style="color:var(--muted);font-size:13.5px">· 6 tuổi trở lên</span><br>Cả nhà cùng vẽ một tấm bản đồ ngôi nhà, đánh dấu những chỗ có kỷ niệm và ghi kỷ niệm đó lên.<br><span style="color:var(--jade);font-size:14.5px">→ Treo lên tường. Mỗi lần có kỷ niệm mới thì ghi thêm — sau vài năm nó thành một tài sản.</span></span></li></ol></section>
+<section>
+  <h2><span class="n">Khi con không muốn chơi</span>Ba cách gỡ</h2>
+  <div class="rescue">
+    <div class="k">Thử theo thứ tự này</div>
+    <ul>
+      <li><b>Đừng rủ — hãy bắt đầu chơi một mình.</b> Ngồi xuống bày cốc ra và tự chơi. Trẻ tò mò sẽ tự đến. Rủ trực tiếp thường bị từ chối.</li>
+      <li><b>Cho con làm người ra luật.</b> "Con đặt luật đi, bố mẹ theo." Được cầm quyền thì con vào cuộc ngay.</li>
+      <li><b>Hạ xuống năm phút.</b> "Chơi năm phút thôi rồi con làm gì cũng được." Năm phút thường thành ba mươi.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <div class="k">Một điều cuối</div>
+    <p>Mục tiêu của mười hai trò này không phải để con thông minh hơn. Mục tiêu là để mỗi tuần có một khoảng thời gian mà cả nhà cùng cười vì một chuyện vô nghĩa. Những khoảng đó là thứ con sẽ nhớ khi lớn — chứ không phải điểm số.</p>
+  </div>
+</section>
+
+<footer>
+  <p><b>Gia Đình Thịnh Vượng</b> — cộng đồng các gia đình cùng nhau xây nếp nhà. Mỗi tuần cả nhà nhận một việc nhỏ làm được ngay tối nay.</p>
+  <p style="margin-top:12px">Bộ công cụ này miễn phí. Anh chị dùng được thì cứ gửi cho gia đình khác — ở đây chúng tôi tin <b>cho là nhận</b>.</p>
+</footer>
+</div>
