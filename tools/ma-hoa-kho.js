@@ -144,6 +144,10 @@ const NGHE = [
      bảng bốn tầng bảo vệ kể ra CHÍNH XÁC những gì đang giữ kho và những
      chỗ chưa giữ được — đưa ra ngoài là đưa cho người khác bản đồ chỗ hở. */
   'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT',
+  /* Luồng cải tiến. Ở gói NGHỀ vì nó chỉ có nghĩa với người CÓ đầu việc
+     trong hệ, và vì bảng loại đề xuất nói rõ vai nào quyết chuyện gì —
+     tức là một phần sơ đồ quyền quyết định bên trong Học viện. */
+  'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */

@@ -42,9 +42,34 @@ const { chromium } = require(PW);
   console.log(coKhoa ? '\n(có bộ khoá — kiểm cả nội dung đã cấp phép)' : '\n(không có bộ khoá — kiểm ở chế độ mẫu)');
 
   let loi = 0;
+  /* ── CHẾ ĐỘ IM: chỉ in chỗ ĐỎ ──
+     Bộ kiểm đầy đủ in ra 867 dòng, 80 KB. Với người đọc bằng mắt thì đó
+     là bằng chứng mọi thứ đã được soi. Với một phiên làm việc cùng máy
+     thì đó là tám mươi nghìn ký tự phải nuốt mỗi lần chạy, và chạy năm
+     lần một buổi là hết sạch phần tài nguyên lẽ ra dành cho việc thật.
+
+     Nên thêm cờ --im: chạy y hệt, đo y hệt, nhưng chỉ in chỗ hỏng và một
+     dòng kết. Không phép kiểm nào bị bỏ — chỉ bớt phần khoe. Đo thật:
+     80.614 ký tự xuống 184, và vẫn chạy đủ 759 phép đo.
+
+     Chỗ hỏng in kèm SỐ MỤC, vì ở chế độ im thì tiêu đề mục bị nuốt, mà
+     một dòng đỏ không biết thuộc mục nào thì phải chạy lại bản đầy đủ để
+     tìm — tức là mất luôn phần vừa tiết kiệm được. */
+  const IM = process.argv.includes('--im');
+  let mucNay = '';
+  let soDat = 0;
+  const goc = console.log;
+  console.log = function (...a) {
+    const chu = String(a[0] || '');
+    const m = chu.match(/^\n?(\d+) · /);
+    if (m) mucNay = m[1];
+    if (IM && !/✗/.test(chu)) return;      /* im: nuốt mọi dòng không đỏ */
+    goc.apply(console, a);
+  };
   const bao = (ok, ten, chiTiet) => {
-    if (!ok) loi++;
-    console.log((ok ? '  ✓ ' : '  ✗ ') + ten + (chiTiet ? ' — ' + chiTiet : ''));
+    if (!ok) loi++; else soDat++;
+    const dau = (IM && !ok && mucNay) ? '  ✗ [mục ' + mucNay + '] ' : (ok ? '  ✓ ' : '  ✗ ');
+    console.log(dau + ten + (chiTiet ? ' — ' + chiTiet : ''));
   };
 
   /* Đăng nhập vai cao nhất để mở kho theo cấp phép rồi mới rà toàn vẹn */
@@ -4075,7 +4100,8 @@ const { chromium } = require(PW);
             'MT_BANG_NHOM', 'MT_BANG_LUAT', 'MT_DO', 'BRAND', 'TAMNHIN100', 'TANG100',
             'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
             'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
-            'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT']
+            'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT',
+            'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT']
             .filter(k => window.G[k] !== undefined)
         }));
       }
@@ -4105,12 +4131,12 @@ const { chromium } = require(PW);
         trongMay.COACH.cvNoiBo + ' đầu việc · ' + trongMay.COACH.cvXongThat + ' có bằng chứng');
 
       bao(!trongMay.PH.khoNghe.length && !trongMay.HS.khoNghe.length,
-        'khách hàng KHÔNG giữ ba mươi kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
+        'khách hàng KHÔNG giữ ba mươi tư kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
         trongMay.PH.khoNghe.concat(trongMay.HS.khoNghe).slice(0, 6).join(' ') ||
-        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/30');
-      bao(trongMay.COACH.khoNghe.length === 30,
-        'người trong nghề vẫn nhận đủ ba mươi kho ấy — dời kho không được làm hỏng việc của Coach',
-        trongMay.COACH.khoNghe.length + '/30');
+        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/34');
+      bao(trongMay.COACH.khoNghe.length === 34,
+        'người trong nghề vẫn nhận đủ ba mươi tư kho ấy — dời kho không được làm hỏng việc của Coach',
+        trongMay.COACH.khoNghe.length + '/34');
 
       /* ══ PHÂN LUỒNG DỮ LIỆU: KHO PHẢI ĐI THEO QUYỀN CỦA MÀN HÌNH ══
          Ý định của sản phẩm đã ghi sẵn ở quyền của từng màn. Nếu MỌI màn
@@ -4131,7 +4157,8 @@ const { chromium } = require(PW);
           'MT_BANG_NHOM', 'MT_BANG_LUAT', 'MT_DO', 'BRAND', 'TAMNHIN100', 'TANG100',
           'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
           'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
-          'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT'];
+          'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT',
+          'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT'];
         const lac = CHI_NGHE.filter(k => nen[k] !== undefined);
         bao(!lac.length,
           'gói NỀN không mang kho mà mọi màn đọc nó đều khoá ở quyền nghề — ý định nằm ở quyền của màn hình, kho phải đi theo đúng ý định ấy',
@@ -5241,7 +5268,82 @@ const { chromium } = require(PW);
     }
   }
 
-  console.log('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành'));
+  /* ── 48. LUỒNG CẢI TIẾN ──
+     Một hộp thư góp ý không ai trả lời còn tệ hơn không có hộp nào: nó
+     dạy người ta rằng nói ra là vô ích. Mục này soi đúng chỗ dễ hỏng ấy
+     — hạn trả lời có thật không, từ chối có bắt buộc lý do không, và
+     điểm có chấm cho việc NÓI RA hay chỉ cho việc được nhận. */
+  console.log('\n48 · LUỒNG CẢI TIẾN TỪ NGƯỜI LÀM');
+  {
+    const ct = await p.evaluate(async () => {
+      const G = window.G, ra = {};
+      if (!G.CT_LOAI || !G.ctGui) return { co: false };
+      ra.co = true;
+      const vaiCo = new Set((G.ROLES || []).map(r => r.id));
+      ra.vaiLa = (G.CT_LOAI || []).filter(l => !vaiCo.has(l.vai)).map(l => l.ma);
+      ra.soLoai = (G.CT_LOAI || []).length;
+      ra.soTrang = (G.CT_TRANG || []).length;
+      ra.trangThieu = (G.CT_TRANG || []).filter(t => !t.y || !t.ra).map(t => t.ma);
+
+      /* Chạy thật một vòng đời, trên sổ rỗng */
+      const giu = G.S.caiTien, giuVai = G.S.roleObj;
+      G.S.caiTien = {}; G.S.roleObj = G.roleById('R07');
+
+      ra.chanNgan = G.ctGui('CT-QUY', 'ngắn quá').ok === false;
+      const g = G.ctGui('CT-QUY', 'Bước bàn giao đang phải nhập lại tên nhà hai lần, một lần ở hồ sơ và một lần ở biên bản.');
+      ra.guiDuoc = g.ok;
+      const id = g.ok ? g.de.id : null;
+      ra.ganNguoi = g.ok && g.de.nguoiTraLoi === 'R04';
+      ra.trangMoi = id && G.ctTrangThai(G.ctSo()[id]) === 'moi';
+
+      /* Quá hạn do ĐỒNG HỒ, không do ai bấm */
+      if (id) G.ctSo()[id].guiLuc = Date.now() - 20 * 86400000;
+      ra.tuTre = id && G.ctTrangThai(G.ctSo()[id]) === 'tre';
+
+      ra.nhanKhongNgay = id && G.ctNhan(id, '').ok === false;
+      ra.tuChoiKhongLyDo = id && G.ctKhongNhan(id, 'chưa phù hợp').ok === false;
+      ra.tuChoiCoLyDo = id && G.ctKhongNhan(id, 'Chỗ này sắp bỏ hẳn ở bản sau nên sửa bây giờ là làm hai lần.').ok === true;
+
+      /* Điểm phải cộng cho người GỬI dù bị từ chối */
+      const d = G.ctDiemCua('R07');
+      ra.diemDuBiTuChoi = d.diem >= (G.CT_DIEM || {}).gui;
+
+      /* Nhận thì bắt buộc ngày áp */
+      G.S.caiTien = {};
+      const g2 = G.ctGui('CT-CU', 'Màn danh mục đầu việc phải cuộn xuống cuối mới thấy nút nhận việc trên máy tính bảng.');
+      ra.nhanCoNgay = g2.ok && G.ctNhan(g2.de.id, '2026-10-01').ok === true;
+
+      G.S.caiTien = giu; G.S.roleObj = giuVai;
+      ra.soLuat = (G.CT_LUAT || []).length;
+      return ra;
+    });
+    if (!ct.co) {
+      bao(false, 'luồng cải tiến nạp được từ gói nghề', 'không thấy CT_LOAI');
+    } else {
+      bao(ct.soLoai === 5 && !ct.vaiLa.length,
+        'năm loại đề xuất, loại nào cũng gán sẵn một vị trí CÓ THẬT phải trả lời — gửi nhầm tay là đề xuất chết ngay ở bước đầu',
+        ct.vaiLa.join(' ') || '5/5 có người nhận');
+      bao(ct.soTrang === 5 && !ct.trangThieu.length,
+        'năm trạng thái, trạng thái nào cũng nói rõ NGHĨA LÀ GÌ và RA KHỎI ĐÂY BẰNG CÁCH NÀO',
+        ct.trangThieu.join(' ') || '5/5 đủ hai cột');
+      bao(ct.chanNgan && ct.guiDuoc && ct.ganNguoi && ct.trangMoi,
+        'gửi được một đề xuất có nội dung, và nó được gán NGAY cho người phải trả lời — không đề xuất nào rơi vào khoảng không chờ ai nhặt lên');
+      bao(ct.tuTre,
+        'quá mười bốn ngày thì đề xuất TỰ sang cột đỏ — im lặng không phải câu trả lời, và đồng hồ chạy chứ không chờ ai bấm');
+      bao(ct.nhanKhongNgay,
+        'nhận mà KHÔNG có ngày áp thì hệ thống không cho đóng — nhận suông là từ chối lịch sự, và đắt hơn từ chối thẳng vì người ta còn chờ');
+      bao(ct.tuChoiKhongLyDo && ct.tuChoiCoLyDo,
+        'từ chối bắt buộc có lý do viết ra — "chưa phù hợp" bị chặn, vì đó là cách nói không mà tránh phải nghĩ');
+      bao(ct.diemDuBiTuChoi,
+        'điểm vẫn cộng cho người GỬI dù đề xuất bị từ chối — chấm theo kết quả thì người ta chỉ nói những chỗ chắc được duyệt, mà chỗ vướng thật lại là chỗ dễ bị từ chối nhất');
+      bao(ct.nhanCoNgay && ct.soLuat === 6,
+        'nhận kèm ngày áp thì đóng được, và sáu luật của luồng đều có mặt',
+        ct.soLuat + '/6 luật');
+    }
+  }
+
+  goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
+    ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();
   process.exit(loi ? 1 : 0);
 })();

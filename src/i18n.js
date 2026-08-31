@@ -188,6 +188,7 @@ G.ITEM_EN = {
   'the-diem-can-bang':['Balanced scorecard','One measure per objective · 7 review rhythms'],
   'tinh-gon':['Lean process','7 kinds of waste · 10 principles that cut real cost'],
   'giai-doan-bao-ve':['Stages and layers of defence','5 stages · 4 layers, including what is still missing'],
+  'cai-tien':['Improvements from the people doing the work','Name what is stuck · someone must answer within 14 days'],
   'chuan-nhat':['Operating standard','Kaizen · Monozukuri · Omotenashi · Shokunin'],
   'ai-dieu-phoi':['AI orchestration','Tier limits · KPI routing · capability review'],
   'an-toan-du-lieu':['The data shield','Anti-copy · anti-impersonation'],

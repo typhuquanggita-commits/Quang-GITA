@@ -70,6 +70,7 @@
     "src/tien-bo.js",
     "src/chien-luoc.js",
     "src/tinh-gon.js",
+    "src/cai-tien.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",

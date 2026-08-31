@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.9',
+  version: '9.10',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -465,7 +465,10 @@ G.NAV = [
     {v:'ban-do-chien-luoc',t:'Bản đồ chiến lược',      h:'4 tầng · 18 mục tiêu · chuỗi nhân quả kiểm được', ic:'map', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'the-diem-can-bang',t:'Thẻ điểm cân bằng',      h:'Mỗi mục tiêu một thước · 7 nhịp xem lại', ic:'chart', perm:'nghe_chung', capMo:'nghe'},
     {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
-    {v:'giai-doan-bao-ve',t:'Giai đoạn và lớp bảo vệ', h:'5 giai đoạn · 4 tầng bảo vệ, kể cả chỗ chưa có', ic:'shield', perm:'nghe_chung', capMo:'nghe'}
+    {v:'giai-doan-bao-ve',t:'Giai đoạn và lớp bảo vệ', h:'5 giai đoạn · 4 tầng bảo vệ, kể cả chỗ chưa có', ic:'shield', perm:'nghe_chung', capMo:'nghe'},
+    /* Chỉ hiện với vai CÓ đầu việc trong hệ — luồng này để người LÀM nói
+       chỗ vướng, nên nó vô nghĩa với tài khoản không được giao việc gì. */
+    {v:'cai-tien',    t:'Cải tiến từ người làm',       h:'Nói chỗ vướng · có người trả lời trong 14 ngày', ic:'lightning', perm:'nghe_chung', hienKhi:'cvVaiCoDauViec', capMo:'nghe'}
    ]},
 
   {id:'g3',no:'03',ic:'vault',c:'#0B6675',
