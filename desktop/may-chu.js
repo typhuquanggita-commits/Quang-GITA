@@ -141,10 +141,15 @@ function quaNhip(van) {
 /* ─────────── Mã hoá lại một gói bằng khoá dùng một lần ───────────
    Định dạng phải khớp đúng cái src/kho-khoa.js chờ: iv(12) + tag(16) + bản mã. */
 function maLai(goiRo) {
+  /* goiRo là BYTE, không phải chữ. Từ bản 9.9 ruột gói được nén trước khi
+     mã hoá, nên nó là gzip — nhị phân. Đi qua toString('utf8') là hỏng
+     không cứu được: mọi byte không hợp lệ theo UTF-8 bị thay bằng U+FFFD,
+     và máy khách giải nén ra rác. Giữ Buffer suốt đường là xong. */
+  const ro = Buffer.isBuffer(goiRo) ? goiRo : Buffer.from(goiRo, 'utf8');
   const khoa = crypto.randomBytes(32);
   const iv = crypto.randomBytes(12);
   const c = crypto.createCipheriv('aes-256-gcm', khoa, iv);
-  const ct = Buffer.concat([c.update(goiRo, 'utf8'), c.final()]);
+  const ct = Buffer.concat([c.update(ro), c.final()]);
   return { khoa: khoa.toString('base64'), goi: Buffer.concat([iv, c.getAuthTag(), ct]) };
 }
 
@@ -156,7 +161,8 @@ function moGoiGoc(ten, khoaB64) {
   const raw = Buffer.from(khoaB64, 'base64');
   const d = crypto.createDecipheriv('aes-256-gcm', raw, b.subarray(0, 12));
   d.setAuthTag(b.subarray(12, 28));
-  return Buffer.concat([d.update(b.subarray(28)), d.final()]).toString('utf8');
+  /* Trả BUFFER, không trả chuỗi — ruột gói nay là gzip. */
+  return Buffer.concat([d.update(b.subarray(28)), d.final()]);
 }
 
 /* ─────────── Dọn phiên hết hạn và máy chờ quá lâu ─────────── */

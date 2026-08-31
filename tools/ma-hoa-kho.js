@@ -140,6 +140,10 @@ const NGHE = [
      Mở nó ra công khai là đưa cho người khác đúng bản thiết kế cách Học
      viện tự lái mình. Hai màn đọc nó đều khoá ở quyền nghề. */
   'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
+  /* Quy trình tinh gọn, năm giai đoạn, bốn tầng bảo vệ. Ở gói NGHỀ vì
+     bảng bốn tầng bảo vệ kể ra CHÍNH XÁC những gì đang giữ kho và những
+     chỗ chưa giữ được — đưa ra ngoài là đưa cho người khác bản đồ chỗ hở. */
+  'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -319,8 +323,20 @@ const khoa = {};
 let tong = 0;
 let giu = 0;
 
+/* ── NÉN TRƯỚC, MÃ HOÁ SAU ──
+   Thứ tự này không đảo được. Nén trước thì nén được thật vì JSON lặp rất
+   nhiều: đo trên kho thật, 13,6 MB xuống 2,07 MB, riêng các gói tầng giảm
+   14 đến 31 lần vì ma trận và bộ test lặp cấu trúc gần như hoàn toàn. Nén
+   sau khi mã hoá thì không giảm nổi một phần trăm — bản đã mã hoá là chuỗi
+   ngẫu nhiên, mà thứ ngẫu nhiên thì không nén được. Đó là định nghĩa.
+
+   Máy khách nhận ra gói đã nén bằng hai byte đầu (0x1F 0x8B) sau khi giải
+   mã, nên KHÔNG phải đổi định dạng phong bì và gói cũ vẫn mở được. */
+const zlib = require('zlib');
+
 for (const [ten, du] of Object.entries(goi)) {
-  const ro = Buffer.from(JSON.stringify(du), 'utf8');
+  const chu = Buffer.from(JSON.stringify(du), 'utf8');
+  const ro = zlib.gzipSync(chu, { level: 9 });
   const k = khoaCu[ten] ? Buffer.from(khoaCu[ten], 'base64') : crypto.randomBytes(32);
   if (khoaCu[ten] && k.length === 32) giu++; else if (khoaCu[ten]) throw new Error('Khoá cũ của gói ' + ten + ' không đúng 32 byte.');
   const iv = crypto.randomBytes(12);
@@ -331,8 +347,9 @@ for (const [ten, du] of Object.entries(goi)) {
   fs.writeFileSync(path.join(RA, ten + '.enc'), Buffer.concat([iv, tag, ma]));
   khoa[ten] = k.toString('base64');
   tong += ma.length;
-  console.log('  ' + ten.padEnd(8) + ' ' + String(Math.round(ro.length / 1024)).padStart(4) + ' KB → ' +
-    String(Math.round(ma.length / 1024)).padStart(4) + ' KB đã mã hoá');
+  console.log('  ' + ten.padEnd(8) + ' ' + String(Math.round(chu.length / 1024)).padStart(5) + ' KB → ' +
+    String(Math.round(ma.length / 1024)).padStart(5) + ' KB nén rồi mã hoá  (giảm ' +
+    (chu.length / ma.length).toFixed(1) + 'x)');
 }
 
 fs.writeFileSync(path.join(RA, 'khoa.json'), JSON.stringify({

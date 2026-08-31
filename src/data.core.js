@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.8',
+  version: '9.9',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -463,7 +463,9 @@ G.NAV = [
        nhưng việc sáng nay đẩy vào chỗ nào của một trăm năm ấy.
        Khoá ở nghe_chung — đây là bản thiết kế cách Học viện tự lái mình. */
     {v:'ban-do-chien-luoc',t:'Bản đồ chiến lược',      h:'4 tầng · 18 mục tiêu · chuỗi nhân quả kiểm được', ic:'map', star:1, perm:'nghe_chung', capMo:'nghe'},
-    {v:'the-diem-can-bang',t:'Thẻ điểm cân bằng',      h:'Mỗi mục tiêu một thước · 7 nhịp xem lại', ic:'chart', perm:'nghe_chung', capMo:'nghe'}
+    {v:'the-diem-can-bang',t:'Thẻ điểm cân bằng',      h:'Mỗi mục tiêu một thước · 7 nhịp xem lại', ic:'chart', perm:'nghe_chung', capMo:'nghe'},
+    {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
+    {v:'giai-doan-bao-ve',t:'Giai đoạn và lớp bảo vệ', h:'5 giai đoạn · 4 tầng bảo vệ, kể cả chỗ chưa có', ic:'shield', perm:'nghe_chung', capMo:'nghe'}
    ]},
 
   {id:'g3',no:'03',ic:'vault',c:'#0B6675',

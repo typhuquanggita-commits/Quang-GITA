@@ -48,6 +48,7 @@ G.THUOC_CAP_PHEP = [
   'CHUYEN','SH_HOI','KH_BAI',
   /* Tháp chiến lược và bản đồ bốn tầng — bản thiết kế cách Học viện tự lái mình. */
   'CL_THAP','CL_TANG','CL_MUC','CL_KETQUA','CL_NHIP','CL_NHAT','CL_LUAT',
+  'TG_LANG','TG_GON','TG_GIAIDOAN','TG_LOP','TG_GON_LUAT',
   /* Lớp băng của ma trận: từ 9.8 nó về gói nghề cùng MATRAN, vì mọi
      màn đọc nó đều khoá ở quyền nghề. */
   'MT_BANG','MT_BANG_MA','MT_BANG_TANG','MT_BANG_NHOM','MT_BANG_LUAT','MT_DO',
@@ -121,6 +122,18 @@ G.goiDuocCap = function () {
     .filter(function (mt) { var t = G.tuyen && G.tuyen(mt); return t && t.trangThai === 'chay'; });
   var moTang = (r.lv <= 12 || r.portal === 'ph' || r.portal === 'hs');
 
+  /* ── TẦNG CAO NHẤT ĐƯỢC CẤP PHÉP ──
+     Đội ngũ (bậc ≤ 12) phải mở được mọi tầng: họ phục vụ nhà ở mọi tầng,
+     và một Coach không đọc được tầng của nhà mình đang theo thì không làm
+     được việc. Khách hàng thì KHÔNG: họ chỉ mở tới tầng đã mua.
+
+     Trước 9.9 chỗ này xin cả năm tầng cho mọi khách hàng, và vì bảng cấp
+     phát của máy chủ dựng bằng chính hàm này, máy chủ CẤP THẬT cả năm.
+     Hai cái giá cùng lúc: một nhà Tầng 1 giữ trong máy tư liệu Tầng 5 mà
+     họ chưa mua, và 6,6 MB đường truyền cho phần không được dùng. */
+  var tangToiDa = (r.lv <= 12) ? G.TUYEN_SO_TANG
+    : Math.max(1, Math.min(G.TUYEN_SO_TANG, Number(G.S.acc && G.S.acc.tang) || 1));
+
   tuyen.forEach(function (mt) {
     /* Bậc 12 chứ không phải 11. Ba bảng khác đều nói kho nghề mở tới R12
        (G.PERM.nghe_chung = 12, G.TANG_HIENTHI, và bảng tỉ lệ hiển thị),
@@ -129,7 +142,7 @@ G.goiDuocCap = function () {
        xin cấp phép. */
     if (r.lv <= 12) ds.push(G.goiNghe(mt));
     if (moTang)
-      for (var i = 1; i <= G.TUYEN_SO_TANG; i++) ds.push(G.goiTang(mt, i));
+      for (var i = 1; i <= tangToiDa; i++) ds.push(G.goiTang(mt, i));
   });
 
   return ds.filter(function (g, i) { return g && ds.indexOf(g) === i; });
@@ -244,7 +257,30 @@ function moGoi(ten, khoaB64) {
       return crypto.subtle.importKey('raw', raw, 'AES-GCM', false, ['decrypt'])
         .then(function (k) { return crypto.subtle.decrypt({ name: 'AES-GCM', iv: iv }, k, kem); });
     })
-    .then(function (ro) { return JSON.parse(new TextDecoder().decode(ro)); });
+    .then(function (ro) { return giaiNen(ro); })
+    .then(function (chu) { return JSON.parse(chu); });
+}
+
+/* ── Giải nén sau khi giải mã ──
+   Từ bản 9.9, ruột của gói được NÉN trước rồi mới mã hoá. Vì sao theo thứ
+   tự ấy: nén trước thì nén được thật (JSON lặp rất nhiều), còn nén sau
+   thì không — bản đã mã hoá là chuỗi ngẫu nhiên, nén vào không giảm nổi
+   một phần trăm. Đo trên kho thật: 13,6 MB xuống 2,07 MB, riêng các gói
+   tầng giảm 14 đến 31 lần.
+
+   Không cần thêm cờ hay đổi định dạng phong bì: JSON luôn bắt đầu bằng
+   '{' (0x7B), còn gzip luôn bắt đầu bằng 0x1F 0x8B. Hai giá trị ấy không
+   bao giờ trùng, nên chỉ cần nhìn hai byte đầu là biết. Nhờ vậy gói cũ
+   chưa nén vẫn mở được bình thường — không có ngày nào người dùng phải
+   tải lại toàn bộ kho vì đổi định dạng. */
+function giaiNen(buf) {
+  var u8 = new Uint8Array(buf);
+  if (!(u8[0] === 0x1f && u8[1] === 0x8b)) return Promise.resolve(new TextDecoder().decode(buf));
+  if (typeof DecompressionStream !== 'function')
+    return Promise.reject(new Error('Trình duyệt này chưa giải nén được gzip. Cần bản mới hơn.'));
+  var ds = new DecompressionStream('gzip');
+  var w = ds.writable.getWriter(); w.write(u8); w.close();
+  return new Response(ds.readable).text();
 }
 
 /* ── Gộp nội dung đã mở vào G, chỉ trong bộ nhớ ── */
@@ -306,10 +342,19 @@ G.napKho = function () {
     .then(function (khoa) {
       if (!khoa) return napMau();
       var co = ds.filter(function (t) { return khoa[t]; });
-      /* Gói nền và gói nghề mở trước — có chúng là dùng được ngay.
-         Gói theo tầng nặng hơn nhiều nên mở tiếp ở nền, xong gói nào
-         thì màn hình đang mở tự dựng lại. Người dùng không phải chờ. */
-      var truoc = co.filter(function (t) { return t === 'nen' || t === 'nghe'; });
+      /* CHỈ gói nền mở trước. Có nó là cột trái dựng được, màn đầu dựng
+         được, người ta bắt đầu làm việc được.
+
+         Gói nghề từng nằm ở đây cùng gói nền, và cái giá đo được: một
+         Coach phải chờ 6,6 MB giải mã xong mới thấy màn hình đầu tiên —
+         1.196 ms đứng nhìn màn chờ. Nhưng màn đầu của Coach không đọc
+         một chữ nào của gói nghề.
+
+         Nay gói nghề mở ở nền như gói tầng. Màn nào cần nó mà nó chưa
+         xong thì render() đã có sẵn thẻ "Đang mở kho" và tự dựng lại khi
+         gói tới — cơ chế ấy có từ 7.x cho gói tầng, chỉ là chưa ai dùng
+         cho gói nghề. */
+      var truoc = co.filter(function (t) { return t === 'nen'; });
       var sau   = co.filter(function (t) { return truoc.indexOf(t) < 0; });
 
       function mo(t) {
@@ -335,8 +380,13 @@ G.napKho = function () {
         /* Không chờ phần này — để nó chạy ở nền */
         sau.forEach(function (t) {
           mo(t).then(function () {
-            if (G.render && G.S.acc && !G.coGoi(G.goiCanCho(G.S.view))) return;
-            if (G.render && G.S.acc && G.goiCanCho(G.S.view) === t) G.render();
+            if (!G.S.acc) return;
+            /* Cột trái dựng lại mỗi lần một gói về. Vài mục chỉ hiện khi
+               CÓ dữ liệu trong kho, nên gói về muộn mà cột không dựng lại
+               thì mục ấy ẩn luôn tới lần chuyển màn kế tiếp. */
+            if (G.veLaiCot) G.veLaiCot();
+            if (G.render && !G.coGoi(G.goiCanCho(G.S.view))) return;
+            if (G.render && G.goiCanCho(G.S.view) === t) G.render();
           });
         });
       });

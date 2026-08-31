@@ -756,6 +756,19 @@ function render(){
   save();
 }
 G.render = render;
+/* ── Dựng lại cột trái, không đụng tới màn đang mở ──
+   Cần từ bản 9.9, khi gói nghề chuyển sang mở ở nền. Vài mục trong cột
+   chỉ hiện khi CÓ dữ liệu trong kho — "Bảng công việc" và "Danh mục đầu
+   việc" hỏi G.cvVaiCoDauViec(), mà hàm ấy đọc danh mục nằm trong gói
+   nghề. Lúc cột được dựng lần đầu thì gói chưa về, nên hai mục ấy bị ẩn;
+   và trước khi có hàm này thì chúng ẩn LUÔN cho tới lần chuyển màn kế
+   tiếp, vì chỉ render() mới dựng lại cột.
+
+   Bộ kiểm bắt được đúng chỗ ấy: Super Admin thiếu hai nút trong cột. */
+G.veLaiCot = function(){
+  var l = document.getElementById('left');
+  if(l) l.innerHTML = leftNav();
+};
 G.save   = save;
 G.dangXuat = function(){ var b=document.querySelector('[data-act="logout"]'); if(b) b.click(); };
 

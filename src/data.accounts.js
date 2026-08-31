@@ -21,8 +21,13 @@ G.ACCOUNTS = [
   {u:'danhgia@gita365.vn',    p:'Gita#Assessor10',role:'R10',ten:'Hồ Bảo Khanh',     nha:'Trung tâm đánh giá'},
   {u:'tuvan@gita365.vn',      p:'Gita#Tuvan11',  role:'R11',ten:'Phan Đức Thắng',    nha:'Khoang mở cửa'},
   {u:'phantich@gita365.vn',   p:'Gita#Phantich12',role:'R12',ten:'Vũ Nhật Minh',     nha:'Ban dữ liệu'},
-  {u:'phuhuynh@gita365.vn',   p:'Gita#Phuhuynh13',role:'R13',ten:'Trần Quốc Bảo',    nha:'Nhà Minh An'},
-  {u:'hocvien@gita365.vn',    p:'Gita#Hocvien14', role:'R14',ten:'Trần Minh An',     nha:'Nhà Minh An · Lớp 9'},
+  /* `tang` = tầng CAO NHẤT nhà này đã được cấp phép. Không khai thì bằng 1.
+     Trước bản 9.9 trường này không tồn tại, và hậu quả là bảng cấp phát của
+     máy chủ mở CẢ NĂM gói tầng cho mọi khách hàng: một nhà mới mua Tầng 1
+     nhận về máy đủ tư liệu Tầng 5 — trái đúng luật anh Quang đặt ra, và
+     tốn 6,6 MB đường truyền cho phần họ không được dùng. */
+  {u:'phuhuynh@gita365.vn',   p:'Gita#Phuhuynh13',role:'R13',ten:'Trần Quốc Bảo',    nha:'Nhà Minh An', tang:3},
+  {u:'hocvien@gita365.vn',    p:'Gita#Hocvien14', role:'R14',ten:'Trần Minh An',     nha:'Nhà Minh An · Lớp 9', tang:3},
   {u:'daisu@gita365.vn',      p:'Gita#Daisu15',  role:'R15',ten:'Trần Diễm Quỳnh',   nha:'Vệ tinh miền Trung'}
 ];
 

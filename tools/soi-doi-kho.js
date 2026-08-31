@@ -23,6 +23,17 @@
    khoá, và đó là đúng.
    ═══════════════════════════════════════════════════════════════ */
 'use strict';
+/* ── Ruột của một gói sau khi giải mã ──
+   Từ bản 9.9 ruột được NÉN trước rồi mới mã hoá, nên sau khi giải mã có
+   thể là gzip. Nhận ra bằng hai byte đầu: JSON luôn mở bằng '{' (0x7B),
+   gzip luôn mở bằng 0x1F 0x8B — không bao giờ trùng, nên gói cũ chưa nén
+   vẫn đọc được y như trước. */
+const zlibGoi = require('zlib');
+function ruotGoi(ro) {
+  const b = Buffer.isBuffer(ro) ? ro : Buffer.from(ro);
+  return JSON.parse((b[0] === 0x1f && b[1] === 0x8b ? zlibGoi.gunzipSync(b) : b).toString('utf8'));
+}
+
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
@@ -33,7 +44,7 @@ const GOC = path.join(__dirname, '..');
 function mo(khoaB64, buf) {
   const de = crypto.createDecipheriv('aes-256-gcm', Buffer.from(khoaB64, 'base64'), buf.subarray(0, 12));
   de.setAuthTag(buf.subarray(12, 28));
-  return JSON.parse(Buffer.concat([de.update(buf.subarray(28)), de.final()]).toString('utf8'));
+  return ruotGoi(Buffer.concat([de.update(buf.subarray(28)), de.final()]));
 }
 
 let khoa;

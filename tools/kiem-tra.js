@@ -7,6 +7,17 @@
    trên toàn bộ màn hình · chống tiêm mã qua ô nhập của người dùng.
    ═══════════════════════════════════════════════════════════════ */
 'use strict';
+/* ── Ruột của một gói sau khi giải mã ──
+   Từ bản 9.9 ruột được NÉN trước rồi mới mã hoá, nên sau khi giải mã có
+   thể là gzip. Nhận ra bằng hai byte đầu: JSON luôn mở bằng '{' (0x7B),
+   gzip luôn mở bằng 0x1F 0x8B — không bao giờ trùng, nên gói cũ chưa nén
+   vẫn đọc được y như trước. */
+const zlibGoi = require('zlib');
+function ruotGoi(ro) {
+  const b = Buffer.isBuffer(ro) ? ro : Buffer.from(ro);
+  return JSON.parse((b[0] === 0x1f && b[1] === 0x8b ? zlibGoi.gunzipSync(b) : b).toString('utf8'));
+}
+
 const PW = process.env.PW_PATH || '/opt/node22/lib/node_modules/playwright';
 const URL = process.env.GITA_URL || 'http://127.0.0.1:8099/index.html';
 const { chromium } = require(PW);
@@ -145,8 +156,16 @@ const { chromium } = require(PW);
 
   /* ── 5. Bộ test nhận diện và KPI về đích ── */
   console.log('\n5 · BỘ TEST NHẬN DIỆN & KPI VỀ ĐÍCH');
-  await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
-  await p.waitForTimeout(2000);
+  /* Mục này soi TOÀN BỘ ngân hàng đề — 25 bộ, 750 câu, đủ năm tầng — nên
+     nó phải đăng nhập bằng vai mở được cả năm gói tầng.
+
+     Trước bản 9.9 nó đăng nhập bằng phụ huynh và vẫn thấy đủ 750 câu, vì
+     khi ấy MỌI khách hàng được cấp cả năm gói tầng — kể cả nhà mới mua
+     Tầng 1. Nay tầng cấp theo tầng đã mua, nên phụ huynh mẫu (Tầng 3) chỉ
+     thấy 15 bộ. Đó là đúng, và mục kiểm phải đổi vai chứ không phải nới
+     phạm vi cấp phép để cho vừa phép kiểm. */
+  await p.evaluate(() => window.G.doLogin('admin@gita365.vn'));
+  await p.waitForTimeout(2600);
   const t5 = await p.evaluate(() => {
     const G = window.G, T = G.TEST750 || [];
     const soCau = T.reduce((a, b) => a + b.cau.length, 0);
@@ -4020,7 +4039,7 @@ const { chromium } = require(PW);
         const b = fsG.readFileSync(f);
         const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG[ten], 'base64'), b.subarray(0, 12));
         de.setAuthTag(b.subarray(12, 28));
-        const j = JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8'));
+        const j = ruotGoi(Buffer.concat([de.update(b.subarray(28)), de.final()]));
         /* Cẩm nang một trang về gói tầng từ 9.8: nó là tư liệu CỦA TẦNG,
            cùng loại với bộ test và ma trận tầng — không phải tài sản nghề.
            Để nó ở gói nền như trước là gửi tư liệu năm tầng cho một nhà
@@ -4055,7 +4074,8 @@ const { chromium } = require(PW);
           khoNghe: ['CHANDUNG', 'MATRAN', 'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',
             'MT_BANG_NHOM', 'MT_BANG_LUAT', 'MT_DO', 'BRAND', 'TAMNHIN100', 'TANG100',
             'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
-            'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT']
+            'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
+            'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT']
             .filter(k => window.G[k] !== undefined)
         }));
       }
@@ -4085,12 +4105,12 @@ const { chromium } = require(PW);
         trongMay.COACH.cvNoiBo + ' đầu việc · ' + trongMay.COACH.cvXongThat + ' có bằng chứng');
 
       bao(!trongMay.PH.khoNghe.length && !trongMay.HS.khoNghe.length,
-        'khách hàng KHÔNG giữ hai mươi lăm kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
+        'khách hàng KHÔNG giữ ba mươi kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
         trongMay.PH.khoNghe.concat(trongMay.HS.khoNghe).slice(0, 6).join(' ') ||
-        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/18');
-      bao(trongMay.COACH.khoNghe.length === 25,
-        'người trong nghề vẫn nhận đủ hai mươi lăm kho ấy — dời kho không được làm hỏng việc của Coach',
-        trongMay.COACH.khoNghe.length + '/25');
+        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/30');
+      bao(trongMay.COACH.khoNghe.length === 30,
+        'người trong nghề vẫn nhận đủ ba mươi kho ấy — dời kho không được làm hỏng việc của Coach',
+        trongMay.COACH.khoNghe.length + '/30');
 
       /* ══ PHÂN LUỒNG DỮ LIỆU: KHO PHẢI ĐI THEO QUYỀN CỦA MÀN HÌNH ══
          Ý định của sản phẩm đã ghi sẵn ở quyền của từng màn. Nếu MỌI màn
@@ -4106,11 +4126,12 @@ const { chromium } = require(PW);
         const b = fsG.readFileSync(pxG.join(gocG, 'kho', 'nen.enc'));
         const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG.nen, 'base64'), b.subarray(0, 12));
         de.setAuthTag(b.subarray(12, 28));
-        const nen = JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8'));
+        const nen = ruotGoi(Buffer.concat([de.update(b.subarray(28)), de.final()]));
         const CHI_NGHE = ['CHANDUNG', 'MATRAN', 'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',
           'MT_BANG_NHOM', 'MT_BANG_LUAT', 'MT_DO', 'BRAND', 'TAMNHIN100', 'TANG100',
           'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
-          'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT'];
+          'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
+          'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT'];
         const lac = CHI_NGHE.filter(k => nen[k] !== undefined);
         bao(!lac.length,
           'gói NỀN không mang kho mà mọi màn đọc nó đều khoá ở quyền nghề — ý định nằm ở quyền của màn hình, kho phải đi theo đúng ý định ấy',
@@ -4124,7 +4145,7 @@ const { chromium } = require(PW);
           const x = fsG.readFileSync(pxG.join(gocG, 'kho', 'nghe.enc'));
           const d = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG.nghe, 'base64'), x.subarray(0, 12));
           d.setAuthTag(x.subarray(12, 28));
-          return JSON.parse(Buffer.concat([d.update(x.subarray(28)), d.final()]).toString('utf8'));
+          return ruotGoi(Buffer.concat([d.update(x.subarray(28)), d.final()]));
         })();
         const NHA = ['HS', 'PH', 'CTV'];
         const lanChuyen = (nen.CHUYEN || []).filter(c => NHA.indexOf(c.cap) < 0).map(c => c.ma);
@@ -4154,7 +4175,7 @@ const { chromium } = require(PW);
           const x = fsG.readFileSync(f);
           const d = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG[g], 'base64'), x.subarray(0, 12));
           d.setAuthTag(x.subarray(12, 28));
-          const j2 = JSON.parse(Buffer.concat([d.update(x.subarray(28)), d.final()]).toString('utf8'));
+          const j2 = ruotGoi(Buffer.concat([d.update(x.subarray(28)), d.final()]));
           Object.keys(j2).forEach(k => { (oGoi[k] = oGoi[k] || []).push(g); });
         }
         const thatSuTrai = Object.keys(oGoi).filter(k => oGoi[k].length > 1).sort();
@@ -4175,7 +4196,7 @@ const { chromium } = require(PW);
         const b = fsG.readFileSync(pxG.join(gocG, 'kho', 'nen.enc'));
         const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG.nen, 'base64'), b.subarray(0, 12));
         de.setAuthTag(b.subarray(12, 28));
-        const nen = JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8'));
+        const nen = ruotGoi(Buffer.concat([de.update(b.subarray(28)), de.final()]));
         const lot = [].concat(nen.CV_MUC || [], nen.CV_MUC_DS || [])
           .filter(m => (m.vai || []).some(v => +String(v).slice(1) <= 12)).map(m => m.ma);
         bao(!lot.length,
@@ -4203,7 +4224,7 @@ const { chromium } = require(PW);
         const b = fsG.readFileSync(f);
         const de = crG.createDecipheriv('aes-256-gcm', Buffer.from(khoaG[ten], 'base64'), b.subarray(0, 12));
         de.setAuthTag(b.subarray(12, 28));
-        Object.keys(JSON.parse(Buffer.concat([de.update(b.subarray(28)), de.final()]).toString('utf8')))
+        Object.keys(ruotGoi(Buffer.concat([de.update(b.subarray(28)), de.final()])))
           .forEach(n => trongGoi.add(n));
       }
       const donDuoc = await p.evaluate(() => window.G.THUOC_CAP_PHEP || []);
@@ -5000,7 +5021,7 @@ const { chromium } = require(PW);
       function mo45(k, buf) {
         const de = cr45.createDecipheriv('aes-256-gcm', Buffer.from(k, 'base64'), buf.subarray(0, 12));
         de.setAuthTag(buf.subarray(12, 28));
-        return JSON.parse(Buffer.concat([de.update(buf.subarray(28)), de.final()]).toString('utf8'));
+        return ruotGoi(Buffer.concat([de.update(buf.subarray(28)), de.final()]));
       }
       /* Gộp bảy gói phải NỐI mảng, không được gán đè. Ứng dụng nối
          (xem G.KHO_TRAI_RA bên src/kho-khoa.js), nên phép so cũng phải
@@ -5170,6 +5191,53 @@ const { chromium } = require(PW);
       bao(!cl.nhipTrungCauHoi && cl.soKetQua === 4,
         'mỗi nhịp xem lại hỏi một câu KHÁC nhau, và có đủ bốn kết quả ở đỉnh — hai nhịp hỏi cùng một câu thì một trong hai là buổi họp thừa',
         cl.nhipTrungCauHoi ? cl.nhipTrungCauHoi + ' nhịp hỏi trùng câu' : '7 nhịp · 4 kết quả');
+    }
+  }
+
+  /* ── 47. TINH GỌN, GIAI ĐOẠN VÀ LỚP BẢO VỆ ──
+     Một bảng bảo vệ dễ trở thành bảng khen: mỗi lần thêm một cơ chế thì
+     thêm một dòng, và không ai xoá dòng nào. Mục này giữ cho nó nói thật:
+     mỗi tầng phải khai chỗ CHƯA CÓ, và mỗi cơ chế khai ra phải trỏ vào
+     thứ có thật. */
+  console.log('\n47 · TINH GỌN · GIAI ĐOẠN · LỚP BẢO VỆ');
+  {
+    const tg = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.TG_LANG || !G.TG_LOP) return { co: false };
+      return { co: true,
+        soLang: (G.TG_LANG || []).length,
+        langThieu: (G.TG_LANG || []).filter(x => !x.la || !x.gia || !x.do || !x.co).map(x => x.ma),
+        chuaChan: G.tgChuaChan(),
+        soGon: (G.TG_GON || []).length,
+        gonThieuBang: (G.TG_GON || []).filter(n => !n.bang || n.bang.length < 30).map(n => n.no),
+        soGD: (G.TG_GIAIDOAN || []).length,
+        gdThieu: (G.TG_GIAIDOAN || []).filter(g => !g.nguy || !g.lam || !g.dung || !g.ra).map(g => g.ma),
+        gdTrungSo: (function () { const a = (G.TG_GIAIDOAN || []).map(g => g.so); return a.length - new Set(a).size; })(),
+        soLop: (G.TG_LOP || []).length,
+        lopThieuCo: (G.TG_LOP || []).filter(l => !(l.co || []).length).map(l => l.lop),
+        lopKhaiHo: G.tgLopHo() };
+    });
+    if (!tg.co) {
+      bao(false, 'lớp tinh gọn nạp được từ gói nghề', 'không thấy TG_LANG');
+    } else {
+      bao(tg.soLang === 7 && !tg.langThieu.length,
+        'đủ bảy loại lãng phí, loại nào cũng nói rõ LÀ GÌ · CÁI GIÁ · ĐO BẰNG GÌ · CƠ CHẾ NÀO CHẶN',
+        tg.langThieu.join(' ') || '7/7 đủ bốn cột');
+      bao(tg.chuaChan.length > 0,
+        'bảng lãng phí có khai ít nhất một chỗ CHƯA CHẶN — bảy trên bảy đều xanh nghĩa là chưa nhìn kỹ, không phải giỏi',
+        tg.chuaChan.length + ' loại còn trống: ' + tg.chuaChan.join(' '));
+      bao(tg.soGon === 10 && !tg.gonThieuBang.length,
+        'mười nguyên tắc, điều nào cũng trỏ vào một cơ chế ĐANG CHẠY — nguyên tắc không cắt được gì thì là khẩu hiệu',
+        tg.gonThieuBang.join(' ') || '10/10 có cách cắt');
+      bao(tg.soGD === 5 && !tg.gdThieu.length && !tg.gdTrungSo,
+        'năm giai đoạn, giai đoạn nào cũng nói rõ MỐI NGUY · VIỆC CHÍNH · PHẢI NHỊN · XONG KHI NÀO',
+        tg.gdThieu.join(' ') || (tg.gdTrungSo ? 'trùng số thứ tự' : '5/5 đủ bốn cột'));
+      bao(tg.soLop === 4 && !tg.lopThieuCo.length,
+        'đủ bốn tầng bảo vệ và tầng nào cũng liệt kê được cơ chế thật đang giữ',
+        tg.lopThieuCo.join(' ') || '4/4 tầng có cơ chế');
+      bao(tg.lopKhaiHo.length === tg.soLop,
+        'TẦNG NÀO CŨNG khai chỗ chưa có — một bảng chỉ ghi phần đã làm là một bảng nói dối, và người đọc nó yên tâm hơn thực tế',
+        tg.lopKhaiHo.length + '/' + tg.soLop + ' tầng khai chỗ hở');
     }
   }
 

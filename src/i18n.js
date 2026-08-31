@@ -186,6 +186,8 @@ G.ITEM_EN = {
   'kien-truc-100':['The hundred-year architecture','100 value layers · 5 eras · +3–5% a year'],
   'ban-do-chien-luoc':['Strategy map','4 layers · 18 objectives · a testable chain of cause and effect'],
   'the-diem-can-bang':['Balanced scorecard','One measure per objective · 7 review rhythms'],
+  'tinh-gon':['Lean process','7 kinds of waste · 10 principles that cut real cost'],
+  'giai-doan-bao-ve':['Stages and layers of defence','5 stages · 4 layers, including what is still missing'],
   'chuan-nhat':['Operating standard','Kaizen · Monozukuri · Omotenashi · Shokunin'],
   'ai-dieu-phoi':['AI orchestration','Tier limits · KPI routing · capability review'],
   'an-toan-du-lieu':['The data shield','Anti-copy · anti-impersonation'],
