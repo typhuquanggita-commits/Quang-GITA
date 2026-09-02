@@ -7779,6 +7779,119 @@ const { chromium } = require(PW);
   }
 
 
+  console.log('\n66 · BÀN CỜ HÀNH TRÌNH — MỘT NGÀY MỘT QUÂN, NHÀ MÌNH TỰ CHỌN');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.bcGoiY || !G.BC_TRONGSO) return { co: false };
+      const r = {}, giuSo = JSON.stringify(G.S.banCo || {});
+      G.S.banCo = {};
+      const s = G.bcSoi();
+      r.soi = s.loi; r.chuaDo = s.chuaDo;
+
+      /* ── Số ngày đọc được TRÊN MÁY GIA ĐÌNH ──
+         HP_TANG ở gói nghề vì nó chứa GIÁ; số ngày thì không phải bí mật.
+         Máy gia đình không đọc được số ngày thì bàn cờ của chính họ không
+         biết mình dài bao nhiêu ô, và màn ấy trống. */
+      r.coHP_NGAY = !!G.HP_NGAY && !G.HP_TANG;
+      r.ngay = ['T1', 'T2', 'T3', 'T4', 'T5'].map(t => G.bcSoNgay(t));
+      r.ngayDung = JSON.stringify(r.ngay) === JSON.stringify([7, 21, 90, 365, 365]);
+
+      /* ── Đúng mười gợi ý, mỗi bánh đà một ── */
+      const gy = G.bcGoiY('T1');
+      r.soGoiY = gy.length;
+      r.moiBanhDaMot = new Set(gy.map(x => x.banhDa)).size === gy.length;
+      r.duCot = gy.every(x => x.ten && x.viec && x.diem);
+      /* Trọng số theo quan hệ tầng, không gán tay */
+      r.trongSoDung = gy.every(x => {
+        const i = ['T1', 'T2', 'T3', 'T4', 'T5'].indexOf(x.tang);
+        return x.diem === (i === 0 ? 3 : i > 0 ? 1 : 2);
+      });
+      const gy3 = G.bcGoiY('T3');
+      r.doiTheoTang = gy3.filter(x => x.tang === 'T1')[0].diem === 2 &&
+                      gy3.filter(x => x.tang === 'T3')[0].diem === 3 &&
+                      gy3.filter(x => x.tang === 'T5')[0].diem === 1;
+
+      /* ── Đặt một quân ── */
+      const kq = G.bcDat('T1', gy[0].ma);
+      r.datDuoc = kq.ok === true && kq.diem === gy[0].diem;
+      const d1 = G.bcDo('T1');
+      r.congDiem = d1.tong === gy[0].diem && d1.soO === 1 && d1.chuoi === 1;
+      /* Một ngày MỘT quân — bấm lần hai trong ngày phải bị từ chối */
+      r.chanLanHai = G.bcDat('T1', gy[1].ma).ok === false;
+      /* Việc ngoài mười gợi ý thì không đặt được */
+      r.chanNgoaiDs = G.bcDat('T1', 'KHONG-CO-THAT').ok === false;
+      /* Việc đã đặt biến khỏi danh sách gợi ý — không đặt lại lần nữa */
+      r.datRoiThiRut = G.bcGoiY('T1').filter(x => x.ma === gy[0].ma).length === 0;
+
+      /* ── Mốc mừng: cao nhất, không nổi năm cái cùng lúc ── */
+      const m = G.bcMocDat('T1');
+      r.mocMotCai = !!m && m.ma === 'MOI_NGAY';
+      /* Bảy ngày liền thì mốc đổi lên BAY_LIEN — thử trên bàn TẦNG 3.
+         Bàn tầng 1 chỉ có bảy ô, nên bảy ngày liền ở đó LÀ XONG TẦNG và
+         mốc cao nhất đúng ra phải là XONG_TANG. Thử trên bàn bảy ô rồi
+         đòi thấy BAY_LIEN là phép kiểm đòi sai, không phải mã sai. */
+      const nay = new Date();
+      G.S.banCo.T3 = {};
+      for (let i = 0; i < 7; i++) {
+        const d = new Date(nay.getTime() - i * 86400000);
+        G.S.banCo.T3[G.bcNgay(d)] = { ma: 'x' + i, bd: 'BD1', diem: 1, c: '#000', muc: 'TANG_SAU' };
+      }
+      const m7 = G.bcMocDat('T3');
+      r.mocLenBay = !!m7 && m7.ma === 'BAY_LIEN';
+      /* Và bảy ngày liền trên bàn BẢY Ô thì đúng là xong tầng */
+      for (let i = 1; i < 7; i++) {
+        const d = new Date(nay.getTime() - i * 86400000);
+        G.S.banCo.T1[G.bcNgay(d)] = { ma: 'y' + i, bd: 'BD1', diem: 1, c: '#000', muc: 'TANG_SAU' };
+      }
+      const mX = G.bcMocDat('T1');
+      r.mocXongTang = !!mX && mX.ma === 'XONG_TANG';
+
+      /* ── Ngày theo GIỜ MÁY, không theo UTC ──
+         toISOString() trả ngày UTC: chín giờ tối giờ Việt Nam đã là hôm
+         sau ở UTC, và cả bàn cờ lệch đúng một ô suốt tầng. */
+      const d9 = new Date(2026, 8, 2, 21, 30);
+      r.ngayTheoMay = G.bcNgay(d9) === '2026-09-02';
+
+      /* ── Hệ tự cấm mình hai điều, và khai ra ── */
+      r.khongXepHang = (G.BC_TRONGSO_LUAT || {}).khongXepHang === true;
+      r.khongPhat = (G.BC_TRONGSO_LUAT || {}).khongPhatNgayBoLo === true;
+
+      /* ── Trên màn thật ── */
+      G.S.banCo = {};
+      const man = G.VIEWS['ban-co']();
+      r.manCoBan = /class="bc-ban"/.test(man);
+      r.manCoDuNgay = ['7', '21', '90', '365'].every(n => man.indexOf('· ' + n + ' ngày') >= 0);
+      r.manCo10 = (man.match(/data-bcdat=/g) || []).length === 10;
+      r.manNoiVisao = man.indexOf(G.U.h(G.BC_TRONGSO[0].vi)) >= 0;
+
+      G.S.banCo = JSON.parse(giuSo);
+      return { co: true, ...r };
+    });
+
+    if (!ra.co) {
+      bao(false, 'bàn cờ nạp được', 'không thấy bcGoiY');
+    } else {
+      bao(!ra.soi.length && ra.coHP_NGAY && ra.ngayDung,
+        'NĂM TẦNG, NĂM BÀN CỜ: 7 · 21 · 90 · 365 · 365 ngày — và MÁY GIA ĐÌNH ĐỌC ĐƯỢC. Số ngày nằm ở bảng học phí, mà bảng ấy ở gói NGHỀ vì nó chứa GIÁ. Giấu luôn số ngày thì bàn cờ của chính nhà mình không biết mình dài bao nhiêu ô và màn ấy trống. Nên bản rút HP_NGAY được SINH RA từ HP_TANG lúc đóng gói — sửa số ngày ở bảng học phí thì bản rút đổi theo trong cùng lần chạy. Gõ tay là dựng bản thứ hai, và hai bản thì sẽ có ngày lệch nhau',
+        ra.soi.join(' ') || ra.ngay.join(' · ') + ' ngày · đọc từ HP_NGAY ở gói nền');
+      bao(ra.soGoiY === 10 && ra.moiBanhDaMot && ra.duCot && ra.trongSoDung && ra.doiTheoTang,
+        'ĐÚNG MƯỜI GỢI Ý, mỗi bánh đà đưa ra việc kế tiếp của nó — không dựng kho nhiệm vụ thứ hai, vì một trăm việc đã nằm sẵn trong BD_LON, mỗi việc có sẵn cả "làm gì" lẫn "rồi sẽ thấy gì". Trọng số suy từ QUAN HỆ TẦNG chứ không gán tay: việc của tầng đang đứng ba điểm, tầng đã qua hai, tầng chưa tới một. Đổi tầng thì trọng số đổi theo',
+        '10 gợi ý · ở T3 thì T1=2 · T3=3 · T5=1');
+      bao(ra.datDuoc && ra.congDiem && ra.chanLanHai && ra.chanNgoaiDs && ra.datRoiThiRut,
+        'MỘT NGÀY MỘT QUÂN: đặt xong thì cộng đúng số điểm của việc ấy, và bấm lần hai trong ngày bị từ chối. Việc ngoài mười gợi ý không đặt được. Việc đã đặt rút khỏi danh sách — không ai cộng điểm hai lần cho cùng một việc',
+        'đặt được · cộng đúng · chặn lần hai · chặn việc lạ · đặt rồi thì rút');
+      bao(ra.mocMotCai && ra.mocLenBay && ra.mocXongTang && ra.ngayTheoMay,
+        'mốc chúc mừng trả về CAO NHẤT đạt được, không nổi năm cái cùng lúc — nổi năm cái thì không cái nào được nhìn. Bảy ngày liền thì mốc tự lên. Và khoá ô là NGÀY THEO GIỜ MÁY NGƯỜI DÙNG: dùng ngày UTC thì nhà mình đặt quân lúc chín giờ tối giờ Việt Nam rơi vào ô của hôm sau, và cả bàn cờ lệch đúng một ô suốt tầng',
+        'chuỗi 7 trên bàn 90 ô → BẢY LIỀN · kín 7/7 ô → XONG TẦNG · 9h30 tối 2/9 → ô ngày 2/9');
+      bao(ra.khongXepHang && ra.khongPhat && ra.manCoBan && ra.manCoDuNgay && ra.manCo10 && ra.manNoiVisao,
+        'hệ TỰ CẤM MÌNH hai điều và khai thẳng ra màn: điểm không dùng xếp hạng nhà nọ với nhà kia — một nhà đang mùa khó đặt cạnh một nhà đang thuận thì con số ấy nói dối về cả hai; và ngày bỏ lỡ KHÔNG bị phạt — ô trống là ô trống, vì trừ điểm ngày nghỉ là dạy người ta rằng nghỉ một tối là thất bại. Màn cũng in luôn VÌ SAO việc này ba điểm việc kia một, để người chơi đọc được luật chơi của chính mình');
+    }
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

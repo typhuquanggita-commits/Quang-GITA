@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.31',
+  version: '9.32',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -517,6 +517,7 @@ G.NAV = [
     {v:'hansei-sach',  t:'Hệ này đang nợ gì',            h:'5 câu chưa trả lời được · 3 loại quyết định · 9 mâu thuẫn tự tìm ra', ic:'shield', star:1, capMo:'chung'},
     {v:'hanh-trinh-5-tang',t:'Con đường năm tầng',        h:'Gia Đình Thịnh Vượng · 5 thử thách · và ngày thang này hết bậc', ic:'compass', star:1, capMo:'chung'},
     {v:'sau-vung',     t:'Vòng luẩn quẩn có tên',       h:'5 vùng · 1 lõi tự nhận thức · 4 chỗ rơi và đường về từng chỗ', ic:'sun', star:1, capMo:'chung'},
+    {v:'ban-co',      t:'Bàn cờ hành trình',           h:'1 tầng 1 bàn · 1 ngày 1 ô · 10 gợi ý chọn 1 · điểm theo tầm quan trọng', ic:'target', star:1, capMo:'chung'},
     {v:'coach-5-tang', t:'Người đi cùng phải làm được gì', h:'5 tầng Coach · 4 năng lực mỗi tầng · vòng 10 bước · 1000 chia cho trần', ic:'users', star:1, capMo:'chung'},
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ

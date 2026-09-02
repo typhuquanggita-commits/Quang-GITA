@@ -1180,3 +1180,61 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .tia-wow{font-size:14.5px;line-height:1.8;color:var(--ink-3);font-style:italic;
   margin-top:10px;padding-left:12px;border-left:2px solid var(--gita-vien-2);max-width:56ch}
 @media (max-width:640px){ .tia{padding:15px 14px} .tia-viec{font-size:16px} }
+
+/* ═══════════════════════════════════════════════════════════════
+   BÀN CỜ HÀNH TRÌNH  ·  v9.32
+   ═══════════════════════════════════════════════════════════════ */
+.bc-dinh{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.bc-so{flex:1;min-width:120px;padding:12px 14px;border-radius:14px;
+  border:1px solid var(--line);background:var(--surface)}
+.bc-so b{display:block;font-size:26px;line-height:1.1;color:var(--gita)}
+.bc-so span{display:block;font-size:10.5px;letter-spacing:.08em;color:var(--ink-4);margin-top:3px}
+
+/* Cả cái bàn phải nhìn được trong một mắt — nhìn được cả bàn mới là chỗ
+   vui của cờ. Nên ô co lại theo số cột, không cho cuộn ngang. */
+.bc-ban{display:grid;grid-template-columns:repeat(var(--bc-cot,7),1fr);
+  gap:4px;margin:6px 0 12px}
+.bc-o{display:block;aspect-ratio:1;border-radius:5px;background:var(--phu-3);
+  border:1px solid var(--line);transition:transform .18s}
+.bc-o.co{border-color:transparent;box-shadow:0 1px 6px -2px rgba(0,0,0,.35)}
+.bc-o.co:hover{transform:scale(1.35)}
+.bc-y{font-size:12.5px;line-height:1.7;color:var(--ink-3);max-width:62ch}
+
+/* Mốc chúc mừng — im lặng, không tiếng. Nhà mình mở màn này lúc chín
+   giờ tối, cạnh đứa nhỏ đang ngủ. */
+.bc-mung{display:flex;gap:14px;align-items:center;margin:14px 0;padding:14px 16px;
+  border-radius:16px;border:1px solid var(--gita-vien-2);
+  background:linear-gradient(120deg,var(--gita-mo-1),transparent 70%)}
+.bc-bt{font-size:33px;line-height:1;color:var(--gita);flex:none}
+.bc-mung b{display:block;font-size:16px}
+.bc-mung p{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:3px}
+
+.bc-ds{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.bc-viec{position:relative;text-align:left;padding:14px 14px 13px;border-radius:16px;
+  border:1px solid var(--line);background:var(--surface);cursor:pointer;
+  display:flex;flex-direction:column;gap:5px;transition:.18s;font:inherit;color:inherit}
+.bc-viec:hover:not([disabled]){border-color:var(--bc-c);transform:translateY(-2px);
+  box-shadow:0 12px 26px -18px var(--bc-c)}
+.bc-viec[disabled]{opacity:.45;cursor:default}
+.bc-diem{position:absolute;top:12px;right:12px;font-size:14.5px;font-weight:800;color:var(--bc-c)}
+.bc-bd{font-size:10.5px;letter-spacing:.08em;color:var(--bc-c);padding-right:34px}
+.bc-viec b{font-size:14.5px;line-height:1.45;padding-right:34px}
+.bc-lam{font-size:12.5px;line-height:1.65;color:var(--ink-2)}
+.bc-thay{font-size:12.5px;line-height:1.65;color:var(--ink-3);font-style:italic;
+  padding-top:6px;border-top:1px dashed var(--line-2)}
+
+/* Điểm nổi lên tại chỗ vừa bấm rồi tan. */
+.bc-noi{position:fixed;z-index:9999;pointer-events:none;transform:translate(-50%,0);
+  font-size:26px;font-weight:800;color:var(--gita);
+  animation:bcnoi 1.05s cubic-bezier(.22,.9,.3,1) forwards}
+@keyframes bcnoi{
+  0%{opacity:0;transform:translate(-50%,6px) scale(.7)}
+  18%{opacity:1;transform:translate(-50%,-6px) scale(1.15)}
+  100%{opacity:0;transform:translate(-50%,-56px) scale(1)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bc-noi{animation:none;opacity:1}
+  .bc-o.co:hover{transform:none}
+  .bc-viec:hover:not([disabled]){transform:none}
+}
+@media (max-width:640px){ .bc-ds{grid-template-columns:1fr} .bc-so b{font-size:21px} }

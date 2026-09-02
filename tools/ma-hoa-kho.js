@@ -151,6 +151,10 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      của nhà mình mất hết chỗ có ảnh, mà đó đúng là những màn cần ảnh
      nhất. Bảng này không chứa nội dung nào, chỉ chứa chỗ và lời dặn. */
   'KA_LOAI', 'KA_TY', 'KA_CHO', 'KA_LUAT', 'KA_ANTOAN',
+  /* BÀN CỜ HÀNH TRÌNH. Gói NỀN: đây là luật chơi của chính nhà mình —
+     một ngày một việc, mười gợi ý, ba mức trọng số, và sáu điều hệ tự
+     cấm mình. Giấu luật chơi khỏi người chơi là giữ quyền đổi luật. */
+  'BC_LOI', 'BC_TRONGSO', 'BC_TRONGSO_LUAT', 'BC_MUNG', 'BC_MUNG_LUAT', 'BC_LUAT',
   'CS_LOI', 'CS_TANG', 'CS_TANG_LUAT', 'CS_NEN', 'CS_LUAT',
   'HT_DICH', 'HT_TANG', 'HT_TANG_LUAT', 'HT_SAUT5', 'HT_KC',
   'HT_NOI', 'HT_NOI_LUAT', 'HT_LECH', 'HT_LUAT',
@@ -430,6 +434,21 @@ goi.nen.HM_NGUY = (G.HM_NGUY || []).map(x => {
   if (x.khiMua) r.khiMua = true;
   return r;
 });
+/* ── SỐ NGÀY CỦA NĂM TẦNG, RÚT RA CHO GÓI NỀN ──
+   HP_TANG ở gói NGHỀ vì nó chứa GIÁ. Nhưng số ngày thì không phải bí
+   mật — nó là lời hứa với nhà mình, và bản đồ công khai đã in nó rồi.
+   Giấu nó khỏi gia đình thì bàn cờ hành trình của chính họ không biết
+   mình dài bao nhiêu ô, và màn ấy trống.
+
+   SINH RA TỪ HP_TANG lúc đóng gói, không gõ tay: sửa số ngày ở bảng học
+   phí thì bản rút này đổi theo trong cùng một lần chạy. Gõ tay là dựng
+   bản thứ hai, và hai bản thì sẽ có ngày lệch nhau. Cùng cách đã dùng
+   cho CV_MUC ở gói mẫu. */
+goi.nen.HP_NGAY = (G.HP_TANG || []).map(t => {
+  const so = String(t.ten || '').match(/\d+/);
+  return { tang: t.tang, ten: t.ten, ngay: so ? Number(so[0]) : null };
+});
+
 goi.nghe.HM_NGUY_SAU = G.HM_NGUY;
 /* ── KỊCH BẢN CHUYÊN MÔN KHÔNG ĐI THEO GÓI TẦNG ──
    Kịch bản từng nằm trong gói tầng, mỗi tầng 200 cái. Nghĩa là một
@@ -757,6 +776,12 @@ const mau = {
   /* Năm tầng Coach vào cả bản xem thử. Người mở bản xem thử là người
      sắp giao nhà mình cho một người kèm — bảng năng lực là câu hỏi họ
      cần cầm sẵn, y như năm lằn ranh ở TV_LANRANH. */
+  HP_NGAY: (G.HP_TANG || []).map(t => {
+    const so = String(t.ten || '').match(/\d+/);
+    return { tang: t.tang, ten: t.ten, ngay: so ? Number(so[0]) : null };
+  }),
+  BC_LOI: G.BC_LOI, BC_TRONGSO: G.BC_TRONGSO, BC_TRONGSO_LUAT: G.BC_TRONGSO_LUAT,
+  BC_MUNG: G.BC_MUNG, BC_MUNG_LUAT: G.BC_MUNG_LUAT, BC_LUAT: G.BC_LUAT,
   KA_LOAI: G.KA_LOAI, KA_TY: G.KA_TY, KA_CHO: G.KA_CHO,
   KA_LUAT: G.KA_LUAT, KA_ANTOAN: G.KA_ANTOAN,
   CS_LOI: G.CS_LOI, CS_TANG: G.CS_TANG, CS_TANG_LUAT: G.CS_TANG_LUAT,

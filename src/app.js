@@ -33,7 +33,11 @@ function save(){
        văn phòng thì Coach đăng xuất, phụ huynh đăng nhập vào cùng trình
        duyệt — không ghi tên chủ sổ thì bằng chứng đóng việc của Coach,
        viết về nhà nào có chuyện gì, nằm lại trong máy cho người sau. */
-    viec:G.S.viec, chotNgay:G.S.chotNgay, chotKhNgay:G.S.chotKhNgay, caiTien:G.S.caiTien, mua:G.S.mua, vet:G.S.vet, viecCua:G.S.viecCua
+    viec:G.S.viec, chotNgay:G.S.chotNgay, chotKhNgay:G.S.chotKhNgay, caiTien:G.S.caiTien, mua:G.S.mua, vet:G.S.vet, viecCua:G.S.viecCua,
+    /* Bàn cờ hành trình. Thiếu dòng này thì mọi quân nhà mình đặt bay
+       hết khi tải lại trang — và một bàn cờ xoá được mỗi lần F5 thì
+       nhìn nó không còn nghĩa gì. */
+    banCo:G.S.banCo, bcTang:G.S.bcTang
   })); }catch(e){}
 }
 function load(){
@@ -41,6 +45,7 @@ function load(){
     var d = JSON.parse(localStorage.getItem(KEY) || 'null'); if(!d) return null;
     G.S.view = d.view || G.S.view; G.S.open = d.open || G.S.open; G.S.rtab = d.rtab || G.S.rtab;
     G.S.checks = d.checks || {}; G.S.vision = d.vision || {}; G.S.journal = d.journal || {};
+    G.S.banCo = d.banCo || {}; G.S.bcTang = d.bcTang || 'T1';
     G.S.test = d.test || {};
     G.S.bando = d.bando || {};
     G.S.daThay = d.daThay || null;
