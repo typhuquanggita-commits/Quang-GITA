@@ -6657,6 +6657,190 @@ const { chromium } = require(PW);
     }
   }
 
+
+  console.log('\n57 · SỔ TAY CỦA GIA ĐÌNH · CHUẨN LỜI DỄ HIỂU CHẠY LẦN ĐẦU · CỔNG IN');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const nha = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.SG_HOI) return { co: false };
+      const ra = { co: true };
+      ra.soCau = G.SG_HOI.length;
+      ra.hoiThieu = G.SG_HOI.filter(x => !x.hoi || !x.dap || !x.nhom || !x.trang).map(x => x.so);
+
+      /* ── Bảy quyền là BẢN DỊCH, không phải bộ thứ hai ── */
+      ra.soiQuyen = G.sgSoiQuyen();
+      /* Trỏ sai một mã — phép kiểm phải bắt */
+      const giuQ = G.SG_QUYEN7[0].quyen;
+      G.SG_QUYEN7[0].quyen = 'Q9';
+      ra.batQuyenLa = G.sgSoiQuyen().length === 2;
+      G.SG_QUYEN7[0].quyen = giuQ;
+
+      /* ── CHUẨN LỜI DỄ HIỂU — lần đầu chạy thật ──
+         G.DEHIEU_NGUONG có từ bản 9.x kèm dòng "con số để bộ kiểm phát
+         hành đối chiếu", và bộ kiểm chưa bao giờ đối chiếu. */
+      const d = G.sgSoiDeHieu();
+      ra.dh = { dat: d.dat, soCau: d.soCau, soKyTu: d.soKyTu, cauTB: d.cauTB,
+        nguongTB: d.nguongTB, cauDai: d.cauDai.length, tuKho: d.tuKho.length,
+        tuKho10k: d.tuKho10k, nguongTuKho: d.nguongTuKho };
+      /* Nhét một câu bốn mươi từ — phải đỏ đúng chỗ */
+      const giuDap = G.SG_HOI[0].dap;
+      G.SG_HOI[0].dap = ('mưa ').repeat(40).trim() + '.';
+      const dDai = G.sgSoiDeHieu();
+      ra.batCauDai = dDai.dat === false && dDai.cauDai.length === 1;
+      /* Nhét năm từ khó lấy đúng từ bảng DEHIEU_THAY — phải đỏ */
+      G.SG_HOI[0].dap = 'Hệ thống triển khai cơ chế đo lường theo chỉ số và nguyên tắc vận hành.';
+      const dKho = G.sgSoiDeHieu();
+      ra.batTuKho = dKho.dat === false && dKho.tuKho.length >= 5;
+      G.SG_HOI[0].dap = giuDap;
+      ra.traVeXanh = G.sgSoiDeHieu().dat === true;
+
+      /* ── Từ cấm: chỉ quét cột BẢO LÀM GÌ ── */
+      ra.soiNgonTu = G.sgSoiNgonTu();
+      const giuLam = G.SG_KHAN[0].lam;
+      G.SG_KHAN[0].lam = 'Bạn phải bấm nút đỏ.';
+      ra.batTuCam = G.sgSoiNgonTu().length === 1;
+      G.SG_KHAN[0].lam = giuLam;
+      /* Và thước ấy KHÔNG được quét cả cuốn: "không phải cán bộ" là câu
+         tử tế, không phải câu sai bảo. */
+      ra.sachCoKhongPhai = G.SG_HOI.some(x => /không phải cán bộ/i.test(String(x.dap)));
+
+      /* ── Năm điều cấm ── */
+      ra.soiCam5 = G.sgSoiCam5();
+      ra.soCam5 = (G.SG_CAM5 || []).length;
+      ra.cam5Moi = (G.SG_CAM5 || []).filter(c => c.moi).map(c => c.ma);
+
+      /* ── Phụ lục soạn thảo KHÔNG xuống máy gia đình ── */
+      ra.lo = !!(G.SG_INAN || G.SG_KIEM3 || G.SG_CHOCHU || G.SG_SO || G.SG_INLAI);
+      const man = G.VIEWS['so-tay-gia-dinh']();
+      ra.manCoDongDau = man.indexOf(G.SG_DONGDAU.chu) >= 0;
+      ra.manCoTrang24 = man.indexOf(G.SG_TRANG24.cua) >= 0;
+      ra.manKhongCoCongIn = man.indexOf('Cổng in') < 0;
+      return ra;
+    });
+    if (!nha.co) {
+      bao(false, 'sổ tay của gia đình nạp được từ gói nền', 'không thấy SG_HOI');
+    } else {
+      bao(nha.soCau === 30 && !nha.hoiThieu.length,
+        'ba mươi câu, câu nào cũng đủ CÂU HỎI · CÂU TRẢ LỜI · NHÓM · SỐ TRANG — đây là văn bản duy nhất của cả bộ viết ngược chiều: không phải hệ nói với gia đình, mà là câu trả lời cho câu gia đình hay hỏi',
+        nha.hoiThieu.join(' ') || '30 câu đủ cột');
+      bao(!nha.soiQuyen.length && nha.batQuyenLa,
+        'bảy quyền trong sách là BẢN DỊCH của bảy quyền trong máy, không phải bộ thứ hai — mỗi bản dịch trỏ vào đúng một mã có thật, và phép kiểm bắt ngay khi trỏ lệch. Hai bộ quyền viết hai giọng thì có ngày lệch nhau, và người thiệt là người cầm giấy',
+        nha.soiQuyen.join(' ') || '7 bản dịch · 7 quyền gốc');
+      bao(nha.dh.dat && nha.batCauDai && nha.batTuKho && nha.traVeXanh,
+        'CHUẨN LỜI DỄ HIỂU CHẠY LẦN ĐẦU. G.DEHIEU_NGUONG nằm trong kho từ bản 9.x kèm đúng dòng chú giải "con số để bộ kiểm phát hành đối chiếu", và bộ kiểm chưa bao giờ đối chiếu — bốn kho DEHIEU_* chỉ xuất hiện một lần trong cả kho mã, ở danh sách quyền. Một chuẩn không ai chạy là một chuẩn không tồn tại',
+        'đo ' + nha.dh.soCau + ' câu · ' + nha.dh.soKyTu + ' ký tự · câu TB ' + nha.dh.cauTB +
+        '/' + nha.dh.nguongTB + ' · từ khó ' + nha.dh.tuKho10k + '/' + nha.dh.nguongTuKho +
+        ' · không câu nào quá ' + 35 + ' từ');
+      bao(!nha.soiNgonTu.length && nha.batTuCam && nha.sachCoKhongPhai,
+        'máy quét từ cấm chỉ áp cho cột BẢO LÀM GÌ, và bắt được ngay khi nhét từ sai bảo vào đó — quét cả cuốn thì "không phải cán bộ" và "không phải thất bại" cũng thành phạm, mà đó là hai câu tử tế nhất của cuốn sách. Một cái thước dùng sai chỗ thì nó cắt mất đúng phần nó sinh ra để giữ',
+        nha.soiNgonTu.join(' ') || 'sạch · và sách vẫn giữ được câu "không phải cán bộ"');
+      bao(!nha.soiCam5.length && nha.soCam5 === 5 && nha.cam5Moi.length === 1,
+        'năm điều người đi cùng không được làm: bốn điều trỏ vào lời hứa ĐÃ CÓ, một điều khai thẳng là MỚI và nói rõ đo bằng gì — điều mới ấy là "không im lặng bỏ mặc", chỗ đau nhất và ít bị bắt nhất, vì nó không để lại dấu vết nào',
+        nha.soiCam5.join(' ') || '4 điều có gốc · điều mới: ' + nha.cam5Moi[0]);
+      bao(!nha.lo && nha.manCoDongDau && nha.manCoTrang24 && nha.manKhongCoCongIn,
+        'gia đình nhận cả hai mươi bốn trang in — kể cả dòng đầu và trang cuối để trống — nhưng KHÔNG nhận phụ lục soạn thảo: cổng in, sổ in lại, ba câu chờ chủ hệ. Bản gốc tự chia lằn ấy và ghi rõ "không in vào cuốn"',
+        nha.lo ? 'phụ lục lọt xuống máy phụ huynh' : 'chỉ có phần in');
+    }
+
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ng = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.SG_INAN) return { co: false };
+      const ra = { co: true };
+
+      /* ── CỔNG IN đỏ CÓ CHỦ Ý ──
+         Bộ kiểm xanh vì kho khai thật. Cổng in đỏ vì việc thật chưa
+         xong. Hai điều cùng đúng một lúc. */
+      const san = G.sgSanSangIn();
+      ra.chuaIn = san.ok === false;
+      ra.soVuong = san.vuong.length;
+      ra.vuongCoDongHo = san.vuong.some(v => /15 phút/.test(v));
+
+      /* ── Lời hứa có đồng hồ ── */
+      ra.soiHen = G.sgSoiHen();
+      ra.soHen = G.sgHen().length;
+      ra.henChuaDo = G.sgHen().filter(x => x.chuaDo).length;
+      const giuDo = G.SG_KHAN[0].doBang;
+      delete G.SG_KHAN[0].doBang;
+      ra.batHenKhongDo = G.sgSoiHen().length === 1;
+      G.SG_KHAN[0].doBang = giuDo;
+
+      /* ── Chuông nhà bấm khác chuông hệ rung ── */
+      ra.soiChuong = G.sgSoiChuong();
+      ra.soTang = (G.GL_ANDON || []).length;
+      const giuKhac = G.SG_CHUONG[0].khac;
+      delete G.SG_CHUONG[0].khac;
+      ra.batChuongKhongNoiKhac = G.sgSoiChuong().length === 1;
+      G.SG_CHUONG[0].khac = giuKhac;
+
+      /* ── Mười tuần thực tập: đọc DD_CAP, không ghi số ── */
+      ra.soiSoTuan = G.sgSoiSoTuan();
+      const dt = G.sgDaoTao();
+      ra.daoTaoTheoDD = !!(dt && dt.gio === 40 && dt.thang === 3 &&
+        dt.cau.indexOf(String(dt.thang) + ' tháng') >= 0);
+      const giuDap2 = G.SG_HOI[8].dap;
+      G.SG_HOI[8].dap = 'Họ thực tập mười tuần rồi mới gặp nhà thật.';
+      ra.batSoTuan = G.sgSoiSoTuan().length === 1;
+      G.SG_HOI[8].dap = giuDap2;
+
+      /* ── Sổ in lại và phân loại kho ── */
+      ra.soiInLai = G.sgSoiInLai();
+      ra.soiPhanLoai = G.sgSoiPhanLoai();
+      ra.camSuaLang = G.SG_INAN.camSuaLang === true;
+      ra.soBan = G.SG_INAN.soBan;
+
+      /* ── Con số sách hứa công khai ── */
+      ra.soSo = (G.SG_SO || []).length;
+      ra.soChuaDo = (G.SG_SO || []).filter(s => s.chuaDo && s.thieu).length;
+
+      /* ── Ba người nghe: máy KHÔNG giả vờ đã đo ── */
+      ra.kiem3ChuaDo = (G.SG_KIEM3 || {}).chuaDo === true && !!(G.SG_KIEM3 || {}).thieu;
+
+      /* ── Bàn giao người đi cùng: sửa chỗ bản 9.18 viết sai ──
+         Bản trước viết "người cũ kể lại", biến quyền im lặng của gia
+         đình thành một thủ tục bàn giao của hệ. */
+      const vo6 = (G.TV_VO || []).filter(v => v.ma === 'VO6')[0] || {};
+      const b1 = ((vo6.cuu || [])[0] || {}).lam || '';
+      ra.banGiaoTheoQuyen = /NHÀ MÌNH kể/.test(b1) && !/Người cũ kể lại/.test(b1) &&
+        vo6.theoQuyen === 'PL_QUYEN.Q1';
+
+      ra.soChoChu = G.sgChoChu().length;
+      ra.choChuDuCot = G.sgChoChu().every(c => c.t && c.banGoc && c.lenhDung && c.canGi);
+      ra.manCoCongIn = G.VIEWS['so-tay-gia-dinh']().indexOf('Cổng in') >= 0;
+      return ra;
+    });
+    if (!ng.co) {
+      bao(false, 'phụ lục soạn thảo nạp được từ gói nghề', 'không thấy SG_INAN');
+    } else {
+      bao(ng.chuaIn && ng.vuongCoDongHo,
+        'CỔNG IN ĐANG ĐỎ, và đỏ có chủ ý: trang 2 hứa mười lăm phút có người tới, mà không sổ nào trong hệ ghi giờ ấy — GL_ANDON đo giờ BÁO cho người giữ lửa, khác hẳn giờ NGƯỜI TỚI. Bộ kiểm xanh vì kho khai thật; cổng in đỏ vì việc thật chưa xong. Giấy in rồi thì không sửa lại được',
+        ng.soVuong + ' chỗ vướng, có cả lời hứa 15 phút');
+      bao(!ng.soiHen.length && ng.soHen === 2 && ng.henChuaDo === 2 && ng.batHenKhongDo,
+        'lời hứa nào có ĐỒNG HỒ cũng nói rõ đo bằng sổ nào, và chưa có sổ thì khai thẳng là chưa đo được — phép kiểm bắt ngay khi một lời hứa có giờ mà không nói đo bằng gì. Một lời hứa mười lăm phút in vào một trăm cuốn giấy mà không sổ nào ghi giờ thì sáu tháng sau không ai biết nó có được giữ hay không, kể cả người hứa',
+        ng.soiHen.join(' ') || '2 đồng hồ · cả hai khai chưa đo được');
+      bao(!ng.soiChuong.length && ng.batChuongKhongNoiKhac,
+        'ba tầng chuông của hệ đều được nối với nút gia đình bấm, và mỗi cặp nói rõ CHỖ KHÁC NHAU — nút là nhà bấm, tầng là hệ rung. Hai việc khác nhau mà cùng màu thì có ngày hai đội dùng chung một chữ mà hiểu hai nghĩa, và chỗ ấy không hỏng ngay, nó hỏng vào đúng lúc gấp',
+        ng.soiChuong.join(' ') || ng.soTang + ' tầng đã nối đủ');
+      bao(!ng.soiSoTuan.length && ng.daoTaoTheoDD && ng.batSoTuan,
+        'sách KHÔNG ghi số tuần thực tập nào — số hiện ra lúc dựng trang, đọc thẳng từ DD_CAP. Sổ tay gốc viết mười tuần, DD_CAP đã ép ba tháng, và đây là lần thứ NĂM một con số viết cứng lệch khỏi thứ đã ép. Con số in vào sách giấy thì không sửa lại được',
+        ng.soiSoTuan.join(' ') || 'đọc DD_CAP: 40 giờ · 3 tháng');
+      bao(!ng.soiInLai.length && !ng.soiPhanLoai.length && ng.camSuaLang && ng.soBan === 100,
+        'sổ in lại đủ ba cột LẦN THỨ MẤY · SỬA TRANG NÀO · VÌ SAO, và mọi kho của cuốn sách đều được xếp vào phần IN hay phần PHỤ LỤC — kho không xếp là kho không ai biết đo bằng thước nào',
+        ng.soiInLai.join(' ') + ng.soiPhanLoai.join(' ') || '100 bản đánh số tay · cấm sửa lặng lẽ');
+      bao(ng.soSo === 3 && ng.soChuaDo === 3 && ng.kiem3ChuaDo,
+        'ba con số sách hứa công khai đều đang CHƯA ĐO ĐƯỢC và khai thẳng thiếu đúng cái gì, và phép kiểm ba người nghe cũng khai là chưa ai làm — máy đo được câu dài, từ khó và từ cấm; máy không đo được cảm giác bị xem thường, nên nó không giả vờ đã đo',
+        ng.soChuaDo + '/3 số khai chưa đo · buổi đọc thành tiếng chưa có');
+      bao(ng.banGiaoTheoQuyen,
+        'buổi bàn giao người đi cùng nay do CHÍNH NHÀ kể, không phải người cũ kể lại — bản 9.18 tôi viết ngược, và câu ấy sai về phía nguy hiểm: nó biến quyền im lặng của gia đình thành một thủ tục bàn giao của hệ. Trang 9 của sổ tay bắt được chỗ ấy');
+      bao(ng.soChoChu === 3 && ng.choChuDuCot && ng.manCoCongIn,
+        'ba câu CHỜ CHỦ HỆ khai đủ bốn cột — ai ký tên ở bìa, số nào gọi chuông đỏ, và có ghi tình trạng hôn nhân của từng nhà hay không. Câu thứ ba là câu nặng nhất: muốn có con số sách hứa thì phải mở một trường dữ liệu rất riêng tư, và mở rồi thì không đóng lại được',
+        ng.soChoChu + ' câu chờ chủ hệ');
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

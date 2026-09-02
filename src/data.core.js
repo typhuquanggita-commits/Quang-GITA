@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.18',
+  version: '9.19',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -495,6 +495,7 @@ G.NAV = [
        THẤY, không giấu trong điều khoản — nên nó không được khoá quyền. */
     {v:'phap-ly',     t:'Bảy quyền của nhà mình',      h:'Im lặng · xoá · đi · phủ quyết · đọc · sửa · khiếu nại', ic:'shield', star:1, capMo:'chung'},
     {v:'so-tay-tu-van',t:'Năm điều tư vấn không được làm',h:'Lằn ranh lúc chốt · 30 lời từ chối thật hay giả · 15 con số tháng', ic:'shield', star:1, capMo:'chung'},
+    {v:'so-tay-gia-dinh',t:'Sổ tay của gia đình',        h:'24 trang · 30 câu · 7 quyền · trang cuối để trống cho bạn', ic:'sun', star:1, capMo:'chung'},
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
        tổn thương nhất và cách nó dựng ra người kèm. */

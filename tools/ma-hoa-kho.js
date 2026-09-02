@@ -118,6 +118,13 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      gói NGHỀ: gia đình đọc được nguyên văn câu sẽ nghe thì buổi tư
      vấn mất tác dụng, họ biết trước câu tiếp theo. */
   'TV_LANRANH', 'TV_LANRANH_LUAT',
+  /* SỔ TAY CỦA GIA ĐÌNH — hai mươi bốn trang in giấy. Cả cuốn ở gói
+     NỀN, và đây là kho hiếm hoi mà phần gia đình DÀY HƠN phần nghề:
+     nó viết cho người sống trong rừng, không viết cho người xây rừng.
+     Phụ lục soạn thảo — cổng in, thước đo, sổ in lại — đi gói NGHỀ. */
+  'SG_DONGDAU', 'SG_TRANG24', 'SG_MUCLUC', 'SG_LUAT', 'SG_KHAN', 'SG_KHAN_LUAT',
+  'SG_CAM5', 'SG_CAM5_LUAT', 'SG_KHONGVAY', 'SG_QUYEN7', 'SG_QUYEN7_LUAT',
+  'SG_HOI', 'SG_TRONGSACH',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -264,6 +271,11 @@ const NGHE = [
   'TV_TINHIEU', 'TV_TINHIEU_LUAT', 'TV_CHOT', 'TV_SUP', 'TV_HOAN',
   'TV_306090', 'TV_VO', 'TV_GIOITHIEU', 'TV_SO15', 'TV_SO15_LUAT',
   'TV_NGAY', 'TV_12THANG', 'TV_TOTNGHIEP', 'TV_CHOCHU', 'TV_CHOCHU_LUAT',
+  /* Phụ lục soạn thảo của cuốn sổ tay — bản gốc tự ghi "không in vào
+     cuốn". Cổng in, thước đo chữ, sổ in lại, và ba câu chờ chủ hệ. */
+  'SG_CHUONG', 'SG_CHUONG_LUAT', 'SG_DAOTAO', 'SG_SO', 'SG_SO_LUAT',
+  'SG_INAN', 'SG_INLAI', 'SG_KIEM3', 'SG_PHULUC', 'SG_DOCHU',
+  'SG_CHOCHU', 'SG_CHOCHU_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -684,6 +696,14 @@ const mau = {
      Đọc trước năm điều người tư vấn không được làm thì họ đi vào buổi
      ấy với một cái thước. Giấu tới sau chữ ký là giữ lại quyền phá. */
   TV_LANRANH: G.TV_LANRANH, TV_LANRANH_LUAT: G.TV_LANRANH_LUAT,
+  /* Cả cuốn sổ tay của gia đình vào bản xem thử. Người mở bản xem thử
+     là người đang cân nhắc bước vào, và ba mươi câu này chính là ba
+     mươi câu họ đang hỏi trong đầu. */
+  SG_DONGDAU: G.SG_DONGDAU, SG_TRANG24: G.SG_TRANG24, SG_MUCLUC: G.SG_MUCLUC,
+  SG_LUAT: G.SG_LUAT, SG_KHAN: G.SG_KHAN, SG_KHAN_LUAT: G.SG_KHAN_LUAT,
+  SG_CAM5: G.SG_CAM5, SG_CAM5_LUAT: G.SG_CAM5_LUAT, SG_KHONGVAY: G.SG_KHONGVAY,
+  SG_QUYEN7: G.SG_QUYEN7, SG_QUYEN7_LUAT: G.SG_QUYEN7_LUAT,
+  SG_HOI: G.SG_HOI, SG_TRONGSACH: G.SG_TRONGSACH,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')
