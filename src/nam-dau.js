@@ -133,7 +133,7 @@ G.VIEWS = G.VIEWS || {};
         '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>Cấm:</b> ' + h(t.cam) + '</p></div>';
     }).join('');
 
-    o += U.sec('Nhịp tuần của đội vận hành', h((G.ND_TUAN_LUAT || {}).luat || ''));
+    o += U.sec('Nhịp tuần của đội vận hành', ((G.ND_TUAN_LUAT || {}).luat || ''));
     o += U.tbl(['Thứ', 'Việc', 'Phút', 'Bỏ được không', 'Vì sao'],
       (G.ND_TUAN || []).map(function (x) {
         return [x.thu === 8 ? 'CN' : 'Thứ ' + x.thu, h(x.ten), x.phut ? String(x.phut) : '—',
@@ -141,7 +141,7 @@ G.VIEWS = G.VIEWS || {};
       }));
     o += '<p class="tiny dim mb" style="line-height:1.7">' + h((G.ND_TUAN_LUAT || {}).vi || '') + '</p>';
 
-    o += U.sec('Sáu mốc kiểm', h((G.ND_MOC_LUAT || {}).vi || ''));
+    o += U.sec('Sáu mốc kiểm', ((G.ND_MOC_LUAT || {}).vi || ''));
     o += (G.ND_MOC || []).map(function (m) {
       return '<div class="card mb" style="border-color:' + m.c + '2e">' +
         '<span class="tiny up" style="color:' + m.c + '">NGÀY ' + m.ngay + ' · ' + h(m.ten) + '</span>' +

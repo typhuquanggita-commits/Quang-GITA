@@ -124,7 +124,7 @@ G.VIEWS = G.VIEWS || {};
         '<p class="tiny dim mt" style="line-height:1.7"><b>Về nhà:</b> ' + h(b.nha) + '</p></div>';
     }).join('');
 
-    o += U.sec('Hai mươi ca thi vai', h((G.DT_VAI_LUAT || {}).vi || ''));
+    o += U.sec('Hai mươi ca thi vai', ((G.DT_VAI_LUAT || {}).vi || ''));
     o += U.tbl(['Mã', 'Tình huống', 'Cạm bẫy tự nhiên', 'Đạt khi nói', 'Trượt khi nói'],
       (G.DT_VAI || []).map(function (x) {
         return [h(x.ma), h(x.ten), h(x.bay), h(x.dat), h(x.truot)];
@@ -154,7 +154,7 @@ G.VIEWS = G.VIEWS || {};
       '<p class="tiny dim mt" style="line-height:1.7">' + h(td.luat || '') + '</p></div>';
 
     var th = G.DT_THI || {};
-    o += U.sec('Bài thi cuối — không có bài viết', h(th.lam || ''));
+    o += U.sec('Bài thi cuối — không có bài viết', (th.lam || ''));
     o += U.tbl(['Giám khảo', 'Chấm gì', 'Quyền'],
       (th.giamKhao || []).map(function (g) { return [h(g.ai), h(g.cham), h(g.quyen || '—')]; }));
     o += '<div class="card mb"><b class="sm">Kết quả chỉ có hai trạng thái: ' +

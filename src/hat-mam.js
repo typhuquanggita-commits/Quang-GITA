@@ -189,7 +189,7 @@ G.VIEWS = G.VIEWS || {};
         return [h(x.ten), h(x.khi), h(x.vi), h(x.bom), h(x.co)];
       }));
     var nt = G.HM_NGONTU || {};
-    o += U.sec('Chuẩn ngôn từ', h(nt.cot || ''));
+    o += U.sec('Chuẩn ngôn từ', (nt.cot || ''));
     o += '<div class="card mb"><p class="sm" style="line-height:1.8"><b>Từ cấm:</b> ' +
       h((nt.camTu || []).join(' · ')) + '</p>' +
       '<p class="sm mt" style="line-height:1.8">' + h(nt.khongNhac || '') + '</p>' +
@@ -278,7 +278,7 @@ G.VIEWS = G.VIEWS || {};
     /* ── Nhánh héo ──
        Nhạt màu, không nhãn đỏ, không trừ điểm. Nhà tự thấy và tự sửa. */
     var coHeo = heo.filter(function (x) { return x.muc; });
-    o += U.sec('Nhánh nào đang cần tưới', h((G.HM_HEO || {}).cot || ''));
+    o += U.sec('Nhánh nào đang cần tưới', ((G.HM_HEO || {}).cot || ''));
     o += '<div class="card mb">' + heo.map(function (x) {
       if (x.chuaDo)
         return '<div class="row wrap" style="gap:8px;padding:7px 0;border-bottom:1px solid var(--gita-vien-2)">' +

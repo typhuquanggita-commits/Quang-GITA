@@ -175,8 +175,8 @@ G.VIEWS = G.VIEWS || {};
 
     /* ── Năm vùng ── */
     var sn = G.vzSoiNoi();
-    o += U.sec('Năm vùng' + (sn.length ? ' — LỆCH: ' + h(sn.join(' ')) : ''),
-      h((G.VZ_VUNG_LUAT || {}).cot || ''));
+    o += U.sec('Năm vùng' + (sn.length ? ' — LỆCH: ' + (sn.join(' ')) : ''),
+      ((G.VZ_VUNG_LUAT || {}).cot || ''));
     o += (G.VZ_VUNG || []).map(function (v) {
       return '<div class="card mb" style="border-color:' + v.c + '5e">' +
         '<span class="tiny up" style="color:' + v.c + '">' + h(v.ten) + ' · TẦNG ' + h(v.tang.slice(1)) + '</span>' +
@@ -192,8 +192,8 @@ G.VIEWS = G.VIEWS || {};
 
     /* ── Bốn chỗ rơi ── */
     var sr = G.vzSoiRoi();
-    o += U.sec('Bốn chỗ rơi có tên' + (sr.length ? ' — LỆCH: ' + h(sr.join(' ')) : ''),
-      h((G.VZ_ROI_LUAT || {}).nguoiTrongDoKhongBiet || ''));
+    o += U.sec('Bốn chỗ rơi có tên' + (sr.length ? ' — LỆCH: ' + (sr.join(' ')) : ''),
+      ((G.VZ_ROI_LUAT || {}).nguoiTrongDoKhongBiet || ''));
     o += (G.VZ_ROI || []).map(function (r) {
       var v = (G.VZ_VUNG || []).filter(function (x) { return x.ma === r.tuVung; })[0] || {};
       return '<div class="card mb" style="border-color:' + r.c + '3e">' +

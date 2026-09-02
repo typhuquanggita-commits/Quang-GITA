@@ -319,7 +319,7 @@ G.VIEWS = G.VIEWS || {};
     /* ── Trang 14–15 · bảy quyền ── */
     var q = G.sgSoiQuyen();
     o += U.sec('Trang 14–15 — bảy quyền của bạn',
-      h((G.SG_QUYEN7_LUAT || {}).cot || '') + (q.length ? ' LỆCH: ' + h(q.join(' ')) : ''));
+      ((G.SG_QUYEN7_LUAT || {}).cot || '') + (q.length ? ' LỆCH: ' + (q.join(' ')) : ''));
     o += '<div class="card mb" style="border-color:#0B73503e">' + (G.SG_QUYEN7 || []).map(function (x) {
       return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
         '<b class="sm">' + x.so + ' · ' + h(x.ten) + '</b>' +
@@ -330,7 +330,7 @@ G.VIEWS = G.VIEWS || {};
       ' ' + h((G.SG_QUYEN7_LUAT || {}).viCoChuKy || '') + '</p></div>';
 
     /* ── Năm điều người đi cùng không được làm ── */
-    o += U.sec('Năm điều người đi cùng không được làm', h((G.SG_CAM5_LUAT || {}).saiThiSao || ''));
+    o += U.sec('Năm điều người đi cùng không được làm', ((G.SG_CAM5_LUAT || {}).saiThiSao || ''));
     o += U.tbl(['Mã', 'Không được làm', 'Vì sao'],
       (G.SG_CAM5 || []).map(function (c) { return [h(c.ma), h(c.t), h(c.y)]; }));
     var dt = G.sgDaoTao();
@@ -375,7 +375,7 @@ G.VIEWS = G.VIEWS || {};
     if (!G.SG_INAN) return o;
 
     var san = G.sgSanSangIn();
-    o += U.sec('Cổng in — ' + (san.ok ? 'in được' : 'CHƯA IN'), h(san.y));
+    o += U.sec('Cổng in — ' + (san.ok ? 'in được' : 'CHƯA IN'), (san.y));
     if (!san.ok)
       o += '<div class="card mb" style="border-color:#BE0E163e">' +
         '<span class="tiny up" style="color:#BE0E16">CÒN ' + san.vuong.length + ' CHỖ VƯỚNG</span>' +
@@ -405,7 +405,7 @@ G.VIEWS = G.VIEWS || {};
       h((G.SG_DOCHU || {}).viChiApChoLam || '') + '</p>';
 
     var k3 = G.SG_KIEM3 || {};
-    o += U.sec('Kiểm chuẩn ba người nghe — phần máy không đo được', h(k3.mayLamDuocGi || ''));
+    o += U.sec('Kiểm chuẩn ba người nghe — phần máy không đo được', (k3.mayLamDuocGi || ''));
     o += '<div class="card mb" style="border-color:#B4720F3e">' +
       '<p class="sm" style="line-height:1.8"><b>Cách:</b> ' + h(k3.cach || '') + '</p>' +
       '<p class="sm mt" style="line-height:1.8"><b>Hỏi:</b> ' + (k3.hoi || []).map(function (c) { return h(c); }).join(' · ') + '</p>' +
@@ -415,14 +415,14 @@ G.VIEWS = G.VIEWS || {};
       (k3.chuaDo ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>Chưa đo được:</b> ' +
         h(k3.thieu || '') + '</p>' : '') + '</div>';
 
-    o += U.sec('Chuông nhà bấm khác chuông hệ rung', h((G.SG_CHUONG_LUAT || {}).cot || ''));
+    o += U.sec('Chuông nhà bấm khác chuông hệ rung', ((G.SG_CHUONG_LUAT || {}).cot || ''));
     o += U.tbl(['Nút nhà bấm', 'Tầng hệ rung', 'Giống', 'Khác'],
       (G.SG_CHUONG || []).map(function (x) {
         return [h(x.nut || '—'), h(x.tang), h(x.giong), h(x.khac)];
       }));
     o += '<p class="tiny dim mb" style="line-height:1.7">' + h((G.SG_CHUONG_LUAT || {}).vi || '') + '</p>';
 
-    o += U.sec('Con số sách hứa công khai', h((G.SG_SO_LUAT || {}).cot || ''));
+    o += U.sec('Con số sách hứa công khai', ((G.SG_SO_LUAT || {}).cot || ''));
     o += U.tbl(['Mã', 'Con số', 'Sách hứa ở đâu', 'Trạng thái', 'Thiếu gì'],
       (G.SG_SO || []).map(function (s) {
         return [h(s.ma), h(s.t), h(s.hua), s.chuaDo ? 'CHƯA ĐO ĐƯỢC' : 'đo được',
@@ -430,7 +430,7 @@ G.VIEWS = G.VIEWS || {};
       }));
 
     var ia = G.SG_INAN || {};
-    o += U.sec('In sách', h(ia.viGiay || ''));
+    o += U.sec('In sách', (ia.viGiay || ''));
     o += '<div class="card mb">' +
       '<p class="sm" style="line-height:1.8"><b>Số bản đầu:</b> ' + ia.soBan + ' · ' + h(ia.seri || '') + '</p>' +
       '<p class="sm mt" style="line-height:1.8"><b>Trao:</b> ' + h(ia.trao || '') + '</p>' +
@@ -444,7 +444,7 @@ G.VIEWS = G.VIEWS || {};
     var cho = G.sgChoChu();
     if (cho.length) {
       o += U.sec('Chờ chủ hệ quyết — ' + cho.length + ' câu',
-        h((G.SG_CHOCHU_LUAT || {}).camTuQuyet || ''));
+        ((G.SG_CHOCHU_LUAT || {}).camTuQuyet || ''));
       o += '<div class="card mb" style="border-color:#B4720F3e">' + cho.map(function (c) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
           '<b class="sm">' + h(c.t) + '</b>' +

@@ -177,7 +177,7 @@ G.VIEWS = G.VIEWS || {};
       lead: 'Giống cha mẹ thành công nhất là khi con tự lập. Giống người thầy giỏi nhất là khi học trò ' +
         'không còn cần thầy — nhưng giữ được cách thầy dạy mình yêu.' });
 
-    o += U.sec('Năm điều kiện xong', h((G.GL_XONG_LUAT || {}).cot || ''));
+    o += U.sec('Năm điều kiện xong', ((G.GL_XONG_LUAT || {}).cot || ''));
     o += '<div class="card mb">' + (G.GL_XONG || []).map(function (x) {
       return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
         '<b class="sm">' + x.so + '. ' + h(x.ten) + '</b>' +
@@ -189,7 +189,7 @@ G.VIEWS = G.VIEWS || {};
     if (!G.GL_BAN) return o;
 
     var b = G.GL_BAN, ban = G.glSoiBan();
-    o += U.sec('Trần của bàn điều khiển', h(b.viSaoTran || ''));
+    o += U.sec('Trần của bàn điều khiển', (b.viSaoTran || ''));
     o += '<div class="card mb" style="border-color:' + (ban.length ? '#BE0E16' : '#0B7350') + '2e">' +
       '<div class="row wrap" style="gap:16px">' +
       '<b>' + b.soMan + ' màn</b><b>' + b.phutChuan + ' phút</b>' +
@@ -203,8 +203,8 @@ G.VIEWS = G.VIEWS || {};
     o += U.tbl(['Cấm trên bàn điều khiển', 'Vì sao'],
       (G.GL_BAN_CAM || []).map(function (x) { return [h(x.t), h(x.y)]; }));
 
-    o += U.sec('Màn Sức Sống đọc bốn mức', h((G.GL_MUC1_LUAT || {}).cot || '') + ' ' +
-      h((G.GL_MUC1_LUAT || {}).vi || ''));
+    o += U.sec('Màn Sức Sống đọc bốn mức', ((G.GL_MUC1_LUAT || {}).cot || '') + ' ' +
+      ((G.GL_MUC1_LUAT || {}).vi || ''));
     o += (G.GL_MUC1 || []).map(function (m) {
       return '<div class="card mb" style="border-color:' + m.c + '2e">' +
         '<div class="row wrap" style="gap:10px;align-items:baseline">' +
@@ -216,7 +216,7 @@ G.VIEWS = G.VIEWS || {};
     o += '<p class="tiny dim mb" style="line-height:1.7"><b>Lỗi năm đầu:</b> ' +
       h((G.GL_MUC1_LUAT || {}).loiNamDau || '') + '</p>';
 
-    o += U.sec('Chuông ba tầng', h((G.GL_ANDON_LUAT || {}).luat || ''));
+    o += U.sec('Chuông ba tầng', ((G.GL_ANDON_LUAT || {}).luat || ''));
     o += U.tbl(['Tầng', 'Khi nào', 'Hạn người thật chạm', 'Ai nhận', 'Làm gì', 'Leo khi'],
       (G.GL_ANDON || []).map(function (t) {
         return [h(t.ten), h(t.khi), t.gio + ' giờ', h(t.aiNhan), h(t.lam), h(t.leoKhi)];
@@ -225,11 +225,11 @@ G.VIEWS = G.VIEWS || {};
       h((G.GL_ANDON_LUAT || {}).camBamThay || '') + '</p>';
 
     o += U.sec('Năm chỉ số của chính người giữ lửa',
-      h((G.GL_KPI_LUAT || {}).cot || '') + ' ' + h((G.GL_KPI_LUAT || {}).luat || ''));
+      ((G.GL_KPI_LUAT || {}).cot || '') + ' ' + ((G.GL_KPI_LUAT || {}).luat || ''));
     o += U.tbl(['Chỉ số', 'Mức', 'Đo bằng', 'Vì sao không làm đẹp bằng tay được'],
       (G.GL_KPI || []).map(function (k) { return [h(k.ten), h(k.muc), h(k.doBang), h(k.khongLamDep)]; }));
 
-    o += U.sec('Sáu kịch bản sự cố', h((G.GL_SUCO_LUAT || {}).cot || ''));
+    o += U.sec('Sáu kịch bản sự cố', ((G.GL_SUCO_LUAT || {}).cot || ''));
     o += U.tbl(['Mã', 'Kịch bản', 'Dấu hiệu sớm', 'Làm gì', 'Vì sao', 'Diễn tập'],
       (G.GL_SUCO || []).map(function (s) {
         return [h(s.ma), h(s.ten), h(s.dauHieu), h(s.lam), h(s.vi), s.tap ? 'mỗi năm' : 'không'];
@@ -239,7 +239,7 @@ G.VIEWS = G.VIEWS || {};
     /* ── Sổ đo di sản: in cả chỗ CHƯA đo được ──
        Bảng nào chỉ in phần đã đo thì đọc xong tưởng hệ đã đo hết. */
     var chuaDo = G.glChuaDo();
-    o += U.sec('Sổ đo di sản', h((G.GL_LS_LUAT || {}).vi || ''));
+    o += U.sec('Sổ đo di sản', ((G.GL_LS_LUAT || {}).vi || ''));
     o += U.tbl(['Mã', 'Đo gì', 'Ngưỡng đỏ', 'Nguồn số', 'Vì sao đo'],
       (G.GL_LS || []).map(function (x) {
         return [h(x.ma), h(x.do), x.doNgo + (x.ma === 'LS5' ? '' : '%'),
@@ -263,7 +263,7 @@ G.VIEWS = G.VIEWS || {};
        tưởng hệ đã thử hết. */
     if (G.MP_DO) {
       var d2 = G.mpDoD2(), chuaChay = G.mpChuaChay(), baoLech = G.mpSoiBao();
-      o += U.sec('Chuẩn mô phỏng', h((G.MP_BAY || {}).quyen || ''));
+      o += U.sec('Chuẩn mô phỏng', ((G.MP_BAY || {}).quyen || ''));
       o += '<div class="card mb" style="border-color:' + (d2 && d2.dat ? '#0B7350' : '#BE0E16') + '3e">' +
         '<span class="tiny up" style="color:' + (d2 && d2.dat ? '#0B7350' : '#BE0E16') + '">PHÉP ĐO PHẨM GIÁ · CHẠY THẬT TỪ HÔM NAY</span>' +
         (d2 ? d2.dau.map(function (x) {

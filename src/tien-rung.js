@@ -114,7 +114,7 @@ G.VIEWS = G.VIEWS || {};
     var chua = G.trChuaDien();
     if (chua.length) {
       o += U.sec('Chờ chủ hệ điền — ' + chua.length + ' ô',
-        h((G.TR_CHUA_LUAT || {}).vi || ''));
+        ((G.TR_CHUA_LUAT || {}).vi || ''));
       o += U.tbl(['Ô', 'Điền ở đâu', 'Vì sao tôi không điền hộ'],
         chua.map(function (x) { return [h(x.t), h(x.noiDien || '—'), h(x.vi)]; }));
     }
@@ -129,14 +129,14 @@ G.VIEWS = G.VIEWS || {};
     var nguonLech = G.trSoiNguon();
     o += U.sec('Bốn nguồn tiền',
       'Trần từng nguồn, không phải chia phần. Không nguồn nào được chạm một nửa.' +
-      (nguonLech.length ? ' LỆCH: ' + h(nguonLech.join(' ')) : ''));
+      (nguonLech.length ? ' LỆCH: ' + (nguonLech.join(' ')) : ''));
     o += U.tbl(['Mã', 'Nguồn', 'Trần', 'Giai đoạn', 'Điều kiện gắn'],
       (G.TR_NGUON || []).map(function (n) {
         return [h(n.ma), h(n.ten), n.tranPt + '%', h(n.giaiDoan), h(n.dieuKien)];
       }));
 
     var chiLech = G.trSoiChi();
-    o += U.sec('Năm nhóm chi, và THỨ TỰ CẮT', h((G.TR_CAT_LUAT || {}).vi || ''));
+    o += U.sec('Năm nhóm chi, và THỨ TỰ CẮT', ((G.TR_CAT_LUAT || {}).vi || ''));
     o += U.tbl(['Mã', 'Nhóm', 'Phần', 'Cắt thứ', 'Gồm gì', 'Cắt thế nào'],
       (G.TR_CHI || []).slice().sort(function (a, b) { return a.catThu - b.catThu; })
         .map(function (c) {
@@ -165,7 +165,7 @@ G.VIEWS = G.VIEWS || {};
         return [h(g.giai + ' · ' + g.ten), h(g.nam), h(g.song), h(g.tamThe), h(g.chuyenKhi), h(g.cam)];
       }));
 
-    o += U.sec('Hai quỹ, tường ngăn tuyệt đối', h((G.TR_QUY_LUAT || {}).luat || ''));
+    o += U.sec('Hai quỹ, tường ngăn tuyệt đối', ((G.TR_QUY_LUAT || {}).luat || ''));
     o += U.tbl(['Quỹ', 'Chủ', 'Nguồn', 'Dùng cho', 'Cấm', 'Sổ sách'],
       (G.TR_QUY || []).map(function (q) {
         return [h(q.ten), h(q.chu), h(q.nguon), h(q.dung), h(q.cam), h(q.soSach)];

@@ -79,8 +79,13 @@ const NGAN = 700;
       />\s*(đang cập nhật|sắp có|sắp ra mắt|chưa có nội dung|nội dung đang|đang xây dựng)\s*</i,
       />\s*(undefined|null|NaN|\[object Object\])\s*</
     ];
-    const ra = { ngan: [], tam: [], oRong: [], loi: [] };
+    const ra = { ngan: [], tam: [], oRong: [], loi: [], thoat2: [] };
     const daXet = {};
+    /* Hộp để ĐỌC RA CHỮ người dùng thật sự nhìn thấy. Phải đo trên chữ
+       chứ không đo trên mã: &quot; trong mã là cách thoát ĐÚNG, chỉ khi
+       nó còn nguyên sau khi trình duyệt giải mã một lần thì mới là thoát
+       hai lần — và lúc ấy người đọc thấy chữ &quot; giữa câu tiếng Việt. */
+    const hop = document.createElement('div');
 
     for (const em of opt.ai) {
       G.doLogin(em);
@@ -104,6 +109,20 @@ const NGAN = 700;
         if (t.length < NGAN && !coLoiChan && !daXet['n' + v]) {
           daXet['n' + v] = 1;
           ra.ngan.push(v + ' (' + t.length + ' ký tự, vai ' + vai + ')');
+        }
+        /* CHỮ THOÁT HAI LẦN. U.sec(), U.quote() và mấy hàm khung khác tự
+           gọi U.h() trên tham số của chúng. Truyền h(...) vào là thoát
+           lần thứ hai, và người đọc thấy &quot; giữa câu. Lỗi này không
+           làm hỏng gì, không sinh lỗi trang, nên nó sống được rất lâu —
+           bản 9.24 tìm ra bốn màn đang mắc, màn cũ nhất từ bản 9.19. */
+        hop.innerHTML = html;
+        const chu = hop.innerText || hop.textContent || '';
+        const t2 = chu.match(/&(?:quot|amp|lt|gt|#39|nbsp);/g);
+        if (t2 && !daXet['e' + v]) {
+          daXet['e' + v] = 1;
+          ra.thoat2.push(v + ' · ×' + t2.length + ' · …' +
+            (chu.match(/.{0,40}&(?:quot|amp|lt|gt|#39|nbsp);.{0,20}/) || [''])[0]
+              .replace(/\s+/g, ' ').trim());
         }
         for (const rx of TAM) {
           if (rx.test(html) && !daXet['t' + v + rx.source]) {
@@ -135,6 +154,9 @@ const NGAN = 700;
     quet.ngan.slice(0, 5).join(' | '));
   bao(!quet.tam.length, 'không còn chữ tạm nào trên giao diện', quet.tam.slice(0, 5).join(' | '));
   bao(!quet.oRong.length, 'không màn nào có nhiều ô rỗng', quet.oRong.slice(0, 5).join(' | '));
+  bao(!quet.thoat2.length,
+    'không chữ nào bị thoát hai lần — U.sec() và U.quote() TỰ gọi U.h() trên tham số, nên truyền h(...) vào là thoát lần thứ hai và người đọc thấy &quot; giữa câu tiếng Việt. Lỗi này không sinh lỗi trang nên nó sống rất lâu: bản 9.24 tìm ra bốn màn đang mắc, chỗ cũ nhất từ 9.19, và gỡ 77 chỗ h() thừa trong 15 tệp',
+    quet.thoat2.slice(0, 5).join(' | '));
 
   /* ══════ 2 · KHO DỮ LIỆU CÓ Ô ĐỂ TRỐNG ══════ */
   console.log('\n2 · BẢN GHI THIẾU TRƯỜNG · MẢNG RỖNG');

@@ -316,8 +316,8 @@ G.VIEWS = G.VIEWS || {};
     var dd = G.csSoiDoDuoc();
     if (dd.loi.length) sn = sn.concat(dd.loi);
 
-    o += U.sec('Năm tầng của người đi cùng' + (sn.length ? ' — LỆCH: ' + h(sn.join(' ')) : ''),
-      h((G.CS_TANG_LUAT || {}).cot || ''));
+    o += U.sec('Năm tầng của người đi cùng' + (sn.length ? ' — LỆCH: ' + (sn.join(' ')) : ''),
+      ((G.CS_TANG_LUAT || {}).cot || ''));
 
     o += (G.CS_TANG || []).map(function (t) {
       return '<div class="card mb" style="border-color:' + t.c + '5e">' +
@@ -349,8 +349,8 @@ G.VIEWS = G.VIEWS || {};
     if (G.CS_VONG) {
       var sv = G.csSoiVong(), st = G.csSoiTenTrung();
       var lv = (sv.chuaDo ? [] : sv.loi).concat(st.chuaDo ? [] : st.loi);
-      o += U.sec('Vòng vận hành mười bước' + (lv.length ? ' — LỆCH: ' + h(lv.join(' ')) : ''),
-        h((G.CS_VONG_LUAT || {}).khongPhaiBanhDa || ''));
+      o += U.sec('Vòng vận hành mười bước' + (lv.length ? ' — LỆCH: ' + (lv.join(' ')) : ''),
+        ((G.CS_VONG_LUAT || {}).khongPhaiBanhDa || ''));
       o += '<div class="card mb">' + (G.CS_VONG || []).map(function (v) {
         var thieu = v.theoKho && G[v.theoKho] === undefined;
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
@@ -370,8 +370,8 @@ G.VIEWS = G.VIEWS || {};
     if (G.CS_DULIEU) {
       var sd = G.csSoiDuLieu();
       o += U.sec('Bảy năng lực dữ liệu — ' + sd.dem.co + ' có, ' + sd.dem.chua + ' chưa' +
-        (sd.loi.length ? ' — LỆCH: ' + h(sd.loi.join(' ')) : ''),
-        h((G.CS_DULIEU_LUAT || {}).vi || ''));
+        (sd.loi.length ? ' — LỆCH: ' + (sd.loi.join(' ')) : ''),
+        ((G.CS_DULIEU_LUAT || {}).vi || ''));
       o += '<div class="card mb">' + (G.CS_DULIEU || []).map(function (d) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
           '<b class="sm" style="color:' + (d.co ? '#0B7350' : '#B4720F') + '">' +
@@ -387,7 +387,7 @@ G.VIEWS = G.VIEWS || {};
     /* ── Phép chia cho con số đích ── */
     if (G.CS_QUYMO) {
       var q = G.csQuyMo();
-      o += U.sec('Một nghìn lãnh đạo — chia cho trần thì ra bao nhiêu', h(G.CS_QUYMO.dichLa || ''));
+      o += U.sec('Một nghìn lãnh đạo — chia cho trần thì ra bao nhiêu', (G.CS_QUYMO.dichLa || ''));
       if (q.chuaDo) {
         o += '<div class="card mb"><p class="sm" style="line-height:1.8">' + h(q.y) + '</p></div>';
       } else {
@@ -407,7 +407,7 @@ G.VIEWS = G.VIEWS || {};
 
     /* ── Năm trụ nền ── */
     var snn = G.csSoiNen();
-    o += U.sec('Năm trụ nền' + (snn.loi.length ? ' — LỆCH: ' + h(snn.loi.join(' ')) : ''),
+    o += U.sec('Năm trụ nền' + (snn.loi.length ? ' — LỆCH: ' + (snn.loi.join(' ')) : ''),
       'Mỗi trụ trỏ vào một luật đã có. Viết lại luật ở đây là dựng bản thứ hai.');
     o += '<div class="card mb">' + (G.CS_NEN || []).map(function (n) {
       var thieu = n.theoLuat && G[n.theoLuat] === undefined;

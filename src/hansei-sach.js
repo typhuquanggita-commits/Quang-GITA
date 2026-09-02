@@ -219,7 +219,7 @@ G.VIEWS = G.VIEWS || {};
     var cho = G.hnChoChu();
     if (cho.length) {
       o += U.sec('Chờ chủ hệ quyết — ' + cho.length + ' câu',
-        h((G.HN_CHOCHU_LUAT || {}).camTuQuyet || ''));
+        ((G.HN_CHOCHU_LUAT || {}).camTuQuyet || ''));
       o += '<div class="card mb" style="border-color:#B4720F3e">' + cho.map(function (c) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
           '<b class="sm">' + h(c.t) + '</b>' +
@@ -231,8 +231,8 @@ G.VIEWS = G.VIEWS || {};
     }
 
     var ql = G.HN_QUYET_LUAT || {}, soi = G.hnSoiQuyet();
-    o += U.sec('Ba loại quyết định tự động' + (soi.length ? ' — LỆCH: ' + h(soi.join(' ')) : ''),
-      h(ql.cot || ''));
+    o += U.sec('Ba loại quyết định tự động' + (soi.length ? ' — LỆCH: ' + (soi.join(' ')) : ''),
+      (ql.cot || ''));
     o += '<div class="card mb" style="border-color:#0B73503e">' +
       '<p class="sm" style="line-height:1.8"><b>Mở rộng:</b> ' + h(ql.moRong || '') + '</p>' +
       '<p class="sm mt" style="line-height:1.8"><b>Thu hẹp:</b> ' + h(ql.thuHep || '') + '</p>' +
@@ -249,7 +249,7 @@ G.VIEWS = G.VIEWS || {};
       }));
 
     var dy = G.HN_DONGY || {};
-    o += U.sec('Im lặng là tiếp tục', h(dy.cot || ''));
+    o += U.sec('Im lặng là tiếp tục', (dy.cot || ''));
     o += '<div class="card mb">' +
       '<p class="sm" style="line-height:1.8"><b>Mở rộng quyền:</b> ' + h(dy.moRong || '') + '</p>' +
       '<p class="sm mt" style="line-height:1.8"><b>Thu hẹp quyền:</b> ' + h(dy.thuHep || '') + '</p>' +
@@ -267,7 +267,7 @@ G.VIEWS = G.VIEWS || {};
       '<p class="tiny dim mt" style="line-height:1.7">' + h(sla.vi || '') + '</p></div>';
 
     var ma = G.hnSoiApVao();
-    o += U.sec('Chín mâu thuẫn bộ sách tự tìm ra' + (ma.length ? ' — LỆCH: ' + h(ma.join(' ')) : ''),
+    o += U.sec('Chín mâu thuẫn bộ sách tự tìm ra' + (ma.length ? ' — LỆCH: ' + (ma.join(' ')) : ''),
       'Mỗi cái sửa phải RƠI XUỐNG một chỗ chạy thật. Sửa không rơi vào đâu là một lời thú nhận, và thú nhận làm người ta nhẹ lòng — thứ nguy hiểm nhất sau khi biết mình sai.');
     o += U.tbl(['#', 'Mâu thuẫn', 'Lỗi là gì', 'Vì sao mắc', 'Rơi xuống đâu'],
       (G.HN_MAUTHUAN || []).map(function (m) {

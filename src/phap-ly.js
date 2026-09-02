@@ -158,7 +158,7 @@ G.VIEWS = G.VIEWS || {};
     var cho = G.plChoChu();
     if (cho.length) {
       o += U.sec('Chờ chủ hệ quyết — ' + cho.length + ' câu',
-        h((G.PL_CHOCHU_LUAT || {}).camTuQuyet || ''));
+        ((G.PL_CHOCHU_LUAT || {}).camTuQuyet || ''));
       o += '<div class="card mb" style="border-color:#B4720F3e">' + cho.map(function (c) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
           '<b class="sm">' + h(c.t) + '</b>' +
@@ -191,7 +191,7 @@ G.VIEWS = G.VIEWS || {};
     var dieuLoi = G.plSoiDieu();
     o += U.sec('Mười hai điều hiến pháp bản pháp lý',
       'Mỗi điều nói rõ mình dịch từ nguyên tắc nào — điều không có gốc là điều sẽ bị bỏ sau năm mươi năm với lý do dọn văn bản cũ.' +
-      (dieuLoi.length ? ' LỆCH: ' + h(dieuLoi.join(' ')) : ''));
+      (dieuLoi.length ? ' LỆCH: ' + (dieuLoi.join(' ')) : ''));
     o += U.tbl(['Điều', 'Tên', 'Cứng hay mềm', 'Dịch từ', 'Nội dung'],
       (G.PL_DIEU || []).map(function (d) {
         return [String(d.so), h(d.t), h(d.cung), h(d.goc), h(d.y)];
@@ -204,7 +204,7 @@ G.VIEWS = G.VIEWS || {};
         '<p class="tiny dim mt" style="line-height:1.7">' + h(d12.viCanDieuNay || '') + '</p></div>';
 
     var pn = G.PL_PHAPNHAN || {};
-    o += U.sec('Pháp nhân hai tầng', h(pn.viHaiTang || ''));
+    o += U.sec('Pháp nhân hai tầng', (pn.viHaiTang || ''));
     o += U.tbl(['Tầng', 'Từ năm', 'Giữ gì', 'Hội đồng', 'Điều lệ'],
       (pn.tang || []).map(function (t) {
         return [h(t.ten), String(t.tuNam), h(t.giu), h(t.hoiDong), h(t.dieuLe)];
@@ -227,7 +227,7 @@ G.VIEWS = G.VIEWS || {};
       }));
 
     var xd = G.PL_XUNGDOT || {};
-    o += U.sec('Sổ xung đột lợi ích', h(xd.vi || ''));
+    o += U.sec('Sổ xung đột lợi ích', (xd.vi || ''));
     o += '<div class="card mb">' +
       '<p class="sm" style="line-height:1.8"><b>Ai khai:</b> ' + h(xd.aiKhai || '') + '</p>' +
       '<p class="sm mt" style="line-height:1.8"><b>Khai gì:</b> ' + h(xd.khaiGi || '') + '</p>' +
@@ -240,7 +240,7 @@ G.VIEWS = G.VIEWS || {};
 
     var b4 = G.plSoiBac4();
     o += U.sec('Khi luật nhà nước va với năm điều nền',
-      h((G.PL_BAC4_LUAT || {}).cot || '') + (b4.length ? ' LỆCH: ' + h(b4.join(' ')) : ''));
+      ((G.PL_BAC4_LUAT || {}).cot || '') + (b4.length ? ' LỆCH: ' + (b4.join(' ')) : ''));
     o += (G.PL_BAC4 || []).map(function (b) {
       return '<div class="card mb" style="border-color:' + b.c + '2e">' +
         '<span class="tiny up" style="color:' + b.c + '">BẬC ' + b.bac + ' · ' + h(b.ten) + '</span>' +

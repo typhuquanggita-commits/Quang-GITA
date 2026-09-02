@@ -283,7 +283,7 @@ G.VIEWS = G.VIEWS || {};
 
     /* ── Năm tầng thử thách ── */
     var coHP = G.HP_TANG !== undefined;
-    o += U.sec('Năm tầng, năm thử thách', h((G.HT_TANG_LUAT || {}).cot || ''));
+    o += U.sec('Năm tầng, năm thử thách', ((G.HT_TANG_LUAT || {}).cot || ''));
     o += (G.HT_TANG || []).map(function (t) {
       var c = (coHP && G.htCongCua(t.ma)) || {};
       return '<div class="card mb" style="border-color:' + t.c + '3e">' +
@@ -319,8 +319,8 @@ G.VIEWS = G.VIEWS || {};
     if (!G.HT_NOI) return o;
 
     var noi = G.htSoiThangNoi();
-    o += U.sec('Bốn cái thang, và chỗ nối' + (noi.length ? ' — LỆCH: ' + h(noi.join(' ')) : ''),
-      h((G.HT_NOI_LUAT || {}).motCauTraLoi || ''));
+    o += U.sec('Bốn cái thang, và chỗ nối' + (noi.length ? ' — LỆCH: ' + (noi.join(' ')) : ''),
+      ((G.HT_NOI_LUAT || {}).motCauTraLoi || ''));
     o += U.tbl(['Mã', 'Thang', 'Kho', 'Là gì', 'Nối bằng khoá', 'Sửa ở bản này'],
       (G.HT_NOI || []).map(function (t) {
         return [h(t.ma), h(t.ten), h(t.kho), h(t.la), h(t.khoa) + (t.giaTiep ? ' (gián tiếp)' : ''),
@@ -343,7 +343,7 @@ G.VIEWS = G.VIEWS || {};
       }).join('') + '</div>';
 
     var lech = G.htSoiLech();
-    o += U.sec('Sáu chỗ chưa khớp, và đã làm gì' + (lech.length ? ' — LỆCH: ' + h(lech.join(' ')) : ''),
+    o += U.sec('Sáu chỗ chưa khớp, và đã làm gì' + (lech.length ? ' — LỆCH: ' + (lech.join(' ')) : ''),
       'Mỗi chỗ sửa phải rơi xuống một kho có thật.');
     o += U.tbl(['#', 'Chỗ chưa khớp', 'Thấy gì', 'Đã làm gì', 'Rơi xuống đâu'],
       (G.HT_LECH || []).map(function (l) {

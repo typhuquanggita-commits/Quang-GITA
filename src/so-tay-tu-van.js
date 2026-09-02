@@ -294,7 +294,7 @@ G.VIEWS = G.VIEWS || {};
         'thì lý lẽ nào cũng nghe hợp lý — nên chúng nằm ở đây, chỗ người bị thiệt đọc được.' });
 
     o += U.sec('Năm điều người tư vấn KHÔNG được làm với nhà mình',
-      h((G.TV_LANRANH_LUAT || {}).inODau || ''));
+      ((G.TV_LANRANH_LUAT || {}).inODau || ''));
     o += '<div class="card mb" style="border-color:#BE0E163e">' + lr.map(function (r) {
       return '<div style="padding:10px 0;border-bottom:1px solid var(--gita-vien-2)">' +
         '<b class="sm">' + h(r.ma + ' · ' + r.t) + '</b>' +
@@ -313,7 +313,7 @@ G.VIEWS = G.VIEWS || {};
     var cho = G.tvChoChu();
     if (cho.length) {
       o += U.sec('Chờ chủ hệ quyết — ' + cho.length + ' câu',
-        h((G.TV_CHOCHU_LUAT || {}).camTuQuyet || ''));
+        ((G.TV_CHOCHU_LUAT || {}).camTuQuyet || ''));
       o += '<div class="card mb" style="border-color:#B4720F3e">' + cho.map(function (c) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
           '<b class="sm">' + h(c.t) + '</b>' +
@@ -372,7 +372,7 @@ G.VIEWS = G.VIEWS || {};
       (G.TV_KYLUAT || []).map(function (k) { return [String(k.no), h(k.t), h(k.vi)]; }));
 
     var n5 = G.tvSoiNhip5();
-    o += U.sec('Năm nhịp mười phút' + (n5.length ? ' — LỆCH: ' + h(n5.join(' ')) : ''),
+    o += U.sec('Năm nhịp mười phút' + (n5.length ? ' — LỆCH: ' + (n5.join(' ')) : ''),
       'Mười phút là mười phút. Nhịp nào dài ra thì nhịp khác ngắn lại, và nhịp bị ngắn lại luôn là nhịp năm — nhịp im lặng.');
     o += U.tbl(['Nhịp', 'Tên', 'Phút', 'Nói gì', 'Cấm'],
       (G.TV_NHIP5 || []).map(function (n) {
@@ -380,7 +380,7 @@ G.VIEWS = G.VIEWS || {};
       }));
 
     var tcl = G.TV_TUCHOI_LUAT || {};
-    o += U.sec('Ba mươi lời từ chối — thật hay giả', h(tcl.cot || ''));
+    o += U.sec('Ba mươi lời từ chối — thật hay giả', (tcl.cot || ''));
     o += '<div class="card mb" style="border-color:#B4720F3e">' +
       '<p class="sm" style="line-height:1.8"><b>Phép thử:</b> ' + h(tcl.thuThe || '') + '</p>' +
       '<p class="sm mt" style="line-height:1.8"><b>Gặp loại giả:</b> ' + h(tcl.luatGia || '') + '</p>' +
@@ -392,7 +392,7 @@ G.VIEWS = G.VIEWS || {};
           (t.dap || []).map(function (d, i) { return (i + 1) + '. ' + h(d); }).join('<br>')];
       }));
 
-    o += U.sec('Mười hai tín hiệu chốt', h((G.TV_TINHIEU_LUAT || {}).cot || ''));
+    o += U.sec('Mười hai tín hiệu chốt', ((G.TV_TINHIEU_LUAT || {}).cot || ''));
     o += '<div class="card mb">' + (G.TV_TINHIEU || []).map(function (x) {
       return '<span class="tiny" style="display:inline-block;margin:3px 8px 3px 0">' +
         x.no + '. ' + h(x.t) + '</span>';
@@ -426,7 +426,7 @@ G.VIEWS = G.VIEWS || {};
 
     var ho = (G.TV_VO || []).filter(function (v) { return v.ma === 'HO-T2'; })[0];
     if (ho) {
-      o += U.sec('Hố vô hình tháng hai', h(ho.khi));
+      o += U.sec('Hố vô hình tháng hai', (ho.khi));
       o += '<div class="card mb" style="border-color:' + ho.c + '3e">' +
         '<p class="sm" style="line-height:1.8"><b>Dấu hiệu:</b> ' + h(ho.dauHieu) + '</p>' +
         '<p class="sm mt" style="line-height:1.8"><b>Vì sao không ai gọi tên được:</b> ' + h(ho.viSaoKhong) + '</p>' +
@@ -451,7 +451,7 @@ G.VIEWS = G.VIEWS || {};
 
     var chuaDo = G.tvSoChuaDo();
     o += U.sec('Mười lăm con số tháng' + (chuaDo.length ? ' — ' + chuaDo.length + ' số chưa đo được' : ''),
-      h((G.TV_SO15_LUAT || {}).cot || ''));
+      ((G.TV_SO15_LUAT || {}).cot || ''));
     o += U.tbl(['#', 'Con số', 'Nguồn', 'Ghi chú'],
       (G.TV_SO15 || []).map(function (s) {
         return [String(s.no), h(s.t),

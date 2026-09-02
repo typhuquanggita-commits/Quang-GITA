@@ -192,7 +192,7 @@ G.VIEWS = G.VIEWS || {};
     var tkLoi = G.bnSoiThapKy(), cuaLoi = G.bnSoiCuaMoRung(10), chuaDo = G.bnCuaChuaDo();
 
     o += U.sec('Mười thập kỷ, mỗi thập kỷ đúng một nhiệm vụ',
-      h((G.BN_THAPKY_LUAT || {}).luat || '') + (tkLoi.length ? ' LỆCH: ' + h(tkLoi.join(' ')) : ''));
+      ((G.BN_THAPKY_LUAT || {}).luat || '') + (tkLoi.length ? ' LỆCH: ' + (tkLoi.join(' ')) : ''));
     o += U.tbl(['Thập kỷ', 'Năm', 'Thời kỳ', 'Nhiệm vụ sống còn', 'Làm bằng gì', 'Sai lầm chết người', 'Mốc'],
       (G.BN_THAPKY || []).map(function (x) {
         return [String(x.tk), x.tu + '–' + x.den, h(x.ten), h(x.viec), h(x.bang || '—'), h(x.sai), h(x.moc)];
@@ -206,7 +206,7 @@ G.VIEWS = G.VIEWS || {};
         return [h(x.ten), String(x.tuNam), h(x.lam) + (x.doiKhi ? ' ' + h(x.doiKhi) : '') + (x.ghi ? ' ' + h(x.ghi) : ''), h(x.vi)];
       }));
 
-    o += U.sec('Cửa mở rừng thứ hai', h((G.BN_MORUNG_LUAT || {}).chotTruoc || ''));
+    o += U.sec('Cửa mở rừng thứ hai', ((G.BN_MORUNG_LUAT || {}).chotTruoc || ''));
     o += '<div class="card mb" style="border-color:' + (cuaLoi.length ? '#BE0E16' : '#0B7350') + '2e">' +
       (G.BN_MORUNG || []).map(function (c) {
         return '<div style="padding:7px 0;border-bottom:1px solid var(--gita-vien-2)">' +
@@ -222,7 +222,7 @@ G.VIEWS = G.VIEWS || {};
         ' cửa chưa đo được vì còn chờ một ô chủ hệ điền.</p>' : '') + '</div>';
 
     var gl = G.BN_GIEOLAI || {};
-    o += U.sec('Gieo lại, không sao chép', h(gl.vi || ''));
+    o += U.sec('Gieo lại, không sao chép', (gl.vi || ''));
     o += '<div class="grid g2 mb">' +
       '<div class="card" style="border-color:#BE0E162e"><b class="sm" style="color:#BE0E16">SAO CHÉP — CẤM</b>' +
       '<p class="tiny mt" style="line-height:1.7">' + h((gl.saoChep || {}).la || '') + '</p>' +
@@ -250,13 +250,13 @@ G.VIEWS = G.VIEWS || {};
       '<p class="sm mt" style="line-height:1.8;color:#0B7350"><b>Xong khi:</b> ' + h(bo.xong || '') + '</p>' +
       '<p class="tiny dim mt" style="line-height:1.7">' + h(bo.vi || '') + '</p></div>';
 
-    o += U.sec('Tự vấn thể chế — ba cột', h((G.BN_HANSEI_TC_LUAT || {}).vi || ''));
+    o += U.sec('Tự vấn thể chế — ba cột', ((G.BN_HANSEI_TC_LUAT || {}).vi || ''));
     o += U.tbl(['Cột', 'Tên', 'Dấu hiệu', 'Làm gì'],
       (G.BN_HANSEI_TC || []).map(function (x) { return [String(x.cot), h(x.ten), h(x.dau), h(x.lam)]; }));
     o += '<p class="tiny dim mb" style="line-height:1.7">' + h((G.BN_HANSEI_TC_LUAT || {}).suGiaToc || '') + '</p>';
 
     var l50 = G.BN_LE50 || {};
-    o += U.sec('Lễ nửa thế kỷ', 'Buổi lễ lớn duy nhất trong một trăm năm. ' + h(l50.noi || ''));
+    o += U.sec('Lễ nửa thế kỷ', 'Buổi lễ lớn duy nhất trong một trăm năm. ' + (l50.noi || ''));
     o += '<div class="card mb"><p class="sm" style="line-height:1.8;color:#BE0E16"><b>Không được có:</b> ' +
       h((l50.camCo || []).join(' · ')) + '</p>' +
       (l50.phan || []).map(function (x) {
@@ -282,7 +282,7 @@ G.VIEWS = G.VIEWS || {};
     }).join('') + '</div>';
 
     var lm = G.BN_LIENMINH || {};
-    o += U.sec('Liên minh rừng — không trụ sở', h(lm.camGi || ''));
+    o += U.sec('Liên minh rừng — không trụ sở', (lm.camGi || ''));
     o += '<div class="card mb">' + (lm.co || []).map(function (x) {
       return '<div class="sm" style="padding:6px 0;line-height:1.8">· ' + h(x) + '</div>';
     }).join('') +
@@ -291,7 +291,7 @@ G.VIEWS = G.VIEWS || {};
       '<p class="tiny dim mt" style="line-height:1.7">' + h(lm.vi || '') + '</p></div>';
 
     var n100 = G.BN_NAM100 || {};
-    o += U.sec('Năm một trăm — hạt kể lại chính mình', h(n100.ghiSan || ''));
+    o += U.sec('Năm một trăm — hạt kể lại chính mình', (n100.ghiSan || ''));
     o += '<div class="card mb" style="border-color:#0B73503e">' +
       '<p style="line-height:1.9"><b>' + h(n100.cauHoi || '') + '</b></p>' +
       '<p class="sm mt" style="line-height:1.8"><b>Nếu CÓ:</b> ' + h(n100.neuCo || '') + '</p>' +
@@ -303,7 +303,7 @@ G.VIEWS = G.VIEWS || {};
       h(n100.viCuaC || '') + ' ' + h(n100.hoiDong || '') + '</p>';
 
     var dc = G.BN_DICHUC || {};
-    o += U.sec('Di chúc thể chế', h(dc.khacHopDen || ''));
+    o += U.sec('Di chúc thể chế', (dc.khacHopDen || ''));
     o += '<div class="card mb">' + (dc.phan || []).map(function (x) {
       return '<div class="sm" style="padding:6px 0;line-height:1.8">' + x.so + '. ' + h(x.t) +
         (x.ketBang ? '<div class="tiny" style="color:#0B7350">Kết bằng: ' + h(x.ketBang) + '</div>' : '') + '</div>';
@@ -314,7 +314,7 @@ G.VIEWS = G.VIEWS || {};
     var chetLoi = G.bnSoiChet();
     o += U.sec('Năm cách chết, và chuông báo sớm',
       'Cách chết nào không trỏ được vào thuốc CÓ THẬT thì đó là một nỗi lo, không phải một rủi ro được quản.' +
-      (chetLoi.length ? ' LỆCH: ' + h(chetLoi.join(' ')) : ''));
+      (chetLoi.length ? ' LỆCH: ' + (chetLoi.join(' ')) : ''));
     o += U.tbl(['Mã', 'Cách chết', 'Bản chất', 'Chuông báo sớm', 'Thuốc duy nhất'],
       (G.BN_CHET || []).map(function (c) {
         return [h(c.ma), h(c.ten), h(c.la), h(c.chuong), h(c.thuoc)];

@@ -138,7 +138,7 @@ G.VIEWS = G.VIEWS || {};
     if (!G.DD_CAP) return o;
 
     o += U.sec('Trần quan hệ — con số, không phải lời khuyên',
-      h((G.DD_TRAN_LUAT || {}).luat || ''));
+      ((G.DD_TRAN_LUAT || {}).luat || ''));
     o += U.tbl(['Cấp', 'Trần', 'Vào từ đâu', 'Vì sao trần này', 'Cấm sai', 'Hậu quả'],
       (G.DD_CAP || []).map(function (c) {
         return [h(c.ten), h(c.tran + ' ' + c.tranLa), h(c.vaoTu), h(c.viSaoTran), h(c.camSai), h(c.hauQua)];
@@ -147,7 +147,7 @@ G.VIEWS = G.VIEWS || {};
       h((G.DD_TRAN_LUAT || {}).thieuNguoi || '') + '</p>';
 
     var q = G.DD_9010 || {};
-    o += U.sec('Chín phần mười', h(q.vi || ''));
+    o += U.sec('Chín phần mười', (q.vi || ''));
     o += '<div class="card mb"><div class="row wrap" style="gap:16px">' +
       '<b style="color:#0B7350">Hỏi ' + q.hoi + '%</b>' +
       '<b style="color:#B4720F">Kể chuyện của chính mình ' + q.keChuyenMinh + '%</b>' +

@@ -193,7 +193,7 @@ G.VIEWS = G.VIEWS || {};
 
     if (vet.length) {
       o += U.sec('Sổ vết — những mùa nhà mình đã đi qua',
-        h((G.TT_VET || {}).luat || ''));
+        ((G.TT_VET || {}).luat || ''));
       o += '<div class="card mb">' + vet.slice().reverse().map(function (v) {
         var m = muaCua(v.mua) || {};
         return '<div style="padding:7px 0;border-bottom:1px solid var(--gita-vien-2)">' +
@@ -264,7 +264,7 @@ G.VIEWS = G.VIEWS || {};
     }).join('');
 
     var ct = G.TT_CONGTHUC || {};
-    o += U.sec('Công thức bốn nhân tử', h(ct.vi || ''));
+    o += U.sec('Công thức bốn nhân tử', (ct.vi || ''));
     o += '<div class="card mb"><b>' + h(ct.cau || '') + '</b>' +
       '<div class="mt">' + (ct.yeuTo || []).map(function (y) {
         return '<div style="padding:7px 0;border-top:1px solid var(--gita-vien-2)">' +
