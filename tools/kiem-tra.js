@@ -6203,6 +6203,150 @@ const { chromium } = require(PW);
     }
   }
 
+  console.log('\n54 · TRỤC NGŨ CHẠY THÀNH PHÉP KIỂM · BIÊN NIÊN MỘT TRĂM NĂM');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const nha = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.BN_TRUC5) return { co: false };
+      const man = G.VIEWS['bien-nien']();
+      return { co: true,
+        so: (G.BN_TRUC5 || []).length,
+        thieu: (G.BN_TRUC5 || []).filter(d => !d.t || !d.them || !d.vi).map(d => d.ma),
+        /* Điều luật KHÔNG có ai canh là một lời thề, không phải một điều luật */
+        khongAiCanh: (G.BN_TRUC5 || []).filter(d => !d.co && !d.ham && !d.kho).map(d => d.ma),
+        lo: !!(G.BN_THAPKY || G.BN_CHUYENGIAO || G.BN_DICHUC || G.BN_CHET),
+        manCoT5: man.indexOf((G.BN_TRUC5[0] || {}).t || '###') >= 0,
+        manKhongCoThapKy: man.indexOf('Mười thập kỷ') < 0 };
+    });
+    if (!nha.co) {
+      bao(false, 'Trục Ngũ nạp được từ gói nền', 'không thấy BN_TRUC5');
+    } else {
+      bao(nha.so === 5 && !nha.thieu.length && !nha.khongAiCanh.length,
+        'năm điều không ai được sửa, và điều nào cũng CÓ NGƯỜI CANH — trỏ vào một cờ, một hàm soi, hoặc một bản ghi có thật. Điều luật không ai canh là một lời thề, không phải một điều luật',
+        nha.khongAiCanh.length ? 'KHÔNG AI CANH: ' + nha.khongAiCanh.join(' ')
+          : nha.thieu.join(' ') || '5/5 có người canh');
+      bao(!nha.lo && nha.manCoT5 && nha.manKhongCoThapKy,
+        'gia đình ĐỌC ĐƯỢC hiến pháp một trang — hiến pháp mà người bị nó bảo vệ không đọc được thì không phải hiến pháp — nhưng không nhận lịch thập kỷ và cách chuyển giao',
+        nha.lo ? 'biên niên nghề lọt xuống máy phụ huynh' : 'chỉ có Trục Ngũ');
+    }
+
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ng = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.BN_THAPKY) return { co: false };
+      const ra = {};
+      ra.co = true;
+
+      /* ── NĂM PHÉP KIỂM CỦA HIẾN PHÁP, CHẠY THẬT ──
+         Phần X đòi đúng điều này: giá trị không sống nổi một trăm năm
+         trong văn bản nếu không được máy kiểm mỗi ngày. */
+      const t5 = G.bnSoiTrucNgu();
+      ra.t5Dat = t5.dat;
+      ra.t5Ho = t5.ho;
+      ra.t5Canh = t5.dieu.map(d => d.ma + '=' + (d.giu ? 'giữ' : 'HỞ')).join(' ');
+      /* Mỗi điều phải bắt được KHI BỊ PHÁ — kiểm từng điều một */
+      const pha = [];
+      /* T1 · xoá lời hứa không bán dữ liệu */
+      const giuDen = G.TR_DEN.slice();
+      G.TR_DEN = G.TR_DEN.filter(x => x.ma !== 'D-KHOR');
+      if (G.bnSoiTrucNgu().ho.indexOf('T1') < 0) pha.push('T1');
+      G.TR_DEN = giuDen;
+      /* T2 · tắt cờ chuông không thành chỉ số */
+      const giuCo2 = G.GL_ANDON_LUAT.khongThanhChiSo;
+      G.GL_ANDON_LUAT.khongThanhChiSo = false;
+      if (G.bnSoiTrucNgu().ho.indexOf('T2') < 0) pha.push('T2');
+      G.GL_ANDON_LUAT.khongThanhChiSo = giuCo2;
+      /* T3 · tắt cờ không hỏi chứng minh */
+      const sc3 = G.ND_SUCO.filter(s => s.ma === 'SC3')[0];
+      const giuCo3 = sc3.camHoiChungMinh;
+      sc3.camHoiChungMinh = false;
+      if (G.bnSoiTrucNgu().ho.indexOf('T3') < 0) pha.push('T3');
+      sc3.camHoiChungMinh = giuCo3;
+      /* T4 · cho một nguồn tiền vượt nửa */
+      const n1 = G.TR_NGUON.filter(n => n.ma === 'N1')[0];
+      const giuTran = n1.tranPt;
+      n1.tranPt = 60;
+      if (G.bnSoiTrucNgu().ho.indexOf('T4') < 0) pha.push('T4');
+      n1.tranPt = giuTran;
+      /* T5 · tắt cờ tự vấn cả năm tốt */
+      const gx = G.GL_KPI.filter(k => k.ma === 'G-XINLOI')[0];
+      const giuCo5 = gx.keCaNamTot;
+      gx.keCaNamTot = false;
+      if (G.bnSoiTrucNgu().ho.indexOf('T5') < 0) pha.push('T5');
+      gx.keCaNamTot = giuCo5;
+      ra.phaKhongBat = pha;
+      ra.t5SauKhiTra = G.bnSoiTrucNgu().dat;
+
+      /* ── Mười thập kỷ phủ kín một trăm năm, mỗi thập kỷ MỘT việc ── */
+      ra.soiTK = G.bnSoiThapKy();
+      ra.tk1 = (G.bnThapKyCua(1) || {}).tk;
+      ra.tk100 = (G.bnThapKyCua(100) || {}).tk;
+      ra.ngoaiKhoang = G.bnThapKyCua(0) === null && G.bnThapKyCua(101) === null;
+      ra.soiNamRoi = G.bnSoiNamRoi();
+
+      /* ── Cửa mở rừng: KHÔNG cửa nào thấp hơn đường đã hứa ──
+         Ngưỡng chết thứ hai của kho này đã sửa ở đây. */
+      ra.mucNam10 = G.bnMucTuChuNam(10);
+      ra.soiCua = G.bnSoiCuaMoRung(10);
+      ra.cuaTheoDuong = (G.BN_MORUNG || []).some(c => c.theoDuong);
+      ra.cuaChuaDo = G.bnCuaChuaDo().length;
+      ra.cuaChuaDoDuCot = G.bnCuaChuaDo().every(c => c.thieu);
+      /* Nhét lại một cửa số cứng dưới đường — phép kiểm phải bắt */
+      G.BN_MORUNG.push({ so: 99, t: 'cửa thử', pt: 50 });
+      ra.cuaBatDuoc = G.bnSoiCuaMoRung(10).length === 1;
+      G.BN_MORUNG.pop();
+
+      /* ── Năm cách chết, mỗi cách có thuốc trỏ vào cơ chế có thật ── */
+      ra.soiChet = G.bnSoiChet();
+      ra.soChet = (G.BN_CHET || []).length;
+
+      ra.soDotDong = (G.BN_DOTDONG || []).length;
+      ra.soChuyenGiao = (G.BN_CHUYENGIAO || []).length;
+      ra.soCot = (G.BN_HANSEI_TC || []).length;
+      ra.coCotBo = (G.BN_HANSEI_TC || []).some(c => c.cot === 3 && /BỎ/.test(c.lam));
+      ra.soCua100 = ((G.BN_NAM100 || {}).cua || []).length;
+      ra.coCuaC = ((G.BN_NAM100 || {}).cua || []).some(c => c.ma === 'C');
+      ra.diChucKhacHopDen = !!(G.BN_DICHUC && G.BN_DICHUC.khacHopDen && G.GL_HOPDEN);
+      ra.soPhanDiChuc = ((G.BN_DICHUC || {}).phan || []).length;
+      ra.manCoThapKy = G.VIEWS['bien-nien']().indexOf('Mười thập kỷ') >= 0;
+      return ra;
+    });
+    if (!ng.co) {
+      bao(false, 'biên niên nạp được từ gói nghề', 'không thấy BN_THAPKY');
+    } else {
+      bao(ng.t5Dat && !ng.t5Ho.length,
+        'CẢ NĂM ĐIỀU NỀN CÒN NGUYÊN — chạy thành phép kiểm máy, không nằm trong một bảng chữ. Mọi hiến pháp trên đời đều bị bào mòn từng chút chứ không bị xé, và bào mòn thì không ai thấy',
+        ng.t5Ho.join(' ') || ng.t5Canh);
+      bao(!ng.phaKhongBat.length && ng.t5SauKhiTra,
+        'phá TỪNG điều một thì phép kiểm bắt được ĐÚNG điều ấy — xoá lời hứa không bán dữ liệu, tắt cờ chuông, tắt cờ chứng minh, cho một nguồn vượt nửa, tắt cờ tự vấn năm tốt. Năm lần phá, năm lần đỏ đúng chỗ',
+        ng.phaKhongBat.length ? 'KHÔNG bắt: ' + ng.phaKhongBat.join(' ') : '5/5 bắt được');
+      bao(!ng.soiTK.length && ng.tk1 === 1 && ng.tk100 === 10 && ng.ngoaiKhoang,
+        'mười thập kỷ phủ kín một trăm năm không hở không chồng, mỗi thập kỷ ĐÚNG MỘT nhiệm vụ, và năm ngoài khoảng trả về rỗng chứ không kẹp về đầu hay cuối',
+        ng.soiTK.join(' ') || 'năm 1→TK1 · năm 100→TK10');
+      bao(!ng.soiNamRoi.length,
+        'năm rời vai trùng đúng năm cuối một nhiệm kỳ đã khai — hai bảng cùng nói về một trăm năm thì phải khớp ở điểm trao tay, lệch điểm ấy là một trong hai bảng đang tưởng tượng ra lịch sử khác',
+        ng.soiNamRoi.join(' ') || 'khớp');
+      bao(!ng.soiCua.length && ng.cuaTheoDuong && ng.cuaBatDuoc,
+        'không cửa mở rừng nào thấp hơn mức đã tự hứa cho năm ấy — bản gốc đặt cửa năm mươi phần trăm ở năm mười trong khi đường đã khai nói chín mươi, nên cửa ấy không bao giờ chặn được ai. Cửa nay ĐỌC ĐƯỜNG chứ không ghi số cứng',
+        ng.soiCua.join(' ') || 'mức năm 10 là ' + ng.mucNam10 + '% · cửa đọc đường');
+      bao(ng.cuaChuaDo === 1 && ng.cuaChuaDoDuCot,
+        'cửa nào CHƯA đo được thì khai thẳng kèm thiếu đúng cái gì — cửa này chờ một ô chủ hệ điền, và im lặng về nó là để một cửa mở toang mà trông như đang đóng');
+      bao(!ng.soiChet.length && ng.soChet === 5,
+        'năm cách chết của một đề án trăm năm, cách nào cũng có CHUÔNG BÁO SỚM và THUỐC trỏ vào cơ chế có thật — cách chết không trỏ được vào thuốc nào là một nỗi lo, không phải một rủi ro được quản',
+        ng.soiChet.join(' ') || '5/5 có thuốc thật');
+      bao(ng.soDotDong === 3 && ng.soChuyenGiao === 6 && ng.soCot === 3 && ng.coCotBo,
+        'ba công việc đốt đồng, sáu bước năm năm trước ngày rời, và tự vấn thể chế có CỘT BA cho quyền BỎ một nghi thức — nghi thức không được phép chết thì thể chế chết thay nó');
+      bao(ng.soCua100 === 3 && ng.coCuaC && ng.diChucKhacHopDen && ng.soPhanDiChuc === 5,
+        'ba cửa năm một trăm gồm cả CỬA CHẤM DỨT CÓ DANH DỰ, và di chúc thể chế năm phần tách bạch với hộp đen — hộp đen mở khi hệ sụp, di chúc trao khi hệ chuyển, hai thứ khác việc',
+        ng.soCua100 + ' cửa · di chúc ' + ng.soPhanDiChuc + ' phần');
+      bao(ng.manCoThapKy,
+        'vai có gói nghề dựng ra được lịch mười thập kỷ');
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

@@ -79,6 +79,7 @@
     "src/nam-dau.js",
     "src/tien-rung.js",
     "src/dao-tao-dh.js",
+    "src/bien-nien.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",

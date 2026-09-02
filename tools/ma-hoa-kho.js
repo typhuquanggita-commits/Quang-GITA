@@ -102,6 +102,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      kiểm được thì không phải lời hứa, và giấu nó đi là giữ lại quyền
      phá nó. Phần kinh tế còn lại đi gói nghề. */
   'TR_DEN', 'TR_DEN_LUAT',
+  /* TRỤC NGŨ — năm điều không thế hệ nào được sửa. Đây là bản hiến pháp
+     một trang của cả trăm năm, và một hiến pháp mà người bị nó bảo vệ
+     không đọc được thì không phải hiến pháp. Phần biên niên còn lại —
+     lịch thập kỷ, cửa mở rừng, cách chuyển giao — đi gói NGHỀ. */
+  'BN_TRUC5', 'BN_TRUC5_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -222,6 +227,14 @@ const NGHE = [
   /* Chuẩn mô phỏng — gồm cả bảng khai những gì CHƯA dựng. */
   'MP_BAY', 'MP_LUAT', 'MP_QUAI', 'MP_BAO', 'MP_CHONG', 'MP_CHONG_LUAT',
   'MP_DO', 'MP_GAY', 'MP_LICH', 'MP_CHUA', 'MP_CHUA_LUAT',
+  /* Biên niên một trăm năm: mười thập kỷ, ba công việc đốt đồng, cửa mở
+     rừng hai, năm năm trước ngày rời, tự vấn thể chế, di chúc, năm cách
+     chết. Đây là bản đồ cách Học viện tự thay máu qua các thế hệ — mở
+     ra là mở đúng chỗ một tổ chức yếu nhất: lúc đổi người. */
+  'BN_THAPKY', 'BN_THAPKY_LUAT', 'BN_DOTDONG', 'BN_MORUNG', 'BN_MORUNG_LUAT',
+  'BN_GIEOLAI', 'BN_CHUYENGIAO', 'BN_BONG', 'BN_HANSEI_TC', 'BN_HANSEI_TC_LUAT',
+  'BN_LE50', 'BN_CHAMTHU', 'BN_NENTANG', 'BN_LIENMINH', 'BN_NAM100',
+  'BN_DICHUC', 'BN_CHET', 'BN_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -635,6 +648,7 @@ const mau = {
      để bước vào — và là thứ để đòi nếu hệ phá lời. */
   DD_HUA: G.DD_HUA, GL_XONG: G.GL_XONG, GL_XONG_LUAT: G.GL_XONG_LUAT,
   TR_DEN: G.TR_DEN, TR_DEN_LUAT: G.TR_DEN_LUAT,
+  BN_TRUC5: G.BN_TRUC5, BN_TRUC5_LUAT: G.BN_TRUC5_LUAT,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')

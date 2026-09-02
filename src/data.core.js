@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.15',
+  version: '9.16',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -324,9 +324,9 @@ G.TAM_NHIN = [
      chính cấp mình, sổ nhật ký và cuộc thi viết. Thêm một màn như thế
      không mở thêm một dòng tư liệu nghề nào. Ghi con số thật ở đây, và
      giữ nguyên trần nội dung ở chỗ của nó. */
-  {vai:['R13'], pt:35, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
+  {vai:['R13'], pt:37, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
   {vai:['R14'], pt:31, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
-  {vai:['R15'], pt:27, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem mình đã đổi gì so với tuần trước'}
+  {vai:['R15'], pt:29, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -487,6 +487,10 @@ G.NAV = [
     {v:'doi-dong-hanh',t:'Người đi cùng nhà mình',      h:'5 lời hứa · trần 5–10–3 · 20 tình huống nói đúng', ic:'heart', star:1, capMo:'chung'},
     {v:'giu-lua',     t:'Ngày hệ này xong việc',       h:'5 điều kiện xong · chuông 3 tầng · 6 kịch bản sự cố', ic:'shield', capMo:'chung'},
     {v:'tien-rung',   t:'Sáu điều không bao giờ bán',  h:'Lời hứa về dữ liệu và túi tiền · 4 nguồn · thứ tự cắt chi', ic:'shield', capMo:'chung'},
+    /* Trục Ngũ mở cho mọi vai: hiến pháp mà người bị nó bảo vệ không đọc
+       được thì không phải hiến pháp. Phần biên niên nghề nằm cùng màn,
+       chỉ dựng ra khi máy CÓ kho — chặn ở kho, không chặn ở cột trái. */
+    {v:'bien-nien',   t:'Năm điều không ai được sửa',  h:'Hiến pháp 1 trang · 10 thập kỷ · 5 cách chết của một đề án 100 năm', ic:'shield', star:1, capMo:'chung'},
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
        tổn thương nhất và cách nó dựng ra người kèm. */
