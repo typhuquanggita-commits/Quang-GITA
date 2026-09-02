@@ -7312,6 +7312,186 @@ const { chromium } = require(PW);
     }
   }
 
+  console.log('\n62 · NĂM TẦNG COACH — MẶT THỨ BA CỦA MỘT CÁI THANG');
+  {
+    /* Đo trên vai QUẢN TRỊ: lớp này có nửa ở gói nền (bảng năng lực —
+       cái thước nhà mình cầm) và nửa ở gói nghề (vòng vận hành, bảng
+       dữ liệu, phép chia quy mô). Muốn đo hết thì phải có cả hai. Nửa
+       gói nền được đo riêng ở đoạn cuối mục này, trên vai phụ huynh. */
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.CS_TANG || !G.CS_VONG) return { co: false };
+      const r = {};
+
+      /* ── Khớp một-một với năm tầng ── */
+      r.soiNoi = G.csSoiNoi();
+      r.soTang = G.CS_TANG.length;
+      const t = G.CS_TANG[2];
+      const giuT = t.tang; t.tang = 'T1';
+      r.batTrungTang = G.csSoiNoi().some(x => /hai tầng Coach cùng một tầng/.test(x));
+      t.tang = giuT;
+      /* Bốn năng lực, không năm. Bốn thì nhớ được khi đang ngồi trước
+         một gia đình; sáu thì phải mở sổ, mà mở sổ giữa phiên là hỏng. */
+      t.nangLuc.push({ t: 'x', do: 'y', theoKho: 'BD_LON' });
+      r.batNamNangLuc = G.csSoiNoi().some(x => /5 năng lực, phải đúng 4/.test(x));
+      t.nangLuc.pop();
+      const giuM = t.mucDoSo; t.mucDoSo = 5;
+      r.batMucLech = G.csSoiNoi().some(x => /mức trưởng thành=5/.test(x));
+      t.mucDoSo = giuM;
+
+      /* ── Không dựng bản thứ hai của một luật ── */
+      const cl = G.csSoiKhongChepLai();
+      r.chepOK = !cl.chuaDo && !cl.loi.length;
+      const giuKQ = t.ketQua;
+      t.ketQua = (G.HT_TANG.filter(x => x.ma === t.tang)[0] || {}).thuThach;
+      r.batChepLai = (G.csSoiKhongChepLai().loi || []).some(x => /chép lại nguyên văn/.test(x));
+      t.ketQua = giuKQ;
+
+      /* ── Chỗ trùng tên: "10 bánh đà" ── */
+      const tt = G.csSoiTenTrung();
+      r.tenOK = !tt.chuaDo && !tt.loi.length;
+      const giuTen = G.CS_VONG[0].ten; G.CS_VONG[0].ten = G.BD_LON[3].ten;
+      r.batTrungTen = (G.csSoiTenTrung().loi || []).some(x => /trùng tên với bánh đà/.test(x));
+      G.CS_VONG[0].ten = giuTen;
+
+      /* ── Không dựng bảng hạng thứ hai của nghề ── */
+      const ck = G.csSoiCapKhongTrung();
+      r.capOK = !ck.chuaDo && !ck.loi.length;
+      const giuMD = t.mucDo; t.mucDo = G.DD_CAP[1].ten;
+      r.batTrungHang = (G.csSoiCapKhongTrung().loi || []).some(x => /trùng tên một hạng DD_CAP/.test(x));
+      t.mucDo = giuMD;
+
+      /* ── Mỗi năng lực trỏ vào một kho đo được ── */
+      const dd = G.csSoiDoDuoc();
+      r.doOK = !dd.loi.length; r.thieuThuoc = dd.khoThieu.length;
+      const giuK = t.nangLuc[0].theoKho; delete t.nangLuc[0].theoKho;
+      r.batKhongThuoc = G.csSoiDoDuoc().loi.some(x => /không trỏ vào kho nào/.test(x));
+      t.nangLuc[0].theoKho = giuK;
+
+      /* ── Mười bước là một VÒNG ── */
+      const sv = G.csSoiVong();
+      r.vongOK = !sv.chuaDo && !sv.loi.length && !sv.khoThieu.length;
+      r.soBuoc = G.CS_VONG.length;
+      const giuDV = G.CS_VONG[9].dongVong; delete G.CS_VONG[9].dongVong;
+      r.batMatCau = G.csSoiVong().loi.some(x => /số bước đóng vòng=0/.test(x));
+      G.CS_VONG[9].dongVong = giuDV;
+      const giuVB = G.CS_VONG[9].veBuoc; G.CS_VONG[9].veBuoc = 'V05';
+      r.batCauSai = G.csSoiVong().loi.some(x => /quay về V05, phải về V01/.test(x));
+      G.CS_VONG[9].veBuoc = giuVB;
+      const giuTK = G.CS_VONG[4].theoKho; delete G.CS_VONG[4].theoKho;
+      r.batBuocKhongKho = G.csSoiVong().loi.some(x => /không trỏ vào kho nào/.test(x));
+      G.CS_VONG[4].theoKho = giuTK;
+
+      /* ── Bốn có, ba chưa ── */
+      const sd = G.csSoiDuLieu();
+      r.duLieuOK = !sd.chuaDo && !sd.loi.length;
+      r.demCo = sd.dem.co; r.demChua = sd.dem.chua;
+      G.CS_DULIEU[1].co = true;
+      r.batToXanh = G.csSoiDuLieu().loi.some(x => /khai CÓ mà không trỏ kho/.test(x));
+      G.CS_DULIEU[1].co = false;
+      const giuTh = G.CS_DULIEU[1].thieu; delete G.CS_DULIEU[1].thieu;
+      r.batKhongNoiThieu = G.csSoiDuLieu().loi.some(x => /không nói thiếu cái gì/.test(x));
+      G.CS_DULIEU[1].thieu = giuTh;
+
+      /* ── Năm trụ nền trỏ vào luật có thật ── */
+      const sn = G.csSoiNen();
+      r.nenOK = !sn.loi.length && !sn.khoThieu.length;
+      const giuL = G.CS_NEN[0].theoLuat; delete G.CS_NEN[0].theoLuat;
+      r.batTruKhongLuat = G.csSoiNen().loi.some(x => /không trỏ vào luật nào/.test(x));
+      G.CS_NEN[0].theoLuat = giuL;
+
+      /* ── Phép chia con số đích: TÍNH TẠI CHỖ, không ghi sẵn ── */
+      const q = G.csQuyMo();
+      r.quyMo = { dich: q.dich, dh: q.canDH, cv: q.canCV, thang: q.thangSomNhatCoCV };
+      r.quyMoDung = q.canDH === Math.ceil(q.dich / q.tran.DH) &&
+                    q.canCV === Math.ceil(q.canDH / q.tran.CV) && q.thangSomNhatCoCV === 54;
+      /* Đổi trần thì con số phải đổi theo. Không đổi theo nghĩa là nó đã
+         được ghi sẵn ở đâu đó — và bản ghi sẵn thứ hai là bản sẽ cũ đi
+         lặng lẽ. Cùng bẫy với "10 Cây Mẹ = 300 nhà". */
+      const giuTran = G.DD_CAP[0].tran; G.DD_CAP[0].tran = 10;
+      r.theoTran = G.csQuyMo().canDH === Math.ceil(q.dich / 10);
+      G.DD_CAP[0].tran = giuTran;
+      r.veDung = G.csQuyMo().canDH === q.canDH;
+      r.khongGhiSan = G.CS_QUYMO.khongGhiSanConSo === true &&
+        !/\b200\b/.test(JSON.stringify(G.CS_QUYMO));
+
+      /* ── Bốn chỗ lệch với bản gốc, và màn hình ── */
+      r.soLech = (G.CS_LECH || []).length;
+      r.lechDuKhung = (G.CS_LECH || []).every(l => l.o && l.tranhGhi && l.heDaCo && l.xuLy && l.vi);
+      const man = G.VIEWS['coach-5-tang']();
+      r.manCoNangLuc = man.indexOf(G.CS_TANG[0].nangLuc[0].t) >= 0;
+      r.manCoQuyMo = /tháng thứ 54/.test(man);
+      r.manCoChuaCo = man.indexOf(G.CS_DULIEU[1].thieu) >= 0;
+
+      /* ── Mặt thứ ba nối được vào hàm chỉ đường đã có ── */
+      const d = G.htDuongBaMat(3);
+      r.baMat = !!(d && d.nguoiKem && d.nguoiKem.nangLuc.length === 4 && d.vung);
+      return { co: true, ...r };
+    });
+
+    if (!ra.co) {
+      bao(false, 'năm tầng Coach nạp được', 'không thấy CS_TANG hoặc CS_VONG');
+    } else {
+      bao(!ra.soiNoi.length && ra.soTang === 5 && ra.batTrungTang && ra.batNamNangLuc && ra.batMucLech,
+        'HỆ COACH NĂM TẦNG VÀO DẠNG LỚP SÂU, KHÔNG DẠNG THANG THỨ SÁU — mặt thứ ba của cùng cái thang: HT_TANG nói nhà mình được giao gì, VZ_VUNG nói nhà mình đang cảm thấy gì, CS_TANG nói người đi cùng phải làm được gì. Mỗi tầng ĐÚNG BỐN năng lực, và phép kiểm bắt ngay khi thành năm: bốn thì nhớ được khi đang ngồi trước một gia đình, sáu thì phải mở sổ — mà mở sổ giữa phiên là đã hỏng phiên rồi',
+        ra.soiNoi.join(' ') || '5 tầng Coach khớp 5 tầng một-một · 4 năng lực mỗi tầng');
+      bao(ra.chepOK && ra.batChepLai,
+        'HT_LUAT điều 3 thành HÀM: không cột nào của CS_TANG được chép lại nguyên văn thử thách của tầng. Việc của NGƯỜI KÈM khác việc của NHÀ ở cùng một bậc — chép sang là biến mặt thứ ba thành bản sao thứ hai, và hai bản của một luật thì sẽ có ngày lệch nhau lặng lẽ',
+        'bắt đúng chỗ chép lại');
+      bao(ra.tenOK && ra.batTrungTen,
+        'GỠ MỘT CHỖ TRÙNG TÊN NGUY HIỂM. Bản gốc gọi vòng vận hành của nó là "10 bánh đà", mà G.BD_LON đã là mười bánh đà với nội dung khác hẳn — cùng tên, cùng số lượng, khác ruột. Đó là chỗ sáu tháng sau có người trỏ nhầm mà bộ kiểm vẫn xanh. Nay nó tên là VÒNG VẬN HÀNH, và máy từ chối mọi bước trùng tên với một bánh đà',
+        'bắt được khi một bước mượn tên bánh đà');
+      bao(ra.capOK && ra.batTrungHang,
+        'năm mức trưởng thành KHÔNG được biến thành bảng xếp hạng thứ hai của nghề. Hạng người kèm có đúng ba, ở DD_CAP, và ba thì đã đủ. Hai bảng xếp hạng cho một nghề là hai bảng sẽ lệch, và lúc lệch thì người bị chấm chọn bảng nào lợi hơn',
+        'bắt được khi một mức mượn tên một hạng DD_CAP');
+      bao(ra.doOK && ra.batKhongThuoc,
+        'mỗi năng lực trỏ vào MỘT KHO đo được — DT_RUBRIC, DT_VAI, DD_9010, TD_MUC, HM_NGONTU. Năng lực không đo được là một tính từ, và một bảng toàn tính từ thì ai cũng đạt. ' +
+        ra.thieuThuoc + ' thước nằm ở gói nghề nên máy gia đình chưa đo được — đó là quyền, không phải lỗi, và phép kiểm phân biệt hai thứ ấy',
+        'bắt được khi một năng lực mất thước');
+      bao(ra.vongOK && ra.soBuoc === 10 && ra.batMatCau && ra.batCauSai && ra.batBuocKhongKho,
+        'MƯỜI BƯỚC LÀ MỘT VÒNG, KHÔNG PHẢI MỘT THANG — và cầu quay về không phải lời nói suông: bước mười là chuyển vai sau tầng năm, chạy trên HT_SAUT5, và nhà cũ thành người kèm nhà mới ở bước một. Vòng không có cầu quay về là một danh sách được vẽ cong. Mỗi bước phải trỏ vào một kho có thật; bước không trỏ được vào kho nào là bước chưa có chỗ chạy',
+        '10 bước · 1 cầu quay về V10→V01 · 10/10 bước có kho');
+      bao(ra.duLieuOK && ra.demCo === 4 && ra.demChua === 3 && ra.batToXanh && ra.batKhongNoiThieu,
+        'BẢY NĂNG LỰC DỮ LIỆU: BỐN CÓ, BA CHƯA — và ghi đúng bốn ba. Ba ô chưa có phải nói THIẾU CÁI GÌ: sổ nhịp tuần, sổ đo dấu hiệu, bảng tải của cả đội kèm. Một bảng tô xanh hết là bảng không dùng được để quyết định làm gì tiếp; ba ô trắng ở đây đáng giá hơn bảy ô xanh',
+        ra.demCo + ' có · ' + ra.demChua + ' chưa, mỗi ô chưa đều nói thiếu gì');
+      bao(ra.nenOK && ra.batTruKhongLuat,
+        'năm trụ nền TRỎ vào luật đã có — TV_LANRANH, DD_TRAN_LUAT, DD_9010, DD_LUAT, PL_QUYEN — chứ không viết lại luật ở đây. Viết lại là có hai bản, và trong hai bản thì một bản sẽ cũ đi mà không ai biết',
+        '5 trụ · 5 luật có thật');
+      bao(ra.quyMoDung && ra.theoTran && ra.veDung && ra.khongGhiSan,
+        'CON SỐ ĐÍCH CHIA ĐƯỢC CHO TRẦN. Bản gốc ghi "Kiến tạo 1000 lãnh đạo" ở chân trang mà không ghi cần bao nhiêu người: chia ra là ' + ra.quyMo.dh + ' Đồng Hành và ' + ra.quyMo.cv + ' Cố Vấn. Con số ấy TÍNH TẠI CHỖ từ DD_CAP — đổi trần thì nó đổi theo, vì ghi sẵn kết quả vào kho là dựng bản thứ hai của một phép chia. Và nút thắt thật không phải người mà là NĂM: Cố Vấn đầu tiên sớm nhất ở tháng thứ ' + ra.quyMo.thang + ', đọc ra từ chính cột điều kiện của DD_CAP. Cùng phép làm đã bắt được "10 Cây Mẹ = 300 nhà" — chia ra là 30',
+        '1000 → ' + ra.quyMo.dh + ' DH → ' + ra.quyMo.cv + ' CV · tháng ' + ra.quyMo.thang);
+      bao(ra.soLech === 4 && ra.lechDuKhung && ra.manCoNangLuc && ra.manCoQuyMo && ra.manCoChuaCo && ra.baMat,
+        'bốn chỗ bức tranh lệch với hệ đã dựng đều ghi đủ bốn cột — tranh ghi gì, hệ đã có gì, xử lý ra sao, vì sao. Màn hình in cả bảng năng lực, cả phép chia, cả ba ô CHƯA CÓ. Và hàm chỉ đường của hai bản trước nay nói thêm mặt thứ ba mà không cần hàm mới: bọc thì một nguồn, dựng thì hai',
+        ra.soLech + ' chỗ lệch · màn in đủ · htDuongBaMat nối được');
+    }
+
+    /* Nửa gói NỀN đo riêng trên máy gia đình: cái thước phải tới tay
+       người được kèm, và các phép soi không được đỏ oan ở chỗ dữ liệu
+       CỐ Ý vắng mặt. Bản 9.21 đã mắc đúng lỗi ấy một lần. */
+    {
+      await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+      await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+      const nha = await p.evaluate(() => {
+        const G = window.G;
+        return {
+          coThuoc: !!G.CS_TANG && G.CS_TANG.length === 5 && !!G.CS_NEN && !!G.CS_LUAT,
+          khongCoBep: G.CS_VONG === undefined && G.CS_DULIEU === undefined &&
+                      G.CS_QUYMO === undefined && G.CS_LECH === undefined,
+          soiSach: !G.csSoiNoi().length && !G.csSoiDoDuoc().loi.length && !G.csSoiNen().loi.length,
+          noiChuaDo: G.csSoiVong().chuaDo === true && G.csSoiTenTrung().chuaDo === true &&
+                     G.csQuyMo().chuaDo === true && G.csQuyMo().dich === undefined,
+          manChay: G.VIEWS['coach-5-tang']().indexOf(G.CS_TANG[4].suMenh) >= 0
+        };
+      });
+      bao(nha.coThuoc && nha.khongCoBep && nha.soiSach && nha.noiChuaDo && nha.manChay,
+        'CÁI THƯỚC TỚI TAY NGƯỜI ĐƯỢC KÈM: máy gia đình có đủ năm tầng năng lực và năm trụ nền, và KHÔNG có vòng vận hành, bảng dữ liệu hay phép chia quy mô — việc trong bếp ở lại gói nghề. Trên máy ấy mọi phép soi đều sạch và những phép cần kho nghề thì nói CHƯA ĐO ĐƯỢC kèm tên kho, không báo thiếu. Bản 9.21 tôi để một phép kiểm đỏ trên máy gia đình vì nó đòi HP_TANG; một phép kiểm báo thiếu ở chỗ dữ liệu cố ý vắng mặt là phép kiểm dạy người ta coi một lớp bảo vệ là một lỗi, và sau vài lần thì người ta tắt nó đi',
+        'nhà có thước, không có bếp · csQuyMo nói chưa đo được và KHÔNG trả số 0');
+    }
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

@@ -139,6 +139,14 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      là thứ người đang nằm trong đó cần đọc nhất. Giấu bảng chỗ rơi
      khỏi người có thể đang rơi là giấu đúng chỗ nó có việc. */
   'VZ_LOI', 'VZ_VUNG', 'VZ_VUNG_LUAT', 'VZ_ROI', 'VZ_ROI_LUAT', 'VZ_LUAT',
+  /* NĂM TẦNG COACH — mặt thứ ba của cùng cái thang: ở bậc nhà mình
+     đang đứng, người đi cùng phải làm được gì. Ở gói NỀN vì đây là một
+     CÁI THƯỚC, y như TV_LANRANH và DD_HUA: nhà mình đọc được thì hỏi
+     thẳng được. Giấu bảng năng lực khỏi người được kèm là giữ lại
+     quyền không đạt — một chuẩn chỉ người chấm đọc được thì nó là
+     chuẩn của người chấm.
+     Vòng vận hành, bảng dữ liệu và phép chia quy mô đi gói NGHỀ. */
+  'CS_LOI', 'CS_TANG', 'CS_TANG_LUAT', 'CS_NEN', 'CS_LUAT',
   'HT_DICH', 'HT_TANG', 'HT_TANG_LUAT', 'HT_SAUT5', 'HT_KC',
   'HT_NOI', 'HT_NOI_LUAT', 'HT_LECH', 'HT_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
@@ -235,6 +243,14 @@ const NGHE = [
      lời theo kịch bản. Phần họ được đọc là lời hứa, ở DD_HUA. */
   'DD_CAP', 'DD_TRAN_LUAT', 'DD_9010', 'DD_HOI', 'DD_HATLAI',
   'DD_TINHHUONG', 'DD_THAY', 'DD_KPI', 'DD_LUAT',
+  /* Việc trong bếp của hệ Coach: vòng vận hành mười bước, bảng bảy năng
+     lực dữ liệu (bốn có ba chưa), phép chia con số đích cho trần, bốn
+     chỗ bản gốc lệch, hai câu chờ chủ hệ.
+     Bảng "bốn có ba chưa" đặc biệt KHÔNG được ra ngoài: nó nói chính
+     xác ba chỗ hệ này chưa có sổ đo. Với người trong nghề đó là danh
+     sách việc phải làm; với người ngoài đó là danh sách chỗ hở. */
+  'CS_VONG', 'CS_VONG_LUAT', 'CS_DULIEU', 'CS_DULIEU_LUAT',
+  'CS_QUYMO', 'CS_LECH', 'CS_CHOCHU',
   /* Lớp ép của người giữ lửa: trần bàn điều khiển, chuông ba tầng, bảng
      chấm chính mình, sáu kịch bản sự cố, sổ đo di sản, hộp đen. Đây là
      cách Học viện tự lái và tự thay mình — và bảng kịch bản sự cố kể ra
@@ -733,6 +749,11 @@ const mau = {
   HN_NGO: G.HN_NGO, HN_NGO_LUAT: G.HN_NGO_LUAT,
   /* Con đường năm tầng vào cả bản xem thử: người đang cân nhắc bước
      vào cần thấy trước cả năm bậc và cả ngày thang này hết bậc. */
+  /* Năm tầng Coach vào cả bản xem thử. Người mở bản xem thử là người
+     sắp giao nhà mình cho một người kèm — bảng năng lực là câu hỏi họ
+     cần cầm sẵn, y như năm lằn ranh ở TV_LANRANH. */
+  CS_LOI: G.CS_LOI, CS_TANG: G.CS_TANG, CS_TANG_LUAT: G.CS_TANG_LUAT,
+  CS_NEN: G.CS_NEN, CS_LUAT: G.CS_LUAT,
   VZ_LOI: G.VZ_LOI, VZ_VUNG: G.VZ_VUNG, VZ_VUNG_LUAT: G.VZ_VUNG_LUAT,
   VZ_ROI: G.VZ_ROI, VZ_ROI_LUAT: G.VZ_ROI_LUAT, VZ_LUAT: G.VZ_LUAT,
   HT_DICH: G.HT_DICH, HT_TANG: G.HT_TANG, HT_TANG_LUAT: G.HT_TANG_LUAT,
