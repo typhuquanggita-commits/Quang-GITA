@@ -1551,12 +1551,12 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 78 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 80 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 78 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 80 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -1587,7 +1587,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.13',
+  version: '9.14',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2041,6 +2041,11 @@ G.NAV = [
     {v:'ban-do-chien-luoc',t:'Bản đồ chiến lược',      h:'4 tầng · 18 mục tiêu · chuỗi nhân quả kiểm được', ic:'map', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'the-diem-can-bang',t:'Thẻ điểm cân bằng',      h:'Mỗi mục tiêu một thước · 7 nhịp xem lại', ic:'chart', perm:'nghe_chung', capMo:'nghe'},
     {v:'nam-man',     t:'Bàn điều khiển năm màn',      h:'30 phút mỗi sáng · 3 cấp đồng hành · 5 nhiệm kỳ', ic:'orbit', perm:'nghe_chung', capMo:'nghe'},
+    /* Hai màn một-màn-hai-tầng: gia đình đọc lời hứa và ngày hệ xong
+       việc; vai có gói nghề đọc thêm sổ tay và lớp ép. Nên KHÔNG khoá
+       quyền — chặn nằm ở chỗ máy có kho hay không, không nằm ở cột trái. */
+    {v:'doi-dong-hanh',t:'Người đi cùng nhà mình',      h:'5 lời hứa · trần 5–10–3 · 20 tình huống nói đúng', ic:'heart', star:1, capMo:'chung'},
+    {v:'giu-lua',     t:'Ngày hệ này xong việc',       h:'5 điều kiện xong · chuông 3 tầng · 6 kịch bản sự cố', ic:'shield', capMo:'chung'},
     {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
     {v:'giai-doan-bao-ve',t:'Giai đoạn và lớp bảo vệ', h:'5 giai đoạn · 4 tầng bảo vệ, kể cả chỗ chưa có', ic:'shield', perm:'nghe_chung', capMo:'nghe'},
     /* Chỉ hiện với vai CÓ đầu việc trong hệ — luồng này để người LÀM nói
@@ -2519,6 +2524,8 @@ G.ITEM_EN = {
   'banh-da':['Ten flywheels','10 loops × 10 actions · 10 levels · milestones open on evidence'],
   'mua-doi':['The season our family is in','A hard season lowers the bar, never penalises · the streak is protected'],
   'buc-tranh':['The journey picture','7 lands · 3 questions each evening · which branch needs watering'],
+  'doi-dong-hanh':['The person walking with us','5 promises · caps of 5-10-3 · 20 situations, the right words'],
+  'giu-lua':['The day this system is done','5 conditions for done · 3-tier andon · 6 failure playbooks'],
   'nam-man':['The five-screen console','30 minutes each morning · 3 companion levels · 5 terms'],
   'kien-truc-100':['The hundred-year architecture','100 value layers · 5 eras · +3–5% a year'],
   'ban-do-chien-luoc':['Strategy map','4 layers · 18 objectives · a testable chain of cause and effect'],
@@ -4833,6 +4840,11 @@ G.THUOC_CAP_PHEP = [
   'TT_MAN','TT_DONGHANH','TT_DONGHANH_LUAT','TT_NHIEMKY',
   'HM_NGAY1','HM_HOI3','HM_NGONTU','HM_VUNG','HM_VUNG_LUAT',
   'HM_NGUY','HM_NGUY_SAU','HM_LEU','HM_HEO','HM_LUAT','HM_SAU',
+  'DD_HUA','DD_CAP','DD_TRAN_LUAT','DD_9010','DD_HOI','DD_HATLAI',
+  'DD_TINHHUONG','DD_THAY','DD_KPI','DD_LUAT',
+  'GL_XONG','GL_XONG_LUAT','GL_BAN','GL_BAN_CAM','GL_MUC1','GL_MUC1_LUAT',
+  'GL_ANDON','GL_ANDON_LUAT','GL_KPI','GL_KPI_LUAT','GL_SUCO','GL_SUCO_LUAT',
+  'GL_LS','GL_LS_LUAT','GL_HOPDEN','GL_LUAT',
   /* Lớp băng của ma trận: từ 9.8 nó về gói nghề cùng MATRAN, vì mọi
      màn đọc nó đều khoá ở quyền nghề. */
   'MT_BANG','MT_BANG_MA','MT_BANG_TANG','MT_BANG_NHOM','MT_BANG_LUAT','MT_DO',
@@ -23759,10 +23771,14 @@ G.VIEWS = G.VIEWS || {};
     return ds;
   };
 
-  G.hmSoiNgonTu = function () {
+  /* ─── Máy quét dùng chung ───
+     Nhận danh sách [nhãn, câu] và trả về những chỗ phạm. Để CHUNG một
+     máy vì sổ tay Cây Mẹ cũng quét bằng đúng chuẩn này: hai máy quét
+     rồi sẽ có ngày lệch nhau, và lúc ấy chuẩn ngôn từ có hai bản. */
+  G.hmQuetTuCam = function (dsCau) {
     var cam = (G.HM_NGONTU || {}).camTu || [];
     var pham = [];
-    G.hmLoiNoiVoiNha().forEach(function (c) {
+    (dsCau || []).forEach(function (c) {
       var chu = String(c[1] || '');
       cam.forEach(function (tu) {
         /* Bắt theo TỪ, không theo chuỗi con: 'nên' nằm trong 'lên' và
@@ -23774,6 +23790,8 @@ G.VIEWS = G.VIEWS || {};
     });
     return pham;
   };
+
+  G.hmSoiNgonTu = function () { return G.hmQuetTuCam(G.hmLoiNoiVoiNha()); };
 
   /* ─── Mỗi cửa tử có CƠ CHẾ CÓ THẬT chặn không ───
      Cột `co` liệt kê tên hàm hoặc tên kho, cách nhau bằng dấu chấm giữa,
@@ -23936,6 +23954,427 @@ G.VIEWS = G.VIEWS || {};
     }).join('') + '</div>';
 
     return o + phanNghe();
+  };
+})();
+
+})();
+
+/* ═════════ src/doi-dong-hanh.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY LỚP ÉP CỦA ĐỘI ĐỒNG HÀNH
+
+   Kho chuẩn ở kho-goc/data.doi-dong-hanh.js. Tệp này là phần CHẠY, và
+   phần chạy quan trọng nhất là ddNhanThem() — hàm TỪ CHỐI.
+
+   VÌ SAO PHẢI CÓ MỘT HÀM TỪ CHỐI
+
+   G.TT_DONGHANH đã viết "kèm tối đa ba nhà" từ bản 9.12. Nhưng một con
+   số nằm trong lời thì sáu tháng sau không ai nhớ, và ai cũng giữ tám
+   nhà vì "đang thiếu người". Trần mà không có hàm chặn thì không phải
+   trần — là một lời nhắc.
+
+   Nên ddNhanThem() trả về `ok:false` kèm câu nói thẳng, và màn hình
+   giao việc gọi nó TRƯỚC khi giao. Chặn ở chỗ giao, không chặn ở chỗ
+   nhớ.
+
+   MỘT MÁY QUÉT, HAI CHỖ DÙNG
+
+   ddSoiNgonTu() gọi G.hmQuetTuCam() — cùng máy quét với lời hỏi hằng
+   ngày. Dựng máy quét thứ hai thì rồi sẽ có ngày hai máy lệch nhau, và
+   lúc ấy chuẩn ngôn từ có hai bản, tức là không có bản nào.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h;
+
+  G.ddCap = function (ma) {
+    var ds = G.DD_CAP || [];
+    for (var i = 0; i < ds.length; i++) if (ds[i].ma === ma) return ds[i];
+    return null;
+  };
+
+  /* ─── Trần quan hệ ───
+     Trả về số tối đa, hoặc 0 khi máy này không có kho ép (vai của gia
+     đình). Không có kho thì KHÔNG được đoán một con số — đoán ra 5 rồi
+     một ngày ai đó tin con số đoán ấy là luật. */
+  G.ddTranCua = function (ma) {
+    var c = G.ddCap(ma);
+    return c ? c.tran : 0;
+  };
+
+  /* ─── Giao thêm một nhà: được hay không ───
+     Gọi TRƯỚC khi giao. Thiếu người thì nhận CHẬM lại, không giao dày
+     lên — tốc độ của rừng là tốc độ nuôi được người. */
+  G.ddNhanThem = function (ma, dangGiu, thieuNguoi) {
+    var c = G.ddCap(ma);
+    if (!c) return { ok: false, loi: 'Không có cấp nào mang mã ấy.' };
+    var giu = Math.max(0, Number(dangGiu) || 0);
+    if (giu >= c.tran)
+      return { ok: false, tran: c.tran, dangGiu: giu,
+        loi: c.ten + ' đang giữ ' + giu + ' ' + c.tranLa + ', đã chạm trần ' + c.tran + '. ' +
+          c.viSaoTran + (thieuNguoi ? ' ' + (G.DD_TRAN_LUAT || {}).thieuNguoi : '') };
+    return { ok: true, tran: c.tran, dangGiu: giu, con: c.tran - giu };
+  };
+
+  /* ─── Chín phần mười có cộng đúng không ───
+     Ba số cộng phải bằng một trăm, và phần dạy phải bằng KHÔNG. Sai một
+     trong hai thì chuẩn đã bị nới, và nới rồi thì không ai đo lại. */
+  G.ddSoi9010 = function () {
+    var q = G.DD_9010;
+    if (!q) return ['thiếu DD_9010'];
+    var loi = [];
+    var tong = (q.hoi || 0) + (q.keChuyenMinh || 0) + (q.day || 0);
+    if (tong !== 100) loi.push('tổng=' + tong);
+    if (q.day !== 0) loi.push('dạy=' + q.day);
+    if (q.hoi < 90) loi.push('hỏi=' + q.hoi);
+    return loi;
+  };
+
+  /* ─── Ba cấp có nối vào thang đã có không ───
+     `maTT` phải trỏ vào một mã có thật trong G.TT_DONGHANH. Hai thang
+     song song thì sẽ có ngày lệch nhau, và lúc ấy không ai biết tin
+     cái nào. */
+  G.ddNoiThang = function () {
+    var co = (G.TT_DONGHANH || []).map(function (d) { return d.ma; });
+    if (!co.length) return [];      /* chưa nạp gói nghề thì không kết luận */
+    return (G.DD_CAP || []).filter(function (c) { return co.indexOf(c.maTT) < 0; })
+      .map(function (c) { return c.ma + '→' + c.maTT; });
+  };
+
+  /* ─── Những câu THẬT SỰ nói với gia đình trong sổ tay ───
+     Cột `sai` và cột `xau` KHÔNG vào đây. Chúng là ví dụ để đối chiếu;
+     quét chúng vào thì phép kiểm đỏ vĩnh viễn, và rồi ai đó sẽ tắt
+     phép kiểm — đó là cách một chuẩn chết. */
+  G.ddLoiNoiVoiNha = function () {
+    var ds = [];
+    (G.DD_TINHHUONG || []).forEach(function (x) { ds.push(['DD_TINHHUONG.' + x.so, x.dung]); });
+    (G.DD_THAY || []).forEach(function (x, i) { ds.push(['DD_THAY.' + i, x.tot]); });
+    (G.DD_HOI || []).forEach(function (n) {
+      (n.mau || []).forEach(function (m, i) { ds.push(['DD_HOI.' + n.nhom + '.' + i, m]); });
+    });
+    (G.DD_HUA || []).forEach(function (x) { ds.push(['DD_HUA.' + x.ma, x.t]); });
+    return ds;
+  };
+
+  G.ddSoiNgonTu = function () {
+    return G.hmQuetTuCam ? G.hmQuetTuCam(G.ddLoiNoiVoiNha()) : [];
+  };
+
+  /* ─── Tình huống nào chưa đủ hai vế ───
+     Mỗi tình huống phải có một câu SAI và một câu ĐÚNG khác nhau thật.
+     Câu sai giống câu đúng thì bài học ấy không dạy được gì. */
+  G.ddSoiTinhHuong = function () {
+    return (G.DD_TINHHUONG || []).filter(function (x) {
+      return !x.khi || !x.sai || !x.dung || !x.vi ||
+        String(x.sai).trim() === String(x.dung).trim();
+    }).map(function (x) { return 'TH' + x.so; });
+  };
+
+  /* ═══════════ MÀN: NGƯỜI ĐI CÙNG NHÀ MÌNH ═══════════
+     Một màn, hai tầng sâu. Gia đình có G.DD_HUA nên đọc được LỜI HỨA —
+     lời hứa không kiểm được thì không phải lời hứa. Phần sổ tay chỉ
+     dựng ra khi máy CÓ G.DD_TINHHUONG, tức là vai có gói nghề. Đó là
+     cách chặn thật; ẩn bằng câu lệnh if thì mở công cụ nhà phát triển
+     là đọc được. */
+  G.VIEWS['doi-dong-hanh'] = function () {
+    if (!G.DD_HUA)
+      return U.empty('Chưa mở được phần người đi cùng', 'Phần này nằm trong gói nền. Đăng nhập lại để nạp.');
+
+    var o = U.ph({ eyebrow: 'NGƯỜI ĐI CÙNG NHÀ MÌNH', ic: 'heart', grad: 1,
+      t: 'Người đi cùng không dạy cây lớn — họ chưa quên cảm giác của hạt',
+      lead: 'Người đi cùng nhà mình được chọn từ gia đình đã đi qua đoạn đường nhà mình đang đứng. ' +
+        'Không phải chuyên gia. Chuyên gia nói đúng, nhưng đúng chưa từng làm ai kiên trì.' });
+
+    o += U.sec('Năm điều họ hứa với nhà mình',
+      'Đây là những điều nhà mình có quyền đòi. Một lời hứa không kiểm được thì không phải lời hứa.');
+    o += '<div class="card mb">' + (G.DD_HUA || []).map(function (x) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + h(x.t) + '</b>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(x.y) + '</p></div>';
+    }).join('') + '</div>';
+
+    /* ── Phần của nghề ── */
+    if (!G.DD_CAP) return o;
+
+    o += U.sec('Trần quan hệ — con số, không phải lời khuyên',
+      h((G.DD_TRAN_LUAT || {}).luat || ''));
+    o += U.tbl(['Cấp', 'Trần', 'Vào từ đâu', 'Vì sao trần này', 'Cấm sai', 'Hậu quả'],
+      (G.DD_CAP || []).map(function (c) {
+        return [h(c.ten), h(c.tran + ' ' + c.tranLa), h(c.vaoTu), h(c.viSaoTran), h(c.camSai), h(c.hauQua)];
+      }));
+    o += '<p class="tiny dim mb" style="line-height:1.7">' + h((G.DD_TRAN_LUAT || {}).vi || '') + ' ' +
+      h((G.DD_TRAN_LUAT || {}).thieuNguoi || '') + '</p>';
+
+    var q = G.DD_9010 || {};
+    o += U.sec('Chín phần mười', h(q.vi || ''));
+    o += '<div class="card mb"><div class="row wrap" style="gap:16px">' +
+      '<b style="color:#0B7350">Hỏi ' + q.hoi + '%</b>' +
+      '<b style="color:#B4720F">Kể chuyện của chính mình ' + q.keChuyenMinh + '%</b>' +
+      '<b style="color:#BE0E16">Dạy ' + q.day + '%</b></div>' +
+      '<p class="tiny dim mt" style="line-height:1.7"><b>Đo bằng:</b> ' + h(q.doBang || '') + '</p>' +
+      '<p class="tiny mt" style="line-height:1.7">' + h(q.lech1 || '') + ' ' + h(q.lech2 || '') + '</p></div>';
+
+    var hl = G.DD_HATLAI || {};
+    o += '<div class="card mb" style="border-color:#0B73503e">' +
+      '<span class="tiny up" style="color:#0B7350">ĐIỀU KIỆN VÀO NGHỀ · ' + h(hl.ten || '') + ' · ' + (hl.gio || 0) + ' GIỜ</span>' +
+      '<p class="sm mt" style="line-height:1.8">' + h(hl.lam || '') + '</p>' +
+      '<p class="sm mt" style="line-height:1.8"><b>Xong khi:</b> ' + h(hl.xong || '') + '</p>' +
+      '<p class="tiny dim mt" style="line-height:1.7">' + h(hl.vi || '') + ' ' + h(hl.camBo || '') + '</p></div>';
+
+    o += U.sec('Mười hai dạng câu hỏi', 'Ba nhóm. Mỗi nhóm có một câu tuyệt đối không được đổi thành.');
+    o += (G.DD_HOI || []).map(function (n) {
+      return '<div class="card mb">' +
+        '<b class="sm">' + h(n.ten) + '</b>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(n.y) + '</p>' +
+        '<div class="mt">' + (n.mau || []).map(function (m) {
+          return '<div class="sm" style="padding:5px 0;line-height:1.7">· ' + h(m) + '</div>';
+        }).join('') + '</div>' +
+        '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>Không bao giờ đổi thành:</b> ' + h(n.camDoi) + '</p></div>';
+    }).join('');
+
+    o += U.sec('Hai mươi tình huống — câu giết hạt và câu nuôi hạt',
+      'Cột bên trái là câu cố ý để lại, để đối chiếu. Đọc xong rồi thì quên câu bên trái, nhớ câu bên phải.');
+    o += U.tbl(['Khi nào', 'Câu giết hạt', 'Câu nuôi hạt', 'Vì sao'],
+      (G.DD_TINHHUONG || []).map(function (x) {
+        return [h(x.khi), h(x.sai), h(x.dung), h(x.vi)];
+      }));
+
+    o += U.sec('Thay lời', '');
+    o += U.tbl(['Thay vì nói', 'Hãy nói'],
+      (G.DD_THAY || []).map(function (x) { return [h(x.xau), h(x.tot)]; }));
+
+    o += U.sec('Bảng chấm của chính người kèm',
+      'Điểm được lắng nghe nặng nhất, và nó là chỉ số duy nhất người kèm không ra lệnh được.');
+    o += U.tbl(['Chỉ số', 'Trọng số', 'Đo bằng', 'Vì sao không làm đẹp bằng tay được'],
+      (G.DD_KPI || []).map(function (k) {
+        return [h(k.ten), Math.round(k.trong * 100) + '%', h(k.doBang), h(k.khongLamDep)];
+      }));
+
+    o += U.sec('Bảy luật của đội đồng hành', '');
+    o += '<div class="card">' + (G.DD_LUAT || []).map(function (l) {
+      return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + l.no + '. ' + h(l.t) + '</b>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(l.y) + '</p></div>';
+    }).join('') + '</div>';
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/giu-lua.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY LỚP ÉP CỦA NGƯỜI GIỮ LỬA
+
+   Kho chuẩn ở kho-goc/data.giu-lua.js. Ba hàm ở đây làm việc thật, phần
+   còn lại chỉ dựng màn:
+
+   1. glMucDoc() — đọc Màn Sức Sống theo BỐN mức, không phải hai màu.
+      Mức khó nhất là "xanh nhưng hạ ba tuần liền": con số vẫn trên
+      ngưỡng nên bảng hai màu không báo gì, mà cây thì đang mất nhiệt.
+      Hình dạng quan trọng hơn vị trí.
+
+   2. glLeoTang() — chuông quá hạn thì TỰ leo tầng. Leo tự động vì leo
+      thủ công là leo khi có người nhớ, mà lúc bận thì không ai nhớ.
+
+   3. glSoiLS() — bắt chỉ số di sản nào vừa không có nguồn số vừa không
+      khai là chưa đo được. Một con số bịa nguy hiểm hơn một ô trống,
+      vì ô trống thì còn có người đi tìm.
+
+   VÌ SAO glSoiBan() TỒN TẠI
+
+   Bàn điều khiển có năm màn và đúng ba mươi phút. Không ai định thêm
+   màn thứ sáu — nhưng mọi bàn điều khiển trên đời đều có màn thứ sáu
+   sau ba năm, và không ai nhớ nó vào lúc nào. Hàm này đếm, và bộ kiểm
+   phát hành đỏ khi con số đổi.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h;
+
+  /* ─── Đọc Màn Sức Sống ───
+     `pt` là tỉ lệ hạt nứt vỏ bảy ngày hôm nay; `haTuan` là số tuần liên
+     tiếp con số ấy đi xuống. Trên ngưỡng mà hạ đủ ba tuần thì trả về
+     mức HA — đây là mức mọi bảng hai màu bỏ sót. */
+  G.glMucDoc = function (pt, haTuan) {
+    var ds = G.GL_MUC1 || [];
+    var so = Number(pt);
+    var ha = Number(haTuan) || 0;
+    var xanh = null, hoi = null;
+    for (var i = 0; i < ds.length; i++) {
+      var m = ds[i];
+      if (so < m.tu || so > m.den) continue;
+      if (m.haTuan) { if (ha >= m.haTuan) hoi = m; }
+      else if (!xanh) xanh = m;
+    }
+    return hoi || xanh || null;
+  };
+
+  /* ─── Chuông: tầng này quá hạn chưa ───
+     Trả về tầng phải leo lên, hoặc null khi còn trong hạn. Tầng cuối
+     không leo nữa — quyết định cứu đã nằm sẵn trong luật. */
+  G.glAndonTang = function (ma) {
+    var ds = G.GL_ANDON || [];
+    for (var i = 0; i < ds.length; i++) if (ds[i].ma === ma) return ds[i];
+    return null;
+  };
+
+  G.glLeoTang = function (ma, gioDaQua, daCham) {
+    var t = G.glAndonTang(ma);
+    if (!t) return null;
+    if (daCham) return null;
+    if (Number(gioDaQua) < t.gio) return null;
+    var ds = G.GL_ANDON || [];
+    for (var i = 0; i < ds.length; i++) if (ds[i].tang === t.tang + 1) return ds[i];
+    return null;                       /* tầng cuối: không leo nữa */
+  };
+
+  /* ─── Bàn điều khiển còn đúng khuôn không ───
+     Đếm màn, cộng phút, và soi thứ tự. Ba con số này không được trôi. */
+  G.glSoiBan = function () {
+    var b = G.GL_BAN, man = G.TT_MAN || [];
+    if (!b || !man.length) return [];
+    var loi = [];
+    if (man.length !== b.soMan) loi.push('số màn=' + man.length);
+    var tong = man.reduce(function (a, m) { return a + (m.phut || 0); }, 0);
+    if (tong > b.phutChuan) loi.push('tổng phút=' + tong);
+    if (!man.every(function (m, i) { return m.so === i + 1; })) loi.push('thứ tự lệch');
+    return loi;
+  };
+
+  /* ─── Chỉ số di sản: cái nào chưa có nguồn ───
+     Mỗi chỉ số hoặc trỏ vào một kho CÓ THẬT, hoặc khai thẳng chưa đo
+     được kèm thiếu đúng cái gì. Vừa không có nguồn vừa không khai thì
+     đó là một con số sẽ được bịa vào một ngày nào đó. */
+  G.glSoiLS = function () {
+    return (G.GL_LS || []).filter(function (x) {
+      if (x.chuaDo) return !x.thieu;                 /* khai thì phải nói thiếu gì */
+      return !x.nguon || G[x.nguon] === undefined;   /* không khai thì nguồn phải có thật */
+    }).map(function (x) { return x.ma + (x.chuaDo ? ':khai suông' : '→' + (x.nguon || 'trống')); });
+  };
+
+  G.glChuaDo = function () {
+    return (G.GL_LS || []).filter(function (x) { return x.chuaDo; });
+  };
+
+  /* ─── Chỉ số nào của người giữ lửa làm đẹp bằng tay được ───
+     Chỉ số không nói được vì sao không làm đẹp được thì nó làm đẹp
+     được, và sớm muộn sẽ bị làm đẹp. */
+  G.glSoiKPI = function () {
+    return (G.GL_KPI || []).filter(function (k) { return !k.doBang || !k.khongLamDep; })
+      .map(function (k) { return k.ma; });
+  };
+
+  /* ═══════════ MÀN: NGÀY HỆ NÀY XONG VIỆC ═══════════
+     Một màn, hai tầng sâu — cùng khuôn với màn người đi cùng. Gia đình
+     đọc được NĂM ĐIỀU KIỆN XONG, vì đó là câu hứa mạnh nhất của cả hệ:
+     nó được dựng để một ngày nhà mình không cần nó nữa. Giấu câu ấy đi
+     thì hệ trông như một thứ muốn giữ người mãi. */
+  G.VIEWS['giu-lua'] = function () {
+    if (!G.GL_XONG)
+      return U.empty('Chưa mở được phần này', 'Phần này nằm trong gói nền. Đăng nhập lại để nạp.');
+
+    var o = U.ph({ eyebrow: 'NGÀY HỆ NÀY XONG VIỆC', ic: 'sun', grad: 1,
+      t: 'Thành công cao nhất là ngày nhà mình không cần hệ này nữa',
+      lead: 'Giống cha mẹ thành công nhất là khi con tự lập. Giống người thầy giỏi nhất là khi học trò ' +
+        'không còn cần thầy — nhưng giữ được cách thầy dạy mình yêu.' });
+
+    o += U.sec('Năm điều kiện xong', h((G.GL_XONG_LUAT || {}).cot || ''));
+    o += '<div class="card mb">' + (G.GL_XONG || []).map(function (x) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + x.so + '. ' + h(x.ten) + '</b>' +
+        '<p class="sm dim mt" style="line-height:1.8">' + h(x.t) + '</p></div>';
+    }).join('') + '</div>';
+    o += '<p class="tiny dim mb" style="line-height:1.7">' + h((G.GL_XONG_LUAT || {}).camEp || '') + '</p>';
+
+    /* ── Phần của nghề ── */
+    if (!G.GL_BAN) return o;
+
+    var b = G.GL_BAN, ban = G.glSoiBan();
+    o += U.sec('Trần của bàn điều khiển', h(b.viSaoTran || ''));
+    o += '<div class="card mb" style="border-color:' + (ban.length ? '#BE0E16' : '#0B7350') + '2e">' +
+      '<div class="row wrap" style="gap:16px">' +
+      '<b>' + b.soMan + ' màn</b><b>' + b.phutChuan + ' phút</b>' +
+      '<b>quá ' + b.phutDong + ' phút thì hệ tự đóng bàn</b>' +
+      '<span class="tiny" style="margin-left:auto;color:' + (ban.length ? '#BE0E16' : '#0B7350') + '">' +
+      (ban.length ? 'LỆCH: ' + h(ban.join(' · ')) : 'đúng khuôn') + '</span></div>' +
+      '<p class="sm mt" style="line-height:1.8"><b>Giấy đỏ:</b> ' + h(b.giayDo) + '</p>' +
+      '<p class="sm mt" style="line-height:1.8"><b>Ngoại lệ duy nhất:</b> ' + h(b.ngoaiLe) + '</p>' +
+      '<p class="tiny dim mt" style="line-height:1.7">' + h(b.viSaoCamMan6) + '</p></div>';
+
+    o += U.tbl(['Cấm trên bàn điều khiển', 'Vì sao'],
+      (G.GL_BAN_CAM || []).map(function (x) { return [h(x.t), h(x.y)]; }));
+
+    o += U.sec('Màn Sức Sống đọc bốn mức', h((G.GL_MUC1_LUAT || {}).cot || '') + ' ' +
+      h((G.GL_MUC1_LUAT || {}).vi || ''));
+    o += (G.GL_MUC1 || []).map(function (m) {
+      return '<div class="card mb" style="border-color:' + m.c + '2e">' +
+        '<div class="row wrap" style="gap:10px;align-items:baseline">' +
+        '<b class="sm" style="color:' + m.c + '">' + h(m.ten) + '</b>' +
+        '<span class="tiny muted">' + m.tu + '–' + m.den + '%' +
+        (m.haTuan ? ' và hạ ' + m.haTuan + ' tuần liền' : '') + '</span></div>' +
+        '<p class="sm mt" style="line-height:1.8">' + h(m.lam) + '</p></div>';
+    }).join('');
+    o += '<p class="tiny dim mb" style="line-height:1.7"><b>Lỗi năm đầu:</b> ' +
+      h((G.GL_MUC1_LUAT || {}).loiNamDau || '') + '</p>';
+
+    o += U.sec('Chuông ba tầng', h((G.GL_ANDON_LUAT || {}).luat || ''));
+    o += U.tbl(['Tầng', 'Khi nào', 'Hạn người thật chạm', 'Ai nhận', 'Làm gì', 'Leo khi'],
+      (G.GL_ANDON || []).map(function (t) {
+        return [h(t.ten), h(t.khi), t.gio + ' giờ', h(t.aiNhan), h(t.lam), h(t.leoKhi)];
+      }));
+    o += '<p class="tiny dim mb" style="line-height:1.7">' + h((G.GL_ANDON_LUAT || {}).vi || '') + ' ' +
+      h((G.GL_ANDON_LUAT || {}).camBamThay || '') + '</p>';
+
+    o += U.sec('Năm chỉ số của chính người giữ lửa',
+      h((G.GL_KPI_LUAT || {}).cot || '') + ' ' + h((G.GL_KPI_LUAT || {}).luat || ''));
+    o += U.tbl(['Chỉ số', 'Mức', 'Đo bằng', 'Vì sao không làm đẹp bằng tay được'],
+      (G.GL_KPI || []).map(function (k) { return [h(k.ten), h(k.muc), h(k.doBang), h(k.khongLamDep)]; }));
+
+    o += U.sec('Sáu kịch bản sự cố', h((G.GL_SUCO_LUAT || {}).cot || ''));
+    o += U.tbl(['Mã', 'Kịch bản', 'Dấu hiệu sớm', 'Làm gì', 'Vì sao', 'Diễn tập'],
+      (G.GL_SUCO || []).map(function (s) {
+        return [h(s.ma), h(s.ten), h(s.dauHieu), h(s.lam), h(s.vi), s.tap ? 'mỗi năm' : 'không'];
+      }));
+    o += '<p class="tiny dim mb" style="line-height:1.7">' + h((G.GL_SUCO_LUAT || {}).luuBaNoi || '') + '</p>';
+
+    /* ── Sổ đo di sản: in cả chỗ CHƯA đo được ──
+       Bảng nào chỉ in phần đã đo thì đọc xong tưởng hệ đã đo hết. */
+    var chuaDo = G.glChuaDo();
+    o += U.sec('Sổ đo di sản', h((G.GL_LS_LUAT || {}).vi || ''));
+    o += U.tbl(['Mã', 'Đo gì', 'Ngưỡng đỏ', 'Nguồn số', 'Vì sao đo'],
+      (G.GL_LS || []).map(function (x) {
+        return [h(x.ma), h(x.do), x.doNgo + (x.ma === 'LS5' ? '' : '%'),
+          x.chuaDo ? 'CHƯA ĐO ĐƯỢC — thiếu: ' + h(x.thieu) : h(x.nguon),
+          h(x.viDoNam3 || x.viSao || '')];
+      }));
+    if (chuaDo.length)
+      o += '<div class="card mb" style="border-color:#B4720F2e">' +
+        '<b class="sm">' + chuaDo.length + ' trên ' + (G.GL_LS || []).length + ' chỉ số di sản CHƯA đo được</b>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h((G.GL_LS_LUAT || {}).luatKhai || '') + '</p></div>';
+
+    var hd = G.GL_HOPDEN || {};
+    o += U.sec('Hộp đen', 'Niêm phong, chỉ mở khi hệ sụp hoàn toàn. Tối đa ' + hd.trangToiDa +
+      ' trang — đủ ngắn để bất kỳ ai đọc xong trong một giờ. Viết tay, ' + hd.capNhatNam + ' năm cập nhật một lần.');
+    o += '<div class="card mb">' + (hd.giu || []).map(function (t, i) {
+      return '<div class="sm" style="padding:6px 0;line-height:1.8">' + (i + 1) + '. ' + h(t) + '</div>';
+    }).join('') + '<p class="tiny dim mt" style="line-height:1.7">' + h(hd.viSaoVietTay || '') + '</p></div>';
+
+    o += U.sec('Bảy luật của người giữ lửa', '');
+    o += '<div class="card">' + (G.GL_LUAT || []).map(function (l) {
+      return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + l.no + '. ' + h(l.t) + '</b>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(l.y) + '</p></div>';
+    }).join('') + '</div>';
+    return o;
   };
 })();
 

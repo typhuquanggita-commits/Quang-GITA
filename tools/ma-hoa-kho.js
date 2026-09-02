@@ -88,6 +88,15 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      của người trong nghề, và nó chỉ hiện khi máy CÓ kho HM_SAU. */
   'HM_NGAY1', 'HM_HOI3', 'HM_NGONTU', 'HM_VUNG', 'HM_VUNG_LUAT',
   'HM_NGUY', 'HM_LEU', 'HM_HEO', 'HM_LUAT',
+  /* Hai thứ của lớp đội ngũ mà GIA ĐÌNH phải đọc được, và chỉ hai thứ:
+
+     DD_HUA — năm điều người đi cùng hứa với nhà họ. Lời hứa không kiểm
+     được thì không phải lời hứa; giấu nó đi là giữ lại quyền phá nó.
+
+     GL_XONG — năm điều kiện tới ngày hệ này xong việc. Đây là câu hứa
+     mạnh nhất của cả hệ: nó được dựng để một ngày nhà mình không cần nó
+     nữa. Giấu câu ấy thì hệ trông như một thứ muốn giữ người mãi. */
+  'DD_HUA', 'GL_XONG', 'GL_XONG_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -176,6 +185,19 @@ const NGHE = [
      — biết mình đang bị chấm bao nhiêu điểm thì cái nhìn đổi ngay, và cả
      thiết kế "em bé tập đi không cần hiểu giải phẫu chân" sụp. */
   'HM_SAU', 'HM_NGUY_SAU',
+  /* Sổ tay nói đúng và lớp ép của đội đồng hành. Ở gói NGHỀ cùng lý do
+     với BD_DAN: gia đình đọc được NGUYÊN VĂN câu người kèm sẽ nói thì
+     buổi nói chuyện mất tác dụng — họ biết trước câu tiếp theo và trả
+     lời theo kịch bản. Phần họ được đọc là lời hứa, ở DD_HUA. */
+  'DD_CAP', 'DD_TRAN_LUAT', 'DD_9010', 'DD_HOI', 'DD_HATLAI',
+  'DD_TINHHUONG', 'DD_THAY', 'DD_KPI', 'DD_LUAT',
+  /* Lớp ép của người giữ lửa: trần bàn điều khiển, chuông ba tầng, bảng
+     chấm chính mình, sáu kịch bản sự cố, sổ đo di sản, hộp đen. Đây là
+     cách Học viện tự lái và tự thay mình — và bảng kịch bản sự cố kể ra
+     chính xác chỗ hệ gãy trước. Đưa ra ngoài là đưa bản đồ chỗ hở. */
+  'GL_BAN', 'GL_BAN_CAM', 'GL_MUC1', 'GL_MUC1_LUAT', 'GL_ANDON', 'GL_ANDON_LUAT',
+  'GL_KPI', 'GL_KPI_LUAT', 'GL_SUCO', 'GL_SUCO_LUAT', 'GL_LS', 'GL_LS_LUAT',
+  'GL_HOPDEN', 'GL_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -584,6 +606,10 @@ const mau = {
   HM_NGAY1: G.HM_NGAY1, HM_HOI3: G.HM_HOI3, HM_NGONTU: G.HM_NGONTU,
   HM_VUNG: G.HM_VUNG, HM_VUNG_LUAT: G.HM_VUNG_LUAT,
   HM_NGUY: goi.nen.HM_NGUY, HM_LEU: G.HM_LEU, HM_HEO: G.HM_HEO, HM_LUAT: G.HM_LUAT,
+  /* Lời hứa và ngày hệ xong việc vào cả bản xem thử: người CHƯA đăng
+     nhập cũng phải đọc được hai điều này, vì chúng là lý do mạnh nhất
+     để bước vào — và là thứ để đòi nếu hệ phá lời. */
+  DD_HUA: G.DD_HUA, GL_XONG: G.GL_XONG, GL_XONG_LUAT: G.GL_XONG_LUAT,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')

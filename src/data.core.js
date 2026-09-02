@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.13',
+  version: '9.14',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -472,6 +472,11 @@ G.NAV = [
     {v:'ban-do-chien-luoc',t:'Bản đồ chiến lược',      h:'4 tầng · 18 mục tiêu · chuỗi nhân quả kiểm được', ic:'map', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'the-diem-can-bang',t:'Thẻ điểm cân bằng',      h:'Mỗi mục tiêu một thước · 7 nhịp xem lại', ic:'chart', perm:'nghe_chung', capMo:'nghe'},
     {v:'nam-man',     t:'Bàn điều khiển năm màn',      h:'30 phút mỗi sáng · 3 cấp đồng hành · 5 nhiệm kỳ', ic:'orbit', perm:'nghe_chung', capMo:'nghe'},
+    /* Hai màn một-màn-hai-tầng: gia đình đọc lời hứa và ngày hệ xong
+       việc; vai có gói nghề đọc thêm sổ tay và lớp ép. Nên KHÔNG khoá
+       quyền — chặn nằm ở chỗ máy có kho hay không, không nằm ở cột trái. */
+    {v:'doi-dong-hanh',t:'Người đi cùng nhà mình',      h:'5 lời hứa · trần 5–10–3 · 20 tình huống nói đúng', ic:'heart', star:1, capMo:'chung'},
+    {v:'giu-lua',     t:'Ngày hệ này xong việc',       h:'5 điều kiện xong · chuông 3 tầng · 6 kịch bản sự cố', ic:'shield', capMo:'chung'},
     {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
     {v:'giai-doan-bao-ve',t:'Giai đoạn và lớp bảo vệ', h:'5 giai đoạn · 4 tầng bảo vệ, kể cả chỗ chưa có', ic:'shield', perm:'nghe_chung', capMo:'nghe'},
     /* Chỉ hiện với vai CÓ đầu việc trong hệ — luồng này để người LÀM nói

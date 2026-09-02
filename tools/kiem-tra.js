@@ -5847,6 +5847,184 @@ const { chromium } = require(PW);
     }
   }
 
+  console.log('\n52 · TRẦN ĐỘI ĐỒNG HÀNH · SỔ TAY NÓI ĐÚNG · LỚP ÉP NGƯỜI GIỮ LỬA');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const nha = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.DD_HUA || !G.GL_XONG) return { co: false };
+      const manDD = G.VIEWS['doi-dong-hanh']();
+      const manGL = G.VIEWS['giu-lua']();
+      return { co: true,
+        soHua: (G.DD_HUA || []).length,
+        huaThieu: (G.DD_HUA || []).filter(x => !x.t || !x.y).map(x => x.ma),
+        soXong: (G.GL_XONG || []).length,
+        xongThieu: (G.GL_XONG || []).filter(x => !x.ten || !x.t).map(x => x.so),
+        /* Gia đình KHÔNG được nhận sổ tay và lớp ép — nguyên văn câu người
+           kèm sẽ nói thì buổi nói chuyện mất tác dụng */
+        loSoTay: !!(G.DD_TINHHUONG || G.DD_CAP || G.DD_THAY || G.DD_HOI || G.DD_KPI),
+        loLopEp: !!(G.GL_BAN || G.GL_ANDON || G.GL_SUCO || G.GL_LS || G.GL_KPI || G.GL_HOPDEN),
+        /* Không có kho ép thì hàm KHÔNG được đoán một con số */
+        tranKhongDoan: G.ddTranCua('DH') === 0 && G.ddNhanThem('DH', 0).ok === false,
+        manCoHua: manDD.indexOf((G.DD_HUA[0] || {}).t || '###') >= 0,
+        manKhongCoSoTay: manDD.indexOf('Hai mươi tình huống') < 0,
+        manCoXong: manGL.indexOf((G.GL_XONG[0] || {}).t || '###') >= 0,
+        manKhongCoChuong: manGL.indexOf('Chuông ba tầng') < 0 };
+    });
+    if (!nha.co) {
+      bao(false, 'lời hứa và ngày hệ xong việc nạp được từ gói nền', 'không thấy DD_HUA/GL_XONG');
+    } else {
+      bao(nha.soHua === 5 && !nha.huaThieu.length,
+        'năm điều người đi cùng hứa với gia đình, điều nào cũng nói rõ VÌ SAO — lời hứa không kiểm được thì không phải lời hứa',
+        nha.huaThieu.join(' ') || '5/5 đủ hai cột');
+      bao(nha.soXong === 5 && !nha.xongThieu.length,
+        'năm điều kiện tới ngày hệ này XONG VIỆC, và gia đình đọc được — giấu câu ấy thì hệ trông như một thứ muốn giữ người mãi',
+        nha.xongThieu.join(' ') || '5/5');
+      bao(!nha.loSoTay && !nha.loLopEp,
+        'gia đình KHÔNG nhận sổ tay nói đúng và lớp ép điều hành — đọc được nguyên văn câu người kèm sẽ nói thì buổi nói chuyện mất tác dụng, họ biết trước câu tiếp theo',
+        nha.loSoTay ? 'sổ tay lọt xuống máy phụ huynh' : nha.loLopEp ? 'lớp ép lọt xuống máy phụ huynh' : 'chỉ có lời hứa');
+      bao(nha.tranKhongDoan,
+        'máy không có kho ép thì hàm trần KHÔNG đoán một con số — đoán ra năm rồi một ngày sẽ có người tin con số đoán ấy là luật');
+      bao(nha.manCoHua && nha.manKhongCoSoTay && nha.manCoXong && nha.manKhongCoChuong,
+        'hai màn dựng ra ĐÚNG tầng của gia đình: có lời hứa và ngày hệ xong việc, không có sổ tay và không có bảng chuông');
+    }
+
+    /* Lớp ép — đo trên vai CÓ gói nghề */
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ng = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.DD_CAP || !G.GL_BAN) return { co: false };
+      const ra = { co: true };
+
+      /* ── Trần quan hệ 5 · 10 · 3, và hàm TỪ CHỐI ── */
+      ra.tran = (G.DD_CAP || []).map(c => c.ma + ':' + c.tran).join(' ');
+      ra.tranDung = G.ddTranCua('DH') === 5 && G.ddTranCua('CV') === 10 && G.ddTranCua('CM') === 3;
+      ra.chanDuoc = G.ddNhanThem('DH', 5).ok === false && G.ddNhanThem('CM', 3).ok === false;
+      ra.chuaChanThiCho = G.ddNhanThem('DH', 4).ok === true && G.ddNhanThem('DH', 4).con === 1;
+      /* Thiếu người KHÔNG phải lý do nới trần */
+      ra.thieuNguoiVanChan = G.ddNhanThem('CM', 3, true).ok === false;
+      ra.capThieu = (G.DD_CAP || []).filter(c => !c.vaoTu || !c.viSaoTran || !c.camSai || !c.hauQua).map(c => c.ma);
+      ra.noiThang = G.ddNoiThang();
+
+      /* ── Chín phần mười ── */
+      ra.soi9010 = G.ddSoi9010();
+
+      /* ── Sổ tay: hai mươi tình huống, hai vế khác nhau thật ── */
+      ra.soTH = (G.DD_TINHHUONG || []).length;
+      ra.thThieu = G.ddSoiTinhHuong();
+      ra.duNhom = ['DAU', 'GIO', 'SAU', 'MINH'].every(n =>
+        (G.DD_TINHHUONG || []).some(x => x.nhom === n));
+
+      /* ── Ngôn từ: quét cột `dung`, KHÔNG quét cột `sai` ── */
+      ra.ngonTu = G.ddSoiNgonTu();
+      ra.soCauQuet = G.ddLoiNoiVoiNha().length;
+      /* Cột đối chiếu PHẢI thật sự chứa từ cấm — nếu không thì cái bẫy
+         này chưa từng tồn tại, và phép kiểm dưới đây vô nghĩa */
+      const cam = (G.HM_NGONTU || {}).camTu || [];
+      const coTuCam = chu => cam.some(t =>
+        new RegExp('(^|[^\\p{L}])' + t + '($|[^\\p{L}])', 'iu').test(String(chu || '')));
+      ra.cotDoiChieuCoTuCam =
+        (G.DD_THAY || []).some(x => coTuCam(x.xau)) || (G.DD_TINHHUONG || []).some(x => coTuCam(x.sai));
+      /* Máy quét phải BẮT ĐƯỢC khi nhét từ cấm vào cột `dung` */
+      const giuDung = G.DD_TINHHUONG[0].dung;
+      G.DD_TINHHUONG[0].dung = 'Anh chị nên ghi lại chuyện này mỗi tối.';
+      ra.quetBatDuoc = G.ddSoiNgonTu().length === 1;
+      G.DD_TINHHUONG[0].dung = giuDung;
+
+      /* ── Bảng chấm của người kèm ── */
+      ra.kpiTong = (G.DD_KPI || []).reduce((a, k) => a + k.trong, 0);
+      ra.ngheNangNhat = (G.DD_KPI || []).every(k => k.ma === 'K-NGHE' || k.trong < 0.6);
+
+      /* ── Bàn điều khiển ── */
+      ra.soiBan = G.glSoiBan();
+      ra.dongSauChuan = G.GL_BAN.phutDong > G.GL_BAN.phutChuan;
+      ra.soCam = (G.GL_BAN_CAM || []).length;
+
+      /* ── Màn Sức Sống đọc BỐN mức, không phải hai màu ──
+         67% mà hạ ba tuần liền thì KHÔNG còn là xanh: hình dạng quan
+         trọng hơn vị trí, và đây là chỗ mọi bảng hai màu bỏ sót */
+      ra.docXanh = (G.glMucDoc(67, 0) || {}).ma === 'XANH';
+      ra.docHa = (G.glMucDoc(67, 3) || {}).ma === 'HA';
+      ra.docVang = (G.glMucDoc(55, 0) || {}).ma === 'VANG';
+      ra.docDo = (G.glMucDoc(40, 0) || {}).ma === 'DO';
+      ra.haChuaDu = (G.glMucDoc(67, 2) || {}).ma === 'XANH';
+
+      /* ── Chuông ba tầng, tự leo ── */
+      ra.soTang = (G.GL_ANDON || []).length;
+      ra.leoDung = (G.glLeoTang('AD-XANH', 25, false) || {}).ma === 'AD-VANG';
+      ra.chamThiKhongLeo = G.glLeoTang('AD-XANH', 99, true) === null;
+      ra.trongHanKhongLeo = G.glLeoTang('AD-XANH', 5, false) === null;
+      ra.tangCuoiKhongLeo = G.glLeoTang('AD-DO', 99, false) === null;
+      ra.khongPhat = (G.GL_ANDON_LUAT || {}).khongPhat === true;
+
+      /* ── Năm chỉ số của chính người giữ lửa ── */
+      ra.soiKPI = G.glSoiKPI();
+      ra.soKPI = (G.GL_KPI || []).length;
+
+      /* ── Sáu kịch bản sự cố ── */
+      ra.soSuCo = (G.GL_SUCO || []).length;
+      ra.suCoThieu = (G.GL_SUCO || []).filter(s => !s.dauHieu || !s.lam || !s.vi).map(s => s.ma);
+      ra.suCoCoTap = (G.GL_SUCO || []).filter(s => s.tap).length;
+
+      /* ── Sổ đo di sản TỰ KHAI chỗ mù ── */
+      ra.soiLS = G.glSoiLS();
+      ra.soLS = (G.GL_LS || []).length;
+      ra.soChuaDo = G.glChuaDo().length;
+
+      ra.hopDenNgan = (G.GL_HOPDEN || {}).trangToiDa === 20 && (G.GL_HOPDEN.giu || []).length === 5;
+      ra.manCoSoTay = G.VIEWS['doi-dong-hanh']().indexOf('Hai mươi tình huống') >= 0;
+      ra.manCoChuong = G.VIEWS['giu-lua']().indexOf('Chuông ba tầng') >= 0;
+      return ra;
+    });
+    if (!ng.co) {
+      bao(false, 'lớp ép nạp được từ gói nghề', 'không thấy DD_CAP/GL_BAN');
+    } else {
+      bao(ng.tranDung && ng.chanDuoc && ng.chuaChanThiCho && ng.thieuNguoiVanChan,
+        'trần quan hệ 5 · 10 · 3 có HÀM TỪ CHỐI thật, và thiếu người vẫn không nới — trần mà không có hàm chặn thì sáu tháng sau ai cũng giữ tám nhà',
+        ng.tran);
+      bao(!ng.capThieu.length && !ng.noiThang.length,
+        'ba cấp nói rõ VÀO TỪ ĐÂU · VÌ SAO TRẦN NÀY · CẤM SAI · HẬU QUẢ, và nối vào thang đã có chứ KHÔNG dựng thang thứ hai',
+        ng.capThieu.concat(ng.noiThang).join(' ') || '3/3 nối đúng');
+      bao(!ng.soi9010.length,
+        'chín phần mười cộng đúng một trăm và phần DẠY bằng KHÔNG — câu dạy dỗ nghe dễ hơn câu hỏi, và chính vì dễ mà nó lấy đi quyền của hạt tự nứt vỏ',
+        ng.soi9010.join(' ') || '90 + 10 + 0');
+      bao(ng.soTH === 20 && !ng.thThieu.length && ng.duNhom,
+        'hai mươi tình huống đủ bốn nhóm, tình huống nào cũng có một câu GIẾT HẠT và một câu NUÔI HẠT khác nhau thật',
+        ng.thThieu.join(' ') || '20/20 đủ hai vế');
+      bao(!ng.ngonTu.length && ng.soCauQuet >= 40,
+        'không câu nào trong sổ tay nói với gia đình dùng từ cấm — cùng một chuẩn ngôn từ với lời hỏi hằng ngày, một máy quét chứ không hai',
+        ng.ngonTu.join(' ') || ng.soCauQuet + ' câu sạch');
+      bao(ng.cotDoiChieuCoTuCam && ng.quetBatDuoc,
+        'cột đối chiếu THẬT SỰ chứa từ cấm mà máy quét không đụng vào, và quét BẮT ĐƯỢC ngay khi nhét từ cấm vào cột nói thật — quét cả cột ví dụ thì phép kiểm đỏ vĩnh viễn và rồi ai đó sẽ tắt nó');
+      bao(Math.abs(ng.kpiTong - 1) < 1e-9 && ng.ngheNangNhat,
+        'bảng chấm người kèm cộng đúng một, và ĐIỂM ĐƯỢC LẮNG NGHE nặng nhất — đó là chỉ số duy nhất họ không ra lệnh được, vì nó là cảm giác của người khác',
+        'tổng ' + ng.kpiTong);
+      bao(!ng.soiBan.length && ng.dongSauChuan && ng.soCam === 5,
+        'bàn điều khiển còn đúng khuôn: năm màn, ba mươi phút, đúng thứ tự — và có ngưỡng tự đóng bàn. Mọi bàn điều khiển trên đời đều có màn thứ sáu sau ba năm, và không ai nhớ nó vào lúc nào',
+        ng.soiBan.join(' ') || '5 màn · 30 phút');
+      bao(ng.docXanh && ng.docHa && ng.docVang && ng.docDo && ng.haChuaDu,
+        'Màn Sức Sống đọc BỐN mức: 67% mà hạ ba tuần liền thì KHÔNG còn là xanh — hình dạng quan trọng hơn vị trí, và đây đúng là chỗ bảng hai màu bỏ sót cả quý',
+        [ng.docXanh, ng.docHa, ng.docVang, ng.docDo].join(' '));
+      bao(ng.soTang === 3 && ng.leoDung && ng.chamThiKhongLeo && ng.trongHanKhongLeo && ng.tangCuoiKhongLeo,
+        'chuông ba tầng TỰ leo khi quá hạn mà chưa ai chạm, không leo khi đã có người chạm hoặc còn trong hạn, và tầng cuối thì dừng — leo thủ công là leo khi có người nhớ, mà lúc bận thì không ai nhớ');
+      bao(ng.khongPhat,
+        'không bao giờ phạt chuông — chuông kêu nhiều là chuông khoẻ, rừng im lặng mới là rừng đang chết');
+      bao(!ng.soiKPI.length && ng.soKPI === 5,
+        'năm chỉ số của chính người giữ lửa, chỉ số nào cũng nói rõ VÌ SAO KHÔNG LÀM ĐẸP BẰNG TAY ĐƯỢC — chỉ số không nói được điều ấy thì nó làm đẹp được, và sớm muộn sẽ bị làm đẹp',
+        ng.soiKPI.join(' ') || '5/5');
+      bao(ng.soSuCo === 6 && !ng.suCoThieu.length && ng.suCoCoTap >= 4,
+        'sáu kịch bản sự cố viết sẵn, và bốn cái trở lên có diễn tập hằng năm — khủng hoảng không phải lúc để sáng tạo, là lúc để chạy đúng tài liệu đã tập',
+        ng.suCoThieu.join(' ') || '6/6 · ' + ng.suCoCoTap + ' cái có diễn tập');
+      bao(!ng.soiLS.length && ng.soLS === 5 && ng.soChuaDo > 0,
+        'sổ đo di sản TỰ KHAI chỗ mù: chỉ số chưa đo được thì nói thẳng kèm thiếu đúng cái gì, chỉ số có nguồn thì nguồn phải là kho CÓ THẬT — một con số bịa nguy hiểm hơn một ô trống, vì ô trống thì còn có người đi tìm',
+        ng.soiLS.join(' ') || ng.soChuaDo + '/' + ng.soLS + ' khai chưa đo được');
+      bao(ng.hopDenNgan && ng.manCoSoTay && ng.manCoChuong,
+        'hộp đen đúng hai mươi trang và năm mục, và vai có gói nghề dựng ra được cả sổ tay lẫn bảng chuông');
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

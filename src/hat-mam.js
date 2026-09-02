@@ -130,10 +130,14 @@ G.VIEWS = G.VIEWS || {};
     return ds;
   };
 
-  G.hmSoiNgonTu = function () {
+  /* ─── Máy quét dùng chung ───
+     Nhận danh sách [nhãn, câu] và trả về những chỗ phạm. Để CHUNG một
+     máy vì sổ tay Cây Mẹ cũng quét bằng đúng chuẩn này: hai máy quét
+     rồi sẽ có ngày lệch nhau, và lúc ấy chuẩn ngôn từ có hai bản. */
+  G.hmQuetTuCam = function (dsCau) {
     var cam = (G.HM_NGONTU || {}).camTu || [];
     var pham = [];
-    G.hmLoiNoiVoiNha().forEach(function (c) {
+    (dsCau || []).forEach(function (c) {
       var chu = String(c[1] || '');
       cam.forEach(function (tu) {
         /* Bắt theo TỪ, không theo chuỗi con: 'nên' nằm trong 'lên' và
@@ -145,6 +149,8 @@ G.VIEWS = G.VIEWS || {};
     });
     return pham;
   };
+
+  G.hmSoiNgonTu = function () { return G.hmQuetTuCam(G.hmLoiNoiVoiNha()); };
 
   /* ─── Mỗi cửa tử có CƠ CHẾ CÓ THẬT chặn không ───
      Cột `co` liệt kê tên hàm hoặc tên kho, cách nhau bằng dấu chấm giữa,

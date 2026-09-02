@@ -74,6 +74,8 @@
     "src/banh-da.js",
     "src/trai-tim.js",
     "src/hat-mam.js",
+    "src/doi-dong-hanh.js",
+    "src/giu-lua.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",
