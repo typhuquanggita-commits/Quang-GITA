@@ -140,7 +140,13 @@ G.VIEWS['bat-dau'] = function(){
       (d?ic('check','w-4 h-4'):'<b style="font-size:14.5px">'+(i+1)+'</b>')+'</'+(oTick?'button':'span')+'>'+
       '<div class="grow" style="min-width:220px">'+
         '<div class="row wrap" style="gap:8px;margin-bottom:5px">'+
-        '<b style="font-size:16px">'+h(x.t)+'</b>'+U.chip(x.p)+
+        /* Lớp `buoc-t` để bộ kiểm bám vào CẤU TRÚC. Trước v9.26 mục 42
+           bám vào chuỗi "font-size:15.5px" — rồi thang cỡ chữ đổi 15,5
+           thành 16, phép kiểm khớp rỗng, ba chuỗi thành ba chuỗi rỗng
+           GIỐNG NHAU, và nó đỏ như thể mã hỏng. Phép kiểm buộc vào một
+           con số trình bày là phép kiểm sẽ đỏ oan ở lần đổi giao diện
+           kế tiếp. */
+        '<b class="buoc-t" style="font-size:16px">'+h(x.t)+'</b>'+U.chip(x.p)+
         (next?U.chip('BƯỚC TIẾP THEO','var(--gita)',1):'')+
         (dm?U.chip(dm.do, d?'#0B7350':'var(--ink-4)'):U.chip('tự xác nhận'))+'</div>'+
         '<p class="sm dim" style="line-height:1.6">'+h(x.d)+'</p>'+

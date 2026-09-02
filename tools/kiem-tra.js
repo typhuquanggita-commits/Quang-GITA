@@ -4670,7 +4670,12 @@ const { chromium } = require(PW);
         for (const [c, u] of [['ph', 'phuhuynh@gita365.vn'], ['hs', 'hocvien@gita365.vn'], ['ctv', 'daisu@gita365.vn']]) {
           const a = (G.ACCOUNTS || []).filter(x => x.u === u)[0];
           G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role);
-          ra[c] = (G.VIEWS['bat-dau']().match(/font-size:15\.5px">([^<]+)</g) || []).join('|');
+          /* Bám vào LỚP, không bám vào cỡ chữ. Bản trước bám vào chuỗi
+             "font-size:15.5px"; thang cỡ chữ ở v9.26 đổi nó thành 16px,
+             phép kiểm khớp rỗng, ba chuỗi thành ba chuỗi RỖNG giống nhau
+             và mục này đỏ như thể mã hỏng. Một phép kiểm buộc vào con số
+             trình bày sẽ đỏ oan ở lần đổi giao diện kế tiếp. */
+          ra[c] = (G.VIEWS['bat-dau']().match(/class="buoc-t"[^>]*>([^<]+)</g) || []).join('|');
         }
         return ra;
       });

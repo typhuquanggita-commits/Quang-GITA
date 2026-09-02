@@ -400,6 +400,64 @@ const NGAN = 700;
       duMuc ? ti.map((v, i) => ['ink', 'ink-2', 'ink-3', 'ink-4'][i] + ' ' + v.toFixed(2)).join(' → ')
             : 'không đọc được bảng mực');
 
+    /* ── Trung tính phải cùng họ màu với LOGO ──
+       Đọc sắc độ từ CHÍNH TỆP LOGO, không từ một con số chép tay: chép
+       tay thì tệp logo đổi mà con số ở lại, và cả bộ nhận diện trôi đi
+       trong khi phép kiểm vẫn xanh.
+
+       Tới bản 9.26 logo là xanh 216° và đỏ 356°, màu nhấn khớp (212°,
+       357°), nhưng mọi màu trung tính lại là TÍM 250–260°. Nhấn thì
+       theo dấu, còn nền và chữ thuộc một họ khác — đó là lý do trang
+       không đọc ra như một bộ. */
+    const sacLogo = await p.evaluate(() => new Promise(giai => {
+      const im = new Image();
+      im.onload = () => {
+        const c = document.createElement('canvas');
+        c.width = 96; c.height = 96;
+        const x = c.getContext('2d'); x.drawImage(im, 0, 0, 96, 96);
+        const d = x.getImageData(0, 0, 96, 96).data, dem = {};
+        for (let i = 0; i < d.length; i += 4) {
+          const r = d[i], g = d[i + 1], b = d[i + 2], a = d[i + 3];
+          if (a < 200) continue;
+          const mx = Math.max(r, g, b), mn = Math.min(r, g, b);
+          if (mx - mn < 40) continue;             /* xám và trắng không mang sắc */
+          let h;
+          if (mx === r) h = ((g - b) / (mx - mn)) % 6;
+          else if (mx === g) h = (b - r) / (mx - mn) + 2;
+          else h = (r - g) / (mx - mn) + 4;
+          h = Math.round(((h * 60) + 360) % 360 / 10) * 10;
+          dem[h] = (dem[h] || 0) + 1;
+        }
+        const xep = Object.entries(dem).sort((u, v) => v[1] - u[1]);
+        giai(xep.length ? Number(xep[0][0]) : null);
+      };
+      im.onerror = () => giai(null);
+      im.src = 'assets/brand/logo-gita.png';
+    }));
+    function sacCua(hx2) {
+      const r = parseInt(hx2.slice(1, 3), 16), g = parseInt(hx2.slice(3, 5), 16),
+        b = parseInt(hx2.slice(5, 7), 16);
+      const mx = Math.max(r, g, b), mn = Math.min(r, g, b);
+      if (mx === mn) return null;
+      let h2 = mx === r ? ((g - b) / (mx - mn)) % 6
+        : mx === g ? (b - r) / (mx - mn) + 2 : (r - g) / (mx - mn) + 4;
+      return ((h2 * 60) + 360) % 360;
+    }
+    const trungTinh = ['ink', 'ink-2', 'ink-3', 'ink-4', 'bg-0', 'bg-2']
+      .map(t => [t, lay(khoi, t)]).filter(x => x[1]);
+    const lech = trungTinh.map(([t, c]) => {
+      const s2 = sacCua(c);
+      if (s2 == null || sacLogo == null) return null;
+      let d = Math.abs(s2 - sacLogo); if (d > 180) d = 360 - d;
+      return { t: t, c: c, sac: Math.round(s2), lech: Math.round(d) };
+    }).filter(Boolean);
+    const xa = lech.filter(x => x.lech > 25);
+    bao(sacLogo != null && !xa.length,
+      'MÀU TRUNG TÍNH CÙNG HỌ VỚI LOGO — sắc độ đọc từ chính tệp assets/brand/logo-gita.png lúc chạy, không từ con số chép tay: chép tay thì tệp logo đổi mà con số ở lại, và cả bộ nhận diện trôi đi trong khi phép kiểm vẫn xanh. Tới bản 9.26 logo xanh 216° còn mọi màu nền và chữ là tím 250–260°: màu nhấn theo dấu, nền thì thuộc họ khác, nên trang không đọc ra như MỘT bộ. Kéo trung tính về họ của dấu, và giữ nguyên độ sáng để không đổi một lỗi nhìn thấy lấy một lỗi không nhìn thấy',
+      sacLogo == null ? 'không đọc được sắc độ logo'
+        : 'logo ' + sacLogo + '° · ' + lech.map(x => x.t + ' ' + x.sac + '°').join(' · ') +
+          (xa.length ? ' · LỆCH QUÁ 25°: ' + xa.map(x => x.t).join(' ') : ''));
+
     /* ── Bề ngang một dòng chữ ── */
     await p.evaluate(() => window.G.doLogin('admin@gita365.vn'));
     await p.waitForTimeout(2200);

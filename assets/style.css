@@ -8,7 +8,7 @@
      Bảng màu học đường: nền giấy ấm, chữ mực đậm, điểm nhấn vàng GITA.
      Bản nền tối vẫn giữ nguyên ở khối [data-nen="toi"] bên dưới — bấm
      nút Sáng/Tối trên thanh trên để đổi, lựa chọn nhớ theo máy. */
-  --bg-0:#F6F3FC;      --bg-1:#FFFFFF;     --bg-2:#EDE8F8;
+  --bg-0:#F3F7FC;      --bg-1:#FFFFFF;     --bg-2:#E8EEF8;
   --surface:#FFFFFF;
   --surface-2:#F4F0FB;
   --line:#E2DBF0;
@@ -30,7 +30,7 @@
      Sửa bằng cách làm ink-3 ĐẬM hơn, không phải làm ink-4 nhạt hơn:
      nhạt ink-4 thì nó tụt xuống 3,98:1 trên nền trang, dưới ngưỡng
      4,5 — đổi một lỗi nhìn thấy lấy một lỗi không nhìn thấy. */
-  --ink:#211B3E;  --ink-2:#4C4470;  --ink-3:#5A527F;  --ink-4:#665E88;
+  --ink:#172234;  --ink-2:#3C4C64;  --ink-3:#4A5A73;  --ink-4:#56657D;
 
   /* ══ MÀU THƯƠNG HIỆU — lấy từ logo chuẩn GITA ══
      Logo có ba nét: xanh ngoài đậm, xanh trong sáng, và một nét đỏ; kèm
@@ -75,7 +75,7 @@
 
 /* ══════════ NỀN TỐI — giữ nguyên hệ "trường năng lượng" ══════════ */
 :root[data-nen="toi"]{
-  --bg-0:#1E1842;      --bg-1:#251E52;     --bg-2:#302866;
+  --bg-0:#182942;      --bg-1:#1E3352;     --bg-2:#284166;
   --surface:rgba(255,255,255,.06);
   --surface-2:rgba(255,255,255,.10);
   --line:rgba(255,255,255,.13);
@@ -83,7 +83,7 @@
   --phu-1:rgba(255,255,255,.035); --phu-2:rgba(255,255,255,.055);
   --phu-3:rgba(255,255,255,.08);  --phu-4:rgba(255,255,255,.11);
   --phu-5:rgba(255,255,255,.16);  --phu-6:rgba(255,255,255,.24);
-  --ink:#F2F0FA;  --ink-2:#C8C2DE;  --ink-3:#A79FC4;  --ink-4:#9992B4;
+  --ink:#EFF3FA;  --ink-2:#C8D3E2;  --ink-3:#A1B0C5;  --ink-4:#94A2B5;
   --gita:#4A8FE0;        --gita-sang:#8FBEF2;   --gita-sau:#2A72C6;
   --gita-ink:#7FB0F0;    --gita-do:#FF5A5F;     --gita-do-ink:#FF8A8E;
   --gita-mo-1:rgba(122,168,235,.10);  --gita-mo-2:rgba(122,168,235,.18);
