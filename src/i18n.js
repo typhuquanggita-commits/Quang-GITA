@@ -196,6 +196,7 @@ G.ITEM_EN = {
   'hansei-sach':['What this system still owes','5 unanswered questions · 3 kinds of automated decision · 9 self-found contradictions'],
   'hanh-trinh-5-tang':['The five-tier road','A Thriving Family · 5 challenges · and the day this ladder runs out of rungs'],
   'sau-vung':['Naming the loop you are stuck in','5 zones · 1 core of self-awareness · 4 named places you fall, and the way back from each'],
+  'bang-tin':['You are not walking alone','Community news · 6 criteria for a story to run · every number states where it is counted from'],
   'ban-co':['The journey board','One board per tier · one square a day · pick 1 of 10 · points weighted by what matters now'],
   'coach-5-tang':['What the person walking with you must be able to do','5 coach tiers · 4 competencies each · a 10-step cycle · 1000 divided by the caps'],
   'nam-dau':['The first-year handbook','12 months · 6 checkpoints · 8 first-time playbooks'],

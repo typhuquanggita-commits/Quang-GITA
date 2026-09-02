@@ -155,6 +155,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      một ngày một việc, mười gợi ý, ba mức trọng số, và sáu điều hệ tự
      cấm mình. Giấu luật chơi khỏi người chơi là giữ quyền đổi luật. */
   'BC_LOI', 'BC_TRONGSO', 'BC_TRONGSO_LUAT', 'BC_MUNG', 'BC_MUNG_LUAT', 'BC_LUAT',
+  /* BẢNG TIN CỘNG ĐỒNG. Gói NỀN: sáu tiêu chí chọn chuyện và năm điều
+     bảng tin tự cấm là thứ NHÀ GỬI CHUYỆN phải đọc được trước khi gửi.
+     Giấu tiêu chí khỏi người dự thi là giữ quyền đổi tiêu chí sau. */
+  'TIN_LOAI', 'TIN_NGUON', 'TIN_NGUON_LUAT', 'TIN_TIEUCHI', 'TIN_TIEUCHI_LUAT',
+  'TIN_THUONG', 'TIN_CAM', 'TIN_LUAT',
   'CS_LOI', 'CS_TANG', 'CS_TANG_LUAT', 'CS_NEN', 'CS_LUAT',
   'HT_DICH', 'HT_TANG', 'HT_TANG_LUAT', 'HT_SAUT5', 'HT_KC',
   'HT_NOI', 'HT_NOI_LUAT', 'HT_LECH', 'HT_LUAT',
@@ -780,6 +785,9 @@ const mau = {
     const so = String(t.ten || '').match(/\d+/);
     return { tang: t.tang, ten: t.ten, ngay: so ? Number(so[0]) : null };
   }),
+  TIN_LOAI: G.TIN_LOAI, TIN_NGUON: G.TIN_NGUON, TIN_NGUON_LUAT: G.TIN_NGUON_LUAT,
+  TIN_TIEUCHI: G.TIN_TIEUCHI, TIN_TIEUCHI_LUAT: G.TIN_TIEUCHI_LUAT,
+  TIN_THUONG: G.TIN_THUONG, TIN_CAM: G.TIN_CAM, TIN_LUAT: G.TIN_LUAT,
   BC_LOI: G.BC_LOI, BC_TRONGSO: G.BC_TRONGSO, BC_TRONGSO_LUAT: G.BC_TRONGSO_LUAT,
   BC_MUNG: G.BC_MUNG, BC_MUNG_LUAT: G.BC_MUNG_LUAT, BC_LUAT: G.BC_LUAT,
   KA_LOAI: G.KA_LOAI, KA_TY: G.KA_TY, KA_CHO: G.KA_CHO,

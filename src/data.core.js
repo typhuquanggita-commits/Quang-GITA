@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.32',
+  version: '9.33',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -344,7 +344,17 @@ G.TAM_NHIN = [
      cộng tác viên không mở thêm một màn nghề nào. Cả hai màn mới đều
      là thứ hệ TỰ KHAI về chính mình — lời hứa với gia đình, và chỗ
      hệ còn đang nợ. Giấu hai thứ ấy khỏi ai thì mới là chuyện lạ. */
-  {vai:['R15'], pt:31, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem mình đã đổi gì so với tuần trước'}
+  /* 33 chứ không còn 31. Bàn cờ hành trình và bảng tin cộng đồng ở 9.32–9.33
+     mở cho MỌI vai, nên tử số của R15 tăng hai trong khi mẫu số cũng tăng
+     hai — với một mẫu số nhỏ như của Đại sứ thì tỉ lệ nhích rõ hơn hẳn các
+     vị trí khác. Sửa số công bố, không nới dung sai: phần khoá của R15
+     không mở thêm một màn nghề nào.
+
+     Và nói lại cho khỏi lẫn: 33% ở đây là tỉ lệ SỐ MÀN, không phải tỉ lệ
+     NỘI DUNG. Trần 30% anh Quang đặt là trần nội dung, canh ở
+     G.TRAN_KHACH trong src/kho-khach.js — hai thứ khác hẳn nhau, và hai
+     màn vừa thêm không mang theo bản ghi nghề nào. */
+  {vai:['R15'], pt:33, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -517,6 +527,7 @@ G.NAV = [
     {v:'hansei-sach',  t:'Hệ này đang nợ gì',            h:'5 câu chưa trả lời được · 3 loại quyết định · 9 mâu thuẫn tự tìm ra', ic:'shield', star:1, capMo:'chung'},
     {v:'hanh-trinh-5-tang',t:'Con đường năm tầng',        h:'Gia Đình Thịnh Vượng · 5 thử thách · và ngày thang này hết bậc', ic:'compass', star:1, capMo:'chung'},
     {v:'sau-vung',     t:'Vòng luẩn quẩn có tên',       h:'5 vùng · 1 lõi tự nhận thức · 4 chỗ rơi và đường về từng chỗ', ic:'sun', star:1, capMo:'chung'},
+    {v:'bang-tin',    t:'Không phải nhà mình đi một mình', h:'Tin cộng đồng · 6 tiêu chí chọn chuyện · mỗi con số khai nó đếm từ đâu', ic:'users', star:1, capMo:'chung'},
     {v:'ban-co',      t:'Bàn cờ hành trình',           h:'1 tầng 1 bàn · 1 ngày 1 ô · 10 gợi ý chọn 1 · điểm theo tầm quan trọng', ic:'target', star:1, capMo:'chung'},
     {v:'coach-5-tang', t:'Người đi cùng phải làm được gì', h:'5 tầng Coach · 4 năng lực mỗi tầng · vòng 10 bước · 1000 chia cho trần', ic:'users', star:1, capMo:'chung'},
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn

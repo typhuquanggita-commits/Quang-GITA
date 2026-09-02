@@ -7892,6 +7892,91 @@ const { chromium } = require(PW);
   }
 
 
+  console.log('\n67 · BẢNG TIN — MỖI CON SỐ KHAI NÓ ĐẾM TỪ ĐÂU');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.tinSo || !G.TIN_NGUON) return { co: false };
+      const r = {};
+      r.soi = G.tinSoi();
+      r.soTieuChi = (G.TIN_TIEUCHI || []).length;
+      r.soLoai = (G.TIN_LOAI || []).length;
+
+      /* ── CỔNG: nguồn khai CHƯA thì không bao giờ ra một con số ──
+         Kể cả khi người gọi đưa sẵn một con số vào. Cổng mà bỏ lọt thì
+         cả luật "không có nguồn thì không hiện" chỉ là một câu chữ. */
+      r.congChanSoBia = G.tinSo('N-XONG', 412).chuaCoNguon === true &&
+                        G.tinSo('N-XONG', 412).so === undefined;
+      r.congChanMaLa = G.tinSo('KHONG-CO-THAT', 9).chuaCoNguon === true;
+      r.congChoQuaNguonThat = G.tinSo('N-NHA', 5).chuaCoNguon === false &&
+                              G.tinSo('N-NHA', 5).so === 5;
+      /* Bật một nguồn lên CÓ mà quên nói đếm từ đâu → phải đỏ */
+      const n = G.TIN_NGUON.filter(x => x.ma === 'N-XONG')[0];
+      const giuCo = n.co, giuThieu = n.thieu;
+      n.co = true; delete n.thieu;
+      r.batCoMaKhongNoiDemTu = G.tinSoi().some(x => /khai CÓ mà không nói đếm từ đâu/.test(x));
+      n.co = giuCo; n.thieu = giuThieu;
+
+      /* ── Sáu tiêu chí, và phá từng cái một ── */
+      const tot = { viec: 'Ghi 12 tối liền, mỗi tối 3 dòng.', kho: 'Tuần hai suýt bỏ.',
+        so: '12', coNguoiThuBa: true, daHoiNguoiThuBa: true, quangCao: false,
+        dongYBangChu: true, ngayDongY: '2026-09-02' };
+      r.chuyenTot = G.tinSoiChuyen(tot).truot.length === 0;
+      function pha(sua) { const c = Object.assign({}, tot); sua(c); return G.tinSoiChuyen(c).truot; }
+      r.bat1 = pha(c => { c.viec = ''; }).some(x => /^1 /.test(x));
+      r.bat2 = pha(c => { c.kho = ''; }).some(x => /^2 /.test(x));
+      r.bat3 = pha(c => { c.viec = 'Ghi nhiều tối liền.'; c.so = ''; }).some(x => /^3 /.test(x));
+      r.bat4 = pha(c => { c.daHoiNguoiThuBa = false; }).some(x => /^4 /.test(x));
+      r.bat5 = pha(c => { c.quangCao = true; }).some(x => /^5 /.test(x));
+      r.bat6 = pha(c => { c.dongYBangChu = false; }).some(x => /^6 /.test(x));
+      /* Qua năm trên sáu VẪN LÀ TRƯỢT — cái bị bỏ thường đúng là cái bảo
+         vệ người không có mặt lúc gửi chuyện. */
+      r.namTrenSauVanTruot = pha(c => { c.dongYBangChu = false; }).length === 1;
+
+      /* ── Máy KHÔNG nói "đạt" ──
+         Máy soi được sáu tiêu chí có đủ cột chưa. Máy không đọc được một
+         chuyện hay hay dở. Gộp hai câu ấy là giao việc của người cho máy. */
+      const kq = G.tinSoiChuyen(tot);
+      r.khongNoiDat = kq.khongThayTruot === true && kq.dat === undefined &&
+        /Người của Học viện đọc và quyết/.test(kq.y);
+
+      /* ── Gọi tên con số không nguồn đang có trong kho ── */
+      r.soKhongNguon = G.tinSoiSoKhongNguon();
+      r.batCuHich = r.soKhongNguon.some(x => /CUHICH\..*thamgia/.test(x));
+
+      /* ── Trên màn thật: in chỗ THIẾU, không in con số bịa ── */
+      const man = G.VIEWS['bang-tin']();
+      r.manNoiThieu = (man.match(/Thiếu:/g) || []).length >= 3;
+      r.manKhongBia = man.indexOf('>412<') < 0 && !/412 gia đình/.test(man);
+      r.manCoTieuChi = (G.TIN_TIEUCHI || []).every(t => man.indexOf(G.U.h(t.t)) >= 0);
+      r.manCoCam = (G.TIN_CAM || []).every(c => man.indexOf(G.U.h(c.t)) >= 0);
+      r.manNoiChoChu = man.indexOf(G.U.h(G.TIN_THUONG.diemChoChu)) >= 0;
+      return { co: true, ...r };
+    });
+
+    if (!ra.co) {
+      bao(false, 'bảng tin nạp được', 'không thấy tinSo');
+    } else {
+      bao(!ra.soi.length && ra.soTieuChi === 6 && ra.soLoai === 4,
+        'bốn loại tin, sáu tiêu chí chọn chuyện, năm điều bảng tin tự cấm — mỗi loại tin khai NÓ ĐẾM TỪ ĐÂU và VÌ SAO nó đáng đăng',
+        ra.soi.join(' ') || '4 loại · 6 tiêu chí · 5 điều cấm');
+      bao(ra.congChanSoBia && ra.congChanMaLa && ra.congChoQuaNguonThat && ra.batCoMaKhongNoiDemTu,
+        'MỌI CON SỐ ĐI QUA MỘT CỔNG DUY NHẤT. Nguồn khai CHƯA CÓ SỔ thì cổng không trả về con số, kể cả khi người gọi đưa sẵn một con số vào tay nó. Có cổng thì chỉ phải canh một chỗ; không cổng thì mỗi lần thêm một dòng tin là một lần phải NHỚ tự hỏi con số này ở đâu ra — và trí nhớ là thứ hỏng đầu tiên. Bật một nguồn lên CÓ mà quên nói đếm từ đâu thì đỏ ngay',
+        'chặn số bịa · chặn mã lạ · cho qua nguồn thật · bắt nguồn khai CÓ mà thiếu sổ');
+      bao(ra.chuyenTot && ra.bat1 && ra.bat2 && ra.bat3 && ra.bat4 && ra.bat5 && ra.bat6 && ra.namTrenSauVanTruot,
+        'SÁU TIÊU CHÍ, PHÁ TỪNG CÁI MỘT ĐỀU BẮT ĐƯỢC: không có việc thật · không có chỗ khó · không có số nào · có người thứ ba mà chưa hỏi · có mùi quảng cáo · chưa đồng ý bằng chữ. Qua NĂM TRÊN SÁU vẫn là trượt — và cái hay bị bỏ qua nhất chính là hai cái bảo vệ người không có mặt lúc gửi chuyện: đứa trẻ trong chuyện, và chữ đồng ý mà sáu tháng sau người ta có quyền đổi ý',
+        '6/6 kiểu phá đều bắt · 5 trên 6 vẫn trượt');
+      bao(ra.khongNoiDat,
+        'máy KHÔNG BAO GIỜ NÓI "ĐẠT" — nó chỉ nói "không thấy chỗ nào trượt", rồi trả việc lại cho người. Máy soi được sáu tiêu chí có đủ cột hay chưa; máy không đọc được một chuyện hay hay dở. Gộp hai câu ấy làm một là giao việc của người cho một cái máy, và cái máy sẽ làm — sai');
+      bao(ra.batCuHich && ra.manNoiThieu && ra.manKhongBia && ra.manCoTieuChi && ra.manCoCam && ra.manNoiChoChu,
+        'BẢNG TIN GỌI TÊN CON SỐ KHÔNG NGUỒN ĐANG NẰM TRONG CHÍNH KHO NÀY: CUHICH khai thamgia 412 · 268 · 174 · 96 · 58 · 143 mà không dòng nào nói chúng đếm từ đâu, trong khi hệ chưa phát hành. Bảng tin không mượn lại chúng — mượn là biến một con số không nguồn thành con số có vẻ được xác nhận, vì nó vừa xuất hiện ở màn thứ hai. Màn in ba chỗ THIẾU SỔ ĐẾM thay vì in một con số đẹp, in đủ sáu tiêu chí và năm điều tự cấm cho nhà gửi chuyện đọc trước, và nói thẳng hai chỗ chờ chủ hệ chốt',
+        ra.soKhongNguon.length + ' con số không nguồn được gọi tên · màn in 3 chỗ thiếu');
+    }
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

@@ -88,6 +88,7 @@
     "src/vung-tu-nhan-thuc.js",
     "src/khung-hinh.js",
     "src/ban-co.js",
+    "src/bang-tin.js",
     "src/coach-5-tang.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
