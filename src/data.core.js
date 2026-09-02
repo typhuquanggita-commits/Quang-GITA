@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.20',
+  version: '9.21',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -324,7 +324,11 @@ G.TAM_NHIN = [
      chính cấp mình, sổ nhật ký và cuộc thi viết. Thêm một màn như thế
      không mở thêm một dòng tư liệu nghề nào. Ghi con số thật ở đây, và
      giữ nguyên trần nội dung ở chỗ của nó. */
-  {vai:['R13'], pt:37, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
+  /* 39 chứ không còn 37. Ba màn mới ở 9.19–9.21 — sổ tay của gia đình,
+     năm câu hệ chưa trả lời được, con đường năm tầng — đều mở cho mọi
+     vai. Sửa SỐ CÔNG BỐ, không nới dung sai: phần khoá của phụ huynh
+     không mở thêm một màn nghề nào. */
+  {vai:['R13'], pt:39, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
   {vai:['R14'], pt:33, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
   /* 31 chứ không còn 29. Hai màn mới ở 9.19 và 9.20 — sổ tay của gia
      đình, và năm câu hệ chưa trả lời được — đều mở cho MỌI vai, nên
@@ -506,6 +510,7 @@ G.NAV = [
     {v:'so-tay-tu-van',t:'Năm điều tư vấn không được làm',h:'Lằn ranh lúc chốt · 30 lời từ chối thật hay giả · 15 con số tháng', ic:'shield', star:1, capMo:'chung'},
     {v:'so-tay-gia-dinh',t:'Sổ tay của gia đình',        h:'24 trang · 30 câu · 7 quyền · trang cuối để trống cho bạn', ic:'sun', star:1, capMo:'chung'},
     {v:'hansei-sach',  t:'Hệ này đang nợ gì',            h:'5 câu chưa trả lời được · 3 loại quyết định · 9 mâu thuẫn tự tìm ra', ic:'shield', star:1, capMo:'chung'},
+    {v:'hanh-trinh-5-tang',t:'Con đường năm tầng',        h:'Gia Đình Thịnh Vượng · 5 thử thách · và ngày thang này hết bậc', ic:'compass', star:1, capMo:'chung'},
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
        tổn thương nhất và cách nó dựng ra người kèm. */

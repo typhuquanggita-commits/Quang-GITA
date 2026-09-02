@@ -130,6 +130,12 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      Giấu chúng sau gói nghề là đúng cách một câu để ngỏ trở thành một
      câu chìm, và câu chìm thì năm sau không ai nhắc lại. */
   'HN_NGO', 'HN_NGO_LUAT',
+  /* MỘT HÀNH TRÌNH NĂM TẦNG. Cả lớp này ở gói NỀN — đây là con đường
+     hệ MỜI gia đình đi, và giấu con đường đi là giấu đúng thứ mình
+     đang mời. Kể cả bảng chỗ nối và sáu chỗ chưa khớp: một nhà có
+     quyền biết cái thang đo mình được ghép lại từ đâu. */
+  'HT_DICH', 'HT_TANG', 'HT_TANG_LUAT', 'HT_SAUT5', 'HT_KC',
+  'HT_NOI', 'HT_NOI_LUAT', 'HT_LECH', 'HT_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -720,6 +726,11 @@ const mau = {
      đang cân nhắc có tin hay không, và một hệ dám khai chỗ mình chưa
      trả lời được là bằng chứng mạnh hơn mọi lời giới thiệu. */
   HN_NGO: G.HN_NGO, HN_NGO_LUAT: G.HN_NGO_LUAT,
+  /* Con đường năm tầng vào cả bản xem thử: người đang cân nhắc bước
+     vào cần thấy trước cả năm bậc và cả ngày thang này hết bậc. */
+  HT_DICH: G.HT_DICH, HT_TANG: G.HT_TANG, HT_TANG_LUAT: G.HT_TANG_LUAT,
+  HT_SAUT5: G.HT_SAUT5, HT_KC: G.HT_KC, HT_NOI: G.HT_NOI,
+  HT_NOI_LUAT: G.HT_NOI_LUAT, HT_LECH: G.HT_LECH, HT_LUAT: G.HT_LUAT,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')

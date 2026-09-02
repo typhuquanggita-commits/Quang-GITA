@@ -6978,6 +6978,151 @@ const { chromium } = require(PW);
     }
   }
 
+
+  console.log('\n59 · MỘT HÀNH TRÌNH NĂM TẦNG · BỐN THANG QUY VỀ MỘT · KHÔNG CÓ TẦNG SÁU');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.HT_TANG) return { co: false };
+      const r = { co: true };
+
+      /* ── BỐN THANG QUY VỀ MỘT, BẰNG KHOÁ MÁY ĐỌC ĐƯỢC ── */
+      r.soiNoi = G.htSoiThangNoi();
+      r.soThang = (G.HT_NOI || []).length;
+      /* Hàm dịch chạy được từ MỌI thang */
+      r.dich = {
+        bd: G.htTangCua('BD', 'BD6'), chang: G.htTangCua('CHANG12', 11),
+        vung: G.htTangCua('VUNG', 'RE') };
+      r.dichDung = r.dich.bd[0] === 'T3' && r.dich.chang[0] === 'T5' &&
+        r.dich.vung.length > 0;
+      /* Gỡ khoá tầng của một chặng — đây đúng là trạng thái TRƯỚC bản này */
+      const c1 = G.HANHTRINH12[0], giuT = c1.tang;
+      delete c1.tang;
+      r.batChangKhongTang = G.htSoiThangNoi().some(x => /chặng 1→trống/.test(x));
+      c1.tang = giuT;
+      /* Bảng hạng khách ở gói NGHỀ — máy phụ huynh không có, và không có
+         là đúng. Phần phá của nó nằm ở khối quản trị bên dưới. */
+      r.khongCoBangHang = G.KHACH_TANG === undefined;
+
+      /* ── KHÔNG CÓ TẦNG THỨ SÁU ── */
+      r.soiT6 = G.htSoiKhongTangSau();
+      r.soTang = G.HT_TANG.length;
+      G.HT_TANG.push({ ma: 'T6', so: 6, daQuy: 'THÊM', thuThach: 'x', khoNhat: 'x', doiGiKhiXong: 'x' });
+      r.batTang6 = G.htSoiKhongTangSau().length >= 1;
+      G.HT_TANG.pop();
+      /* Cây cầu sang vai phải trỏ vào thang CÓ THẬT */
+      /* DD_CAP ở gói nghề — máy nhà không có. Phần đối chiếu ở khối quản trị. */
+      r.cauKhaiDung = (G.HT_SAUT5 || {}).sangThangNao === 'DD_CAP';
+
+      /* ── CỔNG: bảng học phí ở gói NGHỀ, máy nhà không có ──
+         Hàm phải khai CHƯA ĐO ĐƯỢC kèm thiếu gì, không báo lỗi giả. */
+      const cg = G.htSoiCong();
+      r.congKhaiChuaDo = cg.chuaDo === true && !!cg.thieu;
+
+      /* ── NĂM PHẨM CHẤT, KHÔNG TRÙNG ── */
+      r.soiDaQuy = G.htSoiDaQuy();
+      r.daQuy = G.HT_TANG.map(t => t.daQuy);
+      const giuDQ = G.HT_TANG[1].daQuy;
+      G.HT_TANG[1].daQuy = G.HT_TANG[0].daQuy;
+      r.batTrungDaQuy = G.htSoiDaQuy().some(x => /hai tầng cùng một phẩm chất/.test(x));
+      G.HT_TANG[1].daQuy = giuDQ;
+
+      /* ── BẢY CHẶNG KIM CƯƠNG LÀ LỚP SÂU, KHÔNG PHẢI THANG ── */
+      r.soiKC = G.htSoiKC();
+      r.soKC = (G.HT_KC || []).length;
+      r.kcTrong = (G.HT_KC || []).filter(c => c.tang && c.tang.length).length;
+      r.kcNgoai = (G.HT_KC || []).filter(c => c.ngoaiTang).length;
+      const kc = G.HT_KC[0];
+      kc.ngoaiTang = true;
+      r.batKCHaiMang = G.htSoiKC().some(x => /vừa trong tầng vừa ngoài tầng/.test(x));
+      delete kc.ngoaiTang;
+
+      /* ── NHÀ MÌNH Ở ĐÂU: MỘT CÂU TRẢ LỜI, MỘT THỬ THÁCH ── */
+      const chua = G.htDuong();
+      const dau = G.htDuong(3);
+      const het = G.htDuong(999);
+      r.duongDung = chua.chuaDo === true && !!dau.tang && !!dau.thuThach &&
+        het.tang === 'T5' && het.hetThang === true && !!het.sauDo;
+
+      /* ── ĐÍCH ĐO BẰNG DẤU, KHÔNG ĐO BẰNG TẦNG ── */
+      const khongSo = G.htToiDichChua();
+      const du = G.htToiDichChua({ D1: true, D2: true, D3: true, D4: true });
+      const thieu1 = G.htToiDichChua({ D1: true, D2: true, D3: true });
+      r.dichDungCach = khongSo.chuaDo === true && du.du === true &&
+        thieu1.du === false && thieu1.thieu.length === 1 &&
+        (G.HT_DICH || {}).khongPhaiTang === true;
+
+      r.soiLech = G.htSoiLech();
+      r.soLech = (G.HT_LECH || []).length;
+      const man = G.VIEWS['hanh-trinh-5-tang']();
+      r.manCoDich = man.indexOf(G.HT_DICH.la) >= 0;
+      r.manCoSauT5 = man.indexOf('Sau tầng năm') >= 0;
+      r.manCoBangNoi = man.indexOf('Bốn cái thang') >= 0;
+      return r;
+    });
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ng59 = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.KHACH_TANG || !G.HT_NOI) return { ok: false, soi: 'không thấy bảng hạng ở gói nghề' };
+      const soi = G.htSoiThangNoi();
+      const dich = G.htTangCua('HANG', 'T');
+      const k1 = G.KHACH_TANG[0], giu = k1.tangMa;
+      delete k1.tangMa;
+      const bat = G.htSoiThangNoi().some(x => /không có tangMa/.test(x));
+      k1.tangMa = giu;
+      /* Cổng: máy này CÓ bảng học phí nên soi được thật */
+      const cg = G.htSoiCong();
+      const t1 = G.HT_TANG[0], giuTT = t1.thuThach;
+      t1.thuThach = 'Ghi sổ đủ 7 ngày liền.';
+      const batNgay = (G.htSoiCong().loi || []).some(x => /ghi cứng số ngày/.test(x));
+      t1.thuThach = giuTT;
+      const congT3 = (G.htCongCua('T3') || {}).cong || [];
+      return { ok: !soi.length && dich.length === 2 && bat,
+        soi: soi.join(' ') || 'hạng Thép→' + dich.join('+'),
+        congOK: cg.chuaDo === false && !cg.loi.length && congT3.length > 0 && batNgay,
+        congSoi: (cg.loi || []).join(' ') || 'T3 có ' + congT3.length + ' cổng đọc từ bảng học phí',
+        kcOK: !G.htSoiKC().length, lechOK: !G.htSoiLech().length, t6OK: !G.htSoiKhongTangSau().length,
+        cauThat: !!G.DD_CAP && G.DD_CAP.some(function (d) { return d.ma === 'DH'; }) };
+    });
+    ra.hangOK = ng59.ok; ra.hangSoi = ng59.soi;
+    ra.congOK = ng59.congOK; ra.congSoi = ng59.congSoi;
+    ra.kcOKng = ng59.kcOK; ra.lechOKng = ng59.lechOK; ra.t6OKng = ng59.t6OK;
+    ra.cauThat = ng59.cauThat;
+
+    if (!ra.co) {
+      bao(false, 'con đường năm tầng nạp được từ gói nền', 'không thấy HT_TANG');
+    } else {
+      bao(!ra.soiNoi.length && ra.soThang === 5 && ra.dichDung && ra.batChangKhongTang && ra.khongCoBangHang,
+        'BỐN CÁI THANG QUY VỀ MỘT. Kho có năm tầng, mười bánh đà, bảy vùng đất, mười hai chặng và bốn hạng khách — năm cách đo cùng một nhà. Nay thang nào cũng nối về năm tầng bằng KHOÁ MÁY ĐỌC ĐƯỢC, và hàm dịch chạy được từ mọi thang. Trước bản này mười hai chặng nói tầng của mình bằng văn xuôi trong cột NGÀY: mắt người đọc ra, máy thì không — nối bằng mắt người thì coi như chưa nối',
+        ra.soiNoi.join(' ') || 'BD6→' + ra.dich.bd[0] + ' · chặng 11→' + ra.dich.chang[0] +
+        ' · vùng Rễ→' + ra.dich.vung.join('+') + ' · bảng hạng ở gói nghề, máy nhà không nhận');
+      bao(ra.t6OKng && ra.soTang === 5 && ra.batTang6 && ra.cauKhaiDung && ra.cauThat,
+        'KHÔNG CÓ TẦNG THỨ SÁU, và phép kiểm bắt ngay khi có ai đặt thêm. Năm tầng cộng lại 848 ngày trong khi tài liệu hứa mười năm — cách dễ là đặt thêm bậc, và cách ấy phá đúng thứ hệ đã hứa: có một ngày hệ này xong việc. Sau tầng năm là ĐỔI VAI sang thang người đi kèm, và cây cầu ấy đã nằm sẵn trong cột gồm của tầng 5 từ trước',
+        ra.soiT6.join(' ') || '5 tầng · cầu sang DD_CAP');
+      bao(ra.congKhaiChuaDo && ra.congOK,
+        'điều kiện xong của mỗi tầng ĐỌC từ bảng học phí, và không tầng nào được tự ghi cứng số ngày. Bảng học phí ở gói NGHỀ nên máy nhà không có nó — và hàm khai thẳng CHƯA ĐO ĐƯỢC kèm thiếu gì, chứ không báo "tầng này không có trong bảng". Một phép kiểm báo thiếu ở chỗ dữ liệu cố ý vắng mặt là phép kiểm dạy người ta coi một lớp bảo vệ là một lỗi',
+        'máy nhà: khai chưa đo được · máy có gói nghề: ' + (ra.congSoi || ''));
+      bao(!ra.soiDaQuy.length && ra.batTrungDaQuy,
+        'năm tầng, năm phẩm chất kết tinh khác nhau — hai tầng cùng một phẩm chất là hai tầng đang làm một việc, và phép kiểm bắt ngay khi trùng',
+        ra.daQuy.join(' · '));
+      bao(ra.kcOKng && ra.soKC === 7 && ra.kcTrong === 4 && ra.kcNgoai === 3 && ra.batKCHaiMang,
+        'bảy chặng kim cương vào kho dưới dạng LỚP SÂU của năm tầng, không dưới dạng thang thứ năm — bốn chặng nằm trong tầng, ba chặng khai NGOÀI TẦNG và trỏ sang một cấp có thật của thang người đi kèm. Năm cái thang cùng đo một người là năm câu trả lời, và tới lúc chúng lệch nhau thì nhà mình tin cái nào',
+        ra.soiKC.join(' ') || ra.kcTrong + ' chặng trong tầng · ' + ra.kcNgoai + ' chặng đổi vai');
+      bao(ra.duongDung && ra.dichDungCach,
+        'hỏi "nhà mình đang ở đâu" thì có MỘT câu trả lời và ĐÚNG MỘT thử thách kế tiếp — người mệt đọc một việc thì làm, đọc ba việc thì đóng máy. Và đích đo bằng bốn dấu hiệu của chính nhà mình chứ không đo bằng tầng đang đứng: đo đích bằng tầng thì đích mua được bằng tiền',
+        'chưa có số tối thì hàm nói chưa đo được · tới T5 thì báo hết thang và nói sang vai gì');
+      bao(ra.hangOK,
+        'thang thứ năm — bốn hạng khách — nằm ở gói NGHỀ, và bảng ấy nối về năm tầng bằng danh sách mã đọc được. Trước bản này tầng nằm ở cột chữ dạng "Tầng 2 – 3": người đọc ra hai tầng, máy đọc ra một chuỗi có dấu gạch',
+        ra.hangSoi || 'hạng Thép→T2+T3');
+      bao(ra.lechOKng && ra.soLech === 6 && ra.manCoDich && ra.manCoSauT5 && ra.manCoBangNoi,
+        'sáu chỗ chưa khớp giữa bộ tài liệu và hệ năm tầng đã lập trình, mỗi chỗ sửa đều RƠI XUỐNG một kho có thật — và gia đình đọc được cả bảng chỗ nối lẫn sáu chỗ lệch, vì một nhà có quyền biết cái thang đo mình được ghép lại từ đâu',
+        ra.soiLech.join(' ') || ra.soLech + ' chỗ đã sửa, đều rơi xuống kho thật');
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();
