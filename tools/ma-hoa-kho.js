@@ -97,6 +97,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      mạnh nhất của cả hệ: nó được dựng để một ngày nhà mình không cần nó
      nữa. Giấu câu ấy thì hệ trông như một thứ muốn giữ người mãi. */
   'DD_HUA', 'GL_XONG', 'GL_XONG_LUAT',
+  /* Sáu điều rừng KHÔNG BAO GIỜ BÁN. Đây là lời hứa về dữ liệu và về
+     túi tiền của chính các nhà — cùng lý do với DD_HUA: lời hứa không
+     kiểm được thì không phải lời hứa, và giấu nó đi là giữ lại quyền
+     phá nó. Phần kinh tế còn lại đi gói nghề. */
+  'TR_DEN', 'TR_DEN_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -198,6 +203,25 @@ const NGHE = [
   'GL_BAN', 'GL_BAN_CAM', 'GL_MUC1', 'GL_MUC1_LUAT', 'GL_ANDON', 'GL_ANDON_LUAT',
   'GL_KPI', 'GL_KPI_LUAT', 'GL_SUCO', 'GL_SUCO_LUAT', 'GL_LS', 'GL_LS_LUAT',
   'GL_HOPDEN', 'GL_LUAT',
+  /* Sổ tay năm đầu: lịch mười hai tháng, nhịp tuần, sáu mốc kiểm, tám
+     kịch bản lần-đầu. Đây là cách Học viện vận hành từ bên trong ở năm
+     dễ tổn thương nhất — và bảng kịch bản lần-đầu kể ra chính xác chỗ
+     hệ sẽ lúng túng. Ở gói NGHỀ. */
+  'ND_LUAT', 'ND_QUYMO', 'ND_NGAY0', 'ND_THANG', 'ND_TUAN', 'ND_TUAN_LUAT',
+  'ND_MOC', 'ND_MOC_LUAT', 'ND_SUCO', 'ND_CAM',
+  /* Kinh tế học: nguồn tiền, thứ tự cắt chi, đường tự chủ, lương người
+     lắng nghe, kiểm toán. Mở ra là mở đúng chỗ mềm nhất của một tổ
+     chức — ai trả tiền và cắt gì trước khi túng. */
+  'TR_LUAT', 'TR_NGUON', 'TR_CHI', 'TR_CAT_LUAT', 'TR_TUCHU', 'TR_QUY',
+  'TR_QUY_LUAT', 'TR_LUONG', 'TR_BAO', 'TR_KIEMTOAN', 'TR_CHUA', 'TR_CHUA_LUAT',
+  /* Giáo trình bốn mươi giờ và hai mươi ca thi vai. Cùng lý do với
+     DD_TINHHUONG: gia đình đọc được nguyên văn câu sẽ nói thì buổi nói
+     chuyện mất tác dụng. */
+  'DT_LUAT', 'DT_VAO', 'DT_BUOI', 'DT_VAI', 'DT_VAI_LUAT', 'DT_THUCTAP',
+  'DT_RUBRIC', 'DT_TUYETDOI', 'DT_THI', 'DT_PHAO', 'DT_TAICHUNGCHI', 'DT_RUTLUI',
+  /* Chuẩn mô phỏng — gồm cả bảng khai những gì CHƯA dựng. */
+  'MP_BAY', 'MP_LUAT', 'MP_QUAI', 'MP_BAO', 'MP_CHONG', 'MP_CHONG_LUAT',
+  'MP_DO', 'MP_GAY', 'MP_LICH', 'MP_CHUA', 'MP_CHUA_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -610,6 +634,7 @@ const mau = {
      nhập cũng phải đọc được hai điều này, vì chúng là lý do mạnh nhất
      để bước vào — và là thứ để đòi nếu hệ phá lời. */
   DD_HUA: G.DD_HUA, GL_XONG: G.GL_XONG, GL_XONG_LUAT: G.GL_XONG_LUAT,
+  TR_DEN: G.TR_DEN, TR_DEN_LUAT: G.TR_DEN_LUAT,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')

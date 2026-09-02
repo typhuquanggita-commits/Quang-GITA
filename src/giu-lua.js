@@ -103,6 +103,66 @@ G.VIEWS = G.VIEWS || {};
       .map(function (k) { return k.ma; });
   };
 
+  /* ─── Cơn bão nào ép được vào cơ chế có thật ───
+     `ep` trỏ vào tên kho hoặc hàm. Bão nào trỏ vào chỗ trống thì đó là
+     một cảnh báo văn chương: nó nghe đáng sợ mà không thử được gì. */
+  G.mpSoiBao = function () {
+    return (G.MP_BAO || []).filter(function (b) { return !b.ep || G[b.ep] === undefined; })
+      .map(function (b) { return b.ma + '→' + (b.ep || 'trống'); });
+  };
+
+  /* ─── Phép đo phẩm giá, chạy THẬT từ hôm nay ───
+     Ba dấu hiệu đọc từ CỜ máy đọc được trong chính luật hệ đang khai,
+     không đọc từ câu văn và không cần một hồ sơ nhân tạo nào.
+
+     Vì sao đọc cờ chứ không dò chữ: dò chữ trong câu văn thì ai đó sửa
+     một chữ là phép đo câm mà không ai biết — và một phép đo câm về
+     phẩm giá là thứ nguy hiểm nhất trong cả bộ kiểm. */
+  G.mpDocCo = function (duong) {
+    var phan = String(duong || '').split('.');
+    var goc = G[phan[0]];
+    if (goc === undefined) return undefined;
+    if (Array.isArray(goc)) {
+      var ma = phan[1];
+      goc = goc.filter(function (x) { return x.ma === ma; })[0];
+      if (!goc) return undefined;
+      return goc[phan[2]];
+    }
+    for (var i = 1; i < phan.length; i++) {
+      if (goc === undefined || goc === null) return undefined;
+      goc = goc[phan[i]];
+    }
+    return goc;
+  };
+
+  G.mpDoD2 = function () {
+    var d2 = (G.MP_DO || []).filter(function (x) { return x.ma === 'D2'; })[0];
+    if (!d2 || !d2.dauHieu) return null;
+    var ra = d2.dauHieu.map(function (d) {
+      return { ma: d.ma, t: d.t, co: d.co, chan: G.mpDocCo(d.co) === true };
+    });
+    return { dau: ra, dat: ra.every(function (x) { return x.chan; }),
+      ho: ra.filter(function (x) { return !x.chan; }).map(function (x) { return x.ma; }) };
+  };
+
+  /* ─── Phép đo nào chạy được, phép nào chờ bộ chạy ───
+     Khai ra để không ai tưởng cả năm phép đều đang đo. */
+  G.mpChayDuoc = function () { return (G.MP_DO || []).filter(function (x) { return x.chayDuoc; }); };
+  G.mpChuaChay = function () { return (G.MP_DO || []).filter(function (x) { return !x.chayDuoc; }); };
+
+  /* ─── Ngưỡng khủng hoảng nào không bao giờ kêu được ───
+     Kịch bản có `nguongTyLe` phải nằm DƯỚI trần đã ép. Ngưỡng trên
+     trần là ngưỡng chết: nó không bao giờ chạm tới, nên nó chỉ làm
+     người ta yên tâm mà không bảo vệ ai. Chính lỗi này đã có thật ở
+     bản 9.14 — ngưỡng ghi mười lăm trên một trong khi trần là năm. */
+  G.glSoiNguongChet = function () {
+    var tran = G.ddTranCua ? G.ddTranCua('DH') : 0;
+    if (!tran) return [];
+    return (G.GL_SUCO || []).filter(function (s) {
+      return s.nguongTyLe !== undefined && s.nguongTyLe > tran;
+    }).map(function (s) { return s.ma + ':' + s.nguongTyLe + '>' + tran; });
+  };
+
   /* ═══════════ MÀN: NGÀY HỆ NÀY XONG VIỆC ═══════════
      Một màn, hai tầng sâu — cùng khuôn với màn người đi cùng. Gia đình
      đọc được NĂM ĐIỀU KIỆN XONG, vì đó là câu hứa mạnh nhất của cả hệ:
@@ -197,6 +257,48 @@ G.VIEWS = G.VIEWS || {};
     o += '<div class="card mb">' + (hd.giu || []).map(function (t, i) {
       return '<div class="sm" style="padding:6px 0;line-height:1.8">' + (i + 1) + '. ' + h(t) + '</div>';
     }).join('') + '<p class="tiny dim mt" style="line-height:1.7">' + h(hd.viSaoVietTay || '') + '</p></div>';
+
+    /* ── Chuẩn mô phỏng, và chỗ chưa dựng ──
+       In cả phần CHƯA dựng. Bảng chỉ in phần đã dựng thì đọc xong
+       tưởng hệ đã thử hết. */
+    if (G.MP_DO) {
+      var d2 = G.mpDoD2(), chuaChay = G.mpChuaChay(), baoLech = G.mpSoiBao();
+      o += U.sec('Chuẩn mô phỏng', h((G.MP_BAY || {}).quyen || ''));
+      o += '<div class="card mb" style="border-color:' + (d2 && d2.dat ? '#0B7350' : '#BE0E16') + '3e">' +
+        '<span class="tiny up" style="color:' + (d2 && d2.dat ? '#0B7350' : '#BE0E16') + '">PHÉP ĐO PHẨM GIÁ · CHẠY THẬT TỪ HÔM NAY</span>' +
+        (d2 ? d2.dau.map(function (x) {
+          return '<div class="sm mt" style="line-height:1.8">' + (x.chan ? '✓' : '✗') + ' ' + h(x.t) +
+            ' <span class="tiny muted">— chặn bởi ' + h(x.co) + '</span></div>';
+        }).join('') : '') +
+        '<p class="tiny dim mt" style="line-height:1.7">Ba dấu hiệu này đọc từ CỜ máy đọc được trong chính luật hệ đang khai, ' +
+        'không cần một hồ sơ nhân tạo nào. Dò chữ trong câu văn thì sửa một chữ là phép đo câm.</p></div>';
+
+      o += U.tbl(['Mã', 'Phép đo', 'Chạy được chưa', 'Đậu', 'Gãy'],
+        (G.MP_DO || []).map(function (d) {
+          return [h(d.ma), h(d.ten), d.chayDuoc ? 'chạy thật' : 'CHỜ BỘ CHẠY', h(d.dau), h(d.gay)];
+        }));
+
+      o += U.tbl(['Mã', 'Cơn bão', 'Mạnh', 'Ép vào cơ chế'],
+        (G.MP_BAO || []).map(function (b) { return [h(b.ma), h(b.ten), h(b.manh), h(b.ep)]; }));
+      if (baoLech.length)
+        o += '<div class="card mb" style="border-color:#BE0E162e"><b class="sm">Bão trỏ vào chỗ trống: ' +
+          h(baoLech.join(' · ')) + '</b></div>';
+      o += '<p class="tiny dim mb" style="line-height:1.7"><b>Cặp bão nguy hiểm nhất:</b> ' +
+        h((G.MP_CHONG || []).map(function (c) { return c.cap; }).join(' · ')) + ' — ' +
+        h((G.MP_CHONG_LUAT || {}).cot || '') + '</p>';
+
+      if ((G.MP_CHUA || []).length) {
+        o += '<div class="card mb" style="border-color:#B4720F3e">' +
+          '<b class="sm">' + (G.MP_CHUA || []).length + ' thứ CHƯA dựng, và ' +
+          chuaChay.length + ' trên ' + (G.MP_DO || []).length + ' phép đo chờ bộ chạy</b>' +
+          (G.MP_CHUA || []).map(function (c) {
+            return '<div class="sm mt" style="line-height:1.8"><b>' + h(c.t) + '</b> — thiếu: ' + h(c.thieu) +
+              (c.vi ? '<div class="tiny dim">' + h(c.vi) + '</div>' : '') + '</div>';
+          }).join('') +
+          '<p class="tiny dim mt" style="line-height:1.7">' + h((G.MP_CHUA_LUAT || {}).cot || '') + ' ' +
+          h((G.MP_CHUA_LUAT || {}).vi || '') + '</p></div>';
+      }
+    }
 
     o += U.sec('Bảy luật của người giữ lửa', '');
     o += '<div class="card">' + (G.GL_LUAT || []).map(function (l) {

@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.14',
+  version: '9.15',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -285,9 +285,18 @@ G.TAM_NHIN = [
      chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
      nới dung sai để cả bảy cùng lọt, mà nới dung sai là mất tác dụng canh.
      Ghi hai con số thật thì canh được chặt hơn. */
-  {vai:['R05','R06','R07','R08'], pt:75,
+  /* 77 và 75 chứ không còn 75 và 73. Bốn màn mới ở bản 9.15 — hai màn
+     lời hứa mở cho mọi vai, hai màn nghề mở tới nghe_chung — nên cả
+     bảy vị trí này thấy thêm bốn màn trong khi mẫu số cũng tăng bốn.
+     Tử số tăng nhanh hơn mẫu số nên tỉ lệ nhích lên.
+
+     Lại là lúc sửa SỐ CÔNG BỐ chứ không nới dung sai: phần khoá của
+     bảy vị trí này không hề mở thêm một màn quản trị nào. Giữ số cũ
+     thì bài kiểm đỏ ở chỗ không có lỗi, và bộ kiểm đỏ oan vài lần là
+     bộ kiểm bị tắt. */
+  {vai:['R05','R06','R07','R08'], pt:77,
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
-  {vai:['R09','R10','R11'], pt:73,
+  {vai:['R09','R10','R11'], pt:75,
    ghi:'Như trên, và không mở ba màn thuộc phạm vi quản lý chuyên môn.'},
   /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
      thiệt thòi. Phân tích dữ liệu đọc được toàn bộ kho nghề và mọi màn số
@@ -477,6 +486,12 @@ G.NAV = [
        quyền — chặn nằm ở chỗ máy có kho hay không, không nằm ở cột trái. */
     {v:'doi-dong-hanh',t:'Người đi cùng nhà mình',      h:'5 lời hứa · trần 5–10–3 · 20 tình huống nói đúng', ic:'heart', star:1, capMo:'chung'},
     {v:'giu-lua',     t:'Ngày hệ này xong việc',       h:'5 điều kiện xong · chuông 3 tầng · 6 kịch bản sự cố', ic:'shield', capMo:'chung'},
+    {v:'tien-rung',   t:'Sáu điều không bao giờ bán',  h:'Lời hứa về dữ liệu và túi tiền · 4 nguồn · thứ tự cắt chi', ic:'shield', capMo:'chung'},
+    /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
+       mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
+       tổn thương nhất và cách nó dựng ra người kèm. */
+    {v:'nam-dau',     t:'Sổ tay năm đầu',              h:'12 tháng · 6 mốc kiểm · 8 kịch bản lần đầu', ic:'compass', star:1, perm:'nghe_chung', capMo:'nghe'},
+    {v:'dao-tao-dh',  t:'Bốn mươi giờ đào tạo',        h:'12 buổi · 20 ca thi vai · 1 tiêu chí tuyệt đối', ic:'brain', perm:'nghe_chung', capMo:'nghe'},
     {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
     {v:'giai-doan-bao-ve',t:'Giai đoạn và lớp bảo vệ', h:'5 giai đoạn · 4 tầng bảo vệ, kể cả chỗ chưa có', ic:'shield', perm:'nghe_chung', capMo:'nghe'},
     /* Chỉ hiện với vai CÓ đầu việc trong hệ — luồng này để người LÀM nói

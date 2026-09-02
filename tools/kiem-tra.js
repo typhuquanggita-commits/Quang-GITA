@@ -6025,6 +6025,184 @@ const { chromium } = require(PW);
     }
   }
 
+  console.log('\n53 · SỔ TAY NĂM ĐẦU · KINH TẾ RỪNG · BỐN MƯƠI GIỜ · CHUẨN MÔ PHỎNG');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const nha = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.TR_DEN) return { co: false };
+      const man = G.VIEWS['tien-rung']();
+      return { co: true,
+        soDen: (G.TR_DEN || []).length,
+        denThieu: (G.TR_DEN || []).filter(x => !x.t || !x.y).map(x => x.ma),
+        /* Gia đình KHÔNG nhận lịch vận hành, bảng chi, giáo trình, chuẩn mô phỏng */
+        lo: !!(G.ND_THANG || G.ND_SUCO || G.TR_CHI || G.TR_NGUON || G.DT_VAI || G.DT_BUOI || G.MP_DO || G.MP_BAO),
+        manCoDen: man.indexOf((G.TR_DEN[0] || {}).t || '###') >= 0,
+        manKhongCoChi: man.indexOf('THỨ TỰ CẮT') < 0 };
+    });
+    if (!nha.co) {
+      bao(false, 'sáu điều không bao giờ bán nạp được từ gói nền', 'không thấy TR_DEN');
+    } else {
+      bao(nha.soDen === 6 && !nha.denThieu.length,
+        'sáu điều rừng KHÔNG BAO GIỜ BÁN, điều nào cũng nói rõ vì sao — đây là lời hứa về dữ liệu và túi tiền của chính các nhà, và lời hứa không kiểm được thì không phải lời hứa',
+        nha.denThieu.join(' ') || '6/6');
+      bao(!nha.lo && nha.manCoDen && nha.manKhongCoChi,
+        'gia đình KHÔNG nhận lịch vận hành, bảng chi, giáo trình và chuẩn mô phỏng — chỉ nhận đúng lời hứa',
+        nha.lo ? 'lớp vận hành lọt xuống máy phụ huynh' : 'chỉ có danh sách không bán');
+    }
+
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ng = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.ND_THANG || !G.TR_CHI || !G.DT_BUOI || !G.MP_DO) return { co: false };
+      const ra = { co: true };
+
+      /* ── Kế hoạch năm đầu có khớp TRẦN đã ép không ──
+         Bản gốc viết một Đồng Hành mười nhà. Trần đã ép là năm. Hai con
+         số không thể cùng đúng, và hàm này đọc trần chứ không đọc con
+         số viết tay. */
+      ra.tyLe = G.ndSoiTyLe();
+      ra.tran = G.ddTranCua('DH');
+      ra.can100 = G.ndCanBaoNhieuNguoi(100);
+      ra.soThang = (G.ND_THANG || []).length;
+      ra.thangThuTu = (G.ND_THANG || []).every((t, i) => t.thang === i + 1);
+      ra.thangThieu = (G.ND_THANG || []).filter(t => !t.cot || !t.cam).map(t => t.thang);
+
+      /* ── Nhịp tuần: thứ tự bỏ, và thứ KHÔNG BAO GIỜ bỏ ── */
+      const boDuoc = G.ndThuTuBo(), khongBo = G.ndKhongDuocBo();
+      ra.boThuTu = boDuoc.map(x => x.thu).join('>');
+      ra.giuThu2 = khongBo.some(x => x.thu === 2);
+      ra.giuCN = khongBo.some(x => x.thu === 8 && x.nghi);
+      ra.boDungThuTu = boDuoc.every((x, i) => i === 0 || boDuoc[i - 1].bo <= x.bo);
+
+      /* ── Sáu mốc, và mốc phải trả null khi CHƯA tới mốc nào ── */
+      ra.soMoc = (G.ND_MOC || []).length;
+      ra.mocChuaToi = G.ndMocCua(0) === null && G.ndMocCua(6) === null;
+      ra.moc7 = (G.ndMocCua(7) || {}).ngay === 7;
+      ra.moc100 = (G.ndMocCua(100) || {}).ngay === 90;
+      ra.moc400 = (G.ndMocCua(400) || {}).ngay === 365;
+
+      /* ── Tám kịch bản lần đầu ── */
+      ra.soSuCo = (G.ND_SUCO || []).length;
+      ra.suCoThieu = G.ndSoiSuCo();
+      ra.soCam = (G.ND_CAM || []).length;
+
+      /* ── Kinh tế: chi cộng trăm, nguồn không chạm nửa ── */
+      ra.soiChi = G.trSoiChi();
+      ra.soiNguon = G.trSoiNguon();
+
+      /* ── Thứ tự cắt: TỪ CHỐI cắt nhân bản khi còn nhóm rẻ hơn ── */
+      ra.catDau = (G.trCatTiep([]).cat || {}).ma;
+      ra.chanCatSom = G.trDuocCat('C3', []).ok === false && G.trDuocCat('C4', []).ok === false;
+      ra.choCatDung = G.trDuocCat('C5', []).ok === true;
+      ra.catCuoi = G.trCatTiep(['C5', 'C2', 'C1']).cat;
+      ra.catCuoiLaNhanBan = ra.catCuoi && (ra.catCuoi.ma === 'C3' || ra.catCuoi.ma === 'C4');
+
+      /* ── Ô chờ chủ hệ, và KHÔNG đoán giai đoạn khi chưa có số ── */
+      ra.soChuaDien = G.trChuaDien().length;
+      ra.chuaDienDuCot = G.trChuaDien().every(x => x.t && x.vi);
+      ra.khongDoanGiaiDoan = G.trGiaiDoan(undefined) === null && G.trGiaiDoan('') === null;
+      ra.doanDuocKhiCoSo = (G.trGiaiDoan(75) || {}).giai === 'C';
+
+      /* ── Giáo trình: bốn mươi giờ, hai mươi ca, bốn nhóm ── */
+      ra.soiGio = G.dtSoiGio();
+      ra.gioLop = G.dtTongGioLop();
+      ra.soiVai = G.dtSoiVai();
+      ra.soiBuoi = G.dtSoiBuoi();
+      ra.coTuyetDoi = !!(G.DT_TUYETDOI && G.DT_TUYETDOI.lan2);
+
+      /* ── Ngôn từ trong giáo trình: quét cột `dat`, KHÔNG quét `truot` ── */
+      ra.ngonTu = G.dtSoiNgonTu();
+      const cam = (G.HM_NGONTU || {}).camTu || [];
+      const coTuCam = chu => cam.some(t =>
+        new RegExp('(^|[^\\p{L}])' + t + '($|[^\\p{L}])', 'iu').test(String(chu || '')));
+      ra.cotTruotCoTuCam = (G.DT_VAI || []).some(x => coTuCam(x.truot));
+      const giu = G.DT_VAI[0].dat;
+      G.DT_VAI[0].dat = 'Anh chị nên nghĩ lại chuyện này.';
+      ra.quetBatDuoc = G.dtSoiNgonTu().length === 1;
+      G.DT_VAI[0].dat = giu;
+
+      /* ── Chuẩn mô phỏng ── */
+      ra.soiBao = G.mpSoiBao();
+      ra.soBao = (G.MP_BAO || []).length;
+      ra.soChong = (G.MP_CHONG || []).length;
+      ra.soQuai = (G.MP_QUAI || []).length;
+      ra.doThieu = (G.MP_DO || []).filter(d => !d.do || !d.dau || !d.gay || !d.vi).map(d => d.ma);
+      ra.soDo = (G.MP_DO || []).length;
+      ra.chuaChay = G.mpChuaChay().map(d => d.ma);
+      ra.soChuaDung = (G.MP_CHUA || []).length;
+      ra.chuaDuCot = (G.MP_CHUA || []).every(c => c.t && c.thieu);
+
+      /* ── Phép đo phẩm giá, chạy THẬT ── */
+      const d2 = G.mpDoD2();
+      ra.d2Dat = !!(d2 && d2.dat);
+      ra.d2So = d2 ? d2.dau.length : 0;
+      ra.d2Ho = d2 ? d2.ho : ['không có D2'];
+      /* Phép đo phải BẮT ĐƯỢC khi gỡ một cờ chặn */
+      const giuCo = G.GL_ANDON_LUAT.khongPhat;
+      G.GL_ANDON_LUAT.khongPhat = false;
+      ra.d2BatDuoc = G.mpDoD2().dat === false;
+      G.GL_ANDON_LUAT.khongPhat = giuCo;
+
+      /* ── Ngưỡng khủng hoảng nào không bao giờ kêu được ──
+         Ngưỡng trên trần là ngưỡng CHẾT: nó chỉ làm người ta yên tâm. */
+      ra.nguongChet = G.glSoiNguongChet();
+      const s5 = (G.GL_SUCO || []).filter(s => s.ma === 'S5')[0] || {};
+      ra.s5DuoiTran = s5.nguongTyLe !== undefined && s5.nguongTyLe < ra.tran;
+      return ra;
+    });
+    if (!ng.co) {
+      bao(false, 'bốn lớp mới nạp được từ gói nghề', 'thiếu ND/TR/DT/MP');
+    } else {
+      bao(!ng.tyLe.length && ng.can100 === 20 && ng.tran === 5,
+        'kế hoạch năm đầu KHỚP TRẦN đã ép: một trăm nhà cần hai mươi người, không phải mười — bản gốc viết một trên mười, và tôi sửa KẾ HOẠCH cho vừa trần chứ không nới trần cho vừa kế hoạch',
+        ng.tyLe.join(' ') || 'trần ' + ng.tran + ' → cần ' + ng.can100);
+      bao(ng.soThang === 12 && ng.thangThuTu && !ng.thangThieu.length,
+        'mười hai tháng đúng thứ tự, tháng nào cũng có việc CỐT và điều CẤM — cột cấm là cột hay bị bỏ qua nhất và là cột giữ tháng ấy đúng nhịp',
+        ng.thangThieu.join(' ') || '12/12');
+      bao(ng.giuThu2 && ng.giuCN && ng.boDungThuTu,
+        'nhịp tuần có thứ tự bỏ viết sẵn, và thứ Hai cùng ngày nghỉ KHÔNG BAO GIỜ bỏ — lúc bận mà còn phải quyết bỏ gì thì bao giờ cũng bỏ nhầm thứ quan trọng nhất',
+        'bỏ theo thứ tự ' + ng.boThuTu);
+      bao(ng.soMoc === 6 && ng.mocChuaToi && ng.moc7 && ng.moc100 && ng.moc400,
+        'sáu mốc kiểm, và ngày CHƯA tới mốc nào thì trả về rỗng chứ không trả mốc đầu cho lấy lệ');
+      bao(ng.soSuCo === 8 && !ng.suCoThieu.length && ng.soCam === 6,
+        'tám kịch bản lần-đầu đủ bốn cột, và sáu điều cấm tuyệt đối — trong khủng hoảng, cột "không làm gì" mới là cột cứu người',
+        ng.suCoThieu.join(' ') || '8 kịch bản · 6 điều cấm');
+      bao(!ng.soiChi.length && !ng.soiNguon.length,
+        'năm nhóm chi cộng đúng một trăm, nhân bản và bão xếp cắt SAU CÙNG, và không nguồn tiền nào chạm một nửa — nguồn nào quá nửa thì nguồn đó bắt đầu quyết định hệ mà không cần nói ra',
+        ng.soiChi.concat(ng.soiNguon).join(' ') || 'chi 100% · nguồn tối đa 35%');
+      bao(ng.catDau === 'C5' && ng.chanCatSom && ng.choCatDung && ng.catCuoiLaNhanBan,
+        'hàm cắt chi TỪ CHỐI cắt nhân bản và bão khi còn nhóm rẻ hơn chưa đụng tới — thứ tự nằm trong lời thì lúc túng người ta vẫn cắt theo cảm giác, nên nó phải là một hàm',
+        'cắt đầu ' + ng.catDau + ' · cuối ' + (ng.catCuoi || {}).ma);
+      bao(ng.soChuaDien === 6 && ng.chuaDienDuCot && ng.khongDoanGiaiDoan && ng.doanDuocKhiCoSo,
+        'sáu ô tiền CHỜ CHỦ HỆ được khai thẳng kèm lý do, và hàm KHÔNG đoán giai đoạn tự chủ khi chưa có con số — đoán ra giai đoạn B rồi rút tài trợ theo giai đoạn B là cách hết tiền',
+        ng.soChuaDien + ' ô chờ chủ hệ');
+      bao(!ng.soiGio.length && ng.gioLop === 35,
+        'mười hai buổi cộng đúng bốn mươi giờ, khớp con số đã ép ở bảng cấp — bản gốc cộng ra bốn mươi ba, và tôi cắt ở ba buổi NHẸ nhất chứ không cắt hai buổi cuối',
+        ng.soiGio.join(' ') || ng.gioLop + ' giờ lớp + 5 giờ thi');
+      bao(!ng.soiVai.length && !ng.soiBuoi.length && ng.coTuyetDoi,
+        'hai mươi ca thi vai đủ bốn nhóm năm ca, buổi nào cũng có bài LUYỆN, và có tiêu chí tuyệt đối đứng trên năm tiêu chí kia',
+        ng.soiVai.concat(ng.soiBuoi).join(' ') || '20 ca · 12 buổi đủ trụ');
+      bao(!ng.ngonTu.length && ng.cotTruotCoTuCam && ng.quetBatDuoc,
+        'câu ĐẠT trong giáo trình không dùng từ cấm, cột TRƯỢT thật sự chứa từ cấm mà máy không đụng vào, và quét bắt được ngay khi nhét từ cấm vào cột đạt — ba chỗ dùng chung MỘT máy quét, không phải ba máy',
+        ng.ngonTu.join(' ') || 'sạch');
+      bao(!ng.soiBao.length && ng.soBao === 12 && ng.soChong === 3 && ng.soQuai === 10,
+        'mười hai cơn bão, cơn nào cũng ÉP ĐƯỢC vào một cơ chế có thật trong hệ — bão trỏ vào chỗ trống là cảnh báo văn chương: nghe đáng sợ mà không thử được gì',
+        ng.soiBao.join(' ') || '12 bão · 3 cặp chồng · 10 hồ sơ quái');
+      bao(ng.soDo === 5 && !ng.doThieu.length && ng.chuaChay.length === 4 && ng.soChuaDung === 6 && ng.chuaDuCot,
+        'năm phép đo đủ ngưỡng đậu và gãy, và hệ KHAI THẲNG bốn phép còn chờ bộ chạy cùng sáu thứ chưa dựng — bảng chỉ in phần đã dựng thì đọc xong tưởng hệ đã thử hết',
+        ng.doThieu.join(' ') || 'chờ bộ chạy: ' + ng.chuaChay.join(' '));
+      bao(ng.d2Dat && ng.d2So === 3 && ng.d2BatDuoc,
+        'phép đo PHẨM GIÁ chạy THẬT từ hôm nay: ba dấu hiệu đều bị luật hệ chặn, và phép đo đỏ ngay khi gỡ một cờ chặn — đọc cờ máy đọc được chứ không dò chữ trong câu văn, vì một phép đo câm về phẩm giá là thứ nguy hiểm nhất trong cả bộ kiểm',
+        ng.d2Ho.join(' ') || '3/3 dấu hiệu bị chặn');
+      bao(!ng.nguongChet.length && ng.s5DuoiTran,
+        'không ngưỡng khủng hoảng nào nằm TRÊN trần đã ép — ngưỡng trên trần là ngưỡng CHẾT: nó không bao giờ chạm tới, nên nó chỉ làm người ta yên tâm mà không bảo vệ ai. Chính lỗi này đã có thật ở bản trước',
+        ng.nguongChet.join(' ') || 'mọi ngưỡng dưới trần ' + ng.tran);
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();
