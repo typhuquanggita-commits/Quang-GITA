@@ -1107,3 +1107,53 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
    theo khung của mình, và chặn thêm chỉ làm chữ lệch khỏi tâm ô. */
 #main .tbl p,#main .tbl li,#main .stat p,#main .ka-giua p,
 #main [style*="text-align:center"] p{max-width:none}
+
+/* ═══════════════════════════════════════════════════════════════
+   BẬC THANG HÀNH ĐỘNG  ·  v9.29
+   Mỗi bậc một biểu tượng thành công. Ba trạng thái phân biệt được cả
+   khi in đen trắng lẫn khi người xem không phân biệt được màu: đá đặc
+   có dấu tích · đá viền đậm · đá viền đứt và mờ.
+   ═══════════════════════════════════════════════════════════════ */
+.bt{list-style:none;margin:18px 0;padding:0;display:flex;flex-direction:column;gap:0}
+.bt-b{display:flex;gap:14px;padding:14px 0;position:relative}
+/* Vạch nối bậc dưới lên bậc trên — cái thang phải TRÔNG như nối liền,
+   nếu không nó chỉ là năm thẻ xếp chồng. */
+/* Vạch bắt đầu DƯỚI cả viên đá lẫn số bậc (32 + 5 + 13 + 6 = 56px).
+   Đặt 46px thì nó chạy xuyên qua con số — chỉ lộ ra khi nhìn màn. */
+.bt-b:not(:last-child) .bt-cot:after{content:'';position:absolute;left:50%;
+  top:56px;bottom:-14px;width:2px;transform:translateX(-50%);
+  background:var(--bt-c);opacity:.28}
+.bt-cot{position:relative;flex:none;width:44px;display:flex;flex-direction:column;
+  align-items:center;gap:5px}
+.bt-da{width:32px;height:32px;display:block}
+.bt-so{font-size:10.5px;font-weight:800;letter-spacing:.06em;color:var(--bt-c);opacity:.85;
+  position:relative;z-index:1}
+.bt-ruot{flex:1;min-width:0;padding-top:3px}
+.bt-dinh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.bt-ten{font-size:16px;letter-spacing:.04em;color:var(--bt-c)}
+.bt-tt{font-size:10.5px;letter-spacing:.12em;color:var(--ink-4)}
+.bt-phu{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+/* Việc của bậc đang đứng viết TO hơn mọi chữ khác trên thang — nó là
+   thứ duy nhất người đọc cần làm hôm nay. */
+.bt-viec{font-size:16px;line-height:1.75;color:var(--ink);margin-top:8px;max-width:56ch}
+.bt-kho{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:6px;max-width:56ch}
+
+.bt-xong .bt-tt{color:var(--ok)}
+.bt-dangO{background:linear-gradient(90deg,color-mix(in srgb,var(--bt-c) 8%,transparent),transparent 70%);
+  border-radius:14px;padding-left:10px;margin-left:-10px}
+.bt-dangO .bt-tt{color:var(--bt-c);font-weight:800}
+/* Bậc chưa mở lặng hẳn đi: nó là lời hứa, không phải việc phải làm. */
+.bt-chuaMo{opacity:.5}
+.bt-chuaMo .bt-ten{color:var(--ink-3)}
+.bt-chuaMo .bt-cot:after{background:var(--line-2)}
+.bt-y{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:10px;max-width:62ch}
+
+@media (max-width:640px){
+  .bt-cot{width:36px}
+  .bt-da{width:28px;height:28px}
+  /* 14,5 chứ không 15: 15 là một bậc thứ mười, và phép kiểm mục 7 bắt
+     ngay — nó vừa bắt đúng chính tôi ở bản này. Một thang chín bậc mà
+     ai cũng thêm được một bậc nữa thì nó không còn là thang. */
+  .bt-viec{font-size:14.5px}
+  .bt-b:not(:last-child) .bt-cot:after{top:50px}
+}

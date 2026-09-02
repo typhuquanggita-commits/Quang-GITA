@@ -270,6 +270,31 @@ G.VIEWS = G.VIEWS || {};
 
     o += G.kaKhung ? G.kaKhung('hanh-trinh-5-tang', 'dau') : '';
 
+    /* ── BẬC THANG HÀNH ĐỘNG — dẫn màn bằng thứ ĐƠN GIẢN NHẤT ──
+       Màn này vốn mở bằng bốn dấu hiệu của đích, rồi năm thẻ tầng, rồi
+       bảy chặng, rồi bảng chỗ nối, rồi bảy chỗ lệch. Đúng hết, nhưng
+       người mở lần đầu phải đọc hết mới biết mình đang ở đâu.
+
+       Nay dẫn bằng cái thang: năm bậc, mỗi bậc một biểu tượng thành
+       công, và ĐÚNG MỘT bậc hiện việc phải làm. Phần sâu vẫn nguyên,
+       chỉ nằm sau.
+
+       Số tối đã ghi lấy từ sổ của nhà mình. Chưa có sổ thì nói CHƯA ĐO
+       ĐƯỢC và chỉ vào việc duy nhất lúc ấy — ghi tối nay — chứ không
+       đoán một bậc rồi vẽ nó ra như thật. */
+    if (G.btThangNha) {
+      var soToi = (G.S && G.S.soToiDaGhi != null) ? G.S.soToiDaGhi : null;
+      var th = G.btThangNha(soToi);
+      if (th) {
+        o += U.sec('Nhà mình đang ở bậc nào',
+          'Năm bậc, mỗi bậc một biểu tượng thành công. Bậc đang đứng hiện đúng một việc — ' +
+          'bậc chưa tới thì chưa hiện, để hôm nay chỉ có một việc phải làm.');
+        o += G.veBacThang(th.bac, { y: th.chuaDo
+          ? th.y + ' Thang dưới đây vẽ theo bậc một, và nó sẽ tự đổi khi sổ có số.'
+          : '' });
+      }
+    }
+
     /* ── Đích: không phải bậc cuối ── */
     o += '<div class="card mb" style="border-color:#0B73503e">' +
       '<span class="tiny up" style="color:#0B7350">ĐÍCH KHÔNG PHẢI TẦNG CAO NHẤT</span>' +

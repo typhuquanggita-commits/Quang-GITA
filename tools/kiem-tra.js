@@ -7609,6 +7609,99 @@ const { chromium } = require(PW);
   }
 
 
+  console.log('\n64 · BẬC THANG HÀNH ĐỘNG — ĐÚNG MỘT BẬC HIỆN VIỆC PHẢI LÀM');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.btThangNha || !G.veBacThang) return { co: false };
+      const r = {}, th = G.btThangNha(null);
+      r.soBac = th.bac.length;
+      r.soiSach = G.btSoiMotViec(th.bac);
+      r.soDangO = th.bac.filter(x => x.trangThai === 'dangO').length;
+      /* Bậc chưa tới KHÔNG được mang việc. Đây chính là chỗ một màn
+         "từng bước" âm thầm biến thành danh sách năm việc. */
+      r.chuaMoKhongViec = th.bac.filter(x => x.trangThai !== 'dangO')
+        .every(x => !x.viec);
+      /* Biểu tượng lấy THẲNG từ HT_TANG.daQuy, không từ bảng chép tay */
+      r.bieuTuongTheoKho = th.bac.every((x, i) => x.bieuTuong === G.HT_TANG[i].daQuy);
+      const giuDQ = G.HT_TANG[2].daQuy; G.HT_TANG[2].daQuy = 'ZZQQ';
+      r.doiTheoKho = G.btThangNha(null).bac[2].bieuTuong === 'ZZQQ';
+      G.HT_TANG[2].daQuy = giuDQ;
+
+      /* ── Phá: hai bậc cùng đang đứng ── */
+      const b2 = G.btThangNha(null).bac;
+      b2[3].trangThai = 'dangO'; b2[3].viec = 'x';
+      r.batHaiBac = G.btSoiMotViec(b2).some(x => /cùng đang đứng/.test(x));
+      /* ── Phá: bậc chưa tới mà đã hiện việc ── */
+      const b3 = G.btThangNha(null).bac;
+      b3[4].viecHien = true;
+      r.batLoViec = G.btSoiMotViec(b3).some(x => /chưa tới mà đã hiện việc/.test(x));
+      /* ── Phá: mất biểu tượng thành công ── */
+      const b4 = G.btThangNha(null).bac;
+      delete b4[1].bieuTuong;
+      r.batMatBieuTuong = G.btSoiMotViec(b4).some(x => /không có biểu tượng/.test(x));
+      /* ── Phá: đang đứng mà không có việc ── */
+      const b5 = G.btThangNha(null).bac;
+      b5.forEach(x => { if (x.trangThai === 'dangO') x.viec = ''; });
+      r.batThieuViec = G.btSoiMotViec(b5).some(x => /đang đứng mà không có việc/.test(x));
+
+      /* ── Trên MÀN THẬT: việc của bậc đang đứng có, việc của bậc sau KHÔNG ── */
+      const man = G.VIEWS['hanh-trinh-5-tang']();
+      const dangO = th.bac.filter(x => x.trangThai === 'dangO')[0];
+      const sau = th.bac.filter(x => x.trangThai === 'chuaMo');
+      r.manCoViecDangO = !!dangO && man.indexOf(G.U.h(dangO.viec)) >= 0;
+      /* Thử thách của bậc chưa tới vẫn nằm ở phần SÂU bên dưới màn — đó
+         là đúng, vì phần sâu là bảng tra cứu. Cái phải vắng là trong
+         CHÍNH cái thang. Nên cắt lấy đoạn thang rồi soi trong đó. */
+      const i1 = man.indexOf('<ol class="bt">'), i2 = man.indexOf('</ol>', i1);
+      const thang = i1 >= 0 ? man.slice(i1, i2) : '';
+      r.thangCoRuot = thang.length > 200;
+      r.thangKhongLoViec = sau.every(x => {
+        const t = (G.HT_TANG.filter(y => y.daQuy === x.bieuTuong)[0] || {}).thuThach;
+        return !t || thang.indexOf(G.U.h(t)) < 0;
+      });
+      r.thangCoBieuTuong = th.bac.every(x => thang.indexOf(G.U.h(x.bieuTuong)) >= 0);
+      /* Ba trạng thái phải phân biệt được KHÔNG CẦN MÀU — người không
+         phân biệt được màu, và bản in đen trắng, đều phải đọc ra.
+
+         Dựng một thang MẪU có đủ ba trạng thái để đo. Đo trên thang
+         thật thì trượt: nhà chưa đi bậc nào nên không có bậc "đã xong",
+         và phép kiểm đòi thấy thứ chưa tồn tại — đỏ oan, không phải
+         mã hỏng. */
+      const mau3 = G.veBacThang([
+        { so: 1, c: '#0B6675', bieuTuong: 'A', trangThai: 'xong' },
+        { so: 2, c: '#B4720F', bieuTuong: 'B', trangThai: 'dangO', viec: 'v' },
+        { so: 3, c: '#0B7350', bieuTuong: 'C', trangThai: 'chuaMo' }
+      ]);
+      r.baDangKhacNhau = /stroke-dasharray/.test(mau3) &&      /* chưa mở */
+        mau3.indexOf('stroke="#fff"') >= 0 &&                  /* đã xong: dấu tích */
+        /class="bt-b bt-dangO"/.test(mau3) &&                  /* đang đứng */
+        mau3.indexOf('ĐÃ LẤY ĐƯỢC') >= 0 &&                    /* và có chữ, không chỉ có màu */
+        mau3.indexOf('CHƯA MỞ') >= 0;
+      return { co: true, ...r };
+    });
+
+    if (!ra.co) {
+      bao(false, 'bậc thang hành động nạp được', 'không thấy btThangNha');
+    } else {
+      bao(!ra.soiSach.length && ra.soBac === 5 && ra.soDangO === 1 && ra.chuaMoKhongViec,
+        'NĂM BẬC, VÀ ĐÚNG MỘT BẬC HIỆN VIỆC PHẢI LÀM. Bậc đã xong hiện BIỂU TƯỢNG lấy được; bậc chưa tới chỉ hiện tên biểu tượng và GIẤU việc. Đây là chỗ một màn "từng bước" âm thầm biến thành danh sách năm việc — luật "người mệt đọc một việc thì làm, đọc ba việc thì đóng máy" đã nằm trong kho từ bản 9.21 dưới dạng câu, nay nó thành hàm',
+        ra.soiSach.join(' ') || ra.soBac + ' bậc · 1 bậc đang đứng · 4 bậc giấu việc');
+      bao(ra.batHaiBac && ra.batLoViec && ra.batMatBieuTuong && ra.batThieuViec,
+        'phép soi bắt được cả bốn kiểu hỏng: hai bậc cùng đang đứng · bậc chưa tới mà lộ việc · bậc mất biểu tượng thành công · bậc đang đứng mà không có việc nào để làm',
+        '4/4 kiểu phá đều đỏ');
+      bao(ra.bieuTuongTheoKho && ra.doiTheoKho,
+        'BIỂU TƯỢNG THÀNH CÔNG lấy thẳng từ HT_TANG.daQuy — SỰ THẬT · NHỊP · AN TOÀN · TỰ CHỦ · BẢN LĨNH — và việc lấy từ HT_TANG.thuThach. Không kho mới, không bảng chép tay: cùng một luật ghi hai chỗ là hai bản sẽ có ngày lệch nhau, và lúc lệch thì không ai biết bản nào đúng. Đổi một chữ trong kho thì thang đổi theo ngay',
+        'đổi daQuy ở kho → thang đổi theo');
+      bao(ra.thangCoRuot && ra.manCoViecDangO && ra.thangKhongLoViec && ra.thangCoBieuTuong && ra.baDangKhacNhau,
+        'trên MÀN THẬT: cái thang in đủ năm biểu tượng, in việc của bậc đang đứng, và KHÔNG in thử thách của bốn bậc chưa tới. Ba trạng thái phân biệt được mà không cần màu — đá đặc có dấu tích, đá viền liền, đá viền đứt — nên bản in đen trắng và người không phân biệt được màu đều đọc ra',
+        'thang có ruột · việc đang đứng có · việc bậc sau vắng · 3 dạng khác nhau');
+    }
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

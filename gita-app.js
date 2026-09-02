@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.28',
+  version: '9.29',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -21563,6 +21563,31 @@ G.VIEWS = G.VIEWS || {};
 
     o += G.kaKhung ? G.kaKhung('hanh-trinh-5-tang', 'dau') : '';
 
+    /* ── BẬC THANG HÀNH ĐỘNG — dẫn màn bằng thứ ĐƠN GIẢN NHẤT ──
+       Màn này vốn mở bằng bốn dấu hiệu của đích, rồi năm thẻ tầng, rồi
+       bảy chặng, rồi bảng chỗ nối, rồi bảy chỗ lệch. Đúng hết, nhưng
+       người mở lần đầu phải đọc hết mới biết mình đang ở đâu.
+
+       Nay dẫn bằng cái thang: năm bậc, mỗi bậc một biểu tượng thành
+       công, và ĐÚNG MỘT bậc hiện việc phải làm. Phần sâu vẫn nguyên,
+       chỉ nằm sau.
+
+       Số tối đã ghi lấy từ sổ của nhà mình. Chưa có sổ thì nói CHƯA ĐO
+       ĐƯỢC và chỉ vào việc duy nhất lúc ấy — ghi tối nay — chứ không
+       đoán một bậc rồi vẽ nó ra như thật. */
+    if (G.btThangNha) {
+      var soToi = (G.S && G.S.soToiDaGhi != null) ? G.S.soToiDaGhi : null;
+      var th = G.btThangNha(soToi);
+      if (th) {
+        o += U.sec('Nhà mình đang ở bậc nào',
+          'Năm bậc, mỗi bậc một biểu tượng thành công. Bậc đang đứng hiện đúng một việc — ' +
+          'bậc chưa tới thì chưa hiện, để hôm nay chỉ có một việc phải làm.');
+        o += G.veBacThang(th.bac, { y: th.chuaDo
+          ? th.y + ' Thang dưới đây vẽ theo bậc một, và nó sẽ tự đổi khi sổ có số.'
+          : '' });
+      }
+    }
+
     /* ── Đích: không phải bậc cuối ── */
     o += '<div class="card mb" style="border-color:#0B73503e">' +
       '<span class="tiny up" style="color:#0B7350">ĐÍCH KHÔNG PHẢI TẦNG CAO NHẤT</span>' +
@@ -22094,6 +22119,113 @@ var G = window.G || {}; window.G = G;
           '" stroke-width="2" opacity="0.45" stroke-linecap="round"/>';
     });
     return svg(W, H, r, o.nhan || 'Phễu ' + n + ' tầng');
+  };
+
+  /* ═══════════════════════════════════════════════════════
+     BẬC THANG HÀNH ĐỘNG — MỖI BẬC MỘT BIỂU TƯỢNG THÀNH CÔNG
+     ═══════════════════════════════════════════════════════
+
+     Đây KHÔNG phải một cái thang nữa. Nó là cái MẶT của một máy đã có
+     từ bản 9.21 mà chưa màn nào dùng: htDuong() trả về nhà mình đang ở
+     bậc nào và ĐÚNG MỘT việc kế tiếp. Máy chạy được ba bản rồi, chỉ
+     thiếu chỗ để nhìn.
+
+     LUẬT ĐƠN GIẢN HOÁ: ĐÚNG MỘT BẬC HIỆN VIỆC PHẢI LÀM
+
+     Bậc đã xong hiện BIỂU TƯỢNG đã lấy được, không hiện lại việc.
+     Bậc đang đứng hiện việc — đúng một việc, viết to.
+     Bậc chưa mở chỉ hiện tên biểu tượng, mờ đi, KHÔNG hiện việc.
+
+     Vì sao bậc chưa mở phải giấu việc: đó chính là chỗ một màn "từng
+     bước" biến thành một danh sách năm việc. Luật này đã có trong kho
+     từ bản 9.21 dưới dạng câu — "người mệt đọc một việc thì làm, đọc
+     ba việc thì đóng máy" — nay nó thành hàm, và btSoiMotViec() đỏ
+     nếu có hai bậc cùng hiện việc.
+
+     Biểu tượng lấy thẳng từ HT_TANG.daQuy, việc lấy từ HT_TANG.thuThach.
+     Không kho mới, không bảng thứ hai: cùng một luật ghi hai chỗ là hai
+     bản sẽ có ngày lệch nhau. */
+
+  /* Viên đá — vẽ bằng nét, không bằng tệp. Có ba dạng theo trạng thái,
+     và ba dạng ấy phân biệt được cả khi in đen trắng lẫn khi người xem
+     không phân biệt được màu: đặc có dấu tích · viền đậm · viền đứt. */
+  function daQuy(c, tt) {
+    var d = 'M12 2 L21 9 L12 22 L3 9 Z M3 9 H21 M12 2 L8 9 L12 22 M12 2 L16 9 L12 22';
+    if (tt === 'xong')
+      return '<svg viewBox="0 0 24 24" class="bt-da" aria-hidden="true">' +
+        '<path d="M12 2 L21 9 L12 22 L3 9 Z" fill="' + c + '" opacity="0.92"/>' +
+        '<path d="M7.5 11.5 l3 3 l6 -6.5" fill="none" stroke="#fff" stroke-width="2.2" ' +
+        'stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    if (tt === 'dangO')
+      return '<svg viewBox="0 0 24 24" class="bt-da" aria-hidden="true">' +
+        '<path d="M12 2 L21 9 L12 22 L3 9 Z" fill="' + c + '" opacity="0.16"/>' +
+        '<path d="' + d + '" fill="none" stroke="' + c + '" stroke-width="1.6" ' +
+        'stroke-linejoin="round"/></svg>';
+    return '<svg viewBox="0 0 24 24" class="bt-da" aria-hidden="true">' +
+      '<path d="M12 2 L21 9 L12 22 L3 9 Z" fill="none" stroke="currentColor" ' +
+      'stroke-width="1.4" stroke-dasharray="3 3" opacity="0.55" stroke-linejoin="round"/></svg>';
+  }
+
+  var BT_NHAN = { xong: 'ĐÃ LẤY ĐƯỢC', dangO: 'ĐANG Ở ĐÂY', chuaMo: 'CHƯA MỞ' };
+
+  G.veBacThang = function (ds, o) {
+    ds = ds || []; o = o || {};
+    if (!ds.length) return '';
+    return '<ol class="bt">' + ds.map(function (x) {
+      var tt = x.trangThai || 'chuaMo', c = x.c || 'var(--gita)';
+      var hienViec = tt === 'dangO' && x.viec;
+      return '<li class="bt-b bt-' + tt + '"' +
+        (tt === 'dangO' ? ' aria-current="step"' : '') +
+        ' style="--bt-c:' + c + '">' +
+        '<div class="bt-cot">' + daQuy(c, tt) +
+          (x.so ? '<span class="bt-so">' + h(String(x.so)) + '</span>' : '') + '</div>' +
+        '<div class="bt-ruot">' +
+          '<div class="bt-dinh"><b class="bt-ten">' + h(x.bieuTuong || x.ten || '') + '</b>' +
+            '<span class="bt-tt">' + h(BT_NHAN[tt] || '') + '</span></div>' +
+          (x.ten && x.bieuTuong ? '<p class="bt-phu">' + h(x.ten) + '</p>' : '') +
+          /* Chỉ bậc đang đứng mới hiện việc. Bậc chưa mở mà hiện việc là
+             chỗ màn "từng bước" biến thành danh sách năm việc. */
+          (hienViec ? '<p class="bt-viec">' + h(x.viec) + '</p>' : '') +
+          (hienViec && x.kho ? '<p class="bt-kho">Chỗ khó nhất: ' + h(x.kho) + '</p>' : '') +
+        '</div></li>';
+    }).join('') + '</ol>' +
+      (o.y ? '<p class="bt-y">' + h(o.y) + '</p>' : '');
+  };
+
+  /* Đúng MỘT bậc được hiện việc. Hai bậc cùng hiện là thang đã thành
+     danh sách, và danh sách thì người mệt đóng máy. */
+  G.btSoiMotViec = function (ds) {
+    var loi = [], dangO = (ds || []).filter(function (x) { return x.trangThai === 'dangO'; });
+    if (dangO.length > 1) loi.push(dangO.length + ' bậc cùng đang đứng, phải đúng 1');
+    (ds || []).forEach(function (x) {
+      if (x.trangThai !== 'dangO' && x.viecHien) loi.push('bậc ' + x.so + ':chưa tới mà đã hiện việc');
+      if (x.trangThai === 'dangO' && !x.viec) loi.push('bậc ' + x.so + ':đang đứng mà không có việc');
+      if (!x.bieuTuong) loi.push('bậc ' + x.so + ':không có biểu tượng thành công');
+    });
+    return loi;
+  };
+
+  /* Dựng thang của MỘT nhà từ số tối đã ghi. Đọc thẳng HT_TANG và
+     htDuong() — không nhận vào một bảng chép tay nào. */
+  G.btThangNha = function (soToi) {
+    var tangs = G.HT_TANG || [];
+    if (!tangs.length) return null;
+    var d = typeof G.htDuong === 'function' ? G.htDuong(soToi) : null;
+    var dang = d && !d.chuaDo ? d.tang : null;
+    var i = -1;
+    tangs.forEach(function (t, k) { if (t.ma === dang) i = k; });
+    return {
+      chuaDo: !d || !!d.chuaDo,
+      y: d && d.chuaDo ? d.y : (d && d.y) || '',
+      bac: tangs.map(function (t, k) {
+        var tt = i < 0 ? (k === 0 ? 'dangO' : 'chuaMo')
+               : k < i ? 'xong' : k === i ? 'dangO' : 'chuaMo';
+        return { so: t.so, c: t.c, bieuTuong: t.daQuy, ten: t.ten || '',
+          trangThai: tt,
+          viec: tt === 'dangO' ? t.thuThach : '',
+          kho: tt === 'dangO' ? t.khoNhat : '' };
+      })
+    };
   };
 
   /* Bọc một hình kèm lời chú. Hình không có lời chú thì người xem tự
