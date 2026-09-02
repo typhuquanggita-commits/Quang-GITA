@@ -95,11 +95,41 @@ G.VIEWS = G.VIEWS || {};
     return ra;
   };
 
+  /* ═══ BỘ ĐỆM, VÀ VÌ SAO NÓ PHẢI KHOÁ THEO CHỮ ═══
+     Đo trên máy điện thoại phổ thông (CPU chậm sáu lần): hàm này mất
+     143 ms, và nó chạy LẠI TỪ ĐẦU mỗi lần dựng màn — trong khi chữ
+     trong sách không đổi giữa hai lần dựng.
+
+     Nhưng KHÔNG được đệm mù. Bộ kiểm phát hành cố tình kéo dài một câu,
+     nhét một từ khó vào, rồi đòi hàm này đỏ đúng chỗ; đệm mù thì nó trả
+     lại kết quả cũ và ba phép kiểm ấy thành phép kiểm câm — đúng loại
+     hỏng mà luật "một phép kiểm chưa từng đỏ thì chưa phải phép kiểm"
+     viết ra để chặn.
+
+     Nên khoá đệm bằng CHÍNH CHỮ ĐẦU VÀO. Chữ đổi một dấu phẩy là khoá
+     đổi, đệm bỏ đi, hàm chạy lại. Ghép chuỗi tốn một lượt quét; sáu
+     mươi lượt quét biểu thức tìm kiếm mới là chỗ tốn thật. */
+  var demDH = null, khoaDH = null;
+  /* Biểu thức tìm kiếm dựng một lần rồi giữ: dựng lại cùng một biểu
+     thức sáu mươi lần mỗi lần dựng màn là việc không ai được lợi. */
+  var reKho = {};
+  function reCua(kho) {
+    if (!reKho[kho])
+      reKho[kho] = new RegExp('(^|[^\\p{L}])' +
+        kho.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^\\p{L}])', 'giu');
+    return reKho[kho];
+  }
+
   G.sgSoiDeHieu = function () {
     var ng = G.DEHIEU_NGUONG;
     if (!ng) return { chuaDo: true, thieu: 'Chưa nạp được G.DEHIEU_NGUONG.' };
     var ds = G.sgChuSach();
     if (!ds.length) return { chuaDo: true, thieu: 'Chưa khai cột nào in vào sách.' };
+
+    var khoa = ds.length + '' + (G.DEHIEU_THAY || []).length +
+      '' + ng.cauTB + '' + ng.cauDaiNhat + '' + ng.tuKho10k +
+      '' + ds.map(function (c) { return c[1]; }).join('');
+    if (khoaDH === khoa && demDH) return demDH;
 
     var cauDai = [], tongTu = 0, soCau = 0, soKyTu = 0;
     ds.forEach(function (c) {
@@ -115,8 +145,7 @@ G.VIEWS = G.VIEWS || {};
        có ngày hai bảng lệch nhau, và lúc ấy chuẩn chữ có hai bản. */
     var tuKho = [];
     (G.DEHIEU_THAY || []).forEach(function (t) {
-      var re = new RegExp('(^|[^\\p{L}])' + t.kho.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') +
-        '($|[^\\p{L}])', 'giu');
+      var re = reCua(t.kho);
       ds.forEach(function (c) {
         var m = c[1].match(re);
         if (m) tuKho.push(c[0] + '→' + t.kho + (m.length > 1 ? '×' + m.length : ''));
@@ -125,11 +154,13 @@ G.VIEWS = G.VIEWS || {};
 
     var cauTB = soCau ? tongTu / soCau : 0;
     var mat10k = soKyTu ? (tuKho.length * 10000 / soKyTu) : 0;
-    return { chuaDo: false, soCau: soCau, soKyTu: soKyTu,
+    demDH = { chuaDo: false, soCau: soCau, soKyTu: soKyTu,
       cauTB: Math.round(cauTB * 10) / 10, nguongTB: ng.cauTB,
       cauDai: cauDai, nguongDai: ng.cauDaiNhat,
       tuKho: tuKho, tuKho10k: Math.round(mat10k * 100) / 100, nguongTuKho: ng.tuKho10k,
       dat: !cauDai.length && cauTB <= ng.cauTB && mat10k <= ng.tuKho10k };
+    khoaDH = khoa;
+    return demDH;
   };
 
   /* Từ cấm — chỉ quét cột BẢO LÀM GÌ. Dùng lại đúng máy quét của bức

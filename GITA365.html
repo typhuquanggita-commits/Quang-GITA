@@ -1689,7 +1689,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.27',
+  version: '9.28',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -10379,25 +10379,57 @@ G.VIEWS['tai-lieu-goc'] = function(){
           t.doan.length.toLocaleString('vi-VN') + ' đoạn</p>') +
       '</div>';
   }
-  if(t.bang.length) o += U.sec('BẢNG DỮ LIỆU', t.bang.length + ' bảng');
-  t.bang.forEach(function(b, i){
-    o += '<div class="tlg-b">'+
-      '<div class="tlg-b-h">'+ic('chart','w-3 h-3')+
-        '<b>'+h(b.muc || ('Bảng ' + (i+1)))+'</b>'+
-        '<span>'+b.hang.length+' dòng</span></div>'+
-      U.tbl(b.cot, b.hang.map(function(r){
-        return r.map(function(o2){ return '<span class="sm">'+h(o2)+'</span>'; });
-      }))+
-    '</div>';
-  });
+  /* ── Bảng cũng mở dần, y như đoạn văn ──
+     Đoạn văn đã mở theo lô 80 từ bản trước; BẢNG thì bị bỏ sót và dựng
+     hết một lượt. Đo trên máy điện thoại phổ thông (CPU chậm sáu lần):
+
+       TG-05  44 bảng · 862 hàng · 5.257 ô  →  12.384 nút DOM  →  3.136 ms
+
+     Ba giây đứng hình sau một cú bấm. Máy làm việc thì nhanh nên chỗ
+     này không bao giờ lộ ra — nó chỉ lộ khi đo trên máy yếu.
+
+     Không bảng nào tự nó to (bảng lớn nhất 30 hàng); cái nhiều là SỐ
+     BẢNG. Nên chặn theo bảng, không chặn theo hàng — cắt giữa một bảng
+     thì người đọc mất mạch, còn cắt giữa hai bảng thì không. */
+  if(t.bang.length){
+    var soBang = G.S.tlgBang || 8;
+    var hetBang = soBang >= t.bang.length;
+    o += U.sec('BẢNG DỮ LIỆU', t.bang.length + ' bảng · ' +
+      t.bang.reduce(function(a,b){ return a + b.hang.length; }, 0) + ' dòng');
+    t.bang.slice(0, soBang).forEach(function(b, i){
+      o += '<div class="tlg-b">'+
+        '<div class="tlg-b-h">'+ic('chart','w-3 h-3')+
+          '<b>'+h(b.muc || ('Bảng ' + (i+1)))+'</b>'+
+          '<span>'+b.hang.length+' dòng</span></div>'+
+        /* Mỗi ô trước đây bọc thêm <span class="sm">. Nhưng .tbl đã là
+           14,5px và .sm cũng 14,5px — cái span không đổi gì trên màn,
+           chỉ nhân đôi số nút. Bỏ đi là bớt một nửa số nút của phần ô.
+           U.tbl KHÔNG thoát ô, nên h() phải giữ. */
+        U.tbl(b.cot, b.hang.map(function(r){
+          return r.map(function(o2){ return h(o2); });
+        }))+
+      '</div>';
+    });
+    o += '<div class="center mt2">'+
+      (hetBang
+        ? '<p class="tiny muted">Đã hết ' + t.bang.length + ' bảng của bộ này.</p>'
+        : '<button class="btn" data-tlgbang="1">Xem tiếp 8 bảng</button>' +
+          '<p class="tiny muted mt">Đang xem ' + soBang + ' / ' + t.bang.length + ' bảng</p>') +
+      '</div>';
+  }
   return o;
 };
 
 document.addEventListener('click', function(e){
   var a = e.target.closest && e.target.closest('[data-tlg]');
-  if(a){ G.S.tlgChon = a.getAttribute('data-tlg'); G.S.tlgDoan = 80; G.render(); }
+  /* Đổi bộ thì trả CẢ HAI mốc mở dần về đầu. Quên trả mốc bảng thì bộ
+     sau mở ra ở đúng chỗ bộ trước đang xem — và người đọc tưởng bộ mới
+     thiếu mất mấy bảng đầu. */
+  if(a){ G.S.tlgChon = a.getAttribute('data-tlg'); G.S.tlgDoan = 80; G.S.tlgBang = 8; G.render(); }
   var b2 = e.target.closest && e.target.closest('[data-tlgdoan]');
   if(b2){ G.S.tlgDoan = (G.S.tlgDoan || 80) + 80; G.render(); }
+  var b3 = e.target.closest && e.target.closest('[data-tlgbang]');
+  if(b3){ G.S.tlgBang = (G.S.tlgBang || 8) + 8; G.render(); }
 });
 })();
 
@@ -22187,11 +22219,41 @@ G.VIEWS = G.VIEWS || {};
     return ra;
   };
 
+  /* ═══ BỘ ĐỆM, VÀ VÌ SAO NÓ PHẢI KHOÁ THEO CHỮ ═══
+     Đo trên máy điện thoại phổ thông (CPU chậm sáu lần): hàm này mất
+     143 ms, và nó chạy LẠI TỪ ĐẦU mỗi lần dựng màn — trong khi chữ
+     trong sách không đổi giữa hai lần dựng.
+
+     Nhưng KHÔNG được đệm mù. Bộ kiểm phát hành cố tình kéo dài một câu,
+     nhét một từ khó vào, rồi đòi hàm này đỏ đúng chỗ; đệm mù thì nó trả
+     lại kết quả cũ và ba phép kiểm ấy thành phép kiểm câm — đúng loại
+     hỏng mà luật "một phép kiểm chưa từng đỏ thì chưa phải phép kiểm"
+     viết ra để chặn.
+
+     Nên khoá đệm bằng CHÍNH CHỮ ĐẦU VÀO. Chữ đổi một dấu phẩy là khoá
+     đổi, đệm bỏ đi, hàm chạy lại. Ghép chuỗi tốn một lượt quét; sáu
+     mươi lượt quét biểu thức tìm kiếm mới là chỗ tốn thật. */
+  var demDH = null, khoaDH = null;
+  /* Biểu thức tìm kiếm dựng một lần rồi giữ: dựng lại cùng một biểu
+     thức sáu mươi lần mỗi lần dựng màn là việc không ai được lợi. */
+  var reKho = {};
+  function reCua(kho) {
+    if (!reKho[kho])
+      reKho[kho] = new RegExp('(^|[^\\p{L}])' +
+        kho.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^\\p{L}])', 'giu');
+    return reKho[kho];
+  }
+
   G.sgSoiDeHieu = function () {
     var ng = G.DEHIEU_NGUONG;
     if (!ng) return { chuaDo: true, thieu: 'Chưa nạp được G.DEHIEU_NGUONG.' };
     var ds = G.sgChuSach();
     if (!ds.length) return { chuaDo: true, thieu: 'Chưa khai cột nào in vào sách.' };
+
+    var khoa = ds.length + '' + (G.DEHIEU_THAY || []).length +
+      '' + ng.cauTB + '' + ng.cauDaiNhat + '' + ng.tuKho10k +
+      '' + ds.map(function (c) { return c[1]; }).join('');
+    if (khoaDH === khoa && demDH) return demDH;
 
     var cauDai = [], tongTu = 0, soCau = 0, soKyTu = 0;
     ds.forEach(function (c) {
@@ -22207,8 +22269,7 @@ G.VIEWS = G.VIEWS || {};
        có ngày hai bảng lệch nhau, và lúc ấy chuẩn chữ có hai bản. */
     var tuKho = [];
     (G.DEHIEU_THAY || []).forEach(function (t) {
-      var re = new RegExp('(^|[^\\p{L}])' + t.kho.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') +
-        '($|[^\\p{L}])', 'giu');
+      var re = reCua(t.kho);
       ds.forEach(function (c) {
         var m = c[1].match(re);
         if (m) tuKho.push(c[0] + '→' + t.kho + (m.length > 1 ? '×' + m.length : ''));
@@ -22217,11 +22278,13 @@ G.VIEWS = G.VIEWS || {};
 
     var cauTB = soCau ? tongTu / soCau : 0;
     var mat10k = soKyTu ? (tuKho.length * 10000 / soKyTu) : 0;
-    return { chuaDo: false, soCau: soCau, soKyTu: soKyTu,
+    demDH = { chuaDo: false, soCau: soCau, soKyTu: soKyTu,
       cauTB: Math.round(cauTB * 10) / 10, nguongTB: ng.cauTB,
       cauDai: cauDai, nguongDai: ng.cauDaiNhat,
       tuKho: tuKho, tuKho10k: Math.round(mat10k * 100) / 100, nguongTuKho: ng.tuKho10k,
       dat: !cauDai.length && cauTB <= ng.cauTB && mat10k <= ng.tuKho10k };
+    khoaDH = khoa;
+    return demDH;
   };
 
   /* Từ cấm — chỉ quét cột BẢO LÀM GÌ. Dùng lại đúng máy quét của bức

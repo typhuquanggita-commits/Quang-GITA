@@ -730,25 +730,57 @@ G.VIEWS['tai-lieu-goc'] = function(){
           t.doan.length.toLocaleString('vi-VN') + ' đoạn</p>') +
       '</div>';
   }
-  if(t.bang.length) o += U.sec('BẢNG DỮ LIỆU', t.bang.length + ' bảng');
-  t.bang.forEach(function(b, i){
-    o += '<div class="tlg-b">'+
-      '<div class="tlg-b-h">'+ic('chart','w-3 h-3')+
-        '<b>'+h(b.muc || ('Bảng ' + (i+1)))+'</b>'+
-        '<span>'+b.hang.length+' dòng</span></div>'+
-      U.tbl(b.cot, b.hang.map(function(r){
-        return r.map(function(o2){ return '<span class="sm">'+h(o2)+'</span>'; });
-      }))+
-    '</div>';
-  });
+  /* ── Bảng cũng mở dần, y như đoạn văn ──
+     Đoạn văn đã mở theo lô 80 từ bản trước; BẢNG thì bị bỏ sót và dựng
+     hết một lượt. Đo trên máy điện thoại phổ thông (CPU chậm sáu lần):
+
+       TG-05  44 bảng · 862 hàng · 5.257 ô  →  12.384 nút DOM  →  3.136 ms
+
+     Ba giây đứng hình sau một cú bấm. Máy làm việc thì nhanh nên chỗ
+     này không bao giờ lộ ra — nó chỉ lộ khi đo trên máy yếu.
+
+     Không bảng nào tự nó to (bảng lớn nhất 30 hàng); cái nhiều là SỐ
+     BẢNG. Nên chặn theo bảng, không chặn theo hàng — cắt giữa một bảng
+     thì người đọc mất mạch, còn cắt giữa hai bảng thì không. */
+  if(t.bang.length){
+    var soBang = G.S.tlgBang || 8;
+    var hetBang = soBang >= t.bang.length;
+    o += U.sec('BẢNG DỮ LIỆU', t.bang.length + ' bảng · ' +
+      t.bang.reduce(function(a,b){ return a + b.hang.length; }, 0) + ' dòng');
+    t.bang.slice(0, soBang).forEach(function(b, i){
+      o += '<div class="tlg-b">'+
+        '<div class="tlg-b-h">'+ic('chart','w-3 h-3')+
+          '<b>'+h(b.muc || ('Bảng ' + (i+1)))+'</b>'+
+          '<span>'+b.hang.length+' dòng</span></div>'+
+        /* Mỗi ô trước đây bọc thêm <span class="sm">. Nhưng .tbl đã là
+           14,5px và .sm cũng 14,5px — cái span không đổi gì trên màn,
+           chỉ nhân đôi số nút. Bỏ đi là bớt một nửa số nút của phần ô.
+           U.tbl KHÔNG thoát ô, nên h() phải giữ. */
+        U.tbl(b.cot, b.hang.map(function(r){
+          return r.map(function(o2){ return h(o2); });
+        }))+
+      '</div>';
+    });
+    o += '<div class="center mt2">'+
+      (hetBang
+        ? '<p class="tiny muted">Đã hết ' + t.bang.length + ' bảng của bộ này.</p>'
+        : '<button class="btn" data-tlgbang="1">Xem tiếp 8 bảng</button>' +
+          '<p class="tiny muted mt">Đang xem ' + soBang + ' / ' + t.bang.length + ' bảng</p>') +
+      '</div>';
+  }
   return o;
 };
 
 document.addEventListener('click', function(e){
   var a = e.target.closest && e.target.closest('[data-tlg]');
-  if(a){ G.S.tlgChon = a.getAttribute('data-tlg'); G.S.tlgDoan = 80; G.render(); }
+  /* Đổi bộ thì trả CẢ HAI mốc mở dần về đầu. Quên trả mốc bảng thì bộ
+     sau mở ra ở đúng chỗ bộ trước đang xem — và người đọc tưởng bộ mới
+     thiếu mất mấy bảng đầu. */
+  if(a){ G.S.tlgChon = a.getAttribute('data-tlg'); G.S.tlgDoan = 80; G.S.tlgBang = 8; G.render(); }
   var b2 = e.target.closest && e.target.closest('[data-tlgdoan]');
   if(b2){ G.S.tlgDoan = (G.S.tlgDoan || 80) + 80; G.render(); }
+  var b3 = e.target.closest && e.target.closest('[data-tlgbang]');
+  if(b3){ G.S.tlgBang = (G.S.tlgBang || 8) + 8; G.render(); }
 });
 })();
 

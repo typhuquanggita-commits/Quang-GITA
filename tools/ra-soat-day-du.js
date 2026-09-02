@@ -79,7 +79,7 @@ const NGAN = 700;
       />\s*(đang cập nhật|sắp có|sắp ra mắt|chưa có nội dung|nội dung đang|đang xây dựng)\s*</i,
       />\s*(undefined|null|NaN|\[object Object\])\s*</
     ];
-    const ra = { ngan: [], tam: [], oRong: [], loi: [], thoat2: [] };
+    const ra = { ngan: [], tam: [], oRong: [], loi: [], thoat2: [], nang: [] };
     const daXet = {};
     /* Hộp để ĐỌC RA CHỮ người dùng thật sự nhìn thấy. Phải đo trên chữ
        chứ không đo trên mã: &quot; trong mã là cách thoát ĐÚNG, chỉ khi
@@ -116,6 +116,19 @@ const NGAN = 700;
            làm hỏng gì, không sinh lỗi trang, nên nó sống được rất lâu —
            bản 9.24 tìm ra bốn màn đang mắc, màn cũ nhất từ bản 9.19. */
         hop.innerHTML = html;
+        /* CÂN NẶNG MÀN. Hộp này đã dựng sẵn để đọc chữ — đếm nút luôn ở
+           đây, không tốn thêm lượt nào.
+
+           Đo trên máy điện thoại phổ thông (CPU chậm sáu lần) ở bản
+           9.27: tai-lieu-goc dựng 12.384 nút và mất 3.136 ms. Ba giây
+           đứng hình sau một cú bấm. Máy làm việc nhanh nên chỗ này
+           không bao giờ lộ ra — nó chỉ lộ khi đo trên máy yếu, và
+           không ai đo trên máy yếu trừ khi có phép kiểm bắt phải đo. */
+        if (!daXet['w' + v]) {
+          daXet['w' + v] = 1;
+          const nut = hop.querySelectorAll('*').length;
+          if (nut > 0) ra.nang.push({ v: v, nut: nut });
+        }
         const chu = hop.innerText || hop.textContent || '';
         const t2 = chu.match(/&(?:quot|amp|lt|gt|#39|nbsp);/g);
         if (t2 && !daXet['e' + v]) {
@@ -154,6 +167,24 @@ const NGAN = 700;
     quet.ngan.slice(0, 5).join(' | '));
   bao(!quet.tam.length, 'không còn chữ tạm nào trên giao diện', quet.tam.slice(0, 5).join(' | '));
   bao(!quet.oRong.length, 'không màn nào có nhiều ô rỗng', quet.oRong.slice(0, 5).join(' | '));
+  /* Ngưỡng 5.000 nút. Không phải con số thiêng — nó là chỗ mà trên máy
+     yếu một màn bắt đầu mất hơn một giây để bày xong, và trên một giây
+     thì người dùng nghĩ máy treo chứ không nghĩ màn đang tải.
+
+     kiem-theo-vai được tha, và tha có lý do ghi thẳng ra: nó là MA TRẬN
+     157 màn × 15 vai, mà một ma trận chỉ dùng được khi thấy hết. Cắt nó
+     ra từng trang là giữ được con số mà làm hỏng công dụng. Nó cũng chỉ
+     hai vai quản trị mở, gần như luôn trên máy bàn. */
+  const THA_NANG = { 'kiem-theo-vai':
+    'ma trận 157 màn × 15 vai — chỉ dùng được khi thấy hết, và chỉ quản trị mở' };
+  const qua = (quet.nang || []).filter(x => x.nut > 5000 && !THA_NANG[x.v])
+    .sort((a, b) => b.nut - a.nut);
+  const nangNhat = (quet.nang || []).slice().sort((a, b) => b.nut - a.nut).slice(0, 3);
+  bao(!qua.length,
+    'không màn nào dựng quá 5.000 nút DOM. Bản 9.27 có tai-lieu-goc dựng 12.384 nút và mất 3.136 ms trên máy điện thoại phổ thông — ba giây đứng hình sau một cú bấm. Đoạn văn ở màn ấy đã mở dần theo lô từ bản trước, nhưng BẢNG thì bị bỏ sót và dựng hết một lượt; mỗi ô lại bọc thêm một <span> không đổi gì trên màn. Máy làm việc nhanh nên chỗ này không bao giờ lộ ra — nó chỉ lộ khi đo trên máy yếu',
+    qua.length ? 'quá nặng: ' + qua.map(x => x.v + ' ' + x.nut.toLocaleString('vi-VN')).join(' · ')
+      : 'nặng nhất: ' + nangNhat.map(x => x.v + ' ' + x.nut.toLocaleString('vi-VN')).join(' · ') +
+        ' · tha 1 màn có lý do');
   bao(!quet.thoat2.length,
     'không chữ nào bị thoát hai lần — U.sec() và U.quote() TỰ gọi U.h() trên tham số, nên truyền h(...) vào là thoát lần thứ hai và người đọc thấy &quot; giữa câu tiếng Việt. Lỗi này không sinh lỗi trang nên nó sống rất lâu: bản 9.24 tìm ra bốn màn đang mắc, chỗ cũ nhất từ 9.19, và gỡ 77 chỗ h() thừa trong 15 tệp',
     quet.thoat2.slice(0, 5).join(' | '));
