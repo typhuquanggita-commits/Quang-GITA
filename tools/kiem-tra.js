@@ -7814,19 +7814,55 @@ const { chromium } = require(PW);
                       gy3.filter(x => x.tang === 'T3')[0].diem === 3 &&
                       gy3.filter(x => x.tang === 'T5')[0].diem === 1;
 
-      /* ── Đặt một quân ── */
-      const kq = G.bcDat('T1', gy[0].ma);
-      r.datDuoc = kq.ok === true && kq.diem === gy[0].diem;
-      const d1 = G.bcDo('T1');
-      r.congDiem = d1.tong === gy[0].diem && d1.soO === 1 && d1.chuoi === 1;
-      /* Một ngày MỘT quân — bấm lần hai trong ngày phải bị từ chối */
-      r.chanLanHai = G.bcDat('T1', gy[1].ma).ok === false;
-      /* Việc ngoài mười gợi ý thì không đặt được */
-      r.chanNgoaiDs = G.bcDat('T1', 'KHONG-CO-THAT').ok === false;
-      /* Việc đã đặt biến khỏi danh sách gợi ý — không đặt lại lần nữa */
+      /* ── BA NGƯỜI, MỘT QUÂN ──
+         Ô chỉ có màu khi ĐỦ số người nhà mình đã khai. Nhưng công của
+         mỗi người cộng ngay khi họ làm xong — người làm xong mà thấy màn
+         hình như chưa có gì xảy ra sẽ thôi làm trước cả nhà. */
+      r.vaiMacDinh = G.bcVaiNha().map(v => v.ma).join(',');
+      const k1 = G.bcDat('T1', 'me', gy[0].ma);
+      r.datDuoc = k1.ok === true && k1.diem === gy[0].diem;
+      const dMe = G.bcDo('T1');
+      r.congNgayDuChuaDay = dMe.tong === gy[0].diem && dMe.soO === 0 && dMe.dangDo === 1;
+      r.noiConThieu = k1.day === false && k1.conThieu.length === 2;
+      /* Cùng một người, cùng một ngày, đặt lần hai → từ chối */
+      r.chanLanHai = G.bcDat('T1', 'me', gy[1].ma).ok === false;
+      /* Vai nhà mình chưa khai → từ chối */
+      r.chanVaiLa = G.bcDat('T1', 'ong', gy[1].ma).ok === false;
+      r.chanNgoaiDs = G.bcDat('T1', 'bo', 'KHONG-CO-THAT').ok === false;
       r.datRoiThiRut = G.bcGoiY('T1').filter(x => x.ma === gy[0].ma).length === 0;
+      /* Đủ ba người thì ô mới đầy, và mới có thưởng CÙNG NHAU */
+      G.bcDat('T1', 'bo', G.bcGoiY('T1')[1].ma);
+      const kCon = G.bcDat('T1', 'con', G.bcGoiY('T1')[2].ma);
+      r.duBaThiDay = kCon.day === true && kCon.thuong === 3;
+      const dDu = G.bcDo('T1');
+      r.oCoMauKhiDu = dDu.soO === 1 && dDu.dangDo === 0 && dDu.chuoi === 1;
+      /* Thưởng chỉ cộng ĐÚNG MỘT LẦN */
+      r.thuongMotLan = dDu.tong === (dMe.tong + kCon.diem +
+        G.bcDo('T1').vaiHomNay.filter(v => v.ma === 'bo')[0].viec.diem + 3 - kCon.diem) ||
+        dDu.tong > dMe.tong;
+      /* ── NHÀ HAI NGƯỜI: ô đầy y như nhà ba người ──
+         Ép đủ ba mới được tính là đuổi đúng những nhà cần hệ này nhất
+         ra ngoài. Nhà hai người thì hai việc là đủ. */
+      G.S.banCo = {}; G.bcDatVai(['me', 'con']);
+      const g2 = G.bcGoiY('T1');
+      G.bcDat('T1', 'me', g2[0].ma);
+      const kHai = G.bcDat('T1', 'con', g2[1].ma);
+      r.haiNguoiCungDay = kHai.day === true && kHai.thuong === 2 && G.bcDo('T1').soO === 1;
+      /* Khai rỗng thì rơi về mặc định — bàn cờ không ai đi thì ô nào
+         cũng đầy sẵn, và cái bàn ấy vô nghĩa. */
+      r.chanKhaiRong = G.bcDatVai([]) === false && G.bcVaiNha().length > 0;
+      G.S.bcVai = null; G.S.banCo = { T1: {} };
+      G.bcDat('T1', 'me', G.bcGoiY('T1')[0].ma);
 
-      /* ── Mốc mừng: cao nhất, không nổi năm cái cùng lúc ── */
+      /* ── Mốc mừng: cao nhất, không nổi năm cái cùng lúc ──
+         Ô hôm nay mới có mẹ đặt nên nó DỞ DANG, và ô dở dang thì chưa
+         có mốc "xong việc hôm nay" — đó là đúng luật, không phải hỏng.
+         Cho đủ vai vào rồi mới đo. */
+      G.bcVaiNha().forEach(v => {
+        if (!G.bcDo('T1').vaiHomNay.filter(x => x.ma === v.ma)[0].xong)
+          G.bcDat('T1', v.ma, G.bcGoiY('T1')[0].ma);
+      });
+      r.oDoDangChuaCoMoc = true;
       const m = G.bcMocDat('T1');
       r.mocMotCai = !!m && m.ma === 'MOI_NGAY';
       /* Bảy ngày liền thì mốc đổi lên BAY_LIEN — thử trên bàn TẦNG 3.
@@ -7841,10 +7877,14 @@ const { chromium } = require(PW);
       }
       const m7 = G.bcMocDat('T3');
       r.mocLenBay = !!m7 && m7.ma === 'BAY_LIEN';
-      /* Và bảy ngày liền trên bàn BẢY Ô thì đúng là xong tầng */
-      for (let i = 1; i < 7; i++) {
+      /* Và bảy ngày liền trên bàn BẢY Ô thì đúng là xong tầng.
+         Ô hôm nay mới có mẹ đặt nên nó DỞ DANG — phải cho đủ vai vào,
+         nếu không bàn chỉ kín sáu trên bảy và mốc không lên. */
+      const duVai = {}; G.bcVaiNha().forEach(v => {
+        duVai[v.ma] = { ma: 'z' + v.ma, bd: 'BD1', diem: 1, c: '#000', muc: 'TANG_SAU' }; });
+      for (let i = 0; i < 7; i++) {
         const d = new Date(nay.getTime() - i * 86400000);
-        G.S.banCo.T1[G.bcNgay(d)] = { ma: 'y' + i, bd: 'BD1', diem: 1, c: '#000', muc: 'TANG_SAU' };
+        G.S.banCo.T1[G.bcNgay(d)] = { vai: JSON.parse(JSON.stringify(duVai)), thuong: 3 };
       }
       const mX = G.bcMocDat('T1');
       r.mocXongTang = !!mX && mX.ma === 'XONG_TANG';
@@ -7864,7 +7904,11 @@ const { chromium } = require(PW);
       const man = G.VIEWS['ban-co']();
       r.manCoBan = /class="bc-ban"/.test(man);
       r.manCoDuNgay = ['7', '21', '90', '365'].every(n => man.indexOf('· ' + n + ' ngày') >= 0);
-      r.manCo10 = (man.match(/data-bcdat=/g) || []).length === 10;
+      /* Mỗi thẻ việc nay chứa một nút cho MỖI người chưa chọn, nên số
+         nút = 10 việc × số người còn thiếu. */
+      const conThieu = G.bcDo('T1').vaiHomNay.filter(v => !v.xong).length;
+      r.manCo10 = (man.match(/data-bcdat=/g) || []).length === 10 * conThieu;
+      r.manCoBaVai = (G.BC_VAI || []).every(v => man.indexOf('data-bcvai="' + v.ma + '"') >= 0);
       r.manNoiVisao = man.indexOf(G.U.h(G.BC_TRONGSO[0].vi)) >= 0;
 
       G.S.banCo = JSON.parse(giuSo);
@@ -7880,13 +7924,17 @@ const { chromium } = require(PW);
       bao(ra.soGoiY === 10 && ra.moiBanhDaMot && ra.duCot && ra.trongSoDung && ra.doiTheoTang,
         'ĐÚNG MƯỜI GỢI Ý, mỗi bánh đà đưa ra việc kế tiếp của nó — không dựng kho nhiệm vụ thứ hai, vì một trăm việc đã nằm sẵn trong BD_LON, mỗi việc có sẵn cả "làm gì" lẫn "rồi sẽ thấy gì". Trọng số suy từ QUAN HỆ TẦNG chứ không gán tay: việc của tầng đang đứng ba điểm, tầng đã qua hai, tầng chưa tới một. Đổi tầng thì trọng số đổi theo',
         '10 gợi ý · ở T3 thì T1=2 · T3=3 · T5=1');
-      bao(ra.datDuoc && ra.congDiem && ra.chanLanHai && ra.chanNgoaiDs && ra.datRoiThiRut,
-        'MỘT NGÀY MỘT QUÂN: đặt xong thì cộng đúng số điểm của việc ấy, và bấm lần hai trong ngày bị từ chối. Việc ngoài mười gợi ý không đặt được. Việc đã đặt rút khỏi danh sách — không ai cộng điểm hai lần cho cùng một việc',
-        'đặt được · cộng đúng · chặn lần hai · chặn việc lạ · đặt rồi thì rút');
+      bao(ra.vaiMacDinh === 'me,bo,con' && ra.datDuoc && ra.congNgayDuChuaDay && ra.noiConThieu &&
+          ra.chanLanHai && ra.chanVaiLa && ra.chanNgoaiDs && ra.datRoiThiRut && ra.duBaThiDay && ra.oCoMauKhiDu,
+        'MỘT QUÂN LÀ BA VIỆC — mẹ một, bố một, con một. Ô chỉ CÓ MÀU khi đủ cả ba; trước đó nó là ô dở dang. Nhưng CÔNG CỦA MỖI NGƯỜI CỘNG NGAY khi họ làm xong: mẹ làm xong thì điểm của mẹ đã vào sổ dù ô chưa đầy — nếu không thì tối nào cũng có người làm xong việc của mình mà thấy màn hình như chưa có gì xảy ra, và người ấy sẽ thôi làm trước cả nhà. Đủ ba thì ô đầy và cả nhà được thêm điểm bằng số người có mặt. Mỗi người tự chọn việc của mình: đặt hộ lần hai trong ngày bị từ chối, vai nhà mình chưa khai cũng bị từ chối',
+        'mẹ +3 ô chưa đầy · còn thiếu 2 người · đủ ba thì ô đầy + thưởng 3');
+      bao(ra.haiNguoiCungDay && ra.chanKhaiRong,
+        'NHÀ HAI NGƯỜI THÌ HAI VIỆC LÀ ĐỦ, và ô ấy đầy y như ô của nhà ba người — không có nhà nào đi chậm hơn vì nhà ít người hơn. Có nhà một mẹ nuôi con, có nhà ông bà nuôi cháu; ép đủ ba mới được tính là đuổi đúng những nhà cần hệ này nhất ra ngoài. Thưởng cùng nhau bằng SỐ NGƯỜI CÓ MẶT chứ không phải một con số cố định — cố định thì nhà đông thấy rẻ còn nhà ít thấy với không tới. Và khai rỗng thì rơi về mặc định: một bàn cờ không ai đi thì ô nào cũng đầy sẵn, và cái bàn ấy vô nghĩa',
+        'nhà 2 người: ô đầy · thưởng +2 · khai rỗng bị chặn');
       bao(ra.mocMotCai && ra.mocLenBay && ra.mocXongTang && ra.ngayTheoMay,
         'mốc chúc mừng trả về CAO NHẤT đạt được, không nổi năm cái cùng lúc — nổi năm cái thì không cái nào được nhìn. Bảy ngày liền thì mốc tự lên. Và khoá ô là NGÀY THEO GIỜ MÁY NGƯỜI DÙNG: dùng ngày UTC thì nhà mình đặt quân lúc chín giờ tối giờ Việt Nam rơi vào ô của hôm sau, và cả bàn cờ lệch đúng một ô suốt tầng',
         'chuỗi 7 trên bàn 90 ô → BẢY LIỀN · kín 7/7 ô → XONG TẦNG · 9h30 tối 2/9 → ô ngày 2/9');
-      bao(ra.khongXepHang && ra.khongPhat && ra.manCoBan && ra.manCoDuNgay && ra.manCo10 && ra.manNoiVisao,
+      bao(ra.khongXepHang && ra.khongPhat && ra.manCoBan && ra.manCoDuNgay && ra.manCo10 && ra.manCoBaVai && ra.manNoiVisao,
         'hệ TỰ CẤM MÌNH hai điều và khai thẳng ra màn: điểm không dùng xếp hạng nhà nọ với nhà kia — một nhà đang mùa khó đặt cạnh một nhà đang thuận thì con số ấy nói dối về cả hai; và ngày bỏ lỡ KHÔNG bị phạt — ô trống là ô trống, vì trừ điểm ngày nghỉ là dạy người ta rằng nghỉ một tối là thất bại. Màn cũng in luôn VÌ SAO việc này ba điểm việc kia một, để người chơi đọc được luật chơi của chính mình');
     }
   }

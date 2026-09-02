@@ -154,7 +154,8 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
   /* BÀN CỜ HÀNH TRÌNH. Gói NỀN: đây là luật chơi của chính nhà mình —
      một ngày một việc, mười gợi ý, ba mức trọng số, và sáu điều hệ tự
      cấm mình. Giấu luật chơi khỏi người chơi là giữ quyền đổi luật. */
-  'BC_LOI', 'BC_TRONGSO', 'BC_TRONGSO_LUAT', 'BC_MUNG', 'BC_MUNG_LUAT', 'BC_LUAT',
+  'BC_LOI', 'BC_TRONGSO', 'BC_TRONGSO_LUAT', 'BC_MUNG', 'BC_MUNG_LUAT',
+  'BC_VAI', 'BC_VAI_LUAT', 'BC_LUAT',
   /* BẢNG TIN CỘNG ĐỒNG. Gói NỀN: sáu tiêu chí chọn chuyện và năm điều
      bảng tin tự cấm là thứ NHÀ GỬI CHUYỆN phải đọc được trước khi gửi.
      Giấu tiêu chí khỏi người dự thi là giữ quyền đổi tiêu chí sau. */
@@ -790,6 +791,7 @@ const mau = {
   TIN_THUONG: G.TIN_THUONG, TIN_CAM: G.TIN_CAM, TIN_LUAT: G.TIN_LUAT,
   BC_LOI: G.BC_LOI, BC_TRONGSO: G.BC_TRONGSO, BC_TRONGSO_LUAT: G.BC_TRONGSO_LUAT,
   BC_MUNG: G.BC_MUNG, BC_MUNG_LUAT: G.BC_MUNG_LUAT, BC_LUAT: G.BC_LUAT,
+  BC_VAI: G.BC_VAI, BC_VAI_LUAT: G.BC_VAI_LUAT,
   KA_LOAI: G.KA_LOAI, KA_TY: G.KA_TY, KA_CHO: G.KA_CHO,
   KA_LUAT: G.KA_LUAT, KA_ANTOAN: G.KA_ANTOAN,
   CS_LOI: G.CS_LOI, CS_TANG: G.CS_TANG, CS_TANG_LUAT: G.CS_TANG_LUAT,

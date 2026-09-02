@@ -1238,3 +1238,30 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
   .bc-viec:hover:not([disabled]){transform:none}
 }
 @media (max-width:640px){ .bc-ds{grid-template-columns:1fr} .bc-so b{font-size:21px} }
+
+/* ═══ BA NGƯỜI MỘT QUÂN · v9.34 ═══ */
+/* Ô chia sọc theo vai: mỗi người một sọc. Nhìn một ô là biết tối ấy ai
+   có mặt ai vắng — thứ một ô đặc một màu không nói được. */
+.bc-o.dang{border-color:var(--line-2);opacity:.85}
+.bc-o.du{border-color:transparent}
+.bc-toinay{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:12px}
+.bc-nguoi{position:relative;padding:13px 14px;border-radius:14px;
+  border:1px solid var(--line);background:var(--surface)}
+.bc-nguoi.xong{border-color:var(--bc-c);background:linear-gradient(150deg,
+  color-mix(in srgb,var(--bc-c) 10%,transparent),transparent 70%)}
+.bc-nguoi-d{display:flex;align-items:baseline;gap:8px;justify-content:space-between}
+.bc-nguoi-d b{font-size:16px;color:var(--bc-c)}
+.bc-nguoi-d span{font-size:10.5px;letter-spacing:.08em;color:var(--ink-4)}
+.bc-nguoi.xong .bc-nguoi-d span{color:var(--bc-c);font-weight:800}
+.bc-nguoi-v{font-size:12.5px;line-height:1.6;margin-top:6px;color:var(--ink-2)}
+.bc-nguoi-d2{position:absolute;right:14px;bottom:11px;font-size:14.5px;font-weight:800;color:var(--bc-c)}
+/* Nút "việc của Mẹ / của Bố / của Con" nằm trong từng thẻ việc */
+.bc-cho{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px;padding-top:9px;
+  border-top:1px dashed var(--line-2)}
+.bc-nut{font:inherit;font-size:12.5px;padding:5px 10px;border-radius:99px;cursor:pointer;
+  border:1px solid var(--bc-c);color:var(--bc-c);background:transparent;transition:.15s}
+.bc-nut:hover{background:var(--bc-c);color:#fff}
+.bc-viec{cursor:default}
+.bc-viec:hover{transform:none;box-shadow:none;border-color:var(--line)}
+.bc-noi.cung{font-size:18px;color:var(--ok)}
+@media (max-width:640px){ .bc-toinay{grid-template-columns:1fr} }
