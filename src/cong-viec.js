@@ -371,6 +371,12 @@ var G = window.G || {}; window.G = G;
     }));
     var bang = { 'KH-1': coNhatKy, 'KH-2': xongHN, 'KH-3': coVongNhac,
                  'KH-4': coDocTuLieu, 'KH-5': coNguoiLon };
+    /* MÙA ĐỜI đổi MẪU SỐ, không đổi cách chấm. Nhà đang mùa đông thì chỉ
+       còn một nhịp được hỏi tới, nên ghi được một dòng là đạt đủ — và con
+       số ấy nói thật chứ không phải nói cho vui. Chưa khai mùa thì hàm
+       trả về đủ năm nhịp và mọi thứ y như trước. */
+    var giu = G.ttNhipCanGiu ? G.ttNhipCanGiu() : null;
+    if (giu && giu.length) ds = ds.filter(function (x) { return giu.indexOf(x.ma) >= 0; });
     ds.forEach(function (x) {
       tong += x.diem;
       var ok = !!bang[x.ma];

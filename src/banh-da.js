@@ -25,6 +25,10 @@ G.VIEWS = G.VIEWS || {};
      journal là sổ nhật ký tối; chotKhNgay là ngày đã chốt nhịp; test là
      bài đánh giá đã làm xong. Ba nguồn ấy đều do gia đình tạo ra. */
   function ngaySo(k) { return /^\d{4}-\d{2}-\d{2}$/.test(k) ? k : null; }
+  function ngayCuaTs(ts) {
+    var d = new Date(ts);
+    return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+  }
 
   G.bdBangChung = function () {
     var j = G.S.journal || {}, chot = G.S.chotKhNgay || {}, test = G.S.test || {};
@@ -37,10 +41,21 @@ G.VIEWS = G.VIEWS || {};
     ngay.sort();
 
     /* Chuỗi dài nhất: ngày liền nhau, tính bằng chênh lệch đúng một ngày */
+    /* Chuỗi: ngày liền nhau. Nhưng ngày trống NẰM TRONG một mùa được bảo
+       vệ thì không làm đứt — đà đã có không bị xoá vì một chuyện nhà mình
+       không chọn. Ngày ấy vẫn KHÔNG được tính là ngày có ghi: bảo vệ thì
+       bảo vệ, không phát không. */
     var dai = 0, chay = 0, truoc = null;
     ngay.forEach(function (d) {
       var t = new Date(d + 'T00:00:00').getTime();
-      chay = (truoc !== null && t - truoc === 86400000) ? chay + 1 : 1;
+      var lien = truoc !== null && t - truoc === 86400000;
+      if (!lien && truoc !== null && G.ttNgayDuocGiuChuoi) {
+        lien = true;
+        for (var x = truoc + 86400000; x < t; x += 86400000) {
+          if (!G.ttNgayDuocGiuChuoi(ngayCuaTs(x))) { lien = false; break; }
+        }
+      }
+      chay = lien ? chay + 1 : 1;
       if (chay > dai) dai = chay;
       truoc = t;
     });

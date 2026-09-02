@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.11',
+  version: '9.12',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -297,7 +297,7 @@ G.TAM_NHIN = [
      Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
      một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
      xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
-  {vai:['R12'], pt:62,
+  {vai:['R12'], pt:64,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -460,6 +460,7 @@ G.NAV = [
     /* Mười bánh đà đứng TRƯỚC các mục nghề trong nhóm này: đây là màn
        của gia đình, và nó là màn duy nhất trong nhóm không khoá quyền. */
     {v:'banh-da',     t:'Mười bánh đà',                h:'10 vòng × 10 việc · 10 cấp · mốc mở bằng bằng chứng', ic:'orbit', star:1, capMo:'chung'},
+    {v:'mua-doi',     t:'Mùa của nhà mình',            h:'Mùa khó thì hạ chuẩn, không phạt · chuỗi được giữ', ic:'shield', capMo:'chung'},
     {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'nghe_chung', capMo:'nghe'},
     /* Hai màn của lớp chiến lược. Đặt ngay sau "Kiến trúc một trăm năm"
        vì chúng trả lời đúng câu hỏi màn ấy để ngỏ: một trăm năm thì đẹp,
@@ -467,6 +468,7 @@ G.NAV = [
        Khoá ở nghe_chung — đây là bản thiết kế cách Học viện tự lái mình. */
     {v:'ban-do-chien-luoc',t:'Bản đồ chiến lược',      h:'4 tầng · 18 mục tiêu · chuỗi nhân quả kiểm được', ic:'map', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'the-diem-can-bang',t:'Thẻ điểm cân bằng',      h:'Mỗi mục tiêu một thước · 7 nhịp xem lại', ic:'chart', perm:'nghe_chung', capMo:'nghe'},
+    {v:'nam-man',     t:'Bàn điều khiển năm màn',      h:'30 phút mỗi sáng · 3 cấp đồng hành · 5 nhiệm kỳ', ic:'orbit', perm:'nghe_chung', capMo:'nghe'},
     {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
     {v:'giai-doan-bao-ve',t:'Giai đoạn và lớp bảo vệ', h:'5 giai đoạn · 4 tầng bảo vệ, kể cả chỗ chưa có', ic:'shield', perm:'nghe_chung', capMo:'nghe'},
     /* Chỉ hiện với vai CÓ đầu việc trong hệ — luồng này để người LÀM nói

@@ -184,6 +184,8 @@ G.ITEM_EN = {
   'bat-dau':['Start here','Your first five steps, in order'],
   'wow':['The WOW chain','Seven moments they will not forget'],
   'banh-da':['Ten flywheels','10 loops × 10 actions · 10 levels · milestones open on evidence'],
+  'mua-doi':['The season our family is in','A hard season lowers the bar, never penalises · the streak is protected'],
+  'nam-man':['The five-screen console','30 minutes each morning · 3 companion levels · 5 terms'],
   'kien-truc-100':['The hundred-year architecture','100 value layers · 5 eras · +3–5% a year'],
   'ban-do-chien-luoc':['Strategy map','4 layers · 18 objectives · a testable chain of cause and effect'],
   'the-diem-can-bang':['Balanced scorecard','One measure per objective · 7 review rhythms'],

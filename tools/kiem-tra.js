@@ -4185,7 +4185,8 @@ const { chromium } = require(PW);
             'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
             'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
             'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT',
-            'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT', 'BD_DAN']
+            'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT', 'BD_DAN',
+            'TT_MAN', 'TT_DONGHANH', 'TT_DONGHANH_LUAT', 'TT_NHIEMKY']
             .filter(k => window.G[k] !== undefined)
         }));
       }
@@ -4215,12 +4216,12 @@ const { chromium } = require(PW);
         trongMay.COACH.cvNoiBo + ' đầu việc · ' + trongMay.COACH.cvXongThat + ' có bằng chứng');
 
       bao(!trongMay.PH.khoNghe.length && !trongMay.HS.khoNghe.length,
-        'khách hàng KHÔNG giữ ba mươi lăm kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
+        'khách hàng KHÔNG giữ ba mươi chín kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
         trongMay.PH.khoNghe.concat(trongMay.HS.khoNghe).slice(0, 6).join(' ') ||
-        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/35');
-      bao(trongMay.COACH.khoNghe.length === 35,
-        'người trong nghề vẫn nhận đủ ba mươi lăm kho ấy — dời kho không được làm hỏng việc của Coach',
-        trongMay.COACH.khoNghe.length + '/35');
+        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/39');
+      bao(trongMay.COACH.khoNghe.length === 39,
+        'người trong nghề vẫn nhận đủ ba mươi chín kho ấy — dời kho không được làm hỏng việc của Coach',
+        trongMay.COACH.khoNghe.length + '/39');
 
       /* ══ PHÂN LUỒNG DỮ LIỆU: KHO PHẢI ĐI THEO QUYỀN CỦA MÀN HÌNH ══
          Ý định của sản phẩm đã ghi sẵn ở quyền của từng màn. Nếu MỌI màn
@@ -4242,7 +4243,8 @@ const { chromium } = require(PW);
           'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
           'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
           'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT',
-          'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT', 'BD_DAN'];
+          'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT', 'BD_DAN',
+          'TT_MAN', 'TT_DONGHANH', 'TT_DONGHANH_LUAT', 'TT_NHIEMKY'];
         const lac = CHI_NGHE.filter(k => nen[k] !== undefined);
         bao(!lac.length,
           'gói NỀN không mang kho mà mọi màn đọc nó đều khoá ở quyền nghề — ý định nằm ở quyền của màn hình, kho phải đi theo đúng ý định ấy',
@@ -5538,6 +5540,144 @@ const { chromium } = require(PW);
       bao(!bd.coDan,
         'gia đình KHÔNG đọc được CÁCH DẪN của Tư vấn và Coach — đọc được thì họ biết trước câu tiếp theo và trả lời theo kịch bản, buổi nói chuyện mất hết tác dụng',
         bd.coDan ? 'BD_DAN lọt xuống máy phụ huynh' : 'BD_DAN chỉ ở gói nghề');
+    }
+  }
+
+  /* ── 50. LỚP CẢM XÚC VÀ MÙA ĐỜI ──
+     Một lớp cảm xúc rất dễ trở thành một trang chữ đẹp mà không đổi được
+     gì trong hệ. Mục này đo đúng chỗ ấy: mùa đời có THẬT SỰ hạ mẫu số
+     không, có THẬT SỰ giữ chuỗi không, và mỗi bậc cảm xúc có trỏ vào một
+     cơ chế CÓ THẬT không. */
+  console.log('\n50 · LỚP CẢM XÚC · MÙA ĐỜI');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const tt = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.TT_MUA || !G.ttMuaCua) return { co: false };
+      const ra = { co: true };
+      ra.soCamXuc = (G.TT_CAMXUC || []).length;
+      ra.coCheThieu = G.ttSoiCoChe();
+      ra.camXucThieu = (G.TT_CAMXUC || []).filter(x => !x.khi || !x.y || !x.bom || !x.hong).map(x => x.ma);
+      ra.soMua = (G.TT_MUA || []).length;
+      /* nhip phải khớp đúng số mã trong giuMa — lệch thì màn hình nói một
+         đằng, máy chấm một nẻo */
+      ra.muaLech = (G.TT_MUA || []).filter(m => m.nhip !== (m.giuMa || []).length).map(m => m.ma);
+      const maKH = new Set((G.CV_KH_NGAY || []).map(x => x.ma));
+      ra.muaMaLa = (G.TT_MUA || []).filter(m => (m.giuMa || []).some(x => !maKH.has(x))).map(m => m.ma);
+      ra.muaKhoCoHan = (G.TT_MUA || []).filter(m => m.ma !== 'THUONG').every(m => m.hanNgay > 0);
+
+      const giuMua = G.S.mua, giuVet = G.S.vet, giuJ = G.S.journal;
+      G.S.mua = null; G.S.vet = [];
+
+      /* 1 · Chưa khai mùa thì đủ năm nhịp */
+      ra.thuongDuNam = G.ttNhipCanGiu().length === 5;
+      const k0 = G.khKpiNgay();
+      ra.mauSoThuong = k0.tong;
+
+      /* 2 · Khai mùa PHẢI có lý do thật */
+      ra.chanKhaiSuong = G.ttKhaiMua('DONG', 'mệt').ok === false;
+      ra.khaiDuoc = G.ttKhaiMua('DONG', 'Xe hỏng nặng, mất tám ngày thu nhập, cả nhà đang xoay tiền sửa.').ok === true;
+
+      /* 3 · Mùa đông HẠ MẪU SỐ thật, không phải một cái nhãn */
+      ra.dongMotNhip = G.ttNhipCanGiu().length === 1;
+      const k1 = G.khKpiNgay();
+      ra.mauSoTut = k1.tong < k0.tong && k1.tong > 0;
+
+      /* 4 · Mùa đông GIỮ CHUỖI: ghi ngày 1, nghỉ ngày 2–3, ghi ngày 4 →
+         chuỗi vẫn là 3, vì hai ngày trống nằm trong mùa được bảo vệ */
+      const GHI = 'ba dòng tối nay';
+      const nen = new Date(); nen.setDate(nen.getDate() - 10);
+      const dd = n => { const t = new Date(nen); t.setDate(t.getDate() + n);
+        return t.getFullYear() + '-' + ('0' + (t.getMonth() + 1)).slice(-2) + '-' + ('0' + t.getDate()).slice(-2); };
+      G.S.mua.tu = nen.getTime() - 86400000;
+      G.S.journal = {}; [0, 3].forEach(n => { G.S.journal[dd(n)] = GHI; });
+      ra.chuoiDuocGiu = G.bdBangChung().chuoi === 2 && G.bdBangChung().toi === 2;
+
+      /* 5 · Không có mùa thì đúng hai ngày rời rạc là chuỗi 1 */
+      G.S.mua = null;
+      ra.khongMuaThiDut = G.bdBangChung().chuoi === 1;
+
+      /* 6 · Mùa khó HẾT HẠN thì hỏi lại, không tự gia hạn */
+      G.ttKhaiMua('DONG', 'Xe hỏng nặng, mất tám ngày thu nhập, cả nhà đang xoay tiền sửa.');
+      G.S.mua.tu = Date.now() - 90 * 86400000;
+      const het = G.ttMuaCua();
+      ra.hetHanThiHoi = het.hetHan === true && het.mua.ma === 'THUONG';
+
+      /* 7 · Ra khỏi mùa khó thì ghi lại thành một VẾT */
+      G.S.mua = { ma: 'DONG', tu: Date.now() - 30 * 86400000, vi: 'Xe hỏng nặng, mất tám ngày thu nhập.' };
+      G.S.vet = [];
+      G.ttKhaiMua('THUONG', '');
+      ra.raThiCoVet = (G.S.vet || []).length === 1 && G.S.vet[0].mua === 'DONG';
+
+      G.S.mua = giuMua; G.S.vet = giuVet; G.S.journal = giuJ;
+
+      ra.soMan = (G.TT_MAN || []).length;
+      ra.coManNoiBo = !!G.TT_MAN || !!G.TT_DONGHANH || !!G.TT_NHIEMKY;
+      ra.luat11 = (G.TT_LUAT || []).some(l => l.no === 11);
+      return ra;
+    });
+    if (!tt.co) {
+      bao(false, 'lớp cảm xúc nạp được từ gói nền', 'không thấy TT_MUA');
+    } else {
+      bao(tt.soCamXuc === 7 && !tt.camXucThieu.length,
+        'đủ bảy bậc cảm xúc, bậc nào cũng nói rõ BƠM LÚC NÀO · BƠM BẰNG GÌ · DẤU HIỆU KHÔNG VÀO ĐƯỢC',
+        tt.camXucThieu.join(' ') || '7/7 đủ bốn cột');
+      bao(!tt.coCheThieu.length,
+        'mỗi bậc cảm xúc trỏ vào một CƠ CHẾ CÓ THẬT trong hệ — bậc nào trỏ vào thứ không tồn tại thì đó là văn chương, không phải cơ chế',
+        tt.coCheThieu.join(' ') || '7/7 có cơ chế thật');
+      bao(tt.soMua === 5 && !tt.muaLech.length && !tt.muaMaLa.length,
+        'năm mùa, số nhịp khai khớp đúng danh sách nhịp giữ, và mã nhịp nào cũng có thật trong bảng nhịp ngày',
+        tt.muaLech.concat(tt.muaMaLa).join(' ') || '5/5 khớp');
+      bao(tt.muaKhoCoHan,
+        'mùa khó nào cũng CÓ HẠN — mùa khó kéo dài vô hạn thì thành cái cớ, và cái cớ ăn mất chính thứ nó định bảo vệ');
+      bao(tt.chanKhaiSuong && tt.khaiDuoc,
+        'khai mùa khó phải kèm LÝ DO THẬT — khai mùa là một việc của chính nhà mình, không phải một cái nút');
+      bao(tt.thuongDuNam && tt.dongMotNhip && tt.mauSoTut,
+        'mùa đông HẠ MẪU SỐ THẬT: từ năm nhịp xuống một, nên ghi được một dòng là đạt đủ — đây là cơ chế, không phải một cái nhãn an ủi',
+        'mẫu số ' + tt.mauSoThuong + ' → ' + (tt.mauSoTut ? 'thấp hơn' : 'KHÔNG ĐỔI'));
+      bao(tt.chuoiDuocGiu && tt.khongMuaThiDut,
+        'ngày trống trong mùa đông KHÔNG làm đứt chuỗi, nhưng cũng KHÔNG được tính là ngày có ghi — bảo vệ thì bảo vệ, không phát không');
+      bao(tt.hetHanThiHoi,
+        'mùa khó hết hạn thì hệ thống HỎI LẠI và trả về mùa thường — không tự gia hạn, cũng không lặng lẽ bỏ');
+      bao(tt.raThiCoVet,
+        'ra khỏi mùa khó thì ghi lại thành một VẾT — bằng chứng "nhà mình từng vượt qua chuyện kia rồi", và đó là nhiên liệu của mùa khó lần sau');
+      bao(tt.luat11,
+        'luật nền thứ mười một có mặt: mỗi bước khó đều phải được bao quanh bởi một niềm vui');
+      bao(!tt.coManNoiBo,
+        'gia đình KHÔNG nhận bàn điều khiển, bảng cấp đồng hành và bảng nhiệm kỳ — đó là cách Học viện tự lái mình, không phải nội dung của nhà họ',
+        tt.coManNoiBo ? 'kho điều hành lọt xuống máy phụ huynh' : 'chỉ ở gói nghề');
+    }
+    /* Đo phần điều hành trên vai CÓ gói nghề */
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const tt2 = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.TT_MAN) return { co: false };
+      return { co: true,
+        soMan: (G.TT_MAN || []).length,
+        thuTu: (G.TT_MAN || []).every((m, i) => m.so === i + 1),
+        manThieu: (G.TT_MAN || []).filter(m => !m.hoi || !m.nguong || !m.nguon || !m.y).map(m => m.ma),
+        chuongDocTen: /TỪNG TÊN/.test(((G.TT_MAN || []).filter(m => m.ma === 'CHUONG')[0] || {}).nguong || ''),
+        tongPhut: (G.TT_MAN || []).reduce((a, m) => a + (m.phut || 0), 0),
+        soCap: (G.TT_DONGHANH || []).length,
+        capThieu: (G.TT_DONGHANH || []).filter(d => !d.chuan || !d.camSai || !d.daoTao).map(d => d.ma),
+        soNhiemKy: (G.TT_NHIEMKY || []).length,
+        cuoiLaKhongCanMinh: /KHÔNG CẦN mình/.test(((G.TT_NHIEMKY || []).slice(-1)[0] || {}).lam || ''),
+        nhiemKyThieu: (G.TT_NHIEMKY || []).filter(n => !n.lam || !n.xong).map(n => n.ck) };
+    });
+    if (tt2.co) {
+      bao(tt2.soMan === 5 && tt2.thuTu && !tt2.manThieu.length,
+        'đủ năm màn ĐÚNG THỨ TỰ, màn nào cũng có CÂU HỎI · NGƯỠNG · NGUỒN SỐ — thứ tự không phải cho gọn, nó là thứ tự ưu tiên',
+        tt2.manThieu.join(' ') || '5 màn · ' + tt2.tongPhut + ' phút');
+      bao(tt2.chuongDocTen,
+        'màn chuông bắt đọc TỪNG TÊN chứ không đọc tổng số — mỗi cái tên là một cây đang khát, và một con số tổng thì không ai đi cứu được');
+      bao(tt2.soCap === 3 && !tt2.capThieu.length,
+        'ba cấp người đồng hành, cấp nào cũng có ĐÀO TẠO · CHUẨN ĐO · SAI LẦM CẤM',
+        tt2.capThieu.join(' ') || '3/3 đủ ba cột');
+      bao(tt2.soNhiemKy === 5 && !tt2.nhiemKyThieu.length && tt2.cuoiLaKhongCanMinh,
+        'năm nhiệm kỳ, và nhiệm kỳ cuối làm đúng một việc: khiến hệ thống KHÔNG CẦN mình nữa',
+        tt2.nhiemKyThieu.join(' ') || '5/5 · chu kỳ cuối đúng');
     }
   }
 

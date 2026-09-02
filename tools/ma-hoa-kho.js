@@ -75,6 +75,10 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      NGHỀ: gia đình đọc được cách dẫn thì buổi nói chuyện mất tác dụng,
      họ biết trước câu tiếp theo và trả lời theo kịch bản. */
   'BD_LON', 'BD_CAP', 'BD_CHON', 'BD_LUAT',
+  /* Lớp cảm xúc, phần của gia đình: mùa đời, chìa khoá nhỏ, bằng chứng
+     ẩn danh, sổ vết. Đây là thứ họ SỐNG trong đó — giấu đi thì mùa khó
+     lại bị chấm bằng thước của người đang khoẻ. */
+  'TT_CAMXUC', 'TT_MUA', 'TT_MUA_LUAT', 'TT_CHIAKHOA', 'TT_BANGCHUNG', 'TT_VET', 'TT_LUAT', 'TT_CONGTHUC',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -155,6 +159,9 @@ const NGHE = [
      tức là một phần sơ đồ quyền quyết định bên trong Học viện. */
   'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT',
   'BD_DAN',
+  /* Bàn điều khiển, ba cấp đồng hành, năm nhiệm kỳ: đây là cách Học viện
+     tự lái mình và cách nó tuyển, đào tạo, thay người. Ở gói NGHỀ. */
+  'TT_MAN', 'TT_DONGHANH', 'TT_DONGHANH_LUAT', 'TT_NHIEMKY',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -532,6 +539,12 @@ const mau = {
      đi thì bản xem thử dựng ra một thẻ rỗng, và người mở nó kết luận
      là hệ thống chưa xong — đúng lỗi đã mắc ba lần trước. */
   BD_LON: G.BD_LON, BD_CAP: G.BD_CAP, BD_CHON: G.BD_CHON, BD_LUAT: G.BD_LUAT,
+  /* Mùa đời cũng vào gói công khai: người chưa đăng nhập phải thấy được
+     rằng ở đây mùa khó không bị chấm bằng thước của người đang khoẻ. Đó
+     là một trong những lý do mạnh nhất để họ bước vào. */
+  TT_CAMXUC: G.TT_CAMXUC, TT_MUA: G.TT_MUA, TT_MUA_LUAT: G.TT_MUA_LUAT,
+  TT_CHIAKHOA: G.TT_CHIAKHOA, TT_BANGCHUNG: G.TT_BANGCHUNG, TT_VET: G.TT_VET,
+  TT_LUAT: G.TT_LUAT, TT_CONGTHUC: G.TT_CONGTHUC,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')

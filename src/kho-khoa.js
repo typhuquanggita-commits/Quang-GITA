@@ -51,6 +51,8 @@ G.THUOC_CAP_PHEP = [
   'TG_LANG','TG_GON','TG_GIAIDOAN','TG_LOP','TG_GON_LUAT',
   'CT_TRANG','CT_LOAI','CT_DIEM','CT_LUAT',
   'BD_LON','BD_CAP','BD_CHON','BD_LUAT','BD_DAN',
+  'TT_CAMXUC','TT_MUA','TT_MUA_LUAT','TT_CHIAKHOA','TT_BANGCHUNG','TT_VET','TT_LUAT','TT_CONGTHUC',
+  'TT_MAN','TT_DONGHANH','TT_DONGHANH_LUAT','TT_NHIEMKY',
   /* Lớp băng của ma trận: từ 9.8 nó về gói nghề cùng MATRAN, vì mọi
      màn đọc nó đều khoá ở quyền nghề. */
   'MT_BANG','MT_BANG_MA','MT_BANG_TANG','MT_BANG_NHOM','MT_BANG_LUAT','MT_DO',
