@@ -5681,6 +5681,172 @@ const { chromium } = require(PW);
     }
   }
 
+  console.log('\n51 · BỨC TRANH HÀNH TRÌNH · NĂM CỬA TỬ · NHÁNH HÉO · NGÔN TỪ');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const hm = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.HM_VUNG || !G.hmNguyHienTai) return { co: false };
+      const ra = { co: true };
+      const NGAY = 86400000;
+      const dd = t => t.getFullYear() + '-' + ('0' + (t.getMonth() + 1)).slice(-2) + '-' + ('0' + t.getDate()).slice(-2);
+      const lui = n => { const t = new Date(); t.setDate(t.getDate() - n); return dd(t); };
+
+      /* ── Bảy vùng đất phải PHỦ KÍN thang cấp, không hở không chồng ── */
+      ra.soVung = (G.HM_VUNG || []).length;
+      ra.vungThieu = (G.HM_VUNG || []).filter(v => !v.y || v.capTu === undefined || v.capDen === undefined).map(v => v.ma);
+      ra.vungHo = [];
+      for (let c = 0; c <= 10; c++) {
+        const n = (G.HM_VUNG || []).filter(v => c >= v.capTu && c <= v.capDen).length;
+        if (n !== 1) ra.vungHo.push('cấp' + c + ':' + n);
+      }
+
+      /* ── Năm cửa tử: mỗi cửa trỏ vào cơ chế CÓ THẬT ── */
+      ra.soNguy = (G.HM_NGUY || []).length;
+      ra.coCheThieu = G.hmSoiCoChe();
+      ra.nguyMocThieu = (G.HM_NGUY || [])
+        .filter(x => x.tuNgay === undefined && !x.khiMua).map(x => x.ma);
+
+      /* ── Ngôn từ: quét đúng những câu NÓI VỚI GIA ĐÌNH ── */
+      ra.soCauQuet = G.hmLoiNoiVoiNha().length;
+      ra.ngonTuPham = G.hmSoiNgonTu();
+      /* Phép quét phải BẮT ĐƯỢC: nhét một từ cấm vào rồi trả về ngay. Một
+         phép kiểm chưa từng đỏ thì chưa phải phép kiểm. */
+      const giuHoi = G.HM_HOI3[0].hoi;
+      G.HM_HOI3[0].hoi = 'Hôm nay anh chị nên ghi lại điều gì?';
+      ra.quetBatDuoc = G.hmSoiNgonTu().length === 1;
+      /* Và phải bắt theo TỪ, không theo chuỗi con: 'lên' chứa 'nên' */
+      G.HM_HOI3[0].hoi = 'Hôm nay nhà mình có gì vui lên không?';
+      ra.quetKhongBatNham = G.hmSoiNgonTu().length === 0;
+      G.HM_HOI3[0].hoi = giuHoi;
+
+      const giuMua = G.S.mua, giuChot = G.S.chotKhNgay, giuJ = G.S.journal;
+      G.S.mua = null; G.S.journal = {}; G.S.chotKhNgay = {};
+
+      /* ── Chưa có dấu vết nào: không cửa nào mở, và màn chỉ nói MỘT việc ── */
+      ra.chuaDiThiKhongCua = G.hmNguyHienTai() === null && G.hmNgayDaDi() === 0;
+      const man0 = G.VIEWS['buc-tranh']();
+      ra.ngay1ChiMotViec = man0.indexOf(G.HM_NGAY1.lam) >= 0 &&
+        man0.indexOf((G.HM_VUNG[6] || {}).y || '###') < 0;
+
+      /* ── Cửa mở đúng theo số ngày đã đi ── */
+      G.S.journal[lui(3)] = 'ba dòng tối nay';
+      ra.cuaDau = (G.hmNguyHienTai() || {}).ma;
+      G.S.journal = {}; G.S.journal[lui(20)] = 'ba dòng tối nay';
+      ra.cuaTuan3 = (G.hmNguyHienTai() || {}).ma;
+      G.S.journal = {}; G.S.journal[lui(200)] = 'ba dòng tối nay';
+      ra.cuaDeu = (G.hmNguyHienTai() || {}).ma;
+      G.S.journal = {}; G.S.journal[lui(500)] = 'ba dòng tối nay';
+      ra.cuaBaoHoa = (G.hmNguyHienTai() || {}).ma;
+
+      /* ── Mùa khó THẮNG mọi mốc ngày ──
+         Nhà đang mất thu nhập ở tháng thứ bảy thì cửa của họ là khủng
+         hoảng, không phải "mệt vì đều đặn". */
+      G.S.journal = {}; G.S.journal[lui(200)] = 'ba dòng tối nay';
+      G.ttKhaiMua('DONG', 'Xe hỏng nặng, mất tám ngày thu nhập, cả nhà đang xoay tiền sửa.');
+      ra.muaThangMoc = (G.hmNguyHienTai() || {}).ma === 'CT-KHUNGHOANG';
+
+      /* ── Trong mùa khó thì màn CHỈ hỏi một câu, bỏ hẳn ba câu ── */
+      const manKho = G.VIEWS['buc-tranh']();
+      ra.muaKhoMotCau = manKho.indexOf(G.HM_LEU.hoi) >= 0 &&
+        manKho.indexOf(G.HM_HOI3[1].hoi) < 0;
+      /* Ba đường của lều phải KHÁC nhau thật */
+      ra.leuBaDuongKhac = new Set((G.HM_LEU.dap || []).map(d => d.di)).size === (G.HM_LEU.dap || []).length;
+
+      /* ── Nhánh héo ──
+         Sổ chốt cũ KHÔNG có cột `ma` thì trả "chưa có dấu để so", không
+         kết luận là héo. Suy đoán từ chỗ thiếu dữ liệu thì sớm muộn cũng
+         báo héo cho một nhà đang đều. */
+      G.S.mua = null;
+      G.S.chotKhNgay = { [lui(9)]: { pt: 60, dat: 6, tong: 10, luc: Date.now() } };
+      ra.chotCuThiChuaDo = G.hmNhanhHeo().every(x => x.chuaDo);
+
+      /* Có cột `ma` rồi thì đếm đúng số ngày và đúng ngưỡng */
+      G.S.chotKhNgay = {
+        [lui(9)]: { pt: 60, dat: 6, tong: 10, luc: Date.now(), ma: ['KH-1', 'KH-3'] },
+        [lui(1)]: { pt: 40, dat: 4, tong: 10, luc: Date.now(), ma: ['KH-1'] }
+      };
+      const bang = G.hmNhanhHeo();
+      const l1 = bang.filter(x => x.ma === 'KH-1')[0] || {};
+      const l3 = bang.filter(x => x.ma === 'KH-3')[0] || {};
+      const l5 = bang.filter(x => x.ma === 'KH-5')[0] || {};
+      ra.heoDemDung = l1.ngay === 1 && !l1.muc && l3.ngay === 9 && (l3.muc || {}).ngay === 7;
+      ra.heoChuaCoDauThiKhongPhat = l5.chuaDo === true;
+
+      /* Mùa đông HẠ MẪU SỐ thì nhánh bị bỏ KHÔNG được báo héo — mùa đã hạ
+         chuẩn rồi mà còn báo héo thì đó là phạt trá hình */
+      G.ttKhaiMua('DONG', 'Xe hỏng nặng, mất tám ngày thu nhập, cả nhà đang xoay tiền sửa.');
+      const bangDong = G.hmNhanhHeo();
+      ra.muaDongBotNhanh = bangDong.length < bang.length && bangDong.length > 0;
+
+      G.S.mua = giuMua; G.S.chotKhNgay = giuChot; G.S.journal = giuJ;
+
+      ra.soLuat = (G.HM_LUAT || []).length;
+      /* Gia đình KHÔNG được nhận bản ghi sau màn hình, và cũng không được
+         nhận hai cột `vi`/`bom` của bảng cửa tử */
+      ra.coBanGhiSau = !!G.HM_SAU || !!G.HM_NGUY_SAU;
+      ra.loCotPhanTich = (G.HM_NGUY || []).some(x => x.vi !== undefined || x.bom !== undefined);
+      return ra;
+    });
+    if (!hm.co) {
+      bao(false, 'bức tranh hành trình nạp được từ gói nền', 'không thấy HM_VUNG');
+    } else {
+      bao(hm.soVung === 7 && !hm.vungThieu.length && !hm.vungHo.length,
+        'bảy vùng đất phủ kín thang mười cấp — không hở cấp nào, không cấp nào thuộc hai vùng; nối vào thang bánh đà chứ KHÔNG dựng thang thứ hai',
+        hm.vungThieu.concat(hm.vungHo).join(' ') || '7 vùng · cấp 0–10 kín');
+      bao(hm.soNguy === 5 && !hm.coCheThieu.length && !hm.nguyMocThieu.length,
+        'năm cửa tử, cửa nào cũng trỏ vào một CƠ CHẾ CÓ THẬT trong hệ và có mốc mở rõ ràng — cửa trỏ vào thứ không tồn tại là một lời động viên, không phải một cơ chế',
+        hm.coCheThieu.concat(hm.nguyMocThieu).join(' ') || '5/5 có cơ chế thật');
+      bao(hm.cuaDau === 'CT-DAU' && hm.cuaTuan3 === 'CT-TUAN3' &&
+          hm.cuaDeu === 'CT-DEU' && hm.cuaBaoHoa === 'CT-BAOHOA',
+        'cửa mở ĐÚNG theo số ngày nhà mình đã đi, đếm từ dấu vết đầu tiên chứ không từ ngày mở tài khoản',
+        [hm.cuaDau, hm.cuaTuan3, hm.cuaDeu, hm.cuaBaoHoa].join(' → '));
+      bao(hm.muaThangMoc,
+        'mùa khó THẮNG mọi mốc ngày — nhà đang mất thu nhập ở tháng thứ bảy thì cửa của họ là khủng hoảng, không phải "mệt vì đều đặn"');
+      bao(hm.chuaDiThiKhongCua && hm.ngay1ChiMotViec,
+        'ngày thứ nhất chỉ nói MỘT việc và không bày bảy vùng đất ra — người mở lần đầu nhìn thấy một núi việc là bỏ trước khi bắt đầu');
+      bao(hm.muaKhoMotCau && hm.leuBaDuongKhac,
+        'trong mùa khó màn hình BỎ HẲN ba câu và chỉ còn một câu của lều, và ba đường trả lời đi ba chỗ khác nhau thật — ba lựa chọn dẫn tới cùng một câu động viên là hỏi cho có');
+      bao(!hm.ngonTuPham.length && hm.soCauQuet >= 8,
+        'không câu nào nói với gia đình dùng từ cấm: nên · phải · tối thiểu · bắt buộc · cần phải · yêu cầu',
+        hm.ngonTuPham.join(' ') || hm.soCauQuet + ' câu sạch');
+      bao(hm.quetBatDuoc && hm.quetKhongBatNham,
+        'phép quét ngôn từ BẮT ĐƯỢC thật khi nhét từ cấm vào, và không bắt nhầm "lên" thành "nên" — bắt theo từ, không theo chuỗi con');
+      bao(hm.heoDemDung && hm.heoChuaCoDauThiKhongPhat && hm.chotCuThiChuaDo,
+        'nhánh héo đếm đúng số ngày và đúng ngưỡng, còn chỗ CHƯA CÓ DẤU thì nói "chưa có dấu để so" chứ không kết luận là héo — báo héo sai một lần là mất niềm tin vào cả bảng');
+      bao(hm.muaDongBotNhanh,
+        'mùa đông đã hạ mẫu số thì nhánh bị bỏ KHÔNG bị báo héo — mùa hạ chuẩn rồi mà còn báo héo thì đó là phạt trá hình, đúng thứ luật héo cấm');
+      bao(hm.soLuat === 6,
+        'đủ sáu luật của bức tranh', hm.soLuat + '/6');
+      bao(!hm.coBanGhiSau && !hm.loCotPhanTich,
+        'gia đình KHÔNG nhận bản ghi sau màn hình, và bảng cửa tử xuống máy họ đã CẮT hai cột "vì sao mất người" và "bơm cảm xúc nào" — lọc trên màn hình không phải bảo vệ dữ liệu',
+        hm.coBanGhiSau ? 'HM_SAU/HM_NGUY_SAU lọt xuống máy phụ huynh'
+          : hm.loCotPhanTich ? 'cột vi/bom còn nguyên trong gói nền' : 'khung mở, lời cắt');
+    }
+    /* Phần của nghề — đo trên vai CÓ gói nghề */
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const hm2 = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.HM_SAU) return { co: false };
+      return { co: true,
+        soSau: (G.HM_SAU || []).length,
+        sauThieu: (G.HM_SAU || []).filter(s => !s.khi || !s.may || !s.cam).map(s => s.khi),
+        coCotPhanTich: (G.HM_NGUY_SAU || []).every(x => x.vi && x.bom),
+        manCoBangSau: G.VIEWS['buc-tranh']().indexOf((G.HM_SAU[0] || {}).cam || '###') >= 0 };
+    });
+    if (hm2.co) {
+      bao(hm2.soSau === 5 && !hm2.sauThieu.length,
+        'năm mốc của bản ghi sau màn hình, mốc nào cũng nói rõ MÁY LÀM GÌ và TUYỆT ĐỐI KHÔNG làm gì',
+        hm2.sauThieu.join(' ') || '5/5 đủ ba cột');
+      bao(hm2.coCotPhanTich && hm2.manCoBangSau,
+        'vai có gói nghề thì nhận đủ hai cột phân tích và màn hình dựng ra được bảng sau màn hình');
+    } else {
+      bao(false, 'vai có gói nghề nhận được bản ghi sau màn hình', 'không thấy HM_SAU');
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

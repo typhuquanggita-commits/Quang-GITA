@@ -73,6 +73,7 @@
     "src/cai-tien.js",
     "src/banh-da.js",
     "src/trai-tim.js",
+    "src/hat-mam.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",

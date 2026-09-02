@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.12',
+  version: '9.13',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -461,6 +461,9 @@ G.NAV = [
        của gia đình, và nó là màn duy nhất trong nhóm không khoá quyền. */
     {v:'banh-da',     t:'Mười bánh đà',                h:'10 vòng × 10 việc · 10 cấp · mốc mở bằng bằng chứng', ic:'orbit', star:1, capMo:'chung'},
     {v:'mua-doi',     t:'Mùa của nhà mình',            h:'Mùa khó thì hạ chuẩn, không phạt · chuỗi được giữ', ic:'shield', capMo:'chung'},
+    /* Bức tranh đứng ngay sau mùa: nhà mở app lên thì thấy mình đang ở
+       vùng nào và nhánh nào cần tưới, trước khi thấy bất kỳ bảng số nào. */
+    {v:'buc-tranh',   t:'Bức tranh hành trình',        h:'7 vùng đất · 3 câu mỗi tối · nhánh nào đang cần tưới', ic:'sun', star:1, capMo:'chung'},
     {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'nghe_chung', capMo:'nghe'},
     /* Hai màn của lớp chiến lược. Đặt ngay sau "Kiến trúc một trăm năm"
        vì chúng trả lời đúng câu hỏi màn ấy để ngỏ: một trăm năm thì đẹp,

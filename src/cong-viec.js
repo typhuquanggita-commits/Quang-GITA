@@ -416,7 +416,14 @@ var G = window.G || {}; window.G = G;
     G.S.chotKhNgay = G.S.chotKhNgay || {};
     if (G.S.chotKhNgay[d]) return { ok: false, loi: 'Hôm nay đã chốt rồi.' };
     var k = G.khKpiNgay();
-    G.S.chotKhNgay[d] = { pt: k.pt, dat: k.dat, tong: k.tong, luc: Date.now() };
+    /* Ghi luôn NHỮNG NHỊP NÀO đạt hôm nay, không chỉ ghi tổng điểm.
+       Không có cột này thì hmNhanhHeo() không biết nhánh nào lâu không có
+       dấu, và cả cơ chế "nhìn thấy điều đang mất trước khi mất hẳn" chỉ
+       còn là một câu nói. Sổ chốt cũ không có cột này thì hàm ấy trả về
+       "chưa có dấu để so" chứ KHÔNG kết luận là héo — suy đoán từ chỗ
+       thiếu dữ liệu thì sớm muộn cũng báo héo cho một nhà đang đều. */
+    G.S.chotKhNgay[d] = { pt: k.pt, dat: k.dat, tong: k.tong, luc: Date.now(),
+      ma: k.chiTiet.filter(function (x) { return x.dat; }).map(function (x) { return x.ma; }) };
     if (G.save) G.save();
     return { ok: true, kpi: k };
   };

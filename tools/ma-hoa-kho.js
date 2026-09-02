@@ -79,6 +79,15 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      ẩn danh, sổ vết. Đây là thứ họ SỐNG trong đó — giấu đi thì mùa khó
      lại bị chấm bằng thước của người đang khoẻ. */
   'TT_CAMXUC', 'TT_MUA', 'TT_MUA_LUAT', 'TT_CHIAKHOA', 'TT_BANGCHUNG', 'TT_VET', 'TT_LUAT', 'TT_CONGTHUC',
+  /* Bức tranh hành trình: hạt, bảy vùng đất, ba câu mỗi tối, lều trú gió
+     và bảng nhánh héo. Đây là thứ gia đình NHÌN THẤY mỗi ngày, nên nó ở
+     gói nền cùng chỗ với mùa đời.
+
+     Năm cửa tử cũng ở đây, nhưng màn của gia đình chỉ dựng ra phần "nhà
+     mình đang được đỡ bằng gì". Phần "vì sao chỗ này mất người" là chữ
+     của người trong nghề, và nó chỉ hiện khi máy CÓ kho HM_SAU. */
+  'HM_NGAY1', 'HM_HOI3', 'HM_NGONTU', 'HM_VUNG', 'HM_VUNG_LUAT',
+  'HM_NGUY', 'HM_LEU', 'HM_HEO', 'HM_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -162,6 +171,11 @@ const NGHE = [
   /* Bàn điều khiển, ba cấp đồng hành, năm nhiệm kỳ: đây là cách Học viện
      tự lái mình và cách nó tuyển, đào tạo, thay người. Ở gói NGHỀ. */
   'TT_MAN', 'TT_DONGHANH', 'TT_DONGHANH_LUAT', 'TT_NHIEMKY',
+  /* Bản ghi sau màn hình. Đây là "điều Minh KHÔNG cần biết": điểm nền,
+     cờ cảm xúc, lộ trình mười năm. Họ không cần, và cũng KHÔNG ĐƯỢC nhận
+     — biết mình đang bị chấm bao nhiêu điểm thì cái nhìn đổi ngay, và cả
+     thiết kế "em bé tập đi không cần hiểu giải phẫu chân" sụp. */
+  'HM_SAU', 'HM_NGUY_SAU',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -256,6 +270,23 @@ goi.nghe.SH_HOI = (G.SH_HOI || []).filter(h => !VAI_NHA.includes(h.vai));
    nó đi gói nền. Đội ngũ mở cả hai gói nên vẫn thấy đủ ba mươi bài. */
 goi.nen.KH_BAI  = (G.KH_BAI || []).filter(b => (b.vai || []).includes('CTV'));
 goi.nghe.KH_BAI = (G.KH_BAI || []).filter(b => !(b.vai || []).includes('CTV'));
+/* ── NĂM CỬA TỬ: MỞ KHUNG, KHOÁ LỜI ──
+   Màn của gia đình cần biết mình đang ở chặng nào và ĐANG ĐƯỢC ĐỠ BẰNG
+   GÌ — đó là phần làm họ yên tâm. Nhưng hai cột `vi` (vì sao chỗ này
+   mất người) và `bom` (bơm cảm xúc nào vào lúc nào) là bản phân tích
+   rời bỏ của Học viện. Gửi xuống máy phụ huynh rồi thì gõ G.HM_NGUY
+   trong công cụ nhà phát triển là đọc hết — đúng cái lỗi CV_MUC đã mắc.
+
+   Nên hai nửa mang HAI TÊN KHÁC NHAU, không dựa vào thứ tự nạp gói.
+   Cùng một tên ở hai gói thì gói tới sau đè gói tới trước, mà nen nạp
+   chặn còn nghe nạp nền — hôm nào đổi thứ tự ấy là lộ, và lộ lặng lẽ. */
+goi.nen.HM_NGUY = (G.HM_NGUY || []).map(x => {
+  const r = { so: x.so, ma: x.ma, ten: x.ten, c: x.c, khi: x.khi, co: x.co };
+  if (x.tuNgay !== undefined) { r.tuNgay = x.tuNgay; r.denNgay = x.denNgay; }
+  if (x.khiMua) r.khiMua = true;
+  return r;
+});
+goi.nghe.HM_NGUY_SAU = G.HM_NGUY;
 /* ── KỊCH BẢN CHUYÊN MÔN KHÔNG ĐI THEO GÓI TẦNG ──
    Kịch bản từng nằm trong gói tầng, mỗi tầng 200 cái. Nghĩa là một
    phụ huynh Tầng 3 nhận về máy mình 200 kịch bản coaching: nguyên văn
@@ -545,6 +576,14 @@ const mau = {
   TT_CAMXUC: G.TT_CAMXUC, TT_MUA: G.TT_MUA, TT_MUA_LUAT: G.TT_MUA_LUAT,
   TT_CHIAKHOA: G.TT_CHIAKHOA, TT_BANGCHUNG: G.TT_BANGCHUNG, TT_VET: G.TT_VET,
   TT_LUAT: G.TT_LUAT, TT_CONGTHUC: G.TT_CONGTHUC,
+  /* Bức tranh hành trình cũng vào gói công khai. Ba lần trước đã mắc
+     đúng lỗi này: kho mới không có trong mau.json thì bản xem thử dựng
+     ra một thẻ rỗng, và người mở nó kết luận là hệ thống chưa xong.
+     HM_SAU thì KHÔNG vào đây — bản xem thử là bản công khai nhất trong
+     tất cả, đưa bản ghi sau màn hình vào đó là mở nó cho cả thiên hạ. */
+  HM_NGAY1: G.HM_NGAY1, HM_HOI3: G.HM_HOI3, HM_NGONTU: G.HM_NGONTU,
+  HM_VUNG: G.HM_VUNG, HM_VUNG_LUAT: G.HM_VUNG_LUAT,
+  HM_NGUY: goi.nen.HM_NGUY, HM_LEU: G.HM_LEU, HM_HEO: G.HM_HEO, HM_LUAT: G.HM_LUAT,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')
