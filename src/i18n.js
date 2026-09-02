@@ -183,6 +183,7 @@ G.ITEM_EN = {
   'nhat-ky-ht':['System audit log','Every action leaves a trace'],
   'bat-dau':['Start here','Your first five steps, in order'],
   'wow':['The WOW chain','Seven moments they will not forget'],
+  'banh-da':['Ten flywheels','10 loops × 10 actions · 10 levels · milestones open on evidence'],
   'kien-truc-100':['The hundred-year architecture','100 value layers · 5 eras · +3–5% a year'],
   'ban-do-chien-luoc':['Strategy map','4 layers · 18 objectives · a testable chain of cause and effect'],
   'the-diem-can-bang':['Balanced scorecard','One measure per objective · 7 review rhythms'],

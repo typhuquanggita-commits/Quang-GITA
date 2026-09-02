@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 75 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 76 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 75 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 76 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -35,7 +35,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.10',
+  version: '9.11',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -474,6 +474,9 @@ G.NAV = [
     {v:'cong-nghiem-thu',t:'Cổng nghiệm thu',          h:'Qua chặng bằng bằng chứng, không bằng lời', ic:'shield', perm:'pro_approve', capMo:'nghe'},
     {v:'bo-test',     t:'Bộ test nhận diện 5 tầng',    h:'25 bộ · 750 câu · phân bốn nhóm',    ic:'target', star:1, perm:'kh_hanh_trinh', capMo:'con'},
     {v:'kpi-100',     t:'Mười điểm về đích',           h:'10 điểm mốc · 100 tiêu chí đo được', ic:'crown', star:1, perm:'kh_hanh_trinh', capMo:'con'},
+    /* Mười bánh đà đứng TRƯỚC các mục nghề trong nhóm này: đây là màn
+       của gia đình, và nó là màn duy nhất trong nhóm không khoá quyền. */
+    {v:'banh-da',     t:'Mười bánh đà',                h:'10 vòng × 10 việc · 10 cấp · mốc mở bằng bằng chứng', ic:'orbit', star:1, capMo:'chung'},
     {v:'kien-truc-100',t:'Kiến trúc một trăm năm',     h:'100 tầng giá trị · 5 thời kỳ · mỗi năm +3–5%',ic:'sun', star:1, perm:'nghe_chung', capMo:'nghe'},
     /* Hai màn của lớp chiến lược. Đặt ngay sau "Kiến trúc một trăm năm"
        vì chúng trả lời đúng câu hỏi màn ấy để ngỏ: một trăm năm thì đẹp,
@@ -956,6 +959,7 @@ G.ITEM_EN = {
   'nhat-ky-ht':['System audit log','Every action leaves a trace'],
   'bat-dau':['Start here','Your first five steps, in order'],
   'wow':['The WOW chain','Seven moments they will not forget'],
+  'banh-da':['Ten flywheels','10 loops × 10 actions · 10 levels · milestones open on evidence'],
   'kien-truc-100':['The hundred-year architecture','100 value layers · 5 eras · +3–5% a year'],
   'ban-do-chien-luoc':['Strategy map','4 layers · 18 objectives · a testable chain of cause and effect'],
   'the-diem-can-bang':['Balanced scorecard','One measure per objective · 7 review rhythms'],
@@ -3264,6 +3268,7 @@ G.THUOC_CAP_PHEP = [
   'CL_THAP','CL_TANG','CL_MUC','CL_KETQUA','CL_NHIP','CL_NHAT','CL_LUAT',
   'TG_LANG','TG_GON','TG_GIAIDOAN','TG_LOP','TG_GON_LUAT',
   'CT_TRANG','CT_LOAI','CT_DIEM','CT_LUAT',
+  'BD_LON','BD_CAP','BD_CHON','BD_LUAT','BD_DAN',
   /* Lớp băng của ma trận: từ 9.8 nó về gói nghề cùng MATRAN, vì mọi
      màn đọc nó đều khoá ở quyền nghề. */
   'MT_BANG','MT_BANG_MA','MT_BANG_TANG','MT_BANG_NHOM','MT_BANG_LUAT','MT_DO',
@@ -21491,6 +21496,252 @@ G.VIEWS = G.VIEWS || {};
 
     o += U.sec('Sáu luật của luồng này', 'Viết ra để sau này không ai nới.');
     o += '<div class="card">' + (G.CT_LUAT || []).map(function (l) {
+      return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + l.no + '. ' + h(l.t) + '</b>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(l.y) + '</p></div>';
+    }).join('') + '</div>';
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/banh-da.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY MƯỜI BÁNH ĐÀ
+
+   Kho chuẩn ở kho-goc/data.banh-da.js (BD_LON · BD_CAP · BD_CHON ·
+   BD_LUAT · BD_DAN). Tệp này là phần CHẠY: đếm bằng chứng, tính cấp độ,
+   chọn việc gợi ý tiếp theo, và soi chính cấu trúc mười bánh đà.
+
+   MỘT ĐIỀU TỰ ĐẶT VÀ SẼ KHÔNG NỚI: mọi con số ở đây đọc từ DỮ LIỆU NHÀ
+   TỰ GHI. Không có mốc nào mở bằng nút bấm, không có phần trăm nào ước
+   lượng. Nhà chưa ghi gì thì màn hình nói thẳng là chưa có gì để đo, và
+   chỉ ra đúng một việc để bắt đầu.
+
+   Vì sao chặt thế: cả lớp này là một trò chơi, mà trò chơi nào cũng có
+   người tìm đường tắt. Đường tắt duy nhất bị chặn ở đây là đường tắt
+   quan trọng nhất — không ai lên cấp bằng cách bấm.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  /* ─── Bằng chứng, đếm từ sổ của chính nhà mình ───
+     journal là sổ nhật ký tối; chotKhNgay là ngày đã chốt nhịp; test là
+     bài đánh giá đã làm xong. Ba nguồn ấy đều do gia đình tạo ra. */
+  function ngaySo(k) { return /^\d{4}-\d{2}-\d{2}$/.test(k) ? k : null; }
+
+  G.bdBangChung = function () {
+    var j = G.S.journal || {}, chot = G.S.chotKhNgay || {}, test = G.S.test || {};
+    var ngay = [];
+    Object.keys(j).forEach(function (k) {
+      var v = j[k], co = typeof v === 'string' ? v.trim().length > 2 : !!v;
+      if (co && ngaySo(k)) ngay.push(k);
+    });
+    Object.keys(chot).forEach(function (k) { if (ngaySo(k) && ngay.indexOf(k) < 0) ngay.push(k); });
+    ngay.sort();
+
+    /* Chuỗi dài nhất: ngày liền nhau, tính bằng chênh lệch đúng một ngày */
+    var dai = 0, chay = 0, truoc = null;
+    ngay.forEach(function (d) {
+      var t = new Date(d + 'T00:00:00').getTime();
+      chay = (truoc !== null && t - truoc === 86400000) ? chay + 1 : 1;
+      if (chay > dai) dai = chay;
+      truoc = t;
+    });
+    var bai = 0;
+    Object.keys(test).forEach(function (k) { if (test[k] && test[k].xong) bai++; });
+    return { toi: ngay.length, chuoi: dai, bai: bai, ngay: ngay };
+  };
+
+  /* ─── Cấp độ ───
+     Đi từ cấp 1 lên, dừng ở cấp đầu tiên CHƯA đạt. Không nhảy cóc: đạt
+     điều kiện cấp 5 mà chưa đạt cấp 3 thì vẫn đứng ở cấp 2 — vì mỗi cấp
+     mở ra một bánh đà, và bánh đà sau dựa lên bánh đà trước. */
+  G.bdCap = function () {
+    var b = G.bdBangChung(), ds = G.BD_CAP || [], dat = 0;
+    for (var i = 0; i < ds.length; i++) {
+      var dk = ds[i].dk || {};
+      if (b.toi < (dk.toi || 0)) break;
+      if (dk.chuoi && b.chuoi < dk.chuoi) break;
+      if (dk.bai && b.bai < dk.bai) break;
+      dat = ds[i].cap;
+    }
+    var sau = ds.filter(function (c) { return c.cap === dat + 1; })[0] || null;
+    return { cap: dat, bangChung: b,
+      hienTai: ds.filter(function (c) { return c.cap === dat; })[0] || null,
+      tiepTheo: sau,
+      thieu: sau ? thieuGi(b, sau.dk || {}) : [] };
+  };
+
+  function thieuGi(b, dk) {
+    var t = [];
+    if (dk.toi && b.toi < dk.toi) t.push('còn ' + (dk.toi - b.toi) + ' tối có ghi');
+    if (dk.chuoi && b.chuoi < dk.chuoi) t.push('cần một chuỗi ' + dk.chuoi + ' ngày liền (dài nhất đang là ' + b.chuoi + ')');
+    if (dk.bai && b.bai < dk.bai) t.push('còn ' + (dk.bai - b.bai) + ' bài đánh giá');
+    return t;
+  }
+
+  /* ─── Bánh đà nào đã mở ───
+     Mỗi cấp mở một bánh đà, theo đúng thứ tự. Cấp 0 thì chưa mở cái nào —
+     và nói thẳng là chưa, chứ không mở sẵn cả mười cho đẹp. */
+  G.bdDaMo = function () {
+    var c = G.bdCap().cap;
+    return (G.BD_LON || []).filter(function (b) { return b.so <= c; });
+  };
+
+  /* ─── Việc gợi ý tiếp theo ───
+     Lấy từ bánh đà vừa mở gần nhất, việc nhỏ đầu tiên chưa đánh dấu. Một
+     việc, không phải mười — giao mười việc cho một nhà đang mệt là đúng
+     loại lãng phí LP-THUA trong bảng tinh gọn. */
+  G.bdViecTiep = function () {
+    var mo = G.bdDaMo();
+    if (!mo.length) return null;
+    var b = mo[mo.length - 1];
+    var da = (G.S.checks || {});
+    for (var i = 0; i < b.nho.length; i++) if (!da['bd-' + b.nho[i].ma]) return { lon: b, nho: b.nho[i] };
+    return { lon: b, nho: b.nho[0] };
+  };
+
+  G.bdChonCua = function (cap) {
+    return (G.BD_CHON || []).filter(function (c) { return c.cap === cap; })[0] || null;
+  };
+
+  /* ─── Soi chính cấu trúc ───
+     Mười bánh đà lớn, mỗi cái đúng mười nhỏ, mã không trùng, vòng nào
+     cũng khép. Đây là phép đo mà bộ kiểm phát hành gọi tới. */
+  G.bdSoiCauTruc = function () {
+    var L = G.BD_LON || [], ma = {}, trung = [], thieuNho = [], vongHo = [], thieuDau = [];
+    L.forEach(function (b) {
+      if ((b.nho || []).length !== 10) thieuNho.push(b.ma + ':' + (b.nho || []).length);
+      if (!b.dau) thieuDau.push(b.ma);
+      /* Vòng khép cần ít nhất ba mũi tên: A→B→C→(quay lại A) */
+      if ((String(b.vong || '').split('→').length - 1) < 3) vongHo.push(b.ma);
+      (b.nho || []).forEach(function (n) {
+        if (ma[n.ma]) trung.push(n.ma); else ma[n.ma] = 1;
+      });
+    });
+    var caps = (G.BD_CAP || []).map(function (c) { return c.cap; });
+    return { soLon: L.length, soNho: Object.keys(ma).length,
+      trung: trung, thieuNho: thieuNho, vongHo: vongHo, thieuDau: thieuDau,
+      capLienTuc: caps.every(function (c, i) { return c === i + 1; }),
+      soCap: caps.length };
+  };
+
+  /* ─── Điều kiện máy đọc có khớp với lời hứa trên màn không ───
+     `dk` là điều kiện máy dùng; `mocThat` là cùng điều kiện viết bằng lời
+     cho gia đình. Lệch nhau thì màn hình hứa một đằng máy mở một nẻo. So
+     bằng cách rút mọi con số trong `mocThat` và đòi chúng chứa đủ các số
+     trong `dk`. */
+  G.bdSoiLoiHua = function () {
+    return (G.BD_CAP || []).filter(function (c) {
+      var so = (String(c.mocThat || '').match(/\d+/g) || []).map(Number);
+      var dk = c.dk || {};
+      return ['toi', 'chuoi', 'bai'].some(function (k) {
+        return dk[k] && so.indexOf(dk[k]) < 0;
+      });
+    }).map(function (c) { return c.cap; });
+  };
+
+  /* ═══════════ MÀN: MƯỜI BÁNH ĐÀ ═══════════ */
+  G.VIEWS['banh-da'] = function () {
+    if (!G.BD_LON)
+      return U.empty('Chưa mở được phần bánh đà',
+        'Phần này nằm trong gói nền. Đăng nhập lại để nạp.');
+
+    var t = G.bdCap();
+    var viec = G.bdViecTiep();
+    var chon = G.bdChonCua(t.cap + 1) || G.bdChonCua(t.cap);
+
+    var o = U.ph({ eyebrow: 'MƯỜI BÁNH ĐÀ', ic: 'orbit', grad: 1,
+      t: 'Việc trước đẻ ra sức cho việc sau',
+      lead: 'Một danh sách việc thì làm xong là hết. Một bánh đà thì tới một điểm nó tự quay. ' +
+        'Mọi mốc dưới đây mở bằng chính thứ nhà mình đã ghi — không có mốc nào mở bằng cách bấm nút.' });
+
+    /* Cấp hiện tại — nói thẳng khi chưa có gì */
+    if (!t.cap) {
+      o += '<div class="card mb" style="border-color:#B4720F2e">' +
+        '<b>Chưa có gì để đo</b>' +
+        '<p class="sm dim mt" style="line-height:1.8">Nhà mình chưa ghi tối nào, nên chưa có con số nào để nói. ' +
+        'Bên em không mở sẵn mười bánh đà cho đẹp — mở sẵn thì nhìn thì vui mà không có nghĩa gì.</p>' +
+        '<p class="sm mt" style="line-height:1.8"><b>Việc duy nhất của tối nay:</b> ghi ba dòng — ' +
+        'giờ ngồi vào bàn, giờ rời bàn, số lần phải nhắc.</p>' +
+        '<button class="btn pri blk mt" data-v="nhat-ky-vi-tri">' + ic('book') + 'Mở sổ ghi tối nay</button></div>';
+    } else {
+      var ht = t.hienTai || {};
+      o += '<div class="card mb" style="border-color:' + (ht.c || '#0B7350') + '2e">' +
+        '<div class="row wrap" style="gap:10px;align-items:baseline">' +
+        '<span class="tiny up" style="color:' + ht.c + '">CẤP ' + t.cap + ' / 10</span>' +
+        '<b>' + h(ht.ten || '') + '</b></div>' +
+        '<p class="sm mt" style="line-height:1.8"><b>Điểm chạm của cấp này:</b> ' + h(ht.wow || '') + '</p>' +
+        '<p class="tiny dim mt">Đọc từ sổ của nhà mình: ' + t.bangChung.toi + ' tối có ghi · ' +
+        'chuỗi dài nhất ' + t.bangChung.chuoi + ' ngày · ' + t.bangChung.bai + ' bài đánh giá.</p></div>';
+    }
+
+    if (t.tiepTheo) {
+      o += '<div class="card mb"><b class="sm">Cấp ' + t.tiepTheo.cap + ' · ' + h(t.tiepTheo.ten) + '</b>' +
+        '<p class="sm dim mt" style="line-height:1.8"><b>Mở khi:</b> ' + h(t.tiepTheo.mocThat) + '</p>' +
+        (t.thieu.length ? '<p class="sm mt" style="line-height:1.8"><b>Còn thiếu:</b> ' +
+          h(t.thieu.join(' · ')) + '</p>' : '') +
+        '<p class="tiny mt" style="line-height:1.7;color:#0B7350"><b>Mở ra thì có gì:</b> ' +
+        h(t.tiepTheo.mo) + '</p></div>';
+    }
+
+    if (viec) {
+      o += '<div class="card mb" style="border-color:' + viec.lon.c + '2e">' +
+        '<span class="tiny up" style="color:' + viec.lon.c + '">VIỆC GỢI Ý TIẾP THEO · ' + h(viec.lon.ten) + '</span>' +
+        '<b class="sm" style="display:block;margin:7px 0">' + h(viec.nho.ten) + '</b>' +
+        '<p class="sm" style="line-height:1.8"><b>Làm:</b> ' + h(viec.nho.viec) + '</p>' +
+        '<p class="sm dim mt" style="line-height:1.8"><b>Sẽ thấy:</b> ' + h(viec.nho.thay) + '</p>' +
+        '<p class="tiny muted mt">Một việc, không phải mười. Giao mười việc cho một nhà đang mệt là làm thừa, không phải làm nhiều.</p></div>';
+    }
+
+    /* Ngã ba của cấp sắp tới — phần học như chơi Cashflow */
+    if (chon) {
+      o += U.sec('Ngã ba sắp tới', 'Mỗi lựa chọn có một cái giá, và cái giá ấy nói bằng số ngày.');
+      o += '<div class="card mb" style="border-color:#BE0E1626">' +
+        '<p class="sm" style="line-height:1.8"><b>Khi nào gặp:</b> ' + h(chon.khi) + '</p>' +
+        '<div class="grid g2 mt">' +
+        '<div class="card" style="border-color:#BE0E1626"><span class="tiny up" style="color:#BE0E16">NHÁNH DỄ</span>' +
+        '<p class="sm mt" style="line-height:1.8">' + h(chon.deChon) + '</p>' +
+        '<p class="tiny mt" style="color:#BE0E16"><b>Giá: chậm hơn ' + chon.giaNgay + ' ngày</b></p></div>' +
+        '<div class="card" style="border-color:#0B735026"><span class="tiny up" style="color:#0B7350">' +
+        h(chon.ai) + ' GỢI Ý</span>' +
+        '<p class="sm mt" style="line-height:1.8">' + h(chon.nenChon) + '</p></div></div>' +
+        '<p class="sm mt" style="line-height:1.8"><b>Vì sao nhánh dễ đắt:</b> ' + h(chon.viSao) + '</p>' +
+        '</div>';
+    }
+
+    /* Mười bánh đà — đã mở thì mở ruột, chưa mở thì chỉ hiện tên và điều kiện */
+    o += U.sec('Mười bánh đà', 'Mỗi bánh đà lớn có mười việc nhỏ. Bánh đà chưa mở thì chưa hiện ruột — mở sẵn là hứa suông.');
+    o += (G.BD_LON || []).map(function (b) {
+      var moRoi = b.so <= t.cap;
+      return '<div class="card mb" style="border-color:' + b.c + (moRoi ? '2e' : '14') + '">' +
+        '<div class="row wrap" style="gap:10px;align-items:baseline">' +
+        '<span class="tiny up" style="color:' + b.c + '">BÁNH ĐÀ ' + b.so + ' · ' + h(b.tang) + '</span>' +
+        '<b>' + h(b.ten) + '</b>' +
+        '<span class="tiny" style="margin-left:auto;color:' + (moRoi ? '#0B7350' : 'var(--ink-4)') + '">' +
+        (moRoi ? 'đã mở' : 'mở ở cấp ' + b.so) + '</span></div>' +
+        '<p class="sm mt" style="line-height:1.8"><b>Vòng:</b> ' + h(b.vong) + '</p>' +
+        (moRoi
+          ? '<p class="sm dim mt" style="line-height:1.8">' + h(b.y) + '</p>' +
+            '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>Dấu hiệu đang đứng:</b> ' + h(b.dau) + '</p>' +
+            '<div class="mt">' + b.nho.map(function (n) {
+              return '<div class="tiny" style="padding:5px 0;border-top:1px solid var(--gita-vien-2)">' +
+                '<b>' + h(n.ten) + '</b> — ' + h(n.viec) +
+                '<div class="muted">' + h(n.thay) + '</div></div>';
+            }).join('') + '</div>'
+          : '<p class="tiny muted mt">Mười việc nhỏ của bánh đà này mở ra khi nhà mình tới cấp ' + b.so + '.</p>') +
+        '</div>';
+    }).join('');
+
+    o += U.sec('Sáu luật của lớp này', '');
+    o += '<div class="card">' + (G.BD_LUAT || []).map(function (l) {
       return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
         '<b class="sm">' + l.no + '. ' + h(l.t) + '</b>' +
         '<p class="tiny dim mt" style="line-height:1.7">' + h(l.y) + '</p></div>';

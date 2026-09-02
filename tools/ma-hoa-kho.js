@@ -69,6 +69,12 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      phụ huynh; gõ G.CV_MUC trong công cụ nhà phát triển là đọc hết. Nay
      CV_MUC đi gói NGHỀ, còn ba đầu việc của cộng tác viên ở CV_MUC_DS
      giữ lại đây vì R15 không được cấp gói nghề. */
+  /* Mười bánh đà: đây là HÀNH TRÌNH CỦA CHÍNH GIA ĐÌNH, nên nó ở gói
+     nền. Giấu nó đi là giấu đúng con đường mình đang mời người ta đi.
+     Riêng BD_DAN — cách Tư vấn và Coach dẫn ở từng ngã ba — đi gói
+     NGHỀ: gia đình đọc được cách dẫn thì buổi nói chuyện mất tác dụng,
+     họ biết trước câu tiếp theo và trả lời theo kịch bản. */
+  'BD_LON', 'BD_CAP', 'BD_CHON', 'BD_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -148,6 +154,7 @@ const NGHE = [
      trong hệ, và vì bảng loại đề xuất nói rõ vai nào quyết chuyện gì —
      tức là một phần sơ đồ quyền quyết định bên trong Học viện. */
   'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT',
+  'BD_DAN',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -520,6 +527,11 @@ const mau = {
      phải mở khung: thiếu CV_MUC thì cả ba màn chỉ dựng ra một thẻ "chưa
      mở được" 1.4 nghìn ký tự, và người mở bản xem thử kết luận đúng như
      anh Quang đã kết luận — không nhìn thấy bảng đầu việc nào cả. */
+  /* Mười bánh đà đi cả vào gói công khai: đây là hành trình mình MỜI
+     người ta đi, nên người chưa đăng nhập cũng phải xem được. Giấu nó
+     đi thì bản xem thử dựng ra một thẻ rỗng, và người mở nó kết luận
+     là hệ thống chưa xong — đúng lỗi đã mắc ba lần trước. */
+  BD_LON: G.BD_LON, BD_CAP: G.BD_CAP, BD_CHON: G.BD_CHON, BD_LUAT: G.BD_LUAT,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')

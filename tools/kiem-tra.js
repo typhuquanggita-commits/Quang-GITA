@@ -74,7 +74,10 @@ const { chromium } = require(PW);
 
   /* Đăng nhập vai cao nhất để mở kho theo cấp phép rồi mới rà toàn vẹn */
   await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-  await p.waitForTimeout(2500);
+  /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
 
   /* ── 1. Toàn vẹn liên kết dữ liệu ── */
   console.log('\n1 · TOÀN VẸN LIÊN KẾT DỮ LIỆU');
@@ -119,7 +122,10 @@ const { chromium } = require(PW);
   let luot = 0, chan = 0; const hong = [];
   for (const u of taiKhoan) {
     await p.evaluate(x => window.G.doLogin(x), u);
-    await p.waitForTimeout(40);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     for (const v of man) {
       const truoc = errs.length;
       const r = await p.evaluate(x => {
@@ -190,7 +196,10 @@ const { chromium } = require(PW);
      thấy 15 bộ. Đó là đúng, và mục kiểm phải đổi vai chứ không phải nới
      phạm vi cấp phép để cho vừa phép kiểm. */
   await p.evaluate(() => window.G.doLogin('admin@gita365.vn'));
-  await p.waitForTimeout(2600);
+  /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
   const t5 = await p.evaluate(() => {
     const G = window.G, T = G.TEST750 || [];
     const soCau = T.reduce((a, b) => a + b.cau.length, 0);
@@ -248,7 +257,10 @@ const { chromium } = require(PW);
 
   console.log('\n6 · MA TRẬN 5 TẦNG & HỆ KHÁCH HÀNG');
   await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-  await p.waitForTimeout(3000);
+  /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
   const t6 = await p.evaluate(() => {
     const G = window.G, M = G.MATRAN || { vande: [], nhom: [] };
     const tang = ['T1','T2','T3','T4','T5'];
@@ -1346,7 +1358,10 @@ const { chromium } = require(PW);
     bao(await coGate(), 'lần đầu vào là thấy màn đăng nhập');
 
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-    await p.waitForTimeout(2500);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     bao(!(await coGate()) && await p.evaluate(() => !!document.getElementById('top')),
       'đăng nhập xong thì vào ứng dụng');
 
@@ -1371,7 +1386,10 @@ const { chromium } = require(PW);
 
     /* Đường 3 · bấm nút đăng xuất */
     await p.evaluate(() => window.G.doLogin('coach@gita365.vn'));
-    await p.waitForTimeout(2500);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     await p.evaluate(() => document.querySelector('#top [data-act="logout"]').click());
     await p.waitForTimeout(600);
     bao(await coGate(), 'bấm nút đăng xuất thì về màn đăng nhập');
@@ -1383,7 +1401,10 @@ const { chromium } = require(PW);
     /* Bốn cách viết khác nhau đều nhận */
     for (const d of ['dang-nhap', 'login', 'dangxuat', 'logout']) {
       await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
-      await p.waitForTimeout(1800);
+      /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
       await p.goto(URL + '#' + d, { waitUntil: 'networkidle' });
       await p.waitForTimeout(900);
       bao(await coGate(), 'địa chỉ #' + d + ' cũng về được màn đăng nhập');
@@ -1401,7 +1422,10 @@ const { chromium } = require(PW);
     /* Trả trạng thái sạch cho các mục sau */
     await p.goto(URL, { waitUntil: 'networkidle' });
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-    await p.waitForTimeout(2500);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
   }
 
   /* ═══════════ 21 · QUÊN MẬT KHẨU · PHÍA ỨNG DỤNG ═══════════ */
@@ -1460,7 +1484,10 @@ const { chromium } = require(PW);
 
     await p.goto(URL, { waitUntil: 'networkidle' });
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-    await p.waitForTimeout(2500);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
   }
 
   /* ═══════════ 22 · KHÔNG MỤC NÀO CHẾT TRONG TRÌNH ĐƠN ═══════════
@@ -1523,7 +1550,10 @@ const { chromium } = require(PW);
   {
     async function thuVai(u) {
       await p.evaluate(x => window.G.doLogin(x), u);
-      await p.waitForTimeout(2200);
+      /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
       return await p.evaluate(() => {
         const G = window.G;
         function ban(ten, opt){
@@ -1636,7 +1666,10 @@ const { chromium } = require(PW);
       await p.reload({ waitUntil: 'networkidle' });
       await p.waitForTimeout(400);
       await p.evaluate(x => window.G.doLogin(x), u);
-      await p.waitForTimeout(1500);
+      /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     };
 
     await dangNhap('coach@gita365.vn');
@@ -1772,7 +1805,10 @@ const { chromium } = require(PW);
     await p.reload({ waitUntil: 'networkidle' });
     await p.waitForTimeout(400);
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-    await p.waitForTimeout(1800);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
 
     const ch = await p.evaluate(() => {
       const G = window.G, C = G.CHUYEN || [], r = {};
@@ -1827,7 +1863,10 @@ const { chromium } = require(PW);
       await p.reload({ waitUntil: 'networkidle' });
       await p.waitForTimeout(400);
       await p.evaluate(x => window.G.doLogin(x), u);
-      await p.waitForTimeout(1500);
+      /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
       vai[ten] = await p.evaluate(() => {
         const G = window.G;
         return { cap: G.chCapCuaToi(), so: G.chKhoMoDuoc().length,
@@ -1856,7 +1895,10 @@ const { chromium } = require(PW);
     await p.reload({ waitUntil: 'networkidle' });
     await p.waitForTimeout(400);
     await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
-    await p.waitForTimeout(1500);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
 
     const nkd = await p.evaluate(() => {
       const G = window.G, r = {};
@@ -1968,7 +2010,10 @@ const { chromium } = require(PW);
       await p.reload({ waitUntil: 'networkidle' });
       await p.waitForTimeout(400);
       await p.evaluate(x => window.G.doLogin(x), u);
-      await p.waitForTimeout(1500);
+      /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
       de[ten] = await p.evaluate(() => ({
         thi: window.G.VIEWS['thi-viet'](),
         so: window.G.VIEWS['nhat-ky-vi-tri']()
@@ -1990,7 +2035,10 @@ const { chromium } = require(PW);
     await p.reload({ waitUntil: 'networkidle' });
     await p.waitForTimeout(400);
     await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
-    await p.waitForTimeout(1500);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
 
     const tgd = await p.evaluate(() => {
       const G = window.G, r = {};
@@ -2080,7 +2128,10 @@ const { chromium } = require(PW);
     await p.reload({ waitUntil: 'networkidle' });
     await p.waitForTimeout(400);
     await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
-    await p.waitForTimeout(1600);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
 
     const gt = await p.evaluate(() => {
       const G = window.G, r = {};
@@ -2161,7 +2212,10 @@ const { chromium } = require(PW);
     await p.reload({ waitUntil: 'networkidle' });
     await p.waitForTimeout(400);
     await p.evaluate(() => window.G.doLogin('tuvan@gita365.vn'));
-    await p.waitForTimeout(1600);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     const dn = await p.evaluate(() => window.G.VIEWS['gioi-thieu']());
     bao(dn.indexOf('DÙNG BẢN NÀY KHI NGỒI TRƯỚC GIA ĐÌNH') >= 0,
       'đội ngũ có bản nói lại cho gọn khi ngồi trước gia đình');
@@ -2176,7 +2230,10 @@ const { chromium } = require(PW);
     await p.reload({ waitUntil: 'networkidle' });
     await p.waitForTimeout(400);
     await p.evaluate(() => window.G.doLogin('coach@gita365.vn'));
-    await p.waitForTimeout(1800);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
 
     const kho = await p.evaluate(() => {
       const G = window.G, r = {};
@@ -2366,7 +2423,10 @@ const { chromium } = require(PW);
       await p.reload({ waitUntil: 'networkidle' });
       await p.waitForTimeout(400);
       await p.evaluate(x => window.G.doLogin(x), u);
-      await p.waitForTimeout(1500);
+      /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
       vaiKhac[ten] = await p.evaluate(() => ({
         vai: window.G.shVaiCuaToi(),
         soCau: window.G.shKhoCua(window.G.shVaiCuaToi()).length,
@@ -2391,7 +2451,10 @@ const { chromium } = require(PW);
     await p.reload({ waitUntil: 'networkidle' });
     await p.waitForTimeout(400);
     await p.evaluate(() => window.G.doLogin('hocvien@gita365.vn'));
-    await p.waitForTimeout(1600);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
 
     const tg = await p.evaluate(() => {
       const G = window.G, C = G.CHUYEN_TG || [], r = {};
@@ -2496,7 +2559,10 @@ const { chromium } = require(PW);
        nhập bằng một vai CÓ gói nghề; trước đây nó đo trên vai đang đăng
        nhập sẵn và đúng được là nhờ kho nằm ở gói nền. */
     await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
-    await p.waitForTimeout(2600);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     const mb = await p.evaluate(() => {
       const G = window.G;
       if (!G.MT_BANG) return { co: false };
@@ -2562,7 +2628,10 @@ const { chromium } = require(PW);
        — không thì mọi phép đếm đều ra 0 và mọi phép lọc đều "đạt" một cách
        rỗng tuếch. */
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-    await p.waitForTimeout(2000);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     const kt = await p.evaluate(() => {
       const G = window.G;
       const van = {}; ((G.MATRAN && G.MATRAN.vande) || []).forEach(v => { van[v.ma] = 1; });
@@ -2638,7 +2707,10 @@ const { chromium } = require(PW);
     console.log('  (bỏ qua — cần bộ khoá để mở kho nghề)');
   } else {
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-    await p.waitForTimeout(2000);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     const ruot = await p.evaluate(() => {
       const G = window.G;
       const K = G.KICHBAN || [], TH = G.TINHHUONG || [];
@@ -2697,7 +2769,10 @@ const { chromium } = require(PW);
     console.log('  (bỏ qua — cần bộ khoá để nạp chuẩn soát)');
   } else {
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-    await p.waitForTimeout(2200);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     const ts = await p.evaluate(() => {
       const G = window.G;
       if (!G.soatTatCa) return { co: false };
@@ -3626,7 +3701,10 @@ const { chromium } = require(PW);
     for (const [u, ten] of [['hocvien@gita365.vn', 'HS'], ['phuhuynh@gita365.vn', 'PH'],
                             ['coach@gita365.vn', 'COACH'], ['daisu@gita365.vn', 'CTV']]) {
       await p.evaluate(x => window.G.doLogin(x), u);
-      await p.waitForTimeout(1800);
+      /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
       theoVai[ten] = await p.evaluate(() => {
         const G = window.G, c = G.clgChon('ban-do');
         return { cap: G.chCapCuaToi(), ma: c && c.ma };
@@ -3640,7 +3718,10 @@ const { chromium } = require(PW);
       'cùng một màn nhưng bốn cấp nhận bốn chuyện khác nhau', ma.join(' '));
 
     await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-    await p.waitForTimeout(2000);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
   }
 
 
@@ -4083,7 +4164,10 @@ const { chromium } = require(PW);
       for (const [u, ten] of [['phuhuynh@gita365.vn', 'PH'], ['hocvien@gita365.vn', 'HS'],
                               ['coach@gita365.vn', 'COACH']]) {
         await p.evaluate(x => window.G.doLogin(x), u);
-        await p.waitForTimeout(2000);
+        /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
         trongMay[ten] = await p.evaluate(() => ({
           kb: (window.G.KICHBAN || []).length,
           pd: (window.G.PHACDO || []).length,
@@ -4101,7 +4185,7 @@ const { chromium } = require(PW);
             'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
             'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
             'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT',
-            'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT']
+            'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT', 'BD_DAN']
             .filter(k => window.G[k] !== undefined)
         }));
       }
@@ -4131,12 +4215,12 @@ const { chromium } = require(PW);
         trongMay.COACH.cvNoiBo + ' đầu việc · ' + trongMay.COACH.cvXongThat + ' có bằng chứng');
 
       bao(!trongMay.PH.khoNghe.length && !trongMay.HS.khoNghe.length,
-        'khách hàng KHÔNG giữ ba mươi tư kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
+        'khách hàng KHÔNG giữ ba mươi lăm kho nghề trong bộ nhớ — tệp đúng mà đường nạp sai thì vẫn rò, và rò kiểu ấy khó thấy nhất',
         trongMay.PH.khoNghe.concat(trongMay.HS.khoNghe).slice(0, 6).join(' ') ||
-        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/34');
-      bao(trongMay.COACH.khoNghe.length === 34,
-        'người trong nghề vẫn nhận đủ ba mươi tư kho ấy — dời kho không được làm hỏng việc của Coach',
-        trongMay.COACH.khoNghe.length + '/34');
+        'phụ huynh 0 · học viên 0 · Coach ' + trongMay.COACH.khoNghe.length + '/35');
+      bao(trongMay.COACH.khoNghe.length === 35,
+        'người trong nghề vẫn nhận đủ ba mươi lăm kho ấy — dời kho không được làm hỏng việc của Coach',
+        trongMay.COACH.khoNghe.length + '/35');
 
       /* ══ PHÂN LUỒNG DỮ LIỆU: KHO PHẢI ĐI THEO QUYỀN CỦA MÀN HÌNH ══
          Ý định của sản phẩm đã ghi sẵn ở quyền của từng màn. Nếu MỌI màn
@@ -4158,7 +4242,7 @@ const { chromium } = require(PW);
           'NHATBAN', 'DANDAT', 'CHIPHI', 'HEALTH', 'DUYET', 'RASOAT', 'CV_MUC',
           'CL_THAP', 'CL_TANG', 'CL_MUC', 'CL_KETQUA', 'CL_NHIP', 'CL_NHAT', 'CL_LUAT',
           'TG_LANG', 'TG_GON', 'TG_GIAIDOAN', 'TG_LOP', 'TG_GON_LUAT',
-          'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT'];
+          'CT_TRANG', 'CT_LOAI', 'CT_DIEM', 'CT_LUAT', 'BD_DAN'];
         const lac = CHI_NGHE.filter(k => nen[k] !== undefined);
         bao(!lac.length,
           'gói NỀN không mang kho mà mọi màn đọc nó đều khoá ở quyền nghề — ý định nằm ở quyền của màn hình, kho phải đi theo đúng ý định ấy',
@@ -4262,7 +4346,10 @@ const { chromium } = require(PW);
           trongGoi.size + ' kho, không kho nào sót');
 
       await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
-      await p.waitForTimeout(2200);
+      /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     }
   }
 
@@ -4735,6 +4822,12 @@ const { chromium } = require(PW);
      Một hệ chấm bằng lời khai, hoặc chia cho một mẫu số rỗng, thì mọi
      con số nó in ra đều vô nghĩa — mà vẫn trông như có nghĩa. */
   console.log('\n44 · BẢNG CÔNG VIỆC · LUÂN CHUYỂN · KPI');
+  /* Mục này đo danh mục đầu việc của ĐỘI NGŨ, mà danh mục ấy nằm trong
+     gói nghề — nên nó phải đăng nhập bằng vai CÓ gói nghề. Trước bản
+     9.11 nó đo trên vai đang đăng nhập sẵn và đúng được là nhờ may:
+     mục kiểm ngay trước đó tình cờ để lại một tài khoản có gói nghề. */
+  await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+  await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
   {
     const r44 = await p.evaluate(() => {
       const G = window.G, ra = {}, D = 86400000;
@@ -4788,15 +4881,26 @@ const { chromium } = require(PW);
       /* ── KPI: mọi ngày phải nằm trong 0–100, tử số không vượt mẫu số ── */
       G.S.viec = {};
       const mucs = G.cvMucCuaToi('R11').slice(0, 2);
-      const nay = Date.now();
-      for (let d = 14; d >= 3; d--)
+      /* Dựng bản ghi TRONG MỘT THÁNG XÁC ĐỊNH, rồi hỏi đúng tháng ấy.
+         Trước bản 9.11 chỗ này dựng "mười bốn ngày gần nhất" rồi gọi
+         cvKpiThang(null) — tức là hỏi THÁNG HIỆN TẠI. Chạy vào giữa tháng
+         thì đúng; chạy vào mùng 2 thì mười hai trong mười bốn ngày ấy rơi
+         sang tháng trước, tháng này còn một ngày, dưới sàn, và mục kiểm đỏ
+         ở chỗ không có lỗi. Nó xanh suốt hai năm vì chưa lần nào chạy vào
+         đầu tháng — đúng loại lỗi chỉ lộ ra theo ngày trên lịch. */
+      const thangDo = (function () {
+        const t = new Date(); t.setDate(1); t.setMonth(t.getMonth() - 1);
+        return t.getFullYear() + '-' + ('0' + (t.getMonth() + 1)).slice(-2);
+      })();
+      const ngayCuaThang = d => new Date(thangDo + '-' + ('0' + d).slice(-2) + 'T12:00:00').getTime();
+      for (let d = 3; d <= 14; d++)
         mucs.forEach((m, j) => {
-          const han = nay - d * D, k = m.ma + '|' + han + '|' + j;
+          const han = ngayCuaThang(d), k = m.ma + '|' + han + '|' + j;
           G.S.viec[k] = { id: k, ma: m.ma, nguoi: 'R11', nhanLuc: han - D, hanLuc: han,
             batDauLuc: han - D / 2, xongLuc: (d % 4 === 0 && j === 1) ? 0 : han - 3600000,
             bangChung: 'Bằng chứng thử đủ dài để qua ngưỡng.', giaoTu: '', lichSu: [] };
         });
-      const kt = G.cvKpiThang(null, 'R11');
+      const kt = G.cvKpiThang(thangDo, 'R11');
       ra.thangDu = kt.du;
       ra.thangPt = kt.pt;
       ra.hang = kt.hang && kt.hang.ma;
@@ -4808,10 +4912,10 @@ const { chromium } = require(PW);
 
       /* Sàn: tháng ít ngày thì KHÔNG ra số */
       G.S.viec = {};
-      const m0 = mucs[0], h0 = nay - 2 * D;
+      const m0 = mucs[0], h0 = ngayCuaThang(2);
       G.S.viec['x'] = { id: 'x', ma: m0.ma, nguoi: 'R11', nhanLuc: h0 - D, hanLuc: h0,
         batDauLuc: 0, xongLuc: 0, bangChung: '', giaoTu: '', lichSu: [] };
-      const kt2 = G.cvKpiThang(null, 'R11');
+      const kt2 = G.cvKpiThang(thangDo, 'R11');
       ra.sanChanSoAo = kt2.du === false && kt2.pt === null;
 
       G.S.viec = giu; G.S.chotNgay = giuChot; G.S.roleObj = giuVai;
@@ -4954,7 +5058,14 @@ const { chromium } = require(PW);
     const r46 = await p.evaluate(() => {
       const G = window.G, ra = { thieuHoSo: [], sanQuaCao: [], khongRaHang: [], hanKhongDoi: false };
       const giu = G.S.roleObj, giuV = G.S.viec;
-      const D = 86400000, nay = Date.now();
+      const D = 86400000;
+      /* Cùng lý do với khối trên: dựng trong một tháng xác định rồi hỏi
+         đúng tháng ấy, để mục kiểm không phụ thuộc hôm nay là mùng mấy. */
+      const thangDo = (function () {
+        const t = new Date(); t.setDate(1); t.setMonth(t.getMonth() - 1);
+        return t.getFullYear() + '-' + ('0' + (t.getMonth() + 1)).slice(-2);
+      })();
+      const ngayCuaThang = d => new Date(thangDo + '-' + ('0' + d).slice(-2) + 'T12:00:00').getTime();
       (G.ROLES || []).forEach(r => {
         if (!(r.lv <= 12 || r.id === 'R15')) return;
         G.S.roleObj = r;
@@ -4967,14 +5078,14 @@ const { chromium } = require(PW);
         G.S.viec = {};
         let n = 0;
         const ms = G.cvMucCuaToi();
-        for (let d = 28; d >= 1 && n < 260; d--) ms.forEach(m => {
-          const han = nay - d * D, id = m.ma + '|' + han;
+        for (let d = 1; d <= 28 && n < 260; d++) ms.forEach(m => {
+          const han = ngayCuaThang(d), id = m.ma + '|' + han;
           G.S.viec[id] = { id, ma: m.ma, nguoi: r.id, nhanLuc: han - D, hanLuc: han,
             batDauLuc: han - D / 2, xongLuc: han - 3600000,
             bangChung: 'Bằng chứng thử đủ dài để qua ngưỡng kiểm.', giaoTu: '', lichSu: [] };
           n++;
         });
-        const kt = G.cvKpiThang();
+        const kt = G.cvKpiThang(thangDo);
         if (!kt.du || !kt.hang) ra.khongRaHang.push(r.id);
       });
       /* Hạn phải KHÁC nhau theo lớp nhịp — thiếu TG_NHIEMVU thì mọi việc
@@ -5151,7 +5262,10 @@ const { chromium } = require(PW);
   console.log('\n46 · THÁP CHIẾN LƯỢC VÀ CHUỖI NHÂN QUẢ');
   {
     await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
-    await p.waitForTimeout(2600);
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
     const cl = await p.evaluate(() => {
       const G = window.G;
       if (!G.CL_MUC || !G.clSoiChuoi) return { co: false };
@@ -5339,6 +5453,91 @@ const { chromium } = require(PW);
       bao(ct.nhanCoNgay && ct.soLuat === 6,
         'nhận kèm ngày áp thì đóng được, và sáu luật của luồng đều có mặt',
         ct.soLuat + '/6 luật');
+    }
+  }
+
+  /* ── 49. MƯỜI BÁNH ĐÀ ──
+     Lớp này là một trò chơi, và trò chơi nào cũng có người tìm đường tắt.
+     Đường tắt nguy hiểm nhất không phải người dùng tìm ra — mà là chính
+     người viết mã mở sẵn cho tiện: cho bấm để lên cấp, hoặc mở sẵn cả
+     mười bánh đà cho màn hình đỡ trống. Mục này chặn đúng chỗ ấy. */
+  console.log('\n49 · MƯỜI BÁNH ĐÀ');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    /* Chờ GÓI NẠP XONG, không chờ theo đồng hồ. Từ 9.9 gói nghề mở ở
+       nền, nên chờ một số giây cố định là canh may: gói to lên một chút
+       là mục kiểm đo trên kho chưa đầy và đỏ ở chỗ không có lỗi. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const bd = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.BD_LON || !G.bdCap) return { co: false };
+      const ra = { co: true, ct: G.bdSoiCauTruc(), loiHua: G.bdSoiLoiHua() };
+      ra.soChon = (G.BD_CHON || []).length;
+      ra.chonThieu = (G.BD_CHON || []).filter(c => !c.khi || !c.deChon || !c.nenChon || !c.viSao || !c.ai).map(c => c.ma);
+      ra.chonLacCap = (G.BD_CHON || []).filter(c => !(G.BD_CAP || []).some(x => x.cap === c.cap)).map(c => c.ma);
+      ra.capThieuWow = (G.BD_CAP || []).filter(c => !c.wow || !c.mocThat || !c.mo).map(c => c.cap);
+
+      /* Sổ RỖNG thì phải là cấp 0 — không ai được vào cửa đã ở cấp 1 */
+      const giuJ = G.S.journal, giuC = G.S.chotKhNgay, giuT = G.S.test;
+      G.S.journal = {}; G.S.chotKhNgay = {}; G.S.test = {};
+      ra.rongLaCap0 = G.bdCap().cap === 0;
+      ra.rongKhongMoBanhDa = G.bdDaMo().length === 0;
+
+      /* Ba tối rời rạc: lên cấp 1 nhưng KHÔNG lên cấp 2 — cấp 2 đòi chuỗi 7 */
+      const GHI = 'ba dòng tối nay';   /* phải hơn hai ký tự mới tính là có ghi */
+      G.S.journal = { '2026-01-01': GHI, '2026-01-05': GHI, '2026-01-09': GHI };
+      ra.baToiLaCap1 = G.bdCap().cap === 1;
+
+      /* Bảy tối LIỀN NHAU mới lên cấp 2 */
+      G.S.journal = {};
+      for (let d = 1; d <= 7; d++) G.S.journal['2026-02-0' + d] = GHI;
+      const c2 = G.bdCap();
+      ra.bayToiLienLaCap2 = c2.cap === 2 && c2.bangChung.chuoi === 7;
+
+      /* Không nhảy cóc: đủ số tối của cấp 6 nhưng chuỗi ngắn thì vẫn đứng ở cấp 1 */
+      G.S.journal = {};
+      for (let d = 1; d <= 30; d++) G.S.journal['2026-03-' + String(d).padStart(2, '0')] = GHI;
+      /* 30 ngày liền → chuỗi 30, đủ cấp 4; cấp 5 cần 1 bài đánh giá */
+      const c5 = G.bdCap();
+      ra.chanOChoThieuBai = c5.cap === 4;
+
+      G.S.journal = giuJ; G.S.chotKhNgay = giuC; G.S.test = giuT;
+      ra.coDan = !!G.BD_DAN;     /* phụ huynh KHÔNG được có cách dẫn */
+      return ra;
+    });
+    if (!bd.co) {
+      bao(false, 'lớp bánh đà nạp được từ gói nền', 'không thấy BD_LON');
+    } else {
+      bao(bd.ct.soLon === 10 && !bd.ct.thieuNho.length && bd.ct.soNho === 100,
+        'đúng mười bánh đà lớn, mỗi cái đúng mười bánh đà nhỏ — một trăm việc, không thiếu không thừa',
+        bd.ct.thieuNho.join(' ') || bd.ct.soLon + ' × 10 = ' + bd.ct.soNho);
+      bao(!bd.ct.trung.length,
+        'không mã việc nào trùng — mã trùng thì hai việc khác nhau ghi đè dấu đã làm của nhau',
+        bd.ct.trung.join(' ') || '100 mã riêng biệt');
+      bao(!bd.ct.vongHo.length,
+        'vòng nào cũng KHÉP LẠI — phải chỉ ra được A → B → C → quay lại A mạnh hơn; vòng không khép thì đó là danh sách việc, mà danh sách việc làm xong là hết',
+        bd.ct.vongHo.join(' ') || '10/10 vòng khép');
+      bao(!bd.ct.thieuDau.length,
+        'bánh đà nào cũng nói rõ DẤU HIỆU NÓ ĐANG ĐỨNG — biết lúc nào nó ngừng quay mới sửa được',
+        bd.ct.thieuDau.join(' ') || '10/10 có dấu hiệu');
+      bao(bd.ct.soCap === 10 && bd.ct.capLienTuc && !bd.capThieuWow.length,
+        'đủ mười cấp liên tục, cấp nào cũng có MỐC THẬT · MỞ RA GÌ · ĐIỂM CHẠM',
+        bd.capThieuWow.join(' ') || '10/10 cấp đủ ba cột');
+      bao(!bd.loiHua.length,
+        'điều kiện MÁY ĐỌC khớp với lời hứa viết cho gia đình — lệch nhau thì màn hình hứa một đằng, máy mở một nẻo, và mất lòng tin vào cả bảng',
+        bd.loiHua.join(' ') || '10/10 khớp');
+      bao(bd.rongLaCap0 && bd.rongKhongMoBanhDa,
+        'sổ RỖNG thì là cấp 0 và KHÔNG mở bánh đà nào — mở sẵn cho màn hình đỡ trống là hứa suông, và hứa suông ở màn đầu thì mất người ngay ở màn đầu');
+      bao(bd.baToiLaCap1 && bd.bayToiLienLaCap2,
+        'ba tối rời rạc lên được cấp 1 nhưng KHÔNG lên cấp 2 — cấp 2 đòi bảy ngày LIỀN NHAU, và chuỗi mới là thứ tạo ra nếp');
+      bao(bd.chanOChoThieuBai,
+        'ba mươi ngày liền vẫn đứng ở cấp 4 vì chưa làm bài đánh giá — không nhảy cóc, vì mỗi cấp mở một bánh đà và bánh đà sau dựa lên bánh đà trước');
+      bao(bd.soChon === 10 && !bd.chonThieu.length && !bd.chonLacCap.length,
+        'mười ngã ba, cái nào cũng đủ KHI NÀO GẶP · NHÁNH DỄ · NHÁNH ĐƯỢC GỢI Ý · AI GỢI Ý · VÌ SAO NHÁNH DỄ ĐẮT',
+        bd.chonThieu.concat(bd.chonLacCap).join(' ') || '10/10 đủ năm cột');
+      bao(!bd.coDan,
+        'gia đình KHÔNG đọc được CÁCH DẪN của Tư vấn và Coach — đọc được thì họ biết trước câu tiếp theo và trả lời theo kịch bản, buổi nói chuyện mất hết tác dụng',
+        bd.coDan ? 'BD_DAN lọt xuống máy phụ huynh' : 'BD_DAN chỉ ở gói nghề');
     }
   }
 
