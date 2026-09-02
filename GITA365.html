@@ -1388,6 +1388,61 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .pv-moi b{display:block;font-size:12.5px;line-height:1.35}
 .pv-moi span{display:block;font-size:11px;color:var(--ink-3);line-height:1.45;margin-top:2px}
 
+/* ═══════════════════════════════════════════════════════════════
+   KHUNG ẢNH VÀ HÌNH DỰNG TỪ KHO  ·  v9.25
+   Hai lớp khác nhau về bản chất: .hinh-kho là hình máy tự dựng từ kho
+   (luôn có, không cần tệp); .ka-* là chỗ chờ chủ hệ đưa ảnh thật vào.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Hình dựng từ kho ── */
+.hinh-kho{margin:18px 0;padding:18px 16px 14px;border:1px solid var(--line);
+  border-radius:16px;background:var(--surface);overflow:hidden}
+.hinh-nhan{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-4);margin-bottom:12px}
+/* Hình rộng phải cuộn TRONG khung của nó — thân trang không bao giờ
+   được cuộn ngang, vì trên điện thoại đó là lỗi không ai báo mà ai
+   cũng gặp. */
+.hinh-ve{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.hinh-ve svg{color:var(--ink-3);min-width:300px}
+.hinh-y{font-size:11.5px;line-height:1.7;color:var(--ink-3);margin-top:12px}
+
+/* ── Khung ảnh đã điền ── */
+.ka-khung{margin:18px 0}
+.ka-khung .ka-o{position:relative;width:100%;padding-top:var(--ka-ty,56.25%);
+  border-radius:16px;overflow:hidden;background:var(--surface);
+  border:1px solid var(--line)}
+.ka-khung .ka-o>img,.ka-khung .ka-o>iframe{position:absolute;inset:0;
+  width:100%;height:100%;object-fit:cover;border:0;display:block}
+.ka-khung figcaption{font-size:11.5px;line-height:1.6;color:var(--ink-3);
+  margin-top:9px}
+.ka-the .ka-o{max-width:340px;margin-inline:auto}
+.ka-dai .ka-o{border-radius:12px}
+
+/* ── Khung còn trống: CHỈ chủ hệ thấy ──
+   Cố ý trông như một chỗ chờ, không trông như một lỗi. Nó là việc còn
+   phải làm, và việc còn phải làm thì cần đọc được chứ không cần đỏ. */
+.ka-cho{margin:18px 0;padding:14px;border:1px dashed var(--gita-vien-2);
+  border-radius:16px;background:var(--gita-mo-1)}
+.ka-cho .ka-o{position:relative;width:100%;min-height:132px;
+  border-radius:12px;background:transparent;border:1px dashed var(--line-2)}
+.ka-giua{position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:6px;text-align:center;padding:14px}
+.ka-giua>svg{color:var(--gita);opacity:.75}
+.ka-giua b{font-size:13px;line-height:1.4;color:var(--ink-2)}
+.ka-ky{font-size:10.5px;letter-spacing:.06em;color:var(--ink-4)}
+.ka-brief,.ka-vi,.ka-khoa,.ka-loi{font-size:11.5px;line-height:1.7;margin-top:9px}
+.ka-brief{color:var(--ink-2)}
+.ka-vi{color:var(--ink-3)}
+.ka-khoa{color:var(--ink-4)}
+.ka-khoa code{font-size:11px;padding:1px 5px;border-radius:5px;
+  background:var(--nen-hop);border:1px solid var(--line)}
+.ka-loi{color:var(--gita-do)}
+
+@media (max-width:640px){
+  .hinh-kho{padding:14px 12px 12px}
+  .ka-the .ka-o{max-width:100%}
+}
+
 </style>
 
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -1551,12 +1606,12 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 75 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 76 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 91 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 92 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    16 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -1597,7 +1652,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.24',
+  version: '9.25',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -4939,6 +4994,7 @@ G.THUOC_CAP_PHEP = [
   'HN_NGO','HN_NGO_LUAT',
   'VZ_LOI','VZ_VUNG','VZ_VUNG_LUAT','VZ_ROI','VZ_ROI_LUAT','VZ_LUAT',
   'CS_LOI','CS_TANG','CS_TANG_LUAT','CS_NEN','CS_LUAT',
+  'KA_LOAI','KA_TY','KA_CHO','KA_LUAT','KA_ANTOAN',
   'CS_VONG','CS_VONG_LUAT','CS_DULIEU','CS_DULIEU_LUAT',
   'CS_QUYMO','CS_LECH','CS_CHOCHU',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
@@ -9227,6 +9283,15 @@ G.datND = function(khoa, giaTri){
   if(!G.can('sua_noi_dung')){ U.toast('Chỉ Super Admin sửa được nội dung hiển thị.','err'); return false; }
   giaTri = String(giaTri == null ? '' : giaTri).trim();
   if(giaTri.length > 400){ U.toast('Chữ quá dài — tối đa 400 ký tự.','err'); return false; }
+  /* Khoá khung ảnh nhận một ĐỊA CHỈ, không nhận chữ. Chặn ngay tại chỗ
+     dán, đừng để tới lúc dựng màn: javascript: và data: là hai đường
+     quen nhất để nhét mã vào một ô tưởng là vô hại, còn http:// thì
+     trình duyệt chặn TRONG IM LẶNG — chủ hệ dán xong thấy trống và
+     tưởng mình dán sai. Nói ngay thì mất ba giây. */
+  if(khoa.slice(0,6) === 'khung.' && giaTri && G.kaHopLe){
+    var kq = G.kaHopLe(giaTri);
+    if(!kq.ok){ U.toast(kq.loi || 'Địa chỉ không dùng được.','err'); return false; }
+  }
   if(!giaTri) delete G.SUA_ND[khoa];
   else G.SUA_ND[khoa] = giaTri;
   G.luuNoiDung();
@@ -9254,6 +9319,17 @@ G.mucSuaDuoc = function(){
   var L = (G.UI && (G.UI[G.LANG] || G.UI.vi)) || {};
   Object.keys(L).forEach(function(k){
     if(typeof L[k] === 'string') ds.push({k:'chu.'+k, nhom:'Chữ giao diện', ten:k, goc:L[k]});
+  });
+  /* Khung ảnh đi qua ĐÚNG lớp này, không dựng lớp thứ hai. Địa chỉ ảnh
+     cũng là một chuỗi sửa được, đồng bộ được, ghi nhật ký được — y hệt
+     một câu chữ. Dựng riêng một kho cho ảnh là để dành một ngày mà bản
+     này đồng bộ được còn bản kia thì không.
+
+     Bản gốc để TRỐNG có chủ đích: chưa có ảnh nào là bản gốc đúng, và
+     mọi khung trống đều hiện lời dặn ngay tại chỗ nó sẽ nằm. */
+  (G.KA_CHO || []).forEach(function(k){
+    ds.push({k:'khung.'+k.ma+'.nguon', nhom:'Khung ảnh · '+k.loai,
+             ten:k.man+' · '+k.ten, goc:'', v:k.man, khung:1});
   });
   return ds;
 };
@@ -21772,6 +21848,8 @@ G.VIEWS = G.VIEWS || {};
       lead: 'Người bán hàng nào cũng biết năm điều này là sai. Biết mà vẫn làm, vì lúc sắp mất một đơn ' +
         'thì lý lẽ nào cũng nghe hợp lý — nên chúng nằm ở đây, chỗ người bị thiệt đọc được.' });
 
+    o += G.kaKhung ? G.kaKhung('so-tay-tu-van', 'dau') : '';
+
     o += U.sec('Năm điều người tư vấn KHÔNG được làm với nhà mình',
       ((G.TV_LANRANH_LUAT || {}).inODau || ''));
     o += '<div class="card mb" style="border-color:#BE0E163e">' + lr.map(function (r) {
@@ -22270,6 +22348,8 @@ G.VIEWS = G.VIEWS || {};
     var o = U.ph({ eyebrow: 'SỔ TAY CỦA GIA ĐÌNH · 24 TRANG · 30 CÂU', ic: 'sun', grad: 1,
       t: dd.chu || '', lead: dd.them || '' });
 
+    o += G.kaKhung ? G.kaKhung('so-tay-gia-dinh', 'dau') : '';
+
     /* ── Trang 2 · bản đồ khẩn, lên trước mọi thứ ── */
     o += U.sec('Trang 2 — cần gấp thì làm gì',
       'Trang này in ngay sau bìa, vì lúc cần nó thì không ai còn sức lật tìm.');
@@ -22301,6 +22381,8 @@ G.VIEWS = G.VIEWS || {};
       ' ' + h((G.SG_QUYEN7_LUAT || {}).viCoChuKy || '') + '</p></div>';
 
     /* ── Năm điều người đi cùng không được làm ── */
+    o += G.kaKhung ? G.kaKhung('so-tay-gia-dinh', 'sau-quyen') : '';
+
     o += U.sec('Năm điều người đi cùng không được làm', ((G.SG_CAM5_LUAT || {}).saiThiSao || ''));
     o += U.tbl(['Mã', 'Không được làm', 'Vì sao'],
       (G.SG_CAM5 || []).map(function (c) { return [h(c.ma), h(c.t), h(c.y)]; }));
@@ -22636,6 +22718,8 @@ G.VIEWS = G.VIEWS || {};
       t: 'Năm câu hệ chưa trả lời được',
       lead: 'In ở đầu, không giấu ở cuối. Câu để ngỏ xếp xuống cuối là câu chìm, ' +
         'và câu chìm thì năm sau không ai nhắc lại.' });
+
+    o += G.kaKhung ? G.kaKhung('hansei-sach', 'dau') : '';
 
     o += '<div class="card mb" style="border-color:#B4720F3e">' + (G.HN_NGO || []).map(function (n) {
       return '<div style="padding:10px 0;border-bottom:1px solid var(--gita-vien-2)">' +
@@ -23015,6 +23099,8 @@ G.VIEWS = G.VIEWS || {};
     var o = U.ph({ eyebrow: 'MỘT HÀNH TRÌNH · NĂM TẦNG THỬ THÁCH', ic: 'compass', grad: 1,
       t: d.ten || '', lead: d.la || '' });
 
+    o += G.kaKhung ? G.kaKhung('hanh-trinh-5-tang', 'dau') : '';
+
     /* ── Đích: không phải bậc cuối ── */
     o += '<div class="card mb" style="border-color:#0B73503e">' +
       '<span class="tiny up" style="color:#0B7350">ĐÍCH KHÔNG PHẢI TẦNG CAO NHẤT</span>' +
@@ -23090,6 +23176,8 @@ G.VIEWS = G.VIEWS || {};
       }).join('') + '</div>';
 
     var lech = G.htSoiLech();
+    o += G.kaKhung ? G.kaKhung('hanh-trinh-5-tang', 'sau-kc') : '';
+
     o += U.sec('Sáu chỗ chưa khớp, và đã làm gì' + (lech.length ? ' — LỆCH: ' + (lech.join(' ')) : ''),
       'Mỗi chỗ sửa phải rơi xuống một kho có thật.');
     o += U.tbl(['#', 'Chỗ chưa khớp', 'Thấy gì', 'Đã làm gì', 'Rơi xuống đâu'],
@@ -23278,6 +23366,8 @@ G.VIEWS = G.VIEWS || {};
       lead: 'Năm vùng nhà mình đi qua, và bốn chỗ rơi rình sẵn giữa các vùng. ' +
         'Chỗ có tên là chỗ gọi được; chỗ gọi được là chỗ ra được.' });
 
+    o += G.kaKhung ? G.kaKhung('sau-vung', 'dau') : '';
+
     /* ── Lõi ── */
     o += '<div class="card mb" style="border-color:#D4703A5e">' +
       '<span class="tiny up" style="color:#D4703A">' + h(loi.ten || '') + ' · ' + h(loi.oDau || '') + '</span>' +
@@ -23304,6 +23394,8 @@ G.VIEWS = G.VIEWS || {};
       h((G.VZ_VUNG_LUAT || {}).vi || '') + '</p>';
 
     /* ── Bốn chỗ rơi ── */
+    o += G.kaKhung ? G.kaKhung('sau-vung', 'sau-roi') : '';
+
     var sr = G.vzSoiRoi();
     o += U.sec('Bốn chỗ rơi có tên' + (sr.length ? ' — LỆCH: ' + (sr.join(' ')) : ''),
       ((G.VZ_ROI_LUAT || {}).nguoiTrongDoKhongBiet || ''));
@@ -23331,6 +23423,349 @@ G.VIEWS = G.VIEWS || {};
         '<p class="tiny dim mt" style="line-height:1.7">' + h(l.y) + '</p></div>';
     }).join('') + '</div>';
     return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/khung-hinh.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY KHUNG ẢNH VÀ HÌNH DỰNG TỪ KHO
+
+   Kho chuẩn ở kho-goc/data.khung-hinh.js.
+
+   ═══ NỬA MỘT: HÌNH DỰNG TỪ KHO ═══
+
+   Bốn bộ vẽ, không bộ nào biết gì về Coach hay về tầng. Chúng nhận một
+   mảng và trả về SVG:
+
+     veThangBac(ds)  n bậc nối nhau, mỗi bậc một màu của chính nó
+     veVongTron(ds)  n bước xếp vòng, có mũi tên khép lại
+     veCham(ds)      n chấm, đặc là có, rỗng là chưa
+     vePheu(ds)      n tầng thu nhỏ dần, mỗi tầng một con số
+
+   Vì sao SVG dựng bằng mã chứ không phải tệp ảnh:
+     · không thêm lượt tải nào — bản một tệp chạy ngoại tuyến vẫn có hình
+     · phóng to không vỡ, và người lớn tuổi phóng to thật
+     · KHÔNG LỆCH ĐƯỢC với chữ, vì nó đọc cùng cái kho chữ đang đọc
+     · không có gì để kéo ra màn hình nền
+
+   Điều cuối cùng ấy không phải tiện thể. Một tấm .png trên màn là một
+   thứ kéo phát là xong, và cả lớp khoá sao chép ở bản 8.4 coi như hở
+   đúng một chỗ.
+
+   ═══ NỬA HAI: KHUNG CHỜ CHỦ HỆ ═══
+
+   Địa chỉ ảnh nằm ở G.nd('khung.<mã>.nguon') — CÙNG lớp với mọi chữ sửa
+   được, nên chủ hệ dán vào đúng cái màn đang dùng để sửa chữ, và mọi
+   lần dán đều vào nhật ký y như sửa chữ.
+
+   Khung trống chỉ hiện cho người có quyền sửa nội dung. Gia đình không
+   thấy. Lý do ở KA_LUAT điều 3.
+
+   ═══ CHỖ DỄ SAI NHẤT: ĐỊA CHỈ ═══
+
+   kaHopLe() từ chối thẳng thay vì cố lọc. javascript: và data: là hai
+   đường quen nhất để nhét mã vào một ô tưởng là vô hại, và một bộ lọc
+   thì luôn có cách đi vòng — một danh sách CHỈ NHẬN thì không.
+
+   http:// cũng bị từ chối, và đây là chỗ tôi suýt bỏ qua: trang chạy
+   trên https mà kéo ảnh http thì trình duyệt chặn TRONG IM LẶNG. Chủ hệ
+   dán xong, thấy trống, tưởng mình dán sai. Nói ra ngay lúc dán thì mất
+   ba giây; để trình duyệt chặn im thì mất một buổi.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+(function () {
+  var U = G.U, h = U.h;
+
+  /* ═══════════════════════════════════════════════════════
+     NỬA MỘT — BỐN BỘ VẼ
+     ═══════════════════════════════════════════════════════ */
+
+  /* Cột nội dung rộng khoảng 620px. viewBox rộng 1000 thì mọi thứ bị thu
+     0,62 lần — chữ cỡ 14 tụt còn 8,7px, và 8,7px thì người bốn mươi tuổi
+     đọc không nổi. Nên vẽ ở khổ 700, gần đúng khổ thật.
+     Không đặt max-height: nó đánh nhau với width:100% và làm hình méo. */
+  var KHO_RONG = 700;
+  function svg(w, hh, ruot, nhan) {
+    /* width phải nằm trong KIỂU, không nằm trong thuộc tính. Thuộc tính
+       width="100%" cộng với height:auto thì trình duyệt không suy ra
+       được khổ, và nó rơi về cỡ mặc định của một thẻ thay thế: 300px.
+       Hình vẽ ở khổ 700 co xuống 300 thì chữ 16 còn 6,9px.
+       Đặt width trong kiểu thì viewBox làm luôn việc giữ tỉ lệ. */
+    return '<svg viewBox="0 0 ' + w + ' ' + hh + '" preserveAspectRatio="xMidYMid meet" ' +
+      'style="display:block;width:100%;height:auto" ' +
+      'role="img" aria-label="' + h(nhan || '') + '">' + ruot + '</svg>';
+  }
+  /* Chữ trong SVG vẫn là chữ người nhập được — thoát y như trong HTML. */
+  function chu(x, y, t, o) {
+    o = o || {};
+    return '<text x="' + x + '" y="' + y + '"' +
+      ' text-anchor="' + (o.giua ? 'middle' : 'start') + '"' +
+      ' font-size="' + (o.co || 11) + '"' +
+      ' font-weight="' + (o.dam || 400) + '"' +
+      ' fill="' + (o.c || 'currentColor') + '"' +
+      (o.mo ? ' opacity="' + o.mo + '"' : '') + '>' + h(t) + '</text>';
+  }
+  /* Cắt cho vừa bề ngang. SVG không tự xuống dòng — chữ dài tràn ra
+     ngoài khung và trên điện thoại thì tràn hẳn khỏi màn. */
+  function cat(t, n) {
+    t = String(t == null ? '' : t);
+    return t.length > n ? t.slice(0, n - 1) + '…' : t;
+  }
+
+  /* ── Thang n bậc ── */
+  G.veThangBac = function (ds, o) {
+    ds = ds || []; o = o || {};
+    if (!ds.length) return '';
+    var n = ds.length, W = KHO_RONG, cao = 42, day = 26, dem = 11;
+    var H = n * (cao + dem) + 22;
+    var r = '';
+    ds.forEach(function (x, i) {
+      var y = H - 22 - (i + 1) * (cao + dem) + dem;
+      var rong = 190 + (i * (W - 300) / Math.max(1, n - 1));
+      var c = x.c || 'var(--gita)';
+      r += '<rect x="60" y="' + y + '" width="' + rong.toFixed(0) + '" height="' + cao +
+        '" rx="8" fill="' + c + '" opacity="0.14"/>' +
+        '<rect x="60" y="' + y + '" width="4" height="' + cao + '" rx="2" fill="' + c + '"/>' +
+        chu(78, y + 26, cat(x.ten, 34), { co: 16, dam: 700, c: c }) +
+        chu(46, y + 26, String(i + 1), { co: 15, dam: 700, c: c, giua: true, mo: 0.7 });
+      if (x.phu) r += chu(Number(rong) + 74, y + 26, cat(x.phu, 20), { co: 12.5, mo: 0.62 });
+      /* Vạch nối bậc dưới lên bậc trên — cái thang phải TRÔNG như nối */
+      if (i < n - 1)
+        r += '<line x1="62" y1="' + y + '" x2="62" y2="' + (y - dem) +
+          '" stroke="' + c + '" stroke-width="2" opacity="0.4"/>';
+      void day;
+    });
+    return svg(W, H, r, o.nhan || 'Thang ' + n + ' bậc');
+  };
+
+  /* ── Vòng n bước ──
+     Vẽ thành VÒNG chứ không thành hàng, vì đó chính là điều đang phải
+     chứng minh: bước cuối quay về bước đầu. Một danh sách xếp hàng
+     ngang thì mắt đọc nó là một cái thang, dù chữ có nói gì. */
+  G.veVongTron = function (ds, o) {
+    ds = ds || []; o = o || {};
+    if (!ds.length) return '';
+    /* Khung RỘNG hơn cao, không vuông. Vuông thì nhãn của bước bên trái
+       và bên phải thò ra ngoài mép và bị cắt mất đuôi — chỗ hỏng chỉ lộ
+       ra ở đúng hai bước ấy, nên đọc mã không thấy, phải nhìn màn. */
+    var n = ds.length, W = 700, H = 580, tx = W / 2, ty = H / 2, R = 190, r = '';
+    ds.forEach(function (x, i) {
+      var g = (i / n) * 2 * Math.PI - Math.PI / 2;
+      var cx = tx + R * Math.cos(g), cy = ty + R * Math.sin(g);
+      var c = x.c || 'var(--gita)';
+      var dong = x.dongVong === true, br = dong ? 26 : 22;
+      r += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + br +
+        '" fill="' + c + '" opacity="' + (dong ? 0.3 : 0.16) + '"/>' +
+        '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + br +
+        '" fill="none" stroke="' + c + '" stroke-width="' + (dong ? 2 : 1.2) + '" opacity="0.8"/>' +
+        chu(cx, cy + 5, x.nhan || String(i + 1), { co: 14, dam: 700, c: c, giua: true });
+      /* Neo chữ theo góc: bước bên phải thì chữ chạy sang phải, bên trái
+         thì chạy sang trái. Neo giữa hết thì hai bên đè lên vòng tròn. */
+      var co = Math.cos(g), neo = co > 0.3 ? 'start' : co < -0.3 ? 'end' : 'middle';
+      var day = br + (neo === 'middle' ? 22 : 10);
+      var lx = cx + (co > 0.3 ? day : co < -0.3 ? -day : 0);
+      var ly = cy + (Math.abs(co) <= 0.3 ? (Math.sin(g) < 0 ? -(br + 12) : br + 20) : 4);
+      r += '<text x="' + lx.toFixed(1) + '" y="' + ly.toFixed(1) + '" text-anchor="' + neo + '" ' +
+        'font-size="12.5" fill="currentColor" opacity="0.8">' + h(cat(x.ten, 17)) + '</text>';
+    });
+    /* Vòng nền vẽ NÉT ĐỨT: nó không khép bằng thủ tục mà khép bằng một
+       người, và nét đứt nói đúng điều ấy. Mũi tên ở đỉnh chỉ chiều chảy. */
+    r = '<circle cx="' + tx + '" cy="' + ty + '" r="' + R +
+      '" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.18" ' +
+      'stroke-dasharray="6 7"/>' + r;
+    r += '<path d="M' + (tx - 12) + ' ' + (ty - 30) + ' L' + tx + ' ' + (ty - 44) +
+      ' L' + (tx + 12) + ' ' + (ty - 30) + '" fill="none" stroke="currentColor" ' +
+      'stroke-width="2" opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>';
+    r += chu(tx, ty - 4, o.giua || '', { co: 16, dam: 700, giua: true, mo: 0.85 });
+    r += chu(tx, ty + 18, o.giuaPhu || '', { co: 12, giua: true, mo: 0.58 });
+    return svg(W, H, r, o.nhan || 'Vòng ' + n + ' bước');
+  };
+
+  /* ── n chấm: đặc là có, rỗng là chưa ── */
+  G.veCham = function (ds, o) {
+    ds = ds || []; o = o || {};
+    if (!ds.length) return '';
+    var n = ds.length, W = KHO_RONG, H = 104, b = W / n, r = '';
+    ds.forEach(function (x, i) {
+      var cx = b * i + b / 2, c = x.co ? (o.cCo || '#0B7350') : (o.cChua || '#B4720F');
+      r += x.co
+        ? '<circle cx="' + cx.toFixed(1) + '" cy="26" r="15" fill="' + c + '" opacity="0.9"/>' +
+          '<path d="M' + (cx - 6).toFixed(1) + ' 26 l4 4.2 l7.2 -8.2" stroke="#fff" stroke-width="2.4" ' +
+          'fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+        : '<circle cx="' + cx.toFixed(1) + '" cy="26" r="15" fill="none" stroke="' + c +
+          '" stroke-width="2.2" stroke-dasharray="3.5 3.5" opacity="0.95"/>';
+      r += '<text x="' + cx.toFixed(1) + '" y="62" text-anchor="middle" font-size="12" ' +
+        'font-weight="' + (x.co ? 700 : 400) + '" fill="' + c + '">' + h(cat(x.ten, 13)) + '</text>';
+      if (x.phu)
+        r += '<text x="' + cx.toFixed(1) + '" y="80" text-anchor="middle" font-size="10.5" ' +
+          'fill="currentColor" opacity="0.55">' + h(cat(x.phu, 14)) + '</text>';
+    });
+    return svg(W, H, r, o.nhan || n + ' mục');
+  };
+
+  /* ── Phễu n tầng ── */
+  G.vePheu = function (ds, o) {
+    ds = ds || []; o = o || {};
+    if (!ds.length) return '';
+    var n = ds.length, W = KHO_RONG, cao = 72, dem = 13, H = n * (cao + dem) + 8, r = '';
+    ds.forEach(function (x, i) {
+      var y = i * (cao + dem);
+      var rong = W - 90 - i * ((W - 300) / Math.max(1, n - 1));
+      var x0 = (W - rong) / 2, c = x.c || 'var(--gita)';
+      r += '<rect x="' + x0.toFixed(0) + '" y="' + y + '" width="' + rong.toFixed(0) +
+        '" height="' + cao + '" rx="10" fill="' + c + '" opacity="0.13"/>' +
+        '<rect x="' + x0.toFixed(0) + '" y="' + y + '" width="' + rong.toFixed(0) +
+        '" height="' + cao + '" rx="10" fill="none" stroke="' + c + '" stroke-width="1.2" opacity="0.55"/>' +
+        chu(W / 2, y + 32, String(x.so), { co: 26, dam: 800, c: c, giua: true }) +
+        chu(W / 2, y + 53, cat(x.ten, 40), { co: 12.5, giua: true, mo: 0.74 });
+      if (i < n - 1)
+        r += '<path d="M' + (W / 2) + ' ' + (y + cao + 1) + ' l0 ' + (dem - 4) + '" stroke="' + c +
+          '" stroke-width="2" opacity="0.45" stroke-linecap="round"/>';
+    });
+    return svg(W, H, r, o.nhan || 'Phễu ' + n + ' tầng');
+  };
+
+  /* Bọc một hình kèm lời chú. Hình không có lời chú thì người xem tự
+     đoán ý, và đoán sai thì hình có hại hơn không có hình. */
+  G.hinhCard = function (svgChuoi, nhan, y) {
+    if (!svgChuoi) return '';
+    return '<div class="hinh-kho">' +
+      (nhan ? '<div class="hinh-nhan">' + h(nhan) + '</div>' : '') +
+      '<div class="hinh-ve">' + svgChuoi + '</div>' +
+      (y ? '<p class="hinh-y">' + h(y) + '</p>' : '') + '</div>';
+  };
+
+  /* ═══════════════════════════════════════════════════════
+     NỬA HAI — KHUNG CHỜ CHỦ HỆ
+     ═══════════════════════════════════════════════════════ */
+
+  G.KA_KHOA = function (ma) { return 'khung.' + ma + '.nguon'; };
+
+  /* CHỈ NHẬN, không lọc. Một bộ lọc thì luôn có cách đi vòng. */
+  G.kaHopLe = function (d) {
+    d = String(d == null ? '' : d).trim();
+    if (!d) return { ok: false, trong: true };
+    var at = G.KA_ANTOAN || {};
+    var xau = (at.tuChoi || []).filter(function (x) {
+      return d.slice(0, x.length).toLowerCase() === x;
+    })[0];
+    if (xau) return { ok: false, loi: 'Không nhận địa chỉ bắt đầu bằng ' + xau +
+      (xau === 'http://' ? '. ' + (at.viSaoTuChoiHttp || '') : '.') };
+    var nhan = (at.chiNhan || []).some(function (x) { return d.slice(0, x.length) === x; });
+    if (!nhan) return { ok: false, loi: 'Chỉ nhận địa chỉ bắt đầu bằng ' +
+      (at.chiNhan || []).join(' hoặc ') + '.' };
+    return { ok: true, d: d };
+  };
+
+  G.kaCua = function (man, cho) {
+    return (G.KA_CHO || []).filter(function (k) {
+      return k.man === man && (cho === undefined || k.cho === cho);
+    });
+  };
+  G.kaNguon = function (ma) {
+    return typeof G.nd === 'function' ? G.nd(G.KA_KHOA(ma), '') : '';
+  };
+  G.kaTyLe = function (ma) {
+    var t = (G.KA_TY || []).filter(function (x) { return x.ma === ma; })[0];
+    return t ? t.so : 56.25;
+  };
+  function laChuHe() { return typeof G.can === 'function' && G.can('sua_noi_dung'); }
+  function biKhoa() { return typeof G.BI_KHOA_CHEP === 'function' && G.BI_KHOA_CHEP(); }
+
+  /* Ảnh và video chịu ĐÚNG luật của chữ. Đưa ảnh vào mà quên khoá là mở
+     một cửa sau ngay cạnh cái cửa đã khoá kỹ ở bản 8.4 — và cửa sau ấy
+     dễ đi hơn cửa trước, vì kéo một tấm ảnh ra màn hình nền là xong. */
+  function chan() {
+    return biKhoa() ? ' draggable="false" oncontextmenu="return false"' +
+      ' style="-webkit-user-drag:none;user-select:none;pointer-events:none"' : '';
+  }
+
+  /* Vẽ MỘT khung. Trống thì chỉ chủ hệ thấy. */
+  G.kaVe = function (k) {
+    if (!k) return '';
+    var d = G.kaNguon(k.ma), kq = G.kaHopLe(d);
+    var ty = G.kaTyLe(k.ty);
+
+    if (!kq.ok) {
+      /* Gia đình không thấy khung trống — KA_LUAT điều 3 */
+      if (!laChuHe()) return '';
+      var loai = (G.KA_LOAI || []).filter(function (x) { return x.ma === k.loai; })[0] || {};
+      return '<div class="ka-cho" style="--ka-ty:' + ty + '%">' +
+        '<div class="ka-o"><div class="ka-giua">' +
+        U.ic(loai.ic || 'image', 'w-4 h-4') +
+        '<b>' + h(k.ten) + '</b>' +
+        '<span class="ka-ky">' + h(loai.ten || k.loai) + ' · ' + h(k.ty) + ' · ' + h(k.vuaMat || '') + '</span>' +
+        '</div></div>' +
+        '<p class="ka-brief"><b>Cần gì:</b> ' + h(k.brief) + '</p>' +
+        '<p class="ka-vi"><b>Vì sao ở đây:</b> ' + h(k.viSaoODay) + '</p>' +
+        (kq.loi ? '<p class="ka-loi">Địa chỉ đang dán không dùng được — ' + h(kq.loi) + '</p>' : '') +
+        '<p class="ka-khoa">Dán địa chỉ ở màn <b>Sửa nội dung hiển thị</b>, khoá <code>' +
+        h(G.KA_KHOA(k.ma)) + '</code></p></div>';
+    }
+
+    var trong;
+    if (k.loai === 'video') {
+      trong = '<iframe src="' + h(kq.d) + '" title="' + h(k.ten) + '" loading="lazy" ' +
+        'allow="accelerometer; encrypted-media; picture-in-picture" ' +
+        'referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-presentation" ' +
+        'frameborder="0" allowfullscreen></iframe>';
+    } else {
+      trong = '<img src="' + h(kq.d) + '" alt="' + h(k.ten) + '" loading="lazy"' + chan() + '>';
+    }
+    return '<figure class="ka-khung ka-' + h(k.loai) + '" style="--ka-ty:' + ty + '%">' +
+      '<div class="ka-o">' + trong + '</div>' +
+      (k.ten ? '<figcaption>' + h(k.ten) + '</figcaption>' : '') + '</figure>';
+  };
+
+  /* Màn hình gọi hàm này ở đúng mốc. Không dòng nào khai thì không dựng
+     gì cả — thêm một chỗ đặt là thêm một dòng ở kho, không sửa mã. */
+  G.kaKhung = function (man, cho) {
+    return G.kaCua(man, cho).map(G.kaVe).join('');
+  };
+
+  /* ═══════════ SOI ═══════════ */
+  G.kaSoi = function () {
+    var loi = [], ty = {}, loai = {};
+    (G.KA_TY || []).forEach(function (x) { ty[x.ma] = 1; });
+    (G.KA_LOAI || []).forEach(function (x) { loai[x.ma] = 1; });
+    var ma = {};
+    (G.KA_CHO || []).forEach(function (k) {
+      if (ma[k.ma]) loi.push(k.ma + ':mã dùng hai lần');
+      ma[k.ma] = 1;
+      if (!ty[k.ty]) loi.push(k.ma + ':tỉ lệ "' + k.ty + '" không có trong bảng');
+      if (!loai[k.loai]) loi.push(k.ma + ':loại "' + k.loai + '" không có trong bảng');
+      if (!k.brief) loi.push(k.ma + ':không nói cần ảnh gì');
+      if (!k.vuaMat) loi.push(k.ma + ':không nói cỡ bao nhiêu');
+      /* Khung không có lý do sẽ được lấp bằng ảnh mua sẵn, và ảnh mua
+         sẵn làm mất tin cả màn chứ không riêng chỗ ấy. */
+      if (!k.viSaoODay) loi.push(k.ma + ':không nói vì sao ở đó');
+      /* Thẻ trích phải dọc, dải phải mỏng — sai tỉ lệ thì bố cục vỡ */
+      if (k.loai === 'the' && k.ty !== '4:5') loi.push(k.ma + ':thẻ trích phải tỉ lệ 4:5');
+      if (k.loai === 'dai' && k.ty !== '3:1') loi.push(k.ma + ':dải ngang phải tỉ lệ 3:1');
+      /* Màn không có thật thì khung ấy không bao giờ hiện ra, và không
+         ai biết — nó chỉ nằm đó chiếm một dòng trong bảng chờ điền. */
+      if (typeof G.manCoThat === 'function' && !G.manCoThat(k.man))
+        loi.push(k.ma + ':màn "' + k.man + '" không có thật');
+    });
+    return loi;
+  };
+
+  /* Đếm đã điền bao nhiêu, và địa chỉ nào đang hỏng. */
+  G.kaDaDien = function () {
+    var xong = [], trong = [], hong = [];
+    (G.KA_CHO || []).forEach(function (k) {
+      var kq = G.kaHopLe(G.kaNguon(k.ma));
+      if (kq.ok) xong.push(k.ma);
+      else if (kq.trong) trong.push(k.ma);
+      else hong.push(k.ma + ':' + kq.loi);
+    });
+    return { xong: xong, trong: trong, hong: hong,
+      tong: (G.KA_CHO || []).length };
   };
 })();
 
@@ -23649,6 +24084,19 @@ G.VIEWS = G.VIEWS || {};
       '<p class="tiny dim mt" style="line-height:1.7">' + h(loi.vi || '') + '</p>' +
       '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>' + h(loi.hauQuaNeuGiau || '') + '</b></p></div>';
 
+    o += G.kaKhung ? G.kaKhung('coach-5-tang', 'dau') : '';
+
+    /* Thang dựng từ CHÍNH CS_TANG — màu lấy từ cột c của từng bậc. Sửa
+       kho thì hình đổi theo trong cùng một lần, nên nó không lệch được
+       với năm thẻ ngay bên dưới. */
+    if (G.veThangBac) o += G.hinhCard(
+      G.veThangBac((G.CS_TANG || []).map(function (t) {
+        return { ten: t.ten, phu: t.mucDo, c: t.c };
+      }), { nhan: 'Năm tầng Coach' }),
+      'Năm bậc · đọc từ dưới lên',
+      'Bậc dưới rộng hơn bậc trên vì việc ở dưới nhiều người làm được hơn. ' +
+      'Không bậc nào nhảy cóc được: cột bên trái nối liền từ bậc một lên bậc năm.');
+
     /* ── Năm tầng ── */
     var sn = G.csSoiNoi();
     var cl = G.csSoiKhongChepLai();
@@ -23702,8 +24150,22 @@ G.VIEWS = G.VIEWS || {};
           (v.dongVong ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675"><b>↻ Vòng khép lại ở đây — quay về ' +
             h(v.veBuoc) + '.</b></p>' : '') + '</div>';
       }).join('') + '</div>';
+      /* Vẽ thành VÒNG chứ không thành hàng, vì đó chính là điều đang
+         phải chứng minh. Xếp hàng ngang thì mắt đọc nó là một cái
+         thang, dù chữ bên cạnh có nói gì đi nữa. */
+      if (G.veVongTron) o += G.hinhCard(
+        G.veVongTron((G.CS_VONG || []).map(function (v) {
+          return { ten: v.ten, nhan: String(v.so), dongVong: v.dongVong === true,
+            c: v.dongVong ? '#BE0E16' : '#0B6675' };
+        }), { nhan: 'Vòng vận hành', giua: 'MƯỜI BƯỚC', giuaPhu: 'bước 10 → bước 01' }),
+        'Vòng vận hành · không phải cái thang',
+        'Vòng vẽ nét đứt vì nó không khép kín bằng thủ tục — nó khép bằng một người: ' +
+        'nhà xong tầng năm thành người kèm nhà mới. Bước 10 vẽ đậm là chỗ ấy.');
+
       o += '<p class="tiny dim mb" style="line-height:1.7"><b>' +
         h((G.CS_VONG_LUAT || {}).buocNamLaViecThat || '') + '</b></p>';
+
+      o += G.kaKhung ? G.kaKhung('coach-5-tang', 'sau-vong') : '';
     }
 
     /* ── Bảy năng lực dữ liệu ── */
@@ -23712,6 +24174,17 @@ G.VIEWS = G.VIEWS || {};
       o += U.sec('Bảy năng lực dữ liệu — ' + sd.dem.co + ' có, ' + sd.dem.chua + ' chưa' +
         (sd.loi.length ? ' — LỆCH: ' + (sd.loi.join(' ')) : ''),
         ((G.CS_DULIEU_LUAT || {}).vi || ''));
+
+      /* Bốn đặc ba rỗng, đếm từ chính CS_DULIEU. Tô xanh hết một bảng
+         là cách nhanh nhất làm nó vô dụng, nên hình phải để lộ ba chỗ
+         rỗng ngay từ cái nhìn đầu tiên. */
+      if (G.veCham) o += G.hinhCard(
+        G.veCham((G.CS_DULIEU || []).map(function (d) {
+          return { ten: d.ten, co: d.co === true, phu: d.co ? d.theoKho : 'chưa có' };
+        }), { nhan: 'Bảy năng lực dữ liệu' }),
+        'Bốn có · ba chưa',
+        'Ba chấm rỗng là ba việc đáng làm tiếp, không phải ba chỗ hỏng. ' +
+        'Bảng tô xanh hết là bảng không quyết định được gì.');
       o += '<div class="card mb">' + (G.CS_DULIEU || []).map(function (d) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
           '<b class="sm" style="color:' + (d.co ? '#0B7350' : '#B4720F') + '">' +
@@ -23742,6 +24215,17 @@ G.VIEWS = G.VIEWS || {};
           '<p class="tiny dim mt" style="line-height:1.7">' + h(q.nutThat) + '</p>' +
           '<p class="tiny mt" style="line-height:1.7">' + h(q.luatChan) + '</p>' +
           '<p class="tiny dim mt" style="line-height:1.7">' + h(G.CS_QUYMO.viSaoKhongGhiSan || '') + '</p></div>';
+
+        if (G.vePheu) o += G.hinhCard(
+          G.vePheu([
+            { so: q.dich,  ten: 'gia đình xong tầng năm',                         c: '#BE0E16' },
+            { so: q.canDH, ten: 'Đồng Hành — trần ' + q.tran.DH + ' nhà mỗi người', c: '#185AB4' },
+            { so: q.canCV, ten: 'Cố Vấn — trần ' + q.tran.CV + ' Đồng Hành mỗi người', c: '#0B7350' }
+          ], { nhan: 'Chia cho trần' }),
+          'Một nghìn chia cho trần',
+          'Ba con số này TÍNH TẠI CHỖ từ DD_CAP, không ghi sẵn ở đâu — đổi trần thì hình đổi theo. ' +
+          'Con số hình này KHÔNG vẽ được là số năm: Cố Vấn đầu tiên sớm nhất ở tháng thứ ' +
+          q.thangSomNhatCoCV + '.');
       }
     }
 
@@ -23783,6 +24267,8 @@ G.VIEWS = G.VIEWS || {};
           h(c.toiNghieng || c.toiKhongTuDat || '') + '</p></div>';
       }).join('') + '</div>';
     }
+
+    o += G.kaKhung ? G.kaKhung('coach-5-tang', 'cuoi') : '';
 
     o += U.sec('Sáu luật của hệ Coach', '');
     o += '<div class="card">' + (G.CS_LUAT || []).map(function (l) {

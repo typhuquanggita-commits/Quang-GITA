@@ -268,6 +268,8 @@ G.VIEWS = G.VIEWS || {};
     var o = U.ph({ eyebrow: 'MỘT HÀNH TRÌNH · NĂM TẦNG THỬ THÁCH', ic: 'compass', grad: 1,
       t: d.ten || '', lead: d.la || '' });
 
+    o += G.kaKhung ? G.kaKhung('hanh-trinh-5-tang', 'dau') : '';
+
     /* ── Đích: không phải bậc cuối ── */
     o += '<div class="card mb" style="border-color:#0B73503e">' +
       '<span class="tiny up" style="color:#0B7350">ĐÍCH KHÔNG PHẢI TẦNG CAO NHẤT</span>' +
@@ -343,6 +345,8 @@ G.VIEWS = G.VIEWS || {};
       }).join('') + '</div>';
 
     var lech = G.htSoiLech();
+    o += G.kaKhung ? G.kaKhung('hanh-trinh-5-tang', 'sau-kc') : '';
+
     o += U.sec('Sáu chỗ chưa khớp, và đã làm gì' + (lech.length ? ' — LỆCH: ' + (lech.join(' ')) : ''),
       'Mỗi chỗ sửa phải rơi xuống một kho có thật.');
     o += U.tbl(['#', 'Chỗ chưa khớp', 'Thấy gì', 'Đã làm gì', 'Rơi xuống đâu'],

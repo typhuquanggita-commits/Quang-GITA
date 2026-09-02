@@ -57,6 +57,15 @@ G.datND = function(khoa, giaTri){
   if(!G.can('sua_noi_dung')){ U.toast('Chỉ Super Admin sửa được nội dung hiển thị.','err'); return false; }
   giaTri = String(giaTri == null ? '' : giaTri).trim();
   if(giaTri.length > 400){ U.toast('Chữ quá dài — tối đa 400 ký tự.','err'); return false; }
+  /* Khoá khung ảnh nhận một ĐỊA CHỈ, không nhận chữ. Chặn ngay tại chỗ
+     dán, đừng để tới lúc dựng màn: javascript: và data: là hai đường
+     quen nhất để nhét mã vào một ô tưởng là vô hại, còn http:// thì
+     trình duyệt chặn TRONG IM LẶNG — chủ hệ dán xong thấy trống và
+     tưởng mình dán sai. Nói ngay thì mất ba giây. */
+  if(khoa.slice(0,6) === 'khung.' && giaTri && G.kaHopLe){
+    var kq = G.kaHopLe(giaTri);
+    if(!kq.ok){ U.toast(kq.loi || 'Địa chỉ không dùng được.','err'); return false; }
+  }
   if(!giaTri) delete G.SUA_ND[khoa];
   else G.SUA_ND[khoa] = giaTri;
   G.luuNoiDung();
@@ -84,6 +93,17 @@ G.mucSuaDuoc = function(){
   var L = (G.UI && (G.UI[G.LANG] || G.UI.vi)) || {};
   Object.keys(L).forEach(function(k){
     if(typeof L[k] === 'string') ds.push({k:'chu.'+k, nhom:'Chữ giao diện', ten:k, goc:L[k]});
+  });
+  /* Khung ảnh đi qua ĐÚNG lớp này, không dựng lớp thứ hai. Địa chỉ ảnh
+     cũng là một chuỗi sửa được, đồng bộ được, ghi nhật ký được — y hệt
+     một câu chữ. Dựng riêng một kho cho ảnh là để dành một ngày mà bản
+     này đồng bộ được còn bản kia thì không.
+
+     Bản gốc để TRỐNG có chủ đích: chưa có ảnh nào là bản gốc đúng, và
+     mọi khung trống đều hiện lời dặn ngay tại chỗ nó sẽ nằm. */
+  (G.KA_CHO || []).forEach(function(k){
+    ds.push({k:'khung.'+k.ma+'.nguon', nhom:'Khung ảnh · '+k.loai,
+             ten:k.man+' · '+k.ten, goc:'', v:k.man, khung:1});
   });
   return ds;
 };

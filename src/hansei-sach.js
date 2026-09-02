@@ -201,6 +201,8 @@ G.VIEWS = G.VIEWS || {};
       lead: 'In ở đầu, không giấu ở cuối. Câu để ngỏ xếp xuống cuối là câu chìm, ' +
         'và câu chìm thì năm sau không ai nhắc lại.' });
 
+    o += G.kaKhung ? G.kaKhung('hansei-sach', 'dau') : '';
+
     o += '<div class="card mb" style="border-color:#B4720F3e">' + (G.HN_NGO || []).map(function (n) {
       return '<div style="padding:10px 0;border-bottom:1px solid var(--gita-vien-2)">' +
         '<b class="sm">' + n.so + '. ' + h(n.hoi) + '</b>' +

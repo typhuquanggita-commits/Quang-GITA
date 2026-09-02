@@ -309,6 +309,19 @@ G.VIEWS = G.VIEWS || {};
       '<p class="tiny dim mt" style="line-height:1.7">' + h(loi.vi || '') + '</p>' +
       '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>' + h(loi.hauQuaNeuGiau || '') + '</b></p></div>';
 
+    o += G.kaKhung ? G.kaKhung('coach-5-tang', 'dau') : '';
+
+    /* Thang dựng từ CHÍNH CS_TANG — màu lấy từ cột c của từng bậc. Sửa
+       kho thì hình đổi theo trong cùng một lần, nên nó không lệch được
+       với năm thẻ ngay bên dưới. */
+    if (G.veThangBac) o += G.hinhCard(
+      G.veThangBac((G.CS_TANG || []).map(function (t) {
+        return { ten: t.ten, phu: t.mucDo, c: t.c };
+      }), { nhan: 'Năm tầng Coach' }),
+      'Năm bậc · đọc từ dưới lên',
+      'Bậc dưới rộng hơn bậc trên vì việc ở dưới nhiều người làm được hơn. ' +
+      'Không bậc nào nhảy cóc được: cột bên trái nối liền từ bậc một lên bậc năm.');
+
     /* ── Năm tầng ── */
     var sn = G.csSoiNoi();
     var cl = G.csSoiKhongChepLai();
@@ -362,8 +375,22 @@ G.VIEWS = G.VIEWS || {};
           (v.dongVong ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675"><b>↻ Vòng khép lại ở đây — quay về ' +
             h(v.veBuoc) + '.</b></p>' : '') + '</div>';
       }).join('') + '</div>';
+      /* Vẽ thành VÒNG chứ không thành hàng, vì đó chính là điều đang
+         phải chứng minh. Xếp hàng ngang thì mắt đọc nó là một cái
+         thang, dù chữ bên cạnh có nói gì đi nữa. */
+      if (G.veVongTron) o += G.hinhCard(
+        G.veVongTron((G.CS_VONG || []).map(function (v) {
+          return { ten: v.ten, nhan: String(v.so), dongVong: v.dongVong === true,
+            c: v.dongVong ? '#BE0E16' : '#0B6675' };
+        }), { nhan: 'Vòng vận hành', giua: 'MƯỜI BƯỚC', giuaPhu: 'bước 10 → bước 01' }),
+        'Vòng vận hành · không phải cái thang',
+        'Vòng vẽ nét đứt vì nó không khép kín bằng thủ tục — nó khép bằng một người: ' +
+        'nhà xong tầng năm thành người kèm nhà mới. Bước 10 vẽ đậm là chỗ ấy.');
+
       o += '<p class="tiny dim mb" style="line-height:1.7"><b>' +
         h((G.CS_VONG_LUAT || {}).buocNamLaViecThat || '') + '</b></p>';
+
+      o += G.kaKhung ? G.kaKhung('coach-5-tang', 'sau-vong') : '';
     }
 
     /* ── Bảy năng lực dữ liệu ── */
@@ -372,6 +399,17 @@ G.VIEWS = G.VIEWS || {};
       o += U.sec('Bảy năng lực dữ liệu — ' + sd.dem.co + ' có, ' + sd.dem.chua + ' chưa' +
         (sd.loi.length ? ' — LỆCH: ' + (sd.loi.join(' ')) : ''),
         ((G.CS_DULIEU_LUAT || {}).vi || ''));
+
+      /* Bốn đặc ba rỗng, đếm từ chính CS_DULIEU. Tô xanh hết một bảng
+         là cách nhanh nhất làm nó vô dụng, nên hình phải để lộ ba chỗ
+         rỗng ngay từ cái nhìn đầu tiên. */
+      if (G.veCham) o += G.hinhCard(
+        G.veCham((G.CS_DULIEU || []).map(function (d) {
+          return { ten: d.ten, co: d.co === true, phu: d.co ? d.theoKho : 'chưa có' };
+        }), { nhan: 'Bảy năng lực dữ liệu' }),
+        'Bốn có · ba chưa',
+        'Ba chấm rỗng là ba việc đáng làm tiếp, không phải ba chỗ hỏng. ' +
+        'Bảng tô xanh hết là bảng không quyết định được gì.');
       o += '<div class="card mb">' + (G.CS_DULIEU || []).map(function (d) {
         return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
           '<b class="sm" style="color:' + (d.co ? '#0B7350' : '#B4720F') + '">' +
@@ -402,6 +440,17 @@ G.VIEWS = G.VIEWS || {};
           '<p class="tiny dim mt" style="line-height:1.7">' + h(q.nutThat) + '</p>' +
           '<p class="tiny mt" style="line-height:1.7">' + h(q.luatChan) + '</p>' +
           '<p class="tiny dim mt" style="line-height:1.7">' + h(G.CS_QUYMO.viSaoKhongGhiSan || '') + '</p></div>';
+
+        if (G.vePheu) o += G.hinhCard(
+          G.vePheu([
+            { so: q.dich,  ten: 'gia đình xong tầng năm',                         c: '#BE0E16' },
+            { so: q.canDH, ten: 'Đồng Hành — trần ' + q.tran.DH + ' nhà mỗi người', c: '#185AB4' },
+            { so: q.canCV, ten: 'Cố Vấn — trần ' + q.tran.CV + ' Đồng Hành mỗi người', c: '#0B7350' }
+          ], { nhan: 'Chia cho trần' }),
+          'Một nghìn chia cho trần',
+          'Ba con số này TÍNH TẠI CHỖ từ DD_CAP, không ghi sẵn ở đâu — đổi trần thì hình đổi theo. ' +
+          'Con số hình này KHÔNG vẽ được là số năm: Cố Vấn đầu tiên sớm nhất ở tháng thứ ' +
+          q.thangSomNhatCoCV + '.');
       }
     }
 
@@ -443,6 +492,8 @@ G.VIEWS = G.VIEWS || {};
           h(c.toiNghieng || c.toiKhongTuDat || '') + '</p></div>';
       }).join('') + '</div>';
     }
+
+    o += G.kaKhung ? G.kaKhung('coach-5-tang', 'cuoi') : '';
 
     o += U.sec('Sáu luật của hệ Coach', '');
     o += '<div class="card">' + (G.CS_LUAT || []).map(function (l) {

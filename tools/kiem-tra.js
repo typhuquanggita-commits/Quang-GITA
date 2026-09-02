@@ -7492,6 +7492,118 @@ const { chromium } = require(PW);
   }
 
 
+  console.log('\n63 · MÀN CÓ HÌNH — HÌNH DỰNG TỪ KHO, VÀ CHỖ CHỜ ẢNH THẬT');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'superadmin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.KA_CHO || !G.veThangBac) return { co: false };
+      const r = {};
+
+      /* ── Bảng chỗ đặt ── */
+      r.soi = G.kaSoi();
+      r.soCho = G.KA_CHO.length;
+      r.soMan = Object.keys(G.KA_CHO.reduce((a, k) => (a[k.man] = 1, a), {})).length;
+      const k0 = G.KA_CHO[0];
+      /* Khung không có lý do sẽ được lấp bằng ảnh mua sẵn, và ảnh mua sẵn
+         làm mất tin cả màn chứ không riêng chỗ ấy. */
+      const giuVi = k0.viSaoODay; delete k0.viSaoODay;
+      r.batKhongLyDo = G.kaSoi().some(x => /không nói vì sao ở đó/.test(x));
+      k0.viSaoODay = giuVi;
+      const giuTy = k0.ty; k0.ty = '7:3';
+      r.batTyLa = G.kaSoi().some(x => /không có trong bảng/.test(x));
+      k0.ty = giuTy;
+      /* Màn không có thật thì khung ấy không bao giờ hiện ra, và không ai
+         biết — nó nằm đó chiếm một dòng trong bảng chờ điền. */
+      const giuMan = k0.man; k0.man = 'man-khong-co-that';
+      r.batManMa = G.kaSoi().some(x => /không có thật/.test(x));
+      k0.man = giuMan;
+      const the = G.KA_CHO.filter(x => x.loai === 'the')[0];
+      if (the) { const t2 = the.ty; the.ty = '16:9';
+        r.batTheSaiTy = G.kaSoi().some(x => /thẻ trích phải tỉ lệ 4:5/.test(x)); the.ty = t2; }
+
+      /* ── Địa chỉ: CHỈ NHẬN, không lọc ── */
+      r.chan = ['javascript:alert(1)', 'data:image/svg+xml;base64,AAA', 'http://a.com/x.jpg',
+        'blob:abc', 'file:///etc/passwd', '//a.com/x.jpg', 'ftp://a/x.jpg']
+        .every(d => G.kaHopLe(d).ok === false);
+      r.nhan = ['https://a.com/x.jpg', 'assets/brand/logo-gita.png']
+        .every(d => G.kaHopLe(d).ok === true);
+      /* http:// bị chặn kèm LÝ DO, vì đây là chỗ trình duyệt chặn im lặng
+         và chủ hệ tưởng mình dán sai. */
+      r.noiLyDoHttp = /https/.test(G.kaHopLe('http://a.com/x.jpg').loi || '');
+      /* Và chặn ngay tại chỗ dán, không đợi tới lúc dựng màn */
+      r.chanOChoDan = G.datND('khung.CS-DAU.nguon', 'javascript:alert(1)') === false &&
+                      G.SUA_ND['khung.CS-DAU.nguon'] === undefined;
+
+      /* ── Khung trống: chủ hệ thấy, gia đình không ── */
+      const man = G.VIEWS['coach-5-tang']();
+      r.chuHeThayBrief = man.indexOf(G.KA_CHO[0].brief) >= 0;
+      r.chuHeThayKhoa = man.indexOf('khung.CS-DAU.nguon') >= 0;
+
+      /* ── Ảnh thật thì chịu đúng luật của chữ ── */
+      G.datND('khung.CS-DAU.nguon', 'https://vi-du.gita.edu.vn/a.jpg');
+      const man2 = G.VIEWS['coach-5-tang']();
+      r.hienAnh = /<img src="https:\/\/vi-du\.gita\.edu\.vn\/a\.jpg"/.test(man2);
+      r.hetBrief = man2.indexOf(G.KA_CHO[0].brief) < 0;
+      G.datND('khung.CS-DAU.nguon', '');
+
+      /* ── Hình dựng từ kho: ĐỌC từ kho, không vẽ sẵn ── */
+      const h1 = G.veThangBac((G.CS_TANG || []).map(t => ({ ten: t.ten, phu: t.mucDo, c: t.c })));
+      /* So với bản ĐÃ THOÁT: mọi tên tầng đều có dấu &, mà trong SVG nó
+         là &amp;. So với bản thô thì phép kiểm đỏ oan — và một phép kiểm
+         đỏ oan vài lần là một phép kiểm bị tắt. */
+      r.hinhCoTenTang = h1.indexOf(G.U.h(G.CS_TANG[0].ten)) >= 0;
+      r.hinhCoMauTang = h1.indexOf(G.CS_TANG[4].c) >= 0;
+      const giuTen = G.CS_TANG[0].ten; G.CS_TANG[0].ten = 'ZZQQ';
+      r.hinhDoiTheoKho = G.veThangBac((G.CS_TANG || [])
+        .map(t => ({ ten: t.ten, c: t.c }))).indexOf('ZZQQ') >= 0;
+      G.CS_TANG[0].ten = giuTen;
+      /* width phải nằm trong KIỂU. Thuộc tính width="100%" cộng height:auto
+         thì trình duyệt rơi về cỡ mặc định 300px của thẻ thay thế, và hình
+         khổ 700 co xuống 300 thì chữ 16 còn 6,9px. Lỗi này KHÔNG lộ ra khi
+         đọc mã — chỉ lộ khi nhìn màn. */
+      r.rongTrongKieu = /style="[^"]*width:100%/.test(h1) && !/ width="100%"/.test(h1);
+      /* Chữ trong SVG vẫn là chữ người nhập được */
+      r.svgThoatChu = G.veThangBac([{ ten: '<b>x</b>&"', c: '#000' }]).indexOf('&lt;b&gt;') >= 0;
+      /* Vòng phải TRÒN, và bước đóng vòng phải vẽ khác các bước kia */
+      const h2 = G.veVongTron((G.CS_VONG || []).map(v => ({
+        ten: v.ten, nhan: String(v.so), dongVong: v.dongVong === true, c: '#0B6675' })));
+      r.vongCoTron = (h2.match(/<circle/g) || []).length >= (G.CS_VONG || []).length * 2;
+      r.vongDanhDauBuocCuoi = /r="26"/.test(h2);
+      /* Chấm: đếm đúng bốn đặc ba rỗng từ chính CS_DULIEU */
+      const h3 = G.veCham((G.CS_DULIEU || []).map(d => ({ ten: d.ten, co: d.co === true })));
+      r.chamDacDung = (h3.match(/stroke-dasharray="3\.5 3\.5"/g) || []).length === 3;
+      /* Phễu: ba con số đọc từ csQuyMo, không ghi sẵn */
+      const q = G.csQuyMo();
+      const h4 = G.vePheu([{ so: q.dich, ten: 'a' }, { so: q.canDH, ten: 'b' }, { so: q.canCV, ten: 'c' }]);
+      r.pheuTheoTran = h4.indexOf('>' + q.canDH + '<') >= 0;
+
+      r.manCoHinh = (man.match(/<svg /g) || []).length >= 4;
+      return { co: true, ...r };
+    });
+
+    if (!ra.co) {
+      bao(false, 'khung ảnh và bộ vẽ nạp được', 'không thấy KA_CHO hoặc veThangBac');
+    } else {
+      bao(!ra.soi.length && ra.soCho === 11 && ra.batKhongLyDo && ra.batTyLa && ra.batManMa && ra.batTheSaiTy,
+        'BẢNG CHỖ ĐẶT ẢNH: ' + ra.soCho + ' chỗ trên ' + ra.soMan + ' màn, mỗi chỗ khai đủ CẦN ẢNH GÌ · CỠ BAO NHIÊU · VÌ SAO Ở ĐÓ. Thêm một chỗ là thêm một DÒNG ở kho, không sửa mã. Phép kiểm bắt ngay khi một chỗ mất lý do: khung không có lý do sẽ được lấp bằng ảnh mua sẵn, và ảnh mua sẵn làm mất tin cả màn chứ không riêng chỗ ấy. Và bắt cả khung trỏ vào màn không có thật — khung ấy không bao giờ hiện ra mà vẫn chiếm một dòng trong bảng chờ điền',
+        ra.soi.join(' ') || ra.soCho + ' chỗ · ' + ra.soMan + ' màn · đủ ba cột');
+      bao(ra.chan && ra.nhan && ra.noiLyDoHttp && ra.chanOChoDan,
+        'ĐỊA CHỈ ẢNH: CHỈ NHẬN https và assets/, từ chối mọi thứ còn lại — javascript: · data: · blob: · file: · ftp: · đường không có lược đồ. Danh sách CHỈ NHẬN chứ không phải bộ lọc, vì một bộ lọc thì luôn có cách đi vòng. Chặn ngay tại chỗ dán chứ không đợi tới lúc dựng màn. Và http:// bị chặn KÈM LÝ DO: trang chạy https mà kéo ảnh http thì trình duyệt chặn TRONG IM LẶNG, chủ hệ dán xong thấy trống rồi tưởng mình dán sai',
+        '7 kiểu địa chỉ bị chặn · 2 kiểu được nhận · datND từ chối ngay');
+      bao(ra.chuHeThayBrief && ra.chuHeThayKhoa && ra.hienAnh && ra.hetBrief,
+        'KHUNG TRỐNG CHỈ CHỦ HỆ THẤY, và thấy kèm đủ lời dặn lẫn tên khoá để dán. Dán địa chỉ vào thì lời dặn biến mất và ảnh lên đúng chỗ ấy. Địa chỉ đi qua G.nd() — CÙNG lớp với mọi chữ sửa được, nên nó đồng bộ được và vào nhật ký được y như một câu chữ. Dựng riêng một kho cho ảnh là để dành một ngày mà bản này đồng bộ được còn bản kia thì không');
+      bao(ra.hinhCoTenTang && ra.hinhCoMauTang && ra.hinhDoiTheoKho && ra.pheuTheoTran && ra.chamDacDung,
+        'HÌNH DỰNG THẲNG TỪ KHO, nên nó KHÔNG LỆCH ĐƯỢC với chữ dưới nó: thang lấy tên và màu từ chính CS_TANG, bảy chấm đếm bốn đặc ba rỗng từ chính CS_DULIEU, phễu lấy ba con số từ csQuyMo. Đổi một chữ trong kho thì hình đổi theo ngay trong cùng lần ấy. Một tấm ảnh vẽ tay thì tháng sau kho đổi mà ảnh giữ nguyên — và người xem tin vào ảnh',
+        'thang · vòng · chấm · phễu đều đọc kho');
+      bao(ra.rongTrongKieu && ra.svgThoatChu && ra.vongCoTron && ra.vongDanhDauBuocCuoi && ra.manCoHinh,
+        'bề ngang của hình nằm trong KIỂU chứ không trong thuộc tính — width="100%" cộng height:auto thì trình duyệt rơi về cỡ mặc định 300px, hình khổ 700 co xuống 300 và chữ cỡ 16 còn 6,9px. Lỗi ấy không lộ ra khi đọc mã, chỉ lộ khi NHÌN MÀN, nên nó thành một phép kiểm. Vòng vẽ TRÒN chứ không xếp hàng, vì xếp hàng thì mắt đọc nó là một cái thang dù chữ bên cạnh nói gì. Và chữ trong SVG vẫn thoát y như chữ trong HTML',
+        'width trong kiểu · ' + '4 hình trên màn Coach');
+    }
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

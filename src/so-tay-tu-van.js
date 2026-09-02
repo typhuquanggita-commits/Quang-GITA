@@ -293,6 +293,8 @@ G.VIEWS = G.VIEWS || {};
       lead: 'Người bán hàng nào cũng biết năm điều này là sai. Biết mà vẫn làm, vì lúc sắp mất một đơn ' +
         'thì lý lẽ nào cũng nghe hợp lý — nên chúng nằm ở đây, chỗ người bị thiệt đọc được.' });
 
+    o += G.kaKhung ? G.kaKhung('so-tay-tu-van', 'dau') : '';
+
     o += U.sec('Năm điều người tư vấn KHÔNG được làm với nhà mình',
       ((G.TV_LANRANH_LUAT || {}).inODau || ''));
     o += '<div class="card mb" style="border-color:#BE0E163e">' + lr.map(function (r) {

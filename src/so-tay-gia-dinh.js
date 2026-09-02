@@ -299,6 +299,8 @@ G.VIEWS = G.VIEWS || {};
     var o = U.ph({ eyebrow: 'SỔ TAY CỦA GIA ĐÌNH · 24 TRANG · 30 CÂU', ic: 'sun', grad: 1,
       t: dd.chu || '', lead: dd.them || '' });
 
+    o += G.kaKhung ? G.kaKhung('so-tay-gia-dinh', 'dau') : '';
+
     /* ── Trang 2 · bản đồ khẩn, lên trước mọi thứ ── */
     o += U.sec('Trang 2 — cần gấp thì làm gì',
       'Trang này in ngay sau bìa, vì lúc cần nó thì không ai còn sức lật tìm.');
@@ -330,6 +332,8 @@ G.VIEWS = G.VIEWS || {};
       ' ' + h((G.SG_QUYEN7_LUAT || {}).viCoChuKy || '') + '</p></div>';
 
     /* ── Năm điều người đi cùng không được làm ── */
+    o += G.kaKhung ? G.kaKhung('so-tay-gia-dinh', 'sau-quyen') : '';
+
     o += U.sec('Năm điều người đi cùng không được làm', ((G.SG_CAM5_LUAT || {}).saiThiSao || ''));
     o += U.tbl(['Mã', 'Không được làm', 'Vì sao'],
       (G.SG_CAM5 || []).map(function (c) { return [h(c.ma), h(c.t), h(c.y)]; }));

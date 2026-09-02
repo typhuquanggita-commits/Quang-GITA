@@ -146,6 +146,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      quyền không đạt — một chuẩn chỉ người chấm đọc được thì nó là
      chuẩn của người chấm.
      Vòng vận hành, bảng dữ liệu và phép chia quy mô đi gói NGHỀ. */
+  /* KHUNG ẢNH VÀ HÌNH DỰNG TỪ KHO. Ở gói NỀN vì bảng chỗ đặt quyết
+     định màn của GIA ĐÌNH trông ra sao — giấu nó sau gói nghề thì màn
+     của nhà mình mất hết chỗ có ảnh, mà đó đúng là những màn cần ảnh
+     nhất. Bảng này không chứa nội dung nào, chỉ chứa chỗ và lời dặn. */
+  'KA_LOAI', 'KA_TY', 'KA_CHO', 'KA_LUAT', 'KA_ANTOAN',
   'CS_LOI', 'CS_TANG', 'CS_TANG_LUAT', 'CS_NEN', 'CS_LUAT',
   'HT_DICH', 'HT_TANG', 'HT_TANG_LUAT', 'HT_SAUT5', 'HT_KC',
   'HT_NOI', 'HT_NOI_LUAT', 'HT_LECH', 'HT_LUAT',
@@ -752,6 +757,8 @@ const mau = {
   /* Năm tầng Coach vào cả bản xem thử. Người mở bản xem thử là người
      sắp giao nhà mình cho một người kèm — bảng năng lực là câu hỏi họ
      cần cầm sẵn, y như năm lằn ranh ở TV_LANRANH. */
+  KA_LOAI: G.KA_LOAI, KA_TY: G.KA_TY, KA_CHO: G.KA_CHO,
+  KA_LUAT: G.KA_LUAT, KA_ANTOAN: G.KA_ANTOAN,
   CS_LOI: G.CS_LOI, CS_TANG: G.CS_TANG, CS_TANG_LUAT: G.CS_TANG_LUAT,
   CS_NEN: G.CS_NEN, CS_LUAT: G.CS_LUAT,
   VZ_LOI: G.VZ_LOI, VZ_VUNG: G.VZ_VUNG, VZ_VUNG_LUAT: G.VZ_VUNG_LUAT,

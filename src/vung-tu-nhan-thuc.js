@@ -165,6 +165,8 @@ G.VIEWS = G.VIEWS || {};
       lead: 'Năm vùng nhà mình đi qua, và bốn chỗ rơi rình sẵn giữa các vùng. ' +
         'Chỗ có tên là chỗ gọi được; chỗ gọi được là chỗ ra được.' });
 
+    o += G.kaKhung ? G.kaKhung('sau-vung', 'dau') : '';
+
     /* ── Lõi ── */
     o += '<div class="card mb" style="border-color:#D4703A5e">' +
       '<span class="tiny up" style="color:#D4703A">' + h(loi.ten || '') + ' · ' + h(loi.oDau || '') + '</span>' +
@@ -191,6 +193,8 @@ G.VIEWS = G.VIEWS || {};
       h((G.VZ_VUNG_LUAT || {}).vi || '') + '</p>';
 
     /* ── Bốn chỗ rơi ── */
+    o += G.kaKhung ? G.kaKhung('sau-vung', 'sau-roi') : '';
+
     var sr = G.vzSoiRoi();
     o += U.sec('Bốn chỗ rơi có tên' + (sr.length ? ' — LỆCH: ' + (sr.join(' ')) : ''),
       ((G.VZ_ROI_LUAT || {}).nguoiTrongDoKhongBiet || ''));

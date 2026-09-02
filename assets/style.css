@@ -1015,3 +1015,58 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .pv-moi>div{flex:1;min-width:0}
 .pv-moi b{display:block;font-size:12.5px;line-height:1.35}
 .pv-moi span{display:block;font-size:11px;color:var(--ink-3);line-height:1.45;margin-top:2px}
+
+/* ═══════════════════════════════════════════════════════════════
+   KHUNG ẢNH VÀ HÌNH DỰNG TỪ KHO  ·  v9.25
+   Hai lớp khác nhau về bản chất: .hinh-kho là hình máy tự dựng từ kho
+   (luôn có, không cần tệp); .ka-* là chỗ chờ chủ hệ đưa ảnh thật vào.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Hình dựng từ kho ── */
+.hinh-kho{margin:18px 0;padding:18px 16px 14px;border:1px solid var(--line);
+  border-radius:16px;background:var(--surface);overflow:hidden}
+.hinh-nhan{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-4);margin-bottom:12px}
+/* Hình rộng phải cuộn TRONG khung của nó — thân trang không bao giờ
+   được cuộn ngang, vì trên điện thoại đó là lỗi không ai báo mà ai
+   cũng gặp. */
+.hinh-ve{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.hinh-ve svg{color:var(--ink-3);min-width:300px}
+.hinh-y{font-size:11.5px;line-height:1.7;color:var(--ink-3);margin-top:12px}
+
+/* ── Khung ảnh đã điền ── */
+.ka-khung{margin:18px 0}
+.ka-khung .ka-o{position:relative;width:100%;padding-top:var(--ka-ty,56.25%);
+  border-radius:16px;overflow:hidden;background:var(--surface);
+  border:1px solid var(--line)}
+.ka-khung .ka-o>img,.ka-khung .ka-o>iframe{position:absolute;inset:0;
+  width:100%;height:100%;object-fit:cover;border:0;display:block}
+.ka-khung figcaption{font-size:11.5px;line-height:1.6;color:var(--ink-3);
+  margin-top:9px}
+.ka-the .ka-o{max-width:340px;margin-inline:auto}
+.ka-dai .ka-o{border-radius:12px}
+
+/* ── Khung còn trống: CHỈ chủ hệ thấy ──
+   Cố ý trông như một chỗ chờ, không trông như một lỗi. Nó là việc còn
+   phải làm, và việc còn phải làm thì cần đọc được chứ không cần đỏ. */
+.ka-cho{margin:18px 0;padding:14px;border:1px dashed var(--gita-vien-2);
+  border-radius:16px;background:var(--gita-mo-1)}
+.ka-cho .ka-o{position:relative;width:100%;min-height:132px;
+  border-radius:12px;background:transparent;border:1px dashed var(--line-2)}
+.ka-giua{position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:6px;text-align:center;padding:14px}
+.ka-giua>svg{color:var(--gita);opacity:.75}
+.ka-giua b{font-size:13px;line-height:1.4;color:var(--ink-2)}
+.ka-ky{font-size:10.5px;letter-spacing:.06em;color:var(--ink-4)}
+.ka-brief,.ka-vi,.ka-khoa,.ka-loi{font-size:11.5px;line-height:1.7;margin-top:9px}
+.ka-brief{color:var(--ink-2)}
+.ka-vi{color:var(--ink-3)}
+.ka-khoa{color:var(--ink-4)}
+.ka-khoa code{font-size:11px;padding:1px 5px;border-radius:5px;
+  background:var(--nen-hop);border:1px solid var(--line)}
+.ka-loi{color:var(--gita-do)}
+
+@media (max-width:640px){
+  .hinh-kho{padding:14px 12px 12px}
+  .ka-the .ka-o{max-width:100%}
+}
