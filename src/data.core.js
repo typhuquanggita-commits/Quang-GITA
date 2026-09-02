@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.21',
+  version: '9.22',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -279,7 +279,11 @@ G.TAM_NHIN = [
      ngược, và R01–R02 phải thấy 100%. Hai phép ấy không phụ thuộc mẫu
      số nên không trôi theo mỗi lần thêm màn — xem mục ma trận màn × vai
      trong bộ kiểm. */
-  {vai:['R03','R04'], pt:80,
+  /* 82 chứ không còn 80. Bốn màn mới ở 9.19–9.22 đều mở cho MỌI vai,
+     nên tử số của R03–R04 tăng bốn trong khi mẫu số cũng tăng bốn —
+     tử số tăng nhanh hơn nên tỉ lệ nhích. Sửa số công bố, không nới
+     dung sai: phần quản trị khoá của hai vị trí này không mở thêm gì. */
+  {vai:['R03','R04'], pt:82,
    ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
   /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
      chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
@@ -329,7 +333,8 @@ G.TAM_NHIN = [
      vai. Sửa SỐ CÔNG BỐ, không nới dung sai: phần khoá của phụ huynh
      không mở thêm một màn nghề nào. */
   {vai:['R13'], pt:39, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
-  {vai:['R14'], pt:33, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
+  /* 35 chứ không còn 33 — cùng lý do với R03–R04 và R13. */
+  {vai:['R14'], pt:35, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
   /* 31 chứ không còn 29. Hai màn mới ở 9.19 và 9.20 — sổ tay của gia
      đình, và năm câu hệ chưa trả lời được — đều mở cho MỌI vai, nên
      R15 thấy thêm hai màn trong khi mẫu số cũng tăng hai. Tử số tăng
@@ -511,6 +516,7 @@ G.NAV = [
     {v:'so-tay-gia-dinh',t:'Sổ tay của gia đình',        h:'24 trang · 30 câu · 7 quyền · trang cuối để trống cho bạn', ic:'sun', star:1, capMo:'chung'},
     {v:'hansei-sach',  t:'Hệ này đang nợ gì',            h:'5 câu chưa trả lời được · 3 loại quyết định · 9 mâu thuẫn tự tìm ra', ic:'shield', star:1, capMo:'chung'},
     {v:'hanh-trinh-5-tang',t:'Con đường năm tầng',        h:'Gia Đình Thịnh Vượng · 5 thử thách · và ngày thang này hết bậc', ic:'compass', star:1, capMo:'chung'},
+    {v:'sau-vung',     t:'Vòng luẩn quẩn có tên',       h:'5 vùng · 1 lõi tự nhận thức · 4 chỗ rơi và đường về từng chỗ', ic:'sun', star:1, capMo:'chung'},
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
        tổn thương nhất và cách nó dựng ra người kèm. */

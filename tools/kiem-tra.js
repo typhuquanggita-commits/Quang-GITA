@@ -7117,9 +7117,101 @@ const { chromium } = require(PW);
       bao(ra.hangOK,
         'thang thứ năm — bốn hạng khách — nằm ở gói NGHỀ, và bảng ấy nối về năm tầng bằng danh sách mã đọc được. Trước bản này tầng nằm ở cột chữ dạng "Tầng 2 – 3": người đọc ra hai tầng, máy đọc ra một chuỗi có dấu gạch',
         ra.hangSoi || 'hạng Thép→T2+T3');
-      bao(ra.lechOKng && ra.soLech === 6 && ra.manCoDich && ra.manCoSauT5 && ra.manCoBangNoi,
-        'sáu chỗ chưa khớp giữa bộ tài liệu và hệ năm tầng đã lập trình, mỗi chỗ sửa đều RƠI XUỐNG một kho có thật — và gia đình đọc được cả bảng chỗ nối lẫn sáu chỗ lệch, vì một nhà có quyền biết cái thang đo mình được ghép lại từ đâu',
+      bao(ra.lechOKng && ra.soLech === 7 && ra.manCoDich && ra.manCoSauT5 && ra.manCoBangNoi,
+        'BẢY chỗ chưa khớp giữa bộ tài liệu và hệ năm tầng đã lập trình — chỗ thứ bảy là bức tranh sáu vùng, và nó KHÔNG cần bàn lại vì luật số 5 viết ở chính bản trước đã trả lời sẵn. Mỗi chỗ sửa đều RƠI XUỐNG một kho có thật, mỗi chỗ sửa đều RƠI XUỐNG một kho có thật — và gia đình đọc được cả bảng chỗ nối lẫn sáu chỗ lệch, vì một nhà có quyền biết cái thang đo mình được ghép lại từ đâu',
         ra.soiLech.join(' ') || ra.soLech + ' chỗ đã sửa, đều rơi xuống kho thật');
+    }
+  }
+
+
+  console.log('\n60 · SÁU VÙNG LÀ LỚP SÂU · LÕI Ở TÂM · BỐN CHỖ RƠI CÓ ĐƯỜNG VỀ');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.VZ_VUNG) return { co: false };
+      const r = { co: true };
+
+      /* ── KHOÁ: lớp sâu khớp MỘT-MỘT với năm tầng ── */
+      r.soiNoi = G.vzSoiNoi();
+      r.soVung = G.VZ_VUNG.length;
+      /* Gỡ tầng của một vùng — lớp sâu phủ hụt là bước đầu của việc nó
+         tự tách ra thành thang riêng */
+      const v0 = G.VZ_VUNG[0], giuT = v0.tang;
+      delete v0.tang;
+      const s1 = G.vzSoiNoi();
+      r.batVungKhongTang = s1.some(x => /trống/.test(x)) && s1.some(x => /không vùng nào phủ/.test(x));
+      v0.tang = giuT;
+      /* Cho hai vùng cùng một tầng */
+      const giuT2 = G.VZ_VUNG[1].tang;
+      G.VZ_VUNG[1].tang = G.VZ_VUNG[0].tang;
+      r.batTrungTang = G.vzSoiNoi().some(x => /hai vùng cùng một tầng/.test(x));
+      G.VZ_VUNG[1].tang = giuT2;
+
+      /* ── LÕI Ở TÂM, KHÔNG Ở BẬC ĐẦU ── */
+      r.soiLoi = G.vzSoiLoi();
+      r.loiKhongPhaiTang = (G.VZ_LOI || {}).khongPhaiTang === true;
+      const giuCL = G.VZ_VUNG[4].canLoi;
+      delete G.VZ_VUNG[4].canLoi;
+      r.batVungKhongCanLoi = G.vzSoiLoi().some(x => /không cần lõi/.test(x));
+      G.VZ_VUNG[4].canLoi = giuCL;
+
+      /* ── BỐN CHỖ RƠI ── */
+      r.soiRoi = G.vzSoiRoi();
+      r.soRoi = (G.VZ_ROI || []).length;
+      r.vungCuoiKhongRoi = !(G.VZ_ROI || []).some(x => {
+        const v = G.VZ_VUNG.filter(y => y.ma === x.tuVung)[0];
+        return v && v.vungCuoi;
+      });
+      /* Chỗ rơi không có đường về là một lời chẩn đoán, không phải cơ chế */
+      const r0 = G.VZ_ROI[0], giuDV = r0.duongVe;
+      delete r0.duongVe;
+      r.batKhongDuongVe = G.vzSoiRoi().some(x => /không có đường về/.test(x));
+      r0.duongVe = giuDV;
+
+      /* ── NHẬN RA BẰNG DẤU HIỆU, VÀ KHÔNG ĐOÁN KHI CHƯA CÓ SỔ ── */
+      const chua = G.vzRoiVao('T1');
+      const roi = G.vzRoiVao('T1', { vietLanDau: 0 });
+      const chuaRoi = G.vzRoiVao('T1', { vietLanDau: 3 });
+      const cuoi = G.vzRoiVao('T5', {});
+      r.roiDung = chua.chuaDo === true && !!chua.rinhSan &&
+        roi.roi === true && !!roi.duongVe &&
+        chuaRoi.roi === false && cuoi.vungCuoi === true;
+      /* Chỗ nguy hiểm nhất: số liệu đẹp mà việc lần đầu bằng không */
+      const du = G.vzRoiVao('T4', { vietLanDau: 0, soLieuDep: true });
+      r.batDuRoi = du.roi === true && du.ma === 'DUROI';
+
+      /* ── KHAI THÁC: hàm cũ nói được câu mới ── */
+      const dd = G.htDuongDayDu(3, { vietLanDau: 0 });
+      r.khaiThac = !!dd && !!dd.tang && !!dd.vung && !!dd.vung.ten &&
+        !!dd.canLoi && !!dd.choRoi && dd.choRoi.roi === true;
+
+      /* ── Chữ bản gốc không đọc rõ thì khai là không đoán ── */
+      r.coKhaiChuMo = (G.VZ_ROI || []).some(x => x.banGocKhongRo && /KHÔNG đoán/.test(x.banGocKhongRo));
+
+      const man = G.VIEWS['sau-vung']();
+      r.manCoLoi = man.indexOf(G.VZ_LOI.la) >= 0;
+      r.manCoDuongVe = man.indexOf('Đường về') >= 0;
+      return r;
+    });
+    if (!ra.co) {
+      bao(false, 'sáu vùng nạp được từ gói nền', 'không thấy VZ_VUNG');
+    } else {
+      bao(!ra.soiNoi.length && ra.soVung === 5 && ra.batVungKhongTang && ra.batTrungTang,
+        'SÁU VÙNG VÀO KHO DƯỚI DẠNG LỚP SÂU, KHÔNG DƯỚI DẠNG THANG THỨ SÁU — và ép khớp MỘT-MỘT với năm tầng: không vùng nào không có tầng, không tầng nào có hai vùng. Bản trước viết sẵn luật cho tình huống này với lý do "sẽ còn tài liệu nữa"; lần sau tới đúng một bản sau. Một lớp sâu phủ hụt là bước đầu của việc nó tự tách thành thang riêng, và tách từ từ là cách không ai kịp nhận ra',
+        ra.soiNoi.join(' ') || '5 vùng khớp 5 tầng một-một');
+      bao(!ra.soiLoi.length && ra.loiKhongPhaiTang && ra.batVungKhongCanLoi,
+        'TỰ NHẬN THỨC Ở LÕI, KHÔNG Ở BẬC ĐẦU — vùng nào cũng khai cần lõi, và phép kiểm bắt ngay khi một vùng bỏ nó. Đây là chỗ bức tranh sửa lại một điều tôi đã xếp sai: tôi từng đặt tự nhận thức thành phẩm chất của bậc một, ngầm hiểu xong bậc ấy thì sang bậc khác. Một bậc thang leo được mà không cần nhìn lại mình là một bậc mua được bằng tiền',
+        ra.soiLoi.join(' ') || 'lõi ở tâm · 5/5 vùng cần lõi');
+      bao(!ra.soiRoi.length && ra.soRoi === 4 && ra.vungCuoiKhongRoi && ra.batKhongDuongVe,
+        'bốn chỗ rơi mang tên, mỗi chỗ đúng một vùng, và vùng CUỐI không có lối rơi — ra khỏi vùng ấy là đổi vai, không phải rơi. Chỗ rơi nào cũng có ĐƯỜNG VỀ, và phép kiểm bắt ngay khi mất nó: một chỗ rơi không có đường về là một lời chẩn đoán, mà chẩn đoán không có thuốc thì tệ hơn không chẩn đoán',
+        ra.soiRoi.join(' ') || '4 chỗ rơi · 4 đường về · vùng cuối không có lối rơi');
+      bao(ra.roiDung && ra.batDuRoi && ra.coKhaiChuMo,
+        'chỗ rơi nhận ra bằng DẤU HIỆU chứ không bằng lịch, và chưa có sổ dấu hiệu thì hàm chỉ nói chỗ nào RÌNH SẴN — không nói nhà mình đã rơi. Chỗ nguy hiểm nhất là "đủ rồi": số liệu đẹp lên trong khi việc lần đầu làm bằng không. Ba chỗ kia người ta biết mình đang khổ; chỗ này người ta thấy mình đang ổn, và ổn là thứ không ai đi tìm cách thoát ra',
+        'bắt đúng chỗ đủ-rồi · chữ bản gốc mờ thì khai là KHÔNG đoán');
+      bao(ra.khaiThac && ra.manCoLoi && ra.manCoDuongVe,
+        'dữ liệu mới trả công cho máy cũ: hàm chỉ đường của bản trước nay nói thêm nhà mình đang CẢM THẤY ở vùng nào và chỗ rơi nào đang rình — không dựng hàm thứ hai trả lời cùng một câu hỏi, chỉ bọc hàm đã có. Bọc thì một nguồn, dựng thì hai');
     }
   }
 

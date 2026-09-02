@@ -134,6 +134,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      hệ MỜI gia đình đi, và giấu con đường đi là giấu đúng thứ mình
      đang mời. Kể cả bảng chỗ nối và sáu chỗ chưa khớp: một nhà có
      quyền biết cái thang đo mình được ghép lại từ đâu. */
+  /* SÁU VÙNG — lớp sâu tâm lý của năm tầng, và bốn chỗ rơi có tên.
+     Ở gói NỀN: đây là bức tranh nhà mình tự soi mình, và bốn chỗ rơi
+     là thứ người đang nằm trong đó cần đọc nhất. Giấu bảng chỗ rơi
+     khỏi người có thể đang rơi là giấu đúng chỗ nó có việc. */
+  'VZ_LOI', 'VZ_VUNG', 'VZ_VUNG_LUAT', 'VZ_ROI', 'VZ_ROI_LUAT', 'VZ_LUAT',
   'HT_DICH', 'HT_TANG', 'HT_TANG_LUAT', 'HT_SAUT5', 'HT_KC',
   'HT_NOI', 'HT_NOI_LUAT', 'HT_LECH', 'HT_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
@@ -728,6 +733,8 @@ const mau = {
   HN_NGO: G.HN_NGO, HN_NGO_LUAT: G.HN_NGO_LUAT,
   /* Con đường năm tầng vào cả bản xem thử: người đang cân nhắc bước
      vào cần thấy trước cả năm bậc và cả ngày thang này hết bậc. */
+  VZ_LOI: G.VZ_LOI, VZ_VUNG: G.VZ_VUNG, VZ_VUNG_LUAT: G.VZ_VUNG_LUAT,
+  VZ_ROI: G.VZ_ROI, VZ_ROI_LUAT: G.VZ_ROI_LUAT, VZ_LUAT: G.VZ_LUAT,
   HT_DICH: G.HT_DICH, HT_TANG: G.HT_TANG, HT_TANG_LUAT: G.HT_TANG_LUAT,
   HT_SAUT5: G.HT_SAUT5, HT_KC: G.HT_KC, HT_NOI: G.HT_NOI,
   HT_NOI_LUAT: G.HT_NOI_LUAT, HT_LECH: G.HT_LECH, HT_LUAT: G.HT_LUAT,
