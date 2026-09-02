@@ -193,6 +193,7 @@ G.ITEM_EN = {
   'phap-ly':['Your family\u2019s seven rights','Silence · erase · leave · veto · read · correct · complain'],
   'so-tay-tu-van':['Five things a consultant may not do','Red lines at closing · 30 objections, real or fake · 15 monthly numbers'],
   'so-tay-gia-dinh':['The family\u2019s handbook','24 pages · 30 questions · 7 rights · the last page left blank for you'],
+  'hansei-sach':['What this system still owes','5 unanswered questions · 3 kinds of automated decision · 9 self-found contradictions'],
   'nam-dau':['The first-year handbook','12 months · 6 checkpoints · 8 first-time playbooks'],
   'dao-tao-dh':['Forty hours of training','12 sessions · 20 role-play cases · 1 absolute criterion'],
   'nam-man':['The five-screen console','30 minutes each morning · 3 companion levels · 5 terms'],

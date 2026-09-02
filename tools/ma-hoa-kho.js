@@ -125,6 +125,11 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
   'SG_DONGDAU', 'SG_TRANG24', 'SG_MUCLUC', 'SG_LUAT', 'SG_KHAN', 'SG_KHAN_LUAT',
   'SG_CAM5', 'SG_CAM5_LUAT', 'SG_KHONGVAY', 'SG_QUYEN7', 'SG_QUYEN7_LUAT',
   'SG_HOI', 'SG_TRONGSACH',
+  /* NĂM CÂU HỆ CHƯA TRẢ LỜI ĐƯỢC. Bản gốc chốt: in ở ĐẦU sách, không
+     phải phụ lục — để người đọc từ trang đầu biết bộ sách đang nợ gì.
+     Giấu chúng sau gói nghề là đúng cách một câu để ngỏ trở thành một
+     câu chìm, và câu chìm thì năm sau không ai nhắc lại. */
+  'HN_NGO', 'HN_NGO_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -276,6 +281,13 @@ const NGHE = [
   'SG_CHUONG', 'SG_CHUONG_LUAT', 'SG_DAOTAO', 'SG_SO', 'SG_SO_LUAT',
   'SG_INAN', 'SG_INLAI', 'SG_KIEM3', 'SG_PHULUC', 'SG_DOCHU',
   'SG_CHOCHU', 'SG_CHOCHU_LUAT',
+  /* Lớp tự soi: ba loại quyết định tự động, luật im-lặng-là-tiếp-tục,
+     hình dạng cuốn sổ giờ chuông chưa ra đời, chín mâu thuẫn và năm
+     chỗ bộ sách tự phạm. Đây là bản đồ chỗ hệ tự biết mình yếu — cùng
+     lý do với GL_SUCO và MP_CHUA, đi gói NGHỀ. */
+  'HN_QUYET', 'HN_QUYET_LUAT', 'HN_DONGY', 'HN_SLA', 'HN_MAUTHUAN',
+  'HN_CAY', 'HN_TUPHAT', 'HN_YEU', 'HN_LUAT', 'HN_TUCAM_THEM',
+  'HN_CHOCHU', 'HN_CHOCHU_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -704,6 +716,10 @@ const mau = {
   SG_CAM5: G.SG_CAM5, SG_CAM5_LUAT: G.SG_CAM5_LUAT, SG_KHONGVAY: G.SG_KHONGVAY,
   SG_QUYEN7: G.SG_QUYEN7, SG_QUYEN7_LUAT: G.SG_QUYEN7_LUAT,
   SG_HOI: G.SG_HOI, SG_TRONGSACH: G.SG_TRONGSACH,
+  /* Năm câu để ngỏ vào cả bản xem thử: người mở bản xem thử là người
+     đang cân nhắc có tin hay không, và một hệ dám khai chỗ mình chưa
+     trả lời được là bằng chứng mạnh hơn mọi lời giới thiệu. */
+  HN_NGO: G.HN_NGO, HN_NGO_LUAT: G.HN_NGO_LUAT,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')

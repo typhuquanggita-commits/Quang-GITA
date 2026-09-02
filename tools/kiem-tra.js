@@ -6841,6 +6841,143 @@ const { chromium } = require(PW);
     }
   }
 
+
+  console.log('\n58 · BA LOẠI QUYẾT ĐỊNH · IM LẶNG LÀ TIẾP TỤC · SỔ GIỜ CHUÔNG KHOÁ TRƯỚC');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const nha = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.HN_NGO) return { co: false };
+      const man = G.VIEWS['hansei-sach']();
+      return { co: true,
+        soNgo: G.HN_NGO.length,
+        soiNgo: G.hnSoiNgo(),
+        soNang: G.HN_NGO.filter(n => n.nang).length,
+        /* Gia đình KHÔNG nhận bảng quyết định, chín mâu thuẫn, năm chỗ
+           tự phạm — đó là bản đồ chỗ hệ tự biết mình yếu. */
+        lo: !!(G.HN_QUYET || G.HN_MAUTHUAN || G.HN_TUPHAT || G.HN_YEU || G.HN_SLA),
+        manCoNgo: man.indexOf(G.HN_NGO[0].hoi) >= 0,
+        manKhongCoQuyet: man.indexOf('Ba loại quyết định') < 0 };
+    });
+    if (!nha.co) {
+      bao(false, 'năm câu để ngỏ nạp được từ gói nền', 'không thấy HN_NGO');
+    } else {
+      bao(nha.soNgo === 5 && !nha.soiNgo.length && nha.soNang === 2 && nha.manCoNgo,
+        'năm câu hệ CHƯA TRẢ LỜI ĐƯỢC in ở gói nền và lên đầu màn, và hai câu nặng nói rõ hẹp hơn ở đâu cùng vì sao chưa trả lời nổi — câu để ngỏ xếp xuống cuối là câu chìm, và câu chìm thì năm sau không ai nhắc lại',
+        nha.soiNgo.join(' ') || '5 câu · 2 câu nặng khai đủ');
+      bao(!nha.lo && nha.manKhongCoQuyet,
+        'gia đình đọc được năm câu hệ đang nợ, nhưng KHÔNG nhận bảng quyết định tự động, chín mâu thuẫn và năm chỗ tự phạm — đó là bản đồ chỗ hệ tự biết mình yếu, cùng lý do với sáu kịch bản sự cố',
+        nha.lo ? 'lớp tự soi lọt xuống máy phụ huynh' : 'chỉ có năm câu để ngỏ');
+    }
+
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ng = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.HN_QUYET) return { co: false };
+      const ra = { co: true };
+
+      /* ── BA LOẠI QUYẾT ĐỊNH — luật lớn nhất của bản này ── */
+      ra.soiQuyet = G.hnSoiQuyet();
+      ra.soQuyet = G.HN_QUYET.length;
+      ra.moRong = G.hnQuyetTheoLoai('moRong').length;
+      ra.thuHep = G.hnQuyetTheoLoai('thuHep').length;
+      ra.chanHe = G.hnQuyetTheoLoai('chanHe').length;
+      /* Chuông đỏ PHẢI là loại mở rộng và máy PHẢI được làm trước —
+         đây đúng là chỗ bản 9.19 còn vướng. */
+      const cd = G.HN_QUYET.filter(q => q.ma === 'Q-CHUONGDO')[0] || {};
+      ra.chuongDoMoRong = cd.loai === 'moRong' && cd.mayLamTruoc === true && !!cd.nguoiXacNhanSau;
+      /* Cho máy chốt một việc THU HẸP — phép kiểm phải bắt */
+      const th = G.HN_QUYET.filter(q => q.loai === 'thuHep')[0];
+      th.mayLamTruoc = true;
+      ra.batThuHepTuDong = G.hnSoiQuyet().some(x => /THU HẸP mà máy làm trước/.test(x));
+      th.mayLamTruoc = false;
+      /* Mở một cửa xin cho một cái chặn tổ chức — phải bắt */
+      const ch = G.HN_QUYET.filter(q => q.loai === 'chanHe')[0];
+      delete ch.khongCuaXin;
+      ra.batCuaXin = G.hnSoiQuyet().some(x => /còn cửa xin/.test(x));
+      ch.khongCuaXin = true;
+      /* Trỏ vào một hàm không tồn tại — phải bắt */
+      const giuNoi = G.HN_QUYET[0].noi;
+      G.HN_QUYET[0].noi = 'hnKhongCoHamNay';
+      ra.batNoiMa = G.hnSoiQuyet().some(x => /không có thật/.test(x));
+      G.HN_QUYET[0].noi = giuNoi;
+
+      /* ── IM LẶNG LÀ TIẾP TỤC ── */
+      const mo = G.hnCanXinLai({ thuHepQuyen: false });
+      const thu = G.hnCanXinLai({ thuHepQuyen: true });
+      const chua = G.hnCanXinLai({});
+      ra.dongYDung = mo.canGat === false && thu.canGat === true && chua.chuaPhanLoai === true;
+      ra.soiXinLai = G.hnSoiXinLaiDongY();
+      const inl = G.SG_INLAI[0], giuTH = inl.thuHepQuyen;
+      inl.thuHepQuyen = true;
+      ra.batThuHepChuaXin = G.hnSoiXinLaiDongY().length === 1;
+      inl.thuHepQuyen = giuTH;
+
+      /* ── SỔ GIỜ CHUÔNG: khoá hình dạng trước khi nó ra đời ── */
+      ra.soiSLA = G.hnSoiSLA();
+      ra.slaChuaCo = G.HN_SLA.chuaCo === true;
+      ra.slaCamTheoNguoi = G.HN_SLA.camGhiTheoNguoi === true;
+      const giuCam = G.HN_SLA.camGhiTheoNguoi;
+      delete G.HN_SLA.camGhiTheoNguoi;
+      ra.batSLATheoNguoi = G.hnSoiSLA().length === 1;
+      G.HN_SLA.camGhiTheoNguoi = giuCam;
+      /* Và cổng in của bản trước VẪN đỏ — sổ chưa có thì chưa in được */
+      ra.congInVanDo = G.sgSanSangIn().ok === false;
+
+      /* ── Mâu thuẫn phải rơi xuống chỗ thật ── */
+      ra.soiApVao = G.hnSoiApVao();
+      ra.soMauThuan = G.HN_MAUTHUAN.length;
+      ra.soChuaSua = G.HN_MAUTHUAN.filter(m => m.chuaSua).length;
+      const mt = G.HN_MAUTHUAN.filter(m => !m.chuaSua)[0], giuAp = mt.apVao;
+      mt.apVao = 'HN_KHO_KHONG_CO';
+      ra.batApVaoMa = G.hnSoiApVao().length === 1;
+      mt.apVao = giuAp;
+
+      ra.soiYeu = G.hnSoiYeu();
+      ra.soiTuPhat = G.hnSoiTuPhat();
+      ra.soChoChu = G.hnChoChu().length;
+
+      /* ── Cụm từ cấm thứ sáu đã gộp thật, và không câu nào phạm ── */
+      ra.camTu = (G.HM_NGONTU || {}).camTu || [];
+      ra.coCumThu6 = ra.camTu.indexOf('nếu không thì') >= 0;
+      ra.quetSach = [].concat(G.hmSoiNgonTu(), G.tvSoiNgonTu(), G.sgSoiNgonTu());
+      /* Nhét cụm mới vào một câu nói-với-nhà — phải đỏ */
+      const giuLam = G.SG_KHAN[0].lam;
+      G.SG_KHAN[0].lam = 'Bấm nút đỏ, nếu không thì gọi số ở bìa sau.';
+      ra.batCumMoi = G.sgSoiNgonTu().length === 1;
+      G.SG_KHAN[0].lam = giuLam;
+
+      ra.manCoQuyet = G.VIEWS['hansei-sach']().indexOf('Ba loại quyết định') >= 0;
+      return ra;
+    });
+    if (!ng.co) {
+      bao(false, 'lớp tự soi nạp được từ gói nghề', 'không thấy HN_QUYET');
+    } else {
+      bao(!ng.soiQuyet.length && ng.soQuyet === 10 && ng.chuongDoMoRong && ng.batThuHepTuDong,
+        'mười quyết định tự động của hệ đều được xếp loại, và luật khác nhau theo loại: MỞ RỘNG thì máy làm trước, THU HẸP thì người quyết trước, luôn luôn. Phép kiểm bắt ngay khi cho máy chốt một việc thu hẹp — sai khi mở rộng thì tốn một lần ngại, sai khi thu hẹp thì tốn một con người',
+        ng.soiQuyet.join(' ') || ng.moRong + ' mở rộng · ' + ng.thuHep + ' thu hẹp · ' + ng.chanHe + ' chặn hệ');
+      bao(ng.batCuaXin && ng.batNoiMa,
+        'quyết định CHẶN CHÍNH TỔ CHỨC thì không có cửa xin, và mọi quyết định đều trỏ vào một hàm hoặc kho CÓ THẬT — cửa xin sẽ mở vào đúng lúc gấp, và một quyết định không trỏ được vào chỗ chạy thật là một dòng bảng chứ không phải một quyết định');
+      bao(ng.dongYDung && !ng.soiXinLai.length && ng.batThuHepChuaXin,
+        'IM LẶNG LÀ TIẾP TỤC: thay đổi mở rộng quyền thì không ai phải trả lời để giữ thứ mình đang có; thay đổi THU HẸP quyền thì hỏi lại và chờ gật. Chưa khai thay đổi thuộc loại nào thì hàm nói CHƯA PHÂN LOẠI ĐƯỢC, không nói "im lặng là đủ" — đoán về phía dễ là đúng cách một quyền bị thu hẹp trong im lặng',
+        ng.soiXinLai.join(' ') || 'lần in 1 khai không thu hẹp quyền nào');
+      bao(!ng.soiSLA.length && ng.slaChuaCo && ng.slaCamTheoNguoi && ng.batSLATheoNguoi && ng.congInVanDo,
+        'cuốn sổ giờ bấm–giờ chạm CHƯA RA ĐỜI, và hình dạng nó đã bị khoá từ bây giờ: ghi theo LẦN BẤM, cấm ghi theo NGƯỜI TRỰC, cấm xuất hiện trong mọi báo cáo về cá nhân. Khoá sau khi sổ ra đời thì trong đó đã có sẵn một cột tên người, và không ai chịu xoá một cột đã có số. Cổng in vẫn đỏ — sổ chưa có thì chưa in được',
+        'sổ chưa có · hình dạng đã khoá · cổng in còn đỏ');
+      bao(!ng.soiApVao.length && ng.soMauThuan === 9 && ng.soChuaSua === 1 && ng.batApVaoMa,
+        'chín mâu thuẫn bộ sách tự tìm ra, tám cái RƠI XUỐNG một kho hoặc một hàm có thật, một cái khai thẳng là chưa sửa được và thiếu đúng cái gì — một cái sửa không rơi vào đâu là một lời thú nhận, và thú nhận làm người ta nhẹ lòng, thứ nguy hiểm nhất sau khi biết mình sai',
+        ng.soiApVao.join(' ') || '8 cái rơi xuống chỗ thật · 1 cái khai chưa sửa');
+      bao(!ng.soiYeu.length && !ng.soiTuPhat.length && ng.soChoChu === 2,
+        'bốn điểm yếu không sửa được đều có DÂY THỪA KẾ nói rõ ai gánh tiếp, năm chỗ tự phạm đều có GIÁ, và hai câu chờ chủ hệ khai đủ bốn cột — một điểm yếu khai ra mà không nói ai gánh là một lời than, không phải một món nợ',
+        ng.soiYeu.join(' ') + ng.soiTuPhat.join(' ') || '4 dây thừa kế · 5 giá · 2 câu chờ chủ hệ');
+      bao(ng.coCumThu6 && ng.camTu.length === 7 && !ng.quetSach.length && ng.batCumMoi && ng.manCoQuyet,
+        'chuẩn ngôn từ nay có cụm thứ sáu "nếu không thì" — năm cụm đầu là giọng SAI BẢO, cụm này là giọng RA ĐIỀU KIỆN: nó không sai bảo, nó doạ. Ba tài liệu viết cách nhau, không đọc nhau, mà ra cùng một danh sách. Đo trước khi gộp: không câu nói-với-nhà nào trong cả kho phạm nó',
+        ng.camTu.length + ' cụm cấm · quét cả ba máy: sạch');
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

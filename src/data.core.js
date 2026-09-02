@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.19',
+  version: '9.20',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -326,7 +326,16 @@ G.TAM_NHIN = [
      giữ nguyên trần nội dung ở chỗ của nó. */
   {vai:['R13'], pt:37, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
   {vai:['R14'], pt:33, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
-  {vai:['R15'], pt:29, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem mình đã đổi gì so với tuần trước'}
+  /* 31 chứ không còn 29. Hai màn mới ở 9.19 và 9.20 — sổ tay của gia
+     đình, và năm câu hệ chưa trả lời được — đều mở cho MỌI vai, nên
+     R15 thấy thêm hai màn trong khi mẫu số cũng tăng hai. Tử số tăng
+     nhanh hơn mẫu số nên tỉ lệ nhích lên.
+
+     Lại là lúc sửa SỐ CÔNG BỐ chứ không nới dung sai: phần khoá của
+     cộng tác viên không mở thêm một màn nghề nào. Cả hai màn mới đều
+     là thứ hệ TỰ KHAI về chính mình — lời hứa với gia đình, và chỗ
+     hệ còn đang nợ. Giấu hai thứ ấy khỏi ai thì mới là chuyện lạ. */
+  {vai:['R15'], pt:31, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -496,6 +505,7 @@ G.NAV = [
     {v:'phap-ly',     t:'Bảy quyền của nhà mình',      h:'Im lặng · xoá · đi · phủ quyết · đọc · sửa · khiếu nại', ic:'shield', star:1, capMo:'chung'},
     {v:'so-tay-tu-van',t:'Năm điều tư vấn không được làm',h:'Lằn ranh lúc chốt · 30 lời từ chối thật hay giả · 15 con số tháng', ic:'shield', star:1, capMo:'chung'},
     {v:'so-tay-gia-dinh',t:'Sổ tay của gia đình',        h:'24 trang · 30 câu · 7 quyền · trang cuối để trống cho bạn', ic:'sun', star:1, capMo:'chung'},
+    {v:'hansei-sach',  t:'Hệ này đang nợ gì',            h:'5 câu chưa trả lời được · 3 loại quyết định · 9 mâu thuẫn tự tìm ra', ic:'shield', star:1, capMo:'chung'},
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
        tổn thương nhất và cách nó dựng ra người kèm. */
