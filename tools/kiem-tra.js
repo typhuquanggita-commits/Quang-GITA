@@ -7702,6 +7702,83 @@ const { chromium } = require(PW);
   }
 
 
+  console.log('\n65 · TIA HY VỌNG — CÒN BAO NHIÊU NỮA, VÀ QUA RỒI THÌ THẤY GÌ');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.bdTiaHyVong || !G.BD_CAP) return { co: false };
+      const r = {}, t = G.bdCap();
+      /* Bốn cột phải có đủ ở MỌI mốc, không chỉ mốc đầu: mốc thiếu cột
+         `wow` là mốc hứa suông, và người đi tới đó mới biết mình bị hụt. */
+      r.duCot = G.BD_CAP.every(c => c.mocThat && c.mo && c.wow && c.dk);
+      /* Lời hứa trên màn phải khớp điều kiện máy — bdSoiLoiHua() đã có */
+      r.hueKhop = (G.bdSoiLoiHua() || []).length === 0;
+
+      const the = G.bdTiaHyVong();
+      r.coThe = the.length > 200;
+      r.theCoMo = t.tiepTheo ? the.indexOf(G.U.h(t.tiepTheo.mo)) >= 0 : false;
+      r.theCoWow = t.tiepTheo ? the.indexOf(G.U.h(t.tiepTheo.wow)) >= 0 : false;
+      /* Chưa ghi tối nào thì nói việc đầu tiên, KHÔNG vẽ thanh rỗng rồi
+         gọi nó là khởi đầu. */
+      r.chuaGhiNoiThang = (t.bangChung.toi > 0) || /Ghi tối đầu tiên/.test(the);
+
+      /* ── Phần trăm phải đo trên chỉ số CÒN THIẾU NHIỀU NHẤT ──
+         Lấy trung bình ba chỉ số thì thanh đầy lên trong khi cái chặn
+         thật vẫn đứng yên — một lời hứa sai, và người đọc chỉ biết khi
+         thanh gần đầy mà mốc vẫn không mở. */
+      const giu = G.S.journal;
+      const j = {}; const nay = new Date();
+      for (let i = 0; i < 30; i++) {
+        const d = new Date(nay.getTime() - i * 86400000);
+        j[d.toISOString().slice(0, 10)] = 'có ghi';
+      }
+      G.S.journal = j;
+      const t2 = G.bdCap();
+      const the2 = G.bdTiaHyVong();
+      const pt = Number((/width:(\d+)%/.exec(the2) || [0, -1])[1]);
+      const dk2 = (t2.tiepTheo || {}).dk || {};
+      const ptThat = Math.min.apply(null, ['toi', 'chuoi', 'bai']
+        .filter(k => dk2[k])
+        .map(k => Math.round(((t2.bangChung[k] || 0) / dk2[k]) * 100)));
+      r.ptTheoChoChan = !t2.tiepTheo || pt === Math.max(0, Math.min(100, ptThat));
+      r.daDiThiCoSo = t2.bangChung.toi >= 30 && t2.cap > 0;
+      G.S.journal = giu;
+
+      /* Hết mốc thì KHÔNG hứa thêm — thẻ vắng hẳn, không in một thẻ rỗng */
+      const giuCap = G.BD_CAP;
+      G.BD_CAP = [G.BD_CAP[0]];
+      G.S.journal = j;
+      r.hetMocThiVang = G.bdTiaHyVong() === '';
+      G.BD_CAP = giuCap; G.S.journal = giu;
+
+      /* Trên MÀN THẬT của nhà mình */
+      const man = G.VIEWS['ban-do']();
+      r.manCoThe = man.indexOf('class="tia"') >= 0;
+      r.manCoViecHomNay = man.indexOf('VIỆC CỦA NHÀ MÌNH HÔM NAY') >= 0;
+      /* Việc hôm nay đứng TRƯỚC tia hy vọng: làm gì trước, để làm gì sau */
+      r.thuTuDung = man.indexOf('VIỆC CỦA NHÀ MÌNH HÔM NAY') < man.indexOf('class="tia"');
+      return { co: true, ...r };
+    });
+
+    if (!ra.co) {
+      bao(false, 'tia hy vọng nạp được', 'không thấy bdTiaHyVong');
+    } else {
+      bao(ra.duCot && ra.hueKhop,
+        'MƯỜI MỐC, MỖI MỐC ĐỦ BỐN CỘT: điều kiện máy đọc · cùng điều kiện ấy viết bằng lời cho nhà mình · qua rồi thì MỞ gì · và nhà mình sẽ THẤY gì. Mốc thiếu cột "thấy gì" là mốc hứa suông, và người đi tới đó mới biết mình bị hụt. Lời hứa trên màn khớp đúng điều kiện máy — hứa một đằng mở một nẻo là cách mất lòng tin nhanh nhất',
+        '10 mốc đủ cột · lời hứa khớp điều kiện');
+      bao(ra.coThe && ra.theCoMo && ra.theCoWow && ra.chuaGhiNoiThang,
+        'thẻ in đúng ba thứ: còn bao nhiêu nữa · qua rồi thì mở gì · và nhà mình sẽ thấy gì. Câu "thấy gì" lấy nguyên văn từ kho, và nó KHÔNG hứa "gia đình hạnh phúc" — nó nói một thứ cụ thể nhà mình sẽ nhìn thấy, lấy từ chính dữ liệu nhà mình vừa ghi. Lời hứa mơ hồ thì ai cũng viết được và không ai đòi được; lời hứa cụ thể thì đòi được, nên nó mới là tia hy vọng thật. Chưa ghi tối nào thì nói thẳng việc đầu tiên, không vẽ một thanh rỗng rồi gọi là khởi đầu');
+      bao(ra.ptTheoChoChan && ra.daDiThiCoSo && ra.hetMocThiVang,
+        'THANH TIẾN ĐỘ ĐO TRÊN CHỈ SỐ CÒN THIẾU NHIỀU NHẤT, không lấy trung bình. Lấy trung bình thì thanh đầy lên trong khi cái chặn thật vẫn đứng yên — người đọc chỉ biết mình bị lừa lúc thanh gần đầy mà mốc vẫn không mở. Và hết mốc thì thẻ VẮNG HẲN, không in một thẻ rỗng để hứa thêm',
+        'ghi 30 tối → phần trăm theo chỗ chặn · hết mốc → thẻ vắng');
+      bao(ra.manCoThe && ra.manCoViecHomNay && ra.thuTuDung,
+        'trên màn nhà mình mở ra đầu tiên: VIỆC HÔM NAY đứng trước, TIA HY VỌNG đứng sau. Hai thẻ trả lời hai câu khác nhau — "làm gì" và "để làm gì" — nên chúng đứng cạnh nhau chứ không thay nhau, và đúng thứ tự ấy: người mệt cần biết làm gì trước, cần lý do sau');
+    }
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

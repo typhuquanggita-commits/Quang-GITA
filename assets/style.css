@@ -1157,3 +1157,26 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
   .bt-viec{font-size:14.5px}
   .bt-b:not(:last-child) .bt-cot:after{top:50px}
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   TIA HY VỌNG  ·  v9.31
+   Thẻ trả lời đúng một câu: còn bao nhiêu nữa, và qua rồi thì nhà mình
+   THẤY gì. Đặt trên cùng màn nhà mình, ngay dưới việc hôm nay.
+   ═══════════════════════════════════════════════════════════════ */
+.tia{margin:16px 0;padding:18px 18px 16px;border-radius:18px;
+  border:1px solid var(--gita-vien-2);
+  background:linear-gradient(160deg,var(--gita-mo-1),transparent 65%)}
+.tia-dinh{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.tia-nhan{font-size:10.5px;letter-spacing:.14em;color:var(--ink-4)}
+.tia-moc{font-size:18px;letter-spacing:.01em}
+/* Việc còn thiếu viết to nhất thẻ — nó là thứ duy nhất phải làm. */
+.tia-viec{font-size:18px;line-height:1.6;color:var(--ink);margin:2px 0 12px;max-width:46ch}
+.tia-thanh{height:7px;border-radius:99px;background:var(--phu-3);overflow:hidden}
+.tia-thanh>i{display:block;height:100%;border-radius:99px;transition:width .5s ease}
+.tia-da{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:10px}
+.tia-mo{font-size:14.5px;line-height:1.75;color:var(--ink-2);margin-top:10px;max-width:56ch}
+/* Câu wow in nghiêng và nhạt hơn: nó là thứ nhà mình SẼ thấy, chưa
+   phải thứ đã có — nên nó không được to bằng việc phải làm. */
+.tia-wow{font-size:14.5px;line-height:1.8;color:var(--ink-3);font-style:italic;
+  margin-top:10px;padding-left:12px;border-left:2px solid var(--gita-vien-2);max-width:56ch}
+@media (max-width:640px){ .tia{padding:15px 14px} .tia-viec{font-size:16px} }

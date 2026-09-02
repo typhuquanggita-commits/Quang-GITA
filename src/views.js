@@ -31,6 +31,10 @@ G.VIEWS['ban-do'] = function(){
       o += G.veBacThang(dangO, { y: th.chuaDo ? th.y : '' });
     }
   }
+  /* Ngay dưới việc hôm nay: còn bao nhiêu nữa, và qua rồi thì thấy gì.
+     Hai thẻ này trả lời hai câu khác nhau — một câu "làm gì", một câu
+     "để làm gì" — nên chúng đứng cạnh nhau chứ không thay nhau. */
+  if (G.bdTiaHyVong) o += G.bdTiaHyVong();
 
   /* Đầu vào */
   o += U.sec('ĐẦU VÀO — ba thứ phải có trước khi khởi động năm', V.dauVao.ten);

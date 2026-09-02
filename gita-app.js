@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.30',
+  version: '9.31',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -4359,6 +4359,10 @@ G.VIEWS['ban-do'] = function(){
       o += G.veBacThang(dangO, { y: th.chuaDo ? th.y : '' });
     }
   }
+  /* Ngay dưới việc hôm nay: còn bao nhiêu nữa, và qua rồi thì thấy gì.
+     Hai thẻ này trả lời hai câu khác nhau — một câu "làm gì", một câu
+     "để làm gì" — nên chúng đứng cạnh nhau chứ không thay nhau. */
+  if (G.bdTiaHyVong) o += G.bdTiaHyVong();
 
   /* Đầu vào */
   o += U.sec('ĐẦU VÀO — ba thứ phải có trước khi khởi động năm', V.dauVao.ten);
@@ -17955,6 +17959,58 @@ G.VIEWS = G.VIEWS || {};
         return dk[k] && so.indexOf(dk[k]) < 0;
       });
     }).map(function (c) { return c.cap; });
+  };
+
+  /* ═══════════ TIA HY VỌNG — MỘT PHẦN TRĂM CỦA HÔM NAY ═══════════
+
+     BD_CAP đã có đủ bốn cột cần cho việc này từ lâu, và chưa màn nào
+     ghép chúng lại thành một câu:
+
+       bangChung  nhà mình ĐÃ làm được bao nhiêu   (đo, không hỏi)
+       thieu      còn đúng bao nhiêu nữa           (đây là 1% của hôm nay)
+       mo         qua mốc thì mở ra gì
+       wow        và nhà mình sẽ THẤY gì
+
+     Cột `wow` là chỗ khác biệt. Nó không hứa "gia đình hạnh phúc" — nó
+     nói một thứ cụ thể nhà mình sẽ nhìn thấy, lấy từ chính dữ liệu nhà
+     mình vừa ghi. Lời hứa mơ hồ thì ai cũng viết được và không ai đòi
+     được; lời hứa cụ thể thì đòi được, nên nó mới là tia hy vọng thật.
+
+     KHÔNG BỊA KHI CHƯA CÓ SỔ. Chưa ghi tối nào thì nói thẳng việc duy
+     nhất lúc ấy là ghi tối đầu tiên — không vẽ một thanh tiến độ rỗng
+     rồi gọi nó là khởi đầu. */
+  G.bdTiaHyVong = function () {
+    if (!G.BD_CAP) return '';
+    var t = G.bdCap(), b = t.bangChung || {}, sau = t.tiepTheo;
+    if (!sau) return '';                       /* hết mốc — không hứa thêm */
+    var dk = sau.dk || {};
+    /* Phần trăm đi được tới mốc kế: đo trên chỉ số CÒN THIẾU NHIỀU NHẤT,
+       không lấy trung bình. Trung bình ba chỉ số làm thanh đầy lên trong
+       khi cái chặn thật vẫn đứng yên — và đó là một lời hứa sai. */
+    var pt = 100;
+    ['toi', 'chuoi', 'bai'].forEach(function (k) {
+      if (!dk[k]) return;
+      pt = Math.min(pt, Math.round(((b[k] || 0) / dk[k]) * 100));
+    });
+    pt = Math.max(0, Math.min(100, pt));
+    var chuaGhi = !(b.toi > 0);
+
+    return '<div class="tia">' +
+      '<div class="tia-dinh">' +
+        '<span class="tia-nhan">BƯỚC KẾ TIẾP</span>' +
+        '<b class="tia-moc" style="color:' + (sau.c || 'var(--gita)') + '">' + h(sau.ten) + '</b>' +
+      '</div>' +
+      (chuaGhi
+        ? '<p class="tia-viec">Ghi tối đầu tiên. Chỉ một tối, và chưa cần sửa gì cả.</p>'
+        : '<p class="tia-viec">' + h((t.thieu || []).join(' · ')) + '</p>') +
+      '<div class="tia-thanh"><i style="width:' + pt + '%;background:' +
+        (sau.c || 'var(--gita)') + '"></i></div>' +
+      '<p class="tia-da">Nhà mình đã có: <b>' + (b.toi || 0) + ' tối có ghi</b>' +
+        (b.chuoi ? ' · chuỗi dài nhất <b>' + b.chuoi + '</b>' : '') +
+        (b.bai ? ' · <b>' + b.bai + '</b> bài đã học' : '') + '</p>' +
+      (sau.mo ? '<p class="tia-mo"><b>Qua mốc này thì mở:</b> ' + h(sau.mo) + '</p>' : '') +
+      (sau.wow ? '<p class="tia-wow">' + h(sau.wow) + '</p>' : '') +
+      '</div>';
   };
 
   /* ═══════════ MÀN: MƯỜI BÁNH ĐÀ ═══════════ */
