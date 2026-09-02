@@ -107,6 +107,10 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      không đọc được thì không phải hiến pháp. Phần biên niên còn lại —
      lịch thập kỷ, cửa mở rừng, cách chuyển giao — đi gói NGHỀ. */
   'BN_TRUC5', 'BN_TRUC5_LUAT',
+  /* BẢY QUYỀN của gia đình. Bản gốc nói rõ: in ở chỗ họ NHÌN THẤY
+     được, không giấu trong điều khoản. Quyền giấu trong điều khoản là
+     quyền không ai dùng, và quyền không ai dùng là quyền trang trí. */
+  'PL_QUYEN', 'PL_QUYEN_LUAT', 'PL_CO', 'PL_CO_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -235,6 +239,14 @@ const NGHE = [
   'BN_GIEOLAI', 'BN_CHUYENGIAO', 'BN_BONG', 'BN_HANSEI_TC', 'BN_HANSEI_TC_LUAT',
   'BN_LE50', 'BN_CHAMTHU', 'BN_NENTANG', 'BN_LIENMINH', 'BN_NAM100',
   'BN_DICHUC', 'BN_CHET', 'BN_LUAT',
+  /* Lớp pháp lý: mười hai điều hiến pháp, ba tầng kho, bảy loại hợp
+     đồng, sổ xung đột lợi ích, bốn bậc khi luật va nguyên tắc, ba bậc
+     tranh chấp. Mở ra là mở đúng bộ khung phòng thủ của tổ chức — kể cả
+     cột CẤM của từng hợp đồng, tức bản đồ những chỗ hệ tự biết mình
+     yếu. Ở gói NGHỀ. */
+  'PL_CHUYENNGU', 'PL_KHO', 'PL_KHO_LUAT', 'PL_CAMKET', 'PL_DIEU',
+  'PL_PHAPNHAN', 'PL_HOPDONG', 'PL_XUNGDOT', 'PL_BAC4', 'PL_BAC4_LUAT',
+  'PL_TRANHCHAP', 'PL_KIEM90', 'PL_DINHKY', 'PL_CHOCHU', 'PL_CHOCHU_LUAT', 'PL_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -649,6 +661,7 @@ const mau = {
   DD_HUA: G.DD_HUA, GL_XONG: G.GL_XONG, GL_XONG_LUAT: G.GL_XONG_LUAT,
   TR_DEN: G.TR_DEN, TR_DEN_LUAT: G.TR_DEN_LUAT,
   BN_TRUC5: G.BN_TRUC5, BN_TRUC5_LUAT: G.BN_TRUC5_LUAT,
+  PL_QUYEN: G.PL_QUYEN, PL_QUYEN_LUAT: G.PL_QUYEN_LUAT, PL_CO: G.PL_CO,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')

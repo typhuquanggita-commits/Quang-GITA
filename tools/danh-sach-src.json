@@ -80,6 +80,7 @@
     "src/tien-rung.js",
     "src/dao-tao-dh.js",
     "src/bien-nien.js",
+    "src/phap-ly.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",

@@ -6347,6 +6347,144 @@ const { chromium } = require(PW);
     }
   }
 
+  console.log('\n55 · BẢY QUYỀN CÓ CƠ CHẾ · LỚP PHÁP LÝ · BA CÂU CHỜ CHỦ HỆ');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const nha = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.PL_QUYEN) return { co: false };
+      const man = G.VIEWS['phap-ly']();
+      return { co: true,
+        so: (G.PL_QUYEN || []).length,
+        soi: G.plSoiQuyen(),
+        /* Sổ đếm chưa có thì hàm phải nói CHƯA ĐO ĐƯỢC, không nói "ổn" */
+        khongSoThiKhaiChuaDo: G.plQuyenNgu().chuaDo === true && !!G.plQuyenNgu().thieu,
+        batDuocQuyenNgu: (function () {
+          const r = G.plQuyenNgu({ Q1: 2, Q2: 1, Q3: 1, Q4: 0, Q5: 3, Q6: 1, Q7: 4 });
+          return r.chuaDo === false && r.ngu.length === 1 && r.ngu[0] === 'Q4';
+        })(),
+        lo: !!(G.PL_DIEU || G.PL_HOPDONG || G.PL_XUNGDOT || G.PL_CHOCHU || G.PL_BAC4),
+        manCoQuyen: man.indexOf((G.PL_QUYEN[0] || {}).la || '###') >= 0,
+        manKhongCoHopDong: man.indexOf('Bảy loại hợp đồng') < 0 };
+    });
+    if (!nha.co) {
+      bao(false, 'bảy quyền nạp được từ gói nền', 'không thấy PL_QUYEN');
+    } else {
+      bao(nha.so === 7 && !nha.soi.length,
+        'bảy quyền của gia đình, quyền nào cũng trỏ vào một CƠ CHẾ CÓ THẬT — quyền không có cơ chế là quyền trang trí, và quyền trang trí còn tệ hơn không có quyền vì nó làm người ta tin mình được bảo vệ',
+        nha.soi.join(' ') || '7/7 có cơ chế');
+      bao(nha.khongSoThiKhaiChuaDo && nha.batDuocQuyenNgu,
+        'chưa có sổ đếm thì hàm nói CHƯA ĐO ĐƯỢC chứ không nói "mọi thứ ổn", và có sổ rồi thì bắt đúng quyền đang NGỦ — năm nào một quyền có không lần dùng thì đó là năm báo động, không phải năm yên ổn');
+      bao(!nha.lo && nha.manCoQuyen && nha.manKhongCoHopDong,
+        'gia đình ĐỌC ĐƯỢC bảy quyền ở chỗ nhìn thấy, không giấu trong điều khoản — nhưng không nhận bộ hợp đồng và sổ xung đột lợi ích',
+        nha.lo ? 'lớp pháp lý nghề lọt xuống máy phụ huynh' : 'chỉ có bảy quyền');
+    }
+
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ng = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.PL_DIEU) return { co: false };
+      const ra = { co: true };
+
+      /* ── Mười hai điều, đúng MỘT điều không sửa được ── */
+      ra.soiDieu = G.plSoiDieu();
+      ra.soDieu = (G.PL_DIEU || []).length;
+      ra.d12 = (G.PL_DIEU || []).filter(d => d.khongSua).map(d => d.so);
+      /* Mỗi điều phải dịch từ một nguyên tắc CÓ THẬT — điều không gốc là
+         điều sẽ bị bỏ sau năm mươi năm với lý do dọn văn bản cũ */
+      ra.dieuKhongGoc = (G.PL_DIEU || []).filter(d => !d.goc || G[d.goc] === undefined).map(d => d.so);
+
+      /* ── Điều khoản lao động ĐỌC TRẦN, không ghi số ──
+         Lần thứ BA một tỉ lệ được viết cứng lệch khỏi trần đã ép. */
+      ra.tran = G.ddTranCua('DH');
+      const t = G.plTranNguoiKem();
+      ra.dieuKhoanTheoTran = !!(t && t.tran === ra.tran && t.dieuKhoan.indexOf(String(ra.tran)) >= 0);
+      ra.soiHDTran = G.plSoiHopDongTran();
+      /* Nhét lại số cứng vào điều khoản — phép kiểm phải bắt */
+      const h3 = G.PL_HOPDONG.filter(x => x.ma === 'H3')[0];
+      const giuBB = h3.batBuoc;
+      h3.batBuoc = 'Người kèm được từ chối khi vượt tỉ lệ một trên mười.';
+      ra.batSoCung = G.plSoiHopDongTran().length === 1;
+      h3.batBuoc = giuBB;
+
+      /* ── Bảy hợp đồng đủ ba cột ── */
+      ra.soiHD = G.plSoiHopDong();
+      ra.soHD = (G.PL_HOPDONG || []).length;
+
+      /* ── Bốn bậc, và KHÔNG có bậc năm ── */
+      ra.soiBac = G.plSoiBac4();
+      ra.khongCoBac5 = (G.PL_BAC4_LUAT || {}).khongCoBac5 === true;
+
+      /* ── Ba tầng kho, năm cam kết ── */
+      ra.soKho = (G.PL_KHO || []).length;
+      ra.khoThieu = (G.PL_KHO || []).filter(k => !k.coSo || !k.giu || !k.quyen || !k.aiXem).map(k => k.ma);
+      ra.k1KhongAiXem = ((G.PL_KHO || []).filter(k => k.ma === 'K1')[0] || {}).aiXem || '';
+      ra.soCamKet = (G.PL_CAMKET || []).length;
+      ra.camKetThieu = (G.PL_CAMKET || []).filter(c => !c.them || !c.that).map(c => c.ma);
+
+      /* ── Hai quy tắc bất biến của tranh chấp ──
+         Phép thử thật nhất của lời hứa dữ liệu: hệ chấp nhận THUA KIỆN
+         thay vì mở kho riêng, kể cả khi mở ra thì hệ thắng. */
+      ra.soBatBien = ((G.PL_TRANHCHAP || {}).batBien || []).length;
+      ra.coBB2 = ((G.PL_TRANHCHAP || {}).batBien || []).some(b => b.ma === 'BB2' && /CÓ LỢI/.test(b.them));
+
+      /* ── Người Không Đồng Ý: mốc SỚM thắng ──
+         Bản trước đặt từ năm năm, lớp pháp lý đặt vào Hội đồng từ lúc
+         đăng ký. Năm một tới bốn là quãng người dựng ít bị canh nhất. */
+      const kd = (G.BN_DOTDONG || []).filter(x => x.ma === 'DD-KHONGDONGY')[0] || {};
+      ra.khongDongYNam1 = kd.tuNam === 1 && !!kd.ghe;
+      ra.hoiDongCoKhongDongY = ((G.PL_PHAPNHAN || {}).tang || [])
+        .some(t => /KHÔNG ĐỒNG Ý/.test(String(t.hoiDong)));
+
+      /* ── Ba câu chờ chủ hệ, KHÔNG tự quyết ── */
+      ra.soChoChu = G.plChoChu().length;
+      ra.choChuDuCot = G.plChoChu().every(c => c.t && c.banGoc && c.lenhDung && c.canGi);
+      /* Và hệ KHÔNG được tự dựng phần cấp phép mở khi chưa có câu trả lời */
+      ra.khongTuMo = G.PL_GIAYPHEP_MO === undefined && G.PL_MAMO === undefined;
+
+      ra.soKiem90 = (G.PL_KIEM90 || []).length;
+      ra.soDinhKy = (G.PL_DINHKY || []).length;
+      ra.manCoHopDong = G.VIEWS['phap-ly']().indexOf('Bảy loại hợp đồng') >= 0;
+      return ra;
+    });
+    if (!ng.co) {
+      bao(false, 'lớp pháp lý nạp được từ gói nghề', 'không thấy PL_DIEU');
+    } else {
+      bao(!ng.soiDieu.length && ng.soDieu === 12 && ng.d12.length === 1 && ng.d12[0] === 12,
+        'mười hai điều hiến pháp bản pháp lý, và ĐÚNG MỘT điều không sửa được bằng bất kỳ cơ chế nào — điều ấy không bảo vệ nội dung, nó bảo vệ PHƯƠNG PHÁP: mọi diễn giải phải đi qua câu hỏi người yếu nhất',
+        ng.soiDieu.join(' ') || '12 điều · điều ' + ng.d12[0] + ' bất khả huỷ');
+      bao(!ng.dieuKhongGoc.length,
+        'điều nào cũng nói rõ mình DỊCH TỪ nguyên tắc nào, và nguyên tắc ấy có thật — điều không có gốc là điều sẽ bị bỏ sau năm mươi năm với lý do dọn văn bản cũ',
+        ng.dieuKhongGoc.join(' ') || '12/12 có gốc');
+      bao(ng.dieuKhoanTheoTran && !ng.soiHDTran.length && ng.batSoCung,
+        'điều khoản lao động ĐỌC TRẦN chứ không ghi số cứng, và phép kiểm bắt được ngay khi nhét số vào — đây là lần THỨ BA một tỉ lệ được viết cứng lệch khỏi trần đã ép, và lần này điều khoản không còn giữ số riêng',
+        'trần ' + ng.tran + ' · ' + (ng.soiHDTran.join(' ') || 'không chỗ nào ghi số cứng'));
+      bao(!ng.soiHD.length && ng.soHD === 7,
+        'bảy loại hợp đồng, loại nào cũng đủ BẮT BUỘC · CẤM · VÌ SAO — cột cấm mới là cột giữ được lời hứa lúc có lợi ích, hợp đồng chỉ nói được làm gì thì không giữ được gì',
+        ng.soiHD.join(' ') || '7/7 đủ ba cột');
+      bao(!ng.soiBac.length && ng.khongCoBac5,
+        'bốn bậc khi luật va nguyên tắc, và hệ KHAI THẲNG là không có bậc năm — bậc năm tên "làm đi rồi chờ sửa luật" là bậc mà mọi tổ chức đều phát minh ra vào đúng lúc nó cần nhất',
+        ng.soiBac.join(' ') || '4 bậc · không có bậc 5');
+      bao(ng.soKho === 3 && !ng.khoThieu.length && /Không ai/.test(ng.k1KhongAiXem),
+        'ba tầng kho đủ CƠ SỞ XỬ LÝ · THỜI HẠN GIỮ · QUYỀN KÈM · AI XEM ĐƯỢC, và kho riêng của gia đình thì KHÔNG AI xem — kể cả người giữ lửa',
+        ng.khoThieu.join(' ') || '3/3 · kho riêng: ' + ng.k1KhongAiXem);
+      bao(ng.soCamKet === 5 && !ng.camKetThieu.length,
+        'năm cam kết kỹ thuật có giá trị pháp lý, cam kết nào cũng nói LÀM THẬT THẾ NÀO — trong đó máy không bao giờ tự chốt tầng đỏ, đó là chỗ tự động hoá dừng lại vĩnh viễn',
+        ng.camKetThieu.join(' ') || '5/5');
+      bao(ng.soBatBien === 2 && ng.coBB2,
+        'hai quy tắc bất biến của tranh chấp, trong đó hệ chấp nhận THUA KIỆN thay vì mở kho riêng ra làm chứng cứ — kể cả khi mở ra thì hệ thắng. Lời hứa chỉ giữ khi thuận lợi thì không phải lời hứa');
+      bao(ng.khongDongYNam1 && ng.hoiDongCoKhongDongY,
+        'vai Người Không Đồng Ý bắt đầu từ NĂM MỘT và có ghế trong Hội đồng ngay từ lúc đăng ký — hai tài liệu ghi hai mốc, và mốc SỚM hơn thắng: năm một tới năm bốn chính là quãng người dựng ít bị canh nhất');
+      bao(ng.soChoChu === 3 && ng.choChuDuCot && ng.khongTuMo,
+        'ba câu CHỜ CHỦ HỆ được khai đủ bốn cột — tài liệu đề nghị gì, lệnh đứng của chủ hệ nói gì, vì sao tôi không tự quyết, và cần gì. Và hệ KHÔNG tự dựng phần cấp phép mở: mở một quyền thì không thu lại được, đóng thì mở lúc nào cũng được',
+        ng.soChoChu + ' câu chờ chủ hệ');
+      bao(ng.soKiem90 === 12 && ng.soDinhKy === 4 && ng.manCoHopDong,
+        'mười hai mục kiểm pháp lý trước Ngày Gieo và bốn nghĩa vụ định kỳ, và vai có gói nghề dựng ra được bộ hợp đồng');
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

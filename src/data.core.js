@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.16',
+  version: '9.17',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -306,7 +306,7 @@ G.TAM_NHIN = [
      Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
      một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
      xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
-  {vai:['R12'], pt:64,
+  {vai:['R12'], pt:66,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -325,7 +325,7 @@ G.TAM_NHIN = [
      không mở thêm một dòng tư liệu nghề nào. Ghi con số thật ở đây, và
      giữ nguyên trần nội dung ở chỗ của nó. */
   {vai:['R13'], pt:37, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
-  {vai:['R14'], pt:31, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
+  {vai:['R14'], pt:33, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
   {vai:['R15'], pt:29, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
@@ -491,6 +491,9 @@ G.NAV = [
        được thì không phải hiến pháp. Phần biên niên nghề nằm cùng màn,
        chỉ dựng ra khi máy CÓ kho — chặn ở kho, không chặn ở cột trái. */
     {v:'bien-nien',   t:'Năm điều không ai được sửa',  h:'Hiến pháp 1 trang · 10 thập kỷ · 5 cách chết của một đề án 100 năm', ic:'shield', star:1, capMo:'chung'},
+    /* Bảy quyền mở cho mọi vai. Bản gốc nói rõ: in ở chỗ gia đình NHÌN
+       THẤY, không giấu trong điều khoản — nên nó không được khoá quyền. */
+    {v:'phap-ly',     t:'Bảy quyền của nhà mình',      h:'Im lặng · xoá · đi · phủ quyết · đọc · sửa · khiếu nại', ic:'shield', star:1, capMo:'chung'},
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
        tổn thương nhất và cách nó dựng ra người kèm. */

@@ -190,6 +190,7 @@ G.ITEM_EN = {
   'giu-lua':['The day this system is done','5 conditions for done · 3-tier andon · 6 failure playbooks'],
   'tien-rung':['Six things never for sale','Promises on data and money · 4 sources · the order costs get cut'],
   'bien-nien':['Five things no one may change','A one-page constitution · 10 decades · 5 ways a 100-year project dies'],
+  'phap-ly':['Your family\u2019s seven rights','Silence · erase · leave · veto · read · correct · complain'],
   'nam-dau':['The first-year handbook','12 months · 6 checkpoints · 8 first-time playbooks'],
   'dao-tao-dh':['Forty hours of training','12 sessions · 20 role-play cases · 1 absolute criterion'],
   'nam-man':['The five-screen console','30 minutes each morning · 3 companion levels · 5 terms'],
