@@ -103,6 +103,10 @@ U.ph = function(o){
     (o.lead?'<p class="lead">'+U.h(o.lead)+'</p>':'')+'</header>';
 };
 U.sec = function(t,s){
+  /* Dòng phụ trùng tiêu đề thì bỏ hẳn. Nhiều chỗ gọi U.sec(x, kho.ten)
+     mà kho.ten chính là x, nên màn in ra hai dòng y hệt nhau — người
+     đọc tưởng máy lỗi. Chặn ở đây một lần, không đi sửa từng chỗ gọi. */
+  if(s && String(s).trim().toLowerCase() === String(t).trim().toLowerCase()) s = '';
   return '<div class="row mt2 mb" style="gap:12px"><div><div class="up" style="color:var(--ink-4)">'+U.h(t)+'</div>'+
     (s?'<div class="sm muted" style="margin-top:2px">'+U.h(s)+'</div>':'')+'</div>'+
     '<div class="grow" style="height:1px;background:var(--line)"></div></div>';

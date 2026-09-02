@@ -14,6 +14,24 @@ G.VIEWS['ban-do'] = function(){
     t:'Bản Đồ Gia Đình Thịnh Vượng',
     lead:V.summary});
 
+  /* ── VIỆC HÔM NAY, ĐẶT TRÊN CÙNG ──
+     Đây là màn nhà mình mở ra đầu tiên. Trước bản này nó mở bằng ba ô
+     đầu vào rồi năm khoang rồi chín vai — đúng cả, nhưng không câu nào
+     trả lời được câu duy nhất người mở đang hỏi: hôm nay tôi làm gì.
+
+     Cái thang ở màn hành trình trả lời đúng câu ấy. Đưa nó lên đây, và
+     chỉ lấy phần cần: bậc đang đứng, một việc. Bốn bậc kia vẫn nằm ở
+     màn hành trình cho ai muốn nhìn cả đường. */
+  if (G.btThangNha && G.veBacThang) {
+    var th = G.btThangNha((G.S && G.S.soToiDaGhi != null) ? G.S.soToiDaGhi : null);
+    if (th && th.bac.length) {
+      var dangO = th.bac.filter(function (x) { return x.trangThai === 'dangO'; });
+      o += U.sec('VIỆC CỦA NHÀ MÌNH HÔM NAY',
+        'Một việc. Xong việc này mới tới việc sau.');
+      o += G.veBacThang(dangO, { y: th.chuaDo ? th.y : '' });
+    }
+  }
+
   /* Đầu vào */
   o += U.sec('ĐẦU VÀO — ba thứ phải có trước khi khởi động năm', V.dauVao.ten);
   o += '<div class="grid g3">' + V.dauVao.muc.map(function(m,i){

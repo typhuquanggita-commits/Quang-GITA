@@ -1739,7 +1739,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.29',
+  version: '9.30',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3358,6 +3358,10 @@ U.ph = function(o){
     (o.lead?'<p class="lead">'+U.h(o.lead)+'</p>':'')+'</header>';
 };
 U.sec = function(t,s){
+  /* Dòng phụ trùng tiêu đề thì bỏ hẳn. Nhiều chỗ gọi U.sec(x, kho.ten)
+     mà kho.ten chính là x, nên màn in ra hai dòng y hệt nhau — người
+     đọc tưởng máy lỗi. Chặn ở đây một lần, không đi sửa từng chỗ gọi. */
+  if(s && String(s).trim().toLowerCase() === String(t).trim().toLowerCase()) s = '';
   return '<div class="row mt2 mb" style="gap:12px"><div><div class="up" style="color:var(--ink-4)">'+U.h(t)+'</div>'+
     (s?'<div class="sm muted" style="margin-top:2px">'+U.h(s)+'</div>':'')+'</div>'+
     '<div class="grow" style="height:1px;background:var(--line)"></div></div>';
@@ -6031,6 +6035,24 @@ G.VIEWS['ban-do'] = function(){
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'map', grad:1,
     t:'Bản Đồ Gia Đình Thịnh Vượng',
     lead:V.summary});
+
+  /* ── VIỆC HÔM NAY, ĐẶT TRÊN CÙNG ──
+     Đây là màn nhà mình mở ra đầu tiên. Trước bản này nó mở bằng ba ô
+     đầu vào rồi năm khoang rồi chín vai — đúng cả, nhưng không câu nào
+     trả lời được câu duy nhất người mở đang hỏi: hôm nay tôi làm gì.
+
+     Cái thang ở màn hành trình trả lời đúng câu ấy. Đưa nó lên đây, và
+     chỉ lấy phần cần: bậc đang đứng, một việc. Bốn bậc kia vẫn nằm ở
+     màn hành trình cho ai muốn nhìn cả đường. */
+  if (G.btThangNha && G.veBacThang) {
+    var th = G.btThangNha((G.S && G.S.soToiDaGhi != null) ? G.S.soToiDaGhi : null);
+    if (th && th.bac.length) {
+      var dangO = th.bac.filter(function (x) { return x.trangThai === 'dangO'; });
+      o += U.sec('VIỆC CỦA NHÀ MÌNH HÔM NAY',
+        'Một việc. Xong việc này mới tới việc sau.');
+      o += G.veBacThang(dangO, { y: th.chuaDo ? th.y : '' });
+    }
+  }
 
   /* Đầu vào */
   o += U.sec('ĐẦU VÀO — ba thứ phải có trước khi khởi động năm', V.dauVao.ten);
