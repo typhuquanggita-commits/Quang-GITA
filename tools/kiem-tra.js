@@ -6485,6 +6485,178 @@ const { chromium } = require(PW);
     }
   }
 
+
+  console.log('\n56 · NĂM LẰN RANH · TỪ CHỐI THẬT HAY GIẢ · MƯỜI LĂM CON SỐ CÓ NGUỒN');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const nha = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.TV_LANRANH) return { co: false };
+      const man = G.VIEWS['so-tay-tu-van']();
+      return { co: true,
+        so: G.TV_LANRANH.length,
+        soi: G.tvSoiLanRanh(),
+        /* Gia đình KHÔNG được nhận phần nghề: ba mươi lời từ chối kèm
+           nguyên văn câu đáp, bảng sàng lọc, tám cách chốt. Đọc được
+           chúng thì buổi tư vấn mất tác dụng — họ biết trước câu tiếp. */
+        lo: !!(G.TV_TUCHOI || G.TV_SANGLOC || G.TV_CHOT || G.TV_SO15 || G.TV_PHANKHUC),
+        manCoLanRanh: man.indexOf(G.TV_LANRANH[0].khong) >= 0,
+        manKhongCoTuChoi: man.indexOf('Ba mươi lời từ chối') < 0 };
+    });
+    if (!nha.co) {
+      bao(false, 'năm lằn ranh nạp được từ gói nền', 'không thấy TV_LANRANH');
+    } else {
+      bao(nha.so === 5 && !nha.soi.length,
+        'năm điều người tư vấn KHÔNG được làm với nhà mình, điều nào cũng trỏ vào một CỬA BÁO có thật — lằn ranh không có cửa báo là lời tự hứa, và lời tự hứa thì chỉ người hứa biết mình đã phá',
+        nha.soi.join(' ') || '5/5 có cửa báo');
+      bao(!nha.lo && nha.manCoLanRanh && nha.manKhongCoTuChoi,
+        'gia đình ĐỌC ĐƯỢC năm lằn ranh ở chỗ nhìn thấy trước buổi tư vấn — nhưng không nhận ba mươi lời từ chối kèm nguyên văn câu đáp, không nhận bảng sàng lọc, không nhận tám cách chốt',
+        nha.lo ? 'sổ tay nghề lọt xuống máy phụ huynh' : 'chỉ có năm lằn ranh');
+    }
+
+    await p.evaluate(x => window.G.doLogin(x), 'admin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    const ng = await p.evaluate(() => {
+      const G = window.G;
+      if (!G.TV_TUCHOI) return { co: false };
+      const ra = { co: true };
+
+      /* ── Ba mươi lời từ chối, thật hay giả ── */
+      ra.soiTuChoi = G.tvSoiTuChoi();
+      ra.soTuChoi = G.TV_TUCHOI.length;
+      ra.soGia = G.TV_TUCHOI.filter(t => t.loai === 'gia').length;
+      /* Phép thử: gỡ được chỗ này thì bắt đầu chứ? Trả lời KHÔNG là giả,
+         và gặp loại giả thì KHÔNG trả lời nó. */
+      const gia = G.tvLoaiTuChoi('TC02', false);
+      const that = G.tvLoaiTuChoi('TC02', true);
+      const chua = G.tvLoaiTuChoi('TC02');
+      ra.phanLoaiDung = gia.loai === 'gia' && /KHÔNG trả lời/.test(gia.lam) &&
+        that.loai === 'that' && /đường DỪNG/.test(that.lam) && chua.chuaThu === true;
+      /* Bẻ một đường đáp — phép kiểm phải bắt */
+      const giuDap = G.TV_TUCHOI[0].dap;
+      G.TV_TUCHOI[0].dap = [giuDap[0], giuDap[1]];
+      ra.batThieuDap = G.tvSoiTuChoi().length === 1;
+      G.TV_TUCHOI[0].dap = giuDap;
+
+      /* ── Sàng lọc là để TỪ CHỐI ── */
+      const chuaSo = G.tvNhanKhach();
+      const thieu = G.tvNhanKhach({ SL1: false });
+      const sach = {}; G.TV_SANGLOC.forEach(s => { sach[s.ma] = false; });
+      const nhan = G.tvNhanKhach(sach);
+      const doi = Object.assign({}, sach, { SL3: true });
+      const tuChoi = G.tvNhanKhach(doi);
+      ra.locDung = chuaSo.chuaLoc === true && thieu.chuaLoc === true && thieu.thieu.length === 6 &&
+        nhan.ok === true && tuChoi.ok === false && tuChoi.chan.length === 1 && tuChoi.chan[0] === 'SL3';
+      ra.soChan = G.TV_SANGLOC.filter(s => s.chan).length;
+
+      /* ── Trần: đọc, không ghi số ── */
+      ra.tranDH = G.ddTranCua('DH');
+      ra.tranCM = G.ddTranCua('CM');
+      const du = G.tvTranTuVan(ra.tranDH * 2, 2);
+      const thieuNguoi = G.tvTranTuVan(ra.tranDH * 2 + 1, 2);
+      ra.tranDung = du.ok === true && thieuNguoi.ok === false &&
+        thieuNguoi.can === Math.ceil((ra.tranDH * 2 + 1) / ra.tranDH);
+      /* Một tư vấn cộng mười Cây Mẹ: sổ tay ghi ba trăm nhà, trần ghi ba */
+      const cm = G.tvSoiCayMe(10);
+      ra.cayMeThat = cm.that;
+      ra.cayMeLech = cm.lech;
+      ra.batCayMe = cm.that === 10 * ra.tranCM && cm.that !== 300;
+      /* Nhét số cứng vào kho — phép kiểm phải bắt */
+      ra.soiTranGhiCung = G.tvSoiTranGhiCung();
+      const giuLuat = G.TV_TRAN.luatVao;
+      G.TV_TRAN.luatVao = 'Mỗi người kèm nhận mười lăm nhà.';
+      ra.batSoCung = G.tvSoiTranGhiCung().length === 1;
+      G.TV_TRAN.luatVao = giuLuat;
+
+      /* ── Năm nhịp cộng đúng mười phút ── */
+      ra.soiNhip = G.tvSoiNhip5();
+      const giuPhut = G.TV_NHIP5[4].phut;
+      G.TV_NHIP5[4].phut = 3;
+      ra.batNhipLech = G.tvSoiNhip5().length === 1;
+      G.TV_NHIP5[4].phut = giuPhut;
+
+      /* ── Hoàn tiền đọc HP_TANG, không ghi tỉ lệ ── */
+      ra.soiHoan = G.tvSoiHoan();
+      ra.hoanTheoHP = G.TV_HOAN.theoHP === true;
+      ra.hoanT2 = (G.tvHoanCua('T2') || {}).hoan || '';
+      const giuD = G.TV_TUCHOI.filter(t => t.ma === 'TC14')[0].dap[0];
+      G.TV_TUCHOI.filter(t => t.ma === 'TC14')[0].dap[0] = 'Nói là hoàn 70% trong ba tháng đầu.';
+      ra.batTyLeHoan = G.tvSoiHoan().length === 1;
+      G.TV_TUCHOI.filter(t => t.ma === 'TC14')[0].dap[0] = giuD;
+
+      /* ── Không giá nào trong câu nói với khách ── */
+      ra.soiGia = G.tvSoiGia();
+      ra.giaConNull = (G.HP_TANG || []).every(t => t.gia === null);
+      const giuNoi = G.TV_NHIP5[1].noi;
+      G.TV_NHIP5[1].noi = 'Chặng này 20 triệu ạ.';
+      ra.batGia = G.tvSoiGia().length === 1;
+      G.TV_NHIP5[1].noi = giuNoi;
+
+      /* ── Mười lăm con số, số nào cũng khai nguồn ── */
+      ra.soiSo15 = G.tvSoiSo15();
+      ra.soSo15 = G.TV_SO15.length;
+      ra.soChuaDo = G.tvSoChuaDo().length;
+      ra.chuaDoDuCot = G.tvSoChuaDo().every(s => s.thieu && !s.nguon);
+      const oChuaDo = G.tvSoChuaDo()[0];
+      const giuThieu = oChuaDo.thieu;
+      delete oChuaDo.thieu;
+      ra.batChuaDoCam = G.tvSoiSo15().length === 1;
+      oChuaDo.thieu = giuThieu;
+
+      /* ── Phân khúc trỏ vào chặng có thật ── */
+      ra.soiPhanKhuc = G.tvSoiPhanKhuc();
+
+      /* ── Ngôn từ: dùng lại đúng máy quét của bức tranh ── */
+      ra.soiNgonTu = G.tvSoiNgonTu();
+      const giuCau = G.TV_NHIP5[4].noi;
+      G.TV_NHIP5[4].noi = 'Chị phải trả lời em câu này ạ.';
+      ra.batTuCam = G.tvSoiNgonTu().length === 1;
+      G.TV_NHIP5[4].noi = giuCau;
+
+      /* ── Hai câu chờ chủ hệ ── */
+      ra.soChoChu = G.tvChoChu().length;
+      ra.choChuDuCot = G.tvChoChu().every(c => c.t && c.banGoc && c.lenhDung && c.canGi);
+      ra.khongTuDatGia = G.TV_GOI === undefined && G.TV_GIA === undefined;
+
+      /* ── Tiêu chí tuyệt đối của kỳ thi ── */
+      ra.tnTuyetDoi = /TN3/.test(String((G.TV_TOTNGHIEP || {}).tuyetDoi || ''));
+      ra.manCoTuChoi = G.VIEWS['so-tay-tu-van']().indexOf('Ba mươi lời từ chối') >= 0;
+      return ra;
+    });
+    if (!ng.co) {
+      bao(false, 'sổ tay tư vấn nạp được từ gói nghề', 'không thấy TV_TUCHOI');
+    } else {
+      bao(!ng.soiTuChoi.length && ng.soTuChoi === 30 && ng.phanLoaiDung && ng.batThieuDap,
+        'ba mươi lời từ chối, mỗi lời phân loại THẬT hay GIẢ bằng một phép thử chứ không bằng cảm giác, và gặp loại giả thì hệ bảo KHÔNG trả lời nó — cãi thắng một lời từ chối giả rồi tưởng mình đã chốt là cách mất đơn phổ biến nhất của nghề này',
+        ng.soiTuChoi.join(' ') || '30 tình huống · ' + ng.soGia + ' loại giả · 3 đường đáp mỗi tình huống');
+      bao(ng.locDung && ng.soChan === 5,
+        'bảy câu sàng lọc có HÀM TỪ CHỐI đứng sau: chưa có sổ trả lời thì hệ nói CHƯA LỌC ĐƯỢC chứ không nói "nhận được", hỏi thiếu câu cũng chưa nhận, và gặp cờ đỏ thì từ chối thẳng — bảng sàng lọc không có hàm chặn thì sáu tháng sau ai cũng đã sàng lọc rồi mà không ai từ chối nhà nào',
+        ng.soChan + ' câu chặn cứng trên 7');
+      bao(ng.tranDung && ng.batCayMe && !ng.soiTranGhiCung.length && ng.batSoCung,
+        'trần quan hệ ĐỌC từ DD_CAP chứ không ghi số, và phép kiểm bắt được ngay khi nhét số vào — đây là lần THỨ TƯ một tỉ lệ được viết cứng lệch khỏi trần đã ép: sổ tay ghi mười lăm nhà một người, và ghi một tư vấn cộng mười Cây Mẹ bằng ba trăm nhà',
+        'trần ' + ng.tranDH + '/' + ng.tranCM + ' · mười Cây Mẹ là ' + ng.cayMeThat +
+        ' nhà chứ không phải 300 — lệch ' + ng.cayMeLech + ' lần');
+      bao(!ng.soiNhip.length && ng.batNhipLech,
+        'năm nhịp nói về chương trình cộng đúng mười phút, và nhịp bị ngắn lại khi cộng lệch luôn là nhịp thứ năm — nhịp hỏi một câu rồi IM');
+      bao(!ng.soiHoan.length && ng.hoanTheoHP && ng.batTyLeHoan && ng.hoanT2,
+        'chính sách hoàn tiền ĐỌC từ bảng học phí theo đúng chặng đang bán, không kho nào của lớp này được ghi một tỉ lệ chung — sổ tay hứa hoàn bảy mươi phần trăm trong ba tháng đầu, mà hợp đồng từng chặng ghi khác hẳn, và lời hứa hoàn tiền nói miệng mà hợp đồng không giữ là chỗ Học viện thua kiện, thua đúng',
+        ng.soiHoan.join(' ') || 'T2: ' + ng.hoanT2.slice(0, 48) + '…');
+      bao(!ng.soiGia.length && ng.giaConNull && ng.batGia && ng.khongTuDatGia,
+        'không câu nào người tư vấn đọc trước mặt khách có một con số tiền, và hệ KHÔNG tự điền năm gói giá sổ tay đề nghị — học phí vẫn đang chờ chủ hệ, và một con số tạm điền cho màn hình trông đủ sẽ thành con số thật sau sáu tháng, không ai nhớ nó từ đâu ra',
+        ng.soiGia.join(' ') || 'HP_TANG[].gia còn trống · không giá trong câu nói');
+      bao(!ng.soiSo15.length && ng.soSo15 === 15 && ng.chuaDoDuCot && ng.batChuaDoCam && ng.soChuaDo === 3,
+        'mười lăm con số tháng, số nào cũng khai NGUỒN có thật, và ba số chưa đo được thì khai thẳng kèm thiếu đúng cái gì — một bảng thành tích tự điền là một bảng luôn đẹp, và một bảng luôn đẹp thì không ai dùng nó để sửa gì',
+        ng.soiSo15.join(' ') || '12 số có nguồn · ' + ng.soChuaDo + ' số khai chưa đo');
+      bao(!ng.soiPhanKhuc.length && !ng.soiNgonTu.length && ng.batTuCam,
+        'sáu phân khúc trỏ vào chặng CÓ THẬT ở bảng học phí, và mọi câu nói với gia đình đi qua ĐÚNG máy quét ngôn từ của bức tranh hành trình — dựng máy quét thứ hai thì rồi sẽ có ngày hai máy lệch nhau, và lúc ấy chuẩn ngôn từ của Học viện có hai bản',
+        ng.soiPhanKhuc.join(' ') + ng.soiNgonTu.join(' ') || '6/6 chặng thật · không câu nào phạm từ cấm');
+      bao(ng.soChoChu === 2 && ng.choChuDuCot && ng.tnTuyetDoi && ng.manCoTuChoi,
+        'hai câu CHỜ CHỦ HỆ khai đủ bốn cột, và kỳ thi tốt nghiệp có một tiêu chí TUYỆT ĐỐI: gặp ca có cờ đỏ mà vẫn bán được đơn ấy là trượt cả kỳ — ba mục kia đo kỹ năng và kỹ năng thì học được, mục ấy đo chỗ người ta chịu mất một đơn hàng, và chỗ ấy không dạy được bằng cách cho qua',
+        ng.soChoChu + ' câu chờ chủ hệ');
+    }
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

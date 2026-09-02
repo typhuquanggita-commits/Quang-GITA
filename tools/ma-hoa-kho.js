@@ -111,6 +111,13 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
      được, không giấu trong điều khoản. Quyền giấu trong điều khoản là
      quyền không ai dùng, và quyền không ai dùng là quyền trang trí. */
   'PL_QUYEN', 'PL_QUYEN_LUAT', 'PL_CO', 'PL_CO_LUAT',
+  /* NĂM LẰN RANH lúc chốt. Cùng lý do với DD_HUA và PL_QUYEN: đây là
+     năm điều người tư vấn không được làm VỚI NHÀ MÌNH, và lời hứa mà
+     người được hứa không đọc được thì không phải lời hứa. Phần còn
+     lại của sổ tay — cách hỏi, cách chốt, ba mươi lời từ chối — đi
+     gói NGHỀ: gia đình đọc được nguyên văn câu sẽ nghe thì buổi tư
+     vấn mất tác dụng, họ biết trước câu tiếp theo. */
+  'TV_LANRANH', 'TV_LANRANH_LUAT',
   'CV_TRANG', 'CV_MUC_DS', 'CV_LUAT', 'CV_HANG', 'CV_KH_NGAY', 'CV_KH_TANG',
   'CV_KPI_CAP', 'CV_KPI_CAP_LUAT',
   'DEHIEU_LUAT', 'DEHIEU_THAY', 'DEHIEU_TRANG', 'DEHIEU_NGUONG',
@@ -247,6 +254,16 @@ const NGHE = [
   'PL_CHUYENNGU', 'PL_KHO', 'PL_KHO_LUAT', 'PL_CAMKET', 'PL_DIEU',
   'PL_PHAPNHAN', 'PL_HOPDONG', 'PL_XUNGDOT', 'PL_BAC4', 'PL_BAC4_LUAT',
   'PL_TRANHCHAP', 'PL_KIEM90', 'PL_DINHKY', 'PL_CHOCHU', 'PL_CHOCHU_LUAT', 'PL_LUAT',
+  /* Sổ tay tư vấn: sáu phân khúc, bảy câu sàng lọc, ba tầng câu hỏi,
+     ba mươi lời từ chối kèm nguyên văn câu đáp, tám cách chốt. Cùng
+     lý do với DD_TINHHUONG và BD_DAN. Thêm một lý do riêng: bảng
+     sàng lọc kể ra chính xác những nhà Học viện TỪ CHỐI, và bảng ấy
+     đọc ngược lại là bản hướng dẫn cách qua cửa. */
+  'TV_LUAT', 'TV_TRAN', 'TV_PHANKHUC', 'TV_SANGLOC', 'TV_HOI', 'TV_NGHE',
+  'TV_OHOSO', 'TV_KYLUAT', 'TV_NHIP5', 'TV_TUCHOI', 'TV_TUCHOI_LUAT',
+  'TV_TINHIEU', 'TV_TINHIEU_LUAT', 'TV_CHOT', 'TV_SUP', 'TV_HOAN',
+  'TV_306090', 'TV_VO', 'TV_GIOITHIEU', 'TV_SO15', 'TV_SO15_LUAT',
+  'TV_NGAY', 'TV_12THANG', 'TV_TOTNGHIEP', 'TV_CHOCHU', 'TV_CHOCHU_LUAT',
   'CHANDUNG',                                    /* chan-dung-tc · nghe_chung */
   'MATRAN',                                      /* ma-tran, ma-tran-bang · nghe_chung */
   'MT_BANG', 'MT_BANG_MA', 'MT_BANG_TANG',       /* ma-tran-bang · nghe_chung */
@@ -662,6 +679,11 @@ const mau = {
   TR_DEN: G.TR_DEN, TR_DEN_LUAT: G.TR_DEN_LUAT,
   BN_TRUC5: G.BN_TRUC5, BN_TRUC5_LUAT: G.BN_TRUC5_LUAT,
   PL_QUYEN: G.PL_QUYEN, PL_QUYEN_LUAT: G.PL_QUYEN_LUAT, PL_CO: G.PL_CO,
+  /* Năm lằn ranh lúc chốt cũng vào bản xem thử, và đây là chỗ chúng
+     CẦN nhất: người mở bản xem thử là người sắp gặp một buổi tư vấn.
+     Đọc trước năm điều người tư vấn không được làm thì họ đi vào buổi
+     ấy với một cái thước. Giấu tới sau chữ ký là giữ lại quyền phá. */
+  TV_LANRANH: G.TV_LANRANH, TV_LANRANH_LUAT: G.TV_LANRANH_LUAT,
   CV_MUC: (G.CV_MUC || []).map(rutDauViec),
   CV_MUC_DS: (G.CV_MUC_DS || []).map(rutDauViec),
   TEST750: (G.TEST750 || []).filter(b => b.tang === 'T1')
