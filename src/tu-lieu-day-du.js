@@ -32,9 +32,20 @@ function biKhoa(html){
   return typeof html !== 'string' ||
     html.trim().indexOf('<div class="card center" style="padding:40px">') === 0;
 }
+
+/* ─── BỌC LẠI KHI MÃ VỀ MUỘN ───
+   Từ bản 9.23, mã dựng màn của nghề nằm ở gói riêng và về SAU tệp này.
+   Lớp bọc chạy một lần lúc tải trang thì màn nghề không bao giờ được
+   bọc — và hụt kiểu ấy không ném lỗi nào, chỉ là màn ấy thiếu một dải
+   hoặc một thẻ mà không ai để ý.
+
+   Nên noi() nhớ lại việc nó CHƯA làm được, và người nạp mã nghề gọi
+   lại. Nhớ việc chưa làm rẻ hơn nhiều so với bắt mọi lớp bọc phải biết
+   thứ tự nạp của cả ứng dụng. */
+var CHO_BOC = [];
 function noi(ten, them){
   var cu = G.VIEWS[ten];
-  if(typeof cu !== 'function') return;
+  if(typeof cu !== 'function'){ CHO_BOC.push([ten, them]); return; }
   G.VIEWS[ten] = function(){
     var o = cu.apply(this, arguments);
     if(biKhoa(o)) return o;
@@ -291,3 +302,15 @@ document.addEventListener('click', function(e){
   if(el){ e.preventDefault(); G.cdModal(el.getAttribute('data-cdb')); }
 });
 })();
+
+/* Bọc lại phần màn về muộn — xem lý do ở chỗ khai CHO_BOC. */
+G.tlddNoiLai = function(){
+  var con = CHO_BOC.splice(0, CHO_BOC.length), them = 0;
+  for(var i = 0; i < con.length; i++){
+    var truoc = CHO_BOC.length;
+    noi(con[i][0], con[i][1]);
+    if(CHO_BOC.length === truoc) them++;
+  }
+  return them;
+};
+(G.BOC_LAI = G.BOC_LAI || []).push('tlddNoiLai');

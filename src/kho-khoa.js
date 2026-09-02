@@ -373,6 +373,54 @@ function napMau() {
     });
 }
 
+/* ── Nạp mã của gói nghề ──
+   Chỉ chạy một lần trong đời trang: mã đã nạp thì đổi vai không nạp lại,
+   và cũng KHÔNG gỡ ra được — một thẻ script đã chạy thì không rút lại
+   được. Đó là lý do mã nghề chỉ được chứa MÀN, không chứa dữ liệu: dữ
+   liệu thì donKho() xoá sạch khi đổi vai, còn mã thì ở lại. */
+function napMaNghe() {
+  if (G.KHO.maNgheXong || G.KHO.maNgheDangNap) return;
+  /* Bản một tệp — bản giới thiệu và vỏ Apps Script — đã nhúng sẵn mã
+     nghề bên trong, vì một tệp thì không tải được tệp anh em nào cả.
+     Nhận ra bằng chính thứ cần: màn đầu của gói nghề đã có mặt chưa.
+
+     Chốt ở đây chứ không chốt bằng một cờ do bộ đóng gói cắm vào: cờ
+     thì có ba bản dựng phải nhớ cắm, còn câu hỏi "màn ấy có chưa" thì
+     đúng ở mọi bản, kể cả bản chưa ai nghĩ ra. */
+  var m = G.MAN_NGHE || [];
+  if (m.length && G.VIEWS && G.VIEWS[m[0]]) { G.KHO.maNgheXong = true; return; }
+  G.KHO.maNgheDangNap = true;
+  var xong = function (ok) {
+    G.KHO.maNgheDangNap = false;
+    G.KHO.maNgheXong = ok;
+    var i = G.KHO.dangNap.indexOf('ma-nghe');
+    if (i >= 0) G.KHO.dangNap.splice(i, 1);
+    if (!ok) console.warn('[GITA] không nạp được ' + G.MA_NGHE_TEP);
+    /* Mã mới về thì những lớp BỌC màn phải chạy lại trên phần vừa về.
+       Bọc một lần lúc tải trang là đúng khi mọi màn cùng một gói; từ khi
+       mã nghề tách ra, bọc một lần nghĩa là màn nghề mất lớp bọc — và
+       mất trong im lặng, không lỗi nào. */
+    /* Gọi cả SỔ lớp bọc, không gọi từng tên: thêm một lớp bọc mới ở bản
+       sau thì nó tự đăng ký, không ai phải nhớ sửa thêm chỗ này. Nhớ là
+       thứ hỏng đầu tiên. */
+    if (ok) (G.BOC_LAI || []).forEach(function (ten) {
+      try { if (typeof G[ten] === 'function') G[ten](); }
+      catch (e) { console.warn('[GITA] bọc lại ' + ten + ': ' + e.message); }
+    });
+    if (!G.S.acc) return;
+    if (G.veLaiCot) G.veLaiCot();
+    /* Chỉ dựng lại khi màn đang mở CHÍNH LÀ màn vừa có mã — dựng lại
+       lung tung là cướp chỗ cuộn của người đang đọc. */
+    if (G.render && (G.MAN_NGHE || []).indexOf(G.S.view) >= 0) G.render();
+  };
+  var t = document.createElement('script');
+  t.src = G.MA_NGHE_TEP;
+  t.async = true;
+  t.onload = function () { xong(true); };
+  t.onerror = function () { xong(false); };
+  document.head.appendChild(t);
+}
+
 /* ── Nạp kho cho phiên làm việc hiện tại ── */
 G.napKho = function () {
   donKho();
@@ -412,6 +460,18 @@ G.napKho = function () {
           });
       }
 
+      /* ─── MÃ CỦA GÓI NGHỀ ĐI CÙNG KHO CỦA GÓI NGHỀ ───
+         Từ bản 9.23, mã dựng màn nghề nằm riêng ở gita-nghe.js. Điều
+         kiện nạp nó GIỐNG HỆT điều kiện nạp kho nghề, nên nạp cùng lúc.
+
+         Đặt tên nó vào chính G.KHO.dangNap là chỗ đắt nhất của cách này:
+         mọi chỗ trong app đã chờ "dangNap rỗng" — cột trái, màn đang mở,
+         và cả 60 mục của bộ kiểm — tự khắc chờ luôn cả mã, không cần
+         thêm một đường chờ thứ hai. Hai đường chờ rồi sẽ có ngày lệch. */
+      if (co.indexOf('nghe') >= 0 && G.MA_NGHE_TEP && !G.KHO.maNgheXong) {
+        co = co.concat(['ma-nghe']);
+        napMaNghe();
+      }
       G.KHO.dangNap = co.slice();
       return Promise.all(truoc.map(mo)).then(function () {
         if (!G.KHO.daNap.length && !sau.length) return napMau();

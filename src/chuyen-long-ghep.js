@@ -217,17 +217,31 @@ function noi(ten, them){
 }
 
 G.clgDaNoi = [];
-(function(){
+
+/* Nối lại được nhiều lần, và bỏ qua màn đã nối.
+
+   Vì sao cần chạy lại: từ bản 9.23 mã dựng màn của nghề nằm ở gói riêng,
+   về SAU khi tệp này đã chạy. Vòng nối chạy một lần lúc tải trang thì ba
+   màn nghề không bao giờ được lồng chuyện — và hụt kiểu ấy không ném lỗi
+   nào, chỉ là màn ấy thiếu một thẻ chuyện mà không ai để ý.
+
+   Nên nó thành hàm, và người nạp mã nghề gọi lại nó khi mã về. */
+G.clgNoiLai = function(){
+  var them = 0;
   for(var i = 0; i < G.CLG_BANG.length; i++){
     var m = G.CLG_BANG[i].man;
     if(TRU_MAN.indexOf(m) >= 0) continue;
+    if(G.clgDaNoi.indexOf(m) >= 0) continue;
     (function(man){
       if(noi(man, function(){
         return G.clgThe(man) + (G.CLG_TG.indexOf(man) >= 0 ? G.clgTheTG(man) : '');
-      })) G.clgDaNoi.push(man);
+      })) { G.clgDaNoi.push(man); them++; }
     })(m);
   }
-})();
+  return them;
+};
+G.clgNoiLai();
+(G.BOC_LAI = G.BOC_LAI || []).push('clgNoiLai');
 
 /* Đếm thật để màn tự soát và bài kiểm phát hành đọc được, thay vì tin
    vào con số viết tay trong tài liệu. */
@@ -235,7 +249,8 @@ G.clgSoat = function(){
   var thieuMan = [], thieuChuyen = [];
   for(var i = 0; i < G.CLG_BANG.length; i++){
     var d = G.CLG_BANG[i];
-    if(!(G.VIEWS || {})[d.man]) thieuMan.push(d.man);
+    /* Có thật hay không — khác với mã đã về hay chưa. */
+    if(!(G.manCoThat ? G.manCoThat(d.man) : (G.VIEWS||{})[d.man])) thieuMan.push(d.man);
     if(!G.clgChon(d.man)) thieuChuyen.push(d.man);
   }
   return {

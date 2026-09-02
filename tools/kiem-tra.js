@@ -29,9 +29,14 @@ const { chromium } = require(PW);
   /* Nếu máy đang có bộ khoá (bản nội bộ) thì kiểm cả phần nội dung đã cấp phép.
      Không có khoá thì kiểm ở chế độ mẫu — vẫn phải xanh toàn bộ. */
   let coKhoa = false;
+  /* Giữ bộ khoá ở biến NGOÀI: addInitScript gắn theo TỪNG TRANG, không
+     theo trình duyệt. Mục nào mở trang mới mà quên tiêm lại khoá thì
+     trang ấy rơi vào chế độ mẫu — và rơi trong im lặng, vì chế độ mẫu
+     vẫn dựng đủ màn, chỉ khác là không gói nào được cấp. */
+  let KHOA = null;
   try {
     const k = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', 'kho', 'khoa.json'), 'utf8'));
-    if (k && k.khoa) { await p.addInitScript(x => { window.GITA_KHOA = x; }, k.khoa); coKhoa = true; }
+    if (k && k.khoa) { KHOA = k.khoa; await p.addInitScript(x => { window.GITA_KHOA = x; }, k.khoa); coKhoa = true; }
   } catch { /* không có khoá — chạy chế độ mẫu */ }
   const errs = [];
   p.on('pageerror', e => errs.push('PAGEERROR ' + e.message));
@@ -183,7 +188,11 @@ const { chromium } = require(PW);
   });
   bao(pwa.icons >= 3, 'đủ bộ biểu tượng ứng dụng', pwa.icons + ' biểu tượng');
   bao(pwa.display === 'standalone', 'mở toàn màn hình như ứng dụng thật');
-  bao(pwa.tep >= 25, 'service worker phủ đủ tệp để chạy khi mất mạng', pwa.tep + ' tệp');
+  /* 24 chứ không còn 25: bản 9.23 bỏ một mục style.css khai TRÙNG
+     trong mảng FILES. Bớt một dòng trùng thì phủ sóng không bớt gì —
+     và gita-nghe.js CỐ Ý không nằm trong danh sách này, vì đưa nó
+     vào là máy gia đình lại tải về đúng thứ vừa gỡ ra. */
+  bao(pwa.tep >= 24, 'service worker phủ đủ tệp để chạy khi mất mạng', pwa.tep + ' tệp');
 
   /* ── 5. Bộ test nhận diện và KPI về đích ── */
   console.log('\n5 · BỘ TEST NHẬN DIỆN & KPI VỀ ĐÍCH');
@@ -2048,7 +2057,7 @@ const { chromium } = require(PW);
       /* Mọi màn được xếp loại phải trỏ tới một loại có thật, và màn có thật */
       const loai = (G.TG_LOAI || []).map(x => x.ma);
       r.loaiLa = [...new Set(Object.values(G.TG_XEP).filter(x => loai.indexOf(x) < 0))];
-      r.manLa = Object.keys(G.TG_XEP).filter(v => !G.VIEWS[v]);
+      r.manLa = Object.keys(G.TG_XEP).filter(v => !G.manCoThat(v));
       r.macDinh = G.tgLoaiCua('mot-man-khong-co-that') === 'xem';
       /* Ba ngưỡng xếp đúng */
       r.luot = G.tgXep('mo-thuc', 10).ma;
@@ -3054,9 +3063,17 @@ const { chromium } = require(PW);
     /* Bản gộp phải ĐÚNG BẰNG mã nguồn hiện tại. Quên chạy tools/gop-src.js
        sau khi sửa src/ là phát hành một bản khác với bản trong kho mã —
        sửa xong thấy không đổi gì, và không một dòng lỗi nào. */
+    /* Từ bản 9.23 có HAI bản gộp: tệp nào ở danh sách nghề thì phải khớp
+       với gita-nghe.js, còn lại khớp với gita-app.js. So tất cả với một
+       tệp là báo lệch cho đúng những tệp vừa được tách ra đúng chỗ. */
+    const dsNghe36 = fs36.existsSync(px36.join(__dirname, 'danh-sach-nghe.json'))
+      ? JSON.parse(fs36.readFileSync(px36.join(__dirname, 'danh-sach-nghe.json'), 'utf8')).tep : [];
+    const gopNghe = fs36.existsSync(px36.join(goc36, 'gita-nghe.js'))
+      ? fs36.readFileSync(px36.join(goc36, 'gita-nghe.js'), 'utf8') : '';
     const lech = dsGop.filter(t => {
       if (!fs36.existsSync(px36.join(goc36, t))) return true;
-      return gop.indexOf(doc(t)) < 0;
+      const dich = dsNghe36.indexOf(t) >= 0 ? gopNghe : gop;
+      return dich.indexOf(doc(t)) < 0;
     });
     bao(!lech.length, 'bản gộp khớp từng chữ với mã nguồn — không phát hành bản cũ',
       lech.length ? 'lệch: ' + lech.slice(0, 4).join(' ') : dsGop.length + ' tệp khớp');
@@ -7212,6 +7229,86 @@ const { chromium } = require(PW);
         'bắt đúng chỗ đủ-rồi · chữ bản gốc mờ thì khai là KHÔNG đoán');
       bao(ra.khaiThac && ra.manCoLoi && ra.manCoDuongVe,
         'dữ liệu mới trả công cho máy cũ: hàm chỉ đường của bản trước nay nói thêm nhà mình đang CẢM THẤY ở vùng nào và chỗ rơi nào đang rình — không dựng hàm thứ hai trả lời cùng một câu hỏi, chỉ bọc hàm đã có. Bọc thì một nguồn, dựng thì hai');
+    }
+  }
+
+
+  console.log('\n61 · MÃ CHIA THEO QUYỀN — MÁY GIA ĐÌNH KHÔNG TẢI MÃ CỦA NGHỀ');
+  {
+    /* ĐO TRÊN TRANG SẠCH, mỗi vai một trang.
+
+       Bộ kiểm dùng chung một trang cho cả sáu mươi mốt mục, mà một thẻ
+       script đã chạy thì không rút lại được: vai quản trị nạp mã nghề ở
+       mục trước là nó nằm lại tới hết phiên. Đo trên trang chung thì
+       phụ huynh "có" đủ ba mươi hai màn nghề — không phải vì máy họ tải,
+       mà vì trang này đã là máy của người khác trước đó.
+
+       Đời thật thì máy của một nhà chưa từng có phiên của Coach. Nên đo
+       đúng đời thật: trang mới, và đếm cả LƯỢT HỎI MẠNG — thứ không nói
+       dối được. */
+    const xemVai = async (mail) => {
+      const q = await b.newPage();
+      if (KHOA) await q.addInitScript(x => { window.GITA_KHOA = x; }, KHOA);
+      let hoiMaNghe = 0;
+      q.on('request', r => { if (/gita-nghe\.js/.test(r.url())) hoiMaNghe++; });
+      await q.goto(URL, { waitUntil: 'load' });
+      await q.waitForFunction(() => window.G && window.G.doLogin, { timeout: 60000 });
+      await q.evaluate(x => window.G.doLogin(x), mail);
+      await q.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+      const r = await q.evaluate(() => {
+        const G = window.G, m = G.MAN_NGHE || [];
+        return { soMan: m.length, tep: G.MA_NGHE_TEP || '',
+          daNap: !!G.KHO.maNgheXong,
+          coMan: m.filter(v => !!G.VIEWS[v]).length,
+          conCho: (G.KHO.dangNap || []).indexOf('ma-nghe') >= 0 };
+      });
+      await q.close();
+      return { ...r, hoiMaNghe };
+    };
+    const nha = await xemVai('phuhuynh@gita365.vn');
+    const hs = await xemVai('hocvien@gita365.vn');
+    const ctv = await xemVai('daisu@gita365.vn');
+    const coach = await xemVai('coach@gita365.vn');
+
+    bao(nha.soMan > 0 && !!nha.tep,
+      'gói mã khai được BẢNG MÀN NẰM Ở GÓI NGHỀ, sinh ra lúc gộp chứ không chép tay — chép tay thì bảng và tệp gộp rồi sẽ lệch, và lệch ở đây nghĩa là một màn có thật bị coi như không tồn tại',
+      nha.soMan + ' màn ở ' + nha.tep);
+    bao(nha.hoiMaNghe === 0 && hs.hoiMaNghe === 0 && ctv.hoiMaNghe === 0 &&
+        !nha.daNap && nha.coMan === 0 && !hs.daNap && hs.coMan === 0 && !ctv.daNap && ctv.coMan === 0,
+      'MÁY CỦA GIA ĐÌNH, HỌC VIÊN VÀ CỘNG TÁC VIÊN KHÔNG TẢI MÃ CỦA NGHỀ — không màn nghề nào được dựng trên máy họ. Kho đã chia theo quyền từ bản 8.x; mã thì tới bản này mới chia. Đo trước khi chia: 252 KB trong 1.660 KB dựng những màn ba vai ấy không bao giờ mở được',
+      'ba vai · 0 lượt hỏi ' + nha.tep + ' · 0 màn nghề dựng trên máy họ');
+    bao(coach.hoiMaNghe === 1 && coach.daNap && coach.coMan === coach.soMan && !coach.conCho,
+      'vai có gói nghề thì mã về ĐỦ, và về xong trước khi màn hình dựng — tên nó đi cùng G.KHO.dangNap nên mọi chỗ đã chờ "dangNap rỗng" tự khắc chờ luôn cả mã, không cần dựng đường chờ thứ hai. Hai đường chờ rồi sẽ có ngày lệch',
+      'coach: 1 lượt hỏi · nhận đủ ' + coach.coMan + '/' + coach.soMan + ' màn nghề');
+
+    /* Màn nghề mà mã chưa về: phải NÓI ĐANG MỞ, không được âm thầm nhảy
+       về bản đồ. Dựng lại đúng trạng thái ấy rồi bắt render nói thật. */
+    const cho = await p.evaluate(() => {
+      const G = window.G, v = (G.MAN_NGHE || [])[0];
+      const giuFn = G.VIEWS[v], giuView = G.S.view;
+      delete G.VIEWS[v];
+      G.KHO.dangNap.push('ma-nghe');
+      G.S.view = v; G.render();
+      const t = document.getElementById('main').innerText;
+      G.KHO.dangNap.pop(); G.VIEWS[v] = giuFn; G.S.view = giuView; G.render();
+      return { noiDangMo: /Đang mở/i.test(t), khongNhayBanDo: G.S.view !== 'ban-do' };
+    });
+    bao(cho.noiDangMo,
+      'màn của nghề mà mã chưa về thì hệ NÓI ĐANG MỞ, không âm thầm nhảy về bản đồ. Trước bản này dòng ấy chỉ chạy khi có lỗi thật; từ khi mã tách ra nó thành đường đi bình thường của mỗi lần đăng nhập, và một cú nhảy im lặng là đúng lớp hỏng ngầm mà bộ gộp đã cảnh báo ngay đầu tệp của nó');
+
+    /* Bản một tệp không tải được tệp anh em — mã nghề phải nằm sẵn bên trong */
+    {
+      const fs61 = require('fs'), px61 = require('path');
+      const goc61 = px61.join(__dirname, '..');
+      const ban61 = /version:\s*'([^']+)'/.exec(
+        fs61.readFileSync(px61.join(goc61, 'src', 'data.core.js'), 'utf8'));
+      const gt = px61.join(goc61, 'GITA365-v' + ban61[1] + '-gioi-thieu.html');
+      const dd = px61.join(goc61, 'GITA365.html');
+      const coTrong = t => fs61.existsSync(t) &&
+        fs61.readFileSync(t, 'utf8').indexOf('gita-nghe.js') >= 0;
+      bao(coTrong(gt) && coTrong(dd),
+        'hai bản MỘT TỆP — bản giới thiệu và vỏ Apps Script — đều nhúng sẵn mã nghề bên trong, vì một tệp thì không tải được tệp anh em nào cả. Lần đầu tôi chèn sau vòng nhúng nên không còn thẻ nào để bám, và bản giới thiệu lặng lẽ nhẹ đi 190 KB mà không báo gì',
+        'bản giới thiệu ' + (coTrong(gt) ? 'có' : 'THIẾU') + ' · vỏ đầy đủ ' + (coTrong(dd) ? 'có' : 'THIẾU'));
     }
   }
 

@@ -3,7 +3,7 @@
    Cài một lần, dùng được cả khi mất mạng. Toàn bộ kho tri thức
    nằm trong máy — không cần đường truyền để mở bản đồ nhà mình.
    ═══════════════════════════════════════════════════════════════ */
-const CACHE = 'gita365-v9-22-0';
+const CACHE = 'gita365-v9-23-0';
 /* Danh sách này phải khớp với thứ tự thẻ <script> trong index.html.
    Thiếu tệp thì lần cài đầu vẫn chạy — trình xử lý fetch bên dưới cache
    lại mọi thứ tải về — nhưng mất mạng ngay sau khi cài thì vỡ. */
@@ -19,7 +19,6 @@ const FILES = [
      Bộ xử lý fetch bên dưới đã tự lưu đệm gói nào được mở, nên tải sẵn
      cả bảy chỉ là tải hộ thứ không ai dùng. */
   './kho/mau.json',
-  './assets/style.css',
   './assets/fonts.css',
   './assets/fonts/bevietnampro-400-italic-latin.woff2',
   './assets/fonts/bevietnampro-400-italic-vietnamese.woff2',

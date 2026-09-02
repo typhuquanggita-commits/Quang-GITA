@@ -11,7 +11,7 @@ Ra: GITA365_v70_MOT_TEP.html — mở bằng trình duyệt, gửi qua email, d�
 Apps Script, hoặc chép vào USB. Không cần mạng, không cần cài gì.
 Bản nhiều tệp (index.html) mới là bản cài được như ứng dụng (PWA).
 """
-import re, os, sys, base64
+import os, re, os, sys, base64
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
@@ -61,6 +61,15 @@ def nhung(m):
             if os.path.exists(_d):
                 ma = ma.replace("assets/brand/" + _t, b64(_d))
     return '<script>\n/* ── %s ── */\n%s\n</script>' % (p, ma)
+# Bản một tệp chạy ngoại tuyến, không có chỗ nào tải thêm được — nên mã
+# của gói nghề phải được nhúng luôn. Chèn THẺ vào trước, để chính vòng
+# nhúng bên dưới lo phần đọc tệp. Chèn sau vòng ấy thì không còn thẻ nào
+# để bám — lần đầu tôi làm đúng kiểu đó, và bản giới thiệu lặng lẽ nhẹ
+# đi 190 KB mà không báo gì. Đúng lớp hỏng ngầm.
+if os.path.exists('gita-nghe.js'):
+    html = html.replace('<script src="gita-app.js"></script>',
+        '<script src="gita-app.js"></script>\n<script src="gita-nghe.js"></script>', 1)
+
 html = re.sub(r'<script src="([^"]+)"></script>', nhung, html)
 
 # 5. Chế độ mẫu: nhúng sẵn gói mẫu, không có kho, không có khoá
@@ -112,6 +121,12 @@ for _ten in ('logo-gita.png', 'dau-gita.png'):
         day = day.replace("assets/brand/" + _ten, b64(_d))
 day = day.replace('<link rel="manifest" href="manifest.webmanifest">', '')
 day = re.sub(r"if \('serviceWorker' in navigator.*?\n\}\n", '', day, flags=re.S)
+# Vỏ Apps Script là MỘT tệp — nó không tải được tệp anh em nào cả. Nên
+# mã của gói nghề phải nằm sẵn bên trong, y như bản giới thiệu.
+if os.path.exists('gita-nghe.js'):
+    day = day.replace('<script src="gita-app.js"></script>',
+        '<script src="gita-app.js"></script>\n<script src="gita-nghe.js"></script>', 1)
+
 day = re.sub(r'<script src="([^"]+)"></script>', nhung, day)
 
 out2 = 'GITA365.html'

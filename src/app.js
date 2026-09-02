@@ -707,8 +707,34 @@ function dangMoKho(goi){
     U.h(String((G.KHO.daNap||[]).length)) + ' gói đã mở xong</p></div>';
 }
 
+/* Một cái tên màn CÓ THẬT hay không — khác với dựng được ngay hay chưa.
+
+   Từ bản 9.23 mã dựng màn của nghề nằm ở gói riêng, chỉ tải khi giấy
+   phép có gói nghề. Nên G.VIEWS[v] trả lời được câu "dựng được chưa"
+   nhưng KHÔNG trả lời được câu "tên này có thật không" — và các bảng
+   tra chéo trong kho hỏi đúng câu thứ hai.
+
+   Để chung một hàm vì ba chỗ đã hỏi câu ấy theo ba cách khác nhau, và
+   ba cách rồi sẽ có ngày lệch. */
+G.manCoThat = function(v){
+  return !!(v && (G.VIEWS[v] || (G.MAN_NGHE||[]).indexOf(v) >= 0));
+};
+
 function render(){
   var main = document.getElementById('main');
+  /* Màn của gói nghề mà mã chưa về: NÓI ĐANG MỞ, đừng nhảy về bản đồ.
+
+     Trước bản 9.23 dòng này chỉ có một vế — thiếu màn thì đổi sang
+     'ban-do'. Lúc mọi màn nằm chung một gói thì vế ấy chỉ chạy khi có
+     lỗi thật. Từ khi mã nghề tách ra, nó thành đường đi bình thường của
+     mỗi lần đăng nhập — và một cú nhảy im lặng về bản đồ là đúng lớp
+     hỏng ngầm mà bộ gộp đã cảnh báo ngay đầu tệp của nó. */
+  if(!G.VIEWS[G.S.view] && (G.MAN_NGHE||[]).indexOf(G.S.view) >= 0 &&
+     G.KHO && G.KHO.dangNap && G.KHO.dangNap.indexOf('ma-nghe') >= 0){
+    main.innerHTML = '<div class="view">' + dangMoKho('mã của gói nghề') + '</div>';
+    var lM = document.getElementById('left'); if(lM) lM.innerHTML = leftNav();
+    return;
+  }
   if(!G.VIEWS[G.S.view]) G.S.view = 'ban-do';
   if(!G.allowed(G.S.view)){
     var it = G.navItem(G.S.view);
@@ -776,7 +802,7 @@ G.save   = save;
 G.dangXuat = function(){ var b=document.querySelector('[data-act="logout"]'); if(b) b.click(); };
 
 G.go = function(v){
-  if(!G.VIEWS[v]) return;
+  if(!G.manCoThat(v)) return;
   if(!G.allowed(v)){ U.toast(G.L('lock'),'err'); return; }
   if(G.isCanh && G.isCanh(v) && G.throttled && G.throttled()) return;
   G.S.view = v;
@@ -1381,7 +1407,7 @@ window.addEventListener('hashchange', function(){
      G.boot không chạy lại. Phải bắt ở đây, nếu không người dùng gõ xong thấy
      màn hình không nhúc nhích. */
   if(CUA_DANG_NHAP.indexOf(v.toLowerCase()) >= 0){ G.raNgoai(); return; }
-  if(v && G.VIEWS[v] && G.S.acc && v!==G.S.view) G.go(v);
+  if(v && G.manCoThat(v) && G.S.acc && v!==G.S.view) G.go(v);
 });
 
 /* ═══════════════ KHỞI ĐỘNG ═══════════════ */
@@ -1430,7 +1456,7 @@ G.boot = function(){
     if(a){
       G.S.acc=a; G.S.role=a.role; G.S.roleObj=G.roleById(a.role);
       var hv = location.hash.replace('#','');
-      if(hv && G.VIEWS[hv]) G.S.view = hv;
+      if(hv && G.manCoThat(hv)) G.S.view = hv;
       manCho('Đang mở kho theo phạm vi được cấp phép…');
       G.napKho().then(function(){ shell(); if(G.batDongBo) G.batDongBo(); if(G.kiemBanMoi) G.kiemBanMoi(); });
       return;

@@ -54,9 +54,21 @@ G.dlMauDai = function(man){
 
 /* Bọc màn: dải nhắc lên ĐẦU, ngay dưới tiêu đề, không nhét xuống cuối.
    Người đọc số phải gặp dải nhắc trước khi đọc số. */
+
+/* ─── BỌC LẠI KHI MÃ VỀ MUỘN ───
+   Từ bản 9.23, mã dựng màn của nghề nằm ở gói riêng và về SAU tệp này.
+   Lớp bọc chạy một lần lúc tải trang thì màn nghề không bao giờ được
+   bọc — và hụt kiểu ấy không ném lỗi nào, chỉ là màn ấy thiếu một dải
+   hoặc một thẻ mà không ai để ý.
+
+   Nên noi() nhớ lại việc nó CHƯA làm được, và người nạp mã nghề gọi
+   lại. Nhớ việc chưa làm rẻ hơn nhiều so với bắt mọi lớp bọc phải biết
+   thứ tự nạp của cả ứng dụng. */
+var CHO_BOC = [];
 function noi(ten){
   var cu = G.VIEWS && G.VIEWS[ten];
-  if(typeof cu !== 'function') return false;
+  if(typeof cu !== 'function'){ if(CHO_BOC.indexOf(ten) < 0) CHO_BOC.push(ten); return false; }
+  var j = CHO_BOC.indexOf(ten); if(j >= 0) CHO_BOC.splice(j, 1);
   G.VIEWS[ten] = function(){
     var o = cu.apply(this, arguments);
     if(typeof o !== 'string' || o.length < 400) return o;   /* màn khoá thì để nguyên */
@@ -125,3 +137,13 @@ G.dlMauSoat = function(){
 };
 
 })();
+
+/* Bọc lại phần màn về muộn — xem lý do ở chỗ khai CHO_BOC. */
+G.dlMauNoiLai = function(){
+  var con = CHO_BOC.slice(), them = 0;
+  for(var i = 0; i < con.length; i++) if(noi(con[i])){
+    them++; if((G.DL_MAU_DA_NOI||[]).indexOf(con[i]) < 0) (G.DL_MAU_DA_NOI = G.DL_MAU_DA_NOI || []).push(con[i]);
+  }
+  return them;
+};
+(G.BOC_LAI = G.BOC_LAI || []).push('dlMauNoiLai');

@@ -49,6 +49,8 @@ const TEP_INDEX = path.join(GOC, 'index.html');
 const TEP_SW = path.join(GOC, 'sw.js');
 const TEP_DS = path.join(__dirname, 'danh-sach-src.json');
 const TEN_GOP = 'gita-app.js';
+const TEN_NGHE = 'gita-nghe.js';
+const TEP_DS_NGHE = path.join(__dirname, 'danh-sach-nghe.json');
 const TACH = process.argv.includes('--tach');
 
 const RE_THE = /^[ \t]*<script src="(src\/[^"]+\.js)"><\/script>[ \t]*\r?\n/gm;
@@ -75,6 +77,32 @@ function docDanhSach() {
 const ds = docDanhSach();
 for (const t of ds)
   if (!fs.existsSync(path.join(GOC, t))) throw new Error('Thiếu tệp trong danh sách nạp: ' + t);
+
+/* ─── CHIA MÃ THEO QUYỀN, ĐÚNG NHƯ KHO ĐÃ CHIA ───
+   Kho chia theo quyền từ bản 8.x. Mã thì chưa: tới bản 9.22, mọi gia
+   đình vẫn tải trọn 1.660 KB, trong đó 252 KB dựng những màn họ không
+   bao giờ mở được.
+
+   Danh sách nghề nằm ở tools/danh-sach-nghe.json, và điều kiện vào danh
+   sách ấy ghi ngay trong tệp. Thứ tự nạp vẫn lấy từ danh sách ĐẦY ĐỦ —
+   một nguồn sự thật, không hai. */
+const dsNghe = fs.existsSync(TEP_DS_NGHE)
+  ? JSON.parse(fs.readFileSync(TEP_DS_NGHE, 'utf8')).tep : [];
+for (const t of dsNghe)
+  if (ds.indexOf(t) < 0) throw new Error('Tệp nghề không có trong danh sách nạp: ' + t);
+const laNghe = t => dsNghe.indexOf(t) >= 0;
+const dsNen = ds.filter(t => !laNghe(t));
+
+/* Tên màn nằm ở gói nghề — SINH RA lúc gộp, không chép tay. Gói nền cần
+   biết chúng để phân biệt "màn chưa tải mã" với "màn không có thật":
+   thiếu bảng này thì app âm thầm nhảy về bản đồ, đúng lớp hỏng ngầm mà
+   đầu tệp này đã cảnh báo. */
+function manCuaTep(t) {
+  const ma = fs.readFileSync(path.join(GOC, t), 'utf8');
+  return [...ma.matchAll(/G\.VIEWS\['([^']+)'\]\s*=/g)].map(m => m[1]);
+}
+const manNghe = [];
+for (const t of dsNghe) for (const v of manCuaTep(t)) if (manNghe.indexOf(v) < 0) manNghe.push(v);
 
 /* ─── sw.js: bộ nhớ đệm ngoại tuyến cũng phải còn một lượt hỏi ───
    Không thay bằng regex thô trên cả tệp: mảng FILES xếp nhiều mục trên
@@ -132,31 +160,65 @@ if (TACH) {
   suaSW(false);
 
   fs.rmSync(path.join(GOC, TEN_GOP), { force: true });
+  fs.rmSync(path.join(GOC, TEN_NGHE), { force: true });
   console.log('Đã tách lại ' + ds.length + ' thẻ script trong index.html và sw.js.');
   console.log('Sửa xong nhớ chạy: node tools/gop-src.js');
   process.exit(0);
 }
 
 /* ═══════════ GỘP ═══════════ */
-const phan = [];
-let byte = 0;
-for (const t of ds) {
+function boc(t) {
   const ma = fs.readFileSync(path.join(GOC, t), 'utf8');
-  byte += Buffer.byteLength(ma);
   /* Bọc từng tệp trong một hàm riêng — xem lý do ở đầu tệp này.
      Xuống dòng trước dấu đóng là bắt buộc: tệp nào kết thúc bằng một
      dòng chú thích // thì thiếu nó là nuốt luôn dấu đóng hàm. */
-  phan.push('/* ═════════ ' + t + ' ═════════ */\n(function(){\n' + ma + '\n})();\n');
+  return { ma: '/* ═════════ ' + t + ' ═════════ */\n(function(){\n' + ma + '\n})();\n',
+    byte: Buffer.byteLength(ma) };
+}
+
+/* ─── Gói nghề: dựng trước, để gói nền biết mình bỏ đi bao nhiêu ─── */
+let byteNghe = 0;
+if (dsNghe.length) {
+  const pn = dsNghe.map(t => { const b = boc(t); byteNghe += b.byte; return b.ma; });
+  fs.writeFileSync(path.join(GOC, TEN_NGHE),
+    '/* ═══════════════════════════════════════════════════════════════\n' +
+    '   GITA 365 — MÃ CỦA GÓI NGHỀ · ' + dsNghe.length + ' TỆP\n\n' +
+    '   TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Sửa trong src/ rồi chạy:\n' +
+    '   node tools/gop-src.js\n\n' +
+    '   Tệp này KHÔNG nằm trong index.html và KHÔNG nằm trong danh sách\n' +
+    '   đệm ngoại tuyến. Nó chỉ được nạp sau khi đăng nhập, và chỉ khi\n' +
+    '   giấy phép có gói nghề — cùng lúc với gói kho nghề, cùng một điều\n' +
+    '   kiện. Máy của gia đình không bao giờ hỏi tới nó.\n' +
+    '   ═══════════════════════════════════════════════════════════════ */\n\n' +
+    pn.join('\n'));
+}
+
+const phan = [];
+let byte = 0;
+/* Bảng tên màn của gói nghề, sinh ra lúc gộp — đặt ở ĐẦU gói nền để mọi
+   tệp sau đó đọc được. */
+phan.push('/* ═════════ sinh lúc gộp: màn nằm ở ' + TEN_NGHE + ' ═════════ */\n' +
+  '(function(){var G=window.G||{};window.G=G;\n' +
+  'G.MA_NGHE_TEP=' + JSON.stringify(TEN_NGHE) + ';\n' +
+  'G.MAN_NGHE=' + JSON.stringify(manNghe) + ';\n})();\n');
+for (const t of dsNen) {
+  const b = boc(t);
+  byte += b.byte;
+  phan.push(b.ma);
 }
 
 const dau =
   '/* ═══════════════════════════════════════════════════════════════\n' +
-  '   GITA 365 — BẢN GỘP CỦA ' + ds.length + ' TỆP MÃ NGUỒN\n' +
+  '   GITA 365 — BẢN GỘP CỦA ' + dsNen.length + ' TỆP MÃ NGUỒN\n' +
   '\n' +
   '   TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong\n' +
   '   src/ rồi chạy: node tools/gop-src.js\n' +
   '\n' +
   '   Gộp để cắt số lượt hỏi mạng từ ' + ds.length + ' xuống 1. Trên 3G yếu, mỗi\n' +
+  '   lượt hỏi là một lần chờ độ trễ.\n' +
+  '\n' +
+  '   ' + dsNghe.length + ' tệp dựng màn của NGHỀ đã ra ' + TEN_NGHE + ' — chỉ tải khi\n' +
+  '   giấy phép có gói nghề. Máy của gia đình nhẹ đi ' + Math.round(byteNghe/1024) + ' KB.\n' +
   '   lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình\n' +
   '   trắng với người dùng điện thoại.\n' +
   '\n' +
@@ -182,6 +244,13 @@ if (kqSW.doi) console.log('sw.js: ' + kqSW.truoc + ' mục → ' + kqSW.sau + ' 
 else console.log('sw.js đã trỏ vào ' + TEN_GOP + ' rồi.');
 
 const raByte = fs.statSync(path.join(GOC, TEN_GOP)).size;
-console.log('Đã gộp ' + ds.length + ' tệp · ' + Math.round(byte / 1024) + ' KB → ' +
+console.log('Đã gộp ' + dsNen.length + ' tệp · ' + Math.round(byte / 1024) + ' KB → ' +
   Math.round(raByte / 1024) + ' KB trong ' + TEN_GOP);
-console.log('Số lượt hỏi mạng cho phần mã: ' + ds.length + ' → 1');
+if (dsNghe.length) {
+  const nb = fs.statSync(path.join(GOC, TEN_NGHE)).size;
+  console.log('Gói nghề: ' + dsNghe.length + ' tệp · ' + Math.round(nb / 1024) + ' KB trong ' +
+    TEN_NGHE + ' — ' + manNghe.length + ' màn, chỉ tải khi có gói nghề');
+  console.log('Máy gia đình nhẹ đi ' + Math.round(byteNghe / 1024) + ' KB (' +
+    Math.round(100 * byteNghe / (byte + byteNghe)) + '% gói mã)');
+}
+console.log('Số lượt hỏi mạng cho phần mã: ' + ds.length + ' → 1 (vai nghề: 2)');
