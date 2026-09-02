@@ -27,7 +27,7 @@ G.VIEWS['tang-quyen'] = function(){
 
   o += U.sec('MA TRẬN QUYỀN · 15 VAI × 21 QUYỀN','Ô sáng là được dùng. Máy chủ luôn kiểm lại trước khi ghi, client chỉ ẩn hiện nút.');
   o += '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Quyền</th><th>Cấp tối đa</th>'+
-    G.ROLES.map(function(r){ return '<th style="text-align:center;font-size:9px;color:'+r.c+'">'+h(r.id)+'</th>'; }).join('')+
+    G.ROLES.map(function(r){ return '<th style="text-align:center;font-size:10.5px;color:'+r.c+'">'+h(r.id)+'</th>'; }).join('')+
     '</tr></thead><tbody>' + perms.map(function(p){
       var lv = G.PERM[p];
       return '<tr><td><span class="mono sm">'+h(p)+'</span></td>'+
@@ -114,7 +114,7 @@ G.VIEWS['vong-doi-tk'] = function(){
       '<b>'+h(y.ten)+'</b><span class="mono tiny muted">'+h(y.u)+'</span>'+
       U.chip('Lần '+y.lan, ba?'#BE0E16':'var(--gita)')+
       '<span class="tiny muted mono">'+h(y.ngay)+'</span></div>'+
-      '<p class="serif" style="font-size:15px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(y.ly)+'"</p>'+
+      '<p class="serif" style="font-size:16px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(y.ly)+'"</p>'+
       '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:var(--phu-2)">'+
       '<span class="tiny up muted">ĐỀ XUẤT CỦA HỆ THỐNG</span><p class="sm mt">'+h(y.dx)+'</p></div>'+
       '<div class="row mt2" style="gap:8px">'+
@@ -194,7 +194,7 @@ G.VIEWS['dau-mat'] = function(){
 
   o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
     '<div class="row"><span style="color:var(--gold-ink)">'+ic('lock','w-4 h-4')+'</span><b>Cấu trúc mã</b></div>'+
-    '<p class="mono mt" style="font-size:15px;color:var(--gold-2);letter-spacing:.04em">'+h(D.cauTruc)+'</p></div>';
+    '<p class="mono mt" style="font-size:16px;color:var(--gold-2);letter-spacing:.04em">'+h(D.cauTruc)+'</p></div>';
 
   o += U.sec('NĂM LỚP MÃ','Xoá được lớp này vẫn còn lớp kia — muốn xoá sạch phải gõ lại toàn bộ tài liệu');
   o += '<div class="grid g2">' + D.lop.map(function(l,i){
@@ -209,7 +209,7 @@ G.VIEWS['dau-mat'] = function(){
   o += '<div class="card">'+
     '<textarea id="quetVan" rows="5" placeholder="Dán đoạn văn bản nghi ngờ bị rò ra ngoài…" '+
     'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:12px;'+
-    'padding:12px;font-size:13px;line-height:1.6;resize:vertical;outline:none"></textarea>'+
+    'padding:12px;font-size:14.5px;line-height:1.6;resize:vertical;outline:none"></textarea>'+
     '<button class="btn pri mt" data-act="quet-dau">'+ic('search')+'Quét mật mã kín</button>'+
     '<div id="quetKQ" class="mt2"></div>'+
     '<p class="tiny muted mt">'+h(D.quet)+'</p></div>';

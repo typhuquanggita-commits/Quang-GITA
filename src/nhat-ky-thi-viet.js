@@ -148,7 +148,7 @@ G.VIEWS['nhat-ky-vi-tri'] = function(){
      [soTuan + ' · ' + soThang, 'TUẦN · THÁNG ĐÃ TỔNG KẾT', 'var(--gita)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:22px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 
@@ -159,7 +159,7 @@ G.VIEWS['nhat-ky-vi-tri'] = function(){
     return '<button class="card" data-nknhip="'+h(n.ma)+'" style="flex:1;min-width:220px;text-align:left;'+
       'cursor:pointer;border-color:'+(on ? n.c : 'var(--line)')+';'+(on ? 'background:'+n.c+'0E' : '')+'">'+
       '<div class="row" style="gap:8px;align-items:center">'+ic(n.ic,'w-4 h-4')+
-        '<b style="font-size:15px;color:'+n.c+'">'+h(n.ten)+'</b></div>'+
+        '<b style="font-size:16px;color:'+n.c+'">'+h(n.ten)+'</b></div>'+
       '<p class="tiny mt" style="line-height:1.6">'+h(n.y)+'</p>'+
       '<p class="tiny mt muted" style="line-height:1.55">'+h(n.nhac)+'</p></button>';
   }).join('') +'</div>';
@@ -277,7 +277,7 @@ G.VIEWS['thi-viet'] = function(){
      ['10%', 'HỌC BỔNG MỐC 90 · 365', 'var(--gold-ink)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:22px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 

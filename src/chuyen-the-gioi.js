@@ -146,7 +146,7 @@ G.VIEWS['chuyen-the-gioi'] = function(){
      [String(ds.filter(function(x){ return x.luu; }).length), 'CHUYỆN CÓ GHI CHÚ THẬN TRỌNG', '#B4720F']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:20px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt" style="line-height:1.45">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 

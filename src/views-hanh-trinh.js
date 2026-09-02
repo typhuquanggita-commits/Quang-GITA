@@ -42,7 +42,7 @@ G.VIEWS['hanh-trinh-12'] = function(){
           '<span style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;'+
             'font-weight:900;background:'+t.c+'22;color:'+t.c+'">'+
             String(d.no).padStart(2,'0')+'</span>'+
-          '<b style="font-size:15.5px;flex:1;min-width:200px">'+h(d.ten)+'</b>'+
+          '<b style="font-size:16px;flex:1;min-width:200px">'+h(d.ten)+'</b>'+
           '<span class="chip">'+h(d.ai)+'</span>'+
           '<span class="chip">'+h(d.ngay)+'</span></div>'+
         '<div class="mt">'+U.list(d.viec, t.c)+'</div>'+
@@ -158,7 +158,7 @@ G.VIEWS['khach-lon'] = function(){
   (G.KHACH_TANG||[]).forEach(function(t){
     o += '<div class="card mt2" style="border-left:3px solid '+t.c+'">'+
       '<div class="row" style="gap:10px;align-items:baseline;flex-wrap:wrap">'+
-        '<b style="font-size:17px;color:'+t.c+'">'+h(t.ten)+'</b>'+
+        '<b style="font-size:18px;color:'+t.c+'">'+h(t.ten)+'</b>'+
         '<span class="chip" style="color:'+t.c+'">'+h(t.gita)+'</span>'+
         '<span class="grow"></span>'+
         '<span class="chip" style="border-color:'+t.c+'55;color:'+t.c+'">'+ic('calendar','w-3 h-3')+' '+h(t.nhip)+'</span>'+

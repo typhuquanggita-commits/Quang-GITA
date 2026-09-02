@@ -86,7 +86,7 @@ G.VIEWS = G.VIEWS || {};
       return '<div class="card mb" style="border-color:' + tr.c + '2e">' +
         '<div class="row wrap mb" style="gap:8px;align-items:center">' +
         '<span style="color:' + tr.c + ';flex:none">' + ic(tr.ic, 'w-4 h-4') + '</span>' +
-        '<b style="color:' + tr.c + ';font-size:15px">' + h(tr.ten) + '</b>' +
+        '<b style="color:' + tr.c + ';font-size:16px">' + h(tr.ten) + '</b>' +
         '<span class="chip" style="color:' + tr.c + ';border-color:' + tr.c + '40">' + ds.length + '</span></div>' +
         '<p class="tiny muted mb" style="line-height:1.6">' + h(tr.y) + '</p>' +
         (ds.length ? ds.map(function (v) { return the(v, t, tr); }).join('')
@@ -233,7 +233,7 @@ G.VIEWS = G.VIEWS || {};
     if (cap)
       o += '<div class="card mb" style="border-color:' + cap.c + '3a">' +
         '<div class="row wrap mb" style="gap:8px;align-items:center">' + U.dot(cap.c) +
-        '<b style="color:' + cap.c + ';font-size:15px">' + h(cap.ten) + '</b>' +
+        '<b style="color:' + cap.c + ';font-size:16px">' + h(cap.ten) + '</b>' +
         U.chip('đo theo ' + h(cap.donVi), cap.c) + U.chip('sàn ' + cap.san + ' ' + h(cap.donVi)) + '</div>' +
         '<p class="sm dim mb" style="line-height:1.75"><b>Cấp này nặng nhất ở đâu.</b> ' + h(cap.trong) + '</p>' +
         '<p class="tiny mb" style="line-height:1.7;color:var(--ink-2)"><b>Vì sao đo bằng ' + h(cap.donVi) +
@@ -418,7 +418,7 @@ G.VIEWS = G.VIEWS || {};
     if (!v) return bao('Không tìm thấy việc.', 'err');
     var m = G.cvMuc(v.ma) || {};
     U.modal(
-      '<h2 style="font-size:20px;font-weight:800;margin-bottom:4px">Đóng việc ' + h(v.ma) + '</h2>' +
+      '<h2 style="font-size:21px;font-weight:800;margin-bottom:4px">Đóng việc ' + h(v.ma) + '</h2>' +
       '<p class="sm muted" style="margin-bottom:12px">' + h(m.ten || '') + '</p>' +
       '<div class="card pad-sm mb" style="border-color:#0B735033">' +
       '<div class="tiny up mb" style="color:#0B7350">ĐÓNG ĐƯỢC KHI</div>' +
@@ -455,7 +455,7 @@ G.VIEWS = G.VIEWS || {};
     if (!m.chuyen) return bao('Đầu việc này không có bước luân chuyển.', 'err');
     var r = G.roleById && G.roleById(m.chuyen);
     U.modal(
-      '<h2 style="font-size:20px;font-weight:800;margin-bottom:4px">Chuyển việc ' + h(v.ma) + '</h2>' +
+      '<h2 style="font-size:21px;font-weight:800;margin-bottom:4px">Chuyển việc ' + h(v.ma) + '</h2>' +
       '<p class="sm muted" style="margin-bottom:12px">Sang <b>' + h(r ? r.n : m.chuyen) + '</b></p>' +
       (m.lienDoi ? '<div class="card pad-sm mb" style="border-color:#BE0E1633">' +
         '<div class="tiny up mb" style="color:#BE0E16">PHẦN LIÊN ĐỚI CỦA MÌNH SAU KHI CHUYỂN</div>' +
@@ -493,7 +493,7 @@ G.VIEWS = G.VIEWS || {};
     function ten(x) { var r = G.roleById && G.roleById(x); return r ? r.n : (x || '—'); }
     function luc(t) { return new Date(t).toLocaleString('vi-VN'); }
     U.modal(
-      '<h2 style="font-size:20px;font-weight:800;margin-bottom:4px">Đường đi của ' + h(v.ma) + '</h2>' +
+      '<h2 style="font-size:21px;font-weight:800;margin-bottom:4px">Đường đi của ' + h(v.ma) + '</h2>' +
       '<p class="sm muted" style="margin-bottom:14px">' + h(m.ten || '') + '</p>' +
       '<div class="card pad-sm mb"><div class="tiny up muted mb">ĐANG Ở TAY</div>' +
       '<b class="sm">' + h(ten(v.nguoi)) + '</b>' +

@@ -45,8 +45,8 @@ G.VIEWS['ban-do'] = function(){
   o += U.sec('BĂNG NỀN — tám việc chạy dưới cả năm khoang', V.bangNen.nguyenTac);
   o += '<div class="grid g4">' + V.bangNen.viec.map(function(v){
     return '<div class="card pad-sm lift"><div class="row" style="gap:8px;margin-bottom:6px">'+
-      '<span class="mono b" style="color:var(--gold-ink);font-size:12px">0'+v.no+'</span>'+
-      '<b style="font-size:13px">'+h(v.ten)+'</b></div>'+
+      '<span class="mono b" style="color:var(--gold-ink);font-size:12.5px">0'+v.no+'</span>'+
+      '<b style="font-size:14.5px">'+h(v.ten)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.55">'+h(v.lam)+'</p>'+
       '<div class="tiny mt" style="color:var(--ink-4)">Nhịp: '+h(v.khi)+'</div>'+
       (v.dauHieuThieu?'<div class="tiny" style="margin-top:6px;color:var(--alert);line-height:1.5">⚠ Thiếu khi: '+h(v.dauHieuThieu)+'</div>':'')+
@@ -58,7 +58,7 @@ G.VIEWS['ban-do'] = function(){
   o += '<div class="card glow"><div class="grid g2" style="gap:10px">' + V.dauRa.chiSo.map(function(c){
     return '<div style="display:flex;gap:10px;padding:11px;border-radius:12px;background:var(--phu-2)">'+
       '<span style="color:var(--ok);flex:none">'+ic('check','w-4 h-4')+'</span>'+
-      '<div><b style="font-size:13px;display:block">'+h(c.ten)+'</b>'+
+      '<div><b style="font-size:14.5px;display:block">'+h(c.ten)+'</b>'+
       '<span class="tiny muted">'+h(c.chuan)+'</span></div></div>';
   }).join('') + '</div>'+
   (V.dauRa.hoSo?'<p class="sm dim mt" style="padding-top:14px;border-top:1px solid var(--line)">'+
@@ -74,8 +74,8 @@ G.khoangModal = function(id){
   if(!k) return;
   var C = {K1:'#2A72C6',K2:'#5140B4',K3:'#0B6675',K4:'#0B7350',K5:'#BE0E16'}, c = C[id]||'var(--gita)';
   var o = '<div class="up" style="color:'+c+'">KHOANG '+k.no+'</div>'+
-    '<h2 style="font-size:24px;font-weight:800;margin:6px 0 8px">'+h(k.ten)+'</h2>'+
-    '<p class="serif" style="font-size:17px;font-style:italic;color:'+c+';margin-bottom:16px">'+h(k.cauHoi)+'</p>'+
+    '<h2 style="font-size:26px;font-weight:800;margin:6px 0 8px">'+h(k.ten)+'</h2>'+
+    '<p class="serif" style="font-size:18px;font-style:italic;color:'+c+';margin-bottom:16px">'+h(k.cauHoi)+'</p>'+
     '<p class="sm dim" style="margin-bottom:16px">'+h(k.vaiTro)+'</p>'+
     '<div class="grid g2" style="gap:10px;margin-bottom:16px">'+
       '<div class="card pad-sm"><div class="tiny up muted mb">AI LÀM</div><p class="sm">'+h(k.aiLam)+'</p></div>'+
@@ -127,9 +127,9 @@ G.VIEWS['chan-dung-nha'] = function(){
     return '<div class="card lift" style="border-color:'+g.c+'33">'+
       '<div class="row" style="gap:9px;margin-bottom:8px">'+
         '<span style="width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-weight:900;background:'+g.c+'22;color:'+g.c+'">'+g.k+'</span>'+
-        '<div><b style="font-size:13px;display:block">'+h(g.short)+'</b><span class="tiny muted">'+h(g.name.split('—')[0])+'</span></div>'+
+        '<div><b style="font-size:14.5px;display:block">'+h(g.short)+'</b><span class="tiny muted">'+h(g.name.split('—')[0])+'</span></div>'+
       '</div>'+
-      '<div class="row" style="gap:8px;margin:10px 0 6px"><b class="mono" style="font-size:19px;color:'+g.c+'">'+lv[i]+'</b><span class="tiny muted">/100</span></div>'+
+      '<div class="row" style="gap:8px;margin:10px 0 6px"><b class="mono" style="font-size:18px;color:'+g.c+'">'+lv[i]+'</b><span class="tiny muted">/100</span></div>'+
       U.bar(lv[i], g.c)+
       '<p class="tiny muted mt" style="line-height:1.55">'+h(g.desc)+'</p>'+
       '<div class="tiny mt" style="color:var(--ink-4);font-style:italic;line-height:1.5">"'+h(g.probe)+'"</div>'+
@@ -161,9 +161,9 @@ G.VIEWS['dinh-vi'] = function(){
     var v = [f.tuchu, 100-f.tuchu, Math.round(f.nhac/6*100), 100-Math.min(95,f.ngay/4),
              f.tier>=4?85:35, f.tier>=5?70:20, Math.round(f.vai/9*100)][i];
     var cl = ['#0B7350','#5140B4','#BE0E16','#0B6675','var(--gita)','#BE0E16','#2A72C6'][i];
-    return '<div class="card lift"><div class="row"><div class="grow"><b style="font-size:14px">'+h(c.ten)+'</b>'+
+    return '<div class="card lift"><div class="row"><div class="grow"><b style="font-size:14.5px">'+h(c.ten)+'</b>'+
       '<p class="tiny muted mt" style="line-height:1.5">Chuẩn: '+h(c.chuan)+'</p></div>'+
-      '<b class="mono" style="font-size:22px;color:'+cl+'">'+Math.round(v)+'</b></div>'+
+      '<b class="mono" style="font-size:21px;color:'+cl+'">'+Math.round(v)+'</b></div>'+
       '<div class="mt">'+U.bar(v,cl)+'</div></div>';
   }).join('') + '</div>';
 
@@ -201,7 +201,7 @@ G.VIEWS['tam-nhin'] = function(){
       '<p class="tiny muted" style="margin-bottom:10px;font-style:italic">'+h(m.g)+'</p>'+
       '<textarea data-vision="'+m.k+'" rows="7" placeholder="Viết bằng lời của chính mình…" '+
       'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:12px;'+
-      'padding:12px;font-size:13px;line-height:1.6;resize:vertical;outline:none">'+h(val)+'</textarea>'+
+      'padding:12px;font-size:14.5px;line-height:1.6;resize:vertical;outline:none">'+h(val)+'</textarea>'+
       '</div>';
   }).join('') + '</div>';
 
@@ -252,7 +252,7 @@ G.VIEWS['hanh-trinh-con'] = function(){
   o += '<div class="card glow mb"><div class="row wrap" style="gap:20px">'+
     U.ring(Math.round(f.ngay/365*100), G.tierOf(f.tier).c, 'NĂM NAY') +
     '<div class="grow" style="min-width:220px"><div class="up muted">ĐANG Ở</div>'+
-    '<h2 style="font-size:24px;font-weight:800;margin:4px 0 6px;color:'+G.tierOf(f.tier).c+'">'+
+    '<h2 style="font-size:26px;font-weight:800;margin:4px 0 6px;color:'+G.tierOf(f.tier).c+'">'+
       h(G.tierOf(f.tier).code+' · '+G.tierOf(f.tier).name)+'</h2>'+
     '<p class="sm dim">'+h(G.tierOf(f.tier).feel)+'</p>'+
     '<p class="sm muted mt">Ngày thứ '+f.ngay+' · '+h(f.hv)+' · '+h(f.lop)+'</p></div></div></div>';
@@ -264,7 +264,7 @@ G.VIEWS['hanh-trinh-con'] = function(){
       '<div class="card '+(cur?'glow':'')+'" style="border-color:'+t.c+(cur?'66':'22')+'">'+
       '<div class="row wrap" style="gap:8px;margin-bottom:8px">'+U.chip(t.code, t.c)+
       (cur?U.chip('ĐANG Ở ĐÂY','var(--gita)',1):'')+'</div>'+
-      '<b style="font-size:15px;display:block;margin-bottom:8px;color:'+t.c+'">'+h(c.ten)+'</b>'+
+      '<b style="font-size:16px;display:block;margin-bottom:8px;color:'+t.c+'">'+h(c.ten)+'</b>'+
       '<div class="mt" style="display:flex;flex-direction:column;gap:9px">'+
         G.fromTo('CON', c.hocVienTuGi, c.hocVienSangGi)+
         G.fromTo('NGƯỜI LỚN', c.phuHuynhTuGi, c.phuHuynhSangGi)+
@@ -317,9 +317,9 @@ G.VIEWS['diem-cham'] = function(){
       '<div class="row wrap" style="gap:10px;margin-bottom:12px">'+
         '<span style="width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-weight:900;'+
         'background:'+d.c+'22;color:'+d.c+'">'+d.no+'</span>'+
-        '<div class="grow" style="min-width:180px"><b style="font-size:15px;display:block">'+h(d.ten)+'</b>'+
+        '<div class="grow" style="min-width:180px"><b style="font-size:16px;display:block">'+h(d.ten)+'</b>'+
         '<span class="tiny muted">'+h(d.khi)+'</span></div>'+
-        '<div style="text-align:right"><b class="mono" style="font-size:20px;color:'+d.c+'">'+d.muc+'</b>'+
+        '<div style="text-align:right"><b class="mono" style="font-size:21px;color:'+d.c+'">'+d.muc+'</b>'+
         '<div class="tiny muted">mức chạm</div></div>'+
       '</div>'+
       '<div class="grid g2" style="gap:12px">'+
@@ -333,7 +333,7 @@ G.VIEWS['diem-cham'] = function(){
       '</div>'+
       '<div class="mt2" style="padding:14px 16px;border-radius:14px;background:'+d.c+'0f;border-left:2px solid '+d.c+'">'+
         '<div class="tiny up" style="color:'+d.c+';margin-bottom:6px">CÂU NÓI ĐÚNG NHỊP</div>'+
-        '<p class="serif" style="font-size:15.5px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(d.cauMo)+'"</p></div>'+
+        '<p class="serif" style="font-size:16px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(d.cauMo)+'"</p></div>'+
       '<div class="sm mt" style="color:var(--ok);display:flex;gap:8px;align-items:flex-start">'+
         '<span style="flex:none;margin-top:3px">'+ic('check','w-3 h-3')+'</span>'+
         '<span>Đạt khi: '+h(d.datKhi)+'</span></div>'+
@@ -351,10 +351,10 @@ G.VIEWS['lo-trinh'] = function(){
     var cur = t.id===f.tier, done = t.id<f.tier;
     return '<div class="card '+(cur?'glow':'')+'" style="border-color:'+t.c+(cur?'66':'22')+';'+(done?'opacity:.8':'')+'">'+
       '<div class="row" style="gap:7px;margin-bottom:8px">'+
-        '<span style="width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-weight:900;font-size:12px;background:'+t.c+'22;color:'+t.c+'">'+t.code+'</span>'+
+        '<span style="width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-weight:900;font-size:12.5px;background:'+t.c+'22;color:'+t.c+'">'+t.code+'</span>'+
         (done?'<span style="color:var(--ok)">'+ic('check','w-4 h-4')+'</span>':'')+
         (cur?U.chip('ĐANG Ở','var(--gita)',1):'')+'</div>'+
-      '<b style="font-size:14px;display:block;color:'+t.c+'">'+h(t.name)+'</b>'+
+      '<b style="font-size:14.5px;display:block;color:'+t.c+'">'+h(t.name)+'</b>'+
       '<p class="tiny muted mt" style="font-style:italic">'+h(t.q)+'</p>'+
       '<div class="mono tiny mt2" style="color:var(--ink-4)">'+t.days+' ngày</div>'+
     '</div>';
@@ -364,7 +364,7 @@ G.VIEWS['lo-trinh'] = function(){
     return '<div class="card lift mb" style="border-color:'+t.c+'2a">'+
       '<div class="row wrap" style="gap:10px;margin-bottom:10px">'+
         U.chip(t.code+' · '+t.name, t.c)+U.chip(t.days+' ngày')+
-        '<span class="serif" style="font-style:italic;color:'+t.c+';font-size:15px">'+h(t.q)+'</span></div>'+
+        '<span class="serif" style="font-style:italic;color:'+t.c+';font-size:16px">'+h(t.q)+'</span></div>'+
       '<div class="grid g2" style="gap:12px">'+
         '<div><div class="tiny up muted mb">MỤC TIÊU CỦA TẦNG</div><p class="sm dim">'+h(t.goal)+'</p></div>'+
         '<div><div class="tiny up muted mb">RANH GIỚI CỦA TẦNG</div><p class="sm dim">'+h(t.note)+'</p></div>'+
@@ -389,7 +389,7 @@ G.VIEWS['gita-map'] = function(){
     return '<div class="card lift" style="border-color:'+g.c+'33">'+
       '<div class="row" style="gap:12px;margin-bottom:12px">'+
         '<span style="width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-weight:900;'+
-        'font-size:24px;background:'+g.c+'22;color:'+g.c+';flex:none">'+g.k+'</span>'+
+        'font-size:26px;background:'+g.c+'22;color:'+g.c+';flex:none">'+g.k+'</span>'+
         '<div><b style="font-size:16px;display:block">'+h(g.name)+'</b>'+
         '<span class="tiny muted">'+h(g.short)+'</span></div></div>'+
       '<p class="sm dim" style="line-height:1.65">'+h(g.desc)+'</p>'+
@@ -519,7 +519,7 @@ G.VIEWS['nhiem-vu'] = function(){
   o += '<div class="card glow mb"><div class="row wrap" style="gap:20px">'+
     U.ring(Math.round(done/list.length*100), '#0B7350', 'HÔM NAY')+
     '<div class="grow" style="min-width:200px"><div class="up muted">VAI ĐANG DÙNG</div>'+
-    '<h2 style="font-size:22px;font-weight:800;margin:4px 0">'+h(G.S.roleObj.n)+'</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin:4px 0">'+h(G.S.roleObj.n)+'</h2>'+
     '<p class="sm dim">'+h(G.S.roleObj.ln)+'</p>'+
     '<p class="sm mt" style="color:var(--gold-ink)">'+done+' / '+list.length+' việc đã xong</p></div></div></div>';
 
@@ -543,7 +543,7 @@ G.VIEWS['nhiem-vu'] = function(){
     return '<div style="margin-bottom:12px"><div class="tiny up muted mb">'+h(r.t)+'</div>'+
       '<input data-journal="'+r.k+'" value="'+h((G.S.journal||{})[r.k]||'')+'" placeholder="'+h(r.p)+'" '+
       'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:11px;'+
-      'padding:10px 13px;font-size:13.5px;outline:none"></div>';
+      'padding:10px 13px;font-size:14.5px;outline:none"></div>';
   }).join('') +
   '<button class="btn pri blk mt" data-act="save-journal">'+ic('check')+'Ghi nhật ký tối nay</button>'+
   '<p class="tiny muted mt" style="text-align:center">Ăn cơm xong là mở sổ — bữa cơm chính là tín hiệu.</p></div>';

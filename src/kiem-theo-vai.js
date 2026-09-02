@@ -137,7 +137,7 @@ G.VIEWS['kiem-theo-vai'] = function(){
   NAV.forEach(function(g){
     o += '<div class="card mt2">'+
       '<div class="row" style="gap:10px;align-items:baseline;flex-wrap:wrap">'+
-        '<b style="font-size:15px">'+h(g.t || g.id)+'</b>'+
+        '<b style="font-size:16px">'+h(g.t || g.id)+'</b>'+
         '<span class="chip">'+((g.items || []).length)+' màn</span></div>'+
       '<div class="mt">'+
       /* Tiêu đề cột là CHỮ THUẦN. U.tbl bọc tiêu đề bằng U.h nên thẻ HTML

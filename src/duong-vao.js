@@ -79,7 +79,7 @@ G.VIEWS['tham-gia'] = function(){
     return '<div class="card mb" style="border-color:'+b.c+'2e">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip(b.ma,b.c)+
       '<span style="color:'+b.c+'">'+ic(b.ic,'w-4 h-4')+'</span>'+
-      '<b style="color:'+b.c+';font-size:15px">'+h(b.ten)+'</b>'+
+      '<b style="color:'+b.c+';font-size:16px">'+h(b.ten)+'</b>'+
       '<span class="tiny muted mono">'+h(b.lau)+'</span></div>'+
       '<div class="grid g2" style="gap:10px;margin-bottom:10px">'+
         the('AI LÀM', b.ai)+ the('LÀM GÌ', b.lam)+
@@ -151,7 +151,7 @@ G.VIEWS['hoc-phi'] = function(){
   o += T.map(function(t){
     return '<div class="card mb" style="border-color:'+t.c+'2e">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip(t.tang,t.c)+
-      '<b style="color:'+t.c+';font-size:15px">'+h(t.ten)+'</b>'+
+      '<b style="color:'+t.c+';font-size:16px">'+h(t.ten)+'</b>'+
       (coGia
         ? '<span class="mono" style="color:'+t.c+';font-weight:800">'+
             Number(t.gia).toLocaleString('vi-VN')+'</span><span class="tiny muted">'+h(t.donVi)+'</span>'
@@ -189,10 +189,10 @@ G.VIEWS['hoc-phi'] = function(){
       '<b class="sm">'+h(k.ten)+'</b><span class="tiny muted mono">'+h(k.tang)+'</span></div>'+
       '<div style="padding:11px 14px;border-radius:12px;background:rgba(81,64,180,.06);border-left:2px solid rgba(81,64,180,.4);margin-bottom:8px">'+
       '<div class="tiny up muted mb">MỞ</div>'+
-      '<p class="serif" style="font-size:14px;font-style:italic;line-height:1.7">'+h('“'+k.mo+'”')+'</p></div>'+
+      '<p class="serif" style="font-size:14.5px;font-style:italic;line-height:1.7">'+h('“'+k.mo+'”')+'</p></div>'+
       '<div style="padding:11px 14px;border-radius:12px;background:rgba(11,115,80,.06);border-left:2px solid rgba(11,115,80,.4);margin-bottom:8px">'+
       '<div class="tiny up muted mb">CHỐT</div>'+
-      '<p class="serif" style="font-size:14px;font-style:italic;line-height:1.7">'+h('“'+k.chot+'”')+'</p></div>'+
+      '<p class="serif" style="font-size:14.5px;font-style:italic;line-height:1.7">'+h('“'+k.chot+'”')+'</p></div>'+
       '<div class="card pad-sm" style="border-color:rgba(248,113,113,.3)">'+
       '<div class="tiny up mb" style="color:var(--bad)">KHÔNG ĐƯỢC LÀM</div>'+U.list(k.khong,'#EF4444')+'</div>'+
       '</div>';

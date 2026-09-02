@@ -96,7 +96,7 @@ G.phacDoModal = function(ma){
   var b = [['NGUYÊN NHÂN CỐT LÕI',p.nguyenNhan,'#BE0E16'],['GIẢI PHÁP THÁO GỠ',p.giaiPhap,'#0B7350'],
     ['VIỆC CỦA NGƯỜI LỚN',p.ph,'var(--gita)'],['VIỆC CỦA COACH',p.coach,'#5140B4'],['ĐÍCH ĐẾN',p.dich,'#0B6675']];
   U.modal('<div class="row wrap" style="gap:7px;margin-bottom:9px">'+U.chip(p.ma)+U.chip(p.nhomTen,'var(--gita)')+'</div>'+
-    '<h2 style="font-size:22px;font-weight:800;margin-bottom:14px">'+h(p.ten)+'</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin-bottom:14px">'+h(p.ten)+'</h2>'+
     b.map(function(x){ return x[1] ? '<div class="card pad-sm mb" style="border-color:'+x[2]+'2a">'+
       '<div class="tiny up mb" style="color:'+x[2]+'">'+x[0]+'</div><p class="sm" style="line-height:1.65">'+h(x[1])+'</p></div>' : ''; }).join('')+
     '<p class="tiny muted mt">Nội dung đủ năm tầng của phác đồ này nằm trong kho máy chủ GITA 365 — mở bằng vai có quyền pro_coach.</p>');
@@ -142,12 +142,12 @@ G.kichBanModal = function(ma){
   var t = G.TIERS.filter(function(x){return x.code===k.tang;})[0] || G.TIERS[0];
   var o = '<div class="row wrap" style="gap:6px;margin-bottom:9px">'+U.chip(k.ma)+U.chip(k.tang+' · '+t.name,t.c)+
     U.chip(k.loai)+(k.phut?U.chip(k.phut+' phút'):'')+'</div>'+
-    '<h2 style="font-size:20px;font-weight:800;line-height:1.3;margin-bottom:6px">'+h(k.ten)+'</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;line-height:1.3;margin-bottom:6px">'+h(k.ten)+'</h2>'+
     '<p class="tiny muted mb">'+h(k.nhom)+(k.ngay?' · Ngày '+h(k.ngay):'')+'</p>';
   if(k.muc) o += '<div class="card pad-sm mb"><div class="tiny up muted mb">MỤC TIÊU BUỔI</div><p class="sm">'+h(k.muc)+'</p></div>';
   if(k.mo) o += '<div class="card pad-sm mb" style="border-color:'+t.c+'40;background:'+t.c+'0d">'+
     '<div class="tiny up mb" style="color:'+t.c+'">CÂU MỞ ĐẦU — đọc đúng nhịp</div>'+
-    '<p class="serif" style="font-size:15px;font-style:italic;line-height:1.65">"'+h(k.mo)+'"</p></div>';
+    '<p class="serif" style="font-size:16px;font-style:italic;line-height:1.65">"'+h(k.mo)+'"</p></div>';
   if(k.chot) o += '<div class="card pad-sm mb" style="border-color:rgba(52,211,153,.3)">'+
     '<div class="tiny up mb" style="color:var(--ok)">CÂU CHỐT</div>'+
     '<p class="sm" style="line-height:1.65">'+h(k.chot)+'</p></div>';
@@ -315,7 +315,7 @@ G.VIEWS['ngon-tu'] = function(){
     return '<div class="card lift mb" style="border-color:'+n.c+'2e">'+
       '<div class="row wrap" style="gap:10px;margin-bottom:10px">'+
         '<span style="width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-weight:900;background:'+n.c+'22;color:'+n.c+'">'+(i+1)+'</span>'+
-        '<div class="grow" style="min-width:190px"><b style="font-size:15.5px;display:block">'+h(n.ten)+'</b>'+
+        '<div class="grow" style="min-width:190px"><b style="font-size:16px;display:block">'+h(n.ten)+'</b>'+
         '<span class="tiny" style="color:'+n.c+'">'+h(n.ky)+'</span></div></div>'+
       '<p class="sm dim" style="line-height:1.65;margin-bottom:12px">'+h(n.muc)+'</p>'+
       '<div class="up mb" style="color:'+n.c+'">MẪU CÂU DÙNG ĐƯỢC NGAY</div>'+
@@ -350,7 +350,7 @@ G.VIEWS['ngon-tu'] = function(){
   o += G.MAUTHOAI.map(function(m){
     return '<div class="card mb" style="border-color:'+m.c+'2e">'+
       '<div class="row wrap" style="gap:8px;margin-bottom:8px">'+U.chip(m.ma,m.c)+U.chip('Tầng '+m.tang)+'</div>'+
-      '<b style="font-size:15px;display:block;margin-bottom:6px">'+h(m.ten)+'</b>'+
+      '<b style="font-size:16px;display:block;margin-bottom:6px">'+h(m.ten)+'</b>'+
       '<p class="sm muted mb" style="line-height:1.6">'+h(m.boi)+'</p>'+
       '<div style="display:flex;flex-direction:column;gap:10px">' + m.thoai.map(function(d){
         var me = d.ai!=='KH' && d.ai!=='HS' && d.ai!=='PH';
@@ -376,7 +376,7 @@ G.VIEWS['tro-ly'] = function(){
 
   o += '<div class="card"><div class="row wrap" style="gap:10px;margin-bottom:14px">'+
     '<input id="aiQ" placeholder="Hỏi bất cứ điều gì về hành trình của nhà mình…" '+
-    'style="flex:1;min-width:220px;background:var(--phu-2);border:1px solid var(--line);border-radius:99px;padding:13px 20px;font-size:14px;outline:none">'+
+    'style="flex:1;min-width:220px;background:var(--phu-2);border:1px solid var(--line);border-radius:99px;padding:13px 20px;font-size:14.5px;outline:none">'+
     '<button class="tbtn" id="micBtn" data-act="mic" aria-label="Nói vào micro" '+
     'style="width:46px;height:46px;border-radius:50%">'+ic('pulse','w-5 h-5')+'</button>'+
     '<button class="btn pri" data-act="ai-ask">'+ic('spark')+'Hỏi</button></div>'+
@@ -432,7 +432,7 @@ G.vaiModal = function(id){
   var v = (G.VANHANH.vaiTro||[]).filter(function(x){return x.id===id;})[0]; if(!v) return;
   var o = '<div class="row wrap" style="gap:7px;margin-bottom:9px">'+U.chip(v.id,'var(--gita)')+U.chip('Khoang '+v.khoang)+
     (v.goc?U.chip('Gốc: '+v.goc):'')+'</div>'+
-    '<h2 style="font-size:22px;font-weight:800;margin-bottom:8px">'+h(v.ten)+'</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin-bottom:8px">'+h(v.ten)+'</h2>'+
     '<p class="serif" style="font-size:16px;font-style:italic;color:var(--gold-2);margin-bottom:14px">'+h(v.cauHoi)+'</p>'+
     '<p class="sm dim mb" style="line-height:1.7">'+h(v.vaiTro)+'</p>'+
     '<div class="up muted mb mt2">VIỆC CỤ THỂ</div>'+U.list(v.viecCuThe,'var(--gita)')+
@@ -468,7 +468,7 @@ G.VIEWS['thoi-quen'] = function(){
     var c = ['#2A72C6','#0B7350','#0B6675','var(--gita)'][i];
     return '<div class="card pad-sm" style="border-color:'+c+'2a">'+
       '<div class="row" style="gap:8px;margin-bottom:7px">'+
-      '<span style="width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-weight:900;font-size:11px;background:'+c+'22;color:'+c+'">'+(i+1)+'</span>'+
+      '<span style="width:28px;height:28px;border-radius:9px;display:grid;place-items:center;font-weight:900;font-size:12.5px;background:'+c+'22;color:'+c+'">'+(i+1)+'</span>'+
       '<b class="sm" style="color:'+c+'">'+h(b.t)+'</b></div>'+
       '<p class="tiny muted" style="line-height:1.6">'+h(b.d)+'</p></div>';
   }).join('') + '</div>';
@@ -485,7 +485,7 @@ G.VIEWS['cu-hich'] = function(){
       '<div class="row wrap" style="gap:7px;margin-bottom:10px">'+U.chip(c.ma,c.c)+U.chip(c.tier)+
       U.chip(c.muc, c.muc==='Cú hích chấn động'?'#BE0E16':(c.muc==='Cú hích lớn'?'#BE0E16':'#2A72C6'))+
       U.chip(c.ngay+' ngày')+'</div>'+
-      '<b style="font-size:16.5px;display:block;margin-bottom:9px;color:'+c.c+'">'+h(c.ten)+'</b>'+
+      '<b style="font-size:16px;display:block;margin-bottom:9px;color:'+c.c+'">'+h(c.ten)+'</b>'+
       '<p class="sm dim" style="line-height:1.65;margin-bottom:12px">'+h(c.hua)+'</p>'+
       '<div style="padding:11px 13px;border-radius:12px;background:var(--phu-2);margin-bottom:12px">'+
         '<span class="tiny up muted">VÌ SAO CÚ HÍCH NÀY MẠNH</span>'+

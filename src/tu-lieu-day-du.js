@@ -118,7 +118,7 @@ noi('referral', function(){
   o += U.sec('BÀN GIAO GIỮA NGƯỜI GIỚI THIỆU VÀ GITA','Bảy bước. Bước sáu là bước làm mất người giới thiệu nhiều nhất.');
   o += '<div class="card mb">' + G.REF_BANGIAO.map(function(b){
     return '<div style="display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line)">'+
-      '<span style="flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:11px;background:rgba(11,115,80,.14);color:#0B7350">'+b.no+'</span>'+
+      '<span style="flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:12.5px;background:rgba(11,115,80,.14);color:#0B7350">'+b.no+'</span>'+
       '<div><b class="sm" style="display:block;margin-bottom:3px">'+h(b.ten)+'</b>'+
       '<span class="tiny muted" style="line-height:1.6">'+h(b.y)+'</span></div></div>';
   }).join('') + '</div>';
@@ -236,7 +236,7 @@ noi('chan-dung-kh', function(){
   o += U.sec('SÁU LUẬT VỀ CHÂN DUNG','Chân dung không phải nhãn dán vĩnh viễn.');
   o += '<div class="card">' + (G.CD_LUAT||[]).map(function(l){
     return '<div style="display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line)">'+
-      '<span style="flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:11px;background:rgba(81,64,180,.14);color:#5140B4">'+l.no+'</span>'+
+      '<span style="flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:12.5px;background:rgba(81,64,180,.14);color:#5140B4">'+l.no+'</span>'+
       '<div><b class="sm" style="display:block;margin-bottom:3px">'+h(l.ten)+'</b>'+
       '<span class="tiny muted" style="line-height:1.6">'+h(l.y)+'</span></div></div>';
   }).join('') + '</div>';
@@ -266,7 +266,7 @@ noi('sach', function(){
       d.chang.map(function(ch){
         return '<div style="padding:10px 0;border-top:1px solid var(--line)">'+
           '<div class="row wrap mb" style="gap:8px">'+
-          '<span style="width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:11px;background:'+d.c+'22;color:'+d.c+'">'+ch.no+'</span>'+
+          '<span style="width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:12.5px;background:'+d.c+'22;color:'+d.c+'">'+ch.no+'</span>'+
           '<b class="sm">'+h(ch.doc)+'</b><span class="tiny muted mono">'+ch.gio+' giờ</span></div>'+
           '<div class="grid g2" style="gap:9px">'+ the('LÀM GÌ SAU KHI ĐỌC', ch.lam)+ the('XONG CHẶNG NÀY KHI', ch.xong)+'</div></div>';
       }).join('') + '</div>';
@@ -289,7 +289,7 @@ noi('sach', function(){
   o += U.sec('PHIÊN BẢN VÀ SỬA TƯ LIỆU','Đổi luật giữa chặng là làm hỏng chặng.');
   o += '<div class="card">' + G.TL_BAOQUAN.map(function(b){
     return '<div style="display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line)">'+
-      '<span style="flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:11px;background:rgba(11,102,117,.14);color:#0B6675">'+b.no+'</span>'+
+      '<span style="flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-weight:900;font-size:12.5px;background:rgba(11,102,117,.14);color:#0B6675">'+b.no+'</span>'+
       '<div><b class="sm" style="display:block;margin-bottom:3px">'+h(b.ten)+'</b>'+
       '<span class="tiny muted" style="line-height:1.6">'+h(b.y)+'</span></div></div>';
   }).join('') + '</div>';

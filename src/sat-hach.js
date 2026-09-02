@@ -188,7 +188,7 @@ function manLamBai(){
      [((b && b.dat) || 70) + '%', 'NGƯỠNG ĐẠT', 'var(--gita)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:22px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 
@@ -222,7 +222,7 @@ function manKetQua(maBai){
      [String(G.shSoLanThi(maBai)), 'LẦN THI', 'var(--gita)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:22px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 
@@ -288,7 +288,7 @@ G.VIEWS['sat-hach'] = function(){
      [String((G.SH_TRUC || []).length), 'TRỤC ĐÁNH GIÁ', 'var(--gita)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:20px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 

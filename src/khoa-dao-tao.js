@@ -115,7 +115,7 @@ G.VIEWS['khoa-dao-tao'] = function(){
      [(G.shCapCuaToi ? (G.shCapCuaToi() === 'C0' ? 'Chưa có' : G.shCapCuaToi()) : '—'), 'CẤP HÀNH NGHỀ', 'var(--gita)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:19px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:18px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 

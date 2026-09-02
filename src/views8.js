@@ -268,7 +268,7 @@ function manKetQua(b, kq){
     '<div class="row wrap" style="gap:20px;align-items:center">'+
     U.ring(kq.diem, n.color, 'trên 100')+
     '<div class="grow" style="min-width:240px">'+
-    '<div class="row mb" style="gap:8px">'+U.dot(n.color)+'<b style="color:'+n.color+';font-size:17px">'+h(n.label)+'</b></div>'+
+    '<div class="row mb" style="gap:8px">'+U.dot(n.color)+'<b style="color:'+n.color+';font-size:18px">'+h(n.label)+'</b></div>'+
     '<p class="sm dim" style="line-height:1.75;margin-bottom:10px">'+h(n.meaning)+'</p>'+
     '<div class="card pad-sm" style="border-color:'+n.color+'33">'+
     '<div class="tiny up mb" style="color:'+n.color+'">VIỆC LÀM NGAY</div>'+
@@ -402,7 +402,7 @@ G.VIEWS['kpi-100'] = function(){
       '<div class="row wrap" style="gap:10px;justify-content:space-between;margin-bottom:9px">'+
       '<div class="row wrap" style="gap:8px">'+
       U.chip('ĐIỂM '+d.no, d.c)+U.chip(d.tang)+
-      '<b style="color:'+d.c+';font-size:15px">'+h(d.ten)+'</b></div>'+
+      '<b style="color:'+d.c+';font-size:16px">'+h(d.ten)+'</b></div>'+
       '<span class="chip" style="color:'+(ok?'#0B7350':'var(--ink-4)')+';border-color:'+(ok?'#0B735055':'var(--line)')+'">'+
       (ok?'ĐÃ QUA':'')+' '+n+'/'+that.length+'</span></div>'+
       '<p class="sm dim" style="line-height:1.7;margin-bottom:10px">'+h(d.mo)+'</p>'+

@@ -176,7 +176,7 @@ G.VIEWS['kho-tong'] = function(){
      [String(moRa) + ' / ' + tongKho, 'ANH CHỊ MỞ ĐƯỢC', khoa ? 'var(--gita-do)' : 'var(--ok)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:24px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:26px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 
@@ -206,7 +206,7 @@ G.VIEWS['kho-tong'] = function(){
 
     o += '<div class="mt2" style="border-left:3px solid '+n.c+';padding-left:14px;margin-top:26px">'+
       '<div class="row" style="gap:9px;align-items:baseline;flex-wrap:wrap">'+
-        '<span class="mono" style="font-size:17px;font-weight:800;color:'+n.c+'">'+h(n.ma)+'</span>'+
+        '<span class="mono" style="font-size:18px;font-weight:800;color:'+n.c+'">'+h(n.ma)+'</span>'+
         '<b style="font-size:16px;flex:1;min-width:220px">'+h(n.ten)+'</b>'+
         '<span class="chip">'+n.kho.length+' kho</span></div>'+
       '<p class="sm dim mt" style="line-height:1.65">'+h(n.mo)+'</p></div>';

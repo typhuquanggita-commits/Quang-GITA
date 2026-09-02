@@ -248,7 +248,7 @@ G.VIEWS['vong-nhac'] = function(){
      [String(d.tre), 'ĐANG TRỄ NHỊP', d.tre ? 'var(--gita-do)' : 'var(--ok)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:22px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 

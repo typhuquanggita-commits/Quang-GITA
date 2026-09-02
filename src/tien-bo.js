@@ -119,11 +119,11 @@ G.VIEWS = G.VIEWS || {};
         '<b style="font-size:26px;color:' + mau + '">' + (x.nay === null ? '—' : x.nay) + '</b>' +
         '<span class="tiny muted"> ' + h(x.donVi) + '</span></div>' +
         '<div><div class="tiny up muted">TUẦN TRƯỚC</div>' +
-        '<b style="font-size:19px;color:var(--ink-3)">' + (x.truoc === null ? '—' : x.truoc) + '</b>' +
+        '<b style="font-size:18px;color:var(--ink-3)">' + (x.truoc === null ? '—' : x.truoc) + '</b>' +
         '<span class="tiny muted"> ' + h(x.donVi) + '</span></div>' +
         (chenh === null ? '' :
           '<div><div class="tiny up muted">CHÊNH LỆCH</div>' +
-          '<b style="font-size:19px;color:' + mau + '">' + (chenh > 0 ? '+' : '') + chenh + '</b></div>') +
+          '<b style="font-size:18px;color:' + mau + '">' + (chenh > 0 ? '+' : '') + chenh + '</b></div>') +
         '</div>' +
         '<p class="tiny muted mb" style="line-height:1.7">' + h(x.y) + '</p>' +
         (loi ? '<div class="card pad-sm" style="border-color:' + mau + '26">' +

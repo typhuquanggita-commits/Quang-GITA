@@ -131,7 +131,7 @@ U.list = function(arr, c){
   if (!Array.isArray(arr)) arr = [];
   return '<ul style="list-style:none;display:flex;flex-direction:column;gap:7px">'+
     (arr||[]).map(function(x){
-      return '<li style="display:flex;gap:9px;font-size:13px;line-height:1.55;color:var(--ink-2)">'+
+      return '<li style="display:flex;gap:9px;font-size:14.5px;line-height:1.55;color:var(--ink-2)">'+
         '<i style="color:'+(c||'var(--gold)')+';flex:none;margin-top:7px;width:5px;height:5px;border-radius:50%;background:currentColor"></i>'+
         '<span>'+U.h(typeof x==='string'?x:(x.ten||x.t||JSON.stringify(x)))+'</span></li>';
     }).join('')+'</ul>';

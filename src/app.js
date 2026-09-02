@@ -183,7 +183,7 @@ G.searchBox = function(ph, key){
     '<span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--ink-4)">'+ic('search','w-4 h-4')+'</span>'+
     '<input data-search="'+h(key)+'" placeholder="'+h(ph)+'" '+
     'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:99px;'+
-    'padding:12px 20px 12px 44px;font-size:13.5px;outline:none"></div></div>';
+    'padding:12px 20px 12px 44px;font-size:14.5px;outline:none"></div></div>';
 };
 G.famTable = function(list){
   return U.tbl(['Gia đình','Tầng','Ngày','Nhắc/tuần','Tự chủ','Vai','Băng','Coach'],
@@ -310,9 +310,9 @@ function gate(){
          '<button class="btn ghost sm mt" data-act="show-accounts" style="width:100%">'+ic('users')+h(G.L('seePw'))+'</button>'+
        '</div>'+
        '<input id="inU" placeholder="name@gita365.vn" autocomplete="username" '+
-       'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none;margin-bottom:8px">'+
+       'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:14.5px;outline:none;margin-bottom:8px">'+
        '<input id="inP" type="password" placeholder="'+h(G.L('pw'))+'" autocomplete="current-password" '+
-       'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:13.5px;outline:none">'+
+       'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:13px;padding:11px 15px;font-size:14.5px;outline:none">'+
        '<button class="btn pri blk mt" data-act="do-login">'+ic('arrow')+h(G.L('login'))+'</button>'+
        '<button class="btn ghost blk mt" data-act="mo-dang-ky">'+ic('plus')+h(G.L('signUp'))+'</button>'+
        '<button class="btn ghost blk mt" data-act="xem-truoc" style="font-size:12.5px">'+h(G.L('heroBtn3'))+'</button>'+
@@ -567,7 +567,7 @@ function rightPanel(){
   if(G.S.rtab==='labon'){
     o += '<div class="rblock"><h4>'+h(G.L('vision'))+'</h4>'+
       /* Câu tầm nhìn chính thức — cùng một nguồn với Cổng vào, sửa một chỗ là đổi cả hai */
-      '<p class="serif" style="font-size:15px;line-height:1.62;color:var(--gita-ink)">'+h(G.L('gateVisionTitle'))+'</p></div>'+
+      '<p class="serif" style="font-size:16px;line-height:1.62;color:var(--gita-ink)">'+h(G.L('gateVisionTitle'))+'</p></div>'+
       '<div class="rblock"><h4>'+h(G.L('mission'))+'</h4>'+
       '<p class="sm" style="line-height:1.65;color:var(--ink-2)">'+h(C.suMenh.big)+'</p>'+
       '<p class="tiny muted mt">'+h(C.suMenh.sub)+'</p></div>'+
@@ -653,7 +653,7 @@ function topBar(){
       'style="color:var(--gita-ink);border-color:var(--gita-vien-1)">'+ic('spark')+'</button>'+
     '<button class="tbtn" data-act="doi-nen" aria-label="Đổi nền sáng tối" title="Đổi nền sáng / tối">'+
       ic(G.NEN==='toi'?'sun':'moon')+'</button>'+
-    '<button class="tbtn" data-act="lang" aria-label="Language" style="font-size:11px;font-weight:800;letter-spacing:.04em">'+
+    '<button class="tbtn" data-act="lang" aria-label="Language" style="font-size:12.5px;font-weight:800;letter-spacing:.04em">'+
       h(G.LANG.toUpperCase())+'</button>'+
     (G.INSTALL ? '<button class="tbtn" data-act="install" aria-label="Cài đặt ứng dụng" style="color:var(--gold-ink);border-color:var(--gita-vien-2)">'+ic('plus')+'</button>' : '')+
     '<button class="tbtn" data-act="toggle-right" aria-label="'+h(G.L('compass'))+'">'+ic('compass')+'</button>'+
@@ -918,7 +918,7 @@ G.xuat = function(ma){
     .then(function(d){
       if(!d || !d.ok) throw new Error(d && d.error || 'Máy chủ từ chối');
       G.SHEET_MOI = { ten:b.ten, url:d.url, luc:new Date().toLocaleString('vi-VN'), ma:maBan };
-      U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:10px">Đã tạo bảng tính trên Drive</h2>'+
+      U.modal('<h2 style="font-size:21px;font-weight:800;margin-bottom:10px">Đã tạo bảng tính trên Drive</h2>'+
         '<p class="sm dim" style="line-height:1.75;margin-bottom:12px">Bảng <b>'+U.h(b.ten)+'</b> · '+b.dong.length+
         ' dòng đã nằm trong thư mục Drive của Admin. Không có tệp nào tải về máy này.</p>'+
         '<div class="card pad-sm mb"><div class="tiny up muted mb">MÃ BẢN</div><p class="sm mono">'+U.h(maBan)+'</p></div>'+
@@ -1087,7 +1087,7 @@ on('[data-sat]', function(el){
   var t = G.tierOf(f.tier);
   U.modal('<div class="row wrap" style="gap:7px;margin-bottom:9px">'+U.chip(t.code+' · '+t.name,t.c)+
     U.chip('Ngày '+f.ngay)+U.chip('Băng '+f.band, G.bandColor(f.band))+'</div>'+
-    '<h2 style="font-size:22px;font-weight:800;margin-bottom:6px">'+h(f.nha)+'</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin-bottom:6px">'+h(f.nha)+'</h2>'+
     '<p class="sm muted mb">'+h(f.hv)+' · '+h(f.lop)+' · Coach '+h(f.coach)+'</p>'+
     '<div class="grid g2" style="gap:10px">'+
     U.stat({k:'MỨC TỰ CHỦ',v:f.tuchu+'%',d:'',c:'#0B7350'})+
@@ -1097,7 +1097,7 @@ on('[data-sat]', function(el){
 });
 on('[data-dscap]', function(el){
   var c = ((G.DAISU && G.DAISU.capDo)||[])[Number(el.getAttribute('data-dscap'))]; if(!c) return;
-  U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:12px">'+h(c.ten)+'</h2>'+
+  U.modal('<h2 style="font-size:21px;font-weight:800;margin-bottom:12px">'+h(c.ten)+'</h2>'+
     '<div class="card pad-sm mb"><div class="tiny up muted mb">ĐIỀU KIỆN</div><p class="sm" style="line-height:1.7">'+h(c.dieuKien)+'</p></div>'+
     (c.quyenLoi?'<div class="up mb" style="color:var(--gold-ink)">QUYỀN LỢI</div>'+U.list(c.quyenLoi):''));
 });
@@ -1378,7 +1378,7 @@ window.addEventListener('appinstalled', function(){
 });
 G.install = function(){
   if(!G.INSTALL){
-    U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:10px">Cài GITA 365 vào máy</h2>'+
+    U.modal('<h2 style="font-size:21px;font-weight:800;margin-bottom:10px">Cài GITA 365 vào máy</h2>'+
       '<p class="sm dim mb" style="line-height:1.7">Cài xong, GITA 365 chạy như một ứng dụng thật: có biểu tượng riêng, mở toàn màn hình, '+
       'và dùng được cả khi không có mạng vì toàn bộ kho tri thức đã nằm trong máy.</p>'+
       '<div class="grid g3" style="gap:12px">'+

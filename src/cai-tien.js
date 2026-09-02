@@ -184,7 +184,7 @@ G.VIEWS = G.VIEWS || {};
       return '<div class="card" style="border-color:' + (t.c || '#888') + '26">' +
         '<div class="row wrap" style="gap:8px;align-items:baseline;margin-bottom:6px">' +
         '<b class="sm" style="color:' + t.c + '">' + h(t.ten || c[0]) + '</b>' +
-        '<b style="margin-left:auto;font-size:20px;color:' + t.c + '">' + c[1].length + '</b></div>' +
+        '<b style="margin-left:auto;font-size:21px;color:' + t.c + '">' + c[1].length + '</b></div>' +
         '<p class="tiny dim" style="line-height:1.7">' + h(t.y || '') + '</p>' +
         (c[1].length ? '<div class="mt">' + c[1].slice(0, 3).map(function (d) {
           var l = loaiCua(d.loai) || {};

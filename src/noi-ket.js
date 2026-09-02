@@ -261,7 +261,7 @@ G.nkBangQT = function(nhom){
   var q = (G.QT_NHOM || []).filter(function(x){ return x.nhom === nhom; })[0];
   if(!q) return '<p class="sm">Chưa có quy trình riêng cho nhóm này.</p>';
   var o = '<div class="tiny up" style="color:var(--gita)">QUY TRÌNH NHÓM ' + h(nhom) + '</div>' +
-    '<h2 style="font-size:20px;font-weight:800;margin:6px 0 10px">' + h(q.ten) + '</h2>' +
+    '<h2 style="font-size:21px;font-weight:800;margin:6px 0 10px">' + h(q.ten) + '</h2>' +
     '<div class="card pad-sm mb" style="border-color:var(--gita)"><p class="sm" style="line-height:1.7">' +
     '<b>Khác bảy bước chung:</b> ' + h(q.khac) + '</p></div>';
   o += (q.buoc || []).map(function(b){
@@ -291,7 +291,7 @@ G.nkBangTL = function(ma){
   var t = (G.TL_GIADINH || []).filter(function(x){ return x.ma === ma; })[0];
   if(!t) return '<p class="sm">Chưa có tài liệu này.</p>';
   var o = '<div class="tiny up" style="color:var(--ok)">TÀI LIỆU PHÁT CHO GIA ĐÌNH · ' + h(t.dai || '') + '</div>' +
-    '<h2 style="font-size:20px;font-weight:800;margin:6px 0 6px">' + h(t.ten) + '</h2>' +
+    '<h2 style="font-size:21px;font-weight:800;margin:6px 0 6px">' + h(t.ten) + '</h2>' +
     '<p class="tiny muted mb">' + h(t.cho || '') + (t.khiNao ? ' · ' + h(t.khiNao) : '') + '</p>' +
     (t.muc ? '<p class="sm mb" style="line-height:1.75">' + h(t.muc) + '</p>' : '');
   o += (t.than || []).map(function(x){

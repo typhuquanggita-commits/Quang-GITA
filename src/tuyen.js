@@ -47,13 +47,13 @@ G.VIEWS['tuyen'] = function(){
   o += '<div class="row wrap mt2" style="gap:12px">'+
     '<div class="card" style="flex:1;min-width:280px;border-left:3px solid var(--ok)">'+
       '<div class="tiny up muted">DÙNG CHUNG</div>'+
-      '<b style="display:block;margin-top:4px;font-size:15px">Năm tầng T1 → T5</b>'+
+      '<b style="display:block;margin-top:4px;font-size:16px">Năm tầng T1 → T5</b>'+
       '<p class="sm mt" style="line-height:1.7">Cả bốn tuyến đi theo cùng năm tầng của GITA365. '+
       'Nhờ vậy ma trận, cổng nghiệm thu, chuẩn thời gian và cách đồng hành dùng lại được nguyên — '+
       'hợp nhất là ghép dữ liệu, không phải viết lại khung.</p></div>'+
     '<div class="card" style="flex:1;min-width:280px;border-left:3px solid var(--gita-do-ink)">'+
       '<div class="tiny up muted">RIÊNG TỪNG TUYẾN</div>'+
-      '<b style="display:block;margin-top:4px;font-size:15px">Tín hiệu vào bốn băng</b>'+
+      '<b style="display:block;margin-top:4px;font-size:16px">Tín hiệu vào bốn băng</b>'+
       '<p class="sm mt" style="line-height:1.7">Bốn băng giữ nguyên tên và nguyên ý nghĩa hành động, '+
       'nhưng mỗi tuyến tự đặt cách đo: SAT365 đo bằng điểm thi thử, GITA365 đo bằng mức tự chủ. '+
       'Tuyến chưa có chuẩn băng thì hệ thống báo trống, KHÔNG mượn tạm băng của GITA365.</p></div>'+

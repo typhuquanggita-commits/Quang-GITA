@@ -198,7 +198,7 @@ G.VIEWS['do-thoi-gian'] = function(){
      [String(diem.diem), 'ĐIỂM ĐANG CÓ', diem.diem ? 'var(--gold-ink)' : 'var(--ink-4)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:22px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 

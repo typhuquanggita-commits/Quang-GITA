@@ -102,7 +102,7 @@ G.VIEWS['referral'] = function(){
     '<div><div class="tiny up muted mb">NGƯỜI TRÌNH BÀY</div><p class="sm"><b>'+h(R.nguoi)+'</b> · '+h(R.donVi)+'</p></div>'+
     '<div><div class="tiny up muted mb">ĐỐI TƯỢNG TRỌNG TÂM</div><p class="sm">'+h(R.doiTuong)+'</p></div>'+
     '</div><p class="tiny muted mt">'+h(R.linhVuc)+'</p>'+
-    '<div class="center mt2"><b style="font-size:17px;color:var(--gold-ink);letter-spacing:.02em">'+h(R.thongDiep)+'</b></div></div>';
+    '<div class="center mt2"><b style="font-size:18px;color:var(--gold-ink);letter-spacing:.02em">'+h(R.thongDiep)+'</b></div></div>';
 
   o += '<div class="grid g4 mb">'+R.bonBuoc.map(function(b,i){
     return '<div class="card pad-sm center"><div class="tiny muted mb">BƯỚC '+(i+1)+'</div><b class="sm">'+h(b)+'</b></div>';
@@ -256,7 +256,7 @@ G.VIEWS['hang-vip'] = function(){
   o += P.hang.map(function(x){
     return '<div class="card mb" style="border-color:'+x.c+'33'+(x.tt>=3?';background:'+x.c+'0a':'')+'">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip(x.ma,x.c)+
-      '<b style="color:'+x.c+';font-size:17px">'+h(x.ten)+'</b></div>'+
+      '<b style="color:'+x.c+';font-size:18px">'+h(x.ten)+'</b></div>'+
       '<div class="tiny up mb" style="color:'+x.c+'">ĐIỀU KIỆN VÀO</div>'+U.list(x.vao,x.c)+
       '<div class="grid g2 mt" style="gap:10px">'+
       '<div class="card pad-sm"><div class="tiny up muted mb">TÀI LIỆU ĐƯỢC MỞ</div><p class="tiny">'+h(x.taiLieu)+'</p></div>'+

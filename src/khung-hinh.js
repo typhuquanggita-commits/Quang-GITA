@@ -94,14 +94,18 @@ var G = window.G || {}; window.G = G;
     var r = '';
     ds.forEach(function (x, i) {
       var y = H - 22 - (i + 1) * (cao + dem) + dem;
-      var rong = 190 + (i * (W - 300) / Math.max(1, n - 1));
+      var rong = 170 + (i * (W - 360) / Math.max(1, n - 1));
       var c = x.c || 'var(--gita)';
       r += '<rect x="60" y="' + y + '" width="' + rong.toFixed(0) + '" height="' + cao +
         '" rx="8" fill="' + c + '" opacity="0.14"/>' +
         '<rect x="60" y="' + y + '" width="4" height="' + cao + '" rx="2" fill="' + c + '"/>' +
         chu(78, y + 26, cat(x.ten, 34), { co: 16, dam: 700, c: c }) +
         chu(46, y + 26, String(i + 1), { co: 15, dam: 700, c: c, giua: true, mo: 0.7 });
-      if (x.phu) r += chu(Number(rong) + 74, y + 26, cat(x.phu, 20), { co: 12.5, mo: 0.62 });
+      /* Nhãn mức neo PHẢI ở mép khung, không neo theo bề rộng thanh:
+         thanh dài nhất cộng nhãn thì vượt khỏi khung và bị cắt mất đuôi —
+         chỉ bậc trên cùng bị, nên đọc mã không thấy, phải nhìn màn. */
+      if (x.phu) r += '<text x="' + (W - 8) + '" y="' + (y + 26) + '" text-anchor="end" ' +
+        'font-size="12.5" fill="currentColor" opacity="0.62">' + h(cat(x.phu, 20)) + '</text>';
       /* Vạch nối bậc dưới lên bậc trên — cái thang phải TRÔNG như nối */
       if (i < n - 1)
         r += '<line x1="62" y1="' + y + '" x2="62" y2="' + (y - dem) +

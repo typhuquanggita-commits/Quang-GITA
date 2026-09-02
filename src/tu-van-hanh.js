@@ -135,7 +135,7 @@ G.VIEWS['tu-van-hanh'] = function(){
     return '<div class="card" style="flex:1;min-width:230px;border-top:3px solid '+m.c+'">'+
       '<div class="row" style="gap:8px;align-items:baseline">'+
         '<b class="mono" style="color:'+m.c+'">'+h(m.ma)+'</b>'+
-        '<b style="flex:1;font-size:14px">'+h(m.ten)+'</b>'+
+        '<b style="flex:1;font-size:14.5px">'+h(m.ten)+'</b>'+
         (m.tuDong ? U.chip('máy tự làm', m.c) : U.chip('cần người', '#BE0E16'))+'</div>'+
       '<p class="sm mt" style="line-height:1.7">'+h(m.y)+'</p>'+
       '<p class="tiny muted mt2" style="line-height:1.6"><b>Ví dụ:</b> '+h(m.vd)+'</p>'+
@@ -168,7 +168,7 @@ G.VIEWS['tu-van-hanh'] = function(){
     return '<div class="card" style="flex:1;min-width:220px;border-top:3px solid '+c+'">'+
       '<div class="row" style="gap:8px;align-items:baseline">'+
         '<b class="mono" style="color:'+c+'">'+h(x.b)+'</b>'+
-        '<b style="flex:1;font-size:14px">'+h(x.ten)+'</b></div>'+
+        '<b style="flex:1;font-size:14.5px">'+h(x.ten)+'</b></div>'+
       (x.may ? U.chip('máy làm', c) : U.chip('người quyết', c))+
       '<p class="sm mt" style="line-height:1.7">'+h(x.lam)+'</p>'+
       '<p class="tiny muted mt2" style="line-height:1.6"><b>Ra:</b> '+h(x.ra)+'</p></div>';
@@ -228,7 +228,7 @@ G.VIEWS['tu-van-hanh'] = function(){
   o += '<div class="row wrap" style="gap:11px">'+ (G.TD_THAT || []).map(function(x){
     return '<div class="card" style="flex:1;min-width:270px;border-left:3px solid var(--gita)">'+
       '<div class="tiny up muted">CHỮ ĐẶT RA</div>'+
-      '<b style="display:block;margin:3px 0 8px;font-size:15px">'+h(x.chu)+'</b>'+
+      '<b style="display:block;margin:3px 0 8px;font-size:16px">'+h(x.chu)+'</b>'+
       '<p class="sm" style="line-height:1.75">'+h(x.that)+'</p>'+
       '<p class="tiny muted mt2" style="line-height:1.6"><b>Đo được:</b> '+h(x.do)+'</p></div>';
   }).join('') +'</div>';

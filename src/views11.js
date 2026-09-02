@@ -363,14 +363,14 @@ G.capTaiKhoan = function(){
 
   U.modal(
     '<div class="center" style="color:var(--gold-ink)">'+ic('check','w-8 h-8')+'</div>'+
-    '<h2 style="font-size:20px;font-weight:800;margin:8px 0 4px;text-align:center">Đã sinh tài khoản</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin:8px 0 4px;text-align:center">Đã sinh tài khoản</h2>'+
     '<p class="sm muted center" style="margin-bottom:14px">Mật khẩu dưới đây hiện đúng một lần. Đóng cửa sổ là không xem lại được.</p>'+
     U.tbl(['Mục','Giá trị'], [
       ['Họ tên', '<b>'+h(ten)+'</b>'],
       ['Tên đăng nhập', '<span class="mono sm">'+h(em)+'</span>'],
       ['Vị trí', U.chip(r.n, r.c)],
       ['Khu vực', '<span class="sm">'+h(nha||'—')+'</span>'],
-      ['Mật khẩu ban đầu', '<span class="mono" style="font-size:15px;color:var(--gold-ink);font-weight:800">'+h(mk)+'</span>']
+      ['Mật khẩu ban đầu', '<span class="mono" style="font-size:16px;color:var(--gold-ink);font-weight:800">'+h(mk)+'</span>']
     ])+
     '<div class="card pad-sm mt" style="border-color:rgba(248,113,113,.4)">'+
     '<p class="tiny" style="line-height:1.65;color:var(--ink-2)"><b>Gửi mật khẩu bằng kênh KHÁC</b> với kênh gửi tên đăng nhập. '+
@@ -445,7 +445,7 @@ G.lamViecTaiKhoan = function(){
   if(u === (G.S.acc && G.S.acc.u)){ bao('Không tự khoá hoặc xoá chính tài khoản mình đang dùng.'); return; }
 
   if(viec === 'xoa'){
-    U.modal('<h2 style="font-size:20px;font-weight:800;margin-bottom:6px;color:#BE0E16">Xoá vĩnh viễn</h2>'+
+    U.modal('<h2 style="font-size:21px;font-weight:800;margin-bottom:6px;color:#BE0E16">Xoá vĩnh viễn</h2>'+
       '<p class="sm" style="line-height:1.7;color:var(--ink-2);margin-bottom:12px">Sắp xoá hẳn <b class="mono">'+h(u)+'</b>. '+
       'Việc này <b>không hoàn lại được</b>. Gõ lại đúng tên đăng nhập để xác nhận.</p>'+
       '<input id="kt_xn" class="inp blk mb" placeholder="'+h(u)+'" autocomplete="off">'+
@@ -526,7 +526,7 @@ G.VIEWS['nhan-dien'] = function(){
   o += U.sec('3 · CHỮ','Hai bộ chữ, nhúng sẵn trong ứng dụng');
   o += U.tbl(['Bộ chữ','Dùng làm gì'], [
     ['<b style="font-family:var(--font)">'+h(N.chu.chinh.ten)+'</b>','<span class="sm">'+h(N.chu.chinh.vai)+'</span>'],
-    ['<b style="font-family:var(--serif);font-size:17px">'+h(N.chu.nhanManh.ten)+'</b>','<span class="sm">'+h(N.chu.nhanManh.vai)+'</span>']
+    ['<b style="font-family:var(--serif);font-size:18px">'+h(N.chu.nhanManh.ten)+'</b>','<span class="sm">'+h(N.chu.nhanManh.vai)+'</span>']
   ]);
   o += '<div class="card mt"><div class="up mb" style="color:var(--ink-4)">LUẬT DÙNG CHỮ</div>'+U.list(N.chu.luat)+'</div>';
 

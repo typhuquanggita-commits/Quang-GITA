@@ -62,7 +62,7 @@ G.moNapGiayPhep = function(){
     return;
   }
   U.modal(
-    '<h2 style="font-size:20px;font-weight:800;margin-bottom:6px">Nạp giấy phép</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin-bottom:6px">Nạp giấy phép</h2>'+
     '<p class="sm muted" style="margin-bottom:14px">Chọn tệp giấy phép Học viện cấp cho máy này. '+
     'Khoá chỉ nằm trong bộ nhớ của phiên làm việc — đóng ứng dụng là mất, không ghi ra đĩa.</p>'+
     '<label class="tiny up muted">TỆP GIẤY PHÉP (.json)</label>'+

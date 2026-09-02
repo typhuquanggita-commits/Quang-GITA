@@ -117,7 +117,7 @@ G.VIEWS['bat-dau'] = function(){
   o += '<div class="card glow mb"><div class="row wrap" style="gap:24px">'+
     U.ring(Math.round(done/list.length*100), 'var(--gita)', 'ĐÃ XONG')+
     '<div class="grow" style="min-width:230px"><div class="up muted">ĐANG ĐI VỚI VAI</div>'+
-    '<h2 style="font-size:22px;font-weight:800;margin:4px 0 6px">'+h(G.S.roleObj.n)+'</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin:4px 0 6px">'+h(G.S.roleObj.n)+'</h2>'+
     '<p class="sm dim">'+h((G.PORTALS[p]||{}).say||'')+'</p></div></div></div>';
 
   if(soDoDuoc)
@@ -137,10 +137,10 @@ G.VIEWS['bat-dau'] = function(){
       ' style="width:34px;height:34px;border-radius:11px;'+
       'border:1.5px solid '+(d?'transparent':'var(--line-2)')+';display:grid;place-items:center;flex:none;'+
       (d?'background:linear-gradient(135deg,var(--ok),#0B7350);color:#04241A':'color:var(--ink-4)')+'">'+
-      (d?ic('check','w-4 h-4'):'<b style="font-size:13px">'+(i+1)+'</b>')+'</'+(oTick?'button':'span')+'>'+
+      (d?ic('check','w-4 h-4'):'<b style="font-size:14.5px">'+(i+1)+'</b>')+'</'+(oTick?'button':'span')+'>'+
       '<div class="grow" style="min-width:220px">'+
         '<div class="row wrap" style="gap:8px;margin-bottom:5px">'+
-        '<b style="font-size:15.5px">'+h(x.t)+'</b>'+U.chip(x.p)+
+        '<b style="font-size:16px">'+h(x.t)+'</b>'+U.chip(x.p)+
         (next?U.chip('BƯỚC TIẾP THEO','var(--gita)',1):'')+
         (dm?U.chip(dm.do, d?'#0B7350':'var(--ink-4)'):U.chip('tự xác nhận'))+'</div>'+
         '<p class="sm dim" style="line-height:1.6">'+h(x.d)+'</p>'+
@@ -153,7 +153,7 @@ G.VIEWS['bat-dau'] = function(){
 
   if(done===list.length)
     o += '<div class="card glow center mt2"><div style="color:var(--gold-ink);margin-bottom:10px">'+ic('crown','w-9 h-9')+'</div>'+
-      '<b style="font-size:17px">Xong năm bước đầu tiên.</b>'+
+      '<b style="font-size:18px">Xong năm bước đầu tiên.</b>'+
       '<p class="sm muted mt" style="max-width:56ch;margin-inline:auto">Từ đây hệ thống không dẫn theo bước nữa — nó dẫn theo nhịp. '+
       'Mỗi ngày một check-in, mỗi tuần một buổi ngồi lại, mỗi 21 ngày một đêm rà đòn bẩy.</p>'+
       '<button class="btn pri mt2" data-go="thoi-quen">Xem nhịp sống của nhà mình '+ic('arrow')+'</button></div>';
@@ -178,7 +178,7 @@ G.VIEWS['dong-hanh'] = function(){
   var o = U.ph({eyebrow:'NHÓM 01 · KHỞI NGUỒN', ic:'heart', grad:1, t:'Người đồng hành',
     lead:'Không phải một trợ lý trả lời cho nhanh. Là chỗ để nói thật khi trong nhà chưa nói được với ai — nghe trước, công nhận, rồi mới dẫn đúng một bước.'});
 
-  o += '<div class="card glow"><b style="font-size:17px;display:block;margin-bottom:4px">Hôm nay nhà mình thế nào?</b>'+
+  o += '<div class="card glow"><b style="font-size:18px;display:block;margin-bottom:4px">Hôm nay nhà mình thế nào?</b>'+
     '<p class="sm muted mb">Không có đáp án đúng. Chọn cái gần nhất với thật.</p>'+
     '<div class="grid g4">' + moods.map(function(m){
       return '<button class="card pad-sm lift '+(cur===m.k?'glow':'')+'" data-mood="'+m.k+'" '+
@@ -189,7 +189,7 @@ G.VIEWS['dong-hanh'] = function(){
   if(cur && traLoi[cur]){
     var r = traLoi[cur];
     o += '<div class="mt2" style="padding:18px 20px;border-radius:16px;background:var(--gita-mo-1);border-left:2px solid var(--gold)">'+
-      '<b class="serif" style="font-size:17px;font-style:italic;color:var(--gold-2);display:block;margin-bottom:8px">'+h(r.t)+'</b>'+
+      '<b class="serif" style="font-size:18px;font-style:italic;color:var(--gold-2);display:block;margin-bottom:8px">'+h(r.t)+'</b>'+
       '<p class="sm" style="line-height:1.7">'+h(r.d)+'</p>'+
       '<button class="btn pri sm mt2" data-go="'+h(r.v)+'">'+h(r.b)+' '+ic('arrow')+'</button></div>';
   }
@@ -240,7 +240,7 @@ G.VIEWS['phan-thuong'] = function(){
     '<div class="grow" style="min-width:250px">'+
       '<div class="up muted">CẤP ĐỘ HIỆN TẠI</div>'+
       '<div class="row" style="gap:10px;align-items:baseline;margin:3px 0 6px">'+
-      '<b style="font-size:24px;color:'+lv.c+'">LV'+lv.lv+' · '+h(lv.ten)+'</b></div>'+
+      '<b style="font-size:26px;color:'+lv.c+'">LV'+lv.lv+' · '+h(lv.ten)+'</b></div>'+
       '<p class="sm dim">'+h(lv.mo)+'</p>'+
       '<p class="sm mt" style="color:var(--gold-ink)"><b class="mono">'+diem.toLocaleString('vi-VN')+'</b> điểm · còn '+
       '<b class="mono">'+(next.diem-diem).toLocaleString('vi-VN')+'</b> điểm để lên <b>'+h(next.ten)+'</b></p>'+
@@ -355,7 +355,7 @@ G.VIEWS['hoa-hong'] = function(){
     return '<div class="card lift" style="border-color:'+c.c+'2e">'+
       '<div class="row" style="gap:8px;margin-bottom:8px">'+
       '<span class="pill" style="background:'+c.c+'22;color:'+c.c+'">CẤP '+c.cap+'</span>'+
-      '<b class="mono grow" style="text-align:right;font-size:24px;color:'+c.c+'">'+c.pct+'%</b></div>'+
+      '<b class="mono grow" style="text-align:right;font-size:26px;color:'+c.c+'">'+c.pct+'%</b></div>'+
       '<b class="sm" style="display:block;margin-bottom:8px;color:'+c.c+'">'+h(c.ten)+'</b>'+
       '<div class="tiny up muted mb">ĐIỀU KIỆN</div>'+
       '<p class="tiny muted" style="line-height:1.55;margin-bottom:9px">'+h(c.dk)+'</p>'+
@@ -395,7 +395,7 @@ G.VIEWS['thuong-hieu'] = function(){
     lead:'Một bảng màu, hai bộ chữ, một giọng nói. Ai cũng dùng được mà không làm hỏng — đó là chuẩn của một bộ nhận diện tốt.'});
 
   o += '<div class="card glow mb"><div class="row wrap" style="gap:24px;align-items:center">'+
-    '<span style="width:96px;height:96px;border-radius:28px;display:grid;place-items:center;font-weight:900;font-size:22px;'+
+    '<span style="width:96px;height:96px;border-radius:28px;display:grid;place-items:center;font-weight:900;font-size:21px;'+
     'background:linear-gradient(135deg,var(--gita),var(--gita-do));color:#1A1006;flex:none;box-shadow:0 18px 46px -14px var(--gita-day)">GITA</span>'+
     '<div class="grow" style="min-width:250px">'+
     '<h2 style="font-size:26px;font-weight:800">'+h(B.ten)+'</h2>'+
@@ -415,7 +415,7 @@ G.VIEWS['thuong-hieu'] = function(){
   o += U.sec('BỘ CHỮ','');
   o += '<div class="grid g2">' + B.chu.map(function(c){
     var serif = c.k.indexOf('Playfair')===0;
-    return '<div class="card"><b style="font-size:15px;display:block;margin-bottom:6px">'+h(c.k)+'</b>'+
+    return '<div class="card"><b style="font-size:16px;display:block;margin-bottom:6px">'+h(c.k)+'</b>'+
       '<p class="sm muted" style="line-height:1.6;margin-bottom:12px">'+h(c.d)+'</p>'+
       '<p class="'+(serif?'serif':'')+'" style="font-size:'+(serif?'19px;font-style:italic':'17px;font-weight:700')+';color:var(--gold-2)">'+h(c.vd)+'</p></div>';
   }).join('') + '</div>';

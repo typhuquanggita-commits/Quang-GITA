@@ -41,7 +41,7 @@ G.VIEWS['tang-quyen'] = function(){
 
   o += U.sec('MA TRẬN QUYỀN · 15 VAI × 21 QUYỀN','Ô sáng là được dùng. Máy chủ luôn kiểm lại trước khi ghi, client chỉ ẩn hiện nút.');
   o += '<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Quyền</th><th>Cấp tối đa</th>'+
-    G.ROLES.map(function(r){ return '<th style="text-align:center;font-size:9px;color:'+r.c+'">'+h(r.id)+'</th>'; }).join('')+
+    G.ROLES.map(function(r){ return '<th style="text-align:center;font-size:10.5px;color:'+r.c+'">'+h(r.id)+'</th>'; }).join('')+
     '</tr></thead><tbody>' + perms.map(function(p){
       var lv = G.PERM[p];
       return '<tr><td><span class="mono sm">'+h(p)+'</span></td>'+
@@ -128,7 +128,7 @@ G.VIEWS['vong-doi-tk'] = function(){
       '<b>'+h(y.ten)+'</b><span class="mono tiny muted">'+h(y.u)+'</span>'+
       U.chip('Lần '+y.lan, ba?'#BE0E16':'var(--gita)')+
       '<span class="tiny muted mono">'+h(y.ngay)+'</span></div>'+
-      '<p class="serif" style="font-size:15px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(y.ly)+'"</p>'+
+      '<p class="serif" style="font-size:16px;font-style:italic;line-height:1.6;color:var(--ink)">"'+h(y.ly)+'"</p>'+
       '<div class="mt2" style="padding:11px 13px;border-radius:12px;background:var(--phu-2)">'+
       '<span class="tiny up muted">ĐỀ XUẤT CỦA HỆ THỐNG</span><p class="sm mt">'+h(y.dx)+'</p></div>'+
       '<div class="row mt2" style="gap:8px">'+
@@ -208,7 +208,7 @@ G.VIEWS['dau-mat'] = function(){
 
   o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
     '<div class="row"><span style="color:var(--gold-ink)">'+ic('lock','w-4 h-4')+'</span><b>Cấu trúc mã</b></div>'+
-    '<p class="mono mt" style="font-size:15px;color:var(--gold-2);letter-spacing:.04em">'+h(D.cauTruc)+'</p></div>';
+    '<p class="mono mt" style="font-size:16px;color:var(--gold-2);letter-spacing:.04em">'+h(D.cauTruc)+'</p></div>';
 
   o += U.sec('NĂM LỚP MÃ','Xoá được lớp này vẫn còn lớp kia — muốn xoá sạch phải gõ lại toàn bộ tài liệu');
   o += '<div class="grid g2">' + D.lop.map(function(l,i){
@@ -223,7 +223,7 @@ G.VIEWS['dau-mat'] = function(){
   o += '<div class="card">'+
     '<textarea id="quetVan" rows="5" placeholder="Dán đoạn văn bản nghi ngờ bị rò ra ngoài…" '+
     'style="width:100%;background:var(--phu-2);border:1px solid var(--line);border-radius:12px;'+
-    'padding:12px;font-size:13px;line-height:1.6;resize:vertical;outline:none"></textarea>'+
+    'padding:12px;font-size:14.5px;line-height:1.6;resize:vertical;outline:none"></textarea>'+
     '<button class="btn pri mt" data-act="quet-dau">'+ic('search')+'Quét mật mã kín</button>'+
     '<div id="quetKQ" class="mt2"></div>'+
     '<p class="tiny muted mt">'+h(D.quet)+'</p></div>';
@@ -551,7 +551,7 @@ function manKetQua(b, kq){
     '<div class="row wrap" style="gap:20px;align-items:center">'+
     U.ring(kq.diem, n.color, 'trên 100')+
     '<div class="grow" style="min-width:240px">'+
-    '<div class="row mb" style="gap:8px">'+U.dot(n.color)+'<b style="color:'+n.color+';font-size:17px">'+h(n.label)+'</b></div>'+
+    '<div class="row mb" style="gap:8px">'+U.dot(n.color)+'<b style="color:'+n.color+';font-size:18px">'+h(n.label)+'</b></div>'+
     '<p class="sm dim" style="line-height:1.75;margin-bottom:10px">'+h(n.meaning)+'</p>'+
     '<div class="card pad-sm" style="border-color:'+n.color+'33">'+
     '<div class="tiny up mb" style="color:'+n.color+'">VIỆC LÀM NGAY</div>'+
@@ -685,7 +685,7 @@ G.VIEWS['kpi-100'] = function(){
       '<div class="row wrap" style="gap:10px;justify-content:space-between;margin-bottom:9px">'+
       '<div class="row wrap" style="gap:8px">'+
       U.chip('ĐIỂM '+d.no, d.c)+U.chip(d.tang)+
-      '<b style="color:'+d.c+';font-size:15px">'+h(d.ten)+'</b></div>'+
+      '<b style="color:'+d.c+';font-size:16px">'+h(d.ten)+'</b></div>'+
       '<span class="chip" style="color:'+(ok?'#0B7350':'var(--ink-4)')+';border-color:'+(ok?'#0B735055':'var(--line)')+'">'+
       (ok?'ĐÃ QUA':'')+' '+n+'/'+that.length+'</span></div>'+
       '<p class="sm dim" style="line-height:1.7;margin-bottom:10px">'+h(d.mo)+'</p>'+
@@ -895,7 +895,7 @@ G.VIEWS['referral'] = function(){
     '<div><div class="tiny up muted mb">NGƯỜI TRÌNH BÀY</div><p class="sm"><b>'+h(R.nguoi)+'</b> · '+h(R.donVi)+'</p></div>'+
     '<div><div class="tiny up muted mb">ĐỐI TƯỢNG TRỌNG TÂM</div><p class="sm">'+h(R.doiTuong)+'</p></div>'+
     '</div><p class="tiny muted mt">'+h(R.linhVuc)+'</p>'+
-    '<div class="center mt2"><b style="font-size:17px;color:var(--gold-ink);letter-spacing:.02em">'+h(R.thongDiep)+'</b></div></div>';
+    '<div class="center mt2"><b style="font-size:18px;color:var(--gold-ink);letter-spacing:.02em">'+h(R.thongDiep)+'</b></div></div>';
 
   o += '<div class="grid g4 mb">'+R.bonBuoc.map(function(b,i){
     return '<div class="card pad-sm center"><div class="tiny muted mb">BƯỚC '+(i+1)+'</div><b class="sm">'+h(b)+'</b></div>';
@@ -1049,7 +1049,7 @@ G.VIEWS['hang-vip'] = function(){
   o += P.hang.map(function(x){
     return '<div class="card mb" style="border-color:'+x.c+'33'+(x.tt>=3?';background:'+x.c+'0a':'')+'">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip(x.ma,x.c)+
-      '<b style="color:'+x.c+';font-size:17px">'+h(x.ten)+'</b></div>'+
+      '<b style="color:'+x.c+';font-size:18px">'+h(x.ten)+'</b></div>'+
       '<div class="tiny up mb" style="color:'+x.c+'">ĐIỀU KIỆN VÀO</div>'+U.list(x.vao,x.c)+
       '<div class="grid g2 mt" style="gap:10px">'+
       '<div class="card pad-sm"><div class="tiny up muted mb">TÀI LIỆU ĐƯỢC MỞ</div><p class="tiny">'+h(x.taiLieu)+'</p></div>'+
@@ -1299,7 +1299,7 @@ G.VIEWS['phuong-phap'] = function(){
     o += P.nhom.map(function(n){
       return '<div class="card mb" style="border-color:'+n.c+'2a">'+
         '<div class="row wrap mb" style="gap:8px">'+U.chip(n.ma,n.c)+
-        '<b style="color:'+n.c+';font-size:15px">'+h(n.ten)+'</b></div>'+
+        '<b style="color:'+n.c+';font-size:16px">'+h(n.ten)+'</b></div>'+
         '<p class="tiny muted mb">'+h(n.doc)+'</p>'+
         '<div class="card pad-sm mb" style="border-color:'+n.c+'33"><div class="tiny up mb" style="color:'+n.c+'">NGUYÊN TẮC</div>'+
         '<p class="sm">'+h(n.nguyenTac)+'</p></div>'+
@@ -1362,7 +1362,7 @@ G.VIEWS['hoso-vip'] = function(){
   o += H.phan.map(function(p){
     return '<div class="card mb" style="border-color:'+p.c+'2a">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip('PHẦN '+p.no,p.c)+
-      '<b style="color:'+p.c+';font-size:15px">'+h(p.ten)+'</b>'+
+      '<b style="color:'+p.c+';font-size:16px">'+h(p.ten)+'</b>'+
       '<span class="tiny muted">'+h(p.sach)+'</span></div>'+
       U.tbl(['Trường','','Ghi gì'], p.truong.map(function(t){
         return ['<b class="sm">'+h(t.t)+'</b>',
@@ -1409,7 +1409,7 @@ G.VIEWS['chuyen-doi'] = function(){
     return '<div class="card mb" style="border-color:'+x.c+'2a">'+
       '<div class="row wrap" style="gap:8px;justify-content:space-between;margin-bottom:10px">'+
       '<div class="row wrap" style="gap:8px">'+U.chip(x.ma,x.c)+
-      '<b style="color:'+x.c+';font-size:15px">'+h(x.ten)+'</b></div>'+
+      '<b style="color:'+x.c+';font-size:16px">'+h(x.ten)+'</b></div>'+
       '<span class="tiny" style="color:'+x.c+'">'+h(x.ty)+'</span></div>'+
       U.ba(x.tu, x.den, 'TỪ', 'ĐẾN')+
       '<div class="grid g2 mt" style="gap:10px">'+
@@ -1693,7 +1693,7 @@ G.VIEWS['chieu-sau'] = function(){
     return '<div class="card" style="flex:1;min-width:200px;border-top:3px solid '+c.mau+'">'+
       '<div class="row" style="gap:8px;align-items:baseline">'+
         '<b class="mono" style="color:'+c.mau+'">'+h(c.ma)+'</b>'+
-        '<b style="flex:1;font-size:14px">'+h(c.ten)+'</b></div>'+
+        '<b style="flex:1;font-size:14.5px">'+h(c.ten)+'</b></div>'+
       '<p class="sm mt" style="line-height:1.65">'+h(c.sau)+'</p></div>';
   }).join('') +'</div>';
 
@@ -1786,7 +1786,7 @@ G.sauModal = function(id){
   var BC = G.SAU_BOICANH || [];
 
   var o = '<div class="tiny up muted">'+h(id)+'</div>'+
-    '<h3 style="font-size:19px;font-weight:800;margin:4px 0 12px">'+h(m.title || id)+'</h3>';
+    '<h3 style="font-size:18px;font-weight:800;margin:4px 0 12px">'+h(m.title || id)+'</h3>';
 
   o += '<div class="row wrap mb" style="gap:9px">'+
     (m.tiers||[]).map(function(t){ return U.chip(t); }).join('')+
@@ -1810,7 +1810,7 @@ G.sauModal = function(id){
     var l = r.c && r.c[c.ma]; if(!l) return;
     o += '<div class="card mt2" style="border-left:3px solid '+c.mau+'">'+
       '<div class="row" style="gap:9px;align-items:baseline;flex-wrap:wrap">'+
-        '<b class="mono" style="color:'+c.mau+';font-size:15px">'+h(c.ma)+'</b>'+
+        '<b class="mono" style="color:'+c.mau+';font-size:16px">'+h(c.ma)+'</b>'+
         '<b style="flex:1;min-width:140px">'+h(c.ten)+'</b></div>'+
       '<p class="sm mt" style="line-height:1.7"><b style="color:var(--ok)">Làm được:</b> '+h(l.lam)+'</p>'+
       '<p class="sm mt" style="line-height:1.7;color:var(--gita-do-ink)"><b>Chưa làm được:</b> '+h(l.chua)+'</p>'+
@@ -1978,7 +1978,7 @@ G.VIEWS['ma-tran-bang'] = function(){
   o += '<div class="grid g2 mb">'+ G.MT_BANG.map(function(b){
     return '<div class="card" style="border-color:'+b.c+'33">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip(b.ma,b.c)+
-      '<b style="color:'+b.c+';font-size:15px">'+h(b.ten)+'</b>'+
+      '<b style="color:'+b.c+';font-size:16px">'+h(b.ten)+'</b>'+
       '<span class="tiny muted">'+h(b.tyLe)+'</span></div>'+
       '<p class="sm dim mb" style="line-height:1.65">'+h(b.y)+'</p>'+
       '<div class="grid g2" style="gap:9px">'+
@@ -2068,7 +2068,7 @@ G.VIEWS['ma-tran-bang'] = function(){
   o += '<div class="card">' + (G.MT_BANG_LUAT||[]).map(function(l){
     return '<div style="display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line)">'+
       '<span style="flex:none;width:26px;height:26px;border-radius:9px;display:grid;place-items:center;'+
-      'font-weight:900;font-size:12px;background:rgba(11,102,117,.14);color:#0B6675">'+l.no+'</span>'+
+      'font-weight:900;font-size:12.5px;background:rgba(11,102,117,.14);color:#0B6675">'+l.no+'</span>'+
       '<div><b class="sm" style="display:block;margin-bottom:3px">'+h(l.ten)+'</b>'+
       '<span class="tiny muted" style="line-height:1.6">'+h(l.y)+'</span></div></div>';
   }).join('') + '</div>';
@@ -2528,13 +2528,13 @@ G.VIEWS['tuyen'] = function(){
   o += '<div class="row wrap mt2" style="gap:12px">'+
     '<div class="card" style="flex:1;min-width:280px;border-left:3px solid var(--ok)">'+
       '<div class="tiny up muted">DÙNG CHUNG</div>'+
-      '<b style="display:block;margin-top:4px;font-size:15px">Năm tầng T1 → T5</b>'+
+      '<b style="display:block;margin-top:4px;font-size:16px">Năm tầng T1 → T5</b>'+
       '<p class="sm mt" style="line-height:1.7">Cả bốn tuyến đi theo cùng năm tầng của GITA365. '+
       'Nhờ vậy ma trận, cổng nghiệm thu, chuẩn thời gian và cách đồng hành dùng lại được nguyên — '+
       'hợp nhất là ghép dữ liệu, không phải viết lại khung.</p></div>'+
     '<div class="card" style="flex:1;min-width:280px;border-left:3px solid var(--gita-do-ink)">'+
       '<div class="tiny up muted">RIÊNG TỪNG TUYẾN</div>'+
-      '<b style="display:block;margin-top:4px;font-size:15px">Tín hiệu vào bốn băng</b>'+
+      '<b style="display:block;margin-top:4px;font-size:16px">Tín hiệu vào bốn băng</b>'+
       '<p class="sm mt" style="line-height:1.7">Bốn băng giữ nguyên tên và nguyên ý nghĩa hành động, '+
       'nhưng mỗi tuyến tự đặt cách đo: SAT365 đo bằng điểm thi thử, GITA365 đo bằng mức tự chủ. '+
       'Tuyến chưa có chuẩn băng thì hệ thống báo trống, KHÔNG mượn tạm băng của GITA365.</p></div>'+
@@ -2787,7 +2787,7 @@ G.VIEWS['tu-van-hanh'] = function(){
     return '<div class="card" style="flex:1;min-width:230px;border-top:3px solid '+m.c+'">'+
       '<div class="row" style="gap:8px;align-items:baseline">'+
         '<b class="mono" style="color:'+m.c+'">'+h(m.ma)+'</b>'+
-        '<b style="flex:1;font-size:14px">'+h(m.ten)+'</b>'+
+        '<b style="flex:1;font-size:14.5px">'+h(m.ten)+'</b>'+
         (m.tuDong ? U.chip('máy tự làm', m.c) : U.chip('cần người', '#BE0E16'))+'</div>'+
       '<p class="sm mt" style="line-height:1.7">'+h(m.y)+'</p>'+
       '<p class="tiny muted mt2" style="line-height:1.6"><b>Ví dụ:</b> '+h(m.vd)+'</p>'+
@@ -2820,7 +2820,7 @@ G.VIEWS['tu-van-hanh'] = function(){
     return '<div class="card" style="flex:1;min-width:220px;border-top:3px solid '+c+'">'+
       '<div class="row" style="gap:8px;align-items:baseline">'+
         '<b class="mono" style="color:'+c+'">'+h(x.b)+'</b>'+
-        '<b style="flex:1;font-size:14px">'+h(x.ten)+'</b></div>'+
+        '<b style="flex:1;font-size:14.5px">'+h(x.ten)+'</b></div>'+
       (x.may ? U.chip('máy làm', c) : U.chip('người quyết', c))+
       '<p class="sm mt" style="line-height:1.7">'+h(x.lam)+'</p>'+
       '<p class="tiny muted mt2" style="line-height:1.6"><b>Ra:</b> '+h(x.ra)+'</p></div>';
@@ -2880,7 +2880,7 @@ G.VIEWS['tu-van-hanh'] = function(){
   o += '<div class="row wrap" style="gap:11px">'+ (G.TD_THAT || []).map(function(x){
     return '<div class="card" style="flex:1;min-width:270px;border-left:3px solid var(--gita)">'+
       '<div class="tiny up muted">CHỮ ĐẶT RA</div>'+
-      '<b style="display:block;margin:3px 0 8px;font-size:15px">'+h(x.chu)+'</b>'+
+      '<b style="display:block;margin:3px 0 8px;font-size:16px">'+h(x.chu)+'</b>'+
       '<p class="sm" style="line-height:1.75">'+h(x.that)+'</p>'+
       '<p class="tiny muted mt2" style="line-height:1.6"><b>Đo được:</b> '+h(x.do)+'</p></div>';
   }).join('') +'</div>';
@@ -3024,7 +3024,7 @@ G.VIEWS['quy-trinh-toan-he'] = function(){
   NAV.forEach(function(g){
     o += '<div class="card mt2">'+
       '<div class="row" style="gap:10px;align-items:baseline;flex-wrap:wrap">'+
-        '<b style="font-size:15px">'+h(g.t || g.id)+'</b>'+
+        '<b style="font-size:16px">'+h(g.t || g.id)+'</b>'+
         '<span class="chip">'+((g.items || []).length)+' màn</span></div>'+
       '<div class="mt">'+
       U.tbl(['Màn','Làm gì','Quyền','Vai thấp nhất mở được','Trong luồng'],
@@ -3220,7 +3220,7 @@ G.VIEWS['kiem-theo-vai'] = function(){
   NAV.forEach(function(g){
     o += '<div class="card mt2">'+
       '<div class="row" style="gap:10px;align-items:baseline;flex-wrap:wrap">'+
-        '<b style="font-size:15px">'+h(g.t || g.id)+'</b>'+
+        '<b style="font-size:16px">'+h(g.t || g.id)+'</b>'+
         '<span class="chip">'+((g.items || []).length)+' màn</span></div>'+
       '<div class="mt">'+
       /* Tiêu đề cột là CHỮ THUẦN. U.tbl bọc tiêu đề bằng U.h nên thẻ HTML
@@ -3845,7 +3845,7 @@ G.VIEWS = G.VIEWS || {};
       return '<div class="card" style="border-color:' + (t.c || '#888') + '26">' +
         '<div class="row wrap" style="gap:8px;align-items:baseline;margin-bottom:6px">' +
         '<b class="sm" style="color:' + t.c + '">' + h(t.ten || c[0]) + '</b>' +
-        '<b style="margin-left:auto;font-size:20px;color:' + t.c + '">' + c[1].length + '</b></div>' +
+        '<b style="margin-left:auto;font-size:21px;color:' + t.c + '">' + c[1].length + '</b></div>' +
         '<p class="tiny dim" style="line-height:1.7">' + h(t.y || '') + '</p>' +
         (c[1].length ? '<div class="mt">' + c[1].slice(0, 3).map(function (d) {
           var l = loaiCua(d.loai) || {};

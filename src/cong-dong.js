@@ -55,7 +55,7 @@ G.cdBang = function(){
     o += '<div class="card mt2" style="border-left:3px solid '+k.c+'">'+
       '<div class="row" style="gap:10px;align-items:baseline;flex-wrap:wrap">'+
         '<span style="color:'+k.c+'">'+ic(k.ic,'w-4 h-4')+'</span>'+
-        '<b style="flex:1;min-width:180px;font-size:15px">'+h(k.ten)+'</b>'+
+        '<b style="flex:1;min-width:180px;font-size:16px">'+h(k.ten)+'</b>'+
         U.chip(k.nen)+U.chip(k.loai, k.c)+'</div>'+
       '<p class="sm mt" style="line-height:1.75">'+h(k.vaiTro)+'</p>'+
       '<p class="sm muted mt"><b>Cho ai:</b> '+h(k.ai)+'</p>'+
@@ -78,7 +78,7 @@ G.cdBang = function(){
       return '<div class="row'+(i ? ' mt2' : '')+'" style="gap:11px;align-items:flex-start">'+
         '<span style="width:26px;height:26px;flex:none;border-radius:9px;display:flex;'+
           'align-items:center;justify-content:center;background:var(--gita)18;color:var(--gita);'+
-          'font-weight:700;font-size:13px">'+h(x.b)+'</span>'+
+          'font-weight:700;font-size:14.5px">'+h(x.b)+'</span>'+
         '<div style="flex:1"><b class="sm">'+h(x.ten)+'</b>'+
           '<span class="tiny muted"> · '+h(x.noi)+'</span>'+
           '<p class="sm mt" style="line-height:1.7">'+h(x.lam)+'</p>'+

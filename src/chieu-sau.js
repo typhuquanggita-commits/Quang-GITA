@@ -160,7 +160,7 @@ G.VIEWS['chieu-sau'] = function(){
     return '<div class="card" style="flex:1;min-width:200px;border-top:3px solid '+c.mau+'">'+
       '<div class="row" style="gap:8px;align-items:baseline">'+
         '<b class="mono" style="color:'+c.mau+'">'+h(c.ma)+'</b>'+
-        '<b style="flex:1;font-size:14px">'+h(c.ten)+'</b></div>'+
+        '<b style="flex:1;font-size:14.5px">'+h(c.ten)+'</b></div>'+
       '<p class="sm mt" style="line-height:1.65">'+h(c.sau)+'</p></div>';
   }).join('') +'</div>';
 
@@ -253,7 +253,7 @@ G.sauModal = function(id){
   var BC = G.SAU_BOICANH || [];
 
   var o = '<div class="tiny up muted">'+h(id)+'</div>'+
-    '<h3 style="font-size:19px;font-weight:800;margin:4px 0 12px">'+h(m.title || id)+'</h3>';
+    '<h3 style="font-size:18px;font-weight:800;margin:4px 0 12px">'+h(m.title || id)+'</h3>';
 
   o += '<div class="row wrap mb" style="gap:9px">'+
     (m.tiers||[]).map(function(t){ return U.chip(t); }).join('')+
@@ -277,7 +277,7 @@ G.sauModal = function(id){
     var l = r.c && r.c[c.ma]; if(!l) return;
     o += '<div class="card mt2" style="border-left:3px solid '+c.mau+'">'+
       '<div class="row" style="gap:9px;align-items:baseline;flex-wrap:wrap">'+
-        '<b class="mono" style="color:'+c.mau+';font-size:15px">'+h(c.ma)+'</b>'+
+        '<b class="mono" style="color:'+c.mau+';font-size:16px">'+h(c.ma)+'</b>'+
         '<b style="flex:1;min-width:140px">'+h(c.ten)+'</b></div>'+
       '<p class="sm mt" style="line-height:1.7"><b style="color:var(--ok)">Làm được:</b> '+h(l.lam)+'</p>'+
       '<p class="sm mt" style="line-height:1.7;color:var(--gita-do-ink)"><b>Chưa làm được:</b> '+h(l.chua)+'</p>'+

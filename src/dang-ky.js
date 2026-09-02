@@ -124,7 +124,7 @@ G.moNhapOTP = function(email, thongBao){
     '<input type="hidden" id="otp_email" value="'+h(email)+'">'+
     '<label class="tiny up muted">MÃ SÁU SỐ</label>'+
     '<input id="otp_ma" inputmode="numeric" maxlength="6" placeholder="------" '+
-      'class="inp blk mb mono" style="letter-spacing:.5em;text-align:center;font-size:20px">'+
+      'class="inp blk mb mono" style="letter-spacing:.5em;text-align:center;font-size:21px">'+
     '<div id="otp_loi" class="tiny mb" style="color:#BE0E16;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="gui-otp">Xác nhận</button>'+
     '<button class="btn ghost blk mt" data-act="xin-lai-otp" style="font-size:12.5px">Chưa nhận được thư — gửi lại mã</button>'+
@@ -216,11 +216,11 @@ G.moDangKyXong = function(ma, email){
   try{ history.replaceState(null,'',location.pathname); }catch(e){}
   U().modal(
     '<div class="center" style="padding:6px 0 2px;color:var(--gold-ink)">'+G.U.ic('crown','w-9 h-9')+'</div>'+
-    '<h2 style="font-size:22px;font-weight:800;margin:8px 0 4px;text-align:center">Đăng ký thành công</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin:8px 0 4px;text-align:center">Đăng ký thành công</h2>'+
     '<p class="sm muted center" style="margin-bottom:16px">Gia đình mình đã có mặt trong hệ sinh thái GITA 365.</p>'+
     '<div class="card center" style="padding:20px;border-color:var(--gita-vien-2);background:var(--gita-mo-1)">'+
       '<div class="tiny up muted mb">MÃ SỐ KHÁCH HÀNG</div>'+
-      '<div class="mono" style="font-size:22px;font-weight:800;color:var(--gold-ink);letter-spacing:.06em">'+h(ma||'—')+'</div>'+
+      '<div class="mono" style="font-size:21px;font-weight:800;color:var(--gold-ink);letter-spacing:.06em">'+h(ma||'—')+'</div>'+
       '<p class="tiny muted mt">Mã này đi theo gia đình suốt năm tầng. Giữ lại khi cần liên hệ Học viện.</p></div>'+
     '<div class="card pad-sm mt"><div class="tiny up muted mb">BƯỚC TIẾP THEO</div>'+
     '<p class="tiny" style="line-height:1.65;color:var(--ink-2)">Đăng nhập bằng '+h(email||'email vừa đăng ký')+

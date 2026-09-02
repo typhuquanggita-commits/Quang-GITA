@@ -67,7 +67,7 @@ G.VIEWS['phuong-phap'] = function(){
     o += P.nhom.map(function(n){
       return '<div class="card mb" style="border-color:'+n.c+'2a">'+
         '<div class="row wrap mb" style="gap:8px">'+U.chip(n.ma,n.c)+
-        '<b style="color:'+n.c+';font-size:15px">'+h(n.ten)+'</b></div>'+
+        '<b style="color:'+n.c+';font-size:16px">'+h(n.ten)+'</b></div>'+
         '<p class="tiny muted mb">'+h(n.doc)+'</p>'+
         '<div class="card pad-sm mb" style="border-color:'+n.c+'33"><div class="tiny up mb" style="color:'+n.c+'">NGUYÊN TẮC</div>'+
         '<p class="sm">'+h(n.nguyenTac)+'</p></div>'+
@@ -130,7 +130,7 @@ G.VIEWS['hoso-vip'] = function(){
   o += H.phan.map(function(p){
     return '<div class="card mb" style="border-color:'+p.c+'2a">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip('PHẦN '+p.no,p.c)+
-      '<b style="color:'+p.c+';font-size:15px">'+h(p.ten)+'</b>'+
+      '<b style="color:'+p.c+';font-size:16px">'+h(p.ten)+'</b>'+
       '<span class="tiny muted">'+h(p.sach)+'</span></div>'+
       U.tbl(['Trường','','Ghi gì'], p.truong.map(function(t){
         return ['<b class="sm">'+h(t.t)+'</b>',
@@ -177,7 +177,7 @@ G.VIEWS['chuyen-doi'] = function(){
     return '<div class="card mb" style="border-color:'+x.c+'2a">'+
       '<div class="row wrap" style="gap:8px;justify-content:space-between;margin-bottom:10px">'+
       '<div class="row wrap" style="gap:8px">'+U.chip(x.ma,x.c)+
-      '<b style="color:'+x.c+';font-size:15px">'+h(x.ten)+'</b></div>'+
+      '<b style="color:'+x.c+';font-size:16px">'+h(x.ten)+'</b></div>'+
       '<span class="tiny" style="color:'+x.c+'">'+h(x.ty)+'</span></div>'+
       U.ba(x.tu, x.den, 'TỪ', 'ĐẾN')+
       '<div class="grid g2 mt" style="gap:10px">'+

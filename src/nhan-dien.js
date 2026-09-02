@@ -132,8 +132,8 @@ G.VIEWS['so-tay-nhan-dien'] = function(){
   S.chuong.forEach(function(c){
     o += '<div class="card mt2" id="sotay-'+h(c.so)+'" style="border-color:var(--gita-vien-1)">'+
       '<div class="row" style="gap:10px;align-items:baseline;flex-wrap:wrap">'+
-        '<span class="mono" style="font-size:22px;font-weight:800;color:var(--gita)">'+h(c.so)+'</span>'+
-        '<b style="font-size:17px;flex:1;min-width:200px">'+h(c.ten)+'</b>'+
+        '<span class="mono" style="font-size:21px;font-weight:800;color:var(--gita)">'+h(c.so)+'</span>'+
+        '<b style="font-size:18px;flex:1;min-width:200px">'+h(c.ten)+'</b>'+
         (c.nhip ? '<span class="ai-nhip" style="margin:0">'+ic('compass','w-3 h-3')+
           '<span>'+h(c.nhip)+'</span></span>' : '')+
       '</div>'+

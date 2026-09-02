@@ -235,9 +235,9 @@ document.addEventListener('click', function(e){
     var ma = k.getAttribute('data-adkb');
     var c = (G.CHUYEN || []).filter(function(x){ return x.ma === ma; })[0];
     if(!c) return;
-    U.modal('<div style="max-width:640px"><b style="font-size:17px">Kịch bản dẫn · '+h(c.ma)+'</b>'+
+    U.modal('<div style="max-width:640px"><b style="font-size:18px">Kịch bản dẫn · '+h(c.ma)+'</b>'+
       '<p class="tiny muted mt">Gửi nguyên phần này cho phòng thu. Không thêm, không bớt ý.</p>'+
-      '<pre class="cho-chep" style="white-space:pre-wrap;line-height:1.75;font-size:13px;'+
+      '<pre class="cho-chep" style="white-space:pre-wrap;line-height:1.75;font-size:14.5px;'+
         'background:var(--phu-1);padding:14px;border-radius:12px;margin-top:12px;max-height:56vh;overflow:auto">'+
         h(G.adKichBan(c))+'</pre></div>');
   }

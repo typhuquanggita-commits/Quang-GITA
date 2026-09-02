@@ -64,7 +64,7 @@ G.VIEWS['gioi-thieu'] = function(){
   /* Một câu */
   o += '<div class="card mt2" style="border-color:var(--gita-vien-1);background:var(--phu-1)">'+
     '<span class="tiny up muted">NẾU CHỈ ĐƯỢC NÓI MỘT CÂU</span>'+
-    '<p class="mt" style="font-size:17px;line-height:1.8;font-weight:600">'+h(G.GT_MOT_CAU || '')+'</p></div>';
+    '<p class="mt" style="font-size:18px;line-height:1.8;font-weight:600">'+h(G.GT_MOT_CAU || '')+'</p></div>';
 
   /* ── SỨ MỆNH · TẦM NHÌN ──
      Lấy thẳng từ G.CULTURE ở src/data.core.js chứ không chép lại ở đây.
@@ -97,7 +97,7 @@ G.VIEWS['gioi-thieu'] = function(){
   if(m30 && m30.big)
     o += '<div class="card mt2" style="border-left:3px solid var(--gita-do-ink)">'+
       '<span class="tiny up" style="color:var(--gita-do-ink);letter-spacing:.09em">'+h(m30.t)+'</span>'+
-      '<p class="mt" style="font-size:15.5px;line-height:1.8;font-weight:600">'+h(m30.big)+'</p>'+
+      '<p class="mt" style="font-size:16px;line-height:1.8;font-weight:600">'+h(m30.big)+'</p>'+
       '<p class="sm muted mt" style="line-height:1.7;font-style:italic">'+h(m30.sub)+'</p></div>';
 
   o += U.sec('MỤC TIÊU CỦA MỘT NHÀ','Sáu mốc, mỗi mốc một con số hệ thống tự đếm được');
@@ -109,7 +109,7 @@ G.VIEWS['gioi-thieu'] = function(){
     return '<div class="card lift" style="border-left:3px solid '+x.c+'">'+
       '<div class="row" style="gap:8px;align-items:baseline;flex-wrap:wrap">'+
         '<span class="chip" style="color:'+x.c+';border-color:'+x.c+'55">'+h(x.moc)+'</span>'+
-        '<b style="flex:1;min-width:150px;font-size:15px">'+h(x.ten)+'</b></div>'+
+        '<b style="flex:1;min-width:150px;font-size:16px">'+h(x.ten)+'</b></div>'+
       '<p class="sm mt" style="line-height:1.75">'+h(x.dich)+'</p>'+
       '<div class="mt2" style="padding-top:11px;border-top:1px dashed var(--phu-4)">'+
         '<div class="tiny up muted">ĐO BẰNG</div>'+
@@ -126,8 +126,8 @@ G.VIEWS['gioi-thieu'] = function(){
   o += '<div class="row wrap" style="gap:11px">'+ (C.giaTri || []).map(function(x){
     return '<div class="card" style="flex:1;min-width:250px;border-top:3px solid '+x.c+'">'+
       '<div class="row" style="gap:9px;align-items:baseline">'+
-        '<b class="mono" style="font-size:17px;color:'+x.c+'">'+h(x.k)+'</b>'+
-        '<b style="flex:1;font-size:14px">'+h(x.t)+'</b></div>'+
+        '<b class="mono" style="font-size:18px;color:'+x.c+'">'+h(x.k)+'</b>'+
+        '<b style="flex:1;font-size:14.5px">'+h(x.t)+'</b></div>'+
       '<p class="sm mt" style="line-height:1.7">'+h(x.d)+'</p>'+
       '<p class="tiny mt2" style="line-height:1.6;color:var(--ok)">✓ '+h(x.nen)+'</p>'+
       '<p class="tiny mt" style="line-height:1.6;color:var(--gita-do-ink)">✕ '+h(x.khong)+'</p></div>';
@@ -142,7 +142,7 @@ G.VIEWS['gioi-thieu'] = function(){
       return '<div class="row mt2" style="gap:11px;align-items:flex-start">'+
         '<span style="width:26px;height:26px;flex:none;border-radius:9px;display:flex;align-items:center;'+
           'justify-content:center;background:var(--gita-do)18;color:var(--gita-do-ink);font-weight:700;'+
-          'font-size:13px">'+(i+1)+'</span>'+
+          'font-size:14.5px">'+(i+1)+'</span>'+
         '<p class="sm" style="flex:1;line-height:1.75">'+h(x)+'</p></div>';
     }).join('')+
     '<p class="sm mt2" style="line-height:1.8;font-weight:600;color:var(--gita)">'+h(V.chot || '')+'</p></div>';
@@ -152,7 +152,7 @@ G.VIEWS['gioi-thieu'] = function(){
   o += '<div class="row wrap" style="gap:12px">'+ (G.GT_HUA || []).map(function(x){
     return '<div class="card" style="flex:1;min-width:250px;border-left:3px solid '+x.c+'">'+
       '<div class="row" style="gap:8px;align-items:center">'+ic(x.ic,'w-4 h-4')+
-        '<b style="font-size:15px;color:'+x.c+'">'+h(x.t)+'</b></div>'+
+        '<b style="font-size:16px;color:'+x.c+'">'+h(x.t)+'</b></div>'+
       '<p class="sm mt" style="line-height:1.75">'+h(x.y)+'</p></div>';
   }).join('') +'</div>';
 
@@ -219,8 +219,8 @@ G.VIEWS['gioi-thieu'] = function(){
         '<div class="row" style="gap:8px;align-items:center">'+
           '<span style="width:24px;height:24px;flex:none;border-radius:8px;display:flex;'+
             'align-items:center;justify-content:center;background:var(--gita)18;color:var(--gita);'+
-            'font-weight:700;font-size:12px">'+(i+1)+'</span>'+
-          '<b style="font-size:13.5px">'+h(x.t)+'</b></div>'+
+            'font-weight:700;font-size:12.5px">'+(i+1)+'</span>'+
+          '<b style="font-size:14.5px">'+h(x.t)+'</b></div>'+
         '<p class="sm mt" style="line-height:1.65">'+h(x.d)+'</p></div>';
     }).join('') +'</div></div>';
 
@@ -247,7 +247,7 @@ G.VIEWS['gioi-thieu'] = function(){
     '<div class="row wrap" style="gap:10px">'+ (DH.vong || []).map(function(x){
       return '<div class="card" style="flex:1;min-width:190px;padding:14px;border-top:3px solid '+x.c+'">'+
         '<div class="row" style="gap:8px;align-items:center">'+
-          '<b class="mono" style="color:'+x.c+';font-size:15px">'+h(x.b)+'</b>'+
+          '<b class="mono" style="color:'+x.c+';font-size:16px">'+h(x.b)+'</b>'+
           '<b class="tiny up" style="letter-spacing:.08em">'+h(x.t)+'</b></div>'+
         '<p class="sm mt" style="line-height:1.65">'+h(x.d)+'</p></div>';
     }).join('') +'</div></div>';
@@ -291,7 +291,7 @@ G.VIEWS['gioi-thieu'] = function(){
   o += U.sec('HỆ THỐNG CÓ GÌ','Chỉ ghi những con số hệ thống tự đếm được');
   o += '<div class="row wrap" style="gap:11px">'+ (G.GT_SO || []).map(function(x){
     return '<div class="card" style="flex:1;min-width:130px;text-align:center">'+
-      '<b style="font-size:24px;color:var(--gita)">'+h(x.so)+'</b>'+
+      '<b style="font-size:26px;color:var(--gita)">'+h(x.so)+'</b>'+
       '<div class="tiny muted mt" style="line-height:1.5">'+h(x.n)+'</div></div>';
   }).join('') +'</div>';
 

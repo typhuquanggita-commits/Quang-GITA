@@ -428,7 +428,7 @@ G.VIEWS['van-dung'] = function(){
       return '<div class="card" style="flex:1;min-width:280px;border-left:3px solid '+c.mau+'">'+
         '<div class="row" style="gap:8px;align-items:baseline">'+
           '<span class="mono" style="font-size:18px;font-weight:800;color:'+c.mau+'">'+h(c.ma)+'</span>'+
-          '<b style="font-size:15px">'+h(c.ten)+'</b></div>'+
+          '<b style="font-size:16px">'+h(c.ten)+'</b></div>'+
         '<p class="sm mt" style="line-height:1.6"><b>Cho ai:</b> '+h(c.choAi)+'</p>'+
         '<p class="sm mt" style="line-height:1.6"><b>Độ sâu:</b> '+h(c.sau)+'</p>'+
         '<p class="sm mt" style="line-height:1.6"><b>Người đọc thấy:</b> '+h(c.docThayGi)+'</p>'+

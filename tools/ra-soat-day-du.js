@@ -351,6 +351,88 @@ const NGAN = 700;
   console.log('\n6 · KHÔNG LỖI TRANG');
   bao(!errs.length, 'không lỗi nào khi chạy hết mọi màn của mọi vai', errs.slice(0, 3).join(' | '));
 
+  /* ══════ 7 · CHUẨN NHÌN ══════
+     Ba thứ quyết định một trang đọc ra chuyên nghiệp hay nghiệp dư, và
+     cả ba đều ĐO ĐƯỢC — nên cả ba nằm ở đây chứ không nằm ở cảm giác.
+
+     Không thứ nào trong ba lộ ra khi nhìn ảnh chụp: trang vẫn đầy đặn,
+     thẳng thớm, không có gì lệch. Chúng chỉ lộ ra khi đo. Đó đúng là
+     loại lỗi sống lâu nhất. */
+  console.log('\n7 · CHUẨN NHÌN — BỀ NGANG DÒNG · THANG CỠ CHỮ · THANG MỰC');
+  {
+    /* `goc` ở mục 5 trỏ vào src/, không phải gốc kho — khai riêng ở đây
+       chứ không mượn, vì mượn một biến có tên chung là cách lấy nhầm. */
+    const fs7 = require('fs'), path7 = require('path');
+    const css = fs7.readFileSync(path7.join(__dirname, '..', 'assets', 'style.css'), 'utf8');
+
+    /* ── Thang cỡ chữ ── */
+    const co = [...new Set((css.match(/font-size:[0-9.]+px/g) || [])
+      .map(x => parseFloat(x.slice(10))))].sort((a, b) => a - b);
+    bao(co.length <= 9,
+      'tệp kiểu dùng tối đa CHÍN bậc cỡ chữ. Bản 9.25 có hai mươi sáu — nghĩa là không có thang nào cả, mỗi mảnh giao diện tự nghĩ ra cỡ của mình. Hai cỡ cách nhau nửa pixel thì mắt không phân biệt được, nên chúng không tạo ra thứ bậc, chỉ tạo ra tạp',
+      co.length + ' bậc: ' + co.join(' · '));
+
+    /* ── Thang mực: phải giảm dần đều, và mọi bậc đạt 4,5:1 ── */
+    const sang = /:root\{([\s\S]*?)\}/.exec(css);
+    function lay(khoi, ten) {
+      const m = new RegExp('--' + ten + ':\\s*(#[0-9A-Fa-f]{6})').exec(khoi || '');
+      return m ? m[1] : null;
+    }
+    function L(hx) {
+      const r = parseInt(hx.slice(1, 3), 16) / 255, g = parseInt(hx.slice(3, 5), 16) / 255,
+        b = parseInt(hx.slice(5, 7), 16) / 255;
+      const f = c => c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+      return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+    }
+    const tp = (a, b) => { const x = L(a), y = L(b), hi = Math.max(x, y), lo = Math.min(x, y);
+      return (hi + 0.05) / (lo + 0.05); };
+    const khoi = sang ? sang[1] : '';
+    const nen = lay(khoi, 'bg-0') || '#FFFFFF';
+    const muc = ['ink', 'ink-2', 'ink-3', 'ink-4'].map(t => lay(khoi, t));
+    const duMuc = muc.every(Boolean);
+    const ti = duMuc ? muc.map(c => tp(c, nen)) : [];
+    /* Bốn bậc mà bậc cuối lật ngược thì chỉ ba bậc phân biệt được — đó
+       là lý do một trang đọc ra phẳng lì dù mỗi thẻ đều có ba tầng chữ. */
+    const giamDan = duMuc && ti.every((v, i) => i === 0 || ti[i - 1] > v);
+    const duTuongPhan = duMuc && ti.every(v => v >= 4.5);
+    bao(giamDan && duTuongPhan,
+      'thang mực bốn bậc GIẢM DẦN ĐỀU trên nền trang, và mọi bậc đạt 4,5:1. Tới bản 9.25 bậc cuối lật ngược — lớp chữ lặng nhất lại nổi hơn lớp trên nó — nên bốn bậc chỉ còn ba bậc phân biệt được, và trang đọc ra phẳng. Chữa bằng cách làm bậc ba ĐẬM hơn chứ không làm bậc bốn nhạt hơn: nhạt đi thì nó tụt xuống 3,98:1, tức là đổi một lỗi nhìn thấy lấy một lỗi không nhìn thấy',
+      duMuc ? ti.map((v, i) => ['ink', 'ink-2', 'ink-3', 'ink-4'][i] + ' ' + v.toFixed(2)).join(' → ')
+            : 'không đọc được bảng mực');
+
+    /* ── Bề ngang một dòng chữ ── */
+    await p.evaluate(() => window.G.doLogin('admin@gita365.vn'));
+    await p.waitForTimeout(2200);
+    const dong = await p.evaluate(() => {
+      const G = window.G, dai = [];
+      const man = [];
+      (G.NAV || []).forEach(g => (g.items || []).forEach(i => man.push(i.v)));
+      man.slice(0, 40).forEach(v => {
+        if (!G.VIEWS[v]) return;
+        try { G.S.view = v; G.render(); } catch { return; }
+        document.getElementById('main').querySelectorAll('p,li').forEach(el => {
+          const t = (el.textContent || '').trim();
+          if (!t || el.children.length || t.length < 120) return;
+          const s = getComputedStyle(el);
+          const lh = parseFloat(s.lineHeight) || parseFloat(s.fontSize) * 1.6;
+          /* Đếm SỐ DÒNG THẬT rồi chia, không ước bề rộng một ký tự: chữ
+             Việt có dấu, ước bằng công thức thì lệch tới ba mươi phần trăm
+             — và một thước lệch ba mươi phần trăm thì chỉnh theo nó là
+             chỉnh trượt. */
+          const sd = Math.max(1, Math.round(el.getBoundingClientRect().height / lh));
+          if (sd >= 2) dai.push(Math.round(t.length / sd));
+        });
+      });
+      dai.sort((a, b) => a - b);
+      return { so: dai.length, giua: dai[Math.floor(dai.length / 2)] || 0,
+        max: dai[dai.length - 1] || 0, qua85: dai.filter(x => x > 85).length };
+    });
+    bao(dong.so > 20 && dong.giua <= 75 && dong.qua85 <= dong.so * 0.05,
+      'BỀ NGANG MỘT DÒNG CHỮ nằm trong 45–75 ký tự. Bản 9.25 đo được GIỮA 82, cao nhất 114. Trên 90 ký tự thì mắt mất chỗ xuống dòng: đọc hết dòng rồi quét ngược tìm đầu dòng sau, quét trượt một dòng — và người đọc không biết mình vừa trượt, họ chỉ thấy đoạn văn khó vào. Chặn ở CHỮ chứ không chặn ở thẻ, để bảng và hình vẫn rộng hết cột',
+      dong.so + ' đoạn · giữa ' + dong.giua + ' ký tự · cao nhất ' + dong.max +
+      ' · quá 85: ' + dong.qua85);
+  }
+
   console.log('\n' + (loi
     ? '✗ CÒN ' + loi + ' CHỖ TRỐNG PHẢI LẤP'
     : '✓ KHÔNG CÒN CHỖ NÀO ĐỂ TRỐNG'));

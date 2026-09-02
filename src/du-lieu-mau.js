@@ -108,7 +108,7 @@ document.addEventListener('click', function(e){
   if(!a) return;
   var ds = G.DL_MAU || [], con = G.dlMauCon().map(function(x){ return x.kho; });
   U.modal('<div class="tiny up" style="color:var(--alert)">DỮ LIỆU MẪU TRONG HỆ THỐNG</div>' +
-    '<h2 style="font-size:20px;font-weight:800;margin:6px 0 12px">Kho nào là mẫu, và khi nào thành thật</h2>' +
+    '<h2 style="font-size:21px;font-weight:800;margin:6px 0 12px">Kho nào là mẫu, và khi nào thành thật</h2>' +
     '<p class="sm mb" style="line-height:1.75">Không kho nào bị xoá. Xoá đi thì giao diện rỗng và ' +
     'không ai dựng hay kiểm thử được nữa. Cái cần là người xem biết mình đang nhìn gì.</p>' +
     ds.map(function(x){

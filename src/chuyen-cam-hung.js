@@ -213,7 +213,7 @@ G.VIEWS['chuyen-cam-hung'] = function(){
      [(ds.length ? Math.round(daDoc / ds.length * 100) : 0) + '%', 'ĐI ĐƯỢC', 'var(--gita)']]
     .map(function(x){
       return '<div class="card" style="flex:1;min-width:150px;text-align:center">'+
-        '<b style="font-size:22px;color:'+x[2]+'">'+h(x[0])+'</b>'+
+        '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
 
@@ -233,7 +233,7 @@ G.VIEWS['chuyen-cam-hung'] = function(){
     return '<button class="card" data-chmach="'+h(m.ma)+'" style="flex:1;min-width:210px;text-align:left;'+
       'cursor:pointer;border-color:'+(on ? m.c : 'var(--line)')+';'+(on ? 'background:'+m.c+'0E' : '')+'">'+
       '<div class="row" style="gap:8px;align-items:center">'+ic(m.ic,'w-4 h-4')+
-        '<b style="font-size:14px;color:'+m.c+'">'+h(m.ten)+'</b></div>'+
+        '<b style="font-size:14.5px;color:'+m.c+'">'+h(m.ten)+'</b></div>'+
       '<p class="tiny mt" style="line-height:1.6">'+h(m.y)+'</p>'+
       '<p class="tiny mt" style="color:'+(d === n.length ? 'var(--ok)' : 'var(--ink-4)')+'">'+
         d+' / '+n.length+' đã đọc</p></button>';

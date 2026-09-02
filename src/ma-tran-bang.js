@@ -141,7 +141,7 @@ G.VIEWS['ma-tran-bang'] = function(){
   o += '<div class="grid g2 mb">'+ G.MT_BANG.map(function(b){
     return '<div class="card" style="border-color:'+b.c+'33">'+
       '<div class="row wrap mb" style="gap:8px">'+U.chip(b.ma,b.c)+
-      '<b style="color:'+b.c+';font-size:15px">'+h(b.ten)+'</b>'+
+      '<b style="color:'+b.c+';font-size:16px">'+h(b.ten)+'</b>'+
       '<span class="tiny muted">'+h(b.tyLe)+'</span></div>'+
       '<p class="sm dim mb" style="line-height:1.65">'+h(b.y)+'</p>'+
       '<div class="grid g2" style="gap:9px">'+
@@ -231,7 +231,7 @@ G.VIEWS['ma-tran-bang'] = function(){
   o += '<div class="card">' + (G.MT_BANG_LUAT||[]).map(function(l){
     return '<div style="display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line)">'+
       '<span style="flex:none;width:26px;height:26px;border-radius:9px;display:grid;place-items:center;'+
-      'font-weight:900;font-size:12px;background:rgba(11,102,117,.14);color:#0B6675">'+l.no+'</span>'+
+      'font-weight:900;font-size:12.5px;background:rgba(11,102,117,.14);color:#0B6675">'+l.no+'</span>'+
       '<div><b class="sm" style="display:block;margin-bottom:3px">'+h(l.ten)+'</b>'+
       '<span class="tiny muted" style="line-height:1.6">'+h(l.y)+'</span></div></div>';
   }).join('') + '</div>';

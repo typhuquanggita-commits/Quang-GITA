@@ -47,7 +47,7 @@ G.khungTrong = function(o){
     '<div class="row" style="gap:11px;align-items:center">'+
       '<span style="width:42px;height:42px;border-radius:14px;display:grid;place-items:center;'+
         'background:var(--gita-mo-2);color:'+c+'">'+ic(o.ic || 'seed','w-5 h-5')+'</span>'+
-      '<div><b style="font-size:15.5px">Chỗ này đã sẵn sàng, chỉ chưa có dữ liệu</b>'+
+      '<div><b style="font-size:16px">Chỗ này đã sẵn sàng, chỉ chưa có dữ liệu</b>'+
       '<div class="tiny muted mt">Không phải phần chưa làm xong — là phần đang đợi đúng một việc</div></div>'+
     '</div>';
 

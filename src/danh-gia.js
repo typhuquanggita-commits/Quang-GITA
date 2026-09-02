@@ -102,7 +102,7 @@ G.dgTenHien = function(x){
 function sao(n){
   var o = '';
   for(var i=1;i<=5;i++) o += '<span style="color:' + (i<=n ? 'var(--gita)' : 'var(--vien)') + '">★</span>';
-  return '<span style="font-size:17px;letter-spacing:2px">' + o + '</span>';
+  return '<span style="font-size:18px;letter-spacing:2px">' + o + '</span>';
 }
 
 /* ═══════════ MÀN GIA ĐÌNH GỬI ═══════════ */
@@ -127,7 +127,7 @@ G.VIEWS['danh-gia'] = function(){
       o += '<div class="card mt2"><b class="sm">' + h(q.t) + '</b>' +
         '<div class="row mt2" style="gap:7px;flex-wrap:wrap">';
       for(var i=1;i<=5;i++)
-        o += '<button class="btn ghost" data-dgsao="' + i + '" style="font-size:19px;padding:6px 13px">' +
+        o += '<button class="btn ghost" data-dgsao="' + i + '" style="font-size:18px;padding:6px 13px">' +
           '★ ' + i + '</button>';
       o += '</div><p class="tiny muted mt">Đang chọn: <b id="dg-sao-hien">chưa chọn</b></p></div>';
     } else {

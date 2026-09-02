@@ -32,7 +32,7 @@ function goi(than){
 G.moDoiMatKhau = function(){
   var U = G.U, h = U.h;
   U.modal(
-    '<h2 style="font-size:20px;font-weight:800;margin-bottom:6px">Đổi mật khẩu</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin-bottom:6px">Đổi mật khẩu</h2>'+
     '<p class="sm muted" style="margin-bottom:14px">Đổi xong hệ thống đóng phiên hiện tại — đăng nhập lại bằng mật khẩu mới.</p>'+
     '<label class="tiny up muted">MẬT KHẨU HIỆN TẠI</label>'+
     '<input id="mkCu" type="password" autocomplete="current-password" class="inp blk mb">'+
@@ -78,7 +78,7 @@ G.doiMatKhau = function(){
 G.moQuenMatKhau = function(){
   var U = G.U;
   U.modal(
-    '<h2 style="font-size:20px;font-weight:800;margin-bottom:6px">Lấy lại mật khẩu</h2>'+
+    '<h2 style="font-size:21px;font-weight:800;margin-bottom:6px">Lấy lại mật khẩu</h2>'+
     '<p class="sm muted" style="margin-bottom:14px">Nhập email hoặc tên đăng nhập. Hệ thống gửi mã sáu số '+
       'tới email đã đăng ký. Mã sống mười lăm phút và chỉ dùng được một lần.</p>'+
     '<label class="tiny up muted">EMAIL HOẶC TÊN ĐĂNG NHẬP</label>'+
