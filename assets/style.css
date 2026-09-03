@@ -1367,6 +1367,22 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .bc-kem.chua>b{color:var(--ink-3)}
 .bc-kem.het{border-color:#B4720F45;background:color-mix(in srgb,#B4720F 6%,transparent)}
 .bc-kem.het>b{color:#B4720F}
+
+/* ═══ BẢNG TIN CỦA TỪNG TẦNG · v9.40 ═══
+   Ba dòng, mỗi dòng một khối rõ ràng. Dồn liền nhau thì ba mẫu thông
+   báo đọc ra một đoạn văn, và người ta không nhận ra đây là ba việc
+   khác nhau mình có thể làm để có tên trên bảng. */
+.tin-bang{display:grid;gap:10px;margin-bottom:14px}
+.tin-dong{position:relative;padding:13px 15px 12px 17px;border-radius:14px;
+  border:1px solid var(--line);background:var(--surface);overflow:hidden}
+.tin-dong::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:var(--tin-c,var(--gita))}
+.tin-nhan{display:block;font-size:10.5px;letter-spacing:.08em;font-weight:700;
+  text-transform:uppercase;color:var(--tin-c,var(--gita))}
+.tin-cau{font-size:14.5px;line-height:1.65;color:var(--ink);margin-top:5px;max-width:64ch}
+.tin-o{font-size:10.5px;letter-spacing:.04em;color:var(--ink-4);margin-top:6px}
+.tin-vi{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:4px;max-width:62ch}
+@media (max-width:640px){ .tin-cau{font-size:12.5px} }
 /* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
    một trong hai thì mắt đọc nó thành của riêng dải ấy. */
 .bc-khop{display:flex;align-items:center;gap:8px;margin:-6px 0 10px 6px;

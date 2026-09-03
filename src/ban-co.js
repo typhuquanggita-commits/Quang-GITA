@@ -746,6 +746,46 @@ G.VIEWS = G.VIEWS || {};
         .filter(Boolean).join(' · ') };
   };
 
+  /* ═══════════ NHÀ KÈM ĐƯỢC XEM GÌ CỦA NHÀ KIA ═══════════
+     Chủ hệ chốt ba việc, và ba việc ấy là ba câu trả lời khác nhau:
+
+       bàn cờ    ĐƯỢC — thấy chỗ dày chỗ thưa mới kèm được đúng chỗ
+       KPI       ĐƯỢC — để động viên khích lệ
+       nhiệm vụ  KHÔNG — việc nhà kia chọn tối nay là việc riêng của họ
+
+     Vì sao vạch đúng ở đó: nhìn HÌNH của bàn cờ là biết nhà kia đang
+     đuối tuần nào — đủ để hỏi một câu đúng lúc. Nhìn TỪNG VIỆC là biết
+     tối qua bố họ chọn gì, mẹ họ chọn gì; đó không còn là kèm nữa, đó
+     là đọc nhật ký của một nhà khác.
+
+     LỌC Ở ĐÂY, KHÔNG LỌC Ở MÀN HÌNH
+
+     Luật của kho: lọc trên màn hình KHÔNG phải bảo vệ dữ liệu — gửi
+     xuống rồi thì mở công cụ nhà phát triển là đọc được hết. Nên bàn cờ
+     của nhà kia phải đi qua cổng này TRƯỚC khi vào máy, và cái ra khỏi
+     cổng không còn mang mã việc lẫn mã bánh đà. */
+  G.bcKemLoc = function (ban) {
+    if (!ban || typeof ban !== 'object') return null;
+    var ra = {};
+    Object.keys(ban).forEach(function (n) {
+      var q = oChuan(ban[n]); if (!q) return;
+      var vai = {};
+      Object.keys(q.vai).forEach(function (v) {
+        /* Giữ ĐÚNG hai thứ: có làm hay không, và màu để vẽ. Bỏ `ma`
+           (việc nào) và `bd` (bánh đà nào) — hai cột ấy chính là
+           "nhiệm vụ được giao". `diem` cũng bỏ: điểm của từng ô lần
+           ngược ra được trọng số, mà trọng số lần ra tầng của việc. */
+        vai[v] = { c: q.vai[v].c || null };
+      });
+      ra[n] = { vai: vai };
+    });
+    return ra;
+  };
+  G.bcKemXem = function () {
+    var x = (G.BC_KEM_LUAT || {}).xem || {};
+    return { banCo: x.banCo === true, kpi: x.kpi === true, nhiemVu: x.nhiemVu === true };
+  };
+
   G.bcKemDo = function () {
     var k = G.bcKem(); if (!k) return null;
     var can = G.bcSoNgay(k.tang);

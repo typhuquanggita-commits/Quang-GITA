@@ -8098,8 +8098,11 @@ const { chromium } = require(PW);
         man5.indexOf('không cho lên tầng') < 0 &&
         man5.indexOf('class="bc-kem') < man5.indexOf('class="bc-nhip');
       /* Vế CHƯA ĐO ĐƯỢC in thẳng lên màn của đúng tầng ấy, không in lung tung. */
+      /* Bám vào TẦNG, không bám vào chủ đề câu hỏi: câu hỏi đổi mỗi lần
+         chủ hệ trả lời được một chỗ, và một phép kiểm bám vào chủ đề thì
+         đỏ mỗi lần công việc TIẾN LÊN — đúng ngược với việc nó phải làm. */
       r.choChuHienT5 = man5.indexOf(G.U.h((G.BC_CHOCHU || [])[0].hoi)) >= 0 &&
-        /KPI của nhà đang được kèm/.test((G.BC_CHOCHU || [])[0].o || '');
+        /^Tầng 5/.test((G.BC_CHOCHU || [])[0].o || '');
       G.S.bcTang = 'T3';
       r.choChuKhongHienT3 = G.VIEWS['ban-co']().indexOf(G.U.h((G.BC_CHOCHU || [])[0].hoi)) < 0;
       /* Bàn NGẮN không khai vòng thì vẫn một dải, không bị chia tháng. */
@@ -8241,7 +8244,12 @@ const { chromium } = require(PW);
   console.log('\n67 · BẢNG TIN — MỖI CON SỐ KHAI NÓ ĐẾM TỪ ĐÂU');
   {
     await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
-    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    /* Chờ THÊM các kho mục này thật sự đọc, không chỉ chờ hàng nạp rỗng.
+       Hàng rỗng đi trước lúc kho cuối gắn vào G một nhịp — đo được: lúc
+       ấy HT_TANG, TIN_MAU và BK_LUAT đều còn undefined, nên số sao ra
+       null và cả mục đỏ ở chỗ mã không hỏng. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.HT_TANG && window.G.TIN_MAU && window.G.BK_LUAT, { timeout: 60000 });
     const ra = await p.evaluate(() => {
       const G = window.G;
       if (!G.tinSo || !G.TIN_NGUON) return { co: false };
@@ -8298,16 +8306,92 @@ const { chromium } = require(PW);
       r.manKhongBia = man.indexOf('>412<') < 0 && !/412 gia đình/.test(man);
       r.manCoTieuChi = (G.TIN_TIEUCHI || []).every(t => man.indexOf(G.U.h(t.t)) >= 0);
       r.manCoCam = (G.TIN_CAM || []).every(c => man.indexOf(G.U.h(c.t)) >= 0);
-      r.manNoiChoChu = man.indexOf(G.U.h(G.TIN_THUONG.diemChoChu)) >= 0;
+      /* Hai chỗ chờ chủ hệ nay ĐÃ CHỐT: 5 điểm cho chuyện hay, 50 điểm
+         cho kèm được một nhà lên tầng, quà là bí kíp theo tầng. Phép đo
+         cũ đòi màn in ra câu "chờ chủ hệ chốt" — nay phải đòi ngược lại:
+         in ra CON SỐ, và không còn câu chờ nào. */
+      r.thuongDaChot = G.TIN_THUONG.diem === 5 && G.TIN_THUONG.diemChoChu === undefined &&
+        G.TIN_KEM_THUONG.diem === 50 &&
+        G.TIN_THUONG.quaKhongVuotTang === true && G.TIN_KEM_THUONG.quaKhongVuotTang === true;
+
+      /* ── BÍ KÍP: SAO ĐỌC TỪ TẦNG, VÀ KHÔNG TRAO VƯỢT TẦNG ── */
+      r.saoTheoTang = G.bkSao('T1') === 1 && G.bkSao('T3') === 3 && G.bkSao('T5') === 5;
+      const tt3 = G.HT_TANG.filter(x => x.ma === 'T3')[0], luuSo = tt3.so;
+      tt3.so = 4; r.saoDocTuKho = G.bkSao('T3') === 4; tt3.so = luuSo;
+      r.bkChanVuot = G.bkChoPhep('T3', 3).ok === true && G.bkChoPhep('T3', 1).ok === true &&
+        G.bkChoPhep('T1', 5).ok === false && G.bkChoPhep('T3', 4).ok === false &&
+        G.bkChoPhep('T3', 0).ok === false && G.bkChoPhep('T3', 'x').ok === false &&
+        (G.BK_LUAT || {}).khongVuotTang === true;
+
+      /* ── BA LOẠI LÊN BẢNG, VÀ BA MẪU ── */
+      r.baLoaiLenBang = G.TIN_LOAI.filter(x => x.dang === true).map(x => x.ma).join(',') ===
+        'LEN_TANG,CHUYEN_HAY,KEM_VUOT' &&
+        G.TIN_LOAI.filter(x => x.dang === false).every(x => !!x.khongDangVi);
+      const dV = G.tinDien('M-VUOT', { maSo: 'F-007', tang: '3' });
+      const dC = G.tinDien('M-CHUYEN', { maSo: 'F-007', tang: '3', diem: 5, sao: 3 });
+      const dK = G.tinDien('M-KEM', { maSoKem: 'F-001', maSoDuocKem: 'F-007',
+        tang: '2', diem: 50, sao: 5 });
+      r.baMau = dV.cau === 'Nhà có mã số F-007 vừa vượt lên tầng 3.' &&
+        /F-007/.test(dC.cau) && /5 điểm/.test(dC.cau) && /3 sao/.test(dC.cau) &&
+        /F-001/.test(dK.cau) && /F-007/.test(dK.cau) && /50 điểm/.test(dK.cau);
+      /* Thiếu chỗ trống thì KHAI THIẾU, không im lặng in {maSo} như thật. */
+      r.mauThieuThiKhai = G.tinDien('M-VUOT', { tang: '3' }).dayDu === false &&
+        G.tinDien('M-VUOT', { tang: '3' }).thieu.indexOf('maSo') >= 0;
+      /* Mã số ngày mai về từ máy chủ — tức là chữ của người khác. */
+      const dX = G.tinDien('M-VUOT', { maSo: '<img src=x onerror=alert(1)>', tang: '3' });
+      r.mauThoatChu = dX.cau.indexOf('<img') < 0 && dX.cau.indexOf('&lt;img') >= 0;
+
+      /* ── BẢNG TIN CỦA TỪNG TẦNG ── */
+      const bt1 = G.tinBangTang('T1'), bt5 = G.tinBangTang('T5');
+      r.bangTheoTang = bt1.sao === 1 && bt5.sao === 5 && bt1.mau.length === 3 &&
+        /tầng 1/.test(bt1.mau[0].mo.cau) && /tầng 5/.test(bt5.mau[0].mo.cau) &&
+        bt1.chuaCoTinSong === true;
+
+      /* ── CHỈ MÃ SỐ, KHÔNG TÊN ──
+         Tôi từng viết phép đo ở đây là "FAMILIES không được đóng vào gói
+         nào nên không máy khách nào có nó", sau khi đo trên ba vai và
+         thấy undefined. Phép đo ấy SAI: ba lần đo kia chạy ở CHẾ ĐỘ MẪU,
+         không có khoá, nên không gói nào được mở ra cả. Chạy với khoá
+         thật thì máy phụ huynh nhận đủ mười bản ghi FAMILIES, kèm tên
+         nhà, tên học viên, tên phụ huynh và tên Coach.
+         Đó là một chỗ rò thật, và nó được sửa riêng — không gộp vào phần
+         bảng tin. Phép đo ở đây phải là phép đo ĐÚNG TRONG CẢ HAI CHẾ ĐỘ:
+         dù kho ấy có mặt hay không, không tên thật nào lọt ra màn tin. */
+      const fMau = { id: 'F-001', nha: 'Nhà Minh An', hv: 'Trần Minh An',
+        ph: 'Trần Quốc Bảo · Lê Thu Hà', coach: 'Nguyễn Thu Trang', tier: 5 };
+      G.S.tinTang = 'T5';
+      const man5 = G.VIEWS['bang-tin']();
+      const locF = G.tinLocNha(fMau);
+      r.locChiMaSo = !!locF && locF.maSo === 'F-001' && locF.tang === 'T5' &&
+        (G.TIN_TANG_LUAT.camInTen || []).every(k => locF[k] === undefined);
+      r.manKhongLoTen = (G.TIN_TANG_LUAT.camInTen || []).length === 4 &&
+        (G.TIN_TANG_LUAT.camInTen || []).every(k => man5.indexOf(G.U.h(fMau[k])) < 0);
+      r.khongLoTenThat = !G.FAMILIES || G.FAMILIES.every(function (f) {
+        return (G.TIN_TANG_LUAT.camInTen || []).every(function (k) {
+          return !f[k] || man5.indexOf(G.U.h(f[k])) < 0;
+        });
+      });
+      r.manTheoTang = (man5.match(/class="tin-dong"/g) || []).length === 3 &&
+        (G.HT_TANG || []).every(t => man5.indexOf('data-tintang="' + t.ma + '"') >= 0);
+      G.S.tinTang = 'T1';
+
+      /* ── NHÀ KÈM XEM ĐƯỢC GÌ CỦA NHÀ KIA ── */
+      const qx = G.bcKemXem();
+      r.quyenXem = qx.banCo === true && qx.kpi === true && qx.nhiemVu === false;
+      const banK = { '2026-09-01': { vai: { me: { ma: 'BD1-03', bd: 'BD1', diem: 3, c: '#111' } } } };
+      const locK = JSON.stringify(G.bcKemLoc(banK));
+      r.locBoNhiemVu = locK.indexOf('BD1-03') < 0 && locK.indexOf('BD1') < 0 &&
+        locK.indexOf('diem') < 0 && locK.indexOf('#111') >= 0;
+
       return { co: true, ...r };
     });
 
     if (!ra.co) {
       bao(false, 'bảng tin nạp được', 'không thấy tinSo');
     } else {
-      bao(!ra.soi.length && ra.soTieuChi === 6 && ra.soLoai === 4,
-        'bốn loại tin, sáu tiêu chí chọn chuyện, năm điều bảng tin tự cấm — mỗi loại tin khai NÓ ĐẾM TỪ ĐÂU và VÌ SAO nó đáng đăng',
-        ra.soi.join(' ') || '4 loại · 6 tiêu chí · 5 điều cấm');
+      bao(!ra.soi.length && ra.soTieuChi === 6 && ra.soLoai === 5,
+        'năm loại tin, sáu tiêu chí chọn chuyện, bảy điều bảng tin tự cấm — mỗi loại tin khai NÓ ĐẾM TỪ ĐÂU và VÌ SAO nó đáng đăng',
+        ra.soi.join(' ') || '5 loại · 6 tiêu chí · 7 điều cấm');
       bao(ra.congChanSoBia && ra.congChanMaLa && ra.congChoQuaNguonThat && ra.batCoMaKhongNoiDemTu,
         'MỌI CON SỐ ĐI QUA MỘT CỔNG DUY NHẤT. Nguồn khai CHƯA CÓ SỔ thì cổng không trả về con số, kể cả khi người gọi đưa sẵn một con số vào tay nó. Có cổng thì chỉ phải canh một chỗ; không cổng thì mỗi lần thêm một dòng tin là một lần phải NHỚ tự hỏi con số này ở đâu ra — và trí nhớ là thứ hỏng đầu tiên. Bật một nguồn lên CÓ mà quên nói đếm từ đâu thì đỏ ngay',
         'chặn số bịa · chặn mã lạ · cho qua nguồn thật · bắt nguồn khai CÓ mà thiếu sổ');
@@ -8316,8 +8400,25 @@ const { chromium } = require(PW);
         '6/6 kiểu phá đều bắt · 5 trên 6 vẫn trượt');
       bao(ra.khongNoiDat,
         'máy KHÔNG BAO GIỜ NÓI "ĐẠT" — nó chỉ nói "không thấy chỗ nào trượt", rồi trả việc lại cho người. Máy soi được sáu tiêu chí có đủ cột hay chưa; máy không đọc được một chuyện hay hay dở. Gộp hai câu ấy làm một là giao việc của người cho một cái máy, và cái máy sẽ làm — sai');
-      bao(ra.batCuHich && ra.manNoiThieu && ra.manKhongBia && ra.manCoTieuChi && ra.manCoCam && ra.manNoiChoChu,
-        'BẢNG TIN GỌI TÊN CON SỐ KHÔNG NGUỒN ĐANG NẰM TRONG CHÍNH KHO NÀY: CUHICH khai thamgia 412 · 268 · 174 · 96 · 58 · 143 mà không dòng nào nói chúng đếm từ đâu, trong khi hệ chưa phát hành. Bảng tin không mượn lại chúng — mượn là biến một con số không nguồn thành con số có vẻ được xác nhận, vì nó vừa xuất hiện ở màn thứ hai. Màn in ba chỗ THIẾU SỔ ĐẾM thay vì in một con số đẹp, in đủ sáu tiêu chí và năm điều tự cấm cho nhà gửi chuyện đọc trước, và nói thẳng hai chỗ chờ chủ hệ chốt',
+      /* Một lời báo gộp mười phép đo thì lúc đỏ nó không nói phép nào
+         hỏng, và người sửa phải đoán. Liệt kê tên phép đo hỏng vào dòng
+         chi tiết — mất một dòng mã, đổi lại mỗi lần đỏ về sau tiết kiệm
+         một vòng chạy mười hai phút. */
+      const doTin = ['baLoaiLenBang', 'baMau', 'mauThieuThiKhai', 'mauThoatChu',
+        'bangTheoTang', 'manTheoTang', 'khongLoTenThat', 'locChiMaSo', 'manKhongLoTen']
+        .filter(k => !ra[k]);
+      bao(!doTin.length,
+        'TẦNG NÀO CÓ BẢNG TIN CỦA TẦNG ẤY, VÀ CHỈ BA LOẠI TIN LÊN BẢNG. Lý do chia theo tầng không phải kỹ thuật mà là người: nhà tầng một đọc tin của tầng năm thì thấy một khoảng cách xa tới mức không định vị được mình ở đâu trên đường — và cái xa ấy làm người ta BỎ, không làm người ta đi; tin của chính tầng mình thì khoảng cách vừa đúng một bước. Ba loại được đăng — vượt tầng, chuyện hay, tích cực kèm — có chung một tính chất: chúng nói về một việc nhà khác LÀM ĐƯỢC, và việc ấy nhà đang đọc cũng làm được. Hai loại còn lại nói về thứ nhà khác CÓ, mà thấy người khác có thứ mình chưa có thì không ai bước nhanh hơn, chỉ thấy mình chậm. Tin vượt tầng đăng ở bảng của tầng nhà ấy VỪA RỜI, vì người cần thấy nó là người đang đứng ở chỗ nhà kia vừa đứng hôm qua. BẢNG TIN CHỈ NÊU MÃ SỐ: FAMILIES mang cả tên nhà, tên học viên, tên phụ huynh và tên Coach, và kho ấy CÓ MẶT trên máy phụ huynh khi chạy với khoá thật — nên phép đo này soi thẳng chuỗi HTML của màn tin, đối chiếu với TÊN THẬT của cả mười nhà trong kho, chứ không tin vào việc kho ấy vắng mặt. Mẫu thiếu chỗ trống thì KHAI THIẾU chứ không im lặng in ra dấu ngoặc như thật, và mã số đi qua U.h() trước khi ghép vì ngày mai nó là chữ của người khác',
+        doTin.length ? 'phép đo hỏng: ' + doTin.join(' · ')
+          : '3 dòng mẫu mỗi tầng · sao theo tầng · thiếu chỗ thì khai · thẻ ảnh trong mã số bị thoát · 4 cột tên không lọt ra màn');
+      bao(ra.thuongDaChot && ra.saoTheoTang && ra.saoDocTuKho && ra.bkChanVuot,
+        'BÍ KÍP: MẤY SAO THÌ ĐỌC TỪ TẦNG, VÀ KHÔNG TRAO VƯỢT TẦNG. Số sao của một bí kíp là SỐ CỦA TẦNG — tầng ba là ba sao — và con số ấy đã nằm ở HT_TANG.so từ lâu, nên không khai lại: đổi số của tầng ở kho thì số sao đổi theo trong cùng lần chạy. Một bí kíp năm sao trao cho nhà đang ở tầng một là thứ đọc mà không dùng được, vì nền chưa có; tệ hơn, nó dạy rằng phần thưởng là thứ NHẬN được chứ không phải thứ MỞ được, mà cả hệ này dựng trên nghĩa thứ hai. Nó cũng là một đường vòng qua chính trần 30% nội dung của khách. Chuyện hay được 5 điểm, kèm được một nhà lên tầng được 50 — gấp mười, vì kèm một nhà đi hết một chặng là việc dài hàng tháng chứ không phải một lần ngồi viết, và con số phải nói đúng công sức nếu không nó dạy sai về việc nào đáng làm',
+        'T3 → 3 sao · bí kíp 5 sao cho nhà T1 bị chặn · chuyện hay 5 điểm · kèm vượt tầng 50 điểm');
+      bao(ra.quyenXem && ra.locBoNhiemVu,
+        'NHÀ KÈM XEM ĐƯỢC BÀN CỜ VÀ KPI CỦA NHÀ KIA, KHÔNG XEM ĐƯỢC NHIỆM VỤ. Vạch nằm đúng chỗ ấy vì nhìn HÌNH của bàn cờ là biết nhà kia đuối tuần nào — đủ để hỏi một câu đúng lúc; còn nhìn TỪNG VIỆC là biết tối qua bố họ chọn gì, mẹ họ chọn gì, và đó không còn là kèm nữa mà là đọc nhật ký của một nhà khác. KPI thì được xem, vì nó để ĐỘNG VIÊN KHÍCH LỆ — không có con số thì lời động viên rơi vào chỗ trống, và nhà được kèm biết là rơi vào chỗ trống. Lọc ở CỔNG chứ không lọc ở màn hình: gửi xuống rồi thì mở công cụ nhà phát triển là đọc được hết, và lỗi ấy đã xảy ra ba lần trong kho này — nên bcKemLoc() bỏ cả mã việc, mã bánh đà lẫn điểm từng ô, chỉ giữ lại màu để vẽ',
+        'bàn cờ có · KPI có · nhiệm vụ không · mã việc và mã bánh đà bị bỏ ở cổng');
+      bao(ra.batCuHich && ra.manNoiThieu && ra.manKhongBia && ra.manCoTieuChi && ra.manCoCam,
+        'BẢNG TIN GỌI TÊN CON SỐ KHÔNG NGUỒN ĐANG NẰM TRONG CHÍNH KHO NÀY: CUHICH khai thamgia 412 · 268 · 174 · 96 · 58 · 143 mà không dòng nào nói chúng đếm từ đâu, trong khi hệ chưa phát hành. Bảng tin không mượn lại chúng — mượn là biến một con số không nguồn thành con số có vẻ được xác nhận, vì nó vừa xuất hiện ở màn thứ hai. Màn in ba chỗ THIẾU SỔ ĐẾM thay vì in một con số đẹp, in đủ sáu tiêu chí và bảy điều tự cấm cho nhà gửi chuyện đọc trước',
         ra.soKhongNguon.length + ' con số không nguồn được gọi tên · màn in 3 chỗ thiếu');
     }
   }

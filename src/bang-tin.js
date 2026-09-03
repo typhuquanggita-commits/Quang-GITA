@@ -97,6 +97,77 @@ G.VIEWS = G.VIEWS || {};
         : 'Không thấy chỗ nào trượt. Người của Học viện đọc và quyết — máy không chọn hộ.' };
   };
 
+  /* ═══════════ BÍ KÍP: MẤY SAO, VÀ TRAO ĐƯỢC CHO AI ═══════════
+     Số sao KHÔNG khai ở kho bảng tin — nó là SỐ CỦA TẦNG, và số ấy đã
+     nằm ở HT_TANG.so từ lâu. Tầng ba là ba sao. Khai lại là dựng bản
+     thứ hai của một con số đã có. */
+  G.bkSao = function (tang) {
+    var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
+    return t && t.so ? t.so : null;
+  };
+  /* Cổng: không trao bí kíp vượt tầng. Một bí kíp năm sao trao cho nhà
+     tầng một là thứ đọc mà không dùng được — và nó dạy rằng phần thưởng
+     là thứ NHẬN được chứ không phải thứ MỞ được. */
+  G.bkChoPhep = function (tangNha, sao) {
+    var tran = G.bkSao(tangNha);
+    if (!tran) return { ok: false, y: 'Chưa đọc được số sao của tầng ' + tangNha + '.' };
+    sao = Number(sao);
+    if (!(sao > 0)) return { ok: false, y: 'Bí kíp phải có ít nhất một sao.' };
+    if (sao > tran) return { ok: false, tran: tran,
+      y: 'Nhà ở tầng ' + tangNha.slice(1) + ' chỉ nhận được bí kíp tới ' + tran +
+        ' sao. Bí kíp ' + sao + ' sao là vượt tầng — không trao.' };
+    return { ok: true, tran: tran, sao: sao };
+  };
+
+  /* ═══════════ MẪU THÔNG BÁO ═══════════
+     Điền chỗ trống vào mẫu của kho. MỌI giá trị đi qua U.h() trước khi
+     ghép — mã số và tên tầng tuy do hệ sinh ra, nhưng ngày mai chúng
+     đến từ máy chủ, và lúc ấy chúng là chữ của người khác. */
+  G.tinDien = function (maMau, gia) {
+    var m = (G.TIN_MAU || []).filter(function (x) { return x.ma === maMau; })[0];
+    if (!m) return null;
+    gia = gia || {};
+    var thieu = [];
+    var cau = String(m.mau).replace(/\{(\w+)\}/g, function (_, k) {
+      if (gia[k] === undefined || gia[k] === null || gia[k] === '') { thieu.push(k); return '{' + k + '}'; }
+      return h(String(gia[k]));
+    });
+    return { ma: m.ma, loai: m.loai, o: m.o, vi: m.vi, kichThich: m.kichThich,
+      cau: cau, thieu: thieu, dayDu: thieu.length === 0 };
+  };
+
+  /* ═══════════ BẢNG TIN CỦA MỘT TẦNG ═══════════
+     Tầng nào có bảng tin của tầng ấy. Loại tin nào lên bảng thì đọc từ
+     cột `dang` của kho, không gõ lại danh sách ở đây. */
+  G.tinBangTang = function (tang) {
+    var sao = G.bkSao(tang);
+    var loai = (G.TIN_LOAI || []).filter(function (l) { return l.dang === true; });
+    var mau = loai.map(function (l) {
+      var m = (G.TIN_MAU || []).filter(function (x) { return x.loai === l.ma; })[0];
+      if (!m) return null;
+      var gia = { maSo: 'F-000', maSoKem: 'F-000', maSoDuocKem: 'F-000',
+        tang: tang.slice(1), sao: sao };
+      gia.diem = m.loai === 'KEM_VUOT'
+        ? (G.TIN_KEM_THUONG || {}).diem : (G.TIN_THUONG || {}).diem;
+      var d = G.tinDien(m.ma, gia);
+      return d ? { loai: l, mau: m, mo: d } : null;
+    }).filter(Boolean);
+    /* Nguồn tin sống — chưa có sổ nào ở máy chủ. Nói thẳng chỗ ấy chứ
+       không để bảng trống không lời giải thích. */
+    var nguon = ['N-XONG', 'N-CHUYEN', 'N-KEM'].map(function (m) {
+      var x = G.tinSo(m); x.ma = m; return x;
+    }).filter(function (x) { return !!x.ten || x.chuaCoNguon; });
+    return { tang: tang, sao: sao, mau: mau, nguon: nguon,
+      chuaCoTinSong: nguon.every(function (x) { return x.chuaCoNguon; }) };
+  };
+
+  /* Bảng tin KHÔNG được chạm vào tên. FAMILIES mang cả tên nhà, tên học
+     viên, tên phụ huynh và tên Coach; bảng tin chỉ được cột id. */
+  G.tinLocNha = function (f) {
+    if (!f || !f.id) return null;
+    return { maSo: f.id, tang: f.tier ? 'T' + f.tier : null };
+  };
+
   /* ═══════════ SOI ═══════════ */
   G.tinSoi = function () {
     var loi = [];
@@ -157,6 +228,53 @@ G.VIEWS = G.VIEWS || {};
         'Đặt một quân ở <b>Bàn cờ hành trình</b> là ô đầu tiên có màu, và bảng tin này bắt đầu ' +
         'có số của chính nhà mình.</p></div>';
     }
+
+    /* ── BẢNG TIN CỦA TỪNG TẦNG ──
+       Tầng nào có bảng tin của tầng ấy. Nhà tầng một đọc tin của tầng
+       năm thì thấy một khoảng cách xa tới mức không định vị được mình
+       ở đâu, và cái xa ấy làm người ta bỏ chứ không làm người ta đi. */
+    var TL = G.TIN_TANG_LUAT || {};
+    var tgT = G.S.tinTang || (G.S.bcTang) || 'T1';
+    if (!(G.HT_TANG || []).filter(function (x) { return x.ma === tgT; })[0]) tgT = 'T1';
+    o += U.sec('BẢNG TIN CỦA TẦNG ' + tgT.slice(1), TL.cot || '');
+    o += '<div class="row wrap mb" style="gap:8px">' +
+      (G.HT_TANG || []).map(function (t) {
+        return '<button class="btn ' + (t.ma === tgT ? 'pri' : 'ghost') + ' sm" data-tintang="' +
+          t.ma + '">Tầng ' + t.so + '<span class="muted"> · ' + t.so + ' sao</span></button>';
+      }).join('') + '</div>';
+    var bt = G.tinBangTang(tgT);
+    o += '<div class="tin-bang">' + bt.mau.map(function (x) {
+      return '<div class="tin-dong" style="--tin-c:' + x.loai.c + '">' +
+        '<span class="tin-nhan">' + h(x.loai.ten) + '</span>' +
+        '<p class="tin-cau">' + x.mo.cau + '</p>' +
+        '<p class="tin-o">Đăng ở: ' + h(x.mau.o) + '</p>' +
+        '<p class="tin-vi">' + h(x.mau.kichThich) + '</p></div>';
+    }).join('') + '</div>';
+    /* Mẫu thì có, tin sống thì chưa — nói thẳng, đừng để bảng trống
+       không lời giải thích. */
+    if (bt.chuaCoTinSong)
+      o += '<div class="card mb"><p class="sm" style="line-height:1.8">' +
+        '<b style="color:#B4720F">Bảng này đang trống vì chưa có tin thật.</b> Trên kia là ' +
+        'ĐÚNG những dòng sẽ hiện khi có nhà đầu tiên vượt tầng. Ba sổ đếm còn thiếu:</p>' +
+        '<p class="tiny dim mt" style="line-height:1.75">' +
+        bt.nguon.map(function (n) { return h((n.ten || n.ma) + ' — ' + (n.thieu || '')); })
+          .join('<br>') + '</p></div>';
+    o += '<p class="tiny dim mb" style="line-height:1.7"><b>Chỉ nêu mã số, không nêu tên. </b>' +
+      h(TL.viCamInTen || '') + '</p>';
+
+    /* ── Bí kíp: mấy sao, và trao được cho ai ── */
+    var BK = G.BK_LUAT || {};
+    o += U.sec('BÍ KÍP — QUÀ CỦA CẢ HỆ', BK.cot || '');
+    o += '<div class="card mb">' + (G.HT_TANG || []).map(function (t) {
+      var k = G.bkChoPhep(t.ma, bt.sao);
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">Tầng ' + t.so + ' · nhận được bí kíp tới <b>' + t.so + ' sao</b></b>' +
+        '<p class="tiny dim mt" style="line-height:1.7">Bí kíp ' + bt.sao + ' sao của tầng ' +
+        tgT.slice(1) + ': ' + (k.ok ? 'trao được.' : h(k.y)) + '</p></div>';
+    }).join('') + '</div>';
+    o += '<p class="tiny dim mb" style="line-height:1.7"><b>' + h(BK.khongVuotTang
+      ? 'Không trao bí kíp vượt tầng. ' : '') + '</b>' + h(BK.viKhongVuotTang || '') +
+      ' <span class="dim">(số sao đọc từ ' + h(BK.saoDocTu || '') + ')</span></p>';
 
     /* ── Ba con số cộng đồng: nói thẳng chưa có sổ nào ── */
     var cd = G.tinCongDong(), thieu = cd.filter(function (x) { return x.chuaCoNguon; });
@@ -235,4 +353,13 @@ G.VIEWS = G.VIEWS || {};
     }).join('') + '</div>';
     return o;
   };
+
+  /* ═══════════ BẤM ═══════════ */
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest && e.target.closest('[data-tintang]');
+    if (!t) return;
+    G.S.tinTang = t.getAttribute('data-tintang');
+    if (G.save) G.save();
+    G.render();
+  });
 })();
