@@ -1325,6 +1325,33 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .bc-nhip.tut b{color:#B4720F}
 .bc-nhip.chua{border-style:dashed}
 .bc-nhip.chua b{color:var(--ink-3)}
+
+/* ═══ TẦNG MỘT · v9.38 ═══
+   Câu 'không sửa gì cả' phải đứng TRÊN bàn và trên mười gợi ý. Đứng
+   dưới thì nhà mình đã đọc xong danh sách việc kèm điểm rồi mới gặp
+   câu bảo đừng làm — mà điểm số khó cưỡng hơn một lời khuyên nhiều. */
+.bc-dung{margin:0 0 14px;padding:14px 16px;border-radius:16px;
+  border:1px solid var(--alert);background:color-mix(in srgb,var(--alert) 7%,transparent)}
+.bc-dung>b{display:block;font-size:16px;color:var(--alert);letter-spacing:.01em}
+.bc-dung p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:5px;max-width:62ch}
+.bc-dung p.dim{color:var(--ink-4);font-size:10.5px;letter-spacing:.04em}
+.bc-nep{margin:12px 0;padding:13px 15px;border-radius:14px;border:1px solid var(--line)}
+.bc-nep>b{display:block;font-size:14.5px}
+.bc-nep p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:62ch}
+.bc-nep p.dim{color:var(--ink-4);font-size:10.5px}
+.bc-nep p.loi{color:var(--ink);font-weight:600}
+.bc-nep.chua{border-style:dashed}
+.bc-nep.chua>b{color:var(--ink-3)}
+.bc-nep.mo{border-color:var(--gita-vien-2);background:var(--gita-mo-1)}
+.bc-nep.mo>b{color:var(--gita)}
+.bc-nep.xong{border-color:color-mix(in srgb,var(--ok) 42%,transparent);
+  background:color-mix(in srgb,var(--ok) 6%,transparent)}
+.bc-nep.xong>b{color:var(--ok)}
+.bc-doi{margin:12px 0;padding:13px 15px;border-radius:14px;
+  border:1px solid color-mix(in srgb,var(--ok) 42%,transparent);
+  background:color-mix(in srgb,var(--ok) 6%,transparent)}
+.bc-doi b{display:block;font-size:14.5px;color:var(--ok)}
+.bc-doi p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:62ch}
 /* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
    một trong hai thì mắt đọc nó thành của riêng dải ấy. */
 .bc-khop{display:flex;align-items:center;gap:8px;margin:-6px 0 10px 6px;

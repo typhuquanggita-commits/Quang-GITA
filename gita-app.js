@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.37',
+  version: '9.38',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3407,7 +3407,7 @@ G.THUOC_CAP_PHEP = [
   'CS_LOI','CS_TANG','CS_TANG_LUAT','CS_NEN','CS_LUAT',
   'KA_LOAI','KA_TY','KA_CHO','KA_LUAT','KA_ANTOAN',
   'BC_LOI','BC_TRONGSO','BC_TRONGSO_LUAT','BC_MUNG','BC_MUNG_LUAT','BC_LUAT',
-  'BC_VAI','BC_VAI_LUAT','BC_VONG_LUAT','BC_NHIP_LUAT','BC_CHOCHU',
+  'BC_VAI','BC_VAI_LUAT','BC_VONG_LUAT','BC_NHIP_LUAT','BC_NEP_LUAT','BC_CHOCHU',
   'HP_NGAY',
   'TIN_LOAI','TIN_NGUON','TIN_NGUON_LUAT','TIN_TIEUCHI','TIN_TIEUCHI_LUAT',
   'TIN_THUONG','TIN_CAM','TIN_LUAT',
@@ -22841,6 +22841,22 @@ G.VIEWS = G.VIEWS || {};
       '<p class="dim">' + h((G.BC_NHIP_LUAT || {}).vi || '') + '</p></div>';
   }
 
+  function veNep(tang, nd) {
+    if (nd.daGhi)
+      return '<div class="bc-nep xong"><b>Nếp nhà mình khoanh được</b>' +
+        '<p>' + h(nd.daGhi.nep) + '</p>' +
+        '<p class="loi">Nói lại bằng lời nhà mình: “' + h(nd.daGhi.loi) + '”</p></div>';
+    if (!nd.moDuoc)
+      return '<div class="bc-nep chua"><b>Cuối chặng mới khoanh một nếp</b>' +
+        '<p>Còn ' + nd.conThieu + ' tối nữa. Khoanh nếp ở giữa chặng là rút kết luận từ ' +
+        'mấy tối — mà cả chặng này dựng lên để tránh đúng chuyện ấy.</p>' +
+        '<p class="dim">(đọc từ ' + h(nd.docTu) + ')</p></div>';
+    return '<div class="bc-nep mo"><b>Đủ ' + nd.can + ' tối rồi — đọc lại và khoanh MỘT nếp</b>' +
+      '<p>Chọn đúng một thứ lặp lại đủ để gọi là nếp, rồi nói lại bằng lời của nhà mình. ' +
+      'Nhắc đúng thuật ngữ của Học viện thì chưa phải là hiểu.</p>' +
+      '<button class="bc-nutbien" data-bcnep="' + h(tang) + '">Khoanh một nếp</button></div>';
+  }
+
   function veTheoVong(tang, can, s, v) {
     var o = '', d0 = ngayDau(s);
     var dsKho = G.bcVongKho(tang) || [];
@@ -23036,6 +23052,82 @@ G.VIEWS = G.VIEWS || {};
         Math.round(t.ty * 100) + '%' };
   };
 
+  /* ═══════════ TẦNG MỘT: BÀN CỜ BẢO LÀM, MÀ TẦNG BẢO ĐỪNG ═══════════
+
+     Cú hích của tầng một hứa nguyên văn: 'Cả nhà cùng ghi nhật ký bảy
+     tối. KHÔNG SỬA GÌ CẢ. Cuối tuần đọc lại và chỉ ra một mô thức lặp.'
+
+     Còn bàn cờ thì bày ra mười việc kèm điểm số và mời làm ngay tối
+     nay. Một nhà tầng một đọc màn ấy sẽ bắt đầu đổi giờ học, đặt luật
+     mới, sửa chỗ này chỗ kia — và bảy ngày ghi được sẽ là đường nền ĐÃ
+     BỊ BÓP, không phải đường nền thật. Cả tầng một chỉ có một việc duy
+     nhất là lấy cho được đường nền thật ấy.
+
+     Không luật nào của bàn cờ bị vi phạm ở đây. Nhưng bàn cờ đang mời
+     làm đúng cái mà tầng đang cấm, và nó mời bằng điểm số.
+
+     Nên tầng nào có cú hích khai câu ấy thì màn NÓI NGAY TRÊN BÀN, kèm
+     chỗ đọc ra. Đọc từ câu chứ không gắn cứng vào T1: mai kho đổi câu
+     thì máy đổi theo, mà kho khai câu ấy cho tầng khác thì máy cũng nói. */
+  G.bcKhongSua = function (tang) {
+    var ch = (G.CUHICH || []).filter(function (x) { return x.tier === tang; })[0];
+    var m = /(không sửa gì cả[^\.]*)\./i.exec((ch && ch.hua) || '');
+    if (!m) return null;
+    /* Vì sao — lấy từ chính việc nhỏ khai điều ấy trong bánh đà, không
+       viết lại ở đây. BD1-03 'Không sửa gì trong bảy ngày'. */
+    var vi = null, viec = null;
+    (G.BD_LON || []).forEach(function (b) {
+      (b.nho || []).forEach(function (n) {
+        if (!vi && /không sửa gì/i.test(n.ten || '')) { vi = n.thay; viec = n.ma; }
+      });
+    });
+    return { cau: m[1], docTu: 'CUHICH.' + ch.ma + '.hua', vi: vi, viecDocTu: viec };
+  };
+
+  /* ═══════════ MỘT MÔ THỨC LẶP, KHOANH Ở CUỐI ═══════════
+     Cũng từ câu ấy: 'CUỐI TUẦN đọc lại và chỉ ra một mô thức lặp.' Và
+     bánh đà một khai hai việc nhỏ đúng cho chỗ này: BD1-09 'Khoanh một
+     nếp — chọn đúng MỘT thứ lặp lại đủ để gọi là nếp' và BD1-10 'Nói
+     lại nếp ấy bằng lời của mình, không dùng chữ của Học viện'.
+
+     KHOANH SỚM THÌ KHÔNG CHO KHOANH. Khoanh nếp ở tối thứ hai là rút
+     kết luận từ hai tối — đúng cái sai mà cả tầng một dựng lên để
+     tránh. Đây là chỗ DUY NHẤT trong bàn cờ có cổng, và nó có cổng vì
+     kho khai chữ 'cuối tuần' chứ không phải vì tôi thấy nên có. */
+  G.bcNepDoi = function (tang) {
+    var ch = (G.CUHICH || []).filter(function (x) { return x.tier === tang; })[0];
+    if (!/chỉ ra một mô thức lặp/i.test((ch && ch.hua) || '')) return null;
+    var can = G.bcSoNgay(tang), s = soCua(tang), d0 = ngayDau(s);
+    var qua = d0 ? Math.floor((new Date(G.bcNgay() + 'T00:00:00').getTime() -
+      new Date(d0 + 'T00:00:00').getTime()) / 86400000) + 1 : 0;
+    return { docTu: 'CUHICH.' + ch.ma + '.hua', can: can, qua: qua,
+      moDuoc: !!(can && qua >= can), conThieu: can ? Math.max(0, can - qua) : null,
+      daGhi: G.bcNep(tang) };
+  };
+  G.bcNep = function (tang) {
+    return ((G.S && G.S.bcNep) || {})[tang] || null;
+  };
+  G.bcGhiNep = function (tang, nep, loiMinh) {
+    var d = G.bcNepDoi(tang);
+    if (!d) return { ok: false, y: 'Tầng này không khai việc khoanh một nếp.' };
+    if (!d.moDuoc) return { ok: false, y: 'Còn ' + d.conThieu +
+      ' tối nữa. Khoanh nếp ở giữa chặng là rút kết luận từ mấy tối, ' +
+      'mà cả chặng này dựng lên để tránh đúng chuyện ấy.' };
+    if (!String(nep || '').trim()) return { ok: false, y: 'Chưa ghi được — nếp để trống.' };
+    if (!String(loiMinh || '').trim()) return { ok: false, y:
+      'Còn thiếu câu nói lại bằng lời của nhà mình. Nhắc đúng thuật ngữ thì chưa phải là hiểu.' };
+    G.S.bcNep = G.S.bcNep || {};
+    G.S.bcNep[tang] = { nep: String(nep).trim(), loi: String(loiMinh).trim(),
+      ngay: G.bcNgay() };
+    if (G.save) G.save();
+    return { ok: true };
+  };
+
+  G.bcDoiGiKhiXong = function (tang) {
+    var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
+    return (t && t.doiGiKhiXong) || null;
+  };
+
   G.bcMoiNoi = function (tang) {
     var v = G.bcVong(tang); if (!v || v.soVong < 2) return null;
     var s = soCua(tang), d0 = ngayDau(s); if (!d0) return null;
@@ -23186,6 +23278,15 @@ G.VIEWS = G.VIEWS || {};
          chính bàn này — nên nó phải đứng ngay trên bàn. */
       var tt = G.bcThuThach(tang);
       if (tt) o += '<p class="bc-thuthach"><b>Việc của tầng này:</b> ' + h(tt) + '</p>';
+      /* Cảnh báo đứng TRÊN bàn và trên mười gợi ý. Đứng dưới thì nhà
+         mình đã đọc xong danh sách việc rồi mới gặp câu bảo đừng làm. */
+      var ks = G.bcKhongSua(tang);
+      if (ks) o += '<div class="bc-dung"><b>' + h(ks.cau.toUpperCase()) + '</b>' +
+        '<p>Chặng này chỉ có một việc: NHÌN và GHI. Mười gợi ý bên dưới đều là việc ' +
+        'nhìn và ghi — không phải việc sửa.</p>' +
+        (ks.vi ? '<p>' + h(ks.vi) + '</p>' : '') +
+        '<p class="dim">(đọc từ ' + h(ks.docTu) +
+        (ks.viecDocTu ? ' · ' + h(ks.viecDocTu) : '') + ')</p></div>';
       /* Tầng nào khai điều kiện 'nhịp nhà mình không tụt' thì ĐO nó ngay
          ở đây. Điều kiện in ra mà không ai đo thì nó chỉ là một câu văn. */
       var nk = G.bcNhipKhongTut(tang);
@@ -23213,6 +23314,17 @@ G.VIEWS = G.VIEWS || {};
       if (kn) o += '<div class="bc-baotruoc"><b>Chỗ khó nhất của tầng này — nói trước</b>' +
         '<p>' + h(kn) + '</p>' +
         '<p class="dim">' + h((G.BC_VONG_LUAT || {}).viBaoTruoc || '') + '</p></div>';
+      /* Khoanh nếp — đứng ngay dưới bàn, vì nó là việc ĐỌC LẠI cái bàn. */
+      var nd = G.bcNepDoi(tang);
+      if (nd) o += veNep(tang, nd);
+      /* Xong tầng thì nói ra nhà mình vừa đổi được gì. Câu ấy nằm ở
+         HT_TANG.doiGiKhiXong từ lâu mà chưa màn nào nói ra đúng lúc —
+         và đúng lúc của nó là lúc bàn vừa kín. */
+      if (d.xong) {
+        var dx = G.bcDoiGiKhiXong(tang);
+        if (dx) o += '<div class="bc-doi"><b>Bàn này đã kín. Nhà mình đổi được gì</b>' +
+          '<p>' + h(dx) + '</p></div>';
+      }
       o += '<p class="bc-y">' + h(loi.viKienTri || '') + '</p>';
     }
 
@@ -23330,6 +23442,17 @@ G.VIEWS = G.VIEWS || {};
         if (U.toast) U.toast('Chưa ghi được — câu mới không được để trống.', 'err');
         return;
       }
+      G.render(); return;
+    }
+    var np = e.target.closest && e.target.closest('[data-bcnep]');
+    if (np) {
+      var tg = np.getAttribute('data-bcnep');
+      var nep = window.prompt('Một thứ lặp lại đủ để gọi là nếp — đúng MỘT thôi:', '');
+      if (nep === null) return;
+      var loi = window.prompt('Nói lại nếp ấy bằng lời của nhà mình:', '');
+      if (loi === null) return;
+      var kn = G.bcGhiNep(tg, nep, loi);
+      if (!kn.ok) { if (U.toast) U.toast(kn.y, 'err'); return; }
       G.render(); return;
     }
     var vv = e.target.closest && e.target.closest('[data-bcvai]');

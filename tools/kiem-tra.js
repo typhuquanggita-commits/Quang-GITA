@@ -8045,6 +8045,58 @@ const { chromium } = require(PW);
       G.S.bcTang = 'T1'; G.S.banCo.T1 = {}; dat5('T1', 5, 0, 4);
       r.banNganKhongChiaThang = G.VIEWS['ban-co']().indexOf('bc-vong thang') < 0;
 
+
+      /* ══════ TẦNG MỘT: BÀN CỜ BẢO LÀM, MÀ TẦNG BẢO ĐỪNG ══════
+         Cú hích tầng một hứa 'không sửa gì cả', còn bàn cờ thì bày mười
+         việc kèm điểm và mời làm ngay tối nay. Nhà mình làm theo bàn thì
+         bảy ngày ghi được là đường nền ĐÃ BỊ BÓP — mà cả chặng ấy chỉ đi
+         lấy đúng một thứ là đường nền thật. */
+      const ch1 = G.CUHICH.filter(x => x.tier === 'T1')[0], luuHua = ch1.hua;
+      const ks1 = G.bcKhongSua('T1');
+      r.camSua = !!ks1 && /không sửa gì cả/i.test(ks1.cau) && ks1.viecDocTu === 'BD1-03';
+      /* ĐỌC TỪ CÂU, không gắn cứng vào mã tầng: bỏ câu ấy đi thì máy im,
+         và tầng khác không khai câu ấy thì tầng khác không bị nói. */
+      ch1.hua = 'Cả nhà cùng ghi nhật ký bảy tối.';
+      r.camSuaDocTuCau = G.bcKhongSua('T1') === null;
+      ch1.hua = luuHua;
+      r.camSuaTangKhacIm = G.bcKhongSua('T2') === null && G.bcKhongSua('T3') === null;
+
+      /* CỔNG DUY NHẤT CỦA BÀN CỜ: khoanh nếp chỉ mở ở CUỐI chặng.
+         Khoanh nếp ở tối thứ ba là rút kết luận từ ba tối — đúng cái sai
+         mà cả chặng dựng lên để tránh. */
+      G.S.banCo = { T1: {} }; G.S.bcNep = {};
+      const dat1 = (lui, tu, den) => { const g = new Date(new Date().getTime() - lui * 86400000);
+        for (let i = tu; i <= den; i++)
+          G.S.banCo.T1[G.bcNgay(new Date(g.getTime() + i * 86400000))] = oDay3(); };
+      dat1(2, 0, 2);
+      r.nepCongDong = G.bcNepDoi('T1').moDuoc === false &&
+        G.bcNepDoi('T1').conThieu === 4 &&
+        G.bcGhiNep('T1', 'nếp', 'lời').ok === false && G.bcNep('T1') === null;
+      /* Đủ bảy tối thì mở — và đòi ĐỦ HAI Ô: nếp, và nếp nói lại bằng
+         lời nhà mình. Nhắc đúng thuật ngữ thì chưa phải là hiểu. */
+      G.S.banCo = { T1: {} }; dat1(6, 0, 6);
+      r.nepCongMo = G.bcNepDoi('T1').moDuoc === true &&
+        G.bcGhiNep('T1', 'một nếp', '').ok === false &&
+        G.bcGhiNep('T1', '', 'lời của mình').ok === false &&
+        G.bcGhiNep('T1', 'Con rời bàn lúc 8h30', 'Cứ tới lúc phim là con đứng dậy').ok === true;
+      r.nepTangKhacKhongCo = G.bcNepDoi('T2') === null && G.bcNepDoi('T5') === null;
+
+      /* Trên màn: cảnh báo đứng TRƯỚC mười gợi ý, không phải sau — đứng
+         sau thì nhà mình đã đọc xong danh sách việc kèm điểm rồi mới gặp
+         câu bảo đừng làm. */
+      G.S.bcTang = 'T1';
+      const man1 = G.VIEWS['ban-co']();
+      r.manCamSua = /class="bc-dung"/.test(man1) && man1.indexOf('KHÔNG SỬA GÌ CẢ') >= 0 &&
+        man1.indexOf('class="bc-dung"') < man1.indexOf('MƯỜI VIỆC GỢI Ý');
+      r.manNep = /class="bc-nep xong"/.test(man1) && man1.indexOf('phim') >= 0;
+      /* Bàn kín thì nói ra nhà mình đổi được gì — câu ấy nằm ở
+         HT_TANG.doiGiKhiXong từ lâu mà chưa màn nào nói ra đúng lúc. */
+      r.manDoiGi = man1.indexOf(G.U.h('tôi không phải người kỷ luật')) >= 0;
+      G.S.bcTang = 'T3';
+      const manK = G.VIEWS['ban-co']();
+      r.manT3SachSe = manK.indexOf('class="bc-dung"') < 0 && manK.indexOf('class="bc-nep') < 0;
+      G.S.bcNep = {};
+
       G.S.bcTang = 'T1'; G.S.banCo = JSON.parse(giuT3);
       /* Biến của vòng: ghi được, và câu mới để trống thì không ghi */
       G.S.bcBien = {};
@@ -8098,6 +8150,11 @@ const { chromium } = require(PW);
           ra.manT3 && ra.manHaiChoKho,
         'TẦNG BA KHÁC TẦNG HAI Ở BA CHỖ, và cả ba đều đã nằm sẵn trong kho. MỘT: chỗ khó của nó là HAI chuỗi liền — "Chuỗi thứ hai và thứ ba. Không biến cố nào, không kết quả nào, chỉ là dài" — nên cách đọc chỗ khó phải trả về DANH SÁCH; trả về một số thì tầng ba lặng thinh đúng ở tầng dài nhất trước khi sang năm, và lặng thinh ấy không đỏ ở đâu cả. HAI: thử thách của nó đòi bốn chuỗi NỐI NHAU, mà nối nhau là chuyện của đúng một cái khớp — tối cuối chuỗi này và tối đầu chuỗi sau; bốn chuỗi rời nhau là bốn lần bắt đầu lại, và bốn lần bắt đầu lại không phải chín mươi ngày. Khớp hở thì HIỆN RA chứ không phạt, và khớp CHƯA TỚI thì im — báo hở một cái khớp chưa tới là bịa. BA: trong quãng "không kết quả nào" thì kết quả duy nhất có thật là CHÍNH CHUỖI TRƯỚC của nhà mình, và nó nằm sẵn trên bàn cờ chứ không phải đi vay. So với chính mình, không so với nhà khác — luật 11 đã cấm bảng vàng. Kho còn gọi vòng của tầng ba là CHUỖI và tầng bốn là CHU KỲ, nên màn gọi đúng chữ ấy thay vì gọi tất cả là "vòng"',
         'T3 chỗ khó = [2,3] · chuỗi 1: 5 ô → chuỗi 2: 9 ô (+4) · chuỗi 3 đang đi ngày 3, chuỗi trước cùng ngày 2 ô · chuỗi 4 chưa tới thì không so · khớp 1→2 hở · khớp 3→4 chưa tới thì im');
+      bao(ra.camSua && ra.camSuaDocTuCau && ra.camSuaTangKhacIm && ra.nepCongDong &&
+          ra.nepCongMo && ra.nepTangKhacKhongCo && ra.manCamSua && ra.manNep &&
+          ra.manDoiGi && ra.manT3SachSe,
+        'TẦNG MỘT: BÀN CỜ BẢO LÀM, MÀ TẦNG BẢO ĐỪNG. Cú hích tầng một hứa nguyên văn "Cả nhà cùng ghi nhật ký bảy tối. KHÔNG SỬA GÌ CẢ. Cuối tuần đọc lại và chỉ ra một mô thức lặp" — còn bàn cờ thì bày ra mười việc kèm ĐIỂM SỐ và mời làm ngay tối nay. Một nhà tầng một đọc màn ấy sẽ bắt đầu đổi giờ học, đặt luật mới, sửa chỗ này chỗ kia; và bảy ngày ghi được sẽ là đường nền ĐÃ BỊ BÓP, không phải đường nền thật — mà cả tầng một chỉ có đúng một việc là lấy cho được đường nền thật ấy. Không luật nào của bàn cờ bị vi phạm ở đây, nhưng bàn cờ đang mời làm đúng cái mà tầng đang cấm, và nó mời bằng điểm số — thứ khó cưỡng hơn một lời khuyên nhiều. Nên câu cấm ĐỨNG TRÊN bàn và TRÊN mười gợi ý: đứng dưới thì nhà mình đã đọc xong danh sách việc rồi mới gặp câu bảo đừng làm. KHOANH MỘT NẾP CHỈ MỞ Ở CUỐI CHẶNG — đây là chỗ DUY NHẤT trong bàn cờ có cổng, và nó có cổng vì kho khai chữ "cuối tuần" chứ không phải vì thấy nên có: khoanh nếp ở tối thứ ba là rút kết luận từ ba tối, đúng cái sai mà cả chặng dựng lên để tránh. Đòi đủ HAI ô — nếp, và nếp nói lại BẰNG LỜI NHÀ MÌNH — vì nhắc đúng thuật ngữ của Học viện thì chưa phải là hiểu. Cả hai đọc từ CÂU của kho chứ không gắn cứng vào mã tầng, nên tầng hai tới tầng năm không bị nói lây',
+        'T1 cấm sửa (đọc từ CUHICH.CH-01.hua · vì sao từ BD1-03) · 3/7 tối thì cổng đóng · đủ 7 thì mở và đòi đủ hai ô · T2–T5 không có cả hai');
       bao(ra.nhipChiaNgayDaQua && ra.nhipTut && ra.nhipDocTuCau && ra.nhipChuaDo &&
           ra.nhipGiu && ra.chiaThang && ra.thangDuOMotLan && ra.oChuaToi &&
           ra.noiKhongKhaiVong && ra.choChuHienT5 && ra.choChuKhongHienT3 &&
