@@ -366,35 +366,19 @@ G.VIEWS['ngon-tu'] = function(){
 };
 
 /* ══════════════════ 03 · TRỢ LÝ GITA ══════════════════ */
-G.VIEWS['tro-ly'] = function(){
-  var goi = ['Con tôi ôm điện thoại, tôi nên bắt đầu từ đâu?','Buổi ngồi lại hàng tuần chạy thế nào?',
-    'Làm sao biết đã qua chặng?','Khách nói chỗ nào cũng nói hay, tôi trả lời sao?',
-    'Chín vai trong nhà gồm những vai gì?','Tầng 1 được nói gì và không được nói gì?'];
-  var f = G.myFamily(), t = G.tierOf(f.tier);
-  var o = U.ph({eyebrow:'NHÓM 03 · KHO BÁU VẬT', ic:'spark', grad:1, t:'Trợ lý GITA',
-    lead:'Hỏi bằng lời thường, gõ hoặc nói. Trợ lý tra trong kho phác đồ, kịch bản, mô thức và bài học của chính hệ thống, trả lời trong đúng phạm vi tầng của nhà mình và luôn nêu nguồn.'});
+/* ═══ MÀN TRỢ LÝ CŨ ĐÃ GỠ Ở BẢN 9.48 ═══
+   Ba tệp cùng gán G.VIEWS['tro-ly']: views2.js, tro-ly-ai.js và
+   tro-ly-chat.js. Nạp theo thứ tự trong danh-sach-src.json nên tệp cuối
+   thắng, và HAI BẢN TRƯỚC là mã chết — chạy không bao giờ tới.
 
-  o += '<div class="card"><div class="row wrap" style="gap:10px;margin-bottom:14px">'+
-    '<input id="aiQ" placeholder="Hỏi bất cứ điều gì về hành trình của nhà mình…" '+
-    'style="flex:1;min-width:220px;background:var(--phu-2);border:1px solid var(--line);border-radius:99px;padding:13px 20px;font-size:14.5px;outline:none">'+
-    '<button class="tbtn" id="micBtn" data-act="mic" aria-label="Nói vào micro" '+
-    'style="width:46px;height:46px;border-radius:50%">'+ic('pulse','w-5 h-5')+'</button>'+
-    '<button class="btn pri" data-act="ai-ask">'+ic('spark')+'Hỏi</button></div>'+
-    '<div class="row wrap" style="gap:6px">'+goi.map(function(g){
-      return '<button class="chip" data-aiq="'+h(g)+'">'+h(g)+'</button>';}).join('')+'</div>'+
-    '<div id="aiOut" class="mt2"></div></div>';
+   Không phải chuyện dọn dẹp cho gọn. Bản ở đây in ra câu "trả lời trong
+   đúng phạm vi tầng của nhà mình" trong khi không dòng nào lọc theo
+   tầng; câu ấy nằm lại nhiều tháng, không ai đọc thấy vì màn không bao
+   giờ hiện, và nó là bản mô tả duy nhất người sau đọc được khi đi tìm
+   xem hệ có lọc tầng hay không. Một lời hứa nằm trong mã chết vẫn là
+   một lời hứa sai.
 
-  o += '<div class="grid g3 mt2">'+
-    '<div class="card pad-sm" style="border-color:'+t.c+'2a"><div class="tiny up mb" style="color:'+t.c+'">ĐANG TRẢ LỜI Ở PHẠM VI</div>'+
-      '<b class="sm" style="display:block;color:'+t.c+'">'+h(t.code+' · '+G.tname(t))+'</b>'+
-      '<p class="tiny muted mt" style="line-height:1.55">'+h(t.note)+'</p></div>'+
-    '<div class="card pad-sm"><div class="tiny up mb muted">NÓI THAY VÌ GÕ</div>'+
-      '<p class="tiny muted" style="line-height:1.6">Bấm nút micro rồi nói bằng tiếng Việt. Trên máy không hỗ trợ nhận giọng nói, nút sẽ báo và anh chị gõ như bình thường.</p></div>'+
-    '<div class="card pad-sm"><div class="tiny up mb muted">KHI NÀO CẦN NGƯỜI THẬT</div>'+
-      '<p class="tiny muted" style="line-height:1.6">Buổi khó, xung đột đang leo thang, quyết định chuyển tầng — trợ lý chuyển thẳng tới coach phù hợp nhất thay vì tự trả lời.</p></div>'+
-  '</div>';
-  return o;
-};
+   Màn thật ở src/tro-ly-chat.js. Lọc tầng ở src/tro-ly-tang.js. */
 /* ═══════════════ 04 · CHÍN VAI GIỮ TRONG NHÀ ═══════════════ */
 G.VIEWS['chin-vai'] = function(){
   var V = G.VANHANH, f = G.myFamily();

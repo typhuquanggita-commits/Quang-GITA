@@ -38,23 +38,23 @@ function tachTu(s){
 /* ─── Nguồn tra cứu: mỗi nguồn khai trường nào đáng cân nặng bao nhiêu ─── */
 function nguon(){
   return [
-    {kho:G.MOTHUC,   loai:'Mô thức',   mau:'#2A72C6', go:'mo-thuc',
+    {kho:G.MOTHUC,   ten_kho:'MOTHUC',   loai:'Mô thức',   mau:'#2A72C6', go:'mo-thuc',
      ma:function(x){ return x.id; }, ten:function(x){ return x.title; },
      than:function(x){ return [x.title, (x.keywords||[]).join(' '), x.summary]; }},
-    {kho:G.PHACDO,   loai:'Phác đồ',   mau:'#5140B4', go:'phac-do',
+    {kho:G.PHACDO, ten_kho:'PHACDO', loai:'Phác đồ',   mau:'#5140B4', go:'phac-do',
      ma:function(x){ return x.ma; }, ten:function(x){ return x.ten; },
      than:function(x){ return [x.ten, x.nhomTen, x.nguyenNhan, x.giaiPhap]; }},
-    {kho:G.KICHBAN,  loai:'Kịch bản',  mau:'#0B6675', go:'kich-ban',
+    {kho:G.KICHBAN, ten_kho:'KICHBAN', loai:'Kịch bản',  mau:'#0B6675', go:'kich-ban',
      ma:function(x){ return x.ma; }, ten:function(x){ return x.ten; },
      than:function(x){ return [x.ten, x.mo, x.muc, x.tang]; }},
     /* Kho 250 tình huống dùng tên trường riêng: th · mo · pt · gp · key.
        Bản trước đọc x.ten và x.tinhHuong nên không bao giờ trúng — cả kho
        này im lặng suốt. Đọc đúng trường thì nó trả lời được. */
-    {kho:G.TINHHUONG,loai:'Tình huống',mau:'#0B7350', go:'tinh-huong',
+    {kho:G.TINHHUONG, ten_kho:'TINHHUONG', loai:'Tình huống',mau:'#0B7350', go:'tinh-huong',
      ma:function(x){ return x.key || x.ma || ('TH-' + x.stt); },
      ten:function(x){ return x.th || x.ten || x.tinhHuong; },
      than:function(x){ return [x.th, x.mo, x.pt, x.gp, x.chot]; }},
-    {kho:G.BAIHOC,   loai:'Bài học',   mau:'#0B7350', go:'tu-duy',
+    {kho:G.BAIHOC, ten_kho:'BAIHOC', loai:'Bài học',   mau:'#0B7350', go:'tu-duy',
      ma:function(x){ return x.id; }, ten:function(x){ return x.ten; },
      than:function(x){ return [x.ten, x.nguyenLy, x.apDung]; }}
   ].filter(function(n){ return Array.isArray(n.kho) && n.kho.length; });
@@ -104,6 +104,10 @@ G.aiTra = function(cauHoi){
   var tu = tachTu(cauHoi);
   if(!tu.length) return [];
   var ra = [];
+  /* Tầng của người đang hỏi. null nghĩa là KHÔNG LỌC (người trong nghề),
+     không phải tầng 0 — hai thứ ấy khác nhau, tầng 0 thì chặn hết. */
+  var tangNha = G.aiTangNha ? G.aiTangNha() : null;
+  var giuLai = 0, khoChuaKhai = [];
   nguon().forEach(function(n){
     n.kho.forEach(function(x){
       var truong = n.than(x).map(function(v){ return boDau(v); });
@@ -113,7 +117,19 @@ G.aiTra = function(cauHoi){
         for(var i = 1; i < truong.length; i++)
           if(truong[i] && truong[i].indexOf(t) >= 0){ diem += 2; break; }
       });
-      if(diem >= 5) ra.push({
+      if(diem < 5) return;
+      /* ── TRẦN TẦNG ──
+         Khác trần 30%: vượt tầng thì KHÔNG hiện gì cả, kể cả tên. Tư
+         liệu tầng trên đọc mà không dùng được vì nền chưa có, và hiện
+         tên ra chỉ tạo một cơn thèm không giúp gì cho tối nay.
+         Đếm số bị giữ lại để nói ra — giấu con số ấy thì nhà mình tưởng
+         kho chỉ có bấy nhiêu. */
+      if(G.aiTrongTang){
+        var tt = G.aiTrongTang(n.ten_kho, x, tangNha);
+        if(!tt.ok){ giuLai++; return; }
+        if(tt.chuaKhaiTang && khoChuaKhai.indexOf(n.ten_kho) < 0) khoChuaKhai.push(n.ten_kho);
+      }
+      ra.push({
         diem: diem, loai: n.loai, mau: n.mau, go: n.go,
         ma: n.ma(x) || '', ten: n.ten(x) || '',
         tom: String(n.than(x)[2] || n.than(x)[1] || '').slice(0, 260)
@@ -137,6 +153,12 @@ G.aiTra = function(cauHoi){
      đường mà cả người làm việc lẫn người gom kho đều phải đi qua. */
   if(G.chamTaiNguyen) loc.forEach(function(x){ G.chamTaiNguyen(x.loai, x.ma); });
 
+  /* Gắn con số vào chính mảng kết quả thay vì trả về một hình khác: bảy
+     chỗ đang gọi aiTra và đều mong một MẢNG. Đổi hình trả về là sửa bảy
+     chỗ, mà quên một chỗ thì nó im lặng hỏng. */
+  loc.giuLaiVuotTang = giuLai;
+  loc.khoChuaKhaiTang = khoChuaKhai;
+  loc.tangNha = tangNha;
   return loc;
 };
 
@@ -189,14 +211,27 @@ G.aiTraLoi = function(cauHoi){
     return {khan:true, loi:(y[giong] || LOI_KHAN), nguon:[], y:y};
   }
 
+  /* ── HỎI VỀ MỘT VIỆC TRONG KHO THỰC HÀNH ──
+     Đứng TRƯỚC phần tra kho: người hỏi "làm sao làm BD1-03" cần bốn nhịp
+     dẫn việc ấy, không cần mười hai tư liệu có chữ "ghi" trong đó. Một
+     việc một lượt — đổ ra cả bánh đà là trả lại đúng cái bảng họ đang
+     thấy khó, mà họ hỏi chính vì cái bảng ấy quá nhiều. */
+  var viec = G.aiDanViec ? G.aiDanViec(cauHoi) : null;
+
   var tim = G.aiTra(cauHoi);
   return {
     khan: false,
     y: y,
     loi: y ? y[giong] : null,
-    chuaCo: !tim.length,
-    thieu: !tim.length ? (K.chuaCo ? K.chuaCo[giong] : '') : '',
+    viec: viec,
+    chuaCo: !tim.length && !viec,
+    thieu: (!tim.length && !viec) ? (K.chuaCo ? K.chuaCo[giong] : '') : '',
     chot: K.chot ? K.chot[giong] : '',
+    /* Ba con số này nói cái trợ lý KHÔNG đưa ra, và chúng phải đi cùng
+       câu trả lời chứ không nằm lại trong hàm tra. */
+    giuLaiVuotTang: tim.giuLaiVuotTang || 0,
+    khoChuaKhaiTang: tim.khoChuaKhaiTang || [],
+    tangNha: tim.tangNha,
     nguon: tim
   };
 };
@@ -274,52 +309,15 @@ function veKhung(){
   o.scrollTop = o.scrollHeight;
 }
 
-G.VIEWS['tro-ly'] = function(){
-  var K = G.KICHBAN_AI;
-  var khach = G.LA_KHACH && G.LA_KHACH();
-  var f = G.myFamily ? G.myFamily() : null;
-  var t = f && G.tierOf ? G.tierOf(f.tier) : null;
+/* ═══ MÀN TRỢ LÝ CŨ ĐÃ GỠ Ở BẢN 9.48 ═══
+   Bản này bị src/tro-ly-chat.js đè (nạp sau trong danh-sach-src.json),
+   nên nó chưa từng hiện ra kể từ v8.2. Gỡ đi để đọc mã là biết đúng một
+   màn đang chạy — chứ không phải đọc ba bản rồi tự đoán bản nào thắng.
 
-  var o = U.ph({eyebrow:'TRỢ LÝ GITA', ic:'spark', grad:1,
-    t: khach ? 'Hỏi gì cũng được' : 'Trợ lý tra kho',
-    lead: K ? K.moDau[khach ? 'nha' : 'nghe'] :
-      'Trợ lý tra trong kho của Học viện và luôn nêu nguồn.'});
+   Phần TRA KHO ở nửa trên tệp này VẪN CHẠY và là bản duy nhất: G.aiTra,
+   G.aiTraLoi, lưới an toàn DAU_KHAN. Chỉ phần vẽ màn là chết.
 
-  o += '<div class="card ai-hop">'+
-    '<div id="aiKhung" class="ai-khung">'+
-      (G.AI_HOI.length ? '' :
-       '<div class="ai-trong">'+ic('spark','w-8 h-8')+
-       '<p>Gõ câu hỏi bên dưới, hoặc bấm một gợi ý.</p></div>')+
-    '</div>'+
-    '<div class="ai-go">'+
-      '<input id="aiQ" placeholder="'+(khach?'Nhà mình đang mắc chuyện gì?':'Tra phác đồ, kịch bản, mô thức, tình huống…')+'" autocomplete="off">'+
-      '<button class="btn pri" data-act="ai-ask">'+ic('arrow','w-4 h-4')+'Hỏi</button>'+
-    '</div>'+
-    '<div class="row wrap" style="gap:6px;margin-top:10px">'+
-      goiY().map(function(g){ return '<button class="chip" data-aiq="'+h(g)+'">'+h(g)+'</button>'; }).join('')+
-    '</div></div>';
-
-  /* Trợ lý làm được gì và KHÔNG làm gì — nói trước, không để ai kỳ vọng sai */
-  o += '<div class="row wrap mt2" style="gap:12px;align-items:stretch">'+
-    '<div class="card" style="flex:1;min-width:270px;border-color:var(--gita-vien-1)">'+
-      '<div class="up mb" style="color:var(--gita-ink)">'+ic('check','w-4 h-4')+' TRỢ LÝ LÀM ĐƯỢC</div>'+
-      U.list([
-        'Tra trong kho của Học viện và chỉ ra đúng tư liệu, có mã để mở lại.',
-        'Trả lời trong đúng phần vai và chặng của tài khoản đang dùng.',
-        'Chạy hoàn toàn trong máy — không gửi câu hỏi của gia đình đi đâu cả.'
-      ])+'</div>'+
-    '<div class="card" style="flex:1;min-width:270px">'+
-      '<div class="up mb" style="color:var(--gita-do-ink)">'+ic('x','w-4 h-4')+' TUYỆT ĐỐI KHÔNG LÀM</div>'+
-      (K ? U.list(K.khongLam.slice(0, 5), 'var(--gita-do)') : '')+'</div></div>';
-
-  if(t) o += '<div class="card pad-sm mt2" style="border-color:'+t.c+'44">'+
-    '<div class="tiny up mb" style="color:'+t.c+'">ĐANG TRẢ LỜI TRONG PHẠM VI</div>'+
-    '<b class="sm" style="color:'+t.c+'">'+h(t.code+' · '+G.tname(t))+'</b>'+
-    '<p class="tiny muted mt" style="line-height:1.55">'+h(t.note)+'</p></div>';
-
-  setTimeout(veKhung, 0);
-  return o;
-};
+   Màn thật: src/tro-ly-chat.js. Lọc theo tầng: src/tro-ly-tang.js. */
 
 /* Nút trợ lý nổi — mở được từ mọi màn hình */
 G.moTroLy = function(){ G.go('tro-ly'); };

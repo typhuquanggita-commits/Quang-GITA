@@ -171,9 +171,13 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */
-  /* Luật xem hồ sơ khách hàng — chính sách, không phải dữ liệu khách.
-     Ở gói NGHỀ vì chỉ người của Học viện mới cần đọc nó. */
-  'XK_TRAN', 'XK_MUC', 'XK_CAM', 'XK_LUAT', 'XK_GIAYPHEP', 'XK_CHOCHU',
+  /* Luật trợ lý: lọc theo tầng và dẫn việc. Ở gói NỀN, và phải ở gói NỀN:
+     chính KHÁCH HÀNG là người cần nó. TL_TANG_TRUONG là bảng nói kho nào
+     khai tầng ở trường nào — thiếu nó thì aiLocTangDuoc() trả về false
+     cho mọi kho, và trần tầng tắt ngóm đúng trên máy của người nó sinh ra
+     để bảo vệ. Đặt nhầm sang gói NGHỀ thì đội ngũ có luật còn khách hàng
+     thì không, mà đội ngũ lại là bên KHÔNG bị lọc. */
+  'TL_TANG_TRUONG', 'TL_TANG_LUAT', 'TL_VIEC_NHIP', 'TL_VIEC_LUAT', 'TL_VIEC_DAU',
   'HH_KEM', 'HH_BAC', 'HH_BAC_LUAT', 'HH_KHONG_TIEN', 'HH_CHUNGCU', 'HH_LOAI_CC', 'HH_CC_LUAT', 'HH_CHOCHU', 'HH_DA_CHOT',
   'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_MUC', 'TG_VIEC',
   'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT', 'TG_QUYDOI',
@@ -200,6 +204,10 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
   'SOAT_BAT_BUOC', 'SOAT_THA', 'SOAT_MOC', 'SOAT_CHATLUONG'];
 
 const NGHE = [
+  /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
+     đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
+     G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */
+  'XK_TRAN', 'XK_MUC', 'XK_CAM', 'XK_LUAT', 'XK_GIAYPHEP', 'XK_CHOCHU',
   /* ── FAMILIES VỀ GÓI NGHỀ TỪ BẢN 9.41 ──
      Kho này mang hồ sơ MƯỜI nhà: tên nhà, tên học viên, lớp, TÊN BỐ MẸ,
      tên Coach, điểm tự chủ, band màu, kỳ tích. Nó nằm ở gói NỀN từ đầu,
@@ -853,6 +861,8 @@ const mau = {
   TIN_TIEUCHI: G.TIN_TIEUCHI, TIN_TIEUCHI_LUAT: G.TIN_TIEUCHI_LUAT,
   TIN_THUONG: G.TIN_THUONG, TIN_CAM: G.TIN_CAM, TIN_LUAT: G.TIN_LUAT,
   TG_MUC: G.TG_MUC, TG_VIEC: G.TG_VIEC,
+  TL_TANG_TRUONG: G.TL_TANG_TRUONG, TL_TANG_LUAT: G.TL_TANG_LUAT,
+  TL_VIEC_NHIP: G.TL_VIEC_NHIP, TL_VIEC_LUAT: G.TL_VIEC_LUAT, TL_VIEC_DAU: G.TL_VIEC_DAU,
   XK_TRAN: G.XK_TRAN, XK_MUC: G.XK_MUC, XK_CAM: G.XK_CAM, XK_LUAT: G.XK_LUAT,
   XK_GIAYPHEP: G.XK_GIAYPHEP, XK_CHOCHU: G.XK_CHOCHU,
   HH_KEM: G.HH_KEM, HH_BAC: G.HH_BAC, HH_BAC_LUAT: G.HH_BAC_LUAT, HH_KHONG_TIEN: G.HH_KHONG_TIEN,

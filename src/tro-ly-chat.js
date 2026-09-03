@@ -117,6 +117,30 @@ function theDap(d){
     '<span>'+h(d.y.ten)+' · nhịp '+h(d.y.nhip)+'</span></div>';
   if(d.loi) o += '<p class="ai-loi">'+h(d.loi)+'</p>';
 
+  /* ── BỐN NHỊP DẪN MỘT VIỆC ──
+     Đặt TRƯỚC danh sách tư liệu: người hỏi về một việc cần biết tối nay
+     làm gì, không cần mười hai tư liệu trước đã. */
+  if(d.viec && d.viec.vuotTang)
+    o += '<div class="ai-viec ai-viec-cho">'+ic('lock','w-4 h-4')+
+      '<div><b>'+h(d.viec.ma)+' — việc của tầng '+h(String(d.viec.tang).slice(1))+'</b>'+
+      '<p>'+h(d.viec.y)+'</p></div></div>';
+  else if(d.viec){
+    var v = d.viec;
+    o += '<div class="ai-viec"><div class="ai-viec-h">'+
+      '<span class="ai-n-ma mono">'+h(v.ma)+'</span><b>'+h(v.ten)+'</b>'+
+      '<span class="ai-viec-bd">'+h(v.banhDa)+' · tầng '+h(String(v.tang).slice(1))+'</span></div>';
+    o += v.nhip.map(function(n){
+      return '<div class="ai-viec-n'+(n.thieu ? ' thieu' : '')+'">'+
+        '<span class="ai-viec-no">'+n.no+'</span>'+
+        '<div><b>'+h(n.ten)+'</b>'+
+        (n.thieu
+          ? '<p class="ai-viec-thieu">Kho chưa có phần này ('+h(n.docTu)+'). Em không bịa cho tròn.</p>'
+          : '<p>'+h(n.loi)+'</p>')+'</div></div>';
+    }).join('');
+    o += '<p class="ai-viec-chan">'+ic('spark','w-3 h-3')+
+      ' Bốn nhịp trên ghép từ chính kho việc — em không viết thêm câu nào.</p></div>';
+  }
+
   if(d.chuaCo)
     return o + '<p class="ai-loi">'+h(d.thieu || 'Kho chưa có phần này. Em không đoán.')+'</p>';
 
@@ -135,8 +159,22 @@ function theDap(d){
       ' phần nữa có trong kho của Học viện — đi qua Tư vấn hoặc Coach</div>';
     o += '<div class="ai-ds">'+ cho.map(function(n){ return theNguon(n, false); }).join('') +'</div>';
   }
-  if(!mo.length && !cho.length)
+  /* Câu "chưa tìm được gì khớp" CHỈ đúng khi thật sự chưa có gì. Dẫn
+     xong bốn nhịp của một việc rồi vẫn in câu ấy là tự cãi mình ngay
+     trong một lượt trả lời — người đọc sẽ tin câu sau và bỏ qua câu
+     trước, tức là bỏ qua đúng phần dùng được. */
+  if(!mo.length && !cho.length && !d.viec)
     o += '<p class="ai-loi">Em chưa tìm được gì khớp. Anh chị kể cụ thể hơn một chút được không?</p>';
+  /* NÓI RA CÁI KHÔNG ĐƯA. Giấu con số này thì nhà mình tưởng kho chỉ có
+     bấy nhiêu; nói ra thì họ biết còn đường phía trước, và biết đường ấy
+     mở bằng cách đi hết tầng đang làm chứ không bằng cách xin. */
+  if(d.giuLaiVuotTang)
+    o += '<p class="ai-tang-giu">'+ic('lock','w-3 h-3')+' '+d.giuLaiVuotTang+
+      ' tư liệu nữa thuộc tầng trên — em giữ lại. Nền của chúng nằm ở tầng nhà mình đang đi, '+
+      'nên đọc bây giờ chưa dùng được. Đi hết chặng này thì chúng mở ra.</p>';
+  if((d.khoChuaKhaiTang || []).length)
+    o += '<p class="ai-tang-chua tiny dim">Kho '+h(d.khoChuaKhaiTang.join(', '))+
+      ' chưa khai tầng nên em chưa lọc theo tầng được ở đó — phần ấy vẫn đi qua trần 30% như cũ.</p>';
   if(d.chot) o += '<p class="ai-chot">'+h(d.chot)+'</p>';
   return o;
 }

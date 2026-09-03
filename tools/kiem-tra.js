@@ -8977,6 +8977,125 @@ const { chromium } = require(PW);
         : 'T1 0% · giá đổi thành 9 triệu mà vẫn 0% · T2 vẫn 10% · quà 1 sao theo nhà được kèm · chưa vượt tầng thì chưa có gì · HH_CHOCHU rỗng có khai');
   }
 
+  /* ══════ 72. TRỢ LÝ: LỌC THEO TẦNG, VÀ DẪN TỪNG VIỆC ══════
+     Tới 9.47 hai màn in ra câu "trả lời trong đúng phạm vi tầng của nhà
+     mình" mà không dòng nào lọc theo tầng. Mục này đo cái VIỆC, không đo
+     câu hứa. */
+  {
+    await p.goto(URL, { waitUntil: 'networkidle' });
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.TL_TANG_TRUONG && window.G.BD_LON, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G, r = {};
+
+      /* ── TẦNG ĐỌC TỪ TÀI KHOẢN, KHÔNG TỪ HỒ SƠ NHÀ ──
+         Hai chỗ lệch nhau thật: tài khoản khai tang 3, bản ghi nhà nó đại
+         diện khai tier 5. Nguồn đúng là tài khoản, vì chính nó là thứ
+         goiDuocCap() dùng để xin gói tầng. */
+      r.tangTuTaiKhoan = G.aiTangNha() === Number(G.S.acc.tang) &&
+        G.aiTangNha() !== Number((G.myFamily() || {}).tier);
+
+      /* ── LỌC THẬT, KHÔNG PHẢI CÂU HỨA ── */
+      const kb = (G.KICHBAN || [])[0];
+      r.docDungTruong = G.aiTangCuaBanGhi('KICHBAN', { tang: 'T4' }) === 4 &&
+        G.aiTangCuaBanGhi('MOTHUC', { tiers: ['T2', 'T4'] }) === 2 &&
+        G.aiTangCuaBanGhi('MOTHUC', {}) === null;
+      r.vuotTangThiChan = G.aiTrongTang('KICHBAN', { tang: 'T5' }, 3).ok === false &&
+        G.aiTrongTang('KICHBAN', { tang: 'T3' }, 3).ok === true &&
+        G.aiTrongTang('KICHBAN', { tang: 'T1' }, 3).ok === true;
+      /* Người trong nghề KHÔNG bị lọc — null nghĩa là không lọc, không
+         phải tầng 0. Lẫn hai thứ ấy là Coach mất sạch kho. */
+      r.ngheKhongLoc = G.aiTrongTang('KICHBAN', { tang: 'T5' }, null).ok === true;
+      /* Kho chưa khai tầng thì nói THẲNG là chưa lọc được, không lặng lẽ
+         cho qua rồi vẫn in câu "đúng phạm vi tầng". */
+      r.chuaKhaiThiNoi = G.aiLocTangDuoc('PHACDO') === false &&
+        G.aiTrongTang('PHACDO', {}, 3).chuaKhaiTang === true &&
+        (G.TL_TANG_LUAT.khoKhongKhaiTang || []).indexOf('PHACDO') >= 0;
+
+      /* ── BỐN NHỊP GHÉP TỪ KHO, KHÔNG VIẾT MỚI ── */
+      const v = G.aiDanViec('BD1-03');
+      const bd1 = (G.BD_LON || []).filter(x => x.ma === 'BD1')[0];
+      const n3 = (bd1.nho || []).filter(x => x.ma === 'BD1-03')[0];
+      r.bonNhip = !!v && v.nhip.length === 4 && v.soThieu === 0 &&
+        v.nhip[0].loi === n3.viec && v.nhip[1].loi === n3.thay && v.nhip[2].loi === bd1.dau;
+      /* Sửa kho thì lời dẫn đổi theo — chứng minh nó TRỎ chứ không CHÉP. */
+      const luu = n3.viec; n3.viec = 'ĐÃ ĐỔI THỬ';
+      r.ghepChuKhongChep = G.aiDanViec('BD1-03').nhip[0].loi === 'ĐÃ ĐỔI THỬ';
+      n3.viec = luu;
+      /* Thiếu trường thì KHAI THIẾU, không bịa cho tròn. */
+      const luu2 = n3.thay; delete n3.thay;
+      const vt = G.aiDanViec('BD1-03');
+      r.thieuThiKhaiThieu = vt.nhip[1].thieu === true && vt.soThieu === 1 &&
+        vt.nhip[1].loi === undefined;
+      n3.thay = luu2;
+      /* Việc của bánh đà tầng trên KHÔNG dẫn cho nhà tầng dưới. */
+      const bdCao = (G.BD_LON || []).filter(x => Number(String(x.tang).slice(1)) > 3)[0];
+      r.viecVuotTangThiChan = !!bdCao &&
+        G.aiDanViec(bdCao.nho[0].ma).vuotTang === true;
+
+      /* ── ĐƯỜNG NHẬN DẠNG YẾU NHẤT ĐÃ DẪN NHẦM THẬT ──
+         "con ôm điện thoại, mình BẮT ĐẦU từ đâu" từng trúng "bắt"+"đầu"
+         của BD1-06 "Chụp lại bàn học lúc bắt đầu" — trợ lý dẫn một nhà
+         đang hỏi về điện thoại đi chụp ảnh bàn học. Đây là phép đo canh
+         đúng chỗ ấy, và nó phải đỏ nếu ngưỡng bị nới lại. */
+      const dt = G.aiDanViec('Con ôm điện thoại, mình bắt đầu từ đâu?');
+      r.khongDanNham = !!dt && dt.ma !== 'BD1-06' && /điện thoại|thiết bị/i.test(dt.ten + ' ' + dt.banhDa);
+      r.maThiChacChan = G.aiDanViec('BD1-09').ma === 'BD1-09';
+      r.tenThiNhanRa = G.aiDanViec('Ba dòng tối nay làm thế nào?').ma === 'BD1-01';
+
+      /* ── NÓI RA CÁI KHÔNG ĐƯA ── */
+      const d = G.aiTraLoi('Con ôm điện thoại, mình bắt đầu từ đâu?');
+      r.demDuocGiuLai = typeof d.giuLaiVuotTang === 'number' && d.giuLaiVuotTang >= 1;
+      r.nguonDeuTrongTang = d.nguon.every(x => true) && d.tangNha === 3;
+      const man = G.VIEWS['tro-ly']();
+      r.manNoiGiuLai = /tư liệu nữa thuộc tầng trên/.test(man) === false ||
+        /tư liệu nữa thuộc tầng trên/.test(man);   // màn chưa có lượt hỏi thì chưa in
+      G.chatHoi('Con ôm điện thoại, mình bắt đầu từ đâu?');
+      const man2 = G.VIEWS['tro-ly']();
+      r.manInGiuLai = /tư liệu nữa thuộc tầng trên/.test(man2);
+      /* Dẫn xong bốn nhịp rồi vẫn in "chưa tìm được gì khớp" là tự cãi
+         mình trong một lượt trả lời. */
+      G.CHAT = [];
+      G.chatHoi('BD1-03');
+      const man3 = G.VIEWS['tro-ly']();
+      r.khongTuCai = /Tối nay làm đúng việc này/.test(man3) &&
+        !/chưa tìm được gì khớp/.test(man3);
+      G.CHAT = [];
+
+      /* ── ĐÚNG MỘT MÀN TRỢ LÝ ĐANG CHẠY ──
+         Ba tệp từng cùng gán VIEWS['tro-ly']; hai bản chết, mà một trong
+         hai in ra câu hứa lọc-theo-tầng không có việc dưới. */
+      r.motManDuyNhat = typeof G.VIEWS['tro-ly'] === 'function';
+      return r;
+    });
+
+    /* Đếm trên MÃ NGUỒN: còn mấy chỗ gán VIEWS['tro-ly']. */
+    const dsSrc = JSON.parse(fsGoc.readFileSync(
+      pathGoc.join(__dirname, 'danh-sach-src.json'), 'utf8'));
+    const tep = (Array.isArray(dsSrc) ? dsSrc : dsSrc.tep || dsSrc.files || []);
+    let soGan = 0;
+    tep.forEach(f => {
+      const t = pathGoc.join(__dirname, '..', f);
+      if (!fsGoc.existsSync(t)) return;
+      const c = fsGoc.readFileSync(t, 'utf8');
+      soGan += (c.match(/^G\.VIEWS\['tro-ly'\]\s*=/gm) || []).length;
+    });
+    ra.dungMotChoGan = soGan === 1;
+
+    const doTL = ['tangTuTaiKhoan', 'docDungTruong', 'vuotTangThiChan', 'ngheKhongLoc',
+      'chuaKhaiThiNoi', 'bonNhip', 'ghepChuKhongChep', 'thieuThiKhaiThieu',
+      'viecVuotTangThiChan', 'khongDanNham', 'maThiChacChan', 'tenThiNhanRa',
+      'demDuocGiuLai', 'manInGiuLai', 'khongTuCai', 'motManDuyNhat',
+      'dungMotChoGan'].filter(k => !ra[k]);
+    bao(!doTL.length,
+      'TRỢ LÝ TRẢ LỜI TRONG ĐÚNG PHẠM VI TẦNG — VÀ ĐÂY LÀ ĐO CÁI VIỆC, KHÔNG ĐO CÂU HỨA. Tới bản 9.47 hai màn in ra câu "trả lời trong đúng phạm vi tầng của nhà mình" trong khi G.aiTra tra thẳng toàn kho máy đang giữ, không một dòng nào hỏi nhà ấy ở tầng mấy. Chỗ chặn duy nhất là trần 30%, mà trần ấy hỏi câu KHÁC HẲN: nó hỏi bản ghi có nằm trong 30% đầu bảng không, không hỏi nó thuộc tầng nào. Một câu hứa không có việc chạy dưới thì tệ hơn không hứa — nó làm người đọc yên tâm về đúng chỗ đang hở. HAI CÁI TRẦN KHÔNG ĐƯỢC LẪN: vượt trần 30% thì HIỆN TÊN rồi nói "đi qua Tư vấn", vì đó là tư liệu cùng tầng nhà chưa tới lượt; vượt TẦNG thì KHÔNG hiện gì cả, vì nó đọc mà không dùng được và hiện tên chỉ tạo một cơn thèm không giúp gì cho tối nay. Tầng đọc từ TÀI KHOẢN chứ không từ hồ sơ nhà — hai chỗ ấy lệch nhau thật (tài khoản khai tầng 3, bản ghi nhà khai tầng 5), và nguồn đúng là tài khoản vì chính nó là thứ goiDuocCap() dùng để xin gói tầng; lấy chỗ khác thì trợ lý hứa thứ kho không gửi về. Kho nào chưa khai tầng thì nói THẲNG là chưa lọc được — PHACDO 220 bản ghi không có trường tầng, và máy KHÔNG đoán hộ bằng tên nhóm hay bằng mã. Người trong nghề không bị lọc, và null ở đây nghĩa là KHÔNG LỌC chứ không phải tầng 0 — lẫn hai thứ ấy là Coach mất sạch kho. DẪN VIỆC: bốn nhịp TRỎ vào BD_LON chứ không chép, nên sửa một việc nhỏ ở kho thì lời dẫn đổi theo trong cùng lần chạy; thiếu trường thì khai thiếu chứ không bịa cho tròn. Đường nhận dạng yếu nhất ĐÃ DẪN NHẦM THẬT: câu "con ôm điện thoại, mình BẮT ĐẦU từ đâu" trúng hai chữ "bắt" và "đầu" của việc "Chụp lại bàn học lúc bắt đầu", nên trợ lý dẫn một nhà đang hỏi về điện thoại đi chụp ảnh bàn học — chữ ba ký tự trong tiếng Việt gần như luôn là chữ chung, nên nay chỉ tính chữ từ bốn ký tự; dẫn nhầm tệ hơn không dẫn, vì người ta LÀM THEO. Và đúng MỘT chỗ trong mã còn gán VIEWS[tro-ly]: ba tệp từng cùng gán, hai bản chết, mà một trong hai bản chết chính là chỗ in ra câu hứa lọc-theo-tầng không có việc dưới — một lời hứa nằm trong mã chết vẫn là một lời hứa sai',
+      doTL.length ? 'phép đo hỏng: ' + doTL.join(' · ')
+        : 'tầng 3 từ tài khoản · T5 bị chặn · nghề không lọc · PHACDO khai chưa lọc được · 4 nhịp trỏ vào kho · không dẫn nhầm việc · 1 chỗ gán màn');
+  }
+
   /* ══════════════ 72. AI ĐƯỢC XEM HỒ SƠ KHÁCH HÀNG ══════════════
      Luật chủ hệ chốt 3.9.2026. Chỗ dễ hỏng nhất không phải cái cổng mà là
      việc GÓI KHO vẫn gửi thứ cổng đang giấu — kho này đã mắc đúng lỗi ấy
