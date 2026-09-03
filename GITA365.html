@@ -2061,7 +2061,7 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
    lượt hỏi là một lần chờ độ trễ.
 
    21 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
-   giấy phép có gói nghề. Máy của gia đình nhẹ đi 444 KB.
+   giấy phép có gói nghề. Máy của gia đình nhẹ đi 459 KB.
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -2098,7 +2098,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.59',
+  version: '9.60',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -5572,12 +5572,14 @@ G.THUOC_CAP_PHEP = [
   'BV_DO','BV_LOC','BV_LOC_LUAT','BV_RAO','BV_TRIGGER',
   'BV_MODULE','BV_MODULE_NOI','BV_MODULE_LUAT','BV_BANG','BV_VAI',
   'BV_VAI_LUAT','BV_BANGIAO','BV_LECH','BV_CHOCHU','BV_LUAT',
+  'BV_DO_NOI','BV_DO_NOI_LUAT',
   /* Bàn làm việc của Coach (BLV_*): năm ngăn vét cạn, gói tài nguyên
      tám ô, bảy loại nhắc việc có hạn giờ, bốn lượt rà soát. Ở gói
      NGHỀ — nhà mình đọc hàng đợi thì thấy mình là một dòng trong đó. */
   'BLV_LOI','BLV_NGAN','BLV_NGAN_LUAT','BLV_GOI','BLV_GOI_LUAT',
   'BLV_NHAC','BLV_NHAC_LUAT','BLV_RASOAT','BLV_LUAT',
   'BLV_DUYET','BLV_DUYET_DIEU','BLV_DUYET_LUAT','BLV_CHOCHU',
+  'BLV_MOC','BLV_MOC_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
@@ -38516,7 +38518,7 @@ G.VIEWS = G.VIEWS || {};
    cho phép) và lấy chỉ số tự chủ làm CĂN CỨ. Hai thứ lệch nhau nhiều
    thì nó nói ra chỗ lệch, chứ không trung bình cộng chúng lại.
 
-   ═══ SÁU CÁI KHOÁ ═══
+   ═══ TÁM CÁI KHOÁ ═══
 
    blvSoiVetCan()    tổng năm ngăn bằng tổng số nhà — không hơn không kém.
    blvSoiThuTu()     ngăn xếp đúng bậc của SV_THUTU.
@@ -38525,6 +38527,11 @@ G.VIEWS = G.VIEWS || {};
    blvSoiKhongTuGui() không có đường nào từ bàn này gửi thẳng cho gia đình.
    blvSoiDuyet()     cửa duyệt đủ ba điều kiện, không kho nào chép lại
                      ngưỡng KPI, và người ký mang một quyền có thật.
+   blvSoiNoiDo()     mỗi tín hiệu đỏ khai được nối bằng gì, hoặc vì sao
+                     chưa nối và ai bắt thay — và hàm không nối nhiều
+                     hơn kho khai.
+   blvSoiMoc()       năm tầng đều có mốc gặp, mốc dẫn nguyên văn câu đã
+                     hứa, và không tầng nào vừa trỏ kho vừa chép số.
    ═══════════════════════════════════════════════════════════════ */
 'use strict';
 var G = window.G || {}; window.G = G;
@@ -38751,10 +38758,15 @@ G.VIEWS = G.VIEWS || {};
     ngan.forEach(function (x) { gom[x.ma] = []; });
 
     ds.forEach(function (n) {
-      var vi = G.blvViCoDo(n);
-
+      var vi = G.blvViCoDo(n, tenCoach);
       var viec = G.blvViecToiHan(n);
       var im = G.blvDangIm(n);
+      /* Hồ sơ trình duyệt đi theo nhà vào BẤT KỲ ngăn nào, không chỉ
+         ngăn chờ ký. Nhà rơi xuống ĐANG YÊN mà hồ sơ còn thiếu ba điều
+         kiện thì Coach vẫn phải thấy nó thiếu gì — nếu không, "đang yên"
+         đọc ra thành "không có việc". */
+      var hoSo = (n.capDeNghi && n.capDeNghi.chuaKy)
+        ? G.blvDuyetDuoc(n, tenCoach) : undefined;
 
       /* Xét theo ĐÚNG thứ tự ngăn đã khai ở kho, dừng ở ngăn đầu tiên
          khớp. Không viết cứng thứ tự vào hàm: viết cứng thì đổi thứ tự
@@ -38768,9 +38780,24 @@ G.VIEWS = G.VIEWS || {};
         QUAN_TRONG: function () { return viec.length ? { viec: viec } : null; },
         CHO_KY:     function () {
           if (!(n.capDeNghi && n.capDeNghi.chuaKy)) return null;
-          /* Hồ sơ trình duyệt đi kèm ngay từ đây: Coach mở ngăn ra là
-             thấy còn thiếu gì, không phải bấm thêm một lượt nữa. */
-          return { viCo: [], hoSo: G.blvDuyetDuoc(n, tenCoach) };
+          var hs = hoSo || {};
+          /* ═══ CHỖ BẢN 9.57 CHƯA CHỮA HẾT ═══
+
+             Bản 9.57 tôi hạ ngăn này xuống dưới VIỆC QUAN TRỌNG vì nó
+             nuốt sáu nhà. Đo lại ở 9.59: nó vẫn nuốt năm nhà và ba ngăn
+             dưới trống trơn. Hạ một bậc không chữa được gốc — gốc là
+             điều kiện vào ngăn LUÔN ĐÚNG: chưa nhà nào từng được ký,
+             nên nhà nào cũng "đang chờ ký".
+
+             Một ngăn có điều kiện luôn đúng thì nó ăn hết mọi ngăn dưới
+             nó, dù xếp ở bậc nào.
+
+             Nay ngăn này chỉ nhận hồ sơ ĐÃ ĐỦ BA ĐIỀU KIỆN — tức việc
+             thật sự nằm trên bàn Giám đốc. Hồ sơ còn thiếu là việc của
+             Coach, không phải việc chờ ký, và nó hiện ở lượt rà soát
+             buổi sáng RS-CAP cùng dòng ghi trên thẻ nhà. */
+          if (!hs.duTrinh) return null;
+          return { viCo: [], hoSo: hs };
         },
         IM_LANG:    function () { return im ? { im: im } : null; }
       };
@@ -38778,10 +38805,10 @@ G.VIEWS = G.VIEWS || {};
         var x = ngan[i];
         if (x.laPhanConLai) break;
         var k = khop[x.ma] && khop[x.ma]();
-        if (k) { k.nha = n; gom[x.ma].push(k); return; }
+        if (k) { k.nha = n; k.hoSo = k.hoSo || hoSo; gom[x.ma].push(k); return; }
       }
       var vet = ngan.filter(function (x) { return x.laPhanConLai; })[0];
-      gom[vet.ma].push({ nha: n });
+      gom[vet.ma].push({ nha: n, hoSo: hoSo });
     });
 
     return {
@@ -38796,18 +38823,54 @@ G.VIEWS = G.VIEWS || {};
 
   /* Tín hiệu đỏ đang chạm. Đọc BV_DO cho hạn giờ và người nhận —
      không tự đặt hạn ở đây. */
-  G.blvViCoDo = function (n) {
-    var ds = G.BV_DO || [], ra = [];
-    function them(so) {
-      var t = ds.filter(function (x) { return x.so === so; })[0];
-      if (t) ra.push({ muc: t.muc, so: t.so, tinHieu: t.tinHieu,
-        hanhDong: t.hanhDong, nguoiNhan: t.nguoiNhan, hanGio: t.hanGio });
-    }
-    /* Nối vào dữ liệu CÓ THẬT của nhà. Trường nào kho chưa có thì
-       KHÔNG bịa ra một tín hiệu cho nó. */
-    if (Number(n.nhac) >= 3) them(5);                        /* trống 3 ngày liên tiếp */
-    if (Number(n.tuchu) > 0 && Number(n.tuchu) < 35) them(6); /* trượt mốc liên tiếp */
+  /* ═══════════ TÍN HIỆU ĐỎ ĐANG CHẠY ═══════════
+
+     Đường nối khai ở BV_DO_NOI, không viết trong hàm này. Hàm chỉ chạy
+     bốn phép tính đã được khai, và KHÔNG tự thêm cái thứ năm.
+
+     Bản 9.57–9.59 viết thẳng hai câu if trong hàm, và cả hai nối sai
+     kiểu: tín hiệu đếm NGÀY nối vào trường đếm LẦN, tín hiệu so với
+     LỊCH nối vào một ngưỡng tuyệt đối. Sai kiểu thì kết quả vẫn ra một
+     danh sách nhà trông hợp lý — nên nó chạy ba bản không ai thấy. */
+  G.blvViCoDo = function (n, tenCoach) {
+    var ds = G.BV_DO || [], noi = G.BV_DO_NOI || [], ra = [];
+    if (!ds.length || !noi.length) return ra;
+
+    var dn = n.capDeNghi || {};
+    var lech = Number(dn.lechLich);
+    var chan = null;
+    if (typeof G.bvNhanDuoc === 'function' && (tenCoach || n.coach))
+      chan = G.bvNhanDuoc(tenCoach || n.coach, n.tang, null);
+
+    /* Mỗi khoá là số hiệu tín hiệu ở BV_DO_NOI. Thêm một khoá ở đây mà
+       không khai ở kho thì blvSoiNoiDo() đỏ, và ngược lại. */
+    var dodac = {
+      6:  function () { return lech === 2; },
+      7:  function () { return lech >= 3; },
+      8:  function () { return n.nguyenVong === 'khong'; },
+      17: function () { return !!(chan && chan.chan); }
+    };
+
+    noi.forEach(function (x) {
+      if (!x.noi || !dodac[x.so]) return;
+      if (!dodac[x.so]()) return;
+      var t = ds.filter(function (d) { return d.so === x.so; })[0];
+      if (!t) return;
+      ra.push({ muc: t.muc, so: t.so, tinHieu: t.tinHieu, hanhDong: t.hanhDong,
+        nguoiNhan: t.nguoiNhan, hanGio: t.hanGio, doBang: x.noi });
+    });
     return ra;
+  };
+
+  /* Bao nhiêu tín hiệu máy bắt được, bao nhiêu là việc của tai người.
+     Con số này hiện lên màn — Coach cần biết mình đang được canh mấy
+     phần, chứ không đọc "hai mươi tín hiệu đỏ" rồi yên tâm. */
+  G.blvDoCanhDuoc = function () {
+    var noi = G.BV_DO_NOI || [];
+    var may = noi.filter(function (x) { return x.noi; });
+    return { tong: noi.length, may: may.length, nguoi: noi.length - may.length,
+      dsMay: may.map(function (x) { return x.so; }),
+      luat: (G.BV_DO_NOI_LUAT || {}).bonTrenHaiMuoi || '' };
   };
 
   /* Đã QUÁ ngày cuối tầng mà chưa qua cổng. Ngăn KHẨN khai sẵn "hoặc có
@@ -38847,24 +38910,80 @@ G.VIEWS = G.VIEWS || {};
         khiNaoKhongMo: cong ? cong.khiNaoKhongMo : undefined
       });
     }
-    /* Mốc gặp Coach của tầng 3 và tầng 4. */
-    var moc = { T3: [10, 30, 60, 90], T4: [30, 90, 180, 270, 365] }[n.tang] || [];
-    moc.forEach(function (m) {
+    /* Mốc gặp đọc từ BLV_MOC, không viết cứng ở đây. */
+    var mm = G.blvMocGap(n.tang);
+    (mm.ngay || []).forEach(function (m) {
       var cach = m - Number(n.ngay || 0);
       if (cach >= 0 && cach <= 7)
-        ra.push({ loai: 'Buổi gặp mốc', conLai: cach, ten: 'Buổi gặp ngày ' + m,
-          chuanBi: 'Gói tài nguyên đóng trước 48 giờ' });
+        ra.push({ loai: 'Buổi gặp mốc', conLai: cach,
+          ten: (mm.ten || 'Buổi gặp') + ' — ngày ' + m,
+          chuanBi: 'Gói tài nguyên đóng trước 48 giờ', nguon: mm.nguon });
     });
     return ra;
   };
 
+  /* ═══════════ MỐC GẶP CỦA MỘT TẦNG ═══════════
+
+     Hai đường: "cứ N ngày một mốc", hoặc "đọc ranh giới từ một kho
+     khác". Đường thứ hai quan trọng hơn — T3 và T4 KHÔNG chép lại con
+     số ngày vào BLV_MOC, chúng trỏ sang T34_T3_CHANG và T34_T4_MUA và
+     máy cắt ranh giới lúc chạy. Chép số vào đây thì ngày sổ tay đổi
+     chặng, bảng mốc ở lại — và Coach đúng hẹn với một lịch đã chết. */
+  G.blvMocGap = function (tang) {
+    var t = String(tang || '').toUpperCase();
+    var d = (G.BLV_MOC || []).filter(function (x) { return x.tang === t; })[0];
+    if (!d) return { chuaKhai: true, tang: t, ngay: [],
+      vi: 'Tầng ' + t + ' chưa khai mốc gặp ở BLV_MOC.' };
+    var tong = SO_NGAY[t] || 0, ngay = [];
+
+    if (d.cach === 'moiN' && d.n > 0) {
+      for (var i = d.n; i <= tong; i += d.n) ngay.push(i);
+      /* Mốc cuối LUÔN là ngày khép tầng — đó là cổng nghiệm thu. Nhưng
+         nếu mốc đều đặn đã rơi sát ngày ấy thì thay nó, đừng thêm: tầng
+         5 chia mỗi quý ra 91·182·273·364, thêm 365 nữa thành hai buổi
+         cách nhau một ngày. */
+      var cuoi = ngay[ngay.length - 1];
+      if (tong && cuoi !== tong) {
+        if (cuoi && tong - cuoi < d.n / 2) ngay[ngay.length - 1] = tong;
+        else ngay.push(tong);
+      }
+    } else if (d.cach === 'tuKho') {
+      var kho = G[d.tuKho] || [];
+      kho.forEach(function (x) {
+        /* "31–60" hay "4–6" — lấy vế SAU, đó là ngày khép chặng. */
+        var m = String(x.ngay || x.thang || '').match(/(\d+)\s*[–-]\s*(\d+)/);
+        if (!m) return;
+        /* Trường thang đếm bằng THÁNG, trường ngay đếm bằng NGÀY. Nhân
+           nhầm đơn vị ở đây thì mốc quý của tầng 4 rơi vào ngày thứ 3. */
+        var so = Number(m[2]);
+        ngay.push(x.thang && !x.ngay ? Math.round(so * (tong / 12)) : so);
+      });
+    }
+    return { tang: t, ten: d.ten, nguon: d.nguon, lech: d.lech,
+      ngay: ngay.filter(function (v, i, a) { return v > 0 && a.indexOf(v) === i; })
+                .sort(function (a, b) { return a - b; }) };
+  };
+
+  /* ═══════════ NHÀ ĐANG TỤT NHỊP ═══════════
+
+     Bốn mức hụt của BV_TUTCAP dùng CÙNG MỘT thứ tiếng với hai mươi tín
+     hiệu đỏ: "trượt 1 mốc" · "trượt 2 mốc liên tiếp" · "trượt cả chặng"
+     · "gia đình yêu cầu dừng". Nên đo bằng cùng một con số — lechLich,
+     số mốc nhà đang chậm hơn lịch.
+
+     Hai mức nặng đã thành tín hiệu đỏ và đi vào ngăn KHẨN, nên ngăn này
+     chỉ còn giữ Hụt nhẹ. Đó đúng là chỗ nó phải ở: nhắc một lần bằng
+     câu nhẹ, rồi để yên. */
   G.blvDangIm = function (n) {
-    if (Number(n.nhac) >= 1 && Number(n.nhac) < 3)
-      return { dauHieu: 'Đã nhắc ' + n.nhac + ' lần chưa có phản hồi',
-        muc: 'Hụt nhẹ',
-        lam: ((G.BV_TUTCAP || []).filter(function (x) { return /nhẹ/i.test(x.muc); })[0] || {}).hanhDong,
-        khong: ((G.BV_TUTCAP || []).filter(function (x) { return /nhẹ/i.test(x.muc); })[0] || {}).tuyetDoiKhong };
-    return null;
+    var lech = Number((n.capDeNghi || {}).lechLich);
+    if (!(lech === 1)) return null;
+    var m = (G.BV_TUTCAP || []).filter(function (x) { return /nhẹ/i.test(x.muc); })[0] || {};
+    return {
+      muc: m.muc || 'Hụt nhẹ',
+      dauHieu: 'Chậm hơn lịch một mốc — ' + (m.dauHieu || ''),
+      lam: m.hanhDong, khong: m.tuyetDoiKhong,
+      doBang: 'blvCapDeNghi().lechLich === 1'
+    };
   };
 
   /* ═══════════ GÓI TÀI NGUYÊN — TÁM Ô, Ô TRỐNG PHẢI HIỆN ═══════════ */
@@ -38910,61 +39029,111 @@ G.VIEWS = G.VIEWS || {};
   };
 
   /* ═══════════ TRỢ LÝ NHẮC VIỆC ═══════════ */
+  /* ═══════════ TRỢ LÝ NHẮC VIỆC ═══════════
+
+     ═══ LỜI NHẮC ĐỌC TỪ SỰ THẬT, KHÔNG ĐỌC TỪ NGĂN ═══
+
+     Bản 9.57–9.59 duyệt theo ngăn: ngăn KHẨN thì bắn N-DO, ngăn VIỆC
+     QUAN TRỌNG thì bắn N-GAP. Mà năm ngăn LOẠI TRỪ NHAU — một nhà chỉ
+     nằm ở một ngăn. Nên nhà đang khủng hoảng VÀ có buổi gặp sau hai
+     ngày thì mất luôn lời nhắc chuẩn bị buổi gặp ấy.
+
+     Đo ở 9.59: ba trên bảy loại nhắc chưa bao giờ bắn một lần nào. Một
+     lời nhắc chưa từng bắn thì chưa phải một lời nhắc — cùng cái luật
+     đã dùng cho phép kiểm.
+
+     Ngăn trả lời "hôm nay xử nhà nào TRƯỚC" — một câu hỏi cần loại trừ.
+     Lời nhắc trả lời "nhà này còn việc gì" — một câu hỏi KHÔNG được
+     loại trừ. Nay mỗi loại nhắc đọc thẳng sự thật của nhà. */
   G.blvNhac = function (tenCoach) {
-    var xep = G.blvXep(tenCoach);
-    if (xep.chuaDo) return xep;
+    var ds = G.blvNha(tenCoach);
+    if (!ds.length && !(G.BLV_NHAC || []).length)
+      return { chuaDo: true, thieu: 'BLV_NHAC', ds: [], so: 0 };
     var loai = {};
     (G.BLV_NHAC || []).forEach(function (x) { loai[x.ma] = x; });
     var ra = [];
 
-    (xep.ngan || []).forEach(function (ng) {
-      ng.ds.forEach(function (m) {
-        var n = m.nha;
-        if (ng.ma === 'KHAN' && m.quaHan)
-          ra.push({ ma: 'N-DO', c: '#BE0E16', nha: n.nha, id: n.id,
-            viec: m.quaHan.ten, lam: m.quaHan.lam, han: 'hôm nay',
-            nguoiNhan: 'Coach', cam: m.quaHan.khongDuocLam, nguon: 'BLV_NGAN KHAN' });
-        if (ng.ma === 'KHAN') (m.viCo || []).forEach(function (d) {
-          ra.push({ ma: 'N-DO', c: '#BE0E16', nha: n.nha, id: n.id,
-            viec: d.tinHieu, lam: d.hanhDong, han: d.hanGio, nguoiNhan: d.nguoiNhan,
-            nguon: 'BV_DO #' + d.so });
-        });
-        if (ng.ma === 'CHO_KY') {
-          var hs = m.hoSo || {};
-          /* Nhắc đúng người đúng việc: hồ sơ còn thiếu thì việc là của
-             Coach; hồ sơ đủ rồi thì việc là của Giám đốc. Nhắc chung một
-             câu cho cả hai là để cả hai cùng chờ nhau. */
-          var thieu = (hs.thieu || []).concat(hs.chuaBiet || []);
-          ra.push({ ma: 'N-KY', c: '#B4720F', nha: n.nha, id: n.id,
-            viec: 'Đề nghị cấp ' + (n.capDeNghi || {}).cap + ' — ' + ((n.capDeNghi || {}).moc || ''),
-            lam: thieu.length
-              ? 'Hồ sơ còn thiếu: ' + thieu.join(' · ') + '. Dựng cho đủ rồi mới trình.'
-              : 'Hồ sơ đủ ba điều kiện. Trình ' + (hs.nguoiKy || 'người phê duyệt') +
-                ' đọc bằng chứng rồi duyệt hoặc từ chối. Từ chối cũng ghi lý do.',
-            han: (loai['N-KY'] || {}).khi,
-            nguoiNhan: thieu.length ? 'Coach' : (hs.nguoiKy || 'Giám đốc điều hành'),
-            nguon: 'BLV_DUYET' });
-        }
-        if (ng.ma === 'QUAN_TRONG') (m.viec || []).forEach(function (v) {
-          ra.push({ ma: v.loai === 'Buổi gặp mốc' ? 'N-GAP' : 'N-CONG', c: '#5140B4',
-            nha: n.nha, id: n.id, viec: v.ten,
-            lam: v.chuanBi || ('Điều kiện: ' + (v.dieuKien || '—')),
-            han: 'còn ' + v.conLai + ' ngày', nguoiNhan: 'Coach' });
-        });
-        if (ng.ma === 'IM_LANG') ra.push({ ma: 'N-IM', c: '#B45309', nha: n.nha, id: n.id,
-          viec: m.im.dauHieu, lam: m.im.lam, han: 'trong ngày', nguoiNhan: 'Coach',
-          cam: m.im.khong });
+    ds.forEach(function (n) {
+      /* N-DO — tín hiệu đỏ đang chạy, và việc đã quá hạn giờ */
+      var qh = G.blvQuaHan(n);
+      if (qh) ra.push({ ma: 'N-DO', c: '#BE0E16', nha: n.nha, id: n.id,
+        viec: qh.ten, lam: qh.lam, han: 'hôm nay', nguoiNhan: 'Coach',
+        cam: qh.khongDuocLam, nguon: 'BLV_NGAN KHAN' });
+      G.blvViCoDo(n, tenCoach).forEach(function (d) {
+        ra.push({ ma: 'N-DO', c: '#BE0E16', nha: n.nha, id: n.id,
+          viec: d.tinHieu, lam: d.hanhDong, han: d.hanGio, nguoiNhan: d.nguoiNhan,
+          nguon: 'BV_DO #' + d.so + ' · đo bằng ' + (d.doBang || '—') });
       });
+
+      /* N-GAP và N-CONG — việc tới hạn, không phụ thuộc nhà đang ở ngăn nào */
+      G.blvViecToiHan(n).forEach(function (v) {
+        var gap = v.loai === 'Buổi gặp mốc';
+        var l = loai[gap ? 'N-GAP' : 'N-CONG'] || {};
+        /* Chỉ nhắc khi đã vào cửa sổ báo trước của chính loại nhắc ấy —
+           truoc tính bằng GIỜ ở kho, đổi ra ngày để so với conLai. */
+        var cua = Math.ceil(Number(l.truoc || 0) / 24);
+        if (v.conLai > cua) return;
+        ra.push({ ma: gap ? 'N-GAP' : 'N-CONG', c: '#5140B4', nha: n.nha, id: n.id,
+          viec: v.ten, lam: v.chuanBi || ('Điều kiện: ' + (v.dieuKien || '—')),
+          han: 'còn ' + v.conLai + ' ngày', nguoiNhan: 'Coach',
+          nguon: v.nguon || (l.tuKho || '') });
+      });
+
+      /* N-IM — nhịp đang tụt nhẹ */
+      var im = G.blvDangIm(n);
+      if (im) ra.push({ ma: 'N-IM', c: '#B45309', nha: n.nha, id: n.id,
+        viec: im.dauHieu, lam: im.lam, han: 'trong ngày', nguoiNhan: 'Coach',
+        cam: im.khong, nguon: 'BV_TUTCAP · ' + (im.doBang || '') });
+
+      /* N-BAOCAO — sắp khép một chặng. Mốc cuối cùng của tầng là chỗ
+         phải có báo cáo ba trụ, và nó khác buổi gặp mốc: buổi gặp là
+         ngồi với nhà, báo cáo là thứ gửi trước khi ngồi. */
+      var mm = G.blvMocGap(n.tang);
+      var chot = (mm.ngay || [])[(mm.ngay || []).length - 1];
+      var cachChot = chot === undefined ? null : chot - Number(n.ngay || 0);
+      var cuaBC = Math.ceil(Number((loai['N-BAOCAO'] || {}).truoc || 0) / 24);
+      if (cachChot !== null && cachChot >= 0 && cachChot <= cuaBC)
+        ra.push({ ma: 'N-BAOCAO', c: '#0B6675', nha: n.nha, id: n.id,
+          viec: 'Báo cáo khép tầng ' + n.tang + ' — mốc ngày ' + chot,
+          lam: (loai['N-BAOCAO'] || {}).noi || '', han: 'còn ' + cachChot + ' ngày',
+          nguoiNhan: 'Coach', nguon: 'T34_BATRU · BLV_MOC' });
+
+      /* N-KY — hồ sơ đã đủ ba điều kiện thì việc nằm trên bàn Giám đốc;
+         còn thiếu thì nó là việc của Coach. Hai câu khác nhau, hai người
+         nhận khác nhau. */
+      var dn = n.capDeNghi || {};
+      if (dn.chuaKy) {
+        var hs = G.blvDuyetDuoc(n, tenCoach) || {};
+        /* Chỉ nhắc khi hồ sơ ĐÃ ĐỦ — cùng luật đã dùng cho ngăn chờ ký.
+           Bản đầu tôi nhắc cả hồ sơ còn thiếu, và mười nhà ra mười lời
+           nhắc giống hệt lượt rà soát RS-CAP buổi sáng. Một việc nói hai
+           chỗ thì người đọc bỏ qua cả hai. */
+        if (hs.duTrinh)
+          ra.push({ ma: 'N-KY', c: '#B4720F', nha: n.nha, id: n.id,
+            viec: 'Đề nghị cấp ' + dn.cap + ' — ' + (dn.moc || ''),
+            lam: 'Hồ sơ đủ ba điều kiện. Trình ' + (hs.nguoiKy || 'người phê duyệt') +
+              ' đọc bằng chứng rồi duyệt hoặc từ chối. Từ chối cũng ghi lý do.',
+            han: (loai['N-KY'] || {}).khi,
+            nguoiNhan: hs.nguoiKy || 'Giám đốc điều hành', nguon: 'BLV_DUYET' });
+      }
     });
 
-    /* Trần công suất — đọc số từ bản vẽ, không tự đặt. */
-    var vaiCoach = (G.BV_VAI || []).filter(function (v) { return /^Coach$/.test(String(v.ten)); })[0];
-    var tran = vaiCoach && vaiCoach.tran ? (String(vaiCoach.tran).match(/(\d+)/) || [])[1] : null;
-    if (tran && xep.tongNha >= Number(tran) * 0.8)
-      ra.push({ ma: 'N-TRAN', c: '#BE0E16', nha: '—', viec: 'Đang giữ ' + xep.tongNha +
-        ' nhà, trần của vai là ' + vaiCoach.tran, lam: 'Trần công suất đứng trên doanh thu. ' +
-        'Đủ trần thì dừng nhận nhà mới.', han: 'ngay', nguoiNhan: 'Coach + Admin',
-        nguon: 'BV_VAI' });
+    /* N-TRAN — trần công suất. Đọc bvNhanDuoc() chứ không tự cắt chuỗi
+       trần lấy con số đầu tiên: "8 gia đình T4 hoặc 3 gia đình T5" cắt
+       thô ra 8, và một Coach giữ 3 nhà T5 đã đủ trần vẫn im. */
+    var nguoi = tenCoach || (ds[0] && ds[0].coach);
+    if (nguoi && typeof G.bvNhanDuoc === 'function') {
+      ['T4', 'T5', 'T3', 'T2'].forEach(function (t) {
+        var r = G.bvNhanDuoc(nguoi, t, null);
+        if (r.chuaBiet) return;
+        if (r.chan || r.sapDay)
+          ra.push({ ma: 'N-TRAN', c: '#BE0E16', nha: '—',
+            viec: r.vai + ' đang giữ ' + r.dangGiu + '/' + r.tran + ' nhà ' + t +
+              (r.chan ? ' — ĐÃ ĐỦ TRẦN' : ' — ' + r.sapDay),
+            lam: r.lam || 'Trần công suất đứng trên doanh thu. Đủ trần thì dừng nhận nhà mới.',
+            han: 'ngay', nguoiNhan: 'Coach + Admin', nguon: 'BV_VAI.tran · bvNhanDuoc()' });
+      });
+    }
 
     return { ds: ra, so: ra.length, luat: (G.BLV_NHAC_LUAT || {}).khongTuGui || '' };
   };
@@ -39089,6 +39258,70 @@ G.VIEWS = G.VIEWS || {};
     return { chuaDo: false, loi: loi };
   };
 
+  /* ═══════════ KHOÁ 7: MỖI TÍN HIỆU ĐỎ PHẢI KHAI ĐƯỜNG NỐI ═══════════
+
+     Không tín hiệu nào được im lặng. Khai được thì khai bằng phép tính
+     nào; không khai được thì nói vì sao và AI bắt thay. Trống cả hai là
+     một dòng chữ đỏ trên màn mà không ai canh. */
+  G.blvSoiNoiDo = function () {
+    var ds = G.BV_DO || [], noi = G.BV_DO_NOI || [], loi = [];
+    if (!ds.length || !noi.length)
+      return { chuaDo: true, thieu: !ds.length ? 'BV_DO' : 'BV_DO_NOI', loi: [] };
+
+    if (noi.length !== ds.length)
+      loi.push('có ' + ds.length + ' tín hiệu mà bảng nối khai ' + noi.length);
+
+    var thay = {};
+    noi.forEach(function (x) {
+      if (thay[x.so]) loi.push('tín hiệu ' + x.so + ' khai hai lần');
+      thay[x.so] = 1;
+      if (!ds.filter(function (d) { return d.so === x.so; })[0])
+        loi.push('bảng nối có tín hiệu ' + x.so + ' mà BV_DO không có');
+      if (x.noi && x.chuaNoi) loi.push('tín hiệu ' + x.so + ' vừa khai nối vừa khai chưa nối');
+      if (!x.noi && !x.chuaNoi) loi.push('tín hiệu ' + x.so + ' không khai gì cả');
+      if (x.noi && !x.vi) loi.push('tín hiệu ' + x.so + ' nối mà không nói vì sao nối như thế');
+      if (x.chuaNoi && !x.aiBat) loi.push('tín hiệu ' + x.so + ' chưa nối mà không nói ai bắt thay');
+    });
+    ds.forEach(function (d) {
+      if (!thay[d.so]) loi.push('tín hiệu ' + d.so + ' chưa có trong bảng nối');
+    });
+
+    /* Hàm chạy không được nối nhiều hơn kho khai. Thêm một phép đo
+       trong hàm mà quên khai ở kho là lại có một đường nối vô hình. */
+    var trongHam = String(G.blvViCoDo).match(/^\s*(\d+):\s*function/gm) || [];
+    var soHam = trongHam.map(function (x) { return Number(x.match(/\d+/)[0]); }).sort();
+    var soKho = noi.filter(function (x) { return x.noi; })
+                   .map(function (x) { return x.so; }).sort();
+    if (soHam.join(',') !== soKho.join(','))
+      loi.push('hàm đo tín hiệu [' + soHam + '] mà kho khai nối [' + soKho + ']');
+
+    return { chuaDo: false, loi: loi, may: soKho.length, tong: ds.length };
+  };
+
+  /* ═══════════ KHOÁ 8: NĂM TẦNG ĐỀU CÓ MỐC GẶP ═══════════ */
+  G.blvSoiMoc = function () {
+    var loi = [], ds = G.BLV_MOC || [];
+    if (!ds.length) return { chuaDo: true, thieu: 'BLV_MOC', loi: [] };
+    ['T1', 'T2', 'T3', 'T4', 'T5'].forEach(function (t) {
+      var m = G.blvMocGap(t);
+      if (m.chuaKhai) { loi.push('tầng ' + t + ' chưa khai mốc gặp'); return; }
+      if (!m.ngay.length) loi.push('tầng ' + t + ' khai mốc mà máy tính ra rỗng');
+      var tong = SO_NGAY[t] || 0;
+      m.ngay.forEach(function (v) {
+        if (tong && v > tong) loi.push('tầng ' + t + ' có mốc ngày ' + v + ' vượt quá ' + tong);
+      });
+    });
+    ds.forEach(function (d) {
+      if (!d.nguon) loi.push('mốc tầng ' + d.tang + ' chưa dẫn nguyên văn câu đã hứa');
+      if (d.cach === 'tuKho' && !(G[d.tuKho] || []).length)
+        loi.push('mốc tầng ' + d.tang + ' trỏ sang ' + d.tuKho + ' mà kho ấy rỗng');
+      /* Chép số ngày vào kho mốc là dựng bản thứ hai. */
+      if (d.cach === 'tuKho' && d.n)
+        loi.push('mốc tầng ' + d.tang + ' vừa trỏ sang kho vừa chép sẵn số ngày');
+    });
+    return { chuaDo: false, loi: loi, so: ds.length };
+  };
+
   /* ═══════════ KHOÁ 6: CỬA DUYỆT ═══════════
 
      Bốn điều phải đúng cùng lúc, và điều thứ ba là điều tôi sợ nhất:
@@ -39198,7 +39431,8 @@ G.VIEWS = G.VIEWS || {};
        chưa từng chạy thì chưa phải một khoá. */
     var lech = [].concat(
       G.blvSoiThuTu().loi || [], G.blvSoiGoi().loi || [], G.blvSoiNhac().loi || [],
-      G.blvSoiKhongTuGui().loi || [], G.blvSoiDuyet().loi || []);
+      G.blvSoiKhongTuGui().loi || [], G.blvSoiDuyet().loi || [],
+      G.blvSoiNoiDo().loi || [], G.blvSoiMoc().loi || []);
     if (lech.length)
       o += '<div class="card mb" style="border-color:#BE0E16"><b class="sm" style="color:#BE0E16">' +
         'LỆCH: ' + h(lech.join(' · ')) + '</b></div>';
@@ -39290,6 +39524,26 @@ G.VIEWS = G.VIEWS || {};
     var nh = G.blvNhac(tenCoach);
     o += U.sec('Trợ lý nhắc việc — ' + nh.so + ' lời nhắc',
       'Mỗi lời nhắc có hạn giờ và có tên người nhận. Hạn đọc từ kho, không tự đặt.');
+
+    /* ── Máy canh được mấy phần trong hai mươi tín hiệu ──
+       Dòng này phải đứng TRƯỚC danh sách nhắc. Coach đọc một bảng đỏ
+       rồi tin là mình được canh hết; nói thật con số trước khi họ đọc
+       thì họ còn tự nhìn phần còn lại. */
+    var cd = G.blvDoCanhDuoc();
+    o += '<div class="card mb" style="border-color:#B4720F56">' +
+      '<b class="sm">Máy tự bắt được <span style="color:#BE0E16">' + cd.may + '/' + cd.tong +
+      '</span> tín hiệu đỏ — tín hiệu số ' + h(cd.dsMay.join(', ')) + '</b>' +
+      '<p class="tiny mt" style="line-height:1.75">' + h(cd.luat) + '</p>' +
+      '<div class="mt">' + (G.BV_DO_NOI || []).map(function (x) {
+        var t = (G.BV_DO || []).filter(function (d) { return d.so === x.so; })[0] || {};
+        return '<p class="tiny" style="line-height:1.7;padding:3px 0">' +
+          '<span style="color:' + (x.noi ? '#0B6675' : '#B4720F') + '">' +
+          (x.noi ? '● máy' : '○ người') + '</span> <b>#' + x.so + '</b> ' + h(t.tinHieu || '') +
+          '<br><span class="dim">' + h(x.noi ? 'đo bằng ' + x.noi : x.chuaNoi) + '</span>' +
+          (x.aiBat ? '<br><span class="dim">Ai bắt: ' + h(x.aiBat) + '</span>' : '') +
+          (x.canTruong ? '<br><span style="color:#BE0E16">Cần trường: ' + h(x.canTruong) +
+            '</span>' : '') + '</p>';
+      }).join('') + '</div></div>';
     o += '<div class="card mb">' + (nh.ds || []).map(function (x) {
       return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
         '<span class="tiny up" style="color:' + x.c + '"><b>' + h(x.ma) + '</b></span> ' +
@@ -39321,6 +39575,22 @@ G.VIEWS = G.VIEWS || {};
       }).join('') + '</div>';
       o += '<p class="tiny mb" style="line-height:1.7;color:#B4720F"><b>' + h(g.luat || '') + '</b></p>';
     }
+
+    /* ── Mốc gặp của năm tầng ── */
+    var ml = G.BLV_MOC_LUAT || {};
+    o += U.sec('Mốc gặp của năm tầng', ml.cot || '');
+    o += '<div class="card mb">' + ['T1', 'T2', 'T3', 'T4', 'T5'].map(function (t) {
+      var m = G.blvMocGap(t);
+      return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + t + ' · ' + h(m.ten || '—') + '</b> ' +
+        '<span class="tiny" style="color:#5140B4">ngày ' +
+        h((m.ngay || []).join(' · ') || 'CHƯA CÓ') + '</span>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(m.nguon || '') + '</p>' +
+        (m.lech ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(m.lech) +
+          '</p>' : '') + '</div>';
+    }).join('') + '</div>';
+    o += '<p class="tiny mb" style="line-height:1.75;color:#B4720F"><b>' + h(ml.viTheo || '') +
+      '</b></p>';
 
     /* ── Bốn lượt rà soát ── */
     o += U.sec('Bốn lượt trợ lý rà mỗi sáng', '');
