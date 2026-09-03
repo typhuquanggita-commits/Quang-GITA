@@ -6808,8 +6808,10 @@ G.VIEWS = G.VIEWS || {};
    chủ, số lần nhắc — rồi đề nghị một cấp trong mười, KÈM cái nó dựa
    vào và KÈM cái nó chưa có.
 
-   Nó KHÔNG ghi cấp ấy vào đâu cả. Cấp chỉ thành thật khi Coach ký, và
-   ngăn CHỜ KÝ giữ những nhà đang chờ đúng việc ấy.
+   Nó KHÔNG ghi cấp ấy vào đâu cả. Cấp chỉ thành thật khi GIÁM ĐỐC ĐIỀU
+   HÀNH phê duyệt — chốt của chủ hệ ở bản 9.58 — và ngăn CHỜ KÝ giữ
+   những nhà đang chờ đúng việc ấy. Việc của Coach là dựng hồ sơ cho đủ
+   ba điều kiện rồi trình; xem blvDuyetDuoc().
 
    Vì sao không tự gán: nguyên tắc số 1 của bộ bản vẽ nói cấp độ là
    TRẠNG THÁI CỦA KHÁCH, chỉ ghi khi có bằng chứng quan sát được. Ngày
@@ -6825,13 +6827,15 @@ G.VIEWS = G.VIEWS || {};
    cho phép) và lấy chỉ số tự chủ làm CĂN CỨ. Hai thứ lệch nhau nhiều
    thì nó nói ra chỗ lệch, chứ không trung bình cộng chúng lại.
 
-   ═══ NĂM CÁI KHOÁ ═══
+   ═══ SÁU CÁI KHOÁ ═══
 
    blvSoiVetCan()    tổng năm ngăn bằng tổng số nhà — không hơn không kém.
    blvSoiThuTu()     ngăn xếp đúng bậc của SV_THUTU.
    blvSoiGoi()       tám ô, mỗi ô khai lấy từ kho nào.
    blvSoiNhac()      mỗi loại nhắc có hạn và có nguồn.
    blvSoiKhongTuGui() không có đường nào từ bàn này gửi thẳng cho gia đình.
+   blvSoiDuyet()     cửa duyệt đủ ba điều kiện, không kho nào chép lại
+                     ngưỡng KPI, và người ký mang một quyền có thật.
    ═══════════════════════════════════════════════════════════════ */
 'use strict';
 var G = window.G || {}; window.G = G;
@@ -6857,6 +6861,10 @@ G.VIEWS = G.VIEWS || {};
         tang: t, ngay: n.ngay, tongNgay: tong,
         conLai: tong ? Math.max(0, tong - Number(n.ngay || 0)) : undefined,
         band: n.band, tuchu: n.tuchu, nhac: n.nhac, coach: n.coach, kyTich: n.kyTich,
+        /* vai và kpi đi theo vì G.kpiCuaToi() đọc chúng. Bản đầu tôi bỏ quên
+           vai, và KPI của mọi nhà tụt đúng 20 điểm mà không ai thấy — vì một
+           con số thấp đều thì trông giống một hệ nghiêm khắc. */
+        vai: n.vai, kpi: n.kpi, nguyenVong: n.nguyenVong,
         chang: chang && !chang.chuaDo && !chang.khongPhaiTang34 ? chang : undefined,
         capDeNghi: dn
       };
@@ -6898,8 +6906,137 @@ G.VIEWS = G.VIEWS || {};
           ? 'Căn cứ cao hơn trần lịch. Giữ ở trần: chưa đi hết ngày thì chưa qua được ô ấy.'
           : undefined),
       chuaKy: true,
-      vi: 'Máy ĐỀ NGHỊ. Cấp chỉ thành thật khi Coach ký tên.'
+      vi: 'Máy ĐỀ NGHỊ. Cấp chỉ thành thật khi Giám đốc điều hành phê duyệt.'
     };
+  };
+
+  /* ═══════════ CỬA PHÊ DUYỆT CẤP ═══════════
+
+     Ba điều kiện của chủ hệ, mỗi điều kiện trả về một trong BA trạng thái:
+       dat        · đo được và đạt
+       hut        · đo được và chưa đạt
+       chuaBiet   · máy không có căn cứ để nói
+
+     Vì sao ba chứ không hai: "chưa biết" và "chưa đạt" đòi hai việc khác
+     nhau. Chưa đạt thì đi làm cho tốt hơn; chưa biết thì đi HỎI. Gộp lại
+     thành một màu đỏ là làm mất đúng thông tin dùng được.
+
+     Máy không duyệt. Ba điều kiện xanh chỉ nghĩa là hồ sơ ĐỦ ĐIỀU KIỆN
+     TRÌNH lên Giám đốc điều hành. */
+
+  function tranCuaVai(tenVai) {
+    /* Trần đọc từ BV_VAI, không đặt lại ở đây. Chuỗi có dạng
+       "8 gia đình T4 hoặc 3 gia đình T5" — cắt thành { T4: 8, T5: 3 }. */
+    var v = (G.BV_VAI || []).filter(function (x) {
+      return String(x.ten).trim() === tenVai;
+    })[0];
+    if (!v || !v.tran) return null;
+    var ra = { chuoi: v.tran, theoTang: {} }, m, re = /(\d+)\s*(?:gia đình|hồ sơ)\s*(T\d)/g;
+    while ((m = re.exec(String(v.tran)))) ra.theoTang[m[2]] = Number(m[1]);
+    return Object.keys(ra.theoTang).length ? ra : null;
+  }
+
+  G.blvDuyetDuoc = function (n, tenCoach) {
+    var d = G.BLV_DUYET, ds = G.BLV_DUYET_DIEU || [];
+    if (!d || !ds.length) return { chuaDo: true, thieu: 'BLV_DUYET' };
+    var ra = [];
+
+    ds.forEach(function (dk) {
+      var o = { ma: dk.ma, ten: dk.ten, tuKho: dk.tuKho, aiLam: dk.aiLam };
+
+      if (dk.ma === 'KPI') {
+        /* Ngưỡng đọc từ KPI_XIN_THEM. Không viết lại con số ấy ở đây. */
+        if (typeof G.kpiCuaToi !== 'function' || typeof G.KPI_XIN_THEM !== 'number') {
+          o.trangThai = 'chuaBiet';
+          o.noi = 'Chưa nạp kho khách — không đọc được ngưỡng KPI.';
+        } else {
+          var kpi = G.kpiCuaToi(n);
+          o.so = kpi; o.nguong = G.KPI_XIN_THEM;
+          o.trangThai = G.datKpi80(n) ? 'dat' : 'hut';
+          o.noi = 'KPI ' + kpi + '% · ngưỡng ' + G.KPI_XIN_THEM + '%';
+          if (o.trangThai === 'hut') o.canLam = dk.hut;
+        }
+      }
+
+      if (dk.ma === 'CONGSUAT') {
+        var vai = n.tang === 'T4' || n.tang === 'T5' ? 'Coach' : 'Tư vấn';
+        var tr = tranCuaVai(vai);
+        var nguoi = tenCoach || n.coach;
+        var giu = (typeof G.dsNha === 'function' ? G.dsNha() : (G.FAMILIES || []) || [])
+          .filter(function (x) {
+            return x.coach === nguoi && maTang(x.tier) === n.tang;
+          }).length;
+        o.vai = vai; o.dangGiu = giu; o.nguoi = nguoi;
+        /* Không biết ai sẽ giữ nhà này thì không đếm được ai còn chỗ.
+           Bản đầu tôi để nó rơi vào "đang giữ 0 nhà" và ĐẠT — tức là một
+           nhà chưa có người phụ trách lại là nhà dễ qua cửa nhất. */
+        if (!nguoi) {
+          o.trangThai = 'chuaBiet';
+          o.noi = 'Nhà này chưa có người phụ trách — chưa biết trần của ai để đếm.';
+          o.canLam = 'Giao người phụ trách trước, rồi mới xét cấp.';
+          ra.push(o); return;
+        }
+        if (!tr || !co(tr.theoTang[n.tang])) {
+          o.trangThai = 'chuaBiet';
+          o.noi = 'Bản vẽ chưa khai trần của vai ' + vai + ' cho tầng ' + n.tang + '.';
+        } else {
+          o.tran = tr.theoTang[n.tang]; o.tranChuoi = tr.chuoi;
+          o.trangThai = giu <= o.tran ? 'dat' : 'hut';
+          o.noi = vai + ' ' + nguoi + ' đang giữ ' + giu + ' nhà ' + n.tang +
+            ' · trần ' + o.tran;
+          if (o.trangThai === 'hut') {
+            o.vuot = giu - o.tran;
+            o.canLam = dk.hut;
+            /* Chủ hệ chưa cho chặn bằng số — BV_CHOCHU câu 2. Ở đây cảnh
+               báo và ghi rõ vượt bao nhiêu. Ngày chốt "có chặn" thì bật
+               dk.chan = true trong kho, không sửa hàm này. */
+            if (!dk.chan) { o.chiCanhBao = true; o.chuaChan = dk.chuaChan; }
+          }
+        }
+      }
+
+      if (dk.ma === 'NGUYENVONG') {
+        var nv = n[dk.truong];
+        if (nv === 'co')        { o.trangThai = 'dat';  o.noi = 'Nhà đã nói còn muốn đi tiếp.'; }
+        else if (nv === 'khong'){ o.trangThai = 'hut';  o.noi = 'Đã hỏi — nhà KHÔNG muốn đi tiếp.';
+                                  o.dungLai = true; o.canLam = dk.hut; }
+        else                    { o.trangThai = 'chuaBiet'; o.chuaHoi = true;
+                                  o.noi = 'CHƯA HỎI. Vắng mặt không phải là "không".';
+                                  o.canLam = dk.hut; }
+      }
+
+      ra.push(o);
+    });
+
+    var hut  = ra.filter(function (x) { return x.trangThai === 'hut'; });
+    var chua = ra.filter(function (x) { return x.trangThai === 'chuaBiet'; });
+    /* Điều kiện chỉ CẢNH BÁO thì không chặn — nhưng vẫn hiện nguyên màu. */
+    var chan = hut.filter(function (x) { return !x.chiCanhBao; });
+
+    return {
+      id: n.id, nha: n.nha, cap: (n.capDeNghi || {}).cap, ma: (n.capDeNghi || {}).ma,
+      dieu: ra,
+      duTrinh: chan.length === 0 && chua.length === 0,
+      thieu: chan.map(function (x) { return x.ten; }),
+      chuaBiet: chua.map(function (x) { return x.ten; }),
+      canhBao: hut.filter(function (x) { return x.chiCanhBao; })
+                  .map(function (x) { return x.noi; }),
+      nguoiKy: d.nguoiKy, quyen: d.quyen,
+      mayKhongDuyet: (G.BLV_DUYET_LUAT || {}).mayKhongDuyet || '',
+      chuaKy: true
+    };
+  };
+
+  /* Ai đang ngồi ở máy có được ký không. Đọc quyền, không đọc tên vai —
+     tên vai đổi được, quyền thì gắn với bảng phân quyền. */
+  G.blvAiKyDuoc = function () {
+    var d = G.BLV_DUYET || {};
+    var acc = G.S && G.S.acc;
+    var duoc = !!(acc && typeof G.can === 'function' && G.can(d.quyen));
+    return { duoc: duoc, quyen: d.quyen, nguoiKy: d.nguoiKy,
+      ai: acc ? acc.ten : null,
+      vi: duoc ? undefined
+        : 'Chỉ ' + d.nguoiKy + ' phê duyệt cấp. Việc của Coach là dựng hồ sơ và trình.' };
   };
 
   /* ═══════════ HÀM QUAN TRỌNG NHẤT: CHIA NĂM NGĂN ═══════════ */
@@ -6927,7 +7064,12 @@ G.VIEWS = G.VIEWS || {};
           return (vi.length || qh) ? { viCo: vi, quaHan: qh || undefined } : null;
         },
         QUAN_TRONG: function () { return viec.length ? { viec: viec } : null; },
-        CHO_KY:     function () { return (n.capDeNghi && n.capDeNghi.chuaKy) ? { viCo: [] } : null; },
+        CHO_KY:     function () {
+          if (!(n.capDeNghi && n.capDeNghi.chuaKy)) return null;
+          /* Hồ sơ trình duyệt đi kèm ngay từ đây: Coach mở ngăn ra là
+             thấy còn thiếu gì, không phải bấm thêm một lượt nữa. */
+          return { viCo: [], hoSo: G.blvDuyetDuoc(n, tenCoach) };
+        },
         IM_LANG:    function () { return im ? { im: im } : null; }
       };
       for (var i = 0; i < ngan.length; i++) {
@@ -7085,10 +7227,22 @@ G.VIEWS = G.VIEWS || {};
             viec: d.tinHieu, lam: d.hanhDong, han: d.hanGio, nguoiNhan: d.nguoiNhan,
             nguon: 'BV_DO #' + d.so });
         });
-        if (ng.ma === 'CHO_KY') ra.push({ ma: 'N-KY', c: '#B4720F', nha: n.nha, id: n.id,
-          viec: 'Đề nghị cấp ' + (n.capDeNghi || {}).cap + ' — ' + ((n.capDeNghi || {}).moc || ''),
-          lam: 'Đọc bằng chứng rồi ký hoặc từ chối. Từ chối cũng ghi lý do.',
-          han: (loai['N-KY'] || {}).khi, nguoiNhan: 'Coach' });
+        if (ng.ma === 'CHO_KY') {
+          var hs = m.hoSo || {};
+          /* Nhắc đúng người đúng việc: hồ sơ còn thiếu thì việc là của
+             Coach; hồ sơ đủ rồi thì việc là của Giám đốc. Nhắc chung một
+             câu cho cả hai là để cả hai cùng chờ nhau. */
+          var thieu = (hs.thieu || []).concat(hs.chuaBiet || []);
+          ra.push({ ma: 'N-KY', c: '#B4720F', nha: n.nha, id: n.id,
+            viec: 'Đề nghị cấp ' + (n.capDeNghi || {}).cap + ' — ' + ((n.capDeNghi || {}).moc || ''),
+            lam: thieu.length
+              ? 'Hồ sơ còn thiếu: ' + thieu.join(' · ') + '. Dựng cho đủ rồi mới trình.'
+              : 'Hồ sơ đủ ba điều kiện. Trình ' + (hs.nguoiKy || 'người phê duyệt') +
+                ' đọc bằng chứng rồi duyệt hoặc từ chối. Từ chối cũng ghi lý do.',
+            han: (loai['N-KY'] || {}).khi,
+            nguoiNhan: thieu.length ? 'Coach' : (hs.nguoiKy || 'Giám đốc điều hành'),
+            nguon: 'BLV_DUYET' });
+        }
         if (ng.ma === 'QUAN_TRONG') (m.viec || []).forEach(function (v) {
           ra.push({ ma: v.loai === 'Buổi gặp mốc' ? 'N-GAP' : 'N-CONG', c: '#5140B4',
             nha: n.nha, id: n.id, viec: v.ten,
@@ -7123,7 +7277,13 @@ G.VIEWS = G.VIEWS || {};
                  .map(function (n) { return n.nha + ' — đã nhắc ' + n.nhac + ' lần'; });
       if (r.ma === 'RS-CAP')
         thay = ds.filter(function (n) { return (n.capDeNghi || {}).chuaKy; })
-                 .map(function (n) { return n.nha + ' — đề nghị cấp ' + n.capDeNghi.cap + ', chưa ký'; });
+                 .map(function (n) {
+                   var hs = G.blvDuyetDuoc(n, tenCoach) || {};
+                   var t = (hs.thieu || []).concat(hs.chuaBiet || []);
+                   return n.nha + ' — đề nghị cấp ' + n.capDeNghi.cap +
+                     (t.length ? ', hồ sơ còn thiếu: ' + t.join(' · ')
+                               : ', đủ điều kiện trình ' + (hs.nguoiKy || ''));
+                 });
       if (r.ma === 'RS-KICHBAN') {
         thay = ds.filter(function (n) {
           var dn = n.capDeNghi || {};
@@ -7227,6 +7387,69 @@ G.VIEWS = G.VIEWS || {};
     return { chuaDo: false, loi: loi };
   };
 
+  /* ═══════════ KHOÁ 6: CỬA DUYỆT ═══════════
+
+     Bốn điều phải đúng cùng lúc, và điều thứ ba là điều tôi sợ nhất:
+     không kho BLV_ nào được phép ghi lại con số ngưỡng KPI. Ngày ai đó
+     tiện tay chép "80" vào đây, hệ có hai ngưỡng cùng tên, và bản chép
+     sẽ là bản không được sửa. */
+  G.blvSoiDuyet = function () {
+    var d = G.BLV_DUYET, ds = G.BLV_DUYET_DIEU || [], l = G.BLV_DUYET_LUAT || {}, loi = [];
+    if (!d || !ds.length) return { chuaDo: true, thieu: 'BLV_DUYET', loi: [] };
+
+    if (ds.length !== 3) loi.push('chốt của chủ hệ có ba điều kiện, kho đang có ' + ds.length);
+    ds.forEach(function (x) {
+      if (!x.tuKho) loi.push(x.ma + ' chưa khai đọc từ kho nào');
+      if (!x.hut) loi.push(x.ma + ' chưa khai hụt thì làm gì');
+      if (!x.aiLam) loi.push(x.ma + ' chưa khai ai làm');
+    });
+
+    /* Không chép ngưỡng — trừ MỘT chỗ: nguyên văn lời chủ hệ.
+       Lần chạy thử đầu tiên phép kiểm này đỏ ngay khi kho còn lành, vì
+       chính câu chốt có chữ "80%". Bỏ hẳn câu chốt đi thì mất nguyên văn,
+       mà nới phép kiểm cho qua thì mất luôn cái nó canh. Đường thứ ba:
+       MIỄN cho ô nguyên văn, rồi bắt con số trong ô ấy phải KHỚP với
+       G.KPI_XIN_THEM. Ngày chủ hệ đổi ngưỡng, câu chốt cũ đỏ lên và có
+       người phải đọc lại nó — đúng việc cần xảy ra. */
+    if (typeof G.KPI_XIN_THEM === 'number') {
+      var mien = { nguyenVanChot: 1 };
+      var kho = JSON.parse(JSON.stringify([d, ds, l, G.BLV_CHOCHU || []]));
+      Object.keys(mien).forEach(function (k) { delete kho[0][k]; });
+      var re = new RegExp('(^|[^\\d])' + G.KPI_XIN_THEM + '([^\\d%]|%|$)');
+      if (re.test(JSON.stringify(kho)))
+        loi.push('kho cửa duyệt đang chép lại ngưỡng KPI ' + G.KPI_XIN_THEM +
+          ' — ngưỡng chỉ sống ở G.KPI_XIN_THEM');
+
+      var trichSo = (String(d.nguyenVanChot || '').match(/(\d+)\s*%/) || [])[1];
+      if (!trichSo) loi.push('câu chốt của chủ hệ không còn nêu con số ngưỡng nào');
+      else if (Number(trichSo) !== G.KPI_XIN_THEM)
+        loi.push('câu chốt nói ngưỡng ' + trichSo + '%, kho đang chạy ' + G.KPI_XIN_THEM +
+          '% — một trong hai đã đổi mà chỗ kia chưa theo');
+    }
+
+    /* Người ký phải là một quyền có thật trong bảng phân quyền, không
+       phải một chuỗi đẹp. Sai tên quyền thì G.can() trả false với MỌI
+       người, và cửa duyệt đóng vĩnh viễn mà không ai hiểu vì sao. */
+    if (!d.quyen) loi.push('chưa khai quyền của người phê duyệt');
+    else if (G.PERM && !co(G.PERM[d.quyen]))
+      loi.push('quyền "' + d.quyen + '" không có trong bảng phân quyền');
+
+    if (!l.mayKhongDuyet) loi.push('chưa khai luật máy không duyệt');
+    if (!l.baTrangThai) loi.push('chưa khai vì sao mỗi điều kiện có ba trạng thái');
+
+    /* Hàm phải trả đủ ba trạng thái, không được rút xuống hai. */
+    var thu = { id: 'x', nha: 'Nhà thử', tang: 'T4', tuchu: 95, ngay: 300, vai: 9, nhac: 0,
+      coach: '· nhà thử ·', capDeNghi: { cap: 9, chuaKy: true } };
+    var r = G.blvDuyetDuoc(thu);
+    if (!r.chuaDo) {
+      if (r.duTrinh) loi.push('nhà chưa ai hỏi nguyện vọng mà cửa vẫn cho trình');
+      var nv = (r.dieu || []).filter(function (x) { return x.ma === 'NGUYENVONG'; })[0];
+      if (!nv || nv.trangThai !== 'chuaBiet')
+        loi.push('vắng trường nguyện vọng phải ra CHƯA BIẾT, đang ra ' + (nv && nv.trangThai));
+    }
+    return { chuaDo: false, loi: loi, so: ds.length };
+  };
+
   /* ═══════════════════════════════════════════════════════════
      MÀN HÌNH
      ═══════════════════════════════════════════════════════════ */
@@ -7268,6 +7491,16 @@ G.VIEWS = G.VIEWS || {};
       (loc ? 'Đang xem nhà của ' + h(tenCoach || '') + '.'
            : 'Tài khoản này chưa được giao nhà nào — đang xem toàn bộ nhà trong hệ.') + '</p></div>';
 
+    /* Sáu khoá chạy thật mỗi lần mở màn. Bản 9.57 tôi viết năm khoá rồi
+       chỉ gọi một — năm khoá kia đúng nghĩa chưa từng chạy, và một khoá
+       chưa từng chạy thì chưa phải một khoá. */
+    var lech = [].concat(
+      G.blvSoiThuTu().loi || [], G.blvSoiGoi().loi || [], G.blvSoiNhac().loi || [],
+      G.blvSoiKhongTuGui().loi || [], G.blvSoiDuyet().loi || []);
+    if (lech.length)
+      o += '<div class="card mb" style="border-color:#BE0E16"><b class="sm" style="color:#BE0E16">' +
+        'LỆCH: ' + h(lech.join(' · ')) + '</b></div>';
+
     o += G.kaKhung ? G.kaKhung('ban-coach', 'dau') : '';
 
     /* ── Năm ngăn ── */
@@ -7305,6 +7538,29 @@ G.VIEWS = G.VIEWS || {};
         else if (dn.chuaDoDuoc)
           s += '<p class="tiny mt" style="line-height:1.7;color:#B4720F">Chưa đề nghị được cấp: ' +
             h(dn.vi || '') + '</p>';
+
+        /* ── Hồ sơ trình duyệt: ba điều kiện, ba màu ──
+           Điều kiện CHƯA BIẾT mang màu riêng, không dùng chung màu đỏ với
+           CHƯA ĐẠT. Hai thứ ấy đòi hai việc khác nhau, và Coach nhìn màu
+           trước khi đọc chữ. */
+        if (m.hoSo && !m.hoSo.chuaDo) {
+          var hs = m.hoSo, MAU = { dat: '#0B6675', hut: '#BE0E16', chuaBiet: '#B4720F' };
+          var NHAN = { dat: 'ĐẠT', hut: 'CHƯA ĐẠT', chuaBiet: 'CHƯA BIẾT' };
+          s += '<div class="mt" style="padding:8px 10px;border-left:3px solid ' +
+            (hs.duTrinh ? '#0B6675' : '#B4720F') + ';background:var(--gita-nen-2)">' +
+            '<b class="tiny" style="color:' + (hs.duTrinh ? '#0B6675' : '#B4720F') + '">' +
+            (hs.duTrinh ? 'ĐỦ ĐIỀU KIỆN TRÌNH — chờ ' + h(hs.nguoiKy)
+                        : 'HỒ SƠ CHƯA ĐỦ ĐỂ TRÌNH') + '</b>' +
+            hs.dieu.map(function (dk) {
+              return '<p class="tiny mt" style="line-height:1.7"><span style="color:' +
+                MAU[dk.trangThai] + '">● ' + NHAN[dk.trangThai] + '</span> — ' + h(dk.ten) +
+                ': ' + h(dk.noi || '') +
+                (dk.canLam ? '<br><span class="dim">' + h(dk.canLam) + '</span>' : '') +
+                (dk.chiCanhBao ? '<br><span style="color:#B4720F">Chỉ cảnh báo, chưa chặn — ' +
+                  h(dk.chuaChan || '') + '</span>' : '') + '</p>';
+            }).join('') +
+            '<p class="tiny dim mt" style="line-height:1.7">' + h(hs.mayKhongDuyet) + '</p></div>';
+        }
 
         (m.viCo || []).forEach(function (d) {
           s += '<div class="mt" style="padding:8px 10px;border-left:3px solid #BE0E16;background:var(--gita-nen-2)">' +
@@ -7378,6 +7634,53 @@ G.VIEWS = G.VIEWS || {};
         (r.viDangKe ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' +
           h(r.viDangKe) + '</p>' : '') + '</div>';
     }).join('') + '</div>';
+
+    /* ── Cửa phê duyệt cấp ── */
+    var cd = G.BLV_DUYET, ky = G.blvAiKyDuoc();
+    if (cd) {
+      o += U.sec('Cửa phê duyệt cấp — ai ký, và ký theo điều kiện gì',
+        cd.nguyenVanChot);
+      o += '<div class="card mb" style="border-color:' + (ky.duoc ? '#0B6675' : '#B4720F') + '56">' +
+        '<p class="sm" style="line-height:1.75"><b>Người ký: ' + h(cd.nguoiKy) + '</b> ' +
+        '<span class="tiny dim">quyền ' + h(cd.quyen) + '</span></p>' +
+        '<p class="tiny mt" style="line-height:1.75;color:' + (ky.duoc ? '#0B6675' : '#B4720F') + '">' +
+        (ky.duoc
+          ? 'Tài khoản đang dùng (' + h(ky.ai || '') + ') CÓ quyền phê duyệt.'
+          : h(ky.vi)) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.75">' + h(cd.vieccuaCoach) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.75">' + h(cd.vieccuaMay) + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.75">' + h(cd.viKhongPhaiCoach) + '</p>' +
+        (G.BLV_DUYET_DIEU || []).map(function (dk) {
+          return '<div style="padding:9px 0;border-top:1px solid var(--gita-vien-2)">' +
+            '<b class="sm">' + dk.so + '. ' + h(dk.ten) + '</b> ' +
+            '<span class="tiny dim">' + h(dk.tuKho) + '</span>' +
+            '<p class="tiny mt" style="line-height:1.75">' +
+            (dk.doDuoc ? 'Máy đo được.' : '<span style="color:#B4720F">Máy KHÔNG đo được.</span>') +
+            ' ' + h(dk.aiLam) + '</p>' +
+            (dk.viMayKhongSuy ? '<p class="tiny dim mt" style="line-height:1.75">' +
+              h(dk.viMayKhongSuy) + '</p>' : '') + '</div>';
+        }).join('') + '</div>';
+
+      var dl = G.BLV_DUYET_LUAT || {};
+      o += '<div class="card mb">' + Object.keys(dl).map(function (k) {
+        return '<p class="tiny" style="line-height:1.75;padding:4px 0">• ' + h(dl[k]) + '</p>';
+      }).join('') + '</div>';
+    }
+
+    /* ── Chỗ còn chờ chủ hệ ── */
+    if ((G.BLV_CHOCHU || []).length) {
+      o += U.sec('Chỗ này chờ chủ hệ, không chờ mã', '');
+      o += '<div class="card mb" style="border-color:#B4720F56">' +
+        G.BLV_CHOCHU.map(function (c) {
+          return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+            '<b class="sm" style="color:#B4720F">' + h(c.hoi) + '</b>' +
+            '<p class="tiny mt" style="line-height:1.75">' + h(c.boi) + '</p>' +
+            (c.toiKhongTuDat ? '<p class="tiny mt" style="line-height:1.75">' +
+              h(c.toiKhongTuDat) + '</p>' : '') +
+            '<p class="tiny dim mt" style="line-height:1.75">Máy đang làm: ' +
+            h(c.mayDangLam) + '</p></div>';
+        }).join('') + '</div>';
+    }
 
     /* ── Luật của bàn ── */
     o += U.sec('Luật của bàn này', '');
