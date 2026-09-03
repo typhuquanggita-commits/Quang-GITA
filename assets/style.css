@@ -1192,8 +1192,15 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 
 /* Cả cái bàn phải nhìn được trong một mắt — nhìn được cả bàn mới là chỗ
    vui của cờ. Nên ô co lại theo số cột, không cho cuộn ngang. */
+/* CHẶN CỠ Ô. Cột 1fr + aspect-ratio:1 nghĩa là ô CAO BẰNG một phần
+   bề ngang cột — trong khung rộng 1000px thì bảy cột cho ra ô 140px, và
+   một chuỗi hai mươi mốt ngày trải hết ba màn hình. Lúc ấy không ai đọc
+   ra "chỗ nào dày, chỗ nào thưa" nữa, vì không nhìn được cả chuỗi cùng
+   lúc — mà nhìn được cả chuỗi cùng lúc mới là toàn bộ lý do dùng bàn cờ
+   thay cho thanh tiến độ. Chặn ở TỔNG BỀ NGANG chứ không đặt cỡ ô cứng,
+   để trên điện thoại ô vẫn co lại vừa màn. */
 .bc-ban{display:grid;grid-template-columns:repeat(var(--bc-cot,7),1fr);
-  gap:4px;margin:6px 0 12px}
+  gap:4px;margin:6px 0 12px;max-width:calc(var(--bc-cot,7) * 34px)}
 .bc-o{display:block;aspect-ratio:1;border-radius:5px;background:var(--phu-3);
   border:1px solid var(--line);transition:transform .18s}
 .bc-o.co{border-color:transparent;box-shadow:0 1px 6px -2px rgba(0,0,0,.35)}
@@ -1286,3 +1293,23 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
   border:1px solid #B4720F45;background:color-mix(in srgb,#B4720F 6%,transparent)}
 .bc-baotruoc b{display:block;font-size:14.5px;color:#B4720F}
 .bc-baotruoc p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:60ch}
+
+/* ═══ TẦNG BA · v9.36 ═══
+   Số của từng vòng, và cái khớp giữa hai vòng. Cả hai chỉ dùng lại
+   đúng những bậc chữ đã có (10.5 · 12.5 · 14.5) — thêm một bậc thứ
+   mười là phá cái thang mà mục 7 của bộ rà soát đang giữ. */
+.bc-vong-so{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:8px}
+.bc-vong-so b{color:var(--ink);font-weight:700}
+.bc-vong-so .hon{color:var(--ok);font-weight:700}
+.bc-vong-so .kem{color:var(--ink-4)}
+.bc-vong-so .bang{color:var(--ink-4)}
+.bc-vong-so .dang{color:var(--gita);font-weight:700}
+.bc-vong-so.dim{color:var(--ink-4)}
+/* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
+   một trong hai thì mắt đọc nó thành của riêng dải ấy. */
+.bc-khop{display:flex;align-items:center;gap:8px;margin:-6px 0 10px 6px;
+  font-size:10.5px;letter-spacing:.06em;font-weight:700;color:var(--ink-4)}
+.bc-khop.noi{color:var(--ok)}
+.bc-thuthach{font-size:12.5px;line-height:1.75;color:var(--ink-2);
+  margin:0 0 10px;max-width:64ch}
+.bc-thuthach b{color:var(--ink)}

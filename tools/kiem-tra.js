@@ -7782,7 +7782,12 @@ const { chromium } = require(PW);
   console.log('\n66 · BÀN CỜ HÀNH TRÌNH — MỘT NGÀY MỘT QUÂN, NHÀ MÌNH TỰ CHỌN');
   {
     await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
-    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length, { timeout: 60000 });
+    /* Chờ THÊM cả HT_TANG và BD_LON, không chỉ chờ hàng nạp rỗng. Hàng
+       rỗng đi trước lúc kho cuối gắn vào G một nhịp, và mục này đọc
+       HT_TANG.khoNhat — chờ thiếu thì mục đỏ ngẫu nhiên, mà một mục đỏ
+       ngẫu nhiên thì lần sau không ai tin nó nữa. */
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.HT_TANG && window.G.BD_LON, { timeout: 60000 });
     const ra = await p.evaluate(() => {
       const G = window.G;
       if (!G.bcGoiY || !G.BC_TRONGSO) return { co: false };
@@ -7913,8 +7918,83 @@ const { chromium } = require(PW);
          phải ngược lại. */
       r.khaiSoDu = v3.du === 6 && v4.du === 5 &&
         /dư 6 ngày chưa nói là gì/.test(v3.duChuaKhai || '');
-      /* Chỗ khó đọc từ HT_TANG.khoNhat — 'Tuần thứ hai…' → vòng 2 */
-      r.vongKho = G.bcVongKho('T2') === 2 && /Tuần thứ hai/.test(G.bcKhoNhat('T2') || '');
+      /* Chỗ khó đọc từ HT_TANG.khoNhat, và trả về DANH SÁCH:
+           T2 'Tuần thứ hai…'                → [2]
+           T3 'Chuỗi thứ hai và thứ ba…'     → [2, 3]
+         Bản 9.35 chỉ bắt 'tuần thứ N' và trả một số, nên lời báo trước
+         im lặng đúng ở tầng ba — tầng dài nhất trước khi sang năm. */
+      const kT2 = G.bcVongKho('T2'), kT3 = G.bcVongKho('T3');
+      r.vongKho = Array.isArray(kT2) && kT2.length === 1 && kT2[0] === 2 &&
+        /Tuần thứ hai/.test(G.bcKhoNhat('T2') || '');
+      r.vongKhoT3 = Array.isArray(kT3) && kT3.join(',') === '2,3' &&
+        /Chuỗi thứ hai và thứ ba/.test(G.bcKhoNhat('T3') || '');
+      /* Kho gọi vòng của tầng ba là CHUỖI, tầng bốn là CHU KỲ. Đọc luôn
+         cái CHỮ ấy — gọi cả ba là 'vòng' thì màn nói một đằng mà hợp
+         đồng nói một nẻo, và nhà mình phải tự dịch. */
+      r.tenVong = v3.ten === 'chuỗi' && v4.ten === 'chu kỳ' && v2.ten === 'vòng' &&
+        /4 chuỗi, mỗi chuỗi 21 ngày/.test(v3.la);
+
+      /* ── TẦNG BA: SO VỚI CHUỖI TRƯỚC, VÀ MỐI NỐI ──
+         Dựng một bàn T3 thật: chuỗi 1 kín 5 ô, chuỗi 2 kín 9 ô, và cái
+         khớp 21→22 để HỞ. Con số phải ra đúng, và khớp phải báo hở. */
+      const giuT3 = JSON.stringify(G.S.banCo || {});
+      const g0 = new Date(new Date().getTime() - 44 * 86400000);
+      const oDay3 = () => { const z = {}; G.bcVaiNha().forEach(v => {
+        z[v.ma] = { ma: 'q', bd: 'BD1', diem: 1, c: '#000', muc: 'TANG_SAU' }; });
+        return { vai: z, thuong: G.bcVaiNha().length }; };
+      const dat3 = i => { G.S.banCo.T3[G.bcNgay(
+        new Date(g0.getTime() + i * 86400000))] = oDay3(); };
+      G.S.banCo = { T3: {} };
+      dat3(0);                                    /* mốc ngày đầu của bàn */
+      for (let i = 1; i <= 4; i++) dat3(i);       /* chuỗi 1: 5 ô, ngày 0–4 */
+      for (let i = 22; i <= 30; i++) dat3(i);     /* chuỗi 2: 9 ô, ngày 22–30 */
+      const dv3 = G.bcVongDo('T3');
+      r.vongDoDung = !!dv3 && dv3.length === 4 &&
+        dv3[0].soO === 5 && dv3[1].soO === 9 && dv3[0].hon === null && dv3[1].hon === 4 &&
+        dv3[0].chuoiDai === 5;
+      /* CHỈ SO HAI VÒNG ĐỀU ĐÃ TRỌN. Vòng chưa tới lượt mà bị báo "kém
+         chín ô" là bị trách về một việc chưa đến lượt làm; vòng mới đi
+         ba ngày mà đem so với một vòng đã trọn hai mươi mốt thì con số
+         ấy âm vì LỊCH chứ không vì nhà mình. */
+      r.chuaToiThiKhongSo = dv3[3].trangThai === 'chuaToi' && dv3[3].hon === null &&
+        dv3[2].trangThai === 'dangDi' && dv3[2].hon === null &&
+        dv3[0].trangThai === 'xong' && dv3[1].trangThai === 'xong';
+      /* Vòng ĐANG ĐI thì so CÙNG ĐỘ DÀI: chuỗi trước tới đúng ngày thứ
+         ấy đã có mấy ô. Chuỗi ba mới sang ngày thứ ba; chuỗi hai trong
+         ba ngày đầu của nó (chỉ số 21·22·23) có đúng hai ô. */
+      r.soCungDoDai = dv3[2].ngayThu === 3 && dv3[2].truocCungNgay === 2;
+      /* Tổng của bốn chuỗi phải bằng tổng của cả bàn TRỪ phần ngoài
+         chuỗi — nếu lệch thì một trong hai phép đếm đang đọc sai ô. */
+      r.vongDoKhopTong = dv3.reduce((a, x) => a + x.soO, 0) === G.bcDo('T3').soO;
+      /* Khớp 21→22 hở (ngày 20 và 21 đều trống); khớp 42→43 CHƯA TỚI
+         nên không được nói tới — báo hở một cái khớp chưa tới là bịa. */
+      const mn3 = G.bcMoiNoi('T3');
+      r.moiNoiHo = !!mn3 && mn3.length === 2 && mn3[0].tu === 1 && mn3[0].noi === false;
+      r.moiNoiChuaToiThiIm = mn3.length === 2 && mn3.every(x => x.den <= 3);
+      /* RANH GIỚI VÒNG — chỗ lệch một ô kinh điển. Ngày thứ 22 (chỉ số
+         21) là ngày ĐẦU của chuỗi hai, không phải ngày cuối của chuỗi
+         một. Lệch một ở đây thì mọi con số so-với-chuỗi-trước sai hết
+         mà không đỏ ở đâu cả. */
+      dat3(21);
+      const dvB = G.bcVongDo('T3');
+      r.ranhVong = dvB[0].soO === 5 && dvB[1].soO === 10;
+      /* Nối được thì phải báo nối: lấp đúng hai ô hai bên khớp 42→43. */
+      dat3(41); dat3(42);
+      const mn3b = G.bcMoiNoi('T3');
+      r.moiNoiNoiDuoc = mn3b[1].tu === 2 && mn3b[1].noi === true;
+      /* Và mối nối KHÔNG được trừ điểm — khớp hở xong thì tổng vẫn y
+         nguyên. Luật 8: ô trống là ô trống. */
+      r.moiNoiKhongPhat = (G.BC_VONG_LUAT || {}).moiNoiKhongPhat === true &&
+        G.bcDo('T3').tong === G.bcDo('T3').soO * 2 * G.bcVaiNha().length;
+      /* Trên màn tầng ba: có số của từng chuỗi, có cái khớp, có thử thách */
+      G.S.bcTang = 'T3';
+      const m3 = G.VIEWS['ban-co']();
+      r.manT3 = /class="bc-vong-so"/.test(m3) && /class="bc-khop/.test(m3) &&
+        m3.indexOf('Chuỗi 1') >= 0 && m3.indexOf('Ngoài chuỗi') >= 0 &&
+        m3.indexOf(G.U.h('Đi bốn chuỗi hai mươi mốt ngày nối nhau')) >= 0;
+      /* Hai chuỗi khó phải cùng được đánh dấu, không phải một */
+      r.manHaiChoKho = (m3.match(/bc-vong-kho/g) || []).length === 2;
+      G.S.bcTang = 'T1'; G.S.banCo = JSON.parse(giuT3);
       /* Biến của vòng: ghi được, và câu mới để trống thì không ghi */
       G.S.bcBien = {};
       r.ghiBien = G.bcGhiBien('T2', 1, 'câu cũ', 'câu mới') === true &&
@@ -7961,6 +8041,12 @@ const { chromium } = require(PW);
       bao(ra.mocMotCai && ra.mocLenBay && ra.mocXongTang && ra.ngayTheoMay,
         'mốc chúc mừng trả về CAO NHẤT đạt được, không nổi năm cái cùng lúc — nổi năm cái thì không cái nào được nhìn. Bảy ngày liền thì mốc tự lên. Và khoá ô là NGÀY THEO GIỜ MÁY NGƯỜI DÙNG: dùng ngày UTC thì nhà mình đặt quân lúc chín giờ tối giờ Việt Nam rơi vào ô của hôm sau, và cả bàn cờ lệch đúng một ô suốt tầng',
         'chuỗi 7 trên bàn 90 ô → BẢY LIỀN · kín 7/7 ô → XONG TẦNG · 9h30 tối 2/9 → ô ngày 2/9');
+      bao(ra.vongKhoT3 && ra.tenVong && ra.vongDoDung && ra.vongDoKhopTong &&
+          ra.moiNoiHo && ra.moiNoiChuaToiThiIm && ra.ranhVong &&
+          ra.chuaToiThiKhongSo && ra.soCungDoDai && ra.moiNoiNoiDuoc && ra.moiNoiKhongPhat &&
+          ra.manT3 && ra.manHaiChoKho,
+        'TẦNG BA KHÁC TẦNG HAI Ở BA CHỖ, và cả ba đều đã nằm sẵn trong kho. MỘT: chỗ khó của nó là HAI chuỗi liền — "Chuỗi thứ hai và thứ ba. Không biến cố nào, không kết quả nào, chỉ là dài" — nên cách đọc chỗ khó phải trả về DANH SÁCH; trả về một số thì tầng ba lặng thinh đúng ở tầng dài nhất trước khi sang năm, và lặng thinh ấy không đỏ ở đâu cả. HAI: thử thách của nó đòi bốn chuỗi NỐI NHAU, mà nối nhau là chuyện của đúng một cái khớp — tối cuối chuỗi này và tối đầu chuỗi sau; bốn chuỗi rời nhau là bốn lần bắt đầu lại, và bốn lần bắt đầu lại không phải chín mươi ngày. Khớp hở thì HIỆN RA chứ không phạt, và khớp CHƯA TỚI thì im — báo hở một cái khớp chưa tới là bịa. BA: trong quãng "không kết quả nào" thì kết quả duy nhất có thật là CHÍNH CHUỖI TRƯỚC của nhà mình, và nó nằm sẵn trên bàn cờ chứ không phải đi vay. So với chính mình, không so với nhà khác — luật 11 đã cấm bảng vàng. Kho còn gọi vòng của tầng ba là CHUỖI và tầng bốn là CHU KỲ, nên màn gọi đúng chữ ấy thay vì gọi tất cả là "vòng"',
+        'T3 chỗ khó = [2,3] · chuỗi 1: 5 ô → chuỗi 2: 9 ô (+4) · chuỗi 3 đang đi ngày 3, chuỗi trước cùng ngày 2 ô · chuỗi 4 chưa tới thì không so · khớp 1→2 hở · khớp 3→4 chưa tới thì im');
       bao(ra.vongT2 && ra.vongT3 && ra.vongT1KhongCo && ra.khaiSoDu && ra.vongKho &&
           ra.ghiBien && ra.chanBienRong && ra.bienKhongBatBuoc,
         'BÀN DÀI THÌ CHIA VÒNG, MỖI VÒNG ĐÚNG MỘT BIẾN — và số vòng ĐỌC TỪ CHỖ ĐÃ VIẾT chứ không khai lại: tầng hai đọc từ lời hứa của cú hích ("mỗi vòng bảy ngày thay đúng một biến"), tầng ba và bốn đọc từ chính tên chặng ("90 ngày, 4 chuỗi 21 ngày"). Tầng một và tầng năm thật sự không khai vòng nào, và máy nói KHÔNG CÓ chứ không tự đặt ra một con số cho đều bảng. Vòng KHÔNG lát kín tầng ở hai chỗ — 4×21=84≠90 và 4×90=360≠365 — nên bàn để phần dư ra NGOÀI VÒNG và nói thẳng kho chưa khai mấy ngày ấy là gì; giãn vòng cho vừa là sửa lời hứa cho khớp cái bàn, mà đáng ra phải ngược lại. Chỗ khó nhất của tầng đọc từ HT_TANG.khoNhat và BÁO TRƯỚC: câu ấy nằm trong kho từ bản 9.21 mà chưa màn nào nói ra đúng lúc. Biến của vòng ghi được nhưng KHÔNG bắt buộc — bắt điền mới cho đi tiếp là dựng một cái cổng ở chỗ đáng ra chỉ cần một lời mời',

@@ -1564,8 +1564,15 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 
 /* Cả cái bàn phải nhìn được trong một mắt — nhìn được cả bàn mới là chỗ
    vui của cờ. Nên ô co lại theo số cột, không cho cuộn ngang. */
+/* CHẶN CỠ Ô. Cột 1fr + aspect-ratio:1 nghĩa là ô CAO BẰNG một phần
+   bề ngang cột — trong khung rộng 1000px thì bảy cột cho ra ô 140px, và
+   một chuỗi hai mươi mốt ngày trải hết ba màn hình. Lúc ấy không ai đọc
+   ra "chỗ nào dày, chỗ nào thưa" nữa, vì không nhìn được cả chuỗi cùng
+   lúc — mà nhìn được cả chuỗi cùng lúc mới là toàn bộ lý do dùng bàn cờ
+   thay cho thanh tiến độ. Chặn ở TỔNG BỀ NGANG chứ không đặt cỡ ô cứng,
+   để trên điện thoại ô vẫn co lại vừa màn. */
 .bc-ban{display:grid;grid-template-columns:repeat(var(--bc-cot,7),1fr);
-  gap:4px;margin:6px 0 12px}
+  gap:4px;margin:6px 0 12px;max-width:calc(var(--bc-cot,7) * 34px)}
 .bc-o{display:block;aspect-ratio:1;border-radius:5px;background:var(--phu-3);
   border:1px solid var(--line);transition:transform .18s}
 .bc-o.co{border-color:transparent;box-shadow:0 1px 6px -2px rgba(0,0,0,.35)}
@@ -1658,6 +1665,26 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
   border:1px solid #B4720F45;background:color-mix(in srgb,#B4720F 6%,transparent)}
 .bc-baotruoc b{display:block;font-size:14.5px;color:#B4720F}
 .bc-baotruoc p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:60ch}
+
+/* ═══ TẦNG BA · v9.36 ═══
+   Số của từng vòng, và cái khớp giữa hai vòng. Cả hai chỉ dùng lại
+   đúng những bậc chữ đã có (10.5 · 12.5 · 14.5) — thêm một bậc thứ
+   mười là phá cái thang mà mục 7 của bộ rà soát đang giữ. */
+.bc-vong-so{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:8px}
+.bc-vong-so b{color:var(--ink);font-weight:700}
+.bc-vong-so .hon{color:var(--ok);font-weight:700}
+.bc-vong-so .kem{color:var(--ink-4)}
+.bc-vong-so .bang{color:var(--ink-4)}
+.bc-vong-so .dang{color:var(--gita);font-weight:700}
+.bc-vong-so.dim{color:var(--ink-4)}
+/* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
+   một trong hai thì mắt đọc nó thành của riêng dải ấy. */
+.bc-khop{display:flex;align-items:center;gap:8px;margin:-6px 0 10px 6px;
+  font-size:10.5px;letter-spacing:.06em;font-weight:700;color:var(--ink-4)}
+.bc-khop.noi{color:var(--ok)}
+.bc-thuthach{font-size:12.5px;line-height:1.75;color:var(--ink-2);
+  margin:0 0 10px;max-width:64ch}
+.bc-thuthach b{color:var(--ink)}
 
 </style>
 
@@ -1868,7 +1895,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.35',
+  version: '9.36',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -24357,8 +24384,8 @@ G.VIEWS = G.VIEWS || {};
        CUHICH.hua   'Mỗi vòng bảy ngày thay đúng một biến.'  (tier T2)
      Không thấy ở đâu thì tầng ấy không chia vòng — và nói là không có,
      chứ không tự đặt ra một con số cho đều bảng. */
-  var SO_CHU = { hai: 2, ba: 3, bốn: 4, năm: 5, sáu: 6, bảy: 7, tám: 8, chín: 9, mười: 10,
-    'mười một': 11, 'hai mươi mốt': 21 };
+  var SO_CHU = { nhất: 1, hai: 2, ba: 3, tư: 4, bốn: 4, năm: 5, sáu: 6, bảy: 7, tám: 8,
+    chín: 9, mười: 10, 'mười một': 11, 'hai mươi mốt': 21 };
   function soTuChu(t) {
     t = String(t || '').toLowerCase();
     var k = Object.keys(SO_CHU).sort(function (a, b) { return b.length - a.length; });
@@ -24371,15 +24398,18 @@ G.VIEWS = G.VIEWS || {};
     /* 1. Tên chặng: 'N chuỗi M ngày' hoặc 'N chu kỳ M ngày' */
     var t = (G.HP_TANG || []).filter(function (x) { return x.tang === tang; })[0] ||
             (G.HP_NGAY || []).filter(function (x) { return x.tang === tang; })[0];
-    var m = /(\d+)\s*(?:chuỗi|chu kỳ)\s*(\d+)\s*ngày/i.exec((t && t.ten) || '');
-    if (m) return vongRa(Number(m[1]), Number(m[2]), can, 'HP_TANG.ten');
+    /* Lấy luôn CHỮ mà kho gọi cái vòng ấy: tầng ba gọi là "chuỗi", tầng
+       bốn gọi là "chu kỳ". Gọi cả hai là "vòng" thì màn nói một đằng mà
+       hợp đồng nói một nẻo, và nhà mình phải tự dịch. */
+    var m = /(\d+)\s*(chuỗi|chu kỳ|vòng)\s*(\d+)\s*ngày/i.exec((t && t.ten) || '');
+    if (m) return vongRa(Number(m[1]), Number(m[3]), can, 'HP_TANG.ten', m[2]);
     /* 2. Lời hứa của cú hích cùng tầng: 'Mỗi vòng bảy ngày…' */
     var ch = (G.CUHICH || []).filter(function (x) { return x.tier === tang; })[0];
     var hua = (ch && ch.hua) || '';
     var mv = /mỗi vòng\s+([^,\.]+?)\s*ngày/i.exec(hua);
     var dai = mv ? (Number(mv[1]) || soTuChu(mv[1])) : null;
     if (dai && dai > 0 && dai <= can)
-      return vongRa(Math.floor(can / dai), dai, can, 'CUHICH.' + ch.ma + '.hua');
+      return vongRa(Math.floor(can / dai), dai, can, 'CUHICH.' + ch.ma + '.hua', 'vòng');
     return null;
   };
   /* Vòng KHÔNG lát kín tầng ở hai chỗ, và cả hai đều nằm sẵn trong kho:
@@ -24388,15 +24418,17 @@ G.VIEWS = G.VIEWS || {};
      Kho không nói mấy ngày dư ấy là gì. Nên KHÔNG làm tròn và KHÔNG
      giãn vòng cho vừa — trả về số dư và để màn nói thẳng. Giãn cho vừa
      là sửa lời hứa cho khớp cái bàn, mà đáng ra phải ngược lại. */
-  function vongRa(soVong, dai, can, docTu) {
+  function vongRa(soVong, dai, can, docTu, ten) {
     var du = can - soVong * dai;
+    ten = String(ten || 'vòng').toLowerCase();
     return { soVong: soVong, dai: dai, du: du, docTu: docTu,
-      la: soVong + ' vòng, mỗi vòng ' + dai + ' ngày' +
+      ten: ten, tenVong: ten.charAt(0).toUpperCase() + ten.slice(1),
+      la: soVong + ' ' + ten + ', mỗi ' + ten + ' ' + dai + ' ngày' +
         (du > 0 ? ' · dư ' + du + ' ngày' : ''),
       duChuaKhai: du > 0
-        ? 'Kho khai ' + can + ' ngày và ' + soVong + ' vòng ' + dai + ' ngày — cộng lại ' +
+        ? 'Kho khai ' + can + ' ngày và ' + soVong + ' ' + ten + ' ' + dai + ' ngày — cộng lại ' +
           (soVong * dai) + ', dư ' + du + ' ngày chưa nói là gì. Bàn cờ để ' + du +
-          ' ô ấy ngoài vòng chứ không giãn vòng cho vừa.'
+          ' ô ấy ngoài ' + ten + ' chứ không giãn ' + ten + ' cho vừa.'
         : null };
   }
 
@@ -24610,26 +24642,74 @@ G.VIEWS = G.VIEWS || {};
   /* Bàn chia theo VÒNG: mỗi vòng một dải riêng, có nhãn và có chỗ ghi
      biến. Đổ 21 ô liền một mạch thì mắt đọc ra một dải ngày, không đọc
      ra ba lần thử — mà ba lần thử mới là thứ tầng hai đang dạy. */
+  /* Số của một vòng. Nói gì thì tuỳ vòng ấy ĐÃ TRỌN, ĐANG ĐI hay CHƯA
+     TỚI — một vòng chưa tới lượt mà bị báo "kém 7 ô" là bị trách về một
+     việc chưa đến lượt làm, và một vòng mới đi ba ngày mà đem so với
+     một vòng đã trọn hai mươi mốt thì con số ấy âm vì lịch chứ không
+     vì nhà mình. */
+  function veSoVong(dv, v) {
+    if (!dv || dv.soO === undefined) return '';
+    if (dv.trangThai === 'chuaToi')
+      return '<p class="bc-vong-so dim">Chưa tới ' + h(v.ten) + ' này.</p>';
+    var o = '<p class="bc-vong-so"><b>' + dv.soO + '</b>/' +
+      (dv.trangThai === 'dangDi' ? dv.ngayThu : v.dai) + ' ô · <b>' +
+      dv.tong + '</b> điểm · dài nhất <b>' + dv.chuoiDai + '</b> ngày liền';
+    if (dv.trangThai === 'dangDi') {
+      o += ' <span class="dang">đang đi · ngày thứ ' + dv.ngayThu + '/' + v.dai + '</span>';
+      if (dv.truocCungNgay !== null && dv.truocCungNgay !== undefined) {
+        var c = dv.soO - dv.truocCungNgay;
+        o += '<br><span class="' + (c > 0 ? 'hon' : c < 0 ? 'kem' : 'bang') + '">' +
+          h(v.tenVong) + ' trước tới đúng ngày thứ ' + dv.ngayThu + ' có ' +
+          dv.truocCungNgay + ' ô' +
+          (c > 0 ? ' — nhà mình đang hơn ' + c : c < 0 ? ' — đang kém ' + (-c) : ' — đang bằng') +
+          '</span>';
+      }
+    } else if (dv.hon !== null && dv.hon !== undefined) {
+      o += ' <span class="' + (dv.hon > 0 ? 'hon' : dv.hon < 0 ? 'kem' : 'bang') + '">' +
+        (dv.hon > 0 ? '+' + dv.hon + ' ô so với ' + v.ten + ' trước'
+         : dv.hon < 0 ? dv.hon + ' ô so với ' + v.ten + ' trước'
+         : 'bằng ' + v.ten + ' trước') + '</span>';
+    }
+    return o + '</p>';
+  }
+
   function veTheoVong(tang, can, s, v) {
-    var o = '', d0 = null;
-    Object.keys(s).sort().forEach(function (n) { if (!d0) d0 = n; });
+    var o = '', d0 = ngayDau(s);
+    var dsKho = G.bcVongKho(tang) || [];
+    var doV = G.bcVongDo(tang) || [];
+    var noi = G.bcMoiNoi(tang) || [];
     for (var k = 0; k < v.soVong; k++) {
       var bien = G.bcBien(tang, k + 1);
-      var kho = G.bcVongKho(tang) === k + 1;
+      var kho = dsKho.indexOf(k + 1) >= 0;
+      var dv = doV[k] || {};
+      /* Mối nối vào TRƯỚC dải của vòng sau — cái khớp nằm giữa hai
+         chuỗi, nên nó phải hiện ở giữa, không phải nằm dưới chân một
+         trong hai. */
+      var mn = noi.filter(function (x) { return x.den === k + 1; })[0];
+      if (mn) o += '<div class="bc-khop' + (mn.noi ? ' noi' : '') + '">' +
+        (mn.noi ? '⟶ nối được từ chuỗi ' + mn.tu + ' sang chuỗi ' + mn.den
+                : '⟝ hở ở khớp chuỗi ' + mn.tu + ' sang chuỗi ' + mn.den) + '</div>';
       o += '<div class="bc-vong' + (kho ? ' kho' : '') + '">' +
-        '<div class="bc-vong-d"><b>Vòng ' + (k + 1) + '</b>' +
+        '<div class="bc-vong-d"><b>' + h(v.tenVong || 'Vòng') + ' ' + (k + 1) + '</b>' +
         '<span>' + v.dai + ' ngày</span>' +
         (kho ? '<span class="bc-vong-kho">CHỖ KHÓ NHẤT CỦA TẦNG</span>' : '') + '</div>' +
         veO(tang, s, d0, k * v.dai, v.dai) +
+        /* Số của từng vòng, và chênh với vòng trước. Trong quãng "không
+           kết quả nào", con số này là kết quả duy nhất có thật. */
+        veSoVong(dv, v) +
         (bien
-          ? '<p class="bc-bien"><b>Biến của vòng này:</b> ' +
+          ? '<p class="bc-bien"><b>Biến của ' + h(v.ten) + ' này:</b> ' +
             (bien.cu ? '<s>' + h(bien.cu) + '</s> → ' : '') + h(bien.moi) + '</p>'
+          /* Vòng chưa tới thì không mời ghi biến. Mời ghi biến cho một
+             vòng còn cách đây hai tháng là mời nghĩ hộ chính mình của
+             hai tháng nữa, mà lúc ấy nhà mình đã khác. */
+          : dv.trangThai === 'chuaToi' ? ''
           : '<button class="bc-nutbien" data-bcbien="' + (k + 1) + '">' +
-            'Ghi một biến cho vòng này</button>') +
+            'Ghi một biến cho ' + h(v.ten) + ' này</button>') +
         '</div>';
     }
     if (v.du > 0) {
-      o += '<div class="bc-vong du"><div class="bc-vong-d"><b>Ngoài vòng</b>' +
+      o += '<div class="bc-vong du"><div class="bc-vong-d"><b>Ngoài ' + h(v.ten || 'vòng') + '</b>' +
         '<span>' + v.du + ' ngày</span></div>' +
         veO(tang, s, d0, v.soVong * v.dai, v.du) +
         '<p class="bc-bien dim">' + h(v.duChuaKhai || '') + '</p></div>';
@@ -24637,18 +24717,124 @@ G.VIEWS = G.VIEWS || {};
     return o;
   }
 
-  /* Chỗ khó của tầng — đọc từ HT_TANG.khoNhat, rút số tuần trong câu.
-     'Tuần thứ hai — lúc hào hứng đã hết mà nếp thì chưa thành.' */
+  /* Chỗ khó của tầng — đọc từ HT_TANG.khoNhat, rút số vòng trong câu.
+       T2  'Tuần thứ hai — lúc hào hứng đã hết mà nếp thì chưa thành.'
+       T3  'Chuỗi thứ hai và thứ ba. Không biến cố nào, không kết quả nào…'
+
+     TRẢ VỀ MỘT DANH SÁCH, KHÔNG PHẢI MỘT SỐ
+
+     Bản 9.35 chỉ bắt 'tuần thứ N' và trả về một số. Tầng ba nói CHUỖI
+     chứ không nói tuần, và nói HAI vòng chứ không một — nên lời báo
+     trước dựng ở 9.35 im lặng đúng ở tầng cần nó nhất: tầng ba là tầng
+     dài nhất trước khi sang năm, và chỗ chán của nó kéo suốt sáu tuần
+     giữa. Im lặng ấy không đỏ ở đâu cả, vì phép kiểm cũng chỉ hỏi T2. */
   G.bcVongKho = function (tang) {
     var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
-    var m = /tuần thứ\s+(\S+)/i.exec((t && t.khoNhat) || '');
+    var m = /(?:tuần|chuỗi|chu kỳ|vòng)\s+thứ\s+([^\s,\.—–]+)(?:\s+và\s+(?:thứ\s+)?([^\s,\.—–]+))?/i
+      .exec((t && t.khoNhat) || '');
     if (!m) return null;
-    var n = Number(m[1]) || soTuChu(m[1]);
-    return n > 0 ? n : null;
+    var ra = [m[1], m[2]].map(function (x) {
+      if (!x) return null;
+      var n = Number(x) || soTuChu(x);
+      return n > 0 ? n : null;
+    }).filter(Boolean);
+    return ra.length ? ra : null;
   };
   G.bcKhoNhat = function (tang) {
     var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
     return (t && t.khoNhat) || null;
+  };
+  G.bcThuThach = function (tang) {
+    var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
+    return (t && t.thuThach) || null;
+  };
+
+  function ngayThu(d0, i) {
+    return G.bcNgay(new Date(new Date(d0 + 'T00:00:00').getTime() + i * 86400000));
+  }
+  function ngayDau(s) { var k = Object.keys(s).sort(); return k.length ? k[0] : null; }
+
+  /* ═══════════ ĐO TỪNG VÒNG ═══════════
+     Tầng ba nói thẳng chỗ khó của nó: 'Không biến cố nào, không kết quả
+     nào — chỉ là dài.' Sáu tuần giữa không có gì để nhìn, và đó là lý
+     do thật khiến người ta bỏ ở chuỗi hai chứ không phải vì việc nặng.
+
+     Thứ duy nhất có thật để nhìn trong quãng ấy là CHÍNH CHUỖI TRƯỚC.
+     Chuỗi một mười lăm ô, chuỗi hai mười bảy — đó là một kết quả, và nó
+     không phải đi vay ở đâu: nó nằm sẵn trên bàn cờ của chính nhà mình.
+
+     So với chuỗi trước, KHÔNG so với nhà khác. Luật 11 đã cấm bảng vàng;
+     chỗ này là cái thay thế duy nhất còn đúng — vì nhà mình tháng trước
+     và nhà mình tháng này thì cùng một hoàn cảnh. */
+  G.bcVongDo = function (tang) {
+    var v = G.bcVong(tang); if (!v) return null;
+    var s = soCua(tang), d0 = ngayDau(s), canVai = G.bcVaiNha();
+    var nayI = d0 ? Math.floor((new Date(G.bcNgay() + 'T00:00:00').getTime() -
+      new Date(d0 + 'T00:00:00').getTime()) / 86400000) : -1;
+    /* Đếm ô đầy trong DEM ngày đầu của vòng k. Dùng cho cả phép đếm cả
+       vòng lẫn phép so cùng độ dài. */
+    function dem(k, sl) {
+      var soO = 0, tong = 0, dai = 0, chay = 0;
+      for (var i = 0; i < sl; i++) {
+        var q = d0 ? oChuan(s[ngayThu(d0, k * v.dai + i)]) : null;
+        if (!q) { chay = 0; continue; }
+        tong += diemO(q);
+        if (oDay(q, canVai)) { soO++; chay++; if (chay > dai) dai = chay; }
+        else chay = 0;
+      }
+      return { soO: soO, tong: tong, chuoiDai: dai };
+    }
+    var ra = [];
+    for (var k = 0; k < v.soVong; k++) {
+      var d = dem(k, v.dai);
+      /* TRẠNG THÁI CỦA VÒNG — và vì sao nó quyết định được phép so gì.
+         Vòng chưa tới thì mọi con số của nó là 0, và "0 ô, kém 7 ô so
+         với vòng trước" là một lời trách về một việc chưa tới lượt làm.
+         Vòng ĐANG ĐI thì mới đi được mấy ngày, đem so với một vòng đã
+         trọn hai mươi mốt ngày là so nửa chuỗi với cả chuỗi — con số ra
+         luôn âm, và nó âm vì lịch chứ không vì nhà mình. */
+      var tt = nayI < 0 ? 'chuaToi'
+        : nayI >= (k + 1) * v.dai ? 'xong'
+        : nayI >= k * v.dai ? 'dangDi' : 'chuaToi';
+      var ngThu = tt === 'dangDi' ? nayI - k * v.dai + 1 : null;
+      var truoc = k > 0 ? ra[k - 1] : null;
+      ra.push({ vong: k + 1, dai: v.dai, soO: d.soO, tong: d.tong, chuoiDai: d.chuoiDai,
+        trangThai: tt, ngayThu: ngThu,
+        /* Chỉ so hai vòng ĐỀU ĐÃ TRỌN. */
+        hon: (tt === 'xong' && truoc && truoc.trangThai === 'xong')
+          ? d.soO - truoc.soO : null,
+        /* Vòng đang đi thì so CÙNG ĐỘ DÀI: vòng trước tới đúng ngày thứ
+           ấy đã có mấy ô. Đó là phép so duy nhất còn công bằng, và nó
+           chính là thứ cần nhất trong quãng dài không có gì để nhìn. */
+        truocCungNgay: (tt === 'dangDi' && truoc) ? dem(k - 1, ngThu).soO : null });
+    }
+    return ra;
+  };
+
+  /* ═══════════ MỐI NỐI GIỮA HAI VÒNG ═══════════
+     Tầng ba đòi 'bốn chuỗi hai mươi mốt ngày NỐI NHAU'. Nối nhau là
+     chuyện của đúng một cái khớp: tối cuối chuỗi này và tối đầu chuỗi
+     sau. Đó cũng đúng là chỗ người ta dừng — xong một chuỗi thì thấy đã
+     xong, và tối hôm sau không ai mở màn này nữa.
+
+     HIỆN RA CHỨ KHÔNG PHẠT. Luật 8 đã nói ô trống là ô trống. Mối nối
+     hở thì màn nói hở, không trừ điểm, không đỏ lên. Và chỉ nói về mối
+     nối ĐÃ QUA — báo hở một cái khớp còn chưa tới là bịa. */
+  G.bcMoiNoi = function (tang) {
+    var v = G.bcVong(tang); if (!v || v.soVong < 2) return null;
+    var s = soCua(tang), d0 = ngayDau(s); if (!d0) return null;
+    var canVai = G.bcVaiNha();
+    var daQua = Math.floor((new Date(G.bcNgay() + 'T00:00:00').getTime() -
+      new Date(d0 + 'T00:00:00').getTime()) / 86400000);
+    var ra = [];
+    for (var k = 1; k < v.soVong; k++) {
+      var iDau = k * v.dai;
+      if (iDau > daQua) break;
+      var a = oChuan(s[ngayThu(d0, iDau - 1)]), b = oChuan(s[ngayThu(d0, iDau)]);
+      ra.push({ tu: k, den: k + 1,
+        noi: !!(a && oDay(a, canVai)) && !!(b && oDay(b, canVai)) });
+    }
+    return ra.length ? ra : null;
   };
 
   function veBan(tang, can, s) {
@@ -24664,7 +24850,10 @@ G.VIEWS = G.VIEWS || {};
   }
 
   function veO(tang, s, d0, tu, dem) {
-    var cot = dem <= 7 ? 7 : dem <= 21 ? 7 : dem <= 90 ? 15 : 28;
+    /* Một chuỗi hai mươi mốt ngày vẽ thành MỘT HÀNG hai mươi mốt ô —
+       vì kho gọi nó là "chuỗi", và một chuỗi bẻ làm ba dòng thì mắt đọc
+       ra ba tuần rời chứ không đọc ra một chuỗi. */
+    var cot = dem <= 7 ? 7 : dem <= 21 ? dem : dem <= 90 ? 15 : 28;
     var o = '<div class="bc-ban" style="--bc-cot:' + cot + '">';
     var canVai = G.bcVaiNha();
     for (var i = tu; i < tu + dem; i++) {
@@ -24728,10 +24917,25 @@ G.VIEWS = G.VIEWS || {};
       /* Vòng: nói ngay dưới bàn, và nói ĐỌC TỪ ĐÂU — con số vòng không
          phải tôi đặt, nó nằm sẵn trong tên chặng hoặc lời hứa cú hích. */
       var vg = G.bcVong(tang);
+      /* Thử thách của tầng, in NGUYÊN CÂU của kho. Tầng ba: 'Đi bốn
+         chuỗi hai mươi mốt ngày nối nhau, và qua được cơn chán ở giữa.'
+         Câu ấy nói đúng hai việc phải làm, và cả hai đều đo được trên
+         chính bàn này — nên nó phải đứng ngay trên bàn. */
+      var tt = G.bcThuThach(tang);
+      if (tt) o += '<p class="bc-thuthach"><b>Việc của tầng này:</b> ' + h(tt) + '</p>';
       if (vg) o += '<p class="bc-y"><b>' + h(vg.la) + '</b> · ' +
         h((G.BC_VONG_LUAT || {}).motBienMotVong || '') +
         ' <span class="dim">(đọc từ ' + h(vg.docTu) + ')</span></p>';
       o += veBan(tang, d.can, s);
+      /* Mối nối: nói ngay dưới bàn, và nói nó KHÔNG phải hình phạt —
+         nếu không thì một cái khớp hở đọc thành một lời trách. */
+      var mn = G.bcMoiNoi(tang);
+      if (mn) {
+        var ho = mn.filter(function (x) { return !x.noi; }).length;
+        o += '<p class="bc-y"><b>Mối nối giữa các ' + h(vg.ten) + ': ' +
+          (mn.length - ho) + '/' + mn.length + ' nối được.</b> ' +
+          h((G.BC_VONG_LUAT || {}).viMoiNoi || '') + '</p>';
+      }
       /* Chỗ khó BÁO TRƯỚC, không đợi tới lúc nó tới. Câu này nằm ở
          HT_TANG.khoNhat từ bản 9.21 mà chưa màn nào nói ra đúng lúc. */
       var kn = G.bcKhoNhat(tang);
@@ -24812,7 +25016,9 @@ G.VIEWS = G.VIEWS || {};
       h((G.BC_TRONGSO_LUAT || {}).viKhongXepHang || '') + '</b> ' +
       h((G.BC_TRONGSO_LUAT || {}).viKhongPhat || '') + '</p>';
 
-    o += U.sec('Sáu luật của bàn cờ', '');
+    /* Đếm chứ không gõ tay. Nhan đề còn ghi "Sáu luật" trong khi kho đã
+       có mười một — một con số gõ tay thì đứng yên trong lúc kho đi tiếp. */
+    o += U.sec((G.BC_LUAT || []).length + ' luật của bàn cờ', '');
     o += '<div class="card">' + (G.BC_LUAT || []).map(function (l) {
       return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
         '<b class="sm">' + l.no + '. ' + h(l.t) + '</b>' +
