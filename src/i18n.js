@@ -198,6 +198,7 @@ G.ITEM_EN = {
   'sau-vung':['Naming the loop you are stuck in','5 zones · 1 core of self-awareness · 4 named places you fall, and the way back from each'],
   'bang-tin':['You are not walking alone','Community news · 6 criteria for a story to run · every number states where it is counted from'],
   'ban-co':['The journey board','One board per tier · one square a day · pick 1 of 10 · points weighted by what matters now'],
+  'tang5-pro':['The T5-PRO line — Prosperous Family','24 months · 4 phases · a 3-role team · 6 intake criteria · 5 refusal scripts'],
   'so-tay-van-hanh':['Ten rules, and where each one actually holds','Priority order · 10 charter points · 4 things forbidden at scale · 4 places the system breaks'],
   'tang34':['Tier 3 and tier 4 — whose job is which','Assistant/Coach boundary · the 5-beat G-I-T-S-A frame · 3 measures · 14 hard cases'],
   'coach-5-tang':['What the person walking with you must be able to do','5 coach tiers · 4 competencies each · a 10-step cycle · 1000 divided by the caps'],

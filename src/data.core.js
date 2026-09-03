@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.54',
+  version: '9.55',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -72,6 +72,12 @@ G.PERM = {
   fin_view:4, fin_payout:3, fin_payroll:3, fin_create_order:3,
   pro_approve:4, pro_report:4, pro_override:4, pro_assign:5, pro_coach:8, pro_assess:10,
   pro_view_all:4, pro_consult:11,
+  /* Dòng T5-PRO dừng ở Senior Coach. Sổ tay nâng cao ghi người đọc:
+     Coach cấp cao, Tư vấn Gia nghiệp, Giám đốc hệ. Coach thường cầm
+     nhà tầng 2-3 không cần đọc kịch bản từ chối một gia đình của dòng
+     ấy, và Giáo viên thì càng không — đọc một kịch bản nghề mà không
+     có case để dùng chỉ tạo ra cảm giác biết. */
+  pro_gia_nghiep:6,
   usr_self_data:15, usr_do_test:15, usr_referral:15,
 
   /* Ba vai cuối cùng bậc nhưng KHÁC việc. Nếu chỉ so bậc thì phụ huynh,
@@ -142,6 +148,7 @@ G.PERM_TEN = {
   pro_override:'Vượt quyết định chuyên môn', pro_assign:'Phân công đội ngũ',
   pro_coach:'Công cụ Coach',             pro_assess:'Chấm đánh giá',
   pro_view_all:'Xem toàn bộ hồ sơ nhà',  pro_consult:'Công cụ tư vấn',
+  pro_gia_nghiep:'Dòng gia nghiệp T5-PRO',
   usr_self_data:'Dữ liệu của chính mình',usr_do_test:'Làm bài test',
   usr_referral:'Giới thiệu người quen',
   kh_gia_dinh:'Hồ sơ và nhịp sống nhà mình', kh_hanh_trinh:'Hành trình của con',
@@ -167,7 +174,7 @@ G.PERM_TEN = {
 G.PERM_NHOM = [
   {id:'sys', t:'HỆ THỐNG',   c:'#185AB4', ds:['sys_config','sys_delete_user','sys_restore','sys_manage_user','sys_audit','sys_fraud','qt_trang','sua_noi_dung','tl_duyet','tl_xem_het']},
   {id:'fin', t:'TÀI CHÍNH',  c:'#0B7350', ds:['fin_view','fin_payout','fin_payroll','fin_create_order']},
-  {id:'pro', t:'CHUYÊN MÔN', c:'#5140B4', ds:['pro_approve','pro_report','pro_override','pro_assign','pro_coach','pro_assess','pro_view_all','pro_consult','dh_toan_he','nghe_chung','mc_duyet']},
+  {id:'pro', t:'CHUYÊN MÔN', c:'#5140B4', ds:['pro_approve','pro_report','pro_override','pro_assign','pro_coach','pro_assess','pro_view_all','pro_consult','pro_gia_nghiep','dh_toan_he','nghe_chung','mc_duyet']},
   {id:'kh',  t:'KHÁCH HÀNG', c:'#0B6675', ds:['usr_self_data','usr_do_test','usr_referral','kh_gia_dinh','kh_hanh_trinh','kh_qua_tang','tl_gui','mc_gui']},
   {id:'ctv', t:'CỘNG TÁC',   c:'#BE0E16', ds:['ctv_lien_ket','ctv_hoa_hong']},
   {id:'out', t:'XUẤT RA NGOÀI', c:'#F61824', ds:['xuat_pdf','xuat_sheet']}
@@ -298,8 +305,23 @@ G.TAM_NHIN = [
      bảy vị trí này không hề mở thêm một màn quản trị nào. Giữ số cũ
      thì bài kiểm đỏ ở chỗ không có lỗi, và bộ kiểm đỏ oan vài lần là
      bộ kiểm bị tắt. */
-  {vai:['R05','R06','R07','R08'], pt:77,
+  /* Tách R05–R06 khỏi R07–R08 ở bản 9.55, và làm đúng việc ba lần trước
+     đã làm: sửa SỐ CÔNG BỐ, không nới dung sai.
+
+     Màn dòng T5-PRO khoá ở pro_gia_nghiep, dừng đúng Senior Coach — nên
+     R05 và R06 thấy nó, R07 và R08 thì không. Bốn vị trí này không còn
+     thấy như nhau, và gộp một con số thì phải nới dung sai để cả bốn
+     cùng lọt. Ghi hai con số thật thì canh được chặt hơn.
+
+     Phép thử vẫn là phép thử cũ: phần KHOÁ của bốn vị trí này có mở
+     thêm màn quản trị nào không. Không — không một màn tài chính, quản
+     trị hay điều hành nào mở thêm. Phần dày lên là phần NGHỀ, và nghề
+     thì họ vốn được thấy. Nên tỉ lệ nhích lên là con số thật đổi, không
+     phải hàng rào bị nới. */
+  {vai:['R05','R06'], pt:79,
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
+  {vai:['R07','R08'], pt:78,
+   ghi:'Như R05–R06, và không mở màn của dòng gia nghiệp T5-PRO.'},
   {vai:['R09','R10','R11'], pt:75,
    ghi:'Như trên, và không mở ba màn thuộc phạm vi quản lý chuyên môn.'},
   /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
@@ -549,6 +571,10 @@ G.NAV = [
        bản của chính buổi gặp mình sắp dự. */
     {v:'so-tay-van-hanh', t:'Mười điều, và chỗ mỗi điều thật sự chặn', h:'Thứ tự ưu tiên · 10 điều lệ · 4 điều cấm khi lớn lên · 4 chỗ hệ gãy', ic:'compass', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'tang34',      t:'Tầng 3 và tầng 4 — việc của ai',  h:'Ranh giới Trợ lý với Coach · 5 nhịp G-I-T-S-A · 3 trụ đo · 14 dạng khó', ic:'compass', star:1, perm:'pro_consult', capMo:'nghe'},
+    /* Dòng T5-PRO: không phải tầng thứ sáu, nên nó không nằm cạnh năm
+       tầng ở nhóm hành trình — nó là một sách nghề, và nó khoá chặt
+       nhất trong mọi màn nghề. */
+    {v:'tang5-pro',   t:'Dòng T5-PRO — Gia đình Thịnh vượng', h:'24 tháng · 4 giai đoạn · đội 3 vai · 6 tiêu chí cửa vào · 5 kịch bản từ chối', ic:'vault', star:1, perm:'pro_gia_nghiep', capMo:'nghe'},
     {v:'nam-dau',     t:'Sổ tay năm đầu',              h:'12 tháng · 6 mốc kiểm · 8 kịch bản lần đầu', ic:'compass', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'dao-tao-dh',  t:'Bốn mươi giờ đào tạo',        h:'12 buổi · 20 ca thi vai · 1 tiêu chí tuyệt đối', ic:'brain', perm:'nghe_chung', capMo:'nghe'},
     {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
