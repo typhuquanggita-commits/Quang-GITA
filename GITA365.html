@@ -2010,7 +2010,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.45',
+  version: '9.46',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -5377,7 +5377,7 @@ G.THUOC_CAP_PHEP = [
   'TIN_LOAI','TIN_NGUON','TIN_NGUON_LUAT','TIN_SO_LUAT','TIN_TIEUCHI','TIN_TIEUCHI_LUAT',
   'TIN_THUONG','TIN_CAM','TIN_LUAT','TIN_LOAI_LUAT','TIN_MAU','TIN_TANG_LUAT',
   'TIN_KEM_THUONG','BK_LUAT','BK_DANHMUC','BK_DANHMUC_LUAT','TG_MUC','TG_VIEC',
-  'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU','HH_DA_CHOT',
+  'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_KHONG_TIEN','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU','HH_DA_CHOT',
   'CS_VONG','CS_VONG_LUAT','CS_DULIEU','CS_DULIEU_LUAT',
   'CS_QUYMO','CS_LECH','CS_CHOCHU',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
@@ -24993,16 +24993,45 @@ G.VIEWS = G.VIEWS || {};
     if (typeof G.hhTinh !== 'function' || !G.HH_BAC) return '';
     var K = G.HH_KEM || {}, L = G.HH_CC_LUAT || {};
     var hs = G.hhHoSo({ vuotTang: false, tangDuocKem: d && d.tang });
-    var o = '<div class="bc-hh"><b>Hoa hồng kèm — hai bậc, trần ' +
-      ((G.HOAHONG || {}).tran) + '%</b>' +
-      '<p>' + h(K.cot || '') + '</p>';
+    var KT = G.HH_KHONG_TIEN || {};
+    var khongTien = (KT.tang || []).indexOf(d && d.tang) >= 0;
+
+    /* TẦNG KÈM KHÔNG CÓ TIỀN thì KHÔNG mở đầu bằng bảng hai bậc. Bảng ấy
+       nói 5% và 10%, mà tầng này là 0% — in nó trước rồi mới cải chính ở
+       dưới là để người ta đọc con số sai trước con số đúng, và con số đọc
+       trước là con số nhớ. Điều khoản của chính tầng đang kèm lên đầu. */
+    var o = '<div class="bc-hh">';
+    if (khongTien) {
+      var q = (typeof G.hhQuaKem === 'function') ? G.hhQuaKem(d && d.tang) : null;
+      o += '<b>Kèm nhà tầng ' + h(String(d.tang).slice(1)) + ': ' + KT.phanTram + '% hoa hồng</b>' +
+        '<p>' + h(KT.vi || '') + '</p>' +
+        '<p class="dim">' + h(KT.viLaDieuKhoan || '') + '</p>';
+      if (q && q.diem)
+        o += '<p class="bc-hh-qua"><b>Đổi lại, kèm được một nhà lên tầng thì nhà mình ' +
+          'nhận ' + h(String(q.diem)) + ' điểm và ' +
+          (q.sao ? 'một bí kíp ' + h(String(q.sao)) + ' sao' : 'một bí kíp') + '.</b> ' +
+          h(KT.saoTheoTangNao || '') + '<br><span class="dim">' +
+          h(KT.viSaoTheoTangDuocKem || '') + ' (đọc từ ' + h(q.docTu || '') + ')</span></p>';
+      else if (q && q.thieu)
+        o += '<p class="canh">' + h(q.thieu) + '</p>';
+      o += '<p class="canh"><b>Vẫn phải vượt tầng mới có quà.</b> ' +
+        h(KT.viVanPhaiVuotTang || '') + '</p>';
+      o += '<p class="dim">Các tầng khác — hai bậc, trần ' + ((G.HOAHONG || {}).tran) + '%:</p>';
+    } else {
+      o += '<b>Hoa hồng kèm — hai bậc, trần ' + ((G.HOAHONG || {}).tran) + '%</b>' +
+        '<p>' + h(K.cot || '') + '</p>';
+    }
     o += '<div class="bc-hh-bac">' + (G.HH_BAC || []).map(function (b) {
       return '<div class="bc-hh-hang"><b>' + b.phanTram + '%</b><span>' + h(b.khi) + '</span></div>';
     }).join('') + '</div>';
     o += '<p class="dim">' + h((G.HH_BAC_LUAT || {}).khongVuotTangThiKhongCo || '') + '</p>';
-    /* Số tiền: nói thẳng vì sao chưa ra được. */
-    var ti = G.hhTien(10, d && d.tang);
-    if (ti.chuaCoGia) o += '<p class="canh"><b>Chưa ra được số tiền.</b> ' + h(ti.thieu) + '</p>';
+    /* Số tiền: nói thẳng vì sao chưa ra được. Tầng không có tiền thì không
+       hỏi câu ấy — hỏi rồi in "0 đồng" là mời người đọc hiểu thành một
+       phép nhân ra 0, đúng thứ điều khoản này dựng lên để không bị hiểu. */
+    if (!khongTien) {
+      var ti = G.hhTien(10, d && d.tang);
+      if (ti.chuaCoGia) o += '<p class="canh"><b>Chưa ra được số tiền.</b> ' + h(ti.thieu) + '</p>';
+    }
     /* Bảng chứng cứ: nói TRƯỚC sẽ hỏi những gì, để nhà mình ghi từ đầu
        chứ không đi dựng lại hồ sơ lúc đòi tiền. */
     o += '<p class="bc-hh-cc"><b>Sổ chứng cứ — ' + hs.soChungCu + ' bản, ' +
@@ -25875,6 +25904,35 @@ G.VIEWS = G.VIEWS || {};
     return { ok: true, tuTang: tu };
   };
 
+  /* ═══════════ QUÀ CHO VIỆC KÈM ═══════════
+     Quà KHÔNG khai ở kho hoa hồng. Nó đã khai một lần ở TIN_KEM_THUONG —
+     50 điểm và một bí kíp — nên ở đây chỉ TRỎ tới, không chép lại. Chép
+     lại là dựng bản thứ hai của một điều khoản, và hai bản thì sẽ có ngày
+     lệch nhau đúng vào lúc có người hỏi.
+
+     Sao của bí kíp lấy theo tầng của nhà ĐƯỢC KÈM, không theo tầng của
+     nhà kèm: quà nói về việc vừa làm xong. Lấy theo tầng nhà kèm thì nhà
+     tầng năm kèm một nhà tầng một cũng nhận bí kíp năm sao — thành ra quà
+     nói về địa vị người nhận chứ không nói về việc đã làm.
+
+     Quà này có ở MỌI tầng kèm, không riêng tầng một. Tầng một chỉ khác ở
+     chỗ nó là thứ DUY NHẤT nhà kèm nhận được. */
+  G.hhQuaKem = function (tangDuocKem) {
+    var q = G.TIN_KEM_THUONG || {};
+    if (!q.diem) return { chuaCoKho: true,
+      thieu: 'TIN_KEM_THUONG nằm ở gói nền — máy này chưa mở được.' };
+    var sao = (typeof G.bkSao === 'function') ? G.bkSao(tangDuocKem) : null;
+    if (!sao) return { diem: q.diem, chuaDocDuocSao: true, tang: tangDuocKem,
+      thieu: 'Chưa đọc được số sao của tầng ' + String(tangDuocKem) + '.' };
+    /* Cùng cổng không-trao-vượt-tầng, không dựng luật thứ hai. Nhà kèm
+       luôn ở tầng cao hơn nhà được kèm, nên cổng này gần như luôn mở —
+       "gần như" không phải "luôn", nên vẫn đi qua cổng. */
+    var cho = (typeof G.bkChoPhep === 'function') ? G.bkChoPhep(tangDuocKem, sao) : { ok: true };
+    return { diem: q.diem, qua: q.qua, sao: sao, tang: tangDuocKem,
+      traoDuoc: cho.ok === true, viKhongTrao: cho.ok === true ? undefined : cho.y,
+      docTu: 'TIN_KEM_THUONG', khongVuotTang: q.quaKhongVuotTang === true };
+  };
+
   /* ═══════════ TỈ LỆ HOA HỒNG ═══════════
      Đọc bậc từ HH_BAC, và trần từ HOAHONG.tran. Không con số nào gõ ở
      đây. Bậc nào đòi gì thì chính bậc ấy khai ra ở cột `doi`. */
@@ -25887,6 +25945,21 @@ G.VIEWS = G.VIEWS || {};
     var kA = Number(d.kpiKem), kB = Number(d.kpiDuocKem);
     if (!(kA >= 0)) thieu.push('Chưa có KPI của nhà kèm.');
     if (thieu.length) return { phanTram: 0, bac: null, dat: false, thieu: thieu, tran: tran };
+
+    /* ── TẦNG KÈM KHÔNG CÓ TIỀN ──
+       Chốt ở HH-CC-03: kèm nhà tầng một là 0% — ĐIỀU KHOẢN, không phải
+       5% nhân với giá 0. Nên chặn ở ĐÂY, TRƯỚC vòng chọn bậc: để nó rơi
+       xuống vòng dưới rồi ra 0 đồng thì con số đúng mà câu chuyện sai —
+       màn sẽ nói "5%, thành 0đ", và ngày giá tầng một đổi thì nó lặng lẽ
+       thành 5% có tiền, trong khi chủ hệ chưa quyết gì cả.
+
+       Vẫn phải vượt tầng mới có quà: không tiền không có nghĩa là không
+       điều kiện. */
+    var kt = G.HH_KHONG_TIEN || {};
+    if ((kt.tang || []).indexOf(d.tangDuocKem) >= 0)
+      return { phanTram: kt.phanTram, bac: null, dat: false, tran: tran, thieu: [],
+        khongTien: true, laDieuKhoan: kt.laDieuKhoan === true,
+        vi: kt.vi, quaDocTu: kt.quaDocTu, qua: G.hhQuaKem(d.tangDuocKem) };
     for (var i = 0; i < bac.length; i++) {
       var b = bac[i], o = b.doi || {};
       if (o.nhaDuocKemVuotTang && d.vuotTang !== true) continue;
@@ -25896,8 +25969,11 @@ G.VIEWS = G.VIEWS || {};
          hơn. Trần mà không có hàm chặn thì sáu tháng sau nó chỉ là một
          câu chữ. */
       var pt = tran != null ? Math.min(b.phanTram, tran) : b.phanTram;
+      /* Quà đi kèm ở MỌI tầng, không riêng tầng một — TIN_KEM_THUONG
+         không khai điều kiện tầng nào. Tầng một chỉ khác ở chỗ quà là
+         thứ duy nhất nhận được. */
       return { phanTram: pt, bac: b.ma, bacTen: b.ten, dat: true, thieu: [], tran: tran,
-        chamTran: tran != null && pt >= tran };
+        chamTran: tran != null && pt >= tran, qua: G.hhQuaKem(d.tangDuocKem) };
     }
     return { phanTram: 0, bac: null, dat: false, tran: tran,
       thieu: ['KPI của nhà kèm chưa tới ngưỡng thấp nhất của bậc nào.'] };
@@ -26061,7 +26137,12 @@ G.VIEWS = G.VIEWS || {};
         'chủ. ' + ((G.HH_CC_LUAT || {}).viGioMayKhach || ''));
       canh.push((G.HH_CC_LUAT || {}).viVanTay || '');
     }
-    return { tinh: tinh, tien: tinh.dat ? G.hhTien(tinh.phanTram, d.tangDuocKem) : null,
+    /* Tầng không có tiền thì KHÔNG gọi hhTien: gọi rồi thì hồ sơ in ra
+       "0 đồng" cạnh một bảng giá, và người đọc hiểu là phép nhân ra 0.
+       Đây là 0% khai thẳng, nên chỗ ấy để trống và câu điều khoản đứng
+       thay — trống là đúng, một con số 0 mới là nói sai. */
+    return { tinh: tinh, tien: (tinh.dat && !tinh.khongTien) ? G.hhTien(tinh.phanTram, d.tangDuocKem) : null,
+      khongTien: tinh.khongTien === true, qua: tinh.qua || null,
       soChungCu: so().length, daDoiChung: duoc.length,
       chuaDoiChung: s.chuaXacNhan.length, lech: s.lech,
       daKyMayChu: s.gioMayChu, chuaKyMayChu: so().length - s.gioMayChu,

@@ -8841,6 +8841,66 @@ const { chromium } = require(PW);
         G.hhTien(5, 'T5').tien === 2500000 &&
         G.hhTien(10, 'T1').chuaCoGia === false && G.hhTien(10, 'T1').tien === 0;
 
+      /* ── HH-CC-03 ĐÃ CHỐT: KÈM TẦNG MỘT LÀ 0%, VÀ 0% LÀ ĐIỀU KHOẢN ──
+         Chỗ dễ sai nhất không phải con số mà là CÂU CHUYỆN quanh con số.
+         5% × 0đ = 0đ và 0% cùng ra một con số hôm nay, nhưng câu thứ nhất
+         đổi theo giá còn câu thứ hai đứng yên — và đứng yên mới là điều
+         chủ hệ chốt. Nên phép đo hỏi cả hai: con số có đúng không, VÀ máy
+         có nói đúng nó là điều khoản không. */
+      const kt1 = G.hhTinh({ vuotTang: true, kpiKem: 95, kpiDuocKem: 95, tangDuocKem: 'T1' });
+      r.t1KhongTien = kt1.phanTram === 0 && kt1.khongTien === true &&
+        kt1.laDieuKhoan === true && kt1.bac === null &&
+        (G.HH_KHONG_TIEN || {}).tang.join() === 'T1';
+      /* Và hồ sơ KHÔNG in ra một ô tiền 0 đồng cạnh bảng giá — ô ấy để
+         trống, câu điều khoản đứng thay. */
+      const hsT1 = G.hhHoSo({ vuotTang: true, kpiKem: 95, kpiDuocKem: 95, tangDuocKem: 'T1' });
+      r.t1KhongInSoTien = hsT1.tien === null && hsT1.khongTien === true;
+      /* Điều khoản KHÔNG được suy từ giá: đổi giá tầng một lên 9 triệu thì
+         nó vẫn phải là 0%. Suy từ giá thì ngày chủ hệ mở một đợt miễn phí
+         cho tầng hai là điều khoản tầng hai lặng lẽ đổi theo. */
+      const hp1 = G.HP_TANG.filter(x => x.tang === 'T1')[0], luuGia = hp1.gia;
+      hp1.gia = 9000000;
+      r.dieuKhoanKhongTheoGia = G.hhTinh({ vuotTang: true, kpiKem: 95, kpiDuocKem: 95,
+        tangDuocKem: 'T1' }).phanTram === 0;
+      hp1.gia = luuGia;
+      /* Tầng CÓ tiền vẫn ra tiền — điều khoản chỉ chặn đúng tầng đã khai. */
+      r.tangKhacVanCoTien = G.hhTinh({ vuotTang: true, kpiKem: 95, kpiDuocKem: 95,
+        tangDuocKem: 'T2' }).phanTram === 10;
+      /* Quà: 50 điểm và bí kíp theo tầng NHÀ ĐƯỢC KÈM, đọc từ
+         TIN_KEM_THUONG chứ không chép lại. Đổi điểm ở kho thì quà đổi theo
+         trong cùng lần chạy. */
+      const q1 = G.hhQuaKem('T1'), q3 = G.hhQuaKem('T3');
+      r.quaTheoTangDuocKem = q1.sao === 1 && q3.sao === 3 &&
+        q1.diem === G.TIN_KEM_THUONG.diem && q1.docTu === 'TIN_KEM_THUONG' &&
+        q1.traoDuoc === true;
+      const luuDiem = G.TIN_KEM_THUONG.diem;
+      G.TIN_KEM_THUONG.diem = 77;
+      r.quaDocTuKho = G.hhQuaKem('T1').diem === 77;
+      G.TIN_KEM_THUONG.diem = luuDiem;
+      /* Không tiền KHÔNG có nghĩa là không điều kiện: chưa vượt tầng thì
+         chưa có gì, kể cả quà. */
+      r.t1VanPhaiVuotTang = G.hhTinh({ vuotTang: false, kpiKem: 95, kpiDuocKem: 95,
+        tangDuocKem: 'T1' }).khongTien === undefined &&
+        (G.HH_KHONG_TIEN || {}).vanPhaiVuotTang === true;
+      /* Sổ chờ chủ hệ nay RỖNG, và rỗng có khai — cả ba câu đã chốt. */
+      r.hetChoChu = (G.HH_CHOCHU || []).length === 0 &&
+        (G.HH_DA_CHOT || []).length === 3 &&
+        (G.HH_DA_CHOT || []).some(x => x.ma === 'HH-CC-03') &&
+        (G.RONG_CO_Y || []).some(x => x.kho === 'HH_CHOCHU');
+      /* Màn thật: in điều khoản 0% TRƯỚC bảng hai bậc, vì con số đọc trước
+         là con số nhớ. */
+      /* Vế "kèm một nhà" chỉ có ở thử thách tầng năm, nên màn phải đứng ở
+         tầng năm mới vẽ khối kèm — đặt sai tầng thì phép đo đo một khối
+         không tồn tại và đỏ vì lý do không liên quan gì tới điều khoản. */
+      const giuKem = G.S.bcKem, giuTang = G.S.bcTang;
+      G.S.bcKem = { ten: 'Nhà thử', tang: 'T1', batDau: '2026-09-01' };
+      G.S.bcTang = 'T5';
+      const manBC = G.VIEWS['ban-co']();
+      G.S.bcKem = giuKem; G.S.bcTang = giuTang;
+      const viTri0 = manBC.indexOf('0% hoa hồng'), viTri5 = manBC.indexOf('>5%<');
+      r.manDieuKhoanTruoc = viTri0 >= 0 && (viTri5 < 0 || viTri0 < viTri5);
+      r.manNoiQua = /điểm và một bí kíp 1 sao/.test(manBC);
+
       /* ── THAMGIA ĐÃ GỠ ── */
       r.gonThamGia = (G.CUHICH || []).every(x => x.thamgia === undefined) &&
         (G.tinSoiSoKhongNguon() || []).every(x => !/thamgia/.test(x));
@@ -8894,6 +8954,14 @@ const { chromium } = require(PW);
       'BỐN CHỖ CHỜ CHỦ HỆ ĐÃ CHỐT, VÀ MỖI CHỖ ĐÓNG LẠI THEO MỘT CÁCH KHÁC NHAU. GIÁ: năm tầng 0 · 500.000 · 10.000.000 · 30.000.000 · 50.000.000 đồng, điền vào HP_TANG.gia và máy nhân lấy — không khai thêm chỗ nào. Tầng một để 0 chứ KHÔNG để null, vì hai thứ ấy khác nhau và máy phân biệt được: null là CHƯA BIẾT nên mọi phép tính đứng lại và báo thiếu, 0 là ĐÃ BIẾT VÀ BẰNG KHÔNG nên phép tính chạy và ra 0. Hệ quả phải nói ra chứ không giấu: kèm một nhà tầng một thì hoa hồng bằng 0, vì hoa hồng tính trên gói của nhà ĐƯỢC KÈM — đó không phải lỗi tính, đó là điều khoản, và nó đã thành một câu hỏi mới cho chủ hệ. THAMGIA: sáu con số 412·268·174·96·58·143 đã GỠ hẳn, không thay bằng con số khác — sổ đếm thật đã có chỗ chờ ở TIN_NGUON, cả bốn đều khai chưa có kèm câu thiếu gì, và ngày có sổ thì con số hiện lên người ta tin vì hôm nay chỗ ấy để trống chứ không để một con số đẹp. BÍ KÍP: danh mục năm túi, mỗi túi TRỎ vào nội dung kho đã có — bánh đà của tầng, chỗ khó, đổi được gì, lời hứa cú hích — nên không một câu chuyên môn nào sinh ra ở lớp hiển thị, và sửa một việc nhỏ ở BD_LON thì bí kíp đổi theo trong cùng lần chạy. Cổng không-vượt-tầng vẫn chặn: nhà tầng hai chỉ nhận được bí kíp một và hai sao. CHỮ KÝ MÁY CHỦ: dựng ở server/GITA_ChungCu.gs bằng HMAC-SHA256, khoá sinh một lần và giữ ở PropertiesService — không nằm trong mã nguồn, không đi trong bất kỳ phản hồi nào. Máy khách giữ BIÊN NHẬN và KHÔNG tự kiểm được chữ ký: tự kiểm được nghĩa là khoá đã nằm ở máy khách, và lúc ấy chữ ký hết giá trị. Cảnh báo trên hồ sơ nay nói ĐÚNG TÌNH TRẠNG chứ không nói chung chung — ký hết thì thôi cảnh báo giờ máy khách, còn một bản chưa ký thì nói đúng một trên hai; một câu tự chê sai chỗ làm hồ sơ yếu đi y như một câu tự khen sai chỗ',
       do4.length ? 'phép đo hỏng: ' + do4.join(' · ')
         : 'T3 10% = 1.000.000đ · T5 5% = 2.500.000đ · T1 = 0đ · thamgia đã gỡ · 5 bí kíp ghép từ kho · nhà T2 chỉ tới 2 sao · biên nhận đổi nguonGio sang may-chu');
+
+    const doT1 = ['t1KhongTien', 't1KhongInSoTien', 'dieuKhoanKhongTheoGia',
+      'tangKhacVanCoTien', 'quaTheoTangDuocKem', 'quaDocTuKho', 't1VanPhaiVuotTang',
+      'hetChoChu', 'manDieuKhoanTruoc', 'manNoiQua'].filter(k => !ra[k]);
+    bao(!doT1.length,
+      'HH-CC-03 ĐÃ CHỐT: KÈM NHÀ TẦNG MỘT LÀ 0% HOA HỒNG, VÀ 0% ẤY LÀ ĐIỀU KHOẢN CHỨ KHÔNG PHẢI MỘT PHÉP NHÂN RA 0. Hai câu cùng ra một con số hôm nay nhưng khác hẳn nhau trên giấy tờ: "5% × 0đ" đổi theo bảng giá, "0%" thì không. Nếu suy điều khoản từ giá thì ngày chủ hệ mở một đợt miễn phí cho tầng hai là điều khoản hoa hồng tầng hai lặng lẽ đổi theo — không ai bấm nút nào và không ai được báo. Điều khoản phải đổi bằng một QUYẾT ĐỊNH, không đổi bằng một hệ quả; nên tầng nào không có tiền được khai thành danh sách ở HH_KHONG_TIEN, và phép đo này đẩy giá tầng một lên 9 triệu ngay trong lúc chạy để chứng minh con số 0 không nhúc nhích. Vì sao tầng một không có tiền: kèm ở đó là THỰC HÀNH TRAO GIÁ TRỊ LAN TOẢ, và dạy lại một việc là cách chắc nhất để giữ được việc ấy — đó là phần thưởng thật, và nó không quy ra tiền được. Đổi lại có quà, và quà KHÔNG khai ở kho hoa hồng mà TRỎ về TIN_KEM_THUONG: 50 điểm và một bí kíp, sao bằng số sao của tầng NHÀ ĐƯỢC KÈM chứ không phải tầng nhà kèm — quà nói về việc vừa làm xong, chứ lấy theo tầng người nhận thì nhà tầng năm kèm một nhà tầng một cũng ôm về bí kíp năm sao và quà thành ra nói về địa vị. Không tiền vẫn có điều kiện: chưa vượt tầng thì chưa có gì. Hồ sơ KHÔNG in một ô "0 đồng" cạnh bảng giá — ô ấy để trống và câu điều khoản đứng thay, vì một con số 0 in cạnh bảng giá là mời người đọc hiểu thành phép nhân. Trên màn, điều khoản 0% in TRƯỚC bảng hai bậc: con số đọc trước là con số nhớ. Sổ chờ chủ hệ của phần hoa hồng nay rỗng — cả ba câu đã chốt — và rỗng ấy được khai ở RONG_CO_Y, vì một sổ rỗng không khai thì lần sau không ai biết nó rỗng vì xong hay rỗng vì quên',
+      doT1.length ? 'phép đo hỏng: ' + doT1.join(' · ')
+        : 'T1 0% · giá đổi thành 9 triệu mà vẫn 0% · T2 vẫn 10% · quà 1 sao theo nhà được kèm · chưa vượt tầng thì chưa có gì · HH_CHOCHU rỗng có khai');
   }
 
   /* ══════════════════ 72. SAVE() CÓ GIỮ THẬT KHÔNG ══════════════════
