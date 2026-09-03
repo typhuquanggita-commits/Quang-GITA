@@ -34,3 +34,10 @@ ban-xem-thu.html
 
 # Giấy phép cấp cho từng máy — mang khoá thật
 giay-phep/
+
+# Bản đọc bộ 13 tờ A0 — cùng lý do với kho-goc/: đây là nội dung của
+# Học viện dưới dạng chữ thường, 48 KB, đọc được bằng mắt. Kho nội dung
+# thì đã mã hoá rồi mới đẩy; bản đọc trung gian mà để lọt vào kho mã là
+# mở đúng cái cửa đã khoá ở chỗ khác.
+# Dựng lại: python3 tools/doc-ban-ve.py <đường-dẫn PDF>
+tools/ban-ve.json

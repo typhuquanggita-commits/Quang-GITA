@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.55',
+  version: '9.56',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -574,6 +574,11 @@ G.NAV = [
     /* Dòng T5-PRO: không phải tầng thứ sáu, nên nó không nằm cạnh năm
        tầng ở nhóm hành trình — nó là một sách nghề, và nó khoá chặt
        nhất trong mọi màn nghề. */
+    /* Bộ bản vẽ 13 tờ: đặc tả vận hành của cả hệ — ma trận 50 ô, bốn
+       cổng, hai mươi tín hiệu đỏ, trần công suất từng vai. Khoá ở
+       pro_coach: đây là bảng điều phối, và nhà mình đọc thì thấy
+       mình là một dòng trong đó. */
+    {v:'ban-ve',      t:'Bộ bản vẽ — 50 ô, mỗi ô một tag', h:'4 nguyên tắc · 50 cấp độ · 4 cổng · 10 nhịp · 20 tín hiệu đỏ · bản đồ nâng cấp', ic:'map', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'tang5-pro',   t:'Dòng T5-PRO — Gia đình Thịnh vượng', h:'24 tháng · 4 giai đoạn · đội 3 vai · 6 tiêu chí cửa vào · 5 kịch bản từ chối', ic:'vault', star:1, perm:'pro_gia_nghiep', capMo:'nghe'},
     {v:'nam-dau',     t:'Sổ tay năm đầu',              h:'12 tháng · 6 mốc kiểm · 8 kịch bản lần đầu', ic:'compass', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'dao-tao-dh',  t:'Bốn mươi giờ đào tạo',        h:'12 buổi · 20 ca thi vai · 1 tiêu chí tuyệt đối', ic:'brain', perm:'nghe_chung', capMo:'nghe'},

@@ -126,6 +126,15 @@ G.THUOC_CAP_PHEP = [
   'T5P_SANGLOC','T5P_SANGLOC_LUAT','T5P_TUCHOI_LUAT','T5P_TUCHOI','T5P_SAUTUCHOI',
   'T5P_PHIEN','T5P_NGHITHUC','T5P_NGHITHUC_LUAT','T5P_KHUNGHOANG','T5P_KHUNGHOANG_LUAT',
   'T5P_DICH','T5P_GIA','T5P_LECH','T5P_CHOCHU','T5P_LUAT',
+  /* Bộ bản vẽ 13 tờ (BV_*): đặc tả vận hành — ma trận 50 ô có tag,
+     bốn cổng, mười nhịp, hai mươi tín hiệu đỏ, trần công suất từng
+     vai, và bản đồ nâng cấp Web App. Ở gói NGHỀ: nhà mình đọc bảng
+     điều phối thì thấy mình là một dòng trong đó. */
+  'BV_LOI','BV_NGUYENTAC','BV_TANG','BV_CAPDO','BV_CAPDO_LUAT',
+  'BV_CONG','BV_CONG_LUAT','BV_TUTCAP','BV_NHIP','BV_NHIP_LUAT',
+  'BV_DO','BV_LOC','BV_LOC_LUAT','BV_RAO','BV_TRIGGER',
+  'BV_MODULE','BV_MODULE_NOI','BV_MODULE_LUAT','BV_BANG','BV_VAI',
+  'BV_VAI_LUAT','BV_BANGIAO','BV_LECH','BV_CHOCHU','BV_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
