@@ -378,10 +378,18 @@ G.VIEWS['tro-ly'] = function(){
         U.ring(s.kpi, s.dat80 ? 'var(--ok)' : 'var(--gita-do)', 'KPI CỦA NHÀ')+
         '<div style="flex:1;min-width:250px">'+
           '<b class="sm">'+s.mo.toLocaleString('vi-VN')+' / '+s.tong.toLocaleString('vi-VN')+' tư liệu</b>'+
+          /* NÓI ĐÚNG MẪU SỐ. Câu cũ là "30% kho", mà con số ấy đo trên KHO
+             DÀNH CHO GIA ĐÌNH chứ không phải toàn kho Học viện — bốn kho
+             nghề không xuống máy khách nên không nằm trong mẫu số. Hai
+             câu chênh nhau đúng một cụm bốn chữ, mà cụm ấy là toàn bộ
+             khác nhau giữa một con số đúng và một con số nghe to hơn sự
+             thật. Câu đúng đọc từ kho, không gõ lại ở đây. */
           '<p class="sm dim mt" style="line-height:1.6">Phần nền của mỗi nhà là '+
-            Math.round(G.TRAN_KHACH*100)+'% kho — đủ đi hết chặng đang ở. '+
-            'Phần còn lại không mất đi: Tư vấn và Coach gửi tới theo đúng lúc nhà mình cần, '+
-            'khi KPI đi qua '+G.KPI_XIN_THEM+'%.</p>'+
+            Math.round(G.TRAN_KHACH*100)+'% '+
+            h(((G.KB_TRAN_NHA||{}).cauDung||'kho').replace(/^\d+% /, ''))+
+            ' — đủ đi hết chặng đang ở. '+
+            'Phần nghề không mất đi: Tư vấn và Coach đọc lại rồi gửi tới theo đúng lúc nhà '+
+            'mình cần, khi KPI đi qua '+G.KPI_XIN_THEM+'%.</p>'+
           (s.them ? '<p class="tiny mt" style="color:var(--ok)">'+ic('check','w-3 h-3')+
              ' Đã nhận thêm '+s.them+' tư liệu do Tư vấn và Coach gửi.</p>' : '')+
         '</div>'+

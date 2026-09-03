@@ -9044,10 +9044,15 @@ const { chromium } = require(PW);
       hp.gia = luuG;
 
       /* ── KHAI THẲNG LÀ CHƯA CHẠY CHO KHÁCH ── */
+      /* Câu hỏi ĐÚNG sau khi chốt: kho có còn khai THẲNG rằng chuỗi chưa
+         chạy cho khách không. Bản trước hỏi "sổ chờ có đúng một dòng" —
+         nó canh một trạng thái TẠM, nên đỏ đúng hôm trạng thái ấy được
+         giải quyết. Cùng lớp lỗi với giaConNull ở mục 56. */
       r.khaiThangChuaChay = (G.KB_LUAT || {}).khachChuaChayDuoc === true &&
-        (G.KB_CHOCHU || []).length === 1 &&
         (G.KB_LUAT.chayChoAi || []).indexOf('R13') < 0 &&
-        (G.KB_LUAT.chayChoAi || []).indexOf('R11') >= 0;
+        (G.KB_LUAT.chayChoAi || []).indexOf('R11') >= 0 &&
+        (G.KB_CHOCHU || []).length === 0 &&
+        (G.KB_DA_CHOT || []).some(x => x.ma === 'KB-CC-01');
       return r;
     });
 
@@ -9059,12 +9064,24 @@ const { chromium } = require(PW);
     await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
     await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length,
       { timeout: 60000 });
-    const kh = await p.evaluate(() => ({
-      soTH: (window.G.TINHHUONG || []).length,
-      soKey: window.G.kbBoKey().length
-    }));
+    const kh = await p.evaluate(() => {
+      const G = window.G;
+      /* Kho khai cho gia đình phải CÓ MẶT THẬT trên máy gia đình. Con số
+         trần không được phép co lại trong im lặng thêm một lần nữa —
+         chuyện đã xảy ra ở bản 9.8 và không ai biết cho tới hôm nay. */
+      const co = G.khoNhaTheoLoai ? G.khoNhaTheoLoai() : {};
+      const chuaCo = ((G.KB_TRAN_NHA || {}).kho || []).filter(function (l) {
+        return !(co[l] > 0);
+      });
+      const man = G.VIEWS['tro-ly']();
+      return { soTH: (G.TINHHUONG || []).length, soKey: G.kbBoKey().length,
+        chuaCo: chuaCo,
+        manDung: /dành cho gia đình/.test(man) && !/% kho —/.test(man) };
+    });
     ra.khachKhongCoTinhHuong = kh.soTH === 0;
     ra.khachBoKeyRong = kh.soKey === 0;
+    ra.khoNhaCoMat = kh.chuaCo.length === 0;
+    ra.manNoiDungMauSo = kh.manDung;
 
     /* ── GIỌNG, SÁU MŨ, CÂU PHÁT SINH (9.50) ──
        Quay lại tài khoản TƯ VẤN: khối trên vừa chuyển sang phụ huynh để
@@ -9144,7 +9161,8 @@ const { chromium } = require(PW);
     const doKB = ['coKey', 'keyTheoKho', 'chiTinhHuongTraLoi', 'dungVong', 'hepDan',
       'khucTuKho', 'khucChuKhongChep', 'vongLap', 'khongThuVeRong', 'moiCoGia',
       'giaTuKho', 'chuaCoGiaThiNoi', 'khaiThangChuaChay',
-      'khachKhongCoTinhHuong', 'khachBoKeyRong'].filter(k => !ra[k]);
+      'khachKhongCoTinhHuong', 'khachBoKeyRong',
+      'khoNhaCoMat', 'manNoiDungMauSo'].filter(k => !ra[k]);
     bao(!doKB.length,
       'CHUỖI KỊCH BẢN TRẢ LỜI PHỤ HUYNH — NĂM VÒNG HẸP DẦN, ĐỌC THẲNG TỪ KHO. VÀ HÔM NAY NÓ CHẠY CHO TƯ VẤN, CHƯA CHẠY CHO KHÁCH. Kho TINHHUONG đã có sẵn đúng chuỗi từ lâu: 250 tình huống, mỗi cái đủ năm khúc — th biểu hiện · mo bối cảnh · pt phân tích · chot chốt · gp giải pháp · kpi đo — và có khai tầng. Nên năm vòng KHÔNG viết lại nội dung nào: mỗi vòng chỉ là một CÂU HỎI mở khúc tiếp theo, còn khúc ấy đọc thẳng từ trường kho khai; đổi một chữ trong kho thì lời trả lời đổi theo trong cùng lần chạy. VÒNG LẶP PHẢI HẸP DẦN, và đây là chỗ khó nhất: mỗi câu trả lời áp LẦN LƯỢT lên cái rổ câu trước để lại. Bản đầu chỉ giao với câu gần nhất nên rổ phình lại ở vòng ba — 44 rồi 27 rồi 36 — mà hẹp rồi rộng ra thì không phải vòng lặp, chỉ là ba phép lọc rời nhau; nay 44 rồi 26 rồi 20 và chốt rơi đúng vào chuyện nhà ấy đang gặp. Câu trả lời ngoài dự kiến thì BỎ QUA câu ấy chứ không thu rổ về rỗng — mất hết là phạt người trả lời thật thà. Vòng năm quay lại vòng một với một con số thật thay vì một câu kể, nên chuỗi không có điểm kết. CHỖ PHẢI NÓI THẲNG: chuỗi chưa chạy trên máy khách hàng, vì TINHHUONG là TÀI SẢN NGHỀ và mục 40 chặn mọi đường đưa nó vào gói tầng của khách. Tôi đã thử đưa vào và bộ kiểm bắt ngay trong một lần chạy — nó còn bắt thêm rằng làm thế thì máy nghề nhận 325 tình huống thay vì 250, vì cùng một kho về từ hai gói. Trớ trêu là src/kho-khach.js ĐÃ dựng sẵn bảng thứ hạng và trần 30% cho đúng loại "Tình huống", nghĩa là ý định sản phẩm từng là cho khách đọc 30% — nhưng kho không xuống máy nên cái trần ấy tính trên một kho không tồn tại, và lời hứa 30% cho kho lớn nhất của hệ trả về con số không, im lặng, từ bản 9.8. Đó là một quyết định của chủ hệ về việc cái gì là tài sản nghề, không phải một chỗ hỏng để vá — nên nó nằm ở KB_CHOCHU · KB-CC-01 với ba đường chọn, và phép đo này canh để cái sổ ấy không bị lặng lẽ bỏ qua',
       doKB.length ? 'phép đo hỏng: ' + doKB.join(' · ')
@@ -9297,7 +9315,11 @@ const { chromium } = require(PW);
       const R = n => (G.ROLES || []).filter(x => x.id === n)[0];
       r.loThungOGiua = R('R07').lv < R('R08').lv && R('R08').lv < R('R11').lv;
       /* Danh sách TRẮNG: vai chưa nhắc tới là không xem được. */
-      r.vaiLaKhongXem = ['R09', 'R10', 'R12', 'R13', 'R15', 'RXX']
+      /* R09 và R10 ĐÃ được cấp ở XK-CC-01, nên chúng rời khỏi danh sách
+         này. Giữ chúng lại là canh một quyết định đã đổi. Luật danh sách
+         trắng vẫn nguyên: vai KHÔNG có tên thì không xem được, kể cả vai
+         chưa tồn tại hôm nay. */
+      r.vaiLaKhongXem = ['R12', 'R13', 'R14', 'R15', 'RXX']
         .every(v => ['T1', 'T3', 'T5'].every(t => !X(v, t)));
       r.nhanCaHaiDang = X('R07', 3) === X('R07', 'T3') && X('R07', 3) === true;
 
@@ -9352,8 +9374,46 @@ const { chromium } = require(PW);
         (localStorage.getItem('gita365.v7') || '').indexOf('XK_PHEP') < 0;
       G.XK_PHEP = null;
 
-      r.choChuGhiRo = (G.XK_CHOCHU || []).length === 1 &&
-        /R09|Mentor/.test((G.XK_CHOCHU || [])[0].vi || '');
+      /* ── XK-CC-01 ĐÃ CHỐT: TRẦN THÀNH BA CHIỀU ──
+         Ba vai ba mức khác nhau, và hai chiều VAI × TẦNG không nói được
+         điều đó. Ba mục đã khai sẵn ở XK_MUC từ 9.47 mà chưa có gì canh
+         chúng — nay chúng thành cổng thật. */
+      r.daChotBaVai = (G.XK_CHOCHU || []).length === 0 &&
+        (G.XK_DA_CHOT || []).some(x => x.ma === 'XK-CC-01') &&
+        (G.RONG_CO_Y || []).some(x => x.kho === 'XK_CHOCHU');
+      /* Mentor: đủ ba mục, tầng 1-3 — cùng phạm vi với Tư vấn. */
+      r.mentorNhuTuVan = G.xkDuTranVai('R09', 'T2').ok === true &&
+        G.xkDuTranVai('R09', 'T5').ok === false &&
+        G.xkMucCuaVai('R09').length === 3;
+      /* Đánh giá: KPI ở cả năm tầng, KHÔNG chuỗi nhiệm vụ, KHÔNG hồ sơ.
+         Đủ tầng mà không đủ mục thì vẫn là không — đây là chỗ chiều thứ
+         ba phải chặn thật, không phải một nhãn. */
+      r.danhGiaChiKpi = G.xkMucCuaVai('R10').join() === 'kpi' &&
+        G.xkDuTranVai('R10', 'T5').ok === true &&
+        G.xkDuocXem('R10', 'T5', 'kpi').thieuMuc === undefined &&
+        G.xkDuocXem('R10', 'T5', 'hoso').thieuMuc === true &&
+        G.xkDuocXem('R10', 'T2', 'nhiemvu').thieuMuc === true;
+      /* Phân tích dữ liệu: không hồ sơ nhà nào, và bị gạch tên CÓ LÝ DO. */
+      r.phanTichKhongHoSo = ['T1','T3','T5'].every(t => !G.xkDuTranVai('R12', t).ok) &&
+        G.xkDuTranVai('R12','T1').biGachTen === true &&
+        (G.XK_CAM || []).some(x => x.vai === 'R12' && /gộp/.test(x.vi || ''));
+      /* Bảng mục chỉ HẸP lại, không mở rộng: vai ngoài trần tầng thì khai
+         bao nhiêu mục cũng vẫn không xem được. */
+      r.mucKhongMoRong = G.xkDuocXem('R08', 'T1', 'kpi').thieuTran === true;
+      /* Vai không khai ở XK_VAI_MUC thì đủ ba mục — không bắt ai chép dòng. */
+      r.khongKhaiThiDuBa = G.xkMucCuaVai('R07').length === 3 &&
+        G.xkDuocXem('R07', 'T5', 'hoso').thieuMuc === undefined;
+
+      /* ── KB-CC-01 ĐÃ CHỐT: NÓI ĐÚNG MẪU SỐ ──
+         Con số "30% kho" đo trên năm kho khai ở kho-khach.js, mà bốn
+         trong năm nằm ở gói NGHỀ nên trên máy gia đình chúng vắng mặt —
+         con số thật ra là 30% của MỘT kho, và nó tự sai đi từ bản 9.8. */
+      r.daChotChuoi = (G.KB_CHOCHU || []).length === 0 &&
+        (G.KB_DA_CHOT || []).some(x => x.ma === 'KB-CC-01') &&
+        (G.RONG_CO_Y || []).some(x => x.kho === 'KB_CHOCHU');
+      r.khaiRoKhoNha = ((G.KB_TRAN_NHA || {}).kho || []).length > 0 &&
+        ((G.KB_TRAN_NHA || {}).khoNghe || []).indexOf('Tình huống') >= 0 &&
+        /dành cho gia đình/.test((G.KB_TRAN_NHA || {}).cauDung || '');
       return r;
     });
 
@@ -9375,6 +9435,19 @@ const { chromium } = require(PW);
     ra.mayChuCoAiCap = /var GITA_XK_AI_CAP = 'R01'/.test(nguon);
     ra.mayChuChanVuotTran = /vuotTran/.test(nguon) && /gitaXkDuTran_/.test(nguon);
     ra.mayChuGhiSo = /audit_\(hoSo\.phien, 'XEMKHACH_CAO'/.test(nguon);
+    /* Bản chép của bảng VAI × MỤC ở máy chủ phải khớp từng chữ. Bản chặn
+       là bản có hiệu lực; lệch một dòng thì màn hình nói một đằng và máy
+       chủ chặn một nẻo. */
+    {
+      const m = /var GITA_XK_VAI_MUC = (\{[\s\S]*?\});/.exec(nguon);
+      const banMC = m ? Function('return ' + m[1])() : null;
+      const banKho = await p.evaluate(() => {
+        const o = {}; (window.G.XK_VAI_MUC || []).forEach(x => { o[x.vai] = x.muc; });
+        return o;
+      });
+      ra.haiBanMucKhop = !!banMC && JSON.stringify(banMC) === JSON.stringify(banKho) &&
+        /gitaXkMucCuaVai_\(hoSo\.role\)\.indexOf\('hoso'\) < 0/.test(nguon);
+    }
 
     /* ── HỎI THẲNG TỆP .enc ──
        Đây là phép đo duy nhất trả lời được câu "cái gì thật sự rời máy
@@ -9408,8 +9481,11 @@ const { chromium } = require(PW);
       'khoDuMuoiNha', 'familiesTraiRa', 'goiNgheHetTangCao', 'goiCaoCoTangCao',
       'goiCaoDungOBacCoach', 'nhaMinhKhongQuaCong', 'giaoVienKhongThayDs',
       'coachThayDs', 'duTranVanChuaXem', 'haiCauTuChoiKhacNhau', 'coPhepThiXemDuoc',
-      'hetHanTuTat', 'phepKhongVuotTran', 'phepKhongLuoiXuongMay', 'choChuGhiRo',
-      'haiBanKhop', 'mayChuCoAiCap', 'mayChuChanVuotTran', 'mayChuGhiSo'].filter(k => !ra[k]);
+      'hetHanTuTat', 'phepKhongVuotTran', 'phepKhongLuoiXuongMay', 
+      'haiBanKhop', 'mayChuCoAiCap', 'mayChuChanVuotTran', 'mayChuGhiSo',
+      'daChotBaVai', 'mentorNhuTuVan', 'danhGiaChiKpi', 'phanTichKhongHoSo',
+      'mucKhongMoRong', 'khongKhaiThiDuBa', 'haiBanMucKhop',
+      'daChotChuoi', 'khaiRoKhoNha'].filter(k => !ra[k]);
     bao(!doXK.length,
       'AI ĐƯỢC XEM HỒ SƠ KHÁCH HÀNG — VÀ CHỖ CHẶN NẰM Ở KHO CHỨ KHÔNG Ở MÀN HÌNH. Chủ hệ chốt: Tư vấn và Coach xem tầng 1-2-3; tầng 4-5 từ Coach lên tới Super Admin; Giáo viên, ban tài chính, ban sản phẩm không xem; và ai cũng phải được Super Admin cấp quyền. Luật này KHÔNG viết được bằng bảng bậc sẵn có, và chỗ gãy nằm đúng ở người vừa bị gạch tên: Coach lv 7 · GIÁO VIÊN lv 8 · Tư vấn lv 11. Mở bậc tới 11 cho Tư vấn là Giáo viên lọt vào giữa. Bậc là một cái thang, luật này là một danh sách có lỗ thủng — nên nó khai thẳng từng vai, theo lối DANH SÁCH TRẮNG: vai nào không có tên là không xem được, kể cả vai chưa tồn tại hôm nay. Kê danh sách cấm thì mỗi vai mới sinh ra là mặc định nhìn thấy, và cái mặc định ấy không ai nhớ đi sửa. NHƯNG PHÉP ĐO QUAN TRỌNG NHẤT Ở ĐÂY KHÔNG PHẢI CÁI CỔNG: tới bản 9.46, FAMILIES — tên nhà, tên học viên, TÊN BỐ MẸ, tên Coach, băng KPI của cả mười nhà năm tầng — nằm trong gói NGHỀ, mà máy chủ cấp gói NGHỀ cho MỌI vai tới bậc 12. Nghĩa là Giáo viên, Mentor, Chuyên gia đánh giá và Phân tích dữ liệu đều đã có sẵn hồ sơ tầng 4-5 nằm trong máy mình. Lọc trên màn hình không chữa được: gửi xuống rồi thì mở công cụ nhà phát triển là đọc được hết — kho này đã mắc đúng lớp lỗi ấy ba lần, KICHBAN 8.9, CV_MUC 9.7, mười bảy kho nghề 9.8. Nên gói NGHỀ nay cắt còn tầng một tới ba, và tầng 4-5 sang GÓI NGHỀ CAO — gói thứ tám, cấp tới đúng bậc của Coach. Vì sao phải có gói thứ tám thay vì bỏ hẳn bốn bản ghi tầng cao: kho-goc/ nằm trong .gitignore, nên bảy tệp .enc đã phát hành LÀ BẢN LƯU DUY NHẤT của nội dung — cắt bốn bản ghi khỏi mọi gói là xoá luôn bản lưu duy nhất của chúng, và ở bản 9.6 chính mấy tệp ấy đã cứu được cả kho một lần. Nhưng gói chỉ gánh được MỘT trong hai luật: một gói đã cấp thì không gọi ngược về được, nên nó thi hành được TRẦN VAI mà không thi hành được GIẤY PHÉP THU HỒI ĐƯỢC — gỡ giấy phép hôm nay không xoá được bản sao nằm trong máy người ta từ hôm qua. Vì thế hồ sơ MẪU trong kho đi theo gói, còn hồ sơ khách hàng THẬT đi qua một lượt hỏi máy chủ có kiểm giấy phép và ghi sổ từng lượt; cái giá là mất mạng thì không mở được, và nó đáng. Hai lớp không được gộp: đủ điều kiện KHÁC được xem, và hai câu từ chối phải nói khác nhau vì chúng dẫn tới hai việc khác nhau. Giấy phép có hạn và hết hạn thì TỰ TẮT — một quyền chỉ mất khi có người chủ động gỡ là một quyền sẽ ở lại mãi; nó cũng không lưu xuống máy, vì một giấy phép đã thu hồi mà còn nằm trong máy thì người bị thu vẫn mở được tới lúc tải lại trang. Trần chặn cả Super Admin: cấp cho Giáo viên là máy chủ từ chối, kể cả khi người bấm nút là chính chủ hệ — trần mà người cao nhất phá được thì nó là một lời khuyên. Máy chủ giữ bản chép của trần vì nó không đọc được kho đã mã hoá, và phép đo này đối chiếu hai bản TỪNG CHỮ mỗi lần chạy: lệch một vai thì bản CHẶN mới là bản có hiệu lực, và người dùng bị từ chối mà màn hình không giải thích được vì sao. Hồ sơ nhà của CHÍNH mình không đi qua cổng này — cổng trả lời câu "được xem nhà KHÁC không", còn hồ sơ nhà mình đã có quyền riêng; lọc nhầm chỗ ấy thì phụ huynh mất luôn hồ sơ của chính họ, vì R13 chưa từng có tên trong trần nào',
       doXK.length ? 'phép đo hỏng: ' + doXK.join(' · ')

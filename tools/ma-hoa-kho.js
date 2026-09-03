@@ -180,7 +180,7 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
   /* Chuỗi kịch bản trả lời phụ huynh. Gói NỀN cùng lý do với TL_*:
      chính khách hàng là người đi qua năm vòng này. */
   'KB_MU', 'KB_MU_LUAT', 'KB_GIONG', 'KB_PHATSINH', 'KB_PHATSINH_LUAT',
-  'KB_VONG', 'KB_KEY_NGUON', 'KB_LUAT', 'KB_MOI_TANG', 'KB_CHOCHU', 'KB_NGHIEPVU', 'KB_NGHIEPVU_LUAT',
+  'KB_DA_CHOT', 'KB_TRAN_NHA', 'KB_VONG', 'KB_KEY_NGUON', 'KB_LUAT', 'KB_MOI_TANG', 'KB_CHOCHU', 'KB_NGHIEPVU', 'KB_NGHIEPVU_LUAT',
   'TL_TANG_TRUONG', 'TL_TANG_LUAT', 'TL_VIEC_NHIP', 'TL_VIEC_LUAT', 'TL_VIEC_DAU',
   'HH_KEM', 'HH_BAC', 'HH_BAC_LUAT', 'HH_KHONG_TIEN', 'HH_CHUNGCU', 'HH_LOAI_CC', 'HH_CC_LUAT', 'HH_CHOCHU', 'HH_DA_CHOT',
   'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_MUC', 'TG_VIEC',
@@ -211,7 +211,7 @@ const NGHE = [
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */
-  'XK_TRAN', 'XK_MUC', 'XK_CAM', 'XK_LUAT', 'XK_GIAYPHEP', 'XK_CHOCHU',
+  'XK_TRAN', 'XK_MUC', 'XK_VAI_MUC', 'XK_VAI_MUC_LUAT', 'XK_DA_CHOT', 'XK_CAM', 'XK_LUAT', 'XK_GIAYPHEP', 'XK_CHOCHU',
   /* ── FAMILIES VỀ GÓI NGHỀ TỪ BẢN 9.41 ──
      Kho này mang hồ sơ MƯỜI nhà: tên nhà, tên học viên, lớp, TÊN BỐ MẸ,
      tên Coach, điểm tự chủ, band màu, kỳ tích. Nó nằm ở gói NỀN từ đầu,
@@ -888,6 +888,8 @@ const mau = {
   KB_VONG: G.KB_VONG, KB_KEY_NGUON: G.KB_KEY_NGUON, KB_LUAT: G.KB_LUAT, KB_MOI_TANG: G.KB_MOI_TANG, KB_CHOCHU: G.KB_CHOCHU, KB_NGHIEPVU: G.KB_NGHIEPVU, KB_NGHIEPVU_LUAT: G.KB_NGHIEPVU_LUAT,
   TL_TANG_TRUONG: G.TL_TANG_TRUONG, TL_TANG_LUAT: G.TL_TANG_LUAT,
   TL_VIEC_NHIP: G.TL_VIEC_NHIP, TL_VIEC_LUAT: G.TL_VIEC_LUAT, TL_VIEC_DAU: G.TL_VIEC_DAU,
+  XK_VAI_MUC: G.XK_VAI_MUC, XK_VAI_MUC_LUAT: G.XK_VAI_MUC_LUAT, XK_DA_CHOT: G.XK_DA_CHOT,
+  KB_DA_CHOT: G.KB_DA_CHOT, KB_TRAN_NHA: G.KB_TRAN_NHA,
   XK_TRAN: G.XK_TRAN, XK_MUC: G.XK_MUC, XK_CAM: G.XK_CAM, XK_LUAT: G.XK_LUAT,
   XK_GIAYPHEP: G.XK_GIAYPHEP, XK_CHOCHU: G.XK_CHOCHU,
   HH_KEM: G.HH_KEM, HH_BAC: G.HH_BAC, HH_BAC_LUAT: G.HH_BAC_LUAT, HH_KHONG_TIEN: G.HH_KHONG_TIEN,

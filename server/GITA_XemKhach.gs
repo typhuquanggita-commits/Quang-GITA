@@ -37,9 +37,19 @@
  *  màn hình giải thích cho người đọc; bản này là bản chặn. Bộ kiểm đối
  *  chiếu hai bản mỗi lần chạy, nên lệch một vai là đỏ ngay. */
 var GITA_XK_TRAN = [
-  { tang: ['T1', 'T2', 'T3'], vai: ['R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R11'] },
-  { tang: ['T4', 'T5'],       vai: ['R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07'] }
+  { tang: ['T1', 'T2', 'T3'], vai: ['R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R09', 'R10', 'R11'] },
+  { tang: ['T4', 'T5'],       vai: ['R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R10'] }
 ];
+
+/** Chiều thứ BA — vai nào xem được mục nào. Vai không có tên ở đây thì
+ *  xem đủ ba mục. PHẢI khớp từng chữ với G.XK_VAI_MUC trong kho; bộ kiểm
+ *  đối chiếu hai bản mỗi lần chạy. */
+var GITA_XK_VAI_MUC = { R10: ['kpi'] };
+var GITA_XK_MUC = ['kpi', 'nhiemvu', 'hoso'];
+
+function gitaXkMucCuaVai_(vai) {
+  return GITA_XK_VAI_MUC[String(vai)] || GITA_XK_MUC;
+}
 
 /** Bậc của Coach — bậc thấp nhất còn được cấp gói NGHỀ CAO và xem tầng
  *  4-5. Đọc từ ROLES trong 00_Config.gs, không gõ con số: đổi bậc của
@@ -184,11 +194,12 @@ function gitaThuHoiQuyenXem_(y, hoSo) {
 function gitaSoiQuyenXem_(y, hoSo) {
   var tran = gitaXkTranCuaVai_(hoSo.role);
   var p = gitaXkPhepCua_(hoSo.u);
-  if (!p) return { ok: true, tang: [], tranVai: tran, coGiayPhep: false };
+  var mucDuoc = gitaXkMucCuaVai_(hoSo.role);
+  if (!p) return { ok: true, tang: [], tranVai: tran, muc: mucDuoc, coGiayPhep: false };
   /* Trần đọc lại lúc DÙNG, không tin cột đã ghi: vai của một người đổi
      được sau khi giấy phép đã cấp, và lúc ấy giấy phép cũ vẫn nằm đó. */
   var con = p.tang.filter(function (t) { return gitaXkDuTran_(hoSo.role, t); });
-  return { ok: true, tang: con, tranVai: tran, coGiayPhep: true,
+  return { ok: true, tang: con, tranVai: tran, muc: mucDuoc, coGiayPhep: true,
     hetHan: p.hetHan, nguoiCap: p.nguoiCap, lyDo: p.lyDo,
     tutTheoVai: con.length < p.tang.length };
 }
@@ -199,6 +210,15 @@ function gitaSoiQuyenXem_(y, hoSo) {
  * nhất, và mỗi lượt qua cửa là một dòng sổ.
  */
 function gitaXemKhachCao_(y, hoSo) {
+  /* Trả về HỒ SƠ, nên phải qua cổng mục 'hoso'. Chuyên gia đánh giá đủ
+     trần tầng 4-5 nhưng chỉ được mục kpi — đủ tầng mà không đủ mục thì
+     vẫn là không. */
+  if (gitaXkMucCuaVai_(hoSo.role).indexOf('hoso') < 0) {
+    audit_(hoSo.phien, 'XEMKHACH_TUCHOI', hoSo.role, 'ngoài mục hoso');
+    return { ok: false, code: 'NOPERM',
+      error: 'Vai này không xem được hồ sơ khách hàng. Chỉ xem được: ' +
+        gitaXkMucCuaVai_(hoSo.role).join(', ') + '.' };
+  }
   var q = gitaSoiQuyenXem_(y, hoSo);
   var cao = q.tang.filter(function (t) { return t === 'T4' || t === 'T5'; });
   if (!cao.length) {

@@ -2098,7 +2098,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.50',
+  version: '9.51',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -5476,9 +5476,9 @@ G.THUOC_CAP_PHEP = [
   'TIN_THUONG','TIN_CAM','TIN_LUAT','TIN_LOAI_LUAT','TIN_MAU','TIN_TANG_LUAT',
   'TIN_KEM_THUONG','BK_LUAT','BK_DANHMUC','BK_DANHMUC_LUAT','TG_MUC','TG_VIEC',
   'KB_MU','KB_MU_LUAT','KB_GIONG','KB_PHATSINH','KB_PHATSINH_LUAT',
-  'KB_VONG','KB_KEY_NGUON','KB_LUAT','KB_MOI_TANG','KB_CHOCHU','KB_NGHIEPVU','KB_NGHIEPVU_LUAT',
+  'KB_DA_CHOT','KB_TRAN_NHA','KB_VONG','KB_KEY_NGUON','KB_LUAT','KB_MOI_TANG','KB_CHOCHU','KB_NGHIEPVU','KB_NGHIEPVU_LUAT',
   'TL_TANG_TRUONG','TL_TANG_LUAT','TL_VIEC_NHIP','TL_VIEC_LUAT','TL_VIEC_DAU',
-  'XK_TRAN','XK_MUC','XK_CAM','XK_LUAT','XK_GIAYPHEP','XK_CHOCHU',
+  'XK_TRAN','XK_MUC','XK_VAI_MUC','XK_VAI_MUC_LUAT','XK_DA_CHOT','XK_CAM','XK_LUAT','XK_GIAYPHEP','XK_CHOCHU',
   'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_KHONG_TIEN','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU','HH_DA_CHOT',
   'CS_VONG','CS_VONG_LUAT','CS_DULIEU','CS_DULIEU_LUAT',
   'CS_QUYMO','CS_LECH','CS_CHOCHU',
@@ -16556,6 +16556,17 @@ function khoNguon(){
     {loai:'Kịch bản',  kho:G.KICHBAN,   ma:function(x){return x.ma;}, ten:function(x){return x.ten;},   tang:function(x){return soTang(x.tang);}},
     {loai:'Tình huống',kho:G.TINHHUONG, ma:function(x){return x.key||x.ma||('TH-'+x.stt);}, ten:function(x){return x.th||x.ten;}, tang:function(x){return soTang(x.tang);}},
     {loai:'Bài học',   kho:G.BAIHOC,    ma:function(x){return x.id;}, ten:function(x){return x.ten;},   tang:function(x){return Number(x.tier)||1;}}
+    /* Kho vắng mặt thì tự rơi ra — trên máy gia đình chỉ còn kho của phần
+       gia đình, trên máy nghề còn cả năm. ĐỪNG lọc thêm theo vai ở đây:
+       mục 18 của bộ kiểm đếm toàn kho trên một máy nghề rồi mới hỏi trần
+       của gia đình, nên lọc theo vai ở chỗ này làm mẫu số đổi theo người
+       đang đăng nhập và con số mất nghĩa.
+
+       Danh sách KB_TRAN_NHA.kho là chỗ ĐỐI CHIẾU, không phải bộ lọc: nó
+       khai kho nào ĐÁNG LẼ phải có trên máy gia đình, để bộ kiểm hỏi
+       được câu mà trước nay không ai hỏi — kho ấy có mặt thật không.
+       Trước bản này câu ấy không hỏi được, nên mẫu số của trần 30% co
+       lại từ bản 9.8 mà không ai biết. */
   ].filter(function(n){ return Array.isArray(n.kho) && n.kho.length; });
 }
 function soTang(v){
@@ -16648,6 +16659,16 @@ G.khachMoDuoc = function(loai, ma){
 };
 
 /* Bảng số cho màn hình: nhà này đang mở bao nhiêu phần kho */
+/* Số bản ghi từng LOẠI đang có trên máy này. Bộ kiểm cần nó để hỏi một
+   câu mà trước nay không ai hỏi được: kho khai cho gia đình có CÓ MẶT
+   thật trên máy gia đình không. Không có accessor thì câu ấy chỉ trả lời
+   được bằng cách đọc mã, và đọc mã thì không đỏ được. */
+G.khoNhaTheoLoai = function(){
+  var b = bangHang(), ra = {};
+  Object.keys(b).forEach(function(l){ ra[l] = b[l].tong; });
+  return ra;
+};
+
 G.khoCuaNha = function(){
   var b = bangHang(), nen = 0, tong = 0;
   Object.keys(b).forEach(function(l){
@@ -18066,10 +18087,18 @@ G.VIEWS['tro-ly'] = function(){
         U.ring(s.kpi, s.dat80 ? 'var(--ok)' : 'var(--gita-do)', 'KPI CỦA NHÀ')+
         '<div style="flex:1;min-width:250px">'+
           '<b class="sm">'+s.mo.toLocaleString('vi-VN')+' / '+s.tong.toLocaleString('vi-VN')+' tư liệu</b>'+
+          /* NÓI ĐÚNG MẪU SỐ. Câu cũ là "30% kho", mà con số ấy đo trên KHO
+             DÀNH CHO GIA ĐÌNH chứ không phải toàn kho Học viện — bốn kho
+             nghề không xuống máy khách nên không nằm trong mẫu số. Hai
+             câu chênh nhau đúng một cụm bốn chữ, mà cụm ấy là toàn bộ
+             khác nhau giữa một con số đúng và một con số nghe to hơn sự
+             thật. Câu đúng đọc từ kho, không gõ lại ở đây. */
           '<p class="sm dim mt" style="line-height:1.6">Phần nền của mỗi nhà là '+
-            Math.round(G.TRAN_KHACH*100)+'% kho — đủ đi hết chặng đang ở. '+
-            'Phần còn lại không mất đi: Tư vấn và Coach gửi tới theo đúng lúc nhà mình cần, '+
-            'khi KPI đi qua '+G.KPI_XIN_THEM+'%.</p>'+
+            Math.round(G.TRAN_KHACH*100)+'% '+
+            h(((G.KB_TRAN_NHA||{}).cauDung||'kho').replace(/^\d+% /, ''))+
+            ' — đủ đi hết chặng đang ở. '+
+            'Phần nghề không mất đi: Tư vấn và Coach đọc lại rồi gửi tới theo đúng lúc nhà '+
+            'mình cần, khi KPI đi qua '+G.KPI_XIN_THEM+'%.</p>'+
           (s.them ? '<p class="tiny mt" style="color:var(--ok)">'+ic('check','w-3 h-3')+
              ' Đã nhận thêm '+s.them+' tư liệu do Tư vấn và Coach gửi.</p>' : '')+
         '</div>'+
@@ -26525,10 +26554,33 @@ var G = window.G || {}; window.G = G;
      NHAU — "vai anh không được phép" và "vai anh được phép nhưng chưa
      ai cấp quyền" dẫn tới hai việc khác nhau cho người đọc. Gộp lại là
      đẩy người ta đi hỏi nhầm chỗ. */
-  G.xkDuocXem = function (vai, tangKhach) {
+  /* Vai này xem được những MỤC nào. Không khai ở XK_VAI_MUC thì đủ ba —
+     bắt mọi vai chép lại đủ ba mục là mời người ta chép cho xong, và một
+     bảng toàn dòng chép là một bảng không ai đọc. */
+  G.xkMucCuaVai = function (vai) {
+    var d = (G.XK_VAI_MUC || []).filter(function (x) { return x.vai === vai; })[0];
+    if (d) return (d.muc || []).slice();
+    return (G.XK_MUC || []).map(function (m) { return m.ma; });
+  };
+
+  G.xkDuocXem = function (vai, tangKhach, muc) {
     var tran = G.xkDuTranVai(vai, tangKhach);
     if (!tran.ok) return { ok: false, thieuTran: true, y: tran.y, vi: tran.vi,
       biGachTen: tran.biGachTen === true };
+    /* Chiều thứ BA. Đứng SAU trần tầng vì bảng mục chỉ hẹp lại, không mở
+       rộng: vai không có tên trong XK_TRAN thì khai bao nhiêu mục cũng
+       vẫn không xem được. */
+    if (muc) {
+      var duoc = G.xkMucCuaVai(vai);
+      if (duoc.indexOf(muc) < 0) {
+        var m = (G.XK_MUC || []).filter(function (x) { return x.ma === muc; })[0];
+        var dm = (G.XK_VAI_MUC || []).filter(function (x) { return x.vai === vai; })[0];
+        return { ok: false, thieuMuc: true, muc: muc, mucDuoc: duoc,
+          vi: dm && dm.vi,
+          y: 'Vai này không xem được mục "' + ((m && m.ten) || muc) + '". Chỉ xem được: ' +
+            duoc.join(', ') + '.' };
+      }
+    }
     if ((G.XK_LUAT || {}).phaiCoGiayPhep !== true) return { ok: true, dong: tran.dong };
     var gp = G.xkGiayPhep(tangKhach);
     if (!gp.co) return { ok: false, thieuGiayPhep: true, dong: tran.dong,

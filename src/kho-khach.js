@@ -56,6 +56,17 @@ function khoNguon(){
     {loai:'Kịch bản',  kho:G.KICHBAN,   ma:function(x){return x.ma;}, ten:function(x){return x.ten;},   tang:function(x){return soTang(x.tang);}},
     {loai:'Tình huống',kho:G.TINHHUONG, ma:function(x){return x.key||x.ma||('TH-'+x.stt);}, ten:function(x){return x.th||x.ten;}, tang:function(x){return soTang(x.tang);}},
     {loai:'Bài học',   kho:G.BAIHOC,    ma:function(x){return x.id;}, ten:function(x){return x.ten;},   tang:function(x){return Number(x.tier)||1;}}
+    /* Kho vắng mặt thì tự rơi ra — trên máy gia đình chỉ còn kho của phần
+       gia đình, trên máy nghề còn cả năm. ĐỪNG lọc thêm theo vai ở đây:
+       mục 18 của bộ kiểm đếm toàn kho trên một máy nghề rồi mới hỏi trần
+       của gia đình, nên lọc theo vai ở chỗ này làm mẫu số đổi theo người
+       đang đăng nhập và con số mất nghĩa.
+
+       Danh sách KB_TRAN_NHA.kho là chỗ ĐỐI CHIẾU, không phải bộ lọc: nó
+       khai kho nào ĐÁNG LẼ phải có trên máy gia đình, để bộ kiểm hỏi
+       được câu mà trước nay không ai hỏi — kho ấy có mặt thật không.
+       Trước bản này câu ấy không hỏi được, nên mẫu số của trần 30% co
+       lại từ bản 9.8 mà không ai biết. */
   ].filter(function(n){ return Array.isArray(n.kho) && n.kho.length; });
 }
 function soTang(v){
@@ -148,6 +159,16 @@ G.khachMoDuoc = function(loai, ma){
 };
 
 /* Bảng số cho màn hình: nhà này đang mở bao nhiêu phần kho */
+/* Số bản ghi từng LOẠI đang có trên máy này. Bộ kiểm cần nó để hỏi một
+   câu mà trước nay không ai hỏi được: kho khai cho gia đình có CÓ MẶT
+   thật trên máy gia đình không. Không có accessor thì câu ấy chỉ trả lời
+   được bằng cách đọc mã, và đọc mã thì không đỏ được. */
+G.khoNhaTheoLoai = function(){
+  var b = bangHang(), ra = {};
+  Object.keys(b).forEach(function(l){ ra[l] = b[l].tong; });
+  return ra;
+};
+
 G.khoCuaNha = function(){
   var b = bangHang(), nen = 0, tong = 0;
   Object.keys(b).forEach(function(l){

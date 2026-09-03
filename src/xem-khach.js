@@ -86,10 +86,33 @@ var G = window.G || {}; window.G = G;
      NHAU — "vai anh không được phép" và "vai anh được phép nhưng chưa
      ai cấp quyền" dẫn tới hai việc khác nhau cho người đọc. Gộp lại là
      đẩy người ta đi hỏi nhầm chỗ. */
-  G.xkDuocXem = function (vai, tangKhach) {
+  /* Vai này xem được những MỤC nào. Không khai ở XK_VAI_MUC thì đủ ba —
+     bắt mọi vai chép lại đủ ba mục là mời người ta chép cho xong, và một
+     bảng toàn dòng chép là một bảng không ai đọc. */
+  G.xkMucCuaVai = function (vai) {
+    var d = (G.XK_VAI_MUC || []).filter(function (x) { return x.vai === vai; })[0];
+    if (d) return (d.muc || []).slice();
+    return (G.XK_MUC || []).map(function (m) { return m.ma; });
+  };
+
+  G.xkDuocXem = function (vai, tangKhach, muc) {
     var tran = G.xkDuTranVai(vai, tangKhach);
     if (!tran.ok) return { ok: false, thieuTran: true, y: tran.y, vi: tran.vi,
       biGachTen: tran.biGachTen === true };
+    /* Chiều thứ BA. Đứng SAU trần tầng vì bảng mục chỉ hẹp lại, không mở
+       rộng: vai không có tên trong XK_TRAN thì khai bao nhiêu mục cũng
+       vẫn không xem được. */
+    if (muc) {
+      var duoc = G.xkMucCuaVai(vai);
+      if (duoc.indexOf(muc) < 0) {
+        var m = (G.XK_MUC || []).filter(function (x) { return x.ma === muc; })[0];
+        var dm = (G.XK_VAI_MUC || []).filter(function (x) { return x.vai === vai; })[0];
+        return { ok: false, thieuMuc: true, muc: muc, mucDuoc: duoc,
+          vi: dm && dm.vi,
+          y: 'Vai này không xem được mục "' + ((m && m.ten) || muc) + '". Chỉ xem được: ' +
+            duoc.join(', ') + '.' };
+      }
+    }
     if ((G.XK_LUAT || {}).phaiCoGiayPhep !== true) return { ok: true, dong: tran.dong };
     var gp = G.xkGiayPhep(tangKhach);
     if (!gp.co) return { ok: false, thieuGiayPhep: true, dong: tran.dong,
