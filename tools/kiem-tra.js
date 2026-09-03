@@ -7899,6 +7899,33 @@ const { chromium } = require(PW);
       r.khongXepHang = (G.BC_TRONGSO_LUAT || {}).khongXepHang === true;
       r.khongPhat = (G.BC_TRONGSO_LUAT || {}).khongPhatNgayBoLo === true;
 
+      /* ── VÒNG: ĐỌC TỪ CHỖ ĐÃ VIẾT, KHÔNG KHAI LẠI ──
+         T2 đọc từ lời hứa cú hích, T3–T4 đọc từ tên chặng. T1 và T5
+         thật sự không khai vòng nào — và máy nói KHÔNG CÓ chứ không tự
+         đặt ra một con số cho đều bảng. */
+      const v2 = G.bcVong('T2'), v3 = G.bcVong('T3'), v4 = G.bcVong('T4');
+      r.vongT2 = !!v2 && v2.soVong === 3 && v2.dai === 7 && /CUHICH/.test(v2.docTu);
+      r.vongT3 = !!v3 && v3.soVong === 4 && v3.dai === 21 && /HP_TANG/.test(v3.docTu);
+      r.vongT1KhongCo = G.bcVong('T1') === null && G.bcVong('T5') === null;
+      /* Vòng KHÔNG lát kín tầng ở hai chỗ, và cả hai nằm sẵn trong kho:
+         4×21=84≠90 và 4×90=360≠365. Không làm tròn, không giãn vòng cho
+         vừa — giãn cho vừa là sửa lời hứa cho khớp cái bàn, mà đáng ra
+         phải ngược lại. */
+      r.khaiSoDu = v3.du === 6 && v4.du === 5 &&
+        /dư 6 ngày chưa nói là gì/.test(v3.duChuaKhai || '');
+      /* Chỗ khó đọc từ HT_TANG.khoNhat — 'Tuần thứ hai…' → vòng 2 */
+      r.vongKho = G.bcVongKho('T2') === 2 && /Tuần thứ hai/.test(G.bcKhoNhat('T2') || '');
+      /* Biến của vòng: ghi được, và câu mới để trống thì không ghi */
+      G.S.bcBien = {};
+      r.ghiBien = G.bcGhiBien('T2', 1, 'câu cũ', 'câu mới') === true &&
+        G.bcBien('T2', 1).moi === 'câu mới';
+      r.chanBienRong = G.bcGhiBien('T2', 2, 'x', '  ') === false;
+      /* Chưa ghi biến thì vòng VẪN chạy — bắt điền mới cho đi tiếp là
+         dựng một cái cổng ở chỗ đáng ra chỉ cần một lời mời. */
+      r.bienKhongBatBuoc = (G.BC_VONG_LUAT || {}).bienKhongBatBuoc !== undefined &&
+        G.bcDat('T2', 'me', G.bcGoiY('T2')[0].ma).ok === true;
+      G.S.bcBien = {};
+
       /* ── Trên màn thật ── */
       G.S.banCo = {};
       const man = G.VIEWS['ban-co']();
@@ -7934,6 +7961,10 @@ const { chromium } = require(PW);
       bao(ra.mocMotCai && ra.mocLenBay && ra.mocXongTang && ra.ngayTheoMay,
         'mốc chúc mừng trả về CAO NHẤT đạt được, không nổi năm cái cùng lúc — nổi năm cái thì không cái nào được nhìn. Bảy ngày liền thì mốc tự lên. Và khoá ô là NGÀY THEO GIỜ MÁY NGƯỜI DÙNG: dùng ngày UTC thì nhà mình đặt quân lúc chín giờ tối giờ Việt Nam rơi vào ô của hôm sau, và cả bàn cờ lệch đúng một ô suốt tầng',
         'chuỗi 7 trên bàn 90 ô → BẢY LIỀN · kín 7/7 ô → XONG TẦNG · 9h30 tối 2/9 → ô ngày 2/9');
+      bao(ra.vongT2 && ra.vongT3 && ra.vongT1KhongCo && ra.khaiSoDu && ra.vongKho &&
+          ra.ghiBien && ra.chanBienRong && ra.bienKhongBatBuoc,
+        'BÀN DÀI THÌ CHIA VÒNG, MỖI VÒNG ĐÚNG MỘT BIẾN — và số vòng ĐỌC TỪ CHỖ ĐÃ VIẾT chứ không khai lại: tầng hai đọc từ lời hứa của cú hích ("mỗi vòng bảy ngày thay đúng một biến"), tầng ba và bốn đọc từ chính tên chặng ("90 ngày, 4 chuỗi 21 ngày"). Tầng một và tầng năm thật sự không khai vòng nào, và máy nói KHÔNG CÓ chứ không tự đặt ra một con số cho đều bảng. Vòng KHÔNG lát kín tầng ở hai chỗ — 4×21=84≠90 và 4×90=360≠365 — nên bàn để phần dư ra NGOÀI VÒNG và nói thẳng kho chưa khai mấy ngày ấy là gì; giãn vòng cho vừa là sửa lời hứa cho khớp cái bàn, mà đáng ra phải ngược lại. Chỗ khó nhất của tầng đọc từ HT_TANG.khoNhat và BÁO TRƯỚC: câu ấy nằm trong kho từ bản 9.21 mà chưa màn nào nói ra đúng lúc. Biến của vòng ghi được nhưng KHÔNG bắt buộc — bắt điền mới cho đi tiếp là dựng một cái cổng ở chỗ đáng ra chỉ cần một lời mời',
+        'T2 3×7 từ CUHICH · T3 4×21 từ HP_TANG dư 6 · T1/T5 không vòng · vòng khó = 2');
       bao(ra.khongXepHang && ra.khongPhat && ra.manCoBan && ra.manCoDuNgay && ra.manCo10 && ra.manCoBaVai && ra.manNoiVisao,
         'hệ TỰ CẤM MÌNH hai điều và khai thẳng ra màn: điểm không dùng xếp hạng nhà nọ với nhà kia — một nhà đang mùa khó đặt cạnh một nhà đang thuận thì con số ấy nói dối về cả hai; và ngày bỏ lỡ KHÔNG bị phạt — ô trống là ô trống, vì trừ điểm ngày nghỉ là dạy người ta rằng nghỉ một tối là thất bại. Màn cũng in luôn VÌ SAO việc này ba điểm việc kia một, để người chơi đọc được luật chơi của chính mình');
     }

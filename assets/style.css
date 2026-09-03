@@ -1265,3 +1265,24 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .bc-viec:hover{transform:none;box-shadow:none;border-color:var(--line)}
 .bc-noi.cung{font-size:18px;color:var(--ok)}
 @media (max-width:640px){ .bc-toinay{grid-template-columns:1fr} }
+
+/* ═══ VÒNG · v9.35 ═══ */
+.bc-vong{margin:0 0 14px;padding:12px 13px 11px;border-radius:14px;
+  border:1px solid var(--line);background:var(--surface)}
+.bc-vong.kho{border-color:#B4720F5e;background:linear-gradient(150deg,
+  color-mix(in srgb,#B4720F 7%,transparent),transparent 65%)}
+.bc-vong.du{border-style:dashed;opacity:.85}
+.bc-vong-d{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.bc-vong-d b{font-size:14.5px}
+.bc-vong-d span{font-size:10.5px;letter-spacing:.08em;color:var(--ink-4)}
+.bc-vong-kho{color:#B4720F!important;font-weight:800}
+.bc-bien{font-size:12.5px;line-height:1.7;color:var(--ink-2);margin-top:8px;max-width:56ch}
+.bc-bien s{color:var(--ink-4)}
+.bc-nutbien{font:inherit;font-size:12.5px;margin-top:8px;padding:6px 12px;border-radius:99px;
+  cursor:pointer;border:1px dashed var(--line-2);color:var(--ink-3);background:transparent}
+.bc-nutbien:hover{border-color:var(--gita);color:var(--gita)}
+/* Báo trước chỗ khó của tầng */
+.bc-baotruoc{margin:12px 0;padding:13px 15px;border-radius:14px;
+  border:1px solid #B4720F45;background:color-mix(in srgb,#B4720F 6%,transparent)}
+.bc-baotruoc b{display:block;font-size:14.5px;color:#B4720F}
+.bc-baotruoc p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:60ch}

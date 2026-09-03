@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.34',
+  version: '9.35',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3407,7 +3407,7 @@ G.THUOC_CAP_PHEP = [
   'CS_LOI','CS_TANG','CS_TANG_LUAT','CS_NEN','CS_LUAT',
   'KA_LOAI','KA_TY','KA_CHO','KA_LUAT','KA_ANTOAN',
   'BC_LOI','BC_TRONGSO','BC_TRONGSO_LUAT','BC_MUNG','BC_MUNG_LUAT','BC_LUAT',
-  'BC_VAI','BC_VAI_LUAT',
+  'BC_VAI','BC_VAI_LUAT','BC_VONG_LUAT',
   'HP_NGAY',
   'TIN_LOAI','TIN_NGUON','TIN_NGUON_LUAT','TIN_TIEUCHI','TIN_TIEUCHI_LUAT',
   'TIN_THUONG','TIN_CAM','TIN_LUAT',
@@ -22528,6 +22528,71 @@ G.VIEWS = G.VIEWS || {};
     return n && n.ngay ? n.ngay : null;
   };
 
+  /* ═══════════ VÒNG CỦA MỘT TẦNG ═══════════
+     ĐỌC từ chỗ đã viết, không khai lại:
+       HP_TANG.ten  'Chặng bứt phá — 90 ngày, 4 chuỗi 21 ngày'
+       CUHICH.hua   'Mỗi vòng bảy ngày thay đúng một biến.'  (tier T2)
+     Không thấy ở đâu thì tầng ấy không chia vòng — và nói là không có,
+     chứ không tự đặt ra một con số cho đều bảng. */
+  var SO_CHU = { hai: 2, ba: 3, bốn: 4, năm: 5, sáu: 6, bảy: 7, tám: 8, chín: 9, mười: 10,
+    'mười một': 11, 'hai mươi mốt': 21 };
+  function soTuChu(t) {
+    t = String(t || '').toLowerCase();
+    var k = Object.keys(SO_CHU).sort(function (a, b) { return b.length - a.length; });
+    for (var i = 0; i < k.length; i++) if (t.indexOf(k[i]) >= 0) return SO_CHU[k[i]];
+    return null;
+  }
+  G.bcVong = function (tang) {
+    var can = G.bcSoNgay(tang);
+    if (!can) return null;
+    /* 1. Tên chặng: 'N chuỗi M ngày' hoặc 'N chu kỳ M ngày' */
+    var t = (G.HP_TANG || []).filter(function (x) { return x.tang === tang; })[0] ||
+            (G.HP_NGAY || []).filter(function (x) { return x.tang === tang; })[0];
+    var m = /(\d+)\s*(?:chuỗi|chu kỳ)\s*(\d+)\s*ngày/i.exec((t && t.ten) || '');
+    if (m) return vongRa(Number(m[1]), Number(m[2]), can, 'HP_TANG.ten');
+    /* 2. Lời hứa của cú hích cùng tầng: 'Mỗi vòng bảy ngày…' */
+    var ch = (G.CUHICH || []).filter(function (x) { return x.tier === tang; })[0];
+    var hua = (ch && ch.hua) || '';
+    var mv = /mỗi vòng\s+([^,\.]+?)\s*ngày/i.exec(hua);
+    var dai = mv ? (Number(mv[1]) || soTuChu(mv[1])) : null;
+    if (dai && dai > 0 && dai <= can)
+      return vongRa(Math.floor(can / dai), dai, can, 'CUHICH.' + ch.ma + '.hua');
+    return null;
+  };
+  /* Vòng KHÔNG lát kín tầng ở hai chỗ, và cả hai đều nằm sẵn trong kho:
+       T3  '90 ngày, 4 chuỗi 21 ngày'   → 4×21 = 84, dư 6
+       T4  '365 ngày, 4 chu kỳ 90 ngày' → 4×90 = 360, dư 5
+     Kho không nói mấy ngày dư ấy là gì. Nên KHÔNG làm tròn và KHÔNG
+     giãn vòng cho vừa — trả về số dư và để màn nói thẳng. Giãn cho vừa
+     là sửa lời hứa cho khớp cái bàn, mà đáng ra phải ngược lại. */
+  function vongRa(soVong, dai, can, docTu) {
+    var du = can - soVong * dai;
+    return { soVong: soVong, dai: dai, du: du, docTu: docTu,
+      la: soVong + ' vòng, mỗi vòng ' + dai + ' ngày' +
+        (du > 0 ? ' · dư ' + du + ' ngày' : ''),
+      duChuaKhai: du > 0
+        ? 'Kho khai ' + can + ' ngày và ' + soVong + ' vòng ' + dai + ' ngày — cộng lại ' +
+          (soVong * dai) + ', dư ' + du + ' ngày chưa nói là gì. Bàn cờ để ' + du +
+          ' ô ấy ngoài vòng chứ không giãn vòng cho vừa.'
+        : null };
+  }
+
+  /* Biến của một vòng — nhà mình tự ghi, và KHÔNG bắt buộc. Bắt điền mới
+     cho đi tiếp là dựng một cái cổng ở chỗ đáng ra chỉ cần một lời mời. */
+  G.bcBien = function (tang, vong) {
+    var b = (G.S && G.S.bcBien) || {};
+    return (b[tang] || {})[vong] || null;
+  };
+  G.bcGhiBien = function (tang, vong, cu, moi) {
+    if (!String(moi || '').trim()) return false;
+    G.S.bcBien = G.S.bcBien || {};
+    G.S.bcBien[tang] = G.S.bcBien[tang] || {};
+    G.S.bcBien[tang][vong] = { cu: String(cu || '').trim(), moi: String(moi).trim(),
+      ngay: G.bcNgay() };
+    if (G.save) G.save();
+    return true;
+  };
+
   function so() { return (G.S && G.S.banCo) || {}; }
   function soCua(tang) { return so()[tang] || {}; }
 
@@ -22719,16 +22784,67 @@ G.VIEWS = G.VIEWS || {};
   /* ═══════════════════════════════════════════════════════════
      MÀN HÌNH
      ═══════════════════════════════════════════════════════════ */
+  /* Bàn chia theo VÒNG: mỗi vòng một dải riêng, có nhãn và có chỗ ghi
+     biến. Đổ 21 ô liền một mạch thì mắt đọc ra một dải ngày, không đọc
+     ra ba lần thử — mà ba lần thử mới là thứ tầng hai đang dạy. */
+  function veTheoVong(tang, can, s, v) {
+    var o = '', d0 = null;
+    Object.keys(s).sort().forEach(function (n) { if (!d0) d0 = n; });
+    for (var k = 0; k < v.soVong; k++) {
+      var bien = G.bcBien(tang, k + 1);
+      var kho = G.bcVongKho(tang) === k + 1;
+      o += '<div class="bc-vong' + (kho ? ' kho' : '') + '">' +
+        '<div class="bc-vong-d"><b>Vòng ' + (k + 1) + '</b>' +
+        '<span>' + v.dai + ' ngày</span>' +
+        (kho ? '<span class="bc-vong-kho">CHỖ KHÓ NHẤT CỦA TẦNG</span>' : '') + '</div>' +
+        veO(tang, s, d0, k * v.dai, v.dai) +
+        (bien
+          ? '<p class="bc-bien"><b>Biến của vòng này:</b> ' +
+            (bien.cu ? '<s>' + h(bien.cu) + '</s> → ' : '') + h(bien.moi) + '</p>'
+          : '<button class="bc-nutbien" data-bcbien="' + (k + 1) + '">' +
+            'Ghi một biến cho vòng này</button>') +
+        '</div>';
+    }
+    if (v.du > 0) {
+      o += '<div class="bc-vong du"><div class="bc-vong-d"><b>Ngoài vòng</b>' +
+        '<span>' + v.du + ' ngày</span></div>' +
+        veO(tang, s, d0, v.soVong * v.dai, v.du) +
+        '<p class="bc-bien dim">' + h(v.duChuaKhai || '') + '</p></div>';
+    }
+    return o;
+  }
+
+  /* Chỗ khó của tầng — đọc từ HT_TANG.khoNhat, rút số tuần trong câu.
+     'Tuần thứ hai — lúc hào hứng đã hết mà nếp thì chưa thành.' */
+  G.bcVongKho = function (tang) {
+    var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
+    var m = /tuần thứ\s+(\S+)/i.exec((t && t.khoNhat) || '');
+    if (!m) return null;
+    var n = Number(m[1]) || soTuChu(m[1]);
+    return n > 0 ? n : null;
+  };
+  G.bcKhoNhat = function (tang) {
+    var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
+    return (t && t.khoNhat) || null;
+  };
+
   function veBan(tang, can, s) {
     if (!can) return '';
-    /* Bàn dài thì ô nhỏ lại chứ không cuộn: cả cái bàn phải nhìn được
-       trong một mắt, vì nhìn được cả bàn mới là chỗ vui của cờ. */
-    var cot = can <= 7 ? 7 : can <= 21 ? 7 : can <= 90 ? 15 : 28;
-    var o = '<div class="bc-ban" style="--bc-cot:' + cot + '">';
     var d0 = null;
     Object.keys(s).sort().forEach(function (n) { if (!d0) d0 = n; });
+    /* Tầng có vòng thì vẽ theo vòng; tầng không có thì một dải. Không tự
+       đặt ra một số vòng cho đều bảng — tầng một và tầng năm thật sự
+       không khai vòng nào ở kho. */
+    var v = G.bcVong(tang);
+    if (v && v.soVong > 1) return veTheoVong(tang, can, s, v);
+    return veO(tang, s, d0, 0, can);
+  }
+
+  function veO(tang, s, d0, tu, dem) {
+    var cot = dem <= 7 ? 7 : dem <= 21 ? 7 : dem <= 90 ? 15 : 28;
+    var o = '<div class="bc-ban" style="--bc-cot:' + cot + '">';
     var canVai = G.bcVaiNha();
-    for (var i = 0; i < can; i++) {
+    for (var i = tu; i < tu + dem; i++) {
       var ng = d0 ? G.bcNgay(new Date(new Date(d0 + 'T00:00:00').getTime() + i * 86400000)) : null;
       var q = ng ? oChuan(s[ng]) : null;
       if (!q) { o += '<i class="bc-o"></i>'; continue; }
@@ -22786,7 +22902,19 @@ G.VIEWS = G.VIEWS || {};
         '<div class="bc-so"><b>' + d.tong + '</b><span>điểm KPI</span></div>' +
         '<div class="bc-so"><b>' + d.chuoi + '</b><span>ngày liên tiếp</span></div>' +
         '<div class="bc-so"><b>' + d.soBanhDa + '</b><span>/ 10 bánh đà đã chạm</span></div></div>';
+      /* Vòng: nói ngay dưới bàn, và nói ĐỌC TỪ ĐÂU — con số vòng không
+         phải tôi đặt, nó nằm sẵn trong tên chặng hoặc lời hứa cú hích. */
+      var vg = G.bcVong(tang);
+      if (vg) o += '<p class="bc-y"><b>' + h(vg.la) + '</b> · ' +
+        h((G.BC_VONG_LUAT || {}).motBienMotVong || '') +
+        ' <span class="dim">(đọc từ ' + h(vg.docTu) + ')</span></p>';
       o += veBan(tang, d.can, s);
+      /* Chỗ khó BÁO TRƯỚC, không đợi tới lúc nó tới. Câu này nằm ở
+         HT_TANG.khoNhat từ bản 9.21 mà chưa màn nào nói ra đúng lúc. */
+      var kn = G.bcKhoNhat(tang);
+      if (kn) o += '<div class="bc-baotruoc"><b>Chỗ khó nhất của tầng này — nói trước</b>' +
+        '<p>' + h(kn) + '</p>' +
+        '<p class="dim">' + h((G.BC_VONG_LUAT || {}).viBaoTruoc || '') + '</p></div>';
       o += '<p class="bc-y">' + h(loi.viKienTri || '') + '</p>';
     }
 
@@ -22874,6 +23002,19 @@ G.VIEWS = G.VIEWS || {};
   document.addEventListener('click', function (e) {
     var t = e.target.closest && e.target.closest('[data-bctang]');
     if (t) { G.S.bcTang = t.getAttribute('data-bctang'); G.render(); return; }
+    var nb = e.target.closest && e.target.closest('[data-bcbien]');
+    if (nb) {
+      var vg = Number(nb.getAttribute('data-bcbien'));
+      var cu = window.prompt('Câu quen cũ trong nhà (bỏ trống cũng được):', '');
+      if (cu === null) return;
+      var moi = window.prompt('Câu mới nhà mình muốn giữ suốt vòng này:', '');
+      if (moi === null) return;
+      if (!G.bcGhiBien(G.S.bcTang || 'T1', vg, cu, moi)) {
+        if (U.toast) U.toast('Chưa ghi được — câu mới không được để trống.', 'err');
+        return;
+      }
+      G.render(); return;
+    }
     var vv = e.target.closest && e.target.closest('[data-bcvai]');
     if (vv) {
       var ma = vv.getAttribute('data-bcvai');
@@ -24565,7 +24706,7 @@ function save(){
     /* Bàn cờ hành trình. Thiếu dòng này thì mọi quân nhà mình đặt bay
        hết khi tải lại trang — và một bàn cờ xoá được mỗi lần F5 thì
        nhìn nó không còn nghĩa gì. */
-    banCo:G.S.banCo, bcTang:G.S.bcTang, bcVai:G.S.bcVai
+    banCo:G.S.banCo, bcTang:G.S.bcTang, bcVai:G.S.bcVai, bcBien:G.S.bcBien
   })); }catch(e){}
 }
 function load(){
@@ -24575,6 +24716,7 @@ function load(){
     G.S.checks = d.checks || {}; G.S.vision = d.vision || {}; G.S.journal = d.journal || {};
     G.S.banCo = d.banCo || {}; G.S.bcTang = d.bcTang || 'T1';
     G.S.bcVai = d.bcVai || null;
+    G.S.bcBien = d.bcBien || {};
     G.S.test = d.test || {};
     G.S.bando = d.bando || {};
     G.S.daThay = d.daThay || null;
