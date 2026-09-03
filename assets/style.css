@@ -1352,6 +1352,21 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
   background:color-mix(in srgb,var(--ok) 6%,transparent)}
 .bc-doi b{display:block;font-size:14.5px;color:var(--ok)}
 .bc-doi p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:62ch}
+
+/* ═══ NHÀ MÌNH ĐANG KÈM · v9.39 ═══
+   Màn nói LỊCH — thứ tính được — và nói thẳng chỗ KPI là chỗ chưa đo
+   được. Câu "hết ngày không phải là xong tầng" đứng ngay dưới con số
+   ngày, vì đó là chỗ dễ đọc sai nhất trên cả màn. */
+.bc-kem{margin:10px 0 12px;padding:13px 15px;border-radius:14px;
+  border:1px solid var(--gita-vien-2);background:var(--gita-mo-1)}
+.bc-kem>b{display:block;font-size:14.5px;color:var(--gita)}
+.bc-kem p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:62ch}
+.bc-kem p.dim{color:var(--ink-4);font-size:10.5px;line-height:1.7}
+.bc-kem p.canh{color:#B4720F}
+.bc-kem.chua{border-style:dashed;border-color:var(--line);background:transparent}
+.bc-kem.chua>b{color:var(--ink-3)}
+.bc-kem.het{border-color:#B4720F45;background:color-mix(in srgb,#B4720F 6%,transparent)}
+.bc-kem.het>b{color:#B4720F}
 /* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
    một trong hai thì mắt đọc nó thành của riêng dải ấy. */
 .bc-khop{display:flex;align-items:center;gap:8px;margin:-6px 0 10px 6px;

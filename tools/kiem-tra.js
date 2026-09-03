@@ -8028,7 +8028,57 @@ const { chromium } = require(PW);
       r.nhipGiu = G.bcNhipKhongTut('T5').tut === false;
       dat5('T4', 500, 0, 299); G.S.banCo.T5 = {}; dat5('T5', 99, 0, 49);
 
+      /* ── VẾ MỘT: KÈM MỘT NHÀ ──
+         Chủ hệ thống chốt: nhà mình khai tên · tầng · ngày bắt đầu; MÙA
+         ĐẦU dài theo quy định của từng tầng; và nhà được kèm đi đúng chu
+         kỳ tầng, KHÔNG ĐƯỢC VƯỢT khi chưa hoàn thành KPI. Không việc nào
+         đẻ ra một con số mới — mùa đầu và chu kỳ đều ĐỌC từ bảng học phí. */
+      const luiN = n => G.bcNgay(new Date(new Date().getTime() - n * 86400000));
+      delete G.S.bcKem;
+      r.kemChuaKhai = G.bcKemDo() === null;
+      r.kemChanKhaiSai = G.bcDatKem('', 'T1', luiN(3)).ok === false &&
+        G.bcDatKem('Nhà A', 'T9', luiN(3)).ok === false &&
+        G.bcDatKem('Nhà A', 'T1', '01/09/2026').ok === false &&
+        G.bcDatKem('Nhà A', 'T1', G.bcNgay(new Date(Date.now() + 86400000))).ok === false &&
+        G.bcKemDo() === null;
+      /* Mùa đầu tầng một = BẢY ngày, và nó đọc từ bảng học phí chứ không
+         gõ tay: đổi tên chặng ở kho thì mùa đầu đổi theo trong cùng lần
+         chạy. Gõ tay là dựng bản thứ hai của một con số đã có. */
+      G.bcDatKem('Nhà Minh An', 'T1', luiN(3));
+      const dk1 = G.bcKemDo();
+      r.kemMuaDauT1 = dk1.muaDau === 7 && dk1.qua === 4 && dk1.conLai === 3 &&
+        dk1.hetLich === false;
+      const hpT1 = (G.HP_TANG || G.HP_NGAY).filter(x => x.tang === 'T1')[0], luuT1 = hpT1.ten;
+      hpT1.ten = 'Chặng nền — 5 ngày nhận diện';
+      if (G.HP_NGAY) { const z = G.HP_NGAY.filter(x => x.tang === 'T1')[0];
+        z.ngay = 5; z.ten = hpT1.ten; }
+      r.kemMuaDauDocTuKho = G.bcKemDo().muaDau === 5;
+      hpT1.ten = luuT1;
+      if (G.HP_NGAY) { const z = G.HP_NGAY.filter(x => x.tang === 'T1')[0];
+        z.ngay = 7; z.ten = luuT1; }
+      /* ĐI ĐÚNG CHU KỲ TẦNG: chu kỳ cũng đọc từ tên chặng, y như bàn cờ
+         của chính nhà mình. Nhà kia ở tầng ba, ngày thứ 31 → chuỗi 2,
+         ngày thứ 10 của chuỗi ấy. */
+      G.bcDatKem('Nhà B', 'T3', luiN(30));
+      const dk3 = G.bcKemDo();
+      r.kemDungChuKy = dk3.muaDau === 90 && dk3.qua === 31 &&
+        dk3.vong.soVong === 4 && dk3.vong.dai === 21 &&
+        dk3.vongNao === 2 && dk3.ngayTrongVong === 10;
+      /* HẾT NGÀY KHÔNG PHẢI LÀ XONG TẦNG. */
+      G.bcDatKem('Nhà D', 'T1', luiN(9));
+      r.kemHetLich = G.bcKemDo().hetLich === true && G.bcKemDo().conLai === 0;
+      G.bcDatKem('Nhà E', 'T2', luiN(21));
+      r.kemNgoaiVong = G.bcKemDo().ngoaiVong === true;
+      /* KHÔNG SUY KPI TỪ LỊCH. Ngưỡng và câu cổng nằm ở gói NGHỀ; máy gia
+         đình không mở được, và lúc ấy màn nói thiếu gì kèm TÊN KHO chứ
+         không tự đặt ra một ngưỡng cho đủ ô. */
+      const ckem = G.bcKemCong('T3');
+      r.kemKhongSuyKPI = ckem.chuaDo === true && /DOLUONG_KH/.test(ckem.thieu) &&
+        /HP_KICHBAN/.test(ckem.thieu) && ckem.chiSo === undefined &&
+        (G.BC_KEM_LUAT || {}).khongSuyKPITuLich === true;
+
       /* ── BÀN DÀI KHÔNG KHAI VÒNG THÌ CHIA THEO THÁNG LỊCH ── */
+      G.bcDatKem('Nhà Minh An', 'T1', luiN(9));
       G.S.bcTang = 'T5';
       const man5 = G.VIEWS['ban-co']();
       r.chiaThang = (man5.match(/bc-vong thang/g) || []).length >= 12;
@@ -8037,13 +8087,25 @@ const { chromium } = require(PW);
       /* Ô CHƯA TỚI phải khác ô đã qua mà để trống: 365 − 100 = 265 ô sau. */
       r.oChuaToi = (man5.match(/class="bc-o sau"/g) || []).length === 265;
       r.noiKhongKhaiVong = man5.indexOf('Kho không khai vòng nào cho tầng này') >= 0;
+      /* Vế MỘT đứng trước vế HAI, đúng thứ tự trong câu thử thách. Và màn
+         KHÔNG được in ra con số ngưỡng nào — nó không có con số ấy. */
+      r.kemTrenMan = /class="bc-kem/.test(man5) && man5.indexOf('Nhà Minh An') >= 0 &&
+        man5.indexOf(G.U.h((G.BC_KEM_LUAT || {}).hetNgayKhongPhaiXong)) >= 0 &&
+        /* Màn gia đình KHÔNG được in ra ngưỡng của gói nghề. Bản đầu tôi
+           viết phép này là "không có chuỗi 50%" — sai, vì nhịp của chính
+           nhà mình trong bộ đo đúng bằng 50%, và phép kiểm đỏ ở một chỗ
+           mã không hỏng. Cấm đúng CÂU NGƯỠNG, không cấm một con số. */
+        man5.indexOf('không cho lên tầng') < 0 &&
+        man5.indexOf('class="bc-kem') < man5.indexOf('class="bc-nhip');
       /* Vế CHƯA ĐO ĐƯỢC in thẳng lên màn của đúng tầng ấy, không in lung tung. */
-      r.choChuHienT5 = man5.indexOf(G.U.h((G.BC_CHOCHU || [])[0].hoi)) >= 0;
+      r.choChuHienT5 = man5.indexOf(G.U.h((G.BC_CHOCHU || [])[0].hoi)) >= 0 &&
+        /KPI của nhà đang được kèm/.test((G.BC_CHOCHU || [])[0].o || '');
       G.S.bcTang = 'T3';
       r.choChuKhongHienT3 = G.VIEWS['ban-co']().indexOf(G.U.h((G.BC_CHOCHU || [])[0].hoi)) < 0;
       /* Bàn NGẮN không khai vòng thì vẫn một dải, không bị chia tháng. */
       G.S.bcTang = 'T1'; G.S.banCo.T1 = {}; dat5('T1', 5, 0, 4);
       r.banNganKhongChiaThang = G.VIEWS['ban-co']().indexOf('bc-vong thang') < 0;
+      G.bcXoaKem();
 
 
       /* ══════ TẦNG MỘT: BÀN CỜ BẢO LÀM, MÀ TẦNG BẢO ĐỪNG ══════
@@ -8155,6 +8217,11 @@ const { chromium } = require(PW);
           ra.manDoiGi && ra.manT3SachSe,
         'TẦNG MỘT: BÀN CỜ BẢO LÀM, MÀ TẦNG BẢO ĐỪNG. Cú hích tầng một hứa nguyên văn "Cả nhà cùng ghi nhật ký bảy tối. KHÔNG SỬA GÌ CẢ. Cuối tuần đọc lại và chỉ ra một mô thức lặp" — còn bàn cờ thì bày ra mười việc kèm ĐIỂM SỐ và mời làm ngay tối nay. Một nhà tầng một đọc màn ấy sẽ bắt đầu đổi giờ học, đặt luật mới, sửa chỗ này chỗ kia; và bảy ngày ghi được sẽ là đường nền ĐÃ BỊ BÓP, không phải đường nền thật — mà cả tầng một chỉ có đúng một việc là lấy cho được đường nền thật ấy. Không luật nào của bàn cờ bị vi phạm ở đây, nhưng bàn cờ đang mời làm đúng cái mà tầng đang cấm, và nó mời bằng điểm số — thứ khó cưỡng hơn một lời khuyên nhiều. Nên câu cấm ĐỨNG TRÊN bàn và TRÊN mười gợi ý: đứng dưới thì nhà mình đã đọc xong danh sách việc rồi mới gặp câu bảo đừng làm. KHOANH MỘT NẾP CHỈ MỞ Ở CUỐI CHẶNG — đây là chỗ DUY NHẤT trong bàn cờ có cổng, và nó có cổng vì kho khai chữ "cuối tuần" chứ không phải vì thấy nên có: khoanh nếp ở tối thứ ba là rút kết luận từ ba tối, đúng cái sai mà cả chặng dựng lên để tránh. Đòi đủ HAI ô — nếp, và nếp nói lại BẰNG LỜI NHÀ MÌNH — vì nhắc đúng thuật ngữ của Học viện thì chưa phải là hiểu. Cả hai đọc từ CÂU của kho chứ không gắn cứng vào mã tầng, nên tầng hai tới tầng năm không bị nói lây',
         'T1 cấm sửa (đọc từ CUHICH.CH-01.hua · vì sao từ BD1-03) · 3/7 tối thì cổng đóng · đủ 7 thì mở và đòi đủ hai ô · T2–T5 không có cả hai');
+      bao(ra.kemChuaKhai && ra.kemChanKhaiSai && ra.kemMuaDauT1 && ra.kemMuaDauDocTuKho &&
+          ra.kemDungChuKy && ra.kemHetLich && ra.kemNgoaiVong && ra.kemKhongSuyKPI &&
+          ra.kemTrenMan,
+        'VẾ MỘT CỦA TẦNG NĂM — KÈM MỘT NHÀ — VÀ KHÔNG MỘT CON SỐ MỚI NÀO ĐƯỢC KHAI THÊM. Nhà mình khai ba thứ: tên nhà đang kèm, tầng của họ, ngày họ bắt đầu. Từ ba thứ ấy máy tính hết phần LỊCH: "mùa đầu" dài theo QUY ĐỊNH CỦA TỪNG TẦNG — nhập tầng một là bảy ngày — và con số ấy ĐỌC từ bảng học phí, y như bàn cờ vẫn đọc số ngày; đổi tên chặng ở kho thì mùa đầu đổi theo trong cùng lần chạy. Chu kỳ của tầng nhà kia cũng đọc từ tên chặng: tầng ba ngày thứ 31 là chuỗi hai, ngày thứ mười của chuỗi ấy. HẾT NGÀY KHÔNG PHẢI LÀ XONG TẦNG — nhà được kèm không được vượt sang tầng sau khi chưa hoàn thành KPI, vì một nhà bị đẩy lên khi chưa đủ nền sẽ hỏng ở TẦNG SAU chứ không hỏng ở đây, và lúc ấy chữa đắt hơn nhiều. Ngưỡng KPI và câu cổng nghiệm thu ĐÃ KHAI SẴN ở DOLUONG_KH.M4 và HP_KICHBAN, cả hai ở gói NGHỀ; bàn cờ TRỎ vào đó chứ không chép lại, vì chép lại là dựng bản thứ hai của một luật và hai bản thì sẽ có ngày lệch nhau. Máy gia đình biết LỊCH mà không biết KPI của nhà kia, nên nó nói thẳng chỗ ấy chưa đo được kèm tên kho, và TUYỆT ĐỐI không suy một con số KPI ra từ cái lịch — suy như thế đúng là cái mà luật vừa chốt đã cấm',
+        'khai tên · tầng · ngày → mùa đầu T1 = 7 ngày (đọc từ HP) · T3 ngày 31 = chuỗi 2/4 ngày 10 · hết ngày thì báo hết ngày, không báo xong tầng · không màn nào in ra một ngưỡng KPI');
       bao(ra.nhipChiaNgayDaQua && ra.nhipTut && ra.nhipDocTuCau && ra.nhipChuaDo &&
           ra.nhipGiu && ra.chiaThang && ra.thangDuOMotLan && ra.oChuaToi &&
           ra.noiKhongKhaiVong && ra.choChuHienT5 && ra.choChuKhongHienT3 &&

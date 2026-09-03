@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.38',
+  version: '9.39',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3407,7 +3407,7 @@ G.THUOC_CAP_PHEP = [
   'CS_LOI','CS_TANG','CS_TANG_LUAT','CS_NEN','CS_LUAT',
   'KA_LOAI','KA_TY','KA_CHO','KA_LUAT','KA_ANTOAN',
   'BC_LOI','BC_TRONGSO','BC_TRONGSO_LUAT','BC_MUNG','BC_MUNG_LUAT','BC_LUAT',
-  'BC_VAI','BC_VAI_LUAT','BC_VONG_LUAT','BC_NHIP_LUAT','BC_NEP_LUAT','BC_CHOCHU',
+  'BC_VAI','BC_VAI_LUAT','BC_VONG_LUAT','BC_NHIP_LUAT','BC_NEP_LUAT','BC_KEM_LUAT','BC_CHOCHU',
   'HP_NGAY',
   'TIN_LOAI','TIN_NGUON','TIN_NGUON_LUAT','TIN_TIEUCHI','TIN_TIEUCHI_LUAT',
   'TIN_THUONG','TIN_CAM','TIN_LUAT',
@@ -22841,6 +22841,40 @@ G.VIEWS = G.VIEWS || {};
       '<p class="dim">' + h((G.BC_NHIP_LUAT || {}).vi || '') + '</p></div>';
   }
 
+  /* Nhà mình đang kèm. Màn nói LỊCH — thứ tính được — và nói thẳng chỗ
+     KPI là chỗ chưa đo được. Suy KPI từ lịch đúng là cái luật vừa cấm. */
+  function veKem() {
+    var L = G.BC_KEM_LUAT || {};
+    var d = G.bcKemDo();
+    if (!d) return '<div class="bc-kem chua"><b>Nhà mình đang kèm — chưa khai</b>' +
+      '<p>' + h(L.cot || '') + '</p>' +
+      '<button class="bc-nutbien" data-bckem="1">Khai nhà mình đang kèm</button></div>';
+    if (d.chuaDo) return '<div class="bc-kem chua"><b>' + h(d.ten) + ' — chưa đo được</b>' +
+      '<p>' + h(d.thieu) + '</p>' +
+      '<button class="bc-nutbien" data-bckem="1">Khai lại</button></div>';
+    var o = '<div class="bc-kem' + (d.hetLich ? ' het' : '') + '">' +
+      '<b>' + h(d.ten) + ' · tầng ' + d.tang.slice(1) + '</b>' +
+      '<p>Mùa đầu của nhà kia dài <b>' + d.muaDau + ' ngày</b> — theo đúng quy định của tầng ' +
+      d.tang.slice(1) + '. Bắt đầu ' + h(d.batDau) + ', đã qua <b>' + d.qua + '</b> ngày' +
+      (d.hetLich ? '' : ', còn <b>' + d.conLai + '</b> ngày') + '.</p>';
+    if (d.vong)
+      o += '<p>Đang ở ' + h(d.vong.ten) + ' <b>' +
+        (d.ngoaiVong ? 'ngoài ' + h(d.vong.ten) : d.vongNao + '/' + d.vong.soVong) + '</b>' +
+        (d.ngayTrongVong ? ' · ngày thứ ' + d.ngayTrongVong + '/' + d.vong.dai : '') + '.</p>';
+    /* HẾT NGÀY KHÔNG PHẢI LÀ XONG TẦNG. Đây là chỗ dễ đọc sai nhất trên
+       cả màn, nên nó phải đứng ngay dưới con số ngày. */
+    if (d.hetLich)
+      o += '<p class="canh"><b>' + h(L.hetNgayKhongPhaiXong || '') + '</b></p>';
+    var c = d.cong;
+    o += c.chuaDo
+      ? '<p class="dim"><b>KPI của nhà kia — chưa đo được ở máy này.</b> ' + h(c.thieu) + '</p>'
+      : '<p class="dim"><b>Cổng lên tầng</b> · ' +
+        (c.chiSo ? h(c.chiSo.ma + ' ' + c.chiSo.ten + ' — ' + c.chiSo.nguong) : '') +
+        (c.cauKhong ? ' · “' + h(c.cauKhong) + '”' : '') +
+        ' (đọc từ ' + h(c.docTu) + ')</p>';
+    return o + '<button class="bc-nutbien" data-bckem="1">Sửa</button></div>';
+  }
+
   function veNep(tang, nd) {
     if (nd.daGhi)
       return '<div class="bc-nep xong"><b>Nếp nhà mình khoanh được</b>' +
@@ -23123,6 +23157,84 @@ G.VIEWS = G.VIEWS || {};
     return { ok: true };
   };
 
+  /* ═══════════ VẾ MỘT CỦA TẦNG NĂM: KÈM MỘT NHÀ ═══════════
+
+     Chủ hệ thống chốt ba việc, và không việc nào đẻ ra một con số mới:
+
+       · nhà nào đang được kèm, bắt đầu hôm nào  → nhà mình khai
+       · 'mùa đầu' dài theo QUY ĐỊNH CỦA TỪNG TẦNG (nhập tầng một là bảy
+         ngày)                                    → ĐỌC từ HP_NGAY
+       · nhà được kèm đi đúng chu kỳ tầng, KHÔNG ĐƯỢC VƯỢT khi chưa
+         hoàn thành KPI                           → cổng đã khai sẵn
+
+     MÁY NÀY BIẾT LỊCH, KHÔNG BIẾT KPI CỦA NHÀ KIA
+
+     Số ngày và chu kỳ của tầng thì tính được hết ngay trên máy này.
+     Nhưng KPI của nhà kia nằm ở máy chủ và ở gói nghề, không ở đây —
+     nên màn nói THẲNG là chưa đo được, và tuyệt đối không suy ra một
+     con số KPI từ cái lịch. Hết ngày không phải là xong tầng; lấy lịch
+     thay cho KPI đúng là cái mà luật của chủ hệ thống vừa cấm.
+
+     Máy nghề mở được DOLUONG_KH và HP_KICHBAN thì màn dẫn NGUYÊN VĂN
+     ngưỡng và câu cổng ở đó ra. Chép lại hai câu ấy vào tệp này là dựng
+     bản thứ hai của một luật — và hai bản thì sẽ có ngày lệch nhau. */
+  G.bcKem = function () { return (G.S && G.S.bcKem) || null; };
+
+  G.bcDatKem = function (ten, tang, batDau) {
+    if (!String(ten || '').trim()) return { ok: false, y: 'Chưa có tên nhà mình đang kèm.' };
+    if (MA_TANG.indexOf(tang) < 0)
+      return { ok: false, y: 'Tầng phải là một trong: ' + MA_TANG.join(' · ') };
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(String(batDau || '')))
+      return { ok: false, y: 'Ngày bắt đầu ghi theo dạng NĂM-THÁNG-NGÀY, ví dụ 2026-09-01.' };
+    if (batDau > G.bcNgay())
+      return { ok: false, y: 'Ngày bắt đầu nằm ở tương lai. Nhà kia chưa bắt đầu thì chưa có gì để đo.' };
+    G.S.bcKem = { ten: String(ten).trim(), tang: tang, batDau: batDau };
+    if (G.save) G.save();
+    return { ok: true };
+  };
+  G.bcXoaKem = function () { if (G.S) delete G.S.bcKem; if (G.save) G.save(); return true; };
+
+  /* Cổng lên tầng — ĐỌC từ chỗ đã khai, không chép lại.
+       DOLUONG_KH.chiSo  chỉ số nào có chữ 'không cho lên tầng' trong ngưỡng
+       HP_KICHBAN.khong  câu 'không mở … khi … chưa nghiệm thu'
+     Cả hai ở gói NGHỀ. Máy gia đình không mở được, và lúc ấy màn nói
+     thiếu gì kèm tên kho — không tự đặt ra một ngưỡng cho đủ ô. */
+  G.bcKemCong = function (tang) {
+    var m4 = (((G.DOLUONG_KH || {}).chiSo) || []).filter(function (x) {
+      return /không cho lên tầng/i.test(x.nguong || '');
+    })[0];
+    var kb = (G.HP_KICHBAN || []).filter(function (x) { return x.tang === tang; })[0];
+    var cau = kb ? (kb.khong || []).filter(function (c) {
+      return /chưa nghiệm thu/i.test(c); })[0] : null;
+    if (!m4 && !cau) return { chuaDo: true,
+      thieu: 'Ngưỡng KPI lên tầng và câu cổng nghiệm thu nằm ở gói NGHỀ ' +
+        '(DOLUONG_KH · HP_KICHBAN). Máy này chưa mở được, nên màn không nói một con số nào.' };
+    return { chuaDo: false,
+      chiSo: m4 ? { ma: m4.ma, ten: m4.ten, cach: m4.cach, nguong: m4.nguong } : null,
+      cauKhong: cau || null,
+      docTu: [m4 ? 'DOLUONG_KH.' + m4.ma : null, cau ? 'HP_KICHBAN.' + kb.ma + '.khong' : null]
+        .filter(Boolean).join(' · ') };
+  };
+
+  G.bcKemDo = function () {
+    var k = G.bcKem(); if (!k) return null;
+    var can = G.bcSoNgay(k.tang);
+    if (!can) return { ten: k.ten, tang: k.tang, chuaDo: true,
+      thieu: 'Số ngày của tầng ' + k.tang.slice(1) + ' đọc từ bảng học phí, mà máy này ' +
+        'chưa mở được bảng ấy.' };
+    var qua = Math.floor((new Date(G.bcNgay() + 'T00:00:00').getTime() -
+      new Date(k.batDau + 'T00:00:00').getTime()) / 86400000) + 1;
+    var v = G.bcVong(k.tang), vongNao = null, ngayTrongVong = null, ngoaiVong = false;
+    if (v) {
+      if (qua > v.soVong * v.dai) ngoaiVong = true;
+      else { vongNao = Math.floor((qua - 1) / v.dai) + 1; ngayTrongVong = qua - (vongNao - 1) * v.dai; }
+    }
+    return { chuaDo: false, ten: k.ten, tang: k.tang, batDau: k.batDau,
+      muaDau: can, qua: qua, conLai: Math.max(0, can - qua), hetLich: qua >= can,
+      vong: v, vongNao: vongNao, ngayTrongVong: ngayTrongVong, ngoaiVong: ngoaiVong,
+      cong: G.bcKemCong(k.tang) };
+  };
+
   G.bcDoiGiKhiXong = function (tang) {
     var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
     return (t && t.doiGiKhiXong) || null;
@@ -23289,6 +23401,8 @@ G.VIEWS = G.VIEWS || {};
         (ks.viecDocTu ? ' · ' + h(ks.viecDocTu) : '') + ')</p></div>';
       /* Tầng nào khai điều kiện 'nhịp nhà mình không tụt' thì ĐO nó ngay
          ở đây. Điều kiện in ra mà không ai đo thì nó chỉ là một câu văn. */
+      /* Vế MỘT của thử thách đứng trước vế HAI, đúng thứ tự trong câu. */
+      if (/kèm một nhà/i.test(tt || '')) o += veKem();
       var nk = G.bcNhipKhongTut(tang);
       if (nk) o += veNhip(nk);
       if (!G.bcVong(tang))
@@ -23442,6 +23556,20 @@ G.VIEWS = G.VIEWS || {};
         if (U.toast) U.toast('Chưa ghi được — câu mới không được để trống.', 'err');
         return;
       }
+      G.render(); return;
+    }
+    var km = e.target.closest && e.target.closest('[data-bckem]');
+    if (km) {
+      var cu = G.bcKem() || {};
+      var tenK = window.prompt('Tên nhà mình đang kèm:', cu.ten || '');
+      if (tenK === null) return;
+      var tgK = window.prompt('Nhà ấy đang ở tầng nào (T1 · T2 · T3 · T4 · T5):', cu.tang || 'T1');
+      if (tgK === null) return;
+      var bdK = window.prompt('Nhà ấy bắt đầu hôm nào (NĂM-THÁNG-NGÀY, ví dụ 2026-09-01):',
+        cu.batDau || G.bcNgay());
+      if (bdK === null) return;
+      var kk = G.bcDatKem(tenK, String(tgK || '').trim().toUpperCase(), String(bdK || '').trim());
+      if (!kk.ok) { if (U.toast) U.toast(kk.y, 'err'); return; }
       G.render(); return;
     }
     var np = e.target.closest && e.target.closest('[data-bcnep]');
