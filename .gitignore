@@ -41,3 +41,8 @@ giay-phep/
 # mở đúng cái cửa đã khoá ở chỗ khác.
 # Dựng lại: python3 tools/doc-ban-ve.py <đường-dẫn PDF>
 tools/ban-ve.json
+
+# Ảnh chụp màn làm việc — chúng mang tên nhà và cả hàng đợi công việc
+# nội bộ. Cùng lý do với kho-goc/: nội dung của Học viện thì không để
+# dạng đọc được bằng mắt trong kho mã. Chụp lại: xem docs/CACH_LAM.md
+man-*.png

@@ -135,6 +135,11 @@ G.THUOC_CAP_PHEP = [
   'BV_DO','BV_LOC','BV_LOC_LUAT','BV_RAO','BV_TRIGGER',
   'BV_MODULE','BV_MODULE_NOI','BV_MODULE_LUAT','BV_BANG','BV_VAI',
   'BV_VAI_LUAT','BV_BANGIAO','BV_LECH','BV_CHOCHU','BV_LUAT',
+  /* Bàn làm việc của Coach (BLV_*): năm ngăn vét cạn, gói tài nguyên
+     tám ô, bảy loại nhắc việc có hạn giờ, bốn lượt rà soát. Ở gói
+     NGHỀ — nhà mình đọc hàng đợi thì thấy mình là một dòng trong đó. */
+  'BLV_LOI','BLV_NGAN','BLV_NGAN_LUAT','BLV_GOI','BLV_GOI_LUAT',
+  'BLV_NHAC','BLV_NHAC_LUAT','BLV_RASOAT','BLV_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
