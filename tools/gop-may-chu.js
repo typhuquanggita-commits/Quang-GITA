@@ -25,6 +25,8 @@ const PHAN = [
   ['GITA_ChungCu.gs',  'CHỨNG CỨ — ký và đóng dấu giờ máy chủ cho hồ sơ hoa hồng kèm'],
   ['GITA_SoCongDong.gs','SỔ CỘNG ĐỒNG — bốn sổ đếm của bảng tin và hộp thư chuyện'],
   ['GITA_XemKhach.gs',  'QUYỀN XEM KHÁCH — trần vai theo tầng, giấy phép Super Admin, sổ lượt xem'],
+  ['GITA_TinhHuongKhach.gs', 'TÌNH HUỐNG CHO GIA ĐÌNH — nạp theo phiên, cắt theo tầng; và bảng KPI cho Chuyên gia đánh giá'],
+  ['GITA_TinhHuongKhach_DuLieu.gs', 'BẢN CHIẾU TÌNH HUỐNG — máy sinh, dựng lại bằng tools/xuat-tinh-huong-khach.js'],
   ['GITA_DongBo.gs',   'ĐỒNG BỘ — hồ sơ và cài đặt giữa bản web và bản cài trên máy'],
   ['GITA_XuatSheet.gs','XUẤT SHEET — đẩy bảng tính về thư mục Drive của Học viện'],
   ['GITA_BanWeb.gs',   'BẢN WEB — doGet: phục vụ trang, trả gói kho, báo tình trạng']

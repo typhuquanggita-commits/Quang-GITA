@@ -9058,11 +9058,19 @@ const { chromium } = require(PW);
          chạy cho khách không. Bản trước hỏi "sổ chờ có đúng một dòng" —
          nó canh một trạng thái TẠM, nên đỏ đúng hôm trạng thái ấy được
          giải quyết. Cùng lớp lỗi với giaConNull ở mục 56. */
-      r.khaiThangChuaChay = (G.KB_LUAT || {}).khachChuaChayDuoc === true &&
-        (G.KB_LUAT.chayChoAi || []).indexOf('R13') < 0 &&
+      /* Bản 9.53 đảo lại: chuỗi NAY CHẠY cho gia đình, qua bản chiếu máy
+         chủ. Phép đo cũ đòi khachChuaChayDuoc === true — nó canh một
+         trạng thái TẠM nên đỏ đúng hôm trạng thái ấy được xử lý triệt
+         để. Cùng lớp lỗi với giaConNull ở mục 56, lần thứ tư trong kho.
+         Câu hỏi đúng: luật cũ có còn nguyên không, và luật mới có khai
+         rõ hai điều kiện của nó không. */
+      r.khaiThangChuaChay = (G.KB_LUAT || {}).khachChayQuaMayChu === true &&
+        (G.KB_LUAT || {}).khongGhiXuongDia === true &&
+        (G.KB_LUAT.chayChoAi || []).indexOf('R13') >= 0 &&
         (G.KB_LUAT.chayChoAi || []).indexOf('R11') >= 0 &&
+        /vẫn là tài sản nghề/i.test((G.KB_LUAT || {}).viVanLaTaiSanNghe || '') &&
         (G.KB_CHOCHU || []).length === 0 &&
-        (G.KB_DA_CHOT || []).some(x => x.ma === 'KB-CC-01');
+        (G.KB_DA_CHOT || []).some(x => x.ma === 'KB-CC-01' && /ĐƯỜNG BA/.test(x.chot));
       return r;
     });
 
@@ -9090,6 +9098,71 @@ const { chromium } = require(PW);
     });
     ra.khachKhongCoTinhHuong = kh.soTH === 0;
     ra.khachBoKeyRong = kh.soKey === 0;
+
+    /* ── ĐƯỜNG BA: BẢN CHIẾU QUA MÁY CHỦ (9.53) ──
+       Gia đình KHÔNG có tình huống từ gói — đó là luật cũ, còn nguyên ở
+       hai phép đo trên. Nhưng nay họ nhận được một BẢN CHIẾU theo phiên.
+       Giả lập máy chủ bằng chính tệp dữ liệu công cụ sinh ra, cắt theo
+       tầng y như GITA_TinhHuongKhach.gs làm. */
+    {
+      const duFile = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'server', 'GITA_TinhHuongKhach_DuLieu.gs'), 'utf8');
+      const m = /GITA_TH_KHACH = ([\s\S]*);\s*$/.exec(duFile);
+      const du = m ? m[1] : '{}';
+      const bc = await p.evaluate((duJson) => {
+        const G = window.G, TH = JSON.parse(duJson), o = {};
+        const tang = Number(G.S.acc.tang);
+        let ds = []; for (let t = 1; t <= tang; t++) ds = ds.concat(TH['T' + t] || []);
+        G.tinGoiMayChu = function (fn) {
+          return Promise.resolve(fn === 'napTinhHuongKhach'
+            ? { ok: true, tang: tang, so: ds.length, tinhHuong: ds } : { ok: false });
+        };
+        return G.thKhachNap().then(function () {
+          o.soSauNap = (G.TINHHUONG || []).length;
+          o.soKey = G.kbBoKey().length;
+          o.quaMayChu = G.thKhachDangCo().quaMayChu === true;
+          /* Cắt Ở MÁY CHỦ: không bản ghi nào của tầng trên lọt xuống. */
+          o.khongCoTangTren = (G.TINHHUONG || [])
+            .every(x => Number(String(x.tang).slice(1)) <= tang);
+          /* Trường nghề đã cắt — `tt` là thử thách của Tư vấn giao. */
+          o.khongCoTruongNghe = (G.TINHHUONG || []).every(x => x.tt === undefined);
+          /* Chuỗi năm vòng CHẠY, và hẹp dần y như trên máy nghề. */
+          const cau = 'Con không tự giác, tối nào cũng phải nhắc ba lần mới ngồi vào bàn';
+          const v1 = G.kbChuoi(cau, []), v2 = G.kbChuoi(cau, ['Buổi tối, lúc ngồi vào bàn']);
+          o.chuoiChay = !!(v1 && v1.khoanhDuoc && v1.khuc);
+          o.hepDan = !!(v1 && v2 && v2.soTrong < v1.soTrong);
+          /* KHÔNG ghi xuống đĩa — đây là cả điểm của cách này. Ghi xuống
+             thì gỡ quyền hôm nay không xoá được bản của hôm qua. */
+          G.save();
+          o.khongGhiDia = (localStorage.getItem('gita365.v7') || '').indexOf('TINHHUONG') < 0 &&
+            G.thKhachKhongLuu === true;
+          return o;
+        });
+      }, du);
+      ra.bcNapDuoc = bc.soSauNap > 0 && bc.soKey === bc.soSauNap && bc.quaMayChu;
+      ra.bcCatOMayChu = bc.khongCoTangTren && bc.khongCoTruongNghe;
+      ra.bcChuoiChay = bc.chuoiChay && bc.hepDan;
+      ra.bcKhongGhiDia = bc.khongGhiDia;
+      /* Bản chiếu phải ĐÚNG 30% mỗi tầng và không mang trường nghề nào —
+         hỏi thẳng tệp máy chủ, vì đó là thứ thật sự rời máy chủ. */
+      const TH = JSON.parse(du);
+      const COT_NGHE = ['tt', 'ttGon', 'moGon', 'chotGon', 'dichGon'];
+      ra.bcDungTran = [1,2,3,4,5].every(t => (TH['T'+t]||[]).length === 15);
+      ra.bcKhongTruongNghe = [1,2,3,4,5].every(t =>
+        (TH['T'+t]||[]).every(x => COT_NGHE.every(c => x[c] === undefined)));
+      /* Và máy chủ có cửa KPI cho Chuyên gia đánh giá — bản 9.51 cấp
+         quyền mà không mở cửa. */
+      const sv = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'server', 'GITA_TinhHuongKhach.gs'), 'utf8');
+      ra.mayChuCoCuaKpi = /function gitaXemKpiKhach_/.test(sv) &&
+        /gitaXkMucCuaVai_\(hoSo\.role\)\.indexOf\('kpi'\) < 0/.test(sv) &&
+        /audit_\(hoSo\.phien, 'XEMKPI'/.test(sv);
+      /* Cửa nạp đọc TẦNG từ hồ sơ trong phiên, KHÔNG từ thân yêu cầu —
+         nhận từ thân thì gõ số 5 là mở cả năm tầng. */
+      ra.mayChuKhongNhanTangTuThan = /var tang = Number\(hoSo\.tier \|\| 0\)/.test(sv) &&
+        !/y\.tang/.test(sv);
+      ra.mayChuGhiSoNap = /audit_\(hoSo\.phien, 'TINHHUONG_KHACH_NAP'/.test(sv);
+    }
     ra.khoNhaCoMat = kh.chuaCo.length === 0;
     ra.manNoiDungMauSo = kh.manDung;
 
@@ -9254,7 +9327,10 @@ const { chromium } = require(PW);
       'khucTuKho', 'khucChuKhongChep', 'vongLap', 'khongThuVeRong', 'moiCoGia',
       'giaTuKho', 'chuaCoGiaThiNoi', 'khaiThangChuaChay',
       'khachKhongCoTinhHuong', 'khachBoKeyRong',
-      'khoNhaCoMat', 'manNoiDungMauSo'].filter(k => !ra[k]);
+      'khoNhaCoMat', 'manNoiDungMauSo',
+      'bcNapDuoc', 'bcCatOMayChu', 'bcChuoiChay', 'bcKhongGhiDia', 'bcDungTran',
+      'bcKhongTruongNghe', 'mayChuCoCuaKpi', 'mayChuKhongNhanTangTuThan',
+      'mayChuGhiSoNap'].filter(k => !ra[k]);
     bao(!doKB.length,
       'CHUỖI KỊCH BẢN TRẢ LỜI PHỤ HUYNH — NĂM VÒNG HẸP DẦN, ĐỌC THẲNG TỪ KHO. VÀ HÔM NAY NÓ CHẠY CHO TƯ VẤN, CHƯA CHẠY CHO KHÁCH. Kho TINHHUONG đã có sẵn đúng chuỗi từ lâu: 250 tình huống, mỗi cái đủ năm khúc — th biểu hiện · mo bối cảnh · pt phân tích · chot chốt · gp giải pháp · kpi đo — và có khai tầng. Nên năm vòng KHÔNG viết lại nội dung nào: mỗi vòng chỉ là một CÂU HỎI mở khúc tiếp theo, còn khúc ấy đọc thẳng từ trường kho khai; đổi một chữ trong kho thì lời trả lời đổi theo trong cùng lần chạy. VÒNG LẶP PHẢI HẸP DẦN, và đây là chỗ khó nhất: mỗi câu trả lời áp LẦN LƯỢT lên cái rổ câu trước để lại. Bản đầu chỉ giao với câu gần nhất nên rổ phình lại ở vòng ba — 44 rồi 27 rồi 36 — mà hẹp rồi rộng ra thì không phải vòng lặp, chỉ là ba phép lọc rời nhau; nay 44 rồi 26 rồi 20 và chốt rơi đúng vào chuyện nhà ấy đang gặp. Câu trả lời ngoài dự kiến thì BỎ QUA câu ấy chứ không thu rổ về rỗng — mất hết là phạt người trả lời thật thà. Vòng năm quay lại vòng một với một con số thật thay vì một câu kể, nên chuỗi không có điểm kết. CHỖ PHẢI NÓI THẲNG: chuỗi chưa chạy trên máy khách hàng, vì TINHHUONG là TÀI SẢN NGHỀ và mục 40 chặn mọi đường đưa nó vào gói tầng của khách. Tôi đã thử đưa vào và bộ kiểm bắt ngay trong một lần chạy — nó còn bắt thêm rằng làm thế thì máy nghề nhận 325 tình huống thay vì 250, vì cùng một kho về từ hai gói. Trớ trêu là src/kho-khach.js ĐÃ dựng sẵn bảng thứ hạng và trần 30% cho đúng loại "Tình huống", nghĩa là ý định sản phẩm từng là cho khách đọc 30% — nhưng kho không xuống máy nên cái trần ấy tính trên một kho không tồn tại, và lời hứa 30% cho kho lớn nhất của hệ trả về con số không, im lặng, từ bản 9.8. Đó là một quyết định của chủ hệ về việc cái gì là tài sản nghề, không phải một chỗ hỏng để vá — nên nó nằm ở KB_CHOCHU · KB-CC-01 với ba đường chọn, và phép đo này canh để cái sổ ấy không bị lặng lẽ bỏ qua',
       doKB.length ? 'phép đo hỏng: ' + doKB.join(' · ')

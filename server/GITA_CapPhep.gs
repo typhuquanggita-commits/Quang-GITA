@@ -206,7 +206,12 @@ function doPost(e) {
                 /* Bốn việc của quyền xem hồ sơ khách — xem GITA_XemKhach.gs.
                    Phải có phiên vì cả bốn đều đọc VAI từ phiên: nhận vai
                    từ thân yêu cầu thì ai gõ 'R01' cũng thành Super Admin. */
-                'capQuyenXem', 'thuHoiQuyenXem', 'soiQuyenXem', 'xemKhachCao'];
+                'capQuyenXem', 'thuHoiQuyenXem', 'soiQuyenXem', 'xemKhachCao',
+                /* Hai cửa của bản 9.53 — xem GITA_TinhHuongKhach.gs.
+                   napTinhHuongKhach đọc TẦNG từ hồ sơ trong phiên, không
+                   nhận từ thân yêu cầu: nhận từ thân thì gõ số 5 là mở cả
+                   năm tầng. xemKpiKhach qua đúng cổng mục 'kpi'. */
+                'napTinhHuongKhach', 'xemKpiKhach'];
     if (VIEC.indexOf(y.fn) < 0) return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
@@ -232,6 +237,8 @@ function doPost(e) {
     if (y.fn === 'thuHoiQuyenXem') return ra(gitaThuHoiQuyenXem_(y, hoSo));
     if (y.fn === 'soiQuyenXem')    return ra(gitaSoiQuyenXem_(y, hoSo));
     if (y.fn === 'xemKhachCao')    return ra(gitaXemKhachCao_(y, hoSo));
+    if (y.fn === 'napTinhHuongKhach') return ra(gitaNapTinhHuongKhach_(y, hoSo));
+    if (y.fn === 'xemKpiKhach')       return ra(gitaXemKpiKhach_(y, hoSo));
 
     // 2. Mật khẩu tạm chưa đổi thì không mở kho
     if (hoSo.phaiDoiMk) {

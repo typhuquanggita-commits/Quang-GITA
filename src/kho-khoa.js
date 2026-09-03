@@ -481,6 +481,26 @@ G.napKho = function () {
             gop(du); G.KHO.daNap.push(t);
             /* Kho vừa lớn thêm một gói — tính lại thứ hạng cho trần 30% */
             if (G.quenBangHang) G.quenBangHang();
+            /* ── TÌNH HUỐNG CỦA GIA ĐÌNH ĐI QUA MÁY CHỦ, KHÔNG ĐI QUA GÓI ──
+               Nạp NGAY SAU gói nền, vì lúc ấy đã biết vai và tầng. Đặt tên
+               vào chính G.KHO.dangNap là chỗ đắt nhất của cách này: mọi chỗ
+               trong app đã chờ "dangNap rỗng", nên chúng chờ luôn cả lượt
+               nạp này mà không cần một đường chờ thứ hai. */
+            if (t === 'nen' && G.LA_KHACH && G.LA_KHACH() && G.thKhachNap) {
+              G.KHO.dangNap.push('th-khach');
+              G.thKhachNap()['catch'](function () { /* mất mạng thì thôi */ })
+                .then(function () {
+                  var j = G.KHO.dangNap.indexOf('th-khach');
+                  if (j >= 0) G.KHO.dangNap.splice(j, 1);
+                  /* Lượt nạp này chạy ở NỀN, nên nó về lúc nào không đoán
+                     được — có thể đúng lúc màn đang dựng lại và khung chưa
+                     có. Một việc chạy nền KHÔNG được phép ném lỗi ra trang:
+                     nó làm hỏng đúng cái nó vừa nạp xong cho. */
+                  try { if (G.render) G.render(); } catch (e) {
+                    console.warn('[GITA] vẽ lại sau khi nạp tình huống: ' + e.message);
+                  }
+                });
+            }
           })
           .catch(function (e) { console.warn('[GITA] gói ' + t + ': ' + e.message); })
           .then(function () {

@@ -2052,12 +2052,12 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 84 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 85 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 100 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 101 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    16 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -2098,7 +2098,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.52',
+  version: '9.53',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -5862,6 +5862,26 @@ G.napKho = function () {
             gop(du); G.KHO.daNap.push(t);
             /* Kho vừa lớn thêm một gói — tính lại thứ hạng cho trần 30% */
             if (G.quenBangHang) G.quenBangHang();
+            /* ── TÌNH HUỐNG CỦA GIA ĐÌNH ĐI QUA MÁY CHỦ, KHÔNG ĐI QUA GÓI ──
+               Nạp NGAY SAU gói nền, vì lúc ấy đã biết vai và tầng. Đặt tên
+               vào chính G.KHO.dangNap là chỗ đắt nhất của cách này: mọi chỗ
+               trong app đã chờ "dangNap rỗng", nên chúng chờ luôn cả lượt
+               nạp này mà không cần một đường chờ thứ hai. */
+            if (t === 'nen' && G.LA_KHACH && G.LA_KHACH() && G.thKhachNap) {
+              G.KHO.dangNap.push('th-khach');
+              G.thKhachNap()['catch'](function () { /* mất mạng thì thôi */ })
+                .then(function () {
+                  var j = G.KHO.dangNap.indexOf('th-khach');
+                  if (j >= 0) G.KHO.dangNap.splice(j, 1);
+                  /* Lượt nạp này chạy ở NỀN, nên nó về lúc nào không đoán
+                     được — có thể đúng lúc màn đang dựng lại và khung chưa
+                     có. Một việc chạy nền KHÔNG được phép ném lỗi ra trang:
+                     nó làm hỏng đúng cái nó vừa nạp xong cho. */
+                  try { if (G.render) G.render(); } catch (e) {
+                    console.warn('[GITA] vẽ lại sau khi nạp tình huống: ' + e.message);
+                  }
+                });
+            }
           })
           .catch(function (e) { console.warn('[GITA] gói ' + t + ': ' + e.message); })
           .then(function () {
@@ -17804,7 +17824,13 @@ G.chatHoi = function(cauHoi){
      Tư vấn và nhánh Coach. Bản đầu chạy cho MỖI khách hàng, tức là đúng
      nhóm KHÔNG có kho tình huống trên máy: chuỗi rỗng cho người có nó
      trong tay, và im lặng cho người không có. */
-  var chay = ((G.KB_LUAT || {}).chayChoAi || []).indexOf(G.S.role) >= 0;
+  /* Gia đình nay CŨNG chạy chuỗi — tình huống nạp theo phiên từ máy chủ,
+     xem src/tinh-huong-khach.js. Chưa nạp được thì chuỗi im lặng chứ
+     không vẽ ra một khung rỗng. */
+  var laKhachCoKho = (G.LA_KHACH && G.LA_KHACH()) &&
+    (G.thKhachDangCo ? G.thKhachDangCo().co : false);
+  var chay = laKhachCoKho ||
+    ((G.KB_LUAT || {}).chayChoAi || []).indexOf(G.S.role) >= 0;
   if(G.kbChuoi && chay && !d.khan){
     d.chuoi = G.kbChuoi(kbCau, kbDa);
     if(G.kbNghiepVu) d.nghiepVu = G.kbNghiepVu(kbCau);
@@ -27389,6 +27415,76 @@ var G = window.G || {}; window.G = G;
       });
     return ra;
   };
+
+})();
+
+})();
+
+/* ═════════ src/tinh-huong-khach.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — NẠP TÌNH HUỐNG CHO GIA ĐÌNH, THEO PHIÊN
+
+   Chuỗi năm vòng dựng ở bản 9.49 chạy trên G.TINHHUONG. Kho ấy là TÀI
+   SẢN NGHỀ nên không xuống máy gia đình — chuỗi chạy cho Tư vấn, im
+   lặng cho gia đình. Đúng nhóm cần nó nhất thì không có.
+
+   Bản 9.51 sửa lời hứa 30% cho đúng mẫu số. Đúng, nhưng CHƯA TRIỆT ĐỂ.
+
+   Tệp này đóng hẳn: máy chủ trả về phần 30% của tầng nhà mình, theo
+   PHIÊN, và máy này giữ nó trong BỘ NHỚ.
+
+   KHÔNG GHI XUỐNG ĐĨA — VÀ ĐÓ LÀ CẢ ĐIỂM CỦA CÁCH LÀM NÀY
+
+   Một gói đã cấp thì không gọi ngược về được. Ghi xuống localStorage
+   cũng thế: gỡ quyền hôm nay không xoá được bản nằm trong máy người ta
+   từ hôm qua.
+
+   Giữ trong bộ nhớ thì đóng ứng dụng là hết, và ngừng phục vụ là phiên
+   sau không còn. Cái giá: mất mạng thì chuỗi không chạy. Đáng — một
+   lượt hỏi thu hồi được, một bản sao thì không.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+(function () {
+
+  /* Đã nạp chưa, và nạp được bao nhiêu. Chỉ để màn nói đúng trạng thái —
+     KHÔNG dùng làm cờ chặn, vì cờ ở máy khách thì ai cũng bật được. */
+  G.TH_KHACH = null;
+
+  G.thKhachNap = function () {
+    if (typeof G.tinGoiMayChu !== 'function')
+      return Promise.resolve({ ok: false, ly: 'Chưa có đường gọi máy chủ.' });
+    return G.tinGoiMayChu('napTinhHuongKhach').then(function (d) {
+      if (!d || !d.ok) { G.TH_KHACH = null; return d || { ok: false }; }
+      /* Gắn thẳng vào G.TINHHUONG để chuỗi năm vòng chạy KHÔNG SỬA GÌ.
+         Dựng một tên kho thứ hai cho gia đình thì kbBoKey, kbLocKey và
+         kbChuoi đều phải học thêm một nhánh — ba chỗ phải nhớ, và trí
+         nhớ là thứ hỏng đầu tiên. */
+      G.TINHHUONG = d.tinhHuong || [];
+      G.TH_KHACH = { tang: d.tang, so: d.so, luc: new Date() };
+      if (G.secLog) G.secLog('Nạp tình huống của nhà mình',
+        'tầng ' + d.tang + ' · ' + d.so + ' tình huống', 'Ghi nhận');
+      return d;
+    });
+  };
+
+  /* Máy này đang có tình huống vì đã NẠP, hay vì là máy nghề?
+     Hai đường khác nhau và màn phải nói khác nhau: máy nghề có đủ 250 và
+     không phụ thuộc mạng; máy gia đình có 30% của tầng mình và mất mạng
+     là mất. Gộp hai câu lại thì một trong hai luôn sai. */
+  G.thKhachDangCo = function () {
+    if (!(G.TINHHUONG || []).length) return { co: false, chuaNap: true };
+    if (G.TH_KHACH) return { co: true, quaMayChu: true,
+      tang: G.TH_KHACH.tang, so: G.TH_KHACH.so };
+    return { co: true, tuGoiNghe: true, so: (G.TINHHUONG || []).length };
+  };
+
+  /* KHÔNG lưu xuống đĩa. Hàm này tồn tại để nói rõ điều đó, và để bộ
+     kiểm hỏi được — một luật không ai hỏi được thì sáu tháng sau có
+     người thêm một dòng localStorage.setItem và không ai biết. */
+  G.thKhachKhongLuu = true;
 
 })();
 

@@ -94,7 +94,13 @@ G.chatHoi = function(cauHoi){
      Tư vấn và nhánh Coach. Bản đầu chạy cho MỖI khách hàng, tức là đúng
      nhóm KHÔNG có kho tình huống trên máy: chuỗi rỗng cho người có nó
      trong tay, và im lặng cho người không có. */
-  var chay = ((G.KB_LUAT || {}).chayChoAi || []).indexOf(G.S.role) >= 0;
+  /* Gia đình nay CŨNG chạy chuỗi — tình huống nạp theo phiên từ máy chủ,
+     xem src/tinh-huong-khach.js. Chưa nạp được thì chuỗi im lặng chứ
+     không vẽ ra một khung rỗng. */
+  var laKhachCoKho = (G.LA_KHACH && G.LA_KHACH()) &&
+    (G.thKhachDangCo ? G.thKhachDangCo().co : false);
+  var chay = laKhachCoKho ||
+    ((G.KB_LUAT || {}).chayChoAi || []).indexOf(G.S.role) >= 0;
   if(G.kbChuoi && chay && !d.khan){
     d.chuoi = G.kbChuoi(kbCau, kbDa);
     if(G.kbNghiepVu) d.nghiepVu = G.kbNghiepVu(kbCau);
