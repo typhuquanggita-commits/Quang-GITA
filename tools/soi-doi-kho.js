@@ -73,19 +73,31 @@ function gop(dich, nguon) {
   });
 }
 const CU = {}, NAY = {};
-let coCu = true;
+/* MỘT GÓI MỚI KHÔNG PHẢI LÀ "CHƯA CÓ BẢN CŨ".
+   Bản đầu viết `catch { coCu = false }` cho MỌI gói, nên thêm một gói thứ
+   tám là cả phép so tắt ngóm và in ra "đây là lần đóng gói đầu" — đúng
+   vào lúc cần nó nhất, vì thêm gói bao giờ cũng đi kèm việc CẮT nội dung
+   ra khỏi gói cũ, và cắt nhầm thì mất hẳn.
+   Nay đếm: gói nào có bản cũ thì so gói ấy, gói nào chưa có thì ghi tên
+   ra. Chỉ khi KHÔNG gói nào có bản cũ mới là lần đóng gói đầu. */
+const goiMoi = [];
+let soCoCu = 0;
 for (const g of Object.keys(khoa)) {
   const tep = path.join(GOC, 'kho', g + '.enc');
   if (fs.existsSync(tep)) gop(NAY, mo(khoa[g], fs.readFileSync(tep)));
   try {
     gop(CU, mo(khoa[g], execSync('git show HEAD:kho/' + g + '.enc',
       { cwd: GOC, maxBuffer: 1 << 30, encoding: 'buffer' })));
-  } catch (e) { coCu = false; }
+    soCoCu++;
+  } catch (e) { goiMoi.push(g); }
 }
-if (!coCu) {
+if (!soCoCu) {
   console.log('Chưa có bản đã phát hành trong git để so — đây là lần đóng gói đầu.');
   process.exit(0);
 }
+if (goiMoi.length)
+  console.log('  GÓI MỚI CHƯA TỪNG PHÁT HÀNH: ' + goiMoi.join(' · ') +
+    '\n  (nội dung của chúng vẫn được tính vào phép so bên dưới)\n');
 
 const ten = [...new Set(Object.keys(CU).concat(Object.keys(NAY)))].sort();
 const doi = [], mat = [], them = [], hut = [], chuyen = [];

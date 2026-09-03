@@ -24,6 +24,7 @@ const PHAN = [
   ['GITA_TaiLieu.gs',  'TÀI LIỆU — nhận tài liệu và minh chứng, kiểm duyệt'],
   ['GITA_ChungCu.gs',  'CHỨNG CỨ — ký và đóng dấu giờ máy chủ cho hồ sơ hoa hồng kèm'],
   ['GITA_SoCongDong.gs','SỔ CỘNG ĐỒNG — bốn sổ đếm của bảng tin và hộp thư chuyện'],
+  ['GITA_XemKhach.gs',  'QUYỀN XEM KHÁCH — trần vai theo tầng, giấy phép Super Admin, sổ lượt xem'],
   ['GITA_DongBo.gs',   'ĐỒNG BỘ — hồ sơ và cài đặt giữa bản web và bản cài trên máy'],
   ['GITA_XuatSheet.gs','XUẤT SHEET — đẩy bảng tính về thư mục Drive của Học viện'],
   ['GITA_BanWeb.gs',   'BẢN WEB — doGet: phục vụ trang, trả gói kho, báo tình trạng']
@@ -64,7 +65,8 @@ const DAU = `/**
  *     Lỡ mất thì chạy hàm  datLaiMatKhauSuperAdmin  để sinh mật khẩu mới.
  *
  *  4. Thêm một tệp mã nữa tên GITA_NapKhoa, dán nội dung tệp bộ khoá,
- *     chọn hàm  napBoKhoaMotLan  → Run → log báo "Đã nạp 7 khoá"
+ *     chọn hàm  napBoKhoaMotLan  → Run → log báo "Đã nạp N khoá"
+ *     (N là số gói trong kho/khoa.json — 8 từ bản 9.47)
  *     → XOÁ tệp GITA_NapKhoa khỏi dự án ngay lập tức.
  *
  *  Rồi triển khai:

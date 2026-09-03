@@ -171,6 +171,9 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */
+  /* Luật xem hồ sơ khách hàng — chính sách, không phải dữ liệu khách.
+     Ở gói NGHỀ vì chỉ người của Học viện mới cần đọc nó. */
+  'XK_TRAN', 'XK_MUC', 'XK_CAM', 'XK_LUAT', 'XK_GIAYPHEP', 'XK_CHOCHU',
   'HH_KEM', 'HH_BAC', 'HH_BAC_LUAT', 'HH_KHONG_TIEN', 'HH_CHUNGCU', 'HH_LOAI_CC', 'HH_CC_LUAT', 'HH_CHOCHU', 'HH_DA_CHOT',
   'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_MUC', 'TG_VIEC',
   'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT', 'TG_QUYDOI',
@@ -472,6 +475,43 @@ goi.nen.HM_NGUY = (G.HM_NGUY || []).map(x => {
    đúng MỘT bản ghi, và là bản ghi mà cổng gia đình vẫn đại diện. Gõ tay
    một bản thứ hai thì sửa hồ sơ ở kho gốc mà bản rút ở lại. */
 goi.nen.NHA_TOI = (G.FAMILIES || []).slice(0, 1);
+
+/* ── GÓI NGHỀ CHỈ MANG TẦNG MỘT TỚI BA (bản 9.47) ──
+   Bản 9.41 chuyển FAMILIES từ gói NỀN sang gói NGHỀ, và chuyện ấy đúng:
+   nó chặn phụ huynh nhận hồ sơ chín nhà khác. Nhưng nó chỉ chặn được một
+   nửa, vì gói NGHỀ cấp cho MỌI vai tới bậc 12 — nghĩa là Giáo viên,
+   Mentor, Chuyên gia đánh giá và Phân tích dữ liệu vẫn nhận đủ tên nhà,
+   tên bố mẹ, tên Coach và băng KPI của cả năm tầng về máy mình.
+
+   Chủ hệ chốt: tầng 4-5 chỉ từ Coach lên tới Super Admin, và ai cũng
+   phải được Super Admin cấp quyền. Không luật nào trong hai câu ấy thi
+   hành được bằng cách lọc trên màn hình — gửi xuống rồi thì mở công cụ
+   nhà phát triển là đọc được hết, và một giấy phép thu hồi cũng không
+   gọi ngược được bản sao đã nằm trong máy người ta.
+
+   Nên gói NGHỀ cắt còn tầng một tới ba. Tầng bốn và năm KHÔNG nằm trong
+   gói nào: chúng đi qua một lượt hỏi máy chủ, máy chủ kiểm giấy phép,
+   và ghi sổ từng lượt. Cái giá là mất mạng thì không mở được — đáng,
+   vì một lượt hỏi thu hồi được còn một bản sao thì không.
+
+   Cắt ở ĐÂY chứ không ở lớp hiển thị: đây là chỗ duy nhất quyết định
+   được cái gì rời khỏi máy chủ. */
+goi.nghe.FAMILIES = (G.FAMILIES || []).filter(f => Number(f.tier) <= 3);
+
+/* ── GÓI NGHỀ CAO: TẦNG BỐN VÀ NĂM ──
+   Bốn bản ghi tầng cao KHÔNG bị vứt đi — chúng sang một gói riêng, cấp
+   tới đúng bậc của Coach.
+
+   Vì sao phải có gói thứ tám thay vì bỏ hẳn bốn bản ghi ấy khỏi kho:
+   kho-goc/ nằm trong .gitignore, nên BẢY TỆP .enc ĐÃ PHÁT HÀNH LÀ BẢN
+   LƯU DUY NHẤT của nội dung. Cắt bốn bản ghi khỏi mọi gói là xoá luôn
+   bản lưu duy nhất của chúng — mất là mất hẳn, và ở bản 9.6 chính bảy
+   tệp này đã cứu được cả kho một lần.
+
+   FAMILIES nay trải trên HAI gói nên phải khai tên ở G.KHO_TRAI_RA —
+   không khai thì gói mở sau GÁN ĐÈ gói mở trước, và tuỳ thứ tự nạp mà
+   Coach mất tầng thấp hoặc mất tầng cao, im lặng, không một lời báo. */
+goi['nghe-cao'] = { FAMILIES: (G.FAMILIES || []).filter(f => Number(f.tier) >= 4) };
 
 goi.nen.HP_NGAY = (G.HP_TANG || []).map(t => {
   const so = String(t.ten || '').match(/\d+/);
@@ -813,6 +853,8 @@ const mau = {
   TIN_TIEUCHI: G.TIN_TIEUCHI, TIN_TIEUCHI_LUAT: G.TIN_TIEUCHI_LUAT,
   TIN_THUONG: G.TIN_THUONG, TIN_CAM: G.TIN_CAM, TIN_LUAT: G.TIN_LUAT,
   TG_MUC: G.TG_MUC, TG_VIEC: G.TG_VIEC,
+  XK_TRAN: G.XK_TRAN, XK_MUC: G.XK_MUC, XK_CAM: G.XK_CAM, XK_LUAT: G.XK_LUAT,
+  XK_GIAYPHEP: G.XK_GIAYPHEP, XK_CHOCHU: G.XK_CHOCHU,
   HH_KEM: G.HH_KEM, HH_BAC: G.HH_BAC, HH_BAC_LUAT: G.HH_BAC_LUAT, HH_KHONG_TIEN: G.HH_KHONG_TIEN,
   HH_CHUNGCU: G.HH_CHUNGCU, HH_LOAI_CC: G.HH_LOAI_CC, HH_CC_LUAT: G.HH_CC_LUAT,
   HH_CHOCHU: G.HH_CHOCHU, HH_DA_CHOT: G.HH_DA_CHOT,

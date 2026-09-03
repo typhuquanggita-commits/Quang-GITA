@@ -100,6 +100,16 @@ G.goiNghe = function(maTuyen){
   return t.goiCu ? 'nghe' : (t.ma.toLowerCase() + '-nghe');
 };
 
+/* Tên gói NGHỀ CAO — hồ sơ khách hàng tầng 4-5, chỉ từ Coach lên tới
+   Super Admin. Tách ra thành gói riêng chứ không lọc trên màn hình: gói
+   NGHỀ cấp tới bậc 12, nên để chung là Giáo viên, Mentor, Chuyên gia
+   đánh giá và Phân tích dữ liệu đều nhận đủ hồ sơ tầng cao về máy. */
+G.goiNgheCao = function(maTuyen){
+  var t = G.tuyen(maTuyen);
+  if(!t) return '';
+  return t.goiCu ? 'nghe-cao' : (t.ma.toLowerCase() + '-nghe-cao');
+};
+
 /* Tên gói TẦNG của một tuyến */
 G.goiTang = function(maTuyen, tang){
   var t = G.tuyen(maTuyen);

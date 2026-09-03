@@ -30,6 +30,16 @@ if (!EXEC) {
   process.exit(1);
 }
 
+
+/* Số gói đọc từ chính bộ khoá — kho có 7 gói tới bản 9.46 và 8 từ 9.47.
+   Gõ con số ở đây là dựng bản thứ hai của một thứ đã có thật một chỗ. */
+const SO_GOI_KT = (() => {
+  try {
+    return Object.keys(JSON.parse(require('fs').readFileSync(
+      require('path').join(__dirname, '..', 'kho', 'khoa.json'), 'utf8')).khoa).length;
+  } catch (e) { return 0; }
+})();
+
 let loi = 0, canhBao = 0;
 function bao(ok, ten, ct) {
   if (!ok) loi++;
@@ -67,7 +77,7 @@ console.log('\nA · MÁY CHỦ CẤP PHÉP');
   bao(r.ma === 200, 'máy chủ trả lời', 'HTTP ' + r.ma);
   bao(!!(d && d.ok), 'trả về đúng dạng JSON của GITA', d ? (d.ten || '') : r.than.slice(0, 120));
   if (d) {
-    bao(d.daNapKhoa === 7, 'đã nạp đủ bảy gói khoá',
+    bao(d.daNapKhoa === SO_GOI_KT, 'đã nạp đủ ' + SO_GOI_KT + ' gói khoá',
       d.daNapKhoa === 0 ? 'CHƯA nạp khoá — làm bước Script Properties' : d.daNapKhoa + ' gói');
     bao(d.khoa === undefined && !/[A-Za-z0-9+/]{40,}=/.test(r.than),
       'điểm kiểm sống không lộ khoá nào');

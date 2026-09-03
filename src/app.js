@@ -213,7 +213,28 @@ var NHA_TRONG = {id:'—',nha:'Chưa mở hồ sơ',hv:'—',lop:'—',ph:'—',
    một chỗ — và bốn trong bảy chỗ ấy còn đang gọi .map() thẳng, tức là
    ném lỗi ngay khi kho vắng. */
 G.dsNha = function(){
-  return (G.FAMILIES && G.FAMILIES.length) ? G.FAMILIES : (G.NHA_TOI || []);
+  /* NHÀ CỦA CHÍNH MÌNH KHÔNG ĐI QUA CỔNG XEM KHÁCH. Cổng ấy trả lời câu
+     "vai này có được xem hồ sơ NHÀ KHÁC không"; hồ sơ nhà mình là chuyện
+     khác hẳn, và nó đã có quyền riêng là kh_gia_dinh. Lọc nhầm chỗ này
+     thì phụ huynh mất luôn hồ sơ của chính nhà họ — vai R13 không có tên
+     trong bất kỳ trần nào, vì cổng ấy chưa từng nói về họ. */
+  if (!(G.FAMILIES && G.FAMILIES.length)) return G.NHA_TOI || [];
+
+  /* Cổng xem hồ sơ khách (bản 9.47). Từ bản này gói NGHỀ chỉ còn mang
+     tầng một tới ba, nên lớp lọc ở đây KHÔNG phải chỗ giữ dữ liệu — chỗ
+     ấy là gói kho và máy chủ. Nó ở đây để một vai bị gạch tên khỏi mọi
+     tầng, như Giáo viên, không nhìn thấy cả danh sách; và để ngày mai có
+     ai lỡ nhét lại tầng 4-5 vào gói thì màn vẫn không vẽ ra. */
+  /* XẾP LẠI THEO MÃ. Từ 9.47 FAMILIES nối từ HAI gói — nghề (tầng 1-3)
+     và nghề cao (tầng 4-5) — mà hai gói ấy tải song song, nên thứ tự nối
+     phụ thuộc gói nào về trước. Mã đang có chỗ chọn nhà theo VỊ TRÍ
+     (myFamily lấy ds[2] cho cổng Coach), nên không xếp lại thì cùng một
+     tài khoản mở hai lần ra hai nhà khác nhau — một lỗi chỉ hiện lúc mạng
+     chậm, và loại lỗi ấy không ai lần ra được từ báo cáo của người dùng. */
+  var ds = (typeof G.xkLocNha === 'function') ? G.xkLocNha(G.FAMILIES) : G.FAMILIES;
+  return ds.slice().sort(function (a, b) {
+    return String(a.id) < String(b.id) ? -1 : (String(a.id) > String(b.id) ? 1 : 0);
+  });
 };
 G.myFamily = function(){
   var ds = G.dsNha();

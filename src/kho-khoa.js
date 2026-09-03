@@ -94,6 +94,7 @@ G.THUOC_CAP_PHEP = [
   'TIN_LOAI','TIN_NGUON','TIN_NGUON_LUAT','TIN_SO_LUAT','TIN_TIEUCHI','TIN_TIEUCHI_LUAT',
   'TIN_THUONG','TIN_CAM','TIN_LUAT','TIN_LOAI_LUAT','TIN_MAU','TIN_TANG_LUAT',
   'TIN_KEM_THUONG','BK_LUAT','BK_DANHMUC','BK_DANHMUC_LUAT','TG_MUC','TG_VIEC',
+  'XK_TRAN','XK_MUC','XK_CAM','XK_LUAT','XK_GIAYPHEP','XK_CHOCHU',
   'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_KHONG_TIEN','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU','HH_DA_CHOT',
   'CS_VONG','CS_VONG_LUAT','CS_DULIEU','CS_DULIEU_LUAT',
   'CS_QUYMO','CS_LECH','CS_CHOCHU',
@@ -193,6 +194,10 @@ G.goiDuocCap = function () {
        "Kho báu vật" và "Sách gốc" trong trình đơn mà bấm vào chỉ ra màn
        xin cấp phép. */
     if (r.lv <= 12) ds.push(G.goiNghe(mt));
+    /* Gói NGHỀ CAO dừng ở bậc của Coach, không dừng ở 12. Con số ấy đọc
+       từ chính G.ROLES chứ không gõ ở đây — đổi bậc của Coach trong bảng
+       vai thì chỗ này đổi theo, và không có bản thứ hai để lệch. */
+    if (G.xkBacCoach && r.lv <= G.xkBacCoach()) ds.push(G.goiNgheCao(mt));
     if (moTang)
       for (var i = 1; i <= tangToiDa; i++) ds.push(G.goiTang(mt, i));
   });
@@ -356,7 +361,16 @@ function giaiNen(buf) {
    về gói nghề, nằm gọn một gói, nên nó KHÔNG còn thuộc danh sách này —
    khai thừa cũng đỏ, và đỏ ở đây là đúng: một cái tên khai thừa hôm nay
    là một cái tên không ai dám xoá ngày mai. */
-G.KHO_TRAI_RA = ['TEST750', 'QUA1000', 'CHUYEN', 'SH_HOI', 'KH_BAI'];
+/* Kho trải ra nhiều gói: lúc mở thì NỐI, không GÁN ĐÈ. FAMILIES vào
+   danh sách này từ 9.47 — tầng 1-3 ở gói NGHỀ, tầng 4-5 ở gói NGHỀ CAO.
+   Quên khai tên ở đây thì gói mở sau đè mất gói mở trước, và tuỳ thứ tự
+   nạp mà Coach mất tầng thấp hoặc mất tầng cao — im lặng, không lỗi. */
+G.KHO_TRAI_RA = ['TEST750', 'QUA1000', 'CHUYEN', 'SH_HOI', 'KH_BAI', 'FAMILIES'];
+/* LƯU Ý MỘT NGOẠI LỆ CỦA LUẬT "VẮNG MẶT KHÁC RỖNG": kho trong danh sách
+   này được dựng sẵn thành [] trước khi nạp, để .concat có chỗ nối. Nên
+   với chúng, [] nghĩa là KHÔNG CÓ BẢN GHI NÀO ĐƯỢC CẤP — không phải
+   "đáng lẽ phải có giá trị". Hỏi `.length`, đừng hỏi kho có tồn tại hay
+   không: từ 9.47 một máy phụ huynh cũng có G.FAMILIES, và nó rỗng. */
 
 function gop(du) {
   Object.keys(du).forEach(function (k) {

@@ -20,6 +20,13 @@ const PW = process.env.PW_PATH || '/opt/node22/lib/node_modules/playwright';
 const { chromium } = require(PW);
 
 const GOC = path.join(__dirname, '..');
+/* Số gói đọc từ chính bộ khoá — kho có 7 gói tới bản 9.46 và 8 từ 9.47.
+   Gõ con số ở đây là dựng bản thứ hai của một thứ đã có thật một chỗ. */
+const SO_GOI_TBW = (() => {
+  try { return Object.keys(JSON.parse(
+    fs.readFileSync(path.join(GOC, 'kho', 'khoa.json'), 'utf8')).khoa).length; }
+  catch (e) { return 0; }
+})();
 const CONG = 8123;
 const BASE = 'http://127.0.0.1:' + CONG + '/';
 const GOI = ['nen', 'nghe', 'tang1', 'tang2', 'tang3', 'tang4', 'tang5'];
@@ -115,7 +122,8 @@ may.listen(CONG, async () => {
   }));
 
   bao(!r.cheDoMau, 'KHÔNG rơi về chế độ mẫu — kho thật đã mở');
-  bao(r.daNap.length === 7, 'mở đủ bảy gói kho qua đường máy chủ', r.daNap.join(', '));
+  bao(r.daNap.length === SO_GOI_TBW, 'mở đủ ' + SO_GOI_TBW + ' gói kho qua đường máy chủ',
+    r.daNap.join(', '));
   bao(r.kichBan >= 1000, 'kịch bản về đủ', r.kichBan.toLocaleString('vi-VN'));
   bao(r.phacDo >= 220 && r.moThuc >= 42, 'phác đồ và mô thức về đủ', r.phacDo + ' · ' + r.moThuc);
   bao(r.tinhHuong >= 250, 'tình huống về đủ', r.tinhHuong);

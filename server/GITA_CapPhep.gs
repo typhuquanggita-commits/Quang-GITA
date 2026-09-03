@@ -55,6 +55,11 @@ function gitaGoiNghe_(ma) {
   var t = gitaTuyen_(ma);
   return t ? (t.goiCu ? 'nghe' : ma.toLowerCase() + '-nghe') : '';
 }
+/* Gói NGHỀ CAO — hồ sơ khách tầng 4-5. Xem GITA_XemKhach.gs. */
+function gitaGoiNgheCao_(ma) {
+  var t = gitaTuyen_(ma);
+  return t ? (t.goiCu ? 'nghe-cao' : ma.toLowerCase() + '-nghe-cao') : '';
+}
 function gitaGoiTang_(ma, tang) {
   var t = gitaTuyen_(ma);
   if (!t || !(tang >= 1 && tang <= GITA_SO_TANG)) return '';
@@ -114,6 +119,14 @@ function gitaPhamViCapPhep(hoSo) {
   if (lv <= 12) {                           // tư vấn, coach, quản lý, quản trị, phân tích
     for (k = 0; k < tuyen.length; k++) {
       ds.push(gitaGoiNghe_(tuyen[k]));
+      /* GÓI NGHỀ CAO DỪNG SỚM HƠN — chỉ tới bậc của Coach.
+         Gói NGHỀ mang hồ sơ khách tầng 1-3; gói NGHỀ CAO mang tầng 4-5,
+         và chủ hệ chốt tầng 4-5 chỉ từ Coach lên tới Super Admin. Để
+         chung một gói thì Giáo viên (bậc 8), Mentor (9), Chuyên gia đánh
+         giá (10) và Phân tích dữ liệu (12) đều nhận đủ tên nhà, tên bố
+         mẹ, tên Coach và băng KPI của tầng cao về máy mình — và lọc trên
+         màn hình không gọi ngược được thứ đã gửi đi. */
+      if (lv <= gitaXkBacCoach_()) ds.push(gitaGoiNgheCao_(tuyen[k]));
       for (i = 1; i <= GITA_SO_TANG; i++) ds.push(gitaGoiTang_(tuyen[k], i));
     }
     return gitaGon_(ds);
@@ -189,7 +202,11 @@ function doPost(e) {
                    Cũng phải có phiên: dấu chặn đếm hai lần băm từ TÀI
                    KHOẢN trong phiên. Nhận tên từ thân yêu cầu thì gõ tên
                    khác là đếm thêm được một nhà, và cả sổ thành số bịa. */
-                'ghiTinCongDong', 'docTinCongDong', 'guiChuyen'];
+                'ghiTinCongDong', 'docTinCongDong', 'guiChuyen',
+                /* Bốn việc của quyền xem hồ sơ khách — xem GITA_XemKhach.gs.
+                   Phải có phiên vì cả bốn đều đọc VAI từ phiên: nhận vai
+                   từ thân yêu cầu thì ai gõ 'R01' cũng thành Super Admin. */
+                'capQuyenXem', 'thuHoiQuyenXem', 'soiQuyenXem', 'xemKhachCao'];
     if (VIEC.indexOf(y.fn) < 0) return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
@@ -211,6 +228,10 @@ function doPost(e) {
     if (y.fn === 'ghiTinCongDong') return ra(gitaGhiTinCongDong_(y, hoSo));
     if (y.fn === 'docTinCongDong') return ra(gitaDocTinCongDong_(y, hoSo));
     if (y.fn === 'guiChuyen')      return ra(gitaGuiChuyen_(y, hoSo));
+    if (y.fn === 'capQuyenXem')    return ra(gitaCapQuyenXem_(y, hoSo));
+    if (y.fn === 'thuHoiQuyenXem') return ra(gitaThuHoiQuyenXem_(y, hoSo));
+    if (y.fn === 'soiQuyenXem')    return ra(gitaSoiQuyenXem_(y, hoSo));
+    if (y.fn === 'xemKhachCao')    return ra(gitaXemKhachCao_(y, hoSo));
 
     // 2. Mật khẩu tạm chưa đổi thì không mở kho
     if (hoSo.phaiDoiMk) {

@@ -118,7 +118,14 @@ const { chromium } = require(PW);
   bao(!d.tangLa.length, 'không mã tầng lạ trong kho kịch bản', d.tangLa.join(', '));
   bao(!d.chuanLech.length, 'chuẩn 1000 điểm khớp tổng từng nhóm', d.chuanLech.join(', '));
   bao(!coKhoa || d.soTang100 === 100, 'đủ một trăm tầng giá trị', d.soTang100 + ' tầng');
-  bao(!coKhoa || d.goiDaMo.length === 7, 'quản trị mở đủ bảy gói nội dung', d.goiDaMo.join(' '));
+/* SỐ GÓI đọc từ chính bộ khoá, không gõ con số. Kho có bảy gói từ v7.8
+   tới 9.46, và gói thứ tám (nghe-cao) ra đời ở 9.47 — ba phép đo lúc ấy
+   cùng đỏ chỉ vì mỗi chỗ giữ riêng một con số 7. Một con số có thật ở
+   một chỗ thì mọi chỗ hỏi chỗ ấy. */
+  const SO_GOI = KHOA ? Object.keys(KHOA).length : 0;
+  bao(!coKhoa || d.goiDaMo.length === SO_GOI,
+    'quản trị mở đủ ' + SO_GOI + ' gói nội dung — số gói đọc từ bộ khoá, không gõ tay',
+    d.goiDaMo.join(' '));
   console.log('    ' + d.soMan + ' màn hình · ' + d.soMuc + ' mục điều hướng · ' +
     d.soKB + ' kịch bản · ' + d.soPD + ' phác đồ · ' + d.soMT + ' mô thức');
 
@@ -3122,7 +3129,9 @@ const { chromium } = require(PW);
     });
     bao(!r01.khoa.length, 'Super Admin không màn nào bị khoá', r01.khoa.join(' ') || 'mở hết');
     bao(!r01.thieuQuyen.length, 'Super Admin có đủ mọi quyền', r01.thieuQuyen.join(' ') || 'đủ');
-    bao(r01.goi === 7, 'Super Admin mở đủ bảy gói kho', r01.goi + ' gói');
+    const soGoi36 = Object.keys(JSON.parse(fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'kho', 'khoa.json'), 'utf8')).khoa).length;
+    bao(r01.goi === soGoi36, 'Super Admin mở đủ ' + soGoi36 + ' gói kho', r01.goi + ' gói');
     bao(r01.gon === 3 && r01.het === 10,
       'công tắc Mở hết bỏ được cắt bớt danh sách — cần cho việc rà từ A đến Z',
       'gọn ' + r01.gon + ' → mở hết ' + r01.het);
@@ -8607,7 +8616,11 @@ const { chromium } = require(PW);
     const co = await doVai('coach@gita365.vn');
     const quaNhieu = ph.hoSo.filter(x => x.so > 1);
 
-    bao(!quaNhieu.length && ph.coFAMILIES === false && ph.soNHA_TOI === 1 &&
+    /* Hỏi SỐ BẢN GHI, không hỏi kho có tồn tại. Từ 9.47 FAMILIES nằm
+       trong KHO_TRAI_RA nên nó được dựng sẵn thành [] trên MỌI máy —
+       kể cả máy phụ huynh. Câu hỏi thật chưa bao giờ là "kho có mặt
+       không" mà là "máy này giữ hồ sơ của mấy nhà". */
+    bao(!quaNhieu.length && ph.soFAMILIES === 0 && ph.soNHA_TOI === 1 &&
         ph.dsNha === 1 && ph.nhaToi === 'F-001' && ph.batDuocKhiCoHaiNha,
       'HỒ SƠ CỦA NHÀ KHÁC KHÔNG XUỐNG MÁY GIA ĐÌNH. Kho FAMILIES mang hồ sơ mười nhà — tên nhà, tên học viên, lớp, TÊN BỐ MẸ, tên Coach, điểm tự chủ, band màu, kỳ tích — và nó nằm ở gói NỀN từ đầu, nghĩa là một phụ huynh đăng nhập nhận đủ hồ sơ CHÍN NHÀ KHÁC về máy mình. Không màn nào hiện chúng ra, nhưng lọc trên màn hình không phải bảo vệ dữ liệu: gửi xuống rồi thì mở công cụ nhà phát triển là đọc được hết. Đây là lần thứ TƯ đúng lớp lỗi ấy trong kho này — KICHBAN 8.9, CV_MUC 9.7, mười bảy kho nghề 9.8 — và ba lần trước đều được tìm ra bằng một PHÉP ĐO mới chứ không bằng trí nhớ. Chỗ khó là phụ huynh vẫn cần hồ sơ CỦA CHÍNH NHÀ MÌNH, nên gói nền nhận một bản rút NHA_TOI sinh ra từ chính FAMILIES lúc đóng gói: một nguồn, hai hình, đúng cách HP_NGAY đã làm với HP_TANG. Luật đo ở đây là luật CHUNG chứ không riêng một kho: bản ghi nào vừa có tên nhà vừa có tên học viên thì là một hồ sơ gia đình, và máy gia đình được giữ đúng một hồ sơ. Cột ph và coach một mình không đủ để kết luận — ma trận MATRAN_T* dùng đúng hai tên ấy làm cột VAI TRÒ với 220 bản ghi mỗi tầng, và đó không phải tên người',
       quaNhieu.length ? 'còn rò: ' + quaNhieu.map(x => x.kho + ' (' + x.so + ' nhà)').join(' · ')
@@ -8964,7 +8977,153 @@ const { chromium } = require(PW);
         : 'T1 0% · giá đổi thành 9 triệu mà vẫn 0% · T2 vẫn 10% · quà 1 sao theo nhà được kèm · chưa vượt tầng thì chưa có gì · HH_CHOCHU rỗng có khai');
   }
 
-  /* ══════════════════ 72. SAVE() CÓ GIỮ THẬT KHÔNG ══════════════════
+  /* ══════════════ 72. AI ĐƯỢC XEM HỒ SƠ KHÁCH HÀNG ══════════════
+     Luật chủ hệ chốt 3.9.2026. Chỗ dễ hỏng nhất không phải cái cổng mà là
+     việc GÓI KHO vẫn gửi thứ cổng đang giấu — kho này đã mắc đúng lỗi ấy
+     ba lần, và suýt lần thứ tư ở chính chỗ này. */
+  {
+    await p.goto(URL, { waitUntil: 'networkidle' });
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.evaluate(() => window.G.doLogin('superadmin@gita365.vn'));
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.XK_TRAN && window.G.FAMILIES, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G, r = {};
+      const X = (vai, tang) => G.xkDuTranVai(vai, tang).ok;
+
+      /* ── ĐÚNG BỐN CÂU CHỦ HỆ NÓI ── */
+      r.tuVanBaTang = X('R11', 'T1') && X('R11', 'T2') && X('R11', 'T3') &&
+        !X('R11', 'T4') && !X('R11', 'T5');
+      r.coachDuNamTang = ['T1', 'T2', 'T3', 'T4', 'T5'].every(t => X('R07', t));
+      r.superAdminDuNamTang = ['T1', 'T2', 'T3', 'T4', 'T5'].every(t => X('R01', t));
+      /* Giáo viên lv 8 nằm ĐÚNG GIỮA Coach lv 7 và Tư vấn lv 11 — đây là
+         lý do luật này không viết được bằng một bậc. */
+      r.giaoVienKhongTang = ['T1', 'T2', 'T3', 'T4', 'T5'].every(t => !X('R08', t)) &&
+        G.xkDuTranVai('R08', 'T1').biGachTen === true;
+      const R = n => (G.ROLES || []).filter(x => x.id === n)[0];
+      r.loThungOGiua = R('R07').lv < R('R08').lv && R('R08').lv < R('R11').lv;
+      /* Danh sách TRẮNG: vai chưa nhắc tới là không xem được. */
+      r.vaiLaKhongXem = ['R09', 'R10', 'R12', 'R13', 'R15', 'RXX']
+        .every(v => ['T1', 'T3', 'T5'].every(t => !X(v, t)));
+      r.nhanCaHaiDang = X('R07', 3) === X('R07', 'T3') && X('R07', 3) === true;
+
+      /* ── GÓI KHO KHÔNG CÒN CHỞ TẦNG 4-5 ──
+         Đây là phép đo QUAN TRỌNG NHẤT của mục này. Cổng ở trên chỉ giấu;
+         chỗ này hỏi kho có còn thứ để lộ hay không. */
+      /* Super Admin mở được CẢ HAI gói nên thấy đủ mười nhà — đúng.
+         Phép đo thật nằm ở lớp .enc bên dưới: gói NGHỀ có còn chở tầng
+         4-5 nữa không. Hỏi trên G.FAMILIES lúc này là hỏi nhầm chỗ, vì
+         nó đã là hai gói NỐI lại. */
+      r.khoDuMuoiNha = (G.FAMILIES || []).length === 10 &&
+        (G.FAMILIES || []).some(f => Number(f.tier) >= 4);
+      r.familiesTraiRa = (G.KHO_TRAI_RA || []).indexOf('FAMILIES') >= 0;
+      /* Và nhà của CHÍNH mình không đi qua cổng — lọc nhầm chỗ ấy thì phụ
+         huynh mất hồ sơ nhà họ, vì R13 không có tên trong trần nào. */
+      const giuF = G.FAMILIES, giuR = G.S.role;
+      G.FAMILIES = []; G.S.role = 'R13';
+      r.nhaMinhKhongQuaCong = G.dsNha().length === (G.NHA_TOI || []).length &&
+        (G.NHA_TOI || []).length === 1;
+      G.FAMILIES = giuF; G.S.role = giuR;
+      /* Vai bị gạch tên thì không thấy cả danh sách. */
+      G.S.role = 'R08';
+      r.giaoVienKhongThayDs = G.dsNha().length === 0;
+      G.S.role = 'R07';
+      r.coachThayDs = G.dsNha().length === (G.FAMILIES || []).length;
+      G.S.role = giuR;
+
+      /* ── HAI LỚP: ĐỦ ĐIỀU KIỆN KHÁC ĐƯỢC XEM ── */
+      G.XK_PHEP = null;
+      const chuaPhep = G.xkDuocXem('R07', 'T4');
+      r.duTranVanChuaXem = chuaPhep.ok === false && chuaPhep.thieuGiayPhep === true &&
+        chuaPhep.thieuTran === undefined;
+      /* Và hai câu từ chối KHÁC NHAU — chúng dẫn tới hai việc khác nhau. */
+      const ngoaiTran = G.xkDuocXem('R08', 'T4');
+      r.haiCauTuChoiKhacNhau = ngoaiTran.thieuTran === true &&
+        ngoaiTran.thieuGiayPhep === undefined;
+      G.XK_PHEP = { tang: ['T4', 'T5'], hetHan: '2030-01-01T00:00:00.000Z' };
+      r.coPhepThiXemDuoc = G.xkDuocXem('R07', 'T4').ok === true;
+      /* Giấy phép hết hạn TỰ TẮT, không chờ ai nhớ đi gỡ. */
+      G.XK_PHEP = { tang: ['T4', 'T5'], hetHan: '2020-01-01T00:00:00.000Z' };
+      r.hetHanTuTat = G.xkDuocXem('R07', 'T4').ok === false;
+      /* Giấy phép KHÔNG mở được thứ ngoài trần. */
+      G.XK_PHEP = { tang: ['T1', 'T2', 'T3', 'T4', 'T5'], hetHan: '2030-01-01T00:00:00.000Z' };
+      r.phepKhongVuotTran = G.xkDuocXem('R08', 'T1').ok === false &&
+        G.xkDuocXem('R11', 'T4').ok === false;
+      G.XK_PHEP = null;
+      /* Không lưu xuống máy: giấy phép đã thu hồi mà còn nằm trong máy thì
+         người bị thu vẫn mở được tới lúc tải lại trang. */
+      G.XK_PHEP = { tang: ['T4'], hetHan: '2030-01-01T00:00:00.000Z' };
+      G.save();
+      r.phepKhongLuoiXuongMay =
+        (localStorage.getItem('gita365.v7') || '').indexOf('XK_PHEP') < 0;
+      G.XK_PHEP = null;
+
+      r.choChuGhiRo = (G.XK_CHOCHU || []).length === 1 &&
+        /R09|Mentor/.test((G.XK_CHOCHU || [])[0].vi || '');
+      return r;
+    });
+
+    /* ── HAI BẢN TRẦN PHẢI KHỚP TỪNG CHỮ ──
+       Máy chủ không đọc được kho đã mã hoá nên phải giữ bản chép. Bản
+       chép mà không ai đối chiếu thì tới ngày lệch, màn hình nói một
+       đằng và máy chủ chặn một nẻo — và bản CHẶN mới là bản có hiệu lực,
+       nên người dùng bị từ chối mà màn không giải thích được vì sao. */
+    const nguon = fsGoc.readFileSync(pathGoc.join(__dirname, '..', 'server', 'GITA_XemKhach.gs'), 'utf8');
+    const banMayChu = (() => {
+      /* Không JSON.parse: đây là mã JavaScript, khoá không có ngoặc kép.
+         Đọc bằng Function là đọc đúng thứ máy chủ thật sẽ chạy. */
+      const m = /var GITA_XK_TRAN = (\[[\s\S]*?\]);/.exec(nguon);
+      return m ? Function('return ' + m[1])() : null;
+    })();
+    const banKho = await p.evaluate(() =>
+      (window.G.XK_TRAN || []).map(x => ({ tang: x.tang, vai: x.vai })));
+    ra.haiBanKhop = !!banMayChu && JSON.stringify(banMayChu) === JSON.stringify(banKho);
+    ra.mayChuCoAiCap = /var GITA_XK_AI_CAP = 'R01'/.test(nguon);
+    ra.mayChuChanVuotTran = /vuotTran/.test(nguon) && /gitaXkDuTran_/.test(nguon);
+    ra.mayChuGhiSo = /audit_\(hoSo\.phien, 'XEMKHACH_CAO'/.test(nguon);
+
+    /* ── HỎI THẲNG TỆP .enc ──
+       Đây là phép đo duy nhất trả lời được câu "cái gì thật sự rời máy
+       chủ". Mọi phép đo trên G.FAMILIES đều đo sau khi các gói đã nối
+       lại, nên chúng không phân biệt được gói nào chở gì. */
+    {
+      const crX = require('crypto');
+      const kx = JSON.parse(fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'kho', 'khoa.json'), 'utf8')).khoa;
+      const doc = g => {
+        const b = fsGoc.readFileSync(pathGoc.join(__dirname, '..', 'kho', g + '.enc'));
+        const de = crX.createDecipheriv('aes-256-gcm', Buffer.from(kx[g], 'base64'), b.subarray(0, 12));
+        de.setAuthTag(b.subarray(12, 28));
+        return ruotGoi(Buffer.concat([de.update(b.subarray(28)), de.final()]));
+      };
+      const nghe = doc('nghe'), cao = doc('nghe-cao');
+      ra.goiNgheHetTangCao = Array.isArray(nghe.FAMILIES) && nghe.FAMILIES.length > 0 &&
+        nghe.FAMILIES.every(f => Number(f.tier) <= 3);
+      ra.goiCaoCoTangCao = Array.isArray(cao.FAMILIES) && cao.FAMILIES.length > 0 &&
+        cao.FAMILIES.every(f => Number(f.tier) >= 4);
+      /* Và gói NGHỀ CAO dừng ở bậc Coach, không dừng ở 12 như gói NGHỀ. */
+      const sv = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'server', 'GITA_CapPhep.gs'), 'utf8');
+      ra.goiCaoDungOBacCoach = /if \(lv <= gitaXkBacCoach_\(\)\) ds\.push\(gitaGoiNgheCao_/.test(sv) &&
+        /function gitaXkBacCoach_/.test(
+          fsGoc.readFileSync(pathGoc.join(__dirname, '..', 'server', 'GITA_XemKhach.gs'), 'utf8'));
+    }
+
+    const doXK = ['tuVanBaTang', 'coachDuNamTang', 'superAdminDuNamTang',
+      'giaoVienKhongTang', 'loThungOGiua', 'vaiLaKhongXem', 'nhanCaHaiDang',
+      'khoDuMuoiNha', 'familiesTraiRa', 'goiNgheHetTangCao', 'goiCaoCoTangCao',
+      'goiCaoDungOBacCoach', 'nhaMinhKhongQuaCong', 'giaoVienKhongThayDs',
+      'coachThayDs', 'duTranVanChuaXem', 'haiCauTuChoiKhacNhau', 'coPhepThiXemDuoc',
+      'hetHanTuTat', 'phepKhongVuotTran', 'phepKhongLuoiXuongMay', 'choChuGhiRo',
+      'haiBanKhop', 'mayChuCoAiCap', 'mayChuChanVuotTran', 'mayChuGhiSo'].filter(k => !ra[k]);
+    bao(!doXK.length,
+      'AI ĐƯỢC XEM HỒ SƠ KHÁCH HÀNG — VÀ CHỖ CHẶN NẰM Ở KHO CHỨ KHÔNG Ở MÀN HÌNH. Chủ hệ chốt: Tư vấn và Coach xem tầng 1-2-3; tầng 4-5 từ Coach lên tới Super Admin; Giáo viên, ban tài chính, ban sản phẩm không xem; và ai cũng phải được Super Admin cấp quyền. Luật này KHÔNG viết được bằng bảng bậc sẵn có, và chỗ gãy nằm đúng ở người vừa bị gạch tên: Coach lv 7 · GIÁO VIÊN lv 8 · Tư vấn lv 11. Mở bậc tới 11 cho Tư vấn là Giáo viên lọt vào giữa. Bậc là một cái thang, luật này là một danh sách có lỗ thủng — nên nó khai thẳng từng vai, theo lối DANH SÁCH TRẮNG: vai nào không có tên là không xem được, kể cả vai chưa tồn tại hôm nay. Kê danh sách cấm thì mỗi vai mới sinh ra là mặc định nhìn thấy, và cái mặc định ấy không ai nhớ đi sửa. NHƯNG PHÉP ĐO QUAN TRỌNG NHẤT Ở ĐÂY KHÔNG PHẢI CÁI CỔNG: tới bản 9.46, FAMILIES — tên nhà, tên học viên, TÊN BỐ MẸ, tên Coach, băng KPI của cả mười nhà năm tầng — nằm trong gói NGHỀ, mà máy chủ cấp gói NGHỀ cho MỌI vai tới bậc 12. Nghĩa là Giáo viên, Mentor, Chuyên gia đánh giá và Phân tích dữ liệu đều đã có sẵn hồ sơ tầng 4-5 nằm trong máy mình. Lọc trên màn hình không chữa được: gửi xuống rồi thì mở công cụ nhà phát triển là đọc được hết — kho này đã mắc đúng lớp lỗi ấy ba lần, KICHBAN 8.9, CV_MUC 9.7, mười bảy kho nghề 9.8. Nên gói NGHỀ nay cắt còn tầng một tới ba, và tầng 4-5 sang GÓI NGHỀ CAO — gói thứ tám, cấp tới đúng bậc của Coach. Vì sao phải có gói thứ tám thay vì bỏ hẳn bốn bản ghi tầng cao: kho-goc/ nằm trong .gitignore, nên bảy tệp .enc đã phát hành LÀ BẢN LƯU DUY NHẤT của nội dung — cắt bốn bản ghi khỏi mọi gói là xoá luôn bản lưu duy nhất của chúng, và ở bản 9.6 chính mấy tệp ấy đã cứu được cả kho một lần. Nhưng gói chỉ gánh được MỘT trong hai luật: một gói đã cấp thì không gọi ngược về được, nên nó thi hành được TRẦN VAI mà không thi hành được GIẤY PHÉP THU HỒI ĐƯỢC — gỡ giấy phép hôm nay không xoá được bản sao nằm trong máy người ta từ hôm qua. Vì thế hồ sơ MẪU trong kho đi theo gói, còn hồ sơ khách hàng THẬT đi qua một lượt hỏi máy chủ có kiểm giấy phép và ghi sổ từng lượt; cái giá là mất mạng thì không mở được, và nó đáng. Hai lớp không được gộp: đủ điều kiện KHÁC được xem, và hai câu từ chối phải nói khác nhau vì chúng dẫn tới hai việc khác nhau. Giấy phép có hạn và hết hạn thì TỰ TẮT — một quyền chỉ mất khi có người chủ động gỡ là một quyền sẽ ở lại mãi; nó cũng không lưu xuống máy, vì một giấy phép đã thu hồi mà còn nằm trong máy thì người bị thu vẫn mở được tới lúc tải lại trang. Trần chặn cả Super Admin: cấp cho Giáo viên là máy chủ từ chối, kể cả khi người bấm nút là chính chủ hệ — trần mà người cao nhất phá được thì nó là một lời khuyên. Máy chủ giữ bản chép của trần vì nó không đọc được kho đã mã hoá, và phép đo này đối chiếu hai bản TỪNG CHỮ mỗi lần chạy: lệch một vai thì bản CHẶN mới là bản có hiệu lực, và người dùng bị từ chối mà màn hình không giải thích được vì sao. Hồ sơ nhà của CHÍNH mình không đi qua cổng này — cổng trả lời câu "được xem nhà KHÁC không", còn hồ sơ nhà mình đã có quyền riêng; lọc nhầm chỗ ấy thì phụ huynh mất luôn hồ sơ của chính họ, vì R13 chưa từng có tên trong trần nào',
+      doXK.length ? 'phép đo hỏng: ' + doXK.join(' · ')
+        : 'Tư vấn 1-3 · Coach 1-5 · Giáo viên 0 tầng · gói nghề hết tầng 4-5 · giấy phép hết hạn tự tắt · trần chặn cả Super Admin · hai bản trần khớp');
+  }
+
+  /* ══════════════════ 73. SAVE() CÓ GIỮ THẬT KHÔNG ══════════════════
      Lớp lỗi này im lặng hoàn hảo: chỗ ghi gọi G.save() đàng hoàng, save()
      chạy không lỗi, mà khoá ấy không có trong đối tượng được ghi xuống.
      Người dùng bấm nút, thấy màn đổi, F5, mất sạch, không một lời báo.
