@@ -28,7 +28,7 @@ G.KHO = { daNap: [], dangNap: [], cheDoMau: false, hanKhoa: null, lyDoTuChoi: ''
 /* Mọi thuộc tính do kho cấp phép nạp vào. Đổi vai là xoá sạch rồi nạp lại
    theo đúng phạm vi của vai mới — không để sót nội dung của vai trước. */
 G.THUOC_CAP_PHEP = [
-  'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','TEAM','CUHICH','NGHILE','SUKIEN',
+  'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
   'HEALTH','DUYET','AUDIT','TODAY','LEVELS','DIEM','HUYHIEU','QUA','HOAHONG','DANDAT','BRAND',
   'RASOAT','TAMNHIN100','TANG100','WOW','NHATBAN','CHIPHI','NGONTU_RANH','DAISU','BAIHOC',
   'MOTHUC','SACH','BANDO_A3','POSTER','SODO','PHACDO','DIEMCHAM','NGONTU','NGONTU_TANG',

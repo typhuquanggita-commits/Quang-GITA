@@ -29,7 +29,7 @@ for (const t of fs.readdirSync(NGUON).filter(f => f.endsWith('.js')).sort())
 const G = global.window.G;
 
 /* ─── Chia gói theo phạm vi cấp phép ─── */
-const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
+const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
   'NGHILE', 'SUKIEN', 'AUDIT', 'TODAY', 'LEVELS', 'DIEM', 'HUYHIEU', 'KPI100', 'QUA', 'HOAHONG', 'WOW',
   'NGONTU_RANH', 'DAISU', 'BAIHOC', 'QUA_DANG', 'KETNOI', 'LIENKET', 'KICHBAN_AI',
   /* Hành trình 12 chặng mở cho MỌI vai — gia đình cũng phải thấy mình đang
@@ -195,6 +195,21 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'FAMILIES', 'TEAM', 'CUHICH',
   'SOAT_BAT_BUOC', 'SOAT_THA', 'SOAT_MOC', 'SOAT_CHATLUONG'];
 
 const NGHE = [
+  /* ── FAMILIES VỀ GÓI NGHỀ TỪ BẢN 9.41 ──
+     Kho này mang hồ sơ MƯỜI nhà: tên nhà, tên học viên, lớp, TÊN BỐ MẸ,
+     tên Coach, điểm tự chủ, band màu, kỳ tích. Nó nằm ở gói NỀN từ đầu,
+     nghĩa là mọi vai đăng nhập — kể cả phụ huynh — nhận đủ hồ sơ của
+     CHÍN NHÀ KHÁC về máy mình.
+
+     Không màn nào của phụ huynh HIỆN mấy hồ sơ ấy. Nhưng lọc trên màn
+     hình không phải bảo vệ dữ liệu: gửi xuống rồi thì mở công cụ nhà
+     phát triển là đọc được hết. Đây là lần thứ TƯ đúng lớp lỗi ấy trong
+     kho này — KICHBAN 8.9, CV_MUC 9.7, mười bảy kho nghề 9.8.
+
+     Chỗ khó: phụ huynh vẫn cần hồ sơ CỦA CHÍNH NHÀ MÌNH. Nên gói nền
+     nhận một bản rút NHA_TOI, sinh ra từ chính FAMILIES lúc đóng gói —
+     một nguồn, hai hình, đúng cách HP_NGAY đã làm với HP_TANG. */
+  'FAMILIES',
   /* Chiều sâu năm lớp: nói rõ ở cấp nghề nào thì làm được gì và CHƯA làm
      được gì. Đây là bản đồ năng lực nội bộ của Học viện — mở ra công khai
      là chỉ cho đối thủ đúng cách dựng đội ngũ. Ở gói NGHỀ. */
@@ -451,6 +466,11 @@ goi.nen.HM_NGUY = (G.HM_NGUY || []).map(x => {
    phí thì bản rút này đổi theo trong cùng một lần chạy. Gõ tay là dựng
    bản thứ hai, và hai bản thì sẽ có ngày lệch nhau. Cùng cách đã dùng
    cho CV_MUC ở gói mẫu. */
+/* Hồ sơ nhà của CHÍNH người đang xem. Rút từ FAMILIES lúc đóng gói:
+   đúng MỘT bản ghi, và là bản ghi mà cổng gia đình vẫn đại diện. Gõ tay
+   một bản thứ hai thì sửa hồ sơ ở kho gốc mà bản rút ở lại. */
+goi.nen.NHA_TOI = (G.FAMILIES || []).slice(0, 1);
+
 goi.nen.HP_NGAY = (G.HP_TANG || []).map(t => {
   const so = String(t.ten || '').match(/\d+/);
   return { tang: t.tang, ten: t.ten, ngay: so ? Number(so[0]) : null };

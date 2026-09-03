@@ -8424,6 +8424,78 @@ const { chromium } = require(PW);
   }
 
 
+  console.log('\n68 · HỒ SƠ NHÀ KHÁC KHÔNG ĐƯỢC XUỐNG MÁY GIA ĐÌNH');
+  {
+    /* Kho FAMILIES mang hồ sơ mười nhà: tên nhà, tên học viên, lớp, TÊN
+       BỐ MẸ, tên Coach, điểm tự chủ, band màu, kỳ tích. Nó nằm ở gói NỀN
+       từ đầu, nghĩa là mọi vai đăng nhập — kể cả phụ huynh — nhận đủ hồ
+       sơ CHÍN NHÀ KHÁC về máy mình.
+
+       Không màn nào của phụ huynh hiện chúng ra. Nhưng lọc trên màn hình
+       không phải bảo vệ dữ liệu, và đây là lần thứ TƯ đúng lớp lỗi ấy:
+       KICHBAN 8.9 · CV_MUC 9.7 · mười bảy kho nghề 9.8.
+
+       CHỖ NÀY TỪNG KHÔNG ĐỎ Ở ĐÂU CẢ. Bộ kiểm có mục đối chiếu danh sách
+       THUOC_CAP_PHEP với nội dung bảy gói, nhưng nó hỏi "kho này có được
+       khai không", không hỏi "kho này có được phép xuống máy này không".
+       Mục 68 hỏi câu thứ hai. */
+    const doVai = async (u) => {
+      await p.evaluate(x => window.G.doLogin(x), u);
+      await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+        window.G.HT_TANG, { timeout: 60000 });
+      return p.evaluate(() => {
+        const G = window.G;
+        /* LUẬT CHUNG, không riêng FAMILIES: một bản ghi vừa có TÊN NHÀ
+           vừa có TÊN HỌC VIÊN là một hồ sơ gia đình. Máy gia đình được
+           giữ ĐÚNG MỘT hồ sơ — hồ sơ của chính nhà mình. Hai trở lên là
+           hồ sơ của nhà khác, và không màn nào cần tới nó.
+           Cột `ph` và `coach` một mình KHÔNG đủ để kết luận: ma trận
+           MATRAN_T* dùng đúng hai tên ấy làm cột VAI TRÒ (phụ huynh làm
+           gì, Coach làm gì), 220 bản ghi mỗi tầng, và đó không phải tên
+           người. Bắt theo cặp nha+hv thì không vướng chúng. */
+        const hoSo = [];
+        (G.THUOC_CAP_PHEP || []).forEach(function (k) {
+          const v = G[k];
+          if (!Array.isArray(v)) return;
+          const n = v.filter(function (x) { return x && x.nha && x.hv; }).length;
+          if (n) hoSo.push({ kho: k, so: n });
+        });
+        return { hoSo: hoSo, coFAMILIES: !!G.FAMILIES, soFAMILIES: (G.FAMILIES || []).length,
+          soNHA_TOI: (G.NHA_TOI || []).length, dsNha: G.dsNha().length,
+          nhaToi: G.myFamily().id,
+          /* Phép kiểm phải ĐỎ ĐƯỢC: dựng một kho hồ sơ hai nhà rồi xem
+             luật trên có bắt không. Một phép kiểm chưa từng đỏ thì chưa
+             phải phép kiểm. */
+          batDuocKhiCoHaiNha: (function () {
+            G.KHO_THU_RO = [{ nha: 'Nhà A', hv: 'Em A' }, { nha: 'Nhà B', hv: 'Em B' }];
+            G.THUOC_CAP_PHEP.push('KHO_THU_RO');
+            const bat = G.THUOC_CAP_PHEP.filter(function (k) {
+              const v = G[k];
+              return Array.isArray(v) &&
+                v.filter(function (x) { return x && x.nha && x.hv; }).length > 1;
+            }).indexOf('KHO_THU_RO') >= 0;
+            G.THUOC_CAP_PHEP.pop(); delete G.KHO_THU_RO;
+            return bat;
+          })() };
+      });
+    };
+    const ph = await doVai('phuhuynh@gita365.vn');
+    const co = await doVai('coach@gita365.vn');
+    const quaNhieu = ph.hoSo.filter(x => x.so > 1);
+
+    bao(!quaNhieu.length && ph.coFAMILIES === false && ph.soNHA_TOI === 1 &&
+        ph.dsNha === 1 && ph.nhaToi === 'F-001' && ph.batDuocKhiCoHaiNha,
+      'HỒ SƠ CỦA NHÀ KHÁC KHÔNG XUỐNG MÁY GIA ĐÌNH. Kho FAMILIES mang hồ sơ mười nhà — tên nhà, tên học viên, lớp, TÊN BỐ MẸ, tên Coach, điểm tự chủ, band màu, kỳ tích — và nó nằm ở gói NỀN từ đầu, nghĩa là một phụ huynh đăng nhập nhận đủ hồ sơ CHÍN NHÀ KHÁC về máy mình. Không màn nào hiện chúng ra, nhưng lọc trên màn hình không phải bảo vệ dữ liệu: gửi xuống rồi thì mở công cụ nhà phát triển là đọc được hết. Đây là lần thứ TƯ đúng lớp lỗi ấy trong kho này — KICHBAN 8.9, CV_MUC 9.7, mười bảy kho nghề 9.8 — và ba lần trước đều được tìm ra bằng một PHÉP ĐO mới chứ không bằng trí nhớ. Chỗ khó là phụ huynh vẫn cần hồ sơ CỦA CHÍNH NHÀ MÌNH, nên gói nền nhận một bản rút NHA_TOI sinh ra từ chính FAMILIES lúc đóng gói: một nguồn, hai hình, đúng cách HP_NGAY đã làm với HP_TANG. Luật đo ở đây là luật CHUNG chứ không riêng một kho: bản ghi nào vừa có tên nhà vừa có tên học viên thì là một hồ sơ gia đình, và máy gia đình được giữ đúng một hồ sơ. Cột ph và coach một mình không đủ để kết luận — ma trận MATRAN_T* dùng đúng hai tên ấy làm cột VAI TRÒ với 220 bản ghi mỗi tầng, và đó không phải tên người',
+      quaNhieu.length ? 'còn rò: ' + quaNhieu.map(x => x.kho + ' (' + x.so + ' nhà)').join(' · ')
+        : 'phụ huynh: 0 FAMILIES · 1 NHA_TOI (nhà mình, F-001) · luật bắt được kho hai nhà dựng thử');
+
+    bao(co.coFAMILIES === true && co.soFAMILIES === 10 && co.dsNha === 10 &&
+        co.nhaToi === 'F-003',
+      'VÀ MÁY NGHỀ KHÔNG MẤT GÌ. Coach vẫn nhận đủ mười hồ sơ để làm việc, vì FAMILIES chỉ chuyển từ gói NỀN sang gói NGHỀ chứ không bị cắt bớt. Bảy chỗ trong mã từng đọc thẳng G.FAMILIES — bốn trong số đó gọi .map() không có lưới đỡ, tức là ném lỗi ngay khi kho vắng — nay đi qua MỘT cửa G.dsNha(): có kho nghề thì trả mười nhà, không có thì trả đúng hồ sơ nhà mình. Một cửa thì chỉ phải canh một chỗ; bảy chỗ đọc thẳng thì mỗi chỗ là một lần phải NHỚ tự hỏi máy này có kho ấy không, và trí nhớ là thứ hỏng đầu tiên',
+      'coach: 10 hồ sơ · nhà đang xem F-003 — y như trước khi chuyển gói');
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

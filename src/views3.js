@@ -33,7 +33,7 @@ G.VIEWS['ve-tinh'] = function(){
       return '<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:'+size+'px;height:'+size+'px;'+
         'border-radius:50%;border:1px dashed var(--phu-5)"></div>';
     }).join('') +
-    G.dsHet(G.FAMILIES,9).map(function(f,i){
+    G.dsHet(G.dsNha(),9).map(function(f,i){
       var inner = i<4, R = inner?135:200, n = inner?4:5, k = inner?i:i-4;
       var ang = (k/n)*Math.PI*2 - Math.PI/2;
       var t = G.tierOf(f.tier);
@@ -113,19 +113,19 @@ G.VIEWS['su-kien'] = function(){
 /* ═══════════════ 05 · BUỒNG LÁI COACH ═══════════════ */
 G.VIEWS['coach-deck'] = function(){
   if(!G.can('pro_coach')) return U.lockCard();
-  var alert = G.FAMILIES.filter(function(f){return f.band==='DO'||f.band==='CAM';});
+  var alert = G.dsNha().filter(function(f){return f.band==='DO'||f.band==='CAM';});
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'flame', grad:1, t:'Buồng lái Coach',
     lead:'Mỗi buổi anh chị bước vào là một gia đình đổi hướng. Đây là nơi thấy rõ nên chạm vào đâu trước — và chạm bằng gì.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'GIA ĐÌNH PHỤ TRÁCH', v:G.FAMILIES.length, d:'trải năm tầng', c:'#5140B4'})+
+    U.stat({k:'GIA ĐÌNH PHỤ TRÁCH', v:G.dsNha().length, d:'trải năm tầng', c:'#5140B4'})+
     U.stat({k:'CẦN CHẠM TRONG 48 GIỜ', v:alert.length, d:'băng CAM và ĐỎ', c:'#BE0E16'})+
     U.stat({k:'CỔNG SẮP MỞ', v:'3', d:'chuẩn bị bằng chứng trước', c:'#0B7350'})+
     U.stat({k:'GIỜ ĐỒNG HÀNH THÁNG', v:'186', d:'tỉ lệ nghe 7 khuyên 3', c:'#185AB4'})+
   '</div>';
 
   o += U.sec('CẦN CHẠM TRƯỚC','Xếp theo băng, không theo thứ tự bảng chữ cái');
-  o += G.famTable(G.FAMILIES.slice().sort(function(a,b){
+  o += G.famTable(G.dsNha().slice().sort(function(a,b){
     var r = {DO:0,CAM:1,VANG:2,XANH:3}; return r[a.band]-r[b.band];
   }));
 

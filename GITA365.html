@@ -1739,6 +1739,22 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .bc-kem.chua>b{color:var(--ink-3)}
 .bc-kem.het{border-color:#B4720F45;background:color-mix(in srgb,#B4720F 6%,transparent)}
 .bc-kem.het>b{color:#B4720F}
+
+/* ═══ BẢNG TIN CỦA TỪNG TẦNG · v9.40 ═══
+   Ba dòng, mỗi dòng một khối rõ ràng. Dồn liền nhau thì ba mẫu thông
+   báo đọc ra một đoạn văn, và người ta không nhận ra đây là ba việc
+   khác nhau mình có thể làm để có tên trên bảng. */
+.tin-bang{display:grid;gap:10px;margin-bottom:14px}
+.tin-dong{position:relative;padding:13px 15px 12px 17px;border-radius:14px;
+  border:1px solid var(--line);background:var(--surface);overflow:hidden}
+.tin-dong::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:var(--tin-c,var(--gita))}
+.tin-nhan{display:block;font-size:10.5px;letter-spacing:.08em;font-weight:700;
+  text-transform:uppercase;color:var(--tin-c,var(--gita))}
+.tin-cau{font-size:14.5px;line-height:1.65;color:var(--ink);margin-top:5px;max-width:64ch}
+.tin-o{font-size:10.5px;letter-spacing:.04em;color:var(--ink-4);margin-top:6px}
+.tin-vi{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:4px;max-width:62ch}
+@media (max-width:640px){ .tin-cau{font-size:12.5px} }
 /* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
    một trong hai thì mắt đọc nó thành của riêng dải ấy. */
 .bc-khop{display:flex;align-items:center;gap:8px;margin:-6px 0 10px 6px;
@@ -1957,7 +1973,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.40',
+  version: '9.41',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -5258,7 +5274,7 @@ G.KHO = { daNap: [], dangNap: [], cheDoMau: false, hanKhoa: null, lyDoTuChoi: ''
 /* Mọi thuộc tính do kho cấp phép nạp vào. Đổi vai là xoá sạch rồi nạp lại
    theo đúng phạm vi của vai mới — không để sót nội dung của vai trước. */
 G.THUOC_CAP_PHEP = [
-  'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','TEAM','CUHICH','NGHILE','SUKIEN',
+  'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
   'HEALTH','DUYET','AUDIT','TODAY','LEVELS','DIEM','HUYHIEU','QUA','HOAHONG','DANDAT','BRAND',
   'RASOAT','TAMNHIN100','TANG100','WOW','NHATBAN','CHIPHI','NGONTU_RANH','DAISU','BAIHOC',
   'MOTHUC','SACH','BANDO_A3','POSTER','SODO','PHACDO','DIEMCHAM','NGONTU','NGONTU_TANG',
@@ -6885,7 +6901,7 @@ G.VIEWS['cong-nghiem-thu'] = function(){
   if(!G.can('pro_approve')) return U.lockCard();
   var o = U.ph({eyebrow:'NHÓM 02 · HÀNH TRÌNH', ic:'shield', t:'Cổng nghiệm thu',
     lead:'Qua chặng bằng bằng chứng, không bằng lời. Mỗi lần nâng chặng là trao một quyền mới kèm một trách nhiệm mới.'});
-  var rows = G.FAMILIES.map(function(f){
+  var rows = G.dsNha().map(function(f){
     var t = G.tierOf(f.tier), sang = f.ngay % 90, san = sang > 75;
     return [
       '<b>'+h(f.nha)+'</b><div class="tiny muted">'+h(f.hv)+' · '+h(f.lop)+'</div>',
@@ -7481,7 +7497,7 @@ G.VIEWS['vinh-danh'] = function(){
      nhà nào cả — nó dùng được ngay cả khi kho trống. Nên chỗ thiếu dữ
      liệu chỉ nói là chưa có nhà nào tới mốc, rồi chỉ tiếp việc phải làm,
      chứ không kéo cả màn xuống theo. */
-  var nhaKT = (G.FAMILIES || []).filter(function(f){ return f.tier >= 3; });
+  var nhaKT = G.dsNha().filter(function(f){ return f.tier >= 3; });
   o += U.sec('KỲ TÍCH NĂM ĐANG CHẠY','Ít nhất một sản phẩm, thành tựu hoặc tác động có bằng chứng');
   if(!nhaKT.length)
     o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+
@@ -7583,7 +7599,7 @@ G.VIEWS['ve-tinh'] = function(){
       return '<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:'+size+'px;height:'+size+'px;'+
         'border-radius:50%;border:1px dashed var(--phu-5)"></div>';
     }).join('') +
-    G.dsHet(G.FAMILIES,9).map(function(f,i){
+    G.dsHet(G.dsNha(),9).map(function(f,i){
       var inner = i<4, R = inner?135:200, n = inner?4:5, k = inner?i:i-4;
       var ang = (k/n)*Math.PI*2 - Math.PI/2;
       var t = G.tierOf(f.tier);
@@ -7663,19 +7679,19 @@ G.VIEWS['su-kien'] = function(){
 /* ═══════════════ 05 · BUỒNG LÁI COACH ═══════════════ */
 G.VIEWS['coach-deck'] = function(){
   if(!G.can('pro_coach')) return U.lockCard();
-  var alert = G.FAMILIES.filter(function(f){return f.band==='DO'||f.band==='CAM';});
+  var alert = G.dsNha().filter(function(f){return f.band==='DO'||f.band==='CAM';});
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'flame', grad:1, t:'Buồng lái Coach',
     lead:'Mỗi buổi anh chị bước vào là một gia đình đổi hướng. Đây là nơi thấy rõ nên chạm vào đâu trước — và chạm bằng gì.'});
 
   o += '<div class="grid g4 mb">'+
-    U.stat({k:'GIA ĐÌNH PHỤ TRÁCH', v:G.FAMILIES.length, d:'trải năm tầng', c:'#5140B4'})+
+    U.stat({k:'GIA ĐÌNH PHỤ TRÁCH', v:G.dsNha().length, d:'trải năm tầng', c:'#5140B4'})+
     U.stat({k:'CẦN CHẠM TRONG 48 GIỜ', v:alert.length, d:'băng CAM và ĐỎ', c:'#BE0E16'})+
     U.stat({k:'CỔNG SẮP MỞ', v:'3', d:'chuẩn bị bằng chứng trước', c:'#0B7350'})+
     U.stat({k:'GIỜ ĐỒNG HÀNH THÁNG', v:'186', d:'tỉ lệ nghe 7 khuyên 3', c:'#185AB4'})+
   '</div>';
 
   o += U.sec('CẦN CHẠM TRƯỚC','Xếp theo băng, không theo thứ tự bảng chữ cái');
-  o += G.famTable(G.FAMILIES.slice().sort(function(a,b){
+  o += G.famTable(G.dsNha().slice().sort(function(a,b){
     var r = {DO:0,CAM:1,VANG:2,XANH:3}; return r[a.band]-r[b.band];
   }));
 
@@ -27494,8 +27510,19 @@ G.demQuyen = function(vai){
 G.myPortal = function(){ return G.S.roleObj ? G.S.roleObj.portal : 'ph'; };
 var NHA_TRONG = {id:'—',nha:'Chưa mở hồ sơ',hv:'—',lop:'—',ph:'—',tier:1,ngay:0,
   coach:'—',nhac:0,tuchu:0,vai:0,band:'VANG',kyTich:'Cần cấp phép để mở hồ sơ gia đình'};
+/* ═══ MỘT CỬA DUY NHẤT ĐỌC HỒ SƠ NHÀ ═══
+   Máy nghề có FAMILIES (mười nhà). Máy gia đình chỉ có NHA_TOI — đúng
+   một bản ghi, hồ sơ của chính nhà mình, rút từ FAMILIES lúc đóng gói.
+
+   Đọc thẳng G.FAMILIES ở bảy chỗ như trước thì mỗi chỗ là một lần phải
+   NHỚ tự hỏi "máy này có kho ấy không". Có một cửa thì chỉ phải canh
+   một chỗ — và bốn trong bảy chỗ ấy còn đang gọi .map() thẳng, tức là
+   ném lỗi ngay khi kho vắng. */
+G.dsNha = function(){
+  return (G.FAMILIES && G.FAMILIES.length) ? G.FAMILIES : (G.NHA_TOI || []);
+};
 G.myFamily = function(){
-  var ds = G.FAMILIES;
+  var ds = G.dsNha();
   if(!ds || !ds.length) return NHA_TRONG;
   var p = G.myPortal();
   if(p==='ph' || p==='hs') return ds[0];
@@ -28175,7 +28202,7 @@ G.dauBan = dauBan;
 /* Gom dữ liệu của một loại xuất thành {cot, dong} */
 function bangXuat(ma){
   if(ma==='X2'){
-    var fs = G.FAMILIES || [];
+    var fs = G.dsNha();
     return { ten:'Danh sách khách hàng',
       cot:['Mã nhà','Học viên','Lớp','Người lớn','Tầng','Ngày','Coach','Nhắc/tuần','Tự chủ %','Vai giữ','Băng','Kỳ tích'],
       dong: fs.map(function(f){ return [f.id,f.hv,f.lop,f.ph,'T'+f.tier,f.ngay,f.coach,f.nhac,f.tuchu,f.vai+'/9',f.band,f.kyTich]; }) };
@@ -28407,7 +28434,7 @@ on('[data-cdopen]', function(el){ G.chanDungModal(el.getAttribute('data-cdopen')
    Có lúc ba tệp cùng bắt selector này ở cấp document, nên một cú bấm chip
    gợi ý hỏi trợ lý ba lần. */
 on('[data-sat]', function(el){
-  var f = G.FAMILIES.filter(function(x){return x.id===el.getAttribute('data-sat');})[0]; if(!f) return;
+  var f = G.dsNha().filter(function(x){return x.id===el.getAttribute('data-sat');})[0]; if(!f) return;
   var t = G.tierOf(f.tier);
   U.modal('<div class="row wrap" style="gap:7px;margin-bottom:9px">'+U.chip(t.code+' · '+t.name,t.c)+
     U.chip('Ngày '+f.ngay)+U.chip('Băng '+f.band, G.bandColor(f.band))+'</div>'+

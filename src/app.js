@@ -177,8 +177,19 @@ G.demQuyen = function(vai){
 G.myPortal = function(){ return G.S.roleObj ? G.S.roleObj.portal : 'ph'; };
 var NHA_TRONG = {id:'—',nha:'Chưa mở hồ sơ',hv:'—',lop:'—',ph:'—',tier:1,ngay:0,
   coach:'—',nhac:0,tuchu:0,vai:0,band:'VANG',kyTich:'Cần cấp phép để mở hồ sơ gia đình'};
+/* ═══ MỘT CỬA DUY NHẤT ĐỌC HỒ SƠ NHÀ ═══
+   Máy nghề có FAMILIES (mười nhà). Máy gia đình chỉ có NHA_TOI — đúng
+   một bản ghi, hồ sơ của chính nhà mình, rút từ FAMILIES lúc đóng gói.
+
+   Đọc thẳng G.FAMILIES ở bảy chỗ như trước thì mỗi chỗ là một lần phải
+   NHỚ tự hỏi "máy này có kho ấy không". Có một cửa thì chỉ phải canh
+   một chỗ — và bốn trong bảy chỗ ấy còn đang gọi .map() thẳng, tức là
+   ném lỗi ngay khi kho vắng. */
+G.dsNha = function(){
+  return (G.FAMILIES && G.FAMILIES.length) ? G.FAMILIES : (G.NHA_TOI || []);
+};
 G.myFamily = function(){
-  var ds = G.FAMILIES;
+  var ds = G.dsNha();
   if(!ds || !ds.length) return NHA_TRONG;
   var p = G.myPortal();
   if(p==='ph' || p==='hs') return ds[0];
@@ -858,7 +869,7 @@ G.dauBan = dauBan;
 /* Gom dữ liệu của một loại xuất thành {cot, dong} */
 function bangXuat(ma){
   if(ma==='X2'){
-    var fs = G.FAMILIES || [];
+    var fs = G.dsNha();
     return { ten:'Danh sách khách hàng',
       cot:['Mã nhà','Học viên','Lớp','Người lớn','Tầng','Ngày','Coach','Nhắc/tuần','Tự chủ %','Vai giữ','Băng','Kỳ tích'],
       dong: fs.map(function(f){ return [f.id,f.hv,f.lop,f.ph,'T'+f.tier,f.ngay,f.coach,f.nhac,f.tuchu,f.vai+'/9',f.band,f.kyTich]; }) };
@@ -1090,7 +1101,7 @@ on('[data-cdopen]', function(el){ G.chanDungModal(el.getAttribute('data-cdopen')
    Có lúc ba tệp cùng bắt selector này ở cấp document, nên một cú bấm chip
    gợi ý hỏi trợ lý ba lần. */
 on('[data-sat]', function(el){
-  var f = G.FAMILIES.filter(function(x){return x.id===el.getAttribute('data-sat');})[0]; if(!f) return;
+  var f = G.dsNha().filter(function(x){return x.id===el.getAttribute('data-sat');})[0]; if(!f) return;
   var t = G.tierOf(f.tier);
   U.modal('<div class="row wrap" style="gap:7px;margin-bottom:9px">'+U.chip(t.code+' · '+t.name,t.c)+
     U.chip('Ngày '+f.ngay)+U.chip('Băng '+f.band, G.bandColor(f.band))+'</div>'+

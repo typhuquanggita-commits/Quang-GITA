@@ -560,7 +560,7 @@ G.VIEWS['vinh-danh'] = function(){
      nhà nào cả — nó dùng được ngay cả khi kho trống. Nên chỗ thiếu dữ
      liệu chỉ nói là chưa có nhà nào tới mốc, rồi chỉ tiếp việc phải làm,
      chứ không kéo cả màn xuống theo. */
-  var nhaKT = (G.FAMILIES || []).filter(function(f){ return f.tier >= 3; });
+  var nhaKT = G.dsNha().filter(function(f){ return f.tier >= 3; });
   o += U.sec('KỲ TÍCH NĂM ĐANG CHẠY','Ít nhất một sản phẩm, thành tựu hoặc tác động có bằng chứng');
   if(!nhaKT.length)
     o += '<div class="card mb" style="border-color:var(--gita-vien-1)">'+

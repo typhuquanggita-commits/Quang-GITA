@@ -625,7 +625,7 @@ G.VIEWS['cong-nghiem-thu'] = function(){
   if(!G.can('pro_approve')) return U.lockCard();
   var o = U.ph({eyebrow:'NHÓM 02 · HÀNH TRÌNH', ic:'shield', t:'Cổng nghiệm thu',
     lead:'Qua chặng bằng bằng chứng, không bằng lời. Mỗi lần nâng chặng là trao một quyền mới kèm một trách nhiệm mới.'});
-  var rows = G.FAMILIES.map(function(f){
+  var rows = G.dsNha().map(function(f){
     var t = G.tierOf(f.tier), sang = f.ngay % 90, san = sang > 75;
     return [
       '<b>'+h(f.nha)+'</b><div class="tiny muted">'+h(f.hv)+' · '+h(f.lop)+'</div>',
