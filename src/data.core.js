@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.53',
+  version: '9.54',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -533,6 +533,22 @@ G.NAV = [
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
        tổn thương nhất và cách nó dựng ra người kèm. */
+    /* Hai màn nghề rút từ sổ tay vận hành. Cả hai khoá CHẶT HƠN
+       nghe_chung, và không phải để bộ kiểm xanh — mà vì đúng người đọc:
+
+         so-tay-van-hanh → pro_coach.  Điều lệ, thứ tự ưu tiên lúc hai
+           luật đụng nhau, điều cấm khi hệ lớn lên, kịch bản khủng
+           hoảng truyền thông. Đây là việc của lớp điều hành và Coach.
+           Mentor, Chuyên gia đánh giá, Phân tích không quyết mấy việc ấy.
+
+         tang34 → pro_consult.  Sách đồng hành tầng 3-4: việc của Trợ lý,
+           việc của Coach, câu phải nói. Mọi vai đi cùng gia đình đều cần.
+           Riêng Phân tích (R12) thì không — ban dữ liệu không soạn tin.
+
+       Và nhà mình không đọc cái nào trong hai: đọc thì thấy trước kịch
+       bản của chính buổi gặp mình sắp dự. */
+    {v:'so-tay-van-hanh', t:'Mười điều, và chỗ mỗi điều thật sự chặn', h:'Thứ tự ưu tiên · 10 điều lệ · 4 điều cấm khi lớn lên · 4 chỗ hệ gãy', ic:'compass', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'tang34',      t:'Tầng 3 và tầng 4 — việc của ai',  h:'Ranh giới Trợ lý với Coach · 5 nhịp G-I-T-S-A · 3 trụ đo · 14 dạng khó', ic:'compass', star:1, perm:'pro_consult', capMo:'nghe'},
     {v:'nam-dau',     t:'Sổ tay năm đầu',              h:'12 tháng · 6 mốc kiểm · 8 kịch bản lần đầu', ic:'compass', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'dao-tao-dh',  t:'Bốn mươi giờ đào tạo',        h:'12 buổi · 20 ca thi vai · 1 tiêu chí tuyệt đối', ic:'brain', perm:'nghe_chung', capMo:'nghe'},
     {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},

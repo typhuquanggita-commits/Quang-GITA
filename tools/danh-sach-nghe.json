@@ -1,5 +1,5 @@
 {
-  "chuY": "Mười sáu tệp mã CHỈ dựng màn của nghề, và KHÔNG tệp nền nào gọi ngược vào tên chúng định nghĩa. Chúng đi ra gita-nghe.js, chỉ tải khi giấy phép có gói nghề.",
+  "chuY": "Mười tám tệp mã CHỈ dựng màn của nghề, và KHÔNG tệp nền nào gọi ngược vào tên chúng định nghĩa. Chúng đi ra gita-nghe.js, chỉ tải khi giấy phép có gói nghề.",
   "viSao": "Đo trên bản 9.22: gói mã 1.660 KB, và 252 KB trong đó dựng màn mà gia đình, học viên, cộng tác viên KHÔNG BAO GIỜ mở được. Kho đã chia theo quyền từ bản 8.x; mã thì chưa. Đây là lần mã học lại đúng bài học ấy.",
   "cachChon": "Một tệp chỉ vào danh sách này khi (1) mọi màn nó dựng đều khoá ở quyền nghề, VÀ (2) không tệp nào ngoài danh sách gọi một cái tên nó định nghĩa. Bốn tệp nữa đủ điều kiện (1) mà vướng (2) — quy-trinh-xu-ly, kho-khach, nhan-dien, sua-noi-dung — nên ở lại gói nền cho tới khi gỡ được tên chung ra.",
   "tep": [
@@ -18,6 +18,8 @@
     "src/cai-tien.js",
     "src/luat-lam-viec.js",
     "src/nam-dau.js",
-    "src/dao-tao-dh.js"
+    "src/dao-tao-dh.js",
+    "src/so-tay-van-hanh.js",
+    "src/tang34.js"
   ]
 }

@@ -2057,11 +2057,11 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 101 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 103 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
-   16 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
-   giấy phép có gói nghề. Máy của gia đình nhẹ đi 252 KB.
+   18 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
+   giấy phép có gói nghề. Máy của gia đình nhẹ đi 313 KB.
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -2073,7 +2073,7 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 /* ═════════ sinh lúc gộp: màn nằm ở gita-nghe.js ═════════ */
 (function(){var G=window.G||{};window.G=G;
 G.MA_NGHE_TEP="gita-nghe.js";
-G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh"];
+G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34"];
 })();
 
 /* ═════════ src/data.core.js ═════════ */
@@ -2098,7 +2098,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.53',
+  version: '9.54',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2613,6 +2613,22 @@ G.NAV = [
     /* Hai màn nghề của lớp vận hành: lịch năm đầu và giáo trình bốn
        mươi giờ. Khoá ở nghe_chung — đây là cách Học viện chạy năm dễ
        tổn thương nhất và cách nó dựng ra người kèm. */
+    /* Hai màn nghề rút từ sổ tay vận hành. Cả hai khoá CHẶT HƠN
+       nghe_chung, và không phải để bộ kiểm xanh — mà vì đúng người đọc:
+
+         so-tay-van-hanh → pro_coach.  Điều lệ, thứ tự ưu tiên lúc hai
+           luật đụng nhau, điều cấm khi hệ lớn lên, kịch bản khủng
+           hoảng truyền thông. Đây là việc của lớp điều hành và Coach.
+           Mentor, Chuyên gia đánh giá, Phân tích không quyết mấy việc ấy.
+
+         tang34 → pro_consult.  Sách đồng hành tầng 3-4: việc của Trợ lý,
+           việc của Coach, câu phải nói. Mọi vai đi cùng gia đình đều cần.
+           Riêng Phân tích (R12) thì không — ban dữ liệu không soạn tin.
+
+       Và nhà mình không đọc cái nào trong hai: đọc thì thấy trước kịch
+       bản của chính buổi gặp mình sắp dự. */
+    {v:'so-tay-van-hanh', t:'Mười điều, và chỗ mỗi điều thật sự chặn', h:'Thứ tự ưu tiên · 10 điều lệ · 4 điều cấm khi lớn lên · 4 chỗ hệ gãy', ic:'compass', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'tang34',      t:'Tầng 3 và tầng 4 — việc của ai',  h:'Ranh giới Trợ lý với Coach · 5 nhịp G-I-T-S-A · 3 trụ đo · 14 dạng khó', ic:'compass', star:1, perm:'pro_consult', capMo:'nghe'},
     {v:'nam-dau',     t:'Sổ tay năm đầu',              h:'12 tháng · 6 mốc kiểm · 8 kịch bản lần đầu', ic:'compass', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'dao-tao-dh',  t:'Bốn mươi giờ đào tạo',        h:'12 buổi · 20 ca thi vai · 1 tiêu chí tuyệt đối', ic:'brain', perm:'nghe_chung', capMo:'nghe'},
     {v:'tinh-gon',    t:'Quy trình tinh gọn',          h:'7 loại lãng phí · 10 nguyên tắc cắt chi phí', ic:'lightning', perm:'nghe_chung', capMo:'nghe'},
@@ -3105,6 +3121,8 @@ G.ITEM_EN = {
   'sau-vung':['Naming the loop you are stuck in','5 zones · 1 core of self-awareness · 4 named places you fall, and the way back from each'],
   'bang-tin':['You are not walking alone','Community news · 6 criteria for a story to run · every number states where it is counted from'],
   'ban-co':['The journey board','One board per tier · one square a day · pick 1 of 10 · points weighted by what matters now'],
+  'so-tay-van-hanh':['Ten rules, and where each one actually holds','Priority order · 10 charter points · 4 things forbidden at scale · 4 places the system breaks'],
+  'tang34':['Tier 3 and tier 4 — whose job is which','Assistant/Coach boundary · the 5-beat G-I-T-S-A frame · 3 measures · 14 hard cases'],
   'coach-5-tang':['What the person walking with you must be able to do','5 coach tiers · 4 competencies each · a 10-step cycle · 1000 divided by the caps'],
   'nam-dau':['The first-year handbook','12 months · 6 checkpoints · 8 first-time playbooks'],
   'dao-tao-dh':['Forty hours of training','12 sessions · 20 role-play cases · 1 absolute criterion'],
@@ -5483,6 +5501,20 @@ G.THUOC_CAP_PHEP = [
   'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_KHONG_TIEN','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU','HH_DA_CHOT',
   'CS_VONG','CS_VONG_LUAT','CS_DULIEU','CS_DULIEU_LUAT',
   'CS_QUYMO','CS_LECH','CS_CHOCHU',
+  /* Sổ tay vận hành phần kết (SV_*) và hai tầng 3-4 (T34_*). Sách nghề
+     của người đi cùng: mức trần vận hành, chỗ hệ có thể gãy, lời phải
+     nói khi hệ sập, ranh giới vai Trợ lý với Coach, mười bốn dạng khó
+     và câu nói nguyên văn của từng dạng. Ở gói NGHỀ vì nhà mình đọc thì
+     thấy trước kịch bản của chính buổi gặp mình sắp dự. */
+  'SV_LOI','SV_THUTU','SV_THUTU_LUAT','SV_DIEULE','SV_DIEULE_LUAT',
+  'SV_CAM_QUYMO','SV_RUIRO','SV_NGANSACH_COACH','SV_NGOAI','SV_LECH',
+  'SV_CHOCHU','SV_HAI_NGUOI','SV_LUAT',
+  'T34_LOI','T34_VAI','T34_VAI_LUAT','T34_GITSA','T34_GITSA_LUAT',
+  'T34_BATRU','T34_BATRU_LUAT','T34_T3_CHANG','T34_NHANH','T34_NHANH_LUAT',
+  'T34_BUONG','T34_BUONG_LUAT','T34_BUONG_BAY','T34_T4_MUA','T34_T4_NHIP',
+  'T34_CHUQUYEN_CON','T34_THATBAI','T34_DENNHAY','T34_KHO','T34_HOSO',
+  'T34_DOI_HAUTHUAN','T34_CUARA','T34_CUARA_LUAT','T34_KPI','T34_KPI_LUAT',
+  'T34_AUDIT','T34_LECH','T34_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
@@ -31445,7 +31477,7 @@ G.MAY_KHACH_BI_CAT = function(ly){
 <script>
 /* ── gita-nghe.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — MÃ CỦA GÓI NGHỀ · 16 TỆP
+   GITA 365 — MÃ CỦA GÓI NGHỀ · 18 TỆP
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Sửa trong src/ rồi chạy:
    node tools/gop-src.js
@@ -35844,6 +35876,1088 @@ G.VIEWS = G.VIEWS || {};
       (rl.duong || []).map(function (x) { return '<div class="sm mt" style="line-height:1.8">· ' + h(x) + '</div>'; }).join('') +
       '<p class="sm mt" style="line-height:1.8">' + h(rl.nghiThuc || '') + '</p>' +
       '<p class="tiny dim mt" style="line-height:1.7">' + h(rl.vi || '') + '</p></div>';
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/so-tay-van-hanh.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY PHẦN KẾT SỔ TAY VẬN HÀNH
+
+   Kho chuẩn ở kho-goc/data.so-tay-van-hanh.js. Toàn bộ ở gói NGHỀ.
+
+   ═══ BỐN CÁI MỞ ═══
+
+   svUuTien(a, b)     hai mối lo đụng nhau thì nghe cái nào. Trả về bậc,
+                      tên, và câu vì sao — không trả về một chữ "an toàn"
+                      trống, vì người đọc cần biết cái kia thua ở đâu.
+   svCoachThang(tang) tháng Coach ở tầng này có được cắt không. Nó KHÔNG
+                      tự viết lại lời hứa: nó đọc đúng dòng trong
+                      HP_TANG.gom của tầng ấy và đưa nguyên văn ra.
+   svHaiNguoi(tang)   ca ở tầng này có bắt buộc hai người biết hồ sơ không.
+   svKichBanSap()     lời phải nói khi hệ sập giữa nhịp.
+
+   ═══ BA CÁI KHOÁ ═══
+
+   svSoiDieuLe()   mỗi điều lệ phải khai noiChay và cờ chay, và KHÔNG
+                   được mang con số trong CÂU điều lệ. Điều lệ mang số là
+                   bản thứ hai của một con số đang sống ở kho khác.
+   svSoiCoDo()     điều lệ số 7 hứa "người vào trong 24-48 giờ khi có cờ
+                   đỏ". Phép soi này đo lại lời hứa ấy trên chính AICHAM:
+                   mọi luật màu đỏ phải có mốc trong 48 giờ. Nó KHÔNG ghi
+                   lại con số 24-48 vào kho — nó đọc cột han và tự dịch.
+   svSoiKhongChep() không dòng nào của tệp này được chép nguyên văn một
+                   luật đã có ở kho khác.
+
+   ═══ VÌ SAO svSoiCoDo() ĐỌC MÀU CHỨ KHÔNG ĐỌC TÊN ═══
+
+   "Cờ đỏ" trong sổ tay không có định nghĩa bằng danh sách. Trong AICHAM
+   thì có: cột c của mỗi luật. Ba luật mang mã đỏ đậm là L03 (sắp rời
+   bỏ), L14 (việc khẩn ngoài giờ), L15 (dấu hiệu vượt phạm vi). Đọc màu
+   thì thêm một luật đỏ mới là phép soi tự bao luôn; đọc danh sách mã thì
+   luật mới lọt qua trong im lặng.
+
+   ═══ MỘT CHỖ ĐÃ SUÝT SAI ═══
+
+   Bản đầu tôi định đặt SV_HAI_NGUOI.tuTang = 4 lấy từ XK_TRAN — lằn ranh
+   quyền xem hồ sơ. Đó là lấy đúng số vì lý do sai: quyền xem là việc bảo
+   mật, người dự phòng là việc lời hứa. Nguồn thật nằm ở HP_TANG.gom của
+   T4: "Coach riêng cho cả năm, CÓ NGƯỜI THAY KHI VẮNG". T3 không có dòng
+   ấy. Hai chỗ tình cờ cùng ra số 4, và nếu tôi giữ nguồn sai thì ngày
+   XK_TRAN đổi vì lý do bảo mật, lời hứa với nhà cũng đổi theo mà không ai
+   biết vì sao.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h;
+
+  function coKho(ten) { return G[ten] !== undefined && G[ten] !== null; }
+
+  /* Số tầng từ mọi cách người ta viết: 'T4', 4, '4', 'tang4'. */
+  function soTang(t) {
+    var m = String(t == null ? '' : t).match(/(\d)/);
+    return m ? Number(m[1]) : 0;
+  }
+
+  /* ═══════════ MỞ 1: HAI MỐI LO ĐỤNG NHAU THÌ NGHE AI ═══════════ */
+  G.svUuTien = function (a, b) {
+    var ds = G.SV_THUTU || [];
+    if (!ds.length) return { chuaDo: true, thieu: 'SV_THUTU' };
+
+    function tim(x) {
+      var k = String(x == null ? '' : x).toUpperCase();
+      for (var i = 0; i < ds.length; i++)
+        if (ds[i].ma === k || String(ds[i].ten).toUpperCase() === k) return ds[i];
+      return null;
+    }
+    var A = tim(a), B = tim(b);
+    if (!A || !B) return { khongBiet: true, thieuTen: (!A ? a : b),
+      goiY: ds.map(function (x) { return x.ma; }) };
+
+    /* Cùng một mối lo thì không có gì để quyết. Nói thẳng, đừng trả về
+       một bên thắng — vì lúc ấy người đọc tưởng mình vừa được phân xử. */
+    if (A.ma === B.ma) return { bangNhau: true, ten: A.ten,
+      vi: 'Cùng một mối lo. Bảng này chỉ dùng lúc hai mối lo KHÁC nhau đụng nhau.' };
+
+    var thang = A.bac < B.bac ? A : B;
+    var thua  = A.bac < B.bac ? B : A;
+    return {
+      thang: thang.ma, tenThang: thang.ten, bacThang: thang.bac,
+      thua: thua.ma, tenThua: thua.ten, bacThua: thua.bac,
+      vi: thang.thang,
+      thuaODau: 'Không bỏ ' + thua.ten.toLowerCase() + ' — chỉ xếp nó sau. ' +
+        'Xử xong ' + thang.ten.toLowerCase() + ' thì quay lại đúng chỗ đang dở.',
+      noiChay: thang.noiChay || ''
+    };
+  };
+
+  /* ═══════════ MỞ 2: THÁNG COACH CÓ ĐƯỢC CẮT KHÔNG ═══════════ */
+  G.svCoachThang = function (tang) {
+    var cam = (G.SV_CAM_QUYMO || []).filter(function (c) { return c.ma === 'CQ-1'; })[0];
+    if (!cam) return { chuaDo: true, thieu: 'SV_CAM_QUYMO CQ-1' };
+
+    var so = soTang(tang), ma = 'T' + so;
+    var trong = (cam.tang || []).indexOf(ma) >= 0;
+    if (!trong) return { camCat: false, tang: ma,
+      vi: 'Tầng này không có tháng Coach trong phần đã bán, nên không có gì để cắt.' };
+
+    /* Đọc ĐÚNG dòng lời hứa của tầng ấy thay vì viết lại nó. HP_TANG là
+       gói nghề; máy gia đình không có, và đó là quyền chứ không phải lỗi. */
+    var loiHua = '', coBang = coKho('HP_TANG');
+    if (coBang) {
+      var b = (G.HP_TANG || []).filter(function (x) { return x.tang === ma; })[0];
+      if (b) loiHua = (b.gom || []).filter(function (d) { return /Coach/i.test(d); }).join(' · ');
+    }
+
+    return {
+      camCat: true, tang: ma,
+      luat: cam.cam,
+      vi: cam.vi,
+      thayVao: cam.thayVao,
+      loiHua: loiHua,
+      chuaDoLoiHua: !coBang,
+      thieuKho: coBang ? undefined : 'HP_TANG',
+      noiChay: 'DD_TRAN_LUAT'
+    };
+  };
+
+  /* ═══════════ MỞ 3: CA NÀY CÓ BẮT BUỘC HAI NGƯỜI KHÔNG ═══════════ */
+  G.svHaiNguoi = function (tang) {
+    var l = G.SV_HAI_NGUOI || {};
+    if (l.tuTang === undefined) return { chuaDo: true, thieu: 'SV_HAI_NGUOI' };
+    var so = soTang(tang);
+    var can = so >= Number(l.tuTang);
+    return {
+      canHaiNguoi: can, tang: 'T' + so, tuTang: 'T' + l.tuTang,
+      layTuDau: l.layTuDau || '',
+      vi: can
+        ? 'Ca tầng này phải có người dự phòng ĐÃ BIẾT hồ sơ — không phải người sẽ đọc hồ sơ khi cần.'
+        : 'Tầng này chưa hứa người thay. Không phải vì ca dễ hơn — vì lời hứa đã bán chưa gồm nó.',
+      choChuHe: can ? undefined : (l.choChuHe || '')
+    };
+  };
+
+  /* ═══════════ MỞ 4: LỜI PHẢI NÓI KHI HỆ SẬP ═══════════ */
+  G.svKichBanSap = function () {
+    var r = (G.SV_RUIRO || []).filter(function (x) { return x.ma === 'R1'; })[0];
+    if (!r) return { chuaDo: true, thieu: 'SV_RUIRO R1' };
+    return { loiNoi: r.loiNoi, vi: r.viLoiNoi, buoc: (r.buoc || []).slice(), camGiau: r.camGiau };
+  };
+
+  G.svKhungHoang = function () {
+    var r = (G.SV_RUIRO || []).filter(function (x) { return x.ma === 'R3'; })[0];
+    if (!r) return { chuaDo: true, thieu: 'SV_RUIRO R3' };
+    return { nguyenTac: r.nguyenTacSoMot, vi: r.viNguyenTacSoMot,
+      loiNoi: r.loiNoi, buoc: (r.buoc || []).slice(), cam: r.camTuyetDoi };
+  };
+
+  /* Điều lệ lọc theo vai. 'ai' hoặc 'coach'; không truyền thì lấy hết. */
+  G.svDieuLe = function (vai) {
+    var ds = G.SV_DIEULE || [];
+    if (!vai) return ds.slice();
+    return ds.filter(function (d) { return (d.buoc || []).indexOf(vai) >= 0; });
+  };
+
+  /* ═══════════ KHOÁ 1: MỖI ĐIỀU PHẢI KHAI ĐƯỢC CHỖ CHẠY ═══════════ */
+  G.svSoiDieuLe = function () {
+    var ds = G.SV_DIEULE || [], loi = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'SV_DIEULE', loi: [] };
+    if (ds.length !== 10) loi.push('điều lệ có ' + ds.length + ' điều, bản gốc mười điều');
+
+    var thay = {};
+    ds.forEach(function (d) {
+      var n = 'điều ' + d.no;
+      if (thay[d.no]) loi.push(n + ' trùng số');
+      thay[d.no] = 1;
+      if (!d.dieu) loi.push(n + ' thiếu nội dung');
+      if (!(d.buoc || []).length) loi.push(n + ' chưa khai buộc ai');
+      (d.buoc || []).forEach(function (v) {
+        if (v !== 'ai' && v !== 'coach') loi.push(n + ' buộc vai lạ: ' + v);
+      });
+
+      /* Chỗ này là cả cái luật của bảng: mọi điều đều nói được nó chặn ở
+         đâu, hoặc nói rõ chưa chặn ở đâu cả và thiếu cái gì. */
+      if (!d.noiChay) loi.push(n + ' chưa khai noiChay');
+      if (typeof d.chay !== 'boolean') loi.push(n + ' chưa khai cờ chay');
+      if (d.chay === false && !/thiếu/i.test(String(d.noiChay)))
+        loi.push(n + ' khai chưa chạy mà không nói thiếu cái gì');
+
+      /* Điều lệ mang con số là bản thứ hai của một con số đang sống ở
+         kho khác. Chữ số trong câu điều lệ thì cấm; trong noiChay thì
+         không, vì đó là tên mã luật (L01, L15, T4…). */
+      if (/\d/.test(String(d.dieu)))
+        loi.push(n + ' có con số trong câu điều lệ');
+    });
+    return { chuaDo: false, loi: loi, soDieu: ds.length,
+      chuaChay: ds.filter(function (d) { return d.chay === false; }).length };
+  };
+
+  /* ═══════════ KHOÁ 2: ĐIỀU LỆ 7 ĐO LẠI TRÊN AICHAM ═══════════
+
+     Lời hứa: người vào trong 24-48 giờ khi có cờ đỏ, không ngoại lệ.
+     Phép soi đọc cột han của mọi luật AICHAM màu đỏ đậm và dịch ra giờ.
+     Mốc "ngay lập tức" hoặc tính bằng phút thì đương nhiên đạt. */
+  var DO_DAM = ['#dc2626', '#BE0E16', '#b91c1c'];
+  var TRAN_GIO = 48;
+
+  function gioTu(han) {
+    var s = String(han || '').toLowerCase();
+    if (!s) return null;
+    if (/ngay lập tức|ngay lap tuc|trong ngày|trong ngay/.test(s)) return 0;
+    if (/phút|phut/.test(s)) return 1;                 /* mọi mốc phút đều < 48 giờ */
+    var m = s.match(/(\d+)\s*giờ|(\d+)\s*gio/);
+    if (m) return Number(m[1] || m[2]);
+    var d = s.match(/(\d+)\s*ngày|(\d+)\s*ngay/);
+    if (d) return Number(d[1] || d[2]) * 24;
+    return null;                                        /* không dịch được */
+  }
+
+  G.svSoiCoDo = function () {
+    if (!coKho('AICHAM')) return { chuaDo: true, thieu: 'AICHAM', loi: [] };
+    var ds = (G.AICHAM || {}).luat || [], loi = [], do_ = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'AICHAM.luat', loi: [] };
+
+    ds.forEach(function (l) {
+      if (DO_DAM.indexOf(String(l.c)) < 0) return;
+      do_.push(l.ma);
+      var g = gioTu(l.han);
+      if (g === null) { loi.push(l.ma + ' mốc "' + l.han + '" không dịch được ra giờ'); return; }
+      if (g > TRAN_GIO) loi.push(l.ma + ' mốc ' + g + ' giờ, vượt ' + TRAN_GIO + ' giờ của điều lệ 7');
+    });
+
+    /* Không luật đỏ nào là chính nó một lỗi: lời hứa điều 7 lúc ấy
+       không có gì đỡ, và phép soi sẽ xanh mãi mãi trong khi rỗng. */
+    if (!do_.length) loi.push('AICHAM không có luật nào màu đỏ — điều lệ 7 không có chỗ chạy');
+
+    return { chuaDo: false, loi: loi, luatDo: do_, tran: TRAN_GIO };
+  };
+
+  /* ═══════════ KHOÁ 3: KHÔNG CHÉP LẠI LUẬT ĐÃ CÓ ═══════════
+
+     Tệp này là sổ tra. Một dòng chép nguyên văn một luật ở kho khác là
+     bản thứ hai của luật ấy. So bằng câu đủ dài — dưới mười lăm chữ thì
+     trùng nhau là chuyện bình thường của tiếng Việt. */
+  G.svSoiKhongChep = function () {
+    var loi = [], nguon = [];
+    ['KBTV_BA_KHONG', 'KBTV_BA_LUON'].forEach(function (k) {
+      if (coKho(k)) (G[k] || []).forEach(function (c) { nguon.push({ kho: k, cau: String(c) }); });
+    });
+    if (coKho('KBTV_DAODUC'))
+      (G.KBTV_DAODUC || []).forEach(function (d) { nguon.push({ kho: 'KBTV_DAODUC', cau: String(d.vi || '') }); });
+    if (!nguon.length) return { chuaDo: true, thieu: 'KBTV_*', loi: [] };
+
+    function chuan(s) { return String(s || '').toLowerCase().replace(/[^\p{L}\p{N} ]/gu, ' ').replace(/\s+/g, ' ').trim(); }
+
+    var cua = [];
+    (G.SV_DIEULE || []).forEach(function (d) { cua.push({ o: 'điều lệ ' + d.no, cau: d.dieu }); });
+    (G.SV_CAM_QUYMO || []).forEach(function (c) { cua.push({ o: c.ma, cau: c.cam }); });
+
+    cua.forEach(function (x) {
+      var a = chuan(x.cau);
+      if (a.split(' ').length < 15) return;
+      nguon.forEach(function (n) {
+        if (chuan(n.cau) === a) loi.push(x.o + ' chép nguyên văn ' + n.kho);
+      });
+    });
+    return { chuaDo: false, loi: loi, soCau: cua.length, soNguon: nguon.length };
+  };
+
+  G.svChoChu = function () { return (G.SV_CHOCHU || []).slice(); };
+
+  /* ═══════════════════════════════════════════════════════════
+     MÀN HÌNH
+     ═══════════════════════════════════════════════════════════ */
+  G.VIEWS['so-tay-van-hanh'] = function () {
+    if (!G.SV_DIEULE)
+      return U.empty('Chưa mở được phần này',
+        'Phần này nằm trong gói nghề. Đăng nhập bằng tài khoản có quyền nghề để nạp.');
+
+    var loi = G.SV_LOI || {};
+    var o = U.ph({ eyebrow: 'SỔ TAY VẬN HÀNH · PHẦN KẾT 10/10', ic: 'compass', grad: 1,
+      t: 'Phần Trợ lý và Coach bấm được, ở tầng ba và tầng bốn',
+      lead: 'Sổ tay gốc viết cho Giám đốc và Quản lý vận hành. Trang này chỉ giữ phần ' +
+        'người đi cùng một nhà thật sự phải làm — phần còn lại khai ở cuối trang, kèm lý do bỏ.' });
+
+    o += '<div class="card mb" style="border-color:#0B667556">' +
+      '<p style="line-height:1.9"><b>' + h(loi.la || '') + '</b></p>' +
+      '<p class="sm mt" style="line-height:1.8">' + h(loi.phamVi || '') + '</p>' +
+      '<p class="tiny dim mt" style="line-height:1.7">' + h(loi.vi || '') + '</p>' +
+      '<p class="tiny mt" style="line-height:1.8;color:#0B6675"><b>' + h(loi.tuyenNgon || '') + '</b></p></div>';
+
+    o += G.kaKhung ? G.kaKhung('so-tay-van-hanh', 'dau') : '';
+
+    /* ── Thứ tự ưu tiên ── */
+    var tl = G.SV_THUTU_LUAT || {};
+    o += U.sec('Khi hai mối lo đụng nhau', tl.cot || '');
+    o += '<div class="card mb">' + (G.SV_THUTU || []).map(function (t) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<span class="tiny up" style="color:' + t.c + '"><b>BẬC ' + t.bac + ' · ' + h(t.ten) + '</b></span>' +
+        '<p class="sm mt" style="line-height:1.8">' + h(t.la) + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(t.thang) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Chạy ở: ' + h(t.noiChay) + '</p></div>';
+    }).join('') + '</div>';
+    o += '<p class="tiny dim mb" style="line-height:1.7">' + h(tl.vi || '') + '<br>' +
+      h(tl.viKhongDoiTheoTang || '') + '</p>';
+
+    /* Một ví dụ chạy thật, để bảng không chỉ là bảng. */
+    var vd = G.svUuTien('NHIP', 'AN_TOAN');
+    if (vd && vd.thang)
+      o += '<div class="card mb" style="border-color:#dc262644">' +
+        '<span class="tiny up dim">THỬ MỘT CA</span>' +
+        '<p class="sm mt" style="line-height:1.8">Nhà đang đứt nhịp bốn ngày, và trong tin nhắn ' +
+        'có một câu về chuyện an toàn. Nghe cái nào trước?</p>' +
+        '<p class="mt" style="line-height:1.8"><b>' + h(vd.tenThang) + ' (bậc ' + vd.bacThang + ')</b> ' +
+        'trước ' + h(vd.tenThua.toLowerCase()) + ' (bậc ' + vd.bacThua + ').</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(vd.thuaODau) + '</p></div>';
+
+    /* ── Điều lệ mười điều ── */
+    var sd = G.svSoiDieuLe();
+    var scd = G.svSoiCoDo();
+    var lech = (sd.loi || []).concat(scd.chuaDo ? [] : (scd.loi || []));
+    o += U.sec('Mười điều, và chỗ mỗi điều thật sự chặn' + (lech.length ? ' — LỆCH: ' + lech.join(' · ') : ''),
+      (G.SV_DIEULE_LUAT || {}).cot || '');
+
+    o += '<div class="card mb">' + (G.SV_DIEULE || []).map(function (d) {
+      var mau = d.chay === false ? '#B4720F' : '#0B6675';
+      return '<div style="padding:10px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + d.no + '. ' + h(d.dieu) + '</b>' +
+        '<p class="tiny mt" style="line-height:1.7">' +
+        (d.buoc || []).map(function (v) {
+          return '<span class="tiny up dim">' + (v === 'ai' ? 'TRỢ LÝ' : 'COACH') + '</span>';
+        }).join(' · ') + '</p>' +
+        '<p class="tiny mt" style="line-height:1.7;color:' + mau + '">' +
+        (d.chay === false ? h(d.noiChay) : 'Chạy ở: ' + h(d.noiChay)) + '</p></div>';
+    }).join('') + '</div>';
+    o += '<p class="tiny dim mb" style="line-height:1.7">' +
+      h((G.SV_DIEULE_LUAT || {}).viCamSo || '') + '<br>' +
+      h((G.SV_DIEULE_LUAT || {}).motDieuChuaChay || '') + '</p>';
+
+    if (!scd.chuaDo)
+      o += '<div class="card mb"><span class="tiny up dim">ĐIỀU 7 ĐO LẠI TRÊN AICHAM</span>' +
+        '<p class="sm mt" style="line-height:1.8">' + (scd.luatDo || []).length +
+        ' luật màu đỏ · trần ' + scd.tran + ' giờ · ' +
+        (scd.loi.length ? '<b style="color:#BE0E16">' + h(scd.loi.join(' · ')) + '</b>'
+                        : 'mọi mốc đều trong trần') + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">Phép soi đọc cột hạn của từng luật đỏ và tự dịch ' +
+        'ra giờ. Con số 24-48 không được chép vào kho — nó sống ở AICHAM.</p></div>';
+
+    o += G.kaKhung ? G.kaKhung('so-tay-van-hanh', 'giua') : '';
+
+    /* ── Bốn điều cấm khi tăng quy mô ── */
+    o += U.sec('Bốn điều cấm khi hệ lớn lên',
+      'Điều đầu tiên gọi thẳng tên tầng ba, tầng bốn, tầng năm — nên nó là một cổng, không phải lời khuyên.');
+    o += '<div class="card mb">' + (G.SV_CAM_QUYMO || []).map(function (c) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<span class="tiny up" style="color:#BE0E16">' + h(c.ma) +
+        (c.tang ? ' · ' + h((c.tang || []).join(' · ')) : '') + '</span>' +
+        '<p class="sm mt" style="line-height:1.8"><b>CẤM: ' + h(c.cam) + '</b></p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(c.vi) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Thay vào: ' + h(c.thayVao) + '</p>' +
+        (c.daHuaODau ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(c.daHuaODau) + '</p>' : '') +
+        '</div>';
+    }).join('') + '</div>';
+
+    /* Cổng tháng Coach chạy thật cho hai tầng chủ hệ giao. */
+    var cong = ['T3', 'T4'].map(function (t) { return G.svCoachThang(t); })
+      .filter(function (x) { return x && x.camCat; });
+    if (cong.length)
+      o += '<div class="card mb" style="border-color:#BE0E1644">' +
+        '<span class="tiny up dim">CỔNG CHẠY THẬT</span>' + cong.map(function (c) {
+          return '<p class="sm mt" style="line-height:1.8"><b>' + h(c.tang) + ' — không được cắt.</b> ' +
+            (c.chuaDoLoiHua
+              ? '<span class="tiny dim">(chưa đọc được lời hứa: máy này không có ' + h(c.thieuKho) + ')</span>'
+              : h(c.loiHua)) + '</p>';
+        }).join('') +
+        '<p class="tiny dim mt" style="line-height:1.7">Lời hứa đọc thẳng từ HP_TANG, không viết lại. ' +
+        'Sửa bảng học phí thì dòng này đổi theo trong cùng một lần.</p></div>';
+
+    /* ── Bốn rủi ro ── */
+    o += U.sec('Bốn chỗ hệ có thể gãy, và lời phải nói',
+      'Sổ tay gốc liệt sáu. Hai cái còn lại Coach không bấm được gì — khai ở cuối trang.');
+    o += (G.SV_RUIRO || []).map(function (r) {
+      return '<div class="card mb" style="border-color:' + r.c + '4d">' +
+        '<span class="tiny up" style="color:' + r.c + '">' + h(r.ma) + ' · ' + h(r.mucDo) + '</span>' +
+        '<p class="mt" style="line-height:1.9"><b>' + h(r.ten) + '</b></p>' +
+        (r.nguyenTacSoMot ? '<p class="sm mt" style="line-height:1.8;color:#BE0E16"><b>' +
+          h(r.nguyenTacSoMot) + '</b></p>' +
+          '<p class="tiny dim mt" style="line-height:1.7">' + h(r.viNguyenTacSoMot) + '</p>' : '') +
+        '<ul class="sm mt" style="line-height:1.8;padding-left:18px">' +
+        (r.buoc || []).map(function (b) { return '<li>' + h(b) + '</li>'; }).join('') + '</ul>' +
+        (r.loiNoi ? '<div class="mt" style="padding:10px 12px;border-left:3px solid ' + r.c +
+          ';background:var(--gita-nen-2)"><p class="sm" style="line-height:1.8">' +
+          '&ldquo;' + h(r.loiNoi) + '&rdquo;</p>' +
+          '<p class="tiny dim mt" style="line-height:1.7">' + h(r.viLoiNoi || r.viHoanDe || '') + '</p></div>' : '') +
+        (r.camGiau ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>' + h(r.camGiau) + '</b></p>' : '') +
+        (r.camTuyetDoi ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>' + h(r.camTuyetDoi) + '</b></p>' : '') +
+        (r.viHaiNguoi ? '<p class="tiny dim mt" style="line-height:1.7">' + h(r.viHaiNguoi) + '</p>' : '') +
+        (r.viBiBoQua ? '<p class="tiny dim mt" style="line-height:1.7">' + h(r.viBiBoQua) + '</p>' : '') +
+        '</div>';
+    }).join('');
+
+    /* Quy tắc hai người, chạy cho T3 và T4 để thấy chúng khác nhau. */
+    var hn = ['T3', 'T4'].map(function (t) { return G.svHaiNguoi(t); });
+    if (hn[0] && !hn[0].chuaDo) {
+      o += '<div class="card mb"><span class="tiny up dim">QUY TẮC HAI NGƯỜI · CHẠY THẬT</span>' +
+        hn.map(function (x) {
+          return '<p class="sm mt" style="line-height:1.8"><b>' + h(x.tang) + ': ' +
+            (x.canHaiNguoi ? 'bắt buộc hai người' : 'chưa bắt buộc') + '.</b> ' + h(x.vi) + '</p>';
+        }).join('') +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(hn[1].layTuDau || '') + '</p></div>';
+    }
+
+    /* ── Một dòng từ bảng ngân sách ── */
+    var ns = G.SV_NGANSACH_COACH || {};
+    if (ns.luat)
+      o += '<div class="card mb" style="border-color:#dc262644">' +
+        '<span class="tiny up" style="color:#dc2626">TỪ BẢNG NGÂN SÁCH · MỘT DÒNG</span>' +
+        '<p class="mt" style="line-height:1.9"><b>' + h(ns.luat) + '</b></p>' +
+        '<p class="sm mt" style="line-height:1.8">' + h(ns.nghiaLa) + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(ns.vi) + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(ns.viKhongMangConSo) + '</p></div>';
+
+    /* ── Phần không vào kho ── */
+    o += U.sec('Phần kết còn gì, và vì sao không vào kho',
+      'Khai ra để lần sau không ai chép lại ở chỗ khác.');
+    o += '<div class="card mb">' + (G.SV_NGOAI || []).map(function (n) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + h(n.ma) + ' · ' + h(n.muc) + '</b>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(n.vi) + '</p>' +
+        (n.khongDung ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' + h(n.khongDung) + '</p>' : '') +
+        (n.thayBang ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Thay bằng: ' + h(n.thayBang) + '</p>' : '') +
+        (n.daCoOKho ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Đã có ở: ' + h(n.daCoOKho) + '</p>' : '') +
+        (n.giuLaiMotDong ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Giữ lại một dòng: ' + h(n.giuLaiMotDong) + '</p>' : '') +
+        (n.giuLaiMotCau ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">' + h(n.giuLaiMotCau) + '</p>' : '') +
+        (n.canGi ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">Cần: ' + h(n.canGi) + '</p>' : '') +
+        '</div>';
+    }).join('') + '</div>';
+
+    /* ── Chỗ lệch ── */
+    o += U.sec('Chỗ phần kết lệch với kho', 'Máy đọc kho. Chỗ lệch ghi ra, không tự chọn hộ.');
+    o += '<div class="card mb">' + (G.SV_LECH || []).map(function (l) {
+      return '<div style="padding:10px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + h(l.ma) + ' · ' + h(l.o) + '</b>' +
+        '<p class="tiny mt" style="line-height:1.7"><b>Tài liệu:</b> ' + h(l.taiLieu) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.7"><b>Kho:</b> ' + h(l.kho) + '</p>' +
+        (l.tuMauThuan ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(l.tuMauThuan) + '</p>' : '') +
+        (l.phepCong ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(l.phepCong) + '</p>' : '') +
+        (l.yNghia ? '<p class="tiny mt" style="line-height:1.7">' + h(l.yNghia) + '</p>' : '') +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(l.mayLam) + '</p>' +
+        (l.noHoSo ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Hồ sơ đã mở ở: ' + h(l.noHoSo) + '</p>' : '') +
+        (l.canGi ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>Cần: ' + h(l.canGi) + '</b></p>' : '') +
+        (l.daRo ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Chỗ này không cần chủ hệ quyết.</p>' : '') +
+        '</div>';
+    }).join('') + '</div>';
+
+    /* ── Chờ chủ hệ ── */
+    if (G.SV_CHOCHU && G.SV_CHOCHU.length) {
+      o += U.sec('Câu chờ chủ hệ', 'Mã không tự trả lời được câu này.');
+      o += '<div class="card mb">' + G.svChoChu().map(function (c) {
+        return '<div style="padding:9px 0">' +
+          '<b class="sm">' + h(c.hoi) + '</b>' +
+          '<p class="tiny dim mt" style="line-height:1.7">' + h(c.boi) + '</p>' +
+          '<p class="tiny mt" style="line-height:1.7;color:#0B6675">' + h(c.toiNghieng || '') + '</p>' +
+          '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(c.mayDangLam || '') + '</p></div>';
+      }).join('') + '</div>';
+    }
+
+    o += G.kaKhung ? G.kaKhung('so-tay-van-hanh', 'cuoi') : '';
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/tang34.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY TẦNG 3 VÀ TẦNG 4 CHO TRỢ LÝ VÀ COACH
+
+   Kho chuẩn ở kho-goc/data.tang34.js. Toàn bộ ở gói NGHỀ.
+
+   ═══ SÁU CÁI MỞ ═══
+
+   t34VaiCuaAi(viec, tang)  việc này của máy hay của người. Đây là hàm
+                            quan trọng nhất tệp — audit của sổ tay ghi
+                            lỗi phổ biến nhất tầng 3 là hai vai lấn nhau.
+   t34SoiTin(tin)           một tin nhắn đã đủ nhịp G-I-T-S-A chưa. Nó
+                            KHÔNG chấm hay dở — nó chỉ hỏi có thiếu nhịp
+                            bắt buộc nào không.
+   t34BaoCao(...)           dựng báo cáo ba trụ ĐÚNG THỨ TỰ. Gọi hàm thì
+                            không đảo thứ tự được, mà đảo thứ tự là lỗi
+                            hay gặp nhất khi người soạn vội.
+   t34ChangHomNay(tang,ngay) hôm nay là chặng nào, mùa nào, mốc nào tới.
+   t34CuaRa(tang, nha)      ba cửa của ngày cuối, đã lọc qua cổng phí.
+   t34Gia(tang)             giá một tầng và giá mỗi ngày, TÍNH TẠI CHỖ
+                            từ HP_TANG.
+
+   ═══ VÌ SAO t34Gia() TÍNH CHỨ KHÔNG ĐỌC ═══
+
+   Sổ tay ghi sẵn "≈55.000đ/ngày" cho tầng 4. Con số ấy chỉ đúng nếu
+   tầng 4 là hai mươi triệu — mà kho ghi ba mươi. Chép 55.000 vào kho là
+   lén chọn hộ chủ hệ một con số tiền bằng đường vòng: không ai thấy
+   mình vừa quyết định giá, nhưng lời nói với nhà mình thì đã theo con số
+   ấy rồi.
+
+   Nên hàm này chia tại chỗ: gia ÷ soNgay. Sửa HP_TANG thì cả hai con số
+   đổi theo trong cùng một lần.
+
+   ═══ BA CÁI KHOÁ ═══
+
+   t34SoiVai()      không việc nào khai hai chủ; mọi việc đều khai tầng.
+   t34SoiThuTu()    ba trụ phải đúng thứ tự Thái độ → Kỹ năng → Kiến thức
+                    trong CHÍNH kho, không chỉ trong lời hứa.
+   t34SoiCuaRa()    mọi cửa loại lên tầng phải khai quaCongPhi = true.
+                    Một cửa mời lên tầng mà không qua cổng là một đường
+                    vòng quanh luật đã chốt — và đường vòng thì không ai
+                    thấy cho tới lúc có người đi qua.
+
+   ═══ MỘT CHỖ SUÝT SAI ═══
+
+   Bản đầu t34CuaRa() lọc bỏ hẳn cửa lên tầng khi cổng phí đóng. Sai:
+   lọc bỏ thì màn hình còn hai cửa và người soạn tưởng ngày ấy chỉ có
+   hai đường. Nay nó GIỮ cửa và gắn nhãn cổng đóng, kèm lý do — người
+   soạn cần biết cửa ấy có tồn tại và vì sao hôm nay chưa mở.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h;
+  var SO_NGAY = { T3: 90, T4: 365 };
+
+  function coKho(ten) { return G[ten] !== undefined && G[ten] !== null; }
+  function maTang(t) { var m = String(t == null ? '' : t).match(/(\d)/); return m ? 'T' + m[1] : ''; }
+  function bo(s) {
+    return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd');
+  }
+
+  /* ═══════════ MỞ 1: VIỆC NÀY CỦA AI ═══════════ */
+  G.t34VaiCuaAi = function (viec, tang) {
+    var ds = G.T34_VAI || [];
+    if (!ds.length) return { chuaDo: true, thieu: 'T34_VAI' };
+    var k = bo(viec), ma = maTang(tang);
+
+    var hop = ds.filter(function (v) {
+      if (ma && (v.tang || []).indexOf(ma) < 0) return false;
+      return bo(v.viec).indexOf(k) >= 0 || k.indexOf(bo(v.viec)) >= 0;
+    });
+    if (!hop.length) return { khongBiet: true, viec: viec, tang: ma,
+      goiY: ds.filter(function (v) { return !ma || (v.tang || []).indexOf(ma) >= 0; })
+              .map(function (v) { return v.viec; }) };
+
+    var v = hop[0];
+    return {
+      cua: v.cua, viec: v.viec, tang: (v.tang || []).slice(),
+      vi: v.vi,
+      han: v.han,
+      camAiLam: v.camAiLam,
+      phaiQua: v.nhungPhaiQua,
+      dieuKien: v.dieuKien,
+      cot: (G.T34_VAI_LUAT || {}).cot || ''
+    };
+  };
+
+  /* ═══════════ MỞ 2: TIN NÀY ĐỦ NHỊP CHƯA ═══════════
+
+     Không chấm hay dở. Chỉ hỏi: có thiếu nhịp BẮT BUỘC nào không.
+     Nhận vào một đối tượng {G:'…', I:'…', T:'…', S:'…', A:'…'} — vì
+     đoán nhịp từ một khối chữ liền thì đoán sai, và đoán sai ở đây
+     nguy hơn không đo: người soạn tin sẽ tin vào một con dấu rỗng. */
+  G.t34SoiTin = function (tin) {
+    var ds = G.T34_GITSA || [];
+    if (!ds.length) return { chuaDo: true, thieu: 'T34_GITSA' };
+    tin = tin || {};
+    var thieu = [], coLuoc = [];
+    ds.forEach(function (n) {
+      var co = String(tin[n.nhip] || '').trim().length > 0;
+      if (co) return;
+      if (n.luocDuoc) coLuoc.push(n.nhip);
+      else thieu.push(n.nhip + ' — ' + n.ten);
+    });
+    return {
+      dat: thieu.length === 0,
+      thieu: thieu,
+      daLuoc: coLuoc,
+      vi: thieu.length
+        ? (G.T34_GITSA_LUAT || {}).viIvaT || ''
+        : 'Đủ nhịp bắt buộc.' + (coLuoc.length ? ' Lược ' + coLuoc.join(', ') + ' — cho phép ở tin ngắn.' : '')
+    };
+  };
+
+  /* ═══════════ MỞ 3: BÁO CÁO BA TRỤ, ĐÚNG THỨ TỰ ═══════════ */
+  G.t34BaoCao = function (noiDung) {
+    var ds = (G.T34_BATRU || []).slice().sort(function (a, b) { return a.thu - b.thu; });
+    if (!ds.length) return { chuaDo: true, thieu: 'T34_BATRU' };
+    noiDung = noiDung || {};
+    var l = G.T34_BATRU_LUAT || {};
+    return {
+      moBang: l.loiMoChuan || '',
+      dong: ds.map(function (t) {
+        return { ma: t.ma, ten: t.ten, c: t.c,
+          noiDung: String(noiDung[t.ma] || '').trim(),
+          trong: !String(noiDung[t.ma] || '').trim(),
+          layTuDau: t.docTuDau };
+      }),
+      thuTu: l.thuTuBaoCao || '',
+      viNguoc: l.viNguoc || ''
+    };
+  };
+
+  /* ═══════════ MỞ 4: HÔM NAY LÀ CHẶNG NÀO ═══════════ */
+  G.t34ChangHomNay = function (tang, ngay) {
+    var ma = maTang(tang), n = Number(ngay) || 0;
+    if (ma === 'T3') {
+      var ds = G.T34_T3_CHANG || [];
+      if (!ds.length) return { chuaDo: true, thieu: 'T34_T3_CHANG' };
+      var c = ds.filter(function (x) {
+        var m = String(x.ngay).split(/[–-]/);
+        return n >= Number(m[0]) && n <= Number(m[1]);
+      })[0];
+      if (!c) return { ngoaiChang: true, tang: ma, ngay: n, tong: SO_NGAY.T3 };
+      return { tang: ma, ngay: n, chang: c.so, chuDe: c.chuDe, tru: (c.tru || []).slice(),
+        sanPham: c.sanPham, moc: (c.moc || []).slice(), c: c.c, tong: SO_NGAY.T3 };
+    }
+    if (ma === 'T4') {
+      var dm = G.T34_T4_MUA || [];
+      if (!dm.length) return { chuaDo: true, thieu: 'T34_T4_MUA' };
+      var thang = Math.max(1, Math.min(12, Math.ceil(n / 30.4)));
+      var q = dm.filter(function (x) {
+        var m = String(x.thang).split(/[–-]/);
+        return thang >= Number(m[0]) && thang <= Number(m[1]);
+      })[0];
+      if (!q) return { ngoaiChang: true, tang: ma, ngay: n, tong: SO_NGAY.T4 };
+      return { tang: ma, ngay: n, thang: thang, quy: q.quy, mua: q.mua, chuDe: q.chuDe,
+        sanPham: q.sanPham, moc: (q.moc || []).slice(), c: q.c, tong: SO_NGAY.T4 };
+    }
+    return { khongPhaiTang34: true, tang: ma };
+  };
+
+  /* ═══════════ MỞ 5: GIÁ, TÍNH TẠI CHỖ ═══════════ */
+  G.t34Gia = function (tang) {
+    var ma = maTang(tang);
+    if (!coKho('HP_TANG')) return { chuaDo: true, thieu: 'HP_TANG' };
+    var b = (G.HP_TANG || []).filter(function (x) { return x.tang === ma; })[0];
+    if (!b) return { khongCo: true, tang: ma };
+    if (b.gia === null || b.gia === undefined)
+      return { chuaCoGia: true, tang: ma,
+        vi: 'Chủ Học viện chưa điền giá tầng này. Chưa điền thì không hiện bảng giá.' };
+    var soNgay = SO_NGAY[ma] || 0;
+    return {
+      tang: ma, ten: b.ten, gia: b.gia, donVi: b.donVi,
+      soNgay: soNgay,
+      moiNgay: soNgay ? Math.round(b.gia / soNgay) : undefined,
+      tinhTaiCho: true,
+      viTinh: 'Chia tại chỗ từ HP_TANG.gia. Không ghi sẵn con số mỗi ngày vào kho — ghi sẵn là ' +
+        'chốt hộ một con số tiền bằng đường vòng.'
+    };
+  };
+
+  /* ═══════════ MỞ 6: BA CỬA CỦA NGÀY CUỐI ═══════════
+
+     Giữ cả ba cửa. Cửa lên tầng thì gắn nhãn cổng — mở hay chưa, và vì
+     sao. Lọc bỏ hẳn thì người soạn tưởng ngày ấy chỉ có hai đường. */
+  G.t34CuaRa = function (tang, nha) {
+    var ma = maTang(tang);
+    var ds = (G.T34_CUARA || []).filter(function (c) { return c.tang === ma; });
+    if (!ds.length) return { chuaDo: true, thieu: 'T34_CUARA', tang: ma };
+
+    var cong = null;
+    if (typeof G.tvCongPhi === 'function') { try { cong = G.tvCongPhi(nha); } catch (e) { cong = null; } }
+
+    return {
+      tang: ma,
+      ngay: ds[0].ngay,
+      cua: ds.map(function (c) {
+        var r = { ma: c.ma, ten: c.ten, loai: c.loai, loi: c.loi, quaCongPhi: !!c.quaCongPhi };
+        if (!c.quaCongPhi) { r.mo = true; return r; }
+        if (!cong) { r.mo = false; r.viChua = 'Chưa hỏi được cổng phí — thiếu dữ liệu nhà mình. Cổng đóng.'; return r; }
+        r.mo = !!cong.noiPhi;
+        if (!r.mo) r.viChua = cong.vi || 'Cổng phí chưa mở. Khép chặng bình thường, không nói phí.';
+        if (r.mo && c.tangKe) {
+          var g = G.t34Gia(c.tangKe);
+          if (g && g.gia !== undefined) { r.giaTangKe = g.gia; r.moiNgay = g.moiNgay; }
+          else r.giaChuaDoc = true;
+        }
+        return r;
+      }),
+      cam: (G.T34_CUARA_LUAT || {}).camTuyetDoi || '',
+      viCam: (G.T34_CUARA_LUAT || {}).viCamTuyetDoi || ''
+    };
+  };
+
+  G.t34Kho = function (tang) {
+    var ma = maTang(tang);
+    return (G.T34_KHO || []).filter(function (k) { return !ma || k.tang === ma; });
+  };
+  G.t34Kpi = function (tang) {
+    var ma = maTang(tang);
+    return (G.T34_KPI || []).filter(function (k) { return !ma || k.tang === ma; });
+  };
+
+  /* ═══════════ KHOÁ 1: RANH GIỚI VAI KHÔNG ĐƯỢC MỜ ═══════════ */
+  G.t34SoiVai = function () {
+    var ds = G.T34_VAI || [], loi = [], thay = {};
+    if (!ds.length) return { chuaDo: true, thieu: 'T34_VAI', loi: [] };
+    ds.forEach(function (v) {
+      var n = '"' + v.viec + '"';
+      if (v.cua !== 'ai' && v.cua !== 'coach') loi.push(n + ' chủ lạ: ' + v.cua);
+      if (!(v.tang || []).length) loi.push(n + ' chưa khai tầng');
+      (v.tang || []).forEach(function (t) {
+        if (t !== 'T3' && t !== 'T4') loi.push(n + ' khai tầng ngoài phạm vi: ' + t);
+      });
+      if (!v.vi) loi.push(n + ' chưa nói vì sao');
+      var k = bo(v.viec);
+      if (thay[k]) loi.push(n + ' khai hai lần');
+      thay[k] = 1;
+    });
+    /* Cả hai vai đều phải có việc. Bảng chỉ có một vai là bảng không
+       phân được ranh giới nào cả. */
+    ['ai', 'coach'].forEach(function (v) {
+      if (!ds.filter(function (x) { return x.cua === v; }).length)
+        loi.push('không việc nào thuộc ' + v);
+    });
+    return { chuaDo: false, loi: loi, soViec: ds.length,
+      cuaAi: ds.filter(function (x) { return x.cua === 'ai'; }).length,
+      cuaCoach: ds.filter(function (x) { return x.cua === 'coach'; }).length };
+  };
+
+  /* ═══════════ KHOÁ 2: BA TRỤ ĐÚNG THỨ TỰ TRONG CHÍNH KHO ═══════════ */
+  G.t34SoiThuTu = function () {
+    var ds = G.T34_BATRU || [], loi = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'T34_BATRU', loi: [] };
+    var dung = ['THAIDO', 'KYNANG', 'KIENTHUC'];
+    ds.slice().sort(function (a, b) { return a.thu - b.thu; }).forEach(function (t, i) {
+      if (t.ma !== dung[i]) loi.push('trụ thứ ' + (i + 1) + ' là ' + t.ma + ', phải là ' + dung[i]);
+      if (t.thu !== i + 1) loi.push(t.ma + ' mang số thứ tự ' + t.thu);
+    });
+    if (ds.length !== 3) loi.push('có ' + ds.length + ' trụ, phải ba');
+    var l = G.T34_BATRU_LUAT || {};
+    if (!l.thuTuBaoCao) loi.push('chưa khai thứ tự báo cáo');
+    if (!l.viNguoc) loi.push('chưa nói vì sao thứ tự ngược với câu phụ huynh hỏi');
+    return { chuaDo: false, loi: loi };
+  };
+
+  /* ═══════════ KHOÁ 3: CỬA LÊN TẦNG PHẢI QUA CỔNG ═══════════ */
+  G.t34SoiCuaRa = function () {
+    var ds = G.T34_CUARA || [], loi = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'T34_CUARA', loi: [] };
+    ds.forEach(function (c) {
+      if (c.loai === 'len-tang' || c.loai === 'gia-han') {
+        if (c.quaCongPhi !== true) loi.push(c.ma + ' mời lên tầng mà không qua cổng phí');
+        if (c.loai === 'len-tang' && !c.tangKe) loi.push(c.ma + ' chưa khai tầng kế');
+      }
+      /* Con số tiền trong lời thoại là bản thứ hai của HP_TANG.gia. */
+      if (/\d[\d.,]*\s*(triệu|nghìn|đồng|đ\/)/i.test(String(c.loi || '')))
+        loi.push(c.ma + ' có con số tiền nằm cứng trong lời');
+    });
+    ['T3', 'T4'].forEach(function (t) {
+      var n = ds.filter(function (c) { return c.tang === t; }).length;
+      if (n < 3) loi.push(t + ' chỉ có ' + n + ' cửa, sổ tay ghi ba');
+    });
+    return { chuaDo: false, loi: loi, soCua: ds.length };
+  };
+
+  /* ═══════════════════════════════════════════════════════════
+     MÀN HÌNH
+     ═══════════════════════════════════════════════════════════ */
+  G.VIEWS['tang34'] = function () {
+    if (!G.T34_VAI)
+      return U.empty('Chưa mở được phần này',
+        'Phần này nằm trong gói nghề. Đăng nhập bằng tài khoản có quyền nghề để nạp.');
+
+    var loi = G.T34_LOI || {};
+    var o = U.ph({ eyebrow: 'TẦNG 3 · TẦNG 4', ic: 'compass', grad: 1,
+      t: 'Việc của Trợ lý, việc của Coach — và lằn ranh giữa hai bên',
+      lead: 'Chín mươi ngày và ba trăm sáu lăm ngày. Đây là chỗ người thật bước vào ' +
+        'và đứng cạnh máy suốt bốn trăm năm mươi lăm ngày.' });
+
+    o += '<div class="card mb" style="border-color:#0B667556">' +
+      '<p style="line-height:1.9;font-size:1.05em"><b>' + h(loi.vaiChuyen || '') + '</b></p>' +
+      '<p class="sm mt" style="line-height:1.8"><b>Tầng 3 —</b> ' + h(loi.t3 || '') + '</p>' +
+      '<p class="sm" style="line-height:1.8"><b>Tầng 4 —</b> ' + h(loi.t4 || '') + '</p>' +
+      '<p class="tiny dim mt" style="line-height:1.7">' + h(loi.viDiChung || '') + '</p></div>';
+
+    o += G.kaKhung ? G.kaKhung('tang34', 'dau') : '';
+
+    /* ── Ranh giới vai ── */
+    var sv = G.t34SoiVai();
+    o += U.sec('Việc nào của máy, việc nào của người' + (sv.loi && sv.loi.length ? ' — LỆCH: ' + sv.loi.join(' · ') : ''),
+      (G.T34_VAI_LUAT || {}).hailoi || '');
+    o += '<div class="card mb">' + (G.T34_VAI || []).map(function (v) {
+      var la = v.cua === 'ai';
+      var mau = la ? '#0B6675' : '#B4720F';
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<span class="tiny up" style="color:' + mau + '"><b>' + (la ? 'TRỢ LÝ' : 'COACH') + '</b></span> ' +
+        '<span class="tiny dim">' + h((v.tang || []).join(' · ')) + '</span>' +
+        '<p class="sm mt" style="line-height:1.8"><b>' + h(v.viec) + '</b>' +
+        (v.han ? ' <span class="tiny dim">— ' + h(v.han) + '</span>' : '') + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(v.vi) + '</p>' +
+        (v.camAiLam ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' + h(v.camAiLam) + '</p>' : '') +
+        (v.nhungPhaiQua ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">Máy đề nghị, ' +
+          h(v.nhungPhaiQua) + ' chốt.</p>' : '') +
+        (v.dieuKien ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Điều kiện: ' + h(v.dieuKien) + '</p>' : '') +
+        '</div>';
+    }).join('') + '</div>';
+    o += '<p class="tiny dim mb" style="line-height:1.7">' +
+      h((G.T34_VAI_LUAT || {}).viCoachKhongOmNhip || '') + '</p>';
+
+    /* ── Khuôn năm nhịp ── */
+    var gl = G.T34_GITSA_LUAT || {};
+    o += U.sec('Năm nhịp dựng một tin nhắn — G-I-T-S-A', gl.cot || '');
+    o += '<div class="card mb">' + (G.T34_GITSA || []).map(function (n) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + h(n.nhip) + ' — ' + h(n.ten) + '</b> ' +
+        (n.luocDuoc ? '<span class="tiny dim">lược được ở tin ngắn</span>'
+                    : '<span class="tiny" style="color:#BE0E16">KHÔNG bao giờ lược</span>') +
+        '<p class="sm mt" style="line-height:1.8">' + h(n.lam) + '</p>' +
+        (n.tuNen ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Từ nên dùng: ' +
+          h((n.tuNen || []).join(' · ')) + '</p>' : '') +
+        (n.tuTranh ? '<p class="tiny" style="line-height:1.7;color:#BE0E16">Từ phải tránh: ' +
+          h((n.tuTranh || []).join(' · ')) + '</p>' : '') +
+        '</div>';
+    }).join('') + '</div>';
+    o += '<p class="tiny dim mb" style="line-height:1.7">' + h(gl.viIvaT || '') + '<br>' +
+      h(gl.khongDaChuoiNamVong || '') + '</p>';
+
+    /* ── Ba trụ, và một báo cáo dựng thật ── */
+    var st = G.t34SoiThuTu();
+    var bt = G.T34_BATRU_LUAT || {};
+    o += U.sec('Ba trụ đo, và thứ tự báo cáo' + (st.loi && st.loi.length ? ' — LỆCH: ' + st.loi.join(' · ') : ''),
+      bt.thuTuBaoCao || '');
+    o += '<div class="card mb">' + (G.T34_BATRU || []).map(function (t) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<span class="tiny up" style="color:' + t.c + '"><b>' + t.thu + '. ' + h(t.ten) + '</b></span>' +
+        '<p class="sm mt" style="line-height:1.8">' + h(t.la) + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">Lấy từ: ' + h(t.docTuDau) + '</p></div>';
+    }).join('') + '</div>';
+    o += '<div class="card mb" style="border-color:#B4720F44">' +
+      '<p class="tiny up dim">CÂU MỞ CHUẨN — NÓI Ở BÁO CÁO ĐẦU TIÊN</p>' +
+      '<p class="sm mt" style="line-height:1.8">&ldquo;' + h(bt.loiMoChuan || '') + '&rdquo;</p>' +
+      '<p class="tiny dim mt" style="line-height:1.7">' + h(bt.viNguoc || '') + '</p>' +
+      '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(bt.kienThucChuyenTre || '') + '</p></div>';
+
+    o += G.kaKhung ? G.kaKhung('tang34', 'giua') : '';
+
+    /* ── Tầng 3: ba chặng ── */
+    o += U.sec('Tầng 3 — ba chặng ba mươi ngày', 'Coach gặp bốn lần: ngày 10, 30, 60, 90.');
+    o += (G.T34_T3_CHANG || []).map(function (c) {
+      return '<div class="card mb" style="border-color:' + c.c + '4d">' +
+        '<span class="tiny up" style="color:' + c.c + '">CHẶNG ' + c.so + ' · NGÀY ' + h(c.ngay) +
+        ' · TRỤ ' + h((c.tru || []).join(' + ')) + '</span>' +
+        '<p class="mt" style="line-height:1.9"><b>' + h(c.chuDe) + '</b></p>' +
+        '<p class="sm mt" style="line-height:1.8">Sản phẩm cuối chặng: ' + h(c.sanPham) + '</p>' +
+        '<ul class="tiny mt" style="line-height:1.8;padding-left:18px">' +
+        (c.moc || []).map(function (m) { return '<li>' + h(m) + '</li>'; }).join('') + '</ul></div>';
+    }).join('');
+
+    /* Ba nhánh khám phá */
+    if (G.T34_NHANH) {
+      o += U.sec('Ba nhánh khám phá thế mạnh', (G.T34_NHANH_LUAT || {}).cot || '');
+      o += '<div class="card mb">' + (G.T34_NHANH || []).map(function (n) {
+        return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + h(n.ten) + '</b>' +
+          '<p class="tiny mt" style="line-height:1.7">Thử: ' + h(n.thu) + '</p>' +
+          '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Máy ghi: ' +
+          h((n.ghiGi || []).join(' · ')) + '</p>' +
+          '<p class="tiny mt" style="line-height:1.7">Cửa mạnh: ' + h(n.cuaManh) + '</p>' +
+          '<p class="tiny mt" style="line-height:1.8">&ldquo;' + h(n.loiMoi) + '&rdquo;</p></div>';
+      }).join('') + '</div>';
+      o += '<p class="tiny dim mb" style="line-height:1.7">' +
+        h((G.T34_NHANH_LUAT || {}).viGhiHanhVi || '') + '<br>' +
+        h((G.T34_NHANH_LUAT || {}).banDoSaiLaViecDaTra || '') + '</p>';
+    }
+
+    /* Buông có kiểm soát */
+    if (G.T34_BUONG) {
+      o += U.sec('Tuần 9 đến 12 — buông có kiểm soát', (G.T34_BUONG_LUAT || {}).cot || '');
+      o += '<div class="card mb">' + (G.T34_BUONG || []).map(function (b) {
+        return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">Tuần ' + b.tuan + ' — bỏ: ' + h(b.bo) + '</b>' +
+          '<p class="tiny mt" style="line-height:1.8">&ldquo;' + h(b.noiVoiNha) + '&rdquo;</p></div>';
+      }).join('') + '</div>';
+      o += '<p class="tiny mb" style="line-height:1.7;color:#BE0E16">' +
+        h((G.T34_BUONG_LUAT || {}).loiThuongGap || '') + '</p>';
+      o += '<div class="card mb">' + (G.T34_BUONG_BAY || []).map(function (b) {
+        return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">Bẫy: ' + h(b.bay) + '</b>' +
+          '<p class="tiny dim mt" style="line-height:1.7">Dấu hiệu: ' + h(b.dauHieu) + '</p>' +
+          (b.khongLam ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' + h(b.khongLam) + '</p>' : '') +
+          '<p class="tiny mt" style="line-height:1.8">&ldquo;' + h(b.xuLy) + '&rdquo;</p></div>';
+      }).join('') + '</div>';
+    }
+
+    /* ── Tầng 4: bốn mùa ── */
+    o += U.sec('Tầng 4 — bốn quý, bốn mùa', 'Coach gặp mười hai lần, mỗi tháng một buổi.');
+    o += (G.T34_T4_MUA || []).map(function (q) {
+      return '<div class="card mb" style="border-color:' + q.c + '4d">' +
+        '<span class="tiny up" style="color:' + q.c + '">QUÝ ' + q.quy + ' · THÁNG ' + h(q.thang) +
+        ' · ' + h(q.mua).toUpperCase() + '</span>' +
+        '<p class="mt" style="line-height:1.9"><b>' + h(q.chuDe) + '</b></p>' +
+        '<p class="sm mt" style="line-height:1.8">Sản phẩm cuối quý: ' + h(q.sanPham) + '</p>' +
+        (q.loiChuyen ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">' + h(q.loiChuyen) + '</p>' : '') +
+        '<ul class="tiny mt" style="line-height:1.8;padding-left:18px">' +
+        (q.moc || []).map(function (m) { return '<li>' + h(m) + '</li>'; }).join('') + '</ul></div>';
+    }).join('');
+
+    if (G.T34_T4_NHIP) {
+      o += '<div class="card mb"><span class="tiny up dim">NHỊP VẬN HÀNH TẦNG 4</span>' +
+        (G.T34_T4_NHIP || []).map(function (n) {
+          var ten = n.cua === 'ai' ? 'TRỢ LÝ' : (n.cua === 'coach' ? 'COACH' : 'CẢ HỆ');
+          return '<p class="sm mt" style="line-height:1.8"><b>' + h(n.nhip) + ' · ' + ten + ':</b> ' +
+            h(n.lam) + '</p>' +
+            (n.vi ? '<p class="tiny dim" style="line-height:1.7">' + h(n.vi) + '</p>' : '') +
+            (n.chuanBi ? '<p class="tiny" style="line-height:1.7;color:#B4720F">' + h(n.chuanBi) + '</p>' : '');
+        }).join('') + '</div>';
+    }
+
+    if (G.T34_CHUQUYEN_CON) {
+      var cq = G.T34_CHUQUYEN_CON;
+      o += '<div class="card mb" style="border-color:#0B667544">' +
+        '<span class="tiny up" style="color:#0B6675">CHỦ QUYỀN CỦA CON · TỪ ' + h(cq.tuTang) + '</span>' +
+        '<p class="mt" style="line-height:1.9"><b>' + h(cq.luat) + '</b></p>' +
+        '<p class="sm mt" style="line-height:1.8">Điều kiện: ' + h(cq.dieuKien) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.7">Nếu không mở: ' + h(cq.neuKhongMo) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(cq.meBietKhongCanThiep) + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(cq.vi) + '</p></div>';
+    }
+
+    /* ── Hai kịch bản phải thuộc ── */
+    var tb = G.T34_THATBAI;
+    if (tb) {
+      o += U.sec('Kịch bản thất bại công khai — bắt buộc thuộc', tb.viBatBuoc || '');
+      o += '<div class="card mb" style="border-color:#BE0E1644">' +
+        (tb.buoc || []).map(function (b) {
+          return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+            '<b class="sm">' + h(b.khi) + '</b>' +
+            (b.khongLam ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' + h(b.khongLam) + '</p>' : '') +
+            '<p class="tiny mt" style="line-height:1.7">' + h(b.lam) + '</p>' +
+            (b.loiNoi ? '<p class="sm mt" style="line-height:1.8">&ldquo;' + h(b.loiNoi) + '&rdquo;</p>' : '') +
+            (b.luat ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>' + h(b.luat) + '</b></p>' : '') +
+            '</div>';
+        }).join('') +
+        '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>' + h(tb.loiNguyHiemNhat) + '</b></p></div>';
+    }
+
+    var dn = G.T34_DENNHAY;
+    if (dn) {
+      o += U.sec('Chế độ Đèn nháy — có cửa ngõ lớn trong lộ trình', dn.batKhiNao || '');
+      o += '<div class="card mb">' + (dn.buoc || []).map(function (b) {
+        return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + b.no + '. ' + h(b.lam) + '</b>' +
+          (b.vi ? '<p class="tiny dim mt" style="line-height:1.7">' + h(b.vi) + '</p>' : '') +
+          (b.baCau ? '<ul class="tiny mt" style="line-height:1.8;padding-left:18px">' +
+            (b.baCau || []).map(function (c) { return '<li>' + h(c) + '</li>'; }).join('') + '</ul>' : '') +
+          (b.cam ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' + h(b.cam) + '</p>' : '') +
+          (b.loiNoi ? '<p class="tiny mt" style="line-height:1.8">&ldquo;' + h(b.loiNoi) + '&rdquo;</p>' : '') +
+          '</div>';
+      }).join('') +
+        '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>' + h(dn.ketQuaThiKhongDoLoTrinh) + '</b></p></div>';
+    }
+
+    /* ── Mười bốn dạng khó ── */
+    o += U.sec('Mười bốn dạng khó — sáu của tầng 3, tám của tầng 4',
+      'Mỗi dạng kèm câu nói. Câu nói là chỗ dễ hỏng nhất, nên nó ghi nguyên văn.');
+    o += '<div class="card mb">' + (G.T34_KHO || []).map(function (k) {
+      var mau = k.tang === 'T3' ? '#0B6675' : '#B4720F';
+      return '<div style="padding:10px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<span class="tiny up" style="color:' + mau + '">' + h(k.ma) + ' · ' + h(k.tang) +
+        (k.aiXu === 'coach' ? ' · COACH XỬ' : '') + '</span>' +
+        '<p class="sm mt" style="line-height:1.8"><b>' + h(k.ten) + '</b></p>' +
+        (k.khongCoiThuong ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>' + h(k.khongCoiThuong) + '</b></p>' : '') +
+        '<p class="tiny mt" style="line-height:1.7">' + h(k.xuLy) + '</p>' +
+        (k.ngheAiTruoc ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(k.ngheAiTruoc) + '</p>' : '') +
+        (k.noiVoiNha ? '<p class="tiny mt" style="line-height:1.8">&ldquo;' + h(k.noiVoiNha) + '&rdquo;</p>' : '') +
+        (k.luat ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>' + h(k.luat) + '</b></p>' : '') +
+        (k.cam ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' + h(k.cam) + '</p>' : '') +
+        (k.khiNaoChuyen ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' + h(k.khiNaoChuyen) + '</p>' : '') +
+        (k.khiNaoChuyenTuyen ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' + h(k.khiNaoChuyenTuyen) + '</p>' : '') +
+        (k.neuEpGayGat ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(k.neuEpGayGat) + '</p>' : '') +
+        (k.neuConMuonTuDi ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(k.neuConMuonTuDi) + '</p>' : '') +
+        (k.loTrinh ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">' + h(k.loTrinh) + '</p>' : '') +
+        (k.vi ? '<p class="tiny dim mt" style="line-height:1.7">' + h(k.vi) + '</p>' : '') +
+        (k.viKhongCam ? '<p class="tiny dim mt" style="line-height:1.7">' + h(k.viKhongCam) + '</p>' : '') +
+        '</div>';
+    }).join('') + '</div>';
+
+    /* ── Hồ sơ năm ── */
+    var hs = G.T34_HOSO;
+    if (hs) {
+      o += U.sec('Hồ sơ tài năng năm — sản phẩm lớn nhất tầng 4', hs.aiSoan || '');
+      o += '<div class="card mb">' + (hs.muc || []).map(function (m) {
+        return '<div style="padding:7px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + h(m.ma) + ' · ' + h(m.ten) + '</b>' +
+          (m.batBuoc ? ' <span class="tiny" style="color:#BE0E16">BẮT BUỘC CÓ</span>' : '') +
+          (m.viBatBuoc ? '<p class="tiny dim mt" style="line-height:1.7">' + h(m.viBatBuoc) + '</p>' : '') +
+          '</div>';
+      }).join('') +
+        '<p class="tiny mt" style="line-height:1.7;color:#0B6675">' + h(hs.dichSoMuc) + '</p></div>';
+    }
+
+    /* ── Ba cửa của ngày cuối, chạy thật qua cổng phí ── */
+    var scr = G.t34SoiCuaRa();
+    o += U.sec('Ba cửa của ngày cuối' + (scr.loi && scr.loi.length ? ' — LỆCH: ' + scr.loi.join(' · ') : ''),
+      (G.T34_CUARA_LUAT || {}).loiTuSoTayCuaTuTvCongPhi || '');
+    ['T3', 'T4'].forEach(function (t) {
+      var r = G.t34CuaRa(t, typeof G.myFamily === 'function' ? G.myFamily() : null);
+      if (r.chuaDo) return;
+      o += '<div class="card mb"><span class="tiny up dim">' + h(r.tang) + ' · NGÀY ' + r.ngay + '</span>' +
+        (r.cua || []).map(function (c) {
+          return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+            '<b class="sm">' + h(c.ten) + '</b> ' +
+            (c.quaCongPhi
+              ? (c.mo ? '<span class="tiny" style="color:#0B6675">cổng phí MỞ</span>'
+                      : '<span class="tiny" style="color:#B4720F">cổng phí CHƯA MỞ</span>')
+              : '<span class="tiny dim">không qua cổng phí</span>') +
+            '<p class="tiny mt" style="line-height:1.8">&ldquo;' + h(c.loi) + '&rdquo;</p>' +
+            (c.viChua ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(c.viChua) + '</p>' : '') +
+            (c.moiNgay !== undefined
+              ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Giá tầng kế đọc từ HP_TANG: ' +
+                Number(c.giaTangKe).toLocaleString('vi-VN') + ' đồng — khoảng ' +
+                Number(c.moiNgay).toLocaleString('vi-VN') + ' đồng mỗi ngày, tính tại chỗ.</p>'
+              : '') +
+            '</div>';
+        }).join('') + '</div>';
+    });
+    o += '<p class="tiny mb" style="line-height:1.7;color:#BE0E16"><b>' +
+      h((G.T34_CUARA_LUAT || {}).camTuyetDoi || '') + '</b> ' +
+      h((G.T34_CUARA_LUAT || {}).viCamTuyetDoi || '') + '</p>';
+    o += '<p class="tiny dim mb" style="line-height:1.7">' +
+      h((G.T34_CUARA_LUAT || {}).congDongThiVanKhanhThanh || '') + '</p>';
+
+    /* ── KPI ── */
+    o += U.sec('KPI hai tầng', (G.T34_KPI_LUAT || {}).motDichBangMotTram || '');
+    ['T3', 'T4'].forEach(function (t) {
+      var ds = G.t34Kpi(t);
+      if (!ds.length) return;
+      o += '<div class="card mb"><span class="tiny up dim">' + t + '</span>' + ds.map(function (k) {
+        return '<div style="padding:7px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + h(k.ten) + '</b> ' +
+          '<span class="tiny" style="color:#0B6675">' + (k.nguoc ? '≤ ' : '≥ ') +
+          h(String(k.dich)) + ' ' + h(k.donVi) + '</span>' +
+          '<p class="tiny dim mt" style="line-height:1.7">' + h(k.y) + '</p></div>';
+      }).join('') + '</div>';
+    });
+    o += '<p class="tiny dim mb" style="line-height:1.7">' +
+      h((G.T34_KPI_LUAT || {}).viKhongChep || '') + '</p>';
+
+    if (G.T34_AUDIT) {
+      o += U.sec('Audit hai tầng', 'Đọc gì, và soi vào đâu.');
+      o += '<div class="card mb">' + (G.T34_AUDIT || []).map(function (a) {
+        return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + h(a.tang) + ' — ' + h(a.matDo) + '</b>' +
+          (a.viThua ? '<p class="tiny dim mt" style="line-height:1.7">' + h(a.viThua) + '</p>' : '') +
+          '<ul class="tiny mt" style="line-height:1.8;padding-left:18px">' +
+          (a.trongDiem || []).map(function (x) { return '<li>' + h(x) + '</li>'; }).join('') +
+          '</ul></div>';
+      }).join('') + '</div>';
+    }
+
+    /* ── Chỗ lệch ── */
+    o += U.sec('Chỗ sổ tay lệch với kho', 'Máy đọc kho. Chỗ lệch ghi ra, không tự chọn hộ.');
+    o += '<div class="card mb">' + (G.T34_LECH || []).map(function (l) {
+      return '<div style="padding:10px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm">' + h(l.ma) + ' · ' + h(l.o) + '</b>' +
+        '<p class="tiny mt" style="line-height:1.7"><b>Sổ tay:</b> ' + h(l.taiLieu) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.7"><b>Kho:</b> ' + h(l.kho) + '</p>' +
+        (l.vanDe ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(l.vanDe) + '</p>' : '') +
+        (l.phepChia ? '<p class="tiny mt" style="line-height:1.7;color:#B4720F">' + h(l.phepChia) + '</p>' : '') +
+        (l.dayLaLanThuMay ? '<p class="tiny mt" style="line-height:1.7">' + h(l.dayLaLanThuMay) + '</p>' : '') +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(l.mayLam) + '</p>' +
+        (l.noHoSo ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Hồ sơ đã mở ở: ' + h(l.noHoSo) + '</p>' : '') +
+        (l.suaGhiCu ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">' + h(l.suaGhiCu) + '</p>' : '') +
+        (l.canGi ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>Cần: ' + h(l.canGi) + '</b></p>' : '') +
+        (l.daRo ? '<p class="tiny mt" style="line-height:1.7;color:#0B6675">Chỗ này không cần chủ hệ quyết.</p>' : '') +
+        '</div>';
+    }).join('') + '</div>';
+
+    o += G.kaKhung ? G.kaKhung('tang34', 'cuoi') : '';
     return o;
   };
 })();

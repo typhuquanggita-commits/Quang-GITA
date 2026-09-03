@@ -102,6 +102,20 @@ G.THUOC_CAP_PHEP = [
   'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_KHONG_TIEN','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU','HH_DA_CHOT',
   'CS_VONG','CS_VONG_LUAT','CS_DULIEU','CS_DULIEU_LUAT',
   'CS_QUYMO','CS_LECH','CS_CHOCHU',
+  /* Sổ tay vận hành phần kết (SV_*) và hai tầng 3-4 (T34_*). Sách nghề
+     của người đi cùng: mức trần vận hành, chỗ hệ có thể gãy, lời phải
+     nói khi hệ sập, ranh giới vai Trợ lý với Coach, mười bốn dạng khó
+     và câu nói nguyên văn của từng dạng. Ở gói NGHỀ vì nhà mình đọc thì
+     thấy trước kịch bản của chính buổi gặp mình sắp dự. */
+  'SV_LOI','SV_THUTU','SV_THUTU_LUAT','SV_DIEULE','SV_DIEULE_LUAT',
+  'SV_CAM_QUYMO','SV_RUIRO','SV_NGANSACH_COACH','SV_NGOAI','SV_LECH',
+  'SV_CHOCHU','SV_HAI_NGUOI','SV_LUAT',
+  'T34_LOI','T34_VAI','T34_VAI_LUAT','T34_GITSA','T34_GITSA_LUAT',
+  'T34_BATRU','T34_BATRU_LUAT','T34_T3_CHANG','T34_NHANH','T34_NHANH_LUAT',
+  'T34_BUONG','T34_BUONG_LUAT','T34_BUONG_BAY','T34_T4_MUA','T34_T4_NHIP',
+  'T34_CHUQUYEN_CON','T34_THATBAI','T34_DENNHAY','T34_KHO','T34_HOSO',
+  'T34_DOI_HAUTHUAN','T34_CUARA','T34_CUARA_LUAT','T34_KPI','T34_KPI_LUAT',
+  'T34_AUDIT','T34_LECH','T34_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',

@@ -420,7 +420,22 @@ const NGHE = [
   'TL_KE', 'TL_DUONG', 'TL_LUAT', 'TL_TRICH', 'TL_BAOQUAN',
   'KHACHLON_NGUON', 'KHACH_TANG', 'NAM_TANG_PHUCVU', 'TAM_NAM_TANG', 'NAC_QUANHE',
   'NAC_TRUNGTHANH', 'TAM_MATXICH', 'HOSO68', 'MUOIHAI_NGUYENTAC', 'NHANTANG',
-  'NAM_BUOC_KHIEUNAI', 'GIU124', 'VISAO_ROIDI', 'KHACHLON_CAU', 'LUAT_LAMVIEC'];
+  'NAM_BUOC_KHIEUNAI', 'GIU124', 'VISAO_ROIDI', 'KHACHLON_CAU', 'LUAT_LAMVIEC',
+  /* Sổ tay vận hành phần kết (SV_*) và hai tầng 3-4 (T34_*). Sách nghề
+     của người đi cùng: mức trần vận hành, chỗ hệ có thể gãy, lời phải
+     nói khi hệ sập, ranh giới vai Trợ lý với Coach, mười bốn dạng khó
+     và câu nói nguyên văn của từng dạng. Ở gói NGHỀ vì nhà mình đọc thì
+     thấy trước kịch bản của chính buổi gặp mình sắp dự. */
+  'SV_LOI','SV_THUTU','SV_THUTU_LUAT','SV_DIEULE','SV_DIEULE_LUAT',
+  'SV_CAM_QUYMO','SV_RUIRO','SV_NGANSACH_COACH','SV_NGOAI','SV_LECH',
+  'SV_CHOCHU','SV_HAI_NGUOI','SV_LUAT',
+  'T34_LOI','T34_VAI','T34_VAI_LUAT','T34_GITSA','T34_GITSA_LUAT',
+  'T34_BATRU','T34_BATRU_LUAT','T34_T3_CHANG','T34_NHANH','T34_NHANH_LUAT',
+  'T34_BUONG','T34_BUONG_LUAT','T34_BUONG_BAY','T34_T4_MUA','T34_T4_NHIP',
+  'T34_CHUQUYEN_CON','T34_THATBAI','T34_DENNHAY','T34_KHO','T34_HOSO',
+  'T34_DOI_HAUTHUAN','T34_CUARA','T34_CUARA_LUAT','T34_KPI','T34_KPI_LUAT',
+  'T34_AUDIT','T34_LECH','T34_LUAT',
+];
 
 const goi = {};
 goi.nen  = Object.fromEntries(NEN.map(k => [k, G[k]]).filter(([, v]) => v !== undefined));
