@@ -9066,6 +9066,81 @@ const { chromium } = require(PW);
     ra.khachKhongCoTinhHuong = kh.soTH === 0;
     ra.khachBoKeyRong = kh.soKey === 0;
 
+    /* ── GIỌNG, SÁU MŨ, CÂU PHÁT SINH (9.50) ──
+       Quay lại tài khoản TƯ VẤN: khối trên vừa chuyển sang phụ huynh để
+       đo luật tài sản nghề, mà kbNghiepVu() cố ý trả null cho khách. Đo
+       lớp nghiệp vụ trên máy khách là đo một thứ được thiết kế để không
+       có ở đó. */
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.evaluate(() => window.G.doLogin('tuvan@gita365.vn'));
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.KB_MU && window.G.PHACDO, { timeout: 60000 });
+    const gn = await p.evaluate(() => {
+      const G = window.G, r = {};
+      /* Sáu mũ đặt ĐÚNG vòng, không rải đều. */
+      r.muDungVong = (G.KB_MU || []).length === 6 &&
+        G.gnMu('BOICANH')[0].ma === 'TRANG' && G.gnMu('COTLOI')[0].ma === 'DO' &&
+        G.gnMu('DUNGTANG')[0].ma === 'DEN' && G.gnMu('MOTVIEC').length === 2 &&
+        G.gnMu('DO')[0].ma === 'XANHDUONG';
+      /* MŨ ĐEN CHẶN THẬT ở hai vòng đầu. Người vừa kể chuyện nhà mình mà
+         nghe ngay một câu cảnh báo thì họ đóng máy. */
+      r.muDenChan = G.gnDoiMuDuoc('DEN', 'BOICANH') === false &&
+        G.gnDoiMuDuoc('DEN', 'COTLOI') === false &&
+        G.gnDoiMuDuoc('DEN', 'DUNGTANG') === true;
+      /* Câu mở KHÔNG lặp lượt kế — chỗ người ta nhận ra một cái khuôn. */
+      G.gnQuenMo();
+      const mo = [G.gnMoDau('BOICANH'), G.gnMoDau('BOICANH'), G.gnMoDau('BOICANH')];
+      r.moKhongLap = new Set(mo).size === 3;
+      /* Bắt nhịp lấy chữ RIÊNG, không lấy chữ chung. */
+      const bn = G.gnBatNhip('Cháu nó lì lắm, tối nào cũng phải nhắc mấy lần');
+      r.batNhipChuRieng = bn.indexOf('lì') >= 0 &&
+        bn.indexOf('cũng') < 0 && bn.indexOf('phải') < 0;
+      /* Câu cấm bị bắt — một câu cấm lọt ra là một câu người đọc nhận ra
+         ngay là lắp sẵn. */
+      r.batCauCam = G.gnSoiCam('Anh chị nên đừng lo, theo hệ thống của chúng tôi thì ổn')
+        .length === 3 && G.gnSoiCam('Tối nay mình ghi ba dòng thôi.').length === 0;
+      /* HỎI THẲNG THÌ TRẢ LỜI THẲNG. Đường này không được vòng vo. */
+      r.noiThat = G.gnHoiLaMay('em là người hay máy vậy') === true &&
+        G.gnHoiLaMay('con tôi lười quá') === false &&
+        /không phải người thật/.test(G.gnNoiThat() || '');
+      /* Câu phát sinh bắt theo Ý, và chuyện sức khoẻ thì CHUYỂN NGƯỜI THẬT. */
+      r.batPhatSinh = G.gnPhatSinh('bao lâu thì thấy kết quả').ma === 'PS-01' &&
+        G.gnPhatSinh('học phí bao nhiêu tiền').ma === 'PS-04' &&
+        G.gnPhatSinh('nhà tôi thử rồi không được').ma === 'PS-02';
+      r.sucKhoeChuyenNguoi =
+        G.gnPhatSinh('con tôi có bị tăng động không').chuyenNguoiThat === true;
+      /* Trả lời rồi QUAY LẠI vòng đang dở — bỏ chuỗi để chạy theo câu hỏi
+         phụ là mất chỗ vừa khoanh được. */
+      r.quayLaiVong = G.gnPhatSinh('học phí bao nhiêu').quayLaiVongDangDo === true;
+      /* Kho phát sinh khai TRẢ LỜI DỰA VÀO ĐÂU, không khai câu viết sẵn. */
+      r.khongVietSanCau = (G.KB_PHATSINH || []).length >= 20 &&
+        (G.KB_PHATSINH || []).every(x => x.dua && x.ranh) &&
+        (G.KB_PHATSINH_LUAT || {}).khongVietSanCauTraLoi === true;
+      /* Nghiệp vụ chia theo VAI, và Giáo viên KHÔNG đọc hồ sơ nhà. */
+      const gv = (G.KB_NGHIEPVU || []).filter(x => (x.vai || []).indexOf('R08') >= 0)[0];
+      r.giaoVienChuyenMonKhongHoSo = !!gv && gv.khongDocHoSoNha === true &&
+        (gv.doc || []).indexOf('PHACDO.coach') < 0;
+      /* Cột `coach` chỉ nhánh Coach đọc — nó nói cả việc KHÔNG được làm. */
+      const co = (G.KB_NGHIEPVU || []).filter(x => (x.vai || []).indexOf('R07') >= 0)[0];
+      r.chiCoachDocCotCoach = !!co && (co.doc || []).indexOf('PHACDO.coach') >= 0 &&
+        (G.KB_NGHIEPVU || []).filter(x => (x.doc || []).indexOf('PHACDO.coach') >= 0).length === 1;
+      /* Và mọi trường khai ở bảng đều đọc được thật — không dòng nào báo
+         thiếu trong khi kho có đủ. */
+      const nv = G.kbNghiepVu('con không tự giác phải nhắc mới học');
+      r.nghiepVuDocDuoc = !!nv && nv.phacDo && nv.soThieu === 0;
+      return r;
+    });
+    Object.keys(gn).forEach(k => { ra[k] = gn[k]; });
+
+    const doGN = ['muDungVong', 'muDenChan', 'moKhongLap', 'batNhipChuRieng', 'batCauCam',
+      'noiThat', 'batPhatSinh', 'sucKhoeChuyenNguoi', 'quayLaiVong', 'khongVietSanCau',
+      'giaoVienChuyenMonKhongHoSo', 'chiCoachDocCotCoach', 'nghiepVuDocDuoc'].filter(k => !ra[k]);
+    bao(!doGN.length,
+      'GIỌNG NÓI, SÁU CHIẾC MŨ, VÀ NGHIỆP VỤ CHIA THEO VAI. Chủ hệ đặt: lời trợ lý phải mượt như một tư vấn có nghề, bắt nhịp khéo, không nghe ra là câu lắp sẵn. Phần ngôn từ làm đúng thế — mỗi vòng nhiều cách mở, chọn xoay vòng, không lặp lượt kế, vì lặp một câu mở hai lượt liền chính là chỗ người ta nhận ra đang nói chuyện với một cái khuôn. Bắt nhịp là nhắc lại đúng CHỮ của nhà mình chứ không dịch sang thuật ngữ, và phải là chữ RIÊNG: bản đầu lọc theo độ dài nên nhà kể "cháu nó LÌ lắm, tối nào cũng phải nhắc" thì trợ lý nhắc lại "cũng · phải" — đúng luật mà sai hoàn toàn ý; chữ đáng nhắc lại thường NGẮN (lì, ì, cãi, khóc) nên nay lọc theo danh sách chữ chung. NHƯNG MỘT VẾ LÀM KHÁC LỜI ĐẶT, VÀ NÓI RÕ VÌ SAO: chủ hệ nói "không để lộ là được lập trình sẵn"; khi có người hỏi thẳng em là người hay máy thì trợ lý NÓI THẬT, một câu, rồi quay lại việc đang dở. Không phải đạo đức suông mà là một lẽ thực dụng — gia đình nào phát hiện mình bị giấu chuyện ấy sẽ mất tin vào TOÀN BỘ hệ, kể cả những phần thật nhất, và cái mất ấy không mua lại được bằng mấy lượt trò chuyện nghe mượt hơn. Mượt mà nằm ở cách bắt nhịp, không nằm ở việc giả làm người. SÁU MŨ ĐẶT ĐÚNG VÒNG, KHÔNG RẢI ĐỀU: mỗi vòng một việc nên một mũ, trừ vòng bốn có hai mũ đi liền — xanh lá đưa việc, vàng nói cái được, vì một việc không có cái được đi kèm thì nó là lời dặn và lời dặn thì tối thứ ba là quên. Mũ đen bị CHẶN THẬT ở hai vòng đầu: đúng chỗ nó là món quà, sớm một vòng là một lời doạ, và người vừa kể chuyện nhà mình mà nghe ngay câu cảnh báo thì họ đóng máy đúng lúc mình vừa có đủ dữ kiện để giúp. Trợ lý không bao giờ gọi tên mũ ra — gọi tên khung là biến cuộc trò chuyện thành buổi trình bày phương pháp. KHO CÂU PHÁT SINH khai TRẢ LỜI DỰA VÀO ĐÂU chứ không khai câu viết sẵn: viết sẵn hai mươi câu là dựng hai mươi chỗ sẽ lệch với kho, mà người đọc tin câu đang mở trước mắt chứ không tin kho; bắt theo Ý nên phủ được phần lớn câu bật ra thật, và chuyện sức khoẻ thì chuyển thẳng người thật, không chẩn đoán, không trấn an. NGHIỆP VỤ CHIA THEO VAI chứ không theo bậc: Giáo viên bậc 8 đọc cột ph, Coach bậc 7 đọc cột coach — bậc không nói được điều đó. Cột coach nói cả những việc người dẫn KHÔNG được làm, nên chỉ nhánh Coach đọc; Giáo viên được đọc chuyên môn nhưng không đọc hồ sơ gia đình, đúng chỗ bản 9.47 đã tách',
+      doGN.length ? 'phép đo hỏng: ' + doGN.join(' · ')
+        : '6 mũ đúng vòng · mũ đen chặn ở 2 vòng đầu · câu mở không lặp · bắt nhịp lấy "lì" không lấy "cũng" · hỏi thẳng nói thật · 20 loại phát sinh · Giáo viên đọc chuyên môn, không đọc hồ sơ nhà');
+
     const doKB = ['coKey', 'keyTheoKho', 'chiTinhHuongTraLoi', 'dungVong', 'hepDan',
       'khucTuKho', 'khucChuKhongChep', 'vongLap', 'khongThuVeRong', 'moiCoGia',
       'giaTuKho', 'chuaCoGiaThiNoi', 'khaiThangChuaChay',

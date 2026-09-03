@@ -943,6 +943,31 @@ textarea.inp{resize:vertical;min-height:70px;line-height:1.6}
 .kb-moi p{font-size:12.5px;line-height:1.6;color:var(--ink-3);margin-bottom:5px}
 .kb-moi-duoc{color:var(--ink-2)}
 .kb-moi-gia{font-weight:700;color:var(--ink-2)}
+/* Giọng: câu mở và bắt nhịp đứng trước khối vòng, nhẹ hơn nó có chủ ý —
+   đây là lời dẫn, không phải nội dung. */
+.gn-mo{font-size:16px;line-height:1.65;color:var(--ink);margin-bottom:8px}
+.gn-nhip{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:11px;
+  font-size:12.5px;color:var(--ink-4)}
+.gn-nhip svg{flex:none}
+.gn-that{padding:11px 14px;border-radius:var(--r-sm);background:var(--phu-1);
+  border:1px solid var(--line);margin-bottom:12px}
+.gn-ps{margin-bottom:13px;padding:12px 14px;border-radius:var(--r-sm);
+  background:var(--phu-1);border-left:3px solid var(--ink-4)}
+.gn-ps-nguoi{border-left-color:#BE0E16}
+.gn-ps-loai{font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-4)}
+.gn-ps-ranh{font-size:14.5px;line-height:1.65;color:var(--ink-2);margin:5px 0 7px}
+/* Nghiệp vụ theo vai — chỉ người trong nghề thấy khối này. */
+.kb-nv{margin:0 0 14px;padding:13px 15px;border-radius:var(--r-sm);
+  background:var(--phu-1);border:1px solid var(--line);border-left:3px solid #5140B4}
+.kb-nv-h{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap;margin-bottom:7px}
+.kb-nv-vai{font-size:10.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  color:#5140B4}
+.kb-nv-h b{font-size:12.5px;line-height:1.4}
+.kb-nv-lam{font-size:12.5px;line-height:1.6;color:var(--ink-3);margin-bottom:9px}
+.kb-nv-muc{padding:8px 0;border-top:1px solid var(--gita-vien-2)}
+.kb-nv-tr{display:block;font-size:10.5px;color:var(--ink-4);margin-bottom:3px}
+.kb-nv-muc p{font-size:14.5px;line-height:1.65;color:var(--ink-2)}
 .ai-go{display:flex;gap:9px;padding:14px 20px;border-top:1px solid var(--line);background:var(--phu-1)}
 .ai-go input{flex:1;min-width:0;background:var(--surface);border:1px solid var(--line);
   border-radius:99px;padding:12px 20px;font-size:14.5px;outline:none;color:var(--ink)}

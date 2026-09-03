@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 82 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 83 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 98 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 99 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    16 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.49',
+  version: '9.50',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3422,7 +3422,8 @@ G.THUOC_CAP_PHEP = [
   'TIN_LOAI','TIN_NGUON','TIN_NGUON_LUAT','TIN_SO_LUAT','TIN_TIEUCHI','TIN_TIEUCHI_LUAT',
   'TIN_THUONG','TIN_CAM','TIN_LUAT','TIN_LOAI_LUAT','TIN_MAU','TIN_TANG_LUAT',
   'TIN_KEM_THUONG','BK_LUAT','BK_DANHMUC','BK_DANHMUC_LUAT','TG_MUC','TG_VIEC',
-  'KB_VONG','KB_KEY_NGUON','KB_LUAT','KB_MOI_TANG','KB_CHOCHU',
+  'KB_MU','KB_MU_LUAT','KB_GIONG','KB_PHATSINH','KB_PHATSINH_LUAT',
+  'KB_VONG','KB_KEY_NGUON','KB_LUAT','KB_MOI_TANG','KB_CHOCHU','KB_NGHIEPVU','KB_NGHIEPVU_LUAT',
   'TL_TANG_TRUONG','TL_TANG_LUAT','TL_VIEC_NHIP','TL_VIEC_LUAT','TL_VIEC_DAU',
   'XK_TRAN','XK_MUC','XK_CAM','XK_LUAT','XK_GIAYPHEP','XK_CHOCHU',
   'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_KHONG_TIEN','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU','HH_DA_CHOT',
@@ -15724,8 +15725,29 @@ G.chatHoi = function(cauHoi){
   if(laCauMoi){ kbCau = cauHoi; kbDa = []; }
   else kbDa.push(cauHoi);
   var d = G.aiTraLoi(laCauMoi ? cauHoi : kbCau);
-  if(G.kbChuoi && G.LA_KHACH && G.LA_KHACH() && !d.khan)
+  /* Chuỗi chạy cho những vai kho khai ở KB_LUAT.chayChoAi — hôm nay là
+     Tư vấn và nhánh Coach. Bản đầu chạy cho MỖI khách hàng, tức là đúng
+     nhóm KHÔNG có kho tình huống trên máy: chuỗi rỗng cho người có nó
+     trong tay, và im lặng cho người không có. */
+  var chay = ((G.KB_LUAT || {}).chayChoAi || []).indexOf(G.S.role) >= 0;
+  if(G.kbChuoi && chay && !d.khan){
     d.chuoi = G.kbChuoi(kbCau, kbDa);
+    if(G.kbNghiepVu) d.nghiepVu = G.kbNghiepVu(kbCau);
+    if(G.gnMoDau && d.chuoi){
+      d.mo = G.gnMoDau(d.chuoi.vong.ma);
+      d.mu = (G.gnMu(d.chuoi.vong.ma) || []).filter(function(m){
+        return G.gnDoiMuDuoc(m.ma, d.chuoi.vong.ma);
+      });
+      d.batNhip = G.gnBatNhip(kbCau);
+    }
+  }
+  /* Hỏi thẳng thì trả lời thẳng — một câu, rồi quay lại việc đang dở.
+     Đường này đứng NGOÀI mọi điều kiện vai và mọi trạng thái chuỗi: ai
+     hỏi cũng được trả lời, kể cả giữa lúc đang khẩn. */
+  if(G.gnHoiLaMay && G.gnHoiLaMay(cauHoi)) d.noiThat = G.gnNoiThat();
+  /* Câu bật ra giữa chừng. Trả lời rồi QUAY LẠI vòng đang dở — bỏ chuỗi
+     để chạy theo câu hỏi phụ là mất chỗ vừa khoanh được. */
+  if(G.gnPhatSinh && !d.khan) d.phatSinh = G.gnPhatSinh(cauHoi);
   G.CHAT.push({ai:'trolY', dap:d, luc:new Date()});
   if(G.secLog) G.secLog('Hỏi trợ lý',
     cauHoi.slice(0, 80) + ' → ' + (d.khan ? 'chuyển người thật' : d.nguon.length + ' nguồn'),
@@ -15782,8 +15804,34 @@ function theDap(d){
      Đứng ĐẦU câu trả lời. Người đang mệt đọc được hai dòng đầu; nếu hai
      dòng ấy là một danh sách tư liệu thì họ đóng máy, còn nếu là một câu
      hỏi trả lời được thì họ trả lời. */
+  /* Hỏi thẳng thì đứng đầu, trước cả chuỗi. */
+  if(d.noiThat)
+    o += '<p class="ai-loi gn-that">'+h(d.noiThat)+'</p>';
+
+  /* Câu bật ra giữa chừng: nói RÕ trả lời dựa vào đâu và ranh giới ở
+     đâu, rồi mới quay lại vòng. Giấu ranh giới đi thì tới lúc chạm vào
+     nó, người ta thấy mình bị chặn chứ không thấy mình được nói trước. */
+  if(d.phatSinh){
+    var ps = d.phatSinh;
+    o += '<div class="gn-ps'+(ps.chuyenNguoiThat ? ' gn-ps-nguoi' : '')+'">'+
+      '<span class="gn-ps-loai">'+h(ps.loai)+'</span>'+
+      '<p class="gn-ps-ranh">'+h(ps.ranh)+'</p>'+
+      (ps.chuyenNguoiThat
+        ? '<a class="btn sm pri" href="tel:0855554688">'+ic('bell','w-3 h-3')+'Chuyển người thật</a>'
+        : '<p class="tiny dim">Trả lời dựa vào: '+h(ps.dua)+'</p>')+
+      (ps.quayLaiVongDangDo ? '<p class="tiny dim">Xong câu này, mình quay lại chỗ đang dở.</p>' : '')+
+      '</div>';
+  }
+
   if(d.chuoi){
     var c = d.chuoi;
+    /* Câu mở của vòng — xoay vòng, không lặp lượt kế. Đứng trước tiêu đề
+       vòng vì đây là câu người ta đọc đầu tiên. */
+    if(d.mo) o += '<p class="gn-mo">'+h(d.mo)+'</p>';
+    /* Bắt nhịp: nhắc lại đúng CHỮ của nhà mình, không dịch sang thuật ngữ. */
+    if(d.batNhip && d.batNhip.length)
+      o += '<p class="gn-nhip">'+ic('compass','w-3 h-3')+' Em giữ nguyên chữ anh chị dùng: '+
+        d.batNhip.map(function(w){ return '<b>'+h(w)+'</b>'; }).join(' · ')+'</p>';
     o += '<div class="kb-vong">'+
       '<div class="kb-vong-h"><span class="kb-vong-no">'+c.vong.no+'/'+c.soVong+'</span>'+
       '<b>'+h(c.vong.ten)+'</b>'+
@@ -15811,6 +15859,23 @@ function theDap(d){
         ' Trả lời xong vòng này, mình quay lại vòng một — lần sau với một con số thật của '+
         'nhà mình thay vì một câu kể.</p>';
     o += '</div>';
+
+    /* Nghiệp vụ của chính vai đang đọc — ba vai ba cột khác nhau. */
+    if(d.nghiepVu && d.nghiepVu.phacDo){
+      var nv = d.nghiepVu;
+      o += '<div class="kb-nv"><div class="kb-nv-h">'+
+        '<span class="kb-nv-vai">'+h(nv.vai.ten)+'</span>'+
+        '<span class="ai-n-ma mono">'+h(nv.phacDo.ma)+'</span>'+
+        '<b>'+h(nv.phacDo.ten)+'</b></div>'+
+        '<p class="kb-nv-lam">'+h(nv.vai.lam)+'</p>';
+      o += nv.muc.map(function(m){
+        return '<div class="kb-nv-muc"><span class="kb-nv-tr mono">'+h(m.truong)+'</span>'+
+          (m.thieu ? '<p class="kb-thieu">Kho chưa khai trường này cho phác đồ ấy.</p>'
+                   : '<p>'+h(m.loi)+'</p>')+'</div>';
+      }).join('');
+      o += '<p class="tiny dim" style="margin-top:8px;line-height:1.6">Phác đồ chưa khai '+
+        'tầng nên phần này chưa lọc theo tầng được — em nói rõ chỗ đó.</p></div>';
+    }
 
     /* Mời vượt tầng — CHỈ sau khi đã đưa xong phần dùng được. */
     if(c.soVuot && c.tangVuot){
@@ -24841,6 +24906,52 @@ var G = window.G || {}; window.G = G;
     };
   };
 
+  /* ═══════════ NGHIỆP VỤ THEO VAI ═══════════
+     Ba vai đọc ba chỗ khác nhau trên cùng một bản ghi. Chia theo VAI chứ
+     không theo bậc: Giáo viên bậc 8 đọc cột `ph`, Coach bậc 7 đọc cột
+     `coach` — bậc không nói được điều đó.
+
+     Khách hàng KHÔNG đọc lớp này: cột `coach` của phác đồ nói cả những
+     việc người dẫn không được làm, và đưa cho gia đình đọc là đưa họ đi
+     soi người đang giúp mình thay vì làm việc của tối nay. */
+  G.kbNghiepVu = function (cauHoi, vai) {
+    vai = vai || (G.S && G.S.role);
+    if (G.LA_KHACH && G.LA_KHACH()) return null;
+    var d = (G.KB_NGHIEPVU || []).filter(function (x) {
+      return (x.vai || []).indexOf(vai) >= 0;
+    })[0];
+    if (!d) return null;
+
+    /* Phác đồ gần nhất với câu hỏi. PHACDO không khai tầng nên nó KHÔNG
+       lọc theo tầng được — nói thẳng thế ở chỗ hiện, đừng lặng lẽ. */
+    var tu = chuDangKe(cauHoi), tot = null, cao = 0;
+    (G.PHACDO || []).forEach(function (x) {
+      var chu = chuDangKe([x.ten, x.nhomTen, x.nguyenNhan].join(' '));
+      var n = 0;
+      for (var i = 0; i < tu.length; i++) if (chu.indexOf(tu[i]) >= 0) n++;
+      if (n > cao) { cao = n; tot = x; }
+    });
+    if (!tot) return { vai: d, chuaKhoanhDuoc: true };
+
+    /* Mỗi vai một bộ trường, đọc theo bảng d.doc — không gõ tên trường
+       ở đây, để thêm một vai là khai một dòng trong kho. */
+    /* Bảng d.doc trỏ sang CẢ HAI kho, nên phải tra tình huống nữa —
+       bản đầu chỉ có ba trường của phác đồ, nên mọi dòng TINHHUONG.* đều
+       báo "kho chưa khai", trong khi 250/250 tình huống đều có `tt`.
+       Một câu tự chê sai chỗ làm người làm nghề mất tin vào cả bảng. */
+    var loc = G.kbLocKey(cauHoi);
+    var th = loc.trong.length && loc.trong[0].k.traLoiDuoc
+      ? (G[loc.trong[0].k.kho] || [])[loc.trong[0].k.i] : null;
+    var lay = { 'PHACDO.ph': tot.ph, 'PHACDO.coach': tot.coach, 'PHACDO.dich': tot.dich,
+      'TINHHUONG.tt': th && th.tt, 'TINHHUONG.gp': th && th.gp, 'TINHHUONG.dich': th && th.dich };
+    var muc = (d.doc || []).map(function (f) {
+      return { truong: f, loi: lay[f] || null, thieu: !lay[f] };
+    });
+    return { vai: d, phacDo: { ma: tot.ma, ten: tot.ten, nhom: tot.nhomTen },
+      muc: muc, soThieu: muc.filter(function (m) { return m.thieu; }).length,
+      phacDoKhongKhaiTang: true };
+  };
+
   /* ═══════════ MỜI ĐĂNG KÝ LỘ TRÌNH TẦNG TRÊN ═══════════
      Chỉ gọi khi ĐÃ đưa xong phần dùng được của tầng đang ở. Mời khi chưa
      đưa gì là bán hàng; mời sau khi đã đưa là chỉ đường.
@@ -24873,6 +24984,132 @@ var G = window.G || {}; window.G = G;
         'tầng ' + tangCan + '. Em không mở tên ra ở đây — cách hoá giải của chúng đứng trên ' +
         'một cái nền nhà mình chưa dựng, nên đọc bây giờ chưa dùng được.'
     };
+  };
+
+})();
+
+})();
+
+/* ═════════ src/giong-noi.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY GIỌNG NÓI, SÁU CHIẾC MŨ, VÀ CÂU PHÁT SINH
+
+   Kho chuẩn ở kho-goc/data.giong-noi.js.
+
+   MƯỢT MÀ NẰM Ở CÁCH BẮT NHỊP, KHÔNG NẰM Ở VIỆC GIẢ LÀM NGƯỜI
+
+   Tệp này làm lời trợ lý biến hoá: mỗi vòng nhiều cách mở, chọn xoay
+   vòng, không lặp trong một phiên. Nhưng khi có người hỏi thẳng "em là
+   người hay máy" thì nó trả lời thẳng — một câu, rồi quay lại việc đang
+   dở. Không chối, không lảng.
+
+   SÁU MŨ KHÔNG NÓI RA TÊN
+
+   Mũ là cách CHỌN CÂU, không phải thứ để khoe. Trợ lý không bao giờ nói
+   "bây giờ em đội mũ đỏ" — gọi tên khung ra là biến một cuộc trò chuyện
+   thành buổi trình bày phương pháp, và nhà mình thành học viên bất đắc dĩ.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+(function () {
+
+  function boDau(s) {
+    return String(s || '').toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd')
+      .replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  /* Câu mở đã dùng trong phiên này. Không lặp một câu mở hai lượt liền —
+     đó chính là chỗ người ta nhận ra đang nói chuyện với một cái khuôn. */
+  var daMo = [];
+  G.gnQuenMo = function () { daMo = []; };
+
+  G.gnMoDau = function (maVong) {
+    var ds = ((G.KB_GIONG || {}).moDau || {})[maVong] || [];
+    if (!ds.length) return null;
+    var con = ds.filter(function (c) { return daMo.indexOf(c) < 0; });
+    /* Hết câu chưa dùng thì xoá sổ và bắt đầu lại — thà lặp sau một vòng
+       đầy còn hơn im, nhưng không bao giờ lặp ngay lượt kế. */
+    if (!con.length) { daMo = []; con = ds; }
+    var c = con[Math.floor(Math.random() * con.length)];
+    daMo.push(c);
+    return c;
+  };
+
+  /* Mũ của một vòng. Vòng bốn có HAI mũ đi liền — xanh lá đưa việc, vàng
+     nói cái được; một việc không có cái được đi kèm thì nó là lời dặn. */
+  G.gnMu = function (maVong) {
+    return (G.KB_MU || []).filter(function (m) { return m.vong === maVong; });
+  };
+
+  /* Mũ đen KHÔNG được đội ở hai vòng đầu. Người vừa kể chuyện nhà mình mà
+     nghe ngay một câu cảnh báo thì họ đóng máy — đúng lúc mình vừa có đủ
+     dữ kiện để giúp được. Cổng này chặn thật, không phải lời nhắc. */
+  G.gnDoiMuDuoc = function (maMu, maVong) {
+    if (maMu !== 'DEN') return true;
+    if ((G.KB_MU_LUAT || {}).camDoiSomMuDen !== true) return true;
+    return ['BOICANH', 'COTLOI'].indexOf(maVong) < 0;
+  };
+
+  /* Bắt nhịp: nhắc lại đúng CHỮ của nhà mình, không dịch sang thuật ngữ.
+     Trả về mấy chữ đáng kể trong lời họ vừa kể để câu sau dùng lại. */
+  G.gnBatNhip = function (loiNha) {
+    /* Lọc theo DANH SÁCH CHỮ CHUNG, không lọc theo độ dài. Bản đầu lấy
+       mọi chữ từ bốn ký tự nên nhà kể "cháu nó LÌ lắm, tối nào cũng phải
+       nhắc" thì trợ lý nhắc lại "cũng · phải" — đúng luật mà sai hoàn
+       toàn ý. Chữ đáng nhắc lại là chữ chỉ nhà ấy mới dùng, và những chữ
+       ấy thường NGẮN: lì, ì, cãi, khóc. */
+    var chung = (G.KB_GIONG || {}).chuChung || [];
+    var goc = String(loiNha || '').split(/\s+/);
+    var ra = [];
+    goc.forEach(function (w) {
+      var k = boDau(w);
+      if (!k || k.length < 2) return;
+      if (chung.indexOf(k) >= 0) return;
+      if (ra.length < 3 && ra.indexOf(w) < 0) ra.push(w.replace(/[,.;:!?]+$/, ''));
+    });
+    return ra;
+  };
+
+  /* Câu bị cấm — soi lời trợ lý TRƯỚC khi hiện. Một câu cấm lọt ra là
+     một câu người đọc nhận ra ngay là lắp sẵn. */
+  G.gnSoiCam = function (loi) {
+    var c = boDau(loi);
+    return ((G.KB_GIONG || {}).camNoi || []).filter(function (x) {
+      return c.indexOf(boDau(x.cau)) >= 0;
+    });
+  };
+
+  /* Hỏi thẳng thì trả lời thẳng. Đây là đường không được phép vòng vo. */
+  G.gnHoiLaMay = function (cau) {
+    var c = boDau(cau);
+    return ((G.KB_GIONG || {}).dauHoiLaMay || []).some(function (d) {
+      return c.indexOf(boDau(d)) >= 0;
+    });
+  };
+  G.gnNoiThat = function () { return (G.KB_GIONG || {}).cauNoiThat || null; };
+
+  /* ═══════════ CÂU PHÁT SINH ═══════════
+     Bật ra GIỮA chuỗi, không theo thứ tự vòng. Bắt được thì trả lời rồi
+     QUAY LẠI đúng vòng đang dở — bỏ chuỗi để chạy theo câu hỏi phụ là
+     mất chỗ vừa khoanh được. */
+  G.gnPhatSinh = function (cau) {
+    var c = boDau(cau), tot = null, cao = 0;
+    (G.KB_PHATSINH || []).forEach(function (p) {
+      var d = 0;
+      (p.dau || []).forEach(function (k) {
+        var kk = boDau(k);
+        if (kk && c.indexOf(kk) >= 0) d += kk.length;   /* dài hơn thì cụ thể hơn */
+      });
+      if (d > cao) { cao = d; tot = p; }
+    });
+    if (!tot) return null;
+    return { ma: tot.ma, loai: tot.loai, mu: tot.mu, dua: tot.dua, ranh: tot.ranh,
+      chuyenNguoiThat: tot.chuyenNguoiThat === true,
+      noiThat: tot.noiThat === true,
+      quayLaiVongDangDo: (G.KB_PHATSINH_LUAT || {}).batGiuaChung === true };
   };
 
 })();

@@ -90,8 +90,29 @@ G.chatHoi = function(cauHoi){
   if(laCauMoi){ kbCau = cauHoi; kbDa = []; }
   else kbDa.push(cauHoi);
   var d = G.aiTraLoi(laCauMoi ? cauHoi : kbCau);
-  if(G.kbChuoi && G.LA_KHACH && G.LA_KHACH() && !d.khan)
+  /* Chuỗi chạy cho những vai kho khai ở KB_LUAT.chayChoAi — hôm nay là
+     Tư vấn và nhánh Coach. Bản đầu chạy cho MỖI khách hàng, tức là đúng
+     nhóm KHÔNG có kho tình huống trên máy: chuỗi rỗng cho người có nó
+     trong tay, và im lặng cho người không có. */
+  var chay = ((G.KB_LUAT || {}).chayChoAi || []).indexOf(G.S.role) >= 0;
+  if(G.kbChuoi && chay && !d.khan){
     d.chuoi = G.kbChuoi(kbCau, kbDa);
+    if(G.kbNghiepVu) d.nghiepVu = G.kbNghiepVu(kbCau);
+    if(G.gnMoDau && d.chuoi){
+      d.mo = G.gnMoDau(d.chuoi.vong.ma);
+      d.mu = (G.gnMu(d.chuoi.vong.ma) || []).filter(function(m){
+        return G.gnDoiMuDuoc(m.ma, d.chuoi.vong.ma);
+      });
+      d.batNhip = G.gnBatNhip(kbCau);
+    }
+  }
+  /* Hỏi thẳng thì trả lời thẳng — một câu, rồi quay lại việc đang dở.
+     Đường này đứng NGOÀI mọi điều kiện vai và mọi trạng thái chuỗi: ai
+     hỏi cũng được trả lời, kể cả giữa lúc đang khẩn. */
+  if(G.gnHoiLaMay && G.gnHoiLaMay(cauHoi)) d.noiThat = G.gnNoiThat();
+  /* Câu bật ra giữa chừng. Trả lời rồi QUAY LẠI vòng đang dở — bỏ chuỗi
+     để chạy theo câu hỏi phụ là mất chỗ vừa khoanh được. */
+  if(G.gnPhatSinh && !d.khan) d.phatSinh = G.gnPhatSinh(cauHoi);
   G.CHAT.push({ai:'trolY', dap:d, luc:new Date()});
   if(G.secLog) G.secLog('Hỏi trợ lý',
     cauHoi.slice(0, 80) + ' → ' + (d.khan ? 'chuyển người thật' : d.nguon.length + ' nguồn'),
@@ -148,8 +169,34 @@ function theDap(d){
      Đứng ĐẦU câu trả lời. Người đang mệt đọc được hai dòng đầu; nếu hai
      dòng ấy là một danh sách tư liệu thì họ đóng máy, còn nếu là một câu
      hỏi trả lời được thì họ trả lời. */
+  /* Hỏi thẳng thì đứng đầu, trước cả chuỗi. */
+  if(d.noiThat)
+    o += '<p class="ai-loi gn-that">'+h(d.noiThat)+'</p>';
+
+  /* Câu bật ra giữa chừng: nói RÕ trả lời dựa vào đâu và ranh giới ở
+     đâu, rồi mới quay lại vòng. Giấu ranh giới đi thì tới lúc chạm vào
+     nó, người ta thấy mình bị chặn chứ không thấy mình được nói trước. */
+  if(d.phatSinh){
+    var ps = d.phatSinh;
+    o += '<div class="gn-ps'+(ps.chuyenNguoiThat ? ' gn-ps-nguoi' : '')+'">'+
+      '<span class="gn-ps-loai">'+h(ps.loai)+'</span>'+
+      '<p class="gn-ps-ranh">'+h(ps.ranh)+'</p>'+
+      (ps.chuyenNguoiThat
+        ? '<a class="btn sm pri" href="tel:0855554688">'+ic('bell','w-3 h-3')+'Chuyển người thật</a>'
+        : '<p class="tiny dim">Trả lời dựa vào: '+h(ps.dua)+'</p>')+
+      (ps.quayLaiVongDangDo ? '<p class="tiny dim">Xong câu này, mình quay lại chỗ đang dở.</p>' : '')+
+      '</div>';
+  }
+
   if(d.chuoi){
     var c = d.chuoi;
+    /* Câu mở của vòng — xoay vòng, không lặp lượt kế. Đứng trước tiêu đề
+       vòng vì đây là câu người ta đọc đầu tiên. */
+    if(d.mo) o += '<p class="gn-mo">'+h(d.mo)+'</p>';
+    /* Bắt nhịp: nhắc lại đúng CHỮ của nhà mình, không dịch sang thuật ngữ. */
+    if(d.batNhip && d.batNhip.length)
+      o += '<p class="gn-nhip">'+ic('compass','w-3 h-3')+' Em giữ nguyên chữ anh chị dùng: '+
+        d.batNhip.map(function(w){ return '<b>'+h(w)+'</b>'; }).join(' · ')+'</p>';
     o += '<div class="kb-vong">'+
       '<div class="kb-vong-h"><span class="kb-vong-no">'+c.vong.no+'/'+c.soVong+'</span>'+
       '<b>'+h(c.vong.ten)+'</b>'+
@@ -177,6 +224,23 @@ function theDap(d){
         ' Trả lời xong vòng này, mình quay lại vòng một — lần sau với một con số thật của '+
         'nhà mình thay vì một câu kể.</p>';
     o += '</div>';
+
+    /* Nghiệp vụ của chính vai đang đọc — ba vai ba cột khác nhau. */
+    if(d.nghiepVu && d.nghiepVu.phacDo){
+      var nv = d.nghiepVu;
+      o += '<div class="kb-nv"><div class="kb-nv-h">'+
+        '<span class="kb-nv-vai">'+h(nv.vai.ten)+'</span>'+
+        '<span class="ai-n-ma mono">'+h(nv.phacDo.ma)+'</span>'+
+        '<b>'+h(nv.phacDo.ten)+'</b></div>'+
+        '<p class="kb-nv-lam">'+h(nv.vai.lam)+'</p>';
+      o += nv.muc.map(function(m){
+        return '<div class="kb-nv-muc"><span class="kb-nv-tr mono">'+h(m.truong)+'</span>'+
+          (m.thieu ? '<p class="kb-thieu">Kho chưa khai trường này cho phác đồ ấy.</p>'
+                   : '<p>'+h(m.loi)+'</p>')+'</div>';
+      }).join('');
+      o += '<p class="tiny dim" style="margin-top:8px;line-height:1.6">Phác đồ chưa khai '+
+        'tầng nên phần này chưa lọc theo tầng được — em nói rõ chỗ đó.</p></div>';
+    }
 
     /* Mời vượt tầng — CHỈ sau khi đã đưa xong phần dùng được. */
     if(c.soVuot && c.tangVuot){

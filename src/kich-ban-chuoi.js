@@ -186,6 +186,52 @@ var G = window.G || {}; window.G = G;
     };
   };
 
+  /* ═══════════ NGHIỆP VỤ THEO VAI ═══════════
+     Ba vai đọc ba chỗ khác nhau trên cùng một bản ghi. Chia theo VAI chứ
+     không theo bậc: Giáo viên bậc 8 đọc cột `ph`, Coach bậc 7 đọc cột
+     `coach` — bậc không nói được điều đó.
+
+     Khách hàng KHÔNG đọc lớp này: cột `coach` của phác đồ nói cả những
+     việc người dẫn không được làm, và đưa cho gia đình đọc là đưa họ đi
+     soi người đang giúp mình thay vì làm việc của tối nay. */
+  G.kbNghiepVu = function (cauHoi, vai) {
+    vai = vai || (G.S && G.S.role);
+    if (G.LA_KHACH && G.LA_KHACH()) return null;
+    var d = (G.KB_NGHIEPVU || []).filter(function (x) {
+      return (x.vai || []).indexOf(vai) >= 0;
+    })[0];
+    if (!d) return null;
+
+    /* Phác đồ gần nhất với câu hỏi. PHACDO không khai tầng nên nó KHÔNG
+       lọc theo tầng được — nói thẳng thế ở chỗ hiện, đừng lặng lẽ. */
+    var tu = chuDangKe(cauHoi), tot = null, cao = 0;
+    (G.PHACDO || []).forEach(function (x) {
+      var chu = chuDangKe([x.ten, x.nhomTen, x.nguyenNhan].join(' '));
+      var n = 0;
+      for (var i = 0; i < tu.length; i++) if (chu.indexOf(tu[i]) >= 0) n++;
+      if (n > cao) { cao = n; tot = x; }
+    });
+    if (!tot) return { vai: d, chuaKhoanhDuoc: true };
+
+    /* Mỗi vai một bộ trường, đọc theo bảng d.doc — không gõ tên trường
+       ở đây, để thêm một vai là khai một dòng trong kho. */
+    /* Bảng d.doc trỏ sang CẢ HAI kho, nên phải tra tình huống nữa —
+       bản đầu chỉ có ba trường của phác đồ, nên mọi dòng TINHHUONG.* đều
+       báo "kho chưa khai", trong khi 250/250 tình huống đều có `tt`.
+       Một câu tự chê sai chỗ làm người làm nghề mất tin vào cả bảng. */
+    var loc = G.kbLocKey(cauHoi);
+    var th = loc.trong.length && loc.trong[0].k.traLoiDuoc
+      ? (G[loc.trong[0].k.kho] || [])[loc.trong[0].k.i] : null;
+    var lay = { 'PHACDO.ph': tot.ph, 'PHACDO.coach': tot.coach, 'PHACDO.dich': tot.dich,
+      'TINHHUONG.tt': th && th.tt, 'TINHHUONG.gp': th && th.gp, 'TINHHUONG.dich': th && th.dich };
+    var muc = (d.doc || []).map(function (f) {
+      return { truong: f, loi: lay[f] || null, thieu: !lay[f] };
+    });
+    return { vai: d, phacDo: { ma: tot.ma, ten: tot.ten, nhom: tot.nhomTen },
+      muc: muc, soThieu: muc.filter(function (m) { return m.thieu; }).length,
+      phacDoKhongKhaiTang: true };
+  };
+
   /* ═══════════ MỜI ĐĂNG KÝ LỘ TRÌNH TẦNG TRÊN ═══════════
      Chỉ gọi khi ĐÃ đưa xong phần dùng được của tầng đang ở. Mời khi chưa
      đưa gì là bán hàng; mời sau khi đã đưa là chỉ đường.
