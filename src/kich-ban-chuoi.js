@@ -241,6 +241,27 @@ var G = window.G || {}; window.G = G;
   G.kbMoiVuotTang = function (tangCan, so) {
     var M = G.KB_MOI_TANG || {};
     if (!tangCan) return null;
+
+    /* ── CỔNG PHÍ ĐỨNG TRƯỚC, KHÔNG PHẢI SAU ──
+       Chủ hệ chốt 3.9.2026: không khuyến khích vượt tầng; chỉ nói phí
+       khi đã hoàn tất chặng và KPI từ 80% trở lên.
+
+       Bản 9.49 bật lời mời này mỗi khi khớp một tình huống tầng trên —
+       tức là đúng lúc nhà mình đang giữa chặng và đang mắc. Nghe mời lúc
+       ấy thì họ hiểu là chặng này chưa đủ, rồi bỏ dở chặng đang đi để
+       mua chặng sau; nền không dựng xong thì tầng sau đứng trên cát.
+
+       Nên cổng đứng ở ĐÂY, trước cả việc dựng lời mời — dựng ra rồi mới
+       lọc trên màn là để một câu bán hàng nằm sẵn trong dữ liệu, chờ một
+       hôm có người quên lọc. */
+    if (typeof G.tvCongPhi === 'function') {
+      var cong = G.tvCongPhi();
+      if (!cong.noiPhi)
+        return { khongMoi: true, trangThai: cong.trangThai, thieu: cong.thieu || [],
+          /* Trả về lý do chứ không trả null: màn cần biết vì sao im lặng,
+             để nó im lặng đúng cách thay vì vẽ một khoảng trống. */
+          y: cong.y };
+    }
     var ma = 'T' + tangCan;
     /* HP_TANG nằm ở gói NGHỀ — máy khách KHÔNG có nó. Bản rút HP_NGAY ở
        gói nền mang tên tầng, số ngày và (từ 9.49) cả giá. Đọc HP_TANG

@@ -9031,7 +9031,16 @@ const { chromium } = require(PW);
       r.vongLap = G.kbChuoi(cau, ['a', 'b', 'c', 'd']).quayLai === 'BOICANH';
       r.khongThuVeRong = G.kbChuoi(cau, ['xyzqwertyuiop']).soTrong > 0;
 
-      /* ── MỜI VƯỢT TẦNG: NÓI CÓ, KHÔNG MỞ TÊN, GIÁ ĐỌC TỪ KHO ── */
+      /* ── MỜI VƯỢT TẦNG: NÓI CÓ, KHÔNG MỞ TÊN, GIÁ ĐỌC TỪ KHO ──
+         Từ 9.52 lời mời này đi qua CỔNG PHÍ, và cổng chỉ mở khi nhà ấy
+         đã hoàn tất chặng và KPI ≥ ngưỡng. Nên phép đo phải MỞ CỔNG
+         trước rồi mới hỏi về giá — bản trước gọi thẳng nên đỏ, mà nó đỏ
+         vì hành vi vừa được chủ hệ đảo lại chứ không phải vì hỏng.
+         Câu hỏi đúng vẫn nguyên: KHI được nói, có nói đúng không. */
+      const giuCong = G.tvCongPhi;
+      G.tvCongPhi = function () {
+        return { trangThai: 'xong', noiPhi: true, tang: 3, tangKe: 4 };
+      };
       const m = G.kbMoiVuotTang(4, 3);
       r.moiCoGia = m.chuaCoGia === false && m.gia > 0 && m.khongMoTen === true &&
         !/tình huống|TH-/.test(m.loi) && /tầng 4/.test(m.loi);
@@ -9042,6 +9051,7 @@ const { chromium } = require(PW);
       r.chuaCoGiaThiNoi = G.kbMoiVuotTang(4, 1).chuaCoGia === true &&
         G.kbMoiVuotTang(4, 1).gia === null;
       hp.gia = luuG;
+      G.tvCongPhi = giuCong;     /* trả cổng phí về nguyên trạng */
 
       /* ── KHAI THẲNG LÀ CHƯA CHẠY CHO KHÁCH ── */
       /* Câu hỏi ĐÚNG sau khi chốt: kho có còn khai THẲNG rằng chuỗi chưa
@@ -9149,6 +9159,88 @@ const { chromium } = require(PW);
       return r;
     });
     Object.keys(gn).forEach(k => { ra[k] = gn[k]; });
+
+    /* ── BỘ KỊCH BẢN TƯ VẤN VÀ CỔNG PHÍ (9.52) ── */
+    const tv = await p.evaluate(() => {
+      const G = window.G, r = {};
+      r.duKichBan = (G.KBTV_KB || []).length === 30 &&
+        (G.KBTV_KB || []).reduce((s, k) => s + (k.hoi || []).length, 0) === 150 &&
+        (G.KBTV_CHUONG || []).length === 6;
+      /* Chương 1 và 6 KHÔNG thuộc tầng nào — một là lúc chưa vào, sáu là
+         lúc bàn lộ trình. Gán tầng cho chúng là gán một phạm vi không có. */
+      /* VẮNG MẶT khoá, không phải để null — vắng mặt nghĩa là KHÔNG ÁP
+         DỤNG, còn rỗng nghĩa là đáng lẽ phải có giá trị. Bộ soát trường
+         trống ở mục 34 bắt đúng chỗ này khi bản đầu để null. */
+      r.chuongKhongTang = (G.KBTV_CHUONG || []).filter(c => !('tang' in c))
+        .map(c => c.no).join() === '1,6' &&
+        (G.KBTV_KB || []).filter(k => !('tang' in k)).length === 7;
+
+      /* ── CỔNG PHÍ: BỐN TRẠNG THÁI, BA CÂU KHÁC NHAU ── */
+      const cong = x => G.tvCongPhi(x);
+      r.chuaVaoThiMoiT1 = cong({ tang: 0 }).trangThai === 'chuaVao' &&
+        cong({ tang: 0 }).noiPhi === false && cong({ tang: 0 }).moiTang === 'T1' &&
+        cong({ tang: 0 }).mienPhi === true;
+      /* HAI ĐIỀU KIỆN, KHÔNG PHẢI MỘT. Hoàn tất mà KPI thấp là đi hết
+         NGÀY chứ chưa đi hết CHẶNG; KPI cao mà chưa hoàn tất là đang đi
+         tốt, và cắt ngang một nhà đang đi tốt là việc tệ nhất. */
+      r.haiDieuKienChuKhongMot =
+        cong({ tang: 2, hoanTat: false, kpi: 95 }).noiPhi === false &&
+        cong({ tang: 2, hoanTat: true, kpi: 70 }).noiPhi === false &&
+        cong({ tang: 2, hoanTat: true, kpi: 85 }).noiPhi === true;
+      /* Ngưỡng đọc từ KPI_XIN_THEM, không gõ lại. */
+      const luuN = G.KPI_XIN_THEM; G.KPI_XIN_THEM = 90;
+      r.nguongDocTuKho = cong({ tang: 2, hoanTat: true, kpi: 85 }).noiPhi === false;
+      G.KPI_XIN_THEM = luuN;
+      /* Thiếu dữ kiện thì ĐÓNG, không mở. */
+      G.KPI_XIN_THEM = null;
+      r.thieuDuKienThiDong = cong({ tang: 2, hoanTat: true, kpi: 99 }).noiPhi === false;
+      G.KPI_XIN_THEM = luuN;
+
+      /* ── LỜI MỜI VƯỢT TẦNG BỊ CHẶN GIỮA CHẶNG ──
+         Bản 9.49 bật lời mời mỗi khi khớp một tình huống tầng trên — tức
+         đúng lúc nhà mình đang giữa chặng và đang mắc. */
+      const luuT = G.S.acc.tang;
+      G.S.acc.tang = 2;
+      const m = G.kbMoiVuotTang(4, 3);
+      r.chanMoiGiuaChang = !!m && m.khongMoi === true && m.trangThai === 'dangDi';
+      G.S.acc.tang = luuT;
+
+      /* Khớp một kịch bản KHÔNG phải một lời khuyên đổi tầng. */
+      const kb = G.tvKichBan('con dính điện thoại suốt ngày, nói dối');
+      r.khopKhongPhaiMoi = !!kb && kb.tang === 'T2' && kb.khongPhaiLoiMoi === true;
+
+      /* ── VĂN PHONG CHUẨN GIÁO DỤC ── */
+      const vp = G.tvSoiVanPhong('Em thề với khách hàng là case này chốt gói được');
+      r.batVanPhong = vp.length === 4 &&
+        vp.some(x => x.cau === 'em thề') && vp.some(x => x.cau === 'chốt gói') &&
+        vp.some(x => x.cau === 'khách hàng');
+      /* Khớp theo RANH GIỚI TỪ: "ca" nằm trong "case", "khách" nằm trong
+         "khách hàng" — báo thừa cũng là báo sai, chỉ ngược hướng. */
+      r.khongBaoTrung = !vp.some(x => x.cau === 'ca') && !vp.some(x => x.cau === 'khách');
+      r.cauSachThiImLang = G.tvSoiVanPhong('Dạ em ghi nhận điều chị vừa kể ạ.').length === 0;
+
+      /* ── CHỖ LỆCH GHI RA, KHÔNG TỰ CHỌN HỘ ──
+         Tài liệu ghi Tầng 4 là 20 triệu, năm lần. Kho ghi 30 triệu, chốt
+         ở bản 9.44 theo bảng giá chủ hệ báo. Máy đọc kho và GHI chỗ lệch. */
+      r.ghiChoLech = (G.KBTV_LECH || []).length === 3 &&
+        (G.KBTV_LECH || []).some(x => /20\.000\.000|20 triệu/.test(x.taiLieu || '')) &&
+        (G.HP_TANG || []).filter(t => t.tang === 'T4')[0].gia === 30000000;
+      /* Ba nguyên tắc nghề và ba KHÔNG giữ nguyên — chúng trùng với ranh
+         giới sẵn có của kho, nên giữ là củng cố chứ không phải chép. */
+      r.giuNguyenTac = (G.KBTV_DAODUC || []).length === 3 &&
+        (G.KBTV_BA_KHONG || []).length === 3 && (G.KBTV_BA_LUON || []).length === 3;
+      return r;
+    });
+    Object.keys(tv).forEach(k => { ra[k] = tv[k]; });
+
+    const doTV = ['duKichBan', 'chuongKhongTang', 'chuaVaoThiMoiT1',
+      'haiDieuKienChuKhongMot', 'nguongDocTuKho', 'thieuDuKienThiDong',
+      'chanMoiGiuaChang', 'khopKhongPhaiMoi', 'batVanPhong', 'khongBaoTrung',
+      'cauSachThiImLang', 'ghiChoLech', 'giuNguyenTac'].filter(k => !ra[k]);
+    bao(!doTV.length,
+      'BỘ KỊCH BẢN TƯ VẤN — GIỮ CHẤT LIỆU, SỬA VĂN PHONG, VÀ ĐÓNG CỔNG PHÍ. Tài liệu chủ hệ đưa có 30 kịch bản, 6 chương, 150 câu phụ huynh hỏi ngược — chất liệu gom từ nghề, không ngồi nghĩ ra được, nên giữ nguyên. Nhưng nó là kịch bản BÁN HÀNG: có bảng ánh xạ triệu chứng sang tầng ngay từ lần chạm đầu, kèm giá, và hẳn một chương xử lý từ chối về giá. Chủ hệ chốt lại ngày 3.9.2026: KHÔNG khuyến khích vượt tầng, chỉ nói phí khi đã hoàn tất chặng và KPI từ 80% trở lên. Chỗ hoà nằm ở việc phân biệt HAI NGƯỜI KHÁC NHAU: người CHƯA vào tầng nào thì mời vào Tầng 1 — và Tầng 1 miễn phí, nên đó là mở cửa chứ không phải bán, đúng như quy tắc "luôn mở đường về Tầng 1" của chính tài liệu; người ĐANG trong một tầng thì im lặng hẳn về tầng trên, kể cả khi chuyện họ kể khớp một tình huống tầng cao hơn. Vì sao vạch nằm đúng đó: nhà đang giữa chặng mà nghe mời lên tầng sẽ hiểu là chặng này chưa đủ, rồi bỏ dở chặng đang đi để mua chặng sau — nền không dựng xong thì tầng sau đứng trên cát, và cái mất lớn hơn nhiều so với một hợp đồng bán sớm. HAI ĐIỀU KIỆN CHỨ KHÔNG PHẢI MỘT: hoàn tất mà KPI thấp là đi hết NGÀY chứ chưa đi hết CHẶNG, mời lên là mời một nhà chưa vững đi tiếp; KPI cao mà chưa hoàn tất là đang đi tốt, và cắt ngang một nhà đang đi tốt là việc tệ nhất trong nghề này. Thiếu dữ kiện thì cổng ĐÓNG chứ không mở. Lời mời vượt tầng dựng ở bản 9.49 nay đi qua cổng ấy, và cổng đứng TRƯỚC lúc dựng lời mời chứ không lọc trên màn — dựng ra rồi mới lọc là để một câu bán hàng nằm sẵn trong dữ liệu, chờ một hôm có người quên lọc. VĂN PHONG kéo về chuẩn giáo dục: tài liệu tự cấm "case" và "khách" ở phần văn phong rồi chính nó dùng "khách hàng" năm lần ở tiêu đề hai kịch bản cuối, và có một câu "em thề" — thề là ngôn ngữ của người bán, còn một chuyên gia giáo dục nói được điều mình bảo đảm và nói rõ điều mình không bảo đảm. Soi theo RANH GIỚI TỪ chứ không theo chuỗi con, vì "ca" nằm trong "case" và "khách" nằm trong "khách hàng" — báo thừa cũng là báo sai, chỉ ngược hướng. MỘT CON SỐ LỆCH KHÔNG TỰ CHỌN HỘ: tài liệu ghi Tầng 4 là 20 triệu và nhắc lại năm lần, kho ghi 30 triệu theo đúng bảng giá chủ hệ báo ở bản 9.44. Máy đọc HP_TANG.gia và GHI chỗ lệch vào TV_LECH để chủ hệ quyết — im lặng chọn một bên ở một con số tiền là chỗ không được phép im lặng',
+      doTV.length ? 'phép đo hỏng: ' + doTV.join(' · ')
+        : '30 kịch bản · 150 câu · chưa vào → mời T1 miễn phí · đang đi → im lặng · hoàn tất + KPI 80% → mới nói phí · lời mời 9.49 bị chặn · 3 chỗ lệch ghi ra');
 
     const doGN = ['muDungVong', 'muDenChan', 'moKhongLap', 'batNhipChuRieng', 'batCauCam',
       'noiThat', 'batPhatSinh', 'sucKhoeChuyenNguoi', 'quayLaiVong', 'khongVietSanCau',

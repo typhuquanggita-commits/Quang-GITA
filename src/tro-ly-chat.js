@@ -245,6 +245,10 @@ function theDap(d){
     /* Mời vượt tầng — CHỈ sau khi đã đưa xong phần dùng được. */
     if(c.soVuot && c.tangVuot){
       var m = G.kbMoiVuotTang(c.tangVuot, c.soVuot);
+      /* Cổng phí đóng thì IM LẶNG HẲN về tầng trên — không vẽ cả một
+         khung "có phần đầy đủ hơn". Câu ấy là một lời mời đội lốt một
+         lời thông báo, và nhà đang giữa chặng đọc nó ra đúng lời mời. */
+      if(m && m.khongMoi) m = null;
       if(m) o += '<div class="kb-moi">'+ic('lock','w-4 h-4')+
         '<div><b>Còn '+m.so+' phần nữa, ở tầng '+m.tang+'</b>'+
         '<p>'+h(m.loi)+'</p>'+
