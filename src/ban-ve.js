@@ -116,6 +116,153 @@ G.VIEWS = G.VIEWS || {};
       nhac: 'Còn được nói, nhưng vẫn qua luật số 1: chẩn đoán trước, đề xuất sau.' };
   };
 
+  /* ═══════════ TRẦN CÔNG SUẤT — HÀM CHẶN THẬT ═══════════
+
+     Kho đòi hàm này hai lần, bằng chữ, và chưa ai viết nó:
+
+       BV_VAI_LUAT luật 3   "một vai đã đủ trần thì hệ thống DỪNG nhận
+                             khách mới cho vai đó. Không có ngoại lệ vì
+                             lý do doanh số."
+       BV_CONG_LUAT luật 5  "Không mở cổng khi Coach hoặc Tư vấn đã đủ trần."
+       CS_NEN N2            "Hệ từ chối cái thứ sáu." và câu nặng nhất:
+                             "Trần không có hàm chặn thì sáu tháng sau ai
+                              cũng giữ tám nhà."
+       BV_BANGIAO           "Tư vấn → Coach: XÁC NHẬN CÒN TRẦN CÔNG SUẤT"
+                             — nêu đúng thời điểm phải hỏi.
+
+     Bốn chỗ, ba tờ khác nhau, cùng một câu. Nên câu hỏi tôi để lại ở bản
+     9.56 — "trần có được dùng để chặn không" — thật ra đã có câu trả lời
+     nằm sẵn trong kho; tôi hỏi lại một điều chủ hệ đã chốt.
+
+     ═══ TRẦN CHẶN Ở ĐÂU: NHẬN NHÀ MỚI, KHÔNG PHẢI LÊN CẤP ═══
+
+     Cả bốn chỗ đều nói "nhận khách MỚI" và "mở CỔNG". Không chỗ nào nói
+     lên cấp trong tầng. Một nhà Coach đã giữ, đi từ cấp 6 lên cấp 7,
+     không tiêu thêm một suất nào — chặn nó vì Coach đông nhà là phạt
+     gia đình vì việc của hệ.
+
+     ═══ BẢN ĐỒ TẦNG → VAI KHÔNG VIẾT LẠI Ở ĐÂY ═══
+
+     BV_VAI.tran đã tự khai tầng nào thuộc vai nào: "40 hồ sơ T2 hoặc 15
+     hồ sơ T3" là Tư vấn, "8 gia đình T4 hoặc 3 gia đình T5" là Coach.
+     Dựng thêm một bảng tầng→vai là dựng bản thứ hai của một thứ đã có. */
+
+  G.bvTranVai = function (tenVai) {
+    var v = (G.BV_VAI || []).filter(function (x) {
+      return String(x.ten).trim() === String(tenVai).trim();
+    })[0];
+    if (!v) return null;
+    if (!v.tran) return { vai: v.ten, chuoi: null, theoTang: {}, khongKhaiTran: true };
+    var ra = { vai: v.ten, chuoi: v.tran, theoTang: {} }, m;
+    var re = /(\d+)\s*(?:gia đình|hồ sơ)\s*(T\d)/g;
+    while ((m = re.exec(String(v.tran)))) ra.theoTang[m[2]] = Number(m[1]);
+    if (/không giới hạn/i.test(v.tran)) ra.khongGioiHan = true;
+    return ra;
+  };
+
+  /* Vai nào giữ tầng này — đọc ngược từ chính các trần đã khai. */
+  G.bvVaiGiuTang = function (tang) {
+    var t = String(tang || '').toUpperCase(), thay = null;
+    (G.BV_VAI || []).forEach(function (v) {
+      var tr = G.bvTranVai(v.ten);
+      if (tr && tr.theoTang && typeof tr.theoTang[t] === 'number' && !thay) thay = tr;
+    });
+    return thay;
+  };
+
+  /* Người này còn nhận thêm được một nhà ở tầng ấy không.
+     dsNha do bên gọi truyền vào — hàm này không tự đi lấy danh sách nhà,
+     vì nó nằm ở gói bản vẽ và không được biết ai đang đăng nhập. */
+  G.bvNhanDuoc = function (nguoi, tang, dsNha) {
+    var t = String(tang || '').toUpperCase();
+    var tr = G.bvVaiGiuTang(t);
+    if (!nguoi) return { chuaBiet: true, vi: 'Chưa có tên người phụ trách để đếm.' };
+    if (!tr) return { chuaBiet: true, vi: 'Bộ bản vẽ chưa khai trần cho tầng ' + t + '.' };
+
+    var ds = dsNha || (typeof G.dsNha === 'function' ? G.dsNha() : (G.FAMILIES || [])) || [];
+    var giu = ds.filter(function (x) {
+      var m = String(x.tier == null ? '' : x.tier).match(/(\d)/);
+      return x.coach === nguoi && m && ('T' + m[1]) === t;
+    }).length;
+
+    var tran = tr.theoTang[t];
+    var l5 = (G.BV_CONG_LUAT || []).filter(function (x) { return x.no === 5; })[0] || {};
+    var l3 = (G.BV_VAI_LUAT || []).filter(function (x) { return /trần công suất/i.test(x.luat); })[0] || {};
+
+    if (giu >= tran) return {
+      duoc: false, chan: true, vai: tr.vai, nguoi: nguoi, tang: t,
+      dangGiu: giu, tran: tran, tranChuoi: tr.chuoi,
+      vi: tr.vai + ' ' + nguoi + ' đang giữ ' + giu + '/' + tran + ' nhà ' + t + ' — đã đủ trần.',
+      lam: 'Chuyển cho người còn trần, hoặc để nhà chờ. KHÔNG giao dày lên.',
+      theoLuat: l5.luat || '', khongNgoaiLe: (l3.chiTiet || '')
+    };
+    return {
+      duoc: true, chan: false, vai: tr.vai, nguoi: nguoi, tang: t,
+      dangGiu: giu, tran: tran, tranChuoi: tr.chuoi, conCho: tran - giu,
+      /* Báo sớm từ 80% để người điều phối còn kịp xoay, chứ không báo
+         đúng lúc đã đầy — lúc ấy nhà đã ở trên bàn rồi. */
+      sapDay: giu >= Math.ceil(tran * 0.8) ? 'Còn ' + (tran - giu) + ' suất. Sắp đủ trần.' : undefined
+    };
+  };
+
+  /* KHOÁ: trần phải CHẶN được, không chỉ nằm trên giấy. */
+  G.bvSoiTran = function () {
+    var loi = [], ds = G.BV_VAI || [];
+    if (!ds.length) return { chuaDo: true, thieu: 'BV_VAI', loi: [] };
+
+    /* KHÔNG đếm "phải có đúng N trần". Bản đầu tôi viết N = 7, lấy từ
+       câu "bảy con số trần" tôi tự viết ở 9.56 — mà bản vẽ khai SÁU.
+       Phép kiểm đỏ ngay trên kho còn lành, và nó đỏ vì con số của tôi
+       sai chứ không vì kho sai. Một phép kiểm canh con số tôi tự đặt ra
+       thì nó canh trí nhớ của tôi, không canh cái kho.
+
+       Nên hỏi TÍNH CHẤT: trần nào khai theo tầng thì phải đọc ra được
+       ít nhất một tầng. Chuỗi đổi cách viết mà máy đọc ra rỗng là chỗ
+       trần chết trong im lặng — trần vẫn nằm đó, hàm chặn vẫn chạy, và
+       nó cho qua tất cả. */
+    var soTran = 0;
+    ds.forEach(function (v) {
+      var tr = G.bvTranVai(v.ten);
+      if (!tr || !tr.chuoi) return;
+      soTran++;
+      if (/(gia đình|hồ sơ)\s*T\d/.test(tr.chuoi) && !Object.keys(tr.theoTang).length)
+        loi.push('trần của ' + v.ten + ' ghi theo tầng mà máy đọc ra rỗng: "' + tr.chuoi + '"');
+    });
+    if (!soTran) loi.push('không vai nào còn khai trần — hàm chặn sẽ cho qua tất cả');
+
+    /* Tầng CÓ THU TIỀN phải có người khai trần cho nó. Đây là chỗ luật
+       số 5 nhắm tới: "bán vượt năng lực giao hàng là vi phạm nặng nhất"
+       — mà chỉ bán được ở tầng có giá.
+
+       Đích lấy từ HP_TANG, không viết tay danh sách tầng: viết tay thì
+       thêm một tầng có giá mà quên thêm vào đây là phép kiểm im. Tầng 1
+       giá 0 nên không đòi trần — và chỗ ấy ghi ở BV_LECH BL-0, không
+       giấu. */
+    (G.HP_TANG || []).forEach(function (t) {
+      if (!(Number(t.gia) > 0)) return;
+      var m = String(t.tang || '').match(/(\d)/);
+      if (!m) return;
+      if (!G.bvVaiGiuTang('T' + m[1]))
+        loi.push('tầng ' + t.tang + ' có thu tiền mà không vai nào khai trần — ' +
+          'bvNhanDuoc() sẽ cho qua mọi hồ sơ ở tầng ấy');
+    });
+
+    /* Phép thử phá đứng ngay trong khoá: dựng một người đã đủ trần rồi
+       hỏi hàm. Trả "được" là trần lại thành lời khuyên. */
+    var tr4 = G.bvVaiGiuTang('T4');
+    if (tr4) {
+      var day = [];
+      for (var i = 0; i < tr4.theoTang.T4; i++) day.push({ coach: '· thử ·', tier: 'Tầng 4' });
+      var r = G.bvNhanDuoc('· thử ·', 'T4', day);
+      if (!r.chan) loi.push('người đã đủ trần T4 mà hàm vẫn cho nhận — trần thành lời khuyên');
+      var r2 = G.bvNhanDuoc('· thử ·', 'T4', day.slice(0, 1));
+      if (r2.chan) loi.push('người mới giữ 1 nhà mà hàm đã chặn — trần chặn nhầm');
+    }
+    var l5 = (G.BV_CONG_LUAT || []).filter(function (x) { return x.no === 5; })[0];
+    if (!l5) loi.push('mất luật cổng số 5 — trần chặn cổng');
+    return { chuaDo: false, loi: loi, soTran: soTran };
+  };
+
   /* ═══════════ MỞ 4: MỘT CỔNG CHUYỂN TẦNG ═══════════ */
   G.bvCong = function (ma) {
     var ds = G.BV_CONG || [];
@@ -355,8 +502,9 @@ G.VIEWS = G.VIEWS || {};
       '<p class="tiny mt" style="line-height:1.7;color:#0B6675">' + h(loi.boDem || '') + '</p></div>';
 
     var s50 = G.bvSoi50(), snh = G.bvSoiNhip(), sdo = G.bvSoiDo(),
-        smc = G.bvSoiMaCong(), smd = G.bvSoiModule();
-    var lech = [].concat(s50.loi || [], snh.loi || [], sdo.loi || [], smc.loi || [], smd.loi || []);
+        smc = G.bvSoiMaCong(), smd = G.bvSoiModule(), str = G.bvSoiTran();
+    var lech = [].concat(s50.loi || [], snh.loi || [], sdo.loi || [], smc.loi || [],
+      smd.loi || [], str.loi || []);
     if (lech.length)
       o += '<div class="card mb" style="border-color:#BE0E16"><b class="sm" style="color:#BE0E16">' +
         'LỆCH: ' + h(lech.join(' · ')) + '</b></div>';

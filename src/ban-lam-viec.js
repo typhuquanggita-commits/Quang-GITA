@@ -138,18 +138,6 @@ G.VIEWS = G.VIEWS || {};
      Máy không duyệt. Ba điều kiện xanh chỉ nghĩa là hồ sơ ĐỦ ĐIỀU KIỆN
      TRÌNH lên Giám đốc điều hành. */
 
-  function tranCuaVai(tenVai) {
-    /* Trần đọc từ BV_VAI, không đặt lại ở đây. Chuỗi có dạng
-       "8 gia đình T4 hoặc 3 gia đình T5" — cắt thành { T4: 8, T5: 3 }. */
-    var v = (G.BV_VAI || []).filter(function (x) {
-      return String(x.ten).trim() === tenVai;
-    })[0];
-    if (!v || !v.tran) return null;
-    var ra = { chuoi: v.tran, theoTang: {} }, m, re = /(\d+)\s*(?:gia đình|hồ sơ)\s*(T\d)/g;
-    while ((m = re.exec(String(v.tran)))) ra.theoTang[m[2]] = Number(m[1]);
-    return Object.keys(ra.theoTang).length ? ra : null;
-  }
-
   G.blvDuyetDuoc = function (n, tenCoach) {
     var d = G.BLV_DUYET, ds = G.BLV_DUYET_DIEU || [];
     if (!d || !ds.length) return { chuaDo: true, thieu: 'BLV_DUYET' };
@@ -173,38 +161,63 @@ G.VIEWS = G.VIEWS || {};
       }
 
       if (dk.ma === 'CONGSUAT') {
-        var vai = n.tang === 'T4' || n.tang === 'T5' ? 'Coach' : 'Tư vấn';
-        var tr = tranCuaVai(vai);
+        /* ═══ CHỖ BẢN 9.58 ĐẶT SAI CỬA ═══
+
+           Bản trước tôi lấy trần công suất chặn ngay ở đây, cho mọi cấp.
+           Đọc lại bốn chỗ trong kho — BV_VAI_LUAT luật 3, BV_CONG_LUAT
+           luật 5, CS_NEN N2, BV_BANGIAO chặng "Tư vấn → Coach" — thì cả
+           bốn đều nói trần chặn lúc NHẬN KHÁCH MỚI và lúc MỞ CỔNG. Không
+           chỗ nào nói nó chặn một nhà đang đi lên cấp trong tầng.
+
+           Và đúng là không nên: nhà Coach đã giữ, đi từ cấp 6 lên cấp 7,
+           không tiêu thêm suất nào. Chặn nó vì Coach đông nhà là phạt
+           gia đình vì việc điều phối của hệ.
+
+           Nên ở cửa này trần chia hai đường:
+             · cấp thường  → CẢNH BÁO, để Giám đốc thấy người này đang đầy
+             · cấp 10      → CHẶN, vì cấp 10 là nhà sắp qua cổng sang
+                             tầng sau và sẽ vào tay MỘT VAI KHÁC. Lúc ấy
+                             nó đúng là "nhận khách mới", và luật số 5 áp
+                             thẳng vào. */
         var nguoi = tenCoach || n.coach;
-        var giu = (typeof G.dsNha === 'function' ? G.dsNha() : (G.FAMILIES || []) || [])
-          .filter(function (x) {
-            return x.coach === nguoi && maTang(x.tier) === n.tang;
-          }).length;
-        o.vai = vai; o.dangGiu = giu; o.nguoi = nguoi;
-        /* Không biết ai sẽ giữ nhà này thì không đếm được ai còn chỗ.
-           Bản đầu tôi để nó rơi vào "đang giữ 0 nhà" và ĐẠT — tức là một
-           nhà chưa có người phụ trách lại là nhà dễ qua cửa nhất. */
         if (!nguoi) {
           o.trangThai = 'chuaBiet';
           o.noi = 'Nhà này chưa có người phụ trách — chưa biết trần của ai để đếm.';
           o.canLam = 'Giao người phụ trách trước, rồi mới xét cấp.';
           ra.push(o); return;
         }
-        if (!tr || !co(tr.theoTang[n.tang])) {
+        if (typeof G.bvNhanDuoc !== 'function') {
           o.trangThai = 'chuaBiet';
-          o.noi = 'Bản vẽ chưa khai trần của vai ' + vai + ' cho tầng ' + n.tang + '.';
+          o.noi = 'Chưa nạp bộ bản vẽ — không đọc được trần công suất.';
+          ra.push(o); return;
+        }
+
+        var capNay = Number((n.capDeNghi || {}).cap) || 0;
+        var quaCong = capNay >= 10;
+        /* Cấp 10 thì đếm trần của vai NHẬN ở tầng sau, không phải vai
+           đang giữ — đó mới là người sắp gánh thêm một nhà. */
+        var tangXet = quaCong
+          ? 'T' + Math.min(5, (Number(String(n.tang).replace('T', '')) || 1) + 1)
+          : n.tang;
+        var r = G.bvNhanDuoc(nguoi, tangXet, null);
+        o.vai = r.vai; o.dangGiu = r.dangGiu; o.tran = r.tran;
+        o.tranChuoi = r.tranChuoi; o.nguoi = nguoi; o.tangXet = tangXet;
+        o.quaCong = quaCong || undefined;
+
+        if (r.chuaBiet) { o.trangThai = 'chuaBiet'; o.noi = r.vi; }
+        else if (!r.chan) {
+          o.trangThai = 'dat';
+          o.noi = r.vai + ' ' + nguoi + ' đang giữ ' + r.dangGiu + '/' + r.tran +
+            ' nhà ' + tangXet + (quaCong ? ' (tầng sẽ nhận)' : '');
+          if (r.sapDay) o.sapDay = r.sapDay;
         } else {
-          o.tran = tr.theoTang[n.tang]; o.tranChuoi = tr.chuoi;
-          o.trangThai = giu <= o.tran ? 'dat' : 'hut';
-          o.noi = vai + ' ' + nguoi + ' đang giữ ' + giu + ' nhà ' + n.tang +
-            ' · trần ' + o.tran;
-          if (o.trangThai === 'hut') {
-            o.vuot = giu - o.tran;
-            o.canLam = dk.hut;
-            /* Chủ hệ chưa cho chặn bằng số — BV_CHOCHU câu 2. Ở đây cảnh
-               báo và ghi rõ vượt bao nhiêu. Ngày chốt "có chặn" thì bật
-               dk.chan = true trong kho, không sửa hàm này. */
-            if (!dk.chan) { o.chiCanhBao = true; o.chuaChan = dk.chuaChan; }
+          o.trangThai = 'hut'; o.noi = r.vi; o.canLam = r.lam; o.theoLuat = r.theoLuat;
+          if (!quaCong) {
+            /* Chỉ cảnh báo: nhà này đã ở trong tay người ấy rồi. */
+            o.chiCanhBao = true;
+            o.chuaChan = 'Nhà đã ở trong tay người này — lên cấp không tiêu thêm suất. ' +
+              'Trần chặn lúc NHẬN nhà mới, không chặn lúc lên cấp. Nhưng Giám đốc nên biết ' +
+              'người này đang quá tải trước khi ký thêm việc cho họ.';
           }
         }
       }
