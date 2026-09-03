@@ -8977,6 +8977,105 @@ const { chromium } = require(PW);
         : 'T1 0% · giá đổi thành 9 triệu mà vẫn 0% · T2 vẫn 10% · quà 1 sao theo nhà được kèm · chưa vượt tầng thì chưa có gì · HH_CHOCHU rỗng có khai');
   }
 
+  /* ══════ 72B. CHUỖI KỊCH BẢN TRẢ LỜI PHỤ HUYNH ══════
+     Chạy trên tài khoản TƯ VẤN, không phải phụ huynh — và đó chính là
+     điều mục này phải đo. Xem KB_CHOCHU · KB-CC-01. */
+  {
+    await p.goto(URL, { waitUntil: 'networkidle' });
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.evaluate(() => window.G.doLogin('tuvan@gita365.vn'));
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.KB_VONG && window.G.TINHHUONG, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G, r = {};
+
+      /* ── BỘ KEY SINH TỪ KHO, KHÔNG GÕ TAY ── */
+      const bo = G.kbBoKey();
+      r.coKey = bo.length > 0 && bo.every(k => Array.isArray(k.tu) && k.tu.length);
+      G.TINHHUONG.push({ stt: 9999, tang: 'T1', nhom: 'THU', key: 'KHOTHU',
+        th: 'Chuyện dựng thử để đo bộ key', mo: 'bối cảnh dựng thử' });
+      r.keyTheoKho = G.kbBoKey().length === bo.length + 1;
+      G.TINHHUONG.pop();
+      /* Kho không khai tầng chỉ giúp NHẬN RA, không được dùng làm khúc
+         trả lời — chỉ TINHHUONG có đủ năm khúc. */
+      r.chiTinhHuongTraLoi = bo.filter(k => k.traLoiDuoc).every(k => k.kho === 'TINHHUONG') &&
+        bo.some(k => k.kho === 'PHACDO' && !k.traLoiDuoc);
+
+      /* ── NĂM VÒNG, HẸP DẦN QUA TỪNG VÒNG ── */
+      const cau = 'Con không tự giác, tối nào cũng phải nhắc ba lần mới ngồi vào bàn';
+      const v = [
+        G.kbChuoi(cau, []),
+        G.kbChuoi(cau, ['Buổi tối, lúc ngồi vào bàn']),
+        G.kbChuoi(cau, ['Buổi tối, lúc ngồi vào bàn', 'Vừa dùng điện thoại xong'])
+      ];
+      r.dungVong = v[0].vong.ma === 'BOICANH' && v[1].vong.ma === 'COTLOI' &&
+        v[2].vong.ma === 'DUNGTANG' && v[0].soVong === 5;
+      r.hepDan = v[0].soTrong > v[1].soTrong && v[1].soTrong > v[2].soTrong;
+      const th0 = (G.TINHHUONG || []).filter(x => x.th === v[0].tinhHuong.th)[0];
+      r.khucTuKho = v[0].khuc === th0.mo && v[0].docTu === 'TINHHUONG.mo';
+      /* Đổi trường `pt` chứ không đổi `mo`: `mo` nằm trong chính bộ chữ
+         dựng key, nên đổi nó là đổi luôn thứ hạng và chuyện khác lên đầu
+         — phép đo sẽ đỏ vì một lý do không liên quan tới câu hỏi đang
+         hỏi. `pt` là khúc của vòng hai và không tham gia dựng key. */
+      /* Sửa trên ĐÚNG bản ghi chuỗi vừa chọn ở vòng ấy, tra theo stt —
+         tra theo tên thì hai tình huống trùng tên là sửa nhầm bản, và
+         phép đo đỏ vì một lý do không liên quan. Và sửa `pt` chứ không
+         sửa `mo`: `mo` nằm trong bộ chữ dựng key nên đổi nó là đổi luôn
+         thứ hạng, chuyện khác lên đầu. */
+      const th2 = (G.TINHHUONG || []).filter(x => x.stt === v[1].tinhHuong.stt)[0];
+      const luu = th2.pt; th2.pt = 'ĐÃ ĐỔI THỬ';
+      r.khucChuKhongChep =
+        G.kbChuoi(cau, ['Buổi tối, lúc ngồi vào bàn']).khuc === 'ĐÃ ĐỔI THỬ';
+      th2.pt = luu;
+      r.vongLap = G.kbChuoi(cau, ['a', 'b', 'c', 'd']).quayLai === 'BOICANH';
+      r.khongThuVeRong = G.kbChuoi(cau, ['xyzqwertyuiop']).soTrong > 0;
+
+      /* ── MỜI VƯỢT TẦNG: NÓI CÓ, KHÔNG MỞ TÊN, GIÁ ĐỌC TỪ KHO ── */
+      const m = G.kbMoiVuotTang(4, 3);
+      r.moiCoGia = m.chuaCoGia === false && m.gia > 0 && m.khongMoTen === true &&
+        !/tình huống|TH-/.test(m.loi) && /tầng 4/.test(m.loi);
+      const hp = (G.HP_TANG || []).filter(x => x.tang === 'T4')[0];
+      const luuG = hp.gia; hp.gia = 12345;
+      r.giaTuKho = G.kbMoiVuotTang(4, 1).gia === 12345;
+      hp.gia = null;
+      r.chuaCoGiaThiNoi = G.kbMoiVuotTang(4, 1).chuaCoGia === true &&
+        G.kbMoiVuotTang(4, 1).gia === null;
+      hp.gia = luuG;
+
+      /* ── KHAI THẲNG LÀ CHƯA CHẠY CHO KHÁCH ── */
+      r.khaiThangChuaChay = (G.KB_LUAT || {}).khachChuaChayDuoc === true &&
+        (G.KB_CHOCHU || []).length === 1 &&
+        (G.KB_LUAT.chayChoAi || []).indexOf('R13') < 0 &&
+        (G.KB_LUAT.chayChoAi || []).indexOf('R11') >= 0;
+      return r;
+    });
+
+    /* Và trên MÁY KHÁCH thì kho tình huống vẫn KHÔNG có mặt — luật tài
+       sản nghề của mục 40 còn nguyên. Đây là phép đo canh chính chỗ tôi
+       vừa thử phá và bị bộ kiểm bắt. */
+    await p.evaluate(() => { localStorage.clear(); });
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.evaluate(() => window.G.doLogin('phuhuynh@gita365.vn'));
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length,
+      { timeout: 60000 });
+    const kh = await p.evaluate(() => ({
+      soTH: (window.G.TINHHUONG || []).length,
+      soKey: window.G.kbBoKey().length
+    }));
+    ra.khachKhongCoTinhHuong = kh.soTH === 0;
+    ra.khachBoKeyRong = kh.soKey === 0;
+
+    const doKB = ['coKey', 'keyTheoKho', 'chiTinhHuongTraLoi', 'dungVong', 'hepDan',
+      'khucTuKho', 'khucChuKhongChep', 'vongLap', 'khongThuVeRong', 'moiCoGia',
+      'giaTuKho', 'chuaCoGiaThiNoi', 'khaiThangChuaChay',
+      'khachKhongCoTinhHuong', 'khachBoKeyRong'].filter(k => !ra[k]);
+    bao(!doKB.length,
+      'CHUỖI KỊCH BẢN TRẢ LỜI PHỤ HUYNH — NĂM VÒNG HẸP DẦN, ĐỌC THẲNG TỪ KHO. VÀ HÔM NAY NÓ CHẠY CHO TƯ VẤN, CHƯA CHẠY CHO KHÁCH. Kho TINHHUONG đã có sẵn đúng chuỗi từ lâu: 250 tình huống, mỗi cái đủ năm khúc — th biểu hiện · mo bối cảnh · pt phân tích · chot chốt · gp giải pháp · kpi đo — và có khai tầng. Nên năm vòng KHÔNG viết lại nội dung nào: mỗi vòng chỉ là một CÂU HỎI mở khúc tiếp theo, còn khúc ấy đọc thẳng từ trường kho khai; đổi một chữ trong kho thì lời trả lời đổi theo trong cùng lần chạy. VÒNG LẶP PHẢI HẸP DẦN, và đây là chỗ khó nhất: mỗi câu trả lời áp LẦN LƯỢT lên cái rổ câu trước để lại. Bản đầu chỉ giao với câu gần nhất nên rổ phình lại ở vòng ba — 44 rồi 27 rồi 36 — mà hẹp rồi rộng ra thì không phải vòng lặp, chỉ là ba phép lọc rời nhau; nay 44 rồi 26 rồi 20 và chốt rơi đúng vào chuyện nhà ấy đang gặp. Câu trả lời ngoài dự kiến thì BỎ QUA câu ấy chứ không thu rổ về rỗng — mất hết là phạt người trả lời thật thà. Vòng năm quay lại vòng một với một con số thật thay vì một câu kể, nên chuỗi không có điểm kết. CHỖ PHẢI NÓI THẲNG: chuỗi chưa chạy trên máy khách hàng, vì TINHHUONG là TÀI SẢN NGHỀ và mục 40 chặn mọi đường đưa nó vào gói tầng của khách. Tôi đã thử đưa vào và bộ kiểm bắt ngay trong một lần chạy — nó còn bắt thêm rằng làm thế thì máy nghề nhận 325 tình huống thay vì 250, vì cùng một kho về từ hai gói. Trớ trêu là src/kho-khach.js ĐÃ dựng sẵn bảng thứ hạng và trần 30% cho đúng loại "Tình huống", nghĩa là ý định sản phẩm từng là cho khách đọc 30% — nhưng kho không xuống máy nên cái trần ấy tính trên một kho không tồn tại, và lời hứa 30% cho kho lớn nhất của hệ trả về con số không, im lặng, từ bản 9.8. Đó là một quyết định của chủ hệ về việc cái gì là tài sản nghề, không phải một chỗ hỏng để vá — nên nó nằm ở KB_CHOCHU · KB-CC-01 với ba đường chọn, và phép đo này canh để cái sổ ấy không bị lặng lẽ bỏ qua',
+      doKB.length ? 'phép đo hỏng: ' + doKB.join(' · ')
+        : '5 vòng hẹp dần 44→26→20 · khúc trỏ vào kho · vòng 5 quay lại vòng 1 · mời vượt tầng có giá thật · máy khách vẫn 0 tình huống, và kho khai thẳng là chưa chạy cho khách');
+  }
+
   /* ══════ 72. TRỢ LÝ: LỌC THEO TẦNG, VÀ DẪN TỪNG VIỆC ══════
      Tới 9.47 hai màn in ra câu "trả lời trong đúng phạm vi tầng của nhà
      mình" mà không dòng nào lọc theo tầng. Mục này đo cái VIỆC, không đo

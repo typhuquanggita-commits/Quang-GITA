@@ -29,6 +29,17 @@ var U = G.U, h = U.h, ic = U.ic;
    trên máy chung. Đóng ứng dụng là hết. */
 G.CHAT = G.CHAT || [];
 
+/* Những gì phụ huynh đã trả lời trong chuỗi, và câu mở đầu chuỗi.
+   Đây là toàn bộ chỗ "vòng lặp thông minh" nằm ở: mỗi câu trả lời cộng
+   vào đây thì bộ key vòng sau hẹp hơn vòng trước.
+
+   Để trong tệp, KHÔNG gắn lên G. Hai lý do: chuyện của một nhà không
+   nằm lại trên máy chung, và một mảng rỗng gắn lên G thì bộ rà soát đọc
+   nó như một KHO dữ liệu khai báo mà để trống — nó đã báo đỏ đúng như
+   thế. Trạng thái phiên và kho dữ liệu là hai thứ khác nhau; để lẫn một
+   chỗ thì mọi phép đo về kho đều phải học cách bỏ qua ngoại lệ. */
+var kbDa = [], kbCau = '';
+
 function khach(){ return !!(G.LA_KHACH && G.LA_KHACH()); }
 function tenToi(){ return (G.S.acc && G.S.acc.ten) || 'Anh chị'; }
 
@@ -64,7 +75,23 @@ G.chatHoi = function(cauHoi){
   cauHoi = String(cauHoi || '').trim();
   if(!cauHoi) return;
   G.CHAT.push({ai:'toi', loi:cauHoi, luc:new Date()});
-  var d = G.aiTraLoi(cauHoi);
+  /* CÂU HỎI MỚI hay CÂU TRẢ LỜI cho vòng đang hỏi?
+     Một câu dài, hoặc có dấu hỏi, là một câu hỏi MỚI — mở lại chuỗi từ
+     đầu. Một câu ngắn ("buổi tối", "vừa bị nhắc") là câu trả lời cho
+     vòng đang hỏi, và nó đi vào chỗ thu hẹp chứ không đi tra kho.
+
+     Bản đầu coi MỌI câu sau câu một là câu trả lời, và chỗ ấy hỏng nặng:
+     phụ huynh gõ một chuyện khẩn ở lượt thứ hai thì cả lượt ấy được đem
+     đi trả lời theo câu hỏi thứ NHẤT — lưới an toàn không bao giờ nhìn
+     thấy chữ "tự tử". Đường ấy không được phép hỏng, nên nay lưới an
+     toàn soi CHÍNH câu vừa gõ, mọi lượt, không có ngoại lệ. */
+  var laCauMoi = /[?？]/.test(cauHoi) || cauHoi.split(/\s+/).length >= 5;
+  if(G.aiCoKhan && G.aiCoKhan(cauHoi)) laCauMoi = true;
+  if(laCauMoi){ kbCau = cauHoi; kbDa = []; }
+  else kbDa.push(cauHoi);
+  var d = G.aiTraLoi(laCauMoi ? cauHoi : kbCau);
+  if(G.kbChuoi && G.LA_KHACH && G.LA_KHACH() && !d.khan)
+    d.chuoi = G.kbChuoi(kbCau, kbDa);
   G.CHAT.push({ai:'trolY', dap:d, luc:new Date()});
   if(G.secLog) G.secLog('Hỏi trợ lý',
     cauHoi.slice(0, 80) + ' → ' + (d.khan ? 'chuyển người thật' : d.nguon.length + ' nguồn'),
@@ -72,7 +99,7 @@ G.chatHoi = function(cauHoi){
   ve();
 };
 
-G.chatXoa = function(){ G.CHAT = []; ve(); };
+G.chatXoa = function(){ G.CHAT = []; kbDa = []; kbCau = ''; ve(); };
 
 /* ═══════════ VẼ MỘT BÓNG NÓI ═══════════ */
 function bongToi(m){
@@ -116,6 +143,56 @@ function theDap(d){
   if(d.y) o += '<div class="ai-nhip">'+ic('compass','w-3 h-3')+
     '<span>'+h(d.y.ten)+' · nhịp '+h(d.y.nhip)+'</span></div>';
   if(d.loi) o += '<p class="ai-loi">'+h(d.loi)+'</p>';
+
+  /* ── CHUỖI KỊCH BẢN: MỘT VÒNG, MỘT CÂU HỎI ──
+     Đứng ĐẦU câu trả lời. Người đang mệt đọc được hai dòng đầu; nếu hai
+     dòng ấy là một danh sách tư liệu thì họ đóng máy, còn nếu là một câu
+     hỏi trả lời được thì họ trả lời. */
+  if(d.chuoi){
+    var c = d.chuoi;
+    o += '<div class="kb-vong">'+
+      '<div class="kb-vong-h"><span class="kb-vong-no">'+c.vong.no+'/'+c.soVong+'</span>'+
+      '<b>'+h(c.vong.ten)+'</b>'+
+      (c.tinhHuong ? '<span class="kb-vong-th">tầng '+h(String(c.tinhHuong.tang).slice(1))+
+        ' · '+c.soTrong+' chuyện khớp</span>' : '')+'</div>';
+
+    /* Khúc của vòng này — đọc THẲNG từ trường kho khai. */
+    if(c.khuc)
+      o += '<p class="kb-khuc">'+h(c.khuc)+'</p>'+
+        '<p class="kb-doctu tiny dim">Đọc từ '+h(c.docTu)+' · '+h(c.tinhHuong.th)+'</p>';
+    else if(c.thieuKhuc)
+      o += '<p class="kb-khuc kb-thieu">Kho chưa có khúc này cho chuyện ấy ('+h(c.docTu)+
+        '). Em không bịa cho tròn.</p>';
+    else if(!c.khoanhDuoc)
+      o += '<p class="kb-khuc kb-thieu">Em chưa khoanh được đúng chuyện của nhà mình. '+
+        'Anh chị kể thêm một chi tiết nữa được không?</p>';
+
+    /* Câu hỏi của vòng — đúng MỘT câu. */
+    o += '<p class="kb-hoi">'+h(c.hoi)+'</p>'+
+      '<div class="kb-goiy">'+ (c.goiY||[]).map(function(g){
+        return '<button class="kb-chip" data-kbv="'+h(g)+'">'+h(g)+'</button>';
+      }).join('') +'</div>';
+    if(c.quayLai)
+      o += '<p class="kb-quaylai tiny dim">'+ic('compass','w-3 h-3')+
+        ' Trả lời xong vòng này, mình quay lại vòng một — lần sau với một con số thật của '+
+        'nhà mình thay vì một câu kể.</p>';
+    o += '</div>';
+
+    /* Mời vượt tầng — CHỈ sau khi đã đưa xong phần dùng được. */
+    if(c.soVuot && c.tangVuot){
+      var m = G.kbMoiVuotTang(c.tangVuot, c.soVuot);
+      if(m) o += '<div class="kb-moi">'+ic('lock','w-4 h-4')+
+        '<div><b>Còn '+m.so+' phần nữa, ở tầng '+m.tang+'</b>'+
+        '<p>'+h(m.loi)+'</p>'+
+        (m.duocGi ? '<p class="kb-moi-duoc">Đi hết tầng '+m.tang+' thì: '+h(m.duocGi)+'</p>' : '')+
+        '<p class="kb-moi-gia">'+(m.chuaCoGia
+          ? 'Học phí tầng này chưa khai trong kho — Tư vấn báo lại con số thật.'
+          : 'Lộ trình tầng '+m.tang+': '+h(new Intl.NumberFormat('vi-VN').format(m.gia))+
+            ' '+h(m.donVi||'đồng'))+'</p>'+
+        '<button class="btn sm" data-v="dang-ky">Đăng ký lộ trình tầng '+m.tang+'</button>'+
+        '</div></div>';
+    }
+  }
 
   /* ── BỐN NHỊP DẪN MỘT VIỆC ──
      Đặt TRƯỚC danh sách tư liệu: người hỏi về một việc cần biết tối nay
@@ -292,6 +369,12 @@ document.addEventListener('click', function(e){
     var i = document.getElementById('aiQ'); if(i) i.value = '';
     return;
   }
+  /* Chip gợi ý của một vòng = một CÂU TRẢ LỜI, đi thẳng vào chuỗi.
+     Tên thuộc tính là data-kbv chứ không phải data-kb: app.js đã dùng
+     data-kb cho modal kịch bản từ lâu, và trùng tên thì bấm một chip
+     gợi ý sẽ mở nhầm một cửa sổ chẳng liên quan. */
+  var v = e.target.closest && e.target.closest('[data-kbv]');
+  if(v){ G.chatHoi(v.getAttribute('data-kbv')); return; }
   var x = e.target.closest && e.target.closest('[data-xin]');
   if(x){
     var p = x.getAttribute('data-xin').split('|');

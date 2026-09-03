@@ -177,6 +177,9 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
      cho mọi kho, và trần tầng tắt ngóm đúng trên máy của người nó sinh ra
      để bảo vệ. Đặt nhầm sang gói NGHỀ thì đội ngũ có luật còn khách hàng
      thì không, mà đội ngũ lại là bên KHÔNG bị lọc. */
+  /* Chuỗi kịch bản trả lời phụ huynh. Gói NỀN cùng lý do với TL_*:
+     chính khách hàng là người đi qua năm vòng này. */
+  'KB_VONG', 'KB_KEY_NGUON', 'KB_LUAT', 'KB_MOI_TANG', 'KB_CHOCHU',
   'TL_TANG_TRUONG', 'TL_TANG_LUAT', 'TL_VIEC_NHIP', 'TL_VIEC_LUAT', 'TL_VIEC_DAU',
   'HH_KEM', 'HH_BAC', 'HH_BAC_LUAT', 'HH_KHONG_TIEN', 'HH_CHUNGCU', 'HH_LOAI_CC', 'HH_CC_LUAT', 'HH_CHOCHU', 'HH_DA_CHOT',
   'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_MUC', 'TG_VIEC',
@@ -523,10 +526,28 @@ goi['nghe-cao'] = { FAMILIES: (G.FAMILIES || []).filter(f => Number(f.tier) >= 4
 
 goi.nen.HP_NGAY = (G.HP_TANG || []).map(t => {
   const so = String(t.ten || '').match(/\d+/);
-  return { tang: t.tang, ten: t.ten, ngay: so ? Number(so[0]) : null };
+  /* GIÁ ĐI KÈM TỪ 9.49. Bảng giá năm tầng là thông tin công khai — chính
+     nhà đang dùng phải biết tầng sau bao nhiêu tiền mới đăng ký được.
+     Trước đây bản rút này bỏ giá, nên lời mời "đăng ký lộ trình tầng
+     trên" trên máy khách không nói được con số nào, và một lời mời không
+     có giá thì người ta phải đi hỏi mới biết — thêm một bước để bỏ cuộc. */
+  return { tang: t.tang, ten: t.ten, ngay: so ? Number(so[0]) : null,
+    gia: t.gia === undefined ? null : t.gia, donVi: t.donVi };
 });
 
 goi.nghe.HM_NGUY_SAU = G.HM_NGUY;
+/* Trần nội dung của khách — ĐỌC TỪ src/kho-khach.js, không gõ lại.
+   Tệp ấy là mã trình duyệt nên không require được ở đây; đọc bằng một
+   phép khớp chuỗi thì vẫn đúng một nguồn. Gõ lại 0.30 ở đây là dựng bản
+   thứ hai của một con số có giá, và tới ngày chủ hệ đổi trần thì gói cắt
+   một đằng còn màn hình tính một nẻo. */
+const TRAN_KHACH = (() => {
+  const t = fs.readFileSync(path.join(GOC, 'src', 'kho-khach.js'), 'utf8');
+  const m = /G\.TRAN_KHACH\s*=\s*([0-9.]+)/.exec(t);
+  if (!m) { console.error('  ✗ Không đọc được G.TRAN_KHACH từ src/kho-khach.js'); process.exit(1); }
+  return Number(m[1]);
+})();
+
 /* ── KỊCH BẢN CHUYÊN MÔN KHÔNG ĐI THEO GÓI TẦNG ──
    Kịch bản từng nằm trong gói tầng, mỗi tầng 200 cái. Nghĩa là một
    phụ huynh Tầng 3 nhận về máy mình 200 kịch bản coaching: nguyên văn
@@ -861,6 +882,7 @@ const mau = {
   TIN_TIEUCHI: G.TIN_TIEUCHI, TIN_TIEUCHI_LUAT: G.TIN_TIEUCHI_LUAT,
   TIN_THUONG: G.TIN_THUONG, TIN_CAM: G.TIN_CAM, TIN_LUAT: G.TIN_LUAT,
   TG_MUC: G.TG_MUC, TG_VIEC: G.TG_VIEC,
+  KB_VONG: G.KB_VONG, KB_KEY_NGUON: G.KB_KEY_NGUON, KB_LUAT: G.KB_LUAT, KB_MOI_TANG: G.KB_MOI_TANG, KB_CHOCHU: G.KB_CHOCHU,
   TL_TANG_TRUONG: G.TL_TANG_TRUONG, TL_TANG_LUAT: G.TL_TANG_LUAT,
   TL_VIEC_NHIP: G.TL_VIEC_NHIP, TL_VIEC_LUAT: G.TL_VIEC_LUAT, TL_VIEC_DAU: G.TL_VIEC_DAU,
   XK_TRAN: G.XK_TRAN, XK_MUC: G.XK_MUC, XK_CAM: G.XK_CAM, XK_LUAT: G.XK_LUAT,
