@@ -1305,6 +1305,26 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .bc-vong-so .bang{color:var(--ink-4)}
 .bc-vong-so .dang{color:var(--gita);font-weight:700}
 .bc-vong-so.dim{color:var(--ink-4)}
+
+/* ═══ TẦNG NĂM · v9.37 ═══
+   Ô CHƯA TỚI khác ô đã qua mà để trống. Bàn tầng năm có ba trăm sáu
+   lăm ô; tối đầu tiên mở ra thấy ba trăm sáu tư ô xám thì trông y như
+   ba trăm sáu tư lần bỏ lỡ. Vẽ nó NHẠT và VIỀN ĐỨT — nhìn ra là chỗ
+   chưa đi tới, không phải chỗ đã trượt. */
+.bc-o.sau{background:transparent;border-style:dashed;border-color:var(--line);opacity:.5}
+.bc-vong.thang{background:transparent;border-style:dotted}
+.bc-nhip{margin:10px 0 12px;padding:12px 15px;border-radius:14px;border:1px solid var(--line)}
+.bc-nhip>b{display:block;font-size:14.5px}
+.bc-nhip p b{color:inherit;font-weight:800}
+.bc-nhip p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:62ch}
+.bc-nhip p.dim{color:var(--ink-4)}
+.bc-nhip.giu{border-color:color-mix(in srgb,var(--ok) 42%,transparent);
+  background:color-mix(in srgb,var(--ok) 6%,transparent)}
+.bc-nhip.giu b{color:var(--ok)}
+.bc-nhip.tut{border-color:#B4720F45;background:color-mix(in srgb,#B4720F 6%,transparent)}
+.bc-nhip.tut b{color:#B4720F}
+.bc-nhip.chua{border-style:dashed}
+.bc-nhip.chua b{color:var(--ink-3)}
 /* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
    một trong hai thì mắt đọc nó thành của riêng dải ấy. */
 .bc-khop{display:flex;align-items:center;gap:8px;margin:-6px 0 10px 6px;

@@ -1677,6 +1677,26 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .bc-vong-so .bang{color:var(--ink-4)}
 .bc-vong-so .dang{color:var(--gita);font-weight:700}
 .bc-vong-so.dim{color:var(--ink-4)}
+
+/* ═══ TẦNG NĂM · v9.37 ═══
+   Ô CHƯA TỚI khác ô đã qua mà để trống. Bàn tầng năm có ba trăm sáu
+   lăm ô; tối đầu tiên mở ra thấy ba trăm sáu tư ô xám thì trông y như
+   ba trăm sáu tư lần bỏ lỡ. Vẽ nó NHẠT và VIỀN ĐỨT — nhìn ra là chỗ
+   chưa đi tới, không phải chỗ đã trượt. */
+.bc-o.sau{background:transparent;border-style:dashed;border-color:var(--line);opacity:.5}
+.bc-vong.thang{background:transparent;border-style:dotted}
+.bc-nhip{margin:10px 0 12px;padding:12px 15px;border-radius:14px;border:1px solid var(--line)}
+.bc-nhip>b{display:block;font-size:14.5px}
+.bc-nhip p b{color:inherit;font-weight:800}
+.bc-nhip p{font-size:12.5px;line-height:1.75;color:var(--ink-2);margin-top:4px;max-width:62ch}
+.bc-nhip p.dim{color:var(--ink-4)}
+.bc-nhip.giu{border-color:color-mix(in srgb,var(--ok) 42%,transparent);
+  background:color-mix(in srgb,var(--ok) 6%,transparent)}
+.bc-nhip.giu b{color:var(--ok)}
+.bc-nhip.tut{border-color:#B4720F45;background:color-mix(in srgb,#B4720F 6%,transparent)}
+.bc-nhip.tut b{color:#B4720F}
+.bc-nhip.chua{border-style:dashed}
+.bc-nhip.chua b{color:var(--ink-3)}
 /* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
    một trong hai thì mắt đọc nó thành của riêng dải ấy. */
 .bc-khop{display:flex;align-items:center;gap:8px;margin:-6px 0 10px 6px;
@@ -1895,7 +1915,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.36',
+  version: '9.37',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -5257,7 +5277,7 @@ G.THUOC_CAP_PHEP = [
   'CS_LOI','CS_TANG','CS_TANG_LUAT','CS_NEN','CS_LUAT',
   'KA_LOAI','KA_TY','KA_CHO','KA_LUAT','KA_ANTOAN',
   'BC_LOI','BC_TRONGSO','BC_TRONGSO_LUAT','BC_MUNG','BC_MUNG_LUAT','BC_LUAT',
-  'BC_VAI','BC_VAI_LUAT','BC_VONG_LUAT',
+  'BC_VAI','BC_VAI_LUAT','BC_VONG_LUAT','BC_NHIP_LUAT','BC_CHOCHU',
   'HP_NGAY',
   'TIN_LOAI','TIN_NGUON','TIN_NGUON_LUAT','TIN_TIEUCHI','TIN_TIEUCHI_LUAT',
   'TIN_THUONG','TIN_CAM','TIN_LUAT',
@@ -24673,6 +24693,24 @@ G.VIEWS = G.VIEWS || {};
     return o + '</p>';
   }
 
+  /* Nhịp tụt hay không — và khi CHƯA ĐO ĐƯỢC thì nói thẳng thiếu gì,
+     không đưa ra một con số cho đủ ô. Một con số bịa nguy hiểm hơn một
+     ô trống, vì ô trống thì người ta đi tìm, còn con số bịa thì người
+     ta tin. */
+  function veNhip(nk) {
+    if (nk.chuaDo)
+      return '<div class="bc-nhip chua"><b>Nhịp nhà mình có tụt không — chưa đo được</b>' +
+        '<p>' + h(nk.thieu) + '</p></div>';
+    return '<div class="bc-nhip' + (nk.tut ? ' tut' : ' giu') + '">' +
+      '<b>' + (nk.tut ? 'Nhịp nhà mình ĐANG TỤT' : 'Nhịp nhà mình không tụt') + '</b>' +
+      '<p><b>' + Math.round(nk.nay.ty * 100) + '%</b> bây giờ (' + nk.nay.soO + '/' +
+      nk.nay.qua + ' ngày đã qua) · <b>' + Math.round(nk.truoc.ty * 100) + '%</b> ở tầng ' +
+      nk.tangTruoc.slice(1) + ' (' + nk.truoc.soO + '/' + nk.truoc.qua + ')' +
+      ' · ' + (nk.chenh > 0 ? 'hơn ' + nk.chenh : nk.chenh < 0 ? 'kém ' + (-nk.chenh) : 'bằng') +
+      (nk.chenh ? ' điểm phần trăm' : '') + '.</p>' +
+      '<p class="dim">' + h((G.BC_NHIP_LUAT || {}).vi || '') + '</p></div>';
+  }
+
   function veTheoVong(tang, can, s, v) {
     var o = '', d0 = ngayDau(s);
     var dsKho = G.bcVongKho(tang) || [];
@@ -24820,6 +24858,54 @@ G.VIEWS = G.VIEWS || {};
      HIỆN RA CHỨ KHÔNG PHẠT. Luật 8 đã nói ô trống là ô trống. Mối nối
      hở thì màn nói hở, không trừ điểm, không đỏ lên. Và chỉ nói về mối
      nối ĐÃ QUA — báo hở một cái khớp còn chưa tới là bịa. */
+  /* ═══════════ NHỊP CỦA MỘT BÀN ═══════════
+     Ô đầy chia cho số ngày ĐÃ QUA của bàn ấy — không chia cho cả tầng,
+     vì bàn đang đi dở mà chia cho 365 thì tầng nào đang đi cũng "kém". */
+  function nhipBan(tang) {
+    var s = soCua(tang), d0 = ngayDau(s); if (!d0) return null;
+    var canVai = G.bcVaiNha(), can = G.bcSoNgay(tang) || 0;
+    var qua = Math.floor((new Date(G.bcNgay() + 'T00:00:00').getTime() -
+      new Date(d0 + 'T00:00:00').getTime()) / 86400000) + 1;
+    if (can && qua > can) qua = can;
+    if (qua < 1) return null;
+    var soO = 0;
+    Object.keys(s).forEach(function (n) {
+      if (oDay(oChuan(s[n]), canVai)) soO++;
+    });
+    if (soO > qua) soO = qua;
+    return { soO: soO, qua: qua, ty: soO / qua };
+  }
+
+  /* ═══════════ 'MÀ NHỊP NHÀ MÌNH KHÔNG TỤT' ═══════════
+     Thử thách tầng năm có HAI vế: 'Kèm một nhà mới đi hết mùa đầu của
+     họ, MÀ NHỊP NHÀ MÌNH KHÔNG TỤT.' Vế thứ hai là một điều kiện thật,
+     và nó đo được ngay trên hai cái bàn nhà mình đã có — không cần thêm
+     dữ liệu nào.
+
+     Đọc điều kiện TỪ CÂU của kho chứ không gắn cứng vào T5: tầng nào
+     khai câu ấy thì tầng ấy được đo. Gắn cứng thì mai kho đổi câu mà
+     máy vẫn đo, hoặc kho thêm câu ấy cho tầng khác mà máy im.
+
+     Đây cũng chính là chỗ tầng năm dễ hỏng nhất trong đời thật: dồn hết
+     sức cho nhà mình đang kèm, còn nếp nhà mình thì tụt — và tụt trong
+     lúc đang làm gương thì hỏng cả hai nhà. */
+  G.bcNhipKhongTut = function (tang) {
+    if (!/nhịp nhà mình không tụt/i.test(G.bcThuThach(tang) || '')) return null;
+    var i = MA_TANG.indexOf(tang);
+    if (i <= 0) return { chuaDo: true, thieu: 'Tầng này không có tầng trước để so.' };
+    var truoc = MA_TANG[i - 1];
+    var n = nhipBan(tang);
+    if (!n) return { chuaDo: true, thieu: 'Bàn tầng ' + tang.slice(1) + ' chưa có ô nào.' };
+    var t = nhipBan(truoc);
+    if (!t) return { chuaDo: true, tenTruoc: truoc,
+      thieu: 'Chưa có bàn cờ tầng ' + truoc.slice(1) + ' trên máy này để so nhịp.' };
+    var chenh = Math.round(n.ty * 100) - Math.round(t.ty * 100);
+    return { chuaDo: false, tang: tang, tangTruoc: truoc,
+      nay: n, truoc: t, chenh: chenh, tut: chenh < 0,
+      la: 'Nhịp bây giờ ' + Math.round(n.ty * 100) + '% · tầng ' + truoc.slice(1) + ' là ' +
+        Math.round(t.ty * 100) + '%' };
+  };
+
   G.bcMoiNoi = function (tang) {
     var v = G.bcVong(tang); if (!v || v.soVong < 2) return null;
     var s = soCua(tang), d0 = ngayDau(s); if (!d0) return null;
@@ -24837,15 +24923,54 @@ G.VIEWS = G.VIEWS || {};
     return ra.length ? ra : null;
   };
 
+  /* ═══════════ TẦNG KHÔNG KHAI VÒNG THÌ CHIA THEO THÁNG LỊCH ═══════════
+     Tầng năm dài ba trăm sáu lăm ngày và kho KHÔNG khai vòng nào cho
+     nó. Đổ cả ba trăm sáu lăm ô thành một khối thì không ai định vị
+     được mình đang ở đâu — mà bàn cờ tồn tại chính là để nhìn ra "chỗ
+     nào dày, chỗ nào thưa".
+
+     Chia theo THÁNG LỊCH, và nói rõ đó là lịch. Tháng là thứ có sẵn
+     ngoài đời, không phải một cái vòng tôi nghĩ ra cho đều bảng — nếu
+     đặt ra một số vòng ở đây thì đúng bằng việc khai một con số kho
+     chưa khai, và cả tệp này dựng lên để tránh chuyện ấy. */
+  var TEN_THANG = ['Tháng một', 'Tháng hai', 'Tháng ba', 'Tháng tư', 'Tháng năm', 'Tháng sáu',
+    'Tháng bảy', 'Tháng tám', 'Tháng chín', 'Tháng mười', 'Tháng mười một', 'Tháng mười hai'];
+  function veTheoThang(tang, can, s, d0) {
+    var canVai = G.bcVaiNha(), homNay = G.bcNgay();
+    var khoi = [], truoc = null;
+    for (var i = 0; i < can; i++) {
+      var ng = ngayThu(d0, i), k = ng.slice(0, 7);
+      if (k !== truoc) { khoi.push({ k: k, tu: i, dem: 0, soO: 0, qua: 0 }); truoc = k; }
+      var b = khoi[khoi.length - 1];
+      b.dem++;
+      if (ng <= homNay) b.qua++;
+      var q = oChuan(s[ng]);
+      if (q && oDay(q, canVai)) b.soO++;
+    }
+    return khoi.map(function (b) {
+      var th = Number(b.k.slice(5, 7)) - 1, nam = b.k.slice(0, 4);
+      return '<div class="bc-vong thang">' +
+        '<div class="bc-vong-d"><b>' + TEN_THANG[th] + '</b><span>' + nam + ' · ' +
+        b.dem + ' ngày</span></div>' +
+        veO(tang, s, d0, b.tu, b.dem) +
+        '<p class="bc-vong-so' + (b.qua ? '' : ' dim') + '">' +
+        (b.qua
+          ? '<b>' + b.soO + '</b>/' + b.qua + ' ô' +
+            (b.qua < b.dem ? ' · còn ' + (b.dem - b.qua) + ' ngày chưa tới' : '')
+          : 'Chưa tới tháng này.') + '</p></div>';
+    }).join('');
+  }
+
   function veBan(tang, can, s) {
     if (!can) return '';
-    var d0 = null;
-    Object.keys(s).sort().forEach(function (n) { if (!d0) d0 = n; });
-    /* Tầng có vòng thì vẽ theo vòng; tầng không có thì một dải. Không tự
-       đặt ra một số vòng cho đều bảng — tầng một và tầng năm thật sự
-       không khai vòng nào ở kho. */
+    var d0 = ngayDau(s);
+    /* Tầng có vòng thì vẽ theo vòng; tầng dài mà không khai vòng thì
+       chia theo tháng lịch; còn lại một dải. Không tự đặt ra một số
+       vòng cho đều bảng — tầng một và tầng năm thật sự không khai vòng
+       nào ở kho, và nói KHÔNG CÓ là câu đúng. */
     var v = G.bcVong(tang);
     if (v && v.soVong > 1) return veTheoVong(tang, can, s, v);
+    if (!v && can > 90 && d0) return veTheoThang(tang, can, s, d0);
     return veO(tang, s, d0, 0, can);
   }
 
@@ -24855,11 +24980,19 @@ G.VIEWS = G.VIEWS || {};
        ra ba tuần rời chứ không đọc ra một chuỗi. */
     var cot = dem <= 7 ? 7 : dem <= 21 ? dem : dem <= 90 ? 15 : 28;
     var o = '<div class="bc-ban" style="--bc-cot:' + cot + '">';
-    var canVai = G.bcVaiNha();
+    var canVai = G.bcVaiNha(), homNay = G.bcNgay();
     for (var i = tu; i < tu + dem; i++) {
       var ng = d0 ? G.bcNgay(new Date(new Date(d0 + 'T00:00:00').getTime() + i * 86400000)) : null;
       var q = ng ? oChuan(s[ng]) : null;
-      if (!q) { o += '<i class="bc-o"></i>'; continue; }
+      /* Ô CHƯA TỚI khác ô đã qua mà để trống. Bàn tầng năm có ba trăm
+         sáu lăm ô, và tối đầu tiên nhà mình mở ra đã thấy ba trăm sáu
+         tư ô xám — trông y như ba trăm sáu tư lần bỏ lỡ. Không có luật
+         nào bị vi phạm ở đây (ô trống vẫn không trừ điểm), nhưng cái
+         nhìn nói dối, và người ta bỏ vì cái nhìn chứ không vì luật. */
+      if (!q) {
+        o += '<i class="bc-o' + (ng && ng > homNay ? ' sau' : '') + '"></i>';
+        continue;
+      }
       /* Ô chia sọc theo vai: mỗi người một sọc, sọc có màu là người ấy
          đã làm. Nhìn một ô là biết tối ấy ai có mặt ai vắng — thứ một
          ô đặc một màu không nói được. */
@@ -24923,6 +25056,14 @@ G.VIEWS = G.VIEWS || {};
          chính bàn này — nên nó phải đứng ngay trên bàn. */
       var tt = G.bcThuThach(tang);
       if (tt) o += '<p class="bc-thuthach"><b>Việc của tầng này:</b> ' + h(tt) + '</p>';
+      /* Tầng nào khai điều kiện 'nhịp nhà mình không tụt' thì ĐO nó ngay
+         ở đây. Điều kiện in ra mà không ai đo thì nó chỉ là một câu văn. */
+      var nk = G.bcNhipKhongTut(tang);
+      if (nk) o += veNhip(nk);
+      if (!G.bcVong(tang))
+        o += '<p class="bc-y dim">Kho không khai vòng nào cho tầng này' +
+          (d.can > 90 ? ' — bàn chia theo THÁNG LỊCH để nhìn được. Tháng là lịch, ' +
+            'không phải một vòng.' : '.') + '</p>';
       if (vg) o += '<p class="bc-y"><b>' + h(vg.la) + '</b> · ' +
         h((G.BC_VONG_LUAT || {}).motBienMotVong || '') +
         ' <span class="dim">(đọc từ ' + h(vg.docTu) + ')</span></p>';
@@ -25018,6 +25159,23 @@ G.VIEWS = G.VIEWS || {};
 
     /* Đếm chứ không gõ tay. Nhan đề còn ghi "Sáu luật" trong khi kho đã
        có mười một — một con số gõ tay thì đứng yên trong lúc kho đi tiếp. */
+    /* Việc còn chờ chủ hệ thống — in thẳng ra màn mỗi lần chạy. Nằm im
+       trong một tệp ghi chú thì sáu tháng nữa vẫn nằm im ở đó. */
+    var cc = (G.BC_CHOCHU || []).filter(function (x) {
+      return String(x.o || '').indexOf('Tầng ' + tang.slice(1)) >= 0;
+    });
+    if (cc.length) {
+      o += U.sec('CHƯA ĐO ĐƯỢC — CHỜ CHỦ HỆ THỐNG', '');
+      o += '<div class="card mb">' + cc.map(function (x) {
+        return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + h(x.o) + '</b>' +
+          '<p class="sm mt" style="line-height:1.75">' + h(x.hoi) + '</p>' +
+          '<p class="tiny dim mt" style="line-height:1.7">' + h(x.vi) + '</p>' +
+          '<p class="tiny dim mt" style="line-height:1.7"><b>Cần gì:</b> ' + h(x.canGi) +
+          '</p></div>';
+      }).join('') + '</div>';
+    }
+
     o += U.sec((G.BC_LUAT || []).length + ' luật của bàn cờ', '');
     o += '<div class="card">' + (G.BC_LUAT || []).map(function (l) {
       return '<div style="padding:8px 0;border-bottom:1px solid var(--gita-vien-2)">' +

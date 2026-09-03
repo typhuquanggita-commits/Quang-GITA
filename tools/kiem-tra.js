@@ -7994,6 +7994,57 @@ const { chromium } = require(PW);
         m3.indexOf(G.U.h('Đi bốn chuỗi hai mươi mốt ngày nối nhau')) >= 0;
       /* Hai chuỗi khó phải cùng được đánh dấu, không phải một */
       r.manHaiChoKho = (m3.match(/bc-vong-kho/g) || []).length === 2;
+
+      /* ══════ TẦNG NĂM ══════
+         Thử thách của nó có HAI vế: 'Kèm một nhà mới đi hết mùa đầu của
+         họ, MÀ NHỊP NHÀ MÌNH KHÔNG TỤT.' Vế hai đo được ngay trên hai
+         bàn đã có; vế một thì không kho nào khai, và màn phải nói thẳng
+         là chưa đo được chứ không đưa ra một con số cho đủ ô. */
+      G.S.banCo = { T4: {}, T5: {} };
+      const dat5 = (t, lui, tu, den) => {
+        const g = new Date(new Date().getTime() - lui * 86400000);
+        for (let i = tu; i <= den; i++)
+          G.S.banCo[t][G.bcNgay(new Date(g.getTime() + i * 86400000))] = oDay3();
+      };
+      dat5('T4', 500, 0, 299);      /* 300 ô trên 365 ngày đã trọn → 82% */
+      dat5('T5', 99, 0, 49);        /* 50 ô trên 100 ngày đã qua  → 50% */
+      const nk = G.bcNhipKhongTut('T5');
+      /* NHỊP CHIA CHO NGÀY ĐÃ QUA, không chia cho cả tầng. Chia cho 365
+         thì tầng nào đang đi cũng "kém", và nó kém vì LỊCH. */
+      r.nhipChiaNgayDaQua = !!nk && nk.nay.qua === 100 && nk.nay.soO === 50 &&
+        nk.truoc.qua === 365 && nk.truoc.soO === 300;
+      r.nhipTut = !!nk && nk.tut === true && nk.chenh === -32 && nk.tangTruoc === 'T4';
+      /* ĐIỀU KIỆN ĐỌC TỪ CÂU CỦA KHO, không gắn cứng vào mã tầng. Tầng
+         ba không khai câu ấy nên tầng ba không bị đo. */
+      r.nhipDocTuCau = G.bcNhipKhongTut('T3') === null &&
+        /nhịp nhà mình không tụt/i.test(G.bcThuThach('T5') || '');
+      /* Không có bàn tầng trước thì nói THIẾU GÌ, không đưa ra con số. */
+      const luuT4 = G.S.banCo.T4; G.S.banCo.T4 = {};
+      const nk2 = G.bcNhipKhongTut('T5');
+      r.nhipChuaDo = !!nk2 && nk2.chuaDo === true && /tầng 4/i.test(nk2.thieu || '');
+      G.S.banCo.T4 = luuT4;
+      /* Nhịp giữ được thì nói giữ được — phép kiểm phải đỏ được cả hai chiều. */
+      dat5('T5', 99, 50, 99);
+      r.nhipGiu = G.bcNhipKhongTut('T5').tut === false;
+      dat5('T4', 500, 0, 299); G.S.banCo.T5 = {}; dat5('T5', 99, 0, 49);
+
+      /* ── BÀN DÀI KHÔNG KHAI VÒNG THÌ CHIA THEO THÁNG LỊCH ── */
+      G.S.bcTang = 'T5';
+      const man5 = G.VIEWS['ban-co']();
+      r.chiaThang = (man5.match(/bc-vong thang/g) || []).length >= 12;
+      /* Chia tháng KHÔNG được làm mất hay nhân đôi một ngày nào. */
+      r.thangDuOMotLan = (man5.match(/class="bc-o/g) || []).length === 365;
+      /* Ô CHƯA TỚI phải khác ô đã qua mà để trống: 365 − 100 = 265 ô sau. */
+      r.oChuaToi = (man5.match(/class="bc-o sau"/g) || []).length === 265;
+      r.noiKhongKhaiVong = man5.indexOf('Kho không khai vòng nào cho tầng này') >= 0;
+      /* Vế CHƯA ĐO ĐƯỢC in thẳng lên màn của đúng tầng ấy, không in lung tung. */
+      r.choChuHienT5 = man5.indexOf(G.U.h((G.BC_CHOCHU || [])[0].hoi)) >= 0;
+      G.S.bcTang = 'T3';
+      r.choChuKhongHienT3 = G.VIEWS['ban-co']().indexOf(G.U.h((G.BC_CHOCHU || [])[0].hoi)) < 0;
+      /* Bàn NGẮN không khai vòng thì vẫn một dải, không bị chia tháng. */
+      G.S.bcTang = 'T1'; G.S.banCo.T1 = {}; dat5('T1', 5, 0, 4);
+      r.banNganKhongChiaThang = G.VIEWS['ban-co']().indexOf('bc-vong thang') < 0;
+
       G.S.bcTang = 'T1'; G.S.banCo = JSON.parse(giuT3);
       /* Biến của vòng: ghi được, và câu mới để trống thì không ghi */
       G.S.bcBien = {};
@@ -8047,6 +8098,12 @@ const { chromium } = require(PW);
           ra.manT3 && ra.manHaiChoKho,
         'TẦNG BA KHÁC TẦNG HAI Ở BA CHỖ, và cả ba đều đã nằm sẵn trong kho. MỘT: chỗ khó của nó là HAI chuỗi liền — "Chuỗi thứ hai và thứ ba. Không biến cố nào, không kết quả nào, chỉ là dài" — nên cách đọc chỗ khó phải trả về DANH SÁCH; trả về một số thì tầng ba lặng thinh đúng ở tầng dài nhất trước khi sang năm, và lặng thinh ấy không đỏ ở đâu cả. HAI: thử thách của nó đòi bốn chuỗi NỐI NHAU, mà nối nhau là chuyện của đúng một cái khớp — tối cuối chuỗi này và tối đầu chuỗi sau; bốn chuỗi rời nhau là bốn lần bắt đầu lại, và bốn lần bắt đầu lại không phải chín mươi ngày. Khớp hở thì HIỆN RA chứ không phạt, và khớp CHƯA TỚI thì im — báo hở một cái khớp chưa tới là bịa. BA: trong quãng "không kết quả nào" thì kết quả duy nhất có thật là CHÍNH CHUỖI TRƯỚC của nhà mình, và nó nằm sẵn trên bàn cờ chứ không phải đi vay. So với chính mình, không so với nhà khác — luật 11 đã cấm bảng vàng. Kho còn gọi vòng của tầng ba là CHUỖI và tầng bốn là CHU KỲ, nên màn gọi đúng chữ ấy thay vì gọi tất cả là "vòng"',
         'T3 chỗ khó = [2,3] · chuỗi 1: 5 ô → chuỗi 2: 9 ô (+4) · chuỗi 3 đang đi ngày 3, chuỗi trước cùng ngày 2 ô · chuỗi 4 chưa tới thì không so · khớp 1→2 hở · khớp 3→4 chưa tới thì im');
+      bao(ra.nhipChiaNgayDaQua && ra.nhipTut && ra.nhipDocTuCau && ra.nhipChuaDo &&
+          ra.nhipGiu && ra.chiaThang && ra.thangDuOMotLan && ra.oChuaToi &&
+          ra.noiKhongKhaiVong && ra.choChuHienT5 && ra.choChuKhongHienT3 &&
+          ra.banNganKhongChiaThang,
+        'TẦNG NĂM: MỘT THỬ THÁCH CÓ HAI VẾ, VÀ MÁY CHỈ ĐO ĐƯỢC MỘT. "Kèm một nhà mới đi hết mùa đầu của họ, MÀ NHỊP NHÀ MÌNH KHÔNG TỤT." Vế hai đo được ngay trên hai cái bàn nhà mình đã có: nhịp là ô đầy chia cho số ngày ĐÃ QUA của bàn ấy — chia cho cả ba trăm sáu lăm thì tầng nào đang đi cũng "kém", và nó kém vì LỊCH chứ không vì nhà mình. So bàn tầng năm với bàn tầng bốn: cả hai đều là bàn của CHÍNH nhà mình nên phép so này không phạm luật không-xếp-hạng. Đây là chỗ tầng năm hỏng nhất trong đời thật — dồn hết sức cho nhà đang kèm, còn nếp nhà mình thì tụt, và tụt trong lúc đang làm gương thì hỏng cả hai nhà; câu thử thách có chữ "mà" chính vì thế. Điều kiện ĐỌC TỪ CÂU của kho chứ không gắn cứng vào mã tầng, nên tầng ba không bị đo. Vế một — nhà nào đang được kèm, bắt đầu hôm nào, mùa đầu dài bao nhiêu — KHÔNG kho nào trong hệ khai, nên màn nói thẳng chưa đo được và nói thiếu đúng cái gì; bịa một con số cho vế ấy nguy hơn để trống, vì ô trống thì người ta đi tìm còn con số bịa thì người ta tin. Bàn dài mà kho không khai vòng thì chia theo THÁNG LỊCH — tháng là thứ có sẵn ngoài đời, không phải một cái vòng nghĩ ra cho đều bảng — và chia tháng không được làm mất hay nhân đôi một ngày nào. Cuối cùng: Ô CHƯA TỚI không được trông giống ô đã bỏ lỡ; tối đầu tiên mở bàn tầng năm mà thấy ba trăm sáu tư ô xám thì trông y như ba trăm sáu tư lần bỏ lỡ, và người ta bỏ vì cái NHÌN chứ không vì luật',
+        'T5 50% (50/100 ngày đã qua) · T4 82% (300/365) · kém 32 điểm phần trăm · 13 tháng · 365 ô đủ một lần · 265 ô chưa tới');
       bao(ra.vongT2 && ra.vongT3 && ra.vongT1KhongCo && ra.khaiSoDu && ra.vongKho &&
           ra.ghiBien && ra.chanBienRong && ra.bienKhongBatBuoc,
         'BÀN DÀI THÌ CHIA VÒNG, MỖI VÒNG ĐÚNG MỘT BIẾN — và số vòng ĐỌC TỪ CHỖ ĐÃ VIẾT chứ không khai lại: tầng hai đọc từ lời hứa của cú hích ("mỗi vòng bảy ngày thay đúng một biến"), tầng ba và bốn đọc từ chính tên chặng ("90 ngày, 4 chuỗi 21 ngày"). Tầng một và tầng năm thật sự không khai vòng nào, và máy nói KHÔNG CÓ chứ không tự đặt ra một con số cho đều bảng. Vòng KHÔNG lát kín tầng ở hai chỗ — 4×21=84≠90 và 4×90=360≠365 — nên bàn để phần dư ra NGOÀI VÒNG và nói thẳng kho chưa khai mấy ngày ấy là gì; giãn vòng cho vừa là sửa lời hứa cho khớp cái bàn, mà đáng ra phải ngược lại. Chỗ khó nhất của tầng đọc từ HT_TANG.khoNhat và BÁO TRƯỚC: câu ấy nằm trong kho từ bản 9.21 mà chưa màn nào nói ra đúng lúc. Biến của vòng ghi được nhưng KHÔNG bắt buộc — bắt điền mới cho đi tiếp là dựng một cái cổng ở chỗ đáng ra chỉ cần một lời mời',
