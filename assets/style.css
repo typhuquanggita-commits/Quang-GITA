@@ -1382,6 +1382,28 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .tin-cau{font-size:14.5px;line-height:1.65;color:var(--ink);margin-top:5px;max-width:64ch}
 .tin-o{font-size:10.5px;letter-spacing:.04em;color:var(--ink-4);margin-top:6px}
 .tin-vi{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-top:4px;max-width:62ch}
+/* ═══ MỤC 30–45 PHÚT MỖI NGÀY · v9.42 ═══
+   Thanh có HAI mốc, không phải một đích: một đích thì dưới mốc là
+   trượt, còn hai mốc thì có một KHOẢNG đủ — và trên khoảng ấy không
+   phải là hơn. */
+.tg-thanh{position:relative;height:10px;border-radius:99px;background:var(--bg-2);
+  overflow:hidden;margin:4px 0 8px}
+.tg-day{height:100%;border-radius:99px;transition:width .4s}
+.tg-moc{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink-4);opacity:.55}
+.tg-loi{font-size:12.5px;line-height:1.7;color:var(--ink-3);margin-bottom:12px}
+.tg-viec{display:grid;gap:7px;margin-bottom:14px}
+.tg-hang{display:grid;grid-template-columns:minmax(120px,1.1fr) 3fr auto;gap:10px;
+  align-items:center}
+.tg-ten{font-size:12.5px;font-weight:600}
+.tg-vach{height:8px;border-radius:99px;background:var(--bg-2);overflow:hidden}
+.tg-vach i{display:block;height:100%;border-radius:99px}
+.tg-so{font-size:12.5px;color:var(--ink-3);text-align:right;white-space:nowrap}
+@media (max-width:640px){ .tg-hang{grid-template-columns:1fr auto;gap:6px}
+  .tg-vach{grid-column:1/-1} }
+
+.tin-song{display:grid;gap:8px;margin-bottom:14px}
+.tin-dong.song{padding:11px 14px 10px 17px}
+.tin-dong.song .tin-cau{font-size:12.5px;margin-top:3px}
 @media (max-width:640px){ .tin-cau{font-size:12.5px} }
 /* Cái khớp nằm GIỮA hai dải, nên nó phải vẽ ở giữa — nằm dưới chân
    một trong hai thì mắt đọc nó thành của riêng dải ấy. */

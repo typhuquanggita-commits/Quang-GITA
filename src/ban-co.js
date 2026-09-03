@@ -1151,6 +1151,10 @@ G.VIEWS = G.VIEWS || {};
       if (loi === null) return;
       var kn = G.bcGhiNep(tg, nep, loi);
       if (!kn.ok) { if (U.toast) U.toast(kn.y, 'err'); return; }
+      if (typeof G.tinGhiSuKien === 'function') {
+        G.tinGhiSuKien('NHAN_THUONG', { tang: tg, nep: String(nep).trim() });
+        if (U.toast) U.toast('Đã khoanh một nếp. Ghi vào bảng tin của nhà mình.', 'ok');
+      }
       G.render(); return;
     }
     var vv = e.target.closest && e.target.closest('[data-bcvai]');
@@ -1174,8 +1178,31 @@ G.VIEWS = G.VIEWS || {};
        liền nhau là lúc nhà mình thấy rõ nhất việc cùng làm được thêm. */
     noiDiem(v, kq.diem);
     if (kq.thuong) setTimeout(function () { noiDiem(v, kq.thuong, true); }, 260);
+    /* Ô vừa ĐẦY là một sự kiện thật của nhà mình — ghi vào sổ tin ngay,
+       để bảng tin có cái chạy liên tục mà không phải đợi máy chủ. Chỉ
+       ghi lúc ô ĐẦY, không ghi mỗi lần một người đặt: ghi ba lần một
+       tối thì sổ thành tiếng ồn, và tiếng ồn thì người ta tắt. */
+    if (kq.day) ghiTin(G.S.bcTang || 'T1');
     setTimeout(function () { G.render(); }, 620);
   });
+
+  /* Sổ tin của nhà mình: ô đầy · mốc vừa chạm · kín bàn. Ba thứ ấy là
+     sự kiện có thật, đo được ngay trong máy này — không con số nào phải
+     đi mượn. */
+  function ghiTin(tang) {
+    if (typeof G.tinGhiSuKien !== 'function') return;
+    var d = G.bcDo(tang), moc = G.bcMocDat(tang);
+    var t = (G.HT_TANG || []).filter(function (x) { return x.ma === tang; })[0];
+    G.tinGhiSuKien(d.xong ? 'XONG_CHANG' : 'NHAN_THUONG', {
+      tang: tang, soTang: t ? t.so : null, soO: d.soO, can: d.can, diem: d.tong,
+      moc: moc ? moc.ma : null, mocLoi: moc ? moc.loi : null,
+      bieuTuong: moc ? moc.bieuTuong : null });
+    /* Thông báo nổi ngay lúc làm xong, không đợi mở lại màn bảng tin.
+       Không kèm tiếng — nhà mình mở màn này lúc chín giờ tối, cạnh đứa
+       nhỏ đang ngủ (BC_MUNG_LUAT.khongAmThanh). */
+    if (U.toast) U.toast((moc ? moc.bieuTuong + ' ' + moc.loi + ' ' : 'Ô hôm nay đã đầy. ') +
+      'Đã ghi vào bảng tin của nhà mình.', 'ok');
+  }
 
   function noiDiem(nut, diem, cungNhau) {
     try {

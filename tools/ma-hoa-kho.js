@@ -171,7 +171,8 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
   'NK_NHIP', 'NK_O', 'THI_VIET', 'THI_LUAT',
   /* Chuẩn thời gian, chuẩn hoàn thành, thang thưởng và phạt: mọi vai đều
      phải đọc được, vì luật mà không ai đọc được thì không phải luật. */
-  'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT', 'TG_QUYDOI',
+  'TG_NGUNG_GIAY', 'TG_LOAI', 'TG_XEP', 'TG_MUC', 'TG_VIEC',
+  'TG_NHIEMVU', 'TG_THUONG', 'TG_PHAT', 'TG_QUYDOI',
   /* Bản giới thiệu Học viện và hồ sơ giọng đọc: mọi vai đều đọc được. */
   'GT_MOT_CAU', 'GT_VISAO', 'GT_HUA', 'GT_KHONG', 'GT_CHANG', 'GT_TANG', 'GT_VAI',
   'GT_HOI', 'GT_SO', 'GT_BUOC', 'GT_MUCTIEU', 'GT_MUCTIEU_RANH', 'GT_DONGHANH',
@@ -810,6 +811,7 @@ const mau = {
   TIN_LOAI: G.TIN_LOAI, TIN_NGUON: G.TIN_NGUON, TIN_NGUON_LUAT: G.TIN_NGUON_LUAT,
   TIN_TIEUCHI: G.TIN_TIEUCHI, TIN_TIEUCHI_LUAT: G.TIN_TIEUCHI_LUAT,
   TIN_THUONG: G.TIN_THUONG, TIN_CAM: G.TIN_CAM, TIN_LUAT: G.TIN_LUAT,
+  TG_MUC: G.TG_MUC, TG_VIEC: G.TG_VIEC,
   TIN_LOAI_LUAT: G.TIN_LOAI_LUAT, TIN_MAU: G.TIN_MAU, TIN_TANG_LUAT: G.TIN_TANG_LUAT,
   TIN_KEM_THUONG: G.TIN_KEM_THUONG, BK_LUAT: G.BK_LUAT,
   BC_LOI: G.BC_LOI, BC_TRONGSO: G.BC_TRONGSO, BC_TRONGSO_LUAT: G.BC_TRONGSO_LUAT,

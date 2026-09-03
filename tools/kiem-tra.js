@@ -13,6 +13,8 @@
    gzip luôn mở bằng 0x1F 0x8B — không bao giờ trùng, nên gói cũ chưa nén
    vẫn đọc được y như trước. */
 const zlibGoi = require('zlib');
+const fsGoc = require('fs');
+const pathGoc = require('path');
 function ruotGoi(ro) {
   const b = Buffer.isBuffer(ro) ? ro : Buffer.from(ro);
   return JSON.parse((b[0] === 0x1f && b[1] === 0x8b ? zlibGoi.gunzipSync(b) : b).toString('utf8'));
@@ -8424,6 +8426,49 @@ const { chromium } = require(PW);
   }
 
 
+  console.log('\n68B · HAI TỆP KHÔNG ĐƯỢC ĐẶT CÙNG MỘT TÊN HÀM');
+  {
+    /* Mọi tệp trong src/ đổ chung vào một đối tượng G. Hai tệp cùng đặt
+       G.tenGiDo thì tệp nạp SAU thắng, tệp kia im lặng gọi nhầm hàm của
+       người khác — và không chỗ nào đỏ.
+
+       Tôi vừa gây ra đúng chuyện này ở bản 9.42: đặt G.tgHomNay cho đồng
+       hồ, trong khi src/chuyen-the-gioi.js đã giữ tên ấy từ trước ("tg" ở
+       đó là THẾ GIỚI). Chỉ phát hiện vì một phép thử phá trả về mười hai
+       khoá lạ hoắc; đọc mã thì không thấy gì cả.
+
+       Phép đo này đọc THẲNG các tệp nguồn, không cần trình duyệt. */
+    const dsSrc = JSON.parse(fsGoc.readFileSync(
+      pathGoc.join(__dirname, 'danh-sach-src.json'), 'utf8'));
+    const tepSrc = (Array.isArray(dsSrc) ? dsSrc : dsSrc.tep || dsSrc.files || [])
+      .map(t => 'src/' + String(t).replace(/^src\//, ''));
+    const chuNha = {};
+    tepSrc.forEach(f => {
+      let s; try { s = fsGoc.readFileSync(pathGoc.join(__dirname, '..', f), 'utf8'); }
+      catch { return; }
+      const re = /^\s*G\.([A-Za-z_][A-Za-z0-9_]*)\s*=\s*function/gm;
+      let m; while ((m = re.exec(s))) {
+        chuNha[m[1]] = chuNha[m[1]] || [];
+        if (chuNha[m[1]].indexOf(f) < 0) chuNha[m[1]].push(f);
+      }
+    });
+    /* SÁU CHỖ TRÙNG CÓ TỪ TRƯỚC BẢN NÀY. Chúng được ghi tên ra đây chứ
+       KHÔNG được coi là đã ổn: mỗi cái vẫn là một tệp đang gọi nhầm hàm
+       của tệp khác, và mỗi cái cần đọc riêng để biết hai bản có thay
+       được cho nhau không. Ghi ra để chúng thôi vô hình, và để phép đo
+       này đỏ ngay với bất kỳ chỗ trùng MỚI nào. */
+    const daBiet = ['isCanh', 'BI_KHOA_CHEP', 'veChuyen', 'aiHoi', 'moTroLy', 'coTheIn'];
+    const trung = Object.keys(chuNha).filter(k => chuNha[k].length > 1);
+    const moi = trung.filter(k => daBiet.indexOf(k) < 0);
+    const daBietConDo = daBiet.filter(k => trung.indexOf(k) >= 0);
+    bao(!moi.length,
+      'HAI TỆP KHÔNG ĐƯỢC ĐẶT CÙNG MỘT TÊN HÀM TRÊN G. Mọi tệp trong src/ đổ chung vào một đối tượng G, nên hai tệp cùng đặt G.tenGiDo thì tệp nạp SAU thắng và tệp kia im lặng gọi nhầm hàm của người khác — không chỗ nào đỏ, và đọc mã cũng không thấy vì mỗi tệp đọc riêng đều đúng. Bản 9.42 tôi gây ra đúng chuyện này: đặt G.tgHomNay cho đồng hồ trong khi chuyen-the-gioi.js đã giữ tên ấy từ trước, và "tg" ở đó là THẾ GIỚI chứ không phải thời gian; chỉ phát hiện vì một phép thử phá trả về mười hai khoá lạ hoắc. Phép đo đọc thẳng tệp nguồn nên nó bắt được TRƯỚC khi trình duyệt chạy. Sáu chỗ trùng có từ trước bản này được ghi tên ra chứ không được coi là đã ổn — mỗi cái vẫn là một tệp đang gọi nhầm hàm của tệp khác',
+      moi.length ? 'trùng MỚI: ' + moi.map(k => k + ' (' + chuNha[k].join(' · ') + ')').join(' | ')
+        : Object.keys(chuNha).length + ' hàm G.* · 0 chỗ trùng mới · ' +
+          daBietConDo.length + ' chỗ trùng cũ còn chờ đọc lại: ' + daBietConDo.join(' · '));
+  }
+
+
   console.log('\n68 · HỒ SƠ NHÀ KHÁC KHÔNG ĐƯỢC XUỐNG MÁY GIA ĐÌNH');
   {
     /* Kho FAMILIES mang hồ sơ mười nhà: tên nhà, tên học viên, lớp, TÊN
@@ -8493,6 +8538,108 @@ const { chromium } = require(PW);
         co.nhaToi === 'F-003',
       'VÀ MÁY NGHỀ KHÔNG MẤT GÌ. Coach vẫn nhận đủ mười hồ sơ để làm việc, vì FAMILIES chỉ chuyển từ gói NỀN sang gói NGHỀ chứ không bị cắt bớt. Bảy chỗ trong mã từng đọc thẳng G.FAMILIES — bốn trong số đó gọi .map() không có lưới đỡ, tức là ném lỗi ngay khi kho vắng — nay đi qua MỘT cửa G.dsNha(): có kho nghề thì trả mười nhà, không có thì trả đúng hồ sơ nhà mình. Một cửa thì chỉ phải canh một chỗ; bảy chỗ đọc thẳng thì mỗi chỗ là một lần phải NHỚ tự hỏi máy này có kho ấy không, và trí nhớ là thứ hỏng đầu tiên',
       'coach: 10 hồ sơ · nhà đang xem F-003 — y như trước khi chuyển gói');
+  }
+
+
+  console.log('\n69 · MỤC 30–45 PHÚT MỖI NGÀY, VÀ SỔ TIN CHẠY LIÊN TỤC');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.HT_TANG && window.G.TG_MUC && window.G.TIN_LOAI, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G, r = {};
+      const giuTG = JSON.stringify(G.S.thoigian || {});
+      const giuTin = JSON.stringify(G.S.tinNhat || []);
+      const ng = G.bcNgay();
+      const dat = (o) => { G.S.thoigian = {}; G.S.thoigian['ng|' + ng] = o; };
+
+      /* ── MỤC ĐỌC TỪ KHO, KHÔNG GÕ TAY ── */
+      r.mucTuKho = G.TG_MUC.phutMin === 30 && G.TG_MUC.phutMax === 45;
+      dat({ __tong: 20 * 60, 'ban-co': 20 * 60 });
+      r.duoiMuc = G.tgMucNgay().trangThai === 'duoi' && G.tgMucNgay().conThieu === 10;
+      dat({ __tong: 35 * 60, 'ban-co': 35 * 60 });
+      r.trongMuc = G.tgMucNgay().trangThai === 'trong';
+      dat({ __tong: 60 * 60, 'ban-co': 60 * 60 });
+      r.trenMuc = G.tgMucNgay().trangThai === 'tren';
+      const luuMin = G.TG_MUC.phutMin; G.TG_MUC.phutMin = 50;
+      dat({ __tong: 35 * 60, 'ban-co': 35 * 60 });
+      r.doiKhoThiDoiTheo = G.tgMucNgay().trangThai === 'duoi';
+      G.TG_MUC.phutMin = luuMin;
+
+      /* ── THỜI GIAN ĐI ĐÂU: VIỆC NỐI VỚI LOẠI, KHÔNG CÓ BẢNG THỨ HAI ──
+         Bàn cờ là màn nhà mình NGỒI XUỐNG LÀM mỗi tối. Nó chưa từng được
+         khai loại nên rơi về mặc định 'xem' — và ô "thực hiện nhiệm vụ"
+         đọc ra ĐÚNG KHÔNG PHÚT NÀO trong khi nhà mình ngồi đó thật. */
+      r.banCoLaLam = G.tgLoaiCua('ban-co') === 'lam';
+      dat({ __tong: 30 * 60, 'ban-co': 10 * 60, 'mo-thuc': 12 * 60, 'cong-dong': 8 * 60 });
+      const hn = G.tgMucNgay();
+      const lay = m => (hn.theoViec.filter(x => x.ma === m)[0] || {}).giay;
+      r.diDau = lay('LAM') === 600 && lay('HOC') === 720 && lay('TIN') === 480;
+      const luuXep = G.TG_XEP['mo-thuc']; G.TG_XEP['mo-thuc'] = 'chuyen';
+      const h2 = G.tgMucNgay();
+      r.noiVoiLoai = (h2.theoViec.filter(x => x.ma === 'CHUYEN')[0] || {}).giay === 720 &&
+        (h2.theoViec.filter(x => x.ma === 'HOC')[0] || {}).giay === 0;
+      G.TG_XEP['mo-thuc'] = luuXep;
+
+      /* ── PHÚT VƯỢT TRẦN: CỘNG VÀO TỔNG NHƯNG KHÔNG KHEN ── */
+      const tranBC = G.tgChuanCua('ban-co').tran;
+      dat({ __tong: tranBC + 300, 'ban-co': tranBC + 300 });
+      const hv = G.tgMucNgay();
+      r.vuotTran = hv.quaTran.giay === 300 && hv.quaTran.man.length === 1 &&
+        hv.giay === tranBC + 300;
+      dat({ __tong: 600, 'ban-co': 600 });
+      r.duoiTranThiKhongBao = G.tgMucNgay().quaTran.giay === 0;
+      r.luatKhaiKhongKhen = G.TG_MUC.phutVuotTranKhongKhen === true;
+
+      /* ── NỘI DUNG ĐỠ NỔI BAO NHIÊU — CỘNG RA, KHÔNG GÕ TAY ── */
+      const tn = G.tgTranNoiDung();
+      r.tranNoiDung = tn.soMan > 40 && tn.phut > 100 && tn.duMayNgay >= 1 &&
+        tn.theoLoai.length >= 4;
+      const oXem = G.TG_LOAI.filter(x => x.ma === 'xem')[0], luuChuan = oXem.chuan;
+      oXem.chuan = luuChuan * 2;
+      r.tranDocTuKho = G.tgTranNoiDung().phut > tn.phut;
+      oXem.chuan = luuChuan;
+
+      /* ── SỔ TIN CỦA NHÀ MÌNH ── */
+      G.S.tinNhat = [];
+      r.soTrong = G.tinNhatKy().length === 0;
+      G.tinGhiSuKien('LEN_TANG', { tang: 'T1', soTang: 1 });
+      G.tinGhiSuKien('CHUYEN_HAY', { tang: 'T2', soTang: 2 });
+      const nk = G.tinNhatKy();
+      r.moiNhatTruoc = nk.length === 2 && nk[0].ma === 'CHUYEN_HAY' &&
+        nk[0].ten === G.TIN_LOAI.filter(x => x.ma === 'CHUYEN_HAY')[0].ten;
+      for (let i = 0; i < 60; i++) G.tinGhiSuKien('LEN_TANG', { tang: 'T1', soTang: 1 });
+      r.catO50 = G.tinNhatKy().length === 50;
+      r.baoLau = G.tinBaoLau(Date.now()) === 'vừa xong' &&
+        G.tinBaoLau(Date.now() - 3 * 3600 * 1000) === '3 giờ trước' &&
+        G.tinBaoLau(Date.now() - 2 * 86400 * 1000) === '2 ngày trước';
+
+      /* ── TRÊN MÀN ── */
+      G.S.tinNhat = [];
+      G.tinGhiSuKien('XONG_CHANG', { tang: 'T1', soTang: 1, soO: 7, can: 7, diem: 42 });
+      G.S.tinTang = 'T1';
+      const manTin = G.VIEWS['bang-tin']();
+      r.manCoSoTin = /class="tin-song"/.test(manTin) && manTin.indexOf('vừa xong') >= 0 &&
+        manTin.indexOf('7/7 ô') >= 0;
+      dat({ __tong: 35 * 60, 'ban-co': 20 * 60, 'mo-thuc': 15 * 60 });
+      const manTg = G.VIEWS['do-thoi-gian']();
+      r.manCoMuc = /class="tg-thanh"/.test(manTg) && manTg.indexOf('MỤC 30–45 PHÚT') >= 0 &&
+        /class="tg-viec"/.test(manTg) && manTg.indexOf('Học kiến thức theo tầng') >= 0 &&
+        manTg.indexOf('nếu xem đủ chuẩn một lượt') >= 0;
+
+      G.S.tinNhat = JSON.parse(giuTin); G.S.thoigian = JSON.parse(giuTG);
+      return r;
+    });
+
+    const doB = ['mucTuKho', 'duoiMuc', 'trongMuc', 'trenMuc', 'doiKhoThiDoiTheo',
+      'banCoLaLam', 'diDau', 'noiVoiLoai', 'vuotTran', 'duoiTranThiKhongBao',
+      'luatKhaiKhongKhen', 'tranNoiDung', 'tranDocTuKho', 'soTrong', 'moiNhatTruoc',
+      'catO50', 'baoLau', 'manCoSoTin', 'manCoMuc'].filter(k => !ra[k]);
+    bao(!doB.length,
+      'BA MƯƠI TỚI BỐN MƯƠI LĂM PHÚT MỖI NGÀY — ĐO CHỨ KHÔNG ƯỚC, VÀ THỜI LƯỢNG KHÔNG PHẢI THỨ ĐƯỢC THƯỞNG. Đồng hồ này từ bản 8.9 đã chỉ chạy khi cửa sổ đang mở VÀ có thao tác trong 90 giây gần nhất, nên con số thấp hơn thời gian ngồi trước máy — thà đếm thiếu còn hơn tính công cho một tab bỏ quên. Mục ngày có HAI mốc chứ không một đích: dưới mốc là còn thiếu, trong khoảng là đủ, TRÊN khoảng không phải là hơn. Phút vượt trần của một màn vẫn CỘNG vào tổng vì nó có thật, nhưng bị tách ra và không được khen — quá trần thường là đang TẮC chứ không phải đang chăm, và khen nhầm chỗ ấy là dạy người ta ngồi lâu hơn. Thời gian đi đâu thì cộng theo NĂM VIỆC, mà việc nối với LOẠI MÀN chứ không dựng bảng thứ hai gán từng màn vào từng việc: đổi loại của một màn ở kho thì phút chạy sang việc khác ngay trong cùng lần chạy. Và mục ba mươi phút chỉ có nghĩa nếu NỘI DUNG đỡ nổi, nên máy tự cộng chuẩn của mọi màn vai này mở được rồi nói ra con số ấy — không gõ tay, nên thêm một màn thì con số lên theo. BÀN CỜ HÀNH TRÌNH CHƯA TỪNG ĐƯỢC KHAI LOẠI: nó rơi về mặc định "xem" từ bản 9.32, nghĩa là ô "thực hiện nhiệm vụ" đọc ra ĐÚNG KHÔNG PHÚT NÀO trong khi nhà mình ngồi đó thật, và bảy phút làm thật bị báo là vượt trần. Chỗ ấy không đỏ ở đâu cả vì mặc định luôn trả về một giá trị hợp lệ — chỉ lộ ra khi có người đi cộng phút theo việc. SỔ TIN CỦA NHÀ MÌNH là thứ duy nhất chạy liên tục được hôm nay: ô đầy tối nay, mốc vừa chạm, kín một bàn, khoanh được một nếp — không con số nào phải đi mượn, vì tất cả nằm ngay trong máy người xem. Sổ giữ 50 dòng gần nhất và cắt từ cuối; không cắt thì sau một năm bàn cờ nó có hơn ba trăm dòng và mỗi lần lưu là ghi lại cả ba trăm',
+      doB.length ? 'phép đo hỏng: ' + doB.join(' · ')
+        : 'dưới/trong/trên mục · bàn cờ = màn LÀM · 10 phút làm + 12 đọc + 8 xem chia đúng ba việc · vượt trần tách riêng · nội dung đỡ nổi ' +
+          'cộng ra từ kho · sổ tin mới nhất trước, cắt ở 50');
   }
 
 

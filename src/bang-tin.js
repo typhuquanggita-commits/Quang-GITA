@@ -161,6 +161,50 @@ G.VIEWS = G.VIEWS || {};
       chuaCoTinSong: nguon.every(function (x) { return x.chuaCoNguon; }) };
   };
 
+  /* ═══════════ SỔ TIN CỦA NHÀ MÌNH ═══════════
+     Bảng tin cộng đồng chưa có sổ nào ở máy chủ — và cho tới lúc có,
+     thứ DUY NHẤT chạy được liên tục là việc của chính nhà đang xem.
+
+     Nên sổ này ghi sự kiện THẬT của nhà mình ngay khi nó xảy ra: ô đầy
+     tối nay, chạm một mốc, kín một bàn, khoanh được một nếp. Không con
+     số nào ở đây phải đi mượn, vì tất cả nằm ngay trong máy người xem.
+
+     VÌ SAO KHÔNG TRỘN VỚI TIN CỘNG ĐỒNG
+
+     Trộn thì sáu tháng nữa không ai phân biệt được dòng nào là việc nhà
+     mình vừa làm và dòng nào là việc một nhà khác làm — và lúc ấy con
+     số cộng đồng đầu tiên hiện lên sẽ không ai tin, vì nó đứng lẫn giữa
+     những dòng vốn chỉ là tin của chính mình.
+
+     GIỚI HẠN 50 DÒNG, VÀ CẮT TỪ CUỐI
+
+     Sổ nằm trong localStorage cùng chỗ với mọi thứ khác của nhà mình.
+     Không cắt thì sau một năm bàn cờ nó có hơn ba trăm dòng, và mỗi lần
+     lưu là ghi lại cả ba trăm. */
+  var TRAN_NHAT = 50;
+  G.tinGhiSuKien = function (ma, gia) {
+    if (!G.S) return null;
+    var l = (G.TIN_LOAI || []).filter(function (x) { return x.ma === ma; })[0];
+    var t = { ma: ma, ten: l ? l.ten : ma, c: l ? l.c : null,
+      luc: Date.now(), ngay: (G.bcNgay ? G.bcNgay() : ''), gia: gia || {} };
+    G.S.tinNhat = [t].concat(G.S.tinNhat || []).slice(0, TRAN_NHAT);
+    if (G.save) G.save();
+    return t;
+  };
+  G.tinNhatKy = function () { return (G.S && G.S.tinNhat) || []; };
+  G.tinXoaNhat = function () { if (G.S) G.S.tinNhat = []; if (G.save) G.save(); };
+
+  /* Bao lâu rồi. Nói bằng chữ vì một dấu thời gian đầy đủ trên mỗi dòng
+     làm bảng tin đọc ra như sổ nhật ký máy chủ. */
+  G.tinBaoLau = function (luc) {
+    var g = Math.max(0, Math.round((Date.now() - luc) / 1000));
+    if (g < 60) return 'vừa xong';
+    if (g < 3600) return Math.floor(g / 60) + ' phút trước';
+    if (g < 86400) return Math.floor(g / 3600) + ' giờ trước';
+    var n = Math.floor(g / 86400);
+    return n === 1 ? 'hôm qua' : n + ' ngày trước';
+  };
+
   /* Bảng tin KHÔNG được chạm vào tên. FAMILIES mang cả tên nhà, tên học
      viên, tên phụ huynh và tên Coach; bảng tin chỉ được cột id. */
   G.tinLocNha = function (f) {
@@ -227,6 +271,35 @@ G.VIEWS = G.VIEWS || {};
       o += '<div class="card mb"><p class="sm" style="line-height:1.8">Nhà mình chưa đặt quân nào. ' +
         'Đặt một quân ở <b>Bàn cờ hành trình</b> là ô đầu tiên có màu, và bảng tin này bắt đầu ' +
         'có số của chính nhà mình.</p></div>';
+    }
+
+    /* ── SỔ TIN CỦA NHÀ MÌNH: THỨ DUY NHẤT CHẠY LIÊN TỤC ĐƯỢC ──
+       Đứng TRÊN bảng tin của tầng, vì nó là thứ có thật hôm nay; bảng
+       tầng bên dưới mới là chỗ chờ máy chủ. Để dưới thì nhà mình mở màn
+       ra gặp một bảng trống trước khi gặp việc mình vừa làm. */
+    var nk = (typeof G.tinNhatKy === 'function') ? G.tinNhatKy() : [];
+    o += U.sec('TIN CỦA NHÀ MÌNH' + (nk.length ? ' · ' + nk.length + ' dòng' : ''),
+      'Ghi ngay lúc việc xảy ra, đếm từ sổ bàn cờ trong máy nhà mình.');
+    if (!nk.length)
+      o += '<div class="card mb"><p class="sm" style="line-height:1.8">Chưa có dòng nào. ' +
+        'Tối nay cả nhà đặt đủ một quân ở <b>Bàn cờ hành trình</b> thì dòng đầu tiên hiện ' +
+        'ở đây ngay — không phải đợi máy chủ, vì việc ấy xảy ra ngay trong máy này.</p></div>';
+    else {
+      o += '<div class="tin-song">' + nk.slice(0, 12).map(function (t) {
+        var g = t.gia || {};
+        var cau = g.mocLoi ? g.mocLoi
+          : g.nep ? 'Khoanh được một nếp: “' + h(g.nep) + '”'
+          : g.can ? 'Ô hôm nay đã đầy — ' + g.soO + '/' + g.can + ' ô ở tầng ' + (g.soTang || '')
+          : h(t.ten);
+        return '<div class="tin-dong song" style="--tin-c:' + (t.c || 'var(--gita)') + '">' +
+          '<span class="tin-nhan">' + h(G.tinBaoLau(t.luc)) +
+          (g.soTang ? ' · tầng ' + g.soTang : '') + '</span>' +
+          '<p class="tin-cau">' + (g.bieuTuong ? h(g.bieuTuong) + ' ' : '') + cau + '</p>' +
+          (g.diem !== undefined ? '<p class="tin-o">' + g.diem + ' điểm cộng lại</p>' : '') +
+          '</div>';
+      }).join('') + '</div>';
+      if (nk.length > 12)
+        o += '<p class="tiny dim mb">Sổ giữ tối đa 50 dòng gần nhất, cắt từ cuối.</p>';
     }
 
     /* ── BẢNG TIN CỦA TỪNG TẦNG ──

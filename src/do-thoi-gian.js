@@ -148,6 +148,87 @@ G.tgTiLeDu = function(ngay){
   return tong ? Math.round(du / tong * 100) : 0;
 };
 
+/* ═══════════════ MỤC THỜI LƯỢNG MỖI NGÀY ═══════════════
+   Chủ hệ chốt 30–45 phút. Ba hàm dưới đây trả lời ba câu khác nhau, và
+   không hàm nào được trả lời hộ hai câu kia:
+
+     tgMucNgay()     hôm nay bao nhiêu phút, và ĐI ĐÂU
+     tgQuaTran()     bao nhiêu phút trong đó là phút VƯỢT TRẦN một màn
+     tgTranNoiDung() nội dung hiện có đỡ nổi bao nhiêu phút
+
+   Câu thứ hai giữ cho con số thật: quá trần của một màn thường là đang
+   TẮC chứ không phải đang chăm, nên phút ấy vẫn cộng vào tổng mà không
+   được khen. Câu thứ ba giữ cho cái mục có nghĩa: ba mươi phút một ngày
+   chỉ có nghĩa nếu có ba mươi phút thứ đáng xem. */
+G.tgQuaTran = function(ngay){
+  var d = G.tgNgay(ngay), ra = [], tong = 0;
+  Object.keys(d).forEach(function(v){
+    if(v.indexOf('__') === 0) return;
+    var c = G.tgChuanCua(v), du = (d[v] || 0) - (c.tran || 0);
+    if(du > 0){ tong += du; ra.push({ man: v, giay: d[v], tran: c.tran, du: du }); }
+  });
+  return { giay: tong, man: ra };
+};
+
+/* TÊN LÀ tgMucNgay CHỨ KHÔNG PHẢI tgHomNay: src/chuyen-the-gioi.js đã
+   giữ tên G.tgHomNay từ trước — "tg" ở đó là THẾ GIỚI, không phải thời
+   gian. Đặt trùng thì tệp nào nạp sau thắng, tệp kia im lặng gọi nhầm
+   hàm của người khác, và không chỗ nào đỏ. Tôi đã đặt trùng đúng một
+   lần ở bản này và chỉ phát hiện vì phép thử phá trả về mười hai khoá
+   lạ hoắc. */
+G.tgMucNgay = function(ngay){
+  var M = G.TG_MUC || {};
+  var d = G.tgNgay(ngay), tong = G.tgTongNgay(ngay);
+  /* Cộng theo VIỆC, mà việc thì nối với LOẠI — không dựng bảng thứ hai
+     gán từng màn vào từng việc. TG_XEP đã gán màn vào loại rồi. */
+  var theoViec = (G.TG_VIEC || []).map(function(vc){
+    var giay = 0, soMan = 0;
+    Object.keys(d).forEach(function(v){
+      if(v.indexOf('__') === 0) return;
+      if(vc.loai.indexOf(G.tgLoaiCua(v)) < 0) return;
+      giay += d[v] || 0; soMan++;
+    });
+    return { ma: vc.ma, ten: vc.ten, c: vc.c, giay: giay, soMan: soMan,
+      khongPhaiGiaDinh: vc.khongPhaiGiaDinh === true };
+  });
+  var min = (M.phutMin || 0) * 60, max = (M.phutMax || 0) * 60;
+  return { giay: tong, phut: Math.round(tong / 60),
+    min: M.phutMin || null, max: M.phutMax || null,
+    trangThai: !min ? 'chuaKhai' : tong < min ? 'duoi' : tong > max ? 'tren' : 'trong',
+    conThieu: min && tong < min ? Math.ceil((min - tong) / 60) : 0,
+    theoViec: theoViec, quaTran: G.tgQuaTran(ngay) };
+};
+
+/* Nội dung hiện có đỡ nổi bao nhiêu phút — cộng CHUẨN của mọi màn vai
+   này mở được. Không gõ tay, nên thêm một màn thì con số lên theo trong
+   cùng lần chạy. */
+G.tgTranNoiDung = function(){
+  if(!G.NAV || !G.allowed) return null;
+  var mo = {}, theoLoai = {};
+  (G.NAV || []).forEach(function(g){
+    (g.items || g.muc || []).forEach(function(it){
+      var v = it && it.v;
+      if(!v || mo[v]) return;
+      if(!G.allowed(v)) return;
+      mo[v] = 1;
+      var l = G.tgLoaiCua(v), c = G.tgChuanCua(v);
+      theoLoai[l] = theoLoai[l] || { loai: l, so: 0, giay: 0 };
+      theoLoai[l].so++; theoLoai[l].giay += (c.chuan || 0);
+    });
+  });
+  var ds = Object.keys(theoLoai).map(function(k){ return theoLoai[k]; })
+    .sort(function(a, b){ return b.giay - a.giay; });
+  var tong = 0; ds.forEach(function(x){ tong += x.giay; });
+  var M = G.TG_MUC || {};
+  var min = (M.phutMin || 0) * 60;
+  return { soMan: Object.keys(mo).length, giay: tong, phut: Math.round(tong / 60),
+    theoLoai: ds,
+    /* Đủ cho mấy ngày ở mục dưới — nói bằng NGÀY vì đó là đơn vị người
+       ta lo thật: hết nội dung ngày thứ tư thì mục ngày thứ năm là một
+       lời hứa không có gì đỡ. */
+    duMayNgay: min ? Math.floor(tong / min) : null };
+};
+
 function phut(giay){
   giay = Math.max(0, Math.round(giay || 0));
   if(giay < 60) return giay + ' giây';
@@ -201,6 +282,69 @@ G.VIEWS['do-thoi-gian'] = function(){
         '<b style="font-size:21px;color:'+x[2]+'">'+h(x[0])+'</b>'+
         '<div class="tiny up muted mt">'+h(x[1])+'</div></div>';
     }).join('')+'</div>';
+
+  /* ── MỤC 30–45 PHÚT MỖI NGÀY, VÀ THỜI GIAN ĐI ĐÂU ── */
+  var hn = G.tgMucNgay ? G.tgMucNgay() : null;
+  var M = G.TG_MUC || {};
+  if(hn && hn.min){
+    var mau = hn.trangThai === 'trong' ? 'var(--ok)'
+      : hn.trangThai === 'tren' ? '#B4720F' : 'var(--ink-4)';
+    o += U.sec('HÔM NAY ĐI ĐƯỢC BAO NHIÊU · MỤC ' + hn.min + '–' + hn.max + ' PHÚT',
+      M.khongPhaiDichCuaNguoiDung || '');
+    /* Thanh có HAI mốc, không phải một đích. Một đích thì dưới mốc là
+       trượt; hai mốc thì có một khoảng ĐỦ, và trên khoảng ấy không phải
+       là hơn — trần của từng màn đã nói vì sao. */
+    var pc = Math.min(100, Math.round(hn.giay / (hn.max * 60) * 100));
+    var pcMin = Math.round(hn.min / hn.max * 100);
+    o += '<div class="tg-thanh"><div class="tg-day" style="width:' + pc + '%;background:' + mau + '"></div>' +
+      '<i class="tg-moc" style="left:' + pcMin + '%"></i></div>' +
+      '<p class="tg-loi"><b style="color:' + mau + '">' + h(phut(hn.giay)) + '</b> · ' +
+      h(hn.trangThai === 'trong' ? 'trong khoảng đủ'
+        : hn.trangThai === 'tren' ? 'trên khoảng đủ — xem phần vượt trần bên dưới'
+        : 'còn ' + hn.conThieu + ' phút nữa tới mốc ' + hn.min) + '</p>';
+
+    /* Thời gian ĐI ĐÂU — theo năm việc, và việc nối với LOẠI màn chứ
+       không dựng bảng thứ hai gán từng màn vào từng việc. */
+    var viec = hn.theoViec.filter(function(x){ return !x.khongPhaiGiaDinh || x.giay; });
+    o += '<div class="tg-viec">' + viec.map(function(x){
+      var pcx = hn.giay ? Math.round(x.giay / hn.giay * 100) : 0;
+      return '<div class="tg-hang"><span class="tg-ten" style="color:' + x.c + '">' +
+        h(x.ten) + '</span>' +
+        '<span class="tg-vach"><i style="width:' + pcx + '%;background:' + x.c + '"></i></span>' +
+        '<span class="tg-so">' + h(phut(x.giay)) + '</span></div>';
+    }).join('') + '</div>';
+
+    /* PHÚT VƯỢT TRẦN — cộng vào tổng vì nó có thật, nhưng KHÔNG được
+       khen. Quá trần của một màn thường là đang tắc chứ không phải đang
+       chăm, và khen nhầm chỗ ấy là dạy người ta ngồi lâu hơn. */
+    if(hn.quaTran.giay > 0)
+      o += '<div class="card mb" style="border-color:#B4720F45">' +
+        '<b class="sm" style="color:#B4720F">' + h(phut(hn.quaTran.giay)) +
+        ' trong số đó là phút VƯỢT TRẦN của ' + hn.quaTran.man.length + ' màn</b>' +
+        '<p class="sm mt" style="line-height:1.75">' + h(M.viKhongKhen || '') + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' +
+        hn.quaTran.man.map(function(x){
+          return h(x.man) + ': ' + phut(x.giay) + ' / trần ' + phut(x.tran);
+        }).join(' · ') + '</p></div>';
+
+    /* NỘI DUNG ĐỠ NỔI BAO NHIÊU — con số này giữ cho cái mục có nghĩa.
+       Ba mươi phút một ngày chỉ có nghĩa nếu có ba mươi phút thứ đáng
+       xem, và số ấy CỘNG ra chứ không gõ tay. */
+    var tn = G.tgTranNoiDung ? G.tgTranNoiDung() : null;
+    if(tn)
+      o += '<div class="card mb"><b class="sm">Nội dung vai này mở được đỡ nổi ' +
+        '<b style="color:var(--gita)">' + tn.phut + ' phút</b> nếu xem đủ chuẩn một lượt — ' +
+        tn.soMan + ' màn' + (tn.duMayNgay ? ', đủ khoảng ' + tn.duMayNgay + ' ngày ở mục ' +
+        hn.min + ' phút' : '') + '</b>' +
+        '<p class="sm mt" style="line-height:1.75">Sau lượt đầu, thời lượng phải đến từ việc ' +
+        'LÀM LẠI — đặt quân mỗi tối, đọc tin mới, kể một chuyện — chứ không từ màn mới. ' +
+        'Đó là chỗ mục này sống hay chết.</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + tn.theoLoai.map(function(x){
+          var l = (G.TG_LOAI || []).filter(function(y){ return y.ma === x.loai; })[0];
+          return h((l ? l.ten : x.loai) + ': ' + x.so + ' màn · ' + Math.round(x.giay / 60) + ' phút');
+        }).join(' · ') + '</p>' +
+        '<p class="tiny dim mt" style="line-height:1.7">' + h(M.viTranNoiDung || '') + '</p></div>';
+  }
 
   /* Bảy ngày */
   var caoNhat = Math.max(1, Math.max.apply(null, bay.map(function(x){ return x.giay; })));
