@@ -41,11 +41,128 @@ G.VIEWS = G.VIEWS || {};
   var U = G.U, h = U.h;
 
   /* ═══════════ CỔNG DUY NHẤT CHO MỌI CON SỐ ═══════════ */
-  G.tinSo = function (maNguon, dem) {
+  G.tinSo = function (maNguon, dem, tang) {
     var n = (G.TIN_NGUON || []).filter(function (x) { return x.ma === maNguon; })[0];
     if (!n) return { chuaCoNguon: true, thieu: 'Mã nguồn "' + maNguon + '" chưa khai ở TIN_NGUON.' };
     if (n.co !== true) return { chuaCoNguon: true, ten: n.ten, thieu: n.thieu, vi: n.vi };
+
+    /* Nguồn nằm ở SỔ MÁY CHỦ thì con số chỉ có thể đến từ máy chủ. Con số
+       người gọi đưa vào bị BỎ — đó là chỗ duy nhất chặn được một con số
+       bịa đi vào bảng tin qua chính cái cổng dựng ra để chặn nó. */
+    if (n.oMayChu === true) return G.tinSoMay(n, tang);
+
     return { chuaCoNguon: false, ten: n.ten, so: dem, demTu: n.demTu };
+  };
+
+  /* ═══════════ LỚP SỔ MÁY CHỦ ═══════════
+     G.TIN_MAY là câu trả lời gần nhất của máy chủ, và nó chỉ nằm trong bộ
+     nhớ. Không lưu xuống máy: một con số cộng đồng cũ in ra lúc mất mạng
+     là một con số không ai kiểm được, mà bảng tin này dựng lên chính để
+     không có con số như thế. */
+  G.TIN_MAY = null;
+
+  G.tinSoMay = function (n, tang) {
+    var g = { ten: n.ten, demTu: n.demTu, vi: n.vi };
+    if (!G.TIN_MAY) { g.chuaHoiMayChu = true; return g; }
+
+    if (n.ma === 'N-CHUYEN') { g.chuaCoNguon = false; g.so = G.TIN_MAY.chuyenDaChon || 0; return g; }
+
+    /* G.S.acc.tang là SỐ 1..5, còn sổ máy chủ khoá theo 'T1'..'T5'. Nhận
+       cả hai dạng ở đây, vì gõ nhầm dạng thì không đỏ — chỉ lặng lẽ tra
+       một mục không tồn tại và báo "chưa ai báo". */
+    var t = tang || (G.S.acc && G.S.acc.tang) || 1;
+    t = /^T[1-5]$/.test(String(t)) ? String(t) : 'T' + t;
+    var muc = n.ma + ':' + t;
+    g.muc = muc;
+    if (G.TIN_MAY.so && G.TIN_MAY.so[muc] !== undefined) {
+      g.chuaCoNguon = false; g.so = G.TIN_MAY.so[muc]; return g;
+    }
+    /* Dưới ngưỡng KHÁC chưa có sổ: một câu nói hệ chưa làm, câu kia nói
+       hệ đã làm và đang giữ kín cho người ta. Ngưỡng in ra là con số máy
+       chủ trả về, không phải một con số gõ lại ở đây. */
+    if ((G.TIN_MAY.duoiNguong || []).indexOf(muc) >= 0) {
+      g.duoiNguong = true; g.nguong = G.TIN_MAY.nguong; return g;
+    }
+    g.duoiNguong = true; g.nguong = G.TIN_MAY.nguong; g.chuaAiBao = true;
+    return g;
+  };
+
+  /* Một chỗ duy nhất trả lời "mục này đã có con số chưa". Ba trạng thái
+     không-có-số nằm ở ba khoá khác nhau, và hỏi lẻ từng khoá ở mỗi màn là
+     cách bỏ sót một trạng thái mới ngay hôm nó ra đời. */
+  G.tinCoSo = function (x) {
+    return !!x && x.chuaCoNguon === false && typeof x.so === 'number';
+  };
+
+  /* ═══════════ CÔNG TẮC CHIA SẺ — MẶC ĐỊNH TẮT ═══════════
+     Bật là một hành động; tắt thì không. Nhà nào không đụng vào công tắc
+     này là nhà không nằm trong bất kỳ con số cộng đồng nào.
+
+     Một con số gom lén thì tới ngày có người hỏi "lấy ở đâu ra" là hết
+     đường trả lời — và lúc ấy mất luôn cả những con số đã xin phép tử tế. */
+  G.tinChiaSeBat = function () { return G.S.tinChiaSe === true; };
+
+  G.tinDatChiaSe = function (bat) {
+    G.S.tinChiaSe = (bat === true);
+    if (G.S.tinChiaSe !== true) G.S.tinChiaSe = false;
+    if (G.save) G.save();
+    return G.S.tinChiaSe;
+  };
+
+  /* Gọi máy chủ. Không có địa chỉ hoặc chưa đăng nhập thì nói thẳng, chứ
+     không trả về một con số 0 — 0 đọc như "không nhà nào", mà sự thật là
+     "chưa hỏi được". */
+  G.tinGoiMayChu = function (fn, them) {
+    if (!G.API_CAP_PHEP) return Promise.resolve({ ok: false, ly: 'Chưa nối máy chủ.' });
+    if (!(G.S.acc && G.S.acc.u)) return Promise.resolve({ ok: false, ly: 'Chưa đăng nhập.' });
+    var than = { fn: fn, u: G.S.acc.u, token: G.PHIEN_TOKEN || '' };
+    Object.keys(them || {}).forEach(function (k) { than[k] = them[k]; });
+    return fetch(G.API_CAP_PHEP, {
+      method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(than)
+    }).then(function (r) { return r.json(); })
+      .then(function (d) { return d || { ok: false, ly: 'Máy chủ không trả lời.' }; })
+      .catch(function (e) { return { ok: false, ly: 'Không gọi được máy chủ: ' + (e && e.message || e) }; });
+  };
+
+  /* Hỏi sổ đếm. Đọc KHÔNG cần bật công tắc — công tắc quản việc GÓP số
+     của nhà mình vào, không quản việc xem số của cả cộng đồng. */
+  G.tinHoiSo = function () {
+    return G.tinGoiMayChu('docTinCongDong').then(function (d) {
+      if (!d.ok) { G.TIN_MAY = null; return d; }
+      G.TIN_MAY = { nguong: d.nguong, so: d.so || {},
+        duoiNguong: d.duoiNguong || [], chuyenDaChon: d.chuyenDaChon || 0 };
+      return d;
+    });
+  };
+
+  /* Góp số của nhà mình. Công tắc tắt thì DỪNG NGAY Ở ĐÂY, không gửi gì
+     lên — chặn ở máy khách để không có yêu cầu nào bay đi, và máy chủ vẫn
+     đòi lại lời đồng ý lần nữa vì máy chủ không tin máy khách. */
+  G.tinBao = function (loai, tang) {
+    if (!G.tinChiaSeBat())
+      return Promise.resolve({ ok: false, ly: 'Nhà mình chưa bật chia sẻ.', chuaBat: true });
+    var t = /^T[1-5]$/.test(String(tang)) ? String(tang) : 'T' + (tang || 1);
+    return G.tinGoiMayChu('ghiTinCongDong', { bao: { loai: loai, tang: t, dongY: true } })
+      .then(function (d) { if (d.ok) G.tinHoiSo(); return d; });
+  };
+
+  /* Gửi một chuyện. Soi đủ sáu tiêu chí TRƯỚC khi gửi, để người viết sửa
+     ngay chứ không nhận một lời từ chối cụt từ máy chủ. Máy chủ soi lại —
+     lớp soi ở máy khách là phép lịch sự, không phải phép chặn. */
+  G.tinGuiChuyen = function (c) {
+    c = c || {};
+    var soi = G.tinSoiChuyen(c);
+    if (soi.truot.length) return Promise.resolve({ ok: false, truot: soi.truot });
+    var t = /^T[1-5]$/.test(String(c.tang)) ? String(c.tang) : 'T' + (c.tang || 1);
+    /* Chưa có ô nội dung riêng thì ghép từ chính ba cột đã soi: việc thật,
+       chỗ khó, con số. Ghép chứ không để trống — một chuyện vào hộp thư mà
+       không có gì để đọc thì người đọc chọn không có việc gì để làm. */
+    var nd = String(c.noiDung || '').trim() ||
+      [c.viec, c.kho, c.so && ('Số: ' + c.so)].filter(Boolean).join(' — ');
+    return G.tinGoiMayChu('guiChuyen', { chuyen: {
+      tang: t, noiDung: nd,
+      tc1: true, tc2: true, tc3: true, tc4: true, tc5: true, tc6: true } });
   };
 
   /* Số của chính nhà mình — thứ duy nhất hệ đang đếm được thật, vì nó
@@ -181,13 +298,13 @@ G.VIEWS = G.VIEWS || {};
       var d = G.tinDien(m.ma, gia);
       return d ? { loai: l, mau: m, mo: d } : null;
     }).filter(Boolean);
-    /* Nguồn tin sống — chưa có sổ nào ở máy chủ. Nói thẳng chỗ ấy chứ
-       không để bảng trống không lời giải thích. */
+    /* Nguồn tin sống. Bảng tin của TẦNG NÀO thì hỏi sổ của tầng ấy — bỏ
+       tham số tầng ở đây là mọi tầng cùng in con số của tầng người xem. */
     var nguon = ['N-XONG', 'N-CHUYEN', 'N-KEM'].map(function (m) {
-      var x = G.tinSo(m); x.ma = m; return x;
+      var x = G.tinSo(m, undefined, tang); x.ma = m; return x;
     }).filter(function (x) { return !!x.ten || x.chuaCoNguon; });
     return { tang: tang, sao: sao, mau: mau, nguon: nguon,
-      chuaCoTinSong: nguon.every(function (x) { return x.chuaCoNguon; }) };
+      chuaCoTinSong: !nguon.some(G.tinCoSo) };
   };
 
   /* ═══════════ SỔ TIN CỦA NHÀ MÌNH ═══════════
@@ -379,19 +496,45 @@ G.VIEWS = G.VIEWS || {};
       ' <span class="dim">(số sao đọc từ ' + h(BK.saoDocTu || '') + ')</span></p>';
 
     /* ── Ba con số cộng đồng: nói thẳng chưa có sổ nào ── */
-    var cd = G.tinCongDong(), thieu = cd.filter(function (x) { return x.chuaCoNguon; });
-    o += U.sec('SỐ CỦA CẢ CỘNG ĐỒNG' + (thieu.length ? ' — ' + thieu.length + ' CON SỐ CHƯA CÓ SỔ ĐẾM' : ''),
+    var cd = G.tinCongDong(), chuaCo = cd.filter(function (x) { return !G.tinCoSo(x); });
+    o += U.sec('SỐ CỦA CẢ CỘNG ĐỒNG' + (chuaCo.length ? ' — ' + chuaCo.length + ' CON SỐ CHƯA HIỆN ĐƯỢC' : ''),
       (G.TIN_NGUON_LUAT || {}).cot || '');
     o += '<div class="card mb">' + cd.map(function (x) {
+      /* Ba lý do KHÔNG hiện được một con số, và chúng không được nói giống
+         nhau: chưa có sổ (hệ chưa làm) · chưa hỏi được máy chủ (hệ làm rồi,
+         mạng chưa tới) · dưới ngưỡng gộp (hệ làm rồi, đang giữ kín cho
+         người ta). Gộp ba câu này thành một là nói dối hai lần trên ba. */
+      var co = G.tinCoSo(x), than;
+      if (co)
+        than = '<p class="sm mt" style="line-height:1.75"><b>' + h(String(x.so)) + '</b></p>' +
+          '<p class="tiny dim mt" style="line-height:1.7">Đếm từ: ' + h(x.demTu || '') + '</p>';
+      else if (x.chuaCoNguon)
+        than = '<p class="sm mt" style="line-height:1.75;color:#B4720F"><b>Thiếu:</b> ' + h(x.thieu || '') + '</p>' +
+          '<p class="tiny dim mt" style="line-height:1.7">' + h(x.vi || '') + '</p>';
+      else if (x.chuaHoiMayChu)
+        than = '<p class="sm mt" style="line-height:1.75;color:#B4720F">Chưa hỏi được máy chủ. ' +
+          'Sổ đếm có rồi, nhưng chưa nối được thì không in con số cũ ra thay.</p>' +
+          '<p class="tiny dim mt" style="line-height:1.7">Đếm từ: ' + h(x.demTu || '') + '</p>';
+      else
+        than = '<p class="sm mt" style="line-height:1.75;color:#B4720F">Chưa gộp đủ để hiện' +
+          (x.nguong ? ' — cần từ ' + h(String(x.nguong)) + ' nhà trở lên' : '') + '.</p>' +
+          '<p class="tiny dim mt" style="line-height:1.7">Số nhỏ là chỉ mặt từng nhà mà ' +
+          'không cần tên. Sổ đã đếm rồi, chỉ chưa được phép in ra.</p>';
       return '<div style="padding:11px 0;border-bottom:1px solid var(--gita-vien-2)">' +
-        '<b class="sm" style="color:' + (x.chuaCoNguon ? '#B4720F' : '#0B7350') + '">' +
-        (x.chuaCoNguon ? '○ ' : '✓ ') + h(x.ten || x.ma) + '</b>' +
-        (x.chuaCoNguon
-          ? '<p class="sm mt" style="line-height:1.75;color:#B4720F"><b>Thiếu:</b> ' + h(x.thieu) + '</p>' +
-            '<p class="tiny dim mt" style="line-height:1.7">' + h(x.vi || '') + '</p>'
-          : '<p class="sm mt" style="line-height:1.75">' + h(String(x.so)) + '</p>' +
-            '<p class="tiny dim mt">Đếm từ: ' + h(x.demTu) + '</p>') + '</div>';
+        '<b class="sm" style="color:' + (co ? '#0B7350' : '#B4720F') + '">' +
+        (co ? '✓ ' : '○ ') + h(x.ten || x.ma) + '</b>' + than + '</div>';
     }).join('') + '</div>';
+
+    /* ── Công tắc chia sẻ ── */
+    var bat = G.tinChiaSeBat();
+    o += '<div class="card mb" style="border-color:' + (bat ? '#0B735040' : 'var(--gita-vien-2)') + '">' +
+      '<span class="tiny up" style="color:' + (bat ? '#0B7350' : '#B4720F') + '">' +
+      (bat ? 'NHÀ MÌNH ĐANG GÓP SỐ' : 'NHÀ MÌNH CHƯA GÓP SỐ') + '</span>' +
+      '<p class="sm mt" style="line-height:1.8">' +
+      h((G.TIN_SO_LUAT || {}).viOptIn || '') + '</p>' +
+      '<p class="tiny dim mt" style="line-height:1.7">' +
+      h((G.TIN_SO_LUAT || {}).viGiuSo || '') + ' ' +
+      h((G.TIN_SO_LUAT || {}).viKhongGiuHang || '') + '</p></div>';
     o += '<p class="tiny dim mb" style="line-height:1.7"><b>' +
       h((G.TIN_NGUON_LUAT || {}).vi || '') + '</b></p>';
 

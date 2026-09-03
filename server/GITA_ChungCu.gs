@@ -128,9 +128,9 @@ function gitaKyChungCu_YC_(y, hoSo) {
   var ma = 'CC-' + Utilities.getUuid().slice(0, 8) + '-' + chuKy.slice(0, 6);
 
   tr.appendRow([ma, o.nhiemVu, o.ngayLam, o.loai, o.noiDung, o.nguoiGhi,
-    gio, chuKy, '', '', cc.dinhChinhCho || '', hoSo.uid || hoSo.u]);
+    gio, chuKy, '', '', cc.dinhChinhCho || '', (hoSo.phien && hoSo.phien.uid) || hoSo.u]);
 
-  audit_(hoSo, 'CHUNGCU_KY', ma, o.nhiemVu);
+  audit_(hoSo.phien, 'CHUNGCU_KY', ma, o.nhiemVu);
   return { ok: true, bienNhan: { ma: ma, gioMayChu: gio, chuKy: chuKy } };
 }
 
@@ -153,7 +153,7 @@ function gitaXacNhanChungCu_(y, hoSo) {
   var gio = new Date().toISOString();
   tr.getRange(t.hang, 9).setValue(hoSo.u);
   tr.getRange(t.hang, 10).setValue(gio);
-  audit_(hoSo, 'CHUNGCU_XACNHAN', y.ma, '');
+  audit_(hoSo.phien, 'CHUNGCU_XACNHAN', y.ma, '');
   return { ok: true, xacNhan: { ai: hoSo.u, luc: gio } };
 }
 

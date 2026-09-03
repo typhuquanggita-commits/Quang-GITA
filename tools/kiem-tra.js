@@ -8276,20 +8276,61 @@ const { chromium } = require(PW);
       r.soTieuChi = (G.TIN_TIEUCHI || []).length;
       r.soLoai = (G.TIN_LOAI || []).length;
 
-      /* ── CỔNG: nguồn khai CHƯA thì không bao giờ ra một con số ──
-         Kể cả khi người gọi đưa sẵn một con số vào. Cổng mà bỏ lọt thì
-         cả luật "không có nguồn thì không hiện" chỉ là một câu chữ. */
-      r.congChanSoBia = G.tinSo('N-XONG', 412).chuaCoNguon === true &&
-                        G.tinSo('N-XONG', 412).so === undefined;
+      /* ── CỔNG: con số của NGƯỜI GỌI không bao giờ đi vào bảng tin ──
+         N-XONG nay ĐÃ CÓ sổ ở máy chủ (9.45), nên phép đo cũ — đòi nó trả
+         về chuaCoNguon — canh đúng một chỗ hỏng và đỏ ngay hôm chỗ ấy được
+         sửa. Cùng lớp lỗi với giaConNull ở mục 56.
+         Câu hỏi đúng không đổi theo việc có sổ hay không: đưa 412 vào thì
+         412 có ra bảng tin không. Không, vì nguồn ở máy chủ thì con số chỉ
+         đến từ máy chủ. */
+      r.congChanSoBia = G.tinSo('N-XONG', 412).so !== 412;
       r.congChanMaLa = G.tinSo('KHONG-CO-THAT', 9).chuaCoNguon === true;
       r.congChoQuaNguonThat = G.tinSo('N-NHA', 5).chuaCoNguon === false &&
                               G.tinSo('N-NHA', 5).so === 5;
-      /* Bật một nguồn lên CÓ mà quên nói đếm từ đâu → phải đỏ */
+      /* Nguồn khai CÓ mà quên nói đếm từ đâu → phải đỏ */
       const n = G.TIN_NGUON.filter(x => x.ma === 'N-XONG')[0];
-      const giuCo = n.co, giuThieu = n.thieu;
-      n.co = true; delete n.thieu;
+      const giuDemTu = n.demTu;
+      delete n.demTu;
       r.batCoMaKhongNoiDemTu = G.tinSoi().some(x => /khai CÓ mà không nói đếm từ đâu/.test(x));
-      n.co = giuCo; n.thieu = giuThieu;
+      n.demTu = giuDemTu;
+
+      /* ── BỐN SỔ ĐẾM CỘNG ĐỒNG (9.45) ──
+         Chưa hỏi máy chủ thì KHÔNG được ra con số nào, và phải nói rõ là
+         "chưa hỏi" chứ không phải "chưa có sổ" — hai câu khác nhau. */
+      G.TIN_MAY = null;
+      r.mayChuaHoiThiKhongCoSo = ['N-XONG', 'N-TANG', 'N-KEM', 'N-CHUYEN']
+        .every(m => { const x = G.tinSo(m, 999, 'T1');
+          return x.chuaHoiMayChu === true && x.so === undefined && !G.tinCoSo(x); });
+      /* Đạt ngưỡng thì ra số; dưới ngưỡng thì KHÔNG ra số, và nói được cần
+         bao nhiêu — con số ngưỡng lấy từ máy chủ, không gõ lại ở máy khách. */
+      G.TIN_MAY = { nguong: 10, so: { 'N-XONG:T1': 34 }, duoiNguong: ['N-TANG:T5'], chuyenDaChon: 3 };
+      const dat = G.tinSo('N-XONG', 999, 'T1');
+      const duoi = G.tinSo('N-TANG', 999, 'T5');
+      r.datNguongThiRaSo = G.tinCoSo(dat) && dat.so === 34;
+      r.duoiNguongThiKhongRaSo = duoi.duoiNguong === true && duoi.so === undefined &&
+        duoi.nguong === 10 && duoi.chuaHoiMayChu === undefined;
+      r.chuyenDemRieng = G.tinSo('N-CHUYEN').so === 3;
+      /* Ngưỡng KHÔNG được gõ lại trong kho — hai con số thì tới ngày lệch
+         nhau, màn in theo con số không chặn ai. */
+      r.nguongKhongGoTrongKho = (G.TIN_SO_LUAT || {}).nguongGop === undefined &&
+        (G.TIN_SO_LUAT || {}).nguongKhongGoODay === true;
+      /* Công tắc chia sẻ mặc định TẮT, và tắt thì không gửi gì lên. */
+      const giuBat = G.S.tinChiaSe, giuFetch = window.fetch, giuApi = G.API_CAP_PHEP;
+      let demGoi = 0;
+      window.fetch = function () { demGoi++; return Promise.resolve({ json: () => ({ ok: true }) }); };
+      G.API_CAP_PHEP = 'https://script.google.com/x/exec';
+      G.S.acc = G.S.acc || { u: 'thu' };
+      G.S.tinChiaSe = false;
+      G.tinBao('N-XONG', 'T1');
+      r.tatThiKhongGui = demGoi === 0;          // tắt thì KHÔNG một yêu cầu nào bay đi
+      G.S.tinChiaSe = 'true';                    // chuỗi "true", không phải true
+      G.tinBao('N-XONG', 'T1');
+      r.chiDungTrueMoiLaBat = G.tinChiaSeBat() === false && demGoi === 0;
+      G.S.tinChiaSe = true;
+      G.tinBao('N-XONG', 'T1');
+      r.batThiGui = demGoi === 1;                // bật rồi thì phải gửi thật
+      window.fetch = giuFetch; G.API_CAP_PHEP = giuApi; G.S.tinChiaSe = giuBat;
+      G.TIN_MAY = null;
 
       /* ── Sáu tiêu chí, và phá từng cái một ── */
       const tot = { viec: 'Ghi 12 tối liền, mỗi tối 3 dòng.', kho: 'Tuần hai suýt bỏ.',
@@ -8332,7 +8373,10 @@ const { chromium } = require(PW);
 
       /* ── Trên màn thật: in chỗ THIẾU, không in con số bịa ── */
       const man = G.VIEWS['bang-tin']();
-      r.manNoiThieu = (man.match(/Thiếu:/g) || []).length >= 3;
+      /* Chưa hỏi được máy chủ thì màn phải NÓI ĐÚNG CÂU ẤY, chứ không nói
+         "chưa có sổ đếm" — sổ có rồi. Và tuyệt đối không in một con số. */
+      r.manNoiChuaHoi = /Chưa hỏi được máy chủ/.test(man);
+      r.manKhongNoiSaiChoDaLam = !/Chưa có sổ đếm ở máy chủ/.test(man);
       r.manKhongBia = man.indexOf('>412<') < 0 && !/412 gia đình/.test(man);
       r.manCoTieuChi = (G.TIN_TIEUCHI || []).every(t => man.indexOf(G.U.h(t.t)) >= 0);
       r.manCoCam = (G.TIN_CAM || []).every(c => man.indexOf(G.U.h(c.t)) >= 0);
@@ -8447,9 +8491,16 @@ const { chromium } = require(PW);
       bao(ra.quyenXem && ra.locBoNhiemVu,
         'NHÀ KÈM XEM ĐƯỢC BÀN CỜ VÀ KPI CỦA NHÀ KIA, KHÔNG XEM ĐƯỢC NHIỆM VỤ. Vạch nằm đúng chỗ ấy vì nhìn HÌNH của bàn cờ là biết nhà kia đuối tuần nào — đủ để hỏi một câu đúng lúc; còn nhìn TỪNG VIỆC là biết tối qua bố họ chọn gì, mẹ họ chọn gì, và đó không còn là kèm nữa mà là đọc nhật ký của một nhà khác. KPI thì được xem, vì nó để ĐỘNG VIÊN KHÍCH LỆ — không có con số thì lời động viên rơi vào chỗ trống, và nhà được kèm biết là rơi vào chỗ trống. Lọc ở CỔNG chứ không lọc ở màn hình: gửi xuống rồi thì mở công cụ nhà phát triển là đọc được hết, và lỗi ấy đã xảy ra ba lần trong kho này — nên bcKemLoc() bỏ cả mã việc, mã bánh đà lẫn điểm từng ô, chỉ giữ lại màu để vẽ',
         'bàn cờ có · KPI có · nhiệm vụ không · mã việc và mã bánh đà bị bỏ ở cổng');
-      bao(ra.hetSoKhongNguon && ra.soiVanBat && ra.manNoiThieu && ra.manKhongBia && ra.manCoTieuChi && ra.manCoCam,
-        'KHÔNG CÒN CON SỐ KHÔNG NGUỒN NÀO TRONG KHO, VÀ BỘ SOI VẪN BẮT ĐƯỢC NẾU CÓ. CUHICH từng khai thamgia 412 · 268 · 174 · 96 · 58 · 143 mà không dòng nào nói chúng đếm từ đâu, trong khi hệ chưa phát hành. Bảng tin từ chối mượn lại chúng từ bản 9.33, và bản 9.44 GỠ hẳn — gỡ chứ không thay bằng con số khác, vì sổ đếm thật đã có chỗ chờ ở TIN_NGUON. Phép đo nay nhét lại một con số không nguồn ngay trong lúc chạy để chứng minh bộ soi chưa câm. Màn in ba chỗ THIẾU SỔ ĐẾM thay vì in một con số đẹp, in đủ sáu tiêu chí và bảy điều tự cấm cho nhà gửi chuyện đọc trước',
-        ra.soKhongNguon.length + ' con số không nguồn được gọi tên · màn in 3 chỗ thiếu');
+      const doSo = ['mayChuaHoiThiKhongCoSo', 'datNguongThiRaSo', 'duoiNguongThiKhongRaSo',
+        'chuyenDemRieng', 'nguongKhongGoTrongKho', 'tatThiKhongGui', 'chiDungTrueMoiLaBat',
+        'batThiGui', 'manNoiChuaHoi', 'manKhongNoiSaiChoDaLam'].filter(k => !ra[k]);
+      bao(!doSo.length,
+        'BỐN SỔ ĐẾM CỘNG ĐỒNG NAY CÓ CHỖ GHI Ở MÁY CHỦ, VÀ BA CÂU "CHƯA CÓ SỐ" KHÔNG ĐƯỢC NÓI GIỐNG NHAU. Từ 9.45 bốn nguồn N-XONG · N-TANG · N-KEM · N-CHUYEN có sổ thật ở GITA_SoCongDong.gs, nên chúng thôi khai "chưa có sổ đếm" — nhưng có sổ không có nghĩa là lúc nào cũng có số. Ba lý do khác nhau và màn phải nói khác nhau: CHƯA CÓ SỔ là hệ chưa làm; CHƯA HỎI ĐƯỢC MÁY CHỦ là hệ làm rồi mà mạng chưa tới, và lúc ấy KHÔNG được in con số cũ ra thay vì một con số cộng đồng không kiểm được là đúng thứ bảng tin này dựng lên để không có; DƯỚI NGƯỠNG GỘP là hệ làm rồi và đang giữ kín cho người ta, vì "2 nhà đang ở tầng năm" là chỉ mặt từng nhà mà không cần tên. Gộp ba câu ấy thành một là nói sai hai lần trên ba. Con số ngưỡng chỉ nằm ở máy chủ — chỉ ở đó nó mới chặn được thật, và gõ thêm một bản trong kho là có hai luật, tới ngày hai con số lệch nhau thì màn hình in theo con số KHÔNG chặn ai. Cổng tinSo() vẫn bỏ con số người gọi đưa vào: nguồn ở máy chủ thì con số chỉ đến từ máy chủ. Công tắc góp số mặc định TẮT và chỉ đúng giá trị true mới là bật — chuỗi "true" vẫn là tắt — vì mặc định của một lời đồng ý không bao giờ được là "có"; tắt thì không một yêu cầu nào bay đi, chặn ngay ở máy khách, còn máy chủ vẫn đòi lại lời đồng ý lần nữa vì máy chủ không tin máy khách',
+        doSo.length ? 'phép đo hỏng: ' + doSo.join(' · ')
+          : 'chưa hỏi → không số · đạt ngưỡng → ra số · dưới ngưỡng → giữ kín · ngưỡng chỉ ở máy chủ · tắt thì 0 yêu cầu');
+      bao(ra.hetSoKhongNguon && ra.soiVanBat && ra.manKhongBia && ra.manCoTieuChi && ra.manCoCam,
+        'KHÔNG CÒN CON SỐ KHÔNG NGUỒN NÀO TRONG KHO, VÀ BỘ SOI VẪN BẮT ĐƯỢC NẾU CÓ. CUHICH từng khai thamgia 412 · 268 · 174 · 96 · 58 · 143 mà không dòng nào nói chúng đếm từ đâu, trong khi hệ chưa phát hành. Bảng tin từ chối mượn lại chúng từ bản 9.33, và bản 9.44 GỠ hẳn — gỡ chứ không thay bằng con số khác, vì sổ đếm thật đã có chỗ chờ ở TIN_NGUON. Phép đo nay nhét lại một con số không nguồn ngay trong lúc chạy để chứng minh bộ soi chưa câm. Màn không in một con số đẹp nào ở chỗ chưa có số — xem mục sổ đếm cộng đồng ngay trên — và in đủ sáu tiêu chí và bảy điều tự cấm cho nhà gửi chuyện đọc trước',
+        ra.soKhongNguon.length + ' con số không nguồn được gọi tên · màn không in con số bịa');
     }
   }
 
@@ -8843,6 +8894,65 @@ const { chromium } = require(PW);
       'BỐN CHỖ CHỜ CHỦ HỆ ĐÃ CHỐT, VÀ MỖI CHỖ ĐÓNG LẠI THEO MỘT CÁCH KHÁC NHAU. GIÁ: năm tầng 0 · 500.000 · 10.000.000 · 30.000.000 · 50.000.000 đồng, điền vào HP_TANG.gia và máy nhân lấy — không khai thêm chỗ nào. Tầng một để 0 chứ KHÔNG để null, vì hai thứ ấy khác nhau và máy phân biệt được: null là CHƯA BIẾT nên mọi phép tính đứng lại và báo thiếu, 0 là ĐÃ BIẾT VÀ BẰNG KHÔNG nên phép tính chạy và ra 0. Hệ quả phải nói ra chứ không giấu: kèm một nhà tầng một thì hoa hồng bằng 0, vì hoa hồng tính trên gói của nhà ĐƯỢC KÈM — đó không phải lỗi tính, đó là điều khoản, và nó đã thành một câu hỏi mới cho chủ hệ. THAMGIA: sáu con số 412·268·174·96·58·143 đã GỠ hẳn, không thay bằng con số khác — sổ đếm thật đã có chỗ chờ ở TIN_NGUON, cả bốn đều khai chưa có kèm câu thiếu gì, và ngày có sổ thì con số hiện lên người ta tin vì hôm nay chỗ ấy để trống chứ không để một con số đẹp. BÍ KÍP: danh mục năm túi, mỗi túi TRỎ vào nội dung kho đã có — bánh đà của tầng, chỗ khó, đổi được gì, lời hứa cú hích — nên không một câu chuyên môn nào sinh ra ở lớp hiển thị, và sửa một việc nhỏ ở BD_LON thì bí kíp đổi theo trong cùng lần chạy. Cổng không-vượt-tầng vẫn chặn: nhà tầng hai chỉ nhận được bí kíp một và hai sao. CHỮ KÝ MÁY CHỦ: dựng ở server/GITA_ChungCu.gs bằng HMAC-SHA256, khoá sinh một lần và giữ ở PropertiesService — không nằm trong mã nguồn, không đi trong bất kỳ phản hồi nào. Máy khách giữ BIÊN NHẬN và KHÔNG tự kiểm được chữ ký: tự kiểm được nghĩa là khoá đã nằm ở máy khách, và lúc ấy chữ ký hết giá trị. Cảnh báo trên hồ sơ nay nói ĐÚNG TÌNH TRẠNG chứ không nói chung chung — ký hết thì thôi cảnh báo giờ máy khách, còn một bản chưa ký thì nói đúng một trên hai; một câu tự chê sai chỗ làm hồ sơ yếu đi y như một câu tự khen sai chỗ',
       do4.length ? 'phép đo hỏng: ' + do4.join(' · ')
         : 'T3 10% = 1.000.000đ · T5 5% = 2.500.000đ · T1 = 0đ · thamgia đã gỡ · 5 bí kíp ghép từ kho · nhà T2 chỉ tới 2 sao · biên nhận đổi nguonGio sang may-chu');
+  }
+
+  /* ══════════════════ 72. SAVE() CÓ GIỮ THẬT KHÔNG ══════════════════
+     Lớp lỗi này im lặng hoàn hảo: chỗ ghi gọi G.save() đàng hoàng, save()
+     chạy không lỗi, mà khoá ấy không có trong đối tượng được ghi xuống.
+     Người dùng bấm nút, thấy màn đổi, F5, mất sạch, không một lời báo.
+
+     Bản 9.45 tìm ra BẢY khoá như thế đang nằm sẵn: bcNep · bcKem · ccSo ·
+     tinNhat · tinTang · mtb · ssVai. Nặng nhất là ccSo — sổ chứng cứ hoa
+     hồng, dựng để đối chất kiện tụng, mà bay mỗi lần tải lại trang.
+
+     Nên phép đo đi VÒNG TRÒN THẬT chứ không đọc mã: ghi một giá trị nhận
+     ra được vào từng khoá, gọi save(), xoá sạch G.S, gọi load(), rồi hỏi
+     giá trị ấy có về không. Thêm một khoá mà quên khai ở save() là đỏ ngay
+     hôm ấy, chứ không đợi tới lúc có người mất dữ liệu mới biết. */
+  {
+    await p.goto(URL, { waitUntil: 'domcontentloaded' });
+    await p.waitForFunction(() => window.G && window.G.save && window.G.load, { timeout: 30000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G, r = {};
+      /* Đúng những khoá mà một chỗ nào đó trong src/ ghi vào rồi gọi save().
+         Khai ở đây chứ không dò mã: dò mã thì bắt được cả những khoá cố ý
+         không lưu, và một phép đo hay báo nhầm là một phép đo bị tắt. */
+      const CAN = {
+        banCo: { 'T1|0|0': 1 }, bcTang: 'T3', bcVai: 'bo', bcBien: { x: 1 },
+        bcNep: { T1: { nep: 'a', loiMinh: 'b' } },
+        bcKem: { ten: 'Nhà A', tang: 'T1', batDau: '2026-09-01' },
+        ccSo: [{ ma: 'CC-1', noiDung: 'x' }],
+        tinNhat: [{ ma: 'S1' }], tinTang: 'T2', tinChiaSe: true,
+        mtb: { k: 'v' }, ssVai: 'R13',
+        viec: { v1: 1 }, chotNgay: { d: 1 }, caiTien: { c: 1 }, vet: ['v'],
+        checks: { a: 1 }, vision: { b: 1 }, journal: { c: 1 }, test: { d: 1 },
+        bando: { e: 1 }, nhatky: { f: 1 }, baithi: { g: 1 }, thoigian: { h: 1 },
+        sathach: { i: 1 }, khoahoc: { j: 1 }
+      };
+      const giu = JSON.stringify(G.S);
+      Object.keys(CAN).forEach(k => { G.S[k] = CAN[k]; });
+      G.save();
+      Object.keys(CAN).forEach(k => { delete G.S[k]; });
+      G.load();
+      r.mat = Object.keys(CAN).filter(k =>
+        JSON.stringify(G.S[k]) !== JSON.stringify(CAN[k]));
+      /* Và phép đo phải VẪN BẮT ĐƯỢC: bỏ một khoá ra khỏi bản ghi rồi đòi
+         nó kêu. Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm. */
+      G.S.ccSo = CAN.ccSo; G.save();
+      const luu = JSON.parse(localStorage.getItem('gita365.v7') || '{}');
+      delete luu.ccSo;
+      localStorage.setItem('gita365.v7', JSON.stringify(luu));
+      delete G.S.ccSo; G.load();
+      r.vanBat = JSON.stringify(G.S.ccSo) !== JSON.stringify(CAN.ccSo);
+
+      try { Object.assign(G.S, JSON.parse(giu)); } catch (e) {}
+      return r;
+    });
+    bao(ra.mat.length === 0 && ra.vanBat,
+      'MỌI KHOÁ CÓ GỌI save() ĐỀU VỀ ĐƯỢC SAU MỘT VÒNG GHI–ĐỌC. Đây là lớp lỗi im lặng nhất trong kho này: chỗ ghi gọi G.save() đàng hoàng, save() chạy không lỗi, mà khoá ấy không nằm trong đối tượng được ghi xuống — người dùng bấm nút, thấy màn đổi, tải lại trang, mất sạch, và không một lời báo nào nói cho họ biết. Bản 9.45 tìm ra bảy khoá đang hỏng đúng kiểu ấy: bcNep · bcKem · ccSo · tinNhat · tinTang · mtb · ssVai. Nặng nhất là ccSo — SỔ CHỨNG CỨ HOA HỒNG, thứ dựng lên để đối chất khi có kiện tụng, mà bay mỗi lần F5 thì nó không phải hồ sơ; rồi bcKem, nhà mình đang kèm nhà nào và bắt đầu hôm nào. Phép đo này không đọc mã mà đi VÒNG TRÒN THẬT: ghi giá trị nhận ra được vào từng khoá, gọi save(), xoá sạch, gọi load(), hỏi nó có về không. Nên thêm một khoá mà quên khai là đỏ ngay hôm ấy. Và nó tự chứng minh chưa câm: gỡ ccSo khỏi bản đã ghi rồi đòi nó kêu',
+      ra.mat.length ? 'khoá không về được sau khi tải lại: ' + ra.mat.join(' · ')
+        : (ra.vanBat ? '25 khoá đi trọn vòng ghi–đọc · phép đo tự chứng minh chưa câm'
+                     : 'phép đo CÂM: gỡ ccSo khỏi bản lưu mà nó vẫn báo xanh'));
   }
 
 

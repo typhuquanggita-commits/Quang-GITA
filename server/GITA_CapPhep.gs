@@ -184,7 +184,12 @@ function doPost(e) {
                    nguoiGhi lấy từ PHIÊN: nhận tên từ thân yêu cầu thì
                    người ta ghi tên ai cũng được, và cả bảng chứng cứ
                    mất nghĩa ngay. */
-                'kyChungCu', 'xacNhanChungCu', 'soiChungCu'];
+                'kyChungCu', 'xacNhanChungCu', 'soiChungCu',
+                /* Ba việc của sổ đếm cộng đồng — xem GITA_SoCongDong.gs.
+                   Cũng phải có phiên: dấu chặn đếm hai lần băm từ TÀI
+                   KHOẢN trong phiên. Nhận tên từ thân yêu cầu thì gõ tên
+                   khác là đếm thêm được một nhà, và cả sổ thành số bịa. */
+                'ghiTinCongDong', 'docTinCongDong', 'guiChuyen'];
     if (VIEC.indexOf(y.fn) < 0) return ra({ ok: false, error: 'Yêu cầu không hợp lệ.' });
 
     // 1. Xác thực phiên — dùng đúng lớp bảo mật sẵn có của hệ thống
@@ -203,6 +208,9 @@ function doPost(e) {
     if (y.fn === 'kyChungCu')      return ra(gitaKyChungCu_YC_(y, hoSo));
     if (y.fn === 'xacNhanChungCu') return ra(gitaXacNhanChungCu_(y, hoSo));
     if (y.fn === 'soiChungCu')     return ra(gitaSoiChungCu_(y, hoSo));
+    if (y.fn === 'ghiTinCongDong') return ra(gitaGhiTinCongDong_(y, hoSo));
+    if (y.fn === 'docTinCongDong') return ra(gitaDocTinCongDong_(y, hoSo));
+    if (y.fn === 'guiChuyen')      return ra(gitaGuiChuyen_(y, hoSo));
 
     // 2. Mật khẩu tạm chưa đổi thì không mở kho
     if (hoSo.phaiDoiMk) {

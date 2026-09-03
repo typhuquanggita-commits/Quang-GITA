@@ -37,7 +37,23 @@ function save(){
     /* Bàn cờ hành trình. Thiếu dòng này thì mọi quân nhà mình đặt bay
        hết khi tải lại trang — và một bàn cờ xoá được mỗi lần F5 thì
        nhìn nó không còn nghĩa gì. */
-    banCo:G.S.banCo, bcTang:G.S.bcTang, bcVai:G.S.bcVai, bcBien:G.S.bcBien
+    banCo:G.S.banCo, bcTang:G.S.bcTang, bcVai:G.S.bcVai, bcBien:G.S.bcBien,
+    /* BẢY DÒNG DƯỚI ĐÂY TỪNG BỊ BỎ QUÊN, và bỏ quên theo kiểu tệ nhất:
+       chỗ ghi vẫn gọi G.save() đàng hoàng, save() vẫn chạy không lỗi, mà
+       không dòng nào của chúng được ghi xuống. Bấm nút xong, F5, mất sạch,
+       không một lời báo.
+
+       Nặng nhất là ccSo — SỔ CHỨNG CỨ HOA HỒNG. Hồ sơ dựng để đối chất
+       kiện tụng mà bay mỗi lần tải lại trang thì nó không phải hồ sơ.
+       Rồi bcKem: nhà mình đang kèm nhà nào, bắt đầu hôm nào.
+
+       Bộ kiểm nay đi VÒNG TRÒN THẬT — ghi vào G.S, gọi save(), đọc lại từ
+       localStorage — nên thêm một khoá mà quên khai ở đây là đỏ ngay, chứ
+       không đợi tới lúc có người mất dữ liệu mới biết. */
+    bcNep:G.S.bcNep, bcKem:G.S.bcKem,
+    ccSo:G.S.ccSo,
+    tinNhat:G.S.tinNhat, tinTang:G.S.tinTang, tinChiaSe:G.S.tinChiaSe,
+    mtb:G.S.mtb, ssVai:G.S.ssVai
   })); }catch(e){}
 }
 function load(){
@@ -64,6 +80,17 @@ function load(){
     G.S.mua = d.mua || null;
     G.S.vet = d.vet || [];
     G.S.viecCua = d.viecCua || null;
+    G.S.bcNep = d.bcNep || {};
+    G.S.bcKem = d.bcKem || null;
+    G.S.ccSo = d.ccSo || [];
+    G.S.tinNhat = d.tinNhat || [];
+    G.S.tinTang = d.tinTang || null;
+    /* Công tắc chia sẻ: chỉ đúng true mới là bật. Thiếu khoá, hỏng khoá,
+       hay bất cứ giá trị nào khác đều về TẮT — mặc định của một lời đồng ý
+       không bao giờ được là "có". */
+    G.S.tinChiaSe = (d.tinChiaSe === true);
+    G.S.mtb = d.mtb || {};
+    G.S.ssVai = d.ssVai || null;
     if(d.rightOpen !== undefined) G.S.rightOpen = d.rightOpen;
     return d;
   }catch(e){ return null; }
@@ -817,6 +844,10 @@ G.veLaiCot = function(){
   if(l) l.innerHTML = leftNav();
 };
 G.save   = save;
+/* load ra ngoài để bộ kiểm đi được TRỌN vòng ghi–đọc. Chỉ kiểm save() thì
+   một khoá khai ở save mà quên ở load vẫn xanh — mà đó đúng là nửa còn lại
+   của cùng một lớp lỗi im lặng. */
+G.load   = load;
 G.dangXuat = function(){ var b=document.querySelector('[data-act="logout"]'); if(b) b.click(); };
 
 G.go = function(v){
