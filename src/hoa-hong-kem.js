@@ -165,6 +165,27 @@ G.VIEWS = G.VIEWS || {};
     return G.ccGhi(moi);
   };
 
+  /* ═══════════ BIÊN NHẬN CỦA MÁY CHỦ ═══════════
+     Máy chủ ký nội dung bằng khoá nó giữ (server/GITA_ChungCu.gs) và
+     trả về biên nhận: mã, giờ máy chủ, chữ ký. Nhận biên nhận thì cột
+     nguonGio đổi từ 'may-khach' sang 'may-chu' — và đó là lúc bản ghi
+     ấy mới thật sự đứng được khi đối chất.
+
+     Máy khách KHÔNG giữ khoá và KHÔNG kiểm được chữ ký. Nó chỉ giữ biên
+     nhận để đối chiếu; việc kiểm là của máy chủ, qua fn 'soiChungCu'.
+     Tự kiểm được ở đây nghĩa là khoá đã nằm ở máy khách, và lúc ấy chữ
+     ký không còn giá trị gì. */
+  G.ccNhanBienNhan = function (ma, bn) {
+    var t = so().filter(function (x) { return x.ma === ma; })[0];
+    if (!t) return { ok: false, y: 'Không thấy bản ghi này.' };
+    if (!bn || !bn.chuKy || !bn.gioMayChu)
+      return { ok: false, y: 'Biên nhận thiếu chữ ký hoặc giờ máy chủ.' };
+    t.bienNhan = { ma: bn.ma || ma, gioMayChu: bn.gioMayChu, chuKy: bn.chuKy };
+    t.nguonGio = 'may-chu';
+    if (G.save) G.save();
+    return { ok: true, cc: t };
+  };
+
   /* Soi cả sổ: dấu kiểm còn khớp không, bản nào chưa đối chứng. */
   G.ccSoi = function () {
     var lech = [], chuaXac = [], dinhChinh = [];
@@ -188,11 +209,22 @@ G.VIEWS = G.VIEWS || {};
     var canh = [];
     if (s.lech.length) canh.push('Có ' + s.lech.length + ' bản ghi dấu kiểm KHÔNG KHỚP — ' +
       'nội dung đã bị sửa sau khi ghi.');
-    if (!s.gioMayChu) canh.push((G.HH_CC_LUAT || {}).viGioMayKhach || '');
-    canh.push((G.HH_CC_LUAT || {}).viVanTay || '');
+    /* CẢNH BÁO PHẢI ĐÚNG VỚI TÌNH TRẠNG THẬT, KHÔNG NÓI CHUNG CHUNG.
+       Bản đầu tôi đẩy câu "dấu kiểm không phải chữ ký số" ra mọi lúc.
+       Nhưng khi máy chủ đã ký thì câu ấy đọc thành "hồ sơ này không có
+       chữ ký" — sai theo hướng NGƯỢC LẠI, và một câu tự chê sai chỗ
+       cũng làm hồ sơ yếu đi y như một câu tự khen sai chỗ.
+       Nên nó đếm: bao nhiêu bản đã có biên nhận máy chủ, bao nhiêu chưa. */
+    var chuaKy = so().length - s.gioMayChu;
+    if (chuaKy > 0) {
+      canh.push(chuaKy + '/' + so().length + ' bản ghi CHƯA có chữ ký và dấu giờ của máy ' +
+        'chủ. ' + ((G.HH_CC_LUAT || {}).viGioMayKhach || ''));
+      canh.push((G.HH_CC_LUAT || {}).viVanTay || '');
+    }
     return { tinh: tinh, tien: tinh.dat ? G.hhTien(tinh.phanTram, d.tangDuocKem) : null,
       soChungCu: so().length, daDoiChung: duoc.length,
       chuaDoiChung: s.chuaXacNhan.length, lech: s.lech,
+      daKyMayChu: s.gioMayChu, chuaKyMayChu: so().length - s.gioMayChu,
       nopDuoc: tinh.dat && duoc.length > 0 && s.lech.length === 0,
       canh: canh.filter(Boolean) };
   };

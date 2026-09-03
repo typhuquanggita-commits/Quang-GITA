@@ -119,6 +119,35 @@ G.VIEWS = G.VIEWS || {};
     return { ok: true, tran: tran, sao: sao };
   };
 
+  /* ═══════════ MỞ MỘT BÍ KÍP ═══════════
+     Ghép ruột từ chỗ kho đã có. Không câu chuyên môn nào sinh ra ở đây —
+     mọi thứ trả về đều là con trỏ tới BD_LON và HT_TANG. */
+  G.bkMo = function (maBiKip) {
+    var b = (G.BK_DANHMUC || []).filter(function (x) { return x.ma === maBiKip; })[0];
+    if (!b) return null;
+    var t = (G.HT_TANG || []).filter(function (x) { return x.ma === b.tang; })[0] || {};
+    var ch = (G.CUHICH || []).filter(function (x) { return x.tier === b.tang; })[0] || {};
+    var viec = [];
+    (G.BD_LON || []).forEach(function (bd) {
+      if (bd.tang !== b.tang) return;
+      (bd.nho || []).forEach(function (n) {
+        viec.push({ ma: n.ma, ten: n.ten, viec: n.viec, thay: n.thay,
+          banhDa: bd.ma, banhDaTen: bd.ten });
+      });
+    });
+    return { ma: b.ma, ten: b.ten, tang: b.tang, sao: G.bkSao(b.tang), trao: b.trao,
+      thuThach: t.thuThach || null, khoNhat: t.khoNhat || null,
+      doiGiKhiXong: t.doiGiKhiXong || null, hua: ch.hua || null,
+      viec: viec, soViec: viec.length, ghepTu: b.ghepTu };
+  };
+  /* Bí kíp nào trao được cho một nhà — cùng cổng với bkChoPhep, không
+     dựng luật thứ hai. */
+  G.bkChoNha = function (tangNha) {
+    return (G.BK_DANHMUC || []).filter(function (b) {
+      return G.bkChoPhep(tangNha, G.bkSao(b.tang)).ok === true;
+    });
+  };
+
   /* ═══════════ MẪU THÔNG BÁO ═══════════
      Điền chỗ trống vào mẫu của kho. MỌI giá trị đi qua U.h() trước khi
      ghép — mã số và tên tầng tuy do hệ sinh ra, nhưng ngày mai chúng

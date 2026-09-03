@@ -5247,7 +5247,15 @@ const { chromium } = require(PW);
           if (Array.isArray(CU[k]) && Array.isArray(NAY[k]) && CU[k].length && ma45(CU[k][0])) {
             const conO = new Set(NAY[k].map(ma45));
             const roiKho = CU[k].map(ma45).filter(x => x && !conO.has(x));
-            if (roiKho.length === na - nb && roiKho.every(x => maToanKho.has(x))) {
+            /* PHÉP TRỪ LÀ CÂU HỎI SAI. Bản đầu đòi số mã rời đi phải
+               BẰNG ĐÚNG phần hụt — nghĩa là chỉ nhận ra chuyển kho khi
+               kho cũ thuần tuý bớt đi. Bản 9.44 làm nó đỏ: HH_CHOCHU
+               tiễn hai mã sang HH_DA_CHOT và ĐỒNG THỜI nhận một mã
+               mới, nên hụt 1 mà rời đi 2, và phép trừ không khớp.
+               Câu hỏi đúng không dính gì tới số lượng: MỌI mã đã rời
+               kho này có còn ở đâu đó trong bảy gói không. Còn hết là
+               không mất chữ nào, dù cùng lúc có bao nhiêu mã mới vào. */
+            if (roiKho.length && roiKho.every(x => maToanKho.has(x))) {
               chuyenKho.push(k + ' ' + na + ' → ' + nb + ' (' + roiKho.join(' ') + ' sang kho khác)');
               return;
             }
@@ -5256,7 +5264,7 @@ const { chromium } = require(PW);
         });
         if (chuyenKho.length) console.log('  · chuyển kho, không mất chữ: ' + chuyenKho.join(' · '));
         bao(!hut.length,
-          'không kho nào ÍT BẢN GHI ĐI — nội dung ít đi hầu như luôn là hỏng, không phải sửa',
+          'KHÔNG MÃ NÀO BIẾN MẤT KHỎI BẢY GÓI — nội dung ít đi hầu như luôn là hỏng, không phải sửa. Nhưng chia một kho cho đúng phạm vi, hoặc tiễn mấy mục đã xong sang một kho khác, thì kho cũ hụt bản ghi mà không mất chữ nào; nên phép kiểm hỏi mã ấy CÒN Ở ĐÂU ĐÓ trong bảy gói không, chứ không hỏi số lượng có khớp phép trừ không — hỏi phép trừ thì nó đỏ ngay lần đầu một kho vừa tiễn mã đi vừa nhận mã mới',
           hut.length ? hut.slice(0, 6).join(' · ') : 'không kho nào hụt');
 
         const bay = [];
@@ -6611,7 +6619,15 @@ const { chromium } = require(PW);
 
       /* ── Không giá nào trong câu nói với khách ── */
       ra.soiGia = G.tvSoiGia();
-      ra.giaConNull = (G.HP_TANG || []).every(t => t.gia === null);
+      /* GIÁ ĐÃ ĐIỀN Ở BẢN 9.44. Phép đo cũ đòi "gia còn null" — nó bám
+         vào một TRẠNG THÁI TẠM, nên nó đỏ đúng lúc công việc TIẾN LÊN.
+         Đây là lần thứ hai tôi gặp lớp lỗi ấy trong kho này.
+         Câu hỏi ĐÚNG không đổi theo thời gian: giá phải nằm ở BẢNG HỌC
+         PHÍ và KHÔNG được nằm trong câu người tư vấn đọc trước mặt
+         khách. Chỗ nào đọc giá thì đọc từ HP_TANG, không gõ lại. */
+      ra.giaDaDien = (G.HP_TANG || []).every(t => t.gia !== null && t.gia !== undefined);
+      ra.giaDungCho = (G.HP_TANG || []).filter(t => t.tang === 'T3')[0].gia === 10000000 &&
+        (G.HP_TANG || []).filter(t => t.tang === 'T1')[0].gia === 0;
       const giuNoi = G.TV_NHIP5[1].noi;
       G.TV_NHIP5[1].noi = 'Chặng này 20 triệu ạ.';
       ra.batGia = G.tvSoiGia().length === 1;
@@ -6666,9 +6682,9 @@ const { chromium } = require(PW);
       bao(!ng.soiHoan.length && ng.hoanTheoHP && ng.batTyLeHoan && ng.hoanT2,
         'chính sách hoàn tiền ĐỌC từ bảng học phí theo đúng chặng đang bán, không kho nào của lớp này được ghi một tỉ lệ chung — sổ tay hứa hoàn bảy mươi phần trăm trong ba tháng đầu, mà hợp đồng từng chặng ghi khác hẳn, và lời hứa hoàn tiền nói miệng mà hợp đồng không giữ là chỗ Học viện thua kiện, thua đúng',
         ng.soiHoan.join(' ') || 'T2: ' + ng.hoanT2.slice(0, 48) + '…');
-      bao(!ng.soiGia.length && ng.giaConNull && ng.batGia && ng.khongTuDatGia,
-        'không câu nào người tư vấn đọc trước mặt khách có một con số tiền, và hệ KHÔNG tự điền năm gói giá sổ tay đề nghị — học phí vẫn đang chờ chủ hệ, và một con số tạm điền cho màn hình trông đủ sẽ thành con số thật sau sáu tháng, không ai nhớ nó từ đâu ra',
-        ng.soiGia.join(' ') || 'HP_TANG[].gia còn trống · không giá trong câu nói');
+      bao(!ng.soiGia.length && ng.giaDaDien && ng.giaDungCho && ng.batGia && ng.khongTuDatGia,
+        'GIÁ NĂM TẦNG ĐÃ ĐIỀN, VÀ KHÔNG CÂU NÀO NGƯỜI TƯ VẤN ĐỌC TRƯỚC MẶT KHÁCH CÓ MỘT CON SỐ TIỀN. Hai việc khác nhau và cả hai đều phải đúng: giá nằm ở BẢNG HỌC PHÍ — 0 · 500.000 · 10.000.000 · 30.000.000 · 50.000.000 — còn câu nói thì đọc giá từ bảng ấy chứ không gõ lại, vì một con số gõ trong câu nói sẽ ở lại nguyên đó sau lần tăng giá đầu tiên. Hệ cũng KHÔNG tự đặt ra năm gói giá mà sổ tay đề nghị. Phép đo này từng đòi "gia còn null" và vì thế nó ĐỎ ĐÚNG LÚC CÔNG VIỆC TIẾN LÊN — bám vào một trạng thái tạm thì phép kiểm chống lại chính việc mình canh; nay nó hỏi câu không đổi theo thời gian',
+        ng.soiGia.join(' ') || 'T1 0đ · T3 10 triệu · không giá nào nằm trong câu nói');
       bao(!ng.soiSo15.length && ng.soSo15 === 15 && ng.chuaDoDuCot && ng.batChuaDoCam && ng.soChuaDo === 3,
         'mười lăm con số tháng, số nào cũng khai NGUỒN có thật, và ba số chưa đo được thì khai thẳng kèm thiếu đúng cái gì — một bảng thành tích tự điền là một bảng luôn đẹp, và một bảng luôn đẹp thì không ai dùng nó để sửa gì',
         ng.soiSo15.join(' ') || '12 số có nguồn · ' + ng.soChuaDo + ' số khai chưa đo');
@@ -8300,7 +8316,19 @@ const { chromium } = require(PW);
 
       /* ── Gọi tên con số không nguồn đang có trong kho ── */
       r.soKhongNguon = G.tinSoiSoKhongNguon();
-      r.batCuHich = r.soKhongNguon.some(x => /CUHICH\..*thamgia/.test(x));
+      /* THAMGIA ĐÃ GỠ Ở BẢN 9.44. Phép đo cũ đòi bộ soi vẫn GỌI TÊN
+         chúng — cùng lớp lỗi với ra.giaConNull ở mục 56: nó canh một
+         chỗ hỏng, nên nó đỏ đúng lúc chỗ hỏng được sửa.
+         Câu hỏi đúng: bộ soi có còn tìm thấy con số không nguồn nào
+         không. Không còn thì xanh, và mai có ai nhét một con số không
+         nguồn vào thì nó đỏ lại ngay. */
+      r.hetSoKhongNguon = r.soKhongNguon.length === 0 &&
+        (G.CUHICH || []).every(x => x.thamgia === undefined);
+      /* Và bộ soi phải VẪN BẮT ĐƯỢC — nhét lại một con số rồi đòi nó kêu. */
+      const chTest = (G.CUHICH || [])[0];
+      chTest.thamgia = 999;
+      r.soiVanBat = G.tinSoiSoKhongNguon().some(x => /thamgia/.test(x));
+      delete chTest.thamgia;
 
       /* ── Trên màn thật: in chỗ THIẾU, không in con số bịa ── */
       const man = G.VIEWS['bang-tin']();
@@ -8419,8 +8447,8 @@ const { chromium } = require(PW);
       bao(ra.quyenXem && ra.locBoNhiemVu,
         'NHÀ KÈM XEM ĐƯỢC BÀN CỜ VÀ KPI CỦA NHÀ KIA, KHÔNG XEM ĐƯỢC NHIỆM VỤ. Vạch nằm đúng chỗ ấy vì nhìn HÌNH của bàn cờ là biết nhà kia đuối tuần nào — đủ để hỏi một câu đúng lúc; còn nhìn TỪNG VIỆC là biết tối qua bố họ chọn gì, mẹ họ chọn gì, và đó không còn là kèm nữa mà là đọc nhật ký của một nhà khác. KPI thì được xem, vì nó để ĐỘNG VIÊN KHÍCH LỆ — không có con số thì lời động viên rơi vào chỗ trống, và nhà được kèm biết là rơi vào chỗ trống. Lọc ở CỔNG chứ không lọc ở màn hình: gửi xuống rồi thì mở công cụ nhà phát triển là đọc được hết, và lỗi ấy đã xảy ra ba lần trong kho này — nên bcKemLoc() bỏ cả mã việc, mã bánh đà lẫn điểm từng ô, chỉ giữ lại màu để vẽ',
         'bàn cờ có · KPI có · nhiệm vụ không · mã việc và mã bánh đà bị bỏ ở cổng');
-      bao(ra.batCuHich && ra.manNoiThieu && ra.manKhongBia && ra.manCoTieuChi && ra.manCoCam,
-        'BẢNG TIN GỌI TÊN CON SỐ KHÔNG NGUỒN ĐANG NẰM TRONG CHÍNH KHO NÀY: CUHICH khai thamgia 412 · 268 · 174 · 96 · 58 · 143 mà không dòng nào nói chúng đếm từ đâu, trong khi hệ chưa phát hành. Bảng tin không mượn lại chúng — mượn là biến một con số không nguồn thành con số có vẻ được xác nhận, vì nó vừa xuất hiện ở màn thứ hai. Màn in ba chỗ THIẾU SỔ ĐẾM thay vì in một con số đẹp, in đủ sáu tiêu chí và bảy điều tự cấm cho nhà gửi chuyện đọc trước',
+      bao(ra.hetSoKhongNguon && ra.soiVanBat && ra.manNoiThieu && ra.manKhongBia && ra.manCoTieuChi && ra.manCoCam,
+        'KHÔNG CÒN CON SỐ KHÔNG NGUỒN NÀO TRONG KHO, VÀ BỘ SOI VẪN BẮT ĐƯỢC NẾU CÓ. CUHICH từng khai thamgia 412 · 268 · 174 · 96 · 58 · 143 mà không dòng nào nói chúng đếm từ đâu, trong khi hệ chưa phát hành. Bảng tin từ chối mượn lại chúng từ bản 9.33, và bản 9.44 GỠ hẳn — gỡ chứ không thay bằng con số khác, vì sổ đếm thật đã có chỗ chờ ở TIN_NGUON. Phép đo nay nhét lại một con số không nguồn ngay trong lúc chạy để chứng minh bộ soi chưa câm. Màn in ba chỗ THIẾU SỔ ĐẾM thay vì in một con số đẹp, in đủ sáu tiêu chí và bảy điều tự cấm cho nhà gửi chuyện đọc trước',
         ra.soKhongNguon.length + ' con số không nguồn được gọi tên · màn in 3 chỗ thiếu');
     }
   }
@@ -8738,6 +8766,83 @@ const { chromium } = require(PW);
       'HOA HỒNG KÈM — TỆP DUY NHẤT TRONG KHO RA TIỀN THẬT, NÊN NÓ KHẮT KHE HƠN MỌI MỤC KHÁC. Mọi thứ khác sai thì sửa; chỗ này sai thì kết thúc ở toà chứ không kết thúc ở một bản vá. Nhà từ TẦNG BỐN trở lên đăng ký nhận kèm — tầng bốn là tầng đầu tiên nhà mình tự cầm lái trọn một năm, và kèm một nhà khác trước khi tự đi được một năm là dạy thứ mình chưa làm xong. Hai bậc: năm phần trăm khi nhà được kèm VƯỢT TẦNG và nhà kèm đạt tám mươi; mười phần trăm khi CẢ HAI cùng đạt chín mươi — bậc trên đòi cả hai vì mười phần trăm là TRẦN của cả hệ, và trả trần cho một phía làm tốt còn phía kia vừa đủ là dạy rằng kèm giỏi thì bù được cho nếp nhà mình. Chưa vượt tầng thì KHÔNG có bậc nào, kể cả khi cả hai KPI rất cao: hoa hồng trả cho một KẾT QUẢ, không trả cho công sức. Không con số nào gõ trong mã — trần đọc từ HOAHONG.tran kèm câu "không có ngoại lệ, không có mức riêng cho ai", ngưỡng đọc từ chính cột `doi` của từng bậc, và trần CHẶN THẬT chứ không chỉ là một câu chữ. SỐ TIỀN thì máy KHÔNG in ra: HP_TANG.gia đang null cả năm tầng, nên nó trả về tỉ lệ và nói rõ chưa nhân được với cái gì — bịa một con số tiền là thứ khác hẳn bịa một con số điểm. BẢNG CHỨNG CỨ dựng để đứng được khi đối chất: mỗi bản gắn với một mã việc có thật trong kho, đủ trường mới nộp được, và chỗ chống làm giả mạnh nhất là HAI CHỮ KÝ — người ghi không tự xác nhận cho mình được, nhà ĐƯỢC KÈM phải xác nhận, và chưa xác nhận thì bản ấy đứng ngoài hồ sơ. Dấu kiểm nội dung bắt được sửa sau khi ghi. Bản đã xác nhận thì KHOÁ: sai thì ghi bản đính chính trỏ về bản cũ và cả hai cùng ở lại, vì xoá bản sai là xoá luôn bằng chứng rằng đã từng có bản sai — đúng thứ bên đối tụng sẽ hỏi. VÀ HAI CHỖ MÁY KHÔNG LÀM ĐƯỢC THÌ NÓ IN THẲNG RA MÀN: dấu kiểm KHÔNG phải chữ ký số nên không chặn được người cố tình dựng lại cả bản ghi lẫn dấu, và giờ máy khách KHÔNG phải bằng chứng vì đồng hồ máy đổi được trong ba giây. Giấu hai chỗ ấy mới làm hồ sơ yếu đi: bên đối tụng tìm ra cái mình đã giấu thì mọi thứ còn lại cũng mất giá theo',
       doHH.length ? 'phép đo hỏng: ' + doHH.join(' · ')
         : 'T4/T5 đăng ký được · 80→5% · một phía 90 vẫn 5% · cả hai 90→10% · trần 7 thì chặn ở 7 · chưa có giá thì không ra tiền · tự xác nhận bị chặn · sửa lén thì dấu kiểm lệch và hồ sơ không nộp được');
+  }
+
+
+  console.log('\n71 · BỐN CHỖ CHỜ CHỦ HỆ ĐÃ CHỐT');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'superadmin@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.HP_TANG && window.G.BK_DANHMUC && window.G.HH_BAC, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G, r = {};
+      const giuCC = JSON.stringify(G.S.ccSo || []);
+
+      /* ── GIÁ NĂM TẦNG ──
+         0 KHÁC null, và máy phân biệt được: null là CHƯA BIẾT GIÁ nên
+         mọi phép tính đứng lại và báo thiếu; 0 là ĐÃ BIẾT VÀ BẰNG KHÔNG
+         nên phép tính chạy và ra 0 — đúng sự thật. */
+      const g = t => (G.HP_TANG.filter(x => x.tang === t)[0] || {}).gia;
+      r.gia = g('T1') === 0 && g('T2') === 500000 && g('T3') === 10000000 &&
+        g('T4') === 30000000 && g('T5') === 50000000 &&
+        G.HP_TANG.every(x => x.gia !== null && x.gia !== undefined);
+      r.tienRaDuoc = G.hhTien(10, 'T3').tien === 1000000 &&
+        G.hhTien(5, 'T5').tien === 2500000 &&
+        G.hhTien(10, 'T1').chuaCoGia === false && G.hhTien(10, 'T1').tien === 0;
+
+      /* ── THAMGIA ĐÃ GỠ ── */
+      r.gonThamGia = (G.CUHICH || []).every(x => x.thamgia === undefined) &&
+        (G.tinSoiSoKhongNguon() || []).every(x => !/thamgia/.test(x));
+
+      /* ── BÍ KÍP GHÉP TỪ KHO, KHÔNG VIẾT MỚI ── */
+      const bk3 = G.bkMo('BK-T3');
+      const t3 = G.HT_TANG.filter(x => x.ma === 'T3')[0];
+      r.bkGhep = (G.BK_DANHMUC || []).length === 5 && !!bk3 && bk3.sao === 3 &&
+        bk3.soViec === 20 && bk3.khoNhat === t3.khoNhat && bk3.thuThach === t3.thuThach &&
+        G.BK_DANHMUC_LUAT.khongVietMoi === true &&
+        (G.BK_DANHMUC || []).every(x => Array.isArray(x.ghepTu) && x.ghepTu.length >= 3);
+      const bd = G.BD_LON.filter(x => x.tang === 'T3')[0], luuTen = bd.nho[0].ten;
+      bd.nho[0].ten = 'ĐÃ ĐỔI THỬ';
+      r.bkDocTuKho = G.bkMo('BK-T3').viec[0].ten === 'ĐÃ ĐỔI THỬ';
+      bd.nho[0].ten = luuTen;
+      r.bkKhongVuotTang = G.bkChoNha('T2').map(x => x.ma).join(',') === 'BK-T1,BK-T2' &&
+        G.bkChoNha('T5').length === 5 && G.bkChoNha('T1').length === 1;
+
+      /* ── BIÊN NHẬN MÁY CHỦ ──
+         Máy khách KHÔNG giữ khoá và KHÔNG kiểm được chữ ký; tự kiểm được
+         nghĩa là khoá đã nằm ở máy khách, và lúc ấy chữ ký hết giá trị. */
+      G.S.ccSo = [];
+      const viec = G.BD_LON[0].nho[0].ma;
+      const gh = G.ccGhi({ nhiemVu: viec, ngayLam: '2026-09-01', loai: 'BIENBAN',
+        noiDung: 'Buổi kèm 45 phút.', nguoiGhi: 'u-kem' });
+      r.bienNhan = gh.cc.nguonGio === 'may-khach' &&
+        G.ccNhanBienNhan(gh.cc.ma, { chuKy: 'abc' }).ok === false &&
+        G.ccNhanBienNhan(gh.cc.ma, {}).ok === false &&
+        G.ccNhanBienNhan(gh.cc.ma, { ma: gh.cc.ma,
+          gioMayChu: '2026-09-01T10:00:00.000Z', chuKy: 'deadbeef' }).ok === true &&
+        G.ccDanhSach()[0].nguonGio === 'may-chu';
+      /* Cảnh báo phải ĐÚNG TÌNH TRẠNG: ký hết thì thôi cảnh báo giờ máy
+         khách; còn một bản chưa ký thì nói đúng một trên hai. Một câu tự
+         chê sai chỗ làm hồ sơ yếu đi y như một câu tự khen sai chỗ. */
+      const hs1 = G.hhHoSo({ vuotTang: true, kpiKem: 90, kpiDuocKem: 90, tangDuocKem: 'T3' });
+      G.ccGhi({ nhiemVu: viec, ngayLam: '2026-09-02', loai: 'ANH',
+        noiDung: 'Ảnh sổ ghi.', nguoiGhi: 'u-kem' });
+      const hs2 = G.hhHoSo({ vuotTang: true, kpiKem: 90, kpiDuocKem: 90, tangDuocKem: 'T3' });
+      r.canhDungTinhTrang = hs1.chuaKyMayChu === 0 &&
+        hs1.canh.every(x => !/Đồng hồ máy/.test(x)) &&
+        hs2.chuaKyMayChu === 1 &&
+        hs2.canh.some(x => /1\/2 bản ghi CHƯA có chữ ký/.test(x)) &&
+        hs2.canh.some(x => /KHÔNG chặn được người cố tình/i.test(x));
+
+      G.S.ccSo = JSON.parse(giuCC);
+      return r;
+    });
+    const do4 = ['gia', 'tienRaDuoc', 'gonThamGia', 'bkGhep', 'bkDocTuKho',
+      'bkKhongVuotTang', 'bienNhan', 'canhDungTinhTrang'].filter(k => !ra[k]);
+    bao(!do4.length,
+      'BỐN CHỖ CHỜ CHỦ HỆ ĐÃ CHỐT, VÀ MỖI CHỖ ĐÓNG LẠI THEO MỘT CÁCH KHÁC NHAU. GIÁ: năm tầng 0 · 500.000 · 10.000.000 · 30.000.000 · 50.000.000 đồng, điền vào HP_TANG.gia và máy nhân lấy — không khai thêm chỗ nào. Tầng một để 0 chứ KHÔNG để null, vì hai thứ ấy khác nhau và máy phân biệt được: null là CHƯA BIẾT nên mọi phép tính đứng lại và báo thiếu, 0 là ĐÃ BIẾT VÀ BẰNG KHÔNG nên phép tính chạy và ra 0. Hệ quả phải nói ra chứ không giấu: kèm một nhà tầng một thì hoa hồng bằng 0, vì hoa hồng tính trên gói của nhà ĐƯỢC KÈM — đó không phải lỗi tính, đó là điều khoản, và nó đã thành một câu hỏi mới cho chủ hệ. THAMGIA: sáu con số 412·268·174·96·58·143 đã GỠ hẳn, không thay bằng con số khác — sổ đếm thật đã có chỗ chờ ở TIN_NGUON, cả bốn đều khai chưa có kèm câu thiếu gì, và ngày có sổ thì con số hiện lên người ta tin vì hôm nay chỗ ấy để trống chứ không để một con số đẹp. BÍ KÍP: danh mục năm túi, mỗi túi TRỎ vào nội dung kho đã có — bánh đà của tầng, chỗ khó, đổi được gì, lời hứa cú hích — nên không một câu chuyên môn nào sinh ra ở lớp hiển thị, và sửa một việc nhỏ ở BD_LON thì bí kíp đổi theo trong cùng lần chạy. Cổng không-vượt-tầng vẫn chặn: nhà tầng hai chỉ nhận được bí kíp một và hai sao. CHỮ KÝ MÁY CHỦ: dựng ở server/GITA_ChungCu.gs bằng HMAC-SHA256, khoá sinh một lần và giữ ở PropertiesService — không nằm trong mã nguồn, không đi trong bất kỳ phản hồi nào. Máy khách giữ BIÊN NHẬN và KHÔNG tự kiểm được chữ ký: tự kiểm được nghĩa là khoá đã nằm ở máy khách, và lúc ấy chữ ký hết giá trị. Cảnh báo trên hồ sơ nay nói ĐÚNG TÌNH TRẠNG chứ không nói chung chung — ký hết thì thôi cảnh báo giờ máy khách, còn một bản chưa ký thì nói đúng một trên hai; một câu tự chê sai chỗ làm hồ sơ yếu đi y như một câu tự khen sai chỗ',
+      do4.length ? 'phép đo hỏng: ' + do4.join(' · ')
+        : 'T3 10% = 1.000.000đ · T5 5% = 2.500.000đ · T1 = 0đ · thamgia đã gỡ · 5 bí kíp ghép từ kho · nhà T2 chỉ tới 2 sao · biên nhận đổi nguonGio sang may-chu');
   }
 
 

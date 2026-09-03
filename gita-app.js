@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.43',
+  version: '9.44',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3411,8 +3411,8 @@ G.THUOC_CAP_PHEP = [
   'HP_NGAY',
   'TIN_LOAI','TIN_NGUON','TIN_NGUON_LUAT','TIN_TIEUCHI','TIN_TIEUCHI_LUAT',
   'TIN_THUONG','TIN_CAM','TIN_LUAT','TIN_LOAI_LUAT','TIN_MAU','TIN_TANG_LUAT',
-  'TIN_KEM_THUONG','BK_LUAT','TG_MUC','TG_VIEC',
-  'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU',
+  'TIN_KEM_THUONG','BK_LUAT','BK_DANHMUC','BK_DANHMUC_LUAT','TG_MUC','TG_VIEC',
+  'HH_KEM','HH_BAC','HH_BAC_LUAT','HH_CHUNGCU','HH_LOAI_CC','HH_CC_LUAT','HH_CHOCHU','HH_DA_CHOT',
   'CS_VONG','CS_VONG_LUAT','CS_DULIEU','CS_DULIEU_LUAT',
   'CS_QUYMO','CS_LECH','CS_CHOCHU',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
@@ -24040,6 +24040,27 @@ G.VIEWS = G.VIEWS || {};
     return G.ccGhi(moi);
   };
 
+  /* ═══════════ BIÊN NHẬN CỦA MÁY CHỦ ═══════════
+     Máy chủ ký nội dung bằng khoá nó giữ (server/GITA_ChungCu.gs) và
+     trả về biên nhận: mã, giờ máy chủ, chữ ký. Nhận biên nhận thì cột
+     nguonGio đổi từ 'may-khach' sang 'may-chu' — và đó là lúc bản ghi
+     ấy mới thật sự đứng được khi đối chất.
+
+     Máy khách KHÔNG giữ khoá và KHÔNG kiểm được chữ ký. Nó chỉ giữ biên
+     nhận để đối chiếu; việc kiểm là của máy chủ, qua fn 'soiChungCu'.
+     Tự kiểm được ở đây nghĩa là khoá đã nằm ở máy khách, và lúc ấy chữ
+     ký không còn giá trị gì. */
+  G.ccNhanBienNhan = function (ma, bn) {
+    var t = so().filter(function (x) { return x.ma === ma; })[0];
+    if (!t) return { ok: false, y: 'Không thấy bản ghi này.' };
+    if (!bn || !bn.chuKy || !bn.gioMayChu)
+      return { ok: false, y: 'Biên nhận thiếu chữ ký hoặc giờ máy chủ.' };
+    t.bienNhan = { ma: bn.ma || ma, gioMayChu: bn.gioMayChu, chuKy: bn.chuKy };
+    t.nguonGio = 'may-chu';
+    if (G.save) G.save();
+    return { ok: true, cc: t };
+  };
+
   /* Soi cả sổ: dấu kiểm còn khớp không, bản nào chưa đối chứng. */
   G.ccSoi = function () {
     var lech = [], chuaXac = [], dinhChinh = [];
@@ -24063,11 +24084,22 @@ G.VIEWS = G.VIEWS || {};
     var canh = [];
     if (s.lech.length) canh.push('Có ' + s.lech.length + ' bản ghi dấu kiểm KHÔNG KHỚP — ' +
       'nội dung đã bị sửa sau khi ghi.');
-    if (!s.gioMayChu) canh.push((G.HH_CC_LUAT || {}).viGioMayKhach || '');
-    canh.push((G.HH_CC_LUAT || {}).viVanTay || '');
+    /* CẢNH BÁO PHẢI ĐÚNG VỚI TÌNH TRẠNG THẬT, KHÔNG NÓI CHUNG CHUNG.
+       Bản đầu tôi đẩy câu "dấu kiểm không phải chữ ký số" ra mọi lúc.
+       Nhưng khi máy chủ đã ký thì câu ấy đọc thành "hồ sơ này không có
+       chữ ký" — sai theo hướng NGƯỢC LẠI, và một câu tự chê sai chỗ
+       cũng làm hồ sơ yếu đi y như một câu tự khen sai chỗ.
+       Nên nó đếm: bao nhiêu bản đã có biên nhận máy chủ, bao nhiêu chưa. */
+    var chuaKy = so().length - s.gioMayChu;
+    if (chuaKy > 0) {
+      canh.push(chuaKy + '/' + so().length + ' bản ghi CHƯA có chữ ký và dấu giờ của máy ' +
+        'chủ. ' + ((G.HH_CC_LUAT || {}).viGioMayKhach || ''));
+      canh.push((G.HH_CC_LUAT || {}).viVanTay || '');
+    }
     return { tinh: tinh, tien: tinh.dat ? G.hhTien(tinh.phanTram, d.tangDuocKem) : null,
       soChungCu: so().length, daDoiChung: duoc.length,
       chuaDoiChung: s.chuaXacNhan.length, lech: s.lech,
+      daKyMayChu: s.gioMayChu, chuaKyMayChu: so().length - s.gioMayChu,
       nopDuoc: tinh.dat && duoc.length > 0 && s.lech.length === 0,
       canh: canh.filter(Boolean) };
   };
@@ -24196,6 +24228,35 @@ G.VIEWS = G.VIEWS || {};
       y: 'Nhà ở tầng ' + tangNha.slice(1) + ' chỉ nhận được bí kíp tới ' + tran +
         ' sao. Bí kíp ' + sao + ' sao là vượt tầng — không trao.' };
     return { ok: true, tran: tran, sao: sao };
+  };
+
+  /* ═══════════ MỞ MỘT BÍ KÍP ═══════════
+     Ghép ruột từ chỗ kho đã có. Không câu chuyên môn nào sinh ra ở đây —
+     mọi thứ trả về đều là con trỏ tới BD_LON và HT_TANG. */
+  G.bkMo = function (maBiKip) {
+    var b = (G.BK_DANHMUC || []).filter(function (x) { return x.ma === maBiKip; })[0];
+    if (!b) return null;
+    var t = (G.HT_TANG || []).filter(function (x) { return x.ma === b.tang; })[0] || {};
+    var ch = (G.CUHICH || []).filter(function (x) { return x.tier === b.tang; })[0] || {};
+    var viec = [];
+    (G.BD_LON || []).forEach(function (bd) {
+      if (bd.tang !== b.tang) return;
+      (bd.nho || []).forEach(function (n) {
+        viec.push({ ma: n.ma, ten: n.ten, viec: n.viec, thay: n.thay,
+          banhDa: bd.ma, banhDaTen: bd.ten });
+      });
+    });
+    return { ma: b.ma, ten: b.ten, tang: b.tang, sao: G.bkSao(b.tang), trao: b.trao,
+      thuThach: t.thuThach || null, khoNhat: t.khoNhat || null,
+      doiGiKhiXong: t.doiGiKhiXong || null, hua: ch.hua || null,
+      viec: viec, soViec: viec.length, ghepTu: b.ghepTu };
+  };
+  /* Bí kíp nào trao được cho một nhà — cùng cổng với bkChoPhep, không
+     dựng luật thứ hai. */
+  G.bkChoNha = function (tangNha) {
+    return (G.BK_DANHMUC || []).filter(function (b) {
+      return G.bkChoPhep(tangNha, G.bkSao(b.tang)).ok === true;
+    });
   };
 
   /* ═══════════ MẪU THÔNG BÁO ═══════════

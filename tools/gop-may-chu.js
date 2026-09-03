@@ -22,6 +22,7 @@ const PHAN = [
   ['GITA_DangKy.gs',   'ĐĂNG KÝ — OTP, kích hoạt, mã số khách hàng, nâng tầng'],
   ['GITA_MatKhau.gs',  'MẬT KHẨU — đổi, quên, đặt lại bằng mã'],
   ['GITA_TaiLieu.gs',  'TÀI LIỆU — nhận tài liệu và minh chứng, kiểm duyệt'],
+  ['GITA_ChungCu.gs',  'CHỨNG CỨ — ký và đóng dấu giờ máy chủ cho hồ sơ hoa hồng kèm'],
   ['GITA_DongBo.gs',   'ĐỒNG BỘ — hồ sơ và cài đặt giữa bản web và bản cài trên máy'],
   ['GITA_XuatSheet.gs','XUẤT SHEET — đẩy bảng tính về thư mục Drive của Học viện'],
   ['GITA_BanWeb.gs',   'BẢN WEB — doGet: phục vụ trang, trả gói kho, báo tình trạng']
