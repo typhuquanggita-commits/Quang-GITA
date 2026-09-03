@@ -402,7 +402,37 @@ G.VIEWS = G.VIEWS || {};
         (c.chiSo ? h(c.chiSo.ma + ' ' + c.chiSo.ten + ' — ' + c.chiSo.nguong) : '') +
         (c.cauKhong ? ' · “' + h(c.cauKhong) + '”' : '') +
         ' (đọc từ ' + h(c.docTu) + ')</p>';
-    return o + '<button class="bc-nutbien" data-bckem="1">Sửa</button></div>';
+    return o + '<button class="bc-nutbien" data-bckem="1">Sửa</button></div>' + veHoaHong(d);
+  }
+
+  /* Hoa hồng kèm — bậc đọc từ HH_BAC, trần từ HOAHONG.tran, và KHÔNG in
+     ra một con số tiền nào khi chưa có giá. Chỗ này ra tiền thật, nên
+     nó nói cả chỗ mình chưa chứng minh được. */
+  function veHoaHong(d) {
+    if (typeof G.hhTinh !== 'function' || !G.HH_BAC) return '';
+    var K = G.HH_KEM || {}, L = G.HH_CC_LUAT || {};
+    var hs = G.hhHoSo({ vuotTang: false, tangDuocKem: d && d.tang });
+    var o = '<div class="bc-hh"><b>Hoa hồng kèm — hai bậc, trần ' +
+      ((G.HOAHONG || {}).tran) + '%</b>' +
+      '<p>' + h(K.cot || '') + '</p>';
+    o += '<div class="bc-hh-bac">' + (G.HH_BAC || []).map(function (b) {
+      return '<div class="bc-hh-hang"><b>' + b.phanTram + '%</b><span>' + h(b.khi) + '</span></div>';
+    }).join('') + '</div>';
+    o += '<p class="dim">' + h((G.HH_BAC_LUAT || {}).khongVuotTangThiKhongCo || '') + '</p>';
+    /* Số tiền: nói thẳng vì sao chưa ra được. */
+    var ti = G.hhTien(10, d && d.tang);
+    if (ti.chuaCoGia) o += '<p class="canh"><b>Chưa ra được số tiền.</b> ' + h(ti.thieu) + '</p>';
+    /* Bảng chứng cứ: nói TRƯỚC sẽ hỏi những gì, để nhà mình ghi từ đầu
+       chứ không đi dựng lại hồ sơ lúc đòi tiền. */
+    o += '<p class="bc-hh-cc"><b>Sổ chứng cứ — ' + hs.soChungCu + ' bản, ' +
+      hs.daDoiChung + ' đã đối chứng</b><br>' +
+      (G.HH_CHUNGCU || []).filter(function (c) { return c.buoc; })
+        .map(function (c) { return h(c.ten); }).join(' · ') + '</p>';
+    o += '<p class="dim">' + h(L.viHaiChuKy || '') + '</p>';
+    (hs.canh || []).forEach(function (c) {
+      o += '<p class="canh">' + h(c) + '</p>';
+    });
+    return o + '</div>';
   }
 
   function veNep(tang, nd) {

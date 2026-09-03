@@ -8643,6 +8643,104 @@ const { chromium } = require(PW);
   }
 
 
+  console.log('\n70 · HOA HỒNG KÈM — RA TIỀN THẬT, NÊN KHẮT KHE HƠN MỌI MỤC KHÁC');
+  {
+    await p.evaluate(x => window.G.doLogin(x), 'phuhuynh@gita365.vn');
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length &&
+      window.G.HT_TANG && window.G.HH_BAC && window.G.BD_LON, { timeout: 60000 });
+    const ra = await p.evaluate(() => {
+      const G = window.G, r = {};
+      const giuCC = JSON.stringify(G.S.ccSo || []);
+
+      /* ── AI ĐĂNG KÝ NHẬN KÈM ĐƯỢC: TỪ TẦNG BỐN ── */
+      r.tuTangBon = G.hhDangKyDuoc('T4').ok === true && G.hhDangKyDuoc('T5').ok === true &&
+        ['T1', 'T2', 'T3'].every(t => G.hhDangKyDuoc(t).ok === false);
+      const luuTu = G.HH_KEM.tuTang; G.HH_KEM.tuTang = 'T5';
+      r.tuTangDocTuKho = G.hhDangKyDuoc('T4').ok === false;
+      G.HH_KEM.tuTang = luuTu;
+
+      /* ── HAI BẬC, VÀ BẬC TRÊN ĐÒI CẢ HAI PHÍA ── */
+      const t = d => G.hhTinh(d).phanTram;
+      r.baiBac = t({ vuotTang: false, kpiKem: 95, kpiDuocKem: 95 }) === 0 &&
+        t({ vuotTang: true, kpiKem: 79, kpiDuocKem: 95 }) === 0 &&
+        t({ vuotTang: true, kpiKem: 80, kpiDuocKem: 60 }) === 5 &&
+        t({ vuotTang: true, kpiKem: 89, kpiDuocKem: 99 }) === 5 &&
+        t({ vuotTang: true, kpiKem: 95, kpiDuocKem: 89 }) === 5 &&
+        t({ vuotTang: true, kpiKem: 89, kpiDuocKem: 95 }) === 5 &&
+        t({ vuotTang: true, kpiKem: 90, kpiDuocKem: 90 }) === 10;
+
+      /* ── TRẦN ĐỌC TỪ HOAHONG, VÀ CHẶN THẬT ──
+         Trần mà không có hàm chặn thì sáu tháng sau nó chỉ là một câu chữ. */
+      const luuTran = G.HOAHONG.tran; G.HOAHONG.tran = 7;
+      r.tranChanThat = t({ vuotTang: true, kpiKem: 99, kpiDuocKem: 99 }) === 7;
+      G.HOAHONG.tran = luuTran;
+      const bac10 = G.HH_BAC.filter(x => x.ma === 'B10')[0], luuK = bac10.doi.kpiNhaKem;
+      bac10.doi.kpiNhaKem = 95;
+      r.nguongDocTuKho = t({ vuotTang: true, kpiKem: 92, kpiDuocKem: 92 }) === 5;
+      bac10.doi.kpiNhaKem = luuK;
+
+      /* ── CHƯA CÓ GIÁ THÌ KHÔNG BỊA MỘT CON SỐ TIỀN ── */
+      const ti = G.hhTien(10, 'T3');
+      r.chuaCoGiaThiNoi = ti.chuaCoGia === true && ti.tien === undefined;
+
+      /* ── SỔ CHỨNG CỨ: ĐỦ TRƯỜNG MỚI NỘP ĐƯỢC ── */
+      G.S.ccSo = [];
+      const viec = G.BD_LON[0].nho[0].ma;
+      const mau = { nhiemVu: viec, ngayLam: '2026-09-01', loai: 'BIENBAN',
+        noiDung: 'Buổi kèm 45 phút, có mặt cả hai nhà.', nguoiGhi: 'u-kem' };
+      const rong = Object.assign({}, mau, { noiDung: '' });
+      r.congTruong = G.ccGhi({}).ok === false && G.ccGhi(rong).ok === false &&
+        G.ccGhi(rong).thieu.length === 1 &&
+        G.ccGhi(Object.assign({}, mau, { nhiemVu: 'KHONG-CO' })).ok === false &&
+        G.ccGhi(Object.assign({}, mau, { loai: 'XXX' })).ok === false;
+      const g1 = G.ccGhi(mau);
+      r.ghiDuoc = g1.ok === true && g1.cc.nguonGio === 'may-khach' && !!g1.cc.vanTay;
+
+      /* ── HAI CHỮ KÝ: NGƯỜI GHI KHÔNG TỰ XÁC NHẬN CHO MÌNH ── */
+      r.haiChuKy = G.ccXacNhan(g1.cc.ma, 'u-kem').ok === false &&
+        G.ccXacNhan(g1.cc.ma, 'u-duockem').ok === true &&
+        G.ccXacNhan(g1.cc.ma, 'u-duockem').ok === false &&
+        G.ccSuaDuoc(g1.cc.ma) === false;
+
+      /* ── DẤU KIỂM BẮT ĐƯỢC SỬA SAU KHI GHI ── */
+      r.vanTayBatSua = G.ccSoi().lech.length === 0;
+      G.S.ccSo[0].noiDung = 'Buổi kèm 90 phút.';
+      r.vanTayBatSua = r.vanTayBatSua && G.ccSoi().lech.length === 1 &&
+        G.ccSoi().lech[0] === g1.cc.ma;
+      G.S.ccSo[0].noiDung = mau.noiDung;
+      r.vanTayBatSua = r.vanTayBatSua && G.ccSoi().lech.length === 0;
+
+      /* ── KHÔNG SỬA, CHỈ ĐÍNH CHÍNH — CẢ HAI BẢN CÙNG Ở LẠI ── */
+      const dc = G.ccDinhChinh(g1.cc.ma, Object.assign({}, mau,
+        { noiDung: 'Đính chính: buổi kèm 40 phút, không phải 45.' }));
+      r.dinhChinh = dc.ok === true && dc.cc.dinhChinhCho === g1.cc.ma &&
+        G.ccDanhSach().length === 2 &&
+        G.ccDanhSach().filter(x => x.ma === g1.cc.ma).length === 1;
+
+      /* ── HỒ SƠ: CHƯA ĐỐI CHỨNG THÌ KHÔNG TÍNH, VÀ NÓI CẢ CHỖ YẾU ── */
+      const hs = G.hhHoSo({ vuotTang: true, kpiKem: 90, kpiDuocKem: 90, tangDuocKem: 'T3' });
+      r.hoSo = hs.soChungCu === 2 && hs.daDoiChung === 1 && hs.chuaDoiChung === 1 &&
+        hs.tien.chuaCoGia === true && hs.canh.length >= 2 &&
+        hs.canh.some(x => /Đồng hồ máy/i.test(x)) &&
+        hs.canh.some(x => /không chặn được người cố tình/i.test(x));
+      G.S.ccSo[0].noiDung = 'sửa lén lần hai';
+      r.lechThiKhongNop = G.hhHoSo({ vuotTang: true, kpiKem: 90, kpiDuocKem: 90,
+        tangDuocKem: 'T3' }).nopDuoc === false;
+
+      G.S.ccSo = JSON.parse(giuCC);
+      return r;
+    });
+
+    const doHH = ['tuTangBon', 'tuTangDocTuKho', 'baiBac', 'tranChanThat', 'nguongDocTuKho',
+      'chuaCoGiaThiNoi', 'congTruong', 'ghiDuoc', 'haiChuKy', 'vanTayBatSua',
+      'dinhChinh', 'hoSo', 'lechThiKhongNop'].filter(k => !ra[k]);
+    bao(!doHH.length,
+      'HOA HỒNG KÈM — TỆP DUY NHẤT TRONG KHO RA TIỀN THẬT, NÊN NÓ KHẮT KHE HƠN MỌI MỤC KHÁC. Mọi thứ khác sai thì sửa; chỗ này sai thì kết thúc ở toà chứ không kết thúc ở một bản vá. Nhà từ TẦNG BỐN trở lên đăng ký nhận kèm — tầng bốn là tầng đầu tiên nhà mình tự cầm lái trọn một năm, và kèm một nhà khác trước khi tự đi được một năm là dạy thứ mình chưa làm xong. Hai bậc: năm phần trăm khi nhà được kèm VƯỢT TẦNG và nhà kèm đạt tám mươi; mười phần trăm khi CẢ HAI cùng đạt chín mươi — bậc trên đòi cả hai vì mười phần trăm là TRẦN của cả hệ, và trả trần cho một phía làm tốt còn phía kia vừa đủ là dạy rằng kèm giỏi thì bù được cho nếp nhà mình. Chưa vượt tầng thì KHÔNG có bậc nào, kể cả khi cả hai KPI rất cao: hoa hồng trả cho một KẾT QUẢ, không trả cho công sức. Không con số nào gõ trong mã — trần đọc từ HOAHONG.tran kèm câu "không có ngoại lệ, không có mức riêng cho ai", ngưỡng đọc từ chính cột `doi` của từng bậc, và trần CHẶN THẬT chứ không chỉ là một câu chữ. SỐ TIỀN thì máy KHÔNG in ra: HP_TANG.gia đang null cả năm tầng, nên nó trả về tỉ lệ và nói rõ chưa nhân được với cái gì — bịa một con số tiền là thứ khác hẳn bịa một con số điểm. BẢNG CHỨNG CỨ dựng để đứng được khi đối chất: mỗi bản gắn với một mã việc có thật trong kho, đủ trường mới nộp được, và chỗ chống làm giả mạnh nhất là HAI CHỮ KÝ — người ghi không tự xác nhận cho mình được, nhà ĐƯỢC KÈM phải xác nhận, và chưa xác nhận thì bản ấy đứng ngoài hồ sơ. Dấu kiểm nội dung bắt được sửa sau khi ghi. Bản đã xác nhận thì KHOÁ: sai thì ghi bản đính chính trỏ về bản cũ và cả hai cùng ở lại, vì xoá bản sai là xoá luôn bằng chứng rằng đã từng có bản sai — đúng thứ bên đối tụng sẽ hỏi. VÀ HAI CHỖ MÁY KHÔNG LÀM ĐƯỢC THÌ NÓ IN THẲNG RA MÀN: dấu kiểm KHÔNG phải chữ ký số nên không chặn được người cố tình dựng lại cả bản ghi lẫn dấu, và giờ máy khách KHÔNG phải bằng chứng vì đồng hồ máy đổi được trong ba giây. Giấu hai chỗ ấy mới làm hồ sơ yếu đi: bên đối tụng tìm ra cái mình đã giấu thì mọi thứ còn lại cũng mất giá theo',
+      doHH.length ? 'phép đo hỏng: ' + doHH.join(' · ')
+        : 'T4/T5 đăng ký được · 80→5% · một phía 90 vẫn 5% · cả hai 90→10% · trần 7 thì chặn ở 7 · chưa có giá thì không ra tiền · tự xác nhận bị chặn · sửa lén thì dấu kiểm lệch và hồ sơ không nộp được');
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();
