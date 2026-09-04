@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.65',
+  version: '9.66',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -351,7 +351,15 @@ G.TAM_NHIN = [
      Đây là lần thứ tư làm phép này, và phép thử vẫn không đổi: phần
      khoá có mở thêm không. Không thì sửa số công bố. Có thì đỏ, và đỏ
      ấy là đỏ thật. */
-  {vai:['R12'], pt:64,
+  /* 64 → 62 ở bản 9.66, cùng phép thử ấy lần thứ sáu. Ba màn pháp lý
+     mới đều khoá pro_coach, dừng ở R08 — R12 không được thêm gì mà
+     mẫu số tăng ba. Phần KHOÁ của R12 không mở thêm một màn nào.
+
+     Chỗ đáng nói: ba màn ấy nêu tên hàm và chỗ hệ còn hở TRƯỚC PHÁP
+     LUẬT. Người phân tích dữ liệu đọc được bản đồ ấy thì đọc luôn
+     danh sách chỗ tấn công — nên khoá ở pro_coach là cố ý, không
+     phải sót. */
+  {vai:['R12'], pt:62,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -622,6 +630,15 @@ G.NAV = [
        vào hệ đang chạy chứ không chép lại tài liệu. Và bản rà soát 66
        điểm gãy: nó nói chỗ nào của chính app này còn hở. Cả hai đều nêu
        tên hàm và tên kho, nên khoá ở quyền nghề. */
+    /* Ba màn pháp lý — khoá pro_coach. Chúng nêu chỗ hệ còn hở trước
+       pháp luật và cả khung hợp đồng nội bộ của Học viện; đó là bản
+       đồ chỗ yếu, nên nó ở lại trong tay người điều phối.
+
+       Tên màn là 'ra-soat-phap-ly', KHÔNG phải 'phap-ly' — màn ấy đã
+       có, và nó là bảy quyền của gia đình, mở cho mọi vai. */
+    {v:'ra-soat-phap-ly', t:'Rà soát pháp lý — 64 phát hiện', h:'8 nhóm · 20 mục nghiêm trọng đối chiếu với hàm đang chạy · 2 luật mới · 4 chỗ tài liệu và app nói khác nhau', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'bang-chung',  t:'Chuẩn bằng chứng điện tử', h:'13 thao tác × 6 tính chất · máy đọc nhật ký thật rồi đếm · 3 lỗi làm bằng chứng mất giá trị · 5 việc gần nhất', ic:'lock', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'ho-so-hop-dong', t:'Bộ hồ sơ hợp đồng và vận hành', h:'16 hợp đồng · 25 điều khoản nền · 6 điều khoản đặc thù đối chiếu ngược · công thức lương máy tự đọc · 3 cấp chữ ký', ic:'book', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'hanh-lang',   t:'Hành lang thành công — máy tự soi mình', h:'12 luật · 18 virus × vắc-xin có người kiểm · 9 khoá · Sáu Nhịp · 7 chỉ số · chỗ lệch với tài liệu', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ra-soat-loi', t:'Rà soát lỗi hệ thống — 66 điểm gãy', h:'8 nhóm · 13 lỗi chặn phát hành, mỗi lỗi đối chiếu với hàm đang chạy · 4 gốc rễ · 5 đợt', ic:'alert', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'chuan-ngon-ngu', t:'Chuẩn ngôn ngữ sáu vai', h:'6 vai · 9 câu cấm theo cấu trúc · máy soát chạy trên chính kho · câu thay cho từng chỗ', ic:'quote', star:1, perm:'pro_coach', capMo:'nghe'},

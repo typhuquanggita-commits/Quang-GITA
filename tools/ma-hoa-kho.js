@@ -511,6 +511,20 @@ const NGHE = [
   'HL_QUYTRINH','HL_KHOA9','HL_KHOA9_LUAT','HL_SAUNHIP','HL_SAUNHIP_LUAT',
   'HL_CHISO','HL_LECH',
   'RS_LOI','RS_NHOM','RS_CHAN','RS_GOC','RS_HOI','RS_DOT','RS_LUAT',
+  /* Rà soát pháp lý, chuẩn bằng chứng và bộ hồ sơ hợp đồng. Ba kho
+     này nêu tên hàm, chỗ hệ còn hở trước pháp luật, và cả khung hợp
+     đồng nội bộ — đọc được là đọc luôn chỗ yếu và điều khoản của Học
+     viện. Khoá ở gói NGHỀ.
+
+     Tiền tố RSP_ chứ không phải PL_: PL_ đã thuộc về kho pháp lý nội
+     bộ (bảy quyền của gia đình). Hai kho khác nhau, hai tiền tố. */
+  'RSP_LOI','RSP_LUATMOI','RSP_LUATMOI_LUAT','RSP_NHOM','RSP_CHAN','RSP_CHAN_LUAT',
+  'RSP_GOC','RSP_VB','RSP_DKMOI','RSP_DOT','RSP_LUATSU','RSP_LECH','RSP_LECH_LUAT','RSP_LUAT',
+  'BCD_LOI','BCD_TINHCHAT','BCD_TINHCHAT_LUAT','BCD_THAOTAC','BCD_THAOTAC_LUAT',
+  'BCD_MATGIA','BCD_MATGIA_LUAT','BCD_VIECGAN','BCD_LUAT',
+  'HSH_LOI','HSH_DK6','HSH_DK6_LUAT','HSH_DK','HSH_HD','HSH_BAC','HSH_LUONG_LUAT',
+  'HSH_PHONG','HSH_VO','HSH_HOP','HSH_HOP_LUAT','HSH_KY','HSH_KY_LUAT',
+  'HSH_LOTRINH','HSH_LOTRINH_LUAT','HSH_BAOMAT','HSH_LUAT',
 ];
 
 const goi = {};

@@ -4,11 +4,11 @@
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 112 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 113 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
-   27 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
-   giấy phép có gói nghề. Máy của gia đình nhẹ đi 585 KB.
+   28 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
+   giấy phép có gói nghề. Máy của gia đình nhẹ đi 635 KB.
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -20,7 +20,7 @@
 /* ═════════ sinh lúc gộp: màn nằm ở gita-nghe.js ═════════ */
 (function(){var G=window.G||{};window.G=G;
 G.MA_NGHE_TEP="gita-nghe.js";
-G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong","dien-thu","chuan-ngon-ngu","pheu-chot","diem-cham-1000","hanh-lang","ra-soat-loi"];
+G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong","dien-thu","chuan-ngon-ngu","pheu-chot","diem-cham-1000","hanh-lang","ra-soat-loi","ra-soat-phap-ly","bang-chung","ho-so-hop-dong"];
 })();
 
 /* ═════════ src/data.core.js ═════════ */
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.65',
+  version: '9.66',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -378,7 +378,15 @@ G.TAM_NHIN = [
      Đây là lần thứ tư làm phép này, và phép thử vẫn không đổi: phần
      khoá có mở thêm không. Không thì sửa số công bố. Có thì đỏ, và đỏ
      ấy là đỏ thật. */
-  {vai:['R12'], pt:64,
+  /* 64 → 62 ở bản 9.66, cùng phép thử ấy lần thứ sáu. Ba màn pháp lý
+     mới đều khoá pro_coach, dừng ở R08 — R12 không được thêm gì mà
+     mẫu số tăng ba. Phần KHOÁ của R12 không mở thêm một màn nào.
+
+     Chỗ đáng nói: ba màn ấy nêu tên hàm và chỗ hệ còn hở TRƯỚC PHÁP
+     LUẬT. Người phân tích dữ liệu đọc được bản đồ ấy thì đọc luôn
+     danh sách chỗ tấn công — nên khoá ở pro_coach là cố ý, không
+     phải sót. */
+  {vai:['R12'], pt:62,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -649,6 +657,15 @@ G.NAV = [
        vào hệ đang chạy chứ không chép lại tài liệu. Và bản rà soát 66
        điểm gãy: nó nói chỗ nào của chính app này còn hở. Cả hai đều nêu
        tên hàm và tên kho, nên khoá ở quyền nghề. */
+    /* Ba màn pháp lý — khoá pro_coach. Chúng nêu chỗ hệ còn hở trước
+       pháp luật và cả khung hợp đồng nội bộ của Học viện; đó là bản
+       đồ chỗ yếu, nên nó ở lại trong tay người điều phối.
+
+       Tên màn là 'ra-soat-phap-ly', KHÔNG phải 'phap-ly' — màn ấy đã
+       có, và nó là bảy quyền của gia đình, mở cho mọi vai. */
+    {v:'ra-soat-phap-ly', t:'Rà soát pháp lý — 64 phát hiện', h:'8 nhóm · 20 mục nghiêm trọng đối chiếu với hàm đang chạy · 2 luật mới · 4 chỗ tài liệu và app nói khác nhau', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'bang-chung',  t:'Chuẩn bằng chứng điện tử', h:'13 thao tác × 6 tính chất · máy đọc nhật ký thật rồi đếm · 3 lỗi làm bằng chứng mất giá trị · 5 việc gần nhất', ic:'lock', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'ho-so-hop-dong', t:'Bộ hồ sơ hợp đồng và vận hành', h:'16 hợp đồng · 25 điều khoản nền · 6 điều khoản đặc thù đối chiếu ngược · công thức lương máy tự đọc · 3 cấp chữ ký', ic:'book', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'hanh-lang',   t:'Hành lang thành công — máy tự soi mình', h:'12 luật · 18 virus × vắc-xin có người kiểm · 9 khoá · Sáu Nhịp · 7 chỉ số · chỗ lệch với tài liệu', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ra-soat-loi', t:'Rà soát lỗi hệ thống — 66 điểm gãy', h:'8 nhóm · 13 lỗi chặn phát hành, mỗi lỗi đối chiếu với hàm đang chạy · 4 gốc rễ · 5 đợt', ic:'alert', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'chuan-ngon-ngu', t:'Chuẩn ngôn ngữ sáu vai', h:'6 vai · 9 câu cấm theo cấu trúc · máy soát chạy trên chính kho · câu thay cho từng chỗ', ic:'quote', star:1, perm:'pro_coach', capMo:'nghe'},
@@ -1153,6 +1170,9 @@ G.ITEM_EN = {
   'ban-coach':['The coach workbench','5 exhaustive lanes · an 8-slot prepared pack · timed reminders · 4 morning sweeps'],
   'ban-tu-van':['The consultant workbench','5 exhaustive lanes · 7 screening questions, 4 of them blocking · a 9-cell intake record · a 6-slot prepared pack'],
   'diem-cham-1000':['1000 wow touchpoints, 1000 retention locks','50 level cells x 10 beats x 2 people · coach required / optional / not needed · the 12 things thirty years teaches you not to do'],
+  'ra-soat-phap-ly':['Legal review — 64 findings','8 groups · 20 critical findings each checked against the running function · 2 new statutes · 4 places the document and the app disagree'],
+  'bang-chung':['Electronic evidence standard','13 operations x 6 properties · the machine reads the real log and counts · 3 ways evidence loses its value · the 5 nearest fixes'],
+  'ho-so-hop-dong':['Contract and operations file set','16 contracts · 25 base clauses · 6 special clauses checked in reverse · a pay formula the machine reads itself · 3 signature tiers'],
   'hanh-lang':['The success corridor — the app auditing itself','12 laws · 18 failure strains with a vaccine each, verified against live code · 9 locks · the Six Beats · 7 health indicators · where the doc and the app disagree'],
   'ra-soat-loi':['System fault review — 66 break points','8 groups · 13 release-blocking faults, each checked against the running function · 4 root causes · 5 waves'],
   'chuan-ngon-ngu':['Language standard for six roles','6 roles · 9 banned sentence patterns, not banned words · a scanner that runs over the real vault · a replacement line for each hit'],
@@ -3608,6 +3628,20 @@ G.THUOC_CAP_PHEP = [
   'HL_QUYTRINH','HL_KHOA9','HL_KHOA9_LUAT','HL_SAUNHIP','HL_SAUNHIP_LUAT',
   'HL_CHISO','HL_LECH',
   'RS_LOI','RS_NHOM','RS_CHAN','RS_GOC','RS_HOI','RS_DOT','RS_LUAT',
+  /* Rà soát pháp lý, chuẩn bằng chứng và bộ hồ sơ hợp đồng. Ba kho
+     này nêu tên hàm, chỗ hệ còn hở trước pháp luật, và cả khung hợp
+     đồng nội bộ — đọc được là đọc luôn chỗ yếu và điều khoản của Học
+     viện. Khoá ở gói NGHỀ.
+
+     Tiền tố RSP_ chứ không phải PL_: PL_ đã thuộc về kho pháp lý nội
+     bộ (bảy quyền của gia đình). Hai kho khác nhau, hai tiền tố. */
+  'RSP_LOI','RSP_LUATMOI','RSP_LUATMOI_LUAT','RSP_NHOM','RSP_CHAN','RSP_CHAN_LUAT',
+  'RSP_GOC','RSP_VB','RSP_DKMOI','RSP_DOT','RSP_LUATSU','RSP_LECH','RSP_LECH_LUAT','RSP_LUAT',
+  'BCD_LOI','BCD_TINHCHAT','BCD_TINHCHAT_LUAT','BCD_THAOTAC','BCD_THAOTAC_LUAT',
+  'BCD_MATGIA','BCD_MATGIA_LUAT','BCD_VIECGAN','BCD_LUAT',
+  'HSH_LOI','HSH_DK6','HSH_DK6_LUAT','HSH_DK','HSH_HD','HSH_BAC','HSH_LUONG_LUAT',
+  'HSH_PHONG','HSH_VO','HSH_HOP','HSH_HOP_LUAT','HSH_KY','HSH_KY_LUAT',
+  'HSH_LOTRINH','HSH_LOTRINH_LUAT','HSH_BAOMAT','HSH_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
