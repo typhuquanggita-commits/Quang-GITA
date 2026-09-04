@@ -490,6 +490,10 @@ const NGHE = [
      chốt, còn bảng hoạt động cho thấy toàn bộ quy trình nội bộ. */
   'TVB_LOI','TVB_NGAN','TVB_NGAN_LUAT','TVB_GOI','TVB_GOI_LUAT','TVB_LUAT',
   'DKH_LOI','DKH_MUC','DKH_CAM_MAY','DKH_VIEC','DKH_LUAT',
+  /* Diễn thử hai buổi khó nhất — ở gói NGHỀ vì mỗi lượt phơi ra
+     đúng câu người tư vấn ĐÁNG LẼ đã nói, tức là bộ đề của chính
+     kỳ sát hạch đội ngũ. */
+  'DTH_LOI','DTH_BAI','DTH_LUAT',
 ];
 
 const goi = {};

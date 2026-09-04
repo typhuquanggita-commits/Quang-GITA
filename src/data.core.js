@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.61',
+  version: '9.62',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -587,6 +587,10 @@ G.NAV = [
     {v:'ban-tu-van',  t:'Bàn làm việc của Tư vấn', h:'5 ngăn vét cạn · 7 câu sàng lọc có 4 câu chặn · 9 ô hồ sơ · gói 6 ô đóng sẵn', ic:'compass', star:1, perm:'pro_consult', capMo:'nghe'},
     /* Bảng đăng ký hoạt động — khoá ở pro_coach vì nó phơi toàn bộ quy
        trình nội bộ: ai làm gì, hạn bao lâu, không ai làm thì rơi đi đâu. */
+    /* Diễn thử — khoá pro_coach. Cột phải của mỗi lượt là câu người
+       tư vấn ĐÁNG LẼ đã nói, nên đây là tài liệu sát hạch, không phải
+       tài liệu giới thiệu. */
+    {v:'dien-thu',    t:'Diễn thử — hai buổi khó nhất', h:'2 bài × 20 lượt · mỗi lượt truy về kho và bộ lọc · câu dễ nói mà luật cấm', ic:'chat', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'hoat-dong',   t:'Đăng ký hoạt động — việc nào không ai nhận', h:'21 hoạt động · 3 mức tự động · 4 việc máy không được nhận · đường rơi của từng việc', ic:'grid', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ban-coach',   t:'Bàn làm việc của Coach', h:'5 ngăn vét cạn · gói 8 ô đóng sẵn · trợ lý nhắc việc có hạn giờ · 4 lượt rà soát', ic:'pulse', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ban-ve',      t:'Bộ bản vẽ — 50 ô, mỗi ô một tag', h:'4 nguyên tắc · 50 cấp độ · 4 cổng · 10 nhịp · 20 tín hiệu đỏ · bản đồ nâng cấp', ic:'map', star:1, perm:'pro_coach', capMo:'nghe'},

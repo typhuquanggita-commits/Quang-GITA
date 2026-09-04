@@ -148,6 +148,10 @@ G.THUOC_CAP_PHEP = [
      chốt, còn bảng hoạt động cho thấy toàn bộ quy trình nội bộ. */
   'TVB_LOI','TVB_NGAN','TVB_NGAN_LUAT','TVB_GOI','TVB_GOI_LUAT','TVB_LUAT',
   'DKH_LOI','DKH_MUC','DKH_CAM_MAY','DKH_VIEC','DKH_LUAT',
+  /* Diễn thử hai buổi khó nhất — ở gói NGHỀ vì mỗi lượt phơi ra
+     đúng câu người tư vấn ĐÁNG LẼ đã nói, tức là bộ đề của chính
+     kỳ sát hạch đội ngũ. */
+  'DTH_LOI','DTH_BAI','DTH_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
