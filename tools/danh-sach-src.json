@@ -105,6 +105,7 @@
   "src/ban-tu-van.js",
   "src/hoat-dong.js",
   "src/dien-thu.js",
+  "src/ngon-ngu.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",

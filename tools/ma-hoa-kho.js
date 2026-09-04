@@ -494,6 +494,11 @@ const NGHE = [
      đúng câu người tư vấn ĐÁNG LẼ đã nói, tức là bộ đề của chính
      kỳ sát hạch đội ngũ. */
   'DTH_LOI','DTH_BAI','DTH_LUAT',
+  /* Chuẩn ngôn ngữ sáu vai và phễu chốt — ở gói NGHỀ vì bảng cấm
+     phơi ra đúng câu người bán DỄ nói nhất, và phễu phơi ra ai bị
+     loại ở tầng nào. */
+  'NN_LOI','NN_VAI','NN_VAI_LUAT','NN_CAM','NN_CAM_LUAT',
+  'PH_LOI','PH_TANG','PH_CHOT',
 ];
 
 const goi = {};

@@ -152,6 +152,11 @@ G.THUOC_CAP_PHEP = [
      đúng câu người tư vấn ĐÁNG LẼ đã nói, tức là bộ đề của chính
      kỳ sát hạch đội ngũ. */
   'DTH_LOI','DTH_BAI','DTH_LUAT',
+  /* Chuẩn ngôn ngữ sáu vai và phễu chốt — ở gói NGHỀ vì bảng cấm
+     phơi ra đúng câu người bán DỄ nói nhất, và phễu phơi ra ai bị
+     loại ở tầng nào. */
+  'NN_LOI','NN_VAI','NN_VAI_LUAT','NN_CAM','NN_CAM_LUAT',
+  'PH_LOI','PH_TANG','PH_CHOT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',

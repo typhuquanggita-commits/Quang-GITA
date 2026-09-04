@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.62',
+  version: '9.63',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -332,7 +332,18 @@ G.TAM_NHIN = [
      Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
      một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
      xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
-  {vai:['R12'], pt:66,
+  /* 66 → 64 ở bản 9.63, và lại là đúng phép thử cũ: sửa SỐ CÔNG BỐ,
+     không nới dung sai.
+
+     Hai màn mới — chuẩn ngôn ngữ và phễu chốt — khoá ở pro_coach và
+     pro_consult, tức R12 KHÔNG được thêm gì. Mẫu số tăng hai, tử số
+     đứng yên, nên tỉ lệ tụt. Phần KHOÁ của R12 không mở thêm một màn
+     nào; nó chỉ thêm hai màn mà R12 vốn không được vào.
+
+     Đây là lần thứ tư làm phép này, và phép thử vẫn không đổi: phần
+     khoá có mở thêm không. Không thì sửa số công bố. Có thì đỏ, và đỏ
+     ấy là đỏ thật. */
+  {vai:['R12'], pt:64,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -590,6 +601,11 @@ G.NAV = [
     /* Diễn thử — khoá pro_coach. Cột phải của mỗi lượt là câu người
        tư vấn ĐÁNG LẼ đã nói, nên đây là tài liệu sát hạch, không phải
        tài liệu giới thiệu. */
+    /* Chuẩn ngôn ngữ — khoá pro_coach vì bảng cấm phơi ra đúng câu
+       người bán dễ nói nhất, và đó là bộ đề sát hạch chứ không phải
+       tài liệu giới thiệu. */
+    {v:'chuan-ngon-ngu', t:'Chuẩn ngôn ngữ sáu vai', h:'6 vai · 9 câu cấm theo cấu trúc · máy soát chạy trên chính kho · câu thay cho từng chỗ', ic:'quote', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'pheu-chot',   t:'Phễu chốt — 90% đặt ở đúng chỗ', h:'5 tầng · ai bị loại ở đâu · chốt thô và chốt đủ điều kiện · ba số đọc kèm', ic:'filter', star:1, perm:'pro_consult', capMo:'nghe'},
     {v:'dien-thu',    t:'Diễn thử — hai buổi khó nhất', h:'2 bài × 20 lượt · mỗi lượt truy về kho và bộ lọc · câu dễ nói mà luật cấm', ic:'chat', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'hoat-dong',   t:'Đăng ký hoạt động — việc nào không ai nhận', h:'21 hoạt động · 3 mức tự động · 4 việc máy không được nhận · đường rơi của từng việc', ic:'grid', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ban-coach',   t:'Bàn làm việc của Coach', h:'5 ngăn vét cạn · gói 8 ô đóng sẵn · trợ lý nhắc việc có hạn giờ · 4 lượt rà soát', ic:'pulse', star:1, perm:'pro_coach', capMo:'nghe'},

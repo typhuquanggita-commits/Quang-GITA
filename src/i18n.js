@@ -200,6 +200,8 @@ G.ITEM_EN = {
   'ban-co':['The journey board','One board per tier · one square a day · pick 1 of 10 · points weighted by what matters now'],
   'ban-coach':['The coach workbench','5 exhaustive lanes · an 8-slot prepared pack · timed reminders · 4 morning sweeps'],
   'ban-tu-van':['The consultant workbench','5 exhaustive lanes · 7 screening questions, 4 of them blocking · a 9-cell intake record · a 6-slot prepared pack'],
+  'chuan-ngon-ngu':['Language standard for six roles','6 roles · 9 banned sentence patterns, not banned words · a scanner that runs over the real vault · a replacement line for each hit'],
+  'pheu-chot':['Conversion funnel - where the 90% actually belongs','5 tiers · who gets screened out where · raw close rate vs qualified close rate · the three numbers to read alongside'],
   'dien-thu':['Dry run — the two hardest sessions','2 cases x 20 turns · every turn traced to a store and a language filter · the easy line the rules forbid'],
   'hoat-dong':['Activity register — which work has no owner','21 activities · 3 automation levels · 4 things the machine may never take · a fall-through path for each'],
   'ban-ve':['The blueprint set — 50 cells, one tag each','4 reading principles · 50 levels · 4 gates · 10 beats · 20 red signals · an upgrade map'],

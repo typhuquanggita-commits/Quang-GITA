@@ -4,11 +4,11 @@
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 109 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 110 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
-   24 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
-   giấy phép có gói nghề. Máy của gia đình nhẹ đi 519 KB.
+   25 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
+   giấy phép có gói nghề. Máy của gia đình nhẹ đi 540 KB.
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -20,7 +20,7 @@
 /* ═════════ sinh lúc gộp: màn nằm ở gita-nghe.js ═════════ */
 (function(){var G=window.G||{};window.G=G;
 G.MA_NGHE_TEP="gita-nghe.js";
-G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong","dien-thu"];
+G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong","dien-thu","chuan-ngon-ngu","pheu-chot"];
 })();
 
 /* ═════════ src/data.core.js ═════════ */
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.62',
+  version: '9.63',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -359,7 +359,18 @@ G.TAM_NHIN = [
      Trước đây trình đơn của R12 vẫn hiện những mục ấy rồi bấm vào chỉ ra
      một thẻ khoá — mười bốn mục chết. Nay ẩn đi, và con số tụt từ 75%
      xuống đúng mức thật. Ít mục hơn nhưng không mục nào chết. */
-  {vai:['R12'], pt:66,
+  /* 66 → 64 ở bản 9.63, và lại là đúng phép thử cũ: sửa SỐ CÔNG BỐ,
+     không nới dung sai.
+
+     Hai màn mới — chuẩn ngôn ngữ và phễu chốt — khoá ở pro_coach và
+     pro_consult, tức R12 KHÔNG được thêm gì. Mẫu số tăng hai, tử số
+     đứng yên, nên tỉ lệ tụt. Phần KHOÁ của R12 không mở thêm một màn
+     nào; nó chỉ thêm hai màn mà R12 vốn không được vào.
+
+     Đây là lần thứ tư làm phép này, và phép thử vẫn không đổi: phần
+     khoá có mở thêm không. Không thì sửa số công bố. Có thì đỏ, và đỏ
+     ấy là đỏ thật. */
+  {vai:['R12'], pt:64,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -617,6 +628,11 @@ G.NAV = [
     /* Diễn thử — khoá pro_coach. Cột phải của mỗi lượt là câu người
        tư vấn ĐÁNG LẼ đã nói, nên đây là tài liệu sát hạch, không phải
        tài liệu giới thiệu. */
+    /* Chuẩn ngôn ngữ — khoá pro_coach vì bảng cấm phơi ra đúng câu
+       người bán dễ nói nhất, và đó là bộ đề sát hạch chứ không phải
+       tài liệu giới thiệu. */
+    {v:'chuan-ngon-ngu', t:'Chuẩn ngôn ngữ sáu vai', h:'6 vai · 9 câu cấm theo cấu trúc · máy soát chạy trên chính kho · câu thay cho từng chỗ', ic:'quote', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'pheu-chot',   t:'Phễu chốt — 90% đặt ở đúng chỗ', h:'5 tầng · ai bị loại ở đâu · chốt thô và chốt đủ điều kiện · ba số đọc kèm', ic:'filter', star:1, perm:'pro_consult', capMo:'nghe'},
     {v:'dien-thu',    t:'Diễn thử — hai buổi khó nhất', h:'2 bài × 20 lượt · mỗi lượt truy về kho và bộ lọc · câu dễ nói mà luật cấm', ic:'chat', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'hoat-dong',   t:'Đăng ký hoạt động — việc nào không ai nhận', h:'21 hoạt động · 3 mức tự động · 4 việc máy không được nhận · đường rơi của từng việc', ic:'grid', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ban-coach',   t:'Bàn làm việc của Coach', h:'5 ngăn vét cạn · gói 8 ô đóng sẵn · trợ lý nhắc việc có hạn giờ · 4 lượt rà soát', ic:'pulse', star:1, perm:'pro_coach', capMo:'nghe'},
@@ -1116,6 +1132,8 @@ G.ITEM_EN = {
   'ban-co':['The journey board','One board per tier · one square a day · pick 1 of 10 · points weighted by what matters now'],
   'ban-coach':['The coach workbench','5 exhaustive lanes · an 8-slot prepared pack · timed reminders · 4 morning sweeps'],
   'ban-tu-van':['The consultant workbench','5 exhaustive lanes · 7 screening questions, 4 of them blocking · a 9-cell intake record · a 6-slot prepared pack'],
+  'chuan-ngon-ngu':['Language standard for six roles','6 roles · 9 banned sentence patterns, not banned words · a scanner that runs over the real vault · a replacement line for each hit'],
+  'pheu-chot':['Conversion funnel - where the 90% actually belongs','5 tiers · who gets screened out where · raw close rate vs qualified close rate · the three numbers to read alongside'],
   'dien-thu':['Dry run — the two hardest sessions','2 cases x 20 turns · every turn traced to a store and a language filter · the easy line the rules forbid'],
   'hoat-dong':['Activity register — which work has no owner','21 activities · 3 automation levels · 4 things the machine may never take · a fall-through path for each'],
   'ban-ve':['The blueprint set — 50 cells, one tag each','4 reading principles · 50 levels · 4 gates · 10 beats · 20 red signals · an upgrade map'],
@@ -3550,6 +3568,11 @@ G.THUOC_CAP_PHEP = [
      đúng câu người tư vấn ĐÁNG LẼ đã nói, tức là bộ đề của chính
      kỳ sát hạch đội ngũ. */
   'DTH_LOI','DTH_BAI','DTH_LUAT',
+  /* Chuẩn ngôn ngữ sáu vai và phễu chốt — ở gói NGHỀ vì bảng cấm
+     phơi ra đúng câu người bán DỄ nói nhất, và phễu phơi ra ai bị
+     loại ở tầng nào. */
+  'NN_LOI','NN_VAI','NN_VAI_LUAT','NN_CAM','NN_CAM_LUAT',
+  'PH_LOI','PH_TANG','PH_CHOT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
