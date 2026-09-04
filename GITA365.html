@@ -2057,11 +2057,11 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 106 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 108 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
-   21 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
-   giấy phép có gói nghề. Máy của gia đình nhẹ đi 459 KB.
+   23 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
+   giấy phép có gói nghề. Máy của gia đình nhẹ đi 501 KB.
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -2073,7 +2073,7 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 /* ═════════ sinh lúc gộp: màn nằm ở gita-nghe.js ═════════ */
 (function(){var G=window.G||{};window.G=G;
 G.MA_NGHE_TEP="gita-nghe.js";
-G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach"];
+G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong"];
 })();
 
 /* ═════════ src/data.core.js ═════════ */
@@ -2098,7 +2098,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.60',
+  version: '9.61',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2661,6 +2661,13 @@ G.NAV = [
     /* Bàn làm việc của Coach: năm ngăn vét cạn, gói tài nguyên tám ô,
        trợ lý nhắc việc có hạn giờ. Khoá ở pro_coach — đây là hàng đợi
        công việc, và nhà mình đọc thì thấy mình là một dòng trong đó. */
+    /* Bàn của Tư vấn — khoá ở pro_consult, cùng lý do với bàn Coach:
+       đây là hàng đợi nội bộ, và nhà mình đọc thì thấy mình là một dòng
+       trong đó, kèm cả lý do chưa ai trả lời. */
+    {v:'ban-tu-van',  t:'Bàn làm việc của Tư vấn', h:'5 ngăn vét cạn · 7 câu sàng lọc có 4 câu chặn · 9 ô hồ sơ · gói 6 ô đóng sẵn', ic:'compass', star:1, perm:'pro_consult', capMo:'nghe'},
+    /* Bảng đăng ký hoạt động — khoá ở pro_coach vì nó phơi toàn bộ quy
+       trình nội bộ: ai làm gì, hạn bao lâu, không ai làm thì rơi đi đâu. */
+    {v:'hoat-dong',   t:'Đăng ký hoạt động — việc nào không ai nhận', h:'21 hoạt động · 3 mức tự động · 4 việc máy không được nhận · đường rơi của từng việc', ic:'grid', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ban-coach',   t:'Bàn làm việc của Coach', h:'5 ngăn vét cạn · gói 8 ô đóng sẵn · trợ lý nhắc việc có hạn giờ · 4 lượt rà soát', ic:'pulse', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ban-ve',      t:'Bộ bản vẽ — 50 ô, mỗi ô một tag', h:'4 nguyên tắc · 50 cấp độ · 4 cổng · 10 nhịp · 20 tín hiệu đỏ · bản đồ nâng cấp', ic:'map', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'tang5-pro',   t:'Dòng T5-PRO — Gia đình Thịnh vượng', h:'24 tháng · 4 giai đoạn · đội 3 vai · 6 tiêu chí cửa vào · 5 kịch bản từ chối', ic:'vault', star:1, perm:'pro_gia_nghiep', capMo:'nghe'},
@@ -3157,6 +3164,8 @@ G.ITEM_EN = {
   'bang-tin':['You are not walking alone','Community news · 6 criteria for a story to run · every number states where it is counted from'],
   'ban-co':['The journey board','One board per tier · one square a day · pick 1 of 10 · points weighted by what matters now'],
   'ban-coach':['The coach workbench','5 exhaustive lanes · an 8-slot prepared pack · timed reminders · 4 morning sweeps'],
+  'ban-tu-van':['The consultant workbench','5 exhaustive lanes · 7 screening questions, 4 of them blocking · a 9-cell intake record · a 6-slot prepared pack'],
+  'hoat-dong':['Activity register — which work has no owner','21 activities · 3 automation levels · 4 things the machine may never take · a fall-through path for each'],
   'ban-ve':['The blueprint set — 50 cells, one tag each','4 reading principles · 50 levels · 4 gates · 10 beats · 20 red signals · an upgrade map'],
   'tang5-pro':['The T5-PRO line — Prosperous Family','24 months · 4 phases · a 3-role team · 6 intake criteria · 5 refusal scripts'],
   'so-tay-van-hanh':['Ten rules, and where each one actually holds','Priority order · 10 charter points · 4 things forbidden at scale · 4 places the system breaks'],
@@ -5580,6 +5589,11 @@ G.THUOC_CAP_PHEP = [
   'BLV_NHAC','BLV_NHAC_LUAT','BLV_RASOAT','BLV_LUAT',
   'BLV_DUYET','BLV_DUYET_DIEU','BLV_DUYET_LUAT','BLV_CHOCHU',
   'BLV_MOC','BLV_MOC_LUAT',
+  /* Bàn làm việc của Tư vấn (TVB_*) và bảng đăng ký hoạt động (HD_*).
+     Ở gói NGHỀ: bàn Tư vấn cho thấy nhà nào đang bị treo và vì sao chưa
+     chốt, còn bảng hoạt động cho thấy toàn bộ quy trình nội bộ. */
+  'TVB_LOI','TVB_NGAN','TVB_NGAN_LUAT','TVB_GOI','TVB_GOI_LUAT','TVB_LUAT',
+  'DKH_LOI','DKH_MUC','DKH_CAM_MAY','DKH_VIEC','DKH_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
@@ -31542,7 +31556,7 @@ G.MAY_KHACH_BI_CAT = function(ly){
 <script>
 /* ── gita-nghe.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — MÃ CỦA GÓI NGHỀ · 21 TỆP
+   GITA 365 — MÃ CỦA GÓI NGHỀ · 23 TỆP
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Sửa trong src/ rồi chạy:
    node tools/gop-src.js
@@ -39662,6 +39676,821 @@ G.VIEWS = G.VIEWS || {};
     }).join('') + '</div>';
 
     o += G.kaKhung ? G.kaKhung('ban-coach', 'cuoi') : '';
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/ban-tu-van.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY BÀN LÀM VIỆC CỦA TƯ VẤN
+
+   Kho ở kho-goc/data.ban-tu-van.js. Toàn bộ ở gói NGHỀ.
+
+   ═══ CÙNG TÍNH CHẤT VỚI BÀN COACH, ĐO BẰNG CÙNG MỘT PHÉP CỘNG ═══
+
+       mỗi nhà rơi vào ĐÚNG MỘT ngăn, tổng năm ngăn bằng tổng số nhà.
+
+   ═══ HAI TRƯỜNG NGƯỜI GHI, VÀ VÌ SAO KHÔNG SUY RA ═══
+
+   Bàn này cần biết một nhà đã sàng lọc chưa và hồ sơ đủ mấy ô. Cả hai
+   là thứ NGƯỜI NGHE ĐƯỢC rồi ghi vào, không phải thứ suy ra từ chỉ số.
+
+     nha.loc     kết quả bảy câu sàng lọc — { SL1: 'qua' | 'chan' | ... }
+     nha.oHoSo   ô nào trong chín ô đã có nội dung — [1, 2, 5, ...]
+
+   Vắng mặt nghĩa là CHƯA GHI, và chưa ghi thì nhà nằm ở ngăn chưa sàng
+   lọc. Đó là kết quả đúng: một nhà không có kết quả sàng lọc trong hệ
+   thì trong hệ nó chưa được sàng lọc, dù ngoài đời ai đó đã hỏi rồi.
+
+   Suy "chắc đã lọc rồi vì nhà đang ở tầng 3" là cách một bảng công việc
+   tự cho mình qua chỗ khó nhất của nó.
+
+   ═══ BÀN NÀY KHÔNG XẾP HẠNG KHÁCH ═══
+
+   Không cột nóng-ấm-lạnh, không điểm tiềm năng. Chỉ số ngược duy nhất
+   trong hệ là tỷ lệ TỪ CHỐI, và một bàn xếp hạng theo khả năng chốt sẽ
+   đẩy người dùng nó đi ngược đúng chỉ số ấy — êm ái, mỗi ngày một chút.
+
+   ═══ NĂM CÁI KHOÁ ═══
+
+   tvbSoiVetCan()   tổng năm ngăn bằng tổng số nhà.
+   tvbSoiThuTu()    ngăn xếp đúng bậc của SV_THUTU, và sàng lọc đứng
+                    TRƯỚC hồ sơ.
+   tvbSoiGoi()      sáu ô, mỗi ô khai lấy từ kho nào.
+   tvbSoiChan()     bốn câu chặn của sàng lọc thật sự chặn được.
+   tvbSoiKhongChamDiem() không hàm nào của bàn này cộng điểm cho một nhà.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h;
+  var TANG_TU_VAN = ['T1', 'T2', 'T3'];
+
+  function maTang(t) { var m = String(t == null ? '' : t).match(/(\d)/); return m ? 'T' + m[1] : ''; }
+
+  /* ═══════════ NHÀ CỦA TƯ VẤN ═══════════
+
+     Tầng nào thuộc Tư vấn đọc từ BV_VAI.tran — cùng đường bvVaiGiuTang()
+     đã dùng ở cửa duyệt, không khai lại bảng tầng→vai lần thứ hai.
+     Tầng 1 chưa vai nào khai trần (BV_LECH BL-0) nên thêm bằng tay ở
+     hằng số trên, và chỗ ấy ghi rõ chứ không giấu. */
+  G.tvbNha = function (tenTuVan) {
+    var ds = (typeof G.dsNha === 'function' ? G.dsNha() : (G.FAMILIES || [])) || [];
+    return ds.filter(function (n) {
+      return TANG_TU_VAN.indexOf(maTang(n.tier)) >= 0;
+    }).filter(function (n) {
+      return !tenTuVan || n.coach === tenTuVan;
+    }).map(function (n) {
+      var t = maTang(n.tier);
+      return {
+        id: n.id, nha: n.nha, hv: n.hv, lop: n.lop, ph: n.ph, tang: t,
+        ngay: n.ngay, coach: n.coach, band: n.band,
+        loc: G.tvbSangLoc(n), hoSo: G.tvbHoSo(n),
+        /* daGoi và nguyenVong đi theo vì tvbLoMoc() và blvViCoDo() đọc
+           chúng. Bản đầu tôi bỏ quên daGoi, và mọi nhà đã gọi đủ vẫn bị
+           báo lỡ mốc ba mươi — đúng lớp lỗi bỏ quên trường vai ở bản
+           9.60, và cũng im lặng y như thế. */
+        daGoi: n.daGoi, nguyenVong: n.nguyenVong,
+        ngayNghe: n.ngayNghe, ketQua: n.ketQua
+      };
+    });
+  };
+
+  /* ═══════════ BẢY CÂU SÀNG LỌC ═══════════
+
+     Bốn câu mang cờ chan trong kho. Chưa có trả lời cho một câu chặn
+     thì cả buổi CHƯA ĐƯỢC mở phần chương trình — không phải "nên tránh",
+     mà là khoá thật, vì đó là chỗ duy nhất hệ được phép nói không. */
+  G.tvbSangLoc = function (n) {
+    var ds = G.TV_SANGLOC || [];
+    if (!ds.length) return { chuaDo: true, thieu: 'TV_SANGLOC' };
+    var da = (n && n.loc) || {};
+    var cauChan = ds.filter(function (x) { return x.chan === true; });
+    var chuaTraLoi = [], dangChan = [];
+    ds.forEach(function (x) {
+      var v = da[x.ma];
+      if (v === undefined || v === null || v === '') { chuaTraLoi.push(x.ma); return; }
+      if (v === 'chan') dangChan.push({ ma: x.ma, hoi: x.hoi, neuThe: x.neuThe, vi: x.vi });
+    });
+    var chanChuaXong = cauChan.filter(function (x) {
+      return chuaTraLoi.indexOf(x.ma) >= 0;
+    }).map(function (x) { return x.ma; });
+
+    return {
+      tong: ds.length, soCauChan: cauChan.length,
+      daTraLoi: ds.length - chuaTraLoi.length,
+      chuaTraLoi: chuaTraLoi, chanChuaXong: chanChuaXong, dangChan: dangChan,
+      /* Hai lý do khác nhau, hai câu khác nhau. Gộp lại thành "chưa mở
+         được" là làm mất chỗ cần làm gì tiếp. */
+      moDuocChuongTrinh: chanChuaXong.length === 0 && dangChan.length === 0,
+      viKhongMo: chanChuaXong.length
+        ? 'Còn ' + chanChuaXong.length + ' câu chặn chưa hỏi: ' + chanChuaXong.join(' · ')
+        : (dangChan.length
+          ? 'Câu ' + dangChan.map(function (x) { return x.ma; }).join(' · ') + ' đang chặn — ' +
+            'đây là chỗ phải nói KHÔNG, không phải chỗ tìm cách đi vòng.'
+          : undefined)
+    };
+  };
+
+  /* ═══════════ CHÍN Ô HỒ SƠ ═══════════ */
+  G.tvbHoSo = function (n) {
+    var ds = G.TV_OHOSO || [];
+    if (!ds.length) return { chuaDo: true, thieu: 'TV_OHOSO' };
+    var da = (n && n.oHoSo) || [];
+    var co = ds.filter(function (x) { return da.indexOf(x.o) >= 0; });
+    var trong = ds.filter(function (x) { return da.indexOf(x.o) < 0; });
+    /* Ô chín là ô KẾT QUẢ ĐO, điền sau cùng. Tám ô kia đủ mới được đo. */
+    var taWithoutChin = ds.filter(function (x) { return x.o !== 9; });
+    var duTam = taWithoutChin.filter(function (x) { return da.indexOf(x.o) >= 0; }).length >= 8;
+    return {
+      tong: ds.length, daCo: co.length,
+      trong: trong.map(function (x) { return { o: x.o, ten: x.ten, la: x.la, neuDoan: x.neuDoan }; }),
+      duTam: duTam,
+      oChinDaCo: da.indexOf(9) >= 0,
+      /* Điền ô chín khi tám ô kia chưa đủ là đo một nhà mình chưa nghe. */
+      oChinSai: da.indexOf(9) >= 0 && !duTam
+        ? 'Ô chín đã điền mà tám ô kia chưa đủ — chặng đo ra đang dựa trên một nhà chưa nghe hết.'
+        : undefined
+    };
+  };
+
+  /* ═══════════ CHIA NĂM NGĂN ═══════════ */
+  G.tvbXep = function (tenTuVan) {
+    var ngan = (G.TVB_NGAN || []).slice().sort(function (a, b) { return a.thu - b.thu; });
+    if (!ngan.length) return { chuaDo: true, thieu: 'TVB_NGAN' };
+    var ds = G.tvbNha(tenTuVan);
+    var gom = {};
+    ngan.forEach(function (x) { gom[x.ma] = []; });
+
+    ds.forEach(function (n) {
+      var khop = {
+        TVB_KHAN: function () {
+          var vi = (typeof G.blvViCoDo === 'function') ? G.blvViCoDo(n, tenTuVan) : [];
+          var loM = G.tvbLoMoc(n);
+          return (vi.length || loM) ? { viCo: vi, loMoc: loM || undefined } : null;
+        },
+        TVB_CHUA_LOC: function () {
+          return (n.loc && !n.loc.chuaDo && !n.loc.moDuocChuongTrinh) ? { loc: n.loc } : null;
+        },
+        TVB_THIEU_O: function () {
+          return (n.hoSo && !n.hoSo.chuaDo && !n.hoSo.duTam) ? { hoSo: n.hoSo } : null;
+        },
+        TVB_TREO: function () {
+          var t = G.tvbTreo(n);
+          return t ? { treo: t } : null;
+        }
+      };
+      for (var i = 0; i < ngan.length; i++) {
+        var x = ngan[i];
+        if (x.laPhanConLai) break;
+        var k = khop[x.ma] && khop[x.ma]();
+        if (k) { k.nha = n; gom[x.ma].push(k); return; }
+      }
+      var vet = ngan.filter(function (y) { return y.laPhanConLai; })[0];
+      gom[vet.ma].push({ nha: n });
+    });
+
+    return {
+      tuVan: tenTuVan, tongNha: ds.length,
+      ngan: ngan.map(function (x) {
+        return { ma: x.ma, ten: x.ten, c: x.c, thu: x.thu, bac: x.bac, la: x.la,
+          lam: x.lam, khongDuocLam: x.khongDuocLam, ds: gom[x.ma], so: gom[x.ma].length };
+      }),
+      tongTrongNgan: Object.keys(gom).reduce(function (s, k) { return s + gom[k].length; }, 0)
+    };
+  };
+
+  /* ═══════════ LỠ MỘT MỐC GỌI ═══════════
+
+     Mốc đọc từ TV_306090, không tự đặt. Và phải đọc thêm CUỘC GỌI ĐÃ
+     THỰC HIỆN — nha.daGoi, một mảng số mốc, do người ghi.
+
+     Bản đầu tôi viết hàm này chỉ so ngày với mốc: mốc nào đã qua ba ngày
+     thì báo lỡ. Nhà ở ngày 74 lập tức lỡ cả mốc 30 lẫn mốc 60 — vĩnh
+     viễn, kể cả khi đã gọi đủ. Đó đúng cái lớp lỗi vừa chữa ở bàn Coach
+     bản 9.60: một điều kiện LUÔN ĐÚNG thì ngăn mang nó nuốt mọi ngăn dưới.
+
+     Vắng daGoi nghĩa là CHƯA GỌI, và đó là kết quả đúng — không có ghi
+     nhận cuộc gọi trong hệ thì trong hệ cuộc gọi ấy chưa xảy ra.
+
+     Chỉ báo mốc SỚM NHẤT còn chưa gọi: nhắc dồn ba mốc một lúc thì
+     Coach làm mốc dễ nhất trước, và mốc bị bỏ lâu nhất bị bỏ tiếp. */
+  G.tvbLoMoc = function (n) {
+    var ds = (G.TV_306090 || []).slice().sort(function (a, b) { return a.moc - b.moc; });
+    var ngay = Number(n.ngay || 0);
+    var daGoi = (n && n.daGoi) || [];
+    for (var i = 0; i < ds.length; i++) {
+      var moc = Number(ds[i].moc);
+      if (daGoi.indexOf(moc) >= 0) continue;
+      var qua = ngay - moc;
+      if (qua >= 3) return { moc: moc, ten: ds[i].ten, quaNgay: qua,
+        hoi: ds[i].hoi, tim: ds[i].tim,
+        conLai: ds.filter(function (m) { return daGoi.indexOf(Number(m.moc)) < 0; }).length };
+    }
+    return null;
+  };
+
+  /* Đang treo: nghe xong, hồ sơ đủ, quá bảy ngày chưa có câu trả lời. */
+  G.tvbTreo = function (n) {
+    if (!(n.hoSo && n.hoSo.duTam)) return null;
+    if (n.ketQua === 'chot' || n.ketQua === 'tuchoi') return null;
+    var d = Number(n.ngayNghe);
+    if (!isFinite(d)) return null;
+    var qua = Number(n.ngay || 0) - d;
+    if (qua < 7) return null;
+    return {
+      quaNgay: qua, tuNgay: d,
+      lam: 'Nói một câu. Chốt hoặc từ chối — cả hai đều là câu trả lời.',
+      cauTuChoi: (G.TV_TUCHOI || []).length,
+      vi: (G.TVB_NGAN || []).filter(function (x) { return x.ma === 'TVB_TREO'; })[0]
+        ? (G.TVB_NGAN.filter(function (x) { return x.ma === 'TVB_TREO'; })[0].viLaNganDatNhat) : ''
+    };
+  };
+
+  /* ═══════════ GÓI TÀI LIỆU SÁU Ô ═══════════ */
+  G.tvbGoi = function (nhaId, tenTuVan) {
+    var n = G.tvbNha(tenTuVan).filter(function (x) { return x.id === nhaId; })[0];
+    if (!n) return { chuaCoNha: true };
+    var lay = {
+      LOC: function () {
+        var l = n.loc || {};
+        if (l.chuaDo) return null;
+        return 'Đã trả lời ' + l.daTraLoi + '/' + l.tong + ' câu' +
+          (l.chanChuaXong.length ? ' · còn chặn: ' + l.chanChuaXong.join(' ') : ' · bốn câu chặn đã qua') +
+          (l.dangChan.length ? ' · ĐANG CHẶN ở ' + l.dangChan.map(function (x) { return x.ma; }).join(' ') : '');
+      },
+      HOSO: function () {
+        var s = n.hoSo || {};
+        if (s.chuaDo) return null;
+        return 'Đủ ' + s.daCo + '/' + s.tong + ' ô' +
+          (s.trong.length ? ' · còn trống: ' + s.trong.map(function (x) { return 'ô ' + x.o + ' ' + x.ten; }).join(' · ') : '');
+      },
+      NHIP5: function () {
+        var ds = G.TV_NHIP5 || [];
+        return ds.length ? ds.map(function (x) { return x.nhip + '. ' + x.ten + ' (' + x.phut + "')"; }).join(' · ') : null;
+      },
+      TINHIEU: function () {
+        var ds = G.TV_TINHIEU || [];
+        return ds.length ? ds.length + ' tín hiệu — nghe được thì IM và để họ nói' : null;
+      },
+      TUCHOI: function () {
+        var ds = G.TV_TUCHOI || [];
+        return ds.length ? ds.length + ' câu từ chối nguyên văn, sẵn dùng' : null;
+      },
+      MOCGOI: function () {
+        var ds = G.TV_306090 || [];
+        var ngay = Number(n.ngay || 0);
+        var toi = ds.filter(function (m) { return Number(m.moc) >= ngay; })[0];
+        if (!toi) return null;
+        return toi.ten + ' — còn ' + (Number(toi.moc) - ngay) + ' ngày · ' +
+          (toi.hoi || []).length + ' câu hỏi · ' + (toi.tim || '');
+      }
+    };
+    return {
+      nha: n,
+      o: (G.TVB_GOI || []).map(function (d) {
+        var v = null;
+        try { v = lay[d.ma] ? lay[d.ma]() : null; } catch (e) { v = null; }
+        return { ma: d.ma, ten: d.ten, tuKho: d.tuKho, coGi: v || undefined,
+          chuaCo: v ? undefined : 'Kho ' + d.tuKho + ' chưa có dữ liệu cho nhà này.',
+          khongDungDe: d.khongDungDe, viQuanTrong: d.viQuanTrong };
+      }),
+      luat: (G.TVB_GOI_LUAT || {}).khongChamDiem || ''
+    };
+  };
+
+  /* ═══════════ KHOÁ ═══════════ */
+  G.tvbSoiVetCan = function (tenTuVan) {
+    var x = G.tvbXep(tenTuVan);
+    if (x.chuaDo) return { chuaDo: true, thieu: x.thieu, loi: [] };
+    var loi = [];
+    if (x.tongTrongNgan !== x.tongNha)
+      loi.push('tổng năm ngăn = ' + x.tongTrongNgan + ', tổng số nhà = ' + x.tongNha);
+    var thay = {};
+    (x.ngan || []).forEach(function (ng) {
+      ng.ds.forEach(function (m) {
+        if (thay[m.nha.id]) loi.push(m.nha.nha + ' nằm ở cả ' + thay[m.nha.id] + ' và ' + ng.ma);
+        thay[m.nha.id] = ng.ma;
+      });
+    });
+    var vet = (G.TVB_NGAN || []).filter(function (n) { return n.laPhanConLai; });
+    if (vet.length !== 1) loi.push('phải có ĐÚNG MỘT ngăn vét, đang có ' + vet.length);
+    return { chuaDo: false, loi: loi, tongNha: x.tongNha, tongTrongNgan: x.tongTrongNgan };
+  };
+
+  G.tvbSoiThuTu = function () {
+    var ngan = (G.TVB_NGAN || []).slice().sort(function (a, b) { return a.thu - b.thu; });
+    var bac = (G.SV_THUTU || []), loi = [];
+    if (!ngan.length) return { chuaDo: true, thieu: 'TVB_NGAN', loi: [] };
+    var hang = {};
+    bac.forEach(function (b) { hang[b.ma] = b.bac !== undefined ? b.bac : b.thu; });
+    var truoc = 0;
+    ngan.forEach(function (n) {
+      if (n.laPhanConLai) return;
+      if (!n.bac) { loi.push(n.ma + ' không mang bậc'); return; }
+      if (bac.length && hang[n.bac] === undefined)
+        loi.push(n.ma + ' mang bậc "' + n.bac + '" không có trong SV_THUTU');
+      var v = hang[n.bac];
+      if (v !== undefined && v < truoc) loi.push(n.ma + ' xếp sai bậc');
+      if (v !== undefined) truoc = v;
+    });
+    /* Sàng lọc phải đứng TRƯỚC hồ sơ — luật riêng của bàn này. */
+    var iLoc = ngan.map(function (n) { return n.ma; }).indexOf('TVB_CHUA_LOC');
+    var iHo  = ngan.map(function (n) { return n.ma; }).indexOf('TVB_THIEU_O');
+    if (iLoc >= 0 && iHo >= 0 && iLoc > iHo)
+      loi.push('ngăn hồ sơ đang đứng TRƯỚC ngăn sàng lọc — đảo thứ tự là bỏ công vào một nhà ' +
+        'lẽ ra không nhận');
+    if (!(G.TVB_NGAN_LUAT || {}).locTruocHoSo) loi.push('chưa khai luật lọc trước hồ sơ');
+    return { chuaDo: false, loi: loi, so: ngan.length };
+  };
+
+  G.tvbSoiGoi = function () {
+    var ds = G.TVB_GOI || [], loi = [], thay = {};
+    if (!ds.length) return { chuaDo: true, thieu: 'TVB_GOI', loi: [] };
+    ds.forEach(function (o) {
+      if (thay[o.ma]) loi.push(o.ma + ' trùng mã');
+      thay[o.ma] = 1;
+      if (!o.ten) loi.push('ô ' + o.o + ' thiếu tên');
+      if (!o.tuKho) loi.push(o.ma + ' chưa khai lấy từ kho nào');
+    });
+    if (!(G.TVB_GOI_LUAT || {}).viSauKhongTam) loi.push('chưa khai vì sao sáu ô chứ không tám');
+    return { chuaDo: false, loi: loi, so: ds.length };
+  };
+
+  /* Bốn câu chặn phải CHẶN được thật. Phép thử phá đứng ngay trong khoá:
+     dựng một nhà chưa trả lời câu chặn nào rồi hỏi hàm — trả "mở được"
+     là bảy câu sàng lọc chỉ còn là bảy dòng chữ. */
+  G.tvbSoiChan = function () {
+    var ds = G.TV_SANGLOC || [], loi = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'TV_SANGLOC', loi: [] };
+    var chan = ds.filter(function (x) { return x.chan === true; });
+    if (!chan.length) loi.push('không câu nào mang cờ chan — sàng lọc không chặn được gì');
+    chan.forEach(function (x) {
+      if (!x.neuThe) loi.push(x.ma + ' là câu chặn mà không nói nếu thế thì làm gì');
+    });
+
+    var trong = G.tvbSangLoc({});
+    if (trong.moDuocChuongTrinh)
+      loi.push('nhà chưa trả lời câu sàng lọc nào mà hàm vẫn cho mở phần chương trình');
+
+    var du = { loc: {} };
+    ds.forEach(function (x) { du.loc[x.ma] = 'qua'; });
+    if (!G.tvbSangLoc(du).moDuocChuongTrinh)
+      loi.push('nhà đã qua cả bảy câu mà hàm vẫn không cho mở');
+
+    var mot = { loc: {} };
+    ds.forEach(function (x) { mot.loc[x.ma] = 'qua'; });
+    mot.loc[chan[0].ma] = 'chan';
+    if (G.tvbSangLoc(mot).moDuocChuongTrinh)
+      loi.push('một câu chặn đang bật mà hàm vẫn cho mở — câu chặn thành lời khuyên');
+    return { chuaDo: false, loi: loi, soChan: chan.length };
+  };
+
+  /* Bàn này không được chấm điểm khách. Phép kiểm đọc chính mã của tệp:
+     khai luật mà mã vẫn cộng điểm thì luật là lời suông. */
+  G.tvbSoiKhongChamDiem = function () {
+    var loi = [];
+    var ma = String(G.tvbXep) + String(G.tvbNha) + String(G.tvbGoi) + String(G.tvbSangLoc);
+    /* Bắt TÊN BIẾN chấm điểm, không bắt chữ "điểm" ở bất cứ đâu. Bản đầu
+       tôi soi /diem|score|nong/ và nó đỏ ngay trên kho lành — vì khớp
+       đúng khoá khongChamDiem, tức chính chỗ đang thi hành luật ấy. Một
+       phép kiểm bắt được người canh cửa là một phép kiểm sẽ bị tắt. */
+    if (/diemNha|diemChot|diemTiemNang|leadScore|scoreNha|xepHangNha|hangKhach/i.test(ma))
+      loi.push('bàn Tư vấn đang có chỗ chấm điểm khách — luật khongXepHangKhach thành lời suông');
+    if (!(G.TVB_LUAT || {}).khongXepHangKhach) loi.push('chưa khai luật không xếp hạng khách');
+    if (!(G.TVB_LUAT || {}).tuChoiLaKetQua) loi.push('chưa khai từ chối là một kết quả');
+    return { chuaDo: false, loi: loi };
+  };
+
+  /* ═══════════════════════════════════════════════════════════
+     MÀN HÌNH
+     ═══════════════════════════════════════════════════════════ */
+  G.VIEWS['ban-tu-van'] = function () {
+    if (!G.TVB_NGAN)
+      return U.empty('Chưa mở được phần này',
+        'Bàn làm việc của Tư vấn nằm trong gói nghề. Đăng nhập bằng tài khoản Tư vấn để nạp.');
+
+    var toi = (G.S && G.S.acc) || {};
+    var ten = toi.ten || undefined;
+    var xep = G.tvbXep(ten);
+    var loc = true;
+    if (!xep.chuaDo && xep.tongNha === 0) { xep = G.tvbXep(); ten = undefined; loc = false; }
+
+    var loi = G.TVB_LOI || {};
+    var o = U.ph({ eyebrow: 'BÀN LÀM VIỆC · TƯ VẤN', ic: 'compass', grad: 1,
+      t: 'Cửa vào của cả hệ — không nhà nào bị bỏ lửng',
+      lead: loi.la || '' });
+
+    var vc = G.tvbSoiVetCan(ten);
+    var lech = [].concat(vc.loi || [], G.tvbSoiThuTu().loi || [], G.tvbSoiGoi().loi || [],
+      G.tvbSoiChan().loi || [], G.tvbSoiKhongChamDiem().loi || []);
+
+    o += '<div class="card mb" style="border-color:' + (lech.length ? '#BE0E16' : '#0B667556') + '">' +
+      '<div style="display:flex;flex-wrap:wrap;gap:14px;align-items:baseline">' +
+      (xep.ngan || []).map(function (n) {
+        return '<div style="min-width:130px"><span class="tiny up" style="color:' + n.c + '">' +
+          h(n.ten) + '</span><br><b style="font-size:1.5em;color:' + n.c + '">' + n.so + '</b></div>';
+      }).join('') +
+      '<div style="min-width:150px;border-left:1px solid var(--gita-vien-2);padding-left:14px">' +
+      '<span class="tiny up dim">TỔNG NHÀ</span><br><b style="font-size:1.5em">' +
+      xep.tongNha + '</b></div></div>' +
+      '<p class="tiny mt" style="line-height:1.7;color:' + (lech.length ? '#BE0E16' : '#0B6675') + '">' +
+      (lech.length ? '<b>LỆCH: ' + h(lech.join(' · ')) + '</b>'
+        : 'Năm ngăn cộng lại ' + vc.tongTrongNgan + ' = ' + vc.tongNha + ' nhà.') + '</p>' +
+      '<p class="tiny dim mt" style="line-height:1.7">' +
+      (loc ? 'Đang xem nhà của ' + h(ten || '') + '.'
+           : 'Tài khoản này chưa được giao nhà nào — đang xem toàn bộ nhà ở tầng 1 tới 3.') +
+      '</p></div>';
+
+    o += '<div class="card mb" style="border-color:#B4720F56">' +
+      '<b class="sm" style="color:#B4720F">' + h(loi.khongXepHang || '') + '</b>' +
+      '<p class="tiny mt" style="line-height:1.75">' + h(loi.viKhongXepHang || '') + '</p></div>';
+
+    o += G.kaKhung ? G.kaKhung('ban-tu-van', 'dau') : '';
+
+    (xep.ngan || []).forEach(function (ng) {
+      o += U.sec(ng.ten + ' — ' + ng.so + ' nhà', ng.la);
+      if (!ng.so) {
+        o += '<div class="card mb"><p class="tiny dim" style="line-height:1.7">Không có nhà nào. ' +
+          h(ng.lam || '') + '</p></div>';
+        return;
+      }
+      o += '<div class="card mb" style="border-color:' + ng.c + '4d">' + ng.ds.map(function (m) {
+        var n = m.nha;
+        var s = '<div style="padding:10px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + h(n.nha) + '</b> <span class="tiny dim">' + h(n.hv || '') + '</span><br>' +
+          '<span class="tiny" style="color:' + ng.c + '">' + h(n.tang) + ' · ngày ' + n.ngay +
+          (n.band ? ' · băng ' + h(n.band) : '') + '</span>';
+
+        if (m.loMoc)
+          s += '<div class="mt" style="padding:8px 10px;border-left:3px solid #BE0E16;background:var(--gita-nen-2)">' +
+            '<b class="tiny" style="color:#BE0E16">LỠ ' + h(m.loMoc.ten) + ' — QUÁ ' +
+            m.loMoc.quaNgay + ' NGÀY</b>' +
+            '<p class="tiny mt" style="line-height:1.7">' + h(m.loMoc.tim || '') + '</p></div>';
+
+        (m.viCo || []).forEach(function (d) {
+          s += '<div class="mt" style="padding:8px 10px;border-left:3px solid #BE0E16;background:var(--gita-nen-2)">' +
+            '<b class="tiny" style="color:#BE0E16">' + h(d.muc) + ' #' + d.so + ' · trong ' +
+            h(d.hanGio) + '</b><p class="tiny mt" style="line-height:1.7">' + h(d.tinHieu) + '</p></div>';
+        });
+
+        if (m.loc)
+          s += '<p class="tiny mt" style="line-height:1.7;color:#5140B4"><b>Sàng lọc ' +
+            m.loc.daTraLoi + '/' + m.loc.tong + ':</b> ' + h(m.loc.viKhongMo || '') + '</p>' +
+            (m.loc.dangChan || []).map(function (d) {
+              return '<p class="tiny" style="line-height:1.7;color:#BE0E16">' + h(d.ma) + ' — ' +
+                h(d.neuThe || '') + '</p>';
+            }).join('');
+
+        if (m.hoSo)
+          s += '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>Hồ sơ ' +
+            m.hoSo.daCo + '/' + m.hoSo.tong + ' ô.</b> Còn trống: ' +
+            h(m.hoSo.trong.map(function (x) { return 'ô ' + x.o + ' ' + x.ten; }).join(' · ')) + '</p>' +
+            (m.hoSo.oChinSai ? '<p class="tiny" style="line-height:1.7;color:#BE0E16">' +
+              h(m.hoSo.oChinSai) + '</p>' : '');
+
+        if (m.treo)
+          s += '<p class="tiny mt" style="line-height:1.7;color:#B45309"><b>Treo ' +
+            m.treo.quaNgay + ' ngày kể từ buổi nghe.</b> ' + h(m.treo.lam) + '</p>' +
+            '<p class="tiny" style="line-height:1.7;color:#BE0E16">' + h(m.treo.vi || '') + '</p>' +
+            '<p class="tiny dim" style="line-height:1.7">Có sẵn ' + m.treo.cauTuChoi +
+            ' câu từ chối nguyên văn — từ chối là một câu, không phải im lặng.</p>';
+
+        return s + '</div>';
+      }).join('') + '</div>';
+    });
+
+    /* ── Gói tài liệu sáu ô cho nhà đầu tiên có việc ── */
+    var uu = (xep.ngan || []).filter(function (n) { return n.so; })[0];
+    var mau = uu && uu.ds[0] ? uu.ds[0].nha : null;
+    if (mau) {
+      var g = G.tvbGoi(mau.id, ten);
+      o += U.sec('Gói tài liệu trợ lý đóng sẵn — ' + h(mau.nha),
+        (G.TVB_GOI_LUAT || {}).cot || '');
+      o += '<div class="card mb">' + (g.o || []).map(function (x) {
+        return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + h(x.ten) + '</b> <span class="tiny dim">' + h(x.tuKho || '') + '</span>' +
+          (x.coGi ? '<p class="tiny mt" style="line-height:1.75">' + h(x.coGi) + '</p>'
+            : '<p class="tiny mt" style="line-height:1.7;color:#B4720F"><b>CHƯA CÓ</b> — ' +
+              h(x.chuaCo) + '</p>') +
+          (x.khongDungDe ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16">' +
+            h(x.khongDungDe) + '</p>' : '') + '</div>';
+      }).join('') + '</div>';
+      o += '<p class="tiny mb" style="line-height:1.75;color:#B4720F"><b>' + h(g.luat || '') +
+        '</b></p>';
+    }
+
+    o += U.sec('Luật của bàn này', '');
+    var tl = G.TVB_LUAT || {};
+    o += '<div class="card mb">' + Object.keys(tl).map(function (k) {
+      return '<p class="tiny" style="line-height:1.75;padding:4px 0">• ' + h(tl[k]) + '</p>';
+    }).join('') + '</div>';
+
+    o += G.kaKhung ? G.kaKhung('ban-tu-van', 'cuoi') : '';
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/hoat-dong.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÁY CHẠY BẢNG ĐĂNG KÝ HOẠT ĐỘNG
+
+   Kho ở kho-goc/data.hoat-dong.js. Toàn bộ ở gói NGHỀ.
+
+   ═══ CÂU CHỈ MÀN NÀY TRẢ LỜI ĐƯỢC ═══
+
+       Có việc nào trong hệ đang không ai nhận không.
+
+   Mọi màn khác trả lời "việc của tôi hôm nay là gì". Màn này trả lời
+   câu ngược lại, và đó là câu không ai hỏi cho tới lúc một việc đã rơi
+   mất ba tháng.
+
+   ═══ "MỘT TRĂM PHẦN TRĂM" NGHĨA LÀ GÌ Ở ĐÂY ═══
+
+   Chủ hệ giao xử lý tự động một trăm phần trăm. Kho đã cấm bốn lần
+   việc máy làm thay người ở chỗ ký tên, chẩn đoán, nâng tầng, gửi
+   thẳng cho gia đình. Nên con số một trăm ở đây đo thứ khác:
+
+       một trăm phần trăm hoạt động khai đủ NĂM Ô
+       ai · kích hoạt · máy làm sẵn gì · hạn · rơi về đâu
+
+   hdDo() trả về đúng con số ấy, và nó hiện lên đầu màn. Nếu có ngày ai
+   thêm một hoạt động mà quên một ô, con số tụt xuống dưới một trăm và
+   người đọc thấy ngay — chứ không phải đọc một chữ "đã tự động hoá".
+
+   ═══ BỐN CÁI KHOÁ ═══
+
+   hdSoiChuTroi()  không hoạt động nào thiếu một trong năm ô.
+   hdSoiCamMay()   không hoạt động mức MAY nào chạm bốn việc cấm.
+   hdSoiManNoi()   màn khai ở mỗi hoạt động phải có thật trong G.VIEWS.
+   hdSoiDuongRoi() đường rơi phải trỏ sang chỗ KHÁC, không quay về
+                   chính người đang giữ việc.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h;
+  var NAM_O = ['ai', 'kich', 'may', 'han', 'roi'];
+
+  /* ═══════════ ĐO ═══════════ */
+  G.hdDo = function () {
+    var ds = G.DKH_VIEC || [];
+    if (!ds.length) return { chuaDo: true, thieu: 'DKH_VIEC' };
+    var du = ds.filter(function (v) {
+      return NAM_O.every(function (o) { return v[o] && String(v[o]).trim(); });
+    });
+    var theoMuc = {};
+    (G.DKH_MUC || []).forEach(function (m) { theoMuc[m.ma] = 0; });
+    ds.forEach(function (v) { if (theoMuc[v.muc] !== undefined) theoMuc[v.muc]++; });
+    var theoNhom = {};
+    ds.forEach(function (v) { theoNhom[v.nhom] = (theoNhom[v.nhom] || 0) + 1; });
+
+    return {
+      tong: ds.length, duNamO: du.length,
+      phanTram: ds.length ? Math.round(du.length / ds.length * 100) : 0,
+      thieuO: ds.filter(function (v) {
+        return !NAM_O.every(function (o) { return v[o] && String(v[o]).trim(); });
+      }).map(function (v) {
+        return { ma: v.ma, ten: v.ten,
+          thieu: NAM_O.filter(function (o) { return !(v[o] && String(v[o]).trim()); }) };
+      }),
+      theoMuc: theoMuc, theoNhom: theoNhom,
+      /* Con số này KHÔNG phải "máy làm bao nhiêu phần trăm". Trộn hai
+         con số ấy là chỗ mọi báo cáo tự động hoá nói dối. */
+      mayChayHet: theoMuc.MAY || 0,
+      mayDonSan: theoMuc.MAY_SAN || 0,
+      chiNguoi: theoMuc.NGUOI || 0,
+      luat: (G.DKH_LUAT || {}).motTramPhanTramLaGi || ''
+    };
+  };
+
+  /* Hoạt động của một vai — dùng để trả lời "việc của vai này gồm gì". */
+  G.hdTheoNhom = function (nhom) {
+    return (G.DKH_VIEC || []).filter(function (v) { return !nhom || v.nhom === nhom; });
+  };
+
+  /* Một hoạt động, kèm kho tài liệu đã nối và kho nào chưa có thật. */
+  G.hdViec = function (ma) {
+    var v = (G.DKH_VIEC || []).filter(function (x) { return x.ma === ma; })[0];
+    if (!v) return { khongCo: true, ma: ma };
+    var kho = String(v.tuKho || '').split('·').map(function (s) { return s.trim(); })
+      .filter(Boolean);
+    var noi = kho.map(function (k) {
+      /* Tên kho có thể kèm chú thích: "BV_DO #17", "BV_CONG_LUAT luật 6",
+         "BLV_DUYET_DIEU số 3". Lấy phần đầu làm tên kho thật. */
+      var ten = (k.match(/^[A-Z][A-Z0-9_]*/) || [])[0];
+      var ham = /\(\)$/.test(k) ? k.replace(/\(\)$/, '') : null;
+      var coThat = ham ? typeof G[ham] === 'function' : (ten ? G[ten] !== undefined : false);
+      return { khai: k, ten: ten || ham, coThat: coThat, laHam: !!ham };
+    });
+    var m = (G.DKH_MUC || []).filter(function (x) { return x.ma === v.muc; })[0] || {};
+    return {
+      viec: v, muc: m, kho: noi,
+      khoThieu: noi.filter(function (x) { return !x.coThat; }).map(function (x) { return x.khai; }),
+      manCoThat: !!(v.manNoi && G.VIEWS && G.VIEWS[v.manNoi])
+    };
+  };
+
+  /* ═══════════ KHOÁ 1: KHÔNG VIỆC NÀO CHỦ TRÔI ═══════════ */
+  G.hdSoiChuTroi = function () {
+    var ds = G.DKH_VIEC || [], loi = [], thay = {};
+    if (!ds.length) return { chuaDo: true, thieu: 'DKH_VIEC', loi: [] };
+    ds.forEach(function (v) {
+      if (thay[v.ma]) loi.push(v.ma + ' trùng mã');
+      thay[v.ma] = 1;
+      NAM_O.forEach(function (o) {
+        if (!(v[o] && String(v[o]).trim())) loi.push(v.ma + ' thiếu ô ' + o);
+      });
+      if (!v.muc) loi.push(v.ma + ' chưa khai mức tự động');
+      else if (!(G.DKH_MUC || []).filter(function (m) { return m.ma === v.muc; })[0])
+        loi.push(v.ma + ' mang mức "' + v.muc + '" không có trong DKH_MUC');
+      /* "Ai đó" và "bộ phận liên quan" là cách một bảng phân công nói
+         rằng nó chưa phân công. */
+      if (/ai đó|bộ phận liên quan|các bên/i.test(String(v.ai)))
+        loi.push(v.ma + ' ghi người chịu trách nhiệm chung chung: "' + v.ai + '"');
+    });
+    if (!(G.DKH_LUAT || {}).khongCoAiDo) loi.push('chưa khai luật không có "ai đó"');
+    return { chuaDo: false, loi: loi, so: ds.length };
+  };
+
+  /* ═══════════ KHOÁ 2: BỐN VIỆC MÁY KHÔNG ĐƯỢC NHẬN ═══════════
+
+     Đây là khoá quan trọng nhất của màn này. Chủ hệ giao "tự động 100%",
+     và cách dễ nhất để đạt con số ấy là để máy nhận nốt bốn việc cuối.
+     Bốn việc ấy đúng là bốn việc cả hệ dựng lên để bảo vệ. */
+  G.hdSoiCamMay = function () {
+    var ds = G.DKH_VIEC || [], cam = G.DKH_CAM_MAY || [], loi = [];
+    if (!ds.length || !cam.length)
+      return { chuaDo: true, thieu: !ds.length ? 'DKH_VIEC' : 'DKH_CAM_MAY', loi: [] };
+    var tu = /ký tên|ký duyệt|phê duyệt|chẩn đoán|nâng tầng|gửi cho gia đình|gửi thẳng/i;
+    ds.forEach(function (v) {
+      if (v.muc !== 'MAY') return;
+      var chuoi = [v.ten, v.may, v.nguoi].join(' ');
+      if (tu.test(chuoi))
+        loi.push(v.ma + ' mang mức MAY mà chạm việc cấm: "' + v.ten + '"');
+    });
+    cam.forEach(function (c) {
+      if (!c.tuLuat) loi.push(c.ma + ' chưa dẫn luật gốc');
+      if (!c.nguyenVan) loi.push(c.ma + ' chưa dẫn nguyên văn luật');
+    });
+    /* Việc ký phải tồn tại và phải mang mức NGUOI. Không có việc ký nào
+       trong bảng nghĩa là bảng đang giấu chỗ người phải quyết. */
+    var ky = ds.filter(function (v) { return /phê duyệt|ký/i.test(v.ten); });
+    if (!ky.length) loi.push('bảng không có hoạt động ký nào — chỗ người quyết đang bị giấu');
+    ky.forEach(function (v) {
+      if (v.muc === 'MAY') loi.push(v.ma + ' là việc ký mà mang mức MAY');
+    });
+    return { chuaDo: false, loi: loi, soCam: cam.length };
+  };
+
+  /* ═══════════ KHOÁ 3: MÀN KHAI PHẢI CÓ THẬT ═══════════ */
+  G.hdSoiManNoi = function () {
+    var ds = G.DKH_VIEC || [], loi = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'DKH_VIEC', loi: [] };
+    ds.forEach(function (v) {
+      if (!v.manNoi) { loi.push(v.ma + ' chưa khai màn nào chạy nó'); return; }
+      if (!(G.VIEWS && G.VIEWS[v.manNoi]))
+        loi.push(v.ma + ' khai màn "' + v.manNoi + '" mà màn ấy không có trong G.VIEWS');
+      if (!v.tuKho) loi.push(v.ma + ' chưa khai lấy tài liệu từ kho nào');
+    });
+    return { chuaDo: false, loi: loi, so: ds.length };
+  };
+
+  /* ═══════════ KHOÁ 4: ĐƯỜNG RƠI PHẢI TRỎ SANG CHỖ KHÁC ═══════════
+
+     Một đường rơi quay về chính người đang giữ việc không phải đường
+     rơi — đó là một vòng lặp, và nó trông giống một quy trình đầy đủ
+     hơn bất cứ chỗ hụt nào khác trong bảng. */
+  G.hdSoiDuongRoi = function () {
+    var ds = G.DKH_VIEC || [], loi = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'DKH_VIEC', loi: [] };
+    ds.forEach(function (v) {
+      var roi = String(v.roi || '');
+      if (!/→|:|→/.test(roi) && roi.length < 20)
+        loi.push(v.ma + ' đường rơi quá ngắn để nói được nó rơi đi đâu');
+      /* Xét chặng CUỐI, không xét chặng đầu. Một đường rơi được phép leo
+         một nấc trong chính vai ấy trước — "quá ba ngày → ngăn KHẨN của
+         mình, quá bảy ngày → Admin" là đúng. Cái sai là ĐIỂM CUỐI vẫn
+         nằm ở người đang giữ việc: lúc ấy việc quay về đúng chỗ nó đã
+         không được làm. */
+      var chang = roi.split('→');
+      var sau = chang[chang.length - 1] || '';
+      var vai = String(v.ai || '').split(/·|\s+và\s+/)[0].trim();
+      if (vai && sau && sau.indexOf(vai) >= 0 && v.muc !== 'MAY')
+        loi.push(v.ma + ' rơi về chính vai đang giữ việc (' + vai + ') — đó là vòng lặp');
+    });
+    if (!(G.DKH_LUAT || {}).duongRoiPhaiKhac) loi.push('chưa khai luật đường rơi phải khác');
+    return { chuaDo: false, loi: loi, so: ds.length };
+  };
+
+  /* ═══════════════════════════════════════════════════════════
+     MÀN HÌNH
+     ═══════════════════════════════════════════════════════════ */
+  G.VIEWS['hoat-dong'] = function () {
+    if (!G.DKH_VIEC)
+      return U.empty('Chưa mở được phần này',
+        'Bảng đăng ký hoạt động nằm trong gói nghề. Đăng nhập bằng tài khoản có quyền nghề.');
+
+    var loi = G.DKH_LOI || {}, d = G.hdDo();
+    var lech = [].concat(G.hdSoiChuTroi().loi || [], G.hdSoiCamMay().loi || [],
+      G.hdSoiManNoi().loi || [], G.hdSoiDuongRoi().loi || []);
+
+    var o = U.ph({ eyebrow: 'ĐĂNG KÝ HOẠT ĐỘNG', ic: 'grid', grad: 1,
+      t: 'Có việc nào trong hệ đang không ai nhận không',
+      lead: loi.la || '' });
+
+    /* ── Con số một trăm, và nói rõ nó đo cái gì ── */
+    o += '<div class="card mb" style="border-color:' +
+      (d.phanTram === 100 && !lech.length ? '#0B667556' : '#BE0E16') + '">' +
+      '<div style="display:flex;flex-wrap:wrap;gap:18px;align-items:baseline">' +
+      '<div style="min-width:170px"><span class="tiny up dim">CÓ ĐỦ NĂM Ô</span><br>' +
+      '<b style="font-size:1.9em;color:' + (d.phanTram === 100 ? '#0B6675' : '#BE0E16') + '">' +
+      d.phanTram + '%</b> <span class="tiny dim">' + d.duNamO + '/' + d.tong + ' hoạt động</span></div>' +
+      (G.DKH_MUC || []).map(function (m) {
+        var so = d.theoMuc[m.ma] || 0;
+        return '<div style="min-width:150px;border-left:1px solid var(--gita-vien-2);padding-left:14px">' +
+          '<span class="tiny up" style="color:' + m.c + '">' + h(m.ten) + '</span><br>' +
+          '<b style="font-size:1.5em;color:' + m.c + '">' + so + '</b></div>';
+      }).join('') + '</div>' +
+      '<p class="tiny mt" style="line-height:1.75;color:#B4720F"><b>' + h(loi.motTramPhanTram || '') +
+      '</b></p>' +
+      '<p class="tiny mt" style="line-height:1.75">' + h(d.luat) + '</p>' +
+      (lech.length ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>LỆCH: ' +
+        h(lech.join(' · ')) + '</b></p>' : '') + '</div>';
+
+    o += '<div class="card mb" style="border-color:#B4720F56">' +
+      '<b class="sm" style="color:#B4720F">Ô đắt nhất là ô "rơi về đâu"</b>' +
+      '<p class="tiny mt" style="line-height:1.75">' + h(loi.oDatNhat || '') + '</p></div>';
+
+    o += G.kaKhung ? G.kaKhung('hoat-dong', 'dau') : '';
+
+    /* ── Bốn việc máy không được nhận ── */
+    o += U.sec('Bốn việc máy KHÔNG được nhận', 'Kể cả khi dựng được, và kể cả khi đang thiếu người.');
+    o += '<div class="card mb" style="border-color:#BE0E1656">' + (G.DKH_CAM_MAY || []).map(function (c) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm" style="color:#BE0E16">' + h(c.viec) + '</b> ' +
+        '<span class="tiny dim">' + h(c.tuLuat) + '</span>' +
+        '<p class="tiny mt" style="line-height:1.75">' + h(c.nguyenVan) + '</p></div>';
+    }).join('') + '</div>';
+
+    /* ── Ba mức tự động ── */
+    o += U.sec('Ba mức tự động', 'Không có mức thứ tư, và không có mức "máy tự quyết".');
+    o += '<div class="card mb">' + (G.DKH_MUC || []).map(function (m) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm" style="color:' + m.c + '">' + h(m.ten) + '</b> ' +
+        '<span class="tiny dim">' + (d.theoMuc[m.ma] || 0) + ' hoạt động</span>' +
+        '<p class="tiny mt" style="line-height:1.75">' + h(m.la) + '</p>' +
+        '<p class="tiny dim" style="line-height:1.75">Được phép: ' + h(m.duocPhep) + '</p>' +
+        (m.viDayLaMucQuanTrongNhat ? '<p class="tiny mt" style="line-height:1.75;color:#5140B4">' +
+          h(m.viDayLaMucQuanTrongNhat) + '</p>' : '') +
+        (m.theoLuat ? '<p class="tiny dim" style="line-height:1.75">' + h(m.theoLuat) + '</p>' : '') +
+        '</div>';
+    }).join('') + '</div>';
+
+    /* ── Từng nhóm vai ── */
+    Object.keys(d.theoNhom).forEach(function (nhom) {
+      var ds = G.hdTheoNhom(nhom);
+      o += U.sec(nhom + ' — ' + ds.length + ' hoạt động', '');
+      o += '<div class="card mb">' + ds.map(function (v) {
+        var x = G.hdViec(v.ma);
+        var m = x.muc || {};
+        return '<div style="padding:11px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+          '<b class="sm">' + h(v.ma) + ' · ' + h(v.ten) + '</b> ' +
+          '<span class="tiny up" style="color:' + (m.c || '#655F7E') + '">' + h(m.ten || v.muc) +
+          '</span>' +
+          '<p class="tiny mt" style="line-height:1.75"><b>Ai:</b> ' + h(v.ai) +
+          ' · <b>Hạn:</b> ' + h(v.han) + '</p>' +
+          '<p class="tiny" style="line-height:1.75"><b>Kích hoạt:</b> ' + h(v.kich) + '</p>' +
+          '<p class="tiny" style="line-height:1.75;color:#0B6675"><b>Máy làm sẵn:</b> ' +
+          h(v.may) + '</p>' +
+          '<p class="tiny" style="line-height:1.75"><b>Người làm:</b> ' + h(v.nguoi) + '</p>' +
+          '<p class="tiny" style="line-height:1.75;color:#B4720F"><b>Không ai làm thì:</b> ' +
+          h(v.roi) + '</p>' +
+          '<p class="tiny dim mt" style="line-height:1.7">Tài liệu tự nối: ' + h(v.tuKho) +
+          ' · màn <b>' + h(v.manNoi) + '</b>' +
+          (x.manCoThat ? '' : ' <span style="color:#BE0E16">(MÀN KHÔNG CÓ THẬT)</span>') +
+          (x.khoThieu.length ? ' <span style="color:#BE0E16">· kho chưa có: ' +
+            h(x.khoThieu.join(', ')) + '</span>' : '') + '</p></div>';
+      }).join('') + '</div>';
+    });
+
+    o += U.sec('Luật của bảng này', '');
+    var hl = G.DKH_LUAT || {};
+    o += '<div class="card mb">' + Object.keys(hl).map(function (k) {
+      return '<p class="tiny" style="line-height:1.75;padding:4px 0">• ' + h(hl[k]) + '</p>';
+    }).join('') + '</div>';
+
+    o += G.kaKhung ? G.kaKhung('hoat-dong', 'cuoi') : '';
     return o;
   };
 })();

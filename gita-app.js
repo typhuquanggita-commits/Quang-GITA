@@ -4,11 +4,11 @@
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 106 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 108 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
-   21 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
-   giấy phép có gói nghề. Máy của gia đình nhẹ đi 459 KB.
+   23 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
+   giấy phép có gói nghề. Máy của gia đình nhẹ đi 501 KB.
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -20,7 +20,7 @@
 /* ═════════ sinh lúc gộp: màn nằm ở gita-nghe.js ═════════ */
 (function(){var G=window.G||{};window.G=G;
 G.MA_NGHE_TEP="gita-nghe.js";
-G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach"];
+G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong"];
 })();
 
 /* ═════════ src/data.core.js ═════════ */
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.60',
+  version: '9.61',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -608,6 +608,13 @@ G.NAV = [
     /* Bàn làm việc của Coach: năm ngăn vét cạn, gói tài nguyên tám ô,
        trợ lý nhắc việc có hạn giờ. Khoá ở pro_coach — đây là hàng đợi
        công việc, và nhà mình đọc thì thấy mình là một dòng trong đó. */
+    /* Bàn của Tư vấn — khoá ở pro_consult, cùng lý do với bàn Coach:
+       đây là hàng đợi nội bộ, và nhà mình đọc thì thấy mình là một dòng
+       trong đó, kèm cả lý do chưa ai trả lời. */
+    {v:'ban-tu-van',  t:'Bàn làm việc của Tư vấn', h:'5 ngăn vét cạn · 7 câu sàng lọc có 4 câu chặn · 9 ô hồ sơ · gói 6 ô đóng sẵn', ic:'compass', star:1, perm:'pro_consult', capMo:'nghe'},
+    /* Bảng đăng ký hoạt động — khoá ở pro_coach vì nó phơi toàn bộ quy
+       trình nội bộ: ai làm gì, hạn bao lâu, không ai làm thì rơi đi đâu. */
+    {v:'hoat-dong',   t:'Đăng ký hoạt động — việc nào không ai nhận', h:'21 hoạt động · 3 mức tự động · 4 việc máy không được nhận · đường rơi của từng việc', ic:'grid', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ban-coach',   t:'Bàn làm việc của Coach', h:'5 ngăn vét cạn · gói 8 ô đóng sẵn · trợ lý nhắc việc có hạn giờ · 4 lượt rà soát', ic:'pulse', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ban-ve',      t:'Bộ bản vẽ — 50 ô, mỗi ô một tag', h:'4 nguyên tắc · 50 cấp độ · 4 cổng · 10 nhịp · 20 tín hiệu đỏ · bản đồ nâng cấp', ic:'map', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'tang5-pro',   t:'Dòng T5-PRO — Gia đình Thịnh vượng', h:'24 tháng · 4 giai đoạn · đội 3 vai · 6 tiêu chí cửa vào · 5 kịch bản từ chối', ic:'vault', star:1, perm:'pro_gia_nghiep', capMo:'nghe'},
@@ -1104,6 +1111,8 @@ G.ITEM_EN = {
   'bang-tin':['You are not walking alone','Community news · 6 criteria for a story to run · every number states where it is counted from'],
   'ban-co':['The journey board','One board per tier · one square a day · pick 1 of 10 · points weighted by what matters now'],
   'ban-coach':['The coach workbench','5 exhaustive lanes · an 8-slot prepared pack · timed reminders · 4 morning sweeps'],
+  'ban-tu-van':['The consultant workbench','5 exhaustive lanes · 7 screening questions, 4 of them blocking · a 9-cell intake record · a 6-slot prepared pack'],
+  'hoat-dong':['Activity register — which work has no owner','21 activities · 3 automation levels · 4 things the machine may never take · a fall-through path for each'],
   'ban-ve':['The blueprint set — 50 cells, one tag each','4 reading principles · 50 levels · 4 gates · 10 beats · 20 red signals · an upgrade map'],
   'tang5-pro':['The T5-PRO line — Prosperous Family','24 months · 4 phases · a 3-role team · 6 intake criteria · 5 refusal scripts'],
   'so-tay-van-hanh':['Ten rules, and where each one actually holds','Priority order · 10 charter points · 4 things forbidden at scale · 4 places the system breaks'],
@@ -3527,6 +3536,11 @@ G.THUOC_CAP_PHEP = [
   'BLV_NHAC','BLV_NHAC_LUAT','BLV_RASOAT','BLV_LUAT',
   'BLV_DUYET','BLV_DUYET_DIEU','BLV_DUYET_LUAT','BLV_CHOCHU',
   'BLV_MOC','BLV_MOC_LUAT',
+  /* Bàn làm việc của Tư vấn (TVB_*) và bảng đăng ký hoạt động (HD_*).
+     Ở gói NGHỀ: bàn Tư vấn cho thấy nhà nào đang bị treo và vì sao chưa
+     chốt, còn bảng hoạt động cho thấy toàn bộ quy trình nội bộ. */
+  'TVB_LOI','TVB_NGAN','TVB_NGAN_LUAT','TVB_GOI','TVB_GOI_LUAT','TVB_LUAT',
+  'DKH_LOI','DKH_MUC','DKH_CAM_MAY','DKH_VIEC','DKH_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',

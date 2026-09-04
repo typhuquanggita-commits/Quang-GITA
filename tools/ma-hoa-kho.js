@@ -22,10 +22,33 @@ const GOC = path.join(__dirname, '..');
 const NGUON = path.join(GOC, 'kho-goc');
 const RA = path.join(GOC, 'kho');
 
-/* ─── Nạp nội dung gốc ─── */
+/* ─── Nạp nội dung gốc ───
+
+   Mọi tệp kho-goc nạp vào CÙNG MỘT window.G. Hai tệp đặt trùng tên kho
+   thì tệp sau đè tệp trước, im lặng — kho cũ biến mất mà mọi phép đếm
+   vẫn xanh, vì tên kho vẫn còn đó và vẫn có nội dung.
+
+   Bản 9.61 mắc đúng lỗi ấy: bảng đăng ký hoạt động dùng tiền tố HD_,
+   mà HD_LUAT đã là luật hợp đồng tuyển dụng ở data.hop-dong-tuyen.js.
+   Màn tuyển dụng mất luật của nó và không có gì báo. Bắt được là nhờ
+   một phép đo tay, không nhờ phép kiểm nào — nên nay có phép kiểm. */
 global.window = {};
-for (const t of fs.readdirSync(NGUON).filter(f => f.endsWith('.js')).sort())
+const CHU_KHO = {};
+for (const t of fs.readdirSync(NGUON).filter(f => f.endsWith('.js')).sort()) {
+  const truoc = Object.assign({}, global.window.G || {});
   require(path.join(NGUON, t));
+  const sau = global.window.G || {};
+  for (const k of Object.keys(sau)) {
+    if (!/^[A-Z]/.test(k)) continue;          /* hàm và biến thường bỏ qua */
+    if (k in truoc && truoc[k] !== sau[k]) {
+      console.error('  ✗ TRÙNG TÊN KHO: ' + k + ' — ' + (CHU_KHO[k] || '?') +
+        ' đã đặt, rồi ' + t + ' đè lên.');
+      console.error('     Kho bị đè biến mất mà mọi phép đếm vẫn xanh. Đổi tên một trong hai.');
+      process.exit(1);
+    }
+    if (!(k in truoc)) CHU_KHO[k] = t;
+  }
+}
 const G = global.window.G;
 
 /* ─── Chia gói theo phạm vi cấp phép ─── */
@@ -462,6 +485,11 @@ const NGHE = [
   'BLV_NHAC','BLV_NHAC_LUAT','BLV_RASOAT','BLV_LUAT',
   'BLV_DUYET','BLV_DUYET_DIEU','BLV_DUYET_LUAT','BLV_CHOCHU',
   'BLV_MOC','BLV_MOC_LUAT',
+  /* Bàn làm việc của Tư vấn (TVB_*) và bảng đăng ký hoạt động (HD_*).
+     Ở gói NGHỀ: bàn Tư vấn cho thấy nhà nào đang bị treo và vì sao chưa
+     chốt, còn bảng hoạt động cho thấy toàn bộ quy trình nội bộ. */
+  'TVB_LOI','TVB_NGAN','TVB_NGAN_LUAT','TVB_GOI','TVB_GOI_LUAT','TVB_LUAT',
+  'DKH_LOI','DKH_MUC','DKH_CAM_MAY','DKH_VIEC','DKH_LUAT',
 ];
 
 const goi = {};

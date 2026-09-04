@@ -23,6 +23,8 @@
     "src/tang34.js",
     "src/tang5-pro.js",
     "src/ban-ve.js",
-    "src/ban-lam-viec.js"
+    "src/ban-lam-viec.js",
+  "src/ban-tu-van.js",
+  "src/hoat-dong.js"
   ]
 }

@@ -199,6 +199,8 @@ G.ITEM_EN = {
   'bang-tin':['You are not walking alone','Community news · 6 criteria for a story to run · every number states where it is counted from'],
   'ban-co':['The journey board','One board per tier · one square a day · pick 1 of 10 · points weighted by what matters now'],
   'ban-coach':['The coach workbench','5 exhaustive lanes · an 8-slot prepared pack · timed reminders · 4 morning sweeps'],
+  'ban-tu-van':['The consultant workbench','5 exhaustive lanes · 7 screening questions, 4 of them blocking · a 9-cell intake record · a 6-slot prepared pack'],
+  'hoat-dong':['Activity register — which work has no owner','21 activities · 3 automation levels · 4 things the machine may never take · a fall-through path for each'],
   'ban-ve':['The blueprint set — 50 cells, one tag each','4 reading principles · 50 levels · 4 gates · 10 beats · 20 red signals · an upgrade map'],
   'tang5-pro':['The T5-PRO line — Prosperous Family','24 months · 4 phases · a 3-role team · 6 intake criteria · 5 refusal scripts'],
   'so-tay-van-hanh':['Ten rules, and where each one actually holds','Priority order · 10 charter points · 4 things forbidden at scale · 4 places the system breaks'],
