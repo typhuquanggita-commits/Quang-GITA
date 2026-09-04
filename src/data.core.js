@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.63',
+  version: '9.64',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -604,6 +604,10 @@ G.NAV = [
     /* Chuẩn ngôn ngữ — khoá pro_coach vì bảng cấm phơi ra đúng câu
        người bán dễ nói nhất, và đó là bộ đề sát hạch chứ không phải
        tài liệu giới thiệu. */
+    /* 1000 điểm chạm — khoá pro_coach. Bảng này phơi ra hệ định chạm
+       vào cảm xúc nào lúc nào, nên nhà mình đọc thì thấy trước cả
+       khoảnh khắc mình sắp được chạm. */
+    {v:'diem-cham-1000', t:'1000 điểm chạm · 1000 điểm khoá', h:'50 ô × 10 nhịp × 2 người · Coach bắt buộc / tuỳ chọn / không cần · 12 điều tay nghề 30 năm', ic:'sparkle', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'chuan-ngon-ngu', t:'Chuẩn ngôn ngữ sáu vai', h:'6 vai · 9 câu cấm theo cấu trúc · máy soát chạy trên chính kho · câu thay cho từng chỗ', ic:'quote', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'pheu-chot',   t:'Phễu chốt — 90% đặt ở đúng chỗ', h:'5 tầng · ai bị loại ở đâu · chốt thô và chốt đủ điều kiện · ba số đọc kèm', ic:'filter', star:1, perm:'pro_consult', capMo:'nghe'},
     {v:'dien-thu',    t:'Diễn thử — hai buổi khó nhất', h:'2 bài × 20 lượt · mỗi lượt truy về kho và bộ lọc · câu dễ nói mà luật cấm', ic:'chat', star:1, perm:'pro_coach', capMo:'nghe'},

@@ -499,6 +499,11 @@ const NGHE = [
      loại ở tầng nào. */
   'NN_LOI','NN_VAI','NN_VAI_LUAT','NN_CAM','NN_CAM_LUAT',
   'PH_LOI','PH_TANG','PH_CHOT',
+  /* 1000 điểm chạm WOW + 1000 điểm khoá (máy sinh) và mười hai điều
+     tay nghề (viết tay). Ở gói NGHỀ: bảng này phơi ra đúng chỗ hệ
+     định chạm vào cảm xúc nào, lúc nào. */
+  'DC1K_WOW','DC1K_KHOA',
+  'TN_LOI','TN_DIEU','TN_LUAT','TN_GHIDE','TN_GHIDE_LUAT',
 ];
 
 const goi = {};

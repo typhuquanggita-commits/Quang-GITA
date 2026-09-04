@@ -157,6 +157,11 @@ G.THUOC_CAP_PHEP = [
      loại ở tầng nào. */
   'NN_LOI','NN_VAI','NN_VAI_LUAT','NN_CAM','NN_CAM_LUAT',
   'PH_LOI','PH_TANG','PH_CHOT',
+  /* 1000 điểm chạm WOW + 1000 điểm khoá (máy sinh) và mười hai điều
+     tay nghề (viết tay). Ở gói NGHỀ: bảng này phơi ra đúng chỗ hệ
+     định chạm vào cảm xúc nào, lúc nào. */
+  'DC1K_WOW','DC1K_KHOA',
+  'TN_LOI','TN_DIEU','TN_LUAT','TN_GHIDE','TN_GHIDE_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
