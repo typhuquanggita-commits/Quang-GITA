@@ -107,6 +107,7 @@
   "src/dien-thu.js",
   "src/ngon-ngu.js",
   "src/diem-cham.js",
+  "src/hanh-lang.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",

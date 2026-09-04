@@ -201,6 +201,8 @@ G.ITEM_EN = {
   'ban-coach':['The coach workbench','5 exhaustive lanes · an 8-slot prepared pack · timed reminders · 4 morning sweeps'],
   'ban-tu-van':['The consultant workbench','5 exhaustive lanes · 7 screening questions, 4 of them blocking · a 9-cell intake record · a 6-slot prepared pack'],
   'diem-cham-1000':['1000 wow touchpoints, 1000 retention locks','50 level cells x 10 beats x 2 people · coach required / optional / not needed · the 12 things thirty years teaches you not to do'],
+  'hanh-lang':['The success corridor — the app auditing itself','12 laws · 18 failure strains with a vaccine each, verified against live code · 9 locks · the Six Beats · 7 health indicators · where the doc and the app disagree'],
+  'ra-soat-loi':['System fault review — 66 break points','8 groups · 13 release-blocking faults, each checked against the running function · 4 root causes · 5 waves'],
   'chuan-ngon-ngu':['Language standard for six roles','6 roles · 9 banned sentence patterns, not banned words · a scanner that runs over the real vault · a replacement line for each hit'],
   'pheu-chot':['Conversion funnel - where the 90% actually belongs','5 tiers · who gets screened out where · raw close rate vs qualified close rate · the three numbers to read alongside'],
   'dien-thu':['Dry run — the two hardest sessions','2 cases x 20 turns · every turn traced to a store and a language filter · the easy line the rules forbid'],

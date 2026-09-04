@@ -504,6 +504,13 @@ const NGHE = [
      định chạm vào cảm xúc nào, lúc nào. */
   'DC1K_WOW','DC1K_KHOA',
   'TN_LOI','TN_DIEU','TN_LUAT','TN_GHIDE','TN_GHIDE_LUAT',
+  /* Hành lang thành công và bản rà soát lỗi hệ thống. Hai kho này soi
+     chính hệ đang chạy — chúng nêu tên hàm, tên kho và chỗ còn hở, nên
+     ai đọc được là đọc luôn bản đồ chỗ yếu. Khoá ở gói NGHỀ. */
+  'HL_LOI','HL_LUAT12','HL_LUAT12_LUAT','HL_VIRUS','HL_VIRUS_LUAT',
+  'HL_QUYTRINH','HL_KHOA9','HL_KHOA9_LUAT','HL_SAUNHIP','HL_SAUNHIP_LUAT',
+  'HL_CHISO','HL_LECH',
+  'RS_LOI','RS_NHOM','RS_CHAN','RS_GOC','RS_HOI','RS_DOT','RS_LUAT',
 ];
 
 const goi = {};

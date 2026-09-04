@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.64',
+  version: '9.65',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -322,7 +322,15 @@ G.TAM_NHIN = [
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
   {vai:['R07','R08'], pt:78,
    ghi:'Như R05–R06, và không mở màn của dòng gia nghiệp T5-PRO.'},
-  {vai:['R09','R10','R11'], pt:75,
+  /* 73 chứ không còn 75. Hai màn mới ở 9.65 — Hành lang thành công và
+     Rà soát lỗi hệ thống — khoá ở pro_coach, tức dừng đúng R08. Tử số
+     của ba vị trí này đứng yên mà mẫu số tăng hai, nên tỉ lệ tụt.
+
+     Lần thứ năm làm đúng một việc: sửa SỐ CÔNG BỐ, không nới dung sai.
+     Phép thử vẫn thế — phần KHOÁ của ba vị trí này có mở thêm màn quản
+     trị nào không. Không. Hai màn ấy nêu tên hàm, tên kho và chỗ hệ còn
+     hở; đó là bản đồ chỗ yếu, nên nó ở lại trong tay người điều phối. */
+  {vai:['R09','R10','R11'], pt:73,
    ghi:'Như trên, và không mở ba màn thuộc phạm vi quản lý chuyên môn.'},
   /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
      thiệt thòi. Phân tích dữ liệu đọc được toàn bộ kho nghề và mọi màn số
@@ -387,7 +395,9 @@ G.TAM_NHIN = [
      NỘI DUNG. Trần 30% anh Quang đặt là trần nội dung, canh ở
      G.TRAN_KHACH trong src/kho-khach.js — hai thứ khác hẳn nhau, và hai
      màn vừa thêm không mang theo bản ghi nghề nào. */
-  {vai:['R15'], pt:33, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
+  /* 31 chứ không còn 33 — cùng một lý do với R09–R11 ở 9.65: mẫu số
+     tăng hai màn nghề mà cộng tác viên vốn không thấy. */
+  {vai:['R15'], pt:31, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -608,6 +618,12 @@ G.NAV = [
        vào cảm xúc nào lúc nào, nên nhà mình đọc thì thấy trước cả
        khoảnh khắc mình sắp được chạm. */
     {v:'diem-cham-1000', t:'1000 điểm chạm · 1000 điểm khoá', h:'50 ô × 10 nhịp × 2 người · Coach bắt buộc / tuỳ chọn / không cần · 12 điều tay nghề 30 năm', ic:'sparkle', star:1, perm:'pro_coach', capMo:'nghe'},
+    /* Hành lang thành công — 12 luật, 18 virus và bộ vắc-xin, soi thẳng
+       vào hệ đang chạy chứ không chép lại tài liệu. Và bản rà soát 66
+       điểm gãy: nó nói chỗ nào của chính app này còn hở. Cả hai đều nêu
+       tên hàm và tên kho, nên khoá ở quyền nghề. */
+    {v:'hanh-lang',   t:'Hành lang thành công — máy tự soi mình', h:'12 luật · 18 virus × vắc-xin có người kiểm · 9 khoá · Sáu Nhịp · 7 chỉ số · chỗ lệch với tài liệu', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'ra-soat-loi', t:'Rà soát lỗi hệ thống — 66 điểm gãy', h:'8 nhóm · 13 lỗi chặn phát hành, mỗi lỗi đối chiếu với hàm đang chạy · 4 gốc rễ · 5 đợt', ic:'alert', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'chuan-ngon-ngu', t:'Chuẩn ngôn ngữ sáu vai', h:'6 vai · 9 câu cấm theo cấu trúc · máy soát chạy trên chính kho · câu thay cho từng chỗ', ic:'quote', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'pheu-chot',   t:'Phễu chốt — 90% đặt ở đúng chỗ', h:'5 tầng · ai bị loại ở đâu · chốt thô và chốt đủ điều kiện · ba số đọc kèm', ic:'filter', star:1, perm:'pro_consult', capMo:'nghe'},
     {v:'dien-thu',    t:'Diễn thử — hai buổi khó nhất', h:'2 bài × 20 lượt · mỗi lượt truy về kho và bộ lọc · câu dễ nói mà luật cấm', ic:'chat', star:1, perm:'pro_coach', capMo:'nghe'},
