@@ -203,6 +203,7 @@ G.ITEM_EN = {
   'diem-cham-1000':['1000 wow touchpoints, 1000 retention locks','50 level cells x 10 beats x 2 people · coach required / optional / not needed · the 12 things thirty years teaches you not to do'],
   'ra-soat-phap-ly':['Legal review — 64 findings','8 groups · 20 critical findings each checked against the running function · 2 new statutes · 4 places the document and the app disagree'],
   'bang-chung':['Electronic evidence standard','13 operations x 6 properties · the machine reads the real log and counts · 3 ways evidence loses its value · the 5 nearest fixes'],
+  'ky-ket':['Signing guide — three streams of engagement','Employment · client service · finance · 7 gates before the pen touches paper · a contract decision tree · 8 things never to do'],
   'ho-so-hop-dong':['Contract and operations file set','16 contracts · 25 base clauses · 6 special clauses checked in reverse · a pay formula the machine reads itself · 3 signature tiers'],
   'hanh-lang':['The success corridor — the app auditing itself','12 laws · 18 failure strains with a vaccine each, verified against live code · 9 locks · the Six Beats · 7 health indicators · where the doc and the app disagree'],
   'ra-soat-loi':['System fault review — 66 break points','8 groups · 13 release-blocking faults, each checked against the running function · 4 root causes · 5 waves'],

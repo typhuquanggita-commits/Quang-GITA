@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.66',
+  version: '9.67',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -290,7 +290,27 @@ G.TAM_NHIN = [
      nên tử số của R03–R04 tăng bốn trong khi mẫu số cũng tăng bốn —
      tử số tăng nhanh hơn nên tỉ lệ nhích. Sửa số công bố, không nới
      dung sai: phần quản trị khoá của hai vị trí này không mở thêm gì. */
-  {vai:['R03','R04'], pt:82,
+  /* ── ĐỢT SỬA SỐ CÔNG BỐ THỨ BẢY, Ở BẢN 9.67 ──
+     Sáu vị trí lệch CÙNG LÚC, và đó là dấu hiệu khác hẳn sáu lần
+     trước: không phải một màn mới đẩy một con số ra khỏi dung sai,
+     mà là drift TÍCH LẠI qua bốn bản 9.64–9.67 rồi cả sáu cùng
+     vượt ±2 trong một lần thêm màn.
+
+     R03·R04 82→84 và R07·R08 78→80 nhích LÊN: màn ký kết khoá ở
+     pro_coach nên bốn vị trí này thấy nó, tử số tăng nhanh hơn mẫu.
+     R13 39→37 và R14 35→33 tụt XUỐNG: phụ huynh và học viên không
+     thấy màn ấy, tử số đứng yên mà mẫu số tăng.
+
+     Phép thử vẫn không đổi qua cả bảy lần: phần KHOÁ của bốn vị trí
+     kia có mở thêm màn quản trị nào không. Không — thứ dày lên là
+     phần nghề và phần pháp lý nội bộ, mà nhà mình vốn không vào.
+
+     Ghi lại một điều đáng canh về sau: khi SÁU con số cùng lệch một
+     lượt thì phải hỏi lại xem có phải cách đếm hỏng không, chứ đừng
+     sửa sáu số cho xong. Lần này đã kiểm: mẫu số tăng đúng một màn,
+     bốn vị trí có quyền thì tử số cũng tăng một, hai vị trí không có
+     quyền thì tử số đứng yên. Cách đếm còn đúng. */
+  {vai:['R03','R04'], pt:84,
    ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
   /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
      chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
@@ -320,7 +340,7 @@ G.TAM_NHIN = [
      phải hàng rào bị nới. */
   {vai:['R05','R06'], pt:79,
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
-  {vai:['R07','R08'], pt:78,
+  {vai:['R07','R08'], pt:80,
    ghi:'Như R05–R06, và không mở màn của dòng gia nghiệp T5-PRO.'},
   /* 73 chứ không còn 75. Hai màn mới ở 9.65 — Hành lang thành công và
      Rà soát lỗi hệ thống — khoá ở pro_coach, tức dừng đúng R08. Tử số
@@ -381,9 +401,9 @@ G.TAM_NHIN = [
      năm câu hệ chưa trả lời được, con đường năm tầng — đều mở cho mọi
      vai. Sửa SỐ CÔNG BỐ, không nới dung sai: phần khoá của phụ huynh
      không mở thêm một màn nghề nào. */
-  {vai:['R13'], pt:39, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
+  {vai:['R13'], pt:37, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
   /* 35 chứ không còn 33 — cùng lý do với R03–R04 và R13. */
-  {vai:['R14'], pt:35, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
+  {vai:['R14'], pt:33, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
   /* 31 chứ không còn 29. Hai màn mới ở 9.19 và 9.20 — sổ tay của gia
      đình, và năm câu hệ chưa trả lời được — đều mở cho MỌI vai, nên
      R15 thấy thêm hai màn trong khi mẫu số cũng tăng hai. Tử số tăng
@@ -638,6 +658,7 @@ G.NAV = [
        có, và nó là bảy quyền của gia đình, mở cho mọi vai. */
     {v:'ra-soat-phap-ly', t:'Rà soát pháp lý — 64 phát hiện', h:'8 nhóm · 20 mục nghiêm trọng đối chiếu với hàm đang chạy · 2 luật mới · 4 chỗ tài liệu và app nói khác nhau', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'bang-chung',  t:'Chuẩn bằng chứng điện tử', h:'13 thao tác × 6 tính chất · máy đọc nhật ký thật rồi đếm · 3 lỗi làm bằng chứng mất giá trị · 5 việc gần nhất', ic:'lock', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'ky-ket',      t:'Hướng dẫn ký kết — ba luồng phát sinh', h:'Lao động · dịch vụ khách · tài chính · 7 cửa trước khi đặt bút · cây chọn hợp đồng · 8 việc cấm', ic:'check', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ho-so-hop-dong', t:'Bộ hồ sơ hợp đồng và vận hành', h:'16 hợp đồng · 25 điều khoản nền · 6 điều khoản đặc thù đối chiếu ngược · công thức lương máy tự đọc · 3 cấp chữ ký', ic:'book', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'hanh-lang',   t:'Hành lang thành công — máy tự soi mình', h:'12 luật · 18 virus × vắc-xin có người kiểm · 9 khoá · Sáu Nhịp · 7 chỉ số · chỗ lệch với tài liệu', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ra-soat-loi', t:'Rà soát lỗi hệ thống — 66 điểm gãy', h:'8 nhóm · 13 lỗi chặn phát hành, mỗi lỗi đối chiếu với hàm đang chạy · 4 gốc rễ · 5 đợt', ic:'alert', star:1, perm:'pro_coach', capMo:'nghe'},

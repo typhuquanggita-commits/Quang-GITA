@@ -183,6 +183,11 @@ G.THUOC_CAP_PHEP = [
   'HSH_LOI','HSH_DK6','HSH_DK6_LUAT','HSH_DK','HSH_HD','HSH_BAC','HSH_LUONG_LUAT',
   'HSH_PHONG','HSH_VO','HSH_HOP','HSH_HOP_LUAT','HSH_KY','HSH_KY_LUAT',
   'HSH_LOTRINH','HSH_LOTRINH_LUAT','HSH_BAOMAT','HSH_LUAT',
+  /* Hướng dẫn ký kết theo ba luồng phát sinh. Kho này nêu ai ký, ký
+     cấp mấy và chỗ dễ sai — đọc được là đọc luôn quy trình nội bộ
+     của Học viện. Khoá ở gói NGHỀ. */
+  'KK_LOI','KK_CUA','KK_CUA_LUAT','KK_A','KK_B','KK_C','KK_LUONG_LUAT',
+  'KK_CHON','KK_CHON_LUAT','KK_CAM','KK_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',

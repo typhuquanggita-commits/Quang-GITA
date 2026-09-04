@@ -2057,11 +2057,11 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 113 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 114 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
-   28 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
-   giấy phép có gói nghề. Máy của gia đình nhẹ đi 635 KB.
+   29 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
+   giấy phép có gói nghề. Máy của gia đình nhẹ đi 654 KB.
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -2073,7 +2073,7 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 /* ═════════ sinh lúc gộp: màn nằm ở gita-nghe.js ═════════ */
 (function(){var G=window.G||{};window.G=G;
 G.MA_NGHE_TEP="gita-nghe.js";
-G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong","dien-thu","chuan-ngon-ngu","pheu-chot","diem-cham-1000","hanh-lang","ra-soat-loi","ra-soat-phap-ly","bang-chung","ho-so-hop-dong"];
+G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong","dien-thu","chuan-ngon-ngu","pheu-chot","diem-cham-1000","hanh-lang","ra-soat-loi","ra-soat-phap-ly","bang-chung","ho-so-hop-dong","ky-ket"];
 })();
 
 /* ═════════ src/data.core.js ═════════ */
@@ -2098,7 +2098,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.66',
+  version: '9.67',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2370,7 +2370,27 @@ G.TAM_NHIN = [
      nên tử số của R03–R04 tăng bốn trong khi mẫu số cũng tăng bốn —
      tử số tăng nhanh hơn nên tỉ lệ nhích. Sửa số công bố, không nới
      dung sai: phần quản trị khoá của hai vị trí này không mở thêm gì. */
-  {vai:['R03','R04'], pt:82,
+  /* ── ĐỢT SỬA SỐ CÔNG BỐ THỨ BẢY, Ở BẢN 9.67 ──
+     Sáu vị trí lệch CÙNG LÚC, và đó là dấu hiệu khác hẳn sáu lần
+     trước: không phải một màn mới đẩy một con số ra khỏi dung sai,
+     mà là drift TÍCH LẠI qua bốn bản 9.64–9.67 rồi cả sáu cùng
+     vượt ±2 trong một lần thêm màn.
+
+     R03·R04 82→84 và R07·R08 78→80 nhích LÊN: màn ký kết khoá ở
+     pro_coach nên bốn vị trí này thấy nó, tử số tăng nhanh hơn mẫu.
+     R13 39→37 và R14 35→33 tụt XUỐNG: phụ huynh và học viên không
+     thấy màn ấy, tử số đứng yên mà mẫu số tăng.
+
+     Phép thử vẫn không đổi qua cả bảy lần: phần KHOÁ của bốn vị trí
+     kia có mở thêm màn quản trị nào không. Không — thứ dày lên là
+     phần nghề và phần pháp lý nội bộ, mà nhà mình vốn không vào.
+
+     Ghi lại một điều đáng canh về sau: khi SÁU con số cùng lệch một
+     lượt thì phải hỏi lại xem có phải cách đếm hỏng không, chứ đừng
+     sửa sáu số cho xong. Lần này đã kiểm: mẫu số tăng đúng một màn,
+     bốn vị trí có quyền thì tử số cũng tăng một, hai vị trí không có
+     quyền thì tử số đứng yên. Cách đếm còn đúng. */
+  {vai:['R03','R04'], pt:84,
    ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
   /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
      chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
@@ -2400,7 +2420,7 @@ G.TAM_NHIN = [
      phải hàng rào bị nới. */
   {vai:['R05','R06'], pt:79,
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
-  {vai:['R07','R08'], pt:78,
+  {vai:['R07','R08'], pt:80,
    ghi:'Như R05–R06, và không mở màn của dòng gia nghiệp T5-PRO.'},
   /* 73 chứ không còn 75. Hai màn mới ở 9.65 — Hành lang thành công và
      Rà soát lỗi hệ thống — khoá ở pro_coach, tức dừng đúng R08. Tử số
@@ -2461,9 +2481,9 @@ G.TAM_NHIN = [
      năm câu hệ chưa trả lời được, con đường năm tầng — đều mở cho mọi
      vai. Sửa SỐ CÔNG BỐ, không nới dung sai: phần khoá của phụ huynh
      không mở thêm một màn nghề nào. */
-  {vai:['R13'], pt:39, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
+  {vai:['R13'], pt:37, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
   /* 35 chứ không còn 33 — cùng lý do với R03–R04 và R13. */
-  {vai:['R14'], pt:35, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
+  {vai:['R14'], pt:33, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
   /* 31 chứ không còn 29. Hai màn mới ở 9.19 và 9.20 — sổ tay của gia
      đình, và năm câu hệ chưa trả lời được — đều mở cho MỌI vai, nên
      R15 thấy thêm hai màn trong khi mẫu số cũng tăng hai. Tử số tăng
@@ -2718,6 +2738,7 @@ G.NAV = [
        có, và nó là bảy quyền của gia đình, mở cho mọi vai. */
     {v:'ra-soat-phap-ly', t:'Rà soát pháp lý — 64 phát hiện', h:'8 nhóm · 20 mục nghiêm trọng đối chiếu với hàm đang chạy · 2 luật mới · 4 chỗ tài liệu và app nói khác nhau', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'bang-chung',  t:'Chuẩn bằng chứng điện tử', h:'13 thao tác × 6 tính chất · máy đọc nhật ký thật rồi đếm · 3 lỗi làm bằng chứng mất giá trị · 5 việc gần nhất', ic:'lock', star:1, perm:'pro_coach', capMo:'nghe'},
+    {v:'ky-ket',      t:'Hướng dẫn ký kết — ba luồng phát sinh', h:'Lao động · dịch vụ khách · tài chính · 7 cửa trước khi đặt bút · cây chọn hợp đồng · 8 việc cấm', ic:'check', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ho-so-hop-dong', t:'Bộ hồ sơ hợp đồng và vận hành', h:'16 hợp đồng · 25 điều khoản nền · 6 điều khoản đặc thù đối chiếu ngược · công thức lương máy tự đọc · 3 cấp chữ ký', ic:'book', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'hanh-lang',   t:'Hành lang thành công — máy tự soi mình', h:'12 luật · 18 virus × vắc-xin có người kiểm · 9 khoá · Sáu Nhịp · 7 chỉ số · chỗ lệch với tài liệu', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ra-soat-loi', t:'Rà soát lỗi hệ thống — 66 điểm gãy', h:'8 nhóm · 13 lỗi chặn phát hành, mỗi lỗi đối chiếu với hàm đang chạy · 4 gốc rễ · 5 đợt', ic:'alert', star:1, perm:'pro_coach', capMo:'nghe'},
@@ -3225,6 +3246,7 @@ G.ITEM_EN = {
   'diem-cham-1000':['1000 wow touchpoints, 1000 retention locks','50 level cells x 10 beats x 2 people · coach required / optional / not needed · the 12 things thirty years teaches you not to do'],
   'ra-soat-phap-ly':['Legal review — 64 findings','8 groups · 20 critical findings each checked against the running function · 2 new statutes · 4 places the document and the app disagree'],
   'bang-chung':['Electronic evidence standard','13 operations x 6 properties · the machine reads the real log and counts · 3 ways evidence loses its value · the 5 nearest fixes'],
+  'ky-ket':['Signing guide — three streams of engagement','Employment · client service · finance · 7 gates before the pen touches paper · a contract decision tree · 8 things never to do'],
   'ho-so-hop-dong':['Contract and operations file set','16 contracts · 25 base clauses · 6 special clauses checked in reverse · a pay formula the machine reads itself · 3 signature tiers'],
   'hanh-lang':['The success corridor — the app auditing itself','12 laws · 18 failure strains with a vaccine each, verified against live code · 9 locks · the Six Beats · 7 health indicators · where the doc and the app disagree'],
   'ra-soat-loi':['System fault review — 66 break points','8 groups · 13 release-blocking faults, each checked against the running function · 4 root causes · 5 waves'],
@@ -5695,6 +5717,11 @@ G.THUOC_CAP_PHEP = [
   'HSH_LOI','HSH_DK6','HSH_DK6_LUAT','HSH_DK','HSH_HD','HSH_BAC','HSH_LUONG_LUAT',
   'HSH_PHONG','HSH_VO','HSH_HOP','HSH_HOP_LUAT','HSH_KY','HSH_KY_LUAT',
   'HSH_LOTRINH','HSH_LOTRINH_LUAT','HSH_BAOMAT','HSH_LUAT',
+  /* Hướng dẫn ký kết theo ba luồng phát sinh. Kho này nêu ai ký, ký
+     cấp mấy và chỗ dễ sai — đọc được là đọc luôn quy trình nội bộ
+     của Học viện. Khoá ở gói NGHỀ. */
+  'KK_LOI','KK_CUA','KK_CUA_LUAT','KK_A','KK_B','KK_C','KK_LUONG_LUAT',
+  'KK_CHON','KK_CHON_LUAT','KK_CAM','KK_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
@@ -31657,7 +31684,7 @@ G.MAY_KHACH_BI_CAT = function(ly){
 <script>
 /* ── gita-nghe.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — MÃ CỦA GÓI NGHỀ · 28 TỆP
+   GITA 365 — MÃ CỦA GÓI NGHỀ · 29 TỆP
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Sửa trong src/ rồi chạy:
    node tools/gop-src.js
@@ -42955,6 +42982,372 @@ G.VIEWS = G.VIEWS || {};
       return '<p class="tiny" style="line-height:1.8;padding:5px 0;border-bottom:1px solid var(--gita-vien-2)">▪ ' +
         h(x) + '</p>';
     }).join('') + '</div>';
+
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/ky-ket.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 · v9.67 — MÀN HƯỚNG DẪN KÝ KẾT
+
+   Kho chuẩn ở kho-goc/data.ky-ket.js. Ba phép kiểm làm việc thật:
+
+   1. kkSoiLuong()  — mỗi bước trỏ vào mã hợp đồng, mã cấp chữ ký và
+      mã bằng chứng CÓ THẬT ở kho khác. Đây là chỗ đắt nhất: một
+      hướng dẫn trỏ vào hợp đồng không tồn tại thì người làm theo nó
+      sẽ đứng trước thư viện và không tìm ra gì.
+
+   2. kkSoiKhongVuotCap() — không bước nào dùng chữ ký cấp C1 cho
+      loại văn bản mà HSH_KY nói phải dùng C3. Tài liệu gốc gọi đây
+      là "điểm dễ sai nhất", và nó là một trong hai điều máy canh
+      được thay người trong cả bộ hồ sơ.
+
+   3. kkSoiChon() — cây chọn phải phủ hết mười sáu hợp đồng và không
+      hợp đồng nào bị hai nhánh cùng chọn.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h;
+
+  function baLuong() {
+    return [G.KK_A, G.KK_B, G.KK_C].filter(Boolean);
+  }
+
+  G.kkBuoc = function () {
+    var ra = [];
+    baLuong().forEach(function (L) {
+      (L.buoc || []).forEach(function (b) { ra.push({ luong: L.ma, b: b }); });
+    });
+    return ra;
+  };
+
+  /* ═══════════ KHOÁ 1: MỌI MỐI NỐI PHẢI TRỎ VÀO CHỖ CÓ THẬT ═══════════ */
+  G.kkSoiLuong = function () {
+    var L = baLuong(), loi = [];
+    if (L.length !== 3) return { chuaDo: true, thieu: 'KK_A / KK_B / KK_C', loi: [] };
+
+    var coHD = {}, coKy = {}, coBC = {};
+    (G.HSH_HD || []).forEach(function (x) { coHD[x.ma] = 1; });
+    (G.HSH_KY || []).forEach(function (x) { coKy[x.ma] = 1; });
+    (G.BCD_THAOTAC || []).forEach(function (x) { coBC[x.ma] = 1; });
+    var coVB = {};
+    (G.RSP_VB || []).forEach(function (x) { coVB[x.ma] = 1; });
+    if (!Object.keys(coHD).length) return { chuaDo: true, thieu: 'HSH_HD', loi: [] };
+
+    L.forEach(function (x) {
+      ['ten', 'khiNao', 'nguy', 'buoc'].forEach(function (k) {
+        if (!x[k]) loi.push('luồng ' + x.ma + ' thiếu ô ' + k);
+      });
+      var thay = {};
+      (x.buoc || []).forEach(function (b) {
+        if (thay[b.ma]) loi.push(b.ma + ' trùng mã');
+        thay[b.ma] = 1;
+        ['viec', 'ai'].forEach(function (k) {
+          if (!b[k]) loi.push(b.ma + ' thiếu ô ' + k);
+        });
+        /* Bước không có bẫy là bước chưa ai làm hỏng bao giờ — và
+           bước như thế thì không cần viết ra. */
+        if (!b.bay) loi.push(b.ma + ' không khai cạm bẫy');
+
+        /* Mọi mã trỏ đi đều phải có thật. Ô hd có thể kể nhiều mã
+           trong một câu, nên bóc từng mã HĐ-xx ra mà kiểm. */
+        (String(b.hd || '').match(/(HĐ|VB)-\d\d/g) || []).forEach(function (m) {
+          if (coHD[m]) return;
+          /* Được phép trỏ vào văn bản CHƯA SOẠN — nhưng phải khai, và
+             phải nói chỗ chặn. Giấu đi thì người làm theo hướng dẫn
+             đi tìm một hợp đồng không tồn tại và tưởng mình tra sót. */
+          if (coVB[m] && b.chuaSoan) {
+            if (!b.chan) loi.push(b.ma + ' trỏ vào ' + m + ' chưa soạn mà không nói chỗ chặn');
+            return;
+          }
+          if (coVB[m])
+            loi.push(b.ma + ' trỏ vào ' + m + ' — văn bản ấy mới ở danh mục cần bổ sung, ' +
+              'bước phải khai chuaSoan');
+          else loi.push(b.ma + ' trỏ vào ' + m + ' — hợp đồng ấy không có thật');
+        });
+        (String(b.ky || '').match(/\bC[123]\b/g) || []).forEach(function (m) {
+          if (!coKy[m]) loi.push(b.ma + ' trỏ vào cấp chữ ký ' + m + ' — không có trong HSH_KY');
+        });
+        (String(b.bang || '').match(/BC\d\d/g) || []).forEach(function (m) {
+          if (!coBC[m]) loi.push(b.ma + ' trỏ vào bằng chứng ' + m + ' — không có trong BCD_THAOTAC');
+        });
+      });
+    });
+
+    if ((G.KK_CUA || []).length !== 7)
+      loi.push('phải có bảy cửa trước khi ký, đang có ' + (G.KK_CUA || []).length);
+    (G.KK_CUA || []).forEach(function (c) {
+      ['cua', 'hoi', 'khongQua'].forEach(function (k) {
+        if (!c[k]) loi.push('cửa ' + c.so + ' thiếu ô ' + k);
+      });
+    });
+    /* Bước ký cấp C2 hoặc C3 thì phải khai được nó ký VĂN BẢN NÀO —
+       nếu không, hạ cấp chữ ký sẽ không ai thấy, vì xoá ô ký là xoá
+       luôn dấu vết bước ấy ký gì.
+
+       Chỉ soi C2 và C3. C1 là xác nhận một THAO TÁC trong hệ — cấp
+       quyền, gắn mốc nhắc hạn, ghi một lượt đồng ý — nó không ký văn
+       bản nào, và bắt nó khai là bắt oan. */
+    G.kkBuoc().forEach(function (z) {
+      var b = z.b;
+      if (!/\bC[23]\b/.test(String(b.ky || ''))) return;
+      if (!/(HĐ|VB)-\d\d|BM-/.test(String(b.hd || '') + String(b.bm || '')))
+        loi.push(b.ma + ' ký cấp C2 hoặc C3 mà không khai ký văn bản nào ở ô hd hoặc ô bm');
+    });
+    if (!(G.KK_LUONG_LUAT || {}).maKhaiOHopDong)
+      loi.push('chưa khai luật mã hợp đồng khai ở ô hd');
+    if (!(G.KK_LUONG_LUAT || {}).troVaoVanBanChuaSoan)
+      loi.push('chưa khai luật trỏ vào văn bản chưa soạn');
+    if (!(G.KK_LUONG_LUAT || {}).moiBuocTroDuoc) loi.push('chưa khai luật mọi bước phải trỏ được');
+    if (!(G.KK_LUAT || {}).huongDanKhongPhaiYKien)
+      loi.push('chưa khai câu hướng dẫn không phải ý kiến pháp lý');
+    return { chuaDo: false, loi: loi, soLuong: L.length, soBuoc: G.kkBuoc().length };
+  };
+
+  /* ═══════════ KHOÁ 2: KHÔNG DÙNG C1 CHO VIỆC ĐÒI C3 ═══════════
+
+     Tài liệu gọi đây là điểm dễ sai nhất: tài khoản đăng nhập (C1)
+     là bằng chứng tốt cho phê duyệt nội bộ, nhưng KHÔNG thay được
+     chữ ký số ở giao dịch mà pháp luật đòi hỏi.
+
+     Phép này không đọc lời khai. Nó lấy danh sách "dùng cho" của
+     chính cấp C3 trong HSH_KY, rút ra các loại văn bản đòi C3, rồi
+     soi từng bước xem bước nào nói tới loại ấy mà lại khai cấp thấp
+     hơn. Ngày ai sửa HSH_KY thì phép này đổi theo, không phải sửa
+     hai chỗ. */
+  var LOAI_C3 = [
+    { ten: 'đầu tư',   re: /đầu tư/i },
+    { ten: 'cổ đông',  re: /cổ đông/i },
+    { ten: 'lao động', re: /lao động/i },
+    { ten: 'hoá đơn',  re: /ho[áa] đơn/i }
+  ];
+
+  G.kkSoiKhongVuotCap = function () {
+    var ky = G.HSH_KY || [], hd = G.HSH_HD || [], loi = [];
+    if (!ky.length) return { chuaDo: true, thieu: 'HSH_KY', loi: [] };
+    if (!hd.length) return { chuaDo: true, thieu: 'HSH_HD', loi: [] };
+    var c3 = ky.filter(function (x) { return x.ma === 'C3'; })[0];
+    if (!c3) return { chuaDo: true, thieu: 'HSH_KY cấp C3', loi: [] };
+
+    /* Mẫu tự kiểm — bốn loại rút ra phải thật sự nằm trong ô dùng-cho
+       của C3. Không nằm thì phép này đang canh một luật mà bảng chữ
+       ký không nói. */
+    LOAI_C3.forEach(function (t) {
+      if (!t.re.test(String(c3.dung)))
+        loi.push('MẪU HỎNG · "' + t.ten + '" không có trong ô dùng-cho của cấp C3');
+    });
+
+    /* Mã hợp đồng nào thuộc loại đòi C3 — đọc từ TÊN hợp đồng trong
+       HSH_HD, không đọc từ danh sách chép tay.
+
+       Bản đầu của phép này chỉ tìm chữ "lao động" trong câu của bước,
+       và nó CÂM: bước A6 nói "KÝ — chọn đúng cấp chữ ký" rồi trỏ vào
+       HĐ-16, mà trong cả bước không có chữ "lao động" nào. Hạ A6
+       xuống C1 thì không ai thấy. Nối theo MÃ mới bắt được. */
+    var maC3 = {};
+    hd.forEach(function (x) {
+      LOAI_C3.forEach(function (t) {
+        if (t.re.test(String(x.ten))) maC3[x.ma] = t.ten;
+      });
+    });
+    if (!Object.keys(maC3).length)
+      loi.push('MẪU HỎNG · không mã hợp đồng nào rơi vào bốn loại đòi C3 — phép đang canh rỗng');
+
+    function capTrongManh(manh) {
+      if (/\bC3\b/.test(manh)) return 'C3';
+      var m = manh.match(/\bC[12]\b/);
+      return m ? m[0] : '';
+    }
+
+    G.kkBuoc().forEach(function (x) {
+      var b = x.b, oKy = String(b.ky || '');
+      if (!oKy) return;
+      var manh = oKy.split('·');
+
+      /* Đường 1 — theo MÃ hợp đồng. Mã nào thuộc loại đòi C3 thì
+         mảnh ô ký nhắc tới mã ấy phải là C3; ô ký không nhắc mã nào
+         thì cả ô áp cho mọi mã của bước. */
+      var maTrongBuoc = (String(b.hd || '') + ' ' + oKy).match(/HĐ-\d\d/g) || [];
+      maTrongBuoc.forEach(function (m) {
+        if (!maC3[m]) return;
+        var chua = manh.filter(function (z) { return z.indexOf(m) >= 0; });
+        var soi = chua.length ? chua : (/HĐ-\d\d/.test(oKy) ? [] : manh);
+        soi.forEach(function (z) {
+          var cap = capTrongManh(z);
+          if (cap && cap !== 'C3')
+            loi.push(b.ma + ' — ' + m + ' là ' + maC3[m] + ', khai cấp chữ ký ' + cap +
+              ' trong khi HSH_KY xếp loại này ở C3');
+        });
+      });
+
+      /* Đường 2 — theo CHỮ trong câu, cho việc không gắn mã hợp đồng
+         nào, ví dụ xuất hoá đơn. */
+      LOAI_C3.forEach(function (t) {
+        if (!t.re.test(String(b.viec) + ' ' + oKy)) return;
+        manh.forEach(function (z) {
+          if (manh.length > 1 && !t.re.test(z)) return;
+          var cap = capTrongManh(z);
+          if (cap && cap !== 'C3')
+            loi.push(b.ma + ' — việc "' + t.ten + '" mà khai cấp chữ ký ' + cap +
+              ', trong khi HSH_KY xếp loại này ở C3');
+        });
+      });
+    });
+
+    if (!(G.HSH_KY_LUAT || {}).diemDeSaiNhat) loi.push('HSH_KY chưa khai điểm dễ sai nhất');
+    if (!(G.KK_CAM || []).length) loi.push('KK_CAM trống — không có danh sách việc cấm khi ký');
+    return { chuaDo: false, loi: loi, soLoai: LOAI_C3.length,
+      soMaC3: Object.keys(maC3).length };
+  };
+
+  /* ═══════════ KHOÁ 3: CÂY CHỌN PHỦ HẾT VÀ KHÔNG TRÙNG ═══════════ */
+  G.kkSoiChon = function () {
+    var ds = G.KK_CHON || [], hd = G.HSH_HD || [], loi = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'KK_CHON', loi: [] };
+    if (!hd.length) return { chuaDo: true, thieu: 'HSH_HD', loi: [] };
+
+    var dem = {}, coHD = {};
+    hd.forEach(function (x) { coHD[x.ma] = 1; });
+    ds.forEach(function (x) {
+      if (!x.hoi || !x.thi || !x.luong) { loi.push('một nhánh thiếu ô hỏi, thì hoặc luồng'); return; }
+      if (!coHD[x.thi]) loi.push('nhánh dẫn tới ' + x.thi + ' — hợp đồng ấy không có thật');
+      dem[x.thi] = (dem[x.thi] || 0) + 1;
+      if (['A', 'B', 'C'].indexOf(x.luong) < 0)
+        loi.push(x.thi + ' xếp vào luồng "' + x.luong + '" không hợp lệ');
+      /* Câu hỏi phải hỏi về BẢN CHẤT. Câu chỉ nhắc lại tên hợp đồng
+         thì không giúp ai chọn. */
+      if (/HĐ-\d\d/.test(String(x.hoi)))
+        loi.push(x.thi + ' — câu hỏi nhắc lại mã hợp đồng thay vì hỏi về bản chất');
+    });
+
+    Object.keys(dem).forEach(function (m) {
+      if (dem[m] > 1) loi.push(m + ' bị ' + dem[m] + ' nhánh cùng chọn — câu hỏi chưa đủ sắc');
+    });
+    hd.forEach(function (x) {
+      if (!dem[x.ma]) loi.push(x.ma + ' không có nhánh nào dẫn tới — ngày cần nó không ai tìm ra');
+    });
+
+    if (!(G.KK_CHON_LUAT || {}).phuHetMuoiSau) loi.push('chưa khai luật phủ hết mười sáu');
+    return { chuaDo: false, loi: loi, so: ds.length, soHD: hd.length };
+  };
+
+  /* ═══════════════════════════════════════════════════════════
+     MÀN HÌNH
+     ═══════════════════════════════════════════════════════════ */
+  var MAU_L = { A: '#BE0E16', B: '#0B6675', C: '#B4720F' };
+
+  function veBuoc(b, mau) {
+    var o = '<div style="padding:12px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+      '<b class="sm" style="color:' + mau + '">' + h(b.ma) + ' · ' + h(b.viec) + '</b>' +
+      '<p class="tiny dim mt">Ai làm: ' + h(b.ai) + (b.han ? ' · Hạn: ' + h(b.han) : '') + '</p>';
+    if (b.hd) o += '<p class="tiny mt" style="line-height:1.75"><b>Hợp đồng:</b> ' + h(b.hd) + '</p>';
+    if (b.bm) o += '<p class="tiny" style="line-height:1.75"><b>Biểu mẫu:</b> ' + h(b.bm) + '</p>';
+    if (b.ky) o += '<p class="tiny" style="line-height:1.75"><b>Cấp chữ ký:</b> ' + h(b.ky) + '</p>';
+    if (b.bang) o += '<p class="tiny" style="line-height:1.75"><b>Bằng chứng phải sinh:</b> ' +
+      h(b.bang) + '</p>';
+    if (b.hoi) o += '<p class="tiny mt" style="line-height:1.75">' + h(b.hoi) + '</p>';
+    if (b.mayCanh) o += '<p class="tiny mt" style="line-height:1.75;color:#0B6675">' +
+      '<b>Máy canh:</b> ' + h(b.mayCanh) + '</p>';
+    if (b.chan) o += '<p class="tiny mt" style="line-height:1.75;color:#BE0E16">' +
+      '<b>ĐANG CHẶN:</b> ' + h(b.chan) + '</p>';
+    o += '<p class="tiny mt" style="line-height:1.75;color:#BE0E16"><b>Cạm bẫy:</b> ' +
+      h(b.bay) + '</p></div>';
+    return o;
+  }
+
+  G.VIEWS['ky-ket'] = function () {
+    if (!G.KK_A)
+      return U.empty('Chưa mở được phần này',
+        'Hướng dẫn ký kết nằm trong gói nghề. Đăng nhập bằng tài khoản có quyền nghề để nạp.');
+
+    var loi = G.KK_LOI || {};
+    var lech = [].concat(G.kkSoiLuong().loi || [], G.kkSoiKhongVuotCap().loi || [],
+      G.kkSoiChon().loi || []);
+    var soBuoc = G.kkBuoc().length;
+
+    var o = U.ph({ eyebrow: 'HƯỚNG DẪN KÝ KẾT', ic: 'check', grad: 1,
+      t: 'Ba luồng phát sinh · ' + soBuoc + ' bước · bảy cửa trước khi đặt bút',
+      lead: loi.baLuong || '' });
+
+    o += '<div class="card mb" style="border-color:' + (lech.length ? '#BE0E16' : '#B4720F') + '56">' +
+      '<b class="sm" style="color:#B4720F">' + h(loi.cauDatNhat || '') + '</b>' +
+      '<p class="tiny mt" style="line-height:1.75">' + h(loi.truocKhiKy || '') + '</p>' +
+      '<p class="tiny mt" style="line-height:1.75">' + h(loi.troChuKhongChep || '') + '</p>' +
+      '<p class="tiny mt" style="line-height:1.75;color:#BE0E16">' +
+      h((G.KK_LUAT || {}).huongDanKhongPhaiYKien || '') + '</p>' +
+      '<p class="tiny dim mt" style="line-height:1.7">' + h(loi.nguon || '') + '</p>' +
+      (lech.length ? '<p class="tiny mt" style="line-height:1.7;color:#BE0E16"><b>LỆCH: ' +
+        h(lech.slice(0, 4).join(' · ')) + '</b></p>' : '') + '</div>';
+
+    /* Bảy cửa */
+    o += U.sec('Bảy cửa phải qua trước khi đặt bút',
+      (G.KK_CUA_LUAT || {}).thuTuChan || '');
+    o += '<div class="card mb">' + (G.KK_CUA || []).map(function (c) {
+      return '<div style="padding:11px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm"><span style="color:#B4720F">CỬA ' + c.so + '</span> · ' + h(c.cua) + '</b>' +
+        '<p class="tiny mt" style="line-height:1.75">' + h(c.hoi) + '</p>' +
+        '<p class="tiny mt" style="line-height:1.75;color:#BE0E16"><b>Không qua thì:</b> ' +
+        h(c.khongQua) + '</p></div>';
+    }).join('') +
+      '<p class="tiny mt" style="line-height:1.75">' +
+      h((G.KK_CUA_LUAT || {}).dungReHonGo || '') + '</p></div>';
+
+    /* Cây chọn */
+    o += U.sec('Phát sinh loại này thì ký hợp đồng nào',
+      (G.KK_CHON_LUAT || {}).hoiTheoBanChat || '');
+    o += '<div class="card mb">' + U.tbl(['Luồng', 'Câu hỏi về bản chất quan hệ', 'Thì ký'],
+      (G.KK_CHON || []).map(function (x) {
+        return ['<b style="color:' + (MAU_L[x.luong] || '') + '">' + h(x.luong) + '</b>',
+          h(x.hoi), '<b>' + h(x.thi) + '</b>'];
+      })) + '</div>';
+
+    o += G.kaKhung ? G.kaKhung('ky-ket', 'dau') : '';
+
+    /* Ba luồng */
+    baLuong().forEach(function (L) {
+      var mau = MAU_L[L.ma] || '#B4720F';
+      o += U.sec('LUỒNG ' + L.ma + ' · ' + L.ten, L.khiNao || '');
+      o += '<div class="card mb" style="border-color:' + mau + '56">' +
+        '<p class="tiny" style="line-height:1.75;color:#BE0E16"><b>Chỗ nguy nhất của luồng:</b> ' +
+        h(L.nguy) + '</p></div>';
+      o += '<div class="card mb">' + (L.buoc || []).map(function (b) {
+        return veBuoc(b, mau);
+      }).join('') + '</div>';
+    });
+
+    /* Việc cấm */
+    o += U.sec('Tám việc tuyệt đối không làm khi ký', '');
+    o += '<div class="card mb">' + (G.KK_CAM || []).map(function (x) {
+      return '<div style="padding:9px 0;border-bottom:1px solid var(--gita-vien-2)">' +
+        '<b class="sm" style="color:#BE0E16">' + h(x.cam) + '</b>' +
+        '<p class="tiny mt" style="line-height:1.75">' + h(x.vi) + '</p></div>';
+    }).join('') + '</div>';
+
+    /* Máy canh được gì */
+    o += U.sec('Máy canh được đúng hai chỗ trong cả hướng dẫn này',
+      (G.KK_LUAT || {}).mayCanhDuocMotDieu || '');
+    var kqC = G.kkSoiKhongVuotCap(), kqN = G.kkSoiLuong(), kqCh = G.kkSoiChon();
+    o += '<div class="card mb">' + U.tbl(['Phép kiểm', 'Canh gì', 'Kết quả'], [
+      ['kkSoiLuong()', 'Mọi mã hợp đồng, cấp chữ ký và bằng chứng mà ' + soBuoc +
+        ' bước trỏ tới đều có thật',
+       (kqN.loi || []).length ? '<b style="color:#BE0E16">' + (kqN.loi || []).join(' · ') + '</b>'
+         : '<b style="color:#0B6675">' + (kqN.soBuoc || 0) + ' bước · mọi mối nối trỏ đúng chỗ</b>'],
+      ['kkSoiKhongVuotCap()', 'Không bước nào dùng chữ ký C1 hoặc C2 cho loại văn bản mà ' +
+        'HSH_KY xếp ở C3',
+       (kqC.loi || []).length ? '<b style="color:#BE0E16">' + (kqC.loi || []).join(' · ') + '</b>'
+         : '<b style="color:#0B6675">' + (kqC.soLoai || 0) + ' loại đòi C3 · không bước nào hạ cấp</b>'],
+      ['kkSoiChon()', 'Cây chọn phủ hết mười sáu hợp đồng, không hợp đồng nào bị hai nhánh cùng chọn',
+       (kqCh.loi || []).length ? '<b style="color:#BE0E16">' + (kqCh.loi || []).join(' · ') + '</b>'
+         : '<b style="color:#0B6675">' + (kqCh.so || 0) + ' nhánh · phủ đủ ' + (kqCh.soHD || 0) +
+           ' hợp đồng</b>']
+    ]) + '</div>';
 
     return o;
   };
