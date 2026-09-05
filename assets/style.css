@@ -1516,3 +1516,19 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .bc-thuthach{font-size:12.5px;line-height:1.75;color:var(--ink-2);
   margin:0 0 10px;max-width:64ch}
 .bc-thuthach b{color:var(--ink)}
+
+/* ── BẢN SOẠN CỦA TRỢ LÝ (9.75) ──
+   Đứng trước danh sách tư liệu. Nền nhạt và một vạch bên trái để mắt
+   biết đây là CÂU TRẢ LỜI, còn phần dưới là NGUỒN. */
+.ai-soan{border-left:3px solid var(--gita);background:var(--bg-1);
+  border-radius:0 8px 8px 0;padding:11px 13px;margin-bottom:12px}
+.ai-soan-dau{font-size:10.5px;font-weight:800;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-4);margin-bottom:5px}
+.ai-soan-cau{font-size:14.5px;line-height:1.6;color:var(--ink);
+  font-weight:600;margin-bottom:8px}
+.ai-soan-ds{list-style:none;margin:0;padding:0}
+.ai-soan-ds li{font-size:12.5px;line-height:1.55;color:var(--ink-2);
+  padding:3px 0;border-top:1px solid var(--bc-c)}
+.ai-soan-ds li:first-child{border-top:0}
+.ai-soan-ds .mono{color:var(--ink-4);font-size:11px}
+.ai-soan-con{font-size:11px;color:var(--ink-4);margin-top:6px;font-style:italic}

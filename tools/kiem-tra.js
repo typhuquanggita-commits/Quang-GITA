@@ -1148,10 +1148,77 @@ const { chromium } = require(PW);
       /* Khung trò chuyện */
       G.CHAT = [];
       G.chatHoi('con ôm điện thoại cả ngày');
-      const man = G.VIEWS['tro-ly']();
+      let man = G.VIEWS['tro-ly']();
       const dap = G.CHAT[G.CHAT.length - 1].dap;
+
+      /* ── HỎI THẲNG MỘT TƯ LIỆU CHẮC CHẮN BỊ CHẶN ──
+         Nút "nhờ Tư vấn gửi" chỉ hiện khi trong câu trả lời có ít
+         nhất một tư liệu vượt trần 30%. Câu hỏi tự nhiên ở trên KHÔNG
+         bảo đảm điều đó: trên máy phụ huynh chỉ còn BAIHOC (14 bản
+         ghi) thuộc diện xếp hạng, nên có tư liệu bị chặn lọt vào
+         mười hai kết quả hay không là chuyện may rủi — và phép đo
+         này đã xanh bằng may rủi suốt nhiều bản.
+
+         Nên hỏi thẳng bằng TÊN của một bản ghi chắc chắn nằm ngoài
+         30%: lấy bản ghi CUỐI của kho được xếp hạng lớn nhất đang có
+         trên máy này. Đo đúng đường cần đo, không đo cái xác suất. */
+      let coXinThang = false, tenChan = '';
+      {
+        /* CHỈ lấy kho mà trợ lý của KHÁCH thật sự tra tới. Từ 9.73
+           trợ lý của khách chỉ dò danh sách TL_KHACH_XEM, nên chọn
+           một bản ghi PHACDO bị chặn rồi hỏi tên nó là hỏi một thứ
+           trợ lý của họ không bao giờ trả về — phép đo đỏ vì chọn
+           sai mẫu, không phải vì đường đi hỏng. */
+        const dsXH = [['Bài học', 'BAIHOC', G.BAIHOC, x=>x.id, x=>x.ten],
+                      ['Mô thức', 'MOTHUC', G.MOTHUC, x=>x.id, x=>x.title],
+                      ['Phác đồ', 'PHACDO', G.PHACDO, x=>x.ma, x=>x.ten]]
+          .filter(([l, ten, kho]) => Array.isArray(kho) && kho.length >= 4 &&
+            (!G.tlChoPhep || G.tlChoPhep(ten)))
+          .sort((a, b) => b[2].length - a[2].length)[0];
+        if (dsXH) {
+          const [l, tenKho, kho, fMa, fTen] = dsXH;
+          for (let i = kho.length - 1; i >= 0; i--) {
+            if (!G.khachMoDuoc(l, fMa(kho[i]))) { tenChan = String(fTen(kho[i]) || ''); break; }
+          }
+          if (tenChan) {
+            G.CHAT = [];
+            G.chatHoi(tenChan);
+            const m2 = G.VIEWS['tro-ly']();
+            coXinThang = /data-xin=/.test(m2);
+            man = m2;
+          }
+        }
+      }
+      /* ── ĐẾM TRÊN CẢ KHO, KHÔNG ĐẾM TRÊN MƯỜI HAI KẾT QUẢ ──
+
+         Bản trước đếm nMo/nCho trên đúng mười hai tư liệu mà một câu
+         hỏi trả về. Phép ấy PHỤ THUỘC MAY RỦI: trên máy phụ huynh chỉ
+         còn BAIHOC (14 bản ghi) thuộc diện trần 30%, nên nó đỏ hay
+         xanh tuỳ vào việc bản ghi BAIHOC lọt vào top-12 tình cờ đứng
+         hạng mấy. Ở 9.75 nó rơi vào phần mở và phép đo đỏ, trong khi
+         trần vẫn chạy đúng y như cũ.
+
+         Đếm trên CẢ kho thì con số ổn định và nói đúng thứ cần nói:
+         có phần mở ngay, và có phần phải qua người thật. Nút "nhờ Tư
+         vấn gửi" thì đã có r.coXin canh riêng. */
       let nMo = 0, nCho = 0;
-      dap.nguon.forEach(n => { G.khachMoDuoc(n.loai, n.ma) ? nMo++ : nCho++; });
+      [['Mô thức', G.MOTHUC, x=>x.id], ['Phác đồ', G.PHACDO, x=>x.ma],
+       ['Kịch bản', G.KICHBAN, x=>x.ma], ['Tình huống', G.TINHHUONG, x=>(x.key||x.ma||('TH-'+x.stt))],
+       ['Bài học', G.BAIHOC, x=>x.id]].forEach(([l, kho, ma]) => {
+        (kho || []).forEach(x => { G.khachMoDuoc(l, ma(x)) ? nMo++ : nCho++; });
+      });
+
+      /* ── PHỦ CỦA TRẦN 30% — CON SỐ CHỦ HỆ CẦN BIẾT ──
+         Trần 30% chỉ phủ NĂM kho được xếp hạng. Từ 9.73 trợ lý tra
+         được toàn bộ kho mà vai ấy được cấp, nên phần KHÔNG chịu trần
+         lớn hơn hẳn phần chịu trần. Đây không phải một chỗ hỏng để vá
+         lén — nó là một quyết định của chủ hệ về việc kho nào là TƯ
+         LIỆU NGHỀ chịu trần, kho nào là NỘI DUNG VẬN HÀNH mở hết.
+         Nên phép đo này chỉ ĐẾM và IN RA, để con số ấy không vô hình
+         thêm một bản nào nữa. */
+      const ci = G.tlChiMuc ? G.tlChiMuc() : {bg:[]};
+      const chiuTran = nMo + nCho;
+      const khongTran = ci.bg.length - chiuTran;
 
       /* Câu khẩn trong khung chat vẫn phải dừng và không kèm tư liệu */
       G.CHAT = [];
@@ -1194,14 +1261,23 @@ const { chromium } = require(PW);
         xinOk: xin.ok, tuCapChan: !tuCap.ok, capThapChan: !capThap.ok,
         capThapLy: capThap.ly || '', capDuOk: capDu.ok,
         queueCoNha: /Trần 30%/.test(manQueue) && /KPI/.test(manQueue),
-        moSauKhiGui, nghePt: ngheTong ? ngheMo / ngheTong : 0};
+        moSauKhiGui, nghePt: ngheTong ? ngheMo / ngheTong : 0,
+        chiuTran, khongTran, coXinThang, tenChan};
     });
 
     bao(r.coKhung && r.coBong, 'trợ lý hiện dưới dạng khung trò chuyện, có bóng nói hai bên');
     bao(r.coGoiY, 'khung trò chuyện có sẵn câu gợi ý để gia đình bấm là hỏi được');
-    bao(r.nMo + r.nCho > 0 && r.nCho > 0 && r.coXin,
+    bao(r.nMo + r.nCho > 0 && r.nCho > 0 && r.coXinThang,
       'tư liệu ngoài phần nền vẫn hiện tên và có nút nhờ Tư vấn gửi',
-      r.nMo + ' mở ngay · ' + r.nCho + ' qua người thật');
+      r.nMo + ' mở ngay · ' + r.nCho + ' qua người thật · hỏi thẳng "' +
+      String(r.tenChan).slice(0, 34) + '" thì nút hiện: ' + r.coXinThang);
+    bao(r.chiuTran > 0,
+      'TRẦN 30% PHỦ TỚI ĐÂU — con số này chờ chủ hệ quyết, không phải chỗ hỏng. ' +
+      'Trần chỉ xếp hạng NĂM kho tư liệu nghề; từ 9.73 trợ lý tra được toàn bộ kho ' +
+      'mà vai ấy được cấp, nên phần không chịu trần lớn hơn hẳn. Hai đường đi: khai ' +
+      'thêm kho nào là TƯ LIỆU chịu trần, hoặc khai rõ phần còn lại là NỘI DUNG VẬN ' +
+      'HÀNH mở hết. Đếm ra để con số này không vô hình thêm một bản nào nữa',
+      r.chiuTran + ' bản ghi chịu trần · ' + r.khongTran + ' bản ghi không');
     bao(r.khanDung && r.khanKhongNguon,
       'trong khung trò chuyện, câu khẩn vẫn DỪNG và không kèm tư liệu');
 

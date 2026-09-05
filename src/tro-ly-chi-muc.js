@@ -265,17 +265,51 @@ function doTruong(kho) {
   return { ma: kMa, ten: kTen };
 }
 
-function layTen(x, kTen) {
-  if (kTen && typeof x[kTen] === 'string' && x[kTen]) return x[kTen];
-  var tot = '';
+/* ═══ TÊN CỦA MỘT BẢN GHI — MỘT LUẬT, MỘT CHỖ ═══
+
+   Mỗi kho đặt tên trường tiêu đề một kiểu: HSH_HD dùng ten, KK_CUA
+   dùng cua, HL_LUAT12 dùng luat, TINHHUONG dùng th. Kê danh sách ưu
+   tiên thì kê mãi không hết — đo được 2.823 chỗ dùng "ten" nhưng còn
+   hàng trăm tên khác.
+
+   Có một luật chung thật, đọc ra từ chính cách kho này được viết:
+   TRƯỜNG CHUỖI ĐẦU TIÊN SAU MÃ chính là tiêu đề. Người soạn kho viết
+   mã trước, rồi viết cái tên, rồi mới tới ruột — thứ tự ấy đúng ở
+   mọi kho tôi mở ra xem.
+
+   Luật "chuỗi NGẮN NHẤT" của bản đầu thì sai, và sai thấy được: nó
+   lấy câu vi phạm của HL_LUAT12 làm tên luật, vì câu ấy tình cờ ngắn
+   hơn câu luật.
+
+   Hàm này để ở đây chứ không ở tro-ly-soan.js vì cả chỉ mục lẫn bộ
+   soạn đều cần nó. Hai bản của một luật thì sẽ có ngày lệch nhau. */
+var KHOA_MA_TEN = /^(ma|id|key|code|ms|k|stt|so|sohieu|no|num|idx)$/;
+
+G.tlTenBanGhi = function (x, kTen) {
+  if (!x || typeof x !== 'object') return '';
+  /* Luật "chuỗi đầu tiên sau mã" chạy TRƯỚC trường được bầu.
+
+     doTruong() bầu một trường tiêu đề bằng cách đếm trên mười hai bản
+     ghi đầu, và danh sách ứng cử của nó là một danh sách gõ tay. Với
+     KK_CUA nó bầu "hoi" — có trong danh sách — thay vì "cua", không
+     có trong danh sách nhưng mới là tên cửa. Kết quả: bảy cửa hiện ra
+     bằng bảy câu hỏi dài thay vì bảy cái tên.
+
+     Danh sách gõ tay thì kê mãi không hết; luật thứ tự thì không cần
+     kê. Nên luật chạy trước, danh sách chỉ đỡ lúc luật không ra gì. */
+  var dai = '';
   for (var k in x) {
     if (!Object.prototype.hasOwnProperty.call(x, k) || KHOA_BO.test(k)) continue;
+    if (KHOA_MA_TEN.test(k)) continue;
     var v = x[k];
-    if (typeof v !== 'string' || v.length < 3 || v.length > 120 || laMau(v)) continue;
-    if (!tot || v.length < tot.length) tot = v;
+    if (typeof v !== 'string' || v.length < 3 || laMau(v)) continue;
+    if (v.length <= 160) return v;          /* chuỗi đầu tiên, đủ ngắn để làm tên */
+    if (!dai) dai = v.slice(0, 120) + '…';  /* chỉ có chuỗi dài thì cắt bớt */
   }
-  return tot;
-}
+  if (kTen && typeof x[kTen] === 'string' && x[kTen]) return x[kTen];
+  return dai;
+};
+function layTen(x, kTen) { return G.tlTenBanGhi(x, kTen); }
 
 /* ═══════════════════════════════════════════════════════════════
    NHÃN LOẠI — đọc được, và luôn kèm tên kho gốc để tra lại
@@ -406,7 +440,15 @@ G.tlChiMuc = function () {
       var vatCon = 0;
       ks.forEach(function (k) { if (kho[k] && typeof kho[k] === 'object') vatCon++; });
       if (ks.length >= 3 && vatCon >= ks.length / 2)
-        ds = ks.map(function (k) { return { k: k, x: kho[k], i: 0 }; });
+        ds = ks.map(function (k) {
+          var v = kho[k];
+          /* Khoá mang giá trị VÔ HƯỚNG cũng phải thành bản ghi. Bản
+             đầu bỏ qua chúng, và hậu quả đo được: HOAHONG.tran = 10
+             — chính con số trần hoa hồng 10% — KHÔNG có trong chỉ
+             mục, nên hỏi "trần hoa hồng là bao nhiêu" thì trợ lý trả
+             lời bằng ba nguyên tắc chung quanh nó. */
+          return { k: k, x: (v && typeof v === 'object') ? v : { gia: v }, i: 0 };
+        });
       else
         ds = [{ k: '', x: kho, i: 0, ca: true }];
     }
@@ -466,6 +508,36 @@ G.tlChiMuc = function () {
   return CACHE;
 };
 
+/* ═══ BẢN GHI CỦA MỘT KHO — DÙNG CHUNG VỚI BỘ SOẠN ═══
+
+   src/tro-ly-soan.js cần đọc CẢ kho để đếm và liệt kê, chứ không chỉ
+   mười hai kết quả đã cắt. Bản đầu nó đọc thẳng G[tenKho] và hỏng
+   ngay ở kho hình VẬT: HOAHONG không phải mảng nên Array.isArray trả
+   false, và câu "trần hoa hồng là bao nhiêu" không soạn được gì.
+
+   Chỉ mục ĐÃ tách kho hình vật thành bản ghi rồi. Đọc lại từ đây thì
+   một luật tách, một chỗ — và bộ soạn tự nhận luôn cả hai lớp lọc:
+   kho có được phép không (đã lọc lúc dựng chỉ mục), và bản ghi có
+   trong tầng không (lọc ngay đây, vì tầng đổi theo người hỏi). */
+G.tlBanGhiKho = function (tenKho, tangNha, trongTang) {
+  var ci = G.tlChiMuc(), ra = [];
+  /* Tham số trongTang có mặt để phép phá KHÔNG phải tráo G.aiTrongTang.
+     Bộ dò sâu bắt đúng chỗ ấy ở 9.75, và nó bắt đúng: tráo một hàm
+     toàn cục thì chỉ cần phép phá ném lỗi giữa chừng là TRẦN TẦNG nằm
+     tắt suốt phiên còn lại — nguy hơn hẳn lần trước với lưới khẩn,
+     vì trần tầng là thứ giữ tư liệu tầng năm khỏi nhà tầng một. */
+  var kiem = trongTang || G.aiTrongTang;
+  ci.bg.forEach(function (x) {
+    if (x.khoNguon !== tenKho) return;
+    if (kiem) {
+      var t = kiem(tenKho, x.goc, tangNha);
+      if (!t || !t.ok) return;
+    }
+    ra.push({ ma: x.ma, ten: x.ten, goc: x.goc });
+  });
+  return ra;
+};
+
 /* Xoá chỉ mục khi đổi người đăng nhập. Gọi từ chỗ đăng nhập/đăng
    xuất; khoá cache ở trên cũng tự bắt được, đây là đường chắc hơn. */
 G.tlQuenChiMuc = function () { CACHE = null; };
@@ -487,6 +559,25 @@ G.tlQuenChiMuc = function () { CACHE = null; };
    mươi năm trong nghề tìm kiếm, không phải thứ tôi tự nghĩ ra.
    ═══════════════════════════════════════════════════════════════ */
 var K1 = 1.2, B = 0.72;
+
+/* ── SÀN ĐỘ DÀI ──
+   BM25 chia điểm cho độ dài bản ghi so với độ dài trung bình, để một
+   bản ghi dài lê thê không gom điểm bằng cách chứa nhiều chữ. Nhưng
+   phép chia ấy quay ngược lại cắn khi có bản ghi CỰC NGẮN.
+
+   Bản 9.75 thêm bản ghi cho khoá vô hướng của kho hình vật —
+   HOAHONG.tran = 10 thành một bản ghi dài đúng hai tiếng. Mẫu số tụt
+   xuống gần bằng không, điểm nở ra, và mấy bản ghi hai tiếng ấy đè
+   cả kho phác đồ.
+
+   Hậu quả đo được ngay ở mục 18 của bộ kiểm: câu "con ôm điện thoại
+   cả ngày" của một phụ huynh thôi ra phác đồ và tình huống, mà ra
+   toàn bảng vận hành. Không dòng nào đỏ ở phần trợ lý — chỉ có một
+   phép đo về trần 30% đỏ, và nó đỏ vì lý do trông chẳng liên quan.
+
+   Sàn 35% độ dài trung bình là cách chữa chuẩn của nghề tìm kiếm cho
+   đúng bệnh này. */
+var SAN_DAI = 0.35;
 
 /* ═══════════════════════════════════════════════════════════════
    ĐỌC CON SỐ TRONG CÂU HỎI
@@ -574,7 +665,7 @@ G.tlTra = function (cauHoi) {
     var df = p.length / 2;
     var idf = Math.log(1 + (N - df + 0.5) / (df + 0.5));
     for (var i = 0; i < p.length; i += 2) {
-      var j = p[i], f = p[i + 1], dai = ci.bg[j].dai;
+      var j = p[i], f = p[i + 1], dai = Math.max(ci.bg[j].dai, SAN_DAI * ci.tbDai);
       var d = he * idf * (f * (K1 + 1)) / (f + K1 * (1 - B + B * dai / ci.tbDai));
       diem[j] = (diem[j] || 0) + d;
       (trung[j] || (trung[j] = [])).push(t);

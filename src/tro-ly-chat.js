@@ -171,6 +171,25 @@ function theDap(d){
     '<span>'+h(d.y.ten)+' · nhịp '+h(d.y.nhip)+'</span></div>';
   if(d.loi) o += '<p class="ai-loi">'+h(d.loi)+'</p>';
 
+  /* ── BẢN SOẠN ĐỨNG TRƯỚC DANH SÁCH TƯ LIỆU ──
+     Người đang mệt đọc được hai dòng đầu. Nếu hai dòng ấy là một
+     danh sách mười hai thẻ thì họ đóng máy; nếu là câu trả lời thì
+     họ đọc tiếp. Thẻ tư liệu vẫn còn nguyên ở dưới để tra lại — bản
+     soạn KHÔNG thay nguồn, nó đứng trước nguồn. */
+  if(d.soan){
+    var s = d.soan;
+    o += '<div class="ai-soan">'+
+      '<div class="ai-soan-dau">'+h(s.loai)+
+        (s.so ? ' · '+s.so+' mục' : '')+'</div>'+
+      '<p class="ai-soan-cau">'+h(s.cau)+'</p>'+
+      '<ul class="ai-soan-ds">'+ s.dong.map(function(x){
+        return '<li><span class="mono">'+h(x.nhan)+'</span>'+
+          (x.nhan ? ' · ' : '')+h(x.chu)+'</li>';
+      }).join('') +'</ul>'+
+      (s.conNua ? '<p class="ai-soan-con">… còn '+s.conNua+' mục, mở tư liệu bên dưới để xem đủ</p>' : '')+
+    '</div>';
+  }
+
   /* ── CHUỖI KỊCH BẢN: MỘT VÒNG, MỘT CÂU HỎI ──
      Đứng ĐẦU câu trả lời. Người đang mệt đọc được hai dòng đầu; nếu hai
      dòng ấy là một danh sách tư liệu thì họ đóng máy, còn nếu là một câu

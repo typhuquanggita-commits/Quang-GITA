@@ -119,6 +119,7 @@ chay('node', ['tools/di-bo-lien-ket.js']);
    Đo ĐỘ TRÚNG chứ không đo độ có trả về — trợ lý luôn trả về thứ gì
    đó, nên "có trả lời" không phải một phép đo. */
 chay('xvfb-run', ['-a', 'node', 'tools/do-tro-ly.js']);
+chay('xvfb-run', ['-a', 'node', 'tools/do-soan.js']);
 if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
 
 /* ─── 5a-bis. Thử mã máy chủ trên bản giả lập Apps Script ───

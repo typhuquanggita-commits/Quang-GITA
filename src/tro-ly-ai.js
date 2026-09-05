@@ -386,9 +386,20 @@ G.aiTraLoi = function(cauHoi){
     kho = G.dkCua(cauHoi, tim, maCa, tim.tangNha);
   }
 
+  /* ── BẢN SOẠN (9.75) ──
+     CHỈ soạn khi độ khó cho phép máy tự làm. Cấp 4 trở lên thì việc
+     cần làm là CHỌN chứ không phải chép, và một bản soạn trôi chảy ở
+     đúng chỗ ấy là thứ nguy nhất: nó làm người đọc tin rằng câu hỏi
+     đã được trả lời xong, trong khi nó đang chờ một người bật khoá. */
+  var soan = null;
+  if (G.tlSoan && (!kho || kho.lam !== false)) {
+    try { soan = G.tlSoan(cauHoi, tim); } catch (e) { soan = null; }
+  }
+
   return {
     khan: false,
     y: y,
+    soan: soan,
     /* Ô này đi CÙNG câu trả lời chứ không nằm lại trong hàm chấm:
        màn hình phải nói được cấp mấy, ai đang phải bật, và nếu không
        bật thì ai làm trực tiếp. */
