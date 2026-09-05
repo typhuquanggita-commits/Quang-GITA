@@ -526,9 +526,40 @@ function visible(it){
      đình, mục tự hiện, không phải sửa bảng quyền. */
   if(it.hienKhi && typeof G[it.hienKhi] === 'function' && !G[it.hienKhi]()) return false;
   var goi = G.goiCanCho ? G.goiCanCho(it.v) : null;
-  if(!goi) return true;
-  if(G.KHO && G.KHO.dangNap && G.KHO.dangNap.indexOf(goi) >= 0) return true;
-  return !G.coGoi || G.coGoi(goi);
+  if(goi){
+    if(G.KHO && G.KHO.dangNap && G.KHO.dangNap.indexOf(goi) >= 0) return true;
+    if(G.coGoi && !G.coGoi(goi)) return false;
+  }
+  /* ── ĐIỀU KIỆN CUỐI: MÀN PHẢI CÓ THẬT ──
+     Bộ lọc này kiểm quyền, kiểm dữ liệu, kiểm gói — mà không kiểm thứ
+     đơn giản nhất: có hàm dựng màn không.
+
+     Đo được ở 9.78 bằng cách lái thử như người dùng: cột trái của phụ
+     huynh có 64 nút, hai nút trong đó — bo-test và kpi-100 — trỏ vào
+     màn KHÔNG có trong gói mã của gia đình. Bấm vào thì G.go() lặng
+     lẽ trả về, không đổi màn, không báo gì. Người dùng bấm ba lần rồi
+     nghĩ máy hỏng.
+
+     Không chỗ nào đỏ vì mọi phép kiểm cũ đứng ở phía LUẬT: chúng hỏi
+     "mục này có được phép hiện không", và câu trả lời là có. Không ai
+     hỏi "bấm vào thì có gì xảy ra không".
+
+     Nhưng G.manCoThat() tính CẢ MAN_NGHE, và đó là chỗ phải tách:
+     màn của gói nghề đang tải dở thì phải hiện — chúng có thật, chỉ
+     chưa về tới. Còn với vai KHÁCH HÀNG thì gói nghề không bao giờ
+     về, nên cùng cái tên ấy là một nút chết vĩnh viễn.
+
+     Ba mức, đi từ chắc nhất:
+       · có hàm dựng màn ngay tại chỗ   → hiện
+       · chỉ nằm trong MAN_NGHE         → hiện KHI vai này có gói nghề
+                                          hoặc gói nghề đang trên đường về
+       · không ở đâu cả                 → không hiện */
+  if (G.VIEWS && G.VIEWS[it.v]) return true;
+  if ((G.MAN_NGHE || []).indexOf(it.v) >= 0) {
+    if (G.KHO && G.KHO.dangNap && G.KHO.dangNap.indexOf('nghe') >= 0) return true;
+    return !!(G.coGoi && G.coGoi('nghe'));
+  }
+  return false;
 }
 G.hienTrongCot = visible;
 
