@@ -370,9 +370,29 @@ G.aiTraLoi = function(cauHoi){
   var viec = G.aiDanViec ? G.aiDanViec(cauHoi) : null;
 
   var tim = G.aiTra(cauHoi);
+
+  /* ── CỬA ĐỘ KHÓ (9.74) ──
+     Trước bản này trợ lý chỉ có HAI trạng thái: trả lời, hoặc dừng
+     vì dấu hiệu khẩn. Giữa hai thứ ấy là một khoảng rất rộng, và mọi
+     ca khó rơi hết vào đó — tức là trợ lý CỨ TRẢ LỜI. Nó trả lời một
+     câu về hoàn tiền y như trả lời một câu về giờ học.
+
+     src/do-kho.js chấm ca từ 1 tới 10: 1-3 máy tự biên tập theo
+     nguồn; 4-10 phải có Coach hoặc Tư vấn bật khoá. Mã ca lấy theo
+     nhà đang mở, vì một khoá mở cho ĐÚNG một ca. */
+  var kho = null;
+  if (G.dkCua) {
+    var maCa = (G.S && (G.S.nhaDangMo || (G.S.acc && G.S.acc.u))) || 'CA-CHUNG';
+    kho = G.dkCua(cauHoi, tim, maCa, tim.tangNha);
+  }
+
   return {
     khan: false,
     y: y,
+    /* Ô này đi CÙNG câu trả lời chứ không nằm lại trong hàm chấm:
+       màn hình phải nói được cấp mấy, ai đang phải bật, và nếu không
+       bật thì ai làm trực tiếp. */
+    doKho: kho,
     loi: y ? y[giong] : null,
     viec: viec,
     chuaCo: !tim.length && !viec,

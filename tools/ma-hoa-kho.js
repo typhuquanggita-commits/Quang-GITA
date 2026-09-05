@@ -57,6 +57,12 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
   'NGONTU_RANH', 'DAISU', 'BAIHOC', 'QUA_DANG', 'KETNOI', 'LIENKET', 'KICHBAN_AI',
   /* Hành trình 12 chặng mở cho MỌI vai — gia đình cũng phải thấy mình đang
      ở đâu trên đường. Nên nó nằm ở gói nền, không nằm sau kho nghề. */
+  /* ── THANG ĐỘ KHÓ Ở GÓI NỀN, CÓ CHỦ Ý ──
+     Khi trợ lý nói "việc này em không tự làm được", gia đình phải
+     đọc được VÌ SAO. Một cái máy từ chối mà không nói được lý do thì
+     người ta nghĩ nó hỏng, chứ không nghĩ nó đang cẩn thận.
+     Phần ĐỊNH TUYẾN — ai giữ chìa khoá nào — ở gói NGHỀ. */
+  'DOKHO_CAP', 'DOKHO_DAU', 'DOKHO_KHONGBIET', 'DOKHO_LOI_NHA',
   'TRU_GITA', 'HANHTRINH12', 'LOI_HUA_GITA',
   /* Kênh cộng đồng chính thức: phụ huynh chưa là khách hàng cũng phải
      thấy được nhóm. Đây là cửa trước, cùng lý do với GT_* và DV_*. */
@@ -235,6 +241,12 @@ const NGHE = [
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */
+  /* ── ĐỘ KHÓ CỦA CA: BỐN KHO ĐỊNH TUYẾN Ở GÓI NGHỀ ──
+     Thang mười cấp (DOKHO_CAP) và bảng dấu hiệu (DOKHO_DAU) ở gói
+     NỀN, vì gia đình phải đọc được vì sao trợ lý dừng lại. Nhưng
+     ĐƯỜNG ĐI NỘI BỘ thì không: biết ai giữ chìa khoá nào là biết gõ
+     cửa ai để được mở nhanh. Bốn kho dưới đây ở gói NGHỀ. */
+  'DOKHO_TUYEN', 'DOKHO_THEM', 'DOKHO_KHOA', 'DOKHO_CAM', 'DOKHO_LUAT',
   'XK_TRAN', 'XK_MUC', 'XK_VAI_MUC', 'XK_VAI_MUC_LUAT', 'XK_DA_CHOT', 'XK_CAM', 'XK_LUAT', 'XK_GIAYPHEP', 'XK_CHOCHU',
   /* ── FAMILIES VỀ GÓI NGHỀ TỪ BẢN 9.41 ──
      Kho này mang hồ sơ MƯỜI nhà: tên nhà, tên học viên, lớp, TÊN BỐ MẸ,

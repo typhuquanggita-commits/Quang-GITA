@@ -42,6 +42,22 @@ var G = window.G || {}; window.G = G;
   function on(o) { return G[o.kho] !== undefined && G[o.kho] !== null; }
 
   var THEM = [
+    /* ── Thang độ khó của một ca (9.74) ──
+       DOKHO_CAP và DOKHO_DAU ở gói NỀN nên KHÔNG khai quyền: gia
+       đình phải tra được vì sao trợ lý dừng lại. Bốn kho định tuyến
+       thì ở gói NGHỀ và khai quyền nghề. */
+    { kho: 'DOKHO_CAP', loai: 'Độ khó của ca', mau: '#BE0E16', go: '',
+      goiTen: ['do kho', 'cap do', 'cap 1', 'cap 10', 'muoi cap', 'thang do kho'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'mo', 'viDu', 'vi', 'nhip'] },
+    { kho: 'DOKHO_DAU', loai: 'Dấu hiệu độ khó', mau: '#BE0E16', go: '',
+      goiTen: ['dau hieu', 'vi sao dung lai', 'vi sao phai cho'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'vi'] },
+    { kho: 'DOKHO_TUYEN', loai: 'Ai xác nhận', mau: '#BE0E16', go: '',
+      quyen: 'nghe_chung', goiTen: ['ai xac nhan', 'bat khoa', 'khoa xu ly', 'ai duyet'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'vi', 'tuXK'] },
+    { kho: 'DOKHO_CAM', loai: 'Khoá mở rồi vẫn cấm', mau: '#BE0E16', go: '',
+      quyen: 'nghe_chung', goiTen: ['mo khoa van cam', 'bat roi van khong duoc'],
+      ma: 'ma', ten: 'viec', than: ['viec', 'vi', 'tuLuat'] },
     /* ── Nghề: bản vẽ, bàn làm việc, ngôn ngữ ── */
     { kho: 'BV_VAI', loai: 'Trần vai', mau: '#5140B4', go: 'ban-ve',
       quyen: 'nghe_chung', goiTen: ['tran vai', 'phu trach toi da', 'ban ve'],
