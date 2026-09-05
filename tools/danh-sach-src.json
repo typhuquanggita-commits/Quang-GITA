@@ -65,6 +65,7 @@
     "src/tro-ly-ai.js",
     "src/tro-ly-soan.js",
     "src/tro-ly-nho.js",
+    "src/tro-ly-soat.js",
     "src/tro-ly-chat.js",
     "src/tro-ly-rong.js",
     "src/thu-vien.js",

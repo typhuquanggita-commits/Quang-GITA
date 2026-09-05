@@ -46,16 +46,16 @@ var G = window.G || {}; window.G = G;
        DOKHO_CAP và DOKHO_DAU ở gói NỀN nên KHÔNG khai quyền: gia
        đình phải tra được vì sao trợ lý dừng lại. Bốn kho định tuyến
        thì ở gói NGHỀ và khai quyền nghề. */
-    { kho: 'DOKHO_CAP', loai: 'Độ khó của ca', mau: '#BE0E16', go: '',
+    { kho: 'DOKHO_CAP', loai: 'Độ khó của ca', mau: '#BE0E16', khongCoMan: 'Từ 9.75 bản soạn hiện nội dung ngay trong khung trò chuyện, nên nguồn này không cần màn riêng.',
       goiTen: ['do kho', 'cap do', 'cap 1', 'cap 10', 'muoi cap', 'thang do kho'],
       ma: 'ma', ten: 'ten', than: ['ten', 'mo', 'viDu', 'vi', 'nhip'] },
-    { kho: 'DOKHO_DAU', loai: 'Dấu hiệu độ khó', mau: '#BE0E16', go: '',
+    { kho: 'DOKHO_DAU', loai: 'Dấu hiệu độ khó', mau: '#BE0E16', khongCoMan: 'Từ 9.75 bản soạn hiện nội dung ngay trong khung trò chuyện, nên nguồn này không cần màn riêng.',
       goiTen: ['dau hieu', 'vi sao dung lai', 'vi sao phai cho'],
       ma: 'ma', ten: 'ten', than: ['ten', 'vi'] },
-    { kho: 'DOKHO_TUYEN', loai: 'Ai xác nhận', mau: '#BE0E16', go: '',
+    { kho: 'DOKHO_TUYEN', loai: 'Ai xác nhận', mau: '#BE0E16', khongCoMan: 'Từ 9.75 bản soạn hiện nội dung ngay trong khung trò chuyện, nên nguồn này không cần màn riêng.',
       quyen: 'nghe_chung', goiTen: ['ai xac nhan', 'bat khoa', 'khoa xu ly', 'ai duyet'],
       ma: 'ma', ten: 'ten', than: ['ten', 'vi', 'tuXK'] },
-    { kho: 'DOKHO_CAM', loai: 'Khoá mở rồi vẫn cấm', mau: '#BE0E16', go: '',
+    { kho: 'DOKHO_CAM', loai: 'Khoá mở rồi vẫn cấm', mau: '#BE0E16', khongCoMan: 'Từ 9.75 bản soạn hiện nội dung ngay trong khung trò chuyện, nên nguồn này không cần màn riêng.',
       quyen: 'nghe_chung', goiTen: ['mo khoa van cam', 'bat roi van khong duoc'],
       ma: 'ma', ten: 'viec', than: ['viec', 'vi', 'tuLuat'] },
     /* ── Nghề: bản vẽ, bàn làm việc, ngôn ngữ ── */
@@ -181,6 +181,10 @@ var G = window.G || {}; window.G = G;
   function DUNG() { return THEM.filter(on).map(function (o) {
     return {
       kho: G[o.kho], ten_kho: o.kho, loai: o.loai, mau: o.mau, go: o.go,
+      /* Chuyển cả lời khai "nguồn này không có màn". Quên ô này thì
+         phép soi thấy go rỗng, không thấy lời khai, và báo đỏ một
+         nguồn hoàn toàn lành. */
+      khongCoMan: o.khongCoMan || '',
       quyen: o.quyen || '', goiTen: o.goiTen || [],
       ma: function (x) { return String(x[o.ma] || ''); },
       ten: function (x) { return String(x[o.ten] || ''); },
@@ -211,17 +215,42 @@ var G = window.G || {}; window.G = G;
 
     var moVai = [];
     ds.forEach(function (n) {
-      ['loai', 'go'].forEach(function (k) {
-        if (!n[k]) loi.push(n.ten_kho + ' thiếu ô ' + k);
-      });
+      if (!n.loai) loi.push(n.ten_kho + ' thiếu ô loai');
       if (!(n.goiTen || []).length)
         loi.push(n.ten_kho + ' không khai ô goiTen — người hỏi không gọi thẳng tên nó được');
-      if (typeof (G.VIEWS || {})[n.go] !== 'function')
-        loi.push(n.ten_kho + ' trỏ vào màn "' + n.go + '" — màn ấy không có thật');
 
-      /* Kho thuộc gói cấp phép mà không khai quyền là chỗ rò. */
-      if (khoNghe[n.ten_kho] && !n.quyen)
-        loi.push(n.ten_kho + ' thuộc gói cấp phép mà KHÔNG khai quyền — mọi vai tra được');
+      /* ── NGUỒN KHÔNG CÓ MÀN LÀ HỢP LỆ TỪ 9.75 ──
+         Phép này dựng khi mọi nguồn đều phải mở được một màn. Từ 9.75
+         bản soạn hiện nội dung NGAY trong khung trò chuyện, nên một
+         nguồn không cần màn riêng nữa.
+
+         Nhưng "không có màn" phải được KHAI RA, không được để ô trống:
+         ô trống thì không phân biệt được "cố ý không có" với "quên
+         điền", và bốn nguồn DOKHO_ ở 9.76 đã báo đỏ đúng vì để trống. */
+      if (n.khongCoMan) {
+        if (String(n.khongCoMan).length < 20)
+          loi.push(n.ten_kho + ' khai không có màn mà không nói vì sao');
+        if (n.go) loi.push(n.ten_kho + ' vừa khai không có màn vừa trỏ vào màn "' + n.go + '"');
+      } else if (!n.go) {
+        loi.push(n.ten_kho + ' thiếu ô go, mà cũng không khai khongCoMan');
+      } else if (typeof (G.VIEWS || {})[n.go] !== 'function') {
+        loi.push(n.ten_kho + ' trỏ vào màn "' + n.go + '" — màn ấy không có thật');
+      }
+
+      /* ── KHO NÀO PHẢI KHAI QUYỀN ──
+         THUOC_CAP_PHEP là danh sách kho BỊ XOÁ KHI ĐĂNG XUẤT, không
+         phải danh sách kho CỦA NGHỀ. Hai thứ ấy trùng nhau phần lớn
+         nhưng không phải tất cả: PL_QUYEN và PL_CO nằm trong đó mà cố
+         ý mở cho gia đình — bảy quyền của nhà và cơ chế khiếu nại là
+         thứ nhà mình phải đọc được.
+
+         Nên chỗ đối chiếu đúng là TL_KHACH_XEM: danh sách khai rõ kho
+         nào khách được tra, dựng ở 9.73. Kho có tên ở đó thì không
+         phải khai quyền; kho không có tên thì phải. */
+      var choKhach = (G.TL_KHACH_XEM || []).indexOf(n.ten_kho) >= 0;
+      if (khoNghe[n.ten_kho] && !n.quyen && !choKhach)
+        loi.push(n.ten_kho + ' thuộc gói cấp phép, KHÔNG khai quyền, và cũng không có tên ' +
+          'trong TL_KHACH_XEM — mọi vai tra được mà không ai cố ý mở');
       if (n.quyen && typeof (G.PERM || {})[n.quyen] !== 'number')
         loi.push(n.ten_kho + ' khai quyền "' + n.quyen + '" — quyền ấy không có trong G.PERM, ' +
           'nên nguồn này biến mất khỏi MỌI vai, kể cả vai đáng lẽ được tra');

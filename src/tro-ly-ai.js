@@ -411,12 +411,28 @@ G.aiTraLoi = function(cauHoi){
      cần làm là CHỌN chứ không phải chép, và một bản soạn trôi chảy ở
      đúng chỗ ấy là thứ nguy nhất: nó làm người đọc tin rằng câu hỏi
      đã được trả lời xong, trong khi nó đang chờ một người bật khoá. */
+  /* ── TỰ KIỂM (9.77) ──
+     "Hệ có gì sai không" thì CHẠY THẬT rồi nói con số, chứ không đi
+     tra kho về chủ đề rà soát. Đứng TRƯỚC bộ soạn vì nó không tra
+     kho — kết quả nó đưa ra là trạng thái đang chạy, không phải một
+     bản ghi nào cả. */
   var soan = null;
-  if (G.tlSoan && (!kho || kho.lam !== false)) {
+  if (G.tlLaCauSoat && G.tlLaCauSoat(cauHoi) && G.tlSoanSoat) {
+    try { soan = G.tlSoanSoat(); } catch (e) { soan = null; }
+  }
+  if (!soan && G.tlSoan && (!kho || kho.lam !== false)) {
     try {
       soan = G.tlSoan(hoiThat, tim);
       if (tiep.la && G.tlSoanTiep) soan = G.tlSoanTiep(tiep, soan, tim);
     } catch (e) { soan = null; }
+  }
+  /* Bản tự kiểm KHÔNG ghi ngữ cảnh: nó không nói về một kho nào, nên
+     "còn nữa" sau nó không có gì để nối tiếp. */
+  if (soan && (soan.y === 'SOAT' || soan.y === 'SOAT_CAM')) {
+    if (G.tlQuenNgu) G.tlQuenNgu();
+    return { khan: false, y: y, soan: soan, noiTiep: null, viec: viec,
+      doKho: null, chuaCo: false, thieu: '', chot: '',
+      giuLaiVuotTang: 0, khoChuaKhaiTang: [], tangNha: tim.tangNha, nguon: [] };
   }
   /* Ghi ngữ cảnh cho lượt sau. Ghi CẢ khi lượt này là nối tiếp, để
      "còn nữa" hai lần liền không lặp lại cùng một khúc. */

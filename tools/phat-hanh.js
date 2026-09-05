@@ -121,6 +121,7 @@ chay('node', ['tools/di-bo-lien-ket.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/do-tro-ly.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/do-soan.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/do-noi-tiep.js']);
+chay('xvfb-run', ['-a', 'node', 'tools/do-tu-kiem.js']);
 if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
 
 /* ─── 5a-bis. Thử mã máy chủ trên bản giả lập Apps Script ───
