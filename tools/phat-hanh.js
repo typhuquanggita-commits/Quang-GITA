@@ -157,6 +157,30 @@ chay('node', ['tools/thu-may-chu.js', '--gop']);
    duyệt thật, không suy ra từ bản tĩnh. */
 chay('node', ['tools/thu-ban-web.js']);
 
+/* ── NỀN MỚI: CƠ SỞ DỮ LIỆU VÀ CỬA VÀO ──
+
+   Chưa triển khai, nhưng ĐÃ nằm trong đường phát hành. Mã chưa chạy
+   thật mà không có phép kiểm nào canh thì nó mục đi lặng lẽ, và tới
+   hôm triển khai người ta phát hiện nó đã hỏng từ nhiều bản trước —
+   lúc ấy không ai biết bản nào làm hỏng.
+
+   Cả hai bộ đều chạy ở máy, không cần mạng: D1 chính là SQLite, và
+   Worker gọi được bằng Request/Response sẵn có của Node 22. */
+chay('node', ['tools/thu-csdl-moi.js']);
+chay('node', ['tools/thu-worker.js']);
+
+/* Bản đo tải nền CŨ — cố ý KHÔNG chặn đường phát hành.
+   Nó đang đỏ năm chỗ, và sẽ còn đỏ tới ngày chuyển xong nền; để nó
+   chặn thì cách duy nhất phát hành được là tắt nó đi. In ra để con số
+   ấy đứng trước mắt mỗi lần phát hành. */
+tieuDe('NỀN CŨ CÒN CHỊU ĐƯỢC BAO NHIÊU TÀI KHOẢN');
+try {
+  execFileSync('node', ['--max-old-space-size=3072', 'tools/do-tai-may-chu.js'],
+    { cwd: GOC, stdio: 'inherit' });
+} catch (e) {
+  console.log('  ⚠ Nền cũ chưa đạt mức chủ hệ đặt — xem bảng trên. Không chặn phát hành.');
+}
+
 /* ─── 5b. Thử bản máy tính ─── */
 tieuDe('THỬ BẢN MÁY TÍNH');
 if (co('desktop/node_modules/electron/dist/electron')) {

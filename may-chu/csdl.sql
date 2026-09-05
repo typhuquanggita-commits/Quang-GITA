@@ -275,6 +275,30 @@ CREATE INDEX IF NOT EXISTS ix_tailieu_tt ON tailieu (trangThai, luc);
 --  Ở đây là một bảng khoá–giá trị, vì con số cộng đồng phải cộng được
 --  bằng một câu lệnh chứ không phải đọc–sửa–ghi ba lượt.
 -- ─────────────────────────────────────────────────────────────
+-- ─────────────────────────────────────────────────────────────
+--  CHẶN NHỊP — ĐẾM SỐ LẦN THỬ TRONG MỘT KHOẢNG THỜI GIAN
+--
+--  Nền cũ đếm bằng CacheService của Apps Script. Worker không có thứ
+--  ấy, và đây KHÔNG phải chỗ được phép bỏ bớt khi chuyển nền: ba chỗ
+--  chặn nhịp đang có đều là chặn thật, mất cái nào cũng là mở đúng một
+--  cánh cửa —
+--
+--    · đoán mật khẩu liên tiếp thì khoá 15 phút
+--    · một email không nhận quá ba thư đăng ký mỗi giờ
+--    · một tài khoản không rút khoá kho quá N lượt mỗi giờ
+--
+--  Đếm trong cơ sở dữ liệu thì con số ĐÚNG cho mọi lượt chạy cùng lúc.
+--  Bộ nhớ tạm của từng máy chủ thì mỗi máy đếm một kiểu, và kẻ đoán mật
+--  khẩu chỉ cần rải đều các lượt thử là không máy nào thấy đủ số.
+-- ─────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS chanNhip (
+  khoa   TEXT PRIMARY KEY,          -- loại · đối tượng, ví dụ 'dangNhapSai·admin@gita365'
+  dem    INTEGER NOT NULL DEFAULT 0,
+  hetHan INTEGER NOT NULL           -- mốc mili-giây; qua mốc thì đếm lại từ đầu
+);
+
+CREATE INDEX IF NOT EXISTS ix_chan_han ON chanNhip (hetHan);
+
 CREATE TABLE IF NOT EXISTS soDem (
   khoa   TEXT PRIMARY KEY,
   gia    INTEGER NOT NULL DEFAULT 0,

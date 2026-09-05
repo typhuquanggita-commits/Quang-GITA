@@ -1,0 +1,93 @@
+# ═══════════════════════════════════════════════════════════════
+#  GITA 365 · CẤU HÌNH TRIỂN KHAI CỬA VÀO MỚI
+#
+#  Chưa triển khai — tệp này là bản khai để lúc triển khai không phải
+#  nhớ lại từ đầu. Ba việc chủ hệ phải làm bằng tay, kê ở cuối tệp.
+#
+#  ── VÌ SAO CLOUDFLARE WORKERS ──
+#
+#  Đo ở tools/do-tai-may-chu.js: chỗ chặn sớm nhất KHÔNG phải Sheets mà
+#  là trần 30 LƯỢT CHẠY ĐỒNG THỜI của Apps Script. Ở 100.000 tài khoản,
+#  giờ cao điểm cần khoảng 1.250 lượt. Đổi kho dữ liệu mà giữ cửa vào
+#  Apps Script là gỡ trần thứ nhất, giữ nguyên trần thứ hai.
+#
+#  Workers không có trần ấy — nó chạy ở hàng trăm nơi cùng lúc và tự
+#  giãn. Thêm ba lý do nữa, theo đúng thứ tự quan trọng với kho này:
+#
+#    · D1 CHÍNH LÀ SQLite, nên may-chu/csdl.sql chạy ở máy và chạy trên
+#      máy chủ là cùng một cỗ máy — bộ thử không phải bản mô phỏng.
+#    · Pages phục vụ luôn phần tĩnh (index.html, gita-app.js, kho/*.enc)
+#      trên CÙNG một tên miền với Worker, nên không có CORS, không có
+#      lượt gọi thăm dò trước mỗi yêu cầu.
+#    · Một nhà cung cấp, một hoá đơn. Mức miễn phí đủ cho giai đoạn đầu.
+#
+#  ── CÒN Ở LẠI GOOGLE ──
+#
+#  Drive vẫn giữ tài liệu và minh chứng: chúng đã ở đó, chủ hệ đã quen
+#  thao tác trên đó, và chuyển đi không đổi được con số nào trong bản
+#  đo. Chuyển một thứ đang chạy tốt là mua rủi ro không mua lợi ích.
+# ═══════════════════════════════════════════════════════════════
+
+name = "gita365"
+main = "worker.js"
+compatibility_date = "2026-09-01"
+
+# Nguồn dữ liệu. Tạo bằng:  npx wrangler d1 create gita365
+# rồi dán database_id vào đây (id KHÔNG phải bí mật — nó chỉ định danh).
+[[d1_databases]]
+binding = "CSDL"
+database_name = "gita365"
+database_id = "CHUA-TAO — chạy: npx wrangler d1 create gita365"
+
+# Kho tệp cho RUỘT hồ sơ người dùng.
+#
+# Vì sao ruột không nằm trong D1: nửa triệu hồ sơ × 50 KB là 25 GB,
+# quá sức D1 (trần 10 GB) và vừa vặn kho tệp (10 GB đầu miễn phí).
+# Xem chú giải ở bảng hosoApp trong csdl.sql.
+[[r2_buckets]]
+binding = "HOSO"
+bucket_name = "gita365-hoso"
+
+# ═══════════════════════════════════════════════════════════════
+#  BA BÍ MẬT — KHÔNG BAO GIỜ VIẾT VÀO TỆP NÀY
+#
+#  Tệp này nằm trong kho mã. Kho mã đi qua git, qua máy người khác, qua
+#  màn hình lúc chia sẻ. Một bí mật viết vào đây là một bí mật đã lộ từ
+#  dòng đầu tiên nó được viết ra — cùng đúng cái luật mà máy chủ cũ đã
+#  ghi ở đầu GITA365_TATCA.gs về mật khẩu nằm cứng trong mã.
+#
+#  Nạp bằng lệnh, mỗi lệnh hỏi giá trị rồi cất vào kho bí mật của
+#  Cloudflare:
+#
+#    npx wrangler secret put GITA_TIEU
+#        Tiêu băm mật khẩu. Sinh MỘT LẦN rồi giữ mãi:
+#            node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+#        ĐỔI TIÊU LÀ MỌI MẬT KHẨU HỎNG CÙNG LÚC — không ai đăng nhập
+#        được nữa và không có đường lùi. Cất một bản ở nơi an toàn.
+#
+#    npx wrangler secret put GITA_KHOA_KHO
+#        Nội dung kho/khoa.json. Đây là chìa mở toàn bộ tài sản nội
+#        dung của Học viện. Không nằm trong cơ sở dữ liệu — một bản sao
+#        lưu cơ sở dữ liệu bị lộ mà kéo theo bộ khoá thì mất tất cả,
+#        chứ không phải mất dữ liệu một người.
+#
+#    npx wrangler secret put GITA_KHOA_KY
+#        Khoá ký chứng cứ hoa hồng (HMAC). Chưa dùng tới ở phần đã
+#        port; nạp sẵn để lúc port GITA_ChungCu.gs không phải quay lại.
+#
+#  ═══════════════ BỐN VIỆC LÚC TRIỂN KHAI ═══════════════
+#
+#  1. npx wrangler d1 create gita365          → dán database_id lên trên
+#  2. npx wrangler d1 execute gita365 --file=csdl.sql --remote
+#  3. ba lệnh secret put ở trên
+#  4. npx wrangler deploy
+#
+#  Rồi trong ứng dụng: Super Admin → Quản trị trang → Nối máy chủ →
+#  dán địa chỉ Worker → Lưu → Gọi thử.
+#
+#  ĐỔI ĐỊA CHỈ LÀ ĐỔI NỀN, VÀ ĐỔI NGƯỢC LẠI ĐƯỢC TRONG MỘT PHÚT. Cửa
+#  vào mới giữ nguyên bề mặt của máy chủ cũ đúng để làm được việc ấy:
+#  hai máy chủ cùng chạy một thời gian, có chuyện thì dán lại địa chỉ
+#  cũ. Đổi bề mặt cùng lúc với đổi nền thì lúc hỏng không ai biết hỏng
+#  vì nền hay vì bề mặt.
+# ═══════════════════════════════════════════════════════════════

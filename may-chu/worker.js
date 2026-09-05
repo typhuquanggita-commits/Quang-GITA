@@ -1,0 +1,348 @@
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 · CỬA VÀO MỚI — BỘ ĐỊNH TUYẾN
+
+   Cloudflare Worker. Giữ NGUYÊN bề mặt mà máy khách đang gọi: POST một
+   khối JSON có trường fn, nhận về một khối JSON. Máy khách không phải
+   sửa một dòng nào — đổi mỗi địa chỉ ở G.API_CAP_PHEP.
+
+   Giữ nguyên bề mặt là điều kiện để CHUYỂN DẦN: hai máy chủ cùng chạy
+   một thời gian, đổi địa chỉ là đổi nền, và đổi ngược lại được ngay
+   trong một phút nếu có chuyện. Đổi bề mặt cùng lúc với đổi nền thì
+   lúc hỏng không ai biết hỏng vì nền hay vì bề mặt.
+
+   ── PHẦN NÀY ĐÃ PORT TỚI ĐÂU ──
+
+   Xong: đăng nhập · đăng xuất · kiểm phiên · đổi mật khẩu · cấp khoá
+   kho · trạng thái máy chủ. Đây là phần MỌI lượt gọi khác đều đứng
+   trên, nên nó đi trước.
+
+   Chưa: đăng ký/OTP/kích hoạt, đồng bộ hồ sơ, tài liệu, chứng cứ hoa
+   hồng, sổ cộng đồng, quyền xem khách, tình huống khách, xuất Sheet.
+
+   CHƯA PORT THÌ BÁO TO, KHÔNG IM. Danh sách CHUA_PORT ở dưới trả về
+   đúng một câu nói rõ việc ấy chưa có ở nền mới. Trả 'Yêu cầu không
+   hợp lệ' cho một việc CÓ THẬT ở nền cũ là cách chắc nhất để một lỗi
+   chuyển nền bị đọc thành lỗi máy khách, và người đi tìm sẽ tìm nhầm
+   chỗ suốt buổi.
+   ═══════════════════════════════════════════════════════════════ */
+
+import { Kho, kiemPhien, kiemMatKhau, bamMoi, muoiMoi } from './nen.js';
+
+const HAN_PHIEN_GIO      = 12;
+const HAN_KHOA_GIO       = 12;
+const TRAN_XIN_KHOA_GIO  = 12;
+const TRAN_SAI_MK        = 8;      /* lượt sai liên tiếp trước khi khoá */
+const GIAY_KHOA_SAI      = 15 * 60;
+
+/* ═══════════════ BỐN TUYẾN ═══════════════
+   BẢN CHÉP của G.TUYEN trong src/data.tuyen.js, y như server/GITA_CapPhep.gs
+   vẫn chép. Bộ kiểm phát hành (mục 36) đối chiếu các bản này mỗi lần chạy
+   và dừng phát hành nếu lệch. */
+const TUYEN = [
+  { ma: 'GITA365',   trangThai: 'chay',  goiCu: true },
+  { ma: 'ENGWIN365', trangThai: 'chuan', goiCu: false },
+  { ma: 'MATH365',   trangThai: 'chuan', goiCu: false },
+  { ma: 'SAT365',    trangThai: 'chuan', goiCu: false },
+  { ma: 'HSA365',    trangThai: 'chuan', goiCu: false }
+];
+const SO_TANG = 5;
+
+/* Bậc vai — bản chép của G.ROLES. Càng nhỏ càng nhiều quyền. */
+const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
+             R09:9,R10:10,R11:11,R12:12,R13:13,R14:14,R15:15};
+const BAC_COACH = 7;   /* gói NGHỀ CAO dừng ở đúng bậc Coach — xem GITA_XemKhach.gs */
+
+const tuyen_   = ma => TUYEN.find(t => t.ma === ma) || null;
+const goiNghe_ = ma => { const t = tuyen_(ma); return t ? (t.goiCu ? 'nghe' : ma.toLowerCase() + '-nghe') : ''; };
+const goiNgheCao_ = ma => { const t = tuyen_(ma); return t ? (t.goiCu ? 'nghe-cao' : ma.toLowerCase() + '-nghe-cao') : ''; };
+const goiTang_ = (ma, tang) => {
+  const t = tuyen_(ma);
+  if (!t || !(tang >= 1 && tang <= SO_TANG)) return '';
+  return t.goiCu ? 'tang' + tang : ma.toLowerCase() + '-t' + tang;
+};
+
+/* Tuyến của một tài khoản. Ô trống nghĩa là GITA365 — nhờ vậy mọi tài
+   khoản có trước v7.8 giữ nguyên phạm vi cũ mà không phải điền gì.
+   Chỉ tuyến ĐANG CHẠY mới được cấp; tuyến đang dựng chuẩn chưa có khoá. */
+function tuyenCuaTK_(hoSo) {
+  const tho = String((hoSo && hoSo.tuyen) || '').trim();
+  if (!tho) return tuyen_('GITA365').trangThai === 'chay' ? ['GITA365'] : [];
+  const ra = [];
+  for (const x of tho.split(/[,;\s]+/)) {
+    const t = tuyen_(String(x).toUpperCase());
+    if (t && t.trangThai === 'chay' && ra.indexOf(t.ma) < 0) ra.push(t.ma);
+  }
+  return ra;
+}
+
+/** Phạm vi cấp phép — port nguyên văn gitaPhamViCapPhep của nền cũ.
+    Đây là chỗ KHÔNG được viết lại cho gọn: mỗi dòng ở đây là một quyết
+    định của chủ hệ về ai thấy được dữ liệu của ai, và "gọn hơn" ở đây
+    nghĩa là "khác đi ở một chỗ nào đó không ai nhìn ra". */
+export function phamViCapPhep(hoSo) {
+  const ds = ['nen'];                       /* mọi tài khoản đã đăng nhập */
+
+  /* VAI KHÔNG CÓ TRONG BẢNG THÌ DỪNG Ở PHẦN NỀN.
+
+     Nền cũ viết  ROLES[hoSo.role] || {lv: 99}  rồi để rơi tiếp xuống
+     nhánh khách hàng — nên một vai lạ vẫn nhận gói theo TẦNG của hồ sơ
+     học viên gắn với tài khoản ấy. Hỏng theo hướng an toàn (không có
+     gói nghề, không có nghề cao), nhưng nó là RƠI QUA chứ không phải
+     một quyết định, và chỗ rơi qua thì không ai đọc ra được ý định.
+
+     Chủ hệ đã chốt lối DANH SÁCH TRẮNG ở bản 9.46 cho quyền xem hồ sơ
+     khách: vai nào không có tên là không được, kể cả vai chưa tồn tại
+     hôm nay. Kê danh sách cấm thì mỗi vai mới sinh ra là mặc định nhìn
+     thấy, và cái mặc định ấy không ai nhớ đi sửa. Cùng một luật, nên
+     cùng một cách viết.
+
+     Siết theo hướng CHẶT HƠN nền cũ, nên hai máy chủ chạy song song
+     trong lúc chuyển nền không sinh ra chỗ hở nào. */
+  if (!BAC[hoSo.role]) return ds;
+
+  const lv = BAC[hoSo.role];
+  const tuyenTK = tuyenCuaTK_(hoSo);
+
+  if (lv <= 12) {
+    for (const k of tuyenTK) {
+      ds.push(goiNghe_(k));
+      if (lv <= BAC_COACH) ds.push(goiNgheCao_(k));
+      for (let i = 1; i <= SO_TANG; i++) ds.push(goiTang_(k, i));
+    }
+    return gon_(ds);
+  }
+  if (lv === 15) return ds;                 /* CTV giới thiệu: chỉ phần nền */
+
+  const tang = Number(hoSo.tier || 0);
+  if (!(tang >= 1)) return ds;
+  for (const k of tuyenTK)
+    for (let j = 1; j <= Math.min(SO_TANG, tang); j++) ds.push(goiTang_(k, j));
+  return gon_(ds);
+}
+const gon_ = ds => ds.filter((x, i) => x && ds.indexOf(x) === i);
+
+/* ═══════════════ VIỆC ═══════════════ */
+
+const CHUA_PORT = {
+  dangKy: 'đăng ký tài khoản', guiLaiOtp: 'gửi lại mã OTP',
+  xacThucOtp: 'xác thực mã OTP', kichHoat: 'kích hoạt tài khoản',
+  quenMatKhau: 'quên mật khẩu', datLaiMatKhau: 'đặt lại mật khẩu',
+  dongBo: 'đồng bộ hồ sơ', xuatSheet: 'xuất bảng tính',
+  napTaiLieu: 'gửi tài liệu', duyetTaiLieu: 'duyệt tài liệu',
+  nangTang: 'nâng tầng', kiemDrive: 'kiểm thư mục Drive',
+  kyChungCu: 'ký chứng cứ', xacNhanChungCu: 'xác nhận chứng cứ',
+  soiChungCu: 'soi chứng cứ', ghiTinCongDong: 'ghi tin cộng đồng',
+  docTinCongDong: 'đọc tin cộng đồng', guiChuyen: 'gửi chuyện',
+  capQuyenXem: 'cấp quyền xem hồ sơ khách', thuHoiQuyenXem: 'thu hồi quyền xem',
+  soiQuyenXem: 'soi quyền xem', xemKhachCao: 'xem hồ sơ khách tầng cao',
+  napTinhHuongKhach: 'nạp tình huống cho gia đình', xemKpiKhach: 'xem KPI khách',
+  kiemBanMoi: 'kiểm bản mới'
+};
+
+const CAN_PHIEN = ['capKhoa', 'doiMatKhau'];
+
+async function lam(fn, y, env, db) {
+  if (fn === 'dangNhap')  return await dangNhap(y, env, db);
+  if (fn === 'dangXuat')  return await dangXuat(y, db);
+
+  if (CHUA_PORT[fn]) return {ok: false, code: 'CHUAPORT',
+    error: 'Việc "' + CHUA_PORT[fn] + '" chưa chuyển sang máy chủ mới. ' +
+           'Việc này vẫn chạy trên máy chủ cũ.'};
+
+  if (CAN_PHIEN.indexOf(fn) < 0) return {ok: false, error: 'Yêu cầu không hợp lệ.'};
+
+  const hoSo = await kiemPhien(db, y.token, y.u);
+  if (!hoSo) return {ok: false, code: 'AUTH', error: 'Phiên không hợp lệ hoặc đã hết hạn.'};
+  if (hoSo.khoa) return {ok: false, code: 'LOCKED', error: 'Tài khoản đang bị khoá.'};
+
+  if (fn === 'doiMatKhau') return await doiMatKhau(y, env, db, hoSo);
+  if (fn === 'capKhoa')    return await capKhoa(y, env, db, hoSo);
+  return {ok: false, error: 'Yêu cầu không hợp lệ.'};
+}
+
+/* ── ĐĂNG NHẬP ──
+
+   HAI CÂU TỪ CHỐI PHẢI GIỐNG HỆT NHAU cho "không có tài khoản này" và
+   "sai mật khẩu". Khác nhau một chữ là dò được email nào đã đăng ký với
+   Học viện, và danh sách ấy tự nó đã là dữ liệu của khách hàng. Nền cũ
+   làm đúng chỗ này; giữ nguyên. */
+const SAI = {ok: false, error: 'Tên đăng nhập hoặc mật khẩu chưa đúng.'};
+
+async function dangNhap(y, env, db) {
+  const u = String(y.u || '').trim().toLowerCase();
+  const mk = String(y.mk || '');
+  if (!u || !mk) return {ok: false, error: 'Thiếu tên đăng nhập hoặc mật khẩu.'};
+
+  /* Đếm TRƯỚC khi tra, và đếm theo tên người ta gõ vào — đếm sau khi
+     tra thì tài khoản không tồn tại được thử vô hạn lần. */
+  const khoaNhip = 'dangNhapSai·' + u;
+  const soSai = await Kho.demNhip(db, khoaNhip, GIAY_KHOA_SAI);
+  if (soSai > TRAN_SAI_MK)
+    return {ok: false, code: 'RATE',
+      error: 'Sai quá nhiều lần. Thử lại sau 15 phút, hoặc dùng mục Quên mật khẩu.'};
+
+  const nd = await Kho.nguoiTheoTen(db, u);
+  if (!nd || nd.deletedAt) return SAI;
+
+  const kq = await kiemMatKhau(nd, mk, env.GITA_TIEU);
+  if (!kq.dung) return SAI;
+
+  /* Đúng mật khẩu rồi thì nói THẬT là tài khoản đang khoá — tới đây
+     người hỏi đã chứng minh họ là chủ tài khoản, nên câu trả lời rõ
+     ràng không còn là chỗ rò rỉ nữa. Nền cũ cũng chia đúng như vậy. */
+  if (!Number(nd.active))
+    return {ok: false, code: 'LOCKED', error: 'Tài khoản đang bị khoá. Liên hệ quản trị.'};
+
+  await Kho.xoaNhip(db, khoaNhip);
+
+  /* NÂNG BẢN BĂM NGAY TRONG LƯỢT ĐĂNG NHẬP ĐÚNG NÀY.
+     Đây là lần duy nhất máy chủ cầm mật khẩu thật trong tay, nên cũng
+     là lần duy nhất nâng được mà không phải hỏi ai. Bỏ lỡ là phải đợi
+     tới lần đăng nhập sau. */
+  if (kq.canNangCap) {
+    const muoi = muoiMoi();
+    await db.prepare('UPDATE users SET pwSalt = ?, pwHash = ?, updatedAt = ? WHERE id = ?')
+      .bind(muoi, await bamMoi(mk, muoi, env.GITA_TIEU), new Date().toISOString(), nd.id).run();
+  }
+
+  const token = await Kho.moPhien(db, nd, HAN_PHIEN_GIO);
+  const hv = await Kho.hocVienCuaCha(db, nd.id);
+  await Kho.ghiNhatKy(db, {uid: nd.id, username: nd.username, viec: 'DANG_NHAP',
+    chiTiet: kq.canNangCap ? 'đã nâng bản băm mật khẩu' : ''});
+
+  return {ok: true, token: token, u: nd.username, role: nd.role, portal: nd.portal,
+    hoTen: nd.hoTen, tier: hv ? Number(hv.tier || 0) : 0,
+    maKhachHang: nd.maKhachHang || '',
+    phaiDoiMk: !!Number(nd.mustChangePw),
+    hetHan: new Date(Date.now() + HAN_PHIEN_GIO * 3600e3).toISOString()};
+}
+
+async function dangXuat(y, db) {
+  await Kho.dongPhien(db, y.token);
+  return {ok: true};
+}
+
+/* ── ĐỔI MẬT KHẨU ── */
+async function doiMatKhau(y, env, db, hoSo) {
+  const nd = await Kho.nguoiTheoId(db, hoSo.uid);
+  if (!nd) return {ok: false, error: 'Không tìm thấy tài khoản.'};
+
+  const cu = await kiemMatKhau(nd, String(y.cu || ''), env.GITA_TIEU);
+  if (!cu.dung) return {ok: false, error: 'Mật khẩu hiện tại chưa đúng.'};
+
+  const moi = String(y.moi || '');
+  const che = mkQuaDeDoan(moi, nd);
+  if (che) return {ok: false, error: che};
+
+  const muoi = muoiMoi();
+  await db.prepare(
+    'UPDATE users SET pwSalt = ?, pwHash = ?, mustChangePw = 0, pwDoiLuc = ?, updatedAt = ? WHERE id = ?'
+  ).bind(muoi, await bamMoi(moi, muoi, env.GITA_TIEU),
+    new Date().toISOString(), new Date().toISOString(), nd.id).run();
+
+  /* ĐÁ MỌI PHIÊN KHÁC NGAY. Người đổi mật khẩu thường đổi vì nghi có
+     người khác vào được; giữ lại phiên cũ là giữ nguyên cánh cửa mà họ
+     vừa đi khoá. */
+  const da = await Kho.daPhienKhac(db, nd.id, hoSo.token);
+  await Kho.ghiNhatKy(db, {uid: nd.id, username: nd.username, viec: 'DOI_MAT_KHAU',
+    chiTiet: 'đá ' + da + ' phiên khác'});
+  return {ok: true, daPhien: da};
+}
+
+/* Mật khẩu dễ đoán thì chặn NGAY LẦN ĐẦU, không đợi tới lúc bị dò.
+   Danh sách ngắn có chủ ý: nó chặn những chuỗi người ta gõ khi muốn cho
+   xong, không cố làm thay việc của một bộ đo độ mạnh. */
+const DE_DOAN = ['123456', '12345678', 'password', 'matkhau', 'qwerty',
+  'gita365', 'abc123', '111111', '000000', 'admin'];
+function mkQuaDeDoan(mk, nd) {
+  if (mk.length < 10) return 'Mật khẩu phải từ 10 ký tự trở lên.';
+  const t = mk.toLowerCase();
+  if (DE_DOAN.some(x => t.includes(x))) return 'Mật khẩu này quá dễ đoán. Chọn chuỗi khác.';
+  const ten = String(nd.username || '').toLowerCase().split('@')[0];
+  if (ten && ten.length >= 4 && t.includes(ten))
+    return 'Mật khẩu không được chứa tên đăng nhập.';
+  return '';
+}
+
+/* ── CẤP KHOÁ KHO ── */
+async function capKhoa(y, env, db, hoSo) {
+  if (hoSo.phaiDoiMk) {
+    await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'CAP_KHOA_CHAN',
+      chiTiet: 'Mật khẩu tạm chưa đổi'});
+    return {ok: false, code: 'MUSTCHANGE',
+      error: 'Tài khoản đang dùng mật khẩu tạm do máy sinh ra. ' +
+             'Đổi sang mật khẩu của riêng anh chị rồi kho mới mở.'};
+  }
+
+  const soLan = await Kho.demNhip(db, 'xinKhoa·' + hoSo.u, 3600);
+  if (soLan > TRAN_XIN_KHOA_GIO) {
+    await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'CAP_KHOA_CHAN',
+      chiTiet: 'Vượt trần ' + TRAN_XIN_KHOA_GIO + ' lượt/giờ — lượt thứ ' + soLan});
+    return {ok: false, code: 'RATE', error: 'Xin khoá quá nhiều lần trong một giờ. Thử lại sau.'};
+  }
+
+  const duocCap = phamViCapPhep(hoSo);
+  const xin = Array.isArray(y.goi) ? y.goi : duocCap;
+  const cap = duocCap.filter(g => xin.indexOf(g) >= 0);
+
+  /* BỘ KHOÁ NẰM TRONG SECRET CỦA WORKER, KHÔNG NẰM TRONG CƠ SỞ DỮ LIỆU.
+     Một bản sao lưu cơ sở dữ liệu bị lộ mà kéo theo bộ khoá thì mất
+     toàn bộ tài sản nội dung của Học viện, chứ không phải mất dữ liệu
+     một người. Hai thứ ấy không được nằm cùng một chỗ. */
+  let kho = {};
+  try { kho = JSON.parse(env.GITA_KHOA_KHO || '{}'); } catch (e) { kho = {}; }
+  if (!Object.keys(kho).length)
+    return {ok: false, code: 'NOKEY', error: 'Máy chủ chưa được nạp bộ khoá.'};
+
+  const traVe = {};
+  for (const g of cap) if (kho[g]) traVe[g] = kho[g];
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'CAP_KHOA',
+    doiTuong: cap.join(','), chiTiet: String(y.may || '').slice(0, 120)});
+
+  return {ok: true, khoa: traVe, phamVi: cap,
+    hetHan: new Date(Date.now() + HAN_KHOA_GIO * 3600e3).toISOString()};
+}
+
+/* ═══════════════ CỬA ═══════════════ */
+
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Max-Age': '86400'
+};
+const traJson = (o, ma) => new Response(JSON.stringify(o), {
+  status: ma || 200,
+  headers: {'Content-Type': 'application/json; charset=utf-8', ...CORS}
+});
+
+export default {
+  async fetch(req, env) {
+    if (req.method === 'OPTIONS') return new Response(null, {status: 204, headers: CORS});
+
+    /* Trạng thái: máy chủ còn sống chưa, đã nạp khoá chưa. KHÔNG trả
+       khoá nào, và không nói gì về số tài khoản. */
+    if (req.method === 'GET') {
+      let n = 0;
+      try { n = Object.keys(JSON.parse(env.GITA_KHOA_KHO || '{}')).length; } catch (e) {}
+      return traJson({ok: true, ten: 'GITA 365 — máy chủ cấp phép',
+        daNapKhoa: n, luc: new Date().toISOString()});
+    }
+    if (req.method !== 'POST') return traJson({ok: false, error: 'Yêu cầu không hợp lệ.'}, 405);
+
+    let y;
+    try { y = await req.json(); } catch (e) { y = {}; }
+
+    try {
+      return traJson(await lam(String(y.fn || ''), y, env, env.CSDL));
+    } catch (err) {
+      /* KHÔNG ĐẨY LỜI LỖI CỦA MÁY RA CHO MÁY KHÁCH. Lời lỗi của cơ sở
+         dữ liệu hay kể tên bảng, tên cột, có khi cả mảnh câu lệnh —
+         đó là bản đồ cho người đi dò. Ghi đủ vào nhật ký máy chủ, trả
+         ra một câu. */
+      console.error('LOI', String(y.fn || ''), err && err.stack || err);
+      return traJson({ok: false, error: 'Máy chủ gặp trục trặc. Thử lại sau ít phút.'}, 500);
+    }
+  }
+};
