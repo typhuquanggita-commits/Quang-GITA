@@ -150,6 +150,25 @@ function traTaiLieuGoc(tu){
 
 /* ─── Tra kho ─── */
 G.aiTra = function(cauHoi){
+  /* ═══ TỪ 9.73: ĐI QUA CHỈ MỤC TỰ DÒ ═══
+
+     Phần dưới hàm này tra 30 kho đã khai tay. Đo trên vai Coach:
+     trong bộ nhớ có 528 kho · 10.485 bản ghi. Ba mươi trên năm trăm
+     hai tám — 94% tri thức nằm ngay trong máy mà không tra tới, và
+     trợ lý KHÔNG im lặng, nó trả lời bằng thứ gần giống trong ba
+     mươi kho kia.
+
+     src/tro-ly-chi-muc.js dò lấy toàn bộ, chấm bằng BM25 trên một
+     chỉ mục ngược, và trả về ĐÚNG hình mà bảy chỗ gọi aiTra đang
+     mong — kể cả ba ô giuLaiVuotTang · khoChuaKhaiTang · tangNha mà
+     mục 71 của bộ kiểm đọc tới.
+
+     Vì sao vẫn giữ nguyên phần cũ bên dưới: nếu tệp chỉ mục không
+     nạp được vì bất cứ lý do gì, trợ lý phải còn tra được ba mươi
+     kho chứ không được câm. Một đường lui hẹp còn hơn không có
+     đường nào. */
+  if (typeof G.tlTra === 'function') return G.tlTra(cauHoi);
+
   var tu = tachTu(cauHoi);
   if(!tu.length) return [];
   var ra = [];

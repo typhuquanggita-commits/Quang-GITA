@@ -18,6 +18,17 @@ const fs = require('fs');
 const path = require('path');
 
 const GOC = path.join(__dirname, '..');
+
+/* Danh sách gói lấy từ chính thư mục kho/ — kho/*.enc là bản phát hành
+   thật, và nó không phụ thuộc kho/khoa.json (tệp ấy nằm trong
+   .gitignore, nên máy nào không có khoá vẫn chạy được bộ thử này).
+
+   Trước 9.73 danh sách này gõ tay ở BA chỗ trong tệp: bộ khoá giả của
+   PropertiesService, lượt xin mặc định, và bảng kỳ vọng. Cả ba đều
+   dừng ở bảy gói, còn kho đã có tám từ bản 9.46. */
+const GOI_DU = fs.readdirSync(path.join(GOC, 'kho'))
+  .filter(f => /\.enc$/.test(f)).map(f => f.replace(/\.enc$/, '')).sort();
+
 const V69 = process.argv[2] ||
   '/tmp/claude-0/-home-user-Quang-GITA/0c18496f-dc69-5c66-b565-ec9d18e49341/scratchpad/v69/GITA365_v69/src';
 
@@ -79,14 +90,43 @@ const moiTruong = {
     put: (k, v) => { BO_NHO[k] = v; }
   }) },
   PropertiesService: { getScriptProperties: () => ({
-    getProperty: () => JSON.stringify({ nen:'K-nen', nghe:'K-nghe',
-      tang1:'K-t1', tang2:'K-t2', tang3:'K-t3', tang4:'K-t4', tang5:'K-t5' })
+    /* Bộ khoá giả dựng từ GOI_DU: thiếu một gói ở đây là máy chủ
+       không cấp được gói ấy, và phép đo báo đỏ vì BỘ THỬ thiếu chứ
+       không vì máy chủ sai — đúng thứ đã xảy ra với nghe-cao. */
+    getProperty: () => JSON.stringify(GOI_DU.reduce(
+      (o, g) => { o[g] = 'K-' + g; return o; }, {}))
   }) },
   ContentService: { MimeType: { JSON: 'json' },
     createTextOutput: t => ({ _t: t, setMimeType(){ return this; }, getContent(){ return this._t; } }) }
 };
 
-const nguon = fs.readFileSync(path.join(GOC, 'server', 'GITA_CapPhep.gs'), 'utf8');
+/* NẠP TỆP ĐANG THỬ, CỘNG TỆP NÓ PHỤ THUỘC.
+
+   Trước 9.73 chỗ này đọc đúng GITA_CapPhep.gs. Nhưng từ bản 9.46 hàm
+   gitaPhamViCapPhep() gọi gitaXkBacCoach_(), mà hàm ấy ở
+   GITA_XemKhach.gs — không được nạp, nên mọi vai NGHỀ ném lỗi và ba
+   dòng Super Admin · Coach · Tư vấn báo đỏ với ô chi tiết TRỐNG.
+
+   Ô trống ấy là chỗ đáng nói: phép đo đỏ mà không nói được vì sao,
+   nên người đọc dễ cho là "máy chủ chưa dựng xong" rồi bỏ qua. Ba
+   dòng đỏ ấy đã đứng như thế từ 9.46 tới nay.
+
+   Tôi đã thử nạp CẢ thư mục và hỏng nặng hơn, hai lần:
+     · xếp theo bảng chữ cái thì GITA_XemKhach.gs đứng sau và cướp mất
+       doPost — khai hàm thì bản sau đè bản trước;
+     · xếp lại thứ tự vẫn đỏ hết, vì bộ giả lập ở tệp này dựng vừa đủ
+       cho phần cấp phép, còn các tệp khác đụng những API chưa giả lập.
+   Nới bộ giả lập cho cả thư mục là dựng lại tools/thu-may-chu.js lần
+   thứ hai, mà hai bộ giả lập cho một máy chủ thì sẽ có ngày lệch nhau.
+
+   Nên hai tên dưới đây vẫn gõ tay — nhưng chúng gõ một PHỤ THUỘC cụ
+   thể chứ không gõ lại một thứ đã có nguồn, khác hẳn ba chỗ vừa sửa.
+   Ngày GITA_CapPhep.gs gọi thêm hàm ở tệp thứ ba thì nó ném lỗi kèm
+   đúng tên hàm còn thiếu. */
+const dsGs = ['GITA_XemKhach.gs', 'GITA_CapPhep.gs'];
+const nguon = dsGs
+  .map(f => fs.readFileSync(path.join(GOC, 'server', f), 'utf8')).join('\n;\n');
+
 const ten = Object.keys(moiTruong);
 /* doGet nay là bộ định tuyến trong GITA_BanWeb.gs; hàm trả JSON tình trạng đã
    đổi tên thành gitaTrangThai_ vì Apps Script chỉ cho phép một doGet. */
@@ -98,7 +138,7 @@ const S = chay(...ten.map(k => moiTruong[k]));
 
 function xin(token, u, goi) {
   const r = S.doPost({ postData: { contents: JSON.stringify({
-    fn: 'capKhoa', token, u, goi: goi || ['nen','nghe','tang1','tang2','tang3','tang4','tang5'],
+    fn: 'capKhoa', token, u, goi: goi || GOI_DU,
     may: 'may-thu' }) } });
   return JSON.parse(r.getContent());
 }
@@ -129,9 +169,16 @@ bao(!xin('', 'superadmin@gita365.vn').ok, 'không có token thì không cấp kh
 }
 
 console.log('\n2 · PHẠM VI THEO VAI');
+/* GÓI NGHỀ CAO — MANG HỒ SƠ KHÁCH TẦNG 4-5.
+   Bảng này viết TAY chứ không suy từ mã đang được thử: suy ra từ nó
+   thì phép đo chỉ còn hỏi "mã có bằng chính nó không". Chủ hệ chốt
+   tầng 4-5 chỉ từ Coach lên tới Super Admin, nên:
+     Super Admin (bậc 1) và Coach (bậc 7) CÓ nghe-cao
+     Tư vấn (bậc 11) KHÔNG — bậc cao hơn bậc Coach
+   Ba dòng này trước 9.73 đều thiếu nghe-cao và đều báo đỏ. */
 const CHO = {
-  'superadmin@gita365.vn': 'nen nghe tang1 tang2 tang3 tang4 tang5',
-  'coach@gita365.vn':      'nen nghe tang1 tang2 tang3 tang4 tang5',
+  'superadmin@gita365.vn': 'nen nghe nghe-cao tang1 tang2 tang3 tang4 tang5',
+  'coach@gita365.vn':      'nen nghe nghe-cao tang1 tang2 tang3 tang4 tang5',
   'tuvan@gita365.vn':      'nen nghe tang1 tang2 tang3 tang4 tang5',
   'phuhuynh@gita365.vn':   'nen tang1 tang2 tang3',
   'hocvien@gita365.vn':    'nen tang1 tang2 tang3 tang4 tang5',
@@ -147,8 +194,9 @@ Object.keys(CHO).forEach(u => {
 console.log('\n3 · KHÔNG XIN ĐƯỢC QUÁ PHẠM VI');
 {
   const u = 'phuhuynh@gita365.vn';
-  const d = xin(moPhien(u), u, ['nen','nghe','tang1','tang2','tang3','tang4','tang5']);
+  const d = xin(moPhien(u), u, GOI_DU);
   bao(!d.khoa.nghe, 'phụ huynh xin kho nghề vẫn không được cấp');
+  bao(!d.khoa['nghe-cao'], 'phụ huynh xin gói NGHỀ CAO cũng không được cấp');
   bao(!d.khoa.tang4 && !d.khoa.tang5, 'phụ huynh không lấy được tầng con chưa học');
 }
 {
@@ -173,7 +221,8 @@ bao(NHAT_KY.some(x => x.act === 'CAP_KHOA_CHAN'), 'lượt bị chặn cũng đ�
 console.log('\n6 · KIỂM SỐNG');
 {
   const d = JSON.parse(S.doGet().getContent());
-  bao(d.ok && d.daNapKhoa === 7, 'doGet báo đúng số gói khoá đã nạp, không lộ khoá nào',
+  bao(d.ok && d.daNapKhoa === GOI_DU.length,
+    'doGet báo đúng số gói khoá đã nạp (' + GOI_DU.length + '), không lộ khoá nào',
     d.daNapKhoa + ' gói · không có trường khoá: ' + (d.khoa === undefined));
 }
 

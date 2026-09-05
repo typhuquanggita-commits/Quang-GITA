@@ -452,6 +452,12 @@ function doLogin(u, p){
      khi người khác đăng nhập. Cùng luật với donKho() bên kho khoá. */
   if (G.S.viecCua && G.S.viecCua !== a.u) { G.S.viec = {}; G.S.chotNgay = {}; G.S.chotKhNgay = {}; G.S.caiTien = {}; G.S.mua = null; G.S.vet = []; }
   G.S.viecCua = a.u;
+  /* Chỉ mục của trợ lý dựng theo ĐÚNG kho mà vai trước được cấp. Giữ
+     lại qua lượt đăng nhập sau là để vai mới tra được kho của vai cũ —
+     đúng lớp lỗi mà mục 40 của bộ kiểm canh với dữ liệu nghề. Khoá
+     cache trong tro-ly-chi-muc.js cũng tự bắt được, đây là đường chắc
+     hơn vì nó không phụ thuộc số kho tình cờ bằng nhau. */
+  if (G.tlQuenChiMuc) G.tlQuenChiMuc();
 
   G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role);
   var portal = G.PORTALS[G.S.roleObj.portal];

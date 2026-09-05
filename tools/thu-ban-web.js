@@ -22,14 +22,24 @@ const { chromium } = require(PW);
 const GOC = path.join(__dirname, '..');
 /* Số gói đọc từ chính bộ khoá — kho có 7 gói tới bản 9.46 và 8 từ 9.47.
    Gõ con số ở đây là dựng bản thứ hai của một thứ đã có thật một chỗ. */
-const SO_GOI_TBW = (() => {
-  try { return Object.keys(JSON.parse(
-    fs.readFileSync(path.join(GOC, 'kho', 'khoa.json'), 'utf8')).khoa).length; }
-  catch (e) { return 0; }
+const KHOA_GOI = (() => {
+  try { return JSON.parse(
+    fs.readFileSync(path.join(GOC, 'kho', 'khoa.json'), 'utf8')).khoa; }
+  catch (e) { return {}; }
 })();
+const SO_GOI_TBW = Object.keys(KHOA_GOI).length;
 const CONG = 8123;
 const BASE = 'http://127.0.0.1:' + CONG + '/';
-const GOI = ['nen', 'nghe', 'tang1', 'tang2', 'tang3', 'tang4', 'tang5'];
+/* DANH SÁCH GÓI CŨNG ĐỌC TỪ BỘ KHOÁ, KHÔNG GÕ TAY.
+   SO_GOI_TBW ở trên đã đọc từ khoa.json từ 9.47 — nhưng danh sách gói
+   mà máy chủ giả này PHỤC VỤ thì vẫn gõ tay bảy tên, nên nó không bao
+   giờ trả về gói thứ tám và phép đo ngay dưới luôn thiếu một. Hai chỗ
+   nói về cùng một thứ mà một chỗ đọc, một chỗ gõ: chỗ gõ sẽ cũ.
+
+   Đây là lần thứ BA cùng một lớp lỗi lộ ra trong bản 9.73 — danh sách
+   tệp máy chủ trong thu-may-chu.js, con số bảy gói của Coach, và chỗ
+   này. Cả ba đều là một danh sách gõ tay về một thứ đã có sẵn nguồn. */
+const GOI = Object.keys(KHOA_GOI);
 
 const VO = path.join(GOC, 'GITA365.html');
 if (!fs.existsSync(VO)) {

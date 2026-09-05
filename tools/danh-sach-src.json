@@ -60,6 +60,7 @@
     "src/noi-may-chu.js",
     "src/kho-khach.js",
     "src/quy-trinh-xu-ly.js",
+    "src/tro-ly-chi-muc.js",
     "src/tro-ly-ai.js",
     "src/tro-ly-chat.js",
     "src/tro-ly-rong.js",

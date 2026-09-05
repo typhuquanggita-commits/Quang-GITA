@@ -13,6 +13,16 @@
 
    Sau khi mở kho, khớp trọn tiếng và chấm theo độ hiếm: 10/20.
 
+   9.73 — CHỈ MỤC TỰ DÒ. Trợ lý thôi tra 30 kho khai tay mà dò lấy
+   toàn bộ kho vai ấy được cấp: 833 kho · 18.140 bản ghi. Bộ đo mở
+   từ 20 lên 40 câu, hai mươi câu thêm nhắm đúng phần vừa mở ra.
+
+     20 câu cũ, chỉ mục cũ  : 10/20
+     20 câu cũ, chỉ mục mới : 17/20
+     40 câu, chỉ mục mới    : 28/40
+
+   Mốc đặt lại theo số đo được, không theo số mong muốn.
+
    VÌ SAO KHÔNG ĐẶT ĐÍCH 20/20
 
    Một bộ đo mà đạt điểm tuyệt đối thường là bộ đo đã được viết vừa
@@ -44,6 +54,35 @@ const HOI = [
   ['Nhà mình không có thời gian thì làm thế nào', 'TINHHUONG'],
   ['Phác đồ cho trẻ mất tập trung', 'PHACDO'],
   ['Mô thức về dòng thời gian', 'MOTHUC'],
+
+  /* ── HAI MƯƠI CÂU THÊM Ở 9.73 ──
+     Hai mươi câu đầu viết khi trợ lý tra được 30 kho. Nay nó tra 833
+     kho, nên bộ đo cũ đo một góc quá hẹp: đạt cao trên đó không nói
+     được gì về phần vừa mở ra.
+
+     Hai mươi câu này nhắm vào kho TRƯỚC ĐÂY KHÔNG TRA ĐƯỢC. Viết
+     trước khi chạy, không sửa sau khi thấy kết quả — bộ đo mà chỉnh
+     theo lời giải thì chỉ còn đo chính nó. */
+  ['Khiếu nại của khách đi theo mấy bước', 'NAM_BUOC_KHIEUNAI'],
+  ['Mười hai nguyên tắc gồm những gì', 'MUOIHAI_NGUYENTAC'],
+  ['Tầm nhìn của Học viện là gì', 'TAM_NHIN'],
+  ['Học phí từng tầng bao nhiêu', 'HP_TANG'],
+  ['Huy hiệu có những loại nào', 'HUYHIEU'],
+  ['Chín khoá bất biến của hành lang', 'HL_KHOA9'],
+  ['Mười hai luật hành lang thành công', 'HL_LUAT12'],
+  ['Đại sứ có mấy bậc hoa hồng', 'HH_BAC'],
+  ['Sổ tay quản trị có mấy nhóm màn', 'STA_NHOM'],
+  ['Bảng vinh danh xét theo tiêu chí nào', 'BTN_VINHDANH'],
+  ['Văn bản pháp lý cần soạn gồm những gì', 'RSP_VB'],
+  ['Luật mới về dữ liệu cá nhân hiệu lực khi nào', 'RSP_LUATMOI'],
+  ['Thao tác nào sinh ra bằng chứng', 'BCD_THAOTAC'],
+  ['Cây quyết định chọn hợp đồng nào', 'KK_CHON'],
+  ['Việc nào máy đã làm được rồi', 'TDH_HE'],
+  ['Chín bậc thu nhập của nhân sự', 'HSH_BAC'],
+  ['Nghi lễ trong nhà gồm những nghi lễ nào', 'NGHILE'],
+  ['Bản đồ cá nhân có mấy nhịp', 'BDCN_NHIP'],
+  ['Trò chơi hành trình quy đổi điểm thế nào', 'TG_QUYDOI'],
+  ['Ngôn từ nào bị cấm khi nói với phụ huynh', 'NGONTU_RANH'],
 ];
 (async () => {
   const khoa = JSON.parse(fs.readFileSync('/home/user/Quang-GITA/kho/khoa.json','utf8')).khoa;
@@ -70,7 +109,7 @@ const HOI = [
   /* MỐC KHÔNG ĐƯỢC TỤT. Đặt bằng đúng số đo được lúc dựng bộ này.
      Tụt xuống dưới là có người vừa làm hỏng phần tra kho — và lớp
      hỏng ấy im lặng, vì trợ lý vẫn trả lời, chỉ là trả lời sai. */
-  const MOC = 10;
+  const MOC = 28;
   if (t < MOC) {
     console.log('✗ TỤT so với mốc ' + MOC + '/' + r.length + ' — phần tra kho vừa hỏng ở đâu đó');
     await b.close(); process.exit(1);

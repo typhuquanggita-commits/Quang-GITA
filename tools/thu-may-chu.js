@@ -145,9 +145,25 @@ global.SpreadsheetApp={create:()=>so, openById:()=>so};
 if (process.argv.indexOf('--gop') >= 0) {
   eval(fs.readFileSync('server/GITA365_TATCA.gs', 'utf8'));
 } else {
-  for (const f of ['GITA_Nen.gs','GITA_CapPhep.gs','GITA_DangKy.gs','GITA_MatKhau.gs',
-                   'GITA_TaiLieu.gs','GITA_DongBo.gs','GITA_XuatSheet.gs','GITA_BanWeb.gs'])
-    eval(fs.readFileSync('server/'+f,'utf8'));
+  /* ĐỌC THƯ MỤC, KHÔNG KHAI TAY.
+
+     Trước 9.73 chỗ này là một danh sách tám tên gõ thẳng. Danh sách
+     ấy đã cũ từ lúc thêm server/GITA_XemKhach.gs ở bản 9.46: bản bảy
+     tệp rời không nạp tệp mới, nên gitaPhamViCapPhep() gọi
+     gitaXkBacCoach_() và ném "is not defined" — bước 7 của đường
+     phát hành dừng ở đó, mỗi lần chạy.
+
+     Không ai thấy vì bản --gop chạy đúng (nó nạp tệp gộp, có đủ), và
+     tệp gộp mới là thứ dán lên Apps Script. Nghĩa là lỗi này không
+     làm hỏng bản chạy thật — nó chỉ làm hỏng CHÍNH BỘ THỬ, và một bộ
+     thử đỏ vì lý do của riêng nó thì lần sau người ta bỏ qua nó.
+
+     Sửa bằng cách thôi khai tay: thêm tệp máy chủ ngày mai thì bộ
+     thử tự nạp. GITA_Nen.gs đứng đầu vì các tệp khác dựa vào nền. */
+  const dsGs = ['GITA_Nen.gs'].concat(
+    fs.readdirSync('server').filter(f =>
+      /\.gs$/.test(f) && f !== 'GITA_Nen.gs' && f !== 'GITA365_TATCA.gs').sort());
+  for (const f of dsGs) eval(fs.readFileSync('server/' + f, 'utf8'));
 }
 
 const H={thu:()=>thu, xoaThu:()=>{thu=[];}, props, trang};
@@ -234,7 +250,19 @@ const ph = kiemTraPhien_(dn2.token, hoSo.email);
 bao(ph && ph.role==='R13', 'đọc được hồ sơ phiên của phụ huynh');
 bao(gitaPhamViCapPhep({role:'R13', tier:0}).join()==='nen', 'nhà chưa vào tầng: chỉ gói nền');
 bao(gitaPhamViCapPhep({role:'R13', tier:2}).join()==='nen,tang1,tang2', 'nhà tầng 2: nền + tầng 1,2');
-bao(gitaPhamViCapPhep({role:'R07', tier:0}).length===7, 'Coach: đủ bảy gói');
+/* TÁM GÓI, KHÔNG PHẢI BẢY — nen · nghe · nghe-cao · tang1..5.
+   Số bảy viết từ trước bản 9.46, lúc chưa có gói NGHỀ CAO. Nó không
+   đỏ suốt từ đó tới nay vì cả nhánh bảy-tệp-rời của bộ thử này đã
+   ném lỗi trước khi chạy tới đây — một phép đo sai nấp sau một phép
+   nạp hỏng. Nay đếm TÊN chứ không đếm số lượng: thiếu gói nào thì
+   dòng báo nói thẳng thiếu gói nào, chứ không chỉ nói lệch một. */
+const goiCoach = gitaPhamViCapPhep({role:'R07', tier:0}).join();
+bao(goiCoach === 'nen,nghe,nghe-cao,tang1,tang2,tang3,tang4,tang5',
+  'Coach: đủ tám gói kể cả NGHỀ CAO', goiCoach);
+/* Giáo viên bậc 8 KHÔNG được gói nghề cao — đây là chỗ chốt của chủ
+   hệ về hồ sơ tầng 4-5, và nó phải được đo chứ không chỉ được ghi. */
+bao(gitaPhamViCapPhep({role:'R08', tier:0}).indexOf('nghe-cao') < 0,
+  'Giáo viên: KHÔNG có gói nghề cao');
 bao(gitaPhamViCapPhep({role:'R15', tier:5}).join()==='nen', 'cộng tác viên: chỉ gói nền');
 
 console.log('\n5 · NÂNG TẦNG');
