@@ -193,6 +193,11 @@ G.THUOC_CAP_PHEP = [
      nguy và cái sai đã từng xảy ra, nên khoá ở gói NGHỀ. */
   'STA_LOI','STA_NHOM','STA_NHIP','STA_NHIP_LUAT','STA_XUONGSONG','STA_XUONGSONG_LUAT',
   'STA_BAYNGAY','STA_BAYNGAY_LUAT','STA_CAM','STA_LUAT',
+  /* Bảng tin NỘI BỘ của đội ngũ — khác hẳn TIN_ là bảng tin cộng đồng
+     cho gia đình. Kho này mang việc nội bộ, hồ sơ ca và số toàn hệ, nên
+     khách hàng và cộng tác viên KHÔNG được nhận. Ở gói NGHỀ. */
+  'BTN_LOI','BTN_NGAN','BTN_NGAN_LUAT','BTN_VINHDANH','BTN_VINHDANH_LUAT',
+  'BTN_TRAN','BTN_CAM','BTN_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',

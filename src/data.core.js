@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.68',
+  version: '9.69',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -669,6 +669,11 @@ G.NAV = [
        nào nguy ở từng màn quản trị, và bảng "cấp một quyền mở ra bao
        nhiêu màn" là bản đồ đường vào hệ. Không mở rộng hơn được. */
     {v:'so-tay-admin', t:'Sổ tay Super Admin — cột tab từ A đến Z', h:'Nhịp ngày/tuần/tháng/quý · 7 ngày đầu · 12 màn nguy nhất · toàn bộ màn do máy sinh · cấp 1 quyền mở ra mấy màn', ic:'crown', star:1, perm:'qt_trang', capMo:'nghe'},
+    /* Bảng tin nội bộ — khoá nghe_chung, trần bậc 12. Đó đúng là ranh
+       giới chủ hệ đặt: mười hai vị trí nghề đọc được, còn phụ huynh,
+       học viên và cộng tác viên thì không. Khoá ở tầng dữ liệu chứ
+       không ở tầng màn hình — kho nằm trong gói nghề. */
+    {v:'tin-noi-bo',  t:'Bảng tin nội bộ của đội ngũ', h:'5 ngăn theo phạm vi vai · vinh danh ghi nhận việc chứ không xếp hạng · trần 3 tin mỗi ngày · khách và CTV không đọc được', ic:'bell', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'ky-ket',      t:'Hướng dẫn ký kết — ba luồng phát sinh', h:'Lao động · dịch vụ khách · tài chính · 7 cửa trước khi đặt bút · cây chọn hợp đồng · 8 việc cấm', ic:'check', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ho-so-hop-dong', t:'Bộ hồ sơ hợp đồng và vận hành', h:'16 hợp đồng · 25 điều khoản nền · 6 điều khoản đặc thù đối chiếu ngược · công thức lương máy tự đọc · 3 cấp chữ ký', ic:'book', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'hanh-lang',   t:'Hành lang thành công — máy tự soi mình', h:'12 luật · 18 virus × vắc-xin có người kiểm · 9 khoá · Sáu Nhịp · 7 chỉ số · chỗ lệch với tài liệu', ic:'shield', star:1, perm:'pro_coach', capMo:'nghe'},

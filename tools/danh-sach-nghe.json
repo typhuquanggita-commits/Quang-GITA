@@ -32,6 +32,7 @@
   "src/hanh-lang.js",
   "src/ra-soat-phap-ly.js",
   "src/ky-ket.js",
-  "src/so-tay-admin.js"
+  "src/so-tay-admin.js",
+  "src/tin-noi-bo.js"
   ]
 }
