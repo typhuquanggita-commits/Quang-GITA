@@ -369,7 +369,18 @@ G.aiTraLoi = function(cauHoi){
      thấy khó, mà họ hỏi chính vì cái bảng ấy quá nhiều. */
   var viec = G.aiDanViec ? G.aiDanViec(cauHoi) : null;
 
-  var tim = G.aiTra(cauHoi);
+  /* ── NÓI TIẾP (9.76) ──
+     ĐỨNG SAU LƯỚI KHẨN, và đó là thứ tự bắt buộc. Một phụ huynh đang
+     hỏi học phí, lượt sau gõ "con nói muốn chết" — bốn tiếng, rất
+     ngắn, trông hệt một câu nói tiếp. Dựng lại trước khi soi khẩn thì
+     lưới soi câu học phí và không bao giờ nhìn thấy bốn tiếng kia.
+
+     Khối khẩn ở trên đã return rồi, nên tới được đây nghĩa là câu này
+     đã qua lưới. */
+  var tiep = G.tlDocNoiTiep ? G.tlDocNoiTiep(cauHoi) : { la: false };
+  var hoiThat = tiep.la && G.tlDungLai ? G.tlDungLai(cauHoi, tiep) : cauHoi;
+
+  var tim = G.aiTra(hoiThat);
 
   /* ── CỬA ĐỘ KHÓ (9.74) ──
      Trước bản này trợ lý chỉ có HAI trạng thái: trả lời, hoặc dừng
@@ -383,7 +394,16 @@ G.aiTraLoi = function(cauHoi){
   var kho = null;
   if (G.dkCua) {
     var maCa = (G.S && (G.S.nhaDangMo || (G.S.acc && G.S.acc.u))) || 'CA-CHUNG';
-    kho = G.dkCua(cauHoi, tim, maCa, tim.tangNha);
+    /* Chấm trên câu ĐÃ DỰNG LẠI, không chấm trên bốn tiếng cụt. Hỏi
+       "hoàn tiền bao nhiêu" là cấp 6 chờ người bật; hỏi tiếp "còn
+       nữa" mà chấm lại từ đầu thì ra cấp 1 và máy tự trả lời — đúng
+       đường vòng mà cả thang độ khó dựng lên để chặn.
+       tlCapNoiTiep lấy cấp CAO HƠN giữa cấp cũ và cấp vừa chấm. */
+    kho = G.dkCua(hoiThat, tim, maCa, tim.tangNha);
+    if (tiep.la && G.tlCapNoiTiep && kho) {
+      var capThat = G.tlCapNoiTiep(tiep, kho.cap);
+      if (capThat > kho.cap) kho = G.dkCua(tiep.ngu.hoi, tim, maCa, tim.tangNha);
+    }
   }
 
   /* ── BẢN SOẠN (9.75) ──
@@ -393,13 +413,39 @@ G.aiTraLoi = function(cauHoi){
      đã được trả lời xong, trong khi nó đang chờ một người bật khoá. */
   var soan = null;
   if (G.tlSoan && (!kho || kho.lam !== false)) {
-    try { soan = G.tlSoan(cauHoi, tim); } catch (e) { soan = null; }
+    try {
+      soan = G.tlSoan(hoiThat, tim);
+      if (tiep.la && G.tlSoanTiep) soan = G.tlSoanTiep(tiep, soan, tim);
+    } catch (e) { soan = null; }
+  }
+  /* Ghi ngữ cảnh cho lượt sau. Ghi CẢ khi lượt này là nối tiếp, để
+     "còn nữa" hai lần liền không lặp lại cùng một khúc. */
+  if (G.tlGhiNgu) {
+    if (soan && soan.y !== 'HET')
+      G.tlGhiNgu(tiep.la ? tiep.ngu.hoi : cauHoi, soan, kho ? kho.cap : 1, tiep.la);
+    else if (soan && soan.y === 'HET' && G.TL_NGU)
+      G.TL_NGU.luc = Date.now();
+    else if (kho && kho.lam === false && tim.length) {
+      /* ── CA BỊ CHẶN CŨNG PHẢI GHI NGỮ CẢNH ──
+         Cấp 4 trở lên thì không soạn, nên bản đầu không ghi gì. Hậu
+         quả đo được: hỏi "hoàn tiền bao nhiêu" (cấp 6, chờ người
+         bật) rồi hỏi tiếp "còn nữa" thì lượt sau thành một câu hỏi
+         MỚI — bốn tiếng cụt, kho không đỡ nổi, và cấp nhảy lên 10.
+         Cấp 10 kéo cả Admin lẫn Super Admin vào một ca hoàn tiền
+         thường: đúng lớp leo thang vô ích đã chữa ở 9.75, chui vào
+         lại bằng một cửa khác.
+         Ghi ngữ cảnh RỖNG mục nhưng ĐỦ cấp và đủ kho. */
+      G.tlGhiNgu(tiep.la ? tiep.ngu.hoi : cauHoi,
+        { kho: tim[0].khoNguon, loai: tim[0].loai, y: 'CHO_BAT', dong: [] },
+        kho.cap, tiep.la);
+    }
   }
 
   return {
     khan: false,
     y: y,
     soan: soan,
+    noiTiep: tiep.la ? { kieu: tiep.kieu, hoiThat: hoiThat } : null,
     /* Ô này đi CÙNG câu trả lời chứ không nằm lại trong hàm chấm:
        màn hình phải nói được cấp mấy, ai đang phải bật, và nếu không
        bật thì ai làm trực tiếp. */

@@ -458,6 +458,10 @@ function doLogin(u, p){
      cache trong tro-ly-chi-muc.js cũng tự bắt được, đây là đường chắc
      hơn vì nó không phụ thuộc số kho tình cờ bằng nhau. */
   if (G.tlQuenChiMuc) G.tlQuenChiMuc();
+  /* Ngữ cảnh hội thoại giữ MÃ BẢN GHI của kho vai trước được cấp. Để
+     lại qua lượt đăng nhập sau là vai mới gõ "còn nữa" mở tiếp kho
+     của vai cũ. */
+  if (G.tlQuenNgu) G.tlQuenNgu();
 
   G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role);
   var portal = G.PORTALS[G.S.roleObj.portal];

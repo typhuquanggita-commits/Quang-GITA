@@ -63,6 +63,7 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
      người ta nghĩ nó hỏng, chứ không nghĩ nó đang cẩn thận.
      Phần ĐỊNH TUYẾN — ai giữ chìa khoá nào — ở gói NGHỀ. */
   'DOKHO_CAP', 'DOKHO_DAU', 'DOKHO_KHONGBIET', 'DOKHO_LOI_NHA',
+  'DOKHO_DANG_LAM',
   'TRU_GITA', 'HANHTRINH12', 'LOI_HUA_GITA',
   /* Kênh cộng đồng chính thức: phụ huynh chưa là khách hàng cũng phải
      thấy được nhóm. Đây là cửa trước, cùng lý do với GT_* và DV_*. */

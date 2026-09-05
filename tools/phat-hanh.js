@@ -120,6 +120,7 @@ chay('node', ['tools/di-bo-lien-ket.js']);
    đó, nên "có trả lời" không phải một phép đo. */
 chay('xvfb-run', ['-a', 'node', 'tools/do-tro-ly.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/do-soan.js']);
+chay('xvfb-run', ['-a', 'node', 'tools/do-noi-tiep.js']);
 if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
 
 /* ─── 5a-bis. Thử mã máy chủ trên bản giả lập Apps Script ───

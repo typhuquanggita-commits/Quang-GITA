@@ -176,6 +176,13 @@ function theDap(d){
      danh sách mười hai thẻ thì họ đóng máy; nếu là câu trả lời thì
      họ đọc tiếp. Thẻ tư liệu vẫn còn nguyên ở dưới để tra lại — bản
      soạn KHÔNG thay nguồn, nó đứng trước nguồn. */
+  /* Nhãn nói rõ lượt này đang nối tiếp chuyện gì. Không có nhãn thì
+     người đọc không biết "còn 4 mục nữa" là còn của cái gì, và nếu
+     máy hiểu nhầm thì họ cũng không có cách nào thấy. */
+  if(d.noiTiep){
+    o += '<div class="ai-nhip">'+ic('compass','w-3 h-3')+
+      '<span>Nói tiếp về: '+h(String(d.noiTiep.hoiThat).slice(0,60))+'</span></div>';
+  }
   if(d.soan){
     var s = d.soan;
     o += '<div class="ai-soan">'+

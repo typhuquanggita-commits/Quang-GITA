@@ -79,7 +79,12 @@ var Y = [
                         'dinh nghia', 'ra sao'] }
 ];
 
-var RE_MA = /\b[A-ZĐ]{2,6}[-_ ]?\d{1,3}\b/;
+/* Hai hình mã, cố ý tách:
+     · hai chữ cái trở lên thì cho phép dấu nối hoặc DẤU CÁCH — "DK 16"
+     · một chữ cái thì KHÔNG cho dấu cách, chỉ "L12" hay "T-3"
+   Cho một chữ cái đi kèm dấu cách thì "tôi có 3 con" thành mã "CO 3",
+   và mọi câu có một con số biến thành câu tra mã. */
+var RE_MA = /\b([A-ZĐ]{2,6}[-_ ]?\d{1,3}|[A-ZĐ][-_]?\d{1,3})\b/;
 
 /* Con số viết bằng chữ. Cùng bảng với soTrongCau() ở tro-ly-chi-muc,
    nhưng ở đây dùng cho việc khác: nhận ra câu hỏi ĐANG XIN MỘT DANH
@@ -228,6 +233,9 @@ function khoThang(kq) {
    trả lời thật — nên trần này chỉ chặn nhánh liệt kê. */
 var TRAN_LIETKE = 60;
 
+/* Dưới mức này thì hiện đủ, không cắt — xem chú giải ở nhánh LIỆT KÊ. */
+var DU_HIEN = 16;
+
 /* Toàn bộ bản ghi của một kho mà người đang hỏi ĐƯỢC ĐỌC.
    Hai lớp lọc y như lúc tra: kho có được phép không, và từng bản ghi
    có trong tầng không. Bỏ một trong hai là bản soạn đi vòng qua đúng
@@ -321,9 +329,18 @@ G.tlSoan = function (cauHoi, kq) {
 
     return { y: 'LIETKE', kho: kho, loai: loai, so: ds.length,
       cau: loai + ' có ' + ds.length + ' mục:',
-      dong: dong.slice(0, 20),
-      conNua: Math.max(0, dong.length - 20),
-      nguon: dong.slice(0, 20).map(function (d) { return d.nhan; }) };
+      /* ── TRẦN HIỂN THỊ, VÀ VÌ SAO NÓ KHÔNG PHẢI MỘT CON SỐ ──
+         Hai mươi dòng trên màn điện thoại là một bức tường, nên cắt ở
+         mười hai. Nhưng cắt cứng ở mười hai thì kho mười sáu mục bị
+         giấu mất bốn — và bộ đo bắt ngay: câu "bộ hồ sơ gồm những hợp
+         đồng nào" mất luôn HĐ-16 Hợp đồng lao động.
+
+         Giấu bốn trên mười sáu tệ hơn hiện thêm bốn dòng. Nên: danh
+         sách vừa phải thì hiện ĐỦ, danh sách dài mới cắt. */
+      dong: dong.slice(0, dong.length <= DU_HIEN ? dong.length : 12),
+      conNua: dong.length <= DU_HIEN ? 0 : dong.length - 12,
+      nguon: dong.slice(0, dong.length <= DU_HIEN ? dong.length : 12)
+        .map(function (d) { return d.nhan; }) };
   }
 
   /* ── CÁCH LÀM: các bước theo đúng thứ tự trong kho ──

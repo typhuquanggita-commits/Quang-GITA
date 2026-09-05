@@ -57,11 +57,24 @@ G.dkDoCap = function (cauHoi, kq, coKhan) {
   if (kiemKhan && kiemKhan(cauHoi))
     return { khan: true, cap: 0, dau: [], vi: (G.DOKHO_LOI_NHA || {}).khan || '' };
 
+  /* Câu này đang hỏi BIẾT hay đang xin LÀM. Xem chú giải dài ở
+     DOKHO_DAU về vì sao phải phân biệt. */
+  var dangLam = false;
+  (G.DOKHO_DANG_LAM || []).forEach(function (t) {
+    if (chu.indexOf(t) >= 0) dangLam = true;
+  });
+
   /* Cửa 2 — sàn cao nhất thắng, KHÔNG cộng dồn. */
   ds.forEach(function (d) {
     var trung = null;
     for (var i = 0; i < (d.tu || []).length; i++) {
       if (chu.indexOf(d.tu[i]) >= 0) { trung = d.tu[i]; break; }
+    }
+    /* Từ CHỦ ĐỀ chỉ nâng cấp khi câu còn mang dáng một yêu cầu. */
+    if (!trung && dangLam) {
+      for (var k = 0; k < (d.tuChung || []).length; k++) {
+        if (chu.indexOf(d.tuChung[k]) >= 0) { trung = d.tuChung[k]; break; }
+      }
     }
     if (!trung) return;
     dau.push({ ma: d.ma, ten: d.ten, tu: trung, san: d.san });
@@ -488,6 +501,31 @@ G.dkSoiCapKhongHa = function () {
     if (!k.tuLuat) loi.push(k.ma + ' không trỏ về luật nào');
     if (!k.vi) loi.push(k.ma + ' không nói vì sao');
   });
+  return { chuaDo: false, loi: loi };
+};
+
+/* 7 · HỎI BIẾT không bị chặn, HỎI LÀM thì bị.
+      Cùng một danh từ, hai câu, hai cấp. Đây là chỗ 9.74 làm sai và
+      chỉ lộ ra khi có bộ đo hội thoại — chặn thừa trông giống cẩn
+      thận, nên không ai nghi. */
+G.dkSoiHoiBietKhongChan = function () {
+  var loi = [];
+  var kqGia = [{ khoNguon: 'HSH_HD', diem: 30 }];
+  [['bộ hồ sơ gồm những hợp đồng nào', 3, 'hỏi biết'],
+   ['có bao nhiêu điều khoản trong bộ hợp đồng', 3, 'hỏi biết'],
+   ['học phí từng tầng bao nhiêu', 3, 'hỏi biết'],
+   ['tôi muốn thanh lý hợp đồng', 7, 'hỏi làm'],
+   ['cho tôi xin xoá dữ liệu của con', 7, 'hỏi làm'],
+   ['nhà tôi dừng giữa chừng thì hoàn tiền bao nhiêu', 6, 'hỏi làm']
+  ].forEach(function (p) {
+    var c = G.dkDoCap(p[0], kqGia).cap;
+    if (p[2] === 'hỏi biết' && c > p[1])
+      loi.push('"' + p[0] + '" là câu tra cứu mà ra cấp ' + c +
+        ' — trợ lý chặn một câu nó thừa sức trả lời');
+    if (p[2] === 'hỏi làm' && c < p[1])
+      loi.push('"' + p[0] + '" là câu xin làm mà chỉ ra cấp ' + c + ', cần ' + p[1]);
+  });
+  if (!(G.DOKHO_DANG_LAM || []).length) loi.push('chưa khai DOKHO_DANG_LAM');
   return { chuaDo: false, loi: loi };
 };
 
