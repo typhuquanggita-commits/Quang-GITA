@@ -31,6 +31,7 @@
   "src/diem-cham.js",
   "src/hanh-lang.js",
   "src/ra-soat-phap-ly.js",
-  "src/ky-ket.js"
+  "src/ky-ket.js",
+  "src/so-tay-admin.js"
   ]
 }

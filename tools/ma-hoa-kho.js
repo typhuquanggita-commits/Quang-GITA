@@ -530,6 +530,11 @@ const NGHE = [
      của Học viện. Khoá ở gói NGHỀ. */
   'KK_LOI','KK_CUA','KK_CUA_LUAT','KK_A','KK_B','KK_C','KK_LUONG_LUAT',
   'KK_CHON','KK_CHON_LUAT','KK_CAM','KK_LUAT',
+  /* Sổ tay Super Admin — phần NGƯỜI VIẾT. Phần danh sách màn thì máy
+     sinh từ G.NAV lúc chạy, không nằm trong kho. Kho này nêu nút nào
+     nguy và cái sai đã từng xảy ra, nên khoá ở gói NGHỀ. */
+  'STA_LOI','STA_NHOM','STA_NHIP','STA_NHIP_LUAT','STA_XUONGSONG','STA_XUONGSONG_LUAT',
+  'STA_BAYNGAY','STA_BAYNGAY_LUAT','STA_CAM','STA_LUAT',
 ];
 
 const goi = {};

@@ -110,6 +110,7 @@
   "src/hanh-lang.js",
   "src/ra-soat-phap-ly.js",
   "src/ky-ket.js",
+  "src/so-tay-admin.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",
