@@ -3,11 +3,12 @@
 
        node tools/gop-may-chu.js
 
-   Bảy tệp trong server/ là cách chia để đọc và sửa. Nhưng người dựng máy
-   chủ phải dán bảy lần, và chỉ cần quên một tệp là cả bộ đứng im theo kiểu
-   rất khó đoán ra.
+   Các tệp trong server/ là cách chia để đọc và sửa. Nhưng người dựng máy
+   chủ phải dán từng tệp một, và chỉ cần quên một tệp là cả bộ đứng im theo
+   kiểu rất khó đoán ra.
 
-   Công cụ này gộp bảy tệp ấy thành server/GITA365_TATCA.gs — dán một lần.
+   Công cụ này gộp hết các tệp ấy thành server/GITA365_TATCA.gs — dán một
+   lần. Danh sách đọc thẳng từ thư mục, nên thêm tệp mới là tự có mặt.
    Nội dung nguyên văn, không cắt bớt dòng nào. Chạy lại sau mỗi lần sửa mã
    máy chủ; tools/phat-hanh.js tự gọi nên thường không phải nhớ.
    ═══════════════════════════════════════════════════════════════ */
@@ -16,7 +17,18 @@ const fs = require('fs');
 const path = require('path');
 const GOC = path.join(__dirname, '..', 'server');
 
-const PHAN = [
+/* Lời giới thiệu cho từng phần. KHÔNG phải danh sách tệp — danh sách đọc
+   từ thư mục ngay dưới.
+
+   Trước 9.79 chỗ này là danh sách tên gõ thẳng, và nó đã cũ ngay lần đầu
+   thêm tệp mới: server/GITA_DonDep.gs viết xong, thử riêng xanh hết, mà
+   tệp gộp — thứ DUY NHẤT được dán lên Apps Script — không có nó. Bộ dọn
+   coi như chưa từng tồn tại trên máy chủ thật.
+
+   Cùng một lỗi đã xảy ra ở tools/thu-may-chu.js (bản 9.46, phát hiện ở
+   9.73) và ở năm danh sách khác trong tools/. Danh sách khai tay thì đúng
+   đúng một lần, vào hôm viết ra nó. */
+const MO_TA = [
   ['GITA_Nen.gs',      'LỚP NỀN — bảng dữ liệu, phiên, băm mật khẩu, nhật ký, đăng nhập'],
   ['GITA_CapPhep.gs',  'CẤP PHÉP — doPost, cửa vào duy nhất, và việc cấp khoá mở kho'],
   ['GITA_DangKy.gs',   'ĐĂNG KÝ — OTP, kích hoạt, mã số khách hàng, nâng tầng'],
@@ -29,8 +41,29 @@ const PHAN = [
   ['GITA_TinhHuongKhach_DuLieu.gs', 'BẢN CHIẾU TÌNH HUỐNG — máy sinh, dựng lại bằng tools/xuat-tinh-huong-khach.js'],
   ['GITA_DongBo.gs',   'ĐỒNG BỘ — hồ sơ và cài đặt giữa bản web và bản cài trên máy'],
   ['GITA_XuatSheet.gs','XUẤT SHEET — đẩy bảng tính về thư mục Drive của Học viện'],
-  ['GITA_BanWeb.gs',   'BẢN WEB — doGet: phục vụ trang, trả gói kho, báo tình trạng']
+  ['GITA_BanWeb.gs',   'BẢN WEB — doGet: phục vụ trang, trả gói kho, báo tình trạng'],
+  ['GITA_DonDep.gs',   'DỌN BẢNG — luật giữ cho bốn bảng chỉ lớn lên, và bộ hẹn giờ']
 ];
+
+/* ĐỌC THƯ MỤC, KHÔNG KHAI TAY. Thứ tự: GITA_Nen.gs trước (các tệp khác
+   dựa vào nền), rồi A–Z. Trong một tệp gộp thì khai báo hàm được cẩu lên
+   trước nên thứ tự không đổi kết quả chạy; xếp thế này chỉ để người đọc
+   thấy nền ở đầu, và để mỗi lần gộp ra cùng một tệp. */
+const DS = ['GITA_Nen.gs'].concat(
+  fs.readdirSync(GOC).filter(f =>
+    /\.gs$/.test(f) && f !== 'GITA_Nen.gs' && f !== 'GITA365_TATCA.gs').sort());
+
+/* Tệp mới thì phải có một dòng nói nó là gì. Bắt ở đây chứ không lặng lẽ
+   ghi 'server/<tên>' — người dán tệp gộp lên Apps Script đọc chính những
+   dòng này để biết đang dán cái gì. */
+const moTa = new Map(MO_TA);
+const thieu = DS.filter(f => !moTa.has(f));
+if (thieu.length) {
+  console.error('  ✗ Tệp máy chủ chưa có lời giới thiệu trong MO_TA:\n     ' +
+    thieu.join('\n     ') + '\n     Thêm một dòng cho mỗi tệp rồi chạy lại.');
+  process.exit(1);
+}
+const PHAN = DS.map(f => [f, moTa.get(f)]);
 
 const DAU = `/**
  * ═══════════════════════════════════════════════════════════════════════
@@ -38,8 +71,8 @@ const DAU = `/**
  *  Học viện GITA · Trương Nhật Quang · 08.5555.4688
  * ═══════════════════════════════════════════════════════════════════════
  *
- *  Bảy phần mã của máy chủ gộp lại một chỗ, để dán MỘT LẦN thay vì bảy lần.
- *  Nội dung y hệt bảy tệp trong thư mục server/ của kho mã — không cắt bớt.
+ *  Toàn bộ mã máy chủ gộp lại một chỗ, để dán MỘT LẦN thay vì từng tệp.
+ *  Nội dung y hệt các tệp trong thư mục server/ của kho mã — không cắt bớt.
  *
  *  ── KHÔNG CÓ MẬT KHẨU NÀO TRONG TỆP NÀY ──
  *  Mã nguồn đi qua kho mã, qua tin nhắn, qua email, qua màn hình người khác

@@ -81,6 +81,26 @@ if (V69 && fs.existsSync(path.join(V69, '00_Config.gs'))) {
   }
 }
 
+/* ─── 3b. Gộp mã ───
+   PHẢI ĐỨNG TRƯỚC BƯỚC DỰNG BẢN MỘT TỆP.
+
+   Tới bản 9.79 đường phát hành KHÔNG có bước này, dù CLAUDE.md vẫn kê nó
+   ra. Hậu quả có hai lớp, và lớp thứ hai nặng hơn nhiều:
+
+     · lớp một — mục 36 đỏ mỗi lần sửa src/ mà quên gộp tay. Đây là lớp
+       lành, vì nó đỏ và người ta sửa.
+     · lớp hai — tools/dong-goi.py dựng bản một tệp GỬI KHÁCH từ chính
+       gita-app.js đang cũ. Nghĩa là bản gửi đi mang mã của lần gộp
+       trước, còn bộ kiểm thì chạy trên bản đã sửa. Ngày nào mục 36 bị
+       nới ra một chút là bản cũ đi thẳng tới tay khách mà không ai đỏ.
+
+   Nên gộp ở đây, không nhờ trí nhớ. Cả mã máy khách lẫn mã máy chủ —
+   server/GITA365_TATCA.gs là thứ DUY NHẤT được dán lên Apps Script, quên
+   gộp nó thì phần mã vừa viết coi như chưa từng có trên máy chủ thật. */
+tieuDe('GỘP MÃ — MÁY KHÁCH VÀ MÁY CHỦ');
+chay('node', ['tools/gop-src.js']);
+chay('node', ['tools/gop-may-chu.js']);
+
 /* ─── 4. Bản một tệp ─── */
 tieuDe('DỰNG BẢN MỘT TỆP ĐỂ GỬI KHÁCH');
 chay('python3', ['tools/dong-goi.py']);
@@ -244,7 +264,18 @@ if (DAY) {
 console.log('\n' + '═'.repeat(64));
 console.log('  ✓ XONG — ' + Math.round((Date.now() - t0) / 1000) + ' giây');
 console.log('═'.repeat(64));
-console.log('  Bản gửi khách   : GITA365_v72_GIOI_THIEU.html');
+/* ĐỌC SỐ BẢN TỪ NƠI DUY NHẤT KHAI NÓ, không gõ lại tên tệp.
+   Dòng này đứng nguyên ở "GITA365_v72_GIOI_THIEU.html" suốt từ bản 7.2
+   tới 9.79 — bảy mươi bản sau, nó vẫn chỉ tay vào một tệp không còn tồn
+   tại. Người phát hành đọc đúng dòng cuối cùng để biết gửi tệp nào, nên
+   một cái tên sai ở đây là gửi nhầm tệp cho khách. */
+{
+  const m = fs.readFileSync(path.join(GOC, 'src/data.core.js'), 'utf8')
+    .match(/version:\s*'([^']+)'/);
+  const ten = m ? 'GITA365-v' + m[1] + '-gioi-thieu.html' : '(không đọc được số bản)';
+  console.log('  Bản gửi khách   : ' + ten +
+    (m && co(ten) ? '' : '   ⚠ chưa thấy tệp này'));
+}
 console.log('  Nạp vào máy chủ : giay-phep/GITA_KHOA_KHO.txt');
 console.log('  Bộ cài Windows  : github.com/typhuquanggita-commits/Quang-GITA/releases/tag/may-tinh-moi-nhat');
 console.log('');

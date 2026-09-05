@@ -22,6 +22,7 @@
    ═══════════════════════════════════════════════════════════════ */
 const { chromium } = require(process.env.PW_PATH || '/opt/node22/lib/node_modules/playwright');
 const fs = require('fs');
+const doiKhoXong = require('./doi-kho-xong');
 
 const CHUOI = [
   /* Kho 18 mục — trên mức DU_HIEN nên lượt đầu cắt ở 12 và "còn nữa"
@@ -75,7 +76,8 @@ function boDau(s) {
   await p.goto('http://127.0.0.1:8099/index.html');
   await p.waitForFunction(() => window.G && window.G.doLogin, null, { timeout: 30000 });
   await p.evaluate(() => G.doLogin('coach@gita365.vn'));
-  await p.waitForFunction(() => window.G.tlDocNoiTiep && window.G.HSH_HD, null, { timeout: 40000 });
+  await p.waitForFunction(() => window.G.tlDocNoiTiep, null, { timeout: 40000 });
+  console.log('  (kho đã mở ' + (await doiKhoXong(p)) + ' gói)');
 
   const r = await p.evaluate((CHUOI) => CHUOI.map(function (c) {
     G.tlQuenNgu();

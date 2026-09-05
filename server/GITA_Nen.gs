@@ -119,6 +119,26 @@ function dungSoDuLieu() {
 /* ═══════════════ STORE ═══════════════
    Bốn hàm, đúng những gì các tệp khác gọi tới. Đọc cả trang một lần rồi
    lọc trong bộ nhớ — với quy mô vài nghìn dòng thì nhanh hơn đọc từng ô. */
+/* ═══════════════ KHOÁ GHI ═══════════════
+
+   Apps Script chạy nhiều lượt SONG SONG. Mọi thao tác gồm nhiều bước
+   trên cùng một trang tính — thêm rồi hỏi số dòng, xoá nhiều dòng —
+   phải là MỘT khối, không thì hai lượt cắt vào giữa nhau.
+
+   Không lấy được khoá thì NÉM LỖI, không ghi liều. Một lượt ghi
+   không xếp hàng được là một lượt ghi có thể đè lên người khác, và
+   mất dữ liệu im lặng đắt hơn một thông báo lỗi rõ ràng. */
+function gitaKhoaGhi_(viec) {
+  var khoa = LockService.getScriptLock();
+  try {
+    khoa.waitLock(20000);
+  } catch (e) {
+    throw new Error('Máy chủ đang bận, chưa xếp được lượt ghi. Thử lại sau vài giây.');
+  }
+  try { return viec(); }
+  finally { try { khoa.releaseLock(); } catch (e) {} }
+}
+
 var Store = (function () {
   var dem = {};   /* nhớ trong một lần chạy, không nhớ qua các lần gọi */
 
@@ -147,13 +167,56 @@ var Store = (function () {
       return null;
     },
 
+    /* ── THÊM DÒNG PHẢI ĐI QUA KHOÁ GHI ──
+
+       Bản trước: appendRow rồi getLastRow. Hai lượt chạy song song —
+       Apps Script chạy song song thật — thì A thêm vào dòng 100, B
+       thêm vào dòng 101, rồi A gọi getLastRow và nhận 101.
+
+       Từ lúc ấy A tin bản ghi của mình ở dòng 101. Lần update sau của
+       A GHI ĐÈ lên bản ghi của B. Không lỗi, không cảnh báo — chỉ là
+       một bản ghi biến mất và một bản ghi mang dữ liệu của người khác.
+
+       Hai thao tác ấy phải là MỘT. Khoá ghi làm được đúng việc đó. */
     insert: function (bang, ban) {
       var d = doc(bang);
       var hang = d.cot.map(function (c) { return ban[c] === undefined ? '' : ban[c]; });
-      d.tr.appendRow(hang);
-      ban._dong = d.tr.getLastRow();
-      d.ds.push(ban);
-      return ban;
+      return gitaKhoaGhi_(function () {
+        d.tr.appendRow(hang);
+        ban._dong = d.tr.getLastRow();
+        d.ds.push(ban);
+        return ban;
+      });
+    },
+
+    /* ── XOÁ, VÀ VÌ SAO TỚI 9.79 MỚI CÓ ──
+
+       Trước bản này Store không có phép xoá nào. Bốn bảng chỉ lớn lên
+       và không bao giờ nhỏ đi: sessions, audit, dangKyCho,
+       hosoAppSaoLuu. Đăng xuất chỉ đặt exp = 0 — dòng vẫn nằm đó.
+
+       Store.doc() đọc CẢ TRANG mỗi lần chạm tới một bảng, và mọi yêu
+       cầu có xác thực đều chạm bảng sessions. Một trăm người đăng
+       nhập hai lượt mỗi ngày là bảy mươi ba nghìn dòng sau một năm,
+       và mỗi lượt gọi máy chủ đọc lại đủ bảy mươi ba nghìn dòng ấy.
+
+       HAI ĐIỀU BẮT BUỘC KHI XOÁ DÒNG TRONG SHEETS:
+         · xoá TỪ DƯỚI LÊN, vì xoá dòng 5 làm dòng 6 thành dòng 5
+         · BỎ ĐỆM sau khi xoá, vì mọi _dong bên dưới đã lệch đi
+       Thiếu một trong hai là lần update kế tiếp ghi nhầm dòng. */
+    xoa: function (bang, ids) {
+      var d = doc(bang), tap = {};
+      (Object.prototype.toString.call(ids) === '[object Array]' ? ids : [ids])
+        .forEach(function (k) { tap[String(k)] = 1; });
+      var dong = [];
+      d.ds.forEach(function (x) { if (tap[String(x.id)]) dong.push(x._dong); });
+      if (!dong.length) return 0;
+      dong.sort(function (a, b) { return b - a; });
+      return gitaKhoaGhi_(function () {
+        for (var i = 0; i < dong.length; i++) d.tr.deleteRow(dong[i]);
+        delete dem[bang];
+        return dong.length;
+      });
     },
 
     update: function (bang, id, doi) {

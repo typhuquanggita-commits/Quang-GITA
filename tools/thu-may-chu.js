@@ -48,13 +48,26 @@ const thuMuc = {
   '1jVOnIH7286glI95fC4aqfXApecxEj7Xz': {ten:'Mã máy chủ GITA365', ghiDuoc:true, tep:[]}
 };
 global.MimeType={PLAIN_TEXT:'text/plain'};
-global.LockService={getScriptLock:()=>({waitLock:()=>true, releaseLock:()=>{}})};
+/* Khoá ghi giả — ĐẾM lượt lấy khoá, để phép đo chứng minh được rằng
+   thêm dòng và xoá dòng THẬT SỰ đi qua khoá, chứ không chỉ khai là có. */
+global.GIA_LAP_KHOA = {lay:0, tra:0, hong:false};
+global.LockService={getScriptLock:()=>({
+  waitLock:()=>{ if(global.GIA_LAP_KHOA.hong) throw new Error('hết giờ chờ khoá');
+                 global.GIA_LAP_KHOA.lay++; return true; },
+  releaseLock:()=>{ global.GIA_LAP_KHOA.tra++; }})};
 global.HtmlService={
   XFrameOptionsMode:{ALLOWALL:'ALLOWALL'},
   createHtmlOutput:h2=>({_:h2, setTitle(){return this;}, addMetaTag(){return this;},
     setXFrameOptionsMode(){return this;}})
 };
-global.ScriptApp={getService:()=>({getUrl:()=>'https://script.google.com/macros/s/GIA-LAP/exec'})};
+global.GIA_LAP_TRIGGER=[];
+global.ScriptApp={
+  getService:()=>({getUrl:()=>'https://script.google.com/macros/s/GIA-LAP/exec'}),
+  getProjectTriggers:()=>global.GIA_LAP_TRIGGER.slice(),
+  deleteTrigger:t=>{const i=global.GIA_LAP_TRIGGER.indexOf(t); if(i>=0) global.GIA_LAP_TRIGGER.splice(i,1);},
+  newTrigger:fn=>({timeBased:()=>({atHour:()=>({everyDays:()=>({
+    create:()=>{const t={getHandlerFunction:()=>fn}; global.GIA_LAP_TRIGGER.push(t); return t;}})})})})
+};
 global.Session={getEffectiveUser:()=>({getEmail:()=>'typhuquanggita@gmail.com'})};
 function moThuMuc(id){ return global.DriveApp.getFolderById(id); }
 global.DriveApp={
@@ -106,6 +119,11 @@ function moTrang(ten){
   return {
     getName:()=>ten,
     appendRow:h=>{t.push(h.slice());},
+    /* Sheets đánh số dòng từ 1. Xoá dòng 5 làm dòng 6 thành dòng 5 —
+       bộ giả lập phải cư xử ĐÚNG như thế, không thì phép đo "xoá từ
+       dưới lên" của Store không chứng minh được gì. */
+    deleteRow:d=>{t.splice(d-1,1);},
+    deleteRows:(d,n)=>{t.splice(d-1,n||1);},
     getDataRange:()=>({getValues:()=>t.map(r=>r.slice())}),
     getLastRow:()=>t.length,
     getLastColumn:()=>t.length?t[0].length:0,
@@ -264,6 +282,98 @@ bao(goiCoach === 'nen,nghe,nghe-cao,tang1,tang2,tang3,tang4,tang5',
 bao(gitaPhamViCapPhep({role:'R08', tier:0}).indexOf('nghe-cao') < 0,
   'Giáo viên: KHÔNG có gói nghề cao');
 bao(gitaPhamViCapPhep({role:'R15', tier:5}).join()==='nen', 'cộng tác viên: chỉ gói nền');
+
+console.log('\n4b · LỚP DỮ LIỆU — KHOÁ GHI, XOÁ DÒNG, DỌN BẢNG');
+{
+  /* ── THÊM DÒNG ĐI QUA KHOÁ ──
+     Không đọc lời khai. Đếm lượt lấy khoá trước và sau một lượt thêm. */
+  const k0 = GIA_LAP_KHOA.lay;
+  Store.insert('audit', {id:'A-THU-1', luc:new Date().toISOString(), viec:'thử'});
+  bao(GIA_LAP_KHOA.lay > k0, 'thêm dòng ĐI QUA khoá ghi — hai lượt song song không cùng số dòng',
+    'lấy khoá ' + (GIA_LAP_KHOA.lay - k0) + ' lần');
+  bao(GIA_LAP_KHOA.tra === GIA_LAP_KHOA.lay, 'lấy khoá bao nhiêu thì TRẢ bấy nhiêu — không bỏ quên khoá',
+    GIA_LAP_KHOA.lay + ' lấy · ' + GIA_LAP_KHOA.tra + ' trả');
+
+  /* ── KHÔNG LẤY ĐƯỢC KHOÁ THÌ NÉM LỖI, KHÔNG GHI LIỀU ── */
+  GIA_LAP_KHOA.hong = true;
+  let nem = false;
+  try { Store.insert('audit', {id:'A-THU-LIEU', luc:new Date().toISOString()}); }
+  catch (e) { nem = true; }
+  GIA_LAP_KHOA.hong = false;
+  bao(nem && !Store.find('audit','A-THU-LIEU'),
+    'không xếp được lượt ghi thì NÉM LỖI, không ghi liều — mất dữ liệu im lặng đắt hơn một lỗi rõ ràng');
+
+  /* ── XOÁ TỪ DƯỚI LÊN, VÀ BỎ ĐỆM ──
+     Thêm ba dòng, xoá dòng GIỮA, rồi sửa dòng CUỐI. Nếu xoá mà không
+     bỏ đệm thì _dong của dòng cuối lệch một và lượt sửa ghi nhầm chỗ. */
+  Store.insert('audit', {id:'A-X1', luc:new Date().toISOString(), viec:'một'});
+  Store.insert('audit', {id:'A-X2', luc:new Date().toISOString(), viec:'hai'});
+  Store.insert('audit', {id:'A-X3', luc:new Date().toISOString(), viec:'ba'});
+  const soXoa = Store.xoa('audit', ['A-X2']);
+  Store.update('audit', 'A-X3', {viec:'ba-da-sua'});
+  const x1 = Store.find('audit','A-X1'), x3 = Store.find('audit','A-X3');
+  bao(soXoa === 1 && !Store.find('audit','A-X2'), 'xoá đúng một dòng, và dòng ấy biến mất thật', soXoa + ' dòng');
+  bao(x1 && x1.viec === 'một', 'dòng TRƯỚC chỗ xoá không bị đụng', x1 ? x1.viec : '(mất)');
+  bao(x3 && x3.viec === 'ba-da-sua',
+    'sửa dòng SAU chỗ xoá vẫn trúng — xoá xong phải bỏ đệm, không thì mọi _dong bên dưới lệch đi',
+    x3 ? x3.viec : '(mất)');
+
+  /* Xoá NHIỀU dòng cùng lúc, trong đó có dòng liền nhau */
+  ['A-M1','A-M2','A-M3','A-M4'].forEach((id,i) =>
+    Store.insert('audit', {id, luc:new Date().toISOString(), viec:'m'+i}));
+  const soM = Store.xoa('audit', ['A-M1','A-M2','A-M4']);
+  bao(soM === 3 && !Store.find('audit','A-M1') && !Store.find('audit','A-M2') &&
+      !Store.find('audit','A-M4') && Store.find('audit','A-M3'),
+    'xoá nhiều dòng liền nhau cùng lúc — xoá từ dưới lên nên không trượt chỗ', soM + ' dòng');
+}
+
+console.log('\n4c · DỌN BẢNG THEO LUẬT GIỮ');
+{
+  const ngay = 86400e3, nay = Date.now();
+  /* Phiên: một cái còn hạn, một cái hết hạn lâu, một cái ĐÃ ĐĂNG XUẤT (exp = 0) */
+  Store.insert('sessions', {id:'S-CON', uid:'U1', exp:nay + 3*ngay, createdAt:new Date().toISOString()});
+  Store.insert('sessions', {id:'S-HET', uid:'U1', exp:nay - 9*ngay, createdAt:new Date(nay-9*ngay).toISOString()});
+  Store.insert('sessions', {id:'S-XUAT', uid:'U1', exp:0, createdAt:new Date(nay-9*ngay).toISOString()});
+  /* Nhật ký quá hạn, và một dòng mới */
+  Store.insert('audit', {id:'A-CU', luc:new Date(nay - 500*ngay).toISOString(), viec:'cũ'});
+  Store.insert('audit', {id:'A-MOI', luc:new Date().toISOString(), viec:'mới'});
+  /* Đăng ký: một lượt bỏ dở đã lâu, một lượt ĐANG CHỜ kích hoạt cũng đã lâu */
+  Store.insert('dangKyCho', {id:'D-BO', email:'a@b.c', trangThai:'BO_DO', createdAt:new Date(nay-90*ngay).toISOString()});
+  Store.insert('dangKyCho', {id:'D-CHO', email:'d@e.f', trangThai:'CHO_KICH_HOAT', createdAt:new Date(nay-90*ngay).toISOString()});
+  /* Sao lưu: mười hai bản của cùng một người */
+  for (let i = 0; i < 12; i++)
+    Store.insert('hosoAppSaoLuu', {id:'B'+i, uid:'U9', duLieu:'{}', luc:new Date(nay - i*3600e3).toISOString()});
+
+  /* XEM TRƯỚC không được đụng vào gì */
+  const truocSo = Store.all('sessions').length;
+  const xem = gitaXemTruocDon();
+  bao(xem.chiXem === true && Store.all('sessions').length === truocSo,
+    'XEM TRƯỚC đếm mà KHÔNG xoá — biết bộ dọn định làm gì trước khi cho nó làm',
+    'sẽ xoá ' + xem.tongXoa + ' dòng, bảng phiên vẫn ' + Store.all('sessions').length);
+
+  const r = gitaDonDep();
+  bao(!!Store.find('sessions','S-CON'), 'phiên CÒN HẠN không bị đụng — bảng to là chuyện hiệu năng, xoá nhầm là chuyện người dùng');
+  bao(!Store.find('sessions','S-HET'), 'phiên hết hạn quá hai ngày thì bỏ');
+  bao(!Store.find('sessions','S-XUAT'),
+    'phiên ĐÃ ĐĂNG XUẤT (exp = 0) cũng bỏ — luật đọc mốc mà bỏ sót exp = 0 thì mỗi lượt đăng xuất để lại một dòng chết vĩnh viễn');
+  bao(!!Store.find('audit','A-MOI') && !Store.find('audit','A-CU'), 'nhật ký quá 400 ngày thì bỏ, dòng mới giữ nguyên');
+  bao(!Store.find('dangKyCho','D-BO'), 'đăng ký bỏ dở quá 30 ngày thì bỏ');
+  bao(!!Store.find('dangKyCho','D-CHO'),
+    'đăng ký ĐANG CHỜ kích hoạt thì GIỮ, dù đã 90 ngày — người ta có thể mở thư cũ và bấm vào');
+  const sl = Store.all('hosoAppSaoLuu').filter(x => x.uid === 'U9');
+  bao(sl.length === 10 && sl.filter(x => x.id === 'B0').length === 1,
+    'giữ đúng mười bản sao lưu GẦN NHẤT mỗi người', sl.length + ' bản, còn bản mới nhất');
+  bao(r.tongXoa > 0 && Store.all('audit').filter(x => x.viec === 'DON_DEP').length > 0,
+    'mỗi lượt dọn GHI LẠI đã xoá bao nhiêu — bộ dọn chạy im lặng là bộ dọn không ai kiểm được',
+    'xoá ' + r.tongXoa + ' dòng');
+
+  /* Bộ hẹn giờ: gọi hai lần KHÔNG được sinh hai bộ trùng nhau */
+  gitaDatLichDon();
+  const l2 = gitaDatLichDon();
+  bao(GIA_LAP_TRIGGER.length === 1 && l2.goBoCu === 1,
+    'đặt lịch hai lần vẫn chỉ còn MỘT bộ hẹn giờ — bộ trùng thì mỗi đêm dọn nhiều lượt cùng lúc',
+    GIA_LAP_TRIGGER.length + ' bộ');
+}
 
 console.log('\n5 · NÂNG TẦNG');
 const hv = Store.all('students')[0];

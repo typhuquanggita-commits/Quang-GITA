@@ -8,6 +8,7 @@
    ═══════════════════════════════════════════════════════════════ */
 const { chromium } = require(process.env.PW_PATH || '/opt/node22/lib/node_modules/playwright');
 const fs = require('fs');
+const doiKhoXong = require('./doi-kho-xong');
 (async () => {
   const khoa = JSON.parse(fs.readFileSync('/home/user/Quang-GITA/kho/khoa.json', 'utf8')).khoa;
   const b = await chromium.launch();
@@ -16,8 +17,8 @@ const fs = require('fs');
   await p.goto('http://127.0.0.1:8099/index.html');
   await p.waitForFunction(() => window.G && window.G.doLogin, null, { timeout: 30000 });
   await p.evaluate(() => G.doLogin('coach@gita365.vn'));
-  await p.waitForFunction(() => window.G.tlSoanSoat && window.G.HSH_HD &&
-    window.G.DOKHO_DANG_LAM, null, { timeout: 40000 });
+  await p.waitForFunction(() => window.G.tlSoanSoat, null, { timeout: 40000 });
+  console.log('  (kho đã mở ' + (await doiKhoXong(p)) + ' gói)');
 
   const r = await p.evaluate(() => ({
     khen: G.tsoSoiKhongKhen(), sua: G.tsoSoiKhongSua(),

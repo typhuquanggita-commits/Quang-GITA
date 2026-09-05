@@ -1530,5 +1530,9 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .ai-soan-ds li{font-size:12.5px;line-height:1.55;color:var(--ink-2);
   padding:3px 0;border-top:1px solid var(--bc-c)}
 .ai-soan-ds li:first-child{border-top:0}
-.ai-soan-ds .mono{color:var(--ink-4);font-size:11px}
-.ai-soan-con{font-size:11px;color:var(--ink-4);margin-top:6px;font-style:italic}
+/* 10,5px là bậc nhỏ nhất CỦA THANG, dùng 61 chỗ khác. Bản 9.75 gõ 11px
+   ở đây — nửa pixel to hơn, mắt không thấy khác, mà thang cỡ chữ từ chín
+   bậc thành mười. Một bậc thừa không hỏng cái gì nhìn thấy được; nó chỉ
+   mở đường cho bậc thứ mười một. */
+.ai-soan-ds .mono{color:var(--ink-4);font-size:10.5px}
+.ai-soan-con{font-size:10.5px;color:var(--ink-4);margin-top:6px;font-style:italic}

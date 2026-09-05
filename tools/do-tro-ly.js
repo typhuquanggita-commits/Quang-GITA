@@ -32,6 +32,7 @@
    ═══════════════════════════════════════════════════════════════ */
 const { chromium } = require(process.env.PW_PATH || '/opt/node22/lib/node_modules/playwright');
 const fs = require('fs');
+const doiKhoXong = require('./doi-kho-xong');
 /* Mỗi câu khai KHO ĐÁNG LẼ PHẢI TRÚNG. */
 const HOI = [
   ['Coach một người phụ trách tối đa mấy nhà', 'BV_VAI'],
@@ -92,7 +93,12 @@ const HOI = [
   await p.goto('http://127.0.0.1:8099/index.html');
   await p.waitForFunction(() => window.G && window.G.doLogin, null, {timeout:30000});
   await p.evaluate(() => G.doLogin('coach@gita365.vn'));
-  await p.waitForFunction(() => window.G.TDH_HE && typeof window.G.aiTra === 'function', null, {timeout:40000});
+  await p.waitForFunction(() => typeof window.G.aiTra === 'function', null, {timeout:40000});
+  /* Đợi KHO XONG HẲN, không đợi một cái tên — xem tools/doi-kho-xong.js.
+     Chính bộ đo này ra 28/40 khi chạy riêng và 27/40 khi chạy trong đường
+     phát hành, chỉ vì đo sớm mất một gói; mốc chặn đúng bằng 28 nên đường
+     phát hành dừng ở một chỗ không hỏng. */
+  console.log('  (kho đã mở ' + (await doiKhoXong(p)) + ' gói)');
   const r = await p.evaluate((HOI) => HOI.map(function(h){
     var kq = G.aiTra(h[0]) || [];
     /* Trúng = kho đáng lẽ phải ra nằm trong 3 kết quả đầu */
