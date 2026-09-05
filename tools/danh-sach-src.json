@@ -116,6 +116,7 @@
     "src/cua-truoc.js",
     "src/app.js",
     "src/chuyen-long-ghep.js",
-    "src/may-khach.js"
+    "src/may-khach.js",
+    "src/de-len.js"
   ]
 }

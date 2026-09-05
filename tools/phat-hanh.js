@@ -105,6 +105,11 @@ try {
     }
   }
 }
+/* Bộ dò sâu chạy TĨNH và chạy TRƯỚC bộ kiểm, vì nó bắt lớp lỗi mà bộ
+   kiểm không thấy được: màn bị đè, hàm đè trộm, màn chết, mục NAV trỏ
+   vào khoảng không. Chạy trước còn vì nó xong trong một giây — hỏng ở
+   đây thì khỏi chờ mười hai phút của bộ kiểm. */
+chay('node', ['tools/do-sau.js']);
 chay('node', ['tools/kiem-tra.js']);
 /* Dựng được không có nghĩa là bấm được. Bộ này đăng nhập TỪNG VAI, nạp lại
    kho theo đúng phạm vi vai đó, rồi đi hết mọi mục — bắt được mục chết mà

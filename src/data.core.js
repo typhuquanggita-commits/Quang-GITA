@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.69',
+  version: '9.70',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -844,6 +844,20 @@ G.NAV = [
     {v:'soat-day-du',t:'Soát đủ ruột — tự kiểm 100%', h:'5 phép soát · đếm lại từ dữ liệu đang nạp', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'tuyen',      t:'Bốn tuyến chuyên môn',       h:'Engwin · Math · SAT · HSA · bảy mốc trước khi hợp nhất', ic:'orbit', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'quy-trinh-toan-he',t:'Quy trình toàn Web App', h:'8 luồng · từng bước một màn · quyền của cấp quản trị', ic:'map', star:1, perm:'qt_trang', capMo:'quantri'},
+    /* Màn này có mã từ lâu mà KHÔNG mục NAV nào trỏ tới và không nút
+       nào gọi — bộ dò sâu ở 9.70 tìm ra. Một màn chạy đúng mà vô hình
+       thì tệ hơn một màn hỏng: màn hỏng có người báo, màn vô hình thì
+       không ai biết để báo.
+
+       Nối vào đâu thì phải nghĩ. Tên nó là "Tài khoản của tôi" nên
+       thoạt nhìn là màn cá nhân, mở cho mọi vai. Nhưng đọc mã thì nó
+       chứa nút ĐỔI SANG BẤT KỲ VAI NÀO, kể cả Super Admin, và nút ấy
+       gọi thẳng doLogin() không canh quyền. Đó là công cụ kiểm thử,
+       không phải màn cá nhân — nên khoá qt_trang, đúng như màn anh em
+       của nó là "Kiểm thử theo vai" dùng chung cùng nút ấy.
+
+       Bộ kiểm mục 42 đã bắt đúng chỗ này khi tôi thử mở cho mọi vai. */
+    {v:'toi',           t:'Tài khoản và đổi vai',      h:'Vai đang dùng · bậc · cổng · quyền đang có và ngoài phạm vi · đổi nhanh sang vai khác để kiểm thử', ic:'home', perm:'qt_trang', capMo:'nghe'},
     {v:'kiem-theo-vai',t:'Kiểm thử theo vai',        h:'Ma trận màn × vai · một cú bấm vào vai bất kỳ', ic:'users', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'tu-van-hanh', t:'Tự vận hành · tự vá · tự học', h:'4 mức tự động · 10 mục canh · quét thật lúc mở màn', ic:'pulse', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'nhat-ky-ht',  t:'Nhật ký hệ thống',            h:'Mọi thao tác đều để lại dấu vết',    ic:'book', perm:'qt_trang', capMo:'quantri'}

@@ -258,6 +258,7 @@ G.ITEM_EN = {
   /* Ba mươi tư mục dưới đây trước nay chỉ có tiếng Việt: bản tiếng Anh
      rơi vào ô trống nên giao diện EN hiện mã màn hình thay cho tên. */
   'gioi-thieu':['What GITA 365 is','Mission · vision · goals · values · five tiers · culture · how we stay with you'],
+  'toi':['Account and role switching','The role in use · level · portal · permissions held and out of scope · switch roles quickly for testing'],
   'pham-vi':['My scope','How far my access goes · what is still closed'],
   'danh-gia':['Rate GITA 365','Three questions · the "what went wrong" part matters most'],
   'duyet-danh-gia':['Approve public reviews','Four gates before a family\u2019s words go public'],

@@ -439,9 +439,13 @@ G.VIEWS['tro-ly'] = function(){
   return o;
 };
 
-/* Giữ đường cũ chạy được: nơi nào còn gọi G.aiHoi thì vào thẳng khung chat */
+/* Giữ đường cũ chạy được: nơi nào còn gọi G.aiHoi thì vào thẳng khung chat.
+   Chỗ đè này khai ở src/de-len.js — nó đổi HÀNH VI, nên phải khai.
+
+   G.moTroLy() từng được khai lại ở đây, giống hệt bản của
+   src/tro-ly-ai.js từng chữ. Bỏ ở 9.70: bản sau không thêm gì mà chỉ
+   thêm một chỗ để hỏng nếu thứ tự nạp đổi. Bỏ bản thừa rẻ hơn khai nó. */
 G.aiHoi = function(q){ G.chatHoi(q); };
-G.moTroLy = function(){ G.go('tro-ly'); };
 
 /* ═══════════ BẤM ═══════════ */
 document.addEventListener('click', function(e){
