@@ -29,6 +29,14 @@ function boDau(s){
 var HU_TU = ('la cua va cho voi thi ma nhung o tai den tu khi nao sao gi de duoc co khong ' +
   'toi minh em anh chi con nha mot hai cac nhung rat qua lam nen se da dang bi bo ai nay ' +
   'the nhu hay hon nua chua roi cung ve theo tren duoi trong ngoai').split(' ');
+/* Tập tiếng của một chuỗi, dựng một lần rồi tra bằng khoá. Trả về
+   vật chứ không trả mảng: tra khoá nhanh hơn duyệt mảng, và ở đây
+   phép này chạy vài trăm nghìn lượt mỗi câu hỏi. */
+function tapTieng(v){
+  var ra = {}, t = boDau(v).split(' ');
+  for(var i = 0; i < t.length; i++) if(t[i]) ra[t[i]] = 1;
+  return ra;
+}
 function tachTu(s){
   return boDau(s).split(' ').filter(function(t){
     return t.length >= 2 && HU_TU.indexOf(t) < 0;
@@ -57,27 +65,69 @@ function nguon(){
     {kho:G.BAIHOC, ten_kho:'BAIHOC', loai:'Bài học',   mau:'#0B7350', go:'tu-duy',
      ma:function(x){ return x.id; }, ten:function(x){ return x.ten; },
      than:function(x){ return [x.ten, x.nguyenLy, x.apDung]; }}
-  ].filter(function(n){ return Array.isArray(n.kho) && n.kho.length; });
+  ].concat(
+    /* NGUỒN THÊM — đăng ký từ src/tro-ly-rong.js.
+
+       Trước 9.72 trợ lý chỉ tra được NĂM kho trong tổng tám trăm.
+       Nghĩa là mọi thứ dựng từ 9.65 tới 9.71 — hành lang, rà soát
+       pháp lý, chuẩn bằng chứng, bộ hợp đồng, hướng dẫn ký kết, sổ
+       tay quản trị, bảng tin nội bộ, bảng tự động hoá — trợ lý không
+       trả lời được một câu nào. Mà nó vẫn TRẢ LỜI, bằng thứ gần
+       giống trong năm kho cũ. Đo được 1 trên 20 câu là trúng.
+
+       Mỗi nguồn thêm khai QUYỀN của nó. Nguồn nào người đang hỏi
+       không có quyền thì không vào danh sách tra — khoá ở chỗ TRA,
+       không phải ở chỗ hiện kết quả. */
+    (G.aiNguonThem ? G.aiNguonThem() : []).filter(function(n){
+      if(!n.quyen) return true;
+      return G.can ? G.can(n.quyen) : false;
+    })
+  ).filter(function(n){ return Array.isArray(n.kho) && n.kho.length; });
+}
+
+/* ─── Câu hỏi có gọi tên một LOẠI tư liệu không ───
+   "Phác đồ cho trẻ mất tập trung" thì phải ra phác đồ, không ra tình
+   huống. Trước đây điểm chỉ tính theo từ trúng, nên loại được gọi
+   tên thẳng vẫn thua một kho khác trùng nhiều từ hơn. */
+function loaiDuocGoi(chu){
+  var ra = {};
+  [['MOTHUC','mo thuc'],['PHACDO','phac do'],['KICHBAN','kich ban'],
+   ['TINHHUONG','tinh huong'],['BAIHOC','bai hoc']].forEach(function(p){
+    if(chu.indexOf(p[1]) >= 0) ra[p[0]] = 1;
+  });
+  (G.aiNguonThem ? G.aiNguonThem() : []).forEach(function(n){
+    (n.goiTen || []).forEach(function(t){
+      if(t && chu.indexOf(boDau(t)) >= 0) ra[n.ten_kho] = 1;
+    });
+  });
+  return ra;
 }
 
 /* Tài liệu gốc: 1.647 dòng bảng — tra riêng vì cấu trúc khác */
+/* Tài liệu gốc: 1.647 dòng bảng — tra riêng vì cấu trúc khác, nhưng
+   TRẢ VỀ CÙNG HÌNH với các nguồn kia (tiếng trúng, chưa chấm điểm).
+
+   Bản trước nó tự chấm theo thang riêng — cộng 2 mỗi tiếng trúng —
+   rồi được nối thẳng vào danh sách đã chấm theo thang khác. Hai thang
+   trộn một chỗ thì thứ tự cuối cùng vô nghĩa: một dòng bảng gom 5
+   tiếng thường được 10 điểm, thắng một bản ghi trúng đúng tên. */
 function traTaiLieuGoc(tu){
   var ra = [];
   /* Tài liệu Drive: tra cả bảng lẫn đoạn văn */
   (G.TAILIEU_DRIVE || []).forEach(function(d){
     (d.doan || []).forEach(function(v){
-      var chu = boDau(v), d2 = 0;
-      tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
-      if(d2 >= 6) ra.push({
-        diem: d2, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
+      var tp = tapTieng(v), tr = [];
+      tu.forEach(function(t){ if(tp[t]) tr.push(t); });
+      if(tr.length >= 3) ra.push({
+        trungTen: [], trungThan: tr, boLoai: false, diem: 0, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
         ma: d.ma, ten: d.ten, tom: v.slice(0, 280), muc: d.mo});
     });
     (d.bang || []).forEach(function(b){
       b.hang.forEach(function(h2){
-        var chu = boDau(h2.join(' ')), d2 = 0;
-        tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
-        if(d2 >= 6) ra.push({
-          diem: d2, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
+        var tp = tapTieng(h2.join(' ')), tr = [];
+        tu.forEach(function(t){ if(tp[t]) tr.push(t); });
+        if(tr.length >= 3) ra.push({
+          trungTen: [], trungThan: tr, boLoai: false, diem: 0, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
           ma: d.ma, ten: h2[0] || d.ten, tom: h2.slice(1, 3).join(' — ').slice(0, 260), muc: d.ten});
       });
     });
@@ -85,11 +135,10 @@ function traTaiLieuGoc(tu){
   (G.TAILIEU_GOC || []).forEach(function(d){
     d.bang.forEach(function(b){
       b.hang.forEach(function(h){
-        var chu = boDau(h.join(' '));
-        var d2 = 0;
-        tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
-        if(d2 >= 4) ra.push({
-          diem: d2, loai: 'Tài liệu gốc', mau: '#BE0E16', go: 'tai-lieu-goc',
+        var tp = tapTieng(h.join(' ')), tr = [];
+        tu.forEach(function(t){ if(tp[t]) tr.push(t); });
+        if(tr.length >= 2) ra.push({
+          trungTen: [], trungThan: tr, boLoai: false, diem: 0, loai: 'Tài liệu gốc', mau: '#BE0E16', go: 'tai-lieu-goc',
           ma: d.ma + '·' + (h[0] || ''), ten: h[1] || h[0],
           tom: h.slice(2, 4).join(' — ').slice(0, 260), muc: b.muc || d.ten
         });
@@ -108,35 +157,118 @@ G.aiTra = function(cauHoi){
      không phải tầng 0 — hai thứ ấy khác nhau, tầng 0 thì chặn hết. */
   var tangNha = G.aiTangNha ? G.aiTangNha() : null;
   var giuLai = 0, khoChuaKhai = [];
+  var goiLoai = loaiDuocGoi(boDau(cauHoi));
+  /* Đếm mỗi tiếng xuất hiện ở bao nhiêu bản ghi — dùng ở lượt hai. */
+  var dfTu = {};
   nguon().forEach(function(n){
     n.kho.forEach(function(x){
-      var truong = n.than(x).map(function(v){ return boDau(v); });
-      var diem = 0;
+      /* KHỚP TRỌN TIẾNG, KHÔNG KHỚP CHUỖI CON
+
+         Bản trước dùng indexOf trên chuỗi đã bỏ dấu, nên "cong" trúng
+         cả trong "chung", "khong", "cong viec". Với tiếng Việt — mà
+         mỗi tiếng là một âm ngắn — chuyện ấy làm điểm nở ra ở mọi kho.
+
+         Hậu quả đo được: kho 250 tình huống và kho 200 kịch bản LUÔN
+         thắng kho 18 virus, vì kho to thì thế nào cũng có một bản ghi
+         gom đủ vài tiếng trùng. Trợ lý trả lời sai mà rất tự tin.
+
+         Tách thành tập TIẾNG rồi so bằng nhau thì hết. */
+      /* KHỚP TRỌN TIẾNG, KHÔNG KHỚP CHUỖI CON
+
+         Bản trước dùng indexOf trên chuỗi đã bỏ dấu, nên "cong" trúng
+         cả trong "chung", "khong", "cong viec". Với tiếng Việt — mà
+         mỗi tiếng là một âm ngắn — chuyện ấy làm điểm nở ra ở mọi kho. */
+      var truong = n.than(x).map(function(v){ return tapTieng(v); });
+      var trungTen = [], trungThan = [];
       tu.forEach(function(t){
-        if(truong[0] && truong[0].indexOf(t) >= 0) diem += 5;      /* trúng tên: nặng nhất */
+        if(truong[0] && truong[0][t]) { trungTen.push(t); return; }
         for(var i = 1; i < truong.length; i++)
-          if(truong[i] && truong[i].indexOf(t) >= 0){ diem += 2; break; }
+          if(truong[i] && truong[i][t]){ trungThan.push(t); return; }
       });
-      if(diem < 5) return;
+      if(!trungTen.length && !trungThan.length) return;
+
       /* ── TRẦN TẦNG ──
+         KHÔI PHỤC Ở 9.72, VÀ GHI LẠI VÌ SAO NÓ TỪNG BIẾN MẤT
+
+         Lượt viết lại phần chấm điểm ở 9.72 thay nguyên khối từ chỗ
+         đọc trường tới chỗ đẩy kết quả — và khối ấy CHỨA cả trần
+         tầng. Trần biến mất mà không dòng nào báo: trợ lý vẫn chạy,
+         vẫn trả lời, chỉ là trả lời cả tư liệu tầng trên cho một nhà
+         chưa tới tầng ấy.
+
+         Bộ kiểm mục 71 bắt được, qua đúng hai phép đo phụ mà nó giữ
+         riêng cho chỗ này: demDuocGiuLai và manInGiuLai. Không có
+         hai phép ấy thì lỗi này đi thẳng ra bản phát hành.
+
          Khác trần 30%: vượt tầng thì KHÔNG hiện gì cả, kể cả tên. Tư
          liệu tầng trên đọc mà không dùng được vì nền chưa có, và hiện
-         tên ra chỉ tạo một cơn thèm không giúp gì cho tối nay.
-         Đếm số bị giữ lại để nói ra — giấu con số ấy thì nhà mình tưởng
-         kho chỉ có bấy nhiêu. */
+         tên ra chỉ tạo một cơn thèm không giúp gì cho tối nay. */
       if(G.aiTrongTang){
         var tt = G.aiTrongTang(n.ten_kho, x, tangNha);
         if(!tt.ok){ giuLai++; return; }
         if(tt.chuaKhaiTang && khoChuaKhai.indexOf(n.ten_kho) < 0) khoChuaKhai.push(n.ten_kho);
       }
+
+      /* Chưa chấm điểm ở đây. Điểm tính ở LƯỢT HAI, khi đã biết mỗi
+         tiếng hiếm tới đâu — xem chú giải dưới. */
+      trungTen.concat(trungThan).forEach(function(t){ dfTu[t] = (dfTu[t] || 0) + 1; });
       ra.push({
-        diem: diem, loai: n.loai, mau: n.mau, go: n.go,
+        trungTen: trungTen, trungThan: trungThan, boLoai: !!goiLoai[n.ten_kho],
+        diem: 0, loai: n.loai, mau: n.mau, go: n.go,
+        /* Tên kho nguồn. Thiếu ô này thì không ai — kể cả bộ đo — nói
+           được câu trả lời lấy từ đâu, và một câu trả lời không dẫn
+           được nguồn thì đúng bằng một câu đoán. */
+        khoNguon: n.ten_kho,
         ma: n.ma(x) || '', ten: n.ten(x) || '',
         tom: String(n.than(x)[2] || n.than(x)[1] || '').slice(0, 260)
       });
     });
   });
-  ra = ra.concat(traTaiLieuGoc(tu));
+  /* Nối tài liệu gốc vào TRƯỚC lượt hai, để nó được chấm cùng thang
+     với mọi nguồn khác. */
+  traTaiLieuGoc(tu).forEach(function(x){
+    x.trungThan.forEach(function(t){ dfTu[t] = (dfTu[t] || 0) + 1; });
+    ra.push(x);
+  });
+
+  /* ═══ LƯỢT HAI: CHẤM THEO ĐỘ HIẾM VÀ ĐỘ PHỦ ═══
+
+     Hai chỗ hỏng mà lượt một không chữa được:
+
+     1. ĐIỂM KHÔNG CHUẨN HOÁ. Kho 250 tình huống có 250 lần thử, kho
+        18 virus chỉ có 18. Cộng điểm thô thì kho to luôn thắng, và
+        đo được đúng thế: hỏi về virus thì ra mô thức.
+
+     2. MỌI TIẾNG NẶNG NHƯ NHAU. "virus" chỉ có ở vài bản ghi, "hành"
+        có ở khắp nơi — mà cả hai đều được tính hai điểm.
+
+     Chữa: mỗi tiếng nặng theo ĐỘ HIẾM của nó (tiếng có ở càng ít bản
+     ghi thì càng nặng), và điểm cuối chia cho số tiếng của câu hỏi,
+     tức là đo ĐỘ PHỦ CÂU HỎI chứ không đo tổng điểm gom được. */
+  var soBanGhi = ra.length || 1;
+  function nang(t){
+    var df = dfTu[t] || 1;
+    /* Tiếng có mặt ở quá nửa số bản ghi trúng thì gần như vô nghĩa. */
+    return Math.log(1 + soBanGhi / df);
+  }
+  var nangCauHoi = 0;
+  tu.forEach(function(t){ nangCauHoi += nang(t); });
+  if(!nangCauHoi) nangCauHoi = 1;
+
+  ra.forEach(function(x){
+    var d = 0;
+    x.trungTen.forEach(function(t){ d += nang(t) * 2.5; });
+    x.trungThan.forEach(function(t){ d += nang(t); });
+    /* Chia cho tổng nặng của câu hỏi: bản ghi phủ được nhiều phần
+       câu hỏi thì thắng, không phải bản ghi gom được nhiều tiếng. */
+    x.diem = d / nangCauHoi * 10;
+    /* Loại được gọi thẳng tên trong câu hỏi là tín hiệu rõ nhất
+       người hỏi đưa ra — rõ hơn mọi tiếng khác. Nhân chứ không cộng,
+       để nó không bị một kho to gom điểm vượt qua. */
+    if(x.boLoai) x.diem *= 2.2;
+  });
+  ra = ra.filter(function(x){ return x.diem >= 2.2; });
+
   ra.sort(function(a, b){ return b.diem - a.diem; });
 
   /* bỏ trùng theo mã */

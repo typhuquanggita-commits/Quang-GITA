@@ -2052,12 +2052,12 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 86 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 87 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 118 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 119 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    32 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -2098,7 +2098,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.71',
+  version: '9.72',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -17713,6 +17713,14 @@ function boDau(s){
 var HU_TU = ('la cua va cho voi thi ma nhung o tai den tu khi nao sao gi de duoc co khong ' +
   'toi minh em anh chi con nha mot hai cac nhung rat qua lam nen se da dang bi bo ai nay ' +
   'the nhu hay hon nua chua roi cung ve theo tren duoi trong ngoai').split(' ');
+/* Tập tiếng của một chuỗi, dựng một lần rồi tra bằng khoá. Trả về
+   vật chứ không trả mảng: tra khoá nhanh hơn duyệt mảng, và ở đây
+   phép này chạy vài trăm nghìn lượt mỗi câu hỏi. */
+function tapTieng(v){
+  var ra = {}, t = boDau(v).split(' ');
+  for(var i = 0; i < t.length; i++) if(t[i]) ra[t[i]] = 1;
+  return ra;
+}
 function tachTu(s){
   return boDau(s).split(' ').filter(function(t){
     return t.length >= 2 && HU_TU.indexOf(t) < 0;
@@ -17741,27 +17749,69 @@ function nguon(){
     {kho:G.BAIHOC, ten_kho:'BAIHOC', loai:'Bài học',   mau:'#0B7350', go:'tu-duy',
      ma:function(x){ return x.id; }, ten:function(x){ return x.ten; },
      than:function(x){ return [x.ten, x.nguyenLy, x.apDung]; }}
-  ].filter(function(n){ return Array.isArray(n.kho) && n.kho.length; });
+  ].concat(
+    /* NGUỒN THÊM — đăng ký từ src/tro-ly-rong.js.
+
+       Trước 9.72 trợ lý chỉ tra được NĂM kho trong tổng tám trăm.
+       Nghĩa là mọi thứ dựng từ 9.65 tới 9.71 — hành lang, rà soát
+       pháp lý, chuẩn bằng chứng, bộ hợp đồng, hướng dẫn ký kết, sổ
+       tay quản trị, bảng tin nội bộ, bảng tự động hoá — trợ lý không
+       trả lời được một câu nào. Mà nó vẫn TRẢ LỜI, bằng thứ gần
+       giống trong năm kho cũ. Đo được 1 trên 20 câu là trúng.
+
+       Mỗi nguồn thêm khai QUYỀN của nó. Nguồn nào người đang hỏi
+       không có quyền thì không vào danh sách tra — khoá ở chỗ TRA,
+       không phải ở chỗ hiện kết quả. */
+    (G.aiNguonThem ? G.aiNguonThem() : []).filter(function(n){
+      if(!n.quyen) return true;
+      return G.can ? G.can(n.quyen) : false;
+    })
+  ).filter(function(n){ return Array.isArray(n.kho) && n.kho.length; });
+}
+
+/* ─── Câu hỏi có gọi tên một LOẠI tư liệu không ───
+   "Phác đồ cho trẻ mất tập trung" thì phải ra phác đồ, không ra tình
+   huống. Trước đây điểm chỉ tính theo từ trúng, nên loại được gọi
+   tên thẳng vẫn thua một kho khác trùng nhiều từ hơn. */
+function loaiDuocGoi(chu){
+  var ra = {};
+  [['MOTHUC','mo thuc'],['PHACDO','phac do'],['KICHBAN','kich ban'],
+   ['TINHHUONG','tinh huong'],['BAIHOC','bai hoc']].forEach(function(p){
+    if(chu.indexOf(p[1]) >= 0) ra[p[0]] = 1;
+  });
+  (G.aiNguonThem ? G.aiNguonThem() : []).forEach(function(n){
+    (n.goiTen || []).forEach(function(t){
+      if(t && chu.indexOf(boDau(t)) >= 0) ra[n.ten_kho] = 1;
+    });
+  });
+  return ra;
 }
 
 /* Tài liệu gốc: 1.647 dòng bảng — tra riêng vì cấu trúc khác */
+/* Tài liệu gốc: 1.647 dòng bảng — tra riêng vì cấu trúc khác, nhưng
+   TRẢ VỀ CÙNG HÌNH với các nguồn kia (tiếng trúng, chưa chấm điểm).
+
+   Bản trước nó tự chấm theo thang riêng — cộng 2 mỗi tiếng trúng —
+   rồi được nối thẳng vào danh sách đã chấm theo thang khác. Hai thang
+   trộn một chỗ thì thứ tự cuối cùng vô nghĩa: một dòng bảng gom 5
+   tiếng thường được 10 điểm, thắng một bản ghi trúng đúng tên. */
 function traTaiLieuGoc(tu){
   var ra = [];
   /* Tài liệu Drive: tra cả bảng lẫn đoạn văn */
   (G.TAILIEU_DRIVE || []).forEach(function(d){
     (d.doan || []).forEach(function(v){
-      var chu = boDau(v), d2 = 0;
-      tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
-      if(d2 >= 6) ra.push({
-        diem: d2, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
+      var tp = tapTieng(v), tr = [];
+      tu.forEach(function(t){ if(tp[t]) tr.push(t); });
+      if(tr.length >= 3) ra.push({
+        trungTen: [], trungThan: tr, boLoai: false, diem: 0, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
         ma: d.ma, ten: d.ten, tom: v.slice(0, 280), muc: d.mo});
     });
     (d.bang || []).forEach(function(b){
       b.hang.forEach(function(h2){
-        var chu = boDau(h2.join(' ')), d2 = 0;
-        tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
-        if(d2 >= 6) ra.push({
-          diem: d2, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
+        var tp = tapTieng(h2.join(' ')), tr = [];
+        tu.forEach(function(t){ if(tp[t]) tr.push(t); });
+        if(tr.length >= 3) ra.push({
+          trungTen: [], trungThan: tr, boLoai: false, diem: 0, loai: 'Tài liệu Học viện', mau: '#185AB4', go: 'tai-lieu-goc',
           ma: d.ma, ten: h2[0] || d.ten, tom: h2.slice(1, 3).join(' — ').slice(0, 260), muc: d.ten});
       });
     });
@@ -17769,11 +17819,10 @@ function traTaiLieuGoc(tu){
   (G.TAILIEU_GOC || []).forEach(function(d){
     d.bang.forEach(function(b){
       b.hang.forEach(function(h){
-        var chu = boDau(h.join(' '));
-        var d2 = 0;
-        tu.forEach(function(t){ if(chu.indexOf(t) >= 0) d2 += 2; });
-        if(d2 >= 4) ra.push({
-          diem: d2, loai: 'Tài liệu gốc', mau: '#BE0E16', go: 'tai-lieu-goc',
+        var tp = tapTieng(h.join(' ')), tr = [];
+        tu.forEach(function(t){ if(tp[t]) tr.push(t); });
+        if(tr.length >= 2) ra.push({
+          trungTen: [], trungThan: tr, boLoai: false, diem: 0, loai: 'Tài liệu gốc', mau: '#BE0E16', go: 'tai-lieu-goc',
           ma: d.ma + '·' + (h[0] || ''), ten: h[1] || h[0],
           tom: h.slice(2, 4).join(' — ').slice(0, 260), muc: b.muc || d.ten
         });
@@ -17792,35 +17841,118 @@ G.aiTra = function(cauHoi){
      không phải tầng 0 — hai thứ ấy khác nhau, tầng 0 thì chặn hết. */
   var tangNha = G.aiTangNha ? G.aiTangNha() : null;
   var giuLai = 0, khoChuaKhai = [];
+  var goiLoai = loaiDuocGoi(boDau(cauHoi));
+  /* Đếm mỗi tiếng xuất hiện ở bao nhiêu bản ghi — dùng ở lượt hai. */
+  var dfTu = {};
   nguon().forEach(function(n){
     n.kho.forEach(function(x){
-      var truong = n.than(x).map(function(v){ return boDau(v); });
-      var diem = 0;
+      /* KHỚP TRỌN TIẾNG, KHÔNG KHỚP CHUỖI CON
+
+         Bản trước dùng indexOf trên chuỗi đã bỏ dấu, nên "cong" trúng
+         cả trong "chung", "khong", "cong viec". Với tiếng Việt — mà
+         mỗi tiếng là một âm ngắn — chuyện ấy làm điểm nở ra ở mọi kho.
+
+         Hậu quả đo được: kho 250 tình huống và kho 200 kịch bản LUÔN
+         thắng kho 18 virus, vì kho to thì thế nào cũng có một bản ghi
+         gom đủ vài tiếng trùng. Trợ lý trả lời sai mà rất tự tin.
+
+         Tách thành tập TIẾNG rồi so bằng nhau thì hết. */
+      /* KHỚP TRỌN TIẾNG, KHÔNG KHỚP CHUỖI CON
+
+         Bản trước dùng indexOf trên chuỗi đã bỏ dấu, nên "cong" trúng
+         cả trong "chung", "khong", "cong viec". Với tiếng Việt — mà
+         mỗi tiếng là một âm ngắn — chuyện ấy làm điểm nở ra ở mọi kho. */
+      var truong = n.than(x).map(function(v){ return tapTieng(v); });
+      var trungTen = [], trungThan = [];
       tu.forEach(function(t){
-        if(truong[0] && truong[0].indexOf(t) >= 0) diem += 5;      /* trúng tên: nặng nhất */
+        if(truong[0] && truong[0][t]) { trungTen.push(t); return; }
         for(var i = 1; i < truong.length; i++)
-          if(truong[i] && truong[i].indexOf(t) >= 0){ diem += 2; break; }
+          if(truong[i] && truong[i][t]){ trungThan.push(t); return; }
       });
-      if(diem < 5) return;
+      if(!trungTen.length && !trungThan.length) return;
+
       /* ── TRẦN TẦNG ──
+         KHÔI PHỤC Ở 9.72, VÀ GHI LẠI VÌ SAO NÓ TỪNG BIẾN MẤT
+
+         Lượt viết lại phần chấm điểm ở 9.72 thay nguyên khối từ chỗ
+         đọc trường tới chỗ đẩy kết quả — và khối ấy CHỨA cả trần
+         tầng. Trần biến mất mà không dòng nào báo: trợ lý vẫn chạy,
+         vẫn trả lời, chỉ là trả lời cả tư liệu tầng trên cho một nhà
+         chưa tới tầng ấy.
+
+         Bộ kiểm mục 71 bắt được, qua đúng hai phép đo phụ mà nó giữ
+         riêng cho chỗ này: demDuocGiuLai và manInGiuLai. Không có
+         hai phép ấy thì lỗi này đi thẳng ra bản phát hành.
+
          Khác trần 30%: vượt tầng thì KHÔNG hiện gì cả, kể cả tên. Tư
          liệu tầng trên đọc mà không dùng được vì nền chưa có, và hiện
-         tên ra chỉ tạo một cơn thèm không giúp gì cho tối nay.
-         Đếm số bị giữ lại để nói ra — giấu con số ấy thì nhà mình tưởng
-         kho chỉ có bấy nhiêu. */
+         tên ra chỉ tạo một cơn thèm không giúp gì cho tối nay. */
       if(G.aiTrongTang){
         var tt = G.aiTrongTang(n.ten_kho, x, tangNha);
         if(!tt.ok){ giuLai++; return; }
         if(tt.chuaKhaiTang && khoChuaKhai.indexOf(n.ten_kho) < 0) khoChuaKhai.push(n.ten_kho);
       }
+
+      /* Chưa chấm điểm ở đây. Điểm tính ở LƯỢT HAI, khi đã biết mỗi
+         tiếng hiếm tới đâu — xem chú giải dưới. */
+      trungTen.concat(trungThan).forEach(function(t){ dfTu[t] = (dfTu[t] || 0) + 1; });
       ra.push({
-        diem: diem, loai: n.loai, mau: n.mau, go: n.go,
+        trungTen: trungTen, trungThan: trungThan, boLoai: !!goiLoai[n.ten_kho],
+        diem: 0, loai: n.loai, mau: n.mau, go: n.go,
+        /* Tên kho nguồn. Thiếu ô này thì không ai — kể cả bộ đo — nói
+           được câu trả lời lấy từ đâu, và một câu trả lời không dẫn
+           được nguồn thì đúng bằng một câu đoán. */
+        khoNguon: n.ten_kho,
         ma: n.ma(x) || '', ten: n.ten(x) || '',
         tom: String(n.than(x)[2] || n.than(x)[1] || '').slice(0, 260)
       });
     });
   });
-  ra = ra.concat(traTaiLieuGoc(tu));
+  /* Nối tài liệu gốc vào TRƯỚC lượt hai, để nó được chấm cùng thang
+     với mọi nguồn khác. */
+  traTaiLieuGoc(tu).forEach(function(x){
+    x.trungThan.forEach(function(t){ dfTu[t] = (dfTu[t] || 0) + 1; });
+    ra.push(x);
+  });
+
+  /* ═══ LƯỢT HAI: CHẤM THEO ĐỘ HIẾM VÀ ĐỘ PHỦ ═══
+
+     Hai chỗ hỏng mà lượt một không chữa được:
+
+     1. ĐIỂM KHÔNG CHUẨN HOÁ. Kho 250 tình huống có 250 lần thử, kho
+        18 virus chỉ có 18. Cộng điểm thô thì kho to luôn thắng, và
+        đo được đúng thế: hỏi về virus thì ra mô thức.
+
+     2. MỌI TIẾNG NẶNG NHƯ NHAU. "virus" chỉ có ở vài bản ghi, "hành"
+        có ở khắp nơi — mà cả hai đều được tính hai điểm.
+
+     Chữa: mỗi tiếng nặng theo ĐỘ HIẾM của nó (tiếng có ở càng ít bản
+     ghi thì càng nặng), và điểm cuối chia cho số tiếng của câu hỏi,
+     tức là đo ĐỘ PHỦ CÂU HỎI chứ không đo tổng điểm gom được. */
+  var soBanGhi = ra.length || 1;
+  function nang(t){
+    var df = dfTu[t] || 1;
+    /* Tiếng có mặt ở quá nửa số bản ghi trúng thì gần như vô nghĩa. */
+    return Math.log(1 + soBanGhi / df);
+  }
+  var nangCauHoi = 0;
+  tu.forEach(function(t){ nangCauHoi += nang(t); });
+  if(!nangCauHoi) nangCauHoi = 1;
+
+  ra.forEach(function(x){
+    var d = 0;
+    x.trungTen.forEach(function(t){ d += nang(t) * 2.5; });
+    x.trungThan.forEach(function(t){ d += nang(t); });
+    /* Chia cho tổng nặng của câu hỏi: bản ghi phủ được nhiều phần
+       câu hỏi thì thắng, không phải bản ghi gom được nhiều tiếng. */
+    x.diem = d / nangCauHoi * 10;
+    /* Loại được gọi thẳng tên trong câu hỏi là tín hiệu rõ nhất
+       người hỏi đưa ra — rõ hơn mọi tiếng khác. Nhân chứ không cộng,
+       để nó không bị một kho to gom điểm vượt qua. */
+    if(x.boLoai) x.diem *= 2.2;
+  });
+  ra = ra.filter(function(x){ return x.diem >= 2.2; });
+
   ra.sort(function(a, b){ return b.diem - a.diem; });
 
   /* bỏ trùng theo mã */
@@ -18498,6 +18630,235 @@ document.addEventListener('keydown', function(e){
   G.chatHoi(i.value); i.value = '';
 });
 
+})();
+
+})();
+
+/* ═════════ src/tro-ly-rong.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 · v9.72 — MỞ KHO CHO TRỢ LÝ TRA
+
+   ĐO ĐƯỢC GÌ TRƯỚC KHI SỬA
+
+   Đưa hai mươi câu hỏi thật vào trợ lý và đếm xem nó trúng mấy câu:
+   TRÚNG 1 / 20.
+
+   Nó KHÔNG im lặng ở mười chín câu còn lại — nó vẫn trả về mười hai
+   tư liệu, lấy từ năm kho cũ, gần giống mà sai. Đó là kiểu hỏng tệ
+   hơn im lặng: im lặng thì người ta đi tra chỗ khác, còn trả lời sai
+   thì người ta tin.
+
+   Nguyên nhân: hàm nguon() trong src/tro-ly-ai.js liệt kê đúng NĂM
+   kho — mô thức, phác đồ, kịch bản, tình huống, bài học — trong tổng
+   hơn tám trăm kho của hệ. Mọi thứ dựng từ 9.65 tới 9.71 nằm ngoài
+   tầm với của trợ lý.
+
+   KHOÁ Ở CHỖ TRA, KHÔNG Ở CHỖ HIỆN KẾT QUẢ
+
+   Mỗi nguồn thêm khai QUYỀN của nó. nguon() lọc bằng G.can() TRƯỚC
+   khi tra, nên kho nghề không bao giờ vào vòng chấm điểm của một
+   người không có quyền — chứ không phải chấm xong rồi giấu kết quả.
+
+   Đây là đúng luật đã sai ba lần trong kho này: lọc trên màn hình
+   không phải bảo vệ dữ liệu.
+
+   trSoiRoRi() đăng nhập-độc-lập không làm được, nên nó canh chiều
+   khác: mọi nguồn thêm phải khai quyền, và quyền ấy phải có thật
+   trong G.PERM. Thiếu một trong hai thì đỏ.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+(function () {
+  /* Mỗi nguồn: kho nào, gọi tên bằng chữ gì trong câu hỏi, lấy mã và
+     tên ra sao, và những trường nào đem đi so.
+
+     Ô goiTen là chỗ đắt: nó cho người hỏi gọi thẳng tên loại tư liệu
+     và được ưu tiên. "Bảy cửa trước khi KÝ KẾT" thì phải ra kho ký
+     kết, không ra một kịch bản trùng vài từ. */
+  function on(o) { return G[o.kho] !== undefined && G[o.kho] !== null; }
+
+  var THEM = [
+    /* ── Nghề: bản vẽ, bàn làm việc, ngôn ngữ ── */
+    { kho: 'BV_VAI', loai: 'Trần vai', mau: '#5140B4', go: 'ban-ve',
+      quyen: 'nghe_chung', goiTen: ['tran vai', 'phu trach toi da', 'ban ve'],
+      ma: 'ten', ten: 'ten', than: ['ten', 'tran', 'gioiHanTuyetDoi'] },
+    { kho: 'BLV_NGAN', loai: 'Bàn Coach', mau: '#5140B4', go: 'ban-coach',
+      quyen: 'pro_coach', goiTen: ['ban coach', 'ban lam viec', 'ngan'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'laGi', 'vet'] },
+    { kho: 'NN_CAM', loai: 'Câu cấm', mau: '#BE0E16', go: 'chuan-ngon-ngu',
+      quyen: 'pro_coach', goiTen: ['cau cam', 'chuan ngon ngu', 'khong duoc noi'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'vi', 'thay'] },
+
+    /* ── Hành lang và rà soát hệ ── */
+    { kho: 'HL_VIRUS', loai: 'Virus', mau: '#BE0E16', go: 'hanh-lang',
+      quyen: 'pro_coach', goiTen: ['virus', 'vac xin', 'hanh lang'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'trieuChung', 'duongLay', 'vacXin'] },
+    { kho: 'HL_LUAT12', loai: 'Luật hành lang', mau: '#B4720F', go: 'hanh-lang',
+      quyen: 'pro_coach', goiTen: ['muoi hai luat', 'luat hanh lang'],
+      ma: 'ma', ten: 'luat', than: ['luat', 'hanhVi', 'viPham'] },
+    { kho: 'HL_SAUNHIP', loai: 'Sáu Nhịp', mau: '#0B6675', go: 'hanh-lang',
+      quyen: 'pro_coach', goiTen: ['sau nhip'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'laGi', 'lam'] },
+    { kho: 'HL_KHOA9', loai: 'Khoá hệ', mau: '#185AB4', go: 'hanh-lang',
+      quyen: 'pro_coach', goiTen: ['khoa he', 'chin khoa', 'bat bien'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'chan', 'coChe'] },
+    { kho: 'RS_CHAN', loai: 'Lỗi chặn', mau: '#BE0E16', go: 'ra-soat-loi',
+      quyen: 'pro_coach', goiTen: ['loi chan', 'ra soat loi', 'diem gay'],
+      ma: 'ma', ten: 'loi', than: ['loi', 'hauQua', 'xuLy', 'noiUngDung'] },
+
+    /* ── Pháp lý ── */
+    { kho: 'RSP_CHAN', loai: 'Phát hiện pháp lý', mau: '#BE0E16', go: 'ra-soat-phap-ly',
+      quyen: 'pro_coach', goiTen: ['phap ly', 'phat hien', 'nghiem trong'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'rui', 'noiUngDung', 'lamGi'] },
+    { kho: 'RSP_LECH', loai: 'Chỗ lệch', mau: '#B4720F', go: 'ra-soat-phap-ly',
+      quyen: 'pro_coach', goiTen: ['cho lech', 'tai lieu noi khac'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'taiLieuNoi', 'ungDungLam', 'huongDeXuat'] },
+    { kho: 'BCD_THAOTAC', loai: 'Bằng chứng', mau: '#0B6675', go: 'bang-chung',
+      quyen: 'pro_coach', goiTen: ['bang chung', 'thao tac sinh bang chung'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'phaiCo', 'giu'] },
+    { kho: 'BCD_TINHCHAT', loai: 'Tính chất bằng chứng', mau: '#0B6675', go: 'bang-chung',
+      quyen: 'pro_coach', goiTen: ['tinh chat', 'chuan bang chung'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'loi', 'viLaDau'] },
+
+    /* ── Hợp đồng và ký kết ── */
+    { kho: 'HSH_HD', loai: 'Hợp đồng', mau: '#185AB4', go: 'ho-so-hop-dong',
+      quyen: 'pro_coach', goiTen: ['hop dong', 'ho so hop dong'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'dich', 'ben', 'han'] },
+    { kho: 'HSH_DK', loai: 'Điều khoản', mau: '#185AB4', go: 'ho-so-hop-dong',
+      quyen: 'pro_coach', goiTen: ['dieu khoan', 'dk'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'batBuoc', 'ghi'] },
+    { kho: 'HSH_KY', loai: 'Cấp chữ ký', mau: '#B4720F', go: 'ho-so-hop-dong',
+      quyen: 'pro_coach', goiTen: ['chu ky', 'cap chu ky', 'ky so'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'hinh', 'dung', 'gia'] },
+    { kho: 'HSH_BAC', loai: 'Bậc lương', mau: '#0B7350', go: 'ho-so-hop-dong',
+      quyen: 'pro_coach', goiTen: ['bac luong', 'chin bac', 'thu nhap'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'nangLuc', 'thuNhap', 'bienDoi'] },
+    { kho: 'KK_CUA', loai: 'Cửa ký kết', mau: '#BE0E16', go: 'ky-ket',
+      quyen: 'pro_coach', goiTen: ['ky ket', 'truoc khi ky', 'bay cua'],
+      ma: 'so', ten: 'cua', than: ['cua', 'hoi', 'khongQua'] },
+
+    /* ── Quản trị và vận hành ── */
+    { kho: 'STA_NHIP', loai: 'Nhịp quản trị', mau: '#185AB4', go: 'so-tay-admin',
+      quyen: 'qt_trang', goiTen: ['nhip', 'moi ngay', 'so tay', 'super admin'],
+      ma: 'nhip', ten: 'nhip', than: ['nhip', 'gio'] },
+    { kho: 'STA_XUONGSONG', loai: 'Màn quản trị', mau: '#BE0E16', go: 'so-tay-admin',
+      quyen: 'qt_trang', goiTen: ['man quan tri', 'xuong song', 'nut nguy'],
+      ma: 'man', ten: 'ten', than: ['ten', 'mo', 'docTruoc', 'nutNguy', 'daSai'] },
+    { kho: 'BTN_NGAN', loai: 'Ngăn bảng tin', mau: '#0B6675', go: 'tin-noi-bo',
+      quyen: 'nghe_chung', goiTen: ['bang tin noi bo', 'ngan bang tin'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'laGi', 'aiThay', 'lay'] },
+    { kho: 'BTN_VINHDANH', loai: 'Vinh danh', mau: '#5140B4', go: 'tin-noi-bo',
+      quyen: 'nghe_chung', goiTen: ['vinh danh', 'ghi nhan', 'thuong ky'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'canCu', 'doTuDau', 'khongDungLam'] },
+    { kho: 'TDH_HE', loai: 'Việc hệ thống', mau: '#0B6675', go: 'tu-dong',
+      quyen: 'nghe_chung', goiTen: ['tu dong', 'tu dong hoa', 'may chay'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'kich', 'may', 'nguoi', 'neuHong'] },
+    { kho: 'TDH_CHAN', loai: 'Máy không được nhận', mau: '#BE0E16', go: 'tu-dong',
+      quyen: 'nghe_chung', goiTen: ['may khong duoc', 'cam may', 'chi nguoi'],
+      ma: 'ma', ten: 'viec', than: ['viec', 'vi', 'tuLuat'] },
+
+    /* ── Quyền của gia đình: mở cho MỌI vai, vì đây là thứ nhà mình
+         phải đọc được. Không khai ô quyen nghĩa là không lọc. ── */
+    { kho: 'PL_QUYEN', loai: 'Quyền của nhà mình', mau: '#0B7350', go: 'phap-ly',
+      goiTen: ['quyen', 'bay quyen', 'quyen cua nha'],
+      ma: 'ma', ten: 't', than: ['t', 'la', 'demBang'] },
+    { kho: 'PL_CO', loai: 'Cơ chế dùng quyền', mau: '#0B7350', go: 'phap-ly',
+      goiTen: ['lam the nao', 'xin xoa', 'khieu nai', 'co che'],
+      ma: 'ma', ten: 'lam', than: ['lam', 'ai', 'han', 'khong'] }
+  ];
+
+  /* TỆP NÀY NẰM Ở GÓI CHUNG, KHÔNG Ở GÓI NGHỀ — VÀ ĐÓ LÀ CỐ Ý
+
+     Bản đầu tôi khai nó vào cả hai danh sách, nên nó chỉ vào gói
+     nghề. Đo lại thì thấy: phụ huynh, học viên và cộng tác viên
+     KHÔNG rò một dòng kho nghề nào — đúng ý — nhưng họ cũng mất
+     luôn hai nguồn đáng lẽ mở cho họ: bảy quyền của gia đình, và
+     cơ chế dùng từng quyền ấy.
+
+     Nhà mình phải hỏi được về quyền của chính mình. Nên tệp về gói
+     chung, và việc chặn giao cho HAI lớp đã có:
+
+       lớp 1 · kho nghề nằm trong gói .enc mà máy khách hàng không
+               nhận được — không có dữ liệu thì không tra được gì
+       lớp 2 · nguon() lọc bằng G.can(quyen) TRƯỚC khi tra
+
+     Hai lớp ấy độc lập nhau. Mất một lớp thì lớp kia vẫn giữ.
+
+     DỰNG LẠI MỖI LẦN TRA, KHÔNG DỰNG MỘT LẦN LÚC TẢI TỆP
+
+     Bản đầu gán G.AI_NGUON_THEM một lần ngay khi tệp chạy, và kết
+     quả đo KHÔNG nhúc nhích: vẫn 2 trên 20.
+
+     Lý do là luật số hai của kho này: KHO NẠP SAU KHI ĐĂNG NHẬP. Lúc
+     tệp vừa tải thì G.HL_VIRUS, G.HSH_HD, G.KK_CUA đều chưa tồn tại,
+     nên bộ lọc "kho đã nạp chưa" gạt sạch hai mươi lăm nguồn và trợ
+     lý vẫn chỉ có năm kho cũ.
+
+     Nên hàm này dựng lại mỗi lần được gọi. Tốn thêm vài mi-li-giây
+     một lượt hỏi, đổi lấy việc nó luôn đúng với thứ đang nạp. */
+  G.aiNguonThem = function () { return DUNG(); };
+
+  function DUNG() { return THEM.filter(on).map(function (o) {
+    return {
+      kho: G[o.kho], ten_kho: o.kho, loai: o.loai, mau: o.mau, go: o.go,
+      quyen: o.quyen || '', goiTen: o.goiTen || [],
+      ma: function (x) { return String(x[o.ma] || ''); },
+      ten: function (x) { return String(x[o.ten] || ''); },
+      than: function (x) {
+        return o.than.map(function (k) { return String(x[k] || ''); });
+      }
+    };
+  }); }
+
+  /* ═══════ KHOÁ: MỌI NGUỒN NGHỀ PHẢI KHAI QUYỀN CÓ THẬT ═══════
+
+     Không đăng nhập-độc-lập được trong cùng một trang, nên phép này
+     canh chiều khác: nguồn nào trỏ vào kho của gói nghề thì BẮT BUỘC
+     khai quyền, và quyền ấy phải có thật trong G.PERM.
+
+     Gõ nhầm tên quyền là chỗ hỏng im lặng nhất: G.can() trả về false
+     cho quyền không tồn tại, nên nguồn ấy biến mất khỏi mọi vai —
+     kể cả vai đáng lẽ được tra. Trợ lý im về cả một mảng kho mà
+     không ai biết. */
+  G.trSoiRoRi = function () {
+    var ds = G.aiNguonThem(), loi = [];
+    if (!ds.length) return { chuaDo: true, thieu: 'AI_NGUON_THEM', loi: [] };
+
+    var khoNghe = {};
+    (G.THUOC_CAP_PHEP || []).forEach(function (k) { khoNghe[k] = 1; });
+    if (!Object.keys(khoNghe).length)
+      return { chuaDo: true, thieu: 'THUOC_CAP_PHEP', loi: [] };
+
+    var moVai = [];
+    ds.forEach(function (n) {
+      ['loai', 'go'].forEach(function (k) {
+        if (!n[k]) loi.push(n.ten_kho + ' thiếu ô ' + k);
+      });
+      if (!(n.goiTen || []).length)
+        loi.push(n.ten_kho + ' không khai ô goiTen — người hỏi không gọi thẳng tên nó được');
+      if (typeof (G.VIEWS || {})[n.go] !== 'function')
+        loi.push(n.ten_kho + ' trỏ vào màn "' + n.go + '" — màn ấy không có thật');
+
+      /* Kho thuộc gói cấp phép mà không khai quyền là chỗ rò. */
+      if (khoNghe[n.ten_kho] && !n.quyen)
+        loi.push(n.ten_kho + ' thuộc gói cấp phép mà KHÔNG khai quyền — mọi vai tra được');
+      if (n.quyen && typeof (G.PERM || {})[n.quyen] !== 'number')
+        loi.push(n.ten_kho + ' khai quyền "' + n.quyen + '" — quyền ấy không có trong G.PERM, ' +
+          'nên nguồn này biến mất khỏi MỌI vai, kể cả vai đáng lẽ được tra');
+      if (!n.quyen) moVai.push(n.ten_kho);
+    });
+
+    /* Phải còn ít nhất một nguồn mở cho mọi vai — bảy quyền của gia
+       đình là thứ nhà mình phải hỏi được. Không còn cái nào thì trợ
+       lý của khách hàng chỉ còn năm kho cũ, y như trước 9.72. */
+    if (!moVai.length)
+      loi.push('không nguồn thêm nào mở cho mọi vai — trợ lý của khách hàng lại chỉ còn ' +
+        'năm kho cũ');
+    return { chuaDo: false, loi: loi, so: ds.length, moVai: moVai.length,
+      khoaNghe: ds.length - moVai.length };
+  };
 })();
 
 })();

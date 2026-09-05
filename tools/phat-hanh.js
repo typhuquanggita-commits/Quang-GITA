@@ -115,6 +115,10 @@ chay('node', ['tools/kiem-tra.js']);
    kho theo đúng phạm vi vai đó, rồi đi hết mọi mục — bắt được mục chết mà
    bộ kiểm dựng-rồi-đếm không thấy. */
 chay('node', ['tools/di-bo-lien-ket.js']);
+/* Đo trợ lý: hai mươi câu hỏi thật, mỗi câu khai kho đáng lẽ phải ra.
+   Đo ĐỘ TRÚNG chứ không đo độ có trả về — trợ lý luôn trả về thứ gì
+   đó, nên "có trả lời" không phải một phép đo. */
+chay('xvfb-run', ['-a', 'node', 'tools/do-tro-ly.js']);
 if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
 
 /* ─── 5a-bis. Thử mã máy chủ trên bản giả lập Apps Script ───

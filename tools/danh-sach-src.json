@@ -62,6 +62,7 @@
     "src/quy-trinh-xu-ly.js",
     "src/tro-ly-ai.js",
     "src/tro-ly-chat.js",
+    "src/tro-ly-rong.js",
     "src/thu-vien.js",
     "src/danh-gia.js",
     "src/noi-ket.js",
