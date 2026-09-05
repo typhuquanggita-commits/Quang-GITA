@@ -540,6 +540,11 @@ const NGHE = [
      khách hàng và cộng tác viên KHÔNG được nhận. Ở gói NGHỀ. */
   'BTN_LOI','BTN_NGAN','BTN_NGAN_LUAT','BTN_VINHDANH','BTN_VINHDANH_LUAT',
   'BTN_TRAN','BTN_CAM','BTN_LUAT',
+  /* Tự động hoá ở tầng hệ thống — nối vào DKH_ của bản 9.61. Kho nêu
+     tên công cụ, tên hàm và năm chỗ máy không được nhận; đó là bản đồ
+     ruột của hệ, nên khoá ở gói NGHỀ. */
+  'TDH_LOI','TDH_HE','TDH_HE_LUAT','TDH_CHAN','TDH_CHAN_LUAT',
+  'TDH_DUONG','TDH_DUONG_LUAT','TDH_LUAT',
 ];
 
 const goi = {};

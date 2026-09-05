@@ -112,6 +112,7 @@
   "src/ky-ket.js",
   "src/so-tay-admin.js",
   "src/tin-noi-bo.js",
+  "src/tu-dong.js",
     "src/man-cong-viec.js",
     "src/cua-truoc.js",
     "src/app.js",

@@ -198,6 +198,11 @@ G.THUOC_CAP_PHEP = [
      khách hàng và cộng tác viên KHÔNG được nhận. Ở gói NGHỀ. */
   'BTN_LOI','BTN_NGAN','BTN_NGAN_LUAT','BTN_VINHDANH','BTN_VINHDANH_LUAT',
   'BTN_TRAN','BTN_CAM','BTN_LUAT',
+  /* Tự động hoá ở tầng hệ thống — nối vào DKH_ của bản 9.61. Kho nêu
+     tên công cụ, tên hàm và năm chỗ máy không được nhận; đó là bản đồ
+     ruột của hệ, nên khoá ở gói NGHỀ. */
+  'TDH_LOI','TDH_HE','TDH_HE_LUAT','TDH_CHAN','TDH_CHAN_LUAT',
+  'TDH_DUONG','TDH_DUONG_LUAT','TDH_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',

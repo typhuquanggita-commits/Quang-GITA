@@ -4,11 +4,11 @@
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 117 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 118 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
-   31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
-   giấy phép có gói nghề. Máy của gia đình nhẹ đi 696 KB.
+   32 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
+   giấy phép có gói nghề. Máy của gia đình nhẹ đi 715 KB.
    lượt hỏi là một lần chờ độ trễ; cộng lại là hàng chục giây màn hình
    trắng với người dùng điện thoại.
 
@@ -20,7 +20,7 @@
 /* ═════════ sinh lúc gộp: màn nằm ở gita-nghe.js ═════════ */
 (function(){var G=window.G||{};window.G=G;
 G.MA_NGHE_TEP="gita-nghe.js";
-G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong","dien-thu","chuan-ngon-ngu","pheu-chot","diem-cham-1000","hanh-lang","ra-soat-loi","ra-soat-phap-ly","bang-chung","ho-so-hop-dong","ky-ket","so-tay-admin","tin-noi-bo"];
+G.MAN_NGHE=["tang-quyen","vong-doi-tk","hang-tai-lieu","dau-mat","dong-chay","bo-test","kpi-100","ma-tran","referral","chan-dung-kh","do-luong-kh","hang-vip","cay-tien","nhan-su-tt","phuong-phap","hoso-vip","chuyen-doi","ai-cham","van-tay","chieu-sau","ma-tran-bang","ban-do-chien-luoc","the-diem-can-bang","tuyen","tu-van-hanh","quy-trinh-toan-he","kiem-theo-vai","soat-day-du","cai-tien","luat-lam-viec","nam-dau","dao-tao-dh","so-tay-van-hanh","tang34","tang5-pro","ban-ve","ban-coach","ban-tu-van","hoat-dong","dien-thu","chuan-ngon-ngu","pheu-chot","diem-cham-1000","hanh-lang","ra-soat-loi","ra-soat-phap-ly","bang-chung","ho-so-hop-dong","ky-ket","so-tay-admin","tin-noi-bo","tu-dong"];
 })();
 
 /* ═════════ src/data.core.js ═════════ */
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.70',
+  version: '9.71',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -700,6 +700,7 @@ G.NAV = [
        giới chủ hệ đặt: mười hai vị trí nghề đọc được, còn phụ huynh,
        học viên và cộng tác viên thì không. Khoá ở tầng dữ liệu chứ
        không ở tầng màn hình — kho nằm trong gói nghề. */
+    {v:'tu-dong',     t:'Tự động hoá — đo trên hệ đang chạy', h:'34 việc · tỉ lệ đo được chứ không khai · 5 việc máy không được nhận · 5 đường đi tiếp xếp theo gỡ được nhiều nhất', ic:'lightning', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'tin-noi-bo',  t:'Bảng tin nội bộ của đội ngũ', h:'5 ngăn theo phạm vi vai · vinh danh ghi nhận việc chứ không xếp hạng · trần 3 tin mỗi ngày · khách và CTV không đọc được', ic:'bell', star:1, perm:'nghe_chung', capMo:'nghe'},
     {v:'ky-ket',      t:'Hướng dẫn ký kết — ba luồng phát sinh', h:'Lao động · dịch vụ khách · tài chính · 7 cửa trước khi đặt bút · cây chọn hợp đồng · 8 việc cấm', ic:'check', star:1, perm:'pro_coach', capMo:'nghe'},
     {v:'ho-so-hop-dong', t:'Bộ hồ sơ hợp đồng và vận hành', h:'16 hợp đồng · 25 điều khoản nền · 6 điều khoản đặc thù đối chiếu ngược · công thức lương máy tự đọc · 3 cấp chữ ký', ic:'book', star:1, perm:'pro_coach', capMo:'nghe'},
@@ -1224,6 +1225,7 @@ G.ITEM_EN = {
   'ra-soat-phap-ly':['Legal review — 64 findings','8 groups · 20 critical findings each checked against the running function · 2 new statutes · 4 places the document and the app disagree'],
   'bang-chung':['Electronic evidence standard','13 operations x 6 properties · the machine reads the real log and counts · 3 ways evidence loses its value · the 5 nearest fixes'],
   'so-tay-admin':['Super Admin handbook — the left rail from A to Z','Daily/weekly/monthly/quarterly rhythm · the first 7 days · the 12 screens where one wrong click costs most · the full screen list generated from the running app · what one permission actually opens'],
+  'tu-dong':['Automation — measured on the running system','34 activities · a ratio measured, not declared · 5 things the machine may never take · 5 next steps ranked by what they unblock'],
   'tin-noi-bo':['Internal team board','5 lanes scoped by role · recognition records the work, it never ranks people · a hard cap of 3 pushes a day · clients and ambassadors cannot read a single line'],
   'ky-ket':['Signing guide — three streams of engagement','Employment · client service · finance · 7 gates before the pen touches paper · a contract decision tree · 8 things never to do'],
   'ho-so-hop-dong':['Contract and operations file set','16 contracts · 25 base clauses · 6 special clauses checked in reverse · a pay formula the machine reads itself · 3 signature tiers'],
@@ -3712,6 +3714,11 @@ G.THUOC_CAP_PHEP = [
      khách hàng và cộng tác viên KHÔNG được nhận. Ở gói NGHỀ. */
   'BTN_LOI','BTN_NGAN','BTN_NGAN_LUAT','BTN_VINHDANH','BTN_VINHDANH_LUAT',
   'BTN_TRAN','BTN_CAM','BTN_LUAT',
+  /* Tự động hoá ở tầng hệ thống — nối vào DKH_ của bản 9.61. Kho nêu
+     tên công cụ, tên hàm và năm chỗ máy không được nhận; đó là bản đồ
+     ruột của hệ, nên khoá ở gói NGHỀ. */
+  'TDH_LOI','TDH_HE','TDH_HE_LUAT','TDH_CHAN','TDH_CHAN_LUAT',
+  'TDH_DUONG','TDH_DUONG_LUAT','TDH_LUAT',
   'HT_DICH','HT_TANG','HT_TANG_LUAT','HT_SAUT5','HT_KC','HT_NOI',
   'HT_NOI_LUAT','HT_LECH','HT_LUAT','HN_QUYET','HN_QUYET_LUAT','HN_DONGY','HN_SLA',
   'HN_MAUTHUAN','HN_CAY','HN_TUPHAT','HN_YEU','HN_LUAT','HN_TUCAM_THEM',
