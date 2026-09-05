@@ -20,141 +20,15 @@
    khai báo hàm ra phạm vi chung, đúng như cách Apps Script nạp các tệp .gs. */
 const path = require('path');
 process.chdir(path.join(__dirname, '..'));
-const fs = require('fs'), crypto = require('crypto');
-const props={}, cache={};
-let thu=[];
-global.PropertiesService={getScriptProperties:()=>({
-  getProperty:k=>props[k]===undefined?null:props[k], setProperty:(k,v)=>{props[k]=String(v);}})};
-global.CacheService={getScriptCache:()=>({
-  get:k=>cache[k]===undefined?null:cache[k], put:(k,v)=>{cache[k]=String(v);}, remove:k=>{delete cache[k];}})};
-global.Utilities={
-  getUuid:()=>crypto.randomUUID(),
-  DigestAlgorithm:{SHA_256:'SHA-256'}, Charset:{UTF_8:'utf8'},
-  computeDigest:(a,s)=>Array.from(crypto.createHash('sha256').update(s,'utf8').digest())
-    .map(b=>b>127?b-256:b),
-  base64Encode:by=>Buffer.from(by.map?by.map(x=>x<0?x+256:x):by).toString('base64'),
-  base64Decode:t2=>Array.from(Buffer.from(t2,'base64')).map(b=>b>127?b-256:b),
-  newBlob:(by,kieu,ten)=>({_by:by,_kieu:kieu,getName:()=>ten}),
-  formatDate:(d,tz,f)=>new Date(d).toISOString()
-};
-global.MailApp={sendEmail:(to,cd,than)=>{thu.push({to,cd,than});}};
-global.Logger={log:()=>{}};
-global.ContentService={createTextOutput:t=>({setMimeType:()=>({_:t}),_:t}),MimeType:{JSON:'json'}};
-/* Drive giả lập: bốn thư mục có thật, và một cái CỐ TÌNH chỉ cho xem —
-   để bộ kiểm chứng minh nó phát hiện được thư mục không ghi được, chứ không
-   phải chỉ báo xanh vì mọi thứ đều dễ. */
-const thuMuc = {
-  '1pvXH45JvXXPOW9V6ObB5CR87r7gxH0fU': {ten:'Dữ Liệu GITA365', ghiDuoc:true, tep:[]},
-  '1jVOnIH7286glI95fC4aqfXApecxEj7Xz': {ten:'Mã máy chủ GITA365', ghiDuoc:true, tep:[]}
-};
-global.MimeType={PLAIN_TEXT:'text/plain'};
-/* Khoá ghi giả — ĐẾM lượt lấy khoá, để phép đo chứng minh được rằng
-   thêm dòng và xoá dòng THẬT SỰ đi qua khoá, chứ không chỉ khai là có. */
-global.GIA_LAP_KHOA = {lay:0, tra:0, hong:false};
-global.LockService={getScriptLock:()=>({
-  waitLock:()=>{ if(global.GIA_LAP_KHOA.hong) throw new Error('hết giờ chờ khoá');
-                 global.GIA_LAP_KHOA.lay++; return true; },
-  releaseLock:()=>{ global.GIA_LAP_KHOA.tra++; }})};
-global.HtmlService={
-  XFrameOptionsMode:{ALLOWALL:'ALLOWALL'},
-  createHtmlOutput:h2=>({_:h2, setTitle(){return this;}, addMetaTag(){return this;},
-    setXFrameOptionsMode(){return this;}})
-};
-global.GIA_LAP_TRIGGER=[];
-global.ScriptApp={
-  getService:()=>({getUrl:()=>'https://script.google.com/macros/s/GIA-LAP/exec'}),
-  getProjectTriggers:()=>global.GIA_LAP_TRIGGER.slice(),
-  deleteTrigger:t=>{const i=global.GIA_LAP_TRIGGER.indexOf(t); if(i>=0) global.GIA_LAP_TRIGGER.splice(i,1);},
-  newTrigger:fn=>({timeBased:()=>({atHour:()=>({everyDays:()=>({
-    create:()=>{const t={getHandlerFunction:()=>fn}; global.GIA_LAP_TRIGGER.push(t); return t;}})})})})
-};
-global.Session={getEffectiveUser:()=>({getEmail:()=>'typhuquanggita@gmail.com'})};
-function moThuMuc(id){ return global.DriveApp.getFolderById(id); }
-global.DriveApp={
-  getFolderById:id=>{
-    const t=thuMuc[id];
-    if(!t) throw new Error('Không tìm thấy thư mục: '+id);
-    return {
-      getName:()=>t.ten,
-      addFile:()=>{},
-      getFilesByName:ten=>{
-        const f=(t.kho||{})[ten];
-        let da=false;
-        return {hasNext:()=>!!f&&!da, next:()=>{da=true; return {
-          getName:()=>ten,
-          getBlob:()=>({getDataAsString:()=>f, getBytes:()=>Array.from(Buffer.from(f))})
-        };}};
-      },
-      createFile:(a1,noi)=>{
-        if(!t.ghiDuoc) throw new Error('Không có quyền ghi');
-        const ten=typeof a1==='string'?a1:(a1&&a1.getName?a1.getName():'blob');
-        const f={ten, bo:false, id:'DRV-'+(t.tep.length+1)};
-        t.tep.push(f);
-        return {setTrashed:v=>{f.bo=v;}, getName:()=>ten, getId:()=>f.id,
-                setDescription:()=>{}};
-      },
-      getFoldersByName:n2=>{
-        t.con=t.con||{};
-        let da=false;
-        return {hasNext:()=>!!t.con[n2]&&!da, next:()=>{da=true; return moThuMuc(t.con[n2]);}};
-      },
-      createFolder:n2=>{
-        t.con=t.con||{};
-        const idCon='SUB-'+n2+'-'+Math.random().toString(36).slice(2,7);
-        thuMuc[idCon]={ten:n2, ghiDuoc:true, tep:[]};
-        t.con[n2]=idCon;
-        return moThuMuc(idCon);
-      }
-    };
-  },
-  getFileById:()=>({})
-};
-global.__thuMuc=thuMuc;
+const fs = require('fs');
 
-/* Bảng tính giả: mỗi trang là một mảng hàng */
-const trang={};
-function moTrang(ten){
-  if(!trang[ten]) trang[ten]=[];
-  const t=trang[ten];
-  return {
-    getName:()=>ten,
-    appendRow:h=>{t.push(h.slice());},
-    /* Sheets đánh số dòng từ 1. Xoá dòng 5 làm dòng 6 thành dòng 5 —
-       bộ giả lập phải cư xử ĐÚNG như thế, không thì phép đo "xoá từ
-       dưới lên" của Store không chứng minh được gì. */
-    deleteRow:d=>{t.splice(d-1,1);},
-    deleteRows:(d,n)=>{t.splice(d-1,n||1);},
-    getDataRange:()=>({getValues:()=>t.map(r=>r.slice())}),
-    getLastRow:()=>t.length,
-    getLastColumn:()=>t.length?t[0].length:0,
-    setFrozenRows:()=>{},
-    getRange:(d,c,nr,nc)=>({
-      getValues:()=>{
-        const ra=[];
-        for(let i=0;i<(nr||1);i++){
-          const h=t[d-1+i]||[];
-          ra.push(h.slice(c-1, c-1+(nc||h.length)));
-        }
-        return ra;
-      },
-      setValues:v=>{
-        for(let i=0;i<v.length;i++){
-          const h=t[d-1+i]||(t[d-1+i]=[]);
-          for(let j=0;j<v[i].length;j++) h[c-1+j]=v[i][j];
-        }
-      }
-    })
-  };
-}
-const so={
-  getId:()=>'SO-GIA-LAP',
-  getSheetByName:n=>trang[n]?moTrang(n):null,
-  insertSheet:n=>{trang[n]=[];return moTrang(n);},
-  getSheets:()=>Object.keys(trang).map(moTrang),
-  deleteSheet:s=>{delete trang[s.getName()];}
-};
-global.SpreadsheetApp={create:()=>so, openById:()=>so};
-
+/* BẢN GIẢ LẬP APPS SCRIPT NAY Ở MỘT CHỖ: tools/gia-lap-apps-script.js.
+   Trước 9.80 nó nằm ngay trong tệp này, và lúc cần bộ đo tải thì đường
+   dễ nhất là chép sang tệp thứ hai — hai bản giả lập rồi sẽ lệch, và
+   ngày chúng lệch thì bộ thử nói máy chủ đúng còn bộ đo nói máy chủ
+   sai, không ai biết bản nào đang nói thật. */
+const gl = require('./gia-lap-apps-script')();
+const props = gl.props, trang = gl.trang;
 /* Nạp mã máy chủ */
 /* Chạy được trên cả hai bản: bảy tệp rời, hoặc tệp gộp dán một lần.
    node tools/thu-may-chu.js --gop  → thử bản gộp.
@@ -178,13 +52,14 @@ if (process.argv.indexOf('--gop') >= 0) {
 
      Sửa bằng cách thôi khai tay: thêm tệp máy chủ ngày mai thì bộ
      thử tự nạp. GITA_Nen.gs đứng đầu vì các tệp khác dựa vào nền. */
-  const dsGs = ['GITA_Nen.gs'].concat(
-    fs.readdirSync('server').filter(f =>
-      /\.gs$/.test(f) && f !== 'GITA_Nen.gs' && f !== 'GITA365_TATCA.gs').sort());
-  for (const f of dsGs) eval(fs.readFileSync('server/' + f, 'utf8'));
+  for (const f of gl.dsGs()) eval(fs.readFileSync('server/' + f, 'utf8'));
 }
 
-const H={thu:()=>thu, xoaThu:()=>{thu=[];}, props, trang};
+/* Đi qua mô-đun, KHÔNG giữ một tham chiếu riêng: bản đầu của lượt tách
+   này gán `let thu = gl.thu()` rồi xoaThu làm `thu=[]` — gán lại biến
+   trong tệp này, còn MailApp giả vẫn đẩy thư vào mảng cũ bên kia. Từ
+   lượt xoá đầu tiên, mọi phép đo về thư đọc một mảng đã đứt liên lạc. */
+const H={thu:()=>gl.thu(), xoaThu:()=>gl.xoaThu(), props, trang};
 
 let loi=0;
 const bao=(ok,ten,ct)=>{ if(!ok)loi++; console.log((ok?'  ✓ ':'  ✗ ')+ten+(ct?' — '+ct:'')); };
