@@ -153,5 +153,14 @@ kiểm câm trong kho này.
 - Trỏ DNS cho `gita.edu.vn`
 - Điền pháp nhân vào `LICENSE` và `NOTICE`
 - Điền hệ số lương ở `CV_HANG[].heSoGhiChu`
-- Điền học phí ở `G.HP_TANG[].gia`
 - Đặt ngưỡng chuyển tuyến y tế / tâm lý
+
+## Đã chốt, không hỏi lại
+
+- **Giá gói theo tầng** (9.94) — `G.HP_TANG[].gia` là bản GỐC; máy chủ
+  giữ bản chép ở `may-chu/tai-chinh.js → GIA_TANG`, và bộ kiểm mục 71
+  đối chiếu hai bản mỗi lần chạy. Thang duyệt chi neo vào chính bảng
+  giá ấy, nên sửa giá là phải chốt lại thang.
+- **Chi từ 1,5 triệu trở lên** (9.92, 9.94) — phải xin duyệt VÀ phải
+  vào báo cáo chi. Một ngưỡng, hai nghĩa vụ, cùng một hằng số
+  `TRAN_PHAI_DUYET`.

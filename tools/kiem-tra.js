@@ -9693,6 +9693,58 @@ const { chromium } = require(PW);
         /gitaXkMucCuaVai_\(hoSo\.role\)\.indexOf\('hoso'\) < 0/.test(nguon);
     }
 
+    /* ── GIÁ GÓI: KHO LÀ BẢN GỐC, MÁY CHỦ MỚI GIỮ BẢN CHÉP ──
+
+       Chủ hệ thống chốt bản 9.94: "bảng gói dịch vụ chốt giá theo tầng."
+       Bản gốc của giá nằm ở G.HP_TANG trong kho đã mã hoá. Máy chủ mới
+       không đọc được kho ấy nên phải giữ một bản chép ở
+       may-chu/tai-chinh.js → GIA_TANG.
+
+       TỚI BẢN 9.93 KHÔNG AI ĐỐI CHIẾU HAI BẢN NÀY. Chú giải ở tai-chinh.js
+       viết rằng "bộ kiểm phát hành đối chiếu hai bản mỗi lần chạy" —
+       câu ấy KHÔNG ĐÚNG, và một chú giải hứa một lớp bảo vệ không tồn
+       tại còn tệ hơn không có chú giải nào, vì nó làm người đọc thôi đi
+       tìm.
+
+       Giá lệch mà không ai biết thì hỏng ba chỗ cùng lúc, im lặng cả ba:
+         · lịch thu dựng ra số tiền sai
+         · hoa hồng tính trên giá gói sai
+         · thang duyệt chi neo vào giá cũ, mà soatNeoThang() vẫn báo khớp
+           — vì nó so thang với BẢN CHÉP, không so với bản gốc
+
+       Phép đo này đóng đúng chỗ ấy. */
+    {
+      const nguonTC = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'tai-chinh.js'), 'utf8');
+      const m = /export const GIA_TANG = (\{[\s\S]*?\});/.exec(nguonTC);
+      const banMayChu = m ? Function('return ' + m[1])() : null;
+      const banKho = await p.evaluate(() => {
+        const o = {};
+        (window.G.HP_TANG || []).forEach(t => {
+          const n = Number(String(t.tang).replace(/[^0-9]/g, ''));
+          if (n) o[n] = t.gia;
+        });
+        return o;
+      });
+      ra.giaHaiBanKhop = !!banMayChu && !!Object.keys(banKho).length &&
+        Object.keys(banKho).every(k => Number(banMayChu[k]) === Number(banKho[k])) &&
+        Object.keys(banMayChu).length === Object.keys(banKho).length;
+      ra.giaBanKho = banKho;
+      ra.giaBanMayChu = banMayChu;
+
+      /* Và thang duyệt chi phải neo đúng vào chính bảng giá ấy. Neo vào
+         bản chép thì phép soi neo chỉ chứng minh bản chép tự nhất quán
+         với chính nó. */
+      const nguonCT = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'chi-tieu.js'), 'utf8');
+      const neoN = {};
+      for (const mm of nguonCT.matchAll(/ma: '(N[35]|N4)',[\s\S]{0,200}?tu: (\d+)/g))
+        neoN[mm[1]] = Number(mm[2]);
+      ra.thangNeoDungGiaKho = neoN.N3 === banKho[3] && neoN.N4 === banKho[4] &&
+        neoN.N5 === banKho[5];
+      ra.thangNeo = neoN;
+    }
+
     /* ── HỎI THẲNG TỆP .enc ──
        Đây là phép đo duy nhất trả lời được câu "cái gì thật sự rời máy
        chủ". Mọi phép đo trên G.FAMILIES đều đo sau khi các gói đã nối
@@ -9734,6 +9786,13 @@ const { chromium } = require(PW);
       'AI ĐƯỢC XEM HỒ SƠ KHÁCH HÀNG — VÀ CHỖ CHẶN NẰM Ở KHO CHỨ KHÔNG Ở MÀN HÌNH. Chủ hệ chốt: Tư vấn và Coach xem tầng 1-2-3; tầng 4-5 từ Coach lên tới Super Admin; Giáo viên, ban tài chính, ban sản phẩm không xem; và ai cũng phải được Super Admin cấp quyền. Luật này KHÔNG viết được bằng bảng bậc sẵn có, và chỗ gãy nằm đúng ở người vừa bị gạch tên: Coach lv 7 · GIÁO VIÊN lv 8 · Tư vấn lv 11. Mở bậc tới 11 cho Tư vấn là Giáo viên lọt vào giữa. Bậc là một cái thang, luật này là một danh sách có lỗ thủng — nên nó khai thẳng từng vai, theo lối DANH SÁCH TRẮNG: vai nào không có tên là không xem được, kể cả vai chưa tồn tại hôm nay. Kê danh sách cấm thì mỗi vai mới sinh ra là mặc định nhìn thấy, và cái mặc định ấy không ai nhớ đi sửa. NHƯNG PHÉP ĐO QUAN TRỌNG NHẤT Ở ĐÂY KHÔNG PHẢI CÁI CỔNG: tới bản 9.46, FAMILIES — tên nhà, tên học viên, TÊN BỐ MẸ, tên Coach, băng KPI của cả mười nhà năm tầng — nằm trong gói NGHỀ, mà máy chủ cấp gói NGHỀ cho MỌI vai tới bậc 12. Nghĩa là Giáo viên, Mentor, Chuyên gia đánh giá và Phân tích dữ liệu đều đã có sẵn hồ sơ tầng 4-5 nằm trong máy mình. Lọc trên màn hình không chữa được: gửi xuống rồi thì mở công cụ nhà phát triển là đọc được hết — kho này đã mắc đúng lớp lỗi ấy ba lần, KICHBAN 8.9, CV_MUC 9.7, mười bảy kho nghề 9.8. Nên gói NGHỀ nay cắt còn tầng một tới ba, và tầng 4-5 sang GÓI NGHỀ CAO — gói thứ tám, cấp tới đúng bậc của Coach. Vì sao phải có gói thứ tám thay vì bỏ hẳn bốn bản ghi tầng cao: kho-goc/ nằm trong .gitignore, nên bảy tệp .enc đã phát hành LÀ BẢN LƯU DUY NHẤT của nội dung — cắt bốn bản ghi khỏi mọi gói là xoá luôn bản lưu duy nhất của chúng, và ở bản 9.6 chính mấy tệp ấy đã cứu được cả kho một lần. Nhưng gói chỉ gánh được MỘT trong hai luật: một gói đã cấp thì không gọi ngược về được, nên nó thi hành được TRẦN VAI mà không thi hành được GIẤY PHÉP THU HỒI ĐƯỢC — gỡ giấy phép hôm nay không xoá được bản sao nằm trong máy người ta từ hôm qua. Vì thế hồ sơ MẪU trong kho đi theo gói, còn hồ sơ khách hàng THẬT đi qua một lượt hỏi máy chủ có kiểm giấy phép và ghi sổ từng lượt; cái giá là mất mạng thì không mở được, và nó đáng. Hai lớp không được gộp: đủ điều kiện KHÁC được xem, và hai câu từ chối phải nói khác nhau vì chúng dẫn tới hai việc khác nhau. Giấy phép có hạn và hết hạn thì TỰ TẮT — một quyền chỉ mất khi có người chủ động gỡ là một quyền sẽ ở lại mãi; nó cũng không lưu xuống máy, vì một giấy phép đã thu hồi mà còn nằm trong máy thì người bị thu vẫn mở được tới lúc tải lại trang. Trần chặn cả Super Admin: cấp cho Giáo viên là máy chủ từ chối, kể cả khi người bấm nút là chính chủ hệ — trần mà người cao nhất phá được thì nó là một lời khuyên. Máy chủ giữ bản chép của trần vì nó không đọc được kho đã mã hoá, và phép đo này đối chiếu hai bản TỪNG CHỮ mỗi lần chạy: lệch một vai thì bản CHẶN mới là bản có hiệu lực, và người dùng bị từ chối mà màn hình không giải thích được vì sao. Hồ sơ nhà của CHÍNH mình không đi qua cổng này — cổng trả lời câu "được xem nhà KHÁC không", còn hồ sơ nhà mình đã có quyền riêng; lọc nhầm chỗ ấy thì phụ huynh mất luôn hồ sơ của chính họ, vì R13 chưa từng có tên trong trần nào',
       doXK.length ? 'phép đo hỏng: ' + doXK.join(' · ')
         : 'Tư vấn 1-3 · Coach 1-5 · Giáo viên 0 tầng · gói nghề hết tầng 4-5 · giấy phép hết hạn tự tắt · trần chặn cả Super Admin · hai bản trần khớp');
+
+    bao(ra.giaHaiBanKhop && ra.thangNeoDungGiaKho,
+      'BẢNG GÓI DỊCH VỤ CHỐT GIÁ THEO TẦNG — VÀ BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP BẢN GỐC TRONG KHO. Chủ hệ chốt ở 9.94: giá chốt theo tầng. Bản gốc nằm ở G.HP_TANG trong kho đã mã hoá; máy chủ mới không đọc được kho ấy nên giữ một bản chép ở may-chu/tai-chinh.js → GIA_TANG. Tới bản 9.93 KHÔNG AI ĐỐI CHIẾU HAI BẢN, trong khi chú giải ở chính tệp ấy lại viết rằng bộ kiểm đối chiếu mỗi lần chạy — một chú giải hứa một lớp bảo vệ không tồn tại thì tệ hơn không có chú giải nào, vì nó làm người đọc thôi đi tìm. Giá lệch thì hỏng ba chỗ cùng lúc và im lặng cả ba: lịch thu dựng ra số tiền sai, hoa hồng tính trên giá gói sai, và THANG DUYỆT CHI neo vào giá cũ trong khi soatNeoThang() vẫn báo khớp — vì nó so thang với bản chép chứ không so với bản gốc. Phép đo này so cả hai chặng: kho ↔ máy chủ, và kho ↔ ba nấc N3 N4 N5 của thang duyệt chi',
+      ra.giaHaiBanKhop
+        ? 'giá khớp cả hai chặng · thang neo N3 ' + (ra.thangNeo || {}).N3 +
+          ' · N4 ' + (ra.thangNeo || {}).N4 + ' · N5 ' + (ra.thangNeo || {}).N5
+        : 'kho ' + JSON.stringify(ra.giaBanKho) + ' · máy chủ ' + JSON.stringify(ra.giaBanMayChu));
   }
 
   /* ══════════════════ 73. SAVE() CÓ GIỮ THẬT KHÔNG ══════════════════

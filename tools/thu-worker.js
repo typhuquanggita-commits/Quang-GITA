@@ -1719,6 +1719,51 @@ bao(!(await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn',
   id:nho.than.id})).than.ok,
   'khoản đã tự ghi thì không duyệt lại được — nó đã ở trong sổ rồi');
 
+/* ── BÁO CÁO CHI · CHỐT 9.94 ──
+
+   "Chi phí từ 1,5 triệu trở lên phải báo cáo." Duyệt là một cái CỔNG
+   đứng trước và chặn; báo cáo là một tấm GƯƠNG đứng sau và cho nhìn
+   thấy cả dòng tiền. Chỉ có cổng thì mỗi khoản đều đúng luật lúc nó đi
+   qua, mà không ai thấy hình dạng của cả tháng. */
+bao(!(await goi({fn:'baoCaoChi', token:tkTC, u:'truongcoach@gita365.vn',
+  loai:'thang', moc:'2026-09'})).than.ok,
+  'R05 không xem được báo cáo chi — báo cáo này gộp cả dòng tiền ra của Học viện');
+
+const bcT9 = await goi({fn:'baoCaoChi', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'thang', moc:'2026-09'});
+/* Bốn khoản: cpTuDuyet 2tr và cpTo 60tr ghi không kèm ngayChi nên mang
+   mốc hôm nay; to1 và to2 ghi thẳng vào đầu tháng 9. */
+bao(bcT9.than.ok && bcT9.than.tuNguong === 1500000 && bcT9.than.so === 4 &&
+    bcT9.than.tongDaDuyet === 60000000,
+  'BÁO CÁO CHI GOM ĐÚNG KHOẢN TỪ 1,5 TRIỆU TRỞ LÊN — ngưỡng báo cáo đúng bằng ngưỡng phải duyệt',
+  'cái phải xin phép trước khi tiêu là cái phải trưng ra sau khi tiêu · ' +
+    bcT9.than.so + ' khoản trong tháng 9');
+
+/* Báo cáo không phải MỘT CON SỐ TỔNG — bản kế toán đã có con số ấy.
+   Cái người đọc cần là DẤU VẾT của từng khoản. */
+const k28 = bcT9.than.khoan.find(x => x.id === to2.than.id);
+bao(k28 && k28.nguoiDeXuat === 'truongcoach@gita365.vn' && k28.canKy === 2 &&
+    k28.coHoaDon === true && k28.nac === 'N5',
+  'mỗi khoản mang theo DẤU VẾT — ai đề xuất, cần mấy chữ ký, chứng từ gì, nấc nào',
+  'một con số tổng thì bản kế toán đã có rồi');
+
+/* DẤU HIỆU CHIA NHỎ PHẢI HIỆN LÊN MẶT BÁO CÁO, không nằm trong một cột
+   người đọc phải tự suy ra. */
+bao(bcT9.than.canHoi.biDayNacViGopDon.length === 1 &&
+    bcT9.than.canHoi.biDayNacViGopDon[0].id === to2.than.id,
+  'VÀ KHOẢN BỊ ĐẨY NẤC VÌ CỘNG DỒN ĐƯỢC NÊU LÊN ĐẦU — đó là dấu hiệu chia nhỏ',
+  'chôn nó trong danh sách là để người đọc tự tìm, mà người đọc một báo cáo dài thì không tìm');
+
+bao(bcT9.than.canHoi.lotLoiTuGhi.length === 0,
+  'KHÔNG KHOẢN NÀO TỪ 1,5 TRIỆU LỌT QUA LỐI TỰ GHI — nếu có thì cái ngưỡng đã thủng',
+  'phép này canh chính cái cổng, bằng cách nhìn từ phía sau nó');
+
+bao(bcT9.than.canHoi.conTreoChuaDuyet.length === 3 &&
+    bcT9.than.tongConTreo === 58000000,
+  'và khoản CÒN TREO chưa ai duyệt được nêu riêng, kèm số tiền',
+  bcT9.than.canHoi.conTreoChuaDuyet.length + ' khoản · ' +
+    dinhDangVN(bcT9.than.tongConTreo));
+
 /* ── 2 · MIỄN GIẢM ── */
 const kyBC2 = 'KT-BC02';
 bao(!(await goi({fn:'deXuatMienGiam', token:tkPh2, u:'phuhuynh@gita365.vn',

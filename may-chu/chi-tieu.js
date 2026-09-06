@@ -29,7 +29,7 @@
 
 import { Kho, tokenMoi } from './nen.js';
 import { GIA_TANG } from './tai-chinh.js';
-import { ghiDieuChinh } from './bao-cao.js';
+import { ghiDieuChinh, dungKy } from './bao-cao.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
              R09:9,R10:10,R11:11,R12:12,R13:13,R14:14,R15:15};
@@ -613,6 +613,122 @@ export function thangDuyetChi() {
     soNguoiDuyet: n.soDuyet, capDuyet: 'R01–R03',
     canHoaDon: n.canHoaDon, soBaoGia: n.soBaoGia, canHopDong: n.canHopDong
   }));
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BÁO CÁO CHI — CHỐT CỦA CHỦ HỆ THỐNG BẢN 9.94
+
+   "Chi phí từ 1,5 triệu trở lên phải báo cáo."
+
+   ══ DUYỆT VÀ BÁO CÁO LÀ HAI VIỆC KHÁC NHAU ══
+
+   Duyệt là một cái CỔNG: nó đứng trước, và nó chặn. Báo cáo là một tấm
+   GƯƠNG: nó đứng sau, và nó cho người ta nhìn thấy tất cả những gì đã
+   đi qua cổng.
+
+   Chỉ có cổng mà không có gương thì mỗi khoản đều đúng luật lúc nó đi
+   qua, mà không ai nhìn thấy hình dạng của cả dòng tiền. Người duyệt
+   khoản thứ mười bảy trong tháng không biết đó là khoản thứ mười bảy.
+
+   ══ BÁO CÁO NÀY KHÔNG PHẢI MỘT CON SỐ TỔNG ══
+
+   Một con số tổng thì bản kế toán đã có. Cái người đọc báo cáo chi cần
+   là DẤU VẾT: mỗi khoản ai đề xuất, ai ký, ký mấy chữ, chứng từ đủ
+   chưa, có bị đẩy nấc vì chia nhỏ không.
+
+   Nên nó trả về TỪNG KHOẢN, và nêu lên đầu bốn thứ đáng hỏi:
+
+     · khoản đi lối tự ghi mà lẽ ra phải duyệt (không được có cái nào)
+     · khoản còn treo chưa ai duyệt
+     · khoản thiếu hoá đơn ở nấc đòi hoá đơn
+     · khoản bị ĐẨY NẤC vì cộng dồn — dấu hiệu chia nhỏ
+   ═══════════════════════════════════════════════════════════════ */
+export async function baoCaoChi(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, code: 'NOPERM',
+    error: 'Chỉ R01–R03 xem được báo cáo chi.'};
+
+  const k = dungKy(String(y.loai || 'thang'),
+    String(y.moc || new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10)));
+  if (!k) return {ok: false, error: 'Kỳ báo cáo không hợp lệ.'};
+
+  /* NGƯỠNG BÁO CÁO ĐÚNG BẰNG NGƯỠNG PHẢI DUYỆT. Hai con số ấy là một:
+     cái phải xin phép trước khi tiêu là cái phải trưng ra sau khi tiêu.
+     Để chúng thành hai hằng số riêng là để chúng có ngày lệch nhau. */
+  const r = await db.prepare(
+    'SELECT * FROM chiPhi WHERE soTien >= ? AND ngayChi >= ? AND ngayChi <= ? ' +
+    'ORDER BY soTien DESC'
+  ).bind(TRAN_PHAI_DUYET, k.tuLuc, k.denLuc).all();
+  const ds = r.results || [];
+
+  const khoan = ds.map(x => {
+    const nac = NAC_THANG.find(n => n.ma === x.nac) || nacCua(Number(x.soTien));
+    const kyDu = (x.nguoiDuyet ? 1 : 0) + (x.nguoiDuyet2 ? 1 : 0);
+    return {
+      id: x.id, ngayChi: x.ngayChi, khoanMuc: x.khoanMuc,
+      tenKhoanMuc: KHOAN_MUC[x.khoanMuc] || x.khoanMuc,
+      soTien: Number(x.soTien), nac: x.nac, tenNac: nac.ten,
+      dienGiai: x.dienGiai, nhaCungCap: x.nhaCungCap || undefined,
+      hinhThuc: x.hinhThuc, trangThai: x.trangThai,
+      nguoiDeXuat: x.nguoiDeXuat,
+      nguoiDuyet: x.nguoiDuyet || undefined,
+      nguoiDuyet2: x.nguoiDuyet2 || undefined,
+      daKy: kyDu, canKy: nac.soDuyet,
+      coHoaDon: !!Number(x.coHoaDon), maHoaDon: x.maHoaDon || undefined,
+      soBaoGia: Number(x.soBaoGia), soHopDong: x.soHopDong || undefined,
+      /* Khoản có nấc CAO HƠN nấc của riêng số tiền nó = đã bị đẩy lên vì
+         cộng dồn bảy ngày. Đây là dấu hiệu chia nhỏ, và nó phải hiện
+         lên mặt báo cáo chứ không nằm trong một cột người ta phải tự
+         suy ra. */
+      biDayNac: NAC_THANG.indexOf(nac) >
+                NAC_THANG.indexOf(nacCua(Number(x.soTien))) || undefined
+    };
+  });
+
+  const daDuyet = khoan.filter(x => x.trangThai === 'daDuyet');
+  const theoMuc = {};
+  for (const x of daDuyet) {
+    const m = theoMuc[x.khoanMuc] || (theoMuc[x.khoanMuc] =
+      {khoanMuc: x.khoanMuc, ten: x.tenKhoanMuc, so: 0, tien: 0});
+    m.so++; m.tien += x.soTien;
+  }
+
+  /* ── BỐN THỨ ĐÁNG HỎI, NÊU LÊN ĐẦU ──
+     Chôn chúng trong danh sách là để người đọc tự tìm, mà người đọc
+     một báo cáo dài thì không tìm. */
+  const canHoi = {
+    lotLoiTuGhi: khoan.filter(x => ds.find(d => d.id === x.id && Number(d.tuGhi))),
+    conTreoChuaDuyet: khoan.filter(x => x.trangThai === 'choDuyet'),
+    thieuHoaDon: daDuyet.filter(x => !x.coHoaDon &&
+      (NAC_THANG.find(n => n.ma === x.nac) || {}).canHoaDon),
+    biDayNacViGopDon: khoan.filter(x => x.biDayNac)
+  };
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'BAOCAO_CHI',
+    doiTuong: k.ky, chiTiet: khoan.length + ' khoản từ ' + dinhDang(TRAN_PHAI_DUYET)});
+
+  return {ok: true, ky: k.ky, loai: k.loai, tuNgay: k.tuNgay, denNgay: k.denNgay,
+    tuNguong: TRAN_PHAI_DUYET,
+    so: khoan.length,
+    tongDaDuyet: daDuyet.reduce((a, x) => a + x.soTien, 0),
+    tongConTreo: canHoi.conTreoChuaDuyet.reduce((a, x) => a + x.soTien, 0),
+    theoKhoanMuc: Object.values(theoMuc).sort((a, b) => b.tien - a.tien),
+    theoNac: NAC_THANG.filter(n => n.soDuyet > 0).map(n => {
+      const cua = daDuyet.filter(x => x.nac === n.ma);
+      return {nac: n.ma, ten: n.ten, so: cua.length,
+        tien: cua.reduce((a, x) => a + x.soTien, 0)};
+    }),
+    canHoi: {
+      sach: !canHoi.lotLoiTuGhi.length && !canHoi.thieuHoaDon.length,
+      lotLoiTuGhi: canHoi.lotLoiTuGhi,
+      conTreoChuaDuyet: canHoi.conTreoChuaDuyet,
+      thieuHoaDon: canHoi.thieuHoaDon,
+      biDayNacViGopDon: canHoi.biDayNacViGopDon
+    },
+    khoan,
+    vi: 'Chốt của chủ hệ thống: chi phí TỪ ' + dinhDang(TRAN_PHAI_DUYET) +
+        ' TRỞ LÊN phải báo cáo. Ngưỡng báo cáo đúng bằng ngưỡng phải duyệt — ' +
+        'cái phải xin phép trước khi tiêu là cái phải trưng ra sau khi tiêu.'};
 }
 
 export async function xemThangDuyetChi(y, env, db, hoSo) {
