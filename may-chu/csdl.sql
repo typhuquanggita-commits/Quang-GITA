@@ -300,6 +300,38 @@ CREATE TABLE IF NOT EXISTS caiDat (
 );
 
 -- ─────────────────────────────────────────────────────────────
+--  GIẤY PHÉP XEM HỒ SƠ KHÁCH HÀNG
+--
+--  Hồ sơ khách tầng 4-5 KHÔNG nằm trong gói nào gửi về máy. Một gói đã
+--  cấp thì không gọi ngược về được — gỡ giấy phép hôm nay không xoá
+--  được bản sao nằm trong máy người ta từ hôm qua. Nên hồ sơ thật đi
+--  qua MỘT cửa hỏi máy chủ, và cửa ấy đọc bảng này mỗi lượt.
+--
+--  THU HỒI LÀ ĐÁNH DẤU, KHÔNG XOÁ DÒNG. Xoá là xoá luôn bằng chứng đã
+--  từng cấp — đúng thứ cần trả lời khi có chuyện.
+--
+--  HẾT HẠN THÌ TỰ TẮT. Một quyền chỉ mất khi có người chủ động gỡ là
+--  một quyền sẽ ở lại mãi.
+-- ─────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS quyenXem (
+  id            TEXT PRIMARY KEY,
+  nguoiDuocCap  TEXT NOT NULL,      -- tên đăng nhập, đã hạ chữ thường
+  vai           TEXT NOT NULL,      -- vai lúc cấp; lúc DÙNG vẫn đọc lại vai thật
+  tangDuocXem   TEXT NOT NULL,      -- 'T4,T5'
+  nguoiCap      TEXT,
+  capLuc        TEXT,
+  hetHan        TEXT,               -- ISO; bắt buộc, không có giấy phép vô hạn
+  thuHoiLuc     TEXT,
+  thuHoiBoi     TEXT,
+  lyDo          TEXT
+);
+
+-- Tra giấy phép CÒN HIỆU LỰC của một người: lọc theo tên, rồi bỏ dòng
+-- đã thu hồi và dòng đã hết hạn. Chỉ mục theo tên là đủ — một người có
+-- rất ít dòng, kể cả sau nhiều năm cấp rồi thu hồi.
+CREATE INDEX IF NOT EXISTS ix_qx_nguoi ON quyenXem (nguoiDuocCap, capLuc DESC);
+
+-- ─────────────────────────────────────────────────────────────
 --  MÃ LẤY LẠI MẬT KHẨU
 --
 --  Nền cũ giữ mã này trong CacheService của Apps Script. Worker không

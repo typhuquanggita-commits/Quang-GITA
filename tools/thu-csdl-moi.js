@@ -182,6 +182,16 @@ const DUONG = [
    'SELECT cum, du, luc, boi FROM caiDat', [],
    'bảng có nhiều nhất BẢY dòng, một dòng mỗi cụm, và lượt nào cũng cần cả bảy'],
 
+  ['tra giấy phép xem hồ sơ khách còn hiệu lực',
+   'may-chu/quyen-xem.js · phepCua',
+   "SELECT * FROM quyenXem WHERE nguoiDuocCap = ? AND (thuHoiLuc IS NULL OR thuHoiLuc = '') " +
+   'AND hetHan > ? ORDER BY capLuc DESC LIMIT 1', ['coach@gita365.vn', new Date().toISOString()]],
+
+  ['tra phiếu thanh toán chưa dùng để nâng tầng',
+   'may-chu/quyen-xem.js · nangTang',
+   "SELECT * FROM thanhToan WHERE maKhachHang = ? AND tier = ? AND trangThai = 'daXacNhan' " +
+   'AND (daDung IS NULL OR daDung = 0) LIMIT 1', ['GITA-9001', 2]],
+
   ['tra mã lấy lại mật khẩu của một tài khoản',
    'may-chu/mat-khau.js · datLaiMatKhau',
    'SELECT * FROM maLayLai WHERE uid = ?', ['U-1']],

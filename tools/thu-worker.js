@@ -619,8 +619,156 @@ bao(!!db.prepare("SELECT 1 FROM audit WHERE viec = 'DON_DEP'").get(),
   'và ghi một dòng vào nhật ký SAU khi dọn',
   'một bộ dọn chạy im lặng là một bộ dọn không ai kiểm được');
 
-/* ═══════════════ 12 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
-console.log('\n12 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
+/* ═══════════════ 12 · QUYỀN XEM HỒ SƠ KHÁCH, VÀ NÂNG TẦNG ═══════════════ */
+console.log('\n12 · QUYỀN XEM HỒ SƠ KHÁCH');
+db.prepare("DELETE FROM chanNhip").run();
+await themNguoi('U-sa', 'superadmin@gita365.vn', 'MatKhauRieng2026!', 'R01', {portal:'admin'});
+await themNguoi('U-dg', 'danhgia@gita365.vn', 'MatKhauRieng2026!', 'R10', {portal:'coach'});
+const luc4 = new Date().toISOString();
+db.prepare("INSERT INTO students (id,hoTen,tier,phuHuynhId,createdAt) VALUES ('HV-T4','Nhà tầng 4',4,'U-x',?)").run(luc4);
+db.prepare("INSERT INTO students (id,hoTen,tier,phuHuynhId,createdAt) VALUES ('HV-T5','Nhà tầng 5',5,'U-y',?)").run(luc4);
+
+const tkSA = (await goi({fn:'dangNhap', u:'superadmin@gita365.vn', mk:'MatKhauRieng2026!'})).than.token;
+const tkGV = (await goi({fn:'dangNhap', u:'giaovien@gita365.vn', mk:'MatKhauRieng2026!'})).than.token;
+const tkDG = (await goi({fn:'dangNhap', u:'danhgia@gita365.vn', mk:'MatKhauRieng2026!'})).than.token;
+const tkCoach = (await goi({fn:'dangNhap', u:'coach@gita365.vn', mk:'MotChuoiKhacHan2026!'})).than.token;
+
+/* CHIỀU MỘT — TRẦN VAI, chặn thật kể cả với Super Admin. */
+const capGV = await goi({fn:'capQuyenXem', token:tkSA, u:'superadmin@gita365.vn',
+  cap:{nguoiDuocCap:'giaovien@gita365.vn', vai:'R08', tang:['T4'],
+       hetHan:'2027-01-01', lyDo:'thử'}});
+bao(!capGV.than.ok && (capGV.than.vuotTran||[]).length === 1,
+  'TRẦN CHẶN CẢ SUPER ADMIN — cấp tầng 4 cho Giáo viên là từ chối',
+  'trần mà người cao nhất phá được thì nó là một lời khuyên, không phải trần');
+
+bao(!(await goi({fn:'capQuyenXem', token:tkCoach, u:'coach@gita365.vn',
+  cap:{nguoiDuocCap:'giaovien@gita365.vn', vai:'R07', tang:['T4'],
+       hetHan:'2027-01-01', lyDo:'thử'}})).than.ok,
+  'chỉ Super Admin cấp được quyền — Coach bấm cũng không');
+
+bao(!(await goi({fn:'capQuyenXem', token:tkSA, u:'superadmin@gita365.vn',
+  cap:{nguoiDuocCap:'coach@gita365.vn', vai:'R07', tang:['T4','T5'], hetHan:'2027-01-01'}})).than.ok,
+  'KHÔNG CẤP QUYỀN MÀ KHÔNG CÓ LÝ DO');
+bao(!(await goi({fn:'capQuyenXem', token:tkSA, u:'superadmin@gita365.vn',
+  cap:{nguoiDuocCap:'coach@gita365.vn', vai:'R07', tang:['T4','T5'], lyDo:'x'}})).than.ok,
+  'và không cấp giấy phép KHÔNG HẠN — hôm giao là giao mãi');
+bao(!(await goi({fn:'capQuyenXem', token:tkSA, u:'superadmin@gita365.vn',
+  cap:{nguoiDuocCap:'coach@gita365.vn', vai:'R07', tang:['T4'],
+       hetHan:'2020-01-01', lyDo:'x'}})).than.ok,
+  'ngày hết hạn phải nằm ở tương lai');
+
+/* CHIỀU HAI — GIẤY PHÉP. Đủ trần mà chưa cấp thì vẫn là không. */
+const truocCap = await goi({fn:'xemKhachCao', token:tkCoach, u:'coach@gita365.vn'});
+bao(!truocCap.than.ok && /Chưa được Super Admin cấp quyền/.test(truocCap.than.error),
+  'Coach ĐỦ TRẦN tầng 4-5 nhưng CHƯA CÓ GIẤY PHÉP thì vẫn không xem được',
+  truocCap.than.error);
+
+const cap = await goi({fn:'capQuyenXem', token:tkSA, u:'superadmin@gita365.vn',
+  cap:{nguoiDuocCap:'coach@gita365.vn', vai:'R07', tang:['T4','T5'],
+       hetHan:'2027-01-01', lyDo:'kèm hai nhà tầng cao quý 4'}});
+bao(cap.than.ok, 'cấp cho Coach thì được', cap.than.tang.join(','));
+bao(!(await goi({fn:'capQuyenXem', token:tkSA, u:'superadmin@gita365.vn',
+  cap:{nguoiDuocCap:'coach@gita365.vn', vai:'R07', tang:['T4'],
+       hetHan:'2027-06-01', lyDo:'chồng thêm'}})).than.ok,
+  'KHÔNG CẤP HAI GIẤY PHÉP CÙNG LÚC — không ai biết bản nào đang chạy');
+
+const xem = await goi({fn:'xemKhachCao', token:tkCoach, u:'coach@gita365.vn'});
+bao(xem.than.ok && xem.than.so === 2, 'cấp rồi thì xem được hồ sơ tầng 4-5', xem.than.so + ' hồ sơ');
+
+/* CHIỀU BA — TRẦN MỤC. Đủ tầng mà không đủ mục thì vẫn là không. */
+const capDG = await goi({fn:'capQuyenXem', token:tkSA, u:'superadmin@gita365.vn',
+  cap:{nguoiDuocCap:'danhgia@gita365.vn', vai:'R10', tang:['T4','T5'],
+       hetHan:'2027-01-01', lyDo:'chấm KPI quý 4'}});
+bao(capDG.than.ok, 'Chuyên gia đánh giá ĐỦ TRẦN tầng 4-5, cấp được');
+const xemDG = await goi({fn:'xemKhachCao', token:tkDG, u:'danhgia@gita365.vn'});
+bao(!xemDG.than.ok && /Chỉ xem được: kpi/.test(xemDG.than.error),
+  'NHƯNG CHỈ ĐƯỢC MỤC KPI — đủ tầng mà không đủ mục thì vẫn là không',
+  xemDG.than.error);
+
+/* Giáo viên: không có tên trong trần nào. */
+const xemGV = await goi({fn:'xemKhachCao', token:tkGV, u:'giaovien@gita365.vn'});
+bao(!xemGV.than.ok, 'Giáo viên không xem được hồ sơ khách, ở mọi tầng');
+const soiGV = await goi({fn:'soiQuyenXem', token:tkGV, u:'giaovien@gita365.vn'});
+bao(soiGV.than.tranVai.length === 0,
+  'và tự soi thì thấy trần vai RỖNG — danh sách trắng, vai không có tên là không có');
+
+/* TRẦN ĐỌC LẠI LÚC DÙNG, không tin cột vai đã ghi trong giấy phép. */
+db.prepare("UPDATE users SET role = 'R08' WHERE id = 'U-coach'").run();
+db.prepare("UPDATE sessions SET role = 'R08' WHERE uid = 'U-coach'").run();
+const sauHa = await goi({fn:'xemKhachCao', token:tkCoach, u:'coach@gita365.vn'});
+bao(!sauHa.than.ok,
+  'HẠ BẬC MỘT NGƯỜI THÌ QUYỀN MẤT NGAY, không đợi giấy phép hết hạn',
+  'giấy phép vẫn nằm đó với cột vai R07 — tin cột ấy là để người vừa bị hạ bậc giữ nguyên quyền');
+db.prepare("UPDATE users SET role = 'R07' WHERE id = 'U-coach'").run();
+db.prepare("UPDATE sessions SET role = 'R07' WHERE uid = 'U-coach'").run();
+
+/* THU HỒI — đánh dấu, không xoá. */
+const th = await goi({fn:'thuHoiQuyenXem', token:tkSA, u:'superadmin@gita365.vn',
+  nguoiDuocCap:'coach@gita365.vn'});
+bao(th.than.ok, 'thu hồi được');
+bao(!(await goi({fn:'xemKhachCao', token:tkCoach, u:'coach@gita365.vn'})).than.ok,
+  'thu hồi rồi thì hết xem được NGAY');
+bao(db.prepare("SELECT count(*) c FROM quyenXem WHERE nguoiDuocCap='coach@gita365.vn'").get().c === 1,
+  'nhưng DÒNG SỔ VẪN CÒN — xoá là xoá luôn bằng chứng đã từng cấp',
+  'đúng thứ cần trả lời khi có chuyện');
+
+/* HẾT HẠN THÌ TỰ TẮT. */
+db.prepare("UPDATE quyenXem SET thuHoiLuc = NULL, hetHan = ? WHERE nguoiDuocCap='coach@gita365.vn'")
+  .run(new Date(Date.now() - 1000).toISOString());
+bao(!(await goi({fn:'xemKhachCao', token:tkCoach, u:'coach@gita365.vn'})).than.ok,
+  'GIẤY PHÉP HẾT HẠN TỰ TẮT — không chờ ai nhớ ra đi gỡ');
+
+/* MỖI LƯỢT QUA CỬA MỘT DÒNG SỔ, kể cả lượt bị từ chối. */
+bao(db.prepare("SELECT count(*) c FROM audit WHERE viec='XEMKHACH_CAO'").get().c >= 1 &&
+    db.prepare("SELECT count(*) c FROM audit WHERE viec='XEMKHACH_TUCHOI'").get().c >= 3,
+  'mỗi lượt qua cửa MỘT DÒNG SỔ, kể cả lượt bị từ chối',
+  'ngày một hồ sơ rò ra ngoài thì câu "ai đã mở nó" chỉ trả lời được nếu hôm nay đã ghi');
+
+console.log('\n12b · NÂNG TẦNG');
+db.prepare("INSERT INTO users (id,username,hoTen,email,role,portal,active,createdAt,maKhachHang) " +
+  "VALUES ('U-nhaA','nhaA@vidu.vn','Nhà A','nhaA@vidu.vn','R13','ph',1,?,'GITA-9001')").run(luc4);
+db.prepare("INSERT INTO users (id,username,hoTen,email,role,portal,active,createdAt,maKhachHang) " +
+  "VALUES ('U-nhaB','nhaB@vidu.vn','Nhà B','nhaB@vidu.vn','R13','ph',1,?,'GITA-9002')").run(luc4);
+db.prepare("INSERT INTO students (id,hoTen,tier,kpi,phuHuynhId,createdAt) VALUES ('HV-A','Con nhà A',1,85,'U-nhaA',?)").run(luc4);
+db.prepare("INSERT INTO students (id,hoTen,tier,kpi,phuHuynhId,createdAt) VALUES ('HV-B','Con nhà B',1,90,'U-nhaB',?)").run(luc4);
+db.prepare("INSERT INTO thanhToan (id,maKhachHang,tier,trangThai,daDung) VALUES ('TT-A','GITA-9001',2,'daXacNhan',0)").run();
+
+bao(!(await goi({fn:'nangTang', token:tkCoach, u:'coach@gita365.vn',
+  maHocVien:'HV-A', tang:2, maKhachHang:'GITA-9001'})).than.ok,
+  'chỉ R01–R03 nâng tầng được — Coach bấm cũng không');
+
+/* PHIẾU CỦA NHÀ A KHÔNG MỞ TẦNG CHO CON NHÀ B. */
+const lechNha = await goi({fn:'nangTang', token:tkSA, u:'superadmin@gita365.vn',
+  maHocVien:'HV-B', tang:2, maKhachHang:'GITA-9001'});
+bao(!lechNha.than.ok && /không khớp/.test(lechNha.than.error),
+  'PHIẾU CỦA NHÀ A KHÔNG MỞ ĐƯỢC TẦNG CHO CON NHÀ B',
+  'trước 9.44 mã lấy thẳng từ thân yêu cầu, không đối chiếu hồ sơ học viên');
+
+db.prepare("UPDATE students SET kpi = 70 WHERE id = 'HV-A'").run();
+const kpiThap = await goi({fn:'nangTang', token:tkSA, u:'superadmin@gita365.vn',
+  maHocVien:'HV-A', tang:2, maKhachHang:'GITA-9001'});
+bao(!kpiThap.than.ok && /80%/.test(kpiThap.than.error), 'KPI dưới 80% thì không nâng',
+  kpiThap.than.error);
+db.prepare("UPDATE students SET kpi = 85 WHERE id = 'HV-A'").run();
+
+bao(!(await goi({fn:'nangTang', token:tkSA, u:'superadmin@gita365.vn',
+  maHocVien:'HV-A', tang:4, maKhachHang:'GITA-9001'})).than.ok,
+  'chỉ nâng được MỘT tầng mỗi lần, theo thứ tự');
+
+const nt = await goi({fn:'nangTang', token:tkSA, u:'superadmin@gita365.vn',
+  maHocVien:'HV-A', tang:2, maKhachHang:'GITA-9001'});
+bao(nt.than.ok && Number(db.prepare("SELECT tier FROM students WHERE id='HV-A'").get().tier) === 2,
+  'đủ KPI + đúng phiếu + đúng nhà thì nâng được');
+
+db.prepare("UPDATE students SET tier = 1 WHERE id = 'HV-A'").run();
+const lai = await goi({fn:'nangTang', token:tkSA, u:'superadmin@gita365.vn',
+  maHocVien:'HV-A', tang:2, maKhachHang:'GITA-9001'});
+bao(!lai.than.ok,
+  'PHIẾU THANH TOÁN DÙNG MỘT LẦN — không đánh dấu thì một phiếu mở tầng cho bao nhiêu học viên cũng được',
+  lai.than.error);
+
+/* ═══════════════ 13 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
+console.log('\n13 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng
    nó — đúng chuyện vừa xảy ra khi dongBo được port. */
@@ -633,8 +781,8 @@ const bia = (await goi({fn: 'mot-viec-khong-co-that', token: tk})).than;
 bao(bia.code !== 'CHUAPORT' && !bia.ok, 'còn việc bịa ra thì vẫn là yêu cầu không hợp lệ',
   bia.error);
 
-/* ═══════════════ 13 · KHÔNG RÒ RA NGOÀI ═══════════════ */
-console.log('\n13 · KHÔNG RÒ RA NGOÀI');
+/* ═══════════════ 14 · KHÔNG RÒ RA NGOÀI ═══════════════ */
+console.log('\n14 · KHÔNG RÒ RA NGOÀI');
 const xau = {prepare(){ throw new Error('SQLITE_ERROR: no such column: users.matKhauThat'); }};
 const rNo = await worker.fetch(new Request('https://gita.test/', {
   method: 'POST', headers: {'Content-Type': 'application/json'},
@@ -651,12 +799,12 @@ bao(jGt.ok && jGt.daNapKhoa === 8 && !JSON.stringify(jGt).includes('khoa-nen'),
   'cửa trạng thái nói ĐÃ NẠP MẤY KHOÁ mà không trả khoá nào',
   'đã nạp ' + jGt.daNapKhoa + ' gói');
 
-/* ═══════════════ 14 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
+/* ═══════════════ 15 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
 
-   Mười ba mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
+   Mười bốn mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
    Ở đây phá bằng cách truyền một hồ sơ vai KHÁC vào chính hàm tính
    phạm vi — không tráo hàm toàn cục, đúng luật đã ghi ở v9.79. */
-console.log('\n14 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
+console.log('\n15 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
 const pv = (await import('../may-chu/worker.js')).phamViCapPhep;
 bao(pv({role: 'R13', tier: 5}).indexOf('tang5') >= 0 &&
     pv({role: 'R13', tier: 2}).indexOf('tang3') < 0,

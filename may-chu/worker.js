@@ -14,10 +14,11 @@
 
    Xong: đăng nhập · đăng xuất · kiểm phiên · đổi mật khẩu · cấp khoá
    kho · trạng thái máy chủ · đồng bộ hồ sơ và cài đặt · đăng ký, mã xác
-   nhận qua email, kích hoạt · quên và đặt lại mật khẩu.
+   nhận qua email, kích hoạt · quên và đặt lại mật khẩu · quyền xem hồ
+   sơ khách · nâng tầng.
 
-   Chưa: tài liệu, chứng cứ hoa hồng, sổ cộng đồng, quyền xem khách,
-   tình huống khách, xuất Sheet, nâng tầng.
+   Chưa: tài liệu, chứng cứ hoa hồng, sổ cộng đồng, tình huống khách,
+   xuất Sheet.
 
    CHƯA PORT THÌ BÁO TO, KHÔNG IM. Danh sách CHUA_PORT ở dưới trả về
    đúng một câu nói rõ việc ấy chưa có ở nền mới. Trả 'Yêu cầu không
@@ -30,6 +31,7 @@ import { Kho, kiemPhien, kiemMatKhau, bamMoi, muoiMoi, mkQuaDeDoan } from './nen
 import { dongBo } from './dong-bo.js';
 import { dangKy, guiLaiOtp, xacThucOtp, kichHoat } from './dang-ky.js';
 import { quenMatKhau, datLaiMatKhau } from './mat-khau.js';
+import { capQuyenXem, thuHoiQuyenXem, soiQuyenXem, xemKhachCao, nangTang } from './quyen-xem.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -129,17 +131,16 @@ const gon_ = ds => ds.filter((x, i) => x && ds.indexOf(x) === i);
 export const CHUA_PORT = {
   xuatSheet: 'xuất bảng tính',
   napTaiLieu: 'gửi tài liệu', duyetTaiLieu: 'duyệt tài liệu',
-  nangTang: 'nâng tầng', kiemDrive: 'kiểm thư mục Drive',
+  kiemDrive: 'kiểm thư mục Drive',
   kyChungCu: 'ký chứng cứ', xacNhanChungCu: 'xác nhận chứng cứ',
   soiChungCu: 'soi chứng cứ', ghiTinCongDong: 'ghi tin cộng đồng',
   docTinCongDong: 'đọc tin cộng đồng', guiChuyen: 'gửi chuyện',
-  capQuyenXem: 'cấp quyền xem hồ sơ khách', thuHoiQuyenXem: 'thu hồi quyền xem',
-  soiQuyenXem: 'soi quyền xem', xemKhachCao: 'xem hồ sơ khách tầng cao',
   napTinhHuongKhach: 'nạp tình huống cho gia đình', xemKpiKhach: 'xem KPI khách',
   kiemBanMoi: 'kiểm bản mới'
 };
 
-const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo'];
+const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
+  'capQuyenXem', 'thuHoiQuyenXem', 'soiQuyenXem', 'xemKhachCao', 'nangTang'];
 
 async function lam(fn, y, env, db) {
   if (fn === 'dangNhap')  return await dangNhap(y, env, db);
@@ -171,6 +172,12 @@ async function lam(fn, y, env, db) {
   if (fn === 'doiMatKhau') return await doiMatKhau(y, env, db, hoSo);
   if (fn === 'capKhoa')    return await capKhoa(y, env, db, hoSo);
   if (fn === 'dongBo')     return await dongBo(y, env, db, hoSo);
+
+  if (fn === 'capQuyenXem')    return await capQuyenXem(y, env, db, hoSo);
+  if (fn === 'thuHoiQuyenXem') return await thuHoiQuyenXem(y, env, db, hoSo);
+  if (fn === 'soiQuyenXem')    return await soiQuyenXem(y, env, db, hoSo);
+  if (fn === 'xemKhachCao')    return await xemKhachCao(y, env, db, hoSo);
+  if (fn === 'nangTang')       return await nangTang(y, env, db, hoSo);
   return {ok: false, error: 'Yêu cầu không hợp lệ.'};
 }
 
