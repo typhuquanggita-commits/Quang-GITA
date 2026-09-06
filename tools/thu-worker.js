@@ -1719,6 +1719,85 @@ bao(!(await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn',
   id:nho.than.id})).than.ok,
   'khoản đã tự ghi thì không duyệt lại được — nó đã ở trong sổ rồi');
 
+/* ── TRẦN CHU KỲ · CHỐT 9.95 ──
+
+   "Tổng chi theo chu kỳ là 10 triệu đồng là phải báo cáo xác minh,
+   duyệt chi đầy đủ, để ngăn chặn thất thoát tự do các khoản chi nhỏ."
+
+   Chủ hệ thống chỉ đúng một lỗ thủng trong phép soi chia nhỏ ở 9.92:
+   nó chỉ cộng TRONG MỘT khoản mục. Rải tiền NGANG qua nhiều khoản mục
+   thì mỗi cột đều sạch và cả bốn khoản đều đi lối tự ghi. */
+await themNguoi('U-ql', 'quanly@gita365.vn', 'MatKhauRieng2026!', 'R04',
+  {portal:'admin'});
+const tkQL = (await goi({fn:'dangNhap', u:'quanly@gita365.vn',
+  mk:'MatKhauRieng2026!'})).than.token;
+
+const raiTien = ['vanPhong', 'tiepThi', 'daoTao', 'haTang', 'khac', 'thuLao'];
+const daRai = [];
+for (let i = 0; i < raiTien.length; i++) {
+  const r = await goi({fn:'ghiChi', token:tkQL, u:'quanly@gita365.vn',
+    chi:{khoanMuc:raiTien[i], soTien:1400000, hinhThuc:'tienMat',
+      dienGiai:'Chi vặt đợt ' + (i + 1), ngayChi:'2026-07-0' + (i + 1) + 'T02:00:00.000Z'}});
+  daRai.push(r.than);
+}
+bao(daRai.slice(0, 4).every(x => x.ok && x.tuGhi),
+  'bốn khoản 1,4 triệu rải qua BỐN khoản mục khác nhau đều lọt lối tự ghi — phép soi 9.92 nhìn theo cột DỌC nên không thấy',
+  'mỗi khoản dưới ngưỡng, mỗi khoản mục đều sạch, và không ai ký một chữ nào');
+
+/* Khoản thứ năm đưa tổng lên 7 triệu — vẫn dưới trần. Khoản thứ sáu
+   đưa lên 8,4 triệu. Cần một khoản nữa để chạm 10 triệu. */
+const chamTran = await goi({fn:'ghiChi', token:tkQL, u:'quanly@gita365.vn',
+  chi:{khoanMuc:'vanPhong', soTien:1600000, hinhThuc:'tienMat',
+    dienGiai:'Chi vặt đợt cuối', ngayChi:'2026-07-08T02:00:00.000Z'}});
+bao(chamTran.than.ok && chamTran.than.chuKy.daChi === 10000000 &&
+    chamTran.than.chuKy.chamTran && !chamTran.than.tuGhi &&
+    chamTran.than.trangThai === 'choDuyet',
+  'TỚI 10 TRIỆU THÌ LỐI TỰ GHI ĐÓNG LẠI — khoản 1,6 triệu này vốn thuộc nấc N2 nhưng nay phải qua cổng vì TỔNG chu kỳ chạm trần',
+  chamTran.than.chuKy.daChi + 'đ / trần ' + chamTran.than.chuKy.tran + 'đ');
+
+/* Và đóng cho HẾT CHU KỲ, kể cả với một khoản bé xíu. Đây là chỗ luật
+   này khác luật ngưỡng: ngưỡng nhìn khoản, trần nhìn người. */
+const sauTran = await goi({fn:'ghiChi', token:tkQL, u:'quanly@gita365.vn',
+  chi:{khoanMuc:'vanPhong', soTien:50000, hinhThuc:'tienMat',
+    dienGiai:'Mua bút bi', ngayChi:'2026-07-20T02:00:00.000Z'}});
+bao(sauTran.than.ok && !sauTran.than.tuGhi && sauTran.than.canMayNguoiDuyet === 1 &&
+    /chạm trần chu kỳ/.test(sauTran.than.biDongLoiTuGhiVi || ''),
+  'CHẠM TRẦN RỒI THÌ CẢ KHOẢN 50 NGHÌN CŨNG PHẢI CÓ NGƯỜI THỨ HAI KÝ — tới hết chu kỳ',
+  'một người đã tiêu 10 triệu trong tháng chính là người mà khoản tiếp theo đáng có thêm một cặp mắt');
+
+/* CHU KỲ SAU THÌ MỞ LẠI. Trần là một cái van theo chu kỳ, không phải
+   một bản án — không mở lại thì người ta chỉ đơn giản thôi ghi sổ. */
+const thangSau = await goi({fn:'ghiChi', token:tkQL, u:'quanly@gita365.vn',
+  chi:{khoanMuc:'vanPhong', soTien:200000, hinhThuc:'tienMat',
+    dienGiai:'Mua giấy in tháng 8', ngayChi:'2026-08-02T02:00:00.000Z'}});
+bao(thangSau.than.ok && thangSau.than.tuGhi && thangSau.than.chuKy.ky === '2026-08',
+  'SANG CHU KỲ SAU THÌ LỐI TỰ GHI MỞ LẠI — trần là một cái van theo chu kỳ, không phải một bản án',
+  'không mở lại thì người ta chỉ đơn giản thôi ghi sổ, và lúc ấy sổ mất nhiều hơn được');
+
+/* ── TỔNG HỢP CHI THEO NGƯỜI ──
+   Bản kê theo khoản mục không thấy chuyện rải tiền; chỉ bản kê theo
+   NGƯỜI mới thấy. */
+const thT10 = await goi({fn:'tongHopChi', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'thang', moc:'2026-07'});
+const dongQL = thT10.than.theoNguoi.find(x => x.nguoi === 'quanly@gita365.vn');
+bao(thT10.than.ok && dongQL && dongQL.tong === 10050000 && dongQL.soKhoanMuc === 6 &&
+    dongQL.chamTran,
+  'TỔNG HỢP THEO NGƯỜI THẤY NGAY CHUYỆN RẢI TIỀN — 10.050.000đ qua 6 khoản mục, chạm trần',
+  'mọi bản kê theo khoản mục đều sạch; chỉ bản kê theo người mới thấy');
+bao(dongQL.trungBinh < 1500000 && dongQL.soKhoan === 8,
+  'và nêu TRUNG BÌNH MỘT KHOẢN — số này nhỏ mà tổng lớn là hình dạng của chuyện rải tiền vặt',
+  dinhDangVN(dongQL.trungBinh) + ' × ' + dongQL.soKhoan + ' khoản');
+bao(thT10.than.daChamTran.some(x => x.nguoi === 'quanly@gita365.vn') &&
+    thT10.than.tranChuKy === 10000000,
+  'người đã chạm trần được nêu lên đầu bản tổng hợp');
+
+/* SẮP CHẠM mới là lúc đáng nói: chạm rồi thì cổng đã tự đóng, còn sắp
+   chạm thì người phụ trách còn kịp hỏi. */
+const thT9 = await goi({fn:'tongHopChi', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'thang', moc:'2026-09'});
+bao(thT9.than.ok && Array.isArray(thT9.than.sapChamTran),
+  'và bản tổng hợp nêu riêng người SẮP chạm trần — lúc còn kịp hỏi');
+
 /* ── BÁO CÁO CHI · CHỐT 9.94 ──
 
    "Chi phí từ 1,5 triệu trở lên phải báo cáo." Duyệt là một cái CỔNG

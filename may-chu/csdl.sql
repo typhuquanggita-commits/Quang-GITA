@@ -466,6 +466,11 @@ CREATE INDEX IF NOT EXISTS ix_cp_muc  ON chiPhi (khoanMuc, ngayChi);
 -- một cửa sổ bảy ngày. Không có chỉ mục này thì mỗi lượt ghi một khoản
 -- chi lặt vặt là một lượt quét cả bảng chi phí.
 CREATE INDEX IF NOT EXISTS ix_cp_gop  ON chiPhi (khoanMuc, nguoiDeXuat, ngayChi);
+-- Trần chu kỳ cộng MỌI khoản mục của MỘT người, nên nó không dùng được
+-- ix_cp_gop ở trên: cột dẫn đầu của chỉ mục ấy là khoanMuc, mà câu này
+-- không lọc theo khoanMuc. Phép tính này chạy ở MỖI lượt ghi một khoản
+-- chi, nên nó đáng có đường riêng.
+CREATE INDEX IF NOT EXISTS ix_cp_nguoi ON chiPhi (nguoiDeXuat, ngayChi);
 
 -- ═════════════════════════════════════════════════════════════
 --  MIỄN GIẢM — VÌ SAO KHÔNG SỬA THẲNG phaiThu

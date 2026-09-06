@@ -43,7 +43,7 @@ import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh,
 import { soNgay, chotTuan, soatChot, tongHop, baoCaoKeToan, boSoKhaiThue,
   dsChot } from './bao-cao.js';
 import { ghiChi, duyetChi, huyChi, soChi, chotKet, dsChotKet,
-  xemThangDuyetChi, baoCaoChi } from './chi-tieu.js';
+  xemThangDuyetChi, baoCaoChi, tongHopChi } from './chi-tieu.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -160,7 +160,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'soNgay', 'chotTuan', 'soatChot', 'tongHop', 'baoCaoKeToan', 'boSoKhaiThue',
   'dsChot',
   'ghiChi', 'duyetChi', 'huyChi', 'soChi', 'chotKet', 'dsChotKet',
-  'xemThangDuyetChi', 'baoCaoChi',
+  'xemThangDuyetChi', 'baoCaoChi', 'tongHopChi',
   'deXuatMienGiam', 'duyetMienGiam', 'dsMienGiam',
   'ghiNhacThu', 'lichSuNhacThu', 'denHenChuaTra'];
 
@@ -247,6 +247,7 @@ async function lam(fn, y, env, db) {
   if (fn === 'dsChotKet')  return await dsChotKet(y, env, db, hoSo);
   if (fn === 'xemThangDuyetChi') return await xemThangDuyetChi(y, env, db, hoSo);
   if (fn === 'baoCaoChi')        return await baoCaoChi(y, env, db, hoSo);
+  if (fn === 'tongHopChi')       return await tongHopChi(y, env, db, hoSo);
 
   if (fn === 'deXuatMienGiam') return await deXuatMienGiam(y, env, db, hoSo);
   if (fn === 'duyetMienGiam')  return await duyetMienGiam(y, env, db, hoSo);

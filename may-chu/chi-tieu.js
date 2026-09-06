@@ -113,6 +113,57 @@ const HINH_THUC = ['chuyenKhoan', 'tienMat', 'the'];
    không ai lấy được ba báo giá cho "cả tuần". Đòi thế là đòi một thứ
    không tồn tại, và một luật không làm nổi thì người ta học cách đi
    vòng qua nó.
+
+   ══ TRẦN CHU KỲ — LỖ THỦNG CỦA CHÍNH PHÉP SOI TRÊN ══
+
+   Chốt của chủ hệ thống bản 9.95: "Tổng các khoản chi cần tổng hợp
+   lại. Tổng chi theo chu kỳ là 10 triệu đồng là phải báo cáo xác minh,
+   duyệt chi đầy đủ, để ngăn chặn thất thoát tự do các khoản chi nhỏ."
+
+   Chủ hệ thống chỉ đúng một lỗ thủng trong phép soi chia nhỏ mà tôi
+   dựng ở 9.92: NÓ CHỈ CỘNG TRONG MỘT KHOẢN MỤC.
+
+     1,4 triệu văn phòng
+     1,4 triệu tiếp thị
+     1,4 triệu đào tạo
+     1,4 triệu hạ tầng …
+
+   Mỗi khoản đều dưới ngưỡng, mỗi khoản mục đều sạch, và cả bốn đi lối
+   tự ghi. Cứ thế thì một người tiêu bao nhiêu cũng được, không ai ký
+   một chữ nào. Đó đúng là "thất thoát tự do các khoản chi nhỏ", và
+   phép soi 9.92 không nhìn thấy nó vì nó nhìn theo cột dọc.
+
+   Nên thêm một trần nhìn theo cột NGANG:
+
+     TỔNG MỌI KHOẢN CHI của MỘT NGƯỜI trong MỘT CHU KỲ, cộng qua tất cả
+     khoản mục. Chạm 10 triệu thì LỐI TỰ GHI ĐÓNG LẠI với người ấy cho
+     hết chu kỳ — mọi khoản sau đó, dù nhỏ đến đâu, đều phải có người
+     thứ hai ký.
+
+   Hai phép soi bắt hai kiểu khác nhau và không thay được nhau:
+
+     gộp 7 ngày theo khoản mục — bắt CHIA NHỎ, nhanh, ngưỡng thấp
+     trần chu kỳ theo người   — bắt KHỐI LƯỢNG, chậm, ngưỡng cao
+
+   ══ BA CHỖ TÔI CHỌN, KHAI RA ĐỂ CHỦ HỆ CHỐT LẠI ══
+
+   1. CHU KỲ LÀ THÁNG. Chủ hệ nói "chu kỳ" mà không nói tháng hay tuần.
+      Chọn tháng vì kỳ kế toán và báo cáo chi đều mặc định theo tháng,
+      và một trần ngân sách theo tháng là cách mọi nơi vẫn làm.
+
+   2. TRẦN TÍNH THEO NGƯỜI, không theo cả Học viện. Mười triệu cho toàn
+      Học viện một tháng thì chạm trần ngay ngày đầu và cái trần thành
+      vô nghĩa. Câu "thất thoát tự do" cũng nói về một người tiêu vặt,
+      không nói về tổng chi của tổ chức.
+
+   3. CỘNG MỌI KHOẢN CHI, không chỉ cộng khoản đi lối tự ghi. Đọc hẹp
+      hơn thì chỉ cộng phần chưa ai ký; đọc rộng thì cộng tất. Chọn
+      cách rộng vì nó chặt hơn, và vì một người đã tiêu mười triệu
+      trong tháng chính là người mà khoản hai trăm nghìn tiếp theo
+      đáng có thêm một cặp mắt.
+
+   Trần neo vào GIÁ MỘT GÓI T3, cùng cái neo với nấc N3: một người tiêu
+   hết học phí cả năm của một nhà trong một chu kỳ thì phải giải trình.
    ═══════════════════════════════════════════════════════════════ */
 
 const NGAY_GOP = 7;
@@ -150,6 +201,10 @@ const NAC_THANG = [
    ngưỡng là chỗ người ta nhắm vào. */
 const TRAN_PHAI_DUYET = NAC_THANG[1].tu;
 
+/* Trần chu kỳ — chốt của chủ hệ thống bản 9.95. Neo vào giá gói T3,
+   cùng cái neo với nấc N3. */
+const TRAN_CHU_KY = NAC_THANG[2].tu;
+
 /** Nấc của một số tiền. Biên DƯỚI tính vào nấc trên: 10 triệu chẵn là
     N3, không phải N2. */
 function nacCua(tien) {
@@ -174,9 +229,13 @@ export function soatNeoThang() {
     if (Number(n.tu) !== Number(neo[n.ma]))
       lech.push({nac: n.ma, thangDangDe: n.tu, giaGoiBayGio: neo[n.ma], neo: n.neo});
   }
+  if (Number(TRAN_CHU_KY) !== Number(GIA_TANG[3]))
+    lech.push({nac: 'TRẦN CHU KỲ', thangDangDe: TRAN_CHU_KY,
+      giaGoiBayGio: GIA_TANG[3], neo: 'một gói T3'});
   return {khop: lech.length === 0, lech,
-    vi: 'Mỗi nấc neo vào giá một gói học phí. Giá gói đổi thì thang phải được ' +
-        'CHỦ HỆ THỐNG chốt lại — phép này nêu ra chỗ lệch, không tự dời thang.'};
+    vi: 'Mỗi nấc neo vào giá một gói học phí, và trần chu kỳ neo vào gói T3. ' +
+        'Giá gói đổi thì thang phải được CHỦ HỆ THỐNG chốt lại — phép này nêu ra ' +
+        'chỗ lệch, không tự dời thang.'};
 }
 
 /* ═══════════════ GHI MỘT KHOẢN CHI ═══════════════
@@ -233,6 +292,14 @@ export async function ghiChi(y, env, db, hoSo) {
   const nacGop  = nacCua(gop + tien);
   const nac = NAC_THANG.indexOf(nacGop) > NAC_THANG.indexOf(nacTien) ? nacGop : nacTien;
 
+  /* ── TRẦN CHU KỲ: PHÉP SOI NHÌN THEO CỘT NGANG ──
+
+     Phép gộp ở trên nhìn theo cột DỌC — một khoản mục. Nó không thấy
+     người rải tiền ngang qua nhiều khoản mục, mỗi chỗ một ít. Trần này
+     cộng MỌI khoản mục của một người trong chu kỳ. */
+  const chuKy = await tongChuKy(db, hoSo.u, ngayChi);
+  const chamTran = (chuKy.tong + tien) >= TRAN_CHU_KY;
+
   /* ── BẰNG CHỨNG THEO nacTien, KHÔNG THEO nacGop ──
 
      Không ai lấy được ba báo giá cho "cả tuần". Đòi thế là đòi một thứ
@@ -253,7 +320,10 @@ export async function ghiChi(y, env, db, hoSo) {
         nacTien.ten + '. Nấc này còn thiếu: ' + thieu.join(', ') + '.',
       nacNay: {ma: nacTien.ma, ten: nacTien.ten, viec: nacTien.viec}};
 
-  const tuGhiDuoc = nac.soDuyet === 0;
+  /* Chạm trần chu kỳ thì LỐI TỰ GHI ĐÓNG, dù khoản này nhỏ đến đâu.
+     Nấc thang không đổi — bằng chứng vẫn theo số tiền của khoản này —
+     chỉ cái lối vào sổ đổi: từ đây phải có người thứ hai ký. */
+  const tuGhiDuoc = nac.soDuyet === 0 && !chamTran;
 
   const id = 'CP-' + tokenMoi().slice(0, 14);
   const luc = new Date().toISOString();
@@ -281,13 +351,25 @@ export async function ghiChi(y, env, db, hoSo) {
     viec: tuGhiDuoc ? 'CHI_TUGHI' : 'CHI_DEXUAT',
     doiTuong: id, chiTiet: KHOAN_MUC[muc] + ' · ' + dinhDang(tien) + ' · nấc ' + nac.ma +
       (coHoaDon ? ' · có hoá đơn' : ' · KHÔNG hoá đơn') +
-      (gop ? ' · gộp 7 ngày ' + dinhDang(gop + tien) : '')});
+      (gop ? ' · gộp 7 ngày ' + dinhDang(gop + tien) : '') +
+      (chamTran ? ' · CHẠM TRẦN CHU KỲ ' + dinhDang(chuKy.tong + tien) : '')});
 
   return {ok: true, id, khoanMuc: muc, soTien: tien,
     trangThai: tuGhiDuoc ? 'daDuyet' : 'choDuyet',
     tuGhi: tuGhiDuoc,
-    nac: nac.ma, tenNac: nac.ten, canMayNguoiDuyet: nac.soDuyet,
+    nac: nac.ma, tenNac: nac.ten,
+    /* Chạm trần thì cần ÍT NHẤT một chữ ký, kể cả khi nấc của khoản là
+       N1. Nói con số thật ra đây để màn hình không phải tự suy. */
+    canMayNguoiDuyet: Math.max(nac.soDuyet, chamTran ? 1 : 0),
     gopBayNgay: gop + tien,
+    chuKy: {ky: chuKy.ky, daChi: chuKy.tong + tien, tran: TRAN_CHU_KY,
+      chamTran, conLai: Math.max(0, TRAN_CHU_KY - chuKy.tong - tien)},
+    biDongLoiTuGhiVi: (chamTran && nac.soDuyet === 0)
+      ? 'Khoản này ' + dinhDang(tien) + ' vốn thuộc lối tự ghi, nhưng tổng chi ' +
+        'của bạn trong ' + chuKy.ky + ' đã là ' + dinhDang(chuKy.tong + tien) +
+        ' — chạm trần chu kỳ ' + dinhDang(TRAN_CHU_KY) + '. Từ đây tới hết chu kỳ, ' +
+        'mọi khoản đều phải có người thứ hai ký.'
+      : undefined,
     /* Nói NGAY ở bước ghi rằng khoản này ở nấc nào và vì sao. Người ghi
        một khoản một triệu tư mà thấy nó vào "chờ duyệt" sẽ tưởng máy
        hỏng, nếu không ai nói cho họ biết tuần này họ đã ghi bao nhiêu ở
@@ -308,6 +390,25 @@ export async function ghiChi(y, env, db, hoSo) {
 
    Cửa sổ trượt quanh ngayChi chứ không quanh hôm nay: nhập bù một
    khoản của tuần trước phải cộng với những khoản của TUẦN ẤY. */
+/* ── TỔNG CHI CỦA MỘT NGƯỜI TRONG MỘT CHU KỲ ──
+
+   Cộng MỌI khoản mục, khác hẳn phép gộp bảy ngày ở dưới. Chu kỳ là
+   THÁNG theo giờ Việt Nam — dùng chung phép dựng kỳ với cả sổ báo cáo,
+   nên "tháng 9" ở đây và "tháng 9" ở bản kế toán là cùng một khoảng.
+
+   Chỉ cộng khoản còn hiệu lực: khoản bị từ chối hay bị huỷ không phải
+   tiền đã ra, nên không được đẩy người ta chạm trần vì một khoản đã bỏ. */
+async function tongChuKy(db, nguoi, ngayChi) {
+  const k = dungKy('thang', new Date(new Date(ngayChi).getTime() + 7 * 3600e3)
+    .toISOString().slice(0, 10));
+  const r = await db.prepare(
+    'SELECT COALESCE(SUM(soTien),0) t, COUNT(*) n FROM chiPhi ' +
+    'WHERE nguoiDeXuat = ? AND ngayChi >= ? AND ngayChi <= ? ' +
+    "AND trangThai IN ('daDuyet','choDuyet')"
+  ).bind(nguoi, k.tuLuc, k.denLuc).first();
+  return {ky: k.ky, tong: Number(r.t), so: Number(r.n), tuLuc: k.tuLuc, denLuc: k.denLuc};
+}
+
 async function gopBayNgay(db, khoanMuc, nguoi, ngayChi) {
   const moc = new Date(ngayChi).getTime();
   const tu = new Date(moc - NGAY_GOP * 86400000).toISOString();
@@ -731,15 +832,94 @@ export async function baoCaoChi(y, env, db, hoSo) {
         'cái phải xin phép trước khi tiêu là cái phải trưng ra sau khi tiêu.'};
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   TỔNG HỢP CHI THEO NGƯỜI VÀ THEO CHU KỲ
+
+   "Tổng các khoản chi cần tổng hợp lại." Đây là bản tổng hợp ấy, và nó
+   nhìn theo CỘT NGANG: mỗi người một dòng, cộng qua mọi khoản mục.
+
+   Báo cáo chi ở trên nhìn theo từng khoản; bản này nhìn theo người.
+   Hai câu hỏi khác nhau:
+
+     baoCaoChi   — khoản nào đã đi ra, ai ký, chứng từ đủ chưa
+     tongHopChi  — AI đang tiêu bao nhiêu, và ai sắp chạm trần
+
+   Câu thứ hai là câu chặn thất thoát. Một người rải bốn khoản một
+   triệu tư qua bốn khoản mục thì mọi bản kê theo khoản mục đều sạch,
+   và chỉ bản kê theo NGƯỜI mới thấy.
+   ═══════════════════════════════════════════════════════════════ */
+export async function tongHopChi(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, code: 'NOPERM',
+    error: 'Chỉ R01–R03 xem được bản tổng hợp chi.'};
+
+  const k = dungKy(String(y.loai || 'thang'),
+    String(y.moc || new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10)));
+  if (!k) return {ok: false, error: 'Kỳ tổng hợp không hợp lệ.'};
+
+  const r = await db.prepare(
+    'SELECT nguoiDeXuat, ' +
+    '  COUNT(*) so, COALESCE(SUM(soTien),0) tong, ' +
+    '  COALESCE(SUM(CASE WHEN tuGhi = 1 THEN soTien END),0) tuGhi, ' +
+    '  SUM(CASE WHEN tuGhi = 1 THEN 1 ELSE 0 END) soTuGhi, ' +
+    "  COALESCE(SUM(CASE WHEN trangThai = 'choDuyet' THEN soTien END),0) treo, " +
+    '  MIN(soTien) nhoNhat, MAX(soTien) lonNhat, ' +
+    '  COUNT(DISTINCT khoanMuc) soKhoanMuc ' +
+    'FROM chiPhi WHERE ngayChi >= ? AND ngayChi <= ? ' +
+    "  AND trangThai IN ('daDuyet','choDuyet') " +
+    'GROUP BY nguoiDeXuat ORDER BY tong DESC'
+  ).bind(k.tuLuc, k.denLuc).all();
+
+  const nguoi = (r.results || []).map(x => {
+    const tong = Number(x.tong);
+    return {
+      nguoi: x.nguoiDeXuat, soKhoan: Number(x.so), tong,
+      tuGhi: Number(x.tuGhi), soKhoanTuGhi: Number(x.soTuGhi),
+      conTreo: Number(x.treo),
+      soKhoanMuc: Number(x.soKhoanMuc),
+      nhoNhat: Number(x.nhoNhat), lonNhat: Number(x.lonNhat),
+      /* Trung bình một khoản. Số này nhỏ mà tổng lớn là hình dạng của
+         chuyện rải tiền vặt — đúng thứ trần chu kỳ sinh ra để chặn. */
+      trungBinh: Math.round(tong / Number(x.so)),
+      chamTran: tong >= TRAN_CHU_KY,
+      conLaiTruocTran: Math.max(0, TRAN_CHU_KY - tong),
+      /* Sắp chạm là lúc đáng nói, không phải lúc đã chạm: chạm rồi thì
+         cổng đã tự đóng, còn sắp chạm thì người phụ trách còn kịp hỏi. */
+      sapChamTran: tong < TRAN_CHU_KY && tong >= TRAN_CHU_KY * 0.8
+    };
+  });
+
+  const tong = nguoi.reduce((a, x) => a + x.tong, 0);
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TONGHOP_CHI',
+    doiTuong: k.ky, chiTiet: nguoi.length + ' người · ' + dinhDang(tong)});
+
+  return {ok: true, ky: k.ky, loai: k.loai, tuNgay: k.tuNgay, denNgay: k.denNgay,
+    tranChuKy: TRAN_CHU_KY,
+    soNguoi: nguoi.length,
+    tongChi: tong,
+    tongTuGhi: nguoi.reduce((a, x) => a + x.tuGhi, 0),
+    tongConTreo: nguoi.reduce((a, x) => a + x.conTreo, 0),
+    theoNguoi: nguoi,
+    daChamTran: nguoi.filter(x => x.chamTran),
+    sapChamTran: nguoi.filter(x => x.sapChamTran),
+    vi: 'Trần chu kỳ ' + dinhDang(TRAN_CHU_KY) + ' cho MỘT NGƯỜI trong MỘT CHU KỲ, ' +
+        'cộng qua MỌI khoản mục. Chạm trần thì lối tự ghi đóng lại với người ấy tới ' +
+        'hết chu kỳ. Bản này nhìn theo NGƯỜI; một người rải bốn khoản nhỏ qua bốn ' +
+        'khoản mục thì mọi bản kê theo khoản mục đều sạch, chỉ bản này thấy.'};
+}
+
 export async function xemThangDuyetChi(y, env, db, hoSo) {
   const lv = BAC[hoSo.role] || 99;
   if (lv > 5) return {ok: false, code: 'NOPERM', error: 'Vai này không xem được thang duyệt chi.'};
   const neo = soatNeoThang();
   return {ok: true, thang: thangDuyetChi(), cuaSoGopNgay: NGAY_GOP,
+    tranChuKy: TRAN_CHU_KY, chuKy: 'tháng',
     neoConKhop: neo.khop, neoLech: neo.khop ? undefined : neo.lech,
     vi: 'Cấp duyệt tính theo TỔNG GỘP ' + NGAY_GOP + ' ngày (chặn chia nhỏ); ' +
         'bằng chứng tính theo số tiền của TỪNG khoản (không ai lấy được ba báo ' +
-        'giá cho cả tuần).'};
+        'giá cho cả tuần). Và trần chu kỳ ' + dinhDang(TRAN_CHU_KY) + ' một người ' +
+        'một tháng, cộng qua MỌI khoản mục: chạm trần thì lối tự ghi đóng lại.'};
 }
 
-export { KHOAN_MUC, TRAN_PHAI_DUYET, NGAY_GOP, NAC_THANG };
+export { KHOAN_MUC, TRAN_PHAI_DUYET, TRAN_CHU_KY, NGAY_GOP, NAC_THANG };

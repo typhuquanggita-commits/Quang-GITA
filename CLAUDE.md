@@ -164,3 +164,8 @@ kiểm câm trong kho này.
 - **Chi từ 1,5 triệu trở lên** (9.92, 9.94) — phải xin duyệt VÀ phải
   vào báo cáo chi. Một ngưỡng, hai nghĩa vụ, cùng một hằng số
   `TRAN_PHAI_DUYET`.
+- **Trần chu kỳ 10 triệu** (9.95) — tổng MỌI khoản chi của MỘT người
+  trong MỘT tháng, cộng qua tất cả khoản mục. Chạm trần thì lối tự ghi
+  đóng lại với người ấy tới hết chu kỳ. Đây là phép soi nhìn theo cột
+  NGANG; phép gộp 7 ngày nhìn theo cột DỌC, và hai cái không thay được
+  nhau. `TRAN_CHU_KY` neo vào giá gói T3.
