@@ -32,6 +32,7 @@
    ═══════════════════════════════════════════════════════════════ */
 const { chromium } = require(process.env.PW_PATH || '/opt/node22/lib/node_modules/playwright');
 const fs = require('fs');
+const pathGoc = require('path');
 const doiKhoXong = require('./doi-kho-xong');
 /* Mỗi câu khai KHO ĐÁNG LẼ PHẢI TRÚNG. */
 const HOI = [
@@ -112,14 +113,57 @@ const HOI = [
     '\n     cần ' + x.can + ' · nhận ' + x.dau));
   const ti = Math.round(t/r.length*100);
   console.log('\nTRÚNG ' + t + '/' + r.length + ' = ' + ti + '%');
-  /* MỐC KHÔNG ĐƯỢC TỤT. Đặt bằng đúng số đo được lúc dựng bộ này.
-     Tụt xuống dưới là có người vừa làm hỏng phần tra kho — và lớp
-     hỏng ấy im lặng, vì trợ lý vẫn trả lời, chỉ là trả lời sai. */
-  const MOC = 28;
-  if (t < MOC) {
-    console.log('✗ TỤT so với mốc ' + MOC + '/' + r.length + ' — phần tra kho vừa hỏng ở đâu đó');
+
+  /* ══ MỐC KHÔNG ĐƯỢC TỤT — VÀ MỐC PHẢI TỰ NÂNG ══
+
+     Tụt xuống dưới mốc là có người vừa làm hỏng phần tra kho, và lớp
+     hỏng ấy im lặng: trợ lý vẫn trả lời, chỉ là trả lời sai.
+
+     Tới 9.99.5 mốc là một con số GÕ CỨNG trong tệp này, đặt bằng số đo
+     được hôm dựng bộ. Nó chặn được lượt tụt về dưới 28, nhưng nó không
+     chặn được lớp tụt nguy hiểm hơn: ai đó cải thiện phần tra kho lên
+     34, rồi ba tháng sau một lượt sửa khác kéo về 28 — và bộ đo nói
+     "không tụt", vì nó vẫn đang so với 28.
+
+     Nghĩa là mỗi lần cải thiện đều tự nguyện vứt đi phần bảo vệ mà
+     chính nó vừa tạo ra. Cái bẫy ở chỗ nó không đòi ai làm gì sai cả:
+     người cải thiện chỉ cần QUÊN nâng một con số trong một tệp khác.
+
+     Nên mốc ra khỏi mã và vào một tệp riêng mà bộ đo TỰ GHI khi số đo
+     tốt lên. Ghi tự động chứ không nhắc người nâng, vì một lời nhắc là
+     một việc người ta phải nhớ; còn tệp mốc đổi thì nó nằm trong lượt
+     duyệt mã, ai cũng thấy. */
+  const duongMoc = pathGoc.join(__dirname, 'moc-tro-ly.json');
+  let moc = {trung: 28, tong: 40, luc: '', vi: 'Mốc gõ cứng trước 9.99.6'};
+  try { moc = JSON.parse(fs.readFileSync(duongMoc, 'utf8')); } catch (e) {}
+
+  /* Số câu hỏi đổi thì mốc CŨ không so được nữa — so 28 câu trúng trên
+     40 với 28 trên 50 là so hai thứ khác nhau. Đổi bộ câu hỏi thì mốc
+     đặt lại theo tỷ lệ, và nói ra là đã đặt lại. */
+  if (Number(moc.tong) !== r.length) {
+    const cu = moc.trung + '/' + moc.tong;
+    moc = {trung: Math.round(Number(moc.trung) / Number(moc.tong) * r.length),
+      tong: r.length, luc: moc.luc,
+      vi: 'Bộ câu hỏi đổi từ ' + moc.tong + ' lên ' + r.length + ' câu — mốc quy theo tỷ lệ từ ' + cu};
+    console.log('  (bộ câu hỏi đổi cỡ — mốc quy lại thành ' + moc.trung + '/' + r.length + ')');
+  }
+
+  if (t < moc.trung) {
+    console.log('✗ TỤT so với mốc ' + moc.trung + '/' + moc.tong +
+      ' — phần tra kho vừa hỏng ở đâu đó');
+    if (moc.luc) console.log('  (mốc ấy đạt được lúc ' + moc.luc + ')');
     await b.close(); process.exit(1);
   }
-  console.log('✓ Không tụt so với mốc ' + MOC + '/' + r.length);
+
+  if (t > moc.trung) {
+    const cu = moc.trung;
+    moc = {trung: t, tong: r.length, luc: new Date().toISOString().slice(0, 16),
+      vi: 'Bộ đo tự nâng khi số đo tốt lên — nâng từ ' + cu + '/' + r.length};
+    fs.writeFileSync(duongMoc, JSON.stringify(moc, null, 2) + '\n');
+    console.log('✓ TỐT LÊN ' + cu + ' → ' + t + '/' + r.length +
+      ' — đã nâng mốc trong tools/moc-tro-ly.json, nhớ đẩy tệp ấy lên cùng lượt sửa');
+  } else {
+    console.log('✓ Không tụt so với mốc ' + moc.trung + '/' + moc.tong);
+  }
   await b.close();
 })();

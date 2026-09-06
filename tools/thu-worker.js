@@ -180,6 +180,22 @@ bao(!(await goi({fn: 'dangNhap', u: 'bamcu@gita365.vn', mk: 'MatKhauRieng2027!'}
 /* ═══════════════ 4 · PHIÊN ═══════════════ */
 console.log('\n4 · PHIÊN');
 const tk = dn.than.token;
+/* ── ĐO ĐÚNG HÌNH MÁY KHÁCH GỬI, KHÔNG ĐO HÌNH TỰ TAY VIẾT RA ──
+
+   Tới 9.99.5 mọi phép đo capKhoa đều tự tay viết một thân yêu cầu CÓ
+   token, còn src/kho-khoa.js thì gửi {fn,u,vai,goi,may} — KHÔNG token.
+   Nên máy chủ mới trả AUTH cho mọi lượt xin khoá của bản web, và kho
+   mã hoá không bao giờ mở được. Bộ thử xanh suốt, vì nó thử một hình
+   mà máy khách chưa từng gửi.
+
+   Đây là lớp hỏng tệ nhất của một bộ thử: nó đo cổng, không đo đường
+   đi tới cổng. */
+const nhuMayKhach = await goi({fn:'capKhoa', token: tk, u:'phuhuynh@gita365.vn',
+  vai:'R13', goi:['nen'], may:'trinh-duyet-thu'});
+bao(nhuMayKhach.than.ok,
+  'XIN KHOÁ KHO BẰNG ĐÚNG HÌNH MÁY KHÁCH GỬI — kèm vai và tên máy, không chỉ kèm token',
+  'bộ thử đo cổng mà không đo đường đi tới cổng thì nó xanh cả khi máy khách gửi thiếu trường');
+
 bao((await goi({fn: 'capKhoa', token: tk, u: 'phuhuynh@gita365.vn', goi: ['nen']})).than.ok,
   'token đúng thì qua cửa');
 bao((await goi({fn: 'capKhoa', token: tk, u: 'coach@gita365.vn'})).than.code === 'AUTH',

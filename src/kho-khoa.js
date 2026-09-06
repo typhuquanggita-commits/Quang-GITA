@@ -356,6 +356,13 @@ function xinKhoa(danhSach) {
     body: JSON.stringify({
       fn: 'capKhoa',
       u: G.S.acc && G.S.acc.u,
+      /* MÃ PHIÊN, KHÔNG ĐƯỢC QUÊN. Máy chủ cũ (Apps Script) nhận diện
+         theo tên tài khoản nên đường này chạy suốt mà không gửi token.
+         Máy chủ mới đòi phiên cho capKhoa, nên thiếu trường này là MỌI
+         lượt xin khoá của bản web trả về AUTH và kho mã hoá không bao
+         giờ mở — im lặng, vì ứng dụng vẫn chạy ở chế độ mẫu.
+         Gửi kèm thì máy chủ cũ bỏ qua, máy chủ mới dùng. */
+      token: G.PHIEN_TOKEN || '',
       vai: G.S.role,
       goi: danhSach,
       may: navigator.userAgent.slice(0, 120)

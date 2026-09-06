@@ -10097,6 +10097,73 @@ const { chromium } = require(PW);
       ra.luongBoTrongSo = thu.trongBoQua === 55 && thu.diem === 100;
     }
 
+    /* ── MỌI CỬA CẦN PHIÊN MÀ MÁY KHÁCH GỌI THÌ PHẢI GỬI KÈM token ──
+
+       Bản 9.99.6 tìm ra một lỗ đúng lớp này: src/kho-khoa.js gửi
+       {fn:'capKhoa', u, vai, goi, may} — KHÔNG token — trong khi máy
+       chủ mới đòi phiên cho capKhoa. Nghĩa là mọi lượt xin khoá kho
+       của bản web trả về AUTH và kho mã hoá không bao giờ mở được.
+
+       Bộ thử máy chủ xanh suốt, vì mọi phép đo capKhoa đều TỰ TAY viết
+       một thân yêu cầu có token. Nó đo cái cổng mà không đo đường đi
+       tới cổng.
+
+       Nên phép đo này soi từ phía MÁY KHÁCH: đọc danh sách CAN_PHIEN
+       thẳng từ nguồn máy chủ, rồi tìm trong src/ mọi chỗ dựng thân yêu
+       cầu cho một việc trong danh sách ấy, và đòi cùng khối ấy có
+       token. Thêm một việc vào CAN_PHIEN mà quên sửa máy khách là đỏ
+       ngay hôm ấy, chứ không đợi tới lúc có người mở không được kho. */
+    {
+      const nguonWk = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'worker.js'), 'utf8');
+      const khoiCP = (nguonWk.match(/const CAN_PHIEN = \[[\s\S]*?\];/) || [''])[0];
+      const canPhien = (khoiCP.match(/'[a-zA-Z]+'/g) || []).map(x => x.slice(1, -1));
+
+      const thieuTok = [];
+      let soCho = 0;
+      for (const ten of fsGoc.readdirSync(pathGoc.join(__dirname, '..', 'src'))) {
+        if (!/\.js$/.test(ten)) continue;
+        /* BỎ CHÚ GIẢI TRƯỚC KHI SOI. Hai lý do, và lý do thứ hai mới
+           quan trọng: chú giải dài đẩy trường thật ra ngoài cửa sổ cắt
+           (đúng chỗ phép đo này báo nhầm lần đầu), và một chữ "token:"
+           nằm trong chú giải thì không gửi gì lên máy chủ cả — để nó
+           tính là đạt thì phép đo tự nhận lời khai làm bằng chứng. */
+        const mn = fsGoc.readFileSync(pathGoc.join(__dirname, '..', 'src', ten), 'utf8')
+          .replace(/\/\*[\s\S]*?\*\//g, ' ').replace(/^\s*\/\/.*$/gm, ' ');
+        /* Mỗi chỗ gõ thẳng fn:'X' trong một thân yêu cầu. Cắt lấy khối
+           quanh nó rồi hỏi khối ấy có token không — cắt theo khối chứ
+           không theo cả tệp, vì cả tệp thì tệp nào cũng có chữ token
+           ở đâu đó và phép đo thành câm. */
+        const re = /fn:\s*'([a-zA-Z]+)'/g;
+        let m;
+        while ((m = re.exec(mn))) {
+          if (canPhien.indexOf(m[1]) < 0) continue;
+          soCho++;
+          const khoi = mn.slice(Math.max(0, m.index - 300), m.index + 400);
+          if (!/token\s*:/.test(khoi)) thieuTok.push(ten + ' → ' + m[1]);
+        }
+      }
+      ra.tokDuChoGoi = soCho;
+      ra.tokThieu = thieuTok;
+      /* Cửa chung goiMayChu tự gắn token, nên nó không cần có mặt trong
+         phép đếm — nhưng nó PHẢI tồn tại và PHẢI gắn token, vì mọi màn
+         mới đều đi qua nó. */
+      const nguonCua = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'src', 'noi-may-chu.js'), 'utf8');
+      ra.cuaChungGanToken = /G\.goiMayChu\s*=/.test(nguonCua) &&
+        /token:\s*G\.PHIEN_TOKEN/.test(nguonCua);
+      ra.tokDu = thieuTok.length === 0 && soCho > 0 && ra.cuaChungGanToken;
+    }
+
+    bao(ra.tokDu,
+      'MỌI CỬA CẦN PHIÊN MÀ MÁY KHÁCH GỌI THẲNG ĐỀU GỬI KÈM MÃ PHIÊN. Bản 9.99.6 tìm ra một lỗ đúng lớp này và nó đã im lặng suốt nhiều bản: src/kho-khoa.js gửi {fn:capKhoa, u, vai, goi, may} mà KHÔNG gửi token, trong khi máy chủ mới xếp capKhoa vào danh sách cần phiên. Nghĩa là trên nền mới, MỌI lượt xin khoá kho của bản web trả về AUTH và kho mã hoá không bao giờ mở được — mà ứng dụng vẫn chạy, chỉ là chạy ở chế độ mẫu, nên không ai thấy nó hỏng. Bộ thử máy chủ xanh suốt vì mọi phép đo capKhoa đều TỰ TAY viết một thân yêu cầu có token: nó đo cái cổng mà không đo đường đi tới cổng, và đó là lớp hỏng tệ nhất một bộ thử có thể mắc. Nên phép đo này soi từ phía MÁY KHÁCH — đọc danh sách CAN_PHIEN thẳng từ nguồn máy chủ chứ không chép lại, rồi tìm trong src/ mọi chỗ gõ thẳng một việc thuộc danh sách ấy và đòi cùng khối ấy có token. Thêm một việc vào CAN_PHIEN mà quên sửa máy khách là đỏ ngay hôm ấy. Cửa chung G.goiMayChu tự gắn token nên mọi màn mới đi qua nó đều an toàn, và phép đo canh luôn rằng cửa ấy còn gắn thật',
+      ra.tokDu
+        ? ra.tokDuChoGoi + ' chỗ gọi thẳng đều có mã phiên · cửa chung còn gắn token'
+        : [(ra.tokThieu || []).length ? 'THIẾU token: ' + ra.tokThieu.join(' · ') : '',
+           !ra.tokDuChoGoi ? 'không tìm thấy chỗ gọi nào — phép đo có thể đã câm' : '',
+           !ra.cuaChungGanToken ? 'cửa chung goiMayChu KHÔNG còn gắn token' : ''
+          ].filter(Boolean).join(' · '));
+
     bao(ra.luongNguongKhop && ra.luongKhongCoTienMacDinh && ra.luongConSoCho &&
         ra.luongNullKhongThanh100 && ra.luongBoTrongSo,
       'BẢNG LƯƠNG PHÒNG TÀI CHÍNH — NGƯỠNG VÀ TRỌNG SỐ Ở MÁY CHỦ PHẢI KHỚP BẢN GỐC TRONG KHO TỪNG Ô, VÀ MÁY KHÔNG ĐƯỢC TỰ ĐẶT MỘT ĐỒNG LƯƠNG NÀO. Mười lăm thước KPI có ngưỡng, đơn vị, hướng tốt và trọng số khai ở G.TC_KPI trong kho đã mã hoá; máy chủ không đọc được kho ấy nên giữ một bản chép, cùng lý do đã buộc GIA_TANG phải có bản chép từ 9.94. Chấm điểm ở máy khách rồi gửi số điểm lên thì khỏi cần bản chép, nhưng nó phá luật đầu tiên của TC-KP-01 — "không thước nào do người tự khai" — vì máy khách là chỗ người dùng sửa được. Nên phép đo này đối chiếu TỪNG Ô chứ không chỉ tên thước: lệch một ô ngưỡng nghĩa là bảng lương trả theo một cái thước khác với cái thước người ta được đọc, và không ai nhìn ra vì hai bên vẫn gọi cùng một tên. TC_LUONG tự khai hai chỗ máy không quyết được — L-01 số tiền từng tầng, L-02 điểm dưới 60 xử lý thế nào — nên nguồn máy chủ không được chứa một con số tiền mặc định nào: con số mặc định ấy sẽ thành lương thật của một người thật, vì không ai đi sửa một chỗ đã có số. Và thước KHÔNG ĐO ĐƯỢC trong kỳ thì ra khỏi phép tính chứ không thành 100 — cho nó 100 là thưởng một tháng không ai làm gì, cho nó 0 là phạt người vì việc không đến tay họ; phép đo gọi thẳng hàm chấm chứ không đọc chú giải, vì chú giải nói gì cũng được',
