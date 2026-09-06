@@ -559,6 +559,10 @@ G.tlQuenChiMuc = function () { CACHE = null; };
    mươi năm trong nghề tìm kiếm, không phải thứ tôi tự nghĩ ra.
    ═══════════════════════════════════════════════════════════════ */
 var K1 = 1.2, B = 0.72;
+/* Mỗi kho được cử tối đa bao nhiêu người vào đầu bảng — xem chú giải
+   ở chỗ dùng. Đặt cạnh K1 và B vì nó cũng là một tham số của phép
+   xếp hạng, và ba con số ấy phải đọc được cùng một chỗ. */
+var TRAN_MOI_KHO = 2;
 
 /* ── SÀN ĐỘ DÀI ──
    BM25 chia điểm cho độ dài bản ghi so với độ dài trung bình, để một
@@ -734,13 +738,40 @@ G.tlTra = function (cauHoi) {
   var dinh = ra.length ? ra[0].diem : 0;
   ra = ra.filter(function (x) { return x.diem >= dinh * 0.28; });
 
-  var thay = {}, loc = [];
+  var thay = {}, sach = [];
   ra.forEach(function (x) {
     var k = x.khoNguon + '|' + x.ma;
     if (thay[k]) return;
-    thay[k] = 1; loc.push(x);
+    thay[k] = 1; sach.push(x);
   });
-  loc = loc.slice(0, 12);
+
+  /* ══ MỘT KHO KHÔNG ĐƯỢC CHIẾM CẢ ĐẦU BẢNG ══
+
+     Danh sách trả về có MƯỜI HAI chỗ. Trước 9.99.7 chúng chia theo
+     điểm thuần, nên một kho ăn ba tới tám chỗ là chuyện thường:
+
+       "Văn bản pháp lý cần soạn"  → RSP_CHAN · RSP_CHAN · RSP_CHAN
+       "Cây quyết định chọn hợp đồng" → HSH_HD · HSH_HD · HSH_HD
+
+     Cùng họ thì dùng chung gần hết vốn từ, nên bản ghi thứ hai và thứ
+     ba của một kho gần như luôn đứng ngay sau bản ghi thứ nhất — và
+     KHO ANH EM giữ đúng câu trả lời thì không còn chỗ mà chen vào.
+     Đo trên bốn mươi câu: bảy câu trượt đúng vì lý do này, và kho cần
+     tìm KHÔNG có mặt trong cả mười hai kết quả.
+
+     Nên mỗi kho được cử tối đa HAI người vào bảng, phần dôi ra xếp
+     xuống cuối chứ không bỏ đi — bỏ đi thì một câu hỏi mà thật sự chỉ
+     một kho trả lời được sẽ mất kết quả thứ ba trở đi.
+
+     Hai chứ không phải một: một thì một kho đúng thật cũng chỉ được
+     nói một câu, và người hỏi mất luôn phần bổ nghĩa. Ba thì vẫn kín
+     cả đầu bảng, đúng chỗ đang hỏng. */
+  var demKho = {}, dau = [], sau = [];
+  sach.forEach(function (x) {
+    var n = (demKho[x.khoNguon] = (demKho[x.khoNguon] || 0) + 1);
+    (n <= TRAN_MOI_KHO ? dau : sau).push(x);
+  });
+  var loc = dau.concat(sau).slice(0, 12);
 
   if (G.chamTaiNguyen) loc.forEach(function (x) { G.chamTaiNguyen(x.loai, x.ma); });
 

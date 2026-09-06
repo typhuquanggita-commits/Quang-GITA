@@ -105,14 +105,37 @@ const HOI = [
     /* Trúng = kho đáng lẽ phải ra nằm trong 3 kết quả đầu */
     var top3 = kq.slice(0,3).map(function(x){ return (x.khoNguon||'') + '|' + x.loai + '|' + x.ma; });
     var trung = top3.some(function(s){ return s.indexOf(h[1]) >= 0; });
-    return { hoi: h[0], can: h[1], so: kq.length, trung: trung,
+    /* HAI CON SỐ, VÀ CON SỐ THỨ HAI KHÔNG THAY CON SỐ THỨ NHẤT.
+
+       TRÚNG đo kho cần tìm có lên được BA CHỖ ĐẦU không — đó là thứ
+       người dùng thật sự đọc, và nó vẫn là điều kiện đạt.
+
+       CÓ MẶT đo kho ấy có lọt vào danh sách không, dù ở hạng mấy.
+       Dựng ở 9.99.7 để nhìn được phần cải thiện mà con số đầu không
+       thấy: bỏ trần mỗi kho thì HP_TANG và TINHHUONG không có mặt
+       trong cả mười hai kết quả; đặt trần thì chúng vào được, ở hạng
+       tám và mười hai. Đó là chuyện khác hẳn "vẫn trượt như cũ" —
+       một kho đã vào danh sách thì một lượt chỉnh cách chấm còn kéo
+       nó lên được, còn một kho không có mặt thì không.
+
+       Nới con số đầu ra thành "có mặt là đạt" mới là tự lừa mình; nêu
+       riêng hai con số thì không. */
+    var hang = -1;
+    for (var i = 0; i < kq.length; i++)
+      if (String(kq[i].khoNguon||'') === h[1]) { hang = i + 1; break; }
+    return { hoi: h[0], can: h[1], so: kq.length, trung: trung, hang: hang,
       dau: kq.length ? (kq[0].loai + ' · ' + String(kq[0].ten).slice(0,40)) : '(trống)' };
   }), HOI);
-  let t = 0; r.forEach(x => { if (x.trung) t++; });
+  let t = 0, coMat = 0;
+  r.forEach(x => { if (x.trung) t++; if (x.hang > 0) coMat++; });
   r.forEach(x => console.log((x.trung ? ' ✓ ' : ' ✗ ') + x.hoi +
-    '\n     cần ' + x.can + ' · nhận ' + x.dau));
+    '\n     cần ' + x.can + ' · nhận ' + x.dau +
+    (x.trung ? '' : (x.hang > 0 ? ' · (kho cần tìm ở hạng ' + x.hang + ')'
+                                : ' · (kho cần tìm KHÔNG có mặt)'))));
   const ti = Math.round(t/r.length*100);
-  console.log('\nTRÚNG ' + t + '/' + r.length + ' = ' + ti + '%');
+  console.log('\nTRÚNG ' + t + '/' + r.length + ' = ' + ti + '%' +
+    '   ·   CÓ MẶT ' + coMat + '/' + r.length +
+    ' = ' + Math.round(coMat/r.length*100) + '%');
 
   /* ══ MỐC KHÔNG ĐƯỢC TỤT — VÀ MỐC PHẢI TỰ NÂNG ══
 
@@ -155,15 +178,27 @@ const HOI = [
     await b.close(); process.exit(1);
   }
 
-  if (t > moc.trung) {
-    const cu = moc.trung;
-    moc = {trung: t, tong: r.length, luc: new Date().toISOString().slice(0, 16),
-      vi: 'Bộ đo tự nâng khi số đo tốt lên — nâng từ ' + cu + '/' + r.length};
+  /* CÓ MẶT cũng có mốc riêng, và cũng không được tụt. Không có mốc thì
+     một lượt sửa kéo kho cần tìm ra khỏi danh sách vẫn đi qua, miễn là
+     ba chỗ đầu không đổi — mà ra khỏi danh sách là chỗ khó cứu hơn. */
+  const mocCoMat = Number(moc.coMat || 0);
+  if (coMat < mocCoMat) {
+    console.log('✗ TỤT phần CÓ MẶT: ' + coMat + '/' + r.length + ' so với mốc ' +
+      mocCoMat + ' — kho cần tìm vừa bị đẩy ra khỏi danh sách ở đâu đó');
+    await b.close(); process.exit(1);
+  }
+
+  if (t > moc.trung || coMat > mocCoMat) {
+    const cu = moc.trung + '/' + mocCoMat;
+    moc = {trung: Math.max(t, moc.trung), coMat: Math.max(coMat, mocCoMat),
+      tong: r.length, luc: new Date().toISOString().slice(0, 16),
+      vi: 'Bộ đo tự nâng khi số đo tốt lên — nâng từ ' + cu};
     fs.writeFileSync(duongMoc, JSON.stringify(moc, null, 2) + '\n');
-    console.log('✓ TỐT LÊN ' + cu + ' → ' + t + '/' + r.length +
+    console.log('✓ TỐT LÊN ' + cu + ' → ' + t + '/' + coMat +
       ' — đã nâng mốc trong tools/moc-tro-ly.json, nhớ đẩy tệp ấy lên cùng lượt sửa');
   } else {
-    console.log('✓ Không tụt so với mốc ' + moc.trung + '/' + moc.tong);
+    console.log('✓ Không tụt — trúng ' + moc.trung + '/' + moc.tong +
+      ' · có mặt ' + mocCoMat + '/' + moc.tong);
   }
   await b.close();
 })();

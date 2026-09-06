@@ -452,11 +452,54 @@ export async function chotLuong(y, env, db, hoSo) {
     ).bind(...cot).run();
   }
 
+  /* ══ LƯƠNG ĐÃ CHỐT LÀ MỘT KHOẢN CHI, VÀ NÓ PHẢI VÀO SỔ CHI ══
+
+     Không đưa vào thì bản kê kế toán thiếu đúng khoản chi lớn nhất và
+     đều đặn nhất của Học viện, và bộ số khai thuế dựng trên một bản kê
+     thiếu — cả hai vẫn "cân", vì chúng cân với chính chỗ thiếu ấy.
+
+     Khoản này KHÔNG đi qua thang nấc, và đó là một quyết định chứ
+     không phải một lối tắt. Thang nấc đứng giữa một NGƯỜI và một SỐ
+     TIỀN họ tự gõ ra; ở đây không có số tiền nào được gõ: nó bằng hệ
+     số chỉ Super Admin đặt được, nhân với điểm chấm trên sổ thật, cộng
+     tầng ghi nhận đã có lý do. Bắt một khoản lương 16 triệu phải kèm
+     hoá đơn theo nấc N3 là đòi một thứ không tồn tại.
+
+     Đổi lại, cái móc idBangLuong KHÔNG được tin: doiSoatLuong soi hai
+     phía y như đối chiếu ngân hàng.
+
+     THỨ TỰ GHI: dòng lương TRƯỚC, khoản chi SAU. D1 không gói hai lượt
+     ghi vào một giao dịch, nên phải chọn chỗ hỏng: hỏng sau dòng lương
+     thì có một dòng lương chưa có khoản chi — đối chiếu nêu ra và vá
+     được; hỏng sau khoản chi thì có một khoản chi mồ côi trong sổ, và
+     tiền ra mà không ai biết vì sao. */
+  let idChi = null, chiHong = '';
+  try {
+    idChi = 'CP-' + tokenMoi().slice(0, 14);
+    await db.prepare(
+      'INSERT INTO chiPhi (id,khoanMuc,soTien,ngayChi,hinhThuc,dienGiai,' +
+      'nguoiDeXuat,deXuatLuc,nguoiDuyet,duyetLuc,nac,trangThai,idBangLuong) ' +
+      "VALUES (?,'luong',?,?,'chuyenKhoan',?,'may-chu',?,?,?,?,'daDuyet',?)"
+    ).bind(idChi, hs.luongCung + phanKpi + ghiNhan, cuoiKy(ky),
+      'Lương kỳ ' + ky + ' · ' + ((VI_TRI_TC[vt.chucNang] || {}).ten || vt.chucNang) +
+        ' · ' + nguoi,
+      luc, hoSo.u, luc, 'LUONG', id).run();
+  } catch (e) {
+    idChi = null;
+    chiHong = String(e && e.message || e);
+    console.error('LUONG_VAO_SO_HONG', id, chiHong);
+  }
+
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'LUONG_CHOT',
     doiTuong: id, chiTiet: ky + ' · ' + nguoi + ' · ' + cham.diem + ' điểm · ' +
-      dinhDang(hs.luongCung + phanKpi + ghiNhan)});
+      dinhDang(hs.luongCung + phanKpi + ghiNhan) +
+      (idChi ? ' · vào sổ chi ' + idChi : ' · CHƯA VÀO SỔ CHI')});
 
-  return {ok: true, id, ky, username: nguoi, viTri: vt.chucNang,
+  return {ok: true, id, ky, username: nguoi, viTri: vt.chucNang, idChi,
+    /* Vào sổ hỏng thì NÓI RA ngay trong câu trả lời, không im. Đối
+       chiếu lương cũng nêu, nhưng người vừa bấm chốt là người dễ vá
+       nhất và họ đang ngồi trước màn hình. */
+    chuaVaoSoChi: idChi ? undefined : (chiHong || 'không rõ'),
     diem: cham.diem, bac: cham.bac, trongBoQua: cham.trongBoQua,
     luongCung: hs.luongCung, phanKpi, ghiNhan,
     tong: hs.luongCung + phanKpi + ghiNhan,
@@ -465,4 +508,85 @@ export async function chotLuong(y, env, db, hoSo) {
         'người bị trừ lương cãi lại được bằng chính những số đo ấy.'};
 }
 
-export { NGUONG_KPI, BAC_DIEM, NGUONG_NGOI_LAI, chamViTri, chamMotThuoc };
+/** Mốc TIỀN RA của một kỳ lương: ngày cuối của tháng ấy, giờ Việt Nam.
+
+    Không lấy ngày chốt: chốt tháng Ba vào tháng Sáu thì khoản chi phải
+    thuộc tháng Ba, nếu không bản kê quý I thiếu lương ba tháng và quý
+    II thừa. */
+function cuoiKy(ky) {
+  const [n, t] = ky.split('-').map(Number);
+  /* Ngày 0 của tháng SAU là ngày cuối của tháng NÀY — không phải đếm
+     tay 30 hay 31, và tháng Hai năm nhuận cũng đúng. */
+  const d = new Date(Date.UTC(n, t, 0, 16, 59, 59));
+  return d.toISOString();
+}
+
+/* ═══════════════ ĐỐI CHIẾU LƯƠNG — HAI PHÍA ═══════════════
+
+   Cùng lối với đối chiếu ngân hàng, và cùng lý do: một con số "khớp
+   hay không khớp" không nói được phải làm gì, còn hai danh sách thì
+   nói hai chuyện khác hẳn nhau.
+
+     DÒNG LƯƠNG ĐÃ CHỐT MÀ CHƯA CÓ KHOẢN CHI
+       — Học viện nợ một người mà sổ chi không biết. Bản kê kế toán
+         thiếu, và người ấy có thể không được trả.
+
+     KHOẢN CHI MÓC VÀO MỘT DÒNG LƯƠNG KHÔNG CÓ THẬT, HOẶC LỆCH SỐ TIỀN
+       — Đây là chỗ MẤT TIỀN: ai đó gõ tay một khoản 'luong' rồi gắn
+         một cái móc vào để nó trông như máy sinh ra. Cái móc không
+         được tin, nên phép này soi ngược lại từ sổ chi. */
+export async function doiSoatLuong(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  const q = await quyenCua(db, hoSo.u);
+  if (lv > 3 && !q.quanLyPhong && !q.keToanTruong)
+    return {ok: false, code: 'NOPERM',
+      error: 'Đối chiếu lương cần vai R01–R03, quyền quản lý phòng, hoặc Kế toán trưởng.'};
+
+  const ky = String(y.ky || '').trim();
+  const locKy = /^\d{4}-\d{2}$/.test(ky);
+
+  const bl = await db.prepare(
+    "SELECT * FROM bangLuong WHERE trangThai = 'daChot'" +
+    (locKy ? ' AND ky = ?' : '') + ' ORDER BY ky DESC LIMIT 400'
+  ).bind(...(locKy ? [ky] : [])).all();
+
+  const cp = await db.prepare(
+    "SELECT id, soTien, trangThai, idBangLuong, dienGiai FROM chiPhi " +
+    'WHERE idBangLuong IS NOT NULL LIMIT 400').all();
+
+  const theoMoc = {};
+  for (const x of (cp.results || [])) (theoMoc[x.idBangLuong] =
+    theoMoc[x.idBangLuong] || []).push(x);
+
+  const chuaVaoSo = [], lechTien = [], mocMaCoi = [], mocTrung = [];
+  const idThat = {};
+  for (const b of (bl.results || [])) {
+    idThat[b.id] = b;
+    const ds = (theoMoc[b.id] || []).filter(x => x.trangThai !== 'huy');
+    const tong = b.luongCung + b.phanKpi + b.ghiNhan;
+    if (!ds.length) { chuaVaoSo.push({id: b.id, ky: b.ky, username: b.username,
+      soTien: tong}); continue; }
+    /* HAI khoản chi cùng móc vào một dòng lương là trả hai lần. */
+    if (ds.length > 1) mocTrung.push({id: b.id, ky: b.ky, username: b.username,
+      so: ds.length, idChi: ds.map(x => x.id)});
+    for (const c of ds)
+      if (Math.round(Number(c.soTien)) !== Math.round(tong))
+        lechTien.push({idChi: c.id, idLuong: b.id, ky: b.ky, username: b.username,
+          soTrenSoChi: Number(c.soTien), soTrenBangLuong: tong});
+  }
+  for (const c of (cp.results || []))
+    if (!idThat[c.idBangLuong] && c.trangThai !== 'huy')
+      mocMaCoi.push({idChi: c.id, mocToi: c.idBangLuong, soTien: Number(c.soTien),
+        dienGiai: c.dienGiai});
+
+  const so = chuaVaoSo.length + lechTien.length + mocMaCoi.length + mocTrung.length;
+  return {ok: true, ky: locKy ? ky : 'tất cả', soDongLuong: (bl.results || []).length,
+    soKhoanChi: (cp.results || []).length, soChoLech: so, khop: so === 0,
+    chuaVaoSo, lechTien, mocMaCoi, mocTrung,
+    vi: 'Hai phía, hai chuyện khác nhau. LƯƠNG CHƯA VÀO SỔ CHI: Học viện nợ một ' +
+        'người mà sổ chi không biết, nên bản kê thiếu và người ấy có thể không được ' +
+        'trả. MÓC MỒ CÔI hoặc LỆCH TIỀN: ai đó gõ tay một khoản lương rồi gắn móc ' +
+        'cho nó trông như máy sinh — đây là chỗ mất tiền, và cái móc không được tin.'};
+}
+
+export { NGUONG_KPI, BAC_DIEM, NGUONG_NGOI_LAI, chamViTri, chamMotThuoc, cuoiKy };

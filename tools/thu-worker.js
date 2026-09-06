@@ -2783,6 +2783,98 @@ bao(rieng.than.ok && rieng.than.chiDongCuaToi && rieng.than.dong.length === 1 &&
   'KẾ TOÁN CHI XEM ĐƯỢC ĐÚNG DÒNG CỦA CHÍNH MÌNH, không thấy lương người khác',
   'không cho một người xem bảng lương của chính họ là buộc họ tin một con số không tra lại được');
 
+/* ── LƯƠNG ĐÃ CHỐT PHẢI VÀO SỔ CHI · 9.99.7 ── */
+console.log('\n15i · LƯƠNG VÀO SỔ CHI VÀ ĐỐI CHIẾU HAI PHÍA');
+
+const cpLuong = db.prepare("SELECT * FROM chiPhi WHERE idBangLuong = ?").get(chot1.than.id);
+bao(!!chot1.than.idChi && !!cpLuong && cpLuong.khoanMuc === 'luong' &&
+    cpLuong.trangThai === 'daDuyet' &&
+    Math.round(cpLuong.soTien) === chot1.than.tong,
+  'CHỐT MỘT DÒNG LƯƠNG THÌ NÓ VÀO SỔ CHI NGAY, ĐÚNG SỐ TIỀN',
+  'không vào sổ thì bản kê kế toán thiếu đúng khoản chi lớn nhất và đều đặn nhất, ' +
+  'và bộ số khai thuế dựng trên một bản kê thiếu — cả hai vẫn "cân", vì chúng cân ' +
+  'với chính chỗ thiếu ấy');
+
+/* MỐC TIỀN RA LÀ NGÀY CUỐI CỦA KỲ LƯƠNG, KHÔNG PHẢI NGÀY CHỐT.
+   Chốt tháng Ba vào tháng Sáu mà ghi mốc tháng Sáu thì bản kê quý I
+   thiếu lương ba tháng và quý II thừa. */
+/* Đọc qua ô có thể VẮNG chứ không đọc thẳng: dòng chi vắng thì phép đo
+   trên đã đỏ rồi, còn ở đây mà đọc thẳng .ngayChi thì bộ thử NÉM và
+   mọi phép đo sau nó im luôn. Một bộ thử sập là một bộ thử chỉ báo
+   được đúng một chỗ hỏng đầu tiên. */
+bao(!!cpLuong && cpLuong.ngayChi.slice(0, 7) === '2026-08',
+  'MỐC TIỀN RA LÀ NGÀY CUỐI CỦA KỲ LƯƠNG, không phải ngày bấm chốt',
+  cpLuong ? 'ngày chi ' + cpLuong.ngayChi.slice(0, 10) + ' cho kỳ 2026-08'
+          : 'không có khoản chi nào cho dòng lương ấy');
+
+const cpThapDiem = db.prepare("SELECT ngayChi FROM chiPhi WHERE idBangLuong = ?")
+  .get(chotThap.than.id);
+bao(!!cpThapDiem && cpThapDiem.ngayChi.slice(0, 7) === '2026-03',
+  'và kỳ tháng Ba chốt muộn vẫn ghi mốc tiền ra vào tháng Ba',
+  cpThapDiem ? 'ngày chi ' + cpThapDiem.ngayChi.slice(0, 10) : 'không có khoản chi');
+
+/* KHOẢN LƯƠNG PHẢI CHẢY TỚI BẢN KÊ KẾ TOÁN. Đo ở đầu ra thật, không
+   đo ở chỗ vừa ghi vào: ghi đúng mà bản kê không đọc tới thì vẫn thiếu. */
+const keQuy3 = await goi({fn:'baoCaoKeToan', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:'2026-Q3'});
+const mucLuongQ3 = ((keQuy3.than.F_chiPhi || {}).theoKhoanMuc || [])
+  .find(function (x) { return x.khoanMuc === 'luong'; }) || {tien: 0};
+bao(keQuy3.than.ok && mucLuongQ3.tien >= chot1.than.tong,
+  'VÀ KHOẢN LƯƠNG ẤY CHẢY TỚI BẢN KÊ KẾ TOÁN QUÝ — đo ở đầu ra, không đo ở chỗ vừa ghi vào',
+  mucLuongQ3.tien.toLocaleString('vi-VN') + 'đ khoản mục lương trong quý III');
+
+/* ══ ĐỐI CHIẾU HAI PHÍA ══ */
+bao(!(await goi({fn:'doiSoatLuong', token:tkCoach, u:'coach@gita365.vn'})).than.ok,
+  'COACH KHÔNG ĐỐI CHIẾU ĐƯỢC LƯƠNG');
+
+const dsL = await goi({fn:'doiSoatLuong', token:tkSA, u:'superadmin@gita365.vn'});
+bao(dsL.than.ok && dsL.than.khop && dsL.than.soDongLuong >= 2,
+  'ĐỐI CHIẾU LƯƠNG KHỚP CẢ HAI PHÍA khi mọi dòng chốt đều vào sổ đúng số',
+  dsL.than.soDongLuong + ' dòng lương · ' + dsL.than.soKhoanChi + ' khoản chi · 0 chỗ lệch');
+
+/* ── CHIỀU MẤT TIỀN: GÕ TAY MỘT KHOẢN 'luong' RỒI GẮN MÓC CHO NÓ TRÔNG
+   NHƯ MÁY SINH RA. Cái móc không được tin, nên phép soi đi ngược lại
+   từ sổ chi. Đây là chiều mà một phép đối chiếu một-phía bỏ sót. */
+db.prepare("INSERT INTO chiPhi (id,khoanMuc,soTien,ngayChi,hinhThuc,dienGiai," +
+  "nguoiDeXuat,deXuatLuc,trangThai,idBangLuong) VALUES " +
+  "('CP-GIA-01','luong',99000000,'2026-08-31T10:00:00.000Z','chuyenKhoan'," +
+  "'Luong bo sung','truongcoach@gita365.vn','2026-08-31T10:00:00.000Z','daDuyet','BL-KHONG-CO-THAT')").run();
+const dsL2 = await goi({fn:'doiSoatLuong', token:tkSA, u:'superadmin@gita365.vn'});
+bao(!dsL2.than.khop && dsL2.than.mocMaCoi.length === 1 &&
+    dsL2.than.mocMaCoi[0].idChi === 'CP-GIA-01',
+  'MỘT KHOẢN CHI MÓC VÀO DÒNG LƯƠNG KHÔNG CÓ THẬT THÌ BỊ NÊU RA — đây là chiều MẤT TIỀN',
+  'gõ tay một khoản lương rồi gắn móc cho nó trông như máy sinh; cái móc không ' +
+  'được tin nên phép soi đi ngược lại từ sổ chi · ' +
+  dsL2.than.mocMaCoi[0].soTien.toLocaleString('vi-VN') + 'đ');
+
+/* ── CHIỀU LỆCH SỐ TIỀN ── */
+db.prepare("UPDATE chiPhi SET idBangLuong = ? WHERE id = 'CP-GIA-01'").run(chot1.than.id);
+const dsL3 = await goi({fn:'doiSoatLuong', token:tkSA, u:'superadmin@gita365.vn'});
+bao(dsL3.than.lechTien.length >= 1 && dsL3.than.mocTrung.length === 1,
+  'MÓC ĐÚNG DÒNG NHƯNG LỆCH SỐ TIỀN, VÀ HAI KHOẢN CÙNG MÓC MỘT DÒNG — cả hai đều bị nêu',
+  'hai khoản cùng móc một dòng lương là TRẢ HAI LẦN · lệch ' +
+  dsL3.than.lechTien.length + ' · trùng móc ' + dsL3.than.mocTrung.length);
+
+/* ── CHIỀU MẤT LÒNG NGƯỜI: DÒNG LƯƠNG CHỐT MÀ KHÔNG CÓ KHOẢN CHI ── */
+db.prepare("DELETE FROM chiPhi WHERE id = 'CP-GIA-01'").run();
+db.prepare("DELETE FROM chiPhi WHERE idBangLuong = ?").run(chotThap.than.id);
+const dsL4 = await goi({fn:'doiSoatLuong', token:tkSA, u:'superadmin@gita365.vn'});
+bao(dsL4.than.chuaVaoSo.length === 1 &&
+    dsL4.than.chuaVaoSo[0].id === chotThap.than.id,
+  'DÒNG LƯƠNG ĐÃ CHỐT MÀ CHƯA CÓ KHOẢN CHI CŨNG BỊ NÊU — Học viện nợ một người mà sổ chi không biết',
+  'lượt ghi hỏng giữa chừng để lại đúng chỗ này, và đối chiếu là thứ tìm ra nó');
+
+/* Vá lại để phần sau của bộ thử chạy trên một sổ sạch. */
+db.prepare("INSERT INTO chiPhi (id,khoanMuc,soTien,ngayChi,hinhThuc,dienGiai," +
+  "nguoiDeXuat,deXuatLuc,nguoiDuyet,duyetLuc,trangThai,idBangLuong) VALUES " +
+  "('CP-VA-01','luong',?,'2026-03-31T16:59:59.000Z','chuyenKhoan','Luong ky 2026-03'," +
+  "'may-chu','2026-09-06T00:00:00.000Z','superadmin@gita365.vn','2026-09-06T00:00:00.000Z'," +
+  "'daDuyet',?)").run(
+  chotThap.than.luongCung + chotThap.than.phanKpi + chotThap.than.ghiNhan,
+  chotThap.than.id);
+const dsL5 = await goi({fn:'doiSoatLuong', token:tkSA, u:'superadmin@gita365.vn'});
+bao(dsL5.than.khop, 'vá xong thì đối chiếu khớp lại — phép soi không nhớ dai một chỗ đã sửa');
+
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ

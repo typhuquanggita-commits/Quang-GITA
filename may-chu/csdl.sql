@@ -465,11 +465,28 @@ CREATE TABLE IF NOT EXISTS chiPhi (
   -- câu đầu tiên người đi kiểm tra hỏi là "khoản nào có hai người ký,
   -- khoản nào chỉ một" — và câu ấy phải trả lời được bằng phép lọc.
   tuGhi       INTEGER NOT NULL DEFAULT 0,
+  -- Khoản chi SINH RA TỪ MỘT DÒNG LƯƠNG ĐÃ CHỐT, không do người gõ.
+  --
+  -- Lương đã chốt là một khoản tiền Học viện nợ một người. Không đưa
+  -- nó vào sổ chi thì bản kê kế toán thiếu đúng khoản chi lớn nhất và
+  -- đều đặn nhất, và bộ số khai thuế dựng trên một bản kê thiếu.
+  --
+  -- Nhưng mở một lối cho khoản mục 'luong' đi thẳng vào sổ ở trạng
+  -- thái ĐÃ DUYỆT là mở đúng cái cửa mà cả thang nấc sinh ra để đóng.
+  -- Nên cột này KHÔNG phải một cái nhãn tin được: nó là một cái MÓC,
+  -- và phép đối chiếu lương soi hai phía như đối chiếu ngân hàng —
+  -- dòng lương nào chưa có khoản chi, và khoản chi nào móc vào một
+  -- dòng lương không có thật hoặc lệch số tiền.
+  idBangLuong TEXT,
   huyLuc      TEXT,
   lyDo        TEXT
 );
 
 CREATE INDEX IF NOT EXISTS ix_cp_ngay ON chiPhi (ngayChi DESC);
+-- Đối chiếu lương soi theo móc, và soi cả chiều "khoản chi móc vào
+-- một dòng lương không có thật" — nên chỉ mục một phần trên móc.
+CREATE INDEX IF NOT EXISTS ix_cp_luong ON chiPhi (idBangLuong)
+  WHERE idBangLuong IS NOT NULL;
 CREATE INDEX IF NOT EXISTS ix_cp_tt   ON chiPhi (trangThai, ngayChi);
 CREATE INDEX IF NOT EXISTS ix_cp_muc  ON chiPhi (khoanMuc, ngayChi);
 -- Phép soi chia nhỏ cộng dồn theo (khoản mục × người đề xuất) trong
