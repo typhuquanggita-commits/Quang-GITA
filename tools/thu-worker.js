@@ -1135,8 +1135,17 @@ bao(hhTruoc > 0 && db.prepare("SELECT count(*) c FROM hoaHongTra WHERE nhaDuocKe
 bao(db.prepare("SELECT count(*) c FROM hoaHongTra WHERE trangThai='huy'").get().c > 0,
   'và khoản bị huỷ vẫn còn dòng, có lý do');
 
-/* ── TRẢ HOA HỒNG: PHẢI CÓ CHỨNG CỨ ĐÃ XÁC NHẬN ── */
-db.prepare("UPDATE hoaHongTra SET trangThai='phaiTra' WHERE nhaDuocKem=?").run(nhaMoi);
+/* ── TRẢ HOA HỒNG: PHẢI CÓ CHỨNG CỨ ĐÃ XÁC NHẬN ──
+
+   Trả khoản vừa bị huỷ ở trên về 'phaiTra' để thử tiếp đường trả.
+   PHẢI XOÁ LUÔN huyLuc: trạng thái và mốc là hai nửa của cùng một sự
+   thật, và để lại một mốc huỷ trên một dòng chưa huỷ là dựng một dòng
+   không tả được — sổ hoa hồng đọc mốc chứ không đọc trạng thái, nên
+   khoản ấy vừa bị trừ ở dòng huỷ vừa biến khỏi số dư cuối kỳ, và đẳng
+   thức lệch đúng một lần số tiền ấy. Đúng chỗ này đã đỏ thật khi phép
+   đo cân đối quý đang chạy được thêm vào. */
+db.prepare("UPDATE hoaHongTra SET trangThai='phaiTra', huyLuc=NULL WHERE nhaDuocKem=?")
+  .run(nhaMoi);
 const hhId = db.prepare("SELECT id FROM hoaHongTra WHERE nhaDuocKem=? LIMIT 1").get(nhaMoi).id;
 bao(!(await goi({fn:'traHoaHong', token:tkSA, u:'superadmin@gita365.vn', id:hhId})).than.ok,
   'CHƯA GẮN CHỨNG CỨ thì chưa trả hoa hồng',
@@ -1203,6 +1212,276 @@ bao(soSau === soTruoc - 1,
 bao(ds2.than.vi.indexOf('KHÔNG SỬA GÌ') >= 0,
   'và đối soát KHÔNG SỬA GÌ — chỉ nêu ra',
   'mỗi chỗ lệch có một câu chuyện riêng, và máy không biết câu chuyện ấy');
+
+/* ═══════════════ 15b · BỐN NHỊP BÁO CÁO ═══════════════
+
+   Thu theo NGÀY · chốt theo TUẦN · tổng hợp THÁNG–QUÝ để đổi chiến
+   lược · kế toán theo QUÝ và NĂM, trọn tới mức khai thuế được.
+
+   Dữ liệu thử ở đây dựng bằng MỐC CỐ ĐỊNH trong quá khứ, không dùng
+   "bây giờ": một bộ thử phụ thuộc vào giờ chạy là một bộ thử xanh ban
+   ngày và đỏ lúc nửa đêm. */
+console.log('\n15b · BỐN NHỊP BÁO CÁO');
+
+const bc = await import('../may-chu/bao-cao.js');
+
+/* ── MÚI GIỜ: CHỖ TIỀN RƠI NHẦM TUẦN ──
+
+   6 giờ 30 sáng THỨ HAI giờ Việt Nam có mốc UTC là 23 giờ 30 CHỦ NHẬT.
+   Cắt tuần theo UTC thì khoản ấy rơi vào tuần TRƯỚC — một tuần có thể
+   đã chốt rồi. Mỗi tuần có một khoảng bảy tiếng như thế, và nó rơi
+   đúng vào giờ người ta hay chuyển khoản nhất. */
+const sangThuHai = '2026-03-01T23:30:00.000Z';        /* = 06:30 T2 02/03 giờ VN */
+const tuanCuaNo  = bc.dungKy('tuan', '2026-03-02');
+bao(tuanCuaNo.ky === '2026-W10' &&
+    sangThuHai >= tuanCuaNo.tuLuc && sangThuHai <= tuanCuaNo.denLuc,
+  'TIỀN VÀO 6H30 SÁNG THỨ HAI GIỜ VIỆT NAM RƠI ĐÚNG TUẦN ẤY — không rơi về tuần trước',
+  'mốc UTC của nó là 23h30 Chủ nhật; cắt tuần theo UTC là sai bảy tiếng mỗi tuần');
+
+/* Tuần ISO: tuần chứa Thứ Năm quyết định năm của tuần. 01/01/2027 là
+   Thứ Sáu, nên tuần ấy thuộc về 2026 chứ không phải tuần 1 của 2027. */
+bao(bc.dungKy('tuan', '2027-01-01').ky === '2026-W53',
+  'tuần ISO bắc qua giao thừa thuộc về năm CŨ — tuần chứa Thứ Năm quyết định năm',
+  bc.dungKy('tuan', '2027-01-01').ky);
+bao(bc.dungKy('quy', '2026-08-15').ky === '2026-Q3' &&
+    bc.dungKy('quy', '2026-08-15').denNgay === '2026-09-30',
+  'quý dựng đúng từ một ngày bất kỳ trong quý');
+
+/* ── DỰNG MỘT TUẦN CÓ THẬT ĐỂ CHỐT ──
+   Tuần 2026-W10: Thứ Hai 02/03 → Chủ nhật 08/03, giờ Việt Nam. */
+const W = bc.dungKy('tuan', '2026-03-02');
+db.prepare("INSERT INTO hoSoKhach (maKhachHang,uidPhuHuynh,tang,trangThai,vaoLuc,suaLuc) " +
+  "VALUES ('GITA-BC01','U-nhaA',3,'dangHoc',?,?)").run(W.tuLuc, W.tuLuc);
+db.prepare("INSERT INTO kyThu (id,maKhachHang,tang,ky,soKy,ngayThu,phaiThu,hanLuc,taoLuc) " +
+  "VALUES ('KT-BC01','GITA-BC01',3,1,3,1,1000000,?,?)").run(W.tuLuc, W.tuLuc);
+db.prepare("INSERT INTO phieuThu (id,maKhachHang,idKy,soTien,hinhThuc,nguoiGhi,ghiLuc," +
+  "nguoiDuyet,duyetLuc,trangThai) VALUES ('PT-BC01','GITA-BC01','KT-BC01',600000," +
+  "'chuyenKhoan','tuvan@gita365.vn',?,'superadmin@gita365.vn',?,'daDuyet')")
+  .run(sangThuHai, sangThuHai);
+db.prepare("INSERT INTO phieuThu (id,maKhachHang,idKy,soTien,hinhThuc,nguoiGhi,ghiLuc," +
+  "nguoiDuyet,duyetLuc,trangThai) VALUES ('PT-BC02','GITA-BC01','KT-BC01',400000," +
+  "'tienMat','tuvan@gita365.vn',?,'superadmin@gita365.vn',?,'daDuyet')")
+  .run('2026-03-05T03:00:00.000Z', '2026-03-05T03:00:00.000Z');
+
+/* HAI CHỖ LÀM CHO ĐẲNG THỨC CÔNG NỢ CÓ THỂ SAI.
+
+   Không có hai dòng này thì tiền thực thu tình cờ bằng tiền thu vào kỳ,
+   và phép đo "báo cáo kế toán cân" xanh với CẢ công thức đúng lẫn công
+   thức sai — tức là một phép đo câm. Thử phá đã bắt được đúng chỗ ấy.
+
+     · PT-BC03 — khách chuyển 250.000đ KHÔNG GẮN KỲ NÀO. Tiền đã vào
+       sổ nhưng chưa trừ nợ của ai.
+     · PT-BC04 — nộp trước từ tháng 12/2025 cho một kỳ mãi tháng 3/2026
+       mới tới hạn. Nằm ngoài "thu trong kỳ" nhưng vẫn làm giảm công nợ
+       cuối kỳ. */
+db.prepare("INSERT INTO phieuThu (id,maKhachHang,soTien,hinhThuc,nguoiGhi,ghiLuc," +
+  "nguoiDuyet,duyetLuc,trangThai) VALUES ('PT-BC03','GITA-BC01',250000," +
+  "'chuyenKhoan','tuvan@gita365.vn',?,'superadmin@gita365.vn',?,'daDuyet')")
+  .run('2026-03-06T04:00:00.000Z', '2026-03-06T04:00:00.000Z');
+
+db.prepare("INSERT INTO kyThu (id,maKhachHang,tang,ky,soKy,ngayThu,phaiThu,hanLuc,taoLuc) " +
+  "VALUES ('KT-BC02','GITA-BC01',3,2,3,43,500000,?,?)")
+  .run('2026-03-04T02:00:00.000Z', '2025-12-01T00:00:00.000Z');
+db.prepare("INSERT INTO phieuThu (id,maKhachHang,idKy,soTien,hinhThuc,nguoiGhi,ghiLuc," +
+  "nguoiDuyet,duyetLuc,trangThai) VALUES ('PT-BC04','GITA-BC01','KT-BC02',500000," +
+  "'chuyenKhoan','tuvan@gita365.vn',?,'superadmin@gita365.vn',?,'daDuyet')")
+  .run('2025-12-20T02:00:00.000Z', '2025-12-20T02:00:00.000Z');
+
+/* ── 1 · THU THEO NGÀY ── */
+bao(!(await goi({fn:'soNgay', token:tkCoach, u:'coach@gita365.vn', ngay:'2026-03-02'})).than.ok,
+  'Coach không mở được sổ thu theo ngày của cả hệ');
+const ng = await goi({fn:'soNgay', token:tkSA, u:'superadmin@gita365.vn', ngay:'2026-03-02'});
+bao(ng.than.ok && ng.than.daThu === 600000 && ng.than.thuocTuan === '2026-W10',
+  'sổ thu theo NGÀY khớp từng phiếu — 600.000đ ngày 02/03, thuộc tuần 2026-W10');
+bao(ng.than.theoHinhThuc.chuyenKhoan === 600000 && !ng.than.theoHinhThuc.tienMat,
+  'và CHIA THEO HÌNH THỨC — tiền mặt đếm ở két, chuyển khoản khớp sao kê',
+  'gộp chung một số là bỏ mất phép đối chiếu duy nhất của thủ quỹ');
+
+/* ── 2 · CHỐT TUẦN ── */
+bao(!(await goi({fn:'chotTuan', token:tkCoach, u:'coach@gita365.vn', ngay:'2026-03-02'})).than.ok,
+  'Coach không chốt được sổ');
+
+const chuaHet = await goi({fn:'chotTuan', token:tkSA, u:'superadmin@gita365.vn',
+  ngay: new Date().toISOString().slice(0, 10)});
+bao(!chuaHet.than.ok && chuaHet.than.code === 'CHUAHET',
+  'KHÔNG CHỐT ĐƯỢC MỘT TUẦN CHƯA HẾT — chốt giữa tuần là ghi một con số rồi tuần ấy vẫn còn ngày để tiền vào',
+  chuaHet.than.error);
+
+const ch = await goi({fn:'chotTuan', token:tkSA, u:'superadmin@gita365.vn', ngay:'2026-03-02'});
+bao(ch.than.ok && ch.than.ky === '2026-W10' && ch.than.thu === 1250000 &&
+    ch.than.ghiNhan === 1500000 && ch.than.vanTay.length === 64,
+  'chốt tuần 2026-W10 — thu 1.250.000đ · ghi nhận 1.500.000đ · có vân tay',
+  ch.than.vanTay.slice(0, 16) + '…');
+
+const lai2 = await goi({fn:'chotTuan', token:tkSA, u:'superadmin@gita365.vn', ngay:'2026-03-02'});
+bao(!lai2.than.ok && lai2.than.code === 'DACHOT', 'chốt rồi thì không chốt đè lên');
+bao(!(await goi({fn:'chotTuan', token:tkSA, u:'superadmin@gita365.vn',
+  ngay:'2026-03-02', chotLai:true})).than.ok,
+  'CHỐT LẠI PHẢI CÓ LÝ DO — không có vết thì "đã chốt" chỉ có nghĩa tới lần chốt lại sau');
+
+/* ── 3 · SOÁT CHỐT: VÂN TAY LÀ DẤU CỦA TẬP DÒNG ── */
+const sc1 = await goi({fn:'soatChot', token:tkSA, u:'superadmin@gita365.vn'});
+bao(sc1.than.ok && sc1.than.sach, 'chốt xong soát ngay thì sạch');
+
+/* Huỷ một phiếu NẰM TRONG tuần đã chốt. Sổ tuần ấy phải GIỮ NGUYÊN, và
+   khoản giảm phải hiện ra thành một bút toán điều chỉnh. */
+const huyTrongChot = await goi({fn:'huyPhieuThu', token:tkSA, u:'superadmin@gita365.vn',
+  id:'PT-BC02', lyDo:'Ngân hàng báo hoàn giao dịch'});
+bao(huyTrongChot.than.ok && huyTrongChot.than.dieuChinh &&
+    huyTrongChot.than.dieuChinh.kyBiAnhHuong === '2026-W10',
+  'HUỶ MỘT PHIẾU TRONG TUẦN ĐÃ CHỐT SINH RA BÚT TOÁN ĐIỀU CHỈNH — sổ đã đóng thì không sửa, khoản giảm rơi vào kỳ đang mở',
+  'trỏ ngược về ' + (huyTrongChot.than.dieuChinh || {}).kyBiAnhHuong);
+
+bao(Number(db.prepare("SELECT thu FROM soChot WHERE ky='2026-W10'").get().thu) === 1250000,
+  'và SỐ ĐÃ CHỐT KHÔNG ĐỔI — bản in tháng trước với bản in lại tháng sau phải ra cùng một số');
+
+const sc2 = await goi({fn:'soatChot', token:tkSA, u:'superadmin@gita365.vn'});
+const l10 = (sc2.than.lech || []).find(x => x.ky === '2026-W10');
+bao(!sc2.than.sach && l10 && l10.chenh === -400000,
+  'SOÁT CHỐT NÊU RA tuần đã động sau khi chốt — chênh 400.000đ',
+  'vân tay là dấu của TẬP DÒNG, không phải của con số tổng');
+bao(l10 && l10.daGiaiThich && l10.soButToanDieuChinh === 1,
+  'và nêu KÈM rằng chỗ động ấy ĐÃ CÓ BÚT TOÁN GIẢI THÍCH — một chỗ đã có người xử lý, không phải một chỗ chưa ai biết');
+
+/* ── 4 · TỔNG HỢP THÁNG · QUÝ ĐỂ ĐỔI CHIẾN LƯỢC ── */
+bao(!(await goi({fn:'tongHop', token:tkCoach, u:'coach@gita365.vn',
+  loai:'thang', moc:'2026-03'})).than.ok, 'Coach không xem được bản tổng hợp');
+const thg = await goi({fn:'tongHop', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'thang', moc:'2026-03'});
+bao(thg.than.ok && thg.than.ky === '2026-03' && thg.than.soVoi === '2026-02',
+  'bản tổng hợp LUÔN CÓ KỲ TRƯỚC ĐỂ SO — một con số đứng một mình không đổi được chiến lược của ai',
+  thg.than.ky + ' so với ' + thg.than.soVoi);
+bao(thg.than.tyLeThu.nay !== undefined && Array.isArray(thg.than.theoTang) &&
+    Array.isArray(thg.than.theoNguoiKem),
+  'và cắt theo TẦNG và theo NGƯỜI KÈM — tổng đi xuống thì câu hỏi tiếp theo luôn là "xuống ở đâu"',
+  'tỷ lệ thu ' + thg.than.tyLeThu.nay + '%');
+const q1 = await goi({fn:'tongHop', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:'2026-Q1'});
+bao(q1.than.ok && q1.than.soVoi === '2025-Q4', 'tổng hợp theo QUÝ so ngược sang quý trước');
+
+/* ── 5 · BÁO CÁO KẾ TOÁN PHẢI CÂN ── */
+const ktq = await goi({fn:'baoCaoKeToan', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:'2026-Q1'});
+bao(ktq.than.ok && ktq.than.canDoi.can,
+  'BÁO CÁO KẾ TOÁN CÂN — đầu kỳ + phát sinh − thu vào kỳ − thu trước nay tới hạn = cuối kỳ',
+  'lệch công nợ ' + ktq.than.canDoi.lechCongNo + ' · lệch hoa hồng ' + ktq.than.canDoi.lechHoaHong);
+/* Bản này chạy SAU lượt huỷ PT-BC02 ở trên, nên tiền thực thu là
+   850.000đ chứ không phải 1.250.000đ — còn doanh thu ghi nhận vẫn
+   nguyên 1.500.000đ, vì huỷ một phiếu không xoá kỳ thu nào. */
+bao(ktq.than.A_doanhThu.ghiNhanTrongKy === 1500000 && ktq.than.B_tienMat.thucThu === 850000,
+  'HAI CON SỐ, KHÔNG PHẢI MỘT — doanh thu ghi nhận 1.500.000đ, tiền thực thu 850.000đ',
+  'hiệu của chúng chính là công nợ; nền cũ chỉ có con số thứ hai');
+
+/* Hai khoản này là chỗ đẳng thức công nợ có thể sai, nên phải hiện
+   thành số trên mặt bản chứ không nằm im trong phép tính. */
+bao(ktq.than.C_congNo.thuChuaGanKy === 250000 &&
+    ktq.than.C_congNo.thuTruocNayToiHan === 500000,
+  'và NÊU RIÊNG hai khoản làm lệch: 250.000đ chưa gắn kỳ · 500.000đ nộp trước nay tới hạn',
+  'tiền đã vào sổ mà chưa trừ nợ của ai là một việc phải làm, không phải một con số để ngắm');
+bao(!JSON.stringify(ktq.than).includes('loiNhuan') &&
+    ktq.than.khongCoTrongHeNay.length >= 4,
+  'và KHÔNG có dòng lợi nhuận nào — chi phí vận hành không nằm trong hệ này',
+  'một con số lợi nhuận tính thiếu chi phí sẽ được ai đó mang đi họp, và nó sai');
+/* BÚT TOÁN ĐIỀU CHỈNH RƠI VÀO KỲ ĐANG MỞ, KHÔNG VÀO KỲ BỊ ẢNH HƯỞNG.
+
+   Phiếu thuộc quý I; huỷ nó hôm nay thì khoản giảm thuộc về quý ĐANG
+   CHẠY, có trỏ ngược về tuần 2026-W10. Quý I giữ nguyên con số cũ —
+   đó chính là điều làm cho một kỳ đã chốt có nghĩa. */
+bao(ktq.than.E_butToanDieuChinh.so === 0,
+  'quý ĐÃ QUA không nhận thêm bút toán nào — kỳ đã đóng là đã đóng');
+const ktNay = await goi({fn:'baoCaoKeToan', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:new Date().toISOString().slice(0, 10)});
+const e = ktNay.than.E_butToanDieuChinh;
+bao(e.so === 1 && e.tien === -400000 && e.chiTiet[0].kyBiAnhHuong === '2026-W10',
+  'BÚT TOÁN RƠI VÀO KỲ ĐANG MỞ, TRỎ NGƯỢC VỀ KỲ BỊ ẢNH HƯỞNG — nêu RIÊNG, không cộng lẫn vào doanh thu phát sinh',
+  'quý đang chạy · −400.000đ · thuộc về ' + e.chiTiet[0].kyBiAnhHuong);
+
+/* ── ĐẲNG THỨC HOA HỒNG PHẢI BỊ THỬ BẰNG MỘT LƯỢT HUỶ THẬT ──
+
+   Đẳng thức "phải trả đầu kỳ + sinh − đã trả − huỷ = phải trả cuối kỳ"
+   xanh suốt cho tới đây chỉ vì trong kỳ chưa có khoản nào bị huỷ. Một
+   đẳng thức chưa từng bị thử thì chưa phải đẳng thức — thử phá đã bắt
+   đúng chỗ này: gỡ cột huyLuc đi mà không phép đo nào đỏ.
+
+   Nên dựng một lượt huỷ THẬT, đi qua đúng đường thật: hoàn tiền cho
+   nhà được kèm thì hoa hồng chưa trả của nhà bảo trợ bị huỷ theo. */
+db.prepare("INSERT INTO hoaHongTra (id,nhaKem,nhaDuocKem,tangVuot,bac,phanTram," +
+  "goiCanCu,soTien,trangThai,sinhLuc) VALUES ('HH-BC01','GITA-9001','GITA-BC01',3," +
+  "'B5',5,6000000,300000,'phaiTra',?)").run(new Date().toISOString());
+
+/* Và một khoản SINH TỪ QUÝ I, còn nguyên tới hết quý I, mãi hôm nay
+   mới bị huỷ. Đây mới là chỗ cột huyLuc thật sự cần thiết: bản báo cáo
+   quý I chạy hôm nay phải nói đúng số dư CỦA LÚC ẤY, không được đổi
+   theo một lượt huỷ xảy ra sau đó ba quý.
+
+   Đọc trạng thái hôm nay rồi suy ngược là cách làm cho sổ của mọi kỳ
+   quá khứ đổi theo mỗi thao tác hôm nay — và lúc ấy không bản báo cáo
+   nào dựng lại được. */
+db.prepare("INSERT INTO hoaHongTra (id,nhaKem,nhaDuocKem,tangVuot,bac,phanTram," +
+  "goiCanCu,soTien,trangThai,sinhLuc) VALUES ('HH-BC02','GITA-9002','GITA-BC01',2," +
+  "'B5',5,4000000,200000,'phaiTra','2026-03-03T02:00:00.000Z')").run();
+
+const dxBC = await goi({fn:'deXuatHoan', token:tkCoach, u:'coach@gita365.vn',
+  hoan:{maKhachHang:'GITA-BC01', soTien:100000, idPhieuThu:'PT-BC01',
+    theoLuat:'T3 chuỗi chưa bắt đầu thì hoàn đủ', lyDo:'Gia đình chuyển nơi ở'}});
+const dyBC = await goi({fn:'duyetHoan', token:tkSA, u:'superadmin@gita365.vn',
+  id:dxBC.than.id});
+bao(dxBC.than.ok && dyBC.than.ok, 'dựng một lượt hoàn thật cho nhà có hoa hồng chưa trả');
+bao(db.prepare("SELECT trangThai, huyLuc FROM hoaHongTra WHERE id='HH-BC01'").get()
+      .trangThai === 'huy' &&
+    !!db.prepare("SELECT huyLuc FROM hoaHongTra WHERE id='HH-BC01'").get().huyLuc,
+  'khoản hoa hồng bị huỷ theo, VÀ CÓ MỐC HUỶ — trạng thái và mốc là hai nửa của một sự thật');
+
+const ktCan = await goi({fn:'baoCaoKeToan', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:new Date().toISOString().slice(0, 10)});
+bao(ktCan.than.D_hoaHong.soHuy === 2 && ktCan.than.D_hoaHong.huy === 500000,
+  'quý đang chạy CÓ khoản hoa hồng bị huỷ thật — 2 khoản, 500.000đ');
+bao(ktCan.than.canDoi.can,
+  'VÀ VẪN CÂN CẢ HAI ĐẲNG THỨC — kể cả khi trong kỳ có huỷ hoa hồng và có hoàn tiền',
+  'lệch công nợ ' + ktCan.than.canDoi.lechCongNo +
+  ' · lệch hoa hồng ' + ktCan.than.canDoi.lechHoaHong);
+
+/* QUÝ I ĐỌC LẠI HÔM NAY PHẢI RA SỐ DƯ CỦA LÚC ẤY.
+
+   HH-BC02 sinh tháng 3, còn nguyên tới hết quý I, mới bị huỷ hôm nay.
+   Nên số dư hoa hồng cuối quý I vẫn phải CÓ nó. Đọc trạng thái hôm nay
+   thay vì đọc mốc thì nó biến mất khỏi quý I, và bản quý I in ra hồi
+   tháng 4 với bản in lại hôm nay ra hai số khác nhau. */
+const q1Lai = await goi({fn:'baoCaoKeToan', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:'2026-Q1'});
+bao(q1Lai.than.D_hoaHong.sinhTrongKy === 200000 &&
+    q1Lai.than.D_hoaHong.huy === 0 &&
+    q1Lai.than.D_hoaHong.phaiTraCuoiKy >= 200000,
+  'MỘT KỲ ĐÃ QUA ĐỌC LẠI HÔM NAY VẪN RA SỐ DƯ CỦA LÚC ẤY — khoản huỷ hôm nay không xoá ngược vào quý I',
+  'sinh 200.000đ trong quý I · huỷ 0 trong quý I · vẫn còn trong số dư cuối quý');
+bao(q1Lai.than.canDoi.can,
+  'và quý I vẫn cân sau khi có một lượt huỷ xảy ra ba quý sau đó',
+  'lệch hoa hồng ' + q1Lai.than.canDoi.lechHoaHong);
+
+/* Khoản hoàn này gắn vào PT-BC01 — phiếu nằm trong tuần ĐÃ CHỐT — nên
+   nó cũng phải sinh một bút toán điều chỉnh trỏ về đúng tuần ấy. */
+bao(dyBC.than.dieuChinh && dyBC.than.dieuChinh.kyBiAnhHuong === '2026-W10',
+  'và HOÀN TIỀN CHO MỘT PHIẾU TRONG TUẦN ĐÃ CHỐT cũng trỏ ngược về đúng tuần ấy',
+  'bút toán phải trỏ về kỳ của PHIẾU GỐC, không phải kỳ hôm nay');
+
+/* ── 6 · BỘ SỐ KHAI THUẾ ── */
+bao(!(await goi({fn:'boSoKhaiThue', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:'2026-Q1'})).than.ok === false, 'R01 mở được bộ số khai thuế');
+const thue = await goi({fn:'boSoKhaiThue', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:'2026-Q1'});
+bao(thue.than.ok && thue.than.doanhThu.ghiNhan === 1500000 &&
+    thue.than.doanhThu.nguon.indexOf('kyThu') >= 0,
+  'mỗi chỉ tiêu kèm NGUỒN SỐ — kế toán tra ngược được về từng dòng, không phải tin lời máy');
+bao(Array.isArray(thue.than.chiHoaHong.theoNguoiNhan) &&
+    thue.than.chiHoaHong.vi.indexOf('từng lượt') >= 0,
+  'hoa hồng trả về TỪNG LƯỢT CHI cho TỪNG người — khấu trừ tính theo lượt, không theo tổng kỳ');
+bao(thue.than.choKeToanXacNhan.length === 3 &&
+    !/thuế suất là|phải nộp|khấu trừ 10/.test(JSON.stringify(thue.than)),
+  'MÁY KHÔNG KẾT LUẬN NGHĨA VỤ THUẾ — không tự nhân một tỷ lệ nào vào',
+  'ba chỗ chờ kế toán xác nhận: ' + thue.than.choKeToanXacNhan.map(x=>x.ma).join(' · '));
+bao(!thue.than.chuaSanSang.sanSang && thue.than.chuaSanSang.tuanChuaChot.length > 0,
+  'và NÊU CHỖ CHƯA SẴN SÀNG TRƯỚC KHI NỘP — tuần chưa chốt là con số còn có thể đổi',
+  thue.than.chuaSanSang.tuanChuaChot.length + ' tuần chưa chốt trong quý');
 
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');

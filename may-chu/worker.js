@@ -38,6 +38,8 @@ import { xemTepKhach, suaTepKhach, dsTepKhach } from './ho-so-khach.js';
 import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh,
   huyPhieuThu, ganPhieuVaoKy, deXuatHoan, duyetHoan, traHoaHong,
   ganChungCuHoaHong, dongKyChuaToi, dsQuaHan, doiSoat } from './tai-chinh.js';
+import { soNgay, chotTuan, soatChot, tongHop, baoCaoKeToan, boSoKhaiThue,
+  dsChot } from './bao-cao.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -150,7 +152,9 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'xemTepKhach', 'suaTepKhach', 'dsTepKhach',
   'ghiPhieuThu', 'duyetPhieuThu', 'congNo', 'banKeTaiChinh',
   'huyPhieuThu', 'ganPhieuVaoKy', 'deXuatHoan', 'duyetHoan', 'traHoaHong',
-  'ganChungCuHoaHong', 'dongKyChuaToi', 'dsQuaHan', 'doiSoat'];
+  'ganChungCuHoaHong', 'dongKyChuaToi', 'dsQuaHan', 'doiSoat',
+  'soNgay', 'chotTuan', 'soatChot', 'tongHop', 'baoCaoKeToan', 'boSoKhaiThue',
+  'dsChot'];
 
 async function lam(fn, y, env, db) {
   if (fn === 'dangNhap')  return await dangNhap(y, env, db);
@@ -213,6 +217,17 @@ async function lam(fn, y, env, db) {
   if (fn === 'dongKyChuaToi')     return await dongKyChuaToi(y, env, db, hoSo);
   if (fn === 'dsQuaHan')          return await dsQuaHan(y, env, db, hoSo);
   if (fn === 'doiSoat')           return await doiSoat(y, env, db, hoSo);
+
+  /* Bốn nhịp báo cáo — ngày để nhìn tiền vào, tuần để CHỐT, tháng và
+     quý để đổi chiến lược, quý và năm để kế toán. Bốn câu hỏi khác
+     nhau nên bốn bản khác nhau; xem chú giải đầu bao-cao.js. */
+  if (fn === 'soNgay')        return await soNgay(y, env, db, hoSo);
+  if (fn === 'chotTuan')      return await chotTuan(y, env, db, hoSo);
+  if (fn === 'soatChot')      return await soatChot(y, env, db, hoSo);
+  if (fn === 'dsChot')        return await dsChot(y, env, db, hoSo);
+  if (fn === 'tongHop')       return await tongHop(y, env, db, hoSo);
+  if (fn === 'baoCaoKeToan')  return await baoCaoKeToan(y, env, db, hoSo);
+  if (fn === 'boSoKhaiThue')  return await boSoKhaiThue(y, env, db, hoSo);
   return {ok: false, error: 'Yêu cầu không hợp lệ.'};
 }
 

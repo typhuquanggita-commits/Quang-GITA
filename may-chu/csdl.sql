@@ -391,6 +391,12 @@ CREATE TABLE IF NOT EXISTS hoaHongTra (
   trangThai    TEXT NOT NULL DEFAULT 'phaiTra',  -- phaiTra · daTra · huy
   sinhLuc      TEXT NOT NULL,
   traLuc       TEXT,
+  -- Huỷ PHẢI có mốc, không chỉ có trạng thái. Sổ hoa hồng cân theo kỳ
+  -- bằng đẳng thức "đầu kỳ + sinh − trả − huỷ = cuối kỳ"; không biết
+  -- khoản ấy huỷ NGÀY NÀO thì không xếp được nó vào kỳ nào, và đẳng
+  -- thức không bao giờ cân. Ba trạng thái, ba mốc — thiếu một là thiếu
+  -- một chiều của sổ.
+  huyLuc       TEXT,
   nguoiDuyet   TEXT,
   lyDo         TEXT
 );
@@ -400,6 +406,80 @@ CREATE TABLE IF NOT EXISTS hoaHongTra (
 CREATE UNIQUE INDEX IF NOT EXISTS ix_hh_mot
   ON hoaHongTra (nhaKem, nhaDuocKem, tangVuot);
 CREATE INDEX IF NOT EXISTS ix_hh_tt ON hoaHongTra (trangThai, sinhLuc);
+
+-- ═════════════════════════════════════════════════════════════
+--  SỔ CHỐT — VÌ SAO MỘT BÁO CÁO CẦN ĐƯỢC ĐÓNG LẠI
+--
+--  Mọi con số ở trên đều tính bằng phép cộng chạy trên sổ SỐNG. Chạy
+--  hôm nay ra một số, chạy lại tháng sau ra số khác — không phải vì
+--  phép cộng sai, mà vì dưới nó có dòng đã đổi: một phiếu bị huỷ, một
+--  khoản hoàn được duyệt, một phiếu ghi lùi ngày.
+--
+--  Nghĩa là bản báo cáo tuần trước KHÔNG DỰNG LẠI ĐƯỢC. Người ta in
+--  ra, mang đi họp, rồi tháng sau mở lại thì số đã khác, và không ai
+--  nói được vì sao. Đó không phải một bất tiện; đó là một sổ sách
+--  không dùng được để đối chất.
+--
+--  Nên: CHỐT. Mỗi tuần đóng lại một dòng ở đây, ghi số như nó đứng
+--  lúc ấy. Dòng đã chốt không tính lại nữa.
+--
+--  VÂN TAY là chỗ làm cho việc chốt có nghĩa. Nó là dấu của TẬP DÒNG
+--  đã đếm, không phải của con số tổng. Chốt xong mà sau này có dòng
+--  nào trong khoảng ấy đổi đi, tính lại vân tay sẽ ra khác — và
+--  soatChot nêu tên kỳ ấy ra. Không có vân tay thì "đã chốt" chỉ là
+--  một con số được chép lại, và một con số chép lại không chứng minh
+--  được gì cả.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS soChot (
+  ky          TEXT PRIMARY KEY,   -- '2026-W36' · '2026-09' · '2026-Q3' · '2026'
+  loai        TEXT NOT NULL,      -- tuan · thang · quy · nam
+  tuNgay      TEXT NOT NULL,      -- ngày đầu kỳ, giờ Việt Nam
+  denNgay     TEXT NOT NULL,
+  tuLuc       TEXT NOT NULL,      -- cùng mốc ấy quy về UTC — xem chú giải múi giờ
+  denLuc      TEXT NOT NULL,
+  thu         REAL NOT NULL DEFAULT 0,   -- tiền thực thu
+  soPhieu     INTEGER NOT NULL DEFAULT 0,
+  hoan        REAL NOT NULL DEFAULT 0,
+  soHoan      INTEGER NOT NULL DEFAULT 0,
+  ghiNhan     REAL NOT NULL DEFAULT 0,   -- doanh thu ghi nhận: kỳ thu TỚI HẠN trong kỳ
+  soKyToiHan  INTEGER NOT NULL DEFAULT 0,
+  hhSinh      REAL NOT NULL DEFAULT 0,
+  hhTra       REAL NOT NULL DEFAULT 0,
+  conNoCuoiKy REAL NOT NULL DEFAULT 0,   -- luỹ kế tới cuối kỳ, không phải riêng kỳ
+  nhaMoi      INTEGER NOT NULL DEFAULT 0,
+  luotVuotTang INTEGER NOT NULL DEFAULT 0,
+  vanTay      TEXT NOT NULL,
+  chotLuc     TEXT NOT NULL,
+  boiAi       TEXT NOT NULL,
+  moLaiLuc    TEXT,               -- có mặt nghĩa là kỳ này đã bị mở lại
+  moLaiBoi    TEXT,
+  moLaiLyDo   TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_chot_loai ON soChot (loai, tuNgay DESC);
+
+-- Bút toán điều chỉnh. Một khoản tiền động vào kỳ ĐÃ CHỐT thì không
+-- được sửa dòng đã chốt — sổ đã đóng là đã đóng. Nó ghi ở đây, và rơi
+-- vào kỳ đang mở, có trỏ ngược về kỳ bị ảnh hưởng.
+--
+-- Đây là cách sổ sách thật xử lý chuyện ấy, và cũng là cách duy nhất
+-- để câu "tháng trước báo đủ, sao giờ thiếu" có câu trả lời bằng dòng
+-- chứ bằng trí nhớ.
+CREATE TABLE IF NOT EXISTS dieuChinh (
+  id           TEXT PRIMARY KEY,
+  kyBiAnhHuong TEXT NOT NULL,     -- kỳ đã chốt mà khoản này thuộc về
+  loai         TEXT NOT NULL,     -- huyPhieu · duyetHoan · ganPhieu · duyetMuon
+  idChungTu    TEXT NOT NULL,     -- phiếu thu hoặc khoản hoàn
+  maKhachHang  TEXT,
+  soTien       REAL NOT NULL,     -- ÂM là giảm thu của kỳ đã chốt
+  luc          TEXT NOT NULL,     -- lúc ghi bút toán, tức thuộc kỳ đang mở
+  lucGoc       TEXT NOT NULL,     -- mốc của chứng từ gốc, nằm trong kỳ đã chốt
+  boi          TEXT NOT NULL,
+  dienGiai     TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS ix_dc_ky  ON dieuChinh (kyBiAnhHuong);
+CREATE INDEX IF NOT EXISTS ix_dc_luc ON dieuChinh (luc);
 
 -- ─────────────────────────────────────────────────────────────
 --  CHỨNG TỪ THANH TOÁN — KHÔNG XOÁ, KHÔNG BAO GIỜ

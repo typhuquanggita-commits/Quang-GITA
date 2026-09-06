@@ -32,6 +32,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { Kho, tokenMoi } from './nen.js';
+import { ghiDieuChinh } from './bao-cao.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
              R09:9,R10:10,R11:11,R12:12,R13:13,R14:14,R15:15};
@@ -473,11 +474,28 @@ export async function huyPhieuThu(y, env, db, hoSo) {
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'PHIEUTHU_HUY',
     doiTuong: pt.id, chiTiet: pt.maKhachHang + ' · ' + dinhDang(pt.soTien) + ' · ' + lyDo});
 
+  /* PHIẾU NÀY CÓ THUỘC MỘT TUẦN ĐÃ CHỐT KHÔNG.
+
+     Nếu có: sổ tuần ấy đã đóng và KHÔNG được sửa. Khoản giảm đi ghi
+     thành một bút toán điều chỉnh, rơi vào kỳ đang mở, có trỏ ngược
+     về tuần bị ảnh hưởng — đúng cách sổ sách thật làm.
+
+     Không có bước này thì bản báo cáo tuần ấy in ra tháng trước và bản
+     in lại tháng sau ra hai số khác nhau, và không dòng nào giải thích
+     vì sao. Số tiền để ÂM vì đây là một khoản giảm. */
+  const dc = await ghiDieuChinh(db, {
+    lucGoc: pt.ghiLuc, loai: 'huyPhieu', idChungTu: pt.id,
+    maKhachHang: pt.maKhachHang, soTien: -Number(pt.soTien), boi: hoSo.u,
+    dienGiai: 'Huỷ phiếu thu đã vào sổ tuần đã chốt · ' + lyDo});
+
   /* Công nợ tự đúng lại: congNo chỉ cộng phiếu daDuyet, nên phiếu vừa
      huỷ rời khỏi phép cộng ngay mà không phải sửa con số nào. Đó là
      lợi ích của việc không lưu số dư — số dư luôn được TÍNH, không
      được GIỮ, nên nó không bao giờ lệch với chứng từ. */
-  return {ok: true, trangThai: 'huy'};
+  return {ok: true, trangThai: 'huy',
+    dieuChinh: dc ? {id: dc.id, kyBiAnhHuong: dc.kyBiAnhHuong,
+      vi: 'Phiếu này nằm trong kỳ ĐÃ CHỐT ' + dc.kyBiAnhHuong + '. Sổ kỳ ấy giữ ' +
+          'nguyên; khoản giảm ghi thành bút toán điều chỉnh ở kỳ đang mở.'} : undefined};
 }
 
 /* ── 2 · GÁN MỘT KHOẢN THU NGOÀI LỊCH VÀO MỘT KỲ ──
@@ -510,9 +528,21 @@ export async function ganPhieuVaoKy(y, env, db, hoSo) {
 
   await db.prepare('UPDATE phieuThu SET idKy = ? WHERE id = ? AND idKy IS NULL')
     .bind(ky.id, pt.id).run();
+
+  /* Gán một khoản treo vào kỳ KHÔNG đổi số tiền thu của tuần nào — nó
+     chỉ đổi chỗ khoản ấy trừ nợ. Nhưng bản công nợ của tuần đã chốt
+     thì đổi, nên vẫn phải để lại vết. Số tiền để 0: đây là bút toán
+     ghi chú, không phải bút toán tiền. */
+  const dc = await ghiDieuChinh(db, {
+    lucGoc: pt.ghiLuc, loai: 'ganPhieu', idChungTu: pt.id,
+    maKhachHang: pt.maKhachHang, soTien: 0, boi: hoSo.u,
+    dienGiai: 'Gán khoản thu treo vào kỳ ' + ky.ky + ' tầng ' + ky.tang +
+      ' — đổi chỗ trừ nợ, không đổi số tiền thu của kỳ đã chốt'});
+
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'PHIEUTHU_GAN',
     doiTuong: pt.id, chiTiet: 'vào kỳ ' + ky.ky + ' tầng ' + ky.tang});
-  return {ok: true, idKy: ky.id};
+  return {ok: true, idKy: ky.id,
+    dieuChinh: dc ? {id: dc.id, kyBiAnhHuong: dc.kyBiAnhHuong} : undefined};
 }
 
 /* ── 3 · HOÀN TIỀN ──
@@ -602,10 +632,31 @@ export async function duyetHoan(y, env, db, hoSo) {
   let hh = null;
   if (duyet) hh = await soatHoaHongSauHoan(db, ht.maKhachHang, hoSo.u);
 
+  /* KHOẢN HOÀN THUỘC VỀ KỲ CỦA PHIẾU GỐC, KHÔNG PHẢI KỲ HÔM NAY.
+
+     Tiền hoàn duyệt hôm nay, nhưng nó làm giảm doanh thu của cái kỳ mà
+     phiếu gốc đã vào sổ. Nếu kỳ ấy đã chốt thì đây đúng là chỗ phải có
+     một bút toán điều chỉnh — và phải trỏ về kỳ của PHIẾU GỐC, không
+     phải kỳ hôm nay, nếu không thì tra ngược sẽ dẫn nhầm chỗ.
+
+     Khoản hoàn không gắn phiếu gốc nào thì không quy về kỳ nào được;
+     lúc ấy nó nằm trọn trong kỳ đang mở và không cần điều chỉnh. */
+  let dc = null;
+  if (duyet && ht.idPhieuThu) {
+    const goc = await db.prepare('SELECT ghiLuc FROM phieuThu WHERE id = ?')
+      .bind(ht.idPhieuThu).first();
+    if (goc) dc = await ghiDieuChinh(db, {
+      lucGoc: goc.ghiLuc, loai: 'duyetHoan', idChungTu: ht.id,
+      maKhachHang: ht.maKhachHang, soTien: -Number(ht.soTien), boi: hoSo.u,
+      dienGiai: 'Hoàn tiền cho phiếu ' + ht.idPhieuThu + ' đã vào sổ kỳ đã chốt · ' +
+        String(ht.lyDo || '').slice(0, 200)});
+  }
+
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
     viec: duyet ? 'HOAN_DUYET' : 'HOAN_TUCHOI',
     doiTuong: ht.id, chiTiet: ht.maKhachHang + ' · ' + dinhDang(ht.soTien)});
-  return {ok: true, trangThai: duyet ? 'daDuyet' : 'tuChoi', hoaHong: hh || undefined};
+  return {ok: true, trangThai: duyet ? 'daDuyet' : 'tuChoi', hoaHong: hh || undefined,
+    dieuChinh: dc ? {id: dc.id, kyBiAnhHuong: dc.kyBiAnhHuong} : undefined};
 }
 
 /* ── 4 · HOÀN TIỀN RỒI THÌ HOA HỒNG PHẢI ĐỘNG THEO ──
@@ -631,9 +682,9 @@ async function soatHoaHongSauHoan(db, maKhachHang, boi) {
   for (const x of ds) {
     if (x.trangThai === 'phaiTra') {
       await db.prepare(
-        "UPDATE hoaHongTra SET trangThai = 'huy', lyDo = ?, nguoiDuyet = ? " +
+        "UPDATE hoaHongTra SET trangThai = 'huy', lyDo = ?, nguoiDuyet = ?, huyLuc = ? " +
         "WHERE id = ? AND trangThai = 'phaiTra'"
-      ).bind('Nhà được kèm đã được hoàn tiền', boi, x.id).run();
+      ).bind('Nhà được kèm đã được hoàn tiền', boi, new Date().toISOString(), x.id).run();
       huy.push(x.id);
     } else if (x.trangThai === 'daTra') {
       daTra.push({id: x.id, nhaKem: x.nhaKem, soTien: x.soTien});
