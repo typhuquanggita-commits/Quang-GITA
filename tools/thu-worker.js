@@ -2314,6 +2314,142 @@ bao(thueMoi.than.chuaSanSang.ngayKetConLech.length === 1 &&
   'bộ số khai thuế NÊU LUÔN két còn lệch và khoản chi còn treo — nộp rồi mới xử lý thì phải khai bổ sung',
   '1 ngày két lệch trong quý');
 
+/* ── BẢNG TIN PHÒNG TÀI CHÍNH · CHỐT 9.99.3 ── */
+console.log('\n15f · BẢNG TIN PHÒNG TÀI CHÍNH');
+
+bao(!(await goi({fn:'bangTinTaiChinh', token:tkCoach, u:'coach@gita365.vn'})).than.ok,
+  'COACH KHÔNG MỞ ĐƯỢC BẢNG TIN — bảng này nói chuyện tiền của cả Học viện');
+
+/* Mục 15c đã thu hồi quyền kế toán trưởng để thử luật "thu hồi là mất
+   ngay". Cấp lại ở đây, vì bảng tin là màn của chính vị trí ấy. */
+await goi({fn:'capQuyenTaiChinh', token:tkSA, u:'superadmin@gita365.vn',
+  username:'ketoantruong@gita365.vn', chucNang:'keToanTruong', mocToiDa:'C4',
+  lyDo:'Cấp lại để phụ trách bảng tin phòng tài chính'});
+bao(!(await goi({fn:'bangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn'})).than.error,
+  'KẾ TOÁN TRƯỞNG (R04) MỞ ĐƯỢC BẢNG TIN — bảng mở theo VỊ TRÍ, không theo vai');
+
+/* ── BA LỚP CHẶN CỦA HỆ PHÂN CẤP MÀU ──
+   Không lớp nào CẤM đặt đỏ. Cấm là sai hướng: người biết việc mình gấp
+   mà bị chặn thì họ gọi điện, và lúc ấy tin ra khỏi hệ. */
+const doThieuViSao = await goi({fn:'dangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  tin:{mucDo:'do', tieuDe:'Có chuyện gấp', than:'Cần xử lý ngay hôm nay.',
+    giaoCho:'ketoan@gita365.vn', hanXuLy:'2026-09-08T16:59:59.000Z'}});
+bao(!doThieuViSao.than.ok && doThieuViSao.than.code === 'THIEUVISAO',
+  'ĐẶT MỨC GẤP THÌ PHẢI GHI VÌ SAO GẤP',
+  'không cấm đặt đỏ — chỉ đòi một câu, và câu ấy ở lại cho người sau đọc');
+
+const camThieuNguoi = await goi({fn:'dangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  tin:{mucDo:'cam', tieuDe:'Hoá đơn sắp hết hạn', than:'Nhà cung cấp giục ký lại hợp đồng.'}});
+bao(!camThieuNguoi.than.ok && camThieuNguoi.than.code === 'THIEUNGUOI',
+  'MỘT TIN CÓ MÀU MÀ KHÔNG CÓ NGƯỜI LÀ MỘT CÁI MÀU',
+  'ai đọc cũng nghĩ người khác lo, và cái màu chỉ làm mọi người cùng lo mà không ai làm');
+
+const camThieuHan = await goi({fn:'dangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  tin:{mucDo:'cam', tieuDe:'Hoá đơn sắp hết hạn', than:'Nhà cung cấp giục ký lại hợp đồng.',
+    giaoCho:'ketoan@gita365.vn'}});
+bao(!camThieuHan.than.ok && camThieuHan.than.code === 'THIEUHAN',
+  'và phải có HẠN XỬ LÝ — có người mà không có hạn thì việc trôi mãi');
+
+const tinDo = await goi({fn:'dangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  tin:{mucDo:'do', tieuDe:'Két lệch 2 triệu chưa rõ nguyên nhân',
+    than:'Chốt két hôm qua lệch 2.000.000đ so với sổ. Chưa tìm ra dòng nào sai.',
+    viSaoGap:'Két lệch để qua đêm thì không còn ai nhớ hôm qua ai cầm tiền',
+    giaoCho:'ketoan@gita365.vn', hanXuLy:'2026-09-08T16:59:59.000Z'}});
+bao(tinDo.than.ok, 'KẾ TOÁN TRƯỞNG ĐĂNG ĐƯỢC TIN MỨC GẤP khi đã ghi vì sao');
+
+const tinXanh = await goi({fn:'dangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  tin:{mucDo:'xanh', tieuDe:'Đổi mẫu phiếu chi từ tháng sau',
+    than:'Mẫu mới thêm cột số hợp đồng. Ghi lại để người sau biết vì sao mẫu đổi.'}});
+bao(tinXanh.than.ok, 'và đăng được tin thường — tin này đăng SAU tin đỏ');
+
+/* ── XẾP THEO MÀU TRƯỚC RỒI MỚI THEO THỜI GIAN ──
+   Đó là cả mục đích của việc phân cấp: mở ra là thấy cái gấp nhất trên
+   cùng, không phải cái mới nhất. Tin xanh đăng TRƯỚC tin đỏ, nên nếu
+   xếp theo thời gian thì xanh đứng trên. */
+const bang = await goi({fn:'bangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn'});
+bao(bang.than.ok && bang.than.tin[0].mucDo === 'do' &&
+    bang.than.tin[0].id === tinDo.than.id,
+  'BẢNG XẾP THEO MÀU TRƯỚC — tin đỏ đăng TRƯỚC tin xanh vẫn đứng trên',
+  'xếp theo thời gian thì tin xanh mới hơn phải đứng đầu; nó không đứng đầu, ' +
+  'nên phép đo này phân biệt được hai luật xếp chứ không xanh với cả hai');
+
+bao(typeof bang.than.tyLeDo === 'number' && bang.than.dem.do >= 1,
+  'và bảng nói ra TỶ LỆ TIN ĐỎ — lớp chặn thứ ba, nói với chính người đang đặt màu',
+  bang.than.tyLeDo + '% số tin đang mở là mức GẤP');
+
+bao((bang.than.nhanSu || []).some(x => x.username === 'ketoantruong@gita365.vn'),
+  'bảng tin TRẢ KÈM DANH SÁCH NGƯỜI CỦA PHÒNG',
+  'sổ quyền chỉ R01–R03 mở được, mà người giao việc nhiều nhất trên bảng này là kế toán trưởng');
+
+/* ── MÁY TỰ ĐĂNG: TIỀN VÀO KHÔNG KHỚP ĐƯỢC PHIẾU NÀO ── */
+await goi({fn:'nganHangBao', khoa:'khoa-ngan-hang-thu-nghiem',
+  giaoDich:{soTaiKhoan:'0011', maGiaoDich:'FT-LA-01', huong:'vao',
+    soTien:3300000, noiDung:'chuyen tien hoc phi'}});
+const bangMay = await goi({fn:'bangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn'});
+const tinMay = (bangMay.than.tin || []).find(x => x.loai === 'NH_TIEN_KHONG_PHIEU');
+bao(!!tinMay && tinMay.tuMay && tinMay.mucDo === 'cam',
+  'TIỀN VÀO KHÔNG KHỚP ĐƯỢC PHIẾU NÀO THÌ MÁY TỰ ĐĂNG LÊN BẢNG',
+  'bản đối chiếu là thứ người ta phải MỞ RA XEM; tin thì tự đi tìm người');
+
+bao(!!tinMay && !!tinMay.giaoCho && !!tinMay.hanXuLy,
+  'và MÁY CŨNG PHẢI THEO LUẬT "CÓ MÀU THÌ CÓ NGƯỜI": nó tự tìm người trực đầu THU',
+  'giao cho ' + (tinMay && tinMay.giaoCho) + ' · hạn ' +
+    String((tinMay && tinMay.hanXuLy) || '').slice(0, 10));
+
+bao(!!tinMay && tinMay.than.indexOf('3.300.000đ') >= 0 &&
+    tinMay.than.indexOf('FT-LA-01') >= 0 && !/@/.test(tinMay.than),
+  'tin máy ghi CHỞ SỐ TIỀN VÀ MÃ GIAO DỊCH, không chở một địa chỉ thư nào',
+  'bảng tin mở cho cả phòng; điều 11 nói vị trí tài chính mở đúng những cửa TIỀN');
+
+/* ── ĐÓNG MỘT TIN PHẢI NÓI ĐÃ LÀM GÌ ── */
+const dongTrong = await goi({fn:'xuLyTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  id:tinDo.than.id, trangThai:'daXuLy'});
+bao(!dongTrong.than.ok && dongTrong.than.code === 'THIEUCACH',
+  'ĐÓNG MỘT TIN THÌ PHẢI NÓI ĐÃ LÀM GÌ — không có ô "đã xử lý" trống',
+  'ba tháng sau cùng chuyện lặp lại và không ai biết lần trước đã làm gì');
+
+const boTrong = await goi({fn:'xuLyTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  id:tinXanh.than.id, trangThai:'boQua'});
+bao(!boTrong.than.ok && boTrong.than.code === 'THIEUCACH',
+  'BỎ QUA CŨNG LÀ MỘT QUYẾT ĐỊNH — cũng phải ghi vì sao',
+  'một quyết định không có lý do thì ba tháng sau không ai bảo vệ được nó');
+
+const dongThat = await goi({fn:'xuLyTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  id:tinDo.than.id, trangThai:'daXuLy',
+  cachXuLy:'Tìm ra phiếu chi 2 triệu ghi hai lần, đã huỷ dòng thừa và chốt lại két.'});
+bao(dongThat.than.ok, 'và đóng được khi đã nói rõ đã làm gì');
+
+const dongLai = await goi({fn:'xuLyTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  id:tinDo.than.id, trangThai:'daXuLy', cachXuLy:'Đóng lại lần nữa cho chắc.'});
+bao(!dongLai.than.ok, 'ĐÓNG LẠI MỘT TIN ĐÃ ĐÓNG THÌ KHÔNG GHI ĐÈ');
+
+const conViec = await goi({fn:'bangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn'});
+const caTha = await goi({fn:'bangTinTaiChinh', token:tkKTT, u:'ketoantruong@gita365.vn',
+  tatCa:true});
+bao(!conViec.than.tin.some(x => x.id === tinDo.than.id) &&
+    caTha.than.tin.some(x => x.id === tinDo.than.id),
+  'bảng mặc định chỉ hiện TIN CÒN VIỆC — tin đã đóng nằm trong bản xem hết',
+  conViec.than.so + ' tin còn việc · ' + caTha.than.so + ' tin tất cả');
+
+/* ── MÁY KHÔNG TÌM RA NGƯỜI TRỰC THÌ HẠ MỨC, KHÔNG ĐĂNG MỘT CÁI MÀU
+   KHÔNG CÓ CHỦ. Đây là chỗ luật của người và luật của máy gặp nhau: cửa
+   chặn được người, nhưng không cửa nào chặn được máy — nên máy phải tự
+   giữ. Phá bằng cách gỡ hết quyền đầu THU rồi cho tiền lạ vào. */
+const luuQuyen = db.prepare("SELECT id FROM quyenTaiChinh WHERE thuHoiLuc IS NULL " +
+  "AND chucNang IN ('keToanThu','keToanTruong')").all();
+db.prepare("UPDATE quyenTaiChinh SET thuHoiLuc = ? WHERE thuHoiLuc IS NULL " +
+  "AND chucNang IN ('keToanThu','keToanTruong')").run('2026-09-06T00:00:00.000Z');
+await goi({fn:'nganHangBao', khoa:'khoa-ngan-hang-thu-nghiem',
+  giaoDich:{soTaiKhoan:'0011', maGiaoDich:'FT-LA-02', huong:'vao', soTien:120000}});
+const tinKhongChu = db.prepare("SELECT * FROM tinTaiChinh WHERE doiTuong IN " +
+  "(SELECT id FROM giaoDichNganHang WHERE maGiaoDich='FT-LA-02')").get();
+bao(!!tinKhongChu && tinKhongChu.mucDo === 'vang' && !tinKhongChu.giaoCho &&
+    !tinKhongChu.hanXuLy,
+  'KHÔNG CÓ NGƯỜI TRỰC THÌ MÁY HẠ MỨC XUỐNG "THEO DÕI", không đăng một cái màu không có chủ',
+  'và không đeo hạn: một tin không có chủ mà quá hạn là một cái chuông không ai tắt được');
+for (const q of luuQuyen)
+  db.prepare("UPDATE quyenTaiChinh SET thuHoiLuc = NULL WHERE id = ?").run(q.id);
+
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ

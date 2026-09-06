@@ -44,6 +44,7 @@
 import { Kho, tokenMoi, soSanhAnToan } from './nen.js';
 import { dungKy } from './bao-cao.js';
 import { quyenCua, oDauTien } from './chi-tieu.js';
+import { mayDangTin } from './tin-tai-chinh.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
              R09:9,R10:10,R11:11,R12:12,R13:13,R14:14,R15:15};
@@ -168,6 +169,8 @@ export async function nganHangBao(y, env, db) {
      đứng cạnh nhau từ đầu; không khớp thì nó nằm trong danh sách chờ,
      và danh sách ấy chính là bản đối chiếu. */
   const khop = huong === 'vao' ? await tuKhopPhieuThu(db, {id, ma, tien, luc}) : null;
+  if (huong === 'vao' && !khop)
+    await baoTienChuaCoPhieu(db, {id, ma, tien, luc, noiDung: g.noiDung});
 
   return {ok: true, id, daKhop: !!khop, idPhieuThu: khop || undefined};
 }
@@ -208,6 +211,8 @@ export async function nhapGiaoDichTay(y, env, db, hoSo) {
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'NGANHANG_NHAPTAY',
     doiTuong: id, chiTiet: huong + ' · ' + dinhDang(tien) + ' · ' + ma});
   const khop = huong === 'vao' ? await tuKhopPhieuThu(db, {id, ma, tien, luc}) : null;
+  if (huong === 'vao' && !khop)
+    await baoTienChuaCoPhieu(db, {id, ma, tien, luc, noiDung: g.noiDung});
   return {ok: true, id, daKhop: !!khop, idPhieuThu: khop || undefined};
 }
 
@@ -223,6 +228,34 @@ export async function nhapGiaoDichTay(y, env, db, hoSo) {
 
    Người khớp tay thì thấy được cả hai dòng và biết mình đang chọn gì;
    máy khớp theo số tiền thì không. */
+/* ── TIỀN VÀO MÀ KHÔNG KHỚP ĐƯỢC PHIẾU NÀO → LÊN BẢNG TIN ──
+
+   Bản đối chiếu đã nêu chỗ này rồi, nhưng bản đối chiếu là thứ người ta
+   MỞ RA XEM. Một nhà đã trả tiền mà sổ ghi họ còn nợ thì mỗi ngày chờ
+   là một ngày họ nhận giấy nhắc nợ sai — nên nó phải TỰ ĐI TÌM người,
+   chứ không nằm đợi ai đó nhớ mở bản đối chiếu.
+
+   Mức CAM chứ không ĐỎ: tiền đã nằm trong tài khoản học viện, không mất
+   đi đâu. Cái mất là lòng khách, và cái ấy mất theo ngày chứ không theo
+   giờ. Để ĐỎ ở đây thì mỗi tháng vài chục tin đỏ, và ĐỎ hết nghĩa. */
+async function baoTienChuaCoPhieu(db, {id, ma, tien, luc, noiDung}) {
+  return await mayDangTin(db, {
+    mucDo: 'cam', loai: 'NH_TIEN_KHONG_PHIEU', dau: 'thu', doiTuong: id,
+    tieuDe: 'Tiền vào ' + dinhDang(tien) + ' chưa khớp được phiếu thu nào',
+    than: [
+      'Ngân hàng báo có một khoản tiền vào mà sổ không tìm ra phiếu thu nào khớp.',
+      '',
+      'Mã giao dịch : ' + (ma || '(không có)'),
+      'Số tiền      : ' + dinhDang(tien),
+      'Lúc          : ' + luc,
+      'Nội dung     : ' + (noiDung || '(trống)'),
+      '',
+      'Nhà nào đó có thể đang bị ghi là còn nợ trong khi họ đã trả. Tìm phiếu thu',
+      'tương ứng rồi khớp tay ở mục Đối chiếu — máy KHÔNG tự khớp theo số tiền,',
+      'vì hai nhà cùng đóng một số tiền trong một ngày là chuyện thường.'
+    ].join('\n')});
+}
+
 async function tuKhopPhieuThu(db, {id, ma, tien}) {
   if (!ma) return null;
   const pt = await db.prepare(

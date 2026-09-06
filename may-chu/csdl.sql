@@ -574,6 +574,58 @@ CREATE INDEX IF NOT EXISTS ix_gdnh_luc  ON giaoDichNganHang (luc);
 CREATE INDEX IF NOT EXISTS ix_gdnh_khop ON giaoDichNganHang (idPhieuThu);
 
 -- ═════════════════════════════════════════════════════════════
+--  BẢNG TIN PHÒNG TÀI CHÍNH
+--
+--  Chủ hệ chốt 9.99.3: kế toán trưởng chủ động cập nhật lên hệ, và có
+--  phương án xử lý ngay khi thấy thông tin quan trọng; tin phân cấp
+--  bằng MÀU để biết xử lý cái nào trước.
+--
+--  ══ CHỖ HỎNG CỦA MỌI HỆ PHÂN CẤP MÀU ══
+--
+--  Mức độ do người đăng tự chọn thì ai cũng chọn ĐỎ. Sau ba tháng cả
+--  bảng đỏ, và màu thôi mang nghĩa gì — lúc ấy người ta đọc từ trên
+--  xuống như một danh sách thường, đúng cái mà phân cấp sinh ra để
+--  tránh.
+--
+--  Nên ba lớp chặn, và không lớp nào cấm người ta đặt ĐỎ:
+--
+--    1. Tin do MÁY sinh lấy mức từ LUẬT, không ai chọn được.
+--    2. Tin người đặt ĐỎ phải ghi VÌ SAO GẤP — một câu, và câu ấy ở
+--       lại trong dòng cho người sau đọc.
+--    3. Tỷ lệ tin đỏ hiện ngay trên bảng. Đỏ hết thì con số ấy nói ra,
+--       và nó nói với chính người đang đặt màu.
+--
+--  ══ MỘT TIN CÓ MÀU MÀ KHÔNG CÓ NGƯỜI VÀ KHÔNG CÓ HẠN LÀ MỘT CÁI MÀU ══
+--
+--  Bảng này đòi hai thứ ấy ở mức ĐỎ và CAM: ai xử lý, và hạn tới bao
+--  giờ. Không có chúng thì tin nằm đó, ai đọc cũng nghĩ người khác lo,
+--  và cái màu chỉ làm mọi người cùng lo mà không ai làm.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS tinTaiChinh (
+  id         TEXT PRIMARY KEY,
+  mucDo      TEXT NOT NULL,      -- do · cam · vang · xanh
+  loai       TEXT NOT NULL,      -- máy sinh: mã luật; người đăng: 'nguoiDang'
+  tieuDe     TEXT NOT NULL,
+  than       TEXT NOT NULL,
+  viSaoGap   TEXT,               -- BẮT BUỘC khi người đặt mức 'do'
+  doiTuong   TEXT,               -- id chứng từ liên quan
+  tuMay      INTEGER NOT NULL DEFAULT 0,
+  nguoiDang  TEXT NOT NULL,      -- 'may-chu' khi máy sinh
+  luc        TEXT NOT NULL,
+  giaoCho    TEXT,               -- ai xử lý
+  hanXuLy    TEXT,
+  trangThai  TEXT NOT NULL DEFAULT 'moi',   -- moi · dangXuLy · daXuLy · boQua
+  cachXuLy   TEXT,               -- BẮT BUỘC khi đóng
+  nguoiXuLy  TEXT,
+  xuLyLuc    TEXT
+);
+
+-- Bảng tin mở ra mỗi sáng, lọc theo trạng thái rồi xếp theo mức độ.
+CREATE INDEX IF NOT EXISTS ix_tin_tt  ON tinTaiChinh (trangThai, luc DESC);
+CREATE INDEX IF NOT EXISTS ix_tin_han ON tinTaiChinh (hanXuLy) WHERE trangThai IN ('moi','dangXuLy');
+CREATE INDEX IF NOT EXISTS ix_tin_giao ON tinTaiChinh (giaoCho, trangThai);
+
+-- ═════════════════════════════════════════════════════════════
 --  THÔNG BÁO TRONG HỆ
 --
 --  Chủ hệ chốt 9.98: "có thông báo lên hệ thống giám đốc, Super Admin."

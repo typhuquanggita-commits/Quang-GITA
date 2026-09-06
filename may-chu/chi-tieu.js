@@ -1274,4 +1274,4 @@ export async function xemThangDuyetChi(y, env, db, hoSo) {
 }
 
 export { KHOAN_MUC, TRAN_PHAI_DUYET, TRAN_CHU_KY, NGAY_GOP, NAC_THANG,
-  MOC_CHU_KY, CHU_KY };
+  MOC_CHU_KY, CHU_KY, VI_TRI_TC };

@@ -9922,6 +9922,55 @@ const { chromium } = require(PW);
         ? 'giá khớp cả hai chặng · thang neo N3 ' + (ra.thangNeo || {}).N3 +
           ' · N4 ' + (ra.thangNeo || {}).N4 + ' · N5 ' + (ra.thangNeo || {}).N5
         : 'kho ' + JSON.stringify(ra.giaBanKho) + ' · máy chủ ' + JSON.stringify(ra.giaBanMayChu));
+
+    /* ── BỐN BẬC MÀU CỦA BẢNG TIN: MỘT SỰ THẬT, HAI TỆP ──
+
+       Máy chủ giữ ĐỊNH NGHĨA bậc (tên, thứ tự, có cần người và hạn
+       không); màn hình giữ MÃ MÀU. Chúng phải phủ đúng cùng một tập
+       khoá: thêm một bậc ở máy chủ mà quên thêm màu thì bậc ấy vẽ ra
+       màu mặc định, và cả điểm của việc phân cấp — nhìn màu biết xử lý
+       cái nào trước — mất đúng ở bậc mới thêm.
+
+       Và màu phải là BIẾN CSS, không phải mã hex gõ tay: biến CSS đã
+       tính cả nền sáng lẫn nền tối, còn một mã hex thì không đổi theo
+       nền, nên nó sẽ đúng ở một nền và chìm ở nền kia. */
+    {
+      const nguonTin = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'tin-tai-chinh.js'), 'utf8');
+      const nguonMan = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'src', 'phong-tai-chinh.js'), 'utf8');
+
+      const khoiMay = (nguonTin.match(/const MUC_DO = \{[\s\S]*?\n\};/) || [''])[0];
+      const khoiMan = (nguonMan.match(/var MAU_MUC = \{[\s\S]*?\};/) || [''])[0];
+      const lay = (t, re) => {
+        const ra = []; let m;
+        while ((m = re.exec(t))) ra.push(m[1]);
+        return ra.sort();
+      };
+      const bacMay = lay(khoiMay, /(?:^|[\s{,])(do|cam|vang|xanh):/g);
+      const bacMan = lay(khoiMan, /(?:^|[\s{,])(do|cam|vang|xanh):/g);
+
+      ra.tinBacMay = bacMay; ra.tinBacMan = bacMan;
+      ra.tinBacKhop = bacMay.length === 4 && bacMay.join(',') === bacMan.join(',');
+      /* Mọi màu trong bảng của màn phải là var(--…). Một mã hex ở đây là
+         một màu không biết nền tối là gì. */
+      ra.tinMauLaBienCss = !!khoiMan &&
+        (khoiMan.match(/var\(--[a-z-]+\)/g) || []).length === 4 &&
+        !/#[0-9A-Fa-f]{3,8}/.test(khoiMan);
+      /* Và máy chủ KHÔNG được gõ mã màu: hai bảng màu song song thì bảng
+         thứ hai không đổi theo nền, và không ai nhớ có bảng thứ hai. */
+      ra.mayChuKhongGoMau = !/#[0-9A-Fa-f]{6}/.test(nguonTin);
+      /* Ngăn bảng tin phải có mặt trong thanh ngăn của màn. */
+      ra.manCoNganTin = /\{ma: 'tin',/.test(nguonMan) &&
+        /G\.tcNgan === 'tin'/.test(nguonMan);
+    }
+
+    bao(ra.tinBacKhop && ra.tinMauLaBienCss && ra.mayChuKhongGoMau && ra.manCoNganTin,
+      'BẢNG TIN PHÒNG TÀI CHÍNH — BỐN BẬC MÀU KHAI Ở MÁY CHỦ PHẢI CÓ ĐỦ BỐN MÃ MÀU Ở MÀN HÌNH, VÀ MÃ MÀU CHỈ ĐƯỢC LÀ BIẾN CSS. Máy chủ giữ ĐỊNH NGHĨA bậc — tên, thứ tự xếp, bậc nào bắt buộc có người nhận và hạn xử lý; màn hình giữ MÃ MÀU. Hai nửa của một sự thật nằm ở hai tệp, nên chúng phải phủ đúng cùng một tập khoá: thêm một bậc ở máy chủ mà quên thêm màu thì bậc mới vẽ ra màu mặc định, và cả điểm của việc phân cấp — mở bảng ra là nhìn màu biết xử lý cái nào trước — mất đúng ở bậc vừa thêm. Màu phải là var(--bad) var(--alert) var(--warn) var(--ok) chứ không phải mã hex gõ tay: biến CSS đã tính sẵn cả nền sáng lẫn nền tối, còn một mã hex thì không đổi theo nền, nên nó đúng ở một nền và chìm ở nền kia — và người dùng nền tối là người không bao giờ báo lỗi ấy, họ chỉ thôi dùng bảng. Máy chủ cũng không được gõ mã màu: dựng bản thứ hai của bảng màu ở nơi không ai nhớ là có bản thứ hai',
+      ra.tinBacKhop
+        ? 'bốn bậc ' + (ra.tinBacMay || []).join('/') + ' · bốn biến CSS · ngăn bảng tin có mặt'
+        : 'máy chủ ' + (ra.tinBacMay || []).join('/') +
+          ' · màn hình ' + (ra.tinBacMan || []).join('/'));
   }
 
   /* ══════════════════ 73. SAVE() CÓ GIỮ THẬT KHÔNG ══════════════════
