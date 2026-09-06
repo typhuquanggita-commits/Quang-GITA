@@ -2595,6 +2595,178 @@ bao(mocC1.than.ok && mocC1.than.soLieu.moc === 'C1',
   'và hỏi bằng SỐ TIỀN TỔNG thì nó tự tìm ra mốc — không bắt người dùng thuộc bảng mốc',
   '12 triệu → mốc ' + mocC1.than.soLieu.moc);
 
+/* ── LƯƠNG PHÒNG TÀI CHÍNH · CHỐT 9.99 ── */
+console.log('\n15h · LƯƠNG PHÒNG TÀI CHÍNH');
+
+/* ══ MÁY KHÔNG QUYẾT HỘ L-01 ══
+   TC_LUONG tự khai: máy đo được ĐIỂM, không quy được điểm ra tiền.
+   Nên trước khi ai đặt hệ số, bảng lương vẫn chạy và vẫn ra điểm —
+   nhưng phần tiền là null, KHÔNG phải 0. */
+const luongSom = await goi({fn:'bangLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-08'});
+bao(luongSom.than.ok && luongSom.than.dong.length > 0 &&
+    luongSom.than.dong.every(x => x.luongCung === null) &&
+    /L-01 chưa chốt/.test(luongSom.than.choChuHeChot),
+  'CHƯA AI ĐẶT HỆ SỐ THÌ TIỀN LÀ null, KHÔNG PHẢI 0 — và bảng NÓI RA là L-01 chưa chốt',
+  'số 0 đọc ra thành "người này không được trả gì"; null đọc ra thành "chưa ai đặt con số"');
+
+bao(luongSom.than.dong.some(x => x.diem !== null),
+  'nhưng ĐIỂM thì chấm được ngay — máy làm phần của máy, không chờ phần của người',
+  luongSom.than.dong.map(x => x.tenViTri + ' ' + x.diem).join(' · '));
+
+bao(!(await goi({fn:'datHeSoLuong', token:tkGD, u:'giamdoc@gita365.vn',
+  heSo:{viTri:'keToanChi', tuKy:'2026-01', luongCung:12000000, tranKpi:4000000,
+    lyDo:'Thử xem giám đốc có đặt được không'}})).than.ok,
+  'GIÁM ĐỐC KHÔNG ĐẶT ĐƯỢC HỆ SỐ LƯƠNG — chỉ Super Admin',
+  'mở cho người tiêu ngân sách tự đặt ngân sách của mình là dỡ mất cái cổng');
+
+bao(!(await goi({fn:'datHeSoLuong', token:tkSA, u:'superadmin@gita365.vn',
+  heSo:{viTri:'keToanChi', tuKy:'2026-01', luongCung:12000000, tranKpi:4000000,
+    lyDo:'ngắn'}})).than.ok,
+  'và đặt một mức lương thì phải GHI VÌ SAO — kỳ sau không ai bảo vệ được một con số không lý do');
+
+for (const [vt, cung, tran] of [['keToanThu', 11000000, 3000000],
+                                 ['keToanChi', 12000000, 4000000],
+                                 ['keToanTruong', 18000000, 7000000]])
+  await goi({fn:'datHeSoLuong', token:tkSA, u:'superadmin@gita365.vn',
+    heSo:{viTri:vt, tuKy:'2026-01', luongCung:cung, tranKpi:tran,
+      lyDo:'Mức khởi điểm bản 9.99.5, chốt theo mặt bằng thị trường Hà Nội'}});
+
+const hsDs = await goi({fn:'dsHeSoLuong', token:tkSA, u:'superadmin@gita365.vn'});
+bao(hsDs.than.ok && hsDs.than.ds.length === 3 && !hsDs.than.chuaCoHeSo.length,
+  'SUPER ADMIN ĐẶT ĐƯỢC HỆ SỐ CHO CẢ BA VỊ TRÍ, và bảng nêu rõ vị trí nào còn thiếu');
+
+const luongSau = await goi({fn:'bangLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-08'});
+bao(luongSau.than.ok && luongSau.than.dong.every(x => x.luongCung > 0) &&
+    !luongSau.than.choChuHeChot,
+  'ĐẶT HỆ SỐ XONG THÌ TIỀN HIỆN RA NGAY — không phải chấm lại',
+  luongSau.than.dong.map(x => x.username.split('@')[0] + ' ' +
+    (x.luongCung + (x.phanKpi || 0)).toLocaleString('vi-VN')).join(' · '));
+
+/* ══ THƯỚC KHÔNG ĐO ĐƯỢC THÌ RA KHỎI PHÉP TÍNH, KHÔNG THÀNH 100 ══ */
+const luongRong = await goi({fn:'bangLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2025-01'});
+bao(luongRong.than.ok && luongRong.than.dong.some(x => x.trongBoQua > 0),
+  'KỲ KHÔNG CÓ GÌ ĐỂ ĐO THÌ THƯỚC ẤY RA KHỎI PHÉP TÍNH, VÀ PHẦN TRỌNG SỐ BỊ BỎ RA ĐƯỢC GHI LẠI',
+  'cho nó 100 là thưởng một tháng không ai làm gì; cho nó 0 là phạt người vì việc ' +
+  'không đến tay họ — bỏ trọng số ' +
+  luongRong.than.dong.map(x => x.trongBoQua).join('/'));
+
+/* ══ KHÔNG AI CHỐT LƯƠNG CỦA CHÍNH MÌNH ══ */
+/* Đòi ĐÚNG MÃ chứ không chỉ đòi thất bại. Super Admin không giữ vị trí
+   nào trong phòng, nên nếu chỉ đòi thất bại thì phép đo vẫn xanh khi
+   cổng tự-chốt bị gỡ — nó rơi xuống cổng "không giữ vị trí" và vẫn đỏ,
+   nhưng đỏ vì một lý do khác. Phá thử bắt đúng chỗ này. */
+const tuChot = await goi({fn:'chotLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-08', username:'superadmin@gita365.vn'});
+bao(!tuChot.than.ok && tuChot.than.code === 'TUCHOT',
+  'KHÔNG AI CHỐT DÒNG LƯƠNG CỦA CHÍNH MÌNH — người chốt quyết cả tầng ghi nhận',
+  'và phép đo đòi đúng MÃ TUCHOT: chỉ đòi "thất bại" thì nó xanh cả khi cổng ấy bị gỡ');
+
+bao(!(await goi({fn:'chotLuong', token:tkKT, u:'ketoan@gita365.vn',
+  ky:'2026-08', username:'ketoantruong@gita365.vn'})).than.ok,
+  'và KẾ TOÁN CHI không chốt lương ai — chốt lương là quyền QUẢN LÝ phòng, không phải đứng trong phòng');
+
+/* ══ TẦNG GHI NHẬN CÓ TIỀN THÌ PHẢI CÓ LÝ DO ══ */
+bao(!(await goi({fn:'chotLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-08', username:'ketoan@gita365.vn', ghiNhan:5000000,
+  duoi60:'Nhận trách nhiệm và đã có kế hoạch sửa trong tháng tới'})).than.ok,
+  'TẦNG GHI NHẬN CÓ TIỀN THÌ PHẢI CÓ LÝ DO — chỗ dễ nhất để trả ơn bằng tiền của Học viện');
+
+/* ══ ĐIỂM DƯỚI 60: MÁY KHÔNG CẮT VÀ CŨNG KHÔNG THA ══
+   L-02 chưa chốt, và máy không chốt hộ. Nó chặn lượt chốt lại và đòi
+   người chốt ghi ra quyết định của mình. */
+/* Kỳ 2026-03 là kỳ đầu thu chấm 44,4 điểm — dưới ngưỡng ngồi lại. Lấy
+   đúng kỳ ấy để thử, chứ không nặn thêm dữ liệu cho ra một điểm thấp:
+   dữ liệu nặn ra để thử một luật thì luật ấy chỉ đúng với dữ liệu nặn. */
+const bangT3 = await goi({fn:'bangLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-03'});
+const thapDiem = bangT3.than.dong.filter(x => x.diem !== null && x.diem < 60);
+bao(thapDiem.length > 0,
+  'mẫu thử CÓ người dưới 60 điểm — không có mẫu thì phép đo L-02 câm',
+  thapDiem.map(x => x.username.split('@')[0] + '=' + x.diem).join(' · '));
+
+const thu = await goi({fn:'chotLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-03', username:thapDiem[0].username});
+bao(!thu.than.ok && thu.than.code === 'CANQUYETDINH',
+  'ĐIỂM DƯỚI 60 THÌ MÁY CHẶN LƯỢT CHỐT VÀ ĐÒI MỘT QUYẾT ĐỊNH CÓ TÊN NGƯỜI',
+  'L-02 chưa chốt và máy KHÔNG chốt hộ: nhiều lần điểm thấp là vì một chỗ hỏng của ' +
+  'HỆ chứ không phải của người, và cắt lương ở đúng chỗ ấy là dạy người ta thôi báo cáo');
+
+bao(!(await goi({fn:'chotLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-03', username:thapDiem[0].username, duoi60:'cắt'})).than.ok,
+  'và một chữ "cắt" chưa phải một quyết định — phải nói VÌ SAO',
+  'một quyết định không có lý do thì kỳ sau không ai bảo vệ được nó');
+
+const chotThap = await goi({fn:'chotLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-03', username:thapDiem[0].username,
+  duoi60:'Điểm thấp vì cổng đối chiếu sao kê chưa nối ngân hàng trong tháng Ba — ' +
+         'lỗi của hệ, không của người. Giữ nguyên phần KPI và nối cổng trong tháng Tư.'});
+bao(chotThap.than.ok && chotThap.than.diem < 60,
+  'CHỐT ĐƯỢC KHI QUYẾT ĐỊNH ĐÃ CÓ TÊN NGƯỜI VÀ CÓ LÝ DO',
+  chotThap.than.diem + ' điểm · ' + chotThap.than.bac);
+
+const chot1 = await goi({fn:'chotLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-08', username:'ketoan@gita365.vn',
+  ghiNhan:2000000, ghiNhanVi:'Dựng lại toàn bộ sổ chi tồn của quý trước, việc không đếm được bằng thước nào'});
+bao(chot1.than.ok && chot1.than.tong ===
+      chot1.than.luongCung + chot1.than.phanKpi + chot1.than.ghiNhan,
+  'BA TẦNG LƯƠNG CỘNG ĐÚNG — cứng, phần KPI theo điểm, và ghi nhận của người quản lý',
+  chot1.than.diem + ' điểm · ' + chot1.than.bac + ' · ' +
+    chot1.than.luongCung.toLocaleString('vi-VN') + ' + ' +
+    chot1.than.phanKpi.toLocaleString('vi-VN') + ' + ' +
+    chot1.than.ghiNhan.toLocaleString('vi-VN') + ' = ' +
+    chot1.than.tong.toLocaleString('vi-VN') + 'đ');
+
+/* ══ KỲ ĐÃ CHỐT THÌ KHÔNG TÍNH LẠI ══ */
+bao(!(await goi({fn:'chotLuong', token:tkSA, u:'superadmin@gita365.vn',
+  ky:'2026-08', username:'ketoan@gita365.vn', ghiNhan:0}))
+  .than.ok,
+  'KỲ ĐÃ CHỐT THÌ KHÔNG CHỐT LẠI — cùng luật với sổ');
+
+const blSau = db.prepare("SELECT * FROM bangLuong WHERE ky='2026-08' AND username='ketoan@gita365.vn'").get();
+const soDoDong = JSON.parse(blSau.soDo);
+bao(blSau.trangThai === 'daChot' && Object.keys(soDoDong).length === 5 &&
+    !!blSau.ghiNhanVi && !!blSau.idHeSo,
+  'DÒNG ĐÃ CHỐT ĐÔNG CỨNG CẢ NĂM SỐ ĐO THÔ, lý do tầng ghi nhận, và dòng hệ số đã dùng',
+  'một bảng lương chỉ có một con số điểm là một bản án không có hồ sơ — người bị ' +
+  'trừ lương phải cãi lại được');
+
+/* ĐỔI HỆ SỐ SAU KHI CHỐT KHÔNG ĐƯỢC ĐỘNG VÀO DÒNG ĐÃ CHỐT. */
+await goi({fn:'datHeSoLuong', token:tkSA, u:'superadmin@gita365.vn',
+  heSo:{viTri:'keToanChi', tuKy:'2026-09', luongCung:20000000, tranKpi:9000000,
+    lyDo:'Tăng theo mặt bằng mới từ tháng Chín, không hồi tố tháng Tám'}});
+const doiHs = await goi({fn:'bangLuong', token:tkSA, u:'superadmin@gita365.vn', ky:'2026-08'});
+const dongCu = doiHs.than.dong.find(x => x.username === 'ketoan@gita365.vn');
+bao(dongCu.trangThai === 'daChot' && dongCu.luongCung === 12000000,
+  'ĐỔI HỆ SỐ TỪ KỲ SAU KHÔNG ĐỘNG VÀO DÒNG ĐÃ CHỐT CỦA KỲ TRƯỚC',
+  'dòng đã chốt đông cứng số tiền — hệ số mới không hồi tố');
+
+/* VÀ ĐO RIÊNG CHỖ ĐỌC HỆ SỐ, TRÊN MỘT DÒNG CHƯA CHỐT.
+
+   Phép trên đo lượt ĐÔNG CỨNG, không đo lượt ĐỌC hệ số: dòng đã chốt
+   đọc số tiền ra khỏi chính nó nên nó xanh kể cả khi heSoCua bỏ quên
+   mệnh đề "theo kỳ". Phá thử bắt đúng chỗ ấy — cho heSoCua luôn lấy
+   dòng mới nhất thì phép trên vẫn xanh.
+
+   Kỳ 2026-07 của kế toán chi chưa chốt, nên nó phải đọc hệ số hiệu lực
+   từ 2026-01 (12 triệu), không phải hệ số từ 2026-09 (20 triệu). */
+const nhapCu = await goi({fn:'bangLuong', token:tkSA, u:'superadmin@gita365.vn', ky:'2026-07'});
+const dongNhap = nhapCu.than.dong.find(x => x.username === 'ketoan@gita365.vn');
+bao(dongNhap.trangThai === 'nhap' && dongNhap.luongCung === 12000000,
+  'BẢNG NHÁP CỦA MỘT KỲ CŨ ĐỌC HỆ SỐ CỦA CHÍNH KỲ ẤY, không đọc dòng hệ số mới nhất',
+  'chốt lại tháng Một vào tháng Sáu phải ra đúng con số tháng Một — đọc dòng mới ' +
+  'nhất thì mỗi lượt tăng lương lặng lẽ hồi tố về mọi kỳ chưa chốt · đọc được ' +
+  dongNhap.luongCung.toLocaleString('vi-VN') + 'đ');
+
+/* ══ MỘT NGƯỜI XEM ĐƯỢC DÒNG CỦA CHÍNH MÌNH ══ */
+const rieng = await goi({fn:'bangLuong', token:tkKT, u:'ketoan@gita365.vn', ky:'2026-08'});
+bao(rieng.than.ok && rieng.than.chiDongCuaToi && rieng.than.dong.length === 1 &&
+    rieng.than.dong[0].username === 'ketoan@gita365.vn',
+  'KẾ TOÁN CHI XEM ĐƯỢC ĐÚNG DÒNG CỦA CHÍNH MÌNH, không thấy lương người khác',
+  'không cho một người xem bảng lương của chính họ là buộc họ tin một con số không tra lại được');
+
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ

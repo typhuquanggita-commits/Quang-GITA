@@ -626,6 +626,78 @@ CREATE INDEX IF NOT EXISTS ix_tin_han ON tinTaiChinh (hanXuLy) WHERE trangThai I
 CREATE INDEX IF NOT EXISTS ix_tin_giao ON tinTaiChinh (giaoCho, trangThai);
 
 -- ═════════════════════════════════════════════════════════════
+--  HỆ SỐ LƯƠNG — CÂU TRẢ LỜI CỦA CHỦ HỆ CHO L-01
+--
+--  TC_LUONG khai BA TẦNG lương và bốn bậc điểm, nhưng nói thẳng rằng
+--  máy đo được ĐIỂM và không quy được điểm ra tiền: quy đổi là quyết
+--  định về thị trường lao động và về ngân sách.
+--
+--  Nên bảng này để TRỐNG khi cài đặt, và bảng lương từ chối tính tiền
+--  cho tới khi có người điền. Đặt một con số mặc định ở đây là máy tự
+--  quyết một chuyện máy đã tự khai là mình không quyết được — và con
+--  số mặc định ấy sẽ thành lương thật của một người thật.
+--
+--  KHÔNG SỬA MỘT DÒNG ĐÃ ĐẶT. Đổi hệ số là ghi một dòng MỚI có hiệu
+--  lực từ một kỳ; dòng cũ ở lại. Sửa đè thì một bảng lương đã chốt ba
+--  tháng trước không giải thích được nữa, và đó đúng là lúc người ta
+--  cần giải thích nó.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS heSoLuong (
+  id         TEXT PRIMARY KEY,
+  viTri      TEXT NOT NULL,      -- keToanThu · keToanChi · keToanTruong
+  tuKy       TEXT NOT NULL,      -- có hiệu lực từ kỳ này trở đi (YYYY-MM)
+  luongCung  INTEGER NOT NULL,   -- tầng 1
+  tranKpi    INTEGER NOT NULL,   -- tầng 2 khi đạt 100 điểm
+  lyDo       TEXT NOT NULL,
+  boiAi      TEXT NOT NULL,      -- chỉ R01
+  datLuc     TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS ix_hsl_vt ON heSoLuong (viTri, tuKy DESC);
+
+-- ═════════════════════════════════════════════════════════════
+--  BẢNG LƯƠNG — VÀ VÌ SAO NÓ ĐÔNG CỨNG SỐ ĐO CHỨ KHÔNG ĐÔNG CỨNG SỐ TIỀN
+--
+--  Luật cứng của TC_LUONG: "Điểm của một kỳ ĐÃ CHỐT thì không tính lại
+--  — cùng luật với sổ."
+--
+--  Nên dòng này giữ SỐ ĐO THÔ của từng thước tại lúc chốt, không phải
+--  chỉ giữ con số điểm cuối. Hai lý do, và lý do thứ hai mới là lý do
+--  thật:
+--
+--    · giữ số đo thì ba tháng sau còn dựng lại được vì sao ra điểm ấy
+--    · và người bị trừ lương CÃI LẠI ĐƯỢC. Một bảng lương chỉ có một
+--      con số điểm là một bản án không có hồ sơ; người ta ký vào vì
+--      không có gì để chỉ ra chỗ sai.
+--
+--  Trạng thái 'nhap' là bản nháp tính lại được mỗi lượt mở. 'daChot'
+--  thì đóng cứng và không hàm nào tính lại nó.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS bangLuong (
+  id          TEXT PRIMARY KEY,
+  ky          TEXT NOT NULL,      -- YYYY-MM
+  username    TEXT NOT NULL,
+  viTri       TEXT NOT NULL,
+  diem        REAL,               -- null nghĩa là KHÔNG CÓ GÌ ĐỂ ĐO trong kỳ
+  bacDiem     TEXT,
+  soDo        TEXT NOT NULL,      -- JSON số đo thô của từng thước, đông cứng
+  trongBoQua  REAL,               -- phần trọng số rơi vào thước không đo được
+  luongCung   INTEGER NOT NULL DEFAULT 0,
+  phanKpi     INTEGER NOT NULL DEFAULT 0,
+  ghiNhan     INTEGER NOT NULL DEFAULT 0,   -- tầng 3, do Giám đốc quyết
+  ghiNhanVi   TEXT,
+  duoi60      TEXT,               -- BẮT BUỘC khi điểm < 60: quyết định của người chốt
+  idHeSo      TEXT,               -- dòng hệ số đã dùng, để dựng lại được
+  trangThai   TEXT NOT NULL DEFAULT 'nhap',  -- nhap · daChot
+  nguoiChot   TEXT,
+  chotLuc     TEXT
+);
+
+-- Một người một kỳ đúng một dòng.
+CREATE UNIQUE INDEX IF NOT EXISTS ix_bl_mot ON bangLuong (ky, username);
+CREATE INDEX IF NOT EXISTS ix_bl_ky ON bangLuong (ky, trangThai);
+
+-- ═════════════════════════════════════════════════════════════
 --  THÔNG BÁO TRONG HỆ
 --
 --  Chủ hệ chốt 9.98: "có thông báo lên hệ thống giám đốc, Super Admin."

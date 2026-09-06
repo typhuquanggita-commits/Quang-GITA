@@ -2118,7 +2118,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.4',
+  version: '9.99.5',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2939,7 +2939,7 @@ G.NAV = [
        của phòng tài chính không phải người quản trị trang, và bắt họ
        qua cổng ấy là hoặc mở qt_trang cho họ — tức cho luôn quyền cấp
        tài khoản — hoặc để họ không vào được phòng của chính mình. */
-    {v:'phong-tai-chinh', t:'Phòng Kế toán – Tài chính', h:'Bảng tin · trợ lý · việc của tôi · sổ ngày · đối chiếu · chốt sổ · KPI · quy chế', ic:'shield', star:1, perm:'fin_view', capMo:'chung'},
+    {v:'phong-tai-chinh', t:'Phòng Kế toán – Tài chính', h:'Bảng tin · trợ lý · việc của tôi · sổ ngày · đối chiếu · chốt sổ · KPI · lương · quy chế', ic:'shield', star:1, perm:'fin_view', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'khoa-tai-khoan',t:'Khoá · mở lại · xoá',       h:'Vòng đời một tài khoản, có lý do',    ic:'lock', perm:'qt_trang', capMo:'quantri'},
@@ -3389,7 +3389,7 @@ G.ITEM_EN = {
   'khoa-dao-tao':['My training course','Learn · Do · Submit · the next lesson opens itself'],
   'do-thoi-gian':['Time · rewards · penalties','A real clock · three thresholds · completion standard · point conversion'],
   'noi-may-chu':['Connect to the server','Paste the address · test the call · six setup steps'],
-  'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · charter'],
+  'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
   'phan-quyen':['Assignments & permissions','15 positions × 31 permissions · click a cell to change it'],
   'cap-tai-khoan':['Open a new account','Issued for positions from Consultant upward'],
   'khoa-tai-khoan':['Lock · reopen · delete','The life of an account, with a stated reason'],
@@ -33384,10 +33384,10 @@ G.VIEWS = G.VIEWS || {};
 /* ═══════════════════════════════════════════════════════════════
    GITA 365 — MÀN HÌNH PHÒNG KẾ TOÁN – TÀI CHÍNH
 
-   Một màn, tám ngăn. Máy chấm và máy chặn nằm ở may-chu/; tệp này chỉ
+   Một màn, chín ngăn. Máy chấm và máy chặn nằm ở may-chu/; tệp này chỉ
    vẽ và gọi.
 
-   ══ THỨ TỰ TÁM NGĂN LÀ MỘT QUYẾT ĐỊNH ══
+   ══ THỨ TỰ CHÍN NGĂN LÀ MỘT QUYẾT ĐỊNH ══
 
      bảng tin      — người biết chuyện viết xuống, phân cấp bằng màu
      trợ lý        — hỏi một câu, nhận câu trả lời có căn cứ
@@ -33396,6 +33396,7 @@ G.VIEWS = G.VIEWS || {};
      đối chiếu     — sổ so với ngân hàng
      chốt sổ       — tuần
      KPI           — điểm của chính mình
+     lương         — ba tầng, và chỗ máy dừng lại chờ người quyết
      quy chế       — tra cứu
 
    Hai ngăn đầu đứng trước vì màn này mở ra mỗi sáng để trả lời câu "hôm
@@ -33441,6 +33442,7 @@ G.VIEWS = G.VIEWS || {};
     {ma: 'doichieu',ten: 'Đối chiếu',     ic: 'shield'},
     {ma: 'chot',    ten: 'Chốt sổ',       ic: 'lock'},
     {ma: 'kpi',     ten: 'KPI',           ic: 'star'},
+    {ma: 'luong',   ten: 'Lương',         ic: 'crown'},
     {ma: 'quyche',  ten: 'Quy chế',       ic: 'book'}
   ];
 
@@ -33526,7 +33528,7 @@ G.VIEWS = G.VIEWS || {};
   G.tcNap = function () {
     if (!G.goiMayChu) return;
     G.tcDuLieu.dangNap = true;
-    var xong = 0, can = 6;
+    var xong = 0, can = 7;
 
     /* ── VẼ LẠI CHỈ KHI MÀN NÀY CÒN ĐANG MỞ ──
 
@@ -33566,6 +33568,8 @@ G.VIEWS = G.VIEWS || {};
     G.goiMayChu('dsChot', {soKy: 8}).then(function (d) { ghi('chot', d); });
     G.goiMayChu('chamKpiTaiChinh', {loai: 'thang'}).then(function (d) { ghi('kpi', d); });
     G.goiMayChu('bangTinTaiChinh', {}).then(function (d) { ghi('bangTin', d); });
+    G.goiMayChu('bangLuong', {ky: G.tcLuongKy || kyMacDinh()})
+      .then(function (d) { ghi('luong', d); });
   };
 
   /* Nạp lại RIÊNG bảng tin sau khi đăng hoặc đóng một tin. Nạp lại cả
@@ -34137,7 +34141,236 @@ G.VIEWS = G.VIEWS || {};
     return o;
   }
 
-  /* ═══════════ NGĂN 8 · QUY CHẾ ═══════════ */
+  /* ═══════════ NGĂN 8 · LƯƠNG ═══════════
+
+     Ba tầng: lương cứng, phần theo KPI, và ghi nhận của người quản lý.
+
+     MÀN NÀY PHẢI HIỆN RÕ CHỖ MÁY DỪNG LẠI. TC_LUONG tự khai hai chỗ
+     máy không quyết được — L-01 số tiền từng tầng, L-02 điểm dưới 60
+     xử lý thế nào. Chưa ai đặt hệ số thì màn KHÔNG in ra số 0: số 0
+     đọc ra thành "người này không được trả gì", còn ô trống kèm một
+     câu thì đọc ra thành "chưa ai đặt con số". Hai câu ấy dẫn tới hai
+     việc khác hẳn nhau.
+
+     VÀ MỘT NGƯỜI LUÔN XEM ĐƯỢC DÒNG CỦA CHÍNH MÌNH, kèm từng thước đã
+     chấm. Không cho người ta xem bảng lương của chính họ là buộc họ
+     tin một con số không tra lại được. */
+  function nganLuong() {
+    var d = G.tcDuLieu.luong, e = loi(d, 'bảng lương'); if (e) return e;
+    var o = '';
+
+    o += '<div class="row" style="gap:8px;flex-wrap:wrap;margin-bottom:14px">' +
+      thangGanDay().map(function (k) {
+        var on = (G.tcLuongKy || kyMacDinh()) === k;
+        return '<button class="btn' + (on ? ' primary' : '') + '" ' +
+          'onclick="G.tcDoiKyLuong(\'' + k + '\')">' + h(k) + '</button>';
+      }).join('') + '</div>';
+
+    /* ── CHỖ MÁY DỪNG LẠI, IN TRƯỚC BẢNG ── */
+    if (d.choChuHeChot)
+      o += '<div class="card" style="border-left:3px solid var(--warn)">' +
+        '<b>Chưa quy được điểm ra tiền — L-01 còn chờ chủ hệ</b>' +
+        '<p class="sm muted mt">' + h(d.choChuHeChot) + '</p>' +
+        (laSuperAdmin()
+          ? '<div class="row mt" style="gap:8px"><button class="btn primary" ' +
+            'onclick="G.tcMoDatHeSo()">Đặt hệ số lương</button></div>'
+          : '<p class="tiny muted mt">Chỉ Super Admin đặt được — đây là quyết định ' +
+            'về ngân sách, không phải một tham số kỹ thuật.</p>') +
+        '</div>';
+
+    if (!(d.dong || []).length)
+      return o + U.empty('Kỳ này chưa có ai trong phòng',
+        'Bảng lương dựng theo VỊ TRÍ đang giữ trong phòng tài chính.', true);
+
+    if (d.chiDongCuaToi)
+      o += '<div class="card"><p class="sm">Bạn đang xem đúng dòng của chính mình. ' +
+        'Bảng đầy đủ mở cho R01–R03, người quản lý phòng và kế toán trưởng — ' +
+        'kế toán thu không có việc gì phải biết lương kế toán chi.</p></div>';
+
+    o += U.sec('Kỳ ' + h(d.ky), h(d.vi || ''));
+    o += U.tbl(['Người', 'Vị trí', 'Điểm', 'Bậc', 'Cứng', 'Theo KPI', 'Ghi nhận', 'Tổng', ''],
+      d.dong.map(function (x) {
+        var co = x.luongCung !== null && x.luongCung !== undefined;
+        var tong = co ? x.luongCung + (x.phanKpi || 0) + (x.ghiNhan || 0) : null;
+        return [
+          h(x.username.split('@')[0]),
+          '<span class="sm muted">' + h(x.tenViTri) + '</span>',
+          /* Điểm null in ra là "—", không in 0: không có gì để đo và đo
+             được 0 điểm là hai chuyện khác nhau. */
+          x.diem === null ? '<span class="muted">—</span>' :
+            '<b style="color:' + mauBac(x.diem) + '">' + h(String(x.diem)) + '</b>' +
+            (x.trongBoQua ? '<div class="tiny muted">bỏ ' + h(String(x.trongBoQua)) +
+              ' trọng số</div>' : ''),
+          '<span class="sm">' + h(x.bac || '—') + '</span>',
+          co ? h(tien(x.luongCung)) : '<span class="muted">chưa đặt</span>',
+          co ? h(tien(x.phanKpi || 0)) : '<span class="muted">—</span>',
+          x.ghiNhan ? h(tien(x.ghiNhan)) : '<span class="muted">—</span>',
+          tong === null ? '<span class="muted">—</span>' : '<b>' + h(tien(tong)) + '</b>',
+          x.trangThai === 'daChot'
+            ? U.chip('đã chốt', 'var(--ok)', true)
+            : (laQuanLy() && x.username !== ((G.S && G.S.acc && G.S.acc.u) || '') && co
+                ? '<button class="btn" onclick="G.tcMoChotLuong(\'' + h(x.username) +
+                  '\',' + (x.canNgoiLai ? 'true' : 'false') + ')">Chốt</button>'
+                : '<span class="sm muted">nháp</span>')
+        ];
+      }));
+
+    /* ── DÒNG CỦA CHÍNH TÔI: TỪNG THƯỚC ĐÃ CHẤM ── */
+    var toi = d.dong.filter(function (x) {
+      return x.username === ((G.S && G.S.acc && G.S.acc.u) || '');
+    })[0];
+    if (toi && (toi.tung || []).length) {
+      o += U.sec('Điểm của bạn đến từ đâu',
+        'Từng thước, số đo thật và điểm ra. Một bảng lương chỉ có một con số điểm ' +
+        'là một bản án không có hồ sơ — chỗ này để bạn cãi lại được.');
+      o += U.tbl(['Thước', 'Đo được', 'Ngưỡng', 'Điểm', 'Trọng số'],
+        toi.tung.map(function (t) {
+          return [h(t.ma),
+            t.do === null || t.do === undefined ? '<span class="muted">không có gì để đo</span>'
+              : h(String(t.do) + (t.don === '%' ? '%' : ' ' + (t.don || ''))),
+            t.diem === null ? '<span class="muted">—</span>'
+              : h((t.huongTot === 'thap' ? '≤ ' : '≥ ') + t.dat +
+                  (t.don === '%' ? '%' : ' ' + (t.don || ''))),
+            t.diem === null ? '<span class="muted">bỏ ra</span>'
+              : '<b>' + h(String(t.diem)) + '</b>',
+            '<span class="sm muted">' + h(String(t.trong)) + '</span>'];
+        }));
+    }
+
+    if (toi && toi.duoi60)
+      o += '<div class="card" style="border-left:3px solid var(--warn);margin-top:14px">' +
+        '<b>Quyết định của người chốt cho kỳ này</b>' +
+        '<p class="sm mt">' + h(toi.duoi60) + '</p>' +
+        '<p class="tiny muted mt">Máy không tự cắt phần KPI khi điểm thấp: nhiều lần ' +
+        'điểm thấp là vì một chỗ hỏng của hệ chứ không phải của người.</p></div>';
+    return o;
+  }
+
+  function mauBac(diem) {
+    if (diem >= 90) return 'var(--ok)';
+    if (diem >= 75) return 'var(--teal)';
+    if (diem >= 60) return 'var(--warn)';
+    return 'var(--bad)';
+  }
+  function laSuperAdmin() {
+    return ((G.S && G.S.acc && G.S.acc.role) || '') === 'R01';
+  }
+  function kyMacDinh() {
+    /* Kỳ mặc định là THÁNG TRƯỚC, không phải tháng này: KPI chấm trên
+       tháng đã đóng, và một tháng đang chạy thì mọi thước còn dở. */
+    var t = new Date(Date.now() + 7 * 3600e3);
+    t.setUTCDate(1); t.setUTCMonth(t.getUTCMonth() - 1);
+    return t.toISOString().slice(0, 7);
+  }
+  function thangGanDay() {
+    var ra = [], t = new Date(Date.now() + 7 * 3600e3);
+    t.setUTCDate(1); t.setUTCMonth(t.getUTCMonth() - 1);
+    for (var i = 0; i < 6; i++) {
+      ra.push(t.toISOString().slice(0, 7));
+      t.setUTCMonth(t.getUTCMonth() - 1);
+    }
+    return ra;
+  }
+
+  G.tcDoiKyLuong = function (ky) {
+    G.tcLuongKy = ky;
+    G.tcDuLieu.luong = null;
+    if (typeof document !== 'undefined' && document.getElementById('main'))
+      G.render && G.render();
+    napLuong();
+  };
+  function napLuong() {
+    if (!G.goiMayChu) return;
+    G.goiMayChu('bangLuong', {ky: G.tcLuongKy || kyMacDinh()}).then(function (d) {
+      G.tcDuLieu.luong = d;
+      if (typeof document !== 'undefined' && document.getElementById('main'))
+        G.render && G.render();
+    });
+  }
+
+  G.tcMoDatHeSo = function () {
+    U.modal('<h3>Đặt hệ số lương — trả lời L-01</h3>' +
+      '<p class="sm muted mt">Máy đo được ĐIỂM, không quy được điểm ra tiền. Quy đổi ' +
+      'là quyết định về thị trường lao động và về ngân sách. Dòng cũ KHÔNG bị sửa đè: ' +
+      'đặt mức mới là ghi một dòng có hiệu lực từ một kỳ, để bảng lương đã chốt còn ' +
+      'giải thích được.</p>' +
+      '<div class="mt2"><label class="sm"><b>Vị trí</b></label>' +
+      '<select id="tcHsViTri" class="inp">' +
+      '<option value="keToanThu">Kế toán thu</option>' +
+      '<option value="keToanChi">Kế toán chi</option>' +
+      '<option value="keToanTruong">Kế toán trưởng</option></select></div>' +
+      '<div class="mt"><label class="sm"><b>Có hiệu lực từ kỳ</b> ' +
+      '<span class="muted">(YYYY-MM)</span></label>' +
+      '<input id="tcHsKy" class="inp" placeholder="2026-01" maxlength="7"></div>' +
+      '<div class="mt"><label class="sm"><b>Lương cứng</b> ' +
+      '<span class="muted">(tầng 1 — đủ sống, không phụ thuộc KPI)</span></label>' +
+      '<input id="tcHsCung" class="inp" type="number" min="0" step="100000"></div>' +
+      '<div class="mt"><label class="sm"><b>Trần phần KPI</b> ' +
+      '<span class="muted">(tầng 2 — số nhận khi đạt 100 điểm)</span></label>' +
+      '<input id="tcHsTran" class="inp" type="number" min="0" step="100000"></div>' +
+      '<div class="mt"><label class="sm"><b>Vì sao đặt con số này</b></label>' +
+      '<textarea id="tcHsLyDo" class="inp" rows="3" maxlength="500" ' +
+      'placeholder="Kỳ sau không ai bảo vệ được một con số không có lý do"></textarea></div>' +
+      '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn primary" onclick="G.tcGuiHeSo()">Đặt hệ số</button>' +
+      '<button class="btn" onclick="U.closeModal()">Thôi</button></div>');
+  };
+
+  G.tcGuiHeSo = function () {
+    G.goiMayChu('datHeSoLuong', {heSo: {
+      viTri: oGiaTri('tcHsViTri'), tuKy: oGiaTri('tcHsKy'),
+      luongCung: Number(oGiaTri('tcHsCung') || 0),
+      tranKpi: Number(oGiaTri('tcHsTran') || 0),
+      lyDo: oGiaTri('tcHsLyDo')
+    }}).then(function (d) {
+      if (!d.ok) return U.toast(d.error || 'Chưa đặt được hệ số.', 'err');
+      U.closeModal();
+      U.toast('Đã đặt hệ số ' + (d.viTri || '') + ' từ kỳ ' + (d.tuKy || ''));
+      napLuong();
+    });
+  };
+
+  G.tcMoChotLuong = function (u, canNgoiLai) {
+    U.modal('<h3>Chốt dòng lương</h3>' +
+      '<p class="sm muted mt">Chốt rồi thì KHÔNG tính lại — cùng luật với sổ. Số đo ' +
+      'thô của cả năm thước đông cứng trong dòng này, để người được trả cãi lại được.</p>' +
+      (canNgoiLai
+        ? '<div class="card mt2" style="border-left:3px solid var(--warn)">' +
+          '<b>Điểm kỳ này dưới ngưỡng ngồi lại</b>' +
+          '<p class="sm muted mt">Máy KHÔNG tự cắt phần KPI và cũng không tự bỏ qua. ' +
+          'Nhiều lần điểm thấp là vì một chỗ hỏng của hệ chứ không phải của người, và ' +
+          'cắt lương ở đúng chỗ ấy là dạy người ta thôi báo cáo. Ghi ra bạn quyết thế ' +
+          'nào và vì sao.</p>' +
+          '<textarea id="tcLuongDuoi60" class="inp mt" rows="3" maxlength="500" ' +
+          'placeholder="Quyết thế nào, và vì sao"></textarea></div>'
+        : '') +
+      '<div class="mt2"><label class="sm"><b>Tầng ghi nhận</b> ' +
+      '<span class="muted">(tầng 3 — cho những việc không đếm được)</span></label>' +
+      '<input id="tcLuongGhiNhan" class="inp" type="number" min="0" step="100000" value="0"></div>' +
+      '<div class="mt"><label class="sm"><b>Ghi nhận vì việc gì</b> ' +
+      '<span class="muted">(bắt buộc khi có tiền)</span></label>' +
+      '<textarea id="tcLuongGhiNhanVi" class="inp" rows="2" maxlength="500" ' +
+      'placeholder="Không kể ra thì nó thành chỗ dễ nhất để trả ơn bằng tiền của Học viện"></textarea></div>' +
+      '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn primary" onclick="G.tcGuiChotLuong(\'' + h(u) + '\')">Chốt</button>' +
+      '<button class="btn" onclick="U.closeModal()">Thôi</button></div>');
+  };
+
+  G.tcGuiChotLuong = function (u) {
+    G.goiMayChu('chotLuong', {
+      ky: G.tcLuongKy || kyMacDinh(), username: u,
+      duoi60: oGiaTri('tcLuongDuoi60'),
+      ghiNhan: Number(oGiaTri('tcLuongGhiNhan') || 0),
+      ghiNhanVi: oGiaTri('tcLuongGhiNhanVi')
+    }).then(function (d) {
+      if (!d.ok) return U.toast(d.error || 'Chưa chốt được.', 'err');
+      U.closeModal();
+      U.toast('Đã chốt · ' + tien(d.tong));
+      napLuong();
+    });
+  };
+
+  /* ═══════════ NGĂN 9 · QUY CHẾ ═══════════ */
   function nganQuyChe() {
     var dl = G.TC_DIEULE;
     if (!dl) return U.lockCard('Bộ văn bản của phòng nằm trong kho nghề. Mở kho ' +
@@ -34224,6 +34457,7 @@ G.VIEWS = G.VIEWS || {};
     if (G.tcNgan === 'doichieu') return o + nganDoiChieu();
     if (G.tcNgan === 'chot')     return o + nganChot();
     if (G.tcNgan === 'kpi')      return o + nganKpi();
+    if (G.tcNgan === 'luong')    return o + nganLuong();
     return o + nganQuyChe();
   };
 })();

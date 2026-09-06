@@ -10023,6 +10023,94 @@ const { chromium } = require(PW);
       ra.tlTraTrung = tl.trungRuiRo;
     }
 
+    /* ── BẢNG LƯƠNG: BẢN CHÉP NGƯỠNG PHẢI KHỚP BẢN GỐC TỪNG Ô ──
+
+       Máy chủ không đọc được kho đã mã hoá, nên ngưỡng và trọng số của
+       mười lăm thước có một bản chép ở may-chu/luong.js — cùng lý do
+       đã buộc GIA_TANG phải có bản chép từ 9.94.
+
+       Chấm điểm ở máy khách rồi gửi số điểm lên thì không cần bản chép
+       nào, nhưng nó phá luật đầu tiên của TC-KP-01: "không thước nào
+       do người tự khai". Máy khách là chỗ người dùng sửa được.
+
+       Nên đối chiếu TỪNG Ô, không chỉ đối chiếu tên thước: lệch một ô
+       ngưỡng nghĩa là bảng lương trả theo một cái thước khác với cái
+       thước người ta được đọc — và không ai nhìn ra, vì hai bên đều
+       nói cùng một tên thước. */
+    {
+      const mLuong = await import('../may-chu/luong.js');
+      const banGoc = await p.evaluate(() => {
+        const t = window.G.TC_KPI || {}, ra = {};
+        for (const vt of ['keToanThu', 'keToanChi', 'keToanTruong'])
+          ra[vt] = ((t[vt] || {}).thuoc || []).map(x => ({ma: x.ma, dat: x.dat,
+            don: x.don, huongTot: x.huongTot || 'cao', trong: x.trong}));
+        ra.bacDiem = ((window.G.TC_LUONG || {}).bacDiem || [])
+          .map(b => ({tu: b.tu, ten: b.ten}));
+        ra.soChoChot = ((window.G.TC_LUONG || {}).choChuHeChot || []).length;
+        return ra;
+      });
+
+      const lech = [];
+      for (const vt of ['keToanThu', 'keToanChi', 'keToanTruong']) {
+        const a = banGoc[vt] || [], b = mLuong.NGUONG_KPI[vt] || [];
+        if (a.length !== b.length) { lech.push(vt + ': kho ' + a.length +
+          ' thước, máy chủ ' + b.length); continue; }
+        for (let i = 0; i < a.length; i++)
+          for (const o of ['ma', 'dat', 'don', 'huongTot', 'trong'])
+            if (String(a[i][o]) !== String(b[i][o]))
+              lech.push(a[i].ma + '.' + o + ': kho "' + a[i][o] +
+                '" · máy chủ "' + b[i][o] + '"');
+      }
+      const bg = banGoc.bacDiem, bm = mLuong.BAC_DIEM;
+      if (bg.length !== bm.length) lech.push('bacDiem: kho ' + bg.length +
+        ' bậc, máy chủ ' + bm.length);
+      else for (let i = 0; i < bg.length; i++)
+        if (bg[i].tu !== bm[i].tu || bg[i].ten !== bm[i].ten)
+          lech.push('bacDiem[' + i + ']: kho ' + bg[i].tu + '/' + bg[i].ten +
+            ' · máy chủ ' + bm[i].tu + '/' + bm[i].ten);
+
+      ra.luongNguongKhop = lech.length === 0;
+      ra.luongLech = lech;
+
+      /* ── MÁY KHÔNG QUYẾT HỘ L-01 ──
+         TC_LUONG tự khai máy đo được ĐIỂM và không quy được điểm ra
+         tiền. Nên trong nguồn máy chủ KHÔNG được có một con số tiền
+         mặc định nào: một con số mặc định sẽ thành lương thật của một
+         người thật, vì không ai đi sửa một chỗ đã có số. */
+      const nguonLuong = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'luong.js'), 'utf8');
+      const khoiSo = nguonLuong.replace(/\/\*[\s\S]*?\*\//g, '')
+        .replace(/^\s*\/\/.*$/gm, '');
+      ra.luongKhongCoTienMacDinh = !/\b\d{7,}\b/.test(khoiSo);
+      ra.luongSoLo = (khoiSo.match(/\b\d{7,}\b/g) || []).slice(0, 3);
+      /* Và hai chỗ chờ chủ hệ vẫn còn nguyên trong kho — xoá chúng đi
+         là xoá mất lời khai rằng máy chưa quyết được hai chuyện ấy. */
+      ra.luongConSoCho = banGoc.soChoChot === 2;
+
+      /* THƯỚC KHÔNG ĐO ĐƯỢC KHÔNG BAO GIỜ THÀNH 100. Gọi thẳng hàm
+         chấm chứ không đọc chú giải: chú giải nói gì cũng được. */
+      ra.luongNullKhongThanh100 =
+        mLuong.chamMotThuoc(null, {dat: 95, huongTot: 'cao', trong: 30}) === null &&
+        mLuong.chamMotThuoc(undefined, {dat: 0, huongTot: 'thap', trong: 25}) === null;
+      const thu = mLuong.chamViTri({'KT-T1': null, 'KT-T2': null, 'KT-T3': 100,
+        'KT-T4': 0, 'KT-T5': 100}, 'keToanThu');
+      ra.luongBoTrongSo = thu.trongBoQua === 55 && thu.diem === 100;
+    }
+
+    bao(ra.luongNguongKhop && ra.luongKhongCoTienMacDinh && ra.luongConSoCho &&
+        ra.luongNullKhongThanh100 && ra.luongBoTrongSo,
+      'BẢNG LƯƠNG PHÒNG TÀI CHÍNH — NGƯỠNG VÀ TRỌNG SỐ Ở MÁY CHỦ PHẢI KHỚP BẢN GỐC TRONG KHO TỪNG Ô, VÀ MÁY KHÔNG ĐƯỢC TỰ ĐẶT MỘT ĐỒNG LƯƠNG NÀO. Mười lăm thước KPI có ngưỡng, đơn vị, hướng tốt và trọng số khai ở G.TC_KPI trong kho đã mã hoá; máy chủ không đọc được kho ấy nên giữ một bản chép, cùng lý do đã buộc GIA_TANG phải có bản chép từ 9.94. Chấm điểm ở máy khách rồi gửi số điểm lên thì khỏi cần bản chép, nhưng nó phá luật đầu tiên của TC-KP-01 — "không thước nào do người tự khai" — vì máy khách là chỗ người dùng sửa được. Nên phép đo này đối chiếu TỪNG Ô chứ không chỉ tên thước: lệch một ô ngưỡng nghĩa là bảng lương trả theo một cái thước khác với cái thước người ta được đọc, và không ai nhìn ra vì hai bên vẫn gọi cùng một tên. TC_LUONG tự khai hai chỗ máy không quyết được — L-01 số tiền từng tầng, L-02 điểm dưới 60 xử lý thế nào — nên nguồn máy chủ không được chứa một con số tiền mặc định nào: con số mặc định ấy sẽ thành lương thật của một người thật, vì không ai đi sửa một chỗ đã có số. Và thước KHÔNG ĐO ĐƯỢC trong kỳ thì ra khỏi phép tính chứ không thành 100 — cho nó 100 là thưởng một tháng không ai làm gì, cho nó 0 là phạt người vì việc không đến tay họ; phép đo gọi thẳng hàm chấm chứ không đọc chú giải, vì chú giải nói gì cũng được',
+      ra.luongNguongKhop
+        ? '15 thước khớp từng ô · 4 bậc điểm khớp · không một con số tiền mặc định · ' +
+          'thước không đo được bỏ 55 trọng số và không thành 100'
+        : [ra.luongLech.length ? 'LỆCH: ' + ra.luongLech.slice(0, 4).join(' | ') : '',
+           !ra.luongKhongCoTienMacDinh ? 'máy chủ có số tiền mặc định: ' +
+             (ra.luongSoLo || []).join(', ') : '',
+           !ra.luongConSoCho ? 'kho không còn khai đủ hai chỗ chờ chủ hệ' : '',
+           !ra.luongNullKhongThanh100 ? 'thước không đo được bị chấm thành điểm' : '',
+           !ra.luongBoTrongSo ? 'trọng số của thước bỏ ra không chia lại đúng' : ''
+          ].filter(Boolean).join(' · '));
+
     bao(ra.tlVbDu && ra.tlTraTrung && ra.tlCauDu && ra.tlKhongGoiRaNgoai,
       'TRỢ LÝ PHÒNG TÀI CHÍNH — TRA ĐƯỢC NĂM KHO VĂN BẢN CỦA PHÒNG, VÀ KHÔNG GỌI RA NGOÀI MỘT LƯỢT NÀO. Trợ lý GITA tra kho theo một danh sách nguồn khai tay, và tới 9.99.3 năm kho văn bản của phòng tài chính — điều lệ, quy chế, quy trình, biểu mẫu, sổ rủi ro — không có tên trong danh sách ấy. Nó KHÔNG im lặng ở những câu đó: nó trả về một kịch bản tư vấn phụ huynh trùng vài từ, và đó là kiểu hỏng tệ hơn im lặng vì im lặng thì người ta đi tra chỗ khác còn trả lời sai thì người ta tin. Nên phép đo này không đếm khai báo mà HỎI THẬT một câu — "chia nhỏ khoản chi để né cấp duyệt" — rồi đòi trong sáu kết quả đầu phải có một dòng của sổ rủi ro, vốn là chỗ câu ấy thuộc về. Ba kho trong năm khai theo hình khác mảng nên chúng dựng danh sách bằng lay() lúc tra chứ không chép một bản thứ hai vào kho đã mã hoá; đổi hình bản ghi là chỗ dễ mất mã hoặc mất tên, nên phép đo đọc thẳng bản ghi đầu của từng nguồn. Nửa còn lại của trợ lý chạy ở máy chủ và đọc SỔ THẬT: nó không gọi ra một mô hình ngôn ngữ nào, vì sổ tài chính là thứ cuối cùng được phép rời khỏi máy chủ Học viện — phép đo soi thẳng nguồn tệp và đỏ nếu thấy một lượt fetch hay một địa chỉ mạng. Và danh sách câu hỏi máy chủ nhận phải phủ đúng những đường gọi trên màn: một cái nút gọi một câu máy chủ không nhận thì người dùng bấm vào và không có chuyện gì xảy ra',
       (ra.tlVbDu && ra.tlTraTrung && ra.tlCauDu && ra.tlKhongGoiRaNgoai)
