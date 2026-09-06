@@ -1719,6 +1719,108 @@ bao(!(await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn',
   id:nho.than.id})).than.ok,
   'khoản đã tự ghi thì không duyệt lại được — nó đã ở trong sổ rồi');
 
+/* ── BÁO DÒNG DOANH THU VỀ HÒM THƯ CHỦ HỆ · CHỐT 9.96 ── */
+console.log('\n15d · BÁO DÒNG DOANH THU');
+env.GITA_THU_DOANH_THU = 'chuhe@vidu.vn';
+hopThu.length = 0;
+
+const ptBao = await goi({fn:'ghiPhieuThu', token:tkSA, u:'superadmin@gita365.vn',
+  phieu:{maKhachHang:'GITA-BC01', soTien:1234000, hinhThuc:'chuyenKhoan',
+    maThamChieu:'FT26090612345'}});
+const thuBao = hopThu.find(t => /tiền vào/.test(t.tieuDe));
+bao(ptBao.than.ok && !!thuBao && thuBao.den === 'chuhe@vidu.vn',
+  'KHÁCH CHUYỂN TIỀN THÌ CÓ THƯ BÁO VỀ HÒM THƯ CHỦ HỆ',
+  thuBao && thuBao.tieuDe);
+
+bao(!!thuBao && /1\.234\.000đ/.test(thuBao.than) && /GITA-BC01/.test(thuBao.than) &&
+    /FT26090612345/.test(thuBao.than) && /chờ duyệt/.test(thuBao.than),
+  'thư chở đủ DÒNG DOANH THU — số tiền, mã nhà, mã giao dịch, và nói rõ CHƯA duyệt',
+  'số đã ghi là tiền có người nói đã vào; chỉ số đã duyệt mới vào bản kê');
+
+/* THƯ BÁO Ở MỐC GHI, KHÔNG Ở MỐC DUYỆT. Báo sau khi duyệt thì lá thư
+   chẳng thêm gì — đã có người trong hệ xác nhận rồi. Báo lúc ghi thì
+   con mắt của chủ hệ là con mắt ĐỘC LẬP, đứng ngoài mọi vai. */
+const soThuTruoc = hopThu.length;
+await goi({fn:'duyetPhieuThu', token:tkCoach, u:'coach@gita365.vn', id:ptBao.than.id});
+bao(hopThu.length === soThuTruoc,
+  'DUYỆT PHIẾU THÌ KHÔNG GỬI THÊM THƯ — báo ở mốc GHI mới là con mắt độc lập',
+  'báo sau khi duyệt thì đã có người trong hệ xác nhận rồi, lá thư chẳng thêm gì');
+
+/* THƯ CHỞ CON SỐ, KHÔNG CHỞ HỒ SƠ KHÁCH. Hòm thư là đường kém an toàn
+   nhất trong cả kiến trúc: qua nhà gửi thư, qua Google, nằm lại trong
+   hộp thư và bản sao lưu, không mã hoá theo khoá của Học viện. */
+const phBC = db.prepare("SELECT u.hoTen, u.email, u.dienThoai FROM hoSoKhach h " +
+  "JOIN users u ON u.id = h.uidPhuHuynh WHERE h.maKhachHang='GITA-BC01'").get();
+bao(!!thuBao && !!phBC && thuBao.than.indexOf(phBC.hoTen) < 0 &&
+    thuBao.than.indexOf(phBC.email) < 0,
+  'VÀ THƯ KHÔNG CHỞ TÊN PHỤ HUYNH HAY EMAIL KHÁCH — hòm thư là đường kém an toàn nhất trong hệ',
+  'không phải vì chủ hệ không được xem, mà vì dữ liệu khách chỉ ra khỏi hệ theo giấy phép');
+
+/* GỬI THƯ HỎNG KHÔNG ĐƯỢC LÀM MẤT MỘT ĐỒNG NÀO. */
+const guiHong = {...env, GHI_THU: undefined, GITA_KHOA_THU: undefined,
+  GITA_THU_DOANH_THU: 'chuhe@vidu.vn'};
+const tcMod = await import('../may-chu/tai-chinh.js');
+const ptHong = await tcMod.ghiPhieuThu(
+  {phieu:{maKhachHang:'GITA-BC01', soTien:777000, hinhThuc:'tienMat'}},
+  guiHong, env.CSDL, {uid:'U-sa', u:'superadmin@gita365.vn', role:'R01'});
+bao(ptHong.ok && !!db.prepare("SELECT id FROM phieuThu WHERE id=?").get(ptHong.id),
+  'NHÀ GỬI THƯ SẬP THÌ PHIẾU VẪN NẰM NGUYÊN TRONG SỔ — mất một lượt báo, không mất một đồng',
+  'để một lá thư hỏng kéo đổ lượt ghi phiếu là mất tiền thật để cứu một lượt báo');
+
+/* HÒM THƯ ĐỂ TRỐNG THÌ KHÔNG GỬI GÌ — hành vi đúng cho bản chạy thử. */
+hopThu.length = 0;
+const khongDat = {...env, GITA_THU_DOANH_THU: ''};
+await tcMod.ghiPhieuThu(
+  {phieu:{maKhachHang:'GITA-BC01', soTien:88000, hinhThuc:'tienMat'}},
+  khongDat, env.CSDL, {uid:'U-sa', u:'superadmin@gita365.vn', role:'R01'});
+bao(hopThu.length === 0,
+  'chưa đặt hòm thư nhận thì KHÔNG gửi gì — bộ thử không được gửi thư thật vào hòm thư thật');
+
+/* ── BẢN TỔNG CUỐI NGÀY ──
+   Cổng giờ ở scheduled() phải khớp với khung giờ khai ở wrangler.toml.
+   Bản đầu tôi đặt cổng gioUTC === 0 trong khi cấu hình mới chỉ khai
+   khung 20:00 — bản tổng KHÔNG BAO GIỜ gửi, mà mã vẫn trông như đã
+   làm xong việc. Nên phép đo này gọi thẳng scheduled() với CẢ HAI mốc. */
+hopThu.length = 0;
+const cho = [];
+const ctxGia = {waitUntil: p => cho.push(p)};
+await worker.scheduled({scheduledTime: Date.parse('2026-09-07T20:00:00Z')}, env, ctxGia);
+await Promise.all(cho.splice(0));
+bao(hopThu.length === 0, 'khung 20:00 UTC chỉ DỌN, không gửi bản tổng');
+
+/* Mốc hẹn 07/09 00:00 UTC → hôm qua giờ Việt Nam là 06/09, đúng ngày
+   các phiếu thử ở trên được ghi. Ngày lấy từ MỐC ĐÃ HẸN chứ không từ
+   "bây giờ": một lượt chạy muộn qua nửa đêm sẽ tổng kết nhầm ngày, và
+   ngày đúng thì không ai tổng kết nữa. */
+await worker.scheduled({scheduledTime: Date.parse('2026-09-07T00:00:00Z')}, env, ctxGia);
+await Promise.all(cho.splice(0));
+const thuTong = hopThu.find(t => /dòng doanh thu/.test(t.tieuDe));
+bao(!!thuTong && thuTong.den === 'chuhe@vidu.vn',
+  'KHUNG 00:00 UTC (7 GIỜ SÁNG GIỜ VIỆT NAM) GỬI BẢN TỔNG NGÀY HÔM QUA',
+  thuTong && thuTong.tieuDe);
+bao(!!thuTong && /Đã ghi/.test(thuTong.than) && /Đã duyệt/.test(thuTong.than) &&
+    /Theo hình thức/.test(thuTong.than),
+  'bản tổng tách ĐÃ GHI với ĐÃ DUYỆT và chia theo hình thức',
+  'số đã ghi là tiền có người nói đã vào, số đã duyệt là tiền có người thứ hai xác nhận');
+
+/* NGÀY KHÔNG CÓ TIỀN VÀO THÌ VẪN GỬI. Một ngày không tiền mà không có
+   thư thì không phân biệt được với một ngày hệ thống báo hỏng. */
+hopThu.length = 0;
+const bdt = await import('../may-chu/bao-doanh-thu.js');
+await bdt.tongNgayDoanhThu({...env, GITA_THU_DOANH_THU:'chuhe@vidu.vn'},
+  env.CSDL, '2025-01-15');
+const thuRong = hopThu.find(t => /dòng doanh thu/.test(t.tieuDe));
+bao(!!thuRong && /KHÔNG CÓ LƯỢT TIỀN VÀO NÀO/.test(thuRong.than),
+  'NGÀY KHÔNG CÓ TIỀN VÀO THÌ VẪN GỬI THƯ — một ngày không tiền mà không có thư thì không phân biệt được với một ngày hệ thống báo hỏng',
+  'hai chuyện ấy dẫn tới hai việc khác hẳn nhau');
+
+/* TRẦN THƯ MỖI NGÀY. Ở mức 100.000 tài khoản, mỗi lượt một thư thành
+   hàng nghìn thư một ngày, và lá thứ một nghìn không còn là lớp kiểm
+   soát — nó là rác, và cả nghìn lá trước nó thành rác theo. */
+bao(bdt.TRAN_THU_NGAY > 0 && bdt.TRAN_THU_NGAY <= 200,
+  'có TRẦN THƯ MỖI NGÀY — một hòm thư ngập là một hòm thư không ai đọc',
+  bdt.TRAN_THU_NGAY + ' thư lẻ mỗi ngày, quá thì gửi MỘT lá báo thôi gửi lẻ');
+
 /* ── TRẦN CHU KỲ · CHỐT 9.95 ──
 
    "Tổng chi theo chu kỳ là 10 triệu đồng là phải báo cáo xác minh,

@@ -42,6 +42,7 @@ import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh,
   ghiNhacThu, lichSuNhacThu, denHenChuaTra } from './tai-chinh.js';
 import { soNgay, chotTuan, soatChot, tongHop, baoCaoKeToan, boSoKhaiThue,
   dsChot } from './bao-cao.js';
+import { tongNgayDoanhThu } from './bao-doanh-thu.js';
 import { ghiChi, duyetChi, huyChi, soChi, chotKet, dsChotKet,
   xemThangDuyetChi, baoCaoChi, tongHopChi } from './chi-tieu.js';
 
@@ -463,8 +464,37 @@ export async function donDep(env) {
 }
 
 export default {
-  /* Cloudflare gọi hàm này theo lịch khai ở wrangler.toml. */
+  /* Cloudflare gọi hàm này theo lịch khai ở wrangler.toml.
+
+     HAI KHUNG GIỜ, HAI VIỆC:
+
+       20:00 UTC = 03:00 sáng giờ Việt Nam → DỌN
+       00:00 UTC = 07:00 sáng giờ Việt Nam → BẢN TỔNG DOANH THU hôm qua
+
+     Phân theo giờ chứ không chạy cả hai ở mỗi lần nổ: dọn hai lần một
+     ngày là phí, còn gửi bản tổng hai lần là một hòm thư có hai lá
+     giống nhau — và người đọc thôi tin cả hai.
+
+     Bản đầu tôi viết cổng này là gioUTC === 0 trong khi wrangler.toml
+     mới chỉ khai một khung 20:00. Nghĩa là bản tổng KHÔNG BAO GIỜ gửi,
+     mà mã vẫn trông như đã làm xong việc. Nay khai đủ hai khung ở đó,
+     và phép đo ở thu-worker.js gọi thẳng scheduled() với cả hai mốc. */
   async scheduled(su, env, ctx) {
+    const gioUTC = new Date((su && su.scheduledTime) || Date.now()).getUTCHours();
+
+    if (gioUTC === 0) {
+      /* NGÀY LẤY TỪ MỐC ĐÃ HẸN, KHÔNG LẤY TỪ "BÂY GIỜ".
+
+         Lượt chạy theo lịch có thể nổ muộn, hoặc chạy lại sau một lượt
+         hỏng. Lấy "hôm qua" theo Date.now() thì một lượt chạy muộn qua
+         nửa đêm sẽ tổng kết nhầm ngày, và ngày đúng thì không ai tổng
+         kết nữa — mất hẳn một ngày khỏi chuỗi thư. */
+      const homQua = new Date(new Date((su && su.scheduledTime) || Date.now())
+        .getTime() + 7 * 3600e3 - 86400e3).toISOString().slice(0, 10);
+      ctx.waitUntil(tongNgayDoanhThu(env, env.CSDL, homQua).catch(e =>
+        console.error('BAO_DOANHTHU_NGAY_HONG', String(e && e.message || e))));
+      return;
+    }
     ctx.waitUntil(donDep(env));
   },
 

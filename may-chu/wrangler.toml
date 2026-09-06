@@ -43,10 +43,29 @@ GITA_DIA_CHI_WEB = "https://gita.edu.vn"
 # mã xác nhận nằm trong mục spam thì coi như không gửi.
 GITA_THU_GUI_TU = "GITA 365 <khonggui@gita.edu.vn>"
 
-# Dọn mỗi đêm 3 giờ sáng giờ Việt Nam (20:00 UTC hôm trước). Bốn bảng
-# chỉ lớn lên nếu không ai dọn — xem HAN trong worker.js.
+# Hòm thư nhận báo DÒNG DOANH THU — chốt của chủ hệ thống bản 9.96.
+# Mỗi lượt khách chuyển tiền gửi một thư về đây, và mỗi sáng gửi bản
+# tổng của ngày hôm trước.
+#
+# Để ở cấu hình chứ không gõ cứng trong mã: đổi người nhận là một lượt
+# sửa cấu hình, không phải một lượt sửa mã và phát hành lại.
+#
+# ĐỂ TRỐNG THÌ KHÔNG GỬI GÌ CẢ — và đó là hành vi đúng cho một bản chạy
+# thử: không ai muốn bộ thử của mình gửi thư thật vào hòm thư thật.
+GITA_THU_DOANH_THU = "typhuquanggita@gmail.com"
+
+# HAI KHUNG GIỜ, HAI VIỆC KHÁC NHAU.
+#
+#   20:00 UTC = 03:00 sáng giờ Việt Nam — DỌN. Giờ chết, không ai dùng.
+#   00:00 UTC = 07:00 sáng giờ Việt Nam — BẢN TỔNG DOANH THU ngày hôm
+#               qua. Thư nằm sẵn trong hòm lúc chủ hệ mở máy, và ngày
+#               hôm qua lúc ấy đã đóng hẳn.
+#
+# Bộ chạy theo giờ nhận CẢ HAI lần nổ; nó tự phân theo giờ UTC trong
+# worker.js. Thiếu dòng 00:00 ở đây thì bản tổng KHÔNG BAO GIỜ gửi, mà
+# mã vẫn trông như đã làm xong việc — đúng lớp lỗi im lặng nhất.
 [triggers]
-crons = ["0 20 * * *"]
+crons = ["0 20 * * *", "0 0 * * *"]
 
 # Nguồn dữ liệu. Tạo bằng:  npx wrangler d1 create gita365
 # rồi dán database_id vào đây (id KHÔNG phải bí mật — nó chỉ định danh).

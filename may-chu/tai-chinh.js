@@ -33,6 +33,7 @@
 
 import { Kho, tokenMoi } from './nen.js';
 import { ghiDieuChinh } from './bao-cao.js';
+import { baoTienVao } from './bao-doanh-thu.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
              R09:9,R10:10,R11:11,R12:12,R13:13,R14:14,R15:15};
@@ -196,17 +197,45 @@ export async function ghiPhieuThu(y, env, db, hoSo) {
   }
 
   const id = 'PT-' + tokenMoi().slice(0, 14);
+  /* MỘT mốc, dùng cho cả dòng trong sổ lẫn lá thư báo. Gọi new Date()
+     hai lần là dựng hai sự thật: một phiếu ghi lúc 23:59:59.999 có thể
+     vào sổ ngày hôm nay mà thư báo nói ngày mai. */
+  const ghiLuc = new Date().toISOString();
   await db.prepare(
     'INSERT INTO phieuThu (id,maKhachHang,idKy,soTien,hinhThuc,maThamChieu,minhChung,' +
     "nguoiGhi,ghiLuc,trangThai,ghiChu) VALUES (?,?,?,?,?,?,?,?,?,'choDuyet',?)"
   ).bind(id, nha, p.idKy || null, tien, String(p.hinhThuc),
     String(p.maThamChieu || '').slice(0, 80) || null,
     String(p.minhChung || '').slice(0, 120) || null,
-    hoSo.u, new Date().toISOString(), String(p.ghiChu || '').slice(0, 500) || null).run();
+    hoSo.u, ghiLuc, String(p.ghiChu || '').slice(0, 500) || null).run();
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'PHIEUTHU_GHI',
     doiTuong: id, chiTiet: nha + ' · ' + tien + 'đ · ' + p.hinhThuc});
-  return {ok: true, id, trangThai: 'choDuyet'};
+
+  /* ── BÁO DÒNG DOANH THU VỀ HÒM THƯ CHỦ HỆ ──
+
+     Chốt 9.96. Báo ở mốc GHI chứ không ở mốc DUYỆT: báo sau khi duyệt
+     thì lá thư chẳng thêm gì, đã có người trong hệ xác nhận rồi. Báo
+     lúc ghi thì con mắt của chủ hệ là con mắt ĐỘC LẬP.
+
+     Đặt SAU lượt INSERT và bọc trong try: phiếu đã nằm trong sổ rồi,
+     nên nhà gửi thư sập cũng không được làm mất một đồng nào. guiThu
+     đã nuốt lỗi mạng, nhưng chỗ này còn có thể ném vì lý do khác —
+     một câu SELECT hỏng, một cấu hình thiếu — và không bọc thì lượt
+     ghi phiếu đổ theo. */
+  let baoThu;
+  try {
+    baoThu = await baoTienVao(env, db, {
+      phieu: {id, maKhachHang: nha, soTien: tien, hinhThuc: String(p.hinhThuc),
+        maThamChieu: p.maThamChieu, ghiLuc},
+      ky, nguoiGhi: hoSo.u});
+  } catch (e) {
+    console.error('BAO_DOANHTHU_HONG', id, String(e && e.message || e));
+    baoThu = {gui: false};
+  }
+
+  return {ok: true, id, trangThai: 'choDuyet',
+    daBaoChuHe: !!(baoThu && baoThu.gui) || undefined};
 }
 
 const dinhDang = n => Number(n).toLocaleString('vi-VN') + 'đ';
