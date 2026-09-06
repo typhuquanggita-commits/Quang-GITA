@@ -252,6 +252,15 @@ async function dongTien(db, k) {
     "WHERE trangThai = 'daDuyet' AND coHoaDon = 1 AND ngayChi >= ? AND ngayChi <= ?"
   ).bind(k.tuLuc, k.denLuc).first();
 
+  /* Bao nhiêu tiền đi LỐI TỰ GHI — một người ký. Đây không phải một
+     con số để ngắm: nó là tỷ lệ tiền ra khỏi Học viện mà không ai
+     đứng giữa, và nếu nó lớn dần thì hoặc ngưỡng đặt quá cao, hoặc có
+     người đang chia nhỏ khoản chi. */
+  const chiTuGhi = await db.prepare(
+    "SELECT COALESCE(SUM(soTien),0) t, COUNT(*) n FROM chiPhi " +
+    "WHERE trangThai = 'daDuyet' AND tuGhi = 1 AND ngayChi >= ? AND ngayChi <= ?"
+  ).bind(k.tuLuc, k.denLuc).first();
+
   /* ══ MIỄN GIẢM — GIẢM TRỪ DOANH THU, KHÔNG PHẢI MỘT KHOẢN CHI ══
      Tính theo duyetLuc: miễn giảm có hiệu lực từ lúc duyệt, không lùi
      ngược. Một khoản giảm duyệt hôm nay không được làm đổi bản báo cáo
@@ -292,6 +301,7 @@ async function dongTien(db, k) {
     thuNgoaiLich: Number(thu.t) - Number(thuVaoKy.t),
     thuTruocDaToiHan: Number(thuTruocDaToiHan.t),
     chi: Number(chi.t), soChungTuChi: Number(chi.n),
+    chiTuGhi: Number(chiTuGhi.t), soChiTuGhi: Number(chiTuGhi.n),
     chiCoHoaDon: Number(chiCoHoaDon.t),
     chiKhongHoaDon: Number(chi.t) - Number(chiCoHoaDon.t),
     mienGiam: Number(mg.t), soMienGiam: Number(mg.n),
@@ -812,6 +822,10 @@ export async function baoCaoKeToan(y, env, db, hoSo) {
       tongChi: t.chi, soChungTu: t.soChungTuChi,
       coHoaDon: t.chiCoHoaDon,
       khongHoaDon: t.chiKhongHoaDon,
+      /* Hai lối nêu riêng — xem chú giải ở dongTien. */
+      quaCuaDuyet: t.chi - t.chiTuGhi,
+      loiTuGhi: t.chiTuGhi, soChungTuTuGhi: t.soChiTuGhi,
+      tyLeTuGhi: t.chi === 0 ? null : Math.round(t.chiTuGhi / t.chi * 1000) / 10,
       theoKhoanMuc: (theoMuc.results || []).map(x => ({
         khoanMuc: x.khoanMuc, so: Number(x.n), tien: Number(x.t)})),
       /* Hoa hồng đại sứ KHÔNG nằm trong sổ chi: nó có bảng riêng, có
@@ -821,7 +835,8 @@ export async function baoCaoKeToan(y, env, db, hoSo) {
       tongTienRa: t.chi + t.hhTra + t.hoan,
       nguon: "chiPhi WHERE trangThai='daDuyet' và ngayChi trong kỳ. Cột coHoaDon " +
              'tách riêng vì khoản chi không hoá đơn vẫn là tiền đã ra thật nhưng ' +
-             'đứng khác khi tính thuế.'},
+             'đứng khác khi tính thuế; cột tuGhi tách riêng vì khoản dưới ngưỡng ' +
+             'chỉ có một người ký.'},
 
     /* ══ CHÊNH LỆCH THU CHI — VÀ VÌ SAO KHÔNG GỌI NÓ LÀ LỢI NHUẬN ══
 
@@ -1020,6 +1035,7 @@ export async function boSoKhaiThue(y, env, db, hoSo) {
       tong: t.chi, soChungTu: t.soChungTuChi,
       coHoaDon: t.chiCoHoaDon,
       khongHoaDon: t.chiKhongHoaDon,
+      loiTuGhi: t.chiTuGhi, soChungTuTuGhi: t.soChiTuGhi,
       theoKhoanMuc: (mucThue.results || []).map(x => ({
         khoanMuc: x.khoanMuc, so: Number(x.n), tien: Number(x.t),
         coHoaDon: Number(x.hd)})),

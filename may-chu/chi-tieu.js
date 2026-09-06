@@ -59,15 +59,44 @@ const KHOAN_MUC = {
 
 const HINH_THUC = ['chuyenKhoan', 'tienMat', 'the'];
 
-/* Quá ngưỡng này thì chỉ R01 duyệt. Con số là quyết định của chủ hệ
-   thống; để ở đây thành MỘT dòng để đổi được mà không phải đi tìm. */
-const TRAN_R03_DUYET = 20000000;
+/* ══ BA BẬC CỦA MỘT KHOẢN CHI ══
 
-/* ═══════════════ ĐỀ XUẤT MỘT KHOẢN CHI ═══════════════ */
-export async function deXuatChi(y, env, db, hoSo) {
+   Chốt của chủ hệ thống, bản 9.92: "các khoản chi trên 1,5 triệu đồng
+   đều phải khai báo xin cấp duyệt chi."
+
+     dưới 1,5 triệu   — LỐI TỰ GHI. Một người ghi thẳng vào sổ, không
+                        phải chờ ai. Mua giấy in, gửi xe, nước uống:
+                        bắt hai người ký cho một khoản trăm nghìn là
+                        làm cho cả cái cổng duyệt bị người ta né.
+     từ 1,5 triệu     — PHẢI XIN DUYỆT. Người đề xuất khác người duyệt.
+     từ 20 triệu      — chỉ Giám đốc điều hành (R01) duyệt.
+
+   Hai con số là quyết định của chủ hệ thống, không phải của mã. Để
+   thành hai dòng ở đây để đổi được mà không phải đi tìm.
+
+   ══ MỘT NGƯỠNG KHÔNG CÓ PHÉP SOI CHIA NHỎ THÌ KHÔNG PHẢI NGƯỠNG ══
+
+   Đây là chỗ mọi cổng duyệt theo số tiền đều bị né, và né bằng cách
+   đơn giản nhất: một khoản ba triệu ghi thành hai khoản một triệu tư.
+   Không ai phải nói dối câu nào, và cổng duyệt không hề biết.
+
+   Nên lối tự ghi cộng dồn theo (khoản mục × người ghi) trong bảy ngày.
+   Cộng lại vượt ngưỡng thì khoản ấy phải đi đường xin duyệt, dù một
+   mình nó còn dưới. Bảy ngày chứ không phải một ngày: chia theo ngày
+   là cách né tiếp theo, và nó dễ y như cách đầu. */
+const TRAN_PHAI_DUYET = 1500000;
+const TRAN_R01_DUYET  = 20000000;
+const NGAY_GOP        = 7;
+
+/* ═══════════════ GHI MỘT KHOẢN CHI ═══════════════
+
+   Một cửa, hai lối. Dưới ngưỡng thì khoản chi vào thẳng sổ; từ ngưỡng
+   trở lên nó nằm chờ duyệt. Người ghi không phải chọn lối — máy chọn
+   theo số tiền, vì để người ghi tự chọn là để họ chọn lối dễ. */
+export async function ghiChi(y, env, db, hoSo) {
   const lv = BAC[hoSo.role] || 99;
   if (lv > 5) return {ok: false, code: 'NOPERM',
-    error: 'Từ R01–R05 mới đề xuất được khoản chi.'};
+    error: 'Từ R01–R05 mới ghi được khoản chi.'};
 
   const c = y.chi || {};
   const muc = String(c.khoanMuc || '').trim();
@@ -98,31 +127,79 @@ export async function deXuatChi(y, env, db, hoSo) {
   if (new Date(ngayChi).getTime() > Date.now() + 86400000)
     return {ok: false, error: 'Ngày chi nằm ở tương lai. Khoản chi ghi khi tiền đã ra.'};
 
+  /* ══ KHOẢN NÀY ĐI LỐI NÀO ══
+
+     Dưới ngưỡng VÀ cộng dồn bảy ngày cũng còn dưới → tự ghi. Chạm một
+     trong hai điều kiện → phải xin duyệt. */
+  const gop = await gopBayNgay(db, muc, hoSo.u, ngayChi);
+  const tuGhiDuoc = tien < TRAN_PHAI_DUYET && (gop + tien) < TRAN_PHAI_DUYET;
+
   const id = 'CP-' + tokenMoi().slice(0, 14);
   const luc = new Date().toISOString();
   const coHoaDon = c.coHoaDon ? 1 : 0;
 
   await db.prepare(
     'INSERT INTO chiPhi (id,khoanMuc,soTien,ngayChi,hinhThuc,nhaCungCap,coHoaDon,' +
-    'maHoaDon,minhChung,dienGiai,nguoiDeXuat,deXuatLuc,trangThai) ' +
-    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,'choDuyet')"
+    'maHoaDon,minhChung,dienGiai,nguoiDeXuat,deXuatLuc,trangThai,tuGhi,nguoiDuyet,duyetLuc) ' +
+    'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
   ).bind(id, muc, tien, ngayChi, hinhThuc,
     String(c.nhaCungCap || '').slice(0, 200) || null, coHoaDon,
     coHoaDon ? (String(c.maHoaDon || '').slice(0, 100) || null) : null,
     String(c.minhChung || '').slice(0, 300) || null,
-    dienGiai.slice(0, 1000), hoSo.u, luc).run();
+    dienGiai.slice(0, 1000), hoSo.u, luc,
+    tuGhiDuoc ? 'daDuyet' : 'choDuyet', tuGhiDuoc ? 1 : 0,
+    /* Lối tự ghi vẫn ghi TÊN NGƯỜI vào cột người duyệt — nhưng cột
+       tuGhi nói rõ đó là chính người ấy, nên không ai đọc nhầm thành
+       một khoản có hai người ký. */
+    tuGhiDuoc ? hoSo.u : null, tuGhiDuoc ? luc : null).run();
 
-  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'CHI_DEXUAT',
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
+    viec: tuGhiDuoc ? 'CHI_TUGHI' : 'CHI_DEXUAT',
     doiTuong: id, chiTiet: KHOAN_MUC[muc] + ' · ' + dinhDang(tien) +
-      (coHoaDon ? ' · có hoá đơn' : ' · KHÔNG hoá đơn')});
+      (coHoaDon ? ' · có hoá đơn' : ' · KHÔNG hoá đơn') +
+      (tuGhiDuoc ? ' · lối tự ghi' : ' · chờ duyệt') +
+      (gop ? ' · gộp 7 ngày ' + dinhDang(gop + tien) : '')});
 
-  return {ok: true, id, khoanMuc: muc, soTien: tien, trangThai: 'choDuyet',
-    canR01: tien > TRAN_R03_DUYET,
-    /* Nói ngay ở bước đề xuất rằng khoản này phải lên tới đâu, để người
-       đề xuất không chờ một cấp duyệt sẽ không bao giờ duyệt được. */
-    vi: tien > TRAN_R03_DUYET
-      ? 'Khoản trên ' + dinhDang(TRAN_R03_DUYET) + ' chỉ Giám đốc điều hành (R01) duyệt.'
-      : undefined};
+  return {ok: true, id, khoanMuc: muc, soTien: tien,
+    trangThai: tuGhiDuoc ? 'daDuyet' : 'choDuyet',
+    tuGhi: tuGhiDuoc,
+    canR01: tien >= TRAN_R01_DUYET,
+    gopBayNgay: gop + tien,
+    /* Nói NGAY ở bước ghi rằng khoản này đi lối nào và vì sao. Người
+       ghi một khoản một triệu tư mà thấy nó vào "chờ duyệt" sẽ tưởng
+       máy hỏng, nếu không ai nói cho họ biết tuần này họ đã ghi bao
+       nhiêu ở cùng khoản mục. */
+    vi: tuGhiDuoc
+      ? 'Dưới ' + dinhDang(TRAN_PHAI_DUYET) + ' — ghi thẳng vào sổ, không phải chờ duyệt.'
+      : (tien < TRAN_PHAI_DUYET
+          ? 'Riêng khoản này ' + dinhDang(tien) + ' là dưới ngưỡng, nhưng cộng với ' +
+            dinhDang(gop) + ' đã ghi ở cùng khoản mục trong ' + NGAY_GOP + ' ngày thì ' +
+            'thành ' + dinhDang(gop + tien) + ' — từ ' + dinhDang(TRAN_PHAI_DUYET) +
+            ' trở lên phải xin duyệt.'
+          : 'Từ ' + dinhDang(TRAN_PHAI_DUYET) + ' trở lên phải xin duyệt chi.') +
+        (tien >= TRAN_R01_DUYET
+          ? ' Và từ ' + dinhDang(TRAN_R01_DUYET) +
+            ' trở lên chỉ Giám đốc điều hành (R01) duyệt.' : '')};
+}
+
+/* ── CỘNG DỒN BẢY NGÀY THEO (KHOẢN MỤC × NGƯỜI GHI) ──
+
+   Chỉ cộng những khoản ĐÃ VÀO SỔ và còn hiệu lực: khoản bị từ chối hay
+   bị huỷ không phải tiền đã ra, nên không được đẩy người ta qua cổng
+   duyệt vì một khoản đã bỏ.
+
+   Cửa sổ trượt quanh ngayChi chứ không quanh hôm nay: nhập bù một
+   khoản của tuần trước phải cộng với những khoản của TUẦN ẤY. */
+async function gopBayNgay(db, khoanMuc, nguoi, ngayChi) {
+  const moc = new Date(ngayChi).getTime();
+  const tu = new Date(moc - NGAY_GOP * 86400000).toISOString();
+  const den = new Date(moc + NGAY_GOP * 86400000).toISOString();
+  const r = await db.prepare(
+    'SELECT COALESCE(SUM(soTien),0) t FROM chiPhi ' +
+    'WHERE khoanMuc = ? AND nguoiDeXuat = ? AND ngayChi >= ? AND ngayChi <= ? ' +
+    "AND trangThai IN ('daDuyet','choDuyet')"
+  ).bind(khoanMuc, nguoi, tu, den).first();
+  return Number(r.t);
 }
 
 /* ═══════════════ DUYỆT MỘT KHOẢN CHI ═══════════════ */
@@ -142,10 +219,10 @@ export async function duyetChi(y, env, db, hoSo) {
   /* Ngưỡng đọc ở lúc DUYỆT, không đọc ở lúc đề xuất: một khoản có thể
      nằm chờ nhiều ngày, và cấp duyệt phải đúng theo số tiền thật của
      nó chứ không theo cái đã kiểm hôm đề xuất. */
-  if (Number(cp.soTien) > TRAN_R03_DUYET && lv > 1)
+  if (Number(cp.soTien) >= TRAN_R01_DUYET && lv > 1)
     return {ok: false, code: 'VUOTTRAN',
-      error: 'Khoản ' + dinhDang(cp.soTien) + ' vượt ngưỡng ' +
-        dinhDang(TRAN_R03_DUYET) + '. Chỉ Giám đốc điều hành (R01) duyệt được.'};
+      error: 'Khoản ' + dinhDang(cp.soTien) + ' từ ' + dinhDang(TRAN_R01_DUYET) +
+        ' trở lên. Chỉ Giám đốc điều hành (R01) duyệt được.'};
 
   const duyet = y.duyet !== false;
   const gio = new Date().toISOString();
@@ -230,18 +307,36 @@ export async function soChi(y, env, db, hoSo) {
   for (const x of daDuyet) {
     const m = theoMuc[x.khoanMuc] || (theoMuc[x.khoanMuc] =
       {khoanMuc: x.khoanMuc, ten: KHOAN_MUC[x.khoanMuc] || x.khoanMuc,
-       so: 0, tien: 0, coHoaDon: 0, khongHoaDon: 0});
+       so: 0, tien: 0, coHoaDon: 0, khongHoaDon: 0, tuGhi: 0});
     m.so++; m.tien += Number(x.soTien);
     if (Number(x.coHoaDon)) m.coHoaDon += Number(x.soTien);
     else m.khongHoaDon += Number(x.soTien);
+    if (Number(x.tuGhi)) m.tuGhi += Number(x.soTien);
   }
+
+  /* HAI LỐI NÊU RIÊNG. Câu đầu tiên người đi kiểm tra hỏi là "khoản nào
+     có hai người ký, khoản nào chỉ một" — trả lời được bằng phép lọc,
+     không phải bằng cách đọc từng dòng. */
+  const tuGhi = daDuyet.filter(x => Number(x.tuGhi));
 
   return {ok: true, so: ds.length,
     tongDaDuyet: daDuyet.reduce((a, x) => a + Number(x.soTien), 0),
     choDuyet: ds.filter(x => x.trangThai === 'choDuyet')
       .reduce((a, x) => a + Number(x.soTien), 0),
+    quaCuaDuyet: {
+      so: daDuyet.length - tuGhi.length,
+      tien: daDuyet.filter(x => !Number(x.tuGhi))
+        .reduce((a, x) => a + Number(x.soTien), 0)},
+    loiTuGhi: {
+      so: tuGhi.length,
+      tien: tuGhi.reduce((a, x) => a + Number(x.soTien), 0),
+      vi: 'Khoản dưới ' + dinhDang(TRAN_PHAI_DUYET) + ' ghi thẳng, một người. ' +
+          'Cộng dồn theo khoản mục × người ghi trong ' + NGAY_GOP + ' ngày; vượt ' +
+          'ngưỡng thì phải đi đường xin duyệt.'},
     theoKhoanMuc: Object.values(theoMuc).sort((a, b) => b.tien - a.tien),
     ds,
+    nguong: {phaiXinDuyet: TRAN_PHAI_DUYET, chiR01Duyet: TRAN_R01_DUYET,
+             cuaSoGopNgay: NGAY_GOP},
     khoanMucCoThe: KHOAN_MUC};
 }
 
@@ -341,4 +436,4 @@ export async function dsChotKet(y, env, db, hoSo) {
     tongLech: ds.reduce((a, x) => a + Number(x.chenh), 0)};
 }
 
-export { KHOAN_MUC, TRAN_R03_DUYET };
+export { KHOAN_MUC, TRAN_PHAI_DUYET, TRAN_R01_DUYET, NGAY_GOP };

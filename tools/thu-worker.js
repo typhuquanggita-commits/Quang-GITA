@@ -1506,34 +1506,34 @@ await themNguoi('U-tc', 'truongcoach@gita365.vn', 'MatKhauRieng2026!', 'R05',
   {portal:'coach'});
 const tkTC = (await goi({fn:'dangNhap', u:'truongcoach@gita365.vn',
   mk:'MatKhauRieng2026!'})).than.token;
-bao(!(await goi({fn:'deXuatChi', token:tkCoach, u:'coach@gita365.vn',
+bao(!(await goi({fn:'ghiChi', token:tkCoach, u:'coach@gita365.vn',
   chi:{khoanMuc:'matBang', soTien:3000000, hinhThuc:'chuyenKhoan',
     dienGiai:'Thuê phòng học tháng 3'}})).than.ok,
   'Coach không đề xuất được khoản chi — Coach kèm nhà, không quyết tiền thuê mặt bằng');
 
 /* ── 1 · SỔ CHI ── */
-bao(!(await goi({fn:'deXuatChi', token:tkPh2, u:'phuhuynh@gita365.vn',
+bao(!(await goi({fn:'ghiChi', token:tkPh2, u:'phuhuynh@gita365.vn',
   chi:{khoanMuc:'matBang', soTien:5000000, hinhThuc:'chuyenKhoan',
     dienGiai:'Thuê văn phòng tháng 3'}})).than.ok,
   'phụ huynh không đề xuất được khoản chi');
 
-const mucLa = await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+const mucLa = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
   chi:{khoanMuc:'anBuoiTrua', soTien:100000, hinhThuc:'tienMat', dienGiai:'Ăn trưa cả nhóm'}});
 bao(!mucLa.than.ok && /Khoản mục phải/.test(mucLa.than.error),
   'KHOẢN MỤC LÀ DANH SÁCH TRẮNG — gõ tự do thì sáu tháng sau có bốn khoản mục cho một thứ',
   'và không bản tổng hợp nào cộng đúng');
 
-bao(!(await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+bao(!(await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
   chi:{khoanMuc:'matBang', soTien:5000000, hinhThuc:'chuyenKhoan', dienGiai:'ok'}})).than.ok,
   'khoản chi phải có DIỄN GIẢI rõ — sang năm phải dựng lại được câu chuyện');
 
-bao(!(await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+bao(!(await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
   chi:{khoanMuc:'matBang', soTien:5000000, hinhThuc:'chuyenKhoan',
     dienGiai:'Thuê văn phòng', ngayChi:'2027-12-01T00:00:00.000Z'}})).than.ok,
   'ngày chi không được nằm ở tương lai — khoản chi ghi khi tiền đã ra');
 
 /* Khoản chi rơi vào tuần 2026-W10 ĐÃ CHỐT, để thử luôn bút toán. */
-const cp1 = await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+const cp1 = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
   chi:{khoanMuc:'matBang', soTien:3000000, hinhThuc:'chuyenKhoan',
     dienGiai:'Thuê phòng học tháng 3/2026', ngayChi:'2026-03-04T03:00:00.000Z',
     coHoaDon:true, maHoaDon:'HD-0001', nhaCungCap:'Cty ABC'}});
@@ -1542,8 +1542,11 @@ bao(cp1.than.ok && cp1.than.trangThai === 'choDuyet', 'đề xuất được kho
 bao(!(await goi({fn:'duyetChi', token:tkTC, u:'truongcoach@gita365.vn', id:cp1.than.id})).than.ok,
   'R05 đề xuất được nhưng KHÔNG duyệt được — duyệt chi là R01–R03');
 
-const cpTuDuyet = await goi({fn:'deXuatChi', token:tkSA, u:'superadmin@gita365.vn',
-  chi:{khoanMuc:'haTang', soTien:1000000, hinhThuc:'chuyenKhoan',
+/* Số tiền phải TỪ 1,5 triệu trở lên, nếu không khoản này đi lối tự ghi
+   và cổng "không tự duyệt" không có gì để chặn — phép đo sẽ xanh mà
+   không đo được thứ nó định đo. */
+const cpTuDuyet = await goi({fn:'ghiChi', token:tkSA, u:'superadmin@gita365.vn',
+  chi:{khoanMuc:'haTang', soTien:2000000, hinhThuc:'chuyenKhoan',
     dienGiai:'Gia hạn tên miền gita.edu.vn'}});
 const tuDuyet = await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn',
   id:cpTuDuyet.than.id});
@@ -1553,7 +1556,7 @@ bao(!tuDuyet.than.ok && tuDuyet.than.code === 'TUDUYET',
 
 /* NGƯỠNG: khoản lớn chỉ R01 duyệt. Thử bằng một hồ sơ vai R03 truyền
    thẳng vào hàm — không tráo một tên nào trên G, đúng luật v9.79. */
-const cpTo = await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+const cpTo = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
   chi:{khoanMuc:'tiepThi', soTien:50000000, hinhThuc:'chuyenKhoan',
     dienGiai:'Chiến dịch truyền thông quý 4'}});
 bao(cpTo.than.ok && cpTo.than.canR01,
@@ -1576,6 +1579,67 @@ bao(sc.than.ok && sc.than.tongDaDuyet === 3000000 &&
     sc.than.theoKhoanMuc[0].coHoaDon === 3000000,
   'sổ chi cắt theo KHOẢN MỤC và tách riêng phần CÓ HOÁ ĐƠN',
   'khoản không hoá đơn vẫn là tiền đã ra thật, nhưng đứng khác khi tính thuế');
+
+/* ── NGƯỠNG XIN DUYỆT CHI · CHỐT 9.92 ──
+
+   "Các khoản chi trên 1,5 triệu đồng đều phải khai báo xin cấp duyệt
+   chi." Dưới ngưỡng đi lối tự ghi; từ ngưỡng trở lên phải xin duyệt. */
+const nho = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'vanPhong', soTien:300000, hinhThuc:'tienMat',
+    dienGiai:'Giấy in và mực cho văn phòng', ngayChi:'2026-05-04T02:00:00.000Z'}});
+bao(nho.than.ok && nho.than.tuGhi && nho.than.trangThai === 'daDuyet',
+  'KHOẢN DƯỚI 1,5 TRIỆU GHI THẲNG VÀO SỔ — bắt hai người ký cho một khoản ba trăm nghìn là làm cho cả cái cổng duyệt bị né',
+  dinhDangVN(nho.than.soTien) + ' · lối tự ghi');
+
+const vua = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'daoTao', soTien:1500000, hinhThuc:'chuyenKhoan',
+    dienGiai:'In tài liệu khoá tháng 5', ngayChi:'2026-05-04T02:00:00.000Z'}});
+bao(vua.than.ok && !vua.than.tuGhi && vua.than.trangThai === 'choDuyet',
+  'ĐÚNG 1,5 TRIỆU LÀ ĐÃ PHẢI XIN DUYỆT — "trên 1,5 triệu" tính từ 1,5 triệu trở lên, không phải từ 1,5 triệu lẻ một đồng',
+  vua.than.vi);
+
+/* CHIA NHỎ ĐỂ NÉ NGƯỠNG — chỗ mọi cổng duyệt theo số tiền đều bị né.
+   Ba khoản một triệu tư cùng khoản mục, cùng người, trong một tuần. */
+const chia1 = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'tiepThi', soTien:1400000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Chạy quảng cáo đợt 1', ngayChi:'2026-06-01T02:00:00.000Z'}});
+bao(chia1.than.ok && chia1.than.tuGhi, 'khoản 1,4 triệu đầu tiên vẫn đi lối tự ghi');
+const chia2 = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'tiepThi', soTien:1400000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Chạy quảng cáo đợt 2', ngayChi:'2026-06-03T02:00:00.000Z'}});
+bao(chia2.than.ok && !chia2.than.tuGhi && chia2.than.trangThai === 'choDuyet' &&
+    chia2.than.gopBayNgay === 2800000,
+  'NHƯNG KHOẢN THỨ HAI BỊ ĐẨY QUA CỔNG DUYỆT — một ngưỡng không có phép soi chia nhỏ thì không phải ngưỡng',
+  'cộng dồn 7 ngày ' + dinhDangVN(chia2.than.gopBayNgay) + ' · ' + chia2.than.vi);
+
+/* Cửa sổ trượt quanh NGÀY CHI, không quanh hôm nay: chia theo ngày là
+   cách né tiếp theo, và nó dễ y như cách đầu. Cách nhau hơn bảy ngày
+   thì là hai khoản thật, không phải một khoản bị cắt đôi. */
+const xaNgay = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'tiepThi', soTien:1400000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Chạy quảng cáo tháng sau', ngayChi:'2026-07-15T02:00:00.000Z'}});
+bao(xaNgay.than.ok && xaNgay.than.tuGhi,
+  'cách nhau hơn bảy ngày thì lại là hai khoản thật — phép soi chặn chia nhỏ, không chặn chi tiêu');
+
+/* Khoản mục khác thì không cộng dồn: mua giấy in không phải là chia
+   nhỏ tiền quảng cáo. */
+const mucKhac = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'vanPhong', soTien:1400000, hinhThuc:'tienMat',
+    dienGiai:'Mua máy in cho phòng học', ngayChi:'2026-06-02T02:00:00.000Z'}});
+bao(mucKhac.than.ok && mucKhac.than.tuGhi,
+  'và khoản mục khác thì không cộng dồn — mua giấy in không phải chia nhỏ tiền quảng cáo');
+
+const scLoi = await goi({fn:'soChi', token:tkSA, u:'superadmin@gita365.vn'});
+bao(scLoi.than.loiTuGhi.so === 4 && scLoi.than.quaCuaDuyet.so === 1 &&
+    scLoi.than.nguong.phaiXinDuyet === 1500000,
+  'SỔ CHI NÊU RIÊNG HAI LỐI — khoản nào có hai người ký, khoản nào chỉ một',
+  scLoi.than.loiTuGhi.so + ' khoản tự ghi · ' + scLoi.than.quaCuaDuyet.so + ' khoản qua cửa duyệt');
+
+/* Khoản đã vào sổ theo lối tự ghi thì KHÔNG đi duyệt lại được — nó đã
+   là daDuyet, và cổng duyệt chỉ ăn dòng đang choDuyet. */
+bao(!(await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn',
+  id:nho.than.id})).than.ok,
+  'khoản đã tự ghi thì không duyệt lại được — nó đã ở trong sổ rồi');
 
 /* ── 2 · MIỄN GIẢM ── */
 const kyBC2 = 'KT-BC02';

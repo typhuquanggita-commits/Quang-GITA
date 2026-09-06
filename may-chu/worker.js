@@ -42,7 +42,7 @@ import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh,
   ghiNhacThu, lichSuNhacThu, denHenChuaTra } from './tai-chinh.js';
 import { soNgay, chotTuan, soatChot, tongHop, baoCaoKeToan, boSoKhaiThue,
   dsChot } from './bao-cao.js';
-import { deXuatChi, duyetChi, huyChi, soChi, chotKet, dsChotKet } from './chi-tieu.js';
+import { ghiChi, duyetChi, huyChi, soChi, chotKet, dsChotKet } from './chi-tieu.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -158,7 +158,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'ganChungCuHoaHong', 'dongKyChuaToi', 'dsQuaHan', 'doiSoat',
   'soNgay', 'chotTuan', 'soatChot', 'tongHop', 'baoCaoKeToan', 'boSoKhaiThue',
   'dsChot',
-  'deXuatChi', 'duyetChi', 'huyChi', 'soChi', 'chotKet', 'dsChotKet',
+  'ghiChi', 'duyetChi', 'huyChi', 'soChi', 'chotKet', 'dsChotKet',
   'deXuatMienGiam', 'duyetMienGiam', 'dsMienGiam',
   'ghiNhacThu', 'lichSuNhacThu', 'denHenChuaTra'];
 
@@ -237,7 +237,7 @@ async function lam(fn, y, env, db) {
 
   /* Nửa còn lại của cuốn sổ — tiền RA, tiền được GIẢM, tiền phải ĐÒI,
      và tiền mặt phải ĐẾM. Xem chú giải đầu chi-tieu.js. */
-  if (fn === 'deXuatChi')  return await deXuatChi(y, env, db, hoSo);
+  if (fn === 'ghiChi')  return await ghiChi(y, env, db, hoSo);
   if (fn === 'duyetChi')   return await duyetChi(y, env, db, hoSo);
   if (fn === 'huyChi')     return await huyChi(y, env, db, hoSo);
   if (fn === 'soChi')      return await soChi(y, env, db, hoSo);

@@ -441,6 +441,11 @@ CREATE TABLE IF NOT EXISTS chiPhi (
   nguoiDuyet  TEXT,               -- NGƯỜI KHÁC người đề xuất
   duyetLuc    TEXT,
   trangThai   TEXT NOT NULL DEFAULT 'choDuyet',  -- choDuyet · daDuyet · tuChoi · huy
+  -- Khoản đi LỐI TỰ GHI: dưới ngưỡng phải-xin-duyệt, một người ghi
+  -- thẳng vào sổ. Phải đánh dấu thành CỘT chứ không lẫn vào ghi chú:
+  -- câu đầu tiên người đi kiểm tra hỏi là "khoản nào có hai người ký,
+  -- khoản nào chỉ một" — và câu ấy phải trả lời được bằng phép lọc.
+  tuGhi       INTEGER NOT NULL DEFAULT 0,
   huyLuc      TEXT,
   lyDo        TEXT
 );
@@ -448,6 +453,10 @@ CREATE TABLE IF NOT EXISTS chiPhi (
 CREATE INDEX IF NOT EXISTS ix_cp_ngay ON chiPhi (ngayChi DESC);
 CREATE INDEX IF NOT EXISTS ix_cp_tt   ON chiPhi (trangThai, ngayChi);
 CREATE INDEX IF NOT EXISTS ix_cp_muc  ON chiPhi (khoanMuc, ngayChi);
+-- Phép soi chia nhỏ cộng dồn theo (khoản mục × người đề xuất) trong
+-- một cửa sổ bảy ngày. Không có chỉ mục này thì mỗi lượt ghi một khoản
+-- chi lặt vặt là một lượt quét cả bảng chi phí.
+CREATE INDEX IF NOT EXISTS ix_cp_gop  ON chiPhi (khoanMuc, nguoiDeXuat, ngayChi);
 
 -- ═════════════════════════════════════════════════════════════
 --  MIỄN GIẢM — VÌ SAO KHÔNG SỬA THẲNG phaiThu
