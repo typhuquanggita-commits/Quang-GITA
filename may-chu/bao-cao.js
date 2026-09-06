@@ -238,6 +238,43 @@ async function dongTien(db, k) {
     'AND k.hanLuc IS NOT NULL AND k.hanLuc >= ? AND k.hanLuc <= ?'
   ).bind(k.tuLuc, k.tuLuc, k.denLuc).first();
 
+  /* ══ CHI PHÍ VẬN HÀNH — NỬA CÒN LẠI CỦA CUỐN SỔ ══
+     Tính theo ngayChi (mốc TIỀN RA), không theo mốc nhập liệu: nhập bù
+     một khoản của tháng trước là chuyện thường, và ghi nó vào hôm nay
+     làm sai bản kê của cả hai tháng. */
+  const chi = await db.prepare(
+    "SELECT COALESCE(SUM(soTien),0) t, COUNT(*) n FROM chiPhi " +
+    "WHERE trangThai = 'daDuyet' AND ngayChi >= ? AND ngayChi <= ?"
+  ).bind(k.tuLuc, k.denLuc).first();
+
+  const chiCoHoaDon = await db.prepare(
+    "SELECT COALESCE(SUM(soTien),0) t FROM chiPhi " +
+    "WHERE trangThai = 'daDuyet' AND coHoaDon = 1 AND ngayChi >= ? AND ngayChi <= ?"
+  ).bind(k.tuLuc, k.denLuc).first();
+
+  /* ══ MIỄN GIẢM — GIẢM TRỪ DOANH THU, KHÔNG PHẢI MỘT KHOẢN CHI ══
+     Tính theo duyetLuc: miễn giảm có hiệu lực từ lúc duyệt, không lùi
+     ngược. Một khoản giảm duyệt hôm nay không được làm đổi bản báo cáo
+     quý trước — cùng luật với mốc huỷ hoa hồng. */
+  const mg = await db.prepare(
+    "SELECT COALESCE(SUM(soTien),0) t, COUNT(*) n FROM mienGiam " +
+    "WHERE trangThai = 'daDuyet' AND duyetLuc >= ? AND duyetLuc <= ?"
+  ).bind(k.tuLuc, k.denLuc).first();
+
+  /* Và hai khoản đối ứng của miễn giảm trong đẳng thức công nợ, đúng
+     hình với hai khoản của tiền thu ở trên. */
+  const mgVaoKy = await db.prepare(
+    'SELECT COALESCE(SUM(m.soTien),0) t FROM mienGiam m JOIN kyThu k ON k.id = m.idKy ' +
+    "WHERE m.trangThai = 'daDuyet' AND m.duyetLuc >= ? AND m.duyetLuc <= ? " +
+    'AND k.hanLuc IS NOT NULL AND k.hanLuc <= ?'
+  ).bind(k.tuLuc, k.denLuc, k.denLuc).first();
+
+  const mgTruocDaToiHan = await db.prepare(
+    'SELECT COALESCE(SUM(m.soTien),0) t FROM mienGiam m JOIN kyThu k ON k.id = m.idKy ' +
+    "WHERE m.trangThai = 'daDuyet' AND m.duyetLuc < ? " +
+    'AND k.hanLuc IS NOT NULL AND k.hanLuc >= ? AND k.hanLuc <= ?'
+  ).bind(k.tuLuc, k.tuLuc, k.denLuc).first();
+
   const nhaMoi = await db.prepare(
     'SELECT COUNT(*) n FROM hoSoKhach WHERE vaoLuc >= ? AND vaoLuc <= ?'
   ).bind(k.tuLuc, k.denLuc).first();
@@ -254,6 +291,11 @@ async function dongTien(db, k) {
     thuVaoKy: Number(thuVaoKy.t),
     thuNgoaiLich: Number(thu.t) - Number(thuVaoKy.t),
     thuTruocDaToiHan: Number(thuTruocDaToiHan.t),
+    chi: Number(chi.t), soChungTuChi: Number(chi.n),
+    chiCoHoaDon: Number(chiCoHoaDon.t),
+    chiKhongHoaDon: Number(chi.t) - Number(chiCoHoaDon.t),
+    mienGiam: Number(mg.t), soMienGiam: Number(mg.n),
+    mgVaoKy: Number(mgVaoKy.t), mgTruocDaToiHan: Number(mgTruocDaToiHan.t),
     hhSinh: Number(hhS.t), soHhSinh: Number(hhS.n),
     hhTra: Number(hhT.t), soHhTra: Number(hhT.n),
     nhaMoi: Number(nhaMoi.n), luotVuotTang: Number(vuot.n)
@@ -274,7 +316,15 @@ async function conNoToi(db, denLuc) {
     "WHERE p.trangThai = 'daDuyet' AND p.ghiLuc <= ? " +
     "AND k.hanLuc IS NOT NULL AND k.hanLuc <= ?"
   ).bind(denLuc, denLuc).first();
-  return Number(r.phai) - Number(d.da);
+  /* Miễn giảm ĐÃ DUYỆT TÍNH TỚI MỐC ẤY. Đọc trạng thái hôm nay thay vì
+     đọc mốc duyệt là làm cho công nợ của mọi kỳ quá khứ đổi theo mỗi
+     lượt duyệt hôm nay — cùng cái sai đã bắt được ở sổ hoa hồng. */
+  const g = await db.prepare(
+    'SELECT COALESCE(SUM(m.soTien),0) giam FROM mienGiam m JOIN kyThu k ON k.id = m.idKy ' +
+    "WHERE m.trangThai = 'daDuyet' AND m.duyetLuc <= ? " +
+    'AND k.hanLuc IS NOT NULL AND k.hanLuc <= ?'
+  ).bind(denLuc, denLuc).first();
+  return Number(r.phai) - Number(d.da) - Number(g.giam);
 }
 
 /* ═══════════════ VÂN TAY CỦA MỘT KỲ ═══════════════
@@ -300,6 +350,13 @@ async function vanTayCuaKy(db, k) {
     'WHERE deXuatLuc >= ? AND deXuatLuc <= ? ORDER BY id');
   await gom('HH', "SELECT id, soTien, trangThai FROM hoaHongTra " +
     'WHERE sinhLuc >= ? AND sinhLuc <= ? ORDER BY id');
+  /* Chi phí và miễn giảm cũng phải nằm trong vân tay: một khoản chi
+     duyệt lùi vào tuần đã chốt đổi con số của tuần ấy y như một phiếu
+     thu, và nếu vân tay không phủ nó thì phép soát không thấy gì. */
+  await gom('CP', 'SELECT id, soTien, trangThai FROM chiPhi ' +
+    'WHERE ngayChi >= ? AND ngayChi <= ? ORDER BY id');
+  await gom('MG', 'SELECT id, soTien, trangThai FROM mienGiam ' +
+    'WHERE deXuatLuc >= ? AND deXuatLuc <= ? ORDER BY id');
 
   const b = await crypto.subtle.digest('SHA-256',
     new TextEncoder().encode(phan.join('\n')));
@@ -396,17 +453,20 @@ export async function chotTuan(y, env, db, hoSo) {
 
   await db.prepare(
     'INSERT INTO soChot (ky,loai,tuNgay,denNgay,tuLuc,denLuc,thu,soPhieu,hoan,soHoan,' +
-    'ghiNhan,soKyToiHan,hhSinh,hhTra,conNoCuoiKy,nhaMoi,luotVuotTang,vanTay,chotLuc,boiAi) ' +
-    'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ' +
+    'ghiNhan,soKyToiHan,hhSinh,hhTra,chi,soChungTuChi,mienGiam,conNoCuoiKy,nhaMoi,' +
+    'luotVuotTang,vanTay,chotLuc,boiAi) ' +
+    'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ' +
     'ON CONFLICT(ky) DO UPDATE SET thu=excluded.thu, soPhieu=excluded.soPhieu, ' +
     'hoan=excluded.hoan, soHoan=excluded.soHoan, ghiNhan=excluded.ghiNhan, ' +
     'soKyToiHan=excluded.soKyToiHan, hhSinh=excluded.hhSinh, hhTra=excluded.hhTra, ' +
+    'chi=excluded.chi, soChungTuChi=excluded.soChungTuChi, mienGiam=excluded.mienGiam, ' +
     'conNoCuoiKy=excluded.conNoCuoiKy, nhaMoi=excluded.nhaMoi, ' +
     'luotVuotTang=excluded.luotVuotTang, vanTay=excluded.vanTay, ' +
     'moLaiLuc=excluded.chotLuc, moLaiBoi=excluded.boiAi, moLaiLyDo=?'
   ).bind(k.ky, 'tuan', k.tuNgay, k.denNgay, k.tuLuc, k.denLuc,
     t.thu, t.soPhieu, t.hoan, t.soHoan, t.ghiNhan, t.soKyToiHan,
-    t.hhSinh, t.hhTra, no, t.nhaMoi, t.luotVuotTang, vt, luc, hoSo.u,
+    t.hhSinh, t.hhTra, t.chi, t.soChungTuChi, t.mienGiam,
+    no, t.nhaMoi, t.luotVuotTang, vt, luc, hoSo.u,
     String(y.lyDo || '').slice(0, 500) || null).run();
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
@@ -567,6 +627,13 @@ export async function tongHop(y, env, db, hoSo) {
     vuotTang: {nay: nay.luotVuotTang, truoc: truoc.luotVuotTang,
                doiPhanTram: doi(nay.luotVuotTang, truoc.luotVuotTang)},
     hoan:     {nay: nay.hoan,     truoc: truoc.hoan,     doiPhanTram: doi(nay.hoan, truoc.hoan)},
+    mienGiam: {nay: nay.mienGiam, truoc: truoc.mienGiam, doiPhanTram: doi(nay.mienGiam, truoc.mienGiam)},
+    /* Chi phí đứng cạnh doanh thu, vì "thu tăng" và "thu tăng chậm hơn
+       chi" là hai câu dẫn tới hai chiến lược ngược nhau. */
+    chi:      {nay: nay.chi,      truoc: truoc.chi,      doiPhanTram: doi(nay.chi, truoc.chi)},
+    chenhLechThuChi: {
+      nay:   nay.ghiNhan - nay.hoan - nay.mienGiam - nay.chi - nay.hhTra,
+      truoc: truoc.ghiNhan - truoc.hoan - truoc.mienGiam - truoc.chi - truoc.hhTra},
     tyLeThu:  {nay: tyLeThu(nay), truoc: tyLeThu(truoc)},
     conNo:    {dauKy: noDau, cuoiKy: noCuoi, doi: noCuoi - noDau},
     nhaDungHoc: Number(nghi.n),
@@ -648,7 +715,7 @@ export async function baoCaoKeToan(y, env, db, hoSo) {
     'FROM dieuChinh WHERE luc >= ? AND luc <= ? GROUP BY kyBiAnhHuong, loai'
   ).bind(k.tuLuc, k.denLuc).all();
 
-  const doanhThuThuan = t.ghiNhan - t.hoan;
+  const doanhThuThuan = t.ghiNhan - t.hoan - t.mienGiam;
 
   /* ══ HAI ĐẲNG THỨC, VIẾT RA ĐÚNG NHƯ CHÚNG PHẢI ĐÚNG ══
 
@@ -656,8 +723,15 @@ export async function baoCaoKeToan(y, env, db, hoSo) {
      xoá kỳ thu, nên nhà ấy vẫn còn nợ đúng số cũ. Đưa khoản hoàn vào
      đẳng thức này là chỗ sai mà bản đầu tôi viết, và nó chỉ lộ ra khi
      có một lượt hoàn thật. */
-  const lechNo = (noDau + t.ghiNhan - t.thuVaoKy - t.thuTruocDaToiHan) - noCuoi;
+  const lechNo = (noDau + t.ghiNhan - t.thuVaoKy - t.thuTruocDaToiHan
+                  - t.mgVaoKy - t.mgTruocDaToiHan) - noCuoi;
   const lechHh = (hhDau + t.hhSinh - t.hhTra - Number(hhHuy.t)) - hhCuoi;
+
+  const theoMuc = await db.prepare(
+    "SELECT khoanMuc, COUNT(*) n, COALESCE(SUM(soTien),0) t FROM chiPhi " +
+    "WHERE trangThai = 'daDuyet' AND ngayChi >= ? AND ngayChi <= ? " +
+    'GROUP BY khoanMuc ORDER BY t DESC'
+  ).bind(k.tuLuc, k.denLuc).all();
 
   const cacKyDaChot = await db.prepare(
     'SELECT ky, thu, chotLuc, vanTay FROM soChot ' +
@@ -671,7 +745,13 @@ export async function baoCaoKeToan(y, env, db, hoSo) {
 
     A_doanhThu: {
       ghiNhanTrongKy: t.ghiNhan, soKyToiHan: t.soKyToiHan,
-      giamTruDoanhThu: t.hoan, soLuotHoan: t.soHoan,
+      /* Hoàn tiền và miễn giảm đều là GIẢM TRỪ DOANH THU, nhưng nêu
+         riêng: hoàn là tiền đã ra khỏi tài khoản, miễn giảm là tiền
+         chưa từng vào. Gộp một dòng thì không ai biết Học viện đang
+         trả lại hay đang cho đi, mà đó là hai câu chuyện khác hẳn. */
+      hoanTien: t.hoan, soLuotHoan: t.soHoan,
+      mienGiam: t.mienGiam, soLuotMienGiam: t.soMienGiam,
+      giamTruDoanhThu: t.hoan + t.mienGiam,
       doanhThuThuan,
       nguon: 'Ghi nhận = kyThu có hanLuc trong kỳ. Giảm trừ = hoanTien đã duyệt ' +
              'trong kỳ. Đây là số theo DỒN TÍCH, dùng để khai thuế.'},
@@ -690,6 +770,8 @@ export async function baoCaoKeToan(y, env, db, hoSo) {
       phatSinh: t.ghiNhan,
       daThuVaoKy: t.thuVaoKy,
       thuTruocNayToiHan: t.thuTruocDaToiHan,
+      mienGiamVaoKy: t.mgVaoKy,
+      mienGiamTruocNayToiHan: t.mgTruocDaToiHan,
       cuoiKy: noCuoi,
       /* Nêu riêng, vì đây là tiền ĐÃ VÀO SỔ mà CHƯA TRỪ NỢ của ai. Nó
          không thuộc đẳng thức trên, và nó là việc phải làm: gán vào
@@ -717,7 +799,8 @@ export async function baoCaoKeToan(y, env, db, hoSo) {
       lechCongNo: Math.round(lechNo * 100) / 100,
       lechHoaHong: Math.round(lechHh * 100) / 100,
       dangThuc: [
-        'công nợ: đầu kỳ + phát sinh − thu vào kỳ − thu trước nay tới hạn = cuối kỳ',
+        'công nợ: đầu kỳ + phát sinh − thu vào kỳ − thu trước nay tới hạn ' +
+          '− miễn giảm vào kỳ − miễn giảm trước nay tới hạn = cuối kỳ',
         'hoa hồng: phải trả đầu kỳ + sinh − đã trả − huỷ = phải trả cuối kỳ'],
       vi: 'Lệch quá một đồng là một dòng chưa tìm ra; bản này KHÔNG làm tròn cho khớp.'},
 
@@ -725,15 +808,54 @@ export async function baoCaoKeToan(y, env, db, hoSo) {
       ky: x.ky, thu: Number(x.thu), chotLuc: x.chotLuc,
       vanTay: x.vanTay.slice(0, 16)})),
 
-    /* Bản kế toán KHÔNG tự cộng ra lợi nhuận: chi phí vận hành — lương,
-       thuê chỗ, hạ tầng — không nằm trong hệ này. Một con số lợi nhuận
-       tính thiếu chi phí sẽ được ai đó mang đi họp, và nó sai. */
-    khongCoTrongHeNay: ['chi phí lương và thù lao ngoài hoa hồng',
-      'chi phí thuê mặt bằng và hạ tầng', 'khấu hao', 'chi phí tiếp thị',
-      'thuế đã nộp'],
-    vi: 'Đây là sổ doanh thu và công nợ của Học viện. KHÔNG phải báo cáo kết quả ' +
-        'kinh doanh: chi phí vận hành không nằm trong hệ này, nên không có dòng ' +
-        'lợi nhuận nào ở đây và cũng không được suy ra một dòng như thế.'};
+    F_chiPhi: {
+      tongChi: t.chi, soChungTu: t.soChungTuChi,
+      coHoaDon: t.chiCoHoaDon,
+      khongHoaDon: t.chiKhongHoaDon,
+      theoKhoanMuc: (theoMuc.results || []).map(x => ({
+        khoanMuc: x.khoanMuc, so: Number(x.n), tien: Number(x.t)})),
+      /* Hoa hồng đại sứ KHÔNG nằm trong sổ chi: nó có bảng riêng, có
+         luật riêng, có chứng cứ riêng. Nêu cạnh nhau để cộng đúng, chứ
+         không trộn vào một dòng. */
+      hoaHongDaTra: t.hhTra,
+      tongTienRa: t.chi + t.hhTra + t.hoan,
+      nguon: "chiPhi WHERE trangThai='daDuyet' và ngayChi trong kỳ. Cột coHoaDon " +
+             'tách riêng vì khoản chi không hoá đơn vẫn là tiền đã ra thật nhưng ' +
+             'đứng khác khi tính thuế.'},
+
+    /* ══ CHÊNH LỆCH THU CHI — VÀ VÌ SAO KHÔNG GỌI NÓ LÀ LỢI NHUẬN ══
+
+       Từ bản 9.91 hệ này có cả hai nửa, nên phép trừ chạy được. Nhưng
+       phép trừ chạy được không có nghĩa kết quả của nó là lợi nhuận
+       kế toán:
+
+         · doanh thu ghi theo DỒN TÍCH (kỳ tới hạn), còn chi phí ghi
+           theo TIỀN RA. Hai cơ sở khác nhau đặt cạnh nhau.
+         · khấu hao chỉ có nếu ai đó nhập tay vào khoản mục khauHao —
+           không có bảng tài sản nào tự tính.
+         · các khoản trích trước, dự phòng, chênh lệch tỷ giá: không có.
+
+       Nên con số này là CHÊNH LỆCH THU CHI, dùng để nhìn xu hướng và
+       ra quyết định trong nhà. Nó KHÔNG phải dòng lợi nhuận để nộp cho
+       ai, và tên gọi ở đây giữ nguyên như thế để không ai nhầm. */
+    G_chenhLechThuChi: {
+      doanhThuThuan,
+      chiPhiVanHanh: t.chi,
+      hoaHongDaTra: t.hhTra,
+      chenhLech: doanhThuThuan - t.chi - t.hhTra,
+      tyLeChiTrenThu: doanhThuThuan === 0 ? null
+        : Math.round((t.chi + t.hhTra) / doanhThuThuan * 1000) / 10,
+      khongPhaiLoiNhuan: true,
+      thieuNhungGi: ['khấu hao tự tính từ bảng tài sản (chỉ có nếu nhập tay)',
+        'các khoản trích trước và dự phòng', 'chênh lệch tỷ giá',
+        'thuế thu nhập doanh nghiệp'],
+      vi: 'Doanh thu ghi theo DỒN TÍCH, chi phí ghi theo TIỀN RA — hai cơ sở khác ' +
+          'nhau. Đây là chênh lệch thu chi để nhìn xu hướng trong nhà, KHÔNG phải ' +
+          'lợi nhuận kế toán, và không được nộp cho ai dưới tên ấy.'},
+
+    vi: 'Từ bản 9.91 bản kê có cả hai nửa — tiền vào và tiền ra — nên phép trừ ' +
+        'chạy được. Nhưng nó vẫn KHÔNG phải báo cáo kết quả kinh doanh: xem ' +
+        'G_chenhLechThuChi.thieuNhungGi.'};
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -764,7 +886,14 @@ const CHO_KE_TOAN = [
    vi: 'Bản này liệt kê ĐỦ các lượt chi và người nhận để khấu trừ được, nhưng ' +
        'không tự nhân một tỷ lệ nào vào.'},
   {ma: 'T-03', viec: 'Kỳ kê khai của Học viện là tháng hay quý',
-   vi: 'Quyết định bản này chạy theo nhịp nào. Mặc định đang là quý.'}
+   vi: 'Quyết định bản này chạy theo nhịp nào. Mặc định đang là quý.'},
+  {ma: 'T-04', viec: 'Khoản chi nào được trừ khi tính thuế thu nhập doanh nghiệp',
+   vi: 'Bản này tách sẵn phần CÓ HOÁ ĐƠN và phần KHÔNG, theo từng khoản mục, ' +
+       'nhưng không tự kết luận khoản nào được trừ — điều kiện được trừ còn phụ ' +
+       'thuộc hình thức thanh toán, hợp đồng và hồ sơ kèm theo.'},
+  {ma: 'T-05', viec: 'Doanh thu khai theo DỒN TÍCH hay theo TIỀN THỰC THU',
+   vi: 'Hai con số này khác nhau và bản kê trả về cả hai. Chọn sai cơ sở thì ' +
+       'tờ khai lệch đúng bằng công nợ của kỳ.'}
 ];
 
 export async function boSoKhaiThue(y, env, db, hoSo) {
@@ -786,6 +915,13 @@ export async function boSoKhaiThue(y, env, db, hoSo) {
   const theoTang = await db.prepare(
     'SELECT tang, COALESCE(SUM(phaiThu),0) t, COUNT(*) n FROM kyThu ' +
     'WHERE hanLuc IS NOT NULL AND hanLuc >= ? AND hanLuc <= ? GROUP BY tang ORDER BY tang'
+  ).bind(k.tuLuc, k.denLuc).all();
+
+  const mucThue = await db.prepare(
+    "SELECT khoanMuc, COUNT(*) n, COALESCE(SUM(soTien),0) t, " +
+    '  COALESCE(SUM(CASE WHEN coHoaDon = 1 THEN soTien END),0) hd FROM chiPhi ' +
+    "WHERE trangThai = 'daDuyet' AND ngayChi >= ? AND ngayChi <= ? " +
+    'GROUP BY khoanMuc ORDER BY t DESC'
   ).bind(k.tuLuc, k.denLuc).all();
 
   /* ── TỪNG LƯỢT CHI HOA HỒNG, KÈM NGƯỜI NHẬN ──
@@ -838,6 +974,19 @@ export async function boSoKhaiThue(y, env, db, hoSo) {
     if (!daChot.has(m)) thieuTuan.push({tuan: m, tuNgay: d, denNgay: congNgay(d, 6)});
   }
 
+  /* Két còn lệch và khoản chi còn treo đều là chỗ con số của kỳ chưa
+     đứng yên. Nộp tờ khai lên rồi mới xử lý thì phải khai bổ sung. */
+  const ketLech = ((await db.prepare(
+    'SELECT ngay, chenh, lyDo FROM chotKet WHERE ngay >= ? AND ngay <= ? ' +
+    'AND (chenh > 0.5 OR chenh < -0.5) ORDER BY ngay'
+  ).bind(k.tuNgay, k.denNgay).all()).results || [])
+    .map(x => ({ngay: x.ngay, chenh: Number(x.chenh), lyDo: x.lyDo}));
+
+  const chiCho = await db.prepare(
+    "SELECT COUNT(*) n FROM chiPhi WHERE trangThai = 'choDuyet' " +
+    'AND ngayChi >= ? AND ngayChi <= ?'
+  ).bind(k.tuLuc, k.denLuc).first();
+
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'BOSO_KHAITHUE',
     doiTuong: k.ky, chiTiet: loai + ' · ' + (luotChi.results || []).length + ' lượt chi'});
 
@@ -845,12 +994,18 @@ export async function boSoKhaiThue(y, env, db, hoSo) {
 
     doanhThu: {
       ghiNhan: t.ghiNhan,
-      giamTru: t.hoan,
-      thuan: t.ghiNhan - t.hoan,
+      thucThu: t.thu,
+      hoanTien: t.hoan,
+      mienGiam: t.mienGiam,
+      giamTru: t.hoan + t.mienGiam,
+      thuan: t.ghiNhan - t.hoan - t.mienGiam,
       theoTang: (theoTang.results || []).map(x => ({
         tang: x.tang, soKy: Number(x.n), doanhThu: Number(x.t)})),
       nguon: "kyThu WHERE hanLuc trong kỳ; trừ hoanTien WHERE trangThai='daDuyet' " +
-             'và duyetLuc trong kỳ."'},
+             "và duyetLuc trong kỳ; trừ mienGiam WHERE trangThai='daDuyet' và " +
+             'duyetLuc trong kỳ.',
+      vi: 'GHI NHẬN là số theo dồn tích, THỰC THU là tiền đã vào. Hai con số ' +
+          'khác nhau và bản này trả về cả hai — chọn cơ sở nào là T-05.'},
 
     chiHoaHong: {
       tong: t.hhTra, soLuot: (luotChi.results || []).length,
@@ -861,12 +1016,27 @@ export async function boSoKhaiThue(y, env, db, hoSo) {
           'lượt cho từng người, không tính trên tổng kỳ. Bản này KHÔNG nhân tỷ lệ ' +
           'nào vào — xem T-02.'},
 
+    chiPhi: {
+      tong: t.chi, soChungTu: t.soChungTuChi,
+      coHoaDon: t.chiCoHoaDon,
+      khongHoaDon: t.chiKhongHoaDon,
+      theoKhoanMuc: (mucThue.results || []).map(x => ({
+        khoanMuc: x.khoanMuc, so: Number(x.n), tien: Number(x.t),
+        coHoaDon: Number(x.hd)})),
+      nguon: "chiPhi WHERE trangThai='daDuyet' và ngayChi trong kỳ.",
+      vi: 'Cột CÓ HOÁ ĐƠN tách riêng vì khoản chi không có hoá đơn vẫn là tiền ' +
+          'đã ra thật — vẫn phải vào sổ chi — nhưng đứng khác khi tính thuế. ' +
+          'Bản này KHÔNG kết luận khoản nào được trừ, khoản nào không: xem T-04.'},
+
     /* Bản này nêu chỗ CHƯA SẴN SÀNG trước, vì nộp rồi mới phát hiện thì
        phải khai bổ sung, và khai bổ sung là một việc nặng hơn nhiều. */
     chuaSanSang: {
-      sanSang: thieuTuan.length === 0 && thieuChungCu.length === 0,
+      sanSang: thieuTuan.length === 0 && thieuChungCu.length === 0 &&
+               ketLech.length === 0 && Number(chiCho.n) === 0,
       tuanChuaChot: thieuTuan,
-      luotChiThieuChungCu: thieuChungCu},
+      luotChiThieuChungCu: thieuChungCu,
+      ngayKetConLech: ketLech,
+      khoanChiConChoDuyet: Number(chiCho.n)},
 
     choKeToanXacNhan: CHO_KE_TOAN,
 

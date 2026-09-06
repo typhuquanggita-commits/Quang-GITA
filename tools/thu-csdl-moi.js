@@ -67,8 +67,14 @@ bao(chiMuc.length >= 14, 'dựng đủ chỉ mục', chiMuc.length + ' chỉ m�
    soDem  — tra đúng bằng khoá chính, không có đường tra nào khác.
    caiDat — nhiều nhất BẢY dòng (một dòng mỗi cụm) và mỗi lượt đồng bộ
             đọc trọn cả bảng. Quét bảy dòng rẻ hơn đi qua chỉ mục; thêm
-            một chỉ mục ở đây là thêm một thứ phải giữ mà không ai dùng. */
-const KHONG_CAN = ['soDem', 'caiDat'];
+            một chỉ mục ở đây là thêm một thứ phải giữ mà không ai dùng.
+   chotKet — khoá chính LÀ ngày, và cả hai đường tra đều đi theo ngày:
+            dsChotKet xếp giảm dần theo ngày, boSoKhaiThue lọc khoảng
+            ngày. SQLite tự dựng sqlite_autoindex_chotKet_1 cho khoá
+            chính TEXT và dùng nó cho cả hai — đo được bằng EXPLAIN
+            QUERY PLAN, không phải phỏng đoán. Thêm ix_ trên cùng cột
+            ấy là dựng bản thứ hai của một chỉ mục đã có. */
+const KHONG_CAN = ['soDem', 'caiDat', 'chotKet'];
 const thieuChiMuc = bang.filter(b =>
   KHONG_CAN.indexOf(b) < 0 && !chiMuc.some(c => c.tbl_name === b));
 bao(!thieuChiMuc.length, 'không bảng nào có đường tra cứu mà thiếu chỉ mục',

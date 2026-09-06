@@ -1378,10 +1378,13 @@ bao(ktq.than.C_congNo.thuChuaGanKy === 250000 &&
     ktq.than.C_congNo.thuTruocNayToiHan === 500000,
   'và NÊU RIÊNG hai khoản làm lệch: 250.000đ chưa gắn kỳ · 500.000đ nộp trước nay tới hạn',
   'tiền đã vào sổ mà chưa trừ nợ của ai là một việc phải làm, không phải một con số để ngắm');
-bao(!JSON.stringify(ktq.than).includes('loiNhuan') &&
-    ktq.than.khongCoTrongHeNay.length >= 4,
-  'và KHÔNG có dòng lợi nhuận nào — chi phí vận hành không nằm trong hệ này',
-  'một con số lợi nhuận tính thiếu chi phí sẽ được ai đó mang đi họp, và nó sai');
+/* Từ 9.91 hệ có cả hai nửa nên phép trừ chạy được — nhưng kết quả của
+   nó KHÔNG được gọi là lợi nhuận, và bản kê phải tự nói ra vì sao. */
+bao(ktq.than.G_chenhLechThuChi.khongPhaiLoiNhuan === true &&
+    ktq.than.G_chenhLechThuChi.thieuNhungGi.length >= 3 &&
+    typeof ktq.than.G_chenhLechThuChi.chenhLech === 'number',
+  'CÓ CHÊNH LỆCH THU CHI NHƯNG KHÔNG GỌI LÀ LỢI NHUẬN — doanh thu ghi dồn tích, chi phí ghi tiền ra, hai cơ sở khác nhau',
+  'và bản kê tự kê ra bốn thứ nó còn thiếu, thay vì để người đọc tự đoán');
 /* BÚT TOÁN ĐIỀU CHỈNH RƠI VÀO KỲ ĐANG MỞ, KHÔNG VÀO KỲ BỊ ẢNH HƯỞNG.
 
    Phiếu thuộc quý I; huỷ nó hôm nay thì khoản giảm thuộc về quý ĐANG
@@ -1475,13 +1478,268 @@ bao(thue.than.ok && thue.than.doanhThu.ghiNhan === 1500000 &&
 bao(Array.isArray(thue.than.chiHoaHong.theoNguoiNhan) &&
     thue.than.chiHoaHong.vi.indexOf('từng lượt') >= 0,
   'hoa hồng trả về TỪNG LƯỢT CHI cho TỪNG người — khấu trừ tính theo lượt, không theo tổng kỳ');
-bao(thue.than.choKeToanXacNhan.length === 3 &&
+bao(thue.than.choKeToanXacNhan.length === 5 &&
     !/thuế suất là|phải nộp|khấu trừ 10/.test(JSON.stringify(thue.than)),
   'MÁY KHÔNG KẾT LUẬN NGHĨA VỤ THUẾ — không tự nhân một tỷ lệ nào vào',
-  'ba chỗ chờ kế toán xác nhận: ' + thue.than.choKeToanXacNhan.map(x=>x.ma).join(' · '));
+  thue.than.choKeToanXacNhan.length + ' chỗ chờ kế toán xác nhận: ' +
+    thue.than.choKeToanXacNhan.map(x=>x.ma).join(' · '));
 bao(!thue.than.chuaSanSang.sanSang && thue.than.chuaSanSang.tuanChuaChot.length > 0,
   'và NÊU CHỖ CHƯA SẴN SÀNG TRƯỚC KHI NỘP — tuần chưa chốt là con số còn có thể đổi',
   thue.than.chuaSanSang.tuanChuaChot.length + ' tuần chưa chốt trong quý');
+
+/* ═══════════════ 15c · NỬA CÒN LẠI CỦA CUỐN SỔ ═══════════════
+
+   Tiền RA · tiền được GIẢM · tiền phải ĐÒI · tiền mặt phải ĐẾM. */
+console.log('\n15c · SỔ CHI · MIỄN GIẢM · NHẮC THU · KÉT');
+
+/* Phiên phụ huynh lấy mới ở đây: token của mục 1 đã đi qua mười lăm
+   mục và có thể đã bị đá khi đổi mật khẩu. Một phép đo đỏ vì token hết
+   hạn là một phép đo nói sai về thứ nó định đo. */
+const tkPh2 = (await goi({fn:'dangNhap', u:'phuhuynh@gita365.vn',
+  mk:'MatKhauRieng2026!'})).than.token;
+
+/* Đề xuất chi là việc của quản lý (R01–R05), không phải của Coach:
+   Coach kèm nhà, không quyết tiền thuê mặt bằng. Nên mục này cần một
+   tài khoản R05 — và chính chỗ ấy là một phép đo: Coach bấm vào cũng
+   không được. */
+await themNguoi('U-tc', 'truongcoach@gita365.vn', 'MatKhauRieng2026!', 'R05',
+  {portal:'coach'});
+const tkTC = (await goi({fn:'dangNhap', u:'truongcoach@gita365.vn',
+  mk:'MatKhauRieng2026!'})).than.token;
+bao(!(await goi({fn:'deXuatChi', token:tkCoach, u:'coach@gita365.vn',
+  chi:{khoanMuc:'matBang', soTien:3000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Thuê phòng học tháng 3'}})).than.ok,
+  'Coach không đề xuất được khoản chi — Coach kèm nhà, không quyết tiền thuê mặt bằng');
+
+/* ── 1 · SỔ CHI ── */
+bao(!(await goi({fn:'deXuatChi', token:tkPh2, u:'phuhuynh@gita365.vn',
+  chi:{khoanMuc:'matBang', soTien:5000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Thuê văn phòng tháng 3'}})).than.ok,
+  'phụ huynh không đề xuất được khoản chi');
+
+const mucLa = await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'anBuoiTrua', soTien:100000, hinhThuc:'tienMat', dienGiai:'Ăn trưa cả nhóm'}});
+bao(!mucLa.than.ok && /Khoản mục phải/.test(mucLa.than.error),
+  'KHOẢN MỤC LÀ DANH SÁCH TRẮNG — gõ tự do thì sáu tháng sau có bốn khoản mục cho một thứ',
+  'và không bản tổng hợp nào cộng đúng');
+
+bao(!(await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'matBang', soTien:5000000, hinhThuc:'chuyenKhoan', dienGiai:'ok'}})).than.ok,
+  'khoản chi phải có DIỄN GIẢI rõ — sang năm phải dựng lại được câu chuyện');
+
+bao(!(await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'matBang', soTien:5000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Thuê văn phòng', ngayChi:'2027-12-01T00:00:00.000Z'}})).than.ok,
+  'ngày chi không được nằm ở tương lai — khoản chi ghi khi tiền đã ra');
+
+/* Khoản chi rơi vào tuần 2026-W10 ĐÃ CHỐT, để thử luôn bút toán. */
+const cp1 = await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'matBang', soTien:3000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Thuê phòng học tháng 3/2026', ngayChi:'2026-03-04T03:00:00.000Z',
+    coHoaDon:true, maHoaDon:'HD-0001', nhaCungCap:'Cty ABC'}});
+bao(cp1.than.ok && cp1.than.trangThai === 'choDuyet', 'đề xuất được khoản chi có hoá đơn');
+
+bao(!(await goi({fn:'duyetChi', token:tkTC, u:'truongcoach@gita365.vn', id:cp1.than.id})).than.ok,
+  'R05 đề xuất được nhưng KHÔNG duyệt được — duyệt chi là R01–R03');
+
+const cpTuDuyet = await goi({fn:'deXuatChi', token:tkSA, u:'superadmin@gita365.vn',
+  chi:{khoanMuc:'haTang', soTien:1000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Gia hạn tên miền gita.edu.vn'}});
+const tuDuyet = await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn',
+  id:cpTuDuyet.than.id});
+bao(!tuDuyet.than.ok && tuDuyet.than.code === 'TUDUYET',
+  'NGƯỜI ĐỀ XUẤT CHI KHÔNG TỰ DUYỆT — tiền đi RA thì phải có người thứ hai đứng giữa',
+  'một người vừa quyết chi vừa duyệt chi là một người lấy được tiền ra khỏi Học viện');
+
+/* NGƯỠNG: khoản lớn chỉ R01 duyệt. Thử bằng một hồ sơ vai R03 truyền
+   thẳng vào hàm — không tráo một tên nào trên G, đúng luật v9.79. */
+const cpTo = await goi({fn:'deXuatChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'tiepThi', soTien:50000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Chiến dịch truyền thông quý 4'}});
+bao(cpTo.than.ok && cpTo.than.canR01,
+  'khoản vượt ngưỡng báo NGAY Ở BƯỚC ĐỀ XUẤT rằng phải lên tới R01',
+  'để người đề xuất không chờ một cấp duyệt sẽ không bao giờ duyệt được');
+const ct = await import('../may-chu/chi-tieu.js');
+const thuR03 = await ct.duyetChi({id:cpTo.than.id}, env, env.CSDL,
+  {uid:'U-gd', u:'giamdoc@gita365.vn', role:'R03'});
+bao(!thuR03.ok && thuR03.code === 'VUOTTRAN',
+  'VÀ R03 KHÔNG DUYỆT ĐƯỢC KHOẢN VƯỢT NGƯỠNG — cái sai đắt nhất không được đi qua cửa dễ nhất',
+  thuR03.error);
+
+const dcp = await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn', id:cp1.than.id});
+bao(dcp.than.ok && dcp.than.dieuChinh && dcp.than.dieuChinh.kyBiAnhHuong === '2026-W10',
+  'DUYỆT MỘT KHOẢN CHI THUỘC TUẦN ĐÃ CHỐT cũng sinh bút toán điều chỉnh',
+  'chi phí động vào kỳ đã đóng y như phiếu thu, nên phải để lại vết y như thế');
+
+const sc = await goi({fn:'soChi', token:tkSA, u:'superadmin@gita365.vn'});
+bao(sc.than.ok && sc.than.tongDaDuyet === 3000000 &&
+    sc.than.theoKhoanMuc[0].coHoaDon === 3000000,
+  'sổ chi cắt theo KHOẢN MỤC và tách riêng phần CÓ HOÁ ĐƠN',
+  'khoản không hoá đơn vẫn là tiền đã ra thật, nhưng đứng khác khi tính thuế');
+
+/* ── 2 · MIỄN GIẢM ── */
+const kyBC2 = 'KT-BC02';
+bao(!(await goi({fn:'deXuatMienGiam', token:tkPh2, u:'phuhuynh@gita365.vn',
+  mienGiam:{idKy:kyBC2, soTien:100000, loai:'hocBong', theoLuat:'x', lyDo:'y'}})).than.ok,
+  'phụ huynh không tự đề xuất miễn giảm cho nhà mình');
+
+bao(!(await goi({fn:'deXuatMienGiam', token:tkCoach, u:'coach@gita365.vn',
+  mienGiam:{idKy:kyBC2, soTien:100000, loai:'hocBong', lyDo:'Hoàn cảnh khó khăn'}})).than.ok,
+  'PHẢI GHI GIẢM THEO LUẬT NÀO — một khoản giảm không dẫn được về luật nào là một khoản do một người quyết',
+  'và người ấy sẽ phải trả lời một mình');
+
+/* KT-BC01 phải thu 1.000.000đ, đã thu 600.000đ (PT-BC02 đã bị huỷ ở
+   mục 15b), nên còn 400.000đ. Giảm 500.000đ là giảm quá. */
+const giamQua = await goi({fn:'deXuatMienGiam', token:tkCoach, u:'coach@gita365.vn',
+  mienGiam:{idKy:'KT-BC01', soTien:500000, loai:'hocBong',
+    theoLuat:'Học bổng toàn phần cho con em cán bộ', lyDo:'Xét duyệt tháng 3'}});
+bao(!giamQua.than.ok && giamQua.than.code === 'GIAMQUA',
+  'KHÔNG GIẢM QUÁ PHẦN CÒN LẠI CỦA KỲ — giảm quá là dựng ra một công nợ âm',
+  'và đó cũng là cổng chặn chuyện giảm nhiều hơn phải thu rồi hoàn phần chênh');
+
+const mg1 = await goi({fn:'deXuatMienGiam', token:tkCoach, u:'coach@gita365.vn',
+  mienGiam:{idKy:'KT-BC01', soTien:400000, loai:'hoanCanh',
+    theoLuat:'Quy chế học bổng GITA điều 4: giảm tối đa 40% cho gia đình khó khăn',
+    lyDo:'Gia đình có hai con cùng học, thu nhập giảm'}});
+bao(mg1.than.ok && mg1.than.conLaiCuaKy === 400000, 'đề xuất miễn giảm đúng luật thì được');
+
+bao(!(await goi({fn:'duyetMienGiam', token:tkCoach, u:'coach@gita365.vn',
+  id:mg1.than.id})).than.ok, 'Coach không duyệt được miễn giảm');
+
+const noTruoc = (await goi({fn:'congNo', token:tkSA, u:'superadmin@gita365.vn',
+  maKhachHang:'GITA-BC01'})).than.tongConNo;
+const dmg = await goi({fn:'duyetMienGiam', token:tkSA, u:'superadmin@gita365.vn',
+  id:mg1.than.id});
+const noSau = await goi({fn:'congNo', token:tkSA, u:'superadmin@gita365.vn',
+  maKhachHang:'GITA-BC01'});
+bao(dmg.than.ok && noSau.than.tongConNo === noTruoc - 400000,
+  'DUYỆT MIỄN GIẢM THÌ CÔNG NỢ GIẢM THEO — mà cam kết gốc ở kyThu giữ nguyên',
+  noTruoc + 'đ → ' + noSau.than.tongConNo + 'đ');
+bao(noSau.than.tongMienGiam === 400000 &&
+    noSau.than.ke.find(x => x.idKy === 'KT-BC01').phaiThu === 1000000,
+  'và bản kê nêu CẢ BA con số — phải đóng 1.000.000đ, được giảm 400.000đ, đã đóng 600.000đ',
+  'sửa thẳng phaiThu là xoá mất cam kết gốc; ghi phiếu thu giả là thổi phồng tiền thực thu');
+
+/* Bốn chỗ tính công nợ phải trừ miễn giảm GIỐNG HỆT NHAU. Nhà đã được
+   giảm hết phần còn lại thì phải rời khỏi danh sách quá hạn — nếu
+   dsQuaHan không trừ, nó vẫn nằm đó và người ta vẫn đi đòi. */
+const qhSau = await goi({fn:'dsQuaHan', token:tkSA, u:'superadmin@gita365.vn'});
+bao(!qhSau.than.ds.some(x => x.idKy === 'KT-BC01'),
+  'VÀ NHÀ ĐƯỢC GIẢM HẾT RỜI KHỎI DANH SÁCH QUÁ HẠN — bốn chỗ tính công nợ dùng CHUNG một phép trừ',
+  'viết lại phép trừ ở từng chỗ là cách chắc nhất để một nhà được học bổng vẫn bị đi đòi');
+
+/* ── 3 · NHẮC THU ──
+
+   GITA-BC01 vừa được giảm hết phần còn lại nên nó KHÔNG còn quá hạn —
+   đó chính là phép đo ngay trên. Nên dựng thêm một kỳ quá hạn thật để
+   thử phần nhắc thu; đặt hạn ở tháng 4 để không đụng vào các con số
+   của quý I mà mục 15b đã đo. */
+db.prepare("INSERT INTO kyThu (id,maKhachHang,tang,ky,soKy,ngayThu,phaiThu,hanLuc,taoLuc) " +
+  "VALUES ('KT-BC03','GITA-BC01',3,3,3,64,500000,'2026-04-15T02:00:00.000Z',?)")
+  .run('2026-03-01T00:00:00.000Z');
+
+/* ── 3 · NHẮC THU ── */
+bao(!(await goi({fn:'ghiNhacThu', token:tkCoach, u:'coach@gita365.vn',
+  nhac:{maKhachHang:'GITA-BC01', kenh:'goiDien', ketQua:'huaTra', noiDung:'Đã gọi, nhà hứa trả'}})).than.ok,
+  'NHÀ HỨA TRẢ THÌ PHẢI GHI HẸN NGÀY NÀO — một lời hứa không có ngày thì tuần sau lại gọi hỏi đúng câu cũ');
+
+const henCu = new Date(Date.now() - 5 * 86400e3).toISOString();
+bao(!(await goi({fn:'ghiNhacThu', token:tkCoach, u:'coach@gita365.vn',
+  nhac:{maKhachHang:'GITA-BC01', kenh:'goiDien', ketQua:'huaTra',
+    noiDung:'Nhà hứa trả', henLuc:henCu}})).than.ok,
+  'hẹn trả nằm ở quá khứ thì từ chối — một cái hẹn đã qua không phải hẹn');
+
+const nt1 = await goi({fn:'ghiNhacThu', token:tkCoach, u:'coach@gita365.vn',
+  nhac:{maKhachHang:'GITA-BC01', idKy:'KT-BC02', kenh:'goiDien', ketQua:'huaTra',
+    noiDung:'Gọi 10h sáng, mẹ cháu nói lương về ngày 20 sẽ chuyển đủ',
+    henLuc:new Date(Date.now() + 3 * 86400e3).toISOString()}});
+bao(nt1.than.ok && nt1.than.laLanThu === 1,
+  'ghi được lượt nhắc, có kênh, có nội dung, có hẹn — LÀM VIỆC TRÊN HỆ THỐNG có bằng chứng',
+  'không ghi thì ngày người phụ trách nghỉ là ngày câu trả lời biến mất');
+
+const ls = await goi({fn:'lichSuNhacThu', token:tkCoach, u:'coach@gita365.vn',
+  maKhachHang:'GITA-BC01'});
+bao(ls.than.ok && ls.than.soLan === 1 && !!ls.than.henGanNhat,
+  'lịch sử nhắc thu trả về cả hẹn gần nhất');
+
+/* Danh sách quá hạn phải mang theo "đã nhắc mấy lần, kết quả gì" —
+   không có thì nó là danh sách nhìn thì biết nhưng không làm được. */
+const qhNhac = (await goi({fn:'dsQuaHan', token:tkSA, u:'superadmin@gita365.vn'}))
+  .than.ds.find(x => x.maKhachHang === 'GITA-BC01');
+bao(qhNhac && qhNhac.soLanNhac === 1 && qhNhac.ketQuaLanCuoi === 'huaTra' && !!qhNhac.henTraLuc,
+  'DANH SÁCH QUÁ HẠN MANG THEO LỊCH SỬ NHẮC — nhà đã hứa trả tuần sau không bị gọi như nhà chưa ai liên lạc',
+  'đã nhắc ' + qhNhac.soLanNhac + ' lần · ' + qhNhac.ketQuaLanCuoi);
+
+const chuaDenHen = await goi({fn:'denHenChuaTra', token:tkSA, u:'superadmin@gita365.vn'});
+bao(chuaDenHen.than.ok && !chuaDenHen.than.ds.some(x => x.maKhachHang === 'GITA-BC01'),
+  'nhà HẸN TUẦN SAU chưa vào danh sách đến hẹn — khác với danh sách quá hạn');
+db.prepare("UPDATE nhacThu SET henLuc = ? WHERE id = ?")
+  .run(new Date(Date.now() - 86400e3).toISOString(), nt1.than.id);
+const denHen = await goi({fn:'denHenChuaTra', token:tkSA, u:'superadmin@gita365.vn'});
+bao(denHen.than.ds.some(x => x.maKhachHang === 'GITA-BC01'),
+  'tới ngày hẹn mà chưa trả thì VÀO danh sách phải gọi hôm nay',
+  'nhà đang nợ mà hẹn tuần sau thì chưa phải gọi — hai việc khác nhau');
+
+/* ── 4 · CHỐT KÉT ── */
+const ngayKet = '2026-03-05';   /* PT-BC02 400.000đ tiền mặt, đã bị huỷ */
+db.prepare("INSERT INTO phieuThu (id,maKhachHang,soTien,hinhThuc,nguoiGhi,ghiLuc," +
+  "nguoiDuyet,duyetLuc,trangThai) VALUES ('PT-KET','GITA-BC01',200000,'tienMat'," +
+  "'tuvan@gita365.vn','2026-03-05T04:00:00.000Z','superadmin@gita365.vn'," +
+  "'2026-03-05T04:00:00.000Z','daDuyet')").run();
+
+const ketLech = await goi({fn:'chotKet', token:tkSA, u:'superadmin@gita365.vn',
+  ngay:ngayKet, demThuc:150000});
+bao(!ketLech.than.ok && ketLech.than.code === 'LECHKHONGLYDO' &&
+    ketLech.than.theoSo === 200000 && ketLech.than.chenh === -50000,
+  'KÉT LỆCH MÀ KHÔNG CÓ LÝ DO THÌ KHÔNG CHỐT ĐƯỢC — cho chốt lặng lẽ là dựng ra một chỗ tiền biến mất hợp lệ',
+  'sổ nói 200.000đ, đếm được 150.000đ');
+
+const ketOk = await goi({fn:'chotKet', token:tkSA, u:'superadmin@gita365.vn',
+  ngay:ngayKet, demThuc:150000, lyDo:'Trả lại tiền thừa cho phụ huynh, quên ghi phiếu'});
+bao(ketOk.than.ok && ketOk.than.chenh === -50000 && !ketOk.than.khop,
+  'lệch CÓ lý do thì chốt được, và lệch ở lại trong dòng',
+  'một két không bao giờ lệch là một két chưa bao giờ được đếm');
+
+const dsKet = await goi({fn:'dsChotKet', token:tkSA, u:'superadmin@gita365.vn'});
+bao(dsKet.than.ok && dsKet.than.soNgayLech === 1 && dsKet.than.tongLech === -50000,
+  'sổ két đếm được bao nhiêu ngày lệch và lệch tổng bao nhiêu');
+
+/* ── 5 · CẢ BA THỨ MỚI PHẢI VÀO ĐÚNG BẢN KẾ TOÁN ── */
+const ktMoi = await goi({fn:'baoCaoKeToan', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:'2026-Q1'});
+bao(ktMoi.than.F_chiPhi.tongChi === 3000000 &&
+    ktMoi.than.F_chiPhi.coHoaDon === 3000000 &&
+    ktMoi.than.F_chiPhi.khongHoaDon === 0,
+  'bản kế toán quý I giờ CÓ NỬA CHI — 3.000.000đ, tách sẵn phần có hoá đơn');
+/* MIỄN GIẢM CÓ HIỆU LỰC TỪ LÚC DUYỆT, KHÔNG LÙI NGƯỢC.
+   Khoản giảm duyệt hôm nay rơi vào quý ĐANG CHẠY; quý I giữ nguyên số
+   của nó. Cùng một luật với mốc huỷ hoa hồng — và cùng một lý do: một
+   bản báo cáo quá khứ phải dựng lại được. */
+bao(ktMoi.than.A_doanhThu.mienGiam === 0,
+  'quý I KHÔNG nhận khoản miễn giảm duyệt hôm nay — miễn giảm có hiệu lực từ lúc duyệt, không lùi ngược');
+const ktNay2 = await goi({fn:'baoCaoKeToan', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:new Date().toISOString().slice(0, 10)});
+bao(ktNay2.than.A_doanhThu.mienGiam === 400000 &&
+    ktNay2.than.A_doanhThu.hoanTien !== ktNay2.than.A_doanhThu.giamTruDoanhThu &&
+    ktNay2.than.A_doanhThu.giamTruDoanhThu ===
+      ktNay2.than.A_doanhThu.hoanTien + ktNay2.than.A_doanhThu.mienGiam,
+  'HOÀN TIỀN VÀ MIỄN GIẢM NÊU RIÊNG — hoàn là tiền đã ra, miễn giảm là tiền chưa từng vào',
+  'gộp một dòng thì không ai biết Học viện đang trả lại hay đang cho đi');
+bao(ktNay2.than.canDoi.can,
+  'và quý ĐANG CHẠY — quý có cả hoàn, cả miễn giảm, cả huỷ hoa hồng — vẫn cân',
+  'lệch công nợ ' + ktNay2.than.canDoi.lechCongNo +
+  ' · lệch hoa hồng ' + ktNay2.than.canDoi.lechHoaHong);
+bao(ktMoi.than.canDoi.can,
+  'VÀ ĐẲNG THỨC CÔNG NỢ VẪN CÂN sau khi thêm miễn giảm vào cả hai vế',
+  'lệch công nợ ' + ktMoi.than.canDoi.lechCongNo +
+  ' · lệch hoa hồng ' + ktMoi.than.canDoi.lechHoaHong);
+
+const thueMoi = await goi({fn:'boSoKhaiThue', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'quy', moc:'2026-Q1'});
+bao(thueMoi.than.chuaSanSang.ngayKetConLech.length === 1 &&
+    thueMoi.than.chuaSanSang.khoanChiConChoDuyet === 0,
+  'bộ số khai thuế NÊU LUÔN két còn lệch và khoản chi còn treo — nộp rồi mới xử lý thì phải khai bổ sung',
+  '1 ngày két lệch trong quý');
 
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');

@@ -37,9 +37,12 @@ import { kyChungCu, xacNhanChungCu, soiChungCu } from './chung-cu.js';
 import { xemTepKhach, suaTepKhach, dsTepKhach } from './ho-so-khach.js';
 import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh,
   huyPhieuThu, ganPhieuVaoKy, deXuatHoan, duyetHoan, traHoaHong,
-  ganChungCuHoaHong, dongKyChuaToi, dsQuaHan, doiSoat } from './tai-chinh.js';
+  ganChungCuHoaHong, dongKyChuaToi, dsQuaHan, doiSoat,
+  deXuatMienGiam, duyetMienGiam, dsMienGiam,
+  ghiNhacThu, lichSuNhacThu, denHenChuaTra } from './tai-chinh.js';
 import { soNgay, chotTuan, soatChot, tongHop, baoCaoKeToan, boSoKhaiThue,
   dsChot } from './bao-cao.js';
+import { deXuatChi, duyetChi, huyChi, soChi, chotKet, dsChotKet } from './chi-tieu.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -154,7 +157,10 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'huyPhieuThu', 'ganPhieuVaoKy', 'deXuatHoan', 'duyetHoan', 'traHoaHong',
   'ganChungCuHoaHong', 'dongKyChuaToi', 'dsQuaHan', 'doiSoat',
   'soNgay', 'chotTuan', 'soatChot', 'tongHop', 'baoCaoKeToan', 'boSoKhaiThue',
-  'dsChot'];
+  'dsChot',
+  'deXuatChi', 'duyetChi', 'huyChi', 'soChi', 'chotKet', 'dsChotKet',
+  'deXuatMienGiam', 'duyetMienGiam', 'dsMienGiam',
+  'ghiNhacThu', 'lichSuNhacThu', 'denHenChuaTra'];
 
 async function lam(fn, y, env, db) {
   if (fn === 'dangNhap')  return await dangNhap(y, env, db);
@@ -228,6 +234,23 @@ async function lam(fn, y, env, db) {
   if (fn === 'tongHop')       return await tongHop(y, env, db, hoSo);
   if (fn === 'baoCaoKeToan')  return await baoCaoKeToan(y, env, db, hoSo);
   if (fn === 'boSoKhaiThue')  return await boSoKhaiThue(y, env, db, hoSo);
+
+  /* Nửa còn lại của cuốn sổ — tiền RA, tiền được GIẢM, tiền phải ĐÒI,
+     và tiền mặt phải ĐẾM. Xem chú giải đầu chi-tieu.js. */
+  if (fn === 'deXuatChi')  return await deXuatChi(y, env, db, hoSo);
+  if (fn === 'duyetChi')   return await duyetChi(y, env, db, hoSo);
+  if (fn === 'huyChi')     return await huyChi(y, env, db, hoSo);
+  if (fn === 'soChi')      return await soChi(y, env, db, hoSo);
+  if (fn === 'chotKet')    return await chotKet(y, env, db, hoSo);
+  if (fn === 'dsChotKet')  return await dsChotKet(y, env, db, hoSo);
+
+  if (fn === 'deXuatMienGiam') return await deXuatMienGiam(y, env, db, hoSo);
+  if (fn === 'duyetMienGiam')  return await duyetMienGiam(y, env, db, hoSo);
+  if (fn === 'dsMienGiam')     return await dsMienGiam(y, env, db, hoSo);
+
+  if (fn === 'ghiNhacThu')    return await ghiNhacThu(y, env, db, hoSo);
+  if (fn === 'lichSuNhacThu') return await lichSuNhacThu(y, env, db, hoSo);
+  if (fn === 'denHenChuaTra') return await denHenChuaTra(y, env, db, hoSo);
   return {ok: false, error: 'Yêu cầu không hợp lệ.'};
 }
 

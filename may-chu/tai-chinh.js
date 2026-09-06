@@ -213,15 +213,31 @@ const dinhDang = n => Number(n).toLocaleString('vi-VN') + 'đ';
 
 /** Còn thiếu bao nhiêu ở MỘT kỳ. Một câu lệnh, đi qua ix_kythu_mot rồi
     ix_pt_ky — không đọc cả sổ phiếu thu của nhà rồi lọc trong bộ nhớ. */
+/* ══ MỘT PHÉP TRỪ MIỄN GIẢM, DÙNG Ở MỌI CHỖ TÍNH CÔNG NỢ ══
+
+   Công nợ một kỳ được tính ở BỐN chỗ: conNoCuaKy (cổng chặn thu thừa),
+   congNo (bản kê một nhà), dsQuaHan (danh sách cả hệ), và doiSoat DS-4
+   (phép soát thu thừa). Bốn chỗ ấy phải trừ miễn giảm giống hệt nhau.
+
+   Viết lại phép trừ ở từng chỗ là cách chắc chắn nhất để một nhà được
+   giảm học phí vẫn hiện lên trong danh sách quá hạn — hoặc tệ hơn: cổng
+   chặn thu thừa cho thu quá phần còn phải đóng. Nên MỘT bản, một chuỗi,
+   nối vào cả bốn câu.
+
+   Điều kiện phải khớp bí danh k của kyThu ở câu gọi nó. */
+const TRU_MIEN_GIAM =
+  "(SELECT COALESCE(SUM(m.soTien),0) FROM mienGiam m " +
+  " WHERE m.idKy = k.id AND m.trangThai = 'daDuyet')";
+
 async function conNoCuaKy(db, nha, tang, ky) {
   const r = await db.prepare(
-    'SELECT k.phaiThu, ' +
+    'SELECT k.phaiThu, ' + TRU_MIEN_GIAM + ' AS giam, ' +
     "  COALESCE(SUM(CASE WHEN p.trangThai = 'daDuyet' THEN p.soTien END), 0) daThu " +
     'FROM kyThu k LEFT JOIN phieuThu p ON p.idKy = k.id ' +
     'WHERE k.maKhachHang = ? AND k.tang = ? AND k.ky = ? GROUP BY k.id'
   ).bind(nha, tang, ky).first();
   if (!r) return 0;
-  return Math.max(0, Number(r.phaiThu) - Number(r.daThu));
+  return Math.max(0, Number(r.phaiThu) - Number(r.giam) - Number(r.daThu));
 }
 
 /* ═══════════════ DUYỆT PHIẾU THU ═══════════════ */
@@ -283,25 +299,31 @@ export async function congNo(y, env, db, hoSo) {
 
   const r = await db.prepare(
     'SELECT k.id, k.tang, k.ky, k.soKy, k.phaiThu, k.hanLuc, k.congTruoc, ' +
+    '  ' + TRU_MIEN_GIAM + ' AS giam, ' +
     '  COALESCE(SUM(CASE WHEN p.trangThai = ? THEN p.soTien END), 0) AS daThu ' +
     'FROM kyThu k LEFT JOIN phieuThu p ON p.idKy = k.id ' +
     'WHERE k.maKhachHang = ? GROUP BY k.id ORDER BY k.tang, k.ky'
   ).bind('daDuyet', nha).all();
 
+  /* Bản kê nêu CẢ BA con số — phải đóng, được giảm, đã đóng — chứ không
+     chỉ nêu phần còn lại. Gia đình được cấp học bổng có quyền nhìn thấy
+     khoản ấy đứng thành một dòng, và người phụ trách cũng cần thấy để
+     trả lời được câu "sao nhà này đóng ít hơn nhà kia". */
   const ke = (r.results || []).map(x => ({
     idKy: x.id, tang: x.tang, ky: x.ky, soKy: x.soKy,
-    phaiThu: Number(x.phaiThu), daThu: Number(x.daThu),
-    conNo: Number(x.phaiThu) - Number(x.daThu),
+    phaiThu: Number(x.phaiThu), mienGiam: Number(x.giam), daThu: Number(x.daThu),
+    conNo: Number(x.phaiThu) - Number(x.giam) - Number(x.daThu),
     hanLuc: x.hanLuc, congTruoc: x.congTruoc || null,
     quaHan: !!(x.hanLuc && new Date(x.hanLuc) < new Date() &&
-               Number(x.daThu) < Number(x.phaiThu))
+               Number(x.daThu) + Number(x.giam) < Number(x.phaiThu))
   }));
 
   return {ok: true, maKhachHang: nha, ke,
-    tongPhaiThu: ke.reduce((a, x) => a + x.phaiThu, 0),
-    tongDaThu:   ke.reduce((a, x) => a + x.daThu, 0),
-    tongConNo:   ke.reduce((a, x) => a + x.conNo, 0),
-    soKyQuaHan:  ke.filter(x => x.quaHan).length};
+    tongPhaiThu:  ke.reduce((a, x) => a + x.phaiThu, 0),
+    tongMienGiam: ke.reduce((a, x) => a + x.mienGiam, 0),
+    tongDaThu:    ke.reduce((a, x) => a + x.daThu, 0),
+    tongConNo:    ke.reduce((a, x) => a + x.conNo, 0),
+    soKyQuaHan:   ke.filter(x => x.quaHan).length};
 }
 
 /* ═══════════════ HOA HỒNG PHẢI TRẢ ═══════════════
@@ -802,16 +824,32 @@ export async function dsQuaHan(y, env, db, hoSo) {
 
   const bay = new Date().toISOString();
   const r = await db.prepare(
-    'SELECT k.maKhachHang, k.tang, k.ky, k.phaiThu, k.hanLuc, ' +
-    "  COALESCE(SUM(CASE WHEN p.trangThai = 'daDuyet' THEN p.soTien END), 0) daThu " +
+    'SELECT k.id, k.maKhachHang, k.tang, k.ky, k.phaiThu, k.hanLuc, ' +
+    '  ' + TRU_MIEN_GIAM + ' AS giam, ' +
+    "  COALESCE(SUM(CASE WHEN p.trangThai = 'daDuyet' THEN p.soTien END), 0) daThu, " +
+    /* Người đi đòi cần biết đã gọi mấy lần và lần cuối bao giờ. Không
+       có hai cột này thì danh sách quá hạn là một danh sách nhìn thì
+       biết nhưng không làm được — mỗi lượt gọi lại bắt đầu từ đầu, và
+       nhà đã hứa trả tuần sau vẫn bị gọi như nhà chưa ai liên lạc. */
+    '  (SELECT COUNT(*) FROM nhacThu n WHERE n.maKhachHang = k.maKhachHang) soLanNhac, ' +
+    '  (SELECT MAX(n.luc) FROM nhacThu n WHERE n.maKhachHang = k.maKhachHang) nhacLanCuoi, ' +
+    '  (SELECT n.ketQua FROM nhacThu n WHERE n.maKhachHang = k.maKhachHang ' +
+    '     ORDER BY n.luc DESC LIMIT 1) ketQuaLanCuoi, ' +
+    '  (SELECT n.henLuc FROM nhacThu n WHERE n.maKhachHang = k.maKhachHang ' +
+    '     AND n.henLuc IS NOT NULL ORDER BY n.luc DESC LIMIT 1) henTraLuc ' +
     'FROM kyThu k LEFT JOIN phieuThu p ON p.idKy = k.id ' +
-    'WHERE k.hanLuc < ? GROUP BY k.id HAVING daThu < k.phaiThu ' +
+    'WHERE k.hanLuc < ? GROUP BY k.id ' +
+    'HAVING daThu + ' + TRU_MIEN_GIAM + ' < k.phaiThu ' +
     'ORDER BY k.hanLuc LIMIT 500'
   ).bind(bay).all();
 
   const ds = (r.results || []).map(x => ({
-    maKhachHang: x.maKhachHang, tang: x.tang, ky: x.ky,
-    conNo: Number(x.phaiThu) - Number(x.daThu), hanLuc: x.hanLuc,
+    idKy: x.id, maKhachHang: x.maKhachHang, tang: x.tang, ky: x.ky,
+    conNo: Number(x.phaiThu) - Number(x.giam) - Number(x.daThu), hanLuc: x.hanLuc,
+    mienGiam: Number(x.giam) || undefined,
+    soLanNhac: Number(x.soLanNhac), nhacLanCuoi: x.nhacLanCuoi || undefined,
+    ketQuaLanCuoi: x.ketQuaLanCuoi || undefined,
+    henTraLuc: x.henTraLuc || undefined,
     treNgay: Math.floor((Date.now() - new Date(x.hanLuc).getTime()) / 86400e3)
   }));
   return {ok: true, so: ds.length, tongConNo: ds.reduce((a, x) => a + x.conNo, 0), ds};
@@ -857,10 +895,10 @@ export async function doiSoat(y, env, db, hoSo) {
     'cơ sở dữ liệu, đi vòng qua nangTang.');
 
   await hoi('DS-4', 'Kỳ thu đã thu QUÁ số phải thu',
-    'SELECT k.id, k.maKhachHang, k.phaiThu, ' +
+    'SELECT k.id, k.maKhachHang, k.phaiThu, ' + TRU_MIEN_GIAM + ' AS giam, ' +
     "  SUM(CASE WHEN p.trangThai = 'daDuyet' THEN p.soTien ELSE 0 END) daThu " +
     'FROM kyThu k JOIN phieuThu p ON p.idKy = k.id ' +
-    'GROUP BY k.id HAVING daThu > k.phaiThu LIMIT 50', [],
+    'GROUP BY k.id HAVING daThu > k.phaiThu - ' + TRU_MIEN_GIAM + ' LIMIT 50', [],
     'Cổng chặn thu thừa nằm ở lúc GHI phiếu; dòng nào lọt qua được là dòng ' +
     'vào sổ bằng một đường khác.');
 
@@ -885,4 +923,287 @@ export async function doiSoat(y, env, db, hoSo) {
   return {ok: true, sach: lech.length === 0, soLech: lech.length, lech,
     vi: 'Phép đối soát KHÔNG SỬA GÌ. Mỗi chỗ lệch có một câu chuyện riêng, ' +
         'và máy không biết câu chuyện ấy.'};
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MIỄN GIẢM HỌC PHÍ
+
+   Học bổng, giảm cho anh chị em cùng học, giảm theo hoàn cảnh: chuyện
+   có thật hằng tháng, và tới bản 9.90 không có đường nào ghi. Nên cách
+   duy nhất là một trong hai đường sai:
+
+     sửa thẳng phaiThu   — xoá mất cam kết gốc. Sang năm không ai trả
+                           lời được "đáng lẽ đóng bao nhiêu, được giảm
+                           bao nhiêu, ai duyệt".
+     ghi một phiếu giả   — thổi phồng TIỀN THỰC THU. Sổ báo đã thu một
+                           khoản chưa từng vào tài khoản nào, và nó lọt
+                           thẳng vào bản đối chiếu sao kê.
+
+   Nên: một dòng riêng. Cam kết ở kyThu giữ nguyên, công nợ trừ đi phần
+   đã duyệt. Cùng một hình với hoàn tiền — người đề xuất khác người
+   duyệt, và phải ghi GIẢM THEO LUẬT NÀO.
+   ═══════════════════════════════════════════════════════════════ */
+
+const MG_LOAI = ['hocBong', 'anhChiEm', 'hoanCanh', 'khuyenMai', 'khac'];
+
+export async function deXuatMienGiam(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 7) return {ok: false, code: 'NOPERM',
+    error: 'Từ Coach trở lên mới đề xuất miễn giảm được.'};
+
+  const m = y.mienGiam || {};
+  const tien = Number(m.soTien || 0);
+  const loai = String(m.loai || '').trim();
+  const luat = String(m.theoLuat || '').trim();
+  const lyDo = String(m.lyDo || '').trim();
+
+  if (!(tien > 0)) return {ok: false, error: 'Số tiền miễn giảm phải lớn hơn 0.'};
+  if (MG_LOAI.indexOf(loai) < 0) return {ok: false,
+    error: 'Loại miễn giảm phải là một trong: ' + MG_LOAI.join(', ') + '.'};
+  if (!luat) return {ok: false,
+    error: 'Phải ghi GIẢM THEO LUẬT NÀO — nguyên văn quy định hoặc quyết định ' +
+           'cho giảm. Một khoản giảm không dẫn được về luật nào là một khoản ' +
+           'do một người quyết, và người ấy sẽ phải trả lời một mình.'};
+  if (!lyDo) return {ok: false, error: 'Chưa nói vì sao giảm cho nhà này.'};
+
+  const ky = await db.prepare('SELECT * FROM kyThu WHERE id = ?')
+    .bind(String(m.idKy || '')).first();
+  if (!ky) return {ok: false, error: 'Không tìm thấy kỳ thu này.'};
+
+  /* ── KHÔNG GIẢM QUÁ PHẦN CÒN LẠI CỦA KỲ ──
+
+     Giảm quá thì công nợ âm, và một công nợ âm chảy vào mọi bản kê:
+     tổng nợ của cả hệ nhỏ đi bằng đúng số ấy, và không dòng nào chỉ ra
+     chỗ nó nhỏ đi. Đây cũng là cổng chặn chuyện dùng miễn giảm để rút
+     tiền — giảm nhiều hơn phải thu rồi hoàn phần chênh. */
+  const con = await conNoCuaKy(db, ky.maKhachHang, Number(ky.tang), Number(ky.ky));
+  if (tien > con)
+    return {ok: false, code: 'GIAMQUA',
+      error: 'Kỳ này chỉ còn ' + dinhDang(con) + ' chưa đóng, mà đề xuất giảm ' +
+        dinhDang(tien) + '. Giảm quá phần còn lại là dựng ra một công nợ âm.'};
+
+  const id = 'MG-' + tokenMoi().slice(0, 14);
+  await db.prepare(
+    'INSERT INTO mienGiam (id,maKhachHang,idKy,soTien,loai,theoLuat,lyDo,' +
+    "nguoiDeXuat,deXuatLuc,trangThai) VALUES (?,?,?,?,?,?,?,?,?,'choDuyet')"
+  ).bind(id, ky.maKhachHang, ky.id, tien, loai, luat.slice(0, 1000),
+    lyDo.slice(0, 1000), hoSo.u, new Date().toISOString()).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'MIENGIAM_DEXUAT',
+    doiTuong: id, chiTiet: ky.maKhachHang + ' · kỳ ' + ky.ky + ' tầng ' + ky.tang +
+      ' · ' + dinhDang(tien) + ' · ' + loai});
+  return {ok: true, id, soTien: tien, conLaiCuaKy: con, trangThai: 'choDuyet'};
+}
+
+export async function duyetMienGiam(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, code: 'NOPERM', error: 'Chỉ R01–R03 duyệt được miễn giảm.'};
+
+  const mg = await db.prepare('SELECT * FROM mienGiam WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!mg) return {ok: false, error: 'Không tìm thấy đề xuất miễn giảm này.'};
+
+  if (String(mg.nguoiDeXuat) === String(hoSo.u))
+    return {ok: false, code: 'TUDUYET',
+      error: 'Người đề xuất miễn giảm không tự duyệt được.'};
+
+  /* Kiểm LẠI ở lúc duyệt, không tin phép kiểm lúc đề xuất: giữa hai
+     mốc ấy có thể đã có một khoản miễn giảm khác được duyệt cho cùng
+     kỳ, hoặc một phiếu thu vừa vào. Hai đề xuất mỗi cái vừa đủ, cộng
+     lại thì vượt — và không kiểm lại thì cả hai cùng lọt. */
+  if (y.duyet !== false) {
+    const ky = await db.prepare('SELECT * FROM kyThu WHERE id = ?').bind(mg.idKy).first();
+    const con = ky ? await conNoCuaKy(db, ky.maKhachHang, Number(ky.tang), Number(ky.ky)) : 0;
+    if (Number(mg.soTien) > con)
+      return {ok: false, code: 'GIAMQUA',
+        error: 'Kỳ này giờ chỉ còn ' + dinhDang(con) + ' chưa đóng, mà khoản giảm là ' +
+          dinhDang(mg.soTien) + '. Từ lúc đề xuất tới giờ đã có khoản khác vào kỳ này.'};
+  }
+
+  const duyet = y.duyet !== false;
+  const gio = new Date().toISOString();
+  const r = await db.prepare(
+    'UPDATE mienGiam SET trangThai = ?, nguoiDuyet = ?, duyetLuc = ? ' +
+    "WHERE id = ? AND trangThai = 'choDuyet'"
+  ).bind(duyet ? 'daDuyet' : 'tuChoi', hoSo.u, gio, mg.id).run();
+  if (!((r && r.meta && r.meta.changes) || 0))
+    return {ok: false, error: 'Đề xuất này đã được xử lý rồi.'};
+
+  /* Miễn giảm làm giảm doanh thu của kỳ mà KỲ THU tới hạn, nên bút
+     toán trỏ về mốc ấy — không trỏ về hôm nay. */
+  let dc = null;
+  if (duyet) {
+    const ky = await db.prepare('SELECT hanLuc FROM kyThu WHERE id = ?').bind(mg.idKy).first();
+    if (ky && ky.hanLuc) dc = await ghiDieuChinh(db, {
+      lucGoc: ky.hanLuc, loai: 'duyetMienGiam', idChungTu: mg.id,
+      maKhachHang: mg.maKhachHang, soTien: -Number(mg.soTien), boi: hoSo.u,
+      dienGiai: 'Miễn giảm duyệt cho một kỳ đã vào sổ kỳ đã chốt · ' +
+        String(mg.lyDo).slice(0, 200)});
+  }
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
+    viec: duyet ? 'MIENGIAM_DUYET' : 'MIENGIAM_TUCHOI',
+    doiTuong: mg.id, chiTiet: mg.maKhachHang + ' · ' + dinhDang(mg.soTien)});
+  return {ok: true, trangThai: duyet ? 'daDuyet' : 'tuChoi',
+    dieuChinh: dc ? {id: dc.id, kyBiAnhHuong: dc.kyBiAnhHuong} : undefined};
+}
+
+export async function dsMienGiam(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 5) return {ok: false, code: 'NOPERM',
+    error: 'Từ R01–R05 mới xem được sổ miễn giảm của cả hệ.'};
+
+  const loc = [], gt = [];
+  if (y.maKhachHang) { loc.push('maKhachHang = ?'); gt.push(String(y.maKhachHang)); }
+  if (y.trangThai)   { loc.push('trangThai = ?');   gt.push(String(y.trangThai)); }
+  if (y.loai)        { loc.push('loai = ?');        gt.push(String(y.loai)); }
+
+  const r = await db.prepare(
+    'SELECT * FROM mienGiam' + (loc.length ? ' WHERE ' + loc.join(' AND ') : '') +
+    ' ORDER BY deXuatLuc DESC LIMIT 500'
+  ).bind(...gt).all();
+  const ds = r.results || [];
+
+  const theoLoai = {};
+  for (const x of ds) {
+    if (x.trangThai !== 'daDuyet') continue;
+    const t = theoLoai[x.loai] || (theoLoai[x.loai] = {loai: x.loai, so: 0, tien: 0});
+    t.so++; t.tien += Number(x.soTien);
+  }
+
+  return {ok: true, so: ds.length, ds,
+    tongDaDuyet: ds.filter(x => x.trangThai === 'daDuyet')
+      .reduce((a, x) => a + Number(x.soTien), 0),
+    choDuyet: ds.filter(x => x.trangThai === 'choDuyet')
+      .reduce((a, x) => a + Number(x.soTien), 0),
+    theoLoai: Object.values(theoLoai).sort((a, b) => b.tien - a.tien),
+    loaiCoThe: MG_LOAI};
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NHẮC THU
+
+   dsQuaHan trả về những nhà đang nợ. Người đi đòi cần câu tiếp theo, và
+   tới bản 9.90 không chỗ nào trả lời: nhà này đã nhắc mấy lần, lần cuối
+   bao giờ, họ nói gì, có hẹn ngày nào không.
+
+   Không có bảng này thì câu trả lời nằm trong đầu người phụ trách, và
+   ngày họ nghỉ là ngày câu trả lời biến mất. Nhà đã hứa trả tuần sau
+   vẫn bị gọi như nhà chưa ai liên lạc — đó là cách nhanh nhất làm một
+   gia đình đang khó khăn thấy mình bị đòi nợ.
+
+   VÀ ĐÂY LÀ CHỖ LUẬT "LÀM VIỆC TRÊN HỆ THỐNG" CÓ HIỆU LỰC THẬT. Coach
+   và Tư vấn không được mang thông tin của khách ra làm việc riêng. Một
+   lượt nhắc ghi ở đây là một lượt làm việc đúng quy định; không ghi thì
+   không có gì chứng minh nó đã xảy ra trên hệ thống.
+   ═══════════════════════════════════════════════════════════════ */
+
+const NT_KENH = ['goiDien', 'nhanTin', 'email', 'gapMat'];
+const NT_KETQUA = ['huaTra', 'xinKhatNo', 'khongLienLac', 'tuChoi', 'daTra'];
+
+export async function ghiNhacThu(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 11) return {ok: false, code: 'NOPERM',
+    error: 'Vai này không ghi được lượt nhắc thu.'};
+
+  const n = y.nhac || {};
+  const nha = String(n.maKhachHang || '').trim();
+  const kenh = String(n.kenh || '').trim();
+  const ketQua = String(n.ketQua || '').trim();
+  const noiDung = String(n.noiDung || '').trim();
+
+  if (!nha) return {ok: false, error: 'Thiếu mã khách hàng.'};
+  if (NT_KENH.indexOf(kenh) < 0) return {ok: false,
+    error: 'Kênh nhắc phải là một trong: ' + NT_KENH.join(', ') + '.'};
+  if (NT_KETQUA.indexOf(ketQua) < 0) return {ok: false,
+    error: 'Kết quả phải là một trong: ' + NT_KETQUA.join(', ') + '.'};
+  if (noiDung.length < 5) return {ok: false,
+    error: 'Chưa ghi nhà nói gì. Một lượt nhắc không có nội dung thì lượt sau ' +
+           'người khác gọi lại từ đầu, và gia đình phải kể lại câu chuyện của họ.'};
+
+  const hs = await db.prepare('SELECT maKhachHang FROM hoSoKhach WHERE maKhachHang = ?')
+    .bind(nha).first();
+  if (!hs) return {ok: false, error: 'Không tìm thấy tệp khách hàng này.'};
+
+  /* HẸN TRẢ PHẢI Ở TƯƠNG LAI. Một cái hẹn nằm ở quá khứ thì không phải
+     hẹn, và nó sẽ làm nhà ấy biến mất khỏi mọi bộ lọc "đang có hẹn". */
+  let hen = String(n.henLuc || '').trim() || null;
+  if (hen) {
+    if (isNaN(new Date(hen).getTime()))
+      return {ok: false, error: 'Ngày hẹn trả không đọc được.'};
+    if (new Date(hen).getTime() < Date.now() - 86400000)
+      return {ok: false, error: 'Ngày hẹn trả nằm ở quá khứ.'};
+  }
+  if (ketQua === 'huaTra' && !hen)
+    return {ok: false,
+      error: 'Nhà hứa trả thì phải ghi HẸN NGÀY NÀO. Một lời hứa không có ngày ' +
+             'thì không theo dõi được, và tuần sau lại gọi hỏi đúng câu cũ.'};
+
+  const id = 'NT-' + tokenMoi().slice(0, 14);
+  const luc = new Date().toISOString();
+  await db.prepare(
+    'INSERT INTO nhacThu (id,maKhachHang,idKy,kenh,noiDung,ketQua,henLuc,boi,luc) ' +
+    'VALUES (?,?,?,?,?,?,?,?,?)'
+  ).bind(id, nha, String(n.idKy || '') || null, kenh, noiDung.slice(0, 2000),
+    ketQua, hen, hoSo.u, luc).run();
+
+  const dem = await db.prepare('SELECT COUNT(*) c FROM nhacThu WHERE maKhachHang = ?')
+    .bind(nha).first();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'NHACTHU_GHI',
+    doiTuong: nha, chiTiet: kenh + ' · ' + ketQua + (hen ? ' · hẹn ' + hen.slice(0, 10) : '')});
+  return {ok: true, id, laLanThu: Number(dem.c), luc};
+}
+
+export async function lichSuNhacThu(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 11) return {ok: false, code: 'NOPERM', error: 'Vai này không xem được sổ nhắc thu.'};
+
+  const nha = String(y.maKhachHang || '').trim();
+  if (!nha) return {ok: false, error: 'Thiếu mã khách hàng.'};
+
+  const r = await db.prepare(
+    'SELECT * FROM nhacThu WHERE maKhachHang = ? ORDER BY luc DESC LIMIT 100'
+  ).bind(nha).all();
+  const ds = r.results || [];
+
+  return {ok: true, maKhachHang: nha, soLan: ds.length, ds,
+    henGanNhat: (ds.filter(x => x.henLuc && new Date(x.henLuc) >= new Date())
+      .sort((a, b) => a.henLuc < b.henLuc ? -1 : 1)[0] || {}).henLuc};
+}
+
+/* ── NHÀ ĐẾN HẸN MÀ CHƯA TRẢ ──
+
+   Danh sách quá hạn nói ai đang nợ; bản này nói ai đã HỨA và đã tới
+   ngày. Hai việc khác nhau: một nhà đang nợ mà hẹn tuần sau thì chưa
+   phải gọi, còn một nhà hẹn hôm qua mà chưa trả thì phải gọi hôm nay. */
+export async function denHenChuaTra(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 5) return {ok: false, code: 'NOPERM',
+    error: 'Từ R01–R05 mới xem được danh sách đến hẹn của cả hệ.'};
+
+  const bay = new Date().toISOString();
+  const r = await db.prepare(
+    'SELECT n.maKhachHang, n.henLuc, n.noiDung, n.boi, n.luc ' +
+    'FROM nhacThu n WHERE n.henLuc IS NOT NULL AND n.henLuc <= ? ' +
+    "  AND n.ketQua = 'huaTra' " +
+    /* Chỉ lấy lượt nhắc MỚI NHẤT của mỗi nhà: nhà đã hẹn ba lần thì ba
+       dòng cũ không còn là việc phải làm, chỉ lời hứa gần nhất mới là. */
+    '  AND n.luc = (SELECT MAX(x.luc) FROM nhacThu x WHERE x.maKhachHang = n.maKhachHang) ' +
+    /* Và bỏ nhà đã trả xong: còn nợ mới còn là việc. */
+    '  AND EXISTS (SELECT 1 FROM kyThu k LEFT JOIN phieuThu p ON p.idKy = k.id ' +
+    '     WHERE k.maKhachHang = n.maKhachHang GROUP BY k.id ' +
+    "     HAVING COALESCE(SUM(CASE WHEN p.trangThai='daDuyet' THEN p.soTien END),0) " +
+    '       + ' + TRU_MIEN_GIAM + ' < k.phaiThu) ' +
+    'ORDER BY n.henLuc LIMIT 500'
+  ).bind(bay).all();
+
+  const ds = (r.results || []).map(x => ({
+    maKhachHang: x.maKhachHang, henLuc: x.henLuc, noiDung: x.noiDung,
+    nguoiNhac: x.boi, nhacLuc: x.luc,
+    treNgay: Math.floor((Date.now() - new Date(x.henLuc).getTime()) / 86400e3)}));
+
+  return {ok: true, so: ds.length, ds,
+    vi: 'Nhà ĐÃ HỨA và đã tới ngày mà vẫn còn nợ. Khác với danh sách quá hạn: ' +
+        'nhà đang nợ mà hẹn tuần sau thì chưa phải gọi.'};
 }

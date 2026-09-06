@@ -408,6 +408,143 @@ CREATE UNIQUE INDEX IF NOT EXISTS ix_hh_mot
 CREATE INDEX IF NOT EXISTS ix_hh_tt ON hoaHongTra (trangThai, sinhLuc);
 
 -- ═════════════════════════════════════════════════════════════
+--  SỔ CHI — NỬA CÒN LẠI CỦA CUỐN SỔ
+--
+--  Tới bản 9.90 hệ này chỉ có tiền VÀO. Bản kê kế toán phải ghi thẳng
+--  ra rằng nó không cộng được một dòng lợi nhuận nào, vì chi phí vận
+--  hành không nằm ở đâu cả.
+--
+--  Một cuốn sổ chỉ có một nửa thì mọi câu hỏi thật đều không trả lời
+--  được: tháng này lãi hay lỗ, tầng nào nuôi được chính nó, thêm một
+--  Coach thì hoà vốn ở bao nhiêu nhà. Ba câu ấy là ba câu quyết định
+--  chiến lược, và không câu nào trả lời được bằng doanh thu.
+--
+--  HOÁ ĐƠN có hay không là một cột RIÊNG, không phải một ghi chú. Khoản
+--  chi không có hoá đơn vẫn là tiền đã ra thật — vẫn phải vào sổ chi —
+--  nhưng nó đứng khác khi tính thuế. Gộp hai loại vào một con số là
+--  buộc kế toán mở lại cơ sở dữ liệu để tách ra, và lúc ấy bản kê vô
+--  dụng.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS chiPhi (
+  id          TEXT PRIMARY KEY,
+  khoanMuc    TEXT NOT NULL,      -- danh sách trắng, khai ở chi-tieu.js
+  soTien      REAL NOT NULL,
+  ngayChi     TEXT NOT NULL,      -- mốc TIỀN RA, không phải mốc nhập liệu
+  hinhThuc    TEXT NOT NULL,      -- chuyenKhoan · tienMat · the
+  nhaCungCap  TEXT,
+  coHoaDon    INTEGER NOT NULL DEFAULT 0,
+  maHoaDon    TEXT,
+  minhChung   TEXT,
+  dienGiai    TEXT NOT NULL,
+  nguoiDeXuat TEXT NOT NULL,
+  deXuatLuc   TEXT NOT NULL,
+  nguoiDuyet  TEXT,               -- NGƯỜI KHÁC người đề xuất
+  duyetLuc    TEXT,
+  trangThai   TEXT NOT NULL DEFAULT 'choDuyet',  -- choDuyet · daDuyet · tuChoi · huy
+  huyLuc      TEXT,
+  lyDo        TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_cp_ngay ON chiPhi (ngayChi DESC);
+CREATE INDEX IF NOT EXISTS ix_cp_tt   ON chiPhi (trangThai, ngayChi);
+CREATE INDEX IF NOT EXISTS ix_cp_muc  ON chiPhi (khoanMuc, ngayChi);
+
+-- ═════════════════════════════════════════════════════════════
+--  MIỄN GIẢM — VÌ SAO KHÔNG SỬA THẲNG phaiThu
+--
+--  Học bổng, giảm cho anh chị em cùng học, giảm theo hoàn cảnh: đều là
+--  chuyện có thật hằng tháng. Tới 9.90 không có đường nào ghi, nên cách
+--  duy nhất là hoặc sửa phaiThu của kỳ, hoặc ghi một phiếu thu giả.
+--
+--  Cả hai đều hỏng, và hỏng theo hai kiểu khác nhau:
+--
+--    · sửa phaiThu  — xoá mất cam kết gốc. Sang năm không ai trả lời
+--                     được "nhà này đáng lẽ đóng bao nhiêu, được giảm
+--                     bao nhiêu, ai duyệt".
+--    · phiếu thu giả — thổi phồng TIỀN THỰC THU. Sổ báo đã thu một
+--                     khoản chưa từng vào tài khoản nào, và nó lọt
+--                     thẳng vào bản đối chiếu sao kê.
+--
+--  Nên: một dòng riêng. Cam kết gốc ở kyThu giữ nguyên; công nợ trừ đi
+--  phần miễn giảm ĐÃ DUYỆT.
+--
+--  Miễn giảm có hiệu lực từ LÚC DUYỆT, không lùi ngược. Một khoản giảm
+--  duyệt hôm nay không được làm đổi bản báo cáo quý trước — cùng một
+--  luật với mốc huỷ hoa hồng.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS mienGiam (
+  id          TEXT PRIMARY KEY,
+  maKhachHang TEXT NOT NULL,
+  idKy        TEXT NOT NULL,      -- trỏ kyThu.id — miễn giảm gắn vào MỘT kỳ
+  soTien      REAL NOT NULL,
+  loai        TEXT NOT NULL,      -- hocBong · anhChiEm · hoanCanh · khuyenMai · khac
+  theoLuat    TEXT NOT NULL,      -- nguyên văn luật hay quyết định cho giảm
+  lyDo        TEXT NOT NULL,
+  nguoiDeXuat TEXT NOT NULL,
+  deXuatLuc   TEXT NOT NULL,
+  nguoiDuyet  TEXT,
+  duyetLuc    TEXT,
+  trangThai   TEXT NOT NULL DEFAULT 'choDuyet'
+);
+
+CREATE INDEX IF NOT EXISTS ix_mg_ky  ON mienGiam (idKy, trangThai);
+CREATE INDEX IF NOT EXISTS ix_mg_nha ON mienGiam (maKhachHang, deXuatLuc DESC);
+CREATE INDEX IF NOT EXISTS ix_mg_tt  ON mienGiam (trangThai, duyetLuc);
+
+-- ═════════════════════════════════════════════════════════════
+--  NHẮC THU — DANH SÁCH QUÁ HẠN MÀ KHÔNG AI LÀM ĐƯỢC
+--
+--  dsQuaHan trả về những nhà đang nợ. Nhưng người đi đòi cần câu tiếp
+--  theo, và câu ấy không có chỗ nào trả lời: nhà này đã nhắc mấy lần,
+--  lần cuối bao giờ, họ nói gì, có hẹn ngày nào không.
+--
+--  Không có bảng này thì mỗi người phụ trách giữ câu trả lời trong đầu
+--  mình, và ngày họ nghỉ là ngày câu trả lời biến mất.
+--
+--  VÀ ĐÂY LÀ CHỖ LUẬT "LÀM VIỆC TRÊN HỆ THỐNG" CÓ HIỆU LỰC THẬT.
+--  Coach và Tư vấn không được lấy thông tin cá nhân của khách ra làm
+--  việc riêng. Một lượt nhắc thu ghi ở đây là một lượt làm việc đúng
+--  quy định; không ghi thì không có bằng chứng nào rằng nó đã xảy ra
+--  trên hệ thống.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS nhacThu (
+  id          TEXT PRIMARY KEY,
+  maKhachHang TEXT NOT NULL,
+  idKy        TEXT,
+  kenh        TEXT NOT NULL,      -- goiDien · nhanTin · email · gapMat
+  noiDung     TEXT NOT NULL,
+  ketQua      TEXT NOT NULL,      -- huaTra · khongLienLac · xinKhatNo · tuChoi · daTra
+  henLuc      TEXT,               -- nhà hẹn trả ngày nào, nếu có hẹn
+  boi         TEXT NOT NULL,
+  luc         TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS ix_nt_nha ON nhacThu (maKhachHang, luc DESC);
+CREATE INDEX IF NOT EXISTS ix_nt_hen ON nhacThu (henLuc);
+
+-- ═════════════════════════════════════════════════════════════
+--  CHỐT KÉT — TIỀN MẶT LÀ CHỖ DUY NHẤT MẤT MÀ KHÔNG DÒNG NÀO BIẾT
+--
+--  Chuyển khoản có sao kê ngân hàng đứng ngoài làm chứng: sổ nói thu
+--  mười triệu mà ngân hàng nói tám thì lệch lộ ra. Tiền mặt không có
+--  ai đứng ngoài cả — sổ nói bao nhiêu thì chỉ có sổ nói.
+--
+--  Nên phải ĐẾM. Mỗi ngày một dòng: sổ nói bao nhiêu, đếm thật được
+--  bao nhiêu, lệch bao nhiêu. Lệch khác 0 thì bắt buộc có lý do.
+--
+--  Một két không bao giờ lệch là một két chưa bao giờ được đếm.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS chotKet (
+  ngay     TEXT PRIMARY KEY,       -- ngày giờ Việt Nam
+  theoSo   REAL NOT NULL,
+  demThuc  REAL NOT NULL,
+  chenh    REAL NOT NULL,
+  lyDo     TEXT,
+  boi      TEXT NOT NULL,
+  luc      TEXT NOT NULL
+);
+
+-- ═════════════════════════════════════════════════════════════
 --  SỔ CHỐT — VÌ SAO MỘT BÁO CÁO CẦN ĐƯỢC ĐÓNG LẠI
 --
 --  Mọi con số ở trên đều tính bằng phép cộng chạy trên sổ SỐNG. Chạy
@@ -445,6 +582,9 @@ CREATE TABLE IF NOT EXISTS soChot (
   soKyToiHan  INTEGER NOT NULL DEFAULT 0,
   hhSinh      REAL NOT NULL DEFAULT 0,
   hhTra       REAL NOT NULL DEFAULT 0,
+  chi         REAL NOT NULL DEFAULT 0,   -- chi phí vận hành đã duyệt trong tuần
+  soChungTuChi INTEGER NOT NULL DEFAULT 0,
+  mienGiam    REAL NOT NULL DEFAULT 0,
   conNoCuoiKy REAL NOT NULL DEFAULT 0,   -- luỹ kế tới cuối kỳ, không phải riêng kỳ
   nhaMoi      INTEGER NOT NULL DEFAULT 0,
   luotVuotTang INTEGER NOT NULL DEFAULT 0,
