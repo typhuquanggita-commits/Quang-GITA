@@ -1861,6 +1861,108 @@ bao(!duyetSom.than.ok && duyetSom.than.code === 'CHUADUMOC',
   'MỐC ĐỌC LẠI Ở LÚC DUYỆT — khoản 400 nghìn ghi đầu tuần nay phải theo mốc của cả tuần',
   'duyệt theo mốc cũ là để một tuần 11 triệu đi qua cổng của một tuần 0 đồng');
 
+/* ── PHÒNG TÀI CHÍNH TRỰC THUỘC AI · CHỐT 9.98 ──
+
+   "Phòng tài chính trực thuộc quản lý của Super Admin, Giám đốc, Admin
+   hệ thống (quyền cho Giám đốc, Admin hệ thống do Super Admin cấp)." */
+bao(!(await goi({fn:'capQuyenTaiChinh', token:tkGD, u:'giamdoc@gita365.vn',
+  username:'quanly2@gita365.vn', chucNang:'keToanThu', lyDo:'thử'})).than.ok,
+  'GIÁM ĐỐC CHƯA ĐƯỢC CẤP QUYỀN THÌ CHƯA QUẢN LÝ ĐƯỢC PHÒNG');
+
+bao(!(await goi({fn:'capQuyenTaiChinh', token:tkGD, u:'giamdoc@gita365.vn',
+  username:'giamdoc@gita365.vn', chucNang:'quanLyPhong', lyDo:'thử'})).than.ok,
+  'và KHÔNG tự cấp quyền quản lý phòng cho chính mình');
+
+const capQL = await goi({fn:'capQuyenTaiChinh', token:tkSA, u:'superadmin@gita365.vn',
+  username:'giamdoc@gita365.vn', chucNang:'quanLyPhong',
+  lyDo:'Giám đốc chịu trách nhiệm tăng trưởng nên quản phòng tiền của mình'});
+bao(capQL.than.ok, 'SUPER ADMIN CẤP QUYỀN QUẢN LÝ PHÒNG CHO GIÁM ĐỐC');
+
+const gdCap = await goi({fn:'capQuyenTaiChinh', token:tkGD, u:'giamdoc@gita365.vn',
+  username:'quanly2@gita365.vn', chucNang:'keToanThu',
+  lyDo:'Bổ sung nhân sự đầu thu'});
+bao(gdCap.than.ok,
+  'GIÁM ĐỐC ĐƯỢC CẤP RỒI THÌ CẤP ĐƯỢC VỊ TRÍ TRONG PHÒNG',
+  'ba bậc: Super Admin đương nhiên · Giám đốc và Admin hệ thống khi được cấp · còn lại không');
+
+bao(!(await goi({fn:'capQuyenTaiChinh', token:tkGD, u:'giamdoc@gita365.vn',
+  username:'quanly2@gita365.vn', chucNang:'quanLyPhong', lyDo:'thử'})).than.ok,
+  'NHƯNG GIÁM ĐỐC KHÔNG CẤP TIẾP QUYỀN QUẢN LÝ PHÒNG CHO NGƯỜI KHÁC — chỉ Super Admin',
+  'cho người được cấp đi cấp tiếp là dựng một dây chuyền tự nhân lên mà đầu dây không ai nắm');
+
+bao(!(await goi({fn:'capQuyenTaiChinh', token:tkSA, u:'superadmin@gita365.vn',
+  username:'superadmin@gita365.vn', chucNang:'keToanTruong', lyDo:'thử', mocToiDa:'C6'})).than.ok,
+  'KHÔNG AI TỰ CẤP CHO MÌNH — kể cả Super Admin',
+  'cổng này sinh ra để đứng giữa một người với tiền; tự cấp là tự dỡ nó đi');
+
+/* ── NỐI SỔ VỚI TÀI KHOẢN NGÂN HÀNG · CHỐT 9.98 ── */
+console.log('\n15e · NGÂN HÀNG VÀ THÔNG BÁO');
+env.GITA_KHOA_NGANHANG = 'khoa-ngan-hang-thu-nghiem';
+
+bao(!(await goi({fn:'nganHangBao', khoa:'sai-khoa',
+  giaoDich:{soTaiKhoan:'0011', maGiaoDich:'FT1', huong:'vao', soTien:100000}})).than.ok,
+  'CỬA NGÂN HÀNG XÁC THỰC BẰNG KHOÁ RIÊNG — sai khoá thì không vào được');
+
+/* Phiếu chuyển khoản có mã tham chiếu, rồi ngân hàng báo đúng mã ấy. */
+const ptNH = await goi({fn:'ghiPhieuThu', token:tkSA, u:'superadmin@gita365.vn',
+  phieu:{maKhachHang:'GITA-BC01', soTien:2500000, hinhThuc:'chuyenKhoan',
+    maThamChieu:'FT260906AAA'}});
+const nhVao = await goi({fn:'nganHangBao', khoa:'khoa-ngan-hang-thu-nghiem',
+  giaoDich:{soTaiKhoan:'0011', maGiaoDich:'FT260906AAA', huong:'vao',
+    soTien:2500000, noiDung:'GITA-BC01 dong hoc phi'}});
+bao(nhVao.than.ok && nhVao.than.daKhop && nhVao.than.idPhieuThu === ptNH.than.id,
+  'NGÂN HÀNG BÁO VỀ THÌ TỰ KHỚP VỚI PHIẾU THU THEO MÃ THAM CHIẾU',
+  'sao kê ngân hàng là thứ DUY NHẤT trong hệ này đứng NGOÀI — không ai bên trong sửa được');
+
+const guiLai = await goi({fn:'nganHangBao', khoa:'khoa-ngan-hang-thu-nghiem',
+  giaoDich:{soTaiKhoan:'0011', maGiaoDich:'FT260906AAA', huong:'vao', soTien:2500000}});
+bao(guiLai.than.ok && guiLai.than.daCo,
+  'GỬI LẠI CÙNG MỘT GIAO DỊCH THÌ KHÔNG GHI THÊM — webhook thử lại là chuyện thường',
+  'báo lỗi thì ngân hàng thử mãi; ghi thêm thì sổ có một khoản tiền chưa từng có');
+
+/* KHÔNG TỰ KHỚP THEO SỐ TIỀN. Hai nhà cùng đóng 500 nghìn trong một
+   ngày là chuyện thường, và khớp nhầm là ghi tiền nhà này vào nợ nhà kia. */
+await goi({fn:'ghiPhieuThu', token:tkSA, u:'superadmin@gita365.vn',
+  phieu:{maKhachHang:'GITA-BC01', soTien:500000, hinhThuc:'chuyenKhoan'}});
+const nhKhongMa = await goi({fn:'nganHangBao', khoa:'khoa-ngan-hang-thu-nghiem',
+  giaoDich:{soTaiKhoan:'0011', maGiaoDich:'FT260906BBB', huong:'vao', soTien:500000}});
+bao(nhKhongMa.than.ok && !nhKhongMa.than.daKhop,
+  'KHÔNG TỰ KHỚP THEO SỐ TIỀN — hai nhà cùng đóng 500 nghìn một ngày là chuyện thường',
+  'khớp nhầm là ghi tiền nhà này vào nợ nhà kia, và không ai nhìn ra vì tổng vẫn đúng');
+
+/* ĐỐI CHIẾU: HAI PHÍA, HAI CÂU CHUYỆN KHÁC NHAU. */
+const dcNH = await goi({fn:'doiChieuNganHang', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'thang', moc:'2026-09'});
+bao(dcNH.than.ok && dcNH.than.tienVaoKhongCoPhieu.so >= 1 &&
+    dcNH.than.phieuKhongCoTienVao.so >= 1 &&
+    /mất lòng khách/.test(dcNH.than.tienVaoKhongCoPhieu.vi) &&
+    /mất tiền/.test(dcNH.than.phieuKhongCoTienVao.vi),
+  'ĐỐI CHIẾU NÊU HAI PHÍA RIÊNG — tiền vào không có phiếu là chỗ MẤT LÒNG KHÁCH, phiếu không có tiền vào là chỗ MẤT TIỀN',
+  'gộp hai cái vào một con số lệch là bỏ mất đúng phần nói cho người đọc biết phải đi làm gì');
+
+bao(!(await goi({fn:'khopGiaoDich', token:tkSA, u:'superadmin@gita365.vn',
+  id:nhKhongMa.than.id, idPhieuThu:ptNH.than.id})).than.ok,
+  'khớp tay hai số tiền KHÁC NHAU thì từ chối — lệch thì tách phiếu trước');
+
+/* THÔNG BÁO LÊN GIÁM ĐỐC VÀ SUPER ADMIN. */
+const tbGD = await goi({fn:'hopThongBao', token:tkGD, u:'giamdoc@gita365.vn'});
+const tbSA = await goi({fn:'hopThongBao', token:tkSA, u:'superadmin@gita365.vn'});
+bao(tbGD.than.ok && tbSA.than.ok && tbGD.than.so > 0 && tbSA.than.so > 0 &&
+    tbGD.than.ds.some(x => x.loai === 'CHI_MOC_CHU_KY'),
+  'KHOẢN CHI QUA MỐC CHU KỲ BÁO LÊN CẢ GIÁM ĐỐC LẪN SUPER ADMIN',
+  tbGD.than.so + ' thông báo cho Giám đốc · ' + tbSA.than.so + ' cho Super Admin');
+
+const mot = tbGD.than.ds[0];
+await goi({fn:'danhDauDaDoc', token:tkGD, u:'giamdoc@gita365.vn', id:mot.id});
+const tbSA2 = await goi({fn:'hopThongBao', token:tkSA, u:'superadmin@gita365.vn'});
+bao(tbSA2.than.so === tbSA.than.so,
+  'GIÁM ĐỐC ĐỌC RỒI KHÔNG LÀM SUPER ADMIN THÔI THẤY — hai dòng riêng, không phải một dòng gửi "cấp trên"',
+  'gộp một dòng là dựng ra chuyện người này tưởng người kia đã xử lý');
+
+bao(!(await goi({fn:'hopThongBao', token:tkCoach, u:'coach@gita365.vn'})).than.ds
+      .some(x => x.loai === 'CHI_MOC_CHU_KY'),
+  'và Coach không thấy thông báo tài chính nào');
+
 /* ── BÁO DÒNG DOANH THU VỀ HÒM THƯ CHỦ HỆ · CHỐT 9.96 ── */
 console.log('\n15d · BÁO DÒNG DOANH THU');
 env.GITA_THU_DOANH_THU = 'chuhe@vidu.vn';

@@ -30,6 +30,7 @@
 import { Kho, tokenMoi } from './nen.js';
 import { GIA_TANG } from './tai-chinh.js';
 import { ghiDieuChinh, dungKy } from './bao-cao.js';
+import { baoLenCapCao } from './ngan-hang.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
              R09:9,R10:10,R11:11,R12:12,R13:13,R14:14,R15:15};
@@ -315,8 +316,42 @@ const VI_TRI_TC = {
     dau: 'ca-hai',
     viec: 'Cả hai đầu tiền, cộng quyền xác nhận tổng chi chu kỳ tới MỐC ĐƯỢC ' +
           'CẤP. Đây là chỗ chủ hệ chuyển quyền khi dòng tiền lớn.'
+  },
+  quanLyPhong: {
+    ten: 'Quản lý phòng tài chính',
+    dau: 'quan-ly',
+    viec: 'Cấp và thu hồi vị trí trong phòng tài chính. KHÔNG tự nó cho quyền ' +
+          'ký một khoản tiền nào — quản người, không quản tiền.'
   }
 };
+
+/* ══ PHÒNG TÀI CHÍNH TRỰC THUỘC AI ══
+
+   Chủ hệ chốt bản 9.98: "Phòng tài chính này trực thuộc quản lý của
+   Super Admin, Giám đốc, Admin hệ thống (quyền cho Giám đốc, Admin hệ
+   thống do Super Admin cấp)."
+
+   Nên ba bậc, không phải một:
+
+     R01 Super Admin  — quản lý phòng ĐƯƠNG NHIÊN, không ai cấp cho
+     R02, R03         — quản lý được KHI Super Admin cấp quyền quanLyPhong
+     mọi vai khác     — không
+
+   Bản 9.97 tôi cho R01 và R02 quyền đương nhiên và chặn hẳn R03. Sai
+   hai đầu: R02 không nên có sẵn quyền ấy mà không ai cấp, còn Giám đốc
+   thì chính là người chịu trách nhiệm tăng trưởng và phải quản được
+   phòng tiền của mình.
+
+   ══ VÀ MỘT LUẬT KHÔNG ĐỔI: KHÔNG AI TỰ CẤP CHO MÌNH ══
+
+   Người quản lý phòng cấp được vị trí cho người khác, nhưng KHÔNG cấp
+   được cho chính mình. Tự cấp là tự nới cổng của chính mình, và cái
+   cổng ấy sinh ra để đứng giữa mình với tiền. */
+function quanLyDuocPhong(role, quyen) {
+  if (role === 'R01') return true;
+  if ((role === 'R02' || role === 'R03') && quyen.quanLyPhong) return true;
+  return false;
+}
 
 /** Người này có đứng ở đầu tiền ấy không — 'thu' hay 'chi'. */
 export function oDauTien(quyen, dau) {
@@ -330,7 +365,8 @@ export async function quyenCua(db, username) {
     'WHERE username = ? AND thuHoiLuc IS NULL'
   ).bind(username).all();
   const bay = new Date().toISOString();
-  const q = {keToanThu: false, keToanChi: false, keToanTruong: false, mocToiDa: null};
+  const q = {keToanThu: false, keToanChi: false, keToanTruong: false,
+             quanLyPhong: false, mocToiDa: null};
   for (const x of (r.results || [])) {
     /* Quyền hết hạn thì TỰ TẮT. Một quyền chỉ mất khi có người chủ
        động gỡ là một quyền sẽ ở lại mãi — cùng luật với giấy phép xem
@@ -658,6 +694,43 @@ export async function duyetChi(y, env, db, hoSo) {
     soTien: Number(cp.soTien), boi: hoSo.u,
     dienGiai: 'Duyệt khoản chi thuộc kỳ đã chốt · ' + cp.dienGiai.slice(0, 200)}) : null;
 
+  /* ── BÁO LÊN GIÁM ĐỐC VÀ SUPER ADMIN ──
+
+     Chốt 9.98. Báo khi tuần đã chạm mốc từ C1 trở lên — tức từ 10 triệu
+     — chứ không báo mọi khoản: báo mọi khoản thì hộp thông báo đầy
+     những chuyện thường ngày, và cái đáng xem chìm giữa chúng.
+
+     Báo SAU khi tiền đã ra, không phải trước: đây là thông báo để biết,
+     không phải một cổng nữa. Cổng đã đứng ở trên rồi. */
+  if (duyet && moc.ma !== 'C0') {
+    try {
+      await baoLenCapCao(db, {
+        loai: 'CHI_MOC_CHU_KY',
+        mucDo: MOC_CHU_KY.indexOf(moc) >= 3 ? 'gap' : 'canXem',
+        tieuDe: 'Chi ' + dinhDang(cp.soTien) + ' · tuần ' + ck.ky + ' đã chi ' +
+          dinhDang(ck.tong) + ' · mốc ' + moc.ma,
+        doiTuong: cp.id,
+        than: [
+          'Khoản chi vừa được duyệt và đã vào sổ.',
+          '',
+          'Khoản mục : ' + (KHOAN_MUC[cp.khoanMuc] || cp.khoanMuc),
+          'Số tiền   : ' + dinhDang(cp.soTien),
+          'Diễn giải : ' + String(cp.dienGiai).slice(0, 200),
+          'Người ghi : ' + cp.nguoiDeXuat,
+          'Người ký  : ' + [cp.nguoiDuyet, cp.nguoiDuyet2, hoSo.u]
+            .filter(Boolean).join(', '),
+          '',
+          'Tuần ' + ck.ky + ': người này đã chi ' + dinhDang(ck.tong) +
+            ' — mốc ' + moc.ma + '. ' + moc.viec
+        ].join('\n')});
+    } catch (e) {
+      /* Thông báo hỏng KHÔNG được kéo đổ lượt duyệt: tiền đã ra, sổ đã
+         ghi, và một dòng thông báo thiếu là mất một lượt báo chứ không
+         mất một đồng. */
+      console.error('THONGBAO_HONG', cp.id, String(e && e.message || e));
+    }
+  }
+
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
     viec: duyet ? 'CHI_DUYET' : 'CHI_TUCHOI',
     doiTuong: cp.id, chiTiet: KHOAN_MUC[cp.khoanMuc] + ' · ' + dinhDang(cp.soTien) +
@@ -674,9 +747,19 @@ export async function duyetChi(y, env, db, hoSo) {
    bản 9.97. Giám đốc KHÔNG tự cấp được quyền cho người sẽ ký thay
    mình: đó là tự nới cổng của chính mình. */
 export async function capQuyenTaiChinh(y, env, db, hoSo) {
-  const lv = BAC[hoSo.role] || 99;
-  if (lv > 2) return {ok: false, code: 'NOPERM',
-    error: 'Chỉ Super Admin và Admin hệ thống cấp được quyền tài chính.'};
+  const quyenMinh = await quyenCua(db, hoSo.u);
+  if (!quanLyDuocPhong(hoSo.role, quyenMinh))
+    return {ok: false, code: 'NOPERM',
+      error: 'Phòng tài chính trực thuộc Super Admin, Giám đốc và Admin hệ thống. ' +
+             'Super Admin quản lý đương nhiên; Giám đốc và Admin hệ thống cần ' +
+             'được Super Admin cấp quyền quanLyPhong.'};
+
+  /* Chỉ SUPER ADMIN cấp được quyền QUẢN LÝ PHÒNG. Cho người được cấp
+     quyền ấy đi cấp tiếp cho người khác là dựng một dây chuyền tự nhân
+     lên mà đầu dây không ai nắm. */
+  if (String(y.chucNang || '') === 'quanLyPhong' && hoSo.role !== 'R01')
+    return {ok: false, code: 'CHIR01',
+      error: 'Chỉ Super Admin cấp được quyền quản lý phòng tài chính.'};
 
   const ten = String(y.username || '').trim().toLowerCase();
   const cn = String(y.chucNang || '').trim();
@@ -691,6 +774,12 @@ export async function capQuyenTaiChinh(y, env, db, hoSo) {
 
   const nd = await Kho.nguoiTheoTen(db, ten);
   if (!nd) return {ok: false, error: 'Không tìm thấy tài khoản này.'};
+
+  /* KHÔNG AI TỰ CẤP CHO MÌNH. Cổng này sinh ra để đứng giữa một người
+     với tiền; tự cấp là tự dỡ nó đi. */
+  if (String(ten) === String(hoSo.u).toLowerCase())
+    return {ok: false, code: 'TUCAP',
+      error: 'Không tự cấp được vị trí cho chính mình.'};
 
   let moc = null;
   if (cn === 'keToanTruong') {
@@ -721,9 +810,13 @@ export async function capQuyenTaiChinh(y, env, db, hoSo) {
 }
 
 export async function thuHoiQuyenTaiChinh(y, env, db, hoSo) {
-  const lv = BAC[hoSo.role] || 99;
-  if (lv > 2) return {ok: false, code: 'NOPERM',
-    error: 'Chỉ Super Admin và Admin hệ thống thu hồi được quyền tài chính.'};
+  const quyenMinh = await quyenCua(db, hoSo.u);
+  if (!quanLyDuocPhong(hoSo.role, quyenMinh))
+    return {ok: false, code: 'NOPERM',
+      error: 'Chỉ người quản lý phòng tài chính thu hồi được vị trí.'};
+  if (String(y.chucNang || '') === 'quanLyPhong' && hoSo.role !== 'R01')
+    return {ok: false, code: 'CHIR01',
+      error: 'Chỉ Super Admin thu hồi được quyền quản lý phòng tài chính.'};
 
   const r = await db.prepare(
     'UPDATE quyenTaiChinh SET thuHoiLuc = ?, thuHoiBoi = ? ' +

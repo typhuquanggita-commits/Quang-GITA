@@ -164,6 +164,14 @@ kiểm câm trong kho này.
 - **Chi từ 1,5 triệu trở lên** (9.92, 9.94) — phải xin duyệt VÀ phải
   vào báo cáo chi. Một ngưỡng, hai nghĩa vụ, cùng một hằng số
   `TRAN_PHAI_DUYET`.
+- **Phòng tài chính trực thuộc ai** (9.98) — Super Admin quản lý đương
+  nhiên; Giám đốc và Admin hệ thống quản lý được KHI Super Admin cấp
+  `quanLyPhong`. Chỉ R01 cấp được quyền ấy, và không ai tự cấp cho mình.
+- **Nối sổ với tài khoản ngân hàng** (9.98) — `giaoDichNganHang`, cửa
+  webhook xác thực bằng `GITA_KHOA_NGANHANG` (không dùng phiên). Tự khớp
+  CHỈ theo mã tham chiếu, không bao giờ theo số tiền. Đối chiếu nêu HAI
+  phía riêng: tiền vào không có phiếu (mất lòng khách) và phiếu không có
+  tiền vào (mất tiền).
 - **Phòng Kế toán – Tài chính** (9.97) — ba vị trí: kế toán THU, kế toán
   CHI, kế toán TRƯỞNG. Là một TRỤC RIÊNG, vuông góc với thang vai
   R01–R15, cấp bằng `quyenTaiChinh` chứ không thêm vai. Chỉ R01–R02 cấp

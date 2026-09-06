@@ -43,6 +43,8 @@ import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh,
 import { soNgay, chotTuan, soatChot, tongHop, baoCaoKeToan, boSoKhaiThue,
   dsChot } from './bao-cao.js';
 import { tongNgayDoanhThu } from './bao-doanh-thu.js';
+import { nganHangBao, nhapGiaoDichTay, doiChieuNganHang, khopGiaoDich,
+  hopThongBao, danhDauDaDoc } from './ngan-hang.js';
 import { ghiChi, duyetChi, huyChi, soChi, chotKet, dsChotKet,
   xemThangDuyetChi, baoCaoChi, tongHopChi,
   capQuyenTaiChinh, thuHoiQuyenTaiChinh, dsQuyenTaiChinh } from './chi-tieu.js';
@@ -164,6 +166,8 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'ghiChi', 'duyetChi', 'huyChi', 'soChi', 'chotKet', 'dsChotKet',
   'xemThangDuyetChi', 'baoCaoChi', 'tongHopChi',
   'capQuyenTaiChinh', 'thuHoiQuyenTaiChinh', 'dsQuyenTaiChinh',
+  'nhapGiaoDichTay', 'doiChieuNganHang', 'khopGiaoDich',
+  'hopThongBao', 'danhDauDaDoc',
   'deXuatMienGiam', 'duyetMienGiam', 'dsMienGiam',
   'ghiNhacThu', 'lichSuNhacThu', 'denHenChuaTra'];
 
@@ -183,6 +187,13 @@ async function lam(fn, y, env, db) {
      không mở được phiên nào. */
   if (fn === 'quenMatKhau')   return await quenMatKhau(y, env, db);
   if (fn === 'datLaiMatKhau') return await datLaiMatKhau(y, env, db);
+
+  /* ── CỬA NGÂN HÀNG: XÁC THỰC BẰNG KHOÁ RIÊNG, KHÔNG BẰNG PHIÊN ──
+
+     Ngân hàng không đăng nhập được vào hệ. Cửa này phải đứng TRƯỚC cổng
+     phiên, và khoá của nó chỉ mở đúng một việc: đẩy một dòng sao kê
+     vào. Nó không mở được bất kỳ cửa nào khác trong hệ. */
+  if (fn === 'nganHangBao') return await nganHangBao(y, env, db);
 
   if (CHUA_PORT[fn]) return {ok: false, code: 'CHUAPORT',
     error: 'Việc "' + CHUA_PORT[fn] + '" chưa chuyển sang máy chủ mới. ' +
@@ -257,6 +268,13 @@ async function lam(fn, y, env, db) {
   if (fn === 'capQuyenTaiChinh')    return await capQuyenTaiChinh(y, env, db, hoSo);
   if (fn === 'thuHoiQuyenTaiChinh') return await thuHoiQuyenTaiChinh(y, env, db, hoSo);
   if (fn === 'dsQuyenTaiChinh')     return await dsQuyenTaiChinh(y, env, db, hoSo);
+
+  /* Nối sổ kế toán với tài khoản ngân hàng, và thông báo trong hệ. */
+  if (fn === 'nhapGiaoDichTay')   return await nhapGiaoDichTay(y, env, db, hoSo);
+  if (fn === 'doiChieuNganHang')  return await doiChieuNganHang(y, env, db, hoSo);
+  if (fn === 'khopGiaoDich')      return await khopGiaoDich(y, env, db, hoSo);
+  if (fn === 'hopThongBao')       return await hopThongBao(y, env, db, hoSo);
+  if (fn === 'danhDauDaDoc')      return await danhDauDaDoc(y, env, db, hoSo);
 
   if (fn === 'deXuatMienGiam') return await deXuatMienGiam(y, env, db, hoSo);
   if (fn === 'duyetMienGiam')  return await duyetMienGiam(y, env, db, hoSo);

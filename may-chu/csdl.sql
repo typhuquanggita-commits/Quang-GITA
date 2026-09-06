@@ -529,6 +529,80 @@ CREATE UNIQUE INDEX IF NOT EXISTS ix_qtc_mot ON quyenTaiChinh (username, chucNan
 CREATE INDEX IF NOT EXISTS ix_qtc_ten ON quyenTaiChinh (username);
 
 -- ═════════════════════════════════════════════════════════════
+--  GIAO DỊCH NGÂN HÀNG — CÁI ĐỨNG NGOÀI LÀM CHỨNG
+--
+--  Chủ hệ thống chốt bản 9.98: "Liên kết hệ thống kế toán với tài khoản
+--  ngân hàng."
+--
+--  Tới bản 9.97, mọi con số thu đều do NGƯỜI TRONG HỆ nói ra: một người
+--  ghi phiếu, một người duyệt. Hai lớp ấy chặn được nhầm lẫn và chặn
+--  được một người làm sai một mình — nhưng chúng không chặn được HAI
+--  người cùng nói một câu không đúng, vì cả hai đều ở trong hệ.
+--
+--  Sao kê ngân hàng là thứ DUY NHẤT trong cả kiến trúc này đứng NGOÀI.
+--  Ngân hàng không biết Học viện muốn sổ trông thế nào. Đối chiếu với
+--  nó là phép kiểm duy nhất mà không ai bên trong sửa được.
+--
+--  BẢNG NÀY KHÔNG BAO GIỜ SỬA MỘT DÒNG ĐÃ NHẬN. Dòng ngân hàng đưa
+--  sang là lời của người ngoài; sửa nó là bỏ mất chính cái làm nó có
+--  giá trị. Khớp hay không khớp ghi ở cột riêng.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS giaoDichNganHang (
+  id          TEXT PRIMARY KEY,
+  soTaiKhoan  TEXT NOT NULL,
+  maGiaoDich  TEXT NOT NULL,      -- mã ngân hàng cấp, duy nhất theo tài khoản
+  huong       TEXT NOT NULL,      -- vao · ra
+  soTien      REAL NOT NULL,
+  noiDung     TEXT,               -- nội dung chuyển khoản, chữ của người gửi
+  luc         TEXT NOT NULL,      -- mốc ngân hàng ghi
+  nhanLuc     TEXT NOT NULL,      -- mốc hệ nhận được
+  nguon       TEXT NOT NULL,      -- webhook · nhapTay
+  nguoiNhap   TEXT,               -- chỉ có khi nhapTay
+  idPhieuThu  TEXT,               -- khớp với phiếu nào
+  idChiPhi    TEXT,               -- hoặc khoản chi nào
+  khopLuc     TEXT,
+  khopBoi     TEXT
+);
+
+-- Ngân hàng gửi lại cùng một giao dịch là chuyện thường (thử lại, nổ
+-- hai lần). Khoá duy nhất theo tài khoản × mã giao dịch là chỗ chặn
+-- ghi trùng — không có nó thì một lượt gửi lại thành một khoản tiền
+-- thứ hai chưa từng có.
+CREATE UNIQUE INDEX IF NOT EXISTS ix_gdnh_mot
+  ON giaoDichNganHang (soTaiKhoan, maGiaoDich);
+CREATE INDEX IF NOT EXISTS ix_gdnh_luc  ON giaoDichNganHang (luc);
+CREATE INDEX IF NOT EXISTS ix_gdnh_khop ON giaoDichNganHang (idPhieuThu);
+
+-- ═════════════════════════════════════════════════════════════
+--  THÔNG BÁO TRONG HỆ
+--
+--  Chủ hệ chốt 9.98: "có thông báo lên hệ thống giám đốc, Super Admin."
+--
+--  Thư điện tử đi ra NGOÀI hệ — qua nhà gửi thư, qua Google, nằm lại
+--  trong hộp thư. Thông báo trong hệ ở LẠI TRONG hệ, dưới khoá của Học
+--  viện, và đọc được ngay trong ứng dụng.
+--
+--  Hai đường, hai việc: thư để biết khi không mở máy; thông báo trong
+--  hệ để làm việc.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS thongBao (
+  id       TEXT PRIMARY KEY,
+  denVai   TEXT,                  -- gửi theo VAI: R01, R03…
+  denAi    TEXT,                  -- hoặc gửi đích danh một tên đăng nhập
+  loai     TEXT NOT NULL,
+  mucDo    TEXT NOT NULL,         -- tin · canXem · gap
+  tieuDe   TEXT NOT NULL,
+  than     TEXT NOT NULL,
+  doiTuong TEXT,                  -- id chứng từ liên quan
+  luc      TEXT NOT NULL,
+  docLuc   TEXT,
+  docBoi   TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_tb_vai ON thongBao (denVai, luc DESC);
+CREATE INDEX IF NOT EXISTS ix_tb_ai  ON thongBao (denAi, luc DESC);
+
+-- ═════════════════════════════════════════════════════════════
 --  MIỄN GIẢM — VÌ SAO KHÔNG SỬA THẲNG phaiThu
 --
 --  Học bổng, giảm cho anh chị em cùng học, giảm theo hoàn cảnh: đều là
