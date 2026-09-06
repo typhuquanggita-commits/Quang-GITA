@@ -28,6 +28,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { Kho, tokenMoi } from './nen.js';
+import { GIA_TANG } from './tai-chinh.js';
 import { ghiDieuChinh } from './bao-cao.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
@@ -59,34 +60,124 @@ const KHOAN_MUC = {
 
 const HINH_THUC = ['chuyenKhoan', 'tienMat', 'the'];
 
-/* ══ BA BẬC CỦA MỘT KHOẢN CHI ══
+/* ═══════════════════════════════════════════════════════════════
+   NĂM NẤC THANG DUYỆT CHI
 
-   Chốt của chủ hệ thống, bản 9.92: "các khoản chi trên 1,5 triệu đồng
-   đều phải khai báo xin cấp duyệt chi."
+   ══ MỖI NẤC NEO VÀO MỘT CON SỐ CÓ THẬT CỦA HỌC VIỆN ══
 
-     dưới 1,5 triệu   — LỐI TỰ GHI. Một người ghi thẳng vào sổ, không
-                        phải chờ ai. Mua giấy in, gửi xe, nước uống:
-                        bắt hai người ký cho một khoản trăm nghìn là
-                        làm cho cả cái cổng duyệt bị người ta né.
-     từ 1,5 triệu     — PHẢI XIN DUYỆT. Người đề xuất khác người duyệt.
-     từ 20 triệu      — chỉ Giám đốc điều hành (R01) duyệt.
+   Một thang duyệt chi bịa ra bằng những con số tròn — 10 triệu, 50
+   triệu — thì sáu tháng sau không ai nhớ vì sao lại là 10 chứ không
+   phải 15, và lúc cần đổi thì đổi bừa.
 
-   Hai con số là quyết định của chủ hệ thống, không phải của mã. Để
-   thành hai dòng ở đây để đổi được mà không phải đi tìm.
+   Nên mỗi nấc ở đây neo vào GIÁ MỘT GÓI HỌC PHÍ, và câu hỏi của từng
+   nấc trở thành câu Học viện thật sự quan tâm:
 
-   ══ MỘT NGƯỠNG KHÔNG CÓ PHÉP SOI CHIA NHỎ THÌ KHÔNG PHẢI NGƯỠNG ══
+     KHOẢN CHI NÀY ĂN HẾT HỌC PHÍ CỦA BAO NHIÊU NHÀ.
 
-   Đây là chỗ mọi cổng duyệt theo số tiền đều bị né, và né bằng cách
-   đơn giản nhất: một khoản ba triệu ghi thành hai khoản một triệu tư.
-   Không ai phải nói dối câu nào, và cổng duyệt không hề biết.
+     N1  dưới 1,5 triệu    ≈ ba gói T2        — tiền lặt vặt
+     N2  1,5 → dưới 10tr   dưới một gói T3    — chi thường
+     N3  10 → dưới 30tr    một gói T3         — bằng cả năm học của một nhà
+     N4  30 → dưới 50tr    một gói T4         — bằng trọn hành trình một nhà
+     N5  từ 50 triệu       một gói T5         — bằng gói cao nhất Học viện bán
 
-   Nên lối tự ghi cộng dồn theo (khoản mục × người ghi) trong bảy ngày.
-   Cộng lại vượt ngưỡng thì khoản ấy phải đi đường xin duyệt, dù một
-   mình nó còn dưới. Bảy ngày chứ không phải một ngày: chia theo ngày
-   là cách né tiếp theo, và nó dễ y như cách đầu. */
-const TRAN_PHAI_DUYET = 1500000;
-const TRAN_R01_DUYET  = 20000000;
-const NGAY_GOP        = 7;
+   Neo như thế thì thang tự có nghĩa, và ngày Học viện đổi giá gói thì
+   phép soi neo ở soatNeoThang() báo đỏ — người quyết định lại là chủ hệ
+   thống, không phải cái thang tự trôi theo.
+
+   ══ NẤC TRÊN CÙNG ĐÒI HAI CHỮ KÝ, KHÔNG PHẢI MỘT CHỮ KÝ CAO HƠN ══
+
+   Đây là chỗ bản 9.92 làm chưa đúng và tôi sửa ở đây.
+
+   Tầng tài chính của Học viện chỉ có BA vai: R01 Super Admin, R02 Admin
+   hệ thống, R03 Giám đốc. Bắt khoản lớn phải "lên cấp cao hơn" bên
+   trong ba vai ấy nghe thì chặt mà thật ra không thêm được lớp nào —
+   và nó còn sai về tổ chức, vì nó đặt người quản trị kỹ thuật lên trên
+   Giám đốc ở chuyện tiền.
+
+   Thang thật leo bằng SỐ NGƯỜI và bằng BẰNG CHỨNG:
+
+     N1  không ai duyệt          — một người ghi thẳng
+     N2  một người duyệt         — khác người ghi
+     N3  một người duyệt         + hoá đơn
+     N4  một người duyệt         + hoá đơn + 2 báo giá
+     N5  HAI người duyệt         + hoá đơn + 3 báo giá + hợp đồng
+
+   ══ CẤP DUYỆT THEO GỘP, BẰNG CHỨNG THEO TỪNG KHOẢN ══
+
+   Phép soi chia nhỏ ở 9.92 chỉ đẩy khoản chi qua một cái ngưỡng duy
+   nhất. Nay nó chạy trên cả thang: cộng dồn bảy ngày tới nấc nào thì
+   khoản ấy phải duyệt theo nấc ấy. Chia một hợp đồng 60 triệu thành
+   bốn khoản 14 triệu thì cả bốn rơi vào N5, không phải N3.
+
+   Nhưng BẰNG CHỨNG thì theo số tiền của TỪNG KHOẢN, không theo gộp:
+   không ai lấy được ba báo giá cho "cả tuần". Đòi thế là đòi một thứ
+   không tồn tại, và một luật không làm nổi thì người ta học cách đi
+   vòng qua nó.
+   ═══════════════════════════════════════════════════════════════ */
+
+const NGAY_GOP = 7;
+
+const NAC_THANG = [
+  {ma: 'N1', ten: 'Tiền lặt vặt',      tu: 0,        den: 1500000,
+   neo: 'ba gói T2',            soDuyet: 0,
+   canHoaDon: false, soBaoGia: 0, canHopDong: false,
+   viec: 'Một người ghi thẳng vào sổ. Không phải chờ ai.'},
+
+  {ma: 'N2', ten: 'Chi thường',        tu: 1500000,  den: 10000000,
+   neo: 'dưới một gói T3',      soDuyet: 1,
+   canHoaDon: false, soBaoGia: 0, canHopDong: false,
+   viec: 'Một người duyệt, khác người ghi.'},
+
+  {ma: 'N3', ten: 'Bằng học phí một nhà cả năm', tu: 10000000, den: 30000000,
+   neo: 'một gói T3',           soDuyet: 1,
+   canHoaDon: true,  soBaoGia: 0, canHopDong: false,
+   viec: 'Một người duyệt, và phải có hoá đơn.'},
+
+  {ma: 'N4', ten: 'Bằng trọn hành trình một nhà', tu: 30000000, den: 50000000,
+   neo: 'một gói T4',           soDuyet: 1,
+   canHoaDon: true,  soBaoGia: 2, canHopDong: false,
+   viec: 'Một người duyệt, hoá đơn, và ít nhất hai báo giá để so.'},
+
+  {ma: 'N5', ten: 'Bằng gói cao nhất Học viện bán', tu: 50000000, den: Infinity,
+   neo: 'một gói T5',           soDuyet: 2,
+   canHoaDon: true,  soBaoGia: 3, canHopDong: true,
+   viec: 'HAI người duyệt, cả hai khác người ghi, hoá đơn, ba báo giá và hợp đồng.'}
+];
+
+/* Chốt của chủ hệ thống bản 9.92: "các khoản chi trên 1,5 triệu đồng
+   đều phải khai báo xin cấp duyệt chi." Đọc là TỪ 1,5 triệu trở lên —
+   đọc là "lớn hơn" thì có đúng một khoản lọt qua ở mép ngưỡng, và mép
+   ngưỡng là chỗ người ta nhắm vào. */
+const TRAN_PHAI_DUYET = NAC_THANG[1].tu;
+
+/** Nấc của một số tiền. Biên DƯỚI tính vào nấc trên: 10 triệu chẵn là
+    N3, không phải N2. */
+function nacCua(tien) {
+  for (let i = NAC_THANG.length - 1; i >= 0; i--)
+    if (tien >= NAC_THANG[i].tu) return NAC_THANG[i];
+  return NAC_THANG[0];
+}
+
+/* ══ PHÉP SOI NEO ══
+
+   Thang neo vào giá gói. Giá gói đổi mà thang đứng yên thì cái neo
+   thành lời nói suông — và tệ hơn, chú giải ở trên thành lời nói sai.
+
+   Phép này KHÔNG tự dời thang theo giá: dời thang là quyết định của chủ
+   hệ thống. Nó chỉ nêu ra rằng neo đã lệch, để người quyết biết mà
+   quyết. Bộ thử gọi nó và đỏ khi có lệch. */
+export function soatNeoThang() {
+  const neo = {N3: GIA_TANG[3], N4: GIA_TANG[4], N5: GIA_TANG[5]};
+  const lech = [];
+  for (const n of NAC_THANG) {
+    if (neo[n.ma] === undefined) continue;
+    if (Number(n.tu) !== Number(neo[n.ma]))
+      lech.push({nac: n.ma, thangDangDe: n.tu, giaGoiBayGio: neo[n.ma], neo: n.neo});
+  }
+  return {khop: lech.length === 0, lech,
+    vi: 'Mỗi nấc neo vào giá một gói học phí. Giá gói đổi thì thang phải được ' +
+        'CHỦ HỆ THỐNG chốt lại — phép này nêu ra chỗ lệch, không tự dời thang.'};
+}
 
 /* ═══════════════ GHI MỘT KHOẢN CHI ═══════════════
 
@@ -127,12 +218,42 @@ export async function ghiChi(y, env, db, hoSo) {
   if (new Date(ngayChi).getTime() > Date.now() + 86400000)
     return {ok: false, error: 'Ngày chi nằm ở tương lai. Khoản chi ghi khi tiền đã ra.'};
 
-  /* ══ KHOẢN NÀY ĐI LỐI NÀO ══
+  /* ══ KHOẢN NÀY Ở NẤC NÀO ══
 
-     Dưới ngưỡng VÀ cộng dồn bảy ngày cũng còn dưới → tự ghi. Chạm một
-     trong hai điều kiện → phải xin duyệt. */
+     Hai nấc, hai vai trò khác nhau:
+
+       nacTien  — nấc của RIÊNG khoản này. Quyết định BẰNG CHỨNG phải
+                  có, vì bằng chứng gắn với một lần mua.
+       nacGop   — nấc của tổng bảy ngày. Quyết định CẤP DUYỆT, vì đây
+                  là chỗ chặn chia nhỏ.
+
+     Nấc THẬT áp cho khoản này là nấc cao hơn trong hai nấc ấy. */
   const gop = await gopBayNgay(db, muc, hoSo.u, ngayChi);
-  const tuGhiDuoc = tien < TRAN_PHAI_DUYET && (gop + tien) < TRAN_PHAI_DUYET;
+  const nacTien = nacCua(tien);
+  const nacGop  = nacCua(gop + tien);
+  const nac = NAC_THANG.indexOf(nacGop) > NAC_THANG.indexOf(nacTien) ? nacGop : nacTien;
+
+  /* ── BẰNG CHỨNG THEO nacTien, KHÔNG THEO nacGop ──
+
+     Không ai lấy được ba báo giá cho "cả tuần". Đòi thế là đòi một thứ
+     không tồn tại, và một luật không làm nổi thì người ta học cách đi
+     vòng qua nó — rồi đi vòng luôn cả những luật làm được. */
+  const baoGia = Array.isArray(c.baoGia)
+    ? c.baoGia.map(x => String(x).slice(0, 300)).filter(Boolean) : [];
+  const hopDong = String(c.soHopDong || '').trim();
+  const thieu = [];
+  if (nacTien.canHoaDon && !c.coHoaDon) thieu.push('hoá đơn');
+  if (baoGia.length < nacTien.soBaoGia)
+    thieu.push('đủ ' + nacTien.soBaoGia + ' báo giá (đang có ' + baoGia.length + ')');
+  if (nacTien.canHopDong && !hopDong) thieu.push('số hợp đồng');
+  if (thieu.length)
+    return {ok: false, code: 'THIEUCHUNGTU',
+      nac: nacTien.ma,
+      error: 'Khoản ' + dinhDang(tien) + ' thuộc nấc ' + nacTien.ma + ' — ' +
+        nacTien.ten + '. Nấc này còn thiếu: ' + thieu.join(', ') + '.',
+      nacNay: {ma: nacTien.ma, ten: nacTien.ten, viec: nacTien.viec}};
+
+  const tuGhiDuoc = nac.soDuyet === 0;
 
   const id = 'CP-' + tokenMoi().slice(0, 14);
   const luc = new Date().toISOString();
@@ -140,8 +261,9 @@ export async function ghiChi(y, env, db, hoSo) {
 
   await db.prepare(
     'INSERT INTO chiPhi (id,khoanMuc,soTien,ngayChi,hinhThuc,nhaCungCap,coHoaDon,' +
-    'maHoaDon,minhChung,dienGiai,nguoiDeXuat,deXuatLuc,trangThai,tuGhi,nguoiDuyet,duyetLuc) ' +
-    'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
+    'maHoaDon,minhChung,dienGiai,nguoiDeXuat,deXuatLuc,trangThai,tuGhi,nguoiDuyet,' +
+    'duyetLuc,nac,baoGia,soBaoGia,soHopDong) ' +
+    'VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'
   ).bind(id, muc, tien, ngayChi, hinhThuc,
     String(c.nhaCungCap || '').slice(0, 200) || null, coHoaDon,
     coHoaDon ? (String(c.maHoaDon || '').slice(0, 100) || null) : null,
@@ -151,35 +273,31 @@ export async function ghiChi(y, env, db, hoSo) {
     /* Lối tự ghi vẫn ghi TÊN NGƯỜI vào cột người duyệt — nhưng cột
        tuGhi nói rõ đó là chính người ấy, nên không ai đọc nhầm thành
        một khoản có hai người ký. */
-    tuGhiDuoc ? hoSo.u : null, tuGhiDuoc ? luc : null).run();
+    tuGhiDuoc ? hoSo.u : null, tuGhiDuoc ? luc : null,
+    nac.ma, baoGia.length ? JSON.stringify(baoGia) : null, baoGia.length,
+    hopDong.slice(0, 100) || null).run();
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
     viec: tuGhiDuoc ? 'CHI_TUGHI' : 'CHI_DEXUAT',
-    doiTuong: id, chiTiet: KHOAN_MUC[muc] + ' · ' + dinhDang(tien) +
+    doiTuong: id, chiTiet: KHOAN_MUC[muc] + ' · ' + dinhDang(tien) + ' · nấc ' + nac.ma +
       (coHoaDon ? ' · có hoá đơn' : ' · KHÔNG hoá đơn') +
-      (tuGhiDuoc ? ' · lối tự ghi' : ' · chờ duyệt') +
       (gop ? ' · gộp 7 ngày ' + dinhDang(gop + tien) : '')});
 
   return {ok: true, id, khoanMuc: muc, soTien: tien,
     trangThai: tuGhiDuoc ? 'daDuyet' : 'choDuyet',
     tuGhi: tuGhiDuoc,
-    canR01: tien >= TRAN_R01_DUYET,
+    nac: nac.ma, tenNac: nac.ten, canMayNguoiDuyet: nac.soDuyet,
     gopBayNgay: gop + tien,
-    /* Nói NGAY ở bước ghi rằng khoản này đi lối nào và vì sao. Người
-       ghi một khoản một triệu tư mà thấy nó vào "chờ duyệt" sẽ tưởng
-       máy hỏng, nếu không ai nói cho họ biết tuần này họ đã ghi bao
-       nhiêu ở cùng khoản mục. */
-    vi: tuGhiDuoc
-      ? 'Dưới ' + dinhDang(TRAN_PHAI_DUYET) + ' — ghi thẳng vào sổ, không phải chờ duyệt.'
-      : (tien < TRAN_PHAI_DUYET
-          ? 'Riêng khoản này ' + dinhDang(tien) + ' là dưới ngưỡng, nhưng cộng với ' +
-            dinhDang(gop) + ' đã ghi ở cùng khoản mục trong ' + NGAY_GOP + ' ngày thì ' +
-            'thành ' + dinhDang(gop + tien) + ' — từ ' + dinhDang(TRAN_PHAI_DUYET) +
-            ' trở lên phải xin duyệt.'
-          : 'Từ ' + dinhDang(TRAN_PHAI_DUYET) + ' trở lên phải xin duyệt chi.') +
-        (tien >= TRAN_R01_DUYET
-          ? ' Và từ ' + dinhDang(TRAN_R01_DUYET) +
-            ' trở lên chỉ Giám đốc điều hành (R01) duyệt.' : '')};
+    /* Nói NGAY ở bước ghi rằng khoản này ở nấc nào và vì sao. Người ghi
+       một khoản một triệu tư mà thấy nó vào "chờ duyệt" sẽ tưởng máy
+       hỏng, nếu không ai nói cho họ biết tuần này họ đã ghi bao nhiêu ở
+       cùng khoản mục. */
+    biDayLenNacVi: nac !== nacTien
+      ? 'Riêng khoản này ' + dinhDang(tien) + ' thuộc nấc ' + nacTien.ma +
+        ', nhưng cộng với ' + dinhDang(gop) + ' đã ghi ở cùng khoản mục trong ' +
+        NGAY_GOP + ' ngày thì thành ' + dinhDang(gop + tien) + ' — nấc ' + nac.ma + '.'
+      : undefined,
+    vi: nac.viec};
 }
 
 /* ── CỘNG DỒN BẢY NGÀY THEO (KHOẢN MỤC × NGƯỜI GHI) ──
@@ -219,20 +337,61 @@ export async function duyetChi(y, env, db, hoSo) {
   /* Ngưỡng đọc ở lúc DUYỆT, không đọc ở lúc đề xuất: một khoản có thể
      nằm chờ nhiều ngày, và cấp duyệt phải đúng theo số tiền thật của
      nó chứ không theo cái đã kiểm hôm đề xuất. */
-  if (Number(cp.soTien) >= TRAN_R01_DUYET && lv > 1)
-    return {ok: false, code: 'VUOTTRAN',
-      error: 'Khoản ' + dinhDang(cp.soTien) + ' từ ' + dinhDang(TRAN_R01_DUYET) +
-        ' trở lên. Chỉ Giám đốc điều hành (R01) duyệt được.'};
+  /* CẤP DUYỆT LÀ MỘT LUẬT CHUNG CHO CẢ THANG, KHÔNG PHẢI MỘT CỘT
+     CỦA TỪNG NẤC.
+
+     Bản đầu tôi cho mỗi nấc một cột capDuyet. Cả năm nấc đều là 3 —
+     đúng bằng cái sàn R01–R03 đã chặn ở đầu hàm — nên cái cột ấy không
+     bao giờ chặn được gì: một phép kiểm không thể đỏ. Bộ thử bắt được
+     ngay lần chạy đầu, vì R05 bị chặn ở sàn chứ không bị chặn ở cột.
+
+     Đã bỏ cột. Thang này leo bằng SỐ CHỮ KÝ và BẰNG CHỨNG; leo bằng
+     cấp bậc thì không leo được, vì tầng tài chính chỉ có ba vai. */
+  const nac = NAC_THANG.find(x => x.ma === cp.nac) || nacCua(Number(cp.soTien));
+
+  /* ── NGƯỜI THỨ HAI KHÔNG ĐƯỢC TRÙNG NGƯỜI THỨ NHẤT ──
+
+     Nấc trên cùng đòi hai chữ ký. Không chặn chỗ này thì một người bấm
+     duyệt hai lần là đủ hai chữ ký, và cả cái nấc ấy thành trang trí. */
+  if (cp.nguoiDuyet && String(cp.nguoiDuyet) === String(hoSo.u))
+    return {ok: false, code: 'DAKY',
+      error: 'Bạn đã ký duyệt khoản này rồi. Nấc ' + nac.ma + ' cần ' + nac.soDuyet +
+             ' người duyệt KHÁC NHAU.'};
 
   const duyet = y.duyet !== false;
   const gio = new Date().toISOString();
-  const r = await db.prepare(
-    'UPDATE chiPhi SET trangThai = ?, nguoiDuyet = ?, duyetLuc = ?, lyDo = ? ' +
-    "WHERE id = ? AND trangThai = 'choDuyet'"
-  ).bind(duyet ? 'daDuyet' : 'tuChoi', hoSo.u, gio,
-    String(y.lyDo || '').slice(0, 500) || null, cp.id).run();
+
+  /* Từ chối thì dừng ngay ở chữ ký đầu tiên — không cần người thứ hai
+     để nói không. Một người thấy sai là đủ để khoản ấy không đi tiếp. */
+  const chuKyThu = cp.nguoiDuyet ? 2 : 1;
+  const duXong = !duyet || chuKyThu >= nac.soDuyet;
+
+  const r = duXong
+    ? await db.prepare(
+        'UPDATE chiPhi SET trangThai = ?, ' +
+        (chuKyThu === 2 ? 'nguoiDuyet2 = ?, duyetLuc2 = ?, ' : 'nguoiDuyet = ?, duyetLuc = ?, ') +
+        "lyDo = ? WHERE id = ? AND trangThai = 'choDuyet'"
+      ).bind(duyet ? 'daDuyet' : 'tuChoi', hoSo.u, gio,
+        String(y.lyDo || '').slice(0, 500) || null, cp.id).run()
+    /* Chữ ký thứ nhất của một nấc cần hai: ghi tên nhưng GIỮ NGUYÊN
+       trạng thái choDuyet. Đổi sang daDuyet ở đây là cho tiền ra với
+       một chữ ký, đúng cái nấc này sinh ra để chặn. */
+    : await db.prepare(
+        'UPDATE chiPhi SET nguoiDuyet = ?, duyetLuc = ? ' +
+        "WHERE id = ? AND trangThai = 'choDuyet' AND nguoiDuyet IS NULL"
+      ).bind(hoSo.u, gio, cp.id).run();
+
   if (!((r && r.meta && r.meta.changes) || 0))
     return {ok: false, error: 'Khoản chi này đã được xử lý rồi.'};
+
+  if (!duXong) {
+    await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'CHI_KY1',
+      doiTuong: cp.id, chiTiet: 'nấc ' + nac.ma + ' · chữ ký 1/' + nac.soDuyet});
+    return {ok: true, trangThai: 'choDuyet', nac: nac.ma,
+      daKy: 1, canKy: nac.soDuyet, choNguoiThuHai: true,
+      vi: 'Nấc ' + nac.ma + ' cần ' + nac.soDuyet + ' người duyệt khác nhau. ' +
+          'Đã có chữ ký thứ nhất; khoản chi CHƯA vào sổ.'};
+  }
 
   /* Chi phí rơi vào tuần ĐÃ CHỐT thì để lại bút toán, cùng luật với
      phiếu thu. Số DƯƠNG vì đây là một khoản chi thêm vào kỳ ấy. */
@@ -246,6 +405,7 @@ export async function duyetChi(y, env, db, hoSo) {
     doiTuong: cp.id, chiTiet: KHOAN_MUC[cp.khoanMuc] + ' · ' + dinhDang(cp.soTien)});
 
   return {ok: true, trangThai: duyet ? 'daDuyet' : 'tuChoi',
+    nac: nac.ma, daKy: chuKyThu, canKy: nac.soDuyet,
     dieuChinh: dc ? {id: dc.id, kyBiAnhHuong: dc.kyBiAnhHuong} : undefined};
 }
 
@@ -335,8 +495,13 @@ export async function soChi(y, env, db, hoSo) {
           'ngưỡng thì phải đi đường xin duyệt.'},
     theoKhoanMuc: Object.values(theoMuc).sort((a, b) => b.tien - a.tien),
     ds,
-    nguong: {phaiXinDuyet: TRAN_PHAI_DUYET, chiR01Duyet: TRAN_R01_DUYET,
-             cuaSoGopNgay: NGAY_GOP},
+    theoNac: NAC_THANG.map(n => {
+      const cua = daDuyet.filter(x => x.nac === n.ma);
+      return {nac: n.ma, ten: n.ten, tu: n.tu,
+        den: n.den === Infinity ? null : n.den,
+        so: cua.length, tien: cua.reduce((a, x) => a + Number(x.soTien), 0)};
+    }),
+    thang: thangDuyetChi(),
     khoanMucCoThe: KHOAN_MUC};
 }
 
@@ -436,4 +601,29 @@ export async function dsChotKet(y, env, db, hoSo) {
     tongLech: ds.reduce((a, x) => a + Number(x.chenh), 0)};
 }
 
-export { KHOAN_MUC, TRAN_PHAI_DUYET, TRAN_R01_DUYET, NGAY_GOP };
+/* ═══════════════ THANG DUYỆT CHI, TRẢ VỀ NGUYÊN BẢN ═══════════════
+
+   Màn hình phải VẼ được cái thang này, không phải chép lại nó. Chép lại
+   là dựng bản thứ hai của một luật, và hai bản thì sẽ có ngày lệch —
+   lúc ấy màn hình nói cần hai báo giá còn máy chủ đòi ba. */
+export function thangDuyetChi() {
+  return NAC_THANG.map(n => ({
+    nac: n.ma, ten: n.ten, viec: n.viec, neo: n.neo,
+    tu: n.tu, den: n.den === Infinity ? null : n.den,
+    soNguoiDuyet: n.soDuyet, capDuyet: 'R01–R03',
+    canHoaDon: n.canHoaDon, soBaoGia: n.soBaoGia, canHopDong: n.canHopDong
+  }));
+}
+
+export async function xemThangDuyetChi(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 5) return {ok: false, code: 'NOPERM', error: 'Vai này không xem được thang duyệt chi.'};
+  const neo = soatNeoThang();
+  return {ok: true, thang: thangDuyetChi(), cuaSoGopNgay: NGAY_GOP,
+    neoConKhop: neo.khop, neoLech: neo.khop ? undefined : neo.lech,
+    vi: 'Cấp duyệt tính theo TỔNG GỘP ' + NGAY_GOP + ' ngày (chặn chia nhỏ); ' +
+        'bằng chứng tính theo số tiền của TỪNG khoản (không ai lấy được ba báo ' +
+        'giá cho cả tuần).'};
+}
+
+export { KHOAN_MUC, TRAN_PHAI_DUYET, NGAY_GOP, NAC_THANG };

@@ -440,6 +440,15 @@ CREATE TABLE IF NOT EXISTS chiPhi (
   deXuatLuc   TEXT NOT NULL,
   nguoiDuyet  TEXT,               -- NGƯỜI KHÁC người đề xuất
   duyetLuc    TEXT,
+  -- Nấc trên cùng đòi HAI chữ ký, không phải một chữ ký cao hơn. Tầng
+  -- tài chính của Học viện chỉ có ba vai (R01–R03), nên leo cấp bên
+  -- trong ba vai ấy không thêm được lớp nào thật; thêm một người thì có.
+  nguoiDuyet2 TEXT,
+  duyetLuc2   TEXT,
+  nac         TEXT,               -- N1…N5, nấc THẬT đã áp (gồm cả gộp 7 ngày)
+  baoGia      TEXT,               -- danh sách báo giá, JSON
+  soBaoGia    INTEGER NOT NULL DEFAULT 0,
+  soHopDong   TEXT,
   trangThai   TEXT NOT NULL DEFAULT 'choDuyet',  -- choDuyet · daDuyet · tuChoi · huy
   -- Khoản đi LỐI TỰ GHI: dưới ngưỡng phải-xin-duyệt, một người ghi
   -- thẳng vào sổ. Phải đánh dấu thành CỘT chứ không lẫn vào ghi chú:

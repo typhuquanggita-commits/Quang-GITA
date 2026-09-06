@@ -1554,20 +1554,97 @@ bao(!tuDuyet.than.ok && tuDuyet.than.code === 'TUDUYET',
   'NGƯỜI ĐỀ XUẤT CHI KHÔNG TỰ DUYỆT — tiền đi RA thì phải có người thứ hai đứng giữa',
   'một người vừa quyết chi vừa duyệt chi là một người lấy được tiền ra khỏi Học viện');
 
-/* NGƯỠNG: khoản lớn chỉ R01 duyệt. Thử bằng một hồ sơ vai R03 truyền
-   thẳng vào hàm — không tráo một tên nào trên G, đúng luật v9.79. */
-const cpTo = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
-  chi:{khoanMuc:'tiepThi', soTien:50000000, hinhThuc:'chuyenKhoan',
-    dienGiai:'Chiến dịch truyền thông quý 4'}});
-bao(cpTo.than.ok && cpTo.than.canR01,
-  'khoản vượt ngưỡng báo NGAY Ở BƯỚC ĐỀ XUẤT rằng phải lên tới R01',
-  'để người đề xuất không chờ một cấp duyệt sẽ không bao giờ duyệt được');
+/* ── NĂM NẤC THANG DUYỆT CHI ──
+
+   Thang leo bằng SỐ NGƯỜI và bằng BẰNG CHỨNG, không bằng cấp bậc: tầng
+   tài chính chỉ có ba vai, nên bắt khoản lớn "lên cấp cao hơn" bên
+   trong ba vai ấy không thêm được lớp nào thật. */
 const ct = await import('../may-chu/chi-tieu.js');
-const thuR03 = await ct.duyetChi({id:cpTo.than.id}, env, env.CSDL,
+const neo = ct.soatNeoThang();
+bao(neo.khop,
+  'MỖI NẤC CÒN NEO ĐÚNG VÀO GIÁ MỘT GÓI HỌC PHÍ — N3 một gói T3, N4 một gói T4, N5 một gói T5',
+  'giá gói đổi mà thang đứng yên thì cái neo thành lời nói suông; phép soi này đỏ khi lệch');
+
+/* N5 KHÔNG ĐI ĐƯỢC NẾU THIẾU CHỨNG TỪ. Và lời từ chối phải nói RÕ
+   thiếu gì — "không hợp lệ" thì người ta thử lại mù. */
+const thieuCt = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'tiepThi', soTien:60000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Chiến dịch truyền thông quý 4'}});
+bao(!thieuCt.than.ok && thieuCt.than.code === 'THIEUCHUNGTU' &&
+    thieuCt.than.nac === 'N5' &&
+    /hoá đơn/.test(thieuCt.than.error) && /3 báo giá/.test(thieuCt.than.error) &&
+    /hợp đồng/.test(thieuCt.than.error),
+  'NẤC N5 ĐÒI HOÁ ĐƠN + 3 BÁO GIÁ + HỢP ĐỒNG, và nói RÕ thiếu gì',
+  thieuCt.than.error);
+
+const cpTo = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'tiepThi', soTien:60000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Chiến dịch truyền thông quý 4', coHoaDon:true, maHoaDon:'HD-9',
+    baoGia:['Cty A 60tr', 'Cty B 64tr', 'Cty C 71tr'], soHopDong:'HĐ-2026-11'}});
+bao(cpTo.than.ok && cpTo.than.nac === 'N5' && cpTo.than.canMayNguoiDuyet === 2,
+  'đủ chứng từ thì ghi được, và nói ngay rằng nấc này CẦN HAI NGƯỜI DUYỆT',
+  cpTo.than.tenNac);
+
+/* HAI CHỮ KÝ, VÀ CHỮ KÝ THỨ NHẤT KHÔNG ĐƯỢC LÀM TIỀN RA. */
+const kyChiA = await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn',
+  id:cpTo.than.id});
+bao(kyChiA.than.ok && kyChiA.than.choNguoiThuHai && kyChiA.than.trangThai === 'choDuyet' &&
+    db.prepare("SELECT trangThai FROM chiPhi WHERE id=?").get(cpTo.than.id)
+      .trangThai === 'choDuyet',
+  'CHỮ KÝ THỨ NHẤT KHÔNG LÀM TIỀN RA — khoản vẫn nằm chờ, chưa vào sổ',
+  'đã ký ' + kyChiA.than.daKy + '/' + kyChiA.than.canKy);
+
+const kyChiLai = await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn',
+  id:cpTo.than.id});
+bao(!kyChiLai.than.ok && kyChiLai.than.code === 'DAKY',
+  'VÀ MỘT NGƯỜI KHÔNG KÝ ĐƯỢC HAI LẦN — không chặn thì bấm hai lần là đủ hai chữ ký, và cả nấc N5 thành trang trí',
+  kyChiLai.than.error);
+
+const kyChiB = await ct.duyetChi({id:cpTo.than.id}, env, env.CSDL,
   {uid:'U-gd', u:'giamdoc@gita365.vn', role:'R03'});
-bao(!thuR03.ok && thuR03.code === 'VUOTTRAN',
-  'VÀ R03 KHÔNG DUYỆT ĐƯỢC KHOẢN VƯỢT NGƯỠNG — cái sai đắt nhất không được đi qua cửa dễ nhất',
-  thuR03.error);
+bao(kyChiB.ok && kyChiB.trangThai === 'daDuyet' && kyChiB.daKy === 2,
+  'người thứ hai ký thì khoản mới vào sổ',
+  'nấc ' + kyChiB.nac + ' · ' + kyChiB.daKy + '/' + kyChiB.canKy + ' chữ ký');
+
+/* CẤP DUYỆT: R05 không duyệt được kể cả nấc thấp nhất có duyệt (N2). */
+const n2 = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'daoTao', soTien:2000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'In tài liệu khoá mới', ngayChi:'2026-08-03T02:00:00.000Z'}});
+const capThap = await ct.duyetChi({id:n2.than.id}, env, env.CSDL,
+  {uid:'U-tc2', u:'truongcoach@gita365.vn', role:'R05'});
+bao(!capThap.ok && capThap.code === 'NOPERM',
+  'R05 ghi được khoản chi nhưng KHÔNG duyệt được — duyệt chi dừng ở tầng tài chính R01–R03',
+  capThap.error);
+
+/* CHIA NHỎ ĐẨY LÊN NẤC CỦA TỔNG, KHÔNG CHỈ QUA MỘT NGƯỠNG DUY NHẤT.
+   Hai khoản 28 triệu trong một tuần = 56 triệu = nấc N5. */
+const to1 = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'matBang', soTien:28000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Đặt cọc thuê cơ sở mới đợt 1', ngayChi:'2026-09-01T02:00:00.000Z',
+    coHoaDon:true, maHoaDon:'HD-A'}});
+bao(to1.than.ok && to1.than.nac === 'N3', 'khoản 28 triệu đầu ở nấc N3 — một người duyệt');
+const to2 = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'matBang', soTien:28000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Đặt cọc thuê cơ sở mới đợt 2', ngayChi:'2026-09-02T02:00:00.000Z',
+    coHoaDon:true, maHoaDon:'HD-B'}});
+bao(to2.than.ok && to2.than.nac === 'N5' && to2.than.canMayNguoiDuyet === 2 &&
+    to2.than.gopBayNgay === 56000000,
+  'KHOẢN THỨ HAI BỊ ĐẨY LÊN TẬN N5 — chia một hợp đồng lớn thành nhiều khoản vừa thì cả thang đuổi theo, không chỉ một ngưỡng',
+  to2.than.biDayLenNacVi);
+
+/* NHƯNG BẰNG CHỨNG VẪN THEO TỪNG KHOẢN, KHÔNG THEO GỘP: khoản 28 triệu
+   ấy chỉ phải có hoá đơn (nấc N3 của riêng nó), không phải ba báo giá
+   và hợp đồng — không ai lấy được ba báo giá cho "cả tuần". */
+bao(to2.than.ok && Number(db.prepare("SELECT soBaoGia FROM chiPhi WHERE id=?")
+      .get(to2.than.id).soBaoGia) === 0,
+  'VÀ BẰNG CHỨNG VẪN THEO TỪNG KHOẢN — cấp duyệt theo gộp, chứng từ theo khoản',
+  'đòi ba báo giá cho cả tuần là đòi một thứ không tồn tại, và luật không làm nổi thì người ta đi vòng');
+
+const thang = await goi({fn:'xemThangDuyetChi', token:tkTC, u:'truongcoach@gita365.vn'});
+bao(thang.than.ok && thang.than.thang.length === 5 && thang.than.neoConKhop &&
+    thang.than.thang[4].soNguoiDuyet === 2,
+  'MÀN HÌNH VẼ ĐƯỢC CẢ THANG, không phải chép lại nó',
+  'chép lại là dựng bản thứ hai của một luật — rồi màn hình nói hai báo giá còn máy chủ đòi ba');
 
 const dcp = await goi({fn:'duyetChi', token:tkSA, u:'superadmin@gita365.vn', id:cp1.than.id});
 bao(dcp.than.ok && dcp.than.dieuChinh && dcp.than.dieuChinh.kyBiAnhHuong === '2026-W10',
@@ -1575,8 +1652,9 @@ bao(dcp.than.ok && dcp.than.dieuChinh && dcp.than.dieuChinh.kyBiAnhHuong === '20
   'chi phí động vào kỳ đã đóng y như phiếu thu, nên phải để lại vết y như thế');
 
 const sc = await goi({fn:'soChi', token:tkSA, u:'superadmin@gita365.vn'});
-bao(sc.than.ok && sc.than.tongDaDuyet === 3000000 &&
-    sc.than.theoKhoanMuc[0].coHoaDon === 3000000,
+const mucMatBang = sc.than.theoKhoanMuc.find(x => x.khoanMuc === 'matBang');
+bao(sc.than.ok && sc.than.tongDaDuyet === 63000000 &&
+    mucMatBang.coHoaDon === 3000000,
   'sổ chi cắt theo KHOẢN MỤC và tách riêng phần CÓ HOÁ ĐƠN',
   'khoản không hoá đơn vẫn là tiền đã ra thật, nhưng đứng khác khi tính thuế');
 
@@ -1630,8 +1708,8 @@ bao(mucKhac.than.ok && mucKhac.than.tuGhi,
   'và khoản mục khác thì không cộng dồn — mua giấy in không phải chia nhỏ tiền quảng cáo');
 
 const scLoi = await goi({fn:'soChi', token:tkSA, u:'superadmin@gita365.vn'});
-bao(scLoi.than.loiTuGhi.so === 4 && scLoi.than.quaCuaDuyet.so === 1 &&
-    scLoi.than.nguong.phaiXinDuyet === 1500000,
+bao(scLoi.than.loiTuGhi.so === 4 && scLoi.than.quaCuaDuyet.so === 2 &&
+    scLoi.than.thang.length === 5,
   'SỔ CHI NÊU RIÊNG HAI LỐI — khoản nào có hai người ký, khoản nào chỉ một',
   scLoi.than.loiTuGhi.so + ' khoản tự ghi · ' + scLoi.than.quaCuaDuyet.so + ' khoản qua cửa duyệt');
 
