@@ -34,6 +34,7 @@
 import { Kho, tokenMoi } from './nen.js';
 import { ghiDieuChinh } from './bao-cao.js';
 import { baoTienVao } from './bao-doanh-thu.js';
+import { quyenCua, oDauTien } from './chi-tieu.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
              R09:9,R10:10,R11:11,R12:12,R13:13,R14:14,R15:15};
@@ -272,7 +273,22 @@ async function conNoCuaKy(db, nha, tang, ky) {
 /* ═══════════════ DUYỆT PHIẾU THU ═══════════════ */
 export async function duyetPhieuThu(y, env, db, hoSo) {
   const lv = BAC[hoSo.role] || 99;
-  if (lv > 3) return {ok: false, error: 'Chỉ R01–R03 duyệt được phiếu thu.'};
+  /* ĐẦU THU CỦA PHÒNG TÀI CHÍNH.
+
+     Kế toán CHI không duyệt được phiếu thu, và đó là chủ ý: gộp hai đầu
+     tiền vào một người thì người ấy dựng được một vòng khép kín mà
+     không ai đứng ngoài — ghi một phiếu thu không có thật cho tổng thu
+     trông đủ, rồi duyệt một khoản chi mang tiền ấy đi. Mỗi bước đều có
+     chữ ký hợp lệ của cùng một người, sổ vẫn cân, và không phép soi nào
+     trong hệ này bắt được.
+
+     Tách ra thì cái vòng ấy cần HAI người đồng ý. Đó là cả sự khác biệt,
+     và nó là lớp kiểm soát cổ nhất của nghề kế toán. */
+  const quyenTC = await quyenCua(db, hoSo.u);
+  if (lv > 3 && !oDauTien(quyenTC, 'thu'))
+    return {ok: false, code: 'NOPERM',
+      error: 'Duyệt phiếu thu cần vai R01–R03, hoặc vị trí Kế toán thu / ' +
+             'Kế toán trưởng. Kế toán CHI không duyệt được phiếu thu nào.'};
 
   const pt = await db.prepare('SELECT * FROM phieuThu WHERE id = ?')
     .bind(String(y.id || '')).first();

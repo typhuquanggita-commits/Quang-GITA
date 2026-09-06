@@ -445,6 +445,16 @@ CREATE TABLE IF NOT EXISTS chiPhi (
   -- trong ba vai ấy không thêm được lớp nào thật; thêm một người thì có.
   nguoiDuyet2 TEXT,
   duyetLuc2   TEXT,
+  -- BA ô chữ ký, không phải hai. Hai thang chồng lên nhau: nấc của
+  -- KHOẢN đòi tối đa 2 chữ ký, mốc của CHU KỲ đòi thêm 1. Một khoản 60
+  -- triệu trong một tuần đã chi 100 triệu cần đủ ba.
+  --
+  -- Bản đầu tôi chỉ dựng hai ô, và cổng ghi chữ ký thứ hai lại đòi ô
+  -- thứ nhất còn trống — nên chữ ký thứ hai của một khoản cần ba ô
+  -- không ghi được vào đâu cả, và khoản ấy đứng im mãi. Bộ thử bắt
+  -- được ngay ở phép đo "người thứ hai ký thì khoản mới vào sổ".
+  nguoiDuyet3 TEXT,
+  duyetLuc3   TEXT,
   nac         TEXT,               -- N1…N5, nấc THẬT đã áp (gồm cả gộp 7 ngày)
   baoGia      TEXT,               -- danh sách báo giá, JSON
   soBaoGia    INTEGER NOT NULL DEFAULT 0,
@@ -471,6 +481,52 @@ CREATE INDEX IF NOT EXISTS ix_cp_gop  ON chiPhi (khoanMuc, nguoiDeXuat, ngayChi)
 -- không lọc theo khoanMuc. Phép tính này chạy ở MỖI lượt ghi một khoản
 -- chi, nên nó đáng có đường riêng.
 CREATE INDEX IF NOT EXISTS ix_cp_nguoi ON chiPhi (nguoiDeXuat, ngayChi);
+
+-- ═════════════════════════════════════════════════════════════
+--  QUYỀN TÀI CHÍNH — VÌ SAO LÀ QUYỀN ĐƯỢC CẤP, KHÔNG PHẢI MỘT VAI MỚI
+--
+--  Chủ hệ thống chốt bản 9.97: khoản dưới 1,5 triệu do BỘ PHẬN KẾ TOÁN
+--  nhận báo cáo và phê duyệt; và quyền quản lý dòng tiền lớn có thể
+--  CHUYỂN CHO KẾ TOÁN TRƯỞNG khi Super Admin hoặc Admin hệ thống cấp
+--  quyền.
+--
+--  Nhưng bảng vai của Học viện (G.ROLES, R01–R15) KHÔNG CÓ vai kế toán
+--  nào cả. Quyền tài chính hiện dừng ở R01 Super Admin, R02 Admin hệ
+--  thống, R03 Giám đốc.
+--
+--  Chèn hai vai mới vào giữa bảng ấy là đánh số lại cả thang: mọi cổng
+--  trong hệ neo vào lv, từ trần xem hồ sơ khách tới bậc mở kho nghề.
+--  Một lượt chèn là một lượt dịch hàng chục chỗ chặn, và chỗ nào quên
+--  thì im lặng mở ra.
+--
+--  Nên kế toán và kế toán trưởng là CHỨC NĂNG ĐƯỢC CẤP, chồng lên vai
+--  đang có. Đó cũng đúng chữ chủ hệ dùng: "cấp quyền cho kế toán
+--  trưởng" — cấp quyền, không phải đổi vai.
+--
+--  HẠN MỨC LÀ MỘT MỐC CÓ TÊN, không phải một con số tự do. Cấp bằng số
+--  tự do thì sáu tháng sau có bảy hạn mức khác nhau không ai giải thích
+--  được; cấp bằng mốc thì mỗi lượt cấp là một câu trả lời cho câu hỏi
+--  "người này đứng ở nấc nào".
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS quyenTaiChinh (
+  id         TEXT PRIMARY KEY,
+  username   TEXT NOT NULL,
+  chucNang   TEXT NOT NULL,      -- keToan · keToanTruong
+  mocToiDa   TEXT,               -- C1…C6, chỉ có nghĩa với keToanTruong
+  lyDo       TEXT NOT NULL,
+  boiAi      TEXT NOT NULL,      -- chỉ R01–R02 cấp được
+  capLuc     TEXT NOT NULL,
+  hetHan     TEXT,               -- vắng nghĩa là không hết hạn
+  thuHoiLuc  TEXT,
+  thuHoiBoi  TEXT
+);
+
+-- Một người một chức năng — đúng một dòng CÒN HIỆU LỰC. Chỉ mục một
+-- phần: dòng đã thu hồi không tính, nên cấp lại sau khi thu hồi vẫn
+-- được mà không đụng khoá.
+CREATE UNIQUE INDEX IF NOT EXISTS ix_qtc_mot ON quyenTaiChinh (username, chucNang)
+  WHERE thuHoiLuc IS NULL;
+CREATE INDEX IF NOT EXISTS ix_qtc_ten ON quyenTaiChinh (username);
 
 -- ═════════════════════════════════════════════════════════════
 --  MIỄN GIẢM — VÌ SAO KHÔNG SỬA THẲNG phaiThu

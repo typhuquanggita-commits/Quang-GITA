@@ -164,6 +164,17 @@ kiểm câm trong kho này.
 - **Chi từ 1,5 triệu trở lên** (9.92, 9.94) — phải xin duyệt VÀ phải
   vào báo cáo chi. Một ngưỡng, hai nghĩa vụ, cùng một hằng số
   `TRAN_PHAI_DUYET`.
+- **Phòng Kế toán – Tài chính** (9.97) — ba vị trí: kế toán THU, kế toán
+  CHI, kế toán TRƯỞNG. Là một TRỤC RIÊNG, vuông góc với thang vai
+  R01–R15, cấp bằng `quyenTaiChinh` chứ không thêm vai. Chỉ R01–R02 cấp
+  được. Tách thu khỏi chi là lớp kiểm soát chính: người ghi nhận tiền
+  vào không được là người duyệt tiền ra.
+- **Sáu mốc chu kỳ** (9.97) — 10·15·20·50·80·100 triệu, TỔNG chi một
+  người một TUẦN. Mỗi mốc một vai cố định, leo R03 → R02 → R01, mốc
+  chẵn thêm một chữ ký. Kế toán trưởng được cấp hạn mức tới mốc nào thì
+  ký thay tới mốc ấy.
+- **Không còn lối tự ghi** (9.97) — mọi khoản chi đều chờ duyệt; dưới
+  1,5 triệu thì người duyệt là kế toán chi.
 - **Trần chu kỳ 10 triệu** (9.95) — tổng MỌI khoản chi của MỘT người
   trong MỘT tháng, cộng qua tất cả khoản mục. Chạm trần thì lối tự ghi
   đóng lại với người ấy tới hết chu kỳ. Đây là phép soi nhìn theo cột

@@ -44,7 +44,8 @@ import { soNgay, chotTuan, soatChot, tongHop, baoCaoKeToan, boSoKhaiThue,
   dsChot } from './bao-cao.js';
 import { tongNgayDoanhThu } from './bao-doanh-thu.js';
 import { ghiChi, duyetChi, huyChi, soChi, chotKet, dsChotKet,
-  xemThangDuyetChi, baoCaoChi, tongHopChi } from './chi-tieu.js';
+  xemThangDuyetChi, baoCaoChi, tongHopChi,
+  capQuyenTaiChinh, thuHoiQuyenTaiChinh, dsQuyenTaiChinh } from './chi-tieu.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -162,6 +163,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'dsChot',
   'ghiChi', 'duyetChi', 'huyChi', 'soChi', 'chotKet', 'dsChotKet',
   'xemThangDuyetChi', 'baoCaoChi', 'tongHopChi',
+  'capQuyenTaiChinh', 'thuHoiQuyenTaiChinh', 'dsQuyenTaiChinh',
   'deXuatMienGiam', 'duyetMienGiam', 'dsMienGiam',
   'ghiNhacThu', 'lichSuNhacThu', 'denHenChuaTra'];
 
@@ -249,6 +251,12 @@ async function lam(fn, y, env, db) {
   if (fn === 'xemThangDuyetChi') return await xemThangDuyetChi(y, env, db, hoSo);
   if (fn === 'baoCaoChi')        return await baoCaoChi(y, env, db, hoSo);
   if (fn === 'tongHopChi')       return await tongHopChi(y, env, db, hoSo);
+
+  /* Phòng Kế toán – Tài chính: một TRỤC RIÊNG, vuông góc với thang vai.
+     Xem chú giải dài ở chi-tieu.js. */
+  if (fn === 'capQuyenTaiChinh')    return await capQuyenTaiChinh(y, env, db, hoSo);
+  if (fn === 'thuHoiQuyenTaiChinh') return await thuHoiQuyenTaiChinh(y, env, db, hoSo);
+  if (fn === 'dsQuyenTaiChinh')     return await dsQuyenTaiChinh(y, env, db, hoSo);
 
   if (fn === 'deXuatMienGiam') return await deXuatMienGiam(y, env, db, hoSo);
   if (fn === 'duyetMienGiam')  return await duyetMienGiam(y, env, db, hoSo);

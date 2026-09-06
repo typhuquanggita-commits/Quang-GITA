@@ -114,59 +114,65 @@ const HINH_THUC = ['chuyenKhoan', 'tienMat', 'the'];
    không tồn tại, và một luật không làm nổi thì người ta học cách đi
    vòng qua nó.
 
-   ══ TRẦN CHU KỲ — LỖ THỦNG CỦA CHÍNH PHÉP SOI TRÊN ══
+   ══ THANG CHU KỲ — CỘT NGANG, VÀ AI XÁC NHẬN ══
 
-   Chốt của chủ hệ thống bản 9.95: "Tổng các khoản chi cần tổng hợp
-   lại. Tổng chi theo chu kỳ là 10 triệu đồng là phải báo cáo xác minh,
-   duyệt chi đầy đủ, để ngăn chặn thất thoát tự do các khoản chi nhỏ."
+   Chốt của chủ hệ thống bản 9.95 và 9.97:
 
-   Chủ hệ thống chỉ đúng một lỗ thủng trong phép soi chia nhỏ mà tôi
-   dựng ở 9.92: NÓ CHỈ CỘNG TRONG MỘT KHOẢN MỤC.
+     "Tổng các khoản chi cần tổng hợp lại. Tổng chi theo chu kỳ là 10
+      triệu đồng là phải báo cáo xác minh, duyệt chi đầy đủ, để ngăn
+      chặn thất thoát tự do các khoản chi nhỏ."
 
-     1,4 triệu văn phòng
-     1,4 triệu tiếp thị
-     1,4 triệu đào tạo
-     1,4 triệu hạ tầng …
+     "Khi tổng chi phí đạt 10 triệu theo chu kỳ cần có xác nhận của
+      giám đốc. Tạo các mốc phê duyệt để có thể cấp quyền hạn phê duyệt
+      (10 – 15 – 20 – 50 – 80 – 100 triệu là tổng tiền mỗi chu kỳ)."
 
-   Mỗi khoản đều dưới ngưỡng, mỗi khoản mục đều sạch, và cả bốn đi lối
-   tự ghi. Cứ thế thì một người tiêu bao nhiêu cũng được, không ai ký
-   một chữ nào. Đó đúng là "thất thoát tự do các khoản chi nhỏ", và
-   phép soi 9.92 không nhìn thấy nó vì nó nhìn theo cột dọc.
+   Chủ hệ chỉ đúng một lỗ thủng trong phép soi chia nhỏ tôi dựng ở
+   9.92: NÓ CHỈ CỘNG TRONG MỘT KHOẢN MỤC. Rải 1,4 triệu qua bốn khoản
+   mục thì mỗi cột đều sạch. Đó đúng là "thất thoát tự do các khoản chi
+   nhỏ", và phép soi ấy mù vì nó nhìn theo cột DỌC.
 
-   Nên thêm một trần nhìn theo cột NGANG:
+   Thang chu kỳ nhìn theo cột NGANG: tổng MỌI khoản chi của MỘT người
+   trong MỘT chu kỳ, cộng qua tất cả khoản mục. Tổng ấy leo tới mốc nào
+   thì khoản chi phải được VAI CỦA MỐC ẤY xác nhận.
 
-     TỔNG MỌI KHOẢN CHI của MỘT NGƯỜI trong MỘT CHU KỲ, cộng qua tất cả
-     khoản mục. Chạm 10 triệu thì LỐI TỰ GHI ĐÓNG LẠI với người ấy cho
-     hết chu kỳ — mọi khoản sau đó, dù nhỏ đến đâu, đều phải có người
-     thứ hai ký.
+     C0  dưới 10tr   — Kế toán
+     C1  từ 10tr     — Giám đốc
+     C2  từ 15tr     — Giám đốc, và thêm một chữ ký nữa ở tầng tài chính
+     C3  từ 20tr     — Admin hệ thống
+     C4  từ 50tr     — Admin hệ thống, và thêm một chữ ký nữa
+     C5  từ 80tr     — Super Admin
+     C6  từ 100tr    — Super Admin, và thêm một chữ ký nữa
 
-   Hai phép soi bắt hai kiểu khác nhau và không thay được nhau:
+   Thang leo hai chiều cùng lúc — CẤP lên R03 → R02 → R01, và SỐ CHỮ KÝ
+   thêm một ở mỗi mốc chẵn. Leo một chiều thì tới mốc thứ tư đã hết
+   cấp để leo, và ba mốc cuối thành ba cái tên cho cùng một luật.
 
-     gộp 7 ngày theo khoản mục — bắt CHIA NHỎ, nhanh, ngưỡng thấp
-     trần chu kỳ theo người   — bắt KHỐI LƯỢNG, chậm, ngưỡng cao
+   ══ CHU KỲ LÀ TUẦN ══
 
-   ══ BA CHỖ TÔI CHỌN, KHAI RA ĐỂ CHỦ HỆ CHỐT LẠI ══
+   Chốt của chủ hệ. Khớp nhịp chốt sổ ở 9.90 — tuần chốt xong là con số
+   đứng yên, nên trần tính trên một khoảng đã đóng chứ không trên một
+   khoảng còn động.
 
-   1. CHU KỲ LÀ THÁNG. Chủ hệ nói "chu kỳ" mà không nói tháng hay tuần.
-      Chọn tháng vì kỳ kế toán và báo cáo chi đều mặc định theo tháng,
-      và một trần ngân sách theo tháng là cách mọi nơi vẫn làm.
+   ══ HAI PHÉP SOI, HAI KIỂU LỌT KHÁC NHAU ══
 
-   2. TRẦN TÍNH THEO NGƯỜI, không theo cả Học viện. Mười triệu cho toàn
-      Học viện một tháng thì chạm trần ngay ngày đầu và cái trần thành
-      vô nghĩa. Câu "thất thoát tự do" cũng nói về một người tiêu vặt,
-      không nói về tổng chi của tổ chức.
+     gộp 7 ngày theo khoản mục — bắt CHIA NHỎ,   một cột, ngưỡng thấp
+     thang chu kỳ theo người   — bắt KHỐI LƯỢNG, cả bảng, sáu mốc
 
-   3. CỘNG MỌI KHOẢN CHI, không chỉ cộng khoản đi lối tự ghi. Đọc hẹp
-      hơn thì chỉ cộng phần chưa ai ký; đọc rộng thì cộng tất. Chọn
-      cách rộng vì nó chặt hơn, và vì một người đã tiêu mười triệu
-      trong tháng chính là người mà khoản hai trăm nghìn tiếp theo
-      đáng có thêm một cặp mắt.
+   Không cái nào thay được cái kia.
 
-   Trần neo vào GIÁ MỘT GÓI T3, cùng cái neo với nấc N3: một người tiêu
-   hết học phí cả năm của một nhà trong một chu kỳ thì phải giải trình.
+   ══ BẰNG CHỨNG THEO TỪNG KHOẢN, CẤP DUYỆT THEO GỘP ══
+
+   Không ai lấy được ba báo giá cho "cả tuần". Đòi thế là đòi một thứ
+   không tồn tại, và một luật không làm nổi thì người ta học cách đi
+   vòng qua nó — rồi đi vòng luôn cả những luật làm được.
    ═══════════════════════════════════════════════════════════════ */
 
 const NGAY_GOP = 7;
+
+/* Chu kỳ cộng tổng chi. Chốt của chủ hệ thống bản 9.97: TUẦN. Khớp
+   nhịp chốt sổ ở 9.90 — tuần chốt xong là con số đứng yên, nên trần
+   tính trên một khoảng đã đóng chứ không trên một khoảng còn động. */
+const CHU_KY = 'tuan';
 
 const NAC_THANG = [
   {ma: 'N1', ten: 'Tiền lặt vặt',      tu: 0,        den: 1500000,
@@ -201,9 +207,159 @@ const NAC_THANG = [
    ngưỡng là chỗ người ta nhắm vào. */
 const TRAN_PHAI_DUYET = NAC_THANG[1].tu;
 
-/* Trần chu kỳ — chốt của chủ hệ thống bản 9.95. Neo vào giá gói T3,
-   cùng cái neo với nấc N3. */
-const TRAN_CHU_KY = NAC_THANG[2].tu;
+/* ══ SÁU MỐC CHU KỲ ══
+   Con số của chủ hệ thống, bản 9.97. Mốc đầu neo vào giá gói T3 — cùng
+   cái neo với nấc N3 — nên soatNeoThang() soi được nó. */
+const MOC_CHU_KY = [
+  {ma: 'C0', tu: 0,         vai: 'keToan', tenVai: 'Kế toán',        themChuKy: 0,
+   viec: 'Kế toán nhận báo cáo và phê duyệt.'},
+  {ma: 'C1', tu: 10000000,  vai: 'R03',    tenVai: 'Giám đốc',       themChuKy: 0,
+   viec: 'Giám đốc xác nhận.'},
+  {ma: 'C2', tu: 15000000,  vai: 'R03',    tenVai: 'Giám đốc',       themChuKy: 1,
+   viec: 'Giám đốc xác nhận, và thêm một chữ ký nữa ở tầng tài chính.'},
+  {ma: 'C3', tu: 20000000,  vai: 'R02',    tenVai: 'Admin hệ thống', themChuKy: 0,
+   viec: 'Admin hệ thống xác nhận.'},
+  {ma: 'C4', tu: 50000000,  vai: 'R02',    tenVai: 'Admin hệ thống', themChuKy: 1,
+   viec: 'Admin hệ thống xác nhận, và thêm một chữ ký nữa.'},
+  {ma: 'C5', tu: 80000000,  vai: 'R01',    tenVai: 'Super Admin',    themChuKy: 0,
+   viec: 'Super Admin xác nhận.'},
+  {ma: 'C6', tu: 100000000, vai: 'R01',    tenVai: 'Super Admin',    themChuKy: 1,
+   viec: 'Super Admin xác nhận, và thêm một chữ ký nữa.'}
+];
+
+const TRAN_CHU_KY = MOC_CHU_KY[1].tu;
+
+/** Mốc của một tổng chu kỳ. */
+function mocCua(tong) {
+  for (let i = MOC_CHU_KY.length - 1; i >= 0; i--)
+    if (tong >= MOC_CHU_KY[i].tu) return MOC_CHU_KY[i];
+  return MOC_CHU_KY[0];
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PHÒNG KẾ TOÁN – TÀI CHÍNH
+
+   Chủ hệ thống chốt bản 9.97: "Hiện tại chưa có phòng kế toán – tài
+   chính trên hệ thống. Lập trình tạo vị trí này, và toàn bộ các phần
+   liên quan tài chính được chuyển tới vị trí này làm việc."
+
+   ══ VÌ SAO KHÔNG THÊM HAI VAI VÀO G.ROLES ══
+
+   Bảng vai R01–R15 là MỘT TRỤC THẲNG: lv càng nhỏ càng nhiều quyền,
+   chạy từ Super Admin xuống Học viên. Mọi cổng trong hệ neo vào lv —
+   trần xem hồ sơ khách, bậc mở kho nghề, quyền điều hành.
+
+   Kế toán trưởng KHÔNG nằm được trên trục ấy:
+
+     đặt cao (lv 3) → có luôn quyền xem hồ sơ khách tầng 4-5 và toàn bộ
+                      kho nghề, những thứ không liên quan gì tới việc
+                      của họ
+     đặt thấp (lv 16) → không ký nổi một khoản chi nào
+
+   Chèn vào giữa thì phải đánh số lại cả thang, và mỗi chỗ chặn neo vào
+   lv là một chỗ có thể quên. Chỗ quên không báo lỗi — nó im lặng mở ra.
+
+   Nên PHÒNG TÀI CHÍNH LÀ MỘT TRỤC RIÊNG, vuông góc với trục vai. Một
+   người có một vai (chức vụ trong Học viện) và có thể có thêm một VỊ
+   TRÍ trong phòng tài chính. Hai thứ cộng lại, không thay nhau.
+
+   ══ VÀ ĐÂY CŨNG LÀ CHỖ CHẶT NHẤT VỀ BẢO MẬT ══
+
+   Vị trí trong phòng tài chính mở đúng những cửa TIỀN, và KHÔNG mở
+   thêm một cửa dữ liệu khách nào. Một kế toán viên vốn là Giáo viên
+   (R08) thì sau khi được cấp vẫn không xem được hồ sơ khách hàng —
+   phép đo ở bộ thử giữ đúng chỗ ấy.
+
+   Đó là điểm khác căn bản với cách thêm vai: thêm vai thì quyền đi
+   theo cả gói, còn cấp vị trí thì quyền đi theo đúng việc.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ══ BA VỊ TRÍ, VÀ VÌ SAO TÁCH THU KHỎI CHI ══
+
+   Chủ hệ chốt bản 9.97: kế toán trưởng, kế toán THU, kế toán CHI.
+
+   Tách hai đầu tiền không phải để có thêm chức danh. Đó là lớp kiểm
+   soát cổ nhất và còn hiệu lực nhất của nghề kế toán: NGƯỜI GHI NHẬN
+   TIỀN VÀO KHÔNG ĐƯỢC LÀ NGƯỜI DUYỆT TIỀN RA.
+
+   Gộp hai đầu vào một người thì người ấy dựng được một vòng khép kín
+   mà không ai đứng ngoài: ghi một phiếu thu không có thật để tổng thu
+   trông đủ, rồi duyệt một khoản chi mang tiền ấy đi. Mỗi bước đều đúng
+   luật, sổ vẫn cân, và không phép soi nào trong hệ này bắt được — vì
+   cả hai bước đều có chữ ký hợp lệ của cùng một người.
+
+   Tách ra thì cái vòng ấy cần HAI người đồng ý, và đó là cả sự khác
+   biệt.
+
+   Kế toán trưởng giữ cả hai đầu — nhưng đó là một người, một chức danh
+   có tên, và mọi lượt ký của họ đều nằm trong nhật ký. Tập trung có
+   kiểm soát khác hẳn với gộp vì tiện tay.
+
+   Danh sách trắng: tên nào không có ở đây là không cấp được, kể cả một
+   vị trí nghe rất hợp lý mà chưa ai chốt. */
+const VI_TRI_TC = {
+  keToanThu: {
+    ten: 'Kế toán thu',
+    dau: 'thu',
+    viec: 'Duyệt phiếu thu, theo dõi công nợ, nhắc thu, đối chiếu sao kê. ' +
+          'KHÔNG duyệt được khoản chi nào.'
+  },
+  keToanChi: {
+    ten: 'Kế toán chi',
+    dau: 'chi',
+    viec: 'Duyệt khoản chi dưới mốc, giữ sổ chi, đếm và chốt két. ' +
+          'KHÔNG duyệt được phiếu thu nào.'
+  },
+  keToanTruong: {
+    ten: 'Kế toán trưởng',
+    dau: 'ca-hai',
+    viec: 'Cả hai đầu tiền, cộng quyền xác nhận tổng chi chu kỳ tới MỐC ĐƯỢC ' +
+          'CẤP. Đây là chỗ chủ hệ chuyển quyền khi dòng tiền lớn.'
+  }
+};
+
+/** Người này có đứng ở đầu tiền ấy không — 'thu' hay 'chi'. */
+export function oDauTien(quyen, dau) {
+  if (quyen.keToanTruong) return true;
+  return dau === 'thu' ? !!quyen.keToanThu : !!quyen.keToanChi;
+}
+
+export async function quyenCua(db, username) {
+  const r = await db.prepare(
+    'SELECT chucNang, mocToiDa, hetHan FROM quyenTaiChinh ' +
+    'WHERE username = ? AND thuHoiLuc IS NULL'
+  ).bind(username).all();
+  const bay = new Date().toISOString();
+  const q = {keToanThu: false, keToanChi: false, keToanTruong: false, mocToiDa: null};
+  for (const x of (r.results || [])) {
+    /* Quyền hết hạn thì TỰ TẮT. Một quyền chỉ mất khi có người chủ
+       động gỡ là một quyền sẽ ở lại mãi — cùng luật với giấy phép xem
+       hồ sơ khách. */
+    if (x.hetHan && x.hetHan <= bay) continue;
+    q[x.chucNang] = true;
+    if (x.chucNang === 'keToanTruong' && x.mocToiDa) q.mocToiDa = x.mocToiDa;
+  }
+  return q;
+}
+
+/** Người này đủ tư cách xác nhận ở mốc ấy chưa.
+
+    Hai đường: đúng vai cố định của mốc, HOẶC là kế toán trưởng được cấp
+    hạn mức tới mốc ấy trở lên. Đường thứ hai là chỗ chủ hệ chuyển quyền
+    khi dòng tiền lớn. */
+function duTuCachMoc(moc, role, quyen) {
+  if (moc.vai === 'keToan') return oDauTien(quyen, 'chi') || (BAC[role] || 99) <= 3;
+  if (role === moc.vai) return true;
+  /* Vai CAO HƠN vai của mốc thì đương nhiên xác nhận được: R01 ký thay
+     R03 là chuyện bình thường, chặn nó lại là chặn nhầm hướng. */
+  if ((BAC[role] || 99) < (BAC[moc.vai] || 99)) return true;
+  if (quyen.keToanTruong && quyen.mocToiDa) {
+    const i = MOC_CHU_KY.findIndex(x => x.ma === moc.ma);
+    const j = MOC_CHU_KY.findIndex(x => x.ma === quyen.mocToiDa);
+    return j >= i;
+  }
+  return false;
+}
 
 /** Nấc của một số tiền. Biên DƯỚI tính vào nấc trên: 10 triệu chẵn là
     N3, không phải N2. */
@@ -229,8 +385,8 @@ export function soatNeoThang() {
     if (Number(n.tu) !== Number(neo[n.ma]))
       lech.push({nac: n.ma, thangDangDe: n.tu, giaGoiBayGio: neo[n.ma], neo: n.neo});
   }
-  if (Number(TRAN_CHU_KY) !== Number(GIA_TANG[3]))
-    lech.push({nac: 'TRẦN CHU KỲ', thangDangDe: TRAN_CHU_KY,
+  if (Number(MOC_CHU_KY[1].tu) !== Number(GIA_TANG[3]))
+    lech.push({nac: 'C1', thangDangDe: MOC_CHU_KY[1].tu,
       giaGoiBayGio: GIA_TANG[3], neo: 'một gói T3'});
   return {khop: lech.length === 0, lech,
     vi: 'Mỗi nấc neo vào giá một gói học phí, và trần chu kỳ neo vào gói T3. ' +
@@ -320,10 +476,20 @@ export async function ghiChi(y, env, db, hoSo) {
         nacTien.ten + '. Nấc này còn thiếu: ' + thieu.join(', ') + '.',
       nacNay: {ma: nacTien.ma, ten: nacTien.ten, viec: nacTien.viec}};
 
-  /* Chạm trần chu kỳ thì LỐI TỰ GHI ĐÓNG, dù khoản này nhỏ đến đâu.
-     Nấc thang không đổi — bằng chứng vẫn theo số tiền của khoản này —
-     chỉ cái lối vào sổ đổi: từ đây phải có người thứ hai ký. */
-  const tuGhiDuoc = nac.soDuyet === 0 && !chamTran;
+  /* ══ KHÔNG CÒN LỐI TỰ GHI ══
+
+     Chốt của chủ hệ thống bản 9.97: "Các khoản chi nhỏ dưới 1,5 triệu
+     do bộ phận quản lý kế toán chịu trách nhiệm nhận báo cáo, phê
+     duyệt. Từng đồng liên quan chi phí đều có bộ phận, có người chịu
+     trách nhiệm quản lý."
+
+     Bản 9.92 cho khoản dưới 1,5 triệu ghi thẳng vào sổ, một người, không
+     ai ký. Nay không còn: MỌI khoản chi đều nằm chờ duyệt, và khoản
+     dưới 1,5 triệu thì người duyệt là KẾ TOÁN.
+
+     Cái mất là sự nhanh; cái được là câu "từng đồng có người chịu trách
+     nhiệm" trở thành đúng theo nghĩa đen, tra được bằng một câu lệnh. */
+  const mocGio = mocCua(chuKy.tong + tien);
 
   const id = 'CP-' + tokenMoi().slice(0, 14);
   const luc = new Date().toISOString();
@@ -339,67 +505,41 @@ export async function ghiChi(y, env, db, hoSo) {
     coHoaDon ? (String(c.maHoaDon || '').slice(0, 100) || null) : null,
     String(c.minhChung || '').slice(0, 300) || null,
     dienGiai.slice(0, 1000), hoSo.u, luc,
-    tuGhiDuoc ? 'daDuyet' : 'choDuyet', tuGhiDuoc ? 1 : 0,
-    /* Lối tự ghi vẫn ghi TÊN NGƯỜI vào cột người duyệt — nhưng cột
-       tuGhi nói rõ đó là chính người ấy, nên không ai đọc nhầm thành
-       một khoản có hai người ký. */
-    tuGhiDuoc ? hoSo.u : null, tuGhiDuoc ? luc : null,
+    'choDuyet', 0, null, null,
     nac.ma, baoGia.length ? JSON.stringify(baoGia) : null, baoGia.length,
     hopDong.slice(0, 100) || null).run();
 
-  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
-    viec: tuGhiDuoc ? 'CHI_TUGHI' : 'CHI_DEXUAT',
-    doiTuong: id, chiTiet: KHOAN_MUC[muc] + ' · ' + dinhDang(tien) + ' · nấc ' + nac.ma +
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'CHI_DEXUAT',
+    doiTuong: id, chiTiet: KHOAN_MUC[muc] + ' · ' + dinhDang(tien) +
+      ' · nấc ' + nac.ma + ' · mốc ' + mocGio.ma +
       (coHoaDon ? ' · có hoá đơn' : ' · KHÔNG hoá đơn') +
-      (gop ? ' · gộp 7 ngày ' + dinhDang(gop + tien) : '') +
-      (chamTran ? ' · CHẠM TRẦN CHU KỲ ' + dinhDang(chuKy.tong + tien) : '')});
+      (gop ? ' · gộp 7 ngày ' + dinhDang(gop + tien) : '')});
 
-  return {ok: true, id, khoanMuc: muc, soTien: tien,
-    trangThai: tuGhiDuoc ? 'daDuyet' : 'choDuyet',
-    tuGhi: tuGhiDuoc,
+  return {ok: true, id, khoanMuc: muc, soTien: tien, trangThai: 'choDuyet',
     nac: nac.ma, tenNac: nac.ten,
-    /* Chạm trần thì cần ÍT NHẤT một chữ ký, kể cả khi nấc của khoản là
-       N1. Nói con số thật ra đây để màn hình không phải tự suy. */
-    canMayNguoiDuyet: Math.max(nac.soDuyet, chamTran ? 1 : 0),
+    /* Số chữ ký = của NẤC KHOẢN, cộng thêm phần MỐC CHU KỲ đòi. Hai
+       thang chồng lên nhau chứ không thay nhau: một khoản 60 triệu ở
+       tuần đã tiêu 100 triệu cần cả ba chữ ký. */
+    canMayNguoiDuyet: Math.max(1, nac.soDuyet) + mocGio.themChuKy,
     gopBayNgay: gop + tien,
-    chuKy: {ky: chuKy.ky, daChi: chuKy.tong + tien, tran: TRAN_CHU_KY,
-      chamTran, conLai: Math.max(0, TRAN_CHU_KY - chuKy.tong - tien)},
-    biDongLoiTuGhiVi: (chamTran && nac.soDuyet === 0)
-      ? 'Khoản này ' + dinhDang(tien) + ' vốn thuộc lối tự ghi, nhưng tổng chi ' +
-        'của bạn trong ' + chuKy.ky + ' đã là ' + dinhDang(chuKy.tong + tien) +
-        ' — chạm trần chu kỳ ' + dinhDang(TRAN_CHU_KY) + '. Từ đây tới hết chu kỳ, ' +
-        'mọi khoản đều phải có người thứ hai ký.'
-      : undefined,
-    /* Nói NGAY ở bước ghi rằng khoản này ở nấc nào và vì sao. Người ghi
-       một khoản một triệu tư mà thấy nó vào "chờ duyệt" sẽ tưởng máy
-       hỏng, nếu không ai nói cho họ biết tuần này họ đã ghi bao nhiêu ở
-       cùng khoản mục. */
-    biDayLenNacVi: nac !== nacTien
-      ? 'Riêng khoản này ' + dinhDang(tien) + ' thuộc nấc ' + nacTien.ma +
-        ', nhưng cộng với ' + dinhDang(gop) + ' đã ghi ở cùng khoản mục trong ' +
-        NGAY_GOP + ' ngày thì thành ' + dinhDang(gop + tien) + ' — nấc ' + nac.ma + '.'
-      : undefined,
-    vi: nac.viec};
+    chuKy: {ky: chuKy.ky, daChi: chuKy.tong + tien,
+      moc: mocGio.ma, vaiXacNhan: mocGio.tenVai, viec: mocGio.viec},
+    vi: nac.viec + (mocGio.ma === 'C0'
+      ? ' Khoản dưới ' + dinhDang(TRAN_PHAI_DUYET) + ' thì người duyệt là KẾ TOÁN.'
+      : ' Tuần này đã chi ' + dinhDang(chuKy.tong + tien) + ' — mốc ' + mocGio.ma +
+        ': ' + mocGio.viec)};
 }
 
-/* ── CỘNG DỒN BẢY NGÀY THEO (KHOẢN MỤC × NGƯỜI GHI) ──
-
-   Chỉ cộng những khoản ĐÃ VÀO SỔ và còn hiệu lực: khoản bị từ chối hay
-   bị huỷ không phải tiền đã ra, nên không được đẩy người ta qua cổng
-   duyệt vì một khoản đã bỏ.
-
-   Cửa sổ trượt quanh ngayChi chứ không quanh hôm nay: nhập bù một
-   khoản của tuần trước phải cộng với những khoản của TUẦN ẤY. */
 /* ── TỔNG CHI CỦA MỘT NGƯỜI TRONG MỘT CHU KỲ ──
 
    Cộng MỌI khoản mục, khác hẳn phép gộp bảy ngày ở dưới. Chu kỳ là
-   THÁNG theo giờ Việt Nam — dùng chung phép dựng kỳ với cả sổ báo cáo,
-   nên "tháng 9" ở đây và "tháng 9" ở bản kế toán là cùng một khoảng.
+   TUẦN theo giờ Việt Nam — dùng chung phép dựng kỳ với cả sổ báo cáo,
+   nên tuần ở đây và tuần đã chốt ở bản kế toán là cùng một khoảng.
 
    Chỉ cộng khoản còn hiệu lực: khoản bị từ chối hay bị huỷ không phải
    tiền đã ra, nên không được đẩy người ta chạm trần vì một khoản đã bỏ. */
 async function tongChuKy(db, nguoi, ngayChi) {
-  const k = dungKy('thang', new Date(new Date(ngayChi).getTime() + 7 * 3600e3)
+  const k = dungKy(CHU_KY, new Date(new Date(ngayChi).getTime() + 7 * 3600e3)
     .toISOString().slice(0, 10));
   const r = await db.prepare(
     'SELECT COALESCE(SUM(soTien),0) t, COUNT(*) n FROM chiPhi ' +
@@ -423,63 +563,77 @@ async function gopBayNgay(db, khoanMuc, nguoi, ngayChi) {
 
 /* ═══════════════ DUYỆT MỘT KHOẢN CHI ═══════════════ */
 export async function duyetChi(y, env, db, hoSo) {
-  const lv = BAC[hoSo.role] || 99;
-  if (lv > 3) return {ok: false, code: 'NOPERM', error: 'Chỉ R01–R03 duyệt được khoản chi.'};
-
   const cp = await db.prepare('SELECT * FROM chiPhi WHERE id = ?')
     .bind(String(y.id || '')).first();
   if (!cp) return {ok: false, error: 'Không tìm thấy khoản chi này.'};
+
+  const quyen = await quyenCua(db, hoSo.u);
+  const lv = BAC[hoSo.role] || 99;
+
+  /* Sàn: tầng tài chính R01–R03, HOẶC người được cấp chức năng kế toán.
+     Đây là chỗ chức năng được cấp mở cửa cho một vai vốn không có quyền
+     tài chính — đúng ý chủ hệ: bộ phận kế toán chịu trách nhiệm. */
+  if (lv > 3 && !oDauTien(quyen, 'chi'))
+    return {ok: false, code: 'NOPERM',
+      error: 'Duyệt chi cần vai R01–R03, hoặc vị trí Kế toán chi / Kế toán trưởng. ' +
+             'Kế toán THU không duyệt được khoản chi nào — người ghi nhận tiền vào ' +
+             'không được là người duyệt tiền ra.'};
 
   if (String(cp.nguoiDeXuat) === String(hoSo.u))
     return {ok: false, code: 'TUDUYET',
       error: 'Người đề xuất chi không tự duyệt được. Tiền đi RA thì phải có ' +
              'người thứ hai đứng giữa.'};
 
-  /* Ngưỡng đọc ở lúc DUYỆT, không đọc ở lúc đề xuất: một khoản có thể
-     nằm chờ nhiều ngày, và cấp duyệt phải đúng theo số tiền thật của
-     nó chứ không theo cái đã kiểm hôm đề xuất. */
-  /* CẤP DUYỆT LÀ MỘT LUẬT CHUNG CHO CẢ THANG, KHÔNG PHẢI MỘT CỘT
-     CỦA TỪNG NẤC.
+  if (cp.nguoiDuyet && String(cp.nguoiDuyet) === String(hoSo.u))
+    return {ok: false, code: 'DAKY', error: 'Bạn đã ký duyệt khoản này rồi.'};
 
-     Bản đầu tôi cho mỗi nấc một cột capDuyet. Cả năm nấc đều là 3 —
-     đúng bằng cái sàn R01–R03 đã chặn ở đầu hàm — nên cái cột ấy không
-     bao giờ chặn được gì: một phép kiểm không thể đỏ. Bộ thử bắt được
-     ngay lần chạy đầu, vì R05 bị chặn ở sàn chứ không bị chặn ở cột.
-
-     Đã bỏ cột. Thang này leo bằng SỐ CHỮ KÝ và BẰNG CHỨNG; leo bằng
-     cấp bậc thì không leo được, vì tầng tài chính chỉ có ba vai. */
   const nac = NAC_THANG.find(x => x.ma === cp.nac) || nacCua(Number(cp.soTien));
 
-  /* ── NGƯỜI THỨ HAI KHÔNG ĐƯỢC TRÙNG NGƯỜI THỨ NHẤT ──
+  /* ══ MỐC CHU KỲ ĐỌC LẠI Ở LÚC DUYỆT ══
 
-     Nấc trên cùng đòi hai chữ ký. Không chặn chỗ này thì một người bấm
-     duyệt hai lần là đủ hai chữ ký, và cả cái nấc ấy thành trang trí. */
-  if (cp.nguoiDuyet && String(cp.nguoiDuyet) === String(hoSo.u))
-    return {ok: false, code: 'DAKY',
-      error: 'Bạn đã ký duyệt khoản này rồi. Nấc ' + nac.ma + ' cần ' + nac.soDuyet +
-             ' người duyệt KHÁC NHAU.'};
+     Không đọc lại mốc đã ghi lúc đề xuất: giữa hai mốc thời gian ấy,
+     những khoản khác của cùng người trong cùng tuần có thể đã vào sổ và
+     đẩy tổng lên mốc cao hơn. Duyệt theo mốc cũ là để một tuần 100
+     triệu đi qua cổng của một tuần 10 triệu. */
+  const ck = await tongChuKy(db, cp.nguoiDeXuat, cp.ngayChi);
+  const moc = mocCua(ck.tong);
+
+  if (!duTuCachMoc(moc, hoSo.role, quyen))
+    return {ok: false, code: 'CHUADUMOC',
+      error: 'Tuần ' + ck.ky + ' người này đã chi ' + dinhDang(ck.tong) +
+        ' — mốc ' + moc.ma + '. ' + moc.viec +
+        (moc.vai === 'keToan' ? '' :
+          ' Hoặc kế toán trưởng được cấp hạn mức tới ' + moc.ma + ' trở lên.'),
+      moc: moc.ma, vaiCan: moc.tenVai, tongChuKy: ck.tong};
+
+  const canKy = Math.max(1, nac.soDuyet) + moc.themChuKy;
+
+  /* Từ chối thì dừng ngay ở chữ ký đầu — một người thấy sai là đủ để
+     khoản ấy không đi tiếp. */
+  /* Ô chữ ký kế tiếp còn trống. Đếm chứ không đoán: hai thang chồng
+     lên nhau nên số chữ ký cần có thể là 1, 2 hoặc 3, và mỗi lượt ký
+     phải rơi đúng vào ô trống kế tiếp. */
+  const chuKyThu = (cp.nguoiDuyet ? 1 : 0) + (cp.nguoiDuyet2 ? 1 : 0) + 1;
+  if (chuKyThu > 3) return {ok: false, error: 'Khoản chi này đã đủ chữ ký.'};
+  if (cp.nguoiDuyet2 && String(cp.nguoiDuyet2) === String(hoSo.u))
+    return {ok: false, code: 'DAKY', error: 'Bạn đã ký duyệt khoản này rồi.'};
 
   const duyet = y.duyet !== false;
   const gio = new Date().toISOString();
-
-  /* Từ chối thì dừng ngay ở chữ ký đầu tiên — không cần người thứ hai
-     để nói không. Một người thấy sai là đủ để khoản ấy không đi tiếp. */
-  const chuKyThu = cp.nguoiDuyet ? 2 : 1;
-  const duXong = !duyet || chuKyThu >= nac.soDuyet;
+  const duXong = !duyet || chuKyThu >= canKy;
+  const oKy = chuKyThu === 1 ? '' : String(chuKyThu);
 
   const r = duXong
     ? await db.prepare(
-        'UPDATE chiPhi SET trangThai = ?, ' +
-        (chuKyThu === 2 ? 'nguoiDuyet2 = ?, duyetLuc2 = ?, ' : 'nguoiDuyet = ?, duyetLuc = ?, ') +
-        "lyDo = ? WHERE id = ? AND trangThai = 'choDuyet'"
+        'UPDATE chiPhi SET trangThai = ?, nguoiDuyet' + oKy + ' = ?, ' +
+        'duyetLuc' + oKy + " = ?, lyDo = ? WHERE id = ? AND trangThai = 'choDuyet'"
       ).bind(duyet ? 'daDuyet' : 'tuChoi', hoSo.u, gio,
         String(y.lyDo || '').slice(0, 500) || null, cp.id).run()
-    /* Chữ ký thứ nhất của một nấc cần hai: ghi tên nhưng GIỮ NGUYÊN
-       trạng thái choDuyet. Đổi sang daDuyet ở đây là cho tiền ra với
-       một chữ ký, đúng cái nấc này sinh ra để chặn. */
+    /* Chữ ký chưa đủ: ghi tên nhưng GIỮ NGUYÊN choDuyet. Đổi sang
+       daDuyet ở đây là cho tiền ra khi còn thiếu chữ ký. */
     : await db.prepare(
-        'UPDATE chiPhi SET nguoiDuyet = ?, duyetLuc = ? ' +
-        "WHERE id = ? AND trangThai = 'choDuyet' AND nguoiDuyet IS NULL"
+        'UPDATE chiPhi SET nguoiDuyet' + oKy + ' = ?, duyetLuc' + oKy + ' = ? ' +
+        "WHERE id = ? AND trangThai = 'choDuyet' AND nguoiDuyet" + oKy + ' IS NULL'
       ).bind(hoSo.u, gio, cp.id).run();
 
   if (!((r && r.meta && r.meta.changes) || 0))
@@ -487,15 +641,18 @@ export async function duyetChi(y, env, db, hoSo) {
 
   if (!duXong) {
     await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'CHI_KY1',
-      doiTuong: cp.id, chiTiet: 'nấc ' + nac.ma + ' · chữ ký 1/' + nac.soDuyet});
-    return {ok: true, trangThai: 'choDuyet', nac: nac.ma,
-      daKy: 1, canKy: nac.soDuyet, choNguoiThuHai: true,
-      vi: 'Nấc ' + nac.ma + ' cần ' + nac.soDuyet + ' người duyệt khác nhau. ' +
-          'Đã có chữ ký thứ nhất; khoản chi CHƯA vào sổ.'};
+      doiTuong: cp.id, chiTiet: 'nấc ' + nac.ma + ' · mốc ' + moc.ma +
+        ' · chữ ký 1/' + canKy});
+    return {ok: true, trangThai: 'choDuyet', nac: nac.ma, moc: moc.ma,
+      /* Số chữ ký ĐÃ CÓ, không phải hằng số 1: một khoản cần ba chữ ký
+         thì lượt ký thứ hai vẫn chưa xong, và báo "1" ở đây là nói sai
+         cho người đang chờ. */
+      daKy: chuKyThu, canKy, conThieu: canKy - chuKyThu, choNguoiTiepTheo: true,
+      vi: 'Cần ' + canKy + ' người duyệt khác nhau — nấc ' + nac.ma +
+          ' của khoản, cộng mốc ' + moc.ma + ' của tuần. Đã có ' + chuKyThu +
+          ', còn thiếu ' + (canKy - chuKyThu) + '. Khoản chi CHƯA vào sổ.'};
   }
 
-  /* Chi phí rơi vào tuần ĐÃ CHỐT thì để lại bút toán, cùng luật với
-     phiếu thu. Số DƯƠNG vì đây là một khoản chi thêm vào kỳ ấy. */
   const dc = duyet ? await ghiDieuChinh(db, {
     lucGoc: cp.ngayChi, loai: 'duyetChi', idChungTu: cp.id,
     soTien: Number(cp.soTien), boi: hoSo.u,
@@ -503,11 +660,112 @@ export async function duyetChi(y, env, db, hoSo) {
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
     viec: duyet ? 'CHI_DUYET' : 'CHI_TUCHOI',
-    doiTuong: cp.id, chiTiet: KHOAN_MUC[cp.khoanMuc] + ' · ' + dinhDang(cp.soTien)});
+    doiTuong: cp.id, chiTiet: KHOAN_MUC[cp.khoanMuc] + ' · ' + dinhDang(cp.soTien) +
+      ' · nấc ' + nac.ma + ' · mốc ' + moc.ma});
 
   return {ok: true, trangThai: duyet ? 'daDuyet' : 'tuChoi',
-    nac: nac.ma, daKy: chuKyThu, canKy: nac.soDuyet,
+    nac: nac.ma, moc: moc.ma, daKy: chuKyThu, canKy,
     dieuChinh: dc ? {id: dc.id, kyBiAnhHuong: dc.kyBiAnhHuong} : undefined};
+}
+
+/* ═══════════════ CẤP VÀ THU HỒI QUYỀN TÀI CHÍNH ═══════════════
+
+   Chỉ R01 Super Admin và R02 Admin hệ thống — đúng chữ chủ hệ dùng ở
+   bản 9.97. Giám đốc KHÔNG tự cấp được quyền cho người sẽ ký thay
+   mình: đó là tự nới cổng của chính mình. */
+export async function capQuyenTaiChinh(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 2) return {ok: false, code: 'NOPERM',
+    error: 'Chỉ Super Admin và Admin hệ thống cấp được quyền tài chính.'};
+
+  const ten = String(y.username || '').trim().toLowerCase();
+  const cn = String(y.chucNang || '').trim();
+  const lyDo = String(y.lyDo || '').trim();
+  if (!ten) return {ok: false, error: 'Thiếu tên đăng nhập.'};
+  if (!VI_TRI_TC[cn]) return {ok: false,
+    error: 'Vị trí trong phòng tài chính phải là một trong: ' +
+      Object.keys(VI_TRI_TC).join(', ') + '.'};
+  if (!lyDo) return {ok: false,
+    error: 'Chưa nói vì sao cấp. Một quyền ký tiền mà không có lý do thì sang ' +
+           'năm không ai dựng lại được vì sao người này được ký.'};
+
+  const nd = await Kho.nguoiTheoTen(db, ten);
+  if (!nd) return {ok: false, error: 'Không tìm thấy tài khoản này.'};
+
+  let moc = null;
+  if (cn === 'keToanTruong') {
+    moc = String(y.mocToiDa || '').trim();
+    if (!MOC_CHU_KY.some(x => x.ma === moc))
+      return {ok: false,
+        error: 'Hạn mức phải là một mốc có tên: ' +
+          MOC_CHU_KY.map(x => x.ma).join(', ') + '. Cấp bằng số tự do thì sáu ' +
+          'tháng sau có bảy hạn mức không ai giải thích được.'};
+  }
+
+  const id = 'QTC-' + tokenMoi().slice(0, 14);
+  const luc = new Date().toISOString();
+  try {
+    await db.prepare(
+      'INSERT INTO quyenTaiChinh (id,username,chucNang,mocToiDa,lyDo,boiAi,capLuc,hetHan) ' +
+      'VALUES (?,?,?,?,?,?,?,?)'
+    ).bind(id, ten, cn, moc, lyDo.slice(0, 500), hoSo.u, luc,
+      String(y.hetHan || '').trim() || null).run();
+  } catch (e) {
+    return {ok: false, code: 'DACAP',
+      error: 'Người này đã có chức năng ' + cn + ' còn hiệu lực. Thu hồi trước khi cấp lại.'};
+  }
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'QUYENTC_CAP',
+    doiTuong: ten, chiTiet: cn + (moc ? ' · hạn mức ' + moc : '') + ' · ' + lyDo});
+  return {ok: true, id, username: ten, chucNang: cn, mocToiDa: moc || undefined};
+}
+
+export async function thuHoiQuyenTaiChinh(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 2) return {ok: false, code: 'NOPERM',
+    error: 'Chỉ Super Admin và Admin hệ thống thu hồi được quyền tài chính.'};
+
+  const r = await db.prepare(
+    'UPDATE quyenTaiChinh SET thuHoiLuc = ?, thuHoiBoi = ? ' +
+    'WHERE username = ? AND chucNang = ? AND thuHoiLuc IS NULL'
+  ).bind(new Date().toISOString(), hoSo.u,
+    String(y.username || '').trim().toLowerCase(), String(y.chucNang || '')).run();
+  const n = (r && r.meta && r.meta.changes) || 0;
+  if (!n) return {ok: false, error: 'Người này không có chức năng ấy đang hiệu lực.'};
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'QUYENTC_THUHOI',
+    doiTuong: String(y.username || ''), chiTiet: String(y.chucNang || '')});
+  return {ok: true, daThuHoi: n};
+}
+
+/* ── DANH SÁCH NHÂN SỰ PHÒNG TÀI CHÍNH ──
+   Câu đầu tiên người kiểm soát hỏi là "ai đang có quyền ký tiền" —
+   và câu ấy phải trả lời được bằng một lượt gọi, không phải bằng cách
+   đi hỏi từng người. */
+export async function dsQuyenTaiChinh(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, code: 'NOPERM', error: 'Vai này không xem được sổ quyền tài chính.'};
+  const r = await db.prepare(
+    'SELECT * FROM quyenTaiChinh ORDER BY capLuc DESC LIMIT 200').all();
+  const bay = new Date().toISOString();
+  const ds = (r.results || []).map(x => ({
+    username: x.username, viTri: x.chucNang,
+    tenViTri: (VI_TRI_TC[x.chucNang] || {}).ten || x.chucNang,
+    mocToiDa: x.mocToiDa || undefined,
+    lyDo: x.lyDo, boiAi: x.boiAi, capLuc: x.capLuc,
+    hetHan: x.hetHan || undefined,
+    conHieuLuc: !x.thuHoiLuc && !(x.hetHan && x.hetHan <= bay),
+    thuHoiLuc: x.thuHoiLuc || undefined}));
+  return {ok: true,
+    dangLamViec: ds.filter(x => x.conHieuLuc),
+    ds,
+    viTriCoThe: VI_TRI_TC,
+    mocChuKy: MOC_CHU_KY.map(m => ({moc: m.ma, tu: m.tu, vai: m.tenVai,
+      themChuKy: m.themChuKy, viec: m.viec})),
+    chuKy: CHU_KY,
+    vi: 'Vị trí trong phòng tài chính mở đúng những cửa TIỀN và KHÔNG mở thêm ' +
+        'một cửa dữ liệu khách nào. Thêm vai thì quyền đi theo cả gói; cấp vị ' +
+        'trí thì quyền đi theo đúng việc.'};
 }
 
 /* ═══════════════ HUỶ MỘT KHOẢN CHI ĐÃ DUYỆT ═══════════════
@@ -922,4 +1180,5 @@ export async function xemThangDuyetChi(y, env, db, hoSo) {
         'một tháng, cộng qua MỌI khoản mục: chạm trần thì lối tự ghi đóng lại.'};
 }
 
-export { KHOAN_MUC, TRAN_PHAI_DUYET, TRAN_CHU_KY, NGAY_GOP, NAC_THANG };
+export { KHOAN_MUC, TRAN_PHAI_DUYET, TRAN_CHU_KY, NGAY_GOP, NAC_THANG,
+  MOC_CHU_KY, CHU_KY };

@@ -33,6 +33,12 @@ import { dungLichThu } from './tai-chinh.js';
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
              R09:9,R10:10,R11:11,R12:12,R13:13,R14:14,R15:15};
 
+/* Vai đọc được tệp khách hàng. Quản lý (R01–R04), tuyến Coach
+   (R05–R07) và Tư vấn (R11). KHÔNG có Giáo viên R08, Mentor R09,
+   Chuyên gia đánh giá R10, Phân tích dữ liệu R12 — và không có vị trí
+   nào của phòng tài chính. */
+const VAI_XEM_TEP = ['R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R11'];
+
 const BANG = ['XANH', 'VANG', 'DO', 'XAM'];
 const TRANG_THAI = ['dangHoc', 'tamDung', 'nghi', 'xong'];
 
@@ -66,16 +72,34 @@ export async function xemTepKhach(y, env, db, hoSo) {
     .bind(nha).first();
   if (!hs) return {ok: false, error: 'Không tìm thấy tệp khách hàng này.'};
 
-  /* AI ĐỌC ĐƯỢC TỆP NÀY.
+  /* AI ĐỌC ĐƯỢC TỆP NÀY — DANH SÁCH TRẮNG, KHÔNG PHẢI BẬC THANG.
 
-     Gia đình đọc được tệp CỦA CHÍNH MÌNH — đó là hồ sơ của họ. Đội ngũ
-     từ Tư vấn trở lên đọc được; Giáo viên và các vai ngoài danh sách
-     thì không, đúng cùng một luật với quyền xem hồ sơ khách ở
-     quyen-xem.js.
+     Tệp này mang tên nhà, tên con, TÊN PHỤ HUYNH và tình hình tiền nong.
+     Gửi nhầm một tệp là gửi trọn cả bốn thứ ấy.
 
-     Tệp này mang tên nhà, tên con, tên phụ huynh và tình hình tiền
-     nong. Gửi nhầm một tệp là gửi trọn cả bốn thứ ấy. */
-  if (lv > 11) {
+     ══ CHỖ NÀY TỪNG THỦNG, VÀ THỦNG ĐÚNG KIỂU ĐÃ ĐƯỢC CẢNH BÁO ══
+
+     Tới bản 9.97 cổng này viết là `lv > 11`. Chú giải ngay trên nó thì
+     nói "Giáo viên và các vai ngoài danh sách thì không" — nhưng
+     Giáo viên là lv 8, Mentor lv 9, Chuyên gia đánh giá lv 10. Cả ba
+     ĐỀU DƯỚI 11, nên cả ba đọc được mọi tệp khách hàng. Mã nói ngược
+     lại chính chú giải của nó.
+
+     Đây đúng lớp lỗi mà mục 72 của bộ kiểm đã ghi lại từ bản 9.46:
+     "Bậc là một cái thang, luật này là một danh sách có lỗ thủng."
+     Luật quyền xem hồ sơ khách ở quyen-xem.js đã dùng danh sách trắng
+     vì đúng lý do ấy; tệp khách hàng dựng sau, ở 9.89, và tôi viết nó
+     bằng bậc thang.
+
+     Nay khai thẳng từng vai. Vai nào không có tên là không xem được,
+     kể cả vai chưa tồn tại hôm nay — kê danh sách cấm thì mỗi vai mới
+     sinh ra là mặc định nhìn thấy, và cái mặc định ấy không ai nhớ đi
+     sửa.
+
+     PHÒNG TÀI CHÍNH KHÔNG CÓ TÊN Ở ĐÂY, và đó là chủ ý: một kế toán ở
+     đó để giữ tiền, không phải để đọc hồ sơ gia đình. Vị trí tài chính
+     mở đúng những cửa tiền và không mở thêm một cửa dữ liệu khách nào. */
+  if (VAI_XEM_TEP.indexOf(hoSo.role) < 0) {
     const nd = await Kho.nguoiTheoId(db, hoSo.uid);
     if (!nd || String(nd.maKhachHang || '') !== nha) {
       await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
@@ -156,7 +180,7 @@ export async function suaTepKhach(y, env, db, hoSo) {
 /* ═══════════════ DANH SÁCH TỆP THEO NGƯỜI PHỤ TRÁCH ═══════════════ */
 export async function dsTepKhach(y, env, db, hoSo) {
   const lv = BAC[hoSo.role] || 99;
-  if (lv > 11) return {ok: false, code: 'NOPERM',
+  if (VAI_XEM_TEP.indexOf(hoSo.role) < 0) return {ok: false, code: 'NOPERM',
     error: 'Vai này không xem được danh sách khách hàng.'};
 
   /* Coach và Tư vấn thấy nhà CỦA MÌNH; từ R04 trở lên thấy cả hệ.
