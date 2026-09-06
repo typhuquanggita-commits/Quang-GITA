@@ -182,6 +182,15 @@ const DUONG = [
    'SELECT cum, du, luc, boi FROM caiDat', [],
    'bảng có nhiều nhất BẢY dòng, một dòng mỗi cụm, và lượt nào cũng cần cả bảy'],
 
+  ['tra một bản chứng cứ theo mã',
+   'may-chu/chung-cu.js · timBan',
+   'SELECT * FROM chungCu WHERE ma = ?', ['CC-x']],
+
+  ['sổ chứng cứ của một người',
+   'may-chu/chung-cu.js · ix_cc_nguoi',
+   'SELECT ma FROM chungCu WHERE nguoiGhi = ? ORDER BY gioMayChu DESC LIMIT 50',
+   ['coach@gita365.vn']],
+
   ['tra giấy phép xem hồ sơ khách còn hiệu lực',
    'may-chu/quyen-xem.js · phepCua',
    "SELECT * FROM quyenXem WHERE nguoiDuocCap = ? AND (thuHoiLuc IS NULL OR thuHoiLuc = '') " +

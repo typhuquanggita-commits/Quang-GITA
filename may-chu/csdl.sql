@@ -300,6 +300,40 @@ CREATE TABLE IF NOT EXISTS caiDat (
 );
 
 -- ─────────────────────────────────────────────────────────────
+--  CHỨNG CỨ HOA HỒNG — BẢNG DUY NHẤT RA TIỀN THẬT
+--
+--  Mọi thứ khác sai thì sửa; chỗ này sai thì kết thúc ở toà chứ không
+--  kết thúc ở một bản vá. Nên bảng này khắt khe hơn mọi bảng còn lại.
+--
+--  CHỈ THÊM DÒNG, KHÔNG SỬA DÒNG CŨ. Hai cột xacNhanBoi/xacNhanLuc là
+--  ngoại lệ DUY NHẤT, và chúng chỉ ghi được một lần — xem chú giải ở
+--  xacNhanChungCu trong may-chu/chung-cu.js.
+--
+--  SAI THÌ GHI BẢN ĐÍNH CHÍNH TRỎ VỀ BẢN CŨ, cả hai cùng ở lại. Xoá
+--  bản sai là xoá luôn bằng chứng rằng đã từng có bản sai — đúng thứ
+--  bên đối tụng sẽ hỏi.
+-- ─────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS chungCu (
+  ma           TEXT PRIMARY KEY,
+  nhiemVu      TEXT NOT NULL,
+  ngayLam      TEXT NOT NULL,
+  loai         TEXT NOT NULL,
+  noiDung      TEXT NOT NULL,
+  nguoiGhi     TEXT NOT NULL,     -- lấy từ PHIÊN, không lấy từ thân yêu cầu
+  gioMayChu    TEXT NOT NULL,     -- giờ MÁY CHỦ; giờ máy khách không phải bằng chứng
+  chuKy        TEXT NOT NULL,     -- HMAC-SHA256; khoá nằm ở secret, không ở đây
+  xacNhanBoi   TEXT,
+  xacNhanLuc   TEXT,
+  dinhChinhCho TEXT,
+  uidGhi       TEXT
+);
+
+-- Sổ chứng cứ của một người, và chuỗi đính chính của một bản.
+CREATE INDEX IF NOT EXISTS ix_cc_nguoi ON chungCu (nguoiGhi, gioMayChu DESC);
+CREATE INDEX IF NOT EXISTS ix_cc_dinhchinh ON chungCu (dinhChinhCho)
+  WHERE dinhChinhCho IS NOT NULL;
+
+-- ─────────────────────────────────────────────────────────────
 --  GIẤY PHÉP XEM HỒ SƠ KHÁCH HÀNG
 --
 --  Hồ sơ khách tầng 4-5 KHÔNG nằm trong gói nào gửi về máy. Một gói đã

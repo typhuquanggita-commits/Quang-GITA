@@ -15,10 +15,9 @@
    Xong: đăng nhập · đăng xuất · kiểm phiên · đổi mật khẩu · cấp khoá
    kho · trạng thái máy chủ · đồng bộ hồ sơ và cài đặt · đăng ký, mã xác
    nhận qua email, kích hoạt · quên và đặt lại mật khẩu · quyền xem hồ
-   sơ khách · nâng tầng.
+   sơ khách · nâng tầng · chứng cứ hoa hồng.
 
-   Chưa: tài liệu, chứng cứ hoa hồng, sổ cộng đồng, tình huống khách,
-   xuất Sheet.
+   Chưa: tài liệu, sổ cộng đồng, tình huống khách, xuất Sheet.
 
    CHƯA PORT THÌ BÁO TO, KHÔNG IM. Danh sách CHUA_PORT ở dưới trả về
    đúng một câu nói rõ việc ấy chưa có ở nền mới. Trả 'Yêu cầu không
@@ -32,6 +31,7 @@ import { dongBo } from './dong-bo.js';
 import { dangKy, guiLaiOtp, xacThucOtp, kichHoat } from './dang-ky.js';
 import { quenMatKhau, datLaiMatKhau } from './mat-khau.js';
 import { capQuyenXem, thuHoiQuyenXem, soiQuyenXem, xemKhachCao, nangTang } from './quyen-xem.js';
+import { kyChungCu, xacNhanChungCu, soiChungCu } from './chung-cu.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -132,15 +132,15 @@ export const CHUA_PORT = {
   xuatSheet: 'xuất bảng tính',
   napTaiLieu: 'gửi tài liệu', duyetTaiLieu: 'duyệt tài liệu',
   kiemDrive: 'kiểm thư mục Drive',
-  kyChungCu: 'ký chứng cứ', xacNhanChungCu: 'xác nhận chứng cứ',
-  soiChungCu: 'soi chứng cứ', ghiTinCongDong: 'ghi tin cộng đồng',
+  ghiTinCongDong: 'ghi tin cộng đồng',
   docTinCongDong: 'đọc tin cộng đồng', guiChuyen: 'gửi chuyện',
   napTinhHuongKhach: 'nạp tình huống cho gia đình', xemKpiKhach: 'xem KPI khách',
   kiemBanMoi: 'kiểm bản mới'
 };
 
 const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
-  'capQuyenXem', 'thuHoiQuyenXem', 'soiQuyenXem', 'xemKhachCao', 'nangTang'];
+  'capQuyenXem', 'thuHoiQuyenXem', 'soiQuyenXem', 'xemKhachCao', 'nangTang',
+  'kyChungCu', 'xacNhanChungCu', 'soiChungCu'];
 
 async function lam(fn, y, env, db) {
   if (fn === 'dangNhap')  return await dangNhap(y, env, db);
@@ -178,6 +178,10 @@ async function lam(fn, y, env, db) {
   if (fn === 'soiQuyenXem')    return await soiQuyenXem(y, env, db, hoSo);
   if (fn === 'xemKhachCao')    return await xemKhachCao(y, env, db, hoSo);
   if (fn === 'nangTang')       return await nangTang(y, env, db, hoSo);
+
+  if (fn === 'kyChungCu')      return await kyChungCu(y, env, db, hoSo);
+  if (fn === 'xacNhanChungCu') return await xacNhanChungCu(y, env, db, hoSo);
+  if (fn === 'soiChungCu')     return await soiChungCu(y, env, db, hoSo);
   return {ok: false, error: 'Yêu cầu không hợp lệ.'};
 }
 

@@ -94,6 +94,7 @@ const env = {
   GHI_THU: hopThu,
   GITA_DIA_CHI_WEB: 'https://gita.edu.vn',
   GITA_TIEU: 'tieu-thu-nghiem-khong-dung-that',
+  GITA_KHOA_KY: 'khoa-ky-thu-nghiem-khong-dung-that',
   GITA_KHOA_KHO: JSON.stringify({
     nen: 'khoa-nen', nghe: 'khoa-nghe', 'nghe-cao': 'khoa-nghe-cao',
     tang1: 'k1', tang2: 'k2', tang3: 'k3', tang4: 'k4', tang5: 'k5'
@@ -767,8 +768,115 @@ bao(!lai.than.ok,
   'PHIẾU THANH TOÁN DÙNG MỘT LẦN — không đánh dấu thì một phiếu mở tầng cho bao nhiêu học viên cũng được',
   lai.than.error);
 
-/* ═══════════════ 13 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
-console.log('\n13 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
+/* ═══════════════ 13 · CHỨNG CỨ HOA HỒNG ═══════════════
+
+   Tệp duy nhất ra tiền thật. Mọi thứ khác sai thì sửa; chỗ này sai thì
+   kết thúc ở toà chứ không kết thúc ở một bản vá. Nên phép đo ở đây
+   phải PHÁ ĐƯỢC, không chỉ chạy được. */
+console.log('\n13 · CHỨNG CỨ HOA HỒNG');
+const BAN_CC = {nhiemVu:'NV-01', ngayLam:'2026-09-01', loai:'kem',
+  noiDung:'Ngồi cùng nhà B một buổi, chốt nếp học tối.'};
+
+const kyCC = await goi({fn:'kyChungCu', token:tkCoach, u:'coach@gita365.vn', cc:BAN_CC});
+bao(kyCC.than.ok && kyCC.than.bienNhan.chuKy.length === 64,
+  'ký được, trả về biên nhận có chữ ký HMAC-SHA256', kyCC.than.bienNhan.ma);
+const maCC = kyCC.than.bienNhan.ma;
+
+bao(kyCC.than.bienNhan.chuKy.indexOf(maCC.slice(3)) < 0 &&
+    maCC.indexOf(kyCC.than.bienNhan.chuKy.slice(0, 6)) < 0,
+  'MÃ KHÔNG MANG MỘT MẨU CHỮ KÝ NÀO',
+  'nền cũ ghép 6 ký tự chữ ký vào mã — in 24 bit ra chỗ ai cũng đọc được');
+
+bao(JSON.stringify(kyCC.than).indexOf('khoa-ky-thu-nghiem') < 0,
+  'KHOÁ KÝ KHÔNG ĐI TRONG PHẢN HỒI, không một mẩu nào');
+
+/* nguoiGhi lấy từ PHIÊN, không lấy từ thân yêu cầu. */
+const giaTen = await goi({fn:'kyChungCu', token:tkCoach, u:'coach@gita365.vn',
+  cc:{...BAN_CC, nguoiGhi:'superadmin@gita365.vn', noiDung:'thử ghi tên người khác'}});
+bao(db.prepare("SELECT nguoiGhi FROM chungCu WHERE ma = ?").get(giaTen.than.bienNhan.ma).nguoiGhi
+      === 'coach@gita365.vn',
+  'NGƯỜI GHI LẤY TỪ PHIÊN — gửi tên người khác lên cũng không ăn thua',
+  'nhận từ thân yêu cầu thì ghi tên ai cũng được, và cả bảng chứng cứ mất nghĩa');
+
+/* GIỜ MÁY CHỦ, không phải giờ máy khách. */
+const gioGia = await goi({fn:'kyChungCu', token:tkCoach, u:'coach@gita365.vn',
+  cc:{...BAN_CC, gioMayChu:'2020-01-01T00:00:00.000Z', noiDung:'thử đóng giờ giả'}});
+bao(new Date(gioGia.than.bienNhan.gioMayChu).getFullYear() >= 2026,
+  'GIỜ ĐÓNG LÀ GIỜ MÁY CHỦ — giờ máy khách đổi được trong ba giây',
+  gioGia.than.bienNhan.gioMayChu);
+
+/* Soi: ký lại từ dữ liệu đang lưu rồi so. */
+const soi1 = await goi({fn:'soiChungCu', token:tkCoach, u:'coach@gita365.vn', ma:maCC});
+bao(soi1.than.ok && soi1.than.khop === true, 'soi bản chưa ai đụng thì KHỚP');
+bao(JSON.stringify(soi1.than).indexOf('khoa-ky-thu-nghiem') < 0,
+  'và lượt soi cũng không trả khoá ra');
+
+/* ── SỬA LÉN THẲNG VÀO BẢNG THÌ LỘ ──
+   Đây là phép đo quan trọng nhất của cả mục. Lớp ký không NGĂN được
+   người ta sửa; nó làm cho việc sửa KHÔNG GIẤU ĐƯỢC. */
+db.prepare("UPDATE chungCu SET noiDung = ? WHERE ma = ?")
+  .run('Ngồi cùng nhà B BA buổi, chốt nếp học tối.', maCC);
+const soi2 = await goi({fn:'soiChungCu', token:tkCoach, u:'coach@gita365.vn', ma:maCC});
+bao(soi2.than.khop === false,
+  'SỬA LÉN THẲNG VÀO BẢNG THÌ CHỮ KÝ KHÔNG KHỚP — kể cả người có quyền quản trị cơ sở dữ liệu',
+  'lớp ký không ngăn được người ta sửa; nó làm cho việc sửa không giấu được');
+db.prepare("UPDATE chungCu SET noiDung = ? WHERE ma = ?").run(BAN_CC.noiDung, maCC);
+bao((await goi({fn:'soiChungCu', token:tkCoach, u:'coach@gita365.vn', ma:maCC})).than.khop === true,
+  'trả nội dung về đúng cũ thì khớp lại — chữ ký đo NỘI DUNG, không đo lần sửa');
+
+/* Đổi giờ cũng lộ y hệt. */
+db.prepare("UPDATE chungCu SET gioMayChu = '2020-01-01T00:00:00.000Z' WHERE ma = ?").run(maCC);
+bao((await goi({fn:'soiChungCu', token:tkCoach, u:'coach@gita365.vn', ma:maCC})).than.khop === false,
+  'lùi dấu giờ cũng làm chữ ký lệch — giờ nằm TRONG chuỗi được ký');
+db.prepare("UPDATE chungCu SET gioMayChu = ? WHERE ma = ?").run(kyCC.than.bienNhan.gioMayChu, maCC);
+
+/* ── NGƯỜI GHI KHÔNG TỰ XÁC NHẬN CHO MÌNH ── */
+bao(!(await goi({fn:'xacNhanChungCu', token:tkCoach, u:'coach@gita365.vn', ma:maCC})).than.ok,
+  'NGƯỜI GHI KHÔNG TỰ XÁC NHẬN CHO MÌNH ĐƯỢC',
+  'chỗ chống làm giả mạnh nhất của cả hệ — mạnh hơn mọi chữ ký');
+
+const xn = await goi({fn:'xacNhanChungCu', token:tkSA, u:'superadmin@gita365.vn', ma:maCC});
+bao(xn.than.ok, 'người KHÁC xác nhận thì được', xn.than.xacNhan.ai);
+bao(!(await goi({fn:'xacNhanChungCu', token:tkDG, u:'danhgia@gita365.vn', ma:maCC})).than.ok,
+  'xác nhận rồi thì người thứ hai không ghi đè lên được',
+  'trên một bản ghi dựng lên để đứng được khi đối chất');
+bao(db.prepare("SELECT xacNhanBoi FROM chungCu WHERE ma=?").get(maCC).xacNhanBoi
+      === 'superadmin@gita365.vn',
+  'và tên người xác nhận đầu tiên vẫn nguyên');
+
+/* ── SAI THÌ ĐÍNH CHÍNH, KHÔNG SỬA, KHÔNG XOÁ ── */
+const dc = await goi({fn:'kyChungCu', token:tkCoach, u:'coach@gita365.vn',
+  cc:{...BAN_CC, noiDung:'Đính chính: một buổi, không phải ba.', dinhChinhCho:maCC}});
+bao(dc.than.ok, 'ghi được bản đính chính trỏ về bản cũ');
+bao(db.prepare("SELECT count(*) c FROM chungCu WHERE ma IN (?,?)").get(maCC, dc.than.bienNhan.ma).c === 2,
+  'CẢ HAI BẢN CÙNG Ở LẠI — xoá bản sai là xoá luôn bằng chứng đã từng có bản sai',
+  'đúng thứ bên đối tụng sẽ hỏi');
+bao(!(await goi({fn:'kyChungCu', token:tkCoach, u:'coach@gita365.vn',
+  cc:{...BAN_CC, dinhChinhCho:'CC-khong-co-that'}})).than.ok,
+  'đính chính cho một bản không có thì từ chối');
+
+/* Thiếu trường và nội dung quá dài. */
+bao(!(await goi({fn:'kyChungCu', token:tkCoach, u:'coach@gita365.vn',
+  cc:{nhiemVu:'NV-01'}})).than.ok, 'thiếu trường thì không ký');
+bao(!(await goi({fn:'kyChungCu', token:tkCoach, u:'coach@gita365.vn',
+  cc:{...BAN_CC, noiDung:'x'.repeat(4001)}})).than.ok, 'nội dung quá 4000 ký tự thì từ chối');
+
+/* Mỗi lượt soi một dòng sổ — nền cũ không ghi chỗ này. */
+bao(db.prepare("SELECT count(*) c FROM audit WHERE viec='CHUNGCU_SOI'").get().c >= 4,
+  'mỗi lượt SOI một dòng sổ',
+  'nội dung một bản chứng cứ là chuyện riêng của hai nhà; ai mở nó ra thì phải trả lời được');
+
+/* Không có khoá ký thì KHÔNG ký bừa. */
+const khongKhoa = await worker.fetch(new Request('https://gita.test/', {
+  method:'POST', headers:{'Content-Type':'application/json'},
+  body: JSON.stringify({fn:'kyChungCu', token:tkCoach, u:'coach@gita365.vn', cc:BAN_CC})
+}), {...env, GITA_KHOA_KY: ''});
+bao(khongKhoa.status === 500,
+  'máy chủ CHƯA NẠP KHOÁ KÝ thì từ chối ký, không ký bằng một khoá rỗng',
+  'ký bằng khoá rỗng là phát ra một biên nhận trông như thật mà không chứng được gì');
+
+/* ═══════════════ 14 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
+console.log('\n14 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng
    nó — đúng chuyện vừa xảy ra khi dongBo được port. */
@@ -781,8 +889,8 @@ const bia = (await goi({fn: 'mot-viec-khong-co-that', token: tk})).than;
 bao(bia.code !== 'CHUAPORT' && !bia.ok, 'còn việc bịa ra thì vẫn là yêu cầu không hợp lệ',
   bia.error);
 
-/* ═══════════════ 14 · KHÔNG RÒ RA NGOÀI ═══════════════ */
-console.log('\n14 · KHÔNG RÒ RA NGOÀI');
+/* ═══════════════ 15 · KHÔNG RÒ RA NGOÀI ═══════════════ */
+console.log('\n15 · KHÔNG RÒ RA NGOÀI');
 const xau = {prepare(){ throw new Error('SQLITE_ERROR: no such column: users.matKhauThat'); }};
 const rNo = await worker.fetch(new Request('https://gita.test/', {
   method: 'POST', headers: {'Content-Type': 'application/json'},
@@ -799,12 +907,12 @@ bao(jGt.ok && jGt.daNapKhoa === 8 && !JSON.stringify(jGt).includes('khoa-nen'),
   'cửa trạng thái nói ĐÃ NẠP MẤY KHOÁ mà không trả khoá nào',
   'đã nạp ' + jGt.daNapKhoa + ' gói');
 
-/* ═══════════════ 15 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
+/* ═══════════════ 16 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
 
-   Mười bốn mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
+   Mười lăm mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
    Ở đây phá bằng cách truyền một hồ sơ vai KHÁC vào chính hàm tính
    phạm vi — không tráo hàm toàn cục, đúng luật đã ghi ở v9.79. */
-console.log('\n15 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
+console.log('\n16 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
 const pv = (await import('../may-chu/worker.js')).phamViCapPhep;
 bao(pv({role: 'R13', tier: 5}).indexOf('tang5') >= 0 &&
     pv({role: 'R13', tier: 2}).indexOf('tang3') < 0,
