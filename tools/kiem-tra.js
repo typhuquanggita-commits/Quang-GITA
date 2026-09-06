@@ -9842,6 +9842,74 @@ const { chromium } = require(PW);
       ra.soDieu = vb.dieu.length;
     }
 
+    /* ── KPI: MỖI THƯỚC PHẢI CÓ CẶP ĐỐI TRỌNG, VÀ HAI BẢN PHẢI KHỚP ──
+
+       Luật quan trọng nhất của TC-KP-01: mọi thước đo đều lách được,
+       nên mỗi thước đi kèm một thước chạy NGƯỢC LẠI nếu người ta lách
+       nó. Một KPI không có cặp đối trọng là một KPI dạy người ta cách
+       lách nó.
+
+       Và hai bản phải khớp: kho giữ ĐỊNH NGHĨA (ngưỡng, trọng số, cặp
+       đối trọng), máy chủ giữ PHÉP ĐO. Lệch tên thước thì màn hình ghép
+       một số đo vào một định nghĩa của thước khác, và bảng lương ra
+       theo một con số không phải của người ấy. */
+    {
+      const nguonKpi = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'kpi-tai-chinh.js'), 'utf8');
+
+      const kpi = await p.evaluate(() => {
+        const t = window.G.TC_KPI || {};
+        const gom = v => (v && v.thuoc ? v.thuoc : []).map(x => ({
+          ma: x.ma, trong: x.trong,
+          coDoiTrong: !!(x.doiTrong || x.doiTrongCua),
+          /* Thước KHÔNG lách được thì không cần đối trọng — nhưng phải
+             NÓI RA rằng nó không lách được, không được im lặng. */
+          khongLachDuoc: /^Không có/.test(String(x.lach || '')),
+          coLach: !!x.lach, coDo: !!x.do}));
+        return {
+          thu: gom(t.keToanThu), chi: gom(t.keToanChi), truong: gom(t.keToanTruong),
+          coLuong: !!(window.G.TC_LUONG || {}).tang,
+          soTangLuong: ((window.G.TC_LUONG || {}).tang || []).length,
+          coChoChot: (((window.G.TC_LUONG || {}).choChuHeChot) || []).length
+        };
+      });
+
+      const tatCa = [].concat(kpi.thu, kpi.chi, kpi.truong);
+      /* MỖI THƯỚC PHẢI KHAI LÁCH BẰNG CÁCH NÀO. Rồi một trong hai:
+         có cặp đối trọng, HOẶC nói rõ nó không lách được.
+
+         Bản đầu tôi đòi MỌI thước phải có đối trọng. Ba thước của kế
+         toán trưởng — đối soát còn lệch, bản kê cân, phiếu không có
+         tiền vào — do máy tự tính và người không sửa được, nên chúng
+         không cần đối trọng và cũng không có gì để đối trọng. Luật
+         đúng là "có đối trọng HOẶC nói rõ vì sao không cần", và bộ
+         kiểm bắt được đúng chỗ tôi đặt luật quá cứng. */
+      ra.kpiCoDoiTrong = tatCa.length > 0 &&
+        tatCa.every(x => x.coLach && (x.coDoiTrong || x.khongLachDuoc));
+      ra.kpiThieuDoiTrong = tatCa.filter(x => !(x.coLach && (x.coDoiTrong || x.khongLachDuoc)))
+        .map(x => x.ma);
+      /* Trọng số của mỗi vị trí phải cộng đúng 100. Không cộng đủ thì
+         một phần công việc không được tính; cộng quá thì điểm vượt
+         thang và mọi so sánh giữa hai người thành vô nghĩa. */
+      const cong = a => a.reduce((s, x) => s + Number(x.trong || 0), 0);
+      ra.kpiTrongDu = cong(kpi.thu) === 100 && cong(kpi.chi) === 100 &&
+        cong(kpi.truong) === 100;
+      ra.kpiTrong = [cong(kpi.thu), cong(kpi.chi), cong(kpi.truong)];
+
+      /* Mỗi mã thước khai ở kho phải có mặt trong nguồn máy chủ. */
+      ra.kpiThieuDo = tatCa.filter(x => nguonKpi.indexOf("'" + x.ma + "'") < 0)
+        .map(x => x.ma);
+      ra.kpiHaiBanKhop = ra.kpiThieuDo.length === 0;
+      ra.kpiCoLuong = kpi.coLuong && kpi.soTangLuong === 3 && kpi.coChoChot >= 2;
+    }
+
+    bao(ra.kpiCoDoiTrong && ra.kpiTrongDu && ra.kpiHaiBanKhop && ra.kpiCoLuong,
+      'KPI PHÒNG TÀI CHÍNH — MỖI THƯỚC CÓ MỘT CẶP ĐỐI TRỌNG, VÀ HAI BẢN KHỚP TÊN THƯỚC. Mọi thước đo đều lách được: "tỷ lệ khớp ngân hàng 100%" đạt dễ nhất bằng cách chỉ ghi những phiếu chắc chắn khớp; "không có khoản chi nào treo" đạt bằng cách duyệt hết mà không đọc. Nên mỗi thước ở TC-KP-01 đi kèm một thước ĐỐI TRỌNG chạy ngược lại nếu người ta lách nó — bỏ phiếu không ghi thì "tiền vào không có phiếu" tăng lên, duyệt hết mà không đọc thì "khoản thiếu chứng từ" tăng lên. Một KPI không có cặp đối trọng là một KPI dạy người ta cách lách nó, và mỗi thước cũng phải khai thẳng LÁCH BẰNG CÁCH NÀO. Trọng số mỗi vị trí cộng đúng 100: thiếu thì một phần công việc không được tính, quá thì điểm vượt thang và so sánh giữa hai người thành vô nghĩa. Và hai bản phải khớp tên thước — kho giữ ĐỊNH NGHĨA vì máy chủ không đọc được kho đã mã hoá, máy chủ giữ PHÉP ĐO; lệch tên thì màn hình ghép một số đo vào định nghĩa của thước khác, và bảng lương ra theo một con số không phải của người ấy. Lương chia BA TẦNG và chỉ tầng giữa gắn KPI: phần cứng đủ sống là điều kiện để một người dám nói ra chỗ hỏng của chính tháng mình, còn tầng ghi nhận của người quản lý là chỗ cho những việc không đếm được — không có nó thì KPI thành toàn bộ định nghĩa của công việc và người ta thôi làm những gì không được đếm',
+      ra.kpiHaiBanKhop
+        ? '15 thước · trọng số ' + (ra.kpiTrong || []).join('/') + ' · 3 tầng lương'
+        : 'kho khai mà máy chủ không đo: ' + (ra.kpiThieuDo || []).join(' · ') +
+          ' · thiếu đối trọng: ' + (ra.kpiThieuDoiTrong || []).join(' · '));
+
     bao(ra.vbThiHanhCoThat && ra.vbDuBo && ra.ruiRoDuCot,
       'QUY CHẾ PHÒNG TÀI CHÍNH — MỖI ĐIỀU TRỎ VÀO MỘT CHỖ THI HÀNH CÓ THẬT TRONG MÃ. Một quy chế mà mã không thi hành là một tờ giấy dán tường: nó làm người đọc yên tâm mà không đổi được hành vi nào, và tệ hơn, nó làm người ta thôi đi tìm chỗ thủng vì "đã có quy chế rồi". Nên mỗi điều ở TC-DL-01 mang một trong hai thứ — một tên hàm hoặc tên cổng CÓ THẬT trong may-chu/, hoặc null KÈM lời nói rõ vì sao chưa chặn được. Phép đo này đọc từng tên và tìm nó trong nguồn máy chủ; khai bừa một cái tên là đỏ, và khai null mà im lặng cũng đỏ. Sổ rủi ro thì phải đủ BA cột mỗi dòng: cái đang chặn, phần CÒN LẠI sau khi chặn, và ai phải nhìn phần còn lại ấy — cột "còn lại" là cột người ta hay bỏ nhất, và một sổ rủi ro mà mọi dòng đều "đã chặn hoàn toàn" là một sổ chưa ai đọc kỹ',
       ra.vbThiHanhCoThat

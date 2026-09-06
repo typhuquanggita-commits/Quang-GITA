@@ -1861,6 +1861,46 @@ bao(!duyetSom.than.ok && duyetSom.than.code === 'CHUADUMOC',
   'MỐC ĐỌC LẠI Ở LÚC DUYỆT — khoản 400 nghìn ghi đầu tuần nay phải theo mốc của cả tuần',
   'duyệt theo mốc cũ là để một tuần 11 triệu đi qua cổng của một tuần 0 đồng');
 
+/* ── KPI PHÒNG TÀI CHÍNH · TC-KP-01 ── */
+bao(!(await goi({fn:'chamKpiTaiChinh', token:tkCoach, u:'coach@gita365.vn',
+  loai:'thang', moc:'2026-09'})).than.ok,
+  'Coach không xem được bảng KPI phòng tài chính');
+
+const kpiTC = await goi({fn:'chamKpiTaiChinh', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'thang', moc:'2026-09'});
+bao(kpiTC.than.ok && kpiTC.than.keToanThu && kpiTC.than.keToanChi &&
+    kpiTC.than.keToanTruong,
+  'chấm được KPI cho cả ba vị trí', kpiTC.than.ky);
+
+/* MẪU BẰNG 0 THÌ TRẢ null, KHÔNG TRẢ 100. "Không có gì để đo" và "đo
+   được và đạt tuyệt đối" là hai chuyện khác nhau; gộp chúng là cho
+   điểm tuyệt đối cho một tháng không ai làm gì. */
+const kpiRong = await goi({fn:'chamKpiTaiChinh', token:tkSA, u:'superadmin@gita365.vn',
+  loai:'thang', moc:'2025-01'});
+bao(kpiRong.than.ok && kpiRong.than.keToanThu['KT-T1'] === null &&
+    kpiRong.than.keToanChi['KT-C1'] === null,
+  'KỲ KHÔNG CÓ GÌ ĐỂ ĐO THÌ TRẢ null, KHÔNG TRẢ 100',
+  'gộp hai chuyện ấy là cho điểm tuyệt đối cho một tháng không ai làm gì');
+
+/* BA THƯỚC CỦA KẾ TOÁN TRƯỞNG ĐO THẬT, không để trống. Chúng gọi thẳng
+   soatChot, doiSoat và baoCaoKeToan — không viết lại phép đo, vì viết
+   lại là dựng bản thứ hai của một sự thật. */
+bao(typeof kpiTC.than.keToanTruong['KT-Tr2'] === 'number' &&
+    typeof kpiTC.than.keToanTruong['KT-Tr3'] === 'number' &&
+    (kpiTC.than.keToanTruong['KT-Tr4'] === 0 || kpiTC.than.keToanTruong['KT-Tr4'] === 100),
+  'ba thước của KẾ TOÁN TRƯỞNG đo THẬT — vân tay, đối soát, cân đối',
+  'KT-Tr2 ' + kpiTC.than.keToanTruong['KT-Tr2'] + ' · KT-Tr3 ' +
+    kpiTC.than.keToanTruong['KT-Tr3'] + ' · KT-Tr4 ' + kpiTC.than.keToanTruong['KT-Tr4']);
+
+bao(!!kpiTC.than.lechConLai && Array.isArray(kpiTC.than.lechConLai.doiSoat),
+  'và trả về CHỖ LỆCH CÒN LẠI, không chỉ trả về con số',
+  'một điểm KPI không kèm chỗ lệch là một điểm không sửa được gì');
+
+/* CÂN THÌ 100, LỆCH THÌ 0 — không có bậc giữa. Một bản kê lệch nửa
+   đồng cũng là một bản kê chưa dùng được. */
+bao(kpiTC.than.keToanTruong['KT-Tr4'] === 100,
+  'bản kê CÂN nên KT-Tr4 = 100 — cân thì 100, lệch thì 0, không có bậc giữa');
+
 /* ── PHÒNG TÀI CHÍNH TRỰC THUỘC AI · CHỐT 9.98 ──
 
    "Phòng tài chính trực thuộc quản lý của Super Admin, Giám đốc, Admin

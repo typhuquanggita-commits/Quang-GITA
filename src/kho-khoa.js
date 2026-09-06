@@ -30,6 +30,7 @@ G.KHO = { daNap: [], dangNap: [], cheDoMau: false, hanKhoa: null, lyDoTuChoi: ''
 G.THUOC_CAP_PHEP = [
   /* v9.99 — quy chế phòng tài chính, gói NGHỀ */
   'TC_MA_VB','TC_DIEULE','TC_QUYCHE','TC_QUYTRINH','TC_BIEUMAU','TC_RUIRO',
+  'TC_KPI','TC_LUONG',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
