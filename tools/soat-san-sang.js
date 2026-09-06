@@ -93,10 +93,40 @@ if (!canCo.length) {
 console.log('\nB · BẢN WEB');
 
 const ch = doc('cau-hinh.js');
-const coDiaChi = /API_CAP_PHEP\s*[:=]\s*['"]https?:\/\//.test(ch);
-if (coDiaChi) dat(true, 'cau-hinh.js đã trỏ vào một máy chủ thật');
+const mDiaChi = ch.match(/API_CAP_PHEP\s*[:=]\s*['"](https?:\/\/[^'"]+)/);
+if (mDiaChi) dat(true, 'cau-hinh.js đã trỏ vào một máy chủ thật', mDiaChi[1]);
 else nhac('cau-hinh.js chưa trỏ máy chủ',
   'bản web sẽ chạy CHẾ ĐỘ MẪU — đúng cho bản xem thử, thiếu cho bản chạy thật');
+
+/* ── ĐỊA CHỈ MÁY CHỦ PHẢI NẰM TRONG connect-src CỦA CSP ──
+
+   Tìm ra ở 9.99.9 bằng cách CHẠY THẬT, không bằng cách đọc mã: bản web
+   gọi máy chủ demo và trình duyệt trả về "Failed to fetch". CSP trong
+   index.html chỉ cho connect tới 'self' và script.google.com — đúng cho
+   nền Apps Script cũ, và chặn SẠCH nền Cloudflare Workers mới, vốn là
+   một origin khác.
+
+   Nghĩa là dán địa chỉ Worker vào cau-hinh.js thôi thì chưa đủ: bản web
+   lên mạng, mọi lượt gọi bị trình duyệt chặn trước khi ra khỏi máy, và
+   người dùng thấy đúng cái màn "chưa nối máy chủ" như khi chưa dán gì.
+   Hai chỗ phải sửa cùng nhau, nên phải có một chỗ canh chúng đi cùng. */
+const csp = (doc('index.html').match(/connect-src ([^;"]+)/) || [])[1] || '';
+if (mDiaChi) {
+  let goc = '';
+  try { goc = new URL(mDiaChi[1]).origin; } catch (e) { goc = ''; }
+  const trongCsp = !!goc && (csp.indexOf(goc) >= 0 ||
+    /* khớp cả dạng hoa thị: https://*.workers.dev phủ mọi tên con */
+    csp.split(/\s+/).some(x => x.indexOf('*.') > 0 &&
+      goc.endsWith(x.replace(/^https?:\/\/\*\./, '.'))));
+  dat(trongCsp, 'origin máy chủ nằm trong connect-src của CSP',
+    trongCsp ? goc : 'THIẾU "' + goc + '" trong connect-src của index.html — ' +
+      'trình duyệt sẽ chặn mọi lượt gọi và bản web trông y như chưa nối máy chủ. ' +
+      'connect-src đang là: ' + (csp.trim() || '(không đọc được)'));
+} else {
+  nhac('chưa dán địa chỉ nên chưa soát được CSP',
+    'dán địa chỉ vào cau-hinh.js xong phải thêm ĐÚNG origin ấy vào connect-src ' +
+    'của index.html — hai chỗ đi cùng nhau, thiếu một chỗ là bị chặn im lặng.');
+}
 
 const cname = doc('CNAME').trim();
 dat(!!cname, 'CNAME có tên miền', cname || 'trống — bản web sẽ chạy ở địa chỉ mặc định của GitHub Pages');

@@ -2378,6 +2378,25 @@ const tinXanh = await goi({fn:'dangTinTaiChinh', token:tkKTT, u:'ketoantruong@gi
     than:'Mẫu mới thêm cột số hợp đồng. Ghi lại để người sau biết vì sao mẫu đổi.'}});
 bao(tinXanh.than.ok, 'và đăng được tin thường — tin này đăng SAU tin đỏ');
 
+/* ── ĐỌC LẠI TIÊU ĐỀ, KHÔNG CHỈ ĐO "CÓ ĐĂNG ĐƯỢC KHÔNG" ──
+
+   Bản 9.99.8 có một lỗi im lặng đúng ở đây: hằng số 'nguoiDang' nằm
+   nhầm một ô trong câu INSERT, nên loai nhận tiêu đề còn tieuDe nhận
+   chữ "nguoiDang". Mọi tin người đăng hiện tiêu đề là chữ ấy.
+
+   Cả mười chín phép đo của mục 15f vẫn xanh, vì chúng đo ok, đo thứ tự
+   xếp, đo số đếm — không phép nào đọc lại CHỮ. Phải chạy demo và nhìn
+   màn hình mới thấy.
+
+   Đo một vòng ghi-rồi-đọc là rẻ, và nó bắt được cả lớp lỗi lệch cột. */
+const doLaiTin = (await goi({fn:'bangTinTaiChinh', token:tkKTT,
+  u:'ketoantruong@gita365.vn'})).than.tin.find(x => x.id === tinXanh.than.id);
+bao(!!doLaiTin && doLaiTin.tieuDe === 'Đổi mẫu phiếu chi từ tháng sau' &&
+    doLaiTin.loai === 'nguoiDang' && !doLaiTin.tuMay,
+  'TIN ĐỌC RA PHẢI ĐÚNG CHỮ ĐÃ GỬI — tiêu đề, loại, và cờ máy-ghi',
+  'đo ok và đo số đếm thì không bắt được một hằng số nằm nhầm ô; đọc lại chữ thì bắt · ' +
+  'đọc ra "' + ((doLaiTin || {}).tieuDe || '(không có)') + '"');
+
 /* ── XẾP THEO MÀU TRƯỚC RỒI MỚI THEO THỜI GIAN ──
    Đó là cả mục đích của việc phân cấp: mở ra là thấy cái gấp nhất trên
    cùng, không phải cái mới nhất. Tin xanh đăng TRƯỚC tin đỏ, nên nếu

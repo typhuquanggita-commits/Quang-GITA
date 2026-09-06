@@ -112,8 +112,14 @@ export async function dangTinTaiChinh(y, env, db, hoSo) {
 
   const id = 'TIN-' + tokenMoi().slice(0, 14);
   await db.prepare(
+    /* HẰNG SỐ 'nguoiDang' PHẢI NẰM Ở Ô loai, KHÔNG PHẢI Ô tieuDe.
+       Tới 9.99.8 nó nằm nhầm một ô: loai nhận tiêu đề, còn tieuDe nhận
+       đúng chữ "nguoiDang" — nên MỌI tin do người đăng hiện tiêu đề là
+       chữ ấy, và tiêu đề thật nằm im trong cột loai. Bộ thử xanh suốt
+       vì nó đo ok, đo thứ tự xếp, đo số đếm — chưa bao giờ đọc lại
+       tiêu đề xem có đúng cái vừa gửi không. Chạy demo mới thấy. */
     'INSERT INTO tinTaiChinh (id,mucDo,loai,tieuDe,than,viSaoGap,doiTuong,tuMay,' +
-    "nguoiDang,luc,giaoCho,hanXuLy,trangThai) VALUES (?,?,?,'nguoiDang',?,?,?,0,?,?,?,?,'moi')"
+    "nguoiDang,luc,giaoCho,hanXuLy,trangThai) VALUES (?,?,'nguoiDang',?,?,?,?,0,?,?,?,?,'moi')"
   ).bind(id, muc, tieuDe.slice(0, 200), than.slice(0, 2000),
     viSao.slice(0, 500) || null, String(t.doiTuong || '').slice(0, 60) || null,
     hoSo.u, new Date().toISOString(), giao || null, han || null).run();

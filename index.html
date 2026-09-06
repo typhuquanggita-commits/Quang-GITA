@@ -10,6 +10,12 @@
      frame-ancestors không đặt được bằng thẻ meta; nó nằm ở _headers, cần máy chủ
      đặt được tiêu đề (Cloudflare). Xem docs/TEN_MIEN.md. -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<!-- connect-src PHẢI kèm origin của máy chủ cấp phép. Nền Apps Script
+     cũ nằm ở script.google.com; nền Cloudflare Workers mới là một
+     origin KHÁC, và thiếu nó thì trình duyệt chặn sạch mọi lượt gọi —
+     bản web trông y như chưa nối máy chủ. Dán địa chỉ vào cau-hinh.js
+     thì phải thêm origin ấy vào đây cùng lượt; tools/soat-san-sang.js
+     canh hai chỗ đi cùng nhau. -->
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
