@@ -182,6 +182,33 @@ const DUONG = [
    'SELECT cum, du, luc, boi FROM caiDat', [],
    'bảng có nhiều nhất BẢY dòng, một dòng mỗi cụm, và lượt nào cũng cần cả bảy'],
 
+  ['tra tệp khách hàng theo mã',
+   'may-chu/ho-so-khach.js · xemTepKhach',
+   'SELECT * FROM hoSoKhach WHERE maKhachHang = ?', ['GITA-0001']],
+
+  ['sổ khách của một Coach',
+   'may-chu/ho-so-khach.js · dsTepKhach',
+   'SELECT maKhachHang FROM hoSoKhach WHERE coach = ? ORDER BY vaoLuc DESC LIMIT 100',
+   ['coach@gita365.vn']],
+
+  ['lịch sử tầng của một nhà',
+   'may-chu/ho-so-khach.js · xemTepKhach',
+   'SELECT * FROM lichSuTang WHERE maKhachHang = ? ORDER BY luc DESC LIMIT 20', ['GITA-0001']],
+
+  ['công nợ một nhà — phải thu trừ đã thu',
+   'may-chu/tai-chinh.js · congNo',
+   'SELECT k.id, COALESCE(SUM(CASE WHEN p.trangThai = ? THEN p.soTien END),0) daThu ' +
+   'FROM kyThu k LEFT JOIN phieuThu p ON p.idKy = k.id WHERE k.maKhachHang = ? GROUP BY k.id',
+   ['daDuyet', 'GITA-0001']],
+
+  ['phiếu thu đang chờ duyệt',
+   'may-chu/tai-chinh.js · banKeTaiChinh',
+   "SELECT id FROM phieuThu WHERE trangThai = 'choDuyet' ORDER BY ghiLuc LIMIT 100", []],
+
+  ['hoa hồng còn phải trả',
+   'may-chu/tai-chinh.js · banKeTaiChinh',
+   "SELECT id FROM hoaHongTra WHERE trangThai = 'phaiTra' ORDER BY sinhLuc LIMIT 100", []],
+
   ['tra một bản chứng cứ theo mã',
    'may-chu/chung-cu.js · timBan',
    'SELECT * FROM chungCu WHERE ma = ?', ['CC-x']],

@@ -32,6 +32,8 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { Kho, tokenMoi } from './nen.js';
+import { ghiDoiTang } from './ho-so-khach.js';
+import { sinhHoaHong } from './tai-chinh.js';
 
 /* ── TRẦN VAI ──
    PHẢI khớp từng chữ với G.XK_TRAN trong kho. Khai lại ở đây không phải
@@ -298,8 +300,22 @@ export async function nangTang(y, env, db, hoSo) {
   await db.prepare("UPDATE students SET tier = ?, status = 'dangHoc' WHERE id = ?")
     .bind(tangMoi, hv.id).run();
 
+  /* BA VIỆC ĐI CÙNG MỘT LƯỢT VƯỢT TẦNG, và đây là chỗ nền cũ chỉ làm
+     một: đổi cột tier rồi thôi.
+
+       · ghi LỊCH SỬ — "nhà này lên tầng ba lúc nào, ai duyệt, KPI bao
+         nhiêu" là câu hỏi hằng tuần, chỉ trả lời được nếu hôm ấy đã ghi
+       · dựng LỊCH THU của tầng mới — một nhà lên tầng mà không có lịch
+         thu là một nhà học không có ai đòi tiền
+       · sinh HOA HỒNG cho nhà bảo trợ, nếu có */
+  const soKy = await ghiDoiTang(db, {maKhachHang: maNha,
+    tuTang: Number(hv.tier || 0), denTang: tangMoi, kpi, boi: hoSo.u,
+    lyDo: 'phiếu ' + tt.id});
+  const hh = await sinhHoaHong(db, maNha, tangMoi, kpi);
+
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'NANG_TANG',
     doiTuong: hv.id, chiTiet: 'Lên tầng ' + tangMoi + ' · KPI ' + kpi +
-      '% · phiếu ' + tt.id + ' · nhà ' + maNha});
-  return {ok: true, tang: tangMoi, kpi};
+      '% · phiếu ' + tt.id + ' · nhà ' + maNha + ' · ' + soKy + ' kỳ thu' +
+      (hh ? ' · hoa hồng ' + hh.bac + ' ' + hh.soTien + 'đ cho ' + hh.nhaKem : '')});
+  return {ok: true, tang: tangMoi, kpi, soKyThu: soKy, hoaHong: hh || undefined};
 }

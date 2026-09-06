@@ -20,6 +20,7 @@
 
 import { Kho, tokenMoi, muoiMoi, bamMoi, soSanhAnToan, mkQuaDeDoan } from './nen.js';
 import { guiThu, sachChoThu, CHAN_THU } from './thu.js';
+import { moTepKhach } from './ho-so-khach.js';
 
 const OTP_PHUT       = 15;   /* mã sống bao lâu */
 const OTP_SAI_TOI    = 5;    /* sai bao nhiêu lần thì huỷ */
@@ -302,6 +303,12 @@ export async function kichHoat(y, env, db) {
   await db.prepare(
     "UPDATE dangKyCho SET trangThai='xong',tokenKichHoat=NULL,tokenHan=0 WHERE id=?"
   ).bind(c.id).run();
+
+  /* TỆP KHÁCH HÀNG MỞ NGAY LÚC NÀY, không đợi lượt nâng tầng đầu tiên.
+     Mở muộn thì có một quãng nhà đã tồn tại mà sổ khách chưa có tên —
+     và đó đúng là quãng Tư vấn cần tra cứu nhất. */
+  await moTepKhach(db, {maKhachHang: maKH, uidPhuHuynh: uid,
+    maHocVien: maHV, boTro: c.maGioiThieu});
 
   await Kho.ghiNhatKy(db, {uid, username: c.email, viec: 'DANG_KY_XONG', doiTuong: maKH,
     chiTiet: 'Tầng 0 · chờ hoàn thành KPI và xác nhận thanh toán' +

@@ -15,7 +15,8 @@
    Xong: đăng nhập · đăng xuất · kiểm phiên · đổi mật khẩu · cấp khoá
    kho · trạng thái máy chủ · đồng bộ hồ sơ và cài đặt · đăng ký, mã xác
    nhận qua email, kích hoạt · quên và đặt lại mật khẩu · quyền xem hồ
-   sơ khách · nâng tầng · chứng cứ hoa hồng.
+   sơ khách · nâng tầng · chứng cứ hoa hồng · TỆP KHÁCH HÀNG CHUẨN ·
+   TÀI CHÍNH (kỳ thu, phiếu thu, công nợ, hoa hồng phải trả, bản kê).
 
    Chưa: tài liệu, sổ cộng đồng, tình huống khách, xuất Sheet.
 
@@ -32,6 +33,8 @@ import { dangKy, guiLaiOtp, xacThucOtp, kichHoat } from './dang-ky.js';
 import { quenMatKhau, datLaiMatKhau } from './mat-khau.js';
 import { capQuyenXem, thuHoiQuyenXem, soiQuyenXem, xemKhachCao, nangTang } from './quyen-xem.js';
 import { kyChungCu, xacNhanChungCu, soiChungCu } from './chung-cu.js';
+import { xemTepKhach, suaTepKhach, dsTepKhach } from './ho-so-khach.js';
+import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh } from './tai-chinh.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -140,7 +143,9 @@ export const CHUA_PORT = {
 
 const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'capQuyenXem', 'thuHoiQuyenXem', 'soiQuyenXem', 'xemKhachCao', 'nangTang',
-  'kyChungCu', 'xacNhanChungCu', 'soiChungCu'];
+  'kyChungCu', 'xacNhanChungCu', 'soiChungCu',
+  'xemTepKhach', 'suaTepKhach', 'dsTepKhach',
+  'ghiPhieuThu', 'duyetPhieuThu', 'congNo', 'banKeTaiChinh'];
 
 async function lam(fn, y, env, db) {
   if (fn === 'dangNhap')  return await dangNhap(y, env, db);
@@ -182,6 +187,15 @@ async function lam(fn, y, env, db) {
   if (fn === 'kyChungCu')      return await kyChungCu(y, env, db, hoSo);
   if (fn === 'xacNhanChungCu') return await xacNhanChungCu(y, env, db, hoSo);
   if (fn === 'soiChungCu')     return await soiChungCu(y, env, db, hoSo);
+
+  if (fn === 'xemTepKhach')  return await xemTepKhach(y, env, db, hoSo);
+  if (fn === 'suaTepKhach')  return await suaTepKhach(y, env, db, hoSo);
+  if (fn === 'dsTepKhach')   return await dsTepKhach(y, env, db, hoSo);
+
+  if (fn === 'ghiPhieuThu')   return await ghiPhieuThu(y, env, db, hoSo);
+  if (fn === 'duyetPhieuThu') return await duyetPhieuThu(y, env, db, hoSo);
+  if (fn === 'congNo')        return await congNo(y, env, db, hoSo);
+  if (fn === 'banKeTaiChinh') return await banKeTaiChinh(y, env, db, hoSo);
   return {ok: false, error: 'Yêu cầu không hợp lệ.'};
 }
 

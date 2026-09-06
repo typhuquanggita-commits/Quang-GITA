@@ -230,6 +230,177 @@ CREATE TABLE IF NOT EXISTS hosoAppSaoLuu (
 -- của người này" đọc đúng mười dòng.
 CREATE INDEX IF NOT EXISTS ix_hososlu_uid ON hosoAppSaoLuu (uid, luc DESC);
 
+-- ═════════════════════════════════════════════════════════════
+--  TỆP KHÁCH HÀNG CHUẨN
+--
+--  Tới bản 9.87, dữ liệu một nhà nằm rải ở bốn chỗ: tài khoản phụ
+--  huynh ở users, hồ sơ con ở students, ruột hồ sơ ở kho tệp, và lượt
+--  đăng ký ở dangKyCho. Không chỗ nào trả lời được câu đơn giản nhất
+--  của người làm nghề: "nhà này vào từ bao giờ, ai tư vấn, ai kèm,
+--  đang ở tầng mấy, đã đóng tới đâu, còn nợ gì".
+--
+--  Bảng này là chỗ trả lời. MỘT DÒNG MỘT NHÀ, khoá là mã khách hàng —
+--  cùng cái mã mà phiếu thu và hoa hồng đều trỏ vào, nên ba sổ nối
+--  được với nhau mà không phải đoán.
+--
+--  KHÔNG CHÉP LẠI THỨ ĐÃ CÓ. Tên phụ huynh nằm ở users, tên con nằm ở
+--  students; ở đây chỉ giữ CHỖ TRỎ. Chép lại là dựng bản thứ hai của
+--  một sự thật, và hai bản thì sẽ có ngày lệch nhau.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS hoSoKhach (
+  maKhachHang TEXT PRIMARY KEY,
+  uidPhuHuynh TEXT NOT NULL,      -- trỏ users.id
+  maHocVien   TEXT,               -- trỏ students.id
+  tuyen       TEXT NOT NULL DEFAULT 'GITA365',
+  tang        INTEGER NOT NULL DEFAULT 0,
+  band        TEXT,               -- XANH · VANG · DO · XAM, theo G.MT_BANG
+  coach       TEXT,               -- tên đăng nhập người kèm
+  tuVan       TEXT,               -- tên đăng nhập người tư vấn
+  boTro       TEXT,               -- mã nhà giới thiệu — gốc của hoa hồng
+  trangThai   TEXT NOT NULL DEFAULT 'dangHoc',  -- dangHoc · tamDung · nghi · xong
+  vaoLuc      TEXT,
+  suaLuc      TEXT,
+  ghiChu      TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_hsk_ph    ON hoSoKhach (uidPhuHuynh);
+CREATE INDEX IF NOT EXISTS ix_hsk_coach ON hoSoKhach (coach, tang);
+CREATE INDEX IF NOT EXISTS ix_hsk_tuvan ON hoSoKhach (tuVan, trangThai);
+-- Hoa hồng đi ngược từ nhà được kèm về nhà bảo trợ, nên đường ấy phải
+-- tra được. MỘT PHẦN, vì phần lớn nhà không có ai bảo trợ.
+CREATE INDEX IF NOT EXISTS ix_hsk_botro ON hoSoKhach (boTro)
+  WHERE boTro IS NOT NULL AND boTro <> '';
+
+-- Mỗi lần đổi tầng một dòng. Không sửa cột tang rồi thôi: câu "nhà này
+-- lên tầng ba lúc nào, ai duyệt, KPI bao nhiêu" là câu người làm nghề
+-- hỏi hằng tuần, và nó chỉ trả lời được nếu hôm ấy đã ghi.
+CREATE TABLE IF NOT EXISTS lichSuTang (
+  id          TEXT PRIMARY KEY,
+  maKhachHang TEXT NOT NULL,
+  tuTang      INTEGER,
+  denTang     INTEGER NOT NULL,
+  kpi         REAL,
+  boi         TEXT,
+  luc         TEXT NOT NULL,
+  lyDo        TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_lst_nha ON lichSuTang (maKhachHang, luc DESC);
+
+-- ═════════════════════════════════════════════════════════════
+--  TÀI CHÍNH — PHẢI THU TÁCH KHỎI ĐÃ THU
+--
+--  ĐÂY LÀ CHỖ NỀN CŨ KHÔNG DIỄN TẢ ĐƯỢC.
+--
+--  Bảng thanhToan cũ có MỘT dòng cho mỗi (nhà × tầng), với trangThai
+--  'daXacNhan'. Tức là nó chỉ nói được "tầng này đã trả tiền hay
+--  chưa" — một câu đúng/sai.
+--
+--  Nhưng chính bảng học phí của Học viện khai nhịp thu KHÁC hẳn:
+--
+--    T1  thu một lần
+--    T2  một lần, hoặc HAI kỳ (trước ngày 1, trước ngày 11)
+--    T3  BA kỳ — trước ngày 1, ngày 43, ngày 64
+--    T4  BỐN kỳ theo quý, "không thu trước cho cả năm"
+--    T5  bốn kỳ như T4
+--
+--  Với một dòng đúng/sai thì một nhà tầng bốn đóng xong kỳ MỘT đã được
+--  tính là "đã thanh toán tầng bốn" — và ba kỳ còn lại biến mất khỏi
+--  sổ. Không phải sai một con số; là không có chỗ để ghi con số ấy.
+--
+--  Nên tách hai bảng:
+--    kyThu    — PHẢI THU: mỗi kỳ một dòng, sinh ra lúc vào tầng
+--    phieuThu — ĐÃ THU: mỗi lần nhận tiền một dòng, trỏ về một kỳ
+--
+--  Công nợ = kyThu chưa đủ phieuThu. Không tách thì không có phép trừ
+--  ấy, và "còn nợ bao nhiêu" là câu không trả lời được bằng dữ liệu.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS kyThu (
+  id          TEXT PRIMARY KEY,
+  maKhachHang TEXT NOT NULL,
+  tang        INTEGER NOT NULL,
+  ky          INTEGER NOT NULL,    -- 1, 2, 3, 4
+  soKy        INTEGER NOT NULL,    -- tổng số kỳ của tầng này
+  ngayThu     INTEGER NOT NULL,    -- ngày thứ mấy của tầng thì tới kỳ
+  phaiThu     REAL NOT NULL,
+  hanLuc      TEXT,                -- mốc thật, tính từ ngày vào tầng
+  congTruoc   TEXT,                -- kỳ này chỉ thu khi cổng nào đã nghiệm thu
+  taoLuc      TEXT NOT NULL
+);
+
+-- Một nhà một tầng một kỳ — đúng một dòng. Sinh lịch hai lần là nhân
+-- đôi công nợ của một nhà, và không ai nhìn ra cho tới lúc đối chiếu.
+CREATE UNIQUE INDEX IF NOT EXISTS ix_kythu_mot ON kyThu (maKhachHang, tang, ky);
+CREATE INDEX IF NOT EXISTS ix_kythu_han ON kyThu (hanLuc);
+
+CREATE TABLE IF NOT EXISTS phieuThu (
+  id          TEXT PRIMARY KEY,
+  maKhachHang TEXT NOT NULL,
+  idKy        TEXT,                -- trỏ kyThu.id; để trống là khoản thu ngoài lịch
+  soTien      REAL NOT NULL,
+  hinhThuc    TEXT NOT NULL,       -- chuyenKhoan · tienMat · the
+  maThamChieu TEXT,                -- số giao dịch ngân hàng
+  minhChung   TEXT,                -- mã tệp trên Drive
+  nguoiGhi    TEXT NOT NULL,
+  ghiLuc      TEXT NOT NULL,
+  nguoiDuyet  TEXT,                -- NGƯỜI KHÁC người ghi — xem chú giải ở tai-chinh.js
+  duyetLuc    TEXT,
+  trangThai   TEXT NOT NULL DEFAULT 'choDuyet',  -- choDuyet · daDuyet · tuChoi
+  lyDo        TEXT,
+  ghiChu      TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_pt_nha ON phieuThu (maKhachHang, ghiLuc DESC);
+CREATE INDEX IF NOT EXISTS ix_pt_ky  ON phieuThu (idKy, trangThai);
+CREATE INDEX IF NOT EXISTS ix_pt_tt  ON phieuThu (trangThai, ghiLuc);
+
+-- Hoàn tiền. Mỗi tầng có luật hoàn riêng, khai ở HP_TANG[].hoan; luật
+-- ấy là CHỮ, không phải công thức, nên số tiền hoàn do người quyết và
+-- bảng này ghi lại AI quyết, THEO LUẬT NÀO. Máy không tự tính hoàn.
+CREATE TABLE IF NOT EXISTS hoanTien (
+  id          TEXT PRIMARY KEY,
+  maKhachHang TEXT NOT NULL,
+  idPhieuThu  TEXT,
+  soTien      REAL NOT NULL,
+  theoLuat    TEXT NOT NULL,       -- nguyên văn luật hoàn của tầng ấy
+  lyDo        TEXT NOT NULL,
+  nguoiDeXuat TEXT NOT NULL,
+  nguoiDuyet  TEXT,
+  deXuatLuc   TEXT NOT NULL,
+  duyetLuc    TEXT,
+  trangThai   TEXT NOT NULL DEFAULT 'choDuyet'
+);
+
+CREATE INDEX IF NOT EXISTS ix_ht_nha ON hoanTien (maKhachHang, deXuatLuc DESC);
+CREATE INDEX IF NOT EXISTS ix_ht_tt  ON hoanTien (trangThai);
+
+-- Hoa hồng PHẢI TRẢ. Sinh ra khi nhà được kèm vượt tầng và hai KPI đủ
+-- điều kiện; trả ra là một lượt chi riêng, có người duyệt.
+CREATE TABLE IF NOT EXISTS hoaHongTra (
+  id           TEXT PRIMARY KEY,
+  nhaKem       TEXT NOT NULL,      -- mã nhà được hưởng
+  nhaDuocKem   TEXT NOT NULL,
+  tangVuot     INTEGER NOT NULL,
+  bac          TEXT NOT NULL,      -- B5 · B10, theo G.HH_BAC
+  phanTram     REAL NOT NULL,
+  goiCanCu     REAL NOT NULL,      -- giá gói của nhà ĐƯỢC KÈM
+  soTien       REAL NOT NULL,
+  kpiNhaKem    REAL,
+  kpiNhaDuocKem REAL,
+  maChungCu    TEXT,               -- trỏ chungCu.ma
+  trangThai    TEXT NOT NULL DEFAULT 'phaiTra',  -- phaiTra · daTra · huy
+  sinhLuc      TEXT NOT NULL,
+  traLuc       TEXT,
+  nguoiDuyet   TEXT,
+  lyDo         TEXT
+);
+
+-- Một lượt vượt tầng của một nhà sinh ĐÚNG MỘT khoản hoa hồng cho nhà
+-- kèm. Không có chỉ mục duy nhất này thì bấm hai lần là trả hai lần.
+CREATE UNIQUE INDEX IF NOT EXISTS ix_hh_mot
+  ON hoaHongTra (nhaKem, nhaDuocKem, tangVuot);
+CREATE INDEX IF NOT EXISTS ix_hh_tt ON hoaHongTra (trangThai, sinhLuc);
+
 -- ─────────────────────────────────────────────────────────────
 --  CHỨNG TỪ THANH TOÁN — KHÔNG XOÁ, KHÔNG BAO GIỜ
 -- ─────────────────────────────────────────────────────────────

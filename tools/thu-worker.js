@@ -875,8 +875,173 @@ bao(khongKhoa.status === 500,
   'máy chủ CHƯA NẠP KHOÁ KÝ thì từ chối ký, không ký bằng một khoá rỗng',
   'ký bằng khoá rỗng là phát ra một biên nhận trông như thật mà không chứng được gì');
 
-/* ═══════════════ 14 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
-console.log('\n14 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
+/* ═══════════════ 14 · TỆP KHÁCH HÀNG VÀ TÀI CHÍNH ═══════════════ */
+console.log('\n14 · TỆP KHÁCH HÀNG');
+db.prepare("DELETE FROM chanNhip").run();
+
+/* Nhà đăng ký mới phải có TỆP ngay, không đợi lượt nâng tầng đầu tiên. */
+const eMoi = 'nhatep@vidu.vn';
+await goi({fn:'dangKy', hoSo:{...HOSO_MOI, email:eMoi, maGioiThieu:'GITA-0003'}});
+const mTep = (thuCuoi().than.match(/là: (\d{6})/) || [])[1];
+await goi({fn:'xacThucOtp', email:eMoi, ma:mTep});
+const lkTep = (thuCuoi().than.match(/#kichhoat=([a-f0-9]+)/) || [])[1];
+const khTep = await goi({fn:'kichHoat', token:lkTep, mk:'MotChuoiTuTe2026!'});
+const nhaMoi = khTep.than.maKhachHang;
+const tepDb = db.prepare("SELECT * FROM hoSoKhach WHERE maKhachHang = ?").get(nhaMoi);
+bao(!!tepDb, 'kích hoạt xong là CÓ TỆP KHÁCH HÀNG ngay', nhaMoi);
+bao(tepDb && tepDb.boTro === 'GITA-0003',
+  'và tệp giữ MÃ NHÀ BẢO TRỢ — gốc của hoa hồng', tepDb && tepDb.boTro);
+bao(tepDb && tepDb.tang === 0 && tepDb.trangThai === 'dangHoc',
+  'mở ở tầng 0, trạng thái đang học');
+
+/* Gia đình đọc được tệp CỦA MÌNH, không đọc được tệp nhà khác. */
+const tkNhaMoi = (await goi({fn:'dangNhap', u:eMoi, mk:'MotChuoiTuTe2026!'})).than.token;
+bao((await goi({fn:'xemTepKhach', token:tkNhaMoi, u:eMoi, maKhachHang:nhaMoi})).than.ok,
+  'gia đình đọc được tệp của chính mình');
+const tromTep = await goi({fn:'xemTepKhach', token:tkNhaMoi, u:eMoi, maKhachHang:'GITA-0003'});
+bao(!tromTep.than.ok && tromTep.than.code === 'NOPERM',
+  'nhưng KHÔNG đọc được tệp nhà khác',
+  'tệp mang tên nhà, tên con, tên phụ huynh và tình hình tiền nong — gửi nhầm là gửi trọn cả bốn');
+
+const tepSA = await goi({fn:'xemTepKhach', token:tkSA, u:'superadmin@gita365.vn', maKhachHang:nhaMoi});
+bao(tepSA.than.ok && tepSA.than.tep.phuHuynh && tepSA.than.tep.hocVien,
+  'đội ngũ đọc được, và tệp GỘP đủ bốn nguồn thành một bản',
+  'phụ huynh · học viên · tệp · lịch sử tầng');
+bao(tepSA.than.tep.phuHuynh.hoTen && !tepDb.hoTenPhuHuynh,
+  'tên phụ huynh TRỎ về users, không chép vào bảng',
+  'chép lại là dựng bản thứ hai của một sự thật, và hai bản sẽ có ngày lệch nhau');
+
+/* Sửa được coach/tư vấn/băng — KHÔNG sửa được tầng. */
+const suaOk = await goi({fn:'suaTepKhach', token:tkSA, u:'superadmin@gita365.vn',
+  maKhachHang:nhaMoi, sua:{coach:'coach@gita365.vn', band:'VANG'}});
+bao(suaOk.than.ok && suaOk.than.daSua === 2, 'sửa được coach và băng');
+bao(!(await goi({fn:'suaTepKhach', token:tkSA, u:'superadmin@gita365.vn',
+  maKhachHang:nhaMoi, sua:{band:'TIM'}})).than.ok, 'băng ngoài bốn màu thì từ chối');
+const suaTang = await goi({fn:'suaTepKhach', token:tkSA, u:'superadmin@gita365.vn',
+  maKhachHang:nhaMoi, sua:{tang:5, ghiChu:'thử'}});
+bao(db.prepare("SELECT tang FROM hoSoKhach WHERE maKhachHang=?").get(nhaMoi).tang === 0 &&
+    (suaTang.than.khongSuaDuoc||[]).indexOf('tang') >= 0,
+  'TẦNG KHÔNG SỬA ĐƯỢC Ở ĐÂY, và trường bị chặn được NÓI RA',
+  'cho sửa tầng ở đây là dựng một cửa sau đi vòng qua cổng KPI và cổng thanh toán');
+
+console.log('\n14b · TÀI CHÍNH — PHẢI THU TÁCH KHỎI ĐÃ THU');
+const {GIA_TANG, SUY_RA} = await import('../may-chu/tai-chinh.js');
+
+/* NHÀ BẢO TRỢ PHẢI CÓ KPI THẬT thì hoa hồng mới sinh. Bản đầu của phép
+   đo này quên bước ấy và đỏ ở mục hoa hồng — luật đúng, phép đo thiếu.
+   Ghi lại vì đó cũng là điều kiện thật: kèm mà nếp nhà mình không đạt
+   thì không có hoa hồng, dù nhà kia có vượt tầng. */
+db.prepare("UPDATE students SET kpi = 90 WHERE id = " +
+  "(SELECT maHocVien FROM hoSoKhach WHERE maKhachHang = 'GITA-0003')").run();
+
+/* Nâng tầng thì DỰNG LỊCH THU của tầng mới. */
+db.prepare("UPDATE students SET kpi = 85 WHERE id = (SELECT maHocVien FROM hoSoKhach WHERE maKhachHang=?)").run(nhaMoi);
+db.prepare("INSERT INTO thanhToan (id,maKhachHang,tier,trangThai,daDung) VALUES ('TT-M1',?,1,'daXacNhan',0)").run(nhaMoi);
+const lenT1 = await goi({fn:'nangTang', token:tkSA, u:'superadmin@gita365.vn',
+  maHocVien: db.prepare("SELECT maHocVien FROM hoSoKhach WHERE maKhachHang=?").get(nhaMoi).maHocVien,
+  tang:1, maKhachHang:nhaMoi});
+bao(lenT1.than.ok && lenT1.than.soKyThu === 0,
+  'TẦNG 1 GIÁ 0 THÌ KHÔNG SINH KỲ THU NÀO',
+  'một dòng "phải thu 0 đồng" là một dòng công nợ giả, và nó làm mọi bản kê có rác');
+bao(db.prepare("SELECT count(*) c FROM lichSuTang WHERE maKhachHang=?").get(nhaMoi).c === 1,
+  'và ghi MỘT DÒNG LỊCH SỬ TẦNG — nền cũ chỉ đổi cột tier rồi thôi');
+
+/* Lên tầng 3: BA kỳ, đúng nhịp bảng học phí khai. */
+db.prepare("UPDATE students SET tier = 2, kpi = 85 WHERE id = (SELECT maHocVien FROM hoSoKhach WHERE maKhachHang=?)").run(nhaMoi);
+db.prepare("UPDATE hoSoKhach SET tang = 2 WHERE maKhachHang = ?").run(nhaMoi);
+db.prepare("INSERT INTO thanhToan (id,maKhachHang,tier,trangThai,daDung) VALUES ('TT-M3',?,3,'daXacNhan',0)").run(nhaMoi);
+const lenT3 = await goi({fn:'nangTang', token:tkSA, u:'superadmin@gita365.vn',
+  maHocVien: db.prepare("SELECT maHocVien FROM hoSoKhach WHERE maKhachHang=?").get(nhaMoi).maHocVien,
+  tang:3, maKhachHang:nhaMoi});
+bao(lenT3.than.ok && lenT3.than.soKyThu === 3,
+  'TẦNG 3 SINH BA KỲ THU — đúng nhịp bảng học phí khai',
+  'nền cũ chỉ có MỘT dòng đúng/sai cho cả tầng, nên hai kỳ sau biến mất khỏi sổ');
+const kyT3 = db.prepare("SELECT * FROM kyThu WHERE maKhachHang=? AND tang=3 ORDER BY ky").all(nhaMoi);
+bao(kyT3.map(x=>x.ngayThu).join(',') === '1,43,64',
+  'ba kỳ rơi đúng ngày 1 · 43 · 64', kyT3.map(x=>x.ngayThu).join(' · '));
+bao(kyT3.reduce((a,x)=>a+x.phaiThu,0) === GIA_TANG[3],
+  'TỔNG BA KỲ ĐÚNG BẰNG GIÁ GÓI, không lệch đồng nào',
+  'chia đều rồi làm tròn từng kỳ thì tổng lệch vài đồng, và một bản kê lệch vài đồng là một bản kê phải đi giải thích');
+bao(kyT3[1].congTruoc && kyT3[0].congTruoc === null,
+  'kỳ 2 và 3 khai CỔNG PHẢI NGHIỆM THU TRƯỚC, kỳ 1 thì không');
+
+/* Dựng lịch hai lần không nhân đôi công nợ. */
+const {dungLichThu} = await import('../may-chu/tai-chinh.js');
+await dungLichThu(env.CSDL, nhaMoi, 3, new Date().toISOString());
+bao(db.prepare("SELECT count(*) c FROM kyThu WHERE maKhachHang=? AND tang=3").get(nhaMoi).c === 3,
+  'dựng lịch LẦN HAI không nhân đôi công nợ',
+  'dựng hai lần là nhân đôi công nợ một nhà, và không ai nhìn ra cho tới lúc đối chiếu');
+
+/* Phiếu thu: ghi → duyệt, và người ghi không tự duyệt. */
+const gp = await goi({fn:'ghiPhieuThu', token:tkCoach, u:'coach@gita365.vn',
+  phieu:{maKhachHang:nhaMoi, idKy:kyT3[0].id, soTien:kyT3[0].phaiThu,
+         hinhThuc:'chuyenKhoan', maThamChieu:'FT26090100123'}});
+bao(gp.than.ok && gp.than.trangThai === 'choDuyet', 'ghi được phiếu thu, trạng thái CHỜ DUYỆT');
+bao(!(await goi({fn:'ghiPhieuThu', token:tkNhaMoi, u:eMoi,
+  phieu:{maKhachHang:nhaMoi, soTien:1000, hinhThuc:'tienMat'}})).than.ok,
+  'phụ huynh không ghi được phiếu thu');
+bao(!(await goi({fn:'ghiPhieuThu', token:tkCoach, u:'coach@gita365.vn',
+  phieu:{maKhachHang:nhaMoi, soTien:1000, hinhThuc:'bitcoin'}})).than.ok,
+  'hình thức thu ngoài ba loại thì từ chối');
+
+/* Công nợ TRƯỚC khi duyệt — phiếu chờ duyệt chưa trừ nợ. */
+const cn1 = await goi({fn:'congNo', token:tkSA, u:'superadmin@gita365.vn', maKhachHang:nhaMoi});
+bao(cn1.than.tongConNo === GIA_TANG[3],
+  'PHIẾU CHỜ DUYỆT CHƯA TRỪ NỢ — chỉ tiền đã duyệt mới vào sổ',
+  cn1.than.tongConNo + 'đ còn nợ');
+
+bao(!(await goi({fn:'duyetPhieuThu', token:tkCoach, u:'coach@gita365.vn', id:gp.than.id})).than.ok,
+  'người ghi phiếu KHÔNG TỰ DUYỆT phiếu của mình',
+  'người ghi phiếu là người nói "đã nhận tiền"; tự duyệt luôn thì không có lớp nào đứng giữa lời nói và sổ sách');
+
+const dp = await goi({fn:'duyetPhieuThu', token:tkSA, u:'superadmin@gita365.vn', id:gp.than.id});
+bao(dp.than.ok, 'người KHÁC duyệt thì được');
+bao(!(await goi({fn:'duyetPhieuThu', token:tkSA, u:'superadmin@gita365.vn', id:gp.than.id})).than.ok,
+  'duyệt rồi thì không duyệt lại được');
+
+const cn2 = await goi({fn:'congNo', token:tkSA, u:'superadmin@gita365.vn', maKhachHang:nhaMoi});
+bao(cn2.than.tongDaThu === kyT3[0].phaiThu &&
+    cn2.than.tongConNo === GIA_TANG[3] - kyT3[0].phaiThu,
+  'duyệt rồi thì CÔNG NỢ = PHẢI THU − ĐÃ THU',
+  'đã thu ' + cn2.than.tongDaThu + 'đ · còn nợ ' + cn2.than.tongConNo + 'đ');
+bao(cn2.than.ke.length === 3 && cn2.than.ke[1].daThu === 0,
+  'và KỲ CHƯA THU ĐỒNG NÀO VẪN CÓ TRONG BẢN KÊ',
+  'lọc sau khi đọc về thì kỳ chưa thu là kỳ dễ rơi ra nhất — mà đó đúng là kỳ cần nhìn thấy');
+
+/* Gia đình xem được công nợ của mình, không xem của nhà khác. */
+bao((await goi({fn:'congNo', token:tkNhaMoi, u:eMoi, maKhachHang:nhaMoi})).than.ok &&
+    !(await goi({fn:'congNo', token:tkNhaMoi, u:eMoi, maKhachHang:'GITA-0003'})).than.ok,
+  'gia đình xem công nợ CỦA MÌNH, không xem của nhà khác');
+
+/* Hoa hồng sinh khi nhà được kèm vượt tầng. */
+const hhDb = db.prepare("SELECT * FROM hoaHongTra WHERE nhaDuocKem = ?").all(nhaMoi);
+bao(hhDb.length >= 1, 'nhà có bảo trợ vượt tầng thì SINH HOA HỒNG cho nhà bảo trợ',
+  hhDb.length + ' khoản');
+const hhT3 = hhDb.filter(x => x.tangVuot === 3)[0];
+bao(hhT3 && hhT3.goiCanCu === GIA_TANG[3] &&
+    hhT3.soTien === Math.round(GIA_TANG[3] * hhT3.phanTram / 100),
+  'tiền hoa hồng tính trên GÓI CỦA NHÀ ĐƯỢC KÈM',
+  hhT3 && (hhT3.bac + ' · ' + hhT3.phanTram + '% · ' + hhT3.soTien + 'đ'));
+bao(!hhDb.some(x => x.tangVuot === 1),
+  'TẦNG 1 KHÔNG SINH HOA HỒNG — điều khoản, không phải phép nhân ra 0');
+bao(hhDb.every(x => x.phanTram <= 10), 'không khoản nào vượt trần 10%');
+
+/* Bản kê chỉ R01–R03. */
+bao(!(await goi({fn:'banKeTaiChinh', token:tkCoach, u:'coach@gita365.vn'})).than.ok,
+  'Coach không xem được bản kê tài chính — nó gộp tiền của cả hệ');
+const bk = (await goi({fn:'banKeTaiChinh', token:tkSA, u:'superadmin@gita365.vn'})).than;
+bao(bk.ok && bk.daThu.tien === kyT3[0].phaiThu && bk.hoaHongPhaiTra.so >= 1,
+  'bản kê gộp đúng: đã thu, chờ duyệt, hoàn, hoa hồng phải trả',
+  'đã thu ' + bk.daThu.tien + 'đ · hoa hồng phải trả ' + bk.hoaHongPhaiTra.tien + 'đ');
+bao(bk.suyRa && bk.suyRa.length === SUY_RA.length,
+  'và bản kê IN RA những chỗ tôi SUY RA chứ chủ hệ chưa khai',
+  SUY_RA.map(x => x.ma).join(' · '));
+bao(!('loiNhuan' in bk),
+  'bản kê KHÔNG tự cộng ra một con số lợi nhuận',
+  'chi phí vận hành không nằm trong hệ này, nên con số ấy sẽ sai và sẽ được ai đó mang đi họp');
+
+/* ═══════════════ 15 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
+console.log('\n15 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng
    nó — đúng chuyện vừa xảy ra khi dongBo được port. */
@@ -889,8 +1054,8 @@ const bia = (await goi({fn: 'mot-viec-khong-co-that', token: tk})).than;
 bao(bia.code !== 'CHUAPORT' && !bia.ok, 'còn việc bịa ra thì vẫn là yêu cầu không hợp lệ',
   bia.error);
 
-/* ═══════════════ 15 · KHÔNG RÒ RA NGOÀI ═══════════════ */
-console.log('\n15 · KHÔNG RÒ RA NGOÀI');
+/* ═══════════════ 16 · KHÔNG RÒ RA NGOÀI ═══════════════ */
+console.log('\n16 · KHÔNG RÒ RA NGOÀI');
 const xau = {prepare(){ throw new Error('SQLITE_ERROR: no such column: users.matKhauThat'); }};
 const rNo = await worker.fetch(new Request('https://gita.test/', {
   method: 'POST', headers: {'Content-Type': 'application/json'},
@@ -907,12 +1072,12 @@ bao(jGt.ok && jGt.daNapKhoa === 8 && !JSON.stringify(jGt).includes('khoa-nen'),
   'cửa trạng thái nói ĐÃ NẠP MẤY KHOÁ mà không trả khoá nào',
   'đã nạp ' + jGt.daNapKhoa + ' gói');
 
-/* ═══════════════ 16 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
+/* ═══════════════ 17 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
 
-   Mười lăm mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
+   Mười sáu mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
    Ở đây phá bằng cách truyền một hồ sơ vai KHÁC vào chính hàm tính
    phạm vi — không tráo hàm toàn cục, đúng luật đã ghi ở v9.79. */
-console.log('\n16 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
+console.log('\n17 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
 const pv = (await import('../may-chu/worker.js')).phamViCapPhep;
 bao(pv({role: 'R13', tier: 5}).indexOf('tang5') >= 0 &&
     pv({role: 'R13', tier: 2}).indexOf('tang3') < 0,
