@@ -9787,6 +9787,67 @@ const { chromium } = require(PW);
       doXK.length ? 'phép đo hỏng: ' + doXK.join(' · ')
         : 'Tư vấn 1-3 · Coach 1-5 · Giáo viên 0 tầng · gói nghề hết tầng 4-5 · giấy phép hết hạn tự tắt · trần chặn cả Super Admin · hai bản trần khớp');
 
+    /* ── QUY CHẾ PHÒNG TÀI CHÍNH: MỖI ĐIỀU PHẢI TRỎ VÀO CHỖ THI HÀNH CÓ THẬT ──
+
+       Luật của chính tệp quy chế ấy: mỗi điều khoản mang một tên hàm
+       hoặc tên cổng trong mã, HOẶC tự khai là chưa có chỗ chặn.
+
+       Một quy chế mà mã không thi hành là một tờ giấy dán tường — nó
+       làm người đọc yên tâm mà không đổi được hành vi nào, và tệ hơn,
+       làm người ta thôi đi tìm chỗ thủng vì "đã có quy chế rồi".
+
+       Phép đo này đọc TỪNG tên khai ở thiHanh và tìm nó trong nguồn
+       may-chu/. Khai bừa một cái tên là đỏ. Khai null thì phải có
+       vi_chua nói rõ vì sao chưa — nói ra chỗ mình chưa chặn được là
+       phần đắt nhất của một bộ quy chế, và cũng là phần dễ bỏ nhất. */
+    {
+      const dsTep = fsGoc.readdirSync(pathGoc.join(__dirname, '..', 'may-chu'))
+        .filter(f => f.endsWith('.js'));
+      const nguonMC = dsTep.map(f =>
+        fsGoc.readFileSync(pathGoc.join(__dirname, '..', 'may-chu', f), 'utf8')).join('\n');
+
+      const vb = await p.evaluate(() => ({
+        dieu: ((window.G.TC_DIEULE || {}).dieu || []).map(x =>
+          ({so: x.so, thiHanh: x.thiHanh || null, coViChua: !!x.vi_chua})),
+        khac: []
+          .concat((window.G.TC_QUYCHE || []).map(x => ({ma: x.ma, thiHanh: x.thiHanh || null})))
+          .concat((window.G.TC_BIEUMAU || []).map(x => ({ma: x.ma, thiHanh: x.thiHanh || null}))),
+        soQuyTrinh: (window.G.TC_QUYTRINH || []).length,
+        soRuiRo: (window.G.TC_RUIRO || []).length,
+        ruiRoDuCot: (window.G.TC_RUIRO || []).every(x => x.chan && x.con && x.ai)
+      }));
+
+      const thieu = [];
+      const tenTu = t => String(t).split('·').map(x => x.trim()).filter(Boolean);
+      for (const d of vb.dieu) {
+        if (!d.thiHanh) { if (!d.coViChua) thieu.push('điều ' + d.so + ' khai null mà không nói vì sao'); continue; }
+        for (const ten of tenTu(d.thiHanh))
+          if (nguonMC.indexOf(ten) < 0) thieu.push('điều ' + d.so + ' → ' + ten);
+      }
+      for (const k of vb.khac) {
+        if (!k.thiHanh) { thieu.push(k.ma + ' không khai chỗ thi hành'); continue; }
+        for (const ten of tenTu(k.thiHanh))
+          if (nguonMC.indexOf(ten) < 0) thieu.push(k.ma + ' → ' + ten);
+      }
+
+      ra.vbThiHanhCoThat = thieu.length === 0;
+      ra.vbThieu = thieu;
+      ra.vbDuBo = vb.dieu.length >= 15 && vb.khac.length >= 14 &&
+        vb.soQuyTrinh >= 5 && vb.soRuiRo >= 10;
+      /* Sổ rủi ro phải có ĐỦ BA CỘT mỗi dòng: cái đang chặn, phần CÒN
+         LẠI sau khi chặn, và ai phải nhìn phần còn lại ấy. Cột "còn
+         lại" là cột người ta hay bỏ, và một sổ rủi ro mà mọi dòng đều
+         chặn hết là một sổ chưa ai đọc kỹ. */
+      ra.ruiRoDuCot = vb.ruiRoDuCot;
+      ra.soDieu = vb.dieu.length;
+    }
+
+    bao(ra.vbThiHanhCoThat && ra.vbDuBo && ra.ruiRoDuCot,
+      'QUY CHẾ PHÒNG TÀI CHÍNH — MỖI ĐIỀU TRỎ VÀO MỘT CHỖ THI HÀNH CÓ THẬT TRONG MÃ. Một quy chế mà mã không thi hành là một tờ giấy dán tường: nó làm người đọc yên tâm mà không đổi được hành vi nào, và tệ hơn, nó làm người ta thôi đi tìm chỗ thủng vì "đã có quy chế rồi". Nên mỗi điều ở TC-DL-01 mang một trong hai thứ — một tên hàm hoặc tên cổng CÓ THẬT trong may-chu/, hoặc null KÈM lời nói rõ vì sao chưa chặn được. Phép đo này đọc từng tên và tìm nó trong nguồn máy chủ; khai bừa một cái tên là đỏ, và khai null mà im lặng cũng đỏ. Sổ rủi ro thì phải đủ BA cột mỗi dòng: cái đang chặn, phần CÒN LẠI sau khi chặn, và ai phải nhìn phần còn lại ấy — cột "còn lại" là cột người ta hay bỏ nhất, và một sổ rủi ro mà mọi dòng đều "đã chặn hoàn toàn" là một sổ chưa ai đọc kỹ',
+      ra.vbThiHanhCoThat
+        ? ra.soDieu + ' điều · 6 quy chế · 5 quy trình · 8 biểu mẫu · 10 rủi ro đủ ba cột'
+        : 'khai mà mã không có: ' + (ra.vbThieu || []).join(' · '));
+
     bao(ra.giaHaiBanKhop && ra.thangNeoDungGiaKho,
       'BẢNG GÓI DỊCH VỤ CHỐT GIÁ THEO TẦNG — VÀ BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP BẢN GỐC TRONG KHO. Chủ hệ chốt ở 9.94: giá chốt theo tầng. Bản gốc nằm ở G.HP_TANG trong kho đã mã hoá; máy chủ mới không đọc được kho ấy nên giữ một bản chép ở may-chu/tai-chinh.js → GIA_TANG. Tới bản 9.93 KHÔNG AI ĐỐI CHIẾU HAI BẢN, trong khi chú giải ở chính tệp ấy lại viết rằng bộ kiểm đối chiếu mỗi lần chạy — một chú giải hứa một lớp bảo vệ không tồn tại thì tệ hơn không có chú giải nào, vì nó làm người đọc thôi đi tìm. Giá lệch thì hỏng ba chỗ cùng lúc và im lặng cả ba: lịch thu dựng ra số tiền sai, hoa hồng tính trên giá gói sai, và THANG DUYỆT CHI neo vào giá cũ trong khi soatNeoThang() vẫn báo khớp — vì nó so thang với bản chép chứ không so với bản gốc. Phép đo này so cả hai chặng: kho ↔ máy chủ, và kho ↔ ba nấc N3 N4 N5 của thang duyệt chi',
       ra.giaHaiBanKhop

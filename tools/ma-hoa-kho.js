@@ -239,6 +239,9 @@ const NEN = ['VANHANH', 'CHUYENDICH', 'LOTRINH', 'TEAM', 'CUHICH',
   'SOAT_BAT_BUOC', 'SOAT_THA', 'SOAT_MOC', 'SOAT_CHATLUONG'];
 
 const NGHE = [
+  /* Quy chế phòng tài chính — 9.99. Cấp duyệt, hạn mức, chỗ thủng đã
+     biết. KHÔNG được rời hệ tới khách hàng, nên gói NGHỀ. */
+  'TC_MA_VB', 'TC_DIEULE', 'TC_QUYCHE', 'TC_QUYTRINH', 'TC_BIEUMAU', 'TC_RUIRO',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */
