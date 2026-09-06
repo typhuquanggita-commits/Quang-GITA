@@ -62,6 +62,49 @@ G.thuMayChu = function(){
 /* Xác nhận quyền vào Drive. Máy chủ thử thật: mở từng thư mục, tạo một tệp
    dấu, xoá đi. Bấm Allow trên màn xin quyền của Google chỉ là bước đầu —
    nó không nói được máy chủ có ghi đúng thư mục của Học viện hay không. */
+/* ═══════════════ MỘT CỬA GỌI MÁY CHỦ ═══════════════
+
+   Tới bản 9.99 mỗi màn tự viết fetch của mình: app.js, bang-tin.js,
+   dong-bo.js, mat-khau.js — bốn chỗ, bốn cách bắt lỗi, bốn câu báo
+   khác nhau cho cùng một sự cố.
+
+   Bốn bản của một việc thì sẽ có ngày lệch: một chỗ gắn token, chỗ kia
+   quên; một chỗ đọc d.error, chỗ kia đọc d.ly. Người dùng gặp cùng một
+   lỗi mạng ở hai màn và nhận hai câu khác nhau.
+
+   Cửa này gom lại một chỗ. Nó KHÔNG ném ra bao giờ — trả về
+   {ok:false, error} — vì màn hình gọi nó trong lúc vẽ, và một lượt ném
+   ở đó là trắng cả màn.
+
+   Bốn chỗ cũ chưa chuyển sang: chúng đang chạy đúng, và đổi cả bốn
+   trong một lượt là bốn chỗ có thể hỏng cùng lúc mà không phép đo nào
+   phủ hết. Chuyển dần khi có việc chạm vào từng chỗ. */
+G.goiMayChu = function(fn, than){
+  if(!G.API_CAP_PHEP)
+    return Promise.resolve({ok:false, error:'Chưa nối máy chủ. Vào Quản trị trang → Nối máy chủ.'});
+  var body = Object.assign({}, than || {}, {
+    fn: fn,
+    u: (G.S && G.S.acc && G.S.acc.u) || '',
+    token: G.PHIEN_TOKEN || ''
+  });
+  return fetch(G.API_CAP_PHEP, {
+    method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify(body)
+  }).then(function(r){ return r.json(); })
+    .then(function(d){
+      if(!d) return {ok:false, error:'Máy chủ trả về nội dung không đọc được.'};
+      /* Phiên hết hạn nói RÕ là hết hạn, không lẫn vào "không có quyền":
+         hai câu ấy dẫn tới hai việc khác nhau — đăng nhập lại, hay đi
+         xin quyền. */
+      if(!d.ok && d.code === 'AUTH')
+        return {ok:false, code:'AUTH', error:'Phiên đã hết hạn. Đăng nhập lại rồi thử lại.'};
+      return d;
+    })
+    .catch(function(e){
+      return {ok:false, error:'Không gọi được máy chủ: ' + (e && e.message || e)};
+    });
+};
+
 G.kiemQuyenDrive = function(){
   if(!G.API_CAP_PHEP) return Promise.resolve({ok:false, ly:'Chưa nối máy chủ.'});
   return fetch(G.API_CAP_PHEP, {

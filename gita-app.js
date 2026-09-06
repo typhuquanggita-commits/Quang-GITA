@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 93 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 94 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 124 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 125 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.1',
+  version: '9.99.2',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -861,6 +861,12 @@ G.NAV = [
    essence:'Nơi cấp quyền, mở và khoá tài khoản. Mọi thao tác ở đây đều vào nhật ký kèm tên người làm.',
    items:[
     {v:'noi-may-chu', t:'Nối máy chủ',                 h:'Dán địa chỉ · gọi thử · sáu bước dựng', ic:'orbit', perm:'qt_trang', capMo:'chung', star:1},
+    /* Màn phòng tài chính khoá ở fin_view (R01–R04 đọc; R01–R03 làm).
+       Nó KHÔNG khoá ở qt_trang như các màn khác của nhóm này: người
+       của phòng tài chính không phải người quản trị trang, và bắt họ
+       qua cổng ấy là hoặc mở qt_trang cho họ — tức cho luôn quyền cấp
+       tài khoản — hoặc để họ không vào được phòng của chính mình. */
+    {v:'phong-tai-chinh', t:'Phòng Kế toán – Tài chính', h:'Việc của tôi · sổ ngày · đối chiếu · chốt sổ · KPI · quy chế', ic:'shield', star:1, perm:'fin_view', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'khoa-tai-khoan',t:'Khoá · mở lại · xoá',       h:'Vòng đời một tài khoản, có lý do',    ic:'lock', perm:'qt_trang', capMo:'quantri'},
@@ -1310,6 +1316,7 @@ G.ITEM_EN = {
   'khoa-dao-tao':['My training course','Learn · Do · Submit · the next lesson opens itself'],
   'do-thoi-gian':['Time · rewards · penalties','A real clock · three thresholds · completion standard · point conversion'],
   'noi-may-chu':['Connect to the server','Paste the address · test the call · six setup steps'],
+  'phong-tai-chinh':['Finance & Accounting Office','My queue · daily book · bank reconciliation · weekly close · KPI · charter'],
   'phan-quyen':['Assignments & permissions','15 positions × 31 permissions · click a cell to change it'],
   'cap-tai-khoan':['Open a new account','Issued for positions from Consultant upward'],
   'khoa-tai-khoan':['Lock · reopen · delete','The life of an account, with a stated reason'],
@@ -15092,6 +15099,49 @@ G.thuMayChu = function(){
 /* Xác nhận quyền vào Drive. Máy chủ thử thật: mở từng thư mục, tạo một tệp
    dấu, xoá đi. Bấm Allow trên màn xin quyền của Google chỉ là bước đầu —
    nó không nói được máy chủ có ghi đúng thư mục của Học viện hay không. */
+/* ═══════════════ MỘT CỬA GỌI MÁY CHỦ ═══════════════
+
+   Tới bản 9.99 mỗi màn tự viết fetch của mình: app.js, bang-tin.js,
+   dong-bo.js, mat-khau.js — bốn chỗ, bốn cách bắt lỗi, bốn câu báo
+   khác nhau cho cùng một sự cố.
+
+   Bốn bản của một việc thì sẽ có ngày lệch: một chỗ gắn token, chỗ kia
+   quên; một chỗ đọc d.error, chỗ kia đọc d.ly. Người dùng gặp cùng một
+   lỗi mạng ở hai màn và nhận hai câu khác nhau.
+
+   Cửa này gom lại một chỗ. Nó KHÔNG ném ra bao giờ — trả về
+   {ok:false, error} — vì màn hình gọi nó trong lúc vẽ, và một lượt ném
+   ở đó là trắng cả màn.
+
+   Bốn chỗ cũ chưa chuyển sang: chúng đang chạy đúng, và đổi cả bốn
+   trong một lượt là bốn chỗ có thể hỏng cùng lúc mà không phép đo nào
+   phủ hết. Chuyển dần khi có việc chạm vào từng chỗ. */
+G.goiMayChu = function(fn, than){
+  if(!G.API_CAP_PHEP)
+    return Promise.resolve({ok:false, error:'Chưa nối máy chủ. Vào Quản trị trang → Nối máy chủ.'});
+  var body = Object.assign({}, than || {}, {
+    fn: fn,
+    u: (G.S && G.S.acc && G.S.acc.u) || '',
+    token: G.PHIEN_TOKEN || ''
+  });
+  return fetch(G.API_CAP_PHEP, {
+    method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify(body)
+  }).then(function(r){ return r.json(); })
+    .then(function(d){
+      if(!d) return {ok:false, error:'Máy chủ trả về nội dung không đọc được.'};
+      /* Phiên hết hạn nói RÕ là hết hạn, không lẫn vào "không có quyền":
+         hai câu ấy dẫn tới hai việc khác nhau — đăng nhập lại, hay đi
+         xin quyền. */
+      if(!d.ok && d.code === 'AUTH')
+        return {ok:false, code:'AUTH', error:'Phiên đã hết hạn. Đăng nhập lại rồi thử lại.'};
+      return d;
+    })
+    .catch(function(e){
+      return {ok:false, error:'Không gọi được máy chủ: ' + (e && e.message || e)};
+    });
+};
+
 G.kiemQuyenDrive = function(){
   if(!G.API_CAP_PHEP) return Promise.resolve({ok:false, ly:'Chưa nối máy chủ.'});
   return fetch(G.API_CAP_PHEP, {
@@ -31160,6 +31210,483 @@ G.VIEWS = G.VIEWS || {};
     if (!r.ok) return bao(r.loi, 'err');
     bao('Đã chốt nhịp hôm nay · ' + r.kpi.pt + '%.', 'ok');
     veLai();
+  };
+})();
+
+})();
+
+/* ═════════ src/phong-tai-chinh.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÀN HÌNH PHÒNG KẾ TOÁN – TÀI CHÍNH
+
+   Một màn, sáu ngăn. Máy chấm và máy chặn nằm ở may-chu/; tệp này chỉ
+   vẽ và gọi.
+
+   ══ THỨ TỰ SÁU NGĂN LÀ MỘT QUYẾT ĐỊNH ══
+
+     việc của tôi  — mở ra là thấy ngay hôm nay phải làm gì
+     sổ ngày       — tiền vào hôm nay, từng dòng
+     đối chiếu     — sổ so với ngân hàng
+     chốt sổ       — tuần
+     KPI           — điểm của chính mình
+     quy chế       — tra cứu
+
+   Ngăn "việc của tôi" đứng đầu vì màn này mở ra mỗi sáng để trả lời
+   câu "hôm nay có gì đang chờ", không phải để ngắm số tổng. Đặt bảng
+   tổng lên đầu là bắt người dùng cuộn qua một màn đẹp mới thấy chỗ
+   đang chờ.
+
+   Ngăn "quy chế" đứng CUỐI, không đứng đầu. Người ta mở quy chế khi có
+   một câu hỏi cụ thể, không phải để đọc mỗi ngày.
+
+   ══ MÀN LỌC THEO VỊ TRÍ, KHÔNG LỌC THEO VAI ══
+
+   Kế toán thu mở ra thấy việc đầu thu; kế toán chi thấy đầu chi; kế
+   toán trưởng thấy cả hai. Đó chính là điểm của việc phòng tài chính
+   là một trục riêng — và nếu màn hình lọc theo vai thì cả cái trục ấy
+   biến mất ngay ở chỗ người dùng nhìn thấy.
+
+   ══ VÀ MÀN NÀY KHÔNG BAO GIỜ HIỆN HỒ SƠ KHÁCH ══
+
+   Điều 11 của điều lệ: vị trí tài chính mở đúng những cửa TIỀN. Màn
+   này hiện MÃ NHÀ, không hiện tên phụ huynh, tên học viên, số điện
+   thoại — kể cả khi người đang xem có vai đọc được chúng ở màn khác.
+
+   Lọc trên màn hình không phải bảo vệ dữ liệu; chỗ chặn thật nằm ở máy
+   chủ. Nhưng màn này cũng KHÔNG XIN những trường ấy, nên chúng không
+   rời máy chủ ngay từ đầu.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  var NGAN = [
+    {ma: 'viec',    ten: 'Việc của tôi',  ic: 'check'},
+    {ma: 'so',      ten: 'Sổ ngày',       ic: 'chart'},
+    {ma: 'doichieu',ten: 'Đối chiếu',     ic: 'shield'},
+    {ma: 'chot',    ten: 'Chốt sổ',       ic: 'lock'},
+    {ma: 'kpi',     ten: 'KPI',           ic: 'star'},
+    {ma: 'quyche',  ten: 'Quy chế',       ic: 'book'}
+  ];
+
+  /* Trạng thái của màn giữ trên G, không giữ trong biến đóng: người
+     dùng đổi ngăn rồi hệ vẽ lại cả màn, và một biến đóng thì mất. */
+  G.tcNgan = G.tcNgan || 'viec';
+  G.tcDuLieu = G.tcDuLieu || {};
+
+  function tien(n) {
+    var v = Number(n);
+    return (isNaN(v) ? 0 : v).toLocaleString('vi-VN') + 'đ';
+  }
+
+  /* Vị trí của người đang xem. Máy chủ trả về khi gọi dsQuyenTaiChinh;
+     trước khi có câu trả lời thì coi như CHƯA BIẾT chứ không coi như
+     không có — hai chuyện ấy khác nhau, và đoán nhầm thành "không có"
+     là hiện một màn trống cho người thật ra có đủ quyền. */
+  function viTriToi() {
+    var q = G.tcDuLieu.viTri;
+    if (!q) return null;
+    return q;
+  }
+  function coDau(dau) {
+    var q = viTriToi();
+    if (!q) return false;
+    if (q.keToanTruong) return true;
+    return dau === 'thu' ? !!q.keToanThu : !!q.keToanChi;
+  }
+  function laQuanLy() {
+    var r = (G.S && G.S.acc && G.S.acc.role) || '';
+    return r === 'R01' || r === 'R02' || r === 'R03';
+  }
+
+  /* ═══════════ THANH NGĂN ═══════════ */
+  function thanhNgan() {
+    return '<div class="row" style="gap:8px;flex-wrap:wrap;margin-bottom:18px">' +
+      NGAN.map(function (n) {
+        var on = G.tcNgan === n.ma;
+        return '<button class="btn' + (on ? ' primary' : '') + '" ' +
+          'onclick="G.tcMoNgan(\'' + n.ma + '\')" style="gap:7px">' +
+          ic(n.ic) + h(n.ten) + '</button>';
+      }).join('') + '</div>';
+  }
+
+  G.tcMoNgan = function (ma) {
+    G.tcNgan = ma;
+    if (typeof document !== 'undefined' && document.getElementById('main'))
+      G.render && G.render();
+  };
+
+  /* ═══════════ NẠP DỮ LIỆU ═══════════
+
+     Gọi máy chủ MỘT LẦN mỗi lượt mở màn, không gọi lại ở mỗi lượt đổi
+     ngăn: sáu ngăn mà mỗi lượt bấm là một vòng mạng thì người dùng đổi
+     ngăn bốn lần là bốn lần chờ.
+
+     Và mỗi lượt gọi bọc riêng: một cửa hỏng không được làm trắng cả
+     màn. Ngăn nào không có dữ liệu thì ngăn ấy nói ra, các ngăn khác
+     vẫn dùng được. */
+  G.tcNap = function () {
+    if (!G.goiMayChu) return;
+    G.tcDuLieu.dangNap = true;
+    var xong = 0, can = 5;
+
+    /* ── VẼ LẠI CHỈ KHI MÀN NÀY CÒN ĐANG MỞ ──
+
+       Lượt gọi mạng trả về SAU khi người dùng đã đi sang màn khác là
+       chuyện thường: mạng chậm, người ta không chờ. Gọi render lúc ấy
+       là vẽ đè lên màn họ vừa mở.
+
+       Và ở nơi không có DOM — bộ rà soát chạy từng màn của từng vai —
+       render() chạm vào #main rồi ném, làm cả lượt rà soát đỏ vì một
+       lỗi không phải của màn nào. Bộ rà soát bắt đúng chỗ này ngay lần
+       chạy đầu. */
+    function veLai() {
+      if (!G.S || G.S.view !== 'phong-tai-chinh') return;
+      if (typeof document === 'undefined' || !document.getElementById('main')) return;
+      G.render && G.render();
+    }
+
+    function ghi(ten, d) {
+      G.tcDuLieu[ten] = d;
+      if (++xong >= can) { G.tcDuLieu.dangNap = false; veLai(); }
+    }
+    var nay = new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10);
+
+    G.goiMayChu('dsQuyenTaiChinh', {}).then(function (d) {
+      var toi = (d.dangLamViec || []).filter(function (x) {
+        return x.username === ((G.S && G.S.acc && G.S.acc.u) || '');
+      });
+      ghi('viTri', {
+        keToanThu: toi.some(function (x) { return x.viTri === 'keToanThu'; }),
+        keToanChi: toi.some(function (x) { return x.viTri === 'keToanChi'; }),
+        keToanTruong: toi.some(function (x) { return x.viTri === 'keToanTruong'; }),
+        nhanSu: d.dangLamViec || [], mocChuKy: d.mocChuKy || [], loi: d.error
+      });
+    });
+    G.goiMayChu('soNgay', {ngay: nay}).then(function (d) { ghi('soNgay', d); });
+    G.goiMayChu('doiChieuNganHang', {loai: 'thang'}).then(function (d) { ghi('doiChieu', d); });
+    G.goiMayChu('dsChot', {soKy: 8}).then(function (d) { ghi('chot', d); });
+    G.goiMayChu('chamKpiTaiChinh', {loai: 'thang'}).then(function (d) { ghi('kpi', d); });
+  };
+
+  function loi(d, ten) {
+    if (!d) return U.empty('Đang nạp ' + ten, 'Chờ máy chủ trả lời.', true);
+    if (!d.ok) return U.empty('Chưa mở được ' + ten,
+      d.error || 'Máy chủ không trả lời.', true);
+    return null;
+  }
+
+  /* ═══════════ NGĂN 1 · VIỆC CỦA TÔI ═══════════ */
+  function nganViec() {
+    var q = viTriToi();
+    if (!q) return U.empty('Đang hỏi vị trí của bạn trong phòng',
+      'Màn này lọc việc theo VỊ TRÍ trong phòng tài chính, không theo vai.', true);
+
+    if (!q.keToanThu && !q.keToanChi && !q.keToanTruong && !laQuanLy())
+      return U.empty('Bạn chưa có vị trí trong Phòng Kế toán – Tài chính',
+        'Vị trí do Super Admin cấp, hoặc do Giám đốc / Admin hệ thống cấp khi đã ' +
+        'được Super Admin trao quyền quản lý phòng.', true);
+
+    var o = '';
+    var dc = G.tcDuLieu.doiChieu, so = G.tcDuLieu.soNgay;
+
+    /* Bốn ô việc. Ô nào KHÔNG thuộc đầu tiền của người đang xem thì
+       không vẽ — không vẽ mờ đi, vì một ô mờ vẫn là một ô người ta cứ
+       thử bấm. */
+    var o4 = [];
+    if (coDau('thu') || laQuanLy()) {
+      if (so && so.ok && so.soChoDuyet)
+        o4.push({n: so.soChoDuyet, t: 'phiếu thu chờ duyệt', c: 'var(--gold)',
+          v: tien(so.choDuyet)});
+      if (dc && dc.ok && dc.tienVaoKhongCoPhieu.so)
+        o4.push({n: dc.tienVaoKhongCoPhieu.so, t: 'tiền vào chưa có phiếu',
+          c: 'var(--rose)', v: tien(dc.tienVaoKhongCoPhieu.tien),
+          y: 'Nhà đã trả mà sổ ghi còn nợ — chỗ mất lòng khách.'});
+      if (dc && dc.ok && dc.phieuKhongCoTienVao.so)
+        o4.push({n: dc.phieuKhongCoTienVao.so, t: 'phiếu chưa thấy tiền vào',
+          c: 'var(--rose)', v: tien(dc.phieuKhongCoTienVao.tien),
+          y: 'Sổ nói đã thu mà tài khoản không thấy — chỗ mất tiền.'});
+    }
+    if (coDau('chi') || laQuanLy()) {
+      var k = G.tcDuLieu.kpi;
+      if (k && k.ok && k.keToanChi && k.keToanChi['KT-C2'])
+        o4.push({n: k.keToanChi['KT-C2'], t: 'khoản chi treo quá 3 ngày',
+          c: 'var(--gold)',
+          y: 'Từ chối thì nói từ chối; để treo là không quyết mà cũng không nói.'});
+    }
+
+    if (!o4.length)
+      o += '<div class="card center" style="padding:30px">' +
+        '<b style="font-size:16px">Không có việc nào đang chờ bạn</b>' +
+        '<p class="sm muted mt">Sổ của đầu tiền bạn phụ trách đang sạch.</p></div>';
+    else
+      o += '<div class="grid-3" style="gap:14px">' + o4.map(function (x) {
+        return '<div class="card" style="border-left:3px solid ' + x.c + '">' +
+          '<div style="font-size:26px;font-weight:700;color:' + x.c + '">' + h(String(x.n)) + '</div>' +
+          '<div style="font-weight:600;margin-top:2px">' + h(x.t) + '</div>' +
+          (x.v ? '<div class="sm muted">' + h(x.v) + '</div>' : '') +
+          (x.y ? '<p class="sm muted mt">' + h(x.y) + '</p>' : '') +
+          '</div>';
+      }).join('') + '</div>';
+
+    /* Vị trí của tôi và mốc chu kỳ tôi ký được tới đâu. */
+    o += U.sec('Vị trí của bạn trong phòng');
+    var ten = [];
+    if (q.keToanThu) ten.push('Kế toán thu');
+    if (q.keToanChi) ten.push('Kế toán chi');
+    if (q.keToanTruong) ten.push('Kế toán trưởng');
+    if (!ten.length && laQuanLy()) ten.push('Quản lý (theo vai ' +
+      ((G.S && G.S.acc && G.S.acc.role) || '') + ')');
+    o += '<div class="card"><div class="row" style="gap:8px;flex-wrap:wrap">' +
+      ten.map(function (t) { return U.chip(t, 'var(--teal)', true); }).join('') +
+      '</div><p class="sm muted mt">' +
+      h(q.keToanTruong
+        ? 'Kế toán trưởng giữ cả hai đầu tiền. Mốc chu kỳ ký được tới đâu do người ' +
+          'quản lý phòng cấp.'
+        : q.keToanThu
+          ? 'Đầu THU: duyệt phiếu thu, công nợ, nhắc thu, đối chiếu sao kê. Không ' +
+            'duyệt được khoản chi nào.'
+          : q.keToanChi
+            ? 'Đầu CHI: duyệt khoản chi, sổ chi, chốt két. Không duyệt được phiếu ' +
+              'thu nào.'
+            : 'Bạn xem được toàn phòng theo vai quản lý.') + '</p></div>';
+    return o;
+  }
+
+  /* ═══════════ NGĂN 2 · SỔ NGÀY ═══════════ */
+  function nganSo() {
+    var d = G.tcDuLieu.soNgay, e = loi(d, 'sổ ngày'); if (e) return e;
+    var o = '<div class="grid-3" style="gap:14px">' +
+      U.stat({t: 'Đã thu hôm nay', v: tien(d.daThu), s: d.soPhieu + ' phiếu'}) +
+      U.stat({t: 'Chờ duyệt', v: tien(d.choDuyet), s: d.soChoDuyet + ' phiếu'}) +
+      U.stat({t: 'Thuộc tuần', v: h(d.thuocTuan || '')}) + '</div>';
+
+    var ht = d.theoHinhThuc || {};
+    if (Object.keys(ht).length) {
+      o += U.sec('Theo hình thức',
+        'Tiền mặt phải đếm được ở két; chuyển khoản phải khớp sao kê. Gộp chung ' +
+        'một số là bỏ mất phép đối chiếu duy nhất mà người thủ quỹ có.');
+      o += U.tbl(['Hình thức', 'Số tiền'], Object.keys(ht).map(function (k) {
+        return [h(k), '<b>' + h(tien(ht[k])) + '</b>'];
+      }));
+    }
+
+    /* Bảng phiếu: MÃ NHÀ, không tên người — điều 11. */
+    if ((d.phieu || []).length) {
+      o += U.sec('Từng phiếu trong ngày',
+        'Màn này hiện MÃ NHÀ, không hiện tên phụ huynh hay số điện thoại: vị trí ' +
+        'tài chính mở đúng những cửa tiền.');
+      o += U.tbl(['Nhà', 'Số tiền', 'Hình thức', 'Mã giao dịch', 'Trạng thái'],
+        d.phieu.slice(0, 60).map(function (p) {
+          return [h(p.maKhachHang || ''), '<b>' + h(tien(p.soTien)) + '</b>',
+            h(p.hinhThuc || ''), h(p.maThamChieu || '—'),
+            U.chip(p.trangThai === 'daDuyet' ? 'đã duyệt' :
+              p.trangThai === 'huy' ? 'đã huỷ' : 'chờ duyệt',
+              p.trangThai === 'daDuyet' ? 'var(--teal)' : 'var(--gold)', true)];
+        }));
+    }
+    return o;
+  }
+
+  /* ═══════════ NGĂN 3 · ĐỐI CHIẾU ═══════════ */
+  function nganDoiChieu() {
+    var d = G.tcDuLieu.doiChieu, e = loi(d, 'bản đối chiếu'); if (e) return e;
+    var o = '<div class="card"><p class="sm">' + h(d.vi || '') + '</p></div>';
+
+    o += '<div class="grid-3" style="gap:14px;margin-top:14px">' +
+      U.stat({t: 'Tiền vào trong kỳ', v: tien(d.tongTienVao.tien),
+        s: d.tongTienVao.so + ' dòng · ' + d.tongTienVao.daKhop + ' đã khớp'}) +
+      U.stat({t: 'Chưa có phiếu', v: tien(d.tienVaoKhongCoPhieu.tien),
+        s: d.tienVaoKhongCoPhieu.so + ' dòng'}) +
+      U.stat({t: 'Chưa thấy tiền vào', v: tien(d.phieuKhongCoTienVao.tien),
+        s: d.phieuKhongCoTienVao.so + ' phiếu'}) + '</div>';
+
+    /* HAI PHÍA NÊU RIÊNG, và mỗi phía kèm câu nói nó là chỗ mất gì. */
+    [['tienVaoKhongCoPhieu', 'Tiền vào ngân hàng mà không có phiếu',
+      ['Mã giao dịch', 'Số tiền', 'Nội dung', 'Lúc'],
+      function (x) { return [h(x.maGiaoDich), '<b>' + h(tien(x.soTien)) + '</b>',
+        h(x.noiDung || '—'), h(String(x.luc).slice(0, 10))]; }],
+     ['phieuKhongCoTienVao', 'Phiếu mà không có tiền vào ngân hàng',
+      ['Nhà', 'Số tiền', 'Mã tham chiếu', 'Ghi lúc'],
+      function (x) { return [h(x.maKhachHang), '<b>' + h(tien(x.soTien)) + '</b>',
+        h(x.maThamChieu || '— thiếu mã'), h(String(x.ghiLuc).slice(0, 10))]; }]
+    ].forEach(function (p) {
+      var k = d[p[0]];
+      o += U.sec(p[1], k.vi);
+      if (!k.ds.length)
+        o += '<div class="card center" style="padding:22px"><b>Không có dòng nào</b></div>';
+      else o += U.tbl(p[2], k.ds.slice(0, 60).map(p[3]));
+    });
+    return o;
+  }
+
+  /* ═══════════ NGĂN 4 · CHỐT SỔ ═══════════ */
+  function nganChot() {
+    var d = G.tcDuLieu.chot, e = loi(d, 'sổ chốt'); if (e) return e;
+    if (!(d.ds || []).length)
+      return U.empty('Chưa chốt tuần nào',
+        'Tuần chốt được từ ngày đầu tiên sau khi tuần ấy hết hẳn.', true);
+    return U.sec('Tám tuần gần nhất',
+      'Vân tay là dấu của TẬP DÒNG đã đếm, không phải của con số tổng: huỷ một ' +
+      'phiếu rồi ghi thêm một phiếu khác cùng số tiền thì tổng không đổi nhưng ' +
+      'vân tay đổi.') +
+      U.tbl(['Tuần', 'Thu', 'Ghi nhận', 'Công nợ cuối kỳ', 'Vân tay', 'Chốt bởi'],
+        d.ds.map(function (c) {
+          return [h(c.ky) + (c.daMoLai ? ' ' + U.chip('đã mở lại', 'var(--rose)', true) : ''),
+            '<b>' + h(tien(c.thu)) + '</b>', h(tien(c.ghiNhan)),
+            h(tien(c.conNoCuoiKy)),
+            '<code class="sm">' + h(String(c.chotLuc).slice(0, 10)) + '</code>',
+            h(c.boiAi || '')];
+        }));
+  }
+
+  /* ═══════════ NGĂN 5 · KPI ═══════════ */
+  function nganKpi() {
+    var d = G.tcDuLieu.kpi, e = loi(d, 'bảng KPI'); if (e) return e;
+    var dn = G.TC_KPI;
+    if (!dn) return U.lockCard('Định nghĩa KPI nằm trong kho nghề. Mở kho để xem ' +
+      'ngưỡng đạt và trọng số của từng thước.');
+
+    var o = '<div class="card"><p class="sm">' + h(dn.nhip + ' ' + dn.vi_nhip) + '</p></div>';
+
+    [['keToanThu', dn.keToanThu], ['keToanChi', dn.keToanChi],
+     ['keToanTruong', dn.keToanTruong]].forEach(function (pr) {
+      var so = d[pr[0]] || {}, dinh = pr[1] || {};
+      o += U.sec(dinh.ten || pr[0], dinh.vi || '');
+      o += U.tbl(['Thước', 'Đo được', 'Đạt', 'Trọng số', 'Lách bằng cách nào'],
+        (dinh.thuoc || []).map(function (t) {
+          var v = so[t.ma];
+          /* null là CHƯA ĐO ĐƯỢC, không phải 0. Vẽ nó khác hẳn: một ô
+             trống mà hiện số 0 là nói sai, và người đọc bảng lương
+             không có cách nào biết. */
+          var chuaDo = (v === null || v === undefined);
+          var dat = chuaDo ? null
+            : (t.huongTot === 'thap' ? Number(v) <= Number(t.dat) : Number(v) >= Number(t.dat));
+          return [
+            '<b>' + h(t.ma) + '</b><div class="sm muted">' + h(t.ten) + '</div>',
+            chuaDo
+              ? '<span class="sm muted">chưa có gì để đo</span>'
+              : '<b style="color:' + (dat ? 'var(--teal)' : 'var(--rose)') + '">' +
+                h(String(v)) + h(t.don === '%' ? '%' : ' ' + (t.don || '')) + '</b>',
+            h((t.huongTot === 'thap' ? '≤ ' : '≥ ') + t.dat +
+              (t.don === '%' ? '%' : ' ' + (t.don || ''))),
+            h(String(t.trong)),
+            '<span class="sm muted">' + h(t.lach || '') + '</span>'
+          ];
+        }));
+    });
+
+    if (d.lechConLai) {
+      o += U.sec('Chỗ lệch còn lại',
+        'Một điểm KPI không kèm chỗ lệch là một điểm không sửa được gì.');
+      var l = d.lechConLai;
+      if (!(l.doiSoat || []).length && !(l.kyDaChotBiDong || []).length)
+        o += '<div class="card center" style="padding:22px"><b>Sổ sạch</b></div>';
+      else {
+        if ((l.doiSoat || []).length)
+          o += U.tbl(['Mã', 'Việc', 'Số chỗ'], l.doiSoat.map(function (x) {
+            return [h(x.ma), h(x.viec), h(String(x.so))]; }));
+        if ((l.kyDaChotBiDong || []).length)
+          o += U.tbl(['Kỳ đã chốt bị động', 'Chênh', 'Đã giải thích'],
+            l.kyDaChotBiDong.map(function (x) {
+              return [h(x.ky), h(tien(x.chenh)),
+                x.daGiaiThich ? U.chip('rồi', 'var(--teal)', true)
+                              : U.chip('chưa', 'var(--rose)', true)]; }));
+      }
+    }
+    return o;
+  }
+
+  /* ═══════════ NGĂN 6 · QUY CHẾ ═══════════ */
+  function nganQuyChe() {
+    var dl = G.TC_DIEULE;
+    if (!dl) return U.lockCard('Bộ văn bản của phòng nằm trong kho nghề. Mở kho ' +
+      'để đọc điều lệ, quy chế, quy trình, biểu mẫu và sổ rủi ro.');
+
+    var o = '<div class="card"><b>' + h(dl.ma + ' · ' + dl.ten) + '</b>' +
+      '<p class="sm muted mt">' + h(dl.banHanh || '') + '</p></div>';
+
+    o += U.sec('Điều lệ',
+      'Mỗi điều trỏ vào một chỗ thi hành CÓ THẬT trong mã, hoặc tự khai là chưa ' +
+      'có chỗ chặn. Một quy chế mà mã không thi hành là một tờ giấy dán tường.');
+    o += (dl.dieu || []).map(function (d) {
+      return '<div class="card" style="margin-bottom:10px">' +
+        '<b>Điều ' + h(String(d.so)) + ' · ' + h(d.ten) + '</b>' +
+        '<p class="sm mt">' + h(d.noi) + '</p>' +
+        '<p class="sm muted mt">' + h(d.vi) + '</p>' +
+        '<div class="mt">' + (d.thiHanh
+          ? U.chip('thi hành: ' + d.thiHanh, 'var(--teal)', true)
+          : U.chip('CHƯA có chỗ chặn trong mã', 'var(--gold)', true) +
+            '<p class="sm muted mt">' + h(d.vi_chua || '') + '</p>') +
+        '</div></div>';
+    }).join('');
+
+    if ((G.TC_RUIRO || []).length) {
+      o += U.sec('Sổ rủi ro',
+        'Cột CÒN LẠI là cột quan trọng nhất: một sổ rủi ro mà mọi dòng đều "đã ' +
+        'chặn hoàn toàn" là một sổ chưa ai đọc kỹ.');
+      o += U.tbl(['Mã', 'Rủi ro', 'Đang chặn bằng', 'Phần CÒN LẠI', 'Ai nhìn'],
+        G.TC_RUIRO.map(function (r) {
+          return [h(r.ma) + '<div class="sm muted">' + h(r.mucDo) + '</div>',
+            h(r.ten), '<span class="sm">' + h(r.chan) + '</span>',
+            '<span class="sm" style="color:var(--gold)">' + h(r.con) + '</span>',
+            '<span class="sm muted">' + h(r.ai) + '</span>'];
+        }));
+    }
+
+    if ((G.TC_QUYTRINH || []).length) {
+      o += U.sec('Quy trình',
+        'Mỗi bước ghi đủ ba cột: bước, AI làm, và ĐIỀU KIỆN ĐI TIẾP. Thiếu cột ' +
+        'thứ ba thì nó là một danh sách việc, không phải một quy trình.');
+      o += G.TC_QUYTRINH.map(function (q) {
+        return '<div class="card" style="margin-bottom:10px"><b>' +
+          h(q.ma + ' · ' + q.ten) + '</b>' +
+          U.tbl(['#', 'Ai làm', 'Làm gì', 'Điều kiện đi tiếp'],
+            (q.buoc || []).map(function (b) {
+              return [h(String(b.b)), h(b.ai), h(b.lam),
+                '<span class="sm muted">' + h(b.dieuKien) + '</span>']; })) +
+          '</div>';
+      }).join('');
+    }
+
+    if ((G.TC_BIEUMAU || []).length) {
+      o += U.sec('Biểu mẫu',
+        'Không phải tờ giấy để in: là danh sách TRƯỜNG BẮT BUỘC của một chứng từ, ' +
+        'khớp từng chữ với thứ máy chủ đòi.');
+      o += U.tbl(['Mã', 'Chứng từ', 'Bắt buộc', 'Theo điều kiện'],
+        G.TC_BIEUMAU.map(function (b) {
+          return [h(b.ma), h(b.ten),
+            '<span class="sm">' + h((b.batBuoc || []).join(', ')) + '</span>',
+            '<span class="sm muted">' + h((b.theoDieuKien || []).map(function (t) {
+              return t.truong + ' (khi ' + t.khi + ')'; }).join('; ') || '—') + '</span>'];
+        }));
+    }
+    return o;
+  }
+
+  /* ═══════════ MÀN CHÍNH ═══════════ */
+  G.VIEWS['phong-tai-chinh'] = function () {
+    if (!G.tcDuLieu.daGoi) { G.tcDuLieu.daGoi = true; G.tcNap(); }
+
+    var o = U.ph({
+      t: 'Phòng Kế toán – Tài chính',
+      s: 'Từng đồng ra vào Học viện, và người chịu trách nhiệm cho từng đồng ấy.'
+    });
+    o += thanhNgan();
+
+    if (G.tcDuLieu.dangNap && !G.tcDuLieu.viTri)
+      return o + U.empty('Đang hỏi máy chủ', 'Màn này đọc sổ thật, không đọc bản mẫu.', true);
+
+    if (G.tcNgan === 'viec')     return o + nganViec();
+    if (G.tcNgan === 'so')       return o + nganSo();
+    if (G.tcNgan === 'doichieu') return o + nganDoiChieu();
+    if (G.tcNgan === 'chot')     return o + nganChot();
+    if (G.tcNgan === 'kpi')      return o + nganKpi();
+    return o + nganQuyChe();
   };
 })();
 

@@ -120,6 +120,7 @@
   "src/tin-noi-bo.js",
   "src/tu-dong.js",
     "src/man-cong-viec.js",
+    "src/phong-tai-chinh.js",
     "src/cua-truoc.js",
     "src/app.js",
     "src/chuyen-long-ghep.js",
