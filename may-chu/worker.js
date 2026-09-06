@@ -16,7 +16,8 @@
    kho · trạng thái máy chủ · đồng bộ hồ sơ và cài đặt · đăng ký, mã xác
    nhận qua email, kích hoạt · quên và đặt lại mật khẩu · quyền xem hồ
    sơ khách · nâng tầng · chứng cứ hoa hồng · TỆP KHÁCH HÀNG CHUẨN ·
-   TÀI CHÍNH (kỳ thu, phiếu thu, công nợ, hoa hồng phải trả, bản kê).
+   TÀI CHÍNH đầy đủ — kỳ thu, phiếu thu, công nợ, bản kê, huỷ phiếu,
+   hoàn tiền, trả hoa hồng, đóng kỳ, danh sách quá hạn, đối soát.
 
    Chưa: tài liệu, sổ cộng đồng, tình huống khách, xuất Sheet.
 
@@ -34,7 +35,9 @@ import { quenMatKhau, datLaiMatKhau } from './mat-khau.js';
 import { capQuyenXem, thuHoiQuyenXem, soiQuyenXem, xemKhachCao, nangTang } from './quyen-xem.js';
 import { kyChungCu, xacNhanChungCu, soiChungCu } from './chung-cu.js';
 import { xemTepKhach, suaTepKhach, dsTepKhach } from './ho-so-khach.js';
-import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh } from './tai-chinh.js';
+import { ghiPhieuThu, duyetPhieuThu, congNo, banKeTaiChinh,
+  huyPhieuThu, ganPhieuVaoKy, deXuatHoan, duyetHoan, traHoaHong,
+  ganChungCuHoaHong, dongKyChuaToi, dsQuaHan, doiSoat } from './tai-chinh.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -145,7 +148,9 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'capQuyenXem', 'thuHoiQuyenXem', 'soiQuyenXem', 'xemKhachCao', 'nangTang',
   'kyChungCu', 'xacNhanChungCu', 'soiChungCu',
   'xemTepKhach', 'suaTepKhach', 'dsTepKhach',
-  'ghiPhieuThu', 'duyetPhieuThu', 'congNo', 'banKeTaiChinh'];
+  'ghiPhieuThu', 'duyetPhieuThu', 'congNo', 'banKeTaiChinh',
+  'huyPhieuThu', 'ganPhieuVaoKy', 'deXuatHoan', 'duyetHoan', 'traHoaHong',
+  'ganChungCuHoaHong', 'dongKyChuaToi', 'dsQuaHan', 'doiSoat'];
 
 async function lam(fn, y, env, db) {
   if (fn === 'dangNhap')  return await dangNhap(y, env, db);
@@ -196,6 +201,18 @@ async function lam(fn, y, env, db) {
   if (fn === 'duyetPhieuThu') return await duyetPhieuThu(y, env, db, hoSo);
   if (fn === 'congNo')        return await congNo(y, env, db, hoSo);
   if (fn === 'banKeTaiChinh') return await banKeTaiChinh(y, env, db, hoSo);
+
+  /* Tám tình huống tiền nong ngoài đường thẳng — xem chú giải dài ở
+     nửa dưới tai-chinh.js. Đường thẳng là đường ít xảy ra nhất. */
+  if (fn === 'huyPhieuThu')       return await huyPhieuThu(y, env, db, hoSo);
+  if (fn === 'ganPhieuVaoKy')     return await ganPhieuVaoKy(y, env, db, hoSo);
+  if (fn === 'deXuatHoan')        return await deXuatHoan(y, env, db, hoSo);
+  if (fn === 'duyetHoan')         return await duyetHoan(y, env, db, hoSo);
+  if (fn === 'traHoaHong')        return await traHoaHong(y, env, db, hoSo);
+  if (fn === 'ganChungCuHoaHong') return await ganChungCuHoaHong(y, env, db, hoSo);
+  if (fn === 'dongKyChuaToi')     return await dongKyChuaToi(y, env, db, hoSo);
+  if (fn === 'dsQuaHan')          return await dsQuaHan(y, env, db, hoSo);
+  if (fn === 'doiSoat')           return await doiSoat(y, env, db, hoSo);
   return {ok: false, error: 'Yêu cầu không hợp lệ.'};
 }
 

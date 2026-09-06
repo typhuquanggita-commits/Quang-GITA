@@ -163,6 +163,35 @@ export async function ghiPhieuThu(y, env, db, hoSo) {
     if (!ky) return {ok: false, error: 'Không tìm thấy kỳ thu này.'};
     if (String(ky.maKhachHang) !== nha)
       return {ok: false, error: 'Kỳ thu này thuộc về một nhà khác.'};
+
+    /* ── CỔNG: KỲ SAU CHỈ THU KHI KỲ TRƯỚC ĐÃ TRẢ ĐỦ ──
+
+       Bảng học phí khai thẳng: "Kỳ sau chỉ thu khi cổng trước đã
+       nghiệm thu — không thu trước cho cả năm." Tới 9.88 cột congTruoc
+       được GHI mà không được ĐỌC, nên luật ấy nằm trong dữ liệu như
+       một lời chú thích chứ không chặn ai.
+
+       Một luật đã khai mà không thi hành thì tệ hơn không khai: người
+       đọc sổ tin là có cổng, và không ai đi kiểm lại. */
+    if (ky.congTruoc && Number(ky.ky) > 1) {
+      const truoc = await conNoCuaKy(db, nha, Number(ky.tang), Number(ky.ky) - 1);
+      if (truoc > 0)
+        return {ok: false, code: 'CONGTRUOC',
+          error: 'Kỳ ' + (Number(ky.ky) - 1) + ' của tầng ' + ky.tang + ' còn thiếu ' +
+            dinhDang(truoc) + '. Thu đủ kỳ trước rồi mới thu kỳ này.'};
+    }
+
+    /* ── KHÔNG THU QUÁ SỐ PHẢI THU CỦA MỘT KỲ ──
+
+       Thu thừa vào một kỳ là một con số không có chỗ đứng trong sổ:
+       kỳ ấy hết nợ mà tiền vẫn dư, và phần dư không thuộc kỳ nào. Ai
+       muốn ghi phần dư thì ghi thành khoản NGOÀI LỊCH (bỏ trống idKy)
+       rồi gán vào kỳ sau — có đường đi hẳn hoi, không phải nhét bừa. */
+    const con = await conNoCuaKy(db, nha, Number(ky.tang), Number(ky.ky));
+    if (tien > con)
+      return {ok: false, code: 'THUTHUA',
+        error: 'Kỳ này chỉ còn thiếu ' + dinhDang(con) + '. Ghi phần dư thành ' +
+          'khoản thu ngoài lịch rồi gán vào kỳ sau.'};
   }
 
   const id = 'PT-' + tokenMoi().slice(0, 14);
@@ -177,6 +206,21 @@ export async function ghiPhieuThu(y, env, db, hoSo) {
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'PHIEUTHU_GHI',
     doiTuong: id, chiTiet: nha + ' · ' + tien + 'đ · ' + p.hinhThuc});
   return {ok: true, id, trangThai: 'choDuyet'};
+}
+
+const dinhDang = n => Number(n).toLocaleString('vi-VN') + 'đ';
+
+/** Còn thiếu bao nhiêu ở MỘT kỳ. Một câu lệnh, đi qua ix_kythu_mot rồi
+    ix_pt_ky — không đọc cả sổ phiếu thu của nhà rồi lọc trong bộ nhớ. */
+async function conNoCuaKy(db, nha, tang, ky) {
+  const r = await db.prepare(
+    'SELECT k.phaiThu, ' +
+    "  COALESCE(SUM(CASE WHEN p.trangThai = 'daDuyet' THEN p.soTien END), 0) daThu " +
+    'FROM kyThu k LEFT JOIN phieuThu p ON p.idKy = k.id ' +
+    'WHERE k.maKhachHang = ? AND k.tang = ? AND k.ky = ? GROUP BY k.id'
+  ).bind(nha, tang, ky).first();
+  if (!r) return 0;
+  return Math.max(0, Number(r.phaiThu) - Number(r.daThu));
 }
 
 /* ═══════════════ DUYỆT PHIẾU THU ═══════════════ */
@@ -375,4 +419,419 @@ export async function banKeTaiChinh(y, env, db, hoSo) {
        không nằm trong hệ này, nên một con số như thế sẽ sai và sẽ được
        ai đó mang đi họp. */
     suyRa: SUY_RA.map(x => x.ma + ' · ' + x.viec)};
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TÁM TÌNH HUỐNG TIỀN NONG CÒN LẠI
+
+   Tới bản 9.88 phần tài chính chỉ đi được ĐƯỜNG THẲNG: dựng lịch, ghi
+   phiếu, duyệt, xem công nợ. Đường thẳng là đường ít xảy ra nhất.
+
+   Những gì thật sự xảy ra ở một Học viện đang chạy:
+
+     1. Duyệt phiếu xong mới biết ngân hàng hoàn giao dịch
+     2. Ghi nhầm tiền của nhà A vào nhà B
+     3. Gia đình dừng giữa chừng và đòi hoàn theo luật của tầng
+     4. Hoa hồng đã sinh cho một nhà, rồi nhà ấy được hoàn tiền
+     5. Hoa hồng nằm mãi ở "phải trả" vì không có đường trả
+     6. Khách chuyển dư, hoặc chuyển trước khi có kỳ
+     7. Nhà nghỉ mà lịch thu vẫn treo, tháng nào cũng vào bản kê nợ
+     8. Sổ lệch mà không ai biết, vì không có phép đối soát nào
+
+   Bảng hoanTien dựng ở 9.88 và tới 9.88 KHÔNG có một dòng mã nào ghi
+   vào — một bảng chết. Đây là phần làm cho nó sống.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── 1 · HUỶ MỘT PHIẾU ĐÃ DUYỆT ──
+
+   Ngân hàng hoàn giao dịch, hoặc phát hiện ghi nhầm nhà. Cần một
+   đường đi RA, và đường ấy không được là phép xoá.
+
+   HUỶ LÀ ĐÁNH DẤU. Xoá dòng là xoá luôn bằng chứng rằng tiền đã từng
+   được ghi nhận và đã từng được duyệt — mà đó chính là thứ phải trưng
+   ra khi có người hỏi "tháng trước sổ báo đủ, sao giờ thiếu". */
+export async function huyPhieuThu(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, error: 'Chỉ R01–R03 huỷ được phiếu thu đã duyệt.'};
+
+  const lyDo = String(y.lyDo || '').trim();
+  if (!lyDo) return {ok: false,
+    error: 'Chưa nói vì sao huỷ. Một khoản tiền ra khỏi sổ mà không có lý do ' +
+           'thì tháng sau không ai dựng lại được câu chuyện.'};
+
+  const pt = await db.prepare('SELECT * FROM phieuThu WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!pt) return {ok: false, error: 'Không tìm thấy phiếu thu này.'};
+
+  const r = await db.prepare(
+    "UPDATE phieuThu SET trangThai = 'huy', lyDo = ?, nguoiDuyet = ?, duyetLuc = ? " +
+    "WHERE id = ? AND trangThai IN ('daDuyet','choDuyet')"
+  ).bind(lyDo, hoSo.u, new Date().toISOString(), pt.id).run();
+  if (!((r && r.meta && r.meta.changes) || 0))
+    return {ok: false, error: 'Phiếu này đã huỷ hoặc đã bị từ chối rồi.'};
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'PHIEUTHU_HUY',
+    doiTuong: pt.id, chiTiet: pt.maKhachHang + ' · ' + dinhDang(pt.soTien) + ' · ' + lyDo});
+
+  /* Công nợ tự đúng lại: congNo chỉ cộng phiếu daDuyet, nên phiếu vừa
+     huỷ rời khỏi phép cộng ngay mà không phải sửa con số nào. Đó là
+     lợi ích của việc không lưu số dư — số dư luôn được TÍNH, không
+     được GIỮ, nên nó không bao giờ lệch với chứng từ. */
+  return {ok: true, trangThai: 'huy'};
+}
+
+/* ── 2 · GÁN MỘT KHOẢN THU NGOÀI LỊCH VÀO MỘT KỲ ──
+
+   Khách chuyển trước khi có kỳ, hoặc chuyển gộp nhiều kỳ. Khoản ấy
+   vào sổ với idKy trống, và cần một đường gán về sau — không có đường
+   ấy thì tiền nằm trong sổ mà không trừ nợ của ai. */
+export async function ganPhieuVaoKy(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, error: 'Chỉ R01–R03 gán được khoản thu vào kỳ.'};
+
+  const pt = await db.prepare('SELECT * FROM phieuThu WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!pt) return {ok: false, error: 'Không tìm thấy phiếu thu này.'};
+  if (pt.idKy) return {ok: false, error: 'Phiếu này đã gắn với một kỳ rồi.'};
+  if (pt.trangThai === 'huy' || pt.trangThai === 'tuChoi')
+    return {ok: false, error: 'Phiếu đã huỷ hoặc bị từ chối thì không gán được.'};
+
+  const ky = await db.prepare('SELECT * FROM kyThu WHERE id = ?')
+    .bind(String(y.idKy || '')).first();
+  if (!ky) return {ok: false, error: 'Không tìm thấy kỳ thu này.'};
+  if (String(ky.maKhachHang) !== String(pt.maKhachHang))
+    return {ok: false, error: 'Kỳ thu này thuộc về một nhà khác.'};
+
+  const con = await conNoCuaKy(db, pt.maKhachHang, Number(ky.tang), Number(ky.ky));
+  if (Number(pt.soTien) > con)
+    return {ok: false, code: 'THUTHUA',
+      error: 'Kỳ này chỉ còn thiếu ' + dinhDang(con) + ', mà phiếu là ' +
+        dinhDang(pt.soTien) + '. Tách phiếu trước khi gán.'};
+
+  await db.prepare('UPDATE phieuThu SET idKy = ? WHERE id = ? AND idKy IS NULL')
+    .bind(ky.id, pt.id).run();
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'PHIEUTHU_GAN',
+    doiTuong: pt.id, chiTiet: 'vào kỳ ' + ky.ky + ' tầng ' + ky.tang});
+  return {ok: true, idKy: ky.id};
+}
+
+/* ── 3 · HOÀN TIỀN ──
+
+   Mỗi tầng có luật hoàn RIÊNG, khai bằng CHỮ ở HP_TANG[].hoan:
+
+     T1 giao đủ mà chưa như mong đợi thì không hoàn
+     T2 dừng trước ngày 7 hoàn phần chưa dùng theo tỷ lệ ngày
+     T3 chuỗi đang chạy không hoàn, chuỗi chưa bắt đầu hoàn đủ
+     T4 quý đang chạy không hoàn, quý chưa bắt đầu hoàn đủ
+     T5 như T4, thêm đường hạ về tầng 4 và hoàn chênh lệch
+
+   MÁY KHÔNG TỰ TÍNH SỐ TIỀN HOÀN. Luật ấy là chữ, không phải công
+   thức: "phần chưa dùng theo tỷ lệ ngày" cần biết ngày dừng thật,
+   "chuỗi đang chạy" cần biết nhà đang ở chuỗi nào, và cả hai đều là
+   việc người đọc hồ sơ mới trả lời được.
+
+   Máy làm đúng ba việc: bắt PHẢI ghi lại theo luật nào, bắt phải có
+   NGƯỜI KHÁC duyệt, và không cho hoàn quá số đã thu. */
+export async function deXuatHoan(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 7) return {ok: false, error: 'Từ Coach trở lên mới đề xuất hoàn tiền được.'};
+
+  const h = y.hoan || {};
+  const nha = String(h.maKhachHang || '').trim();
+  const tien = Number(h.soTien || 0);
+  const luat = String(h.theoLuat || '').trim();
+  const lyDo = String(h.lyDo || '').trim();
+  if (!nha) return {ok: false, error: 'Thiếu mã khách hàng.'};
+  if (!(tien > 0)) return {ok: false, error: 'Số tiền hoàn phải lớn hơn 0.'};
+  if (luat.length < 20) return {ok: false,
+    error: 'Phải ghi lại HOÀN THEO LUẬT NÀO, nguyên văn từ bảng học phí của tầng ấy. ' +
+           'Một lượt hoàn không nêu luật là một lượt hoàn không đứng được khi có người hỏi.'};
+  if (!lyDo) return {ok: false, error: 'Chưa nói vì sao hoàn.'};
+
+  /* KHÔNG HOÀN QUÁ SỐ ĐÃ THU. Một sổ hoàn nhiều hơn thu là một sổ có
+     tiền chảy ra từ hư không, và không phép cộng nào bắt được nó nếu
+     chỗ này không chặn. */
+  const daThu = await db.prepare(
+    "SELECT COALESCE(SUM(soTien),0) t FROM phieuThu " +
+    "WHERE maKhachHang = ? AND trangThai = 'daDuyet'"
+  ).bind(nha).first();
+  const daHoan = await db.prepare(
+    "SELECT COALESCE(SUM(soTien),0) t FROM hoanTien " +
+    "WHERE maKhachHang = ? AND trangThai IN ('daDuyet','choDuyet')"
+  ).bind(nha).first();
+  const conHoanDuoc = Number(daThu.t) - Number(daHoan.t);
+  if (tien > conHoanDuoc)
+    return {ok: false, code: 'QUAHOAN',
+      error: 'Nhà này đã thu ' + dinhDang(Number(daThu.t)) + ', đã hoàn hoặc đang ' +
+        'chờ hoàn ' + dinhDang(Number(daHoan.t)) + '. Chỉ hoàn thêm được tối đa ' +
+        dinhDang(Math.max(0, conHoanDuoc)) + '.'};
+
+  const id = 'HT-' + tokenMoi().slice(0, 14);
+  await db.prepare(
+    'INSERT INTO hoanTien (id,maKhachHang,idPhieuThu,soTien,theoLuat,lyDo,nguoiDeXuat,' +
+    "deXuatLuc,trangThai) VALUES (?,?,?,?,?,?,?,?,'choDuyet')"
+  ).bind(id, nha, h.idPhieuThu || null, tien, luat.slice(0, 800), lyDo.slice(0, 500),
+    hoSo.u, new Date().toISOString()).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'HOAN_DEXUAT',
+    doiTuong: id, chiTiet: nha + ' · ' + dinhDang(tien)});
+  return {ok: true, id, trangThai: 'choDuyet', conHoanDuoc};
+}
+
+export async function duyetHoan(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, error: 'Chỉ R01–R03 duyệt được hoàn tiền.'};
+
+  const ht = await db.prepare('SELECT * FROM hoanTien WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!ht) return {ok: false, error: 'Không tìm thấy đề xuất hoàn này.'};
+
+  /* Cùng luật với phiếu thu: người đề xuất không tự duyệt cho mình. */
+  if (String(ht.nguoiDeXuat) === String(hoSo.u))
+    return {ok: false, error: 'Người đề xuất hoàn không tự duyệt được.'};
+
+  const duyet = y.duyet !== false;
+  const gio = new Date().toISOString();
+  const r = await db.prepare(
+    'UPDATE hoanTien SET trangThai = ?, nguoiDuyet = ?, duyetLuc = ? ' +
+    "WHERE id = ? AND trangThai = 'choDuyet'"
+  ).bind(duyet ? 'daDuyet' : 'tuChoi', hoSo.u, gio, ht.id).run();
+  if (!((r && r.meta && r.meta.changes) || 0))
+    return {ok: false, error: 'Đề xuất này đã được xử lý rồi.'};
+
+  let hh = null;
+  if (duyet) hh = await soatHoaHongSauHoan(db, ht.maKhachHang, hoSo.u);
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u,
+    viec: duyet ? 'HOAN_DUYET' : 'HOAN_TUCHOI',
+    doiTuong: ht.id, chiTiet: ht.maKhachHang + ' · ' + dinhDang(ht.soTien)});
+  return {ok: true, trangThai: duyet ? 'daDuyet' : 'tuChoi', hoaHong: hh || undefined};
+}
+
+/* ── 4 · HOÀN TIỀN RỒI THÌ HOA HỒNG PHẢI ĐỘNG THEO ──
+
+   Hoa hồng tính trên GÓI của nhà được kèm. Nhà ấy được hoàn tiền thì
+   cái gói ấy không còn nguyên, và khoản hoa hồng dựa trên nó cũng vậy.
+
+   Máy làm được MỘT nửa và chỉ làm đúng nửa ấy:
+
+     · khoản còn ở "phải trả" thì HUỶ — tiền chưa ra, huỷ được sạch
+     · khoản ĐÃ TRẢ thì KHÔNG tự đòi lại. Tiền đã vào tay người khác;
+       đòi lại là một cuộc nói chuyện, không phải một câu lệnh. Máy
+       nêu tên khoản ấy ra để người phụ trách đi nói chuyện.
+
+   Tự động trừ ngược một khoản đã trả là cách nhanh nhất để một Đại sứ
+   mở app thấy số dư âm mà không ai báo trước. */
+async function soatHoaHongSauHoan(db, maKhachHang, boi) {
+  const r = await db.prepare(
+    'SELECT * FROM hoaHongTra WHERE nhaDuocKem = ?'
+  ).bind(maKhachHang).all();
+  const ds = r.results || [];
+  const huy = [], daTra = [];
+  for (const x of ds) {
+    if (x.trangThai === 'phaiTra') {
+      await db.prepare(
+        "UPDATE hoaHongTra SET trangThai = 'huy', lyDo = ?, nguoiDuyet = ? " +
+        "WHERE id = ? AND trangThai = 'phaiTra'"
+      ).bind('Nhà được kèm đã được hoàn tiền', boi, x.id).run();
+      huy.push(x.id);
+    } else if (x.trangThai === 'daTra') {
+      daTra.push({id: x.id, nhaKem: x.nhaKem, soTien: x.soTien});
+    }
+  }
+  if (huy.length || daTra.length)
+    await Kho.ghiNhatKy(db, {username: boi, viec: 'HOAHONG_SOAT_SAU_HOAN',
+      doiTuong: maKhachHang,
+      chiTiet: 'huỷ ' + huy.length + ' khoản chưa trả · ' + daTra.length +
+        ' khoản ĐÃ TRẢ cần nói chuyện lại'});
+  return {daHuy: huy, daTraCanNoiChuyen: daTra};
+}
+
+/* ── 5 · TRẢ HOA HỒNG ──
+
+   Không có đường này thì mọi khoản nằm mãi ở "phải trả", và bản kê
+   tài chính tháng nào cũng cộng lại đúng những khoản đã trả từ lâu. */
+export async function traHoaHong(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, error: 'Chỉ R01–R03 duyệt trả hoa hồng.'};
+
+  const hh = await db.prepare('SELECT * FROM hoaHongTra WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!hh) return {ok: false, error: 'Không tìm thấy khoản hoa hồng này.'};
+
+  /* CHỈ TRẢ KHI CHỨNG CỨ ĐÃ ĐƯỢC NHÀ ĐƯỢC KÈM XÁC NHẬN.
+
+     Đây là chỗ nối hai phần lại: bảng chứng cứ dựng ra để đứng được
+     khi đối chất, mà nếu tiền vẫn ra được khi chưa ai xác nhận thì
+     bảng ấy chỉ là thủ tục. Chưa có mã chứng cứ thì cũng chưa trả —
+     trả trước rồi mới đi tìm chứng cứ là làm ngược. */
+  if (!hh.maChungCu) return {ok: false, code: 'CHUACHUNGCU',
+    error: 'Khoản này chưa gắn với bản chứng cứ nào. Gắn chứng cứ đã được ' +
+           'nhà được kèm xác nhận rồi mới trả.'};
+  const cc = await db.prepare('SELECT * FROM chungCu WHERE ma = ?').bind(hh.maChungCu).first();
+  if (!cc || !String(cc.xacNhanBoi || '').trim())
+    return {ok: false, code: 'CHUAXACNHAN',
+      error: 'Bản chứng cứ của khoản này chưa được nhà được kèm xác nhận.'};
+
+  const gio = new Date().toISOString();
+  const r = await db.prepare(
+    "UPDATE hoaHongTra SET trangThai = 'daTra', traLuc = ?, nguoiDuyet = ?, lyDo = ? " +
+    "WHERE id = ? AND trangThai = 'phaiTra'"
+  ).bind(gio, hoSo.u, String(y.lyDo || '').slice(0, 300) || null, hh.id).run();
+  if (!((r && r.meta && r.meta.changes) || 0))
+    return {ok: false, error: 'Khoản này đã trả hoặc đã huỷ rồi.'};
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'HOAHONG_TRA',
+    doiTuong: hh.id, chiTiet: hh.nhaKem + ' · ' + dinhDang(hh.soTien)});
+  return {ok: true, trangThai: 'daTra', soTien: hh.soTien};
+}
+
+/** Gắn một bản chứng cứ vào khoản hoa hồng. Tách khỏi lượt trả để
+    người gắn và người trả có thể là hai người. */
+export async function ganChungCuHoaHong(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 7) return {ok: false, error: 'Từ Coach trở lên mới gắn được chứng cứ.'};
+  const hh = await db.prepare('SELECT * FROM hoaHongTra WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!hh) return {ok: false, error: 'Không tìm thấy khoản hoa hồng này.'};
+  const cc = await db.prepare('SELECT * FROM chungCu WHERE ma = ?')
+    .bind(String(y.maChungCu || '')).first();
+  if (!cc) return {ok: false, error: 'Không tìm thấy bản chứng cứ này.'};
+  await db.prepare("UPDATE hoaHongTra SET maChungCu = ? WHERE id = ? AND trangThai = 'phaiTra'")
+    .bind(cc.ma, hh.id).run();
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'HOAHONG_GAN_CC',
+    doiTuong: hh.id, chiTiet: cc.ma});
+  return {ok: true};
+}
+
+/* ── 6 · NHÀ NGHỈ HOẶC HẠ TẦNG: ĐÓNG KỲ CHƯA TỚI HẠN ──
+
+   Nhà dừng giữa chừng mà lịch thu vẫn treo thì tháng nào bản kê nợ
+   cũng gọi tên họ, và người phụ trách gọi điện đòi tiền một gia đình
+   đã nghỉ. Đó là cách mất một khách hàng cũ lần thứ hai.
+
+   ĐÓNG, KHÔNG XOÁ: kỳ đã tới hạn thì giữ nguyên vì nó là khoản nợ có
+   thật; chỉ kỳ CHƯA tới hạn mới đóng. Luật hoàn của tầng nói đúng
+   điều đó — "các chuỗi chưa bắt đầu thì hoàn đủ". */
+export async function dongKyChuaToi(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, error: 'Chỉ R01–R03 đóng được kỳ thu.'};
+
+  const nha = String(y.maKhachHang || '').trim();
+  const lyDo = String(y.lyDo || '').trim();
+  if (!nha) return {ok: false, error: 'Thiếu mã khách hàng.'};
+  if (!lyDo) return {ok: false, error: 'Chưa nói vì sao đóng.'};
+
+  const bay = new Date().toISOString();
+  /* Chỉ đóng kỳ CHƯA tới hạn VÀ chưa thu đồng nào. Kỳ đã thu một phần
+     thì để nguyên — phần ấy phải đi qua đường hoàn tiền, nơi có luật
+     hoàn và có người duyệt. */
+  const r = await db.prepare(
+    'DELETE FROM kyThu WHERE maKhachHang = ? AND hanLuc > ? AND id NOT IN ' +
+    "(SELECT idKy FROM phieuThu WHERE idKy IS NOT NULL AND trangThai = 'daDuyet')"
+  ).bind(nha, bay).run();
+  const so = (r && r.meta && r.meta.changes) || 0;
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'KYTHU_DONG',
+    doiTuong: nha, chiTiet: 'đóng ' + so + ' kỳ chưa tới hạn · ' + lyDo});
+  return {ok: true, daDong: so,
+    vi: 'Kỳ đã tới hạn và kỳ đã thu một phần thì giữ nguyên — phần ấy đi qua ' +
+        'đường hoàn tiền, nơi có luật hoàn và có người duyệt.'};
+}
+
+/* ── 7 · DANH SÁCH QUÁ HẠN TOÀN HỆ ──
+
+   congNo trả lời cho MỘT nhà. Người làm tài chính cần câu ngược lại:
+   hôm nay những nhà nào đang quá hạn. Không có câu ấy thì cách duy
+   nhất là mở từng nhà một. */
+export async function dsQuaHan(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, code: 'NOPERM',
+    error: 'Chỉ R01–R03 xem được danh sách quá hạn của cả hệ.'};
+
+  const bay = new Date().toISOString();
+  const r = await db.prepare(
+    'SELECT k.maKhachHang, k.tang, k.ky, k.phaiThu, k.hanLuc, ' +
+    "  COALESCE(SUM(CASE WHEN p.trangThai = 'daDuyet' THEN p.soTien END), 0) daThu " +
+    'FROM kyThu k LEFT JOIN phieuThu p ON p.idKy = k.id ' +
+    'WHERE k.hanLuc < ? GROUP BY k.id HAVING daThu < k.phaiThu ' +
+    'ORDER BY k.hanLuc LIMIT 500'
+  ).bind(bay).all();
+
+  const ds = (r.results || []).map(x => ({
+    maKhachHang: x.maKhachHang, tang: x.tang, ky: x.ky,
+    conNo: Number(x.phaiThu) - Number(x.daThu), hanLuc: x.hanLuc,
+    treNgay: Math.floor((Date.now() - new Date(x.hanLuc).getTime()) / 86400e3)
+  }));
+  return {ok: true, so: ds.length, tongConNo: ds.reduce((a, x) => a + x.conNo, 0), ds};
+}
+
+/* ── 8 · ĐỐI SOÁT ──
+
+   Một sổ tài chính không có phép đối soát là một sổ chỉ đúng chừng nào
+   chưa ai kiểm. Sáu câu hỏi dưới đây, mỗi câu nhắm vào một kiểu lệch
+   ĐÃ CÓ THẬT trong các hệ tương tự — không phải kiểu lệch tôi nghĩ ra
+   cho đủ số.
+
+   Phép đối soát này KHÔNG SỬA GÌ. Nó chỉ nêu ra; sửa là việc của
+   người, vì mỗi chỗ lệch có một câu chuyện riêng và máy không biết
+   câu chuyện ấy. */
+export async function doiSoat(y, env, db, hoSo) {
+  const lv = BAC[hoSo.role] || 99;
+  if (lv > 3) return {ok: false, code: 'NOPERM', error: 'Chỉ R01–R03 chạy được đối soát.'};
+
+  const lech = [];
+  const hoi = async (ma, viec, cau, dv, vi) => {
+    const r = await db.prepare(cau).bind(...(dv || [])).all();
+    const ds = r.results || [];
+    if (ds.length) lech.push({ma, viec, so: ds.length, vi, viDu: ds.slice(0, 5)});
+  };
+
+  await hoi('DS-1', 'Phiếu thu trỏ vào một kỳ không còn tồn tại',
+    'SELECT id, maKhachHang, idKy FROM phieuThu WHERE idKy IS NOT NULL ' +
+    'AND idKy NOT IN (SELECT id FROM kyThu) LIMIT 50', [],
+    'Kỳ bị đóng trong khi đã có phiếu gắn vào. Tiền vẫn trong sổ nhưng không ' +
+    'trừ nợ của kỳ nào — nó biến mất khỏi mọi bản kê công nợ.');
+
+  await hoi('DS-2', 'Kỳ thu của một nhà không có tệp khách hàng',
+    'SELECT id, maKhachHang FROM kyThu WHERE maKhachHang NOT IN ' +
+    '(SELECT maKhachHang FROM hoSoKhach) LIMIT 50', [],
+    'Công nợ treo cho một nhà không tra được. Thường do dựng lịch bằng một mã ' +
+    'gõ tay sai một ký tự.');
+
+  await hoi('DS-3', 'Nhà đang ở tầng có phí mà chưa có kỳ thu nào',
+    'SELECT maKhachHang, tang FROM hoSoKhach WHERE tang >= 2 ' +
+    'AND maKhachHang NOT IN (SELECT maKhachHang FROM kyThu) LIMIT 50', [],
+    'Nhà học mà không có ai đòi tiền. Thường do nâng tầng bằng đường sửa thẳng ' +
+    'cơ sở dữ liệu, đi vòng qua nangTang.');
+
+  await hoi('DS-4', 'Kỳ thu đã thu QUÁ số phải thu',
+    'SELECT k.id, k.maKhachHang, k.phaiThu, ' +
+    "  SUM(CASE WHEN p.trangThai = 'daDuyet' THEN p.soTien ELSE 0 END) daThu " +
+    'FROM kyThu k JOIN phieuThu p ON p.idKy = k.id ' +
+    'GROUP BY k.id HAVING daThu > k.phaiThu LIMIT 50', [],
+    'Cổng chặn thu thừa nằm ở lúc GHI phiếu; dòng nào lọt qua được là dòng ' +
+    'vào sổ bằng một đường khác.');
+
+  await hoi('DS-5', 'Hoàn nhiều hơn thu',
+    'SELECT h.maKhachHang, SUM(h.soTien) hoan FROM hoanTien h ' +
+    "WHERE h.trangThai = 'daDuyet' GROUP BY h.maKhachHang " +
+    'HAVING hoan > (SELECT COALESCE(SUM(p.soTien),0) FROM phieuThu p ' +
+    "  WHERE p.maKhachHang = h.maKhachHang AND p.trangThai = 'daDuyet') LIMIT 50", [],
+    'Tiền chảy ra từ hư không. Thường do huỷ một phiếu thu SAU khi đã duyệt ' +
+    'hoàn dựa trên chính phiếu ấy.');
+
+  await hoi('DS-6', 'Hoa hồng đã trả cho một nhà đã được hoàn tiền',
+    'SELECT id, nhaKem, nhaDuocKem, soTien FROM hoaHongTra ' +
+    "WHERE trangThai = 'daTra' AND nhaDuocKem IN " +
+    "(SELECT maKhachHang FROM hoanTien WHERE trangThai = 'daDuyet') LIMIT 50", [],
+    'Máy KHÔNG tự đòi lại tiền đã ra tay người khác — đó là một cuộc nói chuyện, ' +
+    'không phải một câu lệnh. Nêu tên ra để người phụ trách đi nói chuyện.');
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'DOI_SOAT',
+    chiTiet: lech.length ? lech.map(x => x.ma).join(',') : 'sạch'});
+
+  return {ok: true, sach: lech.length === 0, soLech: lech.length, lech,
+    vi: 'Phép đối soát KHÔNG SỬA GÌ. Mỗi chỗ lệch có một câu chuyện riêng, ' +
+        'và máy không biết câu chuyện ấy.'};
 }

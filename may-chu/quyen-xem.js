@@ -310,7 +310,10 @@ export async function nangTang(y, env, db, hoSo) {
        · sinh HOA HỒNG cho nhà bảo trợ, nếu có */
   const soKy = await ghiDoiTang(db, {maKhachHang: maNha,
     tuTang: Number(hv.tier || 0), denTang: tangMoi, kpi, boi: hoSo.u,
-    lyDo: 'phiếu ' + tt.id});
+    lyDo: 'phiếu ' + tt.id,
+    /* Mang theo chỗ trỏ để ghiDoiTang mở được tệp cho nhà chuyển từ nền
+       cũ sang — xem chú giải ở ho-so-khach.js. */
+    uidPhuHuynh: ph.id, maHocVien: hv.id});
   const hh = await sinhHoaHong(db, maNha, tangMoi, kpi);
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'NANG_TANG',

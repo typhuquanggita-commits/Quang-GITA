@@ -181,9 +181,34 @@ export async function dsTepKhach(y, env, db, hoSo) {
 
    Gọi từ nangTang. Ghi vào lịch sử VÀ cập nhật tệp, và dựng luôn lịch
    thu của tầng mới — ba việc ấy đi cùng nhau, vì một nhà lên tầng mà
-   không có lịch thu là một nhà học không có ai đòi tiền. */
-export async function ghiDoiTang(db, {maKhachHang, tuTang, denTang, kpi, boi, lyDo}) {
+   không có lịch thu là một nhà học không có ai đòi tiền.
+
+   ══ MỞ TỆP TRƯỚC KHI GHI, NẾU NHÀ NÀY CHƯA CÓ TỆP ══
+
+   Tệp khách hàng mở lúc kích hoạt tài khoản (dang-ky.js). Nhưng tài
+   khoản có TRƯỚC bảng này thì không đi qua đường ấy — mọi nhà chuyển
+   từ nền Sheets sang đều có mã khách hàng mà không có tệp.
+
+   Nâng tầng cho một nhà như thế thì UPDATE hoSoKhach đổi 0 dòng và
+   lặng lẽ trôi qua, còn dungLichThu vẫn dựng đủ kỳ. Kết quả: công nợ
+   treo cho một mã không tra được — đúng chỗ lệch DS-2 mà phép đối soát
+   nêu ra. Phép đối soát bắt được nó ngay lần chạy đầu, ở dữ liệu thử.
+
+   moTepKhach dùng ON CONFLICT DO NOTHING nên gọi thừa là vô hại; gọi
+   thiếu thì mất dấu một nhà. */
+export async function ghiDoiTang(db, {maKhachHang, tuTang, denTang, kpi, boi, lyDo,
+                                     uidPhuHuynh, maHocVien}) {
   const luc = new Date().toISOString();
+
+  if (uidPhuHuynh) {
+    await moTepKhach(db, {maKhachHang, uidPhuHuynh, maHocVien});
+  } else {
+    const co = await db.prepare('SELECT 1 FROM hoSoKhach WHERE maKhachHang = ?')
+      .bind(maKhachHang).first();
+    if (!co) throw new Error('Nhà ' + maKhachHang + ' chưa có tệp khách hàng, ' +
+      'và lượt đổi tầng này không mang theo uidPhuHuynh để mở tệp.');
+  }
+
   await db.prepare(
     'INSERT INTO lichSuTang (id,maKhachHang,tuTang,denTang,kpi,boi,luc,lyDo) ' +
     'VALUES (?,?,?,?,?,?,?,?)'
