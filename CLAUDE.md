@@ -149,11 +149,35 @@ kiểm câm trong kho này.
 
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
-- Bật GitHub Pages: `Settings → Pages → Source: GitHub Actions`
-- Trỏ DNS cho `gita.edu.vn`
-- Điền pháp nhân vào `LICENSE` và `NOTICE`
-- Điền hệ số lương ở `CV_HANG[].heSoGhiChu`
-- Đặt ngưỡng chuyển tuyến y tế / tâm lý
+**Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**
+Nó đọc thẳng `may-chu/wrangler.toml`, hỏi Cloudflare đang giữ bí mật nào,
+và soi kho mã. Danh sách gõ tay thì MỤC: tới 9.99.7 chỗ này còn ghi
+"điền hệ số lương ở `CV_HANG[].heSoGhiChu`" — mà `heSoGhiChu` chỉ là một
+dòng ghi chú, không phải chỗ điền được, và chỗ điền thật (bảng
+`heSoLuong`) tới 9.99.5 mới có.
+
+Còn thật, tính tới 9.99.8:
+
+- Bật GitHub Pages: `Settings → Pages → Source: GitHub Actions` — không
+  có lệnh nào làm hộ được
+- Trỏ DNS cho `gita.edu.vn` (CNAME trong kho đã có sẵn tên miền)
+- Nạp năm bí mật máy chủ — `soat-san-sang.js` in ra đúng năm lệnh
+- Chọn đường lấy sao kê ngân hàng: webhook · cổng thanh toán · nhập tay
+- SPF/DKIM cho tên miền gửi thư
+- **L-01** — hệ số lương ba vị trí phòng tài chính. Màn *Phòng Kế toán –
+  Tài chính → Lương → Đặt hệ số*, chỉ Super Admin. Chưa đặt thì bảng
+  lương vẫn chấm điểm, phần tiền để trống chứ không phải 0.
+- Bốn ô còn lại của `G.TR_CHUA`: X-SHP · X-GOP · X-GP · X-DUTRU. Mục 74
+  của bộ kiểm đối chiếu lời khai của sổ ấy với sổ thật mỗi lần chạy.
+
+**Đã xong, đừng làm lại:** pháp nhân trong `LICENSE`/`NOTICE` (không còn
+chỗ trống nào), học phí từng tầng (chốt 9.94, mục 71 đối chiếu hai bản),
+cửa sổ gộp 7 ngày và số báo giá N4/N5 (đã đặt và có phép đo).
+
+**Không phải việc của chủ hệ:** ngưỡng chuyển tuyến y tế/tâm lý. Kho
+`data.quy-trinh-nhom.js` cố ý ghi DẤU HIỆU QUAN SÁT ĐƯỢC để người làm ca
+đề nghị, và nói thẳng "ngưỡng do Hội đồng chuyên môn chốt". Đó là một
+quyết định lâm sàng, không phải một ô trống chờ điền.
 
 ## Đã chốt, không hỏi lại
 
@@ -177,6 +201,15 @@ kiểm câm trong kho này.
   R01–R15, cấp bằng `quyenTaiChinh` chứ không thêm vai. Chỉ R01–R02 cấp
   được. Tách thu khỏi chi là lớp kiểm soát chính: người ghi nhận tiền
   vào không được là người duyệt tiền ra.
+- **Điểm KPI dưới 60** (9.99.8, L-02) — máy KHÔNG cắt và cũng không
+  tha: lượt chốt lương bị chặn, người chốt phải ghi quyết định của mình
+  kèm lý do, và câu ấy ở lại trong dòng lương. Không có luật chung, vì
+  một luật chung phải chọn sẵn một cách cho mọi trường hợp mà nguyên
+  nhân điểm thấp nằm đâu thì chỉ người đọc sổ mới biết.
+- **Lương đã chốt vào sổ chi** (9.99.7) — khoản mục `luong`, trạng thái
+  đã duyệt, mốc tiền ra là ngày cuối KỲ LƯƠNG chứ không phải ngày chốt.
+  Không đi qua thang nấc vì không có số tiền nào được gõ tay; đổi lại
+  `doiSoatLuong` soi hai phía như đối chiếu ngân hàng.
 - **Sáu mốc chu kỳ** (9.97) — 10·15·20·50·80·100 triệu, TỔNG chi một
   người một TUẦN. Mỗi mốc một vai cố định, leo R03 → R02 → R01, mốc
   chẵn thêm một chữ ký. Kế toán trưởng được cấp hạn mức tới mốc nào thì

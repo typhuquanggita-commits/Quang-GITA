@@ -282,7 +282,7 @@ if (DAY) {
     console.log('  Đã đẩy lên ' + nhanh + '. CI đang dựng bộ cài Windows mới.');
   }
 } else {
-  console.log('\n  (chưa đẩy — thêm --day nếu muốn commit và đẩy luôn)');
+  console.log('\n  (chưa đẩy — thêm --day nếu muốn commit và đẩy luôn)\n\n  Trước khi chạy THẬT: node tools/soat-san-sang.js');
 }
 
 console.log('\n' + '═'.repeat(64));

@@ -15,6 +15,7 @@
 const zlibGoi = require('zlib');
 const fsGoc = require('fs');
 const pathGoc = require('path');
+const doiKhoXong = require('./doi-kho-xong');
 function ruotGoi(ro) {
   const b = Buffer.isBuffer(ro) ? ro : Buffer.from(ro);
   return JSON.parse((b[0] === 0x1f && b[1] === 0x8b ? zlibGoi.gunzipSync(b) : b).toString('utf8'));
@@ -10202,6 +10203,80 @@ const { chromium } = require(PW);
         ? 'bốn bậc ' + (ra.tinBacMay || []).join('/') + ' · bốn biến CSS · ngăn bảng tin có mặt'
         : 'máy chủ ' + (ra.tinBacMay || []).join('/') +
           ' · màn hình ' + (ra.tinBacMan || []).join('/'));
+  }
+
+  /* ══════════════════ 74. SỔ CHỜ CHỦ HỆ CÓ MỤC KHÔNG ══════════════════
+
+     G.TR_CHUA là danh sách những ô chủ hệ phải tự điền — học phí, hệ
+     số lương, mức sinh hoạt phí. Chú giải ở đầu data.tien-rung.js từ
+     lâu hứa rằng "bộ kiểm đếm chúng ra mỗi lần phát hành".
+
+     KHÔNG CÓ PHÉP KIỂM NÀO. Và trong lúc không ai đối chiếu, sổ mục:
+     tới 9.99.7 nó vẫn nói học phí còn trống, trong khi học phí đã chốt
+     từ 9.94 và chính mục 71 của bộ kiểm này đối chiếu hai bản giá mỗi
+     lần chạy. Chủ hệ mở sổ ra, thấy một việc đã xong nằm trong danh
+     sách phải làm — và lần sau thì thôi tin cả sổ. Một sổ chờ việc bị
+     mục thì tệ hơn không có sổ.
+
+     Cùng lớp lỗi với chú giải ở tai-chinh.js bản 9.93: một lời hứa về
+     một lớp bảo vệ không tồn tại làm người đọc thôi đi tìm.
+
+     Nên phép này đối chiếu LỜI KHAI với SỔ THẬT: ô nào khai đo được ở
+     đâu thì đọc thẳng chỗ ấy, và đòi trạng thái khớp. Ô nào không đo
+     được bằng máy thì phải nói ra vì sao — im lặng thì không phân biệt
+     được "chưa đo được" với "quên khai". */
+  {
+    await p.goto(URL, { waitUntil: 'domcontentloaded' });
+    await p.waitForFunction(() => window.G && window.G.doLogin, { timeout: 30000 });
+    await p.evaluate(() => G.doLogin('superadmin@gita365.vn'));
+    await doiKhoXong(p);
+
+    const ra = await p.evaluate(() => {
+      const ds = window.G.TR_CHUA || [];
+      const r = {so: ds.length, loi: [], choChuHe: [], daDien: []};
+      const HOP_LE = ['daDien', 'choChuHe'];
+      ds.forEach(x => {
+        if (!x.ma || !x.t) { r.loi.push('một ô thiếu mã hoặc tên'); return; }
+        if (HOP_LE.indexOf(x.trangThai) < 0)
+          r.loi.push(x.ma + ' không khai trạng thái (daDien · choChuHe)');
+        if (!x.noiDien || String(x.noiDien).length < 8)
+          r.loi.push(x.ma + ' không nói rõ ĐIỀN Ở ĐÂU — người đi điền quay về tay không');
+
+        if (x.doTai) {
+          /* ĐỌC THẲNG SỔ THẬT rồi so với lời khai. Đây là cả điểm của
+             phép đo: một ô khai "chưa điền" mà chỗ ấy đã có số là đúng
+             cái làm sổ mục. */
+          const kho = window.G[x.doTai];
+          if (!Array.isArray(kho) || !kho.length) {
+            r.loi.push(x.ma + ' trỏ đo ở kho "' + x.doTai + '" — kho ấy không có thật');
+          } else {
+            const coSo = kho.every(b => {
+              const v = b[x.doOTruong];
+              return v !== undefined && v !== null && v !== '';
+            });
+            if (coSo && x.trangThai !== 'daDien')
+              r.loi.push(x.ma + ' khai CHƯA ĐIỀN mà ' + x.doTai + '[].' +
+                x.doOTruong + ' đã có đủ số — sổ chờ việc đang mục');
+            if (!coSo && x.trangThai === 'daDien')
+              r.loi.push(x.ma + ' khai ĐÃ ĐIỀN mà ' + x.doTai + '[].' +
+                x.doOTruong + ' còn chỗ trống');
+          }
+        } else if (!x.khongDoDuoc || String(x.khongDoDuoc).length < 20) {
+          r.loi.push(x.ma + ' không đo được bằng máy mà cũng không nói vì sao');
+        }
+        (x.trangThai === 'daDien' ? r.daDien : r.choChuHe).push(x.ma);
+      });
+      const luat = window.G.TR_CHUA_LUAT || {};
+      r.coLuat = !!(luat.cot && luat.aiDien);
+      return r;
+    });
+
+    bao(ra.so >= 6 && ra.loi.length === 0 && ra.coLuat,
+      'SỔ CHỜ CHỦ HỆ ĐỐI CHIẾU LỜI KHAI VỚI SỔ THẬT — và nó đã mục suốt vì chưa ai đối chiếu. G.TR_CHUA là danh sách những ô chủ hệ phải tự điền: học phí, hệ số lương, mức sinh hoạt phí, tỉ lệ góp. Chú giải ở đầu data.tien-rung.js hứa từ lâu rằng "bộ kiểm đếm chúng ra mỗi lần phát hành" — mà không có phép kiểm nào, và cùng lớp lỗi ấy tôi đã mắc một lần ở tai-chinh.js bản 9.93: một lời hứa về lớp bảo vệ không tồn tại làm người đọc thôi đi tìm. Trong lúc không ai đối chiếu thì sổ mục: tới 9.99.7 nó vẫn nói học phí còn trống, trong khi học phí đã chốt từ 9.94 và chính mục 71 đối chiếu hai bản giá mỗi lần chạy. Chủ hệ mở sổ ra thấy một việc đã xong nằm trong danh sách phải làm, và lần sau thì thôi tin cả sổ — một sổ chờ việc bị mục tệ hơn không có sổ. Nên phép này ĐỌC THẲNG chỗ được trỏ tới rồi so với lời khai: ô nào bảo chưa điền mà chỗ ấy đã đủ số là đỏ, ô nào bảo đã điền mà còn trống cũng đỏ. Ô không đo được bằng máy — hệ số lương nằm ở bảng máy chủ, số tháng dự trữ nằm ở ngân hàng thật — thì phải NÓI RA vì sao, vì im lặng thì không phân biệt được "chưa đo được" với "quên khai"',
+      ra.loi.length === 0
+        ? ra.so + ' ô · đã điền: ' + (ra.daDien || []).join(', ') +
+          ' · chờ chủ hệ: ' + (ra.choChuHe || []).join(', ')
+        : ra.loi.slice(0, 4).join(' · '));
   }
 
   /* ══════════════════ 73. SAVE() CÓ GIỮ THẬT KHÔNG ══════════════════
