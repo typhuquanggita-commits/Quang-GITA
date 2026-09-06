@@ -182,6 +182,14 @@ const DUONG = [
    'SELECT cum, du, luc, boi FROM caiDat', [],
    'bảng có nhiều nhất BẢY dòng, một dòng mỗi cụm, và lượt nào cũng cần cả bảy'],
 
+  ['tra mã lấy lại mật khẩu của một tài khoản',
+   'may-chu/mat-khau.js · datLaiMatKhau',
+   'SELECT * FROM maLayLai WHERE uid = ?', ['U-1']],
+
+  ['tìm mã lấy lại mật khẩu đã quá hạn để dọn',
+   'may-chu/worker.js · scheduled',
+   'SELECT uid FROM maLayLai WHERE hetHan < ? LIMIT 1000', [Date.now()]],
+
   ['tìm dòng chặn nhịp đã quá hạn để dọn',
    'may-chu/csdl.sql · chanNhip',
    'SELECT khoa FROM chanNhip WHERE hetHan < ? LIMIT 1000', [Date.now()]]

@@ -480,8 +480,147 @@ bao(hopThu.length === 1 && thuCuoi().than.indexOf('\nBcc:') < 0,
   'HỌ TÊN TỰ ĐẶT KHÔNG XUỐNG DÒNG ĐƯỢC trong thân thư',
   'thư mang tên Học viện GITA, để nguyên là mở một chỗ nhét nội dung tuỳ ý');
 
-/* ═══════════════ 10 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
-console.log('\n10 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
+/* ═══════════════ 10 · QUÊN VÀ ĐẶT LẠI MẬT KHẨU ═══════════════ */
+console.log('\n10 · QUÊN VÀ ĐẶT LẠI MẬT KHẨU');
+db.prepare("DELETE FROM chanNhip").run();
+hopThu.length = 0;
+
+const qCo = await goi({fn: 'quenMatKhau', u: 'nhamoi@vidu.vn'});
+const qKhong = await goi({fn: 'quenMatKhau', u: 'khong-ai-co@vidu.vn'});
+bao(qCo.than.ok && qKhong.than.ok && qCo.than.thongBao === qKhong.than.thongBao,
+  'TÀI KHOẢN CÓ THẬT VÀ KHÔNG CÓ TRẢ LỜI Y HỆT — cửa này không thành công cụ dò',
+  JSON.stringify(qCo.than.thongBao));
+bao(hopThu.length === 1 && hopThu[0].den === 'nhamoi@vidu.vn',
+  'nhưng chỉ tài khoản có thật mới nhận được thư', hopThu.length + ' thư cho 2 lượt xin');
+const maQ = (thuCuoi().than.match(/\n\s+(\d{6})\n/) || [])[1];
+bao(!!maQ, 'thư mang mã sáu số', maQ);
+
+const gQ = db.prepare("SELECT * FROM maLayLai").get();
+bao(gQ && gQ.bam && gQ.bam.indexOf(maQ) < 0, 'mã trong sổ đã BĂM, không nằm nguyên văn');
+
+/* Xin mã bằng EMAIL rồi đặt lại bằng chính email ấy — và mã lưu theo
+   uid nên hai đường vào cùng trỏ về một tài khoản. */
+bao(!(await goi({fn: 'datLaiMatKhau', u: 'nhamoi@vidu.vn', ma: '000000',
+  moi: 'ChuoiHoanToanKhac2026!'})).than.ok, 'mã sai thì từ chối');
+
+/* Mật khẩu yếu chỉ được chê SAU khi mã đã đúng — chê trước là nói cho
+   người dò biết họ đoán đúng tên tài khoản. */
+const yeuTruoc = await goi({fn: 'datLaiMatKhau', u: 'khong-ai-co@vidu.vn',
+  ma: '123456', moi: '123456789012'});
+bao(yeuTruoc.than.code === 'EXPIRED',
+  'tài khoản không có + mật khẩu yếu → vẫn chỉ nói "mã hết hạn"',
+  'chê mật khẩu trước khi kiểm mã là xác nhận tài khoản có thật');
+
+const yeuSau = await goi({fn: 'datLaiMatKhau', u: 'nhamoi@vidu.vn', ma: maQ,
+  moi: 'password12345'});
+bao(yeuSau.than.code === 'WEAK',
+  'nhưng mã ĐÚNG + mật khẩu yếu thì chê thẳng', yeuSau.than.error);
+
+const dl = await goi({fn: 'datLaiMatKhau', u: 'nhamoi@vidu.vn', ma: maQ,
+  moi: 'ChuoiHoanToanKhac2026!'});
+bao(dl.than.ok, 'mã đúng + mật khẩu tử tế thì đặt lại được');
+bao((await goi({fn: 'dangNhap', u: 'nhamoi@vidu.vn', mk: 'ChuoiHoanToanKhac2026!'})).than.ok &&
+    !(await goi({fn: 'dangNhap', u: 'nhamoi@vidu.vn', mk: 'MotChuoiTuTe2026!'})).than.ok,
+  'mật khẩu mới dùng được, mật khẩu cũ hết dùng được');
+bao(!(await goi({fn: 'datLaiMatKhau', u: 'nhamoi@vidu.vn', ma: maQ,
+  moi: 'MotChuoiKhacNua2026!'})).than.ok,
+  'MÃ DÙNG MỘT LẦN — đặt lại xong thì mã ấy chết');
+bao(/đã được đặt lại/.test(thuCuoi().tieuDe),
+  'và gửi thư báo — thứ duy nhất cho người thật biết có chuyện, nếu không phải họ làm',
+  thuCuoi().tieuDe);
+bao(/giờ Việt Nam/.test(thuCuoi().than),
+  'thư ghi giờ VIỆT NAM, không phải giờ UTC',
+  'người đọc ở Việt Nam; một mốc UTC làm họ tưởng chuyện xảy ra lúc khác rồi bỏ qua');
+
+/* ĐÁ MỌI PHIÊN — kể cả phiên đang mở của chính người ấy. */
+db.prepare("DELETE FROM chanNhip").run();
+const dnA2 = await goi({fn: 'dangNhap', u: 'nhamoi@vidu.vn', mk: 'ChuoiHoanToanKhac2026!'});
+const dnB2 = await goi({fn: 'dangNhap', u: 'nhamoi@vidu.vn', mk: 'ChuoiHoanToanKhac2026!'});
+await goi({fn: 'quenMatKhau', u: 'nhamoi@vidu.vn'});
+const maQ2 = (thuCuoi().than.match(/\n\s+(\d{6})\n/) || [])[1];
+await goi({fn: 'datLaiMatKhau', u: 'nhamoi@vidu.vn', ma: maQ2, moi: 'ChuoiThuBa2026!'});
+bao((await goi({fn: 'capKhoa', token: dnA2.than.token, u: 'nhamoi@vidu.vn'})).than.code === 'AUTH' &&
+    (await goi({fn: 'capKhoa', token: dnB2.than.token, u: 'nhamoi@vidu.vn'})).than.code === 'AUTH',
+  'ĐẶT LẠI MẬT KHẨU ĐÁ MỌI PHIÊN, không trừ cái nào',
+  'người dùng cửa này thường vừa mất quyền kiểm soát tài khoản — giữ lại một phiên là giữ nguyên cánh cửa họ vừa đi khoá');
+
+/* Sai năm lần thì huỷ mã. */
+db.prepare("DELETE FROM chanNhip").run();
+await goi({fn: 'quenMatKhau', u: 'nhamoi@vidu.vn'});
+const maQ3 = (thuCuoi().than.match(/\n\s+(\d{6})\n/) || [])[1];
+let cuoiCung = null;
+for (let i = 0; i < 5; i++)
+  cuoiCung = await goi({fn: 'datLaiMatKhau', u: 'nhamoi@vidu.vn',
+    ma: '90000' + i, moi: 'ChuoiThuTu2026!'});
+bao(cuoiCung.than.code === 'LOCKED', 'sai năm lần thì HUỶ mã', cuoiCung.than.error);
+bao((await goi({fn: 'datLaiMatKhau', u: 'nhamoi@vidu.vn', ma: maQ3,
+  moi: 'ChuoiThuTu2026!'})).than.code === 'EXPIRED',
+  'và mã đúng sau đó cũng không dùng được nữa');
+
+/* Xin mã mới thì mã cũ chết — một tài khoản chỉ một mã sống. */
+db.prepare("DELETE FROM chanNhip").run();
+await goi({fn: 'quenMatKhau', u: 'nhamoi@vidu.vn'});
+const maCu = (thuCuoi().than.match(/\n\s+(\d{6})\n/) || [])[1];
+await goi({fn: 'quenMatKhau', u: 'nhamoi@vidu.vn'});
+const maMoi2 = (thuCuoi().than.match(/\n\s+(\d{6})\n/) || [])[1];
+bao(db.prepare("SELECT count(*) c FROM maLayLai").get().c === 1,
+  'MỘT TÀI KHOẢN CHỈ MỘT MÃ SỐNG — xin mã mới là mã cũ chết',
+  'để nhiều mã cùng sống là chỉ cần đoán trúng một cái trong số đó');
+bao(maCu !== maMoi2 &&
+    !(await goi({fn: 'datLaiMatKhau', u: 'nhamoi@vidu.vn', ma: maCu, moi: 'ChuoiThuNam2026!'})).than.ok,
+  'và mã cũ hết dùng được ngay');
+
+/* Trần xin mã. */
+db.prepare("DELETE FROM chanNhip").run();
+hopThu.length = 0;
+for (let i = 0; i < 8; i++) await goi({fn: 'quenMatKhau', u: 'nhamoi@vidu.vn'});
+bao(hopThu.length <= 5, 'một tài khoản xin mã tối đa năm lần mỗi giờ',
+  hopThu.length + ' thư trong 8 lượt');
+
+/* Tài khoản đang khoá thì không xin được mã — nhưng vẫn trả lời y hệt. */
+db.prepare("DELETE FROM chanNhip").run();
+hopThu.length = 0;
+const qKhoa = await goi({fn: 'quenMatKhau', u: 'bikhoa@gita365.vn'});
+bao(qKhoa.than.ok && hopThu.length === 0,
+  'tài khoản đang khoá: không gửi mã, nhưng vẫn trả lời y hệt');
+
+/* ═══════════════ 11 · DỌN THEO LỊCH ═══════════════
+
+   Bốn bảng ở nền mới chỉ lớn lên nếu không ai dọn. Đây đúng lớp việc mà
+   bản 9.79 dựng cho nền cũ; chuyển nền thì phải mang theo, nếu không thì
+   vừa gỡ được một chỗ tắc lại dựng lại đúng chỗ ấy ở nơi mới. */
+console.log('\n11 · DỌN THEO LỊCH');
+const donDep = (await import('../may-chu/worker.js')).donDep;
+
+/* Đặt vào mỗi bảng một dòng ĐÃ CHẾT và một dòng CÒN SỐNG. Phép đo chỉ
+   có nghĩa khi nó chứng minh được cả hai vế: dọn đúng thứ chết, và
+   KHÔNG đụng thứ còn sống. */
+const nay = Date.now();
+db.prepare("INSERT INTO sessions (id,uid,exp,createdAt) VALUES ('S-chet','U-ph',?,'')").run(nay - 1000);
+db.prepare("INSERT INTO sessions (id,uid,exp,createdAt) VALUES ('S-song','U-ph',?,'')").run(nay + 3600e3);
+db.prepare("INSERT INTO chanNhip (khoa,dem,hetHan) VALUES ('chet',1,?)").run(nay - 2 * 86400e3);
+db.prepare("INSERT INTO chanNhip (khoa,dem,hetHan) VALUES ('song',1,?)").run(nay + 3600e3);
+db.prepare("INSERT INTO maLayLai (uid,muoi,bam,hetHan,sai) VALUES ('U-chet','m','b',?,0)").run(nay - 2 * 3600e3);
+db.prepare("INSERT INTO maLayLai (uid,muoi,bam,hetHan,sai) VALUES ('U-song','m','b',?,0)").run(nay + 600e3);
+const cuLam = new Date(nay - 40 * 86400e3).toISOString();
+db.prepare("INSERT INTO dangKyCho (id,email,trangThai,createdAt) VALUES ('D-chet','a@b.vn','choOtp',?)").run(cuLam);
+db.prepare("INSERT INTO dangKyCho (id,email,trangThai,createdAt) VALUES ('D-cho','c@d.vn','choKichHoat',?)").run(cuLam);
+
+const don = await donDep(env);
+const co = (b, id, cot) => !!db.prepare('SELECT 1 FROM ' + b + ' WHERE ' + (cot || 'id') + ' = ?').get(id);
+bao(!co('sessions','S-chet') && co('sessions','S-song'), 'phiên hết hạn bị dọn, phiên còn sống ở lại');
+bao(!co('chanNhip','chet','khoa') && co('chanNhip','song','khoa'), 'dòng chặn nhịp quá hạn bị dọn');
+bao(!co('maLayLai','U-chet','uid') && co('maLayLai','U-song','uid'), 'mã lấy lại mật khẩu đã chết bị dọn');
+bao(!co('dangKyCho','D-chet') && co('dangKyCho','D-cho'),
+  'đăng ký bỏ dở quá 30 ngày bị dọn, nhưng lượt ĐANG CHỜ KÍCH HOẠT thì giữ',
+  'người ta có thể mở thư cũ và bấm vào');
+bao(don.tongXoa === 4, 'nói ra đã xoá bao nhiêu dòng', don.ke.join(' · '));
+bao(!!db.prepare("SELECT 1 FROM audit WHERE viec = 'DON_DEP'").get(),
+  'và ghi một dòng vào nhật ký SAU khi dọn',
+  'một bộ dọn chạy im lặng là một bộ dọn không ai kiểm được');
+
+/* ═══════════════ 12 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
+console.log('\n12 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng
    nó — đúng chuyện vừa xảy ra khi dongBo được port. */
@@ -494,8 +633,8 @@ const bia = (await goi({fn: 'mot-viec-khong-co-that', token: tk})).than;
 bao(bia.code !== 'CHUAPORT' && !bia.ok, 'còn việc bịa ra thì vẫn là yêu cầu không hợp lệ',
   bia.error);
 
-/* ═══════════════ 11 · KHÔNG RÒ RA NGOÀI ═══════════════ */
-console.log('\n11 · KHÔNG RÒ RA NGOÀI');
+/* ═══════════════ 13 · KHÔNG RÒ RA NGOÀI ═══════════════ */
+console.log('\n13 · KHÔNG RÒ RA NGOÀI');
 const xau = {prepare(){ throw new Error('SQLITE_ERROR: no such column: users.matKhauThat'); }};
 const rNo = await worker.fetch(new Request('https://gita.test/', {
   method: 'POST', headers: {'Content-Type': 'application/json'},
@@ -512,12 +651,12 @@ bao(jGt.ok && jGt.daNapKhoa === 8 && !JSON.stringify(jGt).includes('khoa-nen'),
   'cửa trạng thái nói ĐÃ NẠP MẤY KHOÁ mà không trả khoá nào',
   'đã nạp ' + jGt.daNapKhoa + ' gói');
 
-/* ═══════════════ 12 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
+/* ═══════════════ 14 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
 
-   Mười một mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
+   Mười ba mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
    Ở đây phá bằng cách truyền một hồ sơ vai KHÁC vào chính hàm tính
    phạm vi — không tráo hàm toàn cục, đúng luật đã ghi ở v9.79. */
-console.log('\n12 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
+console.log('\n14 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
 const pv = (await import('../may-chu/worker.js')).phamViCapPhep;
 bao(pv({role: 'R13', tier: 5}).indexOf('tang5') >= 0 &&
     pv({role: 'R13', tier: 2}).indexOf('tang3') < 0,

@@ -300,6 +300,29 @@ CREATE TABLE IF NOT EXISTS caiDat (
 );
 
 -- ─────────────────────────────────────────────────────────────
+--  MÃ LẤY LẠI MẬT KHẨU
+--
+--  Nền cũ giữ mã này trong CacheService của Apps Script. Worker không
+--  có thứ ấy, và đây cũng không phải chỗ nên giữ trong bộ nhớ tạm: mã
+--  lấy lại mật khẩu là thứ mở được một tài khoản, nên nó cần đúng cùng
+--  một sổ với mọi thứ khác — kể cả để đếm số lần nhập sai cho đúng khi
+--  Worker chạy ở hàng trăm nơi cùng lúc.
+--
+--  MỘT TÀI KHOẢN CHỈ CÓ MỘT MÃ SỐNG. Khoá chính là uid, nên xin mã mới
+--  là mã cũ chết ngay — không để lại một chuỗi mã cùng sống mà chỉ cần
+--  đoán trúng một cái là đủ.
+-- ─────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS maLayLai (
+  uid    TEXT PRIMARY KEY,
+  muoi   TEXT NOT NULL,
+  bam    TEXT NOT NULL,
+  hetHan INTEGER NOT NULL,
+  sai    INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE INDEX IF NOT EXISTS ix_malaylai_han ON maLayLai (hetHan);
+
+-- ─────────────────────────────────────────────────────────────
 --  CHẶN NHỊP — ĐẾM SỐ LẦN THỬ TRONG MỘT KHOẢNG THỜI GIAN
 --
 --  Nền cũ đếm bằng CacheService của Apps Script. Worker không có thứ

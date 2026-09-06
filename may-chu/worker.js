@@ -14,10 +14,10 @@
 
    Xong: đăng nhập · đăng xuất · kiểm phiên · đổi mật khẩu · cấp khoá
    kho · trạng thái máy chủ · đồng bộ hồ sơ và cài đặt · đăng ký, mã xác
-   nhận qua email, kích hoạt.
+   nhận qua email, kích hoạt · quên và đặt lại mật khẩu.
 
-   Chưa: quên mật khẩu, tài liệu, chứng cứ hoa hồng, sổ cộng đồng,
-   quyền xem khách, tình huống khách, xuất Sheet, nâng tầng.
+   Chưa: tài liệu, chứng cứ hoa hồng, sổ cộng đồng, quyền xem khách,
+   tình huống khách, xuất Sheet, nâng tầng.
 
    CHƯA PORT THÌ BÁO TO, KHÔNG IM. Danh sách CHUA_PORT ở dưới trả về
    đúng một câu nói rõ việc ấy chưa có ở nền mới. Trả 'Yêu cầu không
@@ -29,6 +29,7 @@
 import { Kho, kiemPhien, kiemMatKhau, bamMoi, muoiMoi, mkQuaDeDoan } from './nen.js';
 import { dongBo } from './dong-bo.js';
 import { dangKy, guiLaiOtp, xacThucOtp, kichHoat } from './dang-ky.js';
+import { quenMatKhau, datLaiMatKhau } from './mat-khau.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -126,7 +127,6 @@ const gon_ = ds => ds.filter((x, i) => x && ds.indexOf(x) === i);
 /* ═══════════════ VIỆC ═══════════════ */
 
 export const CHUA_PORT = {
-  quenMatKhau: 'quên mật khẩu', datLaiMatKhau: 'đặt lại mật khẩu',
   xuatSheet: 'xuất bảng tính',
   napTaiLieu: 'gửi tài liệu', duyetTaiLieu: 'duyệt tài liệu',
   nangTang: 'nâng tầng', kiemDrive: 'kiểm thư mục Drive',
@@ -152,6 +152,11 @@ async function lam(fn, y, env, db) {
   if (fn === 'guiLaiOtp')  return await guiLaiOtp(y, env, db);
   if (fn === 'xacThucOtp') return await xacThucOtp(y, env, db);
   if (fn === 'kichHoat')   return await kichHoat(y, env, db);
+
+  /* Quên mật khẩu cũng không cần phiên, vì người quên mật khẩu thì
+     không mở được phiên nào. */
+  if (fn === 'quenMatKhau')   return await quenMatKhau(y, env, db);
+  if (fn === 'datLaiMatKhau') return await datLaiMatKhau(y, env, db);
 
   if (CHUA_PORT[fn]) return {ok: false, code: 'CHUAPORT',
     error: 'Việc "' + CHUA_PORT[fn] + '" chưa chuyển sang máy chủ mới. ' +
@@ -311,7 +316,73 @@ const traJson = (o, ma) => new Response(JSON.stringify(o), {
   headers: {'Content-Type': 'application/json; charset=utf-8', ...CORS}
 });
 
+/* ═══════════════ DỌN THEO LỊCH ═══════════════
+
+   Bốn bảng ở nền mới chỉ lớn lên nếu không ai dọn: phiên đã hết hạn,
+   dòng chặn nhịp đã qua giờ, mã lấy lại mật khẩu đã chết, và lượt đăng
+   ký bỏ dở. Đây đúng lớp việc mà bản 9.79 dựng GITA_DonDep.gs cho nền
+   cũ; chuyển nền thì phải mang theo, nếu không thì vừa gỡ được một chỗ
+   tắc lại dựng lại đúng chỗ ấy ở nơi mới.
+
+   Ba luật giữ nguyên từ 9.79:
+
+     1. XOÁ THEO LUẬT ĐÃ KHAI, KHÔNG THEO CẢM GIÁC. Bảng nào giữ bao
+        lâu và VÌ SAO chừng ấy — khai ở HAN ngay dưới.
+     2. KHÔNG BAO GIỜ XOÁ THỨ CÒN HIỆU LỰC. Mọi câu đều có điều kiện
+        thời gian; không câu nào xoá theo số lượng.
+     3. NÓI RA ĐÃ XOÁ BAO NHIÊU. Ghi một dòng vào nhật ký — một bộ dọn
+        chạy im lặng là một bộ dọn không ai kiểm được, và ngày nó xoá
+        nhầm thì cũng không ai biết nó đã chạy.
+
+   Đăng ký bỏ dở giữ 30 ngày, nhưng lượt ĐANG CHỜ kích hoạt thì giữ bất
+   kể bao lâu: người ta có thể mở thư cũ và bấm vào. */
+const HAN = [
+  {bang: 'sessions', cau: 'DELETE FROM sessions WHERE exp < ?',
+   dv: () => [Date.now()],
+   vi: 'phiên hết hạn thì không ai dùng lại được nữa'},
+
+  {bang: 'chanNhip', cau: 'DELETE FROM chanNhip WHERE hetHan < ?',
+   dv: () => [Date.now() - 86400e3],
+   vi: 'giữ thêm một ngày sau khi hết hạn để còn tra lại khi có sự cố'},
+
+  {bang: 'maLayLai', cau: 'DELETE FROM maLayLai WHERE hetHan < ?',
+   dv: () => [Date.now() - 3600e3],
+   vi: 'mã chết rồi thì giữ thêm một giờ, đủ để đọc nhật ký một sự cố đang xảy ra'},
+
+  {bang: 'dangKyCho',
+   cau: "DELETE FROM dangKyCho WHERE createdAt < ? AND trangThai <> 'choKichHoat'",
+   dv: () => [new Date(Date.now() - 30 * 86400e3).toISOString()],
+   vi: 'đăng ký bỏ dở quá ba mươi ngày thì người ta không quay lại nữa; ' +
+       'lượt ĐANG CHỜ kích hoạt thì giữ bất kể bao lâu'}
+];
+
+export async function donDep(env) {
+  const db = env.CSDL, ke = [];
+  let tong = 0;
+  for (const h of HAN) {
+    try {
+      const r = await db.prepare(h.cau).bind(...h.dv()).run();
+      const n = (r && r.meta && r.meta.changes) || 0;
+      tong += n;
+      ke.push(h.bang + ' −' + n);
+    } catch (e) {
+      ke.push(h.bang + ': ' + String(e && e.message || e).slice(0, 80));
+    }
+  }
+  /* Ghi SAU khi dọn, để chính dòng này không bị lượt dọn vừa rồi cuốn đi. */
+  try {
+    await Kho.ghiNhatKy(db, {viec: 'DON_DEP', doiTuong: 'tự động',
+      chiTiet: 'xoá ' + tong + ' dòng · ' + ke.join(' · ')});
+  } catch (e) {}
+  return {ok: true, tongXoa: tong, ke};
+}
+
 export default {
+  /* Cloudflare gọi hàm này theo lịch khai ở wrangler.toml. */
+  async scheduled(su, env, ctx) {
+    ctx.waitUntil(donDep(env));
+  },
+
   async fetch(req, env) {
     if (req.method === 'OPTIONS') return new Response(null, {status: 204, headers: CORS});
 
