@@ -54,6 +54,25 @@ function dungD1(db) {
   };
 }
 
+/* ═══════════════ LỚP DỰNG KHO TỆP R2 ═══════════════
+   Bốn hàm Worker thật sự gọi: get · put · delete, và get trả về một đối
+   tượng có .text() và .arrayBuffer(). Không thêm gì nữa — mỗi hàm thừa
+   là một chỗ bộ thử có thể khác bản thật mà không ai biết. */
+function dungR2() {
+  const tep = new Map();
+  return {
+    _tep: tep,
+    async get(k) {
+      if (!tep.has(k)) return null;
+      const b = tep.get(k);
+      return {async text() { return b; }, async arrayBuffer() { return Buffer.from(b); }};
+    },
+    async put(k, v) { tep.set(k, Buffer.isBuffer(v) ? v.toString('utf8') : String(v)); },
+    async delete(k) { tep.delete(k); }
+  };
+}
+
+
 (async () => {
 console.log('\nTHỬ CỬA VÀO MỚI — Worker thật, D1 dựng trên node:sqlite\n');
 
@@ -63,8 +82,10 @@ db.exec(fs.readFileSync('may-chu/csdl.sql', 'utf8'));
 const worker = (await import('../may-chu/worker.js')).default;
 const nen    = await import('../may-chu/nen.js');
 
+const kho = dungR2();
 const env = {
   CSDL: dungD1(db),
+  HOSO: kho,
   GITA_TIEU: 'tieu-thu-nghiem-khong-dung-that',
   GITA_KHOA_KHO: JSON.stringify({
     nen: 'khoa-nen', nghe: 'khoa-nghe', 'nghe-cao': 'khoa-nghe-cao',
@@ -236,17 +257,114 @@ await goi({fn: 'dangNhap', u: 'phuhuynh@gita365.vn', mk: 'MatKhauRieng2026!'});
 bao(db.prepare("SELECT count(*) c FROM chanNhip WHERE khoa LIKE 'dangNhapSai%'").get().c === 0,
   'gõ đúng thì số đếm được xoá — gõ nhầm vài lần không bị phạt sang lần sau');
 
-/* ═══════════════ 8 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
-console.log('\n8 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
-const cp = (await goi({fn: 'dongBo', token: tk, u: 'phuhuynh@gita365.vn'})).than;
-bao(cp.code === 'CHUAPORT', 'việc chưa port trả về mã riêng, không lẫn với "yêu cầu không hợp lệ"',
+/* ═══════════════ 8 · ĐỒNG BỘ HỒ SƠ ═══════════════ */
+console.log('\n8 · ĐỒNG BỘ HỒ SƠ');
+db.prepare("UPDATE users SET maKhachHang = 'GITA-0001' WHERE id = 'U-ph'").run();
+db.prepare("UPDATE users SET maKhachHang = 'GITA-0002' WHERE id = 'U-gv'").run();
+
+const dnP = await goi({fn: 'dangNhap', u: 'phuhuynh@gita365.vn', mk: 'MatKhauRieng2026!'});
+const tkP = dnP.than.token;
+const day1 = await goi({fn: 'dongBo', token: tkP, u: 'phuhuynh@gita365.vn',
+  day: {journal: {'n-1': 'tối nay con tự ngồi vào bàn'}},
+  mocTruong: {'journal.n-1': 1000}});
+bao(day1.than.ok && day1.than.keo.journal['n-1'] === 'tối nay con tự ngồi vào bàn',
+  'đẩy lên rồi kéo về đúng thứ vừa đẩy');
+bao(kho._tep.has('hoso/U-ph.json'),
+  'RUỘT hồ sơ nằm trong KHO TỆP, không nằm trong bảng',
+  'nền cũ nhét cả khối JSON vào MỘT Ô Sheets — trần 50.000 ký tự, trong khi mã tin trần là 512 KB');
+bao(!db.prepare('SELECT * FROM hosoApp WHERE uid = ?').get('U-ph').khoaTep.includes('journal'),
+  'bảng chỉ giữ CHỖ TRỎ và kích cỡ',
+  db.prepare('SELECT khoaTep, coByte FROM hosoApp WHERE uid = ?').get('U-ph').khoaTep);
+
+/* GỘP THEO TỪNG TRƯỜNG: hai máy sửa hai việc khác nhau thì giữ CẢ HAI. */
+const day2 = await goi({fn: 'dongBo', token: tkP, u: 'phuhuynh@gita365.vn',
+  day: {journal: {'n-2': 'ghi từ máy thứ hai'}},
+  mocTruong: {'journal.n-2': 2000}});
+bao(day2.than.keo.journal['n-1'] && day2.than.keo.journal['n-2'],
+  'GỘP THEO TỪNG TRƯỜNG — máy thứ hai đẩy lên không xoá việc máy thứ nhất đã ghi',
+  Object.keys(day2.than.keo.journal).join(', '));
+
+/* Mốc cũ hơn thì KHÔNG thắng — nếu không thì một máy để lâu không mở
+   sẽ ghi đè lên mọi thứ vừa làm trên máy khác. */
+const cu = await goi({fn: 'dongBo', token: tkP, u: 'phuhuynh@gita365.vn',
+  day: {journal: {'n-2': 'bản CŨ từ máy để lâu không mở'}},
+  mocTruong: {'journal.n-2': 500}});
+bao(cu.than.keo.journal['n-2'] === 'ghi từ máy thứ hai',
+  'MỐC CŨ HƠN THÌ KHÔNG THẮNG — máy để lâu không mở không ghi đè việc vừa làm',
+  'và bản mới hơn đi ngược về máy ấy ở phần keo');
+
+/* Nhóm không có trong danh sách thì từ chối, và NÓI RA đã bỏ qua gì. */
+const la = await goi({fn: 'dongBo', token: tkP, u: 'phuhuynh@gita365.vn',
+  day: {nhomBiaRa: {x: 1}}, mocTruong: {'nhomBiaRa.x': 9000}});
+bao(la.than.boQua.indexOf('nhomBiaRa') >= 0,
+  'nhóm ngoài danh sách bị bỏ qua và ĐƯỢC NÓI RA — không im lặng nuốt mất');
+
+/* Trần kích thước. */
+const to = await goi({fn: 'dongBo', token: tkP, u: 'phuhuynh@gita365.vn',
+  day: {journal: {big: 'x'.repeat(600 * 1024)}}, mocTruong: {'journal.big': 9999}});
+bao(to.than.code === 'TOOBIG', 'gói quá 512 KB bị từ chối — không đẩy cả kho lên bằng một lệnh');
+
+/* SAO LƯU TRƯỚC KHI GHI ĐÈ, và giữ đúng mười bản gần nhất. */
+const soSao = db.prepare('SELECT count(*) c FROM hosoAppSaoLuu WHERE uid = ?').get('U-ph').c;
+bao(soSao >= 1, 'có sao lưu trước mỗi lần ghi đè', soSao + ' bản');
+for (let i = 0; i < 14; i++)
+  await goi({fn: 'dongBo', token: tkP, u: 'phuhuynh@gita365.vn',
+    day: {journal: {['lap-' + i]: 'x'}}, mocTruong: {['journal.lap-' + i]: 3000 + i}});
+const sauDon = db.prepare('SELECT count(*) c FROM hosoAppSaoLuu WHERE uid = ?').get('U-ph').c;
+bao(sauDon === 10, 'giữ đúng MƯỜI bản sao lưu gần nhất, dọn ngay chứ không đợi bộ dọn đêm',
+  sauDon + ' bản · ' + [...kho._tep.keys()].filter(k => k.startsWith('hoso-sao/U-ph')).length + ' tệp trong kho');
+bao([...kho._tep.keys()].filter(k => k.startsWith('hoso-sao/U-ph')).length === 10,
+  'và tệp trong kho cũng được xoá theo — không để lại tệp mồ côi tính tiền hằng tháng');
+
+/* ── CẮT CỤM DÙNG CHUNG THEO TỪNG NHÀ ──
+   Đây là chỗ một câu trả lời sai làm rò dữ liệu nhà này sang nhà khác. */
+console.log('');
+const dnCo = await goi({fn: 'dangNhap', u: 'coach@gita365.vn', mk: 'MotChuoiKhacHan2026!'});
+const dbCo = await goi({fn: 'dongBo', token: dnCo.than.token, u: 'coach@gita365.vn',
+  day: {}, caiDat: {
+    khothem: {luc: 5000, du: {'GITA-0001|tl·A1': 'tư liệu nhà 1', 'GITA-0002|tl·B1': 'tư liệu nhà 2'}},
+    ca: {luc: 5000, du: {'ca-1': 'nguyên văn lời gia đình kể, có tên và số điện thoại'}}
+  }});
+bao(dbCo.than.ok && dbCo.than.caiDat.ca, 'Coach (bậc 7) ghi và nhận lại được hồ sơ ca');
+bao(Object.keys(dbCo.than.caiDat.khothem.du).length === 2, 'và nhận CẢ cụm tư liệu của mọi nhà');
+
+const dbPh = await goi({fn: 'dongBo', token: tkP, u: 'phuhuynh@gita365.vn', day: {}});
+bao(!dbPh.than.caiDat.ca,
+  'PHỤ HUYNH KHÔNG NHẬN HỒ SƠ CA — nó mang tên nhà, số điện thoại và nguyên văn lời gia đình kể');
+bao(!dbPh.than.caiDat.phanquyen && !dbPh.than.caiDat.tainguyen,
+  'phụ huynh cũng không nhận bảng phân quyền hay mức dùng tài nguyên của đội ngũ');
+const kt = dbPh.than.caiDat.khothem;
+bao(kt && Object.keys(kt.du).length === 1 && kt.du['GITA-0001|tl·A1'],
+  'CẮT THEO MÃ NHÀ — phụ huynh nhà 1 chỉ nhận tư liệu của nhà 1',
+  'trả nguyên khối là gửi tư liệu nhà khác xuống máy họ, và mở khoá tư liệu ấy cho tất cả');
+
+/* Gia đình chỉ đẩy được LỜI XIN, không ghi được vào cụm tư liệu. */
+await goi({fn: 'dongBo', token: tkP, u: 'phuhuynh@gita365.vn', day: {},
+  caiDat: {khothem: {luc: 9999, du: {'GITA-0001|tl·TU-GHI': 'nhà tự ghi vào kho tư liệu'}},
+           xinthem: {luc: 9999, du: [{nha: 'GITA-0001', xin: 'cho con thêm bài đọc'}]}}});
+const soi = await goi({fn: 'dongBo', token: dnCo.than.token, u: 'coach@gita365.vn', day: {}});
+bao(!soi.than.caiDat.khothem.du['GITA-0001|tl·TU-GHI'],
+  'GIA ĐÌNH KHÔNG GHI ĐƯỢC vào cụm tư liệu — chỉ Tư vấn và Coach mới ghi',
+  'chặn ở máy chủ, không chặn ở màn hình');
+bao(soi.than.caiDat.xinthem && soi.than.caiDat.xinthem.du.length === 1,
+  'nhưng LỜI XIN của gia đình thì lên được — đó là đường duy nhất họ đặt yêu cầu');
+
+/* ═══════════════ 9 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
+console.log('\n9 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
+/* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
+   cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng
+   nó — đúng chuyện vừa xảy ra khi dongBo được port. */
+const conLai = Object.keys((await import('../may-chu/worker.js')).CHUA_PORT || {})[0];
+const cp = (await goi({fn: conLai, token: tk, u: 'phuhuynh@gita365.vn'})).than;
+bao(cp.code === 'CHUAPORT',
+  'việc chưa port trả về mã riêng, không lẫn với "yêu cầu không hợp lệ" — thử "' + conLai + '"',
   cp.error);
 const bia = (await goi({fn: 'mot-viec-khong-co-that', token: tk})).than;
 bao(bia.code !== 'CHUAPORT' && !bia.ok, 'còn việc bịa ra thì vẫn là yêu cầu không hợp lệ',
   bia.error);
 
-/* ═══════════════ 9 · KHÔNG RÒ RA NGOÀI ═══════════════ */
-console.log('\n9 · KHÔNG RÒ RA NGOÀI');
+/* ═══════════════ 10 · KHÔNG RÒ RA NGOÀI ═══════════════ */
+console.log('\n10 · KHÔNG RÒ RA NGOÀI');
 const xau = {prepare(){ throw new Error('SQLITE_ERROR: no such column: users.matKhauThat'); }};
 const rNo = await worker.fetch(new Request('https://gita.test/', {
   method: 'POST', headers: {'Content-Type': 'application/json'},
@@ -263,12 +381,12 @@ bao(jGt.ok && jGt.daNapKhoa === 8 && !JSON.stringify(jGt).includes('khoa-nen'),
   'cửa trạng thái nói ĐÃ NẠP MẤY KHOÁ mà không trả khoá nào',
   'đã nạp ' + jGt.daNapKhoa + ' gói');
 
-/* ═══════════════ 10 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
+/* ═══════════════ 11 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
 
-   Chín mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
+   Mười mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
    Ở đây phá bằng cách truyền một hồ sơ vai KHÁC vào chính hàm tính
    phạm vi — không tráo hàm toàn cục, đúng luật đã ghi ở v9.79. */
-console.log('\n10 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
+console.log('\n11 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
 const pv = (await import('../may-chu/worker.js')).phamViCapPhep;
 bao(pv({role: 'R13', tier: 5}).indexOf('tang5') >= 0 &&
     pv({role: 'R13', tier: 2}).indexOf('tang3') < 0,
@@ -279,6 +397,9 @@ bao(pv({role: 'R99', tier: 5}).join(',') === 'nen',
   'vai chưa tồn tại hôm nay cũng không lọt được');
 
 console.log('');
-if (loi) { console.log('✗ CÒN ' + loi + ' CHỖ CHƯA ĐẠT'); process.exit(1); }
+/* process.exit() KHÔNG đợi stdout ghi xong khi đầu ra là tệp hay ống —
+   dòng cuối cùng biến mất, và người đọc bản ghi thấy một bộ thử dừng
+   giữa chừng không rõ vì sao. Đặt mã thoát rồi để Node tự kết thúc. */
+if (loi) { console.log('✗ CÒN ' + loi + ' CHỖ CHƯA ĐẠT'); process.exitCode = 1; return; }
 console.log('✓ TOÀN BỘ ĐẠT — cửa vào mới chạy đúng');
 })();

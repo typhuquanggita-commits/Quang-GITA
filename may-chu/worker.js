@@ -13,10 +13,9 @@
    ── PHẦN NÀY ĐÃ PORT TỚI ĐÂU ──
 
    Xong: đăng nhập · đăng xuất · kiểm phiên · đổi mật khẩu · cấp khoá
-   kho · trạng thái máy chủ. Đây là phần MỌI lượt gọi khác đều đứng
-   trên, nên nó đi trước.
+   kho · trạng thái máy chủ · đồng bộ hồ sơ và cài đặt.
 
-   Chưa: đăng ký/OTP/kích hoạt, đồng bộ hồ sơ, tài liệu, chứng cứ hoa
+   Chưa: đăng ký/OTP/kích hoạt, quên mật khẩu, tài liệu, chứng cứ hoa
    hồng, sổ cộng đồng, quyền xem khách, tình huống khách, xuất Sheet.
 
    CHƯA PORT THÌ BÁO TO, KHÔNG IM. Danh sách CHUA_PORT ở dưới trả về
@@ -27,6 +26,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { Kho, kiemPhien, kiemMatKhau, bamMoi, muoiMoi } from './nen.js';
+import { dongBo } from './dong-bo.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -123,11 +123,11 @@ const gon_ = ds => ds.filter((x, i) => x && ds.indexOf(x) === i);
 
 /* ═══════════════ VIỆC ═══════════════ */
 
-const CHUA_PORT = {
+export const CHUA_PORT = {
   dangKy: 'đăng ký tài khoản', guiLaiOtp: 'gửi lại mã OTP',
   xacThucOtp: 'xác thực mã OTP', kichHoat: 'kích hoạt tài khoản',
   quenMatKhau: 'quên mật khẩu', datLaiMatKhau: 'đặt lại mật khẩu',
-  dongBo: 'đồng bộ hồ sơ', xuatSheet: 'xuất bảng tính',
+  xuatSheet: 'xuất bảng tính',
   napTaiLieu: 'gửi tài liệu', duyetTaiLieu: 'duyệt tài liệu',
   nangTang: 'nâng tầng', kiemDrive: 'kiểm thư mục Drive',
   kyChungCu: 'ký chứng cứ', xacNhanChungCu: 'xác nhận chứng cứ',
@@ -139,7 +139,7 @@ const CHUA_PORT = {
   kiemBanMoi: 'kiểm bản mới'
 };
 
-const CAN_PHIEN = ['capKhoa', 'doiMatKhau'];
+const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo'];
 
 async function lam(fn, y, env, db) {
   if (fn === 'dangNhap')  return await dangNhap(y, env, db);
@@ -157,6 +157,7 @@ async function lam(fn, y, env, db) {
 
   if (fn === 'doiMatKhau') return await doiMatKhau(y, env, db, hoSo);
   if (fn === 'capKhoa')    return await capKhoa(y, env, db, hoSo);
+  if (fn === 'dongBo')     return await dongBo(y, env, db, hoSo);
   return {ok: false, error: 'Yêu cầu không hợp lệ.'};
 }
 

@@ -228,7 +228,19 @@ function gitaDongBo_(y, hoSo) {
   var ban = { duLieu: JSON.stringify(duLieu), moc: JSON.stringify(moc), suaLuc: new Date().toISOString() };
   try {
     if (cu) {
-      Store.insert('hosoAppSaoLuu', { id: uid + '-' + Date.now(), uid: uid,
+      /* MỐC THỜI GIAN KHÔNG PHẢI KHOÁ. Trước 9.83 dòng này ghép
+         id = uid + '-' + Date.now(). Máy tính bàn đồng bộ theo nhịp
+         máy chứ không theo nhịp người, nên hai lượt rơi vào cùng một
+         mi-li-giây là chuyện thường — và lúc ấy sổ có hai dòng TRÙNG
+         ID.
+
+         Bảng tính không có khoá chính nên nó không kêu; nó nhận cả
+         hai. Rồi bộ dọn 9.79 gom mười bản gần nhất theo uid, gọi
+         Store.xoa với danh sách id, mà xoa xoá MỌI dòng có id nằm
+         trong danh sách — nên xoá bản thứ mười một là xoá luôn bản
+         thứ mười đi cùng nó. Mất một bản sao lưu vì một cái tên trùng.
+         Lỗi này lộ ra khi dựng nền mới, nơi id là khoá chính thật. */
+      Store.insert('hosoAppSaoLuu', { id: Utilities.getUuid(), uid: uid,
         duLieu: cu.duLieu, luc: cu.suaLuc || '' });
       Store.update('hosoApp', uid, ban);
     } else {

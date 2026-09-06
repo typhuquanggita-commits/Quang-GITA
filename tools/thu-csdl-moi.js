@@ -59,8 +59,16 @@ bao(bang.length >= 10, 'dựng đủ bảng', bang.length + ' bảng: ' + bang.j
 bao(chiMuc.length >= 14, 'dựng đủ chỉ mục', chiMuc.length + ' chỉ mục');
 
 /* MỌI BẢNG CÓ TRA CỨU ĐỀU PHẢI CÓ ÍT NHẤT MỘT CHỈ MỤC.
-   soDem tra bằng khoá chính nên không cần; các bảng khác thì cần. */
-const KHONG_CAN = ['soDem'];
+
+   Hai bảng được tha, và mỗi bảng khai LÝ DO ngay ở đây — tha mà không
+   khai thì lần sau người ta thêm một tên vào danh sách này cho bộ thử
+   xanh, và cái danh sách trở thành chỗ giấu lỗi.
+
+   soDem  — tra đúng bằng khoá chính, không có đường tra nào khác.
+   caiDat — nhiều nhất BẢY dòng (một dòng mỗi cụm) và mỗi lượt đồng bộ
+            đọc trọn cả bảng. Quét bảy dòng rẻ hơn đi qua chỉ mục; thêm
+            một chỉ mục ở đây là thêm một thứ phải giữ mà không ai dùng. */
+const KHONG_CAN = ['soDem', 'caiDat'];
 const thieuChiMuc = bang.filter(b =>
   KHONG_CAN.indexOf(b) < 0 && !chiMuc.some(c => c.tbl_name === b));
 bao(!thieuChiMuc.length, 'không bảng nào có đường tra cứu mà thiếu chỉ mục',
@@ -167,7 +175,16 @@ const DUONG = [
 
   ['sổ tài liệu đang chờ duyệt',
    'GITA_TaiLieu.gs',
-   "SELECT * FROM tailieu WHERE trangThai = 'choDuyet' ORDER BY luc LIMIT 50", []]
+   "SELECT * FROM tailieu WHERE trangThai = 'choDuyet' ORDER BY luc LIMIT 50", []],
+
+  ['đọc cả bảng cài đặt — mỗi lượt đồng bộ',
+   'may-chu/dong-bo.js · docCaiDat',
+   'SELECT cum, du, luc, boi FROM caiDat', [],
+   'bảng có nhiều nhất BẢY dòng, một dòng mỗi cụm, và lượt nào cũng cần cả bảy'],
+
+  ['tìm dòng chặn nhịp đã quá hạn để dọn',
+   'may-chu/csdl.sql · chanNhip',
+   'SELECT khoa FROM chanNhip WHERE hetHan < ? LIMIT 1000', [Date.now()]]
 ];
 
 let soQuet = 0;

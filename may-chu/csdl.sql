@@ -276,6 +276,26 @@ CREATE INDEX IF NOT EXISTS ix_tailieu_tt ON tailieu (trangThai, luc);
 --  bằng một câu lệnh chứ không phải đọc–sửa–ghi ba lượt.
 -- ─────────────────────────────────────────────────────────────
 -- ─────────────────────────────────────────────────────────────
+--  CÀI ĐẶT CỦA CHỦ HỆ — BỐ CỤC, CHỮ HIỂN THỊ, PHÂN QUYỀN, HỒ SƠ CA
+--
+--  Bảy cụm dùng chung cho cả hệ, đồng bộ theo CẢ CỤM: ai sửa sau thì
+--  bản đó thắng. Không gộp theo từng trường như hồ sơ cá nhân, vì đây
+--  là bố cục và luật — nửa bố cục cũ ghép nửa bố cục mới thì ra một bố
+--  cục chưa ai từng thiết kế.
+--
+--  MỘT TRẦN CỦA NỀN CŨ BỎ ĐƯỢC Ở ĐÂY: Script Properties chỉ nhận 9 KB
+--  MỖI GIÁ TRỊ, nên cụm hồ sơ ca — thứ cộng dồn theo thời gian — chắc
+--  chắn vượt sớm, và nền cũ phải tách mỗi cụm một khoá riêng rồi vẫn
+--  phải từ chối cụm quá lớn. SQLite không có trần ấy.
+-- ─────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS caiDat (
+  cum  TEXT PRIMARY KEY,      -- sapxep · noidung · phanquyen · khothem · xinthem · ca · tainguyen
+  du   TEXT NOT NULL,         -- khối JSON của cụm
+  luc  INTEGER NOT NULL,      -- mốc mili-giây của bản đang giữ
+  boi  TEXT                   -- ai ghi bản này
+);
+
+-- ─────────────────────────────────────────────────────────────
 --  CHẶN NHỊP — ĐẾM SỐ LẦN THỬ TRONG MỘT KHOẢNG THỜI GIAN
 --
 --  Nền cũ đếm bằng CacheService của Apps Script. Worker không có thứ
