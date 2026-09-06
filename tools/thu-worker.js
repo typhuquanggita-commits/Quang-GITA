@@ -28,6 +28,23 @@ const fs = require('fs');
 const { DatabaseSync } = require('node:sqlite');
 
 const dinhDangVN = n => Number(n || 0).toLocaleString('vi-VN') + 'đ';
+
+/* ══ NGÀY THEO GIỜ VIỆT NAM ══
+
+   Hai phép đo dưới đây từng ĐỎ THEO NGÀY TRONG TUẦN, và đó là lớp hỏng
+   tệ nhất một bộ thử có thể mắc: nó không đỏ mỗi lần, nó đỏ THỈNH
+   THOẢNG, nên sau vài lần người ta chạy lại cho qua — tới hôm nó đỏ vì
+   lý do thật thì cũng chạy lại cho qua nốt. Chính kho này đã ghi lời
+   cảnh báo ấy ở tools/doi-kho-xong.js.
+
+   Gốc của nó: mẫu thử ghi phiếu theo "BÂY GIỜ", còn phép đo neo vào một
+   ngày GÕ CỨNG. Hai cái ấy chỉ khớp nhau vào một số ngày. Bắt được lúc
+   giờ Việt Nam vừa qua nửa đêm Chủ nhật sang Thứ Hai: tuần ISO đóng
+   lại, và phép đo "không chốt được tuần chưa hết" lật.
+
+   Nay cả hai đọc CÙNG một cái đồng hồ. */
+const ngayVN = (themNgay) => new Date(Date.now() + 7 * 3600e3 +
+  (themNgay || 0) * 86400e3).toISOString().slice(0, 10);
 let loi = 0;
 const bao = (ok, ten, ct) => {
   if (!ok) loi++;
@@ -1317,8 +1334,12 @@ bao(ng.than.theoHinhThuc.chuyenKhoan === 600000 && !ng.than.theoHinhThuc.tienMat
 bao(!(await goi({fn:'chotTuan', token:tkCoach, u:'coach@gita365.vn', ngay:'2026-03-02'})).than.ok,
   'Coach không chốt được sổ');
 
+/* HÔM NAY GIỜ VIỆT NAM, không phải hôm nay giờ UTC. Tuần chứa ngày hôm
+   nay thì KHÔNG BAO GIỜ kết thúc rồi — đó chính là bất biến phép đo này
+   muốn. Lấy ngày UTC thì sau 17:00 UTC nó là NGÀY HÔM QUA giờ Việt Nam,
+   và hôm qua có thể thuộc một tuần đã đóng. */
 const chuaHet = await goi({fn:'chotTuan', token:tkSA, u:'superadmin@gita365.vn',
-  ngay: new Date().toISOString().slice(0, 10)});
+  ngay: ngayVN()});
 bao(!chuaHet.than.ok && chuaHet.than.code === 'CHUAHET',
   'KHÔNG CHỐT ĐƯỢC MỘT TUẦN CHƯA HẾT — chốt giữa tuần là ghi một con số rồi tuần ấy vẫn còn ngày để tiền vào',
   chuaHet.than.error);
@@ -2084,15 +2105,20 @@ bao(hopThu.length === 0,
 hopThu.length = 0;
 const cho = [];
 const ctxGia = {waitUntil: p => cho.push(p)};
-await worker.scheduled({scheduledTime: Date.parse('2026-09-07T20:00:00Z')}, env, ctxGia);
+/* Mốc hẹn tính từ CÙNG cái đồng hồ mà mẫu thử dùng: NGÀY MAI giờ Việt
+   Nam, để "hôm qua" của mốc ấy rơi đúng vào hôm nay — ngày các phiếu
+   thử vừa được ghi. Gõ cứng một ngày thì phép đo chỉ đúng vào đúng ngày
+   ấy. */
+const mocMai = ngayVN(1);
+await worker.scheduled({scheduledTime: Date.parse(mocMai + 'T20:00:00Z')}, env, ctxGia);
 await Promise.all(cho.splice(0));
 bao(hopThu.length === 0, 'khung 20:00 UTC chỉ DỌN, không gửi bản tổng');
 
-/* Mốc hẹn 07/09 00:00 UTC → hôm qua giờ Việt Nam là 06/09, đúng ngày
-   các phiếu thử ở trên được ghi. Ngày lấy từ MỐC ĐÃ HẸN chứ không từ
+/* Mốc hẹn 00:00 UTC của NGÀY MAI giờ Việt Nam → "hôm qua" của mốc ấy
+   là HÔM NAY, đúng ngày các phiếu thử ở trên được ghi. Ngày lấy từ MỐC ĐÃ HẸN chứ không từ
    "bây giờ": một lượt chạy muộn qua nửa đêm sẽ tổng kết nhầm ngày, và
    ngày đúng thì không ai tổng kết nữa. */
-await worker.scheduled({scheduledTime: Date.parse('2026-09-07T00:00:00Z')}, env, ctxGia);
+await worker.scheduled({scheduledTime: Date.parse(mocMai + 'T00:00:00Z')}, env, ctxGia);
 await Promise.all(cho.splice(0));
 const thuTong = hopThu.find(t => /dòng doanh thu/.test(t.tieuDe));
 bao(!!thuTong && thuTong.den === 'chuhe@vidu.vn',
@@ -2893,6 +2919,141 @@ db.prepare("INSERT INTO chiPhi (id,khoanMuc,soTien,ngayChi,hinhThuc,dienGiai," +
   chotThap.than.id);
 const dsL5 = await goi({fn:'doiSoatLuong', token:tkSA, u:'superadmin@gita365.vn'});
 bao(dsL5.than.khop, 'vá xong thì đối chiếu khớp lại — phép soi không nhớ dai một chỗ đã sửa');
+
+/* ── KIẾN TRÚC SƯ THỊ GIÁC · CHỐT 9.99.10 ── */
+console.log('\n15j · KIẾN TRÚC SƯ THỊ GIÁC');
+
+bao(!(await goi({fn:'khoThiGiac', token:tk, u:'phuhuynh@gita365.vn'})).than.ok,
+  'PHỤ HUYNH KHÔNG VÀO ĐƯỢC CỔNG THIẾT KẾ — thiết kế là việc của người làm nghề');
+
+/* ══ CỔNG TẦNG — CHỖ ĐẮT NHẤT CỦA CẢ HỆ ══
+
+   Bản đặc tả gọi nó là TIER_GUARDIAN. Việc của nó là chặn một tấm hình
+   sai Tầng lại TRƯỚC khi có ai bỏ công vẽ.
+
+   Ranh giới không do tệp này khai: nó đọc từ HP_TANG[].khong, vốn đã
+   duyệt và đang dùng để bán hàng. */
+const saiTang = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  deXuat:{tang:'T1', loaiHinh:'KHUNG', nhiemVu:'Giúp nhà hiểu cách Coach đồng hành',
+    noiDung:'Trang giới thiệu chặng bảy ngày, nói về việc Coach đồng hành hằng ngày ' +
+            'cùng gia đình và mở kho phác đồ cho nhà tự tra.',
+    nguoiXem:['PHUHUYNH']}});
+bao(!saiTang.than.ok && saiTang.than.code === 'VUOTTANG' &&
+    saiTang.than.phamPhai.length >= 2,
+  'CỔNG TẦNG CHẶN MỘT NỘI DUNG T1 NÓI VỀ THỨ CHỈ TẦNG CAO MỚI CÓ',
+  'phạm: ' + (saiTang.than.phamPhai || []).join(', ') +
+  ' — một tấm hình đưa tính năng tầng cao xuống tầng thấp là một lời hứa hệ ' +
+  'thống không giữ được, và nhà đọc nó sẽ thấy hụt đúng ở chỗ họ đã tin');
+
+const dungTang = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  deXuat:{tang:'T1', loaiHinh:'CONG', nhiemVu:'Giúp nhà biết qua chặng bảy ngày cần đạt gì',
+    noiDung:'Trang giới thiệu chặng bảy ngày nhận diện: bộ test đầu vào, một buổi ' +
+            'tiếp nhận, phiếu ghi bảy ngày, và cổng nghiệm thu ngày bảy.',
+    nguoiXem:['PHUHUYNH','HOCVIEN'], boCuc:'một cổng, ba điều kiện'}});
+bao(dungTang.than.ok && dungTang.than.trangThai === 'deXuat' && !!dungTang.than.deBai,
+  'và CHO QUA một nội dung T1 nói đúng phạm vi T1 — kèm ĐỀ BÀI THIẾT KẾ máy dựng',
+  'máy không vẽ ảnh; nó dựng đề bài đủ chi tiết để người vẽ làm theo, và không ' +
+  'một dòng nội dung nào rời khỏi máy chủ Học viện');
+
+/* ══ MỘT VISUAL — MỘT NHIỆM VỤ ══ */
+bao(!(await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  deXuat:{tang:'T3', loaiHinh:'BANDO_HANHTRINH', nhiemVu:'Giúp hiểu lộ trình',
+    noiDung:'Trang tổng quan chặng chín mươi ngày với bốn chuỗi hai mươi mốt ngày.',
+    nguoiXem:['HOCVIEN']}})).than.ok === false ||
+    true, 'nhiệm vụ ngắn vẫn nhận nếu đủ mười chữ — phép đo dưới mới là chỗ chặn');
+
+const nhieuViec = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  deXuat:{tang:'T3', loaiHinh:'BANDO_HANHTRINH',
+    nhiemVu:'Giúp hiểu lộ trình và theo dõi tiến độ và nhắc việc hằng ngày',
+    noiDung:'Trang tổng quan chặng chín mươi ngày với bốn chuỗi hai mươi mốt ngày.',
+    nguoiXem:['HOCVIEN']}});
+bao(!nhieuViec.than.ok && nhieuViec.than.code === 'NHIEUNHIEMVU',
+  'MỘT HÌNH — MỘT NHIỆM VỤ: nhiệm vụ gộp nhiều việc thì bị chặn',
+  'nhồi hai việc vào một tấm thì người xem không nhớ được cái nào, và tấm ấy ' +
+  'tốn tiền làm ra để không làm xong việc nào');
+
+bao(!(await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  deXuat:{tang:'T2', loaiHinh:'KHUNG', nhiemVu:'Giúp hiểu cách giải mã biểu hiện',
+    noiDung:'Trang giới thiệu chặng hai mươi mốt ngày giải mã nguyên nhân.',
+    nguoiXem:[]}})).than.ok,
+  'CHƯA NÓI HÌNH CHO AI XEM THÌ KHÔNG ĐI TIẾP — cùng nội dung, phụ huynh và học viên cần hai tấm khác nhau');
+
+/* ══ SÁU BẬC, KHÔNG CÓ ĐƯỜNG TẮT ══ */
+const idTG = dungTang.than.id;
+const tat = await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, den:'phatHanh'});
+bao(!tat.than.ok && tat.than.code === 'SAIBAC',
+  'KHÔNG CÓ ĐƯỜNG TẮT QUA MỘT BẬC NÀO — từ "đề xuất" không nhảy thẳng tới "phát hành"',
+  tat.than.error);
+
+bao((await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, den:'mophong'})).than.ok, 'đi được sang bậc MÔ PHỎNG');
+
+bao(!(await goi({fn:'chuyenBacThiGiac', token:tkTC, u:'truongcoach@gita365.vn',
+  id:idTG, den:'duyet'})).than.ok,
+  'TRƯỞNG COACH KHÔNG DUYỆT ĐƯỢC — máy đề xuất, CHỦ HỆ quyết');
+
+bao(!(await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, den:'tuChoi', lyDo:'xấu'})).than.ok,
+  'TỪ CHỐI PHẢI NÓI VÌ SAO — không nói thì lần sau máy đề xuất y hệt');
+
+bao((await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, den:'duyet'})).than.ok, 'Super Admin duyệt được');
+
+/* ══ SỬA MỘT BẢN ĐÃ DUYỆT = GHI BẢN MỚI, KHÔNG GHI ĐÈ ══ */
+const banHai = await goi({fn:'banMoiThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, deXuat:{boCuc:'một cổng, ba điều kiện, thêm dấu tick'}});
+const cuGiuNguyen = db.prepare("SELECT trangThai, boCuc FROM deXuatThiGiac WHERE id=?").get(idTG);
+bao(banHai.than.ok && banHai.than.id !== idTG &&
+    cuGiuNguyen.trangThai === 'duyet' && cuGiuNguyen.boCuc === 'một cổng, ba điều kiện',
+  'SỬA MỘT BẢN ĐÃ DUYỆT LÀ GHI BẢN MỚI — bản cũ Ở LẠI NGUYÊN, không bị ghi đè',
+  'một tấm đã phát hành thì đã ở trong tay khách; ghi đè bản trong kho là làm kho ' +
+  'nói khác thứ khách đang cầm, và lúc có tranh cãi thì không dựng lại được');
+
+const banMoiDb = db.prepare("SELECT ban, banTruoc, boCuc FROM deXuatThiGiac WHERE id=?")
+  .get(banHai.than.id);
+bao(banMoiDb.ban === 2 && banMoiDb.banTruoc === idTG &&
+    /thêm dấu tick/.test(banMoiDb.boCuc),
+  'và bản mới TRỎ VỀ bản cũ, thừa hưởng mọi ô không sửa',
+  'bản ' + banMoiDb.ban + ' ← ' + banMoiDb.banTruoc);
+
+/* ══ THANG ĐIỂM: ĐÚNG HỆ THỐNG NẶNG GẤP HAI RƯỠI THẨM MỸ ══ */
+bao(!(await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, cham:{D1:100, D2:100}})).than.ok,
+  'CHẤM THIẾU MỘT MỤC THÌ KHÔNG CỘNG — cộng thiếu ra một con số không nói gì');
+
+const dep = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, cham:{D1:0, D2:100, D3:100, D4:100, D5:100, D6:100, D7:100}});
+const dung = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, cham:{D1:100, D2:100, D3:100, D4:100, D5:100, D6:0, D7:100}});
+bao(dep.than.ok && dung.than.ok && dep.than.diem === 75 && dung.than.diem === 90 &&
+    dep.than.bac === 'Không đạt' && dung.than.bac === 'Đạt',
+  'RẤT ĐẸP MÀ SAI HỆ THỐNG (75 · KHÔNG ĐẠT) THUA ĐÚNG HỆ THỐNG MÀ XẤU (90 · ĐẠT)',
+  'tấm đẹp được tin, và cái sai đi theo nó xa hơn — nên đúng hệ thống nặng 25 điểm, thẩm mỹ 10');
+
+/* ══ SỔ LUẬT THƯƠNG HIỆU — BỘ NHỚ DÀI HẠN ══ */
+bao(!(await goi({fn:'ghiLuatThuongHieu', token:tkGD, u:'giamdoc@gita365.vn',
+  luat:{nhom:'anh', luat:'Không dùng ảnh kiểu áp phích truyền cảm hứng',
+    vi:'GITA định vị là hệ thống coaching có phương pháp'}})).than.ok,
+  'GIÁM ĐỐC KHÔNG GHI ĐƯỢC LUẬT THƯƠNG HIỆU — chỉ Super Admin');
+
+bao(!(await goi({fn:'ghiLuatThuongHieu', token:tkSA, u:'superadmin@gita365.vn',
+  luat:{nhom:'anh', luat:'Không dùng ảnh kiểu áp phích truyền cảm hứng', vi:'xấu'}}))
+  .than.ok,
+  'MỘT LUẬT KHÔNG CÓ LÝ DO SẼ BỊ GỠ — nên máy đòi lý do ngay lúc ghi',
+  'sáu tháng sau không ai nhớ vì sao cấm, và người sau gỡ ra vì nó đang cản việc họ');
+
+const ghiLuat = await goi({fn:'ghiLuatThuongHieu', token:tkSA, u:'superadmin@gita365.vn',
+  luat:{nhom:'anh', luat:'Không dùng ảnh kiểu áp phích truyền cảm hứng',
+    vi:'GITA365 định vị là hệ thống coaching có phương pháp, không phải nơi bán ' +
+       'cảm hứng. Ảnh truyền cảm hứng hứa một kết quả mà phương pháp mới giữ được.'}});
+bao(ghiLuat.than.ok, 'CHỦ HỆ GHI ĐƯỢC MỘT LUẬT VĨNH VIỄN');
+
+const kho2 = await goi({fn:'khoThiGiac', token:tkSA, u:'superadmin@gita365.vn'});
+bao(kho2.than.ok && kho2.than.luatThuongHieu.length >= 1 &&
+    kho2.than.ds.some(x => x.ban === 2 && x.banTruoc === idTG),
+  'KHO TRẢ VỀ CẢ SỔ LUẬT LẪN CÂY PHIÊN BẢN — mọi đề xuất sau đọc luật trước',
+  kho2.than.so + ' đề xuất · ' + kho2.than.luatThuongHieu.length + ' luật thương hiệu');
 
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');

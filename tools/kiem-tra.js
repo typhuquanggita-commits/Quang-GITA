@@ -10205,6 +10205,84 @@ const { chromium } = require(PW);
           ' · màn hình ' + (ra.tinBacMan || []).join('/'));
   }
 
+  /* ══════════════════ 75. CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC ══════════════════
+
+     Cổng ấy chặn một tấm hình sai Tầng lại TRƯỚC khi ai bỏ công vẽ. Nó
+     chặn theo một danh sách khái niệm cấm theo Tầng, giữ ở máy chủ —
+     vì máy chủ không đọc được kho đã mã hoá.
+
+     Danh sách ấy là BẢN CHÉP của HP_TANG[].khong. Chú giải ở đầu
+     may-chu/kien-truc-thi-giac.js hứa rằng mục 71 đối chiếu hai bản mỗi
+     lần chạy. Phép này là lời hứa ấy — dựng ngay cùng lượt, chứ không
+     để nó thành một lời hứa suông như chú giải của tai-chinh.js 9.93 và
+     của data.tien-rung.js.
+
+     Đối chiếu theo Ý chứ không theo TỪNG CHỮ: HP_TANG[].khong viết
+     thành câu cho người đọc ("Không có Coach đồng hành hằng ngày ở chặng
+     này"), còn máy chủ giữ khoá ngắn để dò ("coach đồng hành"). Nên
+     luật là: MỖI KHOÁ máy chủ dùng phải TÌM THẤY trong câu khai của
+     chính Tầng ấy. Khoá nào không tìm thấy là khoá tự nghĩ ra, và nó
+     chặn theo một ranh giới không ai duyệt. */
+  let mTGSoLoai = 0;
+  {
+    const ra = {};
+    const mTG = await import('../may-chu/kien-truc-thi-giac.js');
+    mTGSoLoai = mTG.LOAI_HINH.length;
+    const kho = await p.evaluate(() => {
+      const ra = {};
+      for (const t of (window.G.HP_TANG || []))
+        ra[t.tang] = {khong: (t.khong || []).join(' · '), ten: t.ten};
+      ra._soTangHP = (window.G.HP_TANG || []).length;
+      ra._soTangTG = (window.G.TG_TANG || []).length;
+      ra._loai = (window.G.TG_LOAIHINH || []).map(x => x.ma);
+      ra._thieuNhiemVu = (window.G.TG_LOAIHINH || [])
+        .filter(x => !x.nhiemVu || x.nhiemVu.length < 10).map(x => x.ma);
+      return ra;
+    });
+
+    const boDauJs = x => String(x || '').toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+
+    const laKhoa = [];
+    for (const t of Object.keys(mTG.CAM_THEO_TANG)) {
+      const khai = boDauJs((kho[t] || {}).khong || '');
+      for (const k of mTG.CAM_THEO_TANG[t])
+        if (khai.indexOf(boDauJs(k)) < 0) laKhoa.push(t + ' · "' + k + '"');
+    }
+    ra.tgKhoaLa = laKhoa;
+    ra.tgNeoKhop = laKhoa.length === 0;
+    ra.tgDuTang = kho._soTangHP === 5 && kho._soTangTG === 5;
+    /* Mọi loại hình máy chủ nhận phải có mặt trong kho, và mỗi loại phải
+       khai đúng MỘT nhiệm vụ — đó là luật vàng của cả hệ. */
+    ra.tgLoaiThieu = mTG.LOAI_HINH.filter(x => (kho._loai || []).indexOf(x) < 0);
+    ra.tgLoaiDu = ra.tgLoaiThieu.length === 0 &&
+      (kho._thieuNhiemVu || []).length === 0;
+    ra.tgThieuNhiemVu = kho._thieuNhiemVu || [];
+
+    /* PHÉP TỰ CHỨNG MINH CHƯA CÂM: gọi thẳng cổng Tầng với một nội dung
+       T1 nói về thứ chỉ tầng cao mới có, và đòi nó chặn. Đọc chú giải
+       thì chú giải nói gì cũng được. */
+    const chan = mTG.soatTang('T1',
+      'Trang giới thiệu chặng bảy ngày, có Coach đồng hành hằng ngày và mở phác đồ.');
+    const cho = mTG.soatTang('T1',
+      'Trang giới thiệu chặng bảy ngày: bộ test đầu vào và cổng nghiệm thu ngày bảy.');
+    ra.tgChanThat = chan.qua === false && chan.ma === 'VUOTTANG' &&
+      (chan.phamPhai || []).length >= 2 && cho.qua === true;
+
+  bao(ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat,
+    'CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC CHẶN THEO RANH GIỚI ĐÃ DUYỆT, KHÔNG THEO MỘT DANH SÁCH TỰ NGHĨ RA. Bản đặc tả của chủ hệ đề nghị dựng "Boundary Definition" cho từng Tầng với ô Allowed Concepts và ô Do NOT introduce. Hai ô ấy ĐÃ TỒN TẠI trong kho từ lâu và đang được dùng để bán hàng: HP_TANG[].gom và HP_TANG[].khong. Chép chúng sang một tệp mới là dựng bản thứ hai của một sự thật, và bản thứ hai không ai sửa khi bảng chặng đổi — tới lúc ấy máy chặn thiết kế theo một ranh giới đã cũ, im lặng. Máy chủ không đọc được kho đã mã hoá nên buộc phải giữ một bản chép TỐI THIỂU để dò, và phép đo này đối chiếu bản chép ấy với bản gốc THEO Ý chứ không theo từng chữ: kho viết thành câu cho người đọc, máy chủ giữ khoá ngắn để dò, nên luật là mỗi khoá máy chủ dùng phải TÌM THẤY trong câu khai của chính Tầng ấy. Khoá nào không tìm thấy là khoá tự nghĩ ra, và nó chặn thiết kế theo một ranh giới chưa ai duyệt — đúng cái mà luật "AI không được tự suy diễn" sinh ra để cấm. Phép đo cũng GỌI THẲNG cổng ấy với một nội dung T1 nói về Coach đồng hành và phác đồ rồi đòi nó chặn, vì đọc chú giải thì chú giải nói gì cũng được. Và mười hai loại hình phải có mặt đủ ở cả hai bên, mỗi loại khai đúng MỘT nhiệm vụ — nhồi hai việc vào một tấm thì người xem không nhớ được cái nào',
+    ra.tgNeoKhop
+      ? '5 chặng · mọi khoá dò đều tìm thấy trong ô "không" của chính chặng ấy · ' +
+        mTGSoLoai + ' loại hình đều có đúng một nhiệm vụ · cổng chặn thật'
+      : [ra.tgKhoaLa.length ? 'KHOÁ TỰ NGHĨ RA: ' + ra.tgKhoaLa.join(' · ') : '',
+         !ra.tgDuTang ? 'thiếu chặng ở một trong hai bên' : '',
+         (ra.tgLoaiThieu || []).length ? 'loại hình kho thiếu: ' + ra.tgLoaiThieu.join(', ') : '',
+         (ra.tgThieuNhiemVu || []).length ? 'loại hình không khai nhiệm vụ: ' +
+           ra.tgThieuNhiemVu.join(', ') : '',
+         !ra.tgChanThat ? 'GỌI THẲNG CỔNG THÌ NÓ KHÔNG CHẶN' : ''
+        ].filter(Boolean).join(' · '));
+  }
+
   /* ══════════════════ 74. SỔ CHỜ CHỦ HỆ CÓ MỤC KHÔNG ══════════════════
 
      G.TR_CHUA là danh sách những ô chủ hệ phải tự điền — học phí, hệ

@@ -83,6 +83,29 @@ function tachTu(s) {
    DANH SÁCH CẤM — ba lý do, mỗi tên phải có một
    ═══════════════════════════════════════════════════════════════ */
 G.TL_CAM = {
+  /* ── HIẾN PHÁP THỊ GIÁC: SỔ TAY CỦA MỘT PHÒNG, KHÔNG PHẢI TRI THỨC CHUNG ──
+
+     Mười một kho TG_ là luật thiết kế của Kiến trúc sư thị giác, và
+     chúng có màn riêng để tra. Để chúng trong chỉ mục hỏi-đáp chung thì
+     mỗi câu hỏi coaching phải cạnh tranh chỗ với mười một kho nói về bố
+     cục và bảng màu.
+
+     Đo được ngay lúc thêm: bộ đo trợ lý tụt phần CÓ MẶT từ 32 xuống
+     31/40 — đúng một kho bị đẩy ra khỏi danh sách mười hai chỗ. Chốt
+     CÓ MẶT dựng ở 9.99.7 bắt được, và cách sửa đúng là gỡ chúng khỏi
+     chỉ mục chung chứ không phải hạ mốc xuống cho vừa. */
+  TG_MA_VB:     'rieng · hiến pháp thị giác, tra ở màn Kiến trúc sư thị giác',
+  TG_TANG:      'rieng · lớp thị giác của từng chặng, có màn riêng',
+  TG_NGUOI:     'rieng · hồ sơ người xem của phòng thiết kế, có màn riêng',
+  TG_LOAIHINH:  'rieng · mười hai loại hình chuẩn, có màn riêng',
+  TG_CAM:       'rieng · mười điều cấm khi thiết kế, có màn riêng',
+  TG_DIEM:      'rieng · thang điểm chấm hình, có màn riêng',
+  TG_BAC:       'rieng · bậc điểm của thang chấm hình, có màn riêng',
+  TG_TRANGTHAI: 'rieng · sáu bậc duyệt thiết kế, có màn riêng',
+  TG_LENH:      'rieng · bảng lệnh của chủ hệ ở màn thiết kế',
+  TG_CHOCHU:    'rieng · chỗ máy dừng lại ở phần thiết kế, có màn riêng',
+  TG_LUAT_GOC:  'rieng · luật gốc của phòng thiết kế, có màn riêng',
+
   /* ── Dữ liệu người thật ── */
   FAMILIES:      'ca-nhan · hồ sơ mười nhà: tên học viên, tên bố mẹ, tên Coach',
   NHA_TOI:       'ca-nhan · bản rút hồ sơ nhà mình, vẫn là người thật',

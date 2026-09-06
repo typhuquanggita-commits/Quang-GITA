@@ -712,6 +712,75 @@ CREATE TABLE IF NOT EXISTS bangLuong (
 
 -- Một người một kỳ đúng một dòng.
 CREATE UNIQUE INDEX IF NOT EXISTS ix_bl_mot ON bangLuong (ky, username);
+
+-- ═════════════════════════════════════════════════════════════
+--  KIẾN TRÚC SƯ THỊ GIÁC — ĐỀ XUẤT THIẾT KẾ
+--
+--  Sáu trạng thái, và KHÔNG BAO GIỜ GHI ĐÈ. Sửa một bản đã duyệt là
+--  ghi một BẢN MỚI trỏ về bản cũ qua cột `banTruoc`.
+--
+--  Vì sao không ghi đè: một tấm hình đã phát hành ra ngoài thì nó đã ở
+--  trong tay khách. Ghi đè bản trong kho là làm cho kho nói khác thứ
+--  khách đang cầm, và tới lúc có tranh cãi thì không ai dựng lại được
+--  hình mà khách nhìn thấy.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS deXuatThiGiac (
+  id          TEXT PRIMARY KEY,
+  ban         INTEGER NOT NULL DEFAULT 1,
+  banTruoc    TEXT,               -- bản này sửa từ bản nào
+  noiDung     TEXT NOT NULL,      -- nội dung cần hình, người đăng mô tả
+  tang        TEXT NOT NULL,      -- T1…T5
+  nguoiXem    TEXT NOT NULL,      -- JSON danh sách mã người xem
+  loaiHinh    TEXT NOT NULL,      -- mã trong TG_LOAI
+  nhiemVu     TEXT NOT NULL,      -- MỘT nhiệm vụ, lấy từ TG_LOAI
+  boCuc       TEXT,
+  viTri       TEXT,               -- chỗ đặt trên giao diện
+  deBai       TEXT,               -- đề bài thiết kế đầy đủ, máy dựng
+  -- Kết quả của Tier Guardian tại lúc đề xuất. Giữ lại chứ không tính
+  -- lại: ranh giới Tầng đổi thì đề xuất cũ vẫn phải giải thích được là
+  -- nó đã qua cổng nào.
+  soatTang    TEXT,
+  diem        INTEGER,
+  bacDiem     TEXT,
+  chamChiTiet TEXT,               -- JSON điểm từng mục
+  trangThai   TEXT NOT NULL DEFAULT 'nhap',
+  nguoiDe     TEXT NOT NULL,
+  deLuc       TEXT NOT NULL,
+  nguoiDuyet  TEXT,
+  duyetLuc    TEXT,
+  lyDo        TEXT,               -- BẮT BUỘC khi từ chối
+  tepHinh     TEXT,               -- đường dẫn ảnh cuối, khi đã có
+  seoTen      TEXT,
+  seoAlt      TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_dxtg_tt  ON deXuatThiGiac (trangThai, deLuc DESC);
+CREATE INDEX IF NOT EXISTS ix_dxtg_tang ON deXuatThiGiac (tang, trangThai);
+CREATE INDEX IF NOT EXISTS ix_dxtg_ban ON deXuatThiGiac (banTruoc);
+
+-- ═════════════════════════════════════════════════════════════
+--  SỔ QUYẾT ĐỊNH THƯƠNG HIỆU — BỘ NHỚ DÀI HẠN
+--
+--  Đây là chỗ máy HỌC từ chủ hệ. Chủ hệ từ chối một hướng và nói vì
+--  sao; câu ấy ở lại, và mọi đề xuất sau đọc nó trước.
+--
+--  Không có sổ này thì mỗi lượt thiết kế bắt đầu lại từ số không, và
+--  chủ hệ phải nói lại cùng một câu tới lần thứ mười thì thôi dùng.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS luatThuongHieu (
+  id        TEXT PRIMARY KEY,
+  nhom      TEXT NOT NULL,        -- mau · chu · bocuc · giong · anh · khac
+  luat      TEXT NOT NULL,
+  vi        TEXT NOT NULL,        -- BẮT BUỘC: một luật không lý do thì bị gỡ
+  hieuLuc   TEXT NOT NULL DEFAULT 'vinhVien',  -- vinhVien · tamThoi
+  boiAi     TEXT NOT NULL,        -- chỉ Super Admin
+  ghiLuc    TEXT NOT NULL,
+  goLuc     TEXT,                 -- gỡ chứ không xoá
+  goBoi     TEXT,
+  goVi      TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_lth_nhom ON luatThuongHieu (nhom) WHERE goLuc IS NULL;
 CREATE INDEX IF NOT EXISTS ix_bl_ky ON bangLuong (ky, trangThai);
 
 -- ═════════════════════════════════════════════════════════════

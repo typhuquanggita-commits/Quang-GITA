@@ -289,6 +289,7 @@ G.ITEM_EN = {
   'khoa-dao-tao':['My training course','Learn · Do · Submit · the next lesson opens itself'],
   'do-thoi-gian':['Time · rewards · penalties','A real clock · three thresholds · completion standard · point conversion'],
   'noi-may-chu':['Connect to the server','Paste the address · test the call · six setup steps'],
+  'kien-truc-thi-giac':['Visual Architect','Proposal · library · visual constitution · brand decision log'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
   'phan-quyen':['Assignments & permissions','15 positions × 31 permissions · click a cell to change it'],
   'cap-tai-khoan':['Open a new account','Issued for positions from Consultant upward'],
