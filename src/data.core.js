@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.10',
+  version: '9.99.11',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -840,7 +840,7 @@ G.NAV = [
        qua cổng ấy là hoặc mở qt_trang cho họ — tức cho luôn quyền cấp
        tài khoản — hoặc để họ không vào được phòng của chính mình. */
     {v:'phong-tai-chinh', t:'Phòng Kế toán – Tài chính', h:'Bảng tin · trợ lý · việc của tôi · sổ ngày · đối chiếu · chốt sổ · KPI · lương · quy chế', ic:'shield', star:1, perm:'fin_view', capMo:'chung'},
-    {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đề xuất · kho · hiến pháp thị giác · sổ luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
+    {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'khoa-tai-khoan',t:'Khoá · mở lại · xoá',       h:'Vòng đời một tài khoản, có lý do',    ic:'lock', perm:'qt_trang', capMo:'quantri'},

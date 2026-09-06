@@ -3055,6 +3055,102 @@ bao(kho2.than.ok && kho2.than.luatThuongHieu.length >= 1 &&
   'KHO TRẢ VỀ CẢ SỔ LUẬT LẪN CÂY PHIÊN BẢN — mọi đề xuất sau đọc luật trước',
   kho2.than.so + ' đề xuất · ' + kho2.than.luatThuongHieu.length + ' luật thương hiệu');
 
+/* ── ĐỌC TÀI LIỆU VÀ CỬA ĐI RA · CHỐT 9.99.11 ── */
+console.log('\n15k · ĐỌC TÀI LIỆU · CỬA ĐI RA NGOÀI');
+
+const taiLieu = [
+  'Chặng bảy ngày nhận diện mở đầu bằng bộ test đầu vào cho cả nhà.',
+  '',
+  'Bước 1: gia đình làm bài test. Sau đó đặt lịch buổi tiếp nhận. ' +
+  'Tiếp theo là một buổi đọc hồ sơ có mặt cả nhà. Cuối cùng là cổng ngày bảy.',
+  '',
+  'Điều kiện qua chặng: nhà ghi đủ bảy ngày phiếu, và có mặt ở buổi đọc hồ sơ. ' +
+  'Đạt khi cả hai điều kiện cùng có. Tiêu chí nghiệm thu nói rõ trước khi bắt đầu.',
+  '',
+  'Phụ huynh giữ phần ghi phiếu. Học viên giữ phần làm bài. Coach chưa vào ở ' +
+  'chặng này. Ai làm gì được nói rõ ngay buổi đầu để không ai chờ ai.',
+  '',
+  'Mỗi ngày nhà ghi một dòng. Hằng ngày, không bỏ. Nhịp ấy là thứ chặng này ' +
+  'muốn dựng, không phải một kết quả nào.'
+].join('\n');
+
+bao(!(await goi({fn:'docTaiLieuThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  chu:taiLieu})).than.ok,
+  'ĐỌC TÀI LIỆU MÀ KHÔNG KHAI CHẶNG THÌ MÁY KHÔNG ĐOÁN HỘ',
+  'đoán Tầng là chỗ sai im lặng nhất, và cả bản phân tích sau đó dựng trên một cái đoán');
+
+const docTL = await goi({fn:'docTaiLieuThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  chu:taiLieu, tang:'T1'});
+bao(docTL.than.ok && docTL.than.soDoan >= 5 && docTL.than.viTri.length >= 3,
+  'ĐỌC TÀI LIỆU RỒI CHỈ RA TỪNG ĐOẠN NÊN THÀNH HÌNH GÌ',
+  docTL.than.soDoan + ' đoạn · ' + docTL.than.viTri.length + ' chỗ nên có hình · ' +
+  docTL.than.viTri.map(v => 'đoạn ' + v.doan + '→' + v.nen).join(' · '));
+
+bao(docTL.than.viTri.every(v => !!v.nen && !Array.isArray(v.nen)),
+  'MỖI ĐOẠN CHỈ NÊU MỘT LOẠI, không nêu cả danh sách',
+  'nêu ba lựa chọn cho mỗi đoạn thì người đọc phải tự chọn ở ba mươi chỗ, và bản ' +
+  'phân tích thành một danh sách việc thay vì một đề nghị');
+
+/* CỔNG TẦNG CHẠY TRÊN TỪNG ĐOẠN, và nêu SỐ ĐOẠN để người sửa tìm được. */
+const tlPham = await goi({fn:'docTaiLieuThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  tang:'T1', chu: taiLieu + '\n\nỞ chặng này Coach đồng hành hằng ngày cùng gia ' +
+    'đình, và nhà được mở phác đồ để tự tra khi cần. Đây là phần làm nên khác biệt.'});
+bao(tlPham.than.ok && tlPham.than.phamTang.length === 1 &&
+    tlPham.than.phamTang[0].doan === tlPham.than.soDoan,
+  'CỔNG TẦNG CHẠY TRÊN TỪNG ĐOẠN VÀ NÊU SỐ ĐOẠN — người sửa tìm được ngay chỗ hỏng',
+  'đoạn ' + tlPham.than.phamTang[0].doan + ' phạm: ' +
+  tlPham.than.phamTang[0].pham.join(', '));
+
+/* ══ CỬA ĐI RA — TẮT SẴN ══ */
+const cuaDong = await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG});
+bao(!cuaDong.than.ok && cuaDong.than.code === 'CUADONG' &&
+    (cuaDong.than.canNap || []).length === 2,
+  'CỬA ĐI RA TẮT SẴN, VÀ NÓI RÕ LÀ ĐANG ĐÓNG — không im lặng trả về như đã gửi',
+  'nối một bộ vẽ bên ngoài là một quyết định phải bấm, không phải một thứ có sẵn · ' +
+  'cần nạp: ' + (cuaDong.than.canNap || []).join(', '));
+
+env.GITA_KHOA_VE = 'khoa-ve-thu-nghiem';
+env.GITA_CONG_VE = 'https://bo-ve-thu-nghiem.vidu/api';
+
+bao(!(await goi({fn:'guiDeBaiRaNgoai', token:tkTC, u:'truongcoach@gita365.vn',
+  id:idTG})).than.ok,
+  'TRƯỞNG COACH KHÔNG GỬI ĐƯỢC RA NGOÀI — cho một thứ rời khỏi hệ là quyết định của chủ hệ');
+
+/* ══ PHÉP ĐO ĐẮT NHẤT CỦA CẢ PHẦN NÀY ══
+
+   NỘI DUNG KHÔNG BAO GIỜ ĐI RA. Nội dung là thứ kho mã hoá sinh ra để
+   giữ; một tấm hình cần một ĐẶC TẢ, không cần nội dung coaching, nên
+   gửi cả nội dung là gửi tài sản kèm một việc không đòi hỏi nó. */
+const raNgoai = await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG});
+const noiDungGoc = db.prepare("SELECT noiDung FROM deXuatThiGiac WHERE id=?").get(idTG).noiDung;
+const cauDacTrung = noiDungGoc.slice(0, 40);
+bao(raNgoai.than.ok && raNgoai.than.daGui.indexOf(cauDacTrung) < 0 &&
+    !/bộ test đầu vào|buổi tiếp nhận/.test(raNgoai.than.daGui),
+  'NỘI DUNG KHÔNG ĐI RA — chỉ ĐÚNG NĂM TRƯỜNG của đề bài rời khỏi máy chủ',
+  'đã gửi ' + raNgoai.than.soChu + ' ký tự: ' +
+  raNgoai.than.daGui.replace(/\n/g, ' · ').slice(0, 130));
+
+bao(raNgoai.than.daGui.indexOf(dungTang.than.tang) >= 0 &&
+    raNgoai.than.daGui.indexOf(dungTang.than.nhiemVu) >= 0,
+  'nhưng ĐẶC TẢ thì đi đủ — chặng, loại hình, nhiệm vụ, bố cục, người xem');
+
+const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
+bao(soRa.than.ok && soRa.than.so === 1 &&
+    soRa.than.ds[0].daGui === raNgoai.than.daGui,
+  'SỔ ĐI RA GIỮ NGUYÊN VĂN CHUỖI ĐÃ GỬI, không giữ một bản tóm',
+  'bản tóm thì lúc cần đối chất lại phải tin vào chính cái đang bị nghi');
+
+/* Chỉ gửi được thứ ĐÃ DUYỆT. */
+const banNhap = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  deXuat:{tang:'T2', loaiHinh:'KHUNG', nhiemVu:'Giúp hiểu cách giải mã một biểu hiện',
+    noiDung:'Trang giới thiệu chặng hai mươi mốt ngày giải mã nguyên nhân đứng sau ' +
+            'một biểu hiện của con.', nguoiXem:['PHUHUYNH']}});
+bao(!(await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+  id:banNhap.than.id})).than.ok,
+  'CHỈ GỬI RA NGOÀI THỨ ĐÃ DUYỆT — gửi một bản nháp là để thứ chưa ai đọc kỹ rời khỏi hệ');
+
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ

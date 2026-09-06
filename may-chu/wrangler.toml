@@ -119,6 +119,15 @@ bucket_name = "gita365-hoso"
 #        port; nạp sẵn để lúc port GITA_ChungCu.gs không phải quay lại.
 #
 #    npx wrangler secret put GITA_KHOA_THU
+#
+# ── CỬA ĐI RA NGOÀI (tuỳ chọn — TẮT SẴN) ──
+# Chủ hệ chốt ở 9.99.11: được phép nối một bộ tạo ảnh bên ngoài.
+# Thiếu MỘT trong hai thì cửa ĐÓNG, và máy chủ nói rõ là đóng chứ không
+# im lặng trả về như đã gửi. Đây là mặc định cố ý: nối một bộ vẽ bên
+# ngoài là một quyết định phải bấm, không phải một thứ có sẵn.
+# Thứ đi ra là ĐÚNG NĂM TRƯỜNG của đề bài — nội dung KHÔNG bao giờ đi ra.
+#    npx wrangler secret put GITA_KHOA_VE
+#    npx wrangler secret put GITA_CONG_VE
 #        Khoá của nhà gửi thư (mặc định Resend). Mã xác nhận đăng ký và
 #        mã lấy lại mật khẩu đi bằng khoá này — không có nó thì luồng
 #        đăng ký dừng ở bước một và NÓI RA, chứ không im lặng báo "đã

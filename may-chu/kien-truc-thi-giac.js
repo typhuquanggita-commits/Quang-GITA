@@ -391,3 +391,207 @@ export async function khoThiGiac(y, env, db, hoSo) {
 
 export { soatTang, CAM_THEO_TANG, THU_TU_TANG, LOAI_HINH, NGUOI_XEM,
   BAC_TIEP, TRONG_DIEM, BAC_DIEM };
+
+/* ═══════════════════════════════════════════════════════════════
+   PHẦN HAI — ĐỌC TÀI LIỆU, VÀ CỬA ĐI RA NGOÀI
+   Chốt của chủ hệ thống bản 9.99.11.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ══ ĐỌC MỘT TÀI LIỆU RỒI CHỈ RA CHỖ NÊN THÀNH HÌNH ══
+
+   ══ NÓI THẲNG NÓ ĐỌC ĐƯỢC GÌ ══
+
+   Nó đọc CHỮ. Không đọc PDF, không đọc DOCX, không đọc PPTX — mở được
+   ba định dạng ấy cần một thư viện tải từ mạng ngoài, mà chính sách nội
+   dung của bản web chặn mọi nguồn ngoài, và nới ra để đọc một tệp là
+   nới cho mọi thứ khác đi qua cùng cái lỗ.
+
+   Nên đường dùng là: mở tài liệu bằng phần mềm sẵn có, chọn hết, dán
+   chữ vào. Mất mười giây, và không phải nới một lỗ nào.
+
+   ══ VÀ NÓ KHÔNG ĐỘNG VÀO NỘI DUNG ══
+
+   Nó chỉ NÓI chỗ nào nên thành hình gì. Sửa chữ của một tài liệu đã
+   được duyệt là việc của người viết, không phải của máy — bản đặc tả
+   của chủ hệ nói đúng chỗ này, và nó là chỗ dễ vượt nhất. */
+
+const DAU_HIEU = [
+  {loai: 'QUY_TRINH', dau: ['bước 1', 'bước 2', 'bước một', 'đầu tiên', 'sau đó',
+    'tiếp theo', 'cuối cùng'], vi: 'đoạn kể một chuỗi bước có thứ tự'},
+  {loai: 'BANDO_HANHTRINH', dau: ['ngày 1', 'ngày 7', 'ngày 21', 'ngày 90',
+    'tuần 1', 'chặng', 'lộ trình', 'hành trình'], vi: 'đoạn nói về một quãng thời gian có mốc'},
+  {loai: 'SO_SANH_TANG', dau: ['so với', 'khác nhau', 'trong khi', 'còn tầng',
+    'chặng nào'], vi: 'đoạn đặt hai thứ cạnh nhau'},
+  {loai: 'DANH_SACH_VIEC', dau: ['cần làm', 'phải làm', 'danh sách', 'checklist',
+    'gồm:', 'bao gồm'], vi: 'đoạn liệt kê việc'},
+  {loai: 'CONG', dau: ['điều kiện', 'đạt khi', 'nghiệm thu', 'qua được', 'tiêu chí'],
+    vi: 'đoạn nêu điều kiện qua chặng'},
+  {loai: 'VAI_TRO', dau: ['phụ huynh', 'học viên', 'coach', 'ai làm', 'trách nhiệm'],
+    vi: 'đoạn chia việc cho từng người'},
+  {loai: 'MOT_SO', dau: ['%', 'phần trăm', 'trung bình', 'tỷ lệ'],
+    vi: 'đoạn xoay quanh một con số'},
+  {loai: 'NHIP', dau: ['mỗi ngày', 'mỗi tuần', 'hằng ngày', 'hằng tuần', 'chu kỳ',
+    'nhịp'], vi: 'đoạn mô tả một nhịp lặp lại'}
+];
+
+export async function docTaiLieuThiGiac(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+
+  const chu = String(y.chu || '');
+  if (chu.length < 200) return {ok: false,
+    error: 'Dán ít nhất hai trăm chữ. Ngắn hơn thì chưa có gì để chia đoạn, và ' +
+           'một bản phân tích trên ba dòng chữ là một bản đoán.'};
+  if (chu.length > 200000) return {ok: false,
+    error: 'Dài quá hai trăm nghìn chữ. Cắt làm mấy phần rồi dán từng phần.'};
+
+  const tang = String(y.tang || '').trim().toUpperCase();
+  if (THU_TU_TANG.indexOf(tang) < 0) return {ok: false,
+    error: 'Khai tài liệu này thuộc chặng nào: ' + THU_TU_TANG.join(', ') + '. ' +
+           'Máy KHÔNG đoán hộ — đoán Tầng là chỗ sai im lặng nhất, và cả bản phân ' +
+           'tích sau đó dựng trên một cái đoán.'};
+
+  /* Cắt theo DÒNG TRỐNG, không cắt theo số ký tự: dòng trống là chỗ
+     người viết đã tự chia ý, và cắt theo số ký tự thì cắt ngang câu. */
+  const doan = chu.split(/\n\s*\n/).map(x => x.trim()).filter(x => x.length > 40);
+  if (!doan.length) return {ok: false,
+    error: 'Không tách được đoạn nào. Tài liệu cần có dòng trống giữa các ý — ' +
+           'dòng trống là chỗ người viết đã tự chia ý, và máy chia theo đó.'};
+
+  const viTri = [];
+  const phamTang = [];
+  doan.forEach((d, i) => {
+    const t = boDau(d);
+    /* CỔNG TẦNG CHẠY TRÊN TỪNG ĐOẠN. Một tài liệu khai T1 mà có một
+       đoạn nói về thứ chỉ tầng cao mới có thì chính đoạn ấy là chỗ
+       hỏng, và nêu số đoạn thì người sửa tìm được ngay. */
+    const pham = (CAM_THEO_TANG[tang] || []).filter(k => t.indexOf(boDau(k)) >= 0);
+    if (pham.length) phamTang.push({doan: i + 1, pham,
+      trich: d.slice(0, 120)});
+
+    const trung = DAU_HIEU.map(h => ({
+      loai: h.loai, vi: h.vi,
+      diem: h.dau.filter(k => t.indexOf(boDau(k)) >= 0).length
+    })).filter(x => x.diem > 0).sort((a, b) => b.diem - a.diem);
+
+    if (trung.length) viTri.push({doan: i + 1, soChu: d.length,
+      trich: d.slice(0, 100),
+      /* CHỈ NÊU MỘT loại, không nêu cả danh sách. Nêu ba lựa chọn cho
+         mỗi đoạn thì người đọc phải tự chọn ở ba mươi chỗ, và bản phân
+         tích thành một danh sách việc thay vì một đề nghị. */
+      nen: trung[0].loai, vi: trung[0].vi, chac: trung[0].diem});
+  });
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_DOCTL',
+    doiTuong: tang, chiTiet: doan.length + ' đoạn · ' + viTri.length + ' chỗ nên có hình'});
+
+  return {ok: true, tang, soDoan: doan.length, soChu: chu.length,
+    viTri: viTri.slice(0, 60),
+    phamTang,
+    /* Một tài liệu ba mươi trang mà chỗ nào cũng nên có hình thì đề
+       nghị ấy vô dụng. Nói ra tỷ lệ để người đọc tự thấy. */
+    tyLe: doan.length ? Math.round(viTri.length / doan.length * 100) : 0,
+    canhBao: viTri.length > doan.length * 0.5
+      ? 'Hơn nửa số đoạn được đề nghị làm hình. Tỷ lệ ấy gần như luôn có nghĩa là ' +
+        'dấu hiệu bắt quá rộng, không phải tài liệu cần nhiều hình đến thế. Chọn ' +
+        'lấy năm bảy chỗ đắt nhất.'
+      : '',
+    vi: 'Máy CHỈ nói chỗ nào nên thành hình gì. Nó không sửa một chữ nào của tài ' +
+        'liệu — sửa nội dung đã duyệt là việc của người viết.'};
+}
+
+/* ══ CỬA ĐI RA NGOÀI ══
+
+   Chủ hệ chốt ở 9.99.11: được phép nối một bộ tạo ảnh bên ngoài.
+
+   ══ BA LỚP GIỮ, VÀ LỚP THỨ HAI LÀ LỚP THẬT ══
+
+   1. TẮT SẴN. Không có GITA_KHOA_VE thì cửa đóng, và nó nói rõ là
+      đóng — chứ không im lặng trả về như đã gửi.
+
+   2. DANH SÁCH TRẮNG, KHÔNG DANH SÁCH CẤM. Thứ đi ra được lắp từ đúng
+      NĂM TRƯỜNG CÓ TÊN: chặng, loại hình, nhiệm vụ, bố cục, người xem.
+      NỘI DUNG KHÔNG BAO GIỜ ĐI RA — và đây là chỗ quan trọng nhất của
+      cả tệp này.
+
+      Vì sao: nội dung là thứ kho mã hoá sinh ra để giữ. Một tấm hình
+      không cần nội dung coaching để vẽ được — nó cần một ĐẶC TẢ. Gửi
+      cả nội dung đi là gửi tài sản đi kèm một việc không đòi hỏi nó.
+
+      Lọc bằng danh sách cấm thì mỗi trường mới thêm vào bảng là mặc
+      định đi ra, và cái mặc định ấy không ai nhớ đi sửa.
+
+   3. GHI SỔ NGUYÊN VĂN. Mỗi lượt để lại đúng chuỗi đã đi ra, không
+      phải một bản tóm — bản tóm thì lúc cần đối chất lại phải tin vào
+      chính cái đang bị nghi. */
+
+export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
+  /* Chỉ Super Admin. Cho một thứ rời khỏi hệ là quyết định của chủ
+     hệ, không phải một thao tác của người làm. */
+  if (!laChuHe(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Chỉ Super Admin gửi được đề bài ra ngoài. Cho một thứ rời khỏi hệ là ' +
+           'một quyết định, không phải một thao tác.'};
+
+  const khoa = String(env.GITA_KHOA_VE || '');
+  const cong = String(env.GITA_CONG_VE || '');
+  if (!khoa || !cong) return {ok: false, code: 'CUADONG',
+    error: 'Cửa đi ra đang ĐÓNG: máy chủ chưa nạp GITA_KHOA_VE và GITA_CONG_VE. ' +
+           'Đây là mặc định — nối một bộ vẽ bên ngoài là một quyết định phải bấm, ' +
+           'không phải một thứ có sẵn.',
+    canNap: ['GITA_KHOA_VE', 'GITA_CONG_VE']};
+
+  const x = await db.prepare('SELECT * FROM deXuatThiGiac WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!x) return {ok: false, error: 'Không tìm thấy đề xuất này.'};
+
+  /* Chỉ gửi được thứ ĐÃ DUYỆT. Gửi một bản nháp ra ngoài là để một
+     thứ chưa ai đọc kỹ rời khỏi hệ. */
+  if (x.trangThai !== 'duyet' && x.trangThai !== 'hoanThien')
+    return {ok: false, code: 'CHUADUYET',
+      error: 'Chỉ gửi ra ngoài thứ đã DUYỆT. Đề xuất này đang ở bậc "' +
+        x.trangThai + '".'};
+
+  /* ── DANH SÁCH TRẮNG: ĐÚNG NĂM TRƯỜNG, KHÔNG HƠN ── */
+  let nx = [];
+  try { nx = JSON.parse(x.nguoiXem || '[]'); } catch (e) { nx = []; }
+  const guiDi = [
+    'Chặng: ' + x.tang,
+    'Loại hình: ' + x.loaiHinh,
+    'Nhiệm vụ: ' + x.nhiemVu,
+    'Bố cục: ' + (x.boCuc || 'theo mặc định của loại hình'),
+    'Người xem: ' + nx.join(', ')
+  ].join('\n');
+
+  const id = 'DR-' + tokenMoi().slice(0, 14);
+  const luc = new Date().toISOString();
+  await db.prepare(
+    'INSERT INTO luotDiRa (id,idDeXuat,cong,daGui,soChu,boiAi,luc) ' +
+    'VALUES (?,?,?,?,?,?,?)'
+  ).bind(id, x.id, cong, guiDi, guiDi.length, hoSo.u, luc).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_DIRA',
+    doiTuong: x.id, chiTiet: cong + ' · ' + guiDi.length + ' ký tự'});
+
+  return {ok: true, id, idDeXuat: x.id, cong, daGui: guiDi, soChu: guiDi.length,
+    /* TRẢ VỀ NGUYÊN VĂN thứ vừa đi ra, để người bấm nhìn thấy ngay —
+       chứ không phải đi tra sổ mới biết mình vừa gửi gì. */
+    khongGui: ['nội dung gốc', 'tên nhà', 'tên học viên', 'mọi trường khác'],
+    vi: 'Đi ra ĐÚNG năm trường có tên. NỘI DUNG không bao giờ đi ra — một tấm hình ' +
+        'cần một ĐẶC TẢ, không cần nội dung coaching, nên gửi cả nội dung là gửi ' +
+        'tài sản kèm một việc không đòi hỏi nó. Lượt này đã vào sổ đi ra.'};
+}
+
+export async function soDiRa(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+  const r = await db.prepare(
+    'SELECT * FROM luotDiRa ORDER BY luc DESC LIMIT 200').all();
+  return {ok: true, so: (r.results || []).length,
+    ds: (r.results || []).map(v => ({id: v.id, idDeXuat: v.idDeXuat, cong: v.cong,
+      daGui: v.daGui, soChu: v.soChu, boiAi: v.boiAi, luc: v.luc})),
+    cuaMo: !!(env.GITA_KHOA_VE && env.GITA_CONG_VE),
+    vi: 'Mỗi dòng giữ ĐÚNG chuỗi đã đi ra, không phải một bản tóm — bản tóm thì ' +
+        'lúc cần đối chất lại phải tin vào chính cái đang bị nghi.'};
+}
+
+export { DAU_HIEU };

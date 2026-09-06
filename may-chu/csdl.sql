@@ -781,6 +781,33 @@ CREATE TABLE IF NOT EXISTS luatThuongHieu (
 );
 
 CREATE INDEX IF NOT EXISTS ix_lth_nhom ON luatThuongHieu (nhom) WHERE goLuc IS NULL;
+
+-- ═════════════════════════════════════════════════════════════
+--  SỔ LƯỢT ĐI RA NGOÀI
+--
+--  Chủ hệ chốt ở 9.99.11: được phép nối một bộ tạo ảnh bên ngoài.
+--
+--  Nối là chấp nhận một thứ RỜI KHỎI máy chủ Học viện, nên mọi lượt
+--  đi ra đều để lại một dòng ở đây: gửi cái gì, cho ai, lúc nào, ai
+--  bấm. Không có sổ này thì "được phép" và "không kiểm soát được" là
+--  một, và tới lúc có chuyện thì không dựng lại được đã gửi những gì.
+--
+--  Cột `daGui` giữ ĐÚNG chuỗi đã đi ra — không giữ một bản tóm. Bản
+--  tóm thì lúc cần đối chất lại phải tin vào chính cái đang bị nghi.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS luotDiRa (
+  id        TEXT PRIMARY KEY,
+  idDeXuat  TEXT NOT NULL,
+  cong      TEXT NOT NULL,        -- tên cổng ngoài
+  daGui     TEXT NOT NULL,        -- nguyên văn chuỗi đã gửi
+  soChu     INTEGER NOT NULL,
+  boiAi     TEXT NOT NULL,
+  luc       TEXT NOT NULL,
+  ketQua    TEXT,                 -- ok · loi
+  ghiChu    TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_ldr_dx ON luotDiRa (idDeXuat, luc DESC);
 CREATE INDEX IF NOT EXISTS ix_bl_ky ON bangLuong (ky, trangThai);
 
 -- ═════════════════════════════════════════════════════════════
