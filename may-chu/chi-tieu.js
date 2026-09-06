@@ -597,13 +597,48 @@ async function gopBayNgay(db, khoanMuc, nguoi, ngayChi) {
   return Number(r.t);
 }
 
-/* ═══════════════ DUYỆT MỘT KHOẢN CHI ═══════════════ */
-export async function duyetChi(y, env, db, hoSo) {
-  const cp = await db.prepare('SELECT * FROM chiPhi WHERE id = ?')
-    .bind(String(y.id || '')).first();
-  if (!cp) return {ok: false, error: 'Không tìm thấy khoản chi này.'};
+/* ═══════════════ GIẢI PHẪU MỘT KHOẢN CHI ═══════════════
 
-  const quyen = await quyenCua(db, hoSo.u);
+   Cùng một khoản chi trả lời được hai câu khác nhau:
+
+     "khoản này cần gì"        — nấc, mốc, cần mấy chữ ký, đã có mấy
+     "TÔI ký được không"       — và nếu không thì vướng đúng cửa nào
+
+   Cả hai đều đọc từ đây, và CỔNG DUYỆT THẬT cũng đọc từ đây. Đó là chỗ
+   quan trọng nhất của cả phần trợ lý: một trợ lý tự tính lấy câu trả
+   lời là một trợ lý sẽ có ngày nói khác cổng — và người ta tin trợ lý,
+   vì nó nói trước.
+
+   Ngày ấy không báo lỗi. Nó chỉ là một người được bảo "anh ký được"
+   rồi bấm nút và bị từ chối, hoặc tệ hơn: được bảo "anh không ký được"
+   nên đi tìm người khác ký, trong khi chính họ mới là người phải ký. */
+async function giaiPhauChi(db, cp) {
+  const nac = NAC_THANG.find(x => x.ma === cp.nac) || nacCua(Number(cp.soTien));
+
+  /* ══ MỐC CHU KỲ ĐỌC LẠI Ở LÚC DUYỆT ══
+
+     Không đọc lại mốc đã ghi lúc đề xuất: giữa hai mốc thời gian ấy,
+     những khoản khác của cùng người trong cùng tuần có thể đã vào sổ và
+     đẩy tổng lên mốc cao hơn. Duyệt theo mốc cũ là để một tuần 100
+     triệu đi qua cổng của một tuần 10 triệu. */
+  const ck = await tongChuKy(db, cp.nguoiDeXuat, cp.ngayChi);
+  const moc = mocCua(ck.tong);
+  const canKy = Math.max(1, nac.soDuyet) + moc.themChuKy;
+  /* Ô chữ ký kế tiếp còn trống. Đếm chứ không đoán: hai thang chồng
+     lên nhau nên số chữ ký cần có thể là 1, 2 hoặc 3, và mỗi lượt ký
+     phải rơi đúng vào ô trống kế tiếp. */
+  const chuKyThu = (cp.nguoiDuyet ? 1 : 0) + (cp.nguoiDuyet2 ? 1 : 0) + 1;
+  return {nac, ck, moc, canKy, chuKyThu};
+}
+
+/** Người này bấm duyệt bây giờ thì vướng cửa nào — null là không vướng.
+
+    SÁU CỬA, VÀ THỨ TỰ CỦA CHÚNG LÀ MỘT PHẦN CỦA CÂU TRẢ LỜI. Người tự
+    đề xuất khoản chi của chính mình mà lại là kế toán thu thì họ vướng
+    HAI cửa; nói ra cửa nào trước quyết định họ đi sửa cái gì. Trả lời
+    "anh không có quyền" cho một người thật ra có quyền nhưng đang tự
+    duyệt là đẩy họ đi xin cấp quyền, và cấp xong vẫn không ký được. */
+function vuongCuaNao(cp, hoSo, quyen, gp) {
   const lv = BAC[hoSo.role] || 99;
 
   /* Sàn: tầng tài chính R01–R03, HOẶC người được cấp chức năng kế toán.
@@ -623,36 +658,34 @@ export async function duyetChi(y, env, db, hoSo) {
   if (cp.nguoiDuyet && String(cp.nguoiDuyet) === String(hoSo.u))
     return {ok: false, code: 'DAKY', error: 'Bạn đã ký duyệt khoản này rồi.'};
 
-  const nac = NAC_THANG.find(x => x.ma === cp.nac) || nacCua(Number(cp.soTien));
-
-  /* ══ MỐC CHU KỲ ĐỌC LẠI Ở LÚC DUYỆT ══
-
-     Không đọc lại mốc đã ghi lúc đề xuất: giữa hai mốc thời gian ấy,
-     những khoản khác của cùng người trong cùng tuần có thể đã vào sổ và
-     đẩy tổng lên mốc cao hơn. Duyệt theo mốc cũ là để một tuần 100
-     triệu đi qua cổng của một tuần 10 triệu. */
-  const ck = await tongChuKy(db, cp.nguoiDeXuat, cp.ngayChi);
-  const moc = mocCua(ck.tong);
-
-  if (!duTuCachMoc(moc, hoSo.role, quyen))
+  if (!duTuCachMoc(gp.moc, hoSo.role, quyen))
     return {ok: false, code: 'CHUADUMOC',
-      error: 'Tuần ' + ck.ky + ' người này đã chi ' + dinhDang(ck.tong) +
-        ' — mốc ' + moc.ma + '. ' + moc.viec +
-        (moc.vai === 'keToan' ? '' :
-          ' Hoặc kế toán trưởng được cấp hạn mức tới ' + moc.ma + ' trở lên.'),
-      moc: moc.ma, vaiCan: moc.tenVai, tongChuKy: ck.tong};
+      error: 'Tuần ' + gp.ck.ky + ' người này đã chi ' + dinhDang(gp.ck.tong) +
+        ' — mốc ' + gp.moc.ma + '. ' + gp.moc.viec +
+        (gp.moc.vai === 'keToan' ? '' :
+          ' Hoặc kế toán trưởng được cấp hạn mức tới ' + gp.moc.ma + ' trở lên.'),
+      moc: gp.moc.ma, vaiCan: gp.moc.tenVai, tongChuKy: gp.ck.tong};
 
-  const canKy = Math.max(1, nac.soDuyet) + moc.themChuKy;
+  if (gp.chuKyThu > 3) return {ok: false, error: 'Khoản chi này đã đủ chữ ký.'};
+  if (cp.nguoiDuyet2 && String(cp.nguoiDuyet2) === String(hoSo.u))
+    return {ok: false, code: 'DAKY', error: 'Bạn đã ký duyệt khoản này rồi.'};
+  return null;
+}
+
+/* ═══════════════ DUYỆT MỘT KHOẢN CHI ═══════════════ */
+export async function duyetChi(y, env, db, hoSo) {
+  const cp = await db.prepare('SELECT * FROM chiPhi WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!cp) return {ok: false, error: 'Không tìm thấy khoản chi này.'};
+
+  const quyen = await quyenCua(db, hoSo.u);
+  const gp = await giaiPhauChi(db, cp);
+  const {nac, ck, moc, canKy, chuKyThu} = gp;
 
   /* Từ chối thì dừng ngay ở chữ ký đầu — một người thấy sai là đủ để
      khoản ấy không đi tiếp. */
-  /* Ô chữ ký kế tiếp còn trống. Đếm chứ không đoán: hai thang chồng
-     lên nhau nên số chữ ký cần có thể là 1, 2 hoặc 3, và mỗi lượt ký
-     phải rơi đúng vào ô trống kế tiếp. */
-  const chuKyThu = (cp.nguoiDuyet ? 1 : 0) + (cp.nguoiDuyet2 ? 1 : 0) + 1;
-  if (chuKyThu > 3) return {ok: false, error: 'Khoản chi này đã đủ chữ ký.'};
-  if (cp.nguoiDuyet2 && String(cp.nguoiDuyet2) === String(hoSo.u))
-    return {ok: false, code: 'DAKY', error: 'Bạn đã ký duyệt khoản này rồi.'};
+  const vuong = vuongCuaNao(cp, hoSo, quyen, gp);
+  if (vuong) return vuong;
 
   const duyet = y.duyet !== false;
   const gio = new Date().toISOString();
@@ -1272,6 +1305,12 @@ export async function xemThangDuyetChi(y, env, db, hoSo) {
         'giá cho cả tuần). Và trần chu kỳ ' + dinhDang(TRAN_CHU_KY) + ' một người ' +
         'một tháng, cộng qua MỌI khoản mục: chạm trần thì lối tự ghi đóng lại.'};
 }
+
+/* Mở cho trợ lý tài chính. KHÔNG mở ra cửa máy chủ — đây là hai hàm
+   ĐỌC, không ghi gì, và chúng là chỗ duy nhất trợ lý được lấy câu trả
+   lời về một khoản chi. Trợ lý tự tính lấy là trợ lý sẽ có ngày nói
+   khác cổng, và người ta tin trợ lý vì nó nói trước. */
+export { giaiPhauChi, vuongCuaNao, mocCua, nacCua, duTuCachMoc, tongChuKy };
 
 export { KHOAN_MUC, TRAN_PHAI_DUYET, TRAN_CHU_KY, NGAY_GOP, NAC_THANG,
   MOC_CHU_KY, CHU_KY, VI_TRI_TC };

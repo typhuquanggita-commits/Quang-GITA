@@ -39,9 +39,100 @@ var G = window.G || {}; window.G = G;
      Ô goiTen là chỗ đắt: nó cho người hỏi gọi thẳng tên loại tư liệu
      và được ưu tiên. "Bảy cửa trước khi KÝ KẾT" thì phải ra kho ký
      kết, không ra một kịch bản trùng vài từ. */
-  function on(o) { return G[o.kho] !== undefined && G[o.kho] !== null; }
+  /* Phần lớn nguồn trỏ THẲNG vào một kho: kho là một mảng bản ghi, và
+     tra thẳng trên nó. Nhưng vài kho khai theo hình khác — TC_DIEULE là
+     một VẬT có ô .dieu, TC_QUYCHE mỗi dòng ôm một mảng điều con — nên
+     chúng cần một lượt dựng lại thành mảng phẳng để tra.
 
-  var THEM = [
+     Ô lay() dựng cái mảng ấy LÚC TRA, không chép nó vào kho: chép vào
+     kho là hai bản của cùng một sự thật, và bản thứ hai nằm trong tệp
+     đã mã hoá nên không ai thấy nó lệch. */
+  function danhSach(o) { return o.lay ? o.lay() : G[o.kho]; }
+  function on(o) {
+    var d = danhSach(o);
+    return Array.isArray(d) ? d.length > 0 : (d !== undefined && d !== null);
+  }
+
+  /* ── VĂN BẢN PHÒNG TÀI CHÍNH (9.99.4) ──
+
+     Năm kho văn bản của phòng: điều lệ, quy chế, quy trình, biểu mẫu,
+     sổ rủi ro. Trước bản này trợ lý không tra được câu nào trong đó —
+     hỏi "chia nhỏ khoản chi thì sao" thì nó trả về một kịch bản tư vấn
+     phụ huynh trùng vài từ, tức là kiểu hỏng tệ hơn im lặng.
+
+     AI TRA ĐƯỢC, VÀ AI KHÔNG — NÓI THẲNG:
+
+     Quyền fin_view mở tới bậc 4, nên trợ lý tra được cho Super Admin,
+     Admin hệ thống, Giám đốc và Quản lý chuyên môn — và cho kế toán
+     trưởng, vì kế toán trưởng là vai R04.
+
+     KẾ TOÁN THU và KẾ TOÁN CHI là vai R08, nên KHÔNG tra được qua trợ
+     lý. Đó không phải chỗ quên: G.can() chấm theo VAI, mà phòng tài
+     chính là một trục riêng vuông góc với thang vai — cùng cái vướng
+     đã buộc phòng này phải có trục riêng ngay từ đầu. Họ đọc đủ năm
+     kho ấy ở ngăn "Quy chế" của màn Phòng Kế toán – Tài chính, vốn mở
+     theo VỊ TRÍ. Mở thêm bằng cách hạ quyền xuống bậc 8 thì Giáo viên
+     và Mentor cũng đọc được điều lệ tài chính, và đó là cái giá đắt
+     hơn nhiều so với việc kế toán chi phải bấm sang một ngăn khác. */
+  var VB_TC = [
+    { kho: 'TC_DIEULE', loai: 'Điều lệ tài chính', mau: '#0B7350',
+      go: 'phong-tai-chinh', quyen: 'fin_view',
+      goiTen: ['dieu le tai chinh', 'dieu le phong ke toan', 'dieu may', 'quy dinh tai chinh'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'noi', 'vi'],
+      lay: function () {
+        return ((G.TC_DIEULE || {}).dieu || []).map(function (d) {
+          return {ma: 'Điều ' + d.so, ten: d.ten, noi: d.noi, vi: d.vi || ''};
+        });
+      } },
+    { kho: 'TC_QUYCHE', loai: 'Quy chế tài chính', mau: '#0B7350',
+      go: 'phong-tai-chinh', quyen: 'fin_view',
+      goiTen: ['quy che thu', 'quy che chi', 'quy che luong', 'quy che hoa hong', 'quy che tai chinh'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'phamVi', 'dieu'],
+      lay: function () {
+        return (G.TC_QUYCHE || []).map(function (q) {
+          return {ma: q.ma, ten: q.ten, phamVi: q.pham_vi || '',
+            dieu: (q.dieu || []).join(' ')};
+        });
+      } },
+    { kho: 'TC_QUYTRINH', loai: 'Quy trình tài chính', mau: '#0B7350',
+      go: 'phong-tai-chinh', quyen: 'fin_view',
+      goiTen: ['quy trinh thu', 'quy trinh chi', 'quy trinh duyet', 'may buoc'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'buoc'],
+      lay: function () {
+        return (G.TC_QUYTRINH || []).map(function (q) {
+          return {ma: q.ma, ten: q.ten,
+            buoc: (q.buoc || []).map(function (b) {
+              return b.b + '. ' + b.ai + ': ' + b.lam +
+                (b.dieuKien ? ' (' + b.dieuKien + ')' : '');
+            }).join(' · ')};
+        });
+      } },
+    { kho: 'TC_BIEUMAU', loai: 'Biểu mẫu tài chính', mau: '#0B7350',
+      go: 'phong-tai-chinh', quyen: 'fin_view',
+      goiTen: ['bieu mau', 'phieu thu can gi', 'phieu chi can gi', 'truong bat buoc'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'chungTu', 'batBuoc'],
+      lay: function () {
+        return (G.TC_BIEUMAU || []).map(function (b) {
+          return {ma: b.ma, ten: b.ten, chungTu: b.chungTu || '',
+            batBuoc: (b.batBuoc || []).join(', ')};
+        });
+      } },
+    /* Sổ rủi ro là kho đáng tra nhất của cả năm: người hỏi "chia nhỏ
+       khoản chi thì sao" đang đứng đúng ở TC-RR-02, và câu trả lời họ
+       cần là chỗ ĐÃ CANH cùng phần CÒN LẠI sau khi canh. */
+    { kho: 'TC_RUIRO', loai: 'Rủi ro tài chính', mau: '#BE0E16',
+      go: 'phong-tai-chinh', quyen: 'fin_view',
+      goiTen: ['rui ro tai chinh', 'chia nho khoan chi', 'thong dong', 'that thoat', 'so rui ro'],
+      ma: 'ma', ten: 'ten', than: ['ten', 'chan', 'con', 'ai'],
+      lay: function () {
+        return (G.TC_RUIRO || []).map(function (r) {
+          return {ma: r.ma, ten: r.ten, chan: r.chan || '', con: r.con || '',
+            ai: r.ai || ''};
+        });
+      } }
+  ];
+
+  var THEM = VB_TC.concat([
     /* ── Thang độ khó của một ca (9.74) ──
        DOKHO_CAP và DOKHO_DAU ở gói NỀN nên KHÔNG khai quyền: gia
        đình phải tra được vì sao trợ lý dừng lại. Bốn kho định tuyến
@@ -145,7 +236,7 @@ var G = window.G || {}; window.G = G;
     { kho: 'PL_CO', loai: 'Cơ chế dùng quyền', mau: '#0B7350', go: 'phap-ly',
       goiTen: ['lam the nao', 'xin xoa', 'khieu nai', 'co che'],
       ma: 'ma', ten: 'lam', than: ['lam', 'ai', 'han', 'khong'] }
-  ];
+  ]);
 
   /* TỆP NÀY NẰM Ở GÓI CHUNG, KHÔNG Ở GÓI NGHỀ — VÀ ĐÓ LÀ CỐ Ý
 
@@ -180,7 +271,7 @@ var G = window.G || {}; window.G = G;
 
   function DUNG() { return THEM.filter(on).map(function (o) {
     return {
-      kho: G[o.kho], ten_kho: o.kho, loai: o.loai, mau: o.mau, go: o.go,
+      kho: danhSach(o), ten_kho: o.kho, loai: o.loai, mau: o.mau, go: o.go,
       /* Chuyển cả lời khai "nguồn này không có màn". Quên ô này thì
          phép soi thấy go rỗng, không thấy lời khai, và báo đỏ một
          nguồn hoàn toàn lành. */

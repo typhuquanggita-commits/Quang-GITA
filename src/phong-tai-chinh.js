@@ -1,12 +1,13 @@
 /* ═══════════════════════════════════════════════════════════════
    GITA 365 — MÀN HÌNH PHÒNG KẾ TOÁN – TÀI CHÍNH
 
-   Một màn, bảy ngăn. Máy chấm và máy chặn nằm ở may-chu/; tệp này chỉ
+   Một màn, tám ngăn. Máy chấm và máy chặn nằm ở may-chu/; tệp này chỉ
    vẽ và gọi.
 
-   ══ THỨ TỰ BẢY NGĂN LÀ MỘT QUYẾT ĐỊNH ══
+   ══ THỨ TỰ TÁM NGĂN LÀ MỘT QUYẾT ĐỊNH ══
 
      bảng tin      — người biết chuyện viết xuống, phân cấp bằng màu
+     trợ lý        — hỏi một câu, nhận câu trả lời có căn cứ
      việc của tôi  — mở ra là thấy ngay hôm nay phải làm gì
      sổ ngày       — tiền vào hôm nay, từng dòng
      đối chiếu     — sổ so với ngân hàng
@@ -51,6 +52,7 @@ G.VIEWS = G.VIEWS || {};
 
   var NGAN = [
     {ma: 'tin',     ten: 'Bảng tin',      ic: 'bell'},
+    {ma: 'troly',   ten: 'Trợ lý',        ic: 'spark'},
     {ma: 'viec',    ten: 'Việc của tôi',  ic: 'check'},
     {ma: 'so',      ten: 'Sổ ngày',       ic: 'chart'},
     {ma: 'doichieu',ten: 'Đối chiếu',     ic: 'shield'},
@@ -409,7 +411,129 @@ G.VIEWS = G.VIEWS || {};
     });
   };
 
-  /* ═══════════ NGĂN 2 · VIỆC CỦA TÔI ═══════════ */
+  /* ═══════════ NGĂN 2 · TRỢ LÝ ═══════════
+
+     Trợ lý này KHÔNG gọi ra một mô hình ngôn ngữ nào — không một dòng
+     sổ tiền nào rời khỏi máy chủ của Học viện. Nó là một bộ luật biết
+     nói: đọc đúng những hằng số mà cổng duyệt đọc, chạy đúng những
+     phép mà cổng duyệt chạy, rồi kể lại bằng tiếng Việt.
+
+     MÀN NÀY NÓI THẲNG ĐIỀU ẤY RA, ngay dưới hộp hỏi. Một trợ lý được
+     người dùng tưởng là thông minh sẽ được tin ở cả những câu nó không
+     có căn cứ — và ở một màn hình về tiền thì cái tin nhầm ấy đắt.
+
+     Năm câu hỏi bày sẵn thành NÚT, không phải một ô gõ tự do. Ô gõ tự
+     do hứa rằng hỏi gì cũng được, rồi trả lời "tôi chưa hiểu" cho tám
+     câu trên mười — và người dùng bỏ sau ba lần. Năm cái nút thì hứa
+     đúng những gì nó làm được. */
+  function nganTroLy() {
+    var t = G.tcTroLy || (G.tcTroLy = {});
+    var o = '';
+
+    o += '<div class="card"><b>Trợ lý đọc SỔ THẬT, không đọc bản mẫu</b>' +
+      '<p class="sm muted mt">Nó không gọi ra trí tuệ nhân tạo nào bên ngoài — ' +
+      'không một dòng nào của sổ tiền rời khỏi máy chủ Học viện. Nó đọc đúng ' +
+      'những luật mà cổng duyệt đọc rồi kể lại, nên câu nó nói và câu cổng nói ' +
+      'luôn khớp nhau. Mọi câu trả lời đều kèm CĂN CỨ để bạn tra lại.</p></div>';
+
+    o += '<div class="row" style="gap:8px;flex-wrap:wrap;margin:14px 0 4px">' +
+      [['viecCuaToi', 'Việc gì đang chờ tôi'],
+       ['chuKyCuaToi', 'Tuần này tôi đã chi bao nhiêu'],
+       ['aiKyDuoc', 'Mốc này ai ký được'],
+       ['thangBac', 'Thang nấc và mốc đặt ở đâu']].map(function (c) {
+        var on = t.hoi === c[0];
+        return '<button class="btn' + (on ? ' primary' : '') + '" ' +
+          'onclick="G.tcHoiTroLy(\'' + c[0] + '\')">' + h(c[1]) + '</button>';
+      }).join('') + '</div>';
+
+    if (t.dangHoi)
+      return o + U.empty('Đang hỏi trợ lý', 'Nó đang đọc sổ.', true);
+    if (!t.dap)
+      return o + U.empty('Chọn một câu để hỏi',
+        'Bốn câu ở trên, cộng câu "khoản chi này cần gì" — câu ấy hỏi bằng cách ' +
+        'bấm vào một khoản trong danh sách việc.', true);
+
+    var d = t.dap;
+    if (!d.ok)
+      return o + U.empty('Trợ lý chưa trả lời được câu này',
+        d.error || 'Máy chủ không trả lời.', true);
+
+    o += U.sec('Trả lời');
+    o += '<div class="card">' +
+      (d.tra || []).map(function (c) {
+        return '<p class="mt" style="margin-top:0">' + h(c) + '</p>';
+      }).join('') + '</div>';
+
+    /* ── CHẶN Ở MỐC THÌ CHỈ NGƯỜI ── */
+    if (d.aiKyDuoc) {
+      var ai = (d.aiKyDuoc.theoVai || []).concat(d.aiKyDuoc.theoViTri || []);
+      o += U.sec('Ai ký được',
+        'Hai đường vào, và chúng dẫn tới hai việc khác nhau: đi tìm đúng người có ' +
+        'vai, hay xin cấp hạn mức cho kế toán trưởng.');
+      o += ai.length
+        ? U.tbl(['Người', 'Ký được vì'], ai.map(function (x) {
+            return [h(x.username), '<span class="sm muted">' + h(x.vi) + '</span>'];
+          }))
+        : '<div class="card" style="border-left:3px solid var(--bad)">' +
+          '<b>Hôm nay không ai ký được mốc này</b>' +
+          '<p class="sm muted mt">Tiền đứng lại vì thiếu người, không vì thiếu luật. ' +
+          'Cần một người vai ' + h(d.aiKyDuoc.vaiCan || '') + ', hoặc Super Admin cấp ' +
+          'hạn mức cho kế toán trưởng.</p></div>';
+    }
+
+    /* ── VÀ NÓI RÕ NÓ KHÔNG CHỈ ĐƯỜNG LÁCH ── */
+    if (d.khongGoiY) {
+      o += '<div class="card" style="border-left:3px solid var(--warn);margin-top:14px">' +
+        '<b>' + h(d.khongGoiY.vi) + '</b><ul class="sm mt">' +
+        d.khongGoiY.duong.map(function (x) { return '<li>' + h(x) + '</li>'; }).join('') +
+        '</ul><p class="sm mt"><b>' + h(d.khongGoiY.nen) + '</b></p></div>';
+    }
+
+    /* ── DANH SÁCH VIỆC: BẤM MỘT KHOẢN LÀ HỎI CÂU THỨ NĂM ── */
+    if (d.hoi === 'viecCuaToi' && (d.viec || []).some(function (x) { return x.loai === 'chi'; })) {
+      o += U.sec('Khoản chi đang chờ',
+        'Bấm một khoản để hỏi trợ lý khoản ấy cần gì và bạn ký được không.');
+      o += U.tbl(['Số tiền', 'Diễn giải', 'Nấc · mốc', 'Treo', 'Của ai'],
+        d.viec.filter(function (x) { return x.loai === 'chi'; }).map(function (x) {
+          return ['<b>' + h(tien(x.soTien)) + '</b>', h(x.dienGiai),
+            h(x.nac + ' · ' + x.moc),
+            h(x.soNgayTreo + ' ngày'),
+            x.kyDuoc
+              ? '<button class="btn primary" onclick="G.tcHoiKhoan(\'' + h(x.id) +
+                '\')">Bạn ký được</button>'
+              : '<button class="btn" onclick="G.tcHoiKhoan(\'' + h(x.id) +
+                '\')">' + h(x.cuaAiKhac ? 'Chờ người khác' : 'Xem vì sao') + '</button>'];
+        }));
+    }
+
+    if ((d.canCu || []).length) {
+      o += U.sec('Căn cứ',
+        'Một con số không có căn cứ thì người đọc không cãi lại được, và không cãi ' +
+        'lại được thì không kiểm được.');
+      o += '<div class="row" style="gap:8px;flex-wrap:wrap">' +
+        d.canCu.map(function (c) {
+          return U.chip(c.ma + ' — ' + c.ten, 'var(--teal)');
+        }).join('') + '</div>';
+    }
+    return o;
+  }
+
+  G.tcHoiTroLy = function (hoi, them) {
+    var t = G.tcTroLy || (G.tcTroLy = {});
+    t.hoi = hoi; t.dangHoi = true; t.dap = null;
+    if (typeof document !== 'undefined' && document.getElementById('main'))
+      G.render && G.render();
+    var than = {hoi: hoi};
+    if (them) for (var k in them) than[k] = them[k];
+    G.goiMayChu('hoiTroLyTaiChinh', than).then(function (d) {
+      t.dangHoi = false; t.dap = d;
+      if (typeof document !== 'undefined' && document.getElementById('main'))
+        G.render && G.render();
+    });
+  };
+  G.tcHoiKhoan = function (id) { G.tcHoiTroLy('khoanChi', {id: id}); };
+
+  /* ═══════════ NGĂN 3 · VIỆC CỦA TÔI ═══════════ */
   function nganViec() {
     var q = viTriToi();
     if (!q) return U.empty('Đang hỏi vị trí của bạn trong phòng',
@@ -486,7 +610,7 @@ G.VIEWS = G.VIEWS || {};
     return o;
   }
 
-  /* ═══════════ NGĂN 3 · SỔ NGÀY ═══════════ */
+  /* ═══════════ NGĂN 4 · SỔ NGÀY ═══════════ */
   function nganSo() {
     var d = G.tcDuLieu.soNgay, e = loi(d, 'sổ ngày'); if (e) return e;
     var o = '<div class="grid-3" style="gap:14px">' +
@@ -521,7 +645,7 @@ G.VIEWS = G.VIEWS || {};
     return o;
   }
 
-  /* ═══════════ NGĂN 4 · ĐỐI CHIẾU ═══════════ */
+  /* ═══════════ NGĂN 5 · ĐỐI CHIẾU ═══════════ */
   function nganDoiChieu() {
     var d = G.tcDuLieu.doiChieu, e = loi(d, 'bản đối chiếu'); if (e) return e;
     var o = '<div class="card"><p class="sm">' + h(d.vi || '') + '</p></div>';
@@ -553,7 +677,7 @@ G.VIEWS = G.VIEWS || {};
     return o;
   }
 
-  /* ═══════════ NGĂN 5 · CHỐT SỔ ═══════════ */
+  /* ═══════════ NGĂN 6 · CHỐT SỔ ═══════════ */
   function nganChot() {
     var d = G.tcDuLieu.chot, e = loi(d, 'sổ chốt'); if (e) return e;
     if (!(d.ds || []).length)
@@ -573,7 +697,7 @@ G.VIEWS = G.VIEWS || {};
         }));
   }
 
-  /* ═══════════ NGĂN 6 · KPI ═══════════ */
+  /* ═══════════ NGĂN 7 · KPI ═══════════ */
   function nganKpi() {
     var d = G.tcDuLieu.kpi, e = loi(d, 'bảng KPI'); if (e) return e;
     var dn = G.TC_KPI;
@@ -630,7 +754,7 @@ G.VIEWS = G.VIEWS || {};
     return o;
   }
 
-  /* ═══════════ NGĂN 7 · QUY CHẾ ═══════════ */
+  /* ═══════════ NGĂN 8 · QUY CHẾ ═══════════ */
   function nganQuyChe() {
     var dl = G.TC_DIEULE;
     if (!dl) return U.lockCard('Bộ văn bản của phòng nằm trong kho nghề. Mở kho ' +
@@ -711,6 +835,7 @@ G.VIEWS = G.VIEWS || {};
       return o + U.empty('Đang hỏi máy chủ', 'Màn này đọc sổ thật, không đọc bản mẫu.', true);
 
     if (G.tcNgan === 'tin')      return o + nganTin();
+    if (G.tcNgan === 'troly')    return o + nganTroLy();
     if (G.tcNgan === 'viec')     return o + nganViec();
     if (G.tcNgan === 'so')       return o + nganSo();
     if (G.tcNgan === 'doichieu') return o + nganDoiChieu();

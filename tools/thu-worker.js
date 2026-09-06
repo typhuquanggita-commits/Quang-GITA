@@ -2450,6 +2450,151 @@ bao(!!tinKhongChu && tinKhongChu.mucDo === 'vang' && !tinKhongChu.giaoCho &&
 for (const q of luuQuyen)
   db.prepare("UPDATE quyenTaiChinh SET thuHoiLuc = NULL WHERE id = ?").run(q.id);
 
+/* ── TRỢ LÝ PHÒNG TÀI CHÍNH · CHỐT 9.99 ── */
+console.log('\n15g · TRỢ LÝ PHÒNG TÀI CHÍNH');
+
+bao(!(await goi({fn:'hoiTroLyTaiChinh', token:tkCoach, u:'coach@gita365.vn',
+  hoi:'thangBac'})).than.ok,
+  'COACH KHÔNG HỎI ĐƯỢC TRỢ LÝ TÀI CHÍNH');
+
+/* ── CÂU THỨ SÁU THÌ NÓI KHÔNG BIẾT, KHÔNG ĐOÁN ──
+   Một trợ lý đoán một câu về tiền là một trợ lý sai một lần rồi không
+   ai tin nữa. */
+const laVoDuyen = await goi({fn:'hoiTroLyTaiChinh', token:tkKTT,
+  u:'ketoantruong@gita365.vn', hoi:'thangLuongCuaToiBaoNhieu'});
+bao(!laVoDuyen.than.ok && laVoDuyen.than.code === 'CHUABIET' &&
+    (laVoDuyen.than.traLoiDuoc || []).length === 5,
+  'CÂU NGOÀI DANH SÁCH THÌ TRỢ LÝ NÓI KHÔNG BIẾT VÀ KÊ RA NĂM CÂU NÓ TRẢ LỜI ĐƯỢC',
+  'danh sách trắng, không danh sách cấm — và không đoán một câu nào về tiền');
+
+const haiThang = await goi({fn:'hoiTroLyTaiChinh', token:tkKTT,
+  u:'ketoantruong@gita365.vn', hoi:'thangBac'});
+bao(haiThang.than.ok && haiThang.than.nac.length === 5 &&
+    haiThang.than.moc.length === 7 && haiThang.than.canCu.length >= 2,
+  'trợ lý kể được HAI THANG chồng lên nhau, và mọi câu trả lời đều nêu CĂN CỨ',
+  '5 nấc · 7 mốc');
+
+/* ═══ PHÉP ĐO QUAN TRỌNG NHẤT CỦA CẢ PHẦN NÀY ═══
+
+   TRỢ LÝ NÓI GÌ THÌ CỔNG THẬT PHẢI NÓI Y HỆT.
+
+   Trợ lý tự tính lấy câu trả lời thì có ngày nó nói khác cổng, và người
+   ta tin trợ lý vì nó nói TRƯỚC. Hỏng theo hướng "nói không ký được mà
+   thật ra ký được" là hỏng tệ nhất: người chịu trách nhiệm khoản ấy đi
+   tìm người khác ký.
+
+   Nên phép đo này chạy vòng đôi — mọi khoản đang chờ × bốn người ký —
+   hỏi trợ lý trước, rồi BẤM DUYỆT THẬT, và đòi hai mã khớp nhau. Lượt
+   bị từ chối KHÔNG đổi gì trong sổ, nên vòng này chạy được thật. */
+const nguoiThu = [
+  {t:tkKTT, u:'ketoantruong@gita365.vn'}, {t:tkKT, u:'ketoan@gita365.vn'},
+  {t:tkQL2, u:'quanly2@gita365.vn'},      {t:tkGD, u:'giamdoc@gita365.vn'}];
+/* PHẢI SOI CẢ HAI CHIỀU. Bản đầu của phép đo này chỉ đối chiếu chiều
+   "trợ lý nói KHÔNG ký được", còn chiều "nói KÝ ĐƯỢC" thì bỏ qua vì nó
+   làm đổi sổ. Phá thử bắt ngay: cho trợ lý chấm mốc theo MỘT khoản thay
+   vì theo tổng tuần — nó đâm ra nói "ký được" ở đúng những chỗ cổng
+   chặn, và cả mười hai khoản rơi hết vào nhánh bị bỏ qua. Phép đo vẫn
+   xanh trong khi trợ lý đã có một bản luật riêng.
+
+   Nên nay MỌI cặp đều bấm duyệt thật. Sổ có đổi theo từng lượt, nhưng
+   hỏi trợ lý NGAY TRƯỚC mỗi lượt bấm thì hai bên luôn nhìn cùng một
+   trạng thái — và mọi chỗ lệch còn lại là lệch thật. */
+const choKy = db.prepare("SELECT id FROM chiPhi WHERE trangThai='choDuyet' LIMIT 12").all();
+let soCap = 0, lechMa = [], noiKyDuoc = 0, noiKhongKy = 0;
+for (const {id} of choKy) for (const ng of nguoiThu) {
+  const hoi = await goi({fn:'hoiTroLyTaiChinh', token:ng.t, u:ng.u,
+    hoi:'khoanChi', id});
+  if (!hoi.than.ok) continue;
+  const maNoi = hoi.than.kyDuoc ? 'KY_DUOC' : (hoi.than.maVuong || 'KHAC');
+  if (hoi.than.kyDuoc) noiKyDuoc++; else noiKhongKy++;
+  const that = await goi({fn:'duyetChi', token:ng.t, u:ng.u, id});
+  soCap++;
+  const maThat = that.than.ok ? 'KY_DUOC' : (that.than.code || 'KHAC');
+  if (maThat !== maNoi)
+    lechMa.push(id.slice(-6) + '·' + ng.u.split('@')[0] + ': trợ lý ' + maNoi +
+      ' · cổng ' + maThat);
+}
+bao(soCap >= 8 && lechMa.length === 0,
+  'TRỢ LÝ VÀ CỔNG DUYỆT NÓI Y HỆT NHAU — đối chiếu từng cặp khoản × người ký, CẢ HAI CHIỀU, khớp cả MÃ VƯỚNG',
+  lechMa.length ? 'LỆCH: ' + lechMa.slice(0, 4).join(' | ')
+    : soCap + ' cặp · 0 lệch');
+
+/* VÀ CẢ HAI CHIỀU ĐỀU CÓ MẶT THẬT. Một vòng đối chiếu mà mọi lượt đều
+   rơi về một phía thì nó chỉ chứng minh được một nửa, và nửa kia im
+   lặng — đúng chỗ bản đầu của phép đo này đã hỏng. */
+bao(noiKyDuoc > 0 && noiKhongKy > 0,
+  'và vòng ấy có CẢ hai chiều, không dồn hết về một phía',
+  noiKyDuoc + ' lượt "ký được" · ' + noiKhongKy + ' lượt "chưa ký được"');
+
+/* ── CHẶN Ở MỐC THÌ CHỈ NGƯỜI, KHÔNG CHỈ ĐƯỜNG VÒNG ── */
+const chiTo = await goi({fn:'ghiChi', token:tkTC, u:'truongcoach@gita365.vn',
+  chi:{khoanMuc:'tiepThi', soTien:22000000, hinhThuc:'chuyenKhoan',
+    dienGiai:'Chiến dịch tuyển sinh mùa hè', ngayChi:'2026-07-06T02:00:00.000Z',
+    coHoaDon:true, maHoaDon:'HD-TL1'}});
+const soiTo = await goi({fn:'hoiTroLyTaiChinh', token:tkKT, u:'ketoan@gita365.vn',
+  hoi:'khoanChi', id:chiTo.than.id});
+bao(soiTo.than.ok && soiTo.than.maVuong === 'CHUADUMOC' && !!soiTo.than.aiKyDuoc,
+  'KHOẢN CHẠM MỐC CHU KỲ THÌ TRỢ LÝ CHỈ RA AI KÝ ĐƯỢC — cả theo vai lẫn theo hạn mức được cấp',
+  'mốc ' + soiTo.than.soLieu.moc + ' · ' +
+    ((soiTo.than.aiKyDuoc.theoVai || []).concat(soiTo.than.aiKyDuoc.theoViTri || [])
+      .map(x => x.username).join(', ') || 'chưa ai'));
+
+bao(!!soiTo.than.khongGoiY && soiTo.than.khongGoiY.duong.length === 2 &&
+    /gộp/.test(soiTo.than.khongGoiY.duong[0]) &&
+    /trần chu kỳ/.test(soiTo.than.khongGoiY.duong[1]),
+  'VÀ TRỢ LÝ KHÔNG CHỈ ĐƯỜNG LÁCH — nó nêu hai đường vòng quen thuộc kèm chỗ đã canh sẵn',
+  'một trợ lý tài chính hữu ích là một trợ lý nguy hiểm: nó biết đủ luật để chỉ ra chỗ mỏng nhất');
+
+bao(!/nên tách|hãy tách|có thể tách|dời sang tuần sau thì/i.test(
+      JSON.stringify(soiTo.than)),
+  'không một câu nào trong câu trả lời đọc ra thành LỜI KHUYÊN chia nhỏ hay dời kỳ',
+  'nói ra chỗ canh là để người định đi đường vòng quay lại xin ký, không phải để chỉ đường');
+
+/* ── CHU KỲ CỦA NGƯỜI KHÁC LÀ MỘT CÂU KHÁC ── */
+bao(!(await goi({fn:'hoiTroLyTaiChinh', token:tkKT, u:'ketoan@gita365.vn',
+  hoi:'chuKyCuaToi', nguoi:'truongcoach@gita365.vn'})).than.ok,
+  'KẾ TOÁN CHI KHÔNG XEM ĐƯỢC CHU KỲ CHI CỦA MỘT NGƯỜI CỤ THỂ — cần R01–R03 hoặc kế toán trưởng');
+
+const ckNguoi = await goi({fn:'hoiTroLyTaiChinh', token:tkKTT,
+  u:'ketoantruong@gita365.vn', hoi:'chuKyCuaToi', nguoi:'truongcoach@gita365.vn'});
+bao(ckNguoi.than.ok && ckNguoi.than.soLieu.tong >= 22000000 &&
+    ckNguoi.than.soLieu.mocSau !== undefined,
+  'KẾ TOÁN TRƯỞNG XEM ĐƯỢC, VÀ TRỢ LÝ NÓI CÒN CÁCH MỐC SAU BAO NHIÊU',
+  'tuần ' + ckNguoi.than.soLieu.ky + ' · ' +
+    ckNguoi.than.soLieu.tong.toLocaleString('vi-VN') + 'đ · mốc ' +
+    ckNguoi.than.soLieu.moc + ' → ' + ckNguoi.than.soLieu.mocSau);
+
+/* ── VIỆC CỦA TÔI: TÁCH "TÔI KÝ ĐƯỢC" KHỎI "CHỜ NGƯỜI KHÁC" ── */
+const viecKT = await goi({fn:'hoiTroLyTaiChinh', token:tkKT, u:'ketoan@gita365.vn',
+  hoi:'viecCuaToi'});
+bao(viecKT.than.ok && viecKT.than.viec.every(x => x.loai !== 'chi' ||
+      (x.kyDuoc === true) !== (x.cuaAiKhac === true) || !x.kyDuoc),
+  'DANH SÁCH VIỆC TÁCH RIÊNG "TÔI KÝ ĐƯỢC" VỚI "CHỜ NGƯỜI KHÁC"',
+  'ký được ' + viecKT.than.soLieu.kyDuoc + ' · chờ người khác ' +
+    viecKT.than.soLieu.cuaAiKhac);
+
+bao(viecKT.than.viec.some(x => x.cuaAiKhac) &&
+    !viecKT.than.viec.filter(x => x.cuaAiKhac).some(x => x.kyDuoc),
+  'khoản đã chạm mốc nằm trong danh sách nhưng KHÔNG bấm ký được — nêu để giục, không để ký',
+  'trộn chúng vào là làm danh sách dài ra bằng những dòng bấm vào thì bị từ chối');
+
+bao(!/@gita365\.vn/.test(JSON.stringify(viecKT.than.viec.filter(x => x.loai === 'thu'))) &&
+    !/hoTen|dienThoai/.test(JSON.stringify(viecKT.than)),
+  'và trợ lý KHÔNG chở một trường hồ sơ khách nào — điều 11: vị trí tài chính mở đúng những cửa TIỀN');
+
+/* ── MỐC KHÔNG AI KÝ ĐƯỢC THÌ NÓI THẲNG LÀ KHÔNG AI ── */
+const mocCao = await goi({fn:'hoiTroLyTaiChinh', token:tkKTT,
+  u:'ketoantruong@gita365.vn', hoi:'aiKyDuoc', moc:'C6'});
+bao(mocCao.than.ok && typeof mocCao.than.soLieu.soNguoiKyDuoc === 'number',
+  'HỎI MỘT MỐC THÌ TRỢ LÝ ĐẾM ĐƯỢC HÔM NAY BAO NHIÊU NGƯỜI KÝ ĐƯỢC',
+  'mốc C6 · ' + mocCao.than.soLieu.soNguoiKyDuoc + ' người');
+
+const mocC1 = await goi({fn:'hoiTroLyTaiChinh', token:tkKTT,
+  u:'ketoantruong@gita365.vn', hoi:'aiKyDuoc', tong:12000000});
+bao(mocC1.than.ok && mocC1.than.soLieu.moc === 'C1',
+  'và hỏi bằng SỐ TIỀN TỔNG thì nó tự tìm ra mốc — không bắt người dùng thuộc bảng mốc',
+  '12 triệu → mốc ' + mocC1.than.soLieu.moc);
+
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ

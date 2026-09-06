@@ -9965,6 +9965,82 @@ const { chromium } = require(PW);
         /G\.tcNgan === 'tin'/.test(nguonMan);
     }
 
+    /* ── TRỢ LÝ PHÒNG TÀI CHÍNH ──
+
+       Hai nửa, và mỗi nửa hỏng một kiểu:
+
+       NỬA VĂN BẢN chạy trên máy khách, tra năm kho văn bản của phòng.
+       Trước 9.99.4 nó không tra được câu nào trong đó — hỏi "chia nhỏ
+       khoản chi" thì trả về một kịch bản tư vấn phụ huynh trùng vài
+       từ. Nên phép đo này HỎI THẬT một câu và đòi đúng dòng sổ rủi ro.
+
+       NỬA SỔ chạy ở máy chủ và đã có phép đo riêng ở thu-worker.js —
+       nó đối chiếu từng cặp khoản × người ký với cổng duyệt thật. Ở
+       đây chỉ canh một chỗ trôi: danh sách câu hỏi máy chủ nhận và
+       danh sách nút màn hình bày ra phải phủ nhau, vì một cái nút gọi
+       một câu máy chủ không nhận thì người dùng bấm vào và không có
+       chuyện gì xảy ra. */
+    {
+      const nguonTl = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'tro-ly-tai-chinh.js'), 'utf8');
+      const nguonMan2 = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'src', 'phong-tai-chinh.js'), 'utf8');
+
+      const khoiCau = (nguonTl.match(/const CAU_HOI = \{[\s\S]*?\n\};/) || [''])[0];
+      const cauMayChu = [];
+      let m; const re = /^\s{2}([a-zA-Z]+):\s*\{ten:/gm;
+      while ((m = re.exec(khoiCau))) cauMayChu.push(m[1]);
+      ra.tlCauMayChu = cauMayChu.sort();
+      /* Mỗi câu máy chủ nhận phải có một đường gọi ở màn — nút bày sẵn
+         hoặc lượt bấm vào một khoản chi. */
+      ra.tlCauThieuNut = cauMayChu.filter(c => nguonMan2.indexOf("'" + c + "'") < 0);
+      ra.tlCauDu = cauMayChu.length === 5 && ra.tlCauThieuNut.length === 0;
+      /* Và trợ lý phải KHÔNG gọi ra ngoài. Một dòng fetch trong tệp này
+         là một dòng sổ tiền rời khỏi máy chủ Học viện. */
+      ra.tlKhongGoiRaNgoai = !/\bfetch\s*\(|https?:\/\//.test(nguonTl);
+
+      const tl = await p.evaluate(() => {
+        const ds = (window.G.aiNguonThem ? window.G.aiNguonThem() : [])
+          .filter(n => /^TC_/.test(n.ten_kho));
+        const tra = window.G.aiTra ? window.G.aiTra('chia nhỏ khoản chi để né cấp duyệt') : [];
+        return {
+          so: ds.length,
+          rong: ds.filter(n => !n.kho || !n.kho.length).map(n => n.ten_kho),
+          thieuQuyen: ds.filter(n => !n.quyen).map(n => n.ten_kho),
+          /* Bản ghi phải có MÃ và TÊN đọc ra được — nguồn dựng bằng
+             lay() dễ quên đúng chỗ này, vì nó đổi hình bản ghi. */
+          honHinh: ds.filter(n => {
+            const x = n.kho[0];
+            return !x || !n.ma(x) || !n.ten(x);
+          }).map(n => n.ten_kho),
+          trungRuiRo: (tra || []).slice(0, 6).some(x => /TC-RR/.test(String(x.ma || '')))
+        };
+      });
+      ra.tlNguonVb = tl.so;
+      ra.tlVbDu = tl.so === 5 && !tl.rong.length && !tl.thieuQuyen.length &&
+        !tl.honHinh.length;
+      ra.tlVbHong = [].concat(tl.rong, tl.thieuQuyen, tl.honHinh);
+      ra.tlTraTrung = tl.trungRuiRo;
+    }
+
+    bao(ra.tlVbDu && ra.tlTraTrung && ra.tlCauDu && ra.tlKhongGoiRaNgoai,
+      'TRỢ LÝ PHÒNG TÀI CHÍNH — TRA ĐƯỢC NĂM KHO VĂN BẢN CỦA PHÒNG, VÀ KHÔNG GỌI RA NGOÀI MỘT LƯỢT NÀO. Trợ lý GITA tra kho theo một danh sách nguồn khai tay, và tới 9.99.3 năm kho văn bản của phòng tài chính — điều lệ, quy chế, quy trình, biểu mẫu, sổ rủi ro — không có tên trong danh sách ấy. Nó KHÔNG im lặng ở những câu đó: nó trả về một kịch bản tư vấn phụ huynh trùng vài từ, và đó là kiểu hỏng tệ hơn im lặng vì im lặng thì người ta đi tra chỗ khác còn trả lời sai thì người ta tin. Nên phép đo này không đếm khai báo mà HỎI THẬT một câu — "chia nhỏ khoản chi để né cấp duyệt" — rồi đòi trong sáu kết quả đầu phải có một dòng của sổ rủi ro, vốn là chỗ câu ấy thuộc về. Ba kho trong năm khai theo hình khác mảng nên chúng dựng danh sách bằng lay() lúc tra chứ không chép một bản thứ hai vào kho đã mã hoá; đổi hình bản ghi là chỗ dễ mất mã hoặc mất tên, nên phép đo đọc thẳng bản ghi đầu của từng nguồn. Nửa còn lại của trợ lý chạy ở máy chủ và đọc SỔ THẬT: nó không gọi ra một mô hình ngôn ngữ nào, vì sổ tài chính là thứ cuối cùng được phép rời khỏi máy chủ Học viện — phép đo soi thẳng nguồn tệp và đỏ nếu thấy một lượt fetch hay một địa chỉ mạng. Và danh sách câu hỏi máy chủ nhận phải phủ đúng những đường gọi trên màn: một cái nút gọi một câu máy chủ không nhận thì người dùng bấm vào và không có chuyện gì xảy ra',
+      (ra.tlVbDu && ra.tlTraTrung && ra.tlCauDu && ra.tlKhongGoiRaNgoai)
+        ? ra.tlNguonVb + ' kho văn bản · hỏi thật trúng sổ rủi ro · ' +
+          (ra.tlCauMayChu || []).length + ' câu đều có đường gọi trên màn · không một lượt gọi ra ngoài'
+        /* Dòng đỏ phải nói ra ĐÚNG mệnh đề nào gãy. Bản đầu chỉ in hai
+           danh sách, và khi cái gãy là SỐ NGUỒN thì cả hai danh sách
+           đều rỗng — người đọc thấy một dòng đỏ không chỉ vào đâu. */
+        : [ra.tlNguonVb !== 5 ? 'chỉ có ' + ra.tlNguonVb + '/5 kho văn bản vào được danh sách nguồn' : '',
+           (ra.tlVbHong || []).length ? 'nguồn hỏng: ' + ra.tlVbHong.join(' · ') : '',
+           !ra.tlTraTrung ? 'hỏi thật "chia nhỏ khoản chi" mà KHÔNG ra dòng sổ rủi ro nào' : '',
+           (ra.tlCauThieuNut || []).length ? 'câu máy chủ nhận mà màn không gọi: ' +
+             ra.tlCauThieuNut.join(' · ') : '',
+           (ra.tlCauMayChu || []).length !== 5 ? 'máy chủ khai ' +
+             (ra.tlCauMayChu || []).length + ' câu, không phải 5' : '',
+           !ra.tlKhongGoiRaNgoai ? 'TRỢ LÝ MÁY CHỦ CÓ MỘT LƯỢT GỌI RA NGOÀI' : ''
+          ].filter(Boolean).join(' · '));
+
     bao(ra.tinBacKhop && ra.tinMauLaBienCss && ra.mayChuKhongGoMau && ra.manCoNganTin,
       'BẢNG TIN PHÒNG TÀI CHÍNH — BỐN BẬC MÀU KHAI Ở MÁY CHỦ PHẢI CÓ ĐỦ BỐN MÃ MÀU Ở MÀN HÌNH, VÀ MÃ MÀU CHỈ ĐƯỢC LÀ BIẾN CSS. Máy chủ giữ ĐỊNH NGHĨA bậc — tên, thứ tự xếp, bậc nào bắt buộc có người nhận và hạn xử lý; màn hình giữ MÃ MÀU. Hai nửa của một sự thật nằm ở hai tệp, nên chúng phải phủ đúng cùng một tập khoá: thêm một bậc ở máy chủ mà quên thêm màu thì bậc mới vẽ ra màu mặc định, và cả điểm của việc phân cấp — mở bảng ra là nhìn màu biết xử lý cái nào trước — mất đúng ở bậc vừa thêm. Màu phải là var(--bad) var(--alert) var(--warn) var(--ok) chứ không phải mã hex gõ tay: biến CSS đã tính sẵn cả nền sáng lẫn nền tối, còn một mã hex thì không đổi theo nền, nên nó đúng ở một nền và chìm ở nền kia — và người dùng nền tối là người không bao giờ báo lỗi ấy, họ chỉ thôi dùng bảng. Máy chủ cũng không được gõ mã màu: dựng bản thứ hai của bảng màu ở nơi không ai nhớ là có bản thứ hai',
       ra.tinBacKhop
