@@ -70,11 +70,15 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE UNIQUE INDEX IF NOT EXISTS ix_users_username ON users (lower(username));
 CREATE INDEX        IF NOT EXISTS ix_users_email    ON users (lower(email));
 
--- Mã khách hàng: sinh mã mới cần đếm số mã đã có, và tra chứng từ
--- thanh toán theo mã. Chỉ mục MỘT PHẦN — phần lớn tài khoản nội bộ
--- không có mã khách hàng, và chỉ mục một phần thì không phải mang
--- theo hàng trăm nghìn dòng NULL.
-CREATE INDEX IF NOT EXISTS ix_users_makh ON users (maKhachHang)
+-- Mã khách hàng. MỘT PHẦN, vì phần lớn tài khoản nội bộ không có mã và
+-- chỉ mục một phần thì không phải mang theo hàng trăm nghìn dòng trống.
+--
+-- Và DUY NHẤT, không chỉ để tra cho nhanh. Mã số khách hàng là thứ việc
+-- nâng tầng dùng để dò phiếu thanh toán, nên hai nhà chung một mã là
+-- tiền nhà này mở tầng cho nhà kia. Bộ đếm ở maKhachHangMoi() đã lo
+-- chuyện sinh mã không trùng; chỉ mục này là lớp chặn thứ hai, ở tầng
+-- dữ liệu, cho ngày bộ đếm sai vì một lý do chưa ai nghĩ ra.
+CREATE UNIQUE INDEX IF NOT EXISTS ix_users_makh ON users (maKhachHang)
   WHERE maKhachHang IS NOT NULL AND maKhachHang <> '';
 
 -- ─────────────────────────────────────────────────────────────

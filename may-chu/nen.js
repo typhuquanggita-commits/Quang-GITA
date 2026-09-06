@@ -238,3 +238,26 @@ export async function kiemPhien(db, token, u) {
   if (hv) { hoSo.tier = Number(hv.tier || 0); hoSo.studentId = hv.id; }
   return hoSo;
 }
+
+/* ═══════════════ MẬT KHẨU MẠNH YẾU — MỘT LUẬT, MỘT CHỖ ═══════════════
+
+   Luật này phải nằm ở ĐÚNG MỘT CHỖ. Nền cũ có hai bản: cửa đổi mật khẩu
+   gọi checkPwStrength_, còn cửa kích hoạt tài khoản mới chỉ đòi đủ mười
+   ký tự — nên '1234567890' MỞ ĐƯỢC một tài khoản mới trong khi chính
+   chuỗi ấy bị từ chối lúc đổi. Chặt ở cửa sau, hở ở cửa trước, và cửa
+   trước mới là chỗ người lạ đi vào.
+
+/* Mật khẩu dễ đoán thì chặn NGAY LẦN ĐẦU, không đợi tới lúc bị dò.
+   Danh sách ngắn có chủ ý: nó chặn những chuỗi người ta gõ khi muốn cho
+   xong, không cố làm thay việc của một bộ đo độ mạnh. */
+const DE_DOAN = ['123456', '12345678', 'password', 'matkhau', 'qwerty',
+  'gita365', 'abc123', '111111', '000000', 'admin'];
+export function mkQuaDeDoan(mk, nd) {
+  if (mk.length < 10) return 'Mật khẩu phải từ 10 ký tự trở lên.';
+  const t = mk.toLowerCase();
+  if (DE_DOAN.some(x => t.includes(x))) return 'Mật khẩu này quá dễ đoán. Chọn chuỗi khác.';
+  const ten = String(nd.username || '').toLowerCase().split('@')[0];
+  if (ten && ten.length >= 4 && t.includes(ten))
+    return 'Mật khẩu không được chứa tên đăng nhập.';
+  return '';
+}

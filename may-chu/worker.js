@@ -13,10 +13,11 @@
    ── PHẦN NÀY ĐÃ PORT TỚI ĐÂU ──
 
    Xong: đăng nhập · đăng xuất · kiểm phiên · đổi mật khẩu · cấp khoá
-   kho · trạng thái máy chủ · đồng bộ hồ sơ và cài đặt.
+   kho · trạng thái máy chủ · đồng bộ hồ sơ và cài đặt · đăng ký, mã xác
+   nhận qua email, kích hoạt.
 
-   Chưa: đăng ký/OTP/kích hoạt, quên mật khẩu, tài liệu, chứng cứ hoa
-   hồng, sổ cộng đồng, quyền xem khách, tình huống khách, xuất Sheet.
+   Chưa: quên mật khẩu, tài liệu, chứng cứ hoa hồng, sổ cộng đồng,
+   quyền xem khách, tình huống khách, xuất Sheet, nâng tầng.
 
    CHƯA PORT THÌ BÁO TO, KHÔNG IM. Danh sách CHUA_PORT ở dưới trả về
    đúng một câu nói rõ việc ấy chưa có ở nền mới. Trả 'Yêu cầu không
@@ -25,8 +26,9 @@
    chỗ suốt buổi.
    ═══════════════════════════════════════════════════════════════ */
 
-import { Kho, kiemPhien, kiemMatKhau, bamMoi, muoiMoi } from './nen.js';
+import { Kho, kiemPhien, kiemMatKhau, bamMoi, muoiMoi, mkQuaDeDoan } from './nen.js';
 import { dongBo } from './dong-bo.js';
+import { dangKy, guiLaiOtp, xacThucOtp, kichHoat } from './dang-ky.js';
 
 const HAN_PHIEN_GIO      = 12;
 const HAN_KHOA_GIO       = 12;
@@ -124,8 +126,6 @@ const gon_ = ds => ds.filter((x, i) => x && ds.indexOf(x) === i);
 /* ═══════════════ VIỆC ═══════════════ */
 
 export const CHUA_PORT = {
-  dangKy: 'đăng ký tài khoản', guiLaiOtp: 'gửi lại mã OTP',
-  xacThucOtp: 'xác thực mã OTP', kichHoat: 'kích hoạt tài khoản',
   quenMatKhau: 'quên mật khẩu', datLaiMatKhau: 'đặt lại mật khẩu',
   xuatSheet: 'xuất bảng tính',
   napTaiLieu: 'gửi tài liệu', duyetTaiLieu: 'duyệt tài liệu',
@@ -144,6 +144,14 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo'];
 async function lam(fn, y, env, db) {
   if (fn === 'dangNhap')  return await dangNhap(y, env, db);
   if (fn === 'dangXuat')  return await dangXuat(y, db);
+
+  /* Bốn bước đăng ký — KHÔNG cần phiên, vì người đăng ký chưa có tài
+     khoản nào để mở phiên. Đây cũng là lý do chúng là cửa dễ bị lợi
+     dụng nhất; mọi chỗ chặt nằm trong dang-ky.js. */
+  if (fn === 'dangKy')     return await dangKy(y, env, db);
+  if (fn === 'guiLaiOtp')  return await guiLaiOtp(y, env, db);
+  if (fn === 'xacThucOtp') return await xacThucOtp(y, env, db);
+  if (fn === 'kichHoat')   return await kichHoat(y, env, db);
 
   if (CHUA_PORT[fn]) return {ok: false, code: 'CHUAPORT',
     error: 'Việc "' + CHUA_PORT[fn] + '" chưa chuyển sang máy chủ mới. ' +
@@ -248,21 +256,6 @@ async function doiMatKhau(y, env, db, hoSo) {
   await Kho.ghiNhatKy(db, {uid: nd.id, username: nd.username, viec: 'DOI_MAT_KHAU',
     chiTiet: 'đá ' + da + ' phiên khác'});
   return {ok: true, daPhien: da};
-}
-
-/* Mật khẩu dễ đoán thì chặn NGAY LẦN ĐẦU, không đợi tới lúc bị dò.
-   Danh sách ngắn có chủ ý: nó chặn những chuỗi người ta gõ khi muốn cho
-   xong, không cố làm thay việc của một bộ đo độ mạnh. */
-const DE_DOAN = ['123456', '12345678', 'password', 'matkhau', 'qwerty',
-  'gita365', 'abc123', '111111', '000000', 'admin'];
-function mkQuaDeDoan(mk, nd) {
-  if (mk.length < 10) return 'Mật khẩu phải từ 10 ký tự trở lên.';
-  const t = mk.toLowerCase();
-  if (DE_DOAN.some(x => t.includes(x))) return 'Mật khẩu này quá dễ đoán. Chọn chuỗi khác.';
-  const ten = String(nd.username || '').toLowerCase().split('@')[0];
-  if (ten && ten.length >= 4 && t.includes(ten))
-    return 'Mật khẩu không được chứa tên đăng nhập.';
-  return '';
 }
 
 /* ── CẤP KHOÁ KHO ── */

@@ -2,7 +2,7 @@
 #  GITA 365 · CẤU HÌNH TRIỂN KHAI CỬA VÀO MỚI
 #
 #  Chưa triển khai — tệp này là bản khai để lúc triển khai không phải
-#  nhớ lại từ đầu. Ba việc chủ hệ phải làm bằng tay, kê ở cuối tệp.
+#  nhớ lại từ đầu. Năm việc chủ hệ phải làm bằng tay, kê ở cuối tệp.
 #
 #  ── VÌ SAO CLOUDFLARE WORKERS ──
 #
@@ -32,6 +32,17 @@ name = "gita365"
 main = "worker.js"
 compatibility_date = "2026-09-01"
 
+[vars]
+# KHÔNG phải bí mật — đây là địa chỉ công khai của bản web, dùng để dựng
+# đường dẫn kích hoạt trong thư. Sai địa chỉ ở đây thì thư đi đúng nhưng
+# đường dẫn trong thư trỏ vào chỗ không có gì.
+GITA_DIA_CHI_WEB = "https://gita.edu.vn"
+
+# Địa chỉ đứng tên người gửi. Tên miền này PHẢI được xác thực ở nhà gửi
+# thư (SPF/DKIM), nếu không thì thư đi nhưng rơi vào mục spam — mà một
+# mã xác nhận nằm trong mục spam thì coi như không gửi.
+GITA_THU_GUI_TU = "GITA 365 <khonggui@gita.edu.vn>"
+
 # Nguồn dữ liệu. Tạo bằng:  npx wrangler d1 create gita365
 # rồi dán database_id vào đây (id KHÔNG phải bí mật — nó chỉ định danh).
 [[d1_databases]]
@@ -49,7 +60,7 @@ binding = "HOSO"
 bucket_name = "gita365-hoso"
 
 # ═══════════════════════════════════════════════════════════════
-#  BA BÍ MẬT — KHÔNG BAO GIỜ VIẾT VÀO TỆP NÀY
+#  BỐN BÍ MẬT — KHÔNG BAO GIỜ VIẾT VÀO TỆP NÀY
 #
 #  Tệp này nằm trong kho mã. Kho mã đi qua git, qua máy người khác, qua
 #  màn hình lúc chia sẻ. Một bí mật viết vào đây là một bí mật đã lộ từ
@@ -75,12 +86,30 @@ bucket_name = "gita365-hoso"
 #        Khoá ký chứng cứ hoa hồng (HMAC). Chưa dùng tới ở phần đã
 #        port; nạp sẵn để lúc port GITA_ChungCu.gs không phải quay lại.
 #
-#  ═══════════════ BỐN VIỆC LÚC TRIỂN KHAI ═══════════════
+#    npx wrangler secret put GITA_KHOA_THU
+#        Khoá của nhà gửi thư (mặc định Resend). Mã xác nhận đăng ký và
+#        mã lấy lại mật khẩu đi bằng khoá này — không có nó thì luồng
+#        đăng ký dừng ở bước một và NÓI RA, chứ không im lặng báo "đã
+#        gửi mã" cho một lá thư không đi.
+#
+#        VÌ SAO KHÔNG GỬI QUA GMAIL NHƯ NỀN CŨ: Gmail thường cho 100
+#        thư/ngày, Workspace 1.500–2.000. Ở 100.000 tài khoản, riêng mã
+#        đăng ký và mã lấy lại mật khẩu đã vượt trong một ngày bình
+#        thường — và hết hạn ngày là hết SẠCH, mã của khách hàng thật
+#        ngừng gửi tới nửa đêm mà không có gì báo trước.
+#
+#        Chi phí: Resend miễn phí 3.000 thư/tháng, rồi khoảng 20 đô cho
+#        50.000 thư. CHỦ HỆ NÊN NHÌN CON SỐ NÀY TRƯỚC KHI TRIỂN KHAI.
+#        Đổi sang Mailgun/SendGrid/SES là viết một hàm cùng chữ ký với
+#        guiQuaResend_ trong may-chu/thu.js — đúng một chỗ.
+#
+#  ═══════════════ NĂM VIỆC LÚC TRIỂN KHAI ═══════════════
 #
 #  1. npx wrangler d1 create gita365          → dán database_id lên trên
 #  2. npx wrangler d1 execute gita365 --file=csdl.sql --remote
-#  3. ba lệnh secret put ở trên
-#  4. npx wrangler deploy
+#  3. bốn lệnh secret put ở trên
+#  4. xác thực tên miền gita.edu.vn ở nhà gửi thư (SPF + DKIM)
+#  5. npx wrangler deploy
 #
 #  Rồi trong ứng dụng: Super Admin → Quản trị trang → Nối máy chủ →
 #  dán địa chỉ Worker → Lưu → Gọi thử.

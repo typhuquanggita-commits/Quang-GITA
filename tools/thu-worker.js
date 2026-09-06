@@ -83,9 +83,16 @@ const worker = (await import('../may-chu/worker.js')).default;
 const nen    = await import('../may-chu/nen.js');
 
 const kho = dungR2();
+/* HỘP THƯ GIẢ. guiThu đẩy thư vào đây thay vì gọi ra mạng — nên bộ thử
+   đọc được ĐÚNG lá thư người dùng sẽ nhận, kể cả mã sáu số nằm trong
+   đó. Không có nó thì phần đăng ký chỉ kiểm được "có trả về ok không",
+   mà chỗ dễ sai nhất lại là NỘI DUNG thư đi tới đâu và mang gì. */
+const hopThu = [];
 const env = {
   CSDL: dungD1(db),
   HOSO: kho,
+  GHI_THU: hopThu,
+  GITA_DIA_CHI_WEB: 'https://gita.edu.vn',
   GITA_TIEU: 'tieu-thu-nghiem-khong-dung-that',
   GITA_KHOA_KHO: JSON.stringify({
     nen: 'khoa-nen', nghe: 'khoa-nghe', 'nghe-cao': 'khoa-nghe-cao',
@@ -349,8 +356,132 @@ bao(!soi.than.caiDat.khothem.du['GITA-0001|tl·TU-GHI'],
 bao(soi.than.caiDat.xinthem && soi.than.caiDat.xinthem.du.length === 1,
   'nhưng LỜI XIN của gia đình thì lên được — đó là đường duy nhất họ đặt yêu cầu');
 
-/* ═══════════════ 9 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
-console.log('\n9 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
+/* ═══════════════ 9 · ĐĂNG KÝ, MÃ SÁU SỐ QUA EMAIL, KÍCH HOẠT ═══════════════ */
+console.log('\n9 · ĐĂNG KÝ QUA EMAIL');
+const thuCuoi = () => hopThu[hopThu.length - 1] || {den:'', tieuDe:'(chưa có thư)', than:''};
+const HOSO_MOI = {hoTen: 'Trần Thị B', email: 'nhamoi@vidu.vn', dienThoai: '0912345678',
+  tenCon: 'Trần Văn C', lop: '7', tinh: 'Hà Nội'};
+
+/* Kiểm dữ liệu vào TRƯỚC khi gửi thư — sai định dạng thì không tốn một
+   lá thư nào, và cũng không tạo một dòng chờ nào. */
+hopThu.length = 0;
+bao(!(await goi({fn: 'dangKy', hoSo: {...HOSO_MOI, email: 'khong-phai-email'}})).than.ok &&
+    !(await goi({fn: 'dangKy', hoSo: {...HOSO_MOI, dienThoai: '123'}})).than.ok &&
+    !(await goi({fn: 'dangKy', hoSo: {...HOSO_MOI, tenCon: ''}})).than.ok,
+  'email sai, điện thoại sai, thiếu tên con — đều bị chặn');
+bao(hopThu.length === 0, 'và không lá thư nào bị gửi đi cho ba lượt sai ấy');
+
+const dk = await goi({fn: 'dangKy', hoSo: HOSO_MOI});
+bao(dk.than.ok && /mã sáu số/.test(dk.than.thongBao), 'đăng ký nhận về lời nhắn chờ mã');
+bao(hopThu.length === 1 && thuCuoi().den === 'nhamoi@vidu.vn',
+  'thư đi đúng địa chỉ người đăng ký', thuCuoi().tieuDe);
+const maOtp = (thuCuoi().than.match(/là: (\d{6})/) || [])[1];
+bao(!!maOtp && maOtp.length === 6, 'thư mang MÃ SÁU SỐ đọc được', maOtp);
+
+/* Mã KHÔNG được nằm nguyên văn trong cơ sở dữ liệu. Một bản sao lưu lọt
+   ra là mọi mã đang chờ đều đọc được, và mỗi mã ấy mở một tài khoản mới
+   mang tên người khác. */
+const dong = db.prepare("SELECT * FROM dangKyCho WHERE email = 'nhamoi@vidu.vn'").get();
+bao(dong && dong.otpHash && dong.otpHash.indexOf(maOtp) < 0 && dong.otpHash.length === 64,
+  'mã trong sổ đã BĂM, không nằm nguyên văn');
+
+/* Câu trả lời phải GIỐNG HỆT nhau cho email đã có và email chưa có. */
+const dkTrung = await goi({fn: 'dangKy',
+  hoSo: {...HOSO_MOI, email: 'phuhuynh@gita365.vn'}});
+bao(dkTrung.than.ok && dkTrung.than.thongBao.replace('phuhuynh@gita365.vn', 'nhamoi@vidu.vn')
+      === dk.than.thongBao,
+  'EMAIL ĐÃ CÓ TÀI KHOẢN trả lời Y HỆT email chưa có — không dò được ai đã đăng ký');
+bao(/đã có tài khoản/.test(thuCuoi().tieuDe),
+  'nhưng vẫn gửi một thư nhắc, để người THẬT biết phải làm gì', thuCuoi().tieuDe);
+
+/* Nhập sai mã: đếm lùi và huỷ mã, không cho dò mãi. */
+bao(!(await goi({fn: 'xacThucOtp', email: 'nhamoi@vidu.vn', ma: '000000'})).than.ok,
+  'mã sai thì từ chối');
+const sai2 = await goi({fn: 'xacThucOtp', email: 'nhamoi@vidu.vn', ma: '111111'});
+bao(/Còn \d+ lần/.test(sai2.than.error || ''), 'và nói còn mấy lần nhập', sai2.than.error);
+for (let i = 0; i < 4; i++)
+  await goi({fn: 'xacThucOtp', email: 'nhamoi@vidu.vn', ma: '222222'});
+bao(!(await goi({fn: 'xacThucOtp', email: 'nhamoi@vidu.vn', ma: maOtp})).than.ok,
+  'SAI QUÁ NĂM LẦN THÌ HUỶ MÃ — kể cả sau đó gõ đúng mã cũng không qua');
+
+/* Gửi lại mã: mã cũ chết, mã mới sống. */
+hopThu.length = 0;
+db.prepare("DELETE FROM chanNhip WHERE khoa LIKE 'dangKy%'").run();
+await goi({fn: 'guiLaiOtp', email: 'nhamoi@vidu.vn'});
+const maMoi = (thuCuoi().than.match(/: (\d{6})/) || [])[1];
+bao(!!maMoi && maMoi !== maOtp, 'gửi lại thì ra mã KHÁC', maMoi);
+bao(!(await goi({fn: 'xacThucOtp', email: 'nhamoi@vidu.vn', ma: maOtp})).than.ok,
+  'mã cũ hết dùng được sau khi gửi lại');
+
+const xt = await goi({fn: 'xacThucOtp', email: 'nhamoi@vidu.vn', ma: maMoi});
+bao(xt.than.ok, 'mã mới đúng thì qua');
+const lien = (thuCuoi().than.match(/#kichhoat=([a-f0-9]+)/) || [])[1];
+bao(!!lien && lien.length === 64,
+  'và thư kế tiếp mang ĐƯỜNG DẪN kích hoạt — người đăng ký phải quay lại TỪ hòm thư',
+  'token ' + lien.length + ' ký tự hex');
+const dong2 = db.prepare("SELECT * FROM dangKyCho WHERE email = 'nhamoi@vidu.vn'").get();
+bao(!dong2.otpHash, 'bản băm mã đã xoá sau khi dùng xong — bí mật dùng rồi thì không giữ lại');
+
+/* Kích hoạt: cùng một luật mật khẩu với chỗ đổi mật khẩu. */
+bao(!(await goi({fn: 'kichHoat', token: lien, mk: '1234567890'})).than.ok,
+  'MẬT KHẨU DỄ ĐOÁN KHÔNG MỞ ĐƯỢC TÀI KHOẢN MỚI',
+  'nền cũ để cửa này chỉ đòi mười ký tự, nên đúng chuỗi này mở được');
+bao(!(await goi({fn: 'kichHoat', token: 'bia-ra', mk: 'MotChuoiTuTe2026!'})).than.ok,
+  'đường dẫn bịa thì không mở được');
+
+hopThu.length = 0;
+const kh = await goi({fn: 'kichHoat', token: lien, mk: 'MotChuoiTuTe2026!'});
+bao(kh.than.ok && /^GITA-\d{4}$/.test(kh.than.maKhachHang || ''),
+  'kích hoạt xong, cấp mã số khách hàng', kh.than.maKhachHang);
+bao(/tài khoản đã mở/.test(thuCuoi().tieuDe), 'và gửi thư báo đã mở');
+
+const dnMoi = await goi({fn: 'dangNhap', u: 'nhamoi@vidu.vn', mk: 'MotChuoiTuTe2026!'});
+bao(dnMoi.than.ok && dnMoi.than.role === 'R13', 'tài khoản mới đăng nhập được ngay', dnMoi.than.role);
+const hvMoi = db.prepare("SELECT * FROM students WHERE phuHuynhId = ?").get(
+  db.prepare("SELECT id FROM users WHERE email = 'nhamoi@vidu.vn'").get().id);
+bao(hvMoi && hvMoi.hoTen === 'Trần Văn C' && Number(hvMoi.tier) === 0,
+  'và có hồ sơ học viên ở TẦNG 0 — chờ KPI và xác nhận thanh toán, máy chủ không tự nâng');
+
+bao(!(await goi({fn: 'kichHoat', token: lien, mk: 'MotChuoiTuTe2026!'})).than.ok,
+  'ĐƯỜNG DẪN DÙNG MỘT LẦN — bấm lại không mở thêm tài khoản thứ hai');
+
+/* MÃ SỐ KHÁCH HÀNG KHÔNG ĐƯỢC TRÙNG. Nền cũ đếm count(*)+1 và phải
+   quây trong khoá; ở đây là một câu lệnh cộng thêm, không cần khoá. */
+const dem = {};
+for (let i = 0; i < 30; i++) {
+  db.prepare("DELETE FROM chanNhip").run();
+  const e = 'nha' + i + '@vidu.vn';
+  await goi({fn: 'dangKy', hoSo: {...HOSO_MOI, email: e}});
+  const m = (thuCuoi().than.match(/là: (\d{6})/) || [])[1];
+  await goi({fn: 'xacThucOtp', email: e, ma: m});
+  const t = (thuCuoi().than.match(/#kichhoat=([a-f0-9]+)/) || [])[1];
+  const r = await goi({fn: 'kichHoat', token: t, mk: 'MotChuoiTuTe2026!'});
+  dem[r.than.maKhachHang] = (dem[r.than.maKhachHang] || 0) + 1;
+}
+bao(Object.keys(dem).length === 30 && Object.values(dem).every(x => x === 1),
+  'ba mươi lượt kích hoạt ra BA MƯƠI mã khác nhau, không lượt nào trùng',
+  Object.keys(dem).sort()[0] + ' … ' + Object.keys(dem).sort().pop());
+
+/* Trần gửi thư: chặn người dội thư vào một hòm thư. */
+db.prepare("DELETE FROM chanNhip").run();
+hopThu.length = 0;
+for (let i = 0; i < 6; i++) await goi({fn: 'dangKy', hoSo: {...HOSO_MOI, email: 'doi@vidu.vn'}});
+bao(hopThu.length <= 3, 'một địa chỉ không nhận quá ba thư đăng ký mỗi giờ',
+  hopThu.length + ' thư trong 6 lượt');
+bao((await goi({fn: 'dangKy', hoSo: {...HOSO_MOI, email: 'doi@vidu.vn'}})).than.ok,
+  'và lượt bị chặn vẫn trả lời Y HỆT lượt thường — người dội thư không biết mình đã bị chặn');
+
+/* Chữ người dùng gõ không được nhét nội dung vào thư mang tên GITA. */
+db.prepare("DELETE FROM chanNhip").run();
+hopThu.length = 0;
+await goi({fn: 'dangKy', hoSo: {...HOSO_MOI, email: 'chennoidung@vidu.vn',
+  hoTen: 'A\nBcc: nan-nhan@vidu.vn\nNội dung giả mạo'}});
+bao(hopThu.length === 1 && thuCuoi().than.indexOf('\nBcc:') < 0,
+  'HỌ TÊN TỰ ĐẶT KHÔNG XUỐNG DÒNG ĐƯỢC trong thân thư',
+  'thư mang tên Học viện GITA, để nguyên là mở một chỗ nhét nội dung tuỳ ý');
+
+/* ═══════════════ 10 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
+console.log('\n10 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng
    nó — đúng chuyện vừa xảy ra khi dongBo được port. */
@@ -363,8 +494,8 @@ const bia = (await goi({fn: 'mot-viec-khong-co-that', token: tk})).than;
 bao(bia.code !== 'CHUAPORT' && !bia.ok, 'còn việc bịa ra thì vẫn là yêu cầu không hợp lệ',
   bia.error);
 
-/* ═══════════════ 10 · KHÔNG RÒ RA NGOÀI ═══════════════ */
-console.log('\n10 · KHÔNG RÒ RA NGOÀI');
+/* ═══════════════ 11 · KHÔNG RÒ RA NGOÀI ═══════════════ */
+console.log('\n11 · KHÔNG RÒ RA NGOÀI');
 const xau = {prepare(){ throw new Error('SQLITE_ERROR: no such column: users.matKhauThat'); }};
 const rNo = await worker.fetch(new Request('https://gita.test/', {
   method: 'POST', headers: {'Content-Type': 'application/json'},
@@ -381,12 +512,12 @@ bao(jGt.ok && jGt.daNapKhoa === 8 && !JSON.stringify(jGt).includes('khoa-nen'),
   'cửa trạng thái nói ĐÃ NẠP MẤY KHOÁ mà không trả khoá nào',
   'đã nạp ' + jGt.daNapKhoa + ' gói');
 
-/* ═══════════════ 11 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
+/* ═══════════════ 12 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ═══════════════
 
-   Mười mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
+   Mười một mục trên xanh hết. Một bộ thử chưa từng đỏ thì chưa phải bộ thử.
    Ở đây phá bằng cách truyền một hồ sơ vai KHÁC vào chính hàm tính
    phạm vi — không tráo hàm toàn cục, đúng luật đã ghi ở v9.79. */
-console.log('\n11 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
+console.log('\n12 · PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM');
 const pv = (await import('../may-chu/worker.js')).phamViCapPhep;
 bao(pv({role: 'R13', tier: 5}).indexOf('tang5') >= 0 &&
     pv({role: 'R13', tier: 2}).indexOf('tang3') < 0,
