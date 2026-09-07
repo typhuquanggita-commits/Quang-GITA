@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.15',
+  version: '9.99.16',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -32833,6 +32833,60 @@ var G = window.G || {}; window.G = G;
     };
   }
 
+  /* ── MỰC ĐẶT TRÊN MỘT MẢNG MÀU ĐẶC ──
+     Mặc định trắng là sai một nửa số lần. Sáu sắc thương hiệu có cả
+     sắc TỐI (tím, xanh dương) lẫn sắc SÁNG (hổ phách, lục): chữ trắng
+     trên hổ phách chỉ được 2,5:1 — phép đo tương phản bắt ngay.
+     Luật: đo độ sáng của chính mảng màu ấy rồi chọn mực. Đây là chỗ
+     một bảng màu nhiều sắc BẮT BUỘC phải có, còn bảng một sắc thì
+     không ai để ý là thiếu. */
+  function doSang(hex) {
+    var t = String(hex), r, g, b;
+    var m = /^#?([0-9a-f]{6})$/i.exec(t.trim());
+    if (m) { var n = parseInt(m[1], 16); r = n >> 16; g = (n >> 8) & 255; b = n & 255; }
+    else {
+      var q = /rgba?\(\s*(\d+)[,\s]+(\d+)[,\s]+(\d+)/i.exec(t);
+      if (!q) return 0.5;
+      r = +q[1]; g = +q[2]; b = +q[3];
+    }
+    var f = function (v) { v /= 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+    return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+  }
+  /* ── KHÔNG ĐẶT NGƯỠNG ĐỘ SÁNG: TÍNH CẢ HAI RỒI CHỌN ──
+     Bản đầu viết "sáng hơn 0,42 thì dùng mực đen". Con số 0,42 là một
+     con số ma, và nó sai ngay ở sắc LAM #06B6D4: độ sáng 0,38 nên máy
+     chọn mực trắng, mà trắng trên lam chỉ được 2,5:1 — trong khi mực
+     đen trên chính nó được 7,4:1. Lam là màu "không bên nào": không
+     đủ tối cho chữ trắng, không đủ sáng để bị coi là màu sáng.
+     Bỏ ngưỡng đi. Đo tương phản của CẢ HAI mực rồi lấy mực thắng.
+     Không còn con số nào để đoán sai. */
+  var MUC_TOI = '#15121F';
+  function tuongPhan(a, b) {
+    var L1 = doSang(a), L2 = doSang(b);
+    return (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
+  }
+  /* Chọn mực theo ĐẦU TỆ NHẤT của dải, không theo màu gốc.
+     Nêm được tô bằng chuyển sắc, nên chữ nằm trên một KHOẢNG màu chứ
+     không nằm trên một màu. Chọn theo màu gốc thì mực thắng ở giữa
+     nêm mà thua ở một đầu — và phép đo lấy trung bình nền ngay dưới
+     chữ nên nó bắt được đúng chỗ ấy.
+     Kéo theo một luật nữa: dải của nêm phải HẸP. Dải càng rộng thì
+     đầu tệ nhất càng tệ, tới mức không mực nào cứu được. */
+  var NEM_DAI = 0.12;
+  function mucTren(hex) {
+    var s1 = doiSang(hex, NEM_DAI), s2 = doiSang(hex, -NEM_DAI);
+    var t = Math.min(tuongPhan(MUC_TOI, s1), tuongPhan(MUC_TOI, s2));
+    var w = Math.min(tuongPhan('#FFFFFF', s1), tuongPhan('#FFFFFF', s2));
+    return t >= w ? MUC_TOI : '#FFFFFF';
+  }
+  /* Dòng phụ trên mảng màu dùng ĐÚNG mực ấy, không pha loãng.
+     Làm mờ đi để tạo thứ bậc là cách rẻ tiền và nó ăn thẳng vào
+     tương phản: mực đen 80% trên nền tầng chỉ còn 4,19:1, hụt ngưỡng.
+     Thứ bậc dựng bằng CỠ CHỮ và ĐỘ ĐẬM — hai thứ không tốn một chút
+     tương phản nào. */
+  function mucPhuTren(hex) { return mucTren(hex); }
+
   /* ── NHÃN TRÊN ──
      Dòng chữ nhỏ, viết hoa, giãn chữ rộng, đứng TRÊN tiêu đề. Việc
      của nó là nói tấm này thuộc loại gì trước khi mắt đọc tiêu đề —
@@ -33350,6 +33404,362 @@ var G = window.G || {}; window.G = G;
     return {ok: true, svg: khung(kg, k, ruot, g.defs)};
   }
 
+  /* ═══════════════════════════════════════════════════════════════
+     CẤU TRÚC MANG NGHĨA, KHÔNG PHẢI LƯỚI Ô CHO MỌI THỨ
+
+     Chủ hệ gửi năm tấm mẫu và nói tư duy thiết kế của máy còn xấu.
+     Đọc kỹ năm tấm thì chúng KHÔNG hơn nhau ở hiệu ứng — chúng hơn ở
+     CẤU TRÚC THÔNG TIN:
+
+       · tháp năm tầng, mỗi tầng một nêm số cộng một thẻ ba cột
+       · hai cột đối chứng, mỗi bên một danh sách có dấu đúng/sai
+       · ba vòng giao nhau, chỗ giao là câu trả lời
+       · ray đánh số mười hai bước, mỗi bước một cụm gạch đầu dòng
+
+     Máy trước đó chỉ dựng được LƯỚI Ô — cấu trúc yếu nhất trong cả
+     năm — rồi đi mài bóng đổ cho nó. Mài bề mặt của một cấu trúc sai
+     thì càng mài càng lộ ra là sai.
+
+     Ba cấu trúc kia ĐÃ CÓ TÊN trong hiến pháp từ trước: SO_SANH_TANG
+     "bảng cột theo chặng", QUY_TRINH "chuỗi bước", TRUOC_SAU "hai cột
+     đối xứng". Chúng không phải thứ phải nghĩ ra — chúng là thứ đã
+     khai mà chưa ai dựng.
+
+     ══ VÀ THỨ THẬT SỰ THIẾU: MẬT ĐỘ ══
+     Mỗi tấm mẫu mang bốn mươi tới một trăm mẩu chữ. Lưới ô của máy
+     mang sáu. Một tấm hình đáng để người ta dừng lại nhìn là tấm TRẢ
+     CÔNG cho việc dừng lại — nên ô phải chứa được DANH SÁCH, không
+     chỉ một câu.
+     ═══════════════════════════════════════════════════════════════ */
+
+  /* Gạch đầu dòng trong một ô. Trả cả chiều cao đã dùng, vì mọi bố
+     cục ở đây xếp chồng và khối nào cũng phải nói mình cao bao nhiêu. */
+  function veGachDau(ds, x, y, o) {
+    var co = o.co, rong = o.rong, ra = '', cao = 0;
+    ds.forEach(function (d) {
+      var dong = catDong(d, '500 ' + co + 'px ' + CHU_THAN, rong - co * 1.15);
+      ra += '<circle cx="' + (x + co * 0.30) + '" cy="' + (y + cao + co * 0.30) +
+        '" r="' + (co * 0.17).toFixed(1) + '" fill="' + h(o.cham || o.mau) + '"/>';
+      dong.forEach(function (t, i) {
+        ra += '<text x="' + (x + co * 1.05) + '" y="' +
+          (y + cao + i * co * 1.36 + co * 0.55) + '" font-family="' + h(CHU_THAN) +
+          '" font-size="' + co + '" font-weight="500" fill="' + h(o.mau) + '">' +
+          h(t) + '</text>';
+      });
+      cao += dong.length * co * 1.36 + co * 0.30;
+    });
+    return {svg: ra, cao: cao};
+  }
+
+  /* ── ĐỌC KHỐI TẦNG ──
+     TẦNG 5 | Tầm nhìn & Di sản | Coach truyền cảm hứng
+     MỤC TIÊU — Kiến tạo tầm nhìn lớn, giá trị và di sản.
+     COACH LÀM GÌ — Khai mở sứ mệnh, tầm nhìn 10x–100x.
+     KẾT QUẢ — Khách hàng sống có ý nghĩa, tạo di sản.
+
+     Vẫn một luật: NGƯỜI VIẾT GÕ RA, máy không đoán đâu là một tầng. */
+  function catTang(chu) {
+    var ra = [], nay = null;
+    String(chu || '').split('\n').forEach(function (d) {
+      var t = /^\s*(?:TẦNG|BẬC|CẤP)\s+(\S+)\s*\|\s*([^|]+?)\s*(?:\|\s*(.+?))?\s*$/i.exec(d);
+      if (t) { nay = {so: t[1], ten: t[2].trim(), vai: (t[3] || '').trim(), o: []};
+        ra.push(nay); return; }
+      var c = /^\s*(.{2,40}?)\s+[—–]\s+(.{4,})$/.exec(d);
+      if (c && nay) nay.o.push({ten: c[1].trim(), y: c[2].trim()});
+    });
+    return ra.filter(function (x) { return x.o.length; });
+  }
+
+  function veSoSanhTang(x, kg, che) {
+    var k = bang(che);
+    var ds = catTang(x.noiDung);
+    var nhan = docDau(x.noiDung, 'NHÃN'), bang2 = docDau(x.noiDung, 'BĂNG');
+    if (ds.length < 2) return {ok: false,
+      error: 'Bảng tầng cần ít nhất HAI tầng. Mỗi tầng mở bằng một dòng ' +
+             '"TẦNG 5 | Tên tầng | Vai của Coach", rồi các dòng "CỘT — nội dung" ' +
+             'ngay dưới nó (tối đa ba cột mỗi tầng). Máy KHÔNG tự chia nội dung ' +
+             'thành tầng: chia kiểu gì cũng là đoán. Đang đọc ra ' + ds.length + ' tầng.'};
+    var sac = sacTang();
+    if (!sac.length) return {ok: false,
+      error: 'Chưa mở được bảng màu thương hiệu (G.BRAND.mau).'};
+
+    ds = ds.slice(0, 6);
+    var le = Math.round(kg.w * 0.045);
+    var nen = lopNen(kg, k, 1.2);
+    var bong = defBong(k, 1);
+    var cs = defChuSac(k);
+    var manh = [nen, bong, cs];
+
+    /* ĐẦU TẤM chảy theo thứ tự thật, như đã sửa cho lưới ô. */
+    var coTieu = Math.round(kg.w / 22);
+    var yTieu = Math.round(kg.h * (nhan ? 0.075 : 0.062)) + coTieu;
+    var tieu = veChu(x.nhiemVu, Math.round(kg.w / 2), yTieu,
+      {co: coTieu, chu: CHU_TIEU, dam: 600, mau: 'url(#' + cs.id + ')',
+       rong: kg.w - le * 2, gian: 1.16, can: 'middle'});
+    var dnhan = nhan ? nhanTren(nhan, le + 6,
+      Math.round(yTieu - coTieu * 0.95), k, Math.round(coTieu * 0.40)) : '';
+    var day = yTieu + tieu.cao;
+    var dbang = null;
+    if (bang2) {
+      dbang = daiBang(bang2, Math.round(kg.w / 2), Math.round(day + coTieu * 0.22),
+        k, kg.w - le * 2);
+      manh.push(dbang);
+      day = day + coTieu * 0.22 + dbang.cao;
+    }
+
+    var dinh = Math.round(day + coTieu * 0.52);
+    var dayBang2 = kg.h - Math.round(kg.h * 0.075);
+    var khe = 12;
+    var caoT = Math.round((dayBang2 - dinh - khe * (ds.length - 1)) / ds.length);
+    /* Nêm bên trái rộng đúng một phần tư: đủ cho số lớn và tên tầng,
+       mà không ăn vào chỗ của ba cột — ba cột mới là phần mang tin. */
+    var rongNem = Math.round(kg.w * 0.25);
+    var rongThe = kg.w - le * 2 - rongNem - 10;
+
+    var ve = '';
+    ds.forEach(function (t, i) {
+      var y = dinh + i * (caoT + khe);
+      var s = sac[(ds.length - 1 - i) % sac.length];
+      /* ── NÊM, KHÔNG PHẢI HỘP ──
+         Cạnh phải vát chéo cho tầng trên hẹp hơn tầng dưới, nên xếp
+         chồng lại thành một cái THÁP. Hộp vuông xếp chồng chỉ là một
+         danh sách; hình tháp nói thêm một điều mà danh sách không nói:
+         tầng trên đứng TRÊN tầng dưới, và không nhảy cóc được. */
+      var vat = Math.round(rongNem * 0.14 * (ds.length - i) / ds.length);
+      var gN = idMoi('nem');
+      manh.push({defs: '<linearGradient id="' + gN + '" x1="0" y1="0" x2="1" y2="1">' +
+        '<stop offset="0%" stop-color="' + h(doiSang(s.hex, NEM_DAI)) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(doiSang(s.hex, -NEM_DAI)) + '"/>' +
+        '</linearGradient>'});
+      ve += '<g filter="url(#' + bong.id + ')"><path d="M' + le + ' ' + y +
+        ' H' + (le + rongNem - vat) + ' L' + (le + rongNem) + ' ' + (y + caoT) +
+        ' H' + le + ' Z" fill="url(#' + gN + ')"/></g>';
+
+      /* ── THANG CHỮ NEO VÀO KHỔ TẤM, KHÔNG NEO VÀO CHIỀU CAO HÀNG ──
+         Bản đầu tính mọi cỡ chữ theo caoT. Ba tầng thì mỗi hàng cao
+         gấp đôi năm tầng, nên cùng một tấm mà chữ phình từ 26px lên
+         43px và con số từ 65px lên 108px — chữ to ra chỉ VÌ ÍT HÀNG,
+         không vì nó quan trọng hơn.
+         Đó là lỗi tư duy chứ không phải lỗi vặt: cỡ chữ phải nói về
+         VAI TRÒ của chữ trong tấm, không nói về việc hôm nay có mấy
+         hàng. Neo vào bề ngang tấm, rồi chặn trần theo chiều cao hàng
+         để hàng thấp không bị tràn. */
+      var coSo = Math.min(Math.round(kg.w * 0.062), Math.round(caoT * 0.34));
+      var xSo = le + Math.round(rongNem * 0.11);
+      /* ── SỐ HẸP VẪN PHẢI CHIẾM MỘT CỘT RỘNG BẰNG NHAU ──
+         Bản đầu đặt tên tầng ngay sau bề rộng THẬT của chữ số, nên số
+         "1" hẹp khiến tên dính sát vào nó, còn số "5" rộng thì tên
+         lùi ra — năm tầng, năm chỗ bắt đầu khác nhau, và tầng 1 thì
+         chữ chồng lên số. Chốt một cột số rộng cố định: mọi tên tầng
+         bắt đầu ở đúng một đường dọc. */
+      var rongCotSo = Math.max(
+        doRong(t.so, '800 ' + coSo + 'px ' + CHU_THAN), coSo * 0.66);
+      var xT = Math.round(xSo + rongCotSo + coSo * 0.30);
+      var rongTen = rongNem - (xT - le) - vat - 10;
+
+      /* Căn cả cụm (tên + vai) vào giữa nêm theo chiều dọc, cùng luật
+         đã dùng cho từng ô của lưới. */
+      var coTen2 = Math.min(Math.round(kg.w * 0.026), Math.round(caoT * 0.135));
+      /* Dòng vai to hơn một nấc, và đây là QUYẾT ĐỊNH chứ không phải
+         nới lỏng: trên một sắc bão hoà, chữ NHỎ không mực nào đạt nổi
+         4,5:1 — trắng thua ở đầu sáng, đen thua ở đầu tối. Ngưỡng
+         WCAG cho chữ từ 24px là 3,0, và ở cỡ ấy nó đọc được THẬT.
+         Nên hoặc chữ to lên, hoặc chữ phải rời khỏi mảng màu. Chọn to
+         lên: dòng vai là phần định danh của tầng, nó đáng được đọc. */
+      var coVai = Math.min(Math.round(kg.w * 0.0235), Math.round(caoT * 0.105));
+      var dTen2 = catDong(t.ten, '800 ' + coTen2 + 'px ' + CHU_THAN, rongTen);
+      var dVai = t.vai
+        ? catDong(t.vai, '500 ' + coVai + 'px ' + CHU_THAN, rongTen) : [];
+      var caoCum2 = dTen2.length * coTen2 * 1.18 +
+        (dVai.length ? 6 + dVai.length * coVai * 1.22 : 0);
+      var yCum = Math.round(y + (caoT - caoCum2) / 2 + coTen2 * 0.80);
+
+      ve += '<text x="' + xSo + '" y="' +
+        Math.round(y + caoT / 2 + coSo * 0.35) + '" font-family="' + h(CHU_THAN) +
+        '" font-size="' + coSo + '" font-weight="800" fill="' + h(mucTren(s.hex)) +
+        '" fill-opacity="0.96">' + h(t.so) + '</text>';
+      var tenT = veChu(t.ten, xT, yCum,
+        {co: coTen2, chu: CHU_THAN, dam: 800, mau: mucTren(s.hex),
+         rong: rongTen, gian: 1.18});
+      ve += tenT.svg;
+      if (t.vai)
+        ve += veChu(t.vai, xT, yCum + tenT.cao + 6,
+          {co: coVai, chu: CHU_THAN, dam: 500, mau: mucPhuTren(s.hex),
+           rong: rongTen, gian: 1.22}).svg;
+
+      /* THẺ BA CỘT — chỗ mang tin thật. */
+      var xThe = le + rongNem + 10;
+      var kinh = tamKinh(xThe, y, rongThe, caoT, k, {sac: s.hex, bong: bong.id, bo: 14});
+      manh.push(kinh); ve += kinh.ve;
+
+      var nO = Math.min(3, t.o.length);
+      var demO = 14;
+      var rongO2 = Math.round((rongThe - 26 - demO * (nO - 1)) / nO);
+      var coH2 = Math.min(Math.round(kg.w * 0.0195), Math.round(caoT * 0.105));
+      var coB2 = Math.min(Math.round(kg.w * 0.0175), Math.round(caoT * 0.093));
+      var rH2 = Math.round(coH2 * 0.86);
+      /* ── CỘT DÀI NHẤT ĐỊNH CHỖ CHO CẢ HÀNG ──
+         Bản đầu neo ba cột vào mép trên thẻ (y + 20), nên khi thẻ cao
+         hơn cụm chữ thì cả ba cột dồn lên nửa trên và hở hẳn nửa dưới
+         — đúng lớp lỗi đã sửa ba lần ở chỗ khác, quay lại lần thứ tư.
+         Đo cột dài nhất rồi căn cả hàng vào giữa thẻ. */
+      var caoCotMax = 0;
+      t.o.slice(0, nO).forEach(function (m) {
+        var d = catDong(m.y, '500 ' + coB2 + 'px ' + CHU_THAN, rongO2 - 4);
+        caoCotMax = Math.max(caoCotMax, rH2 * 2 + coB2 * 1.5 + d.length * coB2 * 1.34);
+      });
+      var yCot = Math.round(y + Math.max(16, (caoT - caoCotMax) / 2));
+      t.o.slice(0, nO).forEach(function (m, j) {
+        var xo = xThe + 13 + j * (rongO2 + demO);
+        if (j) ve += '<line x1="' + (xo - demO / 2) + '" y1="' + (y + 14) +
+          '" x2="' + (xo - demO / 2) + '" y2="' + (y + caoT - 14) +
+          '" stroke="' + h(s.hex) + '" stroke-opacity="0.34" ' +
+          'stroke-width="1" stroke-dasharray="3 4"/>';
+        var hh = huyHieu(xo + rH2, yCot + rH2, rH2, s.hex,
+          THU_TU_HINH[(i * 3 + j) % THU_TU_HINH.length]);
+        manh.push(hh); ve += hh.ve;
+        ve += '<text x="' + (xo + rH2 * 2 + 8) + '" y="' + (yCot + rH2 + coH2 * 0.36) +
+          '" font-family="' + h(CHU_THAN) + '" font-size="' + coH2 +
+          '" font-weight="800" fill="' + h(k.muc) + '" letter-spacing="0.5">' +
+          h(m.ten.toUpperCase()) + '</text>';
+        ve += veChu(m.y, xo, yCot + rH2 * 2 + coB2 * 1.5,
+          {co: coB2, chu: CHU_THAN, dam: 500, mau: k.muc2,
+           rong: rongO2 - 4, gian: 1.34}).svg;
+      });
+    });
+
+    var g = gom(manh);
+    return {ok: true, svg: khung(kg, k,
+      nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
+      h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : '') + ve +
+      dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.032)), g.defs)};
+  }
+
+  /* ── ĐỌC KHỐI BƯỚC ──
+     BƯỚC 01 | Lắng nghe, kết nối, thấu hiểu
+     · Lắng nghe câu chuyện của học viên
+     · Kết nối và xây dựng niềm tin */
+  function catBuoc(chu) {
+    var ra = [], nay = null;
+    String(chu || '').split('\n').forEach(function (d) {
+      var b = /^\s*(?:BƯỚC|CHẶNG|MỐC)\s+(\S+)\s*\|\s*(.+?)\s*$/i.exec(d);
+      if (b) { nay = {so: b[1], ten: b[2].trim(), y: []}; ra.push(nay); return; }
+      var g = /^\s*[·•\-*]\s+(.{3,})$/.exec(d);
+      if (g && nay) nay.y.push(g[1].trim());
+    });
+    return ra;
+  }
+
+  function veQuyTrinh(x, kg, che) {
+    var k = bang(che);
+    var ds = catBuoc(x.noiDung);
+    var nhan = docDau(x.noiDung, 'NHÃN'), bang2 = docDau(x.noiDung, 'BĂNG');
+    if (ds.length < 3) return {ok: false,
+      error: 'Quy trình cần ít nhất BA bước. Mỗi bước mở bằng một dòng ' +
+             '"BƯỚC 01 | Tên bước", rồi các dòng bắt đầu bằng dấu · là ý của ' +
+             'bước ấy. Máy KHÔNG tự cắt nội dung thành bước — thứ tự các bước ' +
+             'là thứ tấm hình này tồn tại để nói, nên đoán sai thứ tự là nói ' +
+             'sai đúng điều duy nhất nó phải nói. Đang đọc ra ' + ds.length + ' bước.'};
+    var sac = sacTang();
+    if (!sac.length) return {ok: false,
+      error: 'Chưa mở được bảng màu thương hiệu (G.BRAND.mau).'};
+
+    ds = ds.slice(0, 8);
+    var le = Math.round(kg.w * 0.055);
+    var nen = lopNen(kg, k, 1.2);
+    var bong = defBong(k, 1);
+    var bongHh = defBong(k, 2);
+    var cs = defChuSac(k);
+    var manh = [nen, bong, bongHh, cs];
+
+    var coTieu = Math.round(kg.w / 22);
+    var yTieu = Math.round(kg.h * (nhan ? 0.072 : 0.058)) + coTieu;
+    var tieu = veChu(x.nhiemVu, Math.round(kg.w / 2), yTieu,
+      {co: coTieu, chu: CHU_TIEU, dam: 600, mau: 'url(#' + cs.id + ')',
+       rong: kg.w - le * 2, gian: 1.16, can: 'middle'});
+    var dnhan = nhan ? nhanTren(nhan, le + 6,
+      Math.round(yTieu - coTieu * 0.95), k, Math.round(coTieu * 0.40)) : '';
+    var day = yTieu + tieu.cao;
+    var dbang = null;
+    if (bang2) {
+      dbang = daiBang(bang2, Math.round(kg.w / 2), Math.round(day + coTieu * 0.22),
+        k, kg.w - le * 2);
+      manh.push(dbang);
+      day = day + coTieu * 0.22 + dbang.cao;
+    }
+
+    var dinh = Math.round(day + coTieu * 0.55);
+    var dayVung = kg.h - Math.round(kg.h * 0.072);
+    var khe = 12;
+    var caoB = Math.round((dayVung - dinh - khe * (ds.length - 1)) / ds.length);
+    var rTron = Math.round(Math.min(caoB * 0.32, kg.w * 0.036));
+    var xTron = le + rTron;
+
+    /* ── RAY DỌC NỐI CÁC BƯỚC ──
+       Một đường chạy suốt sau các số. Không có nó thì tám vòng tròn
+       chỉ là tám vòng tròn; có nó thì chúng thành MỘT chuỗi, và chuỗi
+       là đúng thứ loại hình này khai: "giúp làm theo đúng thứ tự". */
+    var ve = '<line x1="' + xTron + '" y1="' + (dinh + rTron) + '" x2="' + xTron +
+      '" y2="' + (dinh + (ds.length - 1) * (caoB + khe) + rTron) +
+      '" stroke="' + h(k.gita) + '" stroke-opacity="0.35" stroke-width="3"/>';
+
+    ds.forEach(function (t, i) {
+      var y = dinh + i * (caoB + khe);
+      var s = sac[i % sac.length];
+      var kinh = tamKinh(xTron + rTron + 16, y, kg.w - le - (xTron + rTron + 16),
+        caoB, k, {sac: s.hex, bong: bong.id, bo: 14});
+      manh.push(kinh); ve += kinh.ve;
+
+      var gT = idMoi('tron');
+      manh.push({defs: '<linearGradient id="' + gT + '" x1="0" y1="0" x2="1" y2="1">' +
+        '<stop offset="0%" stop-color="' + h(doiSang(s.hex, NEM_DAI)) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(doiSang(s.hex, -NEM_DAI)) + '"/>' +
+        '</linearGradient>'});
+      ve += '<g filter="url(#' + bongHh.id + ')"><circle cx="' + xTron + '" cy="' +
+        (y + rTron) + '" r="' + rTron + '" fill="url(#' + gT + ')"/></g>' +
+        '<text x="' + xTron + '" y="' + Math.round(y + rTron + rTron * 0.38) +
+        '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
+        Math.round(rTron * 1.02) + '" font-weight="800" fill="' +
+        h(mucTren(s.hex)) + '">' + h(t.so) + '</text>';
+
+      var xN = xTron + rTron + 32;
+      var rongN = kg.w - le - xN - 16;
+      var coTen = Math.min(Math.round(kg.w * 0.030), Math.round(caoB * 0.155));
+      var coY = Math.min(Math.round(kg.w * 0.0195), Math.round(caoB * 0.115));
+      var ys = t.y.slice(0, 4);
+
+      /* ── ĐO CẢ CỤM RỒI MỚI ĐẶT ──
+         Lần thứ năm cùng một lớp lỗi trong tệp này, nên ghi hẳn ra:
+         mọi khối chữ trong một khung có sẵn phải ĐO TRƯỚC rồi mới đặt.
+         Neo vào mép trên thì khung nào cao hơn cụm cũng hở đáy, và ba
+         khung cạnh nhau hở ba kiểu khác nhau.
+         Cộng một khe nghỉ THẬT giữa tên bước và danh sách: không có
+         khe thì mắt đọc tên bước thành gạch đầu dòng thứ nhất. */
+      var dTenB = catDong(t.ten, '800 ' + coTen + 'px ' + CHU_THAN, rongN);
+      var caoTenB = dTenB.length * coTen * 1.18;
+      var caoY = 0;
+      ys.forEach(function (d) {
+        caoY += catDong(d, '500 ' + coY + 'px ' + CHU_THAN, rongN - coY * 1.15)
+          .length * coY * 1.36 + coY * 0.30;
+      });
+      var kheTen = ys.length ? coTen * 0.42 : 0;
+      var yCumB = Math.round(y + Math.max(14, (caoB - caoTenB - kheTen - caoY) / 2));
+
+      ve += veChu(t.ten, xN, yCumB + coTen * 0.82,
+        {co: coTen, chu: CHU_THAN, dam: 800, mau: k.muc,
+         rong: rongN, gian: 1.18}).svg;
+      if (ys.length)
+        ve += veGachDau(ys, xN, yCumB + caoTenB + kheTen,
+          {co: coY, rong: rongN, mau: k.muc2, cham: s.hex}).svg;
+    });
+
+    var g = gom(manh);
+    return {ok: true, svg: khung(kg, k,
+      nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
+      h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : '') + ve +
+      dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030)), g.defs)};
+  }
+
   /* ═══════════ BẢNG PHÂN VIỆC ═══════════
      Loại hình nào KHÔNG có tên ở đây thì bộ vẽ nói thẳng là chưa có.
      Danh sách trắng, không danh sách cấm — cùng luật với mọi cửa khác
@@ -33361,7 +33771,11 @@ var G = window.G || {}; window.G = G;
     BANDO_HANHTRINH:  {ve: veBanDo,  kho: 'rong'},
     /* Lưới ô mặc định khổ VUÔNG: sáu ô xếp 3×2 trên khổ ngang thì mỗi
        ô lùn quá cho hai dòng mô tả. Khổ vuông cho ô thở. */
-    KHUNG:            {ve: veKhung,  kho: 'vuong'}
+    KHUNG:            {ve: veKhung,  kho: 'vuong'},
+    /* Hai cấu trúc DÀY: khổ dọc, vì cả hai xếp chồng theo chiều dọc và
+       mỗi hàng phải đủ cao cho một cụm chữ, không phải một dòng. */
+    SO_SANH_TANG:     {ve: veSoSanhTang, kho: 'doc'},
+    QUY_TRINH:        {ve: veQuyTrinh,   kho: 'doc'}
   };
 
   /* ═══════════ CỬA DUY NHẤT ═══════════ */

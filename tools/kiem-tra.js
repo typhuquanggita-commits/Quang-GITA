@@ -10343,7 +10343,32 @@ const { chromium } = require(PW);
                'HỖ TRỢ — Lên kế hoạch học tập, rèn luyện và phát triển bản thân\n' +
                'GIẢI ĐÁP — Mọi thắc mắc nhanh chóng, chính xác\n' +
                'TỐI ƯU — Tiết kiệm thời gian, hiệu quả tối đa\n' +
-               'CÙNG BẠN — Kiến tạo phiên bản tốt nhất của chính mình'
+               'CÙNG BẠN — Kiến tạo phiên bản tốt nhất của chính mình',
+        SO_SANH_TANG:
+          'TẦNG 3 | Chặng bứt phá | Coach khai mở tư duy và niềm tin\n' +
+          'MỤC TIÊU — Đổi cách nhà nhìn vấn đề, không chỉ đổi việc nhà làm mỗi ngày.\n' +
+          'COACH LÀM GÌ — Đặt câu hỏi khai mở, thách thức niềm tin cũ đã đóng lại.\n' +
+          'KẾT QUẢ — Nhà tự thấy nút thắt, và tự gỡ được nút tiếp theo.\n' +
+          'TẦNG 2 | Chặng giải mã | Coach đồng hành và kỷ luật thực thi\n' +
+          'MỤC TIÊU — Hình thành thói quen ghi và giữ nhịp hai mươi mốt ngày.\n' +
+          'COACH LÀM GÌ — Lập kế hoạch, theo dõi, nhắc và phản hồi đều đặn.\n' +
+          'KẾT QUẢ — Hành động nhất quán, tiến bộ đo được rõ rệt mỗi ngày.\n' +
+          'TẦNG 1 | Chặng nền | Coach lắng nghe và thấu hiểu sâu\n' +
+          'MỤC TIÊU — Nhìn đúng trước khi sửa. Bảy ngày đầu không chữa gì cả.\n' +
+          'COACH LÀM GÌ — Lắng nghe, không phán xét. Đọc hồ sơ cùng cả nhà.\n' +
+          'KẾT QUẢ — Niềm tin dựng lên, và nhà sẵn sàng bắt đầu thật sự.',
+        QUY_TRINH:
+          'BƯỚC 01 | Lắng nghe, kết nối và thấu hiểu nhà mình\n' +
+          '· Lắng nghe câu chuyện của học viên mà không phán xét\n' +
+          '· Kết nối và xây dựng niềm tin trước khi làm gì khác\n' +
+          '· Thấu hiểu mong muốn thật của cả nhà\n' +
+          'BƯỚC 02 | Test định hướng năng lực và thấu hiểu vấn đề\n' +
+          '· Đánh giá năng lực hiện tại bằng bộ đo có sẵn\n' +
+          '· Phân tích điểm mạnh và điểm cần cải thiện\n' +
+          '· Tìm nguyên nhân gốc rễ chứ không chữa triệu chứng\n' +
+          'BƯỚC 03 | Định hướng lộ trình cá nhân hoá cho nhà\n' +
+          '· Lộ trình chín mươi ngày đột phá\n' +
+          '· Mục tiêu rõ ràng và đo lường được từng tuần'
       };
       for (const loai of G.veThiGiacBiet().loaiHinh) {
         const v = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
@@ -10559,7 +10584,7 @@ const { chromium } = require(PW);
       !(ra.sacThieu || []).length && ra.soSac === 6;
     const roDu = !(ra.mo || []).length;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
-        ra.veDuoc.length >= 4 && choiDu && brandDu && roDu,
+        ra.veDuoc.length >= 6 && choiDu && brandDu && roDu,
       'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. Và đo TƯƠNG PHẢN trên chính pixel đã vẽ ra, không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải màu nào ai gõ ra mà là kết quả của bốn lớp chồng lên nhau — cách duy nhất biết đúng là dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy màu trung bình đúng ô chữ sẽ nằm. Ngưỡng WCAG AA: 3,0 cho chữ từ 24px, 4,5 cho chữ thường. Một tấm hình rất sang mà chữ chìm thì nó không sang, nó hỏng. Chữ CHUYỂN SẮC cũng bị đo, và đo TỪNG CHẶNG MÀU của dải: bản đầu bỏ qua mọi thẻ có fill=url() — một lỗ đúng ở chỗ nguy hiểm nhất, vì chữ chuyển sắc luôn là câu to nhất trong tấm, và một dải có hai đầu nên đầu này đọc được không có nghĩa đầu kia đọc được',
       ra.khongCoBoVe ? 'KHÔNG NẠP ĐƯỢC src/ve-thi-giac.js'
         : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu && brandDu && roDu
