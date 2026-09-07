@@ -143,6 +143,11 @@ chay('xvfb-run', ['-a', 'node', 'tools/do-soan.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/do-noi-tiep.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/do-tu-kiem.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/thu-nhu-that.js']);
+/* Đường dựng phim đi qua ba nhà — bộ vẽ, tệp PNG, ffmpeg — nên chỗ
+   hỏng của nó nằm ở MỐI NỐI, và mối nối thì chỉ lộ ra khi chạy trọn
+   đường một lần. Cần ffmpeg; máy nào chưa có thì bộ này nói ra chứ
+   không lặng lẽ bỏ qua. */
+chay('xvfb-run', ['-a', 'node', 'tools/thu-phim.js']);
 if (mayChu) { try { process.kill(-mayChu.pid); } catch (e) {} }
 
 /* ─── 5a-bis. Thử mã máy chủ trên bản giả lập Apps Script ───

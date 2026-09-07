@@ -2124,7 +2124,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.30',
+  version: '9.99.31',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -18946,8 +18946,8 @@ G.TL_CAM = {
   TG_MA_VB:     'rieng · hiến pháp thị giác, tra ở màn Kiến trúc sư thị giác',
   TG_TANG:      'rieng · lớp thị giác của từng chặng, có màn riêng',
   TG_NGUOI:     'rieng · hồ sơ người xem của phòng thiết kế, có màn riêng',
-  TG_LOAIHINH:  'rieng · mười hai loại hình chuẩn, có màn riêng',
-  TG_CAM:       'rieng · mười điều cấm khi thiết kế, có màn riêng',
+  TG_LOAIHINH:  'rieng · các loại hình chuẩn, có màn riêng',
+  TG_CAM:       'rieng · các điều cấm khi thiết kế, có màn riêng',
   TG_DIEM:      'rieng · thang điểm chấm hình, có màn riêng',
   TG_BAC:       'rieng · bậc điểm của thang chấm hình, có màn riêng',
   TG_TRANGTHAI: 'rieng · sáu bậc duyệt thiết kế, có màn riêng',
@@ -35451,6 +35451,39 @@ var G = window.G || {}; window.G = G;
     } catch (e) { return 0; }
   }
 
+  /* ── ĐO MỰC, KHÔNG ĐO Ô CHỮ ──
+     Ô chữ (em box) của một dòng cao đúng bằng cỡ chữ, và mọi phép
+     tính chiều cao trong tệp này từ trước tới nay đều tính theo ô ấy.
+     MỰC thì không nằm gọn trong ô: tiếng Việt chồng hai tầng dấu lên
+     một nguyên âm — "Ầ" là A + mũ + huyền, trồi lên trên ô; "Ạ" thõng
+     một chấm xuống dưới ô.
+
+     Chỗ này hỏng thật, và hỏng ở đúng tấm chủ hệ đang xem: áp phích
+     "BẢY NGÀY / ĐẦU" xếp hai dòng cách nhau 1,10 lần cỡ chữ, và mũ
+     của "Ầ" dòng dưới ĐÈ lên dấu nặng của "Ạ" dòng trên. Bộ kiểm xanh
+     toàn bộ, vì không phép đo nào hỏi tới mực — chỉ hỏi tới ô.
+
+     Cùng một lớp lỗi với `nhoTrai`: ở đó là mực TRÀN SANG TRÁI của
+     chữ nghiêng, ở đây là mực TRÀN LÊN TRÊN của dấu tiếng Việt. Đo
+     một chiều rồi quên chiều kia. */
+  function mucDoc(chu, font) {
+    var mCo = /(\d+(?:\.\d+)?)px/.exec(String(font));
+    var co = mCo ? Number(mCo[1]) : 16;
+    /* Không đo được thì lấy số rộng rãi, KHÔNG lấy số sát — đoán sát
+       thì trở lại đúng chỗ vừa sửa. */
+    var duPhong = {tren: co * 0.92, duoi: co * 0.26};
+    if (!doBoi && typeof document !== 'undefined')
+      doBoi = document.createElement('canvas').getContext('2d');
+    if (!doBoi) return duPhong;
+    try {
+      doBoi.font = font;
+      var m = doBoi.measureText(String(chu || ''));
+      if (!(m.actualBoundingBoxAscent >= 0)) return duPhong;
+      return {tren: m.actualBoundingBoxAscent,
+              duoi: Math.max(0, m.actualBoundingBoxDescent || 0)};
+    } catch (e) { return duPhong; }
+  }
+
   function catDong(chu, font, rongToiDa) {
     var mCo = /(\d+(?:\.\d+)?)px/.exec(String(font));
     var chua = mCo ? Number(mCo[1]) * 0.06 : 1;
@@ -35468,20 +35501,46 @@ var G = window.G || {}; window.G = G;
   /* Bó chữ thành mấy thẻ <text>. Trả về cả CHIỀU CAO đã dùng để chỗ
      gọi xếp phần dưới — không có nó thì mọi bố cục phải đoán, và đoán
      sai một dòng là chữ đè lên nhau. */
-  function veChu(chu, x, y, o) {
+  /* ── MỘT KHỐI CHỮ, ĐO TRƯỚC KHI VẼ ──
+     Tách phần ĐO ra khỏi phần VẼ vì chỗ gọi cần biết khối cao bao
+     nhiêu TRƯỚC khi quyết định đặt nó ở đâu — và cho tới nay mỗi chỗ
+     gọi tự nhân `số dòng × cỡ × giãn` một lần nữa. Hai bản chép của
+     một phép tính thì có ngày lệch nhau, và ngày ấy chữ đè lên chữ.
+
+     Bước dòng NỚI RA khi mực đòi, không bao giờ bóp lại: dòng nào chỉ
+     có chữ thường thì mực nằm gọn trong ô và bước đúng bằng số cũ —
+     nên mọi bố cục đang vừa vẫn vừa y như trước. */
+  function khoiChu(chu, o) {
     var font = (o.dam || 600) + ' ' + o.co + 'px ' + o.chu;
     var dong = catDong(chu, font, o.rong);
-    var cao = o.co * (o.gian || 1.28);
+    var buoc = o.co * (o.gian || 1.28);
+    var ho = o.co * 0.05;          /* hở tối thiểu giữa mực hai dòng */
+    var muc = dong.map(function (d) { return mucDoc(d, font); });
+    var yDong = [0], dang = 0;
+    for (var i = 1; i < dong.length; i++) {
+      dang += Math.max(buoc, muc[i - 1].duoi + muc[i].tren + ho);
+      yDong.push(dang);
+    }
+    return {dong: dong, font: font, yDong: yDong, buoc: buoc,
+            cao: dang + buoc, soDong: dong.length,
+            tren: dong.length ? muc[0].tren : 0,
+            duoi: dong.length ? muc[dong.length - 1].duoi : 0};
+  }
+
+  function veChu(chu, x, y, o) {
+    var kh = khoiChu(chu, o);
+    var font = kh.font, dong = kh.dong;
     var can = o.can || 'start';
     var ra = dong.map(function (d, i) {
-      return '<text x="' + x + '" y="' + (y + i * cao) + '" ' +
+      return '<text x="' + x + '" y="' + (y + kh.yDong[i]).toFixed(1) + '" ' +
         'font-family="' + h(o.chu) + '" font-size="' + o.co + '" ' +
         'font-weight="' + (o.dam || 600) + '" fill="' + h(o.mau) + '" ' +
         'text-anchor="' + can + '"' +
         (o.gianChu ? ' letter-spacing="' + o.gianChu + '"' : '') +
         '>' + h(d) + '</text>';
     }).join('');
-    return {svg: ra, cao: dong.length * cao, soDong: dong.length};
+    return {svg: ra, cao: kh.cao, soDong: kh.soDong,
+            tren: kh.tren, duoi: kh.duoi};
   }
 
   var CHU_TIEU = '"Playfair Display", Georgia, serif';
@@ -36806,13 +36865,25 @@ var G = window.G || {}; window.G = G;
     var a = ANH_NGUOI[ma];
     if (!a) return {svg: '', cao: 0};
     var co1 = Math.round(rong * 0.088), co2 = Math.round(rong * 0.052);
-    var cao = Math.round(co1 * 2.9);
     var coTen = co1, coVai = co2;
     while (coTen > 10 &&
            doRong(a.ten, '800 ' + coTen + 'px ' + CHU_THAN) > rong - 52) coTen -= 1;
     while (coVai > 7 &&
            doRong(a.vai.toUpperCase(), '600 ' + coVai + 'px ' + CHU_THAN) >
            rong - 48) coVai -= 1;
+
+    /* ── HAI DÒNG NÀY TỪNG DÍNH VÀO NHAU ──
+       Ba đường chân trong khối này neo cứng: 0,98 · 2,02 · 2,72 lần
+       co1. Khoảng giữa tên và chức danh là 0,70·co1 — đủ cho chữ La
+       Mã, KHÔNG đủ cho "Trương Nhật Quang" (chữ ư và dấu nặng thõng
+       xuống) đứng trên "MENTOR ĐỊNH HƯỚNG NGHỀ NGHIỆP" (Đ, Ị, Ư trồi
+       lên). Đo ra chồng 5 điểm ảnh, ngay trên tấm biển mang tên chủ
+       hệ. Nay đường chân chức danh lùi theo MỰC thật của hai dòng. */
+    var mTen = mucDoc(a.ten, '800 ' + coTen + 'px ' + CHU_THAN);
+    var mVai = mucDoc(a.vai.toUpperCase(), '600 ' + coVai + 'px ' + CHU_THAN);
+    var yTen = co1 * 2.02;
+    var yVai = yTen + Math.max(co1 * 0.70, mTen.duoi + mVai.tren + co2 * 0.30);
+    var cao = Math.round(Math.max(co1 * 2.9, yVai + mVai.duoi + co1 * 0.28));
     return {cao: cao, svg:
       '<rect class="gita-tam" x="' + Math.round(giuaX - rong / 2) + '" y="' +
         Math.round(y) +
@@ -36830,10 +36901,10 @@ var G = window.G || {}; window.G = G;
          nên đặt một cỡ chữ cố định là chắc chắn có ngày tràn — và
          tràn ở đây là tên trainer chạy ra ngoài tấm biển mang tên
          chính anh, chỗ hỏng khó tha nhất trong cả tấm. */
-      '<text x="' + giuaX + '" y="' + Math.round(y + co1 * 2.02) +
+      '<text x="' + giuaX + '" y="' + Math.round(y + yTen) +
         '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
         coTen + '" font-weight="800" fill="#FFFFFF">' + h(a.ten) + '</text>' +
-      '<text x="' + giuaX + '" y="' + Math.round(y + co1 * 2.72) +
+      '<text x="' + giuaX + '" y="' + Math.round(y + yVai) +
         '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
         coVai + '" font-weight="600" fill="rgba(255,255,255,0.90)">' +
         h(a.vai.toUpperCase()) + '</text>'};
@@ -37305,13 +37376,24 @@ var G = window.G || {}; window.G = G;
       ve += '<rect x="' + (xs + Math.round(rongS * 0.36)) + '" y="' +
         Math.round(d.dinh + caoS * 0.14) + '" width="' + Math.round(rongS * 0.28) +
         '" height="3.5" rx="1.75" fill="' + h(s.hex) + '"/>';
-      ve += '<text x="' + (xs + Math.round(rongS / 2)) + '" y="' +
-        Math.round(d.dinh + caoS * 0.56) + '" text-anchor="middle" font-family="' +
+      var ySo = Math.round(d.dinh + caoS * 0.56);
+      ve += '<text x="' + (xs + Math.round(rongS / 2)) + '" y="' + ySo +
+        '" text-anchor="middle" font-family="' +
         h(CHU_THAN) + '" font-size="' + coV + '" font-weight="800" fill="' +
         h(k.muc) + '">' + h(m.v) + '</text>';
-      ve += veChu(m.t, xs + Math.round(rongS / 2), Math.round(d.dinh + caoS * 0.82),
-        {co: Math.round(kg.w * 0.0165), chu: CHU_THAN, dam: 600, mau: k.muc2,
-         rong: rongS - 22, gian: 1.24, can: 'middle'}).svg;
+      /* ── CON SỐ VÀ CÂU DƯỚI NÓ TỪNG CHẠM NHAU ──
+         Hai đường chân neo cứng ở 0,56 và 0,82 lần chiều cao ô, tức
+         cách nhau 0,26 — mà con số cao tới 0,42. Với "21" thì vừa;
+         với "4/4" đứng trên "Cổng đã qua trong chuỗi" thì dấu hỏi
+         của chữ "ổ" trồi lên chạm chân con số, đo ra 2 điểm ảnh.
+         Nay câu dưới lùi theo mực thật của cả hai dòng. */
+      var coCau = Math.round(kg.w * 0.0165);
+      var oCau = {co: coCau, chu: CHU_THAN, dam: 600, mau: k.muc2,
+                  rong: rongS - 22, gian: 1.24, can: 'middle'};
+      var yCau = Math.max(Math.round(d.dinh + caoS * 0.82),
+        Math.round(ySo + mucDoc(m.v, '800 ' + coV + 'px ' + CHU_THAN).duoi +
+          khoiChu(m.t, oCau).tren + coCau * 0.28));
+      ve += veChu(m.t, xs + Math.round(rongS / 2), yCau, oCau).svg;
     });
 
     /* Biểu đồ cột — MỘT sắc, đậm dần theo độ lớn */
@@ -37928,6 +38010,19 @@ var G = window.G || {}; window.G = G;
       if (dT.length <= 2 || coT <= 26) break;
       coT -= 2;
     }
+    /* ── CHIỀU CAO CỦA TIÊU ĐỀ: HỎI KHỐI, ĐỪNG NHÂN LẠI ──
+       Trước đây chỗ này và chỗ vẽ ở dưới CÙNG nhân `dT.length × coT ×
+       1,10` — hai bản chép của một phép tính. Nay cả hai đọc `kT`.
+       `trenT` là khoảng từ đỉnh khối tới ĐƯỜNG CHÂN dòng đầu: phải đủ
+       cho mực chứ không phải đủ cho ô, nếu không mũ của "Ầ" chui lên
+       đè vào dòng nhãn ở trên. 0,24·coT dưới đường chân cuối là đúng
+       phần thừa của công thức cũ (1,10 − 0,86), giữ nguyên để khoảng
+       cách tới vạch đỏ không đổi. */
+    var kT = khoiChu(cau, {co: coT, chu: CHU_THAN, dam: 800,
+      rong: rongChu, gian: 1.10});
+    var trenT = Math.max(coT * 0.86, kT.tren + coT * 0.05);
+    var caoKhoiT = trenT + (kT.cao - kT.buoc) + coT * 0.24;
+
     var coN = Math.round(coT * 0.30);
     var coP = Math.round(coT * 0.32);
     var dP = phu ? catDong(phu, '500 ' + coP + 'px ' + CHU_THAN, rongChu) : [];
@@ -38001,12 +38096,19 @@ var G = window.G || {}; window.G = G;
       if (!quaDai || coTenO <= 11) break;
       coTenO -= 1;
     }
-    var soDongTen = Math.max.apply(null, dongTen.map(function (d) {
-      return d.length; }));
+    /* Tên ô cao bao nhiêu thì HỎI khối, đừng nhân `số dòng × cỡ ×
+       1,15`. Bản trước nhân tay, và hai dòng chữ hoa "BỘ TEST ĐẦU /
+       VÀO" có dấu huyền dòng dưới đè lên chân dòng trên 2 điểm ảnh —
+       "CỔNG NGHIỆM / THU NGÀY BẢY" đè 3. Mắt đọc ra là hai dòng dính
+       vào nhau; bộ kiểm thì tới 9.99.31 mới có phép đo mực để thấy. */
+    var khoiTen = o.map(function (m) {
+      return khoiChu(String(m.ten).toUpperCase(), {co: coTenO, chu: CHU_THAN,
+        dam: 800, rong: rongTen, gian: 1.15}); });
 
     var oDem = Math.round(coTenO * 0.75);       /* chừa mép trên trong ô */
     var oDayHH = oDem + rHH * 2.5;              /* đáy huy hiệu, kể từ đỉnh ô */
-    var caoTen = coTenO * (1.30 + (soDongTen - 1) * 1.15);
+    var caoTen = coTenO * 0.15 + Math.max.apply(null,
+      khoiTen.map(function (q) { return q.cao; }));
     var caoO = 0;
     var dongO = o.map(function (m) {
       var d = m.mo ? catDong(m.mo, '500 ' + coMoO + 'px ' + CHU_THAN,
@@ -38019,7 +38121,7 @@ var G = window.G || {}; window.G = G;
 
     var caoKy = ky ? Math.round(coT * 0.42) * 1.7 : 0;
     var caoTong = (nhan ? coN * 1.9 : 0) +
-      dT.length * coT * 1.10 + coT * 0.34 +
+      caoKhoiT + coT * 0.34 +
       (dP.length ? dP.length * coP * 1.38 + coP * 0.7 : 0) +
       (db ? db.cao + coT * 0.34 : 0) +
       soHang * caoO + (soHang - 1) * giua + coT * 0.40 + caoKy;
@@ -38103,9 +38205,9 @@ var G = window.G || {}; window.G = G;
       ve += nhanTren(nhan, RAY, Math.round(yy + coN), k, coN, true);
       yy = Math.round(yy + coN * 1.9);
     }
-    var tt = veChu(cau, RAY, Math.round(yy + coT * 0.86), {co: coT, chu: CHU_THAN,
+    var tt = veChu(cau, RAY, Math.round(yy + trenT), {co: coT, chu: CHU_THAN,
       dam: 800, mau: 'url(#' + cs.id + ')', rong: rongChu, gian: 1.10});
-    ve += ray(tt.svg); yy = Math.round(yy + dT.length * coT * 1.10);
+    ve += ray(tt.svg); yy = Math.round(yy + caoKhoiT);
     ve += ray('<rect x="' + RAY + '" y="' + Math.round(yy + coT * 0.10) + '" width="' +
       Math.round(rongChu * 0.26) + '" height="4" rx="2" fill="' + h(k.do) + '"/>');
     yy = Math.round(yy + coT * 0.34);
@@ -38137,7 +38239,7 @@ var G = window.G || {}; window.G = G;
       manh.push(hh); ve += hh.ve;
       dongTen[i].forEach(function (d, j) {
         ve += '<text x="' + Math.round(ox + wO / 2) + '" y="' +
-          Math.round(oy + oDayHH + coTenO * (1.05 + j * 1.15)) +
+          Math.round(oy + oDayHH + coTenO * 1.05 + khoiTen[i].yDong[j]) +
           '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
           coTenO + '" font-weight="800" fill="' + h(k.muc) + '">' + h(d) + '</text>';
       });

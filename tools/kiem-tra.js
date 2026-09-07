@@ -10780,6 +10780,84 @@ const { chromium } = require(PW);
         wR.remove();
       }
 
+      /* ── MỰC ĐÈ LÊN MỰC (9.99.31) ──
+
+         Phép đo "chữ đè lên chữ" ở trên đọc HỘP BAO của thẻ text, mà
+         hộp bao là Ô CHỮ: cao đúng bằng phần vươn lên cộng phần thõng
+         xuống của bộ chữ, giống nhau cho mọi dòng bất kể dòng ấy viết
+         gì. Hai dòng liền nhau trong một đoạn luôn chồng ô vài phần
+         trăm, nên phép ấy buộc phải nới tới một phần tư — và ở dưới
+         ngưỡng ấy nó mù hẳn.
+
+         Chỗ mù ấy có thật, và nằm ở tấm chủ hệ đang xem: áp phích
+         "BẢY NGÀY / ĐẦU" xếp hai dòng chữ hoa cách nhau 1,10 lần cỡ
+         chữ, và mũ của "Ầ" dòng dưới ĐÈ lên dấu nặng của "Ạ" dòng
+         trên. Cả bộ kiểm xanh. Tôi chỉ thấy vì mở ảnh ra nhìn — mà
+         mở ảnh ra nhìn thì không phải một phép đo.
+
+         Nên đo MỰC: bề rộng và độ vươn thật của đúng mấy chữ trong
+         thẻ ấy, hỏi canvas bằng actualBoundingBox. Mực thì không có
+         phần thừa, nên chồng một điểm ảnh đã là chồng thật, và ngưỡng
+         về được 0,5 chứ không phải 25%.
+
+         Hai phép đo không thay nhau: ô chữ bắt hai KHỐI đè nhau (hai
+         nhãn cạnh nhau), mực bắt hai DÒNG chạm nhau.
+
+         PHÉP NÀY ĐÃ TỪNG ĐỎ. Lượt chạy đầu tiên nó bắt bốn chỗ, cả
+         bốn đều là hỏng thật và cả bốn đều đã sửa ở 9.99.31:
+           · BIA          "Trương Nhật Quang" ✕ chức danh — 5,0
+           · BANG_DIEU_KHIEN  "4/4" ✕ câu dưới ô số      — 2,0
+           · AP_PHICH     "BỘ TEST ĐẦU" ✕ "VÀO"          — 2,0
+           · AP_PHICH     "CỔNG NGHIỆM" ✕ "THU NGÀY BẢY" — 3,0
+         Ghi lại vì một phép kiểm chưa từng đỏ thì chưa phải phép
+         kiểm, và bốn dòng này là bằng chứng nó không câm. */
+      r.mucDe = [];
+      {
+        const doM = document.createElement('canvas').getContext('2d');
+        const bangMuc = t => {
+          const co = parseFloat(t.getAttribute('font-size')) || 16;
+          const fam = t.getAttribute('font-family') || 'sans-serif';
+          const dam = t.getAttribute('font-weight') || '400';
+          const ngh = /italic/i.test(t.getAttribute('font-style') || '') ? 'italic ' : '';
+          try { doM.letterSpacing = (t.getAttribute('letter-spacing') || 0) + 'px'; }
+          catch (e) { /* trình duyệt cũ không có — bề rộng hụt một chút */ }
+          doM.font = ngh + dam + ' ' + co + 'px ' + fam;
+          const m = doM.measureText(t.textContent || '');
+          const x = parseFloat(t.getAttribute('x')) || 0;
+          const y = parseFloat(t.getAttribute('y')) || 0;
+          const an = t.getAttribute('text-anchor') || 'start';
+          const x0 = an === 'middle' ? x - m.width / 2
+                   : an === 'end' ? x - m.width : x;
+          /* Thẻ nằm trong <g transform="translate(...)"> thì toạ độ x/y
+             của nó KHÔNG phải toạ độ trong tấm. Lấy ma trận thật chứ
+             đừng giả định không có phép dời — dấu GITA có một. */
+          const ct = t.getCTM(), dx = ct ? ct.e : 0, dy = ct ? ct.f : 0;
+          return {chu: (t.textContent || '').trim(),
+            x0: x0 + dx, x1: x0 + m.width + dx,
+            yT: y - (m.actualBoundingBoxAscent || co * 0.9) + dy,
+            yD: y + (m.actualBoundingBoxDescent || 0) + dy};
+        };
+        for (const loai of G.veThiGiacBiet().loaiHinh) {
+          const vm = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
+          if (!vm.ok) continue;
+          const wM = document.createElement('div');
+          wM.style.cssText = 'position:absolute;left:-9999px;top:0';
+          wM.innerHTML = vm.svg; document.body.appendChild(wM);
+          const ts = [...wM.querySelectorAll('text')].map(bangMuc)
+            .filter(t => t.chu && t.x1 > t.x0);
+          for (let i = 0; i < ts.length; i++)
+            for (let j = i + 1; j < ts.length; j++) {
+              const a = ts[i], c = ts[j];
+              const ngang = Math.min(a.x1, c.x1) - Math.max(a.x0, c.x0);
+              const doc = Math.min(a.yD, c.yD) - Math.max(a.yT, c.yT);
+              if (ngang > 1 && doc > 0.5)
+                r.mucDe.push(loai + ' · "' + a.chu.slice(0, 18) + '" ✕ "' +
+                  c.chu.slice(0, 18) + '" chồng ' + doc.toFixed(1) + ' điểm ảnh');
+            }
+          wM.remove();
+        }
+      }
+
       /* ── BỘ ẢNH: KHOÁ RỒI THÌ PHẢI THẬT SỰ GIỐNG NHAU ──
          Luật `boAnh` (9.99.30) nói cả bộ chốt kiểu một lần. Một luật
          như thế rất dễ đúng trên giấy và sai trong tấm: chỉ cần MỘT bộ
@@ -11007,7 +11085,7 @@ const { chromium } = require(PW);
       !(ra.hinhLech || []).length && !(ra.cotNhieuSac || []).length &&
       !(ra.ngoaiTam || []).length && !(ra.anhSaiCho || []).length &&
       !(ra.dauTroi || []).length && !(ra.rayLech || []).length &&
-      !(ra.boLech || []).length;
+      !(ra.boLech || []).length && !(ra.mucDe || []).length;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
         ra.veDuoc.length >= 12 && choiDu && brandDu && roDu,
       'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. Và đo TƯƠNG PHẢN trên chính pixel đã vẽ ra, không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải màu nào ai gõ ra mà là kết quả của bốn lớp chồng lên nhau — cách duy nhất biết đúng là dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy màu trung bình đúng ô chữ sẽ nằm. Ngưỡng WCAG AA: 3,0 cho chữ từ 24px, 4,5 cho chữ thường. Một tấm hình rất sang mà chữ chìm thì nó không sang, nó hỏng. Chữ CHUYỂN SẮC cũng bị đo, và đo TỪNG CHẶNG MÀU của dải: bản đầu bỏ qua mọi thẻ có fill=url() — một lỗ đúng ở chỗ nguy hiểm nhất, vì chữ chuyển sắc luôn là câu to nhất trong tấm, và một dải có hai đầu nên đầu này đọc được không có nghĩa đầu kia đọc được',
@@ -11043,7 +11121,8 @@ const { chromium } = require(PW);
              (ra.anhSaiCho || []).length ? 'ẢNH NGƯỜI THẬT LỌT VÀO LOẠI HÌNH KHÁC: ' + ra.anhSaiCho.join(' · ') : '',
              (ra.dauTroi || []).length ? 'DÒNG ĐÁNH DẤU TRÔI VÀO THÂN BÀI: ' + ra.dauTroi.join(' · ') : '',
              (ra.rayLech || []).length ? 'ĐƯỜNG DỌC KHÔNG TRÙNG: ' + ra.rayLech.join(' · ') : '',
-             (ra.boLech || []).length ? 'BỘ ẢNH KHÔNG CÙNG KIỂU: ' + ra.boLech.join(' · ') : ''
+             (ra.boLech || []).length ? 'BỘ ẢNH KHÔNG CÙNG KIỂU: ' + ra.boLech.join(' · ') : '',
+             (ra.mucDe || []).length ? 'MỰC ĐÈ LÊN MỰC: ' + ra.mucDe.join(' · ') : ''
             ].filter(Boolean).join(' · ')));
   }
 

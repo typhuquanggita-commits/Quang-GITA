@@ -252,6 +252,40 @@ hình, và chặn cả trình đơn **Xuất PDF** lẫn **Sao lưu** của bả
 
 ---
 
+## Dựng một cuốn phim từ bộ tấm
+
+Ba bước, chạy ở máy của Học viện — không gửi gì ra ngoài:
+
+    node tools/tam-ra-anh.js de-bai.json /tmp/tam     # đề bài → tấm PNG
+    node tools/dung-phim.js /tmp/tam phim.mp4 5       # tấm → phim, 5 giây/cảnh
+    xvfb-run -a node tools/thu-phim.js                # thử trọn đường
+
+`de-bai.json` là một **mảng** bản ghi thị giác, mỗi bản ghi đúng dạng bộ vẽ
+nhận: `{id, tang, loaiHinh, nhiemVu, noiDung, nguoiXem[]}`. Cả bộ đi qua
+`G.veThiGiacBo()` nên khổ và nền chốt một lần theo tấm đầu — mọi cảnh chắc
+chắn cùng kích thước.
+
+Chuyển động là Ken Burns (phóng chậm, luân phiên vào/ra), nối cảnh bằng
+crossfade 0,8 giây. **Không lời đọc, không nhạc, không phụ đề cháy thêm** —
+chữ đã nằm trong tấm, do máy đặt, đã qua phép đo tương phản và phép đo
+chữ-trong-khung; cháy thêm một lớp chữ nữa là chồng chữ lên chữ.
+
+Thời lượng: `số cảnh × giây/cảnh − (số cảnh − 1) × 0,8`.
+
+Cần `ffmpeg` và `ffprobe` trên máy (`apt-get install -y ffmpeg`). Thiếu thì
+lệnh nói ra chứ không lặng lẽ bỏ qua.
+
+**Phim chỉ dựng từ tấm ĐÃ phát hành** — luật C19 của hiến pháp thị giác. Tấm
+còn ô chờ lớp người thì chưa phát hành được (luật C16), nên cũng chưa vào
+phim được. Cuốn phim đi ra khỏi hệ theo đúng bảng "Ai xuất được gì" ở trên.
+
+Luật ấy **kiểm được**, không chỉ là một câu trong sổ: `tam-ra-anh.js` ghi kèm
+`nguon.json` — mỗi tệp PNG truy về một bản ghi thị giác và bậc duyệt của nó —
+còn `dung-phim.js` ĐÒI sổ ấy. Mất sổ, có ảnh ngoài sổ, hay có tấm chưa tới bậc
+`phatHanh` thì nó dừng và nói ra tên tấm.
+
+---
+
 ## Đồng bộ App ↔ Web App
 
 Chạy tự động, không phải bấm gì:
