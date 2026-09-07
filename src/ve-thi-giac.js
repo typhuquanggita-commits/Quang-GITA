@@ -81,6 +81,7 @@ var G = window.G || {}; window.G = G;
      Nền SÂU cho ẤN PHẨM — bìa, lưới ô, con số — vì đó là chỗ tấm
      hình đứng một mình và phải tự có sức nặng. */
   function bang(che) {
+    if (che === 'giay') return bangGiay();
     var s = bangSang();
     if (che !== 'sau') return s;
     var ds = (G.BRAND && G.BRAND.mau) || [];
@@ -103,6 +104,56 @@ var G = window.G || {}; window.G = G;
       doInk: doiSang(s.do, 0.40),
       vien: 'rgba(255,255,255,0.16)',
       sau: true
+    };
+  }
+
+  /* ══════════ NỀN GIẤY — MẶC ĐỊNH CHO ẤN PHẨM ══════════
+
+     ĐÂY LÀ CHỖ TÔI ĐÃ SAI, VÀ SAI VÌ ĐỌC MỘT DÒNG RỒI BỎ QUA BẢNG
+     NGAY DƯỚI NÓ.
+
+     Bản 9.99.15 tôi trích G.BRAND.mau: "Đêm sâu — nền của mọi màn
+     hình" rồi lấy đó làm nền cho ẤN PHẨM. Nhưng bốn dòng bên dưới,
+     trong cùng một đối tượng, G.BRAND.dungO là bảng ghi MÔI TRƯỜNG
+     NÀO DÙNG NỀN NÀO:
+
+       Web app       → nền đêm sâu
+       Bản đồ A3 in  → NỀN GIẤY TRẮNG, CHỮ ĐEN, MÀU TẦNG LÀM MÃ MÀU
+       Hợp đồng      → đen trắng, không hiệu ứng
+
+     Đêm sâu là nền của MÀN HÌNH ỨNG DỤNG. Một tấm áp phích, một tấm
+     tháp tầng, một tấm hành trình — đó là ẤN PHẨM, và ấn phẩm đã có
+     dòng riêng: giấy trắng, chữ đen, màu tầng làm mã màu.
+
+     ══ VÀ LẦN TRƯỚC NỀN SÁNG HỎNG VÌ MỘT LÝ DO KHÁC HẲN ══
+     Bản 9.99.14 vẽ trên nền sáng và nhợt, nên tôi kết luận nhầm là
+     "nền sáng sai". Không phải. Nó nhợt vì TẤM TRẮNG ĐẶT TRÊN NỀN
+     TRẮNG — không có gì tách hai lớp ra. Trên giấy, thứ tách các lớp
+     không phải bóng đổ mà là:
+       · nền trang hơi xám, tấm thì TRẮNG HẲN
+       · khối màu ĐẶC và BÃO HOÀ, không phải màu pha loãng
+       · viền thật một pixel, không phải kính bán trong
+     Đúng cách mọi tấm mẫu chủ hệ gửi đang làm. */
+  function bangGiay() {
+    var ds = (G.BRAND && G.BRAND.mau) || [];
+    var dem = ds.filter(function (x) { return x.k === 'Đêm sâu'; })[0];
+    var muc = (dem && dem.hex) || '#070510';
+    var s = bangSang();
+    return {
+      /* Nền trang hơi xám để tấm TRẮNG nổi lên. Trắng trên trắng là
+         đúng chỗ bản nền sáng trước đã chết. */
+      nen: '#EEF1F7',
+      nen2: '#FFFFFF',
+      muc: muc,
+      muc2: 'rgb(74,79,94)',
+      /* Mực phụ trên giấy phải ĐẬM hơn hẳn trên màn: dòng chân dấu
+         GITA chỉ 11px, và ở cỡ ấy ngưỡng là 4,5:1 chứ không phải 3,0.
+         Xám nhạt quen mắt trên màn thì trên giấy là chữ chìm. */
+      muc3: 'rgb(92,99,116)',
+      gita: s.gita, gitaSang: s.gitaSang, gitaSau: s.gitaSau, gitaInk: s.gitaInk,
+      do: s.do, doInk: s.doInk,
+      vien: 'rgba(20,18,28,0.14)',
+      giay: true
     };
   }
 
@@ -196,7 +247,7 @@ var G = window.G || {}; window.G = G;
        nhất, nên rìa tối là cách đẩy mắt vào giữa mà không vẽ thêm
        gì để mắt phải đọc. */
     var a = idMoi('quang'), b = idMoi('quang'), c = idMoi('quang'), r = idMoi('ria');
-    var d = (dam === undefined ? 1 : dam) * (k.sau ? 2.6 : 1);
+    var d = (dam === undefined ? 1 : dam) * (k.sau ? 2.6 : (k.giay ? 0.55 : 1));
     var q = function (id, mau, dam2) {
       return '<radialGradient id="' + id + '" cx="50%" cy="50%" r="50%">' +
         '<stop offset="0%" stop-color="' + h(mau) + '" stop-opacity="' +
@@ -208,7 +259,7 @@ var G = window.G || {}; window.G = G;
         '<radialGradient id="' + r + '" cx="50%" cy="45%" r="72%">' +
           '<stop offset="55%" stop-color="#000000" stop-opacity="0"/>' +
           '<stop offset="100%" stop-color="#000000" stop-opacity="' +
-            (k.sau ? '0.45' : '0.06') + '"/></radialGradient>',
+            (k.sau ? '0.45' : (k.giay ? '0.03' : '0.06')) + '"/></radialGradient>',
       ve:
         '<ellipse cx="' + Math.round(kg.w * 0.80) + '" cy="' + Math.round(kg.h * 0.10) +
           '" rx="' + Math.round(kg.w * 0.50) + '" ry="' + Math.round(kg.h * 0.66) +
@@ -241,8 +292,9 @@ var G = window.G || {}; window.G = G;
     var n = bac || 1;
     var xa = [0, 12, 22][n] || 12;
     var toe = [0, 16, 26][n] || 16;
-    var dam = k.sau ? [0, 0.55, 0.62][n] : [0, 0.16, 0.20][n];
-    var mau = k.sau ? '#000000' : k.gitaSau;
+    var dam = k.sau ? [0, 0.55, 0.62][n]
+      : (k.giay ? [0, 0.13, 0.17][n] : [0, 0.16, 0.20][n]);
+    var mau = k.sau ? '#000000' : (k.giay ? '#1A2340' : k.gitaSau);
     return {id: id, defs:
       '<filter id="' + id + '" x="-40%" y="-40%" width="185%" height="200%">' +
         '<feDropShadow dx="' + (xa * HUONG_SANG.dx).toFixed(1) + '" dy="' +
@@ -266,9 +318,12 @@ var G = window.G || {}; window.G = G;
        tấm mới thật sự nằm TRONG không gian ấy. Đó là khác biệt giữa
        "có bóng đổ" và "có chiều sâu". */
     var mo = k.sau;
-    var d1 = mo ? 'rgba(255,255,255,0.13)' : doiSang(k.nen, 0.06);
-    var d2 = mo ? 'rgba(255,255,255,0.05)' : k.nen2;
-    var op = mo ? '1' : '0.94';
+    /* Trên GIẤY: tấm trắng hẳn, không pha. Nền trang đã hơi xám nên
+       chính độ trắng là thứ tách tấm ra — thêm chuyển sắc vào đây là
+       làm tấm xám đi và mất luôn cái tách ấy. */
+    var d1 = mo ? 'rgba(255,255,255,0.13)' : (k.giay ? '#FFFFFF' : doiSang(k.nen, 0.06));
+    var d2 = mo ? 'rgba(255,255,255,0.05)' : (k.giay ? '#FFFFFF' : k.nen2);
+    var op = mo ? '1' : (k.giay ? '1' : '0.94');
     return {
       defs: '<linearGradient id="' + g + '" x1="0.15" y1="0" x2="0.85" y2="1">' +
         '<stop offset="0%" stop-color="' + h(d1) + '" stop-opacity="' + op + '"/>' +
@@ -278,15 +333,17 @@ var G = window.G || {}; window.G = G;
         '<g' + (o.bong ? ' filter="url(#' + o.bong + ')"' : '') + '>' +
           '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + ht +
             '" rx="' + r + '" fill="url(#' + g + ')" stroke="' + h(sac) +
-            '" stroke-opacity="' + (mo ? '0.42' : '0.22') + '" stroke-width="1"/>' +
+            '" stroke-opacity="' + (mo ? '0.42' : (k.giay ? '0.55' : '0.22')) +
+            '" stroke-width="' + (k.giay ? '1.5' : '1') + '"/>' +
           /* Vệt sáng ôm cạnh TRÊN và cạnh TRÁI — đúng hướng nguồn sáng
              đã chốt. Bản trước chỉ vẽ cạnh trên, nên tấm trông như bị
              chiếu thẳng từ đỉnh đầu chứ không từ trên-trái. */
+          (k.giay ? '' :
           '<path d="M' + (x + 0.9) + ' ' + (y + ht * 0.55) + ' V' + (y + r) +
             ' A' + r + ' ' + r + ' 0 0 1 ' + (x + r) + ' ' + (y + 0.9) +
             ' H' + (x + w - r) + '" fill="none" stroke="' +
             (mo ? 'rgba(255,255,255,0.55)' : h(doiSang(k.nen, 0.9))) +
-            '" stroke-opacity="0.9" stroke-width="1.4" stroke-linecap="round"/>' +
+            '" stroke-opacity="0.9" stroke-width="1.4" stroke-linecap="round"/>') +
         '</g>'
     };
   }
@@ -331,9 +388,15 @@ var G = window.G || {}; window.G = G;
   };
   var THU_TU_HINH = ['sach', 'thoai', 'dich', 'den', 'banh', 'cot'];
 
-  function huyHieu(cx, cy, r, hex, hinh, bong) {
+  function huyHieu(cx, cy, r, hex, hinh, bong, k) {
     var g = idMoi('hh'), a = idMoi('anh'), q = idMoi('quanghh');
     var bo = Math.round(r * 0.62);
+    /* Quầng sáng toả sau huy hiệu là ngôn ngữ của MÀN HÌNH: nó nói
+       "vật này phát sáng". Giấy không phát sáng. Để nguyên quầng trên
+       nền giấy thì huy hiệu trông nhoè như in lem, chứ không trông
+       sáng — và đó đúng là chỗ cuối cùng còn mùi web trên một tấm ấn
+       phẩm. Tắt hẳn khi vẽ trên giấy. */
+    var coQuang = !(k && k.giay);
     return {
       defs:
         /* Chuyển sắc chạy theo ĐÚNG hướng nguồn sáng: sáng ở góc
@@ -358,8 +421,8 @@ var G = window.G || {}; window.G = G;
           '<stop offset="100%" stop-color="' + h(hex) + '" stop-opacity="0"/>' +
         '</radialGradient>',
       ve:
-        '<circle cx="' + cx + '" cy="' + cy + '" r="' + Math.round(r * 1.85) +
-          '" fill="url(#' + q + ')"/>' +
+        (coQuang ? '<circle cx="' + cx + '" cy="' + cy + '" r="' +
+          Math.round(r * 1.85) + '" fill="url(#' + q + ')"/>' : '') +
         '<g' + (bong ? ' filter="url(#' + bong + ')"' : '') + '>' +
           '<rect x="' + (cx - r) + '" y="' + (cy - r) + '" width="' + (r * 2) +
             '" height="' + (r * 2) + '" rx="' + bo + '" fill="url(#' + g + ')"/>' +
@@ -413,7 +476,12 @@ var G = window.G || {}; window.G = G;
      chữ nên nó bắt được đúng chỗ ấy.
      Kéo theo một luật nữa: dải của nêm phải HẸP. Dải càng rộng thì
      đầu tệ nhất càng tệ, tới mức không mực nào cứu được. */
+  /* Trên GIẤY dải của nêm còn hẹp hơn nữa: mắt trên nền trắng nhạy
+     với sắc độ hơn hẳn, nên một dải rộng làm khối màu trông bẩn chứ
+     không trông có khối. Tấm mẫu chủ hệ gửi dùng khối màu gần như
+     ĐẶC — chỉ một chút chuyển để không chết cứng. */
   var NEM_DAI = 0.12;
+  function nemDai(k) { return k && k.giay ? 0.07 : NEM_DAI; }
   function mucTren(hex) {
     var s1 = doiSang(hex, NEM_DAI), s2 = doiSang(hex, -NEM_DAI);
     var t = Math.min(tuongPhan(MUC_TOI, s1), tuongPhan(MUC_TOI, s2));
@@ -773,7 +841,11 @@ var G = window.G || {}; window.G = G;
           h(k.do) + '" stroke-width="2" opacity="0.45"/>' : '') +
         '<text x="' + cx + '" y="' + (truc - 38) + '" text-anchor="middle" ' +
           'font-family="' + h(CHU_THAN) + '" font-size="' + Math.round(kg.w / 55) +
-          '" font-weight="800" fill="' + h(day ? k.do : (k.sau ? k.muc : k.gitaSau)) + '" ' +
+          /* Đỏ tươi dùng làm MẢNG thì tốt, làm CHỮ trên giấy thì hụt:
+             3,62:1 ở cỡ 22px. Chữ dùng đỏ sẫm, mảng vẫn dùng đỏ tươi —
+             hai vai trò khác nhau của cùng một màu thương hiệu. */
+          '" font-weight="800" fill="' + h(day ? (k.giay ? k.doInk : k.do)
+            : (k.sau ? k.muc : k.gitaSau)) + '" ' +
           'letter-spacing="1.2">' + h(t.tang) + '</text>';
       /* Chừa RÃNH giữa hai nhãn. Bản trước cho nhãn rộng 0,94 ô nên
          hai nhãn cạnh nhau chạm đúng vào nhau — vẫn nằm trong khung,
@@ -918,7 +990,7 @@ var G = window.G || {}; window.G = G;
       var dinhCum = cy + Math.round((caoO - caoHang[Math.floor(i / cot)]) / 2);
 
       var hh = huyHieu(giuaX, dinhCum + r, r, s.hex,
-        THU_TU_HINH[i % THU_TU_HINH.length], bongHh.id);
+        THU_TU_HINH[i % THU_TU_HINH.length], bongHh.id, k);
       manh.push(kinh); manh.push(hh);
       ve += kinh.ve + hh.ve;
 
@@ -1068,8 +1140,8 @@ var G = window.G || {}; window.G = G;
       var vat = Math.round(rongNem * 0.14 * (ds.length - i) / ds.length);
       var gN = idMoi('nem');
       manh.push({defs: '<linearGradient id="' + gN + '" x1="0" y1="0" x2="1" y2="1">' +
-        '<stop offset="0%" stop-color="' + h(doiSang(s.hex, NEM_DAI)) + '"/>' +
-        '<stop offset="100%" stop-color="' + h(doiSang(s.hex, -NEM_DAI)) + '"/>' +
+        '<stop offset="0%" stop-color="' + h(doiSang(s.hex, nemDai(k))) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(doiSang(s.hex, -nemDai(k))) + '"/>' +
         '</linearGradient>'});
       ve += '<g filter="url(#' + bong.id + ')"><path d="M' + le + ' ' + y +
         ' H' + (le + rongNem - vat) + ' L' + (le + rongNem) + ' ' + (y + caoT) +
@@ -1156,7 +1228,7 @@ var G = window.G || {}; window.G = G;
           '" stroke="' + h(s.hex) + '" stroke-opacity="0.34" ' +
           'stroke-width="1" stroke-dasharray="3 4"/>';
         var hh = huyHieu(xo + rH2, yCot + rH2, rH2, s.hex,
-          THU_TU_HINH[(i * 3 + j) % THU_TU_HINH.length]);
+          THU_TU_HINH[(i * 3 + j) % THU_TU_HINH.length], null, k);
         manh.push(hh); ve += hh.ve;
         ve += '<text x="' + (xo + rH2 * 2 + 8) + '" y="' + (yCot + rH2 + coH2 * 0.36) +
           '" font-family="' + h(CHU_THAN) + '" font-size="' + coH2 +
@@ -1252,8 +1324,8 @@ var G = window.G || {}; window.G = G;
 
       var gT = idMoi('tron');
       manh.push({defs: '<linearGradient id="' + gT + '" x1="0" y1="0" x2="1" y2="1">' +
-        '<stop offset="0%" stop-color="' + h(doiSang(s.hex, NEM_DAI)) + '"/>' +
-        '<stop offset="100%" stop-color="' + h(doiSang(s.hex, -NEM_DAI)) + '"/>' +
+        '<stop offset="0%" stop-color="' + h(doiSang(s.hex, nemDai(k))) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(doiSang(s.hex, -nemDai(k))) + '"/>' +
         '</linearGradient>'});
       ve += '<g filter="url(#' + bongHh.id + ')"><circle cx="' + xTron + '" cy="' +
         (y + rTron) + '" r="' + rTron + '" fill="url(#' + gT + ')"/></g>' +
@@ -1345,7 +1417,11 @@ var G = window.G || {}; window.G = G;
        Nền sáng vẫn gọi được, cho hình nhúng thẳng vào giao diện ban
        ngày; nhưng mặc định phải là thứ thương hiệu đã chốt, không
        phải thứ tiện tay lấy được từ biến CSS đang chạy. */
-    var che = cheMuon === 'sang' ? 'sang' : (b.nen || 'sau');
+    /* MẶC ĐỊNH LÀ GIẤY, theo đúng dòng "Bản đồ A3 in" của BRAND.dungO.
+       Nền đêm sâu vẫn gọi được — nó là nền của WEB APP, cho hình nhúng
+       thẳng vào giao diện. Nhưng một tấm áp phích đứng một mình là ẤN
+       PHẨM, và ấn phẩm đã có dòng riêng trong sổ. */
+    var che = (cheMuon === 'sau' || cheMuon === 'sang') ? cheMuon : 'giay';
     var r;
     try { r = b.ve(x, kg, che); }
     catch (e) { return {ok: false, error: 'Bộ vẽ hỏng giữa chừng: ' + e.message}; }
@@ -1363,8 +1439,9 @@ var G = window.G || {}; window.G = G;
          chúng với G.BRAND.mau. Không khai thì luật "màu lấy từ bảng
          đã chốt" chỉ là một câu trong chú giải. */
       sac: sacTang(),
-      nen: [{ma: 'sau', ten: 'Nền sâu (ấn phẩm)'},
-            {ma: 'sang', ten: 'Nền sáng (nhúng vào giao diện)'}],
+      nen: [{ma: 'giay', ten: 'Nền giấy — ấn phẩm (mặc định)'},
+            {ma: 'sau',  ten: 'Nền đêm sâu — nhúng vào web app'},
+            {ma: 'sang', ten: 'Nền sáng theo giao diện đang chạy'}],
       kho: Object.keys(KHO_GIAY).map(function (m) {
         return {ma: m, ten: KHO_GIAY[m].ten}; })};
   };
