@@ -610,13 +610,26 @@ var G = window.G || {}; window.G = G;
      Dòng chữ nhỏ, viết hoa, giãn chữ rộng, đứng TRÊN tiêu đề. Việc
      của nó là nói tấm này thuộc loại gì trước khi mắt đọc tiêu đề —
      và nó là thứ tách một tấm có dựng khỏi một tấm chỉ gõ chữ to. */
-  function nhanTren(chu, x, y, k, co) {
+  /* `neoChu` = neo theo CHỮ chứ theo vạch đỏ: chữ bắt đầu đúng ở x, còn
+     vạch đỏ treo ra ngoài lề trái. Dùng khi nhãn đứng chung một đường
+     dọc với tiêu đề bên dưới — neo theo vạch thì chữ nhãn thụt vào
+     đúng bề rộng vạch cộng khoảng hở, và mắt đọc ra HAI đường trái ở
+     một cột. Chỗ ấy đã hỏng thật trên áp phích: nhãn thụt 48 điểm ảnh
+     so với tiêu đề. */
+  function nhanTren(chu, x, y, k, co, neoChu) {
     var c = co || 17;
+    var xV = neoChu ? Math.round(x - c * 0.95) : x;
+    /* Ở chế độ neoChu, VẠCH ĐỎ cố ý treo ra ngoài lề — chỉ CHỮ đứng
+       trên đường dọc. Nên dấu neo đặt lên thẻ <text>, không đặt lên cả
+       cụm: hộp bao của cụm bắt đầu ở vạch, và phép đo đường dọc sẽ báo
+       lệch đúng bằng bề rộng vạch cộng khoảng hở. Nó đã báo: 26 điểm
+       ảnh, và nó báo đúng thứ nó nhìn thấy. */
     return '<g>' +
-      '<rect x="' + x + '" y="' + Math.round(y - c * 0.78) + '" width="' + Math.round(c * 0.28) +
+      '<rect x="' + xV + '" y="' + Math.round(y - c * 0.78) + '" width="' + Math.round(c * 0.28) +
         '" height="' + Math.round(c * 1.02) + '" rx="' + Math.round(c * 0.14) +
         '" fill="' + h(k.do) + '"/>' +
-      '<text x="' + Math.round(x + c * 0.95) + '" y="' + y + '" font-family="' + h(CHU_THAN) +
+      '<text' + (neoChu ? ' class="gita-ray"' : '') +
+        ' x="' + Math.round(xV + c * 0.95) + '" y="' + y + '" font-family="' + h(CHU_THAN) +
         '" font-size="' + c + '" font-weight="800" fill="' + h(k.gitaInk) +
         '" letter-spacing="' + (c * 0.16).toFixed(1) + '">' +
         h(String(chu).toUpperCase()) + '</text></g>';
@@ -628,15 +641,32 @@ var G = window.G || {}; window.G = G;
      nó là chỗ DUY NHẤT có nền đặc, nên mắt dừng ở đó sau tiêu đề.
      Chỉ được MỘT dải một tấm — hai dải thì không dải nào còn là điểm
      dừng. */
+  /* `giuaX` là TÂM dải. Trả về cả `rong` để chỗ gọi neo được dải theo
+     lề trái: không trả ra thì chỗ gọi phải đoán bề rộng, mà đoán bề
+     rộng của một dải co theo chữ thì luôn lệch. */
   function daiBang(chu, giuaX, y, k, rongToiDa) {
     var c = 22, g = idMoi('bang');
     var chuHoa = String(chu).toUpperCase();
-    var rong = doRong(chuHoa, '800 ' + c + 'px ' + CHU_THAN) + c * 3.4;
+    /* ── ĐO PHẢI KỂ CẢ GIÃN CHỮ ──
+       doRong() hỏi canvas, mà canvas KHÔNG biết letter-spacing của thẻ
+       <text>. Dải này giãn 0,10 lần cỡ chữ, nên với một câu ba mươi
+       ký tự nó rộng thêm 66 điểm ảnh mà phép đo không thấy — chữ tràn
+       ra ngoài hai đầu dải đúng 13 điểm ảnh mỗi bên. Nhìn thì chỉ thấy
+       "dải hơi chật", không ai gọi được tên. Đo được ra thì thấy ngay.
+       Cùng công thức với thuộc tính letter-spacing bên dưới, và hai
+       chỗ ấy phải luôn đi cùng nhau. */
+    var gian = 0.10;
+    var rongChuThat = function (co) {
+      return doRong(chuHoa, '800 ' + co + 'px ' + CHU_THAN) + chuHoa.length * co * gian;
+    };
+    var rong = rongChuThat(c) + c * 3.4;
     while (rong > rongToiDa && c > 12) {
-      c -= 1; rong = doRong(chuHoa, '800 ' + c + 'px ' + CHU_THAN) + c * 3.4;
+      c -= 1; rong = rongChuThat(c) + c * 3.4;
     }
+    rong = Math.round(rong);
     var ht = Math.round(c * 2.05);
     return {
+      rong: rong,
       defs: '<linearGradient id="' + g + '" x1="0" y1="0" x2="1" y2="0.6">' +
         '<stop offset="0%" stop-color="' + h(doiSang(k.do, 0.14)) + '"/>' +
         '<stop offset="100%" stop-color="' + h(doiSang(k.do, -0.24)) + '"/>' +
@@ -644,12 +674,12 @@ var G = window.G || {}; window.G = G;
       cao: ht,
       ve: '<g>' +
         '<rect x="' + Math.round(giuaX - rong / 2) + '" y="' + Math.round(y) +
-          '" width="' + Math.round(rong) + '" height="' + ht + '" rx="' +
+          '" width="' + rong + '" height="' + ht + '" rx="' +
           Math.round(ht / 2) + '" fill="url(#' + g + ')"/>' +
         '<text x="' + giuaX + '" y="' + Math.round(y + ht * 0.685) +
           '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' + c +
           '" font-weight="800" fill="#FFFFFF" letter-spacing="' +
-          (c * 0.10).toFixed(1) + '">' + h(chuHoa) + '</text></g>'
+          (c * gian).toFixed(2) + '">' + h(chuHoa) + '</text></g>'
     };
   }
 
@@ -722,11 +752,43 @@ var G = window.G || {}; window.G = G;
     return doBoi.measureText(String(chu)).width;
   }
 
+  /* ── CHỪA MỘT SỢI TÓC, VÌ CANVAS VÀ TRÌNH DUYỆT ĐO HAI THỨ KHÁC NHAU ──
+     measureText trả về BỀ TIẾN: con trỏ chạy được bao xa. Còn hộp bao
+     mà trình duyệt vẽ ra là bề MỰC: phần nét thật sự phủ. Hai cái lệch
+     nhau ở chữ cuối dòng, vì nét của nhiều con chữ nhô ra ngoài bề
+     tiến của chính nó — đuôi chữ, và với tiếng Việt là cả dấu mũ dấu
+     thanh nằm chếch sang bên.
+     Đo được ra: dòng phụ của áp phích vượt lề phải 1,09 điểm ảnh trong
+     khi phép ngắt dòng tin là nó vừa khít. Một điểm ảnh thì không ai
+     chỉ ra được, nhưng nó là chữ nằm NGOÀI lề, và lề là thứ duy nhất
+     giữ cho một trang trông có người dựng.
+     Chừa 6% cỡ chữ: đủ phủ phần mực nhô ra ở mọi cỡ đang dùng, và nhỏ
+     hơn một khoảng trắng nên không đổi chỗ ngắt của dòng nào đang vừa. */
+  /* ── PHẦN MỰC NHÔ RA TRƯỚC ĐIỂM ĐẶT ──
+     Đặt <text x="440"> thì 440 là điểm ĐẶT BÚT, không phải mép trái của
+     nét. Với chữ đứng hai cái gần trùng nhau; với chữ NGHIÊNG thì không:
+     nét chữ đổ sang trái nên mực bắt đầu trước điểm đặt.
+     Đo được ra: câu ký Playfair nghiêng của áp phích nằm ở 438 trong
+     khi cả cột ở 440. Hai điểm ảnh, và mắt đọc ra đúng cái nó là — một
+     dòng thò ra khỏi hàng. */
+  function nhoTrai(chu, font) {
+    if (!doBoi && typeof document !== 'undefined')
+      doBoi = document.createElement('canvas').getContext('2d');
+    if (!doBoi) return 0;
+    try {
+      doBoi.font = font;
+      return Math.max(0, doBoi.measureText(String(chu)).actualBoundingBoxLeft || 0);
+    } catch (e) { return 0; }
+  }
+
   function catDong(chu, font, rongToiDa) {
+    var mCo = /(\d+(?:\.\d+)?)px/.exec(String(font));
+    var chua = mCo ? Number(mCo[1]) * 0.06 : 1;
+    var tran = rongToiDa - chua;
     var tu = String(chu || '').trim().split(/\s+/), dong = [], nay = '';
     for (var i = 0; i < tu.length; i++) {
       var thu = nay ? nay + ' ' + tu[i] : tu[i];
-      if (nay && doRong(thu, font) > rongToiDa) { dong.push(nay); nay = tu[i]; }
+      if (nay && doRong(thu, font) > tran) { dong.push(nay); nay = tu[i]; }
       else nay = thu;
     }
     if (nay) dong.push(nay);
@@ -2980,8 +3042,10 @@ var G = window.G || {}; window.G = G;
     var coN = Math.round(coT * 0.30);
     var coP = Math.round(coT * 0.32);
     var dP = phu ? catDong(phu, '500 ' + coP + 'px ' + CHU_THAN, rongChu) : [];
+    /* Gọi lần này chỉ để ĐO bề rộng và chiều cao dải; bản vẽ thật dựng
+       lại ở dưới với tâm đã neo đúng lề. Không đẩy vào manh — đẩy thì
+       tấm mang hai chuyển sắc y hệt nhau, một cái không ai dùng. */
     var db = bangC ? daiBang(bangC, 0, 0, k, rongChu) : null;
-    if (db) manh.push(db);
 
     /* ── LƯỚI Ô: SỐ CỘT THEO SỐ Ô, VÀ SÁU Ô LÀ BA CỘT ──
        Bản đầu xếp sáu ô thành 2 cột × 3 hàng và tấm tràn 213 điểm ảnh.
@@ -2992,7 +3056,22 @@ var G = window.G || {}; window.G = G;
     var soCot = o.length >= 5 ? 3 : (o.length >= 3 ? 2 : 1);
     var soHang = Math.ceil(o.length / soCot);
     var giua = Math.round(kg.w * 0.013);
-    var rongO = Math.round((rongChu - giua * (soCot - 1)) / soCot);
+    /* ── PHẦN DƯ CỦA PHÉP CHIA ĐI ĐÂU ──
+       rongO = làm tròn((rongChu − hở)/số cột) rồi nhân lại thì tổng
+       lệch tới (số cột − 1) điểm ảnh so với cột chữ: ô cuối đổ ra
+       ngoài lề phải, hoặc hụt vào trong. Một điểm ảnh thì không ai
+       gọi tên được, nhưng mắt đọc ra là "lưới không thẳng lề".
+       Chia sàn rồi RẢI phần dư cho mấy ô đầu, mỗi ô một điểm ảnh —
+       tổng khớp tuyệt đối, và chênh lệch lớn nhất giữa hai ô là 1. */
+    var rongTho = rongChu - giua * (soCot - 1);
+    var rongO = Math.floor(rongTho / soCot);
+    var duO = rongTho - rongO * soCot;                 /* 0 … soCot−1 */
+    /* Bề rộng và mốc trái của TỪNG cột, tính sẵn một lần. */
+    var cotRong = [], cotX = [], _x = 0;
+    for (var _c = 0; _c < soCot; _c++) {
+      var _w = rongO + (_c < duO ? 1 : 0);
+      cotRong.push(_w); cotX.push(_x); _x += _w + giua;
+    }
     var coTenO = Math.max(13, Math.round(rongO * 0.105));
     var coMoO = Math.max(11, Math.round(rongO * 0.072));
     var rHH = Math.round(rongO * 0.19);
@@ -3034,57 +3113,87 @@ var G = window.G || {}; window.G = G;
                'Đang có ' + o.length + ' ô.'};
     }
 
-    /* ── VẼ ── */
-    ve += dauGita(k, xChu + 21, yDau + 16);
-    var yy = vungY + (vungCao - caoTong) / 2;
-    if (nhan) { ve += nhanTren(nhan, xChu, Math.round(yy + coN), k, coN); yy += coN * 1.9; }
-    var tt = veChu(cau, xChu, Math.round(yy + coT * 0.86), {co: coT, chu: CHU_THAN,
+    /* ── VẼ ──
+       ══ MỘT ĐƯỜNG DỌC, KHÔNG BỐN ══
+       Bản 9.99.24 có BỐN mép trái khác nhau trong cùng một cột, và
+       không cái nào sai hẳn nên không cái nào tự lộ ra:
+         · vòng dấu GITA lệch 6 điểm ảnh (tâm đặt ở +21, bán kính 16)
+         · chữ nhãn thụt 48 điểm ảnh — nó neo theo VẠCH ĐỎ, không theo
+           chữ, mà vạch đỏ đứng trước chữ
+         · dải băng căn GIỮA cột trong khi cả cột căn TRÁI
+         · lưới ô lệch tới 2 điểm ảnh vì phần dư phép chia rơi mất
+       Bốn cái cùng nhỏ thì mắt không gọi được tên cái nào; nó chỉ đọc
+       ra "cột này không thẳng". Nay mọi thứ neo vào đúng một biến. */
+    var RAY = xChu;                       /* đường dọc DUY NHẤT của cột */
+    /* Đánh dấu từng khối neo vào đường dọc ấy. Không phải để trang trí:
+       bộ kiểm đọc đúng lớp này rồi đòi mọi mép trái trùng nhau. Không
+       đánh dấu thì phép đo phải ĐOÁN khối nào đáng lẽ thẳng hàng, mà
+       chữ căn giữa trong ô cũng có mép trái riêng và nó thẳng hàng với
+       chính nó — đoán kiểu gì cũng có ngày báo oan. */
+    var ray = function (s) { return '<g class="gita-ray">' + s + '</g>'; };
+    ve += dauGita(k, RAY + 16, yDau + 16);   /* +16 = bán kính vòng + nét */
+    var yy = Math.round(vungY + (vungCao - caoTong) / 2);
+    if (nhan) {
+      /* Không bọc ray() ở đây — nhanTren tự đánh dấu đúng thẻ <text>. */
+      ve += nhanTren(nhan, RAY, Math.round(yy + coN), k, coN, true);
+      yy = Math.round(yy + coN * 1.9);
+    }
+    var tt = veChu(cau, RAY, Math.round(yy + coT * 0.86), {co: coT, chu: CHU_THAN,
       dam: 800, mau: 'url(#' + cs.id + ')', rong: rongChu, gian: 1.10});
-    ve += tt.svg; yy += dT.length * coT * 1.10;
-    ve += '<rect x="' + xChu + '" y="' + Math.round(yy + coT * 0.10) + '" width="' +
-      Math.round(rongChu * 0.26) + '" height="4" rx="2" fill="' + h(k.do) + '"/>';
-    yy += coT * 0.34;
+    ve += ray(tt.svg); yy = Math.round(yy + dT.length * coT * 1.10);
+    ve += ray('<rect x="' + RAY + '" y="' + Math.round(yy + coT * 0.10) + '" width="' +
+      Math.round(rongChu * 0.26) + '" height="4" rx="2" fill="' + h(k.do) + '"/>');
+    yy = Math.round(yy + coT * 0.34);
     if (dP.length) {
-      ve += veChu(phu, xChu, Math.round(yy + coP * 1.0), {co: coP, chu: CHU_THAN,
-        dam: 500, mau: k.muc2, rong: rongChu, gian: 1.38}).svg;
-      yy += dP.length * coP * 1.38 + coP * 0.7;
+      ve += ray(veChu(phu, RAY, Math.round(yy + coP * 1.0), {co: coP, chu: CHU_THAN,
+        dam: 500, mau: k.muc2, rong: rongChu, gian: 1.38}).svg);
+      yy = Math.round(yy + dP.length * coP * 1.38 + coP * 0.7);
     }
     if (db) {
-      db = daiBang(bangC, Math.round(xChu + rongChu / 2), Math.round(yy), k, rongChu);
-      manh.push(db); ve += db.ve; yy += db.cao + coT * 0.34;
+      /* Neo dải theo LỀ TRÁI: daiBang nhận tâm, nên tâm = lề + nửa bề
+         rộng thật của dải. Bề rộng ấy co theo chữ nên phải hỏi lại
+         daiBang, không được đoán. */
+      db = daiBang(bangC, RAY + Math.round(db.rong / 2), yy, k, rongChu);
+      manh.push(db); ve += ray(db.ve); yy = Math.round(yy + db.cao + coT * 0.34);
     }
 
     o.forEach(function (m, i) {
       var cot = i % soCot, hang = Math.floor(i / soCot);
-      var ox = xChu + cot * (rongO + giua);
+      var ox = xChu + cotX[cot], wO = cotRong[cot];
       var oy = Math.round(yy + hang * (caoO + giua));
       var s = sac[i % sac.length];
-      var kinh = tamKinh(ox, oy, rongO, caoO, k, {sac: s.hex, bong: bong.id, bo: 14});
-      manh.push(kinh); ve += kinh.ve;
-      var hh = huyHieu(Math.round(ox + rongO / 2), Math.round(oy + oDem + rHH * 1.5),
+      var kinh = tamKinh(ox, oy, wO, caoO, k, {sac: s.hex, bong: bong.id, bo: 14});
+      manh.push(kinh);
+      /* Chỉ ô ở CỘT ĐẦU mới neo vào đường dọc; các cột sau lùi theo
+         lưới, thẳng hàng với nhau chứ không với đường dọc. */
+      ve += (cot === 0 ? ray(kinh.ve) : kinh.ve);
+      var hh = huyHieu(Math.round(ox + wO / 2), Math.round(oy + oDem + rHH * 1.5),
         rHH, s.hex, chonHinh(m.ten, i), bong.id, k);
       manh.push(hh); ve += hh.ve;
-      ve += '<text x="' + Math.round(ox + rongO / 2) + '" y="' +
+      ve += '<text x="' + Math.round(ox + wO / 2) + '" y="' +
         Math.round(oy + oDayHH + coTenO * 1.05) + '" text-anchor="middle" ' +
         'font-family="' + h(CHU_THAN) + '" font-size="' + coTenO +
         '" font-weight="800" fill="' + h(k.muc) + '">' +
         h(String(m.ten).toUpperCase()) + '</text>';
       dongO[i].forEach(function (d, j) {
-        ve += '<text x="' + Math.round(ox + rongO / 2) + '" y="' +
+        ve += '<text x="' + Math.round(ox + wO / 2) + '" y="' +
           Math.round(oy + oDayHH + coTenO * 1.30 + coMoO * (1.05 + j * 1.30)) +
           '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
           coMoO + '" font-weight="500" fill="' + h(k.muc2) + '">' + h(d) + '</text>';
       });
     });
-    yy += soHang * caoO + (soHang - 1) * giua + coT * 0.40;
+    yy = Math.round(yy + soHang * caoO + (soHang - 1) * giua + coT * 0.40);
 
     if (ky) {
       var coK = Math.round(coT * 0.42);
-      ve += '<text x="' + Math.round(xChu + rongChu / 2) + '" y="' +
-        Math.round(yy + coK) + '" text-anchor="middle" font-family="' + h(CHU_TIEU) +
+      /* Đẩy sang phải đúng phần mực nhô ra, để MÉP NÉT trùng đường dọc
+         chứ không phải điểm đặt bút trùng đường dọc. */
+      var xK = RAY + Math.round(nhoTrai(ky, 'italic 500 ' + coK + 'px ' + CHU_TIEU));
+      ve += ray('<text x="' + xK + '" y="' +
+        Math.round(yy + coK) + '" font-family="' + h(CHU_TIEU) +
         '" font-size="' + coK + '" font-style="italic" font-weight="500" fill="' +
         h(sChinh.hex === k.nen ? k.muc : nenDac(sChinh.hex, 4.5)) + '">' +
-        h(ky) + '</text>';
+        h(ky) + '</text>');
     }
 
     /* Bóng thoại vẽ SAU CÙNG: nó nằm chồng lên lớp người, nên phải là
@@ -3147,7 +3256,12 @@ var G = window.G || {}; window.G = G;
         {co: coC, chu: CHU_THAN, dam: 500, mau: k.muc2, rong: rongA, gian: 1.42,
          can: 'middle'}).svg;
     }
-    ve += dauGita(k, Math.round(kg.w / 2), kg.h - Math.round(kg.h * 0.052));
+    /* Dấu ở GÓC TRÁI, không ở giữa. Luật của chính hàm dauGita là "cùng
+       một chỗ trên mọi tấm", và mọi tấm khác đặt nó ở lề trái. Đặt vào
+       giữa thì nó cũng KHÔNG cân: vòng tròn ở tâm nhưng chữ "GITA 365"
+       chạy sang phải từ +26, nên cả cụm lệch hẳn về một bên. +16 là bán
+       kính vòng cộng nét, để mép trái vòng trùng lề. */
+    ve += dauGita(k, le + 16, kg.h - Math.round(kg.h * 0.052));
     return {ok: true, svg: khung(kg, k, ve, gom(manh).defs)};
   }
 
@@ -3192,6 +3306,33 @@ var G = window.G || {}; window.G = G;
        là chỗ chặn, và nó đã đứng sẵn. */
     if (!x.soatTang) return {ok: false,
       error: 'Bản ghi này chưa có dấu qua cổng Tầng. Chưa qua cổng thì chưa vẽ.'};
+
+    /* ── CHƯA CÓ PHÔNG CHỮ THÌ CHƯA VẼ ──
+       Cả bố cục của tệp này đứng trên doRong(), mà doRong() hỏi canvas,
+       và canvas trả lời bằng PHÔNG NÀO ĐANG CÓ. Phông thương hiệu chưa
+       tải xong thì nó đo bằng phông dự phòng của hệ điều hành — hẹp
+       hơn — nên máy tin là câu vừa một dòng rồi vẽ ra bằng phông thật,
+       và câu ấy dài hơn thứ đã đo.
+       Đo được ra: dòng phụ của áp phích rộng 592 điểm ảnh trong khi
+       phép ngắt dòng tin nó rộng 570. Hai mươi hai điểm ảnh nằm ngoài
+       lề, và KHÔNG phép đo nào trong bộ kiểm bắt được — vì bộ kiểm
+       chờ phông xong rồi mới vẽ, còn giao diện thật thì không.
+       Sai ở đây không lệch một chút: nó lệch KHÁC NHAU mỗi lần chạy,
+       tuỳ phông tải kịp hay không. Nên máy TỪ CHỐI thay vì vẽ ra một
+       tấm không lặp lại được. */
+    if (typeof document !== 'undefined' && document.fonts &&
+        typeof document.fonts.check === 'function') {
+      var thieu = ['700 20px "Be Vietnam Pro"', '600 20px "Playfair Display"']
+        .filter(function (f) {
+          try { return !document.fonts.check(f); } catch (e) { return false; } });
+      if (thieu.length) return {ok: false, code: 'CHUACOCHU',
+        error: 'Phông chữ thương hiệu chưa tải xong, nên chưa vẽ được. Mọi phép ' +
+               'ngắt dòng của bộ vẽ đo bằng phông đang có; đo bằng phông dự phòng ' +
+               'rồi vẽ bằng phông thật thì chữ dài hơn thứ đã đo và tràn ra ngoài ' +
+               'lề — mà lệch bao nhiêu thì tuỳ lần chạy, nên tấm ấy không dựng lại ' +
+               'được. Chờ document.fonts.ready rồi gọi lại. Đang thiếu: ' +
+               thieu.join(' · ')};
+    }
 
     var b = BO_VE[x.loaiHinh];
     if (!b) return {ok: false, chuaCo: true,

@@ -516,7 +516,18 @@ G.VIEWS = G.VIEWS || {};
      Loại hình chưa có bộ vẽ thì hộp này nói CHƯA CÓ và nói luôn đã vẽ
      được những loại nào — nói "không vẽ được" mà không nói vẽ được gì
      thì người dùng thử mò từng loại. */
+  /* Bộ vẽ TỪ CHỐI khi phông thương hiệu chưa tải — mọi phép ngắt dòng
+     của nó đo bằng phông đang có, nên đo bằng phông dự phòng rồi vẽ
+     bằng phông thật là chữ tràn lề. Nên chờ ở ĐÂY, một lần, thay vì
+     để người bấm nhận một lời từ chối họ không làm gì được. */
   G.ktVe = function (id, kho) {
+    if (typeof document !== 'undefined' && document.fonts && document.fonts.ready &&
+        !G._ktChuXong) {
+      document.fonts.ready.then(function () {
+        G._ktChuXong = 1; G.ktVe(id, kho);
+      });
+      return;
+    }
     var d = G.ktDuLieu.kho;
     var x = ((d && d.ds) || []).filter(function (y) { return y.id === id; })[0];
     if (!x) return U.toast('Không tìm thấy bản ghi này trong sổ.', 'err');

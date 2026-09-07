@@ -10714,6 +10714,62 @@ const { chromium } = require(PW);
          Một danh sách gõ tay trong bộ kiểm thì mỗi lần kho đổi là bộ
          kiểm nói sai, và người sửa sẽ sửa cái ĐÚNG cho vừa cái SAI.
          Nay đọc thẳng TG_LOAIHINH[].canNguoi. */
+      /* ── ĐƯỜNG DỌC: TRÙNG HẲN, HOẶC KHÁC HẲN ──
+
+         Chủ hệ nói bản 9.99.24 "chưa chuẩn, căn chỉnh từng nanômét", và
+         đo ra thì đúng: một cột chữ có BỐN mép trái khác nhau, lệch
+         nhau 1–48 điểm ảnh. Không cái nào sai đủ để tự lộ, nên không
+         cái nào bị bắt — mắt chỉ đọc ra "cột này không thẳng" mà không
+         chỉ được vào đâu.
+
+         Bốn nguyên nhân, bốn lớp khác nhau, và không lớp nào có phép đo:
+           · vòng dấu GITA đặt theo TÂM, cột đặt theo MÉP
+           · nhãn neo theo VẠCH ĐỎ, tiêu đề neo theo CHỮ
+           · dải băng căn GIỮA giữa một cột căn TRÁI
+           · phần dư phép chia lưới ô rơi mất
+
+         Bộ vẽ tự khai chỗ nào phải thẳng hàng bằng lớp `gita-ray` — chứ
+         phép đo KHÔNG ĐOÁN. Đoán thì chữ căn giữa trong ô cũng có mép
+         trái riêng, và nó thẳng hàng với chính nó, nên đoán kiểu gì
+         cũng có ngày báo oan.
+
+         Ngưỡng 0,5 điểm ảnh, không phải 2: hai khối lệch 2 điểm ảnh thì
+         mắt vẫn thấy, mà lệch 2 thì chắc chắn là tính sai chứ không
+         phải làm tròn. */
+      r.rayLech = [];
+      for (const loai of G.veThiGiacBiet().loaiHinh) {
+        const vr = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
+        if (!vr.ok) continue;
+        const wR = document.createElement('div');
+        wR.style.cssText = 'position:absolute;left:0;top:0';
+        wR.innerHTML = vr.svg;
+        document.body.appendChild(wR);
+        const sR = wR.querySelector('svg');
+        sR.style.cssText = 'width:' + vr.w + 'px;height:' + vr.h +
+          'px;max-width:none';
+        const nhomR = [...sR.querySelectorAll('.gita-ray')];
+        const B = sR.getBoundingClientRect();
+        if (nhomR.length >= 2) {
+          const trai = nhomR.map(g2 => g2.getBoundingClientRect().left - B.left);
+          const lech = Math.max(...trai) - Math.min(...trai);
+          if (lech > 0.5)
+            r.rayLech.push(loai + ' · ' + nhomR.length + ' khối neo lệch nhau ' +
+              lech.toFixed(2) + ' điểm ảnh');
+        }
+        /* Và không một nét nào được vượt LỀ NGOÀI của tấm. Lề là thứ
+           duy nhất làm một trang trông có người dựng. */
+        let phaiXa = 0;
+        for (const e2 of sR.querySelectorAll('text,rect')) {
+          const q2 = e2.getBoundingClientRect();
+          if (q2.width > 0 && q2.width < vr.w * 0.98)
+            phaiXa = Math.max(phaiXa, q2.right - B.left);
+        }
+        if (phaiXa > vr.w - 1)
+          r.rayLech.push(loai + ' · có nét chạm mép tấm ở ' + phaiXa.toFixed(1) +
+            '/' + vr.w);
+        wR.remove();
+      }
+
       const duocCoAnh = ['BIA'].concat(
         (G.TG_LOAIHINH || []).filter(v => v.canNguoi).map(v => v.ma));
       r.anhDuocCoO = duocCoAnh;
@@ -10909,7 +10965,7 @@ const { chromium } = require(PW);
     const roDu = !(ra.mo || []).length && !(ra.vat || []).length &&
       !(ra.hinhLech || []).length && !(ra.cotNhieuSac || []).length &&
       !(ra.ngoaiTam || []).length && !(ra.anhSaiCho || []).length &&
-      !(ra.dauTroi || []).length;
+      !(ra.dauTroi || []).length && !(ra.rayLech || []).length;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
         ra.veDuoc.length >= 12 && choiDu && brandDu && roDu,
       'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. Và đo TƯƠNG PHẢN trên chính pixel đã vẽ ra, không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải màu nào ai gõ ra mà là kết quả của bốn lớp chồng lên nhau — cách duy nhất biết đúng là dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy màu trung bình đúng ô chữ sẽ nằm. Ngưỡng WCAG AA: 3,0 cho chữ từ 24px, 4,5 cho chữ thường. Một tấm hình rất sang mà chữ chìm thì nó không sang, nó hỏng. Chữ CHUYỂN SẮC cũng bị đo, và đo TỪNG CHẶNG MÀU của dải: bản đầu bỏ qua mọi thẻ có fill=url() — một lỗ đúng ở chỗ nguy hiểm nhất, vì chữ chuyển sắc luôn là câu to nhất trong tấm, và một dải có hai đầu nên đầu này đọc được không có nghĩa đầu kia đọc được',
@@ -10943,7 +10999,8 @@ const { chromium } = require(PW);
              (ra.cotNhieuSac || []).length ? 'BIỂU ĐỒ TÔ NHIỀU SẮC: ' + ra.cotNhieuSac.join(' · ') : '',
              (ra.ngoaiTam || []).length ? 'CHỮ TRÀN RA KHỎI THẺ CỦA NÓ: ' + ra.ngoaiTam.join(' | ') : '',
              (ra.anhSaiCho || []).length ? 'ẢNH NGƯỜI THẬT LỌT VÀO LOẠI HÌNH KHÁC: ' + ra.anhSaiCho.join(' · ') : '',
-             (ra.dauTroi || []).length ? 'DÒNG ĐÁNH DẤU TRÔI VÀO THÂN BÀI: ' + ra.dauTroi.join(' · ') : ''
+             (ra.dauTroi || []).length ? 'DÒNG ĐÁNH DẤU TRÔI VÀO THÂN BÀI: ' + ra.dauTroi.join(' · ') : '',
+             (ra.rayLech || []).length ? 'ĐƯỜNG DỌC KHÔNG TRÙNG: ' + ra.rayLech.join(' · ') : ''
             ].filter(Boolean).join(' · ')));
   }
 
