@@ -10383,6 +10383,29 @@ const { chromium } = require(PW);
           'LÀM — Viết ra một điều con sẽ thử lại với niềm tin mới.\n' +
           'ĐÓNG ĐINH: Tự tin thật được xây từ những lần chính mình vượt qua ' +
           'điều từng nghĩ là không thể.',
+        /* Áp phích có người: đo ĐÚNG khuôn tấm mẫu chủ hệ gửi — sáu ô,
+           bóng thoại chồng lên lớp người, dải băng, câu ký. Đây là bố
+           cục đông chữ nhất trong cả bộ, nên nếu chỗ nào tràn khung thì
+           nó tràn ở đây trước. Cố ý KHÔNG khai dòng ẢNH: đo bản Ô CHỜ,
+           vì lớp người là ảnh ngoài — bản rasterize không giải được
+           đường dẫn tương đối nên đo có ảnh cũng chỉ đo một ô trống,
+           mà bản Ô CHỜ thì có chữ thật để đo. */
+        AP_PHICH:
+          'TRỢ LÝ AI\n\nNHÃN: Kiến tạo thế hệ tinh hoa\n' +
+          'PHỤ: Đồng hành cùng bạn trên hành trình học tập và trưởng thành\n' +
+          'BĂNG: Học tập – Phát triển – Thành công\n' +
+          'THOẠI: Tôi là trợ lý AI của GITA. Rất vui được đồng hành cùng bạn!\n' +
+          'KÝ: Bạn cứ hỏi, tôi luôn ở đây.\n' +
+          'Ô | Đọc hiểu | Toàn bộ hệ thống Web App GITA 365\n' +
+          'Ô | Tư vấn | Cá nhân hoá theo nhu cầu của bạn\n' +
+          'Ô | Hỗ trợ | Lên kế hoạch học tập và rèn luyện\n' +
+          'Ô | Giải đáp | Mọi thắc mắc nhanh chóng, chính xác\n' +
+          'Ô | Tối ưu | Tiết kiệm thời gian, hiệu quả tối đa\n' +
+          'Ô | Cùng bạn | Kiến tạo phiên bản tốt nhất của chính mình',
+        CHAN_DUNG:
+          'Coach đồng hành\n\nNgười đi cùng nhà mình suốt chín mươi ngày, đọc ' +
+          'sổ mỗi tuần và ngồi lại mỗi cuối chuỗi hai mươi mốt ngày.\n\n' +
+          'NHÃN: Ai làm gì',
         KHUNG: 'ĐỌC HIỂU — Toàn bộ hệ thống Web App GITA 365 cho cả nhà cùng dùng\n' +
                'TƯ VẤN — Cá nhân hoá theo nhu cầu của nhà mình\n' +
                'HỖ TRỢ — Lên kế hoạch học tập, rèn luyện và phát triển bản thân\n' +
@@ -10680,12 +10703,23 @@ const { chromium } = require(PW);
          hình vào MỘT NGƯỜI. Một tấm nói về phần việc của phụ huynh
          mà có mặt trainer thì người đọc hiểu là trainer đang dạy họ,
          chứ không hiểu là hệ thống đang mô tả vai.
-         Đo: mười một loại hình kia KHÔNG được sinh ra thẻ <image>
-         nào. Chúng dùng hình người do máy dựng — không mặt, không ai
-         để nhận ra, nên không đụng quyền hình ảnh của người nào. */
+         Đo: mọi loại hình KHÔNG khai `canNguoi` đều không được sinh ra
+         thẻ <image> nào. Chúng dùng hình người do máy dựng — không mặt,
+         không ai để nhận ra, nên không đụng quyền hình ảnh của ai.
+
+         ── DANH SÁCH NÀY ĐỌC TỪ KHO, KHÔNG GÕ TAY (9.99.24) ──
+         Bản trước viết thẳng `if (loai === 'BIA') continue`. Rồi hiến
+         pháp thêm AP_PHICH và CHAN_DUNG — hai loại SINH RA để có ảnh
+         người — và phép đo này đỏ oan ở đúng hai chỗ nó phải xanh.
+         Một danh sách gõ tay trong bộ kiểm thì mỗi lần kho đổi là bộ
+         kiểm nói sai, và người sửa sẽ sửa cái ĐÚNG cho vừa cái SAI.
+         Nay đọc thẳng TG_LOAIHINH[].canNguoi. */
+      const duocCoAnh = ['BIA'].concat(
+        (G.TG_LOAIHINH || []).filter(v => v.canNguoi).map(v => v.ma));
+      r.anhDuocCoO = duocCoAnh;
       r.anhSaiCho = [];
       for (const loai of G.veThiGiacBiet().loaiHinh) {
-        if (loai === 'BIA') continue;
+        if (duocCoAnh.indexOf(loai) >= 0) continue;
         const v3 = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
         if (v3.ok && /<image\b/.test(v3.svg))
           r.anhSaiCho.push(loai + ' sinh ra thẻ <image>');

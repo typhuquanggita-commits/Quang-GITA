@@ -64,7 +64,14 @@ const CAM_THEO_TANG = {
 const THU_TU_TANG = ['T1', 'T2', 'T3', 'T4', 'T5'];
 
 const LOAI_HINH = ['BANDO_HANHTRINH', 'KHUNG', 'BANG_DIEU_KHIEN', 'DANH_SACH_VIEC',
-  'TRUOC_SAU', 'NHIP', 'CONG', 'SO_SANH_TANG', 'VAI_TRO', 'MOT_SO', 'QUY_TRINH', 'BIA'];
+  'TRUOC_SAU', 'NHIP', 'CONG', 'SO_SANH_TANG', 'VAI_TRO', 'MOT_SO', 'QUY_TRINH', 'BIA',
+  'AP_PHICH', 'CHAN_DUNG'];
+
+/* Hai loại hình CẦN NGƯỜI. Chúng là ảnh ghép hai lớp: lớp người do bộ
+   tạo ảnh ngoài sinh, lớp chữ do bộ vẽ trong máy đặt lên (luật C14).
+   Khai ở đây để cổng biết phải đòi một lượt đi ra, và để bộ kiểm biết
+   đúng chỗ nào được phép có <image>. */
+const CAN_NGUOI = ['AP_PHICH', 'CHAN_DUNG'];
 const NGUOI_XEM = ['PHUHUYNH', 'HOCVIEN', 'GIADINH', 'COACH', 'CHUHE'];
 
 /* Sáu bậc, và bậc nào đi tiếp được sang bậc nào. */
@@ -568,8 +575,46 @@ const KIEU_RA = {
   DANH_SACH_VIEC: 'Bàn làm việc nhìn từ trên xuống, đồ vật thật.',
   CONG:           'Một lối đi có cửa, ánh sáng phía bên kia.',
   NHIP:           'Lặp lại một hình theo nhịp đều, đổi dần một thuộc tính.',
-  BANG_DIEU_KHIEN:'Màn hình sáng trong phòng tối, người ngồi trước nó.'
+  BANG_DIEU_KHIEN:'Màn hình sáng trong phòng tối, người ngồi trước nó.',
+  /* Hai loại cần người: đề bài KHÔNG mô tả khối chữ, vì lớp chữ do máy
+     đặt lên sau (C14). Nói cả bố cục chữ ở đây là bảo bộ tạo ảnh làm
+     hộ việc máy đã làm chính xác hơn — và nó sẽ nướng chữ sai dấu vào
+     ảnh, không gỡ ra được. */
+  AP_PHICH:       'Người đứng hoặc ngồi lệch MỘT BÊN khung, thân hướng vào ' +
+                  'giữa. NỬA KIA ĐỂ TRỐNG — chỉ bối cảnh mờ, không đồ vật ' +
+                  'nổi, không chữ. Đó là chỗ máy đặt khối chữ lên sau.',
+  CHAN_DUNG:      'Nửa người, chính diện hơi lệch, phông đơn sắc mờ. Chừa ' +
+                  'khoảng trống dưới ngực để máy đặt tên vai.'
 };
+
+/* ══ ĐỀ BÀI VỀ NGƯỜI ══
+
+   Chỗ này quyết định ảnh về đẹp hay hỏng, nên nó dài, và mỗi dòng có
+   lý do đứng sau.
+
+   Luật C13 cho phép người do AI biên soạn và ĐÒI nói rõ điều ấy: không
+   nói thì bộ tạo ảnh lấy nét của người nó thấy nhiều nhất, mà người nó
+   thấy nhiều nhất là người nổi tiếng. */
+const NGUOI_RA = [
+  'NGƯỜI TRONG ẢNH:',
+  '· Do AI biên soạn hoàn toàn. KHÔNG dựng theo bất kỳ người có thật ' +
+    'nào, không giống một người nổi tiếng nào. Đây là điều kiện bắt ' +
+    'buộc, không phải một lời khuyên.',
+  '· Người trưởng thành, người Việt, 25–40 tuổi. Không trẻ em, không ' +
+    'thiếu niên — không ngoại lệ.',
+  '· Trang phục lịch sự, chỉnh tề, tay áo dài. Không hở, không bó sát, ' +
+    'không đồ hiệu nhận ra được.',
+  '· Nét mặt: bình thản, ấm, mắt nhìn thẳng người xem hoặc nhìn hơi ' +
+    'chếch. Cười khép miệng. Không cười hở lợi, không tạo dáng.',
+  '· Dáng: ngồi hoặc đứng làm việc thật — không khoanh tay, không giơ ' +
+    'ngón cái, không chỉ vào chỗ trống.',
+  '· Ảnh chụp thật: da có kết cấu, tóc có sợi rời, ánh sáng bên mềm, ' +
+    'nền xoá phông nhẹ. KHÔNG làm mịn da tới mức nhựa.',
+  '· TUYỆT ĐỐI KHÔNG CHỮ trong ảnh, không dấu hiệu thương hiệu nào, ' +
+    'không bảng, không biển, không màn hình có chữ. Mọi chữ do hệ đặt ' +
+    'lên sau; chữ nướng sẵn trong ảnh thì sai dấu tiếng Việt và không ' +
+    'gỡ ra được.'
+].join('\n');
 
 /* ══ CỬA ĐI RA NGOÀI ══
 
@@ -636,6 +681,7 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
      không nằm trong bản ghi nên không có gì để rò. */
   const tangSo = Number(String(x.tang || '').replace(/[^0-9]/g, ''));
   const mauTang = MAU_RA.filter(m => m.k.indexOf('T' + tangSo + ' ') === 0)[0];
+  const canNguoi = CAN_NGUOI.indexOf(x.loaiHinh) >= 0;
   const guiDi = [
     '── ĐỀ BÀI THIẾT KẾ · GITA 365 ──',
     '',
@@ -656,20 +702,27 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
       ' Không dùng sắc nào ngoài bảng: ' +
       MAU_RA.map(m => m.hex).join(' · '),
     '',
-    'CHỮ: nếu có chữ trong hình thì đặt bằng Be Vietnam Pro; câu trích ' +
-      'dùng Playfair Display nghiêng. Dấu tiếng Việt phải đủ và đúng chỗ.',
-    '',
+    /* Với loại cần người thì KHÔNG nói gì về chữ, vì đề bài này đang
+       đặt một tấm KHÔNG CÓ CHỮ. Nhắc tới bộ chữ là mời nó viết. */
+    canNguoi ? null : 'CHỮ: nếu có chữ trong hình thì đặt bằng Be Vietnam Pro; ' +
+      'câu trích dùng Playfair Display nghiêng. Dấu tiếng Việt phải đủ và đúng chỗ.',
+    canNguoi ? null : '',
+    /* null = bỏ hẳn dòng; '' = một dòng trống ngăn đoạn. Hai thứ khác
+       nhau, nên bộ lọc chỉ được bỏ null. */
+    canNguoi ? NGUOI_RA : null,
+    canNguoi ? '' : null,
     'CẤM — mỗi dòng là một lần đã hỏng thật:',
-    '· Không mặt người nhận ra được. Người quay nghiêng, quay lưng, ' +
-      'khuất sáng, hoặc chỉ lấy từ vai xuống. Một khuôn mặt sinh ra ngẫu ' +
-      'nhiên vẫn có thể trùng một người có thật, và Học viện không có ' +
-      'cách nào xin phép một người mình không biết là ai.',
-    '· Không trẻ em.',
+    '· Không chân dung một người có thật, không khuôn mặt giống người ' +
+      'nổi tiếng. Học viện không có cách nào xin phép một người mình ' +
+      'không biết là ai.',
+    '· Không trẻ em, không thiếu niên.',
+    '· Không MỘT CHỮ NÀO trong ảnh — kể cả chữ nền, chữ trên màn hình, ' +
+      'chữ trên gáy sách. Lớp chữ do hệ đặt lên sau.',
     '· Không đặt dấu GITA vào hình; dấu do hệ tự đặt sau, và nó không ' +
       'nhận bóng đổ, không nghiêng, không đổi màu.',
-    '· Không chữ hứa điểm số, không tên đơn vị nào khác.',
+    '· Không tên đơn vị nào khác, không lời hứa điểm số.',
     '· Không kho ảnh dựng sẵn, không nền gradient tím-xanh mặc định.'
-  ].join('\n');
+  ].filter(v => v !== null).join('\n');
 
   const id = 'DR-' + tokenMoi().slice(0, 14);
   const luc = new Date().toISOString();

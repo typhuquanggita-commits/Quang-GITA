@@ -756,6 +756,17 @@ CREATE TABLE IF NOT EXISTS deXuatThiGiac (
   duyetLuc    TEXT,
   lyDo        TEXT,               -- BẮT BUỘC khi từ chối
   tepHinh     TEXT,               -- đường dẫn ảnh cuối, khi đã có
+  -- LỚP NGƯỜI của một tấm ghép hai lớp (AP_PHICH · CHAN_DUNG). Ảnh do
+  -- bộ tạo ảnh ngoài sinh, và CHỈ máy chủ ghi vào đây, CHỈ sau khi tấm
+  -- đã đi đủ thang duyệt — luật C12. Bộ vẽ trong máy đọc cột này chứ
+  -- không nhận đường dẫn tự do từ nội dung: nhận được thì bất kỳ ảnh
+  -- nào cũng vào được một ấn phẩm mang dấu GITA.
+  anhNguoi    TEXT,
+  -- Lượt đi ra đã sinh ra ảnh ấy — luật C15. Không giữ thì sáu tháng
+  -- sau không ai dựng lại được tấm này, và cũng không trả lời được câu
+  -- "ai bảo nó vẽ thế này". Trỏ sang luotDiRa chứ không chép đề bài:
+  -- chép là dựng bản thứ hai của một sự thật.
+  idDiRa      TEXT,
   seoTen      TEXT,
   seoAlt      TEXT
 );

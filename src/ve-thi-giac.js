@@ -666,7 +666,11 @@ var G = window.G || {}; window.G = G;
      thật thì bản nào cũng có ngày lệch. Nay một danh sách, cả hai
      đọc từ đó, và thêm dấu mới là sửa đúng một chỗ. */
   var DAU_DONG = ['NHÃN', 'BĂNG', 'ẢNH', 'PHỤ', 'HÌNH', 'HÌNH1', 'HÌNH2',
-                  'ĐÓNG ĐINH'];
+                  'ĐÓNG ĐINH',
+                  /* Ba dấu của áp phích có người (9.99.24). BÊN nói người
+                     đứng phía nào; THOẠI là bóng thoại; KÝ là câu viết tay
+                     ở chân tấm. */
+                  'BÊN', 'THOẠI', 'KÝ'];
   function docDau(chu, dau) {
     var re = new RegExp('^\\s*' + dau + '\\s*:\\s*(.+)$', 'im');
     var m = re.exec(String(chu || ''));
@@ -2795,6 +2799,358 @@ var G = window.G || {}; window.G = G;
       ve, gom(manh).defs)};
   }
 
+  /* ═══════════ LỚP NGƯỜI ═══════════
+
+     Luật lopGhep của hiến pháp: một tấm có người là HAI LỚP. Lớp dưới
+     là người và bối cảnh, do bộ tạo ảnh ngoài sinh, KHÔNG mang một chữ
+     nào. Lớp trên là dấu, tiêu đề, ô việc, con số — do máy đặt.
+
+     Hàm này vẽ lớp dưới, và nó chỉ nhận ảnh từ ĐÚNG HAI NGUỒN:
+       · một mã trong ANH_NGUOI — kho ảnh của Học viện
+       · x.anhNguoi — ảnh máy chủ ghi vào bản ghi SAU khi tấm đã đi đủ
+         thang duyệt (luật C12)
+     Đường dẫn tự do trong nội dung thì KHÔNG. Nhận được thì bất kỳ ảnh
+     nào cũng vào được một ấn phẩm mang dấu GITA.
+
+     ── CHƯA CÓ ẢNH THÌ VẼ Ô CHỜ, KHÔNG VẼ ĐẠI MỘT NGƯỜI ──
+     Đây là chỗ dễ sai nhất của cả tệp. Bộ vẽ trong máy dựng được hình
+     người phẳng, nên rất dễ thả một hình phẳng vào chỗ đợi ảnh chụp
+     cho "đỡ trống". Làm thế thì tấm trông như đã xong, và không ai đi
+     tìm lớp ảnh còn thiếu nữa — tấm ấy đi thẳng ra ấn phẩm với một
+     hình que ở chỗ đáng lẽ là một người.
+     Ô chờ vẽ ra đúng khung, đúng tỷ lệ, và NÓI RA nó đang chờ gì. */
+  function lopNguoi(ma, x, y, w, ht, k, sac, xRec) {
+    var tep = '';
+    if (ma && ANH_NGUOI[ma]) tep = ANH_NGUOI[ma].tep;
+    else if (ma === 'kho' && xRec && xRec.anhNguoi) tep = String(xRec.anhNguoi);
+    var idc = idMoi('cat'), idq = idMoi('quangn');
+    /* Quầng sắc chặng sau người — thứ nối lớp ảnh vào lớp chữ. Không
+       có nó thì ảnh trông như dán lên, không như nằm trong tấm. */
+    var quang =
+      '<radialGradient id="' + idq + '" cx="50%" cy="45%" r="55%">' +
+        '<stop offset="0%" stop-color="' + h(sac) + '" stop-opacity="' +
+          (k.sau ? '0.34' : '0.15') + '"/>' +
+        '<stop offset="100%" stop-color="' + h(sac) + '" stop-opacity="0"/>' +
+      '</radialGradient>';
+    var nenQ = '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' +
+      ht + '" fill="url(#' + idq + ')"/>';
+
+    if (!tep) {
+      /* Ô CHỜ. Nét đứt, không nền đặc, và một câu nói thẳng. Trông
+         phải RA một chỗ còn thiếu, không ra một mảng thiết kế. */
+      var co = Math.max(13, Math.round(w * 0.045));
+      var loi = ['Ô CHỜ LỚP NGƯỜI', Math.round(w) + '×' + Math.round(ht),
+                 'ảnh về rồi mới đầy'];
+      var svg = nenQ +
+        '<rect x="' + (x + 2) + '" y="' + (y + 2) + '" width="' + (w - 4) +
+          '" height="' + (ht - 4) + '" rx="16" fill="none" stroke="' + h(sac) +
+          '" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="11 8"/>';
+      loi.forEach(function (d, i) {
+        svg += '<text x="' + Math.round(x + w / 2) + '" y="' +
+          Math.round(y + ht / 2 + (i - 1) * co * 1.5) + '" text-anchor="middle" ' +
+          'font-family="' + h(CHU_THAN) + '" font-size="' +
+          (i === 0 ? co : Math.round(co * 0.82)) + '" font-weight="' +
+          (i === 0 ? 800 : 500) + '" fill="' + h(k.muc2) + '" letter-spacing="' +
+          (i === 0 ? (co * 0.10).toFixed(1) : '0') + '">' + h(d) + '</text>';
+      });
+      return {defs: quang, ve: svg, coAnh: false};
+    }
+
+    return {defs: quang +
+      '<clipPath id="' + idc + '"><rect x="' + x + '" y="' + y + '" width="' + w +
+        '" height="' + ht + '" rx="16"/></clipPath>',
+      coAnh: true,
+      ve: nenQ +
+        '<image href="' + h(tep) + '" x="' + x + '" y="' + y + '" width="' + w +
+          '" height="' + ht + '" preserveAspectRatio="xMidYMid slice" clip-path="url(#' +
+          idc + ')"/>'};
+  }
+
+  /* ── BÓNG THOẠI ──
+     Một câu ngắn trong bóng bo tròn có đuôi, đặt CHỒNG lên lớp người.
+     Nền đặc chứ không mờ: đặt lên một tấm ảnh thì nền mờ nghĩa là chữ
+     đọc trên bất cứ thứ gì ảnh có ở đúng chỗ đó, và ảnh thì đổi. */
+  function bongThoai(chu, x, y, rongToiDa, k, sac) {
+    var co = Math.max(13, Math.round(rongToiDa * 0.062));
+    var dong = catDong(chu, '600 ' + co + 'px ' + CHU_THAN, rongToiDa - co * 2.2);
+    while (dong.length > 4 && co > 11) {
+      co -= 1;
+      dong = catDong(chu, '600 ' + co + 'px ' + CHU_THAN, rongToiDa - co * 2.2);
+    }
+    var rong = 0;
+    dong.forEach(function (d) {
+      rong = Math.max(rong, doRong(d, '600 ' + co + 'px ' + CHU_THAN)); });
+    rong = Math.min(rongToiDa, Math.round(rong + co * 2.2));
+    var ht = Math.round(dong.length * co * 1.42 + co * 1.5);
+    var nen = nenDac(sac, 5.5);          /* đủ tối cho chữ trắng, 5,5:1 */
+    var muc = mucTrenDac(nen);
+    var svg = '<g><rect class="gita-tam" x="' + x + '" y="' + y + '" width="' + rong +
+      '" height="' + ht + '" rx="' + Math.round(co * 1.1) + '" fill="' + h(nen) + '"/>' +
+      /* Đuôi bóng chỉ xuống dưới-trái, về phía người. */
+      '<path d="M' + Math.round(x + co * 1.4) + ' ' + (y + ht - 1) +
+        ' l0 ' + Math.round(co * 1.15) + ' l' + Math.round(co * 1.25) + ' -' +
+        Math.round(co * 1.15) + ' Z" fill="' + h(nen) + '"/>';
+    dong.forEach(function (d, i) {
+      svg += '<text x="' + Math.round(x + co * 1.1) + '" y="' +
+        Math.round(y + co * 1.35 + i * co * 1.42) + '" font-family="' + h(CHU_THAN) +
+        '" font-size="' + co + '" font-weight="600" fill="' + h(muc) + '">' +
+        h(d) + '</text>';
+    });
+    return {cao: ht + Math.round(co * 1.15), rong: rong, ve: svg + '</g>'};
+  }
+
+  /* Đọc các dòng "Ô | tên | mô tả" thành lưới ô việc. Máy KHÔNG tự cắt
+     một đoạn văn thành ô — cùng luật với lưới ô của KHUNG: cắt là đoán,
+     và đoán sai thì không ai biết là đã đoán. */
+  function docO(chu) {
+    return String(chu || '').split('\n').map(function (d) {
+      var m = /^\s*Ô\s*\|\s*(.+)$/.exec(d);
+      if (!m) return null;
+      var p = m[1].split('|').map(function (v) { return v.trim(); });
+      if (!p[0]) return null;
+      var o = {ten: p[0]};
+      if (p[1]) o.mo = p[1];           /* không có mô tả thì BỎ HẲN khoá */
+      return o;
+    }).filter(Boolean);
+  }
+
+  /* ═══════════ BỘ VẼ · ÁP PHÍCH CÓ NGƯỜI ═══════════
+
+     Khuôn của tấm mẫu chủ hệ gửi: người chiếm trọn một cột từ mép tới
+     mép, cột kia là dấu — nhãn — tiêu đề lớn — câu phụ — dải băng —
+     lưới ô việc, và một câu viết tay ở chân. */
+  function veApPhich(x, kg, che) {
+    var k = bang(che);
+    var chu = boDau(x.noiDung);
+    var cau = cauDau(chu);
+    if (!cau) return {ok: false,
+      error: 'Áp phích cần một TIÊU ĐỀ ở dòng đầu nội dung — vài chữ thôi, ' +
+             'đó là thứ người ta đọc trước cả khi thấy người trong ảnh.'};
+
+    var o = docO(x.noiDung);
+    if (!o.length) return {ok: false,
+      error: 'Áp phích cần ít nhất một dòng "Ô | tên | mô tả". Máy KHÔNG tự cắt ' +
+             'một đoạn văn thành ô — cắt là đoán, và một tấm đoán sai trông y ' +
+             'hệt một tấm đúng.'};
+    if (o.length > 6) return {ok: false, code: 'QUANHIEUO',
+      error: 'Tối đa SÁU ô một áp phích, đang có ' + o.length + '. Luật C07 cấm ' +
+             'nhồi chữ vào hình: quá sáu thì mắt không đọc hết trước khi bỏ đi, ' +
+             'và ô thứ bảy chỉ làm sáu ô kia khó thấy hơn.'};
+
+    var sac = sacTang();
+    if (!sac.length) return {ok: false, error: 'Chưa mở được bảng màu thương hiệu.'};
+    var maAnh = docDau(x.noiDung, 'ẢNH');
+    if (maAnh && maAnh !== 'kho' && !ANH_NGUOI[maAnh]) return {ok: false,
+      error: 'Không có ảnh "' + maAnh + '" trong kho ảnh. Đang có: ' +
+             Object.keys(ANH_NGUOI).join(', ') + ' · hoặc "kho" để dùng ảnh máy ' +
+             'chủ đã ghi vào bản ghi sau khi tấm qua đủ thang duyệt.'};
+    var ben = (docDau(x.noiDung, 'BÊN') || 'trái').toLowerCase();
+    var traiLaNguoi = ben.indexOf('ph') !== 0;
+
+    var le = Math.round(kg.w * 0.045);
+    var rongNguoi = Math.round(kg.w * 0.38);
+    var xNguoi = traiLaNguoi ? 0 : kg.w - rongNguoi;
+    var xChu = traiLaNguoi ? rongNguoi + Math.round(kg.w * 0.028) : le;
+    var rongChu = kg.w - rongNguoi - Math.round(kg.w * 0.028) - le;
+
+    var nen = lopNen(kg, k, 0.8);
+    var bong = defBong(k, 1), cs = defChuSac(k);
+    var manh = [nen, bong, cs];
+    var sChinh = sac[0];
+
+    var ln = lopNguoi(maAnh, xNguoi, 0, rongNguoi, kg.h, k, sChinh.hex, x);
+    manh.push(ln);
+    var ve = ln.ve;
+
+    /* ── ĐO CẢ CỘT CHỮ TRƯỚC KHI VẼ MỘT NÉT NÀO ──
+       Lớp lỗi đã sửa năm lần trong tệp này: neo một khối vào một con
+       số đoán rồi mới đo. Ở đây cột chữ có tới sáu khối chồng nhau,
+       nên đoán một khối là lệch cả năm khối dưới. */
+    var nhan = docDau(x.noiDung, 'NHÃN');
+    var phu = docDau(x.noiDung, 'PHỤ') || cauHai(chu);
+    var bangC = docDau(x.noiDung, 'BĂNG');
+    var ky = docDau(x.noiDung, 'KÝ');
+
+    var coT = Math.round(kg.w / 12), dT;
+    for (;;) {
+      dT = catDong(cau, '800 ' + coT + 'px ' + CHU_THAN, rongChu);
+      if (dT.length <= 2 || coT <= 26) break;
+      coT -= 2;
+    }
+    var coN = Math.round(coT * 0.30);
+    var coP = Math.round(coT * 0.32);
+    var dP = phu ? catDong(phu, '500 ' + coP + 'px ' + CHU_THAN, rongChu) : [];
+    var db = bangC ? daiBang(bangC, 0, 0, k, rongChu) : null;
+    if (db) manh.push(db);
+
+    /* ── LƯỚI Ô: SỐ CỘT THEO SỐ Ô, VÀ SÁU Ô LÀ BA CỘT ──
+       Bản đầu xếp sáu ô thành 2 cột × 3 hàng và tấm tràn 213 điểm ảnh.
+       Tấm mẫu chủ hệ gửi xếp 3 × 2, và đó không phải một sở thích: một
+       hàng thêm vào tốn CẢ chiều cao ô, còn một cột thêm vào chỉ tốn
+       một phần chiều ngang mà cột ấy vốn đang thừa. Chiều cao là thứ
+       khan hiếm trên khổ vuông, không phải chiều ngang. */
+    var soCot = o.length >= 5 ? 3 : (o.length >= 3 ? 2 : 1);
+    var soHang = Math.ceil(o.length / soCot);
+    var giua = Math.round(kg.w * 0.013);
+    var rongO = Math.round((rongChu - giua * (soCot - 1)) / soCot);
+    var coTenO = Math.max(13, Math.round(rongO * 0.105));
+    var coMoO = Math.max(11, Math.round(rongO * 0.072));
+    var rHH = Math.round(rongO * 0.19);
+    /* ── HUY HIỆU ĐO TỪ TÂM, KHÔNG TỪ ĐỈNH ──
+       Bản đầu đặt tên ô ở rHH*2 dưới đỉnh ô, mà huy hiệu tâm ở rHH*1.5
+       và bán kính rHH nên đáy nó ở rHH*2.5 — tên chui vào nửa dưới huy
+       hiệu. Vẽ ra mới thấy: "HỖ TRỢ" bị cắt ngang. Nay mọi mốc tính từ
+       ĐÁY huy hiệu, và đáy ấy có tên riêng để không ai cộng nhầm nữa. */
+    var oDem = Math.round(coTenO * 0.75);       /* chừa mép trên trong ô */
+    var oDayHH = oDem + rHH * 2.5;              /* đáy huy hiệu, kể từ đỉnh ô */
+    var caoO = 0;
+    var dongO = o.map(function (m) {
+      var d = m.mo ? catDong(m.mo, '500 ' + coMoO + 'px ' + CHU_THAN,
+        rongO - coMoO * 1.3) : [];
+      caoO = Math.max(caoO, oDayHH + coTenO * 1.30 + d.length * coMoO * 1.30 +
+        coTenO * 0.85);
+      return d;
+    });
+    caoO = Math.round(caoO);
+
+    var caoKy = ky ? Math.round(coT * 0.42) * 1.7 : 0;
+    var caoTong = (nhan ? coN * 1.9 : 0) +
+      dT.length * coT * 1.10 + coT * 0.34 +
+      (dP.length ? dP.length * coP * 1.38 + coP * 0.7 : 0) +
+      (db ? db.cao + coT * 0.34 : 0) +
+      soHang * caoO + (soHang - 1) * giua + coT * 0.40 + caoKy;
+
+    var yDau = Math.round(kg.h * 0.052);
+    var caoDau = Math.round(kg.h * 0.075);
+    var vungY = yDau + caoDau;
+    var vungCao = kg.h - vungY - Math.round(kg.h * 0.045);
+    if (caoTong > vungCao) {
+      var thua = Math.round(caoTong - vungCao);
+      return {ok: false, code: 'DAIQUAKHO',
+        error: 'Cột chữ dài hơn khổ tấm ' + thua + ' điểm ảnh. Bớt một ô, rút ' +
+               'ngắn mô tả, hoặc bỏ câu phụ. Máy KHÔNG đẩy khối lên cho vừa: ' +
+               'đẩy lên là chồng chữ lên khối đã vẽ, tức là giấu một tấm quá ' +
+               'tải bằng cách làm nó khó đọc — đúng lỗi đã sửa ở thẻ ngày. ' +
+               'Đang có ' + o.length + ' ô.'};
+    }
+
+    /* ── VẼ ── */
+    ve += dauGita(k, xChu + 21, yDau + 16);
+    var yy = vungY + (vungCao - caoTong) / 2;
+    if (nhan) { ve += nhanTren(nhan, xChu, Math.round(yy + coN), k, coN); yy += coN * 1.9; }
+    var tt = veChu(cau, xChu, Math.round(yy + coT * 0.86), {co: coT, chu: CHU_THAN,
+      dam: 800, mau: 'url(#' + cs.id + ')', rong: rongChu, gian: 1.10});
+    ve += tt.svg; yy += dT.length * coT * 1.10;
+    ve += '<rect x="' + xChu + '" y="' + Math.round(yy + coT * 0.10) + '" width="' +
+      Math.round(rongChu * 0.26) + '" height="4" rx="2" fill="' + h(k.do) + '"/>';
+    yy += coT * 0.34;
+    if (dP.length) {
+      ve += veChu(phu, xChu, Math.round(yy + coP * 1.0), {co: coP, chu: CHU_THAN,
+        dam: 500, mau: k.muc2, rong: rongChu, gian: 1.38}).svg;
+      yy += dP.length * coP * 1.38 + coP * 0.7;
+    }
+    if (db) {
+      db = daiBang(bangC, Math.round(xChu + rongChu / 2), Math.round(yy), k, rongChu);
+      manh.push(db); ve += db.ve; yy += db.cao + coT * 0.34;
+    }
+
+    o.forEach(function (m, i) {
+      var cot = i % soCot, hang = Math.floor(i / soCot);
+      var ox = xChu + cot * (rongO + giua);
+      var oy = Math.round(yy + hang * (caoO + giua));
+      var s = sac[i % sac.length];
+      var kinh = tamKinh(ox, oy, rongO, caoO, k, {sac: s.hex, bong: bong.id, bo: 14});
+      manh.push(kinh); ve += kinh.ve;
+      var hh = huyHieu(Math.round(ox + rongO / 2), Math.round(oy + oDem + rHH * 1.5),
+        rHH, s.hex, chonHinh(m.ten, i), bong.id, k);
+      manh.push(hh); ve += hh.ve;
+      ve += '<text x="' + Math.round(ox + rongO / 2) + '" y="' +
+        Math.round(oy + oDayHH + coTenO * 1.05) + '" text-anchor="middle" ' +
+        'font-family="' + h(CHU_THAN) + '" font-size="' + coTenO +
+        '" font-weight="800" fill="' + h(k.muc) + '">' +
+        h(String(m.ten).toUpperCase()) + '</text>';
+      dongO[i].forEach(function (d, j) {
+        ve += '<text x="' + Math.round(ox + rongO / 2) + '" y="' +
+          Math.round(oy + oDayHH + coTenO * 1.30 + coMoO * (1.05 + j * 1.30)) +
+          '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
+          coMoO + '" font-weight="500" fill="' + h(k.muc2) + '">' + h(d) + '</text>';
+      });
+    });
+    yy += soHang * caoO + (soHang - 1) * giua + coT * 0.40;
+
+    if (ky) {
+      var coK = Math.round(coT * 0.42);
+      ve += '<text x="' + Math.round(xChu + rongChu / 2) + '" y="' +
+        Math.round(yy + coK) + '" text-anchor="middle" font-family="' + h(CHU_TIEU) +
+        '" font-size="' + coK + '" font-style="italic" font-weight="500" fill="' +
+        h(sChinh.hex === k.nen ? k.muc : nenDac(sChinh.hex, 4.5)) + '">' +
+        h(ky) + '</text>';
+    }
+
+    /* Bóng thoại vẽ SAU CÙNG: nó nằm chồng lên lớp người, nên phải là
+       thứ trên cùng. Vẽ trước thì ảnh phủ lên nó. */
+    var thoai = docDau(x.noiDung, 'THOẠI');
+    if (thoai) {
+      var bt2 = bongThoai(thoai, xNguoi + Math.round(rongNguoi * 0.06),
+        Math.round(kg.h * 0.075), Math.round(rongNguoi * 0.80), k, sChinh.hex);
+      ve += bt2.ve;
+    }
+
+    return {ok: true, svg: khung(kg, k, ve, gom(manh).defs)};
+  }
+
+  /* ═══════════ BỘ VẼ · CHÂN DUNG MỘT VAI ═══════════
+     Nửa người ở trên, tên vai và một câu ở dưới. Khuôn hẹp, một việc. */
+  function veChanDung(x, kg, che) {
+    var k = bang(che);
+    var chu = boDau(x.noiDung);
+    var ten = cauDau(chu);
+    if (!ten) return {ok: false,
+      error: 'Chân dung cần TÊN VAI ở dòng đầu nội dung.'};
+    var cau2 = cauHai(chu);
+    var sac = sacTang();
+    if (!sac.length) return {ok: false, error: 'Chưa mở được bảng màu thương hiệu.'};
+    var maAnh = docDau(x.noiDung, 'ẢNH');
+    if (maAnh && maAnh !== 'kho' && !ANH_NGUOI[maAnh]) return {ok: false,
+      error: 'Không có ảnh "' + maAnh + '" trong kho ảnh. Đang có: ' +
+             Object.keys(ANH_NGUOI).join(', ') + ' · hoặc "kho".'};
+
+    var le = Math.round(kg.w * 0.075);
+    var nen = lopNen(kg, k, 0.8);
+    var cs = defChuSac(k);
+    var manh = [nen, cs];
+    var s = sac[0];
+
+    var nhan = docDau(x.noiDung, 'NHÃN');
+    var rongA = kg.w - le * 2;
+    var caoA = Math.round(kg.h * 0.46);
+    var yA = Math.round(kg.h * 0.135);
+    var ln = lopNguoi(maAnh, le, yA, rongA, caoA, k, s.hex, x);
+    manh.push(ln);
+
+    var coTen = Math.round(kg.w / 13);
+    while (coTen > 20 && doRong(ten, '800 ' + coTen + 'px ' + CHU_THAN) > rongA)
+      coTen -= 1;
+    var yT = yA + caoA + Math.round(kg.h * 0.055);
+    var ve = ln.ve;
+    if (nhan) ve += nhanTren(nhan, le, Math.round(kg.h * 0.088), k,
+      Math.round(coTen * 0.34));
+    ve += '<text x="' + Math.round(kg.w / 2) + '" y="' + yT +
+      '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' + coTen +
+      '" font-weight="800" fill="url(#' + cs.id + ')">' + h(ten) + '</text>';
+    ve += '<rect x="' + Math.round(kg.w / 2 - rongA * 0.10) + '" y="' +
+      Math.round(yT + coTen * 0.40) + '" width="' + Math.round(rongA * 0.20) +
+      '" height="4" rx="2" fill="' + h(k.do) + '"/>';
+    if (cau2) {
+      var coC = Math.round(coTen * 0.40);
+      ve += veChu(cau2, Math.round(kg.w / 2), Math.round(yT + coTen * 1.25),
+        {co: coC, chu: CHU_THAN, dam: 500, mau: k.muc2, rong: rongA, gian: 1.42,
+         can: 'middle'}).svg;
+    }
+    ve += dauGita(k, Math.round(kg.w / 2), kg.h - Math.round(kg.h * 0.052));
+    return {ok: true, svg: khung(kg, k, ve, gom(manh).defs)};
+  }
+
   /* ═══════════ BẢNG PHÂN VIỆC ═══════════
      Loại hình nào KHÔNG có tên ở đây thì bộ vẽ nói thẳng là chưa có.
      Danh sách trắng, không danh sách cấm — cùng luật với mọi cửa khác
@@ -2816,7 +3172,11 @@ var G = window.G || {}; window.G = G;
     DANH_SACH_VIEC:   {ve: veDanhSachViec, kho: 'doc'},
     CONG:             {ve: veCong,       kho: 'vuong'},
     NHIP:             {ve: veNhip,       kho: 'vuong'},
-    BANG_DIEU_KHIEN:  {ve: veBangDieuKhien, kho: 'rong'}
+    BANG_DIEU_KHIEN:  {ve: veBangDieuKhien, kho: 'rong'},
+    /* Hai khuôn có người. Áp phích khổ VUÔNG như tấm mẫu; chân dung khổ
+       DỌC vì một người đứng cần chiều cao, không cần chiều ngang. */
+    AP_PHICH:         {ve: veApPhich,  kho: 'vuong'},
+    CHAN_DUNG:        {ve: veChanDung, kho: 'doc'}
   };
 
   /* ═══════════ CỬA DUY NHẤT ═══════════ */
