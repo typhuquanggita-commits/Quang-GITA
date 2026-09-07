@@ -10338,6 +10338,26 @@ const { chromium } = require(PW);
          chung vào thì nó từ chối đúng luật của nó, và phép đo sẽ chấm
          một lần từ chối ĐÚNG thành một bộ vẽ HỎNG. */
       const RIENG = {
+        /* BIA có dòng ẢNH là THẺ NGÀY — khuôn ấn phẩm định kỳ, và là
+           bố cục dày nhất trong cả bộ (ảnh người + hai cột + dải
+           đáy). Đo khuôn ấy chứ không đo tấm bìa một câu: tấm một
+           câu gần như không có chỗ để hỏng.
+           LƯU Ý MỘT HẠN CHẾ THẬT: bản rasterize dùng blob URL nên
+           đường dẫn ảnh tương đối không giải được, ảnh không hiện
+           trong bản đo. Với khuôn này chữ nằm hết ở cột trái, không
+           đè lên ảnh, nên kết luận về tương phản vẫn đúng — nhưng
+           nếu sau này có chữ đặt TRÊN ảnh thì phép đo sẽ mù chỗ ấy,
+           và người thêm chữ ấy phải biết. */
+        BIA:
+          'NHÃN: 30.7\nẢNH: trainer\n' +
+          'PHỤ: Tự tin thật được xây từ những lần tự mình vượt qua.\n' +
+          'Ý — Niềm tin không đến từ lời khen suông của người lớn.\n' +
+          'Ý — Mà từ trải nghiệm vượt qua được từng bước một.\n' +
+          'Ý — Mỗi lần vượt là một bằng chứng con giữ lại được.\n' +
+          'HỎI — Việc gì con từng nghĩ mình không thể, nhưng nay đã làm được?\n' +
+          'LÀM — Viết ra một điều con sẽ thử lại với niềm tin mới.\n' +
+          'ĐÓNG ĐINH: Tự tin thật được xây từ những lần chính mình vượt qua ' +
+          'điều từng nghĩ là không thể.',
         KHUNG: 'ĐỌC HIỂU — Toàn bộ hệ thống Web App GITA 365 cho cả nhà cùng dùng\n' +
                'TƯ VẤN — Cá nhân hoá theo nhu cầu của nhà mình\n' +
                'HỖ TRỢ — Lên kế hoạch học tập, rèn luyện và phát triển bản thân\n' +
@@ -10475,8 +10495,15 @@ const { chromium } = require(PW);
           w: +e.getAttribute('width'), h: +e.getAttribute('height')}));
         for (const b3 of hop) {
           const gx = (b3.x1 + b3.x2) / 2, gy = (b3.y1 + b3.y2) / 2;
-          const t3 = tams.filter(a => gx >= a.x && gx <= a.x + a.w &&
-            gy >= a.y && gy <= a.y + a.h)[0];
+          /* Lấy khối NHỎ NHẤT chứa tâm chữ, không lấy khối đầu tiên.
+             Một chip màu đặc nhô ra khỏi mép thẻ là bố cục cố ý — và
+             khối của chữ trên chip LÀ cái chip, không phải cái thẻ
+             nó nhô ra khỏi. Lấy khối đầu tiên thì phép đo bắt oan
+             đúng những chỗ được dựng cẩn thận nhất. */
+          const trum = tams.filter(a => gx >= a.x && gx <= a.x + a.w &&
+            gy >= a.y && gy <= a.y + a.h);
+          trum.sort((a, c) => a.w * a.h - c.w * c.h);
+          const t3 = trum[0];
           if (!t3) continue;
           if (b3.x1 < t3.x - 2 || b3.x2 > t3.x + t3.w + 2 ||
               b3.y1 < t3.y - 2 || b3.y2 > t3.y + t3.h + 2)
@@ -10592,6 +10619,29 @@ const { chromium } = require(PW);
           .map(function (c) { return c[0] + ' → ' + G.veThiGiacChonHinh(c[0], 0) +
             ', cần ' + c[1]; });
       } else r.hinhLech = ['bộ vẽ không khai hàm chọn hình'];
+
+      /* ── THẺ NGÀY: HAI CỬA TỪ CHỐI RIÊNG ──
+         · ảnh lạ: bộ vẽ chỉ nhận ảnh đã có trong kho mã. Nhận đường
+           dẫn tự do thì bất kỳ ảnh nào cũng vào được một ấn phẩm mang
+           dấu GITA, và luật ảnh của thương hiệu thành một câu trong sổ.
+         · dài quá khổ: máy KHÔNG tự cắt bớt ý cho vừa — cắt là bỏ nội
+           dung mà không ai biết là đã bỏ, và một tấm thiếu một ý trông
+           y hệt một tấm đủ ý. */
+      r.choi.anhLa = G.veThiGiac(nen('BIA',
+        'ẢNH: mot-ai-do\nÝ — Một ý đủ dài để không bị chặn vì quá ngắn.\n' +
+        'Ý — Một ý nữa cũng đủ dài như thế.\n' +
+        'HỎI — Một câu hỏi coaching đủ dài.\nLÀM — Một việc làm hôm nay.')).ok === false;
+      r.choi.daiQuaKho = (function () {
+        var d2 = 'NHÃN: 30.7\nẢNH: trainer\nPHỤ: Một câu phụ khá dài để chiếm chỗ.\n';
+        for (var i2 = 0; i2 < 5; i2++)
+          d2 += 'Ý — Một ý rất dài, dài tới mức năm ý như thế này chắc chắn ' +
+            'không thể nào vừa vào một khổ dọc tiêu chuẩn được nữa.\n';
+        d2 += 'HỎI — Một câu hỏi coaching cũng khá dài để chiếm thêm chỗ nữa.\n' +
+          'LÀM — Một việc làm hôm nay, cũng dài như thế.\n' +
+          'ĐÓNG ĐINH: Một câu đóng đinh dài.';
+        var r2 = G.veThiGiac(nen('BIA', d2));
+        return r2.ok === false && r2.code === 'DAIQUAKHO';
+      })();
 
       /* Lưới ô KHÔNG tự cắt nội dung thành ô — cắt kiểu gì cũng là đoán. */
       r.choi.oPhaiGoRa = G.veThiGiac(nen('KHUNG',
@@ -10747,7 +10797,8 @@ const { chromium } = require(PW);
     });
 
     const choiDu = ra.choi.chuaQuaCong && ra.choi.loaiLa &&
-      ra.choi.khongCoSo && ra.choi.coSoThiVe && ra.choi.oPhaiGoRa;
+      ra.choi.khongCoSo && ra.choi.coSoThiVe && ra.choi.oPhaiGoRa &&
+      ra.choi.anhLa && ra.choi.daiQuaKho;
     const brandDu = ra.logoCoBong === false && !(ra.sacLech || []).length &&
       !(ra.sacThieu || []).length && ra.soSac === 6;
     const roDu = !(ra.mo || []).length && !(ra.vat || []).length &&
@@ -10759,7 +10810,7 @@ const { chromium } = require(PW);
       ra.khongCoBoVe ? 'KHÔNG NẠP ĐƯỢC src/ve-thi-giac.js'
         : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu && brandDu && roDu
           ? ra.veDuoc.length + ' bộ vẽ (' + ra.veDuoc.join(', ') +
-            ') · mọi thẻ chữ nằm trong khung, không thẻ nào đè thẻ nào · từ chối đủ bốn chỗ · '
+            ') · mọi thẻ chữ nằm trong khung, không thẻ nào đè thẻ nào · từ chối đủ sáu chỗ · '
             + 'sáu sắc đều truy về G.BRAND.mau · dấu GITA không nhận bóng đổ · '
             + 'mọi chữ đạt tương phản WCAG trên nền ĐÃ VẼ RA · '
             + 'không chữ nào vắt qua mép một khối màu · biểu tượng khớp nghĩa · '
@@ -10772,6 +10823,8 @@ const { chromium } = require(PW);
              !ra.choi.khongCoSo ? 'MỘT CON SỐ mà không có số vẫn vẽ' : '',
              !ra.choi.coSoThiVe ? 'có số thật mà lại từ chối' : '',
              !ra.choi.oPhaiGoRa ? 'LƯỚI Ô TỰ CẮT NỘI DUNG THÀNH Ô — đó là đoán' : '',
+             !ra.choi.anhLa ? 'THẺ NGÀY NHẬN CẢ ẢNH LẠ — ảnh nào cũng vào được ấn phẩm GITA' : '',
+             !ra.choi.daiQuaKho ? 'THẺ NGÀY TỰ CẮT BỚT Ý CHO VỪA KHỔ' : '',
              ra.logoCoBong === true ? 'DẤU GITA ĐANG NHẬN BÓNG ĐỔ — BRAND.camKy cấm' : '',
              typeof ra.logoCoBong === 'string' ? ra.logoCoBong : '',
              (ra.sacThieu || []).length ? 'G.BRAND.mau thiếu sắc: ' + ra.sacThieu.join(', ') : '',

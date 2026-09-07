@@ -578,6 +578,34 @@ var G = window.G || {}; window.G = G;
      tương phản nào. */
   function mucPhuTren(hex) { return mucTren(hex); }
 
+  /* Mực trên một mảng ĐẶC — so đúng màu ấy, không so hai đầu một dải.
+     Vòng số của thẻ ngày tô đặc, mà tôi gọi nhầm hàm dành cho nêm
+     chuyển sắc, nên nó chọn mực theo đầu tệ nhất của một dải không
+     tồn tại và hụt ngưỡng 4,36 trên 4,5. Hai loại nền, hai hàm. */
+  function mucTrenDac(hex) {
+    return tuongPhan(MUC_TOI, hex) >= tuongPhan('#FFFFFF', hex)
+      ? MUC_TOI : '#FFFFFF';
+  }
+
+  /* ── MẢNG ĐẶC MANG CHỮ NHỎ THÌ PHẢI LÀM SÂU ──
+     Một sắc bão hoà tầm trung — tím #8B5CF6 là ví dụ rõ nhất — không
+     mực nào đạt nổi 4,5:1 ở cỡ chữ nhỏ: trắng được 4,24, đen được
+     4,27, cả hai đều hụt. Lần trước tôi giải bằng cách PHÓNG CHỮ TO
+     cho lọt ngưỡng chữ lớn. Ở đây phóng không được — một cái chip
+     nhãn không thể to bằng tiêu đề.
+     Cách còn lại là làm SÂU chính mảng màu cho tới khi chữ trắng đủ
+     tương phản. Vẫn là sắc ấy, chỉ đậm hơn — mà đậm hơn thì đúng cho
+     một mảng đặc nhỏ, vì mảng nhỏ vốn cần nặng hơn để không trôi. */
+  function nenDac(hex, canTP) {
+    var can = canTP || 4.5;
+    var t = hex;
+    for (var i = 0; i < 14; i++) {
+      if (tuongPhan('#FFFFFF', t) >= can) return t;
+      t = doiSang(t, -0.09);
+    }
+    return t;
+  }
+
   /* ── NHÃN TRÊN ──
      Dòng chữ nhỏ, viết hoa, giãn chữ rộng, đứng TRÊN tiêu đề. Việc
      của nó là nói tấm này thuộc loại gì trước khi mắt đọc tiêu đề —
@@ -755,6 +783,18 @@ var G = window.G || {}; window.G = G;
      chữ thì mắt không biết đọc khối nào trước, và tấm ấy hỏng đúng
      nhiệm vụ duy nhất của nó. */
   function veBia(x, kg, che) {
+    /* Có dòng ẢNH thì đây là THẺ NGÀY — khuôn ấn phẩm định kỳ của
+       chủ hệ. Không có thì vẫn là tấm bìa một câu như cũ. Một loại
+       hình, hai khuôn, chọn bằng nội dung chứ không bằng một mã mới. */
+    var maAnh = docDau(x.noiDung, 'ẢNH');
+    if (maAnh) {
+      if (!ANH_NGUOI[maAnh]) return {ok: false,
+        error: 'Chỉ nhận ảnh đã có trong kho: ' + Object.keys(ANH_NGUOI).join(', ') +
+               '. Bộ vẽ KHÔNG nhận đường dẫn ảnh tự do — nhận được thì bất kỳ ' +
+               'ảnh nào cũng vào được một ấn phẩm mang dấu GITA, và luật ảnh ' +
+               'của thương hiệu thành một câu trong sổ.'};
+      return veTheNgay(x, kg, che, maAnh);
+    }
     var k = bang(che);
     var chu = boDau(x.noiDung);
     var nhan = docDau(x.noiDung, 'NHÃN'), bang2 = docDau(x.noiDung, 'BĂNG');
@@ -1610,7 +1650,8 @@ var G = window.G || {}; window.G = G;
         '<stop offset="0%" stop-color="' + h(doiSang(mau, nemDai(k))) + '"/>' +
         '<stop offset="100%" stop-color="' + h(doiSang(mau, -nemDai(k))) + '"/>' +
         '</linearGradient>'});
-      ve += '<g filter="url(#' + bong.id + ')"><rect x="' + xc + '" y="' + dinh +
+      ve += '<g filter="url(#' + bong.id + ')"><rect class="gita-tam" x="' + xc +
+        '" y="' + dinh +
         '" width="' + rongCot + '" height="' + Math.round(caoChip) + '" rx="12" ' +
         'fill="url(#' + gC + ')"/></g>';
       ve += veChu(c.ten, xc + Math.round(rongCot / 2), dinh + coDau * 1.05,
@@ -1845,6 +1886,108 @@ var G = window.G || {}; window.G = G;
         h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : ''),
       duoi: dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030))
     };
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     ẢNH NGƯỜI THẬT — CHỦ HỆ CHO PHÉP, VÀ CHỈ ẢNH CỦA CHÍNH ANH
+
+     BRAND.camKy cấm dùng ảnh trẻ em chưa có văn bản đồng ý, và cấm
+     ảnh chụp bảng số của một gia đình chưa được phép. Ảnh chân dung
+     của CHÍNH chủ hệ không nằm trong hai điều cấm ấy, và anh đã cho
+     phép bằng câu nói thẳng. Nên bộ vẽ nhận đúng MỘT ảnh: ảnh trainer
+     đã cắt nền, để trong assets/anh/.
+
+     Không có đường nào nạp một ảnh khác vào đây. Muốn thêm ảnh người
+     thì phải thêm tệp vào kho mã và sửa danh sách này — tức là phải
+     đi qua một lượt duyệt, không phải một lượt gõ. Đó là chỗ khác
+     nhau giữa "bộ vẽ dùng ảnh" và "bộ vẽ nhận ảnh nào cũng vẽ".
+
+     ══ VÌ SAO ẢNH LÀ MỘT TỆP, KHÔNG PHẢI MỘT CHUỖI NHÚNG ══
+     Nhúng thẳng vào mã thì gói mã nặng thêm ba trăm ký cho MỌI người
+     dùng, kể cả người không bao giờ mở màn thiết kế. Để thành tệp thì
+     chỉ ai vẽ mới tải. Đổi lại: tấm SVG tách rời khỏi kho sẽ mất ảnh
+     — nên chỗ nào cần một tấm đứng độc lập thì phải nhúng lúc xuất,
+     không phải lúc vẽ.
+     Và nói cho đúng: đây là tệp CÙNG MỘT MÁY CHỦ với trang đang chạy.
+     Luật "không một lượt hỏi mạng nào" của bộ vẽ nói về NỘI DUNG ĐI
+     RA — không có gì rời khỏi Học viện ở đây. */
+  var ANH_NGUOI = {
+    trainer: {tep: 'assets/anh/trainer-quang.png', w: 276, h: 536,
+              ten: 'Trương Nhật Quang', vai: 'Mentor định hướng nghề nghiệp'}
+  };
+
+  function veAnhNguoi(ma, x, y, cao, k, sac) {
+    var a = ANH_NGUOI[ma];
+    if (!a) return '';
+    var rong = Math.round(cao * a.w / a.h);
+    var idc = idMoi('cung');
+    /* Vòng cung xanh sau người — cùng ngôn ngữ với tấm mẫu, và nó
+       cũng là thứ làm mép ảnh đọc ra là THIẾT KẾ chứ không phải một
+       hình chữ nhật dán lên. */
+    return '<g>' +
+      '<radialGradient id="' + idc + '" cx="50%" cy="50%" r="50%">' +
+        '<stop offset="60%" stop-color="' + h(sac) + '" stop-opacity="' +
+          (k.sau ? '0.30' : '0.16') + '"/>' +
+        '<stop offset="100%" stop-color="' + h(sac) + '" stop-opacity="0"/>' +
+      '</radialGradient>' +
+      '<circle cx="' + Math.round(x + rong * 0.50) + '" cy="' +
+        Math.round(y + cao * 0.30) + '" r="' + Math.round(rong * 0.62) +
+        '" fill="url(#' + idc + ')"/>' +
+      '<image href="' + h(a.tep) + '" x="' + Math.round(x) + '" y="' +
+        Math.round(y) + '" width="' + rong + '" height="' + Math.round(cao) +
+        '" preserveAspectRatio="xMidYMin meet"/>' +
+      '</g>';
+  }
+
+  /* Bảng tên trainer — khối navy đặc dưới chân ảnh, đúng như tấm mẫu. */
+  function bangTen(ma, giuaX, y, rong, k) {
+    var a = ANH_NGUOI[ma];
+    if (!a) return {svg: '', cao: 0};
+    var co1 = Math.round(rong * 0.088), co2 = Math.round(rong * 0.052);
+    var cao = Math.round(co1 * 2.9);
+    var coTen = co1, coVai = co2;
+    while (coTen > 10 &&
+           doRong(a.ten, '800 ' + coTen + 'px ' + CHU_THAN) > rong - 52) coTen -= 1;
+    while (coVai > 7 &&
+           doRong(a.vai.toUpperCase(), '600 ' + coVai + 'px ' + CHU_THAN) >
+           rong - 48) coVai -= 1;
+    return {cao: cao, svg:
+      '<rect class="gita-tam" x="' + Math.round(giuaX - rong / 2) + '" y="' +
+        Math.round(y) +
+        '" width="' + rong + '" height="' + cao + '" rx="10" fill="' +
+        h(k.gitaInk) + '"/>' +
+      '<text x="' + giuaX + '" y="' + Math.round(y + co1 * 0.98) +
+        '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
+        /* Chữ TRAINER trên khối navy: trắng mờ, không xanh sáng. Xanh
+           sáng trên navy chỉ được 2,70:1 — hai màu cùng họ thì gần
+           nhau về độ sáng dù nhìn có vẻ tương phản. */
+        Math.round(co2 * 0.92) + '" font-weight="700" ' +
+        'fill="rgba(255,255,255,0.92)" letter-spacing="' +
+        (co2 * 0.30).toFixed(1) + '">TRAINER</text>' +
+      /* Co cho vừa khối. Tên người và chức danh dài ngắn khác nhau,
+         nên đặt một cỡ chữ cố định là chắc chắn có ngày tràn — và
+         tràn ở đây là tên trainer chạy ra ngoài tấm biển mang tên
+         chính anh, chỗ hỏng khó tha nhất trong cả tấm. */
+      '<text x="' + giuaX + '" y="' + Math.round(y + co1 * 2.02) +
+        '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
+        coTen + '" font-weight="800" fill="#FFFFFF">' + h(a.ten) + '</text>' +
+      '<text x="' + giuaX + '" y="' + Math.round(y + co1 * 2.72) +
+        '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
+        coVai + '" font-weight="600" fill="rgba(255,255,255,0.90)">' +
+        h(a.vai.toUpperCase()) + '</text>'};
+  }
+
+  /* Hoạ tiết chấm bi ở góc — thứ duy nhất trong tấm được phép KHÔNG
+     mang tin. Nó làm góc trống bớt trống mà không kéo mắt, vì nó rất
+     nhạt và rất đều: mắt bỏ qua cái đều. */
+  function chamBi(x, y, cot, hang, buoc, mau, mo) {
+    var ra = '';
+    for (var i = 0; i < cot; i++)
+      for (var j = 0; j < hang; j++)
+        ra += '<circle cx="' + (x + i * buoc) + '" cy="' + (y + j * buoc) +
+          '" r="' + (buoc * 0.14).toFixed(1) + '" fill="' + h(mau) +
+          '" fill-opacity="' + mo + '"/>';
+    return ra;
   }
 
   /* ═══════════ BỘ VẼ · AI LÀM GÌ (VAI_TRO) ═══════════
@@ -2295,6 +2438,248 @@ var G = window.G || {}; window.G = G;
     return {ok: true, svg: khung(kg, k, d.tren + ve + d.duoi, gom(d.manh).defs)};
   }
 
+  /* ═══════════ BỘ VẼ · THẺ NGÀY (BIA có ảnh người) ═══════════
+     Năm tấm mẫu mới của chủ hệ là MỘT khuôn: logo và số kỳ ở đầu,
+     tiêu đề rất lớn, câu phụ nghiêng, các khối đánh số ở cột trái,
+     ảnh trainer chiếm hết cột phải, và một dải CÂU ĐÓNG ĐINH ở đáy.
+
+     Đó là một khuôn ẤN PHẨM ĐỊNH KỲ, không phải một loại hình mới —
+     nên nó nằm trong BIA ("giúp nhận ra đây là tài liệu gì của ai"),
+     bật lên khi nội dung có dòng ẢNH. Hiến pháp vẫn mười hai loại,
+     tôi không tự thêm loại thứ mười ba.
+
+     Định dạng người viết gõ:
+       NHÃN: 30.7
+       ẢNH: trainer
+       PHỤ: Tự tin thật được xây từ những lần tự mình vượt qua.
+       Ý — Niềm tin không đến từ lời khen suông.
+       Ý — Mà từ trải nghiệm vượt qua từng bước.
+       HỎI — Việc gì con từng nghĩ mình không thể?
+       LÀM — Viết ra một điều con sẽ thử lại.
+       ĐÓNG ĐINH: Tự tin thật xây từ những lần ==chính mình vượt qua==. */
+  function catThe(chu) {
+    var y = [], hoi = '', lam = '';
+    String(chu || '').split('\n').forEach(function (d) {
+      var m = /^\s*(Ý|HỎI|LÀM)\s*[—–]\s*(.{4,})$/i.exec(d);
+      if (!m) return;
+      var k2 = m[1].toUpperCase();
+      if (k2 === 'Ý') y.push(m[2].trim());
+      else if (k2 === 'HỎI') hoi = m[2].trim();
+      else lam = m[2].trim();
+    });
+    return {y: y.slice(0, 5), hoi: hoi, lam: lam};
+  }
+
+  function veTheNgay(x, kg, che, ma) {
+    var k = bang(che);
+    var t = catThe(x.noiDung);
+    var nhan = docDau(x.noiDung, 'NHÃN');
+    var phu = docDau(x.noiDung, 'PHỤ');
+    var dinh2 = docDau(x.noiDung, 'ĐÓNG ĐINH');
+    if (t.y.length < 2 || !t.hoi || !t.lam) return {ok: false,
+      error: 'Thẻ ngày cần ít nhất HAI dòng "Ý — …", một dòng "HỎI — …" và một ' +
+             'dòng "LÀM — …". Câu hỏi coaching và việc làm hôm nay là hai chỗ ' +
+             'khuôn này tồn tại để nói; thiếu một trong hai thì tấm chỉ còn là ' +
+             'một câu trích. Đang đọc ra ' + t.y.length + ' ý' +
+             (t.hoi ? '' : ', thiếu HỎI') + (t.lam ? '' : ', thiếu LÀM') + '.'};
+    var sac = sacTang();
+    if (!sac.length) return {ok: false, error: 'Chưa mở được bảng màu thương hiệu.'};
+
+    var le = Math.round(kg.w * 0.055);
+    var nen = lopNen(kg, k, 0.8);
+    var bong = defBong(k, 1), bongHh = defBong(k, 2), cs = defChuSac(k);
+    var manh = [nen, bong, bongHh, cs];
+    var sChinh = sac[0];
+
+    /* Cột phải giữ ảnh; cột trái giữ chữ. Tỷ lệ 54/46 là chỗ tấm mẫu
+       đặt: đủ để ảnh đứng thành người, đủ để chữ không bị bóp. */
+    var rongTrai = Math.round((kg.w - le * 2) * 0.54);
+    var xPhai = le + rongTrai + Math.round(kg.w * 0.02);
+    var rongPhai = kg.w - le - xPhai;
+
+    var ve = chamBi(Math.round(kg.w * 0.70), Math.round(kg.h * 0.022),
+      14, 7, Math.round(kg.w * 0.021), k.gita, k.sau ? 0.22 : 0.16);
+
+    /* ── ĐẦU: số kỳ trong một huy hiệu, cạnh dấu GITA ── */
+    var yDau = Math.round(kg.h * 0.045);
+    ve += dauGita(k, le + 21, yDau + 16);
+    if (nhan) {
+      var coK = Math.round(kg.w * 0.030);
+      var rongK = Math.round(doRong(nhan, '800 ' + coK + 'px ' + CHU_THAN) + coK * 1.7);
+      var xK = le + Math.round(kg.w * 0.30);
+      ve += '<rect class="gita-tam" x="' + xK + '" y="' + yDau + '" width="' +
+        rongK + '" height="' +
+        Math.round(coK * 1.72) + '" rx="8" fill="' + h(k.gitaInk) + '"/>' +
+        '<text x="' + Math.round(xK + rongK / 2) + '" y="' +
+        Math.round(yDau + coK * 1.20) + '" text-anchor="middle" font-family="' +
+        h(CHU_THAN) + '" font-size="' + coK + '" font-weight="800" fill="#FFFFFF">' +
+        h(nhan) + '</text>';
+    }
+
+    /* ── ẢNH NGƯỜI, cột phải ── */
+    var caoAnh = Math.round(kg.h * 0.60);
+    var yAnh = Math.round(kg.h * 0.145);
+    ve += veAnhNguoi(ma || 'trainer',
+      xPhai + Math.round((rongPhai - caoAnh * 276 / 536) / 2), yAnh, caoAnh, k,
+      sChinh.hex);
+    var bt = bangTen(ma || 'trainer', xPhai + Math.round(rongPhai / 2),
+      yAnh + caoAnh + 10, Math.round(rongPhai * 0.96), k);
+    manh.push({defs: ''}); ve += bt.svg;
+
+    /* ── TIÊU ĐỀ RẤT LỚN, cột trái ── */
+    var coT = Math.round(kg.w / 15);
+    var yT = Math.round(kg.h * 0.145) + coT;
+    var dT = catDong(x.nhiemVu, '800 ' + coT + 'px ' + CHU_THAN, rongTrai);
+    while (dT.length > 3 && coT > 26) {
+      coT -= 2; dT = catDong(x.nhiemVu, '800 ' + coT + 'px ' + CHU_THAN, rongTrai);
+    }
+    var tieu = veChu(x.nhiemVu, le, yT, {co: coT, chu: CHU_THAN, dam: 800,
+      mau: k.gitaInk, rong: rongTrai, gian: 1.14});
+    ve += tieu.svg;
+    var yy = yT + tieu.cao;
+    ve += '<rect x="' + le + '" y="' + Math.round(yy + coT * 0.10) + '" width="' +
+      Math.round(rongTrai * 0.30) + '" height="4" rx="2" fill="' + h(k.do) + '"/>';
+    yy += coT * 0.44;
+    if (phu) {
+      var coP = Math.round(kg.w * 0.0245);
+      /* Câu phụ dùng sắc LAM như tấm mẫu, nhưng lam nguyên bản trên
+         nền sáng chỉ 2,12:1 — sắc đó sinh ra để làm MẢNG, không để
+         làm chữ. Đậm xuống một nấc thì vẫn là lam, mà đọc được. */
+      var mauPhu = sac[2] ? doiSang(sac[2].hex, -0.42) : k.gitaInk;
+      var tp = veChu(phu, le, yy + coP * 1.1, {co: coP, chu: CHU_THAN, dam: 600,
+        mau: mauPhu, rong: rongTrai, gian: 1.32});
+      ve += tp.svg; yy += coP * 1.1 + tp.cao;
+    }
+
+    /* ── VÙNG CHỮ DỪNG TRƯỚC DẢI ĐÓNG ĐINH ──
+       Dải đóng đinh chạy hết bề ngang ở đáy, nên nó cắt ngang cả cột
+       trái. Vẽ cột trái tới đâu hay tới đó rồi mới đặt dải là dải đè
+       lên khối cuối — đúng chỗ vừa hỏng. Tính chỗ đáy TRƯỚC, rồi ép
+       các khối vừa vào đó. */
+    var caoDai = dinh2 ? Math.round(kg.h * 0.085) + 14 : 0;
+    var dayChu = kg.h - le - caoDai - 8;
+
+    /* ── CÁC Ý, đánh số, mỗi ý một thẻ ── */
+    yy += Math.round(kg.h * 0.014);
+    var dinh0 = yy;
+    var coY = Math.round(kg.w * 0.0215);
+    t.y.forEach(function (m, i) {
+      var s = sac[i % sac.length];
+      var dY = catDong(m, '500 ' + coY + 'px ' + CHU_THAN, rongTrai - coY * 3.6);
+      var caoO = Math.max(coY * 2.5, dY.length * coY * 1.36 + coY * 1.0);
+      var kinh = tamKinh(le, yy, rongTrai, caoO, k,
+        {sac: s.hex, bong: bong.id, bo: 11});
+      manh.push(kinh); ve += kinh.ve;
+      var rS = Math.round(coY * 0.82);
+      var nSo = nenDac(s.hex);
+      ve += '<circle cx="' + Math.round(le + coY * 1.05) + '" cy="' +
+        Math.round(yy + caoO / 2) + '" r="' + rS + '" fill="' + h(nSo) + '"/>' +
+        '<text x="' + Math.round(le + coY * 1.05) + '" y="' +
+        Math.round(yy + caoO / 2 + rS * 0.36) + '" text-anchor="middle" ' +
+        'font-family="' + h(CHU_THAN) + '" font-size="' + Math.round(rS * 1.05) +
+        '" font-weight="800" fill="' + h(mucTrenDac(nSo)) + '">' + (i + 1) + '</text>';
+      var y0 = yy + (caoO - dY.length * coY * 1.36) / 2 + coY * 0.82;
+      dY.forEach(function (d2, j) {
+        ve += '<text x="' + Math.round(le + coY * 2.35) + '" y="' +
+          Math.round(y0 + j * coY * 1.36) + '" font-family="' + h(CHU_THAN) +
+          '" font-size="' + coY + '" font-weight="500" fill="' + h(k.muc) + '">' +
+          h(d2) + '</text>';
+      });
+      yy += caoO + 9;
+    });
+
+    /* ── HỎI và LÀM: hai khối cố định của khuôn ── */
+    var doi = [{n: 'CÂU HỎI COACHING', t: t.hoi, s: sac[1] || sChinh, hinh: 'thoai'},
+               {n: 'HÀNH ĐỘNG HÔM NAY', t: t.lam, s: sac[3] || sChinh, hinh: 'lich'}];
+    /* Hai khối này BẮT BUỘC có chỗ — chúng là lý do khuôn tồn tại.
+       Nên đo chúng trước, rồi lùi điểm bắt đầu lên nếu các ý ở trên
+       đã ăn hết chỗ. Thà các ý sát nhau còn hơn mất câu hỏi coaching. */
+    var caoDoi = 0;
+    doi.forEach(function (m) {
+      var coN0 = Math.round(kg.w * 0.0165), coB0 = Math.round(kg.w * 0.0215);
+      caoDoi += Math.round(kg.h * 0.008) + coN0 * 2.0 +
+        catDong(m.t, '600 ' + coB0 + 'px ' + CHU_THAN,
+          rongTrai - coB0 * 3.8).length * coB0 * 1.36 + coB0 * 0.8 + 6;
+    });
+    /* ── HẾT CHỖ THÌ NÓI HẾT CHỖ, KHÔNG LÙI CHỒNG LÊN ──
+       Bản vừa rồi tôi lùi điểm bắt đầu lên khi thiếu chỗ — và nó lùi
+       thẳng vào giữa khối đã vẽ, nên câu hỏi coaching đè lên ý số
+       bốn. Lùi để "vừa" là giấu một tấm quá tải bằng cách chồng chữ,
+       và chồng chữ thì tệ hơn không vẽ.
+       Máy không tự cắt bớt ý: cắt là bỏ nội dung mà không nói ai
+       biết. Nói thẳng là dài quá khổ, và nói luôn bớt bao nhiêu. */
+    if (yy + caoDoi > dayChu) {
+      var thua2 = Math.round(yy + caoDoi - dayChu);
+      return {ok: false, code: 'DAIQUAKHO',
+        error: 'Nội dung dài hơn khổ tấm ' + thua2 + ' điểm ảnh. Bớt một dòng ' +
+               '"Ý — …" hoặc rút ngắn câu, rồi vẽ lại. Máy KHÔNG tự cắt bớt ý ' +
+               'cho vừa: cắt là bỏ nội dung mà không ai biết là đã bỏ, và một ' +
+               'tấm thiếu một ý trông y hệt một tấm đủ ý. Đang có ' + t.y.length +
+               ' ý.'};
+    }
+    doi.forEach(function (m) {
+      yy += Math.round(kg.h * 0.008);
+      var coN = Math.round(kg.w * 0.0165), coB = Math.round(kg.w * 0.0215);
+      var dB = catDong(m.t, '600 ' + coB + 'px ' + CHU_THAN, rongTrai - coB * 3.8);
+      var caoO = coN * 2.0 + dB.length * coB * 1.36 + coB * 0.8;
+      var kinh = tamKinh(le, yy, rongTrai, caoO, k,
+        {sac: m.s.hex, bong: bong.id, bo: 11});
+      manh.push(kinh); ve += kinh.ve;
+      /* Nhãn khối là một chip màu đặc — chữ nằm TRỌN trong chip. */
+      var rongC = Math.round(doRong(m.n, '800 ' + coN + 'px ' + CHU_THAN) + coN * 1.9);
+      ve += '<rect class="gita-tam" x="' + (le + 12) + '" y="' +
+        Math.round(yy - coN * 0.30) +
+        '" width="' + rongC + '" height="' + Math.round(coN * 1.85) + '" rx="7" ' +
+        'fill="' + h(nenDac(m.s.hex)) + '"/>' +
+        '<text x="' + Math.round(le + 12 + rongC / 2) + '" y="' +
+        Math.round(yy + coN * 0.92) + '" text-anchor="middle" font-family="' +
+        h(CHU_THAN) + '" font-size="' + coN + '" font-weight="800" fill="' +
+        h(mucTrenDac(nenDac(m.s.hex))) + '" letter-spacing="0.5">' + h(m.n) + '</text>';
+      var rH = Math.round(coB * 0.92);
+      var hh = huyHieu(le + 14 + rH, yy + coN * 1.9 + rH, rH, m.s.hex, m.hinh, null, k);
+      manh.push(hh); ve += hh.ve;
+      dB.forEach(function (d2, j) {
+        ve += '<text x="' + Math.round(le + 14 + rH * 2 + 14) + '" y="' +
+          Math.round(yy + coN * 1.9 + coB * 0.9 + j * coB * 1.36) +
+          '" font-family="' + h(CHU_THAN) + '" font-size="' + coB +
+          '" font-weight="600" fill="' + h(k.muc) + '">' + h(d2) + '</text>';
+      });
+      yy += caoO + 6;
+    });
+
+    /* ── DẢI CÂU ĐÓNG ĐINH, chạy hết bề ngang tấm ── */
+    if (dinh2) {
+      var caoD = Math.round(kg.h * 0.085);
+      var yD = kg.h - le - caoD;
+      ve += '<rect class="gita-tam" x="' + le + '" y="' + yD + '" width="' +
+        (kg.w - le * 2) +
+        '" height="' + caoD + '" rx="14" fill="' + h(k.gitaInk) + '"/>';
+      var coD = Math.round(kg.w * 0.0245);
+      var dD = catDong(boQuang(dinh2), '700 ' + coD + 'px ' + CHU_TIEU,
+        kg.w - le * 2 - coD * 5);
+      while (dD.length > 2 && coD > 14) {
+        coD -= 1;
+        dD = catDong(boQuang(dinh2), '700 ' + coD + 'px ' + CHU_TIEU,
+          kg.w - le * 2 - coD * 5);
+      }
+      ve += '<text x="' + (le + Math.round(coD * 1.0)) + '" y="' +
+        Math.round(yD + caoD * 0.62) + '" font-family="' + h(CHU_TIEU) +
+        '" font-size="' + Math.round(coD * 2.4) + '" font-weight="700" fill="' +
+        h(sac[4] ? sac[4].hex : k.gitaSang) + '">“</text>';
+      var xD = le + Math.round(coD * 2.6);
+      var y0D = yD + (caoD - dD.length * coD * 1.34) / 2 + coD * 0.86;
+      dD.forEach(function (d2, j) {
+        ve += '<text x="' + xD + '" y="' + Math.round(y0D + j * coD * 1.34) +
+          '" font-family="' + h(CHU_TIEU) + '" font-size="' + coD +
+          '" font-weight="600" fill="#FFFFFF">' + h(d2) + '</text>';
+      });
+    }
+
+    return {ok: true, svg: khung(kg, k, nen.ve +
+      '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>' +
+      ve, gom(manh).defs)};
+  }
+
   /* ═══════════ BẢNG PHÂN VIỆC ═══════════
      Loại hình nào KHÔNG có tên ở đây thì bộ vẽ nói thẳng là chưa có.
      Danh sách trắng, không danh sách cấm — cùng luật với mọi cửa khác
@@ -2340,7 +2725,12 @@ var G = window.G || {}; window.G = G;
              'suy diễn có màu, và luật C10 cấm đúng thứ đó. Đã vẽ được: ' +
              Object.keys(BO_VE).join(', ') + '.'};
 
-    var kg = KHO_GIAY[khoMuon || b.kho] || KHO_GIAY[b.kho];
+    /* Thẻ ngày là khuôn DỌC — ảnh người đứng cần chiều cao, và cột
+       chữ bên trái cần chỗ cho năm khối. Tấm bìa một câu vẫn ngang.
+       Cùng một loại hình, hai khổ, chọn theo nội dung. */
+    var khoMac = b.kho;
+    if (x.loaiHinh === 'BIA' && docDau(x.noiDung, 'ẢNH')) khoMac = 'doc';
+    var kg = KHO_GIAY[khoMuon || khoMac] || KHO_GIAY[khoMac];
     /* Mặc định NỀN SÂU, theo đúng câu chốt trong G.BRAND.mau: "Đêm sâu
        — nền của mọi màn hình, để ánh sáng của hành trình nổi lên."
        Nền sáng vẫn gọi được, cho hình nhúng thẳng vào giao diện ban
