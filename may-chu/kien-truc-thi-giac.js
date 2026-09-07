@@ -525,6 +525,52 @@ export async function docTaiLieuThiGiac(y, env, db, hoSo) {
         'liệu — sửa nội dung đã duyệt là việc của người viết.'};
 }
 
+/* ══ BẢN CHÉP BẢNG MÀU — GỐC Ở KHO, KHÔNG PHẢI Ở ĐÂY ══
+
+   Bản gốc là G.BRAND.mau trong kho đã mã hoá. Máy chủ không đọc được
+   kho ấy, nên phải giữ một bản chép — cùng lý do đã buộc GIA_TANG có
+   bản chép từ 9.94.
+
+   Vì sao bảng màu phải đi ra được, trong khi nội dung thì không: một
+   bộ tạo ảnh KHÔNG ĐOÁN ĐƯỢC màu của một thương hiệu nó chưa từng
+   thấy. Không nói màu thì nó tự chọn, và thứ về là một tấm hình đẹp
+   của một thương hiệu khác. Còn nội dung thì nó không cần để vẽ.
+
+   Bộ kiểm mục 76 đối chiếu TỪNG Ô bảng này với G.BRAND.mau. Lệch một
+   ô nghĩa là hình đặt ngoài về sai màu mà không ai nhìn ra, vì hai
+   bên vẫn gọi cùng một tên màu. */
+export const MAU_RA = [
+  {k: 'Vàng GITA',       hex: '#F5B942'},
+  {k: 'Cam lửa',         hex: '#FF7A45'},
+  {k: 'Đêm sâu',         hex: '#070510'},
+  {k: 'T1 · Xanh dương', hex: '#3B82F6'},
+  {k: 'T2 · Tím',        hex: '#8B5CF6'},
+  {k: 'T3 · Lam',        hex: '#06B6D4'},
+  {k: 'T4 · Lục',        hex: '#10B981'},
+  {k: 'T5 · Hổ phách',   hex: '#F59E0B'},
+  {k: 'Hồng nhắc',       hex: '#FB7185'}
+];
+
+/* Bộ vẽ trong máy dựng hình theo luật hình học. Bộ tạo ảnh ngoài làm
+   đúng thứ bộ vẽ trong máy KHÔNG làm được: người như ảnh chụp, chất
+   liệu, ánh sáng thật. Nên đề bài đi ra phải nói về những thứ ấy —
+   nói lại bố cục ô lưới là bảo nó làm hộ việc trong máy đã làm tốt
+   hơn. */
+const KIEU_RA = {
+  BIA:            'Một khuôn hình lớn, một câu duy nhất. Bối cảnh mở, chiều sâu rõ.',
+  MOT_SO:         'Một con số là chủ thể. Xung quanh để trống, không thêm đồ vật.',
+  BANDO_HANHTRINH:'Đường đi từ gần ra xa, có mốc. Nhìn từ trên chếch xuống.',
+  KHUNG:          'Một khung cảnh tĩnh, người ở tư thế nghỉ, không nhìn thẳng ống kính.',
+  SO_SANH_TANG:   'Nhiều lớp cao dần, phân biệt bằng sắc độ chứ không bằng đường kẻ.',
+  QUY_TRINH:      'Chuyển động một chiều, trái sang phải.',
+  TRUOC_SAU:      'Hai nửa cùng một chỗ, cùng góc máy, khác ánh sáng.',
+  VAI_TRO:        'Chân dung nửa người, ánh sáng bên, phông đơn sắc.',
+  DANH_SACH_VIEC: 'Bàn làm việc nhìn từ trên xuống, đồ vật thật.',
+  CONG:           'Một lối đi có cửa, ánh sáng phía bên kia.',
+  NHIP:           'Lặp lại một hình theo nhịp đều, đổi dần một thuộc tính.',
+  BANG_DIEU_KHIEN:'Màn hình sáng trong phòng tối, người ngồi trước nó.'
+};
+
 /* ══ CỬA ĐI RA NGOÀI ══
 
    Chủ hệ chốt ở 9.99.11: được phép nối một bộ tạo ảnh bên ngoài.
@@ -579,12 +625,50 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
   /* ── DANH SÁCH TRẮNG: ĐÚNG NĂM TRƯỜNG, KHÔNG HƠN ── */
   let nx = [];
   try { nx = JSON.parse(x.nguoiXem || '[]'); } catch (e) { nx = []; }
+  /* Tới 9.99.22 chỗ này gửi đi đúng năm nhãn trường, không hơn. Đó là
+     một bản kê, không phải một đề bài — đưa cho bộ tạo ảnh thì nó tự
+     nghĩ ra hết phần còn lại, và phần nó tự nghĩ ra là phần mang nhận
+     diện của một thương hiệu khác.
+
+     Bản này gửi đi một ĐỀ BÀI THẬT. Vẫn đúng năm trường ấy của bản
+     ghi — không một trường thứ sáu nào của kho đi ra. Phần thêm vào
+     là thứ VIẾT Ở ĐÂY: bảng màu, chữ, kiểu, và các điều cấm. Chúng
+     không nằm trong bản ghi nên không có gì để rò. */
+  const tangSo = Number(String(x.tang || '').replace(/[^0-9]/g, ''));
+  const mauTang = MAU_RA.filter(m => m.k.indexOf('T' + tangSo + ' ') === 0)[0];
   const guiDi = [
+    '── ĐỀ BÀI THIẾT KẾ · GITA 365 ──',
+    '',
     'Chặng: ' + x.tang,
     'Loại hình: ' + x.loaiHinh,
     'Nhiệm vụ: ' + x.nhiemVu,
     'Bố cục: ' + (x.boCuc || 'theo mặc định của loại hình'),
-    'Người xem: ' + nx.join(', ')
+    'Người xem: ' + nx.join(', '),
+    '',
+    'KIỂU: ' + (KIEU_RA[x.loaiHinh] || 'theo mặc định của loại hình') +
+      ' Ảnh biên tập, chất liệu và ánh sáng như chụp thật, chiều sâu rõ. ' +
+      'Không phải hình vẽ phẳng — phần hình vẽ phẳng đã có bộ vẽ trong máy lo.',
+    '',
+    'MÀU: nền Đêm sâu #070510, nhấn chính Vàng GITA #F5B942, ' +
+      'một điểm Cam lửa #FF7A45 duy nhất trong khuôn hình' +
+      (mauTang ? '. Sắc của chặng này là ' + mauTang.k + ' ' + mauTang.hex +
+        ' — cho nó dẫn phần lớn khuôn hình.' : '.') +
+      ' Không dùng sắc nào ngoài bảng: ' +
+      MAU_RA.map(m => m.hex).join(' · '),
+    '',
+    'CHỮ: nếu có chữ trong hình thì đặt bằng Be Vietnam Pro; câu trích ' +
+      'dùng Playfair Display nghiêng. Dấu tiếng Việt phải đủ và đúng chỗ.',
+    '',
+    'CẤM — mỗi dòng là một lần đã hỏng thật:',
+    '· Không mặt người nhận ra được. Người quay nghiêng, quay lưng, ' +
+      'khuất sáng, hoặc chỉ lấy từ vai xuống. Một khuôn mặt sinh ra ngẫu ' +
+      'nhiên vẫn có thể trùng một người có thật, và Học viện không có ' +
+      'cách nào xin phép một người mình không biết là ai.',
+    '· Không trẻ em.',
+    '· Không đặt dấu GITA vào hình; dấu do hệ tự đặt sau, và nó không ' +
+      'nhận bóng đổ, không nghiêng, không đổi màu.',
+    '· Không chữ hứa điểm số, không tên đơn vị nào khác.',
+    '· Không kho ảnh dựng sẵn, không nền gradient tím-xanh mặc định.'
   ].join('\n');
 
   const id = 'DR-' + tokenMoi().slice(0, 14);
@@ -601,9 +685,11 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
     /* TRẢ VỀ NGUYÊN VĂN thứ vừa đi ra, để người bấm nhìn thấy ngay —
        chứ không phải đi tra sổ mới biết mình vừa gửi gì. */
     khongGui: ['nội dung gốc', 'tên nhà', 'tên học viên', 'mọi trường khác'],
-    vi: 'Đi ra ĐÚNG năm trường có tên. NỘI DUNG không bao giờ đi ra — một tấm hình ' +
-        'cần một ĐẶC TẢ, không cần nội dung coaching, nên gửi cả nội dung là gửi ' +
-        'tài sản kèm một việc không đòi hỏi nó. Lượt này đã vào sổ đi ra.'};
+    vi: 'Của BẢN GHI đi ra ĐÚNG năm trường có tên. NỘI DUNG không bao giờ đi ra — ' +
+        'một tấm hình cần một ĐẶC TẢ, không cần nội dung coaching, nên gửi cả nội ' +
+        'dung là gửi tài sản kèm một việc không đòi hỏi nó. Phần còn lại của đề bài ' +
+        '— màu, chữ, kiểu, điều cấm — viết thẳng ở may-chu/kien-truc-thi-giac.js, ' +
+        'không đọc từ kho, nên không có gì để rò. Lượt này đã vào sổ đi ra.'};
 }
 
 export async function soDiRa(y, env, db, hoSo) {

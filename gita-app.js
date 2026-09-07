@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.22',
+  version: '9.99.23',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -33115,14 +33115,29 @@ var G = window.G || {}; window.G = G;
 
   /* Đọc các dòng ĐÁNH DẤU trong nội dung. Máy không đoán đâu là nhãn,
      đâu là dải băng — người viết gõ dấu ra. Cùng luật với lưới ô. */
+  /* ── MỘT DANH SÁCH DẤU, MỘT CHỖ ──
+     Bản trước bộ lọc dấu gõ tay đúng hai tên: NHÃN và BĂNG. Rồi thẻ
+     ngày thêm ẢNH, PHỤ, ĐÓNG ĐINH, HÌNH — và bộ lọc không biết, nên
+     dòng "HÌNH: nha" trôi vào thân bài và thành CÂU LỚN của tấm bìa.
+     Tấm ấy in ra chữ "HÌNH: nha" to bằng nửa khổ.
+
+     Lỗi này không phải quên một dòng — nó là hậu quả của việc có HAI
+     nơi biết danh sách dấu: chỗ đọc và chỗ lọc. Hai bản của một sự
+     thật thì bản nào cũng có ngày lệch. Nay một danh sách, cả hai
+     đọc từ đó, và thêm dấu mới là sửa đúng một chỗ. */
+  var DAU_DONG = ['NHÃN', 'BĂNG', 'ẢNH', 'PHỤ', 'HÌNH', 'HÌNH1', 'HÌNH2',
+                  'ĐÓNG ĐINH'];
   function docDau(chu, dau) {
     var re = new RegExp('^\\s*' + dau + '\\s*:\\s*(.+)$', 'im');
     var m = re.exec(String(chu || ''));
     return m ? m[1].trim() : '';
   }
+  var RE_DAU = new RegExp('^\\s*(?:' +
+    DAU_DONG.slice().sort(function (a, b) { return b.length - a.length; })
+      .join('|') + ')\\s*:', 'i');
   function boDau(chu) {
     return String(chu || '').split('\n')
-      .filter(function (d) { return !/^\s*(NHÃN|BĂNG)\s*:/i.test(d); })
+      .filter(function (d) { return !RE_DAU.test(d); })
       .join('\n').replace(/\n{3,}/g, '\n\n').trim();
   }
 
@@ -33261,7 +33276,14 @@ var G = window.G || {}; window.G = G;
     var cau = cauDau(chu), phu = cauHai(chu);
     if (!cau) return {ok: false, error: 'Nội dung rỗng — không có câu nào để đặt lên bìa.'};
 
-    var le = Math.round(kg.w * 0.085), rong = kg.w - le * 2;
+    var maHinh = docDau(x.noiDung, 'HÌNH');
+    if (maHinh && !NGUOI[maHinh]) return {ok: false,
+      error: 'Không có hình người tên "' + maHinh + '". Đang có: ' +
+             Object.keys(NGUOI).join(', ') + '.'};
+    var le = Math.round(kg.w * 0.085);
+    /* Có hình thì chữ lùi vào một cột, nhường cột phải cho hình —
+       chữ chạy dưới hình là chữ đọc trên một cái nền có nét. */
+    var rong = kg.w - le * 2 - (maHinh ? Math.round(kg.w * 0.30) : 0);
     /* Cỡ chữ co lại cho tới khi câu vừa BỐN dòng. Đặt cỡ cứng thì câu
        dài tràn khỏi tấm, mà tràn thì không ai thấy lúc vẽ — chỉ thấy
        lúc đã dán lên giao diện. */
@@ -33276,7 +33298,11 @@ var G = window.G || {}; window.G = G;
        tấm nào có dòng phụ cũng lệch lên và hở một mảng dưới. Đo cả
        khối (câu + khoảng + phụ) rồi căn giữa VÙNG NẰM TRÊN dấu GITA —
        căn giữa cả tấm thì khối chữ đè vào dấu. */
-    var coPhu = Math.round(co * 0.34);
+    /* Dòng phụ 0,34 lần câu chính là quá nhỏ trên khổ ngang: câu
+       chính 43px thì phụ chỉ còn 14px, bằng chú thích chứ không bằng
+       một câu người ta đọc. Nó là câu THỨ HAI của tấm, không phải
+       một dòng chú. */
+    var coPhu = Math.round(co * 0.42);
     var caoCau = dong.length * co * 1.24;
     var caoPhu = phu
       ? co * 0.5 + catDong(phu, '500 ' + coPhu + 'px ' + CHU_THAN, rong).length *
@@ -33285,13 +33311,22 @@ var G = window.G || {}; window.G = G;
     /* Nhãn trên và dải băng chiếm chỗ THẬT, nên phải vào phép tính căn
        giữa. Vẽ xong mới nhớ ra là chúng có chiều cao thì cả khối đã
        lệch — đúng lớp lỗi đã sửa hai lần trước ở tấm bìa và lưới ô. */
-    var caoNhan = nhan ? Math.round(co * 0.62) : 0;
+    var caoNhan = nhan ? Math.round(co * 0.86) : 0;
     var dbang = bang2 ? daiBang(bang2, Math.round(kg.w / 2), 0, k, rong) : null;
     var caoBang = dbang ? dbang.cao + Math.round(co * 0.55) : 0;
 
+    /* ── KHỐI CHỮ VÀ HÌNH PHẢI CÙNG MỘT TRỤC NGANG ──
+       Bản trước căn khối chữ vào giữa VÙNG TRÊN dấu GITA, còn hình
+       thì căn vào giữa TẤM. Hai trục khác nhau, nên tấm trông như
+       chữ tụt lên còn hình tụt xuống — mỗi phần đều cân, mà đặt
+       cạnh nhau thì lệch.
+       Khi có hình: neo tâm khối chữ vào đúng tâm hình. Không có
+       hình: giữ cách cũ, căn giữa vùng trên dấu. */
     var dayVung = kg.h - Math.round(kg.h * 0.085) - 34;   /* chừa chỗ dấu GITA */
-    var dinh = Math.round((dayVung - caoNhan - caoCau - caoPhu - caoBang) / 2) +
-      caoNhan + co * 0.32;
+    var caoKhoi = caoNhan + caoCau + caoPhu + caoBang;
+    var dinh = maHinh
+      ? Math.round(kg.h * 0.48 - caoKhoi / 2) + caoNhan + co * 0.32
+      : Math.round((dayVung - caoKhoi) / 2) + caoNhan + co * 0.32;
 
     var nen = lopNen(kg, k);
     var cs = defChuSac(k);
@@ -33300,7 +33335,7 @@ var G = window.G || {}; window.G = G;
     var o = nen.ve +
       '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>';
     o += nhan
-      ? nhanTren(nhan, le, Math.round(dinh - co * 0.92), k, Math.round(co * 0.30))
+      ? nhanTren(nhan, le, Math.round(dinh - co * 1.16), k, Math.round(co * 0.34))
       : '<rect x="' + le + '" y="' + Math.round(dinh - co * 1.02) +
         '" width="52" height="4" rx="2" fill="' + h(k.do) + '"/>';
     o += t.svg;
@@ -33313,6 +33348,18 @@ var G = window.G || {}; window.G = G;
     if (dbang) {
       dbang = daiBang(bang2, Math.round(kg.w / 2), Math.round(day + co * 0.55), k, rong);
       o += dbang.ve;
+    }
+    if (maHinh) {
+      /* Hình đứng trong một đĩa màu ở cột phải, căn giữa theo chiều
+         dọc của cả tấm — nó là điểm tựa thị giác, không phải một
+         mẩu trang trí thả vào góc. */
+      var sacH = (sacTang()[0] || {hex: k.gita}).hex;
+      var rD2 = Math.round(kg.h * 0.30);
+      var cxH = kg.w - le - rD2;
+      o += '<circle cx="' + cxH + '" cy="' + Math.round(kg.h * 0.48) + '" r="' + rD2 +
+        '" fill="' + h(sacH) + '" fill-opacity="' + (k.sau ? '0.20' : '0.11') + '"/>';
+      o += veNet('nguoi', maHinh, cxH, Math.round(kg.h * 0.48),
+        Math.round(rD2 * 1.42), sacH);
     }
     o += dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.085));
     return {ok: true, svg: khung(kg, k, o,
@@ -34295,11 +34342,15 @@ var G = window.G || {}; window.G = G;
            '<path d="M34 -6 v-38" fill="none" stroke-width="6" stroke-linecap="round"/>' +
            '<path d="M34 -44 l22 8 l-22 8 z"/>',
     /* Cầm bản đồ — có phương hướng */
-    bando: '<circle cx="0" cy="-26" r="13"/>' +
-           '<path d="M-28 44 C-28 16 -14 4 0 4 C14 4 28 16 28 44 Z"/>' +
-           '<path d="M-26 6 L0 0 L26 6 L26 30 L0 24 L-26 30 Z" fill="none" ' +
-           'stroke-width="7" stroke-linejoin="round"/>' +
-           '<path d="M0 0 V24" fill="none" stroke-width="5"/>',
+    /* Bản đồ vẽ bằng nét TRẮNG đè lên thân. Bản đầu vẽ nét CÙNG MÀU
+       với thân, nên nó chìm hẳn vào khối và cả hình đọc ra thành một
+       người đang ôm một cái hộp. Một chi tiết đặt TRÊN một khối đặc
+       thì phải khác màu khối ấy — nếu không, nó không tồn tại. */
+    bando: '<circle cx="0" cy="-28" r="13"/>' +
+           '<path d="M-28 44 C-28 14 -14 2 0 2 C14 2 28 14 28 44 Z"/>' +
+           '<path d="M-21 14 L0 9 L21 14 L21 34 L0 29 L-21 34 Z" fill="none" ' +
+           'stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>' +
+           '<path d="M0 9 V29" fill="none" stroke="#FFFFFF" stroke-width="4"/>',
     /* Rối — một cuộn chỉ rối trên đầu. Không vẽ mặt buồn: một nét mặt
        là bắt đầu nói về một người cụ thể. */
     roi:   '<circle cx="0" cy="-14" r="14"/>' +
