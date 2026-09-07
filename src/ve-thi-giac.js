@@ -47,7 +47,15 @@ var G = window.G || {}; window.G = G;
   var KHO_GIAY = {
     rong:  {w: 1200, h: 630,  ten: 'Khổ chia sẻ 1200×630'},
     vuong: {w: 1080, h: 1080, ten: 'Khổ vuông 1080×1080'},
-    doc:   {w: 1080, h: 1350, ten: 'Khổ dọc 1080×1350'}
+    doc:   {w: 1080, h: 1350, ten: 'Khổ dọc 1080×1350'},
+    /* ── KHỔ ĐỨNG TRÀN MÀN (9.99.30) ──
+       Bảng này có ba khổ và không khổ nào là 9:16. Khổ dọc 1080×1350
+       là 4:5 — khổ ảnh của trang cá nhân, KHÔNG phải khổ video đứng.
+       Đăng một tấm 4:5 vào chỗ 9:16 thì nền tự bù hai dải xám trên
+       dưới, và tấm mất gần một phần tư chiều cao vào chỗ không phải
+       của mình.
+       Đây là khổ người ta nhìn nhiều nhất hôm nay, và nó thiếu. */
+    dung:  {w: 1080, h: 1920, ten: 'Khổ đứng tràn màn 1080×1920'}
   };
 
   /* ── MÀU: ĐỌC TỪ BIẾN CSS ĐANG CHẠY ──
@@ -822,9 +830,19 @@ var G = window.G || {}; window.G = G;
   var RE_DAU = new RegExp('^\\s*(?:' +
     DAU_DONG.slice().sort(function (a, b) { return b.length - a.length; })
       .join('|') + ')\\s*:', 'i');
+  /* ── DẤU MỞ KHỐI CŨNG PHẢI LỌC KHỎI THÂN BÀI ──
+     DAU_DONG chỉ gom loại dấu "TÊN:" — nó không biết loại dấu thứ hai
+     của kho này: "TÊN | …", dùng cho lưới ô, tầng, bước, cột, cổng.
+     Hậu quả thấy được: bỏ dòng PHỤ ra khỏi một áp phích thì câu phụ
+     rơi xuống đoạn kế tiếp, mà đoạn ấy là năm dòng "Ô | …" — và tấm
+     in ra nguyên văn "Ô | Bộ test đầu vào | Cho cả học viên..." làm
+     câu phụ.
+     Đúng lớp lỗi của vụ "HÌNH: nha" ở 9.99.22, quay lại ở loại dấu
+     thứ hai. Hai loại dấu, hai biểu thức, và cả hai phải lọc. */
+  var RE_KHOI = /^\s*(?:Ô|TẦNG\s*\d+|BƯỚC\s*\d+|TRÁI|PHẢI|VAI|NHÓM|CỔNG|SỐ|CỘT)\s*\|/i;
   function boDau(chu) {
     return String(chu || '').split('\n')
-      .filter(function (d) { return !RE_DAU.test(d); })
+      .filter(function (d) { return !RE_DAU.test(d) && !RE_KHOI.test(d); })
       .join('\n').replace(/\n{3,}/g, '\n\n').trim();
   }
 
@@ -3323,19 +3341,38 @@ var G = window.G || {}; window.G = G;
     var traiLaNguoi = ben.indexOf('ph') !== 0;
 
     var le = Math.round(kg.w * 0.045);
-    var rongNguoi = Math.round(kg.w * 0.38);
-    var xNguoi = traiLaNguoi ? 0 : kg.w - rongNguoi;
-    var xChu = traiLaNguoi ? rongNguoi + Math.round(kg.w * 0.028) : le;
-    var rongChu = kg.w - rongNguoi - Math.round(kg.w * 0.028) - le;
+    /* ── KHUNG CAO THÌ XẾP CHỒNG, KHÔNG XẾP CẠNH ──
+       Bố cục hai cột dựng cho khổ vuông. Đặt nguyên nó lên khổ đứng
+       1080×1920 thì cả hai cột cùng hẹp lại một nửa trong khi chiều
+       cao thừa ra gần gấp đôi: người teo xuống một góc, khối chữ căn
+       giữa để trống hẳn phần trên và phần dưới.
+       Vẽ ra mới thấy, và nó là một lớp lỗi có tên: một bố cục neo vào
+       TỶ LỆ mà lại đem dùng ở một tỷ lệ khác. Trên khung cao hơn 1,45
+       lần bề ngang thì người thành một DẢI ngang chiếm hết bề ngang ở
+       đáy, chữ nằm trọn bề ngang phía trên. */
+    var khungCao = kg.h / kg.w > 1.45;
+    var rongNguoi, xNguoi, xChu, rongChu, yNguoi, caoNguoi;
+    if (khungCao) {
+      rongNguoi = kg.w; xNguoi = 0;
+      caoNguoi = Math.round(kg.h * 0.42);
+      yNguoi = kg.h - caoNguoi;
+      xChu = le; rongChu = kg.w - le * 2;
+    } else {
+      rongNguoi = Math.round(kg.w * 0.38);
+      xNguoi = traiLaNguoi ? 0 : kg.w - rongNguoi;
+      caoNguoi = kg.h; yNguoi = 0;
+      xChu = traiLaNguoi ? rongNguoi + Math.round(kg.w * 0.028) : le;
+      rongChu = kg.w - rongNguoi - Math.round(kg.w * 0.028) - le;
+    }
 
     var nen = lopNen(kg, k, 0.8);
     var bong = defBong(k, 1), cs = defChuSac(k);
     var manh = [nen, bong, cs];
     var sChinh = sac[0];
 
-    var ln = lopNguoi(maHinh || maAnh, xNguoi, 0, rongNguoi, kg.h, k, sChinh.hex, x);
-    manh.push(ln);
-    var ve = ln.ve;
+    /* LỚP NGƯỜI DỰNG SAU KHI ĐO XONG CỘT CHỮ — xem chú giải ở chỗ
+       tính caoTong bên dưới. Ở đây mới chỉ giữ chỗ. */
+    var ln = null, ve = '';
 
     /* ── ĐO CẢ CỘT CHỮ TRƯỚC KHI VẼ MỘT NÉT NÀO ──
        Lớp lỗi đã sửa năm lần trong tệp này: neo một khối vào một con
@@ -3385,9 +3422,20 @@ var G = window.G || {}; window.G = G;
       var _w = rongO + (_c < duO ? 1 : 0);
       cotRong.push(_w); cotX.push(_x); _x += _w + giua;
     }
-    var coTenO = Math.max(13, Math.round(rongO * 0.105));
-    var coMoO = Math.max(11, Math.round(rongO * 0.072));
-    var rHH = Math.round(rongO * 0.19);
+    /* ── TRẦN THEO KHỔ TẤM, KHÔNG CHỈ THEO BỀ RỘNG Ô ──
+       Ba cỡ này co theo bề rộng ô. Trên khổ vuông cột chữ rộng 591 nên
+       ô rộng 187 và huy hiệu 36 — vừa. Trên khổ đứng cột chữ chiếm trọn
+       bề ngang 982, ô rộng 318, huy hiệu phình lên 60 và Ô CAO THEO:
+       307 điểm ảnh mỗi ô thay vì 190. Hai hàng ô ăn hết 628, và cả cột
+       chữ đòi 1382 trên một tấm cao 1920.
+       Nghịch lý là cột RỘNG ra lại làm tấm THIẾU chỗ — vì chỉ có một
+       chiều được neo. Trần theo khổ tấm chặn đúng chỗ ấy: một huy hiệu
+       to hơn 4,5% bề ngang tấm thì cũng không đọc rõ hơn, chỉ chiếm chỗ. */
+    var coTenO = Math.max(13, Math.min(Math.round(rongO * 0.105),
+                                       Math.round(kg.w * 0.028)));
+    var coMoO = Math.max(11, Math.min(Math.round(rongO * 0.072),
+                                      Math.round(kg.w * 0.020)));
+    var rHH = Math.min(Math.round(rongO * 0.19), Math.round(kg.w * 0.045));
     /* ── HUY HIỆU ĐO TỪ TÂM, KHÔNG TỪ ĐỈNH ──
        Bản đầu đặt tên ô ở rHH*2 dưới đỉnh ô, mà huy hiệu tâm ở rHH*1.5
        và bán kính rHH nên đáy nó ở rHH*2.5 — tên chui vào nửa dưới huy
@@ -3440,9 +3488,49 @@ var G = window.G || {}; window.G = G;
     var yDau = Math.round(kg.h * 0.052);
     var caoDau = Math.round(kg.h * 0.075);
     var vungY = yDau + caoDau;
-    var vungCao = kg.h - vungY - Math.round(kg.h * 0.045);
-    if (caoTong > vungCao) {
-      var thua = Math.round(caoTong - vungCao);
+
+    /* ── DẢI NGƯỜI LẤY PHẦN CÒN LẠI, KHÔNG LẤY MỘT TỶ LỆ CỐ ĐỊNH ──
+       Bản đầu chốt cứng dải người 42% chiều cao rồi mới đo cột chữ —
+       và cột chữ tràn 406 điểm ảnh. Cùng lớp lỗi đã sửa ở cổng nghiệm
+       thu: chốt khung trước rồi ép nội dung vào chỗ thừa.
+       Nay đo chữ trước, người lấy phần còn lại. Còn dưới 26% chiều cao
+       thì KHÔNG bóp người xuống nữa — một dải người mỏng hơn thế đọc ra
+       là một vệt, không đọc ra là người — mà để phép từ chối bên dưới
+       nói thẳng là tấm quá tải. */
+    /* ── VÀ ĐÂY LÀ CHỖ TÔI ĐẾM HAI LẦN ──
+       Bản đầu của khối này viết:
+         conLai   = cao tấm − đầu − caoTong − hở
+         caoNguoi = kẹp(conLai, 26%..46%)
+       rồi để vungCao tính lại từ yNguoi. Nghĩa là chữ bị đo trên phần
+       CÒN LẠI SAU KHI người đã lấy — mà người lại lấy theo phần còn
+       lại sau chữ. Hai bên cùng trừ nhau một lần nữa.
+       Bằng chứng nó sai: BỎ BỚT một câu khỏi nội dung thì tấm tràn
+       NHIỀU HƠN — 99 lên 219 điểm ảnh. Nội dung ít đi mà chỗ thiếu
+       nhiều lên là một mâu thuẫn, và mâu thuẫn thì luôn là lỗi của
+       phép tính chứ không phải của nội dung.
+       Nay: CHỮ lấy đúng thứ nó cần, NGƯỜI lấy phần thừa. Thừa không
+       đủ 26% chiều cao thì phép từ chối bên dưới nói ra. */
+    if (khungCao) {
+      caoNguoi = kg.h - vungY - caoTong - Math.round(kg.h * 0.03);
+      caoNguoi = Math.round(Math.min(caoNguoi, kg.h * 0.46));
+      yNguoi = kg.h - Math.max(caoNguoi, 0);
+    }
+    /* Khung cao: vùng chữ dừng TRƯỚC dải người, không lấn xuống. Không
+       trừ thì khối chữ căn giữa cả tấm và nửa dưới của nó nằm đè lên
+       người. */
+    var vungCao = khungCao ? Math.max(caoTong, 0)
+                           : kg.h - vungY - Math.round(kg.h * 0.03);
+    ln = lopNguoi(maHinh || maAnh, xNguoi, yNguoi, rongNguoi, caoNguoi, k, sChinh.hex, x);
+    manh.push(ln); ve = ln.ve;
+    var thieuNguoi = khungCao && caoNguoi < Math.round(kg.h * 0.26);
+    if (caoTong > vungCao || thieuNguoi) {
+      var thua = thieuNguoi ? Math.round(kg.h * 0.26 - caoNguoi)
+                            : Math.round(caoTong - vungCao);
+      if (thieuNguoi) return {ok: false, code: 'HETCHONGUOI',
+        error: 'Khổ đứng này còn ' + Math.max(caoNguoi, 0) + ' điểm ảnh cho dải ' +
+               'người, thiếu ' + thua + ' nữa mới đủ. Dải mỏng hơn một phần tư ' +
+               'chiều cao thì đọc ra là một vệt, không đọc ra là người — nên máy ' +
+               'KHÔNG bóp tiếp. Bớt một ô hoặc bỏ câu phụ.'};
       return {ok: false, code: 'DAIQUAKHO',
         error: 'Cột chữ dài hơn khổ tấm ' + thua + ' điểm ảnh. Bớt một ô, rút ' +
                'ngắn mô tả, hoặc bỏ câu phụ. Máy KHÔNG đẩy khối lên cho vừa: ' +
@@ -3539,8 +3627,10 @@ var G = window.G || {}; window.G = G;
        thứ trên cùng. Vẽ trước thì ảnh phủ lên nó. */
     var thoai = docDau(x.noiDung, 'THOẠI');
     if (thoai) {
-      var bt2 = bongThoai(thoai, xNguoi + Math.round(rongNguoi * 0.06),
-        Math.round(kg.h * 0.075), Math.round(rongNguoi * 0.80), k, sChinh.hex);
+      var bt2 = bongThoai(thoai,
+        khungCao ? le : xNguoi + Math.round(rongNguoi * 0.06),
+        khungCao ? Math.round(yNguoi + kg.h * 0.02) : Math.round(kg.h * 0.075),
+        Math.round((khungCao ? kg.w - le * 2 : rongNguoi) * 0.80), k, sChinh.hex);
       ve += bt2.ve;
     }
 
@@ -3767,10 +3857,80 @@ var G = window.G || {}; window.G = G;
           'không có lượt hỏi mạng nào trong cả lượt vẽ.'};
   };
 
+  /* ═══════════ VẼ CẢ MỘT BỘ, KHOÁ KIỂU MỘT LẦN ═══════════
+
+     Luật `boAnh` của hiến pháp (9.99.30). Tới bản trước, mỗi tấm tự
+     chọn nền và khổ theo loại hình của RIÊNG nó: áp phích ra nền sâu
+     khổ vuông, cổng ra nền giấy khổ vuông, chân dung ra khổ dọc. Từng
+     tấm đều đúng luật. Mười lăm tấm xếp cạnh nhau thì ra mười lăm tấm
+     rời — người xem đọc ra là góp nhặt.
+
+     Cửa này chốt kiểu ĐÚNG MỘT LẦN rồi mọi tấm thừa hưởng. Và nó TRẢ
+     RA cái khoá ấy, để chỗ gọi biết mình vừa khoá theo gì — một cái
+     khoá không nói ra được thì lần sau không ai dựng lại đúng bộ ấy.
+
+     Khoá lấy từ TẤM ĐẦU nếu không ai chỉ định: tấm đầu của một bộ gần
+     như luôn là bìa, và bìa là chỗ người ta đã cân nhắc kỹ nhất.
+
+     KHÔNG ép loại hình: hai tấm cùng bộ vẫn được khác loại hình, vì
+     mỗi tấm có một nhiệm vụ riêng. Thứ bị khoá là NỀN, KHỔ — mấy thứ
+     mắt đọc ra ngay là "cùng một bộ" — không phải nội dung. */
+  G.veThiGiacBo = function (ds, khoaMuon) {
+    if (!Array.isArray(ds) || !ds.length) return {ok: false,
+      error: 'Bộ ảnh cần ít nhất một bản ghi.'};
+
+    var khoa = {
+      che: (khoaMuon && khoaMuon.che) || null,
+      kho: (khoaMuon && khoaMuon.kho) || null
+    };
+    /* Chưa chỉ định thì đọc từ TẤM ĐẦU — vẽ thử một lượt để hỏi chính
+       bộ vẽ nó sẽ chọn gì, chứ không chép lại bảng chọn ở đây. Chép
+       lại là dựng bản thứ hai của một sự thật. */
+    if (!khoa.che || !khoa.kho) {
+      var thu = G.veThiGiac(ds[0]);
+      if (!thu.ok) return {ok: false, code: 'TAMDAUHONG',
+        error: 'Không vẽ được tấm đầu, nên chưa chốt được kiểu cho cả bộ: ' +
+               thu.error};
+      khoa.che = khoa.che || thu.nen;
+      khoa.kho = khoa.kho || (function () {
+        var k = Object.keys(KHO_GIAY);
+        for (var i = 0; i < k.length; i++)
+          if (KHO_GIAY[k[i]].ten === thu.kho) return k[i];
+        return 'vuong';
+      })();
+    }
+
+    var ra = [], hong = [], thieuY = [];
+    ds.forEach(function (x, i) {
+      var r = G.veThiGiac(x, khoa.kho, khoa.che);
+      if (!r.ok) { hong.push({so: i + 1, id: x.id, error: r.error}); return; }
+      if (!r.duY) thieuY.push({so: i + 1, id: x.id, thieu: r.thieuY});
+      ra.push({so: i + 1, id: x.id, loaiHinh: x.loaiHinh, svg: r.svg,
+               w: r.w, h: r.h});
+    });
+
+    return {ok: true, khoa: khoa, so: ra.length, tam: ra,
+      hong: hong, thieuY: thieuY,
+      vi: 'Cả bộ khoá cùng một nền và một khổ. Loại hình vẫn khác nhau được — ' +
+          'mỗi tấm có một nhiệm vụ riêng, và ép chung loại hình là ép mười lăm ' +
+          'việc khác nhau vào một khuôn. Thứ bị khoá là mấy thứ mắt đọc ra ngay ' +
+          'là "cùng một bộ".'};
+  };
+
   /* Danh sách khổ và loại hình vẽ được, cho màn hình dựng ô chọn mà
      không phải chép lại hai bảng trên. */
   /* Mở hàm chọn hình ra cho bộ kiểm neo được mấy cặp tên ↔ hình. */
   G.veThiGiacChonHinh = chonHinh;
+
+  /* Mở HAI danh sách dấu ra cho bộ kiểm đọc thẳng. Bộ kiểm từng giữ
+     một BẢN CHÉP của danh sách dấu — và bản chép ấy không biết loại
+     dấu "TÊN |", nên phép đo "dấu rò vào thân bài" không bao giờ bắt
+     được dòng "Ô | …" trôi vào câu phụ. Một bản chép trong bộ kiểm là
+     chỗ tệ nhất để đặt bản chép: nó làm phép đo xanh trong khi kho
+     đang hỏng. */
+  G.veThiGiacDau = function () {
+    return {dong: DAU_DONG.slice(), khoi: RE_KHOI.source};
+  };
 
   G.veThiGiacBiet = function () {
     return {loaiHinh: Object.keys(BO_VE),

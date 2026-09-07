@@ -915,6 +915,57 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
         'không đọc từ kho, nên không có gì để rò. Lượt này đã vào sổ đi ra.'};
 }
 
+/* ══ CỬA XUẤT TẤM RA KHỎI HỆ ══
+
+   Luật C17 (9.99.30): mọi lối mang tấm hình ra khỏi hệ đi qua kiểm vai.
+
+   ══ VÀ PHẢI NÓI THẲNG CỬA NÀY LÀ GÌ ══
+
+   Nó KHÔNG phải một bức tường. Bộ vẽ dựng SVG ngay trong trình duyệt,
+   nên người đã mở được màn hình ấy thì đã có tấm trong tay — mở công
+   cụ nhà phát triển là lấy được. Viết một hàm chặn ở máy khách rồi gọi
+   đó là bảo vệ chính là lỗi "lọc trên màn hình" mà kho này đã dính ba
+   lần.
+
+   Cửa này là một CUỐN SỔ. Nó làm được đúng ba việc, và cả ba đều thật:
+     · từ chối vai không được xuất, nên không ai vô tình bấm nhầm
+     · GHI LẠI ai xuất tấm nào, lúc nào — đối chất được về sau
+     · đếm số lượt, để phát hiện người tải bất thường nhiều
+
+   Lớp bảo vệ THẬT nằm ở chỗ khác và đã có sẵn: kho nội dung đóng gói
+   theo quyền, nên một vai không được cấp thì màn hình ấy không bao giờ
+   có nội dung để mà xuất. */
+export async function xuatTamThiGiac(y, env, db, hoSo) {
+  /* Chủ hệ chốt từ lâu: khách hàng không xuất được hồ sơ, chỉ người
+     của Học viện cấp quản lý mới xuất. R01–R05 là cấp ấy. */
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Chỉ người của Học viện cấp quản lý (R01–R05) xuất được tấm hình. ' +
+           'Đây là chốt của chủ hệ, không phải một thiết đặt.'};
+
+  const id = String((y || {}).id || '').trim();
+  const x = await db.prepare('SELECT id,tang,loaiHinh,trangThai FROM deXuatThiGiac ' +
+    'WHERE id = ?').bind(id).first();
+  if (!x) return {ok: false, error: 'Không tìm thấy đề xuất này.'};
+
+  /* Bản nháp không xuất. Một tấm chưa ai đọc kỹ mà đã rời khỏi hệ thì
+     nó đại diện cho Học viện ở một nơi Học viện không kiểm được. */
+  if (x.trangThai === 'nhap' || x.trangThai === 'tuChoi')
+    return {ok: false, code: 'CHUADUYET',
+      error: 'Tấm đang ở bậc "' + x.trangThai + '" — chưa xuất được. Chỉ xuất ' +
+             'thứ đã qua ít nhất bậc đề xuất.'};
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_XUAT',
+    doiTuong: x.id, chiTiet: x.tang + ' · ' + x.loaiHinh + ' · bậc ' + x.trangThai +
+      ' · khổ ' + String((y || {}).kho || 'mặc định')});
+
+  return {ok: true, id: x.id, kho: (y || {}).kho || null,
+    vi: 'Được xuất, và lượt này đã vào nhật ký. Cửa này là một cuốn SỔ chứ ' +
+        'không phải một bức tường: bộ vẽ dựng tấm ngay trong trình duyệt nên ' +
+        'người mở được màn hình thì đã có tấm trong tay. Lớp giữ thật nằm ở kho ' +
+        'nội dung đóng gói theo quyền — vai không được cấp thì màn hình ấy không ' +
+        'bao giờ có nội dung để mà xuất.'};
+}
+
 export async function soDiRa(y, env, db, hoSo) {
   if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
     error: 'Cổng thiết kế mở cho R01–R05.'};

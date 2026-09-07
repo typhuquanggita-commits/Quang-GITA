@@ -51,7 +51,7 @@ import { datHeSoLuong, dsHeSoLuong, bangLuong, chotLuong,
   doiSoatLuong } from './luong.js';
 import { deXuatThiGiac, chuyenBacThiGiac, banMoiThiGiac, chamThiGiac,
   ghiLuatThuongHieu, khoThiGiac, docTaiLieuThiGiac, docNoiDungThiGiac,
-  guiDeBaiRaNgoai,
+  guiDeBaiRaNgoai, xuatTamThiGiac,
   soDiRa } from './kien-truc-thi-giac.js';
 import { nganHangBao, nhapGiaoDichTay, doiChieuNganHang, khopGiaoDich,
   hopThongBao, danhDauDaDoc } from './ngan-hang.js';
@@ -183,7 +183,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'datHeSoLuong', 'dsHeSoLuong', 'bangLuong', 'chotLuong', 'doiSoatLuong',
   'deXuatThiGiac', 'chuyenBacThiGiac', 'banMoiThiGiac', 'chamThiGiac',
   'ghiLuatThuongHieu', 'khoThiGiac', 'docTaiLieuThiGiac', 'docNoiDungThiGiac',
-  'guiDeBaiRaNgoai',
+  'guiDeBaiRaNgoai', 'xuatTamThiGiac',
   'soDiRa',
   'deXuatMienGiam', 'duyetMienGiam', 'dsMienGiam',
   'ghiNhacThu', 'lichSuNhacThu', 'denHenChuaTra'];
@@ -310,6 +310,7 @@ async function lam(fn, y, env, db) {
   if (fn === 'khoThiGiac')        return await khoThiGiac(y, env, db, hoSo);
   if (fn === 'docTaiLieuThiGiac') return await docTaiLieuThiGiac(y, env, db, hoSo);
   if (fn === 'docNoiDungThiGiac') return await docNoiDungThiGiac(y, env, db, hoSo);
+  if (fn === 'xuatTamThiGiac') return await xuatTamThiGiac(y, env, db, hoSo);
   if (fn === 'guiDeBaiRaNgoai')   return await guiDeBaiRaNgoai(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
 
