@@ -10620,6 +10620,23 @@ const { chromium } = require(PW);
             ', cần ' + c[1]; });
       } else r.hinhLech = ['bộ vẽ không khai hàm chọn hình'];
 
+      /* ── ẢNH NGƯỜI THẬT CHỈ ĐƯỢC Ở THẺ NGÀY ──
+         Chủ hệ nói "không phải ảnh nào cũng dùng ảnh thương hiệu của
+         tôi", và lý do sâu hơn một sở thích: ảnh chân dung gắn tấm
+         hình vào MỘT NGƯỜI. Một tấm nói về phần việc của phụ huynh
+         mà có mặt trainer thì người đọc hiểu là trainer đang dạy họ,
+         chứ không hiểu là hệ thống đang mô tả vai.
+         Đo: mười một loại hình kia KHÔNG được sinh ra thẻ <image>
+         nào. Chúng dùng hình người do máy dựng — không mặt, không ai
+         để nhận ra, nên không đụng quyền hình ảnh của người nào. */
+      r.anhSaiCho = [];
+      for (const loai of G.veThiGiacBiet().loaiHinh) {
+        if (loai === 'BIA') continue;
+        const v3 = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
+        if (v3.ok && /<image\b/.test(v3.svg))
+          r.anhSaiCho.push(loai + ' sinh ra thẻ <image>');
+      }
+
       /* ── THẺ NGÀY: HAI CỬA TỪ CHỐI RIÊNG ──
          · ảnh lạ: bộ vẽ chỉ nhận ảnh đã có trong kho mã. Nhận đường
            dẫn tự do thì bất kỳ ảnh nào cũng vào được một ấn phẩm mang
@@ -10803,7 +10820,7 @@ const { chromium } = require(PW);
       !(ra.sacThieu || []).length && ra.soSac === 6;
     const roDu = !(ra.mo || []).length && !(ra.vat || []).length &&
       !(ra.hinhLech || []).length && !(ra.cotNhieuSac || []).length &&
-      !(ra.ngoaiTam || []).length;
+      !(ra.ngoaiTam || []).length && !(ra.anhSaiCho || []).length;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
         ra.veDuoc.length >= 12 && choiDu && brandDu && roDu,
       'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. Và đo TƯƠNG PHẢN trên chính pixel đã vẽ ra, không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải màu nào ai gõ ra mà là kết quả của bốn lớp chồng lên nhau — cách duy nhất biết đúng là dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy màu trung bình đúng ô chữ sẽ nằm. Ngưỡng WCAG AA: 3,0 cho chữ từ 24px, 4,5 cho chữ thường. Một tấm hình rất sang mà chữ chìm thì nó không sang, nó hỏng. Chữ CHUYỂN SẮC cũng bị đo, và đo TỪNG CHẶNG MÀU của dải: bản đầu bỏ qua mọi thẻ có fill=url() — một lỗ đúng ở chỗ nguy hiểm nhất, vì chữ chuyển sắc luôn là câu to nhất trong tấm, và một dải có hai đầu nên đầu này đọc được không có nghĩa đầu kia đọc được',
@@ -10814,7 +10831,8 @@ const { chromium } = require(PW);
             + 'sáu sắc đều truy về G.BRAND.mau · dấu GITA không nhận bóng đổ · '
             + 'mọi chữ đạt tương phản WCAG trên nền ĐÃ VẼ RA · '
             + 'không chữ nào vắt qua mép một khối màu · biểu tượng khớp nghĩa · '
-            + 'biểu đồ một chuỗi tô một sắc · chữ nằm trong chính thẻ của nó'
+            + 'biểu đồ một chuỗi tô một sắc · chữ nằm trong chính thẻ của nó · '
+            + 'ảnh người thật chỉ ở thẻ ngày'
           : [ra.tran.length ? 'CHỮ TRÀN RA NGOÀI: ' + ra.tran.join(' | ') : '',
              ra.de.length ? 'CHỮ ĐÈ LÊN CHỮ: ' + ra.de.join(' | ') : '',
              ra.hong.length ? 'bộ vẽ hỏng: ' + ra.hong.join(' | ') : '',
@@ -10834,7 +10852,8 @@ const { chromium } = require(PW);
              (ra.vat || []).length ? 'CHỮ VẮT QUA MÉP KHỐI MÀU: ' + ra.vat.join(' | ') : '',
              (ra.hinhLech || []).length ? 'BIỂU TƯỢNG CHỌN SAI NGHĨA: ' + ra.hinhLech.join(' · ') : '',
              (ra.cotNhieuSac || []).length ? 'BIỂU ĐỒ TÔ NHIỀU SẮC: ' + ra.cotNhieuSac.join(' · ') : '',
-             (ra.ngoaiTam || []).length ? 'CHỮ TRÀN RA KHỎI THẺ CỦA NÓ: ' + ra.ngoaiTam.join(' | ') : ''
+             (ra.ngoaiTam || []).length ? 'CHỮ TRÀN RA KHỎI THẺ CỦA NÓ: ' + ra.ngoaiTam.join(' | ') : '',
+             (ra.anhSaiCho || []).length ? 'ẢNH NGƯỜI THẬT LỌT VÀO LOẠI HÌNH KHÁC: ' + ra.anhSaiCho.join(' · ') : ''
             ].filter(Boolean).join(' · ')));
   }
 

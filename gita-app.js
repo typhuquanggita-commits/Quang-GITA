@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.21',
+  version: '9.99.22',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -34222,49 +34222,91 @@ var G = window.G || {}; window.G = G;
      về một người, và lúc ấy mọi câu hỏi về đồng ý hình ảnh quay lại.
      ═══════════════════════════════════════════════════════════════ */
   var NGUOI = {
-    /* Người đứng — vai chung */
-    dung: '<circle cx="0" cy="-30" r="10"/>' +
-          '<path d="M0 -19 V6 M-15 -8 L0 -13 L15 -8 M0 6 L-10 30 M0 6 L10 30"/>',
-    /* Người lắng nghe — nghiêng người, một tay lên cằm. Đây là hình
-       của NGƯỜI LÀM NGHỀ trong hệ này: việc đầu tiên là nghe. */
-    nghe: '<circle cx="-3" cy="-30" r="10"/>' +
-          '<path d="M-2 -19 L1 6 M-16 -6 L-3 -12 M4 -12 L11 -20 L7 -24 ' +
-          'M1 6 L-9 29 M1 6 L11 28"/>',
-    /* Hai người đối thoại — một nói, một nghe */
-    hai:  '<circle cx="-16" cy="-26" r="8.5"/>' +
-          '<path d="M-16 -16 V6 M-27 -7 L-16 -11 L-6 -6 M-16 6 L-24 27 M-16 6 L-8 27"/>' +
-          '<circle cx="16" cy="-26" r="8.5"/>' +
-          '<path d="M16 -16 V6 M6 -6 L16 -11 L27 -7 M16 6 L8 27 M16 6 L24 27"/>' +
-          '<path d="M-6 -40 h13 a3 3 0 0 1 3 3 v7 a3 3 0 0 1 -3 3 h-6 l-4 4 v-4 ' +
-          'h-3 a3 3 0 0 1 -3 -3 v-7 a3 3 0 0 1 3 -3 z"/>',
-    /* Cả nhà — hai người lớn, một trẻ ở giữa. Trẻ đứng GIỮA, không
-       đứng trước: hệ này nói nhà đi cùng nhau, không nói người lớn
-       đẩy đứa trẻ đi trước. */
-    nha:  '<circle cx="-19" cy="-25" r="8"/>' +
-          '<path d="M-19 -16 V4 M-28 -8 L-19 -11 L-11 -6 M-19 4 L-26 26 M-19 4 L-12 26"/>' +
-          '<circle cx="19" cy="-25" r="8"/>' +
-          '<path d="M19 -16 V4 M11 -6 L19 -11 L28 -8 M19 4 L12 26 M19 4 L26 26"/>' +
-          '<circle cx="0" cy="-8" r="6.5"/>' +
-          '<path d="M0 -1 V13 M-8 4 L0 2 L8 4 M0 13 L-6 27 M0 13 L6 27"/>',
-    /* Người ngồi bàn — bối cảnh làm việc */
-    ban:  '<circle cx="-6" cy="-28" r="9"/>' +
-          '<path d="M-6 -18 V0 M-17 -8 L-6 -13 L6 -6"/>' +
-          '<path d="M-30 4 H30 M-24 4 V24 M24 4 V24"/>' +
-          '<path d="M4 -6 h16 v10 h-16 z"/>',
-    /* Người leo bậc tới lá cờ — hành trình có bậc, không phải một cú nhảy */
-    leo:  '<path d="M-30 26 h12 v-9 h12 v-9 h12 v-9 h12"/>' +
-          '<circle cx="4" cy="-20" r="8"/>' +
-          '<path d="M4 -11 V4 M-5 -3 L4 -7 L13 -12 M4 4 L-3 17 M4 4 L12 12"/>' +
-          '<path d="M26 -3 V-30 M26 -30 l14 5 l-14 5"/>',
-    /* Người cầm bản đồ — có phương hướng */
-    bando:'<circle cx="0" cy="-30" r="9.5"/>' +
-          '<path d="M0 -20 V6 M0 6 L-9 29 M0 6 L9 29"/>' +
-          '<path d="M-17 -14 L-2 -18 L14 -13 L14 2 L-2 -3 L-17 1 Z M-2 -18 V-3"/>',
-    /* Người rối — một cuộn chỉ rối trên đầu. Không có mặt buồn, vì
-       một nét mặt là bắt đầu nói về một người cụ thể. */
-    roi:  '<circle cx="0" cy="-24" r="9.5"/>' +
-          '<path d="M0 -14 V8 M-14 -2 L0 -7 L14 -2 M0 8 L-9 30 M0 8 L9 30"/>' +
-          '<path d="M-11 -40 c6 -8 16 -3 10 3 c-6 6 -16 1 -8 -6 c8 -7 18 4 9 8"/>'
+    /* ══ HÌNH KHỐI PHẲNG, KHÔNG PHẢI HÌNH QUE ══
+       Bản trước tôi vẽ người bằng nét mảnh — que. Que đọc được nhưng
+       trông như bản phác, và một tấm ấn phẩm mang dấu GITA thì không
+       được trông như bản phác. Hình KHỐI: đầu và thân tô đặc, tay
+       chân là nét DÀY đầu tròn. Khối đọc được ở cỡ nhỏ, que thì mờ.
+
+       Vẫn KHÔNG MẶT. Không mắt, không miệng. Hình ở đây nói VAI, và
+       một khuôn mặt là bắt đầu nói về một người — lúc ấy mọi câu hỏi
+       về bản quyền và đồng ý hình ảnh quay lại. Máy tự dựng từ hình
+       học, không chép của ai. */
+    nguoi: '<circle cx="0" cy="-20" r="15"/>' +
+           '<path d="M-30 44 C-30 14 -15 2 0 2 C15 2 30 14 30 44 Z"/>',
+    /* Lắng nghe — một tay đưa lên cằm. Hình của NGƯỜI LÀM NGHỀ: việc
+       đầu tiên trong hệ này là nghe, không phải nói. */
+    /* Tay phải đi TỪ VAI lên tới CẰM, và nắm tay chạm cằm. Bản đầu
+       tôi đặt nắm tay ở ngoài má nên nó đọc ra thành một cái đuôi
+       tròn cạnh đầu, không đọc ra là tay chống cằm. Một chi phải nối
+       vào thân ở một đầu và chạm vào chỗ nó tới ở đầu kia — thiếu
+       một trong hai thì nó thành một vệt rời. */
+    nghe:  '<circle cx="-4" cy="-20" r="15"/>' +
+           '<path d="M-33 44 C-33 15 -18 3 -4 3 C10 3 25 15 25 44 Z"/>' +
+           '<path d="M21 40 C30 26 22 8 8 -4" fill="none" stroke-width="9" ' +
+           'stroke-linecap="round"/>' +
+           '<circle cx="5" cy="-6" r="7.5"/>',
+    /* Chỉ lên — tư thế trong chính ảnh mẫu của chủ hệ */
+    chi:   '<circle cx="-4" cy="-18" r="14"/>' +
+           '<path d="M-32 44 C-32 16 -18 4 -4 4 C10 4 24 16 24 44 Z"/>' +
+           '<path d="M20 40 C30 26 26 4 22 -18" fill="none" stroke-width="10" ' +
+           'stroke-linecap="round"/>' +
+           '<circle cx="22" cy="-24" r="7"/>',
+    /* Nắm tay — vượt qua được */
+    mung:  '<circle cx="-4" cy="-18" r="14"/>' +
+           '<path d="M-32 44 C-32 16 -18 4 -4 4 C10 4 24 16 24 44 Z"/>' +
+           '<path d="M20 40 C32 28 28 4 24 -8" fill="none" stroke-width="10" ' +
+           'stroke-linecap="round"/>' +
+           '<rect x="15" y="-24" width="19" height="17" rx="7"/>',
+    /* Hai người đối thoại — một bong bóng thoại giữa hai đầu */
+    hai:   '<circle cx="-19" cy="-14" r="12"/>' +
+           '<path d="M-42 44 C-42 20 -31 9 -19 9 C-7 9 4 20 4 44 Z"/>' +
+           '<circle cx="20" cy="-14" r="12"/>' +
+           '<path d="M-3 44 C-3 20 8 9 20 9 C32 9 43 20 43 44 Z"/>' +
+           '<path d="M-11 -46 h24 a6 6 0 0 1 6 6 v11 a6 6 0 0 1 -6 6 h-9 ' +
+           'l-8 7 v-7 h-7 a6 6 0 0 1 -6 -6 v-11 a6 6 0 0 1 6 -6 z"/>',
+    /* Cả nhà — hai người lớn, một trẻ Ở GIỮA. Ở giữa chứ không đứng
+       trước: hệ này nói nhà đi cùng nhau, không nói người lớn đẩy
+       đứa trẻ đi trước mặt mình. */
+    /* Cả nhà: hai người lớn tách hẳn sang hai bên, trẻ ở GIỮA và
+       thấp hơn. Bản đầu ba thân chồng lên nhau nên cụm ra thành một
+       khối liền có ba cái đầu nổi lên — mắt không tách được ai với
+       ai. Ba thân phải RỜI nhau thì mới đọc ra là ba người. */
+    nha:   '<circle cx="-30" cy="-18" r="11"/>' +
+           '<path d="M-48 44 C-48 22 -40 12 -30 12 C-20 12 -12 22 -12 44 Z"/>' +
+           '<circle cx="30" cy="-18" r="11"/>' +
+           '<path d="M12 44 C12 22 20 12 30 12 C40 12 48 22 48 44 Z"/>' +
+           '<circle cx="0" cy="4" r="8.5"/>' +
+           '<path d="M-9 44 C-9 30 -5 22 0 22 C5 22 9 30 9 44 Z"/>',
+    /* Ngồi bàn — bối cảnh học và làm */
+    ban:   '<circle cx="-6" cy="-24" r="13"/>' +
+           '<path d="M-30 20 C-30 -2 -18 -9 -6 -9 C6 -9 18 -2 18 20 Z"/>' +
+           '<rect x="-40" y="22" width="80" height="7" rx="3.5"/>' +
+           '<path d="M-32 29 v16 M32 29 v16" fill="none" stroke-width="7" ' +
+           'stroke-linecap="round"/>' +
+           '<path d="M6 22 l7 -16 h20 l-4 16 z"/>',
+    /* Leo bậc tới lá cờ — hành trình có bậc, không phải một cú nhảy */
+    leo:   '<path d="M-46 44 h16 v-11 h15 v-11 h15 v-12 h16" fill="none" ' +
+           'stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>' +
+           '<circle cx="0" cy="-16" r="12"/>' +
+           '<path d="M-18 22 C-18 2 -10 -4 0 -4 C10 -4 18 2 18 22 Z"/>' +
+           '<path d="M-10 22 l-8 18 M8 22 l10 12" fill="none" stroke-width="9" ' +
+           'stroke-linecap="round"/>' +
+           '<path d="M34 -6 v-38" fill="none" stroke-width="6" stroke-linecap="round"/>' +
+           '<path d="M34 -44 l22 8 l-22 8 z"/>',
+    /* Cầm bản đồ — có phương hướng */
+    bando: '<circle cx="0" cy="-26" r="13"/>' +
+           '<path d="M-28 44 C-28 16 -14 4 0 4 C14 4 28 16 28 44 Z"/>' +
+           '<path d="M-26 6 L0 0 L26 6 L26 30 L0 24 L-26 30 Z" fill="none" ' +
+           'stroke-width="7" stroke-linejoin="round"/>' +
+           '<path d="M0 0 V24" fill="none" stroke-width="5"/>',
+    /* Rối — một cuộn chỉ rối trên đầu. Không vẽ mặt buồn: một nét mặt
+       là bắt đầu nói về một người cụ thể. */
+    roi:   '<circle cx="0" cy="-14" r="14"/>' +
+           '<path d="M-30 44 C-30 16 -15 5 0 5 C15 5 30 16 30 44 Z"/>' +
+           '<path d="M-16 -40 c9 -12 24 -4 15 5 c-9 9 -24 2 -12 -9 ' +
+           'c12 -10 27 6 13 12" fill="none" stroke-width="6" ' +
+           'stroke-linecap="round"/>'
   };
   var CANH = {
     cay:  '<path d="M0 26 V4 M0 10 c-12 0 -16 -10 -16 -16 c10 0 16 6 16 16 z ' +
@@ -34283,10 +34325,18 @@ var G = window.G || {}; window.G = G;
     var t = (bo === 'nguoi' ? NGUOI : CANH)[ma];
     if (!t) return '';
     var ty = cao / 100;
+    /* Hình NGƯỜI dựng bằng khối đặc — nhóm tô màu, phần nào cần nét
+       thì tự khai fill="none" và stroke-width của riêng nó. Hình BỐI
+       CẢNH vẫn vẽ bằng nét, vì bối cảnh phải nhạt hơn người: người là
+       chủ thể, bối cảnh chỉ nói chỗ đứng. */
+    if (bo === 'nguoi')
+      return '<g transform="translate(' + cx + ',' + cy + ') scale(' + ty.toFixed(4) +
+        ')" fill="' + h(mau) + '" stroke="' + h(mau) + '" stroke-linejoin="round" ' +
+        'class="gita-net">' + t + '</g>';
     return '<g transform="translate(' + cx + ',' + cy + ') scale(' + ty.toFixed(4) +
-      ')" fill="none" stroke="' + h(mau) + '" stroke-width="' +
-      ((dam || 3.4) / ty * (cao / 100)).toFixed(2) + '" stroke-linecap="round" ' +
-      'stroke-linejoin="round" class="gita-net">' + t + '</g>';
+      ')" fill="none" stroke="' + h(mau) + '" stroke-width="' + (dam || 5) +
+      '" stroke-linecap="round" stroke-linejoin="round" class="gita-net">' +
+      t + '</g>';
   }
 
   /* Chọn hình người theo nghĩa của tên vai, cùng luật với biểu tượng:
@@ -34298,14 +34348,16 @@ var G = window.G || {}; window.G = G;
     ['ban',   'hoc vien|hoc sinh|lam bai|hoc tap|ghi chep'],
     ['leo',   'but pha|vuot|tien bo|nang cap|thanh cong|muc tieu'],
     ['bando', 'lo trinh|chien luoc|dinh huong|ban do|phuong huong'],
-    ['roi',   'roi|be tac|khong biet|mat phuong huong|cam tinh|lung tung']
+    ['roi',   'roi|be tac|khong biet|mat phuong huong|cam tinh|lung tung'],
+    ['chi',   'dinh huong|chi ra|huong dan|dan duong|mo duong'],
+    ['mung',  'thanh cong|vuot qua|lam duoc|tu tin|niem tin']
   ];
   function chonNguoi(ten, i) {
     var t = boDauChu(ten);
     for (var j = 0; j < TU_KHOA_NGUOI.length; j++)
       if (new RegExp('\\b(?:' + TU_KHOA_NGUOI[j][1] + ')\\b', 'i').test(t))
         return TU_KHOA_NGUOI[j][0];
-    return ['nghe', 'nha', 'ban', 'hai', 'bando', 'leo'][i % 6];
+    return ['nghe', 'nha', 'ban', 'hai', 'bando', 'leo', 'chi', 'mung'][i % 8];
   }
 
   /* ── ĐẦU TẤM VÀ CHÂN TẤM, DỰNG MỘT LẦN ──
@@ -34376,6 +34428,18 @@ var G = window.G || {}; window.G = G;
               ten: 'Trương Nhật Quang', vai: 'Mentor định hướng nghề nghiệp'}
   };
 
+  /* ── ẢNH THẬT CHỈ DÙNG Ở MỘT CHỖ, VÀ ĐÓ LÀ MỘT LUẬT ──
+     Chủ hệ nói thẳng: "không phải ảnh nào cũng sử dụng ảnh thương
+     hiệu của tôi". Đúng, và lý do sâu hơn một sở thích: ảnh chân
+     dung một người thật gắn tấm hình vào MỘT NGƯỜI. Một tấm nói về
+     phần việc của phụ huynh mà có mặt trainer thì người đọc hiểu là
+     trainer đang dạy họ, chứ không hiểu là hệ thống mô tả vai.
+
+     Nên: ảnh thật CHỈ ở THẺ NGÀY — ấn phẩm định kỳ đứng tên anh, nơi
+     mặt anh chính là nội dung. Mười một loại hình còn lại dùng hình
+     người do máy dựng: không mặt, không ai để nhận ra, không chép
+     của ai, nên không đụng bản quyền hay quyền hình ảnh của bất kỳ
+     người nào. Bộ kiểm canh chỗ này. */
   function veAnhNguoi(ma, x, y, cao, k, sac) {
     var a = ANH_NGUOI[ma];
     if (!a) return '';
