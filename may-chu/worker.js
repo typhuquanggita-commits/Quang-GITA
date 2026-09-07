@@ -50,7 +50,8 @@ import { hoiTroLyTaiChinh } from './tro-ly-tai-chinh.js';
 import { datHeSoLuong, dsHeSoLuong, bangLuong, chotLuong,
   doiSoatLuong } from './luong.js';
 import { deXuatThiGiac, chuyenBacThiGiac, banMoiThiGiac, chamThiGiac,
-  ghiLuatThuongHieu, khoThiGiac, docTaiLieuThiGiac, guiDeBaiRaNgoai,
+  ghiLuatThuongHieu, khoThiGiac, docTaiLieuThiGiac, docNoiDungThiGiac,
+  guiDeBaiRaNgoai,
   soDiRa } from './kien-truc-thi-giac.js';
 import { nganHangBao, nhapGiaoDichTay, doiChieuNganHang, khopGiaoDich,
   hopThongBao, danhDauDaDoc } from './ngan-hang.js';
@@ -181,7 +182,8 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'hoiTroLyTaiChinh',
   'datHeSoLuong', 'dsHeSoLuong', 'bangLuong', 'chotLuong', 'doiSoatLuong',
   'deXuatThiGiac', 'chuyenBacThiGiac', 'banMoiThiGiac', 'chamThiGiac',
-  'ghiLuatThuongHieu', 'khoThiGiac', 'docTaiLieuThiGiac', 'guiDeBaiRaNgoai',
+  'ghiLuatThuongHieu', 'khoThiGiac', 'docTaiLieuThiGiac', 'docNoiDungThiGiac',
+  'guiDeBaiRaNgoai',
   'soDiRa',
   'deXuatMienGiam', 'duyetMienGiam', 'dsMienGiam',
   'ghiNhacThu', 'lichSuNhacThu', 'denHenChuaTra'];
@@ -307,6 +309,7 @@ async function lam(fn, y, env, db) {
   if (fn === 'ghiLuatThuongHieu') return await ghiLuatThuongHieu(y, env, db, hoSo);
   if (fn === 'khoThiGiac')        return await khoThiGiac(y, env, db, hoSo);
   if (fn === 'docTaiLieuThiGiac') return await docTaiLieuThiGiac(y, env, db, hoSo);
+  if (fn === 'docNoiDungThiGiac') return await docNoiDungThiGiac(y, env, db, hoSo);
   if (fn === 'guiDeBaiRaNgoai')   return await guiDeBaiRaNgoai(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
 

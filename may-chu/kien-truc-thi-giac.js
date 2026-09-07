@@ -119,6 +119,119 @@ function soatTang(tang, chu) {
   return {qua: true, tang, vi: 'Không nhắc tới khái niệm nào ngoài phạm vi ' + tang + '.'};
 }
 
+/* ═══════════════ ĐỌC NỘI DUNG — TRONG MÁY ═══════════════
+
+   Bản đề xuất kiến trúc mới có một module đúng và đáng lấy: đọc nội
+   dung TRƯỚC, rút ra các ý bắt buộc, rồi mới quyết định vẽ kiểu gì.
+   Trước bản này, người đăng phải TỰ chọn loại hình trong mười bốn cái
+   — chỗ nghẽn lớn nhất của cả cổng, và cũng là chỗ chọn sai nhiều nhất.
+
+   ══ NHƯNG NÓ PHẢI CHẠY TRONG MÁY, KHÔNG GỬI RA NGOÀI ══
+
+   Bản đề xuất ấy gửi thẳng nội dung sách cho một mô hình bên ngoài để
+   phân tích. Đó là chỗ nó đụng luật C11 — "không đưa NỘI DUNG kho ra
+   ngoài, chỉ đưa ĐỀ BÀI" — và đụng ở mức nặng nhất: không phải một
+   tấm hình, mà CẢ CHƯƠNG SÁCH đi ra mỗi lượt chạy.
+
+   Việc này không cần một mô hình nào. Cấu trúc lô-gích của một đoạn
+   văn nằm ngay trong dấu hiệu bề mặt của nó: đánh số thì là các BƯỚC,
+   có "trước" và "sau" thì là SO SÁNH, có "mỗi tuần" thì là NHỊP. Đọc
+   dấu hiệu thì đo được, lặp lại được, và không rời khỏi Học viện.
+
+   Máy ĐỀ NGHỊ, người chọn. Không tự áp — vì một đoạn nói "90 ngày" có
+   thể là lộ trình mà cũng có thể là bảng so sánh, và máy không biết
+   người viết định nói cái nào. */
+
+/* Rút các Ý BẮT BUỘC: mỗi ý một dòng hoặc một câu mang một mệnh đề
+   riêng. Đây là danh sách sau này dùng để ĐO tấm vẽ ra có nói đủ
+   không — nên nó phải rút một lần rồi GIỮ, không tính lại mỗi lượt:
+   sửa cách rút thì mọi tấm cũ đổi nghĩa mà không ai biết. */
+export function rutYBatBuoc(chu) {
+  const dong = String(chu || '').split('\n')
+    .map(d => d.replace(/^\s*[·•\-–—*\d.)\]]+\s*/, '').trim())
+    .filter(d => d.length >= 12 && !/^[A-ZÀ-Ỹ\s]{2,20}:/.test(d));
+  /* Dòng dài thì tách tiếp theo câu — một dòng ba câu là ba ý, và
+     gộp ba ý thành một thì phép đo sau này không chỉ ra được thiếu
+     ý nào. */
+  const y = [];
+  dong.forEach(d => {
+    (d.length > 120 ? d.split(/(?<=[.;])\s+/) : [d]).forEach(c => {
+      const t = c.trim();
+      if (t.length >= 12) y.push(t.slice(0, 160));
+    });
+  });
+  return y.slice(0, 12);
+}
+
+/* Dấu hiệu bề mặt → loại hình. Mỗi dòng: [loại hình, biểu thức dò,
+   điểm, vì sao]. Điểm cộng dồn; loại nào cao nhất thì đề nghị trước.
+   `vi` đi kèm để người đọc BIẾT máy đề nghị theo dấu hiệu nào — một
+   đề nghị không nói lý do thì người ta hoặc tin mù hoặc bỏ qua. */
+const DAU_CAU_TRUC = [
+  ['QUY_TRINH',       /(bước\s*\d|→|thứ tự|lần lượt|sau đó|tiếp theo)/gi, 3,
+   'có các BƯỚC nối tiếp'],
+  ['TRUOC_SAU',       /(trước[^.]{0,40}sau|khác gì|đổi từ)/gi, 3,
+   'có cặp TRƯỚC và SAU'],
+  ['NHIP',            /(mỗi (tuần|ngày|tháng)|chu kỳ|vòng|hằng ngày|lặp lại)/gi, 3,
+   'có NHỊP lặp lại'],
+  ['CONG',            /(điều kiện|nghiệm thu|qua chặng|đạt (thì|mới)|cổng)/gi, 3,
+   'nói ĐIỀU KIỆN để đi tiếp'],
+  ['SO_SANH_TANG',    /(chặng \d|tầng \d|gói|so với|khác nhau)/gi, 2,
+   'so sánh nhiều CHẶNG'],
+  ['VAI_TRO',         /(ai làm|vai trò|phần việc của|phụ huynh.*coach|coach.*phụ huynh)/gi, 3,
+   'chia PHẦN VIỆC theo người'],
+  ['BANG_DIEU_KHIEN', /(\d+\s*%|điểm số|theo dõi|chỉ số|đo bằng)/gi, 2,
+   'có SỐ để theo dõi'],
+  ['DANH_SACH_VIEC',  /(làm ngay|hôm nay|việc cần|danh sách|đánh dấu)/gi, 2,
+   'là DANH SÁCH việc'],
+  ['BANDO_HANHTRINH', /(hành trình|lộ trình|đường dài|chặng đường|mốc)/gi, 3,
+   'là một ĐƯỜNG DÀI có mốc'],
+  ['KHUNG',           /(gồm|bao gồm|các phần|cấu trúc|khung)/gi, 2,
+   'liệt kê các PHẦN của một khung'],
+  ['AP_PHICH',        /(chào|giới thiệu|đồng hành cùng|bắt đầu cùng)/gi, 2,
+   'là lời MỜI, cần có người']
+];
+
+export function deNghiLoaiHinh(chu) {
+  const t = String(chu || '');
+  const diem = {}, viDo = {};
+  DAU_CAU_TRUC.forEach(([ma, re, n, vi]) => {
+    const m = t.match(re);
+    if (m && m.length) {
+      diem[ma] = (diem[ma] || 0) + n * Math.min(m.length, 3);
+      viDo[ma] = vi + ' (' + m.length + ' dấu hiệu)';
+    }
+  });
+  /* MỘT CON SỐ: chỉ đề nghị khi nội dung NGẮN và có đúng một con số
+     nổi. Đoạn dài đầy số thì đó là bảng, không phải một con số. */
+  const so = t.match(/\b\d[\d.,]*\b/g) || [];
+  if (t.length < 260 && so.length === 1) {
+    diem.MOT_SO = 6; viDo.MOT_SO = 'ngắn và có ĐÚNG MỘT con số';
+  }
+  if (t.length < 180) { diem.BIA = (diem.BIA || 0) + 4; viDo.BIA = 'rất ngắn — một câu'; }
+
+  const xep = Object.keys(diem).sort((a, b) => diem[b] - diem[a])
+    .slice(0, 3).map(ma => ({loaiHinh: ma, diem: diem[ma], vi: viDo[ma]}));
+  return xep;
+}
+
+/* Cửa cho màn hình gọi TRƯỚC khi đề xuất. Không ghi gì vào sổ — nó
+   chỉ đọc và trả lời. */
+export async function docNoiDungThiGiac(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+  const chu = String((y || {}).noiDung || '').trim();
+  if (chu.length < 20) return {ok: false,
+    error: 'Dưới hai mươi chữ thì chưa đủ để đọc ra cấu trúc.'};
+  const yBatBuoc = rutYBatBuoc(chu);
+  const deNghi = deNghiLoaiHinh(chu);
+  return {ok: true, soY: yBatBuoc.length, yBatBuoc, deNghi,
+    vi: 'Máy ĐỀ NGHỊ, người chọn. Không tự áp: một đoạn nói "90 ngày" có thể ' +
+        'là lộ trình mà cũng có thể là bảng so sánh, và máy không biết người ' +
+        'viết định nói cái nào. Cả lượt đọc này chạy TRONG máy chủ Học viện — ' +
+        'không một câu nội dung nào đi ra ngoài.'};
+}
+
 /* ═══════════════ ĐỀ XUẤT ═══════════════ */
 export async function deXuatThiGiac(y, env, db, hoSo) {
   if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
@@ -206,20 +319,28 @@ export async function deXuatThiGiac(y, env, db, hoSo) {
   ].concat(luuY.length ? ['', 'LƯU Ý CHO NGƯỜI DUYỆT'].concat(
     luuY.map(x => '· ' + x)) : []).join('\n');
 
+  /* Ý BẮT BUỘC rút MỘT LẦN rồi giữ, không tính lại mỗi lượt vẽ. Cùng
+     lý do đã giữ soatTang: sửa cách rút thì mọi tấm cũ đổi nghĩa mà
+     không ai biết, và phép đo "tấm có nói đủ ý không" đang neo vào
+     chính danh sách này. */
+  const yBB = rutYBatBuoc(noiDung);
+
   await db.prepare(
     'INSERT INTO deXuatThiGiac (id,ban,banTruoc,noiDung,tang,nguoiXem,loaiHinh,' +
-    "nhiemVu,boCuc,viTri,deBai,soatTang,trangThai,nguoiDe,deLuc) " +
-    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,'deXuat',?,?)"
+    "nhiemVu,boCuc,viTri,deBai,soatTang,yBatBuoc,trangThai,nguoiDe,deLuc) " +
+    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,'deXuat',?,?)"
   ).bind(id, Number(d.ban || 1), String(d.banTruoc || '') || null,
     noiDung.slice(0, 4000), tang, JSON.stringify(nx), loaiHinh,
     nhiemVu.slice(0, 300), String(d.boCuc || '').slice(0, 200) || null,
-    String(d.viTri || '').slice(0, 200) || null, deBai, st.vi, hoSo.u, luc).run();
+    String(d.viTri || '').slice(0, 200) || null, deBai, st.vi,
+    JSON.stringify(yBB), hoSo.u, luc).run();
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_DEXUAT',
     doiTuong: id, chiTiet: tang + ' · ' + loaiHinh + ' · ' + nhiemVu.slice(0, 80)});
 
   return {ok: true, id, tang, loaiHinh, nhiemVu, trangThai: 'deXuat', deBai,
     soatTang: st.vi, luuY: luuY.length ? luuY : undefined,
+    yBatBuoc: yBB, deNghiLoaiHinh: deNghiLoaiHinh(noiDung),
     vi: 'Đề xuất đã vào sổ ở bậc ĐỀ XUẤT. Máy không đi tiếp một bậc nào ' +
         'nếu chủ hệ chưa bấm.'};
 }
@@ -417,6 +538,12 @@ export async function khoThiGiac(y, env, db, hoSo) {
     nguoiXem: JSON.parse(x.nguoiXem || '[]'),
     boCuc: x.boCuc || undefined, viTri: x.viTri || undefined,
     deBai: x.deBai, soatTang: x.soatTang || undefined,
+    /* Ý BẮT BUỘC phải đi cùng bản ghi tới bộ vẽ, nếu không phép soát ý
+       ở bộ vẽ đọc ra danh sách rỗng và báo "ĐỦ" cho mọi tấm — một phép
+       đo luôn xanh thì không phải phép đo. Chỗ này đã đúng như thế ở
+       lượt chạy thử đầu tiên: cả tấm đủ ý lẫn tấm cố tình thiếu hai
+       khối đều xanh. */
+    yBatBuoc: x.yBatBuoc || undefined,
     diem: x.diem === null ? null : Number(x.diem), bacDiem: x.bacDiem || undefined,
     trangThai: x.trangThai, nguoiDe: x.nguoiDe, deLuc: x.deLuc,
     nguoiDuyet: x.nguoiDuyet || undefined, lyDo: x.lyDo || undefined,

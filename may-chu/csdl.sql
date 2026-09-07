@@ -740,6 +740,12 @@ CREATE TABLE IF NOT EXISTS deXuatThiGiac (
   -- lại: ranh giới Tầng đổi thì đề xuất cũ vẫn phải giải thích được là
   -- nó đã qua cổng nào.
   soatTang    TEXT,
+  -- Ý BẮT BUỘC: danh sách các ý nội dung mà tấm hình PHẢI nói được.
+  -- Rút một lần lúc đề xuất rồi giữ, cùng lý do đã giữ soatTang: sửa
+  -- cách rút thì mọi tấm cũ đổi nghĩa mà không ai biết. Bộ vẽ đối
+  -- chiếu chữ đã đặt lên tấm với chính danh sách này, nên tấm thiếu ý
+  -- bị bắt bằng phép ĐO chứ không bằng mắt người duyệt.
+  yBatBuoc    TEXT,
   -- REAL, không INTEGER. Trọng số là phần trăm nên tổng gần như luôn lẻ:
   -- 89,9 chẳng hạn. Bản đầu để INTEGER và ghi Math.round(tổng), trong khi
   -- BẬC lại tính trên số LẺ — nên sổ hiện "90đ · Sửa lại", mà 90 chính là

@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.27',
+  version: '9.99.28',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -36076,6 +36076,38 @@ var G = window.G || {}; window.G = G;
     CHAN_DUNG:        {ve: veChanDung, kho: 'doc'}
   };
 
+  /* ── ĐỐI CHIẾU TỪNG Ý VỚI CHỮ ĐÃ ĐẶT LÊN TẤM ──
+     Không so nguyên câu: người viết gõ "Phiếu ghi bảy ngày và hướng
+     dẫn ghi" mà tấm đặt "Phiếu ghi bảy ngày — kèm hướng dẫn", hai
+     chuỗi khác nhau nhưng cùng một ý. So nguyên câu thì phép đo đỏ
+     ở mọi tấm đúng, và một phép đo đỏ ở mọi chỗ thì người ta tắt nó.
+
+     So theo TỪ CÓ NGHĨA: mỗi ý lấy các từ từ bốn ký tự trở lên, và
+     đòi quá nửa số từ ấy có mặt trong chữ của tấm. Ngưỡng quá nửa
+     chứ không phải tất cả — một ý luôn bị rút gọn khi lên hình, đó
+     là việc của thiết kế, không phải lỗi. */
+  function soatYTrenTam(x, svg) {
+    var ds = [];
+    try { ds = JSON.parse(x.yBatBuoc || '[]'); } catch (e) { ds = []; }
+    if (!ds.length) return {tong: 0, thieu: []};
+    /* Chữ đã đặt = mọi nội dung trong thẻ <text>. Đọc thẳng chuỗi SVG
+       chứ không dựng DOM: bộ vẽ chạy được cả ở chỗ không có trình
+       duyệt, và phép soát không được đòi thêm điều kiện nào. */
+    var chu = (svg.match(/<text[^>]*>([\s\S]*?)<\/text>/g) || [])
+      .map(function (t) { return t.replace(/<[^>]+>/g, ' '); }).join(' ');
+    chu = ' ' + boDauChu(chu).replace(/[^a-z0-9]+/g, ' ') + ' ';
+    var thieu = [];
+    ds.forEach(function (y) {
+      var tu = boDauChu(y).replace(/[^a-z0-9]+/g, ' ').split(' ')
+        .filter(function (w) { return w.length >= 4; });
+      if (!tu.length) return;
+      var co = tu.filter(function (w) { return chu.indexOf(' ' + w + ' ') >= 0; });
+      if (co.length * 2 <= tu.length)
+        thieu.push({y: String(y).slice(0, 90), co: co.length, tong: tu.length});
+    });
+    return {tong: ds.length, thieu: thieu};
+  }
+
   /* ═══════════ CỬA DUY NHẤT ═══════════ */
   G.veThiGiac = function (x, khoMuon, cheMuon) {
     if (!x || !x.id) return {ok: false,
@@ -36144,7 +36176,25 @@ var G = window.G || {}; window.G = G;
     try { r = b.ve(x, kg, che); }
     catch (e) { return {ok: false, error: 'Bộ vẽ hỏng giữa chừng: ' + e.message}; }
     if (!r.ok) return r;
+
+    /* ══ SOÁT Ý — TẤM VẼ RA CÓ NÓI ĐỦ THỨ NỘI DUNG NÓI KHÔNG ══
+
+       Bản đề xuất kiến trúc mới gọi bước này là "Visual QA", và ở đó
+       nó phải dùng THỊ GIÁC: một mô hình nhìn tấm ảnh, đọc lại chữ,
+       đoán xem có đủ ý chưa. Phải làm thế vì bên ấy để BỘ TẠO ẢNH viết
+       chữ — nên chính hệ cũng không biết trên tấm có chữ gì.
+
+       Ở đây thì biết chính xác, vì CHÍNH MÁY NÀY đặt từng chữ (luật
+       C14). Nên phép soát là một phép ĐO đúng nghĩa: lấy chữ đã đặt,
+       đối chiếu với danh sách ý bắt buộc đã chốt lúc đề xuất. Không
+       nhìn, không đoán, không tốn một lượt sinh ảnh nào.
+
+       Đây là chỗ luật "máy viết chữ" trả lãi: nó không chỉ giữ dấu
+       tiếng Việt, nó còn làm cho việc kiểm nội dung trở thành đo được. */
+    var soat = soatYTrenTam(x, r.svg);
+
     return {ok: true, svg: r.svg, kho: kg.ten, nen: che, w: kg.w, h: kg.h,
+      thieuY: soat.thieu, soY: soat.tong, duY: soat.thieu.length === 0,
       vi: 'Vẽ trong máy này. Không một chữ nào rời khỏi trình duyệt — ' +
           'không có lượt hỏi mạng nào trong cả lượt vẽ.'};
   };
