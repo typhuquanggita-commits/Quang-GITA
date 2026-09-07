@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.26',
+  version: '9.99.27',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -32541,6 +32541,7 @@ var G = window.G || {}; window.G = G;
      Nền SÂU cho ẤN PHẨM — bìa, lưới ô, con số — vì đó là chỗ tấm
      hình đứng một mình và phải tự có sức nặng. */
   function bang(che) {
+    if (che === 'but') return bangBut();
     if (che === 'giay') return bangGiay();
     var s = bangSang();
     if (che !== 'sau') return s;
@@ -32615,6 +32616,87 @@ var G = window.G || {}; window.G = G;
       vien: 'rgba(20,18,28,0.14)',
       giay: true
     };
+  }
+
+  /* ══════════ GIẤY BÚT MÀU ══════════
+
+     Chủ hệ chốt 9.99.27: "tạo ảnh theo ảnh vẽ bằng bút màu."
+
+     Đây là nền DUY NHẤT bộ vẽ trong máy làm được trọn vẹn, và lý do
+     đáng nói: một bức vẽ bút màu KHÔNG cố tỏ ra là ảnh chụp. Nét run,
+     màu chồng lớp, giấy có hạt — đó là thứ hình học dựng được. Còn da
+     người có kết cấu thì không.
+
+     Nên ở nền này KHÔNG có ô chờ, không cần cửa đi ra, không cần một
+     bí mật nào. Tấm dựng xong là xong.
+
+     Màu vẫn lấy từ bảng đã chốt, chỉ hạ bão hoà và nhạt đi — bút màu
+     trên giấy không bao giờ đặc như mực in. */
+  function bangBut() {
+    var s = bangSang();
+    return {
+      nen: '#FBF6EC',                 /* giấy ngà, không phải trắng máy in */
+      nen2: '#FFFDF8',
+      /* Mực trên giấy ngà: nâu-đen như chì, không phải đen tuyệt đối.
+         Đen tuyệt đối cạnh nét bút màu đọc ra là chữ dán vào. */
+      muc: '#2C2418',
+      muc2: 'rgb(88,76,58)',
+      muc3: 'rgb(116,102,80)',
+      gita: s.gita, gitaSang: s.gitaSang, gitaSau: s.gitaSau, gitaInk: s.gitaInk,
+      do: s.do, doInk: s.doInk,
+      vien: 'rgba(44,36,24,0.20)',
+      giay: true,                     /* dùng chung luật bố cục với nền giấy */
+      but: true
+    };
+  }
+
+  /* ── NÉT RUN VÀ HẠT GIẤY ──
+     Hai bộ lọc, và chúng làm hai việc khác nhau. Gộp lại một cái thì
+     mất đường chỉnh riêng, mà hai thứ này phải chỉnh riêng: nét run
+     quá tay thì hình méo; hạt giấy quá tay thì chữ mờ.
+
+     `run` xô lệch đường nét bằng nhiễu — giống tay người không kẻ được
+     một đường thật thẳng. `hat` rải hạt lên cả tấm, nhân xuống, để
+     giấy có bề mặt.
+
+     CHỮ KHÔNG ĐI QUA BỘ LỌC NÀO. Nét run trên chữ tiếng Việt làm dấu
+     thanh dính vào thân chữ, và một tấm đọc không ra thì đẹp cũng vô
+     ích — luật gốc đã xếp DỄ HIỂU trên ĐẸP. */
+  function defBut() {
+    var r = idMoi('run'), t = idMoi('hat');
+    return {run: r, hat: t, defs:
+      '<filter id="' + r + '" x="-12%" y="-12%" width="124%" height="124%">' +
+        '<feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" ' +
+          'seed="7" result="n"/>' +
+        '<feDisplacementMap in="SourceGraphic" in2="n" scale="4.2" ' +
+          'xChannelSelector="R" yChannelSelector="G"/>' +
+      '</filter>' +
+      '<filter id="' + t + '" x="0" y="0" width="100%" height="100%">' +
+        '<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" ' +
+          'seed="11" result="h"/>' +
+        '<feColorMatrix in="h" type="saturate" values="0" result="hx"/>' +
+      '</filter>'};
+  }
+
+  /* Một mảng màu vẽ bằng bút: KHÔNG tô đặc. Bút màu để lại vệt, và
+     chồng hai ba lượt mới đậm. Dựng bằng ba lượt nét chéo lệch nhau —
+     tô đặc rồi thêm hạt lên trên thì ra màu in bị bẩn, không ra bút. */
+  function vetBut(x, y, w, ht, hex, dam, id) {
+    var g = idMoi('vet');
+    var buoc = Math.max(5, Math.round(ht / 9));
+    var net = '';
+    for (var i = -ht; i < w + ht; i += buoc)
+      net += '<line x1="' + (x + i) + '" y1="' + (y + ht) + '" x2="' +
+        (x + i + ht) + '" y2="' + y + '" />';
+    return {defs:
+      '<clipPath id="' + g + '"><rect x="' + x + '" y="' + y + '" width="' + w +
+        '" height="' + ht + '" rx="' + Math.round(Math.min(w, ht) * 0.10) +
+        '"/></clipPath>',
+      ve: '<g clip-path="url(#' + g + ')"' +
+        (id ? ' filter="url(#' + id + ')"' : '') +
+        ' stroke="' + h(hex) + '" stroke-opacity="' + (dam || 0.34).toFixed(2) +
+        '" stroke-width="' + Math.max(2.4, buoc * 0.62).toFixed(1) +
+        '" stroke-linecap="round">' + net + '</g>'};
   }
 
   /* Bảng màu một tấm hình. Gom lại một chỗ để mỗi bộ vẽ không tự đi
@@ -34557,6 +34639,17 @@ var G = window.G || {}; window.G = G;
      RA — không có gì rời khỏi Học viện ở đây. */
   var ANH_NGUOI = {
     trainer: {tep: 'assets/anh/trainer-quang.png', w: 276, h: 536,
+              ten: 'Trương Nhật Quang', vai: 'Mentor định hướng nghề nghiệp'},
+    /* ── BẢN VẼ MÀU, DỰNG TỪ CHÍNH TẤM ẢNH TRÊN ──
+       Chủ hệ chốt 9.99.27: "tạo ảnh vẽ màu sắc nét và tạo dựng từ hình
+       người thật để có 90% nét tương đồng."
+       Dựng bằng tools/ve-tu-anh.py: gộp màu thành mảng rồi kẻ lại biên.
+       Không đoán một điểm ảnh nào — nên nét tương đồng giữ được, và
+       không cần bộ tạo ảnh nào.
+       Vẫn là ẢNH trong kho ảnh, không phải hình vẽ của máy: nó dựng từ
+       một tấm ảnh có người thật đã đồng ý. Nên luật C16 nhận nó, còn
+       một hình vẽ máy tự dựng thì không. */
+    'trainer-ve': {tep: 'assets/anh/trainer-quang-ve.png', w: 276, h: 536,
               ten: 'Trương Nhật Quang', vai: 'Mentor định hướng nghề nghiệp'}
   };
 
@@ -35408,7 +35501,120 @@ var G = window.G || {}; window.G = G;
      tìm lớp ảnh còn thiếu nữa — tấm ấy đi thẳng ra ấn phẩm với một
      hình que ở chỗ đáng lẽ là một người.
      Ô chờ vẽ ra đúng khung, đúng tỷ lệ, và NÓI RA nó đang chờ gì. */
+  /* ══ LỚP NGƯỜI VẼ BẰNG BÚT MÀU ══
+
+     Chủ hệ chốt 9.99.27. Đây là đường DUY NHẤT bộ vẽ trong máy đi trọn
+     được, và nó đi được chính vì bức vẽ bút màu KHÔNG cố tỏ ra là ảnh
+     chụp: nét run, màu chồng lớp, giấy có hạt — hình học dựng được cả
+     ba. Da người có kết cấu thì không.
+
+     Nên ở nền này không có ô chờ, không cần cửa đi ra, không cần một bí
+     mật nào. Và luật C16 không cấm chỗ này: nó cấm hình vẽ ĐỨNG THAY
+     một tấm ảnh, chứ không cấm một bức vẽ được đặt hàng làm bức vẽ.
+
+     Vẽ ba lượt chồng nhau, đúng cách tay người cầm bút:
+       1. mảng màu nền — vệt chéo thưa, nhạt
+       2. thân hình tô màu bút, mềm, có run
+       3. nét viền nâu chì đè lên trên, run mạnh hơn một chút
+     Bỏ lượt nào thì nó ra hình vẽ máy: phẳng, đều, sạch quá. */
+  /* Lấy một sắc theo TÊN trong bảng đã chốt. Gõ thẳng mã màu vào src/
+     là dựng bảng màu thứ hai — và ba mã vàng-cam của bản cũ đã bị cấm
+     hẳn trong kho này vì đúng chuyện đó. Bộ kiểm mục 13 canh, và nó
+     vừa bắt được tôi ở chính hàm dưới đây. */
+  function sacTheo(ten, duPhong) {
+    var d = ((G.BRAND && G.BRAND.mau) || []).filter(function (m) {
+      return m.k === ten; })[0];
+    return (d && d.hex) || duPhong;
+  }
+
+  function canhButMau(x, y, w, ht, k, sac, maHinh) {
+    var f = defBut();
+    var manh = [{defs: f.defs}];
+    var g = idMoi('canh');
+    var ve = '<clipPath id="' + g + '"><rect x="' + x + '" y="' + y + '" width="' +
+      w + '" height="' + ht + '" rx="18"/></clipPath>';
+    ve = '';
+    var defs = f.defs +
+      '<clipPath id="' + g + '"><rect x="' + x + '" y="' + y + '" width="' + w +
+      '" height="' + ht + '" rx="18"/></clipPath>';
+
+    var trong = '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + ht +
+      '" fill="' + h(k.nen2) + '"/>';
+
+    /* 1 · mảng trời và mảng đất, mỗi mảng một lượt vệt chéo */
+    var troi = vetBut(x, y, w, Math.round(ht * 0.62), sac, 0.22, f.run);
+    var dat = vetBut(x, y + Math.round(ht * 0.62), w, Math.round(ht * 0.38),
+      sacTheo('T4 · Lục', k.gita), 0.20, f.run);
+    defs += troi.defs + dat.defs;
+    trong += troi.ve + dat.ve;
+
+    /* Mặt trời — một vòng nét run, không tô. Bút màu hiếm khi tô kín
+       một vòng tròn to; nó khoanh rồi tô thưa bên trong. */
+    var rM = Math.round(w * 0.15);
+    trong += '<g filter="url(#' + f.run + ')" fill="none" stroke="' +
+      h(sacTheo('Vàng GITA', k.gita)) +
+      '" stroke-width="' + Math.max(3, rM * 0.13).toFixed(1) + '" stroke-opacity="0.85" ' +
+      'stroke-linecap="round">' +
+      '<circle cx="' + Math.round(x + w * 0.74) + '" cy="' + Math.round(y + ht * 0.15) +
+        '" r="' + rM + '"/>' +
+      '<circle cx="' + Math.round(x + w * 0.74) + '" cy="' + Math.round(y + ht * 0.15) +
+        '" r="' + Math.round(rM * 0.62) + '" stroke-opacity="0.45"/></g>';
+
+    /* Đường chân đất, vẽ tay — dựng TRƯỚC vì người phải đứng lên nó */
+    var dayDat = Math.round(y + ht * 0.735);
+    trong += '<g filter="url(#' + f.run + ')"><line x1="' + Math.round(x + w * 0.08) +
+      '" y1="' + dayDat + '" x2="' + Math.round(x + w * 0.92) +
+      '" y2="' + dayDat + '" stroke="' + h(k.muc2) +
+      '" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round"/></g>';
+
+    /* ── 2 · NGƯỜI: VẼ TỪNG NGƯỜI, MỖI NGƯỜI MỘT MÀU BÚT ──
+
+       Bản đầu tôi gọi thẳng hình ghép `nha` một lượt. Hai chỗ hỏng, cả
+       hai đều thấy được ngay khi mở ảnh ra:
+
+       · CẮT MẤT CHÂN VÀ MẤT NGƯỜI BÊN TRÁI. veNet co theo CHIỀU CAO
+         (cao/100), mà hình `nha` rộng 96 đơn vị — nên bề ngang thật là
+         0,96 lần chiều cao. Đặt cao 42% của tấm 1080 thì hình rộng 435
+         điểm ảnh trong một cột rộng 410. Neo một khối vào MỘT chiều rồi
+         quên chiều kia: đúng lớp lỗi đã sửa năm lần trong tệp này, nay
+         quay lại ở chỗ thứ sáu.
+       · RA MÀU NAVY ĐẶC. Lượt tô màu tầng, rồi lượt viền mực nâu đè lên
+         ở 55% — hai lượt cộng lại thành một khối tối, không còn ra bút
+         màu. Bút màu ĐẬM DẦN theo lượt, nhưng vẫn phải nhìn thấy màu.
+
+       Nay: ba người vẽ RIÊNG, ba màu khác nhau lấy từ bảng đã chốt —
+       đúng cách một bức vẽ bút màu phân biệt người, và cũng là cách
+       tấm ấy nói "cả nhà" thay vì "một khối ba đầu". */
+    var chan = [
+      {hex: sac,      caoTy: 0.230, xTy: 0.24},   /* người lớn thứ nhất */
+      {hex: sacTheo('T5 · Hổ phách', k.gita), caoTy: 0.160, xTy: 0.50},
+      {hex: sacTheo('T4 · Lục', k.gita), caoTy: 0.220, xTy: 0.76}
+    ];
+    /* Hình `nguoi` rộng 60 đơn vị trên 100 đơn vị cao, và đáy nằm ở +44.
+       Hai con số ấy đọc từ chính đường dẫn, không đoán. */
+    var NG_RONG = 0.60, NG_DAY = 0.44;
+    chan.forEach(function (m) {
+      var cao = Math.round(ht * m.caoTy);
+      /* Chặn theo CẢ HAI chiều: không quá 30% bề ngang cột. */
+      cao = Math.min(cao, Math.round(w * 0.30 / NG_RONG));
+      var cx = Math.round(x + w * m.xTy);
+      var cy = Math.round(dayDat - cao * NG_DAY);
+      /* Nét chì sẫm hơi to hơn, nằm dưới — đó là viền bút, không phải
+         bóng đổ: bóng đổ là ngôn ngữ của màn hình, giấy không có bóng. */
+      trong += '<g filter="url(#' + f.run + ')" opacity="0.55">' +
+        veNet('nguoi', 'nguoi', cx, cy, Math.round(cao * 1.045),
+          doiSang(m.hex, -0.45)) + '</g>';
+      trong += '<g filter="url(#' + f.run + ')" opacity="0.88">' +
+        veNet('nguoi', 'nguoi', cx, cy, cao, m.hex) + '</g>';
+    });
+
+    return {defs: defs, ve: '<g clip-path="url(#' + g + ')">' + trong + '</g>',
+            coAnh: true};
+  }
+
   function lopNguoi(ma, x, y, w, ht, k, sac, xRec) {
+    /* Nền bút màu: máy VẼ lớp người, không chờ ảnh. */
+    if (k.but) return canhButMau(x, y, w, ht, k, sac, ma && NGUOI[ma] ? ma : 'nha');
     var tep = '';
     if (ma && ANH_NGUOI[ma]) tep = ANH_NGUOI[ma].tep;
     else if (ma === 'kho' && xRec && xRec.anhNguoi) tep = String(xRec.anhNguoi);
@@ -35450,8 +35656,17 @@ var G = window.G || {}; window.G = G;
         '" height="' + ht + '" rx="16"/></clipPath>',
       coAnh: true,
       ve: nenQ +
+        /* ── VỪA KHUNG, NEO ĐÁY — KHÔNG CẮT PHÓNG ──
+           `slice` phủ kín khung bằng cách phóng ảnh lên rồi cắt phần
+           thừa. Với cột người 410×1080 (tỷ lệ 0,38) và một ảnh chân
+           dung 276×536 (tỷ lệ 0,51), nó phóng ảnh gần gấp đôi để phủ
+           chiều cao — và cái phủ được là KHUÔN MẶT, chiếm trọn cột.
+           Một tấm áp phích cần thấy cả người, không cần thấy lỗ chân
+           lông. `meet` cho ảnh vừa hẳn vào bề ngang; neo ĐÁY để người
+           đứng trên mép dưới, phần trống dồn lên trên — đúng chỗ bóng
+           thoại đã ngồi sẵn. */
         '<image href="' + h(tep) + '" x="' + x + '" y="' + y + '" width="' + w +
-          '" height="' + ht + '" preserveAspectRatio="xMidYMid slice" clip-path="url(#' +
+          '" height="' + ht + '" preserveAspectRatio="xMidYMax meet" clip-path="url(#' +
           idc + ')"/>'};
   }
 
@@ -35533,6 +35748,21 @@ var G = window.G || {}; window.G = G;
       error: 'Không có ảnh "' + maAnh + '" trong kho ảnh. Đang có: ' +
              Object.keys(ANH_NGUOI).join(', ') + ' · hoặc "kho" để dùng ảnh máy ' +
              'chủ đã ghi vào bản ghi sau khi tấm qua đủ thang duyệt.'};
+    /* Hai dấu, hai nguồn, KHÔNG lẫn nhau:
+         ẢNH:  — một mã trong kho ẢNH CHỤP của Học viện
+         HÌNH: — một hình VẼ trong bộ hình của máy, chỉ dùng ở nền bút màu
+       Lẫn hai dấu này là mở đường cho một hình vẽ đứng thay một tấm
+       ảnh, đúng thứ luật C16 cấm. */
+    var maHinh = docDau(x.noiDung, 'HÌNH');
+    if (maHinh && !NGUOI[maHinh]) return {ok: false,
+      error: 'Không có hình vẽ tên "' + maHinh + '". Đang có: ' +
+             Object.keys(NGUOI).join(', ') + '.'};
+    if (maHinh && che !== 'but') return {ok: false, code: 'HINHSAINEN',
+      error: 'Dấu "HÌNH:" chỉ dùng được ở nền GIẤY BÚT MÀU. Trên nền ảnh chụp, ' +
+             'một hình vẽ đứng thay chỗ người là đúng thứ luật C16 cấm: tấm ấy ' +
+             'TRÔNG NHƯ ĐÃ XONG nên không ai đi tìm lớp người còn thiếu nữa. ' +
+             'Vẽ tấm này ở nền "but", hoặc bỏ dấu HÌNH và đặt ảnh thật.'};
+
     var ben = (docDau(x.noiDung, 'BÊN') || 'trái').toLowerCase();
     var traiLaNguoi = ben.indexOf('ph') !== 0;
 
@@ -35547,7 +35777,7 @@ var G = window.G || {}; window.G = G;
     var manh = [nen, bong, cs];
     var sChinh = sac[0];
 
-    var ln = lopNguoi(maAnh, xNguoi, 0, rongNguoi, kg.h, k, sChinh.hex, x);
+    var ln = lopNguoi(maHinh || maAnh, xNguoi, 0, rongNguoi, kg.h, k, sChinh.hex, x);
     manh.push(ln);
     var ve = ln.ve;
 
@@ -35607,13 +35837,38 @@ var G = window.G || {}; window.G = G;
        và bán kính rHH nên đáy nó ở rHH*2.5 — tên chui vào nửa dưới huy
        hiệu. Vẽ ra mới thấy: "HỖ TRỢ" bị cắt ngang. Nay mọi mốc tính từ
        ĐÁY huy hiệu, và đáy ấy có tên riêng để không ai cộng nhầm nữa. */
+    /* ── TÊN Ô PHẢI VỪA Ô, VÀ VỪA Ở CÙNG MỘT CỠ ──
+       Bản trước đặt tên ô bằng MỘT thẻ <text> căn giữa, không đo, không
+       ngắt dòng. Tên ngắn như "ĐỌC HIỂU" thì lọt, nên nó chạy qua mấy
+       bản mà không ai thấy. Tấm "cả nhà cùng bắt đầu" có tên dài —
+       "PHIẾU GHI BẢY NGÀY", "CỔNG NGHIỆM THU" — và cả năm tên tràn ra
+       ngoài ô, đè lên ô bên cạnh.
+       Bộ kiểm vẫn XANH suốt, vì bản mẫu của nó cũng dùng tên ngắn. Phép
+       đo có thật và đúng; chỗ hổng nằm ở BẢN MẪU quá dễ. Đã đổi bản mẫu
+       sang tên dài cùng lượt sửa này.
+       Tìm MỘT cỡ chữ vừa cho MỌI ô, không co riêng từng ô: mỗi ô một cỡ
+       thì hàng ô đọc ra lồi lõm, mà lồi lõm ở đây không mang tin gì. */
+    var rongTen = rongO - coMoO * 1.0;
+    var dongTen;
+    for (;;) {
+      dongTen = o.map(function (m) {
+        return catDong(String(m.ten).toUpperCase(),
+          '800 ' + coTenO + 'px ' + CHU_THAN, rongTen); });
+      var quaDai = dongTen.filter(function (d) { return d.length > 2; }).length;
+      if (!quaDai || coTenO <= 11) break;
+      coTenO -= 1;
+    }
+    var soDongTen = Math.max.apply(null, dongTen.map(function (d) {
+      return d.length; }));
+
     var oDem = Math.round(coTenO * 0.75);       /* chừa mép trên trong ô */
     var oDayHH = oDem + rHH * 2.5;              /* đáy huy hiệu, kể từ đỉnh ô */
+    var caoTen = coTenO * (1.30 + (soDongTen - 1) * 1.15);
     var caoO = 0;
     var dongO = o.map(function (m) {
       var d = m.mo ? catDong(m.mo, '500 ' + coMoO + 'px ' + CHU_THAN,
         rongO - coMoO * 1.3) : [];
-      caoO = Math.max(caoO, oDayHH + coTenO * 1.30 + d.length * coMoO * 1.30 +
+      caoO = Math.max(caoO, oDayHH + caoTen + d.length * coMoO * 1.30 +
         coTenO * 0.85);
       return d;
     });
@@ -35697,14 +35952,15 @@ var G = window.G || {}; window.G = G;
       var hh = huyHieu(Math.round(ox + wO / 2), Math.round(oy + oDem + rHH * 1.5),
         rHH, s.hex, chonHinh(m.ten, i), bong.id, k);
       manh.push(hh); ve += hh.ve;
-      ve += '<text x="' + Math.round(ox + wO / 2) + '" y="' +
-        Math.round(oy + oDayHH + coTenO * 1.05) + '" text-anchor="middle" ' +
-        'font-family="' + h(CHU_THAN) + '" font-size="' + coTenO +
-        '" font-weight="800" fill="' + h(k.muc) + '">' +
-        h(String(m.ten).toUpperCase()) + '</text>';
+      dongTen[i].forEach(function (d, j) {
+        ve += '<text x="' + Math.round(ox + wO / 2) + '" y="' +
+          Math.round(oy + oDayHH + coTenO * (1.05 + j * 1.15)) +
+          '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
+          coTenO + '" font-weight="800" fill="' + h(k.muc) + '">' + h(d) + '</text>';
+      });
       dongO[i].forEach(function (d, j) {
         ve += '<text x="' + Math.round(ox + wO / 2) + '" y="' +
-          Math.round(oy + oDayHH + coTenO * 1.30 + coMoO * (1.05 + j * 1.30)) +
+          Math.round(oy + oDayHH + caoTen + coMoO * (1.05 + j * 1.30)) +
           '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' +
           coMoO + '" font-weight="500" fill="' + h(k.muc2) + '">' + h(d) + '</text>';
       });
@@ -35883,7 +36139,7 @@ var G = window.G || {}; window.G = G;
        Nền đêm sâu vẫn gọi được — nó là nền của WEB APP, cho hình nhúng
        thẳng vào giao diện. Nhưng một tấm áp phích đứng một mình là ẤN
        PHẨM, và ấn phẩm đã có dòng riêng trong sổ. */
-    var che = (cheMuon === 'sau' || cheMuon === 'sang') ? cheMuon : 'giay';
+    var che = ['sau', 'sang', 'but'].indexOf(cheMuon) >= 0 ? cheMuon : 'giay';
     var r;
     try { r = b.ve(x, kg, che); }
     catch (e) { return {ok: false, error: 'Bộ vẽ hỏng giữa chừng: ' + e.message}; }
@@ -35906,7 +36162,8 @@ var G = window.G || {}; window.G = G;
       sac: sacTang(),
       nen: [{ma: 'giay', ten: 'Nền giấy — ấn phẩm (mặc định)'},
             {ma: 'sau',  ten: 'Nền đêm sâu — nhúng vào web app'},
-            {ma: 'sang', ten: 'Nền sáng theo giao diện đang chạy'}],
+            {ma: 'sang', ten: 'Nền sáng theo giao diện đang chạy'},
+            {ma: 'but',  ten: 'Giấy bút màu — vẽ tay, không cần cửa đi ra'}],
       kho: Object.keys(KHO_GIAY).map(function (m) {
         return {ma: m, ten: KHO_GIAY[m].ten}; })};
   };

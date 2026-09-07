@@ -98,6 +98,14 @@ function dungR2() {
     GITA_KHOA_THU: 'khoa-thu-demo',
     GITA_KHOA_NGANHANG: 'khoa-ngan-hang-demo',
     GITA_THU_DOANH_THU: 'chuhe@vidu.vn',
+    /* Cửa đi ra bộ tạo ảnh: TẮT SẴN, đúng như máy chủ thật — không nạp
+       thì cổng trả về CUADONG. Bật bằng CUA_VE=1 khi cần xem đề bài đi
+       ra trông thế nào. Giá trị là giả và bản demo KHÔNG gọi ra ngoài:
+       guiDeBaiRaNgoai dựng đề bài rồi ghi sổ, không mở một lượt mạng
+       nào. Nên đây là chỗ đọc đề bài, không phải chỗ sinh ảnh. */
+    ...(process.env.CUA_VE ? {
+      GITA_KHOA_VE: 'khoa-ve-demo-khong-dung-that',
+      GITA_CONG_VE: 'demo://doc-de-bai-tai-cho'} : {}),
     GITA_KHOA_KHO: JSON.stringify(khoaKho || {
       nen: 'k', nghe: 'k', 'nghe-cao': 'k',
       tang1: 'k', tang2: 'k', tang3: 'k', tang4: 'k', tang5: 'k'})

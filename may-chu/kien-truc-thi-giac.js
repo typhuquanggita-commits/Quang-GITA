@@ -246,6 +246,22 @@ export async function chuyenBacThiGiac(y, env, db, hoSo) {
     return {ok: false, code: 'CANCHUHE',
       error: 'Chỉ Super Admin duyệt và phát hành. Máy đề xuất, chủ hệ quyết.'};
 
+  /* ── C16: TẤM CÓ NGƯỜI KHÔNG PHÁT HÀNH VỚI Ô CHỜ ──
+     Chủ hệ chốt 9.99.27: với loại hình có người, ảnh chụp thật là đường
+     DUY NHẤT — không có lối tạm dùng hình vẽ phẳng.
+     Chặn ở bậc PHÁT HÀNH chứ không ở bậc duyệt: duyệt là duyệt phần
+     chữ, phần bố cục, phần đúng Tầng — những thứ đã xong và đáng duyệt
+     trước khi đi đặt ảnh. Chặn sớm hơn thì cả tấm đứng lại chờ một thứ
+     chưa ai bắt đầu làm. */
+  if (den === 'phatHanh' && CAN_NGUOI.indexOf(x.loaiHinh) >= 0 && !x.anhNguoi)
+    return {ok: false, code: 'THIEULOPNGUOI',
+      error: 'Tấm "' + x.loaiHinh + '" chưa có LỚP NGƯỜI, nên chưa phát hành ' +
+             'được. Luật C16: hình vẽ phẳng không được đứng thay một người, và ' +
+             'máy cũng không phát hành một tấm còn ô chờ — một tấm có hình que ' +
+             'ở chỗ đáng lẽ là người thì TRÔNG NHƯ ĐÃ XONG, nên không ai đi tìm ' +
+             'lớp còn thiếu nữa. Gửi đề bài ra bộ tạo ảnh, hoặc nạp một ảnh đã ' +
+             'có văn bản đồng ý vào kho ảnh, rồi phát hành.'};
+
   /* ── TỪ CHỐI PHẢI NÓI VÌ SAO ──
      Một lượt từ chối không lý do thì lần sau máy đề xuất y hệt, và
      người từ chối phải nói lại cùng một câu tới lần thứ mười. */
@@ -595,26 +611,53 @@ const KIEU_RA = {
    Luật C13 cho phép người do AI biên soạn và ĐÒI nói rõ điều ấy: không
    nói thì bộ tạo ảnh lấy nét của người nó thấy nhiều nhất, mà người nó
    thấy nhiều nhất là người nổi tiếng. */
-const NGUOI_RA = [
-  'NGƯỜI TRONG ẢNH:',
-  '· Do AI biên soạn hoàn toàn. KHÔNG dựng theo bất kỳ người có thật ' +
-    'nào, không giống một người nổi tiếng nào. Đây là điều kiện bắt ' +
-    'buộc, không phải một lời khuyên.',
-  '· Người trưởng thành, người Việt, 25–40 tuổi. Không trẻ em, không ' +
-    'thiếu niên — không ngoại lệ.',
-  '· Trang phục lịch sự, chỉnh tề, tay áo dài. Không hở, không bó sát, ' +
-    'không đồ hiệu nhận ra được.',
-  '· Nét mặt: bình thản, ấm, mắt nhìn thẳng người xem hoặc nhìn hơi ' +
-    'chếch. Cười khép miệng. Không cười hở lợi, không tạo dáng.',
-  '· Dáng: ngồi hoặc đứng làm việc thật — không khoanh tay, không giơ ' +
-    'ngón cái, không chỉ vào chỗ trống.',
-  '· Ảnh chụp thật: da có kết cấu, tóc có sợi rời, ánh sáng bên mềm, ' +
-    'nền xoá phông nhẹ. KHÔNG làm mịn da tới mức nhựa.',
-  '· TUYỆT ĐỐI KHÔNG CHỮ trong ảnh, không dấu hiệu thương hiệu nào, ' +
-    'không bảng, không biển, không màn hình có chữ. Mọi chữ do hệ đặt ' +
-    'lên sau; chữ nướng sẵn trong ảnh thì sai dấu tiếng Việt và không ' +
-    'gỡ ra được.'
-].join('\n');
+/* Đề bài phải nói MẤY NGƯỜI, và điều đó đọc từ NGƯỜI XEM chứ không
+   đoán. Bản đầu tả cứng "một người trưởng thành" cho mọi tấm — nên một
+   áp phích cho CẢ NHÀ vẫn xin về ảnh một người ngồi một mình, tức là
+   tấm nói về gia đình mà trong khung không có gia đình nào.
+
+   Ai trong khung là một quyết định biên tập, không phải một chi tiết:
+   người xem thấy mình trong ảnh thì mới đọc tiếp. */
+function nguoiRa(nx) {
+  const caNha = nx.indexOf('GIADINH') >= 0;
+  return [
+    'NGƯỜI TRONG ẢNH:',
+    '· Do AI biên soạn hoàn toàn. KHÔNG dựng theo bất kỳ người có thật ' +
+      'nào, không giống một người nổi tiếng nào. Đây là điều kiện bắt ' +
+      'buộc, không phải một lời khuyên.',
+    caNha
+      ? '· HAI người trưởng thành người Việt, 35–45 tuổi — một bố một mẹ ' +
+        'ngồi cạnh nhau, cùng hướng về một chỗ. Vai gần nhau, không ôm, ' +
+        'không tạo dáng chụp ảnh gia đình.'
+      : '· MỘT người trưởng thành, người Việt, 25–40 tuổi.',
+    /* Vì sao một tấm về gia đình lại KHÔNG có đứa trẻ trong khung —
+       nói thẳng trong đề bài, để bên nhận không tự thêm vào. */
+    '· KHÔNG trẻ em, KHÔNG thiếu niên trong khung — luật C13, không ' +
+      'ngoại lệ. Một gia đình trong ảnh của Học viện là BỐ MẸ: đứa trẻ ' +
+      'là người tấm hình nói VỀ, không phải người đứng trong khung. ' +
+      'Ảnh trẻ em phải có văn bản đồng ý của cha mẹ và của chính trẻ từ ' +
+      'bảy tuổi, mà một khuôn mặt sinh ra thì không có ai để xin phép.',
+    '· Trang phục lịch sự, chỉnh tề, tay áo dài. Không hở, không bó sát, ' +
+      'không đồ hiệu nhận ra được.',
+    caNha
+      ? '· Nét mặt: bình thản, ấm, hơi lo nhưng đã yên tâm — đây là hai ' +
+        'người vừa quyết một việc cho con. Cười khép miệng. Không cười ' +
+        'hở lợi, không tạo dáng.'
+      : '· Nét mặt: bình thản, ấm, mắt nhìn thẳng người xem hoặc nhìn hơi ' +
+        'chếch. Cười khép miệng. Không cười hở lợi, không tạo dáng.',
+    caNha
+      ? '· Dáng: ngồi ở bàn nhà mình, trước mặt là giấy tờ đã mở. Đang ' +
+        'ĐỌC, không đang chụp ảnh. Không khoanh tay, không giơ ngón cái.'
+      : '· Dáng: ngồi hoặc đứng làm việc thật — không khoanh tay, không ' +
+        'giơ ngón cái, không chỉ vào chỗ trống.',
+    '· Ảnh chụp thật: da có kết cấu, tóc có sợi rời, ánh sáng bên mềm, ' +
+      'nền xoá phông nhẹ. KHÔNG làm mịn da tới mức nhựa.',
+    '· TUYỆT ĐỐI KHÔNG CHỮ trong ảnh, không dấu hiệu thương hiệu nào, ' +
+      'không bảng, không biển, không màn hình có chữ. Mọi chữ do hệ đặt ' +
+      'lên sau; chữ nướng sẵn trong ảnh thì sai dấu tiếng Việt và không ' +
+      'gỡ ra được.'
+  ].join('\n');
+}
 
 /* ══ CỬA ĐI RA NGOÀI ══
 
@@ -709,7 +752,7 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
     canNguoi ? null : '',
     /* null = bỏ hẳn dòng; '' = một dòng trống ngăn đoạn. Hai thứ khác
        nhau, nên bộ lọc chỉ được bỏ null. */
-    canNguoi ? NGUOI_RA : null,
+    canNguoi ? nguoiRa(nx) : null,
     canNguoi ? '' : null,
     'CẤM — mỗi dòng là một lần đã hỏng thật:',
     '· Không chân dung một người có thật, không khuôn mặt giống người ' +

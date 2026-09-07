@@ -10396,11 +10396,17 @@ const { chromium } = require(PW);
           'BĂNG: Học tập – Phát triển – Thành công\n' +
           'THOẠI: Tôi là trợ lý AI của GITA. Rất vui được đồng hành cùng bạn!\n' +
           'KÝ: Bạn cứ hỏi, tôi luôn ở đây.\n' +
-          'Ô | Đọc hiểu | Toàn bộ hệ thống Web App GITA 365\n' +
-          'Ô | Tư vấn | Cá nhân hoá theo nhu cầu của bạn\n' +
-          'Ô | Hỗ trợ | Lên kế hoạch học tập và rèn luyện\n' +
-          'Ô | Giải đáp | Mọi thắc mắc nhanh chóng, chính xác\n' +
-          'Ô | Tối ưu | Tiết kiệm thời gian, hiệu quả tối đa\n' +
+          /* TÊN Ô CỐ Ý DÀI. Bản mẫu cũ dùng tên ngắn — "Đọc hiểu", "Tư
+             vấn" — nên phép đo chưa bao giờ thấy tên ô tràn ô, dù nó
+             tràn thật: tấm "cả nhà cùng bắt đầu" có năm tên dài và cả
+             năm đè lên ô bên cạnh, trong khi bộ kiểm vẫn xanh. Phép đo
+             đúng, bản mẫu quá dễ. Một bản mẫu dễ làm cả phép đo thành
+             đồ trang trí. */
+          'Ô | Bộ test đầu vào | Cho cả học viên lẫn phụ huynh\n' +
+          'Ô | Buổi tiếp nhận | Bốn mươi lăm tới sáu mươi phút\n' +
+          'Ô | Phiếu ghi bảy ngày | Kèm hướng dẫn ghi từng ngày\n' +
+          'Ô | Buổi đọc hồ sơ | Bốn mươi lăm phút, có mặt cả nhà\n' +
+          'Ô | Cổng nghiệm thu ngày bảy | Một quyết định rõ cho chặng sau\n' +
           'Ô | Cùng bạn | Kiến tạo phiên bản tốt nhất của chính mình',
         CHAN_DUNG:
           'Coach đồng hành\n\nNgười đi cùng nhà mình suốt chín mươi ngày, đọc ' +
