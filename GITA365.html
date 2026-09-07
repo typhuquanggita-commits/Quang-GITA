@@ -2124,7 +2124,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.19',
+  version: '9.99.20',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -34870,7 +34870,8 @@ var G = window.G || {}; window.G = G;
         '</linearGradient>',
       ve:
         '<g' + (o.bong ? ' filter="url(#' + o.bong + ')"' : '') + '>' +
-          '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + ht +
+          '<rect class="gita-tam" x="' + x + '" y="' + y + '" width="' + w +
+            '" height="' + ht +
             '" rx="' + r + '" fill="url(#' + g + ')" stroke="' + h(sac) +
             '" stroke-opacity="' + (mo ? '0.42' : (k.giay ? '0.55' : '0.22')) +
             '" stroke-width="' + (k.giay ? '1.5' : '1') + '"/>' +
@@ -36018,6 +36019,19 @@ var G = window.G || {}; window.G = G;
      một mình (tiêu đề phụ, nhãn cột) — không dùng cho đoạn văn dài,
      vì vệt quang cắt qua chỗ ngắt dòng thì trông như bôi bẩn. */
   function veDongQuang(chu, x, y, o) {
+    /* ── CO CHO VỪA, KHÔNG VẼ TRÀN ──
+       Hàm này vẽ MỘT dòng, không ngắt dòng — nên nếu chỗ chứa hẹp
+       hơn câu thì nó cứ vẽ, và chữ chạy thẳng ra khỏi thẻ sang cột
+       bên cạnh. Phép đo "chữ trong chính thẻ của nó" bắt đúng chỗ
+       này, sau khi ba phép đo trước đều trượt.
+       Vệt quang không ngắt dòng được cho đẹp, nên cách đúng là CO cỡ
+       chữ tới khi vừa. Có sàn: dưới sàn thì thà cắt chữ còn hơn để
+       một dòng bé tí không ai đọc. */
+    if (o.rongToiDa) {
+      while (o.co > 11 &&
+             doRong(boQuang(chu), (o.dam || 700) + ' ' + o.co + 'px ' + o.chu) >
+             o.rongToiDa) o.co -= 1;
+    }
     var manh = tachQuang(chu), dx = 0, ra = '', font = (o.dam || 700) + ' ' + o.co + 'px ' + o.chu;
     var tong = doRong(boQuang(chu), font);
     var x0 = o.can === 'middle' ? x - tong / 2 : x;
@@ -36142,11 +36156,36 @@ var G = window.G || {}; window.G = G;
         {co: coDau, chu: CHU_THAN, dam: 800, mau: mucTren(mau),
          rong: rongCot - 32, gian: 1.2, can: 'middle'}).svg;
 
-      var yy = dinh + caoChip + 16;
+      var yy = dinh + caoChip + 14;
+
+      /* ── MỘT CẢNH NÉT CHO MỖI BÊN ──
+         Tấm mẫu chủ hệ gửi đặt một hình vẽ ở đầu mỗi cột: bên trái
+         một người rối, bên phải một người cầm bản đồ. Hình ấy không
+         trang trí — nó nói KẾT LUẬN của cột trước khi người đọc kịp
+         đọc danh sách, và danh sách chỉ đi chứng minh lại.
+         Người viết chọn bằng "HÌNH: ma", không chọn thì đoán theo tên
+         cột; bên trái mặc định là người rối, bên phải là người leo. */
+      var maH = docDau(x.noiDung, 'HÌNH' + (i === 0 ? '1' : '2')) ||
+        chonNguoi(c.ten + ' ' + c.phu, i === 0 ? 6 : 5);
+      if (i === 0 && !docDau(x.noiDung, 'HÌNH1') &&
+          !/\b(?:roi|be tac|cam tinh|lung tung)\b/.test(boDauChu(c.ten + ' ' + c.phu)))
+        maH = 'roi';
+      if (i === 1 && !docDau(x.noiDung, 'HÌNH2') &&
+          !/\b(?:lo trinh|ban do|dong hanh|gia dinh)\b/.test(boDauChu(c.ten + ' ' + c.phu)))
+        maH = 'leo';
+      var caoH = Math.round(kg.h * 0.115);
+      ve += '<rect x="' + (xc + Math.round(rongCot * 0.14)) + '" y="' + Math.round(yy) +
+        '" width="' + Math.round(rongCot * 0.72) + '" height="' + Math.round(caoH * 1.16) +
+        '" rx="14" fill="' + h(mau) + '" fill-opacity="' + (k.sau ? '0.14' : '0.09') + '"/>';
+      ve += veNet('nguoi', maH, xc + Math.round(rongCot / 2),
+        Math.round(yy + caoH * 0.58), caoH, mau, 3.6);
+      yy += caoH * 1.16 + 14;
+
       if (c.phu) {
         var coPhu2 = Math.round(kg.w * 0.021);
         ve += veDongQuang(c.phu, xc + Math.round(rongCot / 2), yy + coPhu2 * 0.85,
-          {co: coPhu2, chu: CHU_THAN, dam: 700, mau: k.muc, can: 'middle'}).svg;
+          {co: coPhu2, chu: CHU_THAN, dam: 700, mau: k.muc, can: 'middle',
+           rongToiDa: rongCot - 28}).svg;
         yy += coPhu2 * 2.1;
       }
 
@@ -36191,6 +36230,120 @@ var G = window.G || {}; window.G = G;
       nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
       h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : '') + ve +
       dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030)), g.defs)};
+  }
+
+  /* ═══════════════════════════════════════════════════════════════
+     HÌNH NGƯỜI VÀ BỐI CẢNH — VẼ BẰNG NÉT
+
+     ══ TÔI ĐÃ TỰ GIỚI HẠN SAI ══
+     Bốn bản liền tôi nói "máy không vẽ được người thật". Đúng, nếu
+     "thật" nghĩa là ảnh chụp. Nhưng những tấm mẫu chủ hệ gửi KHÔNG
+     dùng ảnh chụp — chúng dùng HÌNH VẼ NÉT: một người ngồi bàn, hai
+     người đối thoại, một người đi qua cầu. Nét thì vẽ được, và nét
+     mới là thứ hợp với một tấm thông tin: ảnh chụp kéo mắt về khuôn
+     mặt, nét để mắt ở lại với nội dung.
+
+     ══ VÀ NÉT TRÁNH ĐƯỢC ĐÚNG THỨ THƯƠNG HIỆU CẤM ══
+     BRAND.camKy: "Không dùng ảnh trẻ em khi chưa có văn bản đồng ý
+     của cha mẹ và của chính trẻ từ 7 tuổi." Hình nét KHÔNG CÓ MẶT,
+     không có ai để nhận ra — nên nó không chạm vào luật ấy, mà vẫn
+     nói được "đây là một đứa trẻ, đây là cha mẹ".
+     BRAND.dungO ghi "Bài đại sứ: ảnh nền không có hình người". Dòng
+     ấy nói về ẢNH NỀN của BÀI ĐẠI SỨ — một tấm thông tin có hình vẽ
+     nét minh hoạ vai không phải thứ ấy. Tôi đọc thế và nói ra, để
+     chủ hệ bác được nếu tôi đọc sai.
+
+     ══ LUẬT VẼ NGƯỜI Ở ĐÂY ══
+     Không mặt. Không tay chi tiết. Không quần áo có kiểu. Một hình
+     người ở đây nói VAI — phụ huynh, học viên, người làm nghề — chứ
+     không nói một con người cụ thể. Thêm một nét mặt là bắt đầu nói
+     về một người, và lúc ấy mọi câu hỏi về đồng ý hình ảnh quay lại.
+     ═══════════════════════════════════════════════════════════════ */
+  var NGUOI = {
+    /* Người đứng — vai chung */
+    dung: '<circle cx="0" cy="-30" r="10"/>' +
+          '<path d="M0 -19 V6 M-15 -8 L0 -13 L15 -8 M0 6 L-10 30 M0 6 L10 30"/>',
+    /* Người lắng nghe — nghiêng người, một tay lên cằm. Đây là hình
+       của NGƯỜI LÀM NGHỀ trong hệ này: việc đầu tiên là nghe. */
+    nghe: '<circle cx="-3" cy="-30" r="10"/>' +
+          '<path d="M-2 -19 L1 6 M-16 -6 L-3 -12 M4 -12 L11 -20 L7 -24 ' +
+          'M1 6 L-9 29 M1 6 L11 28"/>',
+    /* Hai người đối thoại — một nói, một nghe */
+    hai:  '<circle cx="-16" cy="-26" r="8.5"/>' +
+          '<path d="M-16 -16 V6 M-27 -7 L-16 -11 L-6 -6 M-16 6 L-24 27 M-16 6 L-8 27"/>' +
+          '<circle cx="16" cy="-26" r="8.5"/>' +
+          '<path d="M16 -16 V6 M6 -6 L16 -11 L27 -7 M16 6 L8 27 M16 6 L24 27"/>' +
+          '<path d="M-6 -40 h13 a3 3 0 0 1 3 3 v7 a3 3 0 0 1 -3 3 h-6 l-4 4 v-4 ' +
+          'h-3 a3 3 0 0 1 -3 -3 v-7 a3 3 0 0 1 3 -3 z"/>',
+    /* Cả nhà — hai người lớn, một trẻ ở giữa. Trẻ đứng GIỮA, không
+       đứng trước: hệ này nói nhà đi cùng nhau, không nói người lớn
+       đẩy đứa trẻ đi trước. */
+    nha:  '<circle cx="-19" cy="-25" r="8"/>' +
+          '<path d="M-19 -16 V4 M-28 -8 L-19 -11 L-11 -6 M-19 4 L-26 26 M-19 4 L-12 26"/>' +
+          '<circle cx="19" cy="-25" r="8"/>' +
+          '<path d="M19 -16 V4 M11 -6 L19 -11 L28 -8 M19 4 L12 26 M19 4 L26 26"/>' +
+          '<circle cx="0" cy="-8" r="6.5"/>' +
+          '<path d="M0 -1 V13 M-8 4 L0 2 L8 4 M0 13 L-6 27 M0 13 L6 27"/>',
+    /* Người ngồi bàn — bối cảnh làm việc */
+    ban:  '<circle cx="-6" cy="-28" r="9"/>' +
+          '<path d="M-6 -18 V0 M-17 -8 L-6 -13 L6 -6"/>' +
+          '<path d="M-30 4 H30 M-24 4 V24 M24 4 V24"/>' +
+          '<path d="M4 -6 h16 v10 h-16 z"/>',
+    /* Người leo bậc tới lá cờ — hành trình có bậc, không phải một cú nhảy */
+    leo:  '<path d="M-30 26 h12 v-9 h12 v-9 h12 v-9 h12"/>' +
+          '<circle cx="4" cy="-20" r="8"/>' +
+          '<path d="M4 -11 V4 M-5 -3 L4 -7 L13 -12 M4 4 L-3 17 M4 4 L12 12"/>' +
+          '<path d="M26 -3 V-30 M26 -30 l14 5 l-14 5"/>',
+    /* Người cầm bản đồ — có phương hướng */
+    bando:'<circle cx="0" cy="-30" r="9.5"/>' +
+          '<path d="M0 -20 V6 M0 6 L-9 29 M0 6 L9 29"/>' +
+          '<path d="M-17 -14 L-2 -18 L14 -13 L14 2 L-2 -3 L-17 1 Z M-2 -18 V-3"/>',
+    /* Người rối — một cuộn chỉ rối trên đầu. Không có mặt buồn, vì
+       một nét mặt là bắt đầu nói về một người cụ thể. */
+    roi:  '<circle cx="0" cy="-24" r="9.5"/>' +
+          '<path d="M0 -14 V8 M-14 -2 L0 -7 L14 -2 M0 8 L-9 30 M0 8 L9 30"/>' +
+          '<path d="M-11 -40 c6 -8 16 -3 10 3 c-6 6 -16 1 -8 -6 c8 -7 18 4 9 8"/>'
+  };
+  var CANH = {
+    cay:  '<path d="M0 26 V4 M0 10 c-12 0 -16 -10 -16 -16 c10 0 16 6 16 16 z ' +
+          'M0 6 c12 0 17 -11 17 -18 c-11 0 -17 7 -17 18 z"/>',
+    sach: '<path d="M-20 26 h40 v-8 h-40 z M-17 18 h34 v-8 h-34 z M-14 10 h28 v-8 h-28 z"/>',
+    nui:  '<path d="M-32 22 L-12 -12 L-2 4 L10 -20 L32 22 Z"/>',
+    bien: '<path d="M-2 28 V-16 M-2 -16 h26 l7 8 l-7 8 h-26 M-2 0 h-22 l-7 8 l7 8 h22"/>',
+    cau:  '<path d="M-34 20 h10 M24 20 h10 M-24 20 C-24 -6 24 -6 24 20 ' +
+          'M-24 20 V10 M-12 20 V4 M0 20 V0 M12 20 V4 M24 20 V10"/>'
+  };
+
+  /* Vẽ một hình nét. Hình người trong hộp 100 đơn vị; `cao` là chiều
+     cao thật trên tấm. Nét dày theo cỡ, để hình nhỏ không thành một
+     vệt mờ và hình lớn không thành một khối đen. */
+  function veNet(bo, ma, cx, cy, cao, mau, dam) {
+    var t = (bo === 'nguoi' ? NGUOI : CANH)[ma];
+    if (!t) return '';
+    var ty = cao / 100;
+    return '<g transform="translate(' + cx + ',' + cy + ') scale(' + ty.toFixed(4) +
+      ')" fill="none" stroke="' + h(mau) + '" stroke-width="' +
+      ((dam || 3.4) / ty * (cao / 100)).toFixed(2) + '" stroke-linecap="round" ' +
+      'stroke-linejoin="round" class="gita-net">' + t + '</g>';
+  }
+
+  /* Chọn hình người theo nghĩa của tên vai, cùng luật với biểu tượng:
+     khớp theo BIÊN TỪ, không khớp giữa từ. */
+  var TU_KHOA_NGUOI = [
+    ['nghe',  'coach|nguoi lam nghe|tu van|lang nghe|chuyen gia'],
+    ['nha',   'gia dinh|ca nha|phu huynh|cha me|bo me'],
+    ['hai',   'doi thoai|trao doi|hoi dap|ket noi|dong hanh'],
+    ['ban',   'hoc vien|hoc sinh|lam bai|hoc tap|ghi chep'],
+    ['leo',   'but pha|vuot|tien bo|nang cap|thanh cong|muc tieu'],
+    ['bando', 'lo trinh|chien luoc|dinh huong|ban do|phuong huong'],
+    ['roi',   'roi|be tac|khong biet|mat phuong huong|cam tinh|lung tung']
+  ];
+  function chonNguoi(ten, i) {
+    var t = boDauChu(ten);
+    for (var j = 0; j < TU_KHOA_NGUOI.length; j++)
+      if (new RegExp('\\b(?:' + TU_KHOA_NGUOI[j][1] + ')\\b', 'i').test(t))
+        return TU_KHOA_NGUOI[j][0];
+    return ['nghe', 'nha', 'ban', 'hai', 'bando', 'leo'][i % 6];
   }
 
   /* ── ĐẦU TẤM VÀ CHÂN TẤM, DỰNG MỘT LẦN ──
@@ -36267,20 +36420,49 @@ var G = window.G || {}; window.G = G;
     var dayVung = kg.h - Math.round(kg.h * 0.072);
     var ve = '';
 
+    /* ── THẺ CAO BẰNG NỘI DUNG DÀI NHẤT, KHÔNG CAO BẰNG CẢ VÙNG ──
+       Kéo thẻ xuống hết vùng thì cột nào ít việc cũng hở một mảng
+       trắng bằng nửa thẻ, và ba thẻ trông như ba cái hộp rỗng. Đo cột
+       dài nhất rồi cho cả ba cao bằng đúng nó — hở thì hở ở NGOÀI ba
+       thẻ, chỗ ấy là lề, và lề thì được phép trống. */
+    var rHtmp = Math.round(kg.w * 0.058);
+    var coTenT = Math.round(kg.w * 0.026), coYT = Math.round(kg.w * 0.0185);
+    var caoThe = 0;
+    ds.forEach(function (c) {
+      var cao = 20 + rHtmp * 2 +
+        catDong(c.ten, '800 ' + coTenT + 'px ' + CHU_THAN, rongCot - 24).length *
+          coTenT * 1.18 + coTenT * 1.25 +
+        (c.phu ? Math.round(kg.w * 0.0185) * 2.0 : 0) + 18 + 3;
+      c.y.slice(0, 8).forEach(function (t) {
+        cao += catDong(t, '500 ' + coYT + 'px ' + CHU_THAN,
+          rongCot - 32 - coYT * 1.15).length * coYT * 1.36 + coYT * 0.30;
+      });
+      caoThe = Math.max(caoThe, Math.round(cao + 26));
+    });
+    caoThe = Math.min(caoThe, dayVung - d.dinh);
+
     ds.forEach(function (c, i) {
       var xc = le + i * (rongCot + khe);
       var s = sac[i % sac.length];
-      var kinh = tamKinh(xc, d.dinh, rongCot, dayVung - d.dinh, k,
+      var kinh = tamKinh(xc, d.dinh, rongCot, caoThe, k,
         {sac: s.hex, bong: d.bong.id, bo: 14});
       d.manh.push(kinh); ve += kinh.ve;
 
-      var rH = Math.round(kg.w * 0.038);
-      var hh = huyHieu(xc + Math.round(rongCot / 2), d.dinh + 22 + rH, rH, s.hex,
-        chonHinh(c.ten, i), d.bongHh.id, k);
-      d.manh.push(hh); ve += hh.ve;
+      /* ── MỖI CỘT LÀ MỘT NGƯỜI, NÊN VẼ MỘT NGƯỜI ──
+         Huy hiệu biểu tượng nói "mục này về X". Hình người nói "mục
+         này LÀ một người, và người ấy có phần việc". Với loại hình
+         "ai làm gì" thì khác biệt ấy chính là nội dung.
+         Vẽ trong một đĩa màu nhạt để hình có chỗ đứng và không trôi
+         giữa nền trắng — đĩa cũng là chỗ sắc tầng xuất hiện lần đầu. */
+      var rH = Math.round(kg.w * 0.058);
+      ve += '<circle cx="' + (xc + Math.round(rongCot / 2)) + '" cy="' +
+        (d.dinh + 20 + rH) + '" r="' + rH + '" fill="' + h(s.hex) +
+        '" fill-opacity="' + (k.sau ? '0.20' : '0.13') + '"/>';
+      ve += veNet('nguoi', chonNguoi(c.ten, i), xc + Math.round(rongCot / 2),
+        d.dinh + 20 + rH, Math.round(rH * 1.62), s.hex, 3.6);
 
       var coTen = Math.round(kg.w * 0.026);
-      var yTen = d.dinh + 22 + rH * 2 + coTen * 1.25;
+      var yTen = d.dinh + 20 + rH * 2 + coTen * 1.25;
       var ten = veChu(c.ten, xc + Math.round(rongCot / 2), yTen,
         {co: coTen, chu: CHU_THAN, dam: 800, mau: k.muc,
          rong: rongCot - 24, gian: 1.18, can: 'middle', gianChu: 0.4});
@@ -36289,7 +36471,8 @@ var G = window.G || {}; window.G = G;
       if (c.phu) {
         var coP = Math.round(kg.w * 0.0185);
         ve += veDongQuang(c.phu, xc + Math.round(rongCot / 2), yy + coP * 0.9,
-          {co: coP, chu: CHU_THAN, dam: 700, mau: k.muc, can: 'middle'}).svg;
+          {co: coP, chu: CHU_THAN, dam: 700, mau: k.muc, can: 'middle',
+           rongToiDa: rongCot - 28}).svg;
         yy += coP * 2.0;
       }
       /* Gạch màu ngang tách đầu cột khỏi danh sách — và nó là chỗ sắc
