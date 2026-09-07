@@ -149,6 +149,21 @@ export async function deXuatThiGiac(y, env, db, hoSo) {
       error: 'Nhiệm vụ này có nhiều hơn một chữ "và" — gần như chắc chắn nó ' +
              'đang gộp mấy việc. Tách thành mấy tấm.'};
 
+  /* ── MỘT CHỮ "VÀ": KHÔNG CHẶN, NHƯNG KHÔNG IM ──
+     Ngưỡng chặn đặt ở HAI chữ "và" có lý do: "cho phụ huynh và học viên"
+     là một việc, chặn nó là chặn oan. Nhưng "nói tầm nhìn và giới thiệu
+     năm chặng" cũng chỉ có một chữ "và" mà là hai việc thật — chạy demo
+     tấm tầm nhìn thì nó đi lọt, không một dòng cảnh báo nào.
+     Máy không phân biệt được hai câu ấy, nên máy KHÔNG quyết. Nó chỉ
+     nói ra chỗ đáng ngờ, và câu ấy đi theo đề bài tới tận bậc duyệt để
+     người duyệt nhìn thấy. Đó đúng là luật của cổng này: máy đề xuất,
+     chủ hệ quyết. */
+  const luuY = [];
+  if (demVa === 1)
+    luuY.push('Nhiệm vụ có một chữ "và". Máy không chặn vì "và" cũng dùng để ' +
+      'nối người xem, nhưng người duyệt đọc lại: nếu nó đang nối HAI VIỆC ' +
+      'thì tách thành hai tấm, đừng vẽ.');
+
   const nx = Array.isArray(d.nguoiXem) ? d.nguoiXem : [];
   const nxLa = nx.filter(x => NGUOI_XEM.indexOf(x) < 0);
   if (!nx.length) return {ok: false, code: 'THIEUNGUOIXEM',
@@ -181,7 +196,8 @@ export async function deXuatThiGiac(y, env, db, hoSo) {
     noiDung,
     '',
     'ĐÃ QUA CỔNG TẦNG: ' + st.vi
-  ].join('\n');
+  ].concat(luuY.length ? ['', 'LƯU Ý CHO NGƯỜI DUYỆT'].concat(
+    luuY.map(x => '· ' + x)) : []).join('\n');
 
   await db.prepare(
     'INSERT INTO deXuatThiGiac (id,ban,banTruoc,noiDung,tang,nguoiXem,loaiHinh,' +
@@ -196,7 +212,7 @@ export async function deXuatThiGiac(y, env, db, hoSo) {
     doiTuong: id, chiTiet: tang + ' · ' + loaiHinh + ' · ' + nhiemVu.slice(0, 80)});
 
   return {ok: true, id, tang, loaiHinh, nhiemVu, trangThai: 'deXuat', deBai,
-    soatTang: st.vi,
+    soatTang: st.vi, luuY: luuY.length ? luuY : undefined,
     vi: 'Đề xuất đã vào sổ ở bậc ĐỀ XUẤT. Máy không đi tiếp một bậc nào ' +
         'nếu chủ hệ chưa bấm.'};
 }
@@ -308,7 +324,11 @@ export async function chamThiGiac(y, env, db, hoSo) {
 
   await db.prepare(
     'UPDATE deXuatThiGiac SET diem = ?, bacDiem = ?, chamChiTiet = ? WHERE id = ?'
-  ).bind(Math.round(tong), bac, JSON.stringify(tung), x.id).run();
+    /* GHI SỐ THẬT, không Math.round. Bậc tính trên số lẻ mà sổ ghi số
+       tròn thì sổ tự cãi mình: 89,9 vào bậc "Sửa lại" nhưng ghi xuống là
+       90 — đúng bằng ngưỡng của bậc "Đạt". Chạy demo tấm tầm nhìn mới
+       lộ, vì mọi bài thử cũ đều chấm ra số chẵn. */
+  ).bind(tong, bac, JSON.stringify(tung), x.id).run();
 
   return {ok: true, id: x.id, diem: tong, bac, tung,
     /* Mục D1 nặng 25 — gấp hai rưỡi mục THẨM MỸ. Nói ra để người chấm

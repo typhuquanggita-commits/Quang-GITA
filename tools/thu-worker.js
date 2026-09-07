@@ -3031,6 +3031,46 @@ bao(dep.than.ok && dung.than.ok && dep.than.diem === 75 && dung.than.diem === 90
   'RẤT ĐẸP MÀ SAI HỆ THỐNG (75 · KHÔNG ĐẠT) THUA ĐÚNG HỆ THỐNG MÀ XẤU (90 · ĐẠT)',
   'tấm đẹp được tin, và cái sai đi theo nó xa hơn — nên đúng hệ thống nặng 25 điểm, thẩm mỹ 10');
 
+/* ══ SỔ KHÔNG ĐƯỢC TỰ CÃI MÌNH: SỐ GHI XUỐNG VÀ BẬC PHẢI CÙNG MỘT GỐC ══
+   Mọi bài thử trên đây đều chấm ra số CHẴN, nên chỗ này im suốt. Chạy
+   demo tấm tầm nhìn mới lộ: 89,9 vào bậc "Sửa lại" mà sổ ghi 90 — đúng
+   ngưỡng bậc "Đạt". Bài thử này chấm cố ý ra số lẻ. */
+const le = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, cham:{D1:95, D2:92, D3:88, D4:90, D5:96, D6:84, D7:60}});
+const leDb = db.prepare("SELECT diem, bacDiem FROM deXuatThiGiac WHERE id=?").get(idTG);
+bao(le.than.ok && le.than.diem === 89.9 && le.than.bac === 'Sửa lại' &&
+    leDb.diem === 89.9 && leDb.bacDiem === 'Sửa lại',
+  'SỐ LẺ GHI XUỐNG NGUYÊN SỐ LẺ — 89,9 · Sửa lại, không làm tròn LÊN thành 90',
+  'sổ ghi 90 mà bậc nói "Sửa lại" thì người đọc sáu tháng sau thấy hai thứ cãi nhau, ' +
+  'và 90 chính là ngưỡng của bậc ĐẠT — làm tròn lên là đẩy một bài trượt qua cửa',
+  'ghi ' + leDb.diem + ' · bậc ' + leDb.bacDiem);
+
+/* ══ MỘT CHỮ "VÀ": KHÔNG CHẶN, NHƯNG KHÔNG IM ══
+   Ngưỡng chặn ở HAI chữ "và" là cố ý — "cho phụ huynh và học viên" là
+   một việc. Nhưng "nói tầm nhìn và giới thiệu năm chặng" cũng chỉ một
+   chữ "và" mà là hai việc, và nó đi lọt không một dòng cảnh báo. */
+const motVa = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  deXuat:{tang:'T1', loaiHinh:'BIA',
+    nhiemVu:'Nói tầm nhìn và giới thiệu năm chặng đồng hành.',
+    noiDung:'Kiến tạo một hệ sinh thái gia đình phát triển bền vững, nơi mỗi ' +
+      'người biết hiểu mình, rèn mình, làm chủ cuộc đời.',
+    nguoiXem:['PHUHUYNH']}});
+bao(motVa.than.ok && (motVa.than.luuY || []).length === 1 &&
+    String(motVa.than.deBai || '').indexOf('LƯU Ý CHO NGƯỜI DUYỆT') > 0,
+  'MỘT CHỮ "VÀ" ĐI LỌT NHƯNG KHÔNG IM — máy nói ra chỗ đáng ngờ, người duyệt quyết',
+  'máy không phân biệt được "và" nối người xem với "và" nối hai việc, nên máy ' +
+  'không quyết — nhưng câu cảnh báo phải đi theo đề bài tới tận bậc duyệt');
+
+const khongVa = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  deXuat:{tang:'T1', loaiHinh:'BIA',
+    nhiemVu:'Nói một câu tầm nhìn GITA 365 cho người vừa mở cổng lần đầu.',
+    noiDung:'Kiến tạo một hệ sinh thái gia đình phát triển bền vững, nơi mỗi ' +
+      'người biết hiểu mình, rèn mình, làm chủ cuộc đời.',
+    nguoiXem:['PHUHUYNH']}});
+bao(khongVa.than.ok && !khongVa.than.luuY &&
+    String(khongVa.than.deBai || '').indexOf('LƯU Ý') < 0,
+  'KHÔNG CÓ "VÀ" THÌ KHÔNG DÁN LƯU Ý — cảnh báo dán vào mọi tấm là cảnh báo không ai đọc');
+
 /* ══ SỔ LUẬT THƯƠNG HIỆU — BỘ NHỚ DÀI HẠN ══ */
 bao(!(await goi({fn:'ghiLuatThuongHieu', token:tkGD, u:'giamdoc@gita365.vn',
   luat:{nhom:'anh', luat:'Không dùng ảnh kiểu áp phích truyền cảm hứng',

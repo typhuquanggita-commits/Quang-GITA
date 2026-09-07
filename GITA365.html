@@ -2124,7 +2124,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.11',
+  version: '9.99.12',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -34927,6 +34927,15 @@ G.VIEWS = G.VIEWS || {};
         ? '<div class="card" style="border-left:3px solid var(--ok);margin-top:14px">' +
           '<b>Đã qua cổng Tầng · ' + h(r.id) + '</b>' +
           '<p class="sm muted mt">' + h(r.soatTang || '') + '</p>' +
+          /* Máy cho qua nhưng thấy chỗ đáng ngờ thì phải NÓI RA ngay ở
+             đây, chứ không chỉ giấu trong đề bài. Người đề xuất đang
+             nhìn màn này, và sửa lúc này rẻ hơn sửa sau khi đã vẽ. */
+          ((r.luuY || []).length
+            ? '<div class="mt" style="border-left:3px solid var(--warn);padding-left:10px">' +
+              '<b class="sm">Máy không chặn, nhưng người duyệt đọc lại</b>' +
+              r.luuY.map(function (x) {
+                return '<p class="sm muted mt">' + h(x) + '</p>'; }).join('') + '</div>'
+            : '') +
           '<pre class="sm mt" style="white-space:pre-wrap;background:var(--phu-2);' +
           'padding:12px;border-radius:10px;overflow-x:auto">' + h(r.deBai || '') + '</pre>' +
           '</div>'

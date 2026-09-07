@@ -740,7 +740,13 @@ CREATE TABLE IF NOT EXISTS deXuatThiGiac (
   -- lại: ranh giới Tầng đổi thì đề xuất cũ vẫn phải giải thích được là
   -- nó đã qua cổng nào.
   soatTang    TEXT,
-  diem        INTEGER,
+  -- REAL, không INTEGER. Trọng số là phần trăm nên tổng gần như luôn lẻ:
+  -- 89,9 chẳng hạn. Bản đầu để INTEGER và ghi Math.round(tổng), trong khi
+  -- BẬC lại tính trên số LẺ — nên sổ hiện "90đ · Sửa lại", mà 90 chính là
+  -- ngưỡng của bậc ĐẠT. Người đọc sổ sáu tháng sau thấy hai thứ cãi nhau.
+  -- Giữ số thật thì bậc và số luôn cùng một gốc, và không có bài nào bị
+  -- làm tròn LÊN qua ngưỡng đạt.
+  diem        REAL,
   bacDiem     TEXT,
   chamChiTiet TEXT,               -- JSON điểm từng mục
   trangThai   TEXT NOT NULL DEFAULT 'nhap',
