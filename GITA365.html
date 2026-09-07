@@ -2124,7 +2124,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.28',
+  version: '9.99.29',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -35303,10 +35303,26 @@ var G = window.G || {}; window.G = G;
     var ht = Math.round(c * 2.05);
     return {
       rong: rong,
-      defs: '<linearGradient id="' + g + '" x1="0" y1="0" x2="1" y2="0.6">' +
-        '<stop offset="0%" stop-color="' + h(doiSang(k.do, 0.14)) + '"/>' +
-        '<stop offset="100%" stop-color="' + h(doiSang(k.do, -0.24)) + '"/>' +
-        '</linearGradient>',
+      /* ── ĐẦU SÁNG CỦA DẢI PHẢI TỰ ĐẠT NGƯỠNG ──
+         Bản trước dựng dải bằng doiSang(k.do, +0.14) → −0.24 quanh sắc
+         đỏ đang chạy. Trên nền GIẤY thì đỏ đã sẫm nên chữ trắng thừa
+         tương phản. Trên nền SÂU, k.do được làm sáng lên một nấc cho
+         hợp nền — và dải sáng theo, nên chữ trắng tụt còn 4,11:1 trong
+         khi ngưỡng là 4,5.
+         Lỗi này nằm im suốt vì mặc định là nền giấy; đổi mặc định của
+         áp phích sang nền sâu ở 9.99.29 thì phép đo tương phản bắt được
+         ngay lượt chạy đầu.
+         Nay ĐẦU SÁNG được ép sẫm cho tới khi chữ trắng đạt 4,6:1, rồi
+         đầu tối dựng từ chính nó. Neo vào đầu XẤU NHẤT chứ không vào
+         sắc gốc: một dải có hai đầu, và đầu này đọc được không có nghĩa
+         đầu kia đọc được. */
+      defs: (function () {
+        var sang = nenDac(doiSang(k.do, 0.14), 4.6);
+        return '<linearGradient id="' + g + '" x1="0" y1="0" x2="1" y2="0.6">' +
+          '<stop offset="0%" stop-color="' + h(sang) + '"/>' +
+          '<stop offset="100%" stop-color="' + h(doiSang(sang, -0.30)) + '"/>' +
+          '</linearGradient>';
+      })(),
       cao: ht,
       ve: '<g>' +
         '<rect x="' + Math.round(giuaX - rong / 2) + '" y="' + Math.round(y) +
@@ -38155,6 +38171,11 @@ var G = window.G || {}; window.G = G;
     CHAN_DUNG:        {ve: veChanDung, kho: 'doc'}
   };
 
+  /* Loại hình nào là ÁP PHÍCH — dùng để chọn nền mặc định. Khai một
+     chỗ, đọc một chỗ: hai bản của cùng một sự thật thì bản nào cũng
+     có ngày lệch. */
+  var CAN_NGUOI_VE = ['AP_PHICH', 'CHAN_DUNG'];
+
   /* ── ĐỐI CHIẾU TỪNG Ý VỚI CHỮ ĐÃ ĐẶT LÊN TẤM ──
      Không so nguyên câu: người viết gõ "Phiếu ghi bảy ngày và hướng
      dẫn ghi" mà tấm đặt "Phiếu ghi bảy ngày — kèm hướng dẫn", hai
@@ -38246,11 +38267,18 @@ var G = window.G || {}; window.G = G;
        Nền sáng vẫn gọi được, cho hình nhúng thẳng vào giao diện ban
        ngày; nhưng mặc định phải là thứ thương hiệu đã chốt, không
        phải thứ tiện tay lấy được từ biến CSS đang chạy. */
-    /* MẶC ĐỊNH LÀ GIẤY, theo đúng dòng "Bản đồ A3 in" của BRAND.dungO.
-       Nền đêm sâu vẫn gọi được — nó là nền của WEB APP, cho hình nhúng
-       thẳng vào giao diện. Nhưng một tấm áp phích đứng một mình là ẤN
-       PHẨM, và ấn phẩm đã có dòng riêng trong sổ. */
-    var che = ['sau', 'sang', 'but'].indexOf(cheMuon) >= 0 ? cheMuon : 'giay';
+    /* ── MẶC ĐỊNH ĐỌC TỪ MÔI TRƯỜNG, KHÔNG PHẢI MỘT HẰNG SỐ ──
+       Tới 9.99.28 mặc định là GIẤY cho MỌI loại hình, theo dòng "Bản đồ
+       A3 in" của BRAND.dungO. Đó là chỗ chặn đắt nhất của cả bộ vẽ, và
+       nó không phải lỗi của bộ vẽ: bảng dungO có bốn môi trường và
+       KHÔNG môi trường nào là áp phích đăng mạng, nên áp phích rơi vào
+       dòng viết cho một tấm chạy qua máy in văn phòng — trắng, phẳng,
+       không quầng sáng.
+       Bản 9.99.29 thêm dòng "Áp phích đăng mạng" vào chính bảng ấy, và
+       chỗ này đọc theo nó: loại hình CÓ NGƯỜI là áp phích, nên mặc định
+       NỀN SÂU. Mấy loại hình còn lại vẫn là ấn phẩm in, vẫn nền giấy. */
+    var cheMac = CAN_NGUOI_VE.indexOf(x.loaiHinh) >= 0 ? 'sau' : 'giay';
+    var che = ['sau', 'sang', 'but', 'giay'].indexOf(cheMuon) >= 0 ? cheMuon : cheMac;
     var r;
     try { r = b.ve(x, kg, che); }
     catch (e) { return {ok: false, error: 'Bộ vẽ hỏng giữa chừng: ' + e.message}; }
