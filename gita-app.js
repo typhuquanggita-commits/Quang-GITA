@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.25',
+  version: '9.99.26',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -32889,7 +32889,22 @@ var G = window.G || {}; window.G = G;
   };
   Object.keys(HINH_THEM).forEach(function (k2) { HINH[k2] = HINH_THEM[k2]; });
 
+  /* ── TỪ VỰNG THẬT CỦA GITA, KHÔNG PHẢI TỪ VỰNG CHUNG (9.99.26) ──
+     Bảng này ban đầu chỉ có từ chung: "mục tiêu", "tối ưu", "kết quả".
+     Nên tấm cổng nghiệm thu ngày bảy ra ba biểu tượng sách · bóng thoại
+     · bia bắn cho ba điều kiện là bộ test, phiếu ghi và buổi đọc hồ sơ
+     — không hình nào dính đến nghĩa nào. Không phải khớp SAI: không từ
+     nào khớp cả, nên nó rơi xuống vòng luân phiên mặc định.
+     Vòng luân phiên có lý do tồn tại — nó giữ cho một lưới ô không ra
+     sáu hình giống nhau. Nhưng nó là chỗ RƠI XUỐNG, và một hệ mà mọi
+     tấm đều rơi xuống chỗ ấy thì biểu tượng chỉ còn là màu.
+     Bốn dòng đầu là từ vựng người trong nhà GITA dùng hằng ngày; hình
+     tương ứng đã nằm sẵn trong HINH từ lâu, chỉ chưa ai nối vào. */
   var TU_KHOA_HINH = [
+    ['dung',  'nghiem thu|dat chuan|lam xong|hoan thanh|qua chang|dieu kien'],
+    ['lich',  'phieu ghi|nhat ky|ghi chep|bay ngay|hang tuan|so ghi'],
+    ['doi',   'ho so|buoi doc|ngoi lai|gap mat|buoi tiep nhan|ca nha cung'],
+    ['sach',  'bo test|kiem tra|sat hach|dau vao|bai thi'],
     ['dich',  'muc tieu|muc dich|dich den|dinh huong'],
     ['thoai', 'tu van|lang nghe|hoi dap|tro chuyen|giao tiep|phan hoi'],
     ['den',   'giai dap|y tuong|tu duy|khai mo|sang tao'],
@@ -34818,11 +34833,31 @@ var G = window.G || {}; window.G = G;
   function veCong(x, kg, che) {
     var k = bang(che);
     var c = catCong(x.noiDung);
+    /* ── CÂU TỪ CHỐI CŨNG LÀ TÀI LIỆU, VÀ NÓ TỪNG DẠY SAI ──
+       Bản trước viết mẫu là "ĐIỀU KIỆN — nội dung". Làm theo đúng mẫu
+       ấy thì ba thẻ ra ba cái tên GIỐNG HỆT NHAU: "ĐIỀU KIỆN" ba lần,
+       đứng ở dòng nổi nhất của mỗi thẻ và không mang một tin nào.
+       Người viết không sai — họ gõ đúng thứ máy bảo gõ. Một câu hướng
+       dẫn sai còn tệ hơn không có câu nào, vì nó làm người ta thôi
+       nghĩ. Mẫu nay là tên THẬT của từng điều kiện. */
     if (!c.ten || c.dk.length < 2) return {ok: false,
       error: 'Cổng nghiệm thu cần MỘT tên cổng và ít nhất HAI điều kiện. Gõ ' +
-             '"CỔNG | Cổng ngày bảy" rồi các dòng "ĐIỀU KIỆN — nội dung". Một ' +
-             'cổng chỉ có một điều kiện thì không phải cổng, đó là một cái cửa ' +
-             'mở. Đang đọc ra ' + c.dk.length + ' điều kiện.'};
+             '"CỔNG | Cổng ngày bảy" rồi mỗi điều kiện một dòng "Tên ngắn — ' +
+             'nội dung", ví dụ "Bộ test — cả học viên và phụ huynh đã làm xong". ' +
+             'Một cổng chỉ có một điều kiện thì không phải cổng, đó là một cái ' +
+             'cửa mở. Đang đọc ra ' + c.dk.length + ' điều kiện.'};
+
+    /* Tên trùng nhau thì thẻ mất dòng đắt nhất của nó. Máy chặn chứ
+       không vẽ ra rồi để người xem tự bỏ qua ba dòng vô nghĩa. */
+    var tenDk = c.dk.map(function (e) { return e.ten.toUpperCase(); });
+    if (tenDk.length !== tenDk.filter(function (t, i) {
+          return tenDk.indexOf(t) === i; }).length)
+      return {ok: false, code: 'TENTRUNG',
+        error: 'Hai điều kiện đang mang cùng một tên. Tên đứng ở dòng nổi nhất ' +
+               'của mỗi thẻ, nên tên trùng là ba dòng to nhất của tấm không nói ' +
+               'gì cả — người xem phải đọc dòng nhỏ mới biết thẻ nào là thẻ nào. ' +
+               'Đặt cho mỗi điều kiện một tên riêng, ngắn. Đang có: ' +
+               tenDk.join(' · ')};
     var sac = sacTang();
     var d = dauTam(x, kg, k, 24);
     var le = Math.round(kg.w * 0.10), rong = kg.w - le * 2;
@@ -34833,33 +34868,65 @@ var G = window.G || {}; window.G = G;
        qua cổng là ĐI LÊN một chặng, không phải đi ngang. */
     var truW = Math.round(kg.w * 0.028);
     var caoVom = Math.round(kg.w * 0.10);
-    var ve = '<path d="M' + le + ' ' + dayVung + ' V' + (d.dinh + caoVom) +
-      ' A' + Math.round(rong / 2) + ' ' + caoVom + ' 0 0 1 ' + (le + rong) + ' ' +
-      (d.dinh + caoVom) + ' V' + dayVung + '" fill="none" stroke="' + h(sTru.hex) +
-      '" stroke-opacity="0.30" stroke-width="' + truW + '" stroke-linecap="round"/>';
+    var xIn = le + truW, rongIn = rong - truW * 2;
 
     var coTen = Math.round(kg.w * 0.030);
-    var ten = veChu(c.ten, Math.round(kg.w / 2), d.dinh + caoVom * 0.62,
+    var ten = veChu(c.ten, Math.round(kg.w / 2), 0,
+      {co: coTen, chu: CHU_THAN, dam: 800, mau: k.muc,
+       rong: rong - truW * 3, gian: 1.18, can: 'middle', gianChu: 0.5});
+
+    /* ── ĐO THẺ THEO NỘI DUNG, RỒI MỚI DỰNG CỔNG QUANH CHÚNG ──
+       Bản trước chia đều chỗ CÒN LẠI cho mấy thẻ: caoDk = (đáy tấm −
+       đỉnh) / số điều kiện. Ba điều kiện hai dòng chữ trên khổ vuông
+       thành ba thẻ cao 290 điểm ảnh, mỗi thẻ chứa hai dòng và bỏ trống
+       hơn nửa. Và hai chân cổng vẫn chạy tới đáy tấm, nên cả khối trông
+       như một cái khung rỗng có ba mẩu chữ trôi bên trong.
+       Giãn một khối cho vừa chỗ trống là lấy chỗ trống làm nội dung.
+       Nay: đo nội dung trước, thẻ cao đúng bằng thứ nó chở, rồi CỔNG
+       thu lại ôm lấy chồng thẻ. */
+    var rH = Math.round(kg.w * 0.030);
+    var xT = xIn + 16 + rH * 2 + 34, rongT = rongIn - 32 - (rH * 2 + 50);
+    var coH = Math.round(kg.w * 0.0205), coB = Math.round(kg.w * 0.0185);
+    var dongDk = c.dk.map(function (e) {
+      return catDong(e.y, '500 ' + coB + 'px ' + CHU_THAN, rongT); });
+    var demTrong = Math.round(coB * 1.5);          /* mép trên dưới trong thẻ */
+    var caoDk = 0;
+    dongDk.forEach(function (dB) {
+      caoDk = Math.max(caoDk,
+        demTrong * 2 + coH * 1.15 + dB.length * coB * 1.34); });
+    /* Thẻ không được thấp hơn chính huy hiệu của nó cộng mép. */
+    caoDk = Math.round(Math.max(caoDk, rH * 2 + demTrong * 1.6));
+
+    var giuaDk = 14;
+    var caoChong = c.dk.length * caoDk + (c.dk.length - 1) * giuaDk;
+    var caoTenO = ten.cao + 22;                    /* tên cổng nằm trong vòm */
+
+    /* Cả khối cổng — vòm, tên, chồng thẻ — căn giữa vùng còn lại. */
+    var caoCong = caoVom + caoTenO + caoChong + Math.round(kg.w * 0.045);
+    var dinhCong = Math.round(d.dinh + Math.max(0, (dayVung - d.dinh - caoCong) / 2));
+    var dayCong = dinhCong + caoCong;
+
+    var ve = '<path d="M' + le + ' ' + dayCong + ' V' + (dinhCong + caoVom) +
+      ' A' + Math.round(rong / 2) + ' ' + caoVom + ' 0 0 1 ' + (le + rong) + ' ' +
+      (dinhCong + caoVom) + ' V' + dayCong + '" fill="none" stroke="' + h(sTru.hex) +
+      '" stroke-opacity="0.30" stroke-width="' + truW + '" stroke-linecap="round"/>';
+
+    ten = veChu(c.ten, Math.round(kg.w / 2), dinhCong + caoVom * 0.62,
       {co: coTen, chu: CHU_THAN, dam: 800, mau: k.muc,
        rong: rong - truW * 3, gian: 1.18, can: 'middle', gianChu: 0.5});
     ve += ten.svg;
 
-    var xIn = le + truW, rongIn = rong - truW * 2;
-    var dinhDk = d.dinh + caoVom + ten.cao * 0.4 + 22;
-    var caoDk = Math.round((dayVung - 22 - dinhDk - 14 * (c.dk.length - 1)) / c.dk.length);
+    var dinhDk = dinhCong + caoVom + caoTenO;
     c.dk.forEach(function (e, i) {
       var s = sac[(i + 1) % sac.length];
-      var y = dinhDk + i * (caoDk + 14);
+      var y = dinhDk + i * (caoDk + giuaDk);
       var kinh = tamKinh(xIn + 16, y, rongIn - 32, caoDk, k,
         {sac: s.hex, bong: d.bong.id, bo: 12});
       d.manh.push(kinh); ve += kinh.ve;
-      var rH = Math.round(Math.min(caoDk * 0.30, kg.w * 0.030));
       var hh = huyHieu(xIn + 16 + rH + 18, y + Math.round(caoDk / 2), rH, s.hex,
         chonHinh(e.ten, i), null, k);
       d.manh.push(hh); ve += hh.ve;
-      var xT = xIn + 16 + rH * 2 + 34, rongT = rongIn - 32 - (rH * 2 + 50);
-      var coH = Math.round(kg.w * 0.0205), coB = Math.round(kg.w * 0.0185);
-      var dB = catDong(e.y, '500 ' + coB + 'px ' + CHU_THAN, rongT);
+      var dB = dongDk[i];
       var caoCum = coH * 1.15 + dB.length * coB * 1.34;
       var y0 = y + Math.round((caoDk - caoCum) / 2) + coH * 0.82;
       ve += '<text x="' + xT + '" y="' + Math.round(y0) + '" font-family="' +
