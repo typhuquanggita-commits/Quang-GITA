@@ -10377,7 +10377,49 @@ const { chromium } = require(PW);
           'PHẢI | Nhà có nhịp và có sổ | ==đi chậm mà tới đích==\n' +
           '✓ Mỗi ngày một dòng, không bỏ, không cần ai canh.\n' +
           '✓ Nhắc bằng điều kiện đã thoả thuận trước với nhau.\n' +
-          '✓ Có sổ thật để đọc lại đúng chỗ đã vấp lần trước.'
+          '✓ Có sổ thật để đọc lại đúng chỗ đã vấp lần trước.',
+        VAI_TRO:
+          'VAI Phụ huynh | giữ điều kiện, không giao thêm việc\n' +
+          '· Ghi phiếu mỗi ngày, không bỏ ngày nào cả.\n' +
+          '· Giữ đúng điều kiện đã thoả thuận từ đầu.\n' +
+          '· Không nhắc bằng cảm xúc của riêng mình.\n' +
+          'VAI Học viên | làm phần việc của chính mình\n' +
+          '· Làm bài đo đầu chặng một cách trung thực.\n' +
+          '· Tự chọn hai trong sáu việc được giao mỗi tuần.\n' +
+          '· Nói ra khi thấy mình đang đuối sức.\n' +
+          'VAI Người làm nghề | mở đường và nghiệm thu\n' +
+          '· Đọc hồ sơ cùng cả nhà ở buổi đầu tiên.\n' +
+          '· Nghiệm thu từng cổng, không cho qua khi chưa đạt.',
+        DANH_SACH_VIEC:
+          'NHÓM | Mỗi ngày\n' +
+          '· Ghi một dòng vào sổ trước khi đi ngủ.\n' +
+          '· Đọc lại dòng của hôm qua trước khi ghi.\n' +
+          'NHÓM | Mỗi tuần\n' +
+          '· Nhìn lại bảy dòng và khoanh chỗ đứt nhịp.\n' +
+          '· Chọn hai việc cho tuần tới, không chọn nhiều hơn.\n' +
+          'NHÓM | Cuối chặng\n' +
+          '· Mang sổ tới buổi nghiệm thu, không mang trí nhớ.',
+        CONG:
+          'CỔNG | Cổng ngày bảy\n' +
+          'PHIẾU GHI — Nhà ghi đủ bảy ngày phiếu, không bỏ ngày nào.\n' +
+          'BUỔI ĐỌC — Cả nhà có mặt ở buổi đọc hồ sơ đầu chặng.\n' +
+          'ĐẠT KHI — Cả hai điều kiện cùng có, không thay thế cho nhau.',
+        NHIP:
+          'THỨ HAI — Nhà chọn hai việc cho tuần và ghi ra giấy.\n' +
+          'GIỮA TUẦN — Coach chạm một lần, nhắn hoặc gọi ngắn.\n' +
+          'THỨ SÁU — Nhà tự soi lại năm dòng vừa ghi được.\n' +
+          'CUỐI TUẦN — Một buổi sâu bốn mươi lăm phút cả nhà.\n' +
+          'CHỦ NHẬT — Nghỉ hẳn, không giao việc, không nhắc.',
+        BANG_DIEU_KHIEN:
+          'SỐ | 21 | Ngày ghi liên tiếp\n' +
+          'SỐ | 86% | Tỷ lệ việc hoàn thành\n' +
+          'SỐ | 4/4 | Cổng đã qua trong chặng\n' +
+          'CỘT | Tuần 1 | 4\n' +
+          'CỘT | Tuần 2 | 6\n' +
+          'CỘT | Tuần 3 | 5\n' +
+          'CỘT | Tuần 4 | 7\n' +
+          'CỘT | Tuần 5 | 7\n' +
+          'CỘT | Tuần 6 | 6'
       };
       for (const loai of G.veThiGiacBiet().loaiHinh) {
         const v = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
@@ -10453,10 +10495,14 @@ const { chromium } = require(PW);
          phép này đỏ — đỏ đúng, nhưng đỏ vì bài thử cũ chứ không vì mã
          hỏng. Neo vào loại nào thì phải hỏi chính bộ vẽ, đừng gõ tay
          một tên rồi mong nó cứ mãi chưa có. */
+      /* Cả mười hai loại hình của hiến pháp nay đều có bộ vẽ, nên
+         phép "chưa có bộ vẽ" phải dùng một mã KHÔNG nằm trong hiến
+         pháp. Đó cũng là phép đúng hơn: nó hỏi "loại lạ có lọt vào
+         không", chứ không hỏi "loại nào chưa dựng". */
       const daCo = G.veThiGiacBiet().loaiHinh;
-      const conThieu = ['NHIP', 'CONG', 'VAI_TRO', 'BANG_DIEU_KHIEN', 'DANH_SACH_VIEC']
+      const maLa = ['KHONG_CO_LOAI_NAY', 'XYZ', '__la__']
         .filter(x => daCo.indexOf(x) < 0)[0];
-      const la = conThieu ? G.veThiGiac(nen(conThieu, CHU)) : {ok: false, chuaCo: true};
+      const la = G.veThiGiac(nen(maLa, CHU));
       r.choi.loaiLa = la.ok === false && la.chuaCo === true;
       r.choi.khongCoSo = G.veThiGiac(nen('MOT_SO',
         'Nhà mình bắt đầu bằng một chặng nhận diện, không có con số nào ở đây ' +
@@ -10464,6 +10510,45 @@ const { chromium } = require(PW);
       r.choi.coSoThiVe = G.veThiGiac(nen('MOT_SO',
         'Đến năm 2030, một triệu người Việt lớn lên trong một gia đình vận ' +
         'hành được.')).ok === true;
+      /* ── BIỂU ĐỒ CỘT: MỘT SẮC, KHÔNG SÁU ──
+         Sáu sắc tầng là bảng ĐỊNH DANH — mỗi sắc một chặng khác nhau.
+         Các cột của một biểu đồ theo tuần KHÔNG phải sáu thứ khác
+         nhau; chúng là CÙNG một thứ đo ở sáu thời điểm. Tô sáu màu là
+         nói dối bằng màu: mắt đọc ra "sáu loại" trong khi chỉ có một.
+         Đo bằng cách lấy sắc (hue) của mọi cột rồi đòi chúng nằm
+         trong một khoảng hẹp — đậm nhạt khác nhau thì được, SẮC khác
+         nhau thì không. */
+      r.cotNhieuSac = [];
+      {
+        const vBD = G.veThiGiac(nen('BANG_DIEU_KHIEN', RIENG.BANG_DIEU_KHIEN));
+        if (vBD.ok) {
+          const w2 = document.createElement('div');
+          w2.style.cssText = 'position:absolute;left:-9999px;top:0';
+          document.body.appendChild(w2); w2.innerHTML = vBD.svg;
+          const hue = (hx) => {
+            const m2 = /^#?([0-9a-f]{6})$/i.exec(String(hx).trim());
+            if (!m2) return null;
+            const n2 = parseInt(m2[1], 16);
+            const R2 = (n2 >> 16) / 255, G2 = ((n2 >> 8) & 255) / 255, B2 = (n2 & 255) / 255;
+            const mx = Math.max(R2, G2, B2), mn = Math.min(R2, G2, B2), c = mx - mn;
+            if (c < 0.02) return null;          /* gần xám thì không có sắc */
+            let hh2;
+            if (mx === R2) hh2 = ((G2 - B2) / c) % 6;
+            else if (mx === G2) hh2 = (B2 - R2) / c + 2;
+            else hh2 = (R2 - G2) / c + 4;
+            return ((hh2 * 60) + 360) % 360;
+          };
+          const hs = [...w2.querySelectorAll('path.gita-cot')]
+            .map(e => hue(e.getAttribute('fill'))).filter(v => v !== null);
+          if (hs.length >= 3) {
+            const spread = Math.max(...hs) - Math.min(...hs);
+            if (spread > 25) r.cotNhieuSac.push(hs.length + ' cột trải ' +
+              Math.round(spread) + '° sắc — một biểu đồ một chuỗi phải một sắc');
+          } else r.cotNhieuSac.push('không đọc được sắc của cột biểu đồ');
+          w2.remove();
+        }
+      }
+
       /* ── BIỂU TƯỢNG CHỌN THEO NGHĨA, VÀ KHỚP THEO BIÊN TỪ ──
          Bản đầu dò từ khoá bằng chuỗi con, và ô "GIA ĐÌNH" ra hình
          NÚI vì từ khoá "dinh" (của "đỉnh") nằm gọn trong "gia dinh".
@@ -10637,9 +10722,9 @@ const { chromium } = require(PW);
     const brandDu = ra.logoCoBong === false && !(ra.sacLech || []).length &&
       !(ra.sacThieu || []).length && ra.soSac === 6;
     const roDu = !(ra.mo || []).length && !(ra.vat || []).length &&
-      !(ra.hinhLech || []).length;
+      !(ra.hinhLech || []).length && !(ra.cotNhieuSac || []).length;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
-        ra.veDuoc.length >= 7 && choiDu && brandDu && roDu,
+        ra.veDuoc.length >= 12 && choiDu && brandDu && roDu,
       'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. Và đo TƯƠNG PHẢN trên chính pixel đã vẽ ra, không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải màu nào ai gõ ra mà là kết quả của bốn lớp chồng lên nhau — cách duy nhất biết đúng là dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy màu trung bình đúng ô chữ sẽ nằm. Ngưỡng WCAG AA: 3,0 cho chữ từ 24px, 4,5 cho chữ thường. Một tấm hình rất sang mà chữ chìm thì nó không sang, nó hỏng. Chữ CHUYỂN SẮC cũng bị đo, và đo TỪNG CHẶNG MÀU của dải: bản đầu bỏ qua mọi thẻ có fill=url() — một lỗ đúng ở chỗ nguy hiểm nhất, vì chữ chuyển sắc luôn là câu to nhất trong tấm, và một dải có hai đầu nên đầu này đọc được không có nghĩa đầu kia đọc được',
       ra.khongCoBoVe ? 'KHÔNG NẠP ĐƯỢC src/ve-thi-giac.js'
         : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu && brandDu && roDu
@@ -10647,7 +10732,8 @@ const { chromium } = require(PW);
             ') · mọi thẻ chữ nằm trong khung, không thẻ nào đè thẻ nào · từ chối đủ bốn chỗ · '
             + 'sáu sắc đều truy về G.BRAND.mau · dấu GITA không nhận bóng đổ · '
             + 'mọi chữ đạt tương phản WCAG trên nền ĐÃ VẼ RA · '
-            + 'không chữ nào vắt qua mép một khối màu · biểu tượng khớp nghĩa'
+            + 'không chữ nào vắt qua mép một khối màu · biểu tượng khớp nghĩa · '
+            + 'biểu đồ một chuỗi tô một sắc'
           : [ra.tran.length ? 'CHỮ TRÀN RA NGOÀI: ' + ra.tran.join(' | ') : '',
              ra.de.length ? 'CHỮ ĐÈ LÊN CHỮ: ' + ra.de.join(' | ') : '',
              ra.hong.length ? 'bộ vẽ hỏng: ' + ra.hong.join(' | ') : '',
@@ -10663,7 +10749,8 @@ const { chromium } = require(PW);
              ra.soSac !== 6 ? 'bộ vẽ khai ' + ra.soSac + ' sắc, cần 6' : '',
              (ra.mo || []).length ? 'CHỮ MỜ TRÊN NỀN: ' + ra.mo.join(' | ') : '',
              (ra.vat || []).length ? 'CHỮ VẮT QUA MÉP KHỐI MÀU: ' + ra.vat.join(' | ') : '',
-             (ra.hinhLech || []).length ? 'BIỂU TƯỢNG CHỌN SAI NGHĨA: ' + ra.hinhLech.join(' · ') : ''
+             (ra.hinhLech || []).length ? 'BIỂU TƯỢNG CHỌN SAI NGHĨA: ' + ra.hinhLech.join(' · ') : '',
+             (ra.cotNhieuSac || []).length ? 'BIỂU ĐỒ TÔ NHIỀU SẮC: ' + ra.cotNhieuSac.join(' · ') : ''
             ].filter(Boolean).join(' · ')));
   }
 

@@ -1654,6 +1654,464 @@ var G = window.G || {}; window.G = G;
       dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030)), g.defs)};
   }
 
+  /* ── ĐẦU TẤM VÀ CHÂN TẤM, DỰNG MỘT LẦN ──
+     Nhãn trên → tiêu đề → dải băng → (thân) → dấu GITA. Bốn bộ vẽ
+     trước mỗi bộ chép lại khối này, và mỗi lần chép là một chỗ để
+     quên một mảnh defs hoặc tính lệch một khoảng — tôi đã quên đúng
+     hai lần rồi. Gom một chỗ thì mọi tấm có cùng một nhịp đầu, và
+     sửa nhịp ấy là sửa cho tất cả.
+     Trả về `dinh` — chỗ thân tấm được phép bắt đầu — vì đó là con số
+     duy nhất bộ vẽ nào cũng cần và cũng dễ đoán sai nhất. */
+  function dauTam(x, kg, k, chiaTieu) {
+    var nhan = docDau(x.noiDung, 'NHÃN'), bang2 = docDau(x.noiDung, 'BĂNG');
+    var le = Math.round(kg.w * 0.055);
+    var nen = lopNen(kg, k, 1.1);
+    var bong = defBong(k, 1), bongHh = defBong(k, 2), cs = defChuSac(k);
+    var manh = [nen, bong, bongHh, cs];
+
+    var coTieu = Math.round(kg.w / (chiaTieu || 24));
+    var yTieu = Math.round(kg.h * (nhan ? 0.078 : 0.062)) + coTieu;
+    var tieu = veChu(x.nhiemVu, Math.round(kg.w / 2), yTieu,
+      {co: coTieu, chu: CHU_TIEU, dam: 600, mau: 'url(#' + cs.id + ')',
+       rong: kg.w - le * 2, gian: 1.16, can: 'middle'});
+    var dnhan = nhan ? nhanTren(nhan, le + 6,
+      Math.round(yTieu - coTieu * 0.95), k, Math.round(coTieu * 0.40)) : '';
+
+    var day = yTieu + tieu.cao;
+    var dbang = null;
+    if (bang2) {
+      dbang = daiBang(bang2, Math.round(kg.w / 2), Math.round(day + coTieu * 0.24),
+        k, kg.w - le * 2);
+      manh.push(dbang);
+      day = day + coTieu * 0.24 + dbang.cao;
+    }
+    return {
+      dinh: Math.round(day + coTieu * 0.58),
+      manh: manh, bong: bong, bongHh: bongHh, cs: cs, le: le,
+      tren: nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
+        h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : ''),
+      duoi: dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030))
+    };
+  }
+
+  /* ═══════════ BỘ VẼ · AI LÀM GÌ (VAI_TRO) ═══════════
+     Hiến pháp khai "ba cột: nhà · học viên · Coach". Ba cột chứ không
+     phải ba ô của một lưới: lưới nói "ba thứ ngang hàng", ba cột có
+     đầu cột nói "ba NGƯỜI, mỗi người một phần việc" — và đó mới là
+     nhiệm vụ khai của loại hình này. */
+  function catVai(chu) {
+    var ra = [], nay = null;
+    String(chu || '').split('\n').forEach(function (d) {
+      var v = /^\s*VAI\s+([^|]+?)\s*(?:\|\s*(.+?))?\s*$/i.exec(d);
+      if (v) { nay = {ten: v[1].trim(), phu: (v[2] || '').trim(), y: []};
+        ra.push(nay); return; }
+      var g = /^\s*[·•\-*]\s+(.{3,})$/.exec(d);
+      if (g && nay) nay.y.push(g[1].trim());
+    });
+    return ra.filter(function (x) { return x.y.length; }).slice(0, 3);
+  }
+
+  function veVaiTro(x, kg, che) {
+    var k = bang(che);
+    var ds = catVai(x.noiDung);
+    if (ds.length < 2) return {ok: false,
+      error: 'Bảng ai-làm-gì cần ít nhất HAI vai. Mở mỗi vai bằng dòng ' +
+             '"VAI Phụ huynh | phần việc chính", rồi các dòng bắt đầu bằng dấu · ' +
+             'là việc của vai ấy. Máy KHÔNG tự chia việc cho ai: chia sai là nói ' +
+             'sai đúng điều duy nhất tấm này phải nói. Đang đọc ra ' + ds.length + ' vai.'};
+    var sac = sacTang();
+    if (!sac.length) return {ok: false, error: 'Chưa mở được bảng màu thương hiệu.'};
+
+    var d = dauTam(x, kg, k, 24);
+    var le = Math.round(kg.w * 0.05), khe = Math.round(kg.w * 0.028);
+    var rongCot = Math.round((kg.w - le * 2 - khe * (ds.length - 1)) / ds.length);
+    var dayVung = kg.h - Math.round(kg.h * 0.072);
+    var ve = '';
+
+    ds.forEach(function (c, i) {
+      var xc = le + i * (rongCot + khe);
+      var s = sac[i % sac.length];
+      var kinh = tamKinh(xc, d.dinh, rongCot, dayVung - d.dinh, k,
+        {sac: s.hex, bong: d.bong.id, bo: 14});
+      d.manh.push(kinh); ve += kinh.ve;
+
+      var rH = Math.round(kg.w * 0.038);
+      var hh = huyHieu(xc + Math.round(rongCot / 2), d.dinh + 22 + rH, rH, s.hex,
+        chonHinh(c.ten, i), d.bongHh.id, k);
+      d.manh.push(hh); ve += hh.ve;
+
+      var coTen = Math.round(kg.w * 0.026);
+      var yTen = d.dinh + 22 + rH * 2 + coTen * 1.25;
+      var ten = veChu(c.ten, xc + Math.round(rongCot / 2), yTen,
+        {co: coTen, chu: CHU_THAN, dam: 800, mau: k.muc,
+         rong: rongCot - 24, gian: 1.18, can: 'middle', gianChu: 0.4});
+      ve += ten.svg;
+      var yy = yTen + ten.cao;
+      if (c.phu) {
+        var coP = Math.round(kg.w * 0.0185);
+        ve += veDongQuang(c.phu, xc + Math.round(rongCot / 2), yy + coP * 0.9,
+          {co: coP, chu: CHU_THAN, dam: 700, mau: k.muc, can: 'middle'}).svg;
+        yy += coP * 2.0;
+      }
+      /* Gạch màu ngang tách đầu cột khỏi danh sách — và nó là chỗ sắc
+         tầng xuất hiện lần thứ hai, sau huy hiệu, nên màu không phải
+         thứ duy nhất phân biệt ba cột: tên vai viết ra bằng chữ. */
+      ve += '<rect x="' + (xc + Math.round(rongCot * 0.28)) + '" y="' + Math.round(yy) +
+        '" width="' + Math.round(rongCot * 0.44) + '" height="3" rx="1.5" fill="' +
+        h(s.hex) + '"/>';
+      yy += 18;
+      var coY = Math.round(kg.w * 0.0185);
+      ve += veGachDau(c.y.slice(0, 8), xc + 16, yy,
+        {co: coY, rong: rongCot - 32, mau: k.muc2, cham: s.hex}).svg;
+    });
+    return {ok: true, svg: khung(kg, k, d.tren + ve + d.duoi, gom(d.manh).defs)};
+  }
+
+  /* ═══════════ BỘ VẼ · DANH SÁCH VIỆC ═══════════
+     "Cột dọc có ô đánh dấu · giúp hành động ngay hôm nay". Ô đánh dấu
+     là điểm khác biệt duy nhất giữa loại này và một danh sách thường:
+     ô trống nói "việc này CHƯA làm, và bạn là người làm nó". */
+  function catViec(chu) {
+    var ra = [], nay = null;
+    String(chu || '').split('\n').forEach(function (d) {
+      var n = /^\s*NHÓM\s*\|\s*(.+?)\s*$/i.exec(d);
+      if (n) { nay = {ten: n[1].trim(), y: []}; ra.push(nay); return; }
+      var g = /^\s*[·•\-*☐]\s+(.{3,})$/.exec(d);
+      if (g) { if (!nay) { nay = {ten: '', y: []}; ra.push(nay); } nay.y.push(g[1].trim()); }
+    });
+    return ra.filter(function (v) { return v.y.length; });
+  }
+
+  function veDanhSachViec(x, kg, che) {
+    var k = bang(che);
+    var ds = catViec(x.noiDung);
+    var tong = ds.reduce(function (a, v) { return a + v.y.length; }, 0);
+    if (tong < 3) return {ok: false,
+      error: 'Danh sách việc cần ít nhất BA việc. Mỗi việc một dòng bắt đầu ' +
+             'bằng dấu ·, và có thể gom nhóm bằng dòng "NHÓM | Mỗi ngày". Máy ' +
+             'KHÔNG tự tách câu thành việc: một việc là thứ làm xong được trong ' +
+             'một lần, và chỉ người viết biết chỗ nào là một lần. Đang đọc ra ' +
+             tong + ' việc.'};
+    var sac = sacTang();
+    var d = dauTam(x, kg, k, 24);
+    var le = Math.round(kg.w * 0.075);
+    var rong = kg.w - le * 2;
+    var yy = d.dinh;
+    var ve = '';
+    var coN = Math.round(kg.w * 0.023), coV = Math.round(kg.w * 0.0215);
+    var o = Math.round(coV * 1.15);
+
+    ds.forEach(function (v, i) {
+      var s = sac[i % sac.length];
+      if (v.ten) {
+        ve += '<rect x="' + le + '" y="' + Math.round(yy) + '" width="4" height="' +
+          Math.round(coN * 1.1) + '" rx="2" fill="' + h(s.hex) + '"/>';
+        ve += '<text x="' + (le + 14) + '" y="' + Math.round(yy + coN * 0.85) +
+          '" font-family="' + h(CHU_THAN) + '" font-size="' + coN +
+          '" font-weight="800" fill="' + h(k.muc) + '" letter-spacing="0.6">' +
+          h(v.ten.toUpperCase()) + '</text>';
+        yy += coN * 1.75;
+      }
+      v.y.forEach(function (t) {
+        var dong = catDong(t, '500 ' + coV + 'px ' + CHU_THAN, rong - o - 18);
+        /* Ô đánh dấu TRỐNG — đây là việc chưa làm, không phải việc đã xong. */
+        ve += '<rect x="' + le + '" y="' + Math.round(yy) + '" width="' + o +
+          '" height="' + o + '" rx="5" fill="none" stroke="' + h(s.hex) +
+          '" stroke-width="2"/>';
+        dong.forEach(function (t2, j) {
+          ve += '<text x="' + (le + o + 14) + '" y="' +
+            Math.round(yy + o * 0.72 + j * coV * 1.34) + '" font-family="' +
+            h(CHU_THAN) + '" font-size="' + coV + '" font-weight="500" fill="' +
+            h(k.muc2) + '">' + h(t2) + '</text>';
+        });
+        yy += Math.max(o, dong.length * coV * 1.34) + coV * 0.62;
+      });
+      yy += coV * 0.5;
+    });
+    return {ok: true, svg: khung(kg, k, d.tren + ve + d.duoi, gom(d.manh).defs)};
+  }
+
+  /* ═══════════ BỘ VẼ · CỔNG NGHIỆM THU ═══════════
+     "Một cổng, hai ba điều kiện · giúp biết qua chặng cần đạt gì".
+     Vẽ đúng một cái CỔNG: hai trụ và một vòm. Hình cổng làm được thứ
+     một cái hộp không làm — nó nói có BÊN NÀY và BÊN KIA, và muốn
+     sang thì phải đi qua. Danh sách điều kiện nằm giữa hai trụ, đúng
+     chỗ người ta phải đi qua. */
+  function catCong(chu) {
+    var ten = '', dk = [];
+    String(chu || '').split('\n').forEach(function (d) {
+      var c = /^\s*CỔNG\s*\|\s*(.+?)\s*$/i.exec(d);
+      if (c) { ten = c[1].trim(); return; }
+      var e = /^\s*(.{2,40}?)\s+[—–]\s+(.{4,})$/.exec(d);
+      if (e) dk.push({ten: e[1].trim(), y: e[2].trim()});
+    });
+    return {ten: ten, dk: dk.slice(0, 4)};
+  }
+
+  function veCong(x, kg, che) {
+    var k = bang(che);
+    var c = catCong(x.noiDung);
+    if (!c.ten || c.dk.length < 2) return {ok: false,
+      error: 'Cổng nghiệm thu cần MỘT tên cổng và ít nhất HAI điều kiện. Gõ ' +
+             '"CỔNG | Cổng ngày bảy" rồi các dòng "ĐIỀU KIỆN — nội dung". Một ' +
+             'cổng chỉ có một điều kiện thì không phải cổng, đó là một cái cửa ' +
+             'mở. Đang đọc ra ' + c.dk.length + ' điều kiện.'};
+    var sac = sacTang();
+    var d = dauTam(x, kg, k, 24);
+    var le = Math.round(kg.w * 0.10), rong = kg.w - le * 2;
+    var dayVung = kg.h - Math.round(kg.h * 0.072);
+    var sTru = sac[0] || {hex: k.gita};
+
+    /* Hai trụ và một vòm, vẽ bằng một nét dày. Vòm mở lên trên vì
+       qua cổng là ĐI LÊN một chặng, không phải đi ngang. */
+    var truW = Math.round(kg.w * 0.028);
+    var caoVom = Math.round(kg.w * 0.10);
+    var ve = '<path d="M' + le + ' ' + dayVung + ' V' + (d.dinh + caoVom) +
+      ' A' + Math.round(rong / 2) + ' ' + caoVom + ' 0 0 1 ' + (le + rong) + ' ' +
+      (d.dinh + caoVom) + ' V' + dayVung + '" fill="none" stroke="' + h(sTru.hex) +
+      '" stroke-opacity="0.30" stroke-width="' + truW + '" stroke-linecap="round"/>';
+
+    var coTen = Math.round(kg.w * 0.030);
+    var ten = veChu(c.ten, Math.round(kg.w / 2), d.dinh + caoVom * 0.62,
+      {co: coTen, chu: CHU_THAN, dam: 800, mau: k.muc,
+       rong: rong - truW * 3, gian: 1.18, can: 'middle', gianChu: 0.5});
+    ve += ten.svg;
+
+    var xIn = le + truW, rongIn = rong - truW * 2;
+    var dinhDk = d.dinh + caoVom + ten.cao * 0.4 + 22;
+    var caoDk = Math.round((dayVung - 22 - dinhDk - 14 * (c.dk.length - 1)) / c.dk.length);
+    c.dk.forEach(function (e, i) {
+      var s = sac[(i + 1) % sac.length];
+      var y = dinhDk + i * (caoDk + 14);
+      var kinh = tamKinh(xIn + 16, y, rongIn - 32, caoDk, k,
+        {sac: s.hex, bong: d.bong.id, bo: 12});
+      d.manh.push(kinh); ve += kinh.ve;
+      var rH = Math.round(Math.min(caoDk * 0.30, kg.w * 0.030));
+      var hh = huyHieu(xIn + 16 + rH + 18, y + Math.round(caoDk / 2), rH, s.hex,
+        chonHinh(e.ten, i), null, k);
+      d.manh.push(hh); ve += hh.ve;
+      var xT = xIn + 16 + rH * 2 + 34, rongT = rongIn - 32 - (rH * 2 + 50);
+      var coH = Math.round(kg.w * 0.0205), coB = Math.round(kg.w * 0.0185);
+      var dB = catDong(e.y, '500 ' + coB + 'px ' + CHU_THAN, rongT);
+      var caoCum = coH * 1.15 + dB.length * coB * 1.34;
+      var y0 = y + Math.round((caoDk - caoCum) / 2) + coH * 0.82;
+      ve += '<text x="' + xT + '" y="' + Math.round(y0) + '" font-family="' +
+        h(CHU_THAN) + '" font-size="' + coH + '" font-weight="800" fill="' +
+        h(k.muc) + '" letter-spacing="0.5">' + h(e.ten.toUpperCase()) + '</text>';
+      ve += veChu(e.y, xT, y0 + coH * 1.15 + coB * 0.2,
+        {co: coB, chu: CHU_THAN, dam: 500, mau: k.muc2,
+         rong: rongT, gian: 1.34}).svg;
+    });
+    return {ok: true, svg: khung(kg, k, d.tren + ve + d.duoi, gom(d.manh).defs)};
+  }
+
+  /* ═══════════ BỘ VẼ · NHỊP MỘT CHU KỲ ═══════════
+     "Vòng tròn hoặc lịch · giúp hiểu một tuần hoặc một chu kỳ diễn ra
+     thế nào". Vẽ VÒNG, vì vòng nói được thứ danh sách dọc không nói:
+     hết vòng thì quay lại đầu. Một chu kỳ mà vẽ thành đường thẳng là
+     vẽ nó thành một việc làm một lần rồi thôi. */
+  function veNhip(x, kg, che) {
+    var k = bang(che);
+    var ds = catO(x.noiDung);
+    if (ds.length < 3) return {ok: false,
+      error: 'Nhịp một chu kỳ cần ít nhất BA chặng, mỗi chặng một dòng dạng ' +
+             '"TÊN — mô tả một câu". Dưới ba chặng thì không thành vòng, và cả ' +
+             'điểm của tấm này là cho thấy hết vòng thì quay lại đầu. Đang đọc ' +
+             'ra ' + ds.length + ' chặng.'};
+    var sac = sacTang();
+    if (!sac.length) return {ok: false, error: 'Chưa mở được bảng màu thương hiệu.'};
+    ds = ds.slice(0, 6);
+
+    var d = dauTam(x, kg, k, 24);
+    var dayVung = kg.h - Math.round(kg.h * 0.072);
+    var cx = Math.round(kg.w / 2), cy = Math.round((d.dinh + dayVung) / 2);
+    /* ── VÒNG PHẢI CHỪA CHỖ CHO NHÃN ──
+       Bản đầu lấy bán kính lớn nhất mà vòng vừa khung, rồi mới thả
+       nhãn ra ngoài vòng — nên nhãn tràn hẳn khỏi tấm ở hai bên. Chỗ
+       nhãn nằm phải được TRỪ RA trước khi chọn bán kính; nhãn là nội
+       dung, vòng chỉ là cái giá đỡ. */
+    var leN = Math.round(kg.w * 0.055);
+    var chuaNhan = Math.round(kg.w * 0.215);
+    var R = Math.round(Math.min(
+      (kg.w - leN * 2) / 2 - chuaNhan,
+      (dayVung - d.dinh) * 0.40));
+    var dayR = Math.round(R * 0.30);
+    var n = ds.length, ve = '';
+
+    /* Mỗi chặng một cung. Chừa một khe giữa hai cung để mắt đếm được
+       số chặng mà không phải dò màu — màu là lớp thứ hai, không phải
+       lớp duy nhất. */
+    var khe = 0.055;
+    ds.forEach(function (m, i) {
+      var s = sac[i % sac.length];
+      var a1 = (i / n) * Math.PI * 2 - Math.PI / 2 + khe;
+      var a2 = ((i + 1) / n) * Math.PI * 2 - Math.PI / 2 - khe;
+      var lon = (a2 - a1) > Math.PI ? 1 : 0;
+      var xy = function (a, r) {
+        return [(cx + Math.cos(a) * r).toFixed(1), (cy + Math.sin(a) * r).toFixed(1)]; };
+      var p1 = xy(a1, R), p2 = xy(a2, R), p3 = xy(a2, R - dayR), p4 = xy(a1, R - dayR);
+      ve += '<path d="M' + p1[0] + ' ' + p1[1] + ' A' + R + ' ' + R + ' 0 ' + lon +
+        ' 1 ' + p2[0] + ' ' + p2[1] + ' L' + p3[0] + ' ' + p3[1] + ' A' +
+        (R - dayR) + ' ' + (R - dayR) + ' 0 ' + lon + ' 0 ' + p4[0] + ' ' + p4[1] +
+        ' Z" fill="' + h(s.hex) + '"/>';
+
+      /* Số chặng nằm TRONG cung — mực chọn theo chính sắc ấy. */
+      var ag = (a1 + a2) / 2, pg = xy(ag, R - dayR / 2);
+      var coS = Math.round(dayR * 0.52);
+      ve += '<text x="' + pg[0] + '" y="' + (parseFloat(pg[1]) + coS * 0.36).toFixed(1) +
+        '" text-anchor="middle" font-family="' + h(CHU_THAN) + '" font-size="' + coS +
+        '" font-weight="800" fill="' + h(mucTren(s.hex)) + '">' + (i + 1) + '</text>';
+
+      /* Nhãn ngoài vòng, căn theo phía để không đè vào vòng. */
+      var ben = Math.cos(ag) < -0.3 ? 'end' : (Math.cos(ag) > 0.3 ? 'start' : 'middle');
+      var coN = Math.round(kg.w * 0.019);
+      var pn = xy(ag, R + 20);
+      /* Bề rộng nhãn đo bằng chỗ CÒN LẠI tới mép tấm, không bằng một
+         tỷ lệ đoán. Nhãn giữa được rộng gấp đôi vì nó toả sang hai
+         bên; nhãn cạnh chỉ toả một bên. */
+      var rongN = ben === 'middle'
+        ? Math.min(kg.w - leN * 2, Math.round(kg.w * 0.40))
+        : (ben === 'start'
+            ? Math.max(60, kg.w - leN - parseFloat(pn[0]))
+            : Math.max(60, parseFloat(pn[0]) - leN));
+      /* ── ĐẨY KHỐI NHÃN RA THEO CHÍNH CHIỀU CAO CỦA NÓ ──
+         Nhãn bắt đầu ở R+20 rồi lớn dần XUỐNG. Với chặng ở nửa dưới
+         vòng thì "xuống" là ra xa, không sao; nhưng với chặng ở nửa
+         TRÊN thì dòng cuối của nhãn bò ngược vào vòng và vắt lên
+         cung màu — phép đo vắt-mép bắt đúng chỗ ấy.
+         Đo khối trước, rồi đẩy ra thêm một nửa chiều cao nhân với
+         phần thẳng đứng của hướng: chặng ở đỉnh và đáy bị đẩy nhiều
+         nhất, chặng ở hai bên gần như không cần đẩy. */
+      var coY2 = Math.round(coN * 0.86);
+      var dT = catDong(m.ten, '800 ' + coN + 'px ' + CHU_THAN, rongN);
+      var dY2 = catDong(m.y, '500 ' + coY2 + 'px ' + CHU_THAN, rongN);
+      var caoKhoi = dT.length * coN * 1.18 + dY2.length * coY2 * 1.3;
+      var them = Math.abs(Math.sin(ag)) * caoKhoi * 0.5;
+      var pn2 = xy(ag, R + 20 + them);
+      var y0 = parseFloat(pn2[1]) - (Math.sin(ag) < 0 ? caoKhoi * 0.72 : 0) + coN * 0.2;
+      var t1 = veChu(m.ten, parseFloat(pn2[0]), y0,
+        {co: coN, chu: CHU_THAN, dam: 800, mau: k.muc, rong: rongN,
+         gian: 1.18, can: ben});
+      ve += t1.svg;
+      ve += veChu(m.y, parseFloat(pn2[0]), y0 + t1.cao,
+        {co: coY2, chu: CHU_THAN, dam: 500, mau: k.muc2,
+         rong: rongN, gian: 1.3, can: ben}).svg;
+    });
+
+    /* Mũi tên khép vòng ở tâm — nói thẳng "hết vòng quay lại đầu". */
+    var rT = Math.round(R * 0.42);
+    ve += '<circle cx="' + cx + '" cy="' + cy + '" r="' + rT + '" fill="none" ' +
+      'stroke="' + h(k.muc3) + '" stroke-opacity="0.45" stroke-width="2" ' +
+      'stroke-dasharray="5 6"/>' +
+      '<path d="M' + (cx - 8) + ' ' + (cy - rT) + ' l8 -7 l8 7 z" fill="' +
+      h(k.muc3) + '" fill-opacity="0.7"/>';
+    return {ok: true, svg: khung(kg, k, d.tren + ve + d.duoi, gom(d.manh).defs)};
+  }
+
+  /* ═══════════ BỘ VẼ · BẢNG THEO DÕI ═══════════
+     "Lưới ô số cộng một biểu đồ · giúp theo dõi tiến bộ bằng số".
+
+     ══ BIỂU ĐỒ DÙNG MỘT SẮC, KHÔNG DÙNG SÁU ══
+     Sáu sắc tầng là bảng ĐỊNH DANH — mỗi sắc một chặng khác nhau.
+     Các cột của một biểu đồ theo tuần KHÔNG phải sáu thứ khác nhau,
+     chúng là CÙNG một thứ đo ở sáu thời điểm. Tô chúng sáu màu là
+     nói dối bằng màu: mắt đọc ra "sáu loại", trong khi chỉ có một.
+     Đo độ lớn thì dùng một sắc, đậm dần. */
+  function catBang(chu) {
+    var so = [], cot = [];
+    String(chu || '').split('\n').forEach(function (d) {
+      var a = /^\s*SỐ\s*\|\s*([^|]{1,14})\s*\|\s*(.+?)\s*$/i.exec(d);
+      if (a) { so.push({v: a[1].trim(), t: a[2].trim()}); return; }
+      var b2 = /^\s*CỘT\s*\|\s*([^|]{1,20})\s*\|\s*(-?\d+(?:[.,]\d+)?)\s*$/i.exec(d);
+      if (b2) cot.push({t: b2[1].trim(), v: parseFloat(String(b2[2]).replace(',', '.'))});
+    });
+    return {so: so.slice(0, 4), cot: cot.slice(0, 12)};
+  }
+
+  function veBangDieuKhien(x, kg, che) {
+    var k = bang(che);
+    var b = catBang(x.noiDung);
+    if (b.so.length < 2 || b.cot.length < 3) return {ok: false,
+      error: 'Bảng theo dõi cần ít nhất HAI ô số và BA cột biểu đồ. Gõ ' +
+             '"SỐ | 21 | Ngày liên tiếp" cho mỗi ô số, và "CỘT | Tuần 1 | 4" ' +
+             'cho mỗi cột. Máy KHÔNG tự rút số ra khỏi câu văn: rút sai một ' +
+             'con số thì cả bảng nói sai, mà bảng này tồn tại chỉ để nói số. ' +
+             'Đang đọc ra ' + b.so.length + ' ô số và ' + b.cot.length + ' cột.'};
+    var sac = sacTang();
+    var d = dauTam(x, kg, k, 24);
+    var le = Math.round(kg.w * 0.055);
+    var rong = kg.w - le * 2;
+    var dayVung = kg.h - Math.round(kg.h * 0.072);
+    var ve = '';
+
+    /* Hàng ô số */
+    var nS = b.so.length, kheS = 14;
+    var rongS = Math.round((rong - kheS * (nS - 1)) / nS);
+    var caoS = Math.round(Math.min(kg.h * 0.15, rongS * 0.72));
+    b.so.forEach(function (m, i) {
+      var xs = le + i * (rongS + kheS);
+      var s = sac[i % sac.length];
+      var kinh = tamKinh(xs, d.dinh, rongS, caoS, k,
+        {sac: s.hex, bong: d.bong.id, bo: 14});
+      d.manh.push(kinh); ve += kinh.ve;
+      var coV = Math.round(Math.min(caoS * 0.42, rongS * 0.30));
+      while (doRong(m.v, '800 ' + coV + 'px ' + CHU_THAN) > rongS - 28 && coV > 14) coV -= 2;
+      /* ── CHỮ MẶC MỰC, KHÔNG MẶC MÀU CHUỖI ──
+         Bản đầu tô con số bằng chính sắc tầng của ô, và "4/4" trên
+         thẻ trắng chỉ được 2,43:1 — bốn trên sáu sắc thương hiệu đều
+         dưới 3:1 trên nền sáng, đo bằng bộ soi bảng màu chứ không
+         đoán. Màu là việc của MẢNG, không phải việc của chữ: giữ một
+         vệt màu bên cạnh để mang định danh, còn con số mặc mực. */
+      ve += '<rect x="' + (xs + Math.round(rongS * 0.36)) + '" y="' +
+        Math.round(d.dinh + caoS * 0.14) + '" width="' + Math.round(rongS * 0.28) +
+        '" height="3.5" rx="1.75" fill="' + h(s.hex) + '"/>';
+      ve += '<text x="' + (xs + Math.round(rongS / 2)) + '" y="' +
+        Math.round(d.dinh + caoS * 0.56) + '" text-anchor="middle" font-family="' +
+        h(CHU_THAN) + '" font-size="' + coV + '" font-weight="800" fill="' +
+        h(k.muc) + '">' + h(m.v) + '</text>';
+      ve += veChu(m.t, xs + Math.round(rongS / 2), Math.round(d.dinh + caoS * 0.82),
+        {co: Math.round(kg.w * 0.0165), chu: CHU_THAN, dam: 600, mau: k.muc2,
+         rong: rongS - 22, gian: 1.24, can: 'middle'}).svg;
+    });
+
+    /* Biểu đồ cột — MỘT sắc, đậm dần theo độ lớn */
+    var dinhBd = d.dinh + caoS + Math.round(kg.h * 0.045);
+    var sBd = sac[0] || {hex: k.gita};
+    var lonNhat = Math.max.apply(null, b.cot.map(function (c) { return c.v; }));
+    if (!(lonNhat > 0)) lonNhat = 1;
+    var coNhan = Math.round(kg.w * 0.0155);
+    var dayCot = dayVung - coNhan * 2.2;
+    var caoBd = dayCot - dinhBd - coNhan * 1.6;
+    var nC = b.cot.length;
+    /* Khe 2 pixel giữa hai cột — đủ để mắt tách, không đủ để thành khe hở. */
+    var buoc = rong / nC;
+    var rongC = Math.max(6, buoc - Math.max(2, buoc * 0.28));
+
+    ve += '<line x1="' + le + '" y1="' + dayCot + '" x2="' + (le + rong) +
+      '" y2="' + dayCot + '" stroke="' + h(k.muc3) + '" stroke-opacity="0.35" ' +
+      'stroke-width="1.5"/>';
+    b.cot.forEach(function (c, i) {
+      var ty = Math.max(0, c.v) / lonNhat;
+      var hC = Math.max(4, Math.round(caoBd * ty));
+      var xc = le + Math.round(buoc * i + (buoc - rongC) / 2);
+      /* Đậm dần theo độ lớn: cột cao nhất là sắc gốc, cột thấp nhạt
+         hơn. Một sắc, một thang — đó là cách mã hoá ĐỘ LỚN. */
+      var mauC = doiSang(sBd.hex, 0.46 * (1 - ty));
+      ve += '<path class="gita-cot" d="M' + xc + ' ' + dayCot + ' V' + (dayCot - hC + 4) +
+        ' a4 4 0 0 1 4 -4 h' + Math.round(rongC - 8) + ' a4 4 0 0 1 4 4 V' +
+        dayCot + ' Z" fill="' + h(mauC) + '"/>';
+      ve += '<text x="' + Math.round(xc + rongC / 2) + '" y="' +
+        Math.round(dayCot - hC - coNhan * 0.45) + '" text-anchor="middle" ' +
+        'font-family="' + h(CHU_THAN) + '" font-size="' + coNhan +
+        '" font-weight="800" fill="' + h(k.muc) + '">' + h(String(c.v)) + '</text>';
+      ve += '<text x="' + Math.round(xc + rongC / 2) + '" y="' +
+        Math.round(dayCot + coNhan * 1.45) + '" text-anchor="middle" ' +
+        'font-family="' + h(CHU_THAN) + '" font-size="' + coNhan +
+        '" font-weight="500" fill="' + h(k.muc2) + '">' + h(c.t) + '</text>';
+    });
+    return {ok: true, svg: khung(kg, k, d.tren + ve + d.duoi, gom(d.manh).defs)};
+  }
+
   /* ═══════════ BẢNG PHÂN VIỆC ═══════════
      Loại hình nào KHÔNG có tên ở đây thì bộ vẽ nói thẳng là chưa có.
      Danh sách trắng, không danh sách cấm — cùng luật với mọi cửa khác
@@ -1670,7 +2128,12 @@ var G = window.G || {}; window.G = G;
        mỗi hàng phải đủ cao cho một cụm chữ, không phải một dòng. */
     SO_SANH_TANG:     {ve: veSoSanhTang, kho: 'doc'},
     QUY_TRINH:        {ve: veQuyTrinh,   kho: 'doc'},
-    TRUOC_SAU:        {ve: veTruocSau,   kho: 'vuong'}
+    TRUOC_SAU:        {ve: veTruocSau,   kho: 'vuong'},
+    VAI_TRO:          {ve: veVaiTro,     kho: 'vuong'},
+    DANH_SACH_VIEC:   {ve: veDanhSachViec, kho: 'doc'},
+    CONG:             {ve: veCong,       kho: 'vuong'},
+    NHIP:             {ve: veNhip,       kho: 'vuong'},
+    BANG_DIEU_KHIEN:  {ve: veBangDieuKhien, kho: 'rong'}
   };
 
   /* ═══════════ CỬA DUY NHẤT ═══════════ */
