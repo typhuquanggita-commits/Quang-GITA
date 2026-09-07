@@ -469,6 +469,7 @@ G.VIEWS = G.VIEWS || {};
             h(TEN_BAC[b] || b) + '</button>';
         }).join('') +
         '<button class="btn" onclick="G.ktMoCham(\'' + h(x.id) + '\')">Chấm điểm</button>' +
+        '<button class="btn" onclick="G.ktVe(\'' + h(x.id) + '\')">Vẽ thử</button>' +
         (x.trangThai === 'duyet' || x.trangThai === 'phatHanh'
           ? '<button class="btn" onclick="G.ktBanMoi(\'' + h(x.id) + '\')">Sửa → bản mới</button>'
           : '') +
@@ -505,6 +506,36 @@ G.VIEWS = G.VIEWS || {};
       U.toast(d.ok ? d.vi : (d.error || 'Chưa tạo được bản mới'), d.ok ? 'ok' : 'err');
       if (d.ok) G.ktNap();
     });
+  };
+
+  /* ═══════════ VẼ THỬ — BỘ VẼ NẰM TRONG MÁY ═══════════
+     Ảnh dựng ngay trong trình duyệt đã đăng nhập, từ chính bản ghi đã
+     qua cổng. Không một lượt hỏi mạng nào trong cả lượt vẽ, nên không
+     có cửa nào để rò. Xem src/ve-thi-giac.js.
+
+     Loại hình chưa có bộ vẽ thì hộp này nói CHƯA CÓ và nói luôn đã vẽ
+     được những loại nào — nói "không vẽ được" mà không nói vẽ được gì
+     thì người dùng thử mò từng loại. */
+  G.ktVe = function (id, kho) {
+    var d = G.ktDuLieu.kho;
+    var x = ((d && d.ds) || []).filter(function (y) { return y.id === id; })[0];
+    if (!x) return U.toast('Không tìm thấy bản ghi này trong sổ.', 'err');
+
+    var biet = G.veThiGiacBiet ? G.veThiGiacBiet() : {kho: []};
+    var r = G.veThiGiac(x, kho);
+    U.modal('<h3>Vẽ thử · ' + h(x.loaiHinh) + '</h3>' +
+      (r.ok
+        ? '<p class="sm muted mt">' + h(r.kho + ' · ' + r.vi) + '</p>' +
+          '<div class="mt" style="border:1px solid var(--vien-1);border-radius:12px;' +
+          'overflow:hidden;line-height:0">' + r.svg + '</div>' +
+          '<div class="row mt2" style="gap:8px;flex-wrap:wrap">' +
+          biet.kho.map(function (m) {
+            return '<button class="btn" onclick="G.ktVe(\'' + h(x.id) + '\',\'' +
+              h(m.ma) + '\')">' + h(m.ten) + '</button>'; }).join('') + '</div>'
+        : '<div class="card mt" style="border-left:3px solid var(--bad)">' +
+          '<p class="sm">' + h(r.error) + '</p></div>') +
+      '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn" onclick="U.closeModal()">Đóng</button></div>');
   };
 
   G.ktMoCham = function (id) {

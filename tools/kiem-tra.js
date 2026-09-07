@@ -10283,6 +10283,155 @@ const { chromium } = require(PW);
         ].filter(Boolean).join(' · '));
   }
 
+  /* ══════════════════ 76. BỘ VẼ TRONG MÁY — CHỮ CÓ Ở TRONG TẤM KHÔNG ══════════════════
+
+     src/ve-thi-giac.js vẽ ảnh thật từ một bản ghi đã qua cổng. Nó vẽ
+     bằng SVG, và SVG KHÔNG BÁO LỖI KHI CHỮ TRÀN RA NGOÀI KHUNG — nó cứ
+     vẽ, phần ngoài khung biến mất lặng lẽ.
+
+     Lần chạy demo đầu tiên dính đúng chỗ ấy: bản đồ hành trình đặt mốc
+     thứ nhất ở mép trái và mốc cuối ở mép phải, nhãn dưới mốc căn GIỮA,
+     nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm. Không một
+     dòng lỗi nào. Mắt tôi bắt được vì tôi mở ảnh ra xem — mà mở ảnh ra
+     xem thì không phải một phép đo.
+
+     Phép này đo bằng getBBox của chính trình duyệt: dựng từng loại
+     hình, nhét vào trang, đọc hộp bao của MỌI thẻ <text>, và đòi hộp
+     ấy nằm trong khung. Đo chứ không tin lời khai.
+
+     Đo luôn ba lần TỪ CHỐI, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng
+     ở trên thành đồ trang trí:
+       · chưa qua cổng Tầng   → không vẽ
+       · loại hình chưa có bộ vẽ → nói chưa có, không vẽ đại
+       · MỘT CON SỐ mà nội dung không có số nào → không tự nghĩ ra số */
+  {
+    const ra = await p.evaluate(async () => {
+      const G = window.G, r = {tran: [], de: [], hong: [], veDuoc: [], choi: {}};
+      /* ĐỢI BỘ CHỮ TẢI XONG. Đo lúc chữ còn đang tải là đo bộ chữ dự
+         phòng của trình duyệt, không phải bộ chữ tấm hình sẽ dùng —
+         và bề rộng hai bộ ấy khác nhau đủ để một phép đo tràn nói sai
+         cả hai chiều. */
+      try { if (document.fonts) await document.fonts.ready; } catch (e) {}
+      if (!G.veThiGiac || !G.veThiGiacBiet)
+        return {khongCoBoVe: true, tran: [], de: [], hong: [], veDuoc: [], choi: {}};
+
+      const nen = (loai, noiDung) => ({
+        id: 'TG-thu', tang: 'T1', loaiHinh: loai, soatTang: 'thử',
+        nhiemVu: 'Cho thấy nhà mình đang ở chặng nào trên đường dài.',
+        noiDung: noiDung, nguoiXem: ['PHUHUYNH']});
+
+      /* Chữ dài cố ý: chỗ tràn chỉ lộ ra khi chữ đủ dài để phải ngắt
+         dòng, còn chữ ngắn thì bố cục nào cũng vừa. */
+      const CHU = 'Kiến tạo một hệ sinh thái gia đình phát triển bền vững, nơi ' +
+        'mỗi người biết hiểu mình, rèn mình, làm chủ cuộc đời và cùng nhau kiến ' +
+        'tạo hạnh phúc, thành công, thịnh vượng qua nhiều thế hệ.\n\n' +
+        'Nhiều thế hệ, không phải một khoá học. Đích đo bằng đời người, không ' +
+        'đo bằng học kỳ. Một triệu gia đình khác đi, không phải một triệu đứa ' +
+        'trẻ ngoan hơn.';
+
+      const o = document.createElement('div');
+      o.style.cssText = 'position:absolute;left:-9999px;top:0';
+      document.body.appendChild(o);
+
+      for (const loai of G.veThiGiacBiet().loaiHinh) {
+        const v = G.veThiGiac(nen(loai, CHU));
+        if (!v.ok) { r.hong.push(loai + ': ' + v.error.slice(0, 70)); continue; }
+        r.veDuoc.push(loai);
+        o.innerHTML = v.svg;
+        const svg = o.querySelector('svg');
+        /* ÉP KHỔ THẬT. assets/style.css có luật thu mọi <svg> về 18×18
+           cho biểu tượng, và luật ấy tóm luôn tấm hình vừa dựng — mọi
+           số đo ra sau đó là số đo của một tấm 18 pixel. */
+        svg.style.width = v.w + 'px';
+        svg.style.height = v.h + 'px';
+        svg.style.maxWidth = 'none';
+        /* ĐO BẰNG HỘP THẬT TRÊN MÀN, KHÔNG BẰNG getBBox.
+           getBBox trả toạ độ TRONG hệ của thẻ cha gần nhất, nên dấu
+           GITA nằm trong <g transform="translate(...)"> báo về x=26
+           y=-2 và bị chấm là tràn — oan, nó đang ở đúng góc dưới trái.
+           getBoundingClientRect trả toạ độ màn hình cho cả hai, nên
+           trừ đi là ra vị trí thật trong khung. */
+        const kh = svg.getBoundingClientRect();
+        const ti = kh.width ? v.w / kh.width : 1;
+        const hop = [];
+        for (const t of svg.querySelectorAll('text')) {
+          const b = t.getBoundingClientRect();
+          if (!b.width && !b.height) continue;
+          const x1 = (b.left - kh.left) * ti, x2 = (b.right - kh.left) * ti;
+          const y1 = (b.top - kh.top) * ti,  y2 = (b.bottom - kh.top) * ti;
+          if (x1 < -1 || y1 < -1 || x2 > v.w + 1 || y2 > v.h + 1)
+            r.tran.push(loai + ' · "' + (t.textContent || '').slice(0, 26) + '" ' +
+              'x' + Math.round(x1) + '→' + Math.round(x2) +
+              ' y' + Math.round(y1) + '→' + Math.round(y2) +
+              ' (khung ' + v.w + '×' + v.h + ')');
+          hop.push({loai: loai, chu: (t.textContent || '').slice(0, 22),
+            x1: x1, x2: x2, y1: y1, y2: y2});
+        }
+        /* ── CHỮ ĐÈ LÊN CHỮ ──
+           Một lớp lỗi KHÁC hẳn tràn khung, và phép đo tràn không thấy
+           nó: bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh
+           nhau chạm đúng vào nhau — vẫn nằm gọn trong khung. Hai mục
+           dính liền thì mắt đọc thành một câu dài, và tấm hình mất
+           đúng việc của nó là tách năm chặng ra. */
+        for (let i = 0; i < hop.length; i++)
+          for (let j = i + 1; j < hop.length; j++) {
+            const a = hop[i], c = hop[j];
+            const ngang = Math.min(a.x2, c.x2) - Math.max(a.x1, c.x1);
+            const doc = Math.min(a.y2, c.y2) - Math.max(a.y1, c.y1);
+            if (ngang <= 0 || doc <= 0) continue;
+            /* ── ĐÈ BAO NHIÊU THÌ MỚI LÀ ĐÈ ──
+               Hai dòng liền nhau trong CÙNG một đoạn luôn chồng vài
+               pixel: hộp bao của một dòng chữ gồm cả phần vươn lên và
+               phần thõng xuống, rộng hơn khoảng dãn dòng. Bắt từ 1
+               pixel thì mọi đoạn văn đều đỏ, và một phép đo lúc nào
+               cũng đỏ thì người ta tắt nó đi.
+               Luật: phải chồng quá MỘT PHẦN TƯ theo CẢ HAI chiều của
+               hộp nhỏ hơn. Dòng nối dòng chồng nhiều theo chiều ngang
+               nhưng chỉ vài phần trăm theo chiều dọc, nên lọt; hai
+               nhãn đè lên nhau thì chồng nhiều theo cả hai chiều. */
+            const rongNho = Math.min(a.x2 - a.x1, c.x2 - c.x1);
+            const caoNho = Math.min(a.y2 - a.y1, c.y2 - c.y1);
+            if (ngang > rongNho * 0.25 && doc > caoNho * 0.25)
+              r.de.push(loai + ' · "' + a.chu + '" ✕ "' + c.chu + '" ' +
+                'đè ' + Math.round(ngang / rongNho * 100) + '% ngang · ' +
+                Math.round(doc / caoNho * 100) + '% dọc');
+          }
+      }
+      o.remove();
+
+      /* Ba lần phải TỪ CHỐI */
+      const chuaCong = Object.assign(nen('BIA', CHU), {soatTang: ''});
+      r.choi.chuaQuaCong = G.veThiGiac(chuaCong).ok === false;
+      const la = G.veThiGiac(nen('TRUOC_SAU', CHU));
+      r.choi.loaiLa = la.ok === false && la.chuaCo === true;
+      r.choi.khongCoSo = G.veThiGiac(nen('MOT_SO',
+        'Nhà mình bắt đầu bằng một chặng nhận diện, không có con số nào ở đây ' +
+        'cả, chỉ có chữ và một lời hứa.')).ok === false;
+      r.choi.coSoThiVe = G.veThiGiac(nen('MOT_SO',
+        'Đến năm 2030, một triệu người Việt lớn lên trong một gia đình vận ' +
+        'hành được.')).ok === true;
+      return r;
+    });
+
+    const choiDu = ra.choi.chuaQuaCong && ra.choi.loaiLa &&
+      ra.choi.khongCoSo && ra.choi.coSoThiVe;
+    bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
+        ra.veDuoc.length >= 3 && choiDu,
+      'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống',
+      ra.khongCoBoVe ? 'KHÔNG NẠP ĐƯỢC src/ve-thi-giac.js'
+        : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu
+          ? ra.veDuoc.length + ' bộ vẽ (' + ra.veDuoc.join(', ') +
+            ') · mọi thẻ chữ nằm trong khung, không thẻ nào đè thẻ nào · từ chối đủ ba chỗ'
+          : [ra.tran.length ? 'CHỮ TRÀN RA NGOÀI: ' + ra.tran.join(' | ') : '',
+             ra.de.length ? 'CHỮ ĐÈ LÊN CHỮ: ' + ra.de.join(' | ') : '',
+             ra.hong.length ? 'bộ vẽ hỏng: ' + ra.hong.join(' | ') : '',
+             !ra.choi.chuaQuaCong ? 'VẼ CẢ BẢN GHI CHƯA QUA CỔNG TẦNG' : '',
+             !ra.choi.loaiLa ? 'loại hình lạ vẫn vẽ ra một tấm' : '',
+             !ra.choi.khongCoSo ? 'MỘT CON SỐ mà không có số vẫn vẽ' : '',
+             !ra.choi.coSoThiVe ? 'có số thật mà lại từ chối' : ''
+            ].filter(Boolean).join(' · ')));
+  }
+
   /* ══════════════════ 74. SỔ CHỜ CHỦ HỆ CÓ MỤC KHÔNG ══════════════════
 
      G.TR_CHUA là danh sách những ô chủ hệ phải tự điền — học phí, hệ

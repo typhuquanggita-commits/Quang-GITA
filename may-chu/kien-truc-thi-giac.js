@@ -386,6 +386,11 @@ export async function khoThiGiac(y, env, db, hoSo) {
   const ds = (r.results || []).map(x => ({
     id: x.id, ban: x.ban, banTruoc: x.banTruoc || undefined,
     tang: x.tang, loaiHinh: x.loaiHinh, nhiemVu: x.nhiemVu,
+    /* Bộ vẽ trong máy (src/ve-thi-giac.js) đặt chữ từ chính ô này. Trước
+       9.99.13 sổ không trả noiDung, và cách duy nhất để lấy lại chữ là
+       bóc ngược từ deBai — bóc ngược một chuỗi đã ghép là chỗ hỏng chờ
+       sẵn, vì chỉ cần đổi một dòng tiêu đề trong deBai là bóc sai. */
+    noiDung: x.noiDung,
     nguoiXem: JSON.parse(x.nguoiXem || '[]'),
     boCuc: x.boCuc || undefined, viTri: x.viTri || undefined,
     deBai: x.deBai, soatTang: x.soatTang || undefined,
