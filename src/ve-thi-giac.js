@@ -74,11 +74,200 @@ var G = window.G || {}; window.G = G;
       muc2:   mau('ink-2', '#4A4270'),
       muc3:   mau('ink-3', '#7C7599'),
       gita:   mau('gita', '#2A72C6'),
+      gitaSang: mau('gita-sang', '#5C9BE0'),
       gitaSau: mau('gita-sau', '#185AB4'),
       gitaInk: mau('gita-ink', '#14509E'),
       do:     mau('gita-do', '#F61824'),
+      doInk:  mau('gita-do-ink', '#BE0E16'),
       vien:   mau('vien-1', 'rgba(28,20,64,.12)')
     };
+  }
+
+  /* ── SÁU SẮC TẦNG: ĐỌC TỪ G.BRAND.mau, KHÔNG TỰ ĐẶT ──
+     Ảnh mẫu chủ hệ gửi có sáu ô sáu màu khác nhau. Cám dỗ là tự chọn
+     sáu màu cho đẹp — làm thế là dựng bảng màu thứ hai, đúng thứ luật
+     "màu lấy từ bảng đã chốt" cấm.
+     Không phải tự chọn: G.BRAND.mau đã có sẵn năm sắc tầng cộng một
+     sắc nhắc, đủ sáu, và đã được duyệt từ v7.0. Đọc thẳng từ đấy.
+     Không mở được kho thì trả rỗng, và bộ vẽ nào cần sáu sắc sẽ NÓI
+     là chưa mở kho — chứ không lấy tạm sáu màu khác. */
+  var TEN_SAC = ['T1 · Xanh dương', 'T2 · Tím', 'T3 · Lam',
+                 'T4 · Lục', 'T5 · Hổ phách', 'Hồng nhắc'];
+  function sacTang() {
+    var ds = (G.BRAND && G.BRAND.mau) || [];
+    var ra = [];
+    for (var i = 0; i < TEN_SAC.length; i++) {
+      var m = ds.filter(function (x) { return x.k === TEN_SAC[i]; })[0];
+      if (m && m.hex) ra.push({hex: m.hex, ten: m.k});
+    }
+    return ra;
+  }
+
+  /* Sáng hơn / tối hơn một sắc, để dựng chuyển sắc trong huy hiệu mà
+     vẫn chỉ dùng đúng một màu gốc đã duyệt. */
+  function doiSang(hex, ty) {
+    var m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim());
+    if (!m) return hex;
+    var n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    var f = function (v) {
+      return Math.max(0, Math.min(255, Math.round(ty > 0
+        ? v + (255 - v) * ty : v * (1 + ty)))); };
+    return '#' + ((1 << 24) + (f(r) << 16) + (f(g) << 8) + f(b))
+      .toString(16).slice(1);
+  }
+
+  /* ═══════════ LỚP CHIỀU SÂU ═══════════
+     Chiều sâu trong tấm hình không đến từ việc dán bóng đổ lên mọi
+     thứ. Nó đến từ BA LỚP tách bạch, mỗi lớp một việc:
+
+       lớp 1 · NỀN     — quầng sáng mờ, không có nét, không đọc được
+       lớp 2 · TẤM     — mặt kính có viền sáng trên và bóng đổ dưới
+       lớp 3 · CHỮ     — nét đặc, tương phản cao nhất tấm
+
+     Mắt đọc lớp 3 trước, lớp 2 sau, lớp 1 không bao giờ. Đảo thứ tự
+     ấy — chẳng hạn cho nền một hoạ tiết đủ đậm để mắt dừng lại — là
+     chỗ mọi tấm hình "nhiều hiệu ứng" hỏng.
+
+     Một luật cấm kỵ của thương hiệu đứng ngay đây: BRAND.camKy ghi
+     "không đổi màu logo, không nghiêng, KHÔNG THÊM BÓNG ĐỔ". Nên dấu
+     GITA là thứ DUY NHẤT trong tấm không được nhận bóng. */
+  var demId = 0;
+  function idMoi(g) { demId++; return 'gita-' + g + '-' + demId; }
+
+  function lopNen(kg, k, dam) {
+    /* Hai quầng sáng radial, cùng ngôn ngữ với #aura của giao diện —
+       xanh GITA một bên, đỏ GITA một bên, đều rất mờ. Chúng làm nền
+       KHÔNG phẳng, và một nền không phẳng là thứ cho tấm hình chiều
+       sâu mà không tốn một nét nào. */
+    var a = idMoi('quang'), b = idMoi('quang');
+    var d = dam === undefined ? 1 : dam;
+    return {
+      defs:
+        '<radialGradient id="' + a + '" cx="50%" cy="50%" r="50%">' +
+          '<stop offset="0%" stop-color="' + h(k.gita) + '" stop-opacity="' +
+            (0.20 * d).toFixed(3) + '"/>' +
+          '<stop offset="100%" stop-color="' + h(k.gita) + '" stop-opacity="0"/>' +
+        '</radialGradient>' +
+        '<radialGradient id="' + b + '" cx="50%" cy="50%" r="50%">' +
+          '<stop offset="0%" stop-color="' + h(k.do) + '" stop-opacity="' +
+            (0.10 * d).toFixed(3) + '"/>' +
+          '<stop offset="100%" stop-color="' + h(k.do) + '" stop-opacity="0"/>' +
+        '</radialGradient>',
+      ve:
+        '<ellipse cx="' + Math.round(kg.w * 0.80) + '" cy="' + Math.round(kg.h * 0.12) +
+          '" rx="' + Math.round(kg.w * 0.46) + '" ry="' + Math.round(kg.h * 0.62) +
+          '" fill="url(#' + a + ')"/>' +
+        '<ellipse cx="' + Math.round(kg.w * 0.10) + '" cy="' + Math.round(kg.h * 0.94) +
+          '" rx="' + Math.round(kg.w * 0.34) + '" ry="' + Math.round(kg.h * 0.44) +
+          '" fill="url(#' + b + ')"/>'
+    };
+  }
+
+  /* Bóng đổ mềm. Một bộ lọc dùng chung cho mọi tấm kính trong hình —
+     dựng riêng cho từng ô thì tệp phình lên mà mắt không thấy khác. */
+  function defBong(k) {
+    var id = idMoi('bong');
+    return {id: id, defs:
+      '<filter id="' + id + '" x="-30%" y="-30%" width="160%" height="180%">' +
+        '<feDropShadow dx="0" dy="10" stdDeviation="14" ' +
+          'flood-color="' + h(k.gitaSau) + '" flood-opacity="0.16"/>' +
+      '</filter>'};
+  }
+
+  /* Mặt kính: chuyển sắc rất nhẹ từ trắng xuống, cộng một nét viền
+     sáng Ở TRÊN. Viền sáng trên là thứ nói với mắt "vật này nổi lên",
+     vì ngoài đời ánh sáng đến từ trên. Bỏ nó đi thì tấm kính dẹt ra
+     ngay, dù bóng đổ vẫn còn. */
+  function tamKinh(x, y, w, ht, k, o) {
+    o = o || {};
+    var g = idMoi('kinh');
+    var r = o.bo === undefined ? 20 : o.bo;
+    var sac = o.sac || k.gita;
+    return {
+      defs: '<linearGradient id="' + g + '" x1="0" y1="0" x2="0" y2="1">' +
+        '<stop offset="0%" stop-color="' + h(doiSang(k.nen, 0.06)) +
+          '" stop-opacity="0.96"/>' +
+        '<stop offset="100%" stop-color="' + h(k.nen2) + '" stop-opacity="0.92"/>' +
+        '</linearGradient>',
+      ve:
+        '<g' + (o.bong ? ' filter="url(#' + o.bong + ')"' : '') + '>' +
+          '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + ht +
+            '" rx="' + r + '" fill="url(#' + g + ')" stroke="' + h(sac) +
+            '" stroke-opacity="0.22" stroke-width="1"/>' +
+          '<path d="M' + (x + r) + ' ' + (y + 0.75) + ' H' + (x + w - r) + '" ' +
+            'stroke="' + h(doiSang(k.nen, 0.9)) + '" stroke-opacity="0.85" ' +
+            'stroke-width="1.5" fill="none"/>' +
+        '</g>'
+    };
+  }
+
+  /* ── HUY HIỆU BIỂU TƯỢNG ──
+     Vòng tròn chuyển sắc từ một sắc tầng, biểu tượng nét trắng bên
+     trong. Sáu biểu tượng vẽ bằng hình học thuần, không nạp bộ chữ
+     biểu tượng nào — một tệp phông ngoài là một lượt hỏi mạng, và
+     luật của bộ vẽ này là không có lượt nào. */
+  /* Mỗi biểu tượng là một mảnh SVG vẽ trong ô 30×30 quanh gốc toạ độ.
+     Cho phép cả nét (stroke) chứ không chỉ mảng đặc: bản đầu vẽ tất cả
+     bằng mảng đặc với fill-rule="evenodd", và cái ĐÍCH ra thành một
+     đốm tròn có lỗ — nhìn không ra là đích. Ba vòng đồng tâm vẽ bằng
+     NÉT thì đọc ra ngay. Cái ĐẦU NGƯỜI nhìn nghiêng cũng ra một giọt
+     nước; đổi sang hai bong bóng thoại, vì việc của ô ấy là TƯ VẤN —
+     và trò chuyện là thứ ai cũng đọc được ngay. */
+  var HINH = {
+    sach: '<path d="M-9 -7 h7 a2 2 0 0 1 2 2 v12 a2 2 0 0 0 -2 -2 h-7 z ' +
+          'M9 -7 h-7 a2 2 0 0 0 -2 2 v12 a2 2 0 0 1 2 -2 h7 z"/>',
+    thoai:'<path d="M-10 -8 h13 a2.5 2.5 0 0 1 2.5 2.5 v7 a2.5 2.5 0 0 1 -2.5 2.5 ' +
+          'h-6 l-4.5 4 v-4 h-2.5 a2.5 2.5 0 0 1 -2.5 -2.5 v-7 a2.5 2.5 0 0 1 2.5 -2.5 z"/>' +
+          '<path d="M7 -3.5 h3 a2.5 2.5 0 0 1 2.5 2.5 v6 a2.5 2.5 0 0 1 -2.5 2.5 ' +
+          'v3.5 l-3.5 -3.5 h-1" fill="none" stroke="#FFFFFF" stroke-width="2.2" ' +
+          'stroke-linejoin="round"/>',
+    dich: '<circle cx="0" cy="0" r="9" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>' +
+          '<circle cx="0" cy="0" r="4.6" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>' +
+          '<circle cx="0" cy="0" r="1.6"/>',
+    den:  '<path d="M0 -9 a6.5 6.5 0 0 1 3.8 11.8 v2.2 h-7.6 v-2.2 A6.5 6.5 0 0 1 0 -9 z"/>' +
+          '<rect x="-3" y="6.4" width="6" height="2" rx="1"/>' +
+          '<rect x="-2.2" y="9.4" width="4.4" height="2" rx="1"/>',
+    banh: '<path d="M-1.6 -9 h3.2 l0.5 2.6 l2.3 1.3 l2.4 -1.1 l1.6 2.8 l-1.9 1.8 v2.6 ' +
+          'l1.9 1.8 l-1.6 2.8 l-2.4 -1.1 l-2.3 1.3 l-0.5 2.6 h-3.2 l-0.5 -2.6 ' +
+          'l-2.3 -1.3 l-2.4 1.1 l-1.6 -2.8 l1.9 -1.8 v-2.6 l-1.9 -1.8 l1.6 -2.8 ' +
+          /* Lỗ bánh răng phải nằm TRONG CÙNG một thẻ path thì fill-rule
+             evenodd mới khoét được. Tách ra thành <circle> riêng là vẽ
+             thêm một đĩa đặc đè lên, không phải khoét. */
+          'l2.4 1.1 l2.3 -1.3 z M0 -3.2 a3.2 3.2 0 1 0 0.01 0 z"/>',
+    cot:  '<path d="M-9 9 v-6 h4 v6 z M-2 9 v-11 h4 v11 z M5 9 v-16 h4 v16 z"/>' +
+          '<path d="M-8 -4 l6 -5 l5 3 l6 -7" fill="none" stroke="#FFFFFF" ' +
+          'stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" ' +
+          'opacity="0.85"/>'
+  };
+  var THU_TU_HINH = ['sach', 'thoai', 'dich', 'den', 'banh', 'cot'];
+
+  function huyHieu(cx, cy, r, hex, hinh, bong) {
+    var g = idMoi('hh');
+    return {
+      defs: '<linearGradient id="' + g + '" x1="0" y1="0" x2="1" y2="1">' +
+        '<stop offset="0%" stop-color="' + h(doiSang(hex, 0.22)) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(doiSang(hex, -0.20)) + '"/>' +
+        '</linearGradient>',
+      ve: '<g' + (bong ? ' filter="url(#' + bong + ')"' : '') + '>' +
+        '<rect x="' + (cx - r) + '" y="' + (cy - r) + '" width="' + (r * 2) +
+          '" height="' + (r * 2) + '" rx="' + Math.round(r * 0.62) +
+          '" fill="url(#' + g + ')"/>' +
+        '<g transform="translate(' + cx + ',' + cy + ') scale(' + (r / 15).toFixed(3) +
+          ')" fill="#FFFFFF" fill-rule="evenodd">' + HINH[hinh] + '</g></g>'
+    };
+  }
+
+  /* Chữ chuyển sắc — cùng ngôn ngữ với .grad-text của giao diện:
+     xanh sâu → xanh → đỏ. Chỉ dùng cho MỘT câu trong tấm; hai câu
+     chuyển sắc thì không câu nào còn là câu chính. */
+  function defChuSac(k) {
+    var id = idMoi('chusac');
+    return {id: id, defs:
+      '<linearGradient id="' + id + '" x1="0" y1="0" x2="1" y2="0.35">' +
+        '<stop offset="0%" stop-color="' + h(k.gitaSau) + '"/>' +
+        '<stop offset="52%" stop-color="' + h(k.gita) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(k.doInk) + '"/>' +
+      '</linearGradient>'};
   }
 
   /* ── ĐO CHỮ THẬT, KHÔNG ĐẾM KÝ TỰ ──
@@ -142,11 +331,21 @@ var G = window.G || {}; window.G = G;
         'HỆ SINH THÁI GIA ĐÌNH THỊNH VƯỢNG</text></g>';
   }
 
-  function khung(kg, k, ruot) {
+  function khung(kg, k, ruot, defs) {
     return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + kg.w + ' ' +
       kg.h + '" width="' + kg.w + '" height="' + kg.h + '" role="img">' +
+      '<defs>' + (defs || '') + '</defs>' +
       '<rect width="' + kg.w + '" height="' + kg.h + '" fill="' + h(k.nen) + '"/>' +
       ruot + '</svg>';
+  }
+
+  /* Gom các mảnh (mỗi mảnh là {defs, ve}) thành một cặp. Viết tay
+     việc nối defs ở từng bộ vẽ là chỗ quên chắc chắn xảy ra: quên một
+     defs thì hình vẫn vẽ ra, chỉ mất chuyển sắc — im lặng đúng kiểu
+     khó thấy nhất. */
+  function gom(ds) {
+    return {defs: ds.map(function (x) { return x.defs || ''; }).join(''),
+            ve: ds.map(function (x) { return x.ve || ''; }).join('')};
   }
 
   /* Câu đầu của nội dung. Tấm bìa nói MỘT câu — câu đầu là câu chủ hệ
@@ -192,16 +391,19 @@ var G = window.G || {}; window.G = G;
     var dayVung = kg.h - Math.round(kg.h * 0.085) - 34;   /* chừa chỗ dấu GITA */
     var dinh = Math.round((dayVung - caoCau - caoPhu) / 2) + co * 0.32;
 
+    var nen = lopNen(kg, k);
+    var cs = defChuSac(k);
     var t = veChu(cau, le, dinh, {co: co, chu: CHU_TIEU, dam: 600,
-      mau: k.gitaInk, rong: rong, gian: 1.24});
-    var o = '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>' +
+      mau: 'url(#' + cs.id + ')', rong: rong, gian: 1.24});
+    var o = nen.ve +
+      '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>' +
       '<rect x="' + le + '" y="' + Math.round(dinh - co * 1.02) + '" width="52" height="4" ' +
         'rx="2" fill="' + h(k.do) + '"/>' + t.svg;
     if (phu)
       o += veChu(phu, le, dinh + t.cao + co * 0.5, {co: coPhu,
         chu: CHU_THAN, dam: 500, mau: k.muc2, rong: rong, gian: 1.45}).svg;
     o += dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.085));
-    return {ok: true, svg: khung(kg, k, o)};
+    return {ok: true, svg: khung(kg, k, o, nen.defs + cs.defs)};
   }
 
   /* ═══════════ BỘ VẼ · MỘT CON SỐ ═══════════
@@ -239,17 +441,20 @@ var G = window.G || {}; window.G = G;
     while (doRong(s.so, '800 ' + coSo + 'px ' + CHU_THAN) > rong && coSo > 40) coSo -= 4;
 
     var giua = Math.round(kg.w / 2), dinh = Math.round(kg.h * 0.44);
-    var o = '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>' +
+    var nen = lopNen(kg, k);
+    var cs = defChuSac(k);
+    var o = nen.ve +
+      '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>' +
       '<text x="' + giua + '" y="' + dinh + '" text-anchor="middle" ' +
         'font-family="' + h(CHU_THAN) + '" font-size="' + coSo + '" font-weight="800" ' +
-        'fill="' + h(k.gitaSau) + '" letter-spacing="-2">' + h(s.so) + '</text>' +
+        'fill="url(#' + cs.id + ')" letter-spacing="-2">' + h(s.so) + '</text>' +
       '<rect x="' + (giua - 26) + '" y="' + Math.round(dinh + coSo * 0.22) +
         '" width="52" height="4" rx="2" fill="' + h(k.do) + '"/>';
     o += veChu(cau, giua, Math.round(dinh + coSo * 0.62), {co: Math.round(kg.w / 42),
       chu: CHU_THAN, dam: 500, mau: k.muc2, rong: Math.round(rong * 0.9),
       gian: 1.5, can: 'middle'}).svg;
     o += dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.085));
-    return {ok: true, svg: khung(kg, k, o)};
+    return {ok: true, svg: khung(kg, k, o, nen.defs + cs.defs)};
   }
 
   /* ═══════════ BỘ VẼ · BẢN ĐỒ HÀNH TRÌNH ═══════════
@@ -277,17 +482,25 @@ var G = window.G || {}; window.G = G;
     var truc = Math.round(kg.h * 0.46);
     var dang = String(x.tang || '').toUpperCase();
 
-    var o = '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>';
+    var nen = lopNen(kg, k);
+    var bong = defBong(k);
+    var cs = defChuSac(k);
+    var o = nen.ve +
+      '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>';
     o += veChu(x.nhiemVu, le, Math.round(kg.h * 0.17), {co: Math.round(kg.w / 30),
-      chu: CHU_TIEU, dam: 600, mau: k.gitaInk, rong: rong, gian: 1.25}).svg;
+      chu: CHU_TIEU, dam: 600, mau: 'url(#' + cs.id + ')', rong: rong, gian: 1.25}).svg;
     o += '<line x1="' + viTriX(0) + '" y1="' + truc + '" x2="' + viTriX(ds.length - 1) +
       '" y2="' + truc + '" stroke="' + h(k.vien) + '" stroke-width="3"/>';
 
     ds.forEach(function (t, i) {
       var cx = viTriX(i);
       var day = (t.tang === dang);
-      o += '<circle cx="' + cx + '" cy="' + truc + '" r="' + (day ? 15 : 9) + '" ' +
-        'fill="' + h(day ? k.do : k.gita) + '"/>' +
+      /* Mốc nhận bóng đổ nên nó NỔI TRÊN đường kẻ, chứ không nằm cùng
+         một mặt phẳng với đường. Đó là chỗ chiều sâu có việc thật để
+         làm: mắt đọc ngay cái nào là mốc, cái nào là đường nối. */
+      o += '<g filter="url(#' + bong.id + ')">' +
+        '<circle cx="' + cx + '" cy="' + truc + '" r="' + (day ? 15 : 9) + '" ' +
+        'fill="' + h(day ? k.do : k.gita) + '"/></g>' +
         (day ? '<circle cx="' + cx + '" cy="' + truc + '" r="24" fill="none" stroke="' +
           h(k.do) + '" stroke-width="2" opacity="0.45"/>' : '') +
         '<text x="' + cx + '" y="' + (truc - 38) + '" text-anchor="middle" ' +
@@ -303,7 +516,137 @@ var G = window.G || {}; window.G = G;
         rong: Math.round(buoc - 22), gian: 1.35, can: 'middle'}).svg;
     });
     o += dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.09));
-    return {ok: true, svg: khung(kg, k, o)};
+    return {ok: true, svg: khung(kg, k, o, nen.defs + bong.defs + cs.defs)};
+  }
+
+  /* ═══════════ BỘ VẼ · KHUNG PHƯƠNG PHÁP (LƯỚI Ô) ═══════════
+     Ảnh mẫu chủ hệ gửi có sáu ô năng lực, mỗi ô một huy hiệu màu, một
+     tiêu đề, một câu mô tả. Đó là đúng nhiệm vụ của loại hình KHUNG
+     trong hiến pháp: "Giúp hiểu hệ thống làm việc theo cách nào".
+
+     ══ MÁY KHÔNG ĐOÁN ĐÂU LÀ MỘT Ô ══
+     Cám dỗ là cho máy tự cắt nội dung thành sáu ô. Cắt kiểu gì cũng
+     là đoán, và đoán sai thì tấm hình nói sai — luật C10 cấm đúng
+     thứ đó. Nên định dạng phải RÕ, người viết gõ ra, máy chỉ đọc:
+
+         ĐỌC HIỂU — Toàn bộ hệ thống Web App GITA 365
+         TƯ VẤN — Cá nhân hoá theo nhu cầu của bạn
+
+     Mỗi dòng một ô: TÊN, dấu gạch dài, rồi mô tả. Không đủ ba dòng
+     đúng dạng thì bộ vẽ DỪNG và chỉ ra dạng cần gõ — nói "không vẽ
+     được" mà không nói cần gõ thế nào thì người dùng đoán tiếp. */
+  function catO(chu) {
+    var ra = [];
+    String(chu || '').split('\n').forEach(function (d) {
+      var m = /^\s*(.{2,40}?)\s+[—–]\s+(.{4,})$/.exec(d);
+      if (m) ra.push({ten: m[1].trim(), y: m[2].trim()});
+    });
+    return ra;
+  }
+
+  function veKhung(x, kg) {
+    var k = bang();
+    var o6 = catO(x.noiDung);
+    if (o6.length < 3) return {ok: false,
+      error: 'Khung phương pháp cần ít nhất BA ô, mỗi ô một dòng theo dạng ' +
+             '"TÊN Ô — mô tả một câu" (dấu gạch dài). Máy KHÔNG tự cắt nội ' +
+             'dung thành ô: cắt kiểu gì cũng là đoán, và một tấm hình dựng ' +
+             'trên cái đoán thì nói sai mà trông vẫn chắc chắn. Đang đọc ra ' +
+             o6.length + ' ô.'};
+    var sac = sacTang();
+    if (sac.length < 6) return {ok: false,
+      error: 'Chưa mở được bảng màu thương hiệu (G.BRAND.mau). Sáu sắc của ' +
+             'lưới ô lấy từ bảng ấy chứ không tự đặt — tự đặt là dựng bảng ' +
+             'màu thứ hai mà không ai biết là có bản thứ hai.'};
+
+    o6 = o6.slice(0, 6);
+    var cot = o6.length <= 4 ? 2 : 3;
+    var hang = Math.ceil(o6.length / cot);
+    var le = Math.round(kg.w * 0.06);
+    /* Lưới bắt đầu ngay dưới tiêu đề. Bản đầu để 0,34 và tấm hở một
+       mảng trắng bằng một phần tư chiều cao ở giữa — mảng trống ấy
+       không mang tin gì, mà lại đẩy sáu ô xuống lùn đi. Chỗ trống
+       trong một tấm hình phải là chỗ NGHỈ giữa hai khối, không phải
+       chỗ thừa vì tính sai. */
+    var dinhLuoi = Math.round(kg.h * 0.235);
+    var dayLuoi = kg.h - Math.round(kg.h * 0.115);
+    var rongO = Math.round((kg.w - le * 2 - 18 * (cot - 1)) / cot);
+    var caoO = Math.round((dayLuoi - dinhLuoi - 18 * (hang - 1)) / hang);
+
+    var nen = lopNen(kg, k, 1.3);
+    var bong = defBong(k);
+    var cs = defChuSac(k);
+    var manh = [nen, bong, cs];
+
+    /* Tiêu đề dùng chữ nhấn và chuyển sắc — MỘT câu duy nhất trong
+       tấm được phép, đúng luật của .grad-text. */
+    var tieu = veChu(x.nhiemVu, le, Math.round(kg.h * 0.155),
+      {co: Math.round(kg.w / 26), chu: CHU_TIEU, dam: 600,
+       mau: 'url(#' + cs.id + ')', rong: kg.w - le * 2, gian: 1.2});
+
+    /* ── ĐỈNH CỤM CHUNG CHO CẢ HÀNG ──
+       Căn giữa từng ô một cách độc lập thì ô nào mô tả một dòng sẽ tụt
+       xuống so với ô bên cạnh hai dòng, và sáu tiêu đề không thẳng
+       hàng. Mắt quét một cái lưới theo HÀNG NGANG, nên tiêu đề lệch
+       nhau đọc ra ngay là xếp ẩu — dù từng ô riêng lẻ đều cân.
+       Lấy cụm CAO NHẤT trong hàng làm chuẩn cho cả hàng: huy hiệu và
+       tiêu đề thẳng băng, chỉ phần mô tả dài ngắn khác nhau ở dưới,
+       mà đó là chỗ khác nhau THẬT nên khác nhau là đúng. */
+    var coTenC = Math.round(kg.w / 44), coYC = Math.round(kg.w / 66);
+    var rC = Math.round(Math.min(rongO, caoO) * 0.17);
+    var hoTenC = Math.round(caoO * 0.115), hoYC = Math.round(caoO * 0.055);
+    var caoHang = [];
+    o6.forEach(function (m, i) {
+      var dT = catDong(m.ten, '800 ' + coTenC + 'px ' + CHU_THAN, rongO - 24);
+      var dY = catDong(m.y, '500 ' + coYC + 'px ' + CHU_THAN, rongO - 26);
+      var c = rC * 2 + hoTenC + dT.length * coTenC * 1.2 +
+        hoYC + dY.length * coYC * 1.34;
+      var hg = Math.floor(i / cot);
+      caoHang[hg] = Math.max(caoHang[hg] || 0, c);
+    });
+
+    var ve = '';
+    o6.forEach(function (m, i) {
+      var cx = le + (i % cot) * (rongO + 18);
+      var cy = dinhLuoi + Math.floor(i / cot) * (caoO + 18);
+      var s = sac[i % sac.length];
+      var kinh = tamKinh(cx, cy, rongO, caoO, k, {sac: s.hex, bong: bong.id});
+      var r = Math.round(Math.min(rongO, caoO) * 0.17);
+      var giuaX = cx + Math.round(rongO / 2);
+
+      /* ── CĂN CẢ CỤM VÀO GIỮA Ô, KHÔNG THẢ TỪ TRÊN XUỐNG ──
+         Bản đầu đặt huy hiệu ở 0,27 chiều cao ô rồi thả tên và mô tả
+         xuống dưới. Ô nào mô tả ngắn thì hở hẳn một mảng ở đáy, ô nào
+         dài thì chật — sáu ô cùng khổ mà ruột lệch nhau, và mắt đọc
+         ra ngay là "tấm này xếp ẩu" dù không chỉ được ra chỗ nào sai.
+         Đo cụm trước, rồi mới đặt: đúng cách đã sửa cho tấm bìa. */
+      var coTen = Math.round(kg.w / 44), coY = Math.round(kg.w / 66);
+      var dTen = catDong(m.ten, '800 ' + coTen + 'px ' + CHU_THAN, rongO - 24);
+      var dY = catDong(m.y, '500 ' + coY + 'px ' + CHU_THAN, rongO - 26);
+      var hoTen = Math.round(caoO * 0.115), hoY = Math.round(caoO * 0.055);
+      var dinhCum = cy + Math.round((caoO - caoHang[Math.floor(i / cot)]) / 2);
+
+      var hh = huyHieu(giuaX, dinhCum + r, r, s.hex,
+        THU_TU_HINH[i % THU_TU_HINH.length]);
+      manh.push(kinh); manh.push(hh);
+      ve += kinh.ve + hh.ve;
+
+      var yTen = dinhCum + r * 2 + hoTen + coTen * 0.78;
+      ve += veChu(m.ten, giuaX, yTen,
+        {co: coTen, chu: CHU_THAN, dam: 800, mau: k.muc,
+         rong: rongO - 24, gian: 1.2, can: 'middle', gianChu: 0.4}).svg;
+      ve += veChu(m.y, giuaX,
+        yTen + (dTen.length - 1) * coTen * 1.2 + hoY + coY * 1.05,
+        {co: coY, chu: CHU_THAN, dam: 500, mau: k.muc2,
+         rong: rongO - 26, gian: 1.34, can: 'middle'}).svg;
+    });
+
+    var g = gom(manh);
+    var ruot = nen.ve +
+      '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>' +
+      tieu.svg + ve +
+      dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.062));
+    return {ok: true, svg: khung(kg, k, ruot, g.defs)};
   }
 
   /* ═══════════ BẢNG PHÂN VIỆC ═══════════
@@ -314,7 +657,10 @@ var G = window.G || {}; window.G = G;
   var BO_VE = {
     BIA:              {ve: veBia,    kho: 'rong'},
     MOT_SO:           {ve: veMotSo,  kho: 'rong'},
-    BANDO_HANHTRINH:  {ve: veBanDo,  kho: 'rong'}
+    BANDO_HANHTRINH:  {ve: veBanDo,  kho: 'rong'},
+    /* Lưới ô mặc định khổ VUÔNG: sáu ô xếp 3×2 trên khổ ngang thì mỗi
+       ô lùn quá cho hai dòng mô tả. Khổ vuông cho ô thở. */
+    KHUNG:            {ve: veKhung,  kho: 'vuong'}
   };
 
   /* ═══════════ CỬA DUY NHẤT ═══════════ */
@@ -352,6 +698,10 @@ var G = window.G || {}; window.G = G;
      không phải chép lại hai bảng trên. */
   G.veThiGiacBiet = function () {
     return {loaiHinh: Object.keys(BO_VE),
+      /* Khai ra sáu sắc đang dùng thật, để bộ kiểm đối chiếu được
+         chúng với G.BRAND.mau. Không khai thì luật "màu lấy từ bảng
+         đã chốt" chỉ là một câu trong chú giải. */
+      sac: sacTang(),
       kho: Object.keys(KHO_GIAY).map(function (m) {
         return {ma: m, ten: KHO_GIAY[m].ten}; })};
   };

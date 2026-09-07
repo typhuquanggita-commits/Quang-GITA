@@ -10333,8 +10333,20 @@ const { chromium } = require(PW);
       o.style.cssText = 'position:absolute;left:-9999px;top:0';
       document.body.appendChild(o);
 
+      /* Loại hình nào đòi một DẠNG nội dung riêng thì bài thử phải gõ
+         đúng dạng ấy. Lưới ô đòi mỗi dòng "TÊN — mô tả"; nhét đoạn văn
+         chung vào thì nó từ chối đúng luật của nó, và phép đo sẽ chấm
+         một lần từ chối ĐÚNG thành một bộ vẽ HỎNG. */
+      const RIENG = {
+        KHUNG: 'ĐỌC HIỂU — Toàn bộ hệ thống Web App GITA 365 cho cả nhà cùng dùng\n' +
+               'TƯ VẤN — Cá nhân hoá theo nhu cầu của nhà mình\n' +
+               'HỖ TRỢ — Lên kế hoạch học tập, rèn luyện và phát triển bản thân\n' +
+               'GIẢI ĐÁP — Mọi thắc mắc nhanh chóng, chính xác\n' +
+               'TỐI ƯU — Tiết kiệm thời gian, hiệu quả tối đa\n' +
+               'CÙNG BẠN — Kiến tạo phiên bản tốt nhất của chính mình'
+      };
       for (const loai of G.veThiGiacBiet().loaiHinh) {
-        const v = G.veThiGiac(nen(loai, CHU));
+        const v = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
         if (!v.ok) { r.hong.push(loai + ': ' + v.error.slice(0, 70)); continue; }
         r.veDuoc.push(loai);
         o.innerHTML = v.svg;
@@ -10410,25 +10422,71 @@ const { chromium } = require(PW);
       r.choi.coSoThiVe = G.veThiGiac(nen('MOT_SO',
         'Đến năm 2030, một triệu người Việt lớn lên trong một gia đình vận ' +
         'hành được.')).ok === true;
+      /* Lưới ô KHÔNG tự cắt nội dung thành ô — cắt kiểu gì cũng là đoán. */
+      r.choi.oPhaiGoRa = G.veThiGiac(nen('KHUNG',
+        'Hệ thống này làm việc theo một cách rất riêng, có nhiều bước khác ' +
+        'nhau và mỗi bước một việc.')).ok === false;
+
+      /* ── HAI LUẬT THƯƠNG HIỆU, ĐO CHỨ KHÔNG TIN ── */
+      const b = (G.BRAND && G.BRAND.mau) || [];
+      const TEN = ['T1 · Xanh dương', 'T2 · Tím', 'T3 · Lam',
+                   'T4 · Lục', 'T5 · Hổ phách', 'Hồng nhắc'];
+      r.sacThieu = TEN.filter(t => !b.filter(x => x.k === t && x.hex).length);
+
+      const g6 = G.veThiGiac(nen('KHUNG', RIENG.KHUNG));
+      r.logoCoBong = null;
+      if (g6.ok) {
+        const w = document.createElement('div');
+        w.style.cssText = 'position:absolute;left:-9999px;top:0';
+        document.body.appendChild(w); w.innerHTML = g6.svg;
+        /* BRAND.camKy: "không đổi màu logo, không nghiêng, KHÔNG THÊM
+           BÓNG ĐỔ". Dấu GITA là thứ DUY NHẤT trong tấm không được nhận
+           bóng, trong khi mọi tấm kính quanh nó đều có — nên đây đúng
+           là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. */
+        const dau = [...w.querySelectorAll('text')]
+          .filter(t => (t.textContent || '').indexOf('GITA 365') >= 0)[0];
+        r.logoCoBong = false;
+        if (!dau) r.logoCoBong = 'không tìm thấy dấu GITA trong tấm';
+        else for (let e = dau; e && e.tagName !== 'svg'; e = e.parentNode)
+          if (e.getAttribute && e.getAttribute('filter')) r.logoCoBong = true;
+        /* Sáu sắc dùng thật trong tấm phải TRUY ĐƯỢC về bảng đã chốt.
+           Huy hiệu pha sáng/tối từ sắc gốc nên mã không trùng nguyên
+           văn; đo bằng cách đòi mỗi sắc gốc xuất hiện đúng một lần
+           trong danh sách sắc mà bộ vẽ khai ra. */
+        w.remove();
+      }
+      const sac = (G.veThiGiacBiet().sac || []).map(x => x.hex);
+      r.sacLech = sac.filter(x =>
+        !b.filter(y => String(y.hex).toLowerCase() === String(x).toLowerCase()).length);
+      r.soSac = sac.length;
       return r;
     });
 
     const choiDu = ra.choi.chuaQuaCong && ra.choi.loaiLa &&
-      ra.choi.khongCoSo && ra.choi.coSoThiVe;
+      ra.choi.khongCoSo && ra.choi.coSoThiVe && ra.choi.oPhaiGoRa;
+    const brandDu = ra.logoCoBong === false && !(ra.sacLech || []).length &&
+      !(ra.sacThieu || []).length && ra.soSac === 6;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
-        ra.veDuoc.length >= 3 && choiDu,
-      'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống',
+        ra.veDuoc.length >= 4 && choiDu && brandDu,
+      'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào',
       ra.khongCoBoVe ? 'KHÔNG NẠP ĐƯỢC src/ve-thi-giac.js'
-        : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu
+        : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu && brandDu
           ? ra.veDuoc.length + ' bộ vẽ (' + ra.veDuoc.join(', ') +
-            ') · mọi thẻ chữ nằm trong khung, không thẻ nào đè thẻ nào · từ chối đủ ba chỗ'
+            ') · mọi thẻ chữ nằm trong khung, không thẻ nào đè thẻ nào · từ chối đủ bốn chỗ · '
+            + 'sáu sắc đều truy về G.BRAND.mau · dấu GITA không nhận bóng đổ'
           : [ra.tran.length ? 'CHỮ TRÀN RA NGOÀI: ' + ra.tran.join(' | ') : '',
              ra.de.length ? 'CHỮ ĐÈ LÊN CHỮ: ' + ra.de.join(' | ') : '',
              ra.hong.length ? 'bộ vẽ hỏng: ' + ra.hong.join(' | ') : '',
              !ra.choi.chuaQuaCong ? 'VẼ CẢ BẢN GHI CHƯA QUA CỔNG TẦNG' : '',
              !ra.choi.loaiLa ? 'loại hình lạ vẫn vẽ ra một tấm' : '',
              !ra.choi.khongCoSo ? 'MỘT CON SỐ mà không có số vẫn vẽ' : '',
-             !ra.choi.coSoThiVe ? 'có số thật mà lại từ chối' : ''
+             !ra.choi.coSoThiVe ? 'có số thật mà lại từ chối' : '',
+             !ra.choi.oPhaiGoRa ? 'LƯỚI Ô TỰ CẮT NỘI DUNG THÀNH Ô — đó là đoán' : '',
+             ra.logoCoBong === true ? 'DẤU GITA ĐANG NHẬN BÓNG ĐỔ — BRAND.camKy cấm' : '',
+             typeof ra.logoCoBong === 'string' ? ra.logoCoBong : '',
+             (ra.sacThieu || []).length ? 'G.BRAND.mau thiếu sắc: ' + ra.sacThieu.join(', ') : '',
+             (ra.sacLech || []).length ? 'SẮC KHÔNG CÓ TRONG BẢNG ĐÃ CHỐT: ' + ra.sacLech.join(', ') : '',
+             ra.soSac !== 6 ? 'bộ vẽ khai ' + ra.soSac + ' sắc, cần 6' : ''
             ].filter(Boolean).join(' · ')));
   }
 
