@@ -386,7 +386,89 @@ var G = window.G || {}; window.G = G;
           'stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" ' +
           'opacity="0.85"/>'
   };
-  var THU_TU_HINH = ['sach', 'thoai', 'dich', 'den', 'banh', 'cot'];
+  /* ── BỘ BIỂU TƯỢNG RỘNG RA, VÀ CHỌN THEO NGHĨA ──
+     Chủ hệ đề nghị "biểu tượng làm điểm nhấn khác biệt cho từng
+     phần". Sáu hình xoay vòng theo THỨ TỰ thì phần nào cũng có hình,
+     nhưng hình không dính gì tới phần ấy — và mắt đọc ra ngay là
+     hình dán cho có.
+     Nay mười sáu hình, và chọn theo TỪ KHOÁ trong tên phần. Đây là
+     một suy diễn, nên nói rõ nó là suy diễn gì: máy đoán HÌNH MINH
+     HOẠ, không đoán NỘI DUNG. Đoán sai một cái hình thì tấm vẫn nói
+     đúng; luật C10 cấm đoán nội dung, không cấm chọn hình. Và khi
+     không có từ khoá nào khớp thì quay về thứ tự — chứ không bỏ
+     trống, vì một ô thiếu hình giữa năm ô có hình mới là hỏng. */
+  var HINH_THEM = {
+    dung: '<path d="M-9 0 l6 6 l12 -13" fill="none" stroke="#FFFFFF" ' +
+          'stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>',
+    sai:  '<path d="M-7 -7 l14 14 M7 -7 l-14 14" fill="none" stroke="#FFFFFF" ' +
+          'stroke-width="3.4" stroke-linecap="round"/>',
+    nui:  '<path d="M-11 8 l7 -12 l4 6 l5 -9 l6 15 z"/>',
+    co:   '<path d="M-6 9 v-18 h1.8 v18 z M-4 -9 l13 3.4 l-13 3.4 z"/>',
+    khoa: '<path d="M-7 -1 h14 a1.6 1.6 0 0 1 1.6 1.6 v7.8 a1.6 1.6 0 0 1 -1.6 1.6 ' +
+          'h-14 a1.6 1.6 0 0 1 -1.6 -1.6 v-7.8 a1.6 1.6 0 0 1 1.6 -1.6 z ' +
+          'M-4.4 -1 v-3.6 a4.4 4.4 0 0 1 8.8 0 v3.6 h-2.3 v-3.6 a2.1 2.1 0 0 0 -4.2 0 v3.6 z"/>',
+    khien:'<path d="M0 -10 l9 3.4 v6.2 c0 5 -3.8 8.6 -9 10.4 c-5.2 -1.8 -9 -5.4 -9 -10.4 ' +
+          'v-6.2 z"/>',
+    tim:  '<path d="M0 9 c-7 -4.6 -10 -8 -10 -11.6 a4.9 4.9 0 0 1 10 -2.4 ' +
+          'a4.9 4.9 0 0 1 10 2.4 c0 3.6 -3 7 -10 11.6 z"/>',
+    tay:  '<path d="M-11 -1 l4 -4 l5 4 l5 -4 l4 4 l-5 5 l-3 -2 l-3 3 l-3 -3 l-3 2 z"/>',
+    labàn:'<circle cx="0" cy="0" r="9.4" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>' +
+          '<path d="M4.4 -4.4 l-2.6 6.6 l-6.6 2.6 l2.6 -6.6 z"/>',
+    lich: '<rect x="-9" y="-7.4" width="18" height="16" rx="2.2" fill="none" ' +
+          'stroke="#FFFFFF" stroke-width="2.4"/><path d="M-9 -2.6 h18" stroke="#FFFFFF" ' +
+          'stroke-width="2.2"/><path d="M-5 -10.4 v4.4 M5 -10.4 v4.4" stroke="#FFFFFF" ' +
+          'stroke-width="2.4" stroke-linecap="round"/>',
+    sao:  '<path d="M0 -10 l2.9 6.4 l7 0.8 l-5.2 4.7 l1.4 6.9 l-6.1 -3.5 l-6.1 3.5 ' +
+          'l1.4 -6.9 l-5.2 -4.7 l7 -0.8 z"/>',
+    cup:  '<path d="M-6 -9 h12 v5 a6 6 0 0 1 -12 0 z M-6 -7 h-3 a3 3 0 0 0 3 3 z ' +
+          'M6 -7 h3 a3 3 0 0 1 -3 3 z M-1.6 1.4 h3.2 v4.2 h3.4 v2.6 h-10 v-2.6 h3.4 z"/>',
+    nguoi:'<circle cx="0" cy="-5" r="4.2"/><path d="M-8 9 a8 8 0 0 1 16 0 z"/>',
+    doi:  '<circle cx="-5.4" cy="-5" r="3.6"/><circle cx="5.4" cy="-5" r="3.6"/>' +
+          '<path d="M-12 8 a6.6 6.6 0 0 1 13.2 0 z M1.4 8 a6.6 6.6 0 0 1 12 0 z"/>'
+  };
+  Object.keys(HINH_THEM).forEach(function (k2) { HINH[k2] = HINH_THEM[k2]; });
+
+  var TU_KHOA_HINH = [
+    ['dich',  'muc tieu|muc dich|dich den|dinh huong'],
+    ['thoai', 'tu van|lang nghe|hoi dap|tro chuyen|giao tiep|phan hoi'],
+    ['den',   'giai dap|y tuong|tu duy|khai mo|sang tao'],
+    ['banh',  'toi uu|he thong|van hanh|quy trinh'],
+    ['cot',   'ket qua|tang truong|hieu qua|tien bo|do luong'],
+    ['sach',  'doc hieu|hoc tap|kien thuc|tai lieu|dao tao'],
+    ['nui',   'tam nhin|dinh nui|vuot|thu thach|but pha|dot pha'],
+    ['co',    'bat dau|khoi dau|chang|moc|buoc'],
+    ['khoa',  'bao mat|rieng tu|an toan|quyen'],
+    ['khien', 'bao ve|cam ket|nguyen tac|chuan muc'],
+    ['tim',   'dong hanh|cam xuc|niem tin|tu tam'],
+    ['tay',   'hop tac|ket noi|chia se|phoi hop|cung ban'],
+    ['labàn', 'chien luoc|lo trinh|ban do|phuong huong'],
+    ['lich',  'nhip|lich|chu ky|thoi gian|hang ngay'],
+    ['sao',   'chat luong|xuat sac|noi bat|gia tri'],
+    ['cup',   'thanh cong|ky tich|vuot troi|thanh tuu'],
+    ['nguoi', 'ca nhan|ban than|hoc vien'],
+    ['doi',   'gia dinh|doi nhom|ca nha|cong dong|phu huynh|ho tro']
+  ];
+  var THU_TU_HINH = ['sach', 'thoai', 'dich', 'den', 'banh', 'cot',
+                     'labàn', 'tim', 'co', 'sao', 'doi', 'cup'];
+
+  /* ── KHỚP THEO BIÊN TỪ, KHÔNG KHỚP GIỮA TỪ ──
+     Bản đầu dò bằng chuỗi con, và ô "GIA ĐÌNH" ra hình NÚI: từ khoá
+     "dinh" (của "đỉnh") nằm gọn trong "gia dinh". Một từ khoá ngắn
+     luôn tìm được chỗ trú trong một từ dài hơn.
+     Sau khi bỏ dấu thì chuỗi chỉ còn chữ cái Latin, nên \b dùng được
+     ở đây — khác hẳn chỗ dò chữ "và" có dấu, nơi \b không bao giờ
+     khớp. Hai chỗ dò chữ, hai luật khác nhau, và biết vì sao khác. */
+  function chonHinh(ten, i) {
+    var t = boDauChu(ten);
+    for (var j = 0; j < TU_KHOA_HINH.length; j++)
+      if (new RegExp('\\b(?:' + TU_KHOA_HINH[j][1] + ')\\b', 'i').test(t))
+        return TU_KHOA_HINH[j][0];
+    return THU_TU_HINH[i % THU_TU_HINH.length];
+  }
+  function boDauChu(x) {
+    return String(x || '').toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+  }
 
   function huyHieu(cx, cy, r, hex, hinh, bong, k) {
     var g = idMoi('hh'), a = idMoi('anh'), q = idMoi('quanghh');
@@ -990,7 +1072,7 @@ var G = window.G || {}; window.G = G;
       var dinhCum = cy + Math.round((caoO - caoHang[Math.floor(i / cot)]) / 2);
 
       var hh = huyHieu(giuaX, dinhCum + r, r, s.hex,
-        THU_TU_HINH[i % THU_TU_HINH.length], bongHh.id, k);
+        chonHinh(m.ten, i), bongHh.id, k);
       manh.push(kinh); manh.push(hh);
       ve += kinh.ve + hh.ve;
 
@@ -1228,7 +1310,7 @@ var G = window.G || {}; window.G = G;
           '" stroke="' + h(s.hex) + '" stroke-opacity="0.34" ' +
           'stroke-width="1" stroke-dasharray="3 4"/>';
         var hh = huyHieu(xo + rH2, yCot + rH2, rH2, s.hex,
-          THU_TU_HINH[(i * 3 + j) % THU_TU_HINH.length], null, k);
+          chonHinh(m.ten, i * 3 + j), null, k);
         manh.push(hh); ve += hh.ve;
         ve += '<text x="' + (xo + rH2 * 2 + 8) + '" y="' + (yCot + rH2 + coH2 * 0.36) +
           '" font-family="' + h(CHU_THAN) + '" font-size="' + coH2 +
@@ -1372,6 +1454,206 @@ var G = window.G || {}; window.G = G;
       dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030)), g.defs)};
   }
 
+  /* ── BÚT DẠ QUANG ──
+     Bốn trên năm tấm mẫu mới của chủ hệ dùng một vệt vàng sau cụm chữ
+     quan trọng nhất. Nó làm được thứ chữ đậm không làm: đậm nói "chữ
+     này nặng", vệt vàng nói "ĐỌC CHỖ NÀY TRƯỚC". Trên một tấm dày
+     bốn mươi mẩu chữ thì đó là khác biệt giữa đọc được và đọc nổi.
+     Người viết đánh dấu bằng ==hai dấu bằng==, máy không tự chọn —
+     máy chọn thì nó tô vàng chỗ nó tưởng là quan trọng. */
+  var VANG_QUANG = '#FFE24D';
+  function tachQuang(chu) {
+    var ra = [], t = String(chu || ''), m;
+    var re = /==([^=]{1,80})==/g, cuoi = 0;
+    while ((m = re.exec(t))) {
+      if (m.index > cuoi) ra.push({t: t.slice(cuoi, m.index), q: false});
+      ra.push({t: m[1], q: true});
+      cuoi = m.index + m[0].length;
+    }
+    if (cuoi < t.length) ra.push({t: t.slice(cuoi), q: false});
+    return ra.length ? ra : [{t: t, q: false}];
+  }
+  function boQuang(chu) { return String(chu || '').replace(/==([^=]{1,80})==/g, '$1'); }
+
+  /* Vẽ MỘT dòng có thể chứa vệt quang. Chỉ dùng cho dòng ngắn đứng
+     một mình (tiêu đề phụ, nhãn cột) — không dùng cho đoạn văn dài,
+     vì vệt quang cắt qua chỗ ngắt dòng thì trông như bôi bẩn. */
+  function veDongQuang(chu, x, y, o) {
+    var manh = tachQuang(chu), dx = 0, ra = '', font = (o.dam || 700) + ' ' + o.co + 'px ' + o.chu;
+    var tong = doRong(boQuang(chu), font);
+    var x0 = o.can === 'middle' ? x - tong / 2 : x;
+    manh.forEach(function (m) {
+      var w = doRong(m.t, font);
+      /* Vệt vàng phải ôm TRỌN hộp chữ, kể cả phần vươn lên và phần
+         thõng xuống của dấu tiếng Việt. Bản đầu chỉ cao 1,06 lần cỡ
+         chữ nên dấu "ệ" và "đ" thò ra ngoài vệt — phép đo vắt-mép bắt
+         ngay, và đó đúng là thứ chủ hệ nói: "không để chữ ngoài màu".
+         Tiếng Việt cần vệt cao hơn tiếng Latin không dấu, vì dấu
+         chồng lên nguyên âm đẩy hộp chữ cao thêm một nấc. */
+      if (m.q) ra += '<rect x="' + (x0 + dx - o.co * 0.22).toFixed(1) + '" y="' +
+        (y - o.co * 1.00).toFixed(1) + '" width="' + (w + o.co * 0.44).toFixed(1) +
+        '" height="' + (o.co * 1.42).toFixed(1) + '" rx="' + (o.co * 0.12).toFixed(1) +
+        '" fill="' + h(VANG_QUANG) + '" fill-opacity="0.92"/>';
+      dx += w;
+    });
+    dx = 0;
+    manh.forEach(function (m) {
+      ra += '<text x="' + (x0 + dx).toFixed(1) + '" y="' + y + '" font-family="' +
+        h(o.chu) + '" font-size="' + o.co + '" font-weight="' + (o.dam || 700) +
+        '" fill="' + h(o.mau) + '"' +
+        (o.gianChu ? ' letter-spacing="' + o.gianChu + '"' : '') + '>' +
+        h(m.t) + '</text>';
+      dx += doRong(m.t, font);
+    });
+    return {svg: ra, rong: tong};
+  }
+
+  /* ═══════════ BỘ VẼ · HAI CỘT ĐỐI CHỨNG ═══════════
+     Loại hình TRUOC_SAU, hiến pháp khai "hai cột đối xứng · giúp nhìn
+     thấy chỗ đã đổi". Đây là cấu trúc có trong bốn trên năm tấm mẫu
+     mới của chủ hệ, và là cấu trúc thuyết phục nhất trong cả bộ: nó
+     không kể một chuyện, nó đặt hai chuyện cạnh nhau rồi để người đọc
+     tự kết luận. Một đường kẻ dọc ở giữa là toàn bộ lập luận.
+
+     Định dạng, người viết gõ ra:
+       TRÁI | Chỉ bán sản phẩm | == dễ bị sao chép ==
+       ✗ Không có dịch vụ đi kèm.
+       ✗ Khách hàng chỉ quan tâm đến giá.
+       PHẢI | Dịch vụ và trải nghiệm | == lợi thế thật sự ==
+       ✓ Tạo khác biệt bằng trải nghiệm.
+       ✓ Khách hàng quay lại nhiều lần. */
+  function catCot(chu) {
+    var ra = [], nay = null;
+    String(chu || '').split('\n').forEach(function (d) {
+      var c = /^\s*(TRÁI|PHẢI|TRƯỚC|SAU)\s*\|\s*([^|]+?)\s*(?:\|\s*(.+?))?\s*$/i.exec(d);
+      if (c) { nay = {ben: c[1].toUpperCase(), ten: c[2].trim(),
+        phu: (c[3] || '').trim(), y: []}; ra.push(nay); return; }
+      var g = /^\s*([✓✔×✗x])\s+(.{3,})$/i.exec(d);
+      if (g && nay) nay.y.push({dung: /[✓✔]/.test(g[1]), t: g[2].trim()});
+    });
+    return ra.slice(0, 2);
+  }
+
+  function veTruocSau(x, kg, che) {
+    var k = bang(che);
+    var ds = catCot(x.noiDung);
+    var nhan = docDau(x.noiDung, 'NHÃN'), bang2 = docDau(x.noiDung, 'BĂNG');
+    if (ds.length < 2 || !ds[0].y.length || !ds[1].y.length) return {ok: false,
+      error: 'Hai cột đối chứng cần ĐỦ HAI cột, mỗi cột có danh sách. Mở cột ' +
+             'bằng dòng "TRÁI | Tiêu đề cột | ==câu nhấn==" rồi các dòng bắt ' +
+             'đầu bằng ✓ hoặc ✗. Máy KHÔNG tự chia nội dung làm đôi: chia sai ' +
+             'chỗ thì hai cột nói ngược nhau, mà cả tấm này tồn tại chỉ để đặt ' +
+             'hai bên cạnh nhau cho đúng. Đang đọc ra ' + ds.length + ' cột.'};
+    var sac = sacTang();
+    var mauSai = k.doInk || k.do;
+    var mauDung = (sac.filter(function (c) { return /Lục/.test(c.ten); })[0] || {}).hex
+      || '#10B981';
+
+    var le = Math.round(kg.w * 0.055);
+    var nen = lopNen(kg, k, 0.9);
+    var bong = defBong(k, 1);
+    var cs = defChuSac(k);
+    var manh = [nen, bong, cs];
+
+    var coTieu = Math.round(kg.w / 24);
+    var yTieu = Math.round(kg.h * (nhan ? 0.085 : 0.070)) + coTieu;
+    var tieu = veChu(x.nhiemVu, Math.round(kg.w / 2), yTieu,
+      {co: coTieu, chu: CHU_TIEU, dam: 600, mau: 'url(#' + cs.id + ')',
+       rong: kg.w - le * 2, gian: 1.16, can: 'middle'});
+    var dnhan = nhan ? nhanTren(nhan, le + 6,
+      Math.round(yTieu - coTieu * 0.95), k, Math.round(coTieu * 0.40)) : '';
+    var day = yTieu + tieu.cao;
+    var dbang = null;
+    if (bang2) {
+      dbang = daiBang(bang2, Math.round(kg.w / 2), Math.round(day + coTieu * 0.24),
+        k, kg.w - le * 2);
+      manh.push(dbang);
+      day = day + coTieu * 0.24 + dbang.cao;
+    }
+
+    var dinh = Math.round(day + coTieu * 0.60);
+    var dayVung = kg.h - Math.round(kg.h * 0.075);
+    var khe = Math.round(kg.w * 0.035);
+    var rongCot = Math.round((kg.w - le * 2 - khe) / 2);
+
+    /* Đường kẻ dọc ở giữa — toàn bộ lập luận của tấm nằm ở đây. */
+    var ve = '<line x1="' + Math.round(kg.w / 2) + '" y1="' + (dinh - 8) +
+      '" x2="' + Math.round(kg.w / 2) + '" y2="' + dayVung +
+      '" stroke="' + h(k.muc3) + '" stroke-opacity="0.5" stroke-width="1.5"/>';
+
+    ds.forEach(function (c, i) {
+      var xc = le + i * (rongCot + khe);
+      var mau = i === 0 ? mauSai : mauDung;
+
+      /* Đầu cột: một CHIP màu đặc, chữ nằm TRỌN trong chip — chủ hệ
+         nói thẳng "không để chữ ngoài màu", nên chip đo theo chữ chứ
+         không đặt bề rộng cố định rồi hy vọng chữ vừa. */
+      var coDau = Math.round(kg.w * 0.026);
+      var dDau = catDong(c.ten, '800 ' + coDau + 'px ' + CHU_THAN, rongCot - 32);
+      var caoChip = dDau.length * coDau * 1.2 + coDau * 1.0;
+      var gC = idMoi('chip');
+      manh.push({defs: '<linearGradient id="' + gC + '" x1="0" y1="0" x2="1" y2="1">' +
+        '<stop offset="0%" stop-color="' + h(doiSang(mau, nemDai(k))) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(doiSang(mau, -nemDai(k))) + '"/>' +
+        '</linearGradient>'});
+      ve += '<g filter="url(#' + bong.id + ')"><rect x="' + xc + '" y="' + dinh +
+        '" width="' + rongCot + '" height="' + Math.round(caoChip) + '" rx="12" ' +
+        'fill="url(#' + gC + ')"/></g>';
+      ve += veChu(c.ten, xc + Math.round(rongCot / 2), dinh + coDau * 1.05,
+        {co: coDau, chu: CHU_THAN, dam: 800, mau: mucTren(mau),
+         rong: rongCot - 32, gian: 1.2, can: 'middle'}).svg;
+
+      var yy = dinh + caoChip + 16;
+      if (c.phu) {
+        var coPhu2 = Math.round(kg.w * 0.021);
+        ve += veDongQuang(c.phu, xc + Math.round(rongCot / 2), yy + coPhu2 * 0.85,
+          {co: coPhu2, chu: CHU_THAN, dam: 700, mau: k.muc, can: 'middle'}).svg;
+        yy += coPhu2 * 2.1;
+      }
+
+      /* Danh sách có dấu: dấu nằm trong một vòng tròn màu đặc, chữ
+         nằm NGOÀI vòng — hai thứ tách bạch, không chồng lên nhau. */
+      var coY = Math.round(kg.w * 0.0195), rD = Math.round(coY * 0.78);
+      /* ── GIÃN ĐỀU CHO HẾT VÙNG, KHÔNG ĐỂ HỞ ĐÁY ──
+         Cụm ngắn hơn khung là mặt trái của lỗi "cụm dài hơn khung":
+         cùng một nguyên nhân — không đo trước. Đo tổng chiều cao danh
+         sách, còn thừa bao nhiêu thì CHIA ĐỀU vào các khe, chặn trần
+         để tấm ít mục không bị kéo giãn thành thưa thớt. */
+      var ds2 = c.y.slice(0, 9);
+      var caoDs = 0;
+      ds2.forEach(function (m) {
+        var d2 = catDong(m.t, '500 ' + coY + 'px ' + CHU_THAN, rongCot - rD * 2 - 16);
+        caoDs += Math.max(rD * 2, d2.length * coY * 1.34) + coY * 0.52;
+      });
+      var thua = Math.max(0, dayVung - yy - caoDs);
+      var themKhe = ds2.length > 1
+        ? Math.min(coY * 1.15, thua / (ds2.length - 1)) : 0;
+      ds2.forEach(function (m) {
+        var mD = m.dung ? mauDung : mauSai;
+        var dong = catDong(m.t, '500 ' + coY + 'px ' + CHU_THAN,
+          rongCot - rD * 2 - 16);
+        ve += '<circle cx="' + (xc + rD) + '" cy="' + Math.round(yy + rD) +
+          '" r="' + rD + '" fill="' + h(mD) + '"/>' +
+          '<g transform="translate(' + (xc + rD) + ',' + Math.round(yy + rD) +
+          ') scale(' + (rD / 13).toFixed(3) + ')" fill="#FFFFFF">' +
+          HINH[m.dung ? 'dung' : 'sai'] + '</g>';
+        dong.forEach(function (t2, j) {
+          ve += '<text x="' + (xc + rD * 2 + 12) + '" y="' +
+            Math.round(yy + rD + coY * 0.36 + j * coY * 1.34) +
+            '" font-family="' + h(CHU_THAN) + '" font-size="' + coY +
+            '" font-weight="500" fill="' + h(k.muc2) + '">' + h(t2) + '</text>';
+        });
+        yy += Math.max(rD * 2, dong.length * coY * 1.34) + coY * 0.52 + themKhe;
+      });
+    });
+
+    var g = gom(manh);
+    return {ok: true, svg: khung(kg, k,
+      nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
+      h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : '') + ve +
+      dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030)), g.defs)};
+  }
+
   /* ═══════════ BẢNG PHÂN VIỆC ═══════════
      Loại hình nào KHÔNG có tên ở đây thì bộ vẽ nói thẳng là chưa có.
      Danh sách trắng, không danh sách cấm — cùng luật với mọi cửa khác
@@ -1387,7 +1669,8 @@ var G = window.G || {}; window.G = G;
     /* Hai cấu trúc DÀY: khổ dọc, vì cả hai xếp chồng theo chiều dọc và
        mỗi hàng phải đủ cao cho một cụm chữ, không phải một dòng. */
     SO_SANH_TANG:     {ve: veSoSanhTang, kho: 'doc'},
-    QUY_TRINH:        {ve: veQuyTrinh,   kho: 'doc'}
+    QUY_TRINH:        {ve: veQuyTrinh,   kho: 'doc'},
+    TRUOC_SAU:        {ve: veTruocSau,   kho: 'vuong'}
   };
 
   /* ═══════════ CỬA DUY NHẤT ═══════════ */
@@ -1433,6 +1716,9 @@ var G = window.G || {}; window.G = G;
 
   /* Danh sách khổ và loại hình vẽ được, cho màn hình dựng ô chọn mà
      không phải chép lại hai bảng trên. */
+  /* Mở hàm chọn hình ra cho bộ kiểm neo được mấy cặp tên ↔ hình. */
+  G.veThiGiacChonHinh = chonHinh;
+
   G.veThiGiacBiet = function () {
     return {loaiHinh: Object.keys(BO_VE),
       /* Khai ra sáu sắc đang dùng thật, để bộ kiểm đối chiếu được

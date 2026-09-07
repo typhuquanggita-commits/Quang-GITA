@@ -10306,14 +10306,14 @@ const { chromium } = require(PW);
        · MỘT CON SỐ mà nội dung không có số nào → không tự nghĩ ra số */
   {
     const ra = await p.evaluate(async () => {
-      const G = window.G, r = {tran: [], de: [], hong: [], veDuoc: [], choi: {}};
+      const G = window.G, r = {tran: [], de: [], vat: [], hong: [], veDuoc: [], choi: {}};
       /* ĐỢI BỘ CHỮ TẢI XONG. Đo lúc chữ còn đang tải là đo bộ chữ dự
          phòng của trình duyệt, không phải bộ chữ tấm hình sẽ dùng —
          và bề rộng hai bộ ấy khác nhau đủ để một phép đo tràn nói sai
          cả hai chiều. */
       try { if (document.fonts) await document.fonts.ready; } catch (e) {}
       if (!G.veThiGiac || !G.veThiGiacBiet)
-        return {khongCoBoVe: true, tran: [], de: [], hong: [], veDuoc: [], choi: {}};
+        return {khongCoBoVe: true, tran: [], de: [], vat: [], hong: [], veDuoc: [], choi: {}};
 
       const nen = (loai, noiDung) => ({
         id: 'TG-thu', tang: 'T1', loaiHinh: loai, soatTang: 'thử',
@@ -10368,7 +10368,16 @@ const { chromium } = require(PW);
           '· Tìm nguyên nhân gốc rễ chứ không chữa triệu chứng\n' +
           'BƯỚC 03 | Định hướng lộ trình cá nhân hoá cho nhà\n' +
           '· Lộ trình chín mươi ngày đột phá\n' +
-          '· Mục tiêu rõ ràng và đo lường được từng tuần'
+          '· Mục tiêu rõ ràng và đo lường được từng tuần',
+        TRUOC_SAU:
+          'TRÁI | Nhà chạy theo cảm tính | ==mệt mà không tới đâu==\n' +
+          '✗ Không có nhịp cố định, hôm nhớ hôm quên mỗi ngày.\n' +
+          '✗ Nhắc con bằng cảm xúc, mỗi hôm một kiểu khác nhau.\n' +
+          '✗ Không có gì để đọc lại khi nhà vấp giữa chừng.\n' +
+          'PHẢI | Nhà có nhịp và có sổ | ==đi chậm mà tới đích==\n' +
+          '✓ Mỗi ngày một dòng, không bỏ, không cần ai canh.\n' +
+          '✓ Nhắc bằng điều kiện đã thoả thuận trước với nhau.\n' +
+          '✓ Có sổ thật để đọc lại đúng chỗ đã vấp lần trước.'
       };
       for (const loai of G.veThiGiacBiet().loaiHinh) {
         const v = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
@@ -10439,7 +10448,15 @@ const { chromium } = require(PW);
       /* Ba lần phải TỪ CHỐI */
       const chuaCong = Object.assign(nen('BIA', CHU), {soatTang: ''});
       r.choi.chuaQuaCong = G.veThiGiac(chuaCong).ok === false;
-      const la = G.veThiGiac(nen('TRUOC_SAU', CHU));
+      /* Loại hình dùng làm "chưa có bộ vẽ" phải là loại THẬT SỰ chưa
+         có. Bản trước dùng TRUOC_SAU, và khi TRUOC_SAU được dựng thì
+         phép này đỏ — đỏ đúng, nhưng đỏ vì bài thử cũ chứ không vì mã
+         hỏng. Neo vào loại nào thì phải hỏi chính bộ vẽ, đừng gõ tay
+         một tên rồi mong nó cứ mãi chưa có. */
+      const daCo = G.veThiGiacBiet().loaiHinh;
+      const conThieu = ['NHIP', 'CONG', 'VAI_TRO', 'BANG_DIEU_KHIEN', 'DANH_SACH_VIEC']
+        .filter(x => daCo.indexOf(x) < 0)[0];
+      const la = conThieu ? G.veThiGiac(nen(conThieu, CHU)) : {ok: false, chuaCo: true};
       r.choi.loaiLa = la.ok === false && la.chuaCo === true;
       r.choi.khongCoSo = G.veThiGiac(nen('MOT_SO',
         'Nhà mình bắt đầu bằng một chặng nhận diện, không có con số nào ở đây ' +
@@ -10447,6 +10464,21 @@ const { chromium } = require(PW);
       r.choi.coSoThiVe = G.veThiGiac(nen('MOT_SO',
         'Đến năm 2030, một triệu người Việt lớn lên trong một gia đình vận ' +
         'hành được.')).ok === true;
+      /* ── BIỂU TƯỢNG CHỌN THEO NGHĨA, VÀ KHỚP THEO BIÊN TỪ ──
+         Bản đầu dò từ khoá bằng chuỗi con, và ô "GIA ĐÌNH" ra hình
+         NÚI vì từ khoá "dinh" (của "đỉnh") nằm gọn trong "gia dinh".
+         Một từ khoá ngắn luôn tìm được chỗ trú trong một từ dài hơn,
+         nên phép này neo mấy cặp tên-ô ↔ hình đã biết. */
+      if (G.veThiGiacChonHinh) {
+        var cap = [['GIA ĐÌNH', 'doi'], ['MỤC TIÊU', 'dich'], ['TỐI ƯU', 'banh'],
+                   ['GIẢI ĐÁP', 'den'], ['ĐỌC HIỂU', 'sach'], ['KẾT QUẢ', 'cot'],
+                   ['ĐỒNG HÀNH', 'tim'], ['CHIẾN LƯỢC', 'labàn']];
+        r.hinhLech = cap.filter(function (c) {
+          return G.veThiGiacChonHinh(c[0], 0) !== c[1]; })
+          .map(function (c) { return c[0] + ' → ' + G.veThiGiacChonHinh(c[0], 0) +
+            ', cần ' + c[1]; });
+      } else r.hinhLech = ['bộ vẽ không khai hàm chọn hình'];
+
       /* Lưới ô KHÔNG tự cắt nội dung thành ô — cắt kiểu gì cũng là đoán. */
       r.choi.oPhaiGoRa = G.veThiGiac(nen('KHUNG',
         'Hệ thống này làm việc theo một cách rất riêng, có nhiều bước khác ' +
@@ -10556,6 +10588,28 @@ const { chromium } = require(PW);
               Math.max(1, Math.round(t.h))).data;
             let s0 = 0, s1 = 0, s2 = 0, n = 0;
             for (let i = 0; i < px.length; i += 4) { s0 += px[i]; s1 += px[i+1]; s2 += px[i+2]; n++; }
+            /* ══ CHỮ CÓ NẰM TRỌN TRONG MỘT KHỐI MÀU KHÔNG ══
+               Chủ hệ nói thẳng: "không để chữ ngoài màu". Đây là lớp
+               lỗi phép đo tương phản KHÔNG thấy — nó lấy màu TRUNG
+               BÌNH dưới chữ, mà trung bình của nửa cam nửa trắng vẫn
+               ra một màu hồng nhạt trông hợp lệ.
+               Chỗ hỏng thật là chữ VẮT QUA MÉP: nửa chữ trên khối màu,
+               nửa kia trên nền trang. Đọc thì vẫn đọc được, nhưng tấm
+               trông như xếp trượt một nhịp — và đó đúng là thứ mắt
+               người bắt ngay còn máy thì không.
+               Đo bằng ĐỘ TẢN của nền dưới chữ: nền một khối màu thì
+               các pixel gần giống nhau; nền vắt qua mép thì tản rộng.
+               Chuyển sắc cũng tản, nhưng tản ÊM — nên lấy khoảng cách
+               giữa phần trăm thứ 10 và thứ 90, bỏ hai đuôi, thì viền
+               mảnh và bóng đổ không làm đỏ oan. */
+            const mau0 = [], mau1 = [], mau2 = [];
+            for (let i = 0; i < px.length; i += 4) {
+              mau0.push(px[i]); mau1.push(px[i+1]); mau2.push(px[i+2]); }
+            const dai = (a) => { a.sort((x, y) => x - y);
+              return a[Math.floor(a.length * 0.9)] - a[Math.floor(a.length * 0.1)]; };
+            const tan = Math.max(dai(mau0), dai(mau1), dai(mau2));
+            if (tan > 90) r.vat.push(loai + ' · "' + t.chu + '" nền dưới chữ tản ' +
+              Math.round(tan) + '/255 — chữ đang vắt qua mép một khối màu');
             /* Ngưỡng WCAG AA: chữ to (từ 24px, đậm) 3,0 · chữ thường 4,5 */
             const can = t.co >= 24 ? 3.0 : 4.5;
             let te = null;
@@ -10582,16 +10636,18 @@ const { chromium } = require(PW);
       ra.choi.khongCoSo && ra.choi.coSoThiVe && ra.choi.oPhaiGoRa;
     const brandDu = ra.logoCoBong === false && !(ra.sacLech || []).length &&
       !(ra.sacThieu || []).length && ra.soSac === 6;
-    const roDu = !(ra.mo || []).length;
+    const roDu = !(ra.mo || []).length && !(ra.vat || []).length &&
+      !(ra.hinhLech || []).length;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
-        ra.veDuoc.length >= 6 && choiDu && brandDu && roDu,
+        ra.veDuoc.length >= 7 && choiDu && brandDu && roDu,
       'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. Và đo TƯƠNG PHẢN trên chính pixel đã vẽ ra, không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải màu nào ai gõ ra mà là kết quả của bốn lớp chồng lên nhau — cách duy nhất biết đúng là dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy màu trung bình đúng ô chữ sẽ nằm. Ngưỡng WCAG AA: 3,0 cho chữ từ 24px, 4,5 cho chữ thường. Một tấm hình rất sang mà chữ chìm thì nó không sang, nó hỏng. Chữ CHUYỂN SẮC cũng bị đo, và đo TỪNG CHẶNG MÀU của dải: bản đầu bỏ qua mọi thẻ có fill=url() — một lỗ đúng ở chỗ nguy hiểm nhất, vì chữ chuyển sắc luôn là câu to nhất trong tấm, và một dải có hai đầu nên đầu này đọc được không có nghĩa đầu kia đọc được',
       ra.khongCoBoVe ? 'KHÔNG NẠP ĐƯỢC src/ve-thi-giac.js'
         : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu && brandDu && roDu
           ? ra.veDuoc.length + ' bộ vẽ (' + ra.veDuoc.join(', ') +
             ') · mọi thẻ chữ nằm trong khung, không thẻ nào đè thẻ nào · từ chối đủ bốn chỗ · '
             + 'sáu sắc đều truy về G.BRAND.mau · dấu GITA không nhận bóng đổ · '
-            + 'mọi chữ đạt tương phản WCAG trên nền ĐÃ VẼ RA'
+            + 'mọi chữ đạt tương phản WCAG trên nền ĐÃ VẼ RA · '
+            + 'không chữ nào vắt qua mép một khối màu · biểu tượng khớp nghĩa'
           : [ra.tran.length ? 'CHỮ TRÀN RA NGOÀI: ' + ra.tran.join(' | ') : '',
              ra.de.length ? 'CHỮ ĐÈ LÊN CHỮ: ' + ra.de.join(' | ') : '',
              ra.hong.length ? 'bộ vẽ hỏng: ' + ra.hong.join(' | ') : '',
@@ -10605,7 +10661,9 @@ const { chromium } = require(PW);
              (ra.sacThieu || []).length ? 'G.BRAND.mau thiếu sắc: ' + ra.sacThieu.join(', ') : '',
              (ra.sacLech || []).length ? 'SẮC KHÔNG CÓ TRONG BẢNG ĐÃ CHỐT: ' + ra.sacLech.join(', ') : '',
              ra.soSac !== 6 ? 'bộ vẽ khai ' + ra.soSac + ' sắc, cần 6' : '',
-             (ra.mo || []).length ? 'CHỮ MỜ TRÊN NỀN: ' + ra.mo.join(' | ') : ''
+             (ra.mo || []).length ? 'CHỮ MỜ TRÊN NỀN: ' + ra.mo.join(' | ') : '',
+             (ra.vat || []).length ? 'CHỮ VẮT QUA MÉP KHỐI MÀU: ' + ra.vat.join(' | ') : '',
+             (ra.hinhLech || []).length ? 'BIỂU TƯỢNG CHỌN SAI NGHĨA: ' + ra.hinhLech.join(' · ') : ''
             ].filter(Boolean).join(' · ')));
   }
 
