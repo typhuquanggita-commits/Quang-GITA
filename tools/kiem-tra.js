@@ -10455,6 +10455,97 @@ const { chromium } = require(PW);
            trong danh sách sắc mà bộ vẽ khai ra. */
         w.remove();
       }
+      /* ══ TƯƠNG PHẢN THẬT, ĐO TRÊN PIXEL ĐÃ VẼ ══
+         Không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng
+         sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải
+         màu nào ai gõ ra — nó là kết quả của bốn lớp chồng lên nhau.
+         Cách duy nhất biết đúng là VẼ RA rồi nhìn pixel.
+         Mẹo: dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy
+         màu trung bình đúng ô chữ sẽ nằm. Nền sạch, không lẫn nét chữ.
+
+         Phép này dựng lúc chuẩn bị lật cả bảng màu sang nền SÂU —
+         dựng SAU khi lật thì nó chỉ xác nhận thứ mình đã chọn, dựng
+         TRƯỚC thì nó là cái lưới đỡ khi mình rơi. */
+      const lum = c => { const f = v => { v /= 255;
+        return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+        return 0.2126 * f(c[0]) + 0.7152 * f(c[1]) + 0.0722 * f(c[2]); };
+      const tphan = (a, c) => { const L1 = lum(a), L2 = lum(c);
+        return (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05); };
+
+      r.mo = [];
+      for (const loai of G.veThiGiacBiet().loaiHinh) {
+        const v = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
+        if (!v.ok) continue;
+        const w = document.createElement('div');
+        w.style.cssText = 'position:absolute;left:-9999px;top:0';
+        document.body.appendChild(w); w.innerHTML = v.svg;
+        const svg = w.querySelector('svg');
+        svg.style.width = v.w + 'px'; svg.style.height = v.h + 'px';
+        svg.style.maxWidth = 'none';
+        const kh = svg.getBoundingClientRect();
+        const ts = [...svg.querySelectorAll('text')].map(t => {
+          const b2 = t.getBoundingClientRect(), cs = getComputedStyle(t);
+          return {chu: (t.textContent || '').slice(0, 20), fill: cs.fill,
+            co: parseFloat(cs.fontSize), x: b2.left - kh.left, y: b2.top - kh.top,
+            w: b2.width, h: b2.height};
+        });
+        const sach = svg.cloneNode(true);
+        [...sach.querySelectorAll('text')].forEach(t => t.remove());
+        const url = URL.createObjectURL(new Blob(
+          [new XMLSerializer().serializeToString(sach)], {type: 'image/svg+xml'}));
+        const img = await new Promise(res => {
+          const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = url; });
+        if (img) {
+          const cv = document.createElement('canvas');
+          cv.width = v.w; cv.height = v.h;
+          const cx2 = cv.getContext('2d'); cx2.drawImage(img, 0, 0, v.w, v.h);
+          for (const t of ts) {
+            if (!t.w || !t.h) continue;
+            /* ── CHỮ CHUYỂN SẮC CŨNG PHẢI ĐO ──
+               Bản đầu bỏ qua mọi thẻ có fill="url(#…)", và đó là một
+               lỗ đúng chỗ nguy hiểm nhất: chữ chuyển sắc luôn là câu
+               TO NHẤT trong tấm, và một dải chuyển sắc có hai đầu —
+               đầu này đọc được không có nghĩa đầu kia đọc được.
+               Lật ngược: đọc các chặng màu của chính dải ấy trong
+               <defs>, rồi đo TỪNG chặng. Chặng nào chìm là chìm. */
+            let mausThu = [];
+            const m = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(t.fill);
+            if (m) mausThu = [[+m[1], +m[2], +m[3]]];
+            else {
+              const u = /url\(["']?#([^)"']+)/.exec(t.fill);
+              const gd = u && svg.querySelector('#' + CSS.escape(u[1]));
+              if (gd) mausThu = [...gd.querySelectorAll('stop')].map(st => {
+                const c = getComputedStyle(st).stopColor ||
+                  st.getAttribute('stop-color') || '';
+                const q = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(c);
+                if (q) return [+q[1], +q[2], +q[3]];
+                const hx = /^#?([0-9a-f]{6})$/i.exec(String(c).trim());
+                if (!hx) return null;
+                const nn = parseInt(hx[1], 16);
+                return [nn >> 16, (nn >> 8) & 255, nn & 255];
+              }).filter(Boolean);
+            }
+            if (!mausThu.length) continue;
+            const px = cx2.getImageData(Math.max(0, Math.round(t.x)),
+              Math.max(0, Math.round(t.y)), Math.max(1, Math.round(t.w)),
+              Math.max(1, Math.round(t.h))).data;
+            let s0 = 0, s1 = 0, s2 = 0, n = 0;
+            for (let i = 0; i < px.length; i += 4) { s0 += px[i]; s1 += px[i+1]; s2 += px[i+2]; n++; }
+            /* Ngưỡng WCAG AA: chữ to (từ 24px, đậm) 3,0 · chữ thường 4,5 */
+            const can = t.co >= 24 ? 3.0 : 4.5;
+            let te = null;
+            for (const mt of mausThu) {
+              const ty = tphan(mt, [s0/n, s1/n, s2/n]);
+              if (te === null || ty < te) te = ty;
+            }
+            if (te < can) r.mo.push(loai + ' · ' + Math.round(t.co) + 'px · "' + t.chu +
+              '" chỉ ' + te.toFixed(2) + ':1, cần ' + can +
+              (mausThu.length > 1 ? ' (chặng tệ nhất của dải chuyển sắc)' : ''));
+          }
+        }
+        URL.revokeObjectURL(url); w.remove();
+      }
+
       const sac = (G.veThiGiacBiet().sac || []).map(x => x.hex);
       r.sacLech = sac.filter(x =>
         !b.filter(y => String(y.hex).toLowerCase() === String(x).toLowerCase()).length);
@@ -10466,14 +10557,16 @@ const { chromium } = require(PW);
       ra.choi.khongCoSo && ra.choi.coSoThiVe && ra.choi.oPhaiGoRa;
     const brandDu = ra.logoCoBong === false && !(ra.sacLech || []).length &&
       !(ra.sacThieu || []).length && ra.soSac === 6;
+    const roDu = !(ra.mo || []).length;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
-        ra.veDuoc.length >= 4 && choiDu && brandDu,
-      'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào',
+        ra.veDuoc.length >= 4 && choiDu && brandDu && roDu,
+      'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. Và đo TƯƠNG PHẢN trên chính pixel đã vẽ ra, không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải màu nào ai gõ ra mà là kết quả của bốn lớp chồng lên nhau — cách duy nhất biết đúng là dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy màu trung bình đúng ô chữ sẽ nằm. Ngưỡng WCAG AA: 3,0 cho chữ từ 24px, 4,5 cho chữ thường. Một tấm hình rất sang mà chữ chìm thì nó không sang, nó hỏng. Chữ CHUYỂN SẮC cũng bị đo, và đo TỪNG CHẶNG MÀU của dải: bản đầu bỏ qua mọi thẻ có fill=url() — một lỗ đúng ở chỗ nguy hiểm nhất, vì chữ chuyển sắc luôn là câu to nhất trong tấm, và một dải có hai đầu nên đầu này đọc được không có nghĩa đầu kia đọc được',
       ra.khongCoBoVe ? 'KHÔNG NẠP ĐƯỢC src/ve-thi-giac.js'
-        : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu && brandDu
+        : (!ra.tran.length && !ra.de.length && !ra.hong.length && choiDu && brandDu && roDu
           ? ra.veDuoc.length + ' bộ vẽ (' + ra.veDuoc.join(', ') +
             ') · mọi thẻ chữ nằm trong khung, không thẻ nào đè thẻ nào · từ chối đủ bốn chỗ · '
-            + 'sáu sắc đều truy về G.BRAND.mau · dấu GITA không nhận bóng đổ'
+            + 'sáu sắc đều truy về G.BRAND.mau · dấu GITA không nhận bóng đổ · '
+            + 'mọi chữ đạt tương phản WCAG trên nền ĐÃ VẼ RA'
           : [ra.tran.length ? 'CHỮ TRÀN RA NGOÀI: ' + ra.tran.join(' | ') : '',
              ra.de.length ? 'CHỮ ĐÈ LÊN CHỮ: ' + ra.de.join(' | ') : '',
              ra.hong.length ? 'bộ vẽ hỏng: ' + ra.hong.join(' | ') : '',
@@ -10486,7 +10579,8 @@ const { chromium } = require(PW);
              typeof ra.logoCoBong === 'string' ? ra.logoCoBong : '',
              (ra.sacThieu || []).length ? 'G.BRAND.mau thiếu sắc: ' + ra.sacThieu.join(', ') : '',
              (ra.sacLech || []).length ? 'SẮC KHÔNG CÓ TRONG BẢNG ĐÃ CHỐT: ' + ra.sacLech.join(', ') : '',
-             ra.soSac !== 6 ? 'bộ vẽ khai ' + ra.soSac + ' sắc, cần 6' : ''
+             ra.soSac !== 6 ? 'bộ vẽ khai ' + ra.soSac + ' sắc, cần 6' : '',
+             (ra.mo || []).length ? 'CHỮ MỜ TRÊN NỀN: ' + ra.mo.join(' | ') : ''
             ].filter(Boolean).join(' · ')));
   }
 
