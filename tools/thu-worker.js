@@ -3213,6 +3213,45 @@ bao(!cuaDong.than.ok && cuaDong.than.code === 'CUADONG' &&
 env.GITA_KHOA_VE = 'khoa-ve-thu-nghiem';
 env.GITA_CONG_VE = 'https://bo-ve-thu-nghiem.vidu/api';
 
+/* ══ CỔNG GIẢ, ĐỂ ĐO ĐƯỢC CẢ PHẦN VỀ ══
+
+   Tới 9.99.36 bộ thử này chỉ đo phần ĐI: đề bài dựng đúng chưa, có rò
+   nội dung không. Phần VỀ chưa có dòng nào — mà phần về mới là chỗ
+   ảnh thật gắn vào bản ghi, và là chỗ hỏng thì lớp người vẫn trống
+   trong khi mọi phép đo vẫn xanh.
+
+   Cổng giả trả về đúng ba dạng mà cửa thật phải nhận, lần lượt: thân
+   ảnh · data URI · đường dẫn. Ép một dạng thì cửa chỉ được thử ở dạng
+   ấy, và hai dạng kia hỏng trong im lặng cho tới ngày chủ hệ đổi nhà
+   cung cấp. */
+const PNG_THU = Buffer.from(
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmM' +
+  'IQAAAABJRU5ErkJggg==', 'base64');
+let dangCong = 'than';        /* than · data · url */
+let daGoiCong = 0, tieuDeCong = null;
+const fetchThat = globalThis.fetch;
+globalThis.fetch = async function (u, o) {
+  const dc = String(u);
+  if (dc.indexOf('bo-ve-thu-nghiem.vidu') >= 0) {
+    daGoiCong++;
+    tieuDeCong = (o && o.headers) || {};
+    if (dangCong === 'loi') return new Response('quá tải', {status: 503});
+    if (dangCong === 'than')
+      return new Response(PNG_THU, {status: 200,
+        headers: {'content-type': 'image/png'}});
+    if (dangCong === 'data')
+      return new Response(JSON.stringify({anh: 'data:image/png;base64,' +
+        PNG_THU.toString('base64')}), {status: 200,
+        headers: {'content-type': 'application/json'}});
+    return new Response(JSON.stringify({url: 'https://tep-thu.vidu/a.png'}),
+      {status: 200, headers: {'content-type': 'application/json'}});
+  }
+  if (dc.indexOf('tep-thu.vidu') >= 0)
+    return new Response(PNG_THU, {status: 200,
+      headers: {'content-type': 'image/png'}});
+  return fetchThat ? fetchThat(u, o) : new Response('', {status: 404});
+};
+
 bao(!(await goi({fn:'guiDeBaiRaNgoai', token:tkTC, u:'truongcoach@gita365.vn',
   id:idTG})).than.ok,
   'TRƯỞNG COACH KHÔNG GỬI ĐƯỢC RA NGOÀI — cho một thứ rời khỏi hệ là quyết định của chủ hệ');
@@ -3241,6 +3280,74 @@ bao(soRa.than.ok && soRa.than.so === 1 &&
     soRa.than.ds[0].daGui === raNgoai.than.daGui,
   'SỔ ĐI RA GIỮ NGUYÊN VĂN CHUỖI ĐÃ GỬI, không giữ một bản tóm',
   'bản tóm thì lúc cần đối chất lại phải tin vào chính cái đang bị nghi');
+
+/* ══ PHẦN VỀ: ẢNH THẬT GẮN VÀO BẢN GHI ══ */
+bao(raNgoai.than.ok && raNgoai.than.coAnh === true &&
+    /^tg\/DR-[A-Za-z0-9]+\.png$/.test(String(raNgoai.than.anhNguoi || '')),
+  'CỬA ĐI RA NAY CÓ CẢ PHẦN VỀ — ảnh nhận được cất vào kho và gắn lên bản ghi',
+  'tới 9.99.36 cửa này chỉ dựng đề bài rồi trả về cho người bấm tự mang đi, ' +
+  'nên lớp người vẫn là ô chờ dù chủ hệ đã nạp khoá · ' + raNgoai.than.anhNguoi);
+
+bao(String((tieuDeCong || {}).Authorization || '') === 'Bearer khoa-ve-thu-nghiem',
+  'khoá đi ra gửi bằng Authorization: Bearer, không nhét vào đường dẫn',
+  'khoá nằm trong đường dẫn thì nó vào nhật ký máy chủ trung gian, vào lịch sử ' +
+  'trình duyệt, và vào mọi chỗ ghi lại đường dẫn');
+
+{
+  const sau = db.prepare('SELECT anhNguoi, idDiRa, trangThai FROM deXuatThiGiac WHERE id=?')
+    .get(idTG);
+  bao(sau.anhNguoi && sau.idDiRa === raNgoai.than.id,
+    'ảnh gắn kèm MÃ LƯỢT ĐI RA — sáu tháng sau còn tra được đề bài nào sinh ra nó (C15)');
+  bao(sau.trangThai === 'duyet',
+    'và ẢNH VỀ KHÔNG TỰ NÂNG BẬC — nó là nguyên liệu mới, không phải một lượt duyệt (C12)',
+    'bậc vẫn là "' + sau.trangThai + '"');
+  const ldr = db.prepare('SELECT ketQua, ghiChu FROM luotDiRa WHERE id=?')
+    .get(raNgoai.than.id);
+  bao(ldr.ketQua === 'ok' && ldr.ghiChu === sau.anhNguoi,
+    'sổ đi ra ghi cả KẾT QUẢ, không chỉ ghi lượt gửi');
+}
+
+/* Ba dạng trả về, cùng một cửa. */
+for (const dang of ['data', 'url']) {
+  dangCong = dang;
+  const r2 = await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+    id:idTG});
+  bao(r2.than.ok && r2.than.coAnh === true,
+    'cổng trả dạng "' + dang + '" cũng nhận được ảnh — không ép một nhà cung cấp',
+    r2.than.anhNguoi);
+}
+dangCong = 'than';
+
+/* Cổng hỏng thì KHÔNG được im lặng coi như đã gửi. */
+{
+  dangCong = 'loi';
+  const rl = await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+    id:idTG});
+  bao(!rl.than.ok && rl.than.code === 'CONGTUCHOI' && !!rl.than.daGui,
+    'CỔNG NGOÀI HỎNG THÌ NÓI RA, và đề bài vẫn vào sổ để gọi lại được',
+    'im lặng trả về "đã gửi" là chỗ tệ nhất: lớp người vẫn trống mà không ai đi tìm');
+  const ldr2 = db.prepare("SELECT ketQua FROM luotDiRa WHERE ketQua='loi'").all();
+  bao(ldr2.length >= 1, 'và lượt hỏng ấy ghi rõ là hỏng trong sổ đi ra');
+  dangCong = 'than';
+}
+
+/* Đọc lại ảnh: qua kiểm vai, và chỉ trong thư mục thiết kế. */
+{
+  await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn', id:idTG});
+  const da = await goi({fn:'docAnhThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:idTG});
+  bao(da.than.ok && /^data:image\/png;base64,/.test(String(da.than.anh || '')),
+    'BỘ VẼ XIN LẠI ĐƯỢC ẢNH để ghép lớp — trả data URI, không trả đường dẫn ký sẵn',
+    'đường dẫn ký sẵn là một cái khoá sống tiếp sau khi phiên đã đóng');
+  db.prepare("UPDATE deXuatThiGiac SET anhNguoi='../../bi-mat.txt' WHERE id=?").run(idTG);
+  const laDuong = await goi({fn:'docAnhThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:idTG});
+  bao(!laDuong.than.ok && laDuong.than.code === 'DUONGDANLA',
+    'đường dẫn trèo ra ngoài thư mục thiết kế bị chặn — không có dòng này thì một ' +
+    'mã bản ghi bịa ra đọc được mọi tệp trong kho hồ sơ');
+  db.prepare('UPDATE deXuatThiGiac SET anhNguoi=? WHERE id=?')
+    .run(raNgoai.than.anhNguoi, idTG);
+}
 
 /* Chỉ gửi được thứ ĐÃ DUYỆT. */
 const banNhap = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',

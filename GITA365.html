@@ -2124,7 +2124,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.36',
+  version: '9.99.37',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -36703,11 +36703,19 @@ var G = window.G || {}; window.G = G;
         : '<rect x="' + (xc + Math.round(rongCot * 0.14)) + '" y="' + Math.round(yy) +
           '" width="' + Math.round(rongCot * 0.72) + '" height="' + Math.round(caoH * 1.16) +
           '" rx="14" fill="' + h(mau) + '" fill-opacity="' + (k.sau ? '0.14' : '0.09') + '"/>';
-      ve += (k.but ? '<g' + netRun + '>' : '') +
-        veNet('nguoi', maH, xc + Math.round(rongCot / 2),
-          Math.round(yy + caoH * 0.58), caoH, k.but ? nenDac(mau, 4.6) : mau,
-          k.but ? 3.2 : 3.6, k.but) +
-        (k.but ? '</g>' : '');
+      /* Giấy bút thì vẽ NÉT — trên giấy không có khối, chỉ có nét đè
+         nét. Mọi nền khác thì vẽ KHỐI: cùng hình ấy, thêm hướng sáng,
+         bóng tiếp đất và vệt bắt sáng. */
+      if (k.but) {
+        ve += '<g' + netRun + '>' +
+          veNet('nguoi', maH, xc + Math.round(rongCot / 2),
+            Math.round(yy + caoH * 0.58), caoH, nenDac(mau, 4.6), 3.2, true) +
+          '</g>';
+      } else {
+        var nk = veNguoiKhoi(maH, xc + Math.round(rongCot / 2),
+          Math.round(yy + caoH * 0.52), caoH, mau, k, null);
+        ve += nk.ve;
+      }
       yy += caoH * 1.16 + 14;
 
       if (c.phu) {
@@ -36905,6 +36913,74 @@ var G = window.G || {}; window.G = G;
     cau:  '<path d="M-34 20 h10 M24 20 h10 M-24 20 C-24 -6 24 -6 24 20 ' +
           'M-24 20 V10 M-12 20 V4 M0 20 V0 M12 20 V4 M24 20 V10"/>'
   };
+
+  /* ═══════════ NGƯỜI CÓ KHỐI ═══════════
+
+     Chủ hệ hỏi "vẽ người 3D". Trong một tấm vector thì 3D không phải
+     dựng lưới tam giác — nó là BA THỨ mắt dùng để đọc ra khối, và cả
+     ba đều vẽ được bằng hình phẳng:
+
+       1. một hướng sáng DUY NHẤT cho cả tấm, nên chỗ nào cũng sáng ở
+          cùng một phía và tối ở cùng một phía
+       2. một bóng TIẾP ĐẤT — vệt tối ngay dưới chân, nói vật này đứng
+          trên một mặt phẳng chứ không trôi
+       3. một bóng ĐỔ mềm về phía khuất sáng
+
+     Thiếu bóng tiếp đất là chỗ hay hỏng nhất: có chuyển sắc, có bóng
+     đổ, mà hình vẫn trôi lơ lửng — vì mắt tìm chỗ vật CHẠM mặt đất
+     trước khi nó tin vật ấy có khối.
+
+     Hướng sáng đọc từ HUONG_SANG, cùng biến với huy hiệu và tấm kính.
+     Hai vật cạnh nhau đổ bóng hai phía là hai vật ở hai thế giới.
+
+     ── VÀ VẪN KHÔNG MẶT ──
+     Khối làm hình dày lên, không làm nó thành một người cụ thể. Không
+     mắt, không miệng — luật cũ của NGUOI giữ nguyên. */
+  function veNguoiKhoi(ma, cx, cy, cao, mau, k, bongId) {
+    var t = NGUOI[ma];
+    if (!t) return {defs: '', ve: ''};
+    var ty = cao / 100;
+    var g = idMoi('ngk'), gs = idMoi('ngs'), gd = idMoi('ngd');
+    var sang = doiSang(mau, k && k.sau ? 0.26 : 0.20);
+    var toi = doiSang(mau, k && k.sau ? -0.20 : -0.24);
+    /* Bóng tiếp đất: bẹt, mờ dần ra rìa. Rộng hơn thân một chút và
+       rất thấp — bóng cao thì đọc ra là một vũng, không ra bóng. */
+    var rX = cao * 0.34, rY = cao * 0.075;
+    var yDat = cy + cao * 0.455;
+    var ve =
+      '<defs><radialGradient id="' + gd + '" cx="50%" cy="50%" r="50%">' +
+        '<stop offset="0%" stop-color="' + h(k && k.sau ? '#000000' : k.gitaSau) +
+          '" stop-opacity="' + (k && k.sau ? 0.55 : 0.30) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(k && k.sau ? '#000000' : k.gitaSau) +
+          '" stop-opacity="0"/></radialGradient>' +
+      '<linearGradient id="' + g + '" x1="' + (0.5 - HUONG_SANG.dx * 0.42).toFixed(2) +
+        '" y1="' + (0.5 - HUONG_SANG.dy * 0.42).toFixed(2) + '" x2="' +
+        (0.5 + HUONG_SANG.dx * 0.42).toFixed(2) + '" y2="' +
+        (0.5 + HUONG_SANG.dy * 0.42).toFixed(2) + '">' +
+        '<stop offset="0%" stop-color="' + h(sang) + '"/>' +
+        '<stop offset="55%" stop-color="' + h(mau) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(toi) + '"/></linearGradient>' +
+      /* Vệt sáng viền: một bản hình nhỏ hơn, sáng hơn, lệch về phía
+         nguồn sáng — đủ để mép trên-trái bắt sáng. */
+      '<linearGradient id="' + gs + '" x1="0" y1="0" x2="0.7" y2="1">' +
+        '<stop offset="0%" stop-color="' + h(doiSang(mau, 0.45)) +
+          '" stop-opacity="0.85"/>' +
+        '<stop offset="45%" stop-color="' + h(doiSang(mau, 0.45)) +
+          '" stop-opacity="0"/></linearGradient></defs>' +
+      '<ellipse cx="' + cx.toFixed(1) + '" cy="' + yDat.toFixed(1) + '" rx="' +
+        rX.toFixed(1) + '" ry="' + rY.toFixed(1) + '" fill="url(#' + gd + ')"/>' +
+      '<g' + (bongId ? ' filter="url(#' + bongId + ')"' : '') +
+        ' transform="translate(' + cx + ',' + cy + ') scale(' + ty.toFixed(4) +
+        ')" fill="url(#' + g + ')" stroke="url(#' + g + ')" ' +
+        'stroke-linejoin="round" class="gita-net">' + t + '</g>' +
+      /* Lớp bắt sáng vẽ CHỒNG lên, thu nhỏ quanh tâm để nó nằm gọn
+         bên trong đường viền — tràn ra ngoài thì thành một quầng, và
+         quầng thì nói "vật này phát sáng", không nói "vật này có khối". */
+      '<g transform="translate(' + cx + ',' + (cy - cao * 0.012) + ') scale(' +
+        (ty * 0.94).toFixed(4) + ')" fill="url(#' + gs + ')" stroke="none">' +
+        t + '</g>';
+    return {defs: '', ve: ve};
+  }
 
   /* Vẽ một hình nét. Hình người trong hộp 100 đơn vị; `cao` là chiều
      cao thật trên tấm. Nét dày theo cỡ, để hình nhỏ không thành một

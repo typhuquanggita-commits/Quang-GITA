@@ -807,6 +807,52 @@ function nguoiRa(nx) {
   ].join('\n');
 }
 
+/* ══ BỐI CẢNH (9.99.37) ══
+
+   Đề bài tới 9.99.36 tả người rồi nói "nền xoá phông nhẹ" — tức là
+   đặt một người trước một khoảng mờ. Tấm mẫu chủ hệ gửi KHÔNG phải
+   thế: nó là cả một cảnh có chiều sâu — bàn làm việc, sách xếp chồng,
+   máy tính, chậu cây, kệ phía sau, ánh sáng cửa sổ. Chính mấy thứ ấy
+   làm tấm ra "ảnh chụp một nơi có thật" thay vì "một người bị cắt rời
+   dán lên nền mờ".
+
+   Nên tả cảnh, và tả bằng thứ đo được: nguồn sáng ở đâu, tiêu cự bao
+   nhiêu, vật nào ở lớp nào. Ba con số ấy quyết định tấm ra trông như
+   ảnh chụp hay như hình dựng — nói "ánh sáng đẹp" thì mỗi lượt sinh
+   ra một kiểu.
+
+   VÀ VẪN KHÔNG MỘT CHỮ NÀO. Cảnh càng nhiều đồ thì bộ tạo ảnh càng
+   hay tự viết chữ lên gáy sách, lên màn hình, lên biển hiệu — nên
+   điều cấm ấy nhắc lại ở đây, ngay cạnh danh sách đồ vật. */
+function boiCanhRa(x) {
+  const t = Number(String(x.tang || '').replace(/[^0-9]/g, '')) || 1;
+  return [
+    'BỐI CẢNH — cảnh thật có chiều sâu, không phải nền mờ sau một người:',
+    '· Nơi chốn: một phòng làm việc sáng, sạch, hiện đại và ẤM — gỗ ' +
+      'nhạt, tường sáng, cây xanh thật. Không phòng họp lạnh, không ' +
+      'phông studio trơn, không nền gradient.',
+    '· LỚP TRƯỚC (rõ nét): mặt bàn gỗ, vài quyển sách xếp chồng, một ' +
+      'quyển sổ mở, bút đặt ngang, một chậu cây nhỏ. Đồ vật đặt như ' +
+      'người vừa dùng xong, không xếp thẳng hàng như bày mẫu.',
+    '· LỚP GIỮA: người, chiếm khoảng một phần ba khung theo chiều ngang.',
+    '· LỚP SAU (mờ mềm): kệ sách, cửa sổ lớn lấy sáng, vài chậu cây. ' +
+      'Mờ đủ để không ai đọc ra chi tiết, rõ đủ để biết đó là một căn phòng.',
+    '· Ánh sáng: nguồn chính từ cửa sổ bên trái, mềm và rộng; một nguồn ' +
+      'phụ rất nhẹ bên phải để mép người không chìm vào nền. Không đèn ' +
+      'flash thẳng mặt, không hai bóng đổ ngược nhau.',
+    '· Ống kính: 50mm, khẩu f/2.8 — xoá phông vừa phải, còn đọc được ' +
+      'căn phòng. Không xoá tan thành một vệt màu.',
+    t >= 4
+      ? '· Sắc chung: mát và trong, thiên xanh nhạt — chặng này nói về ' +
+        'hệ thống đã chạy, nên cảnh phải gọn gàng, ngăn nắp.'
+      : '· Sắc chung: ấm và sáng, thiên vàng nhạt — chặng đầu nói về ' +
+        'chỗ bắt đầu, nên cảnh phải dễ gần, không nghiêm trang quá.',
+    '· NHẮC LẠI VÌ CẢNH CÀNG NHIỀU ĐỒ THÌ CÀNG DỄ SAI: không một chữ ' +
+      'nào trên gáy sách, trên màn hình, trên biển, trên hộp. Không ' +
+      'logo của bất kỳ hãng nào trên máy tính, cốc, sổ.'
+  ].join('\n');
+}
+
 /* ══ CỬA ĐI RA NGOÀI ══
 
    Chủ hệ chốt ở 9.99.11: được phép nối một bộ tạo ảnh bên ngoài.
@@ -902,6 +948,8 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
        nhau, nên bộ lọc chỉ được bỏ null. */
     canNguoi ? nguoiRa(nx) : null,
     canNguoi ? '' : null,
+    canNguoi ? boiCanhRa(x) : null,
+    canNguoi ? '' : null,
     'CẤM — mỗi dòng là một lần đã hỏng thật:',
     '· Không chân dung một người có thật, không khuôn mặt giống người ' +
       'nổi tiếng. Học viện không có cách nào xin phép một người mình ' +
@@ -915,6 +963,95 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
     '· Không kho ảnh dựng sẵn, không nền gradient tím-xanh mặc định.'
   ].filter(v => v !== null).join('\n');
 
+  /* ══════════════════════════════════════════════════════════════
+     VÒNG ĐI–VỀ (9.99.37)
+
+     Tới 9.99.36 cửa này dựng đề bài, ghi sổ, rồi TRẢ ĐỀ BÀI VỀ cho
+     người bấm tự mang đi. Nghĩa là "cửa đi ra" mới có phần ĐI, chưa
+     có phần VỀ — và chừng nào chưa có phần về thì lớp người của mọi
+     áp phích vẫn là một ô chờ, dù chủ hệ đã nạp khoá.
+
+     Nay gửi thật và nhận ảnh về:
+
+       POST  <GITA_CONG_VE>
+       Authorization: Bearer <GITA_KHOA_VE>
+       {"id", "deBai", "kho", "loaiHinh", "tang"}
+
+     Nhận về, chấp NHẬN CẢ BA DẠNG — vì chủ hệ chưa chọn nhà cung cấp,
+     và ép một dạng là ép luôn cả lựa chọn ấy:
+       · thân là ảnh (Content-Type: image/*)
+       · JSON {"anh": "data:image/png;base64,..."}
+       · JSON {"url": "https://..."} — tải tiếp một nhịp
+
+     Ảnh về KHÔNG tự phát hành. Nó gắn vào bản ghi ở đúng bậc bản ghi
+     đang đứng, và đi tiếp bằng chính thang duyệt cũ — luật C12. */
+  const NHAN_TOI_DA = 12 * 1024 * 1024;
+
+  async function nhanAnhVe(idRa, guiDi2) {
+    let r;
+    try {
+      r = await fetch(cong, {
+        method: 'POST',
+        headers: {'Authorization': 'Bearer ' + khoa,
+                  'Content-Type': 'application/json'},
+        body: JSON.stringify({id: idRa, deBai: guiDi2, kho: x.loaiHinh,
+                              loaiHinh: x.loaiHinh, tang: x.tang})
+      });
+    } catch (e) {
+      return {ok: false, code: 'CONGKHONGTRALOI',
+        error: 'Không gọi được cổng ngoài: ' + e.message};
+    }
+    if (!r.ok) return {ok: false, code: 'CONGTUCHOI',
+      error: 'Cổng ngoài trả về ' + r.status + '. Đề bài đã vào sổ đi ra, ' +
+             'nên gọi lại được mà không phải dựng lại.'};
+
+    const kieu = String(r.headers.get('content-type') || '');
+    let than = null, duoi = 'png';
+    if (/^image\//.test(kieu)) {
+      than = new Uint8Array(await r.arrayBuffer());
+      duoi = kieu.indexOf('jpeg') >= 0 ? 'jpg' : (kieu.indexOf('webp') >= 0 ? 'webp' : 'png');
+    } else {
+      let j = null;
+      try { j = await r.json(); } catch (e) { j = null; }
+      if (!j) return {ok: false, code: 'CONGTRALOIRAC',
+        error: 'Cổng ngoài trả về thứ không phải ảnh và cũng không phải JSON.'};
+      if (j.anh && /^data:image\/([a-z]+);base64,/.test(String(j.anh))) {
+        const m2 = /^data:image\/([a-z]+);base64,(.*)$/s.exec(String(j.anh));
+        duoi = m2[1] === 'jpeg' ? 'jpg' : m2[1];
+        const b = atob(m2[2]);
+        than = new Uint8Array(b.length);
+        for (let i2 = 0; i2 < b.length; i2++) than[i2] = b.charCodeAt(i2);
+      } else if (j.url) {
+        let r2;
+        try { r2 = await fetch(String(j.url)); }
+        catch (e) { return {ok: false, code: 'KHONGTAIDUOC',
+          error: 'Cổng trả về một đường dẫn mà không tải được: ' + e.message}; }
+        if (!r2.ok) return {ok: false, code: 'KHONGTAIDUOC',
+          error: 'Tải ảnh từ đường dẫn cổng trả về: ' + r2.status};
+        than = new Uint8Array(await r2.arrayBuffer());
+        const k2 = String(r2.headers.get('content-type') || '');
+        duoi = k2.indexOf('jpeg') >= 0 ? 'jpg' : (k2.indexOf('webp') >= 0 ? 'webp' : 'png');
+      } else {
+        return {ok: false, code: 'CONGTHIEUANH',
+          error: 'Cổng trả JSON nhưng không có trường "anh" (data URI) hay "url".'};
+      }
+    }
+    if (!than || !than.length) return {ok: false, code: 'ANHRONG',
+      error: 'Cổng trả về một ảnh rỗng.'};
+    /* Chặn cỡ: một ảnh vài trăm megabyte làm nghẽn kho và không tấm
+       nào cần tới. Chặn ở đây chứ không ở trình duyệt — trình duyệt
+       thì người gọi đổi được. */
+    if (than.length > NHAN_TOI_DA) return {ok: false, code: 'ANHQUANANG',
+      error: 'Ảnh về nặng ' + Math.round(than.length / 1048576) + ' MB, quá ' +
+             Math.round(NHAN_TOI_DA / 1048576) + ' MB.'};
+
+    const khoaTep = 'tg/' + idRa + '.' + duoi;
+    if (!env.HOSO) return {ok: false, code: 'CHUACOKHO',
+      error: 'Máy chủ chưa gắn kho tệp R2 (binding HOSO).'};
+    await env.HOSO.put(khoaTep, than);
+    return {ok: true, tep: khoaTep, cỡ: than.length, duoi};
+  }
+
   const id = 'DR-' + tokenMoi().slice(0, 14);
   const luc = new Date().toISOString();
   await db.prepare(
@@ -922,10 +1059,32 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
     'VALUES (?,?,?,?,?,?,?)'
   ).bind(id, x.id, cong, guiDi, guiDi.length, hoSo.u, luc).run();
 
+  /* GỌI THẬT. Sổ đã ghi TRƯỚC khi gọi — gọi hỏng thì vẫn còn nguyên
+     văn thứ định gửi, và gọi lại được mà không phải dựng lại đề bài. */
+  const ve = await nhanAnhVe(id, guiDi);
+  await db.prepare('UPDATE luotDiRa SET ketQua = ?, ghiChu = ? WHERE id = ?')
+    .bind(ve.ok ? 'ok' : 'loi', ve.ok ? ve.tep : String(ve.error).slice(0, 300), id)
+    .run();
+
+  if (ve.ok) {
+    /* Ảnh gắn vào bản ghi kèm MÃ LƯỢT ĐI RA (luật C15): sáu tháng sau
+       còn tra được đề bài nào đã sinh ra tấm này. Bậc duyệt KHÔNG đổi
+       — ảnh về là một nguyên liệu mới, không phải một lượt duyệt. */
+    await db.prepare('UPDATE deXuatThiGiac SET anhNguoi = ?, idDiRa = ? WHERE id = ?')
+      .bind(ve.tep, id, x.id).run();
+  }
+
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_DIRA',
-    doiTuong: x.id, chiTiet: cong + ' · ' + guiDi.length + ' ký tự'});
+    doiTuong: x.id, chiTiet: cong + ' · ' + guiDi.length + ' ký tự · ' +
+      (ve.ok ? 'nhận ảnh ' + ve.tep : 'hỏng: ' + ve.code)});
+
+  if (!ve.ok) return {ok: false, code: ve.code, error: ve.error,
+    id, idDeXuat: x.id, cong, daGui: guiDi, soChu: guiDi.length,
+    vi: 'Đề bài ĐÃ vào sổ đi ra dù lượt này hỏng — gọi lại được mà không ' +
+        'phải dựng lại, và sổ vẫn giữ đúng thứ đã gửi.'};
 
   return {ok: true, id, idDeXuat: x.id, cong, daGui: guiDi, soChu: guiDi.length,
+    anhNguoi: ve.tep, coAnh: true,
     /* TRẢ VỀ NGUYÊN VĂN thứ vừa đi ra, để người bấm nhìn thấy ngay —
        chứ không phải đi tra sổ mới biết mình vừa gửi gì. */
     khongGui: ['nội dung gốc', 'tên nhà', 'tên học viên', 'mọi trường khác'],
@@ -1040,6 +1199,49 @@ export async function ghiChuThayAnh(y, env, db, hoSo) {
     vi: 'Đã ghi. Câu này do bộ vẽ dựng từ chính chữ nó đặt lên tấm — máy chủ ' +
         'không thêm và không sửa một từ nào, vì thêm là mô tả thứ không có ' +
         'trên tấm.'};
+}
+
+/* ══ CỬA ĐỌC ẢNH ĐÃ VỀ (9.99.37) ══
+
+   Ảnh do bộ tạo ảnh sinh nằm trong kho R2, không nằm trong kho mã.
+   Bộ vẽ chạy ở trình duyệt nên nó phải XIN được ảnh ấy — và xin thì
+   phải qua kiểm vai, cùng luật với mọi thứ khác rời khỏi hệ (C17).
+
+   Trả về data URI chứ không trả đường dẫn ký sẵn: đường dẫn ký sẵn
+   là một cái khoá đi ra khỏi hệ và sống tiếp sau khi phiên đã đóng,
+   còn data URI thì chết cùng lượt gọi. */
+export async function docAnhThiGiac(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+  const id = String((y || {}).id || '').trim();
+  const x = await db.prepare('SELECT id,anhNguoi FROM deXuatThiGiac WHERE id = ?')
+    .bind(id).first();
+  if (!x) return {ok: false, error: 'Không tìm thấy đề xuất này.'};
+  if (!x.anhNguoi) return {ok: false, code: 'CHUACOANH',
+    error: 'Bản ghi này chưa có lớp người. Gửi đề bài ra bộ tạo ảnh trước.'};
+
+  /* Chỉ đọc trong đúng thư mục của phòng thiết kế. Không có dòng này
+     thì một mã bản ghi bịa ra đọc được mọi tệp trong kho hồ sơ. */
+  const tep = String(x.anhNguoi);
+  if (!/^tg\/[A-Za-z0-9._-]+$/.test(tep)) return {ok: false, code: 'DUONGDANLA',
+    error: 'Đường dẫn ảnh không nằm trong thư mục thiết kế.'};
+  if (!env.HOSO) return {ok: false, code: 'CHUACOKHO',
+    error: 'Máy chủ chưa gắn kho tệp R2.'};
+
+  const o = await env.HOSO.get(tep);
+  if (!o) return {ok: false, code: 'MATTEP',
+    error: 'Sổ ghi có ảnh nhưng kho không còn tệp: ' + tep};
+  const b = new Uint8Array(await o.arrayBuffer());
+  let nhi = '';
+  for (let i = 0; i < b.length; i++) nhi += String.fromCharCode(b[i]);
+  const duoi = tep.split('.').pop();
+  const kieu = duoi === 'jpg' ? 'jpeg' : duoi;
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_DOCANH',
+    doiTuong: x.id, chiTiet: tep + ' · ' + b.length + ' byte'});
+
+  return {ok: true, id: x.id, tep: tep, coBao: b.length,
+    anh: 'data:image/' + kieu + ';base64,' + btoa(nhi)};
 }
 
 export async function soDiRa(y, env, db, hoSo) {
