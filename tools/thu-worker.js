@@ -3438,6 +3438,168 @@ const bia = (await goi({fn: 'mot-viec-khong-co-that', token: tk})).than;
 bao(bia.code !== 'CHUAPORT' && !bia.ok, 'còn việc bịa ra thì vẫn là yêu cầu không hợp lệ',
   bia.error);
 
+/* ═══════════════ 16B · CỔNG NỘI DUNG ═══════════════
+
+   Cổng này ĐO chứ không viết hộ. Nên mỗi phép đo dưới đây hỏi đúng
+   một câu: máy có chỉ ra được ĐÚNG CHỖ không.
+
+   Và một phép đo quan trọng hơn cả chín cái kia: máy có chịu KHÔNG
+   cộng ra tổng khi còn bốn chiều chưa ai chấm không. Một tổng có ô
+   trống trông y hệt một tổng đã đủ, và người đọc sổ sáu tháng sau
+   không có cách nào biết. */
+console.log('\n16B · CỔNG NỘI DUNG');
+const ndMod = await import('../may-chu/kien-truc-noi-dung.js');
+const saR01 = {uid: 'U-sa', username: 'superadmin@gita365.vn', role: 'R01'};
+
+/* Một bài đủ hai mươi bốn khối, viết đúng luật. Mỗi khối đủ 8 ký tự
+   trở lên vì dưới ngưỡng ấy máy tính là khối trống. */
+const baiDu = [
+  'K01 | Bảy ngày nhìn cho đúng',
+  'Bảy ngày đầu: ghi lại, chưa sửa gì.',
+  'K02 | Chìa khoá',
+  'Đừng đo việc học bằng số giờ ngồi bàn. Đo bằng thứ tạo ra được.',
+  'K03 | Mục tiêu', 'Ghi được ba dòng mỗi tối trong bảy tối.',
+  'K04 | Vì sao', 'Không ghi thì tuần sau cãi nhau bằng trí nhớ.',
+  'K05 | Vấn đề thật', 'Tối nào cũng nhắc học, nhắc xong vẫn thế.',
+  'K06 | Insight', '[KHO GITA] Nhắc nhiều làm việc học thành việc của bố mẹ.',
+  'K07 | Bản chất', 'Người nhắc đang giữ trách nhiệm thay người học.',
+  'K08 | Khung tư duy', 'Bốn trụ G-I-T-A, đọc theo thứ tự.',
+  'K09 | Ví dụ', 'Nhà A: 19h30 mở sách, 19h45 cầm điện thoại.',
+  'K10 | Ca thật', 'Nhà B chạy bảy tối, tối thứ tư quên, vẫn ghi là quên.',
+  'K11 | Sai lầm', 'Ghi kèm nhận xét. Ghi kèm nhận xét là đang chấm.',
+  'K12 | Công cụ', 'Bảng ba dòng: giờ bắt đầu, việc, chỗ dừng.',
+  'K13 | Hướng dẫn dùng', 'Điền sau bữa tối, mất chừng hai phút.',
+  'K14 | Bài tập', 'Ghi đủ bảy tối, không bỏ tối nào.',
+  'K15 | Sản phẩm', 'Một bảng bảy dòng, có chữ của học viên.',
+  'K16 | KPI', 'Mốc nền: 0 tối. Đích: 5 trên 7 tối có đủ ba dòng.',
+  'K17 | Bảng theo dõi', 'Treo ở chỗ cả nhà đi qua mỗi ngày.',
+  'K18 | Phản tư', 'Tối nào dễ ghi nhất? Vì sao tối ấy dễ?',
+  'K19 | Câu hỏi coach', 'Điều gì làm tối thứ tư khác sáu tối kia?',
+  'K20 | Việc 24 giờ', 'Tối nay ghi 3 dòng, không thêm nhận xét.',
+  'K21 | Việc 7 ngày', 'Lặp 7 tối liền, ghi cả tối quên.',
+  'K22 | Tiêu chí đạt', 'Đủ 5 trên 7 tối và không dòng nào có nhận xét.',
+  'K23 | Đọng lại', 'Nhìn trước, sửa sau. Ghi cả cái quên.',
+  'K24 | Thử thách', 'Tuần tới học viên tự ghi, người lớn không nhắc.'
+].join('\n');
+
+const rDu = await ndMod.soatNoiDung({chu: baiDu, tang: 'T1'}, env, env.CSDL, saR01);
+bao(rDu.ok && rDu.khoi.thieu.length === 0,
+  'bài đủ hai mươi bốn khối thì không báo thiếu khối nào',
+  'thiếu ' + rDu.khoi.thieu.length);
+bao(rDu.doi.length === 0,
+  'khối nào đòi khối nào cũng có đủ — chín trong mười luật chống nội dung rỗng là PHÉP ĐO, không phải lời khuyên');
+bao(rDu.xong.chua.length === 0,
+  'đủ mười điều kiện hoàn thành — thang đo NGƯỜI HỌC, tính riêng, không cộng vào điểm');
+
+/* ── CHỖ QUAN TRỌNG NHẤT CỦA CẢ MỤC NÀY ──
+   Máy KHÔNG được có một trường nào tên là "tổng trên trăm". Bốn chiều
+   còn trống thì cộng ra tổng là dựng một con số trông như đã xong. */
+bao(rDu.tranMay === 60 && rDu.conCho.length === 5 &&
+    rDu.conCho.reduce((s, c) => s + c.con, 0) === 40,
+  'máy chỉ chấm 60/100 và NÓI RA 40 điểm còn chờ người — không cộng ra tổng',
+  'máy cho ' + rDu.diemMay + '/' + rDu.tranMay + ' · còn chờ ' +
+  rDu.conCho.map(c => c.ma).join(','));
+bao(rDu.cham.Q09.tran === 4 && rDu.cham.Q09.conNguoi === 6,
+  'chìa khoá kim cương: trần máy 4, thấp nhất — máy chỉ biết khối có mặt, không biết câu ấy đổi được cách nhìn ai');
+bao(!('diem' in rDu) && !('bacDiem' in rDu) && !('bac' in rDu),
+  'KHÔNG có trường điểm tổng và KHÔNG có bậc khi bốn chiều còn trống');
+
+/* ── PHÁ: BÀI TẬP KHÔNG SẢN PHẨM (luật N06) ── */
+const boK15 = baiDu.replace(/K15 \| Sản phẩm\nMột bảng bảy dòng, có chữ của học viên\.\n/, '');
+const rN06 = await ndMod.soatNoiDung({chu: boK15, tang: 'T1'}, env, env.CSDL, saR01);
+bao(rN06.doi.some(p => p.khoi === 'K14' && p.can === 'K15') &&
+    rN06.cam.some(c => c.ma === 'N06'),
+  'bỏ khối sản phẩm thì K14 báo thiếu K15 — luật N06 đỏ đúng chỗ',
+  rN06.doi.map(p => p.khoi + '→' + p.can).join(' '));
+
+/* ── PHÁ: DẤU MỞ KHỐI CÓ MÀ KHỐI TRỐNG ──
+   Đây là chỗ lách rẻ nhất của cả cổng: gõ đủ hai mươi bốn dấu mở là
+   qua hết phép đếm, mà bài vẫn trống. Phép đo phải là CÓ CHỮ. */
+const rongRuot = baiDu.replace('Một bảng bảy dòng, có chữ của học viên.', 'xong');
+const rTrong = await ndMod.soatNoiDung({chu: rongRuot, tang: 'T1'}, env, env.CSDL, saR01);
+bao(rTrong.khoi.thieu.indexOf('K15') >= 0 && rTrong.khoi.trong.indexOf('K15') >= 0,
+  'dấu mở khối có mà ruột dưới 8 ký tự thì tính là THIẾU — không đếm dấu, đếm chữ');
+
+/* ── PHÁ: CÂU RỖNG ── */
+const rRong = await ndMod.soatNoiDung(
+  {chu: baiDu.replace('Tối nay ghi 3 dòng, không thêm nhận xét.',
+    'Hãy cố gắng lên, thành công sẽ đến.'), tang: 'T1'}, env, env.CSDL, saR01);
+bao(rRong.rong.length >= 2 && rRong.rong[0].dong > 0 && rRong.rong[0].thay,
+  'bắt câu rỗng ĐÚNG SỐ DÒNG và nói ra thứ đáng lẽ nằm ở đó',
+  'dòng ' + rRong.rong.map(r => r.dong).join(',') + ' · ' + rRong.rong[0].bat);
+bao(rRong.cham.Q04.duoc < rDu.cham.Q04.duoc,
+  'câu rỗng kéo chiều RÕ RÀNG xuống — điểm đi theo phép đo, không đi theo cảm nhận',
+  rDu.cham.Q04.duoc + ' → ' + rRong.cham.Q04.duoc);
+
+/* ── PHÁ: CÂU PHÁN XÉT ── */
+const rLoi = await ndMod.soatNoiDung(
+  {chu: baiDu.replace('Tối nào dễ ghi nhất? Vì sao tối ấy dễ?',
+    'Con lười và thiếu kỷ luật, phải cố gắng hơn.'), tang: 'T1'}, env, env.CSDL, saR01);
+bao(rLoi.loi.length >= 3 && rLoi.loi.every(l => l.thay && l.vi),
+  'bắt câu phán xét, kèm câu NÓI THAY và VÌ SAO — thiếu vì sao thì lần sau họ viết lại bằng một từ khác',
+  rLoi.loi.map(l => l.bat).join(' · '));
+bao(rLoi.cham.Q07.duoc <= 4,
+  'ba câu dán nhãn kéo chiều NGÔN TỪ COACH xuống dưới nửa',
+  rLoi.cham.Q07.duoc + '/10');
+
+/* ── PHÁ: VƯỢT TẦNG ──
+   Dùng CHUNG hàm soatTang của cổng thị giác. Nếu có ngày ai chép nó
+   sang thành bản thứ hai, phép đo này vẫn xanh mà mục 75 chỉ soi bản
+   kia — nên chỗ đáng canh là chính lời chú giải ở đầu hàm ấy. */
+const rTang = await ndMod.soatNoiDung(
+  {chu: baiDu.replace('Bốn trụ G-I-T-A, đọc theo thứ tự.',
+    'Coach đồng hành cả nhà, tra phác đồ rồi chạy kịch bản.'), tang: 'T1'},
+  env, env.CSDL, saR01);
+bao(rTang.cham.Q01.duoc === 0 && rTang.cham.Q01.ma === 'VUOTTANG',
+  'bài khai T1 mà nhắc phác đồ, kịch bản, coach đồng hành thì chiều ĐÚNG HỆ về 0',
+  rTang.cham.Q01.vi.slice(0, 60));
+
+/* ── PHÁ: KHÔNG NHÃN NGUỒN ── */
+const rNg = await ndMod.soatNoiDung(
+  {chu: baiDu.replace('[KHO GITA] ', ''), tang: 'T1'}, env, env.CSDL, saR01);
+bao(!rNg.nguon.dat && rNg.cam.some(c => c.ma === 'N09'),
+  'không dòng nào mang nhãn nguồn thì luật N09 đỏ — bốn nhãn cố định thì máy đếm được, "luôn nêu nguồn" thì không');
+
+/* ── AI ĐƯỢC VÀO ── */
+bao((await ndMod.soatNoiDung({chu: baiDu, tang: 'T1'}, env, env.CSDL,
+      {uid: 'U-ph', username: 'phuhuynh@gita365.vn', role: 'R13'})).error === 'KHONGQUYEN',
+  'khách hàng KHÔNG vào được cổng nội dung — bảng câu rỗng nằm trong tay khách là bảng chỉ ra chỗ yếu của chính bài họ đang trả tiền để đọc');
+
+/* ── MẪU BÀI ── */
+const rMau = await ndMod.mauBaiHoc({}, env, env.CSDL, saR01);
+/* Điền ruột vào mẫu rồi đọc lại bằng chính hàm đọc. Chữ SAU dấu gạch
+   đứng là TÊN khối, không phải ruột — nên phải thêm một dòng dưới mỗi
+   dấu mở. Bản thử đầu tôi nối chữ vào ngay sau tên khối và nó đỏ:
+   phép thử sai, hàm đọc đúng. */
+const rMauDay = rMau.mau.replace(/^([ \t]*K\d{2}[ \t]*\|.*)$/gm,
+  '$1\nRuột khối này dài hơn tám ký tự.');
+const dsMau = ndMod.docKhoi(rMauDay);
+bao(rMau.ok && rMau.soKhoi === 24 && dsMau.thieu.length === 0,
+  'mẫu bài do máy sinh ra đọc lại được bằng chính hàm đọc — dấu mở khối không bị gõ sai',
+  '24 khối');
+
+/* ── PHÁ: DÒ THEO TỪ, KHÔNG DÒ THEO CHUỖI CON ──
+   Bản đầu của bộ dò báo mười ba câu dán nhãn trên một bài sạch: bỏ
+   dấu xong thì "hư" thành "hu", và "hu" nằm trong "chưa", "chuẩn",
+   "thứ". Máy chỉ vào những dòng không có gì sai — và người bị chỉ
+   nhầm ba lần thì lần thứ tư thôi đọc cả danh sách. */
+bao(rDu.loi.length === 0,
+  'bài sạch KHÔNG bị báo câu phán xét nào — "hư" không được khớp bên trong "chưa"',
+  'trước khi chặn hai đầu bằng ranh giới chữ, chỗ này báo 13 câu');
+bao(ndMod.soatLoiNoi('Con chưa làm được, chuẩn bị thứ hai.').length === 0 &&
+    ndMod.soatLoiNoi('Con hư quá.').length === 1,
+  'dò theo TỪ: "chưa · chuẩn · thứ" sạch, còn "hư" đứng một mình thì bắt');
+bao(ndMod.soatLoiNoi('Con luoi lam.').length === 1,
+  'gõ THIẾU DẤU vẫn bắt — người ta gõ thiếu dấu rất thường, và một bộ dò bỏ qua chúng là bộ dò dễ lách nhất');
+
+/* ── PHÉP SOI TỰ CHỨNG MINH CHƯA CÂM ──
+   Bản chép trong máy chủ phải khớp kho. Ở đây đo phần đo được không
+   cần kho: hai mươi bốn mã liên tục, không thiếu không trùng. */
+const maBanChep = ndMod.BAN_CHEP.KHOI.map(k => k[0]);
+bao(maBanChep.length === 24 &&
+    maBanChep.every((m, i) => m === 'K' + String(i + 1).padStart(2, '0')),
+  'bản chép hai mươi bốn khối liên tục K01→K24, không thiếu không trùng');
+
 /* ═══════════════ 17 · KHÔNG RÒ RA NGOÀI ═══════════════ */
 console.log('\n17 · KHÔNG RÒ RA NGOÀI');
 const xau = {prepare(){ throw new Error('SQLITE_ERROR: no such column: users.matKhauThat'); }};

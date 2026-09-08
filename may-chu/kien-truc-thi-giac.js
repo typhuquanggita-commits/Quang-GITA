@@ -101,6 +101,10 @@ function laChuHe(hoSo) { return hoSo.role === 'R01'; }
    sai im lặng nhất — một nội dung nói "90 ngày" có thể là T3, mà cũng
    có thể là một trang so sánh các chặng. Người đăng khai Tầng, máy
    kiểm khai ấy có mâu thuẫn với chính nội dung không. */
+/* Đã có tên trong danh sách xuất ở cuối tệp — cổng NỘI DUNG dùng
+   chung hàm này chứ không chép. Chép thì CAM_THEO_TANG có hai bản,
+   và mục 75 của bộ kiểm chỉ đối chiếu một bản; bản kia lệch đi mà
+   không đỏ. */
 function soatTang(tang, chu) {
   if (THU_TU_TANG.indexOf(tang) < 0)
     return {qua: false, ma: 'TANGLA', vi: 'Tầng phải là một trong ' +

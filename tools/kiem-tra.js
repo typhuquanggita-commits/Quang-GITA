@@ -11434,6 +11434,121 @@ const { chromium } = require(PW);
   }
 
 
+  /* ══════════════════ 77. HIẾN PHÁP NỘI DUNG — BẢN CHÉP Ở MÁY CHỦ ══════════════════
+
+     Cùng lớp với mục 75, và sinh ra vì cùng một lý do: máy chủ không
+     đọc được kho đã mã hoá, nên nó phải giữ một bản chép TỐI THIỂU để
+     chặn. Bản chép nào không được đối chiếu thì nó lệch đi lúc nào
+     không ai biết — và lệch ở đây nghĩa là máy chấm bài theo một bảng
+     mà chủ hệ chưa từng duyệt.
+
+     Chú giải ở đầu may-chu/kien-truc-noi-dung.js HỨA rằng phép đo này
+     tồn tại. Dựng ngay cùng lượt, chứ không để nó thành một lời hứa
+     suông như chú giải của tai-chinh.js 9.93.
+
+     Đối chiếu TỪNG Ô, không đối chiếu số lượng: hai bảng cùng dài mà
+     lệch nội dung thì đếm số vẫn xanh. */
+  {
+    const ra = {};
+    const mND = await import('../may-chu/kien-truc-noi-dung.js');
+    const kho = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        khoi: (G.KN_KHOI || []).map(k => ({ma: k.ma, ten: k.ten, doi: k.doi || null})),
+        diem: (G.KN_DIEM || []).map(d => ({ma: d.ma, ten: d.ten, trong: d.trong,
+          ai: d.ai, tran: d.tranMay || null})),
+        bac:  (G.KN_BAC || []).map(b => ({tu: b.tu, ten: b.ten})),
+        rong: (G.KN_RONG || []).map(r => r.cau),
+        loi:  (G.KN_LOI_THAY || []).map(l => l.dung),
+        nguon: (G.KN_NGUON || []).map(n => n.nhan),
+        cam:  (G.KN_CAM || []).map(c => c.ma),
+        xong: (G.KN_XONG || []).map(x => x.ma),
+        maVb: G.KN_MA_VB || '',
+        /* Mọi khối phải khai câu hỏi nó trả lời, và mọi khối phải nối
+           về ít nhất một điều kiện hoàn thành. Khối không nối về đâu
+           là khối thừa, và một bảng kiểm có ô thừa thì người ta điền
+           cho xong chứ không điền cho đúng. */
+        khoiThieuHoi: (G.KN_KHOI || []).filter(k => !k.hoi || k.hoi.length < 10).map(k => k.ma),
+        khoiKhongNoi: (G.KN_KHOI || []).filter(k => !(k.xong || []).length).map(k => k.ma)
+      };
+    });
+
+    const bc = mND.BAN_CHEP;
+    const lech = [];
+    /* Hai mươi bốn khối: mã, tên, và khối nào đòi khối nào. */
+    if (bc.KHOI.length !== kho.khoi.length) lech.push('số khối');
+    bc.KHOI.forEach(([ma, ten, doi], i) => {
+      const g = kho.khoi[i];
+      if (!g) { lech.push(ma + ' không có trong kho'); return; }
+      if (g.ma !== ma)  lech.push('khối ' + i + ': máy chủ ' + ma + ' · kho ' + g.ma);
+      if (g.ten !== ten) lech.push(ma + ' tên lệch');
+      if (JSON.stringify(doi || null) !== JSON.stringify(g.doi))
+        lech.push(ma + ' bảng ĐÒI lệch');
+    });
+    /* Mười chiều: ai chấm, và trần máy được phép cho ở chiều "cả hai".
+       Trần lệch là chỗ nguy nhất của cả bảng — nó không làm sai một
+       phép đo nào, nó chỉ làm máy cho nhiều điểm hơn phần nó đo được. */
+    if (bc.DIEM.length !== kho.diem.length) lech.push('số chiều chấm');
+    bc.DIEM.forEach((d, i) => {
+      const g = kho.diem[i];
+      if (!g) { lech.push(d.ma + ' không có trong kho'); return; }
+      if (g.ma !== d.ma || g.ten !== d.ten) lech.push('chiều ' + d.ma + ' lệch tên');
+      if (g.trong !== d.trong) lech.push(d.ma + ' trọng số lệch');
+      if (g.ai !== d.ai) lech.push(d.ma + ' AI CHẤM lệch: máy chủ ' + d.ai + ' · kho ' + g.ai);
+      if ((d.tran || null) !== g.tran) lech.push(d.ma + ' TRẦN MÁY lệch');
+    });
+    const soDay = (a, b, ten) => {
+      if (a.length !== b.length || a.some((x, i) => x !== b[i])) lech.push(ten);
+    };
+    soDay(bc.RONG.map(r => r[0]), kho.rong, 'bảng câu rỗng');
+    soDay(bc.LOI_THAY.map(l => l[0]), kho.loi, 'bảng thay lời');
+    soDay(bc.NHAN_NGUON, kho.nguon, 'bốn nhãn nguồn');
+    soDay(bc.BAC_DIEM.map(b => b.tu + '·' + b.ten),
+          kho.bac.map(b => b.tu + '·' + b.ten), 'bốn bậc điểm');
+
+    ra.ndLech = lech;
+    ra.ndKhop = lech.length === 0;
+    ra.ndDuKho = kho.maVb === 'KN-HP-01' && kho.cam.length === 10 &&
+                 kho.xong.length === 10 && kho.khoi.length === 24;
+    ra.ndKhoiDay = kho.khoiThieuHoi.length === 0 && kho.khoiKhongNoi.length === 0;
+    ra.ndThieuHoi = kho.khoiThieuHoi;
+    ra.ndKhongNoi = kho.khoiKhongNoi;
+
+    /* ── MÁY KHÔNG ĐƯỢC CỘNG RA TỔNG ──
+       Chiều nào máy không chấm thì nó bỏ trống. Tổng trần máy phải
+       ĐÚNG BẰNG tổng phần máy được phép, và phần còn lại phải bằng
+       đúng chỗ thiếu — nếu hai số ấy cộng lại không ra 100 thì có một
+       chiều đang bị tính hai lần hoặc không ai tính. */
+    const tranMay = bc.DIEM.reduce((s, d) =>
+      s + (d.ai === 'may' ? d.trong : d.ai === 'ca' ? (d.tran || 0) : 0), 0);
+    const conNguoi = bc.DIEM.reduce((s, d) =>
+      s + (d.ai === 'may' ? 0 : d.trong - (d.tran || 0)), 0);
+    ra.ndCongDu = tranMay + conNguoi === 100 && tranMay === 60 && conNguoi === 40;
+    ra.ndTranMay = tranMay;
+
+    /* ── PHÉP TỰ CHỨNG MINH CHƯA CÂM ──
+       Gọi thẳng bộ dò với một câu dán nhãn và một câu sạch, rồi đòi nó
+       phân biệt. Đọc chú giải thì chú giải nói gì cũng được. */
+    ra.ndDoThat = mND.soatLoiNoi('Con lười quá.').length === 1 &&
+                  mND.soatLoiNoi('Con chưa bắt đầu được.').length === 0 &&
+                  mND.soatRong('Hãy cố gắng lên nhé.').length === 1 &&
+                  mND.soatDoi({K14: 'có bài tập ở đây'}).length === 1;
+
+    bao(ra.ndKhop && ra.ndDuKho && ra.ndKhoiDay && ra.ndCongDu && ra.ndDoThat,
+      'HIẾN PHÁP NỘI DUNG: BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP TỪNG Ô VỚI BẢN GỐC TRONG KHO, VÀ MÁY PHẢI KHÔNG CỘNG RA TỔNG KHI CÒN CHIỀU CHƯA AI CHẤM. Bản đặc tả MASTER AI của chủ hệ để AI tự chấm cả mười chiều rồi ra một con số trên trăm. Bốn chiều trong đó — chiều sâu, cá nhân hoá, dùng lại được, và phần có giá trị của chìa khoá kim cương — không có dữ liệu nào để đo, nên máy chấm chúng là máy ĐOÁN; và một con số đoán nằm cạnh sáu con số đo thì cả bảy đều được tin như nhau. Nên máy chỉ được chấm 60 điểm và phải NÓI RA 40 điểm còn chờ người — cùng luật với L-02 của bảng lương. Phép đo này cộng lại hai nửa và đòi đúng 100: lệch nghĩa là có một chiều bị tính hai lần hoặc không ai tính. Máy chủ không đọc được kho đã mã hoá nên phải giữ bản chép của hai mươi bốn khối, mười chiều, bảng câu rỗng và bảng thay lời; phép đo đối chiếu TỪNG Ô chứ không đếm số, vì hai bảng cùng dài mà lệch nội dung thì đếm số vẫn xanh. Chỗ nguy nhất là ô TRẦN MÁY: lệch một điểm ở đó không làm sai phép đo nào, nó chỉ làm máy cho nhiều điểm hơn phần nó thật sự đo được. Và phép đo gọi thẳng ba bộ dò rồi đòi chúng phân biệt câu dán nhãn với câu sạch',
+      ra.ndKhop && ra.ndCongDu
+        ? '24 khối · 10 chiều · máy chấm ' + ra.ndTranMay + '/100, còn ' +
+          (100 - ra.ndTranMay) + ' chờ người · bảng câu rỗng và bảng thay lời khớp từng ô · ba bộ dò phân biệt thật'
+        : [ra.ndLech.length ? 'LỆCH BẢN GỐC: ' + ra.ndLech.join(' · ') : '',
+           !ra.ndDuKho ? 'kho thiếu bảng: ' + kho.maVb + ' · ' + kho.khoi.length + ' khối' : '',
+           (ra.ndThieuHoi || []).length ? 'khối không khai câu hỏi: ' + ra.ndThieuHoi.join(', ') : '',
+           (ra.ndKhongNoi || []).length ? 'khối không nối về điều kiện hoàn thành nào: ' + ra.ndKhongNoi.join(', ') : '',
+           !ra.ndCongDu ? 'HAI NỬA CỘNG LẠI KHÔNG RA 100: máy ' + ra.ndTranMay : '',
+           !ra.ndDoThat ? 'GỌI THẲNG BỘ DÒ THÌ NÓ KHÔNG PHÂN BIỆT ĐƯỢC' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

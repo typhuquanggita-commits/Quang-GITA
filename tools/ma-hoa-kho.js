@@ -245,6 +245,14 @@ const NGHE = [
   'TC_KPI', 'TC_LUONG',
   'TG_MA_VB', 'TG_TANG', 'TG_NGUOI', 'TG_LOAIHINH', 'TG_CAM', 'TG_DIEM',
   'TG_BAC', 'TG_TRANGTHAI', 'TG_LENH', 'TG_CHOCHU', 'TG_LUAT_GOC',
+  /* Hiến pháp Nội dung — 9.99.41. Gói NGHỀ, cùng lý do với Hiến pháp
+     Thị giác: đây là bảng chấm và bảng chặn của người LÀM nội dung.
+     Khách hàng đọc nội dung, không đọc thang chấm nội dung — và bảng
+     câu rỗng nằm trong tay khách là bảng chỉ ra chỗ yếu của chính
+     những bài họ đang trả tiền để đọc. */
+  'KN_MA_VB', 'KN_KHOI', 'KN_XONG', 'KN_DIEM', 'KN_BAC', 'KN_CAM',
+  'KN_SAU', 'KN_NGUON', 'KN_LOI_THAY', 'KN_RONG', 'KN_CHE', 'KN_NGUOIDOC',
+  'KN_CONGTHUC', 'KN_VONG', 'KN_LUAT_GOC', 'KN_CHOCHU',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */
