@@ -37928,8 +37928,16 @@ var G = window.G || {}; window.G = G;
         '<rect x="' + (x + 2) + '" y="' + (y + 2) + '" width="' + (w - 4) +
           '" height="' + (ht - 4) + '" rx="16" fill="none" stroke="' + h(sac) +
           '" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="11 8"/>';
+      /* Lớp `gita-giangiao` — chữ của Ô CHỜ là GIÀN GIÁO, không phải
+         nội dung của tấm. Bản đầu của chữ thay ảnh nuốt luôn cả ba
+         dòng này, nên câu tả một áp phích mở đầu bằng "Ô CHỜ LỚP
+         NGƯỜI · 410×1080 · ảnh về rồi mới đầy" — đúng ba dòng nói về
+         chỗ CHƯA CÓ GÌ, đứng trước mọi thứ tấm thật sự nói.
+         Tấm đã phát hành thì không còn ô chờ (luật C16), nhưng tấm
+         đang đi trong thang duyệt thì có, và bản mô tả của nó phải
+         dùng được ngay lúc ấy. */
       loi.forEach(function (d, i) {
-        svg += '<text x="' + Math.round(x + w / 2) + '" y="' +
+        svg += '<text class="gita-giangiao" x="' + Math.round(x + w / 2) + '" y="' +
           Math.round(y + ht / 2 + (i - 1) * co * 1.5) + '" text-anchor="middle" ' +
           'font-family="' + h(CHU_THAN) + '" font-size="' +
           (i === 0 ? co : Math.round(co * 0.82)) + '" font-weight="' +
@@ -38532,7 +38540,8 @@ var G = window.G || {}; window.G = G;
        lần ở nhãn ngắn, chỗ máy đọc màn hình đọc trước tiên, rồi dành
        trọn phần còn lại cho nội dung của chính tấm này. */
     var dong = (svg.match(/<text[^>]*>([\s\S]*?)<\/text>/g) || [])
-      .filter(function (t) { return t.indexOf('gita-dau') < 0; })
+      .filter(function (t) {
+        return t.indexOf('gita-dau') < 0 && t.indexOf('gita-giangiao') < 0; })
       .map(function (t) { return t.replace(/<[^>]+>/g, '').trim(); })
       .filter(function (s) { return s.length > 1; });
     /* Bỏ trùng liền kề: một câu ngắt hai dòng ra hai thẻ <text>, mà
