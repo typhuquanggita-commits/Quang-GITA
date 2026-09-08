@@ -2124,7 +2124,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.34',
+  version: '9.99.35',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -34908,6 +34908,20 @@ var G = window.G || {}; window.G = G;
        Cộng một lớp TỐI DẦN Ở RÌA (vignette): mắt tự tìm chỗ sáng
        nhất, nên rìa tối là cách đẩy mắt vào giữa mà không vẽ thêm
        gì để mắt phải đọc. */
+    /* ── GIẤY BÚT KHÔNG CÓ QUẦNG SÁNG ──
+       Ba quầng radial dựng chiều sâu cho một MÀN HÌNH. Trên một tờ
+       giấy thì không có gì phát sáng phía sau cả — quầng ở đó đọc ra
+       là tờ giấy bị ố, và cả tấm mất đúng thứ nó đang giả: mặt giấy
+       phẳng, đều, có hạt. Nền bút trả về một mặt giấy trơn cộng một
+       lớp hạt, không quầng, không tối rìa. */
+    if (k.but) {
+      var hg = defBut();
+      return {defs: hg.defs,
+        ve: '<rect x="0" y="0" width="' + kg.w + '" height="' + kg.h + '" fill="' +
+          h(k.nen) + '"/>' +
+          '<rect x="0" y="0" width="' + kg.w + '" height="' + kg.h +
+          '" filter="url(#' + hg.hat + ')" opacity="0.055"/>'};
+    }
     var a = idMoi('quang'), b = idMoi('quang'), c = idMoi('quang'), r = idMoi('ria');
     var d = (dam === undefined ? 1 : dam) * (k.sau ? 2.6 : (k.giay ? 0.55 : 1));
     var q = function (id, mau, dam2) {
@@ -36544,6 +36558,25 @@ var G = window.G || {}; window.G = G;
     var cs = defChuSac(k);
     var manh = [nen, bong, cs];
 
+    /* ── NỀN BÚT: VẼ BẰNG NÉT, KHÔNG BẰNG MẢNG ──
+       Tới 9.99.34 nền `but` chỉ đổi BẢNG MÀU — giấy ngà, mực nâu —
+       rồi vẽ y hệt mọi nền khác: chip tô đặc, vòng tròn tô đặc, bóng
+       đổ. Ra một tấm in màu trên giấy ngà, không ra một tấm vẽ tay.
+
+       Tấm mẫu chủ hệ gửi gần như KHÔNG có mảng đặc nào: tất cả là nét
+       mực trên giấy, và chỗ duy nhất có mảng là vệt bút nhớ vàng.
+       Nên ở nền bút: chip thành khung viền, vòng dấu thành nét, bóng
+       đổ bỏ hẳn, và mọi nét đi qua bộ lọc `run` cho hơi run tay.
+
+       CHỮ KHÔNG QUA BỘ LỌC. Nét run làm hình sống; làm chữ thì thành
+       chữ nhoè, mà chữ nhoè là chữ hỏng. */
+    var but = defBut();
+    var netRun = '';
+    if (k.but) {
+      manh.push({defs: but.defs});
+      netRun = ' filter="url(#' + but.run + ')"';
+    }
+
     var coTieu = Math.round(kg.w / 24);
     var yTieu = Math.round(kg.h * (nhan ? 0.085 : 0.070)) + coTieu;
     var tieu = veChu(x.nhiemVu, Math.round(kg.w / 2), yTieu,
@@ -36566,9 +36599,10 @@ var G = window.G || {}; window.G = G;
     var rongCot = Math.round((kg.w - le * 2 - khe) / 2);
 
     /* Đường kẻ dọc ở giữa — toàn bộ lập luận của tấm nằm ở đây. */
-    var ve = '<line x1="' + Math.round(kg.w / 2) + '" y1="' + (dinh - 8) +
+    var ve = '<line' + netRun + ' x1="' + Math.round(kg.w / 2) + '" y1="' + (dinh - 8) +
       '" x2="' + Math.round(kg.w / 2) + '" y2="' + dayVung +
-      '" stroke="' + h(k.muc3) + '" stroke-opacity="0.5" stroke-width="1.5"/>';
+      '" stroke="' + h(k.muc3) + '" stroke-opacity="' + (k.but ? '0.75' : '0.5') +
+      '" stroke-width="' + (k.but ? 2.4 : 1.5) + '"/>';
 
     /* ── KHỔ CAO: DỜI CẢ CỤM XUỐNG GIỮA, ĐỪNG BỎ TRỐNG NỬA DƯỚI ──
        Khối "giãn đều cho hết vùng" bên dưới chặn trần mỗi khe ở
@@ -36616,6 +36650,17 @@ var G = window.G || {}; window.G = G;
         '<stop offset="0%" stop-color="' + h(doiSang(mau, nemDai(k))) + '"/>' +
         '<stop offset="100%" stop-color="' + h(doiSang(mau, -nemDai(k))) + '"/>' +
         '</linearGradient>'});
+      if (k.but) {
+        /* Khung viền, không mảng đặc — và không bóng đổ: giấy không
+           có bóng đổ, nó chỉ có nét đè lên nét. Chữ đầu cột mặc chính
+           sắc của cột, đủ đậm trên giấy ngà. */
+        ve += '<rect' + netRun + ' class="gita-tam" x="' + xc + '" y="' + dinh +
+          '" width="' + rongCot + '" height="' + Math.round(caoChip) + '" rx="10" ' +
+          'fill="none" stroke="' + h(nenDac(mau, 4.6)) + '" stroke-width="3"/>';
+        ve += veChu(c.ten, xc + Math.round(rongCot / 2), dinh + coDau * 1.05,
+          {co: coDau, chu: CHU_THAN, dam: 800, mau: nenDac(mau, 4.6),
+           rong: rongCot - 32, gian: 1.2, can: 'middle'}).svg;
+      } else {
       ve += '<g filter="url(#' + bong.id + ')"><rect class="gita-tam" x="' + xc +
         '" y="' + dinh +
         '" width="' + rongCot + '" height="' + Math.round(caoChip) + '" rx="12" ' +
@@ -36623,6 +36668,7 @@ var G = window.G || {}; window.G = G;
       ve += veChu(c.ten, xc + Math.round(rongCot / 2), dinh + coDau * 1.05,
         {co: coDau, chu: CHU_THAN, dam: 800, mau: mucTren(mau),
          rong: rongCot - 32, gian: 1.2, can: 'middle'}).svg;
+      }
 
       var yy = dinh + caoChip + 14;
 
@@ -36642,11 +36688,19 @@ var G = window.G || {}; window.G = G;
           !/\b(?:lo trinh|ban do|dong hanh|gia dinh)\b/.test(boDauChu(c.ten + ' ' + c.phu)))
         maH = 'leo';
       var caoH = Math.round(kg.h * 0.115);
-      ve += '<rect x="' + (xc + Math.round(rongCot * 0.14)) + '" y="' + Math.round(yy) +
-        '" width="' + Math.round(rongCot * 0.72) + '" height="' + Math.round(caoH * 1.16) +
-        '" rx="14" fill="' + h(mau) + '" fill-opacity="' + (k.sau ? '0.14' : '0.09') + '"/>';
-      ve += veNet('nguoi', maH, xc + Math.round(rongCot / 2),
-        Math.round(yy + caoH * 0.58), caoH, mau, 3.6);
+      ve += k.but
+        ? '<rect' + netRun + ' x="' + (xc + Math.round(rongCot * 0.14)) +
+          '" y="' + Math.round(yy) + '" width="' + Math.round(rongCot * 0.72) +
+          '" height="' + Math.round(caoH * 1.16) + '" rx="12" fill="none" stroke="' +
+          h(nenDac(mau, 3.2)) + '" stroke-width="2" stroke-opacity="0.75"/>'
+        : '<rect x="' + (xc + Math.round(rongCot * 0.14)) + '" y="' + Math.round(yy) +
+          '" width="' + Math.round(rongCot * 0.72) + '" height="' + Math.round(caoH * 1.16) +
+          '" rx="14" fill="' + h(mau) + '" fill-opacity="' + (k.sau ? '0.14' : '0.09') + '"/>';
+      ve += (k.but ? '<g' + netRun + '>' : '') +
+        veNet('nguoi', maH, xc + Math.round(rongCot / 2),
+          Math.round(yy + caoH * 0.58), caoH, k.but ? nenDac(mau, 4.6) : mau,
+          k.but ? 3.2 : 3.6, k.but) +
+        (k.but ? '</g>' : '');
       yy += caoH * 1.16 + 14;
 
       if (c.phu) {
@@ -36678,6 +36732,23 @@ var G = window.G || {}; window.G = G;
         var mD = m.dung ? mauDung : mauSai;
         var dong = catDong(m.t, '500 ' + coY + 'px ' + CHU_THAN,
           rongCot - rD * 2 - 16);
+        /* Nền bút: dấu vẽ bằng NÉT trên giấy, không phải một huy hiệu
+           tô đặc. Hai nét chéo cho dấu sai, hai nét gấp cho dấu đúng
+           — đúng thứ tay người vạch ra khi ghi nhanh một danh sách. */
+        if (k.but) {
+          var mB = nenDac(mD, 4.6), r2 = rD * 0.86;
+          ve += '<g' + netRun + ' stroke="' + h(mB) + '" stroke-width="' +
+            Math.max(2, rD * 0.26).toFixed(1) + '" stroke-linecap="round" fill="none">' +
+            (m.dung
+              ? '<path d="M' + (xc + rD - r2 * 0.62) + ' ' + Math.round(yy + rD) +
+                ' l' + (r2 * 0.45).toFixed(1) + ' ' + (r2 * 0.52).toFixed(1) +
+                ' l' + (r2 * 0.92).toFixed(1) + ' -' + (r2 * 1.12).toFixed(1) + '"/>'
+              : '<path d="M' + (xc + rD - r2 * 0.6) + ' ' + Math.round(yy + rD - r2 * 0.6) +
+                ' l' + (r2 * 1.2).toFixed(1) + ' ' + (r2 * 1.2).toFixed(1) +
+                ' M' + (xc + rD + r2 * 0.6) + ' ' + Math.round(yy + rD - r2 * 0.6) +
+                ' l-' + (r2 * 1.2).toFixed(1) + ' ' + (r2 * 1.2).toFixed(1) + '"/>') +
+            '</g>';
+        } else
         ve += '<circle cx="' + (xc + rD) + '" cy="' + Math.round(yy + rD) +
           '" r="' + rD + '" fill="' + h(mD) + '"/>' +
           '<g transform="translate(' + (xc + rD) + ',' + Math.round(yy + rD) +
@@ -36831,10 +36902,20 @@ var G = window.G || {}; window.G = G;
   /* Vẽ một hình nét. Hình người trong hộp 100 đơn vị; `cao` là chiều
      cao thật trên tấm. Nét dày theo cỡ, để hình nhỏ không thành một
      vệt mờ và hình lớn không thành một khối đen. */
-  function veNet(bo, ma, cx, cy, cao, mau, dam) {
+  function veNet(bo, ma, cx, cy, cao, mau, dam, chiNet) {
     var t = (bo === 'nguoi' ? NGUOI : CANH)[ma];
     if (!t) return '';
     var ty = cao / 100;
+    /* ── TRÊN GIẤY BÚT: HÌNH NGƯỜI VẼ BẰNG NÉT, KHÔNG TÔ ĐẶC ──
+       Hình người trong kho dựng bằng khối đặc — đúng cho một tấm in
+       màu, sai cho một trang giấy vẽ tay: trên giấy, một khối đặc đọc
+       ra là một vết mực đổ, không ra một người. Cùng hình ấy, chỉ đổi
+       tô thành nét, là ra đúng thứ tay người vẽ. */
+    if (bo === 'nguoi' && chiNet)
+      return '<g transform="translate(' + cx + ',' + cy + ') scale(' + ty.toFixed(4) +
+        ')" fill="none" stroke="' + h(mau) + '" stroke-width="' + (dam || 4) +
+        '" stroke-linecap="round" stroke-linejoin="round" class="gita-net">' +
+        t + '</g>';
     /* Hình NGƯỜI dựng bằng khối đặc — nhóm tô màu, phần nào cần nét
        thì tự khai fill="none" và stroke-width của riêng nó. Hình BỐI
        CẢNH vẫn vẽ bằng nét, vì bối cảnh phải nhạt hơn người: người là
