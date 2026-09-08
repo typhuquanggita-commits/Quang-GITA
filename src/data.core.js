@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.42',
+  version: '9.99.43',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -432,7 +432,16 @@ G.TAM_NHIN = [
      màn vừa thêm không mang theo bản ghi nghề nào. */
   /* 31 chứ không còn 33 — cùng một lý do với R09–R11 ở 9.65: mẫu số
      tăng hai màn nghề mà cộng tác viên vốn không thấy. */
-  {vai:['R15'], pt:31, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
+  /* ── ĐỢT SỬA SỐ CÔNG BỐ Ở BẢN 9.99.43 · 29 chứ không còn 31 ──
+     Màn Biên soạn nội dung khoá ở qt_trang, nên phần KHOÁ của cộng tác
+     viên không mở thêm một màn nào; chỉ mẫu số tăng một. Với mẫu số nhỏ
+     như của Đại sứ thì một màn đủ đẩy tỉ lệ ra ngoài dung sai hai điểm.
+
+     Đây đúng là phép thử mà sổ tay vận hành đã ghi sẵn: câu hỏi không
+     phải "tỉ lệ có tụt không" mà là "phần KHOÁ có mở thêm màn nào
+     không". Không mở, nên sửa SỐ CÔNG BỐ — và KHÔNG nới dung sai. Nới
+     dung sai để bộ kiểm xanh là tắt đúng cái đèn vừa báo đúng. */
+  {vai:['R15'], pt:29, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -840,6 +849,7 @@ G.NAV = [
        qua cổng ấy là hoặc mở qt_trang cho họ — tức cho luôn quyền cấp
        tài khoản — hoặc để họ không vào được phòng của chính mình. */
     {v:'phong-tai-chinh', t:'Phòng Kế toán – Tài chính', h:'Bảng tin · trợ lý · việc của tôi · sổ ngày · đối chiếu · chốt sổ · KPI · lương · quy chế', ic:'shield', star:1, perm:'fin_view', capMo:'chung'},
+    {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus', star:1, perm:'qt_trang', capMo:'quantri'},

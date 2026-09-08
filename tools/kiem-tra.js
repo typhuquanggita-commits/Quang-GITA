@@ -11451,6 +11451,23 @@ const { chromium } = require(PW);
   {
     const ra = {};
     const mND = await import('../may-chu/kien-truc-noi-dung.js');
+    /* ── ĐẶT LẠI TÀI KHOẢN TRƯỚC KHI ĐỌC KHO ──
+       Kho KN_* nằm ở gói NGHỀ. Một mục chạy trước có thể để lại tài
+       khoản Đại sứ, và Đại sứ không có gói nghề — lúc ấy phép đo này
+       báo "kho thiếu bảng · 0 khối" và chỉ thẳng vào mã của cổng nội
+       dung, trong khi lỗi nằm ở mục khác.
+
+       Đã xảy ra thật ở bản 9.99.43: mục 11 đỏ vì một màn mới làm đổi
+       mẫu số, thoát sớm mà không trả tài khoản về, và mục này đỏ theo
+       với một câu chẩn đoán trỏ sai hẳn chỗ. Một phép đo đỏ vì lý do
+       của người khác thì lần sau người ta bỏ qua nó. */
+    await p.evaluate(() => {
+      const G = window.G;
+      const a = (G.ACCOUNTS || []).filter(x => x.u === 'superadmin@gita365.vn')[0];
+      if (a) { G.S.acc = a; G.S.role = a.role; G.S.roleObj = G.roleById(a.role); }
+    });
+    await p.waitForFunction(() => window.G.KHO && !window.G.KHO.dangNap.length,
+      { timeout: 60000 });
     const kho = await p.evaluate(() => {
       const G = window.G;
       return {
