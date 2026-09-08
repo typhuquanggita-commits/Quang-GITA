@@ -2031,6 +2031,37 @@ var G = window.G || {}; window.G = G;
       '" x2="' + Math.round(kg.w / 2) + '" y2="' + dayVung +
       '" stroke="' + h(k.muc3) + '" stroke-opacity="0.5" stroke-width="1.5"/>';
 
+    /* ── KHỔ CAO: DỜI CẢ CỤM XUỐNG GIỮA, ĐỪNG BỎ TRỐNG NỬA DƯỚI ──
+       Khối "giãn đều cho hết vùng" bên dưới chặn trần mỗi khe ở
+       1,15·cỡ chữ — đúng, vì một cột bốn mục kéo giãn hết một tờ 9:16
+       thì đọc ra là thưa thớt chứ không ra thoáng. Nhưng chặn trần
+       rồi thì phần thừa KHÔNG hấp thụ hết đi đâu cả: nó dồn xuống
+       đáy, và tấm 9:16 ra nửa dưới trắng trơn.
+       Chủ hệ nhìn ra chỗ này ngay lượt đầu. Nay đo trước chiều cao
+       tự nhiên của cột cao nhất, trừ đi phần mấy cái khe hấp thụ
+       được, còn lại bao nhiêu thì dời cụm xuống NỬA phần ấy — cụm
+       nằm giữa vùng thay vì treo ở trên. */
+    var coYDo = Math.round(kg.w * 0.0195), rDDo = Math.round(coYDo * 0.78);
+    var caoTuNhien = 0, soMucNhat = 0;
+    ds.forEach(function (c) {
+      var coDauDo = Math.round(kg.w * 0.026);
+      var cao = catDong(c.ten, '800 ' + coDauDo + 'px ' + CHU_THAN, rongCot - 32)
+        .length * coDauDo * 1.2 + coDauDo * 1.0;
+      cao += 14 + Math.round(kg.h * 0.115) * 1.16 + 14;
+      if (c.phu) cao += Math.round(kg.w * 0.021) * 2.1;
+      var ds2Do = c.y.slice(0, 9);
+      ds2Do.forEach(function (m) {
+        cao += Math.max(rDDo * 2,
+          catDong(m.t, '500 ' + coYDo + 'px ' + CHU_THAN,
+            rongCot - rDDo * 2 - 16).length * coYDo * 1.34) + coYDo * 0.52;
+      });
+      if (cao > caoTuNhien) { caoTuNhien = cao; soMucNhat = ds2Do.length; }
+    });
+    var thuaChung = dayVung - dinh - caoTuNhien;
+    var kheHutDuoc = soMucNhat > 1 ? coYDo * 1.15 * (soMucNhat - 1) : 0;
+    if (thuaChung - kheHutDuoc > 0)
+      dinh = Math.round(dinh + (thuaChung - kheHutDuoc) / 2);
+
     ds.forEach(function (c, i) {
       var xc = le + i * (rongCot + khe);
       var mau = i === 0 ? mauSai : mauDung;
@@ -3361,7 +3392,7 @@ var G = window.G || {}; window.G = G;
             coAnh: true};
   }
 
-  function lopNguoi(ma, x, y, w, ht, k, sac, xRec) {
+  function lopNguoi(ma, x, y, w, ht, k, sac, xRec, treTren) {
     /* Nền bút màu: máy VẼ lớp người, không chờ ảnh. */
     if (k.but) return canhButMau(x, y, w, ht, k, sac, ma && NGUOI[ma] ? ma : 'nha');
     var tep = '';
@@ -3383,6 +3414,17 @@ var G = window.G || {}; window.G = G;
       /* Ô CHỜ. Nét đứt, không nền đặc, và một câu nói thẳng. Trông
          phải RA một chỗ còn thiếu, không ra một mảng thiết kế. */
       var co = Math.max(13, Math.round(w * 0.045));
+      /* ── BA DÒNG NÀY PHẢI TRÁNH BÓNG THOẠI ──
+         Chúng vẫn căn giữa dải người — đúng khi dải cao. Ở khổ đứng
+         tràn màn thì dải chỉ còn hơn một phần tư tấm, mà bóng thoại
+         neo vào đầu dải, nên giữa dải RƠI ĐÚNG vào bóng: chữ "Ô CHỜ
+         LỚP NGƯỜI" chui ra sau bóng, còn thấy mỗi "…ỜI".
+         Chủ hệ nhìn ra chỗ này trước bộ kiểm, vì bộ kiểm chỉ dựng khổ
+         mặc định — khổ đứng chưa từng được dựng lần nào.
+         Nay chỗ gọi ĐO bóng trước rồi báo xuống đây phải nhường bao
+         nhiêu, và ba dòng căn giữa phần CÒN LẠI. */
+      var nhuong = Math.max(0, Math.min(Number(treTren) || 0, ht * 0.6));
+      var giuaY = y + nhuong + (ht - nhuong) / 2;
       var loi = ['Ô CHỜ LỚP NGƯỜI', Math.round(w) + '×' + Math.round(ht),
                  'ảnh về rồi mới đầy'];
       var svg = nenQ +
@@ -3399,7 +3441,7 @@ var G = window.G || {}; window.G = G;
          dùng được ngay lúc ấy. */
       loi.forEach(function (d, i) {
         svg += '<text class="gita-giangiao" x="' + Math.round(x + w / 2) + '" y="' +
-          Math.round(y + ht / 2 + (i - 1) * co * 1.5) + '" text-anchor="middle" ' +
+          Math.round(giuaY + (i - 1) * co * 1.5) + '" text-anchor="middle" ' +
           'font-family="' + h(CHU_THAN) + '" font-size="' +
           (i === 0 ? co : Math.round(co * 0.82)) + '" font-weight="' +
           (i === 0 ? 800 : 500) + '" fill="' + h(k.muc2) + '" letter-spacing="' +
@@ -3723,7 +3765,23 @@ var G = window.G || {}; window.G = G;
        người. */
     var vungCao = khungCao ? Math.max(caoTong, 0)
                            : kg.h - vungY - Math.round(kg.h * 0.03);
-    ln = lopNguoi(maHinh || maAnh, xNguoi, yNguoi, rongNguoi, caoNguoi, k, sChinh.hex, x);
+    /* ĐO bóng thoại trước khi vẽ lớp người, để lớp người biết phải
+       nhường bao nhiêu ở đầu dải. Gọi lần này chỉ để đo — bản vẽ thật
+       dựng lại ở cuối, sau lớp người, vì bóng phải nằm TRÊN. Cùng cách
+       `daiBang` đã làm. */
+    var thoaiDo = docDau(x.noiDung, 'THOẠI');
+    var nhuongThoai = 0;
+    if (thoaiDo) {
+      var btDo = bongThoai(thoaiDo,
+        khungCao ? le : xNguoi + Math.round(rongNguoi * 0.06),
+        khungCao ? Math.round(yNguoi + kg.h * 0.02) : Math.round(kg.h * 0.075),
+        Math.round((khungCao ? kg.w - le * 2 : rongNguoi) * 0.80), k, sChinh.hex);
+      var dayBong = (khungCao ? Math.round(yNguoi + kg.h * 0.02)
+                              : Math.round(kg.h * 0.075)) + btDo.cao;
+      nhuongThoai = Math.max(0, dayBong - yNguoi + Math.round(kg.h * 0.015));
+    }
+    ln = lopNguoi(maHinh || maAnh, xNguoi, yNguoi, rongNguoi, caoNguoi, k,
+      sChinh.hex, x, nhuongThoai);
     manh.push(ln); ve = ln.ve;
     var thieuNguoi = khungCao && caoNguoi < Math.round(kg.h * 0.26);
     if (caoTong > vungCao || thieuNguoi) {
@@ -4103,7 +4161,21 @@ var G = window.G || {}; window.G = G;
        Bản 9.99.29 thêm dòng "Áp phích đăng mạng" vào chính bảng ấy, và
        chỗ này đọc theo nó: loại hình CÓ NGƯỜI là áp phích, nên mặc định
        NỀN SÂU. Mấy loại hình còn lại vẫn là ấn phẩm in, vẫn nền giấy. */
-    var cheMac = CAN_NGUOI_VE.indexOf(x.loaiHinh) >= 0 ? 'sau' : 'giay';
+    /* ── NỀN MẶC ĐỊNH CỦA ÁP PHÍCH: SÁNG, KHÔNG PHẢI ĐÊM SÂU ──
+       Ở 9.99.29 tôi chốt mặc định `sau` cho loại hình có người, và
+       chốt bằng cách đọc dòng "Áp phích đăng mạng" trong BRAND.dungO
+       — mà dòng ấy CŨNG do tôi viết ở chính bản đó. Hai bước, một
+       nguồn: tôi viết ra một câu rồi lấy chính câu ấy làm căn cứ.
+       Chủ hệ xem tấm dựng ra và nói thẳng: ghét nền tối đen xì. Đó
+       là người quyết định thật, và quyết định ấy thắng.
+       Vẫn gọi được `sau` khi muốn — chỉ là nó thôi làm mặc định.
+
+       CHỈ ĐỔI ĐÚNG CHỖ ĐANG TỐI. Bản sửa đầu tôi đặt thẳng
+       `cheMac = 'sang'` cho MỌI loại hình — rộng tay hơn thứ chủ hệ
+       nói, và bộ kiểm bắt ngay: bản đồ hành trình vốn nền giấy, sang
+       nền `sang` thì chữ "T1" tụt còn 4,06:1, dưới ngưỡng 4,5. Chủ
+       hệ chê nền TỐI, không chê nền giấy. */
+    var cheMac = CAN_NGUOI_VE.indexOf(x.loaiHinh) >= 0 ? 'sang' : 'giay';
     /* ── KHỔ IN THÌ NỀN MẶC ĐỊNH LÀ GIẤY, KHÔNG PHẢI ĐÊM SÂU ──
        Nền sâu là nền của MÀN HÌNH — ở đó nó không tốn gì. Trên giấy
        thì một tấm A4 phủ kín mực tối là gần một mililít mực cho mỗi
@@ -4212,7 +4284,13 @@ var G = window.G || {}; window.G = G;
        bộ vẽ nó sẽ chọn gì, chứ không chép lại bảng chọn ở đây. Chép
        lại là dựng bản thứ hai của một sự thật. */
     if (!khoa.che || !khoa.kho) {
-      var thu = G.veThiGiac(ds[0]);
+      /* Dò ở ĐÚNG KHỔ đã chỉ định, không dò ở khổ mặc định rồi áp
+         sang. Bản trước dò trần, nên gọi bộ ở khổ A4 vẫn lấy nền của
+         khổ màn hình — và tờ giấy ra nền `sang` thay vì nền giấy,
+         trong khi chính bộ vẽ có luật riêng cho khổ in. Lỗi này chỉ
+         hiện khi khổ đổi luật nền, tức là từ 9.99.33 mới có chỗ để
+         hiện. */
+      var thu = G.veThiGiac(ds[0], khoa.kho || undefined, khoa.che || undefined);
       if (!thu.ok) return {ok: false, code: 'TAMDAUHONG',
         error: 'Không vẽ được tấm đầu, nên chưa chốt được kiểu cho cả bộ: ' +
                thu.error};

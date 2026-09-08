@@ -10977,9 +10977,24 @@ const { chromium } = require(PW);
             yT: y - (m.actualBoundingBoxAscent || co * 0.9) + dy,
             yD: y + (m.actualBoundingBoxDescent || 0) + dy};
         };
+        /* ── DỰNG CẢ KHỔ ĐỨNG, KHÔNG CHỈ KHỔ MẶC ĐỊNH ──
+           Chủ hệ nhìn ra một chỗ chữ đè chữ mà 990 phép đo không
+           thấy: ở khổ đứng tràn màn, bóng thoại đè lên chữ Ô CHỜ,
+           chỉ còn thò ra "…ỜI". Bộ kiểm mù vì nó dựng mỗi loại hình
+           ĐÚNG MỘT LẦN, ở khổ mặc định của loại hình ấy — mà khổ
+           đứng mở một NHÁNH BỐ CỤC khác hẳn (chữ xếp chồng, dải
+           người xuống đáy), và cả nhánh ấy chưa từng bị đo.
+           Một phép đo chỉ chạy trên một khổ thì nó chỉ nói về khổ
+           ấy, dù danh sách loại hình có đủ mười bốn dòng. */
+        const capDo = [];
         for (const loai of G.veThiGiacBiet().loaiHinh) {
-          const vm = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
+          capDo.push([loai, undefined]);
+          capDo.push([loai, 'dung']);
+        }
+        for (const [loai, khoThu] of capDo) {
+          const vm = G.veThiGiac(nen(loai, RIENG[loai] || CHU), khoThu);
           if (!vm.ok) continue;
+          const nhan = loai + (khoThu ? ' (' + khoThu + ')' : '');
           const wM = document.createElement('div');
           wM.style.cssText = 'position:absolute;left:-9999px;top:0';
           wM.innerHTML = vm.svg; document.body.appendChild(wM);
@@ -10991,7 +11006,7 @@ const { chromium } = require(PW);
               const ngang = Math.min(a.x1, c.x1) - Math.max(a.x0, c.x0);
               const doc = Math.min(a.yD, c.yD) - Math.max(a.yT, c.yT);
               if (ngang > 1 && doc > 0.5)
-                r.mucDe.push(loai + ' · "' + a.chu.slice(0, 18) + '" ✕ "' +
+                r.mucDe.push(nhan + ' · "' + a.chu.slice(0, 18) + '" ✕ "' +
                   c.chu.slice(0, 18) + '" chồng ' + doc.toFixed(1) + ' điểm ảnh');
             }
           wM.remove();
