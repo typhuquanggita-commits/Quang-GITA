@@ -260,15 +260,48 @@ Ba bước, chạy ở máy của Học viện — không gửi gì ra ngoài:
     node tools/dung-phim.js /tmp/tam phim.mp4 5       # tấm → phim, 5 giây/cảnh
     xvfb-run -a node tools/thu-phim.js                # thử trọn đường
 
+Một lệnh ra **cả ba khổ** cùng lúc:
+
+    node tools/bo-phim.js de-bai.json /tmp/ra 6 --kho=vuong,doc,dung
+
+Mỗi khổ được **vẽ lại**, không phải thu nhỏ rồi đệm đen: khổ đứng thì chữ xếp
+chồng và dải người xuống đáy, khổ ngang thì hai cột. Đắt hơn mấy giây; một dải
+đen thì ở lại trong ấn phẩm mãi mãi (luật `doiKho`).
+
 `de-bai.json` là một **mảng** bản ghi thị giác, mỗi bản ghi đúng dạng bộ vẽ
 nhận: `{id, tang, loaiHinh, nhiemVu, noiDung, nguoiXem[]}`. Cả bộ đi qua
 `G.veThiGiacBo()` nên khổ và nền chốt một lần theo tấm đầu — mọi cảnh chắc
 chắn cùng kích thước.
 
-Chuyển động là Ken Burns (phóng chậm, luân phiên vào/ra), nối cảnh bằng
-crossfade 0,8 giây. **Không lời đọc, không nhạc, không phụ đề cháy thêm** —
-chữ đã nằm trong tấm, do máy đặt, đã qua phép đo tương phản và phép đo
-chữ-trong-khung; cháy thêm một lớp chữ nữa là chồng chữ lên chữ.
+Chuyển động là Ken Burns — phóng chậm **và trôi ngang**, luân phiên vào/ra.
+Nối cảnh 0,8 giây, chọn được năm kiểu:
+
+| Kiểu | Dùng khi |
+|---|---|
+| `mo` | Mặc định — mờ chồng, không tự nhận là hiệu ứng |
+| `quaDen` | Chìm qua đen, tách hẳn hai phần |
+| `gatTrai` | Gạt sang trái, nhịp nhanh |
+| `truotLen` | Trượt lên, hợp khổ dọc |
+| `moTron` | Mở tròn, cho mở đầu hoặc kết |
+
+**Không phụ đề cháy thêm** — chữ đã nằm trong tấm, do máy đặt, đã qua phép đo
+tương phản và phép đo chữ-trong-khung; cháy thêm một lớp chữ nữa là chồng chữ
+lên chữ (luật C14).
+
+### Lời đọc và nhạc
+
+    node tools/dung-phim.js /tmp/tam phim.mp4 6 --loi=/tmp/loi --nhac=nen.mp3
+
+Lời đọc là **tệp thu sẵn của một người thật**, đặt tên **y hệt tên tấm**, chỉ
+khác đuôi (`tam-000-ap-phich.mp3`). Trùng tên là cách duy nhất biết chắc lời
+nào của cảnh nào. Máy đặt lời đúng chỗ cảnh ấy bắt đầu **trong bản đã nối** —
+không phải chỗ nó bắt đầu nếu nối thẳng; hai chỗ ấy lệch dồn 0,8 giây mỗi
+cảnh, và tới cảnh thứ mười thì lời rơi hẳn sang cảnh khác.
+
+Máy **không sinh** giọng và **không sinh** nhạc (luật C20): một câu như "nhà
+mình sẽ khác đi" là một lời hứa, và giọng máy đọc lời hứa ấy là lời hứa không
+ai đứng sau. Máy cũng **không lặp** nhạc cho đủ dài và **không cắt** lời cho
+vừa cảnh — cả hai đều là sửa nội dung mà không ai được báo; nó dừng và nói ra.
 
 Thời lượng: `số cảnh × giây/cảnh − (số cảnh − 1) × 0,8`.
 

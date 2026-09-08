@@ -38,7 +38,12 @@ const path = require('path');
 const PW = process.env.PW_PATH || '/opt/node22/lib/node_modules/playwright';
 const URL = process.env.GITA_URL || 'http://127.0.0.1:8099/index.html';
 
-async function raAnh(ds, thuMuc, khoaMuon) {
+/* ── MỘT LƯỢT MỞ TRÌNH DUYỆT, NHIỀU KHỔ ──
+   Mở trình duyệt, đăng nhập, chờ kho nạp và chờ bộ chữ tải xong mất
+   khoảng bốn giây — và cả bốn giây ấy KHÔNG phụ thuộc vào khổ. Dựng
+   ba khổ bằng ba lượt gọi là trả giá ấy ba lần cho cùng một việc.
+   Nên tách: mở một lần, rồi chụp từng khổ trong cùng trang. */
+async function raAnhNhieu(ds, danhSachKhoa) {
   const { chromium } = require(PW);
   const b = await chromium.launch();
   try {
@@ -60,7 +65,23 @@ async function raAnh(ds, thuMuc, khoaMuon) {
       try { if (document.fonts) await document.fonts.ready; } catch (e) {}
     });
 
-    const bo = await p.evaluate(x => {
+    const ketQua = [];
+    for (const mucKhoa of danhSachKhoa) {
+      const r = await chupMotKho(p, ds, mucKhoa);
+      ketQua.push(r);
+    }
+    return ketQua;
+  } finally {
+    await b.close();
+  }
+}
+
+/* Chụp trọn một bộ ở MỘT khoá kiểu. Trang đã sẵn sàng khi vào đây. */
+async function chupMotKho(p, ds, mucKhoa) {
+  const thuMuc = mucKhoa.thuMuc;
+  const khoaMuon = mucKhoa.khoa || null;
+  {
+    const bo = await p.evaluate(x => {   /* eslint-disable-line */
       if (!window.G.veThiGiacBo) return { ok: false, error: 'CHUACOBOVE' };
       const v = window.G.veThiGiacBo(x.ds, x.khoa);
       /* Trả về không kèm SVG: chuỗi SVG của một bộ mười lăm tấm là
@@ -130,14 +151,18 @@ async function raAnh(ds, thuMuc, khoaMuon) {
     fs.writeFileSync(path.join(thuMuc, 'nguon.json'),
       JSON.stringify(nguon, null, 1), 'utf8');
 
-    return { tep: ra, khoa: bo.khoa, kg: bo.kg, nguon: nguon,
+    return { tep: ra, khoa: bo.khoa, kg: bo.kg, nguon: nguon, thuMuc: thuMuc,
              hong: bo.hong, thieuY: bo.thieuY };
-  } finally {
-    await b.close();
   }
 }
 
-module.exports = { raAnh };
+/* Một khổ thôi — vỏ mỏng quanh raAnhNhieu, giữ nguyên chữ ký cũ. */
+async function raAnh(ds, thuMuc, khoaMuon) {
+  const r = await raAnhNhieu(ds, [{thuMuc: thuMuc, khoa: khoaMuon || null}]);
+  return r[0];
+}
+
+module.exports = { raAnh, raAnhNhieu };
 
 if (require.main === module) {
   if (process.argv.length < 4) {

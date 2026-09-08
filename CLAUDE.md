@@ -69,11 +69,16 @@ hành → sinh tệp nạp khoá → gộp mã → dựng bản một tệp → 
 | Kho vừa đóng đổi gì | `node tools/soi-doi-kho.js` | 3 giây |
 | Đề bài thị giác → tấm PNG | `node tools/tam-ra-anh.js <đề-bài.json> <thư mục>` | ~10 giây |
 | Bộ tấm PNG → phim mp4 | `node tools/dung-phim.js <thư mục> <ra.mp4> [giây/cảnh]` | ~20 giây |
-| Thử trọn đường dựng phim | `xvfb-run -a node tools/thu-phim.js` | ~20 giây |
+| Đề bài → nhiều khổ → nhiều phim | `node tools/bo-phim.js <đề-bài.json> <thư mục> --kho=vuong,doc,dung` | ~90 giây |
+| Thử trọn đường dựng phim | `xvfb-run -a node tools/thu-phim.js` | ~4 phút |
 
-Ba lệnh phim cần `ffmpeg` và `ffprobe` (`apt-get install -y ffmpeg`). Không
-có thì chúng nói ra chứ không lặng lẽ bỏ qua. Phim dựng từ tấm ĐÃ phát hành
-— luật C19 của hiến pháp thị giác.
+Bốn lệnh phim cần `ffmpeg` và `ffprobe` (`apt-get install -y ffmpeg`). Không
+có thì chúng nói ra chứ không lặng lẽ bỏ qua.
+
+- Phim dựng từ tấm ĐÃ phát hành — luật C19, kiểm bằng `nguon.json`
+- Lời đọc và nhạc là TỆP CÓ SẴN, máy chỉ trộn chứ không sinh — luật C20
+- Đổi khổ là VẼ LẠI, không đệm đen — `bo-phim.js` gọi bộ vẽ một lần cho
+  mỗi khổ
 
 **Luôn dùng `--im`.** Bộ kiểm đầy đủ in ra 867 dòng, 80.614 ký tự. Chế độ
 im in ra 184 ký tự — **giảm 438 lần** — và vẫn chạy đủ 759 phép đo, chỉ

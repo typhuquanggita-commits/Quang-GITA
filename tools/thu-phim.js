@@ -11,7 +11,7 @@
    thức. Nên bộ này chạy trọn đường một lần và đo tệp RA, không đo
    lời khai của hàm.
 
-   ══ TÁM PHÉP ĐO VÀ SÁU PHÉP PHÁ ══
+   ══ PHÉP ĐO VÀ PHÉP PHÁ ══
 
    Đo — trên TỆP RA, không trên lời khai của hàm:
      · cả bộ ra đủ tấm, không tấm nào rơi trong im lặng
@@ -20,6 +20,10 @@
      · số khung hình khớp thời lượng ấy ở đúng nhịp hình
      · phim đúng khổ của bộ, và đủ số cảnh
      · tệp ra là H.264 / yuv420p — máy nào cũng mở được
+     · cả năm kiểu chuyển cảnh đều dựng được, đúng thời lượng
+     · lời đọc rơi đúng chỗ cảnh bắt đầu TRONG BẢN ĐÃ NỐI — không
+       phải chỗ nó bắt đầu nếu nối thẳng (hai chỗ ấy lệch dồn)
+     · một đề bài ra nhiều khổ, mỗi khổ VẼ LẠI chứ không đệm đen
 
    Phá (một phép kiểm chưa từng đỏ thì chưa phải phép kiểm):
      · một tấm khác khổ → TỪ CHỐI, và từ chối nêu tên tấm
@@ -29,14 +33,19 @@
      · tấm CHƯA phát hành → TỪ CHỐI, nêu đúng bậc nó đang đứng (C19)
      · ảnh lạ thả vào thư mục, không có trong sổ nguồn → TỪ CHỐI
      · mất nguon.json → TỪ CHỐI
+     · kiểu chuyển cảnh lạ → TỪ CHỐI, nêu tên kiểu
+     · lời đọc dài hơn cảnh → TỪ CHỐI, nói thừa mấy giây
+     · lời đọc không trùng tên tấm nào → TỪ CHỐI, nêu tên tệp
+     · nhạc ngắn hơn phim → TỪ CHỐI, máy không tự lặp
    ═══════════════════════════════════════════════════════════════ */
 'use strict';
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
-const { execFileSync } = require('child_process');
+const { execFileSync, spawnSync } = require('child_process');
 const { raAnh } = require('./tam-ra-anh');
 const phim = require('./dung-phim');
+const { boPhim } = require('./bo-phim');
 
 /* Bài thử là nội dung GITA thật, không phải chữ lấp chỗ: một tấm lấp
    chỗ ngắn thì bố cục nào cũng vừa, và cuốn phim dựng từ nó không
@@ -138,7 +147,83 @@ const bao = (ok, ten, chi) => {
       d.ma + ' / ' + d.diem);
     bao(kq.soCanh === DE.length, 'đủ cảnh', kq.soCanh + ' cảnh · ' + kq.kb + ' KB');
 
-    console.log('\n══ 3. SÁU PHÉP PHÁ ══\n');
+    console.log('\n══ 2b. NĂM KIỂU CHUYỂN CẢNH ══\n');
+    /* Mỗi kiểu phải DỰNG ĐƯỢC và ra đúng thời lượng. Một kiểu tên
+       đúng mà ffmpeg không nhận thì nó ném lỗi giữa chừng — và người
+       dựng chỉ biết khi đang cần gấp. Đo cả năm, mỗi kiểu hai cảnh
+       cho nhanh. */
+    {
+      const hai = path.join(tam, 'hai');
+      fs.mkdirSync(hai);
+      bo.tep.slice(0, 2).forEach(f =>
+        fs.copyFileSync(f, path.join(hai, path.basename(f))));
+      const so2 = JSON.parse(JSON.stringify(bo.nguon));
+      so2.tam = so2.tam.slice(0, 2);
+      fs.writeFileSync(path.join(hai, 'nguon.json'), JSON.stringify(so2), 'utf8');
+      const doi2 = 2 * GIAY - phim.CHONG;
+      for (const k of Object.keys(phim.CHUYEN)) {
+        let d2 = null, noi = null;
+        try {
+          phim.dungPhim(hai, path.join(tam, 'ch_' + k + '.mp4'),
+            {giay: GIAY, chuyen: k});
+          d2 = doTep(path.join(tam, 'ch_' + k + '.mp4'));
+        } catch (e) { noi = e.message; }
+        bao(!!d2 && Math.abs(d2.giay - doi2) < 0.05, 'chuyển "' + k + '" dựng được',
+          d2 ? d2.giay + ' giây' : noi);
+      }
+    }
+
+    console.log('\n══ 2c. LỜI ĐỌC VÀ NHẠC ══\n');
+    /* Lời đọc và nhạc là TỆP CÓ SẴN, không sinh máy. Bản đề xuất gọi
+       một dịch vụ đọc lời ngoài; ở đây không, và lý do không nằm ở
+       khoá API: giọng đọc trên một cuốn phim của Học viện là giọng
+       của MỘT NGƯỜI đứng sau lời hứa trong phim. Một giọng máy đọc
+       câu "nhà mình sẽ khác đi" là một lời hứa không ai đứng sau. */
+    const loi = path.join(tam, 'loi');
+    fs.mkdirSync(loi);
+    bo.tep.forEach(function (f, i) {
+      execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y',
+        '-f', 'lavfi', '-i', 'sine=frequency=' + (300 + i * 120) + ':duration=1.5',
+        path.join(loi, path.basename(f).replace(/\.png$/, '.mp3'))]);
+    });
+    const nhac = path.join(tam, 'nhac.mp3');
+    execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y',
+      '-f', 'lavfi', '-i', 'sine=frequency=180:duration=40', nhac]);
+
+    const coAm = path.join(tam, 'co-am.mp4');
+    const kqAm = phim.dungPhim(anh, coAm, {giay: GIAY, loi: loi, nhac: nhac});
+    const dAm = doTep(coAm);
+    bao(kqAm.soLoi === DE.length && kqAm.coNhac, 'nhận đủ lời đọc và nhạc',
+      kqAm.soLoi + ' lời · nhạc: ' + kqAm.coNhac);
+    bao(Math.abs(dAm.giay - dung) < 0.06, 'có tiếng rồi thời lượng vẫn đúng',
+      dAm.giay + ' giây');
+
+    /* ── LỜI ĐỌC RƠI ĐÚNG CẢNH ──
+       Đây là chỗ bản đề xuất sai và tự ghi chú "chấp nhận được": nó
+       đặt lời theo mốc trong KỊCH BẢN, mà bản đã nối ngắn hơn kịch
+       bản CHONG giây mỗi mối. Lệch dồn — cảnh thứ mười lệch tám giây,
+       tức là lời đọc rơi hẳn sang cảnh khác.
+       Đo thật: dựng bản CHỈ có lời (không nhạc, vì nhạc chạy suốt thì
+       không còn khoảng lặng nào để đo), rồi hỏi ffmpeg chỗ nào im. */
+    {
+      const chiLoi = path.join(tam, 'chi-loi.mp4');
+      phim.dungPhim(anh, chiLoi, {giay: GIAY, loi: loi});
+      /* silencedetect in ra STDERR, không phải stdout — execFileSync
+         chỉ trả stdout nên phải dùng spawnSync mới đọc được. */
+      const ra2 = spawnSync('ffmpeg', ['-hide_banner', '-nostats',
+        '-i', chiLoi, '-af', 'silencedetect=noise=-40dB:d=0.2', '-f', 'null', '-'],
+        {encoding: 'utf8', maxBuffer: 1 << 26}).stderr || '';
+      const het = [...ra2.matchAll(/silence_end:\s*([\d.]+)/g)].map(m => +m[1]);
+      const doi = [];
+      for (let i = 1; i < DE.length; i++) doi.push(i * (GIAY - phim.CHONG));
+      const lech = doi.map((t, i) => Math.abs((het[i] === undefined ? -99 : het[i]) - t));
+      bao(lech.length === doi.length && lech.every(x => x < 0.15),
+        'lời đọc rơi đúng chỗ cảnh bắt đầu trong bản ĐÃ NỐI',
+        'đợi ' + doi.map(x => x.toFixed(1)).join(' · ') + ' · đo ' +
+        het.map(x => x.toFixed(1)).join(' · '));
+    }
+
+    console.log('\n══ 3. MƯỜI PHÉP PHÁ ══\n');
 
     /* PHÁ 1 — một tấm khác khổ. Đây là chỗ hỏng THẬT dễ xảy ra nhất:
        ai đó vẽ thêm một tấm bằng G.veThiGiac() (không qua bộ) rồi bỏ
@@ -239,11 +324,101 @@ const bao = (ok, ten, chi) => {
         'mất sổ nguồn thì không dựng được phim',
         noi ? noi.slice(0, 70) + '…' : 'KHÔNG TỪ CHỐI');
     }
+
+    /* ── BỐN PHÉP PHÁ CỦA PHẦN MỚI 9.99.32 ── */
+    {
+      let noi = null;
+      try { phim.dungPhim(anh, path.join(tam, 'z4.mp4'),
+        {giay: GIAY, chuyen: 'xoay-vong-vo'}); }
+      catch (e) { noi = e.message; }
+      bao(!!noi && noi.indexOf('xoay-vong-vo') >= 0,
+        'kiểu chuyển cảnh lạ bị từ chối, nêu tên kiểu',
+        noi ? noi.slice(0, 70) + '…' : 'KHÔNG TỪ CHỐI');
+    }
+    {
+      /* Lời dài hơn cảnh: cuối câu bị cảnh sau đè lên, mà nghe thì
+         vẫn trôi — không ai biết là đã mất nửa câu. */
+      const loi2 = path.join(tam, 'loi-dai');
+      fs.mkdirSync(loi2);
+      execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y',
+        '-f', 'lavfi', '-i', 'sine=frequency=300:duration=' + (GIAY + 2),
+        path.join(loi2, path.basename(bo.tep[0]).replace(/\.png$/, '.mp3'))]);
+      let noi = null;
+      try { phim.dungPhim(anh, path.join(tam, 'z5.mp4'), {giay: GIAY, loi: loi2}); }
+      catch (e) { noi = e.message; }
+      bao(!!noi && /dài .* mà cảnh chỉ có/.test(noi),
+        'lời đọc dài hơn cảnh bị từ chối, nói thừa mấy giây',
+        noi ? noi.slice(0, 78) + '…' : 'KHÔNG TỪ CHỐI');
+    }
+    {
+      /* Tên lời đọc không trùng tấm nào: nếu nhận bừa theo thứ tự thì
+         một tệp thêm vào giữa là cả cuốn phim đọc lệch một cảnh. */
+      const loi3 = path.join(tam, 'loi-la');
+      fs.mkdirSync(loi3);
+      fs.copyFileSync(path.join(loi, fs.readdirSync(loi)[0]),
+        path.join(loi3, 'canh-mot.mp3'));
+      let noi = null;
+      try { phim.dungPhim(anh, path.join(tam, 'z6.mp4'), {giay: GIAY, loi: loi3}); }
+      catch (e) { noi = e.message; }
+      bao(!!noi && noi.indexOf('canh-mot.mp3') >= 0,
+        'lời đọc không trùng tên tấm nào bị từ chối, nêu tên tệp',
+        noi ? noi.slice(0, 70) + '…' : 'KHÔNG TỪ CHỐI');
+    }
+    {
+      /* Nhạc ngắn hơn phim: máy KHÔNG lặp cho đủ. */
+      const nhacNgan = path.join(tam, 'nhac-ngan.mp3');
+      execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y',
+        '-f', 'lavfi', '-i', 'sine=frequency=180:duration=3', nhacNgan]);
+      let noi = null;
+      try { phim.dungPhim(anh, path.join(tam, 'z7.mp4'),
+        {giay: GIAY, nhac: nhacNgan}); }
+      catch (e) { noi = e.message; }
+      bao(!!noi && /Bản nhạc dài/.test(noi),
+        'nhạc ngắn hơn phim bị từ chối, máy không tự lặp',
+        noi ? noi.slice(0, 70) + '…' : 'KHÔNG TỪ CHỐI');
+    }
+
+    console.log('\n══ 4. MỘT ĐỀ BÀI, NHIỀU KHỔ ══\n');
+    /* Điều đáng đo ở đây KHÔNG phải "ra ba tệp". Nó là: ba cuốn phim
+       dựng từ BA BỘ TẤM KHÁC NHAU, mỗi bộ do bộ vẽ xếp lại bố cục cho
+       khổ ấy — chứ không phải một bộ tấm duy nhất bị thu nhỏ và đệm
+       đen hai bên như bản đề xuất làm.
+
+       TÔI ĐÃ THỬ ĐO BẰNG cropdetect VÀ NÓ KHÔNG ĐO ĐƯỢC. Dựng một
+       bản đệm đen thật rồi cho cropdetect soi: nó vẫn báo khung đầy
+       đủ, vì sau khi đổi sang yuv420p thì màu đen là Y=16 chứ không
+       phải 0, mà ngưỡng phải đặt ở 0 để nền tối của thương hiệu không
+       bị cắt oan. Một phép đo không phân biệt được hai trường hợp thì
+       không phải phép đo — bỏ, và ghi lại để lần sau khỏi thử lại.
+
+       Đo được, và đúng chỗ: ba bộ tấm phải KHÁC BYTE nhau. Một bộ
+       dùng lại thì tệp giống hệt. */
+    {
+      const ba = path.join(tam, 'ba-kho');
+      const r3 = await boPhim(DE, ba, {giay: GIAY, kho: 'vuong,doc,dung'});
+      bao(r3.length === 3, 'ra đủ ba cuốn', r3.map(x => x.kho).join(' · '));
+      bao(r3[0].w === 1080 && r3[0].h === 1080 &&
+          r3[1].w === 1080 && r3[1].h === 1350 &&
+          r3[2].w === 1080 && r3[2].h === 1920,
+        'mỗi cuốn đúng khổ của nó',
+        r3.map(x => x.w + '×' + x.h).join(' · '));
+      bao(r3.every(x => x.soCanh === DE.length &&
+                   Math.abs(x.giay - dung) < 0.05),
+        'ba cuốn cùng số cảnh và cùng thời lượng',
+        r3.map(x => x.giay).join(' · ') + ' giây');
+      const bam = k => require('crypto').createHash('sha1')
+        .update(fs.readFileSync(path.join(ba, 'tam-' + k, 'tam-000-ap-phich.png')))
+        .digest('hex').slice(0, 12);
+      const b1 = bam('vuong'), b2 = bam('doc'), b3 = bam('dung');
+      bao(b1 !== b2 && b2 !== b3 && b1 !== b3,
+        'ba bộ tấm được VẼ LẠI cho từng khổ, không dùng lại một bộ',
+        b1 + ' · ' + b2 + ' · ' + b3);
+    }
   } finally {
     fs.rmSync(tam, {recursive: true, force: true});
   }
 
   console.log('');
   if (loi) { console.log('✗ CÒN ' + loi + ' CHỖ ĐỂ SỬA\n'); process.exit(1); }
-  console.log('✓ ĐƯỜNG DỰNG PHIM CHẠY TRỌN, TỆP RA ĐÚNG KHỔ VÀ ĐÚNG CÔNG THỨC\n');
+  console.log('✓ ĐƯỜNG DỰNG PHIM CHẠY TRỌN — ĐÚNG KHỔ, ĐÚNG CÔNG THỨC, ĐÚNG CHỖ LỜI RƠI\n');
 })().catch(e => { console.error('✗ ' + e.stack); process.exit(1); });
