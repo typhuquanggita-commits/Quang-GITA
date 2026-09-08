@@ -3228,7 +3228,7 @@ const PNG_THU = Buffer.from(
   'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmM' +
   'IQAAAABJRU5ErkJggg==', 'base64');
 let dangCong = 'than';        /* than · data · url */
-let daGoiCong = 0, tieuDeCong = null;
+let daGoiCong = 0, tieuDeCong = null, thanGuiCong = null;
 const fetchThat = globalThis.fetch;
 globalThis.fetch = async function (u, o) {
   const dc = String(u);
@@ -3239,6 +3239,20 @@ globalThis.fetch = async function (u, o) {
     if (dangCong === 'than')
       return new Response(PNG_THU, {status: 200,
         headers: {'content-type': 'image/png'}});
+    if (dangCong === 'openai') {
+      /* Dạng thật của API ảnh OpenAI: {data:[{b64_json}]}. Và giữ lại
+         THÂN GỬI ĐI để đo — cửa phải đổi sang {model, prompt, size, n},
+         không phải gửi dạng riêng của Học viện rồi mong OpenAI hiểu. */
+      thanGuiCong = JSON.parse(String((o && o.body) || '{}'));
+      return new Response(JSON.stringify({data: [{b64_json:
+        PNG_THU.toString('base64')}]}), {status: 200,
+        headers: {'content-type': 'application/json'}});
+    }
+    if (dangCong === 'openaiUrl') {
+      thanGuiCong = JSON.parse(String((o && o.body) || '{}'));
+      return new Response(JSON.stringify({data: [{url: 'https://tep-thu.vidu/a.png'}]}),
+        {status: 200, headers: {'content-type': 'application/json'}});
+    }
     if (dangCong === 'data')
       return new Response(JSON.stringify({anh: 'data:image/png;base64,' +
         PNG_THU.toString('base64')}), {status: 200,
@@ -3328,6 +3342,58 @@ dangCong = 'than';
     'im lặng trả về "đã gửi" là chỗ tệ nhất: lớp người vẫn trống mà không ai đi tìm');
   const ldr2 = db.prepare("SELECT ketQua FROM luotDiRa WHERE ketQua='loi'").all();
   bao(ldr2.length >= 1, 'và lượt hỏng ấy ghi rõ là hỏng trong sổ đi ra');
+  dangCong = 'than';
+}
+
+/* ══ VẼ NHƯ CHATGPT: BỘ CHUYỂN ĐỔI DẠNG OPENAI (9.99.40) ══
+
+   Chủ hệ hỏi "cài đặt khả năng vẽ như của ChatGPT". Làm được, vì đó
+   là một cửa HTTP mua được — khác hẳn "mở chức năng vẽ của Claude".
+   Nhưng trỏ thẳng GITA_CONG_VE vào OpenAI thì nó trả 400, vì hai bên
+   nói hai dạng khác nhau. Đo cả hai chiều: gửi ĐÚNG dạng OpenAI, và
+   đọc được cả hai kiểu OpenAI trả về. */
+{
+  env.GITA_KIEU_VE = 'openai';
+  env.GITA_MAU_VE = 'mo-hinh-thu-nghiem';
+  dangCong = 'openai';
+  const oa = await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+    id:idTG});
+  bao(oa.than.ok && oa.than.coAnh === true,
+    'KIỂU OPENAI: gửi đi và nhận ảnh về được',
+    oa.than.anhNguoi);
+  bao(thanGuiCong && thanGuiCong.model === 'mo-hinh-thu-nghiem' &&
+      typeof thanGuiCong.prompt === 'string' && thanGuiCong.n === 1 &&
+      /^\d+x\d+$/.test(String(thanGuiCong.size || '')),
+    'và gửi ĐÚNG DẠNG OpenAI — {model, prompt, size, n}, không phải dạng riêng ' +
+    'của Học viện',
+    'trỏ thẳng cổng vào OpenAI mà gửi dạng riêng thì nó trả 400, và người bấm ' +
+    'chỉ thấy "cổng trả về 400" · gửi: ' + JSON.stringify(
+      {model: thanGuiCong.model, size: thanGuiCong.size, n: thanGuiCong.n}));
+  /* Phép đo đầu tôi đòi chuỗi "BỐI CẢNH" có trong prompt — SAI, vì
+     bản ghi thử là loại hình KHÔNG cần người, mà phần tả bối cảnh chỉ
+     thêm vào cho loại hình có người. Phép đo đúng và mạnh hơn: prompt
+     phải TRÙNG TỪNG CHỮ với chuỗi cửa khai là đã gửi. Trùng từng chữ
+     thì không có chỗ nào cho bộ chuyển đổi lặng lẽ cắt bớt đề bài. */
+  bao(String((thanGuiCong || {}).prompt || '') === oa.than.daGui,
+    'và đề bài đi ra NGUYÊN VĂN trong trường prompt — bộ chuyển đổi đổi vỏ, ' +
+    'không đụng vào ruột',
+    'sổ khai ' + oa.than.soChu + ' ký tự, prompt ' +
+    String((thanGuiCong || {}).prompt || '').length + ' ký tự');
+
+  dangCong = 'openaiUrl';
+  const oa2 = await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+    id:idTG});
+  bao(oa2.than.ok && oa2.than.coAnh === true,
+    'OpenAI trả {data:[{url}]} cũng nhận được — hai kiểu trả về, một cửa');
+
+  env.GITA_KIEU_VE = 'kieu-khong-co';
+  const kla = await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+    id:idTG});
+  bao(!kla.than.ok && kla.than.code === 'KIEUCONGLA',
+    'kiểu cổng lạ bị từ chối và NÊU RA những kiểu đang có',
+    kla.than.error);
+
+  delete env.GITA_KIEU_VE; delete env.GITA_MAU_VE;
   dangCong = 'than';
 }
 

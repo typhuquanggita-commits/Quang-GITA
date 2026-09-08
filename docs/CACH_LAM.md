@@ -252,6 +252,40 @@ hình, và chặn cả trình đơn **Xuất PDF** lẫn **Sao lưu** của bả
 
 ---
 
+## Nối bộ tạo ảnh — vẽ như ChatGPT
+
+Ảnh **người như ảnh chụp** và **cảnh thật** không phải việc của bộ vẽ trong
+máy, cũng không phải việc của mô hình ngôn ngữ đang chạy trợ lý. Mô hình ngôn
+ngữ **đọc** được ảnh nhưng **không sinh ra** ảnh. Thứ sinh ra ảnh ấy là mô
+hình **khuếch tán** — loại máy khác, mua tài khoản.
+
+ChatGPT vẽ ảnh bằng API ảnh của OpenAI, và đó là một cửa HTTP nối được. Bộ
+chuyển đổi đã có sẵn trong mã:
+
+    npx wrangler secret put GITA_KIEU_VE    # openai
+    npx wrangler secret put GITA_CONG_VE    # đường dẫn tạo ảnh của OpenAI
+    npx wrangler secret put GITA_KHOA_VE    # khoá API tài khoản OpenAI
+    npx wrangler secret put GITA_MAU_VE     # tên mô hình ảnh tài khoản được dùng
+
+Không khai `GITA_KIEU_VE` thì mặc định `gita` — dạng riêng của Học viện, dành
+cho ai tự dựng một lớp trung gian.
+
+**Vì sao cần bộ chuyển đổi:** cửa của Học viện gửi `{id, deBai, kho, loaiHinh,
+tang}`, OpenAI đòi `{model, prompt, size, n}`. Trỏ thẳng vào nhau thì OpenAI
+trả 400, và người bấm chỉ thấy "cổng trả về 400" — đúng loại lỗi làm người ta
+bỏ cuộc mà không biết mình sai ở đâu. Bộ chuyển đổi **đổi vỏ, không đụng vào
+ruột**: đề bài đi ra nguyên văn từng chữ, và bộ kiểm đối chiếu độ dài hai bên
+mỗi lần chạy.
+
+Nhận về, cửa đọc được cả bốn dạng: thân là ảnh · `{anh: data URI}` · `{url}` ·
+`{data:[{b64_json|url}]}` (dạng OpenAI).
+
+**Đường dùng được ngay khi chưa có tài khoản:** ảnh chụp trong kho ảnh làm lớp
+người, chữ do máy đặt lên (luật `lopGhep`). Ảnh chụp phải có văn bản đồng ý —
+luật C13.
+
+---
+
 ## In ra giấy
 
 Ba khổ in, đo bằng **milimét** ở 300 điểm mỗi tấc Anh (mức nhà in đòi):

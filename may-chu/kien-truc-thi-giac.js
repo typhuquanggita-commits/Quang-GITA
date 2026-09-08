@@ -911,7 +911,13 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
           'ĐỌC được ảnh nhưng KHÔNG sinh ra ảnh, nên không có đường nào đi tắt ' +
           'qua chỗ này.',
     napBang: ['npx wrangler secret put GITA_CONG_VE',
-              'npx wrangler secret put GITA_KHOA_VE'],
+              'npx wrangler secret put GITA_KHOA_VE',
+              'npx wrangler secret put GITA_KIEU_VE   (openai · gita)',
+              'npx wrangler secret put GITA_MAU_VE    (tên mô hình, nếu kiểu openai)'],
+    nhuChatGpt: 'Muốn vẽ như ChatGPT: GITA_KIEU_VE = openai, GITA_CONG_VE = ' +
+          'đường dẫn tạo ảnh của OpenAI, GITA_KHOA_VE = khoá API tài khoản ' +
+          'OpenAI của Học viện, GITA_MAU_VE = tên mô hình ảnh tài khoản ấy ' +
+          'được dùng. Bộ chuyển đổi đã có sẵn — không phải sửa một dòng mã nào.',
     duongCoSan: 'Chưa có tài khoản thì vẫn dựng được ấn phẩm: dùng ảnh chụp ' +
           'trong kho ảnh làm lớp người (luật lopGhep), chữ do máy đặt lên. ' +
           'Ảnh chụp phải có văn bản đồng ý — luật C13.',
@@ -1011,15 +1017,57 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
      đang đứng, và đi tiếp bằng chính thang duyệt cũ — luật C12. */
   const NHAN_TOI_DA = 12 * 1024 * 1024;
 
+  /* ══ BỘ CHUYỂN ĐỔI THEO NHÀ CUNG CẤP (9.99.40) ══
+
+     Chủ hệ hỏi "cài đặt khả năng vẽ như của ChatGPT". ChatGPT vẽ ảnh
+     bằng API ảnh của OpenAI — một cửa HTTP mua được, nên câu hỏi ấy
+     LÀM ĐƯỢC, khác hẳn câu "mở chức năng vẽ của Claude".
+
+     Nhưng cửa này tới 9.99.39 gửi đi theo dạng riêng của Học viện
+     ({id, deBai, kho, loaiHinh, tang}), mà OpenAI đòi {model, prompt,
+     size, n}. Trỏ thẳng GITA_CONG_VE vào OpenAI thì nó trả về 400,
+     và người bấm chỉ thấy "cổng ngoài trả về 400" — đúng loại lỗi
+     làm người ta bỏ cuộc mà không biết mình sai ở đâu.
+
+     Nên khai KIỂU CỔNG. Thêm một nhà cung cấp là thêm một dòng ở đây,
+     không phải sửa cả cửa.
+
+     GITA_KIEU_VE chưa nạp thì mặc định `gita` — dạng riêng, dành cho
+     ai tự dựng một lớp trung gian. Nạp `openai` thì gửi và đọc đúng
+     dạng OpenAI. */
+  const KIEU_CONG = {
+    gita: {
+      than: (idRa, deBai2) => ({id: idRa, deBai: deBai2, kho: x.loaiHinh,
+                                loaiHinh: x.loaiHinh, tang: x.tang})
+    },
+    openai: {
+      /* Khổ ảnh theo loại hình: hai loại hình có người đều là tấm
+         ĐỨNG (người cần chiều cao), còn lại để vuông. Không đoán ba
+         khổ khác nhau cho ba loại hình — đoán sai thì ảnh về phải cắt,
+         mà cắt ảnh người là cắt vào mặt. */
+      than: (idRa, deBai2) => ({
+        model: String(env.GITA_MAU_VE || 'gpt-image-1'),
+        prompt: deBai2,
+        n: 1,
+        size: CAN_NGUOI.indexOf(x.loaiHinh) >= 0 ? '1024x1536' : '1024x1024'
+      })
+    }
+  };
+
   async function nhanAnhVe(idRa, guiDi2) {
+    const tenKieu = String(env.GITA_KIEU_VE || 'gita').toLowerCase();
+    const kieuCong = KIEU_CONG[tenKieu];
+    if (!kieuCong) return {ok: false, code: 'KIEUCONGLA',
+      error: 'Không có kiểu cổng "' + tenKieu + '". Đang có: ' +
+             Object.keys(KIEU_CONG).join(' · ') + '. Nạp bằng: ' +
+             'npx wrangler secret put GITA_KIEU_VE'};
     let r;
     try {
       r = await fetch(cong, {
         method: 'POST',
         headers: {'Authorization': 'Bearer ' + khoa,
                   'Content-Type': 'application/json'},
-        body: JSON.stringify({id: idRa, deBai: guiDi2, kho: x.loaiHinh,
-                              loaiHinh: x.loaiHinh, tang: x.tang})
+        body: JSON.stringify(kieuCong.than(idRa, guiDi2))
       });
     } catch (e) {
       return {ok: false, code: 'CONGKHONGTRALOI',
@@ -1039,6 +1087,15 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
       try { j = await r.json(); } catch (e) { j = null; }
       if (!j) return {ok: false, code: 'CONGTRALOIRAC',
         error: 'Cổng ngoài trả về thứ không phải ảnh và cũng không phải JSON.'};
+      /* Dạng OpenAI: {data:[{b64_json}]} hoặc {data:[{url}]}. Gom về
+         cùng hai trường mà phần dưới đã biết đọc, thay vì viết một
+         nhánh đọc riêng — một nhánh riêng thì mỗi lần sửa phải nhớ
+         sửa cả hai chỗ. */
+      if (j.data && j.data.length && !j.anh && !j.url) {
+        const d0 = j.data[0] || {};
+        if (d0.b64_json) j.anh = 'data:image/png;base64,' + d0.b64_json;
+        else if (d0.url) j.url = d0.url;
+      }
       if (j.anh && /^data:image\/([a-z]+);base64,/.test(String(j.anh))) {
         const m2 = /^data:image\/([a-z]+);base64,(.*)$/s.exec(String(j.anh));
         duoi = m2[1] === 'jpeg' ? 'jpg' : m2[1];

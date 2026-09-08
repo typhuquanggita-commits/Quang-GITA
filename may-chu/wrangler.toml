@@ -128,6 +128,21 @@ bucket_name = "gita365-hoso"
 # Thứ đi ra là ĐÚNG NĂM TRƯỜNG của đề bài — nội dung KHÔNG bao giờ đi ra.
 #    npx wrangler secret put GITA_KHOA_VE
 #    npx wrangler secret put GITA_CONG_VE
+#
+# ── VẼ NHƯ CHATGPT (9.99.40) ──
+# ChatGPT vẽ ảnh bằng API ảnh của OpenAI — một cửa HTTP mua được. Bộ
+# chuyển đổi đã có sẵn trong mã, nên chỉ cần khai KIỂU cổng:
+#    npx wrangler secret put GITA_KIEU_VE    -> openai   (hoặc gita)
+#    npx wrangler secret put GITA_MAU_VE     -> tên mô hình ảnh
+# Với kiểu `openai`: GITA_CONG_VE là đường dẫn tạo ảnh của OpenAI, và
+# GITA_KHOA_VE là khoá API tài khoản OpenAI của Học viện.
+# Không khai GITA_KIEU_VE thì mặc định `gita` — dạng riêng, dành cho ai
+# tự dựng một lớp trung gian.
+#
+# LƯU Ý MỘT CHỖ HAY BỊ HỎI: mô hình NGÔN NGỮ (loại đang chạy trợ lý
+# này) ĐỌC được ảnh nhưng KHÔNG sinh ra ảnh. Ảnh người như ảnh chụp là
+# việc của mô hình KHUẾCH TÁN, một loại máy khác. Không có công tắc nào
+# trong kho mã bật được nó lên — nó là thứ mua tài khoản.
 #        Khoá của nhà gửi thư (mặc định Resend). Mã xác nhận đăng ký và
 #        mã lấy lại mật khẩu đi bằng khoá này — không có nó thì luồng
 #        đăng ký dừng ở bước một và NÓI RA, chứ không im lặng báo "đã
