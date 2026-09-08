@@ -10452,6 +10452,20 @@ const { chromium } = require(PW);
           '✓ Mỗi ngày một dòng, không bỏ, không cần ai canh.\n' +
           '✓ Nhắc bằng điều kiện đã thoả thuận trước với nhau.\n' +
           '✓ Có sổ thật để đọc lại đúng chỗ đã vấp lần trước.',
+        /* Sơ đồ toả (9.99.36): bài thử cố ý ĐỦ BỐN NHÁNH và mỗi
+           nhánh bốn ý — đúng mức tấm mẫu chủ hệ gửi, và cũng là mức
+           mà một khổ thấp sẽ tràn. Bài thử ít nhánh thì khổ nào cũng
+           vừa, và phép từ chối TOAQUADAY không bao giờ được thử. */
+        SO_DO_TOA:
+          'TÂM: HỌC\n' +
+          'NHÁNH | Tư duy\n· Tầm nhìn\n· Quan điểm\n· Bản lĩnh\n· Sáng tạo\n' +
+          'NHÁNH | Trải nghiệm\n· Hỏi cho rõ ràng\n· Dám sửa sai\n' +
+          '· Nói ra điều mình nghĩ\n· Tập trung\n' +
+          'NHÁNH | Ước mơ\n· Mục tiêu và động lực học\n· Giá trị và kế hoạch\n' +
+          '· Hai mươi bốn giờ mỗi ngày\n· Thói quen quan trọng\n' +
+          'NHÁNH | Khám phá, tìm tòi\n· Bí kíp và kinh nghiệm\n' +
+          '· Hỏi thầy cô, hỏi bạn khoá trên\n· Tìm nhiều cách giải\n' +
+          '· Năm người giỏi cùng học',
         VAI_TRO:
           'VAI Phụ huynh | giữ điều kiện, không giao thêm việc\n' +
           '· Ghi phiếu mỗi ngày, không bỏ ngày nào cả.\n' +

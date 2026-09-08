@@ -868,7 +868,14 @@ var G = window.G || {}; window.G = G;
                   /* Ba dấu của áp phích có người (9.99.24). BÊN nói người
                      đứng phía nào; THOẠI là bóng thoại; KÝ là câu viết tay
                      ở chân tấm. */
-                  'BÊN', 'THOẠI', 'KÝ'];
+                  'BÊN', 'THOẠI', 'KÝ',
+                  /* Dấu của sơ đồ toả (9.99.36). TÂM là chữ ở giữa —
+                     một GIÁ TRỊ, nên nó dùng dạng dấu hai chấm; còn
+                     NHÁNH mở một KHỐI nên nó nằm ở RE_KHOI bên dưới.
+                     Kho này có đúng hai dạng dấu và lẫn hai dạng là
+                     lỗi tôi vừa mắc: gõ "TÂM |" thì docDau không thấy,
+                     và bộ vẽ từ chối một nội dung đúng ý. */
+                  'TÂM'];
   function docDau(chu, dau) {
     var re = new RegExp('^\\s*' + dau + '\\s*:\\s*(.+)$', 'im');
     var m = re.exec(String(chu || ''));
@@ -886,7 +893,7 @@ var G = window.G || {}; window.G = G;
      câu phụ.
      Đúng lớp lỗi của vụ "HÌNH: nha" ở 9.99.22, quay lại ở loại dấu
      thứ hai. Hai loại dấu, hai biểu thức, và cả hai phải lọc. */
-  var RE_KHOI = /^\s*(?:Ô|TẦNG\s*\d+|BƯỚC\s*\d+|TRÁI|PHẢI|VAI|NHÓM|CỔNG|SỐ|CỘT)\s*\|/i;
+  var RE_KHOI = /^\s*(?:Ô|TẦNG\s*\d+|BƯỚC\s*\d+|TRÁI|PHẢI|VAI|NHÓM|CỔNG|SỐ|CỘT|NHÁNH)\s*\|/i;
   function boDau(chu) {
     return String(chu || '').split('\n')
       .filter(function (d) { return !RE_DAU.test(d) && !RE_KHOI.test(d); })
@@ -3979,6 +3986,207 @@ var G = window.G || {}; window.G = G;
     return {ok: true, svg: khung(kg, k, ve, gom(manh).defs)};
   }
 
+  /* ═══════════ BỘ VẼ · SƠ ĐỒ TOẢ NHÁNH ═══════════
+
+     Chủ hệ gửi một tấm sơ đồ tư duy vẽ tay trên giấy khổ lớn: một
+     chữ ở giữa, bốn nhánh toả ra, mỗi nhánh một màu bút và một chùm
+     ý con. Trong mười bốn loại hình KHÔNG có cái nào như thế.
+
+     ══ VÌ SAO KHÔNG ÉP VÀO LƯỚI Ô ══
+
+     Lưới ô nói "sáu thứ này ngang hàng nhau". Sơ đồ toả nói một thứ
+     KHÁC HẲN: có một cái ở giữa, và mọi thứ còn lại treo vào nó. Ép
+     một sơ đồ toả vào lưới ô là bỏ đúng cái nó tồn tại để nói — quan
+     hệ giữa tâm và nhánh — rồi giữ lại phần dễ nhất là danh sách chữ.
+
+     ══ TOẢ NỬA TRÁI NỬA PHẢI, KHÔNG TOẢ ĐỀU 360° ══
+
+     Toả đều quanh tâm thì đẹp trên giấy khổ lớn, nơi người vẽ xoay
+     được tờ giấy. Trên một tấm hình thì nhánh ở phía trên và phía
+     dưới bắt chữ phải nằm ngang trong khi nhánh của nó đi dọc — hoặc
+     chữ xoay theo nhánh, mà chữ xoay là chữ đọc chậm. Nên chia hai
+     cột: nhánh trái viết phải-sang-trái, nhánh phải viết trái-sang-
+     phải, và mọi dòng chữ vẫn nằm ngang.
+
+     Người viết gõ:
+       TÂM | Học
+       NHÁNH | Tư duy
+       · Tầm nhìn
+       · Quan điểm
+       NHÁNH | Ước mơ
+       · Mục tiêu
+  */
+  function docNhanh(chu) {
+    var ra = [], nay = null;
+    String(chu || '').split('\n').forEach(function (d) {
+      var mN = /^\s*NHÁNH\s*\|\s*(.+)$/i.exec(d);
+      if (mN) { nay = {ten: mN[1].trim(), y: []}; ra.push(nay); return; }
+      var mY = /^\s*[·•\-]\s*(.+)$/.exec(d);
+      if (mY && nay) nay.y.push(mY[1].trim());
+    });
+    return ra;
+  }
+
+  function veSoDoToa(x, kg, che) {
+    var k = bang(che);
+    var tam = docDau(x.noiDung, 'TÂM');
+    var nh = docNhanh(x.noiDung);
+    if (!tam || nh.length < 2) return {ok: false,
+      error: 'Sơ đồ toả cần một dòng "TÂM: chữ ở giữa" và ÍT NHẤT HAI nhánh, ' +
+             'mỗi nhánh mở bằng "NHÁNH | tên nhánh" rồi các dòng ý con bắt đầu ' +
+             'bằng dấu ·. Máy KHÔNG tự chọn cái nào làm tâm: chọn sai tâm thì cả ' +
+             'sơ đồ nói ngược, mà tấm này tồn tại chỉ để nói quan hệ tâm–nhánh. ' +
+             'Đang đọc ra ' + (tam ? 'tâm "' + tam + '"' : 'không có tâm') +
+             ' và ' + nh.length + ' nhánh.'};
+    if (nh.length > 6) return {ok: false, code: 'NHIEUNHANH',
+      error: 'Sơ đồ toả nhận tối đa SÁU nhánh, đang có ' + nh.length + '. Hơn sáu ' +
+             'thì mắt thôi đọc ra hình toả và bắt đầu đọc ra một danh sách — mà ' +
+             'danh sách thì đã có loại hình riêng, xếp thẳng hàng dễ đọc hơn.'};
+
+    var sac = sacTang();
+    var d = dauTam(x, kg, k, 26);
+    var but = defBut();
+    if (k.but) d.manh.push({defs: but.defs});
+    var netRun = k.but ? ' filter="url(#' + but.run + ')"' : '';
+
+    var le = Math.round(kg.w * 0.045);
+    var dayVung = kg.h - Math.round(kg.h * 0.072);
+    var vungCao = dayVung - d.dinh;
+    var giuaX = Math.round(kg.w / 2), giuaY = Math.round(d.dinh + vungCao / 2);
+
+    /* Tâm: một vòng tròn đo THEO CHỮ, không đặt bán kính cố định rồi
+       mong chữ vừa — cùng luật với chip đầu cột của hai cột đối chứng. */
+    var coTam = Math.round(kg.w * 0.040);
+    var dTam = catDong(tam, '800 ' + coTam + 'px ' + CHU_THAN, kg.w * 0.20);
+    while (dTam.length > 2 && coTam > 16) {
+      coTam -= 2;
+      dTam = catDong(tam, '800 ' + coTam + 'px ' + CHU_THAN, kg.w * 0.20);
+    }
+    var rTam = Math.round(Math.max(kg.w * 0.075,
+      doRong(dTam[0] || tam, '800 ' + coTam + 'px ' + CHU_THAN) / 2 + coTam * 0.9));
+
+    /* Chia nhánh hai bên. Số lẻ thì bên phải nhiều hơn một: mắt người
+       đọc từ trái sang, nên bên phải là chỗ nó dừng lại lâu hơn. */
+    var trai = [], phai = [];
+    nh.forEach(function (b, i) { (i % 2 === 0 ? phai : trai).push(b); });
+
+    var rongCot = Math.round(kg.w * 0.30);
+    var coTen = Math.round(kg.w * 0.024);
+    var coY = Math.round(kg.w * 0.0175);
+    var ve = '';
+
+    var thieu = 0;
+    var veBen = function (ds2, ben) {
+      if (!ds2.length) return;
+      /* Đo trước chiều cao từng nhánh, rồi chia đều cả cột — cùng
+         cách mọi bố cục khác trong tệp này: đo trước, đặt sau. */
+      var cao = ds2.map(function (b) {
+        var c = coTen * 1.5;
+        b.y.forEach(function (t) {
+          c += catDong(t, '500 ' + coY + 'px ' + CHU_THAN, rongCot - coY * 1.6)
+            .length * coY * 1.3 + coY * 0.34;
+        });
+        return c;
+      });
+      var tong = cao.reduce(function (a, b2) { return a + b2; }, 0);
+      var toiThieu = tong + coY * 1.2 * Math.max(0, ds2.length - 1);
+      /* Không vừa thì DỪNG, không bóp. Bóp khe xuống dưới mức đọc được
+         là dồn hai nhánh dính vào nhau, mà hai nhánh dính nhau thì mắt
+         đọc thành một nhánh dài — đúng thứ sơ đồ toả sinh ra để tách. */
+      if (toiThieu > vungCao) { thieu = Math.round(toiThieu - vungCao); return; }
+      var khe = ds2.length > 1
+        ? Math.max(coY * 1.2, (vungCao - tong) / (ds2.length - 1)) : 0;
+      var yy = Math.round(giuaY - (tong + khe * (ds2.length - 1)) / 2);
+
+      ds2.forEach(function (b, i) {
+        var s = sac[nh.indexOf(b) % sac.length];
+        var mau = nenDac(s.hex, k.sau ? 3.0 : 4.6);
+        var xNeo = ben < 0 ? le + rongCot : kg.w - le - rongCot;
+        var xChu = ben < 0 ? le + rongCot : kg.w - le - rongCot;
+        var can = ben < 0 ? 'end' : 'start';
+        var yTen = Math.round(yy + coTen);
+
+        /* Nhánh: một đường cong từ mép vòng tâm tới đầu nhánh. Cong
+           chứ không gãy góc — mắt đi theo đường cong mà không phải
+           dừng ở mỗi khúc quẹo. */
+        var xTam = giuaX + ben * rTam;
+        /* Đầu nhánh dừng ở PHÍA NGOÀI cột chữ, không phía trong.
+           Bản đầu tôi đặt `+ ben * gap` — với cột trái (ben = −1) nó
+           lùi sang trái, tức là chui vào giữa chữ, và đường cong cắt
+           ngang tên nhánh. Dấu ngược lại mới đúng: cột trái thì đầu
+           nhánh nằm bên phải chữ, cột phải thì nằm bên trái. */
+        var xDau = xNeo - ben * Math.round(kg.w * 0.014);
+        ve += '<path' + netRun + ' d="M' + xTam + ' ' + giuaY +
+          ' C' + Math.round(xTam + ben * kg.w * 0.06) + ' ' + giuaY +
+          ', ' + Math.round(xDau - ben * kg.w * 0.05) + ' ' + yTen +
+          ', ' + xDau + ' ' + yTen + '" fill="none" stroke="' + h(mau) +
+          '" stroke-width="' + (k.but ? 3 : 2.6) + '" stroke-linecap="round"/>';
+
+        ve += veChu(b.ten, xChu, yTen, {co: coTen, chu: CHU_THAN, dam: 800,
+          mau: mau, rong: rongCot, gian: 1.18, can: can}).svg;
+        /* Gạch chân nhánh — cùng vai trò với vạch đỏ dưới tiêu đề:
+           nói "hết tên nhánh, dưới đây là ý con". */
+        var rGach = Math.min(rongCot,
+          doRong(b.ten, '800 ' + coTen + 'px ' + CHU_THAN));
+        ve += '<line' + netRun + ' x1="' + (ben < 0 ? xChu - rGach : xChu) +
+          '" y1="' + Math.round(yTen + coTen * 0.36) + '" x2="' +
+          (ben < 0 ? xChu : xChu + rGach) + '" y2="' +
+          Math.round(yTen + coTen * 0.36) + '" stroke="' + h(mau) +
+          '" stroke-width="2" stroke-opacity="0.55"/>';
+
+        var yc = yTen + coTen * 0.95;
+        b.y.forEach(function (t) {
+          var dong = catDong(t, '500 ' + coY + 'px ' + CHU_THAN, rongCot - coY * 1.6);
+          var xCham = ben < 0 ? xChu - rongCot + coY * 0.1 : xChu + rongCot - coY * 0.1;
+          dong.forEach(function (t2, j) {
+            ve += '<text x="' + xChu + '" y="' + Math.round(yc + coY + j * coY * 1.3) +
+              '" text-anchor="' + can + '" font-family="' + h(CHU_THAN) +
+              '" font-size="' + coY + '" font-weight="500" fill="' + h(k.muc2) +
+              '">' + h(t2) + '</text>';
+          });
+          /* Một chấm nhỏ đầu dòng, phía ngoài cột chữ. */
+          ve += '<circle' + netRun + ' cx="' +
+            Math.round(ben < 0 ? xChu + coY * 0.55 : xChu - coY * 0.55) +
+            '" cy="' + Math.round(yc + coY * 0.62) + '" r="' +
+            (coY * 0.17).toFixed(1) + '" fill="' + h(mau) + '"/>';
+          yc += dong.length * coY * 1.3 + coY * 0.34;
+        });
+        yy += cao[i] + khe;
+      });
+    };
+    veBen(trai, -1);
+    veBen(phai, 1);
+    if (thieu) return {ok: false, code: 'TOAQUADAY',
+      error: 'Một bên của sơ đồ dài hơn khổ tấm ' + thieu + ' điểm ảnh. Bớt một ' +
+             'ý con, bớt một nhánh, hoặc dựng ở khổ cao hơn. Máy KHÔNG bóp khe ' +
+             'giữa hai nhánh cho vừa: hai nhánh dính vào nhau thì mắt đọc thành ' +
+             'một nhánh dài, mà tấm này tồn tại chỉ để tách chúng ra.'};
+
+    /* Vòng tâm vẽ SAU CÙNG: mọi nhánh xuất phát từ mép nó, nên nó
+       phải nằm trên để chỗ nối gọn. */
+    var sTam = sac[0] || {hex: k.gita};
+    var mauTam = nenDac(sTam.hex, k.sau ? 3.0 : 4.6);
+    if (k.but) {
+      ve += '<circle' + netRun + ' cx="' + giuaX + '" cy="' + giuaY + '" r="' + rTam +
+        '" fill="' + h(k.nen) + '" stroke="' + h(mauTam) + '" stroke-width="4"/>';
+    } else {
+      var gT = idMoi('tam');
+      d.manh.push({defs: '<radialGradient id="' + gT + '" cx="42%" cy="36%" r="72%">' +
+        '<stop offset="0%" stop-color="' + h(doiSang(sTam.hex, 0.18)) + '"/>' +
+        '<stop offset="100%" stop-color="' + h(doiSang(sTam.hex, -0.10)) + '"/>' +
+        '</radialGradient>'});
+      ve += '<g filter="url(#' + d.bongHh.id + ')"><circle class="gita-tam" cx="' +
+        giuaX + '" cy="' + giuaY + '" r="' + rTam + '" fill="url(#' + gT + ')"/></g>';
+    }
+    ve += veChu(tam, giuaX,
+      Math.round(giuaY - (dTam.length - 1) * coTam * 0.58 + coTam * 0.34),
+      {co: coTam, chu: CHU_THAN, dam: 800,
+       mau: k.but ? mauTam : mucTren(sTam.hex),
+       rong: rTam * 1.8, gian: 1.16, can: 'middle'}).svg;
+
+    return {ok: true, svg: khung(kg, k, d.tren + ve + d.duoi, gom(d.manh).defs)};
+  }
+
   /* ═══════════ BỘ VẼ · CHÂN DUNG MỘT VAI ═══════════
      Nửa người ở trên, tên vai và một câu ở dưới. Khuôn hẹp, một việc. */
   function veChanDung(x, kg, che) {
@@ -4061,7 +4269,11 @@ var G = window.G || {}; window.G = G;
     /* Hai khuôn có người. Áp phích khổ VUÔNG như tấm mẫu; chân dung khổ
        DỌC vì một người đứng cần chiều cao, không cần chiều ngang. */
     AP_PHICH:         {ve: veApPhich,  kho: 'vuong'},
-    CHAN_DUNG:        {ve: veChanDung, kho: 'doc'}
+    CHAN_DUNG:        {ve: veChanDung, kho: 'doc'},
+    /* Sơ đồ toả: khổ VUÔNG. Nó cần chiều ngang cho hai cột nhánh,
+       nhưng khổ chia sẻ 1200×630 quá thấp — bốn nhánh mỗi nhánh bốn ý
+       là tràn xuống chạm dấu GITA. Vuông cho cả hai chiều đủ dùng. */
+    SO_DO_TOA:        {ve: veSoDoToa,  kho: 'vuong'}
   };
 
   /* Loại hình nào là ÁP PHÍCH — dùng để chọn nền mặc định. Khai một
