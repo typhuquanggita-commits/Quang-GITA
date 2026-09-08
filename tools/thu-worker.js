@@ -3600,6 +3600,177 @@ bao(maBanChep.length === 24 &&
     maBanChep.every((m, i) => m === 'K' + String(i + 1).padStart(2, '0')),
   'bản chép hai mươi bốn khối liên tục K01→K24, không thiếu không trùng');
 
+/* ═══════════════ 16C · THANG NĂM CỔNG CỦA NỘI DUNG ═══════════════
+
+   Chốt của chủ hệ: "không gì lên sóng mà không qua 5 cổng có người ký."
+
+   Năm luật cứng, và mỗi luật ở đây có một phép PHÁ riêng. Đo lời khai
+   của một thang duyệt bằng cách đọc mã của nó thì mã nói gì cũng được;
+   phép đo phải THỬ ĐI qua cửa cấm rồi đòi cửa ấy đóng. */
+console.log('\n16C · THANG NĂM CỔNG CỦA NỘI DUNG');
+
+const nd2 = ndMod;
+const goiND = (fn, y, ai) => nd2[fn](y, env, env.CSDL, ai);
+const aiSA  = {uid: 'U-sa',  username: 'superadmin@gita365.vn',  role: 'R01'};
+const aiSA2 = {uid: 'U-sa2', username: 'superadmin2@gita365.vn', role: 'R01'};
+const aiBT  = {uid: 'U-bt',  username: 'bientap@gita365.vn',     role: 'R05'};
+const aiCM  = {uid: 'U-cm',  username: 'chuyenmon@gita365.vn',   role: 'R05'};
+const aiGC  = {uid: 'U-gc',  username: 'giuchuan@gita365.vn',    role: 'R05'};
+const aiVIET = {uid: 'U-viet', username: 'nguoiviet@gita365.vn', role: 'R05'};
+
+/* ── CẤP QUYỀN KÝ: một trục riêng, không thêm vai ── */
+for (const [ai, chuc] of [[aiBT, 'bienTap'], [aiCM, 'chuyenMon'], [aiGC, 'giuChuan']])
+  await goiND('capQuyenNoiDung',
+    {username: ai.username, chucNang: chuc, lyDo: 'Cấp cho bộ thử thang năm cổng.'}, aiSA);
+
+bao((await goiND('capQuyenNoiDung',
+      {username: aiSA.username, chucNang: 'bienTap', lyDo: 'tự cấp cho mình xem sao'},
+      aiSA)).error === 'TUCAP',
+  'KHÔNG AI TỰ CẤP QUYỀN KÝ CHO MÌNH — cùng luật với quyenTaiChinh bản 9.97');
+bao((await goiND('capQuyenNoiDung',
+      {username: 'x@y.vn', chucNang: 'bienTap', lyDo: 'vì thế'}, aiBT)).error === 'KHONGQUYEN',
+  'chỉ R01–R02 cấp được quyền ký');
+const dsQ = await goiND('dsQuyenNoiDung', {}, aiSA);
+bao(dsQ.ok && dsQ.ds.length === 3 && !('congThieuNguoi' in dsQ),
+  'ba cổng người đều có người giữ quyền — cổng thiếu người thì máy phải NÓI RA là đứng vì thiếu người, không phải vì bài sai',
+  dsQ.ds.map(x => x.chucNang).join(','));
+
+/* ── NẠP BÀI, RỒI ĐI TRỌN THANG ── */
+const napA = await goiND('napBai',
+  {id: 'BND-T1', tieuDe: 'Bảy ngày nhìn cho đúng', chu: baiDu, tang: 'T1'}, aiVIET);
+bao(napA.ok && napA.trangThai === 'nhap' && napA.vanTay.length === 16,
+  'nạp bài thì vào bản NHÁP và có vân tay — nạp và nộp là hai việc khác nhau, gộp thì không ai sửa được bản nháp của mình');
+
+const nop = await goiND('nopBai', {id: 'BND-T1'}, aiVIET);
+bao(nop.ok && nop.trangThai === 'bienTap',
+  'cổng 1 — máy chấm rồi tự chuyển sang cổng biên tập');
+
+/* ── LUẬT L2: KHÔNG AI KÝ BÀI CỦA CHÍNH MÌNH ── */
+bao((await goiND('kyBai', {id: 'BND-T1'}, aiVIET)).error === 'TUDUYET',
+  'LUẬT L2 — người viết KHÔNG ký bài của chính mình, dù đang giữ đủ quyền hay không');
+/* Và L2 phải đứng TRƯỚC phép kiểm quyền. Bản đầu tôi đặt ngược, nên
+   người viết chưa có quyền ký bị báo "thiếu quyền ký" — họ đi xin đúng
+   cái quyền không giúp được gì, vì xin xong vẫn bị L2 chặn. Thứ tự các
+   phép kiểm quyết định người bị chặn đi làm việc gì tiếp theo. */
+await goiND('capQuyenNoiDung',
+  {username: aiVIET.username, chucNang: 'bienTap',
+   lyDo: 'Người viết cũng là biên tập viên — thử đúng chỗ L2 phải chặn.'}, aiSA);
+bao((await goiND('kyBai', {id: 'BND-T1'}, aiVIET)).error === 'TUDUYET',
+  'người viết CÓ ĐỦ quyền ký vẫn bị L2 chặn — và được báo đúng lý do, không bị đẩy đi xin một quyền họ đã có');
+await goiND('thuHoiQuyenNoiDung', {username: aiVIET.username, chucNang: 'bienTap'}, aiSA);
+
+/* ── THIẾU QUYỀN KÝ THÌ CHẶN, VÀ NÓI RÕ THIẾU QUYỀN NÀO ── */
+const khongQuyen = await goiND('kyBai', {id: 'BND-T1'},
+  {uid: 'U-la', username: 'nguoila@gita365.vn', role: 'R05'});
+bao(khongQuyen.error === 'THIEUQUYENKY' && khongQuyen.canQuyen === 'bienTap',
+  'không giữ quyền ký thì chặn, và máy nói ra cần quyền NÀO — một lời từ chối không nói thiếu gì thì người bị chặn đi hỏi vòng quanh');
+
+/* ── ĐI TRỌN BỐN CỔNG NGƯỜI, MỖI CỔNG MỘT NGƯỜI KHÁC ── */
+bao((await goiND('kyBai', {id: 'BND-T1'}, aiBT)).trangThai === 'chuyenMon', 'cổng 2 — biên tập ký');
+bao((await goiND('kyBai', {id: 'BND-T1'}, aiCM)).trangThai === 'giuChuan', 'cổng 3 — chuyên môn ký');
+bao((await goiND('kyBai', {id: 'BND-T1'}, aiGC)).trangThai === 'chuHe',    'cổng 4 — giữ chuẩn ký');
+
+/* ── CỔNG 5 CHỈ CHỦ HỆ ── */
+bao((await goiND('kyBai', {id: 'BND-T1'}, {uid: 'U-r03', username: 'r03@gita365.vn', role: 'R03'}))
+      .error === 'CANCHUHE',
+  'cổng 5 chỉ Super Admin ký — máy soát, chủ hệ quyết');
+const phat = await goiND('kyBai', {id: 'BND-T1'}, aiSA);
+bao(phat.ok && phat.trangThai === 'phatHanh', 'cổng 5 — chủ hệ ký, bài phát hành');
+
+const so1 = await goiND('soKyBai', {id: 'BND-T1'}, aiSA);
+bao(so1.so.length === 5 && new Set(so1.so.map(k => k.boiAi)).size === 5 &&
+    so1.so.every(k => k.conHieuLuc),
+  'năm cổng · năm chữ ký · NĂM NGƯỜI KHÁC NHAU, và mọi chữ ký còn hiệu lực',
+  so1.so.map(k => k.cong + ':' + k.boiAi.replace('U-', '')).join(' '));
+
+/* ══ LUẬT L3 — CHỖ TÔI SỬA BẢN ĐẶC TẢ CỦA CHỦ HỆ ══
+
+   Bảng quyền của bản đặc tả cho Super Admin đứng ở CẢ NĂM cổng. Một
+   mình chủ hệ ký được cổng 2, 3, 4, rồi 5 — thang năm cổng thành một
+   chữ ký, mà sổ vẫn đủ năm dòng nên không ai đọc ra.
+
+   Phép đo này để MỘT chủ hệ đi hết thang rồi đòi máy chặn. */
+await goiND('napBai',
+  {id: 'BND-T2', tieuDe: 'Bài thử luật L3', chu: baiDu, tang: 'T1'}, aiVIET);
+await goiND('nopBai', {id: 'BND-T2'}, aiVIET);
+bao((await goiND('kyBai', {id: 'BND-T2'}, aiSA)).ok,
+  'chủ hệ ĐỨNG THAY được một cổng đang thiếu người — không phải một bức tường');
+const lanHai = await goiND('kyBai', {id: 'BND-T2'}, aiSA);
+bao(lanHai.error === 'DAKYCONGKHAC' && lanHai.daKy === 'C2',
+  'LUẬT L3 — MỘT NGƯỜI KÝ NHIỀU NHẤT MỘT CỔNG. Không có luật này thì một mình chủ hệ ký cả bốn cổng người, thang năm cổng thành một chữ ký, và sổ vẫn đủ năm dòng nên không ai đọc ra',
+  'đã ký ' + lanHai.daKy + ' nên không ký thêm C3');
+/* Và chủ hệ THỨ HAI đi tiếp được — luật chặn một NGƯỜI, không chặn một vai. */
+bao((await goiND('kyBai', {id: 'BND-T2'}, aiSA2)).ok,
+  'chủ hệ THỨ HAI ký tiếp được — L3 chặn một NGƯỜI, không chặn một vai');
+
+/* ══ LUẬT L4 — SỬA BÀI THÌ CHỮ KÝ HẾT HIỆU LỰC ══
+
+   Bản đặc tả ghi vân tay vào chữ ký và nói "ai chỉnh ngầm là LỘ ngay
+   qua hash". Lộ chứ không chặn — nghĩa là phải có người đi đọc mới
+   thấy, mà chẳng ai đi đọc. Ở đây máy làm việc ấy. */
+await goiND('napBai',
+  {id: 'BND-T3', tieuDe: 'Bài thử luật L4', chu: baiDu, tang: 'T1'}, aiVIET);
+await goiND('nopBai', {id: 'BND-T3'}, aiVIET);
+await goiND('kyBai', {id: 'BND-T3'}, aiBT);
+await goiND('kyBai', {id: 'BND-T3'}, aiCM);
+const truocSua = await goiND('soKyBai', {id: 'BND-T3'}, aiSA);
+bao(truocSua.trangThai === 'giuChuan' && truocSua.so.filter(k => k.conHieuLuc).length === 3,
+  'bài đang ở cổng 4 với ba chữ ký còn hiệu lực');
+
+const suaLen = await goiND('napBai',
+  {id: 'BND-T3', tieuDe: 'Bài thử luật L4',
+   chu: baiDu.replace('Tối nay ghi 3 dòng, không thêm nhận xét.',
+                      'Tối nay ghi 5 dòng, và thêm một nhận xét ngắn.'),
+   tang: 'T1'}, aiVIET);
+bao(suaLen.ok && suaLen.trangThai === 'nhap' && /hết hiệu lực/.test(suaLen.vi || ''),
+  'LUẬT L4 — SỬA NỘI DUNG SAU KHI CÓ CHỮ KÝ thì bài về BẢN NHÁP ngay. Một chữ ký đứng dưới một bài đã đổi là một chữ ký nói dối, và người đọc sổ sáu tháng sau không có cách nào biết là nó đang nói dối');
+
+const sauSua = await goiND('soKyBai', {id: 'BND-T3'}, aiSA);
+bao(sauSua.so.length === 3 && sauSua.so.every(k => !k.conHieuLuc) && sauSua.canhBao,
+  'ba chữ ký cũ Ở LẠI trong sổ và mang dấu HẾT HIỆU LỰC — không xoá, vì chính chúng là chỗ kể ra bài đã bị sửa sau khi ký',
+  sauSua.canhBao.slice(0, 50));
+/* Và người đã ký bản cũ ký lại được bản mới — L3 đếm chữ ký CÒN HIỆU LỰC. */
+await goiND('nopBai', {id: 'BND-T3'}, aiVIET);
+bao((await goiND('kyBai', {id: 'BND-T3'}, aiBT)).ok,
+  'người đã ký bản CŨ ký lại được bản MỚI — luật L3 đếm chữ ký còn hiệu lực, không đếm mọi dòng trong sổ');
+
+/* ══ LUẬT L1 · L5 ══ */
+await goiND('napBai',
+  {id: 'BND-T4', tieuDe: 'Bài thiếu khối', chu: boK15, tang: 'T1'}, aiVIET);
+const mayChan = await goiND('nopBai', {id: 'BND-T4'}, aiVIET);
+bao(!mayChan.ok && mayChan.error === 'MAYCHAN' &&
+    mayChan.chan.some(c => /K14 đòi K15/.test(c)),
+  'LUẬT L5 — cổng 1 chặn bằng SỐ và không có ô duyệt ngoại lệ. Bốn người sau không đốt thời gian đọc thứ đếm được là chưa xong',
+  mayChan.chan.join(' · ').slice(0, 60));
+bao((await goiND('kyBai', {id: 'BND-T4'}, aiBT)).error === 'SAIBAC',
+  'LUẬT L1 — bài bị cổng 1 chặn thì KHÔNG ai ký vượt lên cổng 2 được. Không có đường tắt qua một cổng nào');
+
+/* ── TỪ CHỐI PHẢI NÓI VÌ SAO ── */
+await goiND('napBai',
+  {id: 'BND-T5', tieuDe: 'Bài bị từ chối', chu: baiDu, tang: 'T1'}, aiVIET);
+await goiND('nopBai', {id: 'BND-T5'}, aiVIET);
+bao((await goiND('kyBai', {id: 'BND-T5', viec: 'tuChoi', lyDo: 'kém'}, aiBT))
+      .error === 'THIEULYDO',
+  'từ chối mà không nói vì sao thì bị chặn — người viết sửa mò rồi nộp lại y hệt');
+const tc = await goiND('kyBai',
+  {id: 'BND-T5', viec: 'tuChoi', lyDo: 'Khối K10 chưa phải một ca thật, còn là ví dụ chung.'}, aiBT);
+bao(tc.ok && tc.trangThai === 'nhap', 'từ chối có lý do thì bài về bản nháp');
+
+/* ── BÀI ĐÃ PHÁT HÀNH KHÔNG SỬA ĐÈ ── */
+bao((await goiND('napBai',
+      {id: 'BND-T1', tieuDe: 'Sửa đè bài đã phát hành', chu: baiDu + '\nthêm dòng', tang: 'T1'},
+      aiVIET)).error === 'DAPHATHANH',
+  'bài ĐÃ PHÁT HÀNH không sửa đè — bài đã ở trong tay người đọc, ghi đè bản trong sổ là làm sổ nói khác thứ họ đang cầm');
+
+/* ── ĐỒNG HỒ TREO: NỔI LÊN, KHÔNG CHẶN ── */
+env.CSDL.prepare("UPDATE baiNoiDung SET vaoCongLuc = ? WHERE id = 'BND-T5'")
+  .bind(new Date(Date.now() - 100 * 3600e3).toISOString()).run();
+env.CSDL.prepare("UPDATE baiNoiDung SET trangThai = 'chuyenMon' WHERE id = 'BND-T5'").run();
+const treo = await goiND('baiTreo', {}, aiSA);
+bao(treo.soTreo >= 1 && treo.treo[0].cong === 'C3' && treo.treo[0].quaHan,
+  'bài nằm quá hạn ở một cổng thì NỔI LÊN — và không bị chặn: chặn một bài vì người duyệt bận là phạt nhầm người',
+  'chờ ' + (treo.treo[0] || {}).choGio + 'h / hạn ' + (treo.treo[0] || {}).hanGio + 'h');
+
 /* ═══════════════ 17 · KHÔNG RÒ RA NGOÀI ═══════════════ */
 console.log('\n17 · KHÔNG RÒ RA NGOÀI');
 const xau = {prepare(){ throw new Error('SQLITE_ERROR: no such column: users.matKhauThat'); }};

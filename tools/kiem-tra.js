@@ -11464,6 +11464,12 @@ const { chromium } = require(PW);
         cam:  (G.KN_CAM || []).map(c => c.ma),
         xong: (G.KN_XONG || []).map(x => x.ma),
         maVb: G.KN_MA_VB || '',
+        /* Thang năm cổng — bản 9.99.42 */
+        cong: (G.KN_CONG || []).map(c => ({ma: c.ma, ai: c.ai, so: c.so})),
+        luatThang: (G.KN_LUAT_THANG || []).map(l => l.ma),
+        sla: (G.KN_SLA || []).map(x => x.cong + ':' + x.gio),
+        quyen: (G.KN_QUYEN || []).map(q => q.ma + '→' + q.cong),
+        tt: (G.KN_TRANGTHAI || []).map(t => t.ma + '→' + (t.ke || '')),
         /* Mọi khối phải khai câu hỏi nó trả lời, và mọi khối phải nối
            về ít nhất một điều kiện hoàn thành. Khối không nối về đâu
            là khối thừa, và một bảng kiểm có ô thừa thì người ta điền
@@ -11505,6 +11511,31 @@ const { chromium } = require(PW);
     soDay(bc.NHAN_NGUON, kho.nguon, 'bốn nhãn nguồn');
     soDay(bc.BAC_DIEM.map(b => b.tu + '·' + b.ten),
           kho.bac.map(b => b.tu + '·' + b.ten), 'bốn bậc điểm');
+
+    /* ── THANG NĂM CỔNG ──
+       Ba bảng ở máy chủ phải phủ đúng năm cổng của kho: cổng nào đi
+       tiếp sang cổng nào, cổng nào cần quyền ký nào, và đồng hồ treo.
+       Lệch một ô ở đây là bài đi sai đường mà không ai thấy — nó vẫn
+       chạy, chỉ là chạy qua một cổng khác cổng chủ hệ đã chốt. */
+    const bt = mND.BAN_CHEP_THANG;
+    /* Năm mã cổng ở máy chủ phải đúng bằng năm mã cổng trong kho.
+       So bằng chính hai bảng, KHÔNG so với một danh sách gõ tay ở đây —
+       gõ tay là dựng bản chép thứ BA, và bản thứ ba thì phép đo đang
+       đối chiếu chính nó. */
+    soDay(Object.keys(bt.CONG_MA).map(k => bt.CONG_MA[k]).sort(),
+          kho.cong.map(c => c.ma).sort(), 'năm mã cổng');
+    soDay(Object.keys(bt.CONG_QUYEN).map(k => bt.CONG_QUYEN[k] + '→' + bt.CONG_MA[k]),
+          kho.quyen, 'ba quyền ký');
+    soDay(Object.keys(bt.SLA_GIO).map(k => bt.CONG_MA[k] + ':' + bt.SLA_GIO[k]),
+          kho.sla, 'đồng hồ treo');
+    soDay(Object.keys(bt.CONG_TIEP).map(k => k + '→' + (bt.CONG_TIEP[k][0] || '')),
+          kho.tt, 'đường đi giữa các bậc');
+    /* Ô `ai` của cổng 5 phải là R01 — không phải một quyền cấp được.
+       Bản đặc tả của chủ hệ để Super Admin đứng ở CẢ NĂM cổng; nếu ai
+       đó chép lại đúng như thế thì phép đo này đỏ. */
+    const cong5 = kho.cong.find(c => c.ma === 'C5');
+    if (!cong5 || cong5.ai !== 'R01') lech.push('cổng 5 không khoá ở R01');
+    if (kho.luatThang.join(',') !== 'L1,L2,L3,L4,L5') lech.push('năm luật cứng của thang');
 
     ra.ndLech = lech;
     ra.ndKhop = lech.length === 0;

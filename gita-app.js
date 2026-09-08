@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.41',
+  version: '9.99.42',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3562,6 +3562,8 @@ G.THUOC_CAP_PHEP = [
   'KN_MA_VB','KN_KHOI','KN_XONG','KN_DIEM','KN_BAC','KN_CAM',
   'KN_SAU','KN_NGUON','KN_LOI_THAY','KN_RONG','KN_CHE','KN_NGUOIDOC',
   'KN_CONGTHUC','KN_VONG','KN_LUAT_GOC','KN_CHOCHU',
+  /* v9.99.42 — thang năm cổng */
+  'KN_CONG','KN_LUAT_THANG','KN_SLA','KN_QUYEN','KN_TRANGTHAI',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

@@ -1221,3 +1221,93 @@ CREATE TABLE IF NOT EXISTS soDem (
   gia    INTEGER NOT NULL DEFAULT 0,
   suaLuc TEXT
 );
+
+-- ═════════════════════════════════════════════════════════════
+--  BÀI NỘI DUNG — THANG NĂM CỔNG (bản 9.99.42)
+--
+--  Chốt của chủ hệ: "không gì lên sóng mà không qua 5 cổng kiểm duyệt
+--  có người ký."
+--
+--  ── VÌ SAO CHỮ KÝ PHẢI NEO VÀO VÂN TAY NỘI DUNG ──
+--
+--  Thang duyệt thị giác (deXuatThiGiac) KHÔNG có cột này, và đó là một
+--  chỗ thủng thật: sửa nội dung sau khi đã duyệt thì bản ghi vẫn ghi
+--  "đã duyệt", và không ai đọc ra được là thứ đã duyệt khác thứ đang
+--  nằm đó. Ở đây mỗi chữ ký mang theo vân tay của bài LÚC KÝ, và khi
+--  bài đổi thì mọi chữ ký cũ hết hiệu lực — bài về lại bản nháp.
+--
+--  Không phải để bắt lỗi ai. Một chữ ký đứng dưới một bài đã đổi là
+--  một chữ ký nói dối, và người đọc sổ sáu tháng sau không có cách nào
+--  biết là nó đang nói dối.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS baiNoiDung (
+  id         TEXT PRIMARY KEY,
+  tieuDe     TEXT NOT NULL,
+  chu        TEXT NOT NULL,       -- toàn văn, dạng khối K01 | …
+  tang       TEXT NOT NULL,       -- T1…T5
+  vanTay     TEXT NOT NULL,       -- SHA-256 rút gọn của `chu` lúc ghi
+  trangThai  TEXT NOT NULL DEFAULT 'nhap',
+  nguoiViet  TEXT NOT NULL,       -- uid; luật L2 đọc cột này
+  vietLuc    TEXT NOT NULL,
+  -- Mốc vào cổng hiện tại. Đồng hồ treo (G.KN_SLA) đo từ đây, không đo
+  -- từ `vietLuc` — một bài nằm ba ngày ở cổng 2 rồi qua nhanh bốn cổng
+  -- sau thì chỗ tắc là cổng 2, và đo từ lúc viết thì không thấy.
+  vaoCongLuc TEXT,
+  -- Kết quả cổng 1, giữ lại chứ không tính lại: sửa cách đo thì mọi bài
+  -- cũ đổi nghĩa mà không ai biết. Cùng lý do đã buộc soatTang được giữ.
+  soatMay    TEXT,
+  lyDo       TEXT                 -- BẮT BUỘC khi từ chối
+);
+
+CREATE INDEX IF NOT EXISTS ix_bnd_tt   ON baiNoiDung (trangThai, vaoCongLuc);
+CREATE INDEX IF NOT EXISTS ix_bnd_viet ON baiNoiDung (nguoiViet, vietLuc DESC);
+
+-- ─────────────────────────────────────────────────────────────
+--  SỔ KÝ — CHỈ THÊM, KHÔNG SỬA, KHÔNG XOÁ
+--
+--  Mỗi dòng là một quyết định: ai, cổng nào, ký hay từ chối, vì sao, và
+--  vân tay bài lúc ấy. Luật L3 (một người ký nhiều nhất một cổng trên
+--  một bài) đọc thẳng bảng này chứ không đọc một ô tóm tắt — ô tóm tắt
+--  thì sửa được, còn sổ chỉ-thêm thì không.
+-- ─────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS kyNoiDung (
+  id      TEXT PRIMARY KEY,
+  baiId   TEXT NOT NULL,
+  cong    TEXT NOT NULL,          -- C1…C5
+  viec    TEXT NOT NULL,          -- ky · tuChoi
+  boiAi   TEXT NOT NULL,          -- uid; 'may' cho cổng 1
+  vaiLuc  TEXT NOT NULL,          -- vai lúc ký — vai đổi thì sổ vẫn kể đúng
+  vanTay  TEXT NOT NULL,          -- vân tay bài LÚC KÝ
+  ghiChu  TEXT,
+  kyLuc   TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS ix_knd_bai ON kyNoiDung (baiId, kyLuc);
+CREATE INDEX IF NOT EXISTS ix_knd_ai  ON kyNoiDung (baiId, boiAi);
+
+-- ─────────────────────────────────────────────────────────────
+--  QUYỀN KÝ NỘI DUNG — MỘT TRỤC RIÊNG, VUÔNG GÓC VỚI THANG VAI
+--
+--  Cùng cách làm với quyenTaiChinh ở bản 9.97, và vì cùng một lý do:
+--  bản đặc tả của chủ hệ đề nghị năm VAI mới (author · editor · expert
+--  · keeper · super_admin), mà Học viện đã có thang R01–R15 đang chạy.
+--  Dựng thang thứ hai là dựng hai sự thật về ai được làm gì — rồi một
+--  người là R09 ở thang này và "expert" ở thang kia, và không ai trả
+--  lời được câu "người ấy được ký cái gì".
+--
+--  Chỉ R01–R02 cấp được, và không ai tự cấp cho mình.
+-- ─────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS quyenNoiDung (
+  id        TEXT PRIMARY KEY,
+  username  TEXT NOT NULL,
+  chucNang  TEXT NOT NULL,        -- bienTap · chuyenMon · giuChuan
+  lyDo      TEXT NOT NULL,
+  boiAi     TEXT NOT NULL,
+  capLuc    TEXT NOT NULL,
+  thuHoiLuc TEXT,
+  thuHoiBoi TEXT
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS ix_qnd_mot ON quyenNoiDung (username, chucNang)
+  WHERE thuHoiLuc IS NULL;
+CREATE INDEX IF NOT EXISTS ix_qnd_ten ON quyenNoiDung (username);

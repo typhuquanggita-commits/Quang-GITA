@@ -49,6 +49,7 @@ const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
 /** Ai được dùng cổng này. Viết nội dung là việc của người làm nghề,
     không phải của khách — cùng ngưỡng với cổng thị giác. */
 function duocVao(hoSo) { return (BAC[hoSo.role] || 99) <= 5; }
+function laChuHe(hoSo) { return hoSo.role === 'R01'; }
 
 /* ══ BẢN CHÉP TỐI THIỂU CỦA HIẾN PHÁP NỘI DUNG ══
 
@@ -484,3 +485,412 @@ export async function mauBaiHoc(y, env, db, hoSo) {
    hàm này thì phép đối chiếu phải đọc mã nguồn bằng biểu thức, và một
    phép đo đọc mã nguồn thì hỏng lặng lẽ khi ai đó xuống dòng khác đi. */
 export const BAN_CHEP = {KHOI, DIEM, BAC_DIEM, RONG, LOI_THAY, NHAN_NGUON, CAU_DAI};
+
+/* ═══════════════════════════════════════════════════════════════
+   THANG NĂM CỔNG — bản 9.99.42
+
+   Chốt của chủ hệ: "không gì lên sóng mà không qua 5 cổng kiểm duyệt
+   có người ký."
+
+   Bản 9.99.41 chỉ ĐO và NÓI. Phần này CHẶN.
+
+   ══ HAI CHỖ TÔI SỬA BẢN ĐẶC TẢ CỦA CHỦ HỆ ══
+
+   1. Bảng quyền của bản đặc tả cho Super Admin đứng ở CẢ NĂM cổng. Đọc
+      thì tiện — chủ hệ gỡ được cổng tắc. Nhưng một mình chủ hệ ký được
+      cổng 2, 3, 4, rồi 5: thang năm cổng thành MỘT chữ ký, sổ vẫn đủ
+      năm dòng, và chỉ khi đọc cột tên mới thấy năm dòng cùng một tên.
+      Luật L3 đóng chỗ ấy: một người ký nhiều nhất MỘT cổng trên một bài.
+
+   2. Bản đặc tả ghi vân tay nội dung vào mỗi chữ ký và nói "ai chỉnh
+      content ngầm sau khi duyệt là lộ ngay qua hash". LỘ chứ không
+      CHẶN — nghĩa là phải có người đi đọc mới thấy, mà chẳng ai đi đọc.
+      Ở đây sửa bài là mọi chữ ký cũ HẾT HIỆU LỰC và bài về bản nháp.
+      Máy làm việc ấy, không phải người phát hiện ra.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Năm cổng, và cổng nào đi tiếp sang cổng nào. Bản chép của
+   G.KN_TRANGTHAI; mục 77 của bộ kiểm đối chiếu. */
+const CONG_TIEP = {
+  nhap: ['may'], may: ['bienTap'], bienTap: ['chuyenMon'],
+  chuyenMon: ['giuChuan'], giuChuan: ['chuHe'], chuHe: ['phatHanh'],
+  phatHanh: [], tuChoi: []
+};
+
+/* Bậc nào ứng với cổng nào, và quyền nào ký được. */
+const CONG_MA = {may: 'C1', bienTap: 'C2', chuyenMon: 'C3',
+                 giuChuan: 'C4', chuHe: 'C5'};
+const CONG_QUYEN = {bienTap: 'bienTap', chuyenMon: 'chuyenMon',
+                    giuChuan: 'giuChuan'};
+const SLA_GIO = {bienTap: 24, chuyenMon: 72, giuChuan: 24, chuHe: 48};
+
+const CAP_QUYEN_KY = 2;   /* chỉ R01–R02 cấp được quyền ký — như quyenTaiChinh */
+
+/* ══ VÂN TAY ══
+   SHA-256, rút 16 chữ đầu. Rút ngắn vì cột này để ĐỐI CHIẾU chứ không
+   để chống giả mạo có chủ đích: kẻ sửa được thẳng cơ sở dữ liệu thì
+   sửa luôn cả cột vân tay. Thứ nó bắt là chỗ sửa bài qua đúng cửa
+   ứng dụng rồi quên mất là bài đã có chữ ký — và đó là chỗ hay xảy ra. */
+async function vanTay(chu) {
+  const b = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(String(chu || '')));
+  return Array.from(new Uint8Array(b)).map(x => x.toString(16).padStart(2, '0'))
+    .join('').slice(0, 16);
+}
+
+const maMoi = () => (crypto.randomUUID ? crypto.randomUUID() : String(Math.random()))
+  .replace(/-/g, '').slice(0, 24);
+
+/** Người này đang giữ quyền ký nào. Đọc bảng quyenNoiDung, bỏ dòng đã thu hồi. */
+async function quyenKy(db, username) {
+  const r = await db.prepare(
+    'SELECT chucNang FROM quyenNoiDung WHERE username = ? AND thuHoiLuc IS NULL')
+    .bind(String(username || '')).all();
+  return ((r && r.results) || []).map(x => x.chucNang);
+}
+
+/* ═══════════════ NẠP MỘT BÀI ═══════════════
+
+   Ghi bài ở bậc NHÁP. Không tự đẩy vào cổng 1: nạp và nộp là hai việc
+   khác nhau, và gộp chúng thì không ai sửa được bản nháp của mình. */
+export async function napBai(y, env, db, hoSo) {
+  if (!duocVao(hoSo))
+    return {ok: false, error: 'KHONGQUYEN',
+      vi: 'Cổng nội dung dành cho người của Học viện từ cấp R05 trở lên.'};
+
+  const chu = String(y.chu || '');
+  const tieuDe = String(y.tieuDe || '').trim();
+  if (tieuDe.length < 4)
+    return {ok: false, error: 'THIEUTIEUDE', vi: 'Bài phải có tiêu đề.'};
+  if (chu.trim().length < 40)
+    return {ok: false, error: 'QUANGAN', vi: 'Bài quá ngắn. Cần ít nhất 40 ký tự.'};
+
+  const id = String(y.id || '').trim() || ('BND-' + maMoi());
+  const cu = await db.prepare('SELECT * FROM baiNoiDung WHERE id = ?').bind(id).first();
+  const vt = await vanTay(chu);
+  const luc = new Date().toISOString();
+
+  if (!cu) {
+    await db.prepare(
+      'INSERT INTO baiNoiDung (id,tieuDe,chu,tang,vanTay,trangThai,nguoiViet,vietLuc) ' +
+      'VALUES (?,?,?,?,?,?,?,?)')
+      .bind(id, tieuDe, chu, String(y.tang || 'T1'), vt, 'nhap', hoSo.uid, luc).run();
+    await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
+      viec: 'napBai', doiTuong: id, chiTiet: 'bài mới · ' + tieuDe});
+    return {ok: true, id, trangThai: 'nhap', vanTay: vt};
+  }
+
+  /* ── SỬA MỘT BÀI ĐÃ CÓ CHỮ KÝ: LUẬT L4 ──
+     Không chặn lượt sửa — chặn là bắt người ta dựng một bài thứ hai để
+     sửa một chữ, và bài thứ hai thì không ai nối lại được với bài đầu.
+     Thay vào đó: mọi chữ ký cũ hết hiệu lực, bài về bản nháp, và sổ ký
+     GIỮ NGUYÊN các dòng cũ kèm vân tay cũ — nên sáu tháng sau vẫn đọc
+     ra được là bốn người từng ký một bản khác. */
+  if (cu.nguoiViet !== hoSo.uid && !laChuHe(hoSo))
+    return {ok: false, error: 'KHONGPHAIBAICUA',
+      vi: 'Bài này của người khác. Chỉ người viết hoặc chủ hệ sửa được.'};
+  if (cu.trangThai === 'phatHanh')
+    return {ok: false, error: 'DAPHATHANH',
+      vi: 'Bài đã phát hành thì không sửa đè. Bài đã ở trong tay người đọc; ' +
+          'ghi đè bản trong sổ là làm sổ nói khác thứ họ đang cầm. Nạp một ' +
+          'bài mới.'};
+
+  const doiChu = cu.chu !== chu;
+  const soKyCu = await db.prepare(
+    'SELECT COUNT(*) n FROM kyNoiDung WHERE baiId = ? AND viec = ?')
+    .bind(id, 'ky').first();
+  const coKy = ((soKyCu && soKyCu.n) || 0) > 0;
+
+  await db.prepare(
+    'UPDATE baiNoiDung SET tieuDe = ?, chu = ?, tang = ?, vanTay = ?, ' +
+    'trangThai = ?, vaoCongLuc = NULL, soatMay = NULL WHERE id = ?')
+    .bind(tieuDe, chu, String(y.tang || cu.tang), vt,
+      doiChu ? 'nhap' : cu.trangThai, id).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
+    viec: 'suaBai', doiTuong: id,
+    chiTiet: doiChu ? ('nội dung đổi · ' + (coKy ? 'chữ ký cũ hết hiệu lực' : 'chưa có chữ ký'))
+                    : 'chỉ đổi tiêu đề'});
+
+  const kq = {ok: true, id, trangThai: doiChu ? 'nhap' : cu.trangThai, vanTay: vt};
+  if (doiChu && coKy) kq.vi =
+    'Nội dung đã đổi, nên MỌI CHỮ KÝ cũ hết hiệu lực và bài về bản nháp ' +
+    '(luật L4). Sổ ký giữ nguyên các dòng cũ kèm vân tay cũ — sáu tháng sau ' +
+    'vẫn đọc ra được là họ đã ký một bản khác. Đi lại từ cổng 1.';
+  return kq;
+}
+
+/* ═══════════════ CỔNG 1 — MÁY ═══════════════
+
+   Không có ô "duyệt ngoại lệ" (luật L5). Muốn qua thì sửa bài. */
+export async function nopBai(y, env, db, hoSo) {
+  const bai = await db.prepare('SELECT * FROM baiNoiDung WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!bai) return {ok: false, error: 'KHONGCO', vi: 'Không tìm thấy bài này.'};
+  if (!duocVao(hoSo))
+    return {ok: false, error: 'KHONGQUYEN', vi: 'Cổng nội dung dành cho R05 trở lên.'};
+  if (bai.trangThai !== 'nhap')
+    return {ok: false, error: 'SAIBAC',
+      vi: 'Bài đang ở bậc "' + bai.trangThai + '", không phải bản nháp.'};
+
+  const soat = await soatNoiDung({chu: bai.chu, tang: bai.tang}, env, db, hoSo);
+  if (!soat.ok) return soat;
+
+  /* Máy chặn bằng SỐ. Hai điều kiện, cả hai đếm được:
+     thiếu khối bắt buộc, hoặc có câu phán xét. Không chặn bằng điểm
+     tổng — máy chỉ chấm được 60/100, và chặn bằng một con số máy không
+     chấm đủ là chặn bằng một con số không có nghĩa. */
+  const chan = [];
+  if (soat.khoi.thieu.length)
+    chan.push('thiếu ' + soat.khoi.thieu.length + '/24 khối: ' +
+      soat.khoi.thieu.join(', '));
+  if (soat.doi.length)
+    chan.push(soat.doi.map(p => p.khoi + ' đòi ' + p.can).join(' · '));
+  if (soat.loi.length)
+    chan.push(soat.loi.length + ' câu phán xét (dòng ' +
+      soat.loi.map(l => l.dong).join(', ') + ')');
+
+  const luc = new Date().toISOString();
+  const vt = await vanTay(bai.chu);
+
+  await db.prepare(
+    'INSERT INTO kyNoiDung (id,baiId,cong,viec,boiAi,vaiLuc,vanTay,ghiChu,kyLuc) ' +
+    'VALUES (?,?,?,?,?,?,?,?,?)')
+    .bind(maMoi(), bai.id, 'C1', chan.length ? 'tuChoi' : 'ky', 'may', 'may', vt,
+      chan.length ? chan.join(' · ') : 'Máy đạt: đủ khối, đủ khối đòi, không câu phán xét.',
+      luc).run();
+
+  await db.prepare(
+    'UPDATE baiNoiDung SET trangThai = ?, vaoCongLuc = ?, soatMay = ?, lyDo = ? WHERE id = ?')
+    .bind(chan.length ? 'nhap' : 'bienTap', chan.length ? null : luc,
+      JSON.stringify({diemMay: soat.diemMay, tranMay: soat.tranMay,
+        thieuKhoi: soat.khoi.thieu, cam: soat.cam.map(c => c.ma)}),
+      chan.length ? chan.join(' · ') : null, bai.id).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
+    viec: 'nopBai', doiTuong: bai.id,
+    chiTiet: chan.length ? 'máy chặn: ' + chan.join(' · ') : 'qua cổng 1'});
+
+  if (chan.length)
+    return {ok: false, error: 'MAYCHAN', chan, soat,
+      vi: 'Cổng 1 chặn. Không có ô duyệt ngoại lệ ở cổng này (luật L5) — ' +
+          'bốn người sau không đốt thời gian đọc thứ đếm được là chưa xong. ' +
+          'Sửa rồi nộp lại.'};
+  return {ok: true, trangThai: 'bienTap', soat,
+    vi: 'Qua cổng 1. Còn bốn cổng người, và mỗi cổng một người KHÁC ' +
+        'nhau — luật L3.'};
+}
+
+/* ═══════════════ BỐN CỔNG NGƯỜI ═══════════════ */
+export async function kyBai(y, env, db, hoSo) {
+  const bai = await db.prepare('SELECT * FROM baiNoiDung WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!bai) return {ok: false, error: 'KHONGCO', vi: 'Không tìm thấy bài này.'};
+
+  const cong = bai.trangThai;
+  const maCong = CONG_MA[cong];
+  if (!maCong || cong === 'may')
+    return {ok: false, error: 'SAIBAC',
+      vi: 'Bài đang ở bậc "' + cong + '" — không phải một cổng người ký.'};
+
+  const tuChoi = String(y.viec || 'ky') === 'tuChoi';
+  const lyDo = String(y.lyDo || '').trim();
+
+  /* ── LUẬT L2 ĐỨNG TRƯỚC MỌI PHÉP KIỂM QUYỀN ──
+     Bản đầu tôi đặt phép kiểm quyền lên trước, và bộ thử bắt ngay: một
+     người viết chưa có quyền ký thì bị báo "thiếu quyền ký" — nên họ đi
+     xin đúng cái quyền KHÔNG giúp được gì, vì xin xong vẫn bị L2 chặn.
+
+     Thứ tự các phép kiểm không phải chuyện sắp xếp cho gọn. Nó quyết
+     định người bị chặn đi làm việc gì tiếp theo. */
+  if (bai.nguoiViet === hoSo.uid)
+    return {ok: false, error: 'TUDUYET',
+      vi: 'Luật L2: người viết không ký bài của chính mình. Không phải chuyện ' +
+          'tin hay không tin — người viết đọc lại thì thấy thứ mình ĐỊNH ' +
+          'viết, không thấy thứ đã viết ra. Xin thêm quyền ký cũng không qua ' +
+          'được chỗ này; bài này cần một người khác đọc.'};
+
+  /* ── AI KÝ ĐƯỢC CỔNG NÀY ──
+     Cổng 5 chỉ R01. Ba cổng kia cần quyền tương ứng — hoặc R01 đứng
+     thay, và trả giá ở luật L3 ngay dưới. */
+  const dangGiu = await quyenKy(db, hoSo.username);
+  const canQuyen = CONG_QUYEN[cong];
+  if (cong === 'chuHe') {
+    if (!laChuHe(hoSo))
+      return {ok: false, error: 'CANCHUHE',
+        vi: 'Cổng 5 chỉ Super Admin ký. Máy soát, chủ hệ quyết.'};
+  } else if (dangGiu.indexOf(canQuyen) < 0 && !laChuHe(hoSo)) {
+    return {ok: false, error: 'THIEUQUYENKY',
+      canQuyen,
+      vi: 'Cổng ' + maCong + ' cần quyền ký "' + canQuyen + '". Chưa ai cấp ' +
+          'quyền ấy cho tài khoản này. Chỉ R01–R02 cấp được, bằng cửa ' +
+          'capQuyenNoiDung.'};
+  }
+
+  /* ── LUẬT L3: MỘT NGƯỜI KÝ NHIỀU NHẤT MỘT CỔNG ──
+     Đọc thẳng sổ ký, không đọc một ô tóm tắt: ô tóm tắt thì sửa được.
+     Chỉ đếm chữ ký còn HIỆU LỰC — cùng vân tay với bài hiện tại. */
+  const daKy = await db.prepare(
+    'SELECT cong FROM kyNoiDung WHERE baiId = ? AND boiAi = ? AND viec = ? ' +
+    'AND vanTay = ?').bind(bai.id, hoSo.uid, 'ky', bai.vanTay).first();
+  if (daKy)
+    return {ok: false, error: 'DAKYCONGKHAC', daKy: daKy.cong,
+      vi: 'Luật L3: tài khoản này đã ký cổng ' + daKy.cong + ' của bài này, nên ' +
+          'không ký thêm cổng ' + maCong + '. Không có luật này thì một người ' +
+          'ký được cả bốn cổng người, thang năm cổng thành một chữ ký — mà sổ ' +
+          'vẫn đủ năm dòng, nên không ai đọc ra. ' +
+          (laChuHe(hoSo) ? 'Chủ hệ đứng thay được MỘT cổng, và trả giá đúng ở ' +
+            'chỗ này: đã ký một cổng thì cổng 5 phải người khác ký.' : '')};
+
+  /* ── TỪ CHỐI PHẢI NÓI VÌ SAO ── */
+  if (tuChoi && lyDo.length < 10)
+    return {ok: false, error: 'THIEULYDO',
+      vi: 'Từ chối thì phải nói vì sao. Không nói thì người viết sửa mò, và ' +
+          'lần sau nộp lên y hệt.'};
+
+  const luc = new Date().toISOString();
+  const den = tuChoi ? 'nhap' : (CONG_TIEP[cong] || [])[0];
+  if (!den)
+    return {ok: false, error: 'SAIBAC', vi: 'Từ bậc này không đi tiếp được.'};
+
+  await db.prepare(
+    'INSERT INTO kyNoiDung (id,baiId,cong,viec,boiAi,vaiLuc,vanTay,ghiChu,kyLuc) ' +
+    'VALUES (?,?,?,?,?,?,?,?,?)')
+    .bind(maMoi(), bai.id, maCong, tuChoi ? 'tuChoi' : 'ky', hoSo.uid,
+      hoSo.role, bai.vanTay, lyDo || String(y.ghiChu || 'Đạt.'), luc).run();
+
+  await db.prepare(
+    'UPDATE baiNoiDung SET trangThai = ?, vaoCongLuc = ?, lyDo = ? WHERE id = ?')
+    .bind(den, tuChoi ? null : luc, tuChoi ? lyDo : null, bai.id).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
+    viec: tuChoi ? 'tuChoiBai' : 'kyBai', doiTuong: bai.id,
+    chiTiet: maCong + ' → ' + den});
+
+  return {ok: true, cong: maCong, trangThai: den, vanTay: bai.vanTay,
+    vi: den === 'phatHanh'
+      ? 'Đã phát hành. Năm cổng, năm chữ ký, năm người khác nhau.'
+      : (tuChoi ? 'Đã từ chối, bài về bản nháp.'
+                : 'Qua cổng ' + maCong + '. Tiếp: ' + den + '.')};
+}
+
+/* ═══════════════ SỔ KÝ CỦA MỘT BÀI ═══════════════
+
+   Trả về đủ sổ, kèm cột `conHieuLuc`: chữ ký nào neo vào vân tay hiện
+   tại thì còn, chữ ký nào neo vào một bản cũ thì hết. Không xoá dòng
+   nào — dòng hết hiệu lực chính là chỗ kể ra bài đã bị sửa sau khi ký. */
+export async function soKyBai(y, env, db, hoSo) {
+  if (!duocVao(hoSo))
+    return {ok: false, error: 'KHONGQUYEN', vi: 'Cổng nội dung dành cho R05 trở lên.'};
+  const bai = await db.prepare('SELECT * FROM baiNoiDung WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!bai) return {ok: false, error: 'KHONGCO', vi: 'Không tìm thấy bài này.'};
+
+  const r = await db.prepare('SELECT * FROM kyNoiDung WHERE baiId = ? ORDER BY kyLuc')
+    .bind(bai.id).all();
+  const so = ((r && r.results) || []).map(k => ({
+    cong: k.cong, viec: k.viec, boiAi: k.boiAi, vaiLuc: k.vaiLuc,
+    ghiChu: k.ghiChu, kyLuc: k.kyLuc,
+    conHieuLuc: k.vanTay === bai.vanTay}));
+
+  const hetHieuLuc = so.filter(k => !k.conHieuLuc && k.viec === 'ky').length;
+  const kq = {ok: true, id: bai.id, tieuDe: bai.tieuDe, trangThai: bai.trangThai,
+    vanTay: bai.vanTay, nguoiViet: bai.nguoiViet, so,
+    nguoiDaKy: so.filter(k => k.viec === 'ky' && k.conHieuLuc).map(k => k.boiAi)};
+  if (hetHieuLuc) kq.canhBao =
+    hetHieuLuc + ' chữ ký đã HẾT HIỆU LỰC vì nội dung đổi sau khi ký (luật L4). ' +
+    'Chúng ở lại trong sổ chứ không bị xoá — chính chúng là chỗ kể ra chuyện ấy.';
+  return kq;
+}
+
+/* ═══════════════ ĐỒNG HỒ TREO ═══════════════
+
+   KHÔNG chặn, chỉ nổi lên. Một cổng quá hạn là việc của người quản lý,
+   không phải một lỗi của bài — và chặn một bài vì người duyệt bận là
+   phạt nhầm người. */
+export async function baiTreo(y, env, db, hoSo) {
+  if (!duocVao(hoSo))
+    return {ok: false, error: 'KHONGQUYEN', vi: 'Cổng nội dung dành cho R05 trở lên.'};
+  const r = await db.prepare(
+    "SELECT id,tieuDe,trangThai,vaoCongLuc FROM baiNoiDung " +
+    "WHERE vaoCongLuc IS NOT NULL AND trangThai NOT IN ('phatHanh','tuChoi','nhap')")
+    .all();
+  const nay = Date.now();
+  const treo = ((r && r.results) || []).map(b => {
+    const gio = (nay - Date.parse(b.vaoCongLuc)) / 3600e3;
+    const han = SLA_GIO[b.trangThai] || 0;
+    return {id: b.id, tieuDe: b.tieuDe, cong: CONG_MA[b.trangThai],
+      choGio: Math.round(gio * 10) / 10, hanGio: han, quaHan: gio > han};
+  }).filter(x => x.quaHan).sort((a, b) => b.choGio - a.choGio);
+  return {ok: true, soTreo: treo.length, treo,
+    vi: treo.length ? 'Quá hạn không chặn bài — nó chỉ nổi lên. Chặn một bài vì ' +
+          'người duyệt bận là phạt nhầm người.'
+      : 'Không cổng nào quá hạn.'};
+}
+
+/* ═══════════════ CẤP QUYỀN KÝ ═══════════════
+   Chỉ R01–R02, và không ai tự cấp cho mình — y như quyenTaiChinh. */
+export async function capQuyenNoiDung(y, env, db, hoSo) {
+  if ((BAC[hoSo.role] || 99) > CAP_QUYEN_KY)
+    return {ok: false, error: 'KHONGQUYEN',
+      vi: 'Chỉ R01–R02 cấp được quyền ký nội dung.'};
+
+  const ten = String(y.username || '').trim();
+  const chuc = String(y.chucNang || '').trim();
+  const lyDo = String(y.lyDo || '').trim();
+  if (Object.keys(CONG_QUYEN).map(k => CONG_QUYEN[k]).indexOf(chuc) < 0)
+    return {ok: false, error: 'SAICHUCNANG',
+      vi: 'Quyền ký phải là bienTap · chuyenMon · giuChuan.'};
+  if (lyDo.length < 10)
+    return {ok: false, error: 'THIEULYDO',
+      vi: 'Cấp quyền phải nói vì sao. Một quyền không lý do thì sáu tháng sau ' +
+          'không ai dám thu hồi, vì không ai biết vì sao nó có ở đó.'};
+  if (ten === hoSo.username)
+    return {ok: false, error: 'TUCAP',
+      vi: 'Không ai tự cấp quyền ký cho mình. Cùng luật với quyenTaiChinh.'};
+
+  const co = await db.prepare(
+    'SELECT id FROM quyenNoiDung WHERE username = ? AND chucNang = ? AND thuHoiLuc IS NULL')
+    .bind(ten, chuc).first();
+  if (co) return {ok: false, error: 'DACAP', vi: 'Tài khoản này đã có quyền ấy.'};
+
+  await db.prepare(
+    'INSERT INTO quyenNoiDung (id,username,chucNang,lyDo,boiAi,capLuc) VALUES (?,?,?,?,?,?)')
+    .bind(maMoi(), ten, chuc, lyDo, hoSo.username, new Date().toISOString()).run();
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
+    viec: 'capQuyenNoiDung', doiTuong: ten, chiTiet: chuc + ' · ' + lyDo});
+  return {ok: true, username: ten, chucNang: chuc};
+}
+
+export async function thuHoiQuyenNoiDung(y, env, db, hoSo) {
+  if ((BAC[hoSo.role] || 99) > CAP_QUYEN_KY)
+    return {ok: false, error: 'KHONGQUYEN', vi: 'Chỉ R01–R02 thu hồi được.'};
+  const r = await db.prepare(
+    'UPDATE quyenNoiDung SET thuHoiLuc = ?, thuHoiBoi = ? ' +
+    'WHERE username = ? AND chucNang = ? AND thuHoiLuc IS NULL')
+    .bind(new Date().toISOString(), hoSo.username,
+      String(y.username || ''), String(y.chucNang || '')).run();
+  const n = (r && r.meta && r.meta.changes) || 0;
+  if (!n) return {ok: false, error: 'KHONGCO', vi: 'Không có quyền nào đang hiệu lực để thu.'};
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
+    viec: 'thuHoiQuyenNoiDung', doiTuong: String(y.username || ''),
+    chiTiet: String(y.chucNang || '')});
+  return {ok: true};
+}
+
+export async function dsQuyenNoiDung(y, env, db, hoSo) {
+  if (!duocVao(hoSo))
+    return {ok: false, error: 'KHONGQUYEN', vi: 'Cổng nội dung dành cho R05 trở lên.'};
+  const r = await db.prepare(
+    'SELECT username,chucNang,lyDo,boiAi,capLuc FROM quyenNoiDung ' +
+    'WHERE thuHoiLuc IS NULL ORDER BY capLuc DESC').all();
+  const ds = (r && r.results) || [];
+  /* Cổng nào chưa có ai giữ quyền — bài sẽ đứng ở đó, và máy phải nói
+     ra là đứng vì THIẾU NGƯỜI chứ không phải vì bài sai. */
+  const thieu = Object.keys(CONG_QUYEN).map(c => CONG_QUYEN[c])
+    .filter(q => !ds.some(x => x.chucNang === q));
+  const kq = {ok: true, ds};
+  if (thieu.length) kq.congThieuNguoi = thieu;
+  return kq;
+}
+
+export const BAN_CHEP_THANG = {CONG_TIEP, CONG_MA, CONG_QUYEN, SLA_GIO};
