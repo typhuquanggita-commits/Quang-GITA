@@ -255,6 +255,8 @@ const NGHE = [
   'KN_CONGTHUC', 'KN_VONG', 'KN_LUAT_GOC', 'KN_CHOCHU',
   /* 9.99.42 — thang năm cổng phát hành */
   'KN_CONG', 'KN_LUAT_THANG', 'KN_SLA', 'KN_QUYEN', 'KN_TRANGTHAI',
+  /* 9.99.44 — tiêu chuẩn nghề và bộ dò chuyên gia */
+  'KN_CHUAN_NGHE', 'KN_CAM_CHUYENGIA', 'KN_KHUNG_CAU',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

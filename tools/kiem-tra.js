@@ -11487,6 +11487,18 @@ const { chromium } = require(PW);
         sla: (G.KN_SLA || []).map(x => x.cong + ':' + x.gio),
         quyen: (G.KN_QUYEN || []).map(q => q.ma + '→' + q.cong),
         tt: (G.KN_TRANGTHAI || []).map(t => t.ma + '→' + (t.ke || '')),
+        /* 9.99.44 — tiêu chuẩn nghề và bộ dò chuyên gia */
+        camCg: (G.KN_CAM_CHUYENGIA || []).map(c => c.cau + '·' + c.loi),
+        chuanNghe: (G.KN_CHUAN_NGHE || []).map(c => c.ma),
+        khungCau: (G.KN_KHUNG_CAU || []).map(k => k.ma + '·' + k.nhip),
+        /* Mỗi lĩnh vực phải khai ĐỦ BA Ô. Thiếu ô nào là mất đúng chỗ
+           phân biệt nguồn ngoài với nội dung đã duyệt của Học viện. */
+        ngheThieuO: (G.KN_CHUAN_NGHE || [])
+          .filter(c => !c.ngheDoi || !c.gitaThem || !c.gitaCam).map(c => c.ma),
+        /* Mỗi khung câu phải neo vào một nhịp N1–N6 đã có — không dựng
+           thang nhịp thứ hai. */
+        khungLacNhip: (G.KN_KHUNG_CAU || [])
+          .filter(k => !/^N[1-6] /.test(String(k.nhip || ''))).map(k => k.ma),
         /* Mọi khối phải khai câu hỏi nó trả lời, và mọi khối phải nối
            về ít nhất một điều kiện hoàn thành. Khối không nối về đâu
            là khối thừa, và một bảng kiểm có ô thừa thì người ta điền
@@ -11553,6 +11565,14 @@ const { chromium } = require(PW);
     const cong5 = kho.cong.find(c => c.ma === 'C5');
     if (!cong5 || cong5.ai !== 'R01') lech.push('cổng 5 không khoá ở R01');
     if (kho.luatThang.join(',') !== 'L1,L2,L3,L4,L5') lech.push('năm luật cứng của thang');
+    soDay(bc.CAM_CHUYENGIA.map(c => c[0] + '·' + c[1]), kho.camCg,
+      'bảng câu nghiệp dư');
+    if (kho.chuanNghe.length !== 5) lech.push('năm lĩnh vực chuẩn nghề');
+    if (kho.ngheThieuO.length)
+      lech.push('lĩnh vực thiếu ô: ' + kho.ngheThieuO.join(', '));
+    if (kho.khungCau.length !== 5) lech.push('năm khung câu');
+    if (kho.khungLacNhip.length)
+      lech.push('khung câu không neo vào nhịp N1–N6: ' + kho.khungLacNhip.join(', '));
 
     ra.ndLech = lech;
     ra.ndKhop = lech.length === 0;
@@ -11580,7 +11600,11 @@ const { chromium } = require(PW);
     ra.ndDoThat = mND.soatLoiNoi('Con lười quá.').length === 1 &&
                   mND.soatLoiNoi('Con chưa bắt đầu được.').length === 0 &&
                   mND.soatRong('Hãy cố gắng lên nhé.').length === 1 &&
-                  mND.soatDoi({K14: 'có bài tập ở đây'}).length === 1;
+                  mND.soatDoi({K14: 'có bài tập ở đây'}).length === 1 &&
+                  /* Bộ dò chuyên gia mang theo NGƯỜI NHẬN: một luật về
+                     máy không bị bắt, một câu về đứa trẻ thì bắt. */
+                  mND.soatChuyenGia('Máy KHÔNG BAO GIỜ ghi đè.').length === 0 &&
+                  mND.soatChuyenGia('Con không bao giờ tự giác.').length === 1;
 
     bao(ra.ndKhop && ra.ndDuKho && ra.ndKhoiDay && ra.ndCongDu && ra.ndDoThat,
       'HIẾN PHÁP NỘI DUNG: BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP TỪNG Ô VỚI BẢN GỐC TRONG KHO, VÀ MÁY PHẢI KHÔNG CỘNG RA TỔNG KHI CÒN CHIỀU CHƯA AI CHẤM. Bản đặc tả MASTER AI của chủ hệ để AI tự chấm cả mười chiều rồi ra một con số trên trăm. Bốn chiều trong đó — chiều sâu, cá nhân hoá, dùng lại được, và phần có giá trị của chìa khoá kim cương — không có dữ liệu nào để đo, nên máy chấm chúng là máy ĐOÁN; và một con số đoán nằm cạnh sáu con số đo thì cả bảy đều được tin như nhau. Nên máy chỉ được chấm 60 điểm và phải NÓI RA 40 điểm còn chờ người — cùng luật với L-02 của bảng lương. Phép đo này cộng lại hai nửa và đòi đúng 100: lệch nghĩa là có một chiều bị tính hai lần hoặc không ai tính. Máy chủ không đọc được kho đã mã hoá nên phải giữ bản chép của hai mươi bốn khối, mười chiều, bảng câu rỗng và bảng thay lời; phép đo đối chiếu TỪNG Ô chứ không đếm số, vì hai bảng cùng dài mà lệch nội dung thì đếm số vẫn xanh. Chỗ nguy nhất là ô TRẦN MÁY: lệch một điểm ở đó không làm sai phép đo nào, nó chỉ làm máy cho nhiều điểm hơn phần nó thật sự đo được. Và phép đo gọi thẳng ba bộ dò rồi đòi chúng phân biệt câu dán nhãn với câu sạch',

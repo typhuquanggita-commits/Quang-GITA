@@ -151,6 +151,34 @@ const LOI_THAY = [
 const NHAN_NGUON = ['[KHO GITA]', '[MÁY PHÂN TÍCH]', '[MÁY ĐỀ NGHỊ]',
                     '[CHƯA KIỂM CHỨNG]'];
 
+/* ══ MƯỜI SÁU CÂU CHUYÊN GIA KHÔNG NÓI — bản 9.99.44 ══
+
+   Khác LOI_THAY ở MỨC XỬ, không chỉ ở nội dung: bảng kia bắt câu PHÁN
+   XÉT và CHẶN ở cổng 1, vì một câu dán nhãn đi vào một nhà thật thì ở
+   đó không sửa lại được. Bảng này bắt câu NGHIỆP DƯ và chỉ CẢNH BÁO.
+
+   Vì sao không chặn: phần lớn những câu này có chỗ dùng đúng. "phải"
+   trong "phải nộp trước ngày 5" là một mốc hạn, không phải mệnh lệnh
+   áp lên người học. Chặn cả chỗ dùng đúng thì người viết học cách lách
+   bộ dò, và một bộ dò bị lách thì tệ hơn không có.
+
+   Và mỗi khoá mang theo NGƯỜI NHẬN — "con không bao giờ", không phải
+   "không bao giờ". Bản đầu ghi khoá rộng, và lượt quét toàn hệ đầu
+   tiên bắt 314 dòng trên 183 màn mà gần hết là đúng: "KHÔNG BAO GIỜ
+   ghi đè" là một luật về máy. Ba trăm dòng báo đúng thì lần thứ tư
+   không ai đọc cả báo cáo, và mấy dòng sai thật chìm theo. */
+const CAM_CHUYENGIA = [
+  ['em phải', 'ra lệnh'], ['con phải', 'ra lệnh'],
+  ['bắt buộc phải làm', 'ra lệnh'],
+  ['em sai rồi', 'phủ định trống'], ['con sai rồi', 'phủ định trống'],
+  ['con luôn luôn', 'tuyệt đối hoá'], ['em luôn luôn', 'tuyệt đối hoá'],
+  ['con không bao giờ', 'tuyệt đối hoá'], ['em không bao giờ', 'tuyệt đối hoá'],
+  ['tất cả trẻ', 'tuyệt đối hoá'], ['ai cũng biết', 'giả định chung'],
+  ['chỉ cần cố gắng', 'giảm nhẹ giả'], ['chỉ cần chăm chỉ', 'giảm nhẹ giả'],
+  ['theo tôi thì', 'ý kiến thay dữ liệu'],
+  ['chắc chắn sẽ đạt', 'hứa kết quả'], ['chắc chắn sẽ giỏi', 'hứa kết quả']
+];
+
 /* Câu dài bao nhiêu thì đáng nhắc. 28 từ là ngưỡng CẢNH BÁO, không
    phải ngưỡng chặn — luật N10 nói rõ nó là phép đo yếu nhất trong
    mười cái, và ghi ra để sau không ai nâng nó thành cửa chặn. */
@@ -276,6 +304,13 @@ function doBang(chu, bang, dungCot) {
 
 export function soatRong(chu)    { return doBang(chu, RONG, false); }
 export function soatLoiNoi(chu)  { return doBang(chu, LOI_THAY, true); }
+/* Trả về cùng hình dạng, nhưng cột thứ hai là LOẠI LỖI chứ không phải
+   câu nói thay — nên đọc ra là `thay` mang tên loại. Đặt tên cột theo
+   thứ nó CHỨA chứ không theo thứ nó giống, nên hàm này gói lại. */
+export function soatChuyenGia(chu) {
+  return doBang(chu, CAM_CHUYENGIA, false)
+    .map(function (x) { return {dong: x.dong, bat: x.bat, loi: x.thay}; });
+}
 
 /* Câu dài. Đếm theo TỪ chứ không theo ký tự: tiếng Việt nhiều dấu nên
    đếm ký tự thì một câu ngắn đầy dấu cũng vượt ngưỡng. */
@@ -428,6 +463,7 @@ export async function soatNoiDung(y, env, db, hoSo) {
   const loi  = soatLoiNoi(chu);
   const dai  = soatCauDai(chu);
   const ngu  = soatNguon(chu);
+  const cg   = soatChuyenGia(chu);
   const xong = soatXong(doc.khoi);
   const cham = chamMay({tang, chu}, doc, doi, rong, loi, dai, ngu);
 
@@ -452,13 +488,19 @@ export async function soatNoiDung(y, env, db, hoSo) {
     vi: 'Không dòng nào mang nhãn nguồn. Bốn nhãn: ' + NHAN_NGUON.join(' · ')});
   if (dai.dai)     camPham.push({ma: 'N10', canhBao: true,
     vi: dai.dai.length + ' câu trên ' + CAU_DAI + ' từ. Đây là CẢNH BÁO, không chặn.'});
+  if (cg.length)   camPham.push({ma: 'CG', canhBao: true,
+    vi: cg.length + ' câu nghiệp dư: ' +
+      cg.slice(0, 4).map(function (x) { return '"' + x.bat + '" (' + x.loi + ')'; }).join(', ') +
+      (cg.length > 4 ? '…' : '') + '. CẢNH BÁO, không chặn — phần lớn những câu ' +
+      'này có chỗ dùng đúng, và chặn cả chỗ dùng đúng thì người viết học cách ' +
+      'lách bộ dò.'});
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
     viec: 'soatNoiDung', doiTuong: tang || '(chưa khai Tầng)',
     chiTiet: 'thiếu ' + doc.thieu.length + '/24 khối · máy cho ' +
              duoc + '/' + tranMay});
 
-  const kq = {ok: true, tang, khoi: doc, doi, rong, loi, cauDai: dai, nguon: ngu,
+  const kq = {ok: true, tang, khoi: doc, doi, rong, loi, chuyenGia: cg, cauDai: dai, nguon: ngu,
     xong, cham, diemMay: duoc, tranMay, conCho, cam: camPham,
     vi: 'Máy chấm được ' + tranMay + '/100 điểm và cho ' + duoc + '. ' +
         'Bốn chiều còn lại — chiều sâu, cá nhân hoá, dùng lại được, và phần ' +
@@ -484,7 +526,8 @@ export async function mauBaiHoc(y, env, db, hoSo) {
 /* Xuất bản chép ra cho bộ kiểm đối chiếu với kho (mục 76). Không có
    hàm này thì phép đối chiếu phải đọc mã nguồn bằng biểu thức, và một
    phép đo đọc mã nguồn thì hỏng lặng lẽ khi ai đó xuống dòng khác đi. */
-export const BAN_CHEP = {KHOI, DIEM, BAC_DIEM, RONG, LOI_THAY, NHAN_NGUON, CAU_DAI};
+export const BAN_CHEP = {KHOI, DIEM, BAC_DIEM, RONG, LOI_THAY, NHAN_NGUON,
+  CAU_DAI, CAM_CHUYENGIA};
 
 /* ═══════════════════════════════════════════════════════════════
    THANG NĂM CỔNG — bản 9.99.42

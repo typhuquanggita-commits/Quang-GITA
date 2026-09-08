@@ -3600,6 +3600,30 @@ bao(maBanChep.length === 24 &&
     maBanChep.every((m, i) => m === 'K' + String(i + 1).padStart(2, '0')),
   'bản chép hai mươi bốn khối liên tục K01→K24, không thiếu không trùng');
 
+/* ── BỘ DÒ CHUYÊN GIA: CẢNH BÁO, KHÔNG CHẶN ── */
+bao(ndMod.soatChuyenGia('Con lười quá, em phải cố gắng hơn.').length === 1 &&
+    ndMod.soatChuyenGia('Con lười quá, em phải cố gắng hơn.')[0].loi === 'ra lệnh',
+  'bắt câu NGHIỆP DƯ kèm LOẠI LỖI — khác bảng phán xét ở mức xử, không chỉ ở nội dung');
+/* Khoá mang theo NGƯỜI NHẬN. Bản đầu ghi khoá rộng ("không bao giờ"),
+   và lượt quét toàn hệ đầu tiên bắt 314 dòng trên 183 màn mà gần hết
+   là đúng: "KHÔNG BAO GIỜ ghi đè" là một luật về máy. */
+bao(ndMod.soatChuyenGia('Máy KHÔNG BAO GIỜ ghi đè một bản đã duyệt.').length === 0 &&
+    ndMod.soatChuyenGia('Con không bao giờ tự giác cả.').length === 1,
+  'khoá mang theo NGƯỜI NHẬN: một luật về máy không bị bắt, một câu về đứa trẻ thì bắt',
+  'ba trăm dòng báo đúng thì lần thứ tư không ai đọc cả báo cáo');
+bao(ndMod.soatChuyenGia('Chỉ cần bấm nút này là xong.').length === 0 &&
+    ndMod.soatChuyenGia('Chỉ cần cố gắng là được thôi.').length === 1,
+  '"chỉ cần bấm nút" là một hướng dẫn; "chỉ cần cố gắng" là một lời giảm nhẹ giả');
+{
+  const banRong = await ndMod.soatNoiDung({chu: baiDu.replace(
+    'Tối nay ghi 3 dòng, không thêm nhận xét.',
+    'Em phải làm cho xong, chỉ cần cố gắng thôi.'), tang: 'T1'}, env, env.CSDL, saR01);
+  bao(banRong.ok && banRong.chuyenGia.length === 2 &&
+      banRong.cam.some(c => c.ma === 'CG' && c.canhBao === true),
+    'câu nghiệp dư vào sổ soát dưới dạng CẢNH BÁO — không kéo bài rớt cổng 1',
+    'phần lớn những câu này có chỗ dùng đúng; chặn cả chỗ dùng đúng thì người viết học cách lách bộ dò');
+}
+
 /* ═══════════════ 16C · THANG NĂM CỔNG CỦA NỘI DUNG ═══════════════
 
    Chốt của chủ hệ: "không gì lên sóng mà không qua 5 cổng có người ký."
@@ -3761,6 +3785,20 @@ bao((await goiND('napBai',
       {id: 'BND-T1', tieuDe: 'Sửa đè bài đã phát hành', chu: baiDu + '\nthêm dòng', tang: 'T1'},
       aiVIET)).error === 'DAPHATHANH',
   'bài ĐÃ PHÁT HÀNH không sửa đè — bài đã ở trong tay người đọc, ghi đè bản trong sổ là làm sổ nói khác thứ họ đang cầm');
+
+/* ── CÂU NGHIỆP DƯ KHÔNG CHẶN CỔNG 1 ──
+   Cảnh báo là cảnh báo. Nếu có ngày ai đó nâng nó thành cửa chặn thì
+   phép đo này đỏ, và đó là lúc phải đọc lại vì sao nó chỉ cảnh báo. */
+{
+  const chuCG = baiDu.replace('Tối nay ghi 3 dòng, không thêm nhận xét.',
+    'Em phải làm cho xong, chỉ cần cố gắng thôi.');
+  await goiND('napBai', {id: 'BND-CG', tieuDe: 'Bài có câu nghiệp dư',
+    chu: chuCG, tang: 'T1'}, aiVIET);
+  const nopCG = await goiND('nopBai', {id: 'BND-CG'}, aiVIET);
+  bao(nopCG.ok && nopCG.soat.chuyenGia.length === 2,
+    'bài có câu nghiệp dư VẪN qua được cổng 1 — cảnh báo là cảnh báo, không phải cửa chặn',
+    'bắt ' + ((nopCG.soat || {}).chuyenGia || []).length + ' câu mà không chặn');
+}
 
 /* ── ĐỒNG HỒ TREO: NỔI LÊN, KHÔNG CHẶN ── */
 env.CSDL.prepare("UPDATE baiNoiDung SET vaoCongLuc = ? WHERE id = 'BND-T5'")
