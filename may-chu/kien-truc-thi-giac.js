@@ -887,10 +887,34 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
 
   const khoa = String(env.GITA_KHOA_VE || '');
   const cong = String(env.GITA_CONG_VE || '');
+  /* ── NÓI RÕ HAI BÍ MẬT NÀY LÀ GÌ (9.99.39) ──
+     Câu cũ chỉ nói "chưa nạp GITA_KHOA_VE và GITA_CONG_VE". Đọc câu
+     ấy thì người ta đi tìm chỗ bật trong kho mã — và không có chỗ nào
+     cả, vì hai thứ ấy không phải công tắc: chúng là TÀI KHOẢN ở một
+     công ty bên ngoài.
+
+     Chủ hệ đã hỏi đúng câu này: "mở chức năng vẽ người, vẽ cảnh thật
+     của Claude". Không có chức năng ấy để mở — mô hình ngôn ngữ ĐỌC
+     được ảnh, không SINH ra ảnh; ảnh người như ảnh chụp là việc của
+     mô hình khuếch tán, một loại máy khác, do công ty khác bán.
+
+     Một câu lỗi không nói ra thứ phải mua thì nó biến một việc làm
+     được thành một ngõ cụt. */
   if (!khoa || !cong) return {ok: false, code: 'CUADONG',
     error: 'Cửa đi ra đang ĐÓNG: máy chủ chưa nạp GITA_KHOA_VE và GITA_CONG_VE. ' +
-           'Đây là mặc định — nối một bộ vẽ bên ngoài là một quyết định phải bấm, ' +
-           'không phải một thứ có sẵn.',
+           'Đây là mặc định — nối một bộ vẽ bên ngoài là một quyết định phải bấm.',
+    laGi: 'GITA_CONG_VE là ĐỊA CHỈ một dịch vụ sinh ảnh; GITA_KHOA_VE là khoá ' +
+          'API của tài khoản Học viện ở dịch vụ ấy. Chúng KHÔNG phải công tắc ' +
+          'trong kho mã — không có chỗ nào trong mã để bật chúng lên.',
+    loaiDichVu: 'Cần một dịch vụ sinh ảnh theo mô hình KHUẾCH TÁN (diffusion) ' +
+          'có cửa HTTP. Mô hình ngôn ngữ — kể cả loại đang chạy trợ lý này — ' +
+          'ĐỌC được ảnh nhưng KHÔNG sinh ra ảnh, nên không có đường nào đi tắt ' +
+          'qua chỗ này.',
+    napBang: ['npx wrangler secret put GITA_CONG_VE',
+              'npx wrangler secret put GITA_KHOA_VE'],
+    duongCoSan: 'Chưa có tài khoản thì vẫn dựng được ấn phẩm: dùng ảnh chụp ' +
+          'trong kho ảnh làm lớp người (luật lopGhep), chữ do máy đặt lên. ' +
+          'Ảnh chụp phải có văn bản đồng ý — luật C13.',
     canNap: ['GITA_KHOA_VE', 'GITA_CONG_VE']};
 
   const x = await db.prepare('SELECT * FROM deXuatThiGiac WHERE id = ?')
