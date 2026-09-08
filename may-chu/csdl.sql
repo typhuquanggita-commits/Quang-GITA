@@ -1245,6 +1245,10 @@ CREATE TABLE IF NOT EXISTS baiNoiDung (
   tieuDe     TEXT NOT NULL,
   chu        TEXT NOT NULL,       -- toàn văn, dạng khối K01 | …
   tang       TEXT NOT NULL,       -- T1…T5
+  -- Khuôn nào: BAIHOC · QUYTRINH · CAMNANG · CHUYENSAU (bản 9.99.45).
+  -- Mặc định BAIHOC để mọi bài ghi trước bản này giữ nguyên nghĩa —
+  -- chúng đều là bài học, vì lúc ấy hệ chỉ có một khuôn.
+  khuon      TEXT NOT NULL DEFAULT 'BAIHOC',
   vanTay     TEXT NOT NULL,       -- SHA-256 rút gọn của `chu` lúc ghi
   trangThai  TEXT NOT NULL DEFAULT 'nhap',
   nguoiViet  TEXT NOT NULL,       -- uid; luật L2 đọc cột này

@@ -3600,6 +3600,103 @@ bao(maBanChep.length === 24 &&
     maBanChep.every((m, i) => m === 'K' + String(i + 1).padStart(2, '0')),
   'bản chép hai mươi bốn khối liên tục K01→K24, không thiếu không trùng');
 
+/* ── BỐN KHUÔN TÀI LIỆU ── */
+{
+  const quyTrinhDu = [
+    'P01 | Mục đích', 'Chặn chuyện phiếu thu ghi hai lần.',
+    'P02 | Phạm vi', 'Áp cho kế toán thu. KHÔNG áp cho phiếu hoàn.',
+    'P03 | Điều kiện vào', 'Có quyền ghi phiếu và có mã khách hàng.',
+    'P04 | Các bước',
+    '1. Đối chiếu mã khách — ai làm: kế toán thu — xong khi mã khớp sổ.',
+    '2. Ghi phiếu — ai làm: kế toán thu — xong khi phiếu có số.',
+    '3. Trình duyệt — ai làm: kế toán trưởng — xong khi có chữ ký.',
+    'P05 | Điểm kiểm', 'Sau bước 2: đối chiếu số tiền với sao kê.',
+    'P06 | Xử lý lệch',
+    'Lệch dưới 50 nghìn: sửa ngay tại chỗ, ghi lý do vào phiếu.',
+    'Lệch từ 50 nghìn: leo thang kế toán trưởng trong 2 giờ.',
+    'P07 | Đo lường', 'Số phiếu lệch mỗi tuần. Mục tiêu 0. Xem mỗi thứ Hai.',
+    'P08 | Phiên bản', 'Bản 1.0, ngày 08/09/2026, do phòng tài chính đặt.'
+  ].join('\n');
+  const rQT = await ndMod.soatNoiDung({chu: quyTrinhDu, tang: 'T1', khuon: 'QUYTRINH'},
+    env, env.CSDL, saR01);
+  bao(rQT.ok && rQT.khuon === 'QUYTRINH' && rQT.khoi.thieu.length === 0,
+    'khuôn QUY TRÌNH đọc theo danh sách khối RIÊNG (P01–P08), không đo bằng khuôn bài học',
+    'thiếu ' + rQT.khoi.thieu.length + '/8');
+  bao(!('xong' in rQT) && rQT.cham === null && rQT.conCho.length === 0,
+    'khuôn khác BÀI HỌC thì KHÔNG có mười điều kiện hoàn thành và KHÔNG có thang một trăm — thang hiện có neo vào khối của khuôn bài học, chấm khuôn khác bằng nó là cho một con số không nói gì');
+  bao(!rQT.cam.some(c => c.ma === 'SOP'),
+    'quy trình đủ ba thứ — ai làm, xong khi nào, hai nhánh xử lý lệch — thì không báo gì');
+
+  /* ── PHÁ: BA LUẬT RIÊNG CỦA QUY TRÌNH ── */
+  const boAi = quyTrinhDu.replace(/ — ai làm: [^—]+—/g, ' —');
+  const rAi = await ndMod.soatNoiDung({chu: boAi, tang: 'T1', khuon: 'QUYTRINH'},
+    env, env.CSDL, saR01);
+  bao(rAi.cam.some(c => c.ma === 'SOP' && /AI LÀM/.test(c.vi)),
+    'các bước không nói AI LÀM thì báo — một bước không có người chịu trách nhiệm là một bước treo, lúc có sự cố thì ai cũng tưởng người kia làm');
+  const motNhanh = quyTrinhDu.replace(
+    'Lệch từ 50 nghìn: leo thang kế toán trưởng trong 2 giờ.', '');
+  const rNhanh = await ndMod.soatNoiDung({chu: motNhanh, tang: 'T1', khuon: 'QUYTRINH'},
+    env, env.CSDL, saR01);
+  bao(rNhanh.cam.some(c => c.ma === 'SOP' && /leo thang/.test(c.vi)),
+    'xử lý lệch thiếu nhánh LEO THANG thì báo — một nhánh thôi thì hoặc mọi lỗi nhỏ đều leo lên cấp trên, hoặc mọi lỗi lớn đều bị người tại chỗ tự xử');
+
+  /* Dán NHẦM khuôn phải hiện ra, không lặng lẽ chấm theo bảng sai. */
+  const rNham = await ndMod.soatNoiDung({chu: quyTrinhDu, tang: 'T1', khuon: 'BAIHOC'},
+    env, env.CSDL, saR01);
+  bao(rNham.khoi.thieu.length === 24 && (rNham.khoi.la || []).length === 8,
+    'dán một QUY TRÌNH vào khuôn BÀI HỌC thì máy báo thiếu cả 24 khối và tám mã LẠ — mỗi khuôn một tiền tố riêng chính là để chỗ này không đi lọt',
+    'thiếu ' + rNham.khoi.thieu.length + ' · mã lạ ' + ((rNham.khoi.la || []).length));
+
+  const mauQT = await ndMod.mauBaiHoc({khuon: 'CAMNANG'}, env, env.CSDL, saR01);
+  bao(mauQT.ok && mauQT.soKhoi === 7 && mauQT.mau.indexOf('C06') >= 0,
+    'mẫu trống sinh theo ĐÚNG khuôn được chọn', mauQT.khuon + ' · ' + mauQT.soKhoi + ' khối');
+}
+
+/* ── ĐỌC MỘT BUỔI LÀM VIỆC ── */
+{
+  const buoiDu = [
+    'Coach: Trước khi bắt đầu — khi kết thúc, anh chị muốn ra về với điều gì rõ nhất?',
+    'Khách: Tôi muốn biết vì sao con cứ phải nhắc mới học.',
+    'Coach: Kể cho mình một tình huống cụ thể gần nhất — hôm nào, đang làm gì?',
+    'Khách: Tối thứ ba, 19h45, con ném vở. Tuần này 3 lần rồi.',
+    'Coach: Em thấy anh chị vẫn ngồi lại được với con sau mỗi lần — cái đó không dễ.',
+    'Coach: Để mình nghe lại — phần nào là điều anh chị chứng kiến, phần nào là suy đoán?',
+    'Khách: Chứng kiến là con ném vở.',
+    'Coach: Giờ anh chị có mấy hướng, kể cả hướng chưa làm gì?',
+    'Khách: Để con tự chọn giờ, hoặc nhắc như cũ.',
+    'Coach: Trong 24 giờ tới việc nhỏ nhất là gì, và đo bằng gì?',
+    'Khách: Tối nay không nhắc, và ghi lại số lần con tự mở sách.'
+  ].join('\n');
+  const rB = ndMod.docHoiThoai(buoiDu);
+  bao(rB.ok && !rB.thieuNhip && rB.luat.every(l => l.dat),
+    'buổi đủ sáu nhịp và đạt cả ba luật — MỞ trước, có sự việc cụ thể, kết bằng cam kết ĐO ĐƯỢC',
+    rB.soLuot + ' lượt · ' + rB.luotNghe + ' của người làm nghề');
+  bao(rB.nhip.every(n => n.lan > 0) && rB.nhip[0].ma === 'N1' && rB.nhip[5].ten === 'GIỮ',
+    'sáu nhịp neo vào G.KICHBAN_AI — N1 MỞ đến N6 GIỮ, không dựng thang nhịp thứ hai');
+
+  /* ── PHÁ: HỎI CHUYÊN MÔN TRƯỚC KHI MỞ ── */
+  const chuaMo = buoiDu.split('\n').slice(2).join('\n');
+  bao(ndMod.docHoiThoai(chuaMo).luat.find(l => l.ma === 'B1').dat === false,
+    'LUẬT B1 — hỏi chuyên môn trước khi chốt buổi này làm gì thì báo: nhà chưa biết buổi này làm gì thì họ trả lời để cho xong');
+
+  /* ── PHÁ: CHỐT MÀ KHÔNG CÓ CÁCH ĐO ── */
+  const khongDo = buoiDu.replace('Tối nay không nhắc, và ghi lại số lần con tự mở sách.',
+    'Tối nay tôi sẽ cố gắng kiên nhẫn hơn.');
+  bao(ndMod.docHoiThoai(khongDo).luat.find(l => l.ma === 'B3').dat === false,
+    'LUẬT B3 — chốt mà không có cách đo thì báo: tuần sau không ai biết nó đã xảy ra hay chưa, kể cả người hứa');
+
+  /* ── CHỈ SOI LƯỢT CỦA NGƯỜI LÀM NGHỀ ── */
+  const khachNoiBan = buoiDu.replace('Chứng kiến là con ném vở.',
+    'Chứng kiến là con lười, con hư, không nghe lời gì cả.');
+  bao(ndMod.docHoiThoai(khachNoiBan).loi.length === 0,
+    'câu dán nhãn trong lượt của KHÁCH thì KHÔNG bắt — họ đang kể chuyện nhà mình, và họ có quyền dùng đúng những từ mà nghề này học cách không dùng');
+  const ngheNoiBan = buoiDu.replace('Coach: Giờ anh chị có mấy hướng, kể cả hướng chưa làm gì?',
+    'Coach: Con lười quá, phải cố gắng hơn.');
+  bao(ndMod.docHoiThoai(ngheNoiBan).loi.length >= 2,
+    'cùng câu ấy trong lượt của NGƯỜI LÀM NGHỀ thì bắt',
+    ndMod.docHoiThoai(ngheNoiBan).loi.map(x => x.bat).join(' · '));
+}
+
 /* ── BỘ DÒ CHUYÊN GIA: CẢNH BÁO, KHÔNG CHẶN ── */
 bao(ndMod.soatChuyenGia('Con lười quá, em phải cố gắng hơn.').length === 1 &&
     ndMod.soatChuyenGia('Con lười quá, em phải cố gắng hơn.')[0].loi === 'ra lệnh',

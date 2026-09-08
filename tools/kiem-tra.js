@@ -11491,6 +11491,25 @@ const { chromium } = require(PW);
         camCg: (G.KN_CAM_CHUYENGIA || []).map(c => c.cau + '·' + c.loi),
         chuanNghe: (G.KN_CHUAN_NGHE || []).map(c => c.ma),
         khungCau: (G.KN_KHUNG_CAU || []).map(k => k.ma + '·' + k.nhip),
+        /* 9.99.45 — bốn khuôn, sáu nhịp, ba luật một buổi */
+        khuon: (G.KN_KHUON || []).map(k => k.ma + '·' + k.tienTo + '·' +
+          ((k.khoi && k.khoi.length) || k.soKhoi || 0)),
+        khuonKhoi: (G.KN_KHUON || []).reduce((r, k) => {
+          r[k.ma] = (k.khoi || []).map(x => x.ma); return r; }, {}),
+        nhip: (G.KN_NHIP || []).map(n => n.ma + ' ' + n.ten),
+        luatBuoi: (G.KN_HOITHOAI_LUAT || []).map(l => l.ma),
+        /* Tên nhịp trong KICHBAN_AI — nguồn GỐC. Bảng KN_NHIP và bảng
+           KN_KHUNG_CAU đều phải gọi đúng những cái tên này. */
+        nhipGoc: (() => {
+          const t = new Set();
+          ((G.KICHBAN_AI || {}).yDinh || []).forEach(y => {
+            if (y.nhip && /^N[1-6] /.test(y.nhip)) t.add(y.nhip); });
+          return Array.from(t).sort();
+        })(),
+        /* Mọi khối của mọi khuôn phải khai câu hỏi nó trả lời. */
+        khuonThieuHoi: (G.KN_KHUON || []).reduce((r, k) => {
+          (k.khoi || []).forEach(x => { if (!x.hoi || x.hoi.length < 10) r.push(k.ma + '/' + x.ma); });
+          return r; }, []),
         /* Mỗi lĩnh vực phải khai ĐỦ BA Ô. Thiếu ô nào là mất đúng chỗ
            phân biệt nguồn ngoài với nội dung đã duyệt của Học viện. */
         ngheThieuO: (G.KN_CHUAN_NGHE || [])
@@ -11574,6 +11593,40 @@ const { chromium } = require(PW);
     if (kho.khungLacNhip.length)
       lech.push('khung câu không neo vào nhịp N1–N6: ' + kho.khungLacNhip.join(', '));
 
+    /* ── BỐN KHUÔN ──
+       Máy chủ giữ bản chép; đối chiếu TỪNG MÃ KHỐI của từng khuôn. Lệch
+       một mã là một tệp dán đúng khuôn vẫn bị báo thiếu khối, hoặc tệ
+       hơn: bị chấm theo bảng của khuôn khác. */
+    if (bc.KHUON) {
+      const maMayChu = Object.keys(bc.KHUON).sort();
+      soDay(maMayChu, kho.khuon.map(x => x.split('·')[0]).sort(), 'bốn mã khuôn');
+      maMayChu.forEach(ma => {
+        if (ma === 'BAIHOC') return;   /* khuôn gốc đối chiếu ở bảng KHOI trên */
+        soDay(bc.KHUON[ma].khoi.map(k => k[0]), kho.khuonKhoi[ma] || [],
+          'khối của khuôn ' + ma);
+      });
+    }
+    if (kho.khuonThieuHoi.length)
+      lech.push('khối không khai câu hỏi: ' + kho.khuonThieuHoi.join(', '));
+
+    /* ── SÁU NHỊP: TÊN PHẢI KHỚP NGUỒN GỐC, KHÔNG CHỈ KHỚP HÌNH DẠNG ──
+       Bản 9.99.44 tôi gõ "N6 CHỐT" trong khi nhịp thật tên là "N6 GIỮ".
+       Phép đo lúc ấy chỉ soi dạng /^N[1-6] / nên nó xanh, và cái tên
+       sai đi qua. Một phép đo soi HÌNH DẠNG bắt được lỗi gõ nhầm chữ
+       số, không bắt được lỗi gõ nhầm CHỮ. */
+    if (kho.nhipGoc.length) {
+      const tenNhip = new Set(kho.nhipGoc);
+      kho.nhip.forEach(n => {
+        if (!tenNhip.has(n)) lech.push('nhịp "' + n + '" không có trong KICHBAN_AI');
+      });
+      kho.khungCau.forEach(k => {
+        const nh = k.split('·')[1];
+        if (nh && !tenNhip.has(nh)) lech.push('khung câu neo vào nhịp lạ: ' + nh);
+      });
+    }
+    soDay(mND.BAN_CHEP_BUOI.NHIP.map(n => n[0] + ' ' + n[1]), kho.nhip, 'sáu nhịp');
+    if (kho.luatBuoi.join(',') !== 'B1,B2,B3') lech.push('ba luật của một buổi');
+
     ra.ndLech = lech;
     ra.ndKhop = lech.length === 0;
     ra.ndDuKho = kho.maVb === 'KN-HP-01' && kho.cam.length === 10 &&
@@ -11604,7 +11657,16 @@ const { chromium } = require(PW);
                   /* Bộ dò chuyên gia mang theo NGƯỜI NHẬN: một luật về
                      máy không bị bắt, một câu về đứa trẻ thì bắt. */
                   mND.soatChuyenGia('Máy KHÔNG BAO GIỜ ghi đè.').length === 0 &&
-                  mND.soatChuyenGia('Con không bao giờ tự giác.').length === 1;
+                  mND.soatChuyenGia('Con không bao giờ tự giác.').length === 1 &&
+                  /* Bộ đọc buổi: cam kết là của KHÁCH, không phải của
+                     người hỏi. Một câu hỏi về cách đo không phải một
+                     cam kết có cách đo. */
+                  mND.docHoiThoai('Coach: 24 giờ tới đo bằng gì?\n' +
+                    'Khách: Tôi sẽ cố gắng kiên nhẫn hơn.')
+                    .luat.find(l => l.ma === 'B3').dat === false &&
+                  mND.docHoiThoai('Coach: 24 giờ tới đo bằng gì?\n' +
+                    'Khách: Tôi ghi lại số lần con tự mở sách.')
+                    .luat.find(l => l.ma === 'B3').dat === true;
 
     bao(ra.ndKhop && ra.ndDuKho && ra.ndKhoiDay && ra.ndCongDu && ra.ndDoThat,
       'HIẾN PHÁP NỘI DUNG: BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP TỪNG Ô VỚI BẢN GỐC TRONG KHO, VÀ MÁY PHẢI KHÔNG CỘNG RA TỔNG KHI CÒN CHIỀU CHƯA AI CHẤM. Bản đặc tả MASTER AI của chủ hệ để AI tự chấm cả mười chiều rồi ra một con số trên trăm. Bốn chiều trong đó — chiều sâu, cá nhân hoá, dùng lại được, và phần có giá trị của chìa khoá kim cương — không có dữ liệu nào để đo, nên máy chấm chúng là máy ĐOÁN; và một con số đoán nằm cạnh sáu con số đo thì cả bảy đều được tin như nhau. Nên máy chỉ được chấm 60 điểm và phải NÓI RA 40 điểm còn chờ người — cùng luật với L-02 của bảng lương. Phép đo này cộng lại hai nửa và đòi đúng 100: lệch nghĩa là có một chiều bị tính hai lần hoặc không ai tính. Máy chủ không đọc được kho đã mã hoá nên phải giữ bản chép của hai mươi bốn khối, mười chiều, bảng câu rỗng và bảng thay lời; phép đo đối chiếu TỪNG Ô chứ không đếm số, vì hai bảng cùng dài mà lệch nội dung thì đếm số vẫn xanh. Chỗ nguy nhất là ô TRẦN MÁY: lệch một điểm ở đó không làm sai phép đo nào, nó chỉ làm máy cho nhiều điểm hơn phần nó thật sự đo được. Và phép đo gọi thẳng ba bộ dò rồi đòi chúng phân biệt câu dán nhãn với câu sạch',

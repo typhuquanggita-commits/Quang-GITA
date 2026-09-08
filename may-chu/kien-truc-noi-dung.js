@@ -90,6 +90,35 @@ const KHOI = [
 ];
 const MA_KHOI = KHOI.map(k => k[0]);
 
+/* ══ BỐN KHUÔN — bản 9.99.45 ══
+
+   Tới 9.99.44 hệ có ĐÚNG MỘT khuôn. Một quy trình vận hành nhét vào
+   khuôn bài học thì phải điền "Chìa khoá kim cương" cho một cái quy
+   trình, và người viết điền cho có. Khuôn sai loại tệ hơn không khuôn:
+   nó bắt người ta gõ chữ vào chỗ không có gì để nói, rồi cả bảng kiểm
+   mất tin.
+
+   Mỗi khuôn một tiền tố mã riêng, để một tệp tự nói ra nó theo khuôn
+   nào. Cả bốn cùng dùng K01 thì một bản dán nhầm khuôn vẫn đọc trôi,
+   và máy chấm nó theo bảng sai. */
+const KHUON = {
+  BAIHOC: {ten: 'Bài học', tienTo: 'K', khoi: KHOI},
+  QUYTRINH: {ten: 'Quy trình', tienTo: 'P', khoi: [
+    ['P01', 'Mục đích'], ['P02', 'Phạm vi'], ['P03', 'Điều kiện vào'],
+    ['P04', 'Các bước', ['P05', 'P06']], ['P05', 'Điểm kiểm'],
+    ['P06', 'Xử lý lệch'], ['P07', 'Đo lường'], ['P08', 'Phiên bản']]},
+  CAMNANG: {ten: 'Cẩm nang', tienTo: 'C', khoi: [
+    ['C01', 'Triết lý một đoạn'], ['C02', 'Nguyên tắc nền', ['C03']],
+    ['C03', 'Bộ công cụ'], ['C04', 'Tình huống điển hình'],
+    ['C05', 'Lỗi thường gặp'], ['C06', 'Bảng tra nhanh'], ['C07', 'Nguồn']]},
+  CHUYENSAU: {ten: 'Tài liệu chuyên sâu', tienTo: 'S', khoi: [
+    ['S01', 'Câu hỏi trung tâm'], ['S02', 'Chỗ người ta hiểu nhầm'],
+    ['S03', 'Bản chất'], ['S04', 'Bằng chứng', ['S08']],
+    ['S05', 'Khung tư duy'], ['S06', 'Áp vào thực hành'],
+    ['S07', 'Câu hỏi tự vấn'], ['S08', 'Ranh giới hiểu biết']]}
+};
+const khuonCua = ma => KHUON[String(ma || 'BAIHOC').toUpperCase()] || KHUON.BAIHOC;
+
 /* Mười chiều. `ai`: máy chấm · cả hai · người chấm. `tran` là trần
    máy được phép cho ở chiều "cả hai". */
 const DIEM = [
@@ -201,9 +230,13 @@ const boDau = s => String(s || '').toLowerCase()
    phải trùng tên trong hiến pháp. Bắt trùng tên là bắt người viết gõ
    lại đúng dấu tiếng Việt của hai mươi bốn cái tên, và họ sẽ chép
    dán, và bản chép dán sẽ lệch khi tên đổi. */
-const RE_MO = /^[ \t]*(K\d{2})[ \t]*\|(.*)$/;
+/* Bốn tiền tố, một biểu thức. Nhận cả mã của khuôn KHÁC để còn báo
+   được "bản này dán nhầm khuôn" thay vì lặng lẽ bỏ qua. */
+const RE_MO = /^[ \t]*([KPCS]\d{2})[ \t]*\|(.*)$/;
 
-export function docKhoi(chu) {
+export function docKhoi(chu, maKhuon) {
+  const kh = khuonCua(maKhuon);
+  const MA_KHOI = kh.khoi.map(k => k[0]);
   const dong = String(chu || '').split('\n');
   const khoi = {}, la = [], trung = [];
   let dang = null, gom = [];
@@ -220,6 +253,7 @@ export function docKhoi(chu) {
     chot();
     const ma = m[1];
     if (MA_KHOI.indexOf(ma) < 0) { la.push(ma); dang = null; gom = []; return; }
+
     if (Object.prototype.hasOwnProperty.call(khoi, ma)) trung.push(ma);
     dang = ma; gom = [];
   });
@@ -250,13 +284,14 @@ export function docKhoi(chu) {
    Đây là chỗ chín trong mười luật chống nội dung rỗng thành PHÉP ĐO.
    "Bài tập không có sản phẩm" là một câu ai cũng gật; K14 đòi K15 là
    một thứ máy chỉ ra được ở đúng dòng nào. */
-export function soatDoi(coKhoi) {
+export function soatDoi(coKhoi, maKhuon) {
   const pham = [];
-  KHOI.forEach(([ma, ten, doi]) => {
+  const dsKhoi = khuonCua(maKhuon).khoi;
+  dsKhoi.forEach(([ma, ten, doi]) => {
     if (!doi || !coKhoi[ma]) return;
     doi.forEach(can => {
       if (coKhoi[can]) return;
-      const tenCan = (KHOI.find(k => k[0] === can) || [])[1] || can;
+      const tenCan = (dsKhoi.find(k => k[0] === can) || [])[1] || can;
       pham.push({khoi: ma, ten, can, tenCan});
     });
   });
@@ -457,25 +492,61 @@ export async function soatNoiDung(y, env, db, hoSo) {
       vi: 'Bài quá ngắn để soát. Cần ít nhất 40 ký tự.'};
 
   const tang = String(y.tang || '');
-  const doc  = docKhoi(chu);
-  const doi  = soatDoi(doc.khoi);
+  const maKhuon = String(y.khuon || 'BAIHOC').toUpperCase();
+  const kh = khuonCua(maKhuon);
+  const doc  = docKhoi(chu, maKhuon);
+  const doi  = soatDoi(doc.khoi, maKhuon);
   const rong = soatRong(chu);
   const loi  = soatLoiNoi(chu);
   const dai  = soatCauDai(chu);
   const ngu  = soatNguon(chu);
   const cg   = soatChuyenGia(chu);
-  const xong = soatXong(doc.khoi);
-  const cham = chamMay({tang, chu}, doc, doi, rong, loi, dai, ngu);
+  /* Mười điều kiện hoàn thành là thang đo của NGƯỜI HỌC, nên nó chỉ có
+     nghĩa với khuôn BÀI HỌC. Một quy trình vận hành không có "người
+     học", và đo nó bằng thang ấy là đo sai loại — cùng lớp sai với
+     việc bắt một quy trình điền Chìa khoá kim cương. */
+  const xong = maKhuon === 'BAIHOC' ? soatXong(doc.khoi) : null;
+  /* Thang một trăm cũng vậy: sáu chiều máy chấm đều neo vào khối của
+     khuôn bài học (K12·K13 cho "dùng được ngay", K16·K18 cho "đo
+     được"…). Chấm một cẩm nang bằng thang ấy thì mọi chiều về 0 và con
+     số ấy không nói gì. Ba khuôn kia CHƯA có thang riêng — máy nói
+     thẳng là chưa có, chứ không cho một con số sai. */
+  const cham = maKhuon === 'BAIHOC'
+    ? chamMay({tang, chu}, doc, doi, rong, loi, dai, ngu) : null;
 
   /* Điểm máy: cộng đúng phần máy chấm. KHÔNG cộng ra tổng trên trăm —
      bốn chiều còn trống, và một tổng có ô trống trông y hệt một tổng
      đã đủ. Trả về `tranMay` để người đọc biết tối đa máy cho được bao
      nhiêu, và `conCho` liệt kê ai còn phải chấm gì. */
   let duoc = 0, tranMay = 0;
-  Object.keys(cham).forEach(q => { duoc += cham[q].duoc; tranMay += cham[q].tran; });
-  const conCho = DIEM.filter(d => d.ai !== 'may')
+  if (cham) Object.keys(cham).forEach(q => { duoc += cham[q].duoc; tranMay += cham[q].tran; });
+  const conCho = cham ? DIEM.filter(d => d.ai !== 'may')
     .map(d => ({ma: d.ma, ten: d.ten,
-      con: d.ai === 'nguoi' ? d.trong : d.trong - (d.tran || 0)}));
+      con: d.ai === 'nguoi' ? d.trong : d.trong - (d.tran || 0)})) : [];
+
+  /* ══ LUẬT RIÊNG CỦA KHUÔN QUY TRÌNH ══
+     Ba thứ đếm được, và cả ba là chỗ một quy trình chết khi có sự cố.
+     Đây KHÔNG phải khối thiếu — khối P04 có mặt vẫn có thể là tám bước
+     không ai chịu trách nhiệm. */
+  const soatSop = [];
+  if (maKhuon === 'QUYTRINH') {
+    const buoc = String(doc.khoi.P04 || '');
+    const soBuoc = (buoc.match(/^\s*(?:\d+[.).]|[-·•])/gm) || []).length;
+    const coAi = /\b(ai làm|người làm|do\s|phụ trách)\b/i.test(buoc);
+    const coXong = /\b(xong khi|đạt khi|hoàn thành khi|tiêu chí)\b/i.test(buoc);
+    if (soBuoc && !coAi) soatSop.push(
+      'Các bước không nói AI LÀM. Một bước không có người chịu trách nhiệm là ' +
+      'một bước treo — lúc có sự cố thì ai cũng tưởng người kia làm.');
+    if (soBuoc && !coXong) soatSop.push(
+      'Các bước không nói XONG KHI NÀO. Không có tiêu chí thì "xong" do người ' +
+      'làm tự quyết, và mỗi người quyết một kiểu.');
+    const lech = String(doc.khoi.P06 || '');
+    const duHaiNhanh = /sửa/i.test(lech) && /(leo thang|chuyển lên|báo cấp)/i.test(lech);
+    if (doc.khoi.P06 && !duHaiNhanh) soatSop.push(
+      'Xử lý lệch thiếu một trong hai nhánh (sửa ngay · leo thang). Một nhánh ' +
+      'thôi thì hoặc mọi lỗi nhỏ đều leo lên cấp trên, hoặc mọi lỗi lớn đều bị ' +
+      'người tại chỗ tự xử.');
+  }
 
   const camPham = [];
   if (doi.length) doi.forEach(p => camPham.push({
@@ -500,14 +571,173 @@ export async function soatNoiDung(y, env, db, hoSo) {
     chiTiet: 'thiếu ' + doc.thieu.length + '/24 khối · máy cho ' +
              duoc + '/' + tranMay});
 
-  const kq = {ok: true, tang, khoi: doc, doi, rong, loi, chuyenGia: cg, cauDai: dai, nguon: ngu,
-    xong, cham, diemMay: duoc, tranMay, conCho, cam: camPham,
-    vi: 'Máy chấm được ' + tranMay + '/100 điểm và cho ' + duoc + '. ' +
-        'Bốn chiều còn lại — chiều sâu, cá nhân hoá, dùng lại được, và phần ' +
+  if (soatSop.length) soatSop.forEach(v => camPham.push({ma: 'SOP', vi: v}));
+
+  const kq = {ok: true, tang, khuon: maKhuon, tenKhuon: kh.ten,
+    khoi: doc, doi, rong, loi, chuyenGia: cg, cauDai: dai, nguon: ngu,
+    cham, diemMay: duoc, tranMay, conCho, cam: camPham,
+    vi: (cham ? 'Máy chấm được ' + tranMay + '/100 điểm và cho ' + duoc + '. ' :
+      'Khuôn ' + kh.ten + ' CHƯA có thang một trăm riêng — thang hiện có neo vào ' +
+      'khối của khuôn bài học, nên chấm khuôn khác bằng nó là cho một con số ' +
+      'không nói gì. Máy đo cấu trúc và ngôn ngữ, và nói thẳng phần chưa có. ') +
+        (cham ? 'Bốn chiều còn lại — chiều sâu, cá nhân hoá, dùng lại được, và phần ' +
         'có giá trị của chìa khoá kim cương — máy KHÔNG chấm và KHÔNG đoán. ' +
-        'Bài chưa có tổng điểm cho tới khi có người chấm chúng.'};
+        'Bài chưa có tổng điểm cho tới khi có người chấm chúng.' : '')};
+  if (xong) kq.xong = xong;
   return kq;
 }
+
+/* ═══════════════ ĐỌC MỘT BUỔI LÀM VIỆC ═══════════════
+
+   Chốt của chủ hệ bản 9.99.45: "năng lực thấu hiểu hội thoại tương tác
+   giữa khách hàng với các bộ phận."
+
+   ══ NEO VÀO SÁU NHỊP ĐÃ CÓ ══
+
+   G.KICHBAN_AI đã khai N1 MỞ → N6 GIỮ và đang được dùng. Bản đặc tả
+   bên ngoài đề nghị năm "phóng đoạn" riêng; dựng thêm là dựng hai
+   thang nhịp, rồi hai bộ phận nói hai thứ tiếng về cùng một buổi.
+
+   ══ MÁY ĐẾM, MÁY KHÔNG CHẤM NGƯỜI ══
+
+   Nó đếm ba thứ: buổi đi qua nhịp nào · lượt nào của người làm nghề
+   rơi vào bảng thay lời · cuối buổi có cam kết đo được không.
+
+   Nó KHÔNG kết luận buổi ấy tốt hay không. Một buổi đủ sáu nhịp vẫn có
+   thể hỏng, và một buổi thiếu N3 vẫn có thể đúng — có ca chỉ cần nghe.
+   Đưa số cho người đọc là đủ; kết luận hộ là vượt quyền. */
+
+const NHIP = [
+  ['N1', 'MỞ', ['trước khi bắt đầu', 'hôm nay mình', 'anh chị muốn',
+                'ra về với', 'buổi này', 'mình bắt đầu']],
+  ['N2', 'NGHE', ['kể cho', 'cụ thể', 'hôm nào', 'lần thứ mấy', 'lúc đó',
+                  'đã thử', 'ngay trước']],
+  ['N3', 'CÔNG NHẬN', ['em thấy anh chị', 'điều đang chạy được', 'giữ được',
+                       'không dễ', 'đã cố']],
+  ['N4', 'LÀM RÕ', ['mình nghe lại', 'nghe sai chỗ nào', 'phần nào là',
+                    'chứng kiến', 'suy đoán', 'ý anh chị là']],
+  ['N5', 'DẪN ĐƯỜNG', ['có mấy hướng', 'hướng nào', 'nếu chọn', 'đổi gì',
+                       'giữ gì', 'chưa làm gì']],
+  ['N6', 'GIỮ', ['24 giờ', 'nhỏ nhất', 'đo bằng', 'ghi lại', 'cuối tuần',
+                 'gặp lại', 'nhìn lại']]
+];
+
+/* Ai đang nói. Dạng bản ghi: mỗi dòng "Người: câu". Nhận cả tiếng gọi
+   khác nhau vì mỗi bộ phận gọi mình một kiểu, và bắt gõ đúng một từ là
+   bắt người ta sửa bản ghi cho vừa cái máy. */
+const LA_NGHE = /^\s*(coach|tư vấn|tu van|mình|em|giáo viên|cskh|hỗ trợ|đồng hành)\s*:/i;
+const LA_KHACH = /^\s*(khách|khach|phụ huynh|ph|học viên|hs|con|mẹ|bố|anh|chị)\s*:/i;
+
+/* Cam kết ĐO ĐƯỢC: phải có một con số, hoặc một từ chỉ cách ghi nhận.
+   Không có thì tuần sau không ai biết nó đã xảy ra hay chưa. */
+const CO_DO = /\d|\b(ghi lại|đánh dấu|số lần|đếm|chụp lại|tích vào)\b/i;
+
+export function docHoiThoai(chu) {
+  const dong = String(chu || '').split('\n')
+    .map(d => d.trim()).filter(d => d.length > 0);
+  const luot = [];
+  dong.forEach((d, i) => {
+    const nghe = LA_NGHE.test(d), khach = LA_KHACH.test(d);
+    const noi = d.replace(/^[^:]{1,14}:\s*/, '');
+    luot.push({so: i + 1, ai: nghe ? 'nghe' : (khach ? 'khach' : 'khongRo'),
+      chu: noi});
+  });
+
+  const nhipCo = {}, viTri = {};
+  luot.forEach(l => {
+    if (l.ai !== 'nghe') return;
+    const t = boDau(l.chu);
+    NHIP.forEach(([ma, ten, dau]) => {
+      if (!dau.some(k => t.indexOf(boDau(k)) >= 0)) return;
+      nhipCo[ma] = (nhipCo[ma] || 0) + 1;
+      if (viTri[ma] === undefined) viTri[ma] = l.so;
+      l.nhip = l.nhip || ma;
+    });
+  });
+
+  /* Ngôn từ: CHỈ soi lượt của người làm nghề. Soi cả lượt của khách là
+     chấm khách — họ đang kể chuyện nhà mình, và họ có quyền dùng đúng
+     những từ mà nghề này học cách không dùng. */
+  const loi = [];
+  luot.forEach(l => {
+    if (l.ai !== 'nghe') return;
+    doBang(l.chu, LOI_THAY, true).forEach(x =>
+      loi.push({luot: l.so, bat: x.bat, thay: x.thay, vi: x.vi}));
+  });
+  const cg = [];
+  luot.forEach(l => {
+    if (l.ai !== 'nghe') return;
+    soatChuyenGia(l.chu).forEach(x => cg.push({luot: l.so, bat: x.bat, loi: x.loi}));
+  });
+
+  /* Ba luật, cả ba đếm được. */
+  const luotNghe = luot.filter(l => l.ai === 'nghe');
+  /* ── CAM KẾT LÀ CỦA KHÁCH, KHÔNG PHẢI CỦA NGƯỜI HỎI ──
+     Bản đầu tôi dò cách đo trong ba lượt cuối của NGƯỜI LÀM NGHỀ. Câu
+     "trong 24 giờ tới, đo bằng gì?" có chữ số nên nó luôn khớp — và
+     luật B3 xanh ở mọi buổi, kể cả buổi khách hứa "tôi sẽ cố gắng kiên
+     nhẫn hơn". Bộ thử bắt ngay.
+     Một câu HỎI về cách đo không phải một cam kết có cách đo. Nên dò
+     trong đuôi buổi, ở lượt của KHÁCH. */
+  const duoi = luot.slice(-4);
+  const cuoiKhach = duoi.filter(l => l.ai === 'khach').map(l => l.chu).join(' ');
+  const luat = [
+    {ma: 'B1', luat: 'Buổi phải MỞ trước khi hỏi chuyên môn',
+     dat: viTri.N1 !== undefined &&
+       (viTri.N2 === undefined || viTri.N1 <= viTri.N2),
+     vi: viTri.N1 === undefined ? 'Không lượt nào mang dấu hiệu nhịp N1 MỞ.'
+       : (viTri.N2 !== undefined && viTri.N1 > viTri.N2
+         ? 'Nhịp N2 đến TRƯỚC N1 — hỏi chuyên môn trước khi chốt buổi này làm gì.'
+         : 'Mở ở lượt ' + viTri.N1 + '.')},
+    {ma: 'B2', luat: 'Phải có ít nhất một SỰ VIỆC cụ thể',
+     dat: (nhipCo.N2 || 0) > 0 && luot.some(l => l.ai === 'khach' && CO_DO.test(l.chu)),
+     vi: (nhipCo.N2 || 0) === 0 ? 'Không lượt nào của người làm nghề hỏi sự việc cụ thể.'
+       : 'Có hỏi sự việc; và khách có trả lời kèm số hoặc mốc thì mới tính là thu được.'},
+    {ma: 'B3', luat: 'Phải kết bằng một CAM KẾT ĐO ĐƯỢC',
+     dat: (nhipCo.N6 || 0) > 0 && CO_DO.test(cuoiKhach),
+     vi: (nhipCo.N6 || 0) === 0 ? 'Người làm nghề không chốt — không lượt nào mang dấu hiệu nhịp N6 GIỮ.'
+       : (CO_DO.test(cuoiKhach) ? 'Khách chốt một việc kèm cách đo.'
+         : 'Người làm nghề CÓ hỏi chốt, nhưng khách không nói ra cách đo. Một câu ' +
+           'hỏi về cách đo không phải một cam kết có cách đo — tuần sau không ai ' +
+           'biết nó đã xảy ra hay chưa, kể cả người hứa.')}
+  ];
+
+  const thieuNhip = NHIP.filter(([ma]) => !nhipCo[ma])
+    .map(([ma, ten]) => ma + ' ' + ten);
+
+  const kq = {ok: true,
+    soLuot: luot.length,
+    luotNghe: luotNghe.length,
+    luotKhach: luot.filter(l => l.ai === 'khach').length,
+    khongRo: luot.filter(l => l.ai === 'khongRo').length,
+    nhip: NHIP.map(([ma, ten]) => ({ma, ten, lan: nhipCo[ma] || 0,
+      luotDau: viTri[ma]})),
+    luat, loi, chuyenGia: cg,
+    vi: 'Máy ĐẾM: buổi đi qua nhịp nào, lượt nào của người làm nghề rơi vào ' +
+        'bảng thay lời, và cuối buổi có cam kết đo được không. Nó KHÔNG kết ' +
+        'luận buổi này tốt hay không — một buổi đủ sáu nhịp vẫn có thể hỏng, ' +
+        'và một buổi thiếu N3 vẫn có thể đúng.'};
+  /* Trường không áp dụng thì bỏ hẳn khoá. */
+  if (thieuNhip.length) kq.thieuNhip = thieuNhip;
+  return kq;
+}
+
+export async function docBuoi(y, env, db, hoSo) {
+  if (!duocVao(hoSo))
+    return {ok: false, error: 'KHONGQUYEN',
+      vi: 'Cổng nội dung dành cho người của Học viện từ cấp R05 trở lên.'};
+  const chu = String(y.chu || '');
+  if (chu.trim().length < 60)
+    return {ok: false, error: 'QUANGAN',
+      vi: 'Bản ghi quá ngắn để đọc. Mỗi dòng một lượt, dạng "Coach: …" / "Khách: …".'};
+  const kq = docHoiThoai(chu);
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
+    viec: 'docBuoi', doiTuong: String(y.maBuoi || '(không mã)'),
+    chiTiet: kq.soLuot + ' lượt · ' + kq.luat.filter(l => l.dat).length + '/3 luật đạt'});
+  return kq;
+}
+
+export const BAN_CHEP_BUOI = {NHIP, CO_DO: String(CO_DO)};
 
 /* Mẫu một bài đủ hai mươi bốn khối. Có mẫu thì không ai phải nhớ hai
    mươi bốn mã, và dấu mở khối không bị gõ sai — chỗ hỏng im lặng nhất
@@ -516,8 +746,9 @@ export async function mauBaiHoc(y, env, db, hoSo) {
   if (!duocVao(hoSo))
     return {ok: false, error: 'KHONGQUYEN',
       vi: 'Cổng nội dung dành cho người của Học viện từ cấp R05 trở lên.'};
-  const mau = KHOI.map(([ma, ten]) => ma + ' | ' + ten + '\n').join('\n');
-  return {ok: true, mau, soKhoi: KHOI.length,
+  const kh = khuonCua(y && y.khuon);
+  const mau = kh.khoi.map(([ma, ten]) => ma + ' | ' + ten + '\n').join('\n');
+  return {ok: true, mau, khuon: kh.ten, soKhoi: kh.khoi.length,
     vi: 'Mỗi khối mở bằng một dòng dạng `K01 |`. Chữ sau dấu gạch đứng ' +
         'là tên khối, gõ thế nào cũng được — máy đọc theo MÃ. Khối để ' +
         'trống dưới 8 ký tự tính là thiếu.'};
@@ -527,7 +758,7 @@ export async function mauBaiHoc(y, env, db, hoSo) {
    hàm này thì phép đối chiếu phải đọc mã nguồn bằng biểu thức, và một
    phép đo đọc mã nguồn thì hỏng lặng lẽ khi ai đó xuống dòng khác đi. */
 export const BAN_CHEP = {KHOI, DIEM, BAC_DIEM, RONG, LOI_THAY, NHAN_NGUON,
-  CAU_DAI, CAM_CHUYENGIA};
+  CAU_DAI, CAM_CHUYENGIA, KHUON};
 
 /* ═══════════════════════════════════════════════════════════════
    THANG NĂM CỔNG — bản 9.99.42
@@ -614,9 +845,11 @@ export async function napBai(y, env, db, hoSo) {
 
   if (!cu) {
     await db.prepare(
-      'INSERT INTO baiNoiDung (id,tieuDe,chu,tang,vanTay,trangThai,nguoiViet,vietLuc) ' +
-      'VALUES (?,?,?,?,?,?,?,?)')
-      .bind(id, tieuDe, chu, String(y.tang || 'T1'), vt, 'nhap', hoSo.uid, luc).run();
+      'INSERT INTO baiNoiDung (id,tieuDe,chu,tang,khuon,vanTay,trangThai,nguoiViet,vietLuc) ' +
+      'VALUES (?,?,?,?,?,?,?,?,?)')
+      .bind(id, tieuDe, chu, String(y.tang || 'T1'),
+        khuonCua(y.khuon) === KHUON.BAIHOC ? 'BAIHOC' : String(y.khuon).toUpperCase(),
+        vt, 'nhap', hoSo.uid, luc).run();
     await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
       viec: 'napBai', doiTuong: id, chiTiet: 'bài mới · ' + tieuDe});
     return {ok: true, id, trangThai: 'nhap', vanTay: vt};
@@ -644,9 +877,10 @@ export async function napBai(y, env, db, hoSo) {
   const coKy = ((soKyCu && soKyCu.n) || 0) > 0;
 
   await db.prepare(
-    'UPDATE baiNoiDung SET tieuDe = ?, chu = ?, tang = ?, vanTay = ?, ' +
+    'UPDATE baiNoiDung SET tieuDe = ?, chu = ?, tang = ?, khuon = ?, vanTay = ?, ' +
     'trangThai = ?, vaoCongLuc = NULL, soatMay = NULL WHERE id = ?')
-    .bind(tieuDe, chu, String(y.tang || cu.tang), vt,
+    .bind(tieuDe, chu, String(y.tang || cu.tang),
+      y.khuon ? String(y.khuon).toUpperCase() : (cu.khuon || 'BAIHOC'), vt,
       doiChu ? 'nhap' : cu.trangThai, id).run();
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
@@ -675,7 +909,8 @@ export async function nopBai(y, env, db, hoSo) {
     return {ok: false, error: 'SAIBAC',
       vi: 'Bài đang ở bậc "' + bai.trangThai + '", không phải bản nháp.'};
 
-  const soat = await soatNoiDung({chu: bai.chu, tang: bai.tang}, env, db, hoSo);
+  const soat = await soatNoiDung(
+    {chu: bai.chu, tang: bai.tang, khuon: bai.khuon || 'BAIHOC'}, env, db, hoSo);
   if (!soat.ok) return soat;
 
   /* Máy chặn bằng SỐ. Hai điều kiện, cả hai đếm được:

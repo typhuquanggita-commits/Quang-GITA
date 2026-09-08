@@ -41,6 +41,8 @@ G.THUOC_CAP_PHEP = [
   'KN_CONG','KN_LUAT_THANG','KN_SLA','KN_QUYEN','KN_TRANGTHAI',
   /* v9.99.44 — tiêu chuẩn nghề */
   'KN_CHUAN_NGHE','KN_CAM_CHUYENGIA','KN_KHUNG_CAU',
+  /* v9.99.45 — bốn khuôn và bộ đọc buổi */
+  'KN_KHUON','KN_NHIP','KN_HOITHOAI_LUAT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

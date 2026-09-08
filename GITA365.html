@@ -2124,7 +2124,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.44',
+  version: '9.99.45',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -5656,6 +5656,8 @@ G.THUOC_CAP_PHEP = [
   'KN_CONG','KN_LUAT_THANG','KN_SLA','KN_QUYEN','KN_TRANGTHAI',
   /* v9.99.44 — tiêu chuẩn nghề */
   'KN_CHUAN_NGHE','KN_CAM_CHUYENGIA','KN_KHUNG_CAU',
+  /* v9.99.45 — bốn khuôn và bộ đọc buổi */
+  'KN_KHUON','KN_NHIP','KN_HOITHOAI_LUAT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -40057,6 +40059,7 @@ G.VIEWS = G.VIEWS || {};
 
   var NGAN = [
     {ma: 'soan',     ten: 'Soạn',      ic: 'plus'},
+    {ma: 'buoi',     ten: 'Đọc buổi',  ic: 'users'},
     {ma: 'thang',    ten: 'Thang',     ic: 'shield'},
     {ma: 'kho',      ten: 'Kho bài',   ic: 'vault'},
     {ma: 'toanhe',   ten: 'Đọc toàn hệ', ic: 'search'},
@@ -40066,7 +40069,7 @@ G.VIEWS = G.VIEWS || {};
   ];
 
   G.bsNgan = G.bsNgan || 'soan';
-  G.bsD = G.bsD || {chu: '', tieuDe: '', tang: 'T1', id: ''};
+  G.bsD = G.bsD || {chu: '', tieuDe: '', tang: 'T1', id: '', khuon: 'BAIHOC'};
 
   /* Màu của từng bậc — lấy từ biến CSS, không gõ mã màu. Biến CSS đã
      tính sẵn cả nền sáng lẫn nền tối; một mã hex thì đúng ở một nền và
@@ -40160,10 +40163,19 @@ G.VIEWS = G.VIEWS || {};
     return (ds || []).filter(function (x) { return !x.laBang; });
   }
 
-  var RE_MO = /^[ \t]*(K\d{2})[ \t]*\|(.*)$/;
+  var RE_MO = /^[ \t]*([KPCS]\d{2})[ \t]*\|(.*)$/;
 
-  function docKhoi(chu) {
-    var maKhoi = (G.KN_KHOI || []).map(function (k) { return k.ma; });
+  /* Danh sách khối của khuôn đang chọn. Khuôn BÀI HỌC trỏ về G.KN_KHOI —
+     nó là khuôn gốc và khai riêng; ba khuôn kia khai khối inline trong
+     G.KN_KHUON. Đọc từ kho cả hai chỗ, không chép. */
+  function dsKhoiCua(maKhuon) {
+    var k = (G.KN_KHUON || []).filter(function (x) {
+      return x.ma === String(maKhuon || 'BAIHOC').toUpperCase(); })[0];
+    if (!k) return G.KN_KHOI || [];
+    return k.khoi && k.khoi.length ? k.khoi : (G.KN_KHOI || []);
+  }
+  function docKhoi(chu, maKhuon) {
+    var maKhoi = dsKhoiCua(maKhuon).map(function (k) { return k.ma; });
     var dong = String(chu || '').split('\n');
     var thoi = {}, dang = null, gom = [];
     function chot() {
@@ -40186,13 +40198,13 @@ G.VIEWS = G.VIEWS || {};
     return {khoi: co, thieu: maKhoi.filter(function (m) { return !co[m]; }), trong: trong};
   }
 
-  function soatDoi(co) {
-    var pham = [];
-    (G.KN_KHOI || []).forEach(function (k) {
+  function soatDoi(co, maKhuon) {
+    var pham = [], ds = dsKhoiCua(maKhuon);
+    ds.forEach(function (k) {
       if (!k.doi || !co[k.ma]) return;
       k.doi.forEach(function (can) {
         if (co[can]) return;
-        var t = (G.KN_KHOI || []).filter(function (x) { return x.ma === can; })[0];
+        var t = ds.filter(function (x) { return x.ma === can; })[0];
         pham.push({khoi: k.ma, ten: k.ten, can: can, tenCan: t ? t.ten : can});
       });
     });
@@ -40200,8 +40212,9 @@ G.VIEWS = G.VIEWS || {};
   }
 
   /** Toàn bộ phép đo của một bài, chạy tại chỗ. */
-  G.bsSoat = function (chu) {
-    var doc = docKhoi(chu);
+  G.bsSoat = function (chu, maKhuon) {
+    maKhuon = String(maKhuon || 'BAIHOC').toUpperCase();
+    var doc = docKhoi(chu, maKhuon);
     var rong = doBang(chu, G.KN_RONG || [], function (r) {
       return {cau: r.cau, thay: r.thay};
     });
@@ -40211,20 +40224,24 @@ G.VIEWS = G.VIEWS || {};
     var nhan = (G.KN_NGUON || []).filter(function (n) {
       return String(chu || '').indexOf(n.nhan) >= 0;
     });
+    /* Mười điều kiện hoàn thành là thang đo NGƯỜI HỌC — chỉ có nghĩa với
+       khuôn BÀI HỌC. Một quy trình vận hành không có "người học", và đo
+       nó bằng thang ấy là đo sai loại. */
     var xong = [];
-    (G.KN_XONG || []).forEach(function (x) {
-      var can = (G.KN_KHOI || []).filter(function (k) {
-        return (k.xong || []).indexOf(x.ma) >= 0;
-      }).map(function (k) { return k.ma; });
-      var thieu = can.filter(function (m) { return !doc.khoi[m]; });
-      xong.push({ma: x.ma, dieu: x.dieu, dat: thieu.length === 0, thieu: thieu});
-    });
-    return {doc: doc, doi: soatDoi(doc.khoi), rong: rong, loi: loi,
-      cg: G.bsChuyenGia(chu), nhan: nhan, xong: xong,
+    if (maKhuon === 'BAIHOC')
+      (G.KN_XONG || []).forEach(function (x) {
+        var can = (G.KN_KHOI || []).filter(function (k) {
+          return (k.xong || []).indexOf(x.ma) >= 0;
+        }).map(function (k) { return k.ma; });
+        var thieu = can.filter(function (m) { return !doc.khoi[m]; });
+        xong.push({ma: x.ma, dieu: x.dieu, dat: thieu.length === 0, thieu: thieu});
+      });
+    return {doc: doc, khuon: maKhuon, doi: soatDoi(doc.khoi, maKhuon),
+      rong: rong, loi: loi, cg: G.bsChuyenGia(chu), nhan: nhan, xong: xong,
       /* Đúng hai điều kiện máy chủ dùng để CHẶN ở cổng 1. Khai lại ở đây
          thì người viết biết trước mình sẽ bị chặn hay không, thay vì nộp
          lên rồi mới biết. */
-      quaCong1: doc.thieu.length === 0 && soatDoi(doc.khoi).length === 0 &&
+      quaCong1: doc.thieu.length === 0 && soatDoi(doc.khoi, maKhuon).length === 0 &&
                 loi.length === 0};
   };
 
@@ -40530,6 +40547,126 @@ G.VIEWS = G.VIEWS || {};
   };
   G.bsXoaDau = function () { ghiDaXem({}); veLai(); };
 
+  /* ═══════════ NGĂN · ĐỌC MỘT BUỔI LÀM VIỆC ═══════════
+
+     Đọc chạy ở MÁY CHỦ, khác bộ đọc toàn hệ. Lý do: một bản ghi buổi tư
+     vấn là dữ liệu của một nhà thật, và mọi lượt chạm vào nó phải để
+     lại dòng nhật ký. Bộ đọc toàn hệ đọc chính màn hình — không có dữ
+     liệu của ai trong đó. */
+  function nganBuoi() {
+    var o = '<div class="card"><b>Máy ĐẾM. Nó không chấm người.</b>' +
+      '<p class="sm muted mt">Ba thứ đếm được: buổi đi qua nhịp nào · lượt nào ' +
+      'của người làm nghề rơi vào bảng thay lời · cuối buổi có cam kết đo được ' +
+      'không. Máy KHÔNG kết luận buổi ấy tốt hay không — một buổi đủ sáu nhịp vẫn ' +
+      'có thể hỏng, và một buổi thiếu nhịp CÔNG NHẬN vẫn có thể đúng: có ca chỉ ' +
+      'cần nghe.</p>' +
+      '<p class="sm muted mt">Ngôn từ chỉ soi lượt của NGƯỜI LÀM NGHỀ. Soi lượt ' +
+      'của khách là chấm khách — họ đang kể chuyện nhà mình, và họ có quyền dùng ' +
+      'đúng những từ mà nghề này học cách không dùng.</p></div>';
+
+    o += U.sec('Sáu nhịp', 'Neo vào G.KICHBAN_AI đã có — không dựng thang nhịp thứ hai');
+    o += U.tbl(['Nhịp', 'Làm gì'], (G.KN_NHIP || []).map(function (n) {
+      return ['<b>' + h(n.ma) + ' ' + h(n.ten) + '</b>', '<span class="sm">' + h(n.lam) + '</span>'];
+    }));
+
+    o += U.sec('Dán bản ghi buổi', 'Mỗi dòng một lượt, dạng "Coach: …" / "Khách: …"');
+    o += '<div class="card">' +
+      '<textarea id="bsBuoi" class="inp" rows="12" spellcheck="false" ' +
+        'style="font-family:ui-monospace,monospace;font-size:13px;line-height:1.6" ' +
+        'placeholder="Coach: Trước khi bắt đầu, anh chị muốn ra về với điều gì rõ nhất?&#10;Khách: ..."' +
+        '>' + h(G.bsD.buoiChu || '') + '</textarea>' +
+      '<div class="row mt" style="gap:10px;flex-wrap:wrap">' +
+      (G.API_CAP_PHEP
+        ? '<button class="btn primary" onclick="G.bsDocBuoi()" style="gap:6px">' +
+          ic('search') + 'Đọc buổi này</button>'
+        : '<span class="sm muted">Chưa nối máy chủ nên chưa đọc được. Bộ đọc buổi ' +
+          'chạy ở MÁY CHỦ chứ không ở đây: một bản ghi buổi tư vấn là dữ liệu của ' +
+          'một nhà thật, và mọi lượt chạm vào nó phải để lại dòng nhật ký.</span>') +
+      '<button class="btn" onclick="G.bsBuoiMau()">Chèn buổi mẫu</button>' +
+      '</div></div>';
+
+    var b = G.bsD.buoi;
+    if (!b) return o;
+    if (!b.ok) return o + canhBao(b.vi || b.error || 'Không đọc được.', 'var(--bad)');
+
+    o += U.sec('Kết quả', b.soLuot + ' lượt · ' + b.luotNghe + ' của người làm nghề · ' +
+      b.luotKhach + ' của khách');
+    var datLuat = (b.luat || []).filter(function (x) { return x.dat; }).length;
+    o += '<div class="grid3">' +
+      the('Nhịp đi qua', (6 - ((b.thieuNhip || []).length)) + '/6',
+        (b.thieuNhip || []).length ? 'thiếu ' + b.thieuNhip.join(', ') : 'đủ sáu',
+        (b.thieuNhip || []).length ? 'var(--warn)' : 'var(--ok)') +
+      the('Ba luật', datLuat + '/3', 'buổi chưa xong nếu thiếu',
+        datLuat === 3 ? 'var(--ok)' : 'var(--bad)') +
+      the('Ngôn từ', String((b.loi || []).length),
+        'câu phán xét của người làm nghề',
+        (b.loi || []).length ? 'var(--bad)' : 'var(--ok)') +
+      '</div>';
+
+    o += U.sec('Ba luật của một buổi', 'Đây KHÔNG phải "buổi tốt" — chúng là "buổi chưa xong"');
+    o += '<div class="card">' + (b.luat || []).map(function (l) {
+      var kl = (G.KN_HOITHOAI_LUAT || []).filter(function (x) { return x.ma === l.ma; })[0] || {};
+      return '<div style="padding:8px 0;border-bottom:1px solid var(--line)">' +
+        '<div class="row" style="gap:9px;align-items:flex-start">' +
+        '<span style="color:' + (l.dat ? 'var(--ok)' : 'var(--bad)') + ';flex:none">' +
+          ic(l.dat ? 'check' : 'x', 'w-4 h-4') + '</span>' +
+        '<div><b>' + h(l.ma) + '</b> — ' + h(l.luat) +
+        '<div class="sm" style="margin-top:3px;color:' +
+          (l.dat ? 'var(--ink-3)' : 'var(--bad)') + '">' + h(l.vi) + '</div>' +
+        (kl.vi ? '<div class="sm muted" style="margin-top:3px">' + h(kl.vi) + '</div>' : '') +
+        '</div></div></div>';
+    }).join('') + '</div>';
+
+    o += U.sec('Buổi đi qua nhịp nào');
+    o += U.tbl(['Nhịp', 'Số lượt', 'Lượt đầu'], (b.nhip || []).map(function (n) {
+      return ['<b>' + h(n.ma) + ' ' + h(n.ten) + '</b>',
+        n.lan ? '<b style="color:var(--ok)">' + n.lan + '</b>'
+              : '<span style="color:var(--bad)">0</span>',
+        n.luotDau ? String(n.luotDau) : '—'];
+    }));
+
+    if ((b.loi || []).length) {
+      o += U.sec('Câu phán xét trong lượt của người làm nghề');
+      o += U.tbl(['Lượt', 'Bắt được', 'Nói thay', 'Vì sao'], b.loi.map(function (l) {
+        return ['<b>' + l.luot + '</b>',
+          '<span style="color:var(--bad)">' + h(l.bat) + '</span>',
+          '<span style="color:var(--ok)">' + h(l.thay || '') + '</span>',
+          '<span class="sm muted">' + h(l.vi || '') + '</span>'];
+      }));
+    }
+    if ((b.chuyenGia || []).length) {
+      o += U.sec('Câu nghiệp dư', 'Cảnh báo, không chặn');
+      o += U.tbl(['Lượt', 'Bắt được', 'Loại'], b.chuyenGia.map(function (c) {
+        return ['<b>' + c.luot + '</b>', h(c.bat),
+          '<span class="chip">' + h(c.loi || '') + '</span>'];
+      }));
+    }
+    return o;
+  }
+  G.bsDocBuoi = function () {
+    G.bsD.buoiChu = oGiaTri('bsBuoi');
+    goi('docBuoi', {chu: G.bsD.buoiChu}).then(function (r) {
+      G.bsD.buoi = r; veLai();
+    });
+  };
+  G.bsBuoiMau = function () {
+    G.bsD.buoiChu = [
+      'Coach: Trước khi bắt đầu — khi kết thúc buổi này, anh chị muốn ra về với điều gì rõ nhất?',
+      'Khách: Tôi muốn biết vì sao con cứ phải nhắc mới học.',
+      'Coach: Kể cho mình một tình huống cụ thể gần nhất — hôm nào, đang làm gì?',
+      'Khách: Tối thứ ba, 19h45, con ném vở khi tôi nhắc bài tập. Tuần này 3 lần rồi.',
+      'Coach: Em thấy anh chị vẫn ngồi lại được với con sau mỗi lần như thế — cái đó không dễ.',
+      'Coach: Để mình nghe lại — phần nào là điều anh chị chứng kiến, phần nào là suy đoán?',
+      'Khách: Chứng kiến là con ném vở. Suy đoán là con lười.',
+      'Coach: Giờ anh chị đang có mấy hướng, kể cả hướng chưa làm gì?',
+      'Khách: Chắc để con tự chọn giờ học, hoặc cứ nhắc như cũ.',
+      'Coach: Trong 24 giờ tới, việc nhỏ nhất anh chị chọn thử là gì, và đo bằng gì?',
+      'Khách: Tối nay không nhắc, và ghi lại số lần con tự mở sách.',
+      'Coach: Cuối tuần mình gặp lại, anh chị trả lời bằng đúng con số ghi được nhé.'
+    ].join('\n');
+    G.bsD.buoi = null; veLai();
+  };
+
   /* ═══════════ NGĂN · CHUẨN NGHỀ ═══════════ */
   function nganChuanNghe() {
     var o = '<div class="card"><b>Năm lĩnh vực, và ba mức chắc chắn khác nhau</b>' +
@@ -40579,12 +40716,20 @@ G.VIEWS = G.VIEWS || {};
   /* ═══════════ NGĂN 1 · SOẠN ═══════════ */
   function nganSoan() {
     var d = G.bsD;
-    var s = G.bsSoat(d.chu);
-    var soKhoi = (G.KN_KHOI || []).length;
+    var s = G.bsSoat(d.chu, d.khuon);
+    var soKhoi = dsKhoiCua(d.khuon).length;
     var duKhoi = soKhoi - s.doc.thieu.length;
 
+    var khDang = (G.KN_KHUON || []).filter(function (k) {
+      return k.ma === d.khuon; })[0] || {};
     var o = '<div class="card"><b>Máy dựng khuôn và ĐO. Nó không viết hộ.</b>' +
-      '<p class="sm muted mt">Hai mươi bốn khối là khuôn của một bài học GITA. ' +
+      '<p class="sm muted mt"><b>' + h(khDang.ten || '') + '</b> — ' +
+      h(khDang.lam || '') + (khDang.vi ? ' ' + h(khDang.vi) : '') + '</p>' +
+      '<p class="sm muted mt">Bốn khuôn, mỗi khuôn một danh sách khối riêng. Một ' +
+      'quy trình vận hành nhét vào khuôn bài học thì phải điền "Chìa khoá kim ' +
+      'cương" cho một cái quy trình, và người viết sẽ điền cho có — khuôn sai ' +
+      'loại tệ hơn không khuôn.</p>' +
+      '<p class="sm muted mt">' +
       'Máy đếm được khối nào có, khối nào đòi khối nào mà không có, dòng nào ' +
       'rỗng, dòng nào phán xét — và nó chỉ ra ĐÚNG SỐ DÒNG. Nội dung chuyên môn ' +
       'là việc của người viết: máy không tự nghĩ ra một câu nào (luật gốc ' +
@@ -40599,6 +40744,11 @@ G.VIEWS = G.VIEWS || {};
       '<div class="row" style="gap:10px;flex-wrap:wrap">' +
       '<input id="bsTieuDe" class="inp grow" placeholder="Tiêu đề bài" ' +
         'value="' + h(d.tieuDe) + '" oninput="G.bsGhi()">' +
+      '<select id="bsKhuon" class="inp" style="max-width:200px" onchange="G.bsDoiKhuon()">' +
+      (G.KN_KHUON || []).map(function (k) {
+        return '<option value="' + h(k.ma) + '"' + (d.khuon === k.ma ? ' selected' : '') +
+          '>' + h(k.ten) + '</option>';
+      }).join('') + '</select>' +
       '<select id="bsTang" class="inp" style="max-width:120px" onchange="G.bsGhi()">' +
       ['T1', 'T2', 'T3', 'T4', 'T5'].map(function (t) {
         return '<option value="' + t + '"' + (d.tang === t ? ' selected' : '') + '>' + t + '</option>';
@@ -40672,6 +40822,15 @@ G.VIEWS = G.VIEWS || {};
         '. Đây là phép đo YẾU — nó đếm bài có nhãn nào không, chứ không biết ' +
         'câu nào đáng lẽ phải có nhãn.', 'var(--warn)');
 
+    if (d.khuon !== 'BAIHOC') {
+      o += canhBao('Khuôn ' + h(khDang.ten || '') + ' CHƯA có thang một trăm và ' +
+        'chưa có mười điều kiện hoàn thành riêng. Thang hiện có neo vào khối của ' +
+        'khuôn bài học (K12·K13 cho "dùng được ngay", K16·K18 cho "đo được"), nên ' +
+        'chấm khuôn khác bằng nó là cho một con số không nói gì. Máy đo CẤU TRÚC ' +
+        'và NGÔN NGỮ, và nói thẳng phần chưa có.', 'var(--ink-3)');
+      return o + nopKhoi(d, s);
+    }
+
     /* ── Mười điều kiện hoàn thành ── */
     o += U.sec('Mười điều kiện hoàn thành',
       'Thang đo NGƯỜI HỌC — tính riêng, không cộng vào điểm');
@@ -40702,8 +40861,11 @@ G.VIEWS = G.VIEWS || {};
             '<span class="sm muted">' + h(q.hoi || '') + '</span>'];
         })) + '</div>';
 
-    /* ── Nộp ── */
-    o += U.sec('Nộp vào thang năm cổng');
+    return o + nopKhoi(d, s);
+  }
+
+  function nopKhoi(d, s) {
+    var o = U.sec('Nộp vào thang năm cổng');
     o += '<div class="card">' +
       (G.API_CAP_PHEP
         ? '<div class="row" style="gap:10px;flex-wrap:wrap">' +
@@ -40743,6 +40905,7 @@ G.VIEWS = G.VIEWS || {};
     G.bsD.chu = oGiaTri('bsChu');
     G.bsD.tieuDe = oGiaTri('bsTieuDe');
     G.bsD.tang = oGiaTri('bsTang') || 'T1';
+    G.bsD.khuon = oGiaTri('bsKhuon') || G.bsD.khuon || 'BAIHOC';
     if (hen) clearTimeout(hen);
     hen = setTimeout(function () {
       /* Giữ chỗ con trỏ qua lượt vẽ lại: không giữ thì gõ tới chữ thứ
@@ -40755,8 +40918,13 @@ G.VIEWS = G.VIEWS || {};
     }, 450);
   };
 
+  G.bsDoiKhuon = function () {
+    G.bsD.khuon = oGiaTri('bsKhuon') || 'BAIHOC';
+    veLai();
+  };
+
   G.bsMau = function () {
-    G.bsD.chu = (G.KN_KHOI || []).map(function (k) {
+    G.bsD.chu = dsKhoiCua(G.bsD.khuon).map(function (k) {
       return k.ma + ' | ' + k.ten + '\n' + (k.hoi ? '' : '') + '\n';
     }).join('');
     veLai();
@@ -40766,6 +40934,7 @@ G.VIEWS = G.VIEWS || {};
      là một VÍ DỤ VỀ KHUÔN, không phải nội dung của Học viện — nội dung
      đã duyệt nằm trong kho và đi qua thang năm cổng. */
   G.bsViDu = function () {
+    G.bsD.khuon = 'BAIHOC';
     G.bsD.tieuDe = 'Bảy ngày nhìn cho đúng';
     G.bsD.tang = 'T1';
     G.bsD.chu = [
@@ -40812,7 +40981,8 @@ G.VIEWS = G.VIEWS || {};
 
   G.bsNap = function () {
     var d = G.bsD;
-    goi('napBai', {id: d.id || undefined, tieuDe: d.tieuDe, chu: d.chu, tang: d.tang})
+    goi('napBai', {id: d.id || undefined, tieuDe: d.tieuDe, chu: d.chu,
+      tang: d.tang, khuon: d.khuon})
       .then(function (r) {
         if (r && r.ok) { G.bsD.id = r.id; G.bsD.thang = null; }
         bao(r, 'Đã lưu bản nháp · ' + ((r && r.id) || ''));
@@ -41130,6 +41300,7 @@ G.VIEWS = G.VIEWS || {};
     if (G.bsNgan === 'soan')     return o + nganSoan();
     if (G.bsNgan === 'thang')    return o + nganThang();
     if (G.bsNgan === 'kho')      return o + nganKho();
+    if (G.bsNgan === 'buoi')     return o + nganBuoi();
     if (G.bsNgan === 'toanhe')   return o + nganToanHe();
     if (G.bsNgan === 'chuannghe')return o + nganChuanNghe();
     if (G.bsNgan === 'hienphap') return o + nganHienPhap();
