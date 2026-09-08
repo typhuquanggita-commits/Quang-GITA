@@ -2124,7 +2124,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.32',
+  version: '9.99.33',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -34597,6 +34597,39 @@ var G = window.G || {}; window.G = G;
     dung:  {w: 1080, h: 1920, ten: 'Khổ đứng tràn màn 1080×1920'}
   };
 
+  /* ── KHỔ IN, ĐO BẰNG MILIMÉT (9.99.33) ──
+
+     Bốn khổ trên đo bằng ĐIỂM ẢNH, và điểm ảnh là đơn vị của màn
+     hình. Trên giấy nó không nói được gì: 1080 điểm ảnh in ra to bằng
+     nào thì tuỳ máy in. Nên khổ in khai bằng milimét và một mật độ,
+     rồi mới suy ra điểm ảnh — chứ không khai điểm ảnh rồi đoán ngược.
+
+     300 điểm mỗi tấc Anh là mật độ nhà in đòi. Thấp hơn thì nét chữ
+     ra răng cưa nhìn thấy được ở khoảng cách đọc.
+
+     ── PHẦN NÀY KHÔNG PHẢI VIỆC CỦA CHỦ HỆ ──
+
+     Sổ chờ ghi TG-02 "bảng màu và bộ chữ cho ấn phẩm — chủ hệ chốt",
+     và câu ấy đã chặn cả đường in suốt nhiều bản. Nhưng phần lớn thứ
+     đang chặn KHÔNG phải một lựa chọn: nền tối tốn mực và ra đục là
+     sự thật về mực, không phải sở thích; chữ dưới 2,1mm đọc không ra
+     là sự thật về mắt. Chốt phần sự thật ở đây, và để lại cho chủ hệ
+     đúng phần còn là lựa chọn: mã mực và loại giấy. */
+  var MM_MOI_TAC = 25.4;
+  function khoIn(mmR, mmC, ten, dpi) {
+    var d = dpi || 300;
+    return {w: Math.round(mmR * d / MM_MOI_TAC), h: Math.round(mmC * d / MM_MOI_TAC),
+            mmR: mmR, mmC: mmC, dpi: d, in: true, ten: ten};
+  }
+  KHO_GIAY.a4d = khoIn(210, 297, 'A4 dọc — in 210×297mm');
+  KHO_GIAY.a4n = khoIn(297, 210, 'A4 ngang — in 297×210mm');
+  KHO_GIAY.a5d = khoIn(148, 210, 'A5 dọc — in 148×210mm');
+
+  /* Chữ nhỏ nhất đọc được trên giấy ở khoảng cách cầm tay. Dưới mức
+     này thì không phải "chữ nhỏ", là chữ không ai đọc — và một tấm có
+     phần không ai đọc thì phần ấy đáng lẽ không nên có. */
+  var CHU_NHO_NHAT_MM = 2.1;
+
   /* ── MÀU: ĐỌC TỪ BIẾN CSS ĐANG CHẠY ──
      Trả về mã thật (rgb) chứ không trả về "var(--gita)": chuỗi var()
      sống trong thẻ <svg> trên màn, nhưng chết ngay khi tấm ấy được
@@ -35548,15 +35581,75 @@ var G = window.G || {}; window.G = G;
 
   /* Dấu GITA ở góc — cùng một chỗ trên mọi tấm. Nhận diện không phải
      là dán logo to, mà là ĐẶT ĐÚNG MỘT CHỖ qua tất cả các tấm. */
-  function dauGita(k, x, y) {
-    return '<g transform="translate(' + x + ',' + y + ')">' +
+  /* ── DẤU GITA PHẢI CO THEO TỜ GIẤY ──
+     Tới 9.99.32 dấu này vẽ ở cỡ điểm ảnh CỐ ĐỊNH — vòng bán kính 15,
+     tên 17px, dòng dưới 10,5px — bất kể tấm rộng bao nhiêu. Trên tấm
+     màn hình 1080 thì vừa. Trên tờ A4 rộng 2480 thì nó là một vết
+     nhỏ, và dòng "HỆ SINH THÁI GIA ĐÌNH THỊNH VƯỢNG" ra 0,89mm: dấu
+     nhận diện của Học viện in ra không đọc được.
+     Phép đo chữ-theo-milimét của luật C22 bắt đúng chỗ này ngay lượt
+     chạy đầu — và nó chỉ lộ ra ở khổ in, vì trên màn hình mọi khổ đều
+     quanh 1080 nên sai số không bao giờ hiện.
+
+     Mốc là 1200 chứ không phải 1080: bốn khổ màn hình rộng 1080–1200,
+     lấy 1200 thì cả bốn ra tỉ lệ đúng 1 và không tấm nào đang chạy bị
+     đổi. Khổ in thì nới thêm cho tới khi dòng nhỏ nhất của dấu đạt
+     ngưỡng đọc được — luật là luật, dấu thương hiệu không có ngoại lệ. */
+  var DAU_CHU_NHO = 10.5;
+
+  /* ── CỠ CHỮ THẬT, KHÔNG PHẢI CỠ GHI TRONG THẺ ──
+     Bản đầu của phép đo chữ-theo-milimét đọc thẳng thuộc tính
+     `font-size` rồi lấy số nhỏ nhất. Sai, và sai theo kiểu tệ nhất:
+     nó báo đỏ một tấm ĐÚNG. Dấu GITA nằm trong một nhóm có scale(),
+     nên chữ 10,5 ghi trong thẻ ra 24,8 điểm ảnh thật — đọc thuộc
+     tính mà bỏ phép biến hình bao ngoài là đo một con số không phải
+     con số người xem thấy.
+     Cùng lớp lỗi với phép đo mực ở 9.99.31, chỗ phải hỏi getCTM()
+     thay vì đọc x/y: toạ độ và cỡ trong SVG luôn là toạ độ TRONG
+     nhóm, không phải trong tấm. */
+  function coChuNhoNhat(svg) {
+    var nho = null, ngan = [1];
+    var re = /<(\/?)(g|text)\b([^>]*)>/g, m;
+    while ((m = re.exec(svg))) {
+      if (m[2] === 'g') {
+        if (m[1]) { if (ngan.length > 1) ngan.pop(); }
+        else {
+          var s = /scale\(([\d.]+)/.exec(m[3]);
+          ngan.push(ngan[ngan.length - 1] * (s ? Number(s[1]) : 1));
+        }
+      } else if (!m[1]) {
+        var c = /font-size="([\d.]+)"/.exec(m[3]);
+        if (c) {
+          var v = Number(c[1]) * ngan[ngan.length - 1];
+          if (v > 0 && (nho === null || v < nho)) nho = v;
+        }
+      }
+    }
+    return nho;
+  }
+
+  function tiDau(kg) {
+    var t = (kg && kg.w) ? Math.max(1, kg.w / 1200) : 1;
+    if (kg && kg.in)
+      t = Math.max(t, (CHU_NHO_NHAT_MM * kg.dpi / MM_MOI_TAC) / DAU_CHU_NHO);
+    return t;
+  }
+  function dauGita(k, x, y, kg) {
+    var ti = tiDau(kg);
+    return '<g transform="translate(' + x + ',' + y + ')' +
+      (ti !== 1 ? ' scale(' + ti.toFixed(4) + ')' : '') + '">' +
       '<circle cx="0" cy="0" r="15" fill="none" stroke="' + h(k.gita) +
         '" stroke-width="2"/>' +
       '<circle cx="0" cy="0" r="5" fill="' + h(k.do) + '"/>' +
-      '<text x="26" y="-2" font-family="' + h(CHU_THAN) + '" font-size="17" ' +
+      /* Lớp `gita-dau` để phép dựng CHỮ THAY ẢNH nhận ra hai dòng
+         này là DẤU THƯƠNG HIỆU, không phải nội dung của tấm. Khai ra
+         chứ không để chỗ kia dò theo chuỗi chữ: dò theo chuỗi là giữ
+         một bản chép của hai câu này ở chỗ thứ hai, và bản chép thì
+         không đổi theo khi câu gốc đổi. */
+      '<text class="gita-dau" x="26" y="-2" font-family="' + h(CHU_THAN) + '" font-size="17" ' +
         'font-weight="800" fill="' + h(k.sau ? k.muc : k.gitaSau) +
         '" letter-spacing="1.6">GITA 365</text>' +
-      '<text x="26" y="15" font-family="' + h(CHU_THAN) + '" font-size="10.5" ' +
+      '<text class="gita-dau" x="26" y="15" font-family="' + h(CHU_THAN) + '" font-size="10.5" ' +
         'font-weight="600" fill="' + h(k.sau ? k.muc2 : k.muc3) + '" letter-spacing="1.1">' +
         'HỆ SINH THÁI GIA ĐÌNH THỊNH VƯỢNG</text></g>';
   }
@@ -35696,7 +35789,7 @@ var G = window.G || {}; window.G = G;
       o += veNet('nguoi', maHinh, cxH, Math.round(kg.h * 0.48),
         Math.round(rD2 * 1.42), sacH);
     }
-    o += dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.085));
+    o += dauGita(k, le + Math.round(15 * tiDau(kg)), kg.h - Math.round(kg.h * 0.085), kg);
     return {ok: true, svg: khung(kg, k, o,
       nen.defs + cs.defs + (dbang ? dbang.defs : ''))};
   }
@@ -35754,7 +35847,7 @@ var G = window.G || {}; window.G = G;
     o += veChu(cau, giua, Math.round(dinh + coSo * 0.62), {co: Math.round(kg.w / 42),
       chu: CHU_THAN, dam: 500, mau: k.muc2, rong: Math.round(rong * 0.9),
       gian: 1.5, can: 'middle'}).svg;
-    o += dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.085));
+    o += dauGita(k, le + Math.round(15 * tiDau(kg)), kg.h - Math.round(kg.h * 0.085), kg);
     return {ok: true, svg: khung(kg, k, o, nen.defs + cs.defs)};
   }
 
@@ -35820,7 +35913,7 @@ var G = window.G || {}; window.G = G;
         chu: CHU_THAN, dam: day ? 700 : 500, mau: day ? k.muc : k.muc2,
         rong: Math.round(buoc - 22), gian: 1.35, can: 'middle'}).svg;
     });
-    o += dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.09));
+    o += dauGita(k, le + Math.round(15 * tiDau(kg)), kg.h - Math.round(kg.h * 0.09), kg);
     return {ok: true, svg: khung(kg, k, o, nen.defs + bong.defs + cs.defs)};
   }
 
@@ -35977,7 +36070,7 @@ var G = window.G || {}; window.G = G;
     var ruot = nen.ve +
       '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' + h(k.gita) + '"/>' +
       dnhan + tieu.svg + (dbang ? dbang.ve : '') + ve +
-      dauGita(k, le + 15, kg.h - Math.round(kg.h * 0.062));
+      dauGita(k, le + Math.round(15 * tiDau(kg)), kg.h - Math.round(kg.h * 0.062), kg);
     return {ok: true, svg: khung(kg, k, ruot, g.defs)};
   }
 
@@ -36209,7 +36302,7 @@ var G = window.G || {}; window.G = G;
     return {ok: true, svg: khung(kg, k,
       nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
       h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : '') + ve +
-      dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.032)), g.defs)};
+      dauGita(k, le + Math.round(21 * tiDau(kg)), kg.h - Math.round(kg.h * 0.032), kg), g.defs)};
   }
 
   /* ── ĐỌC KHỐI BƯỚC ──
@@ -36334,7 +36427,7 @@ var G = window.G || {}; window.G = G;
     return {ok: true, svg: khung(kg, k,
       nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
       h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : '') + ve +
-      dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030)), g.defs)};
+      dauGita(k, le + Math.round(21 * tiDau(kg)), kg.h - Math.round(kg.h * 0.030), kg), g.defs)};
   }
 
   /* ── BÚT DẠ QUANG ──
@@ -36573,7 +36666,7 @@ var G = window.G || {}; window.G = G;
     return {ok: true, svg: khung(kg, k,
       nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
       h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : '') + ve +
-      dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030)), g.defs)};
+      dauGita(k, le + Math.round(21 * tiDau(kg)), kg.h - Math.round(kg.h * 0.030), kg), g.defs)};
   }
 
   /* ═══════════════════════════════════════════════════════════════
@@ -36782,7 +36875,7 @@ var G = window.G || {}; window.G = G;
       manh: manh, bong: bong, bongHh: bongHh, cs: cs, le: le,
       tren: nen.ve + '<rect x="0" y="0" width="' + kg.w + '" height="6" fill="' +
         h(k.gita) + '"/>' + dnhan + tieu.svg + (dbang ? dbang.ve : ''),
-      duoi: dauGita(k, le + 21, kg.h - Math.round(kg.h * 0.030))
+      duoi: dauGita(k, le + Math.round(21 * tiDau(kg)), kg.h - Math.round(kg.h * 0.030), kg)
     };
   }
 
@@ -37498,7 +37591,7 @@ var G = window.G || {}; window.G = G;
 
     /* ── ĐẦU: số kỳ trong một huy hiệu, cạnh dấu GITA ── */
     var yDau = Math.round(kg.h * 0.045);
-    ve += dauGita(k, le + 21, yDau + 16);
+    ve += dauGita(k, le + Math.round(21 * tiDau(kg)), yDau + Math.round(16 * tiDau(kg)), kg);
     if (nhan) {
       var coK = Math.round(kg.w * 0.030);
       var rongK = Math.round(doRong(nhan, '800 ' + coK + 'px ' + CHU_THAN) + coK * 1.7);
@@ -38198,7 +38291,7 @@ var G = window.G || {}; window.G = G;
        chữ căn giữa trong ô cũng có mép trái riêng và nó thẳng hàng với
        chính nó — đoán kiểu gì cũng có ngày báo oan. */
     var ray = function (s) { return '<g class="gita-ray">' + s + '</g>'; };
-    ve += dauGita(k, RAY + 16, yDau + 16);   /* +16 = bán kính vòng + nét */
+    ve += dauGita(k, RAY + Math.round(16 * tiDau(kg)), yDau + Math.round(16 * tiDau(kg)), kg);   /* +16 = bán kính vòng + nét */
     var yy = Math.round(vungY + (vungCao - caoTong) / 2);
     if (nhan) {
       /* Không bọc ray() ở đây — nhanTren tự đánh dấu đúng thẻ <text>. */
@@ -38331,7 +38424,7 @@ var G = window.G || {}; window.G = G;
        giữa thì nó cũng KHÔNG cân: vòng tròn ở tâm nhưng chữ "GITA 365"
        chạy sang phải từ +26, nên cả cụm lệch hẳn về một bên. +16 là bán
        kính vòng cộng nét, để mép trái vòng trùng lề. */
-    ve += dauGita(k, le + 16, kg.h - Math.round(kg.h * 0.052));
+    ve += dauGita(k, le + Math.round(16 * tiDau(kg)), kg.h - Math.round(kg.h * 0.052), kg);
     return {ok: true, svg: khung(kg, k, ve, gom(manh).defs)};
   }
 
@@ -38398,6 +38491,77 @@ var G = window.G || {}; window.G = G;
         thieu.push({y: String(y).slice(0, 90), co: co.length, tong: tu.length});
     });
     return {tong: ds.length, thieu: thieu};
+  }
+
+  /* ═══════════ CHỮ THAY ẢNH ═══════════
+
+     Một tấm hình của Học viện tới nay ra khỏi máy mà KHÔNG mang theo
+     một dòng nào nói nó vẽ gì. Ba hậu quả, và cả ba đều thật:
+
+       · Người đọc bằng máy đọc màn hình nghe được đúng một chữ: "ảnh".
+         Cả tấm — sáu ô việc, một câu đóng đinh — biến mất với họ.
+       · Thang chấm có mục D7 "SEO" nặng 5 điểm, mà trong cả kho KHÔNG
+         có một dòng mã nào sinh ra chữ mô tả. Chấm một thứ không tồn
+         tại thì năm điểm ấy là năm điểm cho không.
+       · Sáu tháng sau muốn tìm lại "tấm nói về cổng ngày bảy" thì
+         không tìm được: sổ giữ nội dung ĐỀ BÀI, không giữ thứ đã đặt
+         lên tấm, mà hai thứ ấy khác nhau (bộ vẽ rút gọn, xuống dòng,
+         đổi hoa thường).
+
+     ── VÌ SAO MÁY DỰNG ĐƯỢC CÂU NÀY MÀ KHÔNG PHẢI ĐOÁN ──
+
+     Bản đề xuất kiến trúc ngoài sinh chữ mô tả bằng một mô hình thị
+     giác: nhìn tấm ảnh rồi tả lại. Ở đây không cần, và không được —
+     chính máy này đặt từng chữ (luật C14), nên nó BIẾT trên tấm có
+     chữ gì. Câu mô tả ghép từ chữ ĐÃ ĐẶT, không thêm một từ nào của
+     riêng nó. Đó là khác biệt giữa một bản mô tả và một lời đoán, và
+     luật C10 cấm đúng cái thứ hai. */
+  var CAT_MOTA = 300;   /* dài hơn thế thì máy đọc màn hình đọc mãi */
+
+  function moTaTam(x, svg, kg, che) {
+    var ten = (function () {
+      for (var i = 0; i < (G.TG_LOAIHINH || []).length; i++)
+        if (G.TG_LOAIHINH[i].ma === x.loaiHinh) return G.TG_LOAIHINH[i].ten;
+      return x.loaiHinh;
+    })();
+    /* Chữ theo ĐÚNG thứ tự đã đặt lên tấm — đó cũng là thứ tự mắt
+       đọc, nên câu mô tả đi cùng đường với người xem. */
+    /* Bỏ DẤU THƯƠNG HIỆU khỏi phần ruột: hai dòng ấy đứng y hệt trên
+       MỌI tấm, nên chúng không phân biệt tấm này với tấm nào cả — mà
+       chỗ trống trong câu mô tả thì có hạn. Nói tên thương hiệu MỘT
+       lần ở nhãn ngắn, chỗ máy đọc màn hình đọc trước tiên, rồi dành
+       trọn phần còn lại cho nội dung của chính tấm này. */
+    var dong = (svg.match(/<text[^>]*>([\s\S]*?)<\/text>/g) || [])
+      .filter(function (t) { return t.indexOf('gita-dau') < 0; })
+      .map(function (t) { return t.replace(/<[^>]+>/g, '').trim(); })
+      .filter(function (s) { return s.length > 1; });
+    /* Bỏ trùng liền kề: một câu ngắt hai dòng ra hai thẻ <text>, mà
+       đọc lên thì là một câu.
+       VÀ bỏ dòng trùng chính NHIỆM VỤ: nhiều bố cục đặt nhiệm vụ làm
+       tiêu đề, nên câu ấy vào bản mô tả hai lần — một lần ở phần đầu,
+       một lần trong ruột. Đọc bằng mắt thì thừa; nghe bằng máy đọc
+       màn hình thì là cùng một câu đọc liền hai lượt, và người nghe
+       tưởng máy kẹt. */
+    var nv = boDauChu(String(x.nhiemVu || '')).replace(/[^a-z0-9]+/g, ' ').trim();
+    var gom = [];
+    dong.forEach(function (d) {
+      if (gom.length && gom[gom.length - 1] === d) return;
+      if (nv && boDauChu(d).replace(/[^a-z0-9]+/g, ' ').trim() === nv) return;
+      gom.push(d);
+    });
+    var ruot = gom.join(' · ');
+
+    var dau = ten + ', chặng ' + (x.tang || '?') + '. ' +
+      String(x.nhiemVu || '').trim();
+    if (dau && !/[.!?]$/.test(dau)) dau += '.';
+    var cau = dau + ' Trên tấm: ' + ruot + '.';
+    if (cau.length > CAT_MOTA) cau = cau.slice(0, CAT_MOTA - 1).replace(/\s+\S*$/, '') + '…';
+    return {
+      /* `ten` là nhãn ngắn — cái máy đọc màn hình đọc trước tiên. */
+      ten: ('GITA 365 · ' + ten + ' — ' + String(x.nhiemVu || '').trim()).slice(0, 120),
+      alt: cau,
+      soChu: gom.length
+    };
   }
 
   /* ═══════════ CỬA DUY NHẤT ═══════════ */
@@ -38470,7 +38634,19 @@ var G = window.G || {}; window.G = G;
        chỗ này đọc theo nó: loại hình CÓ NGƯỜI là áp phích, nên mặc định
        NỀN SÂU. Mấy loại hình còn lại vẫn là ấn phẩm in, vẫn nền giấy. */
     var cheMac = CAN_NGUOI_VE.indexOf(x.loaiHinh) >= 0 ? 'sau' : 'giay';
+    /* ── KHỔ IN THÌ NỀN MẶC ĐỊNH LÀ GIẤY, KHÔNG PHẢI ĐÊM SÂU ──
+       Nền sâu là nền của MÀN HÌNH — ở đó nó không tốn gì. Trên giấy
+       thì một tấm A4 phủ kín mực tối là gần một mililít mực cho mỗi
+       bản, giấy cong lên vì ướt, và màu ra đục chứ không sâu. */
+    if (kg.in) cheMac = 'giay';
     var che = ['sau', 'sang', 'but', 'giay'].indexOf(cheMuon) >= 0 ? cheMuon : cheMac;
+    if (kg.in && che === 'sau') return {ok: false, code: 'NENTOIDEIN',
+      error: 'Khổ in không nhận nền ĐÊM SÂU. Một tấm ' + kg.mmR + '×' + kg.mmC +
+             'mm phủ kín mực tối tốn gần một mililít mực mỗi bản, làm giấy cong ' +
+             'vì ướt, và ra đục chứ không ra sâu — nền sâu đẹp vì màn hình TỰ ' +
+             'phát sáng, còn giấy thì chỉ hắt lại. Dùng nền "giay" hoặc "sang". ' +
+             'Máy KHÔNG tự đổi hộ: đổi nền là đổi cả tương phản của mọi chữ trên ' +
+             'tấm, và đó là quyết định của người dựng chứ không phải của máy.'};
     var r;
     try { r = b.ve(x, kg, che); }
     catch (e) { return {ok: false, error: 'Bộ vẽ hỏng giữa chừng: ' + e.message}; }
@@ -38490,9 +38666,47 @@ var G = window.G || {}; window.G = G;
 
        Đây là chỗ luật "máy viết chữ" trả lãi: nó không chỉ giữ dấu
        tiếng Việt, nó còn làm cho việc kiểm nội dung trở thành đo được. */
+    /* ── CHỮ TRÊN GIẤY ĐO BẰNG MILIMÉT ──
+       Cả bố cục của tệp này tính theo kg.w, nên đổi sang khổ to hơn
+       thì mọi cỡ chữ to lên theo. Nghe thì có vẻ chỗ này không bao
+       giờ đỏ — nhưng A5 hẹp hơn khổ vuông 1080, nên cùng một bố cục
+       ở A5 cho chữ NHỎ HƠN cả bản màn hình. Đo thật:
+         A4 (2480 rộng) · chú thích 12px-ở-1080 → 2,33mm  → đọc được
+         A5 (1748 rộng) · cùng chú thích ấy     → 1,64mm  → không
+       Máy không rút bớt nội dung cho vừa và cũng không phóng chữ lên
+       cho lọt ngưỡng: cả hai đều là sửa tấm mà không ai được báo. */
+    if (kg.in) {
+      var coNho = coChuNhoNhat(r.svg);
+      if (coNho !== null) {
+        var mm = coNho * MM_MOI_TAC / kg.dpi;
+        /* Chừa 5 phần nghìn milimét: `tiDau` nới dấu GITA lên ĐÚNG
+           ngưỡng, nên phép nhân chia quay lại ra 2,0999999… và một
+           tấm đúng bị từ chối vì một sai số của số thực. Năm phần
+           nghìn milimét không phải một quyết định về thẩm mỹ — nó
+           nhỏ hơn mọi thứ mắt hay máy in phân biệt được. */
+        if (mm < CHU_NHO_NHAT_MM - 0.005) return {ok: false, code: 'CHUNHOQUADEIN',
+          error: 'Chữ nhỏ nhất trên tấm ra ' + mm.toFixed(2) + 'mm khi in ở khổ ' +
+                 kg.mmR + '×' + kg.mmC + 'mm — dưới ngưỡng ' + CHU_NHO_NHAT_MM +
+                 'mm thì cầm trên tay không đọc ra. Không phải "chữ nhỏ", là chữ ' +
+                 'không ai đọc, mà một tấm có phần không ai đọc thì phần ấy đáng ' +
+                 'lẽ không nên có. Bớt nội dung, hoặc in khổ lớn hơn.'};
+      }
+    }
+
     var soat = soatYTrenTam(x, r.svg);
 
-    return {ok: true, svg: r.svg, kho: kg.ten, nen: che, w: kg.w, h: kg.h,
+    /* ── GẮN CHỮ THAY ẢNH VÀO CHÍNH TẤM (luật C21) ──
+       `<title>` là cái máy đọc màn hình đọc thay cho tấm; `<desc>` là
+       bản dài hơn cho ai muốn nghe hết. Gắn ngay trong SVG chứ không
+       để chỗ gọi tự thêm: tấm đi đâu thì chữ đi theo đó, kể cả khi ai
+       đó dán chuỗi SVG này sang một trang khác. Một câu mô tả nằm
+       riêng ở chỗ gọi là câu sẽ rơi mất ở lượt sao chép đầu tiên. */
+    var mt = moTaTam(x, r.svg, kg, che);
+    var svg = r.svg.replace('<defs>',
+      '<title>' + h(mt.ten) + '</title><desc>' + h(mt.alt) + '</desc><defs>');
+
+    return {ok: true, svg: svg, kho: kg.ten, nen: che, w: kg.w, h: kg.h,
+      moTa: mt.alt, moTaTen: mt.ten,
       thieuY: soat.thieu, soY: soat.tong, duY: soat.thieu.length === 0,
       vi: 'Vẽ trong máy này. Không một chữ nào rời khỏi trình duyệt — ' +
           'không có lượt hỏi mạng nào trong cả lượt vẽ.'};
@@ -38583,8 +38797,15 @@ var G = window.G || {}; window.G = G;
             {ma: 'sau',  ten: 'Nền đêm sâu — nhúng vào web app'},
             {ma: 'sang', ten: 'Nền sáng theo giao diện đang chạy'},
             {ma: 'but',  ten: 'Giấy bút màu — vẽ tay, không cần cửa đi ra'}],
+      /* Khổ in khai thêm milimét, mật độ và ngưỡng chữ — để bộ kiểm
+         đo bằng chính con số bộ vẽ đang dùng, không giữ bản chép. */
+      chuNhoNhatMm: CHU_NHO_NHAT_MM,
       kho: Object.keys(KHO_GIAY).map(function (m) {
-        return {ma: m, ten: KHO_GIAY[m].ten}; })};
+        var k = KHO_GIAY[m];
+        return k.in
+          ? {ma: m, ten: k.ten, in: true, mmR: k.mmR, mmC: k.mmC, dpi: k.dpi,
+             w: k.w, h: k.h}
+          : {ma: m, ten: k.ten, w: k.w, h: k.h}; })};
   };
 })();
 

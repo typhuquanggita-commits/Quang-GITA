@@ -252,6 +252,55 @@ hình, và chặn cả trình đơn **Xuất PDF** lẫn **Sao lưu** của bả
 
 ---
 
+## In ra giấy
+
+Ba khổ in, đo bằng **milimét** ở 300 điểm mỗi tấc Anh (mức nhà in đòi):
+
+| Khổ | Kích thước | Điểm ảnh |
+|---|---|---|
+| `a4d` | A4 dọc 210×297mm | 2480×3508 |
+| `a4n` | A4 ngang 297×210mm | 3508×2480 |
+| `a5d` | A5 dọc 148×210mm | 1748×2480 |
+
+    node tools/tam-ra-anh.js de-bai.json /tmp/in a4d
+
+Hai điều kiện cứng của luật C22, và cả hai là **sự thật chứ không phải sở
+thích**:
+
+- **Khổ in không nhận nền đêm sâu.** Một tờ A4 phủ kín mực tối tốn gần một
+  mililít mực mỗi bản, làm giấy cong vì ướt, và ra đục chứ không ra sâu —
+  nền sâu đẹp là nhờ màn hình *tự* phát sáng, còn giấy chỉ hắt lại. Gọi nền
+  `sau` ở khổ in thì máy **từ chối**, không tự đổi hộ: đổi nền là đổi tương
+  phản của mọi chữ trên tấm, và đó là quyết định của người dựng.
+- **Chữ nhỏ nhất phải đạt 2,1mm khi in.** Dưới mức ấy không phải "chữ nhỏ",
+  là chữ không ai đọc — mà một tấm có phần không ai đọc thì phần ấy đáng lẽ
+  không nên có. Máy không phóng chữ cho lọt ngưỡng.
+
+Bộ kiểm đo lại cả hai từ chuỗi SVG, cộng thêm **lề 5mm**: máy xén giấy có sai
+số, nên chữ sát mép là chữ có ngày bị xén mất một phần.
+
+Còn chờ chủ hệ đúng hai thứ vẫn là lựa chọn (`TG-02`): mã mực CMYK cho từng
+sắc thương hiệu, và loại giấy. Chưa chốt thì vẫn in được — chỉ là bản in có
+thể lệch sắc so với màn hình.
+
+---
+
+## Chữ thay ảnh
+
+Mỗi tấm phát hành mang theo một **nhãn ngắn** và một **câu tả**, ghép từ đúng
+những chữ đã đặt lên tấm — không thêm một từ nào máy tự nghĩ. Máy dựng được
+câu ấy chứ không phải đoán, vì chính nó đặt từng chữ.
+
+Câu ấy nằm **trong chính SVG** (`<title>` và `<desc>`), nên dán tấm sang chỗ
+khác thì chữ đi theo. Ghi vào sổ bằng cửa `ghiChuThayAnh`; **chưa có thì
+không phát hành được** (luật C21).
+
+Vì sao chặn thật chứ không nhắc: một tấm thiếu chữ thay ảnh trông y hệt một
+tấm đủ — với người sáng mắt. Chỗ hỏng chỉ hiện ra với đúng người không có
+cách nào báo lại là mình vừa mất gì.
+
+---
+
 ## Dựng một cuốn phim từ bộ tấm
 
 Ba bước, chạy ở máy của Học viện — không gửi gì ra ngoài:

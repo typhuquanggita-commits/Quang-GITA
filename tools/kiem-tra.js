@@ -10811,6 +10811,146 @@ const { chromium } = require(PW);
            · AP_PHICH     "CỔNG NGHIỆM" ✕ "THU NGÀY BẢY" — 3,0
          Ghi lại vì một phép kiểm chưa từng đỏ thì chưa phải phép
          kiểm, và bốn dòng này là bằng chứng nó không câm. */
+      /* ── CHỮ THAY ẢNH (9.99.33, luật C21) ──
+
+         Đo bốn điều, và điều thứ ba mới là điều đáng đo:
+
+           1. mọi loại hình vẽ được đều SINH RA câu mô tả
+           2. câu ấy nằm TRONG chính SVG (<title> và <desc>), không
+              phải ở một biến bên ngoài — dán chuỗi SVG sang chỗ khác
+              thì chữ phải đi theo
+           3. KHÔNG MỘT TỪ NÀO trong câu mô tả là từ máy tự nghĩ: mọi
+              từ phải có mặt trong chữ đã đặt lên tấm, trong nhiệm vụ,
+              hoặc trong tên loại hình. Đây là chỗ luật C10 sống hay
+              chết — một câu tả "đẹp hơn" thực tế là một suy diễn, và
+              suy diễn thì không ai đối chiếu lại được
+           4. dấu thương hiệu KHÔNG lọt vào phần ruột: nó đứng y hệt
+              trên mọi tấm nên không phân biệt được tấm nào */
+      r.moTaThieu = [];
+      r.moTaBia = [];
+      for (const loai of G.veThiGiacBiet().loaiHinh) {
+        const vt = G.veThiGiac(nen(loai, RIENG[loai] || CHU));
+        if (!vt.ok) continue;
+        if (!vt.moTa || !vt.moTaTen) { r.moTaThieu.push(loai + ' · không có moTa'); continue; }
+        if (vt.svg.indexOf('<title>') < 0 || vt.svg.indexOf('<desc>') < 0)
+          r.moTaThieu.push(loai + ' · câu mô tả không nằm trong SVG');
+        if (/GITA 365|THỊNH VƯỢNG/.test(vt.moTa))
+          r.moTaThieu.push(loai + ' · dấu thương hiệu lọt vào phần ruột');
+
+        /* Kho từ HỢP LỆ: chữ trên tấm + nhiệm vụ + tên loại hình +
+           mã chặng. Mọi từ của câu mô tả phải nằm trong kho ấy. */
+        const bo = s => String(s || '').toLowerCase()
+          .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd')
+          .replace(/[^a-z0-9]+/g, ' ');
+        const tenLoai = (G.TG_LOAIHINH || []).filter(v => v.ma === loai)
+          .map(v => v.ten).join(' ');
+        const banGoc = new Set(
+          (bo((vt.svg.match(/<text[^>]*>([\s\S]*?)<\/text>/g) || [])
+              .map(t => t.replace(/<[^>]+>/g, ' ')).join(' ')) + ' ' +
+           bo(nen(loai, '').nhiemVu) + ' ' + bo(tenLoai) + ' ' +
+           bo('chang tren tam T1 T2 T3 T4 T5'))
+          .split(' ').filter(Boolean));
+        const la = bo(vt.moTa).split(' ').filter(Boolean)
+          .filter(w => !banGoc.has(w));
+        if (la.length)
+          r.moTaBia.push(loai + ' · từ không có trên tấm: ' + la.slice(0, 6).join(' '));
+      }
+
+      /* ── BẢN IN, ĐO BẰNG MILIMÉT (9.99.33, luật C22) ──
+
+         Đo LẠI từ đầu, không tin lời khai của bộ vẽ: lấy chuỗi SVG,
+         tự tính cỡ chữ nhỏ nhất có kể phép biến hình bao ngoài, tự
+         đổi ra milimét bằng chính mật độ khổ ấy khai. Bộ vẽ có phép
+         chặn riêng của nó; hai phép cùng đo một thứ mà từ hai phía
+         thì mới bắt được ngày một phía sai.
+
+         Và đo LỀ: nhà in xén giấy có sai số, nên chữ đứng sát mép
+         trang là chữ có ngày bị xén mất một phần. Năm milimét là mức
+         nhà in nào cũng chịu được.
+
+         PHÉP NÀY ĐÃ TỪNG ĐỎ: tắt thử phép chặn nền tối trong bộ vẽ
+         thì nó báo `a4d · gọi nền sâu mà không bị từ chối đúng cách`.
+
+         VÀ NÓ ĐÃ BẮT MỘT LỖI THẬT NGAY LƯỢT CHẠY ĐẦU: dấu GITA tới
+         9.99.32 vẽ ở cỡ điểm ảnh CỐ ĐỊNH, nên trên tờ A4 dòng "HỆ
+         SINH THÁI GIA ĐÌNH THỊNH VƯỢNG" ra 0,89mm — dấu nhận diện
+         của Học viện in ra không đọc được. Lỗi ấy có từ lâu và không
+         phép đo nào thấy, vì trên màn hình mọi khổ đều quanh 1080
+         nên nó không bao giờ hiện. */
+      r.inLoi = [];
+      {
+        const biet = G.veThiGiacBiet();
+        const khoIn = (biet.kho || []).filter(k => k.in);
+        if (!khoIn.length) r.inLoi.push('không khai khổ in nào');
+        const MM = 25.4, LE_MM = 5;
+        /* Cùng phép đo cỡ chữ với bộ vẽ, viết lại ở đây — cố ý. Đây
+           là chỗ DUY NHẤT trong bộ kiểm được phép giữ một bản thứ
+           hai của một phép tính, vì mục đích của nó chính là đối
+           chiếu hai bản. */
+        const coNhoNhat = svg => {
+          let nho = null; const ngan = [1];
+          const re = /<(\/?)(g|text)\b([^>]*)>/g; let m;
+          while ((m = re.exec(svg))) {
+            if (m[2] === 'g') {
+              if (m[1]) { if (ngan.length > 1) ngan.pop(); }
+              else {
+                const s = /scale\(([\d.]+)/.exec(m[3]);
+                ngan.push(ngan[ngan.length - 1] * (s ? Number(s[1]) : 1));
+              }
+            } else if (!m[1]) {
+              const c = /font-size="([\d.]+)"/.exec(m[3]);
+              if (c) {
+                const v = Number(c[1]) * ngan[ngan.length - 1];
+                if (v > 0 && (nho === null || v < nho)) nho = v;
+              }
+            }
+          }
+          return nho;
+        };
+        for (const k of khoIn) {
+          const vi = G.veThiGiac(nen('KHUNG', RIENG.KHUNG), k.ma);
+          if (!vi.ok) { r.inLoi.push(k.ma + ' · không vẽ được: ' +
+            String(vi.error).slice(0, 60)); continue; }
+          if (vi.w !== k.w || vi.h !== k.h)
+            r.inLoi.push(k.ma + ' · khổ ra ' + vi.w + '×' + vi.h + ' ≠ ' + k.w + '×' + k.h);
+          if (Math.round(k.mmR * k.dpi / MM) !== k.w ||
+              Math.round(k.mmC * k.dpi / MM) !== k.h)
+            r.inLoi.push(k.ma + ' · điểm ảnh không khớp milimét ở ' + k.dpi + ' dpi');
+          if (vi.nen === 'sau') r.inLoi.push(k.ma + ' · ra nền đêm sâu');
+          const mm = coNhoNhat(vi.svg) * MM / k.dpi;
+          if (mm < biet.chuNhoNhatMm - 0.005)
+            r.inLoi.push(k.ma + ' · chữ nhỏ nhất ' + mm.toFixed(2) + 'mm < ' +
+              biet.chuNhoNhatMm + 'mm');
+          /* Nền đêm sâu gọi thẳng phải bị TỪ CHỐI, không phải bị đổi
+             hộ: đổi hộ là sửa quyết định của người dựng trong im lặng. */
+          const vs = G.veThiGiac(nen('KHUNG', RIENG.KHUNG), k.ma, 'sau');
+          if (vs.ok || vs.code !== 'NENTOIDEIN')
+            r.inLoi.push(k.ma + ' · gọi nền sâu mà không bị từ chối đúng cách');
+
+          /* Lề: đọc hộp bao thật trong trình duyệt, rồi đổi ra mm. */
+          const wI = document.createElement('div');
+          wI.style.cssText = 'position:absolute;left:0;top:0';
+          wI.innerHTML = vi.svg; document.body.appendChild(wI);
+          const sI = wI.querySelector('svg');
+          sI.style.cssText = 'width:' + vi.w + 'px;height:' + vi.h + 'px;max-width:none';
+          const BI = sI.getBoundingClientRect();
+          let satNhat = 1e9;
+          for (const t of sI.querySelectorAll('text')) {
+            const q = t.getBoundingClientRect();
+            if (q.width <= 0) continue;
+            satNhat = Math.min(satNhat, q.left - BI.left, q.top - BI.top,
+              (BI.left + vi.w) - q.right, (BI.top + vi.h) - q.bottom);
+          }
+          wI.remove();
+          if (satNhat < 1e8) {
+            const leMm = satNhat * MM / k.dpi;
+            if (leMm < LE_MM)
+              r.inLoi.push(k.ma + ' · chữ cách mép chỉ ' + leMm.toFixed(1) +
+                'mm, dưới ' + LE_MM + 'mm — máy xén giấy có sai số');
+          }
+        }
+      }
+
       r.mucDe = [];
       {
         const doM = document.createElement('canvas').getContext('2d');
@@ -11085,7 +11225,9 @@ const { chromium } = require(PW);
       !(ra.hinhLech || []).length && !(ra.cotNhieuSac || []).length &&
       !(ra.ngoaiTam || []).length && !(ra.anhSaiCho || []).length &&
       !(ra.dauTroi || []).length && !(ra.rayLech || []).length &&
-      !(ra.boLech || []).length && !(ra.mucDe || []).length;
+      !(ra.boLech || []).length && !(ra.mucDe || []).length &&
+      !(ra.moTaThieu || []).length && !(ra.moTaBia || []).length &&
+      !(ra.inLoi || []).length;
     bao(!ra.khongCoBoVe && !ra.tran.length && !ra.de.length && !ra.hong.length &&
         ra.veDuoc.length >= 12 && choiDu && brandDu && roDu,
       'BỘ VẼ TRONG MÁY GIỮ CHỮ Ở TRONG TẤM, VÀ TỪ CHỐI ĐÚNG BA CHỖ PHẢI TỪ CHỐI. SVG không báo lỗi khi chữ tràn ra ngoài khung — nó cứ vẽ, và phần ngoài khung biến mất lặng lẽ, nên không có lượt chạy nào đỏ và không ai biết cho tới lúc tấm ấy đã dán lên giao diện. Lần chạy demo đầu đúng dính chỗ này: bản đồ hành trình đặt mốc đầu ở mép trái và mốc cuối ở mép phải, mà nhãn dưới mốc căn GIỮA, nên nửa nhãn của hai mốc ngoài cùng đổ hẳn ra ngoài tấm; tôi bắt được vì mở ảnh ra nhìn, mà mở ảnh ra nhìn thì không phải một phép đo. Phép này dựng từng loại hình với một đoạn chữ dài cố ý — chỗ tràn chỉ lộ khi chữ đủ dài để phải ngắt dòng — rồi đọc hộp bao thật của MỌI thẻ text bằng chính trình duyệt và đòi hộp ấy nằm trong khung. Đo thêm một lớp lỗi KHÁC hẳn mà phép đo tràn không thấy: chữ ĐÈ LÊN CHỮ. Bản đồ hành trình cho nhãn rộng 0,94 ô nên hai nhãn cạnh nhau chạm đúng vào nhau, vẫn nằm gọn trong khung — và hai mục dính liền thì mắt đọc thành một câu dài, tấm hình mất đúng việc của nó là tách năm chặng ra. Đo luôn ba lần phải từ chối, vì một bộ vẽ chịu vẽ mọi thứ thì cổng Tầng ở trên thành đồ trang trí: bản ghi chưa có dấu qua cổng thì không vẽ; loại hình chưa có bộ vẽ thì nói CHƯA CÓ chứ không nhét chữ vào một khung chung, vì một tấm vẽ đại là một suy diễn có màu và luật C10 cấm đúng thứ đó; và loại MỘT CON SỐ mà nội dung không có số nào thì dừng, máy không tự nghĩ ra một con số để lấp chỗ trống; lưới ô cũng không tự cắt nội dung thành ô, vì cắt kiểu gì cũng là đoán. Đo thêm hai luật thương hiệu thay vì tin chú giải: sáu sắc của lưới ô phải TRUY ĐƯỢC về G.BRAND.mau — bảng đã duyệt từ v7.0 đã sẵn năm sắc tầng cộng một sắc nhắc, nên tự chọn sáu màu cho đẹp là dựng bảng màu thứ hai mà không ai biết là có bản thứ hai; và dấu GITA phải KHÔNG nhận bóng đổ, vì BRAND.camKy ghi thẳng \"không đổi màu logo, không nghiêng, không thêm bóng đổ\" — nó là thứ duy nhất trong tấm bị cấm nhận bóng trong khi mọi tấm kính quanh nó đều có, nên đúng là chỗ một lượt sửa bố cục dễ quét luôn cả dấu vào. Và đo TƯƠNG PHẢN trên chính pixel đã vẽ ra, không đọc mã màu rồi tự tính: nền là chuyển sắc chồng quầng sáng chồng tấm kính bán trong, nên màu SAU một chữ không phải màu nào ai gõ ra mà là kết quả của bốn lớp chồng lên nhau — cách duy nhất biết đúng là dựng bản thứ hai đã xoá hết chữ, rasterize nó, rồi lấy màu trung bình đúng ô chữ sẽ nằm. Ngưỡng WCAG AA: 3,0 cho chữ từ 24px, 4,5 cho chữ thường. Một tấm hình rất sang mà chữ chìm thì nó không sang, nó hỏng. Chữ CHUYỂN SẮC cũng bị đo, và đo TỪNG CHẶNG MÀU của dải: bản đầu bỏ qua mọi thẻ có fill=url() — một lỗ đúng ở chỗ nguy hiểm nhất, vì chữ chuyển sắc luôn là câu to nhất trong tấm, và một dải có hai đầu nên đầu này đọc được không có nghĩa đầu kia đọc được',
@@ -11122,7 +11264,10 @@ const { chromium } = require(PW);
              (ra.dauTroi || []).length ? 'DÒNG ĐÁNH DẤU TRÔI VÀO THÂN BÀI: ' + ra.dauTroi.join(' · ') : '',
              (ra.rayLech || []).length ? 'ĐƯỜNG DỌC KHÔNG TRÙNG: ' + ra.rayLech.join(' · ') : '',
              (ra.boLech || []).length ? 'BỘ ẢNH KHÔNG CÙNG KIỂU: ' + ra.boLech.join(' · ') : '',
-             (ra.mucDe || []).length ? 'MỰC ĐÈ LÊN MỰC: ' + ra.mucDe.join(' · ') : ''
+             (ra.mucDe || []).length ? 'MỰC ĐÈ LÊN MỰC: ' + ra.mucDe.join(' · ') : '',
+             (ra.moTaThieu || []).length ? 'CHỮ THAY ẢNH THIẾU: ' + ra.moTaThieu.join(' · ') : '',
+             (ra.moTaBia || []).length ? 'CHỮ THAY ẢNH BỊA TỪ KHÔNG CÓ TRÊN TẤM: ' + ra.moTaBia.join(' · ') : '',
+             (ra.inLoi || []).length ? 'BẢN IN SAI: ' + ra.inLoi.join(' · ') : ''
             ].filter(Boolean).join(' · ')));
   }
 

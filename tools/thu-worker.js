@@ -3000,6 +3000,66 @@ bao(!(await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
 bao((await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
   id:idTG, den:'duyet'})).than.ok, 'Super Admin duyệt được');
 
+/* ══ C21 · KHÔNG PHÁT HÀNH MỘT TẤM HỆ KHÔNG NÓI ĐƯỢC BẰNG LỜI ══
+
+   Bộ thử này chưa bao giờ đi tới bậc PHÁT HÀNH — nó dừng ở "duyệt".
+   Nên mọi phép chặn đặt ở bậc cuối cùng đều chưa từng được thử, và
+   một phép chặn chưa từng chạy thì không ai biết nó có chạy không.
+   Ghi lại chỗ này vì đó chính là lý do luật C21 suýt ra đời không có
+   phép đo nào. */
+{
+  /* Bản ghi RIÊNG cho khối này. Bản đầu tôi dùng chung bản ghi của
+     phép thử thang bậc ở trên — và đẩy nó lên tận PHÁT HÀNH, nên phép
+     thử ngay sau đó (đòi bản cũ còn ở bậc "duyệt") đỏ. Một phép thử
+     đổi trạng thái thứ phép thử khác đang đọc thì cái đỏ ra không nói
+     gì về mã cả, nó chỉ nói về thứ tự chạy. */
+  const rieng = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:{tang:'T1', loaiHinh:'KHUNG',
+      nhiemVu:'Giúp nhà biết phần việc của mỗi người trong chặng nền',
+      noiDung:'Trang giới thiệu chặng bảy ngày nhận diện: lắng nghe, ghi lại, ' +
+              'đọc cùng nhau, và chốt một việc cho chặng sau.',
+      nguoiXem:['PHUHUYNH'], boCuc:'lưới sáu ô'}});
+  const idC21 = rieng.than.id;
+  for (const b of ['mophong', 'duyet', 'hoanThien'])
+    await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+      id:idC21, den:b});
+
+  const thieu = await goi({fn:'chuyenBacThiGiac', token:tkSA,
+    u:'superadmin@gita365.vn', id:idC21, den:'phatHanh'});
+  bao(!thieu.than.ok && thieu.than.code === 'THIEUCHUTHAYANH',
+    'C21 · THIẾU CHỮ THAY ẢNH THÌ KHÔNG PHÁT HÀNH — người đọc bằng máy đọc ' +
+    'màn hình nghe được đúng một chữ "ảnh", và họ không có cách nào báo lại ' +
+    'là mình vừa mất gì, nên máy phải là chỗ bắt',
+    thieu.than.error);
+
+  bao(!(await goi({fn:'ghiChuThayAnh', token:tkSA, u:'superadmin@gita365.vn',
+    id:idC21, moTa:'Quá ngắn', moTaTen:'x'})).than.ok,
+    'câu mô tả quá ngắn bị từ chối — một câu không nói được gì thì tệ hơn ' +
+    'không có, vì nó làm phép soát bên dưới tưởng đã xong');
+
+  bao(!(await goi({fn:'ghiChuThayAnh', token:tkSA, u:'superadmin@gita365.vn',
+    id:idC21, moTa:'x'.repeat(420), moTaTen:'Khung phương pháp'})).than.ok,
+    'câu mô tả quá dài bị từ chối — máy đọc màn hình đọc liền một mạch');
+
+  bao(!(await goi({fn:'ghiChuThayAnh', token:tkSA, u:'superadmin@gita365.vn',
+    id:idC21, moTa:'Khung phương pháp, chặng T1. Giúp nhà biết phần việc mỗi người.'})).than.ok,
+    'thiếu nhãn ngắn bị từ chối — máy đọc màn hình đọc nhãn TRƯỚC');
+
+  const ghi = await goi({fn:'ghiChuThayAnh', token:tkSA, u:'superadmin@gita365.vn',
+    id:idC21, moTaTen:'GITA 365 · Khung phương pháp — Giúp hiểu cách giải mã biểu hiện',
+    moTa:'Khung phương pháp, chặng T1. Giúp nhà biết phần việc của mỗi người. ' +
+         'Trên tấm: LẮNG NGHE · GHI LẠI · ĐỌC CÙNG · CHỌN MỘT.'});
+  const sauGhi = db.prepare('SELECT seoAlt, seoTen FROM deXuatThiGiac WHERE id=?').get(idC21);
+  bao(ghi.than.ok && sauGhi.seoAlt && sauGhi.seoTen,
+    'ghi được chữ thay ảnh, và nó vào đúng cột seoAlt/seoTen của sổ',
+    'cột ấy có từ lâu mà tới 9.99.32 chưa dòng mã nào ghi vào — mục D7 của ' +
+    'thang chấm nặng năm điểm cho một thứ không tồn tại');
+
+  bao((await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:idC21, den:'phatHanh'})).than.ok,
+    'ghi xong chữ thay ảnh thì phát hành được');
+}
+
 /* ══ SỬA MỘT BẢN ĐÃ DUYỆT = GHI BẢN MỚI, KHÔNG GHI ĐÈ ══ */
 const banHai = await goi({fn:'banMoiThiGiac', token:tkSA, u:'superadmin@gita365.vn',
   id:idTG, deXuat:{boCuc:'một cổng, ba điều kiện, thêm dấu tick'}});

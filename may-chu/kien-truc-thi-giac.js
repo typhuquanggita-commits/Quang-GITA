@@ -383,6 +383,27 @@ export async function chuyenBacThiGiac(y, env, db, hoSo) {
              'lớp còn thiếu nữa. Gửi đề bài ra bộ tạo ảnh, hoặc nạp một ảnh đã ' +
              'có văn bản đồng ý vào kho ảnh, rồi phát hành.'};
 
+  /* ── C21: KHÔNG PHÁT HÀNH MỘT TẤM HỆ KHÔNG NÓI ĐƯỢC BẰNG LỜI ──
+     Bộ vẽ dựng sẵn câu mô tả từ chính chữ nó đặt lên tấm, và trả về
+     trong `moTa`. Chỗ này chỉ đòi câu ấy đã được ghi vào sổ.
+
+     Vì sao chặn ở bậc PHÁT HÀNH chứ không sớm hơn: câu mô tả dựng từ
+     bản VẼ RA, mà bản vẽ ra còn đổi tới tận bậc hoàn thiện. Đòi sớm
+     là đòi một câu sẽ phải viết lại.
+
+     Vì sao chặn thật chứ không nhắc: một tấm thiếu chữ thay ảnh trông
+     y hệt một tấm đủ — với người sáng mắt. Chỗ hỏng chỉ hiện ra với
+     đúng người không tự kiểm được, nên nó sẽ không bao giờ được báo
+     lại. Máy phải là chỗ bắt. */
+  if (den === 'phatHanh' && !String(x.seoAlt || '').trim())
+    return {ok: false, code: 'THIEUCHUTHAYANH',
+      error: 'Tấm này chưa có CHỮ THAY ẢNH, nên chưa phát hành được (luật ' +
+             'C21). Người đọc bằng máy đọc màn hình nghe được đúng một chữ ' +
+             '"ảnh", và cả tấm biến mất với họ — mà họ không có cách nào báo ' +
+             'lại là mình vừa mất gì. Bộ vẽ đã dựng sẵn câu ấy từ chính chữ ' +
+             'nó đặt lên tấm: lấy `moTa` của lượt vẽ và ghi vào bằng cửa ' +
+             'ghiChuThayAnh, rồi phát hành.'};
+
   /* ── TỪ CHỐI PHẢI NÓI VÌ SAO ──
      Một lượt từ chối không lý do thì lần sau máy đề xuất y hệt, và
      người từ chối phải nói lại cùng một câu tới lần thứ mười. */
@@ -964,6 +985,61 @@ export async function xuatTamThiGiac(y, env, db, hoSo) {
         'người mở được màn hình thì đã có tấm trong tay. Lớp giữ thật nằm ở kho ' +
         'nội dung đóng gói theo quyền — vai không được cấp thì màn hình ấy không ' +
         'bao giờ có nội dung để mà xuất.'};
+}
+
+/* ═══════════ GHI CHỮ THAY ẢNH (luật C21, bản 9.99.33) ═══════════
+
+   Câu mô tả dựng ở TRÌNH DUYỆT, vì chỉ chỗ ấy mới biết tấm vẽ ra có
+   chữ gì — máy chủ không chạy bộ vẽ. Nên cửa này nhận câu đã dựng và
+   cất vào sổ.
+
+   Máy chủ KHÔNG tự nghĩ ra câu mô tả, và cũng không sửa câu nhận về:
+   sửa là thêm chữ chưa ai đặt lên tấm, tức đúng thứ luật C10 cấm.
+
+   Nó chỉ soát ba điều mà chỗ nào cũng soát được:
+     · có chữ không, và có đủ dài để nói được gì không
+     · dài quá mức người nghe chịu được không
+     · nhãn ngắn có, để máy đọc màn hình đọc trước tiên */
+const MOTA_NGAN_NHAT = 25;
+const MOTA_DAI_NHAT = 400;
+
+export async function ghiChuThayAnh(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+
+  const id = String((y || {}).id || '').trim();
+  const x = await db.prepare('SELECT id,trangThai FROM deXuatThiGiac WHERE id = ?')
+    .bind(id).first();
+  if (!x) return {ok: false, error: 'Không tìm thấy đề xuất này.'};
+
+  const alt = String((y || {}).moTa || '').trim();
+  const ten = String((y || {}).moTaTen || '').trim();
+
+  if (alt.length < MOTA_NGAN_NHAT)
+    return {ok: false, code: 'MOTANGANQUA',
+      error: 'Chữ thay ảnh dài ' + alt.length + ' ký tự — dưới ' + MOTA_NGAN_NHAT +
+             ' thì nó không nói được tấm này vẽ gì, và một câu không nói được gì ' +
+             'thì tệ hơn không có: nó làm phép soát bên dưới tưởng đã xong.'};
+  if (alt.length > MOTA_DAI_NHAT)
+    return {ok: false, code: 'MOTADAIQUA',
+      error: 'Chữ thay ảnh dài ' + alt.length + ' ký tự, quá ' + MOTA_DAI_NHAT +
+             '. Máy đọc màn hình đọc liền một mạch không xuống dòng, nên một câu ' +
+             'dài hơn thế là người nghe mất dấu giữa chừng. Bộ vẽ đã tự cắt ở ' +
+             '300 — câu này dài hơn nghĩa là nó không phải do bộ vẽ dựng.'};
+  if (!ten)
+    return {ok: false, code: 'THIEUNHAN',
+      error: 'Thiếu nhãn ngắn. Máy đọc màn hình đọc nhãn TRƯỚC, và người nghe ' +
+             'quyết định có nghe tiếp phần dài hay không dựa vào đúng nhãn ấy.'};
+
+  await db.prepare('UPDATE deXuatThiGiac SET seoAlt = ?, seoTen = ? WHERE id = ?')
+    .bind(alt, ten, x.id).run();
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_CHUTHAYANH',
+    doiTuong: x.id, chiTiet: ten.slice(0, 120)});
+
+  return {ok: true, id: x.id, moTa: alt, moTaTen: ten,
+    vi: 'Đã ghi. Câu này do bộ vẽ dựng từ chính chữ nó đặt lên tấm — máy chủ ' +
+        'không thêm và không sửa một từ nào, vì thêm là mô tả thứ không có ' +
+        'trên tấm.'};
 }
 
 export async function soDiRa(y, env, db, hoSo) {
