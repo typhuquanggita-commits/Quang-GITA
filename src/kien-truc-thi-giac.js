@@ -532,8 +532,31 @@ G.VIEWS = G.VIEWS || {};
     var x = ((d && d.ds) || []).filter(function (y) { return y.id === id; })[0];
     if (!x) return U.toast('Không tìm thấy bản ghi này trong sổ.', 'err');
 
+    /* ── ẢNH CỬA MANG VỀ PHẢI TỚI ĐƯỢC BỘ VẼ (9.99.38) ──
+       Cửa đi ra cất ảnh vào kho R2 và ghi khoá tệp `tg/DR-….png` vào
+       cột anhNguoi. Khoá tệp KHÔNG phải một đường dẫn trình duyệt mở
+       được — nó là một chỗ trong kho, và kho ấy chỉ máy chủ chạm tới.
+
+       Nên trước khi vẽ, xin ảnh về bằng cửa docAnhThiGiac rồi thay
+       khoá tệp bằng chuỗi data. Không có nhịp này thì cả vòng đi–về
+       chạy đúng tới bước cuối rồi bộ vẽ nhận một chuỗi nó không mở
+       được — và tấm ra vẫn là Ô CHỜ, trong khi mọi phép đo đều xanh.
+       Chỗ hỏng nằm ở MỐI NỐI, đúng như mọi lần trước. */
+    if (x.anhNguoi && /^tg\//.test(String(x.anhNguoi)) && !x._anhData &&
+        G.goiMayChu) {
+      G.goiMayChu('docAnhThiGiac', {id: x.id}).then(function (a) {
+        if (a && a.ok && a.anh) { x._anhData = a.anh; G.ktVe(id, kho); }
+        else U.toast('Không lấy được ảnh lớp người: ' +
+          ((a && a.error) || 'không rõ'), 'err');
+      });
+      return;
+    }
     var biet = G.veThiGiacBiet ? G.veThiGiacBiet() : {kho: []};
-    var r = G.veThiGiac(x, kho);
+    /* Bộ vẽ đọc `anhNguoi` — đưa nó chuỗi data, giữ nguyên bản ghi
+       gốc để không ghi đè thứ sổ đang giữ. */
+    var xVe = x._anhData
+      ? Object.assign({}, x, {anhNguoi: x._anhData}) : x;
+    var r = G.veThiGiac(xVe, kho);
     U.modal('<h3>Vẽ thử · ' + h(x.loaiHinh) + '</h3>' +
       (r.ok
         ? '<p class="sm muted mt">' + h(r.kho + ' · ' + r.vi) + '</p>' +
