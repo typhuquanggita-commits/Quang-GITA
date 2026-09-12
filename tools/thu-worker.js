@@ -3668,6 +3668,39 @@ bao(maBanChep.length === 24 &&
     'mẫu trống sinh theo ĐÚNG khuôn được chọn', mauQT.khuon + ' · ' + mauQT.soKhoi + ' khối');
 }
 
+/* ── TỪ ĐIỂN KL08: DÒ THEO PHẠM VI NGƯỜI ĐỌC ──
+   Đây là chỗ tôi phải cẩn thận nhất: bảng cấm→thay viết cho LỜI NÓI
+   VỚI KHÁCH, và áp thẳng lên văn nội bộ là lặp lại đúng lỗi 314 dòng
+   của bản 9.99.44. */
+{
+  const cauKhach = 'Con thất bại rồi, cố lên, đừng để chậm tiến độ.';
+  bao(ndMod.soatKL(cauKhach, 'noiBo').length === 0 &&
+      ndMod.soatKL(cauKhach, 'khach').length === 3,
+    'lớp `khach` CHỈ dò khi bài viết cho khách — cùng một câu, bài nội bộ sạch, bài cho khách bắt ba cụm',
+    'noiBo 0 · khach ' + ndMod.soatKL(cauKhach, 'khach').length);
+  bao(ndMod.soatKL('Bạn phải làm cho xong.', 'noiBo').length === 1,
+    'lớp `moi` dò ở MỌI bài — kể cả nội bộ: người đọc nội bộ rồi sẽ viết lại đúng giọng ấy cho khách');
+  /* Lớp `nhac` CỐ Ý không dò. Nếu có ngày ai đó bật nó lên thì phép đo
+     này đỏ, và đó là lúc phải đọc lại vì sao nó tắt. */
+  bao(ndMod.soatKL('Số liệu này sai, và vấn đề nằm ở bước hai.', 'khach').length === 0,
+    'lớp `nhac` KHÔNG dò kể cả với bài cho khách — "sai" và "vấn đề" quá thường, dò thì báo sai nhiều hơn báo đúng');
+  {
+    const rKh = await ndMod.soatNoiDung({chu: baiDu.replace(
+      'Tối nay ghi 3 dòng, không thêm nhận xét.',
+      'Tuần trước con thất bại, cố lên nhé.'), tang: 'T1', doiTuong: 'khach'},
+      env, env.CSDL, saR01);
+    const rNb = await ndMod.soatNoiDung({chu: baiDu.replace(
+      'Tối nay ghi 3 dòng, không thêm nhận xét.',
+      'Tuần trước con thất bại, cố lên nhé.'), tang: 'T1'}, env, env.CSDL, saR01);
+    bao(rKh.doiTuong === 'khach' && rKh.kl.length === 2 &&
+        rNb.doiTuong === 'noiBo' && rNb.kl.length === 0,
+      'sổ soát nhận ĐỐI TƯỢNG của bài và dò theo đúng phạm vi ấy; mặc định là nội bộ',
+      'khách bắt ' + rKh.kl.length + ' · nội bộ bắt ' + rNb.kl.length);
+    bao(rKh.cam.some(c => c.ma === 'KL' && c.canhBao === true),
+      'lệch từ điển vào sổ dạng CẢNH BÁO, không chặn cổng 1');
+  }
+}
+
 /* ── BỘ MIỄN DỊCH: ĐỐI CHIẾU, KHÔNG HỨA ── */
 {
   const md = await ndMod.soatMienDich({}, env, env.CSDL, saR01);
@@ -3980,6 +4013,21 @@ bao((await goiND('napBai',
       {id: 'BND-T1', tieuDe: 'Sửa đè bài đã phát hành', chu: baiDu + '\nthêm dòng', tang: 'T1'},
       aiVIET)).error === 'DAPHATHANH',
   'bài ĐÃ PHÁT HÀNH không sửa đè — bài đã ở trong tay người đọc, ghi đè bản trong sổ là làm sổ nói khác thứ họ đang cầm');
+
+/* ── ĐỐI TƯỢNG CỦA BÀI GIỮ ĐƯỢC QUA LƯỢT LƯU ──
+   Từ điển KL08 dò theo cột `doiTuong`. Cột ấy mất qua lượt lưu thì
+   mọi bài thành nội bộ, và lớp `khach` không bao giờ chạy — hỏng im
+   lặng, vì bài vẫn qua cổng như thường. */
+{
+  const chuKL = baiDu.replace('Tối nay ghi 3 dòng, không thêm nhận xét.',
+    'Tuần trước con thất bại, cố lên nhé.');
+  await goiND('napBai', {id: 'BND-KL', tieuDe: 'Thư gửi phụ huynh',
+    chu: chuKL, tang: 'T1', doiTuong: 'khach'}, aiVIET);
+  const nopKL = await goiND('nopBai', {id: 'BND-KL'}, aiVIET);
+  bao(nopKL.ok && nopKL.soat.doiTuong === 'khach' && nopKL.soat.kl.length === 2,
+    'đối tượng của bài GIỮ được qua lượt lưu, và cổng 1 dò theo đúng nó — mất cột ấy thì mọi bài thành nội bộ và lớp `khach` không bao giờ chạy',
+    'bắt ' + ((nopKL.soat || {}).kl || []).length + ' cụm lệch từ điển');
+}
 
 /* ── CÂU NGHIỆP DƯ KHÔNG CHẶN CỔNG 1 ──
    Cảnh báo là cảnh báo. Nếu có ngày ai đó nâng nó thành cửa chặn thì

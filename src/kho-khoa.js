@@ -47,6 +47,8 @@ G.THUOC_CAP_PHEP = [
   'KN_DIEM_KHUON',
   /* v9.99.47 — bộ miễn dịch */
   'MD_MA_VB','MD_NHOM','MD_CHAN','MD_VIRUS','MD_CHOCHU',
+  /* v9.99.48 — từ điển KL08 */
+  'KL_MA_VB','KL_LOP','KL_THAY','KL_NGANKHO','KL_NHOM','KL_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

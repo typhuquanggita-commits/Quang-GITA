@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.47',
+  version: '9.99.48',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3583,6 +3583,8 @@ G.THUOC_CAP_PHEP = [
   'KN_DIEM_KHUON',
   /* v9.99.47 — bộ miễn dịch */
   'MD_MA_VB','MD_NHOM','MD_CHAN','MD_VIRUS','MD_CHOCHU',
+  /* v9.99.48 — từ điển KL08 */
+  'KL_MA_VB','KL_LOP','KL_THAY','KL_NGANKHO','KL_NHOM','KL_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -37989,13 +37991,14 @@ G.VIEWS = G.VIEWS || {};
     {ma: 'kho',      ten: 'Kho bài',   ic: 'vault'},
     {ma: 'toanhe',   ten: 'Đọc toàn hệ', ic: 'search'},
     {ma: 'miendich', ten: 'Miễn dịch',   ic: 'shield'},
+    {ma: 'tudien',   ten: 'Từ điển',     ic: 'quote'},
     {ma: 'chuannghe',ten: 'Chuẩn nghề',   ic: 'crown'},
     {ma: 'hienphap', ten: 'Hiến pháp', ic: 'book'},
     {ma: 'quyen',    ten: 'Quyền ký',  ic: 'lock'}
   ];
 
   G.bsNgan = G.bsNgan || 'soan';
-  G.bsD = G.bsD || {chu: '', tieuDe: '', tang: 'T1', id: '', khuon: 'BAIHOC'};
+  G.bsD = G.bsD || {chu: '', tieuDe: '', tang: 'T1', id: '', khuon: 'BAIHOC', doiTuong: 'noiBo'};
 
   /* Màu của từng bậc — lấy từ biến CSS, không gõ mã màu. Biến CSS đã
      tính sẵn cả nền sáng lẫn nền tối; một mã hex thì đúng ở một nền và
@@ -38138,8 +38141,9 @@ G.VIEWS = G.VIEWS || {};
   }
 
   /** Toàn bộ phép đo của một bài, chạy tại chỗ. */
-  G.bsSoat = function (chu, maKhuon) {
+  G.bsSoat = function (chu, maKhuon, maDoiTuong) {
     maKhuon = String(maKhuon || 'BAIHOC').toUpperCase();
+    maDoiTuong = String(maDoiTuong || 'noiBo') === 'khach' ? 'khach' : 'noiBo';
     var doc = docKhoi(chu, maKhuon);
     var rong = doBang(chu, G.KN_RONG || [], function (r) {
       return {cau: r.cau, thay: r.thay};
@@ -38249,6 +38253,25 @@ G.VIEWS = G.VIEWS || {};
     return {loi: loi.length, rong: rong.length, cg: cg.length,
       song: loi.length >= 2 && rong.length >= 2 && cg.length >= 2};
   }
+
+  /** Dò từ điển KL08 theo PHẠM VI người đọc.
+
+      Bảng cấm→thay của bản đặc tả viết cho LỜI NÓI VỚI KHÁCH. Áp thẳng
+      lên văn nội bộ thì "thất bại", "áp lực" bắt hàng nghìn dòng — đúng
+      lỗi 314-dòng của bản 9.99.44. Nên lớp `khach` chỉ dò khi bài viết
+      cho khách, và lớp `nhac` KHÔNG dò bao giờ: "sai" và "vấn đề" quá
+      thường, dò thì báo sai nhiều hơn báo đúng. */
+  G.bsKL = function (chu, doiTuong) {
+    var choKhach = String(doiTuong || 'noiBo') === 'khach';
+    var bang = (G.KL_THAY || []).filter(function (x) {
+      return x.pham === 'moi' || (x.pham === 'khach' && choKhach);
+    });
+    return doBang(chu, bang, function (x) {
+      return {cau: x.cam, thay: x.thay, vi: x.boiCanh};
+    }).map(function (x) {
+      return {dong: x.dong, bat: x.bat, thay: x.thay, boiCanh: x.vi};
+    });
+  };
 
   /** Nội dung này có NUÔI chủng virus nào không — phần máy đo được bằng
       CHỮ. Mười tám dấu hiệu kia đọc từ hành vi trong ứng dụng, và kho
@@ -38619,6 +38642,87 @@ G.VIEWS = G.VIEWS || {};
     G.bsD.buoi = null; veLai();
   };
 
+  /* ═══════════ NGĂN · TỪ ĐIỂN KL08 ═══════════
+
+     Theo tài liệu 3/20 của chủ hệ. Chỗ đáng đọc nhất của ngăn này là
+     cột PHẠM VI: nó nói cụm nào sai ở mọi chỗ, cụm nào chỉ sai khi
+     đang nói với khách, và cụm nào máy CỐ Ý không dò. */
+  var TEN_PHAM = {moi: 'mọi bài', khach: 'chỉ bài cho khách', nhac: 'máy KHÔNG dò'};
+  var MAU_PHAM = {moi: 'var(--bad)', khach: 'var(--warn)', nhac: 'var(--ink-4)'};
+
+  function nganTuDien() {
+    var o = '<div class="card"><b>' + h(G.KL_MA_VB || '') + ' — tám lớp từ vựng</b>' +
+      '<p class="sm muted mt">Nguyên tắc nền của bản đặc tả: <i>"Từ ngữ không chỉ ' +
+      'mô tả — từ ngữ tạo hành trình. Một từ sai có thể đóng cánh cửa; một từ ' +
+      'đúng có thể mở cả một mùa gió mới."</i></p>' +
+      '<p class="sm muted mt">Cột <b>phạm vi</b> là chỗ tôi thêm, và nó là chỗ ' +
+      'quan trọng nhất: bảng cấm→thay viết cho LỜI NÓI VỚI KHÁCH. Áp thẳng lên ' +
+      'văn nội bộ thì "thất bại", "áp lực", "sai" bắt hàng nghìn dòng — đúng lỗi ' +
+      '314 dòng của bản 9.99.44, và ba trăm dòng báo đúng thì lần thứ tư không ' +
+      'ai đọc cả báo cáo.</p></div>';
+
+    o += U.sec('Tám lớp KL01–KL08', 'Cột cuối nói máy canh được lớp ấy tới đâu');
+    o += U.tbl(['Lớp', 'Tên', 'Nội dung', 'Máy canh'],
+      (G.KL_LOP || []).map(function (l) {
+        return ['<b>' + h(l.ma) + '</b>', h(l.ten),
+          '<span class="sm">' + h(l.noiDung) + '</span>',
+          l.mayCanh ? '<span class="sm" style="color:var(--ok)">' + h(l.mayCanh) + '</span>'
+            : '<span class="sm" style="color:var(--ink-4)">chưa canh — ' +
+              h(l.vi || '') + '</span>'];
+      }));
+
+    var dem = {moi: 0, khach: 0, nhac: 0};
+    (G.KL_THAY || []).forEach(function (k) { dem[k.pham] = (dem[k.pham] || 0) + 1; });
+    o += U.sec('Bảng cấm → thay',
+      dem.moi + ' cụm dò ở mọi bài · ' + dem.khach + ' chỉ bài cho khách · ' +
+      dem.nhac + ' máy cố ý KHÔNG dò');
+    o += U.tbl(['Đừng nói', 'Nói thay', 'Phạm vi', 'Bối cảnh dùng', 'Vì sao'],
+      (G.KL_THAY || []).map(function (k) {
+        return ['<span style="color:var(--bad)">' + h(k.cam) + '</span>',
+          '<span style="color:var(--ok)">' + h(k.thay) + '</span>',
+          '<span class="chip" style="color:' + (MAU_PHAM[k.pham] || '') + '">' +
+            h(TEN_PHAM[k.pham] || k.pham) + '</span>',
+          '<span class="sm">' + h(k.boiCanh || '') + '</span>',
+          '<span class="sm muted">' + h(k.vi || '') + '</span>'];
+      }));
+
+    var nk = G.KL_NGANKHO || {};
+    var tongCo = (nk.khoi || []).reduce(function (a, x) { return a + x.daCo; }, 0);
+    var tongCan = (nk.khoi || []).reduce(function (a, x) { return a + x.soCau; }, 0);
+    o += U.sec('Ngân khố một nghìn câu', tongCo + '/' + tongCan + ' câu đang có');
+    o += canhBao('Bản đặc tả nêu CÔNG THỨC và trích vài câu mẫu, không có đủ ' +
+      'một nghìn câu. Sinh ' + (tongCan - tongCo) + ' câu cho đủ số là bịa nội ' +
+      'dung chuyên môn của Học viện — đúng thứ luật gốc cấm. Và đây không phải ' +
+      'việc của mã: mỗi câu là một lời Học viện nói với một nhà, nên nó phải đi ' +
+      'qua thang năm cổng như mọi nội dung khác. Mục KL-02.', 'var(--bad)');
+    o += '<div class="card"><p class="sm muted"><b>Công thức:</b> ' +
+      h(nk.congThuc || '') + '</p></div>';
+    o += U.tbl(['Khối', 'Nội dung', 'Cấu trúc', 'Cần', 'Đang có'],
+      (nk.khoi || []).map(function (x) {
+        return ['<b>' + h(x.ma) + '</b>', h(x.ten), h(x.cauTruc), String(x.soCau),
+          x.daCo ? '<b>' + x.daCo + '</b>'
+                 : '<span style="color:var(--bad)">0</span>'];
+      }));
+    if ((nk.moMan || []).length) {
+      o += U.sec('Bảy câu mở màn bản đặc tả trích ra', 'Chép nguyên, không sửa chữ');
+      o += '<div class="card">' + U.list(nk.moMan) + '</div>';
+    }
+
+    o += U.sec('Ba nhóm người đọc', 'Neo vào G.KN_NGUOIDOC — không dựng bảng thứ hai');
+    o += U.tbl(['Mã', 'Nhóm', 'Neo về'], (G.KL_NHOM || []).map(function (n) {
+      return ['<b>' + h(n.ma) + '</b>', h(n.ten),
+        '<span class="sm muted">' + h(n.neo) + '</span>'];
+    }));
+
+    o += U.sec('Chỗ máy dừng lại');
+    o += '<div class="card">' + (G.KL_CHOCHU || []).map(function (c) {
+      return '<div style="padding:8px 0;border-bottom:1px solid var(--line)">' +
+        '<b>' + h(c.ma) + '</b> — ' + h(c.viec) +
+        '<div class="sm muted" style="margin-top:4px">' + h(c.vi) + '</div></div>';
+    }).join('') + '</div>';
+    return o;
+  }
+
   /* ═══════════ NGĂN · BỘ MIỄN DỊCH ═══════════
 
      Theo bản đặc tả phần 3 của chủ hệ: 66 điểm gãy · 13 lỗi chặn phát
@@ -38780,7 +38884,7 @@ G.VIEWS = G.VIEWS || {};
   /* ═══════════ NGĂN 1 · SOẠN ═══════════ */
   function nganSoan() {
     var d = G.bsD;
-    var s = G.bsSoat(d.chu, d.khuon);
+    var s = G.bsSoat(d.chu, d.khuon, d.doiTuong);
     var soKhoi = dsKhoiCua(d.khuon).length;
     var duKhoi = soKhoi - s.doc.thieu.length;
 
@@ -38813,6 +38917,11 @@ G.VIEWS = G.VIEWS || {};
         return '<option value="' + h(k.ma) + '"' + (d.khuon === k.ma ? ' selected' : '') +
           '>' + h(k.ten) + '</option>';
       }).join('') + '</select>' +
+      '<select id="bsDoiTuong" class="inp" style="max-width:190px" onchange="G.bsDoiKhuon()">' +
+      '<option value="noiBo"' + (d.doiTuong === 'noiBo' ? ' selected' : '') +
+        '>Viết cho NỘI BỘ</option>' +
+      '<option value="khach"' + (d.doiTuong === 'khach' ? ' selected' : '') +
+        '>Viết cho KHÁCH</option></select>' +
       '<select id="bsTang" class="inp" style="max-width:120px" onchange="G.bsGhi()">' +
       ['T1', 'T2', 'T3', 'T4', 'T5'].map(function (t) {
         return '<option value="' + t + '"' + (d.tang === t ? ' selected' : '') + '>' + t + '</option>';
@@ -38861,6 +38970,18 @@ G.VIEWS = G.VIEWS || {};
         return ['<b>' + l.dong + '</b>', h(l.bat),
           '<span style="color:var(--ok)">' + h(l.thay || '') + '</span>',
           '<span class="sm muted">' + h(l.vi || '') + '</span>'];
+      }));
+    }
+    if (s.kl && s.kl.length) {
+      o += U.sec('Lệch từ điển KL08 — cảnh báo, không chặn',
+        d.doiTuong === 'khach'
+          ? 'Bài viết CHO KHÁCH nên dò cả lớp `khach`'
+          : 'Bài NỘI BỘ nên chỉ dò lớp `moi` — chọn "Viết cho KHÁCH" để dò đủ');
+      o += U.tbl(['Dòng', 'Cụm cấm', 'Nói thay', 'Bối cảnh'], s.kl.map(function (k) {
+        return ['<b>' + k.dong + '</b>',
+          '<span style="color:var(--warn)">' + h(k.bat) + '</span>',
+          '<span style="color:var(--ok)">' + h(k.thay) + '</span>',
+          '<span class="sm muted">' + h(k.boiCanh || '') + '</span>'];
       }));
     }
     if (s.vr && s.vr.length) {
@@ -38996,6 +39117,7 @@ G.VIEWS = G.VIEWS || {};
     G.bsD.tieuDe = oGiaTri('bsTieuDe');
     G.bsD.tang = oGiaTri('bsTang') || 'T1';
     G.bsD.khuon = oGiaTri('bsKhuon') || G.bsD.khuon || 'BAIHOC';
+    G.bsD.doiTuong = oGiaTri('bsDoiTuong') || G.bsD.doiTuong || 'noiBo';
     if (hen) clearTimeout(hen);
     hen = setTimeout(function () {
       /* Giữ chỗ con trỏ qua lượt vẽ lại: không giữ thì gõ tới chữ thứ
@@ -39010,6 +39132,7 @@ G.VIEWS = G.VIEWS || {};
 
   G.bsDoiKhuon = function () {
     G.bsD.khuon = oGiaTri('bsKhuon') || 'BAIHOC';
+    G.bsD.doiTuong = oGiaTri('bsDoiTuong') || 'noiBo';
     veLai();
   };
 
@@ -39072,7 +39195,7 @@ G.VIEWS = G.VIEWS || {};
   G.bsNap = function () {
     var d = G.bsD;
     goi('napBai', {id: d.id || undefined, tieuDe: d.tieuDe, chu: d.chu,
-      tang: d.tang, khuon: d.khuon})
+      tang: d.tang, khuon: d.khuon, doiTuong: d.doiTuong})
       .then(function (r) {
         if (r && r.ok) { G.bsD.id = r.id; G.bsD.thang = null; }
         bao(r, 'Đã lưu bản nháp · ' + ((r && r.id) || ''));
@@ -39393,6 +39516,7 @@ G.VIEWS = G.VIEWS || {};
     if (G.bsNgan === 'buoi')     return o + nganBuoi();
     if (G.bsNgan === 'toanhe')   return o + nganToanHe();
     if (G.bsNgan === 'miendich') return o + nganMienDich();
+    if (G.bsNgan === 'tudien')   return o + nganTuDien();
     if (G.bsNgan === 'chuannghe')return o + nganChuanNghe();
     if (G.bsNgan === 'hienphap') return o + nganHienPhap();
     if (G.bsNgan === 'quyen' && capQuyenDuoc()) return o + nganQuyen();

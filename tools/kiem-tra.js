@@ -11538,6 +11538,29 @@ const { chromium } = require(PW);
         /* Mỗi lỗi chặn phải khai CHẶN Ở ĐÂU — chặn nhầm tầng là chỗ
            hỏng hay gặp nhất, và lọc trên màn hình không phải bảo vệ. */
         mdThieuTang: (G.MD_CHAN || []).filter(c => !c.chanODau).map(c => c.ma),
+        /* 9.99.48 — từ điển KL08 */
+        klThay: (G.KL_THAY || []).map(k => k.cam + '·' + k.thay + '·' + k.pham),
+        klLop: (G.KL_LOP || []).map(l => l.ma),
+        klPhamLa: (G.KL_THAY || [])
+          .filter(k => ['moi', 'khach', 'nhac'].indexOf(k.pham) < 0).map(k => k.cam),
+        klThieuBoiCanh: (G.KL_THAY || []).filter(k => !k.boiCanh).map(k => k.cam),
+        /* Ngân khố phải nói THẬT đang có bao nhiêu câu. "1000 câu" mà
+           chỉ có 7 thì người mở ra tìm phải biết TRƯỚC. */
+        klNganKho: (G.KL_NGANKHO || {}).khoi
+          ? (G.KL_NGANKHO.khoi || []).map(x => x.ma + ':' + x.soCau + ':' + x.daCo)
+          : [],
+        klMoManThat: ((G.KL_NGANKHO || {}).moMan || []).length,
+        /* ── MỌI SỔ CHỜ PHẢI CÙNG MỘT KỶ LUẬT ──
+           Kho có bốn sổ chờ theo từng lĩnh vực: TG · KN · MD · KL. Mục
+           74 đã đối chiếu G.TR_CHUA rất chặt, còn bốn sổ kia thì chưa
+           ai soi. Một sổ chờ không ai soi thì nó mục — và sổ mục tệ hơn
+           không có sổ, vì chủ hệ mở ra thấy một việc đã xong nằm trong
+           danh sách phải làm rồi thôi tin cả sổ. */
+        soCho: ['TG_CHOCHU', 'KN_CHOCHU', 'MD_CHOCHU', 'KL_CHOCHU'].map(t => ({
+          ten: t, so: (G[t] || []).length,
+          thieu: (G[t] || []).filter(x => !x.ma || !x.viec ||
+            !x.vi || String(x.vi).length < 40).map(x => x.ma || '(không mã)')
+        })),
         luatBuoi: (G.KN_HOITHOAI_LUAT || []).map(l => l.ma),
         /* Tên nhịp trong KICHBAN_AI — nguồn GỐC. Bảng KN_NHIP và bảng
            KN_KHUNG_CAU đều phải gọi đúng những cái tên này. */
@@ -11729,6 +11752,39 @@ const { chromium } = require(PW);
       if ((md.soChan || 0) !== 13) lech.push('phải có đúng 13 dòng đối chiếu');
     }
 
+    /* ── TỪ ĐIỂN KL08 ──
+       Ô PHẠM VI là ô giữ cho cả bảng dùng được: bảng cấm→thay viết cho
+       lời nói với khách, và áp thẳng lên văn nội bộ thì "thất bại",
+       "áp lực", "sai" bắt hàng nghìn dòng — đúng lỗi 314 dòng của bản
+       9.99.44. Lệch một ô phạm vi là lặp lại đúng lỗi ấy. */
+    if (mND.BAN_CHEP_KL) {
+      soDay(mND.BAN_CHEP_KL.KL_THAY.map(k => k[0] + '·' + k[1] + '·' + k[2]),
+        kho.klThay, 'bảng cấm→thay KL08');
+    }
+    if (kho.klLop.join(',') !== 'KL01,KL02,KL03,KL04,KL05,KL06,KL07,KL08')
+      lech.push('tám lớp từ vựng KL01–KL08');
+    if (kho.klPhamLa.length)
+      lech.push('cụm khai phạm vi LẠ: ' + kho.klPhamLa.join(', ') +
+        ' — chỉ có moi · khach · nhac');
+    if (kho.klThieuBoiCanh.length)
+      lech.push('cụm không khai bối cảnh dùng: ' + kho.klThieuBoiCanh.join(', '));
+    /* Số câu ĐANG CÓ phải khớp số câu THẬT trong kho. Khai 100 mà có 7
+       là ngân khố tự nói dối về chính nó. */
+    {
+      const khoiC = (kho.klNganKho || []).filter(x => x.indexOf('C:') === 0)[0] || '';
+      const daCoC = Number(String(khoiC).split(':')[2] || -1);
+      if (daCoC !== kho.klMoManThat)
+        lech.push('ngân khố khai có ' + daCoC + ' câu mà thật ra có ' +
+          kho.klMoManThat);
+    }
+
+    /* ── BỐN SỔ CHỜ, CÙNG MỘT KỶ LUẬT ── */
+    (kho.soCho || []).forEach(s => {
+      if (!s.so) lech.push('sổ chờ ' + s.ten + ' rỗng');
+      if (s.thieu.length)
+        lech.push(s.ten + ' có mục không đủ mã · việc · vì sao: ' + s.thieu.join(', '));
+    });
+
     ra.ndLech = lech;
     ra.ndKhop = lech.length === 0;
     ra.ndDuKho = kho.maVb === 'KN-HP-01' && kho.cam.length === 10 &&
@@ -11787,7 +11843,13 @@ const { chromium } = require(PW);
                   /* Bộ dò virus: bắt chỗ NUÔI, không bắt chỗ viết theo
                      vắc-xin. Cả hai trật tự từ đều phải bắt được. */
                   mND.soatVirus('Bạn đã bỏ lỡ, chuỗi đứt rồi.').length === 2 &&
-                  mND.soatVirus('Hôm nay để trống. Mai mình đi tiếp.').length === 0;
+                  mND.soatVirus('Hôm nay để trống. Mai mình đi tiếp.').length === 0 &&
+                  /* Từ điển KL08 dò theo PHẠM VI: cùng một câu, bài nội
+                     bộ sạch, bài cho khách bắt được. Lớp `nhac` không
+                     dò kể cả với bài cho khách. */
+                  mND.soatKL('Con thất bại rồi, cố lên.', 'noiBo').length === 0 &&
+                  mND.soatKL('Con thất bại rồi, cố lên.', 'khach').length === 2 &&
+                  mND.soatKL('Số liệu này sai.', 'khach').length === 0;
 
     bao(ra.ndKhop && ra.ndDuKho && ra.ndKhoiDay && ra.ndCongDu && ra.ndDoThat &&
         ra.ndCuaXuat,

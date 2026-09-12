@@ -180,6 +180,53 @@ const LOI_THAY = [
 const NHAN_NGUON = ['[KHO GITA]', '[MÁY PHÂN TÍCH]', '[MÁY ĐỀ NGHỊ]',
                     '[CHƯA KIỂM CHỨNG]'];
 
+/* ══ TỪ ĐIỂN KL08 — bản 9.99.48 ══
+
+   Bảng cấm→thay của bản đặc tả 3/20 viết cho LỜI NÓI VỚI KHÁCH. Đem áp
+   thẳng lên văn nội bộ thì "sai", "vấn đề", "áp lực" bắt hàng nghìn
+   dòng — đúng lỗi 314-dòng của bản 9.99.44.
+
+   Nên mỗi cặp mang PHẠM VI, và bộ dò nhận `doiTuong` của bài:
+
+     moi    dò ở mọi bài
+     khach  chỉ dò khi bài viết CHO KHÁCH
+     nhac   KHÔNG dò — từ quá thường, dò thì báo sai nhiều hơn báo đúng.
+            Chúng vẫn ở trong kho để người đọc từ điển thấy.
+
+   Bảng ở đây chỉ giữ hai cột máy cần; cả từ điển đầy đủ nằm ở kho. */
+const KL_THAY = [
+  ['bạn phải', 'việc hôm nay là', 'moi'],
+  ['tại sao bạn không', 'điều gì đang cản đường?', 'moi'],
+  ['sao con bạn', 'con đang ở mùa nào của riêng mình?', 'moi'],
+  ['lười biếng', 'chưa đủ năng lượng', 'moi'],
+  ['yếu kém', 'hạt đang nảy mầm', 'moi'],
+  ['phải giỏi hơn', 'trở nên giỏi hơn chính mình', 'moi'],
+  ['cam kết 100%', 'cùng nhau đi từng nhịp', 'moi'],
+  ['hứa chắc chắn', 'tin vào từng bước nhỏ', 'moi'],
+  ['thất bại', 'mùa gió', 'khach'],
+  ['tụt hạng', 'về gốc', 'khach'],
+  ['bị phạt', 'lấy lại nhịp', 'khach'],
+  ['cố lên', 'vững tâm', 'khach'],
+  ['tuyệt vời', 'đã hoàn thành', 'khach'],
+  ['xuất sắc quá', 'kiên trì thật', 'khach'],
+  ['đổi đời', 'bình an vững chãi', 'khach'],
+  ['bạn đã bỏ lỡ', 'hôm nay để trống', 'khach'],
+  ['chậm tiến độ', 'đang ở nhịp riêng', 'khach'],
+  ['áp lực', 'cản gió', 'khach'],
+  ['sai', 'một lần thử khác', 'nhac'],
+  ['vấn đề', 'điều đang cần nhìn lại', 'nhac']
+];
+
+/** Dò từ điển KL08 theo phạm vi. `doiTuong`: 'noiBo' (mặc định) | 'khach'. */
+export function soatKL(chu, doiTuong) {
+  const choKhach = String(doiTuong || 'noiBo') === 'khach';
+  const bang = KL_THAY
+    .filter(([, , pham]) => pham === 'moi' || (pham === 'khach' && choKhach))
+    .map(([cam, thay, pham]) => [cam, thay, pham]);
+  return doBang(chu, bang, true)
+    .map(x => ({dong: x.dong, bat: x.bat, thay: x.thay, pham: x.vi}));
+}
+
 /* ══ MƯỜI SÁU CÂU CHUYÊN GIA KHÔNG NÓI — bản 9.99.44 ══
 
    Khác LOI_THAY ở MỨC XỬ, không chỉ ở nội dung: bảng kia bắt câu PHÁN
@@ -596,6 +643,12 @@ export async function soatNoiDung(y, env, db, hoSo) {
   const ngu  = soatNguon(chu);
   const cg   = soatChuyenGia(chu);
   const vr   = soatVirus(chu);
+  /* Bài viết CHO AI. Mặc định nội bộ: một bài không khai đối tượng thì
+     coi là nội bộ, vì đoán nhầm theo hướng KHÁCH sẽ bắt hàng loạt câu
+     kỹ thuật đúng, còn đoán nhầm theo hướng NỘI BỘ chỉ bỏ sót — và bỏ
+     sót thì người viết còn thấy, báo nhầm thì họ thôi đọc. */
+  const doiTuong = String(y.doiTuong || 'noiBo') === 'khach' ? 'khach' : 'noiBo';
+  const kl   = soatKL(chu, doiTuong);
   /* Mười điều kiện hoàn thành là thang đo của NGƯỜI HỌC, nên nó chỉ có
      nghĩa với khuôn BÀI HỌC. Một quy trình vận hành không có "người
      học", và đo nó bằng thang ấy là đo sai loại — cùng lớp sai với
@@ -673,6 +726,12 @@ export async function soatNoiDung(y, env, db, hoSo) {
     vi: 'Không dòng nào mang nhãn nguồn. Bốn nhãn: ' + NHAN_NGUON.join(' · ')});
   if (dai.dai)     camPham.push({ma: 'N10', canhBao: true,
     vi: dai.dai.length + ' câu trên ' + CAU_DAI + ' từ. Đây là CẢNH BÁO, không chặn.'});
+  if (kl.length)   camPham.push({ma: 'KL', canhBao: true,
+    vi: kl.length + ' cụm lệch từ điển KL08' +
+      (doiTuong === 'khach' ? ' (bài viết CHO KHÁCH nên dò cả lớp `khach`)'
+                            : ' (bài nội bộ nên chỉ dò lớp `moi`)') + ': ' +
+      kl.slice(0, 4).map(x => '"' + x.bat + '" → "' + x.thay + '"').join(', ') +
+      (kl.length > 4 ? '…' : '') + '.'});
   if (vr.length)   camPham.push({ma: 'VIRUS', canhBao: true,
     vi: 'Bài này có ' + vr.length + ' chỗ NUÔI chủng virus: ' +
       vr.slice(0, 4).map(x => x.ma + ' "' + x.bat + '"').join(', ') +
@@ -701,7 +760,8 @@ export async function soatNoiDung(y, env, db, hoSo) {
         '. Chiều ấy đang bị 0 vì THIẾU PHÉP ĐO, không phải vì bài kém.'});
 
   const kq = {ok: true, tang, khuon: maKhuon, tenKhuon: kh.ten,
-    khoi: doc, doi, rong, loi, chuyenGia: cg, virus: vr, cauDai: dai, nguon: ngu,
+    khoi: doc, doi, rong, loi, chuyenGia: cg, virus: vr, kl, doiTuong,
+    cauDai: dai, nguon: ngu,
     cham: cham || (chamKh ? chamKh.cham : null),
     diemMay: duoc, tranMay, conCho, cam: camPham,
     vi: 'Khuôn ' + kh.ten + ': máy chấm được ' + tranMay + '/100 điểm và cho ' +
@@ -1099,6 +1159,8 @@ export async function soatMienDich(y, env, db, hoSo) {
   return kq;
 }
 
+export const BAN_CHEP_KL = {KL_THAY};
+
 export const BAN_CHEP_MD = {MD_TUNGU, MA_CHAN: Object.keys(soatMienDichMay(null)).sort()};
 
 /* ═══════════════ XUẤT CHUẨN NGHỀ RA NGOÀI ═══════════════
@@ -1243,10 +1305,11 @@ export async function napBai(y, env, db, hoSo) {
 
   if (!cu) {
     await db.prepare(
-      'INSERT INTO baiNoiDung (id,tieuDe,chu,tang,khuon,vanTay,trangThai,nguoiViet,vietLuc) ' +
-      'VALUES (?,?,?,?,?,?,?,?,?)')
+      'INSERT INTO baiNoiDung (id,tieuDe,chu,tang,khuon,doiTuong,vanTay,' +
+      'trangThai,nguoiViet,vietLuc) VALUES (?,?,?,?,?,?,?,?,?,?)')
       .bind(id, tieuDe, chu, String(y.tang || 'T1'),
         khuonCua(y.khuon) === KHUON.BAIHOC ? 'BAIHOC' : String(y.khuon).toUpperCase(),
+        String(y.doiTuong || 'noiBo') === 'khach' ? 'khach' : 'noiBo',
         vt, 'nhap', hoSo.uid, luc).run();
     await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
       viec: 'napBai', doiTuong: id, chiTiet: 'bài mới · ' + tieuDe});
@@ -1275,10 +1338,13 @@ export async function napBai(y, env, db, hoSo) {
   const coKy = ((soKyCu && soKyCu.n) || 0) > 0;
 
   await db.prepare(
-    'UPDATE baiNoiDung SET tieuDe = ?, chu = ?, tang = ?, khuon = ?, vanTay = ?, ' +
-    'trangThai = ?, vaoCongLuc = NULL, soatMay = NULL WHERE id = ?')
+    'UPDATE baiNoiDung SET tieuDe = ?, chu = ?, tang = ?, khuon = ?, ' +
+    'doiTuong = ?, vanTay = ?, trangThai = ?, vaoCongLuc = NULL, ' +
+    'soatMay = NULL WHERE id = ?')
     .bind(tieuDe, chu, String(y.tang || cu.tang),
-      y.khuon ? String(y.khuon).toUpperCase() : (cu.khuon || 'BAIHOC'), vt,
+      y.khuon ? String(y.khuon).toUpperCase() : (cu.khuon || 'BAIHOC'),
+      y.doiTuong ? (String(y.doiTuong) === 'khach' ? 'khach' : 'noiBo')
+                 : (cu.doiTuong || 'noiBo'), vt,
       doiChu ? 'nhap' : cu.trangThai, id).run();
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
@@ -1307,8 +1373,9 @@ export async function nopBai(y, env, db, hoSo) {
     return {ok: false, error: 'SAIBAC',
       vi: 'Bài đang ở bậc "' + bai.trangThai + '", không phải bản nháp.'};
 
-  const soat = await soatNoiDung(
-    {chu: bai.chu, tang: bai.tang, khuon: bai.khuon || 'BAIHOC'}, env, db, hoSo);
+  const soat = await soatNoiDung({chu: bai.chu, tang: bai.tang,
+    khuon: bai.khuon || 'BAIHOC', doiTuong: bai.doiTuong || 'noiBo'},
+    env, db, hoSo);
   if (!soat.ok) return soat;
 
   /* Máy chặn bằng SỐ. Hai điều kiện, cả hai đếm được:

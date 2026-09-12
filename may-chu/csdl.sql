@@ -1249,6 +1249,12 @@ CREATE TABLE IF NOT EXISTS baiNoiDung (
   -- Mặc định BAIHOC để mọi bài ghi trước bản này giữ nguyên nghĩa —
   -- chúng đều là bài học, vì lúc ấy hệ chỉ có một khuôn.
   khuon      TEXT NOT NULL DEFAULT 'BAIHOC',
+  -- Bài viết CHO AI: noiBo · khach (bản 9.99.48). Từ điển KL08 dò theo
+  -- cột này: lớp `khach` chỉ áp khi bài nói với khách. Mặc định noiBo,
+  -- vì đoán nhầm sang KHÁCH thì bắt hàng loạt câu kỹ thuật đúng, còn
+  -- đoán nhầm sang NỘI BỘ chỉ bỏ sót — và bỏ sót thì người viết còn
+  -- thấy, báo nhầm thì họ thôi đọc cả báo cáo.
+  doiTuong   TEXT NOT NULL DEFAULT 'noiBo',
   vanTay     TEXT NOT NULL,       -- SHA-256 rút gọn của `chu` lúc ghi
   trangThai  TEXT NOT NULL DEFAULT 'nhap',
   nguoiViet  TEXT NOT NULL,       -- uid; luật L2 đọc cột này
