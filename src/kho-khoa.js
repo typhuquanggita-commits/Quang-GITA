@@ -63,6 +63,8 @@ G.THUOC_CAP_PHEP = [
   'TG_TRUY',
   /* v9.99.58 — kênh phát · giờ vàng · gỡ bài */
   'TG_KENH','TG_GIO_VANG','TG_GIO_LUAT','TG_GO_LY_DO','TG_GO_LUAT',
+  /* v9.99.59 — đo phễu · sổ truy vết · mười quy trình ứng phó */
+  'TG_UNGPHO','TG_UNGPHO_LUAT','TG_PHEU','TG_PHEU_LUAT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

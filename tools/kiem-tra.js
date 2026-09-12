@@ -10529,6 +10529,42 @@ const { chromium } = require(PW);
            nới thì ranh giới trôi dần, và sau vài bản không còn khung nào. */
         mTG.trongGioVang('2026-03-01T23:31:00Z') === null;
 
+      /* ── ĐO PHỄU · MƯỜI TỜ ỨNG PHÓ ── */
+      const khoP = await p.evaluate(() => {
+        const G = window.G;
+        const up = G.TG_UNGPHO || [];
+        return {
+          pheuDo: (G.TG_PHEU || []).filter(x => x.nguon === 'do').map(x => x.ma),
+          pheuKhai: (G.TG_PHEU || []).filter(x => x.nguon === 'khai').map(x => x.ma),
+          /* Ô `nguon` chỉ nhận hai giá trị. Một giá trị thứ ba thì mục ấy
+             rơi khỏi CẢ HAI khối của màn hình — biến mất, im lặng. */
+          nguonLa: (G.TG_PHEU || []).filter(x => x.nguon !== 'do' && x.nguon !== 'khai')
+            .map(x => x.ma),
+          soUngPho: up.length,
+          ma: up.map(x => x.ma),
+          /* Mỗi tờ phải khai ĐỦ NĂM Ô. Thiếu `aiLam` thì lúc gấp ai cũng
+             tưởng người kia đang làm; thiếu `trong` thì việc gấp trôi
+             cùng nhịp với việc thường. */
+          thieuO: up.filter(x => !x.ma || !x.ten || !x.khiNao || !x.aiLam ||
+            !x.trong || !x.vi || !(x.buoc || []).length).map(x => x.ma),
+          /* Một tờ một bước thì nó không phải quy trình, nó là một câu. */
+          itBuoc: up.filter(x => (x.buoc || []).length < 3).map(x => x.ma),
+          soGap: up.filter(x => x.gap).length
+        };
+      });
+      ra.tgPheuNguonLa = khoP.nguonLa;
+      ra.tgUngPhoThieuO = khoP.thieuO;
+      ra.tgUngPhoItBuoc = khoP.itBuoc;
+      ra.tgUngPhoSo = khoP.soUngPho;
+      ra.tgUngPhoGap = khoP.soGap;
+      /* Hai danh sách ở máy chủ phải khớp đúng cách chia của kho. Lệch
+         thì một bậc đo được bị đối xử như lời khai, hoặc ngược lại — và
+         "ngược lại" là chỗ hỏng nặng: một con số gõ tay được trình ra
+         như một phép đo. */
+      ra.tgPheuKhop =
+        JSON.stringify(khoP.pheuDo) === JSON.stringify(mTG.PHEU_DO || []) &&
+        JSON.stringify(khoP.pheuKhai) === JSON.stringify(mTG.PHEU_KHAI || []);
+
       ra.tgAdnChanThat = xe.tuChoi.length === 2 &&
         maXe.indexOf('ADN1') >= 0 && maXe.indexOf('ADN2') >= 0 &&
         /* Chỉ còn L1 của câu bố cục. Có L3 nghĩa là câu xin đổi màu vừa bị
@@ -10550,7 +10586,10 @@ const { chromium } = require(PW);
       ra.tgSuaLuat === 'khongDoan·mayKhongVietCauVa·motCauNhieuLop' &&
       ra.tgKenhKhop && ra.tgGioKhop && ra.tgGoKhop &&
       ra.tgKenhChayThat && ra.tgGioChayThat &&
-      !ra.tgKenhThieuVi.length && !ra.tgGoThieuVi.length && !ra.tgKenhKhoLa.length,
+      !ra.tgKenhThieuVi.length && !ra.tgGoThieuVi.length && !ra.tgKenhKhoLa.length &&
+      ra.tgPheuKhop && !ra.tgPheuNguonLa.length &&
+      ra.tgUngPhoSo === 10 && !ra.tgUngPhoThieuO.length && !ra.tgUngPhoItBuoc.length &&
+      ra.tgUngPhoGap > 0,
     'CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC CHẶN THEO RANH GIỚI ĐÃ DUYỆT, KHÔNG THEO MỘT DANH SÁCH TỰ NGHĨ RA. Bản đặc tả của chủ hệ đề nghị dựng "Boundary Definition" cho từng Tầng với ô Allowed Concepts và ô Do NOT introduce. Hai ô ấy ĐÃ TỒN TẠI trong kho từ lâu và đang được dùng để bán hàng: HP_TANG[].gom và HP_TANG[].khong. Chép chúng sang một tệp mới là dựng bản thứ hai của một sự thật, và bản thứ hai không ai sửa khi bảng chặng đổi — tới lúc ấy máy chặn thiết kế theo một ranh giới đã cũ, im lặng. Máy chủ không đọc được kho đã mã hoá nên buộc phải giữ một bản chép TỐI THIỂU để dò, và phép đo này đối chiếu bản chép ấy với bản gốc THEO Ý chứ không theo từng chữ: kho viết thành câu cho người đọc, máy chủ giữ khoá ngắn để dò, nên luật là mỗi khoá máy chủ dùng phải TÌM THẤY trong câu khai của chính Tầng ấy. Khoá nào không tìm thấy là khoá tự nghĩ ra, và nó chặn thiết kế theo một ranh giới chưa ai duyệt — đúng cái mà luật "AI không được tự suy diễn" sinh ra để cấm. Phép đo cũng GỌI THẲNG cổng ấy với một nội dung T1 nói về Coach đồng hành và phác đồ rồi đòi nó chặn, vì đọc chú giải thì chú giải nói gì cũng được. Và mười hai loại hình phải có mặt đủ ở cả hai bên, mỗi loại khai đúng MỘT nhiệm vụ — nhồi hai việc vào một tấm thì người xem không nhớ được cái nào',
     /* ĐIỀU KIỆN CỦA CÂU KHOE PHẢI TRÙNG ĐIỀU KIỆN CỦA PHÉP ĐO.
        Bản đầu câu khoe chỉ hỏi hai cờ cũ, nên lúc phá thử bản chép bảng
@@ -10562,7 +10601,8 @@ const { chromium } = require(PW);
     ra.tgYDocThat && ra.tgQuyetChayThat && ra.tgTranChanThat &&
     ra.tgBaYThat && ra.tgLop5That && ra.tgSuaKhop && ra.tgAdnKhop &&
     ra.tgSuaChayThat && ra.tgAdnChanThat && ra.tgKenhKhop && ra.tgGioKhop &&
-    ra.tgGoKhop && ra.tgKenhChayThat && ra.tgGioChayThat
+    ra.tgGoKhop && ra.tgKenhChayThat && ra.tgGioChayThat && ra.tgPheuKhop &&
+    ra.tgUngPhoSo === 10 && !ra.tgUngPhoThieuO.length
       ? '5 chặng · mọi khoá dò đều tìm thấy trong ô "không" của chính chặng ấy · ' +
         mTGSoLoai + ' loại hình đều có đúng một nhiệm vụ · cổng chặn thật · ' +
         (ra.tgMauKhop ? (mTG.MAU_RA || []).length + ' ô màu đi ra khớp bản gốc · ' : '') +
@@ -10573,7 +10613,9 @@ const { chromium } = require(PW);
         'góp ý chia đúng 5 lớp theo thứ tự trọng số · ' + (mTG.ADN || []).length +
         ' thứ không mở đều chặn thật và không được chỉ đường đi sửa · ' +
         (mTG.KENH || []).length + ' kênh phát · 3 khung giờ vàng đọc theo giờ Việt Nam · ' +
-        (mTG.GO_LY_DO || []).length + ' lý do gỡ'
+        (mTG.GO_LY_DO || []).length + ' lý do gỡ · phễu chia đúng ' +
+        (mTG.PHEU_DO || []).length + ' bậc đo được và ' + (mTG.PHEU_KHAI || []).length +
+        ' bậc lời khai · ' + ra.tgUngPhoSo + ' tờ ứng phó đủ ô, ' + ra.tgUngPhoGap + ' tờ GẤP'
       : [!ra.tgDnCamKhop ? 'BẢN CHÉP BẢNG ĐỘNG TỪ CẤM Ở MÁY CHỦ LỆCH VỚI KHO' : '',
          !ra.tgDnChanThat ? 'CỔNG ĐIỀU NHỎ KHÔNG CHẶN THẬT' : '',
          !ra.tgYKhop ? 'BẢN CHÉP BẢNG Ý ĐỊNH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
@@ -10596,6 +10638,15 @@ const { chromium } = require(PW);
          (ra.tgAdnThieuO || []).length ? 'mục ADN thiếu ô: ' + ra.tgAdnThieuO.join(', ') : '',
          !ra.tgSuaChayThat ? 'PHÉP CHIA LỚP GÓP Ý KHÔNG CHẠY THẬT (sai thứ tự L1→L5, ' +
            'hoặc nó ĐOÁN khi không có dấu hiệu, hoặc cụm ghép bị bắt oan)' : '',
+         !ra.tgPheuKhop ? 'CÁCH CHIA PHỄU Ở MÁY CHỦ LỆCH VỚI KHO — một bậc đo được ' +
+           'bị đối xử như lời khai, hoặc một con số gõ tay được trình ra như một phép đo' : '',
+         (ra.tgPheuNguonLa || []).length ? 'BẬC PHỄU KHAI NGUỒN LẠ (chỉ nhận do · khai): ' +
+           ra.tgPheuNguonLa.join(' · ') : '',
+         ra.tgUngPhoSo !== 10 ? 'SỔ ỨNG PHÓ CÓ ' + ra.tgUngPhoSo + ' TỜ, không phải 10' : '',
+         (ra.tgUngPhoThieuO || []).length ? 'tờ ứng phó thiếu ô (ma·ten·khiNao·aiLam·trong·vi·buoc): ' +
+           ra.tgUngPhoThieuO.join(', ') : '',
+         (ra.tgUngPhoItBuoc || []).length ? 'tờ ứng phó dưới ba bước — đó là một câu, ' +
+           'không phải một quy trình: ' + ra.tgUngPhoItBuoc.join(', ') : '',
          !ra.tgKenhKhop ? 'BẢN CHÉP BẢNG KÊNH PHÁT Ở MÁY CHỦ LỆCH VỚI KHO' : '',
          !ra.tgGioKhop ? 'BẢN CHÉP BA KHUNG GIỜ VÀNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
          !ra.tgGoKhop ? 'BẢN CHÉP BẢNG LÝ DO GỠ Ở MÁY CHỦ LỆCH VỚI KHO' : '',

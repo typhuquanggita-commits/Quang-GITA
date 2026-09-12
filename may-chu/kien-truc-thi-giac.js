@@ -856,6 +856,105 @@ export async function soDangBai(y, env, db, hoSo) {
       : 'Không lượt nào còn hở giữa quyết gỡ và gỡ thật.'};
 }
 
+/* ═══════════════ ĐO PHỄU — PHẦN 10 ═══════════════
+
+   Bản chép của G.TG_PHEU. Sáu bậc ĐO ĐƯỢC; ba bậc cuối là LỜI KHAI và
+   máy chủ này KHÔNG trả về chúng — nó trả về đúng thứ nó đếm được,
+   cộng một câu nói thẳng phần nó không đếm được.
+
+   Vì sao không trả về cả ba bậc khai với giá trị 0: một số 0 trong
+   cùng một bảng với sáu số đo được thì đọc ra như "chưa ai xem", chứ
+   không đọc ra "máy không biết". Hai câu ấy khác hẳn nhau. */
+export const PHEU_DO = ['DE_XUAT', 'DUYET', 'PHAT_HANH', 'DANG', 'GO'];
+export const PHEU_KHAI = ['XEM', 'BAM', 'NHAN_VE'];
+
+export async function doPheuThiGiac(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+
+  const bac = await db.prepare(
+    'SELECT trangThai, COUNT(*) AS n FROM deXuatThiGiac GROUP BY trangThai').all();
+  const dem = {};
+  ((bac && bac.results) || []).forEach(r => { dem[r.trangThai] = Number(r.n); });
+
+  const dang = await db.prepare(
+    'SELECT COUNT(DISTINCT idDeXuat) AS n FROM dangTamThiGiac').first();
+  /* Gỡ đếm HAI con số riêng, cùng luật với sổ đăng: đã quyết gỡ, và đã
+     gỡ thật ở ngoài. Một con số gộp thì chỗ hở biến mất. */
+  const go = await db.prepare(
+    'SELECT COUNT(*) AS quyet, SUM(CASE WHEN daGoNgoai IS NOT NULL THEN 1 ELSE 0 END) ' +
+    'AS thatSu FROM dangTamThiGiac WHERE goTrongSo IS NOT NULL').first();
+
+  /* "Đã đề xuất" là MỌI bản ghi đã qua cổng — tức là mọi bậc từ deXuat
+     trở lên, không phải riêng bậc deXuat. Đếm riêng bậc thì một tấm đã
+     phát hành biến mất khỏi bậc đầu, và phễu đọc ra như thể nó hẹp dần
+     vì có tấm rơi ra — trong khi chúng chỉ đi tiếp. */
+  const tru = (dem.nhap || 0) + (dem.tuCho || 0) + (dem.tuChoi || 0);
+  const tong = Object.values(dem).reduce((a, b) => a + b, 0);
+  const daDe = tong - tru;
+  const daDuyet = (dem.duyet || 0) + (dem.hoanThien || 0) + (dem.phatHanh || 0);
+
+  return {ok: true,
+    doDuoc: {
+      DE_XUAT: daDe, DUYET: daDuyet, PHAT_HANH: dem.phatHanh || 0,
+      DANG: Number((dang && dang.n) || 0),
+      GO_TRONG_SO: Number((go && go.quyet) || 0),
+      GO_THAT_SU: Number((go && go.thatSu) || 0)
+    },
+    nhap: dem.nhap || 0, tuChoi: dem.tuChoi || 0,
+    /* KHÔNG trả về ba bậc khai với giá trị 0. Một số 0 nằm cùng bảng
+       với sáu số đo được thì đọc ra là "chưa ai xem", không đọc ra là
+       "máy không biết" — và hai câu ấy khác hẳn nhau. */
+    khongDoDuoc: PHEU_KHAI,
+    vi: 'Sáu con số trên đều ĐO THẲNG trong sổ của Học viện, không ai gõ vào. ' +
+      'Lượt xem · lượt bấm · lượt nhắn về thì máy chủ này KHÔNG nhìn thấy — ' +
+      'chúng ở bảng của nền tảng ngoài. Đặt chúng vào cùng bảng này với giá trị ' +
+      '0 là để người đọc tin chúng như tin sáu con số kia, nên máy không đặt.'};
+}
+
+/* ═══════════════ ĐỜI MỘT TẤM — SỔ TRUY VẾT ═══════════════
+
+   Nhật ký đã ghi đủ từ lâu: TG_DEXUAT · TG_BAC · TG_XUAT · TG_DIRA ·
+   TG_DANG · TG_GO. Nhưng chúng nằm rải trong một sổ chung xếp theo
+   THỜI GIAN của cả hệ, nên muốn đọc đời một tấm thì phải lọc bằng mắt
+   qua hàng nghìn dòng của mọi việc khác.
+
+   Một sự thật có mà không đọc ra được thì trên thực tế là không có.
+   Cửa này gom đúng một tấm, xếp theo thời gian, và nói luôn chỗ nào
+   còn hở. */
+export async function doiMotTam(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+
+  const id = String((y || {}).id || '').trim();
+  const x = await db.prepare('SELECT * FROM deXuatThiGiac WHERE id = ?').bind(id).first();
+  if (!x) return {ok: false, error: 'Không tìm thấy đề xuất này.'};
+
+  const nk = await db.prepare(
+    'SELECT viec, username, chiTiet, luc FROM audit WHERE doiTuong = ? ' +
+    'ORDER BY luc ASC LIMIT 500').bind(id).all();
+  const dg = await db.prepare(
+    'SELECT * FROM dangTamThiGiac WHERE idDeXuat = ? ORDER BY luc ASC').bind(id).all();
+  const dr = await db.prepare(
+    'SELECT cong, boiAi, luc, soChu FROM luotDiRa WHERE idDeXuat = ? ' +
+    'ORDER BY luc ASC').bind(id).all();
+
+  const dsDang = ((dg && dg.results) || []);
+  return {ok: true, id,
+    ban: Number(x.ban), banTruoc: x.banTruoc || undefined,
+    trangThai: x.trangThai, diem: x.diem, bacDiem: x.bacDiem || undefined,
+    nhatKy: ((nk && nk.results) || []),
+    dang: dsDang,
+    diRa: ((dr && dr.results) || []),
+    /* Chỗ hở nêu riêng, không trộn vào dòng thời gian: một dòng trong
+       dòng thời gian thì người ta đọc như một việc đã qua. */
+    conHo: dsDang.filter(d => d.goTrongSo && !d.daGoNgoai)
+      .map(d => ({kenh: d.kenh, quyetLuc: d.goTrongSo, lyDo: d.goLyDo})),
+    vi: 'Đời một tấm, xếp theo thời gian. Nhật ký đã ghi đủ từ lâu, nhưng nằm ' +
+      'rải trong sổ chung của cả hệ — và một sự thật có mà không đọc ra được thì ' +
+      'trên thực tế là không có.'};
+}
+
 /* Cửa cho màn hình: đọc ý định, đề nghị khổ, phác ba góc — một lượt.
    Không ghi gì vào sổ. */
 export async function docYTuong(y, env, db, hoSo) {

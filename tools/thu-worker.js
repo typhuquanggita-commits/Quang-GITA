@@ -3560,6 +3560,9 @@ bao(raNgoai.than.daGui.indexOf(dungTang.than.tang) >= 0 &&
    hơn không có, vì người bấm tin rằng chuyện đã xong. Gỡ trong sổ
    KHÔNG gỡ được ở ngoài — tấm đã đăng thì nằm ở máy chủ của nền tảng
    ấy, ai đã lưu về hoặc chụp màn hình thì vẫn giữ. */
+/* Mã tấm của khối phần 9 dùng lại ở khối phần 10 — khai ở ngoài chứ
+   không với tay vào phạm vi của khối kia. */
+let idTam9 = null;
 {
   const nen9 = {tang:'T1', loaiHinh:'CONG', nhiemVu:'Mời nhà mở chặng bảy ngày',
     noiDung:'Trang mời nhà mở chặng bảy ngày nhận diện, có phiếu ghi bảy ngày ' +
@@ -3568,6 +3571,7 @@ bao(raNgoai.than.daGui.indexOf(dungTang.than.tang) >= 0 &&
     thoiDiem:'tối sau giờ học', boCuc:'bản để thử cổng đăng'};
   const de9 = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
     deXuat:nen9});
+  idTam9 = de9.than.id;
 
   /* Chỉ đăng thứ ĐÃ PHÁT HÀNH. Bậc duyệt nghĩa là người duyệt đã gật;
      phát hành nghĩa là bản cuối đã chốt. Cho đăng ở bậc duyệt thì một
@@ -3672,6 +3676,60 @@ bao(raNgoai.than.daGui.indexOf(dungTang.than.tang) >= 0 &&
     'BÁO ĐÃ GỠ NGOÀI THÌ CHỖ HỞ ĐÓNG LẠI — và máy gọi đúng tên nó là LỜI KHAI',
     'máy không nhìn thấy kênh ngoài nên không tự đánh dấu được; một ô máy tự ' +
     'đánh dấu mà không đo được là một lời nói dối mang dấu của hệ thống');
+}
+
+/* ══ ĐO PHỄU VÀ SỔ TRUY VẾT — phần 10 của bản đặc tả ══
+
+   Luật của cả phần này nằm ở một câu: KHÔNG BAO GIỜ gộp cột đo được
+   với cột lời khai. Đặt một con số gõ tay cạnh một con số đo được,
+   cùng hàng cùng kiểu chữ, thì người đọc tin cả hai như nhau — mà con
+   số gõ tay thì gõ nhầm được, gõ đẹp lên được, hoặc quên gõ mà hàng
+   vẫn đầy. Cùng luật với ô daGoNgoai của phần 9. */
+{
+  const ph = await goi({fn:'doPheuThiGiac', token:tkSA, u:'superadmin@gita365.vn'});
+  const d = (ph.than || {}).doDuoc || {};
+  bao(ph.than.ok && typeof d.DE_XUAT === 'number' && d.DE_XUAT > 0 &&
+      d.PHAT_HANH > 0 && d.DANG > 0 && d.GO_TRONG_SO > 0,
+    'PHỄU ĐẾM THẲNG TRONG SỔ: đề xuất → duyệt → phát hành → đăng → gỡ',
+    'đề xuất ' + d.DE_XUAT + ' · duyệt ' + d.DUYET + ' · phát hành ' + d.PHAT_HANH +
+    ' · đăng ' + d.DANG + ' · quyết gỡ ' + d.GO_TRONG_SO + ' · gỡ thật ' + d.GO_THAT_SU);
+
+  /* Ba bậc lời khai KHÔNG được trả về với giá trị 0. Một số 0 nằm cùng
+     bảng với sáu số đo được thì đọc ra là "chưa ai xem", không đọc ra
+     là "máy không biết" — và hai câu ấy khác hẳn nhau. */
+  bao(ph.than.ok && (ph.than.khongDoDuoc || []).length === 3 &&
+      d.XEM === undefined && d.BAM === undefined && d.NHAN_VE === undefined,
+    'BA BẬC LỜI KHAI KHÔNG NẰM TRONG BẢNG ĐO ĐƯỢC, kể cả với giá trị 0',
+    'một số 0 cùng bảng với sáu số đo được thì đọc ra là "chưa ai xem", không ' +
+    'đọc ra là "máy không biết"');
+
+  /* Gỡ đếm HAI con số riêng, cùng luật với sổ đăng. Một con số gộp thì
+     chỗ hở giữa "đã quyết gỡ" và "đã gỡ thật" biến mất. */
+  bao(ph.than.ok && d.GO_TRONG_SO >= d.GO_THAT_SU &&
+      typeof d.GO_THAT_SU === 'number',
+    'GỠ ĐẾM HAI CON SỐ RIÊNG: đã quyết gỡ, và đã gỡ thật ở ngoài',
+    'một con số gộp thì chỗ hở giữa hai cái biến mất');
+
+  /* ── ĐỜI MỘT TẤM ──
+     Nhật ký đã ghi đủ từ lâu, nhưng nằm rải trong sổ chung của cả hệ
+     xếp theo thời gian — muốn đọc đời một tấm thì phải lọc bằng mắt qua
+     hàng nghìn dòng của mọi việc khác. Một sự thật CÓ mà không đọc ra
+     được thì trên thực tế là KHÔNG CÓ. */
+  const doi = await goi({fn:'doiMotTam', token:tkSA, u:'superadmin@gita365.vn',
+    id:idTam9});
+  const viec = (doi.than.nhatKy || []).map(x => x.viec);
+  bao(doi.than.ok && viec.indexOf('TG_DEXUAT') >= 0 && viec.indexOf('TG_BAC') >= 0 &&
+      viec.indexOf('TG_DANG') >= 0 && viec.indexOf('TG_GO') >= 0 &&
+      (doi.than.dang || []).length >= 1,
+    'ĐỜI MỘT TẤM GOM ĐỦ: đề xuất · chuyển bậc · đăng · gỡ, xếp theo thời gian',
+    viec.length + ' dòng nhật ký · ' + (doi.than.dang || []).length + ' lượt đăng');
+
+  /* Dòng thời gian xếp TĂNG DẦN. Xếp giảm dần thì đọc đời một tấm phải
+     đọc ngược, và người đọc mất chỗ ngay ở dòng thứ ba. */
+  const luc = (doi.than.nhatKy || []).map(x => x.luc);
+  bao(luc.length >= 2 && luc.every((v, i) => i === 0 || v >= luc[i - 1]),
+    'DÒNG THỜI GIAN XẾP TĂNG DẦN, đọc xuôi được',
+    'xếp giảm dần thì đọc đời một tấm phải đọc ngược, và mất chỗ ngay dòng thứ ba');
 }
 
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});

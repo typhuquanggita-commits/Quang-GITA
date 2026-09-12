@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.58',
+  version: '9.99.59',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3628,6 +3628,8 @@ G.THUOC_CAP_PHEP = [
   'TG_TRUY',
   /* v9.99.58 — kênh phát · giờ vàng · gỡ bài */
   'TG_KENH','TG_GIO_VANG','TG_GIO_LUAT','TG_GO_LY_DO','TG_GO_LUAT',
+  /* v9.99.59 — đo phễu · sổ truy vết · mười quy trình ứng phó */
+  'TG_UNGPHO','TG_UNGPHO_LUAT','TG_PHEU','TG_PHEU_LUAT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -37502,6 +37504,8 @@ G.VIEWS = G.VIEWS || {};
     {ma: 'gopy',    ten: 'Góp ý',      ic: 'quote'},
     /* Cuối, vì đăng là việc cuối cùng — và ngăn này cũng là chỗ GỠ. */
     {ma: 'dang',    ten: 'Đăng · Gỡ',  ic: 'share'},
+    {ma: 'phieu',   ten: 'Phễu · Đời tấm', ic: 'pulse'},
+    {ma: 'ungpho',  ten: 'Ứng phó',    ic: 'shield'},
     {ma: 'kho',     ten: 'Kho',        ic: 'vault'},
     {ma: 'hienphap',ten: 'Hiến pháp',  ic: 'book'},
     {ma: 'luat',    ten: 'Luật',       ic: 'shield'}
@@ -38063,6 +38067,140 @@ G.VIEWS = G.VIEWS || {};
     G.goiMayChu('soDangBai', {}).then(function (d) { G.ktSoDangRa = d; veLai(); });
   };
 
+  /* ═══════════ NGĂN 7 · PHỄU VÀ ĐỜI MỘT TẤM ═══════════
+
+     Luật của cả ngăn này nằm ở một câu: KHÔNG BAO GIỜ gộp cột đo được
+     với cột lời khai.
+
+     Đặt một con số gõ tay cạnh một con số đo được — cùng hàng, cùng
+     kiểu chữ — thì người đọc tin cả hai như nhau. Mà con số gõ tay thì
+     gõ nhầm được, gõ đẹp lên được, hoặc quên gõ mà hàng vẫn đầy.
+
+     Nên hai khối tách hẳn, và khối lời khai KHÔNG có con số nào — chỉ
+     có tên của thứ máy không đo được. */
+  function nganPheu() {
+    var o = '<div class="card"><b>Phễu của đường làm hình</b>' +
+      '<p class="sm muted mt">Sáu con số dưới đây <b>đo thẳng</b> trong sổ của Học ' +
+      'viện, không ai gõ vào.</p></div>';
+
+    var p = G.ktPheuRa;
+    if (!p) o += '<div class="card mt2"><button class="btn primary" ' +
+      'onclick="G.ktDoPheu()">Đo phễu</button></div>';
+    else if (!p.ok) o += '<div class="card" style="border-left:3px solid var(--bad);' +
+      'margin-top:14px"><p class="sm">' + h(p.error || '') + '</p></div>';
+    else {
+      var d = p.doDuoc || {};
+      o += U.sec('Đo được', 'đếm thẳng trong sổ — không ai gõ vào');
+      o += '<div class="row" style="gap:10px;flex-wrap:wrap">' +
+        (G.TG_PHEU || []).filter(function (x) { return x.nguon === 'do'; })
+        .map(function (x) {
+          var so = x.ma === 'GO'
+            ? (d.GO_TRONG_SO || 0) + ' / ' + (d.GO_THAT_SU || 0)
+            : (d[x.ma] === undefined ? '—' : d[x.ma]);
+          return '<div class="card" style="flex:1 1 170px">' +
+            '<div style="font-size:26px;font-weight:800">' + h(String(so)) + '</div>' +
+            '<b class="sm">' + h(x.ten) + '</b>' +
+            '<p class="tiny muted mt">' + h(x.vi) + '</p></div>';
+        }).join('') + '</div>';
+      o += '<p class="sm muted mt">Ô <b>Đã gỡ</b> là hai con số: đã QUYẾT gỡ / đã ' +
+        'gỡ THẬT ở ngoài. Một con số gộp thì chỗ hở giữa hai cái biến mất.</p>';
+
+      /* ── KHỐI LỜI KHAI KHÔNG CÓ CON SỐ NÀO ──
+         Kể cả số 0. Một số 0 nằm cùng bảng với sáu số đo được thì đọc
+         ra là "chưa ai xem", không đọc ra là "máy không biết" — và hai
+         câu ấy khác hẳn nhau. */
+      o += U.sec('Máy KHÔNG đo được', 'ba thứ này ở bảng của nền tảng ngoài');
+      o += '<div class="card" style="border-left:3px solid var(--warn)">' +
+        (G.TG_PHEU || []).filter(function (x) { return x.nguon === 'khai'; })
+        .map(function (x) {
+          return '<p class="sm mt"><b>' + h(x.ten) + '</b> — ' + h(x.vi) + '</p>';
+        }).join('') +
+        '<p class="sm muted mt">Máy chủ Học viện không nhìn thấy kênh ngoài. Đặt ' +
+        'chúng vào bảng trên với giá trị 0 là để người đọc tin chúng như tin sáu ' +
+        'con số kia, nên máy không đặt.</p></div>';
+    }
+
+    o += U.sec('Đời một tấm', 'nhật ký đã ghi đủ từ lâu — chỗ này gom lại một chỗ');
+    o += '<div class="card"><div class="row" style="gap:10px;flex-wrap:wrap">' +
+      '<label class="sm" style="flex:1 1 220px"><b>Mã tấm</b>' +
+      '<input id="ktDtId" class="inp" maxlength="60"></label></div>' +
+      '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn primary" onclick="G.ktDoiTam()">Đọc đời tấm này</button>' +
+      '</div></div>';
+
+    var t = G.ktDoiRa;
+    if (!t) return o;
+    if (!t.ok) return o + '<div class="card" style="border-left:3px solid var(--bad);' +
+      'margin-top:14px"><p class="sm">' + h(t.error || '') + '</p></div>';
+
+    /* Chỗ hở đứng TRƯỚC dòng thời gian: một dòng nằm trong dòng thời
+       gian thì người ta đọc như một việc đã qua. */
+    if ((t.conHo || []).length)
+      o += '<div class="card" style="border-left:3px solid var(--bad);margin-top:14px">' +
+        '<b>Tấm này còn ở ngoài kia</b>' +
+        t.conHo.map(function (c) {
+          return '<p class="sm mt">' + h(c.kenh + ' · đã quyết gỡ ' +
+            String(c.quyetLuc || '').slice(0, 16).replace('T', ' ') +
+            ' · chưa ai báo đã gỡ') + '</p>';
+        }).join('') + '</div>';
+
+    o += '<div class="card mt2"><p class="sm">Bản ' + h(String(t.ban)) +
+      ' · bậc <b>' + h(t.trangThai) + '</b>' +
+      (t.diem !== null && t.diem !== undefined
+        ? ' · ' + h(String(t.diem)) + 'đ ' + h(t.bacDiem || '') : '') + '</p></div>';
+    o += U.tbl(['Lúc', 'Việc', 'Ai', 'Chi tiết'],
+      (t.nhatKy || []).map(function (n) {
+        return ['<span class="sm muted">' +
+            h(String(n.luc || '').slice(0, 16).replace('T', ' ')) + '</span>',
+          '<b class="sm">' + h(n.viec) + '</b>',
+          '<span class="sm">' + h(n.username || '') + '</span>',
+          '<span class="sm muted">' + h(String(n.chiTiet || '').slice(0, 120)) + '</span>'];
+      }));
+    return o;
+  }
+
+  G.ktDoPheu = function () {
+    G.goiMayChu('doPheuThiGiac', {}).then(function (d) { G.ktPheuRa = d; veLai(); });
+  };
+  G.ktDoiTam = function () {
+    G.goiMayChu('doiMotTam', {id: oGiaTri('ktDtId')})
+      .then(function (d) { G.ktDoiRa = d; veLai(); });
+  };
+
+  /* ═══════════ NGĂN 8 · MƯỜI TỜ ỨNG PHÓ ═══════════
+
+     Mười chuyện có thể xảy ra thật. Mỗi tờ viết TRƯỚC, vì lúc chuyện
+     xảy ra thì không ai ngồi nghĩ ra quy trình được.
+
+     Tờ GẤP đứng trước, và mang nhãn đỏ. Xếp theo mã thì tờ "bộ kiểm đỏ
+     trước giờ phát hành" nằm cạnh tờ "người trong ảnh rút lời đồng ý"
+     như thể hai việc cùng một nhịp — mà chúng không cùng. */
+  function nganUngPho() {
+    var ds = (G.TG_UNGPHO || []).slice().sort(function (a, b) {
+      return (b.gap ? 1 : 0) - (a.gap ? 1 : 0);
+    });
+    var soGap = ds.filter(function (x) { return x.gap; }).length;
+    var o = '<div class="card"><b>Mười tờ ứng phó</b>' +
+      '<p class="sm muted mt">Viết trước, vì lúc chuyện xảy ra thì không ai ngồi ' +
+      'nghĩ ra quy trình được. Mỗi bước phải <b>làm được</b> — "xử lý nhanh" không ' +
+      'phải một bước.</p></div>';
+    o += U.sec('Mười tờ', soGap + ' tờ GẤP đứng trước');
+    o += ds.map(function (x) {
+      return '<div class="card mt" style="border-left:3px solid ' +
+        (x.gap ? 'var(--bad)' : 'var(--teal)') + '">' +
+        '<b>' + (x.gap ? '<span style="color:var(--bad)">GẤP</span> · ' : '') +
+        h(x.ma + ' · ' + x.ten) + '</b>' +
+        '<p class="sm mt"><b>Khi nào:</b> ' + h(x.khiNao) + '</p>' +
+        '<p class="sm mt"><b>Ai làm:</b> ' + h(x.aiLam) +
+        ' · <b>Trong:</b> ' + h(x.trong) + '</p>' +
+        '<ol class="sm mt" style="padding-left:20px">' +
+        (x.buoc || []).map(function (b) {
+          return '<li style="margin-top:4px">' + h(b) + '</li>'; }).join('') +
+        '</ol><p class="sm muted mt">' + h(x.vi) + '</p></div>';
+    }).join('');
+    return o;
+  }
+
   /* ═══════════ NGĂN 4 · ĐỀ XUẤT ═══════════ */
   function nganDeXuat() {
     var d = G.ktDuLieu.kho;
@@ -38511,6 +38649,8 @@ G.VIEWS = G.VIEWS || {};
     if (G.ktNgan === 'dexuat')   return o + nganDeXuat();
     if (G.ktNgan === 'gopy')     return o + nganGopY();
     if (G.ktNgan === 'dang')     return o + nganDang();
+    if (G.ktNgan === 'phieu')    return o + nganPheu();
+    if (G.ktNgan === 'ungpho')   return o + nganUngPho();
     if (G.ktNgan === 'kho')      return o + nganKho();
     if (G.ktNgan === 'hienphap') return o + nganHienPhap();
     return o + nganLuat();

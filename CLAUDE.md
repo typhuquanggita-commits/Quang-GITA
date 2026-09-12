@@ -475,6 +475,62 @@ gỡ ba tuần trước nằm chung rổ với một tấm vừa quyết gỡ n�
 Gỡ phải chọn lý do **và** viết một câu — gỡ không câu nào thì lần sau
 người khác dựng lại đúng tấm ấy, vì không có gì nói cho họ biết vì sao.
 
+## Trợ lý hình ảnh — đo phễu · sổ truy vết · ứng phó (9.99.59)
+
+Phần 10, phần cuối của bản đặc tả. Màn *Kiến trúc sư thị giác* → hai
+ngăn **Phễu · Đời tấm** và **Ứng phó**; cửa `doPheuThiGiac` ·
+`doiMotTam`; kho `G.TG_PHEU` (8) · `G.TG_UNGPHO` (10).
+
+### Luật của cả phần: KHÔNG BAO GIỜ gộp cột đo được với cột lời khai
+
+Phễu có hai nửa, khác hẳn nhau ở chỗ con số **đến từ đâu**:
+
+| Nửa | Bậc | Con số từ đâu |
+|---|---|---|
+| Đo được | đề xuất → duyệt → phát hành → đăng → gỡ | máy đếm thẳng trong sổ |
+| Lời khai | lượt xem · lượt bấm · lượt nhắn về | người gõ từ bảng nền tảng |
+
+Đặt một con số gõ tay cạnh một con số đo được — cùng hàng, cùng kiểu
+chữ — thì người đọc tin cả hai như nhau. Mà con số gõ tay thì gõ nhầm
+được, gõ đẹp lên được, hoặc **quên gõ mà hàng vẫn đầy**.
+
+Nên máy chủ **không trả về ba bậc lời khai, kể cả với giá trị 0**. Một
+số 0 nằm cùng bảng với sáu số đo được đọc ra là *"chưa ai xem"*, không
+đọc ra là *"máy không biết"* — và hai câu ấy khác hẳn nhau. Cùng luật
+với ô `daGoNgoai` của phần 9.
+
+Kéo theo: **tỷ lệ chỉ tính được trong MỘT nửa.** Lấy "lượt xem" chia
+"đã phát hành" là chia một lời khai cho một phép đo, và kết quả mang
+tên của phép đo trong khi nó thừa hưởng mọi sai của lời khai.
+
+### Sổ truy vết — `doiMotTam`
+
+Nhật ký `audit` đã ghi đủ từ lâu (`TG_DEXUAT` · `TG_BAC` · `TG_XUAT` ·
+`TG_DIRA` · `TG_DANG` · `TG_GO`), nhưng nằm rải trong sổ chung của cả
+hệ xếp theo thời gian — muốn đọc đời một tấm thì phải lọc bằng mắt qua
+hàng nghìn dòng. **Một sự thật CÓ mà không đọc ra được thì trên thực tế
+là KHÔNG CÓ.** Cửa này gom đúng một tấm, xếp **tăng dần**, và nêu chỗ
+hở *trước* dòng thời gian — một dòng nằm trong dòng thời gian thì người
+ta đọc như một việc đã qua.
+
+### Mười tờ ứng phó — `G.TG_UNGPHO`
+
+RB-01…RB-10, viết **trước**, vì lúc chuyện xảy ra thì không ai ngồi
+nghĩ ra quy trình được. Ba luật, cả ba đều có phép đo ở mục 71:
+
+1. **Mỗi bước phải LÀM ĐƯỢC**, không phải một lời khuyên. *"Xử lý
+   nhanh"* không phải một bước; *"gọi cửa `goTamThiGiac` với lý do
+   `PHAP_LY`"* thì là. Dưới ba bước thì nó là một câu, không phải một
+   quy trình.
+2. **Mỗi tờ khai AI LÀM** — không khai thì lúc gấp ai cũng tưởng người
+   kia đang làm.
+3. **Mỗi tờ khai TRONG BAO LÂU** — không có mốc thì việc gấp và việc
+   thường trôi cùng một nhịp, và nhịp ấy là nhịp của việc thường.
+
+Màn xếp tờ **GẤP lên trước**, không xếp theo mã: xếp theo mã thì tờ
+*"bộ kiểm đỏ trước giờ phát hành"* nằm cạnh tờ *"người trong ảnh rút
+lời đồng ý"* như thể hai việc cùng một nhịp — mà chúng không cùng.
+
 ---
 
 ## Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm
