@@ -269,6 +269,10 @@ const NGHE = [
   'KL_BIEUTUONG', 'MD_MAU_MA', 'MD_THUHANHVI', 'TG_IN_CHOT',
   /* 9.99.54 — cổng Điều Nhỏ của trợ lý hình ảnh */
   'TG_DIEUNHO', 'TG_KHUON4', 'TG_KHUON4_LUAT',
+  /* 9.99.55 — hiểu yêu cầu · phác ý · dựng đề bài năm lớp */
+  'TG_YDINH', 'TG_QUYET_KHO', 'TG_SACKHI', 'TG_QUYET', 'TG_QUYET_LUAT',
+  'TG_CHU_TRAN', 'TG_GOCNHIN', 'TG_ANDU', 'TG_BATINHTU', 'TG_BATINHTU_LUAT',
+  'TG_LOP5', 'TG_LOP5_LUAT',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

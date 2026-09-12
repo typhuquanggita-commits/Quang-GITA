@@ -3040,6 +3040,43 @@ bao(!(await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
     'điều mình ĐÃ hiểu trước khi hỏi thì câu trả lời sau đó là câu thật');
 }
 
+/* ══ HIỂU YÊU CẦU · ĐỀ NGHỊ KHỔ · PHÁC BA Ý — phần 2–4 của bản đặc tả ══ */
+{
+  const yt = await goi({fn:'docYTuong', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:{nguoiXem:['PHUHUYNH'],
+      noiDung:'So sánh hai cách nhắc con học: cách cũ nhắc liên tục, còn nếu ' +
+              'đổi sang đặt một mốc giờ cố định thì khác nhau thế nào.'}});
+  bao(yt.than.ok && yt.than.yDinh.yDinh === 'SO_SANH_2COT' &&
+      yt.than.khung.co && yt.than.khung.kho === 'DOC',
+    'ĐỌC RA Ý ĐỊNH theo dấu hiệu bề mặt, rồi đề nghị KHỔ theo bảng quyết định',
+    'ý định: ' + yt.than.yDinh.yDinh + ' · khổ ' + yt.than.khung.kho +
+    ' — ý định khác loại hình: loại hình nói tấm DỰNG thế nào, ý định nói tấm ' +
+    'SINH RA ĐỂ LÀM GÌ');
+
+  bao(yt.than.baY.length === 3 &&
+      yt.than.baY.map(x => x.gocNhin).join(',') === 'AN_TOAN,AN_DU,CAN_CANH' &&
+      yt.than.baY[1].anDu === 'HAI_CUA_HANG',
+    'và phác ĐÚNG BA góc nhìn cố định, góc ẩn dụ lấy từ ngân hàng',
+    'ba ý sinh tự do thường ra ba biến thể của cùng một ý, và người chọn tưởng ' +
+    'mình đang chọn giữa ba đường trong khi chỉ có một');
+
+  /* Không đoán khi không có dấu hiệu — và không rơi về một ý định mặc định. */
+  const mu = await goi({fn:'docYTuong', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:{nguoiXem:['PHUHUYNH'],
+      noiDung:'Một trang nói về những điều chưa nói ra được bằng lời nào cả ở đây.'}});
+  bao(mu.than.ok && mu.than.yDinh.yDinh === null && !mu.than.khung.co,
+    'KHÔNG THẤY DẤU HIỆU THÌ NÓI LÀ KHÔNG BIẾT — không rơi về một ý định mặc định',
+    'một cái đoán trình ra như một đề nghị thì người ta tin nó đã được cân nhắc');
+
+  /* Hai nhóm người xem cho ra hai khổ khác nhau = cần HAI TẤM. */
+  const hai = await goi({fn:'docYTuong', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:{nguoiXem:['PHUHUYNH','HOCVIEN'],
+      noiDung:'Thẻ kiến thức: 3 điều cần làm mỗi tối, hướng dẫn từng bước cho nhà mình.'}});
+  bao(hai.than.ok && !hai.than.khung.co && (hai.than.khung.lechKho || []).length === 2,
+    'BẢNG CHO RA HAI KHỔ KHÁC NHAU THÌ MÁY KHÔNG CHỌN GIÙM — hai nhóm cần hai tấm',
+    'lệch: ' + (hai.than.khung.lechKho || []).join(' và '));
+}
+
 /* ══ SÁU BẬC, KHÔNG CÓ ĐƯỜNG TẮT ══ */
 const idTG = dungTang.than.id;
 const tat = await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
@@ -3144,10 +3181,27 @@ bao(!(await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
   id:idTG, cham:{D1:100, D2:100}})).than.ok,
   'CHẤM THIẾU MỘT MỤC THÌ KHÔNG CỘNG — cộng thiếu ra một con số không nói gì');
 
-const dep = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+/* ══ TRỪ ĐIỂM THÌ PHẢI CHỈ RA CHỖ TRỪ — phần 7 của bản đặc tả ══
+   "Kẻ chấm phải có lý". Một mục chấm 60 không kèm bằng chứng thì người
+   vẽ không biết sửa gì; họ vẽ lại bằng cảm giác, lượt sau lại 60, và
+   cả hai bên cùng mất một vòng. */
+const khongCC = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
   id:idTG, cham:{D1:0, D2:100, D3:100, D4:100, D5:100, D6:100, D7:100}});
+bao(!khongCC.than.ok && khongCC.than.code === 'THIEUCHUNGCU' &&
+    khongCC.than.thieu.indexOf('D1') >= 0,
+  'CHẤM THẤP MÀ KHÔNG CHỈ RA CHỖ TRỪ THÌ KHÔNG NHẬN',
+  'một con số không có chỗ trỏ thì nó là một lời chê, không phải một phép chấm');
+
+const cc = {D1:'Tấm nói về phác đồ và Coach đồng hành — cả hai chỉ có ở tầng trên.'};
+const dep = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+  id:idTG, cham:{D1:0, D2:100, D3:100, D4:100, D5:100, D6:100, D7:100}, chungCu:cc});
 const dung = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  id:idTG, cham:{D1:100, D2:100, D3:100, D4:100, D5:100, D6:0, D7:100}});
+  id:idTG, cham:{D1:100, D2:100, D3:100, D4:100, D5:100, D6:0, D7:100},
+  chungCu:{D6:'Chữ trong tấm nhỏ hơn hai phẩy một milimét khi in khổ A5.'}});
+bao(dep.than.ok && (dep.than.tung.D1 || {}).chungCu &&
+    /phác đồ/.test(dep.than.tung.D1.chungCu),
+  'và BẰNG CHỨNG được giữ NGUYÊN VĂN trong sổ chấm, không giữ một bản tóm',
+  'sáu tháng sau người đọc sổ phải dựng lại được vì sao mục ấy bị trừ');
 bao(dep.than.ok && dung.than.ok && dep.than.diem === 75 && dung.than.diem === 90 &&
     dep.than.bac === 'Không đạt' && dung.than.bac === 'Đạt',
   'RẤT ĐẸP MÀ SAI HỆ THỐNG (75 · KHÔNG ĐẠT) THUA ĐÚNG HỆ THỐNG MÀ XẤU (90 · ĐẠT)',
@@ -3158,7 +3212,8 @@ bao(dep.than.ok && dung.than.ok && dep.than.diem === 75 && dung.than.diem === 90
    demo tấm tầm nhìn mới lộ: 89,9 vào bậc "Sửa lại" mà sổ ghi 90 — đúng
    ngưỡng bậc "Đạt". Bài thử này chấm cố ý ra số lẻ. */
 const le = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  id:idTG, cham:{D1:95, D2:92, D3:88, D4:90, D5:96, D6:84, D7:60}});
+  id:idTG, cham:{D1:95, D2:92, D3:88, D4:90, D5:96, D6:84, D7:60},
+  chungCu:{D7:'Nhãn ngắn chưa viết, và chữ thay ảnh mới có một dòng.'}});
 const leDb = db.prepare("SELECT diem, bacDiem FROM deXuatThiGiac WHERE id=?").get(idTG);
 bao(le.than.ok && le.than.diem === 89.9 && le.than.bac === 'Sửa lại' &&
     leDb.diem === 89.9 && leDb.bacDiem === 'Sửa lại',
@@ -3350,6 +3405,73 @@ bao(raNgoai.than.ok && raNgoai.than.daGui.indexOf(cauDacTrung) < 0 &&
 bao(raNgoai.than.daGui.indexOf(dungTang.than.tang) >= 0 &&
     raNgoai.than.daGui.indexOf(dungTang.than.nhiemVu) >= 0,
   'nhưng ĐẶC TẢ thì đi đủ — chặng, loại hình, nhiệm vụ, bố cục, người xem');
+
+/* ══ ĐỀ BÀI ĐI RA PHẢI MANG ĐIỀU NHỎ, VÀ NĂM LỚP PHẢI ĐÚNG THỨ TỰ ══
+
+   Cổng thu hai câu trả lời từ bản 9.99.54; tới đây mới kiểm chúng có ĐI
+   RA tới bộ vẽ không. Thu một câu trả lời rồi không dùng nó thì câu hỏi
+   ấy chỉ là một cái cổng làm phiền. */
+{
+  const t = raNgoai.than.daGui;
+  bao(/ĐIỀU NHỎ — phải NHÌN THẤY được/.test(t) && /NGƯỜI XEM GẶP TẤM NÀY LÚC/.test(t),
+    'ĐỀ BÀI ĐI RA MANG THEO ĐIỀU NHỎ VÀ THỜI ĐIỂM ĐỜI',
+    'hai câu ấy vào sổ từ 9.99.54 nhưng tới 9.99.55 mới đi ra tới bộ vẽ');
+
+  /* Thứ tự năm lớp là TRỌNG SỐ: bộ tạo ảnh nghe phần đầu rõ hơn phần
+     cuối. Đảo khối CẤM lên đầu thì tấm về đúng kỹ thuật mà sai chuyện. */
+  const viTri = ['Nhiệm vụ:', 'Người xem:', 'KIỂU:', 'MÀU:', 'CẤM —'].map(k => t.indexOf(k));
+  bao(viTri.every(i2 => i2 >= 0) && viTri.every((v, i2) => i2 === 0 || v > viTri[i2 - 1]),
+    'NĂM LỚP ĐÚNG THỨ TỰ: kiến trúc → nội dung → lối vẽ → cảm xúc → kỹ thuật',
+    'thứ tự các lớp CHÍNH LÀ trọng số — bộ tạo ảnh nghe phần đầu rõ hơn phần cuối');
+}
+
+/* ══ CHỐNG TỰ KHEN — phần 7 của bản đặc tả ══
+
+   Một thang chấm mà mọi tấm đều qua thì nó không còn là thang chấm —
+   nó là một con dấu. Và chuyện ấy trôi rất êm: không ai quyết định hạ
+   chuẩn, chỉ là mỗi lần chấm lại dễ hơn lần trước một chút.
+
+   Máy KHÔNG kết luận đây là chấm dễ — mười tấm tốt liên tiếp có thể là
+   đội vẽ đang lên tay thật. Máy làm đúng phần của máy: ĐẾM, rồi CHẶN
+   cho tới khi người chấm viết ra một câu. Cùng luật L-02 của bảng lương. */
+{
+  /* Dựng mười một đề xuất và chấm cao cả mười một. Chấm cao là hợp lệ;
+     cái bị chặn là chấm cao LIÊN TIẾP mà không ai nói vì sao. */
+  const nen = {tang:'T1', loaiHinh:'CONG', nhiemVu:'Giúp nhà biết qua chặng bảy ngày cần đạt gì',
+    noiDung:'Trang giới thiệu chặng bảy ngày nhận diện: bộ test đầu vào, một buổi ' +
+            'tiếp nhận, phiếu ghi bảy ngày, và cổng nghiệm thu ngày bảy.',
+    nguoiXem:['PHUHUYNH'], dieuNho:'bấm mở chặng 1 ngay tối nay',
+    thoiDiem:'tối sau giờ học'};
+  const cao = {D1:95, D2:95, D3:95, D4:95, D5:95, D6:95, D7:95};
+  let chan = null, daChan = 0;
+  for (let i2 = 0; i2 < 11; i2++) {
+    const de = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+      deXuat:Object.assign({}, nen, {boCuc:'bản thử số ' + i2})});
+    if (!de.than.ok) continue;
+    const ch = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+      id:de.than.id, cham:cao});
+    if (!ch.than.ok && ch.than.code === 'TUKHEN') { daChan++; if (!chan) chan = ch.than; }
+  }
+  bao(daChan > 0 && chan && chan.soCao >= 8,
+    'CHỐNG TỰ KHEN: chấm cao liên tiếp thì BỊ CHẶN cho tới khi người chấm nói vì sao',
+    chan ? chan.soCao + '/' + chan.tren + ' lượt gần nhất đều từ 90 trở lên — máy ' +
+      'KHÔNG kết luận là chấm dễ, vì đội vẽ lên tay thật cũng ra đúng con số ấy; ' +
+      'máy chỉ đếm rồi chặn cho tới khi có một câu' : 'không chặn lần nào');
+
+  /* Viết được một câu thì đi tiếp, và câu ấy Ở LẠI trong sổ. */
+  const de2 = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:Object.assign({}, nen, {boCuc:'bản có lời giải thích'})});
+  const ch2 = await goi({fn:'chamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:de2.than.id, cham:cao,
+    lyDoCao:'Loạt này dùng lại bố cục đã duyệt ở bản trước nên ít lỗi kỹ thuật.'});
+  bao(ch2.than.ok && ch2.than.tung._tuKhen &&
+      /dùng lại bố cục/.test(ch2.than.tung._tuKhen.lyDo) &&
+      ch2.than.tung._tuKhen.boiAi === 'superadmin@gita365.vn',
+    'và câu giải thích Ở LẠI trong sổ chấm, kèm tên người viết',
+    'máy không cắt và cũng không tha — nó chặn, người chốt ghi quyết định của ' +
+    'mình kèm lý do, và câu ấy ở lại');
+}
+
 
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&

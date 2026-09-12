@@ -10344,23 +10344,137 @@ const { chromium } = require(PW);
         du.khuon4 === null;
     }
 
+    /* ── BỐN BẢNG MỚI CỦA 9.99.55: BẢN CHÉP PHẢI KHỚP, HÀM PHẢI CHẠY ──
+
+       Máy chủ không đọc được kho đã mã hoá, nên mỗi bảng phải có một bản
+       chép ở may-chu/. Bản chép là chỗ mục lặng lẽ: kho sửa một dòng, bản
+       chép ở nguyên, và từ đó máy đề nghị theo một bảng chưa ai duyệt —
+       không báo gì cả, vì cả hai bên đều chạy được.
+
+       Nên đối chiếu TỪNG Ô rồi GỌI THẲNG từng hàm. Đọc chú giải thì chú
+       giải nói gì cũng được. */
+    {
+      const khoY = await p.evaluate(() => {
+        const G = window.G;
+        return {
+          yDinh: (G.TG_YDINH || []).map(x => [x.ma, x.dau || []]),
+          thieuOY: (G.TG_YDINH || [])
+            .filter(x => !x.ma || !x.ten || !x.vi || !x.giong || !(x.dau || []).length)
+            .map(x => x.ma),
+          quyet: (G.TG_QUYET || []).map(x => [x.yDinh, x.nguoiXem, x.kho, x.sacKhi]),
+          thieuViQuyet: (G.TG_QUYET || []).filter(x => !x.vi)
+            .map(x => x.yDinh + '×' + x.nguoiXem),
+          tran: (G.TG_CHU_TRAN || []).map(x => [x.o, x.tran, x.soToiDa]),
+          anDu: (G.TG_ANDU || []).map(x => [x.ma, x.hop || [], x.yDinh || []]),
+          gocNhin: (G.TG_GOCNHIN || []).map(x => x.ma),
+          lop5: (G.TG_LOP5 || []).map(x => x.ma + ':' + x.ten)
+        };
+      });
+      ra.tgYThieuO = khoY.thieuOY;
+      ra.tgQuyetThieuVi = khoY.thieuViQuyet;
+      ra.tgYKhop = JSON.stringify(khoY.yDinh) === JSON.stringify(mTG.Y_DINH || []);
+      ra.tgQuyetKhop = JSON.stringify(khoY.quyet) === JSON.stringify(mTG.QUYET || []);
+      ra.tgAnDuKhop = JSON.stringify(khoY.anDu) === JSON.stringify(mTG.AN_DU || []);
+      /* Kho ghi trần dưới dạng dòng có ô `o`; máy chủ giữ một đối tượng
+         phẳng để dò cho nhanh. Hai hình khác nhau nên đối chiếu THEO Ý:
+         mỗi con số của máy chủ phải bằng đúng con số của dòng cùng tên. */
+      const tranMay = mTG.CHU_TRAN || {};
+      ra.tgTranLech = khoY.tran.filter(([o, t, s]) =>
+        tranMay[o] !== t || (o === 'gach' && tranMay.gachToiDa !== s)).map(x => x[0]);
+      ra.tgTranKhop = khoY.tran.length === 4 && ra.tgTranLech.length === 0;
+
+      /* ══ GỌI THẲNG ══ */
+      const yRo = mTG.docYDinh('Ba điều cha mẹ làm được ngay tối nay — hướng dẫn ngắn');
+      /* Không dấu hiệu nào thì phải NÓI LÀ KHÔNG BIẾT. Rơi về một ý định
+         mặc định là đoán, và một cái đoán trình ra như một đề nghị thì
+         người ta tin nó đã được cân nhắc. */
+      const yMu = mTG.docYDinh('Hôm qua trời mưa suốt buổi chiều ở ngoài sân trường.');
+      ra.tgYDocThat = yRo.yDinh === 'THE_KIEN_THUC' && yMu.yDinh === null &&
+        (yMu.xep || []).length === 0;
+
+      const qCo = mTG.quyetKhung('THU_MUA', ['PHUHUYNH']);
+      /* Hai nhóm người xem cho ra hai khổ khác nhau nghĩa là cần HAI TẤM.
+         Máy chọn đại một khổ ở đây thì một trong hai nhóm nhận tấm sai
+         khổ, và không ai biết vì tấm vẫn ra đúng quy cách. */
+      const qLech = mTG.quyetKhung('THE_KIEN_THUC', ['PHUHUYNH', 'HOCVIEN']);
+      const qTrong = mTG.quyetKhung('CHUYEN_THAT', ['DOITAC']);
+      ra.tgQuyetChayThat =
+        qCo.co === true && qCo.kho === 'DOC' && qCo.sacKhi === 'DONG_CAM' &&
+        qLech.co === false && (qLech.lechKho || []).length === 2 &&
+        qTrong.co === false && !qTrong.lechKho;
+
+      const tQua = mTG.soatChuTran({
+        tieuDe: 'Một tiêu đề dài quá bốn mươi ký tự thì mắt phải quét hai lần',
+        gach: ['a', 'b', 'c', 'd', 'e', 'f', 'g']});
+      const tDat = mTG.soatChuTran({tieuDe: 'Bảy ngày nhận diện', than: 'Một câu thôi.',
+        gach: ['một', 'hai'], moi: 'Mở chặng 1 tối nay'});
+      ra.tgTranChanThat = !tQua.dat && tDat.dat === true &&
+        tQua.qua.some(x => x.o === 'tieuDe') &&
+        tQua.qua.some(x => x.o === 'gach' && x.laSoDong);
+
+      const baY = mTG.phacBaY('CHUYEN_THAT', ['PHUHUYNH']);
+      /* Không có ẩn dụ nào hợp thì góc ấy phải để TRỐNG và nói ra. Rơi
+         lặng lẽ về khuôn an toàn thì người chọn thấy hai ý giống nhau mà
+         không hiểu vì sao — và tưởng cả ba góc đều đã được cân nhắc. */
+      const baTrong = mTG.phacBaY('SO_DO_DICH_VU', ['HOCVIEN']);
+      ra.tgBaYThat = baY.length === 3 && baTrong.length === 3 &&
+        baY.map(x => x.gocNhin).join('·') === 'AN_TOAN·AN_DU·CAN_CANH' &&
+        baY[1].anDu === 'DEN_BAN_HOC' &&
+        baTrong[1].anDu === null && baTrong[1].trong === true;
+
+      /* Thứ tự năm lớp CHÍNH LÀ trọng số. Đảo một lớp thì tấm về đúng
+         kỹ thuật mà sai chuyện, và không phép chấm nào bắt được. */
+      const l5 = mTG.dungLop5({kho: 'DOC', noiDung: 'x'.repeat(30), dieuNho: 'bấm mở chặng 1'});
+      ra.tgLop5That = l5.length === 5 &&
+        l5.map(x => x.ma).join('') === 'L1L2L3L4L5' &&
+        /1080×1350/.test(l5[0].chu) && /ĐIỀU NHỎ/.test(l5[1].chu) &&
+        khoY.lop5.length === 5 &&
+        khoY.lop5.map(x => x.split(':')[0]).join('') === 'L1L2L3L4L5';
+      ra.tgGocNhin = khoY.gocNhin.join('·');
+    }
+
   bao(ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
       ra.tgDnCamKhop && ra.tgDnChanThat && !ra.tgDnThieuO.length &&
       (ra.tgDnMa || []).length === 3 && ra.tgDnKhuon4 ===
-        '1:Lắng → 2:Nói điều đã hiểu → 3:Hỏi rõ → 4:Nói bước tiếp',
+        '1:Lắng → 2:Nói điều đã hiểu → 3:Hỏi rõ → 4:Nói bước tiếp' &&
+      ra.tgYKhop && ra.tgQuyetKhop && ra.tgAnDuKhop && ra.tgTranKhop &&
+      !ra.tgYThieuO.length && !ra.tgQuyetThieuVi.length &&
+      ra.tgYDocThat && ra.tgQuyetChayThat && ra.tgTranChanThat &&
+      ra.tgBaYThat && ra.tgLop5That && ra.tgGocNhin === 'AN_TOAN·AN_DU·CAN_CANH',
     'CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC CHẶN THEO RANH GIỚI ĐÃ DUYỆT, KHÔNG THEO MỘT DANH SÁCH TỰ NGHĨ RA. Bản đặc tả của chủ hệ đề nghị dựng "Boundary Definition" cho từng Tầng với ô Allowed Concepts và ô Do NOT introduce. Hai ô ấy ĐÃ TỒN TẠI trong kho từ lâu và đang được dùng để bán hàng: HP_TANG[].gom và HP_TANG[].khong. Chép chúng sang một tệp mới là dựng bản thứ hai của một sự thật, và bản thứ hai không ai sửa khi bảng chặng đổi — tới lúc ấy máy chặn thiết kế theo một ranh giới đã cũ, im lặng. Máy chủ không đọc được kho đã mã hoá nên buộc phải giữ một bản chép TỐI THIỂU để dò, và phép đo này đối chiếu bản chép ấy với bản gốc THEO Ý chứ không theo từng chữ: kho viết thành câu cho người đọc, máy chủ giữ khoá ngắn để dò, nên luật là mỗi khoá máy chủ dùng phải TÌM THẤY trong câu khai của chính Tầng ấy. Khoá nào không tìm thấy là khoá tự nghĩ ra, và nó chặn thiết kế theo một ranh giới chưa ai duyệt — đúng cái mà luật "AI không được tự suy diễn" sinh ra để cấm. Phép đo cũng GỌI THẲNG cổng ấy với một nội dung T1 nói về Coach đồng hành và phác đồ rồi đòi nó chặn, vì đọc chú giải thì chú giải nói gì cũng được. Và mười hai loại hình phải có mặt đủ ở cả hai bên, mỗi loại khai đúng MỘT nhiệm vụ — nhồi hai việc vào một tấm thì người xem không nhớ được cái nào',
     /* ĐIỀU KIỆN CỦA CÂU KHOE PHẢI TRÙNG ĐIỀU KIỆN CỦA PHÉP ĐO.
        Bản đầu câu khoe chỉ hỏi hai cờ cũ, nên lúc phá thử bản chép bảng
        động từ, mục này ĐỎ mà dòng chi tiết vẫn in nguyên câu "mọi khoá
        dò đều tìm thấy…" — đỏ mà không nói vì sao thì người đọc mất thêm
        một vòng đi tìm. */
-    ra.tgNeoKhop && ra.tgMauKhop && ra.tgDnCamKhop && ra.tgDnChanThat
+    ra.tgNeoKhop && ra.tgMauKhop && ra.tgDnCamKhop && ra.tgDnChanThat &&
+    ra.tgYKhop && ra.tgQuyetKhop && ra.tgAnDuKhop && ra.tgTranKhop &&
+    ra.tgYDocThat && ra.tgQuyetChayThat && ra.tgTranChanThat &&
+    ra.tgBaYThat && ra.tgLop5That
       ? '5 chặng · mọi khoá dò đều tìm thấy trong ô "không" của chính chặng ấy · ' +
         mTGSoLoai + ' loại hình đều có đúng một nhiệm vụ · cổng chặn thật · ' +
         (ra.tgMauKhop ? (mTG.MAU_RA || []).length + ' ô màu đi ra khớp bản gốc · ' : '') +
-        'cổng Điều Nhỏ ba câu chặn thật, bảng động từ khớp bản gốc'
+        'cổng Điều Nhỏ ba câu chặn thật, bảng động từ khớp bản gốc · ' +
+        (mTG.Y_DINH || []).length + ' ý định · ' + (mTG.QUYET || []).length +
+        ' cặp quyết định · ' + (mTG.AN_DU || []).length + ' ẩn dụ · 4 trần chữ · ' +
+        'bốn bảng đều khớp bản gốc và bốn hàm đều chạy thật'
       : [!ra.tgDnCamKhop ? 'BẢN CHÉP BẢNG ĐỘNG TỪ CẤM Ở MÁY CHỦ LỆCH VỚI KHO' : '',
          !ra.tgDnChanThat ? 'CỔNG ĐIỀU NHỎ KHÔNG CHẶN THẬT' : '',
+         !ra.tgYKhop ? 'BẢN CHÉP BẢNG Ý ĐỊNH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         !ra.tgQuyetKhop ? 'BẢN CHÉP BẢNG QUYẾT ĐỊNH KHỔ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         !ra.tgAnDuKhop ? 'BẢN CHÉP NGÂN HÀNG ẨN DỤ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         !ra.tgTranKhop ? 'TRẦN CHỮ Ở MÁY CHỦ LỆCH VỚI KHO: ' +
+           ((ra.tgTranLech || []).join(' · ') || 'số dòng hai bên khác nhau') : '',
+         (ra.tgYThieuO || []).length ? 'ý định thiếu ô: ' + ra.tgYThieuO.join(', ') : '',
+         (ra.tgQuyetThieuVi || []).length ? 'cặp quyết định không nói lý do: ' +
+           ra.tgQuyetThieuVi.join(', ') : '',
+         !ra.tgYDocThat ? 'PHÉP ĐỌC Ý ĐỊNH KHÔNG CHẠY THẬT (hoặc nó ĐOÁN khi không có dấu hiệu)' : '',
+         !ra.tgQuyetChayThat ? 'BẢNG QUYẾT ĐỊNH KHÔNG CHẠY THẬT (hoặc nó chọn đại một khổ khi hai nhóm lệch khổ)' : '',
+         !ra.tgTranChanThat ? 'TRẦN CHỮ KHÔNG CHẶN THẬT' : '',
+         !ra.tgBaYThat ? 'PHÁC BA Ý KHÔNG CHẠY THẬT (hoặc góc ẨN DỤ rơi lặng lẽ về khuôn an toàn)' : '',
+         !ra.tgLop5That ? 'ĐỀ BÀI NĂM LỚP SAI SỐ LỚP HOẶC SAI THỨ TỰ' : '',
+         ra.tgGocNhin && ra.tgGocNhin !== 'AN_TOAN·AN_DU·CAN_CANH'
+           ? 'BA GÓC NHÌN TRONG KHO LỆCH: ' + ra.tgGocNhin : '',
          (ra.tgDnThieuO || []).length ? 'mục Điều Nhỏ thiếu ô: ' + ra.tgDnThieuO.join(', ') : '',
          ra.tgKhoaLa.length ? 'KHOÁ TỰ NGHĨ RA: ' + ra.tgKhoaLa.join(' · ') : '',
          !ra.tgMauKhop ? 'BẢNG MÀU ĐI RA LỆCH BẢN GỐC: ' +
@@ -11958,7 +12072,7 @@ const { chromium } = require(PW);
         if (!(cc.so >= 4 && cc.tong >= 10))
           lech.push('bộ đo đọc ra quá ít sổ: ' + cc.so + ' sổ · ' + cc.tong + ' mục');
       }
-      const kieu = ['coDong', 'dem', 'duTruong'];
+      const kieu = ['coDong', 'dem', 'duTruong', 'duSo'];
       if (JSON.stringify(kho.ccKieu) !== JSON.stringify(kieu.slice().sort()))
         lech.push('G.CC_KIEU đổi hình: ' + (kho.ccKieu || []).join(','));
     }

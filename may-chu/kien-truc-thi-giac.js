@@ -330,6 +330,202 @@ export function soatDieuNho(d) {
   };
 }
 
+/* ═══════════════ BẢY Ý ĐỊNH ═══════════════
+
+   Ý ĐỊNH khác LOẠI HÌNH. Loại hình nói tấm ấy DỰNG thế nào; ý định nói
+   tấm ấy SINH RA ĐỂ LÀM GÌ. Cùng một loại hình hai cột có thể mang ý
+   định so sánh hoặc ý định kể chuyện, và hai cái ấy cần hai giọng khác
+   hẳn nhau.
+
+   Bản chép của G.TG_YDINH — máy chủ không đọc được kho đã mã hoá. Bộ
+   kiểm đối chiếu hai bản từng ô. */
+export const Y_DINH = [
+  ['THU_MUA', ['chúc', 'chúc mừng', 'năm mới', 'tết', 'giáng sinh', 'khai giảng',
+               'lễ', '20/11', '8/3']],
+  ['THE_KIEN_THUC', ['kiến thức', 'cách', 'hướng dẫn', '3 điều', '5 điều', 'mẹo',
+                     'checklist']],
+  ['SO_SANH_2COT', ['so sánh', 'khác nhau', 'thay vì', 'trước và sau', 'còn nếu']],
+  ['CHUYEN_THAT', ['câu chuyện', 'chia sẻ từ', 'lời kể', 'nhà mình đã']],
+  ['POSTER_THUONG_HIEU', ['poster', 'tầm nhìn', 'slogan', 'triết lý', 'giá trị cốt lõi']],
+  ['BANNER_DIEU_NHO', ['banner', 'băng', 'đăng ký', 'liên hệ', 'mời', 'bắt đầu']],
+  ['SO_DO_DICH_VU', ['dịch vụ', 'gói', 'quy trình', 'các bước', 'sơ đồ']]
+];
+
+/* Đọc ý định theo dấu hiệu bề mặt, cùng cách deNghiLoaiHinh đã làm.
+   Trả về CẢ BẢNG ĐIỂM chứ không trả một cái tên: một câu có thể mang
+   hai ý định gần bằng nhau, và giấu chuyện ấy đi là đưa ra một đề nghị
+   chắc chắn hơn sự thật. */
+export function docYDinh(chu) {
+  const t = ' ' + String(chu || '').toLowerCase().replace(/\s+/g, ' ') + ' ';
+  const diem = [];
+  Y_DINH.forEach(([ma, dau]) => {
+    let n = 0, thay = [];
+    dau.forEach(d => {
+      if (t.indexOf(' ' + d + ' ') >= 0 || t.indexOf(' ' + d + ',') >= 0 ||
+          t.indexOf(' ' + d + '.') >= 0) { n++; thay.push(d); }
+    });
+    if (n) diem.push({ yDinh: ma, diem: n, thay });
+  });
+  diem.sort((a, b) => b.diem - a.diem);
+  /* Không có dấu hiệu nào thì NÓI LÀ KHÔNG BIẾT. Rơi về một ý định mặc
+     định là đoán, và một cái đoán trình ra như một đề nghị thì người ta
+     tin nó đã được cân nhắc. */
+  if (!diem.length) return { yDinh: null, xep: [],
+    vi: 'Không thấy dấu hiệu của ý định nào. Máy không đoán — người chọn.' };
+  /* Hai ý định bằng điểm nhau thì cũng nói ra. */
+  const nganh = diem.filter(x => x.diem === diem[0].diem);
+  return { yDinh: diem[0].yDinh, xep: diem.slice(0, 3),
+    ngang: nganh.length > 1 ? nganh.map(x => x.yDinh) : undefined,
+    vi: 'Theo dấu hiệu: ' + diem[0].thay.join(', ') + '.' };
+}
+
+/* ═══════════════ BẢNG QUYẾT ĐỊNH KHỔ VÀ SẮC KHÍ ═══════════════
+   Bản chép của G.TG_QUYET. Cặp nào không có trong bảng thì máy NÓI
+   THẲNG là chưa có đề nghị — đoán bừa một khổ rồi trình ra như một đề
+   nghị là tệ hơn im lặng. */
+export const QUYET = [
+  ['THU_MUA', 'PHUHUYNH', 'DOC', 'DONG_CAM'],
+  ['THE_KIEN_THUC', 'PHUHUYNH', 'DOC', 'TIN_CAY'],
+  ['THE_KIEN_THUC', 'HOCVIEN', 'DUNG', 'HUONG_SANG'],
+  ['SO_SANH_2COT', 'PHUHUYNH', 'DOC', 'DONG_CAM'],
+  ['CHUYEN_THAT', 'PHUHUYNH', 'DOC', 'DONG_CAM'],
+  ['POSTER_THUONG_HIEU', 'DOITAC', 'NGANG', 'TIN_CAY'],
+  ['BANNER_DIEU_NHO', 'PHUHUYNH', 'NGANG', 'HUONG_SANG'],
+  ['SO_DO_DICH_VU', 'PHUHUYNH', 'DOC', 'TIN_CAY']
+];
+
+export function quyetKhung(yDinh, nguoiXem) {
+  const nx = Array.isArray(nguoiXem) ? nguoiXem : [nguoiXem];
+  const hop = QUYET.filter(q => q[0] === yDinh && nx.indexOf(q[1]) >= 0);
+  if (!hop.length) return { co: false,
+    vi: 'Chưa có đề nghị cho cặp này trong bảng quyết định. Người chọn khổ và ' +
+        'sắc khí. Máy không đoán: một cái đoán trình ra như một đề nghị thì ' +
+        'người ta tin nó đã được cân nhắc.' };
+  /* Nhiều người xem mà bảng cho ra hai khổ khác nhau: KHÔNG chọn giùm.
+     Hai nhóm người cần hai khổ khác nhau nghĩa là cần HAI TẤM. */
+  const kho = Array.from(new Set(hop.map(q => q[2])));
+  if (kho.length > 1) return { co: false, lechKho: kho,
+    vi: 'Bảng cho ra ' + kho.join(' và ') + ' cho các nhóm người xem đang chọn. ' +
+        'Hai nhóm cần hai khổ khác nhau nghĩa là cần HAI TẤM, không phải một ' +
+        'tấm chọn đại một khổ.' };
+  return { co: true, kho: kho[0],
+    sacKhi: Array.from(new Set(hop.map(q => q[3]))).join(' · ') };
+}
+
+/* ═══════════════ TRẦN CHỮ TRÊN ẢNH ═══════════════
+   Bản chép của G.TG_CHU_TRAN. Vì sao là TRẦN chứ không phải gợi ý: chữ
+   tràn khung thì bộ vẽ tự thu nhỏ cỡ chữ, và cỡ nhỏ đi thì tấm ấy phạm
+   luật C22 — chữ nhỏ nhất phải đạt 2,1mm khi in. Một trần ở đây chặn
+   được một lỗi chỉ lộ ra ở tận khâu in. */
+export const CHU_TRAN = { tieuDe: 40, than: 80, gach: 60, gachToiDa: 6, moi: 25 };
+
+export function soatChuTran(chu) {
+  const c = chu || {};
+  const qua = [];
+  const do1 = (o, v, tran) => {
+    const t = String(v || '').trim();
+    if (t.length > tran) qua.push({ o, dai: t.length, tran });
+  };
+  do1('tieuDe', c.tieuDe, CHU_TRAN.tieuDe);
+  do1('than', c.than, CHU_TRAN.than);
+  do1('moi', c.moi, CHU_TRAN.moi);
+  const g = Array.isArray(c.gach) ? c.gach : [];
+  if (g.length > CHU_TRAN.gachToiDa)
+    qua.push({ o: 'gach', dai: g.length, tran: CHU_TRAN.gachToiDa, laSoDong: true });
+  g.forEach((x, i) => do1('gach[' + (i + 1) + ']', x, CHU_TRAN.gach));
+  return { dat: qua.length === 0, qua };
+}
+
+/* ═══════════════ BA GÓC NHÌN — PHÁC BA Ý ═══════════════
+
+   Máy KHÔNG vẽ và KHÔNG nghĩ hộ ý tưởng. Nó dựng ba KHUNG Ý theo ba
+   góc nhìn đã khai trước, rồi người viết điền phần sáng tạo vào.
+
+   Vì sao ba góc cố định: ba ý sinh tự do thường ra ba biến thể của
+   cùng một ý, và người chọn tưởng mình đang chọn giữa ba đường trong
+   khi chỉ có một. Ba góc khai trước ép ba ý khác nhau ở GỐC.
+
+   Bản chép rút gọn của G.TG_ANDU — máy chủ chỉ cần đủ để CHỌN, phần
+   mô tả dài để ở kho cho người đọc. */
+export const AN_DU = [
+  ['HAI_CUA_HANG', ['PHUHUYNH', 'DOITAC'], ['SO_SANH_2COT', 'THE_KIEN_THUC']],
+  ['DEN_BAN_HOC', ['PHUHUYNH', 'HOCVIEN'], ['CHUYEN_THAT', 'THE_KIEN_THUC']],
+  ['DUONG_VE_NHA', ['PHUHUYNH', 'HOCVIEN'], ['THU_MUA', 'POSTER_THUONG_HIEU']],
+  ['TRAO_DIEU_NHO', ['PHUHUYNH', 'DOITAC'], ['BANNER_DIEU_NHO', 'SO_DO_DICH_VU']],
+  ['SANG_MO_CUA', ['PHUHUYNH', 'HOCVIEN', 'DOITAC'], ['THU_MUA', 'POSTER_THUONG_HIEU']]
+];
+
+export function phacBaY(yDinh, nguoiXem) {
+  const nx = Array.isArray(nguoiXem) ? nguoiXem : [nguoiXem];
+  const hop = AN_DU.filter(a => a[2].indexOf(yDinh) >= 0 &&
+    a[1].some(n => nx.indexOf(n) >= 0));
+  return [
+    { gocNhin: 'AN_TOAN', anDu: null,
+      lam: 'Đi đúng khuôn nhận diện, không thử gì mới.' },
+    { gocNhin: 'AN_DU', anDu: hop.length ? hop[0][0] : null,
+      /* Không có ẩn dụ nào hợp thì NÓI RA, không rơi lặng lẽ về khuôn
+         an toàn — nếu không thì người chọn thấy hai ý giống nhau và
+         không hiểu vì sao. */
+      lam: hop.length
+        ? 'Mượn ẩn dụ ' + hop[0][0] + ' — xem mô tả đầy đủ ở kho.'
+        : 'CHƯA CÓ ẨN DỤ NÀO HỢP với cặp ý định × người xem này. Ngân hàng ẩn ' +
+          'dụ mới có năm cái (mục TG-04 của sổ chờ). Góc này tạm để trống chứ ' +
+          'không lặng lẽ thành một khuôn an toàn thứ hai.',
+      trong: hop.length ? undefined : true },
+    { gocNhin: 'CAN_CANH', anDu: null,
+      lam: 'Thu vào một cử chỉ nhỏ: một bàn tay, một ánh nhìn, một vật trên bàn.' }
+  ];
+}
+
+/* ═══════════════ ĐỀ BÀI NĂM LỚP ═══════════════
+   Thứ tự năm lớp CHÍNH LÀ trọng số — bộ tạo ảnh nghe phần đầu rõ hơn
+   phần cuối. Đảo lớp 5 lên đầu thì tấm về đúng kỹ thuật mà sai chuyện.
+
+   Máy dựng KHUNG năm lớp và điền những phần nó BIẾT chắc: khổ, bảng
+   màu, cảnh báo kỹ thuật. Phần nội dung và cảm xúc để trống cho người
+   viết — máy không nghĩ hộ ý tưởng. */
+export function dungLop5(o) {
+  const d = o || {};
+  const kho = String(d.kho || '');
+  const tiLe = { DOC: '1080×1350 (dọc 4:5)', DUNG: '1080×1920 (đứng 9:16)',
+                 NGANG: '1200×628 (ngang 1.91:1)' }[kho] || '(chưa chốt khổ)';
+  return [
+    { ma: 'L1', ten: 'Kiến trúc',
+      chu: 'Khổ ' + tiLe + '. ' + (d.boCuc ? String(d.boCuc) : '(bố cục: người viết điền)') },
+    { ma: 'L2', ten: 'Nội dung',
+      chu: (d.noiDung ? String(d.noiDung).slice(0, 400) : '(người viết điền)') +
+        (d.dieuNho ? ' ĐIỀU NHỎ phải NHÌN THẤY trên ảnh: ' + d.dieuNho : '') },
+    { ma: 'L3', ten: 'Lối vẽ',
+      chu: 'Chỉ dùng bảng màu thương hiệu đã gửi kèm. ' +
+        (d.loiVe ? String(d.loiVe) : '(chất liệu nét: người viết điền)') },
+    { ma: 'L4', ten: 'Cảm xúc',
+      chu: 'Ấm · tươi sáng · tin cậy.' +
+        (d.sacKhi ? ' Sắc khí: ' + d.sacKhi + '.' : '') +
+        (d.thoiDiem ? ' Người xem gặp tấm này lúc: ' + d.thoiDiem + '.' : '') },
+    { ma: 'L5', ten: 'Cảnh báo kỹ thuật',
+      chu: 'Chữ phải đọc được và đúng dấu tiếng Việt. Bàn tay đủ năm ngón, ' +
+        'tỉ lệ người tự nhiên. Chừa góc dưới bên phải trống cho dấu thương hiệu. ' +
+        'Không đặt chữ đè lên mặt người.' }
+  ];
+}
+
+/* Cửa cho màn hình: đọc ý định, đề nghị khổ, phác ba góc — một lượt.
+   Không ghi gì vào sổ. */
+export async function docYTuong(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+  const d = (y || {}).deXuat || y || {};
+  const chu = String(d.noiDung || '').trim();
+  if (chu.length < 20) return {ok: false,
+    error: 'Dưới hai mươi chữ thì chưa đủ để đọc ra ý định.'};
+  const yd = docYDinh(chu + ' ' + String(d.nhiemVu || ''));
+  const kh = yd.yDinh ? quyetKhung(yd.yDinh, d.nguoiXem || []) : {co: false,
+    vi: 'Chưa đọc ra ý định nên chưa đề nghị được khổ.'};
+  return {ok: true, yDinh: yd, khung: kh,
+    baY: yd.yDinh ? phacBaY(yd.yDinh, d.nguoiXem || []) : [],
+    vi: 'Máy ĐỀ NGHỊ, người chốt. Cả lượt đọc này chạy trong máy chủ Học viện.'};
+}
+
 /* Cửa cho màn hình gọi TRƯỚC khi gửi đề xuất — hỏi trước thì người ta
    sửa ngay trên màn, không phải gửi đi rồi bị trả về. */
 export async function docDieuNho(y, env, db, hoSo) {
@@ -628,15 +824,76 @@ export async function chamThiGiac(y, env, db, hoSo) {
     error: 'Thiếu hoặc sai điểm (0–100) ở: ' + thieu.join(', ') + '. ' +
            'Chấm thiếu một mục rồi cộng lại là ra một con số không nói gì.'};
 
+  /* ══ TRỪ ĐIỂM THÌ PHẢI CHỈ RA CHỖ TRỪ ══
+     Bản đặc tả GIDA phần 7: "kẻ chấm phải có lý" — mỗi mục bị trừ phải
+     kèm BẰNG CHỨNG nhìn thấy được trên tấm.
+
+     Vì sao bắt buộc: một mục chấm 60 không kèm bằng chứng thì người vẽ
+     không biết sửa gì. Họ vẽ lại bằng cảm giác, lượt sau lại 60, và cả
+     hai bên cùng mất một vòng. Con số không có chỗ trỏ thì nó là một
+     lời chê, không phải một phép chấm. */
+  const NGUONG_CHUNG_CU = 80;
+  const chungCu = y.chungCu || {};
+  const thieuCC = Object.keys(TRONG_DIEM).filter(k =>
+    Number(cham[k]) < NGUONG_CHUNG_CU &&
+    String(chungCu[k] || '').trim().length < 20);
+  if (thieuCC.length) return {ok: false, code: 'THIEUCHUNGCU', thieu: thieuCC,
+    error: 'Mục chấm dưới ' + NGUONG_CHUNG_CU + ' phải chỉ ra CHỖ TRỪ trên tấm: ' +
+      thieuCC.join(', ') + '. Một con số không có chỗ trỏ thì người vẽ không ' +
+      'biết sửa gì — họ vẽ lại bằng cảm giác, lượt sau lại đúng số ấy, và cả ' +
+      'hai bên cùng mất một vòng.'};
+
   let tong = 0;
   const tung = {};
   for (const k of Object.keys(TRONG_DIEM)) {
     const d = Number(cham[k]);
     tung[k] = {diem: d, trong: TRONG_DIEM[k], gop: d * TRONG_DIEM[k] / 100};
+    if (String(chungCu[k] || '').trim()) tung[k].chungCu = String(chungCu[k]).trim().slice(0, 400);
     tong += tung[k].gop;
   }
   tong = Math.round(tong * 10) / 10;
   const bac = (BAC_DIEM.find(b => tong >= b.tu) || BAC_DIEM[BAC_DIEM.length - 1]).ten;
+
+  /* ══ CHỐNG TỰ KHEN ══
+     Bản đặc tả gọi là Anti-Self-Love Guard: chống trôi về chỗ "ảnh nào
+     cũng chín điểm".
+
+     Một thang chấm mà mọi tấm đều qua thì nó không còn là thang chấm —
+     nó là một con dấu. Và chuyện ấy trôi rất êm: không ai quyết định
+     hạ chuẩn, chỉ là mỗi lần chấm lại dễ hơn lần trước một chút.
+
+     Máy KHÔNG tự kết luận đây là tự khen: mười tấm tốt liên tiếp có thể
+     là đội vẽ đang lên tay thật. Nên máy làm đúng phần của máy — ĐẾM,
+     rồi CHẶN cho tới khi người chấm viết ra một câu. Câu ấy ở lại trong
+     sổ. Cùng luật L-02 của bảng lương: máy không cắt và cũng không tha. */
+  const NGUONG_CAO = 90, SOAT_GAN = 10, TRAN_CAO = 8;
+  let canhTuKhen = null;
+  if (tong >= NGUONG_CAO) {
+    const gan = await db.prepare(
+      'SELECT diem FROM deXuatThiGiac WHERE diem IS NOT NULL AND id <> ? ' +
+      'ORDER BY deLuc DESC LIMIT ?').bind(x.id, SOAT_GAN).all();
+    const ds = ((gan && gan.results) || []).map(r => Number(r.diem));
+    const soCao = ds.filter(v => v >= NGUONG_CAO).length;
+    if (ds.length >= SOAT_GAN && soCao >= TRAN_CAO) {
+      const lyDo = String(y.lyDoCao || '').trim();
+      if (lyDo.length < 20) return {ok: false, code: 'TUKHEN',
+        soCao, tren: ds.length,
+        error: soCao + '/' + ds.length + ' lượt chấm gần nhất đều từ ' +
+          NGUONG_CAO + ' điểm trở lên, và lượt này cũng vậy. Máy KHÔNG kết luận ' +
+          'đây là chấm dễ — đội vẽ lên tay thật thì cũng ra đúng con số ấy. ' +
+          'Nhưng một thang chấm mà mọi tấm đều qua thì nó là một con dấu, ' +
+          'không phải một thang chấm. Viết một câu: vì sao loạt này cao, và ' +
+          'câu ấy ở lại trong sổ.'};
+      /* `hoSo.u` chứ không phải `hoSo.username`. Hồ sơ phiên ở kho này
+         mang tên ô là `u`; gõ `username` thì JavaScript không báo gì cả,
+         nó trả undefined và câu giải thích ở lại trong sổ mà KHÔNG có tên
+         người viết — tức là mất đúng nửa có giá trị của phép ghi này.
+         Bộ thử bắt được vì nó đòi đúng tên, không đòi "có ô boiAi". */
+      canhTuKhen = {soCao, tren: ds.length, lyDo: lyDo.slice(0, 400),
+        boiAi: hoSo.u};
+    }
+  }
+  if (canhTuKhen) tung._tuKhen = canhTuKhen;
 
   await db.prepare(
     'UPDATE deXuatThiGiac SET diem = ?, bacDiem = ?, chamChiTiet = ? WHERE id = ?'
@@ -1100,6 +1357,21 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
   const tangSo = Number(String(x.tang || '').replace(/[^0-9]/g, ''));
   const mauTang = MAU_RA.filter(m => m.k.indexOf('T' + tangSo + ' ') === 0)[0];
   const canNguoi = CAN_NGUOI.indexOf(x.loaiHinh) >= 0;
+  /* ── NĂM LỚP, VÀ THỨ TỰ CHÍNH LÀ TRỌNG SỐ ──
+     Bản đặc tả GIDA phần 4 chia đề bài thành năm lớp, và nói thẳng:
+     thứ tự các lớp là trọng số, vì bộ tạo ảnh nghe phần đầu rõ hơn
+     phần cuối.
+
+     Đề bài dưới đây ĐÃ đi đúng thứ tự ấy từ trước khi có bản đặc tả:
+       L1 kiến trúc   — chặng · loại hình · nhiệm vụ · bố cục
+       L2 nội dung    — người xem · điều nhỏ · thời điểm · bối cảnh
+       L3 lối vẽ      — KIỂU · MÀU · CHỮ
+       L4 cảm xúc     — phần người, sắc khí của chặng
+       L5 kỹ thuật    — khối CẤM ở cuối
+     Nên tôi KHÔNG viết lại nó thành năm khối có nhãn: viết lại một
+     đề bài đã chỉnh kỹ để nó trông giống bản đặc tả hơn là đổi một
+     thứ đang chạy lấy một thứ đọc cho đẹp. Bộ thử canh ĐÚNG THỨ TỰ
+     ấy, nên đảo lớp là bị bắt. */
   const guiDi = [
     '── ĐỀ BÀI THIẾT KẾ · GITA 365 ──',
     '',
@@ -1108,6 +1380,16 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
     'Nhiệm vụ: ' + x.nhiemVu,
     'Bố cục: ' + (x.boCuc || 'theo mặc định của loại hình'),
     'Người xem: ' + nx.join(', '),
+    /* ── HAI Ô CỔNG ĐIỀU NHỎ ĐÃ THU, VÀ ĐỀ BÀI CHƯA TỪNG MANG ──
+       Cổng bắt người đề xuất trả lời "xem xong họ làm được điều nhỏ
+       gì" và "họ gặp tấm này lúc nào trong đời". Hai câu ấy vào sổ từ
+       bản 9.99.54 nhưng KHÔNG đi ra tới bộ vẽ — nên bộ vẽ vẫn vẽ một
+       tấm đẹp mà không biết nó phải mời người xem làm gì.
+       Thu một câu trả lời rồi không dùng nó thì câu hỏi ấy chỉ là một
+       cái cổng làm phiền. */
+    x.dieuNho ? 'ĐIỀU NHỎ — phải NHÌN THẤY được trong khuôn hình: ' + x.dieuNho : null,
+    x.thoiDiem ? 'NGƯỜI XEM GẶP TẤM NÀY LÚC: ' + x.thoiDiem +
+      ' — ánh sáng và giọng của tấm phải hợp với lúc ấy.' : null,
     '',
     'KIỂU: ' + (KIEU_RA[x.loaiHinh] || 'theo mặc định của loại hình') +
       ' Ảnh biên tập, chất liệu và ánh sáng như chụp thật, chiều sâu rõ. ' +

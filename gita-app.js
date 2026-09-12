@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.54',
+  version: '9.99.55',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3618,6 +3618,10 @@ G.THUOC_CAP_PHEP = [
   'KL_BIEUTUONG','MD_MAU_MA','MD_THUHANHVI','TG_IN_CHOT',
   /* v9.99.54 — cổng Điều Nhỏ của trợ lý hình ảnh */
   'TG_DIEUNHO','TG_KHUON4','TG_KHUON4_LUAT',
+  /* v9.99.55 — hiểu yêu cầu · phác ý · dựng đề bài năm lớp */
+  'TG_YDINH','TG_QUYET_KHO','TG_SACKHI','TG_QUYET','TG_QUYET_LUAT',
+  'TG_CHU_TRAN','TG_GOCNHIN','TG_ANDU','TG_BATINHTU','TG_BATINHTU_LUAT',
+  'TG_LOP5','TG_LOP5_LUAT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -37410,6 +37414,11 @@ G.VIEWS = G.VIEWS || {};
   var NGAN = [
     {ma: 'docman',  ten: 'Đọc màn',    ic: 'search'},
     {ma: 'tailieu', ten: 'Tài liệu',   ic: 'quote'},
+    /* Đặt TRƯỚC ngăn Đề xuất, theo đúng thứ tự việc: đọc ra ý định →
+       đề nghị khổ và sắc khí → phác ba góc → rồi mới viết đề xuất.
+       Xếp sau thì người ta viết xong đề xuất mới thấy nó, và lúc ấy
+       không ai quay lại đổi khổ nữa. */
+    {ma: 'ytuong',  ten: 'Ý tưởng',    ic: 'lightning'},
     {ma: 'dexuat',  ten: 'Đề xuất',    ic: 'plus'},
     {ma: 'kho',     ten: 'Kho',        ic: 'vault'},
     {ma: 'hienphap',ten: 'Hiến pháp',  ic: 'book'},
@@ -37672,7 +37681,125 @@ G.VIEWS = G.VIEWS || {};
       .then(function (d) { G.ktTlRa = d; veLai(); });
   };
 
-  /* ═══════════ NGĂN 3 · ĐỀ XUẤT ═══════════ */
+  /* ═══════════ NGĂN 3 · Ý TƯỞNG ═══════════
+
+     Ba việc trong một lượt, và ba việc ấy phải đứng CÙNG MỘT CHỖ vì
+     chúng phụ thuộc nhau: ý định quyết khổ, khổ quyết bố cục, và bố cục
+     quyết được bao nhiêu chữ.
+
+     Ba chỗ máy CỐ Ý không làm thay, ghi ra ở đây để lần sau không ai
+     tưởng là thiếu sót:
+
+       · Không đoán ý định khi không có dấu hiệu nào. Rơi về một ý định
+         mặc định là đoán, và một cái đoán trình ra như một đề nghị thì
+         người ta tin nó đã được cân nhắc.
+       · Không chọn khổ khi hai nhóm người xem cần hai khổ khác nhau.
+         Hai nhóm lệch khổ nghĩa là cần HAI TẤM.
+       · Không nghĩ hộ ý tưởng. Máy dựng BA KHUNG theo ba góc nhìn khai
+         trước; phần sáng tạo người viết điền. */
+  function nganYTuong() {
+    var o = '<div class="card"><b>Đọc ý định → đề nghị khổ → phác ba góc</b>' +
+      '<p class="sm muted mt">Máy ĐỀ NGHỊ, người chốt. Cả lượt đọc chạy trong máy ' +
+      'chủ Học viện — không một câu nội dung nào đi ra ngoài.</p></div>';
+
+    var nx = (G.ktDuLieu.kho && G.ktDuLieu.kho.ok && G.ktDuLieu.kho.nguoiXem) || [];
+    o += '<div class="card mt2">' +
+      '<label class="sm"><b>Nội dung cần truyền đạt</b> ' +
+      '<span class="muted">(từ hai mươi chữ trở lên)</span></label>' +
+      '<textarea id="ktYtChu" class="inp" rows="5" maxlength="4000"></textarea>' +
+      '<div class="mt"><label class="sm"><b>Nhiệm vụ của tấm</b> ' +
+      '<span class="muted">(không bắt buộc — máy đọc kèm để dò ý định)</span></label>' +
+      '<input id="ktYtNhiemVu" class="inp" maxlength="300"></div>' +
+      '<div class="mt"><label class="sm"><b>Cho ai xem</b></label>' +
+      '<div class="row" style="gap:12px;flex-wrap:wrap;margin-top:6px">' +
+      nx.map(function (m) {
+        var x = (G.TG_NGUOI || []).filter(function (y) { return y.ma === m; })[0];
+        return '<label class="sm" style="display:flex;gap:6px;align-items:center">' +
+          '<input type="checkbox" class="ktYtNX" value="' + h(m) + '"> ' +
+          h((x && x.ten) || m) + '</label>';
+      }).join('') + '</div></div>' +
+      '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn primary" onclick="G.ktDocYTuong()">Đọc và đề nghị</button>' +
+      '</div></div>';
+
+    var d = G.ktYtRa;
+    if (!d) return o;
+    if (!d.ok)
+      return o + '<div class="card" style="border-left:3px solid var(--bad);margin-top:14px">' +
+        '<p class="sm">' + h(d.error || '') + '</p></div>';
+
+    /* ── Ý ĐỊNH ── */
+    var yd = d.yDinh || {};
+    var tenY = function (ma) {
+      var x = (G.TG_YDINH || []).filter(function (y) { return y.ma === ma; })[0];
+      return (x && x.ten) || ma;
+    };
+    o += '<div class="card" style="border-left:3px solid ' +
+      (yd.yDinh ? 'var(--ok)' : 'var(--warn)') + ';margin-top:14px">' +
+      '<b>' + h(yd.yDinh ? 'Ý định: ' + tenY(yd.yDinh) : 'Máy không đọc ra ý định nào') +
+      '</b><p class="sm muted mt">' + h(yd.vi || '') + '</p>' +
+      /* Hai ý định bằng điểm nhau thì NÓI RA. Giấu đi là đưa ra một đề
+         nghị chắc chắn hơn sự thật. */
+      ((yd.ngang || []).length
+        ? '<p class="sm mt"><b>Bằng điểm nhau:</b> ' +
+          h(yd.ngang.map(tenY).join(' · ')) + ' — người chọn.</p>' : '') +
+      ((yd.xep || []).length > 1
+        ? '<p class="tiny muted mt">Xếp sau: ' + h(yd.xep.slice(1).map(function (x) {
+            return tenY(x.yDinh) + ' (' + x.diem + ')'; }).join(' · ')) + '</p>' : '') +
+      '</div>';
+
+    /* ── KHỔ VÀ SẮC KHÍ ── */
+    var k = d.khung || {};
+    var tenKho = function (ma) {
+      var x = (G.TG_QUYET_KHO || []).filter(function (y) { return y.ma === ma; })[0];
+      return x ? x.ten + ' · ' + x.ti : ma;
+    };
+    o += '<div class="card" style="border-left:3px solid ' +
+      (k.co ? 'var(--ok)' : 'var(--warn)') + ';margin-top:14px">' +
+      (k.co
+        ? '<b>Đề nghị khổ ' + h(tenKho(k.kho)) + '</b>' +
+          '<p class="sm mt">Sắc khí: <b>' + h(k.sacKhi || '') + '</b></p>'
+        : '<b>' + h(k.lechKho ? 'Hai nhóm người xem cần HAI TẤM' : 'Chưa có đề nghị khổ') +
+          '</b><p class="sm muted mt">' + h(k.vi || '') + '</p>') +
+      '</div>';
+
+    /* ── BA GÓC ── */
+    if ((d.baY || []).length) {
+      var tenGoc = function (ma) {
+        var x = (G.TG_GOCNHIN || []).filter(function (y) { return y.ma === ma; })[0];
+        return (x && x.ten) || ma;
+      };
+      o += U.sec('Ba góc nhìn', 'ba ý khác nhau ở GỐC, không phải ba biến thể của một ý');
+      o += '<div class="row" style="gap:12px;flex-wrap:wrap">' +
+        d.baY.map(function (b) {
+          var anDu = b.anDu
+            ? (G.TG_ANDU || []).filter(function (y) { return y.ma === b.anDu; })[0]
+            : null;
+          return '<div class="card" style="flex:1 1 260px;border-left:3px solid ' +
+            (b.trong ? 'var(--warn)' : 'var(--teal)') + '">' +
+            '<b class="sm">' + h(tenGoc(b.gocNhin)) + '</b>' +
+            '<p class="sm muted mt">' + h(b.lam || '') + '</p>' +
+            (anDu ? '<p class="sm mt">' + h(anDu.hinh) + '</p>' : '') +
+            '</div>';
+        }).join('') + '</div>';
+    }
+
+    o += '<div class="card mt2"><p class="sm muted">' + h(d.vi || '') + '</p></div>';
+    return o;
+  }
+
+  G.ktDocYTuong = function () {
+    var nguoi = [];
+    if (typeof document !== 'undefined')
+      Array.prototype.forEach.call(document.querySelectorAll('.ktYtNX'), function (c) {
+        if (c.checked) nguoi.push(c.value);
+      });
+    G.goiMayChu('docYTuong', {deXuat: {
+      noiDung: oGiaTri('ktYtChu'), nhiemVu: oGiaTri('ktYtNhiemVu'), nguoiXem: nguoi
+    }}).then(function (d) { G.ktYtRa = d; veLai(); });
+  };
+
+  /* ═══════════ NGĂN 4 · ĐỀ XUẤT ═══════════ */
   function nganDeXuat() {
     var d = G.ktDuLieu.kho;
     var loai = (d && d.ok && d.loaiHinh) || [];
@@ -38116,6 +38243,7 @@ G.VIEWS = G.VIEWS || {};
 
     if (G.ktNgan === 'docman')   return o + nganDocMan();
     if (G.ktNgan === 'tailieu')  return o + nganTaiLieu();
+    if (G.ktNgan === 'ytuong')   return o + nganYTuong();
     if (G.ktNgan === 'dexuat')   return o + nganDeXuat();
     if (G.ktNgan === 'kho')      return o + nganKho();
     if (G.ktNgan === 'hienphap') return o + nganHienPhap();
@@ -38556,14 +38684,20 @@ G.duoiVe = function () {
 'use strict';
 var G = window.G || {}; window.G = G;
 
-/* ── BA KIỂU ĐO, KHÔNG CÓ KIỂU THỨ TƯ ──
-   Mỗi mục chờ khai `do.kieu` là một trong ba chữ này, hoặc khai
+/* ── BỐN KIỂU ĐO ──
+   Mỗi mục chờ khai `do.kieu` là một trong bốn chữ này, hoặc khai
    `khongDoDuoc` kèm lý do. Không khai gì cả cũng là một trạng thái, và
    bộ đọc nói ra chứ không im — sổ cũ dựng trước 9.99.49 rơi vào đó. */
 G.CC_KIEU = {
   coDong: 'Một kho đang rỗng. Xong khi nó có dòng đầu tiên.',
   dem: 'Một bảng có cặp số cần/có. Xong khi mọi dòng đủ số.',
-  duTruong: 'Một bảng mà mỗi dòng còn thiếu vài ô. Xong khi mọi dòng đủ ô.'
+  duTruong: 'Một bảng mà mỗi dòng còn thiếu vài ô. Xong khi mọi dòng đủ ô.',
+  /* Thêm ở 9.99.55. Khác `dem` ở chỗ: `dem` đọc cặp số ĐÃ KHAI trong
+     từng dòng, còn `duSo` chỉ khai ĐÍCH rồi ĐẾM THẬT số dòng đang có.
+     Dùng khi bản đặc tả nói "phải có tám cái" mà kho mới chép bảy —
+     khai thêm một ô "đang có 7" là dựng bản thứ hai của một con số
+     đếm được, và bản thứ hai thì mục. */
+  duSo: 'Một danh sách phải dài tới một con số đích. Xong khi đếm đủ.'
 };
 
 /* Lấy giá trị lồng: 'muc' hoặc 'a.b'. Trả về undefined nếu đứt đường —
@@ -38628,6 +38762,16 @@ G.ccDoMuc = function (muc) {
       : { trang: 'chua', so: co + '/' + can,
           con: oThieu.length + '/' + dong.length + ' ô chưa đủ',
           ten: oThieu };
+  }
+
+  if (d.kieu === 'duSo') {
+    /* Tên khác `can`/`co` của nhánh trên: cùng một hàm, cùng phạm vi
+       `var`, nên trùng tên là khai lại một biến đang dùng. */
+    var dich = Number(d.can) || 0;
+    var dangCo = dong.length;
+    return dangCo >= dich
+      ? { trang: 'xong', so: dangCo + '/' + dich }
+      : { trang: 'chua', so: dangCo + '/' + dich, con: 'còn thiếu ' + (dich - dangCo) };
   }
 
   /* duTruong */

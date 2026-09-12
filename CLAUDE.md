@@ -300,6 +300,47 @@ hiểu → hỏi rõ → nói bước tiếp), không quăng ra một dòng báo
 hình mà cấm ở cổng nội dung là hai cửa của một Học viện nói hai điều
 khác nhau — nên ở đây **chặn**.
 
+## Trợ lý hình ảnh — bốn bảng quyết định (9.99.55)
+
+Phần 2–4 của bản đặc tả. Màn *Kiến trúc sư thị giác → ngăn **Ý tưởng***
+(`src/kien-truc-thi-giac.js`), cửa máy chủ `docYTuong`.
+
+| Kho | Bản chép ở máy chủ | Việc |
+|---|---|---|
+| `G.TG_YDINH` (7) | `Y_DINH` | Đọc ra ý định theo dấu hiệu bề mặt |
+| `G.TG_QUYET` (8) | `QUYET` | Ý định × người xem → khổ + sắc khí |
+| `G.TG_CHU_TRAN` (4) | `CHU_TRAN` | Trần ký tự cho chữ trên ảnh |
+| `G.TG_ANDU` (5) | `AN_DU` | Ngân hàng ẩn dụ cho góc nhìn thứ hai |
+
+**Ba chỗ máy CỐ Ý không làm thay** — cả ba đều có phép đo riêng ở mục 71,
+và cả ba đều đã được phá thử để xem có đỏ đúng chỗ không:
+
+1. Không có dấu hiệu nào thì **nói là không biết**, không rơi về một ý
+   định mặc định. Một cái đoán trình ra như một đề nghị thì người ta tin
+   nó đã được cân nhắc.
+2. Hai nhóm người xem cho ra hai khổ khác nhau thì **không chọn giùm** —
+   đó là dấu hiệu cần HAI TẤM. Chọn đại một khổ thì một nhóm nhận tấm
+   sai khổ mà không ai biết, vì tấm vẫn ra đúng quy cách.
+3. Không có ẩn dụ nào hợp thì góc ấy **để trống và nói ra**, không rơi
+   lặng lẽ về khuôn an toàn — nếu không thì người chọn thấy hai ý giống
+   nhau và tưởng cả ba góc đều đã được cân nhắc.
+
+**Thứ tự năm lớp của đề bài CHÍNH LÀ trọng số** (`dungLop5`): bộ tạo ảnh
+nghe phần đầu rõ hơn phần cuối. Đảo lớp *Cảnh báo kỹ thuật* lên đầu thì
+tấm về đúng kỹ thuật mà sai chuyện, và không phép chấm nào bắt được.
+
+**Chống tự khen** (`chamThiGiac`): tám trong mười lượt gần nhất từ 90
+điểm trở lên thì lượt sau **bị chặn** cho tới khi người chấm viết một
+câu, và câu ấy ở lại trong sổ kèm tên người viết. Máy không kết luận là
+chấm dễ — đội vẽ lên tay thật cũng ra đúng con số ấy. Cùng luật L-02 của
+bảng lương: máy không cắt và cũng không tha.
+
+Và một cái bẫy đã cắn thật ở đây: hồ sơ phiên mang tên ô là **`hoSo.u`**,
+không phải `hoSo.username`. Gõ nhầm thì JavaScript không báo gì cả — nó
+trả `undefined`, câu giải thích ở lại trong sổ mà **không có tên người
+viết**, tức là mất đúng nửa có giá trị của phép ghi. Bộ thử bắt được vì
+nó đòi **đúng tên**, không đòi "có ô `boiAi`".
+
 ---
 
 ## Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm

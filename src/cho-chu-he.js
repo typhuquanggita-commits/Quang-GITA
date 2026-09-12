@@ -31,14 +31,20 @@
 'use strict';
 var G = window.G || {}; window.G = G;
 
-/* ── BA KIỂU ĐO, KHÔNG CÓ KIỂU THỨ TƯ ──
-   Mỗi mục chờ khai `do.kieu` là một trong ba chữ này, hoặc khai
+/* ── BỐN KIỂU ĐO ──
+   Mỗi mục chờ khai `do.kieu` là một trong bốn chữ này, hoặc khai
    `khongDoDuoc` kèm lý do. Không khai gì cả cũng là một trạng thái, và
    bộ đọc nói ra chứ không im — sổ cũ dựng trước 9.99.49 rơi vào đó. */
 G.CC_KIEU = {
   coDong: 'Một kho đang rỗng. Xong khi nó có dòng đầu tiên.',
   dem: 'Một bảng có cặp số cần/có. Xong khi mọi dòng đủ số.',
-  duTruong: 'Một bảng mà mỗi dòng còn thiếu vài ô. Xong khi mọi dòng đủ ô.'
+  duTruong: 'Một bảng mà mỗi dòng còn thiếu vài ô. Xong khi mọi dòng đủ ô.',
+  /* Thêm ở 9.99.55. Khác `dem` ở chỗ: `dem` đọc cặp số ĐÃ KHAI trong
+     từng dòng, còn `duSo` chỉ khai ĐÍCH rồi ĐẾM THẬT số dòng đang có.
+     Dùng khi bản đặc tả nói "phải có tám cái" mà kho mới chép bảy —
+     khai thêm một ô "đang có 7" là dựng bản thứ hai của một con số
+     đếm được, và bản thứ hai thì mục. */
+  duSo: 'Một danh sách phải dài tới một con số đích. Xong khi đếm đủ.'
 };
 
 /* Lấy giá trị lồng: 'muc' hoặc 'a.b'. Trả về undefined nếu đứt đường —
@@ -103,6 +109,16 @@ G.ccDoMuc = function (muc) {
       : { trang: 'chua', so: co + '/' + can,
           con: oThieu.length + '/' + dong.length + ' ô chưa đủ',
           ten: oThieu };
+  }
+
+  if (d.kieu === 'duSo') {
+    /* Tên khác `can`/`co` của nhánh trên: cùng một hàm, cùng phạm vi
+       `var`, nên trùng tên là khai lại một biến đang dùng. */
+    var dich = Number(d.can) || 0;
+    var dangCo = dong.length;
+    return dangCo >= dich
+      ? { trang: 'xong', so: dangCo + '/' + dich }
+      : { trang: 'chua', so: dangCo + '/' + dich, con: 'còn thiếu ' + (dich - dangCo) };
   }
 
   /* duTruong */
