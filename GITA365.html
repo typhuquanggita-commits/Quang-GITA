@@ -942,7 +942,16 @@ main{grid-column:2;padding:26px 30px 90px;min-width:0}
   .gate-body{grid-template-columns:1fr;gap:34px;padding:10px 30px 50px}
 }
 @media(max-width:860px){
-  .shell{grid-template-columns:minmax(0,1fr)}
+  /* ── PHẢI KỂ ĐỦ BỐN DẠNG, KHÔNG CHỈ `.shell` ──
+     Dòng này trước chỉ có `.shell`, và nó THUA ba dòng ở trên vì
+     `.shell.no-right` nặng hơn `.shell` — kể cả khi nằm trong @media.
+     Hậu quả đo được ở bản 9.99.50: trên màn 420px, lúc cột phải đóng,
+     vùng nội dung chỉ rộng 268px thay vì 388px, và 152px còn lại là
+     một cột trống dành cho cột trái vốn đã trượt ra ngoài màn.
+     Lỗi này có từ trước, ở MỌI màn chứ không riêng màn trợ lý — không
+     ai thấy vì bộ rà soát chạy ở khổ màn để bàn. */
+  .shell,.shell.no-left,.shell.no-right,.shell.no-left.no-right{
+    grid-template-columns:minmax(0,1fr)}
   main{grid-column:1;padding:20px 16px 80px}
   #left{transform:translateX(-100%);transition:.3s cubic-bezier(.2,.8,.3,1);box-shadow:var(--shadow);width:280px}
   #left.open{transform:none}
@@ -1448,6 +1457,106 @@ body.khoa-chep img{-webkit-user-drag:none; user-drag:none; pointer-events:none}
 .ai-n-cho-loi{display:block;font-size:12.5px;line-height:1.55;color:var(--ink-3);margin:5px 0 8px}
 .ai-n-cho-loi svg{display:inline;vertical-align:-2px;margin-right:3px;color:var(--gita-do-ink)}
 @media(max-width:600px){ .ch-bong{max-width:88%} .ch-bong-ai{max-width:94%} }
+
+/* ═══════════ CỬA SỔ TRÒ CHUYỆN — bản 9.99.50 ═══════════
+
+   Bản trước là một HỘP CHAT đặt giữa một trang đầy thẻ: khung cao
+   280px, dưới nó bốn thẻ giải thích, và khung chat trôi lên mất khi
+   người ta cuộn xuống đọc. Nghĩa là chỗ để NÓI CHUYỆN chiếm chưa tới
+   một phần ba màn hình, còn hai phần ba là chỗ nói VỀ việc nói chuyện.
+
+   Nay cửa sổ chiếm trọn chiều cao, ba tầng đứng yên: đầu · dòng
+   chuyện · chỗ gõ. Cuộn chỉ xảy ra bên trong dòng chuyện, nên chỗ gõ
+   không bao giờ rời khỏi tầm mắt — đó là khác biệt lớn nhất giữa một
+   hộp chat và một cửa sổ chat.
+
+   Bốn thẻ kia không bỏ đi. Chúng sang cột phải trên màn rộng, và
+   xuống dưới cửa sổ trên điện thoại. */
+body.man-chat main{padding-bottom:18px}
+/* ── ĐO CỘT GIỮA, KHÔNG ĐO MÀN HÌNH ──
+   Bản đầu tôi chia hai cột bằng @media(min-width:1181px). Chụp thử ở
+   1500px thì cửa sổ chat bị ép còn khoảng 520px, vì màn ấy đang mở CẢ
+   cột trái 288px LẪN cột phải 326px — bề ngang màn hình nói 1500, chỗ
+   thật sự còn cho nội dung chỉ 886.
+   Đó là lớp lỗi của mọi @media trong một khung có hai cột thu vào
+   được: nó hỏi sai câu. Câu đúng là "cột giữa rộng bao nhiêu", và
+   @container hỏi đúng câu ấy. Trình duyệt không hiểu @container thì
+   ở lại một cột — đọc vẫn tốt, chỉ là không tận dụng bề ngang. */
+main{container-type:inline-size}
+.cs-lo{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start}
+@container (min-width:1000px){
+  .cs-lo{grid-template-columns:minmax(0,1fr) 304px}
+  .cs-ben{position:sticky;top:calc(var(--top-h) + 20px)}
+}
+.cs-win{display:flex;flex-direction:column;overflow:hidden;padding:0;
+  height:calc(100dvh - var(--top-h) - 150px);min-height:440px}
+/* ── VÌ SAO CHIỀU CAO ĐO BẰNG JS, KHÔNG TRỪ BẰNG SỐ ──
+   Con số trong calc() ở trên chỉ là mức tạm cho lần vẽ đầu. Chiều cao
+   thật do G.csCaoCuaSo() đo và đặt lại.
+   Bản đầu tôi trừ bằng số: 100dvh - top-h - 46px. Đo thử thì đáy cửa
+   sổ nằm 61px DƯỚI tầm mắt — chỗ gõ bị đẩy ra ngoài màn, đúng thứ cửa
+   sổ này sinh ra để tránh. Phía trên nó có ba thứ chồng lên nhau: lề
+   vùng nội dung, thanh nhắc việc trễ nhịp (lúc có lúc không), và 26px
+   nữa mà đọc CSS không truy ra nguồn. Trừ bằng số là đoán ba thứ ấy
+   cùng lúc, và đoán sai thì sai im lặng — trang vẫn dựng ra, chỉ là
+   chỗ gõ nằm ngoài màn. */
+.cs-dau{display:flex;align-items:center;gap:12px;flex:none;
+  padding:13px 18px;border-bottom:1px solid var(--line);background:var(--phu-1)}
+.cs-anh{width:40px;height:40px;border-radius:13px;flex:none;display:grid;place-items:center;
+  background:var(--gita-mo-2);color:var(--gita-ink);border:1px solid var(--gita-vien-1)}
+.cs-anh svg{width:20px;height:20px}
+.cs-ten{min-width:0;flex:1}
+.cs-ten b{display:block;font-size:14.5px;line-height:1.3}
+.cs-duoi{display:flex;align-items:center;gap:6px;margin-top:2px;font-size:10.5px;
+  color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cs-cham{width:7px;height:7px;border-radius:99px;background:var(--ok);flex:none;opacity:.9}
+.cs-cuon{flex:1;min-height:0;max-height:none;overflow-y:auto;padding:20px 20px 8px;
+  display:flex;flex-direction:column;gap:16px;scroll-behavior:smooth;position:relative}
+/* Vạch ngày và giờ của từng lượt. Một cuộc trò chuyện không có mốc
+   thời gian thì đọc lại không biết câu nào nói trước câu nào. */
+.cs-vach{align-self:center;font-size:10.5px;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-4);background:var(--phu-2);
+  border:1px solid var(--line);border-radius:99px;padding:3px 12px}
+.cs-gio{display:block;margin-top:5px;font-size:10.5px;opacity:.72;font-variant-numeric:tabular-nums}
+.ch-toi .cs-gio{text-align:right}
+/* Chỗ gõ: ô chữ tự cao lên tới năm dòng rồi mới cuộn. Ô một dòng bắt
+   người ta gõ một câu dài mà chỉ nhìn thấy khúc cuối của nó. */
+.cs-go{flex:none;border-top:1px solid var(--line);background:var(--phu-1);padding:12px 18px 14px}
+/* Chạy ngang MỘT hàng ở mọi khổ màn, không xuống dòng. Năm câu gợi ý
+   xuống dòng trên màn hẹp chiếm 175px — đo được — và dòng chuyện chỉ
+   còn 75px. Một hàng cuộn hết 35px, và câu gợi ý vẫn ở đó suốt cuộc
+   trò chuyện như bộ kiểm mục 18 đòi. */
+.cs-goiy{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;margin-bottom:10px;
+  padding-bottom:5px;scrollbar-width:none;-ms-overflow-style:none}
+.cs-goiy::-webkit-scrollbar{display:none}
+.cs-goiy .chip{flex:none}
+.cs-o{display:flex;gap:9px;align-items:flex-end;background:var(--surface);
+  border:1px solid var(--line);border-radius:22px;padding:6px 6px 6px 18px;transition:.18s}
+.cs-o:focus-within{border-color:var(--gita)}
+.cs-o textarea{flex:1;min-width:0;background:none;border:0;outline:none;resize:none;
+  color:var(--ink);font:inherit;font-size:14.5px;line-height:1.55;
+  padding:10px 0;max-height:120px;overflow-y:auto}
+.cs-o textarea::placeholder{color:var(--ink-4)}
+.cs-nut{width:38px;height:38px;border-radius:99px;flex:none;display:grid;place-items:center;
+  border:1px solid var(--line);background:var(--surface-2);color:var(--ink-3);cursor:pointer;
+  transition:.18s}
+.cs-nut:hover{border-color:var(--line-2);color:var(--ink)}
+.cs-nut.pri{background:var(--gita);border-color:var(--gita);color:#fff}
+.cs-nut.pri:hover{filter:brightness(1.08)}
+.cs-nut svg{width:17px;height:17px}
+.cs-meo{margin:8px 2px 0;font-size:10.5px;color:var(--ink-4);line-height:1.5}
+/* Cột phải. `position:sticky` chỉ bật khi thật sự có hai cột — khai ở
+   khối @container ở trên. Một cột mà sticky thì thẻ dính lại giữa màn
+   trong lúc người ta đang cuộn đọc chính nó. */
+.cs-ben{display:flex;flex-direction:column;gap:12px}
+.cs-ben .card{margin:0}
+@media(max-width:860px){
+  .cs-cuon{padding:16px 14px 6px}
+  .cs-go{padding:10px 12px 12px}
+  /* Mẹo phím tắt là chuyện của bàn phím. Trên điện thoại nó chiếm 47px
+     để nói về hai phím không có ở đó. */
+  .cs-meo{display:none}
+}
 
 .tlg-doan{max-height:520px;overflow-y:auto;padding:16px 18px;border:1px solid var(--line);
   border-radius:var(--r);background:var(--surface)}
@@ -2124,7 +2233,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.49',
+  version: '9.99.50',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -21801,8 +21910,16 @@ G.chatHoi = function(cauHoi){
 G.chatXoa = function(){ G.CHAT = []; kbDa = []; kbCau = ''; ve(); };
 
 /* ═══════════ VẼ MỘT BÓNG NÓI ═══════════ */
+/* Giờ của một lượt. Hai chữ số, không kèm ngày — ngày đã có vạch riêng
+   ở đầu dòng chuyện, in lại ở từng bóng là chiếm chỗ mà không thêm gì. */
+function gio(d){
+  var t = (d instanceof Date) ? d : new Date();
+  return ('0'+t.getHours()).slice(-2) + ':' + ('0'+t.getMinutes()).slice(-2);
+}
+
 function bongToi(m){
-  return '<div class="ch-luot ch-toi"><div class="ch-bong">'+h(m.loi)+'</div>'+
+  return '<div class="ch-luot ch-toi"><div class="ch-bong">'+h(m.loi)+
+    '<span class="cs-gio">'+h(gio(m.luc))+'</span></div>'+
     '<div class="ch-anh ch-anh-toi">'+h(tenToi().trim().slice(0,1).toUpperCase())+'</div></div>';
 }
 
@@ -22021,9 +22138,17 @@ function theDap(d){
     o += '<p class="ai-tang-giu">'+ic('lock','w-3 h-3')+' '+d.giuLaiVuotTang+
       ' tư liệu nữa thuộc tầng trên — em giữ lại. Nền của chúng nằm ở tầng nhà mình đang đi, '+
       'nên đọc bây giờ chưa dùng được. Đi hết chặng này thì chúng mở ra.</p>';
-  if((d.khoChuaKhaiTang || []).length)
-    o += '<p class="ai-tang-chua tiny dim">Kho '+h(d.khoChuaKhaiTang.join(', '))+
-      ' chưa khai tầng nên em chưa lọc theo tầng được ở đó — phần ấy vẫn đi qua trần 30% như cũ.</p>';
+  /* ── KHÔNG ĐỔ TÊN KHO VÀO MẶT NGƯỜI ĐỌC ──
+     Câu này từng in NGUYÊN danh sách tên biến trong kho, và với một
+     phụ huynh thì nó ra khoảng sáu mươi chữ kiểu HN_NGOT, BD_HOA,
+     MATRAN_T1 — chiếm hơn nửa bóng nói, và không nói gì với họ cả.
+     Sự thật cần nói là "còn mấy kho chưa lọc theo tầng được"; tên
+     biến là chuyện của người làm, và người làm đã có bộ kiểm. */
+  var kct = d.khoChuaKhaiTang || [];
+  if(kct.length)
+    o += '<p class="ai-tang-chua tiny dim">Còn '+kct.length+
+      ' kho chưa khai tầng nên em chưa lọc theo tầng được ở đó — phần ấy vẫn đi ' +
+      'qua trần 30% như cũ.</p>';
   if(d.chot) o += '<p class="ai-chot">'+h(d.chot)+'</p>';
   return o;
 }
@@ -22031,13 +22156,15 @@ function theDap(d){
 function bongTroLy(m){
   return '<div class="ch-luot ch-troly">'+
     '<div class="ch-anh ch-anh-ai">'+ic('spark','w-4 h-4')+'</div>'+
-    '<div class="ch-bong ch-bong-ai">'+theDap(m.dap)+'</div></div>';
+    '<div class="ch-bong ch-bong-ai">'+theDap(m.dap)+
+      '<span class="cs-gio">'+h(gio(m.luc))+'</span></div></div>';
 }
 
 /* Dựng sẵn cả cuộc trò chuyện thành chuỗi. Màn hình trả về đã có nội dung
    ngay từ đầu — không có khoảnh khắc khung trống rồi mới hiện chữ. */
 function cuonChat(){
-  return '<div class="ch-luot ch-troly"><div class="ch-anh ch-anh-ai">'+ic('spark','w-4 h-4')+'</div>'+
+  return '<div class="cs-vach">Hôm nay</div>' +
+    '<div class="ch-luot ch-troly"><div class="ch-anh ch-anh-ai">'+ic('spark','w-4 h-4')+'</div>'+
     '<div class="ch-bong ch-bong-ai"><p class="ai-loi">'+h(loiChao())+'</p></div></div>' +
     G.CHAT.map(function(m){ return m.ai === 'toi' ? bongToi(m) : bongTroLy(m); }).join('');
 }
@@ -22046,6 +22173,8 @@ function ve(){
   var o = document.getElementById('chKhung');
   if(!o) return;
   o.innerHTML = cuonChat();
+  o.scrollTop = o.scrollHeight;
+  if(G.csCaoCuaSo) G.csCaoCuaSo();
   o.scrollTop = o.scrollHeight;
 }
 G.veChat = ve;
@@ -22057,85 +22186,164 @@ G.VIEWS['tro-ly'] = function(){
   var f = kh && G.myFamily ? G.myFamily() : null;
   var t = f && G.tierOf ? G.tierOf(f.tier) : null;
 
-  var o = U.ph({eyebrow:'TRỢ LÝ GITA', ic:'spark', grad:1,
-    t: kh ? 'Nói chuyện với trợ lý' : 'Trợ lý tra kho',
-    lead: kh ? 'Kể chuyện của nhà mình bằng lời thường ngày. Em nghe, rồi chỉ đúng việc cần làm trước.'
-             : 'Tra phác đồ, kịch bản, mô thức và tình huống trong kho của Học viện. Câu trả lời nào cũng có mã để mở lại.'});
+  /* ══ ĐẦU CỬA SỔ ══
+     Dòng dưới tên KHÔNG phải một câu trang trí. Nó trả lời câu hỏi mà
+     người đang gõ thật sự cần biết: mình đang nói với ai, và câu trả
+     lời sắp tới nằm trong phạm vi nào. Một cửa sổ chat giấu phạm vi
+     thì người dùng tưởng mọi câu hỏi đều được trả lời như nhau. */
+  var duoi = kh
+    ? (t ? t.code + ' · ' + G.tname(t) : 'Nhà mình')
+    : 'Kho của Học viện · trong phạm vi vai đang dùng';
 
-  o += '<div class="card ch-hop">'+
-    '<div class="ch-dau">'+
-      '<div class="ch-dau-t">'+ic('spark','w-4 h-4')+'<b>Trợ lý GITA</b>'+
-        '<span class="ch-trangthai">'+ic('dot','w-2 h-2')+'đang nghe</span></div>'+
-      (G.CHAT.length ? '<button class="btn ghost sm" data-act="chat-xoa">'+ic('x','w-3 h-3')+'Bắt đầu lại</button>' : '')+
-    '</div>'+
-    '<div id="chKhung" class="ch-khung">'+cuonChat()+'</div>'+
-    '<div class="ch-go">'+
-      '<input id="aiQ" placeholder="'+(kh?'Nhà mình đang mắc chuyện gì?':'Tra phác đồ, kịch bản, mô thức, tình huống…')+'" autocomplete="off">'+
-      '<button class="btn pri" data-act="ai-ask" aria-label="Gửi">'+ic('arrow','w-4 h-4')+'Gửi</button>'+
-    '</div>'+
-    '<div class="row wrap ch-goiy">'+
-      goiY().map(function(g){ return '<button class="chip" data-aiq="'+h(g)+'">'+h(g)+'</button>'; }).join('')+
+  var o = '<div class="cs-lo"><div class="card cs-win">' +
+    '<div class="cs-dau">' +
+      '<div class="cs-anh">'+ic('spark')+'</div>' +
+      '<div class="cs-ten"><b>Trợ lý GITA</b>' +
+        '<div class="cs-duoi"><span class="cs-cham"></span>đang nghe · '+h(duoi)+'</div></div>' +
+      (G.CHAT.length
+        ? '<button class="btn ghost sm" data-act="chat-xoa">'+ic('x','w-3 h-3')+'Bắt đầu lại</button>'
+        : '') +
+    '</div>' +
+    '<div id="chKhung" class="ch-khung cs-cuon">'+cuonChat()+'</div>' +
+    '<div class="cs-go">' +
+      /* ── CÂU GỢI Ý Ở LẠI SUỐT CUỘC TRÒ CHUYỆN ──
+         Bản đầu tôi giấu chúng đi sau câu hỏi thứ nhất, vì trên màn
+         hẹp chúng xuống dòng thành năm hàng và ăn mất 175px của dòng
+         chuyện. Bộ kiểm mục 18 đỏ ngay, và nó đúng: một phụ huynh
+         không biết mở lời thì ở lượt thứ năm cũng vẫn không biết, chứ
+         không phải chỉ ở lượt thứ nhất.
+         Chỗ ngồi lấy lại được bằng cách khác — cho chúng chạy ngang
+         một hàng và cuộn, hết 35px thay vì 175px. Sửa cái chiếm chỗ,
+         đừng bỏ cái có ích. */
+      '<div class="cs-goiy">' +
+      goiY().map(function(g){ return '<button class="chip" data-aiq="'+h(g)+'">'+h(g)+'</button>'; }).join('') +
+      '</div>' +
+      '<div class="cs-o">' +
+        '<textarea id="aiQ" rows="1" autocomplete="off" placeholder="'+
+          (kh ? 'Nhà mình đang mắc chuyện gì?' : 'Tra phác đồ, kịch bản, mô thức, tình huống…')+
+          '"></textarea>' +
+        '<button class="cs-nut" id="micBtn" data-act="mic" aria-label="Nói vào micro" ' +
+          'title="Nói thay vì gõ">'+ic('pulse')+'</button>' +
+        '<button class="cs-nut pri" data-act="ai-ask" aria-label="Gửi">'+ic('arrow')+'</button>' +
+      '</div>' +
+      '<p class="cs-meo">Enter để gửi · Shift+Enter xuống dòng · ' +
+        'cuộc trò chuyện chạy trong máy, không gửi đi đâu cả.</p>' +
     '</div></div>';
+
+  /* ══ CỘT PHẢI ══
+     Bốn thẻ này ở bản trước nằm DƯỚI khung chat, nên muốn đọc chúng thì
+     phải cuộn khung chat ra khỏi tầm mắt. Nay chúng đứng cạnh và đứng
+     yên — đọc được mà không mất chỗ đang gõ. */
+  o += '<div class="cs-ben">';
+
+  if(t) o += '<div class="card pad-sm" style="border-color:'+t.c+'44">'+
+    '<div class="tiny up mb" style="color:'+t.c+'">ĐANG TRẢ LỜI TRONG PHẠM VI</div>'+
+    '<b class="sm" style="color:'+t.c+'">'+h(t.code+' · '+G.tname(t))+'</b>'+
+    '<p class="tiny muted mt" style="line-height:1.55">'+h(t.note)+'</p></div>';
 
   /* Gia đình: nói thẳng phần nào đang mở, phần nào chưa, và mở bằng cách nào */
   if(kh && G.khoCuaNha){
     var s = G.khoCuaNha();
-    o += '<div class="card mt2" style="border-color:var(--gita-vien-1)">'+
-      '<div class="row" style="gap:18px;align-items:center;flex-wrap:wrap">'+
-        U.ring(s.phanTramMo, 'var(--gita)', 'NHÀ MÌNH ĐANG MỞ')+
-        U.ring(s.kpi, s.dat80 ? 'var(--ok)' : 'var(--gita-do)', 'KPI CỦA NHÀ')+
-        '<div style="flex:1;min-width:250px">'+
-          '<b class="sm">'+s.mo.toLocaleString('vi-VN')+' / '+s.tong.toLocaleString('vi-VN')+' tư liệu</b>'+
-          /* NÓI ĐÚNG MẪU SỐ. Câu cũ là "30% kho", mà con số ấy đo trên KHO
-             DÀNH CHO GIA ĐÌNH chứ không phải toàn kho Học viện — bốn kho
-             nghề không xuống máy khách nên không nằm trong mẫu số. Hai
-             câu chênh nhau đúng một cụm bốn chữ, mà cụm ấy là toàn bộ
-             khác nhau giữa một con số đúng và một con số nghe to hơn sự
-             thật. Câu đúng đọc từ kho, không gõ lại ở đây. */
-          '<p class="sm dim mt" style="line-height:1.6">Phần nền của mỗi nhà là '+
-            Math.round(G.TRAN_KHACH*100)+'% '+
-            h(((G.KB_TRAN_NHA||{}).cauDung||'kho').replace(/^\d+% /, ''))+
-            ' — đủ đi hết chặng đang ở. '+
-            'Phần nghề không mất đi: Tư vấn và Coach đọc lại rồi gửi tới theo đúng lúc nhà '+
-            'mình cần, khi KPI đi qua '+G.KPI_XIN_THEM+'%.</p>'+
-          (s.them ? '<p class="tiny mt" style="color:var(--ok)">'+ic('check','w-3 h-3')+
-             ' Đã nhận thêm '+s.them+' tư liệu do Tư vấn và Coach gửi.</p>' : '')+
-        '</div>'+
-      '</div></div>';
+    o += '<div class="card pad-sm" style="border-color:var(--gita-vien-1)">'+
+      '<div class="row" style="gap:14px;align-items:center;flex-wrap:wrap">'+
+        U.ring(s.phanTramMo, 'var(--gita)', 'ĐANG MỞ')+
+        U.ring(s.kpi, s.dat80 ? 'var(--ok)' : 'var(--gita-do)', 'KPI')+
+      '</div>'+
+      '<b class="sm mt" style="display:block">'+s.mo.toLocaleString('vi-VN')+' / '+
+        s.tong.toLocaleString('vi-VN')+' tư liệu</b>'+
+      /* NÓI ĐÚNG MẪU SỐ. Câu cũ là "30% kho", mà con số ấy đo trên KHO
+         DÀNH CHO GIA ĐÌNH chứ không phải toàn kho Học viện — bốn kho
+         nghề không xuống máy khách nên không nằm trong mẫu số. Hai
+         câu chênh nhau đúng một cụm bốn chữ, mà cụm ấy là toàn bộ
+         khác nhau giữa một con số đúng và một con số nghe to hơn sự
+         thật. Câu đúng đọc từ kho, không gõ lại ở đây. */
+      '<p class="tiny dim mt" style="line-height:1.6">Phần nền của mỗi nhà là '+
+        Math.round(G.TRAN_KHACH*100)+'% '+
+        h(((G.KB_TRAN_NHA||{}).cauDung||'kho').replace(/^\d+% /, ''))+
+        ' — đủ đi hết chặng đang ở. '+
+        'Phần nghề không mất đi: Tư vấn và Coach đọc lại rồi gửi tới theo đúng lúc nhà '+
+        'mình cần, khi KPI đi qua '+G.KPI_XIN_THEM+'%.</p>'+
+      (s.them ? '<p class="tiny mt" style="color:var(--ok)">'+ic('check','w-3 h-3')+
+         ' Đã nhận thêm '+s.them+' tư liệu do Tư vấn và Coach gửi.</p>' : '')+
+      '</div>';
 
     var cho = G.XIN_THEM.filter(function(x){ return x.trangThai === 'cho'; });
     if(cho.length)
-      o += '<div class="card pad-sm mt2"><div class="tiny up mb">ĐANG CHỜ TƯ VẤN XEM</div>'+
+      o += '<div class="card pad-sm"><div class="tiny up mb">ĐANG CHỜ TƯ VẤN XEM</div>'+
         U.list(cho.map(function(x){ return x.loai + ' · ' + x.ten; }))+'</div>';
   }
 
   /* Nói trước trợ lý làm gì và không làm gì — không để ai kỳ vọng sai */
-  o += '<div class="row wrap mt2" style="gap:12px;align-items:stretch">'+
-    '<div class="card" style="flex:1;min-width:270px;border-color:var(--gita-vien-1)">'+
-      '<div class="up mb" style="color:var(--gita-ink)">'+ic('check','w-4 h-4')+' TRỢ LÝ LÀM ĐƯỢC</div>'+
+  o += '<div class="card pad-sm" style="border-color:var(--gita-vien-1)">'+
+      '<div class="up mb" style="color:var(--gita-ink)">'+ic('check','w-4 h-4')+' LÀM ĐƯỢC</div>'+
       U.list([
         'Nghe chuyện bằng lời thường ngày, không bắt ai nói đúng thuật ngữ.',
         'Tra trong kho của Học viện và chỉ ra đúng tư liệu, có mã để mở lại.',
         'Trả lời trong đúng phần vai và chặng của tài khoản đang dùng.',
         'Chạy hoàn toàn trong máy — chuyện của nhà mình không gửi đi đâu cả.'
       ])+'</div>'+
-    '<div class="card" style="flex:1;min-width:270px">'+
-      '<div class="up mb" style="color:var(--gita-do-ink)">'+ic('x','w-4 h-4')+' TUYỆT ĐỐI KHÔNG LÀM</div>'+
-      (K ? U.list(K.khongLam.slice(0, 5), 'var(--gita-do)') : '')+'</div></div>';
+    '<div class="card pad-sm">'+
+      '<div class="up mb" style="color:var(--gita-do-ink)">'+ic('x','w-4 h-4')+' TUYỆT ĐỐI KHÔNG</div>'+
+      (K ? U.list(K.khongLam.slice(0, 5), 'var(--gita-do)') : '')+'</div>';
 
-  if(t) o += '<div class="card pad-sm mt2" style="border-color:'+t.c+'44">'+
-    '<div class="tiny up mb" style="color:'+t.c+'">ĐANG TRẢ LỜI TRONG PHẠM VI</div>'+
-    '<b class="sm" style="color:'+t.c+'">'+h(t.code+' · '+G.tname(t))+'</b>'+
-    '<p class="tiny muted mt" style="line-height:1.55">'+h(t.note)+'</p></div>';
+  o += '</div></div>';
 
   setTimeout(function(){
     var k = document.getElementById('chKhung');
     if(k) k.scrollTop = k.scrollHeight;
     var i = document.getElementById('aiQ');
-    if(i && G.CHAT.length) i.focus();
+    if(i){ caoTheoChu(i); if(G.CHAT.length) i.focus(); }
+    G.csCaoCuaSo();
+    if(k) k.scrollTop = k.scrollHeight;
   }, 0);
   return o;
 };
+
+/* Ô chữ cao lên theo số dòng đã gõ, tới trần thì cuộn. Đặt riêng một
+   hàm vì có ba chỗ gọi: lúc dựng màn, lúc gõ, và lúc gửi xong (phải
+   thu về một dòng, nếu không ô ở lại cao như cũ trong khi đã trống). */
+function caoTheoChu(el){
+  if(!el) return;
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+}
+/* Gắn lên G vì nút Gửi nằm ở src/app.js — nó xoá ô xong thì ô phải thu
+   về một dòng, không thì ô ở lại cao như cũ trong khi đã trống. */
+G.aiOCao = caoTheoChu;
+
+/* ── CHIỀU CAO CỬA SỔ: ĐO, KHÔNG ĐOÁN ──
+
+   Cửa sổ phải chạm đúng đáy màn hình, vì cả ý nghĩa của nó là chỗ gõ
+   không bao giờ rời tầm mắt.
+
+   Bản đầu tôi trừ bằng số trong CSS và đo thử thì đáy nằm 61px DƯỚI
+   tầm mắt. Phía trên cửa sổ có ba thứ chồng nhau: lề vùng nội dung,
+   thanh nhắc việc trễ nhịp (lúc có lúc không), và 26px nữa mà đọc CSS
+   không truy ra nguồn. Trừ bằng số là đoán cả ba, và đoán sai thì sai
+   IM LẶNG — trang vẫn dựng ra, chỉ là chỗ gõ nằm ngoài màn, mà không
+   phép kiểm nào của kho này nhìn được chuyện ấy.
+
+   Nên đo: lấy đúng khoảng từ đỉnh cửa sổ tới đáy màn. Thêm hay bớt
+   thanh nào ở trên cũng vẫn đúng. */
+G.csCaoCuaSo = function(){
+  var w = document.querySelector('.cs-win');
+  if(!w) return;
+  /* Cộng offsetTop dọc chuỗi cha, KHÔNG dùng getBoundingClientRect.
+     Lớp .view mở màn bằng một chuyển động trượt lên 14px trong 0,42
+     giây; đo bằng rect ngay sau khi vẽ là đo giữa lúc nó còn đang
+     trượt, và cửa sổ hụt đúng 14px ấy — đo thử ra -32 thay vì -18.
+     offsetTop không bị chuyển động làm lệch. */
+  var t = 0, el = w;
+  while(el){ t += el.offsetTop; el = el.offsetParent; }
+  var cao = window.innerHeight - (t - (window.pageYOffset || 0)) - 18;
+  /* Sàn: trên điện thoại, thanh nhắc việc trễ nhịp có thể cao tới vài
+     trăm điểm ảnh và đẩy cửa sổ xuống gần hết màn. Lúc ấy đừng cố nhét
+     cửa sổ vào phần còn lại — nó co xuống 22px và thành vô dụng. Cho
+     nó một chiều cao đọc được rồi để trang cuộn qua thanh nhắc. */
+  var san = Math.min(Math.round(window.innerHeight * 0.62), 560);
+  w.style.height = Math.max(cao, san) + 'px';
+};
+window.addEventListener('resize', function(){ G.csCaoCuaSo(); });
 
 /* Giữ đường cũ chạy được: nơi nào còn gọi G.aiHoi thì vào thẳng khung chat.
    Chỗ đè này khai ở src/de-len.js — nó đổi HÀNH VI, nên phải khai.
@@ -22169,12 +22377,27 @@ document.addEventListener('click', function(e){
   }
 });
 
+/* ENTER GỬI · SHIFT+ENTER XUỐNG DÒNG.
+
+   Ô gõ từ bản 9.99.50 là một <textarea> chứ không còn là <input>, vì ô
+   một dòng bắt người ta gõ một câu dài mà chỉ nhìn thấy khúc cuối của
+   nó — và phụ huynh kể chuyện nhà mình thì câu dài là bình thường.
+
+   Đổi sang textarea thì Enter mặc định XUỐNG DÒNG, tức là mất luôn cách
+   gửi quen tay. Nên phải bắt lại ở đây, và phải chừa Shift+Enter — nếu
+   không thì người muốn xuống dòng sẽ gửi đi một câu đang viết dở. */
 document.addEventListener('keydown', function(e){
-  if(e.key !== 'Enter') return;
+  if(e.key !== 'Enter' || e.shiftKey) return;
   var i = document.getElementById('aiQ');
   if(!i || document.activeElement !== i) return;
   e.preventDefault();
-  G.chatHoi(i.value); i.value = '';
+  G.chatHoi(i.value); i.value = ''; caoTheoChu(i);
+});
+
+/* Ô cao lên theo chữ đang gõ. Bắt ở 'input' chứ không ở 'keyup': dán
+   một đoạn dài bằng chuột không sinh ra phím nào cả. */
+document.addEventListener('input', function(e){
+  if(e.target && e.target.id === 'aiQ') caoTheoChu(e.target);
 });
 
 })();
@@ -43125,6 +43348,11 @@ function render(){
      phải đi tìm. Không có việc trễ thì không chiếm chỗ. */
   var nhac = (G.thanhNhac && G.S.view !== 'vong-nhac') ? G.thanhNhac() : '';
   main.innerHTML = '<div class="view">' + nhac + noiDung + '</div>';
+  /* Màn trợ lý là một CỬA SỔ chiếm trọn chiều cao, nên nó cần lề dưới
+     của vùng nội dung nhỏ lại. Lớp này là chỗ duy nhất khai chuyện ấy —
+     tự tính chiều cao trong CSS mà không gỡ lề thì cửa sổ luôn thừa ra
+     90px và cả trang sinh thanh cuộn thứ hai. */
+  document.body.classList.toggle('man-chat', G.S.view === 'tro-ly');
   if(G.watermark) G.watermark();
   /* Khoá sao chép cho tài khoản khách hàng: bật lớp thân trang và gỡ mọi
      đường tải xuống vừa được dựng ra. Phải chạy SAU khi màn hình đã vào
@@ -43575,7 +43803,7 @@ on('[data-act]', function(el){
     save(); U.toast('Đã ghi nhật ký tối nay. Bảy tối là có một mô thức.','ok');
   }
   else if(a==='chat-xoa'){ G.chatXoa && G.chatXoa(); }
-  else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; } }
+  else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; if(G.aiOCao) G.aiOCao(oq); } }
   else if(a==='mic') G.mic();
   else if(a==='kb-more') hienThem('kbList','kbCount', G.KICHBAN, G.kbCard, 60, 'data-kbf');
   else if(a==='quet-dau'){

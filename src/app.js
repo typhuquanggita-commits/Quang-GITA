@@ -873,6 +873,11 @@ function render(){
      phải đi tìm. Không có việc trễ thì không chiếm chỗ. */
   var nhac = (G.thanhNhac && G.S.view !== 'vong-nhac') ? G.thanhNhac() : '';
   main.innerHTML = '<div class="view">' + nhac + noiDung + '</div>';
+  /* Màn trợ lý là một CỬA SỔ chiếm trọn chiều cao, nên nó cần lề dưới
+     của vùng nội dung nhỏ lại. Lớp này là chỗ duy nhất khai chuyện ấy —
+     tự tính chiều cao trong CSS mà không gỡ lề thì cửa sổ luôn thừa ra
+     90px và cả trang sinh thanh cuộn thứ hai. */
+  document.body.classList.toggle('man-chat', G.S.view === 'tro-ly');
   if(G.watermark) G.watermark();
   /* Khoá sao chép cho tài khoản khách hàng: bật lớp thân trang và gỡ mọi
      đường tải xuống vừa được dựng ra. Phải chạy SAU khi màn hình đã vào
@@ -1323,7 +1328,7 @@ on('[data-act]', function(el){
     save(); U.toast('Đã ghi nhật ký tối nay. Bảy tối là có một mô thức.','ok');
   }
   else if(a==='chat-xoa'){ G.chatXoa && G.chatXoa(); }
-  else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; } }
+  else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; if(G.aiOCao) G.aiOCao(oq); } }
   else if(a==='mic') G.mic();
   else if(a==='kb-more') hienThem('kbList','kbCount', G.KICHBAN, G.kbCard, 60, 'data-kbf');
   else if(a==='quet-dau'){
