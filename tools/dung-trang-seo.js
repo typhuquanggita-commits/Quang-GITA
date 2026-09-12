@@ -404,8 +404,29 @@ function thayGiuaMoc(s, m1, m2, moi, sauKhi) {
   if (i >= 0 && j > i) return s.slice(0, i) + m1 + '\n' + moi + '\n' + s.slice(j);
   const k = s.indexOf(sauKhi);
   if (k < 0) throw new Error('Không tìm được chỗ chèn: ' + sauKhi);
-  return s.slice(0, k + sauKhi.length) + '\n' + m1 + '\n' + moi + '\n' + m2 +
-    s.slice(k + sauKhi.length);
+  let cuoi = k + sauKhi.length;
+  /* ── CHÈN GIỮA MỘT THẺ LÀ CẮT ĐÔI THẺ ẤY ──
+
+     Mốc chèn là '<meta name="rights"' — một ĐOẠN ĐẦU của thẻ, không
+     phải cả thẻ. Lần chạy đầu tiên khối SEO được nhét vào ngay sau
+     đoạn ấy, nên thẻ bị cắt làm đôi: nửa đầu nằm trên khối SEO, còn
+     nửa sau — content="..."> — rơi xuống dưới khối và trình duyệt đọc
+     nó như CHỮ THƯỜNG.
+
+     Hậu quả: dòng khai quyền sở hữu trí tuệ của Học viện hiện ra thành
+     chữ ở đầu mọi trang, và chính thẻ khai ấy thì không còn tồn tại.
+     Nó sống như thế qua rất nhiều bản, vì trên màn để bàn nó nằm khuất
+     sau thanh trên; chỉ khi chụp màn điện thoại ở bản 9.99.51 mới thấy.
+
+     Từ nay mốc chèn nào không kết thúc bằng '>' thì nhích tới hết thẻ
+     trước khi chèn. Một bộ sinh mã tự cắt đôi thẻ là lớp hỏng tệ nhất:
+     nó không báo gì, và nó lặp lại mỗi lần chạy. */
+  if (!sauKhi.trim().endsWith('>')) {
+    const dong = s.indexOf('>', cuoi);
+    if (dong < 0) throw new Error('Mốc chèn nằm giữa một thẻ chưa đóng: ' + sauKhi);
+    cuoi = dong + 1;
+  }
+  return s.slice(0, cuoi) + '\n' + m1 + '\n' + moi + '\n' + m2 + s.slice(cuoi);
 }
 
 /* ═══════════════════════════════════════════════════════════════

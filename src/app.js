@@ -758,6 +758,10 @@ function topBar(){
       : '')+
     '<button class="tbtn" data-v="tro-ly" aria-label="Trợ lý GITA" title="Trợ lý GITA" '+
       'style="color:var(--gita-ink);border-color:var(--gita-vien-1)">'+ic('spark')+'</button>'+
+    /* Thu phóng đứng NGAY CẠNH nút đổi nền, không giấu vào một màn cài
+       đặt: nó là thứ người ta với tay tới giữa lúc đang đọc dở một bảng,
+       chứ không phải thứ người ta đi tìm trước khi bắt đầu đọc. */
+    (G.phongNut ? G.phongNut() : '')+
     '<button class="tbtn" data-act="doi-nen" aria-label="Đổi nền sáng tối" title="Đổi nền sáng / tối">'+
       ic(G.NEN==='toi'?'sun':'moon')+'</button>'+
     '<button class="tbtn" data-act="lang" aria-label="Language" style="font-size:12.5px;font-weight:800;letter-spacing:.04em">'+
@@ -1330,6 +1334,12 @@ on('[data-act]', function(el){
   else if(a==='chat-xoa'){ G.chatXoa && G.chatXoa(); }
   else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; if(G.aiOCao) G.aiOCao(oq); } }
   else if(a==='mic') G.mic();
+  else if(a==='phong') G.phongMoDong();
+  else if(a==='phong-vua') G.phongDatKho('vua');
+  else if(a==='phong-toan') G.phongDatKho('toan');
+  else if(a==='phong-to') G.phongBuoc(1);
+  else if(a==='phong-nho') G.phongBuoc(-1);
+  else if(a==='phong-moc') G.phongVeMoc();
   else if(a==='kb-more') hienThem('kbList','kbCount', G.KICHBAN, G.kbCard, 60, 'data-kbf');
   else if(a==='quet-dau'){
     var van = (document.getElementById('quetVan')||{}).value || '';

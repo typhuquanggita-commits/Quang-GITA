@@ -66,6 +66,7 @@ hành → sinh tệp nạp khoá → gộp mã → dựng bản một tệp → 
 | Dựng bản một tệp | `python3 tools/dong-goi.py` | 10 giây |
 | **Bộ kiểm — chế độ im** | `xvfb-run -a node tools/kiem-tra.js --im` | ~12 phút |
 | Bộ rà soát chỗ trống | `xvfb-run -a node tools/ra-soat-day-du.js` | ~3 phút |
+| **Đo khung màn — 4 khổ thật** | `xvfb-run -a node tools/do-khung-man.js --im` | ~6 phút |
 | Kho vừa đóng đổi gì | `node tools/soi-doi-kho.js` | 3 giây |
 | Đề bài thị giác → tấm PNG | `node tools/tam-ra-anh.js <đề-bài.json> <thư mục> [khổ]` | ~10 giây |
 | Tấm in A4/A5 | `node tools/tam-ra-anh.js <đề-bài.json> <thư mục> a4d` | ~10 giây |
@@ -131,9 +132,38 @@ này: KICHBAN (8.9), CV_MUC (9.7), và 17 kho nghề (9.8).
 2. `xvfb-run -a node tools/kiem-tra.js --im` — đỏ là **không phát hành**,
    không có ngoại lệ.
 3. `xvfb-run -a node tools/ra-soat-day-du.js`
-4. Bump số bản ở `src/data.core.js`, `desktop/package.json`, `sw.js`
+4. `xvfb-run -a node tools/do-khung-man.js --im` — 183 màn × 4 khổ màn ×
+   2 vai. Hai bộ trên đọc CHUỖI HTML và chạy ở đúng một khổ để bàn, nên
+   không bộ nào trả lời được câu của người cầm điện thoại.
+5. Bump số bản ở `src/data.core.js`, `desktop/package.json`, `sw.js`
 
 **Không bao giờ `git add kho-goc/` hay `kho/khoa.json`.**
+
+---
+
+## Hai núm nhìn màn — `src/thu-phong.js`
+
+Người dùng đổi được hai thứ, và hai thứ ấy KHÁC nhau:
+
+- **KHỔ** (chỉ hiện trên màn chạm) — *Vừa màn* là bản điện thoại một
+  cột; *Toàn cảnh* dựng bố cục **1280px** rồi thu cho vừa màn, để nhìn
+  trọn một bảng rộng rồi chụm ngón tay phóng vào. Làm bằng cách đổi
+  `width` của thẻ viewport, KHÔNG bằng `transform: scale()` — scale thì
+  chữ mờ, chỗ bấm lệch chỗ nhìn, `position:fixed` chạy loạn.
+- **CỠ** — sáu nấc 70→150%, đặt `zoom` ở thẻ gốc. Chạy cả trên máy tính.
+  Phím tắt `Ctrl +` · `Ctrl −` · `Ctrl 0`.
+
+Hai chỗ đã sập khi làm, ghi lại để không lặp:
+
+1. Khai `width=1280` rồi **để trình duyệt tự thu** thì chỉ chạy khi BẤM
+   nút; mở sẵn chế độ ấy từ lúc tải trang thì trang nằm nguyên tỉ lệ
+   1:1 và người dùng chỉ thấy góc trên bên trái. Phải tự tính
+   `initial-scale` và `minimum-scale`, và **làm tròn XUỐNG** — làm tròn
+   gần nhất thì mép phải bị cắt mất một vệt.
+2. Khi bố cục rộng hơn màn, Chromium và Safari **tự thổi cỡ chữ** lên
+   không đều: tiêu đề nở gấp đôi còn ô bảng thì không, cả bố cục vỡ.
+   Chặn bằng `text-size-adjust:100%` ở `html` — đặt `100%` chứ không
+   đặt `none`, vì `none` khoá luôn phép phóng chữ của người mắt kém.
 
 ---
 
@@ -149,6 +179,31 @@ này: KICHBAN (8.9), CV_MUC (9.7), và 17 kho nghề (9.8).
 - Trường không áp dụng thì **bỏ hẳn khoá**, đừng để `null` hay `[]`. Vắng
   mặt nghĩa là không áp dụng; rỗng nghĩa là đáng lẽ phải có giá trị, và
   bộ soát trường trống sẽ báo đỏ.
+
+---
+
+## Ba lớp lỗi CHỈ hiện ra trên điện thoại
+
+Tìm ra ở 9.99.51 bằng cách đo trên khổ màn thật, không bằng cách đọc mã.
+Cả ba đều sống qua rất nhiều bản vì mọi bộ soi đều chạy ở khổ để bàn.
+
+1. **Độ nặng chọn lọc trong `@media`.** `.shell` trong khối
+   `max-width:860px` THUA `.shell.no-right` ở ngoài — hai lớp nặng hơn
+   một lớp, kể cả trong `@media`. Hậu quả: trên màn 390px vùng nội dung
+   rộng 268px thay vì 388px, ở MỌI màn.
+2. **Khối `@media` đặt trước lớp nó muốn đè.** Cùng độ nặng thì dòng
+   đứng SAU thắng, nên khối ấy không làm gì cả — và không báo gì cả.
+   Khối khổ chạm phải nằm CUỐI `assets/style.css`.
+3. **`.row` là flex và flex không tự xuống dòng.** Một hàng hai nút nhãn
+   dài cần 539px trong cột rộng 358px thì nó không co lại — nó đẩy CẢ
+   TRANG cuộn ngang. Đã mở `flex-wrap:wrap` cho `.row` ở khổ ≤600px.
+
+Và một lớp thứ tư, nặng nhất, không phải chuyện khổ màn: bộ sinh SEO
+chèn khối vào giữa thẻ `<meta name="rights"` và **cắt đôi thẻ ấy**. Nửa
+sau rơi xuống thân trang, hiện ra thành chữ ở đầu mọi trang — và chính
+thẻ khai quyền sở hữu trí tuệ thì không còn tồn tại. Trên màn để bàn nó
+khuất sau thanh trên, nên không ai thấy. `do-khung-man.js` nay canh
+đúng lớp ấy: thân trang không được có chữ nằm trần ngoài mọi thẻ.
 
 ---
 

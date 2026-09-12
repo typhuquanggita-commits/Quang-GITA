@@ -143,6 +143,12 @@ chay('xvfb-run', ['-a', 'node', 'tools/do-soan.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/do-noi-tiep.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/do-tu-kiem.js']);
 chay('xvfb-run', ['-a', 'node', 'tools/thu-nhu-that.js']);
+/* Bốn khổ màn thật. Hai bộ soi màn hình khác đọc chuỗi HTML và cả hai
+   chạy ở đúng một khổ để bàn, nên không bộ nào trả lời được câu của
+   người cầm điện thoại: chữ có tràn ra ngoài không, nút có đủ to để
+   bấm bằng ngón tay không. Bản 9.99.51 chạy bộ này lần đầu và bắt ngay
+   một màn đẩy cả trang rộng 555px trên màn 390px. */
+chay('xvfb-run', ['-a', 'node', 'tools/do-khung-man.js', '--im']);
 /* Đường dựng phim đi qua ba nhà — bộ vẽ, tệp PNG, ffmpeg — nên chỗ
    hỏng của nó nằm ở MỐI NỐI, và mối nối thì chỉ lộ ra khi chạy trọn
    đường một lần. Cần ffmpeg; máy nào chưa có thì bộ này nói ra chứ

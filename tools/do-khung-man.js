@@ -1,0 +1,249 @@
+#!/usr/bin/env node
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — ĐO KHUNG MÀN: 183 MÀN TRÊN BỐN KHỔ MÀN THẬT
+
+       npx http-server -p 8099 -s .
+       xvfb-run -a node tools/do-khung-man.js
+       xvfb-run -a node tools/do-khung-man.js --im     (chỉ in chỗ đỏ)
+
+   ══ VÌ SAO CẦN BỘ NÀY ══
+
+   Kho đã có hai bộ soi màn hình: kiem-tra.js hỏi "màn có chạy không",
+   ra-soat-day-du.js hỏi "màn có rỗng chỗ nào không". Cả hai đọc CHUỖI
+   HTML mà màn trả về, và cả hai chạy ở đúng MỘT khổ màn để bàn.
+
+   Nghĩa là không bộ nào trả lời được câu của người cầm điện thoại:
+   chữ có tràn ra ngoài không, bảng có đẩy cả trang lệch sang phải
+   không, nút có đủ to để bấm bằng ngón tay không.
+
+   Chuyện ấy đã xảy ra thật. Ở bản 9.99.50 tôi đo một màn trên khổ
+   420px và thấy vùng nội dung chỉ rộng 268px thay vì 388px — một dòng
+   CSS thua về độ nặng chọn lọc, có từ rất lâu, ở MỌI màn. Không ai
+   thấy suốt nhiều bản vì mọi bộ soi đều chạy ở khổ để bàn.
+
+   ══ BỘ NÀY ĐO GÌ ══
+
+     1. TRÀN NGANG   — cả trang có cuộn sang ngang không. Đây là lỗi
+                       nặng nhất trên điện thoại: người ta vuốt dọc,
+                       trang trượt ngang, và chữ nhảy khỏi tầm mắt.
+     2. PHẦN TỬ TRÀN — chính xác thẻ nào thò ra ngoài, và thò bao nhiêu.
+                       Bỏ qua thẻ nằm trong hộp cuộn ngang CÓ CHỦ Ý
+                       (bảng, khối mã, sơ đồ) — đó là cách làm đúng.
+     3. NÚT QUÁ NHỎ  — trên khổ chạm, nút dưới 32px một chiều thì ngón
+                       tay bấm trượt. Đo trên khổ chạm thôi; chuột thì
+                       nhỏ vẫn bấm trúng.
+     4. CHỮ QUÁ NHỎ  — dưới 10px thì trên điện thoại đọc không nổi.
+
+   ══ VÀ MỘT LUẬT CỦA CHÍNH BỘ NÀY ══
+
+   Nó KHÔNG khai tay danh sách màn. Nó đọc G.NAV lúc chạy, nên thêm
+   một màn mới là màn ấy tự vào phép đo. Khai tay thì bản sau thêm màn
+   mà quên chép, và đúng màn mới ấy là màn chưa ai soi.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+const PW = process.env.PW_PATH || '/opt/node22/lib/node_modules/playwright';
+const URL = process.env.GITA_URL || 'http://127.0.0.1:8099/index.html';
+const { chromium } = require(PW);
+const IM = process.argv.includes('--im');
+
+/* Bốn khổ đại diện. Không lấy thêm cho nhiều: mỗi khổ là một lượt đi
+   hết mọi màn, và bốn khổ đã phủ đủ ba chỗ giao diện đổi hình
+   (860px · 1180px · cột phải). */
+const KHO = [
+  { ten: 'điện thoại', w: 390,  h: 844, cham: true },
+  { ten: 'điện thoại to', w: 430, h: 932, cham: true },
+  { ten: 'máy bảng', w: 820,  h: 1180, cham: true },
+  { ten: 'để bàn',   w: 1440, h: 900, cham: false }
+];
+
+/* Hai vai phủ gần hết màn: Super Admin thấy phần nghề và quản trị,
+   phụ huynh thấy phần gia đình. Thêm vai nữa thì tốn gấp đôi thời
+   gian mà phần lớn là đo lại cùng một màn. */
+const VAI = ['superadmin@gita365.vn', 'phuhuynh@gita365.vn'];
+
+const NUT_NHO = 32;   /* mỗi chiều, tính bằng điểm ảnh CSS */
+const CHU_NHO = 10;
+
+(async () => {
+  const b = await chromium.launch();
+  let loi = 0, soDo = 0;
+  const bao = (ok, ten, ct) => {
+    if (!ok) loi++;
+    if (!ok || !IM) console.log((ok ? '  ✓ ' : '  ✗ ') + ten + (ct ? ' — ' + ct : ''));
+  };
+
+  console.log('\nĐO KHUNG MÀN — 4 khổ màn thật, 2 vai\n');
+
+  const tong = { tran: [], phanTu: [], nut: [], chu: [], ro: [] };
+
+  for (const k of KHO) {
+    const p = await b.newPage({ viewport: { width: k.w, height: k.h },
+      hasTouch: k.cham, isMobile: k.cham, deviceScaleFactor: 1 });
+    try {
+      const kh = JSON.parse(require('fs').readFileSync(
+        require('path').join(__dirname, '..', 'kho', 'khoa.json'), 'utf8'));
+      if (kh && kh.khoa) await p.addInitScript(x => { window.GITA_KHOA = x; }, kh.khoa);
+    } catch (e) { /* không có khoá — đo phần nền thôi */ }
+
+    await p.goto(URL, { waitUntil: 'networkidle' });
+    await p.evaluate(() => localStorage.clear());
+    await p.reload({ waitUntil: 'networkidle' });
+    await p.waitForTimeout(500);
+
+    for (const em of VAI) {
+      await p.evaluate(x => window.G.doLogin(x), em);
+      await p.waitForTimeout(1600);
+      const man = await p.evaluate(() => {
+        const r = [];
+        (window.G.NAV || []).forEach(g => (g.items || []).forEach(i => r.push(i.v)));
+        return r;
+      });
+
+      for (const v of man) {
+        const d = await p.evaluate(async (opt) => {
+          window.G.go(opt.v);
+          await new Promise(r => setTimeout(r, 90));
+          const W = document.documentElement.clientWidth;
+
+          /* Thẻ nằm trong một hộp cuộn ngang có chủ ý thì KHÔNG tính.
+             Bảng rộng trong hộp cuộn là cách làm ĐÚNG — bắt nó là dạy
+             người sau đi cắt bớt cột cho vừa màn. */
+          /* DỪNG TRƯỚC <body>. Bản đầu tôi đi hết lên tới thẻ gốc, mà
+             body có sẵn overflow-x:hidden — nên MỌI thẻ đều "nằm trong
+             hộp cuộn" và phép đo này KHÔNG BAO GIỜ báo gì. Nó xanh suốt
+             1464 lượt đo trong khi có một màn đang đẩy cả trang rộng
+             555px trên màn 390px. Một phép kiểm chưa từng đỏ thì chưa
+             phải phép kiểm, và đây đúng là một phép kiểm câm. */
+          const trongHopCuon = (el) => {
+            let q = el.parentElement;
+            while (q && q !== document.body && q !== document.documentElement) {
+              const ox = getComputedStyle(q).overflowX;
+              if (ox === 'auto' || ox === 'scroll' || ox === 'hidden') return true;
+              q = q.parentElement;
+            }
+            return false;
+          };
+
+          const thoRa = [];
+          const goc = document.getElementById('main');
+          if (goc) {
+            const ds = goc.querySelectorAll('*');
+            for (let i = 0; i < ds.length; i++) {
+              const el = ds[i], r = el.getBoundingClientRect();
+              if (r.width < 2 || r.height < 2) continue;
+              const thua = Math.round(Math.max(r.right - W, -r.left));
+              if (thua <= 1) continue;
+              if (trongHopCuon(el)) continue;
+              /* Chỉ giữ thẻ NGOÀI CÙNG. Một thẻ tràn kéo theo mọi thẻ
+                 con của nó, và in cả chùm thì báo cáo dài gấp mười mà
+                 vẫn chỉ một chỗ phải sửa. */
+              if (thoRa.some(x => x.el.contains(el))) continue;
+              thoRa.push({ el, thua,
+                ten: el.tagName.toLowerCase() +
+                     (el.className && typeof el.className === 'string'
+                       ? '.' + el.className.trim().split(/\s+/).slice(0, 2).join('.') : '') });
+            }
+          }
+
+          const nutNho = [], chuNho = [];
+          if (opt.cham && goc) {
+            const nut = goc.querySelectorAll('button,a[href],[data-act],[role="button"],input,select');
+            for (let i = 0; i < nut.length; i++) {
+              const el = nut[i];
+              if (getComputedStyle(el).display === 'none') continue;
+              /* ĐO VÙNG CHẠM THẬT, KHÔNG ĐO CÁI Ô VUÔNG.
+                 Một ô tích 16px nằm trong một nhãn cao 44px thì ngón tay
+                 bấm vào nhãn là trúng — bắt cái ô 16px ấy là báo nhầm,
+                 và bản đầu của bộ này báo nhầm đúng như thế ở màn thư
+                 viện: bảy "nút nhỏ" mà cả bảy đều bấm được. */
+              const bao = el.closest('label,button') || el;
+              const r = bao.getBoundingClientRect();
+              if (r.width < 2 || r.height < 2) continue;
+              /* ĐƯỜNG DẪN NẰM GIỮA CÂU VĂN thì bỏ qua. Nâng nó lên 32px
+                 là chèn một khoảng trống giữa hai dòng chữ — đổi một chỗ
+                 khó bấm lấy một đoạn văn vỡ. */
+              if (el.tagName === 'A' && getComputedStyle(el).display === 'inline' &&
+                  /^(P|LI|SPAN|TD|SMALL|EM|STRONG)$/.test(el.parentElement.tagName)) continue;
+              if (r.height < opt.nutNho || r.width < opt.nutNho)
+                nutNho.push(Math.round(r.width) + '×' + Math.round(r.height) + ' ' +
+                  (el.textContent || '').trim().slice(0, 18));
+            }
+            const chu = goc.querySelectorAll('*');
+            for (let i = 0; i < chu.length; i++) {
+              const el = chu[i];
+              if (!el.firstChild || el.firstChild.nodeType !== 3) continue;
+              if (!(el.textContent || '').trim()) continue;
+              const cx = parseFloat(getComputedStyle(el).fontSize);
+              if (cx && cx < opt.chuNho) chuNho.push(cx + 'px: ' +
+                (el.textContent || '').trim().slice(0, 20));
+            }
+          }
+
+          /* ── CHỮ RÒ RA TỪ PHẦN ĐẦU TRANG ──
+             Một thẻ <meta> bị cắt đôi thì nửa sau của nó rơi xuống thân
+             trang và trình duyệt đọc như chữ thường. Chuyện ấy đã xảy ra
+             thật: dòng khai quyền sở hữu trí tuệ của Học viện hiện ra
+             thành chữ ở đầu MỌI trang, sống qua rất nhiều bản, vì trên
+             màn để bàn nó nằm khuất sau thanh trên.
+             Bắt bằng một luật đơn giản và không bao giờ sai: thân trang
+             KHÔNG được có chữ nằm trần, ngoài mọi thẻ. */
+          const roRa = [];
+          for (let n = document.body.firstChild; n; n = n.nextSibling) {
+            if (n.nodeType !== 3) continue;
+            const t = (n.nodeValue || '').trim();
+            if (t) roRa.push(t.slice(0, 60));
+          }
+
+          return {
+            roRa,
+            cuonNgang: Math.round(document.documentElement.scrollWidth - W),
+            thoRa: thoRa.slice(0, 4).map(x => x.ten + ' thừa ' + x.thua + 'px'),
+            soThoRa: thoRa.length,
+            nutNho: nutNho.slice(0, 3), soNutNho: nutNho.length,
+            chuNho: chuNho.slice(0, 2), soChuNho: chuNho.length
+          };
+        }, { v, cham: k.cham, nutNho: NUT_NHO, chuNho: CHU_NHO });
+
+        soDo++;
+        const nhan = k.ten + ' · ' + v;
+        if (d.roRa.length) tong.ro.push(nhan + ' — chữ nằm trần trong thân trang: "' +
+          d.roRa.join('" · "') + '"');
+        if (d.cuonNgang > 1) tong.tran.push(nhan + ' — trang cuộn ngang ' + d.cuonNgang + 'px');
+        if (d.soThoRa) tong.phanTu.push(nhan + ' — ' + d.soThoRa + ' thẻ tràn: ' + d.thoRa.join(' · '));
+        if (d.soNutNho) tong.nut.push(nhan + ' — ' + d.soNutNho + ' nút nhỏ: ' + d.nutNho.join(' · '));
+        if (d.soChuNho) tong.chu.push(nhan + ' — ' + d.soChuNho + ' chỗ chữ nhỏ: ' + d.chuNho.join(' · '));
+      }
+    }
+    await p.close();
+    if (!IM) console.log('  đã đo xong khổ ' + k.ten + ' (' + k.w + 'px)');
+  }
+
+  /* Gộp theo MÀN chứ không theo lượt đo: một màn tràn ở cả bốn khổ là
+     MỘT chỗ phải sửa, không phải bốn. In bốn dòng cho một chỗ là cách
+     chắc nhất để người đọc bỏ qua cả báo cáo. */
+  const gom = (ds) => {
+    const m = {};
+    ds.forEach(x => {
+      const man = x.split(' · ')[1].split(' — ')[0];
+      (m[man] = m[man] || []).push(x.split(' · ')[0]);
+    });
+    return Object.keys(m).map(k => k + ' (' + m[k].join(', ') + ')');
+  };
+
+  console.log('');
+  bao(!tong.tran.length, 'KHÔNG MÀN NÀO LÀM CẢ TRANG CUỘN NGANG. Trên điện thoại đây là lỗi nặng nhất: người ta vuốt dọc, trang trượt ngang, chữ nhảy khỏi tầm mắt, và không ai báo lỗi ấy vì họ tưởng mình vuốt sai',
+    tong.tran.length ? gom(tong.tran).slice(0, 12).join(' · ') : soDo + ' lượt đo');
+  bao(!tong.phanTu.length, 'KHÔNG THẺ NÀO THÒ RA NGOÀI BỀ NGANG MÀN — trừ thẻ nằm trong hộp cuộn ngang có chủ ý, vì bảng rộng trong hộp cuộn là cách làm ĐÚNG',
+    tong.phanTu.length ? tong.phanTu.slice(0, 10).join(' · ') : 'sạch');
+  bao(!tong.nut.length, 'MỌI NÚT TRÊN KHỔ CHẠM ĐỀU ĐẠT ' + NUT_NHO + 'px MỖI CHIỀU — nhỏ hơn thì ngón tay bấm trượt, và người dùng đổ lỗi cho mình chứ không cho ứng dụng',
+    tong.nut.length ? tong.nut.slice(0, 8).join(' · ') : 'sạch');
+  bao(!tong.chu.length, 'KHÔNG CHỖ NÀO DÙNG CHỮ DƯỚI ' + CHU_NHO + 'px',
+    tong.chu.length ? tong.chu.slice(0, 6).join(' · ') : 'sạch');
+  bao(!tong.ro.length, 'THÂN TRANG KHÔNG CÓ CHỮ NẰM TRẦN NGOÀI MỌI THẺ. Một thẻ meta bị cắt đôi thì nửa sau rơi xuống thân trang và hiện ra thành chữ — đã xảy ra thật với dòng khai quyền sở hữu trí tuệ, sống qua rất nhiều bản vì trên màn để bàn nó khuất sau thanh trên',
+    tong.ro.length ? Array.from(new Set(tong.ro.map(x => x.split(' — ')[1]))).slice(0, 3).join(' · ') : 'sạch');
+
+  console.log('\n' + (loi ? '✗ CÒN ' + loi + ' LOẠI LỖI KHỔ MÀN' : '✓ KHUNG MÀN SẠCH TRÊN CẢ BỐN KHỔ') +
+    ' · ' + soDo + ' lượt đo');
+  await b.close();
+  process.exit(loi ? 1 : 0);
+})();

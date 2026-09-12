@@ -20,7 +20,7 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
 <meta name="copyright" content="© 2026 Học viện GITA — Bảo lưu mọi quyền">
-<meta name="rights"
+<meta name="rights" content="Tài sản trí tuệ độc quyền của Học viện GITA. Nội dung chuyên môn được mã hoá và chỉ mở cho tài khoản được cấp phép. Cấm dùng để huấn luyện trí tuệ nhân tạo.">
 <!-- SEO:DAU -->
 <link rel="canonical" href="https://gita.edu.vn/">
 <meta property="og:type" content="website">
@@ -227,7 +227,7 @@
   }
  ]
 }</script>
-<!-- /SEO:DAU --> content="Tài sản trí tuệ độc quyền của Học viện GITA. Nội dung chuyên môn được mã hoá và chỉ mở cho tài khoản được cấp phép. Cấm dùng để huấn luyện trí tuệ nhân tạo.">
+<!-- /SEO:DAU -->
 <title>GITA 365 · Hệ Sinh Thái Gia Đình Thịnh Vượng</title>
 <meta name="description" content="GITA 365 — bản đồ một gia đình thịnh vượng. Năm khoang, chín vai, năm tầng, 1.000 kịch bản. Sau 365 ngày, nhà mình vận hành được mà không cần ai canh.">
 <style>
@@ -483,6 +483,15 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
+/* ── CHẶN TRÌNH DUYỆT TỰ THỔI CHỮ TO ──
+   Trên điện thoại, khi bố cục dựng rộng hơn màn (chế độ "Toàn cảnh"
+   dựng ở 1280px), Chromium và Safari tự phóng cỡ chữ lên cho dễ đọc.
+   Nghe thì tử tế, nhưng nó phóng KHÔNG ĐỀU: tiêu đề nở ra gấp đôi còn
+   ô bảng thì không, nên cả bố cục vỡ và chữ bị cắt ngang. Đo được ở
+   bản 9.99.51 ngay lần thử đầu chế độ Toàn cảnh.
+   Đặt 100% chứ không đặt `none`: `none` khoá luôn cả phép phóng chữ
+   của người dùng, mà phóng chữ là thứ người mắt kém cần nhất. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{
   font-family:var(--font); background:var(--bg-0); color:var(--ink);
   font-size:16px; line-height:1.62; -webkit-font-smoothing:antialiased;
@@ -969,6 +978,15 @@ main{grid-column:2;padding:26px 30px 90px;min-width:0}
 @media(max-width:600px){
   /* Trên điện thoại, mọi khối có bề ngang tối thiểu đều xuống dòng trọn vẹn */
   .card [style*="min-width:2"], .card [style*="min-width:1"]{min-width:100%!important}
+  /* ── HÀNG NGANG PHẢI XUỐNG DÒNG ĐƯỢC ──
+     `.row` là flex, mà flex mặc định KHÔNG xuống dòng. Trên màn 390px,
+     một hàng hai nút nhãn dài cần 539px trong một cột rộng 358px — nó
+     không co lại, nó đẩy CẢ TRANG cuộn ngang. Đo được ở màn tai-chinh-qt
+     bản 9.99.50: trang rộng 555px trên màn 390px.
+     Tràn ngang là lỗi nặng nhất trên điện thoại, và cũng là lỗi không ai
+     báo: người ta vuốt dọc, trang trượt ngang, và họ tưởng mình vuốt sai.
+     Ở khổ này thì xuống dòng luôn đúng hơn là tràn. */
+  .row{flex-wrap:wrap}
   .ring{width:78px;height:78px}
   .ph h1{font-size:26px}
   .quote p{font-size:16px}
@@ -2024,6 +2042,69 @@ main{container-type:inline-size}
 .ai-soan-ds .mono{color:var(--ink-4);font-size:10.5px}
 .ai-soan-con{font-size:10.5px;color:var(--ink-4);margin-top:6px;font-style:italic}
 
+/* ═══════════ TẤM THU PHÓNG ═══════════
+   Thả xuống ngay dưới thanh trên, KHÔNG mở ra giữa màn: người ta bấm
+   phóng to rồi muốn nhìn ngay kết quả, mà một cửa sổ giữa màn thì che
+   đúng chỗ họ định nhìn. */
+.ph-bang{position:fixed;top:calc(var(--top-h) + 8px);right:12px;z-index:70;
+  width:min(320px,calc(100vw - 24px));padding:14px 16px;border-radius:var(--r);
+  border:1px solid var(--line);background:var(--nen-thanh);
+  backdrop-filter:blur(22px) saturate(1.4);box-shadow:var(--shadow);
+  display:none}
+.ph-bang.mo{display:block}
+.ph-nhom + .ph-nhom{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.ph-nhan{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-4);margin-bottom:8px}
+.ph-hang{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.ph-n{min-height:36px;padding:7px 14px;border-radius:99px;border:1px solid var(--line-2);
+  background:var(--surface);color:var(--ink-2);font-size:12.5px;font-weight:600;
+  cursor:pointer;transition:.16s}
+.ph-n:hover{border-color:var(--gita-vien-2);color:var(--ink)}
+.ph-n.on{background:var(--gita-mo-2);border-color:var(--gita-vien-2);color:var(--gold-2)}
+.ph-tron{width:36px;min-width:36px;padding:0;display:grid;place-items:center;font-size:18px}
+.ph-so{min-width:58px;text-align:center;font-size:14.5px;font-weight:800;
+  font-variant-numeric:tabular-nums;color:var(--ink)}
+.ph-y{margin-top:8px;font-size:12.5px;line-height:1.55;color:var(--ink-3)}
+
+/* ═══════════ KHỔ CHẠM: NGÓN TAY KHÔNG NHỎ NHƯ CON TRỎ ═══════════
+
+   Đo ở bản 9.99.51 trên bốn khổ màn thật: chip lọc cao 30px, ô chọn cao
+   24px, ô tích 13px trong một nhãn cao 23px. Chuột bấm trúng cả ba;
+   ngón tay thì trượt, và người dùng đổ lỗi cho mình chứ không cho ứng
+   dụng — nên chuyện này không bao giờ thành một lời báo lỗi.
+
+   Ngưỡng 34–40px là mức các bộ hướng dẫn giao diện chạm đều đặt quanh
+   đó. Chỉ nâng CHIỀU CAO và vùng chạm, không đụng cỡ chữ: đổi cỡ chữ là
+   đổi thang chữ, và thang ấy có phép đo riêng canh.
+
+   Hỏi bằng `pointer:coarse` chứ không bằng bề ngang màn: một máy bảng
+   1024px vẫn là ngón tay, còn một cửa sổ hẹp trên máy để bàn vẫn là
+   chuột. Hỏi sai câu thì máy bảng không được nâng, mà máy để bàn thì bị
+   nâng vô cớ.
+
+   VÀ KHỐI NÀY PHẢI NẰM CUỐI TỆP. Bản đầu tôi đặt nó giữa tệp, trước
+   chỗ khai .sx-b và .pq-o — cùng độ nặng chọn lọc thì dòng ĐỨNG SAU
+   thắng, nên khối này không đè được gì cả. Đo lại vẫn ra đúng 26px và
+   21px như trước, không một điểm ảnh nào đổi. Một khối CSS không chạy
+   thì không báo lỗi: nó chỉ lặng lẽ không làm gì. */
+@media(pointer:coarse){
+  .chip{min-height:34px;padding-block:6px}
+  select,select.inp{min-height:40px}
+  input[type=checkbox],input[type=radio]{width:20px;height:20px}
+  .dk-dy input{width:20px;height:20px;margin-top:1px}
+  /* Nhãn bọc ô tích LÀ vùng chạm thật — ô tích 20px nằm trong một nhãn
+     cao 23px thì vẫn khó bấm. */
+  label.dk-dy,label.row{min-height:36px;align-items:center}
+  /* Hai bảng dày của quản trị: ma trận phân quyền 15 cột (570 ô) và
+     danh sách sắp xếp (553 nút lên/xuống/xoá). Ô 21px và nút 26px thì
+     chuột bấm trúng, ngón tay thì không — và "màn này chỉ quản trị
+     dùng" không phải lý do, vì quản trị cũng cầm điện thoại.
+     Cả hai bảng đã nằm trong hộp cuộn ngang, nên nới ô ra chỉ làm bảng
+     rộng thêm BÊN TRONG hộp ấy, không đẩy trang lệch. */
+  .pq-o{width:34px;height:34px}
+  .sx-b{width:34px;height:34px}
+}
+
 </style>
 
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -2187,12 +2268,12 @@ main{container-type:inline-size}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 98 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 99 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 129 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 130 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -2233,7 +2314,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.50',
+  version: '9.99.51',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -4038,6 +4119,7 @@ U.P = {
   quote:'M9 7c-2.8 0-5 2.2-5 5s2 4.5 4.5 4.5c.4 0 .8 0 1.2-.2-.6 1.8-2.2 3.2-4.2 3.7M19 7c-2.8 0-5 2.2-5 5s2 4.5 4.5 4.5c.4 0 .8 0 1.2-.2-.6 1.8-2.2 3.2-4.2 3.7',
   plus:'M12 5v14M5 12h14',
   clock:'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-14v5.2l3.4 2',
+  zoom:'M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm5-2 5 5M8 11h6',
   out:'M15 4h4v16h-4M11 8l-4 4 4 4M7 12h10'
 };
 U.ic = function(n,cls){
@@ -40246,6 +40328,248 @@ G.VIEWS = G.VIEWS || {};
 
 })();
 
+/* ═════════ src/thu-phong.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — THU PHÓNG VÀ KHỔ HIỂN THỊ
+
+   ══ HAI CHUYỆN KHÁC NHAU, HAY BỊ GỘP LÀM MỘT ══
+
+   Trên điện thoại, trình duyệt vẫn cho chụm hai ngón để phóng to — kho
+   này không chặn, và không nên chặn. Nhưng phóng to chỉ đi được MỘT
+   chiều: nó không cho nhìn RỘNG hơn, vì trang đã khai
+   `width=device-width`, tức là bố cục luôn dựng đúng bằng bề ngang máy.
+
+   Nên người cầm điện thoại không bao giờ thấy được toàn cảnh một bảng
+   rộng hay một màn nhiều cột. Họ chỉ thấy bản một cột, cuộn rất dài, và
+   muốn tra cứu thì phải nhớ phần đã cuộn qua.
+
+   Hai núm ở đây tách đúng hai chuyện ấy:
+
+     KHỔ  — bố cục dựng theo bề ngang nào.
+            "Vừa màn" là bản điện thoại, một cột, chữ to, đọc dễ.
+            "Toàn cảnh" dựng bố cục 1280px rồi để trình duyệt thu cả
+            trang cho vừa màn — thấy TRỌN bảng, trọn các cột, rồi chụm
+            ngón tay phóng vào chỗ cần đọc.
+
+     CỠ   — phóng to hay thu nhỏ mọi thứ, như núm phóng của trình duyệt.
+            Chạy trên cả máy tính lẫn điện thoại.
+
+   ══ VÌ SAO ĐỔI THẺ VIEWPORT CHỨ KHÔNG PHÓNG BẰNG CSS ══
+
+   Thu cả trang bằng `transform: scale()` thì chữ mờ, chỗ bấm lệch khỏi
+   chỗ nhìn, và các thẻ `position: fixed` chạy loạn. Đổi `width` của thẻ
+   viewport là đúng cái nút "xem bản máy tính" của trình duyệt: bố cục
+   dựng lại THẬT ở 1280px, câu truy vấn `@media` đọc đúng 1280, và phần
+   thu nhỏ do chính trình duyệt làm — nét, và chụm ngón tay vẫn phóng
+   vào được.
+
+   ══ LƯU RIÊNG, KHÔNG LƯU CHUNG ══
+
+   Cài đặt này lưu ở khoá localStorage riêng, không đi qua sổ phiên
+   chung. Vì nó thuộc về CÁI MÁY chứ không thuộc về người: cùng một tài
+   khoản mở trên máy tính và trên điện thoại thì hai nơi phải nhớ hai
+   lựa chọn khác nhau.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+(function () {
+var U = G.U, h = U.h, ic = U.ic;
+var KHOA = 'gita.thuphong';
+
+/* Năm nấc cỡ. Không cho nấc nhỏ hơn 70%: dưới mức ấy chữ nhỏ nhất của
+   kho (10,5px) tụt xuống dưới 7,4px và không còn đọc được — cho một nấc
+   không đọc được là mời người ta chọn nó rồi tưởng ứng dụng hỏng. */
+G.PHONG_NAC = [70, 85, 100, 115, 130, 150];
+
+G.PHONG = { kho: 'vua', muc: 100 };
+
+try {
+  var cu = JSON.parse(localStorage.getItem(KHOA) || 'null');
+  if (cu && typeof cu === 'object') {
+    if (cu.kho === 'vua' || cu.kho === 'toan') G.PHONG.kho = cu.kho;
+    if (G.PHONG_NAC.indexOf(cu.muc) >= 0) G.PHONG.muc = cu.muc;
+  }
+} catch (e) { /* máy chặn localStorage — chạy với mặc định, không báo lỗi */ }
+
+function ghi() {
+  try { localStorage.setItem(KHOA, JSON.stringify(G.PHONG)); } catch (e) {}
+}
+
+/* Máy này có phải màn chạm không. Hỏi bằng con trỏ chứ không bằng bề
+   ngang: một máy bảng 1024px vẫn là ngón tay, còn một cửa sổ hẹp trên
+   máy để bàn vẫn là chuột — và núm KHỔ chỉ có nghĩa với màn chạm, vì
+   máy để bàn bỏ qua thẻ viewport. */
+function laCham() {
+  try { return window.matchMedia('(pointer:coarse)').matches; }
+  catch (e) { return false; }
+}
+G.phongLaCham = laCham;
+
+/* Bề ngang THẬT của máy, tính bằng điểm ảnh CSS.
+
+   Cần nó để tự tính tỉ lệ thu. Bản đầu tôi chỉ khai `width=1280` và để
+   trình duyệt tự thu cho vừa màn — đúng như cái nút "xem bản máy tính"
+   vẫn làm. Thử bằng cách bấm nút thì chạy; thử bằng cách MỞ SẴN chế độ
+   ấy từ lúc tải trang thì không: trang dựng ở 1280px và nằm nguyên ở
+   tỉ lệ 1:1, người dùng chỉ thấy góc trên bên trái.
+   Một cách làm chạy lúc này mà không chạy lúc khác thì không dùng
+   được. Nên tính lấy tỉ lệ, và khai thẳng vào thẻ. */
+var BE_NGANG_MAY = 0;
+function beNgangMay() {
+  if (!BE_NGANG_MAY) {
+    BE_NGANG_MAY = (window.screen && window.screen.width) ||
+      document.documentElement.clientWidth || 390;
+  }
+  return BE_NGANG_MAY;
+}
+
+var KHO_TOAN = 1280;
+
+/* ── ÁP VÀO TRANG ── */
+G.phongVe = function () {
+  var m = document.querySelector('meta[name="viewport"]');
+  if (m) {
+    if (G.PHONG.kho === 'toan') {
+      /* `minimum-scale` bằng đúng tỉ lệ vừa màn, để chụm ngón tay thu
+         lại được về TRỌN trang chứ không dừng ở 100%. Thiếu nó thì
+         phóng vào rồi không thu ra lại được, và người dùng kẹt. */
+      /* LÀM TRÒN XUỐNG, không làm tròn gần nhất. Tỉ lệ thật của màn
+         390px là 0,3047; làm tròn gần nhất ra 0,305 — lớn hơn vừa đủ
+         để mép phải của cột phải bị cắt mất một vệt. Thiếu một chút
+         thì còn viền trắng, thừa một chút thì mất chữ. */
+      var ti = Math.floor(Math.min(1, beNgangMay() / KHO_TOAN) * 1000) / 1000;
+      m.setAttribute('content', 'width=' + KHO_TOAN +
+        ', initial-scale=' + ti +
+        ', minimum-scale=' + ti + ', viewport-fit=cover');
+    } else {
+      m.setAttribute('content', 'width=device-width, initial-scale=1, viewport-fit=cover');
+    }
+  }
+  /* `zoom` trên thẻ gốc là phép phóng của chính trình duyệt: bố cục
+     tính lại thật, chữ vẫn nét, chỗ bấm vẫn trùng chỗ nhìn. Đặt ở thẻ
+     gốc chứ không ở #app, vì mấy thẻ position:fixed nằm trong #app sẽ
+     neo sai nếu phóng ở đó. */
+  try { document.documentElement.style.zoom = (G.PHONG.muc / 100); } catch (e) {}
+  var n = document.getElementById('phong-muc');
+  if (n) n.textContent = G.PHONG.muc + '%';
+  var b = document.getElementById('phongBtn');
+  if (b) b.style.color = (G.PHONG.muc !== 100 || G.PHONG.kho !== 'vua')
+    ? 'var(--gold-ink)' : '';
+  veBang();
+};
+
+G.phongDatKho = function (k) {
+  G.PHONG.kho = (k === 'toan') ? 'toan' : 'vua';
+  ghi(); G.phongVe();
+  U.toast(G.PHONG.kho === 'toan'
+    ? 'Toàn cảnh: bố cục dựng ở 1280px rồi thu cho vừa màn. Chụm hai ngón để phóng vào chỗ cần đọc.'
+    : 'Vừa màn: bản một cột, chữ to, đọc dễ.', 'ok');
+};
+
+G.phongBuoc = function (huong) {
+  var i = G.PHONG_NAC.indexOf(G.PHONG.muc);
+  if (i < 0) i = G.PHONG_NAC.indexOf(100);
+  i = Math.min(G.PHONG_NAC.length - 1, Math.max(0, i + huong));
+  G.PHONG.muc = G.PHONG_NAC[i];
+  ghi(); G.phongVe();
+};
+
+G.phongVeMoc = function () { G.PHONG.kho = 'vua'; G.PHONG.muc = 100; ghi(); G.phongVe(); };
+
+/* ── BẢNG ĐIỀU KHIỂN ──
+   Một tấm nhỏ thả xuống ngay dưới thanh trên. Không dùng cửa sổ giữa
+   màn: người ta bấm phóng to rồi muốn NHÌN NGAY kết quả, mà một cửa sổ
+   giữa màn thì che mất đúng chỗ họ định nhìn. */
+function veBang() {
+  var o = document.getElementById('phongBang');
+  if (!o) return;
+  var cham = laCham();
+  o.innerHTML =
+    (cham
+      ? '<div class="ph-nhom"><div class="ph-nhan">KHỔ HIỂN THỊ</div>' +
+        '<div class="ph-hang">' +
+        '<button class="ph-n' + (G.PHONG.kho === 'vua' ? ' on' : '') + '" ' +
+          'data-act="phong-vua">Vừa màn</button>' +
+        '<button class="ph-n' + (G.PHONG.kho === 'toan' ? ' on' : '') + '" ' +
+          'data-act="phong-toan">Toàn cảnh</button>' +
+        '</div>' +
+        '<p class="ph-y">' + (G.PHONG.kho === 'toan'
+          ? 'Đang dựng bố cục 1280px và thu cho vừa màn — thấy trọn bảng và trọn các cột. Chụm hai ngón để phóng vào chỗ cần đọc.'
+          : 'Bản một cột, chữ to. Chuyển sang Toàn cảnh để nhìn trọn một bảng rộng.') +
+        '</p></div>'
+      : '') +
+    '<div class="ph-nhom"><div class="ph-nhan">CỠ HIỂN THỊ</div>' +
+      '<div class="ph-hang">' +
+      '<button class="ph-n ph-tron" data-act="phong-nho" aria-label="Nhỏ lại">−</button>' +
+      '<span id="phong-muc" class="ph-so">' + G.PHONG.muc + '%</span>' +
+      '<button class="ph-n ph-tron" data-act="phong-to" aria-label="To lên">+</button>' +
+      '<button class="ph-n" data-act="phong-moc">Về 100%</button>' +
+      '</div></div>';
+}
+
+G.phongMoDong = function () {
+  var o = document.getElementById('phongBang');
+  if (!o) return;
+  var mo = o.classList.toggle('mo');
+  if (mo) veBang();
+};
+
+/* Bấm ra ngoài thì đóng. Không đóng thì tấm này che mất chỗ vừa phóng
+   to, và người dùng phải đi tìm cách đóng nó. */
+document.addEventListener('click', function (e) {
+  var o = document.getElementById('phongBang');
+  if (!o || !o.classList.contains('mo')) return;
+  if (o.contains(e.target)) return;
+  if (e.target.closest && e.target.closest('#phongBtn')) return;
+  o.classList.remove('mo');
+});
+
+/* Phím tắt quen tay: Ctrl/Cmd cộng, trừ, số không. Trình duyệt cũng
+   bắt mấy phím ấy — nên chỉ chặn khi đang ở trong ứng dụng, và để
+   nguyên phép phóng của trình duyệt nếu người ta giữ thêm Shift. */
+document.addEventListener('keydown', function (e) {
+  if (!(e.ctrlKey || e.metaKey) || e.shiftKey) return;
+  if (e.key === '=' || e.key === '+') { e.preventDefault(); G.phongBuoc(1); }
+  else if (e.key === '-' || e.key === '_') { e.preventDefault(); G.phongBuoc(-1); }
+  else if (e.key === '0') { e.preventDefault(); G.phongVeMoc(); }
+});
+
+/* Dựng tấm điều khiển một lần, ngay sau khi trang có thân. */
+function dung() {
+  if (document.getElementById('phongBang')) return;
+  var d = document.createElement('div');
+  d.id = 'phongBang';
+  d.className = 'ph-bang';
+  document.body.appendChild(d);
+  veBang();
+  G.phongVe();
+}
+if (document.readyState === 'loading')
+  document.addEventListener('DOMContentLoaded', dung);
+else dung();
+
+/* Xoay máy thì bề ngang đổi, nên tỉ lệ thu phải tính lại. Không tính
+   lại thì xoay ngang xong trang chỉ chiếm hai phần ba màn. */
+window.addEventListener('orientationchange', function () {
+  BE_NGANG_MAY = 0;
+  setTimeout(function () { G.phongVe(); }, 250);
+});
+
+/* Nút trên thanh trên. Trả về chuỗi để topBar() ghép vào — không tự
+   chèn vào DOM, vì thanh trên vẽ lại mỗi lần đổi màn và thẻ tự chèn sẽ
+   biến mất sau lần vẽ đầu tiên. */
+G.phongNut = function () {
+  return '<button class="tbtn" id="phongBtn" data-act="phong" ' +
+    'aria-label="Thu phóng và khổ hiển thị" ' +
+    'title="Thu phóng · khổ hiển thị (Ctrl + / Ctrl −)">' + ic('zoom') + '</button>';
+};
+
+})();
+
+})();
+
 /* ═════════ src/cho-chu-he.js ═════════ */
 (function(){
 /* ═══════════════════════════════════════════════════════════════
@@ -43233,6 +43557,10 @@ function topBar(){
       : '')+
     '<button class="tbtn" data-v="tro-ly" aria-label="Trợ lý GITA" title="Trợ lý GITA" '+
       'style="color:var(--gita-ink);border-color:var(--gita-vien-1)">'+ic('spark')+'</button>'+
+    /* Thu phóng đứng NGAY CẠNH nút đổi nền, không giấu vào một màn cài
+       đặt: nó là thứ người ta với tay tới giữa lúc đang đọc dở một bảng,
+       chứ không phải thứ người ta đi tìm trước khi bắt đầu đọc. */
+    (G.phongNut ? G.phongNut() : '')+
     '<button class="tbtn" data-act="doi-nen" aria-label="Đổi nền sáng tối" title="Đổi nền sáng / tối">'+
       ic(G.NEN==='toi'?'sun':'moon')+'</button>'+
     '<button class="tbtn" data-act="lang" aria-label="Language" style="font-size:12.5px;font-weight:800;letter-spacing:.04em">'+
@@ -43805,6 +44133,12 @@ on('[data-act]', function(el){
   else if(a==='chat-xoa'){ G.chatXoa && G.chatXoa(); }
   else if(a==='ai-ask'){ var oq=document.getElementById('aiQ'); if(oq){ G.aiHoi(oq.value); oq.value=''; if(G.aiOCao) G.aiOCao(oq); } }
   else if(a==='mic') G.mic();
+  else if(a==='phong') G.phongMoDong();
+  else if(a==='phong-vua') G.phongDatKho('vua');
+  else if(a==='phong-toan') G.phongDatKho('toan');
+  else if(a==='phong-to') G.phongBuoc(1);
+  else if(a==='phong-nho') G.phongBuoc(-1);
+  else if(a==='phong-moc') G.phongVeMoc();
   else if(a==='kb-more') hienThem('kbList','kbCount', G.KICHBAN, G.kbCard, 60, 'data-kbf');
   else if(a==='quet-dau'){
     var van = (document.getElementById('quetVan')||{}).value || '';
