@@ -585,6 +585,62 @@ một chỗ. Mục nào còn giữ hai bản chép thì đấy là chỗ sắp t
 
 ---
 
+## Sổ chờ: 26 mục câm đã khai xong (9.99.61)
+
+Tới 9.99.60 có **26 mục trong 10 sổ chờ cũ chưa khai cách đo**, dựng
+trước 9.99.49. Chưa khai thì bộ soát không tự đóng được mục ấy khi nó
+xong, và nó nằm lại mãi. Nay **0 mục chưa khai**: 11 đo được, 23 khai
+thẳng là máy không đo được **kèm lý do thật**.
+
+### Kiểu đo thứ năm — `daChot`
+
+Bốn kiểu cũ đo một kho BÊN NGOÀI mục. Kiểu này đo **chính mục**: một
+câu hỏi mang sẵn câu trả lời trong ô của nó thì nó đã xong.
+
+Vì sao cần: BLV · BV · CS · SV · T5P đều dựng theo lối *hỏi rồi ghi câu
+trả lời ngay cạnh*. Chủ hệ trả lời, người viết ghi vào `daChot`, rồi
+**không ai gỡ mục khỏi sổ**. Sau vài bản sổ có cả câu đã trả lời lẫn câu
+chưa, và người đọc không phân biệt được — lúc ấy cả sổ thành vô dụng,
+đúng như `TR_CHUA` đã từng mục ở 9.99.7.
+
+Nó bắt ngay **bốn mục đã trả lời từ 9.59 mà vẫn nằm trong sổ chờ**. Cả
+bốn đã chuyển sang sổ `*_DACHOT` — **gỡ khỏi sổ chờ, không xoá**: câu
+trả lời kèm lý do là thứ đáng giữ nhất. Sổ `_DACHOT` không mang đuôi
+`_CHOCHU` nên `ccDocSo()` không nhặt.
+
+**`TV_CHOCHU → CC-GOI` là ví dụ rõ nhất của mục tự mô tả sai chính
+mình:** ô `lenhDung` còn ghi *"HP_TANG[].gia đang là null và đang chờ
+chủ hệ điền"* — đúng lúc viết, và sai từ 9.94 khi giá được chốt. Nay đo
+thẳng `HP_TANG[].gia` chứ không đọc lời khai.
+
+### Ba chỗ khai tay phải đụng khi thêm một kho
+
+Thêm một kho mới thì ngoài `ma-hoa-kho.js` và `kho-khoa.js` còn ba chỗ
+nữa, và cả ba đều bắt đỏ ngay ở 9.99.61:
+
+| Chỗ | Bắt gì |
+|---|---|
+| `G.RONG_CO_Y` | kho rỗng phải khai **vì sao** và **lấp khi nào** |
+| `G.SG_PHULUC` | kho của cuốn sách phải xếp vào phần IN hay PHỤ LỤC |
+| danh sách kiểu đo ở mục 71 | `G.CC_KIEU` đổi hình là đỏ |
+
+**Khung chờ điền là MẢNG RỖNG, không phải một dòng mang ô `null`.** Luật
+của kho: vắng mặt nghĩa là không áp dụng, *rỗng* nghĩa là đáng lẽ phải
+có giá trị — nên một dòng `{giaTri: null}` là một dòng tự khai rằng nó
+đang thiếu, và bộ soát trường trống báo đỏ đúng như thế. Khung chưa điền
+thì **chưa có dòng nào**.
+
+### Định danh của một bản ghi không chỉ là ô `ma`
+
+Mục 45 (không mã nào biến mất khỏi bảy gói) chỉ nhận `ma · id · code`.
+Mấy sổ chờ không đánh mã — **câu hỏi chính là định danh**, và nó ổn định
+vì viết lại câu hỏi là viết lại mục. Chỗ hẹp ấy lộ ra khi bốn mục được
+tiễn sang `_DACHOT`: phép soi không lần được nên **báo MẤT trong khi
+không mất chữ nào**. Một phép kiểm báo mất nhầm thì lần sau người ta tắt
+nó đi. Nay định danh lùi dần: `ma → id → code → câu hỏi đã cắt gọn`.
+
+---
+
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**

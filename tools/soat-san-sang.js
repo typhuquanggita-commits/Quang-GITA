@@ -216,11 +216,17 @@ if (kg.thieuKho) {
      việc của chủ hệ — nên nó tính vào `thieu`, không tính vào `nhacNho`.
      Đây chính là chỗ sổ TR_CHUA từng mục: việc xong rồi mà lời khai còn
      nguyên, và vài bản sau không ai phân biệt được dòng nào thật. */
+  /* Không phải sổ nào cũng có ô `ma` — BLV, BV, CS, SV, T5P dựng theo
+     lối "hỏi rồi ghi câu trả lời cạnh", không đánh mã. Lấy thẳng m.muc.ma
+     thì mấy sổ ấy in ra chữ "undefined", và người đọc không biết dòng
+     nào trong sổ đang bị nói tới — tức là câu báo đúng mà vô dụng. */
+  const ten = (x) => x.ma || String(x.hoi || x.t || x.viec || x.o || '')
+    .slice(0, 60) || '(mục không tên)';
   docRa.forEach(s => s.muc.forEach(m => {
     if (m.ket.trang === 'hong') {
-      dat(false, m.muc.ma + ' khai sai đường đo', m.ket.vi);
+      dat(false, ten(m.muc) + ' khai sai đường đo', m.ket.vi);
     } else if (m.ket.trang === 'xong') {
-      dat(false, m.muc.ma + ' ĐÃ XONG mà vẫn nằm trong ' + s.so,
+      dat(false, ten(m.muc) + ' ĐÃ XONG mà vẫn nằm trong ' + s.so,
         'đo được ' + m.ket.so + ' — gỡ dòng ấy khỏi kho rồi đóng gói lại. ' +
         'Sổ chờ giữ việc đã xong thì lần sau không ai tin cả sổ.');
     }

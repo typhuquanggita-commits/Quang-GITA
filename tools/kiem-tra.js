@@ -5302,7 +5302,24 @@ const { chromium } = require(PW);
       } else {
         const dem45 = v => Array.isArray(v) ? v.length
           : (v && typeof v === 'object') ? Object.keys(v).length : (v === undefined ? 0 : 1);
-        const ma45 = x => (x && (x.ma || x.id || x.code)) || null;
+        /* ── ĐỊNH DANH KHÔNG CHỈ LÀ MỘT Ô TÊN `ma` ──
+           Bản đầu chỉ nhận ma · id · code. Mấy sổ chờ dựng theo lối
+           "hỏi rồi ghi câu trả lời cạnh" — BLV, BV, CS, SV, T5P — KHÔNG
+           đánh mã: câu hỏi chính là định danh, và nó ổn định vì viết lại
+           câu hỏi là viết lại mục.
+
+           Hậu quả của chỗ hẹp ấy lộ ra ở 9.99.61, lúc bốn mục đã trả lời
+           được tiễn sang sổ _DACHOT: mã không có nên phép soi không lần
+           được, và nó báo MẤT trong khi không mất chữ nào. Một phép kiểm
+           báo mất nhầm thì lần sau người ta tắt nó đi.
+
+           Nên định danh lùi dần: ma → id → code → câu hỏi đã cắt gọn. */
+        const ma45 = x => {
+          if (!x) return null;
+          if (x.ma || x.id || x.code) return x.ma || x.id || x.code;
+          const cau = x.hoi || x.t || x.viec;
+          return cau ? 'hoi:' + String(cau).replace(/\s+/g, ' ').trim().slice(0, 80) : null;
+        };
 
         const bienMat = Object.keys(CU).filter(k => NAY[k] === undefined);
         bao(!bienMat.length,
@@ -6777,7 +6794,10 @@ const { chromium } = require(PW);
       bao(!ng.soiPhanKhuc.length && !ng.soiNgonTu.length && ng.batTuCam,
         'sáu phân khúc trỏ vào chặng CÓ THẬT ở bảng học phí, và mọi câu nói với gia đình đi qua ĐÚNG máy quét ngôn từ của bức tranh hành trình — dựng máy quét thứ hai thì rồi sẽ có ngày hai máy lệch nhau, và lúc ấy chuẩn ngôn từ của Học viện có hai bản',
         ng.soiPhanKhuc.join(' ') + ng.soiNgonTu.join(' ') || '6/6 chặng thật · không câu nào phạm từ cấm');
-      bao(ng.soChoChu === 2 && ng.choChuDuCot && ng.tnTuyetDoi && ng.manCoTuChoi,
+      /* MỘT, không phải hai: CC-GOI (năm gói học phí) đã tiễn sang
+         TV_DACHOT ở 9.99.61 — giá năm chặng chốt từ 9.94, mà mục vẫn
+         nằm trong sổ chờ và còn tự mô tả là "đang là null". */
+      bao(ng.soChoChu === 1 && ng.choChuDuCot && ng.tnTuyetDoi && ng.manCoTuChoi,
         'hai câu CHỜ CHỦ HỆ khai đủ bốn cột, và kỳ thi tốt nghiệp có một tiêu chí TUYỆT ĐỐI: gặp ca có cờ đỏ mà vẫn bán được đơn ấy là trượt cả kỳ — ba mục kia đo kỹ năng và kỹ năng thì học được, mục ấy đo chỗ người ta chịu mất một đơn hàng, và chỗ ấy không dạy được bằng cách cho qua',
         ng.soChoChu + ' câu chờ chủ hệ');
     }
@@ -12330,7 +12350,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         if (!(cc.so >= 4 && cc.tong >= 10))
           lech.push('bộ đo đọc ra quá ít sổ: ' + cc.so + ' sổ · ' + cc.tong + ' mục');
       }
-      const kieu = ['coDong', 'dem', 'duTruong', 'duSo'];
+      const kieu = ['coDong', 'daChot', 'dem', 'duSo', 'duTruong'];
       if (JSON.stringify(kho.ccKieu) !== JSON.stringify(kieu.slice().sort()))
         lech.push('G.CC_KIEU đổi hình: ' + (kho.ccKieu || []).join(','));
     }

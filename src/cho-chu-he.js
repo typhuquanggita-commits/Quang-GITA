@@ -44,7 +44,20 @@ G.CC_KIEU = {
      Dùng khi bản đặc tả nói "phải có tám cái" mà kho mới chép bảy —
      khai thêm một ô "đang có 7" là dựng bản thứ hai của một con số
      đếm được, và bản thứ hai thì mục. */
-  duSo: 'Một danh sách phải dài tới một con số đích. Xong khi đếm đủ.'
+  duSo: 'Một danh sách phải dài tới một con số đích. Xong khi đếm đủ.',
+  /* Thêm ở 9.99.61, và nó bắt một lớp rữa KHÁC hẳn bốn kiểu trên.
+     Bốn kiểu trên đo một kho BÊN NGOÀI mục. Kiểu này đo chính MỤC:
+     một câu hỏi mang sẵn câu trả lời trong ô của nó thì nó đã xong.
+
+     Vì sao cần: sổ chờ dựng theo lối "hỏi rồi ghi câu trả lời ngay
+     cạnh" — BLV, BV, SV, T5P đều thế. Chủ hệ trả lời, người viết ghi
+     vào ô `daChot` hoặc `traLoi`, rồi KHÔNG AI GỠ mục ấy khỏi sổ. Sau
+     vài bản thì sổ có cả câu đã trả lời lẫn câu chưa, và người đọc
+     không phân biệt được — lúc ấy cả sổ thành vô dụng, đúng như
+     TR_CHUA đã từng mục ở 9.99.7.
+
+     Ba mục đầu tiên nó bắt được đều đã trả lời từ bản 9.59. */
+  daChot: 'Một câu hỏi mang sẵn câu trả lời trong ô của chính nó. Xong khi ô ấy có chữ.'
 };
 
 /* Lấy giá trị lồng: 'muc' hoặc 'a.b'. Trả về undefined nếu đứt đường —
@@ -69,8 +82,21 @@ function lay(goc, duong) {
 G.ccDoMuc = function (muc) {
   if (!muc || typeof muc !== 'object') return { trang: 'chuaKhai' };
   if (muc.khongDoDuoc) return { trang: 'khongDo', vi: muc.khongDoDuoc };
-  if (!muc.do || !muc.do.tai || !muc.do.kieu) return { trang: 'chuaKhai' };
+  if (!muc.do || !muc.do.kieu) return { trang: 'chuaKhai' };
 
+  /* Kiểu `daChot` đo CHÍNH MỤC, nên nó không khai `tai` — và phải xét
+     TRƯỚC phép đòi `tai` ở dưới. Đặt sau thì mọi mục daChot rơi vào
+     nhánh "chưa khai", tức là kiểu mới không bao giờ chạy. */
+  if (muc.do.kieu === 'daChot') {
+    var o = String(lay(muc, muc.do.truong || 'daChot') || '').trim();
+    return o
+      ? { trang: 'xong', so: 'đã trả lời',
+          vi: o === 'true' ? 'ô ' + (muc.do.truong || 'daChot') + ' đã bật' : o.slice(0, 160) }
+      : { trang: 'chua', so: 'chưa trả lời',
+          con: 'ô ' + (muc.do.truong || 'daChot') + ' còn trống' };
+  }
+
+  if (!muc.do.tai) return { trang: 'chuaKhai' };
   var d = muc.do;
   var kho = G[d.tai];
   if (kho === undefined) {

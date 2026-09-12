@@ -279,6 +279,10 @@ const NGHE = [
   'TG_TRUY',
   /* 9.99.58 — kênh phát · giờ vàng · gỡ bài */
   'TG_KENH', 'TG_GIO_VANG', 'TG_GIO_LUAT', 'TG_GO_LY_DO', 'TG_GO_LUAT',
+  /* 9.99.61 — khung điền cho sổ chờ, và sổ đã chốt gỡ ra từ sổ chờ */
+  'BC_BIKIP', 'CS_MOC_NAM', 'CS_MOC_KHUON', 'PL_TEN_BAOHO', 'PL_TEN_KHUON',
+  'SG_BIA_CHOT', 'SG_BIA_KHUON',
+  'BLV_DACHOT', 'BV_DACHOT', 'TV_DACHOT',
   /* 9.99.59 — đo phễu · sổ truy vết · mười quy trình ứng phó */
   'TG_UNGPHO', 'TG_UNGPHO_LUAT', 'TG_PHEU', 'TG_PHEU_LUAT',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
