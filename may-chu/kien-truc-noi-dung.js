@@ -1170,15 +1170,23 @@ export const BAN_CHEP_MD = {MD_TUNGU, MA_CHAN: Object.keys(soatMienDichMay(null)
    nhắc thì đọc xong ai cũng gật, rồi sáu tháng sau có người chép một
    câu vào một tờ rơi và không ai nhớ ra dòng ấy.
 
-   Nay nó là một CỬA. Máy chủ không đọc được kho, nên nó không kiểm được
-   nội dung — nó kiểm LỜI KHAI đi kèm: mục nào muốn trích phải gửi lên
-   cả `trichDuoc` lẫn `nguon`, và cả hai phải do người khai chứ không
-   phải do máy điền.
+   Nay nó là một CỬA.
 
-   Cả năm mục trong kho hiện VẮNG hai ô ấy, nên cửa này hiện đóng với
-   cả năm. Đó là mặc định đúng: trích một câu của nghề khác mà không dẫn
-   nguồn là chuyện Học viện phải chịu trách nhiệm, không phải chuyện
-   một cái nút cho phép.
+   ══ VÀ ĐÂY LÀ CHỖ BẢN 9.99.48 CÒN HỞ, SỬA Ở 9.99.49 ══
+
+   Bản trước cửa này đọc hai ô `trichDuoc` và `nguon` từ CHÍNH LƯỢT GỌI
+   của máy khách. Hai chuyện hỏng cùng lúc:
+
+     · Chủ hệ không có chỗ nào để chốt. Chốt nghĩa là sửa kho gốc rồi
+       phát hành lại — nên suốt ba bản không mục nào được chốt, và sổ
+       chờ vẫn ghi "đang chờ chủ hệ" trong khi thật ra là đang chờ MỘT
+       CÁI NÚT chưa ai dựng.
+     · Cửa tin lời máy khách. Gửi lên trichDuoc:true là qua. Đúng lớp
+       lỗi "lọc trên màn hình không phải bảo vệ dữ liệu".
+
+   Nay quyết định nằm ở sổ chotTrichNghe trong máy chủ: chủ hệ bấm chốt
+   ở màn Biên soạn, máy chủ ghi, và cửa này đọc SỔ chứ không đọc lượt
+   gọi. Máy khách gửi lên đúng một thứ: danh sách MÃ muốn trích.
 
    Chỉ R01–R02 mở được — cùng ngưỡng với cấp quyền ký. */
 export async function xuatChuanNghe(y, env, db, hoSo) {
@@ -1187,22 +1195,27 @@ export async function xuatChuanNghe(y, env, db, hoSo) {
       vi: 'Chỉ R01–R02 trích được chuẩn nghề ra ngoài. Đây là lời khai của ' +
           'Học viện về nguồn gốc một câu chữ.'};
 
-  const ds = Array.isArray(y.muc) ? y.muc : [];
+  /* Nhận cả hai lối gọi: mảng mã, hoặc mảng bản ghi có ô `ma`. Lối thứ
+     hai là lối cũ — nhận nó để bản web cũ không gãy, nhưng chỉ lấy ô
+     `ma`, mọi ô khác của lượt gọi bị BỎ. */
+  const ds = (Array.isArray(y.muc) ? y.muc : [])
+    .map(m => String((m && m.ma) || m || '').trim()).filter(Boolean);
   if (!ds.length)
     return {ok: false, error: 'TRONG', vi: 'Chưa chọn mục nào.'};
 
+  const daChot = await dsChotTrichNghe(db);
   const chan = [], qua = [];
-  ds.forEach(m => {
-    const co = m && m.trichDuoc === true;
-    const nguon = String((m && m.nguon) || '').trim();
-    if (!co) chan.push({ma: (m && m.ma) || '?', vi: 'chưa chốt được trích'});
-    else if (nguon.length < 10)
-      chan.push({ma: m.ma, vi: 'đã chốt được trích nhưng CHƯA ghi nguồn thật'});
-    else qua.push({ma: m.ma, nguon});
+  ds.forEach(ma => {
+    const c = daChot[ma];
+    if (!c) chan.push({ma, vi: 'chưa có lượt chốt nào trong sổ'});
+    else if (!c.trichDuoc) chan.push({ma, vi: 'chủ hệ đã chốt là KHÔNG được trích'});
+    else if (String(c.nguon || '').trim().length < 10)
+      chan.push({ma, vi: 'đã chốt được trích nhưng CHƯA ghi nguồn thật'});
+    else qua.push({ma, nguon: c.nguon, choti: c.chotLuc, boiAi: c.boiAi});
   });
 
   await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
-    viec: 'xuatChuanNghe', doiTuong: ds.map(m => (m && m.ma) || '?').join(','),
+    viec: 'xuatChuanNghe', doiTuong: ds.join(','),
     chiTiet: 'qua ' + qua.length + ' · chặn ' + chan.length});
 
   if (chan.length)
@@ -1215,6 +1228,79 @@ export async function xuatChuanNghe(y, env, db, hoSo) {
 
   return {ok: true, qua,
     vi: qua.length + ' mục đã chốt và có nguồn — trích được, kèm nguồn ghi ở trên.'};
+}
+
+/* ══ SỔ CHỐT TRÍCH — ND-04 ══
+
+   Chỉ-thêm. Đổi ý thì ghi dòng mới; dòng mới nhất của một mã là dòng
+   đang có hiệu lực. Không sửa, không xoá — một lời khai về nguồn gốc
+   câu chữ mà sửa được thì nó không còn là lời khai.
+
+   Chỉ R01 chốt được, KHÔNG phải R01–R02 như cửa xuất. Hai ngưỡng khác
+   nhau có chủ ý: mở cửa lấy một bản trích là việc vận hành, còn nói
+   "câu này của Học viện được phép dẫn ra ngoài, dẫn theo nguồn này" là
+   một lời khai chỉ chủ hệ đứng tên được. */
+const CAP_CHOT_TRICH = 1;
+
+export async function chotTrichNghe(y, env, db, hoSo) {
+  if ((BAC[hoSo.role] || 99) > CAP_CHOT_TRICH)
+    return {ok: false, error: 'KHONGQUYEN',
+      vi: 'Chỉ Super Admin chốt được mục chuẩn nghề nào được trích ra ngoài. ' +
+          'Đây là lời khai của Học viện về nguồn gốc một câu chữ, không phải ' +
+          'một thao tác vận hành.'};
+
+  const ma = String(y.ma || '').trim();
+  const duoc = y.trichDuoc === true || y.trichDuoc === 1 || y.trichDuoc === '1';
+  const nguon = String(y.nguon || '').trim();
+  const lyDo = String(y.lyDo || '').trim();
+
+  if (!ma) return {ok: false, error: 'THIEUMA', vi: 'Chưa nói chốt mục nào.'};
+  if (lyDo.length < 10)
+    return {ok: false, error: 'THIEULYDO',
+      vi: 'Lượt chốt phải nói vì sao. Cùng luật với cấp quyền ký: một quyết ' +
+          'định không lý do thì sáu tháng sau không ai dám đổi, vì không ai ' +
+          'biết vì sao nó có ở đó.'};
+  if (duoc && nguon.length < 10)
+    return {ok: false, error: 'THIEUNGUON',
+      vi: 'Chốt ĐƯỢC TRÍCH thì phải có nguồn thật để dẫn. Chốt được trích mà ' +
+          'không dẫn được nguồn là đúng thứ cửa xuất đang chặn — chốt xong ' +
+          'vẫn chặn thì lượt chốt ấy không làm được gì.'};
+
+  await db.prepare(
+    'INSERT INTO chotTrichNghe (id,ma,trichDuoc,nguon,lyDo,boiAi,vaiLuc,chotLuc) ' +
+    'VALUES (?,?,?,?,?,?,?,?)')
+    .bind(maMoi(), ma, duoc ? 1 : 0, duoc ? nguon : '', lyDo,
+      hoSo.username, hoSo.role, new Date().toISOString()).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.username,
+    viec: 'chotTrichNghe', doiTuong: ma,
+    chiTiet: (duoc ? 'ĐƯỢC TRÍCH · ' + nguon : 'KHÔNG được trích') + ' · ' + lyDo});
+
+  return {ok: true, ma, trichDuoc: duoc,
+    vi: duoc ? 'Đã chốt: mục ' + ma + ' được trích, dẫn theo nguồn đã ghi.'
+             : 'Đã chốt: mục ' + ma + ' KHÔNG được trích ra ngoài.'};
+}
+
+/* Trả về bản đồ mã → lượt chốt MỚI NHẤT. Dùng cho cả cửa xuất lẫn màn
+   hình, nên nó là hàm thường chứ không phải cửa — cửa gọi nó, màn hình
+   gọi qua cửa dsChotTrich. */
+export async function dsChotTrichNghe(db) {
+  const r = await db.prepare(
+    'SELECT ma, trichDuoc, nguon, lyDo, boiAi, vaiLuc, chotLuc FROM chotTrichNghe ' +
+    'ORDER BY chotLuc ASC').all();
+  const ra = {};
+  ((r && r.results) || []).forEach(d => {
+    ra[d.ma] = {ma: d.ma, trichDuoc: !!d.trichDuoc, nguon: d.nguon,
+      lyDo: d.lyDo, boiAi: d.boiAi, vaiLuc: d.vaiLuc, chotLuc: d.chotLuc};
+  });
+  return ra;
+}
+
+export async function dsChotTrich(y, env, db, hoSo) {
+  if ((BAC[hoSo.role] || 99) > CAP_QUYEN_KY)
+    return {ok: false, error: 'KHONGQUYEN', vi: 'Chỉ R01–R02 đọc được sổ chốt trích.'};
+  const ds = await dsChotTrichNghe(db);
+  return {ok: true, ds, so: Object.keys(ds).length};
 }
 
 export const BAN_CHEP = {KHOI, DIEM, BAC_DIEM, RONG, LOI_THAY, NHAN_NGUON,

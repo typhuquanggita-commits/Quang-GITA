@@ -159,6 +159,108 @@ dat(soEnc >= 8, 'có đủ gói kho đã mã hoá', soEnc + ' tệp .enc');
 
 /* ═══════════ D · VIỆC CHỜ NGƯỜI, KHÔNG CHỜ MÃ ═══════════ */
 console.log('\nD · CHỜ NGƯỜI, KHÔNG CHỜ MÃ');
+
+/* ── ĐỌC THẲNG SỔ CHỜ TRONG KHO, KHÔNG KHAI TAY ──
+
+   Phần này dựng ở 9.99.49 vì ba dòng nhac() gõ tay bên dưới đã bắt đầu
+   mục đúng theo cách phần A nói: kho có mười hai sổ _CHOCHU với hàng
+   chục mục chờ chủ hệ, mà bộ soát chỉ kể ba cái ai đó nhớ chép sang.
+
+   Nên chỗ này nạp kho gốc vào một cái window giả rồi gọi ĐÚNG bộ đo mà
+   màn Biên soạn đang dùng — src/cho-chu-he.js. Hai chỗ, một phép đo.
+   Viết phép đo lần thứ hai ở đây là cách chắc nhất để hai chỗ nói hai
+   con số khác nhau, và lúc ấy không ai tin chỗ nào. */
+function napKhoGiaLap() {
+  const vm = require('vm');
+  const thuMuc = path.join(GOC, 'kho-goc');
+  if (!fs.existsSync(thuMuc)) return { thieuKho: true };
+  /* Thứ tự A–Z, y như lúc nạp thật: dấu '-' đứng trước dấu '.' */
+  const ds = fs.readdirSync(thuMuc).filter(f => /\.js$/.test(f)).sort();
+  const hop = { window: {}, document: undefined, console: { log() {}, warn() {}, error() {} } };
+  hop.window.G = {};
+  hop.globalThis = hop;
+  vm.createContext(hop);
+  let hongTep = [];
+  for (const f of ds) {
+    try {
+      vm.runInContext(fs.readFileSync(path.join(thuMuc, f), 'utf8'), hop, { filename: f });
+    } catch (e) { hongTep.push(f); }
+  }
+  try {
+    vm.runInContext(fs.readFileSync(path.join(GOC, 'src', 'cho-chu-he.js'), 'utf8'),
+      hop, { filename: 'cho-chu-he.js' });
+  } catch (e) { return { hongBoDo: e.message }; }
+  return { G: hop.window.G, hongTep };
+}
+
+const kg = napKhoGiaLap();
+if (kg.thieuKho) {
+  nhac('CHƯA ĐỌC ĐƯỢC SỔ CHỜ', 'không có thư mục kho-goc/ ở máy này — ' +
+    'máy dựng bản công khai không giữ nội dung gốc, và đó là đúng. ' +
+    'Chạy bộ soát ở máy người biên soạn để thấy phần này.');
+} else if (kg.hongBoDo) {
+  dat(false, 'nạp được bộ đo src/cho-chu-he.js', kg.hongBoDo);
+} else {
+  const g = kg.G;
+  if (kg.hongTep.length) {
+    nhac(kg.hongTep.length + ' tệp kho không nạp được trong bộ soát',
+      kg.hongTep.slice(0, 3).join(' · ') + ' — sổ chờ đọc ra có thể còn thiếu');
+  }
+  const docRa = g.ccDocSo();
+  const tt = g.ccTomTat(docRa);
+  console.log('  ' + tt.so + ' sổ chờ · ' + tt.tong + ' mục · máy đo được ' +
+    (tt.chua + tt.xong) + ', không đo được ' + tt.khongDo +
+    ', chưa khai cách đo ' + tt.chuaKhai);
+
+  /* Mục đã XONG mà vẫn nằm trong sổ là lỗi của người làm, không phải
+     việc của chủ hệ — nên nó tính vào `thieu`, không tính vào `nhacNho`.
+     Đây chính là chỗ sổ TR_CHUA từng mục: việc xong rồi mà lời khai còn
+     nguyên, và vài bản sau không ai phân biệt được dòng nào thật. */
+  docRa.forEach(s => s.muc.forEach(m => {
+    if (m.ket.trang === 'hong') {
+      dat(false, m.muc.ma + ' khai sai đường đo', m.ket.vi);
+    } else if (m.ket.trang === 'xong') {
+      dat(false, m.muc.ma + ' ĐÃ XONG mà vẫn nằm trong ' + s.so,
+        'đo được ' + m.ket.so + ' — gỡ dòng ấy khỏi kho rồi đóng gói lại. ' +
+        'Sổ chờ giữ việc đã xong thì lần sau không ai tin cả sổ.');
+    }
+  }));
+
+  /* Mục còn chờ THẬT: in kèm con số và chỗ điền. Một dòng nhắc không
+     nói điền ở đâu thì người đọc phải đi hỏi, và thường là không hỏi. */
+  docRa.forEach(s => s.muc.forEach(m => {
+    if (m.ket.trang !== 'chua') return;
+    nhac(m.muc.ma + ' · ' + m.muc.viec,
+      'còn ' + m.ket.con + ' (' + m.ket.so + ')' +
+      (m.muc.noiDien ? ' — điền tại: ' + m.muc.noiDien : ''));
+  }));
+
+  /* Mục máy không đo được: kể tên thôi, không kể lý do. Lý do dài và
+     nằm sẵn trong kho; in cả ra đây thì phần D dài hơn cả bộ soát, và
+     một báo cáo dài là một báo cáo không ai đọc tới cuối. */
+  const khongDo = [];
+  docRa.forEach(s => s.muc.forEach(m => {
+    if (m.ket.trang === 'khongDo') khongDo.push(m.muc.ma);
+  }));
+  if (khongDo.length) nhac('Máy không đo được ' + khongDo.length + ' mục',
+    khongDo.join(' · ') + ' — từng mục tự khai vì sao ở ô `khongDoDuoc`; ' +
+    'xem màn Biên soạn nội dung → ngăn Chờ chủ hệ.');
+
+  /* Gộp theo SỔ chứ không kể từng mục: những sổ cũ phần lớn không có ô
+     `ma`, nên kể từng mục ra một dãy "BLV_CHOCHU · BLV_CHOCHU · …" —
+     dài, và không nói thêm gì. */
+  const chuaKhai = [];
+  let demChuaKhai = 0;
+  docRa.forEach(s => {
+    const n = s.muc.filter(m => m.ket.trang === 'chuaKhai').length;
+    if (n) { chuaKhai.push(s.so + ' (' + n + ')'); demChuaKhai += n; }
+  });
+  if (demChuaKhai) nhac(demChuaKhai + ' mục chưa khai cách đo',
+    chuaKhai.join(' · ') +
+    ' — sổ dựng trước 9.99.49. Chưa khai thì bộ soát không tự đóng được mục ' +
+    'ấy khi nó xong, và nó nằm lại mãi.');
+}
+
 nhac('Đường lấy sao kê ngân hàng',
   'ba đường: webhook của ngân hàng · cổng thanh toán · nhập tay từ sao kê. ' +
   'Cửa nganHangBao đã sẵn cho cả ba; chọn đường nào là quyết định của chủ hệ.');

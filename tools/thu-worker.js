@@ -3744,18 +3744,51 @@ bao(maBanChep.length === 24 &&
 {
   const chuaChot = await ndMod.xuatChuanNghe({muc: [{ma: 'CN2'}]}, env, env.CSDL, saR01);
   bao(!chuaChot.ok && chuaChot.error === 'CHUACHOT' &&
-      chuaChot.chan[0].vi === 'chưa chốt được trích',
-    'ND-04 — mục CHƯA chốt thì KHÔNG trích ra ngoài được. Cả năm mục trong kho đang vắng ô trichDuoc, nên cửa này hiện đóng với cả năm — đó là mặc định đúng');
-  const chotThieuNguon = await ndMod.xuatChuanNghe(
-    {muc: [{ma: 'CN2', trichDuoc: true, nguon: 'ICF'}]}, env, env.CSDL, saR01);
-  bao(!chotThieuNguon.ok && /CHƯA ghi nguồn/.test(chotThieuNguon.chan[0].vi),
-    'chốt được trích mà nguồn ghi qua loa thì vẫn chặn — trích một câu của nghề khác mà không dẫn được nguồn là chuyện Học viện phải chịu trách nhiệm');
-  const du = await ndMod.xuatChuanNghe({muc: [{ma: 'CN2', trichDuoc: true,
+      chuaChot.chan[0].vi === 'chưa có lượt chốt nào trong sổ',
+    'ND-04 — mục CHƯA chốt thì KHÔNG trích ra ngoài được. Sổ chốt đang rỗng nên cửa đóng với cả năm mục — đó là mặc định đúng');
+
+  /* ══ CHỖ BẢN 9.99.48 CÒN HỞ ══
+     Cửa cũ đọc trichDuoc và nguon THẲNG TỪ LƯỢT GỌI, nên máy khách tự
+     khai là qua. Phép thử này gửi đúng lời khai gian ấy và đòi cửa vẫn
+     đóng — nó chính là phép bắt được lỗi cũ. */
+  const gian = await ndMod.xuatChuanNghe({muc: [{ma: 'CN2', trichDuoc: true,
     nguon: 'ICF Core Competencies 2019, mục 4 — Cultivates Trust and Safety'}]},
     env, env.CSDL, saR01);
-  bao(du.ok && du.qua.length === 1, 'chốt đủ hai ô thì trích được, kèm nguồn');
-  bao((await ndMod.xuatChuanNghe({muc: [{ma: 'CN2', trichDuoc: true,
-        nguon: 'ICF Core Competencies 2019, mục 4'}]}, env, env.CSDL,
+  bao(!gian.ok && gian.error === 'CHUACHOT',
+    'máy khách TỰ KHAI đã chốt thì cửa vẫn đóng — quyết định đọc từ SỔ MÁY CHỦ, không đọc lượt gọi. Bản 9.99.48 đọc thẳng lượt gọi, nên gửi trichDuoc:true là qua cửa: đúng lớp lỗi "lọc trên màn hình không phải bảo vệ dữ liệu"');
+
+  /* ── CỬA CHỐT ── */
+  bao((await ndMod.chotTrichNghe({ma: 'CN2', trichDuoc: true,
+        nguon: 'ICF Core Competencies 2019, mục 4', lyDo: 'trích cho tờ rơi giới thiệu'},
+        env, env.CSDL, {uid: 'U-r02', username: 'r02@gita365.vn', role: 'R02'}))
+        .error === 'KHONGQUYEN',
+    'chỉ Super Admin CHỐT được — ngưỡng chốt chặt hơn ngưỡng xuất (R01–R02) có chủ ý: lấy một bản trích là việc vận hành, còn nói "câu này được phép dẫn ra ngoài" là một lời khai phải có người đứng tên');
+  bao((await ndMod.chotTrichNghe({ma: 'CN2', trichDuoc: true,
+        nguon: 'ICF Core Competencies 2019, mục 4'}, env, env.CSDL, saR01))
+        .error === 'THIEULYDO',
+    'lượt chốt phải nói vì sao — một quyết định không lý do thì sáu tháng sau không ai dám đổi, vì không ai biết vì sao nó có ở đó');
+  bao((await ndMod.chotTrichNghe({ma: 'CN2', trichDuoc: true, nguon: 'ICF',
+        lyDo: 'trích cho tờ rơi giới thiệu'}, env, env.CSDL, saR01))
+        .error === 'THIEUNGUON',
+    'chốt ĐƯỢC TRÍCH mà nguồn ghi qua loa thì chặn ngay ở cửa chốt — chốt xong mà cửa xuất vẫn chặn thì lượt chốt ấy không làm được gì');
+
+  const chot = await ndMod.chotTrichNghe({ma: 'CN2', trichDuoc: true,
+    nguon: 'ICF Core Competencies 2019, mục 4 — Cultivates Trust and Safety',
+    lyDo: 'trích cho tờ rơi giới thiệu chương trình coach'}, env, env.CSDL, saR01);
+  bao(chot.ok && chot.trichDuoc === true, 'chủ hệ chốt được, và lượt chốt vào sổ');
+
+  const du = await ndMod.xuatChuanNghe({muc: [{ma: 'CN2'}]}, env, env.CSDL, saR01);
+  bao(du.ok && du.qua.length === 1 && /ICF Core/.test(du.qua[0].nguon),
+    'chốt xong thì trích được, và nguồn lấy từ SỔ chứ không lấy từ lượt gọi');
+
+  /* Sổ chỉ-thêm: đổi ý thì ghi dòng mới, và dòng mới nhất thắng. */
+  await ndMod.chotTrichNghe({ma: 'CN2', trichDuoc: false,
+    lyDo: 'rút lại vì bản quyền của ICF chưa rõ với ấn phẩm in'}, env, env.CSDL, saR01);
+  const rut = await ndMod.xuatChuanNghe({muc: [{ma: 'CN2'}]}, env, env.CSDL, saR01);
+  bao(!rut.ok && rut.chan[0].vi === 'chủ hệ đã chốt là KHÔNG được trích',
+    'chốt lại thì dòng MỚI NHẤT thắng, và dòng cũ vẫn nằm nguyên trong sổ — một lời khai về nguồn gốc câu chữ mà sửa được thì nó không còn là lời khai');
+
+  bao((await ndMod.xuatChuanNghe({muc: [{ma: 'CN2'}]}, env, env.CSDL,
         {uid: 'U-r05', username: 'r05@gita365.vn', role: 'R05'}))
         .error === 'KHONGQUYEN',
     'chỉ R01–R02 trích được — đây là lời khai của Học viện về nguồn gốc một câu chữ, không phải một cái nút');

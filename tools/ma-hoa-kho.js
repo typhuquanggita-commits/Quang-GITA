@@ -265,6 +265,8 @@ const NGHE = [
   'MD_MA_VB', 'MD_NHOM', 'MD_CHAN', 'MD_VIRUS', 'MD_CHOCHU',
   /* 9.99.48 — từ điển ngôn ngữ KL08 */
   'KL_MA_VB', 'KL_LOP', 'KL_THAY', 'KL_NGANKHO', 'KL_NHOM', 'KL_CHOCHU',
+  /* 9.99.49 — khung cho những mục còn chờ chủ hệ */
+  'KL_BIEUTUONG', 'MD_MAU_MA', 'MD_THUHANHVI', 'TG_IN_CHOT',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

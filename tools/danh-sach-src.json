@@ -123,6 +123,7 @@
     "src/phong-tai-chinh.js",
     "src/ve-thi-giac.js",
     "src/kien-truc-thi-giac.js",
+    "src/cho-chu-he.js",
     "src/bien-soan-noi-dung.js",
     "src/cua-truoc.js",
     "src/app.js",

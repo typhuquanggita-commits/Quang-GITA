@@ -1321,3 +1321,36 @@ CREATE TABLE IF NOT EXISTS quyenNoiDung (
 CREATE UNIQUE INDEX IF NOT EXISTS ix_qnd_mot ON quyenNoiDung (username, chucNang)
   WHERE thuHoiLuc IS NULL;
 CREATE INDEX IF NOT EXISTS ix_qnd_ten ON quyenNoiDung (username);
+
+-- ─────────────────────────────────────────────────────────────
+--  ND-04 · SỔ CHỐT TRÍCH CHUẨN NGHỀ — bản 9.99.49
+--
+--  Tới 9.99.48 cửa xuất chuẩn nghề CHẶN đúng, nhưng nó đọc hai ô
+--  `trichDuoc` và `nguon` từ CHÍNH LƯỢT GỌI của máy khách. Nghĩa là
+--  hai chuyện:
+--
+--    · Chủ hệ không có chỗ nào để chốt. Muốn chốt thì phải sửa kho
+--      gốc rồi phát hành lại — nên suốt ba bản không ai chốt mục nào.
+--    · Và cửa chặn ấy tin lời máy khách. Máy khách gửi trichDuoc:true
+--      là qua cửa. Đúng lớp lỗi "lọc trên màn hình không phải bảo vệ
+--      dữ liệu" đã hỏng ba lần trong kho này.
+--
+--  Sổ này đóng cả hai: quyết định nằm ở máy chủ, chỉ R01 ghi được, và
+--  cửa xuất đọc SỔ chứ không đọc lượt gọi.
+--
+--  Chỉ-thêm như kyNoiDung: đổi ý thì ghi dòng mới, không sửa dòng cũ.
+--  Một lời khai về nguồn gốc câu chữ mà sửa được thì nó không còn là
+--  lời khai.
+-- ─────────────────────────────────────────────────────────────
+CREATE TABLE IF NOT EXISTS chotTrichNghe (
+  id        TEXT PRIMARY KEY,
+  ma        TEXT NOT NULL,          -- mã mục trong G.KN_CHUAN_NGHE
+  trichDuoc INTEGER NOT NULL,       -- 1 được trích · 0 không được
+  nguon     TEXT NOT NULL,          -- dẫn theo nguồn nào; rỗng khi trichDuoc = 0
+  lyDo      TEXT NOT NULL,
+  boiAi     TEXT NOT NULL,
+  vaiLuc    TEXT NOT NULL,
+  chotLuc   TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS ix_ctn_ma ON chotTrichNghe (ma, chotLuc);

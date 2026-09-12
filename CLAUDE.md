@@ -164,7 +164,13 @@ kiểm câm trong kho này.
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**
 Nó đọc thẳng `may-chu/wrangler.toml`, hỏi Cloudflare đang giữ bí mật nào,
-và soi kho mã. Danh sách gõ tay thì MỤC: tới 9.99.7 chỗ này còn ghi
+soi kho mã, và **từ 9.99.49 đọc luôn mọi sổ `*_CHOCHU` trong kho** rồi đo
+từng mục bằng ô `do` mà chính mục ấy khai — nên một mục đã xong sẽ bị bắt
+là "ĐÃ XONG mà vẫn nằm trong sổ", và bộ kiểm đỏ cho tới khi gỡ. Sổ chờ chỉ
+dài ra chứ không ngắn đi là cách nó mục. Cùng phép đo ấy hiện ở màn *Biên
+soạn nội dung → ngăn Chờ chủ hệ* (`src/cho-chu-he.js`, một bản duy nhất).
+
+Danh sách gõ tay thì MỤC: tới 9.99.7 chỗ này còn ghi
 "điền hệ số lương ở `CV_HANG[].heSoGhiChu`" — mà `heSoGhiChu` chỉ là một
 dòng ghi chú, không phải chỗ điền được, và chỗ điền thật (bảng
 `heSoLuong`) tới 9.99.5 mới có.
@@ -182,6 +188,15 @@ Còn thật, tính tới 9.99.8:
   lương vẫn chấm điểm, phần tiền để trống chứ không phải 0.
 - Bốn ô còn lại của `G.TR_CHUA`: X-SHP · X-GOP · X-GP · X-DUTRU. Mục 74
   của bộ kiểm đối chiếu lời khai của sổ ấy với sổ thật mỗi lần chạy.
+- Sáu mục của bộ nội dung — **ND-01 · ND-02 · ND-03 · ND-04 · MD-01 ·
+  MD-02 · KL-01 · KL-02 · TG-01 · TG-02**. Đừng chép lại chúng ra đây:
+  `soat-san-sang.js` in ra cả con số lẫn **chỗ điền** của từng mục, và
+  ô `noiDien` nằm trong chính kho. Từ 9.99.49 mỗi mục có KHUNG để ghi
+  câu trả lời: `KL_BIEUTUONG` · `KL_NGANKHO.o` (23 ô, mỗi ô một lần
+  ngồi) · `MD_MAU_MA` · `MD_THUHANHVI` (10 trường, quyết từng trường
+  một) · `TG_IN_CHOT` · và sổ `chotTrichNghe` ở máy chủ cho ND-04.
+  Một mục chờ không có chỗ ghi thì nó không phải mục chờ — nó là một
+  lời than, và ND-04 đã đứng yên ba bản đúng vì thế.
 
 **Đã xong, đừng làm lại:** pháp nhân trong `LICENSE`/`NOTICE` (không còn
 chỗ trống nào), học phí từng tầng (chốt 9.94, mục 71 đối chiếu hai bản),

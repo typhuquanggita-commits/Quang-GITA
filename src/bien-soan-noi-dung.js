@@ -49,6 +49,7 @@ G.VIEWS = G.VIEWS || {};
     {ma: 'tudien',   ten: 'Từ điển',     ic: 'quote'},
     {ma: 'chuannghe',ten: 'Chuẩn nghề',   ic: 'crown'},
     {ma: 'hienphap', ten: 'Hiến pháp', ic: 'book'},
+    {ma: 'chochu',   ten: 'Chờ chủ hệ', ic: 'clock'},
     {ma: 'quyen',    ten: 'Quyền ký',  ic: 'lock'}
   ];
 
@@ -879,6 +880,49 @@ G.VIEWS = G.VIEWS || {};
   }
 
   /* ═══════════ NGĂN · CHUẨN NGHỀ ═══════════ */
+  /* ── Ô CHỐT TRÍCH · ND-04 ──
+     Chỉ Super Admin thấy ô này. Ngưỡng KHÁC với cửa xuất (R01–R02) có
+     chủ ý: lấy một bản trích là việc vận hành, còn nói "câu này được
+     phép dẫn ra ngoài, dẫn theo nguồn này" là một lời khai chỉ chủ hệ
+     đứng tên được. */
+  function oChotTrich(ma, daChot) {
+    var id = 'ct-' + ma;
+    return '<div style="padding:10px 0;border-top:1px solid var(--line)">' +
+      '<div class="sm" style="font-weight:600;margin-bottom:6px">' +
+      (daChot ? 'Chốt lại' : 'Chốt lượt đầu') + ' — sổ chỉ thêm, không sửa dòng cũ' +
+      '</div>' +
+      '<input id="' + id + '-nguon" class="inp" placeholder="Nguồn thật để dẫn — ' +
+        'bỏ trống nếu chốt là KHÔNG được trích" value="' +
+        h((daChot && daChot.nguon) || '') + '">' +
+      '<input id="' + id + '-lydo" class="inp mt" placeholder="Vì sao chốt như vậy ' +
+        '(ít nhất 10 chữ)">' +
+      '<div class="row mt" style="gap:8px;flex-wrap:wrap">' +
+      '<button class="btn primary" onclick="G.bsChotTrich(\'' + h(ma) + '\',true)">' +
+        ic('check') + 'Được trích</button>' +
+      '<button class="btn" onclick="G.bsChotTrich(\'' + h(ma) + '\',false)">' +
+        ic('x') + 'Không được trích</button>' +
+      '</div></div>';
+  }
+
+  G.bsChotTrich = function (ma, duoc) {
+    var nguon = oGiaTri('ct-' + ma + '-nguon').trim();
+    var lyDo = oGiaTri('ct-' + ma + '-lydo').trim();
+    if (lyDo.length < 10) {
+      U.toast('Lượt chốt phải nói vì sao, ít nhất 10 chữ.', 'err'); return;
+    }
+    if (duoc && nguon.length < 10) {
+      U.toast('Chốt được trích thì phải có nguồn thật. Chốt xong mà cửa vẫn ' +
+        'chặn thì lượt chốt ấy không làm được gì.', 'err');
+      return;
+    }
+    goi('chotTrichNghe', {ma: ma, trichDuoc: duoc, nguon: nguon, lyDo: lyDo})
+      .then(function (r) {
+        if (r && r.ok) G.bsChot = undefined;   /* nạp lại từ sổ, không tự đoán */
+        bao(r, (r && r.vi) || 'Đã chốt.');
+        veLai();
+      });
+  };
+
   function nganChuanNghe() {
     var o = '<div class="card"><b>Năm lĩnh vực, và ba mức chắc chắn khác nhau</b>' +
       '<p class="sm muted mt">Ô <b>Nghề đòi</b> là chuẩn hành nghề có sẵn NGOÀI ' +
@@ -886,22 +930,42 @@ G.VIEWS = G.VIEWS || {};
       'đã duyệt của GITA. Dùng để đối chiếu thì được; đưa vào một ấn phẩm thì phải ' +
       'dẫn nguồn thật. Hai ô còn lại neo vào kho đã duyệt.</p>' +
       '<p class="sm muted mt">Từ bản 9.99.46 mục <b>ND-04</b> không còn là một ' +
-      'dòng nhắc: cửa xuất chuẩn nghề CHẶN mọi mục chưa có ô <code>trichDuoc</code> ' +
-      'và ô <code>nguon</code>. Cả năm mục đang vắng hai ô ấy, nên hiện chưa mục ' +
-      'nào trích ra ngoài được — đó là mặc định đúng. Máy KHÔNG tự điền: đó là ' +
-      'lời khai của Học viện về nguồn gốc một câu chữ, và một lời khai máy tự ' +
-      'viết thì không ai chịu trách nhiệm được.</p></div>';
+      'dòng nhắc: cửa xuất chuẩn nghề CHẶN mọi mục chưa chốt được trích và chưa ' +
+      'ghi nguồn. Máy KHÔNG tự điền: đó là lời khai của Học viện về nguồn gốc ' +
+      'một câu chữ, và một lời khai máy tự viết thì không ai chịu trách nhiệm ' +
+      'được.</p>' +
+      '<p class="sm muted mt">Và từ bản <b>9.99.49</b> lượt chốt ấy có CHỖ GHI. ' +
+      'Trước đó quyết định phải sửa thẳng vào kho gốc rồi phát hành lại — nên ba ' +
+      'bản liền không mục nào được chốt, trong khi sổ chờ vẫn ghi "đang chờ chủ ' +
+      'hệ". Nay chủ hệ bấm chốt ngay ở đây, máy chủ ghi vào sổ chỉ-thêm, và cửa ' +
+      'xuất đọc SỔ ẤY chứ không đọc lượt gọi của máy khách.</p></div>';
+
+    if (G.bsChot === undefined) {
+      G.bsChot = null;
+      goi('dsChotTrich', {}).then(function (r) {
+        G.bsChot = (r && r.ok && r.ds) || {};
+        veLai();
+      });
+    }
+    var soChot = G.bsChot || {};
 
     (G.KN_CHUAN_NGHE || []).forEach(function (c) {
+      var ch = soChot[c.ma];
       o += U.sec(c.ma + ' · ' + c.linhVuc, c.neo || '');
       o += '<div class="card">' +
-        '<div class="row mb" style="gap:8px">' +
-        (c.trichDuoc === true
-          ? '<span class="chip" style="color:var(--ok)">trích ra ngoài ĐƯỢC</span>' +
-            '<span class="sm muted" style="align-self:center">nguồn: ' +
-              h(c.nguon || '(chưa ghi)') + '</span>'
-          : '<span class="chip" style="color:var(--bad)">CHƯA chốt · không trích ra ngoài được</span>') +
+        '<div class="row mb" style="gap:8px;flex-wrap:wrap">' +
+        (!ch
+          ? '<span class="chip" style="color:var(--bad)">CHƯA chốt · không trích ra ngoài được</span>'
+          : (ch.trichDuoc
+            ? '<span class="chip" style="color:var(--ok)">trích ra ngoài ĐƯỢC</span>' +
+              '<span class="sm muted" style="align-self:center">nguồn: ' +
+                h(ch.nguon || '(chưa ghi)') + '</span>'
+            : '<span class="chip" style="color:var(--bad)">đã chốt: KHÔNG được trích</span>')) +
+        (ch ? '<span class="sm muted" style="align-self:center">' +
+          h(ch.boiAi + ' · ' + String(ch.chotLuc || '').slice(0, 10)) + '</span>' : '') +
         '</div>' +
+        (ch ? '<p class="sm muted">Lý do đã ghi: ' + h(ch.lyDo || '') + '</p>' : '') +
+        (laChuHe() ? oChotTrich(c.ma, ch) : '') +
         '<div style="padding:7px 0"><span class="chip" style="color:var(--ink-3)">' +
           'NGHỀ ĐÒI · nguồn ngoài</span>' +
         '<div style="margin-top:6px;font-size:14.5px;line-height:1.6">' + h(c.ngheDoi) + '</div></div>' +
@@ -933,6 +997,89 @@ G.VIEWS = G.VIEWS || {};
           '<span style="color:var(--ok)">' + h(c.thay) + '</span>',
           '<span class="sm muted">' + h(c.vi || '') + '</span>'];
       }));
+    return o;
+  }
+
+  /* ═══════════ NGĂN · CHỜ CHỦ HỆ ═══════════
+
+     Ngăn này KHÔNG có bảng riêng. Nó gọi G.ccDocSo() — đúng bộ đo mà
+     tools/soat-san-sang.js gọi mỗi lần phát hành. Hai chỗ, một phép đo,
+     nên con số ở màn hình và con số lúc phát hành không bao giờ lệch.
+
+     Thứ tự hiện ra có chủ ý: việc CỦA NGƯỜI LÀM lên trước (mục khai sai
+     đường đo, mục đã xong mà quên gỡ), rồi mới tới việc của chủ hệ. Xếp
+     ngược lại thì chủ hệ đọc một danh sách có lẫn việc không phải của
+     mình, và lần thứ ba thì thôi đọc. */
+  function nganChoChu() {
+    if (!G.ccDocSo) {
+      return '<div class="card"><b>Chưa nạp được bộ đo sổ chờ</b>' +
+        '<p class="sm muted mt">Thiếu src/cho-chu-he.js.</p></div>';
+    }
+    var d = G.ccDocSo(), t = G.ccTomTat(d);
+
+    var o = '<div class="card"><b>' + t.tong + ' việc chờ người, trong ' + t.so +
+      ' sổ</b>' +
+      '<p class="sm muted mt">Đây là những việc <b>không chờ mã</b>. Máy đã làm ' +
+      'hết phần của máy ở từng mục, và dừng lại đúng chỗ cần một quyết định của ' +
+      'người. Mỗi mục nói rõ <b>điền ở đâu</b> — một dòng nhắc không nói chỗ điền ' +
+      'thì người đọc phải đi hỏi, và thường là không hỏi.</p>' +
+      '<div class="row mt" style="gap:8px;flex-wrap:wrap">' +
+      U.chip(t.chua + ' còn chờ · đo được', 'var(--warn)') +
+      U.chip(t.khongDo + ' máy không đo được', 'var(--ink-3)') +
+      U.chip(t.chuaKhai + ' sổ cũ chưa khai cách đo', 'var(--ink-3)') +
+      (t.xong ? U.chip(t.xong + ' ĐÃ XONG mà chưa gỡ', 'var(--bad)') : '') +
+      (t.hong ? U.chip(t.hong + ' khai sai đường đo', 'var(--bad)') : '') +
+      '</div></div>';
+
+    var loi = [];
+    d.forEach(function (s) {
+      s.muc.forEach(function (m) {
+        if (m.ket.trang === 'hong' || m.ket.trang === 'xong') loi.push({s: s.so, m: m});
+      });
+    });
+    if (loi.length) {
+      o += U.sec('Việc của người làm, không phải của chủ hệ',
+        'Bộ soát sẵn sàng tính những dòng này là CHỖ THIẾU, nên chúng chặn phát hành');
+      o += loi.map(function (x) {
+        return '<div class="card" style="border-color:var(--bad)">' +
+          '<b>' + h(x.m.muc.ma || x.s) + '</b> · ' + h(x.m.muc.viec || '') +
+          '<p class="sm mt" style="color:var(--bad)">' +
+          (x.m.ket.trang === 'xong'
+            ? 'Đo được ' + h(x.m.ket.so) + ' — việc đã xong mà mục vẫn nằm trong ' +
+              h(x.s) + '. Gỡ dòng ấy khỏi kho rồi đóng gói lại.'
+            : h(x.m.ket.vi || '')) + '</p></div>';
+      }).join('');
+    }
+
+    d.forEach(function (s) {
+      var conCho = s.muc.filter(function (m) { return m.ket.trang !== 'xong' && m.ket.trang !== 'hong'; });
+      if (!conCho.length) return;
+      o += U.sec(s.so, conCho.length + ' mục');
+      o += conCho.map(function (m) {
+        var k = m.ket, mu = m.muc;
+        var nhan = k.trang === 'chua'
+          ? U.chip(k.so + ' · ' + k.con, 'var(--warn)')
+          : (k.trang === 'khongDo'
+            ? U.chip('máy không đo được', 'var(--ink-3)')
+            : U.chip('chưa khai cách đo', 'var(--ink-3)'));
+        return '<div class="card">' +
+          '<div class="row mb" style="gap:8px;flex-wrap:wrap">' +
+          (mu.ma ? '<b>' + h(mu.ma) + '</b>' : '') + nhan + '</div>' +
+          (mu.viec ? '<div style="font-size:15px;font-weight:600">' + h(mu.viec) + '</div>' : '') +
+          '<p class="sm muted mt" style="line-height:1.65">' + h(mu.vi || mu.hoi || '') + '</p>' +
+          (mu.noiDien
+            ? '<p class="sm mt" style="color:var(--teal)">Điền tại: ' + h(mu.noiDien) + '</p>'
+            : '') +
+          (k.trang === 'khongDo'
+            ? '<p class="sm muted mt">Vì sao máy không đo được: ' + h(k.vi) + '</p>'
+            : '') +
+          (k.ten && k.ten.length
+            ? '<p class="sm muted mt">Còn thiếu: ' + h(k.ten.slice(0, 12).join(' · ')) +
+              (k.ten.length > 12 ? ' …' : '') + '</p>'
+            : '') +
+          '</div>';
+      }).join('');
+    });
     return o;
   }
 
@@ -1574,6 +1721,7 @@ G.VIEWS = G.VIEWS || {};
     if (G.bsNgan === 'tudien')   return o + nganTuDien();
     if (G.bsNgan === 'chuannghe')return o + nganChuanNghe();
     if (G.bsNgan === 'hienphap') return o + nganHienPhap();
+    if (G.bsNgan === 'chochu')   return o + nganChoChu();
     if (G.bsNgan === 'quyen' && capQuyenDuoc()) return o + nganQuyen();
     return o + nganSoan();
   };

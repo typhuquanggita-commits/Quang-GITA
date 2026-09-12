@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 97 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 98 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 128 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 129 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.48',
+  version: '9.99.49',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -1849,6 +1849,7 @@ U.P = {
   bell:'M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6Zm-2.5 16a2.5 2.5 0 0 0 5 0',
   quote:'M9 7c-2.8 0-5 2.2-5 5s2 4.5 4.5 4.5c.4 0 .8 0 1.2-.2-.6 1.8-2.2 3.2-4.2 3.7M19 7c-2.8 0-5 2.2-5 5s2 4.5 4.5 4.5c.4 0 .8 0 1.2-.2-.6 1.8-2.2 3.2-4.2 3.7',
   plus:'M12 5v14M5 12h14',
+  clock:'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-14v5.2l3.4 2',
   out:'M15 4h4v16h-4M11 8l-4 4 4 4M7 12h10'
 };
 U.ic = function(n,cls){
@@ -3585,6 +3586,8 @@ G.THUOC_CAP_PHEP = [
   'MD_MA_VB','MD_NHOM','MD_CHAN','MD_VIRUS','MD_CHOCHU',
   /* v9.99.48 — từ điển KL08 */
   'KL_MA_VB','KL_LOP','KL_THAY','KL_NGANKHO','KL_NHOM','KL_CHOCHU',
+  /* v9.99.49 — khung cho những mục còn chờ chủ hệ */
+  'KL_BIEUTUONG','MD_MAU_MA','MD_THUHANHVI','TG_IN_CHOT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -37941,6 +37944,174 @@ G.VIEWS = G.VIEWS || {};
 
 })();
 
+/* ═════════ src/cho-chu-he.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — ĐỌC SỔ CHỜ CHỦ HỆ, VÀ ĐO XEM CÒN CHỜ THẬT KHÔNG
+
+   ══ VÌ SAO CÓ TỆP NÀY ══
+
+   Kho có mười hai sổ mang đuôi _CHOCHU. Mỗi sổ ghi những việc chờ
+   người chứ không chờ mã. Cho tới bản 9.99.48 chúng chỉ là chữ: ai
+   không mở đúng màn ấy thì không bao giờ thấy, và một mục đã làm xong
+   vẫn nằm nguyên trong sổ vì không ai nhớ gỡ.
+
+   Một sổ chờ mà không ai gỡ thì sau vài bản nó có cả việc đã xong lẫn
+   việc chưa xong, và người đọc không phân biệt được — lúc ấy cả sổ
+   thành vô dụng, đúng như sổ TR_CHUA đã từng mục ở 9.99.7.
+
+   Nên tệp này làm hai việc:
+     · ĐỌC mọi sổ _CHOCHU trong kho, không khai tay tên sổ nào. Thêm
+       một sổ mới ở bản sau là nó tự có mặt.
+     · ĐO từng mục bằng chính ô `do` mà mục ấy tự khai, rồi nói thẳng:
+       còn chờ thật · đã xong mà quên gỡ · máy không đo được.
+
+   ══ VÌ SAO NÓ NẰM Ở src/ CHỨ KHÔNG NẰM Ở tools/ ══
+
+   Có HAI chỗ cần đo: màn Biên soạn (để chủ hệ thấy lúc đang làm) và
+   bộ soát sẵn sàng (để nhắc mỗi lần phát hành). Viết hai lần là dựng
+   hai bộ đo, và hai bộ đo rồi sẽ nói hai con số khác nhau.
+
+   Nên phép đo viết đúng một lần ở đây, thuần hàm — không đụng màn
+   hình, không đụng mạng — và cả hai chỗ cùng gọi. tools/soat-san-sang.js
+   nạp chính tệp này trong một cái window giả.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+
+/* ── BA KIỂU ĐO, KHÔNG CÓ KIỂU THỨ TƯ ──
+   Mỗi mục chờ khai `do.kieu` là một trong ba chữ này, hoặc khai
+   `khongDoDuoc` kèm lý do. Không khai gì cả cũng là một trạng thái, và
+   bộ đọc nói ra chứ không im — sổ cũ dựng trước 9.99.49 rơi vào đó. */
+G.CC_KIEU = {
+  coDong: 'Một kho đang rỗng. Xong khi nó có dòng đầu tiên.',
+  dem: 'Một bảng có cặp số cần/có. Xong khi mọi dòng đủ số.',
+  duTruong: 'Một bảng mà mỗi dòng còn thiếu vài ô. Xong khi mọi dòng đủ ô.'
+};
+
+/* Lấy giá trị lồng: 'muc' hoặc 'a.b'. Trả về undefined nếu đứt đường —
+   đứt đường là lỗi khai báo, và bộ đọc phải nói ra chứ không trả 0. */
+function lay(goc, duong) {
+  if (!duong) return goc;
+  var cur = goc;
+  var phan = String(duong).split('.');
+  for (var i = 0; i < phan.length; i++) {
+    if (cur === null || cur === undefined) return undefined;
+    cur = cur[phan[i]];
+  }
+  return cur;
+}
+
+/* ── ĐO MỘT MỤC ──
+   Trả về một trong bốn trạng thái, và không bao giờ đoán:
+     xong       đo được, và đã đủ → mục này phải GỠ khỏi sổ
+     chua       đo được, còn thiếu → kèm con số cụ thể
+     khongDo    mục tự khai là máy không đo được, kèm lý do
+     chuaKhai   mục chưa khai gì cả — sổ cũ, hoặc người viết quên */
+G.ccDoMuc = function (muc) {
+  if (!muc || typeof muc !== 'object') return { trang: 'chuaKhai' };
+  if (muc.khongDoDuoc) return { trang: 'khongDo', vi: muc.khongDoDuoc };
+  if (!muc.do || !muc.do.tai || !muc.do.kieu) return { trang: 'chuaKhai' };
+
+  var d = muc.do;
+  var kho = G[d.tai];
+  if (kho === undefined) {
+    return { trang: 'hong', vi: 'Mục khai đo tại G.' + d.tai + ' — không có kho ấy.' };
+  }
+  if (!G.CC_KIEU[d.kieu]) {
+    return { trang: 'hong', vi: 'Kiểu đo "' + d.kieu + '" không có trong G.CC_KIEU.' };
+  }
+
+  if (d.kieu === 'coDong') {
+    var ds = lay(kho, d.truong);
+    if (!ds || typeof ds.length !== 'number') {
+      return { trang: 'hong', vi: 'Không thấy mảng G.' + d.tai +
+        (d.truong ? '.' + d.truong : '') + '.' };
+    }
+    return ds.length > 0
+      ? { trang: 'xong', so: ds.length + ' dòng' }
+      : { trang: 'chua', so: '0 dòng', con: 'chưa có dòng nào' };
+  }
+
+  var dong = d.trong ? lay(kho, d.trong) : kho;
+  if (!dong || typeof dong.length !== 'number') {
+    return { trang: 'hong', vi: 'Không thấy mảng G.' + d.tai +
+      (d.trong ? '.' + d.trong : '') + '.' };
+  }
+
+  if (d.kieu === 'dem') {
+    var can = 0, co = 0, oThieu = [];
+    for (var i = 0; i < dong.length; i++) {
+      var c = Number(dong[i][d.can]) || 0, v = Number(dong[i][d.co]) || 0;
+      can += c; co += v;
+      if (v < c) oThieu.push(dong[i].ma || dong[i].ten || ('#' + (i + 1)));
+    }
+    return oThieu.length === 0
+      ? { trang: 'xong', so: co + '/' + can }
+      : { trang: 'chua', so: co + '/' + can,
+          con: oThieu.length + '/' + dong.length + ' ô chưa đủ',
+          ten: oThieu };
+  }
+
+  /* duTruong */
+  var can2 = d.truong || [], du = 0, thieu = [];
+  for (var j = 0; j < dong.length; j++) {
+    var ok = true;
+    for (var k = 0; k < can2.length; k++) {
+      var g = dong[j][can2[k]];
+      if (g === undefined || g === null || g === '') { ok = false; break; }
+    }
+    if (ok) du++; else thieu.push(dong[j].ma || dong[j].truong || dong[j].ten || ('#' + (j + 1)));
+  }
+  return thieu.length === 0
+    ? { trang: 'xong', so: du + '/' + dong.length }
+    : { trang: 'chua', so: du + '/' + dong.length,
+        con: thieu.length + ' dòng còn thiếu ô ' + can2.join(' · '),
+        ten: thieu };
+};
+
+/* ── ĐỌC MỌI SỔ ──
+   Nhặt theo HÌNH TÊN, không theo danh sách khai tay. Một sổ mới tên
+   XX_CHOCHU là nó tự có mặt ở đây, ở màn Biên soạn, và ở bộ soát sẵn
+   sàng — không phải sửa ba chỗ.
+
+   Bỏ qua *_CHOCHU_LUAT: đó là luật của sổ, không phải mục chờ. */
+G.ccDocSo = function () {
+  var ra = [];
+  var ten = Object.keys(G).filter(function (k) { return /_CHOCHU$/.test(k); }).sort();
+  for (var i = 0; i < ten.length; i++) {
+    var so = G[ten[i]];
+    if (!so || typeof so.length !== 'number') continue;
+    var muc = [];
+    for (var j = 0; j < so.length; j++) {
+      muc.push({ muc: so[j], ket: G.ccDoMuc(so[j]) });
+    }
+    ra.push({ so: ten[i], muc: muc });
+  }
+  return ra;
+};
+
+/* ── TÓM TẮT MỘT DÒNG ──
+   Dùng ở chỗ chỉ có một dòng để nói: đầu màn Biên soạn, cuối bộ soát
+   sẵn sàng. Đếm cả `hong` và `xong` riêng ra, vì hai cái ấy là VIỆC CỦA
+   NGƯỜI LÀM chứ không phải việc của chủ hệ:
+     hong  mục khai sai đường đo — bộ kiểm mục 77 bắt đỏ
+     xong  việc đã làm xong mà mục vẫn nằm trong sổ — phải gỡ */
+G.ccTomTat = function (docRa) {
+  var d = docRa || G.ccDocSo();
+  var t = { so: d.length, tong: 0, chua: 0, xong: 0, khongDo: 0, chuaKhai: 0, hong: 0 };
+  for (var i = 0; i < d.length; i++) {
+    for (var j = 0; j < d[i].muc.length; j++) {
+      t.tong++;
+      var tr = d[i].muc[j].ket.trang;
+      if (t[tr] !== undefined) t[tr]++;
+    }
+  }
+  return t;
+};
+
+})();
+
 /* ═════════ src/bien-soan-noi-dung.js ═════════ */
 (function(){
 /* ═══════════════════════════════════════════════════════════════
@@ -37994,6 +38165,7 @@ G.VIEWS = G.VIEWS || {};
     {ma: 'tudien',   ten: 'Từ điển',     ic: 'quote'},
     {ma: 'chuannghe',ten: 'Chuẩn nghề',   ic: 'crown'},
     {ma: 'hienphap', ten: 'Hiến pháp', ic: 'book'},
+    {ma: 'chochu',   ten: 'Chờ chủ hệ', ic: 'clock'},
     {ma: 'quyen',    ten: 'Quyền ký',  ic: 'lock'}
   ];
 
@@ -38824,6 +38996,49 @@ G.VIEWS = G.VIEWS || {};
   }
 
   /* ═══════════ NGĂN · CHUẨN NGHỀ ═══════════ */
+  /* ── Ô CHỐT TRÍCH · ND-04 ──
+     Chỉ Super Admin thấy ô này. Ngưỡng KHÁC với cửa xuất (R01–R02) có
+     chủ ý: lấy một bản trích là việc vận hành, còn nói "câu này được
+     phép dẫn ra ngoài, dẫn theo nguồn này" là một lời khai chỉ chủ hệ
+     đứng tên được. */
+  function oChotTrich(ma, daChot) {
+    var id = 'ct-' + ma;
+    return '<div style="padding:10px 0;border-top:1px solid var(--line)">' +
+      '<div class="sm" style="font-weight:600;margin-bottom:6px">' +
+      (daChot ? 'Chốt lại' : 'Chốt lượt đầu') + ' — sổ chỉ thêm, không sửa dòng cũ' +
+      '</div>' +
+      '<input id="' + id + '-nguon" class="inp" placeholder="Nguồn thật để dẫn — ' +
+        'bỏ trống nếu chốt là KHÔNG được trích" value="' +
+        h((daChot && daChot.nguon) || '') + '">' +
+      '<input id="' + id + '-lydo" class="inp mt" placeholder="Vì sao chốt như vậy ' +
+        '(ít nhất 10 chữ)">' +
+      '<div class="row mt" style="gap:8px;flex-wrap:wrap">' +
+      '<button class="btn primary" onclick="G.bsChotTrich(\'' + h(ma) + '\',true)">' +
+        ic('check') + 'Được trích</button>' +
+      '<button class="btn" onclick="G.bsChotTrich(\'' + h(ma) + '\',false)">' +
+        ic('x') + 'Không được trích</button>' +
+      '</div></div>';
+  }
+
+  G.bsChotTrich = function (ma, duoc) {
+    var nguon = oGiaTri('ct-' + ma + '-nguon').trim();
+    var lyDo = oGiaTri('ct-' + ma + '-lydo').trim();
+    if (lyDo.length < 10) {
+      U.toast('Lượt chốt phải nói vì sao, ít nhất 10 chữ.', 'err'); return;
+    }
+    if (duoc && nguon.length < 10) {
+      U.toast('Chốt được trích thì phải có nguồn thật. Chốt xong mà cửa vẫn ' +
+        'chặn thì lượt chốt ấy không làm được gì.', 'err');
+      return;
+    }
+    goi('chotTrichNghe', {ma: ma, trichDuoc: duoc, nguon: nguon, lyDo: lyDo})
+      .then(function (r) {
+        if (r && r.ok) G.bsChot = undefined;   /* nạp lại từ sổ, không tự đoán */
+        bao(r, (r && r.vi) || 'Đã chốt.');
+        veLai();
+      });
+  };
+
   function nganChuanNghe() {
     var o = '<div class="card"><b>Năm lĩnh vực, và ba mức chắc chắn khác nhau</b>' +
       '<p class="sm muted mt">Ô <b>Nghề đòi</b> là chuẩn hành nghề có sẵn NGOÀI ' +
@@ -38831,22 +39046,42 @@ G.VIEWS = G.VIEWS || {};
       'đã duyệt của GITA. Dùng để đối chiếu thì được; đưa vào một ấn phẩm thì phải ' +
       'dẫn nguồn thật. Hai ô còn lại neo vào kho đã duyệt.</p>' +
       '<p class="sm muted mt">Từ bản 9.99.46 mục <b>ND-04</b> không còn là một ' +
-      'dòng nhắc: cửa xuất chuẩn nghề CHẶN mọi mục chưa có ô <code>trichDuoc</code> ' +
-      'và ô <code>nguon</code>. Cả năm mục đang vắng hai ô ấy, nên hiện chưa mục ' +
-      'nào trích ra ngoài được — đó là mặc định đúng. Máy KHÔNG tự điền: đó là ' +
-      'lời khai của Học viện về nguồn gốc một câu chữ, và một lời khai máy tự ' +
-      'viết thì không ai chịu trách nhiệm được.</p></div>';
+      'dòng nhắc: cửa xuất chuẩn nghề CHẶN mọi mục chưa chốt được trích và chưa ' +
+      'ghi nguồn. Máy KHÔNG tự điền: đó là lời khai của Học viện về nguồn gốc ' +
+      'một câu chữ, và một lời khai máy tự viết thì không ai chịu trách nhiệm ' +
+      'được.</p>' +
+      '<p class="sm muted mt">Và từ bản <b>9.99.49</b> lượt chốt ấy có CHỖ GHI. ' +
+      'Trước đó quyết định phải sửa thẳng vào kho gốc rồi phát hành lại — nên ba ' +
+      'bản liền không mục nào được chốt, trong khi sổ chờ vẫn ghi "đang chờ chủ ' +
+      'hệ". Nay chủ hệ bấm chốt ngay ở đây, máy chủ ghi vào sổ chỉ-thêm, và cửa ' +
+      'xuất đọc SỔ ẤY chứ không đọc lượt gọi của máy khách.</p></div>';
+
+    if (G.bsChot === undefined) {
+      G.bsChot = null;
+      goi('dsChotTrich', {}).then(function (r) {
+        G.bsChot = (r && r.ok && r.ds) || {};
+        veLai();
+      });
+    }
+    var soChot = G.bsChot || {};
 
     (G.KN_CHUAN_NGHE || []).forEach(function (c) {
+      var ch = soChot[c.ma];
       o += U.sec(c.ma + ' · ' + c.linhVuc, c.neo || '');
       o += '<div class="card">' +
-        '<div class="row mb" style="gap:8px">' +
-        (c.trichDuoc === true
-          ? '<span class="chip" style="color:var(--ok)">trích ra ngoài ĐƯỢC</span>' +
-            '<span class="sm muted" style="align-self:center">nguồn: ' +
-              h(c.nguon || '(chưa ghi)') + '</span>'
-          : '<span class="chip" style="color:var(--bad)">CHƯA chốt · không trích ra ngoài được</span>') +
+        '<div class="row mb" style="gap:8px;flex-wrap:wrap">' +
+        (!ch
+          ? '<span class="chip" style="color:var(--bad)">CHƯA chốt · không trích ra ngoài được</span>'
+          : (ch.trichDuoc
+            ? '<span class="chip" style="color:var(--ok)">trích ra ngoài ĐƯỢC</span>' +
+              '<span class="sm muted" style="align-self:center">nguồn: ' +
+                h(ch.nguon || '(chưa ghi)') + '</span>'
+            : '<span class="chip" style="color:var(--bad)">đã chốt: KHÔNG được trích</span>')) +
+        (ch ? '<span class="sm muted" style="align-self:center">' +
+          h(ch.boiAi + ' · ' + String(ch.chotLuc || '').slice(0, 10)) + '</span>' : '') +
         '</div>' +
+        (ch ? '<p class="sm muted">Lý do đã ghi: ' + h(ch.lyDo || '') + '</p>' : '') +
+        (laChuHe() ? oChotTrich(c.ma, ch) : '') +
         '<div style="padding:7px 0"><span class="chip" style="color:var(--ink-3)">' +
           'NGHỀ ĐÒI · nguồn ngoài</span>' +
         '<div style="margin-top:6px;font-size:14.5px;line-height:1.6">' + h(c.ngheDoi) + '</div></div>' +
@@ -38878,6 +39113,89 @@ G.VIEWS = G.VIEWS || {};
           '<span style="color:var(--ok)">' + h(c.thay) + '</span>',
           '<span class="sm muted">' + h(c.vi || '') + '</span>'];
       }));
+    return o;
+  }
+
+  /* ═══════════ NGĂN · CHỜ CHỦ HỆ ═══════════
+
+     Ngăn này KHÔNG có bảng riêng. Nó gọi G.ccDocSo() — đúng bộ đo mà
+     tools/soat-san-sang.js gọi mỗi lần phát hành. Hai chỗ, một phép đo,
+     nên con số ở màn hình và con số lúc phát hành không bao giờ lệch.
+
+     Thứ tự hiện ra có chủ ý: việc CỦA NGƯỜI LÀM lên trước (mục khai sai
+     đường đo, mục đã xong mà quên gỡ), rồi mới tới việc của chủ hệ. Xếp
+     ngược lại thì chủ hệ đọc một danh sách có lẫn việc không phải của
+     mình, và lần thứ ba thì thôi đọc. */
+  function nganChoChu() {
+    if (!G.ccDocSo) {
+      return '<div class="card"><b>Chưa nạp được bộ đo sổ chờ</b>' +
+        '<p class="sm muted mt">Thiếu src/cho-chu-he.js.</p></div>';
+    }
+    var d = G.ccDocSo(), t = G.ccTomTat(d);
+
+    var o = '<div class="card"><b>' + t.tong + ' việc chờ người, trong ' + t.so +
+      ' sổ</b>' +
+      '<p class="sm muted mt">Đây là những việc <b>không chờ mã</b>. Máy đã làm ' +
+      'hết phần của máy ở từng mục, và dừng lại đúng chỗ cần một quyết định của ' +
+      'người. Mỗi mục nói rõ <b>điền ở đâu</b> — một dòng nhắc không nói chỗ điền ' +
+      'thì người đọc phải đi hỏi, và thường là không hỏi.</p>' +
+      '<div class="row mt" style="gap:8px;flex-wrap:wrap">' +
+      U.chip(t.chua + ' còn chờ · đo được', 'var(--warn)') +
+      U.chip(t.khongDo + ' máy không đo được', 'var(--ink-3)') +
+      U.chip(t.chuaKhai + ' sổ cũ chưa khai cách đo', 'var(--ink-3)') +
+      (t.xong ? U.chip(t.xong + ' ĐÃ XONG mà chưa gỡ', 'var(--bad)') : '') +
+      (t.hong ? U.chip(t.hong + ' khai sai đường đo', 'var(--bad)') : '') +
+      '</div></div>';
+
+    var loi = [];
+    d.forEach(function (s) {
+      s.muc.forEach(function (m) {
+        if (m.ket.trang === 'hong' || m.ket.trang === 'xong') loi.push({s: s.so, m: m});
+      });
+    });
+    if (loi.length) {
+      o += U.sec('Việc của người làm, không phải của chủ hệ',
+        'Bộ soát sẵn sàng tính những dòng này là CHỖ THIẾU, nên chúng chặn phát hành');
+      o += loi.map(function (x) {
+        return '<div class="card" style="border-color:var(--bad)">' +
+          '<b>' + h(x.m.muc.ma || x.s) + '</b> · ' + h(x.m.muc.viec || '') +
+          '<p class="sm mt" style="color:var(--bad)">' +
+          (x.m.ket.trang === 'xong'
+            ? 'Đo được ' + h(x.m.ket.so) + ' — việc đã xong mà mục vẫn nằm trong ' +
+              h(x.s) + '. Gỡ dòng ấy khỏi kho rồi đóng gói lại.'
+            : h(x.m.ket.vi || '')) + '</p></div>';
+      }).join('');
+    }
+
+    d.forEach(function (s) {
+      var conCho = s.muc.filter(function (m) { return m.ket.trang !== 'xong' && m.ket.trang !== 'hong'; });
+      if (!conCho.length) return;
+      o += U.sec(s.so, conCho.length + ' mục');
+      o += conCho.map(function (m) {
+        var k = m.ket, mu = m.muc;
+        var nhan = k.trang === 'chua'
+          ? U.chip(k.so + ' · ' + k.con, 'var(--warn)')
+          : (k.trang === 'khongDo'
+            ? U.chip('máy không đo được', 'var(--ink-3)')
+            : U.chip('chưa khai cách đo', 'var(--ink-3)'));
+        return '<div class="card">' +
+          '<div class="row mb" style="gap:8px;flex-wrap:wrap">' +
+          (mu.ma ? '<b>' + h(mu.ma) + '</b>' : '') + nhan + '</div>' +
+          (mu.viec ? '<div style="font-size:15px;font-weight:600">' + h(mu.viec) + '</div>' : '') +
+          '<p class="sm muted mt" style="line-height:1.65">' + h(mu.vi || mu.hoi || '') + '</p>' +
+          (mu.noiDien
+            ? '<p class="sm mt" style="color:var(--teal)">Điền tại: ' + h(mu.noiDien) + '</p>'
+            : '') +
+          (k.trang === 'khongDo'
+            ? '<p class="sm muted mt">Vì sao máy không đo được: ' + h(k.vi) + '</p>'
+            : '') +
+          (k.ten && k.ten.length
+            ? '<p class="sm muted mt">Còn thiếu: ' + h(k.ten.slice(0, 12).join(' · ')) +
+              (k.ten.length > 12 ? ' …' : '') + '</p>'
+            : '') +
+          '</div>';
+      }).join('');
+    });
     return o;
   }
 
@@ -39519,6 +39837,7 @@ G.VIEWS = G.VIEWS || {};
     if (G.bsNgan === 'tudien')   return o + nganTuDien();
     if (G.bsNgan === 'chuannghe')return o + nganChuanNghe();
     if (G.bsNgan === 'hienphap') return o + nganHienPhap();
+    if (G.bsNgan === 'chochu')   return o + nganChoChu();
     if (G.bsNgan === 'quyen' && capQuyenDuoc()) return o + nganQuyen();
     return o + nganSoan();
   };

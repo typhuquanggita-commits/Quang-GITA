@@ -11559,8 +11559,90 @@ const { chromium } = require(PW);
         soCho: ['TG_CHOCHU', 'KN_CHOCHU', 'MD_CHOCHU', 'KL_CHOCHU'].map(t => ({
           ten: t, so: (G[t] || []).length,
           thieu: (G[t] || []).filter(x => !x.ma || !x.viec ||
-            !x.vi || String(x.vi).length < 40).map(x => x.ma || '(không mã)')
+            !x.vi || String(x.vi).length < 40).map(x => x.ma || '(không mã)'),
+          /* 9.99.49 — mỗi mục phải khai ĐƯỜNG ĐO, hoặc khai vì sao
+             không đo được. Thiếu cả hai thì mục ấy không bao giờ tự rời
+             sổ khi xong, và sổ mục theo đúng cách TR_CHUA đã mục. */
+          khongDuong: (G[t] || []).filter(x =>
+            !(x.do && x.do.tai && x.do.kieu) &&
+            !(x.khongDoDuoc && String(x.khongDoDuoc).length >= 40)).map(x => x.ma),
+          khongNoiDien: (G[t] || []).filter(x =>
+            !x.noiDien || String(x.noiDien).length < 20).map(x => x.ma),
+          kieuLa: (G[t] || []).filter(x => x.do && !(G.CC_KIEU || {})[x.do.kieu])
+            .map(x => x.ma),
+          hai: (G[t] || []).filter(x => x.do && x.khongDoDuoc).map(x => x.ma)
         })),
+        /* ── BỘ ĐO SỔ CHỜ CHẠY THẬT ──
+           Không đọc chú giải: gọi chính hàm mà màn Biên soạn và bộ soát
+           sẵn sàng cùng gọi, rồi đòi kết quả sạch. `hong` là mục khai
+           sai đường đo; `xong` là việc đã làm xong mà mục vẫn nằm trong
+           sổ — cả hai đều là việc của người làm, không phải của chủ hệ. */
+        ccChay: (() => {
+          if (!G.ccDocSo) return {thieuBoDo: true};
+          const d = G.ccDocSo(), t = G.ccTomTat(d);
+          const hong = [], xong = [];
+          d.forEach(s => s.muc.forEach(m => {
+            if (m.ket.trang === 'hong') hong.push((m.muc.ma || s.so) + ': ' + m.ket.vi);
+            if (m.ket.trang === 'xong') xong.push((m.muc.ma || s.so) + ' (' + m.ket.so + ')');
+          }));
+          return {so: t.so, tong: t.tong, chua: t.chua, hong, xong};
+        })(),
+        ccKieu: Object.keys(G.CC_KIEU || {}).sort(),
+        /* ── BỐN KHUNG DỰNG SẴN CHO MỤC CHỜ ── */
+        klBieuTuong: (() => {
+          const b = G.KL_BIEUTUONG || {};
+          return {co: !!G.KL_BIEUTUONG, soDau: (b.bo || []).length,
+            soLuat: (b.luat || []).length, coKhuon: !!(b.khuon && b.khuon.ma),
+            coChan: String(b.khiConRong || '').length > 40,
+            luatThieu: (b.luat || []).filter(l => !l.ma || !l.cau || !l.aiDat ||
+              String(l.vi || '').length < 30).map(l => l.ma || '(không mã)')};
+        })(),
+        mdMauMa: (() => {
+          const m = G.MD_MAU_MA || {};
+          const can = m.batBuoc || [];
+          /* Khuôn phải mô tả ĐÚNG những dòng đang có. Một khuôn đòi ô mà
+             mười ba dòng thật không có là một khuôn không ai theo nổi. */
+          const chanThieu = (G.MD_CHAN || []).filter(c =>
+            can.some(k => c[k] === undefined || c[k] === '')).map(c => c.ma);
+          return {co: !!G.MD_MAU_MA, can,
+            duGiaiThich: can.concat(m.tuyChon || [])
+              .every(k => String((m.giaiThich || {})[k] || '').length > 20),
+            chanThieu};
+        })(),
+        mdThuHanhVi: (() => {
+          const ds = G.MD_THUHANHVI || [];
+          const maVr = (G.MD_VIRUS || []).map(v => v.ma);
+          return {so: ds.length,
+            thieuO: ds.filter(x => !x.ma || !x.truong || !x.doGi ||
+              !(x.choChung || []).length ||
+              ['thap', 'vua', 'cao'].indexOf(x.nhay) < 0).map(x => x.ma || '(không mã)'),
+            /* Trỏ vào chủng không có thật là hỏng im: bảng vẫn đầy, mà
+               bật trường ấy lên thì không canh thêm được gì. */
+            trongRong: ds.reduce((r, x) => {
+              (x.choChung || []).forEach(v => { if (maVr.indexOf(v) < 0) r.push(x.ma + '→' + v); });
+              return r; }, []),
+            chuaChot: ds.filter(x => x.trangThai === 'choChuHe').length};
+        })(),
+        tgInChot: (() => {
+          const t = G.TG_IN_CHOT || {};
+          return {co: !!G.TG_IN_CHOT, soMuc: (t.muc || []).length,
+            coKhuon: !!(t.khuonMuc && t.khuonMuc.cmyk && t.khuonGiay && t.khuonGiay.dinhLuong),
+            coLoiKhai: String(t.khiConRong || '').length > 40};
+        })(),
+        /* Ngân khố cắt nhỏ: tổng các ô phải ĐÚNG bằng tổng ba khối, và
+           đúng bằng con số 1000 của công thức. Lệch nghĩa là một ô đếm
+           hai lần hoặc một ô không ai đếm. */
+        klO: (() => {
+          const nk = G.KL_NGANKHO || {};
+          const o = nk.o || [];
+          const tong = o.reduce((s, x) => s + (Number(x.soCau) || 0), 0);
+          const coTong = o.reduce((s, x) => s + (Number(x.daCo) || 0), 0);
+          const khoiTong = (nk.khoi || []).reduce((s, x) => s + (Number(x.soCau) || 0), 0);
+          const khoiCo = (nk.khoi || []).reduce((s, x) => s + (Number(x.daCo) || 0), 0);
+          return {so: o.length, tong, coTong, khoiTong, khoiCo,
+            khoiLa: o.filter(x => (nk.khoi || []).every(k => k.ma !== x.khoi)).map(x => x.ma),
+            thieuMa: o.filter(x => !x.ma || !(Number(x.soCau) > 0)).length};
+        })(),
         luatBuoi: (G.KN_HOITHOAI_LUAT || []).map(l => l.ma),
         /* Tên nhịp trong KICHBAN_AI — nguồn GỐC. Bảng KN_NHIP và bảng
            KN_KHUNG_CAU đều phải gọi đúng những cái tên này. */
@@ -11783,22 +11865,141 @@ const { chromium } = require(PW);
       if (!s.so) lech.push('sổ chờ ' + s.ten + ' rỗng');
       if (s.thieu.length)
         lech.push(s.ten + ' có mục không đủ mã · việc · vì sao: ' + s.thieu.join(', '));
+      if (s.khongDuong.length)
+        lech.push(s.ten + ' có mục không khai đường đo và cũng không khai vì sao ' +
+          'không đo được: ' + s.khongDuong.join(', '));
+      if (s.khongNoiDien.length)
+        lech.push(s.ten + ' có mục không nói ĐIỀN Ở ĐÂU: ' + s.khongNoiDien.join(', '));
+      if (s.kieuLa.length)
+        lech.push(s.ten + ' khai kiểu đo không có trong G.CC_KIEU: ' + s.kieuLa.join(', '));
+      if (s.hai.length)
+        lech.push(s.ten + ' vừa khai đo được vừa khai không đo được: ' + s.hai.join(', '));
     });
+
+    /* ── BỘ ĐO SỔ CHỜ PHẢI CHẠY SẠCH ──
+       Đây là chỗ cơ chế nhắc tự đóng lại được: mục nào đo ra ĐÃ XONG mà
+       vẫn nằm trong sổ thì bộ kiểm đỏ, nên không ai phát hành được một
+       sổ chờ đã mục. Không có phép này thì sổ chờ lại thành một danh
+       sách chỉ dài ra chứ không bao giờ ngắn đi. */
+    {
+      const cc = kho.ccChay || {};
+      if (cc.thieuBoDo) lech.push('không nạp được bộ đo sổ chờ (src/cho-chu-he.js)');
+      else {
+        if ((cc.hong || []).length)
+          lech.push('mục khai sai đường đo: ' + cc.hong.join(' · '));
+        if ((cc.xong || []).length)
+          lech.push('mục ĐÃ XONG mà vẫn nằm trong sổ chờ — gỡ khỏi kho: ' +
+            cc.xong.join(' · '));
+        if (!(cc.so >= 4 && cc.tong >= 10))
+          lech.push('bộ đo đọc ra quá ít sổ: ' + cc.so + ' sổ · ' + cc.tong + ' mục');
+      }
+      const kieu = ['coDong', 'dem', 'duTruong'];
+      if (JSON.stringify(kho.ccKieu) !== JSON.stringify(kieu.slice().sort()))
+        lech.push('G.CC_KIEU đổi hình: ' + (kho.ccKieu || []).join(','));
+    }
+
+    /* ── BỐN KHUNG DỰNG SẴN ──
+       Một mục chờ mà không có chỗ ghi thì nó không phải mục chờ, nó là
+       một lời than: chủ hệ chốt xong cũng không biết đặt câu trả lời
+       vào đâu. Bốn phép dưới đây đòi chỗ ghi ấy có thật, và đòi nó nói
+       rõ máy làm gì trong lúc còn rỗng. */
+    {
+      const b = kho.klBieuTuong || {};
+      if (!b.co) lech.push('thiếu khung G.KL_BIEUTUONG cho mục KL-01');
+      else {
+        if (!b.coKhuon) lech.push('KL_BIEUTUONG không có khuôn một dòng');
+        if (b.soLuat < 3) lech.push('KL_BIEUTUONG khai dưới ba luật dùng');
+        if (!b.coChan) lech.push('KL_BIEUTUONG không nói máy làm gì lúc bộ còn rỗng');
+        /* Mỗi luật phải khai AI ĐẶT. Bịa một luật rồi để người sau tưởng
+           nó của bản đặc tả là chỗ không gỡ ra được. */
+        if (b.luatThieu.length)
+          lech.push('luật biểu tượng thiếu ô ai đặt hoặc vì sao: ' + b.luatThieu.join(', '));
+      }
+
+      const m = kho.mdMauMa || {};
+      if (!m.co) lech.push('thiếu khuôn G.MD_MAU_MA cho mục MD-01');
+      else {
+        if (!m.duGiaiThich) lech.push('MD_MAU_MA có ô không giải thích đủ');
+        if ((m.chanThieu || []).length)
+          lech.push('khuôn MD_MAU_MA đòi ô mà chính MD_CHAN không có: ' +
+            m.chanThieu.join(', '));
+      }
+
+      const t = kho.mdThuHanhVi || {};
+      if (t.so < 10) lech.push('G.MD_THUHANHVI mới có ' + t.so + ' trường');
+      if ((t.thieuO || []).length)
+        lech.push('trường hành vi thiếu ô bắt buộc: ' + t.thieuO.join(', '));
+      if ((t.trongRong || []).length)
+        lech.push('trường hành vi trỏ vào chủng virus không có thật: ' +
+          t.trongRong.join(', '));
+
+      const i = kho.tgInChot || {};
+      if (!i.co) lech.push('thiếu khung G.TG_IN_CHOT cho mục TG-02');
+      else {
+        if (!i.coKhuon) lech.push('TG_IN_CHOT thiếu khuôn mực hoặc khuôn giấy');
+        if (!i.coLoiKhai) lech.push('TG_IN_CHOT không nói in ra sao lúc còn rỗng');
+      }
+
+      const o = kho.klO || {};
+      if (o.so < 20) lech.push('ngân khố mới cắt được ' + o.so + ' ô');
+      if (o.thieuMa) lech.push(o.thieuMa + ' ô ngân khố thiếu mã hoặc thiếu số câu');
+      if (o.tong !== 1000) lech.push('tổng các ô ngân khố ra ' + o.tong + ', không phải 1000');
+      if (o.tong !== o.khoiTong)
+        lech.push('ô và khối của ngân khố lệch nhau: ' + o.tong + ' · ' + o.khoiTong);
+      if (o.coTong !== o.khoiCo)
+        lech.push('số câu ĐÃ CÓ của ô và của khối lệch: ' + o.coTong + ' · ' + o.khoiCo);
+      if ((o.khoiLa || []).length)
+        lech.push('ô ngân khố thuộc khối không có thật: ' + o.khoiLa.join(', '));
+    }
 
     ra.ndLech = lech;
     ra.ndKhop = lech.length === 0;
     ra.ndDuKho = kho.maVb === 'KN-HP-01' && kho.cam.length === 10 &&
                  kho.xong.length === 10 && kho.khoi.length === 24;
     ra.ndKhoiDay = kho.khoiThieuHoi.length === 0 && kho.khoiKhongNoi.length === 0;
-    /* ND-04: cửa xuất chuẩn nghề. Mục nào kho chưa chốt `trichDuoc` thì
-       cửa PHẢI đóng — đo bằng cách gọi thẳng cửa, không đọc chú giải. */
+    /* ND-04: cửa xuất chuẩn nghề. Từ 9.99.49 lượt chốt nằm ở SỔ MÁY CHỦ
+       chứ không nằm trong kho, nên phép kiểm này đổi theo: sổ rỗng thì
+       cửa phải đóng với MỌI mục.
+
+       Và nó đo thêm một chuyện mới: cửa phải BỎ QUA lời khai của lượt
+       gọi. Bản 9.99.48 đọc `trichDuoc` thẳng từ lượt gọi, nên máy khách
+       gửi trichDuoc:true là qua cửa — đúng lớp lỗi "lọc trên màn hình
+       không phải bảo vệ dữ liệu". Ở đây gửi lên đúng lời khai gian ấy
+       và đòi cửa vẫn đóng. */
     {
-      const chuaChot = (kho.chuanNghe || []).filter(m => kho.ngheDaChot.indexOf(m) < 0);
-      ra.ndCuaXuat = chuaChot.length === 0 ||
-        !(await mND.xuatChuanNghe({muc: chuaChot.map(ma => ({ma}))},
-          {}, {prepare: () => ({bind: () => ({run: async () => ({})})})},
-          {uid: 'x', username: 'x', role: 'R01'})).ok;
-      ra.ndChuaChot = chuaChot;
+      const dbRong = {prepare: () => ({
+        bind: () => ({run: async () => ({}), first: async () => null,
+          all: async () => ({results: []})}),
+        all: async () => ({results: []})})};
+      const hs = {uid: 'x', username: 'x', role: 'R01'};
+      const ds = kho.chuanNghe || [];
+      const that = await mND.xuatChuanNghe({muc: ds.map(ma => ({ma}))}, {}, dbRong, hs);
+      /* Lời khai gian: máy khách tự nói đã chốt và tự ghi nguồn. */
+      const gian = await mND.xuatChuanNghe(
+        {muc: ds.map(ma => ({ma, trichDuoc: true, nguon: 'nguồn do máy khách tự ghi'}))},
+        {}, dbRong, hs);
+      ra.ndCuaXuat = ds.length === 0 || (!that.ok && !gian.ok);
+      ra.ndCuaBoLoiKhai = ds.length === 0 || !gian.ok;
+      ra.ndChuaChot = ds;
+      /* Chốt phải có lý do, và chốt "được trích" phải có nguồn thật.
+         Hai cửa chặn này là cả giá trị của lượt chốt — thiếu chúng thì
+         một lượt chốt rỗng cũng mở được cửa xuất. */
+      const rGhi = [];
+      const dbGhi = {prepare: () => ({bind: (...a) => {rGhi.push(a); return {
+        run: async () => ({}), first: async () => null,
+        all: async () => ({results: []})};}, all: async () => ({results: []})})};
+      const thieuLyDo = await mND.chotTrichNghe(
+        {ma: 'CN01', trichDuoc: true, nguon: 'sách giáo trình ABC 2019'}, {}, dbGhi, hs);
+      const thieuNguon = await mND.chotTrichNghe(
+        {ma: 'CN01', trichDuoc: true, lyDo: 'trích cho tờ rơi giới thiệu'}, {}, dbGhi, hs);
+      const khongPhaiChuHe = await mND.chotTrichNghe(
+        {ma: 'CN01', trichDuoc: true, nguon: 'sách giáo trình ABC 2019',
+         lyDo: 'trích cho tờ rơi giới thiệu'}, {}, dbGhi,
+        {uid: 'y', username: 'y', role: 'R02'});
+      ra.ndChotChan = !thieuLyDo.ok && thieuLyDo.error === 'THIEULYDO' &&
+        !thieuNguon.ok && thieuNguon.error === 'THIEUNGUON' &&
+        !khongPhaiChuHe.ok && khongPhaiChuHe.error === 'KHONGQUYEN' &&
+        rGhi.length === 0;
     }
     ra.ndThieuHoi = kho.khoiThieuHoi;
     ra.ndKhongNoi = kho.khoiKhongNoi;
@@ -11852,7 +12053,7 @@ const { chromium } = require(PW);
                   mND.soatKL('Số liệu này sai.', 'khach').length === 0;
 
     bao(ra.ndKhop && ra.ndDuKho && ra.ndKhoiDay && ra.ndCongDu && ra.ndDoThat &&
-        ra.ndCuaXuat,
+        ra.ndCuaXuat && ra.ndCuaBoLoiKhai && ra.ndChotChan,
       'HIẾN PHÁP NỘI DUNG: BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP TỪNG Ô VỚI BẢN GỐC TRONG KHO, VÀ MÁY PHẢI KHÔNG CỘNG RA TỔNG KHI CÒN CHIỀU CHƯA AI CHẤM. Bản đặc tả MASTER AI của chủ hệ để AI tự chấm cả mười chiều rồi ra một con số trên trăm. Bốn chiều trong đó — chiều sâu, cá nhân hoá, dùng lại được, và phần có giá trị của chìa khoá kim cương — không có dữ liệu nào để đo, nên máy chấm chúng là máy ĐOÁN; và một con số đoán nằm cạnh sáu con số đo thì cả bảy đều được tin như nhau. Nên máy chỉ được chấm 60 điểm và phải NÓI RA 40 điểm còn chờ người — cùng luật với L-02 của bảng lương. Phép đo này cộng lại hai nửa và đòi đúng 100: lệch nghĩa là có một chiều bị tính hai lần hoặc không ai tính. Máy chủ không đọc được kho đã mã hoá nên phải giữ bản chép của hai mươi bốn khối, mười chiều, bảng câu rỗng và bảng thay lời; phép đo đối chiếu TỪNG Ô chứ không đếm số, vì hai bảng cùng dài mà lệch nội dung thì đếm số vẫn xanh. Chỗ nguy nhất là ô TRẦN MÁY: lệch một điểm ở đó không làm sai phép đo nào, nó chỉ làm máy cho nhiều điểm hơn phần nó thật sự đo được. Và phép đo gọi thẳng ba bộ dò rồi đòi chúng phân biệt câu dán nhãn với câu sạch',
       ra.ndKhop && ra.ndCongDu
         ? '24 khối · 10 chiều · máy chấm ' + ra.ndTranMay + '/100, còn ' +
@@ -11864,7 +12065,11 @@ const { chromium } = require(PW);
            !ra.ndCongDu ? 'HAI NỬA CỘNG LẠI KHÔNG RA 100: máy ' + ra.ndTranMay : '',
            !ra.ndDoThat ? 'GỌI THẲNG BỘ DÒ THÌ NÓ KHÔNG PHÂN BIỆT ĐƯỢC' : '',
            !ra.ndCuaXuat ? 'CỬA XUẤT CHUẨN NGHỀ MỞ CHO MỤC CHƯA CHỐT: ' +
-             (ra.ndChuaChot || []).join(', ') : ''
+             (ra.ndChuaChot || []).join(', ') : '',
+           !ra.ndCuaBoLoiKhai ? 'CỬA XUẤT TIN LỜI KHAI CỦA MÁY KHÁCH: gửi lên ' +
+             'trichDuoc:true là qua cửa — quyết định phải đọc từ SỔ MÁY CHỦ' : '',
+           !ra.ndChotChan ? 'CỬA CHỐT TRÍCH KHÔNG CHẶN ĐỦ: phải đòi lý do, đòi ' +
+             'nguồn thật khi chốt được trích, và chỉ Super Admin chốt được' : ''
           ].filter(Boolean).join(' · '));
   }
 
