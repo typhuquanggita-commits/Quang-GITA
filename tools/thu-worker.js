@@ -3387,6 +3387,93 @@ bao(!(await goi({fn:'guiDeBaiRaNgoai', token:tkTC, u:'truongcoach@gita365.vn',
   id:idTG})).than.ok,
   'TRƯỞNG COACH KHÔNG GỬI ĐƯỢC RA NGOÀI — cho một thứ rời khỏi hệ là quyết định của chủ hệ');
 
+/* ══ ĐIỀU 13 CÓ RĂNG Ở CỬA ĐI RA — BỘ NÃO, 9.99.62 ══
+
+   Luật vận hành số 1: mọi ghi chép về một gia đình hoặc một đứa trẻ
+   KHÔNG BAO GIỜ rời hệ ở dạng nhận dạng được.
+
+   Tới 9.99.61 cửa này kiểm quyền, kiểm bậc, kiểm cổng — và không kiểm
+   một chữ nào về dữ liệu người. Một cái tên trẻ con lọt vào ô nội dung
+   thì đi thẳng ra bộ tạo ảnh đặt ở nước ngoài, và Luật số 91/2025/QH15
+   gọi đó là xử lý dữ liệu xuyên biên giới. */
+{
+  const nenBN = {tang:'T1', loaiHinh:'CONG', nhiemVu:'Mời nhà mở chặng bảy ngày',
+    nguoiXem:['PHUHUYNH'], dieuNho:'bấm mở chặng 1 ngay tối nay',
+    thoiDiem:'tối sau giờ học'};
+
+  /* Một cái tên thật lọt vào ô bố cục — đúng kiểu người viết đang kể
+     một chuyện có thật và không nghĩ tới chuyện nó sắp đi ra ngoài. */
+  const coTen = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:Object.assign({}, nenBN, {
+      noiDung:'Trang mời nhà mở chặng bảy ngày nhận diện, có phiếu ghi bảy ngày ' +
+              'và cổng nghiệm thu ngày bảy.',
+      boCuc:'dựng theo đúng buổi của nhà chị Nguyễn Thị Lan, gọi số 0912345678'})});
+  for (const den of ['mophong','duyet'])
+    await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+      id:coTen.than.id, den});
+  const chan = await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
+    id:coTen.than.id});
+  const maNgo = (chan.than.ngo || []).map(n => n.ma);
+  bao(!chan.than.ok && chan.than.code === 'CHUAANDANH' &&
+      maNgo.indexOf('AD-TEN') >= 0 && maNgo.indexOf('AD-SDT') >= 0 &&
+      /KHÔNG tự xoá hộ/.test(chan.than.error),
+    'ĐIỀU 13 CHẶN Ở CỬA ĐI RA: tên người và số máy không rời khỏi hệ',
+    'bắt ' + maNgo.join(' · ') + ' — và máy CHẶN chứ không tự xoá hộ: tự xoá thì ' +
+    'người gửi không biết mình vừa suýt gửi cái gì, và lần sau viết y hệt');
+
+  /* Và không bắt oan: bản ẩn danh đúng cách phải đi qua. Một cổng chặn
+     mọi thứ thì người ta tắt nó đi trong tuần đầu. */
+  const sach = await goi({fn:'soatAnDanh', token:tkSA, u:'superadmin@gita365.vn',
+    chu:'Đề bài cho phụ huynh A, con 9 tuổi, vào qua cửa làm, sợ bị cười. ' +
+        'Tấm mời mở chặng bảy ngày, đọc lúc tối sau giờ học.'});
+  bao(sach.than.ok && sach.than.sach === true,
+    'BẢN ĐÃ ẨN DANH ĐÚNG CÁCH THÌ ĐI QUA — không bắt oan',
+    'một cổng chặn mọi thứ thì người ta tắt nó đi trong tuần đầu');
+
+  /* "bé tập bò" là TÊN ĐIỀU 4 của chính Hiến pháp. Không trừ cụm ghép
+     thì hàng rào bắt oan ngay chính hiến pháp của nó — bẫy thứ ba của
+     phép dò chữ tiếng Việt. */
+  const beTapBo = await goi({fn:'soatBoNao', token:tkSA, u:'superadmin@gita365.vn',
+    chu:'Viết theo lối bé tập bò: một câu, một hình, một bước, một ngày.'});
+  const maR = (beTapBo.than.pham || []).map(p => p.ma);
+  bao(beTapBo.than.ok && maR.indexOf('R5') < 0,
+    'CỤM GHÉP KHÔNG BỊ BẮT OAN: "bé tập bò" là TÊN Điều 4, không phải sai xưng hô',
+    'không trừ cụm ghép thì hàng rào bắt oan ngay chính hiến pháp của nó');
+
+  /* Hàng rào nêu TỪNG ĐIỂM, không gộp thành một con số: chín điểm sạch
+     và một điểm phạm nặng cần cách xử lý khác hẳn mười điểm hơi phạm. */
+  const ban = await goi({fn:'soatBoNao', token:tkSA, u:'superadmin@gita365.vn',
+    chu:'Phương pháp tốt nhất Việt Nam, cam kết con giỏi lên 300% sau 90 ngày. ' +
+        'Cháu nào cũng đạt. Cha mẹ sai cách thì con mới kém.'});
+  const maB = (ban.than.pham || []).map(p => p.ma);
+  bao(!ban.than.dat && maB.indexOf('R2') >= 0 && maB.indexOf('R8') >= 0 &&
+      maB.indexOf('R5') >= 0 && maB.indexOf('R4') >= 0 && maB.indexOf('R1') >= 0,
+    'HÀNG RÀO NÊU TỪNG ĐIỂM MỘT: cam kết · thổi phồng · sai xưng hô · phán xét · số không nguồn',
+    'bắt ' + maB.join(' · ') + ' — gộp thành một con số thì chín điểm sạch và một ' +
+    'điểm phạm nặng ra cùng kết quả với mười điểm hơi phạm');
+
+  /* R9 KHÔNG bao giờ nằm trong phần máy chấm. Máy không biết GITA đang
+     có năng lực gì, và trình nó ra như đã kiểm là chỗ tệ nhất của cả
+     hàng rào: người duyệt thấy đủ mười dấu tick rồi thôi không đọc. */
+  bao((ban.than.nguoiPhaiDoc || []).indexOf('R9') >= 0 && maB.indexOf('R9') < 0 &&
+      beTapBo.than.soDiemMayDo === 9,
+    'R9 LUÔN LÀ VIỆC CỦA NGƯỜI — máy không chấm, và nói thẳng ra',
+    'máy đo được 9/10 điểm; trình đủ mười dấu tick thì người duyệt thôi không đọc');
+
+  /* Việc chưa ai xếp hạng rơi về VÀNG, không rơi về XANH. Rơi về Xanh
+     là để máy tự làm một việc chưa ai xếp hạng — đúng cách một hệ lặng
+     lẽ mở rộng quyền của chính nó. */
+  const mBN = await import('../may-chu/bo-nao.js');
+  const vLa = mBN.vungCuaViec('mot-viec-chua-ai-xep-hang');
+  const vDo = mBN.vungCuaViec('datGia');
+  const vXanh = mBN.vungCuaViec('guiWowTheoLich');
+  bao(vLa.vung === 'VANG' && vLa.macDinh === true && vLa.uyQuyen === false &&
+      vDo.vung === 'DO' && vDo.uyQuyen === false && vXanh.vung === 'XANH',
+    'VIỆC CHƯA AI XẾP HẠNG RƠI VỀ VÀNG, không rơi về Xanh',
+    'rơi về Xanh là để máy tự làm một việc chưa ai xếp hạng — đúng cách một hệ ' +
+    'lặng lẽ mở rộng quyền của chính nó');
+}
+
 /* ══ PHÉP ĐO ĐẮT NHẤT CỦA CẢ PHẦN NÀY ══
 
    NỘI DUNG KHÔNG BAO GIỜ ĐI RA. Nội dung là thứ kho mã hoá sinh ra để

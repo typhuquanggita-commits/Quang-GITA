@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.61',
+  version: '9.99.62',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -876,6 +876,19 @@ G.NAV = [
        qua cổng ấy là hoặc mở qt_trang cho họ — tức cho luôn quyền cấp
        tài khoản — hoặc để họ không vào được phòng của chính mình. */
     {v:'phong-tai-chinh', t:'Phòng Kế toán – Tài chính', h:'Bảng tin · trợ lý · việc của tôi · sổ ngày · đối chiếu · chốt sổ · KPI · lương · quy chế', ic:'shield', star:1, perm:'fin_view', capMo:'chung'},
+    /* Bộ não đứng TRƯỚC biên soạn: hiến pháp và hàng rào là thứ mọi
+       bài viết ra phải đi qua, nên người đọc gặp nó trước.
+
+       Quyền `nghe_chung`, KHÔNG phải `qt_trang`. Bản đầu tôi khoá ở
+       quyền quản trị, và phép đo tỉ lệ hiển thị bắt ngay: R07 · R08 ·
+       R12 tụt dưới đích. Đỏ ấy đúng, và nó chỉ ra một mâu thuẫn với
+       chính bản đặc tả — Phân hệ 6 viết "Trainer, coach, tư vấn viên
+       đều phải học và thi cùng một Hiến pháp 13 điều", và gọi đó là
+       ĐỒNG CHUẨN: khách gặp ai của GITA cũng nhận cùng một chất lượng
+       và cùng một giọng. Khoá hiến pháp ở tầng quản trị là làm cho
+       người chạm khách nhiều nhất lại không đọc được luật mình phải
+       theo. */
+    {v:'bo-nao', t:'Bộ não GITA 365', h:'Hiến pháp 13 điều · ba vùng uỷ quyền · hàng rào 10 điểm · ẩn danh trước khi ra ngoài · bảy ghế tham mưu', ic:'book', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},

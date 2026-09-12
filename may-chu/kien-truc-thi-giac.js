@@ -34,6 +34,7 @@
    là làm kho nói khác thứ khách đang cầm.
    ═══════════════════════════════════════════════════════════════ */
 
+import * as BoNao from './bo-nao.js';
 import { Kho, tokenMoi } from './nen.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
@@ -1991,6 +1992,40 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
     '· Không tên đơn vị nào khác, không lời hứa điểm số.',
     '· Không kho ảnh dựng sẵn, không nền gradient tím-xanh mặc định.'
   ].filter(v => v !== null).join('\n');
+
+  /* ══ ĐIỀU 13 CÓ RĂNG Ở ĐÚNG ĐÂY (9.99.62) ══
+
+     Luật vận hành số 1 của Bộ não: "Thẻ Vùng Mạnh, hồ sơ song sinh, và
+     mọi ghi chép về con KHÔNG BAO GIỜ rời khỏi hệ thống của GITA ở dạng
+     có thể nhận dạng."
+
+     Cửa này đã chạy từ 9.99.5x và kiểm quyền, kiểm bậc, kiểm cổng — rồi
+     KHÔNG kiểm một chữ nào về dữ liệu người. Nghĩa là tới hôm qua, một
+     cái tên trẻ con lọt vào ô nội dung thì nó đi thẳng ra bộ tạo ảnh
+     đặt ở nước ngoài, và Luật số 91/2025/QH15 gọi đó là xử lý dữ liệu
+     xuyên biên giới.
+
+     Đặt phép soi ở ĐÂY chứ không ở lúc đề xuất, có chủ ý: đề xuất còn
+     nằm trong hệ, và trong hệ thì dữ liệu gia đình được phép có mặt.
+     Ranh giới là lúc chuỗi chữ rời khỏi hệ — đúng dòng này.
+
+     Soi chuỗi ĐÃ DỰNG XONG, không soi từng ô rời: một cái tên có thể
+     nằm ở ô nội dung, ô bố cục, hay ô điều nhỏ, và soi từng ô là ba
+     phép soi phải cùng nhớ. Soi chuỗi cuối là một phép, và nó thấy đúng
+     thứ sắp đi. */
+  const raNgoai = BoNao.soatRaNgoai(guiDi);
+  if (!raNgoai.sach) {
+    await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_CHAN_ANDANH',
+      doiTuong: x.id, chiTiet: raNgoai.ngo.map(n => n.ma).join(' · ')});
+    return {ok: false, code: 'CHUAANDANH', ngo: raNgoai.ngo,
+      error: 'CHẶN — ngờ có dữ liệu NHẬN DẠNG ĐƯỢC trong thứ sắp gửi ra ngoài: ' +
+        raNgoai.ngo.map(n => n.ma + ' (' + n.thay + ')').join(' · ') + '. ' +
+        'Luật vận hành số 1 của Bộ não, và Điều 13 của Hiến pháp: mọi ghi chép về ' +
+        'một gia đình hoặc một đứa trẻ không bao giờ rời hệ ở dạng nhận dạng ' +
+        'được. Máy KHÔNG tự xoá hộ — tự xoá thì anh chị không biết mình vừa suýt ' +
+        'gửi cái gì, và lần sau viết y hệt. Ẩn danh rồi gửi lại: "phụ huynh A, ' +
+        'con 9 tuổi, vào qua cửa làm, sợ bị cười".'};
+  }
 
   /* ══════════════════════════════════════════════════════════════
      VÒNG ĐI–VỀ (9.99.37)

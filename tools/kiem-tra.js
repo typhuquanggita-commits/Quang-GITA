@@ -12530,6 +12530,140 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
           ].filter(Boolean).join(' · '));
   }
 
+  /* ══════════════════ 78. BỘ NÃO — HIẾN PHÁP KHÔNG TRÔI, VÀ ĐIỀU 13 CÓ RĂNG ══════════════════
+
+     Bản đặc tả GITA-BRAIN-365-v3.0 đặt Hiến pháp ở trên cùng sơ đồ kèm
+     một câu: "không phân hệ nào vượt qua". Máy chủ không đọc được kho
+     đã mã hoá nên phải giữ một bản chép, và bản chép là chỗ mục lặng
+     lẽ nhất: kho sửa một điều, bản chép ở nguyên, và từ đó hàng rào
+     chặn theo một luật chưa ai duyệt — không báo gì cả.
+
+     Đo thêm ba thứ mà đọc chú giải không thấy được:
+
+       · MỖI ĐIỀU KHAI ĐÚNG MỘT trong hai — `mayDo` hoặc `nguoiDo`.
+         Khai cả hai là để ngỏ cho người đọc tưởng máy đã kiểm; khai
+         thiếu cả hai là một điều không ai canh.
+
+       · DANH SÁCH MƯỜI QUYẾT ĐỊNH VÙNG ĐỎ phải đúng mười. Bớt một
+         dòng là giao cho máy một việc bản đặc tả nói không bao giờ
+         giao — và bớt thì không ai thấy, vì chín dòng vẫn đọc ra rất
+         đầy đủ.
+
+       · VIỆC CHƯA AI XẾP HẠNG phải rơi về VÀNG. Rơi về Xanh là để máy
+         tự làm một việc chưa ai xếp hạng, đúng cách một hệ lặng lẽ mở
+         rộng quyền của chính nó. */
+  {
+    const mBN = await import('../may-chu/bo-nao.js');
+    const khoBN = await p.evaluate(() => {
+      const G = window.G;
+      const hp = G.BN_HIENPHAP || [];
+      return {
+        hp: hp.map(x => [x.so, x.ma, x.ten, x.mayDo ? 'may' : 'nguoi']),
+        /* Khai CẢ HAI, hoặc khai THIẾU cả hai — hai kiểu hỏng khác nhau
+           nên đếm riêng, vì cách sửa khác nhau. */
+        caHai: hp.filter(x => x.mayDo && x.nguoiDo).map(x => x.ma),
+        khongKhai: hp.filter(x => !x.mayDo && !x.nguoiDo).map(x => x.ma),
+        rao: (G.BN_RAO10 || []).map(x => [x.ma, x.so, !!x.may, x.dieu]),
+        raoThieuO: (G.BN_RAO10 || []).filter(x => !x.ma || !x.hoi || !x.lam || !x.dieu)
+          .map(x => x.ma),
+        /* Mỗi điểm hàng rào phải trỏ về một ĐIỀU CÓ THẬT. Trỏ vào một
+           số điều không tồn tại thì điểm ấy không neo vào đâu cả. */
+        raoDieuLa: (G.BN_RAO10 || []).filter(x =>
+          !hp.some(d => d.so === x.dieu)).map(x => x.ma),
+        vung: (G.BN_VUNG || []).map(x => [x.ma, x.phan]),
+        soDo10: (G.BN_DO10 || []).length,
+        do10ThieuVi: (G.BN_DO10 || []).filter(x => !x.viec || !x.vi).map(x => x.so),
+        ghe: (G.BN_GHE || []).map(x => [x.ma, x.vai, !!x.phuQuyet]),
+        gheThieuHoi: (G.BN_GHE || []).filter(x => !x.hoi || !x.ra).map(x => x.ma),
+        anDanh: (G.BN_ANDANH || []).map(x => x.ma),
+        anDanhThieuThay: (G.BN_ANDANH || []).filter(x => !x.thay || !x.vi).map(x => x.ma)
+      };
+    });
+
+    const r = {};
+    r.hpKhop = JSON.stringify(khoBN.hp) === JSON.stringify(mBN.HIENPHAP || []);
+    r.raoKhop = JSON.stringify(khoBN.rao) === JSON.stringify(mBN.RAO10 || []);
+    r.vungKhop = JSON.stringify(khoBN.vung) === JSON.stringify(mBN.VUNG || []);
+    r.gheKhop = JSON.stringify(khoBN.ghe) === JSON.stringify(mBN.GHE || []);
+    r.anDanhKhop = JSON.stringify(khoBN.anDanh) === JSON.stringify(mBN.ANDANH || []);
+    r.caHai = khoBN.caHai; r.khongKhai = khoBN.khongKhai;
+    r.raoThieuO = khoBN.raoThieuO; r.raoDieuLa = khoBN.raoDieuLa;
+    r.soDo10 = khoBN.soDo10; r.do10ThieuVi = khoBN.do10ThieuVi;
+    r.gheThieuHoi = khoBN.gheThieuHoi; r.anDanhThieuThay = khoBN.anDanhThieuThay;
+    /* Đúng HAI ghế phủ quyết. Cho ghế thứ ba quyền ấy thì không đề xuất
+       nào đi qua nổi, và hội đồng thành chỗ chặn chứ không phải chỗ
+       tham mưu. */
+    r.soPhuQuyet = khoBN.ghe.filter(g => g[2]).length;
+
+    /* ══ GỌI THẲNG ══ */
+    const ban = mBN.soatRao10('Phương pháp tốt nhất Việt Nam, cam kết con giỏi lên ' +
+      '300% sau 90 ngày. Cháu nào cũng đạt. Cha mẹ sai cách thì con mới kém.');
+    const maB = ban.pham.map(x => x.ma);
+    /* "bé tập bò" là TÊN Điều 4 của chính Hiến pháp — không trừ cụm ghép
+       thì hàng rào bắt oan ngay chính hiến pháp của nó. */
+    const beTB = mBN.soatRao10('Viết theo lối bé tập bò: một câu, một hình, một bước.');
+    r.raoChayThat = !ban.dat && ['R1', 'R2', 'R4', 'R5', 'R8'].every(m => maB.indexOf(m) >= 0) &&
+      beTB.pham.map(x => x.ma).indexOf('R5') < 0 &&
+      /* R9 KHÔNG bao giờ nằm trong phần máy chấm. */
+      maB.indexOf('R9') < 0 && ban.nguoiPhaiDoc.indexOf('R9') >= 0 &&
+      ban.soDiemMayDo === 9;
+
+    const coTen = mBN.soatRaNgoai('nhà chị Nguyễn Thị Lan, gọi 0912345678, ' +
+      'con học trường THCS Lê Quý Đôn');
+    const daAn = mBN.soatRaNgoai('phụ huynh A, con 9 tuổi, vào qua cửa làm, sợ bị cười');
+    const maAD = coTen.ngo.map(x => x.ma);
+    r.anDanhChayThat = !coTen.sach && daAn.sach === true &&
+      ['AD-TEN', 'AD-SDT', 'AD-TRUONG'].every(m => maAD.indexOf(m) >= 0);
+
+    const vLa = mBN.vungCuaViec('mot-viec-chua-ai-xep-hang');
+    r.vungChayThat = vLa.vung === 'VANG' && vLa.macDinh === true &&
+      mBN.vungCuaViec('datGia').vung === 'DO' &&
+      mBN.vungCuaViec('guiWowTheoLich').vung === 'XANH';
+
+    const bnDat =
+      r.hpKhop && r.raoKhop && r.vungKhop && r.gheKhop && r.anDanhKhop &&
+      !r.caHai.length && !r.khongKhai.length && !r.raoThieuO.length &&
+      !r.raoDieuLa.length && r.soDo10 === 10 && !r.do10ThieuVi.length &&
+      !r.gheThieuHoi.length && !r.anDanhThieuThay.length && r.soPhuQuyet === 2 &&
+      r.raoChayThat && r.anDanhChayThat && r.vungChayThat;
+
+    bao(bnDat,
+      'BỘ NÃO GITA 365: HIẾN PHÁP KHÔNG TRÔI KHỎI BẢN GỐC, VÀ ĐIỀU 13 CÓ RĂNG THẬT. Bản đặc tả đặt Hiến pháp trên cùng sơ đồ kèm một câu "không phân hệ nào vượt qua" — mà máy chủ không đọc được kho đã mã hoá nên buộc phải giữ một bản chép, và bản chép là chỗ mục lặng lẽ nhất: kho sửa một điều, bản chép ở nguyên, và từ đó hàng rào chặn theo một luật chưa ai duyệt mà không báo gì cả. Nên đối chiếu TỪNG Ô rồi GỌI THẲNG cả ba bộ dò. Đo thêm ba thứ đọc chú giải không thấy được: mỗi điều phải khai ĐÚNG MỘT trong hai đường đo — khai cả `mayDo` lẫn `nguoiDo` là để ngỏ cho người duyệt tưởng máy đã kiểm, còn khai thiếu cả hai là một điều không ai canh, và cả hai kiểu hỏng đều đọc ra rất tử tế; danh sách mười quyết định Vùng Đỏ phải đúng MƯỜI, vì bớt một dòng là giao cho máy một việc bản đặc tả nói không bao giờ giao và chín dòng còn lại vẫn đọc ra đầy đủ; và một việc CHƯA AI XẾP HẠNG phải rơi về VÀNG chứ không rơi về XANH, vì rơi về Xanh là để máy tự làm một việc chưa ai xếp hạng — đúng cách một hệ lặng lẽ mở rộng quyền của chính nó. Đúng hai ghế được phủ quyết: cho ghế thứ ba quyền ấy thì không đề xuất nào đi qua nổi và hội đồng thành chỗ chặn chứ không phải chỗ tham mưu',
+      bnDat
+        ? khoBN.hp.length + ' điều · ' + khoBN.hp.filter(x => x[3] === 'may').length +
+          ' điều máy đo được, ' + khoBN.hp.filter(x => x[3] === 'nguoi').length +
+          ' điều người đọc · hàng rào ' + khoBN.rao.length + ' điểm, máy dò 9 · ' +
+          r.soDo10 + ' quyết định Vùng Đỏ · ' + khoBN.ghe.length + ' ghế, ' +
+          r.soPhuQuyet + ' ghế phủ quyết · ' + khoBN.anDanh.length +
+          ' thứ phải ẩn danh · ba bộ dò đều chạy thật'
+        : [!r.hpKhop ? 'BẢN CHÉP HIẾN PHÁP Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !r.raoKhop ? 'BẢN CHÉP HÀNG RÀO Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !r.vungKhop ? 'BẢN CHÉP BA VÙNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !r.gheKhop ? 'BẢN CHÉP BẢY GHẾ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !r.anDanhKhop ? 'BẢN CHÉP BẢNG ẨN DANH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           r.caHai.length ? 'ĐIỀU KHAI CẢ mayDo LẪN nguoiDo (để ngỏ cho người ' +
+             'duyệt tưởng máy đã kiểm): ' + r.caHai.join(' · ') : '',
+           r.khongKhai.length ? 'ĐIỀU KHÔNG AI CANH — thiếu cả mayDo lẫn nguoiDo: ' +
+             r.khongKhai.join(' · ') : '',
+           r.raoThieuO.length ? 'điểm hàng rào thiếu ô: ' + r.raoThieuO.join(' · ') : '',
+           r.raoDieuLa.length ? 'ĐIỂM HÀNG RÀO TRỎ VÀO ĐIỀU KHÔNG CÓ THẬT: ' +
+             r.raoDieuLa.join(' · ') : '',
+           r.soDo10 !== 10 ? 'VÙNG ĐỎ CÓ ' + r.soDo10 + ' QUYẾT ĐỊNH, không phải 10' : '',
+           r.do10ThieuVi.length ? 'quyết định Vùng Đỏ thiếu lý do: ' +
+             r.do10ThieuVi.join(' · ') : '',
+           r.gheThieuHoi.length ? 'ghế thiếu câu hỏi hoặc thiếu ô xuất ra: ' +
+             r.gheThieuHoi.join(' · ') : '',
+           r.soPhuQuyet !== 2 ? 'CÓ ' + r.soPhuQuyet + ' GHẾ PHỦ QUYẾT, không phải 2' : '',
+           r.anDanhThieuThay.length ? 'mục ẩn danh thiếu ô `thay` hoặc `vi`: ' +
+             r.anDanhThieuThay.join(' · ') : '',
+           !r.raoChayThat ? 'HÀNG RÀO KHÔNG CHẠY THẬT (hoặc nó bắt oan cụm ghép ' +
+             '"bé tập bò" — tên của chính Điều 4 — hoặc nó chấm luôn R9)' : '',
+           !r.anDanhChayThat ? 'PHÉP DÒ ẨN DANH KHÔNG CHẠY THẬT (hoặc nó bắt oan ' +
+             'bản đã ẩn danh đúng cách)' : '',
+           !r.vungChayThat ? 'VIỆC CHƯA AI XẾP HẠNG KHÔNG RƠI VỀ VÀNG' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
 
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));

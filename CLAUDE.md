@@ -641,6 +641,90 @@ nó đi. Nay định danh lùi dần: `ma → id → code → câu hỏi đã c�
 
 ---
 
+## BỘ NÃO GITA 365 — phần 1: hiến pháp và hàng rào (9.99.62)
+
+Theo bản đặc tả `GITA-BRAIN-365-v3.0` của chủ hệ. Màn **Bộ não GITA
+365** (`src/bo-nao.js`, năm ngăn), máy chủ `may-chu/bo-nao.js`, kho
+`data.bo-nao.js` (11 kho), bộ kiểm **mục 78**.
+
+Bảy phân hệ của bản đặc tả sẽ dựng sau. Phần này dựng **cái trần**, vì
+sơ đồ của chính bản đặc tả đặt Hiến pháp ở trên cùng kèm một câu:
+*"không phân hệ nào vượt qua"*. Dựng bảy phân hệ trước rồi mới dựng
+hiến pháp là dựng bảy cái cửa rồi mới hỏi cửa mở cho ai — tới lúc ấy
+mỗi cửa đã có một luật riêng và gom lại thì không gom được nữa.
+
+### Mỗi điều khai ĐÚNG MỘT đường đo
+
+Bản đặc tả viết mười ba điều bằng giọng ngang nhau. Máy chỉ đo được
+**tám**. Trình cả mười ba như đã kiểm thì người duyệt thấy mười ba dấu
+tick rồi thôi không đọc — và năm điều nặng nhất về NGƯỜI (Đứa trẻ ·
+Quyền tự chủ · Công bằng) lại đúng là năm điều không ai đọc nữa.
+
+Nên mỗi điều có `mayDo` **hoặc** `nguoiDo`, không bao giờ cả hai và
+không bao giờ thiếu cả hai — mục 78 canh đúng chỗ ấy. Cùng luật với ô
+`daGoNgoai` (9.99.58) và cột lời khai của phễu (9.99.59).
+
+### Điều 13 có RĂNG ở cửa đi ra — và đó là một lỗ đang mở
+
+Luật vận hành số 1: *mọi ghi chép về một gia đình hoặc một đứa trẻ
+không bao giờ rời hệ ở dạng nhận dạng được.*
+
+`guiDeBaiRaNgoai` đã chạy từ 9.99.5x và kiểm quyền · kiểm bậc · kiểm
+cổng — **không kiểm một chữ nào về dữ liệu người**. Tới hôm qua, một
+cái tên trẻ con lọt vào ô nội dung thì nó đi thẳng ra bộ tạo ảnh đặt ở
+nước ngoài, và Luật số 91/2025/QH15 gọi đó là **xử lý dữ liệu xuyên
+biên giới**.
+
+Phép soi đặt ở **lúc chuỗi rời khỏi hệ**, không ở lúc đề xuất: trong hệ
+thì dữ liệu gia đình được phép có mặt. Và soi **chuỗi đã dựng xong**,
+không soi từng ô — một cái tên nằm ở ô nội dung, ô bố cục hay ô điều
+nhỏ đều như nhau, và soi từng ô là ba phép soi phải cùng nhớ.
+
+Hai luật của cửa ấy:
+- **Ngờ là đủ để chặn.** Bắt oan tốn ba mươi giây sửa lại; lọt một cái
+  tên thì nó đã ra khỏi hệ và không gọi về được.
+- **Máy KHÔNG tự xoá hộ.** Tự xoá thì người gửi không biết mình vừa
+  suýt gửi cái gì, và lần sau viết y hệt — tệ hơn, một phép xoá tự động
+  sót một chỗ thì người gửi đã yên tâm rồi.
+
+### Ba chỗ máy cố ý không làm thay
+
+1. **R9 (nhắc năng lực GITA chưa có) luôn là việc của người.** Máy
+   không biết GITA đang có năng lực gì — danh sách ấy đổi mỗi bản, và
+   một bản chép của nó trong bộ dò sẽ cũ đi lặng lẽ. Máy đo **9/10**
+   điểm và nói thẳng ra.
+2. **Việc chưa ai xếp hạng rơi về VÀNG**, không rơi về Xanh. Rơi về
+   Xanh là để máy tự làm một việc chưa ai xếp hạng — đúng cách một hệ
+   lặng lẽ mở rộng quyền của chính nó.
+3. **Hàng rào nêu TỪNG ĐIỂM**, không gộp thành một con số: chín điểm
+   sạch và một điểm phạm nặng cần cách xử lý khác hẳn mười điểm hơi
+   phạm.
+
+### Hai chỗ phép đo cũ bắt được ngay
+
+- **`hoSo.role`, không phải `hoSo.vai`** — cùng cái bẫy đã cắn ở
+  9.99.55 với `hoSo.username`. Gõ tên ô khác thì JavaScript trả
+  `undefined`, phép thử sai, và **cổng đóng với mọi người trong im
+  lặng**. Bốn dòng đỏ ở bốn cửa cùng lúc.
+- **Khoá màn ở `qt_trang` là mâu thuẫn với chính bản đặc tả.** Phép đo
+  tỉ lệ hiển thị (mục 11) bắt R07 · R08 · R12 tụt dưới đích — và Phân
+  hệ 6 viết *"Trainer, coach, tư vấn viên đều phải học và thi cùng một
+  Hiến pháp 13 điều"*, gọi đó là **đồng chuẩn**. Khoá hiến pháp ở tầng
+  quản trị là làm cho người chạm khách nhiều nhất lại không đọc được
+  luật mình phải theo. Nay `perm:'nghe_chung'`.
+
+### Hai chỗ cố ý KHÔNG dựng
+
+- **Không chép lại `HP_LUAT` (7 luật tiền) và `KN_CHUAN_NGHE`.** Hiến
+  pháp đứng **trên** hai cái ấy; chúng là cách thi hành nó ở hai phạm
+  vi hẹp. Khai lại là dựng bản thứ hai của một sự thật.
+- **Không dựng lại hệ trên FastAPI + React + vector DB** như một bản
+  đặc tả khác đề nghị. Kho này là vanilla JS không có bước biên dịch,
+  chạy trên Cloudflare Workers + D1, và đã có 972 kho · 992 phép đo.
+  Đổi nền là ném hết đi để bắt đầu lại — xem phần bàn ở cuối tệp này.
+
+---
+
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**

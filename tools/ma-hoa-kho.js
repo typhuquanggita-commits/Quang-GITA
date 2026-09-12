@@ -285,6 +285,10 @@ const NGHE = [
   'BLV_DACHOT', 'BV_DACHOT', 'TV_DACHOT',
   /* 9.99.59 — đo phễu · sổ truy vết · mười quy trình ứng phó */
   'TG_UNGPHO', 'TG_UNGPHO_LUAT', 'TG_PHEU', 'TG_PHEU_LUAT',
+  /* 9.99.62 — BỘ NÃO phần 1: hiến pháp · ba vùng · hàng rào 10 điểm */
+  'BN_HIENPHAP', 'BN_HIENPHAP_LUAT', 'BN_VUNG', 'BN_DO10', 'BN_VUNG_LUAT',
+  'BN_RAO10', 'BN_ANDANH', 'BN_ANDANH_LUAT', 'BN_GHE', 'BN_GHE_LUAT',
+  'BN_CHOCHU',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */
