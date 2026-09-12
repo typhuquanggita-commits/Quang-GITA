@@ -1406,3 +1406,39 @@ CREATE TABLE IF NOT EXISTS dangTamThiGiac (
 
 CREATE INDEX IF NOT EXISTS ix_dtg_dx ON dangTamThiGiac (idDeXuat, luc DESC);
 CREATE INDEX IF NOT EXISTS ix_dtg_go ON dangTamThiGiac (goTrongSo, daGoNgoai);
+
+-- ═════════════════════════════════════════════════════════════
+--  SỐ LIỆU KÊNH NGOÀI — bản 9.99.60, nửa LỜI KHAI của phễu
+--
+--  Bản 9.99.59 khai ba bậc XEM · BAM · NHAN_VE là LỜI KHAI, rồi
+--  KHÔNG dựng chỗ nào để ghi chúng. Theo đúng luật của kho thì mục ấy
+--  không phải một việc chờ — nó là một lời than.
+--
+--  Bảng này là chỗ ghi. Ba luật của nó:
+--
+--  1. Một dòng là một LƯỢT ĐỌC BẢNG của nền tảng, không phải một con
+--     số cộng dồn. Người ta đọc bảng ngày 3 và ngày 10; giữ cả hai thì
+--     về sau còn biết con số lớn lên thế nào. Ghi đè một ô "tổng" thì
+--     mất hẳn phần ấy, và không ai biết là đã mất.
+--
+--  2. Ô boiAi và luc BẮT BUỘC. Đây là con số gõ tay — không biết ai gõ
+--     và gõ lúc nào thì nó không kiểm lại được, và một con số không
+--     kiểm lại được thì tệ hơn không có.
+--
+--  3. Nối vào LƯỢT ĐĂNG, không nối vào đề xuất. Cùng một tấm đăng ở ba
+--     kênh thì ba kênh có ba con số khác nhau, và gộp chúng lại là mất
+--     đúng câu hỏi đáng hỏi nhất: kênh nào đang chạy.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS khaiSoNgoai (
+  id        TEXT PRIMARY KEY,
+  idDang    TEXT NOT NULL,       -- trỏ vào dangTamThiGiac.id
+  ngayDoc   TEXT NOT NULL,       -- ngày người ta đọc bảng của nền tảng
+  xem       INTEGER,
+  bam       INTEGER,
+  nhanVe    INTEGER,
+  boiAi     TEXT NOT NULL,
+  luc       TEXT NOT NULL,
+  ghiChu    TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_ksn_dang ON khaiSoNgoai (idDang, ngayDoc DESC);

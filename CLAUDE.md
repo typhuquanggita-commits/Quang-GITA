@@ -531,6 +531,36 @@ Màn xếp tờ **GẤP lên trước**, không xếp theo mã: xếp theo mã t
 *"bộ kiểm đỏ trước giờ phát hành"* nằm cạnh tờ *"người trong ảnh rút
 lời đồng ý"* như thể hai việc cùng một nhịp — mà chúng không cùng.
 
+## Trợ lý hình ảnh — khép lại (9.99.60)
+
+Bản đặc tả GIDA **đã xong cả mười phần**. Bản này vá hai chỗ chính lượt
+soi lại tìm ra, chứ không thêm phần mới.
+
+**1. Nửa lời khai của phễu chưa có chỗ ghi.** 9.99.59 khai ba bậc XEM ·
+BAM · NHAN_VE là *lời khai* rồi không dựng chỗ nào để ghi — theo đúng
+luật của chính kho này thì mục ấy không phải việc chờ, nó là **một lời
+than**. Nay có bảng `khaiSoNgoai` và cửa `khaiSoKenhNgoai`.
+
+Ba luật của bảng ấy:
+- Một dòng là **một lượt đọc bảng**, không phải một con số cộng dồn. Ghi
+  đè một ô "tổng" thì mất hẳn phần lịch sử, và không ai biết là đã mất.
+- **Ngày đọc bảng do người khai**, máy không lấy ngày hôm nay thay —
+  người ta hay đọc bảng tuần trước rồi mới ngồi gõ.
+- **Để TRỐNG khác hẳn số 0**: trống là không đọc được, 0 là đọc được và
+  bằng không. Phép cộng bỏ qua ô trống và **đếm riêng cỡ mẫu** (`tren`).
+
+Có chỗ ghi **không** làm con số thành phép đo — nó vẫn ở ngăn lời khai,
+vì máy chủ vẫn không nhìn thấy kênh ngoài. Cái nó có thêm là *ai gõ và
+gõ lúc nào*: kiểm lại được, chứ không đúng hơn.
+
+**2. Mười tờ ứng phó trỏ vào chỗ nào thì phải KHAI, không để phép đo dò
+chữ.** Bản đầu của phép kiểm dò tên cửa trong câu văn của từng bước. Phá
+thử mới thấy nó **câm đúng ở chỗ nguy hiểm nhất**: đổi `goTamThiGiac`
+thành `goTamHinhAnh` thì phép dò không nhận ra cái tên mới nên không bắt
+gì cả. **Phép dò chữ chỉ kiểm được những tên nó ĐÃ BIẾT — tức là đúng
+những tên không có nguy cơ.** Nay mỗi tờ khai thẳng ô `cua` và `congCu`,
+và mỗi ô được đối chiếu với cửa máy chủ thật / tệp thật trên đĩa.
+
 ---
 
 ## Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm
@@ -538,6 +568,20 @@ lời đồng ý"* như thể hai việc cùng một nhịp — mà chúng khôn
 Viết xong một phép kiểm mới thì **cố tình làm hỏng dữ liệu** để xem nó có
 đỏ đúng chỗ không, rồi mới trả dữ liệu về. Luật này đã bắt được ba phép
 kiểm câm trong kho này.
+
+### Và phá thử phải xem cả DÒNG CHI TIẾT, không chỉ xem màu
+
+Một mục **đỏ mà in ra câu khoe** thì gần như vô dụng: người đọc mất thêm
+một vòng đi tìm, và lần thứ ba nó giấu luôn một phép đo câm.
+
+Nguyên nhân luôn là một: điều kiện của `bao()` và điều kiện của câu chi
+tiết là **hai bản chép viết tay của cùng một biểu thức**, và thêm cờ mới
+thì người ta chỉ sửa bản thứ nhất. Đúng thứ luật của kho cấm — bản thứ
+hai của một sự thật.
+
+Chuyện này đã xảy ra **ba lần** ở mục 71. Nay biểu thức tính **một lần**
+vào `const tgDat`, và cả hai chỗ cùng đọc nó; thêm cờ mới thì sửa đúng
+một chỗ. Mục nào còn giữ hai bản chép thì đấy là chỗ sắp trôi tiếp.
 
 ---
 

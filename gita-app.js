@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.59',
+  version: '9.99.60',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -38117,7 +38117,53 @@ G.VIEWS = G.VIEWS || {};
         }).join('') +
         '<p class="sm muted mt">Máy chủ Học viện không nhìn thấy kênh ngoài. Đặt ' +
         'chúng vào bảng trên với giá trị 0 là để người đọc tin chúng như tin sáu ' +
-        'con số kia, nên máy không đặt.</p></div>';
+        'con số kia, nên máy không đặt.</p>' +
+        /* Từ 9.99.60 chúng CÓ chỗ ghi — và con số đọc lại vẫn nằm trong
+           chính khối này, không leo sang bảng đo được. */
+        (function () {
+          var k = p.loiKhai || {};
+          if (!k.soLuotDaKhai) return '<p class="sm mt"><b>' + h(k.vi || '') + '</b></p>';
+          return '<p class="sm mt"><b>Đã có người gõ ' + h(String(k.soLuotDaKhai)) +
+            ' lượt.</b></p>' +
+            ['XEM', 'BAM', 'NHAN_VE'].map(function (m) {
+              var o2 = k[m];
+              var ten = ((G.TG_PHEU || []).filter(function (x) { return x.ma === m; })[0]
+                || {}).ten || m;
+              return '<p class="sm mt">' + h(ten) + ': ' + (o2
+                ? '<b>' + h(String(o2.tong)) + '</b> <span class="muted">trên ' +
+                  h(String(o2.tren)) + ' lượt đăng</span>'
+                : '<span class="muted">chưa ai đọc được ô này</span>') + '</p>';
+            }).join('') +
+            '<p class="tiny muted mt">' + h(k.vi || '') + '</p>';
+        })() + '</div>';
+
+      /* Chỗ GÕ nằm ngay dưới khối lời khai, không nằm cạnh bảng đo được:
+         đứng cạnh bảng đo được thì người gõ tưởng mình đang bổ sung vào
+         cùng một bảng. */
+      o += '<div class="card mt2">' +
+        '<b class="sm">Gõ số đọc được từ bảng của nền tảng</b>' +
+        '<div class="row mt" style="gap:10px;flex-wrap:wrap">' +
+        '<label class="sm" style="flex:1 1 200px"><b>Mã lượt đăng</b>' +
+        '<input id="ktKsDang" class="inp" maxlength="60"></label>' +
+        '<label class="sm" style="flex:1 1 160px"><b>Ngày đọc bảng</b>' +
+        '<input id="ktKsNgay" class="inp" type="date"></label></div>' +
+        '<div class="row mt" style="gap:10px;flex-wrap:wrap">' +
+        '<label class="sm" style="flex:1 1 130px"><b>Lượt xem</b>' +
+        '<input id="ktKsXem" class="inp" inputmode="numeric"></label>' +
+        '<label class="sm" style="flex:1 1 130px"><b>Lượt bấm</b>' +
+        '<input id="ktKsBam" class="inp" inputmode="numeric"></label>' +
+        '<label class="sm" style="flex:1 1 130px"><b>Lượt nhắn về</b>' +
+        '<input id="ktKsNhan" class="inp" inputmode="numeric"></label></div>' +
+        /* Nói thẳng ở ngay chỗ gõ, không giấu trong chú giải: để TRỐNG
+           khác hẳn gõ số 0. */
+        '<p class="tiny muted mt">Ô nào không đọc được thì <b>để trống</b> — trống ' +
+        'nghĩa là không đọc được, khác hẳn số 0 nghĩa là đọc được và bằng không.</p>' +
+        '<div class="row mt2" style="gap:8px">' +
+        '<button class="btn primary" onclick="G.ktKhaiSo()">Ghi</button></div>' +
+        (G.ktKhaiRa ? '<p class="sm mt" style="color:var(--' +
+          (G.ktKhaiRa.ok ? 'ok' : 'bad') + ')">' +
+          h(G.ktKhaiRa.ok ? G.ktKhaiRa.vi : (G.ktKhaiRa.error || '')) + '</p>' : '') +
+        '</div>';
     }
 
     o += U.sec('Đời một tấm', 'nhật ký đã ghi đủ từ lâu — chỗ này gom lại một chỗ');
@@ -38161,6 +38207,19 @@ G.VIEWS = G.VIEWS || {};
 
   G.ktDoPheu = function () {
     G.goiMayChu('doPheuThiGiac', {}).then(function (d) { G.ktPheuRa = d; veLai(); });
+  };
+  G.ktKhaiSo = function () {
+    G.goiMayChu('khaiSoKenhNgoai', {
+      idDang: oGiaTri('ktKsDang'), ngayDoc: oGiaTri('ktKsNgay'),
+      xem: oGiaTri('ktKsXem'), bam: oGiaTri('ktKsBam'), nhanVe: oGiaTri('ktKsNhan')
+    }).then(function (d) {
+      G.ktKhaiRa = d;
+      /* Ghi xong thì đo lại ngay — không bắt người dùng bấm lần nữa để
+         thấy con số mình vừa gõ. */
+      if (d.ok) G.goiMayChu('doPheuThiGiac', {}).then(function (q) {
+        G.ktPheuRa = q; veLai(); });
+      else veLai();
+    });
   };
   G.ktDoiTam = function () {
     G.goiMayChu('doiMotTam', {id: oGiaTri('ktDtId')})

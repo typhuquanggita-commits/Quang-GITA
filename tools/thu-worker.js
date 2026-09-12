@@ -3562,7 +3562,7 @@ bao(raNgoai.than.daGui.indexOf(dungTang.than.tang) >= 0 &&
    ấy, ai đã lưu về hoặc chụp màn hình thì vẫn giữ. */
 /* Mã tấm của khối phần 9 dùng lại ở khối phần 10 — khai ở ngoài chứ
    không với tay vào phạm vi của khối kia. */
-let idTam9 = null;
+let idTam9 = null, idDang9 = null;
 {
   const nen9 = {tang:'T1', loaiHinh:'CONG', nhiemVu:'Mời nhà mở chặng bảy ngày',
     noiDung:'Trang mời nhà mở chặng bảy ngày nhận diện, có phiếu ghi bảy ngày ' +
@@ -3630,6 +3630,7 @@ let idTam9 = null;
   const dang = await goi({fn:'dangTamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
     id:de9.than.id, kenh:'DONG_TIN', kho:'DOC', duongDan:'https://vi.dụ/bài-1',
     lyDoNgoaiGio:'Nhà đang hỏi ngay trong nhóm, trả lời chậm thì mất nhịp.'});
+  idDang9 = dang.than.id;
   bao(dang.than.ok && dang.than.kenh === 'DONG_TIN',
     'ĐĂNG ĐƯỢC KHI ĐÃ PHÁT HÀNH, ĐÚNG KHỔ, VÀ CÓ CÂU GIẢI THÍCH NẾU NGOÀI GIỜ',
     dang.than.trongGioVang ? 'trong khung ' + dang.than.trongGioVang
@@ -3723,6 +3724,33 @@ let idTam9 = null;
       (doi.than.dang || []).length >= 1,
     'ĐỜI MỘT TẤM GOM ĐỦ: đề xuất · chuyển bậc · đăng · gỡ, xếp theo thời gian',
     viec.length + ' dòng nhật ký · ' + (doi.than.dang || []).length + ' lượt đăng');
+
+  /* ── NỬA LỜI KHAI CỦA PHỄU CÓ CHỖ GHI (9.99.60) ──
+     Bản trước khai ba bậc XEM · BAM · NHAN_VE là lời khai rồi KHÔNG
+     dựng chỗ nào để ghi chúng — theo luật của kho thì mục ấy không phải
+     việc chờ, nó là một lời than. */
+  const khongNgay = await goi({fn:'khaiSoKenhNgoai', token:tkSA,
+    u:'superadmin@gita365.vn', idDang:idDang9, xem:1200});
+  bao(!khongNgay.than.ok && khongNgay.than.code === 'THIEUNGAY',
+    'KHAI SỐ KÊNH NGOÀI PHẢI GHI NGÀY ĐỌC BẢNG — máy không lấy ngày hôm nay thay',
+    'người ta hay đọc bảng của tuần trước rồi mới ngồi gõ; gán ngày hôm nay thì ' +
+    'con số nằm sai chỗ trên trục thời gian mà không ai thấy');
+
+  const khai = await goi({fn:'khaiSoKenhNgoai', token:tkSA, u:'superadmin@gita365.vn',
+    idDang:idDang9, ngayDoc:'2026-09-10', xem:1240, nhanVe:7});
+  const ph2 = await goi({fn:'doPheuThiGiac', token:tkSA, u:'superadmin@gita365.vn'});
+  const lk = (ph2.than || {}).loiKhai || {};
+  bao(khai.than.ok && lk.soLuotDaKhai === 1 &&
+      lk.XEM && lk.XEM.tong === 1240 && lk.XEM.tren === 1 &&
+      /* Ô để TRỐNG khác hẳn số 0: trống là không đọc được, 0 là đọc được
+         và bằng không. Cộng trống thành 0 rồi trình ra một tổng là nói
+         dối về cỡ mẫu. */
+      lk.BAM === undefined &&
+      /* Và chúng KHÔNG được trộn vào bảng đo được, kể cả khi đã có người gõ. */
+      (ph2.than.doDuoc || {}).XEM === undefined,
+    'CÓ CHỖ GHI NỬA LỜI KHAI — nhưng nó VẪN ở ngăn riêng, không trộn vào bảng đo được',
+    'có chỗ ghi không làm con số thành phép đo: máy chủ vẫn không nhìn thấy kênh ' +
+    'ngoài. Cái nó có thêm là ai gõ và gõ lúc nào — kiểm lại được, chứ không đúng hơn');
 
   /* Dòng thời gian xếp TĂNG DẦN. Xếp giảm dần thì đọc đời một tấm phải
      đọc ngược, và người đọc mất chỗ ngay ở dòng thứ ba. */

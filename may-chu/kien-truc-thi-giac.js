@@ -868,6 +868,34 @@ export async function soDangBai(y, env, db, hoSo) {
 export const PHEU_DO = ['DE_XUAT', 'DUYET', 'PHAT_HANH', 'DANG', 'GO'];
 export const PHEU_KHAI = ['XEM', 'BAM', 'NHAN_VE'];
 
+/* Nửa lời khai, đọc từ sổ khaiSoNgoai. Cộng theo LẦN ĐỌC BẢNG MỚI NHẤT
+   của từng lượt đăng, không cộng mọi dòng: mỗi dòng là một lượt đọc
+   bảng của cùng một bài, nên cộng hết là cộng cùng một lượt xem nhiều
+   lần — con số phồng lên theo số lần ai đó ngồi gõ. */
+async function docLoiKhai(db) {
+  const r = await db.prepare(
+    'SELECT k.idDang, k.ngayDoc, k.xem, k.bam, k.nhanVe, k.boiAi, k.luc ' +
+    'FROM khaiSoNgoai k JOIN (SELECT idDang, MAX(ngayDoc) AS m FROM khaiSoNgoai ' +
+    'GROUP BY idDang) t ON k.idDang = t.idDang AND k.ngayDoc = t.m').all();
+  const ds = ((r && r.results) || []);
+  if (!ds.length) return {soLuotDaKhai: 0,
+    vi: 'Chưa ai gõ con số nào từ bảng của nền tảng.'};
+  /* Cộng bỏ qua ô TRỐNG, và ĐẾM RIÊNG số lượt có ô ấy. Trống nghĩa là
+     không đọc được ô ấy, khác hẳn số 0 nghĩa là đọc được và bằng không.
+     Cộng trống thành 0 rồi trình ra một tổng là nói dối về cỡ mẫu. */
+  const gom = (k) => {
+    const co = ds.filter(x => x[k] !== null && x[k] !== undefined);
+    return co.length ? {tong: co.reduce((a, b) => a + Number(b[k]), 0),
+      tren: co.length} : undefined;
+  };
+  const moiNhat = ds.map(x => x.luc).sort().slice(-1)[0];
+  return {soLuotDaKhai: ds.length, khaiGanNhat: moiNhat,
+    XEM: gom('xem'), BAM: gom('bam'), NHAN_VE: gom('nhanVe'),
+    vi: 'Cộng theo lần đọc bảng MỚI NHẤT của từng lượt đăng, trên ' + ds.length +
+      ' lượt. Mỗi ô kèm "trên bao nhiêu lượt" vì ô để TRỐNG nghĩa là không đọc ' +
+      'được, khác hẳn số 0 nghĩa là đọc được và bằng không.'};
+}
+
 export async function doPheuThiGiac(y, env, db, hoSo) {
   if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
     error: 'Cổng thiết kế mở cho R01–R05.'};
@@ -902,14 +930,77 @@ export async function doPheuThiGiac(y, env, db, hoSo) {
       GO_THAT_SU: Number((go && go.thatSu) || 0)
     },
     nhap: dem.nhap || 0, tuChoi: dem.tuChoi || 0,
-    /* KHÔNG trả về ba bậc khai với giá trị 0. Một số 0 nằm cùng bảng
-       với sáu số đo được thì đọc ra là "chưa ai xem", không đọc ra là
-       "máy không biết" — và hai câu ấy khác hẳn nhau. */
+    /* KHÔNG trả về ba bậc khai với giá trị 0, và không trộn chúng vào
+       `doDuoc` kể cả khi ĐÃ có người gõ vào. Một số 0 nằm cùng bảng với
+       sáu số đo được thì đọc ra là "chưa ai xem", không đọc ra là "máy
+       không biết" — và hai câu ấy khác hẳn nhau.
+
+       Từ 9.99.60 chúng có chỗ ghi, nên trả về ở một ngăn RIÊNG kèm số
+       lượt khai và lần khai gần nhất. Có chỗ ghi không làm chúng thành
+       phép đo: máy chủ vẫn không nhìn thấy kênh ngoài. */
     khongDoDuoc: PHEU_KHAI,
+    loiKhai: await docLoiKhai(db),
     vi: 'Sáu con số trên đều ĐO THẲNG trong sổ của Học viện, không ai gõ vào. ' +
       'Lượt xem · lượt bấm · lượt nhắn về thì máy chủ này KHÔNG nhìn thấy — ' +
       'chúng ở bảng của nền tảng ngoài. Đặt chúng vào cùng bảng này với giá trị ' +
       '0 là để người đọc tin chúng như tin sáu con số kia, nên máy không đặt.'};
+}
+
+/* ═══════════════ GHI NỬA LỜI KHAI CỦA PHỄU ═══════════════
+
+   Bản 9.99.59 khai ba bậc XEM · BAM · NHAN_VE là LỜI KHAI, rồi KHÔNG
+   dựng chỗ nào để ghi chúng. Theo đúng luật của kho thì mục ấy không
+   phải một việc chờ — nó là một lời than. Đây là chỗ ghi.
+
+   Con số vẫn là LỜI KHAI, và nó ở LẠI trong ngăn lời khai mãi mãi.
+   Có chỗ ghi không làm nó thành phép đo: máy chủ này vẫn không nhìn
+   thấy kênh ngoài. Cái nó có thêm là ai gõ và gõ lúc nào — tức là
+   kiểm lại được, chứ không phải đúng hơn. */
+export async function khaiSoKenhNgoai(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+
+  const d = await db.prepare('SELECT id, kenh FROM dangTamThiGiac WHERE id = ?')
+    .bind(String(y.idDang || '')).first();
+  if (!d) return {ok: false, error: 'Không tìm thấy lượt đăng này.'};
+
+  /* Ngày ĐỌC BẢNG, do người khai — không lấy ngày hôm nay. Người ta hay
+     đọc bảng của tuần trước rồi mới ngồi gõ vào, và gán ngày hôm nay
+     thì con số nằm sai chỗ trên trục thời gian, im lặng. */
+  const ngay = String(y.ngayDoc || '').trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(ngay)) return {ok: false, code: 'THIEUNGAY',
+    error: 'Phải ghi NGÀY ĐỌC BẢNG theo dạng 2026-09-12. Máy không lấy ngày hôm ' +
+      'nay thay: người ta hay đọc bảng của tuần trước rồi mới ngồi gõ, và gán ' +
+      'ngày hôm nay thì con số nằm sai chỗ trên trục thời gian mà không ai thấy.'};
+
+  const so = ['xem', 'bam', 'nhanVe'].map(k => {
+    const v = y[k];
+    if (v === undefined || v === null || v === '') return null;
+    const n = Number(v);
+    return (isNaN(n) || n < 0) ? NaN : Math.round(n);
+  });
+  if (so.some(v => Number.isNaN(v))) return {ok: false,
+    error: 'Ba ô số chỉ nhận số không âm, hoặc để trống. Để trống nghĩa là ' +
+      'KHÔNG ĐỌC ĐƯỢC ô ấy — khác hẳn với số 0, nghĩa là đọc được và bằng không.'};
+  if (so.every(v => v === null)) return {ok: false,
+    error: 'Cả ba ô đều trống thì không có gì để ghi.'};
+
+  const id = 'KS-' + Date.now().toString(36) + '-' +
+    Math.random().toString(36).slice(2, 7);
+  await db.prepare(
+    'INSERT INTO khaiSoNgoai (id,idDang,ngayDoc,xem,bam,nhanVe,boiAi,luc,ghiChu) ' +
+    'VALUES (?,?,?,?,?,?,?,?,?)'
+  ).bind(id, d.id, ngay, so[0], so[1], so[2], hoSo.u, new Date().toISOString(),
+    String(y.ghiChu || '').slice(0, 300) || null).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_KHAISO',
+    doiTuong: d.id, chiTiet: d.kenh + ' · ' + ngay + ' · xem ' + (so[0] ?? '—') +
+      ' · bấm ' + (so[1] ?? '—') + ' · nhắn ' + (so[2] ?? '—')});
+
+  return {ok: true, id, idDang: d.id, kenh: d.kenh, ngayDoc: ngay,
+    vi: 'Đã ghi. Ba con số này vẫn là LỜI KHAI và ở lại trong ngăn lời khai — ' +
+      'có chỗ ghi không làm chúng thành phép đo, vì máy chủ vẫn không nhìn thấy ' +
+      'kênh ngoài. Cái chúng có thêm là ai gõ và gõ lúc nào.'};
 }
 
 /* ═══════════════ ĐỜI MỘT TẤM — SỔ TRUY VẾT ═══════════════

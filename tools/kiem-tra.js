@@ -10549,9 +10549,44 @@ const { chromium } = require(PW);
             !x.trong || !x.vi || !(x.buoc || []).length).map(x => x.ma),
           /* Một tờ một bước thì nó không phải quy trình, nó là một câu. */
           itBuoc: up.filter(x => (x.buoc || []).length < 3).map(x => x.ma),
-          soGap: up.filter(x => x.gap).length
+          soGap: up.filter(x => x.gap).length,
+          /* ── MỖI TỜ KHAI THẲNG CỬA VÀ CÔNG CỤ NÓ DÙNG ──
+
+             Một tờ ứng phó dẫn tới một cửa đã đổi tên là tệ hơn không có
+             tờ nào: người đọc làm theo, không thấy cửa ấy, và mất đúng
+             khoảng thời gian mà tờ này sinh ra để tiết kiệm.
+
+             Bản đầu của phép đo này DÒ CHỮ trong câu của từng bước. Phá
+             thử mới thấy nó câm đúng ở chỗ nguy hiểm nhất: đổi
+             `goTamThiGiac` thành `goTamHinhAnh` thì phép dò không nhận
+             ra cái tên mới nên KHÔNG BẮT GÌ CẢ. Phép dò chữ chỉ kiểm
+             được những tên nó ĐÃ BIẾT — tức là đúng những tên không có
+             nguy cơ.
+
+             Nên mỗi tờ KHAI THẲNG ô `cua` và `congCu`. Khai thì đối
+             chiếu được từng ô, và một cửa đổi tên là đỏ ngay. */
+          troToi: [].concat.apply([], up.map(x => (x.cua || []).concat(x.congCu || []))),
+          maGoNhac: [].concat.apply([], up.map(x => x.maGo || [])),
+          /* Tờ nào nói tới việc GỠ thì phải khai mã lý do gỡ. Không khai
+             thì người đọc phải tự chọn mã, và tự chọn là chỗ chọn nhầm. */
+          goKhongKhaiMa: up.filter(x => /goTamThiGiac/.test((x.cua || []).join(' ')) &&
+            !(x.maGo || []).length).map(x => x.ma)
         };
       });
+      /* Tên cửa đối chiếu với những cửa máy chủ THẬT SỰ mở ra; đường
+         dẫn công cụ đối chiếu với tệp thật trên đĩa. */
+      const cuaThat = Object.keys(mTG);
+      const fsU = require('fs'), pxU = require('path');
+      ra.tgUngPhoTroHong = Array.from(new Set(khoP.troToi)).filter(t =>
+        t.startsWith('tools/')
+          ? !fsU.existsSync(pxU.join(__dirname, '..', t))
+          : cuaThat.indexOf(t) < 0);
+      /* Đếm luôn SỐ ô đã khai: một bảng khai rỗng hết thì mọi phép đối
+         chiếu ở trên đều xanh, vì không có gì để đối chiếu. */
+      ra.tgUngPhoTroSo = khoP.troToi.length;
+      const maGo = (mTG.GO_LY_DO || []).map(g => g[0]);
+      ra.tgUngPhoMaGoLa = Array.from(new Set(khoP.maGoNhac)).filter(m => maGo.indexOf(m) < 0);
+      ra.tgUngPhoGoThieuMa = khoP.goKhongKhaiMa;
       ra.tgPheuNguonLa = khoP.nguonLa;
       ra.tgUngPhoThieuO = khoP.thieuO;
       ra.tgUngPhoItBuoc = khoP.itBuoc;
@@ -10573,7 +10608,21 @@ const { chromium } = require(PW);
         xe.lop.map(x => x.lop).join('·') === 'L1';
     }
 
-  bao(ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
+  /* ══ MỘT BOOLEAN, MỘT BẢN ══
+
+     Điều kiện của PHÉP ĐO và điều kiện của CÂU KHOE từng là hai bản
+     chép viết tay của cùng một biểu thức — và chúng đã trôi khỏi nhau
+     BA LẦN trong kho này. Mỗi lần y hệt nhau: thêm một cờ mới vào phép
+     đo mà quên thêm vào câu khoe, nên mục ĐỎ mà dòng chi tiết vẫn in
+     nguyên câu "mọi thứ đều đạt". Đỏ mà không nói vì sao thì người đọc
+     mất thêm một vòng đi tìm, và lần thứ ba thì nó giấu luôn một phép
+     đo câm.
+
+     Đây đúng là thứ luật của kho cấm: bản thứ hai của một sự thật.
+     Nên nay tính MỘT LẦN vào `tgDat`, và cả hai chỗ cùng đọc nó. Thêm
+     cờ mới thì sửa đúng một chỗ. */
+  const tgDat =
+ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
       ra.tgDnCamKhop && ra.tgDnChanThat && !ra.tgDnThieuO.length &&
       (ra.tgDnMa || []).length === 3 && ra.tgDnKhuon4 ===
         '1:Lắng → 2:Nói điều đã hiểu → 3:Hỏi rõ → 4:Nói bước tiếp' &&
@@ -10589,20 +10638,18 @@ const { chromium } = require(PW);
       !ra.tgKenhThieuVi.length && !ra.tgGoThieuVi.length && !ra.tgKenhKhoLa.length &&
       ra.tgPheuKhop && !ra.tgPheuNguonLa.length &&
       ra.tgUngPhoSo === 10 && !ra.tgUngPhoThieuO.length && !ra.tgUngPhoItBuoc.length &&
-      ra.tgUngPhoGap > 0,
+      ra.tgUngPhoGap > 0 &&
+      !ra.tgUngPhoTroHong.length && !ra.tgUngPhoMaGoLa.length &&
+      !ra.tgUngPhoGoThieuMa.length && ra.tgUngPhoTroSo >= 10;
+
+  bao(tgDat,
     'CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC CHẶN THEO RANH GIỚI ĐÃ DUYỆT, KHÔNG THEO MỘT DANH SÁCH TỰ NGHĨ RA. Bản đặc tả của chủ hệ đề nghị dựng "Boundary Definition" cho từng Tầng với ô Allowed Concepts và ô Do NOT introduce. Hai ô ấy ĐÃ TỒN TẠI trong kho từ lâu và đang được dùng để bán hàng: HP_TANG[].gom và HP_TANG[].khong. Chép chúng sang một tệp mới là dựng bản thứ hai của một sự thật, và bản thứ hai không ai sửa khi bảng chặng đổi — tới lúc ấy máy chặn thiết kế theo một ranh giới đã cũ, im lặng. Máy chủ không đọc được kho đã mã hoá nên buộc phải giữ một bản chép TỐI THIỂU để dò, và phép đo này đối chiếu bản chép ấy với bản gốc THEO Ý chứ không theo từng chữ: kho viết thành câu cho người đọc, máy chủ giữ khoá ngắn để dò, nên luật là mỗi khoá máy chủ dùng phải TÌM THẤY trong câu khai của chính Tầng ấy. Khoá nào không tìm thấy là khoá tự nghĩ ra, và nó chặn thiết kế theo một ranh giới chưa ai duyệt — đúng cái mà luật "AI không được tự suy diễn" sinh ra để cấm. Phép đo cũng GỌI THẲNG cổng ấy với một nội dung T1 nói về Coach đồng hành và phác đồ rồi đòi nó chặn, vì đọc chú giải thì chú giải nói gì cũng được. Và mười hai loại hình phải có mặt đủ ở cả hai bên, mỗi loại khai đúng MỘT nhiệm vụ — nhồi hai việc vào một tấm thì người xem không nhớ được cái nào',
     /* ĐIỀU KIỆN CỦA CÂU KHOE PHẢI TRÙNG ĐIỀU KIỆN CỦA PHÉP ĐO.
        Bản đầu câu khoe chỉ hỏi hai cờ cũ, nên lúc phá thử bản chép bảng
        động từ, mục này ĐỎ mà dòng chi tiết vẫn in nguyên câu "mọi khoá
        dò đều tìm thấy…" — đỏ mà không nói vì sao thì người đọc mất thêm
        một vòng đi tìm. */
-    ra.tgNeoKhop && ra.tgMauKhop && ra.tgDnCamKhop && ra.tgDnChanThat &&
-    ra.tgYKhop && ra.tgQuyetKhop && ra.tgAnDuKhop && ra.tgTranKhop &&
-    ra.tgYDocThat && ra.tgQuyetChayThat && ra.tgTranChanThat &&
-    ra.tgBaYThat && ra.tgLop5That && ra.tgSuaKhop && ra.tgAdnKhop &&
-    ra.tgSuaChayThat && ra.tgAdnChanThat && ra.tgKenhKhop && ra.tgGioKhop &&
-    ra.tgGoKhop && ra.tgKenhChayThat && ra.tgGioChayThat && ra.tgPheuKhop &&
-    ra.tgUngPhoSo === 10 && !ra.tgUngPhoThieuO.length
+    tgDat
       ? '5 chặng · mọi khoá dò đều tìm thấy trong ô "không" của chính chặng ấy · ' +
         mTGSoLoai + ' loại hình đều có đúng một nhiệm vụ · cổng chặn thật · ' +
         (ra.tgMauKhop ? (mTG.MAU_RA || []).length + ' ô màu đi ra khớp bản gốc · ' : '') +
@@ -10647,6 +10694,16 @@ const { chromium } = require(PW);
            ra.tgUngPhoThieuO.join(', ') : '',
          (ra.tgUngPhoItBuoc || []).length ? 'tờ ứng phó dưới ba bước — đó là một câu, ' +
            'không phải một quy trình: ' + ra.tgUngPhoItBuoc.join(', ') : '',
+         (ra.tgUngPhoTroHong || []).length ? 'TỜ ỨNG PHÓ TRỎ VÀO THỨ KHÔNG CÓ THẬT: ' +
+           ra.tgUngPhoTroHong.join(' · ') + ' — người đọc làm theo, không thấy, và mất ' +
+           'đúng khoảng thời gian mà tờ ấy sinh ra để tiết kiệm' : '',
+         (ra.tgUngPhoMaGoLa || []).length ? 'TỜ ỨNG PHÓ NHẮC MÃ LÝ DO GỠ KHÔNG CÓ: ' +
+           ra.tgUngPhoMaGoLa.join(' · ') : '',
+         (ra.tgUngPhoGoThieuMa || []).length ? 'tờ gọi goTamThiGiac mà không khai mã lý do: ' +
+           ra.tgUngPhoGoThieuMa.join(' · ') : '',
+         ra.tgUngPhoTroSo !== undefined && ra.tgUngPhoTroSo < 10
+           ? 'MƯỜI TỜ CHỈ KHAI ' + ra.tgUngPhoTroSo + ' Ô cua/congCu — bảng khai rỗng ' +
+             'thì mọi phép đối chiếu đều xanh vì không có gì để đối chiếu' : '',
          !ra.tgKenhKhop ? 'BẢN CHÉP BẢNG KÊNH PHÁT Ở MÁY CHỦ LỆCH VỚI KHO' : '',
          !ra.tgGioKhop ? 'BẢN CHÉP BA KHUNG GIỜ VÀNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
          !ra.tgGoKhop ? 'BẢN CHÉP BẢNG LÝ DO GỠ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
