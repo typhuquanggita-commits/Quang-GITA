@@ -10433,6 +10433,69 @@ const { chromium } = require(PW);
       ra.tgGocNhin = khoY.gocNhin.join('·');
     }
 
+    /* ── GÓP Ý VÁ VÀO ĐÚNG LỚP, VÀ NĂM THỨ KHÔNG ĐƯỢC ĐỘNG TỚI ──
+
+       Luật `vaDungLop` và `khongXeDNA` đã nằm trong kho từ 9.99.55, và
+       tới 9.99.56 mới có máy canh. Một luật viết ra mà không máy nào
+       canh thì nó là một lời chú giải. */
+    {
+      const khoS = await p.evaluate(() => {
+        const G = window.G;
+        return {
+          sua: (G.TG_SUA_DAU || []).map(x => [x.lop, x.dau || []]),
+          adn: (G.TG_ADN || []).map(x => [x.ma, x.dau || []]),
+          thieuOAdn: (G.TG_ADN || [])
+            .filter(x => !x.ma || !x.ten || !x.vi || !x.aiDoi || !(x.dau || []).length)
+            .map(x => x.ma),
+          luat: Object.keys(G.TG_SUA_LUAT || {}).sort()
+        };
+      });
+      ra.tgAdnThieuO = khoS.thieuOAdn;
+      ra.tgSuaKhop = JSON.stringify(khoS.sua) === JSON.stringify(mTG.SUA_DAU || []);
+      ra.tgAdnKhop = JSON.stringify(khoS.adn) === JSON.stringify(mTG.ADN || []);
+      ra.tgSuaLuat = khoS.luat.join('·');
+
+      /* ══ GỌI THẲNG ══ */
+      const ba = mTG.vaGopY('Bố cục hơi chật ở mép trên. Nhìn lạnh quá, ánh ' +
+        'nhìn của nhân vật xa cách. Chữ ở dòng cuối bị sai dấu.');
+      /* Thứ tự năm lớp là trọng số, nên danh sách vá cũng phải đọc theo
+         thứ tự ấy — không theo thứ tự người ta gõ. */
+      const thuTu = ba.lop.map(x => x.lop).join('·') === 'L1·L4·L5';
+      /* Một câu chạm hai lớp thì nêu CẢ HAI: chọn cái nặng hơn giùm người
+         ta thì nửa còn lại rơi mất mà không ai biết. */
+      const haiLop = mTG.vaGopY('Chữ nhỏ quá mà bố cục lại chật, đọc không nổi');
+      /* Không đọc ra thì TRẢ LẠI NGUYÊN CÂU. */
+      const mu = mTG.vaGopY('Anh xem lại giúp em tấm này với, em thấy chưa ổn lắm');
+      /* "dấu thương hiệu" chứa "dấu", mà "sai dấu" là dấu hiệu của L5 —
+         bẫy thứ ba của phép dò chữ tiếng Việt. */
+      const cumGhep = mTG.vaGopY(
+        'Chỗ dấu thương hiệu ở góc dưới đang bị bố cục che mất một phần');
+      ra.tgSuaChayThat =
+        thuTu && !ba.tuChoi.length &&
+        haiLop.lop.length === 2 &&
+        !mu.lop.length && mu.khongDoc.length === 1 &&
+        cumGhep.lop.map(x => x.lop).indexOf('L5') < 0;
+
+      /* Câu chạm ADN KHÔNG được đi tiếp vào phép chia lớp: vừa bị từ chối
+         vừa được chỉ đường đi sửa thì người ta làm theo vế thứ hai, vì vế
+         thứ hai là vế nói cách làm. */
+      /* Câu xé ADN ở đây CỐ Ý mang thêm dấu hiệu của một lớp: "đổi màu"
+         là ADN1, "gắt" là L3. Bản đầu của phép đo này dùng một câu xé ADN
+         KHÔNG mang dấu hiệu lớp nào, nên lúc phá thử — bỏ nhánh `else` để
+         câu xé đi tiếp vào phép chia lớp — phép đo vẫn XANH: câu ấy không
+         rơi vào lớp nào cả nên chẳng có gì đổi. Một phép đo chỉ đúng khi
+         cái nó đo CÓ THỂ sai. */
+      const xe = mTG.vaGopY('Đổi màu lại cho ánh sáng đỡ gắt. Với lại bỏ logo ' +
+        'ở góc cho thoáng. Bố cục thì chật quá.');
+      const maXe = [].concat.apply([], xe.tuChoi.map(t => t.adn));
+      ra.tgAdnChanThat = xe.tuChoi.length === 2 &&
+        maXe.indexOf('ADN1') >= 0 && maXe.indexOf('ADN2') >= 0 &&
+        /* Chỉ còn L1 của câu bố cục. Có L3 nghĩa là câu xin đổi màu vừa bị
+           từ chối vừa được chỉ đường đi sửa — và người ta làm theo vế thứ
+           hai, vì vế thứ hai là vế nói cách làm. */
+        xe.lop.map(x => x.lop).join('·') === 'L1';
+    }
+
   bao(ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
       ra.tgDnCamKhop && ra.tgDnChanThat && !ra.tgDnThieuO.length &&
       (ra.tgDnMa || []).length === 3 && ra.tgDnKhuon4 ===
@@ -10440,7 +10503,10 @@ const { chromium } = require(PW);
       ra.tgYKhop && ra.tgQuyetKhop && ra.tgAnDuKhop && ra.tgTranKhop &&
       !ra.tgYThieuO.length && !ra.tgQuyetThieuVi.length &&
       ra.tgYDocThat && ra.tgQuyetChayThat && ra.tgTranChanThat &&
-      ra.tgBaYThat && ra.tgLop5That && ra.tgGocNhin === 'AN_TOAN·AN_DU·CAN_CANH',
+      ra.tgBaYThat && ra.tgLop5That && ra.tgGocNhin === 'AN_TOAN·AN_DU·CAN_CANH' &&
+      ra.tgSuaKhop && ra.tgAdnKhop && !ra.tgAdnThieuO.length &&
+      ra.tgSuaChayThat && ra.tgAdnChanThat &&
+      ra.tgSuaLuat === 'khongDoan·mayKhongVietCauVa·motCauNhieuLop',
     'CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC CHẶN THEO RANH GIỚI ĐÃ DUYỆT, KHÔNG THEO MỘT DANH SÁCH TỰ NGHĨ RA. Bản đặc tả của chủ hệ đề nghị dựng "Boundary Definition" cho từng Tầng với ô Allowed Concepts và ô Do NOT introduce. Hai ô ấy ĐÃ TỒN TẠI trong kho từ lâu và đang được dùng để bán hàng: HP_TANG[].gom và HP_TANG[].khong. Chép chúng sang một tệp mới là dựng bản thứ hai của một sự thật, và bản thứ hai không ai sửa khi bảng chặng đổi — tới lúc ấy máy chặn thiết kế theo một ranh giới đã cũ, im lặng. Máy chủ không đọc được kho đã mã hoá nên buộc phải giữ một bản chép TỐI THIỂU để dò, và phép đo này đối chiếu bản chép ấy với bản gốc THEO Ý chứ không theo từng chữ: kho viết thành câu cho người đọc, máy chủ giữ khoá ngắn để dò, nên luật là mỗi khoá máy chủ dùng phải TÌM THẤY trong câu khai của chính Tầng ấy. Khoá nào không tìm thấy là khoá tự nghĩ ra, và nó chặn thiết kế theo một ranh giới chưa ai duyệt — đúng cái mà luật "AI không được tự suy diễn" sinh ra để cấm. Phép đo cũng GỌI THẲNG cổng ấy với một nội dung T1 nói về Coach đồng hành và phác đồ rồi đòi nó chặn, vì đọc chú giải thì chú giải nói gì cũng được. Và mười hai loại hình phải có mặt đủ ở cả hai bên, mỗi loại khai đúng MỘT nhiệm vụ — nhồi hai việc vào một tấm thì người xem không nhớ được cái nào',
     /* ĐIỀU KIỆN CỦA CÂU KHOE PHẢI TRÙNG ĐIỀU KIỆN CỦA PHÉP ĐO.
        Bản đầu câu khoe chỉ hỏi hai cờ cũ, nên lúc phá thử bản chép bảng
@@ -10450,14 +10516,17 @@ const { chromium } = require(PW);
     ra.tgNeoKhop && ra.tgMauKhop && ra.tgDnCamKhop && ra.tgDnChanThat &&
     ra.tgYKhop && ra.tgQuyetKhop && ra.tgAnDuKhop && ra.tgTranKhop &&
     ra.tgYDocThat && ra.tgQuyetChayThat && ra.tgTranChanThat &&
-    ra.tgBaYThat && ra.tgLop5That
+    ra.tgBaYThat && ra.tgLop5That && ra.tgSuaKhop && ra.tgAdnKhop &&
+    ra.tgSuaChayThat && ra.tgAdnChanThat
       ? '5 chặng · mọi khoá dò đều tìm thấy trong ô "không" của chính chặng ấy · ' +
         mTGSoLoai + ' loại hình đều có đúng một nhiệm vụ · cổng chặn thật · ' +
         (ra.tgMauKhop ? (mTG.MAU_RA || []).length + ' ô màu đi ra khớp bản gốc · ' : '') +
         'cổng Điều Nhỏ ba câu chặn thật, bảng động từ khớp bản gốc · ' +
         (mTG.Y_DINH || []).length + ' ý định · ' + (mTG.QUYET || []).length +
         ' cặp quyết định · ' + (mTG.AN_DU || []).length + ' ẩn dụ · 4 trần chữ · ' +
-        'bốn bảng đều khớp bản gốc và bốn hàm đều chạy thật'
+        'bốn bảng đều khớp bản gốc và bốn hàm đều chạy thật · ' +
+        'góp ý chia đúng 5 lớp theo thứ tự trọng số · ' + (mTG.ADN || []).length +
+        ' thứ không mở đều chặn thật và không được chỉ đường đi sửa'
       : [!ra.tgDnCamKhop ? 'BẢN CHÉP BẢNG ĐỘNG TỪ CẤM Ở MÁY CHỦ LỆCH VỚI KHO' : '',
          !ra.tgDnChanThat ? 'CỔNG ĐIỀU NHỎ KHÔNG CHẶN THẬT' : '',
          !ra.tgYKhop ? 'BẢN CHÉP BẢNG Ý ĐỊNH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
@@ -10475,6 +10544,15 @@ const { chromium } = require(PW);
          !ra.tgLop5That ? 'ĐỀ BÀI NĂM LỚP SAI SỐ LỚP HOẶC SAI THỨ TỰ' : '',
          ra.tgGocNhin && ra.tgGocNhin !== 'AN_TOAN·AN_DU·CAN_CANH'
            ? 'BA GÓC NHÌN TRONG KHO LỆCH: ' + ra.tgGocNhin : '',
+         !ra.tgSuaKhop ? 'BẢN CHÉP BẢNG DẤU HIỆU GÓP Ý Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         !ra.tgAdnKhop ? 'BẢN CHÉP NĂM THỨ KHÔNG ĐƯỢC ĐỘNG TỚI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         (ra.tgAdnThieuO || []).length ? 'mục ADN thiếu ô: ' + ra.tgAdnThieuO.join(', ') : '',
+         !ra.tgSuaChayThat ? 'PHÉP CHIA LỚP GÓP Ý KHÔNG CHẠY THẬT (sai thứ tự L1→L5, ' +
+           'hoặc nó ĐOÁN khi không có dấu hiệu, hoặc cụm ghép bị bắt oan)' : '',
+         !ra.tgAdnChanThat ? 'CỔNG ADN KHÔNG CHẶN THẬT (hoặc câu xé ADN VẪN được ' +
+           'chỉ đường đi sửa ở một lớp)' : '',
+         ra.tgSuaLuat && ra.tgSuaLuat !== 'khongDoan·mayKhongVietCauVa·motCauNhieuLop'
+           ? 'LUẬT CỦA BẢNG GÓP Ý TRONG KHO LỆCH: ' + ra.tgSuaLuat : '',
          (ra.tgDnThieuO || []).length ? 'mục Điều Nhỏ thiếu ô: ' + ra.tgDnThieuO.join(', ') : '',
          ra.tgKhoaLa.length ? 'KHOÁ TỰ NGHĨ RA: ' + ra.tgKhoaLa.join(' · ') : '',
          !ra.tgMauKhop ? 'BẢNG MÀU ĐI RA LỆCH BẢN GỐC: ' +

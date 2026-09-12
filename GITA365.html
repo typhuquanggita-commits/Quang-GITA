@@ -2425,7 +2425,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.55',
+  version: '9.99.56',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -6002,6 +6002,8 @@ G.THUOC_CAP_PHEP = [
   'TG_YDINH','TG_QUYET_KHO','TG_SACKHI','TG_QUYET','TG_QUYET_LUAT',
   'TG_CHU_TRAN','TG_GOCNHIN','TG_ANDU','TG_BATINHTU','TG_BATINHTU_LUAT',
   'TG_LOP5','TG_LOP5_LUAT',
+  /* v9.99.56 — góp ý vá vào đúng lớp, và năm thứ không được động tới */
+  'TG_SUA_DAU','TG_SUA_LUAT','TG_ADN',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -39800,6 +39802,8 @@ G.VIEWS = G.VIEWS || {};
        không ai quay lại đổi khổ nữa. */
     {ma: 'ytuong',  ten: 'Ý tưởng',    ic: 'lightning'},
     {ma: 'dexuat',  ten: 'Đề xuất',    ic: 'plus'},
+    /* Sau Đề xuất, vì góp ý chỉ có nghĩa khi đã có một tấm để góp. */
+    {ma: 'gopy',    ten: 'Góp ý',      ic: 'quote'},
     {ma: 'kho',     ten: 'Kho',        ic: 'vault'},
     {ma: 'hienphap',ten: 'Hiến pháp',  ic: 'book'},
     {ma: 'luat',    ten: 'Luật',       ic: 'shield'}
@@ -40177,6 +40181,88 @@ G.VIEWS = G.VIEWS || {};
     G.goiMayChu('docYTuong', {deXuat: {
       noiDung: oGiaTri('ktYtChu'), nhiemVu: oGiaTri('ktYtNhiemVu'), nguoiXem: nguoi
     }}).then(function (d) { G.ktYtRa = d; veLai(); });
+  };
+
+  /* ═══════════ NGĂN 5 · GÓP Ý VÁ VÀO ĐÂU ═══════════
+
+     Màn này KHÔNG viết câu vá. Nó nói vá vào LỚP NÀO, và để nguyên câu
+     góp ý của người nói ở lớp ấy.
+
+     Vì sao máy không viết hộ: tấm sau sẽ mang giọng của máy chứ không
+     mang giọng của Học viện, và không ai nhận ra chuyện ấy đã xảy ra —
+     họ chỉ thấy tấm nào cũng hao hao nhau. */
+  function nganGopY() {
+    var o = '<div class="card"><b>Góp ý này vá vào lớp nào</b>' +
+      '<p class="sm muted mt">Mỗi lượt vẽ lại tốn một lượt gọi bộ tạo ảnh. Góp ý ' +
+      '"nhìn lạnh quá" là chuyện lớp Cảm xúc; đem đi sửa Bố cục thì tấm mới vẫn ' +
+      'lạnh y hệt, và mất một lượt vẽ để đổi lấy không gì cả.</p>' +
+      '<p class="sm muted mt">Máy nói vá vào lớp nào. <b>Câu vá là của người ' +
+      'viết</b> — máy viết hộ thì tấm sau mang giọng của máy.</p></div>';
+
+    o += '<div class="card mt2">' +
+      '<label class="sm"><b>Góp ý, nguyên văn</b> ' +
+      '<span class="muted">(mỗi ý một dòng hoặc một câu)</span></label>' +
+      '<textarea id="ktGyChu" class="inp" rows="6" maxlength="4000" ' +
+      'placeholder="ví dụ: Bố cục hơi chật ở mép trên. Nhìn lạnh quá. Chữ dòng ' +
+      'cuối bị sai dấu."></textarea>' +
+      '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn primary" onclick="G.ktDocGopY()">Đọc và chia lớp</button>' +
+      '</div></div>';
+
+    var d = G.ktGyRa;
+    if (!d) return o;
+    if (!d.ok)
+      return o + '<div class="card" style="border-left:3px solid var(--bad);margin-top:14px">' +
+        '<p class="sm">' + h(d.error || '') + '</p></div>';
+
+    /* ── TỪ CHỐI ĐỨNG TRƯỚC ──
+       Đặt sau bảng vá thì người ta đọc bảng vá rồi đóng màn. Lời từ chối
+       phải là thứ đọc được đầu tiên, và phải kèm AI ĐỔI ĐƯỢC — một lời
+       từ chối không chỉ đường thì nó là một cánh cửa đóng. */
+    if ((d.tuChoi || []).length) {
+      o += '<div class="card" style="border-left:3px solid var(--bad);margin-top:14px">' +
+        '<b>' + h(String(d.tuChoi.length)) + ' câu đang xin đổi thứ không mở</b>' +
+        d.tuChoi.map(function (t) {
+          return '<div class="mt"><p class="sm">“' + h(t.cau) + '”</p>' +
+            t.adn.map(function (ma) {
+              var a = (G.TG_ADN || []).filter(function (x) { return x.ma === ma; })[0];
+              if (!a) return '';
+              return '<p class="sm muted mt"><b>' + h(a.ten) + '</b> — ' + h(a.vi) +
+                '<br><b>Ai đổi được:</b> ' + h(a.aiDoi) + '</p>';
+            }).join('') + '</div>';
+        }).join('') + '</div>';
+    }
+
+    /* ── BẢNG VÁ, THEO THỨ TỰ L1→L5 ── */
+    if ((d.lop || []).length) {
+      o += U.sec('Vá vào đâu', d.lop.length + '/5 lớp · thứ tự năm lớp là trọng số');
+      o += U.tbl(['Lớp', 'Lớp ấy gồm gì', 'Câu góp ý'],
+        d.lop.map(function (x) {
+          var l = (G.TG_LOP5 || []).filter(function (y) { return y.ma === x.lop; })[0];
+          return ['<b>' + h(x.lop + ' · ' + ((l && l.ten) || '')) + '</b>',
+            '<span class="sm muted">' + h((l && l.gom) || '') + '</span>',
+            x.cau.map(function (c) { return '<span class="sm">“' + h(c) + '”</span>'; })
+              .join('<br>')];
+        }));
+    }
+
+    /* ── CHƯA ĐỌC RA ── */
+    if ((d.khongDoc || []).length)
+      o += '<div class="card" style="border-left:3px solid var(--warn);margin-top:14px">' +
+        '<b>' + h(String(d.khongDoc.length)) + ' câu máy chưa đọc ra lớp nào</b>' +
+        '<p class="sm muted mt">Máy không đoán. Đoán một lớp rồi trình ra như một ' +
+        'đề nghị thì người ta tin nó đã được cân nhắc, và họ đi sửa nhầm lớp — ' +
+        'tốn đúng một lượt vẽ.</p>' +
+        d.khongDoc.map(function (c) {
+          return '<p class="sm mt">“' + h(c) + '”</p>'; }).join('') + '</div>';
+
+    o += '<div class="card mt2"><p class="sm muted">' + h(d.vi || '') + '</p></div>';
+    return o;
+  }
+
+  G.ktDocGopY = function () {
+    G.goiMayChu('docGopY', {gopY: oGiaTri('ktGyChu')})
+      .then(function (d) { G.ktGyRa = d; veLai(); });
   };
 
   /* ═══════════ NGĂN 4 · ĐỀ XUẤT ═══════════ */
@@ -40625,6 +40711,7 @@ G.VIEWS = G.VIEWS || {};
     if (G.ktNgan === 'tailieu')  return o + nganTaiLieu();
     if (G.ktNgan === 'ytuong')   return o + nganYTuong();
     if (G.ktNgan === 'dexuat')   return o + nganDeXuat();
+    if (G.ktNgan === 'gopy')     return o + nganGopY();
     if (G.ktNgan === 'kho')      return o + nganKho();
     if (G.ktNgan === 'hienphap') return o + nganHienPhap();
     return o + nganLuat();

@@ -57,6 +57,8 @@ G.THUOC_CAP_PHEP = [
   'TG_YDINH','TG_QUYET_KHO','TG_SACKHI','TG_QUYET','TG_QUYET_LUAT',
   'TG_CHU_TRAN','TG_GOCNHIN','TG_ANDU','TG_BATINHTU','TG_BATINHTU_LUAT',
   'TG_LOP5','TG_LOP5_LUAT',
+  /* v9.99.56 — góp ý vá vào đúng lớp, và năm thứ không được động tới */
+  'TG_SUA_DAU','TG_SUA_LUAT','TG_ADN',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

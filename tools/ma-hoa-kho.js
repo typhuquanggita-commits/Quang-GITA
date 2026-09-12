@@ -273,6 +273,8 @@ const NGHE = [
   'TG_YDINH', 'TG_QUYET_KHO', 'TG_SACKHI', 'TG_QUYET', 'TG_QUYET_LUAT',
   'TG_CHU_TRAN', 'TG_GOCNHIN', 'TG_ANDU', 'TG_BATINHTU', 'TG_BATINHTU_LUAT',
   'TG_LOP5', 'TG_LOP5_LUAT',
+  /* 9.99.56 — góp ý vá vào đúng lớp, và năm thứ không được động tới */
+  'TG_SUA_DAU', 'TG_SUA_LUAT', 'TG_ADN',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

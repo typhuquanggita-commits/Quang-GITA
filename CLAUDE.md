@@ -341,6 +341,60 @@ trả `undefined`, câu giải thích ở lại trong sổ mà **không có tên
 viết**, tức là mất đúng nửa có giá trị của phép ghi. Bộ thử bắt được vì
 nó đòi **đúng tên**, không đòi "có ô `boiAi`".
 
+## Trợ lý hình ảnh — góp ý vá vào đúng lớp (9.99.56)
+
+Phần 5 của bản đặc tả. Màn *Kiến trúc sư thị giác → ngăn **Góp ý***,
+cửa máy chủ `docGopY`; kho `G.TG_SUA_DAU` (5 lớp) và `G.TG_ADN` (5 thứ
+không được động tới).
+
+Luật `TG_LOP5_LUAT.vaDungLop` và `.khongXeDNA` đã có từ 9.99.55 **ở dạng
+chữ**. Bản này dựng máy canh chúng — một luật không máy nào canh thì nó
+là một lời chú giải.
+
+**Nói bằng tiền:** mỗi lượt vẽ lại tốn một lượt gọi bộ tạo ảnh ngoài.
+Góp ý "nhìn lạnh quá" là lớp Cảm xúc; đem đi sửa Bố cục thì tấm mới vẫn
+lạnh y hệt. Sai lớp không lộ ra ở khâu nào — nó lộ ra ở tấm sau, và lúc
+ấy không ai truy được vì sao.
+
+**Cổng ADN có hai chỗ, và chỉ chỗ thứ hai mới là cổng:**
+
+- `docGopY` chỉ **ĐỌC** — nó tách câu xé bảng nhận diện ra và nói ai đổi
+  được, nhưng không chặn gì vì nó không ghi.
+- `banMoiThiGiac` **GHI**, nên cổng có răng nằm ở đó: `y.gopY` xé ADN
+  thì bản mới không được sinh (`code:'XEADN'`).
+
+Đặt cổng ở chỗ đọc thôi là cổng cảnh báo. Người ta đọc, thấy hợp lý với
+tấm này, rồi vẫn bấm sửa — và mỗi lần nhân nhượng **đều hợp lý ở tấm
+ấy**. Mười lần thì bảng nhận diện không còn, mà không ai quyết định bỏ
+nó cả.
+
+**Câu chạm ADN không được đi tiếp vào phép chia lớp.** Vừa bị từ chối
+vừa được chỉ đường đi sửa thì người ta làm theo vế thứ hai — vế thứ hai
+là vế nói cách làm.
+
+### Hai chỗ phá thử đã dạy lại, ghi để không lặp
+
+1. **Một phép đo chỉ đúng khi cái nó đo CÓ THỂ sai.** Bản đầu của phép
+   đo cổng ADN dùng một câu xé ADN **không mang dấu hiệu lớp nào**. Phá
+   thử — cho câu xé đi tiếp vào phép chia lớp — mà phép đo vẫn XANH, vì
+   câu ấy chẳng rơi vào lớp nào cả. Nay câu thử cố ý mang cả hai: "đổi
+   màu" là ADN1, "gắt" là L3.
+2. **Danh sách trừ ở đây KHÔNG cần, và giữ nó là tệ hơn bỏ.** Bản đầu có
+   `TG_SUA_TRU` chép theo `DN_TRU`; phá thử thì bỏ hẳn nó đi mọi phép đo
+   vẫn xanh. Lý do: `DN_CAM` **buộc** phải chứa âm tiết trần "tin" (một
+   động từ người ta viết thật), còn `TG_SUA_DAU` không bị ép — mọi dấu
+   hiệu dễ bắt oan đều viết được thành cụm hai âm tiết: *sai dấu* chứ
+   không phải *dấu*, *sáng quá* chứ không phải *sáng*, *ngón tay* chứ
+   không phải *ngón*. **Chặn ở chỗ CHỌN DẤU HIỆU rẻ hơn và chắc hơn
+   chặn bằng một danh sách trừ** — danh sách trừ phải dài thêm mãi, cụm
+   hai âm tiết thì đúng một lần. Một danh sách không chặn gì làm người
+   đọc sau tưởng cái bẫy đã được lo, rồi thôi không nghĩ tới nữa.
+
+Và một dấu hiệu phải loại: **`nhân vật` trần không dùng được cho L2**,
+dù nó đúng là chuyện của L2 — chính L4 cũng nói *"ánh nhìn của nhân
+vật"*, nên mọi góp ý về cảm xúc đều bị kéo thêm về L2. L2 dò **hình của
+lời xin** (thiếu · thêm · sai · đổi), không dò danh từ.
+
 ---
 
 ## Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm

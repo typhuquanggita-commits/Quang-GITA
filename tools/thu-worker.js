@@ -3472,6 +3472,87 @@ bao(raNgoai.than.daGui.indexOf(dungTang.than.tang) >= 0 &&
     'mình kèm lý do, và câu ấy ở lại');
 }
 
+/* ══ GÓP Ý VÁ VÀO ĐÚNG LỚP — phần 5 của bản đặc tả ══
+
+   Mỗi lượt vẽ lại tốn một lượt gọi bộ tạo ảnh ngoài. Góp ý "nhìn lạnh
+   quá" là chuyện lớp CẢM XÚC; đem đi sửa BỐ CỤC thì tấm mới vẫn lạnh y
+   hệt, và Học viện mất một lượt vẽ để đổi lấy không gì cả.
+
+   Sai lớp không lộ ra ở khâu nào — nó chỉ lộ ra ở tấm sau, và lúc ấy
+   không ai truy được vì sao. Nên phép đo phải gọi thẳng. */
+{
+  const g = await goi({fn:'docGopY', token:tkSA, u:'superadmin@gita365.vn',
+    gopY: 'Bố cục hơi chật ở mép trên. Nhìn lạnh quá, ánh nhìn của nhân vật ' +
+          'xa cách. Chữ ở dòng cuối bị sai dấu.'});
+  const lop = (g.than.lop || []).map(x => x.lop);
+  bao(g.than.ok && lop.join('·') === 'L1·L4·L5' && !(g.than.tuChoi || []).length,
+    'GÓP Ý CHIA VỀ ĐÚNG LỚP, VÀ GIỮ THỨ TỰ L1→L5',
+    'ba câu → ' + lop.join(' · ') + ' — thứ tự năm lớp là trọng số, nên danh ' +
+    'sách vá cũng phải đọc theo thứ tự ấy');
+
+  /* Một câu chạm hai lớp thì nêu CẢ HAI. Chọn cái nặng hơn giùm người ta
+     thì nửa còn lại rơi mất mà không ai biết nó đã từng được nói. */
+  const hai = await goi({fn:'docGopY', token:tkSA, u:'superadmin@gita365.vn',
+    gopY: 'Chữ nhỏ quá mà bố cục lại chật, đọc không nổi'});
+  bao(hai.than.ok && (hai.than.lop || []).length === 2,
+    'MỘT CÂU CHẠM HAI LỚP THÌ NÊU CẢ HAI, không chọn cái nặng hơn giùm',
+    'chọn hộ thì nửa còn lại rơi mất mà không ai biết nó đã từng được nói');
+
+  /* Không đọc ra thì TRẢ LẠI NGUYÊN CÂU. Đoán một lớp rồi trình ra như
+     một đề nghị thì người ta tin nó đã được cân nhắc. */
+  const mu = await goi({fn:'docGopY', token:tkSA, u:'superadmin@gita365.vn',
+    gopY: 'Anh xem lại giúp em tấm này với, em thấy chưa ổn lắm'});
+  bao(mu.than.ok && !(mu.than.lop || []).length &&
+      (mu.than.khongDoc || []).length === 1,
+    'KHÔNG ĐỌC RA LỚP NÀO THÌ TRẢ LẠI NGUYÊN CÂU, không đoán',
+    'đoán sai lớp thì tấm sau vẫn hỏng đúng chỗ cũ, và mất thêm một lượt vẽ');
+
+  /* "dấu thương hiệu" chứa "dấu", mà "sai dấu" là dấu hiệu của L5. Không
+     trừ cụm ghép thì mọi câu nhắc tới dấu thương hiệu đều thành lỗi
+     chính tả — bẫy thứ ba của phép dò chữ tiếng Việt. */
+  const cum = await goi({fn:'docGopY', token:tkSA, u:'superadmin@gita365.vn',
+    gopY: 'Chỗ dấu thương hiệu ở góc dưới đang bị bố cục che mất một phần'});
+  bao(cum.than.ok && (cum.than.lop || []).map(x => x.lop).indexOf('L5') < 0,
+    'CỤM GHÉP KHÔNG BỊ BẮT OAN: "dấu thương hiệu" không phải "sai dấu"',
+    'tiếng Việt không phân từ bằng khoảng trắng — phải TRỪ cụm ghép trước khi dò');
+
+  /* ── NĂM THỨ KHÔNG ĐƯỢC ĐỘNG TỚI ── */
+  const xe = await goi({fn:'docGopY', token:tkSA, u:'superadmin@gita365.vn',
+    /* Câu xé ADN ở đây CỐ Ý mang thêm dấu hiệu của một lớp: "đổi màu" là
+       ADN1, "gắt" là L3. Bản đầu dùng một câu xé ADN không mang dấu hiệu
+       lớp nào, và lúc phá thử thì phép đo vẫn XANH — câu ấy không rơi vào
+       lớp nào cả nên chẳng có gì đổi. */
+    gopY: 'Đổi màu lại cho ánh sáng đỡ gắt. Với lại bỏ logo ở góc cho thoáng. ' +
+          'Bố cục thì chật quá.'});
+  const maADN = [].concat.apply([], (xe.than.tuChoi || []).map(t => t.adn));
+  bao(xe.than.ok && maADN.indexOf('ADN1') >= 0 && maADN.indexOf('ADN2') >= 0 &&
+      /* Câu chạm ADN KHÔNG được đi tiếp vào phép chia lớp: vừa bị từ chối
+         vừa được chỉ đường đi sửa thì người ta làm theo vế thứ hai. */
+      (xe.than.lop || []).map(x => x.lop).join('·') === 'L1',
+    'GÓP Ý XÉ BẢNG NHẬN DIỆN BỊ TÁCH RA, và KHÔNG được chỉ đường đi sửa',
+    'hai câu xé ADN bị nêu riêng · câu bố cục vẫn vá được — một lời từ chối ' +
+    'kèm đường đi sửa thì người ta làm theo đường đi sửa');
+
+  /* ── CỔNG CÓ RĂNG: chỗ ĐỌC chỉ cảnh báo, chỗ GHI mới chặn ── */
+  const nen5 = {tang:'T1', loaiHinh:'CONG', nhiemVu:'Mời nhà mở chặng bảy ngày',
+    noiDung:'Trang mời nhà mở chặng bảy ngày nhận diện, có phiếu ghi và cổng ' +
+            'nghiệm thu ngày bảy.',
+    nguoiXem:['PHUHUYNH'], dieuNho:'bấm mở chặng 1 ngay tối nay',
+    thoiDiem:'tối sau giờ học', boCuc:'bản gốc để thử cổng ADN'};
+  const goc5 = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:nen5});
+  const chan5 = await goi({fn:'banMoiThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:goc5.than.id, gopY:'Đổi màu sang xanh lá cho tươi', deXuat:{boCuc:'bản 2'}});
+  const qua5 = await goi({fn:'banMoiThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:goc5.than.id, gopY:'Bố cục chật quá, nới mép trên ra', deXuat:{boCuc:'bản 2'}});
+  bao(goc5.than.ok && !chan5.than.ok && chan5.than.code === 'XEADN' &&
+      qua5.than.ok && Number(qua5.than.ban) === 2 && qua5.than.banTruoc === goc5.than.id,
+    'BẢN MỚI SINH TỪ GÓP Ý XÉ ADN THÌ KHÔNG ĐƯỢC SINH — góp ý sạch thì vẫn sinh',
+    'đặt cổng ở chỗ ĐỌC thôi là cổng cảnh báo: người ta đọc, thấy hợp lý với ' +
+    'tấm này, rồi vẫn bấm sửa. Mười lần nhân nhượng hợp lý thì bảng nhận diện ' +
+    'không còn, mà không ai quyết định bỏ nó cả');
+}
+
 
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&

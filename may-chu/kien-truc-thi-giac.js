@@ -280,14 +280,22 @@ const DN_HOI = {
 export const DN_TRU = ['thông tin', 'tin nhắn', 'tin cậy', 'tin học', 'bản tin',
                 'tin tức', 'ghi nhớ', 'lưu ý'];
 
-function coCum(chu, cum) {
+/* Một phép dò dùng chung, nhận DANH SÁCH TRỪ riêng của từng chỗ gọi.
+   Viết hai bản thì hai bản rồi sẽ dò theo hai luật khác nhau, và chỗ
+   lệch không báo gì cả — nó chỉ bắt oan ở một cổng mà không bắt ở cổng
+   kia. Mỗi cổng có danh sách trừ RIÊNG vì cụm ghép hay bắt oan ở cổng
+   này lại là dấu hiệu thật ở cổng kia: "dấu thương hiệu" phải trừ khi
+   dò lỗi chính tả, nhưng nó chính là chuyện cần nói ở cổng nhận diện. */
+function coTu(chu, cum, tru) {
   let t = ' ' + String(chu || '').toLowerCase().replace(/\s+/g, ' ') + ' ';
   /* Xoá cụm ghép TRƯỚC khi dò, để âm tiết nằm trong chúng thôi đứng riêng. */
-  DN_TRU.forEach(x => { t = t.split(x).join(' '); });
+  (tru || []).forEach(x => { t = t.split(x).join(' '); });
   return t.indexOf(' ' + cum + ' ') >= 0 ||
          t.indexOf(' ' + cum + ',') >= 0 ||
          t.indexOf(' ' + cum + '.') >= 0;
 }
+
+function coCum(chu, cum) { return coTu(chu, cum, DN_TRU); }
 
 export function soatDieuNho(d) {
   const dd = d || {};
@@ -507,6 +515,128 @@ export function dungLop5(o) {
         'tỉ lệ người tự nhiên. Chừa góc dưới bên phải trống cho dấu thương hiệu. ' +
         'Không đặt chữ đè lên mặt người.' }
   ];
+}
+
+/* ═══════════════ GÓP Ý VÁ VÀO ĐÂU — PHẦN 5 ═══════════════
+
+   Bản chép của G.TG_SUA_DAU · G.TG_ADN. Bộ kiểm mục 71
+   đối chiếu từng ô với kho.
+
+   Vì sao phép này đáng có, nói bằng tiền: mỗi lượt vẽ lại tốn một lượt
+   gọi bộ tạo ảnh ngoài. Góp ý "nhìn lạnh quá" là chuyện lớp CẢM XÚC;
+   đem nó đi sửa BỐ CỤC thì tấm mới vẫn lạnh y hệt, và Học viện mất một
+   lượt vẽ để đổi lấy không gì cả. Sai lớp không lộ ra ở khâu nào — nó
+   chỉ lộ ra ở tấm sau, lúc ấy không ai truy được vì sao. */
+export const SUA_DAU = [
+  ['L1', ['bố cục', 'lệch', 'chật', 'trống quá', 'tràn', 'rối', 'chen chúc',
+          'tiêu điểm', 'cân đối', 'sai khổ', 'lệch khung']],
+  /* 'nhân vật' TRẦN không dùng được: chính L4 cũng nói "ánh nhìn của nhân
+     vật", nên câu góp ý về cảm xúc nào cũng bị kéo thêm về L2. Nên L2 dò
+     HÌNH CỦA LỜI XIN — thiếu, thêm, sai, đổi — chứ không dò danh từ. */
+  ['L2', ['sai ý', 'thiếu người', 'thừa', 'thiếu nhân vật', 'thêm nhân vật',
+          'sai nhân vật', 'đổi nhân vật', 'đạo cụ', 'bối cảnh',
+          'sai chuyện', 'không đúng chuyện', 'thiếu điều nhỏ']],
+  ['L3', ['sáng quá', 'tối quá', 'nét vẽ', 'chất liệu', 'ánh sáng', 'nền',
+          'gắt', 'nhợt', 'chói']],
+  ['L4', ['lạnh', 'xa cách', 'giả', 'gượng', 'buồn', 'nghiêm quá', 'không ấm',
+          'vô hồn', 'ánh nhìn', 'khô khan']],
+  ['L5', ['sai dấu', 'mờ', 'ngón tay', 'méo', 'chữ nhỏ', 'biến dạng',
+          'sai chính tả', 'chữ đè', 'sáu ngón']]
+];
+
+/* ── VÌ SAO BẢNG NÀY KHÔNG CÓ DANH SÁCH TRỪ, DÙ CỔNG ĐIỀU NHỎ THÌ CÓ ──
+
+   Bản đầu tôi có dựng một danh sách trừ ở đây, y như DN_TRU. Phá thử
+   mới thấy nó KHÔNG chặn gì cả: bỏ hẳn nó đi thì mọi phép đo vẫn xanh.
+
+   Lý do là hai bảng bị ép khác nhau. DN_CAM BUỘC phải chứa âm tiết trần
+   "tin", vì "tin" là một động từ người ta viết thật — và "tin" đứng
+   riêng trong "thông tin", "tin nhắn". Chỗ ấy không tránh được, nên
+   phải trừ.
+
+   SUA_DAU thì không bị ép: mọi dấu hiệu dễ bắt oan đều viết được thành
+   cụm hai âm tiết — "sai dấu" chứ không phải "dấu", "sáng quá" chứ
+   không phải "sáng", "ngón tay" chứ không phải "ngón". Chặn ở chỗ CHỌN
+   DẤU HIỆU rẻ hơn và chắc hơn chặn bằng một danh sách trừ, vì danh
+   sách trừ phải dài thêm mãi còn cụm hai âm tiết thì đúng một lần.
+
+   Giữ một danh sách không chặn gì là tệ hơn không có: nó làm người đọc
+   sau tưởng cái bẫy đã được lo, và thôi không nghĩ tới nữa. */
+
+export const ADN = [
+  ['ADN1', ['đổi màu', 'màu khác', 'ngoài bảng màu', 'thêm màu', 'bỏ bảng màu',
+            'đổi bảng màu']],
+  ['ADN2', ['bỏ dấu', 'bỏ logo', 'xoá logo', 'giấu logo', 'che dấu',
+            'bỏ chỗ trống']],
+  ['ADN3', ['đổi phông', 'phông khác', 'đổi font', 'font khác', 'phông đẹp hơn']],
+  ['ADN4', ['chữ đè lên mặt', 'đặt chữ lên mặt', 'chữ lên mặt']],
+  ['ADN5', ['bỏ dấu tiếng việt', 'viết không dấu', 'không dấu cho đẹp',
+            'bỏ dấu cho gọn']]
+];
+
+/* Cắt góp ý thành từng câu. Cắt ở dấu chấm, chấm phẩy, xuống dòng và
+   gạch đầu dòng — người góp ý hay gõ mỗi ý một gạch. Không cắt ở dấu
+   phẩy: "chữ nhỏ, bố cục chật" là MỘT ý nói hai chỗ, và cắt đôi thì
+   hai nửa mất chủ ngữ. */
+function catCau(chu) {
+  return String(chu || '')
+    .split(/[.;\n\r]+|(?:^|\s)[-–•]\s+/)
+    .map(s => s.trim()).filter(s => s.length >= 3);
+}
+
+/* ADN dò TRƯỚC, và câu nào chạm ADN thì KHÔNG đi tiếp vào phép chia
+   lớp. Để nó đi tiếp thì một câu xin đổi bảng màu vừa bị từ chối vừa
+   được chỉ đường đi sửa ở lớp Lối vẽ — và người ta làm theo vế thứ
+   hai, vì vế thứ hai là vế nói cách làm. */
+export function vaGopY(chu) {
+  const cau = catCau(chu);
+  const tuChoi = [], conLai = [];
+
+  cau.forEach(c => {
+    const cham = ADN.filter(([, dau]) => dau.some(d => coTu(c, d, [])))
+      .map(([ma]) => ma);
+    if (cham.length) tuChoi.push({ cau: c, adn: cham });
+    else conLai.push(c);
+  });
+
+  /* Một câu chạm nhiều lớp thì nêu CẢ HAI. Chọn cái nặng hơn giùm người
+     ta thì nửa còn lại rơi mất mà không ai biết nó đã từng được nói. */
+  const theoLop = {};
+  const khongDoc = [];
+  conLai.forEach(c => {
+    const cham = SUA_DAU.filter(([, dau]) => dau.some(d => coTu(c, d, [])))
+      .map(([lop]) => lop);
+    /* Không đọc ra dấu hiệu nào thì TRẢ LẠI NGUYÊN CÂU. Đoán một lớp rồi
+       trình ra như một đề nghị thì người ta tin nó đã được cân nhắc, và
+       họ đi sửa nhầm lớp — tốn đúng một lượt vẽ. */
+    if (!cham.length) { khongDoc.push(c); return; }
+    cham.forEach(l => { (theoLop[l] = theoLop[l] || []).push(c); });
+  });
+
+  /* Giữ đúng thứ tự L1→L5: thứ tự năm lớp là trọng số, nên danh sách vá
+     cũng phải đọc theo thứ tự ấy. */
+  const lop = SUA_DAU.filter(([l]) => theoLop[l])
+    .map(([l]) => ({ lop: l, cau: theoLop[l] }));
+
+  return { soCau: cau.length, lop, tuChoi, khongDoc };
+}
+
+/* Cửa cho màn hình: đọc góp ý, nói vá vào lớp nào. Không ghi gì vào sổ
+   và KHÔNG viết câu vá — máy nói vá vào LỚP NÀO, câu vá là của người
+   viết. Máy viết hộ thì tấm sau mang giọng của máy. */
+export async function docGopY(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+  const chu = String((y || {}).gopY || '').trim();
+  if (chu.length < 15) return {ok: false,
+    error: 'Dưới mười lăm chữ thì chưa đủ để đọc ra góp ý nói về chỗ nào.'};
+
+  const r = vaGopY(chu);
+  return {ok: true, ...r,
+    vi: r.lop.length
+      ? 'Máy nói vá vào lớp nào; câu vá là của người viết.'
+      : 'Máy chưa đọc ra lớp nào. Không đoán — đoán sai lớp thì tấm sau vẫn ' +
+        'hỏng đúng chỗ cũ, và mất thêm một lượt vẽ.'};
 }
 
 /* Cửa cho màn hình: đọc ý định, đề nghị khổ, phác ba góc — một lượt.
@@ -782,6 +912,28 @@ export async function banMoiThiGiac(y, env, db, hoSo) {
     .bind(String(y.id || '')).first();
   if (!cu) return {ok: false, error: 'Không tìm thấy bản gốc.'};
 
+  /* ══ CỔNG CÓ RĂNG CỦA PHẦN 5 ══
+     docGopY chỉ ĐỌC — nó nói ra chỗ xé bảng nhận diện nhưng không chặn
+     được gì, vì nó không ghi. Chỗ ghi là ĐÂY: bản mới sinh ra từ góp ý,
+     nên góp ý xé bảng nhận diện thì bản mới không được sinh.
+
+     Đặt cổng ở chỗ ĐỌC thôi là cổng cảnh báo, không phải cổng. Người ta
+     đọc lời cảnh báo, thấy hợp lý với tấm này, rồi vẫn bấm sửa — và mỗi
+     lần nhân nhượng đều hợp lý ở tấm ấy. Mười lần thì bảng nhận diện
+     không còn, mà không ai quyết định bỏ nó cả. */
+  const gopY = String(y.gopY || '').trim();
+  if (gopY) {
+    const g = vaGopY(gopY);
+    if (g.tuChoi.length) return {ok: false, code: 'XEADN',
+      tuChoi: g.tuChoi,
+      error: 'Góp ý đang xin đổi thứ không mở: ' +
+        g.tuChoi.map(t => t.adn.join('·')).join(' · ') + '. Mấy dòng ấy là ' +
+        'thứ duy nhất giữ cho hai trăm tấm trông như của MỘT nhà — một tấm ' +
+        'lệch thì không ai để ý, mười tấm lệch thì không còn bộ nhận diện ' +
+        'nào cả. Anh chị bỏ phần ấy ra rồi gửi lại giúp em ạ; phần góp ý ' +
+        'còn lại em vá được ngay.'};
+  }
+
   const d = y.deXuat || {};
   /* Bản mới thừa hưởng mọi ô bản cũ, người sửa chỉ gửi ô nào đổi. Bắt
      gửi lại tất cả là cách chắc nhất để một ô bị gõ lại sai. */
@@ -801,8 +953,15 @@ export async function banMoiThiGiac(y, env, db, hoSo) {
     ban: Number(cu.ban) + 1, banTruoc: cu.id
   };
   const ra = await deXuatThiGiac({deXuat: moi}, env, db, hoSo);
-  if (ra.ok) ra.vi = 'Bản ' + moi.ban + ', sửa từ ' + cu.id +
-    '. Bản cũ Ở LẠI NGUYÊN — không bản nào bị ghi đè.';
+  /* Trả SỐ BẢN thành một ô riêng, không chỉ nhét vào câu `vi`. Bắt người
+     gọi đọc số ra từ một câu văn là bắt họ dò chuỗi, và câu văn thì đổi
+     lúc nào cũng được — lúc ấy chỗ dò đứt mà không báo gì. */
+  if (ra.ok) {
+    ra.ban = moi.ban;
+    ra.banTruoc = cu.id;
+    ra.vi = 'Bản ' + moi.ban + ', sửa từ ' + cu.id +
+      '. Bản cũ Ở LẠI NGUYÊN — không bản nào bị ghi đè.';
+  }
   return ra;
 }
 
