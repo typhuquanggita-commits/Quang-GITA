@@ -267,6 +267,8 @@ const NGHE = [
   'KL_MA_VB', 'KL_LOP', 'KL_THAY', 'KL_NGANKHO', 'KL_NHOM', 'KL_CHOCHU',
   /* 9.99.49 — khung cho những mục còn chờ chủ hệ */
   'KL_BIEUTUONG', 'MD_MAU_MA', 'MD_THUHANHVI', 'TG_IN_CHOT',
+  /* 9.99.54 — cổng Điều Nhỏ của trợ lý hình ảnh */
+  'TG_DIEUNHO', 'TG_KHUON4', 'TG_KHUON4_LUAT',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

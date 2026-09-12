@@ -10291,13 +10291,78 @@ const { chromium } = require(PW);
         banRa.length === banKhoMau.length && ra.tgMauLech.length === 0;
     }
 
-  bao(ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop,
+    /* ── CỔNG ĐIỀU NHỎ: BẢN CHÉP PHẢI KHỚP, VÀ CỔNG PHẢI CHẶN THẬT ──
+
+       Ba câu, và câu thứ hai là câu cổng cũ không hỏi: xem xong thì
+       người ta LÀM ĐƯỢC điều nhỏ gì. Nhiệm vụ là việc của TẤM, điều
+       nhỏ là việc của NGƯỜI — một tấm làm xong nhiệm vụ mà người xem
+       không làm gì thì vẫn hỏng, và hỏng ở chỗ không phép chấm nào
+       nhìn tới.
+
+       Phép đo GỌI THẲNG cổng chứ không đọc chú giải. */
+    {
+      const khoDN = await p.evaluate(() => {
+        const G = window.G;
+        const dn = (G.TG_DIEUNHO || []).filter(x => x.ma === 'DN2')[0] || {};
+        return {
+          ma: (G.TG_DIEUNHO || []).map(x => x.ma),
+          thieuO: (G.TG_DIEUNHO || [])
+            .filter(x => !x.ma || !x.ten || !x.hoi || !x.vi || !x.mayDo).map(x => x.ma),
+          cam: dn.camDongTu || [], tru: dn.camTru || [],
+          khuon4: (G.TG_KHUON4 || []).map(x => x.nhip + ':' + x.ten),
+          luat: Object.keys(G.TG_KHUON4_LUAT || {}).sort()
+        };
+      });
+      ra.tgDnMa = khoDN.ma;
+      ra.tgDnThieuO = khoDN.thieuO;
+      /* Bản chép ở máy chủ phải khớp TỪNG chữ với kho. Lệch một từ thì
+         cổng chặn theo một bảng khác bảng đã duyệt, và không ai thấy. */
+      ra.tgDnCamKhop =
+        JSON.stringify(khoDN.cam) === JSON.stringify(mTG.DN_CAM || []) &&
+        JSON.stringify(khoDN.tru) === JSON.stringify(mTG.DN_TRU || []);
+      ra.tgDnKhuon4 = khoDN.khuon4.join(' → ');
+
+      const nen = {nguoiXem: ['PHUHUYNH'], thoiDiem: 'tối sau giờ học'};
+      const thieu = mTG.soatDieuNho(nen);
+      const trongDau = mTG.soatDieuNho(
+        Object.assign({}, nen, {dieuNho: 'phụ huynh hiểu được giá trị của bảy ngày'}));
+      /* TIẾNG VIỆT KHÔNG PHÂN TỪ BẰNG KHOẢNG TRẮNG — "tin" đứng riêng
+         một âm tiết trong "thông tin". Phép dò biên từ bắt oan câu này
+         ở lần chạy đầu, nên phép đo giữ đúng câu ấy. */
+      const ghepAm = mTG.soatDieuNho(
+        Object.assign({}, nen, {dieuNho: 'gửi thông tin liên hệ cho Tư vấn của nhà mình'}));
+      const du = mTG.soatDieuNho(
+        Object.assign({}, nen, {dieuNho: 'bấm mở chặng 1 ngay tối nay'}));
+
+      ra.tgDnChanThat =
+        !thieu.du && thieu.thieu.indexOf('DN2') >= 0 &&
+        !trongDau.du && trongDau.camThay.indexOf('hiểu') >= 0 &&
+        ghepAm.du === true && du.du === true &&
+        /* Khuôn bốn câu phải đủ bốn nhịp, không phải một dòng báo đỏ. */
+        !!thieu.khuon4 && !!thieu.khuon4.lang && !!thieu.khuon4.daHieu &&
+        thieu.khuon4.hoiRo.length >= 1 && !!thieu.khuon4.buocTiep &&
+        du.khuon4 === null;
+    }
+
+  bao(ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
+      ra.tgDnCamKhop && ra.tgDnChanThat && !ra.tgDnThieuO.length &&
+      (ra.tgDnMa || []).length === 3 && ra.tgDnKhuon4 ===
+        '1:Lắng → 2:Nói điều đã hiểu → 3:Hỏi rõ → 4:Nói bước tiếp',
     'CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC CHẶN THEO RANH GIỚI ĐÃ DUYỆT, KHÔNG THEO MỘT DANH SÁCH TỰ NGHĨ RA. Bản đặc tả của chủ hệ đề nghị dựng "Boundary Definition" cho từng Tầng với ô Allowed Concepts và ô Do NOT introduce. Hai ô ấy ĐÃ TỒN TẠI trong kho từ lâu và đang được dùng để bán hàng: HP_TANG[].gom và HP_TANG[].khong. Chép chúng sang một tệp mới là dựng bản thứ hai của một sự thật, và bản thứ hai không ai sửa khi bảng chặng đổi — tới lúc ấy máy chặn thiết kế theo một ranh giới đã cũ, im lặng. Máy chủ không đọc được kho đã mã hoá nên buộc phải giữ một bản chép TỐI THIỂU để dò, và phép đo này đối chiếu bản chép ấy với bản gốc THEO Ý chứ không theo từng chữ: kho viết thành câu cho người đọc, máy chủ giữ khoá ngắn để dò, nên luật là mỗi khoá máy chủ dùng phải TÌM THẤY trong câu khai của chính Tầng ấy. Khoá nào không tìm thấy là khoá tự nghĩ ra, và nó chặn thiết kế theo một ranh giới chưa ai duyệt — đúng cái mà luật "AI không được tự suy diễn" sinh ra để cấm. Phép đo cũng GỌI THẲNG cổng ấy với một nội dung T1 nói về Coach đồng hành và phác đồ rồi đòi nó chặn, vì đọc chú giải thì chú giải nói gì cũng được. Và mười hai loại hình phải có mặt đủ ở cả hai bên, mỗi loại khai đúng MỘT nhiệm vụ — nhồi hai việc vào một tấm thì người xem không nhớ được cái nào',
-    ra.tgNeoKhop && ra.tgMauKhop
+    /* ĐIỀU KIỆN CỦA CÂU KHOE PHẢI TRÙNG ĐIỀU KIỆN CỦA PHÉP ĐO.
+       Bản đầu câu khoe chỉ hỏi hai cờ cũ, nên lúc phá thử bản chép bảng
+       động từ, mục này ĐỎ mà dòng chi tiết vẫn in nguyên câu "mọi khoá
+       dò đều tìm thấy…" — đỏ mà không nói vì sao thì người đọc mất thêm
+       một vòng đi tìm. */
+    ra.tgNeoKhop && ra.tgMauKhop && ra.tgDnCamKhop && ra.tgDnChanThat
       ? '5 chặng · mọi khoá dò đều tìm thấy trong ô "không" của chính chặng ấy · ' +
         mTGSoLoai + ' loại hình đều có đúng một nhiệm vụ · cổng chặn thật · ' +
-        (ra.tgMauKhop ? (mTG.MAU_RA || []).length + ' ô màu đi ra khớp bản gốc' : '')
-      : [ra.tgKhoaLa.length ? 'KHOÁ TỰ NGHĨ RA: ' + ra.tgKhoaLa.join(' · ') : '',
+        (ra.tgMauKhop ? (mTG.MAU_RA || []).length + ' ô màu đi ra khớp bản gốc · ' : '') +
+        'cổng Điều Nhỏ ba câu chặn thật, bảng động từ khớp bản gốc'
+      : [!ra.tgDnCamKhop ? 'BẢN CHÉP BẢNG ĐỘNG TỪ CẤM Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         !ra.tgDnChanThat ? 'CỔNG ĐIỀU NHỎ KHÔNG CHẶN THẬT' : '',
+         (ra.tgDnThieuO || []).length ? 'mục Điều Nhỏ thiếu ô: ' + ra.tgDnThieuO.join(', ') : '',
+         ra.tgKhoaLa.length ? 'KHOÁ TỰ NGHĨ RA: ' + ra.tgKhoaLa.join(' · ') : '',
          !ra.tgMauKhop ? 'BẢNG MÀU ĐI RA LỆCH BẢN GỐC: ' +
            ((ra.tgMauLech || []).join(' · ') || 'số ô hai bên khác nhau') : '',
          !ra.tgDuTang ? 'thiếu chặng ở một trong hai bên' : '',

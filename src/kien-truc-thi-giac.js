@@ -356,6 +356,20 @@ G.VIEWS = G.VIEWS || {};
       '<input id="ktNhiemVu" class="inp" maxlength="300" ' +
       'placeholder="Viết một câu. Viết không nổi một câu nghĩa là nó đang mang hai việc."></div>' +
 
+      /* ── HAI Ô CỦA CỔNG ĐIỀU NHỎ ──
+         Đặt NGAY DƯỚI ô nhiệm vụ, có chủ ý: hai ô này hay bị nhầm là
+         một. Nhiệm vụ là việc của TẤM; điều nhỏ là việc của NGƯỜI sau
+         khi xem. Đứng cạnh nhau thì cái khác nhau ấy đọc ra ngay. */
+      '<div class="mt"><label class="sm"><b>Xem xong, người ta LÀM ĐƯỢC điều nhỏ gì</b>' +
+      '<span class="tiny muted"> — việc nhìn thấy được, không phải "hiểu" hay "nhớ"</span>' +
+      '</label>' +
+      '<input id="ktDieuNho" class="inp" maxlength="300" ' +
+      'placeholder="ví dụ: tối nay ghi một dòng vào sổ · bấm mở chặng 1 · nhắn cho Tư vấn một câu hỏi"></div>' +
+
+      '<div class="mt"><label class="sm"><b>Họ gặp tấm này vào lúc nào trong đời</b></label>' +
+      '<input id="ktThoiDiem" class="inp" maxlength="200" ' +
+      'placeholder="ví dụ: tối sau giờ học · mùa khai giảng · lúc vừa cãi nhau với con"></div>' +
+
       '<div class="mt"><label class="sm"><b>Cho ai xem</b></label>' +
       '<div class="row" style="gap:12px;flex-wrap:wrap;margin-top:6px">' +
       nx.map(function (m) {
@@ -405,6 +419,19 @@ G.VIEWS = G.VIEWS || {};
           '<p class="sm mt">' + h(r.error || '') + '</p>' +
           ((r.phamPhai || []).length
             ? '<p class="sm mt"><b>Phạm:</b> ' + h(r.phamPhai.join(' · ')) + '</p>'
+            : '') +
+          /* Cổng Điều Nhỏ chặn thì hiện KHUÔN BỐN CÂU, không hiện một
+             dòng báo đỏ. Một cổng chỉ nói "thiếu trường bắt buộc" thì
+             người ta điền cho qua cổng; nói lại điều mình ĐÃ hiểu trước
+             khi hỏi thì câu trả lời sau đó là câu thật. */
+          (r.khuon4
+            ? '<div class="mt" style="border-top:1px solid var(--line);padding-top:12px">' +
+              '<p class="sm">' + h(r.khuon4.lang) + ' ' + h(r.khuon4.daHieu) + '</p>' +
+              '<ul class="sm mt" style="padding-left:18px;line-height:1.7">' +
+              r.khuon4.hoiRo.map(function (c) { return '<li>' + h(c) + '</li>'; }).join('') +
+              '</ul>' +
+              '<p class="sm mt" style="color:var(--teal)">' + h(r.khuon4.buocTiep) + '</p>' +
+              '</div>'
             : '') + '</div>';
     }
     return o;
@@ -419,6 +446,7 @@ G.VIEWS = G.VIEWS || {};
     G.goiMayChu('deXuatThiGiac', {deXuat: {
       tang: oGiaTri('ktTang'), loaiHinh: oGiaTri('ktLoai'),
       nhiemVu: oGiaTri('ktNhiemVu'), noiDung: oGiaTri('ktNoiDung'),
+      dieuNho: oGiaTri('ktDieuNho'), thoiDiem: oGiaTri('ktThoiDiem'),
       boCuc: oGiaTri('ktBoCuc'), viTri: oGiaTri('ktViTri'), nguoiXem: nx
     }}).then(function (d) {
       G.ktDap = d;

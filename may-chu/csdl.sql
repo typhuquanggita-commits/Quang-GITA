@@ -733,6 +733,15 @@ CREATE TABLE IF NOT EXISTS deXuatThiGiac (
   nguoiXem    TEXT NOT NULL,      -- JSON danh sách mã người xem
   loaiHinh    TEXT NOT NULL,      -- mã trong TG_LOAI
   nhiemVu     TEXT NOT NULL,      -- MỘT nhiệm vụ, lấy từ TG_LOAI
+  -- ĐIỀU NHỎ và THỜI ĐIỂM ĐỜI — bản 9.99.54, cổng Điều Nhỏ.
+  -- `nhiemVu` là việc của TẤM; `dieuNho` là việc của NGƯỜI sau khi xem.
+  -- Hai thứ khác nhau, và cột cũ chỉ có cái thứ nhất: một tấm làm xong
+  -- nhiệm vụ của nó mà người xem không làm gì thì vẫn hỏng, chỉ là hỏng
+  -- ở chỗ không phép chấm nào nhìn tới.
+  -- DEFAULT '' để hàng cũ đọc lại được; hàng MỚI thì cổng chặn từ trước
+  -- khi tới đây, nên không hàng mới nào rỗng.
+  dieuNho     TEXT NOT NULL DEFAULT '',
+  thoiDiem    TEXT NOT NULL DEFAULT '',
   boCuc       TEXT,
   viTri       TEXT,               -- chỗ đặt trên giao diện
   deBai       TEXT,               -- đề bài thiết kế đầy đủ, máy dựng

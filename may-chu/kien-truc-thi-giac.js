@@ -219,6 +219,126 @@ export function deNghiLoaiHinh(chu) {
   return xep;
 }
 
+/* ═══════════════ CỔNG ĐIỀU NHỎ ═══════════════
+
+   Ba câu, và câu thứ hai là câu cổng cũ không hỏi.
+
+   Cổng cũ hỏi "tấm này cho ai xem" và "tấm này làm MỘT nhiệm vụ gì".
+   Cả hai là câu hỏi về TẤM HÌNH. Thiếu hẳn câu hỏi về NGƯỜI: xem xong
+   thì họ làm được điều nhỏ gì.
+
+   Một tấm đẹp, đúng thương hiệu, nói đủ ý, mà người xem đóng lại rồi
+   không làm gì — vẫn hỏng. Và hỏng ở chỗ không phép chấm nào nhìn tới,
+   vì mọi phép chấm đều chấm tấm hình.
+
+   ══ VÌ SAO CHẶN ĐỘNG TỪ "HIỂU" ══
+
+   Bản đặc tả của chủ hệ nhận điều nhỏ bằng một bảng động từ có "hiểu",
+   "nhớ", "tin". Ba từ ấy không quan sát được, và chính kho này đã có
+   luật ngược lại: chuẩn nghề CN1 ghi "mục tiêu phải viết bằng ĐỘNG TỪ
+   QUAN SÁT ĐƯỢC, không viết bằng 'hiểu' — vì không ai đo được một cái
+   hiểu".
+
+   Nhận "hiểu" ở cổng hình ảnh mà cấm "hiểu" ở cổng nội dung là hai cửa
+   của cùng một Học viện nói hai điều khác nhau. Nên ở đây chặn, và nói
+   thẳng là không theo bản đặc tả.
+
+   Bản chép của G.TG_DIEUNHO; bộ kiểm đối chiếu hai bản. */
+export const DN_CAM = ['hiểu', 'nhớ', 'tin', 'nắm được', 'thấy được', 'nhận ra',
+                'cảm nhận', 'biết được', 'ý thức'];
+
+const DN_HOI = {
+  DN1: 'Ảnh này dành cho ai xem ạ? — ví dụ: phụ huynh có con thi cuối kỳ, ' +
+       'hay đội ngũ Tư vấn mới vào.',
+  DN2: 'Sau khi xem ảnh, anh chị mong người xem LÀM ĐƯỢC điều nhỏ gì ạ? ' +
+       '— một câu thôi.',
+  DN3: 'Họ thường gặp ảnh này vào lúc nào trong đời ạ? — ví dụ: tối sau giờ ' +
+       'học, mùa khai giảng, lúc vừa cãi nhau với con.'
+};
+
+/* ── BẪY THỨ BA CỦA PHÉP DÒ CHỮ TIẾNG VIỆT ──
+
+   Hai bẫy đầu kho này đã gặp: \b không khớp chữ có dấu vì "à" nằm
+   ngoài lớp \w của JavaScript; và dò chuỗi con thì "hư" khớp trong
+   "chưa", "chuẩn", "thứ".
+
+   Bẫy thứ ba tìm ra ở bản 9.99.54, và nó NGƯỢC với bẫy thứ hai: dò
+   theo biên từ bằng khoảng trắng cũng sai, vì TIẾNG VIỆT KHÔNG PHÂN
+   TỪ BẰNG KHOẢNG TRẮNG. Khoảng trắng ngăn ÂM TIẾT, không ngăn TỪ.
+
+   Nên "tin" đứng riêng một âm tiết trong "thông tin", "tin nhắn",
+   "tin cậy" — và phép dò biên từ bắt cả ba. Bộ thử bắt ngay: câu
+   "gửi thông tin liên hệ cho Tư vấn" bị chặn vì có chữ "tin", trong
+   khi "gửi" là một việc nhìn thấy được rõ ràng.
+
+   Không có cách nào đúng hoàn toàn mà không cần một bộ tách từ. Cách
+   dùng ở đây: dò biên âm tiết, rồi TRỪ những cụm ghép đã biết. Danh
+   sách trừ ngắn và chỉ dài thêm khi bắt oan THẬT — thêm cho đủ là mở
+   đường cho chữ lọt.
+
+   Bản chép của G.TG_DIEUNHO; bộ kiểm đối chiếu hai bản. */
+export const DN_TRU = ['thông tin', 'tin nhắn', 'tin cậy', 'tin học', 'bản tin',
+                'tin tức', 'ghi nhớ', 'lưu ý'];
+
+function coCum(chu, cum) {
+  let t = ' ' + String(chu || '').toLowerCase().replace(/\s+/g, ' ') + ' ';
+  /* Xoá cụm ghép TRƯỚC khi dò, để âm tiết nằm trong chúng thôi đứng riêng. */
+  DN_TRU.forEach(x => { t = t.split(x).join(' '); });
+  return t.indexOf(' ' + cum + ' ') >= 0 ||
+         t.indexOf(' ' + cum + ',') >= 0 ||
+         t.indexOf(' ' + cum + '.') >= 0;
+}
+
+export function soatDieuNho(d) {
+  const dd = d || {};
+  const nx = Array.isArray(dd.nguoiXem) ? dd.nguoiXem : [];
+  const dieuNho = String(dd.dieuNho || '').trim();
+  const thoiDiem = String(dd.thoiDiem || '').trim();
+
+  const thieu = [];
+  if (!nx.length) thieu.push('DN1');
+  /* Mười ký tự: đủ cho "ghi một dòng" và không đủ cho "ok". */
+  if (dieuNho.length < 10) thieu.push('DN2');
+  if (thoiDiem.length < 6) thieu.push('DN3');
+
+  /* Động từ trong đầu — chặn RIÊNG, không gộp vào "thiếu", vì người
+     viết ĐÃ trả lời câu hỏi; họ chỉ trả lời bằng một thứ không đo được.
+     Gộp hai chuyện làm một thì câu báo nói "thiếu điều nhỏ" trong khi
+     họ vừa viết ra một câu — và họ sẽ viết lại y hệt. */
+  const camThay = DN_CAM.filter(c => coCum(dieuNho, c));
+
+  return {
+    du: thieu.length === 0 && camThay.length === 0,
+    thieu, camThay,
+    hoi: thieu.map(m => DN_HOI[m]),
+    /* Khuôn bốn câu: lắng → nói điều đã hiểu → hỏi rõ → nói bước tiếp. */
+    khuon4: thieu.length || camThay.length ? {
+      lang: 'Em đọc rồi ạ.',
+      daHieu: nx.length
+        ? 'Em nắm được tấm này cho ' + nx.join(', ') + ' xem.'
+        : 'Em nắm được phần nội dung anh chị mô tả.',
+      hoiRo: thieu.map(m => DN_HOI[m]).concat(
+        camThay.length
+          ? ['Câu điều nhỏ đang dùng chữ "' + camThay.join('", "') + '" — ' +
+             'mấy chữ ấy nói về chuyện xảy ra trong đầu người xem, đứng ngoài ' +
+             'không ai đo được. Anh chị đổi sang một việc NHÌN THẤY được giúp ' +
+             'em ạ: ví dụ "tối nay ghi một dòng vào sổ", "bấm mở chặng 1", ' +
+             '"nhắn cho Tư vấn một câu hỏi".']
+          : []),
+      buocTiep: 'Anh chị cho em mấy dòng ấy là em dựng đề bài và đưa lên bậc duyệt ngay ạ.'
+    } : null
+  };
+}
+
+/* Cửa cho màn hình gọi TRƯỚC khi gửi đề xuất — hỏi trước thì người ta
+   sửa ngay trên màn, không phải gửi đi rồi bị trả về. */
+export async function docDieuNho(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+  const r = soatDieuNho((y || {}).deXuat || y || {});
+  return {ok: true, ...r};
+}
+
 /* Cửa cho màn hình gọi TRƯỚC khi đề xuất. Không ghi gì vào sổ — nó
    chỉ đọc và trả lời. */
 export async function docNoiDungThiGiac(y, env, db, hoSo) {
@@ -290,11 +410,30 @@ export async function deXuatThiGiac(y, env, db, hoSo) {
 
   const nx = Array.isArray(d.nguoiXem) ? d.nguoiXem : [];
   const nxLa = nx.filter(x => NGUOI_XEM.indexOf(x) < 0);
-  if (!nx.length) return {ok: false, code: 'THIEUNGUOIXEM',
-    error: 'Chưa nói hình này cho AI xem. Cùng một nội dung, phụ huynh và ' +
-           'học viên mang hai câu hỏi khác nhau tới, nên cần hai tấm khác nhau.'};
   if (nxLa.length) return {ok: false,
     error: 'Người xem lạ: ' + nxLa.join(', ') + '. Chỉ nhận ' + NGUOI_XEM.join(', ') + '.'};
+
+  /* ── CỔNG ĐIỀU NHỎ ──
+     Đứng ở đây, sau phép kiểm hình dạng và TRƯỚC cổng Tầng. Lý do của
+     thứ tự: câu "người xem lạ" nói về một ô SAI, còn cổng này nói về
+     một ô THIẾU — sửa một ô sai thì dễ, còn trả lời ba câu hỏi thì mất
+     công hơn, và không nên bắt người ta trả lời ba câu rồi mới báo họ
+     gõ sai một mã.
+
+     Cổng này nuốt luôn phép kiểm THIEUNGUOIXEM cũ: DN1 hỏi đúng câu ấy,
+     và hai chỗ hỏi cùng một câu thì sớm muộn hai chỗ nói khác nhau. */
+  const dn = soatDieuNho(d);
+  if (!dn.du) return {ok: false, code: 'THIEUDIEUNHO',
+    thieu: dn.thieu, camThay: dn.camThay, khuon4: dn.khuon4,
+    error: 'Chưa đủ để bắt đầu vẽ. ' +
+      (dn.thieu.length ? 'Còn thiếu: ' + dn.hoi.join(' · ') + ' ' : '') +
+      (dn.camThay.length
+        ? 'Và câu điều nhỏ đang dùng chữ "' + dn.camThay.join('", "') +
+          '" — không ai đứng ngoài đo được một cái hiểu, nên cũng không ai ' +
+          'kiểm được tấm hình có làm được việc của nó không. '
+        : '') +
+      'Máy KHÔNG tự điền giúp: điều nhỏ là lời hứa của Học viện với người ' +
+      'xem, và một lời hứa máy tự viết thì không ai chịu trách nhiệm được.'};
 
   /* ── CỔNG TẦNG ĐỨNG TRƯỚC MỌI THỨ KHÁC ── */
   const st = soatTang(tang, noiDung + ' ' + nhiemVu);
@@ -331,11 +470,14 @@ export async function deXuatThiGiac(y, env, db, hoSo) {
 
   await db.prepare(
     'INSERT INTO deXuatThiGiac (id,ban,banTruoc,noiDung,tang,nguoiXem,loaiHinh,' +
-    "nhiemVu,boCuc,viTri,deBai,soatTang,yBatBuoc,trangThai,nguoiDe,deLuc) " +
-    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,'deXuat',?,?)"
+    "nhiemVu,dieuNho,thoiDiem,boCuc,viTri,deBai,soatTang,yBatBuoc,trangThai,nguoiDe,deLuc) " +
+    "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'deXuat',?,?)"
   ).bind(id, Number(d.ban || 1), String(d.banTruoc || '') || null,
     noiDung.slice(0, 4000), tang, JSON.stringify(nx), loaiHinh,
-    nhiemVu.slice(0, 300), String(d.boCuc || '').slice(0, 200) || null,
+    nhiemVu.slice(0, 300),
+    String(d.dieuNho || '').trim().slice(0, 300),
+    String(d.thoiDiem || '').trim().slice(0, 200),
+    String(d.boCuc || '').slice(0, 200) || null,
     String(d.viTri || '').slice(0, 200) || null, deBai, st.vi,
     JSON.stringify(yBB), hoSo.u, luc).run();
 
@@ -455,6 +597,11 @@ export async function banMoiThiGiac(y, env, db, hoSo) {
     boCuc: d.boCuc !== undefined ? d.boCuc : cu.boCuc,
     viTri: d.viTri !== undefined ? d.viTri : cu.viTri,
     nguoiXem: d.nguoiXem !== undefined ? d.nguoiXem : JSON.parse(cu.nguoiXem || '[]'),
+    /* Hai ô của cổng Điều Nhỏ cũng phải thừa hưởng. Quên chúng thì mọi
+       bản SỬA đều bị chính cổng ấy chặn — dù người sửa chỉ đổi bố cục.
+       Bộ thử bắt ngay lần chạy đầu sau khi dựng cổng. */
+    dieuNho: d.dieuNho !== undefined ? d.dieuNho : cu.dieuNho,
+    thoiDiem: d.thoiDiem !== undefined ? d.thoiDiem : cu.thoiDiem,
     ban: Number(cu.ban) + 1, banTruoc: cu.id
   };
   const ra = await deXuatThiGiac({deXuat: moi}, env, db, hoSo);

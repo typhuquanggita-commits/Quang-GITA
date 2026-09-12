@@ -51,6 +51,8 @@ G.THUOC_CAP_PHEP = [
   'KL_MA_VB','KL_LOP','KL_THAY','KL_NGANKHO','KL_NHOM','KL_CHOCHU',
   /* v9.99.49 — khung cho những mục còn chờ chủ hệ */
   'KL_BIEUTUONG','MD_MAU_MA','MD_THUHANHVI','TG_IN_CHOT',
+  /* v9.99.54 — cổng Điều Nhỏ của trợ lý hình ảnh */
+  'TG_DIEUNHO','TG_KHUON4','TG_KHUON4_LUAT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

@@ -261,6 +261,47 @@ khuất sau thanh trên, nên không ai thấy. `do-khung-man.js` nay canh
 
 ---
 
+## Ba cái bẫy của phép dò chữ tiếng Việt
+
+Cả ba đều đã cắn kho này, và cái thứ ba NGƯỢC với cái thứ hai.
+
+1. **`\b` không khớp chữ có dấu.** `/\bvà\b/` không bao giờ khớp, vì "à"
+   nằm ngoài lớp `\w` của JavaScript nên sau nó không có biên nào. Phép
+   chặn im lặng suốt.
+2. **Dò chuỗi con thì bắt oan.** `boDau('hư')` = `hu`, và `hu` nằm trong
+   "chưa", "chuẩn", "thứ" — một bài sạch bị báo 13 câu dán nhãn.
+3. **Dò theo biên từ bằng khoảng trắng cũng sai** (9.99.54), vì **tiếng
+   Việt không phân từ bằng khoảng trắng** — khoảng trắng ngăn ÂM TIẾT,
+   không ngăn TỪ. "tin" đứng riêng một âm tiết trong "thông tin", "tin
+   nhắn", "tin cậy". Cách dùng: dò biên âm tiết rồi **TRỪ cụm ghép đã
+   biết** (`DN_TRU`), danh sách trừ ngắn và chỉ dài thêm khi bắt oan
+   THẬT — thêm cho đủ là mở đường cho chữ lọt.
+
+---
+
+## Trợ lý hình ảnh — cổng Điều Nhỏ (9.99.54)
+
+Theo bản đặc tả `GITA365-IMG-AGENT-P1-KNOWLEDGE-CORE` của chủ hệ.
+
+Cổng thiết kế cũ hỏi hai câu, và **cả hai đều là câu hỏi về TẤM HÌNH**:
+cho ai xem, và làm MỘT nhiệm vụ gì. Thiếu hẳn câu hỏi về NGƯỜI. Nay ba
+câu — `G.TG_DIEUNHO`:
+
+- **DN1 Ai xem** — đã có, đọc từ ô `nguoiXem`
+- **DN2 Điều nhỏ** — *mới*: xem xong thì người ta LÀM ĐƯỢC gì
+- **DN3 Thời điểm đời** — *mới*: họ gặp tấm này vào lúc nào
+
+Thiếu thì hỏi theo **khuôn bốn câu** `G.TG_KHUON4` (lắng → nói điều đã
+hiểu → hỏi rõ → nói bước tiếp), không quăng ra một dòng báo đỏ.
+
+**Chỗ cố ý không theo bản đặc tả:** bản đặc tả nhận điều nhỏ bằng bảng
+động từ có "hiểu", "nhớ", "tin". Ba từ ấy không quan sát được, và
+`KN_CHUAN_NGHE` CN1 của chính kho này đã cấm đúng chúng. Nhận ở cổng
+hình mà cấm ở cổng nội dung là hai cửa của một Học viện nói hai điều
+khác nhau — nên ở đây **chặn**.
+
+---
+
 ## Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm
 
 Viết xong một phép kiểm mới thì **cố tình làm hỏng dữ liệu** để xem nó có

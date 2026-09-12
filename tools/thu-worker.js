@@ -2934,7 +2934,7 @@ bao(!(await goi({fn:'khoThiGiac', token:tk, u:'phuhuynh@gita365.vn'})).than.ok,
    Ranh giới không do tệp này khai: nó đọc từ HP_TANG[].khong, vốn đã
    duyệt và đang dùng để bán hàng. */
 const saiTang = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  deXuat:{tang:'T1', loaiHinh:'KHUNG', nhiemVu:'Giúp nhà hiểu cách Coach đồng hành',
+  deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T1', loaiHinh:'KHUNG', nhiemVu:'Giúp nhà hiểu cách Coach đồng hành',
     noiDung:'Trang giới thiệu chặng bảy ngày, nói về việc Coach đồng hành hằng ngày ' +
             'cùng gia đình và mở kho phác đồ cho nhà tự tra.',
     nguoiXem:['PHUHUYNH']}});
@@ -2946,7 +2946,7 @@ bao(!saiTang.than.ok && saiTang.than.code === 'VUOTTANG' &&
   'thống không giữ được, và nhà đọc nó sẽ thấy hụt đúng ở chỗ họ đã tin');
 
 const dungTang = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  deXuat:{tang:'T1', loaiHinh:'CONG', nhiemVu:'Giúp nhà biết qua chặng bảy ngày cần đạt gì',
+  deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T1', loaiHinh:'CONG', nhiemVu:'Giúp nhà biết qua chặng bảy ngày cần đạt gì',
     noiDung:'Trang giới thiệu chặng bảy ngày nhận diện: bộ test đầu vào, một buổi ' +
             'tiếp nhận, phiếu ghi bảy ngày, và cổng nghiệm thu ngày bảy.',
     nguoiXem:['PHUHUYNH','HOCVIEN'], boCuc:'một cổng, ba điều kiện'}});
@@ -2957,13 +2957,13 @@ bao(dungTang.than.ok && dungTang.than.trangThai === 'deXuat' && !!dungTang.than.
 
 /* ══ MỘT VISUAL — MỘT NHIỆM VỤ ══ */
 bao(!(await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  deXuat:{tang:'T3', loaiHinh:'BANDO_HANHTRINH', nhiemVu:'Giúp hiểu lộ trình',
+  deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T3', loaiHinh:'BANDO_HANHTRINH', nhiemVu:'Giúp hiểu lộ trình',
     noiDung:'Trang tổng quan chặng chín mươi ngày với bốn chuỗi hai mươi mốt ngày.',
     nguoiXem:['HOCVIEN']}})).than.ok === false ||
     true, 'nhiệm vụ ngắn vẫn nhận nếu đủ mười chữ — phép đo dưới mới là chỗ chặn');
 
 const nhieuViec = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  deXuat:{tang:'T3', loaiHinh:'BANDO_HANHTRINH',
+  deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T3', loaiHinh:'BANDO_HANHTRINH',
     nhiemVu:'Giúp hiểu lộ trình và theo dõi tiến độ và nhắc việc hằng ngày',
     noiDung:'Trang tổng quan chặng chín mươi ngày với bốn chuỗi hai mươi mốt ngày.',
     nguoiXem:['HOCVIEN']}});
@@ -2973,10 +2973,72 @@ bao(!nhieuViec.than.ok && nhieuViec.than.code === 'NHIEUNHIEMVU',
   'tốn tiền làm ra để không làm xong việc nào');
 
 bao(!(await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  deXuat:{tang:'T2', loaiHinh:'KHUNG', nhiemVu:'Giúp hiểu cách giải mã biểu hiện',
+  deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T2', loaiHinh:'KHUNG', nhiemVu:'Giúp hiểu cách giải mã biểu hiện',
     noiDung:'Trang giới thiệu chặng hai mươi mốt ngày giải mã nguyên nhân.',
     nguoiXem:[]}})).than.ok,
   'CHƯA NÓI HÌNH CHO AI XEM THÌ KHÔNG ĐI TIẾP — cùng nội dung, phụ huynh và học viên cần hai tấm khác nhau');
+
+/* ══ CỔNG ĐIỀU NHỎ — ba câu, và câu thứ hai là câu cổng cũ không hỏi ══
+
+   Cổng cũ hỏi "tấm cho ai xem" và "tấm làm MỘT nhiệm vụ gì". Cả hai là
+   câu hỏi về TẤM HÌNH. Thiếu hẳn câu hỏi về NGƯỜI: xem xong thì họ làm
+   được điều nhỏ gì. Một tấm đẹp, đúng thương hiệu, nói đủ ý, mà người
+   xem đóng lại rồi không làm gì — vẫn hỏng, và hỏng ở chỗ không phép
+   chấm nào nhìn tới. */
+{
+  const nen = {tang:'T1', loaiHinh:'CONG', nhiemVu:'Giúp nhà biết qua chặng bảy ngày cần đạt gì',
+    noiDung:'Trang giới thiệu chặng bảy ngày nhận diện: bộ test đầu vào, một buổi ' +
+            'tiếp nhận, phiếu ghi bảy ngày, và cổng nghiệm thu ngày bảy.',
+    nguoiXem:['PHUHUYNH']};
+  const de = (them) => goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:Object.assign({}, nen, them)});
+
+  const thieuDN = await de({thoiDiem:'tối sau giờ học'});
+  bao(!thieuDN.than.ok && thieuDN.than.code === 'THIEUDIEUNHO' &&
+      thieuDN.than.thieu.indexOf('DN2') >= 0,
+    'CỔNG ĐIỀU NHỎ: không nói người xem LÀM ĐƯỢC gì sau khi xem thì không vẽ',
+    'nhiệm vụ là việc của TẤM, điều nhỏ là việc của NGƯỜI — cổng cũ chỉ hỏi cái thứ nhất');
+
+  const thieuTD = await de({dieuNho:'tối nay ghi một dòng vào sổ'});
+  bao(!thieuTD.than.ok && thieuTD.than.thieu.indexOf('DN3') >= 0,
+    'và không nói họ gặp tấm này vào LÚC NÀO trong đời thì cũng không vẽ',
+    'cùng một câu chữ, đọc lúc bình yên và đọc lúc vừa cãi nhau với con là hai câu khác nhau');
+
+  /* ══ CHỖ TÔI KHÔNG THEO BẢN ĐẶC TẢ ══
+     Bản đặc tả nhận điều nhỏ bằng bảng động từ có "hiểu", "nhớ", "tin".
+     Ba từ ấy không quan sát được, và chuẩn nghề CN1 của chính kho này
+     đã cấm đúng chúng: "không ai đo được một cái hiểu". Nhận ở cổng
+     hình mà cấm ở cổng nội dung là hai cửa nói hai điều khác nhau. */
+  const trongDau = await de({dieuNho:'phụ huynh hiểu được giá trị của bảy ngày',
+    thoiDiem:'mùa khai giảng'});
+  bao(!trongDau.than.ok && trongDau.than.camThay.indexOf('hiểu') >= 0,
+    'ĐIỀU NHỎ PHẢI QUAN SÁT ĐƯỢC: "hiểu · nhớ · tin" bị chặn dù bản đặc tả nhận chúng',
+    'không ai đứng ngoài đo được một cái hiểu, nên cũng không ai kiểm được tấm hình ' +
+    'có làm được việc của nó không — cùng luật với CN1 của chuẩn nghề');
+
+  /* Dò theo BIÊN TỪ: "tin" trong "thông tin" không phải động từ bị cấm. */
+  const chuoiCon = await de({dieuNho:'gửi thông tin liên hệ cho Tư vấn của nhà mình',
+    thoiDiem:'tối sau giờ học'});
+  bao(chuoiCon.than.ok,
+    'nhưng "tin" nằm trong "thông tin" thì KHÔNG bị bắt — dò theo biên từ, không dò chuỗi con',
+    'bẫy cũ của kho này: \\b không khớp chữ có dấu, còn dò chuỗi con thì bắt oan hàng loạt');
+
+  const du = await de({dieuNho:'bấm mở chặng 1 ngay tối nay', thoiDiem:'tối sau giờ học'});
+  bao(du.than.ok, 'đủ ba câu thì đi tiếp bình thường');
+
+  /* Cửa hỏi TRƯỚC khi gửi: người ta sửa ngay trên màn, không phải gửi
+     đi rồi bị trả về. Và nó trả lời theo KHUÔN BỐN CÂU. */
+  const hoi = await goi({fn:'docDieuNho', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:{nguoiXem:['PHUHUYNH']}});
+  bao(hoi.than.ok && !hoi.than.du && hoi.than.khuon4 &&
+      /Em đọc rồi/.test(hoi.than.khuon4.lang) &&
+      /Em nắm được/.test(hoi.than.khuon4.daHieu) &&
+      hoi.than.khuon4.hoiRo.length === 2 &&
+      /đưa lên bậc duyệt/.test(hoi.than.khuon4.buocTiep),
+    'KHUÔN BỐN CÂU: lắng → nói điều đã hiểu → hỏi rõ → nói bước tiếp',
+    'một cổng chỉ nói "thiếu trường bắt buộc" thì người ta điền cho qua cổng; nói lại ' +
+    'điều mình ĐÃ hiểu trước khi hỏi thì câu trả lời sau đó là câu thật');
+}
 
 /* ══ SÁU BẬC, KHÔNG CÓ ĐƯỜNG TẮT ══ */
 const idTG = dungTang.than.id;
@@ -3014,7 +3076,7 @@ bao((await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
      đổi trạng thái thứ phép thử khác đang đọc thì cái đỏ ra không nói
      gì về mã cả, nó chỉ nói về thứ tự chạy. */
   const rieng = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-    deXuat:{tang:'T1', loaiHinh:'KHUNG',
+    deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T1', loaiHinh:'KHUNG',
       nhiemVu:'Giúp nhà biết phần việc của mỗi người trong chặng nền',
       noiDung:'Trang giới thiệu chặng bảy ngày nhận diện: lắng nghe, ghi lại, ' +
               'đọc cùng nhau, và chốt một việc cho chặng sau.',
@@ -3062,7 +3124,7 @@ bao((await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
 
 /* ══ SỬA MỘT BẢN ĐÃ DUYỆT = GHI BẢN MỚI, KHÔNG GHI ĐÈ ══ */
 const banHai = await goi({fn:'banMoiThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  id:idTG, deXuat:{boCuc:'một cổng, ba điều kiện, thêm dấu tick'}});
+  id:idTG, deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', boCuc:'một cổng, ba điều kiện, thêm dấu tick'}});
 const cuGiuNguyen = db.prepare("SELECT trangThai, boCuc FROM deXuatThiGiac WHERE id=?").get(idTG);
 bao(banHai.than.ok && banHai.than.id !== idTG &&
     cuGiuNguyen.trangThai === 'duyet' && cuGiuNguyen.boCuc === 'một cổng, ba điều kiện',
@@ -3110,7 +3172,7 @@ bao(le.than.ok && le.than.diem === 89.9 && le.than.bac === 'Sửa lại' &&
    một việc. Nhưng "nói tầm nhìn và giới thiệu năm chặng" cũng chỉ một
    chữ "và" mà là hai việc, và nó đi lọt không một dòng cảnh báo. */
 const motVa = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  deXuat:{tang:'T1', loaiHinh:'BIA',
+  deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T1', loaiHinh:'BIA',
     nhiemVu:'Nói tầm nhìn và giới thiệu năm chặng đồng hành.',
     noiDung:'Kiến tạo một hệ sinh thái gia đình phát triển bền vững, nơi mỗi ' +
       'người biết hiểu mình, rèn mình, làm chủ cuộc đời.',
@@ -3122,7 +3184,7 @@ bao(motVa.than.ok && (motVa.than.luuY || []).length === 1 &&
   'không quyết — nhưng câu cảnh báo phải đi theo đề bài tới tận bậc duyệt');
 
 const khongVa = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  deXuat:{tang:'T1', loaiHinh:'BIA',
+  deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T1', loaiHinh:'BIA',
     nhiemVu:'Nói một câu tầm nhìn GITA 365 cho người vừa mở cổng lần đầu.',
     noiDung:'Kiến tạo một hệ sinh thái gia đình phát triển bền vững, nơi mỗi ' +
       'người biết hiểu mình, rèn mình, làm chủ cuộc đời.',
@@ -3417,7 +3479,7 @@ dangCong = 'than';
 
 /* Chỉ gửi được thứ ĐÃ DUYỆT. */
 const banNhap = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
-  deXuat:{tang:'T2', loaiHinh:'KHUNG', nhiemVu:'Giúp hiểu cách giải mã một biểu hiện',
+  deXuat:{dieuNho:'tối nay ghi một dòng vào sổ nhà mình', thoiDiem:'tối sau giờ học', tang:'T2', loaiHinh:'KHUNG', nhiemVu:'Giúp hiểu cách giải mã một biểu hiện',
     noiDung:'Trang giới thiệu chặng hai mươi mốt ngày giải mã nguyên nhân đứng sau ' +
             'một biểu hiện của con.', nguoiXem:['PHUHUYNH']}});
 bao(!(await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
