@@ -74,7 +74,7 @@ const CHU_NHO = 10;
 
   console.log('\nĐO KHUNG MÀN — 4 khổ màn thật, 2 vai\n');
 
-  const tong = { tran: [], phanTu: [], nut: [], chu: [], ro: [] };
+  const tong = { tran: [], phanTu: [], nut: [], chu: [], ro: [], oNho: [] };
 
   for (const k of KHO) {
     const p = await b.newPage({ viewport: { width: k.w, height: k.h },
@@ -145,7 +145,7 @@ const CHU_NHO = 10;
             }
           }
 
-          const nutNho = [], chuNho = [];
+          const nutNho = [], chuNho = [], oNho = [];
           if (opt.cham && goc) {
             const nut = goc.querySelectorAll('button,a[href],[data-act],[role="button"],input,select');
             for (let i = 0; i < nut.length; i++) {
@@ -167,6 +167,19 @@ const CHU_NHO = 10;
               if (r.height < opt.nutNho || r.width < opt.nutNho)
                 nutNho.push(Math.round(r.width) + '×' + Math.round(r.height) + ' ' +
                   (el.textContent || '').trim().slice(0, 18));
+            }
+            /* ── Ô NHẬP DƯỚI 16px LÀM iOS PHÓNG CẢ TRANG ──
+               Luật của Safari trên iPhone, không tắt được: chạm vào một
+               ô chữ nhỏ hơn 16px thì nó phóng cả trang lên cho dễ gõ, và
+               KHÔNG thu lại khi gõ xong. Người dùng phải tự chụm ngón tay
+               thu về sau MỖI lần gõ một ô. */
+            const oN = goc.querySelectorAll('input,textarea,select');
+            for (let i = 0; i < oN.length; i++) {
+              const el = oN[i];
+              if (el.type === 'checkbox' || el.type === 'radio') continue;
+              if (getComputedStyle(el).display === 'none') continue;
+              const cx = parseFloat(getComputedStyle(el).fontSize);
+              if (cx && cx < 16) oNho.push(cx + 'px · <' + el.tagName.toLowerCase() + '>');
             }
             const chu = goc.querySelectorAll('*');
             for (let i = 0; i < chu.length; i++) {
@@ -200,6 +213,7 @@ const CHU_NHO = 10;
             thoRa: thoRa.slice(0, 4).map(x => x.ten + ' thừa ' + x.thua + 'px'),
             soThoRa: thoRa.length,
             nutNho: nutNho.slice(0, 3), soNutNho: nutNho.length,
+            oNho: oNho.slice(0, 3), soONho: oNho.length,
             chuNho: chuNho.slice(0, 2), soChuNho: chuNho.length
           };
         }, { v, cham: k.cham, nutNho: NUT_NHO, chuNho: CHU_NHO });
@@ -211,6 +225,7 @@ const CHU_NHO = 10;
         if (d.cuonNgang > 1) tong.tran.push(nhan + ' — trang cuộn ngang ' + d.cuonNgang + 'px');
         if (d.soThoRa) tong.phanTu.push(nhan + ' — ' + d.soThoRa + ' thẻ tràn: ' + d.thoRa.join(' · '));
         if (d.soNutNho) tong.nut.push(nhan + ' — ' + d.soNutNho + ' nút nhỏ: ' + d.nutNho.join(' · '));
+        if (d.soONho) tong.oNho.push(nhan + ' — ' + d.soONho + ' ô: ' + d.oNho.join(' · '));
         if (d.soChuNho) tong.chu.push(nhan + ' — ' + d.soChuNho + ' chỗ chữ nhỏ: ' + d.chuNho.join(' · '));
       }
     }
@@ -239,8 +254,46 @@ const CHU_NHO = 10;
     tong.nut.length ? tong.nut.slice(0, 8).join(' · ') : 'sạch');
   bao(!tong.chu.length, 'KHÔNG CHỖ NÀO DÙNG CHỮ DƯỚI ' + CHU_NHO + 'px',
     tong.chu.length ? tong.chu.slice(0, 6).join(' · ') : 'sạch');
+  bao(!tong.oNho.length, 'MỌI Ô NHẬP TRÊN KHỔ CHẠM ĐỀU DÙNG CHỮ TỪ 16px. Dưới mức ấy, Safari trên iPhone phóng CẢ TRANG lên khi người ta chạm vào ô — và không thu lại khi gõ xong, nên sau mỗi lần gõ họ phải tự chụm ngón tay thu về',
+    tong.oNho.length ? Array.from(new Set(tong.oNho.map(x => x.split(' — ')[1]))).slice(0, 4).join(' · ') : 'sạch');
   bao(!tong.ro.length, 'THÂN TRANG KHÔNG CÓ CHỮ NẰM TRẦN NGOÀI MỌI THẺ. Một thẻ meta bị cắt đôi thì nửa sau rơi xuống thân trang và hiện ra thành chữ — đã xảy ra thật với dòng khai quyền sở hữu trí tuệ, sống qua rất nhiều bản vì trên màn để bàn nó khuất sau thanh trên',
     tong.ro.length ? Array.from(new Set(tong.ro.map(x => x.split(' — ')[1]))).slice(0, 3).join(' · ') : 'sạch');
+
+  /* ══ HAI PHÉP SOI TĨNH ══
+     Hai luật dưới đây KHÔNG đo được bằng trình duyệt ở đây: Playwright
+     không giả lập được tai thỏ, và chiều cao 100vh chỉ sai khi thanh
+     địa chỉ thật thu vào. Nên soi thẳng tệp kiểu. Soi tĩnh yếu hơn đo
+     thật, nhưng bỏ hẳn thì hai lớp lỗi ấy không có ai canh. */
+  {
+    const css = require('fs').readFileSync(
+      require('path').join(__dirname, '..', 'assets', 'style.css'), 'utf8');
+    const htm = require('fs').readFileSync(
+      require('path').join(__dirname, '..', 'index.html'), 'utf8');
+
+    const nhanViec = /viewport-fit\s*=\s*cover/.test(htm);
+    const coLo = /safe-area-inset-top/.test(css) && /safe-area-inset-bottom/.test(css);
+    bao(!nhanViec || coLo,
+      'ĐÃ KHAI viewport-fit=cover THÌ PHẢI ĐỌC env(safe-area-inset-*). Hai dòng ấy nói với máy "trang tự lo phần dưới tai thỏ và phần dưới vạch về nhà" — nhận việc mà không làm thì trên iPhone thanh trên chui xuống dưới tai thỏ và đáy trang nằm dưới vạch về nhà',
+      nhanViec ? (coLo ? 'có nhận và có làm' : 'NHẬN MÀ KHÔNG LÀM') : 'không nhận việc');
+
+    /* 100vh đứng MỘT MÌNH. Có dòng 100dvh ngay sau thì 100vh chỉ là bản
+       lùi cho trình duyệt cũ — đúng cách làm, không bắt. */
+    /* Bỏ lời chú giải trước khi soi — chính chú giải giải thích luật
+       này cũng nhắc chữ 100vh, và một phép soi bắt luôn lời giải thích
+       của chính nó thì không ai giữ nổi. Thay bằng khoảng trắng cùng
+       số dòng, để số dòng báo ra vẫn đúng. */
+    const cssSach = css.replace(/\/\*[\s\S]*?\*\//g,
+      m => m.replace(/[^\n]/g, ' '));
+    const traiPhep = [];
+    cssSach.split('\n').forEach((d, i) => {
+      if (!/\b100vh\b/.test(d)) return;
+      if (/100dvh/.test(d)) return;
+      traiPhep.push('dòng ' + (i + 1) + ': ' + d.trim().slice(0, 54));
+    });
+    bao(!traiPhep.length,
+      'KHÔNG CHỖ NÀO DÙNG 100vh MỘT MÌNH. Trên điện thoại thanh địa chỉ của trình duyệt thu vào rồi lại thò ra, mà 100vh luôn tính theo lúc nó ĐÃ thu — nên đáy trang bị cắt đúng bằng chiều cao thanh ấy. Phải kèm 100dvh; giữ 100vh đứng trước làm bản lùi thì được',
+      traiPhep.length ? traiPhep.slice(0, 4).join(' · ') : 'sạch');
+  }
 
   console.log('\n' + (loi ? '✗ CÒN ' + loi + ' LOẠI LỖI KHỔ MÀN' : '✓ KHUNG MÀN SẠCH TRÊN CẢ BỐN KHỔ') +
     ' · ' + soDo + ' lượt đo');

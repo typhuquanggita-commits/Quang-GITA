@@ -167,6 +167,35 @@ Hai chỗ đã sập khi làm, ghi lại để không lặp:
 
 ---
 
+## Chuẩn giao diện điện thoại — bốn luật nền, `assets/style.css`
+
+Cả bốn đều do `tools/do-khung-man.js` canh, và cả bốn đều từng sai thật.
+
+1. **Vùng an toàn.** `index.html` khai `viewport-fit=cover` VÀ
+   `apple-mobile-web-app-status-bar-style: black-translucent` — tức là
+   ĐÃ NHẬN VIỆC tự lo phần dưới tai thỏ và dưới vạch về nhà. Bốn biến
+   `--sat --sab --sal --sar` gom một chỗ; mọi thứ neo vào đáy thanh
+   trên phải dùng `--top-tong`, **không** dùng `--top-h`.
+2. **`100vh` không bao giờ đứng một mình.** Thanh địa chỉ của trình
+   duyệt thu vào rồi thò ra, mà `100vh` luôn tính theo lúc nó đã thu.
+   Viết `min-height:100vh; min-height:100dvh` — dòng trước là bản lùi.
+3. **Ô nhập phải từ 16px trên màn chạm.** Dưới mức ấy Safari trên
+   iPhone phóng CẢ TRANG khi người ta chạm vào ô, và không thu lại khi
+   gõ xong. Đây là chỗ **đáng dùng `!important`**: 16 là ngưỡng cứng
+   của nền tảng, không phải một ý thích, nên nó phải thắng mọi luật
+   của thành phần (`.ch-go input`, `.cs-o textarea`…). Không dùng thì
+   phải đi nâng độ nặng cho từng thành phần, mãi mãi.
+4. **Vùng chạm 32px, và đo VÙNG CHẠM chứ không đo cái ô vuông.** Một ô
+   tích 16px nằm trong nhãn cao 44px thì bấm vẫn trúng. Ngưỡng nâng ở
+   khối `@media(pointer:coarse)` — hỏi con trỏ, không hỏi bề ngang màn,
+   vì máy bảng 1024px vẫn là ngón tay.
+
+Màu thanh trình duyệt (`meta[name=theme-color]`) **đọc từ `--bg-0` lúc
+chạy**, không gõ lại bằng tay — hai mã gõ tay cũ lệch với nền thật đủ
+để thấy một vệt khác màu ở đầu trang.
+
+---
+
 ## Cách viết trong kho này
 
 - Tiếng Việt, câu ngắn, không dùng từ học thuật khi có từ thường thay được

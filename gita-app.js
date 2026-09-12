@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.51',
+  version: '9.99.52',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -40635,8 +40635,18 @@ G.datNen = function(n){
   G.NEN = (n === 'toi') ? 'toi' : 'sang';
   if(G.NEN === 'toi') document.documentElement.setAttribute('data-nen','toi');
   else document.documentElement.removeAttribute('data-nen');
+  /* Màu thanh trình duyệt phải ĐỌC từ nền thật, không gõ lại bằng tay.
+     Hai mã gõ tay ở đây là #1E1842 và #F6F3FC, trong khi nền thật là
+     #182942 và #F3F7FC — lệch đủ để trên điện thoại thấy một vệt khác
+     màu giữa thanh trạng thái và đầu trang. Và lệch kiểu này không bao
+     giờ tự lộ: đổi bảng màu thì con số gõ tay ở lại. */
   var m = document.querySelector('meta[name="theme-color"]');
-  if(m) m.setAttribute('content', G.NEN === 'toi' ? '#1E1842' : '#F6F3FC');
+  if(m){
+    var nen = '';
+    try{ nen = getComputedStyle(document.documentElement)
+      .getPropertyValue('--bg-0').trim(); }catch(e){}
+    m.setAttribute('content', nen || (G.NEN === 'toi' ? '#182942' : '#F3F7FC'));
+  }
   try{ localStorage.setItem(KEY_NEN, G.NEN); }catch(e){}
 };
 G.doiNen = function(){

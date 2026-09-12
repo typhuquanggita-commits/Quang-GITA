@@ -440,6 +440,22 @@
 
   --r-sm:10px; --r:16px; --r-lg:24px; --r-xl:32px;
   --left-w:288px; --right-w:326px; --top-h:66px;
+  /* ── VÙNG AN TOÀN CỦA MÁY CÓ TAI THỎ ──
+     index.html khai viewport-fit=cover VÀ apple-mobile-web-app-status-bar-style
+     là black-translucent. Hai dòng ấy nói với máy: "trang tự lo phần dưới
+     tai thỏ và phần dưới vạch về nhà". Nhưng tới bản 9.99.51 không chỗ
+     nào trong tệp kiểu này đọc env(safe-area-inset-*) — nghĩa là đã nhận
+     việc mà không làm. Trên iPhone, thanh trên chui xuống dưới tai thỏ và
+     đáy trang nằm dưới vạch về nhà.
+     Bốn biến này gom một chỗ để không phải rải env() khắp tệp, và để máy
+     nào không có tai thỏ thì cả bốn bằng 0 — không đổi gì cả. */
+  --sat:env(safe-area-inset-top,0px);
+  --sab:env(safe-area-inset-bottom,0px);
+  --sal:env(safe-area-inset-left,0px);
+  --sar:env(safe-area-inset-right,0px);
+  /* Chiều cao THẬT của thanh trên, kể cả phần chui dưới tai thỏ. Mọi chỗ
+     neo vào đáy thanh trên phải dùng biến này chứ không dùng --top-h. */
+  --top-tong:calc(var(--top-h) + var(--sat));
   --nen-mo:rgba(38,28,76,.34);        /* lớp mờ sau hộp thoại */
   --nen-hop:linear-gradient(165deg,#FFFFFF,#F7F4FC);  /* nền hộp thoại và ô lệnh */
   --nen-thanh:rgba(255,255,255,.86);  /* thanh trên */
@@ -626,16 +642,23 @@ svg{width:1.15em;height:1.15em;flex:none;display:block}
 .bar.thin{height:4px}
 
 /* ═══════════ BỐ CỤC KHUNG ═══════════ */
-#app{position:relative;z-index:2;min-height:100vh}
+/* 100dvh chứ không 100vh: trên điện thoại thanh địa chỉ của trình duyệt
+   thu vào rồi lại thò ra, và 100vh luôn tính theo lúc nó ĐÃ thu — nên
+   đáy trang bị cắt đúng bằng chiều cao thanh ấy. Giữ dòng 100vh phía
+   trước làm bản lùi cho trình duyệt cũ chưa hiểu dvh. */
+#app{position:relative;z-index:2;min-height:100vh;min-height:100dvh}
 .shell{display:grid;grid-template-columns:var(--left-w) minmax(0,1fr) var(--right-w);
-  min-height:100vh;padding-top:var(--top-h)}
+  min-height:100vh;min-height:100dvh;padding-top:var(--top-tong);
+  padding-left:var(--sal);padding-right:var(--sar)}
 .shell.no-right{grid-template-columns:var(--left-w) minmax(0,1fr)}
 .shell.no-left{grid-template-columns:minmax(0,1fr) var(--right-w)}
 .shell.no-left.no-right{grid-template-columns:minmax(0,1fr)}
 
 /* ── Thanh trên ── */
-#top{position:fixed;top:0;left:0;right:0;height:var(--top-h);z-index:60;
-  display:flex;align-items:center;gap:14px;padding:0 18px;
+#top{position:fixed;top:0;left:0;right:0;height:var(--top-tong);z-index:60;
+  padding-top:var(--sat);
+  display:flex;align-items:center;gap:14px;
+  padding:var(--sat) calc(18px + var(--sar)) 0 calc(18px + var(--sal));
   background:var(--nen-thanh);backdrop-filter:blur(22px) saturate(1.4);
   border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:11px;flex:none}
@@ -673,7 +696,8 @@ svg{width:1.15em;height:1.15em;flex:none;display:block}
 .who .tx span{font-size:10.5px;color:var(--ink-3)}
 
 /* ── Thanh tab TRÁI: 5 nhóm chính ── */
-#left{position:fixed;top:var(--top-h);bottom:0;left:0;width:var(--left-w);z-index:50;
+#left{position:fixed;top:var(--top-tong);bottom:0;left:0;width:var(--left-w);z-index:50;
+  padding-bottom:var(--sab);padding-left:var(--sal);
   display:flex;flex-direction:column;
   background:var(--nen-ben);
   backdrop-filter:blur(20px);border-right:1px solid var(--line)}
@@ -718,7 +742,8 @@ svg{width:1.15em;height:1.15em;flex:none;display:block}
 #left .foot{padding:12px;border-top:1px solid var(--line);background:var(--phu-2)}
 
 /* ── Thanh tab PHẢI: La bàn văn hoá ── */
-#right{position:fixed;top:var(--top-h);bottom:0;right:0;width:var(--right-w);z-index:50;
+#right{position:fixed;top:var(--top-tong);bottom:0;right:0;width:var(--right-w);z-index:50;
+  padding-bottom:var(--sab);padding-right:var(--sar);
   display:flex;flex-direction:column;
   background:var(--nen-ben);
   backdrop-filter:blur(20px);border-left:1px solid var(--line)}
@@ -755,7 +780,7 @@ svg{width:1.15em;height:1.15em;flex:none;display:block}
 .val .dont{margin-top:3px;font-size:12.5px;color:var(--bad);opacity:.85;display:flex;gap:6px}
 
 /* ── Vùng nội dung ── */
-main{grid-column:2;padding:26px 30px 90px;min-width:0}
+main{grid-column:2;padding:26px 30px calc(90px + var(--sab));min-width:0}
 .shell.no-left main{grid-column:1}
 .view{animation:viewIn .42s cubic-bezier(.2,.8,.3,1)}
 @keyframes viewIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
@@ -870,7 +895,9 @@ main{grid-column:2;padding:26px 30px 90px;min-width:0}
 .ring .tx span{font-size:10.5px;color:var(--ink-4);letter-spacing:.1em;text-transform:uppercase}
 
 /* ═══════════ CỔNG VÀO ═══════════ */
-#gate{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column}
+#gate{position:relative;z-index:2;min-height:100vh;min-height:100dvh;
+  padding:var(--sat) var(--sar) var(--sab) var(--sal);
+  display:flex;flex-direction:column}
 .gate-top{display:flex;align-items:center;gap:12px;padding:22px 30px}
 .gate-body{flex:1;display:grid;grid-template-columns:1.08fr .92fr;gap:52px;
   align-items:center;padding:10px 60px 60px;max-width:1440px;margin:0 auto;width:100%}
@@ -961,7 +988,7 @@ main{grid-column:2;padding:26px 30px 90px;min-width:0}
      ai thấy vì bộ rà soát chạy ở khổ màn để bàn. */
   .shell,.shell.no-left,.shell.no-right,.shell.no-left.no-right{
     grid-template-columns:minmax(0,1fr)}
-  main{grid-column:1;padding:20px 16px 80px}
+  main{grid-column:1;padding:20px 16px calc(80px + var(--sab))}
   #left{transform:translateX(-100%);transition:.3s cubic-bezier(.2,.8,.3,1);box-shadow:var(--shadow);width:280px}
   #left.open{transform:none}
   .mobonly{display:inline-flex}
@@ -1504,7 +1531,7 @@ main{container-type:inline-size}
 .cs-lo{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start}
 @container (min-width:1000px){
   .cs-lo{grid-template-columns:minmax(0,1fr) 304px}
-  .cs-ben{position:sticky;top:calc(var(--top-h) + 20px)}
+  .cs-ben{position:sticky;top:calc(var(--top-tong) + 20px)}
 }
 .cs-win{display:flex;flex-direction:column;overflow:hidden;padding:0;
   height:calc(100dvh - var(--top-h) - 150px);min-height:440px}
@@ -2046,7 +2073,7 @@ main{container-type:inline-size}
    Thả xuống ngay dưới thanh trên, KHÔNG mở ra giữa màn: người ta bấm
    phóng to rồi muốn nhìn ngay kết quả, mà một cửa sổ giữa màn thì che
    đúng chỗ họ định nhìn. */
-.ph-bang{position:fixed;top:calc(var(--top-h) + 8px);right:12px;z-index:70;
+.ph-bang{position:fixed;top:calc(var(--top-tong) + 8px);right:calc(12px + var(--sar));z-index:70;
   width:min(320px,calc(100vw - 24px));padding:14px 16px;border-radius:var(--r);
   border:1px solid var(--line);background:var(--nen-thanh);
   backdrop-filter:blur(22px) saturate(1.4);box-shadow:var(--shadow);
@@ -2103,6 +2130,47 @@ main{container-type:inline-size}
      rộng thêm BÊN TRONG hộp ấy, không đẩy trang lệch. */
   .pq-o{width:34px;height:34px}
   .sx-b{width:34px;height:34px}
+  /* ── iOS TỰ PHÓNG CẢ TRANG KHI CHẠM VÀO Ô NHẬP DƯỚI 16px ──
+     Luật của Safari trên iPhone, không tắt được bằng cách nào khác:
+     chạm vào một ô chữ nhỏ hơn 16px thì nó phóng cả trang lên cho dễ
+     gõ — và KHÔNG thu lại khi gõ xong. Ô của kho này là 14,5px, nên
+     mỗi lần chạm vào một ô là cả ứng dụng nhảy to lên một nấc và
+     người dùng phải tự chụm ngón tay thu về.
+     16px đã có sẵn trong thang chín bậc cỡ chữ, nên dòng này không
+     thêm bậc mới. */
+  /* PHẢI DÙNG !important, và đây là chỗ đáng dùng. Đo lần đầu vẫn còn
+     tám ô ở 14,5px và 12,5px: mấy ô ấy ăn theo luật của thành phần —
+     `.ch-go input`, `.cs-o textarea` — nặng hơn một luật chỉ có tên thẻ.
+     Chạy theo từng luật ấy để nâng độ nặng là một danh sách không có
+     điểm dừng, và mỗi thành phần mới sau này lại lọt.
+     Con số 16 ở đây không phải một ý thích về thẩm mỹ: nó là ngưỡng
+     CỨNG của Safari trên iPhone. Một luật của nền tảng thì thắng mọi
+     luật của thành phần — đó đúng là nghĩa của !important. */
+  input,textarea,select,.inp{font-size:16px!important}
+
+  /* ── BẢNG CUỘN NGANG PHẢI NÓI RA LÀ NÓ CUỘN ĐƯỢC ──
+     Trên máy tính, con lăn nghiêng và thanh cuộn nói hộ. Trên điện
+     thoại thì không có gì cả: bảng bị cắt ở mép phải trông y hệt một
+     bảng chỉ có bấy nhiêu cột, và người đọc kết luận là thiếu dữ liệu
+     chứ không nghĩ tới chuyện vuốt ngang.
+     Hai vệt mờ ở hai mép chỉ hiện khi CÒN chỗ để cuộn về phía ấy —
+     làm được nhờ background-attachment:local. Hết chỗ thì vệt biến
+     mất, nên nó không bao giờ nói dối. */
+  .tbl-wrap{
+    background:
+      linear-gradient(to right, var(--surface) 30%, transparent) 0 0,
+      linear-gradient(to left,  var(--surface) 30%, transparent) 100% 0,
+      radial-gradient(farthest-side at 0 50%, var(--nen-mo), transparent) 0 0,
+      radial-gradient(farthest-side at 100% 50%, var(--nen-mo), transparent) 100% 0;
+    background-repeat:no-repeat;
+    background-size:40px 100%, 40px 100%, 13px 100%, 13px 100%;
+    background-attachment:local, local, scroll, scroll;
+  }
+
+  /* Cuộn hết ngăn kéo thì DỪNG, đừng kéo luôn trang phía sau. Không có
+     dòng này thì vuốt tới đáy danh sách bên trái là trang nền trôi
+     theo, và đóng ngăn kéo ra thì đã mất chỗ đang đọc. */
+  #left,#right,.ch-khung,.cs-cuon,.tbl-wrap{overscroll-behavior:contain}
 }
 
 </style>
@@ -2314,7 +2382,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.51',
+  version: '9.99.52',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -42904,8 +42972,18 @@ G.datNen = function(n){
   G.NEN = (n === 'toi') ? 'toi' : 'sang';
   if(G.NEN === 'toi') document.documentElement.setAttribute('data-nen','toi');
   else document.documentElement.removeAttribute('data-nen');
+  /* Màu thanh trình duyệt phải ĐỌC từ nền thật, không gõ lại bằng tay.
+     Hai mã gõ tay ở đây là #1E1842 và #F6F3FC, trong khi nền thật là
+     #182942 và #F3F7FC — lệch đủ để trên điện thoại thấy một vệt khác
+     màu giữa thanh trạng thái và đầu trang. Và lệch kiểu này không bao
+     giờ tự lộ: đổi bảng màu thì con số gõ tay ở lại. */
   var m = document.querySelector('meta[name="theme-color"]');
-  if(m) m.setAttribute('content', G.NEN === 'toi' ? '#1E1842' : '#F6F3FC');
+  if(m){
+    var nen = '';
+    try{ nen = getComputedStyle(document.documentElement)
+      .getPropertyValue('--bg-0').trim(); }catch(e){}
+    m.setAttribute('content', nen || (G.NEN === 'toi' ? '#182942' : '#F3F7FC'));
+  }
   try{ localStorage.setItem(KEY_NEN, G.NEN); }catch(e){}
 };
 G.doiNen = function(){
