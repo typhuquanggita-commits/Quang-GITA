@@ -3622,8 +3622,24 @@ bao(maBanChep.length === 24 &&
   bao(rQT.ok && rQT.khuon === 'QUYTRINH' && rQT.khoi.thieu.length === 0,
     'khuôn QUY TRÌNH đọc theo danh sách khối RIÊNG (P01–P08), không đo bằng khuôn bài học',
     'thiếu ' + rQT.khoi.thieu.length + '/8');
-  bao(!('xong' in rQT) && rQT.cham === null && rQT.conCho.length === 0,
-    'khuôn khác BÀI HỌC thì KHÔNG có mười điều kiện hoàn thành và KHÔNG có thang một trăm — thang hiện có neo vào khối của khuôn bài học, chấm khuôn khác bằng nó là cho một con số không nói gì');
+  /* Mười điều kiện hoàn thành là thang đo NGƯỜI HỌC — một quy trình vận
+     hành không có người học, nên khoá ấy BỎ HẲN chứ không để rỗng. */
+  bao(!('xong' in rQT),
+    'khuôn khác BÀI HỌC thì KHÔNG có mười điều kiện hoàn thành — thang ấy đo NGƯỜI HỌC, mà một quy trình vận hành không có người học');
+  /* Nhưng nó CÓ thang một trăm RIÊNG, từ bản 9.99.46. Hai nửa phải cộng
+     lại đúng 100: lệch nghĩa là một chiều bị tính hai lần hoặc không ai
+     tính — y như phép đo của thang bài học. */
+  bao(rQT.tranMay === 63 && rQT.diemMay === 63 &&
+      rQT.conCho.reduce((a, c) => a + c.con, 0) === 37,
+    'khuôn QUY TRÌNH có thang MỘT TRĂM RIÊNG: máy chấm 63, người chấm 37, cộng lại đúng 100 — thang của bài học hỏi "có KPI không", câu ấy vô nghĩa với một cẩm nang',
+    'máy ' + rQT.diemMay + '/' + rQT.tranMay + ' · còn chờ ' +
+      rQT.conCho.map(c => c.ma).join(','));
+  bao(rQT.cham['P-2'].duoc === 20 && rQT.cham['P-6'].duoc === 10,
+    'chiều P-2 và P-6 chấm bằng PHÉP ĐO khai ở kho, không bằng một con số gõ tay ở máy chủ');
+  /* Chiều nào có phép đo chưa hiện thì phải NỔI LÊN, không chìm thành 0:
+     một chiều 0 vì thiếu phép đo trông y hệt một chiều 0 vì bài kém. */
+  bao(!rQT.cam.some(c => c.ma === 'PHEPLA'),
+    'mọi phép đo kho khai đều có ở máy chủ — phép LẠ thì máy nói ra chứ không lặng lẽ cho 0 điểm');
   bao(!rQT.cam.some(c => c.ma === 'SOP'),
     'quy trình đủ ba thứ — ai làm, xong khi nào, hai nhánh xử lý lệch — thì không báo gì');
 
@@ -3650,6 +3666,66 @@ bao(maBanChep.length === 24 &&
   const mauQT = await ndMod.mauBaiHoc({khuon: 'CAMNANG'}, env, env.CSDL, saR01);
   bao(mauQT.ok && mauQT.soKhoi === 7 && mauQT.mau.indexOf('C06') >= 0,
     'mẫu trống sinh theo ĐÚNG khuôn được chọn', mauQT.khuon + ' · ' + mauQT.soKhoi + ' khối');
+}
+
+/* ── BỘ MIỄN DỊCH: ĐỐI CHIẾU, KHÔNG HỨA ── */
+{
+  const md = await ndMod.soatMienDich({}, env, env.CSDL, saR01);
+  bao(md.ok && md.soChan === 13,
+    'mười ba lỗi CHẶN PHÁT HÀNH của bản đặc tả phần 3 đều có một dòng đối chiếu',
+    md.dem.chan + ' đã chặn · ' + md.dem.motPhan + ' một phần · ' + md.dem.chua + ' chưa có gì');
+  /* Ba mức, không có mức thứ tư. Một bảng an toàn ghi "đã xử lý 100%"
+     mà không ai kiểm được là một lời trấn an, và lời trấn an là thứ
+     nguy hiểm nhất trong một bảng an toàn. */
+  bao(Object.keys(md.bang).every(k => ['chan', 'motPhan', 'chua'].indexOf(md.bang[k].muc) >= 0) &&
+      Object.keys(md.bang).every(k => (md.bang[k].vi || '').length > 30),
+    'mỗi dòng chỉ nhận một trong BA mức, và mức nào cũng phải nói VÌ SAO — không có mức thứ tư');
+  /* Hai lỗi kho chặn THẬT, và phép đối chiếu phải nói đúng chúng chứ
+     không nói cho đẹp bảng. */
+  bao(md.bang.E07.muc === 'chan' && md.bang.F04.muc === 'chan',
+    'E07 (mặc định TỪ CHỐI) và F04 (cổng chuyên môn phải ký) là hai lỗi kho chặn THẬT');
+  bao(md.bang.A01.muc === 'chua' && md.bang.D01.muc === 'chua',
+    'A01 (khoá thương mại) và D01 (tải Coach) — bộ nội dung KHÔNG giữ hai cửa ấy, và nó nói thẳng thay vì ghi "đã xử lý"');
+
+  /* ── NỘI DUNG CỦA CHÍNH HỌC VIỆN NUÔI VIRUS ── */
+  bao(ndMod.soatVirus('Bạn đã bỏ lỡ hôm qua, chuỗi đứt rồi.').length === 2,
+    'bắt được chỗ nội dung NUÔI chủng virus — virus không chỉ đến từ ngoài',
+    ndMod.soatVirus('Bạn đã bỏ lỡ hôm qua, chuỗi đứt rồi.').map(v => v.ma).join(','));
+  bao(ndMod.soatVirus('Hôm nay để trống. Mai mình đi tiếp.').length === 0,
+    'câu viết theo vắc-xin thì KHÔNG bị bắt — bảng dò canh chỗ nuôi virus, không canh chỗ nhắc tới nó');
+  {
+    const nuoi = await ndMod.soatNoiDung({chu: baiDu.replace(
+      'Tối nay ghi 3 dòng, không thêm nhận xét.',
+      'Bạn đã bỏ lỡ hôm qua nên chuỗi đứt, phải làm đủ mới tính.'), tang: 'T1'},
+      env, env.CSDL, saR01);
+    bao(nuoi.ok && nuoi.virus.length >= 2 &&
+        nuoi.cam.some(c => c.ma === 'VIRUS' && c.canhBao === true),
+      'chỗ nuôi virus vào sổ soát dạng CẢNH BÁO — một câu nhắc tới chủng ấy để dạy cách gỡ thì không phải một câu nuôi nó, và máy dò từ vựng không phân biệt được hai thứ');
+  }
+}
+
+/* ── ND-04: CỬA XUẤT CHUẨN NGHỀ ──
+   Tới 9.99.45 mục này là một DÒNG NHẮC trong sổ chờ. Một dòng nhắc thì
+   đọc xong ai cũng gật, rồi sáu tháng sau có người chép một câu vào một
+   tờ rơi và không ai nhớ ra dòng ấy. Nay nó là một cửa. */
+{
+  const chuaChot = await ndMod.xuatChuanNghe({muc: [{ma: 'CN2'}]}, env, env.CSDL, saR01);
+  bao(!chuaChot.ok && chuaChot.error === 'CHUACHOT' &&
+      chuaChot.chan[0].vi === 'chưa chốt được trích',
+    'ND-04 — mục CHƯA chốt thì KHÔNG trích ra ngoài được. Cả năm mục trong kho đang vắng ô trichDuoc, nên cửa này hiện đóng với cả năm — đó là mặc định đúng');
+  const chotThieuNguon = await ndMod.xuatChuanNghe(
+    {muc: [{ma: 'CN2', trichDuoc: true, nguon: 'ICF'}]}, env, env.CSDL, saR01);
+  bao(!chotThieuNguon.ok && /CHƯA ghi nguồn/.test(chotThieuNguon.chan[0].vi),
+    'chốt được trích mà nguồn ghi qua loa thì vẫn chặn — trích một câu của nghề khác mà không dẫn được nguồn là chuyện Học viện phải chịu trách nhiệm');
+  const du = await ndMod.xuatChuanNghe({muc: [{ma: 'CN2', trichDuoc: true,
+    nguon: 'ICF Core Competencies 2019, mục 4 — Cultivates Trust and Safety'}]},
+    env, env.CSDL, saR01);
+  bao(du.ok && du.qua.length === 1, 'chốt đủ hai ô thì trích được, kèm nguồn');
+  bao((await ndMod.xuatChuanNghe({muc: [{ma: 'CN2', trichDuoc: true,
+        nguon: 'ICF Core Competencies 2019, mục 4'}]}, env, env.CSDL,
+        {uid: 'U-r05', username: 'r05@gita365.vn', role: 'R05'}))
+        .error === 'KHONGQUYEN',
+    'chỉ R01–R02 trích được — đây là lời khai của Học viện về nguồn gốc một câu chữ, không phải một cái nút');
 }
 
 /* ── ĐỌC MỘT BUỔI LÀM VIỆC ── */
@@ -3684,6 +3760,28 @@ bao(maBanChep.length === 24 &&
     'Tối nay tôi sẽ cố gắng kiên nhẫn hơn.');
   bao(ndMod.docHoiThoai(khongDo).luat.find(l => l.ma === 'B3').dat === false,
     'LUẬT B3 — chốt mà không có cách đo thì báo: tuần sau không ai biết nó đã xảy ra hay chưa, kể cả người hứa');
+
+  /* ── LỚP THỨ HAI: NHẬN NHỊP THEO HÌNH THỨC CÂU ──
+     Bản 9.99.45 nhận nhịp CHỈ bằng dấu hiệu câu chữ, nên một người nói
+     cùng ý bằng câu khác thì máy không thấy. Ba câu dưới đây KHÔNG chứa
+     một cụm nào trong bảng dấu hiệu. */
+  const lachChuChu = [
+    'Coach: Chuyện đó diễn ra vào thứ ba lúc mấy giờ?',
+    'Khách: Khoảng 19h45.',
+    'Coach: Ta để con tự quyết giờ học, hoặc giữ nếp cũ — bên nào hợp hơn?',
+    'Khách: Chắc để con tự quyết.',
+    'Coach: Vậy tối nay ta đếm số lần con tự mở sách nhé.',
+    'Khách: Vâng, tôi ghi lại số lần.'
+  ].join('\n');
+  const rLach = ndMod.docHoiThoai(lachChuChu);
+  const nhipLach = rLach.nhip.filter(n => n.lan > 0).map(n => n.ma + ':' + n.theo);
+  bao(rLach.nhip.find(n => n.ma === 'N2').lan > 0 &&
+      rLach.nhip.find(n => n.ma === 'N5').lan > 0 &&
+      rLach.nhip.find(n => n.ma === 'N6').lan > 0,
+    'nhận ra N2 · N5 · N6 kể cả khi người nói KHÔNG dùng một cụm nào trong bảng dấu hiệu — lớp thứ hai đọc HÌNH THỨC câu, không đọc câu chữ',
+    nhipLach.join(' · '));
+  bao(rLach.nhip.find(n => n.ma === 'N5').theo === 'hinhThuc',
+    'và máy NÓI RA nó nhận bằng lớp nào — lớp hình thức đoán nhiều hơn lớp câu chữ, gộp hai lớp vào một con số là làm phần đoán trông như phần đo');
 
   /* ── CHỈ SOI LƯỢT CỦA NGƯỜI LÀM NGHỀ ── */
   const khachNoiBan = buoiDu.replace('Chứng kiến là con ném vở.',

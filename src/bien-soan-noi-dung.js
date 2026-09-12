@@ -45,6 +45,7 @@ G.VIEWS = G.VIEWS || {};
     {ma: 'thang',    ten: 'Thang',     ic: 'shield'},
     {ma: 'kho',      ten: 'Kho bài',   ic: 'vault'},
     {ma: 'toanhe',   ten: 'Đọc toàn hệ', ic: 'search'},
+    {ma: 'miendich', ten: 'Miễn dịch',   ic: 'shield'},
     {ma: 'chuannghe',ten: 'Chuẩn nghề',   ic: 'crown'},
     {ma: 'hienphap', ten: 'Hiến pháp', ic: 'book'},
     {ma: 'quyen',    ten: 'Quyền ký',  ic: 'lock'}
@@ -219,7 +220,8 @@ G.VIEWS = G.VIEWS || {};
         xong.push({ma: x.ma, dieu: x.dieu, dat: thieu.length === 0, thieu: thieu});
       });
     return {doc: doc, khuon: maKhuon, doi: soatDoi(doc.khoi, maKhuon),
-      rong: rong, loi: loi, cg: G.bsChuyenGia(chu), nhan: nhan, xong: xong,
+      rong: rong, loi: loi, cg: G.bsChuyenGia(chu), vr: G.bsVirus(chu),
+      nhan: nhan, xong: xong,
       /* Đúng hai điều kiện máy chủ dùng để CHẶN ở cổng 1. Khai lại ở đây
          thì người viết biết trước mình sẽ bị chặn hay không, thay vì nộp
          lên rồi mới biết. */
@@ -304,6 +306,22 @@ G.VIEWS = G.VIEWS || {};
     return {loi: loi.length, rong: rong.length, cg: cg.length,
       song: loi.length >= 2 && rong.length >= 2 && cg.length >= 2};
   }
+
+  /** Nội dung này có NUÔI chủng virus nào không — phần máy đo được bằng
+      CHỮ. Mười tám dấu hiệu kia đọc từ hành vi trong ứng dụng, và kho
+      chưa thu loại dữ liệu ấy. */
+  G.bsVirus = function (chu) {
+    var bat = [];
+    (G.MD_VIRUS || []).forEach(function (v) {
+      if (!v.tuNgu || !v.tuNgu.length) return;
+      doBang(chu, v.tuNgu.map(function (c) { return {cau: c}; }), function (x) {
+        return {cau: x.cau};
+      }).forEach(function (x) {
+        bat.push({dong: x.dong, bat: x.bat, ma: v.ma, ten: v.ten});
+      });
+    });
+    return bat;
+  };
 
   /** Dò câu nghiệp dư — CẢNH BÁO, không chặn. */
   G.bsChuyenGia = function (chu) {
@@ -600,12 +618,21 @@ G.VIEWS = G.VIEWS || {};
     }).join('') + '</div>';
 
     o += U.sec('Buổi đi qua nhịp nào');
-    o += U.tbl(['Nhịp', 'Số lượt', 'Lượt đầu'], (b.nhip || []).map(function (n) {
+    o += U.tbl(['Nhịp', 'Số lượt', 'Lượt đầu', 'Nhận bằng'], (b.nhip || []).map(function (n) {
       return ['<b>' + h(n.ma) + ' ' + h(n.ten) + '</b>',
         n.lan ? '<b style="color:var(--ok)">' + n.lan + '</b>'
               : '<span style="color:var(--bad)">0</span>',
-        n.luotDau ? String(n.luotDau) : '—'];
+        n.luotDau ? String(n.luotDau) : '—',
+        n.theo === 'dauHieu' ? '<span class="chip" style="color:var(--ok)">câu chữ</span>'
+          : n.theo === 'hinhThuc' ? '<span class="chip" style="color:var(--warn)">hình thức câu</span>'
+          : '—'];
     }));
+    o += '<div class="card"><p class="sm muted">Hai lớp nhận nhịp, và máy nói rõ ' +
+      'lớp nào bắt được. <b>Câu chữ</b> dò theo bảng cụm từ — chắc, nhưng người ' +
+      'nói cùng ý bằng câu khác thì không thấy. <b>Hình thức câu</b> đọc dạng ' +
+      'câu (hỏi + có mốc thời gian → đang thu sự việc; hỏi + có "hoặc" → đang mở ' +
+      'hướng) — phủ rộng hơn nhưng ĐOÁN nhiều hơn. Gộp hai lớp vào một con số là ' +
+      'làm phần đoán trông như phần đo, nên chúng đứng riêng.</p></div>';
 
     if ((b.loi || []).length) {
       o += U.sec('Câu phán xét trong lượt của người làm nghề');
@@ -649,6 +676,106 @@ G.VIEWS = G.VIEWS || {};
     G.bsD.buoi = null; veLai();
   };
 
+  /* ═══════════ NGĂN · BỘ MIỄN DỊCH ═══════════
+
+     Theo bản đặc tả phần 3 của chủ hệ: 66 điểm gãy · 13 lỗi chặn phát
+     hành · 18 chủng virus.
+
+     Ngăn này ĐỐI CHIẾU, không hứa. Phần lớn mười ba lỗi chặn nằm NGOÀI
+     bộ nội dung — đăng ký, ảnh trẻ em, tải Coach, hạ tầng — nên nó nói
+     thẳng cái nó không giữ, thay vì ghi "đã xử lý" cho đủ bảng. */
+  var MAU_MUC = {chan: 'var(--ok)', motPhan: 'var(--warn)', chua: 'var(--bad)'};
+  var TEN_MUC = {chan: 'đã chặn', motPhan: 'mới một phần', chua: 'chưa có gì'};
+
+  function nganMienDich() {
+    var o = '<div class="card"><b>Bảng này ĐỐI CHIẾU, không hứa</b>' +
+      '<p class="sm muted mt">Bản đặc tả phần 3 khai 66 điểm gãy tám nhóm, ' +
+      'trong đó <b>13 lỗi CHẶN PHÁT HÀNH</b>, và 18 chủng virus. Phần lớn mười ' +
+      'ba lỗi ấy nằm NGOÀI bộ nội dung — đăng ký, ảnh trẻ em, tải Coach, hạ ' +
+      'tầng, truyền thông. Nên chỗ này nói thẳng cái nó KHÔNG giữ, thay vì ghi ' +
+      '"đã xử lý" cho đủ bảng: một bảng an toàn ghi 100% mà không ai kiểm được ' +
+      'là một lời trấn an, và lời trấn an là thứ nguy hiểm nhất trong một bảng ' +
+      'an toàn.</p></div>';
+
+    o += U.sec('Tám nhóm điểm gãy',
+      'Cột "đã khai" nói bản đặc tả tôi đọc được mô tả từng mã tới đâu');
+    var tongMa = 0, tongKhai = 0;
+    (G.MD_NHOM || []).forEach(function (n) { tongMa += n.soMa; tongKhai += n.daKhai; });
+    o += U.tbl(['Nhóm', 'Tên', 'Số mã', 'Đã khai', 'Vì sao nhóm này quan trọng'],
+      (G.MD_NHOM || []).map(function (n) {
+        return ['<b>' + h(n.ma) + '</b>', h(n.ten), String(n.soMa),
+          n.daKhai ? '<b>' + n.daKhai + '</b>'
+                   : '<span style="color:var(--bad)">0</span>',
+          '<span class="sm muted">' + h(n.vi) + '</span>'];
+      }));
+    o += canhBao('Đã khai ' + tongKhai + '/' + tongMa + ' mã. Tôi KHÔNG bịa ' +
+      (tongMa - tongKhai) + ' dòng còn lại cho đủ số: một bảng có dòng bịa thì ' +
+      'cả bảng mất tin, và người đọc không phân biệt được dòng nào thật. Chủ hệ ' +
+      'gửi bản GITA-AUDIT-V1.0 thì tôi chép nốt — mục MD-01.', 'var(--ink-3)');
+
+    var md = G.bsD.mienDich;
+    if (G.API_CAP_PHEP && !md && !G.bsD.dangNapMD) {
+      G.bsD.dangNapMD = true;
+      goi('soatMienDich', {}).then(function (r) {
+        G.bsD.mienDich = r; G.bsD.dangNapMD = false; veLai();
+      });
+    }
+
+    o += U.sec('Mười ba lỗi chặn phát hành',
+      md && md.ok ? md.dem.chan + ' đã chặn · ' + md.dem.motPhan +
+        ' một phần · ' + md.dem.chua + ' chưa có gì' : 'kho khai · máy đối chiếu');
+    o += U.tbl(['Mã', 'Lỗi', 'Chặn ở đâu', 'Kho đang có', 'Máy đối chiếu'],
+      (G.MD_CHAN || []).map(function (c) {
+        var d = md && md.ok && md.bang ? md.bang[c.ma] : null;
+        return ['<b>' + h(c.ma) + '</b>', h(c.ten),
+          '<span class="chip">' + h(c.chanODau) + '</span>',
+          c.neo ? '<span class="sm muted">' + h(c.neo) + '</span>'
+                : '<span class="sm" style="color:var(--bad)">chưa có gì để trỏ</span>',
+          d ? '<b style="color:' + (MAU_MUC[d.muc] || 'var(--ink-3)') + '">' +
+              h(TEN_MUC[d.muc] || d.muc) + '</b><div class="sm muted">' +
+              h(d.vi) + '</div>'
+            : '<span class="sm muted">' +
+              (G.API_CAP_PHEP ? 'dang doc...' : 'cần máy chủ để đối chiếu') + '</span>'];
+      }));
+
+    o += U.sec('Mười tám chủng virus',
+      'Hai cột, hai thứ rất khác nhau — và máy mới canh được một cột');
+    o += '<div class="card"><p class="sm muted"><b>Dấu hiệu</b> đọc từ HÀNH VI ' +
+      'trong ứng dụng: mở app lúc nào, dừng ở màn nào bao lâu, tích xong trong ' +
+      'mấy giây. Kho này chưa thu loại dữ liệu ấy — và thu nó là một quyết định ' +
+      'về quyền riêng tư, không phải một việc kỹ thuật: nó đo NGƯỜI DÙNG chứ ' +
+      'không đo nội dung (mục MD-02).<br><b>Từ ngữ</b> đọc từ CHỮ trong nội dung ' +
+      'Học viện viết ra — cái này đo được ngay, và nó là phần bộ nội dung chịu ' +
+      'trách nhiệm.</p></div>';
+    o += U.tbl(['Mã', 'Chủng', 'Dấu hiệu hành vi', 'Vắc-xin', 'Máy canh được chữ'],
+      (G.MD_VIRUS || []).map(function (v) {
+        return ['<b>' + h(v.ma) + '</b>', h(v.ten),
+          '<span class="sm muted">' + h(v.dauHieu) + '</span>',
+          '<span class="sm">' + h(v.vacXin) + '</span>',
+          (v.tuNgu && v.tuNgu.length)
+            ? '<span style="color:var(--ok)">' + h(v.tuNgu.join(' · ')) + '</span>'
+            : '<span class="sm" style="color:var(--ink-4)">chưa canh được</span>'];
+      }));
+
+    var coNuoi = (G.MD_VIRUS || []).filter(function (v) { return v.nuoiBoi; });
+    if (coNuoi.length) {
+      o += U.sec('Nội dung của chính Học viện nuôi chủng nào',
+        'Virus không chỉ đến từ ngoài');
+      o += U.tbl(['Chủng', 'Bị nuôi bởi'], coNuoi.map(function (v) {
+        return ['<b>' + h(v.ma) + '</b> ' + h(v.ten),
+          '<span class="sm">' + h(v.nuoiBoi) + '</span>'];
+      }));
+    }
+
+    o += U.sec('Chỗ máy dừng lại');
+    o += '<div class="card">' + (G.MD_CHOCHU || []).map(function (c) {
+      return '<div style="padding:8px 0;border-bottom:1px solid var(--line)">' +
+        '<b>' + h(c.ma) + '</b> — ' + h(c.viec) +
+        '<div class="sm muted" style="margin-top:4px">' + h(c.vi) + '</div></div>';
+    }).join('') + '</div>';
+    return o;
+  }
+
   /* ═══════════ NGĂN · CHUẨN NGHỀ ═══════════ */
   function nganChuanNghe() {
     var o = '<div class="card"><b>Năm lĩnh vực, và ba mức chắc chắn khác nhau</b>' +
@@ -656,11 +783,23 @@ G.VIEWS = G.VIEWS || {};
       'Học viện — chép phần cốt vào để máy có thứ mà đo, và nó CHƯA phải nội dung ' +
       'đã duyệt của GITA. Dùng để đối chiếu thì được; đưa vào một ấn phẩm thì phải ' +
       'dẫn nguồn thật. Hai ô còn lại neo vào kho đã duyệt.</p>' +
-      '<p class="sm muted mt">Chỗ chờ chủ hệ ghi ở mục <b>ND-04</b>.</p></div>';
+      '<p class="sm muted mt">Từ bản 9.99.46 mục <b>ND-04</b> không còn là một ' +
+      'dòng nhắc: cửa xuất chuẩn nghề CHẶN mọi mục chưa có ô <code>trichDuoc</code> ' +
+      'và ô <code>nguon</code>. Cả năm mục đang vắng hai ô ấy, nên hiện chưa mục ' +
+      'nào trích ra ngoài được — đó là mặc định đúng. Máy KHÔNG tự điền: đó là ' +
+      'lời khai của Học viện về nguồn gốc một câu chữ, và một lời khai máy tự ' +
+      'viết thì không ai chịu trách nhiệm được.</p></div>';
 
     (G.KN_CHUAN_NGHE || []).forEach(function (c) {
       o += U.sec(c.ma + ' · ' + c.linhVuc, c.neo || '');
       o += '<div class="card">' +
+        '<div class="row mb" style="gap:8px">' +
+        (c.trichDuoc === true
+          ? '<span class="chip" style="color:var(--ok)">trích ra ngoài ĐƯỢC</span>' +
+            '<span class="sm muted" style="align-self:center">nguồn: ' +
+              h(c.nguon || '(chưa ghi)') + '</span>'
+          : '<span class="chip" style="color:var(--bad)">CHƯA chốt · không trích ra ngoài được</span>') +
+        '</div>' +
         '<div style="padding:7px 0"><span class="chip" style="color:var(--ink-3)">' +
           'NGHỀ ĐÒI · nguồn ngoài</span>' +
         '<div style="margin-top:6px;font-size:14.5px;line-height:1.6">' + h(c.ngheDoi) + '</div></div>' +
@@ -781,6 +920,15 @@ G.VIEWS = G.VIEWS || {};
           '<span class="sm muted">' + h(l.vi || '') + '</span>'];
       }));
     }
+    if (s.vr && s.vr.length) {
+      o += U.sec('Chỗ NUÔI chủng virus — cảnh báo, không chặn',
+        'Virus không chỉ đến từ ngoài: nội dung của chính Học viện nuôi được chúng');
+      o += U.tbl(['Dòng', 'Bắt được', 'Chủng'], s.vr.map(function (v) {
+        return ['<b>' + v.dong + '</b>',
+          '<span style="color:var(--warn)">' + h(v.bat) + '</span>',
+          '<b>' + h(v.ma) + '</b> ' + h(v.ten)];
+      }));
+    }
     if (s.cg.length) {
       o += U.sec('Câu nghiệp dư — CẢNH BÁO, không chặn',
         'Phần lớn những câu này có chỗ dùng đúng; máy chỉ ra, người quyết');
@@ -805,11 +953,28 @@ G.VIEWS = G.VIEWS || {};
         'câu nào đáng lẽ phải có nhãn.', 'var(--warn)');
 
     if (d.khuon !== 'BAIHOC') {
-      o += canhBao('Khuôn ' + h(khDang.ten || '') + ' CHƯA có thang một trăm và ' +
-        'chưa có mười điều kiện hoàn thành riêng. Thang hiện có neo vào khối của ' +
-        'khuôn bài học (K12·K13 cho "dùng được ngay", K16·K18 cho "đo được"), nên ' +
-        'chấm khuôn khác bằng nó là cho một con số không nói gì. Máy đo CẤU TRÚC ' +
-        'và NGÔN NGỮ, và nói thẳng phần chưa có.', 'var(--ink-3)');
+      var bangK = (G.KN_DIEM_KHUON || {})[d.khuon] || [];
+      var tranK = bangK.reduce(function (a, q) {
+        return a + (q.ai === 'may' ? q.trong : (q.tranMay || 0)); }, 0);
+      o += canhBao('Khuôn ' + h(khDang.ten || '') + ' có THANG RIÊNG. Máy chấm ' +
+        tranK + '/100; phần còn lại đo thứ chỉ người đọc mới thấy, và máy bỏ ' +
+        'trống chứ không đoán. Mười điều kiện hoàn thành KHÔNG áp ở đây — thang ' +
+        'ấy đo NGƯỜI HỌC, mà một quy trình vận hành không có người học.',
+        'var(--ink-3)');
+      o += U.sec('Thang một trăm của khuôn ' + h(khDang.ten || ''),
+        'Chiều nào có PHÉP ĐO thì máy đo lặp lại được; chiều nào không thì người chấm');
+      o += U.tbl(['Chiều', 'Ai chấm', 'Trần máy', 'Câu hỏi', 'Máy đo bằng'],
+        bangK.map(function (q) {
+          var mau = q.ai === 'may' ? 'var(--ok)' : q.ai === 'ca' ? 'var(--warn)' : 'var(--ink-3)';
+          var tenAi = q.ai === 'may' ? 'máy' : q.ai === 'ca' ? 'máy + người' : 'người';
+          return ['<b>' + h(q.ma) + '</b> ' + h(q.ten),
+            '<span style="color:' + mau + '">' + h(tenAi) + '</span>',
+            String(q.ai === 'may' ? q.trong : (q.tranMay || 0)) + '/' + q.trong,
+            '<span class="sm muted">' + h(q.hoi || '') + '</span>',
+            q.phep ? '<code style="font-size:12px">' +
+              h(q.phep.map(function (x) { return x[0]; }).join(' · ')) + '</code>'
+              : '<span class="sm muted">—</span>'];
+        }));
       return o + nopKhoi(d, s);
     }
 
@@ -1284,6 +1449,7 @@ G.VIEWS = G.VIEWS || {};
     if (G.bsNgan === 'kho')      return o + nganKho();
     if (G.bsNgan === 'buoi')     return o + nganBuoi();
     if (G.bsNgan === 'toanhe')   return o + nganToanHe();
+    if (G.bsNgan === 'miendich') return o + nganMienDich();
     if (G.bsNgan === 'chuannghe')return o + nganChuanNghe();
     if (G.bsNgan === 'hienphap') return o + nganHienPhap();
     if (G.bsNgan === 'quyen' && capQuyenDuoc()) return o + nganQuyen();

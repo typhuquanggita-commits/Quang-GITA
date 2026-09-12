@@ -43,6 +43,10 @@ G.THUOC_CAP_PHEP = [
   'KN_CHUAN_NGHE','KN_CAM_CHUYENGIA','KN_KHUNG_CAU',
   /* v9.99.45 — bốn khuôn và bộ đọc buổi */
   'KN_KHUON','KN_NHIP','KN_HOITHOAI_LUAT',
+  /* v9.99.46 — thang điểm riêng cho ba khuôn */
+  'KN_DIEM_KHUON',
+  /* v9.99.47 — bộ miễn dịch */
+  'MD_MA_VB','MD_NHOM','MD_CHAN','MD_VIRUS','MD_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

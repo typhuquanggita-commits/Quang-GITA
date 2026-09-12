@@ -11497,6 +11497,47 @@ const { chromium } = require(PW);
         khuonKhoi: (G.KN_KHUON || []).reduce((r, k) => {
           r[k.ma] = (k.khoi || []).map(x => x.ma); return r; }, {}),
         nhip: (G.KN_NHIP || []).map(n => n.ma + ' ' + n.ten),
+        /* 9.99.46 — thang điểm riêng cho ba khuôn */
+        diemKhuon: Object.keys(G.KN_DIEM_KHUON || {}).sort().map(k =>
+          k + ':' + (G.KN_DIEM_KHUON[k] || []).map(d => d.ma + '·' + d.trong +
+            '·' + d.ai + '·' + (d.tranMay || 0)).join(',')),
+        /* Mỗi thang phải cộng đúng 100. Lệch nghĩa là một chiều bị tính
+           hai lần hoặc không ai tính — y như thang của bài học. */
+        thangLech: Object.keys(G.KN_DIEM_KHUON || {}).filter(k =>
+          (G.KN_DIEM_KHUON[k] || []).reduce((a, d) => a + d.trong, 0) !== 100),
+        /* Chiều nào máy chấm thì PHẢI có phép đo; chiều nào người chấm
+           thì KHÔNG được có. Một chiều "máy chấm" mà không phép đo là
+           một chiều luôn 0 điểm mà không ai biết vì sao. */
+        chieuLech: Object.keys(G.KN_DIEM_KHUON || {}).reduce((r, k) => {
+          (G.KN_DIEM_KHUON[k] || []).forEach(d => {
+            const co = !!(d.phep && d.phep.length);
+            if (d.ai === 'nguoi' && co) r.push(k + '/' + d.ma + ' người chấm mà có phép đo');
+            if (d.ai !== 'nguoi' && !co) r.push(k + '/' + d.ma + ' máy chấm mà KHÔNG có phép đo');
+          });
+          return r; }, []),
+        /* Mọi mã phép đo kho khai phải nằm trong bảy mã máy chủ hiện. */
+        phepKho: Array.from(new Set(Object.keys(G.KN_DIEM_KHUON || {}).reduce((r, k) => {
+          (G.KN_DIEM_KHUON[k] || []).forEach(d =>
+            (d.phep || []).forEach(x => r.push(String(x[0]).split(':')[0])));
+          return r; }, []))).sort(),
+        /* Ô trichDuoc của chuẩn nghề — VẮNG MẶT nghĩa là chưa chốt. */
+        ngheDaChot: (G.KN_CHUAN_NGHE || []).filter(c => c.trichDuoc === true).map(c => c.ma),
+        /* 9.99.47 — bộ miễn dịch */
+        mdChan: (G.MD_CHAN || []).map(c => c.ma),
+        mdVirus: (G.MD_VIRUS || []).map(v => v.ma),
+        mdTuNgu: (G.MD_VIRUS || []).filter(v => v.tuNgu && v.tuNgu.length)
+          .map(v => v.ma + '·' + v.tuNgu.join('|')),
+        mdNhomTong: (G.MD_NHOM || []).reduce((a, n) => a + n.soMa, 0),
+        mdNhomKhai: (G.MD_NHOM || []).reduce((a, n) => a + n.daKhai, 0),
+        /* Số mã ĐÃ KHAI của từng nhóm phải khớp số dòng thật trong
+           MD_CHAN. Khai 4 mà có 2 dòng là bảng tự nói dối về chính nó,
+           và đó là kiểu nói dối không ai đọc ra khi lướt. */
+        mdNhomLech: (G.MD_NHOM || []).filter(n =>
+          (G.MD_CHAN || []).filter(c => c.nhom === n.ma).length !== n.daKhai)
+          .map(n => n.ma),
+        /* Mỗi lỗi chặn phải khai CHẶN Ở ĐÂU — chặn nhầm tầng là chỗ
+           hỏng hay gặp nhất, và lọc trên màn hình không phải bảo vệ. */
+        mdThieuTang: (G.MD_CHAN || []).filter(c => !c.chanODau).map(c => c.ma),
         luatBuoi: (G.KN_HOITHOAI_LUAT || []).map(l => l.ma),
         /* Tên nhịp trong KICHBAN_AI — nguồn GỐC. Bảng KN_NHIP và bảng
            KN_KHUNG_CAU đều phải gọi đúng những cái tên này. */
@@ -11627,11 +11668,82 @@ const { chromium } = require(PW);
     soDay(mND.BAN_CHEP_BUOI.NHIP.map(n => n[0] + ' ' + n[1]), kho.nhip, 'sáu nhịp');
     if (kho.luatBuoi.join(',') !== 'B1,B2,B3') lech.push('ba luật của một buổi');
 
+    /* ── THANG ĐIỂM RIÊNG CỦA BA KHUÔN ── */
+    if (bc.DIEM_KHUON) {
+      const bcKhuon = Object.keys(bc.DIEM_KHUON).sort().map(k =>
+        k + ':' + bc.DIEM_KHUON[k].map(d => d.ma + '·' + d.trong + '·' + d.ai +
+          '·' + (d.tran || 0)).join(','));
+      soDay(bcKhuon, kho.diemKhuon, 'thang điểm ba khuôn');
+    }
+    if (kho.thangLech.length)
+      lech.push('thang không cộng đủ 100: ' + kho.thangLech.join(', '));
+    if (kho.chieuLech.length) lech.push(kho.chieuLech.join(' · '));
+    /* Bảy phép đo, không hơn. Kho khai một mã máy chủ chưa hiện thì
+       chiều ấy luôn 0 điểm — và 0 vì thiếu phép đo trông y hệt 0 vì
+       bài kém. */
+    {
+      const PHEP_CO = ['coKhoi', 'khoiCo', 'demGach', 'dungTang', 'itRong',
+                       'coNguon', 'sopDu'].sort();
+      const la = kho.phepKho.filter(x => PHEP_CO.indexOf(x) < 0);
+      if (la.length) lech.push('phép đo kho khai mà máy chủ chưa hiện: ' + la.join(', '));
+    }
+
+    /* ── BỘ MIỄN DỊCH ──
+       Mười ba lỗi chặn ở kho phải đúng bằng mười ba dòng đối chiếu ở
+       máy chủ. Kho thêm một lỗi mà máy chủ không có dòng nào thì lỗi ấy
+       hiện trong bảng với ô đối chiếu TRỐNG — và một ô trống trong bảng
+       an toàn đọc ra là "chưa rõ", trong khi sự thật là "không ai soi". */
+    if (mND.BAN_CHEP_MD) {
+      soDay(mND.BAN_CHEP_MD.MA_CHAN, kho.mdChan.slice().sort(), 'mười ba lỗi chặn');
+      soDay(mND.BAN_CHEP_MD.MD_TUNGU.map(v => v[0] + '·' + v[2].join('|')),
+        kho.mdTuNgu, 'từ ngữ nuôi virus');
+    }
+    if (kho.mdVirus.length !== 18) lech.push('mười tám chủng virus');
+    if (kho.mdNhomLech.length)
+      lech.push('nhóm khai sai số mã đã có: ' + kho.mdNhomLech.join(', '));
+    if (kho.mdThieuTang.length)
+      lech.push('lỗi chặn không khai CHẶN Ở ĐÂU: ' + kho.mdThieuTang.join(', '));
+    if (kho.mdNhomTong !== 66) lech.push('tổng số mã tám nhóm phải là 66');
+    /* ── BA MỨC, KHÔNG CÓ MỨC THỨ TƯ ──
+       Gọi thẳng bộ đối chiếu và đòi mọi dòng rơi vào đúng ba mức. Lượt
+       phá ở bản 9.99.47 dựng thêm một mức "daXuLy100": bộ thử cửa vào
+       bắt được, còn mục này thì KHÔNG — nên một mức trấn an lọt được
+       qua đúng cái cổng chặn phát hành. Nay nó không lọt.
+
+       Vì sao chỗ này đáng canh ở cổng phát hành: một bảng an toàn ghi
+       "đã xử lý 100%" mà không ai kiểm được là một lời trấn an, và lời
+       trấn an là thứ nguy hiểm nhất trong một bảng an toàn. */
+    {
+      const dbGia = {prepare: () => ({bind: () => ({run: async () => ({})})})};
+      const md = await mND.soatMienDich({}, {}, dbGia,
+        {uid: 'x', username: 'x', role: 'R01'});
+      const mucLa = Object.keys(md.bang || {})
+        .filter(k => ['chan', 'motPhan', 'chua'].indexOf(md.bang[k].muc) < 0);
+      if (mucLa.length)
+        lech.push('bộ đối chiếu miễn dịch trả về MỨC LẠ ở: ' + mucLa.join(', ') +
+          ' — chỉ có ba mức, không có mức thứ tư');
+      const khongVi = Object.keys(md.bang || {})
+        .filter(k => String(md.bang[k].vi || '').length < 30);
+      if (khongVi.length)
+        lech.push('dòng miễn dịch không nói VÌ SAO: ' + khongVi.join(', '));
+      if ((md.soChan || 0) !== 13) lech.push('phải có đúng 13 dòng đối chiếu');
+    }
+
     ra.ndLech = lech;
     ra.ndKhop = lech.length === 0;
     ra.ndDuKho = kho.maVb === 'KN-HP-01' && kho.cam.length === 10 &&
                  kho.xong.length === 10 && kho.khoi.length === 24;
     ra.ndKhoiDay = kho.khoiThieuHoi.length === 0 && kho.khoiKhongNoi.length === 0;
+    /* ND-04: cửa xuất chuẩn nghề. Mục nào kho chưa chốt `trichDuoc` thì
+       cửa PHẢI đóng — đo bằng cách gọi thẳng cửa, không đọc chú giải. */
+    {
+      const chuaChot = (kho.chuanNghe || []).filter(m => kho.ngheDaChot.indexOf(m) < 0);
+      ra.ndCuaXuat = chuaChot.length === 0 ||
+        !(await mND.xuatChuanNghe({muc: chuaChot.map(ma => ({ma}))},
+          {}, {prepare: () => ({bind: () => ({run: async () => ({})})})},
+          {uid: 'x', username: 'x', role: 'R01'})).ok;
+      ra.ndChuaChot = chuaChot;
+    }
     ra.ndThieuHoi = kho.khoiThieuHoi;
     ra.ndKhongNoi = kho.khoiKhongNoi;
 
@@ -11666,9 +11778,19 @@ const { chromium } = require(PW);
                     .luat.find(l => l.ma === 'B3').dat === false &&
                   mND.docHoiThoai('Coach: 24 giờ tới đo bằng gì?\n' +
                     'Khách: Tôi ghi lại số lần con tự mở sách.')
-                    .luat.find(l => l.ma === 'B3').dat === true;
+                    .luat.find(l => l.ma === 'B3').dat === true &&
+                  /* Lớp thứ hai nhận nhịp theo HÌNH THỨC câu, và nói ra
+                     nó nhận bằng lớp nào. Câu này không chứa một cụm
+                     nào trong bảng dấu hiệu. */
+                  mND.docHoiThoai('Coach: Ta để con tự chọn, hoặc giữ nếp cũ — bên nào hợp hơn?')
+                    .nhip.find(n => n.ma === 'N5').theo === 'hinhThuc' &&
+                  /* Bộ dò virus: bắt chỗ NUÔI, không bắt chỗ viết theo
+                     vắc-xin. Cả hai trật tự từ đều phải bắt được. */
+                  mND.soatVirus('Bạn đã bỏ lỡ, chuỗi đứt rồi.').length === 2 &&
+                  mND.soatVirus('Hôm nay để trống. Mai mình đi tiếp.').length === 0;
 
-    bao(ra.ndKhop && ra.ndDuKho && ra.ndKhoiDay && ra.ndCongDu && ra.ndDoThat,
+    bao(ra.ndKhop && ra.ndDuKho && ra.ndKhoiDay && ra.ndCongDu && ra.ndDoThat &&
+        ra.ndCuaXuat,
       'HIẾN PHÁP NỘI DUNG: BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP TỪNG Ô VỚI BẢN GỐC TRONG KHO, VÀ MÁY PHẢI KHÔNG CỘNG RA TỔNG KHI CÒN CHIỀU CHƯA AI CHẤM. Bản đặc tả MASTER AI của chủ hệ để AI tự chấm cả mười chiều rồi ra một con số trên trăm. Bốn chiều trong đó — chiều sâu, cá nhân hoá, dùng lại được, và phần có giá trị của chìa khoá kim cương — không có dữ liệu nào để đo, nên máy chấm chúng là máy ĐOÁN; và một con số đoán nằm cạnh sáu con số đo thì cả bảy đều được tin như nhau. Nên máy chỉ được chấm 60 điểm và phải NÓI RA 40 điểm còn chờ người — cùng luật với L-02 của bảng lương. Phép đo này cộng lại hai nửa và đòi đúng 100: lệch nghĩa là có một chiều bị tính hai lần hoặc không ai tính. Máy chủ không đọc được kho đã mã hoá nên phải giữ bản chép của hai mươi bốn khối, mười chiều, bảng câu rỗng và bảng thay lời; phép đo đối chiếu TỪNG Ô chứ không đếm số, vì hai bảng cùng dài mà lệch nội dung thì đếm số vẫn xanh. Chỗ nguy nhất là ô TRẦN MÁY: lệch một điểm ở đó không làm sai phép đo nào, nó chỉ làm máy cho nhiều điểm hơn phần nó thật sự đo được. Và phép đo gọi thẳng ba bộ dò rồi đòi chúng phân biệt câu dán nhãn với câu sạch',
       ra.ndKhop && ra.ndCongDu
         ? '24 khối · 10 chiều · máy chấm ' + ra.ndTranMay + '/100, còn ' +
@@ -11678,7 +11800,9 @@ const { chromium } = require(PW);
            (ra.ndThieuHoi || []).length ? 'khối không khai câu hỏi: ' + ra.ndThieuHoi.join(', ') : '',
            (ra.ndKhongNoi || []).length ? 'khối không nối về điều kiện hoàn thành nào: ' + ra.ndKhongNoi.join(', ') : '',
            !ra.ndCongDu ? 'HAI NỬA CỘNG LẠI KHÔNG RA 100: máy ' + ra.ndTranMay : '',
-           !ra.ndDoThat ? 'GỌI THẲNG BỘ DÒ THÌ NÓ KHÔNG PHÂN BIỆT ĐƯỢC' : ''
+           !ra.ndDoThat ? 'GỌI THẲNG BỘ DÒ THÌ NÓ KHÔNG PHÂN BIỆT ĐƯỢC' : '',
+           !ra.ndCuaXuat ? 'CỬA XUẤT CHUẨN NGHỀ MỞ CHO MỤC CHƯA CHỐT: ' +
+             (ra.ndChuaChot || []).join(', ') : ''
           ].filter(Boolean).join(' · '));
   }
 

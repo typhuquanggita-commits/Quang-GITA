@@ -259,6 +259,10 @@ const NGHE = [
   'KN_CHUAN_NGHE', 'KN_CAM_CHUYENGIA', 'KN_KHUNG_CAU',
   /* 9.99.45 — bốn khuôn, sáu nhịp, ba luật một buổi */
   'KN_KHUON', 'KN_NHIP', 'KN_HOITHOAI_LUAT',
+  /* 9.99.46 — thang điểm riêng cho ba khuôn */
+  'KN_DIEM_KHUON',
+  /* 9.99.47 — bộ miễn dịch theo đặc tả phần 3 */
+  'MD_MA_VB', 'MD_NHOM', 'MD_CHAN', 'MD_VIRUS', 'MD_CHOCHU',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */
