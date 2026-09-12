@@ -797,7 +797,11 @@ function shell(){
     '<div class="shell'+(G.S.rightOpen?'':' no-right')+'" id="shell">'+
       '<main id="main"></main>'+
     '</div>'+
-    '<aside id="right" class="'+(G.S.rightOpen?'open':'')+'">'+rightPanel()+'</aside>';
+    '<aside id="right" class="'+(G.S.rightOpen?'open':'')+'">'+rightPanel()+'</aside>'+
+    /* Thanh dưới đáy — chỉ hiện trên khổ điện thoại, luật ở style.css.
+       Dựng luôn ở đây chứ không dựng lúc cần: một thẻ chèn vào DOM sau
+       này sẽ biến mất ở lần dựng vỏ kế tiếp. */
+    '<nav id="duoi" aria-label="Điều hướng nhanh">'+(G.thanhDuoi?G.thanhDuoi():'')+'</nav>';
   render();
 }
 
@@ -908,6 +912,9 @@ function render(){
   window.scrollTo(0,0);
   var left = document.getElementById('left');
   if(left) left.innerHTML = leftNav();
+  /* Thanh dưới phải vẽ lại mỗi lần đổi màn, không thì ô đang đứng sáng
+     ở chỗ cũ và nó chỉ sai đường cho người dùng. */
+  if(G.duoiVe) G.duoiVe();
   save();
 }
 G.render = render;

@@ -554,12 +554,21 @@ G.csCaoCuaSo = function(){
      offsetTop không bị chuyển động làm lệch. */
   var t = 0, el = w;
   while(el){ t += el.offsetTop; el = el.offsetParent; }
-  var cao = window.innerHeight - (t - (window.pageYOffset || 0)) - 18;
+  /* Trừ cả thanh điều hướng dưới đáy, nếu nó đang hiện. ĐO chiều cao
+     thật của nó chứ không trừ một con số: thanh cao thêm đúng phần dưới
+     vạch về nhà của từng máy, mà con số ấy mỗi máy một khác.
+     Bản đầu tôi quên hẳn chuyện này, và bộ đo khung màn bắt ngay: chỗ
+     gõ của màn trợ lý nằm dưới thanh 41px trên điện thoại, 71px trên
+     máy bảng — tức là đúng thứ cửa sổ này sinh ra để tránh. */
+  var td = document.getElementById('duoi');
+  var caoTd = (td && getComputedStyle(td).display !== 'none')
+    ? td.getBoundingClientRect().height : 0;
+  var cao = window.innerHeight - (t - (window.pageYOffset || 0)) - 18 - caoTd;
   /* Sàn: trên điện thoại, thanh nhắc việc trễ nhịp có thể cao tới vài
      trăm điểm ảnh và đẩy cửa sổ xuống gần hết màn. Lúc ấy đừng cố nhét
      cửa sổ vào phần còn lại — nó co xuống 22px và thành vô dụng. Cho
      nó một chiều cao đọc được rồi để trang cuộn qua thanh nhắc. */
-  var san = Math.min(Math.round(window.innerHeight * 0.62), 560);
+  var san = Math.min(Math.round((window.innerHeight - caoTd) * 0.62), 560);
   w.style.height = Math.max(cao, san) + 'px';
 };
 window.addEventListener('resize', function(){ G.csCaoCuaSo(); });

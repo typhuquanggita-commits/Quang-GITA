@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.52',
+  version: '9.99.53',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -464,6 +464,33 @@ G.PORTALS = {
     say:'Đây là hành trình của em. Mỗi ngày em đi thêm một bước, bản đồ này sáng thêm một chỗ.'},
   ctv:{n:'Vệ Tinh Lan Toả', ic:'share', c:'#BE0E16', home:'bat-dau',
     say:'Câu chuyện thật của anh chị là thứ mở được cánh cửa mà không quảng cáo nào mở nổi.'}
+};
+
+/* ══════════ 1b. BỐN CHỖ HAY TỚI NHẤT — THANH DƯỚI TRÊN ĐIỆN THOẠI ══════════
+
+   Chỉ có nghĩa trên điện thoại: cả menu nằm sau nút ba gạch ở góc trên
+   bên trái, mà đó là góc xa ngón cái nhất khi cầm máy một tay.
+
+   Vì sao phải khai tay chỗ này, trong khi cả kho theo luật "đừng dựng
+   bản thứ hai của một danh sách": bản đầu tôi lấy bốn mục ĐẦU TIÊN mà
+   vai mở được trong G.NAV, đúng theo thứ tự cột trái. Chạy thì đúng,
+   nhưng đo ra thì cả sáu vai đều có chung ba ô — "Đã đổi gì · KPI ·
+   GITA là gì" — vì nhóm đầu của G.NAV là nhóm GIỚI THIỆU.
+
+   Tức là thứ tự trong G.NAV là thứ tự ĐỌC, không phải thứ tự HAY DÙNG.
+   Hai thứ ấy khác nhau, và không có sẵn chỗ nào trong kho nói cái thứ
+   hai. Nên nó phải được khai, và khai ở đây.
+
+   Khai SAI cũng không vỡ: `them()` bỏ qua màn nào vai không mở được,
+   rồi thứ tự G.NAV lấp nốt chỗ trống. Nên đây là lời gợi ý, không phải
+   một lời hứa mã phải giữ. */
+G.DUOI = {
+  ph:    ['bat-dau', 'ban-do', 'tien-bo', 'tro-ly'],
+  hs:    ['bat-dau', 'nhiem-vu', 'tien-bo', 'tro-ly'],
+  coach: ['coach-deck', 'bang-viec', 'tien-bo', 'tro-ly'],
+  tuvan: ['tuvan-deck', 'bang-viec', 'tien-bo', 'tro-ly'],
+  admin: ['dieu-hanh', 'bang-viec', 'kpi-toi', 'tro-ly'],
+  ctv:   ['bat-dau', 'bang-viec', 'tien-rung', 'tro-ly']
 };
 
 /* ══════════ 2. NĂM TẦNG ══════════ */

@@ -74,7 +74,7 @@ const CHU_NHO = 10;
 
   console.log('\nĐO KHUNG MÀN — 4 khổ màn thật, 2 vai\n');
 
-  const tong = { tran: [], phanTu: [], nut: [], chu: [], ro: [], oNho: [] };
+  const tong = { tran: [], phanTu: [], nut: [], chu: [], ro: [], oNho: [], che: [] };
 
   for (const k of KHO) {
     const p = await b.newPage({ viewport: { width: k.w, height: k.h },
@@ -147,7 +147,11 @@ const CHU_NHO = 10;
 
           const nutNho = [], chuNho = [], oNho = [];
           if (opt.cham && goc) {
-            const nut = goc.querySelectorAll('button,a[href],[data-act],[role="button"],input,select');
+            /* Thanh dưới cũng là chỗ bấm bằng ngón tay — đo luôn, dù nó
+             nằm ngoài #main. */
+          const nut = document.querySelectorAll(
+            '#main button,#main a[href],#main [data-act],#main [role="button"],' +
+            '#main input,#main select,#duoi button');
             for (let i = 0; i < nut.length; i++) {
               const el = nut[i];
               if (getComputedStyle(el).display === 'none') continue;
@@ -207,7 +211,29 @@ const CHU_NHO = 10;
             if (t) roRa.push(t.slice(0, 60));
           }
 
+          /* ── THANH DƯỚI CÓ CHE MẤT DÒNG CUỐI KHÔNG ──
+             Thanh đứng đè lên đáy trang. Thiếu chỗ chừa thì dòng cuối
+             của MỌI màn nằm dưới nó — và không ai báo, vì người ta
+             tưởng màn hết ở đó. Cuộn xuống đáy rồi đo thẻ nội dung cuối
+             cùng; đo lề của #main thì không thấy, vì chính lề ấy là chỗ
+             chừa. */
+          let che = 0;
+          const td = document.getElementById('duoi');
+          if (td && getComputedStyle(td).display !== 'none') {
+            window.scrollTo(0, document.body.scrollHeight);
+            await new Promise(r => setTimeout(r, 60));
+            const v = document.querySelector('#main .view');
+            const con = v ? Array.prototype.filter.call(v.children,
+              x => x.getBoundingClientRect().height > 2) : [];
+            if (con.length) {
+              const cuoi = con[con.length - 1].getBoundingClientRect();
+              che = Math.round(cuoi.bottom - td.getBoundingClientRect().top);
+            }
+            window.scrollTo(0, 0);
+          }
+
           return {
+            che,
             roRa,
             cuonNgang: Math.round(document.documentElement.scrollWidth - W),
             thoRa: thoRa.slice(0, 4).map(x => x.ten + ' thừa ' + x.thua + 'px'),
@@ -220,6 +246,7 @@ const CHU_NHO = 10;
 
         soDo++;
         const nhan = k.ten + ' · ' + v;
+        if (d.che > 1) tong.che.push(nhan + ' — dòng cuối nằm dưới thanh ' + d.che + 'px');
         if (d.roRa.length) tong.ro.push(nhan + ' — chữ nằm trần trong thân trang: "' +
           d.roRa.join('" · "') + '"');
         if (d.cuonNgang > 1) tong.tran.push(nhan + ' — trang cuộn ngang ' + d.cuonNgang + 'px');
@@ -256,6 +283,8 @@ const CHU_NHO = 10;
     tong.chu.length ? tong.chu.slice(0, 6).join(' · ') : 'sạch');
   bao(!tong.oNho.length, 'MỌI Ô NHẬP TRÊN KHỔ CHẠM ĐỀU DÙNG CHỮ TỪ 16px. Dưới mức ấy, Safari trên iPhone phóng CẢ TRANG lên khi người ta chạm vào ô — và không thu lại khi gõ xong, nên sau mỗi lần gõ họ phải tự chụm ngón tay thu về',
     tong.oNho.length ? Array.from(new Set(tong.oNho.map(x => x.split(' — ')[1]))).slice(0, 4).join(' · ') : 'sạch');
+  bao(!tong.che.length, 'THANH DƯỚI ĐÁY KHÔNG CHE MẤT DÒNG CUỐI CỦA MÀN NÀO. Thanh đứng đè lên đáy trang, nên vùng nội dung phải chừa chỗ cho nó kể cả phần dưới vạch về nhà — thiếu chỗ chừa thì dòng cuối nằm khuất, và không ai báo vì người ta tưởng màn hết ở đó',
+    tong.che.length ? tong.che.slice(0, 6).join(' · ') : 'sạch');
   bao(!tong.ro.length, 'THÂN TRANG KHÔNG CÓ CHỮ NẰM TRẦN NGOÀI MỌI THẺ. Một thẻ meta bị cắt đôi thì nửa sau rơi xuống thân trang và hiện ra thành chữ — đã xảy ra thật với dòng khai quyền sở hữu trí tuệ, sống qua rất nhiều bản vì trên màn để bàn nó khuất sau thanh trên',
     tong.ro.length ? Array.from(new Set(tong.ro.map(x => x.split(' — ')[1]))).slice(0, 3).join(' · ') : 'sạch');
 

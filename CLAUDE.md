@@ -167,6 +167,31 @@ Hai chỗ đã sập khi làm, ghi lại để không lặp:
 
 ---
 
+## Thanh điều hướng dưới đáy — `src/thanh-duoi.js`
+
+Chỉ hiện ở khổ ≤860px. Bốn ô cộng nút Menu; menu ba gạch ở trên vẫn giữ
+nguyên. Lý do: cầm máy một tay thì góc trên bên trái là góc xa ngón cái
+nhất, còn đáy màn là chỗ ngón cái nằm sẵn.
+
+Bốn ô lấy từ **ba nguồn, theo thứ tự tin cậy**: `G.DUOI[portal]` (lời
+khai của chủ hệ, ở `src/data.core.js`) → `G.PORTALS[vai].home` → thứ tự
+`G.NAV` LẤP chỗ còn trống. Khai sai không vỡ: màn nào vai không mở được
+thì bị bỏ qua và nguồn ba lấp nốt.
+
+**Vì sao phải khai tay, dù luật kho là đừng dựng bản thứ hai:** bản đầu
+tôi lấy bốn mục đầu tiên trong `G.NAV`, và đo ra thì cả sáu vai có chung
+ba ô — "Đã đổi gì · KPI · GITA là gì" — vì nhóm đầu của `G.NAV` là nhóm
+giới thiệu. Thứ tự `G.NAV` là thứ tự **ĐỌC**, không phải thứ tự **HAY
+DÙNG**; thứ chưa có trong kho thì phải khai, không suy ra được. Ô `star`
+cũng không dùng được: 101 mục mang star.
+
+**Thanh che mất dòng cuối là lớp lỗi riêng của nó** — `do-khung-man.js`
+có phép đo canh, và nó đã đỏ thật hai lần ở màn trợ lý: một lần vì cửa
+sổ trò chuyện tự tính chiều cao mà không biết có thanh, một lần vì
+`body.man-chat main` nặng hơn luật lề chung nên ăn mất chỗ chừa.
+
+---
+
 ## Chuẩn giao diện điện thoại — bốn luật nền, `assets/style.css`
 
 Cả bốn đều do `tools/do-khung-man.js` canh, và cả bốn đều từng sai thật.
