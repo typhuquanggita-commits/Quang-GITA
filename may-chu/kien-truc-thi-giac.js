@@ -639,6 +639,223 @@ export async function docGopY(y, env, db, hoSo) {
         'hỏng đúng chỗ cũ, và mất thêm một lượt vẽ.'};
 }
 
+/* ═══════════════ KÊNH PHÁT · GIỜ VÀNG · GỠ BÀI — PHẦN 9 ═══════════════
+
+   Bản chép của G.TG_KENH · G.TG_GIO_VANG · G.TG_GO_LY_DO. Bộ kiểm mục
+   71 đối chiếu từng ô với kho. */
+export const KENH = [
+  ['TRANG_NHA', ['NGANG', 'DOC']],
+  ['TIN_NHANH', ['DUNG']],
+  ['DONG_TIN', ['DOC', 'NGANG']],
+  ['NHOM_KIN', ['DOC', 'NGANG']],
+  ['THU_DIEN', ['NGANG']],
+  ['IN_GIAY', ['DOC']]
+];
+
+export const GIO_VANG = [
+  ['SANG', '05:30', '06:30'],
+  ['TRUA', '11:30', '12:30'],
+  ['TOI', '20:30', '22:00']
+];
+
+export const GO_LY_DO = [
+  ['SAI_NOI_DUNG', true], ['SAI_NHAN_DIEN', false], ['HET_HAN', false],
+  ['NGUOI_TRONG_ANH', true], ['PHAP_LY', true]
+];
+
+/* ── GIỜ VIỆT NAM, KHÔNG PHẢI GIỜ MÁY CHỦ ──
+   Máy chủ chạy ở đâu là chuyện của máy chủ; người xem thì luôn ở đây.
+   Cloudflare Workers chạy UTC, nên đọc giờ máy là lệch bảy tiếng — và
+   lệch bảy tiếng thì khung "tối" rơi vào giữa trưa, im lặng. */
+const LECH_VN = 7 * 60;
+function phutVN(luc) {
+  const d = luc ? new Date(luc) : new Date();
+  return ((d.getUTCHours() * 60 + d.getUTCMinutes()) + LECH_VN) % 1440;
+}
+function raPhut(hhmm) {
+  const [h, m] = String(hhmm).split(':').map(Number);
+  return h * 60 + m;
+}
+
+/* Trả về mã khung giờ, hoặc null nếu đang ngoài cả ba khung. Không
+   "gần đúng": 06:31 là ngoài khung, và nói ra như thế. Nới cho gần
+   đúng thì ranh giới trôi dần, và sau vài bản thì không còn khung nào. */
+export function trongGioVang(luc) {
+  const p = phutVN(luc);
+  const hop = GIO_VANG.find(([, tu, den]) => p >= raPhut(tu) && p <= raPhut(den));
+  return hop ? hop[0] : null;
+}
+
+/* Khổ có hợp kênh không. Sai khổ thì nền tảng TỰ CẮT, và nó cắt ở
+   giữa — thứ bị cắt thường là dòng mời ở đáy hoặc dấu thương hiệu ở
+   góc, đúng hai thứ quan trọng nhất, và không báo gì cả. */
+export function hopKenh(kenh, kho) {
+  const k = KENH.find(([ma]) => ma === kenh);
+  if (!k) return {hop: false, laKenhLa: true};
+  return {hop: k[1].indexOf(kho) >= 0, nhan: k[1]};
+}
+
+/* ═══════════ ĐĂNG MỘT TẤM LÊN MỘT KÊNH ═══════════ */
+export async function dangTamThiGiac(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+
+  const x = await db.prepare('SELECT id,trangThai,ban FROM deXuatThiGiac WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!x) return {ok: false, error: 'Không tìm thấy đề xuất này.'};
+
+  /* ── CHỈ ĐĂNG THỨ ĐÃ PHÁT HÀNH ──
+     Bậc `duyet` nghĩa là người duyệt đã gật; `phatHanh` nghĩa là bản
+     cuối đã chốt. Cho đăng ở bậc duyệt thì một bản còn đang sửa chữ đi
+     ra ngoài, và tấm ngoài kia không sửa lại được nữa. */
+  if (x.trangThai !== 'phatHanh') return {ok: false, code: 'CHUAPHATHANH',
+    error: 'Tấm đang ở bậc "' + x.trangThai + '". Chỉ đăng thứ đã PHÁT HÀNH — ' +
+      'bậc duyệt nghĩa là người duyệt đã gật, còn phát hành nghĩa là bản cuối đã ' +
+      'chốt. Đăng ở bậc duyệt thì một bản còn đang sửa chữ đi ra ngoài, và tấm ' +
+      'ngoài kia không sửa lại được nữa.'};
+
+  const kenh = String(y.kenh || '').trim();
+  const kho = String(y.kho || '').trim();
+  const hk = hopKenh(kenh, kho);
+  if (hk.laKenhLa) return {ok: false, code: 'KENHLA',
+    error: 'Không có kênh "' + kenh + '". Đang có: ' +
+      KENH.map(k => k[0]).join(' · ') + '.'};
+  if (!hk.hop) return {ok: false, code: 'LECHKHO', nhan: hk.nhan,
+    error: 'Kênh ' + kenh + ' nhận khổ ' + hk.nhan.join(' hoặc ') + ', không nhận ' +
+      kho + '. Đăng sai khổ thì nền tảng TỰ CẮT, và nó cắt ở giữa — thứ bị cắt ' +
+      'thường là dòng mời ở đáy hoặc dấu thương hiệu ở góc, đúng hai thứ quan ' +
+      'trọng nhất, và không báo gì cả.'};
+
+  /* ── GIỜ VÀNG: NÓI RA, KHÔNG CHẶN ──
+     Một tấm chúc Tết phải đi đúng giao thừa; một tấm xin lỗi phải đi
+     NGAY. Chặn theo giờ là bắt cả Học viện đứng lại vì một con số trung
+     bình, mà con số trung bình không biết hôm nay có chuyện gì.
+
+     Nhưng đăng ngoài khung phải VIẾT MỘT CÂU. Không bắt viết thì mọi
+     lượt đều đăng ngoài khung, và bảng giờ vàng thành một lời chú giải. */
+  const khung = trongGioVang(y.luc);
+  const lyDoNgoai = String(y.lyDoNgoaiGio || '').trim();
+  if (!khung && lyDoNgoai.length < 10) return {ok: false, code: 'NGOAIGIO',
+    gioVang: GIO_VANG.map(g => g[1] + '–' + g[2]),
+    error: 'Đang ngoài cả ba khung giờ vàng (' +
+      GIO_VANG.map(g => g[1] + '–' + g[2]).join(' · ') + ' giờ Việt Nam). ' +
+      'Máy KHÔNG chặn — một tấm chúc Tết phải đi đúng giao thừa, một tấm xin lỗi ' +
+      'phải đi ngay. Chỉ cần viết một câu vì sao đăng lúc này, và câu ấy ở lại ' +
+      'trong sổ.'};
+
+  const id = 'DT-' + Date.now().toString(36) + '-' +
+    Math.random().toString(36).slice(2, 7);
+  const luc = new Date().toISOString();
+  await db.prepare(
+    'INSERT INTO dangTamThiGiac (id,idDeXuat,kenh,kho,duongDan,trongGioVang,' +
+    'lyDoNgoaiGio,boiAi,luc) VALUES (?,?,?,?,?,?,?,?,?)'
+  ).bind(id, x.id, kenh, kho, String(y.duongDan || '').slice(0, 500) || null,
+    khung || '', lyDoNgoai.slice(0, 400) || null, hoSo.u, luc).run();
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_DANG',
+    doiTuong: x.id, chiTiet: kenh + ' · ' + kho + ' · ' +
+      (khung ? 'khung ' + khung : 'NGOÀI khung giờ')});
+
+  return {ok: true, id, idDeXuat: x.id, kenh, kho,
+    trongGioVang: khung,
+    vi: khung
+      ? 'Đăng trong khung ' + khung + '.'
+      : 'Đăng ngoài khung giờ vàng, và lý do đã vào sổ.'};
+}
+
+/* ═══════════ GỠ — VÀ CÂU THẬT VỀ VIỆC GỠ ═══════════
+
+   Đây là chỗ dễ dựng sai nhất của cả phần 9, và dựng sai thì tệ hơn
+   không có: một nút "Gỡ" làm người bấm tin rằng chuyện đã xong.
+
+   Gỡ trong sổ KHÔNG gỡ được ở ngoài. Tấm đã đăng thì nằm ở máy chủ của
+   nền tảng ấy; ai đã lưu về máy thì vẫn giữ; ai đã chụp màn hình thì
+   vẫn giữ. Sổ của Học viện chỉ ghi được rằng Học viện ĐÃ QUYẾT gỡ. */
+export async function goTamThiGiac(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+
+  const d = await db.prepare('SELECT * FROM dangTamThiGiac WHERE id = ?')
+    .bind(String(y.id || '')).first();
+  if (!d) return {ok: false, error: 'Không tìm thấy lượt đăng này.'};
+
+  /* ── NGƯỜI BÁO ĐÃ GỠ Ở KÊNH NGOÀI ──
+     Ô này là LỜI KHAI CỦA NGƯỜI, không phải phép đo. Máy không nhìn
+     thấy kênh ngoài nên không tự đánh dấu được — và một ô máy tự đánh
+     dấu mà không đo được là một lời nói dối mang dấu của hệ thống. */
+  if (y.baoDaGoNgoai) {
+    if (!d.goTrongSo) return {ok: false, code: 'CHUAQUYETGO',
+      error: 'Lượt đăng này Học viện chưa quyết gỡ. Báo đã gỡ ở ngoài trước khi ' +
+        'quyết gỡ trong sổ là ghi ngược thứ tự — sổ sẽ đọc ra như thể có người ' +
+        'tự ý gỡ.'};
+    await db.prepare('UPDATE dangTamThiGiac SET daGoNgoai = ?, goNgoaiBoiAi = ? ' +
+      'WHERE id = ? AND daGoNgoai IS NULL')
+      .bind(new Date().toISOString(), hoSo.u, d.id).run();
+    await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_GO_NGOAI',
+      doiTuong: d.idDeXuat, chiTiet: d.kenh});
+    return {ok: true, id: d.id, daGoNgoai: true,
+      vi: 'Đã ghi LỜI KHAI rằng tấm đã gỡ xuống ở ' + d.kenh + '. Đây là lời ' +
+        'khai của người, không phải phép đo — máy không nhìn thấy kênh ngoài.'};
+  }
+
+  if (d.goTrongSo) return {ok: false, code: 'DAGO',
+    error: 'Lượt đăng này đã được quyết gỡ lúc ' + d.goTrongSo + '.'};
+
+  const ma = String(y.lyDo || '').trim();
+  if (!GO_LY_DO.some(([m]) => m === ma)) return {ok: false, code: 'LYDOLA',
+    error: 'Phải chọn một lý do gỡ. Đang có: ' +
+      GO_LY_DO.map(g => g[0]).join(' · ') + '.'};
+
+  /* Một câu, bắt buộc. Gỡ không lý do thì lần sau người khác dựng lại
+     đúng tấm ấy, vì không có gì nói cho họ biết vì sao. */
+  const cau = String(y.cau || '').trim();
+  if (cau.length < 15) return {ok: false, code: 'THIEUCAU',
+    error: 'Viết một câu vì sao gỡ. Gỡ không câu nào thì lần sau người khác dựng ' +
+      'lại đúng tấm ấy — không có gì nói cho họ biết vì sao nó đã bị gỡ.'};
+
+  const luc = new Date().toISOString();
+  const r = await db.prepare(
+    'UPDATE dangTamThiGiac SET goTrongSo = ?, goLyDo = ?, goCau = ?, goBoiAi = ? ' +
+    'WHERE id = ? AND goTrongSo IS NULL'
+  ).bind(luc, ma, cau.slice(0, 600), hoSo.u, d.id).run();
+  if (!((r && r.meta && r.meta.changes) || 0))
+    return {ok: false, error: 'Lượt đăng vừa được gỡ ở chỗ khác. Mở lại rồi xem.'};
+
+  await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_GO',
+    doiTuong: d.idDeXuat, chiTiet: d.kenh + ' · ' + ma + ' · ' + cau.slice(0, 150)});
+
+  const gap = (GO_LY_DO.find(([m]) => m === ma) || [])[1];
+  return {ok: true, id: d.id, goTrongSo: luc, lyDo: ma, gapNgay: !!gap,
+    conPhaiLam: 'Vào ' + d.kenh + ' gỡ tấm xuống bằng tay, rồi quay lại bấm ' +
+      '"đã gỡ ở ngoài".',
+    vi: 'Học viện đã QUYẾT gỡ, và sổ đã ghi. Nhưng gỡ trong sổ KHÔNG gỡ được ở ' +
+      'ngoài: tấm đã đăng thì nằm ở máy chủ của ' + d.kenh + ', ai đã lưu về hoặc ' +
+      'chụp màn hình thì vẫn giữ.' + (gap ? ' Lý do này thuộc nhóm GẤP — làm ngay.' : '')};
+}
+
+/* Sổ đăng. Nêu riêng hai phía, cùng luật với đối chiếu ngân hàng: đã
+   quyết gỡ mà chưa ai báo gỡ ngoài là việc còn đang hở. */
+export async function soDangBai(y, env, db, hoSo) {
+  if (!duocVao(hoSo)) return {ok: false, code: 'NOPERM',
+    error: 'Cổng thiết kế mở cho R01–R05.'};
+  const ds = await db.prepare('SELECT * FROM dangTamThiGiac ORDER BY luc DESC LIMIT 300')
+    .all();
+  const r = ((ds && ds.results) || []);
+  /* HAI phía riêng, không gộp thành một con số "còn tồn". Gộp lại thì
+     một tấm đã quyết gỡ ba tuần mà chưa ai vào kênh gỡ nằm chung rổ với
+     một tấm vừa quyết gỡ năm phút trước. */
+  const hoGo = r.filter(x => x.goTrongSo && !x.daGoNgoai);
+  const ngoaiGio = r.filter(x => !x.trongGioVang);
+  return {ok: true, so: r.length, ds: r,
+    hoGo: hoGo.map(x => ({id: x.id, kenh: x.kenh, quyetLuc: x.goTrongSo,
+      lyDo: x.goLyDo, gapNgay: !!(GO_LY_DO.find(g => g[0] === x.goLyDo) || [])[1]})),
+    soNgoaiGio: ngoaiGio.length,
+    vi: hoGo.length
+      ? hoGo.length + ' lượt đã QUYẾT gỡ mà chưa ai báo đã gỡ ở kênh ngoài. ' +
+        'Tấm vẫn đang ở ngoài kia.'
+      : 'Không lượt nào còn hở giữa quyết gỡ và gỡ thật.'};
+}
+
 /* Cửa cho màn hình: đọc ý định, đề nghị khổ, phác ba góc — một lượt.
    Không ghi gì vào sổ. */
 export async function docYTuong(y, env, db, hoSo) {

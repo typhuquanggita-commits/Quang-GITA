@@ -277,6 +277,8 @@ const NGHE = [
   'TG_SUA_DAU', 'TG_SUA_LUAT', 'TG_ADN',
   /* 9.99.57 — dòng truy nguồn trên tấm */
   'TG_TRUY',
+  /* 9.99.58 — kênh phát · giờ vàng · gỡ bài */
+  'TG_KENH', 'TG_GIO_VANG', 'TG_GIO_LUAT', 'TG_GO_LY_DO', 'TG_GO_LUAT',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

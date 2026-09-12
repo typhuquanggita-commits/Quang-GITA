@@ -1363,3 +1363,46 @@ CREATE TABLE IF NOT EXISTS chotTrichNghe (
 );
 
 CREATE INDEX IF NOT EXISTS ix_ctn_ma ON chotTrichNghe (ma, chotLuc);
+
+-- ═════════════════════════════════════════════════════════════
+--  ĐĂNG TẤM LÊN KÊNH — bản 9.99.58, phần 9 của bản đặc tả
+--
+--  Bảng này CHỈ THÊM, không sửa nội dung cũ. Một lượt đăng là một
+--  sự việc đã xảy ra: tấm đã ra khỏi hệ, người ngoài đã nhìn thấy.
+--  Sửa lại dòng ấy sau là sửa lại lịch sử.
+--
+--  ══ HAI Ô GỠ, VÀ VÌ SAO PHẢI LÀ HAI ══
+--
+--  goTrongSo   Học viện đã QUYẾT gỡ. Máy làm được, ghi ngay.
+--  daGoNgoai   Người thật đã vào kênh ấy gỡ xuống. NGƯỜI khai.
+--
+--  Gộp làm một là dựng đúng cái nút làm người bấm yên tâm nhầm: gỡ
+--  trong sổ KHÔNG gỡ được ở ngoài. Tấm đã đăng thì nằm ở máy chủ của
+--  nền tảng; ai đã lưu về hoặc chụp màn hình thì vẫn giữ. Sổ của Học
+--  viện chỉ ghi được rằng Học viện đã quyết gỡ.
+--
+--  Máy KHÔNG tự đánh dấu daGoNgoai vì máy không nhìn thấy kênh ngoài
+--  — một ô máy tự đánh dấu mà không đo được là một lời nói dối mang
+--  dấu của hệ thống.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS dangTamThiGiac (
+  id          TEXT PRIMARY KEY,
+  idDeXuat    TEXT NOT NULL,
+  kenh        TEXT NOT NULL,      -- mã trong TG_KENH
+  kho         TEXT NOT NULL,      -- DOC · DUNG · NGANG
+  duongDan    TEXT,               -- chỗ tấm đang nằm ở kênh ngoài
+  trongGioVang TEXT,              -- mã khung giờ, hoặc '' nếu ngoài khung
+  lyDoNgoaiGio TEXT,              -- bắt buộc khi đăng ngoài khung giờ
+  boiAi       TEXT NOT NULL,
+  luc         TEXT NOT NULL,
+  -- Hai ô gỡ, tách hẳn nhau. Xem chú giải ở đầu bảng.
+  goTrongSo   TEXT,               -- lúc Học viện quyết gỡ
+  goLyDo      TEXT,               -- mã trong TG_GO_LY_DO
+  goCau       TEXT,               -- một câu người gỡ viết, bắt buộc
+  goBoiAi     TEXT,
+  daGoNgoai   TEXT,               -- lúc người thật báo đã gỡ ở kênh
+  goNgoaiBoiAi TEXT
+);
+
+CREATE INDEX IF NOT EXISTS ix_dtg_dx ON dangTamThiGiac (idDeXuat, luc DESC);
+CREATE INDEX IF NOT EXISTS ix_dtg_go ON dangTamThiGiac (goTrongSo, daGoNgoai);

@@ -61,6 +61,8 @@ G.THUOC_CAP_PHEP = [
   'TG_SUA_DAU','TG_SUA_LUAT','TG_ADN',
   /* v9.99.57 — dòng truy nguồn trên tấm */
   'TG_TRUY',
+  /* v9.99.58 — kênh phát · giờ vàng · gỡ bài */
+  'TG_KENH','TG_GIO_VANG','TG_GIO_LUAT','TG_GO_LY_DO','TG_GO_LUAT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

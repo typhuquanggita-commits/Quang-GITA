@@ -10488,6 +10488,47 @@ const { chromium } = require(PW);
       const xe = mTG.vaGopY('Đổi màu lại cho ánh sáng đỡ gắt. Với lại bỏ logo ' +
         'ở góc cho thoáng. Bố cục thì chật quá.');
       const maXe = [].concat.apply([], xe.tuChoi.map(t => t.adn));
+      /* ── KÊNH PHÁT · GIỜ VÀNG · GỠ BÀI ── */
+      const khoK = await p.evaluate(() => {
+        const G = window.G;
+        return {
+          kenh: (G.TG_KENH || []).map(x => [x.ma, x.kho || []]),
+          thieuViKenh: (G.TG_KENH || []).filter(x => !x.ten || !x.vi).map(x => x.ma),
+          gio: (G.TG_GIO_VANG || []).map(x => [x.ma, x.tu, x.den]),
+          go: (G.TG_GO_LY_DO || []).map(x => [x.ma, !!x.gapNgay]),
+          thieuViGo: (G.TG_GO_LY_DO || []).filter(x => !x.ten || !x.vi).map(x => x.ma),
+          /* Mỗi khổ kênh khai phải CÓ THẬT trong bảng khổ. Khai một khổ
+             không tồn tại thì cổng đăng chặn mọi lượt, im lặng. */
+          khoLa: [].concat.apply([], (G.TG_KENH || []).map(x => x.kho || []))
+            .filter(k => !(G.TG_QUYET_KHO || []).some(q => q.ma === k))
+        };
+      });
+      ra.tgKenhThieuVi = khoK.thieuViKenh;
+      ra.tgGoThieuVi = khoK.thieuViGo;
+      ra.tgKenhKhoLa = khoK.khoLa;
+      ra.tgKenhKhop = JSON.stringify(khoK.kenh) === JSON.stringify(mTG.KENH || []);
+      ra.tgGioKhop = JSON.stringify(khoK.gio) === JSON.stringify(mTG.GIO_VANG || []);
+      ra.tgGoKhop = JSON.stringify(khoK.go) === JSON.stringify(mTG.GO_LY_DO || []);
+
+      /* Sai khổ thì nền tảng TỰ CẮT, và nó cắt ở giữa. */
+      ra.tgKenhChayThat =
+        mTG.hopKenh('TIN_NHANH', 'DUNG').hop === true &&
+        mTG.hopKenh('TIN_NHANH', 'DOC').hop === false &&
+        mTG.hopKenh('KENH_KHONG_CO', 'DOC').laKenhLa === true;
+
+      /* ── GIỜ ĐỌC THEO MÚI GIỜ VIỆT NAM, KHÔNG THEO GIỜ MÁY CHỦ ──
+         Cloudflare Workers chạy UTC. Đọc giờ máy là lệch bảy tiếng, và
+         lệch bảy tiếng thì khung "tối" rơi vào giữa trưa — im lặng, vì
+         cả ba khung vẫn trả về một cái tên nghe hợp lý.
+         Mốc thử ghi bằng giờ UTC: 13:00Z = 20:00 giờ Việt Nam. */
+      ra.tgGioChayThat =
+        mTG.trongGioVang('2026-03-01T13:45:00Z') === 'TOI' &&
+        mTG.trongGioVang('2026-03-01T22:45:00Z') === 'SANG' &&
+        mTG.trongGioVang('2026-03-01T04:45:00Z') === 'TRUA' &&
+        /* 06:31 giờ Việt là NGOÀI khung. Không nới cho "gần đúng":
+           nới thì ranh giới trôi dần, và sau vài bản không còn khung nào. */
+        mTG.trongGioVang('2026-03-01T23:31:00Z') === null;
+
       ra.tgAdnChanThat = xe.tuChoi.length === 2 &&
         maXe.indexOf('ADN1') >= 0 && maXe.indexOf('ADN2') >= 0 &&
         /* Chỉ còn L1 của câu bố cục. Có L3 nghĩa là câu xin đổi màu vừa bị
@@ -10506,7 +10547,10 @@ const { chromium } = require(PW);
       ra.tgBaYThat && ra.tgLop5That && ra.tgGocNhin === 'AN_TOAN·AN_DU·CAN_CANH' &&
       ra.tgSuaKhop && ra.tgAdnKhop && !ra.tgAdnThieuO.length &&
       ra.tgSuaChayThat && ra.tgAdnChanThat &&
-      ra.tgSuaLuat === 'khongDoan·mayKhongVietCauVa·motCauNhieuLop',
+      ra.tgSuaLuat === 'khongDoan·mayKhongVietCauVa·motCauNhieuLop' &&
+      ra.tgKenhKhop && ra.tgGioKhop && ra.tgGoKhop &&
+      ra.tgKenhChayThat && ra.tgGioChayThat &&
+      !ra.tgKenhThieuVi.length && !ra.tgGoThieuVi.length && !ra.tgKenhKhoLa.length,
     'CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC CHẶN THEO RANH GIỚI ĐÃ DUYỆT, KHÔNG THEO MỘT DANH SÁCH TỰ NGHĨ RA. Bản đặc tả của chủ hệ đề nghị dựng "Boundary Definition" cho từng Tầng với ô Allowed Concepts và ô Do NOT introduce. Hai ô ấy ĐÃ TỒN TẠI trong kho từ lâu và đang được dùng để bán hàng: HP_TANG[].gom và HP_TANG[].khong. Chép chúng sang một tệp mới là dựng bản thứ hai của một sự thật, và bản thứ hai không ai sửa khi bảng chặng đổi — tới lúc ấy máy chặn thiết kế theo một ranh giới đã cũ, im lặng. Máy chủ không đọc được kho đã mã hoá nên buộc phải giữ một bản chép TỐI THIỂU để dò, và phép đo này đối chiếu bản chép ấy với bản gốc THEO Ý chứ không theo từng chữ: kho viết thành câu cho người đọc, máy chủ giữ khoá ngắn để dò, nên luật là mỗi khoá máy chủ dùng phải TÌM THẤY trong câu khai của chính Tầng ấy. Khoá nào không tìm thấy là khoá tự nghĩ ra, và nó chặn thiết kế theo một ranh giới chưa ai duyệt — đúng cái mà luật "AI không được tự suy diễn" sinh ra để cấm. Phép đo cũng GỌI THẲNG cổng ấy với một nội dung T1 nói về Coach đồng hành và phác đồ rồi đòi nó chặn, vì đọc chú giải thì chú giải nói gì cũng được. Và mười hai loại hình phải có mặt đủ ở cả hai bên, mỗi loại khai đúng MỘT nhiệm vụ — nhồi hai việc vào một tấm thì người xem không nhớ được cái nào',
     /* ĐIỀU KIỆN CỦA CÂU KHOE PHẢI TRÙNG ĐIỀU KIỆN CỦA PHÉP ĐO.
        Bản đầu câu khoe chỉ hỏi hai cờ cũ, nên lúc phá thử bản chép bảng
@@ -10517,7 +10561,8 @@ const { chromium } = require(PW);
     ra.tgYKhop && ra.tgQuyetKhop && ra.tgAnDuKhop && ra.tgTranKhop &&
     ra.tgYDocThat && ra.tgQuyetChayThat && ra.tgTranChanThat &&
     ra.tgBaYThat && ra.tgLop5That && ra.tgSuaKhop && ra.tgAdnKhop &&
-    ra.tgSuaChayThat && ra.tgAdnChanThat
+    ra.tgSuaChayThat && ra.tgAdnChanThat && ra.tgKenhKhop && ra.tgGioKhop &&
+    ra.tgGoKhop && ra.tgKenhChayThat && ra.tgGioChayThat
       ? '5 chặng · mọi khoá dò đều tìm thấy trong ô "không" của chính chặng ấy · ' +
         mTGSoLoai + ' loại hình đều có đúng một nhiệm vụ · cổng chặn thật · ' +
         (ra.tgMauKhop ? (mTG.MAU_RA || []).length + ' ô màu đi ra khớp bản gốc · ' : '') +
@@ -10526,7 +10571,9 @@ const { chromium } = require(PW);
         ' cặp quyết định · ' + (mTG.AN_DU || []).length + ' ẩn dụ · 4 trần chữ · ' +
         'bốn bảng đều khớp bản gốc và bốn hàm đều chạy thật · ' +
         'góp ý chia đúng 5 lớp theo thứ tự trọng số · ' + (mTG.ADN || []).length +
-        ' thứ không mở đều chặn thật và không được chỉ đường đi sửa'
+        ' thứ không mở đều chặn thật và không được chỉ đường đi sửa · ' +
+        (mTG.KENH || []).length + ' kênh phát · 3 khung giờ vàng đọc theo giờ Việt Nam · ' +
+        (mTG.GO_LY_DO || []).length + ' lý do gỡ'
       : [!ra.tgDnCamKhop ? 'BẢN CHÉP BẢNG ĐỘNG TỪ CẤM Ở MÁY CHỦ LỆCH VỚI KHO' : '',
          !ra.tgDnChanThat ? 'CỔNG ĐIỀU NHỎ KHÔNG CHẶN THẬT' : '',
          !ra.tgYKhop ? 'BẢN CHÉP BẢNG Ý ĐỊNH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
@@ -10549,6 +10596,16 @@ const { chromium } = require(PW);
          (ra.tgAdnThieuO || []).length ? 'mục ADN thiếu ô: ' + ra.tgAdnThieuO.join(', ') : '',
          !ra.tgSuaChayThat ? 'PHÉP CHIA LỚP GÓP Ý KHÔNG CHẠY THẬT (sai thứ tự L1→L5, ' +
            'hoặc nó ĐOÁN khi không có dấu hiệu, hoặc cụm ghép bị bắt oan)' : '',
+         !ra.tgKenhKhop ? 'BẢN CHÉP BẢNG KÊNH PHÁT Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         !ra.tgGioKhop ? 'BẢN CHÉP BA KHUNG GIỜ VÀNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         !ra.tgGoKhop ? 'BẢN CHÉP BẢNG LÝ DO GỠ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+         (ra.tgKenhKhoLa || []).length ? 'KÊNH KHAI MỘT KHỔ KHÔNG CÓ THẬT: ' +
+           ra.tgKenhKhoLa.join(' · ') : '',
+         (ra.tgKenhThieuVi || []).length ? 'kênh thiếu ô: ' + ra.tgKenhThieuVi.join(', ') : '',
+         (ra.tgGoThieuVi || []).length ? 'lý do gỡ thiếu ô: ' + ra.tgGoThieuVi.join(', ') : '',
+         !ra.tgKenhChayThat ? 'PHÉP SOI KHỔ THEO KÊNH KHÔNG CHẠY THẬT' : '',
+         !ra.tgGioChayThat ? 'PHÉP ĐỌC GIỜ VÀNG KHÔNG CHẠY THẬT (hoặc nó đọc GIỜ MÁY CHỦ ' +
+           'chứ không đọc giờ Việt Nam — lệch bảy tiếng thì khung TỐI rơi vào giữa trưa)' : '',
          !ra.tgAdnChanThat ? 'CỔNG ADN KHÔNG CHẶN THẬT (hoặc câu xé ADN VẪN được ' +
            'chỉ đường đi sửa ở một lớp)' : '',
          ra.tgSuaLuat && ra.tgSuaLuat !== 'khongDoan·mayKhongVietCauVa·motCauNhieuLop'

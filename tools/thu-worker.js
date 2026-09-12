@@ -3554,6 +3554,126 @@ bao(raNgoai.than.daGui.indexOf(dungTang.than.tang) >= 0 &&
 }
 
 
+/* ══ KÊNH PHÁT · GIỜ VÀNG · GỠ BÀI — phần 9 của bản đặc tả ══
+
+   Chỗ dễ dựng sai nhất của cả phần này là nút GỠ: dựng sai thì nó tệ
+   hơn không có, vì người bấm tin rằng chuyện đã xong. Gỡ trong sổ
+   KHÔNG gỡ được ở ngoài — tấm đã đăng thì nằm ở máy chủ của nền tảng
+   ấy, ai đã lưu về hoặc chụp màn hình thì vẫn giữ. */
+{
+  const nen9 = {tang:'T1', loaiHinh:'CONG', nhiemVu:'Mời nhà mở chặng bảy ngày',
+    noiDung:'Trang mời nhà mở chặng bảy ngày nhận diện, có phiếu ghi bảy ngày ' +
+            'và cổng nghiệm thu ngày bảy.',
+    nguoiXem:['PHUHUYNH'], dieuNho:'bấm mở chặng 1 ngay tối nay',
+    thoiDiem:'tối sau giờ học', boCuc:'bản để thử cổng đăng'};
+  const de9 = await goi({fn:'deXuatThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    deXuat:nen9});
+
+  /* Chỉ đăng thứ ĐÃ PHÁT HÀNH. Bậc duyệt nghĩa là người duyệt đã gật;
+     phát hành nghĩa là bản cuối đã chốt. Cho đăng ở bậc duyệt thì một
+     bản còn đang sửa chữ đi ra ngoài, và tấm ngoài kia không sửa lại
+     được nữa. */
+  const som = await goi({fn:'dangTamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:de9.than.id, kenh:'DONG_TIN', kho:'DOC',
+    lyDoNgoaiGio:'Thử cổng, đăng bất kỳ giờ nào cũng được.'});
+  bao(de9.than.ok && !som.than.ok && som.than.code === 'CHUAPHATHANH',
+    'CHƯA PHÁT HÀNH THÌ CHƯA ĐĂNG ĐƯỢC LÊN KÊNH',
+    'bậc duyệt là người duyệt đã gật; phát hành là bản cuối đã chốt — tấm ra ' +
+    'ngoài rồi thì không sửa lại được nữa');
+
+  /* Chữ thay ảnh phải có TRƯỚC khi lên bậc phát hành — luật C21. Thiếu
+     nó thì lượt chuyển bậc cuối im lặng không đi, và mọi phép đo bên
+     dưới đỏ vì một lý do chẳng liên quan gì tới chúng. Bản đầu của khối
+     này quên đúng chỗ ấy: tám dòng đỏ, mà chỗ hỏng chỉ có một. */
+  await goi({fn:'ghiChuThayAnh', token:tkSA, u:'superadmin@gita365.vn',
+    id:de9.than.id, moTaTen:'GITA 365 · Chặng bảy ngày nhận diện',
+    moTa:'Tấm mời nhà mở chặng bảy ngày nhận diện. Trên tấm: bộ test đầu vào, ' +
+         'buổi tiếp nhận, phiếu ghi bảy ngày, cổng nghiệm thu ngày bảy.'});
+  for (const den of ['mophong','duyet','hoanThien','phatHanh'])
+    await goi({fn:'chuyenBacThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+      id:de9.than.id, den});
+
+  /* Sai khổ thì nền tảng TỰ CẮT, và nó cắt ở giữa — thứ bị cắt thường
+     là dòng mời ở đáy hoặc dấu thương hiệu ở góc. */
+  const lech = await goi({fn:'dangTamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:de9.than.id, kenh:'TIN_NHANH', kho:'DOC',
+    lyDoNgoaiGio:'Thử cổng, đăng bất kỳ giờ nào cũng được.'});
+  bao(!lech.than.ok && lech.than.code === 'LECHKHO' &&
+      (lech.than.nhan || []).join() === 'DUNG',
+    'KÊNH TIN NHANH KHÔNG NHẬN KHỔ DỌC — sai khổ thì nền tảng tự cắt, và cắt ở GIỮA',
+    'thứ bị cắt thường là dòng mời ở đáy hoặc dấu thương hiệu ở góc — đúng hai ' +
+    'thứ quan trọng nhất, và không báo gì cả');
+
+  /* ── GIỜ VÀNG NÓI RA, KHÔNG CHẶN ──
+     Nhưng đăng ngoài khung phải VIẾT MỘT CÂU. Không bắt viết thì mọi
+     lượt đều đăng ngoài khung, và bảng giờ vàng thành một lời chú giải. */
+  const gioBayGio = (() => {
+    const d = new Date();
+    return ((d.getUTCHours() * 60 + d.getUTCMinutes()) + 420) % 1440;
+  })();
+  const dangTrongKhung = [[330,390],[690,750],[1230,1320]]
+    .some(([a,b]) => gioBayGio >= a && gioBayGio <= b);
+  if (!dangTrongKhung) {
+    const khongCau = await goi({fn:'dangTamThiGiac', token:tkSA,
+      u:'superadmin@gita365.vn', id:de9.than.id, kenh:'DONG_TIN', kho:'DOC'});
+    bao(!khongCau.than.ok && khongCau.than.code === 'NGOAIGIO' &&
+        (khongCau.than.gioVang || []).length === 3,
+      'ĐĂNG NGOÀI KHUNG GIỜ VÀNG THÌ PHẢI VIẾT MỘT CÂU — nhưng KHÔNG bị chặn',
+      'một tấm chúc Tết phải đi đúng giao thừa, một tấm xin lỗi phải đi ngay; ' +
+      'chặn theo giờ là bắt cả Học viện đứng lại vì một con số trung bình');
+  }
+
+  const dang = await goi({fn:'dangTamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:de9.than.id, kenh:'DONG_TIN', kho:'DOC', duongDan:'https://vi.dụ/bài-1',
+    lyDoNgoaiGio:'Nhà đang hỏi ngay trong nhóm, trả lời chậm thì mất nhịp.'});
+  bao(dang.than.ok && dang.than.kenh === 'DONG_TIN',
+    'ĐĂNG ĐƯỢC KHI ĐÃ PHÁT HÀNH, ĐÚNG KHỔ, VÀ CÓ CÂU GIẢI THÍCH NẾU NGOÀI GIỜ',
+    dang.than.trongGioVang ? 'trong khung ' + dang.than.trongGioVang
+      : 'ngoài khung, lý do đã vào sổ');
+
+  /* ── BÁO ĐÃ GỠ NGOÀI TRƯỚC KHI QUYẾT GỠ LÀ GHI NGƯỢC THỨ TỰ ── */
+  const nguoc = await goi({fn:'goTamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:dang.than.id, baoDaGoNgoai:true});
+  bao(!nguoc.than.ok && nguoc.than.code === 'CHUAQUYETGO',
+    'BÁO ĐÃ GỠ Ở NGOÀI TRƯỚC KHI HỌC VIỆN QUYẾT GỠ THÌ BỊ CHẶN',
+    'ghi ngược thứ tự thì sổ đọc ra như thể có người tự ý gỡ');
+
+  const thieuCau = await goi({fn:'goTamThiGiac', token:tkSA,
+    u:'superadmin@gita365.vn', id:dang.than.id, lyDo:'HET_HAN', cau:'hết'});
+  bao(!thieuCau.than.ok && thieuCau.than.code === 'THIEUCAU',
+    'GỠ PHẢI VIẾT MỘT CÂU VÌ SAO',
+    'gỡ không câu nào thì lần sau người khác dựng lại đúng tấm ấy — không có gì ' +
+    'nói cho họ biết vì sao nó đã bị gỡ');
+
+  const go = await goi({fn:'goTamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:dang.than.id, lyDo:'NGUOI_TRONG_ANH',
+    cau:'Người trong ảnh nhắn xin rút lời đồng ý sáng nay.'});
+  bao(go.than.ok && go.than.gapNgay === true &&
+      /KHÔNG gỡ được ở\s*ngoài|KHÔNG gỡ được ở ngoài/.test(go.than.vi) &&
+      /gỡ tấm xuống bằng tay/.test(go.than.conPhaiLam || ''),
+    'GỠ TRONG SỔ NÓI THẲNG RẰNG NÓ KHÔNG GỠ ĐƯỢC Ở NGOÀI, và nói việc CÒN PHẢI LÀM',
+    'một nút "Gỡ" không nói câu ấy là dựng đúng cái làm người bấm tin rằng ' +
+    'chuyện đã xong — mà tấm thì vẫn đang ở ngoài kia');
+
+  /* Sổ nêu HAI phía riêng, cùng luật với đối chiếu ngân hàng: đã quyết
+     gỡ mà chưa ai báo gỡ ngoài là việc còn đang HỞ. */
+  const so9 = await goi({fn:'soDangBai', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(so9.than.ok && (so9.than.hoGo || []).length >= 1 &&
+      so9.than.hoGo[0].gapNgay === true,
+    'SỔ ĐĂNG NÊU RIÊNG CHỖ HỞ: đã QUYẾT gỡ mà chưa ai báo đã gỡ ở kênh ngoài',
+    'gộp hai phía thành một con số "còn tồn" thì một tấm quyết gỡ ba tuần trước ' +
+    'nằm chung rổ với một tấm vừa quyết gỡ năm phút trước');
+
+  const ngoai = await goi({fn:'goTamThiGiac', token:tkSA, u:'superadmin@gita365.vn',
+    id:dang.than.id, baoDaGoNgoai:true});
+  const so9b = await goi({fn:'soDangBai', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(ngoai.than.ok && /LỜI KHAI/.test(ngoai.than.vi) &&
+      !(so9b.than.hoGo || []).some(x => x.id === dang.than.id),
+    'BÁO ĐÃ GỠ NGOÀI THÌ CHỖ HỞ ĐÓNG LẠI — và máy gọi đúng tên nó là LỜI KHAI',
+    'máy không nhìn thấy kênh ngoài nên không tự đánh dấu được; một ô máy tự ' +
+    'đánh dấu mà không đo được là một lời nói dối mang dấu của hệ thống');
+}
+
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&
     soRa.than.ds[0].daGui === raNgoai.than.daGui,

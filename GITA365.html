@@ -2425,7 +2425,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.57',
+  version: '9.99.58',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -6006,6 +6006,8 @@ G.THUOC_CAP_PHEP = [
   'TG_SUA_DAU','TG_SUA_LUAT','TG_ADN',
   /* v9.99.57 — dòng truy nguồn trên tấm */
   'TG_TRUY',
+  /* v9.99.58 — kênh phát · giờ vàng · gỡ bài */
+  'TG_KENH','TG_GIO_VANG','TG_GIO_LUAT','TG_GO_LY_DO','TG_GO_LUAT',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -39878,6 +39880,8 @@ G.VIEWS = G.VIEWS || {};
     {ma: 'dexuat',  ten: 'Đề xuất',    ic: 'plus'},
     /* Sau Đề xuất, vì góp ý chỉ có nghĩa khi đã có một tấm để góp. */
     {ma: 'gopy',    ten: 'Góp ý',      ic: 'quote'},
+    /* Cuối, vì đăng là việc cuối cùng — và ngăn này cũng là chỗ GỠ. */
+    {ma: 'dang',    ten: 'Đăng · Gỡ',  ic: 'share'},
     {ma: 'kho',     ten: 'Kho',        ic: 'vault'},
     {ma: 'hienphap',ten: 'Hiến pháp',  ic: 'book'},
     {ma: 'luat',    ten: 'Luật',       ic: 'shield'}
@@ -40339,6 +40343,106 @@ G.VIEWS = G.VIEWS || {};
       .then(function (d) { G.ktGyRa = d; veLai(); });
   };
 
+  /* ═══════════ NGĂN 6 · ĐĂNG LÊN KÊNH, VÀ GỠ XUỐNG ═══════════
+
+     Chỗ dễ dựng sai nhất của cả màn này là NÚT GỠ. Dựng sai thì nó tệ
+     hơn không có: người bấm tin rằng chuyện đã xong.
+
+     Nên màn hiện HAI trạng thái tách hẳn nhau, và chỗ hở giữa chúng
+     đứng ở trên cùng — không nằm trong một cột của bảng, vì một cột
+     trong bảng thì người ta lướt qua. */
+  function nganDang() {
+    var o = '<div class="card"><b>Đăng lên kênh, và gỡ xuống</b>' +
+      '<p class="sm muted mt">Chỉ đăng thứ đã <b>phát hành</b>. Mỗi kênh một khổ ' +
+      'riêng — đăng sai khổ thì nền tảng tự cắt, và nó cắt ở giữa.</p>' +
+      '<p class="sm muted mt"><b>Gỡ trong sổ KHÔNG gỡ được ở ngoài.</b> Tấm đã ' +
+      'đăng thì nằm ở máy chủ của nền tảng ấy; ai đã lưu về hoặc chụp màn hình ' +
+      'thì vẫn giữ. Sổ chỉ ghi được rằng Học viện đã QUYẾT gỡ.</p></div>';
+
+    o += U.sec('Ba khung giờ vàng', 'máy nói ra khi đăng ngoài khung — và KHÔNG chặn');
+    o += '<div class="row" style="gap:10px;flex-wrap:wrap">' +
+      (G.TG_GIO_VANG || []).map(function (g) {
+        return '<div class="card" style="flex:1 1 220px">' +
+          '<b class="sm">' + h(g.tu + ' – ' + g.den) + '</b>' +
+          '<p class="sm muted mt">' + h(g.vi) + '</p></div>';
+      }).join('') + '</div>';
+
+    o += '<div class="card mt2">' +
+      '<div class="row" style="gap:10px;flex-wrap:wrap">' +
+      '<label class="sm" style="flex:1 1 200px"><b>Mã tấm đã phát hành</b>' +
+      '<input id="ktDgId" class="inp" maxlength="60"></label>' +
+      '<label class="sm" style="flex:1 1 200px"><b>Kênh</b>' +
+      '<select id="ktDgKenh" class="inp">' + (G.TG_KENH || []).map(function (k) {
+        return '<option value="' + h(k.ma) + '">' + h(k.ten) + ' — nhận khổ ' +
+          h((k.kho || []).join(' · ')) + '</option>';
+      }).join('') + '</select></label>' +
+      '<label class="sm" style="flex:1 1 140px"><b>Khổ</b>' +
+      '<select id="ktDgKho" class="inp">' + (G.TG_QUYET_KHO || []).map(function (k) {
+        return '<option value="' + h(k.ma) + '">' + h(k.ten) + '</option>';
+      }).join('') + '</select></label></div>' +
+      '<div class="mt"><label class="sm"><b>Chỗ tấm nằm ở kênh ngoài</b> ' +
+      '<span class="muted">(không bắt buộc, nhưng thiếu thì lúc cần gỡ phải đi tìm)</span>' +
+      '</label><input id="ktDgDuong" class="inp" maxlength="500"></div>' +
+      '<div class="mt"><label class="sm"><b>Nếu đăng ngoài khung giờ vàng: vì sao</b>' +
+      '</label><input id="ktDgVi" class="inp" maxlength="400" ' +
+      'placeholder="ví dụ: nhà đang hỏi ngay trong nhóm, trả lời chậm thì mất nhịp"></div>' +
+      '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn primary" onclick="G.ktDangTam()">Đăng</button>' +
+      '<button class="btn" onclick="G.ktSoDang()">Đọc sổ đăng</button>' +
+      '</div></div>';
+
+    var d = G.ktDgRa;
+    if (d) o += !d.ok
+      ? '<div class="card" style="border-left:3px solid var(--bad);margin-top:14px">' +
+        '<p class="sm">' + h(d.error || '') + '</p></div>'
+      : '<div class="card" style="border-left:3px solid var(--ok);margin-top:14px">' +
+        '<b>' + h(d.id || '') + '</b><p class="sm muted mt">' + h(d.vi || '') + '</p>' +
+        (d.conPhaiLam ? '<p class="sm mt"><b>Còn phải làm:</b> ' +
+          h(d.conPhaiLam) + '</p>' : '') + '</div>';
+
+    var s = G.ktSoDangRa;
+    if (!s || !s.ok) return o;
+
+    /* ── CHỖ HỞ ĐỨNG TRÊN CÙNG ──
+       Đã QUYẾT gỡ mà chưa ai vào kênh gỡ xuống thì tấm vẫn đang ở ngoài
+       kia. Để dòng ấy thành một cột trong bảng là để người ta lướt qua. */
+    if ((s.hoGo || []).length)
+      o += '<div class="card" style="border-left:3px solid var(--bad);margin-top:14px">' +
+        '<b>' + h(String(s.hoGo.length)) + ' lượt đã QUYẾT gỡ mà tấm vẫn đang ở ngoài</b>' +
+        '<p class="sm muted mt">Chưa ai báo đã vào kênh gỡ xuống.</p>' +
+        s.hoGo.map(function (x) {
+          return '<p class="sm mt">' + (x.gapNgay
+            ? '<b style="color:var(--bad)">GẤP</b> · ' : '') +
+            h(x.kenh + ' · ' + x.lyDo + ' · quyết lúc ' +
+              String(x.quyetLuc || '').slice(0, 16).replace('T', ' ')) + '</p>';
+        }).join('') + '</div>';
+
+    o += U.sec('Sổ đăng', s.so + ' lượt · ' + s.soNgoaiGio + ' lượt ngoài khung giờ');
+    o += U.tbl(['Kênh', 'Khổ', 'Lúc', 'Khung giờ', 'Gỡ trong sổ', 'Gỡ ở ngoài'],
+      (s.ds || []).slice(0, 40).map(function (x) {
+        return [h(x.kenh), h(x.kho),
+          '<span class="sm muted">' + h(String(x.luc || '').slice(0, 16).replace('T', ' ')) + '</span>',
+          x.trongGioVang ? h(x.trongGioVang)
+            : '<span class="sm muted">ngoài khung</span>',
+          x.goTrongSo ? '<b>' + h(x.goLyDo || '') + '</b>' : '<span class="muted">—</span>',
+          /* Hai cột riêng, cố ý. Gộp thành một cột "đã gỡ" là dựng đúng
+             cái ô làm người đọc sổ yên tâm nhầm. */
+          x.daGoNgoai ? '✓' : (x.goTrongSo
+            ? '<b style="color:var(--bad)">CHƯA</b>' : '<span class="muted">—</span>')];
+      }));
+    return o;
+  }
+
+  G.ktDangTam = function () {
+    G.goiMayChu('dangTamThiGiac', {
+      id: oGiaTri('ktDgId'), kenh: oGiaTri('ktDgKenh'), kho: oGiaTri('ktDgKho'),
+      duongDan: oGiaTri('ktDgDuong'), lyDoNgoaiGio: oGiaTri('ktDgVi')
+    }).then(function (d) { G.ktDgRa = d; veLai(); });
+  };
+  G.ktSoDang = function () {
+    G.goiMayChu('soDangBai', {}).then(function (d) { G.ktSoDangRa = d; veLai(); });
+  };
+
   /* ═══════════ NGĂN 4 · ĐỀ XUẤT ═══════════ */
   function nganDeXuat() {
     var d = G.ktDuLieu.kho;
@@ -40786,6 +40890,7 @@ G.VIEWS = G.VIEWS || {};
     if (G.ktNgan === 'ytuong')   return o + nganYTuong();
     if (G.ktNgan === 'dexuat')   return o + nganDeXuat();
     if (G.ktNgan === 'gopy')     return o + nganGopY();
+    if (G.ktNgan === 'dang')     return o + nganDang();
     if (G.ktNgan === 'kho')      return o + nganKho();
     if (G.ktNgan === 'hienphap') return o + nganHienPhap();
     return o + nganLuat();

@@ -430,6 +430,51 @@ tới nữa.
   bao**. Lấy lề dọc bằng 55% lề ngang ra 4,0mm — dưới `LE_XEN_MM = 5`,
   và máy xén giấy có sai số.
 
+## Trợ lý hình ảnh — kênh phát · giờ vàng · gỡ bài (9.99.58)
+
+Phần 9 của bản đặc tả. Màn *Kiến trúc sư thị giác → ngăn **Đăng · Gỡ***;
+cửa `dangTamThiGiac` · `goTamThiGiac` · `soDangBai`; bảng
+`dangTamThiGiac` trong `may-chu/csdl.sql`; kho `G.TG_KENH` (6) ·
+`G.TG_GIO_VANG` (3) · `G.TG_GO_LY_DO` (5).
+
+**Chỉ đăng thứ đã PHÁT HÀNH.** Bậc `duyet` là người duyệt đã gật; bậc
+`phatHanh` là bản cuối đã chốt. Cho đăng ở bậc duyệt thì một bản còn
+đang sửa chữ đi ra ngoài, và tấm ngoài kia không sửa lại được nữa.
+
+**Sai khổ thì nền tảng TỰ CẮT — và nó cắt ở GIỮA.** Thứ bị cắt thường
+là dòng mời ở đáy hoặc dấu thương hiệu ở góc, đúng hai thứ quan trọng
+nhất, và không báo gì cả.
+
+**Giờ vàng NÓI RA, không chặn** (05:30–06:30 · 11:30–12:30 ·
+20:30–22:00). Một tấm chúc Tết phải đi đúng giao thừa; một tấm xin lỗi
+phải đi ngay. Nhưng đăng ngoài khung **phải viết một câu** — không bắt
+viết thì mọi lượt đều đăng ngoài khung, và bảng giờ vàng thành một lời
+chú giải. Giờ đọc theo **múi giờ Việt Nam** (`LECH_VN`), không theo giờ
+máy chủ: Workers chạy UTC, và lệch bảy tiếng thì khung *tối* rơi vào
+giữa trưa — im lặng, vì cả ba khung vẫn trả về một cái tên nghe hợp lý.
+
+### Nút GỠ là chỗ dễ dựng sai nhất, và dựng sai thì tệ hơn không có
+
+**Gỡ trong sổ KHÔNG gỡ được ở ngoài.** Tấm đã đăng thì nằm ở máy chủ
+của nền tảng ấy; ai đã lưu về hoặc chụp màn hình thì vẫn giữ. Sổ của
+Học viện chỉ ghi được rằng Học viện **đã QUYẾT** gỡ.
+
+Nên hai ô tách hẳn nhau, ở cả bảng lẫn màn hình:
+
+| Ô | Ai điền | Là gì |
+|---|---|---|
+| `goTrongSo` | máy, ngay khi bấm | Học viện đã quyết gỡ |
+| `daGoNgoai` | người, sau khi vào kênh gỡ | **lời khai**, không phải phép đo |
+
+Máy **không tự đánh dấu** `daGoNgoai` vì máy không nhìn thấy kênh ngoài
+— một ô máy tự đánh dấu mà không đo được là *một lời nói dối mang dấu
+của hệ thống*. `soDangBai` nêu riêng chỗ hở giữa hai ô, cùng luật với
+đối chiếu ngân hàng; gộp thành một con số "còn tồn" thì một tấm quyết
+gỡ ba tuần trước nằm chung rổ với một tấm vừa quyết gỡ năm phút trước.
+
+Gỡ phải chọn lý do **và** viết một câu — gỡ không câu nào thì lần sau
+người khác dựng lại đúng tấm ấy, vì không có gì nói cho họ biết vì sao.
+
 ---
 
 ## Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm
