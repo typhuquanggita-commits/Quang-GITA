@@ -59,6 +59,8 @@ G.THUOC_CAP_PHEP = [
   'TG_LOP5','TG_LOP5_LUAT',
   /* v9.99.56 — góp ý vá vào đúng lớp, và năm thứ không được động tới */
   'TG_SUA_DAU','TG_SUA_LUAT','TG_ADN',
+  /* v9.99.57 — dòng truy nguồn trên tấm */
+  'TG_TRUY',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

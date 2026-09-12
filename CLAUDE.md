@@ -395,6 +395,41 @@ dù nó đúng là chuyện của L2 — chính L4 cũng nói *"ánh nhìn của
 vật"*, nên mọi góp ý về cảm xúc đều bị kéo thêm về L2. L2 dò **hình của
 lời xin** (thiếu · thêm · sai · đổi), không dò danh từ.
 
+## Trợ lý hình ảnh — dòng truy nguồn trên tấm (9.99.57)
+
+Phần 6 của bản đặc tả. Kho `G.TG_TRUY`; vẽ ở `src/ve-thi-giac.js →
+dongTruyNguon()`, chèn **ở đúng một chỗ** — ngay sau `b.ve()` trong
+`G.veThiGiac`, nên cả mười sáu bộ vẽ đều có, và bộ vẽ thứ mười bảy viết
+sau cũng tự có.
+
+**Dấu ở góc nói tấm này CỦA AI. Dòng truy nguồn nói tấm này LÀ TẤM
+NÀO.** Một tấm rời khỏi hệ thì đi một mình; lúc nó hiện lên ở chỗ không
+ai ngờ, câu hỏi đầu tiên là "ra khỏi hệ lúc nào, qua cửa nào" — mà kho
+có hàng trăm tấm cùng loại hình, cùng bảng màu, nhìn y hệt nhau.
+
+**Chỉ mã, không tên người.** Tấm đi tới tay khách. Đặt tên người xuất
+lên tấm là đưa một nhân sự ra trước mặt người lạ, để đổi lấy thứ nhật ký
+`TG_XUAT` đã giữ rồi. Mã dẫn về sổ; sổ mới nói tên.
+
+**Cố ý KHÔNG làm dấu chìm giấu trong bit thấp của điểm ảnh**, dù bản đặc
+tả đề nghị. Tấm dựng bằng SVG rồi kết thành PNG, mà mọi nền tảng đăng
+bài đều nén lại một lần nữa — một lần nén là bit thấp bay sạch, người
+chụp màn hình cũng xoá nó. Dựng một lớp bảo vệ không giữ được là **tệ
+hơn không dựng**: người ta tin tấm đã được đánh dấu rồi thôi không nghĩ
+tới nữa.
+
+### Hai con số phép đo bản in đã bắt ngay
+
+- **Cỡ gốc phải đúng `DAU_CHU_NHO` (10,5), không được nhỏ hơn.**
+  `tiDau()` nâng cỡ sao cho một chữ 10,5 điểm ảnh đạt đúng 2,1mm khi
+  in. Đặt 8,5 cho "nhạt đi" thì ra `8,5/10,5 × 2,1 = 1,70mm` — dưới
+  ngưỡng C22. **Muốn nhạt thì hạ độ đục, đừng hạ cỡ chữ:** độ đục không
+  đổi theo khổ in, cỡ chữ thì đổi.
+- **Lề dọc không được nhỏ hơn lề ngang, và phải cộng phần đuôi chữ.**
+  `y` là đường chân, còn hộp bao chạy quá nó; phép đo bản in đo **hộp
+  bao**. Lấy lề dọc bằng 55% lề ngang ra 4,0mm — dưới `LE_XEN_MM = 5`,
+  và máy xén giấy có sai số.
+
 ---
 
 ## Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm

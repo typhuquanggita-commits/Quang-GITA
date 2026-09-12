@@ -90,6 +90,9 @@ var G = window.G || {}; window.G = G;
      này thì không phải "chữ nhỏ", là chữ không ai đọc — và một tấm có
      phần không ai đọc thì phần ấy đáng lẽ không nên có. */
   var CHU_NHO_NHAT_MM = 2.1;
+  /* Máy xén giấy có sai số. Chữ đứng gần mép hơn ngần này thì một lô in
+     ra có tấm cụt mất chữ và tấm thì không — và lô ấy đã in xong rồi. */
+  var LE_XEN_MM = 5;
 
   /* ── MÀU: ĐỌC TỪ BIẾN CSS ĐANG CHẠY ──
      Trả về mã thật (rgb) chứ không trả về "var(--gita)": chuỗi var()
@@ -1134,6 +1137,61 @@ var G = window.G || {}; window.G = G;
       '<text class="gita-dau" x="26" y="15" font-family="' + h(CHU_THAN) + '" font-size="10.5" ' +
         'font-weight="600" fill="' + h(k.sau ? k.muc2 : k.muc3) + '" letter-spacing="1.1">' +
         'HỆ SINH THÁI GIA ĐÌNH THỊNH VƯỢNG</text></g>';
+  }
+
+  /* ═══════════ DÒNG TRUY NGUỒN ═══════════
+
+     Dấu ở góc nói tấm này CỦA AI. Dòng này nói tấm này LÀ TẤM NÀO.
+
+     Một tấm rời khỏi hệ rồi thì nó đi một mình. Lúc nó hiện lên ở một
+     chỗ không ai ngờ, câu hỏi đầu tiên luôn là "tấm này ra khỏi hệ lúc
+     nào, qua cửa nào" — mà kho có hàng trăm tấm cùng loại hình, cùng
+     bảng màu, nhìn thì y hệt nhau.
+
+     ── CHỈ MÃ, KHÔNG TÊN NGƯỜI ──
+     Tấm đi tới tay khách. Đặt tên người xuất lên tấm là đưa một nhân sự
+     ra trước mặt người lạ, để đổi lấy thứ mà nhật ký TG_XUAT đã giữ rồi.
+     Mã dẫn về sổ; sổ mới nói tên. Ai đọc được sổ thì mới biết tên, và
+     đó đúng là người cần biết.
+
+     ── CỠ CHỮ ĐI THEO tiDau() ──
+     Cùng phép nâng cỡ với dấu thương hiệu, nên trên khổ in nó vẫn đạt
+     2,1mm của luật C22. Đặt cỡ cứng thì trên tấm A4 dòng này nhỏ hơn
+     ngưỡng đọc được — và một dòng truy nguồn đọc không ra thì nó không
+     truy được nguồn, nó chỉ là một vệt bẩn ở mép tấm. */
+  function dongTruyNguon(x, kg, k) {
+    var ti = tiDau(kg);
+    /* ── CỠ GỐC PHẢI ĐÚNG BẰNG DAU_CHU_NHO, KHÔNG ĐƯỢC NHỎ HƠN ──
+       tiDau() nâng cỡ sao cho một chữ DAU_CHU_NHO điểm ảnh đạt đúng
+       2,1mm khi in. Bản đầu tôi đặt cỡ gốc 8,5 cho dòng này nhạt đi —
+       và phép đo bản in bắt ngay: 8,5/10,5 × 2,1 = 1,70mm, dưới ngưỡng
+       C22. Muốn nhạt thì hạ ĐỘ ĐỤC, đừng hạ cỡ chữ: độ đục không đổi
+       theo khổ in, còn cỡ chữ thì đổi. */
+    var co = DAU_CHU_NHO * ti;
+    /* Ngày thôi, không giờ phút. Giờ phút trên tấm là một mức chi tiết
+       không giúp gì cho việc lần về sổ — sổ có sẵn giờ — mà lại nói
+       cho người ngoài biết nhịp làm việc của Học viện. */
+    var ngay = new Date().toISOString().slice(0, 10);
+    var dong = String(x.id || '') +
+      (Number(x.ban) > 1 ? ' · b' + Number(x.ban) : '') + ' · ' + ngay;
+    /* ── LỀ PHẢI ĐỦ CHO MÁY XÉN GIẤY ──
+       Khổ in có sai số xén; luật của kho đòi chữ cách mép ít nhất 5mm.
+       Bản đầu tôi lấy lề dọc bằng 55% lề ngang cho dòng này nằm sát
+       đáy — ra 4,0mm, và phép đo bản in bắt. Nay lề dọc KHÔNG nhỏ hơn
+       lề ngang, và cả hai đều bị nâng lên tối thiểu 5mm khi in. */
+    var le = Math.round(kg.w * 0.028);
+    /* Cộng thêm phần ĐUÔI CHỮ tụt xuống dưới đường chân: y là đường chân,
+       còn hộp bao thì chạy quá nó. Phép đo bản in đo HỘP BAO, nên tính lề
+       theo đường chân là tính thiếu đúng phần đuôi. */
+    if (kg.in) le = Math.max(le, Math.ceil(LE_XEN_MM * kg.dpi / MM_MOI_TAC + co * 0.3));
+    /* Mực nhạt nhất của bảng đang dùng, không phải một mã tự đặt: dòng
+       này phải đọc được nhưng không được tranh chỗ với nội dung. */
+    var muc = k.muc3 || k.muc2 || k.muc;
+    return '<text class="gita-truy" x="' + (kg.w - le) + '" y="' +
+      (kg.h - le) + '" text-anchor="end" ' +
+      'font-family="' + h(CHU_THAN) + '" font-size="' + co.toFixed(2) + '" ' +
+      'font-weight="500" fill="' + h(muc) + '" opacity="0.62" ' +
+      'letter-spacing="0.4">' + h(dong) + '</text>';
   }
 
   function khung(kg, k, ruot, defs) {
@@ -4562,6 +4620,20 @@ var G = window.G || {}; window.G = G;
     try { r = b.ve(x, kg, che); }
     catch (e) { return {ok: false, error: 'Bộ vẽ hỏng giữa chừng: ' + e.message}; }
     if (!r.ok) return r;
+
+    /* ── DÒNG TRUY NGUỒN, CHÈN Ở ĐÚNG MỘT CHỖ ──
+       Mười sáu bộ vẽ đều đi qua đây. Chèn ở từng bộ vẽ là mười sáu chỗ
+       phải nhớ, và bộ vẽ thứ mười bảy viết sau sẽ quên — quên mà không
+       báo gì, vì tấm vẫn vẽ ra bình thường. Một tấm không mang dòng truy
+       nguồn thì lúc cần lần về sổ mới biết là thiếu, và lúc ấy đã muộn.
+
+       Chèn vào TRƯỚC </svg> chứ không dựng lại khung: dựng lại khung thì
+       phải hiểu ruột của cả mười sáu bộ vẽ. */
+    if (r.svg && r.svg.lastIndexOf('</svg>') >= 0) {
+      var kTruy = bang(che);
+      r.svg = r.svg.slice(0, r.svg.lastIndexOf('</svg>')) +
+        dongTruyNguon(x, kg, kTruy) + '</svg>';
+    }
 
     /* ══ SOÁT Ý — TẤM VẼ RA CÓ NÓI ĐỦ THỨ NỘI DUNG NÓI KHÔNG ══
 
