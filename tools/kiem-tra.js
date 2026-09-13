@@ -13209,6 +13209,202 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n83 · VẬN HÀNH & CHĂM SÓC — ĐÈN ĐỎ PHẢI GỌI, VÀ BẢNG KHÔNG CÓ CỘT ĐÈN');
+  /* ══════════════════ 83. VẬN HÀNH & CHĂM SÓC ══════════════════
+
+     Phần VI. Hai phép đo nặng nhất ở đây đều là phép đo về thứ KHÔNG
+     ĐƯỢC TỒN TẠI — lối đo thứ ba trong bộ dùng nó, sau LR1 (mục 79)
+     và ô tự khai (mục 81):
+
+       1. bảng hoSoSongSinh KHÔNG có cột nào cho bốn trường máy tính
+          và năm trường đã sống ở hệ khác;
+       2. sổ dấu vết KHÔNG có đường nào ra Google Sheets.
+
+     Một cột `den` mà có người gõ được thì sớm muộn có người gõ, và
+     lúc ấy một phép đo biến thành một lời khai — mà nhìn thì vẫn y
+     hệt. Tệ hơn là cột không ai gõ: nó cũ đi lặng lẽ, khai XANH cho
+     một nhà đã im lặng hai mươi ngày, và cả quy trình gọi điện trong
+     hai mươi tư giờ đi theo nó. */
+  {
+    const mVH = await import('../may-chu/van-hanh-cham-soc.js');
+    const fsVH = await import('fs/promises');
+    const sql = await fsVH.readFile('may-chu/csdl.sql', 'utf8');
+
+    const khoVH = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        truong: (G.VH_TRUONG23 || []).map(x => x.ma),
+        mayTinh: (G.VH_TRUONG23 || []).filter(x => x.nguon === 'mayTinh').map(x => x.ma),
+        troSang: (G.VH_TRUONG23 || []).filter(x => x.nguon === 'troSang').map(x => x.ma),
+        nguoiKhai: (G.VH_TRUONG23 || []).filter(x => x.nguon === 'nguoiKhai').map(x => x.ma),
+        /* Mỗi trường khai ĐÚNG MỘT nguồn. Một trường không khai nguồn
+           thì không ai biết con số trong nó do máy tính hay do người
+           gõ, và hai thứ ấy khác hẳn nhau. */
+        thieuNguon: (G.VH_TRUONG23 || []).filter(x =>
+          ['nguoiKhai', 'mayTinh', 'troSang'].indexOf(x.nguon) < 0).map(x => x.ma),
+        /* Trường troSang phải nói TRỎ VÀO ĐÂU; trường mayTinh phải nói
+           TÍNH THẾ NÀO. Không nói thì nó là một lời hứa. */
+        troThieuDich: (G.VH_TRUONG23 || []).filter(x =>
+          x.nguon === 'troSang' && !x.tro).map(x => x.ma),
+        mayThieuCach: (G.VH_TRUONG23 || []).filter(x =>
+          x.nguon === 'mayTinh' && !x.tinh).map(x => x.ma),
+        den: (G.VH_DEN3 || []).map(x => x.den),
+        denThieu: (G.VH_DEN3 || []).filter(x => !x.dauHieu || !x.lam || !x.aiLam)
+          .map(x => x.den),
+        /* Đúng MỘT đèn bắt buộc gọi. Hai đèn cùng bắt buộc thì cái gấp
+           mất nghĩa; không đèn nào bắt buộc thì cả bảng là ba lời nhắc. */
+        soGoi: (G.VH_DEN3 || []).filter(x => x.batBuocGoi).length,
+        maGoi: (G.VH_DEN3 || []).filter(x => x.batBuocGoi).map(x => x.den).join(''),
+        aiLamDo: ((G.VH_DEN3 || []).find(x => x.den === 'DO') || {}).aiLam,
+        camDo: !!((G.VH_DEN3 || []).find(x => x.den === 'DO') || {}).cam,
+        nhip: (G.VH_NHIP || []).map(x => [x.tu, x.den, x.soLan, x.don_vi]),
+        tuThan: (G.VH_NHIP || []).filter(x => x.tuThan).map(x => [x.tu, x.den]),
+        tuThanCoCam: (G.VH_NHIP || []).filter(x => x.tuThan && x.cam).length,
+        so5: (G.VH_SO5 || []).map(x => x.cot),
+        soBatBuoc: (G.VH_SO5 || []).filter(x => x.batBuoc).map(x => x.cot)
+      };
+    });
+
+    const v = {};
+    v.truongKhop = JSON.stringify(khoVH.truong) === JSON.stringify(mVH.TRUONG23 || []);
+    v.mayKhop = JSON.stringify(khoVH.mayTinh) === JSON.stringify(mVH.TRUONG_MAY_TINH || []);
+    v.troKhop = JSON.stringify(khoVH.troSang) === JSON.stringify(mVH.TRUONG_TRO_SANG || []);
+    v.denKhop = JSON.stringify(khoVH.den) === JSON.stringify(mVH.DEN3 || []);
+    v.so5Khop = JSON.stringify(khoVH.so5) === JSON.stringify(mVH.SO5 || []);
+    v.batBuocKhop = JSON.stringify(khoVH.soBatBuoc) === JSON.stringify(mVH.SO_BAT_BUOC || []);
+    v.nhipKhop = JSON.stringify(khoVH.nhip) === JSON.stringify(mVH.NHIP || []);
+    v.tuThanKhop = JSON.stringify(khoVH.tuThan) === JSON.stringify([mVH.TU_THAN]);
+    v.soTruong = khoVH.truong.length;
+    v.soNguoiKhai = khoVH.nguoiKhai.length;
+    v.thieuNguon = khoVH.thieuNguon;
+    v.troThieuDich = khoVH.troThieuDich;
+    v.mayThieuCach = khoVH.mayThieuCach;
+    v.denThieu = khoVH.denThieu;
+    v.soGoi = khoVH.soGoi;
+    v.maGoi = khoVH.maGoi;
+    v.aiLamDo = khoVH.aiLamDo;
+    v.camDo = khoVH.camDo;
+    v.tuThanCoCam = khoVH.tuThanCoCam;
+
+    /* ── PHÉP ĐO VỀ THỨ KHÔNG ĐƯỢC TỒN TẠI · 1 ──
+       Bảng hoSoSongSinh không được có cột nào cho trường máy tính hay
+       trường đã sống ở hệ khác. Đọc THẲNG csdl.sql, không tin lời
+       khai của mô-đun. */
+    const khoiBang = (sql.match(
+      /CREATE TABLE IF NOT EXISTS hoSoSongSinh \(([\s\S]*?)\n\);/) || [])[1] || '';
+    const cotThat = khoiBang.split('\n')
+      .map(d => (d.trim().match(/^([A-Za-z_][A-Za-z0-9_]*)\s+(TEXT|INTEGER|REAL)/) || [])[1])
+      .filter(Boolean);
+    v.cotThat = cotThat;
+    v.cotCamLot = (mVH.COT_CAM || []).filter(c => cotThat.indexOf(c) >= 0);
+    v.cotNguoiKhaiDu = (mVH.COT_NGUOI_KHAI || [])
+      .every(c => cotThat.indexOf(c) >= 0);
+
+    /* ── PHÉP ĐO VỀ THỨ KHÔNG ĐƯỢC TỒN TẠI · 2 ──
+       Không cửa nào của phân hệ này đẩy sổ ra Google Sheets, và mô-đun
+       không mang một chữ nào về Sheets ngoài câu giải thích vì sao
+       không dùng. */
+    const maVH = await fsVH.readFile('may-chu/van-hanh-cham-soc.js', 'utf8');
+    v.coDuongSheets = /sheets\.googleapis|docs\.google\.com|spreadsheets|SHEET_ID/i.test(maVH);
+    v.goiCongAnDanh = /BoNao\.soatRaNgoai\(/.test(maVH);
+
+    /* ══ GỌI THẲNG ══ */
+    const dXanh = mVH.tinhDen({ imLang: 2, ngayThu: 30 });
+    const dVangIm = mVH.tinhDen({ imLang: 9, ngayThu: 30 });
+    const dVangTT = mVH.tinhDen({ imLang: 1, ngayThu: 10 });
+    const dDoIm = mVH.tinhDen({ imLang: 20, ngayThu: 60 });
+    const dDoNan = mVH.tinhDen({ imLang: 1, ngayThu: 30, coLoiNan: true });
+    v.denChayThat = dXanh.den === 'XANH' && dVangIm.den === 'VANG' &&
+      dVangTT.den === 'VANG' && dVangTT.tuThan === true &&
+      dDoIm.den === 'DO' && dDoIm.batBuocGoi === true &&
+      /* Một lời nản chí bật ĐỎ NGAY, dù nhà mới chạm hôm qua. Chờ đủ
+         mười lăm ngày im lặng mới gọi thì gọi lúc họ đã đi rồi. */
+      dDoNan.den === 'DO' &&
+      /* Biên 14/15: đúng 14 ngày còn VÀNG, 15 ngày thì ĐỎ. */
+      mVH.tinhDen({ imLang: 14, ngayThu: 60 }).den === 'VANG' &&
+      mVH.tinhDen({ imLang: 15, ngayThu: 60 }).den === 'DO';
+
+    const nb = mVH.soatNhacBai('Chị nhắc con làm bài tập tối nay nhé');
+    const nbSach = mVH.soatNhacBai('Chị ơi hôm nay bé có vui không ạ');
+    /* "bài hát" và "bài viết" KHÔNG được tính là nhắc bài — chặn ở chỗ
+       CHỌN DẤU HIỆU, cụm nhiều âm tiết, như bảng cụm tuyệt đối ở mục 82. */
+    const nbOan = mVH.soatNhacBai('Nhà mình cùng nghe một bài hát trước khi ngủ');
+    v.nhacBaiChayThat = !nb.sach && nbSach.sach === true && nbOan.sach === true;
+
+    v.nhipChayThat = mVH.nhipCuaNgay(10).tuThan === true &&
+      mVH.nhipCuaNgay(10).soLan === 2 &&
+      mVH.nhipCuaNgay(3).tuThan === false &&
+      mVH.nhipCuaNgay(200).donVi === 'tuan' &&
+      mVH.nhipCuaNgay(400).ngoaiNhip === true &&
+      mVH.ngayThu('2026-01-01T00:00:00Z', '2026-01-01T10:00:00Z') === 1;
+
+    const vhDat =
+      v.truongKhop && v.mayKhop && v.troKhop && v.denKhop && v.so5Khop &&
+      v.batBuocKhop && v.nhipKhop && v.tuThanKhop &&
+      v.soTruong === 23 && !v.thieuNguon.length && !v.troThieuDich.length &&
+      !v.mayThieuCach.length && !v.denThieu.length &&
+      v.soGoi === 1 && v.maGoi === 'DO' && v.aiLamDo === 'nguoiThat' && v.camDo &&
+      v.tuThanCoCam === 1 &&
+      !v.cotCamLot.length && v.cotNguoiKhaiDu &&
+      !v.coDuongSheets && v.goiCongAnDanh &&
+      v.denChayThat && v.nhacBaiChayThat && v.nhipChayThat;
+
+    bao(vhDat,
+      'PHÂN HỆ 4 · VẬN HÀNH: ĐÈN BA MÀU TÍNH LÚC ĐỌC, VÀ BẢNG KHÔNG CÓ CỘT ĐÈN. Một cột `den` mà có người gõ được thì sớm muộn có người gõ, và lúc ấy một phép đo biến thành một lời khai — mà nhìn thì vẫn y hệt. Tệ hơn nữa là cột không ai gõ: nó cũ đi lặng lẽ, khai XANH cho một nhà đã im lặng hai mươi ngày, và cả quy trình gọi điện trong hai mươi tư giờ đi theo nó. Nên phép đo đọc THẲNG csdl.sql và đòi bảng hoSoSongSinh KHÔNG có cột nào cho bốn trường máy tính lẫn năm trường đã sống ở hệ khác — phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI, lối đo thứ ba trong bộ dùng nó sau LR1 ở mục 79 và ô tự khai ở mục 81. Cái răng thứ hai là đèn Đỏ: ĐÚNG MỘT đèn bắt buộc gọi, người làm là NGƯỜI THẬT, và cuộc gọi ấy cấm bán gì — một cái đèn đỏ đóng lại được bằng tin nhắn thì nó không phải đèn đỏ, vì nhắn tin rẻ và nhanh và đóng được việc trong sổ, nên nếu cho phép thì mọi đèn đỏ đều đóng bằng tin nhắn và bảng ba màu còn đúng hai màu. Và cái răng thứ ba là chỗ CỐ Ý KHÔNG theo bản đặc tả: 6.4 đề nghị lưu sổ dấu vết trên Google Sheets, mà mỗi dòng sổ mang tên gia đình, tên con và nội dung một cuộc trò chuyện riêng — đẩy lên một dịch vụ đặt ngoài lãnh thổ là xử lý dữ liệu xuyên biên giới theo Luật số 91/2025/QH15 và phạm thẳng Điều 13 của chính Hiến pháp Bộ não, nên phép đo đòi mô-đun KHÔNG mang một đường nào ra Sheets và cửa đi ra phải gọi đúng cổng ẩn danh của Bộ não chứ không dựng bộ dò thứ hai',
+      vhDat
+        ? v.soTruong + ' trường (' + v.soNguoiKhai + ' người khai · ' +
+          khoVH.mayTinh.length + ' máy tính · ' + khoVH.troSang.length +
+          ' trỏ sang) · bảng có ' + v.cotThat.length +
+          ' cột, KHÔNG cột nào cho trường máy tính hay trỏ sang · đúng một đèn bắt ' +
+          'buộc gọi (' + v.maGoi + ', người thật, cấm bán) · vùng tử thần ngày ' +
+          khoVH.tuThan[0].join('–') + ' có ô CẤM · sổ ' + khoVH.so5.length +
+          ' cột, ' + khoVH.soBatBuoc.length + ' cột bắt buộc · KHÔNG đường nào ra ' +
+          'Google Sheets, cửa đi ra gọi đúng cổng ẩn danh của Bộ não'
+        : [!v.truongKhop ? 'BẢN CHÉP 23 TRƯỜNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.mayKhop ? 'DANH SÁCH TRƯỜNG MÁY TÍNH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.troKhop ? 'DANH SÁCH TRƯỜNG TRỎ SANG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.denKhop ? 'BẢN CHÉP BA ĐÈN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nhipKhop ? 'BẢN CHÉP NHỊP 365 NGÀY Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.tuThanKhop ? 'MỐC VÙNG TỬ THẦN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.so5Khop || !v.batBuocKhop ? 'BẢN CHÉP SỔ NĂM CỘT Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.soTruong !== 23 ? 'CÓ ' + v.soTruong + ' TRƯỜNG, phải là 23 — tiêu đề ' +
+             'bản đặc tả ghi 20 nhưng nó liệt 12 + 8 + 3' : '',
+           v.thieuNguon.length ? 'TRƯỜNG KHÔNG KHAI NGUỒN: ' + v.thieuNguon.join(' · ') +
+             ' — không khai thì không ai biết con số trong nó do máy tính hay do ' +
+             'người gõ, và hai thứ ấy khác hẳn nhau' : '',
+           v.troThieuDich.length ? 'trường trỏ sang mà không nói TRỎ VÀO ĐÂU: ' +
+             v.troThieuDich.join(' · ') : '',
+           v.mayThieuCach.length ? 'trường máy tính mà không nói TÍNH THẾ NÀO: ' +
+             v.mayThieuCach.join(' · ') : '',
+           v.denThieu.length ? 'đèn thiếu dấu hiệu, việc phải làm hoặc ai làm: ' +
+             v.denThieu.join(' · ') : '',
+           v.soGoi !== 1 ? 'CÓ ' + v.soGoi + ' ĐÈN BẮT BUỘC GỌI, phải đúng một — ' +
+             'hai đèn cùng bắt buộc thì cái gấp mất nghĩa; không đèn nào bắt buộc ' +
+             'thì cả bảng là ba lời nhắc' : '',
+           v.maGoi !== 'DO' ? 'ĐÈN BẮT BUỘC GỌI LÀ ' + v.maGoi + ', phải là DO' : '',
+           v.aiLamDo !== 'nguoiThat' ? 'ĐÈN ĐỎ KHÔNG KHAI NGƯỜI THẬT LÀM — thứ đang ' +
+             'thiếu ở một nhà im lặng mười lăm ngày là một NGƯỜI' : '',
+           !v.camDo ? 'ĐÈN ĐỎ KHÔNG KHAI Ô CẤM — cuộc gọi ấy không được bán gì' : '',
+           v.tuThanCoCam !== 1 ? 'VÙNG TỬ THẦN KHÔNG KHAI Ô CẤM NHẮC BÀI' : '',
+           v.cotCamLot.length ? 'BẢNG hoSoSongSinh CÓ CỘT KHÔNG ĐƯỢC CÓ: ' +
+             v.cotCamLot.join(' · ') + '. Một cột như thế hoặc bị gõ đè — và một ' +
+             'phép đo biến thành lời khai — hoặc không ai gõ và nó cũ đi lặng lẽ, ' +
+             'khai XANH cho một nhà đã im lặng hai mươi ngày' : '',
+           !v.cotNguoiKhaiDu ? 'BẢNG THIẾU CỘT CHO MỘT TRƯỜNG NGƯỜI KHAI' : '',
+           v.coDuongSheets ? 'CÓ ĐƯỜNG ĐẨY SỔ RA GOOGLE SHEETS — mỗi dòng mang tên ' +
+             'gia đình, tên con và nội dung một cuộc trò chuyện riêng; đó là xử lý ' +
+             'dữ liệu xuyên biên giới theo Luật số 91/2025/QH15' : '',
+           !v.goiCongAnDanh ? 'CỬA ĐI RA KHÔNG GỌI CỔNG ẨN DANH CỦA BỘ NÃO — đang ' +
+             'dựng bộ dò thứ hai, và bộ thứ hai cũ đi lặng lẽ' : '',
+           !v.denChayThat ? 'PHÉP TÍNH ĐÈN KHÔNG CHẠY THẬT (hoặc biên 14/15 ngày ' +
+             'trôi, hoặc một lời nản chí không bật ĐỎ ngay)' : '',
+           !v.nhacBaiChayThat ? 'BỘ DÒ NHẮC BÀI KHÔNG CHẠY THẬT (hoặc nó bắt oan ' +
+             '"bài hát")' : '',
+           !v.nhipChayThat ? 'PHÉP CHIA NHỊP 365 NGÀY KHÔNG CHẠY THẬT' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

@@ -4223,6 +4223,143 @@ let idTam9 = null, idDang9 = null;
     'nói thiếu cái gì thì người viết đoán, và họ đoán nhánh dễ làm nhất');
 }
 
+/* ══════════════ PHÂN HỆ 4 · VẬN HÀNH & CHĂM SÓC ══════════════
+
+   Cả phân hệ có giá trị ở đúng một dòng của bảng đèn: đèn Đỏ, NGƯỜI
+   THẬT, GỌI ĐIỆN. Một cái đèn đỏ đóng lại được bằng tin nhắn thì nó
+   không phải đèn đỏ — nhắn tin rẻ, nhanh, và đóng được việc trong
+   sổ, nên nếu cho phép thì mọi đèn đỏ đều đóng bằng tin nhắn và bảng
+   ba màu còn đúng hai màu. */
+{
+  const mVH = await import('../may-chu/van-hanh-cham-soc.js');
+  const NGAY = n => new Date(Date.now() - n*86400000).toISOString();
+
+  /* ── CỔNG GHI: Ô MÁY TÍNH VÀ Ô TRỎ SANG BỊ CHẶN ── */
+  const oTuTinh = await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-VH1', ngayThamGia:NGAY(3), tenCon:'Bi', den:'XANH', kpi:88});
+  bao(!oTuTinh.than.ok && oTuTinh.than.code === 'OTUTINH' &&
+      oTuTinh.than.oLa.join() === 'den,kpi',
+    'GHI ĐÈ MỘT TRƯỜNG MÁY TÍNH BỊ CHẶN — hồ sơ song sinh không giữ cột nào cho chúng',
+    'bắt ' + oTuTinh.than.oLa.join(' · ') + ' — ghi đè một trường máy tính là biến ' +
+    'một phép đo thành một lời khai, mà nhìn thì vẫn y hệt');
+
+  /* Thiếu ngày tham gia thì cả nhịp 365 ngày không sinh ra được. */
+  const khongMoc = await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-VH0', tenCon:'Bi'});
+  bao(!khongMoc.than.ok && khongMoc.than.code === 'THIEUTHAMGIA',
+    'KHÔNG CÓ NGÀY THAM GIA THÌ KHÔNG LẬP ĐƯỢC HỒ SƠ — cả nhịp 365 ngày sinh từ mốc ấy',
+    'không mốc thì nhà nào người phụ trách nhớ mới được chạm, và nhà im lặng lâu ' +
+    'nhất đúng là nhà dễ bị quên nhất');
+
+  /* ── BA NHÀ, BA ĐÈN ── */
+  /* Nhà XANH phải là nhà MỚI tham gia. Bài thử đầu cho nhà này tham
+     gia 40 ngày trước rồi chờ nó xanh — và nó ra ĐỎ, đúng như phải
+     thế: một nhà tham gia bốn mươi ngày mà CHƯA AI CHẠM lần nào thì
+     im lặng bốn mươi ngày. Chỗ ấy đáng một phép đo riêng, ngay dưới. */
+  await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-XANH', ngayThamGia:NGAY(2), tenCon:'An', noiLo:'Con ngại nói'});
+  await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-TUTHAN', ngayThamGia:NGAY(9), tenCon:'Bo'});
+  await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-DO', ngayThamGia:NGAY(60), tenCon:'Cu'});
+
+  /* Nhà tham gia 40 ngày mà chưa ai chạm: tự nó là ĐỎ. Không có
+     dòng nào trong sổ thì số ngày im lặng ĐÚNG BẰNG số ngày đã tham
+     gia — đếm từ lúc quen nhau, không đếm từ lúc chạm lần đầu. Nhà
+     bị bỏ quên ngay từ đầu là nhà dễ bị bỏ quên nhất, nên nó phải
+     lên đỏ chứ không được nằm im ở xanh vì "chưa có dữ liệu". */
+  await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-QUEN', ngayThamGia:NGAY(40), tenCon:'Bin'});
+  const boQuen = await goi({fn:'docSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-QUEN'});
+  bao(boQuen.than.den.den === 'DO' && boQuen.than.mayTinh.soNgayImLang >= 40,
+    'NHÀ CHƯA AI CHẠM LẦN NÀO TỰ LÊN ĐÈN ĐỎ — im lặng đếm từ lúc quen nhau, không từ lúc chạm lần đầu',
+    boQuen.than.mayTinh.soNgayImLang + ' ngày im lặng · để nó nằm im ở xanh vì ' +
+    '"chưa có dữ liệu" thì nhà bị bỏ quên ngay từ đầu là nhà không ai đi tìm');
+
+  const CC = {canCu:'đèn Xanh, nhịp ngày 3', aiDuyet:'chị Hoa'};
+  await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-XANH', kieu:'wow', noiDung:'Khen An hôm nay tự dọn bàn', ...CC});
+
+  const xanh = await goi({fn:'docSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-XANH'});
+  const tuThan = await goi({fn:'docSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-TUTHAN'});
+  const do1 = await goi({fn:'docSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-DO'});
+  bao(xanh.than.den.den === 'XANH' && tuThan.than.den.den === 'VANG' &&
+      tuThan.than.den.tuThan === true && do1.than.den.den === 'DO' &&
+      do1.than.den.batBuocGoi === true &&
+      xanh.than.mayTinh.soWow === 1,
+    'ĐÈN TÍNH LÚC ĐỌC, KHÔNG GIỮ CỘT — ba nhà ra ba màu, và vùng tử thần tự lên VÀNG dù chưa im lặng ngày nào',
+    'XANH · VÀNG (ngày ' + tuThan.than.ngayThu + ', tử thần) · ĐỎ — một cột đèn cũ ' +
+    'khai XANH cho một nhà đã im lặng hai mươi ngày, và cả quy trình gọi điện ' +
+    'trong hai mươi tư giờ đi theo nó');
+
+  /* ── CỔNG 1 · HAI CỘT LÀM CHO CẢ SỔ CÓ NGHĨA ── */
+  const thieuCanCu = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-XANH', kieu:'nhan', noiDung:'Chào chị', aiDuyet:'chị Hoa'});
+  bao(!thieuCanCu.than.ok && thieuCanCu.than.code === 'THIEUCOT' &&
+      thieuCanCu.than.thieu.join() === 'canCu',
+    'SỔ DẤU VẾT THIẾU CĂN CỨ THÌ KHÔNG GHI ĐƯỢC',
+    'một lượt chạm không có căn cứ là một tin nhắn, và một tin nhắn không chứng ' +
+    'minh được gì lúc có tranh chấp');
+
+  /* ── CỔNG 2 · VÙNG TỬ THẦN KHÔNG NHẮC BÀI ── */
+  const nhacBai = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-TUTHAN', kieu:'nhan', noiDung:'Chị ơi nhắc Bo làm bài tập tối nay nhé',
+    canCu:'đèn Vàng, vùng tử thần', aiDuyet:'chị Hoa'});
+  const hoiTham = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-TUTHAN', kieu:'nhan', noiDung:'Chị ơi hôm nay Bo có vui không ạ',
+    canCu:'đèn Vàng, vùng tử thần', aiDuyet:'chị Hoa'});
+  bao(!nhacBai.than.ok && nhacBai.than.code === 'NHACBAI' &&
+      nhacBai.than.tuThan === true && hoiTham.than.ok === true,
+    'VÙNG TỬ THẦN NGÀY 8–12: NHẮC BÀI BỊ CHẶN, HỎI THĂM THÌ QUA',
+    'bắt "' + nhacBai.than.dinh.join(' · ') + '" — ngày 8–12 là chỗ người ta bỏ, và ' +
+    'bỏ trong im lặng; nhắc bài đúng lúc ấy là đẩy họ đi nhanh hơn');
+
+  /* ── CỔNG 3 · ĐÈN ĐỎ PHẢI GỌI, VÀ NGƯỜI GỌI PHẢI LÀ NGƯỜI ── */
+  const doNhan = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-DO', kieu:'nhan', noiDung:'Chị ơi dạo này nhà mình sao ạ',
+    canCu:'đèn Đỏ, im lặng 60 ngày', aiDuyet:'chị Hoa'});
+  const doMay = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-DO', kieu:'goi', boiAi:'bot',
+    noiDung:'Đã gọi, nhà đang bận', canCu:'đèn Đỏ', aiDuyet:'chị Hoa'});
+  const doNguoi = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-DO', kieu:'goi', boiAi:'chị Hoa',
+    noiDung:'Đã gọi mười phút, nhà đang mệt vì việc riêng, hẹn tuần sau',
+    canCu:'đèn Đỏ, im lặng 60 ngày', aiDuyet:'anh Quang'});
+  bao(!doNhan.than.ok && doNhan.than.code === 'DOPHAIGOI' &&
+      !doMay.than.ok && doMay.than.code === 'DOPHAINGUOI' &&
+      doNguoi.than.ok === true,
+    'ĐÈN ĐỎ: TIN NHẮN BỊ CHẶN, MÁY GỌI BỊ CHẶN, NGƯỜI THẬT GỌI THÌ QUA — đây là cái răng của cả Phân hệ 4',
+    'một cái đèn đỏ đóng lại được bằng tin nhắn thì nó không phải đèn đỏ; và thứ ' +
+    'đang thiếu ở một nhà im lặng mười lăm ngày là một NGƯỜI, không phải một câu chữ');
+
+  /* ── SỔ NÀY KHÔNG RA GOOGLE SHEETS ── */
+  const raNgoaiSo = mVH.xuatSoRaNgoai([
+    {ngay:'2026-09-01', maNha:'NHA-DO', noiDung:'Gọi cho chị Nguyễn Thị Lan về bé Cu',
+     canCu:'đèn Đỏ'}]);
+  const raSach = mVH.xuatSoRaNgoai([
+    {ngay:'2026-09-01', maNha:'NHA-DO', noiDung:'Đã gọi, nhà hẹn tuần sau',
+     canCu:'đèn Đỏ'}]);
+  bao(raNgoaiSo.duocRa === false && raNgoaiSo.ngo.length > 0 && raSach.duocRa === true &&
+      /Luật số 91\/2025\/QH15/.test(raNgoaiSo.vi),
+    'SỔ DẤU VẾT KHÔNG RA GOOGLE SHEETS — bản đặc tả đề nghị, và chỗ này CỐ Ý không làm theo',
+    'mỗi dòng mang tên gia đình, tên con và nội dung một cuộc trò chuyện riêng; đẩy ' +
+    'lên một dịch vụ đặt ngoài lãnh thổ là xử lý dữ liệu xuyên biên giới, và phạm ' +
+    'thẳng Điều 13 của chính Hiến pháp Bộ não');
+
+  /* Sổ xếp TĂNG DẦN, đọc xuôi được. */
+  const so = await goi({fn:'doSoCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-DO'});
+  bao(so.than.ok && so.than.so === 1 && so.than.ds[0].denLuc === 'DO' &&
+      so.than.ds[0].canCu.length > 0,
+    'SỔ GHI ĐÈN LÚC CHẠM, không đèn lúc đọc lại — đèn đổi mỗi ngày, và dòng sổ phải giữ đúng cái đèn hôm ấy',
+    'ghi đèn lúc đọc lại thì một cuộc gọi đèn Đỏ ba tháng trước hiện ra như một ' +
+    'cuộc gọi vào nhà đang xanh');
+}
+
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&
     soRa.than.ds[0].daGui === raNgoai.than.daGui,

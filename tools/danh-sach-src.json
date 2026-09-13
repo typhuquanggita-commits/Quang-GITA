@@ -129,6 +129,7 @@
     "src/vung-manh.js",
     "src/coach-kh.js",
     "src/noi-dung-tiep-thi.js",
+    "src/van-hanh-cham-soc.js",
     "src/cho-chu-he.js",
     "src/bien-soan-noi-dung.js",
     "src/cua-truoc.js",

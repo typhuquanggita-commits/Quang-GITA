@@ -1497,3 +1497,84 @@ CREATE TABLE IF NOT EXISTS theVungManh (
 );
 
 CREATE INDEX IF NOT EXISTS ix_tvm_nha ON theVungManh (maNha, lapLuc DESC);
+
+-- ═════════════════════════════════════════════════════════════
+--  PHÂN HỆ 4 · VẬN HÀNH & CHĂM SÓC  (9.99.66)
+--
+--  ══ HAI BẢNG, VÀ CHỖ ĐÁNG NÓI LÀ NHỮNG CỘT KHÔNG CÓ ══
+--
+--  hoSoSongSinh giữ ĐÚNG những trường người khai. Không có cột nào
+--  cho bốn trường máy tính (ngày chạm gần nhất · số ngày im lặng ·
+--  đèn · số WOW) và không có cột nào cho năm trường đã sống ở hệ
+--  khác (tầng · phần học · tỷ lệ 21 ngày · KPI · mã Thẻ Vùng Mạnh).
+--
+--  Vì sao gắt đến thế: một cột `den` mà có người gõ được thì sớm
+--  muộn có người gõ, và lúc ấy một phép đo biến thành một lời khai
+--  — mà nhìn thì vẫn y hệt. Tệ hơn nữa là cột không ai gõ: nó cũ đi
+--  lặng lẽ, khai XANH cho một nhà đã im lặng hai mươi ngày, và cả
+--  quy trình gọi điện trong hai mươi tư giờ đi theo nó.
+--
+--  Cùng luật với cột `conHan` KHÔNG có trong theVungManh (9.99.63).
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS hoSoSongSinh (
+  maNha       TEXT PRIMARY KEY,   -- trỏ hoSoKhach.maKhachHang
+  -- 12 trường cố định, trừ hai trường trỏ sang hệ khác
+  tenChaMe    TEXT,
+  tenCon      TEXT,
+  tuoiCon     INTEGER,            -- TUỔI. Ngày sinh nằm riêng ở ngaySinhCon.
+  tinhCach    TEXT,
+  noiLo       TEXT,               -- ô nhạy nhất: câu gia đình nói lúc yếu nhất
+  tuHao       TEXT,
+  daThuThatBai TEXT,              -- biết chỗ họ đã hỏng thì đừng đề nghị lại
+  khungGioRanh TEXT,
+  xungHo      TEXT,
+  ngaySinhCon TEXT,               -- chỉ dùng để nhắc sinh nhật
+  -- 1 trường động người ghi
+  ghiChu      TEXT,
+  -- 2 trường mới v3.0 người khai
+  mua         INTEGER,            -- 1–4
+  tangGiaTri  INTEGER,            -- 1–5
+  -- mốc để sinh nhịp 365 ngày
+  ngayThamGia TEXT NOT NULL,
+  lapBoiAi    TEXT NOT NULL,
+  lapLuc      TEXT NOT NULL,
+  suaBoiAi    TEXT,
+  suaLuc      TEXT
+);
+
+-- ═════════════════════════════════════════════════════════════
+--  SỔ DẤU VẾT — năm cột của Điều 9
+--
+--  Ở D1, KHÔNG ở Google Sheets như bản đặc tả đề nghị. Mỗi dòng mang
+--  tên gia đình, tên con, và nội dung một cuộc trò chuyện riêng; đẩy
+--  nó lên một dịch vụ đặt ngoài lãnh thổ là xử lý dữ liệu xuyên biên
+--  giới theo Luật số 91/2025/QH15, và phạm thẳng Điều 13 của Hiến
+--  pháp Bộ não.
+--
+--  MỘT LƯỢT CHẠM LÀ MỘT DÒNG MỚI. Ghi đè thì mất phần lịch sử, và
+--  chính phần lịch sử chứng minh được rằng Học viện chạm ĐỀU chứ
+--  không chạm dồn một hôm.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS soCham (
+  id        TEXT PRIMARY KEY,
+  maNha     TEXT NOT NULL,
+  ngay      TEXT NOT NULL,
+  kieu      TEXT NOT NULL,        -- nhan · goi · wow
+  denLuc    TEXT,                 -- đèn của nhà ấy LÚC CHẠM: XANH · VANG · DO
+  noiDung   TEXT NOT NULL,
+  -- Hai cột làm cho cả sổ có nghĩa. Máy điền được ba cột trên; hai
+  -- cột này thì không — không có căn cứ thì đây là một tin nhắn, và
+  -- một tin nhắn không chứng minh được gì lúc có tranh chấp.
+  canCu     TEXT NOT NULL,
+  aiDuyet   TEXT NOT NULL,
+  boiAi     TEXT NOT NULL,        -- người thật sự chạm
+  ghiLuc    TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS ix_cham_nha ON soCham (maNha, ngay DESC);
+
+-- Nhịp 365 ngày hỏi câu "hôm nay nhà nào đang ở ngày 8–12", và đó là
+-- một phép lọc KHOẢNG trên ngày tham gia — đường tra thật, không phải
+-- một chỉ mục thêm cho bộ thử xanh. Chặng tử thần là chặng phải quét
+-- mỗi ngày, nên nó là đường nóng nhất của cả bảng.
+CREATE INDEX IF NOT EXISTS ix_ss_thamgia ON hoSoSongSinh (ngayThamGia);

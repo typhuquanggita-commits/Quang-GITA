@@ -969,6 +969,80 @@ thấy số viết bằng chữ.**
 
 ---
 
+## BỘ NÃO — Phân hệ 4: Vận hành & chăm sóc (9.99.66)
+
+Phần VI. Màn **Vận hành & chăm sóc** (`src/van-hanh-cham-soc.js`, bốn
+ngăn), máy chủ `may-chu/van-hanh-cham-soc.js`, kho
+`data.van-hanh-cham-soc.js` (9 kho), bảng `hoSoSongSinh` và `soCham`,
+bộ kiểm **mục 83**, chín phép đo ở `thu-worker.js`.
+
+### Cái răng chính: đèn Đỏ phải GỌI
+
+Bảng đèn của bản đặc tả có một cột mà mọi bảng đèn khác thường thiếu:
+**ai làm**. Cả phân hệ có giá trị ở đúng dòng cuối — đèn Đỏ, **người
+thật, gọi điện, trong 24 giờ, không bán gì**.
+
+Một cái đèn đỏ **đóng lại được bằng tin nhắn thì nó không phải đèn
+đỏ**. Nhắn tin rẻ, nhanh, và đóng được việc trong sổ — nên nếu cho
+phép thì mọi đèn đỏ đều đóng bằng tin nhắn, và bảng ba màu còn đúng
+hai màu. `ghiCham` chặn ba đường: nhắn vào nhà đỏ (`DOPHAIGOI`), máy
+gọi (`DOPHAINGUOI`), và nhắc bài trong vùng tử thần (`NHACBAI`).
+
+### Hai phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI
+
+Lối đo thứ ba trong bộ dùng nó, sau LR1 (mục 79) và ô tự khai (mục 81):
+
+1. **Bảng `hoSoSongSinh` không có cột nào** cho bốn trường máy tính
+   lẫn năm trường đã sống ở hệ khác. Mục 83 đọc **thẳng `csdl.sql`**,
+   không tin lời khai của mô-đun.
+2. **Mô-đun không mang một đường nào ra Google Sheets**, và cửa đi ra
+   gọi đúng cổng ẩn danh của Bộ não chứ không dựng bộ dò thứ hai.
+
+Vì sao gắt đến thế với một cột `den`: có cột thì **hoặc** bị gõ đè —
+và một phép đo biến thành một lời khai, mà nhìn thì vẫn y hệt — **hoặc**
+không ai gõ và nó cũ đi lặng lẽ, khai XANH cho một nhà đã im lặng hai
+mươi ngày, rồi cả quy trình gọi điện trong 24 giờ đi theo nó. Cùng luật
+với cột `conHan` **không có** trong `theVungManh` (9.99.63).
+
+### Ba chỗ cố ý không theo bản đặc tả
+
+1. **6.4 đề nghị lưu sổ dấu vết trên Google Sheets — không làm theo.**
+   Mỗi dòng mang tên gia đình, tên con, và nội dung một cuộc trò
+   chuyện riêng. Đẩy lên một dịch vụ đặt ngoài lãnh thổ là **xử lý dữ
+   liệu xuyên biên giới** theo Luật số 91/2025/QH15, và phạm thẳng Điều
+   13 của chính Hiến pháp Bộ não. Sổ nằm ở D1.
+2. **Tiêu đề 6.1 ghi "20 trường" rồi liệt 12 + 8 + 3 = 23.** Tiêu đề
+   viết trước, ba trường v3.0 thêm sau. Lấy 23 và **nói ra chỗ lệch** —
+   im thì người đọc đếm được 23 rồi ngờ chính bản đặc tả.
+3. **Tám trường "động" không cùng một loại.** Bốn cái máy tính được,
+   ba cái đã sống ở hệ khác, một cái người ghi. Gom cả tám thành cột
+   là mời người ta gõ đè lên một phép đo. Mỗi trường khai một ô
+   `nguon` — `nguoiKhai` · `mayTinh` · `troSang` — và đó là ô quan
+   trọng nhất của cả bảng.
+
+### Một phát hiện của bài thử, đáng giữ thành phép đo riêng
+
+Bài thử đầu cho nhà "xanh" tham gia 40 ngày trước rồi chờ nó xanh — và
+nó ra **ĐỎ**, đúng như phải thế: **không có dòng nào trong sổ thì số
+ngày im lặng đúng bằng số ngày đã tham gia**. Im lặng đếm từ lúc quen
+nhau, không từ lúc chạm lần đầu. Để nó nằm im ở xanh vì *"chưa có dữ
+liệu"* thì nhà bị bỏ quên ngay từ đầu là nhà không ai đi tìm. Nay có
+phép đo riêng cho chỗ ấy.
+
+### Chỗ bộ soi cơ sở dữ liệu bắt ngay
+
+`hoSoSongSinh` lúc đầu thiếu chỉ mục. Chỉ mục thêm vào là
+`ix_ss_thamgia` trên `ngayThamGia` — **đường tra thật**, vì nhịp 365
+ngày hỏi *"hôm nay nhà nào đang ở ngày 8–12"* và đó là một phép lọc
+khoảng trên ngày tham gia. Không phải một chỉ mục thêm cho bộ thử
+xanh: chặng tử thần phải quét mỗi ngày, nên nó là đường nóng nhất của
+cả bảng.
+
+Và `soatNhacBai` dò **cụm nhiều âm tiết** — `bài hát`, `bài viết` không
+bị bắt. Cùng luật chọn dấu hiệu của `CUM_TUYET_DOI` ở 9.99.65.
+
+---
+
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**

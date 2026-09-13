@@ -293,6 +293,7 @@ G.ITEM_EN = {
   'vung-manh':['Your Child\'s Strong Zone','three observable behaviours · seven fields · four weeks · Strength Card valid 90 days · five-tier value ladder'],
   'coach-kh':['Customer Coaching','nine-step loop · twelve question streams, four require three council rounds · five seats, the soul-keeper must be a real person · Crawling-Baby ceilings'],
   'noi-dung-tiep-thi':['Content & Marketing','seven awareness tiers — content without a declared tier cannot be published · one source, seven branches · seven-item ad filter, four machine-checked and three human-attested'],
+  'van-hanh-cham-soc':['Operations & Care','23-field family twin profile · three-colour signal computed at read · 365-day care rhythm with the day 8-12 death zone · five-column trace log; a red light must be a phone call'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
