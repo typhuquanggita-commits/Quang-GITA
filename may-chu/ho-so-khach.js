@@ -222,6 +222,33 @@ export async function dsTepKhach(y, env, db, hoSo) {
    thiếu thì mất dấu một nhà. */
 export async function ghiDoiTang(db, {maKhachHang, tuTang, denTang, kpi, boi, lyDo,
                                      uidPhuHuynh, maHocVien}) {
+  /* ══ L02 · KHÔNG TỤT CẤP ══  (9.99.74)
+
+     Luật giao diện số 2 của MỤC C: *không mã nào giảm cấp hiện tại, kể
+     cả sau mười hai tháng không hoạt động.*
+
+     Tới 9.99.73 cổng ấy nằm ở `nangTang` — nó đòi `tangMoi === tier+1`.
+     Nhưng HÀM NÀY nhận `denTang` tự do, và hôm nay nó chỉ có đúng một
+     người gọi. Người gọi thứ hai viết sau — một lượt nhập liệu hàng
+     loạt, một lượt sửa nhầm tay — hạ tầng một nhà mà không gì chặn, và
+     lịch thu dựng lại theo tầng thấp hơn.
+
+     Đặt cổng ở CHỖ GHI, không ở chỗ gọi: cổng ở chỗ gọi thì nó chỉ bảo
+     vệ đúng người gọi ấy. Cùng cái bẫy đã ghi ở cổng ADN (9.99.56) và
+     cổng ba cửa (9.99.69).
+
+     Vì sao luật gắt đến thế: tụt cấp là lấy lại thứ người ta đã làm
+     được. Một gia đình nghỉ ba tháng vì ốm đau, quay lại thấy mình mất
+     sạch, thì họ không quay lại lần thứ hai. */
+  if (tuTang != null && Number(denTang) < Number(tuTang)) {
+    const e = new Error('Không hạ tầng được: nhà ' + maKhachHang + ' đang ở tầng ' +
+      tuTang + ', lượt ghi này đòi xuống tầng ' + denTang + '. Luật L02 của bản ' +
+      'đặc tả giao diện: không mã nào giảm cấp hiện tại, kể cả sau mười hai tháng ' +
+      'không hoạt động. Tụt cấp là lấy lại thứ người ta đã làm được.');
+    e.code = 'HATANG';
+    throw e;
+  }
+
   const luc = new Date().toISOString();
 
   if (uidPhuHuynh) {

@@ -35,6 +35,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import * as BoNao from './bo-nao.js';
+import * as LuatGD from './luat-giao-dien.js';
 import { Kho, tokenMoi } from './nen.js';
 
 const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
@@ -2013,6 +2014,25 @@ export async function guiDeBaiRaNgoai(y, env, db, hoSo) {
      nằm ở ô nội dung, ô bố cục, hay ô điều nhỏ, và soi từng ô là ba
      phép soi phải cùng nhớ. Soi chuỗi cuối là một phép, và nó thấy đúng
      thứ sắp đi. */
+  /* ══ L04 · NĂM Ô VÒNG ĐỎ KHÔNG BAO GIỜ RỜI MÁY ══  (9.99.74)
+
+     Đứng TRƯỚC cổng ẩn danh, và đó là thứ tự đúng. Cổng ẩn danh nói
+     "gửi được, nhưng phải ẩn danh trước"; cổng này nói "KHÔNG gửi, ẩn
+     danh cũng không". Thư tha thứ ẩn danh vẫn là thư tha thứ — nó vẫn
+     là thứ người ta viết ra để chưa nói với ai.
+
+     Đặt sau thì người gửi nhận câu "hãy ẩn danh rồi gửi lại", làm theo,
+     và lần thứ hai thì lọt. Một cổng chỉ đường sai là một cổng dạy
+     người ta cách đi vòng qua chính nó. */
+  const vongDo = LuatGD.soatVongDo(x, 'cửa đi ra ngoài');
+  if (!vongDo.sach) {
+    await LuatGD.ghiChanLuat(db, hoSo, 'L04', 'guiDeBaiRaNgoai · ' + vongDo.thay.join(' · '));
+    return {ok: false, code: 'VONGDO', thay: vongDo.thay,
+      error: 'CHẶN — thứ sắp gửi mang ô VÒNG ĐỎ: ' + vongDo.thay.join(' · ') + '. ' +
+        vongDo.vi + ' Ẩn danh KHÔNG mở được cổng này: một lá thư tha thứ ẩn danh ' +
+        'vẫn là một lá thư tha thứ.'};
+  }
+
   const raNgoai = BoNao.soatRaNgoai(guiDi);
   if (!raNgoai.sach) {
     await Kho.ghiNhatKy(db, {uid: hoSo.uid, username: hoSo.u, viec: 'TG_CHAN_ANDANH',

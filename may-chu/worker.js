@@ -70,6 +70,7 @@ import { docBangDieuKhien, banTinSang, chonBaNhaNgauNhien, soiQuyetDinh,
   ghiQuyetDinh, chuanBiVang } from './he-dieu-hanh.js';
 import { ghiLuotPrompt, docVongChay } from './bo-prompt.js';
 import { docBangGia, doiGia, soDoiGia } from './bang-gia.js';
+import { docLuatGiaoDien } from './luat-giao-dien.js';
 import { soatNoiDung, mauBaiHoc, napBai, nopBai, kyBai, soKyBai, baiTreo,
   capQuyenNoiDung, thuHoiQuyenNoiDung, dsQuyenNoiDung,
   docBuoi, xuatChuanNghe, soatMienDich,
@@ -219,7 +220,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'docBangDieuKhien', 'banTinSang', 'chonBaNhaNgauNhien', 'soiQuyetDinh', 'ghiQuyetDinh',
   'chuanBiVang',
   'ghiLuotPrompt', 'docVongChay',
-  'docBangGia', 'doiGia', 'soDoiGia',
+  'docBangGia', 'doiGia', 'soDoiGia', 'docLuatGiaoDien',
   'soatNoiDung', 'mauBaiHoc', 'napBai', 'nopBai', 'kyBai', 'soKyBai', 'baiTreo',
   'capQuyenNoiDung', 'thuHoiQuyenNoiDung', 'dsQuyenNoiDung', 'docBuoi', 'xuatChuanNghe', 'soatMienDich',
   'chotTrichNghe', 'dsChotTrich',
@@ -401,6 +402,7 @@ async function lam(fn, y, env, db) {
   if (fn === 'docBangGia')        return await docBangGia(y, env, db, hoSo);
   if (fn === 'doiGia')            return await doiGia(y, env, db, hoSo);
   if (fn === 'soDoiGia')          return await soDoiGia(y, env, db, hoSo);
+  if (fn === 'docLuatGiaoDien')   return await docLuatGiaoDien(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
   if (fn === 'soatNoiDung')       return await soatNoiDung(y, env, db, hoSo);
   if (fn === 'mauBaiHoc')         return await mauBaiHoc(y, env, db, hoSo);

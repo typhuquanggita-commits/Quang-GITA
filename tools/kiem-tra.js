@@ -14816,6 +14816,255 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n91 · MƯỜI HAI LUẬT GIAO DIỆN — RĂNG Ở MÁY CHỦ, KHÔNG Ở MÀN HÌNH');
+  /* ══════════════════ 91. LUẬT GIAO DIỆN ══════════════════
+
+     Câu của chính bản đặc tả MỤC C là lý do cả phần này tồn tại: *"Ba
+     mươi phần của khoá học đặt ra rất nhiều luật phủ quyết và gác an
+     toàn. Nếu frontend không cưỡng chế chúng, chúng chỉ là chữ trên
+     giấy."*
+
+     Phép đo ở đây chạy HAI LOẠI trên cùng một bản luật:
+
+       · BẢY luật có cổng thật — đọc thẳng mã nguồn, đòi lời gọi cổng
+         nằm ĐÚNG CHỖ (trước câu ghi, trước cổng ẩn danh)
+       · NĂM luật nói về màn CHƯA DỰNG — đo bằng thứ KHÔNG ĐƯỢC TỒN
+         TẠI: cửa ấy chưa có, và ngày nó có mà không gọi cổng thì đỏ
+
+     Loại thứ hai là chỗ dễ bỏ nhất và là chỗ đáng giá nhất. Một luật
+     về màn hình chưa dựng nghe như không đo được — nhưng nó đo được,
+     và phép đo ấy đứng gác đúng lúc người viết màn hình mới chưa đọc
+     tệp này. */
+  {
+    const khoLGD = await p.evaluate(() => {
+      const G = window.G;
+      return { luat: G.LGD_LUAT || [], vongDo: G.LGD_VONG_DO || [],
+        vongDoLuat: G.LGD_VONG_DO_LUAT || {}, nguoiGiu: G.LGD_NGUOI_GIU || [],
+        nguoiGiuLuat: G.LGD_NGUOI_GIU_LUAT || {}, giuChan: G.LGD_GIU_CHAN || [],
+        nguyenTac: G.LGD_NGUYEN_TAC || [], trong: G.LGD_TRONG || [],
+        haiTruc: G.LGD_HAI_TRUC || {}, choChu: G.LGD_CHOCHU || [],
+        coMan: !!(G.VIEWS || {})['luat-giao-dien'],
+        trongNav: (G.NAV || []).flatMap(n => (n.items || []))
+          .some(m => m.v === 'luat-giao-dien') };
+    });
+
+    const dc = t => fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'may-chu', t), 'utf8');
+    const ngLGD = dc('luat-giao-dien.js');
+    const ngHSK = dc('ho-so-khach.js');
+    const ngCK = dc('coach-kh.js');
+    const ngTG = dc('kien-truc-thi-giac.js');
+    const ngW = dc('worker.js');
+    const tepMC = fsGoc.readdirSync(pathGoc.join(__dirname, '..', 'may-chu'))
+      .filter(t => t.endsWith('.js'));
+    const capMC = {}; tepMC.forEach(t => { capMC[t] = dc(t); });
+
+    const v = {};
+
+    /* ── A · MỖI LUẬT KHAI ĐÚNG MỘT ĐƯỜNG ──
+       `rangO` HOẶC `chuaCoMat`, không bao giờ cả hai và không bao giờ
+       thiếu cả hai. Cùng luật với mayDo/nguoiDo của Hiến pháp (mục 78):
+       trình cả mười hai như đã cưỡng chế thì người duyệt thấy mười hai
+       dấu tick rồi thôi không đọc — và năm luật chưa có răng lại đúng
+       là năm luật sẽ được viết bởi người không đọc bản này. */
+    v.soLuat = khoLGD.luat.length;
+    v.caHai = khoLGD.luat.filter(l => l.rangO && l.chuaCoMat).map(l => l.ma);
+    v.khongCo = khoLGD.luat.filter(l => !l.rangO && !l.chuaCoMat).map(l => l.ma);
+    v.thieuO = khoLGD.luat.filter(l => !l.ma || !l.ten || !l.luat || !l.vi || !l.nguon)
+      .map(l => l.ma || '?');
+    const coRang = khoLGD.luat.filter(l => l.rangO);
+    const chuaCo = khoLGD.luat.filter(l => l.chuaCoMat);
+    v.duMuoiHai = khoLGD.luat.length === 12;
+
+    /* ── B · BẢN CHÉP Ở MÁY CHỦ KHỚP KHO ── */
+    const docDs = (ten) => {
+      const m = new RegExp('export const ' + ten + ' = \\[([\\s\\S]*?)\\];').exec(ngLGD);
+      return m ? (m[1].match(/'([^']+)'/g) || []).map(x => x.slice(1, -1)) : null;
+    };
+    const oMC = docDs('O_VONG_DO');
+    const ngMC = docDs('VIEC_NGUOI_GIU');
+    const gcMC = docDs('DAU_GIU_CHAN');
+    v.vongDoKhop = !!oMC &&
+      oMC.join() === khoLGD.vongDo.map(x => x.o).join();
+    v.nguoiGiuKhop = !!ngMC &&
+      ngMC.join() === khoLGD.nguoiGiu.map(x => x.viec).join();
+    v.giuChanKhop = !!gcMC &&
+      gcMC.join() === khoLGD.giuChan.map(x => x.dau).join();
+
+    const coRangMC = docDs('CO_RANG') || [];
+    const canhMC = docDs('CANH_TRUOC') || [];
+    v.haiNganKhop = coRangMC.join() === coRang.map(l => l.ma).join() &&
+      canhMC.join() === chuaCo.map(l => l.ma).join();
+
+    /* ── C · L02 · CỔNG CHẶN HẠ TẦNG NẰM TRƯỚC CÂU GHI ──
+       Lỗ thật tìm ra ở 9.99.74: ghiDoiTang nhận denTang tự do. Cổng ở
+       nangTang chỉ bảo vệ đúng người gọi ấy; người gọi thứ hai viết sau
+       hạ tầng một nhà mà không gì chặn. */
+    const mGDT = /export async function ghiDoiTang\(([\s\S]*?)\n\}/.exec(ngHSK);
+    const thanGDT = mGDT ? mGDT[1] : '';
+    const viIns = thanGDT.indexOf('INSERT INTO lichSuTang');
+    const viChan = thanGDT.indexOf("code = 'HATANG'");
+    v.l02Chan = viChan > 0 && viIns > 0 && viChan < viIns &&
+      /Number\(denTang\) < Number\(tuTang\)/.test(thanGDT);
+
+    /* ── D · L04 · VÒNG ĐỎ CHẶN Ở CỬA ĐI RA, TRƯỚC CỔNG ẨN DANH ──
+       Thứ tự là luật, không phải sở thích: cổng ẩn danh nói "gửi được
+       nhưng phải ẩn danh trước", cổng này nói "KHÔNG gửi, ẩn danh cũng
+       không". Đặt sau thì người gửi làm theo lời chỉ đường của cổng ẩn
+       danh và lần thứ hai thì lọt — một cổng chỉ đường sai là một cổng
+       dạy người ta cách đi vòng qua chính nó. */
+    const viVD = ngTG.indexOf('LuatGD.soatVongDo');
+    const viAD = ngTG.indexOf('BoNao.soatRaNgoai(guiDi)');
+    v.l04TruocAnDanh = viVD > 0 && viAD > 0 && viVD < viAD;
+    /* Và cổng soi MỌI TẦNG của vật, không soi một tầng: gói ô vòng đỏ
+       vào một ô con là lọt, và người gói không cố ý. */
+    v.l04SoiSau = /d > \d+ \|\| v === null \|\| typeof v !== 'object'/.test(ngLGD) &&
+      /di\(v\[k\], d \+ 1\)/.test(ngLGD);
+
+    /* ── E · L10 · NGƯỜI GIỮ CHẶN ĐẦU CỬA traLoiCoach ──
+       Trước cả phân luồng: bốn thứ này không phải một luồng khó cần
+       thêm người duyệt, chúng không phải việc của máy ở luồng nào. */
+    const mTL = /export async function traLoiCoach\(([\s\S]*?)\n\}/.exec(ngCK);
+    const thanTL = mTL ? mTL[1] : '';
+    const viNG = thanTL.indexOf('LuatGD.soatNguoiGiu');
+    const viHD = thanTL.indexOf('soatHoiDong');
+    v.l10TruocLuong = viNG > 0 && viHD > 0 && viNG < viHD;
+    /* Trả kèm DÒNG NHẮC, không chỉ trả lời từ chối: người hỏi đang cần
+       viết một câu khó, và đuổi họ đi tay không thì lần sau họ đi hỏi
+       một cái máy không có cổng nào. */
+    v.l10CoNhac = /nhac: ng\.nhac/.test(thanTL) && /NHAC_NGUOI_GIU/.test(ngLGD);
+
+    /* ── F · L01 · L05 · PHÉP ĐO VỀ THỨ KHÔNG ĐƯỢC TỒN TẠI ──
+       Không xếp hạng gia đình, không so sánh thành viên. Hỏi DANH SÁCH
+       CỬA của worker: một cửa như thế mà CÓ MẶT là đỏ, dù chưa ai gọi.
+       Cùng lối đo với LR1 (mục 79). Viết cửa ấy rồi mới cấm gọi là muộn. */
+    const CUA_CAM_LGD = ['xepHangNha', 'bangXepHang', 'xepHangGiaDinh',
+      'soSanhNha', 'soSanhThanhVien', 'xepHangThanhVien', 'topNha'];
+    v.cuaCam = CUA_CAM_LGD.filter(c =>
+      new RegExp("'" + c + "'").test(ngW) || new RegExp('function ' + c + '\\b').test(ngW));
+
+    /* ── G · NĂM PHÉP CANH ĐẶT TRƯỚC ──
+       Đây là phần dễ bỏ nhất của cả mục, và là phần đáng giá nhất. Mỗi
+       phép canh mô tả một cửa CHƯA CÓ; nó đỏ đúng vào ngày cửa ấy được
+       viết mà không mang cổng theo. */
+    const canh = [];
+    /* L03 · Chế độ Bão không được hỏi lý do */
+    tepMC.forEach(t => {
+      const m = /export async function (cheDoBao\w*)\(([\s\S]*?)\n\}/.exec(capMC[t]);
+      if (m && /\blyDo\b|\bxacNhan\b/.test(m[2]))
+        canh.push('L03 · ' + t + ' → ' + m[1] + ' đang đòi lý do hoặc xác nhận');
+    });
+    /* L06 · ghim của con phải so uid phiên với chủ ghim */
+    tepMC.forEach(t => {
+      const m = /export async function (\w*[Gg]him\w*)\(([\s\S]*?)\n\}/.exec(capMC[t]);
+      if (m && /INSERT|UPDATE/.test(m[2]) && !/hoSo\.uid/.test(m[2]))
+        canh.push('L06 · ' + t + ' → ' + m[1] + ' ghi ghim mà không so uid của phiên');
+    });
+    /* L07 · cửa chia sẻ ảnh trẻ phải gọi cổng phủ quyết */
+    tepMC.forEach(t => {
+      const m = /export async function (\w*(?:ChiaSe|chiaSe)\w*Anh\w*|\w*Anh(?:Con|Tre)\w*)\(([\s\S]*?)\n\}/.exec(capMC[t]);
+      if (m && !/dongYDangAnh|soatAnhCon/.test(m[2]))
+        canh.push('L07 · ' + t + ' → ' + m[1] + ' chia sẻ ảnh trẻ mà không kiểm cờ đồng ý');
+    });
+    /* L11 · cửa ghi lượt bỏ việc không được ĐÒI lý do */
+    tepMC.forEach(t => {
+      const m = /export async function (\w*[Bb]oViec\w*)\(([\s\S]*?)\n\}/.exec(capMC[t]);
+      if (m && /!lyDo|lyDo\.length <|THIEULYDO/.test(m[2]))
+        canh.push('L11 · ' + t + ' → ' + m[1] + ' đang ĐÒI lý do khi bỏ một việc');
+    });
+    /* L12 · màn khai nangNe phải có nút thoát cùng cỡ */
+    {
+      const dsSrc = fsGoc.readdirSync(pathGoc.join(__dirname, '..', 'src'))
+        .filter(t => t.endsWith('.js'));
+      dsSrc.forEach(t => {
+        const s2 = fsGoc.readFileSync(pathGoc.join(__dirname, '..', 'src', t), 'utf8');
+        if (/nangNe\s*[:=]\s*(true|1)/.test(s2) && !/Để hôm khác/.test(s2))
+          canh.push('L12 · src/' + t + ' khai nangNe mà không có nút "Để hôm khác"');
+      });
+    }
+    v.canhTruocDo = canh;
+
+    /* ── H · SỔ CHỜ VÀ MÀN ── */
+    v.choChuDu = khoLGD.choChu.length > 0 &&
+      khoLGD.choChu.every(c => c.ma && c.t && c.canGi && c.khongDoDuoc);
+    v.cuaThat = /'docLuatGiaoDien'/.test(ngW) &&
+      /export async function docLuatGiaoDien/.test(ngLGD);
+    /* Cửa đọc KHÔNG được gộp hai ngăn thành một phân số — một phân số
+       ở đây đọc ra như mức hoàn thành, mà hai nửa là hai thứ khác hẳn.
+
+       Bản đầu của phép đo này dò chuỗi "12/12" trên cả tệp và BẮT OAN
+       đúng câu chú giải nói vì sao không được gộp. Một phép đo bắt oan
+       thì lần sau người ta tắt nó đi — cùng chỗ đã sập ở mục 89 với
+       cột ghiChu. Nay đọc THÂN HÀM, bỏ chú giải và chuỗi, rồi soi TÊN
+       Ô thật sự được trả về. */
+    {
+      const mDoc = /export async function docLuatGiaoDien\(([\s\S]*?)\n\}/.exec(ngLGD);
+      const than = (mDoc ? mDoc[1] : '')
+        .replace(/\/\*[\s\S]*?\*\//g, '')
+        .replace(/'(?:[^'\\]|\\.)*'/g, "''");
+      v.khongGopPhanSo = !!mDoc &&
+        /coRang/.test(than) && /canhTruoc/.test(than) &&
+        !/tyLe|phanTram|daCuongChe|tren12|\/\s*12/.test(than);
+    }
+    v.duNen = khoLGD.nguyenTac.length === 3 && khoLGD.trong.length >= 4 &&
+      !!khoLGD.haiTruc.daChot && !!khoLGD.haiTruc.viSaoChonCachAy;
+
+    const lgdDat = v.duMuoiHai && !v.caHai.length && !v.khongCo.length &&
+      !v.thieuO.length && v.vongDoKhop && v.nguoiGiuKhop && v.giuChanKhop &&
+      v.haiNganKhop && v.l02Chan && v.l04TruocAnDanh && v.l04SoiSau &&
+      v.l10TruocLuong && v.l10CoNhac && !v.cuaCam.length && !v.canhTruocDo.length &&
+      v.choChuDu && v.cuaThat && v.khongGopPhanSo && v.duNen &&
+      khoLGD.coMan && khoLGD.trongNav;
+
+    bao(lgdDat,
+      'MƯỜI HAI LUẬT GIAO DIỆN — RĂNG Ở MÁY CHỦ, KHÔNG Ở MÀN HÌNH, VÀ NĂM LUẬT CHƯA CÓ BỀ MẶT ĐƯỢC CANH BẰNG THỨ CHƯA ĐƯỢC TỒN TẠI. Bản đặc tả MỤC C tự viết ra lý do của cả phần này: ba mươi phần của khoá học đặt ra rất nhiều luật phủ quyết và gác an toàn, và nếu frontend không cưỡng chế chúng thì chúng chỉ là chữ trên giấy. Nên răng nằm ở MÁY CHỦ: giao diện là thứ bị viết lại nhiều nhất trong mọi kho, và một luật sống trong mã giao diện thì chết cùng lượt viết lại đầu tiên — chết lặng lẽ, vì bản mới trông vẫn đẹp. Mỗi luật khai ĐÚNG MỘT đường, rangO HOẶC chuaCoMat, không bao giờ cả hai và không bao giờ thiếu cả hai: trình cả mười hai như đã cưỡng chế thì người duyệt thấy mười hai dấu tick rồi thôi không đọc, và năm luật chưa có răng lại đúng là năm luật sẽ được viết bởi người không đọc bản này — cùng luật với mayDo/nguoiDo của Hiến pháp. L02 KHÔNG TỤT CẤP là một lỗ THẬT tìm ra ở bản này: cổng cũ nằm ở nangTang và đòi tầng mới bằng tầng cũ cộng một, nhưng ghiDoiTang nhận denTang TỰ DO và hôm nay chỉ có đúng một người gọi — người gọi thứ hai viết sau hạ tầng một nhà mà không gì chặn, và lịch thu dựng lại theo tầng thấp hơn; nay cổng nằm ở CHỖ GHI, trước câu INSERT. L04 VÒNG ĐỎ đứng TRƯỚC cổng ẩn danh và thứ tự ấy là luật chứ không phải sở thích: cổng ẩn danh nói "gửi được nhưng phải ẩn danh trước", cổng này nói "KHÔNG gửi, ẩn danh cũng không" — đặt sau thì người gửi làm theo lời chỉ đường của cổng ẩn danh và lần thứ hai thì lọt, vì một cổng chỉ đường sai là một cổng dạy người ta cách đi vòng qua chính nó. L10 BA GHẾ NGƯỜI GIỮ chặn ĐẦU cửa traLoiCoach, trước cả phân luồng, và chặn vì máy viết HAY chứ không phải vì máy viết dở: một lời xin lỗi do máy viết đọc lên nghe y hệt một lời xin lỗi thật, người nhận không có cách nào phân biệt, nên thứ họ nhận được không còn là điều họ tưởng mình đang nhận — chặn vì nó viết dở thì mai nó viết hay hơn là luật hết hiệu lực. Năm phép canh đặt TRƯỚC là phần dễ bỏ nhất và đáng giá nhất của cả mục: chúng mô tả những cửa CHƯA CÓ, và đỏ đúng vào ngày cửa ấy được viết mà không mang cổng theo',
+      lgdDat
+        ? v.soLuat + ' luật · ' + coRang.length + ' có cổng thật, ' + chuaCo.length +
+          ' canh đặt trước · ' + khoLGD.vongDo.length + ' ô vòng đỏ · ' +
+          khoLGD.nguoiGiu.length + ' việc Người Giữ · ' + khoLGD.giuChan.length +
+          ' dấu hiệu giữ chân · L02 chặn trước câu ghi · L04 đứng trước cổng ẩn danh · ' +
+          'L10 chặn đầu cửa kèm dòng nhắc · không cửa xếp hạng nào tồn tại'
+        : [!v.duMuoiHai ? 'BẢN LUẬT KHÔNG ĐỦ MƯỜI HAI: đang có ' + v.soLuat : '',
+           v.caHai.length ? 'LUẬT KHAI CẢ HAI ĐƯỜNG (rangO lẫn chuaCoMat): ' +
+             v.caHai.join(' · ') + ' — mỗi luật đúng MỘT đường' : '',
+           v.khongCo.length ? 'LUẬT KHÔNG KHAI ĐƯỜNG NÀO: ' + v.khongCo.join(' · ') +
+             ' — không khai thì nó đọc ra như đã cưỡng chế' : '',
+           v.thieuO.length ? 'LUẬT THIẾU Ô ten · luat · vi · nguon: ' +
+             v.thieuO.join(' · ') : '',
+           !v.vongDoKhop ? 'BẢN CHÉP NĂM Ô VÒNG ĐỎ Ở MÁY CHỦ LỆCH VỚI KHO — lệch thì ' +
+             'một ô vòng đỏ đi lọt mà cả hai bên vẫn xanh' : '',
+           !v.nguoiGiuKhop ? 'BẢN CHÉP BỐN VIỆC NGƯỜI GIỮ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.giuChanKhop ? 'BẢN CHÉP DẤU HIỆU GIỮ CHÂN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.haiNganKhop ? 'HAI NGĂN CO_RANG / CANH_TRUOC Ở MÁY CHỦ KHÔNG KHỚP VỚI ' +
+             'ô rangO / chuaCoMat trong kho — hai bản chép của một sự thật' : '',
+           !v.l02Chan ? 'L02 · ghiDoiTang KHÔNG CHẶN HẠ TẦNG, hoặc cổng nằm SAU câu ' +
+             'INSERT — cổng ở chỗ gọi thì nó chỉ bảo vệ đúng người gọi ấy, và người ' +
+             'gọi thứ hai viết sau hạ tầng một nhà mà không gì chặn' : '',
+           !v.l04TruocAnDanh ? 'L04 · CỔNG VÒNG ĐỎ KHÔNG ĐỨNG TRƯỚC CỔNG ẨN DANH ở cửa ' +
+             'đi ra — người gửi nhận lời chỉ đường "ẩn danh rồi gửi lại", làm theo, ' +
+             'và lần thứ hai thì lọt' : '',
+           !v.l04SoiSau ? 'L04 · CỔNG VÒNG ĐỎ CHỈ SOI MỘT TẦNG — gói ô ấy vào một ô ' +
+             'con là lọt, và người gói không cố ý' : '',
+           !v.l10TruocLuong ? 'L10 · CỔNG NGƯỜI GIỮ KHÔNG CHẶN ĐẦU CỬA traLoiCoach — ' +
+             'bốn thứ ấy không phải một luồng khó cần thêm người duyệt' : '',
+           !v.l10CoNhac ? 'L10 · CHẶN MÀ KHÔNG TRẢ DÒNG NHẮC — đuổi người hỏi đi tay ' +
+             'không thì lần sau họ đi hỏi một cái máy không có cổng nào' : '',
+           v.cuaCam.length ? 'CỬA XẾP HẠNG GIA ĐÌNH / SO SÁNH THÀNH VIÊN ĐÃ CÓ MẶT: ' +
+             v.cuaCam.join(' · ') + ' — viết cửa ấy rồi mới cấm gọi là muộn' : '',
+           v.canhTruocDo.length ? 'PHÉP CANH ĐẶT TRƯỚC ĐÃ ĐỎ: ' +
+             v.canhTruocDo.join(' | ') : '',
+           !v.choChuDu ? 'MỤC CHỜ KHÔNG KHAI VÌ SAO MÁY KHÔNG ĐO ĐƯỢC' : '',
+           !v.cuaThat ? 'CỬA docLuatGiaoDien KHÔNG CÓ THẬT hoặc chưa nối vào worker' : '',
+           !v.khongGopPhanSo ? 'CỬA ĐỌC GỘP HAI NGĂN THÀNH MỘT PHÂN SỐ — một phân số ở ' +
+             'đây đọc ra như mức hoàn thành, mà hai nửa là hai thứ khác hẳn nhau' : '',
+           !v.duNen ? 'THIẾU BA NGUYÊN TẮC, BỐN MÀN TRỐNG, hoặc phần HAI TRỤC chưa ' +
+             'khai chỗ lệch đã chốt thế nào' : '',
+           !khoLGD.coMan ? 'CHƯA CÓ MÀN luat-giao-dien' : '',
+           !khoLGD.trongNav ? 'MÀN KHÔNG CÓ TRONG G.NAV' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

@@ -1630,6 +1630,133 @@ chi tiết chỉ xét hai bản giá. Nay tính một lần vào `const giaDat`.
 - **BG-02** — ai chốt lại thang duyệt chi sau mỗi lần đổi giá, và
   trong bao lâu. `soatNeoThang` đã nêu sẵn chỗ lệch.
 
+---
+
+## MƯỜI HAI LUẬT GIAO DIỆN — răng ở máy chủ (9.99.74)
+
+Theo **MỤC C · Frontend GITA 365 — Ứng dụng gia đình** của chủ hệ (tệp
+*AI Đào Tạo 365*). Màn **Luật giao diện** (`src/luat-giao-dien.js`, ba
+ngăn), máy chủ `may-chu/luat-giao-dien.js`, kho `data.luat-giao-dien.js`
+(10 kho), bộ kiểm **mục 91**, tám phép đo ở `thu-worker.js`.
+
+Bản đặc tả tự viết ra lý do của cả phần này: *"Ba mươi phần của khoá
+học đặt ra rất nhiều luật phủ quyết và gác an toàn. Nếu frontend không
+cưỡng chế chúng, chúng chỉ là chữ trên giấy."*
+
+### Răng nằm ở MÁY CHỦ, không ở màn hình
+
+Giao diện là thứ bị viết lại nhiều nhất trong mọi kho. Một luật giao
+diện sống trong mã giao diện thì nó **chết cùng lượt viết lại đầu
+tiên** — và chết lặng lẽ, vì bản mới trông vẫn đẹp.
+
+Đặt cổng ở máy chủ thì một bản giao diện mới, một ứng dụng di động viết
+sau, hay một người gọi thẳng vào cửa bằng công cụ nhà phát triển đều
+gặp cùng một cái cổng.
+
+### Mỗi luật khai ĐÚNG MỘT đường: `rangO` hoặc `chuaCoMat`
+
+Kho có chỗ cắm răng cho **bảy** luật; **năm** luật còn lại nói về màn
+hình chưa dựng. Trình cả mười hai như đã cưỡng chế thì người duyệt thấy
+mười hai dấu tick rồi thôi không đọc — và năm luật chưa có răng lại
+đúng là năm luật **sẽ được viết bởi người không đọc tệp này**. Cùng luật
+với `mayDo`/`nguoiDo` của Hiến pháp (9.99.62).
+
+Cửa `docLuatGiaoDien` trả **hai ngăn riêng**, không một phân số "đã
+cưỡng chế mấy trên mười hai": một phân số ở đây đọc ra như mức hoàn
+thành.
+
+### Phép canh đặt TRƯỚC — phần dễ bỏ nhất, đáng giá nhất
+
+Một luật về màn hình chưa dựng nghe như không đo được. Nó đo được, và
+phép đo mạnh hơn phép đo thường: nó canh rằng **cửa ấy chưa tồn tại**.
+
+| Luật | Canh gì |
+|---|---|
+| L03 Chế độ Bão | cửa tên `cheDoBao*` mà nhận ô `lyDo`/`xacNhan` là đỏ |
+| L06 Ghim của con | cửa ghi ghim mà không so `hoSo.uid` với chủ ghim là đỏ |
+| L07 Phủ quyết ảnh con | cửa chia sẻ ảnh trẻ mà không kiểm cờ đồng ý là đỏ |
+| L11 Không hỏi vặn | cửa ghi lượt bỏ việc mà **ĐÒI** lý do là đỏ |
+| L12 Đường thoát | màn khai `nangNe` mà thiếu nút "Để hôm khác" là đỏ |
+
+Lối đo thứ năm dùng phép đo về thứ không được tồn tại, sau LR1 (mục
+79), ô tự khai (mục 81), cột đèn (mục 83), cột ba cửa (mục 86) và ô lọc
+bốc nhà (mục 88).
+
+### L02 — một lỗ THẬT tìm ra khi dựng phần này
+
+Luật: *không mã nào giảm cấp hiện tại, kể cả sau mười hai tháng không
+hoạt động.* Cổng cũ nằm ở `nangTang` và đòi `tangMoi === tier + 1`.
+Nhưng **`ghiDoiTang` nhận `denTang` tự do**, và hôm nay nó chỉ có đúng
+một người gọi. Người gọi thứ hai viết sau — một lượt nhập liệu hàng
+loạt, một lượt sửa nhầm tay — hạ tầng một nhà mà không gì chặn, và lịch
+thu dựng lại theo tầng thấp hơn.
+
+Nay cổng nằm ở **chỗ GHI**, trước câu `INSERT`. Cổng ở chỗ gọi thì nó
+chỉ bảo vệ đúng người gọi ấy — cùng cái bẫy đã ghi ở cổng ADN (9.99.56)
+và cổng ba cửa (9.99.69).
+
+### L04 đứng TRƯỚC cổng ẩn danh, và thứ tự ấy là luật
+
+Cổng ẩn danh nói *"gửi được, nhưng phải ẩn danh trước"*; cổng vòng đỏ
+nói *"KHÔNG gửi, ẩn danh cũng không"*. Đặt sau thì người gửi nhận lời
+chỉ đường của cổng ẩn danh, làm theo, và lần thứ hai thì lọt — **một
+cổng chỉ đường sai là một cổng dạy người ta cách đi vòng qua chính nó.**
+
+Năm ô vòng đỏ chặn theo **TÊN Ô**, và soi **mọi tầng** của vật: gói ô
+ấy vào một ô con là lọt, và người gói không cố ý — họ chỉ đang gom dữ
+liệu cho gọn.
+
+### L10 chặn vì máy viết HAY, không vì máy viết dở
+
+Bốn thứ máy không soạn hộ: lời khen con · lời xin lỗi · thư tha thứ ·
+tin nhắn an ủi. Chặn ĐẦU cửa `traLoiCoach`, trước cả phân luồng — chúng
+không phải một luồng khó cần thêm người duyệt.
+
+**Chặn vì nó viết dở thì mai nó viết hay hơn là luật hết hiệu lực.**
+Cùng luật với ghế G5 Người giữ hồn (9.99.64). Và cổng trả kèm **dòng
+nhắc**, không đuổi người hỏi đi tay không: họ đang cần viết một câu
+khó, và đuổi đi thì lần sau họ đi hỏi một cái máy không có cổng nào.
+
+### Ba chỗ phép đo của chính tôi sai, phá thử dạy lại
+
+1. **Dò `12/12` trên cả tệp bắt oan chính câu chú giải** nói vì sao
+   không được gộp. Nay đọc **thân hàm**, bỏ chú giải và chuỗi, rồi soi
+   tên ô thật sự được trả về. Cùng chỗ đã sập ở mục 89 với cột `ghiChu`.
+2. **Phép đo worker nói "chặn rồi thì không ghi gì cả" mà chỉ đo một
+   nửa** — nó xem `hoSoKhach.tang` chứ không xem `lichSuTang`. Phá thử
+   (dời cổng xuống sau `INSERT`) cho thấy nó **câm**: lịch sử tầng mọc
+   một dòng "xuống tầng 1" trong khi tầng thật đứng yên. Một dòng lịch
+   sử kể một chuyện chưa từng xảy ra là thứ người đọc sổ sáu tháng sau
+   tin.
+3. **Bản vá của lỗi 2 lại bắt oan**: đếm `denTang=1` bắt nhầm một dòng
+   hợp lệ — chính nhà ấy đã lên tầng 1 thật. Nay đếm **trước–sau**, và
+   không còn chỗ nào để bắt oan.
+
+### Lời chặn cho vai không có gói nghề phải NÓI ĐỦ
+
+Bản đầu dài 584 ký tự và bộ rà soát chỗ trống báo đỏ — đúng. Một câu từ
+chối cụt đọc ra là *"chỗ này chưa làm xong"*, và người đọc nó là phụ
+huynh: họ vừa gặp một màn nói rằng có mười hai luật bảo vệ nhà họ, rồi
+không được nói luật nào cả. Nay kể đủ bằng **chữ tĩnh** — mười hai luật
+là lời hứa VỚI gia đình, nên gia đình đọc được là đúng; thứ nằm trong
+gói nghề là chỗ cắm răng và mã nguồn, không phải lời hứa.
+
+### Hai trục — một chỗ lệch bản đặc tả tự nêu ra
+
+Thứ tự 30 phần (giáo trình) và 5 tầng hành trình (trạng thái một gia
+đình) **không khớp**: P14 nằm tầng 3 nhưng thuộc tầng 2 theo nghĩa;
+P27 · P28 nằm tầng 5 nhưng thuộc tầng 2. Đã chốt **giữ nguyên và nói
+rõ**: cấp là ĐƠN VỊ TIẾN ĐỘ, tầng là TÊN GỌI của một dải tiến độ —
+không phải phân loại nội dung. 1 cấp = 20 điểm chạm, tổng đúng 1000.
+
+### Sổ chờ
+
+- **LGD-01** — bốn tab ứng dụng gia đình (Hôm nay · Bản đồ · Chỉ số ·
+  Điểm chạm) là một bề mặt RIÊNG hay mấy màn thêm vào cổng phụ huynh đã
+  có. Chốt xong thì năm luật canh-đặt-trước mới có chỗ cắm răng thật.
+- **LGD-02** — đường khoá thiết bị cho năm ô vòng đỏ. Cửa `soatVongDo`
+  đã chặn sẵn đường lên máy chủ nên mục này không chặn lối nào.
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ
@@ -1761,10 +1888,14 @@ quyết định lâm sàng, không phải một ô trống chờ điền.
 
 ## Đã chốt, không hỏi lại
 
-- **Giá gói theo tầng** (9.94) — `G.HP_TANG[].gia` là bản GỐC; máy chủ
-  giữ bản chép ở `may-chu/tai-chinh.js → GIA_TANG`, và bộ kiểm mục 71
-  đối chiếu hai bản mỗi lần chạy. Thang duyệt chi neo vào chính bảng
-  giá ấy, nên sửa giá là phải chốt lại thang.
+- **Giá gói theo tầng** (9.94, sửa lại ở 9.99.73) — `G.HP_TANG` giữ
+  **KHUNG** (lời hứa), và nó vẫn là bản GỐC của khung. **SỐ** thì nay
+  sống ở bảng `bangGia` trong D1: sửa được ngay, chỉ R01, phải viết lý
+  do. Máy chủ giữ **giá KHỞI ĐẦU** ở `may-chu/bang-gia.js →
+  GIA_KHOI_DAU` — không phải giá đang chạy — và bộ kiểm **mục 90** đối
+  chiếu hai bản khởi đầu mỗi lần chạy. Thang duyệt chi neo vào giá gói
+  và **KHÔNG tự dời** khi giá đổi: `soatNeoThang(giá)` nêu chỗ lệch,
+  chốt lại thang là một quyết định có người ký (**BG-02**).
 - **Chi từ 1,5 triệu trở lên** (9.92, 9.94) — phải xin duyệt VÀ phải
   vào báo cáo chi. Một ngưỡng, hai nghĩa vụ, cùng một hằng số
   `TRAN_PHAI_DUYET`.

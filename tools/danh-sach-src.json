@@ -136,6 +136,7 @@
     "src/he-dieu-hanh.js",
     "src/bo-prompt.js",
     "src/bang-gia.js",
+    "src/luat-giao-dien.js",
     "src/cho-chu-he.js",
     "src/bien-soan-noi-dung.js",
     "src/cua-truoc.js",

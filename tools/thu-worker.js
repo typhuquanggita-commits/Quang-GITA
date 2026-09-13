@@ -5426,6 +5426,108 @@ console.log('\n15m · BẢNG GIÁ SỬA ĐƯỢC — BA CÁI RĂNG');
     'người gọi truyền vào');
 }
 
+console.log('\n15n · MƯỜI HAI LUẬT GIAO DIỆN — BẢY CÁI RĂNG');
+/* ══════════════ LUẬT GIAO DIỆN · PHẦN CÓ RĂNG ══════════════
+
+   Bản luật và hai ngăn đo ở mục 91. Ở đây đo HÀNH VI: gọi thật vào
+   cửa rồi xem nó có chặn không. Đọc lời khai của mô-đun thì nó nói gì
+   cũng được. */
+{
+  const mLGD = await import('../may-chu/luat-giao-dien.js');
+
+  /* ── L02 · KHÔNG TỤT CẤP ──
+     Lỗ thật của bản này. Cổng cũ ở nangTang đòi tầng mới = tầng cũ + 1,
+     nhưng ghiDoiTang nhận denTang tự do và chỉ có đúng một người gọi. */
+  const {ghiDoiTang} = await import('../may-chu/ho-so-khach.js');
+  /* Đếm TRƯỚC. Bản đầu của phép đo này lọc theo denTang=1 và BẮT OAN
+     một dòng hợp lệ — chính nhà ấy đã lên tầng 1 thật ở khối 14b. Một
+     phép đo bắt oan thì lần sau người ta tắt nó đi; đếm trước-sau thì
+     không có chỗ nào để bắt oan. */
+  const lsTruoc = db.prepare(
+    "SELECT count(*) c FROM lichSuTang WHERE maKhachHang=?").get(nhaMoi).c;
+  let batHaTang = null;
+  try {
+    await ghiDoiTang(env.CSDL, {maKhachHang: nhaMoi, tuTang: 3, denTang: 1,
+      boi: 'superadmin@gita365.vn', lyDo: 'Thử hạ tầng xem có chặn không'});
+  } catch (e) { batHaTang = e; }
+  bao(!!batHaTang && batHaTang.code === 'HATANG' &&
+      /L02|không mã nào giảm|tụt cấp/i.test(String(batHaTang.message)),
+    'L02 · HẠ TẦNG BỊ CHẶN NGAY Ở CHỖ GHI, không phải ở chỗ gọi',
+    'cổng ở chỗ gọi chỉ bảo vệ đúng người gọi ấy · tụt cấp là lấy lại thứ người ta ' +
+    'đã làm được, và một nhà nghỉ ba tháng vì ốm quay lại thấy mất sạch thì họ ' +
+    'không quay lại lần thứ hai');
+  /* Và NÂNG thì vẫn chạy — một cổng chặn cả đường đúng là một cổng hỏng. */
+  /* "Không ghi GÌ CẢ" nghĩa là cả hai bảng, không chỉ bảng tầng. Bản
+     đầu của phép đo này chỉ xem hoSoKhach.tang — và phá thử cho thấy
+     nó CÂM đúng ở chỗ nguy hiểm: dời cổng xuống SAU câu INSERT thì
+     lịch sử tầng vẫn mọc một dòng "xuống tầng 1" trong khi tầng thật
+     đứng yên, và phép đo vẫn xanh. Một dòng lịch sử nói một chuyện
+     chưa từng xảy ra là thứ người đọc sổ sáu tháng sau tin. */
+  const capTruoc = db.prepare("SELECT tang FROM hoSoKhach WHERE maKhachHang=?")
+    .get(nhaMoi).tang;
+  const lsSau = db.prepare(
+    "SELECT count(*) c FROM lichSuTang WHERE maKhachHang=?").get(nhaMoi).c;
+  bao(Number(capTruoc) === 3 && Number(lsSau) === Number(lsTruoc),
+    'và lượt bị chặn KHÔNG ĐỂ LẠI GÌ — tầng đứng yên VÀ lịch sử tầng không mọc dòng nào',
+    'đang ở tầng ' + capTruoc + ' · lịch sử tầng ' + lsTruoc + ' → ' + lsSau +
+    ' dòng · một cổng chặn mà vẫn ghi nửa vời thì tệ hơn không chặn, vì sổ kể một ' +
+    'chuyện chưa từng xảy ra');
+
+  /* ── L04 · NĂM Ô VÒNG ĐỎ KHÔNG VÀO ĐƯỢC CỬA MÁY CHỦ ──
+     Soi MỌI TẦNG: gói ô ấy vào một ô con là lọt, và người gói không
+     cố ý — họ chỉ đang gom dữ liệu cho gọn. */
+  const nong = mLGD.soatVongDo({cauHoi: 'bình thường', kem: {ho: {thuThaTho: 'con ơi...'}}});
+  const sach = mLGD.soatVongDo({cauHoi: 'con không chịu học', maNha: 'GITA-0003'});
+  bao(!nong.sach && nong.thay.join() === 'thuThaTho' && sach.sach === true,
+    'L04 · Ô VÒNG ĐỎ BỊ BẮT DÙ NẰM SÂU BA TẦNG, và yêu cầu sạch thì đi qua',
+    'soi một tầng thì gói ô ấy vào một ô con là lọt · năm ô này là chỗ người ta viết ' +
+    'ra điều chưa nói với ai, và một bản sao trên máy chủ là một bản sao đọc được');
+
+  const vdCoach = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L01', cauHoi:'con không chịu học', maNha:'GITA-0003',
+    tuyenNgonMotDoi:'Tôi muốn cuối đời mình...'});
+  bao(!vdCoach.than.ok && vdCoach.than.code === 'VONGDO',
+    'và cửa traLoiCoach CHẶN yêu cầu mang ô vòng đỏ',
+    'mã ' + vdCoach.than.code);
+
+  /* ── L10 · BA GHẾ NGƯỜI GIỮ ──
+     Chặn ĐẦU cửa, trước cả phân luồng: bốn thứ này không phải một
+     luồng khó cần thêm người duyệt. Phép đo gửi luồng HỢP LỆ để chắc
+     rằng thứ chặn nó là cổng Người Giữ chứ không phải cổng phân luồng. */
+  const ng = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L01', maNha:'GITA-0003',
+    cauHoi:'Anh viết hộ lời xin lỗi gửi con giúp em với, em không biết nói sao'});
+  bao(!ng.than.ok && ng.than.code === 'NGUOIGIU' && ng.than.viec === 'loiXinLoi' &&
+      !!ng.than.nhac && ng.than.oVietTay === true,
+    'L10 · MÁY KHÔNG SOẠN HỘ LỜI XIN LỖI, và trả kèm DÒNG NHẮC chứ không đuổi tay không',
+    'nhắc: "' + (ng.than.nhac || '') + '" · một lời xin lỗi do máy viết đọc lên nghe y ' +
+    'hệt một lời xin lỗi thật, nên thứ người nhận nhận được không còn là điều họ tưởng');
+  /* Chặn vì máy viết HAY, không vì viết dở — nên câu hỏi thường vẫn đi
+     qua cổng này. Một cổng chặn cả câu lành là một cổng bắt oan. */
+  const ngSach = mLGD.soatNguoiGiu('công ty em có chính sách khen thưởng nhân viên thế nào');
+  bao(ngSach.sach === true,
+    'và câu có chữ "khen" nhưng KHÔNG phải lời khen con thì đi qua',
+    'dò cụm nhiều âm tiết, không dò âm tiết trần — "khen" nằm trong "khen thưởng"');
+
+  /* ── L08 · KHÔNG GIỮ CHÂN ── */
+  const gcBan = mLGD.soatGiuChan('Nhà mình sắp mất chuỗi rồi, vào tick ngay nhé!');
+  const gcSach = mLGD.soatGiuChan('Tuần này nhà mình đang đi chuỗi 21 ngày thứ hai.');
+  bao(!gcBan.sach && gcSach.sach === true,
+    'L08 · CÂU DOẠ MẤT CHUỖI BỊ CHẶN, câu nói về "chuỗi 21 ngày" thì không',
+    'bắt ' + gcBan.thay.join(' · ') + ' · mọi mẹo giữ chân đều hiệu quả, đó là lý do ' +
+    'chúng có mặt khắp nơi — dùng ở đây là đổi lòng tin của một gia đình lấy vài lượt mở app');
+
+  /* ── HAI NGĂN KHÔNG GỘP ── */
+  const bl = await goi({fn:'docLuatGiaoDien', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(bl.than.ok && Array.isArray(bl.than.coRang) && Array.isArray(bl.than.canhTruoc) &&
+      bl.than.coRang.length === 7 && bl.than.canhTruoc.length === 5 &&
+      bl.than.tyLe === undefined && bl.than.daCuongChe === undefined,
+    'BẢN LUẬT TRẢ VỀ HAI NGĂN RIÊNG, không một phân số "đã cưỡng chế mấy trên mười hai"',
+    bl.than.coRang.length + ' có cổng thật · ' + bl.than.canhTruoc.length +
+    ' canh đặt trước · một phân số ở đây đọc ra như mức hoàn thành, mà năm luật chưa ' +
+    'có bề mặt đúng là năm luật sẽ được viết bởi người không đọc bản này');
+}
+
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng

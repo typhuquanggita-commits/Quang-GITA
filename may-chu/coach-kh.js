@@ -23,6 +23,7 @@
 
 import { Kho } from './nen.js';
 import * as VungManh from './vung-manh.js';
+import * as LuatGD from './luat-giao-dien.js';
 
 /* ═══════════════ BẢN CHÉP CỦA KHO ═══════════════ */
 
@@ -194,6 +195,38 @@ export async function traLoiCoach(y, env, db, hoSo) {
     error: 'Chưa phân luồng. Bước B2 của vòng chín bước không bỏ được: bốn luồng ' +
       'nặng đi đường khác, và không phân luồng thì chúng đi đường thường.' };
   if (cauHoi.length < 5) return { ok: false, error: 'Thiếu câu hỏi.' };
+
+  /* ══ L10 · BA GHẾ NGƯỜI GIỮ ══  (9.99.74)
+
+     Máy KHÔNG soạn hộ lời khen con, lời xin lỗi, thư tha thứ, tin nhắn
+     an ủi. Chặn ĐẦU cửa, trước cả phân luồng và hội đồng: bốn thứ này
+     không phải một luồng khó cần thêm người duyệt — chúng không phải
+     việc của máy ở bất kỳ luồng nào.
+
+     Chặn vì máy viết HAY, không phải vì máy viết dở. Một lời xin lỗi do
+     máy viết đọc lên nghe y hệt một lời xin lỗi thật, và người nhận
+     không có cách nào phân biệt — nên thứ họ nhận được không còn là
+     điều họ tưởng mình đang nhận. Chặn vì nó viết dở thì mai nó viết
+     hay hơn là luật hết hiệu lực.
+
+     Trả kèm DÒNG NHẮC, không chỉ trả lời từ chối: người hỏi đang cần
+     viết một câu khó, và đuổi họ đi tay không thì lần sau họ đi hỏi
+     một cái máy không có cổng nào. */
+  const ng = LuatGD.soatNguoiGiu(cauHoi);
+  if (!ng.sach) {
+    await LuatGD.ghiChanLuat(db, hoSo, 'L10', ng.viec + ' · ' + ng.dau);
+    return { ok: false, code: 'NGUOIGIU', viec: ng.viec, nhac: ng.nhac,
+      oVietTay: true, error: ng.vi };
+  }
+
+  /* ══ L04 · DỮ LIỆU VÒNG ĐỎ KHÔNG RỜI MÁY ══
+     Soi cả vật yêu cầu, mọi tầng. Năm ô ấy không có bản nào ở máy chủ,
+     nên chúng cũng không được đi VÀO một cửa máy chủ. */
+  const vd = LuatGD.soatVongDo(x, 'cửa traLoiCoach');
+  if (!vd.sach) {
+    await LuatGD.ghiChanLuat(db, hoSo, 'L04', vd.thay.join(' · '));
+    return { ok: false, code: 'VONGDO', thay: vd.thay, error: vd.vi };
+  }
 
   /* ── LUỒNG NẶNG: HỘI ĐỒNG BA LƯỢT, CHẶN TRƯỚC KHI DỰNG ── */
   const hd = soatHoiDong(luong, x.luot);
