@@ -68,6 +68,10 @@ hành → sinh tệp nạp khoá → gộp mã → dựng bản một tệp → 
 | Bộ rà soát chỗ trống | `xvfb-run -a node tools/ra-soat-day-du.js` | ~3 phút |
 | **Đo khung màn — 4 khổ thật** | `xvfb-run -a node tools/do-khung-man.js --im` | ~6 phút |
 | Kho vừa đóng đổi gì | `node tools/soi-doi-kho.js` | 3 giây |
+| **Sao lưu kho gốc + khoá** | `node tools/sao-luu.js <thư-mục-NGOÀI-kho>` | ~20 giây |
+| Khôi phục từ bản sao lưu | `node tools/khoi-phuc-kho.js <tệp.gita> [ra]` | ~15 giây |
+| **Đo rò dữ liệu theo vai** | `xvfb-run -a node tools/do-ro-ri.js` | ~3 phút |
+| Gom câu chờ chủ hệ về một tờ | `node tools/phieu-quyet.js [ra.md]` | 3 giây |
 | Đề bài thị giác → tấm PNG | `node tools/tam-ra-anh.js <đề-bài.json> <thư mục> [khổ]` | ~10 giây |
 | Tấm in A4/A5 | `node tools/tam-ra-anh.js <đề-bài.json> <thư mục> a4d` | ~10 giây |
 | Bộ tấm PNG → phim mp4 | `node tools/dung-phim.js <thư mục> <ra.mp4> [giây/cảnh]` | ~20 giây |
@@ -136,6 +140,8 @@ này: KICHBAN (8.9), CV_MUC (9.7), và 17 kho nghề (9.8).
    2 vai. Hai bộ trên đọc CHUỖI HTML và chạy ở đúng một khổ để bàn, nên
    không bộ nào trả lời được câu của người cầm điện thoại.
 5. Bump số bản ở `src/data.core.js`, `desktop/package.json`, `sw.js`
+6. `node tools/sao-luu.js <thư-mục-ngoài-kho>` — kho-goc/ và khoa.json
+   KHÔNG có trong git; không sao lưu thì một lượt mất máy là mất hẳn.
 
 **Không bao giờ `git add kho-goc/` hay `kho/khoa.json`.**
 
@@ -2102,6 +2108,184 @@ vẫn mang `hai: false` kèm ô `baoSau`.
   vùng là chủ hệ thu hẹp quyền của chính mình; bớt một vùng là mở một
   cửa, nên **bớt thì phải nói ra vùng ấy được đổi bằng đường nào thay
   thế**.
+
+---
+
+## SAO LƯU · SOI RÒ · PHIẾU QUYẾT (9.99.78)
+
+Bản này **không thêm màn nào**. Nó vá ba chỗ mà mười một tháng dựng
+chức năng chưa chạm tới, và chỗ thứ nhất là chỗ mất là mất hẳn.
+
+### 1 · Khoá kho chỉ có MỘT bản, trên MỘT cái máy
+
+```
+kho/khoa.json   682 byte · 8 khoá AES-256-GCM · crypto.randomBytes(32)
+kho-goc/        173 tệp · 57.496 dòng, trong đó 7.201 dòng chú giải
+```
+
+Cả hai nằm trong `.gitignore` một cách **đúng**. Cái giá của quyết định
+ấy chưa bao giờ được ghi ra: chúng **chỉ có một bản**, và máy làm việc
+thì bị thu hồi.
+
+Tệp này vẫn viết *"bảy tệp .enc đã phát hành là bản lưu duy nhất của
+nội dung — chúng đã cứu được cả kho một lần ở bản 9.6"*. Câu ấy đúng, và
+nó đúng **chỉ khi còn khoá**. Khoá là số ngẫu nhiên, không suy ra được
+từ gì cả. Mất nó thì 8 tệp `.enc` trong git thành chuỗi byte không mở
+được, 1.131 kho đi theo, và mọi giấy phép đã cấp ngừng chạy.
+
+Vế thứ hai ấy không được ghi ở đâu — đúng lớp lỗi 9.99.57 đã từ chối làm
+dấu chìm trong bit thấp: **một lớp bảo vệ không nói giới hạn thì người
+đọc tin nó chống được nhiều hơn thật.**
+
+### Và `.enc` KHÔNG dựng lại được `kho-goc/` — đo chứ không đoán
+
+| Mất gì | `.enc` cứu được không |
+|---|---|
+| 1.131 kho **dữ liệu** | ✅ nếu còn khoá |
+| **7.201 dòng chú giải** (13%) | ❌ `JSON.stringify` không giữ |
+| cách chia 173 tệp | ❌ |
+
+Chú giải là phần tệp này gọi là đáng giá nhất. Nên `khoi-phuc-kho.js` có
+**hai đường**, và đường đi từ `.enc` **nói thẳng** nó trả về một cái xác
+không có lời giải thích, thay vì báo "đã khôi phục xong". Trộn hai đường
+vào một câu là chỗ nguy hiểm nhất: người ta đọc thấy xong, đóng máy, rồi
+sáu tháng sau kho không còn dòng nào nói vì sao.
+
+| Lệnh | Việc |
+|---|---|
+| `node tools/sao-luu.js <thư-mục-NGOÀI-kho>` | gói `kho-goc/` + `khoa.json`, AES-256-GCM, scrypt N=32768 |
+| `node tools/khoi-phuc-kho.js <tệp.gita> [ra]` | đường **ĐỦ** — 174 tệp, đúng từng byte |
+| `node tools/khoi-phuc-kho.js --tu-enc [ra]` | đường **CỤT** — chỉ dữ liệu, mất chú giải |
+
+**Ba luật của bộ sao lưu**, cả ba đều đã phá thử:
+
+1. **KHÔNG ghi vào trong kho mã** — chặn, không cảnh báo. Một tệp mang
+   toàn bộ khoá nằm trong thư mục kho là tệp sẽ bị `git add -A` nuốt vào
+   đúng ngày người ta vội, và GitHub giữ lịch sử.
+2. **Mật khẩu không đi qua tham số dòng lệnh** — `ps aux` đọc được tham
+   số của mọi tiến trình, và shell ghi lại vào lịch sử.
+3. **Tự kiểm ngay**: ghi xong là đọc lại **từ đĩa** rồi so từng tệp;
+   lệch thì XOÁ tệp vừa ghi. Đọc lại từ đĩa mới bắt được ghi dở dang.
+
+**Chỗ bộ này KHÔNG cứu được, nói thẳng:** mất *mật khẩu* thì bản sao lưu
+cũng là rác. Nó đổi "giữ 682 byte bí mật" thành "nhớ một câu" — dễ hơn
+nhiều, không phải là không thể mất. Nên phải có **hai đường độc lập**,
+và đường thứ hai đã nằm sẵn trong danh sách triển khai:
+`npx wrangler secret put GITA_KHOA_KHO`.
+
+**Mục 94** canh cả đường ấy, và phép đo đáng tin duy nhất của nó là phép
+đo cuối: **chạy thật** vòng mã hoá → giải mã → so, rồi đòi bộ giải mã
+phải ĐỎ khi sai mật khẩu và khi một byte bị sửa. Ba phép đo kia đọc mã
+nguồn nên chỉ kiểm được *hình*.
+
+### 2 · Đo rò dữ liệu — `tools/do-ro-ri.js`
+
+Luật *lọc trên màn hình KHÔNG phải bảo vệ dữ liệu* đã cắn ba lần
+(KICHBAN 8.9 · CV_MUC 9.7 · 17 kho nghề 9.8), và cả ba lần **không bộ
+kiểm nào bắt được** — vì mọi bộ soi đều đọc MÃ NGUỒN, mà mã nguồn thì
+khai đúng. Chỗ sai nằm ở thứ thật sự có trong bộ nhớ sau khi đăng nhập.
+
+Nay có công cụ, và kết quả hôm nay: **KHÔNG RÒ**.
+
+```
+R13 phụ huynh  gói nen,tang1..3      362 kho ·  6.044 bản ghi
+coach R07      gói nen,nghe,tang1..5 1.219 kho · 16.141 bản ghi
+```
+
+**Hai lần phép đo này bắt oan, ghi để không lặp:**
+
+1. Bản đầu lấy `G.THUOC_CAP_PHEP` làm "danh sách kho nghề" và báo **RÒ
+   570 KHO**. Sai hoàn toàn: đó là danh sách kho phải **XOÁ KHI ĐỔI
+   VAI**, gồm cả kho gói tầng khách hàng trả tiền để có.
+2. Bản hai đo đúng danh sách nhưng đo **sự có mặt của tên**, báo RÒ 2
+   kho — `KICHBAN` · `FAMILIES`. Cũng sai: cả hai là **mảng rỗng** ở máy
+   khách, khung khai sẵn trong `src/`. Coach có 1.000 và 10 bản ghi;
+   phụ huynh có 0.
+
+**Phải đếm BẢN GHI, không đếm TÊN.** Một cái tên có mặt với không bản
+ghi nào là một khung rỗng, không phải chỗ rò — và báo nó là rò thì lần
+sau người ta tắt phép đo đi, đúng vào lúc có chỗ rò thật.
+
+Phá thử bằng cách trồng một bản ghi thật vào `src/kho-khoa.js`: đỏ đúng
+chỗ, gọi đúng tên kho và số bản ghi.
+
+### 3 · Phiếu quyết — `tools/phieu-quyet.js`
+
+`soat-san-sang.js` trả lời đúng câu nó sinh ra để trả lời. Với 53 mục
+máy không đo được, nó in **một dòng** nối tên chúng bằng dấu chấm giữa,
+dài hơn hai nghìn ký tự. Dòng ấy đúng, và vô dụng với người phải trả
+lời — muốn trả lời thì phải biết bốn thứ, và cả bốn **đều có sẵn trong
+kho**, chỉ chưa bao giờ được trình ra cùng nhau.
+
+**Một sự thật CÓ mà không đọc ra được thì trên thực tế là KHÔNG CÓ** —
+đúng câu đã viết cho sổ truy vết một tấm ở 9.99.59, và nó áp vào đây y
+hệt: 53 câu nằm rải trong 33 sổ thì không ai trả lời được câu nào, nên
+sổ chờ chỉ dài ra chứ không ngắn đi.
+
+Phiếu chia **hai phần không trộn**: 11 mục **việc viết** (máy đếm được
+tiến độ — không ai phải quyết gì, chỉ là chưa ai ngồi viết) và 53 mục
+**quyết định**. Trộn thì một việc cần ba trăm giờ viết nằm cạnh một câu
+trả lời trong ba mươi giây, cùng kiểu chữ.
+
+**Phiếu KHÔNG có ô "máy đề nghị".** Luật của kho là *máy đề xuất, chủ hệ
+quyết*, và một lời đề nghị in sẵn cạnh câu hỏi thì người đọc gật theo —
+nhất là lúc mệt, nhất là với câu khó, tức là đúng những câu đáng nghĩ
+nhất.
+
+**30 trong 33 sổ chờ nằm ở gói NGHỀ**, nên phiếu là nội dung nghề và
+không được lên kho mã — cùng lý do với `kho-goc/`. Chặn hai lớp:
+`.gitignore`, và công cụ **hỏi thẳng `git check-ignore`** rồi từ chối
+ghi. Hỏi git chứ không tự suy từ tên tệp: tự suy thì đổi tên một chút là
+lọt, và người đổi tên không cố ý — họ chỉ muốn hai bản để so.
+
+### 4 · Một lượt bị CSP chặn trông y hệt một lượt mất mạng
+
+`cau-hinh.js` và `connect-src` của `index.html` là **hai chỗ phải khớp**,
+và `soat-san-sang.js` đã canh phía tĩnh. Chỗ còn hở là **lúc chạy**:
+trình duyệt cố ý không nói lượt nào bị CSP chặn — cả hai đều ném đúng
+một câu `Failed to fetch`. Người dán địa chỉ lúc nửa đêm không chạy bộ
+soát; họ bấm "Thử nối", thấy câu ấy, rồi đi tìm ở phía máy chủ suốt một
+tiếng trong khi máy chủ vẫn chạy đúng.
+
+`doanViSao()` **không kết luận, chỉ NÊU**: máy không phân biệt được hai
+nguyên nhân, và nói chắc một cái là dẫn người ta đi sai đường đúng lúc
+đang vội — cùng luật với `khoi-phuc-kho.js` khi AES-GCM báo sai. Nó chỉ
+nói thêm cái người kia chưa biết: địa chỉ này **khác gốc** với trang,
+nên có một chỗ thứ hai phải khai.
+
+### Lần thứ TƯ của cùng một lớp lỗi — nay là LUẬT
+
+Phép đo `mkKhongArgv` của mục 94 **đỏ ngay ở bản nguyên vẹn**:
+`khoi-phuc-kho.js` có câu cảnh báo *"ps aux đọc được argv"* nằm trong
+một **chuỗi**, không phải chú giải. Phép đo bắt oan đúng lời cảnh báo về
+cái bẫy nó canh — và cách sửa dễ nhất, xoá câu cảnh báo đi, là cách sai
+nhất.
+
+Lần thứ tư sau mục 89 (cột `ghiChu`) · mục 91 (dòng `12/12`) · mục 93
+(`hoSo.username`). Nên từ đây nó là một **luật**, không phải một lần vấp:
+
+> **Phép đo dò một cái tên bị cấm trong mã nguồn phải bỏ CẢ chú giải LẪN
+> chuỗi.** Chỗ **khai** một cái tên và chỗ **nói về** cái tên ấy là hai
+> chuyện khác nhau.
+
+### Và một bản chép thứ ba suýt ra đời
+
+Ba hàm `cau()` · `ten()` · `nhan()` — biết ba tên ô của một câu hỏi
+(`t` 35 mục · `viec` 16 · `hoi` 13) — là biến **cục bộ** trong
+`soat-san-sang.js`. 9.99.63 đã gom chúng về một hàm sau khi hai bản chép
+viết tay in ra `CC-TEN · undefined`.
+
+Khi `phieu-quyet.js` cần đúng ba hàm ấy, lựa chọn là chép sang hay tách
+ra. Nay chúng ở `tools/so-cho.js`, và `soat-san-sang.js` **trỏ** vào đó.
+Gom về một hàm nhưng để nó cục bộ thì mới là gom được **một nửa**.
+
+### Chỗ bản này KHÔNG làm được, và vì sao
+
+- **9 bí mật máy chủ · GitHub Pages · DNS** — việc bấm tay của chủ hệ.
+  Không lệnh nào làm hộ được.
+- **53 câu quyết định** — luật của kho là *máy đề xuất, chủ hệ quyết*,
+  và nhiều câu trong số đó là **Vùng Đỏ**. Phiếu quyết làm chúng trả lời
+  được; trả lời vẫn là việc của người.
 
 ---
 

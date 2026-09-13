@@ -227,12 +227,12 @@ if (kg.thieuKho) {
      "CC-TEN · undefined" cho ba mục và ba dòng trống cho mấy mục không
      đánh mã. Một dòng nhắc không nói nó nhắc việc gì thì nó không nhắc
      được ai. Đúng thứ luật của kho cấm: bản thứ hai của một sự thật. */
-  const cau = (x) => String(x.viec || x.hoi || x.t || x.o || '')
-    .replace(/\s+/g, ' ').trim().slice(0, 70);
-  const ten = (x) => x.ma || cau(x) || '(mục không tên)';
-  const nhan = (x) => x.ma
-    ? (cau(x) ? x.ma + ' · ' + cau(x) : x.ma)
-    : (cau(x) || '(mục không tên)');
+  /* Ba hàm này TRỎ sang tools/so-cho.js, không khai lại ở đây. Bản
+     trước để chúng là biến cục bộ, và khi phieu-quyet.js cần đúng ba
+     hàm ấy thì lựa chọn là chép sang hay tách ra — chép sang là dựng
+     bản thứ hai của một sự thật lần thứ BA ở đúng chỗ đã cắn một lần
+     rồi (9.99.63). */
+  const { cauGon: cau, ten, nhan } = require('./so-cho.js');
   docRa.forEach(s => s.muc.forEach(m => {
     if (m.ket.trang === 'hong') {
       dat(false, ten(m.muc) + ' khai sai đường đo', m.ket.vi);

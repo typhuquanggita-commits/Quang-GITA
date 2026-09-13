@@ -15662,6 +15662,174 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n94 · SAO LƯU — HAI THỨ KHÔNG CÓ Ở CHỖ NÀO KHÁC');
+  /* ══════════════════ 94. ĐƯỜNG SAO LƯU VÀ KHÔI PHỤC ══════════════════
+
+     Kho mã giữ được gần hết. Đúng HAI thứ nó không giữ, và cả hai nằm
+     trong .gitignore một cách cố ý:
+
+       kho/khoa.json   682 byte · 8 khoá AES-256-GCM sinh ngẫu nhiên
+       kho-goc/        173 tệp · 57.496 dòng, trong đó 7.201 dòng chú giải
+
+     Cả hai đều ĐÚNG khi nằm ngoài git. Cái giá là chúng chỉ có một bản,
+     trên một cái máy — và máy làm việc thì bị thu hồi.
+
+     CLAUDE.md viết "bảy tệp .enc đã phát hành là bản lưu duy nhất của
+     nội dung". Câu ấy đúng, và nó đúng CHỈ KHI CÒN KHOÁ. Vế thứ hai
+     không được ghi ở đâu cho tới 9.99.78 — một lớp bảo vệ mà người đọc
+     tin nó chống được nhiều hơn thật, đúng lớp lỗi 9.99.57 đã từ chối
+     làm dấu chìm trong bit thấp.
+
+     Mục này canh bốn thứ, và thứ tư là thứ duy nhất đáng tin:
+
+       · hai bộ công cụ có mặt, và .gitignore chặn đủ ba đường
+       · mật khẩu KHÔNG bao giờ đi qua argv — thứ không được tồn tại
+       · cổng chặn ghi bản sao lưu vào trong kho mã còn răng
+       · VÒNG KHÔI PHỤC CHẠY THẬT: mã hoá rồi giải mã rồi so từng byte
+
+     Ba vế đầu đọc mã nguồn, nên chúng chỉ kiểm được hình. Vế thứ tư
+     chạy đúng cái sẽ chạy lúc mất dữ liệu. Một đường lùi chưa ai đi thử
+     là một đường lùi không tồn tại — và người ta chỉ phát hiện ra điều
+     đó vào đúng lúc cần nó. */
+  {
+    const SL = require('./sao-luu.js');
+    const ngSL = fsGoc.readFileSync(pathGoc.join(__dirname, 'sao-luu.js'), 'utf8');
+    const ngKP = fsGoc.readFileSync(pathGoc.join(__dirname, 'khoi-phuc-kho.js'), 'utf8');
+    const ngGI = fsGoc.readFileSync(pathGoc.join(__dirname, '..', '.gitignore'), 'utf8');
+
+    const s = {};
+
+    /* ── A · .gitignore CHẶN ĐỦ BA ĐƯỜNG ──
+       Thiếu một dòng ở đây thì thứ lọt lên GitHub không gọi về được:
+       GitHub giữ lịch sử, nên đẩy nhầm một lần là phải ĐỔI CẢ BỘ KHOÁ
+       rồi cấp lại giấy phép cho toàn bộ người đang dùng. */
+    s.chanKhoGoc = /^kho-goc\/\s*$/m.test(ngGI);
+    s.chanKhoa = /^kho\/khoa\.json\s*$/m.test(ngGI);
+    s.chanGita = /^\*\.gita\s*$/m.test(ngGI);
+
+    /* ── B · MẬT KHẨU KHÔNG ĐI QUA argv ──
+       Phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI, lối đo thứ BẢY trong bộ sau
+       LR1 (79) · ô tự khai (81) · cột đèn (83) · cột ba cửa (86) · ô
+       lọc bốc nhà (88) · cửa chưa dựng (91) · ô cấp tự chọn (93).
+
+       `ps aux` đọc được argv của mọi tiến trình đang chạy, kể cả của
+       tài khoản khác trên máy nhiều người, và shell còn ghi vào lịch
+       sử. Một mật khẩu đi qua argv là một mật khẩu đã lộ — chỉ là chưa
+       ai nhặt.
+
+       ══ BỎ CHÚ GIẢI THÔI LÀ CHƯA ĐỦ — LẦN THỨ TƯ CỦA CÙNG MỘT LỚP LỖI ══
+
+       Bản đầu của phép đo này chỉ bỏ chú giải, và nó ĐỎ NGAY ở bản
+       nguyên vẹn: `khoi-phuc-kho.js` có câu cảnh báo "ps aux đọc được
+       argv" nằm trong một CHUỖI, không phải trong chú giải.
+
+       Tức là phép đo bắt oan đúng lời cảnh báo về cái bẫy mà nó canh —
+       và cách sửa dễ nhất, xoá câu cảnh báo đi, là cách sai nhất. Lần
+       thứ tư sau mục 89 (cột ghiChu) · mục 91 (dòng 12/12) · mục 93
+       (hoSo.username), nên từ đây nó là một LUẬT chứ không phải một lần
+       vấp: **phép đo dò một cái tên bị cấm trong mã nguồn phải bỏ CẢ
+       chú giải LẪN chuỗi.** Chỗ khai một cái tên và chỗ NÓI VỀ cái tên
+       ấy là hai chuyện khác nhau. */
+    const boChu = t => t
+      .replace(/\/\*[\s\S]*?\*\//g, '')
+      .replace(/(^|[^:])\/\/.*$/gm, '$1')
+      .replace(/'(?:[^'\\]|\\.)*'/g, "''")
+      .replace(/"(?:[^"\\]|\\.)*"/g, '""')
+      .replace(/`(?:[^`\\]|\\.)*`/g, '``');
+    const thanMK = (t) => {
+      const m = /function docMatKhau\(\)\s*\{([\s\S]*?)\n\}/.exec(t);
+      return m ? boChu(m[1]) : '';
+    };
+    s.mkKhongArgv = !!thanMK(ngSL) && !/argv/.test(thanMK(ngSL)) &&
+      !!thanMK(ngKP) && !/argv/.test(thanMK(ngKP));
+
+    /* ── C · CỔNG CHẶN GHI VÀO TRONG KHO MÃ CÒN RĂNG ──
+       Đo VỊ TRÍ chứ không dò chuỗi: `throw` phải nằm trong nhánh
+       `trongKho`. Dò chuỗi thì cổng bị vô hiệu bằng `if (false && …)`
+       mà phép đo vẫn xanh — đúng chỗ đã bắt được ở mục 93 với
+       CHUATHULUI. Một phép kiểm KHÔNG THỂ đỏ thì tệ hơn một phép kiểm
+       chưa từng đỏ: nó khai rằng chỗ ấy đã được canh. */
+    const mCho = /function soatChoGhi\(([\s\S]*?)\n\}/.exec(ngSL);
+    const thanCho = mCho ? mCho[1] : '';
+    const viNhanh = thanCho.search(/if \(trongKho\)/);
+    const viNem = thanCho.indexOf('throw');
+    s.congChoGhi = viNhanh > 0 && viNem > viNhanh;
+
+    /* ── D · DANH SÁCH PHẦN PHẢI PHỦ ĐỦ HAI THỨ NGOÀI GIT ──
+       Sao lưu thiếu một nửa trông y hệt sao lưu đủ: cùng tên, cùng chỗ,
+       mở ra vẫn có nội dung. Người ta chỉ biết nó thiếu vào đúng ngày
+       phải dùng nó. */
+    const tenPhan = (SL.PHAN || []).map(p => p.ten);
+    s.phuDu = tenPhan.indexOf('kho/khoa.json') >= 0 && tenPhan.indexOf('kho-goc') >= 0 &&
+      (SL.PHAN || []).every(p => p.batBuoc && p.vi);
+
+    /* ── E · VÒNG KHÔI PHỤC CHẠY THẬT ──
+       Phép đo duy nhất của mục này đo HÀNH VI. Ba vế trên đọc mã nguồn
+       nên chúng chỉ kiểm được HÌNH; vế này chạy đúng cái sẽ chạy lúc
+       mất dữ liệu.
+
+       Dùng dữ liệu tổng hợp nhỏ, không gọi gom() trên kho thật: bộ kiểm
+       chạy mỗi lượt phát hành, và mã hoá 17 MB hai lần mỗi lượt là trả
+       giá thật để canh một thứ không đổi theo cỡ. Cái được canh là
+       PHONG BÌ và cặp mã hoá/giải mã, và nó sai y hệt nhau ở mọi cỡ. */
+    const thuMk = 'mat-khau-thu-cua-bo-kiem-2026';
+    const thuThan = { a: 'chữ có dấu · tiếng Việt · "nháy" & <thẻ>', b: ' ÿ', c: 'x'.repeat(5000) };
+    const ro = zlibGoi.gzipSync(Buffer.from(JSON.stringify(thuThan), 'utf8'), { level: 9 });
+    let vongDat = false, vongSai = '';
+    try {
+      const goi = SL.maHoa(ro, thuMk);
+      /* Nhãn và phiên bản phải đúng chỗ, nếu không thì tệp cũ mở bằng
+         bản mới sẽ đọc lệch phong bì mà không ai báo. */
+      const dungNhan = goi.subarray(0, 8).equals(SL.NHAN) && goi[8] === SL.PHIEN_BAN;
+      const lai = JSON.parse(zlibGoi.gunzipSync(SL.giaiMa(goi, thuMk)).toString('utf8'));
+      const khop = JSON.stringify(lai) === JSON.stringify(thuThan);
+
+      /* Và phải ĐỎ ĐÚNG CHỖ khi sai mật khẩu hoặc khi một byte bị sửa.
+         Một bộ giải mã chấp nhận tất cả thì nó không xác thực gì cả, và
+         lúc ấy khôi phục một kho ĐÃ HỎNG rồi phát hành nó — tệ hơn hẳn
+         việc biết là hỏng. */
+      let chanSaiMk = false, chanSuaByte = false;
+      try { SL.giaiMa(goi, 'mat-khau-khac-hoan-toan'); } catch { chanSaiMk = true; }
+      const hong = Buffer.from(goi); hong[hong.length - 1] ^= 1;
+      try { SL.giaiMa(hong, thuMk); } catch { chanSuaByte = true; }
+
+      vongDat = dungNhan && khop && chanSaiMk && chanSuaByte;
+      if (!vongDat) vongSai = [!dungNhan ? 'sai phong bì' : '', !khop ? 'ruột lệch' : '',
+        !chanSaiMk ? 'KHÔNG chặn sai mật khẩu' : '',
+        !chanSuaByte ? 'KHÔNG bắt được byte bị sửa' : ''].filter(Boolean).join(' · ');
+    } catch (e) { vongSai = 'SẬP: ' + e.message; }
+    s.vongKhoiPhuc = vongDat;
+
+    /* Một biểu thức, đọc hai lần. Ba lần trong kho này bao() và câu chi
+       tiết là hai bản chép viết tay của cùng một biểu thức. */
+    const slDat = s.chanKhoGoc && s.chanKhoa && s.chanGita && s.mkKhongArgv &&
+      s.congChoGhi && s.phuDu && s.vongKhoiPhuc;
+
+    bao(slDat,
+      'ĐƯỜNG SAO LƯU CHẠY THẬT, VÀ NÓ NÓI RA CHỖ NÓ KHÔNG CỨU ĐƯỢC. Kho mã giữ được gần hết mọi thứ; đúng HAI thứ nó không giữ, và cả hai nằm trong .gitignore một cách CỐ Ý: kho/khoa.json (682 byte, 8 khoá AES-256-GCM) và kho-goc/ (173 tệp, 57.496 dòng, trong đó 7.201 dòng chú giải). Cả hai đều đúng khi nằm ngoài git — nội dung chưa mã hoá và khoá mật không được lên một kho ai cũng nhân bản được — nhưng cái giá của quyết định ấy là chúng chỉ có MỘT bản, trên MỘT cái máy, và máy làm việc thì bị thu hồi. CLAUDE.md viết "bảy tệp .enc đã phát hành là bản lưu duy nhất của nội dung, chúng đã cứu được cả kho một lần ở bản 9.6" — câu ấy ĐÚNG, và nó đúng CHỈ KHI CÒN KHOÁ: khoá sinh bằng crypto.randomBytes(32) nên không suy ra được từ bất cứ thứ gì, và mất nó thì 8 tệp .enc trong git thành chuỗi byte không mở được, 1.131 kho đi theo, mọi giấy phép đã cấp ngừng chạy. Vế thứ hai ấy không được ghi ở đâu cho tới bản này — đúng lớp lỗi 9.99.57 đã từ chối làm dấu chìm trong bit thấp: một lớp bảo vệ không nói giới hạn thì người đọc tin nó chống được nhiều hơn thật. Và .enc KHÔNG dựng lại được kho-goc: nó gói bằng JSON.stringify nên giữ DỮ LIỆU và bỏ 7.201 dòng chú giải, đúng phần nói VÌ SAO, đúng phần đáng giá nhất — nên khoi-phuc-kho.js có hai đường và đường đi từ .enc NÓI THẲNG nó đang trả về một cái xác không có lời giải thích, thay vì báo "đã khôi phục xong". Mật khẩu KHÔNG bao giờ đi qua tham số dòng lệnh, vì ps aux đọc được tham số của mọi tiến trình đang chạy và shell còn ghi vào lịch sử — một mật khẩu đi qua đó là một mật khẩu đã lộ, chỉ là chưa ai nhặt. Cổng chặn ghi bản sao lưu vào trong kho mã CHẶN chứ không cảnh báo, vì hậu quả không sửa lại được: GitHub giữ lịch sử, đẩy nhầm một lần là phải đổi cả bộ khoá rồi cấp lại giấy phép cho toàn bộ người đang dùng. Và phép đo duy nhất đáng tin của mục này là phép đo cuối: nó CHẠY THẬT vòng mã hoá rồi giải mã rồi so từng byte, rồi đòi bộ giải mã phải ĐỎ khi sai mật khẩu và khi một byte bị sửa — một bộ giải mã chấp nhận tất cả thì nó không xác thực gì cả, và lúc ấy người ta khôi phục một kho ĐÃ HỎNG rồi phát hành nó',
+      slDat
+        ? 'kho-goc/ · kho/khoa.json · *.gita đều bị .gitignore chặn · mật khẩu không đi ' +
+          'qua tham số dòng lệnh ở cả hai bộ · cổng chặn ghi vào kho mã nằm trước lệnh ' +
+          'throw · ' + SL.PHAN.length + ' phần bắt buộc phủ đủ hai thứ ngoài git · vòng ' +
+          'mã hoá rồi giải mã rồi so chạy thật và ĐỎ đúng chỗ khi sai mật khẩu và khi ' +
+          'một byte bị sửa'
+        : [!s.chanKhoGoc ? '.gitignore KHÔNG còn chặn kho-goc/' : '',
+           !s.chanKhoa ? '.gitignore KHÔNG còn chặn kho/khoa.json — TOÀN BỘ KHOÁ MẬT ' +
+             'đang hở với git' : '',
+           !s.chanGita ? '.gitignore KHÔNG chặn *.gita — một bản sao lưu mang toàn bộ ' +
+             'khoá có thể lọt vào một lượt thêm tất cả' : '',
+           !s.mkKhongArgv ? 'MẬT KHẨU ĐI QUA THAM SỐ DÒNG LỆNH — ps aux đọc được tham ' +
+             'số của mọi tiến trình, và shell ghi lại vào lịch sử' : '',
+           !s.congChoGhi ? 'CỔNG CHẶN GHI VÀO KHO MÃ KHÔNG CÒN RĂNG — throw không nằm ' +
+             'trong nhánh trongKho' : '',
+           !s.phuDu ? 'DANH SÁCH PHẦN SAO LƯU KHÔNG PHỦ ĐỦ kho/khoa.json và kho-goc, ' +
+             'hoặc có phần không bắt buộc — một bản sao lưu thiếu trông y hệt một bản đủ' : '',
+           !s.vongKhoiPhuc ? 'VÒNG KHÔI PHỤC HỎNG: ' + (vongSai || 'không rõ') +
+             ' — đây là phép đo duy nhất chạy đúng cái sẽ chạy lúc mất dữ liệu' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

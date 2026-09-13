@@ -2475,7 +2475,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.77',
+  version: '9.99.78',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -17799,9 +17799,48 @@ G.goiMayChu = function(fn, than){
       return d;
     })
     .catch(function(e){
-      return {ok:false, error:'Không gọi được máy chủ: ' + (e && e.message || e)};
+      return {ok:false, error:'Không gọi được máy chủ: ' + doanViSao(e)};
     });
 };
+
+/* ══ MỘT LƯỢT BỊ CSP CHẶN TRÔNG Y HỆT MỘT LƯỢT MẤT MẠNG ══
+
+   Trình duyệt cố ý không nói ra lượt nào bị Content-Security-Policy
+   chặn: cả hai đều ném đúng một câu "Failed to fetch". Đó là quyết định
+   đúng của trình duyệt — nói ra là để trang dò được chính sách của nó —
+   nhưng với người đang triển khai thì nó là một chỗ hỏng IM LẶNG, và
+   kho này có một luật riêng về chỗ hỏng im lặng.
+
+   Chỗ này hỏng thật được: `cau-hinh.js` và `connect-src` của
+   `index.html` là HAI chỗ phải khớp nhau, và `soat-san-sang.js` đã canh
+   phía tĩnh. Nhưng người dán địa chỉ lúc nửa đêm thì không chạy bộ
+   soát — họ bấm "Thử nối", thấy "Failed to fetch", rồi đi tìm ở phía
+   máy chủ suốt một tiếng trong khi máy chủ vẫn đang chạy đúng.
+
+   Nên KHÔNG kết luận, chỉ NÊU: máy không phân biệt được hai nguyên nhân
+   ấy, và nói chắc một cái là dẫn người ta đi sai đường đúng lúc đang
+   vội — cùng luật với `khoi-phuc-kho.js` khi AES-GCM báo sai. Nó chỉ
+   nói thêm cái mà người kia chưa biết: địa chỉ này KHÁC gốc với trang,
+   nên có một chỗ thứ hai phải khai. */
+function doanViSao(e){
+  var loi = (e && e.message) || String(e);
+  var laMang = /failed to fetch|networkerror|load failed/i.test(loi);
+  if(!laMang) return loi;
+
+  var gocTrang = '', gocMayChu = '';
+  try { gocTrang = location.origin; } catch(_e){}
+  try { gocMayChu = new URL(G.API_CAP_PHEP, location.href).origin; } catch(_e){}
+
+  if(gocMayChu && gocTrang && gocMayChu !== gocTrang){
+    return loi + '. Địa chỉ máy chủ (' + gocMayChu + ') KHÁC gốc với trang (' +
+      gocTrang + '), nên có hai nguyên nhân và trình duyệt không phân biệt được: ' +
+      'mất mạng, hoặc CSP chưa khai origin ấy. Kiểm chỗ thứ hai: connect-src ' +
+      'trong index.html phải có đúng "' + gocMayChu + '". Chạy ' +
+      'node tools/soat-san-sang.js để máy đối chiếu hai chỗ ấy.';
+  }
+  return loi + '. Máy chủ cùng gốc với trang nên CSP không phải nguyên nhân — ' +
+    'nhiều khả năng là mất mạng hoặc máy chủ chưa chạy.';
+}
 
 G.kiemQuyenDrive = function(){
   if(!G.API_CAP_PHEP) return Promise.resolve({ok:false, ly:'Chưa nối máy chủ.'});
