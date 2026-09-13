@@ -1529,6 +1529,107 @@ của worker, từng màn với `G.NAV`.
 2. **Đọc sai hình `G.NAV`.** NAV là **nhóm → `items`**, không phải
    danh sách phẳng, nên bảy màn thật đều bị báo là không có trong NAV.
 
+---
+
+## BẢNG GIÁ SỬA ĐƯỢC — khung ở kho, số ở sổ (9.99.73)
+
+Chủ hệ nói thẳng một câu, và câu ấy đổi một giả định nền: *"Giá hiện
+tại là tạm thời để xây dựng. Bộ khung là cố định. Tạo thêm chức năng
+cập nhật và chỉnh sửa số ở bảng giá."*
+
+Tới 9.99.72 kho làm ngược — giá là **hằng số ở hai chỗ** (`HP_TANG[].gia`
+trong kho mã hoá và một hằng trong `tai-chinh.js`), nên đổi một con số
+phải qua trọn một lượt phát hành. **Một con số tạm mà cứng như thế thì
+trên thực tế nó không tạm** — và cái cứng nhầm chỗ thì người ta đi
+đường vòng: gõ tay số khác vào hợp đồng, và từ đó sổ với hợp đồng nói
+hai giá.
+
+Màn **Bảng giá** (`src/bang-gia.js`, ba ngăn), máy chủ
+`may-chu/bang-gia.js`, kho `data.bang-gia.js` (6 kho), bảng `bangGia`,
+bộ kiểm **mục 90**, mười bốn phép đo ở `thu-worker.js`.
+
+### Cắt theo THỨ GÌ ĐỔI NHANH, không theo thứ gì tiện sửa
+
+Không phải mọi thứ trong bảng giá đều tạm:
+
+| Nửa | Ở đâu | Đổi thế nào |
+|---|---|---|
+| **Khung** — tên · gồm · KHÔNG gồm · nhịp thu · hoàn | kho (`G.HP_TANG`) | sửa kho gốc rồi phát hành lại |
+| **Số** — con số tiền từng bậc | sổ (bảng `bangGia` ở D1) | sửa ngay trên màn, chỉ R01, phải viết lý do |
+
+Khung là thứ Học viện **HỨA GIAO**. Lời hứa đổi thì phải để lại một
+bản đọc lại được — một gia đình ký hôm nay phải chỉ ra được bản mô tả
+nào đang áp cho họ. **Cắt theo thứ tiện sửa thì cuối cùng mọi thứ đều
+chui vào chỗ sửa nhanh, kể cả lời hứa.**
+
+Bảng **không có cột "giá hiện tại"**: giá đang chạy là dòng mới nhất
+của bậc ấy, tính lúc đọc. Cùng luật với cột `conHan` không có trong
+`theVungManh` (9.99.63) và cột `den` không có trong `hoSoSongSinh`
+(9.99.66).
+
+### Ba cái răng, và mỗi cái có một phép đo hành vi
+
+1. **R1 · giá đã chốt vào lịch thu thì ĐỨNG YÊN.** `dungLichThu` đọc
+   giá một lần rồi **đóng băng** số tiền vào từng kỳ. Đổi theo là đổi
+   số tiền một gia đình đã ký — họ không được hỏi, và họ chỉ biết khi
+   nhìn hoá đơn. Nửa kia cũng phải đo: **nhà ký sau khi đổi giá thì
+   lịch thu mang giá mới** — thiếu nửa ấy thì cả cửa đổi giá là một
+   cái nút không nối vào đâu cả.
+2. **R2 · đổi giá KHÔNG tự dời thang duyệt chi.** `soatNeoThang(giá)`
+   **nêu** chỗ lệch rồi dừng. Thang tự dời theo giá nghĩa là quyền
+   tiêu tiền của cả Học viện đổi mà không ai ký.
+3. **R3 · giá là VÙNG ĐỎ.** Chỉ R01, lý do tối thiểu mười ký tự, và
+   bậc **mới** phải khai đủ năm ô khung. Mã `datGia` được đối chiếu
+   với `BoNao.DO10` thật — trỏ vào một cái tên không tồn tại thì cổng
+   lặng lẽ không chặn gì, mà nhìn vẫn y hệt một cổng đủ răng.
+
+### Đổi tên `GIA_TANG` → `GIA_KHOI_DAU` là cố ý
+
+Giá nay sửa được trong sổ, nên **một hằng số tên "giá tầng" mà không
+phải giá đang chạy là cái bẫy đúng nghĩa**: người đọc sau tin nó, tính
+một con số, và con số ấy sai theo đúng hướng không ai kiểm. Tên mới
+nói thẳng nó là gì, và nó dời sang `bang-gia.js`.
+
+Mục 90 thêm một vế: **đúng MỘT tệp trong `may-chu/` được khai hằng
+giá**, và mọi tệp khác dùng giá đều phải **nhập** từ `bang-gia.js`.
+Vế ấy dò **CHỖ KHAI, không dò con số** — dò con số thì thang duyệt chi
+bị bắt oan, vì nó neo vào giá gói một cách hợp lệ và đó chính là thứ
+`soatNeoThang()` sinh ra để nêu.
+
+### Phép đo giá chuyển từ mục 71 sang mục 90 — và vì sao
+
+Phép đo ấy **nằm lọt trong khối mục 80** từ lâu, nên mọi dòng đỏ của
+nó in ra `[mục 80]` trong khi chú giải — và cả tệp này — đều gọi nó là
+mục 71. Cùng lớp lỗi đã ghi ở 9.99.63: **con trỏ chỉ sai chỗ tệ hơn
+không có con trỏ**, vì người đọc tin nó, đi tìm ở mục 71, không thấy
+gì, rồi ngờ chính phép đo. Và nó chỉ lộ ra lúc phá thử — lúc xanh thì
+không có dòng đỏ nào để mà sai.
+
+Cùng lượt ấy, `bao()` và câu chi tiết của phép đo giá lại là **hai bản
+chép viết tay của cùng một biểu thức**: `bao()` xét cả thang neo, câu
+chi tiết chỉ xét hai bản giá. Nay tính một lần vào `const giaDat`.
+Đúng chuyện đã xảy ra ba lần và đã ghi ở 9.99.60.
+
+### Hai chỗ phép đo của chính tôi suýt câm
+
+1. **Phép so lịch thu sẽ XANH mãi mãi nếu lịch rỗng** — `0 === 0`.
+   Thêm `truocKy.length > 0`. Một phép đo chỉ đúng khi cái nó đo **có
+   thể sai**.
+2. **Phá thử R2 cho thấy phải tách làm hai.** Bắt thang tự dời theo
+   giá thì phép đo `khop === false` **vẫn xanh** — vì cái neo `C1` nằm
+   ngoài vòng lặp nên vẫn báo lệch. Chỉ phép đo thứ hai, đọc thẳng con
+   số nấc N3 trong chính dòng báo lệch, mới bắt được. Một phép đo nhìn
+   vào kết luận chung thì nó không thấy nửa đã trôi.
+
+### Sổ chờ
+
+- **BG-01** — bậc 5.000.000đ và đơn vị tính: tệp Hiến pháp của chủ hệ
+  dựng sáu bậc theo NĂM, kho dựng năm bậc theo CHẶNG. Máy không tự
+  chọn bản nào đúng, vì **đặt giá là Vùng Đỏ**. Chủ hệ đã chốt ở
+  9.99.73: **giữ năm bậc theo chặng**; mục còn lại là bậc 5 triệu.
+- **BG-02** — ai chốt lại thang duyệt chi sau mỗi lần đổi giá, và
+  trong bao lâu. `soatNeoThang` đã nêu sẵn chỗ lệch.
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ
@@ -1650,7 +1751,7 @@ Còn thật, tính tới 9.99.8:
   lời than, và ND-04 đã đứng yên ba bản đúng vì thế.
 
 **Đã xong, đừng làm lại:** pháp nhân trong `LICENSE`/`NOTICE` (không còn
-chỗ trống nào), học phí từng tầng (chốt 9.94, mục 71 đối chiếu hai bản),
+chỗ trống nào), học phí từng tầng (chốt 9.94, mục 90 đối chiếu hai bản),
 cửa sổ gộp 7 ngày và số báo giá N4/N5 (đã đặt và có phép đo).
 
 **Không phải việc của chủ hệ:** ngưỡng chuyển tuyến y tế/tâm lý. Kho

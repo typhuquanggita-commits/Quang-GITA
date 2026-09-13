@@ -28,7 +28,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { Kho, tokenMoi } from './nen.js';
-import { GIA_TANG } from './tai-chinh.js';
+import { GIA_KHOI_DAU } from './bang-gia.js';
 import { ghiDieuChinh, dungKy } from './bao-cao.js';
 import { baoLenCapCao } from './ngan-hang.js';
 
@@ -413,17 +413,24 @@ function nacCua(tien) {
    Phép này KHÔNG tự dời thang theo giá: dời thang là quyết định của chủ
    hệ thống. Nó chỉ nêu ra rằng neo đã lệch, để người quyết biết mà
    quyết. Bộ thử gọi nó và đỏ khi có lệch. */
-export function soatNeoThang() {
-  const neo = {N3: GIA_TANG[3], N4: GIA_TANG[4], N5: GIA_TANG[5]};
+export function soatNeoThang(giaDangChay) {
+  /* Nhận giá ĐANG CHẠY nếu người gọi đọc được; không có thì lùi về giá
+     khởi đầu. Từ 9.99.73 giá sửa được ở màn hình, nên phép soi này phải
+     so thang với con số THẬT — so với hằng số thì nó báo khớp mãi mãi
+     trong khi cái neo đã trôi, và đó đúng là chỗ nguy hiểm nhất: một
+     phép kiểm hỏng mà vẫn báo xanh. */
+  const g = (giaDangChay && typeof giaDangChay === 'object')
+    ? giaDangChay : GIA_KHOI_DAU;
+  const neo = {N3: g[3], N4: g[4], N5: g[5]};
   const lech = [];
   for (const n of NAC_THANG) {
     if (neo[n.ma] === undefined) continue;
     if (Number(n.tu) !== Number(neo[n.ma]))
       lech.push({nac: n.ma, thangDangDe: n.tu, giaGoiBayGio: neo[n.ma], neo: n.neo});
   }
-  if (Number(MOC_CHU_KY[1].tu) !== Number(GIA_TANG[3]))
+  if (Number(MOC_CHU_KY[1].tu) !== Number(g[3]))
     lech.push({nac: 'C1', thangDangDe: MOC_CHU_KY[1].tu,
-      giaGoiBayGio: GIA_TANG[3], neo: 'một gói T3'});
+      giaGoiBayGio: g[3], neo: 'một gói T3'});
   return {khop: lech.length === 0, lech,
     vi: 'Mỗi nấc neo vào giá một gói học phí, và trần chu kỳ neo vào gói T3. ' +
         'Giá gói đổi thì thang phải được CHỦ HỆ THỐNG chốt lại — phép này nêu ra ' +

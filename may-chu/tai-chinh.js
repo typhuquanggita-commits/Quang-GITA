@@ -32,6 +32,7 @@
    ═══════════════════════════════════════════════════════════════ */
 
 import { Kho, tokenMoi } from './nen.js';
+import { docGiaHienHanh } from './bang-gia.js';
 import { ghiDieuChinh } from './bao-cao.js';
 import { baoTienVao } from './bao-doanh-thu.js';
 import { quyenCua, oDauTien } from './chi-tieu.js';
@@ -47,7 +48,15 @@ const BAC = {R01:1,R02:2,R03:3,R04:4,R05:5,R06:6,R07:7,R08:8,
    T1 bằng 0 chứ KHÔNG phải null — hai thứ ấy khác nhau: null là chưa
    biết giá nên mọi phép tính đứng lại, 0 là đã biết và bằng không nên
    phép tính chạy và ra 0. Chốt của chủ hệ ở HH-CC-03. */
-export const GIA_TANG = {1: 0, 2: 500000, 3: 10000000, 4: 30000000, 5: 50000000};
+/* Giá gói KHÔNG còn là hằng số ở đây từ 9.99.73.
+
+   Con số khởi đầu chuyển sang `bang-gia.js → GIA_KHOI_DAU`, và giá ĐANG
+   CHẠY đọc từ bảng `bangGia` bằng `docGiaHienHanh(db)`. Giữ lại một
+   hằng tên `GIA_TANG` ở đây thì người đọc sau tin nó là giá hiện hành,
+   tính một con số, và con số ấy sai theo đúng hướng không ai kiểm.
+
+   Xuất lại đúng MỘT tên, và tên ấy nói thẳng nó là giá khởi đầu. */
+export { GIA_KHOI_DAU } from './bang-gia.js';
 
 /* ── NHỊP THU ──
 
@@ -105,7 +114,12 @@ export const SUY_RA = [
 export async function dungLichThu(db, maKhachHang, tang, vaoLuc) {
   const n = NHIP[tang];
   if (!n) return 0;
-  const gia = GIA_TANG[tang];
+  /* Đọc giá ĐANG CHẠY, không đọc hằng số. Và con số lấy được ở đây bị
+     ĐÓNG BĂNG vào các dòng lịch thu ngay dưới — đổi giá sau đó không
+     chạm tới nhà này nữa, vì đổi theo là đổi số tiền một gia đình đã
+     ký, và chuyện ấy không sửa lại được. */
+  const bg = await docGiaHienHanh(db);
+  const gia = bg.gia[tang];
   if (gia == null) throw new Error('Chưa có giá cho tầng ' + tang);
 
   /* Tầng 0 tiền thì không sinh kỳ nào: một dòng "phải thu 0 đồng" là
@@ -409,7 +423,9 @@ export async function sinhHoaHong(db, nhaDuocKem, tangVuot, kpiDuocKem) {
     (b.kpiNhaDuocKem === null || Number(kpiDuocKem) >= b.kpiNhaDuocKem));
   if (!bac) return null;
 
-  const goi = GIA_TANG[tangVuot] || 0;
+  /* Hoa hồng tính trên giá gói ĐANG CHẠY lúc trả, không trên hằng số. */
+  const bgHH = await docGiaHienHanh(db);
+  const goi = bgHH.gia[tangVuot] || 0;
   const pt = Math.min(bac.phanTram, HH_TRAN);   /* trần chặn thật, không chỉ là một câu chữ */
   const tien = Math.round(goi * pt / 100);
 

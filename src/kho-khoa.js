@@ -95,6 +95,8 @@ G.THUOC_CAP_PHEP = [
   /* v9.99.72 — bộ prompt bốn vai */
   'BP_VAI4','BP_VAI_LUAT','BP_KHOI','BP_KHOI_LUAT','BP_VONG','BP_VONG_LUAT',
   'BP_NOI','BP_NOI_LUAT','BP_OFFLINE','BP_CHOCHU',
+  /* v9.99.73 — bảng giá sửa được */
+  'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

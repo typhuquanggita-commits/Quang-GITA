@@ -1751,3 +1751,46 @@ CREATE TABLE IF NOT EXISTS luotPrompt (
 
 -- Đường tra thật: mỗi lượt ghi hỏi đúng câu "bài này đã qua bước nào".
 CREATE INDEX IF NOT EXISTS ix_luot_bai ON luotPrompt (maBai, ghiLuc);
+
+-- ═════════════════════════════════════════════════════════════
+--  BẢNG GIÁ — SỐ SỬA ĐƯỢC, KHUNG Ở KHO
+--
+--  Tới 9.99.72 giá gói là HẰNG SỐ trong mã: muốn đổi một con số thì
+--  phải sửa kho gốc, mã hoá lại, gộp mã, dựng lại, đẩy. Chủ hệ nói
+--  giá hiện tại là TẠM để xây dựng, còn bộ khung mới là cố định — mà
+--  một con số tạm chỉ đổi được bằng một lượt phát hành thì trên thực
+--  tế nó cứng, và cái cứng nhầm chỗ làm người ta đi đường vòng: gõ
+--  tay số khác vào hợp đồng, rồi sổ và hợp đồng nói hai giá.
+--
+--  MỘT LẦN ĐỔI LÀ MỘT DÒNG MỚI. Không có cột "giá hiện tại": giá
+--  đang chạy là dòng MỚI NHẤT của bậc ấy, tính lúc đọc. Một cột tóm
+--  tắt thì phải có ai đó cập nhật, và ngày không ai cập nhật thì nó
+--  nói dối trong im lặng.
+--
+--  Vì sao không ghi đè: câu người ta hỏi lúc có tranh chấp không phải
+--  "giá bây giờ là bao nhiêu" — nó là "hôm ấy nhà này ký ở giá nào".
+--  Ghi đè thì câu ấy không còn chỗ nào trả lời được.
+--
+--  Năm cột khung chỉ điền với bậc MỚI THÊM. Bậc có sẵn thì khung nằm
+--  ở G.HP_TANG trong kho — khung là LỜI HỨA, và lời hứa đổi thì phải
+--  qua một lượt phát hành để còn đọc lại được.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS bangGia (
+  id        TEXT PRIMARY KEY,
+  tang      TEXT NOT NULL,
+  gia       INTEGER NOT NULL,
+  lyDo      TEXT NOT NULL,
+  boiAi     TEXT NOT NULL,
+  vaiBoiAi  TEXT NOT NULL,
+  ghiLuc    TEXT NOT NULL,
+  dong      INTEGER NOT NULL DEFAULT 0,   -- đóng bậc, KHÔNG xoá
+  ten       TEXT,
+  gom       TEXT,
+  khong     TEXT,
+  nhip      TEXT,
+  hoan      TEXT
+);
+
+-- Đường tra thật: mỗi lượt dựng lịch thu và mỗi lượt tính hoa hồng đều
+-- hỏi đúng câu "bậc này giá bao nhiêu, dòng mới nhất".
+CREATE INDEX IF NOT EXISTS ix_banggia_tang ON bangGia (tang, ghiLuc DESC);

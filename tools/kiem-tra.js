@@ -9729,57 +9729,6 @@ const { chromium } = require(PW);
         /gitaXkMucCuaVai_\(hoSo\.role\)\.indexOf\('hoso'\) < 0/.test(nguon);
     }
 
-    /* ── GIÁ GÓI: KHO LÀ BẢN GỐC, MÁY CHỦ MỚI GIỮ BẢN CHÉP ──
-
-       Chủ hệ thống chốt bản 9.94: "bảng gói dịch vụ chốt giá theo tầng."
-       Bản gốc của giá nằm ở G.HP_TANG trong kho đã mã hoá. Máy chủ mới
-       không đọc được kho ấy nên phải giữ một bản chép ở
-       may-chu/tai-chinh.js → GIA_TANG.
-
-       TỚI BẢN 9.93 KHÔNG AI ĐỐI CHIẾU HAI BẢN NÀY. Chú giải ở tai-chinh.js
-       viết rằng "bộ kiểm phát hành đối chiếu hai bản mỗi lần chạy" —
-       câu ấy KHÔNG ĐÚNG, và một chú giải hứa một lớp bảo vệ không tồn
-       tại còn tệ hơn không có chú giải nào, vì nó làm người đọc thôi đi
-       tìm.
-
-       Giá lệch mà không ai biết thì hỏng ba chỗ cùng lúc, im lặng cả ba:
-         · lịch thu dựng ra số tiền sai
-         · hoa hồng tính trên giá gói sai
-         · thang duyệt chi neo vào giá cũ, mà soatNeoThang() vẫn báo khớp
-           — vì nó so thang với BẢN CHÉP, không so với bản gốc
-
-       Phép đo này đóng đúng chỗ ấy. */
-    {
-      const nguonTC = fsGoc.readFileSync(
-        pathGoc.join(__dirname, '..', 'may-chu', 'tai-chinh.js'), 'utf8');
-      const m = /export const GIA_TANG = (\{[\s\S]*?\});/.exec(nguonTC);
-      const banMayChu = m ? Function('return ' + m[1])() : null;
-      const banKho = await p.evaluate(() => {
-        const o = {};
-        (window.G.HP_TANG || []).forEach(t => {
-          const n = Number(String(t.tang).replace(/[^0-9]/g, ''));
-          if (n) o[n] = t.gia;
-        });
-        return o;
-      });
-      ra.giaHaiBanKhop = !!banMayChu && !!Object.keys(banKho).length &&
-        Object.keys(banKho).every(k => Number(banMayChu[k]) === Number(banKho[k])) &&
-        Object.keys(banMayChu).length === Object.keys(banKho).length;
-      ra.giaBanKho = banKho;
-      ra.giaBanMayChu = banMayChu;
-
-      /* Và thang duyệt chi phải neo đúng vào chính bảng giá ấy. Neo vào
-         bản chép thì phép soi neo chỉ chứng minh bản chép tự nhất quán
-         với chính nó. */
-      const nguonCT = fsGoc.readFileSync(
-        pathGoc.join(__dirname, '..', 'may-chu', 'chi-tieu.js'), 'utf8');
-      const neoN = {};
-      for (const mm of nguonCT.matchAll(/ma: '(N[35]|N4)',[\s\S]{0,200}?tu: (\d+)/g))
-        neoN[mm[1]] = Number(mm[2]);
-      ra.thangNeoDungGiaKho = neoN.N3 === banKho[3] && neoN.N4 === banKho[4] &&
-        neoN.N5 === banKho[5];
-      ra.thangNeo = neoN;
-    }
 
     /* ── HỎI THẲNG TỆP .enc ──
        Đây là phép đo duy nhất trả lời được câu "cái gì thật sự rời máy
@@ -9951,13 +9900,6 @@ const { chromium } = require(PW);
       ra.vbThiHanhCoThat
         ? ra.soDieu + ' điều · 6 quy chế · 5 quy trình · 8 biểu mẫu · 10 rủi ro đủ ba cột'
         : 'khai mà mã không có: ' + (ra.vbThieu || []).join(' · '));
-
-    bao(ra.giaHaiBanKhop && ra.thangNeoDungGiaKho,
-      'BẢNG GÓI DỊCH VỤ CHỐT GIÁ THEO TẦNG — VÀ BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP BẢN GỐC TRONG KHO. Chủ hệ chốt ở 9.94: giá chốt theo tầng. Bản gốc nằm ở G.HP_TANG trong kho đã mã hoá; máy chủ mới không đọc được kho ấy nên giữ một bản chép ở may-chu/tai-chinh.js → GIA_TANG. Tới bản 9.93 KHÔNG AI ĐỐI CHIẾU HAI BẢN, trong khi chú giải ở chính tệp ấy lại viết rằng bộ kiểm đối chiếu mỗi lần chạy — một chú giải hứa một lớp bảo vệ không tồn tại thì tệ hơn không có chú giải nào, vì nó làm người đọc thôi đi tìm. Giá lệch thì hỏng ba chỗ cùng lúc và im lặng cả ba: lịch thu dựng ra số tiền sai, hoa hồng tính trên giá gói sai, và THANG DUYỆT CHI neo vào giá cũ trong khi soatNeoThang() vẫn báo khớp — vì nó so thang với bản chép chứ không so với bản gốc. Phép đo này so cả hai chặng: kho ↔ máy chủ, và kho ↔ ba nấc N3 N4 N5 của thang duyệt chi',
-      ra.giaHaiBanKhop
-        ? 'giá khớp cả hai chặng · thang neo N3 ' + (ra.thangNeo || {}).N3 +
-          ' · N4 ' + (ra.thangNeo || {}).N4 + ' · N5 ' + (ra.thangNeo || {}).N5
-        : 'kho ' + JSON.stringify(ra.giaBanKho) + ' · máy chủ ' + JSON.stringify(ra.giaBanMayChu));
 
     /* ── BỐN BẬC MÀU CỦA BẢNG TIN: MỘT SỰ THẬT, HAI TỆP ──
 
@@ -10248,7 +10190,7 @@ const { chromium } = require(PW);
      vì máy chủ không đọc được kho đã mã hoá.
 
      Danh sách ấy là BẢN CHÉP của HP_TANG[].khong. Chú giải ở đầu
-     may-chu/kien-truc-thi-giac.js hứa rằng mục 71 đối chiếu hai bản mỗi
+     may-chu/kien-truc-thi-giac.js hứa rằng mục 90 đối chiếu hai bản mỗi
      lần chạy. Phép này là lời hứa ấy — dựng ngay cùng lượt, chứ không
      để nó thành một lời hứa suông như chú giải của tai-chinh.js 9.93 và
      của data.tien-rung.js.
@@ -11783,7 +11725,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
 
      KHÔNG CÓ PHÉP KIỂM NÀO. Và trong lúc không ai đối chiếu, sổ mục:
      tới 9.99.7 nó vẫn nói học phí còn trống, trong khi học phí đã chốt
-     từ 9.94 và chính mục 71 của bộ kiểm này đối chiếu hai bản giá mỗi
+     từ 9.94 và chính mục 90 của bộ kiểm này đối chiếu hai bản giá mỗi
      lần chạy. Chủ hệ mở sổ ra, thấy một việc đã xong nằm trong danh
      sách phải làm — và lần sau thì thôi tin cả sổ. Một sổ chờ việc bị
      mục thì tệ hơn không có sổ.
@@ -11842,7 +11784,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
     });
 
     bao(ra.so >= 6 && ra.loi.length === 0 && ra.coLuat,
-      'SỔ CHỜ CHỦ HỆ ĐỐI CHIẾU LỜI KHAI VỚI SỔ THẬT — và nó đã mục suốt vì chưa ai đối chiếu. G.TR_CHUA là danh sách những ô chủ hệ phải tự điền: học phí, hệ số lương, mức sinh hoạt phí, tỉ lệ góp. Chú giải ở đầu data.tien-rung.js hứa từ lâu rằng "bộ kiểm đếm chúng ra mỗi lần phát hành" — mà không có phép kiểm nào, và cùng lớp lỗi ấy tôi đã mắc một lần ở tai-chinh.js bản 9.93: một lời hứa về lớp bảo vệ không tồn tại làm người đọc thôi đi tìm. Trong lúc không ai đối chiếu thì sổ mục: tới 9.99.7 nó vẫn nói học phí còn trống, trong khi học phí đã chốt từ 9.94 và chính mục 71 đối chiếu hai bản giá mỗi lần chạy. Chủ hệ mở sổ ra thấy một việc đã xong nằm trong danh sách phải làm, và lần sau thì thôi tin cả sổ — một sổ chờ việc bị mục tệ hơn không có sổ. Nên phép này ĐỌC THẲNG chỗ được trỏ tới rồi so với lời khai: ô nào bảo chưa điền mà chỗ ấy đã đủ số là đỏ, ô nào bảo đã điền mà còn trống cũng đỏ. Ô không đo được bằng máy — hệ số lương nằm ở bảng máy chủ, số tháng dự trữ nằm ở ngân hàng thật — thì phải NÓI RA vì sao, vì im lặng thì không phân biệt được "chưa đo được" với "quên khai"',
+      'SỔ CHỜ CHỦ HỆ ĐỐI CHIẾU LỜI KHAI VỚI SỔ THẬT — và nó đã mục suốt vì chưa ai đối chiếu. G.TR_CHUA là danh sách những ô chủ hệ phải tự điền: học phí, hệ số lương, mức sinh hoạt phí, tỉ lệ góp. Chú giải ở đầu data.tien-rung.js hứa từ lâu rằng "bộ kiểm đếm chúng ra mỗi lần phát hành" — mà không có phép kiểm nào, và cùng lớp lỗi ấy tôi đã mắc một lần ở tai-chinh.js bản 9.93: một lời hứa về lớp bảo vệ không tồn tại làm người đọc thôi đi tìm. Trong lúc không ai đối chiếu thì sổ mục: tới 9.99.7 nó vẫn nói học phí còn trống, trong khi học phí đã chốt từ 9.94 và chính mục 90 đối chiếu hai bản giá mỗi lần chạy. Chủ hệ mở sổ ra thấy một việc đã xong nằm trong danh sách phải làm, và lần sau thì thôi tin cả sổ — một sổ chờ việc bị mục tệ hơn không có sổ. Nên phép này ĐỌC THẲNG chỗ được trỏ tới rồi so với lời khai: ô nào bảo chưa điền mà chỗ ấy đã đủ số là đỏ, ô nào bảo đã điền mà còn trống cũng đỏ. Ô không đo được bằng máy — hệ số lương nằm ở bảng máy chủ, số tháng dự trữ nằm ở ngân hàng thật — thì phải NÓI RA vì sao, vì im lặng thì không phân biệt được "chưa đo được" với "quên khai"',
       ra.loi.length === 0
         ? ra.so + ' ô · đã điền: ' + (ra.daDien || []).join(', ') +
           ' · chờ chủ hệ: ' + (ra.choChuHe || []).join(', ')
@@ -14571,6 +14513,305 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
            !v.bangDu ? 'BẢNG VÒNG CHẠY THIẾU CỘT nhaCungCap, hoặc đã mọc một ô tóm ' +
              'tắt "đã qua vòng"' : '',
            !v.nhietChay ? 'PHÉP SOI NHIỆT ĐỘ KHÔNG CHẠY THẬT' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
+  console.log('\n90 · BẢNG GIÁ SỬA ĐƯỢC — KHUNG Ở KHO, SỐ Ở SỔ');
+  /* ══════════════════ 90. BẢNG GIÁ SỬA ĐƯỢC ══════════════════
+
+     Chủ hệ nói thẳng: *giá hiện tại là tạm thời để xây dựng, bộ khung
+     là cố định, cần chỗ sửa số khi cần*. Cho sửa giá là mở một cánh
+     cửa vào GIỮA PHẦN TIỀN, nên phép đo ở đây canh đúng ba chỗ cánh
+     cửa ấy làm hỏng thứ không sửa lại được — và canh cả chỗ CẮT.
+
+     Cắt theo THỨ GÌ ĐỔI NHANH, không cắt theo thứ gì tiện sửa. Tiện
+     sửa thì cuối cùng mọi thứ đều chui vào chỗ sửa nhanh, kể cả lời
+     hứa — và lúc ấy một gia đình ký hôm nay không chỉ ra được bản mô
+     tả nào đang áp cho họ. */
+  {
+    /* Phép đo giá gói chuyển về đây từ 9.99.73. Trước đó nó nằm lọt
+       trong khối mục 80, nên mọi dòng đỏ của nó in ra [mục 80] trong
+       khi chú giải — và cả CLAUDE.md — đều nói mục 71. Con trỏ chỉ
+       sai chỗ TỆ HƠN không có con trỏ: người đọc tin nó, đi tìm ở
+       mục 71, không thấy gì, rồi ngờ chính phép đo. Nay giá có một
+       mục của riêng nó, và cái nhãn nói đúng chỗ. */
+    const ra = {};
+
+    /* ── GIÁ GÓI: KHO LÀ BẢN GỐC, MÁY CHỦ MỚI GIỮ BẢN CHÉP ──
+
+       Chủ hệ thống chốt bản 9.94: "bảng gói dịch vụ chốt giá theo tầng."
+       Bản gốc của giá nằm ở G.HP_TANG trong kho đã mã hoá. Máy chủ mới
+       không đọc được kho ấy nên phải giữ một bản chép ở
+       may-chu/bang-gia.js → GIA_KHỞI_ĐẦU.
+
+       9.99.73 ĐỔI TÊN hằng ấy từ GIA_TANG sang GIA_KHOI_DAU và dời nó
+       sang bang-gia.js. Đổi tên là cố ý: giá nay sửa được trong sổ, nên
+       một hằng tên "giá tầng" mà KHÔNG phải giá đang chạy là cái bẫy
+       đúng nghĩa — người đọc sau tin nó, tính một con số, và con số ấy
+       sai theo đúng hướng không ai kiểm. Phép đo này cũng đổi theo, và
+       nó thêm một vế: KHÔNG ĐƯỢC CÒN một bảng giá gõ cứng nào khác
+       trong may-chu/. Hai bảng giá thì cái nào cũng tự tin.
+
+       TỚI BẢN 9.93 KHÔNG AI ĐỐI CHIẾU HAI BẢN NÀY. Chú giải ở tai-chinh.js
+       viết rằng "bộ kiểm phát hành đối chiếu hai bản mỗi lần chạy" —
+       câu ấy KHÔNG ĐÚNG, và một chú giải hứa một lớp bảo vệ không tồn
+       tại còn tệ hơn không có chú giải nào, vì nó làm người đọc thôi đi
+       tìm.
+
+       Giá lệch mà không ai biết thì hỏng ba chỗ cùng lúc, im lặng cả ba:
+         · lịch thu dựng ra số tiền sai
+         · hoa hồng tính trên giá gói sai
+         · thang duyệt chi neo vào giá cũ, mà soatNeoThang() vẫn báo khớp
+           — vì nó so thang với BẢN CHÉP, không so với bản gốc
+
+       Phép đo này đóng đúng chỗ ấy. */
+    {
+      const nguonBG = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'bang-gia.js'), 'utf8');
+      const m = /export const GIA_KHOI_DAU = (\{[\s\S]*?\});/.exec(nguonBG);
+      const banMayChu = m ? Function('return ' + m[1])() : null;
+      const banKho = await p.evaluate(() => {
+        const o = {};
+        (window.G.HP_TANG || []).forEach(t => {
+          const n = Number(String(t.tang).replace(/[^0-9]/g, ''));
+          if (n) o[n] = t.gia;
+        });
+        return o;
+      });
+      ra.giaHaiBanKhop = !!banMayChu && !!Object.keys(banKho).length &&
+        Object.keys(banKho).every(k => Number(banMayChu[k]) === Number(banKho[k])) &&
+        Object.keys(banMayChu).length === Object.keys(banKho).length;
+      ra.giaBanKho = banKho;
+      ra.giaBanMayChu = banMayChu;
+
+      /* ── VÀ CHỈ MỘT NƠI ĐƯỢC KHAI ──
+
+         Không dò con số, dò CHỖ KHAI. Dò con số thì thang duyệt chi bị
+         bắt oan — nó neo vào giá gói một cách hợp lệ, và đó chính là
+         thứ soatNeoThang() sinh ra để nêu. Một phép đo bắt oan thì lần
+         sau người ta tắt nó đi. */
+      {
+        const tepMC = fsGoc.readdirSync(pathGoc.join(__dirname, '..', 'may-chu'))
+          .filter(t => t.endsWith('.js'));
+        const khaiO = [], nhapThieu = [];
+        tepMC.forEach(t => {
+          const s = fsGoc.readFileSync(
+            pathGoc.join(__dirname, '..', 'may-chu', t), 'utf8');
+          if (/^\s*(export\s+)?const\s+GIA_(KHOI_DAU|TANG|GOI)\s*=/m.test(s))
+            khaiO.push(t);
+          /* Nơi khác dùng được, nhưng phải NHẬP từ bang-gia.js. Chép lại
+             thì hai bảng giá cùng tự tin, và cái sai không lộ ra ở đâu. */
+          if (t !== 'bang-gia.js' && /GIA_KHOI_DAU/.test(s) &&
+              !/from '\.\/bang-gia\.js'/.test(s)) nhapThieu.push(t);
+        });
+        ra.giaChiMotNoiKhai = khaiO.length === 1 && khaiO[0] === 'bang-gia.js';
+        ra.giaKhaiO = khaiO;
+        ra.giaNoiKhacPhaiNhap = nhapThieu.length === 0;
+        ra.giaNhapThieu = nhapThieu;
+      }
+
+      /* Và thang duyệt chi phải neo đúng vào chính bảng giá ấy. Neo vào
+         bản chép thì phép soi neo chỉ chứng minh bản chép tự nhất quán
+         với chính nó.
+
+         Từ 9.99.73 thang neo vào GIÁ KHỞI ĐẦU, và nó ĐỨNG YÊN khi giá
+         trong sổ đổi — cố ý: dời thang là một quyết định về quyền tiêu
+         tiền, không phải một phép tính. soatNeoThang() nêu chỗ lệch. */
+      const nguonCT = fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'may-chu', 'chi-tieu.js'), 'utf8');
+      const neoN = {};
+      for (const mm of nguonCT.matchAll(/ma: '(N[35]|N4)',[\s\S]{0,200}?tu: (\d+)/g))
+        neoN[mm[1]] = Number(mm[2]);
+      ra.thangNeoDungGiaKho = neoN.N3 === banKho[3] && neoN.N4 === banKho[4] &&
+        neoN.N5 === banKho[5];
+      ra.thangNeo = neoN;
+    }
+
+    /* Điều kiện tính MỘT LẦN rồi cả hai chỗ cùng đọc. Viết tay hai bản
+       thì thêm một cờ mới là người ta chỉ sửa bản thứ nhất, và mục đỏ
+       mà in ra câu khoe — đã xảy ra ba lần ở mục 71. */
+    const giaDat = ra.giaHaiBanKhop && ra.thangNeoDungGiaKho &&
+      ra.giaChiMotNoiKhai && ra.giaNoiKhacPhaiNhap;
+    bao(giaDat,
+      'BẢNG GÓI DỊCH VỤ CHỐT GIÁ THEO TẦNG — VÀ BẢN CHÉP Ở MÁY CHỦ PHẢI KHỚP BẢN GỐC TRONG KHO, Ở ĐÚNG MỘT NƠI. Chủ hệ chốt ở 9.94: giá chốt theo tầng. Bản gốc nằm ở G.HP_TANG trong kho đã mã hoá; máy chủ mới không đọc được kho ấy nên giữ một bản chép — từ 9.99.73 bản chép ấy là may-chu/bang-gia.js → GIA_KHOI_DAU, không còn là tai-chinh.js → GIA_TANG. Đổi tên là cố ý: giá nay SỬA ĐƯỢC trong sổ (bảng bangGia ở D1), nên một hằng số tên "giá tầng" mà không phải giá đang chạy là cái bẫy đúng nghĩa — người đọc sau tin nó, tính một con số, và con số ấy sai theo đúng hướng không ai kiểm. Tới bản 9.93 KHÔNG AI ĐỐI CHIẾU HAI BẢN, trong khi chú giải ở chính tệp ấy lại viết rằng bộ kiểm đối chiếu mỗi lần chạy — một chú giải hứa một lớp bảo vệ không tồn tại thì tệ hơn không có chú giải nào, vì nó làm người đọc thôi đi tìm. Giá lệch thì hỏng ba chỗ cùng lúc và im lặng cả ba: lịch thu dựng ra số tiền sai, hoa hồng tính trên giá gói sai, và THANG DUYỆT CHI neo vào giá cũ trong khi soatNeoThang() vẫn báo khớp — vì nó so thang với bản chép chứ không so với bản gốc. Phép đo này so bốn chặng: kho ↔ máy chủ, kho ↔ ba nấc N3 N4 N5 của thang duyệt chi, CHỈ MỘT tệp trong may-chu/ được khai hằng giá, và mọi tệp khác dùng giá đều phải NHẬP từ bang-gia.js. Bốn chặng cuối dò CHỖ KHAI chứ không dò con số: dò con số thì thang duyệt chi bị bắt oan, vì nó neo vào giá gói một cách hợp lệ — và một phép đo bắt oan thì lần sau người ta tắt nó đi',
+      giaDat
+        ? 'giá khớp cả hai chặng · thang neo N3 ' + (ra.thangNeo || {}).N3 +
+          ' · N4 ' + (ra.thangNeo || {}).N4 + ' · N5 ' + (ra.thangNeo || {}).N5 +
+          ' · hằng giá khai đúng một nơi: bang-gia.js'
+        : [
+            ra.giaHaiBanKhop ? null : 'kho ' + JSON.stringify(ra.giaBanKho) +
+              ' ≠ máy chủ ' + JSON.stringify(ra.giaBanMayChu),
+            ra.thangNeoDungGiaKho ? null : 'thang neo lệch giá kho: ' +
+              JSON.stringify(ra.thangNeo),
+            ra.giaChiMotNoiKhai ? null : 'hằng giá khai ở ' +
+              ((ra.giaKhaiO || []).join(' · ') || 'KHÔNG NƠI NÀO') +
+              ' — phải đúng một nơi là bang-gia.js',
+            ra.giaNoiKhacPhaiNhap ? null : 'dùng GIA_KHOI_DAU mà không nhập từ ' +
+              'bang-gia.js: ' + (ra.giaNhapThieu || []).join(' · ')
+          ].filter(Boolean).join(' | '));
+
+    const khoBG = await p.evaluate(() => {
+      const G = window.G;
+      return { cat: G.BG_CAT || [], catLuat: G.BG_CAT_LUAT || {},
+        rang: G.BG_RANG || [], soLuat: G.BG_SO_LUAT || {},
+        bacMoi: G.BG_BAC_MOI || {}, choChu: G.BG_CHOCHU || [],
+        hpTang: (G.HP_TANG || []).map(t => ({ tang: t.tang, gia: t.gia,
+          co: ['ten', 'gom', 'khong', 'nhip', 'hoan'].filter(o => t[o] !== undefined) })) };
+    });
+
+    const ngBG = fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'may-chu', 'bang-gia.js'), 'utf8');
+    const ngTC2 = fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'may-chu', 'tai-chinh.js'), 'utf8');
+    const ngCT2 = fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'may-chu', 'chi-tieu.js'), 'utf8');
+    const ngSQL = fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'may-chu', 'csdl.sql'), 'utf8');
+    const ngBN2 = fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'may-chu', 'bo-nao.js'), 'utf8');
+
+    const v = {};
+
+    /* ── A · CHỖ CẮT PHẢI KHAI ĐỦ HAI NỬA ── */
+    v.catDu = khoBG.cat.length === 2 &&
+      khoBG.cat.every(c => c.ma && c.ten && c.oDau && Array.isArray(c.gom) &&
+        c.gom.length && c.doiThenao && c.y);
+    const khung = khoBG.cat.find(c => c.ma === 'KHUNG');
+    const so = khoBG.cat.find(c => c.ma === 'SO');
+    v.catDungChO = !!khung && !!so && /kho/i.test(khung.oDau) && /sổ/i.test(so.oDau);
+    /* Năm ô khung phải có THẬT trong kho, không phải một lời khai. */
+    v.khungCoThat = khoBG.hpTang.length > 0 &&
+      khoBG.hpTang.every(t => t.co.length === 5);
+
+    /* ── B · BA CÁI RĂNG, MỖI CÁI PHẢI KHAI CÁCH ĐO ──
+       Một luật không nói đo bằng gì thì nó là một lời dặn, và sáu
+       tháng sau không ai nhớ một lời dặn. */
+    v.rangDu = khoBG.rang.length === 3 &&
+      khoBG.rang.every(r => r.ma && r.ten && r.lam && r.neuKhong && r.doBang);
+    v.rangThieu = khoBG.rang.filter(r => !r.lam || !r.neuKhong || !r.doBang)
+      .map(r => r.ma || '?');
+
+    /* ── C · BẢNG KHÔNG CÓ CỘT "GIÁ HIỆN TẠI" ──
+       Phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI, cùng lối với cột conHan
+       không có trong theVungManh và cột den không có trong
+       hoSoSongSinh. Có cột thì hoặc bị gõ đè — và một phép đo biến
+       thành một lời khai mà nhìn vẫn y hệt — hoặc không ai gõ và nó
+       cũ đi lặng lẽ. */
+    const mBang = /CREATE TABLE IF NOT EXISTS bangGia \(([\s\S]*?)\n\);/.exec(ngSQL);
+    const cotBG = mBang
+      ? mBang[1].split('\n').map(d => (d.trim().split(/\s+/)[0] || '').replace(/[^A-Za-z]/g, ''))
+        .filter(Boolean)
+      : [];
+    const cotCam = ['giaHienTai', 'giaDangChay', 'hienHanh', 'laMoiNhat'];
+    v.cotThua = cotCam.filter(c => cotBG.indexOf(c) >= 0);
+    v.cotDu = ['tang', 'gia', 'lyDo', 'boiAi', 'ghiLuc']
+      .every(c => cotBG.indexOf(c) >= 0);
+    v.cotBG = cotBG;
+    /* Và giá hiện hành phải TÍNH LÚC ĐỌC: đọc cả sổ, xếp theo giờ,
+       lấy dòng cuối. Không có câu lệnh nào đọc một cột tóm tắt. */
+    v.tinhLucDoc = /ORDER BY ghiLuc ASC/.test(ngBG) &&
+      !/UPDATE bangGia/.test(ngBG);
+
+    /* ── D · R1 · GIÁ ĐÃ CHỐT VÀO LỊCH THU THÌ ĐỨNG YÊN ──
+       dungLichThu phải ĐỌC giá đang chạy một lần rồi đóng băng số
+       tiền vào từng kỳ. Đọc lại mỗi lần xem là đổi số tiền một gia
+       đình đã ký, và chuyện ấy không sửa lại được. */
+    v.lichThuDocGiaSong = /docGiaHienHanh/.test(ngTC2) &&
+      /from '\.\/bang-gia\.js'/.test(ngTC2);
+    v.lichThuKhongTinhLai = !/FROM lichThu[\s\S]{0,400}docGiaHienHanh/.test(ngTC2);
+
+    /* ── E · R2 · ĐỔI GIÁ KHÔNG TỰ DỜI THANG ──
+       soatNeoThang NÊU chỗ lệch và không ghi gì. Dời thang là một
+       quyết định về quyền tiêu tiền của cả Học viện, và nó phải có
+       người ký. */
+    const mNeo = /export function soatNeoThang\(([\s\S]*?)\n\}/.exec(ngCT2);
+    v.neoNhanGiaSong = !!mNeo && /giaDangChay/.test(mNeo[1]) &&
+      /GIA_KHOI_DAU/.test(mNeo[1]);
+    v.neoKhongGhi = !!mNeo && !/INSERT|UPDATE|\.run\(/.test(mNeo[1]);
+
+    /* ── F · R3 · VÙNG ĐỎ, VÀ CÁI TÊN PHẢI CÓ THẬT ──
+       Cùng cái bẫy của ô layTuKho ở mục 89: trỏ vào một cái tên
+       không tồn tại thì cổng lặng lẽ không chặn gì, mà nhìn thì vẫn
+       y hệt một cổng đủ răng. */
+    const mVD = /VIEC_VUNG_DO = '([^']+)'/.exec(ngBG);
+    const mDO10 = /export const DO10 = \[([\s\S]*?)\];/.exec(ngBN2);
+    const dsDO10 = mDO10 ? (mDO10[1].match(/'([^']+)'/g) || []).map(s => s.slice(1, -1)) : [];
+    v.vungDoCoThat = !!mVD && dsDO10.indexOf(mVD[1]) >= 0;
+    v.vungDoMa = mVD ? mVD[1] : null;
+    /* Không chép lại danh sách Vùng Đỏ sang đây — hai danh sách thì
+       cái nào cũng tự tin, và lúc gấp người ta đọc cái gần tay hơn. */
+    v.khongChepDO10 = !/kyHopDong|suaHienPhap|xuLyKhungHoang/.test(ngBG);
+
+    const mDoi = /export async function doiGia\(([\s\S]*?)\n\}/.exec(ngBG);
+    const thanDoi = mDoi ? mDoi[1] : '';
+    const viTriInsert = thanDoi.indexOf('INSERT INTO bangGia');
+    v.congTruocGhi = viTriInsert > 0 &&
+      thanDoi.indexOf('laR01(hoSo)') >= 0 && thanDoi.indexOf('laR01(hoSo)') < viTriInsert &&
+      thanDoi.indexOf('THIEULYDO') >= 0 && thanDoi.indexOf('THIEULYDO') < viTriInsert &&
+      thanDoi.indexOf('THIEUKHUNG') >= 0 && thanDoi.indexOf('THIEUKHUNG') < viTriInsert;
+    /* Cổng đọc VAI CỦA PHIÊN, không đọc một ô do người gọi truyền
+       vào — cùng cái bẫy đã ghi ở cổng dữ liệu trẻ em (9.99.70). */
+    v.docVaiPhien = /laR01\(hoSo\)\s*\{\s*return String\(\(hoSo \|\| \{\}\)\.role/.test(ngBG);
+
+    /* ── G · SỔ CHỜ PHẢI KHAI VÌ SAO MÁY KHÔNG ĐO ĐƯỢC ── */
+    v.choChuDu = khoBG.choChu.length > 0 &&
+      khoBG.choChu.every(c => c.ma && c.t && c.canGi && c.khongDoDuoc);
+
+    /* ── H · MÀN HÌNH KHÔNG ĐƯỢC GIỮ MỘT CON SỐ GIÁ NÀO ──
+       Màn đọc khung từ kho và số từ cửa. Gõ một con số mặc định vào
+       màn thì nó hiện ra như giá thật lúc cửa chưa trả về, và không
+       ai phân biệt được. */
+    const ngSrcBG = fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'src', 'bang-gia.js'), 'utf8');
+    v.manKhongGiuSo = !/\b(500000|10000000|30000000|50000000)\b/.test(ngSrcBG);
+
+    const bgDat = v.catDu && v.catDungChO && v.khungCoThat && v.rangDu &&
+      !v.cotThua.length && v.cotDu && v.tinhLucDoc &&
+      v.lichThuDocGiaSong && v.lichThuKhongTinhLai &&
+      v.neoNhanGiaSong && v.neoKhongGhi &&
+      v.vungDoCoThat && v.khongChepDO10 && v.congTruocGhi && v.docVaiPhien &&
+      v.choChuDu && v.manKhongGiuSo;
+
+    bao(bgDat,
+      'BẢNG GIÁ SỬA ĐƯỢC · KHUNG Ở KHO, SỐ Ở SỔ — VÀ BA CÁI RĂNG Ở BA CHỖ CÁNH CỬA ẤY LÀM HỎNG THỨ KHÔNG SỬA LẠI ĐƯỢC. Chủ hệ nói thẳng: giá hiện tại là tạm thời để xây dựng, bộ khung là cố định, cần chỗ sửa số khi cần. Tới 9.99.72 kho làm ngược — giá là HẰNG SỐ ở hai chỗ, nên đổi một con số phải qua trọn một lượt phát hành; một con số tạm mà cứng như thế thì người ta đi đường vòng: gõ tay số khác vào hợp đồng, và từ đó sổ với hợp đồng nói hai giá. Chỗ cắt là chỗ quan trọng nhất và nó cắt theo THỨ GÌ ĐỔI NHANH, không theo thứ gì tiện sửa: tên bậc, gồm gì, KHÔNG gồm gì, nhịp thu và điều khoản hoàn ở lại KHO vì chúng là LỜI HỨA — một gia đình ký hôm nay phải chỉ ra được bản mô tả nào đang áp cho họ, nên đổi lời hứa phải để lại một bản đọc lại được; chỉ CON SỐ xuống sổ. Cắt theo thứ tiện sửa thì cuối cùng mọi thứ đều chui vào chỗ sửa nhanh, kể cả lời hứa. Bảng KHÔNG có cột "giá hiện tại": giá đang chạy là dòng MỚI NHẤT của bậc ấy tính lúc đọc — một cột tóm tắt thì hoặc bị gõ đè, và một phép đo biến thành một lời khai mà nhìn vẫn y hệt, hoặc không ai gõ và nó cũ đi lặng lẽ; cùng luật với cột conHan không có trong theVungManh và cột den không có trong hoSoSongSinh. R1: giá đã chốt vào lịch thu thì ĐỨNG YÊN — đổi theo là đổi số tiền một gia đình đã ký, họ không được hỏi, và họ chỉ biết khi nhìn hoá đơn. R2: đổi giá KHÔNG tự dời thang duyệt chi — thang neo vào giá gói, nhưng dời thang là đổi quyền tiêu tiền của cả Học viện, và nó phải có người ký; soatNeoThang NÊU chỗ lệch rồi dừng. R3: đặt và đổi giá là một trong mười việc VÙNG ĐỎ — chỉ R01, phải viết lý do, và bậc MỚI phải khai đủ năm ô khung vì một bậc chỉ có số mà không có lời hứa là một cái giá không gắn với cái gì. Mã Vùng Đỏ được đối chiếu với DO10 THẬT: trỏ vào một cái tên không tồn tại thì cổng lặng lẽ không chặn gì, mà nhìn vẫn y hệt một cổng đủ răng',
+      bgDat
+        ? khoBG.cat.length + ' nửa (khung ở kho · số ở sổ) · ' + khoBG.rang.length +
+          ' răng, mỗi răng khai cách đo · bảng ' + v.cotBG.length +
+          ' cột, không cột nào tóm tắt · Vùng Đỏ "' + v.vungDoMa + '" có thật trong DO10 · ' +
+          khoBG.choChu.length + ' mục chờ, mỗi mục nói vì sao máy không đo được'
+        : [!v.catDu ? 'CHỖ CẮT KHÔNG ĐỦ HAI NỬA hoặc thiếu ô' : '',
+           !v.catDungChO ? 'KHUNG KHÔNG KHAI Ở KHO hoặc SỐ KHÔNG KHAI Ở SỔ — cắt sai ' +
+             'chỗ thì lời hứa đi xuống chỗ sửa nhanh' : '',
+           !v.khungCoThat ? 'G.HP_TANG THIẾU Ô KHUNG — năm ô phải có THẬT trong kho, ' +
+             'không phải một lời khai ở BG_CAT' : '',
+           !v.rangDu ? 'RĂNG THIẾU Ô lam · neuKhong · doBang: ' +
+             (v.rangThieu.join(' · ') || 'sai số răng') + ' — một luật không nói đo bằng ' +
+             'gì thì nó là một lời dặn, và sáu tháng sau không ai nhớ một lời dặn' : '',
+           v.cotThua.length ? 'BẢNG MỌC CỘT TÓM TẮT: ' + v.cotThua.join(' · ') +
+             ' — hoặc bị gõ đè, hoặc cũ đi lặng lẽ, và cả hai đều nhìn y hệt một phép đo' : '',
+           !v.cotDu ? 'BẢNG THIẾU CỘT: tang · gia · lyDo · boiAi · ghiLuc' : '',
+           !v.tinhLucDoc ? 'GIÁ HIỆN HÀNH KHÔNG TÍNH LÚC ĐỌC, hoặc mô-đun GHI ĐÈ dòng ' +
+             'cũ — ghi đè thì câu "hôm ấy nhà này ký ở giá nào" không còn chỗ trả lời' : '',
+           !v.lichThuDocGiaSong ? 'LỊCH THU KHÔNG ĐỌC GIÁ ĐANG CHẠY — nó đang dựng bằng ' +
+             'giá khởi đầu, nên đổi giá xong nhà mới vẫn ký giá cũ' : '',
+           !v.lichThuKhongTinhLai ? 'LỊCH THU ĐÃ DỰNG BỊ TÍNH LẠI THEO GIÁ MỚI — đó là ' +
+             'đổi số tiền một gia đình đã ký, và chuyện ấy không sửa lại được' : '',
+           !v.neoNhanGiaSong ? 'soatNeoThang KHÔNG NHẬN GIÁ ĐANG CHẠY — nó chỉ chứng ' +
+             'minh bản chép tự nhất quán với chính nó' : '',
+           !v.neoKhongGhi ? 'soatNeoThang ĐANG GHI — đổi giá tự dời thang nghĩa là quyền ' +
+             'tiêu tiền của cả Học viện đổi mà không ai ký' : '',
+           !v.vungDoCoThat ? 'MÃ VÙNG ĐỎ "' + v.vungDoMa + '" KHÔNG CÓ TRONG DO10 THẬT — ' +
+             'cổng lặng lẽ không chặn gì, mà nhìn vẫn y hệt một cổng đủ răng' : '',
+           !v.khongChepDO10 ? 'ĐÃ CHÉP DANH SÁCH VÙNG ĐỎ SANG bang-gia.js — hai danh ' +
+             'sách thì cái nào cũng tự tin, và lúc gấp người ta đọc cái gần tay hơn' : '',
+           !v.congTruocGhi ? 'CỔNG KHÔNG NẰM TRƯỚC CÂU INSERT — thiếu chặn R01, thiếu ' +
+             'đòi lý do, hoặc thiếu đòi đủ năm ô khung cho bậc mới' : '',
+           !v.docVaiPhien ? 'CỔNG ĐỌC MỘT Ô DO NGƯỜI GỌI TRUYỀN VÀO thay vì vai của ' +
+             'phiên — một cổng tin lời khai của chính người đi qua nó' : '',
+           !v.choChuDu ? 'MỤC CHỜ KHÔNG KHAI VÌ SAO MÁY KHÔNG ĐO ĐƯỢC' : '',
+           !v.manKhongGiuSo ? 'MÀN HÌNH GÕ CỨNG MỘT CON SỐ GIÁ — nó hiện ra như giá ' +
+             'thật lúc cửa chưa trả về, và không ai phân biệt được' : ''
           ].filter(Boolean).join(' · '));
   }
 

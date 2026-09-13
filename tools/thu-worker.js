@@ -973,7 +973,7 @@ bao(db.prepare("SELECT tang FROM hoSoKhach WHERE maKhachHang=?").get(nhaMoi).tan
   'cho sửa tầng ở đây là dựng một cửa sau đi vòng qua cổng KPI và cổng thanh toán');
 
 console.log('\n14b · TÀI CHÍNH — PHẢI THU TÁCH KHỎI ĐÃ THU');
-const {GIA_TANG, SUY_RA} = await import('../may-chu/tai-chinh.js');
+const {GIA_KHOI_DAU: GIA_TANG, SUY_RA} = await import('../may-chu/tai-chinh.js');
 
 /* NHÀ BẢO TRỢ PHẢI CÓ KPI THẬT thì hoa hồng mới sinh. Bản đầu của phép
    đo này quên bước ấy và đỏ ở mục hoa hồng — luật đúng, phép đo thiếu.
@@ -5290,6 +5290,142 @@ bao(!(await goi({fn:'guiDeBaiRaNgoai', token:tkSA, u:'superadmin@gita365.vn',
   'CHỈ GỬI RA NGOÀI THỨ ĐÃ DUYỆT — gửi một bản nháp là để thứ chưa ai đọc kỹ rời khỏi hệ');
 
 /* ═══════════════ 16 · VIỆC CHƯA PORT PHẢI BÁO TO ═══════════════ */
+console.log('\n15m · BẢNG GIÁ SỬA ĐƯỢC — BA CÁI RĂNG');
+/* ══════════════ BẢNG GIÁ · KHUNG Ở KHO, SỐ Ở SỔ ══════════════
+
+   Chỗ cắt và các bảng khai đo ở mục 90 của bộ kiểm. Ở đây đo HÀNH VI
+   — ba cái răng, và cả ba đều đo bằng cách LÀM THẬT rồi xem cái gì
+   động, cái gì đứng yên. Đọc lời khai của mô-đun thì nó nói gì cũng
+   được. */
+{
+  const mBG = await import('../may-chu/bang-gia.js');
+  const mCT = await import('../may-chu/chi-tieu.js');
+
+  /* ── R3 · CHỈ R01, VÀ PHẢI VIẾT LÝ DO ──
+     Giá là chỗ một chữ số đổi cả mô hình kinh doanh. Mở cho nhiều vai
+     thì sáu tháng sau không ai biết con số hôm nay từ đâu ra. */
+  const r03Doi = await goi({fn:'doiGia', token:tkGD, u:'giamdoc@gita365.vn',
+    tang:'T3', gia:12000000, lyDo:'Thử xem R03 có đổi được giá không'});
+  bao(!r03Doi.than.ok && r03Doi.than.code === 'NOPERM',
+    'R03 KHÔNG ĐỔI ĐƯỢC GIÁ — "đặt hoặc đổi giá" là một trong mười việc VÙNG ĐỎ',
+    'không uỷ quyền cho ai, và cũng không cho máy');
+  const khongLyDo = await goi({fn:'doiGia', token:tkSA, u:'superadmin@gita365.vn',
+    tang:'T3', gia:12000000, lyDo:'ừ'});
+  bao(!khongLyDo.than.ok && khongLyDo.than.code === 'THIEULYDO',
+    'ĐỔI GIÁ KHÔNG LÝ DO THÌ BỊ CHẶN',
+    'sáu tháng sau không ai nhớ vì sao con số ấy đổi, và một bảng giá có lịch sử mà ' +
+    'không có lý do chỉ kể được rằng ĐÃ đổi, không kể được VÌ SAO');
+  /* Mã Vùng Đỏ phải TRỎ THẬT sang Bộ não, không phải một cái tên gõ
+     tay — trỏ vào một cái tên không tồn tại thì cổng lặng lẽ không
+     chặn gì, mà nhìn vẫn y hệt một cổng đủ răng. */
+  bao(mBG.laVungDo() === true, 'và mã Vùng Đỏ TRỎ THẬT sang BoNao.DO10',
+    'hai danh sách ngưỡng thì cái nào cũng tự tin, và lúc gấp người ta đọc cái gần tay hơn');
+
+  /* ── BẬC MỚI PHẢI KHAI ĐỦ NĂM Ô KHUNG ── */
+  const bacThieu = await goi({fn:'doiGia', token:tkSA, u:'superadmin@gita365.vn',
+    tang:'T9', gia:5000000, lyDo:'Thêm bậc Trainer đồng hành 12 buổi mỗi năm'});
+  bao(!bacThieu.than.ok && bacThieu.than.code === 'THIEUKHUNG' &&
+      bacThieu.than.thieu.length === 5,
+    'BẬC MỚI THIẾU KHUNG THÌ BỊ CHẶN, và NÓI RA thiếu ô nào',
+    'thiếu ' + (bacThieu.than.thieu || []).join(' · ') + ' · một bậc chỉ có số mà không ' +
+    'có lời hứa là một cái giá không gắn với cái gì, và lúc có tranh chấp thì không ai ' +
+    'đọc ra bên bán đã hứa giao những gì');
+
+  /* ── R1 · GIÁ ĐÃ CHỐT VÀO LỊCH THU THÌ ĐỨNG YÊN ──
+     Cái răng nặng nhất. Đổi theo là đổi số tiền một gia đình đã ký —
+     họ không được hỏi, và họ chỉ biết khi nhìn hoá đơn. */
+  const truocKy = db.prepare(
+    "SELECT ky, phaiThu FROM kyThu WHERE maKhachHang=? AND tang=3 ORDER BY ky").all(nhaMoi);
+  const giaCu = truocKy.reduce((a, x) => a + x.phaiThu, 0);
+
+  const doiT3 = await goi({fn:'doiGia', token:tkSA, u:'superadmin@gita365.vn',
+    tang:'3', gia:12000000,
+    lyDo:'Chi phí Coach đồng hành tăng, chốt lại giá chặng 90 ngày cho đợt tuyển tới'});
+  bao(doiT3.than.ok && doiT3.than.giaCu === 10000000 && doiT3.than.gia === 12000000,
+    'R01 ĐỔI ĐƯỢC GIÁ, và cửa nói ra giá CŨ lẫn giá MỚI',
+    doiT3.than.giaCu + 'đ → ' + doiT3.than.gia + 'đ');
+
+  const sauKy = db.prepare(
+    "SELECT ky, phaiThu FROM kyThu WHERE maKhachHang=? AND tang=3 ORDER BY ky").all(nhaMoi);
+  /* truocKy.length > 0 KHÔNG phải phòng thủ thừa: lịch rỗng thì phép so
+     này là 0 === 0 và nó XANH mãi mãi trong khi chẳng đo gì. Một phép đo
+     chỉ đúng khi cái nó đo CÓ THỂ sai. */
+  bao(truocKy.length > 0 && sauKy.reduce((a, x) => a + x.phaiThu, 0) === giaCu &&
+      JSON.stringify(sauKy) === JSON.stringify(truocKy),
+    'R1 · LỊCH THU ĐÃ DỰNG ĐỨNG YÊN SAU KHI ĐỔI GIÁ — không đồng nào động',
+    'vẫn ' + giaCu + 'đ trên ' + sauKy.length + ' kỳ · đổi theo là đổi số tiền một gia ' +
+    'đình đã ký, và chuyện ấy không sửa lại được');
+
+  /* ── NỬA KIA CỦA R1 · NHÀ CHƯA KÝ THÌ KÝ GIÁ MỚI ──
+     Thiếu nửa này thì cả cửa đổi giá vô nghĩa: giá đổi trong sổ mà
+     không lịch thu nào bao giờ mang con số mới. Và nó phải đo bằng
+     TIỀN THẬT trong bảng kyThu, không đo bằng lời khai của cửa. */
+  db.prepare("INSERT INTO hoSoKhach (maKhachHang,uidPhuHuynh,tuyen,tang,trangThai,vaoLuc)" +
+    " VALUES ('GITA-BG01','U-bg01','hocSinh',0,'dangHoc',?)")
+    .run(new Date().toISOString());
+  await dungLichThu(env.CSDL, 'GITA-BG01', 3, new Date().toISOString());
+  const kyMoi = db.prepare(
+    "SELECT phaiThu FROM kyThu WHERE maKhachHang='GITA-BG01' AND tang=3").all();
+  bao(kyMoi.length > 0 && kyMoi.reduce((a, x) => a + x.phaiThu, 0) === 12000000,
+    'NHÀ KÝ SAU KHI ĐỔI GIÁ THÌ LỊCH THU MANG GIÁ MỚI — 12.000.000đ',
+    kyMoi.length + ' kỳ · nếu lịch thu đọc hằng số thay vì sổ thì nó vẫn ra 10 triệu, ' +
+    'và cả cửa đổi giá là một cái nút không nối vào đâu cả');
+  /* Và cửa PHẢI NÓI RA điều đó ngay, không để người đổi giá tự phát hiện. */
+  bao(/[Ll]ịch thu/.test(String(doiT3.than.lichThuCuKhongDoi || '')) &&
+      /[Tt]hang duyệt chi/.test(String(doiT3.than.thangChuaChotLai || '')),
+    'và cửa NÓI RA cả hai hệ quả ngay lúc đổi, không để người đổi tự phát hiện');
+
+  /* ── NHÀ MỚI THÌ KÝ GIÁ MỚI ──
+     Nửa kia của R1: giá cũ đóng băng cho nhà cũ, nhưng nhà chưa ký thì
+     phải nhận giá đang chạy. Không có nửa này thì cả cửa đổi giá vô
+     nghĩa — đổi xong mà không ai ký giá mới bao giờ. */
+  const giaSong = await mBG.docGiaHienHanh(env.CSDL);
+  bao(giaSong.gia[3] === 12000000 && giaSong.nguon[3] === 'daDoi' &&
+      giaSong.nguon[4] === 'khoiDau',
+    'GIÁ ĐANG CHẠY TÍNH LÚC ĐỌC, và nói rõ bậc nào KHỞI ĐẦU bậc nào ĐÃ ĐỔI',
+    'gộp hai thứ ấy lại thì một bậc chưa ai đụng tới trông y hệt một bậc vừa được ' +
+    'chốt lại tuần trước');
+
+  /* ── MỘT DÒNG MỚI, KHÔNG GHI ĐÈ ── */
+  await goi({fn:'doiGia', token:tkSA, u:'superadmin@gita365.vn',
+    tang:'3', gia:11000000, lyDo:'Hạ lại sau khi đo đợt tuyển đầu, giữ đúng mức cũ cộng một'});
+  const so = db.prepare("SELECT gia FROM bangGia WHERE tang='3' ORDER BY ghiLuc ASC").all();
+  bao(so.length === 2 && so[0].gia === 12000000 && so[1].gia === 11000000,
+    'ĐỔI LẦN HAI GHI MỘT DÒNG MỚI — dòng cũ còn nguyên',
+    'câu người ta hỏi lúc có tranh chấp không phải "giá bây giờ là bao nhiêu" — nó là ' +
+    '"hôm ấy nhà này ký ở giá nào", và ghi đè thì câu ấy không còn chỗ nào trả lời được');
+  const trung = await goi({fn:'doiGia', token:tkSA, u:'superadmin@gita365.vn',
+    tang:'3', gia:11000000, lyDo:'Ghi lại đúng con số đang chạy xem có chặn không'});
+  bao(!trung.than.ok && trung.than.code === 'KHONGDOI',
+    'GHI ĐÚNG GIÁ ĐANG CHẠY THÌ BỊ CHẶN',
+    'một dòng không đổi gì là làm sổ dài ra mà không thêm sự thật nào');
+
+  /* ── R2 · ĐỔI GIÁ KHÔNG TỰ DỜI THANG DUYỆT CHI ──
+     Thang neo vào giá gói T3. Tự dời theo nghĩa là quyền tiêu tiền của
+     cả Học viện đổi mà KHÔNG AI KÝ. */
+  const neoTruoc = mCT.soatNeoThang();
+  const neoSau = mCT.soatNeoThang(giaSong.gia);
+  bao(neoTruoc.khop === true && neoSau.khop === false && neoSau.lech.length > 0,
+    'R2 · ĐỔI GIÁ LÀM soatNeoThang BÁO LỆCH — nó NÊU chứ không dời',
+    neoSau.lech.map(l => l.nac).join(' · ') + ' lệch · dời thang là một quyết định về ' +
+    'quyền tiêu tiền, có người chịu trách nhiệm; mục chờ BG-02 hỏi đúng câu ấy');
+  /* Và THANG PHẢI ĐỨNG YÊN. Đọc thẳng con số nấc đang để trong chính
+     dòng báo lệch: nó vẫn là giá KHỞI ĐẦU, không phải giá vừa đổi. Một
+     cái thang tự dời theo giá là một cổng tự nới ra mà không ai ký. */
+  const lechN3 = neoSau.lech.filter(l => l.nac === 'N3')[0];
+  bao(!!lechN3 && lechN3.thangDangDe === 10000000 && lechN3.giaGoiBayGio === 12000000,
+    'và THANG ĐỨNG YÊN — nấc N3 vẫn ở 10.000.000đ trong khi gói đã 12.000.000đ',
+    'phép soi nêu CẢ HAI con số, nên người quyết đọc ra chỗ lệch mà không phải đi tra');
+
+  /* ── SỔ ĐỔI GIÁ XẾP TĂNG DẦN, ĐỌC XUÔI ĐƯỢC ── */
+  const soDoi = await goi({fn:'soDoiGia', token:tkGD, u:'giamdoc@gita365.vn', tang:'3'});
+  bao(soDoi.than.ok && soDoi.than.so === 2 &&
+      soDoi.than.ds.every(d => d.lyDo && d.boiAi === 'superadmin@gita365.vn'),
+    'SỔ ĐỔI GIÁ MỞ CHO R01–R03, mỗi dòng có LÝ DO và TÊN NGƯỜI KÝ',
+    soDoi.than.so + ' lần đổi · ô boiAi lấy từ hoSo.u của phiên, không phải một ô do ' +
+    'người gọi truyền vào');
+}
+
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng
