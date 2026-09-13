@@ -883,6 +883,92 @@ sau chúng cùng vỡ một lượt — đúng cái đã xảy ra ở 9.64–9.6
 
 ---
 
+## BỘ NÃO — Phân hệ 3: Nội dung & tiếp thị (9.99.65)
+
+Phần V. Màn **Nội dung & tiếp thị** (`src/noi-dung-tiep-thi.js`, bốn
+ngăn), máy chủ `may-chu/noi-dung-tiep-thi.js`, kho
+`data.noi-dung-tiep-thi.js` (8 kho), bộ kiểm **mục 82**, chín phép đo ở
+`thu-worker.js`.
+
+### Kho đã có sẵn rất nhiều, nên phần này TRỎ chứ không chép
+
+Kho đã có hiến pháp nội dung `KN_*` (28 kho) và một bộ soi chạy thật ở
+`kien-truc-noi-dung.js`: dò câu sáo rỗng, dò lời phán, dò câu dài, đòi
+nhãn nguồn, dò tự xưng chuyên gia. Phần V **không dựng lại cái nào** —
+mục QC4 của bộ lọc quảng cáo **gọi thẳng** `soatNguon`, và mục 82 đọc
+mã nguồn để canh đúng chỗ ấy: chép bảng nhãn nguồn sang thì thêm một
+nhãn mới ở bản sau là hai bảng lệch nhau, và bộ lọc **bắt oan** một bài
+đã ghi nguồn đúng.
+
+### Bảy mục của bộ lọc KHÔNG cùng một loại
+
+| Ngăn | Mục | Ai đo |
+|---|---|---|
+| Máy đo | QC1 từ tuyệt đối · QC2 so sánh · QC3 cam kết kết quả · QC4 số không nguồn | máy đếm thẳng |
+| Người khai | QC5 chứng thực · QC6 ảnh trẻ em · QC7 người ảnh hưởng | **người**, kèm tên và giấy tờ |
+
+Trình cả bảy như đã kiểm thì người duyệt thấy bảy dấu tick rồi thôi
+không đọc — và ba mục nặng nhất về **pháp lý** lại đúng là ba mục không
+ai đọc nữa. Máy nhìn thấy cái ô tích, **không nhìn thấy sự việc**. Nên
+ba mục ấy đòi **một cái tên kèm một chỗ trỏ tới giấy tờ**, không nhận ô
+tích. Cùng luật với Điều 13 (9.99.62), `daGoNgoai` (9.99.58), cột lời
+khai của phễu (9.99.59).
+
+**Khai `khongApDung` khác hẳn bỏ trống.** Bài không có ảnh trẻ em thì
+QC6 không phải một mục phải ký — nhưng phải **nói ra thế**. Bỏ trống là
+chưa ai nhìn tới, và một mục bỏ trống trôi qua thì nó trôi mãi.
+
+### Hai cổng của 5.1
+
+1. **Không khai tầng nhận thức thì không xuất bản**, và máy **không
+   đoán hộ**. Đoán thì một phần bảy là trúng, và người viết tưởng bài
+   đã được xếp tầng nên thôi không nghĩ tới nữa — mà việc xếp tầng
+   chính là việc phải nghĩ.
+2. **Lời kêu gọi sai tầng bị chặn.** Bài tầng 1–2 kết bằng *"Đăng ký
+   ngay"* không bị ai phản đối — nó bị **lướt qua**, và lướt qua thì
+   không để lại dấu nào để về sau truy.
+
+**Bẫy tên gọi, ghi trước khi nó cắn:** kho đã có chữ *tầng* mang nghĩa
+**tầng sản phẩm T1–T5**. *Tầng nhận thức* là thang khác hẳn — một bài
+tầng sản phẩm T4 vẫn viết được cho người ở tầng nhận thức 1. Nên mọi
+thứ ở đây mang tiền tố `NT_` và ô gọi là **`tangNT`**, không bao giờ
+gọi trần là `tang`: gõ trần thì nó lặng lẽ khớp vào phép soi tầng sản
+phẩm, và **cả hai phép soi cùng xanh trên hai thứ khác nhau**.
+
+Bảng lời kêu gọi nằm ở **nhóm**, không ở tầng — chép ra bảy dòng là giữ
+bảy bản của một luật. Nhóm N7 **cố ý không có khoá `keuGoiSai`**: người
+đã vào rồi thì không còn lời mời nào sai. Một mảng rỗng ở đó là một
+dòng tự khai rằng nó đang thiếu, và mục 82 báo đỏ đúng thế.
+
+### 5.2 — phép đếm đội lốt một phép đo chất lượng
+
+Một bài gốc phải ra đủ **bảy nhánh**. Không kể được trong sáu mươi giây
+thì bài chưa có **ý trung tâm**; không rút được thành một trang thì bài
+chưa có **việc làm được**. Thiếu thì nêu **từng nhánh** thiếu — một con
+số thiếu không nói thiếu cái gì thì người viết đoán, và họ đoán nhánh
+dễ làm nhất.
+
+### Chọn dấu hiệu, không dựng danh sách trừ
+
+`CUM_TUYET_DOI` dò **cụm nhiều âm tiết** (`tốt nhất`, `hàng đầu`),
+không dò âm tiết trần `nhất` — nó nằm trong *nhất định*, *thống nhất*.
+`CUM_SO_SANH` dò **hình của lời so sánh**, không dò tên đối thủ: một
+danh sách tên đối thủ phải dài thêm mãi và luôn thiếu đúng cái tên mới.
+`CUM_CAM_KET` dò **cụm hai vế** — `cam kết` trần không đủ, vì kho này
+cam kết rất nhiều thứ đúng đắn.
+
+### Hai chỗ bài thử của tôi sai, không phải mã sai
+
+Phá thử xong thì hai phép đo đỏ, và cả hai là **lỗi ở bài thử**: một
+bài thử quên khai ba mục người-đo (bản đặc tả viết *"MỌI nội dung tiếp
+thị phải qua bộ lọc"* — bảy mục đều phải có **câu trả lời**, thứ khác
+nhau là câu trả lời chứ không phải việc có phải trả lời hay không); một
+bài thử viết *"Ba mươi phần"* bằng chữ nên không có chữ số nào để mà
+đếm. Ghi lại vì cái bẫy thứ hai sẽ quay lại: **phép đo con số không
+thấy số viết bằng chữ.**
+
+---
+
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**

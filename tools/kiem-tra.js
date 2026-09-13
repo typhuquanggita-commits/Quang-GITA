@@ -13014,6 +13014,201 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n82 · NỘI DUNG & TIẾP THỊ — BẢY MỤC KHÔNG CÙNG MỘT LOẠI');
+  /* ══════════════════ 82. NỘI DUNG & TIẾP THỊ ══════════════════
+
+     Phần V. Chỗ đáng đo nhất không phải bảy mục của bộ lọc — mà là
+     việc chúng KHÔNG CÙNG MỘT LOẠI: bốn mục máy đo được, ba mục chỉ
+     người khai được.
+
+     Trình cả bảy như đã kiểm thì người duyệt thấy bảy dấu tick rồi
+     thôi không đọc, và ba mục nặng nhất về pháp lý lại đúng là ba mục
+     không ai đọc nữa. Cùng luật với Điều 13 (mục 78), ô daGoNgoai và
+     cột lời khai của phễu. */
+  {
+    const mNT = await import('../may-chu/noi-dung-tiep-thi.js');
+    const khoNT = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        tang: (G.NT_TANG7 || []).map(x => x.tangNT),
+        tangNhom: (G.NT_TANG7 || []).map(x => [x.tangNT, x.nhom]),
+        tangThieuLa: (G.NT_TANG7 || []).filter(x => !x.la || !x.nhom)
+          .map(x => x.tangNT),
+        nhom: (G.NT_NHOM4 || []).map(x => x.ma),
+        nhomThieu: (G.NT_NHOM4 || []).filter(x => !x.dang || !x.keuGoiDung || !x.vi)
+          .map(x => x.ma),
+        /* Nhóm N7 CỐ Ý không có khoá keuGoiSai — bản đặc tả để trống ô
+           ấy, và luật kho là vắng mặt nghĩa là KHÔNG ÁP DỤNG còn rỗng
+           nghĩa là đáng lẽ phải có giá trị. Một mảng rỗng ở đây là một
+           dòng tự khai rằng nó đang thiếu. */
+        nhomCoSai: (G.NT_NHOM4 || []).filter(x => x.keuGoiSai).map(x => x.ma),
+        nhomSaiRong: (G.NT_NHOM4 || []).filter(x => x.keuGoiSai &&
+          !x.keuGoiSai.length).map(x => x.ma),
+        keuGoiSai: (G.NT_NHOM4 || []).filter(x => x.keuGoiSai)
+          .map(x => [x.ma, x.keuGoiSai.map(c => c.toLowerCase())]),
+        nhanh: (G.NT_NHANH7 || []).map(x => x.ma),
+        nhanhThieuVi: (G.NT_NHANH7 || []).filter(x => !x.ten || !x.kenh || !x.vi)
+          .map(x => x.ma),
+        loc: (G.NT_LOC7 || []).map(x => x.ma),
+        /* Mỗi mục khai ĐÚNG MỘT đường đo: mayDo HOẶC nguoiDo, không
+           bao giờ cả hai và không bao giờ thiếu cả hai. */
+        locCaHai: (G.NT_LOC7 || []).filter(x => x.mayDo && x.nguoiDo).map(x => x.ma),
+        locKhongCo: (G.NT_LOC7 || []).filter(x => !x.mayDo && !x.nguoiDo).map(x => x.ma),
+        locMay: (G.NT_LOC7 || []).filter(x => x.mayDo).map(x => x.ma),
+        locNguoi: (G.NT_LOC7 || []).filter(x => x.nguoiDo).map(x => x.ma),
+        locThieuVi: (G.NT_LOC7 || []).filter(x => !x.hoi || !x.vi).map(x => x.ma)
+      };
+    });
+
+    const v = {};
+    v.tangKhop = JSON.stringify(khoNT.tang) === JSON.stringify(mNT.TANG_NT || []);
+    v.nhomKhop = JSON.stringify(khoNT.nhom) === JSON.stringify(mNT.NHOM4 || []);
+    v.nhanhKhop = JSON.stringify(khoNT.nhanh) === JSON.stringify(mNT.NHANH7 || []);
+    v.locKhop = JSON.stringify(khoNT.loc) === JSON.stringify(mNT.LOC7 || []);
+    v.locMayKhop = JSON.stringify(khoNT.locMay) === JSON.stringify(mNT.LOC_MAY || []);
+    v.locNguoiKhop = JSON.stringify(khoNT.locNguoi) === JSON.stringify(mNT.LOC_NGUOI || []);
+    /* Bảng tầng→nhóm ở máy chủ phải khớp TỪNG DÒNG với kho. Lệch một
+       dòng thì một tầng rơi sang nhóm khác, và lời kêu gọi của cả tầng
+       ấy được canh bằng luật của nhóm khác — im lặng hoàn toàn. */
+    v.tangNhomKhop = khoNT.tangNhom.every(([t, n]) => mNT.TANG_NHOM[t] === n) &&
+      Object.keys(mNT.TANG_NHOM || {}).length === khoNT.tangNhom.length;
+    v.keuGoiKhop = khoNT.keuGoiSai.every(([ma, ds]) =>
+      JSON.stringify((mNT.KEU_GOI_SAI || {})[ma]) === JSON.stringify(ds)) &&
+      Object.keys(mNT.KEU_GOI_SAI || {}).length === khoNT.keuGoiSai.length;
+    v.tangThieuLa = khoNT.tangThieuLa;
+    v.nhomThieu = khoNT.nhomThieu;
+    v.nhomSaiRong = khoNT.nhomSaiRong;
+    v.nhanhThieuVi = khoNT.nhanhThieuVi;
+    v.locCaHai = khoNT.locCaHai;
+    v.locKhongCo = khoNT.locKhongCo;
+    v.locThieuVi = khoNT.locThieuVi;
+    v.soMay = khoNT.locMay.length;
+    v.soNguoi = khoNT.locNguoi.length;
+
+    /* ══ GỌI THẲNG ══ */
+    /* Không khai tầng thì CHẶN, và máy không đoán hộ. */
+    const t0 = mNT.docTangNT(undefined);
+    const tLa = mNT.docTangNT(9);
+    const tChuoi = mNT.docTangNT('3');
+    v.tangChayThat = t0.ok === false && t0.code === 'CHUAKHAITANG' &&
+      tLa.ok === false && tChuoi.ok === true && tChuoi.tangNT === 3 &&
+      tChuoi.nhom === 'N34' && /KHÔNG đoán hộ/.test(t0.error);
+
+    /* Lời kêu gọi sai tầng bị bắt; đúng tầng thì không bắt oan. */
+    const kgSai = mNT.soatKeuGoi(1, 'Chuyện nhà chị Lan. Đăng ký ngay nhé.');
+    const kgDung = mNT.soatKeuGoi(1, 'Chuyện nhà chị Lan. Anh chị thấy quen không?');
+    const kg56 = mNT.soatKeuGoi(6, 'Đặt lịch nói chuyện 20 phút với chuyên gia.');
+    const kg7 = mNT.soatKeuGoi(7, 'Giảm 50% hôm nay cho người đang học.');
+    v.keuGoiChayThat = kgSai.dat === false && kgDung.dat === true &&
+      kg56.dat === true &&
+      /* Tầng 7 KHÔNG có lời kêu gọi sai nào — người đã vào rồi thì
+         không còn lời mời nào sai. Bảng phải nói đúng thế, không phải
+         nói "chưa kịp điền". */
+      kg7.dat === true;
+
+    /* Bốn mục máy đo bắt đủ; và bài có số KÈM nhãn nguồn thì không bị
+       bắt — một phép đo bắt oan thì lần sau người ta tắt nó đi. */
+    const bBan = mNT.soatLocMay('Trung tâm tốt nhất, hơn hẳn các trung tâm khác, ' +
+      'cam kết điểm 9, 87% tăng điểm.');
+    const bSach = mNT.soatLocMay('[KHO GITA] 30 phần học, mỗi phần một buổi.');
+    const bOan = mNT.soatLocMay('Nhà mình nhất định làm được. Cả nhà thống nhất giờ đọc.');
+    v.locMayChayThat = bBan.dat === false &&
+      bBan.pham.map(x => x.ma).join() === 'QC1,QC2,QC3,QC4' &&
+      bSach.dat === true && bSach.coSo === true && bOan.dat === true;
+
+    /* Ba mục người-khai đòi TÊN và GIẤY TỜ, không nhận một ô tích. */
+    const nTich = mNT.soatLocNguoi({QC5:{xong:true}, QC6:{xong:true}, QC7:{xong:true}});
+    const nDu = mNT.soatLocNguoi({QC5:{boiAi:'chị Hoa', giayTo:'DY-11'},
+      QC6:{khongApDung:true}, QC7:{boiAi:'anh Minh', giayTo:'đã gọi kiểm'}});
+    const nTrong = mNT.soatLocNguoi({QC5:{boiAi:'a', giayTo:'b'},
+      QC7:{boiAi:'c', giayTo:'d'}});
+    v.locNguoiChayThat = nTich.dat === false && nTich.thieu.length === 3 &&
+      nDu.dat === true && nTrong.dat === false &&
+      nTrong.thieu.join().indexOf('QC6') >= 0;
+
+    /* Thiếu nhánh thì nêu TỪNG nhánh, không gộp một con số. */
+    const nhDu = mNT.soatNhanh7(['NH1','NH2','NH3','NH4','NH5','NH6','NH7']);
+    const nhThieu = mNT.soatNhanh7(['NH1','NH2','NH3']);
+    v.nhanhChayThat = nhDu.dat === true && nhThieu.dat === false &&
+      nhThieu.thieu.join() === 'NH4,NH5,NH6,NH7' && /chưa đủ chín/.test(nhThieu.vi);
+
+    /* ── KHÔNG CHÉP LẠI BỘ SOI NGUỒN ──
+       QC4 phải GỌI THẲNG sang soatNguon của hiến pháp nội dung. Chép
+       bảng nhãn nguồn sang đây thì thêm một nhãn mới ở bản sau là hai
+       bảng lệch nhau, và bộ lọc quảng cáo bắt oan một bài đã ghi nguồn
+       đúng. Đo bằng cách đọc chính mã nguồn — cùng lối với mục 81. */
+    const maNT = await (await import('fs/promises'))
+      .readFile('may-chu/noi-dung-tiep-thi.js', 'utf8');
+    v.goiSoatNguon = /import \{ soatNguon \} from '\.\/kien-truc-noi-dung\.js'/.test(maNT) &&
+      /soatNguon\(chu\)/.test(maNT);
+    v.chepNhanNguon = /\[KHO GITA\]|\[MÁY PHÂN TÍCH\]|\[CHƯA KIỂM CHỨNG\]/.test(maNT);
+
+    const ntDat =
+      v.tangKhop && v.nhomKhop && v.nhanhKhop && v.locKhop && v.locMayKhop &&
+      v.locNguoiKhop && v.tangNhomKhop && v.keuGoiKhop &&
+      !v.tangThieuLa.length && !v.nhomThieu.length && !v.nhomSaiRong.length &&
+      !v.nhanhThieuVi.length && !v.locCaHai.length && !v.locKhongCo.length &&
+      !v.locThieuVi.length && v.soMay === 4 && v.soNguoi === 3 &&
+      v.tangChayThat && v.keuGoiChayThat && v.locMayChayThat &&
+      v.locNguoiChayThat && v.nhanhChayThat &&
+      v.goiSoatNguon && !v.chepNhanNguon;
+
+    bao(ntDat,
+      'PHÂN HỆ 3 · NỘI DUNG & TIẾP THỊ: BẢY MỤC CỦA BỘ LỌC QUẢNG CÁO KHÔNG CÙNG MỘT LOẠI — bốn mục máy đo được, ba mục chỉ NGƯỜI khai được, và hai ngăn ấy không bao giờ gộp thành một con số "đạt mấy trên bảy". Gộp thì một lời khai nằm cùng hàng với một phép đo, cùng kiểu chữ, và người duyệt tin cả hai như nhau — mà ba mục người-khai lại đúng là ba mục nặng nhất về pháp lý: một lời chứng thực có thật hay không, một tờ đồng ý của cha mẹ có tồn tại hay không, một người ảnh hưởng đã dùng thật hay chưa. Máy nhìn thấy cái ô tích, không nhìn thấy sự việc. Nên ba mục ấy đòi MỘT CÁI TÊN kèm MỘT CHỖ TRỎ TỚI GIẤY TỜ, và khai "không áp dụng" khác hẳn bỏ trống — bỏ trống là chưa ai nhìn tới. Cùng luật với Điều 13 ở mục 78, ô daGoNgoai và cột lời khai của phễu. Đo thêm hai cổng: nội dung KHÔNG khai tầng nhận thức thì không xuất bản được và máy KHÔNG đoán tầng hộ, vì đoán thì một phần bảy là trúng và người viết tưởng bài đã được xếp tầng nên thôi không nghĩ tới nữa; lời kêu gọi sai tầng bị chặn, vì người ở tầng một không phản đối lời mời mua — họ lướt qua, và lướt qua thì không để lại dấu nào. Và QC4 phải GỌI THẲNG sang soatNguon của hiến pháp nội dung chứ không chép lại bảng nhãn nguồn: chép thì thêm một nhãn mới ở bản sau là hai bảng lệch nhau, và bộ lọc bắt oan một bài đã ghi nguồn đúng',
+      ntDat
+        ? khoNT.tang.length + ' tầng nhận thức gom ' + khoNT.nhom.length +
+          ' nhóm · ' + khoNT.nhanh.length + ' nhánh · bộ lọc ' + khoNT.loc.length +
+          ' mục = ' + v.soMay + ' máy đo (' + khoNT.locMay.join(' · ') + ') + ' +
+          v.soNguoi + ' người khai (' + khoNT.locNguoi.join(' · ') +
+          ') · nhóm N7 CỐ Ý không có ô kêu gọi sai · QC4 gọi thẳng soatNguon, ' +
+          'không chép bảng nhãn nguồn'
+        : [!v.tangKhop ? 'BẢN CHÉP BẢY TẦNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nhomKhop ? 'BẢN CHÉP BỐN NHÓM Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.tangNhomKhop ? 'BẢNG TẦNG→NHÓM Ở MÁY CHỦ LỆCH VỚI KHO — lệch một ' +
+             'dòng thì lời kêu gọi của cả một tầng được canh bằng luật của nhóm ' +
+             'khác, và im lặng hoàn toàn' : '',
+           !v.keuGoiKhop ? 'BẢNG LỜI KÊU GỌI SAI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nhanhKhop ? 'BẢN CHÉP BẢY NHÁNH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.locKhop ? 'BẢN CHÉP BẢY MỤC LỌC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.locMayKhop || !v.locNguoiKhop ? 'CÁCH CHIA HAI NGĂN Ở MÁY CHỦ LỆCH ' +
+             'VỚI KHO' : '',
+           v.locCaHai.length ? 'MỤC LỌC KHAI CẢ mayDo LẪN nguoiDo: ' +
+             v.locCaHai.join(' · ') + ' — mỗi mục đúng MỘT đường đo' : '',
+           v.locKhongCo.length ? 'MỤC LỌC KHÔNG KHAI ĐƯỜNG ĐO NÀO: ' +
+             v.locKhongCo.join(' · ') + ' — một mục không nói ai đo nó thì không ' +
+             'ai đo nó' : '',
+           v.soMay !== 4 ? 'CÓ ' + v.soMay + ' MỤC MÁY ĐO, phải là 4' : '',
+           v.soNguoi !== 3 ? 'CÓ ' + v.soNguoi + ' MỤC NGƯỜI KHAI, phải là 3' : '',
+           v.nhomSaiRong.length ? 'NHÓM CÓ Ô keuGoiSai RỖNG: ' +
+             v.nhomSaiRong.join(' · ') + ' — rỗng nghĩa là đáng lẽ phải có giá ' +
+             'trị; không áp dụng thì BỎ HẲN KHOÁ' : '',
+           v.tangThieuLa.length ? 'tầng thiếu ô mô tả hoặc ô nhóm: ' +
+             v.tangThieuLa.join(' · ') : '',
+           v.nhomThieu.length ? 'nhóm thiếu ô dạng, ô kêu gọi đúng hoặc lý do: ' +
+             v.nhomThieu.join(' · ') : '',
+           v.nhanhThieuVi.length ? 'nhánh thiếu tên, kênh hoặc lý do: ' +
+             v.nhanhThieuVi.join(' · ') : '',
+           v.locThieuVi.length ? 'mục lọc thiếu câu hỏi hoặc lý do: ' +
+             v.locThieuVi.join(' · ') : '',
+           !v.tangChayThat ? 'CỔNG TẦNG KHÔNG CHẠY THẬT — hoặc máy đang ĐOÁN tầng ' +
+             'hộ, hoặc tầng gửi dạng chuỗi bị trượt' : '',
+           !v.keuGoiChayThat ? 'CỔNG LỜI KÊU GỌI KHÔNG CHẠY THẬT (hoặc nó bắt oan ' +
+             'lời kêu gọi ĐÚNG tầng)' : '',
+           !v.locMayChayThat ? 'BỐN MỤC MÁY ĐO KHÔNG CHẠY THẬT (hoặc chúng bắt oan ' +
+             '"nhất định" · "thống nhất", hoặc bắt oan bài đã ghi nhãn nguồn)' : '',
+           !v.locNguoiChayThat ? 'BA MỤC NGƯỜI KHAI KHÔNG CHẠY THẬT — một ô tích ' +
+             'không tên vẫn lọt, hoặc bỏ trống được nhận như "không áp dụng"' : '',
+           !v.nhanhChayThat ? 'PHÉP ĐẾM BẢY NHÁNH KHÔNG CHẠY THẬT (hoặc nó gộp ' +
+             'thành một con số thay vì nêu từng nhánh thiếu)' : '',
+           !v.goiSoatNguon ? 'QC4 KHÔNG GỌI THẲNG soatNguon CỦA HIẾN PHÁP NỘI ' +
+             'DUNG' : '',
+           v.chepNhanNguon ? 'ĐÃ CHÉP BẢNG NHÃN NGUỒN SANG PHÂN HỆ 3 — thêm một ' +
+             'nhãn mới ở bản sau là hai bảng lệch nhau, và bộ lọc bắt oan một bài ' +
+             'đã ghi nguồn đúng' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

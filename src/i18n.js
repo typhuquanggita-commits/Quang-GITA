@@ -292,6 +292,7 @@ G.ITEM_EN = {
   'bo-nao':['GITA 365 Brain','13-article constitution · three delegation zones · 10-point fence · anonymise before anything leaves · seven advisory seats'],
   'vung-manh':['Your Child\'s Strong Zone','three observable behaviours · seven fields · four weeks · Strength Card valid 90 days · five-tier value ladder'],
   'coach-kh':['Customer Coaching','nine-step loop · twelve question streams, four require three council rounds · five seats, the soul-keeper must be a real person · Crawling-Baby ceilings'],
+  'noi-dung-tiep-thi':['Content & Marketing','seven awareness tiers — content without a declared tier cannot be published · one source, seven branches · seven-item ad filter, four machine-checked and three human-attested'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],

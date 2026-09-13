@@ -4110,6 +4110,119 @@ let idTam9 = null, idDang9 = null;
     'mình vừa viết dài, và lần sau viết y hệt');
 }
 
+/* ══════════════ PHÂN HỆ 3 · NỘI DUNG & TIẾP THỊ ══════════════
+
+   Ba thứ Phần V mang lại, và cả ba đều là cổng chứ không phải bảng:
+   nội dung không khai tầng nhận thức thì KHÔNG xuất bản; lời kêu gọi
+   sai tầng bị chặn; bộ lọc quảng cáo tách HAI NGĂN — bốn mục máy đo,
+   ba mục chỉ người khai được.
+
+   Chỗ đáng đo nhất là chỗ tách hai ngăn. Gộp bảy mục thành "đạt mấy
+   trên bảy" thì một lời khai nằm cùng hàng với một phép đo, và người
+   duyệt tin cả hai như nhau — đúng lớp lỗi của cột lời khai ở phễu
+   thị giác và của ô daGoNgoai. */
+{
+  const mNT = await import('../may-chu/noi-dung-tiep-thi.js');
+
+  /* ── KHÔNG KHAI TẦNG THÌ KHÔNG XUẤT BẢN, và máy KHÔNG đoán hộ ── */
+  const khongTang = await goi({fn:'soatTiepThi', token:tkSA, u:'superadmin@gita365.vn',
+    chu:'Một buổi tối nhà mình ngồi lại với nhau và không ai mở điện thoại.'});
+  bao(!khongTang.than.ok && khongTang.than.code === 'CHUAKHAITANG' &&
+      /KHÔNG đoán hộ/.test(khongTang.than.error || ''),
+    'NỘI DUNG KHÔNG KHAI TẦNG NHẬN THỨC THÌ KHÔNG XUẤT BẢN ĐƯỢC — và máy KHÔNG đoán tầng hộ',
+    'đoán thì một phần bảy là trúng, và người viết tưởng bài đã được xếp tầng nên ' +
+    'thôi không nghĩ tới nữa — mà việc xếp tầng chính là việc phải nghĩ');
+
+  /* Chuỗi "1" phải nhận được như số 1. Gõ lệch kiểu thì máy báo "chưa
+     khai tầng" cho một bài đã khai — im lặng và sai đúng hướng bực. */
+  const tangChuoi = mNT.docTangNT('3');
+  bao(tangChuoi.ok && tangChuoi.tangNT === 3 && tangChuoi.nhom === 'N34',
+    'TẦNG GỬI LÊN DẠNG CHUỖI VẪN NHẬN ĐƯỢC — ép kiểu đúng MỘT chỗ',
+    'so === với số thì "3" trượt, và máy báo chưa khai tầng cho một bài đã khai');
+
+  /* ── LỜI KÊU GỌI SAI TẦNG ── */
+  /* Ba mục người-khai phải được TRẢ LỜI cả ở một bài không có chứng
+     thực, không có ảnh trẻ em, không có người ảnh hưởng — trả lời ấy
+     là `khongApDung`. Bản đặc tả viết "MỌI nội dung tiếp thị phải qua
+     bộ lọc này", nên bảy mục đều phải có câu trả lời; thứ khác nhau
+     là câu trả lời, không phải việc có phải trả lời hay không. */
+  const KHAI_SACH = {QC5:{khongApDung:true}, QC6:{khongApDung:true},
+    QC7:{khongApDung:true}};
+  const saiTang = await goi({fn:'soatTiepThi', token:tkSA, u:'superadmin@gita365.vn',
+    tangNT:1, khai:KHAI_SACH,
+    chu:'Câu chuyện nhà chị Lan. Đăng ký ngay để giữ chỗ cho con.'});
+  const dungTang = await goi({fn:'soatTiepThi', token:tkSA, u:'superadmin@gita365.vn',
+    tangNT:1, khai:KHAI_SACH,
+    chu:'Câu chuyện nhà chị Lan. Anh chị thấy quen không?'});
+  bao(saiTang.than.ok && saiTang.than.dat === false &&
+      saiTang.than.keuGoi.dinh.join() === 'đăng ký ngay' &&
+      dungTang.than.ok && dungTang.than.dat === true,
+    'LỜI KÊU GỌI SAI TẦNG BỊ CHẶN — tầng 1–2 không mời mua',
+    'người ở tầng này không phản đối lời mời, họ LƯỚT QUA — và lướt qua thì không ' +
+    'để lại dấu nào để về sau truy');
+
+  /* ── BỘ LỌC QUẢNG CÁO · BỐN MỤC MÁY ĐO ── */
+  const may = mNT.soatLocMay('Trung tâm tốt nhất, hơn hẳn các trung tâm khác, ' +
+    'cam kết điểm 9 cho con, 87% học viên tăng điểm.');
+  const maMay = may.pham.map(x => x.ma).join(',');
+  bao(may.dat === false && maMay === 'QC1,QC2,QC3,QC4',
+    'BỘ LỌC BẮT ĐỦ BỐN MỤC MÁY ĐO: từ tuyệt đối · so sánh · cam kết kết quả · số không nguồn',
+    maMay + ' — và QC4 gọi THẲNG sang soatNguon của hiến pháp nội dung, không chép ' +
+    'lại bảng nhãn nguồn: chép thì thêm một nhãn mới ở bản sau là hai bảng lệch nhau');
+
+  /* Bài sạch có con số NHƯNG có nhãn nguồn thì KHÔNG bị bắt. Một phép
+     đo bắt oan thì lần sau người ta tắt nó đi. */
+  const coNguon = mNT.soatLocMay('[KHO GITA] 30 phần học, mỗi phần một buổi.');
+  bao(coNguon.dat === true && coNguon.coSo === true && coNguon.soNhanNguon === 1,
+    'CÓ CON SỐ MÀ CÓ NHÃN NGUỒN THÌ KHÔNG BỊ BẮT — phép đo không bắt oan',
+    'bắt oan thì lần sau người ta tắt nó đi');
+
+  /* "nhất định", "thống nhất" KHÔNG được tính là từ tuyệt đối: tiếng
+     Việt không phân từ bằng khoảng trắng, nên chặn ở chỗ CHỌN DẤU
+     HIỆU — chọn cụm nhiều âm tiết — rẻ hơn một danh sách trừ. */
+  const batOan = mNT.soatLocMay('Nhà mình nhất định làm được. Cả nhà thống nhất ' +
+    'một giờ đọc sách.');
+  bao(batOan.dat === true,
+    'CỤM TUYỆT ĐỐI DÒ THEO CỤM, KHÔNG THEO ÂM TIẾT TRẦN — "nhất định" và "thống nhất" không bị bắt',
+    'chặn ở chỗ CHỌN DẤU HIỆU rẻ hơn và chắc hơn một danh sách trừ phải dài thêm mãi');
+
+  /* ── BA MỤC NGƯỜI-KHAI: ĐÒI TÊN VÀ GIẤY TỜ, KHÔNG NHẬN Ô TÍCH ── */
+  const oTich = mNT.soatLocNguoi({QC5:{xong:true}, QC6:{xong:true}, QC7:{xong:true}});
+  const coTen = mNT.soatLocNguoi({
+    QC5:{boiAi:'chị Hoa', giayTo:'DY-2026-011'},
+    QC6:{khongApDung:true},
+    QC7:{boiAi:'anh Minh', giayTo:'đã gọi kiểm ngày 5/9'}});
+  const thieuGiay = mNT.soatLocNguoi({
+    QC5:{boiAi:'chị Hoa'}, QC6:{khongApDung:true},
+    QC7:{boiAi:'anh Minh', giayTo:'x'}});
+  bao(oTich.dat === false && oTich.thieu.length === 3 &&
+      coTen.dat === true && thieuGiay.dat === false &&
+      /thiếu số hiệu giấy tờ/.test(thieuGiay.thieu.join(' ')),
+    'BA MỤC NGƯỜI-KHAI ĐÒI MỘT CÁI TÊN VÀ MỘT CHỖ TRỎ TỚI GIẤY TỜ — không nhận một ô tích',
+    'máy nhìn thấy cái ô tích, không nhìn thấy sự việc; và một ô tích không tên ' +
+    'thì lúc cần đối chất không hỏi được ai');
+
+  /* Khai KHÔNG ÁP DỤNG khác hẳn bỏ trống: không dùng ảnh trẻ em thì
+     QC6 không phải một mục phải ký, còn bỏ trống là chưa ai nhìn tới. */
+  const boTrong = mNT.soatLocNguoi({QC5:{boiAi:'a', giayTo:'b'},
+    QC7:{boiAi:'c', giayTo:'d'}});
+  bao(boTrong.dat === false && boTrong.thieu.join().indexOf('QC6') >= 0,
+    'KHAI "KHÔNG ÁP DỤNG" KHÁC HẲN BỎ TRỐNG — bỏ trống là chưa ai nhìn tới',
+    'một mục bỏ trống trôi qua thì nó trôi mãi, vì không có gì nói rằng nó đã bị bỏ qua');
+
+  /* ── MỘT GỐC RA BẢY NHÁNH: THIẾU THÌ NÊU TỪNG NHÁNH ── */
+  const duNhanh = await goi({fn:'soatBayNhanh', token:tkSA, u:'superadmin@gita365.vn',
+    daCo:['NH1','NH2','NH3','NH4','NH5','NH6','NH7']});
+  const thieuNhanh = await goi({fn:'soatBayNhanh', token:tkSA, u:'superadmin@gita365.vn',
+    daCo:['NH1','NH2','NH3']});
+  bao(duNhanh.than.dat === true && thieuNhanh.than.dat === false &&
+      thieuNhanh.than.thieu.join() === 'NH4,NH5,NH6,NH7' &&
+      /chưa đủ chín/.test(thieuNhanh.than.vi),
+    'THIẾU NHÁNH THÌ NÊU TỪNG NHÁNH THIẾU, không gộp thành một câu "chưa đủ bảy"',
+    'còn thiếu ' + thieuNhanh.than.thieu.join(' · ') + ' — một con số thiếu không ' +
+    'nói thiếu cái gì thì người viết đoán, và họ đoán nhánh dễ làm nhất');
+}
+
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&
     soRa.than.ds[0].daGui === raNgoai.than.daGui,
