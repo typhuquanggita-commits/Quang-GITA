@@ -2379,12 +2379,12 @@ main{container-type:inline-size}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 107 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 108 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 138 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 139 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -2425,7 +2425,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.69',
+  version: '9.99.70',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3329,6 +3329,7 @@ G.NAV = [
     {v:'van-hanh-cham-soc', t:'Vận hành & chăm sóc', h:'Hồ sơ song sinh 23 trường · đèn ba màu tính lúc đọc · nhịp chạm 365 ngày, vùng tử thần ngày 8–12 · sổ dấu vết năm cột, đèn Đỏ phải GỌI', ic:'clock', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'tai-chinh-ceo', t:'Bảy con số CEO', h:'Bảy con số phải thấy mỗi tuần, chia BA ngăn theo nguồn · số tháng sống được tính trên tiền CỦA HỌC VIỆN · bốn luật tài chính · ba kịch bản viết trước', ic:'star', star:1, perm:'fin_view', capMo:'chung'},
     {v:'con-nguoi', t:'Con người · Ba cửa', h:'Ba cửa của một người mới — Hiến pháp 13/13 · giọng qua hàng rào 10 điểm · ba cuộc gọi có người kèm. Chưa đủ ba cửa thì KHÔNG chạm khách một mình, và cổng nằm ở chỗ ghi lượt chạm chứ không ở màn hình', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
+    {v:'phap-ly-rui-ro', t:'Pháp lý & rủi ro', h:'Hai luật có hiệu lực 01/01/2026 — bảy việc của Luật 91 chia theo AI LÀM · ba ô đồng ý tách bạch, ô về con do CHA MẸ ký · nút xoá chạy thật, hai phía đo-được và lời-khai · bốn câu hỏi mang tới luật sư, KHÔNG có câu trả lời', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
@@ -3787,6 +3788,7 @@ G.ITEM_EN = {
   'van-hanh-cham-soc':['Operations & Care','23-field family twin profile · three-colour signal computed at read · 365-day care rhythm with the day 8-12 death zone · five-column trace log; a red light must be a phone call'],
   'tai-chinh-ceo':['Seven CEO Numbers','the seven weekly numbers split into THREE panes by source · runway computed on the Academy own funds, not gross cash · four finance laws · three scenarios written in advance'],
   'con-nguoi':['People · Three Gates','the three gates a new team member passes — 13/13 on the Constitution · voice scored by the 10-point guardrail · three real calls with a mentor. Until all three are cleared, nobody touches a customer alone, and the gate sits where a touch is logged, not on a screen'],
+  'phap-ly-rui-ro':['Legal & Risk','two laws in force from 2026-01-01 — the seven Law 91 duties split by WHO does them · three separate consent boxes, the child-data one signed by a PARENT · a delete request that actually runs, split into the measured half and the attested half · four questions to take to a lawyer, with no answers attached'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
@@ -5425,6 +5427,29 @@ var TRUONG = [
   {k:'tinh',   nhan:'TỈNH / THÀNH PHỐ',   ph:'Hà Nội',              bat:1, tu:'text'}
 ];
 
+/* ═══ BA Ô ĐỒNG Ý — Luật số 91/2025/QH15, việc số 2 ═══
+
+   Luật đòi ô đồng ý RIÊNG, tách bạch, không gộp vào điều khoản chung.
+   Tới 9.99.69 chỗ này còn đúng MỘT ô, và câu báo lỗi của nó tự khai
+   ra chỗ sai: "đồng ý điều khoản sử dụng VÀ cách GITA giữ dữ liệu".
+   Một ô gộp là một câu hỏi mà người trả lời không tách được phần họ
+   muốn nhận khỏi phần họ không muốn.
+
+   Bản chép của G.PLR_DONGY. Màn đăng ký chạy TRƯỚC khi đăng nhập nên
+   kho chưa nạp — đây là một trong số rất ít chỗ phải khai tay, và mục
+   87 đối chiếu ba ô này với kho mỗi lần chạy. */
+var O_DONGY = [
+  {k:'dyDieuKhoan', bat:1,
+   chu:'Tôi đồng ý với điều khoản sử dụng của Học viện GITA.'},
+  {k:'dyDuLieuGiaDinh', bat:1,
+   chu:'Tôi đồng ý để Học viện GITA lưu và dùng thông tin trên cho việc học của gia '+
+       'đình tôi. GITA không thu thập tôn giáo, tình trạng sức khoẻ, thu nhập hay '+
+       'chuyện riêng của vợ chồng.'},
+  {k:'dyDuLieuCon', bat:0,
+   chu:'Tôi là cha/mẹ hoặc người giám hộ, và tôi đồng ý để GITA ghi lại quan sát về '+
+       'con tôi cho việc đồng hành. Tôi rút lại được bất cứ lúc nào.'}
+];
+
 G.kiemDangKy = function(d){
   for(var i=0;i<TRUONG.length;i++){
     var t = TRUONG[i];
@@ -5434,7 +5459,14 @@ G.kiemDangKy = function(d){
   var dt = String(d.dienThoai||'').replace(/[\s.\-]/g,'');
   if(!/^(0|\+84)[0-9]{9,10}$/.test(dt)) return 'Số điện thoại chưa đúng định dạng Việt Nam.';
   if(String(d.hoTen).trim().length < 3) return 'Họ tên quá ngắn.';
-  if(!d.dongY) return 'Cần đồng ý điều khoản sử dụng và cách GITA giữ dữ liệu của gia đình.';
+  /* LUẬT 91/2025 · VIỆC SỐ 2 — ô đồng ý RIÊNG, tách bạch, không gộp
+     vào điều khoản chung. Hai ô đầu bắt buộc vì không có chúng thì
+     không có hợp đồng nào để bắt đầu; ô thứ ba thì KHÔNG — bắt cả ba
+     mới đăng ký được thì ba ô lại thành một ô, người ta tích hết một
+     lượt, và cái "riêng, tách bạch" chỉ còn ở hình thức. Ô thứ ba hỏi
+     lúc cần mở hồ sơ về con, và hai cửa ấy chặn nếu chưa có. */
+  if(!d.dyDieuKhoan) return 'Cần đồng ý điều khoản sử dụng.';
+  if(!d.dyDuLieuGiaDinh) return 'Cần đồng ý để GITA lưu và dùng thông tin của gia đình.';
   return true;
 };
 
@@ -5454,9 +5486,15 @@ G.moDangKy = function(){
       '<input id="dk_'+t.k+'" type="'+t.tu+'" placeholder="'+h(t.ph)+'" class="inp blk mb" '+
       'autocomplete="'+(t.k==='email'?'email':t.k==='hoTen'?'name':t.k==='dienThoai'?'tel':'off')+'">';
   }).join('');
-  o += '<label class="dk-dy"><input id="dk_dongY" type="checkbox"> '+
-    '<span class="tiny" style="line-height:1.6;color:var(--ink-2)">Tôi đồng ý để Học viện GITA lưu và dùng thông tin trên '+
-    'cho việc học của gia đình tôi. GITA không thu thập tôn giáo, tình trạng sức khoẻ, thu nhập hay chuyện riêng của vợ chồng.</span></label>'+
+  /* BA Ô, KHÔNG PHẢI MỘT. Ô cuối ghi rõ là không bắt buộc — không ghi
+     thì người ta tích cho xong, và một cái tích cho xong không phải
+     một sự đồng ý. */
+  o += O_DONGY.map(function(dy){
+    return '<label class="dk-dy"><input id="dk_'+dy.k+'" type="checkbox"> '+
+      '<span class="tiny" style="line-height:1.6;color:var(--ink-2)">'+h(dy.chu)+
+      (dy.bat ? '' : ' <b>(không bắt buộc — anh chị tích sau cũng được)</b>')+
+      '</span></label>';
+  }).join('')+
     '<div id="dk_loi" class="tiny mb" style="color:#BE0E16;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="gui-dang-ky">Gửi và nhận mã xác nhận</button>'+
     '<p class="tiny muted mt center">Đã có tài khoản? Đóng cửa sổ này và đăng nhập ở ô bên dưới.</p>';
@@ -5468,7 +5506,9 @@ G.guiDangKy = function(){
   function bao(t){ if(loi) loi.textContent = t; }
   var d = {};
   TRUONG.forEach(function(t){ d[t.k] = ((document.getElementById('dk_'+t.k)||{}).value || '').trim(); });
-  d.dongY = !!(document.getElementById('dk_dongY')||{}).checked;
+  O_DONGY.forEach(function(dy){
+    d[dy.k] = !!(document.getElementById('dk_'+dy.k)||{}).checked;
+  });
   d.maGioiThieu = G.batMaGioiThieu() || '';
 
   var r = G.kiemDangKy(d);
@@ -6082,6 +6122,10 @@ G.THUOC_CAP_PHEP = [
   /* v9.99.69 — Phân hệ 6 */
   'CN_CUA','CN_CUA_LUAT','CN_NGUON','CN_DONGCHUAN','CN_C1_TH','CN_C2_KHUNG',
   'CN_TUAN','CN_TUAN_LUAT','CN_CHAN','CN_CHOCHU',
+  /* v9.99.70 — Phân hệ 7 */
+  'PLR_CANHBAO','PLR_LUAT','PLR_HAUKIEM','PLR_VIEC7','PLR_VIEC_LUAT',
+  'PLR_DONGY','PLR_DONGY_LUAT','PLR_XOA','PLR_XOA_LUAT','PLR_VUNG4',
+  'PLR_VUNG_LUAT','PLR_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -43340,6 +43384,205 @@ G.VIEWS = G.VIEWS || {};
     else if (G.cngNgan === 'th') o += nganTH();
     else if (G.cngNgan === 'tuan') o += nganTuan();
     else o += nganCua();
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/phap-ly-rui-ro.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÀN PHÁP LÝ & RỦI RO  (Phân hệ 7 của Bộ não)
+
+   ══ NGĂN ĐẦU LÀ CÂU CẢNH BÁO, KHÔNG PHẢI MỘT BẢNG ══
+
+   Bản đặc tả mở Phần IX bằng một cảnh báo bắt buộc: đây là bản đồ để
+   biết chỗ nào cần HỎI, không phải tư vấn pháp lý. Đặt câu ấy ở cuối
+   như một dòng chân trang thì nó đứng đúng chỗ người ta không đọc —
+   mà một màn hình mang chữ "pháp lý" trong một hệ nội bộ thì người
+   đọc dùng nó như một câu TRẢ LỜI, và họ dùng đúng vào lúc đang vội.
+
+   ══ NĂM NGĂN ══
+
+     cảnh báo — câu phải đọc trước mọi bảng
+     hai luật — 91/2025 và 75/2025, và hậu kiểm nghĩa là gì
+     bảy việc — của Luật 91, chia theo AI LÀM chứ không xếp theo số
+     đồng ý  — ba ô, và hai phía của một lượt xoá
+     luật sư — bốn câu hỏi mang đi hỏi, KHÔNG có câu trả lời
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  var NGAN = [
+    {ma: 'canh', ten: 'Cảnh báo',  ic: 'shield'},
+    {ma: 'luat', ten: 'Hai luật',  ic: 'book'},
+    {ma: 'viec', ten: 'Bảy việc',  ic: 'search'},
+    {ma: 'dy',   ten: 'Đồng ý · Xoá', ic: 'quote'},
+    {ma: 'ls',   ten: 'Luật sư',   ic: 'users'}
+  ];
+
+  G.plrNgan = G.plrNgan || 'canh';
+
+  function veLai() {
+    if (!G.S || G.S.view !== 'phap-ly-rui-ro') return;
+    if (typeof document === 'undefined' || !document.getElementById('main')) return;
+    G.render && G.render();
+  }
+  G.plrMoNgan = function (ma) { G.plrNgan = ma; veLai(); };
+
+  function thanhNgan() {
+    return '<div class="row" style="gap:8px;flex-wrap:wrap;margin-bottom:18px">' +
+      NGAN.map(function (n) {
+        var on = G.plrNgan === n.ma;
+        return '<button class="btn' + (on ? ' primary' : '') + '" ' +
+          'onclick="G.plrMoNgan(\'' + n.ma + '\')" style="gap:7px">' +
+          ic(n.ic) + h(n.ten) + '</button>';
+      }).join('') + '</div>';
+  }
+
+  /* ═══════════ NGĂN 1 · CẢNH BÁO ═══════════ */
+  function nganCanh() {
+    var c = G.PLR_CANHBAO || {};
+    return '<div class="card" style="border-left:3px solid var(--bad)">' +
+      '<b>' + h(c.cot || '') + '</b>' +
+      '<p class="sm mt">' + h(c.truocKhiChay || '') + '</p></div>' +
+      '<div class="card mt"><b class="sm">Vì sao câu này đứng ở ngăn đầu</b>' +
+      '<p class="sm mt">' + h(c.viDatDau || '') + '</p></div>' +
+      '<div class="card mt"><b class="sm">Máy không kết luận</b>' +
+      '<p class="sm mt">' + h(c.mayKhongKetLuan || '') + '</p></div>';
+  }
+
+  /* ═══════════ NGĂN 2 · HAI LUẬT ═══════════ */
+  function nganLuat() {
+    var o = (G.PLR_LUAT || []).map(function (l) {
+      var r = '<div class="card mt" style="border-left:3px solid ' + h(l.c) + '">' +
+        '<b>' + h(l.so) + ' — ' + h(l.ten) + '</b>' +
+        '<p class="sm mt"><b>Hiệu lực:</b> ' + h(l.hieuLuc) + '</p>' +
+        '<p class="sm mt">' + h(l.chamVao) + '</p>';
+      ['quyen', 'xuyenBienGioi', 'conHuongDan', 'soSanh', 'hauKiem', 'nguoiAnhHuong']
+        .forEach(function (k) {
+          if (l[k]) r += '<p class="sm mt">' + h(l[k]) + '</p>';
+        });
+      if (l.troVao) r += '<p class="sm muted mt">Đã có bộ lọc ở kho <code>' +
+        h(l.troVao) + '</code> — phần này trỏ vào đấy, không dựng lại.</p>';
+      return r + '</div>';
+    }).join('');
+
+    var hk = G.PLR_HAUKIEM || {};
+    o += '<div class="card mt2" style="border-left:3px solid var(--warn)">' +
+      '<b>' + h(hk.cot || '') + '</b>' +
+      '<p class="sm mt">' + h(hk.vi || '') + '</p>' +
+      '<p class="sm mt">' + h(hk.keoTheo || '') + '</p>' +
+      '<p class="sm mt">' + h(hk.dieu10 || '') + '</p></div>';
+    return o;
+  }
+
+  /* ═══════════ NGĂN 3 · BẢY VIỆC ═══════════ */
+  function nganViec() {
+    var l = G.PLR_VIEC_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>' + h(l.motDuong || '') + '</b>' +
+      '<p class="sm mt">' + h(l.viBayDauTick || '') + '</p>' +
+      '<p class="sm mt">' + h(l.doBangHanhVi || '') + '</p>' +
+      '<p class="sm muted mt">' + h(l.khongChepRao10 || '') + '</p></div>';
+
+    /* Chia theo AI LÀM, không xếp theo số thứ tự của bản đặc tả. Xếp
+       theo số thì một việc máy canh nằm cạnh một việc chờ người, cùng
+       kiểu chữ — và đó đúng là chỗ người đọc tin cả bảy như nhau. */
+    [['mayDo', 'Máy canh — đo bằng cách gọi thật vào cửa', 'ok'],
+     ['nguoiLam', 'Việc của NGƯỜI — máy không đo được', 'bad']]
+      .forEach(function (nh) {
+        var ds = (G.PLR_VIEC7 || []).filter(function (v) { return v[nh[0]]; });
+        if (!ds.length) return;
+        o += U.sec(nh[1], ds.length + ' việc');
+        o += ds.map(function (v) {
+          return '<div class="card mt" style="border-left:3px solid var(--' + nh[2] + ')">' +
+            '<b class="sm">' + h(v.ma) + ' · ' + h(v.viec) + '</b>' +
+            '<p class="sm mt"><b>Vì sao:</b> ' + h(v.viSao) + '</p>' +
+            '<p class="sm mt">' + h(v[nh[0]]) + '</p>' +
+            (v.troVao ? '<p class="sm muted mt">Trỏ vào kho <code>' +
+              h(v.troVao) + '</code></p>' : '') +
+            (v.choChu ? '<p class="sm mt" style="color:var(--warn)"><b>Chờ chủ hệ:</b> ' +
+              h(v.choChu) + '</p>' : '') + '</div>';
+        }).join('');
+      });
+    return o;
+  }
+
+  /* ═══════════ NGĂN 4 · ĐỒNG Ý VÀ XOÁ ═══════════ */
+  function nganDY() {
+    var l = G.PLR_DONGY_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--bad)">' +
+      '<b>' + h(l.khongGop || '') + '</b>' +
+      '<p class="sm mt">' + h(l.oThuBaKhongBatBuoc || '') + '</p>' +
+      '<p class="sm mt">' + h(l.choMeMoiKyDuocOCon || '') + '</p>' +
+      '<p class="sm muted mt">' + h(l.rutLaDongMOI || '') + '</p></div>';
+
+    o += U.tbl(['Ô', 'Bắt buộc', 'Câu người ta đọc', 'Vì sao'],
+      (G.PLR_DONGY || []).map(function (d) {
+        return ['<b class="sm">' + h(d.ten) + '</b>',
+          '<span class="sm">' + (d.batBuoc ? 'Có' : '<b>KHÔNG</b>') + '</span>',
+          '<span class="sm">' + h(d.chu) + '</span>',
+          '<span class="sm">' + h(d.y) + '</span>'];
+      }));
+
+    var xl = G.PLR_XOA_LUAT || {};
+    o += U.sec('Năm bước của một lượt xoá', 'hai phía, và chúng không gộp được');
+    o += U.tbl(['Bước', 'Ai làm', 'Trong bao lâu', 'Vì sao'],
+      (G.PLR_XOA || []).map(function (x) {
+        return ['<b class="sm">' + h(x.buoc) + '</b>',
+          '<span class="sm">' + h(x.ai) + '</span>',
+          '<span class="sm">' + (x.mocNgay ? x.mocNgay + ' ngày' : 'ngay') + '</span>',
+          '<span class="sm">' + h(x.y) + '</span>'];
+      }));
+
+    o += '<div class="card mt2" style="border-left:3px solid var(--warn)">' +
+      '<b class="sm">' + h(xl.haiPhia || '') + '</b>' +
+      '<p class="sm mt">' + h(xl.mayKhongTuDanhDau || '') + '</p>' +
+      '<p class="sm muted mt">' + h(xl.neuRiengQuaHan || '') + '</p></div>';
+    return o;
+  }
+
+  /* ═══════════ NGĂN 5 · LUẬT SƯ ═══════════ */
+  function nganLS() {
+    var l = G.PLR_VUNG_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--bad)">' +
+      '<b>' + h(l.khongKetLuan || '') + '</b>' +
+      '<p class="sm mt">' + h(l.vi || '') + '</p>' +
+      '<p class="sm mt">' + h(l.giaTriThatONauHoiGi || '') + '</p></div>';
+
+    o += (G.PLR_VUNG4 || []).map(function (v) {
+      return '<div class="card mt">' +
+        '<b class="sm">' + h(v.ma) + ' · ' + h(v.vung) + '</b>' +
+        '<p class="sm mt"><b>Câu mang đi hỏi:</b> ' + h(v.hoiGi) + '</p>' +
+        '<p class="sm muted mt">' + h(v.viMayKhongTraLoi) + '</p></div>';
+    }).join('');
+    return o;
+  }
+
+  G.VIEWS['phap-ly-rui-ro'] = function () {
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>PHÂN HỆ 7 — PHÁP LÝ &amp; RỦI RO</b>' +
+      '<p class="sm muted mt">Hai luật có hiệu lực từ 01/01/2026 chạm thẳng vào cách ' +
+      'GITA giữ dữ liệu và cách GITA viết bài. Phần này <b>trỏ</b> vào hàng rào 10 ' +
+      'điểm và bộ lọc quảng cáo đã có, và chỉ dựng thứ chưa có: ba ô đồng ý tách bạch, ' +
+      'cổng dữ liệu trẻ em, và một nút xoá chạy thật.</p></div>';
+
+    if (!(G.PLR_VIEC7 || []).length)
+      return o + U.empty('Pháp lý & rủi ro chưa mở',
+        'Kho nghề chưa nạp. Đăng nhập bằng vai có quyền nghề.', true);
+
+    o += thanhNgan();
+    if (G.plrNgan === 'luat') o += nganLuat();
+    else if (G.plrNgan === 'viec') o += nganViec();
+    else if (G.plrNgan === 'dy') o += nganDY();
+    else if (G.plrNgan === 'ls') o += nganLS();
+    else o += nganCanh();
     return o;
   };
 })();

@@ -55,6 +55,29 @@ var TRUONG = [
   {k:'tinh',   nhan:'TỈNH / THÀNH PHỐ',   ph:'Hà Nội',              bat:1, tu:'text'}
 ];
 
+/* ═══ BA Ô ĐỒNG Ý — Luật số 91/2025/QH15, việc số 2 ═══
+
+   Luật đòi ô đồng ý RIÊNG, tách bạch, không gộp vào điều khoản chung.
+   Tới 9.99.69 chỗ này còn đúng MỘT ô, và câu báo lỗi của nó tự khai
+   ra chỗ sai: "đồng ý điều khoản sử dụng VÀ cách GITA giữ dữ liệu".
+   Một ô gộp là một câu hỏi mà người trả lời không tách được phần họ
+   muốn nhận khỏi phần họ không muốn.
+
+   Bản chép của G.PLR_DONGY. Màn đăng ký chạy TRƯỚC khi đăng nhập nên
+   kho chưa nạp — đây là một trong số rất ít chỗ phải khai tay, và mục
+   87 đối chiếu ba ô này với kho mỗi lần chạy. */
+var O_DONGY = [
+  {k:'dyDieuKhoan', bat:1,
+   chu:'Tôi đồng ý với điều khoản sử dụng của Học viện GITA.'},
+  {k:'dyDuLieuGiaDinh', bat:1,
+   chu:'Tôi đồng ý để Học viện GITA lưu và dùng thông tin trên cho việc học của gia '+
+       'đình tôi. GITA không thu thập tôn giáo, tình trạng sức khoẻ, thu nhập hay '+
+       'chuyện riêng của vợ chồng.'},
+  {k:'dyDuLieuCon', bat:0,
+   chu:'Tôi là cha/mẹ hoặc người giám hộ, và tôi đồng ý để GITA ghi lại quan sát về '+
+       'con tôi cho việc đồng hành. Tôi rút lại được bất cứ lúc nào.'}
+];
+
 G.kiemDangKy = function(d){
   for(var i=0;i<TRUONG.length;i++){
     var t = TRUONG[i];
@@ -64,7 +87,14 @@ G.kiemDangKy = function(d){
   var dt = String(d.dienThoai||'').replace(/[\s.\-]/g,'');
   if(!/^(0|\+84)[0-9]{9,10}$/.test(dt)) return 'Số điện thoại chưa đúng định dạng Việt Nam.';
   if(String(d.hoTen).trim().length < 3) return 'Họ tên quá ngắn.';
-  if(!d.dongY) return 'Cần đồng ý điều khoản sử dụng và cách GITA giữ dữ liệu của gia đình.';
+  /* LUẬT 91/2025 · VIỆC SỐ 2 — ô đồng ý RIÊNG, tách bạch, không gộp
+     vào điều khoản chung. Hai ô đầu bắt buộc vì không có chúng thì
+     không có hợp đồng nào để bắt đầu; ô thứ ba thì KHÔNG — bắt cả ba
+     mới đăng ký được thì ba ô lại thành một ô, người ta tích hết một
+     lượt, và cái "riêng, tách bạch" chỉ còn ở hình thức. Ô thứ ba hỏi
+     lúc cần mở hồ sơ về con, và hai cửa ấy chặn nếu chưa có. */
+  if(!d.dyDieuKhoan) return 'Cần đồng ý điều khoản sử dụng.';
+  if(!d.dyDuLieuGiaDinh) return 'Cần đồng ý để GITA lưu và dùng thông tin của gia đình.';
   return true;
 };
 
@@ -84,9 +114,15 @@ G.moDangKy = function(){
       '<input id="dk_'+t.k+'" type="'+t.tu+'" placeholder="'+h(t.ph)+'" class="inp blk mb" '+
       'autocomplete="'+(t.k==='email'?'email':t.k==='hoTen'?'name':t.k==='dienThoai'?'tel':'off')+'">';
   }).join('');
-  o += '<label class="dk-dy"><input id="dk_dongY" type="checkbox"> '+
-    '<span class="tiny" style="line-height:1.6;color:var(--ink-2)">Tôi đồng ý để Học viện GITA lưu và dùng thông tin trên '+
-    'cho việc học của gia đình tôi. GITA không thu thập tôn giáo, tình trạng sức khoẻ, thu nhập hay chuyện riêng của vợ chồng.</span></label>'+
+  /* BA Ô, KHÔNG PHẢI MỘT. Ô cuối ghi rõ là không bắt buộc — không ghi
+     thì người ta tích cho xong, và một cái tích cho xong không phải
+     một sự đồng ý. */
+  o += O_DONGY.map(function(dy){
+    return '<label class="dk-dy"><input id="dk_'+dy.k+'" type="checkbox"> '+
+      '<span class="tiny" style="line-height:1.6;color:var(--ink-2)">'+h(dy.chu)+
+      (dy.bat ? '' : ' <b>(không bắt buộc — anh chị tích sau cũng được)</b>')+
+      '</span></label>';
+  }).join('')+
     '<div id="dk_loi" class="tiny mb" style="color:#BE0E16;min-height:16px"></div>'+
     '<button class="btn pri blk" data-act="gui-dang-ky">Gửi và nhận mã xác nhận</button>'+
     '<p class="tiny muted mt center">Đã có tài khoản? Đóng cửa sổ này và đăng nhập ở ô bên dưới.</p>';
@@ -98,7 +134,9 @@ G.guiDangKy = function(){
   function bao(t){ if(loi) loi.textContent = t; }
   var d = {};
   TRUONG.forEach(function(t){ d[t.k] = ((document.getElementById('dk_'+t.k)||{}).value || '').trim(); });
-  d.dongY = !!(document.getElementById('dk_dongY')||{}).checked;
+  O_DONGY.forEach(function(dy){
+    d[dy.k] = !!(document.getElementById('dk_'+dy.k)||{}).checked;
+  });
   d.maGioiThieu = G.batMaGioiThieu() || '';
 
   var r = G.kiemDangKy(d);

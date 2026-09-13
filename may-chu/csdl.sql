@@ -1612,3 +1612,68 @@ CREATE TABLE IF NOT EXISTS baCuaConNguoi (
 -- này đã có dòng nào chưa". Không phải một chỉ mục thêm cho bộ thử
 -- xanh — nó nằm trên đường nóng nhất trong hệ.
 CREATE INDEX IF NOT EXISTS ix_bacua_nguoi ON baCuaConNguoi (maNguoi, cua);
+
+-- ═════════════════════════════════════════════════════════════
+--  BA Ô ĐỒNG Ý DỮ LIỆU — Luật số 91/2025/QH15, việc số 2 và 3
+--
+--  MỘT LƯỢT ĐỒNG Ý HOẶC RÚT LÀ MỘT DÒNG MỚI. Không có cột trạng
+--  thái, và không sửa đè dòng cũ: sửa đè thì mất hẳn phần lịch sử —
+--  mà chính phần lịch sử trả lời được câu "hôm ấy nhà này đã đồng ý
+--  chưa", và đó đúng là câu người ta hỏi lúc có tranh chấp.
+--
+--  Trạng thái hiện tại của một ô = dòng MỚI NHẤT của ô ấy, tính lúc
+--  đọc. Cùng luật với cột `conHan` không có trong theVungManh và cột
+--  `den` không có trong hoSoSongSinh.
+--
+--  Cột `vaiBoiAi` là cột làm cho cả bảng có nghĩa: ô `duLieuCon` chỉ
+--  CHA MẸ ký được, và không giữ vai của người ký thì sáu tháng sau
+--  không ai truy được ai đã tích ô ấy.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS dongYDuLieu (
+  id        TEXT PRIMARY KEY,
+  maNha     TEXT NOT NULL,
+  o         TEXT NOT NULL,        -- dieuKhoan · duLieuGiaDinh · duLieuCon
+  viec      TEXT NOT NULL,        -- dongY · rut
+  boiAi     TEXT NOT NULL,
+  vaiBoiAi  TEXT NOT NULL,
+  ghiLuc    TEXT NOT NULL
+);
+
+-- Đường tra thật: mọi cửa tạo hồ sơ về con hỏi đúng câu "nhà này đã
+-- đồng ý ô duLieuCon chưa", mỗi lượt lập hồ sơ một lần.
+CREATE INDEX IF NOT EXISTS ix_dongy_nha ON dongYDuLieu (maNha, o, ghiLuc DESC);
+
+-- ═════════════════════════════════════════════════════════════
+--  YÊU CẦU XOÁ DỮ LIỆU — Luật số 91/2025/QH15, việc số 4
+--
+--  HAI PHÍA, VÀ CHÚNG KHÔNG GỘP ĐƯỢC:
+--
+--    xoaTrongSo  máy đếm được dòng còn lại  →  PHÉP ĐO
+--    xoaNgoaiSo  bản sao lưu, tệp đã tải về máy cá nhân, bản in
+--                →  LỜI KHAI, kèm tên người khai và căn cứ
+--
+--  Máy KHÔNG tự đánh dấu xoaNgoaiSo vì máy không nhìn thấy chỗ ấy —
+--  một ô máy tự đánh dấu mà không đo được là một lời nói dối mang
+--  dấu của hệ thống. Cùng luật với goTrongSo / daGoNgoai của trợ lý
+--  hình ảnh.
+--
+--  `hanXuLy` có mặt vì không có hạn thì việc này trôi cùng nhịp việc
+--  thường, và nhịp việc thường là nhịp của thứ không ai giục.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS yeuCauXoa (
+  id            TEXT PRIMARY KEY,
+  maNha         TEXT NOT NULL,
+  boiAi         TEXT NOT NULL,
+  ghiLuc        TEXT NOT NULL,
+  hanXuLy       TEXT NOT NULL,
+  xoaTrongSo    TEXT,
+  trongSoBoiAi  TEXT,
+  trongSoCanCu  TEXT,
+  xoaNgoaiSo    TEXT,
+  ngoaiSoBoiAi  TEXT,
+  ngoaiSoCanCu  TEXT
+);
+
+-- Câu hỏi nóng của sổ là "cái nào QUÁ HẠN mà chưa xoá", và đó là một
+-- phép lọc khoảng trên hạn xử lý.
+CREATE INDEX IF NOT EXISTS ix_xoa_han ON yeuCauXoa (hanXuLy);

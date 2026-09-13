@@ -3847,6 +3847,166 @@ let idTam9 = null, idDang9 = null;
     'xếp giảm dần thì đọc đời một tấm phải đọc ngược, và mất chỗ ngay dòng thứ ba');
 }
 
+/* ══════════════ PHÂN HỆ 7 · PHÁP LÝ & RỦI RO ══════════════
+
+   Bản đặc tả mở Phần IX bằng một cảnh báo bắt buộc — đây là BẢN ĐỒ
+   để biết chỗ nào cần HỎI, không phải tư vấn pháp lý. Nên phép đo
+   đầu tiên ở đây là một phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI: mô-đun
+   không có một cửa nào trả về phán quyết pháp lý.
+
+   Khối này chạy TRƯỚC Phân hệ 1 và 4: cổng dữ liệu trẻ em cắm trong
+   lapTheVungManh và lapSongSinh, nên những nhà mà hai khối ấy dùng
+   phải có dòng đồng ý của cha mẹ trước đã. Đó cũng là bài học vận
+   hành của chính bản này — Luật 91 việc số 3 không phải một dòng chữ
+   trong bảng, nó chặn thật. */
+{
+  const mPL = await import('../may-chu/phap-ly-rui-ro.js');
+
+  /* ── MÁY KHÔNG KẾT LUẬN PHÁP LÝ ──
+     Hỏi DANH SÁCH HÀM XUẤT RA, không hỏi lời khai. Một cửa như thế mà
+     CÓ MẶT là đỏ, dù chưa ai gọi nó: viết cửa ấy rồi mới cấm gọi là muộn. */
+  const cuaCo = Object.keys(mPL);
+  const camLot = mPL.CUA_CAM.filter(c => cuaCo.indexOf(c) >= 0);
+  bao(camLot.length === 0 && mPL.CUA_CAM.length >= 5,
+    'MÔ-ĐUN PHÁP LÝ KHÔNG CÓ MỘT CỬA NÀO KẾT LUẬN — phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI',
+    'soi ' + mPL.CUA_CAM.length + ' tên cửa bị cấm trong ' + cuaCo.length + ' thứ ' +
+    'xuất ra · một câu trả lời pháp lý do máy sinh ra nghe y hệt một câu trả lời ' +
+    'thật, và người đọc dùng nó đúng vào lúc đang vội');
+
+  const ls = await goi({fn:'docVungLuatSu', token:tkSA, u:'superadmin@gita365.vn'});
+  const coKetLuan = (ls.than.vung || []).some(v =>
+    v.ketLuan !== undefined || v.traLoi !== undefined || v.danhGia !== undefined);
+  bao(ls.than.ok && !coKetLuan && (ls.than.vung || []).length === 4 &&
+      /không phải tư vấn pháp lý/.test(ls.than.canhBao || ''),
+    'BỐN VÙNG CHỈ MANG CÂU HỎI, KHÔNG MANG CÂU TRẢ LỜI — và cửa tự kèm câu cảnh báo bắt buộc',
+    'một giờ luật sư trả lời đúng câu hỏi rẻ hơn nhiều so với ba giờ để họ tự tìm ra ' +
+    'câu hỏi là gì');
+
+  /* ── LUẬT 91 · VIỆC 2 · Ô GỘP BỊ CHẶN, VÀ MÁY KHÔNG TÁCH HỘ ── */
+  const oGop = await goi({fn:'ghiDongY', token:tk, u:'phuhuynh@gita365.vn',
+    maNha:'NHA-PL', tatCa:true});
+  bao(!oGop.than.ok && oGop.than.code === 'GOPO' && oGop.than.gop.join() === 'tatCa',
+    'Ô ĐỒNG Ý GỘP BỊ CHẶN — và máy KHÔNG lặng lẽ tách hộ thành ba',
+    'tách hộ thì bên ngoài vẫn chỉ có một cái tích, và cái "riêng, tách bạch" mà ' +
+    'Luật 91 đòi chỉ còn trong bụng máy chủ');
+
+  /* Ba ô của màn đăng ký phải khớp với kho — màn ấy chạy TRƯỚC khi
+     đăng nhập nên phải khai tay, và hai bản chép lệch nhau thì người
+     ta tích một bộ chữ và hệ ghi một bộ khác. */
+  const nguonDK = fs.readFileSync('src/dang-ky.js', 'utf8');
+  const oDK = (nguonDK.match(/\{k:'(dy[A-Za-z]+)'/g) || [])
+    .map(x => x.replace(/\{k:'|'/g, ''));
+  bao(oDK.length === 3 && !/id="dk_dongY"/.test(nguonDK) &&
+      /\(không bắt buộc/.test(nguonDK),
+    'MÀN ĐĂNG KÝ DỰNG BA Ô TÁCH HẲN, và ô thứ ba ghi rõ KHÔNG BẮT BUỘC',
+    oDK.join(' · ') + ' · bắt cả ba mới đăng ký được thì ba ô lại thành một ô — ' +
+    'người ta tích hết một lượt, và cái "riêng, tách bạch" chỉ còn ở hình thức');
+
+  /* ── LUẬT 91 · VIỆC 3 · Ô VỀ CON CHỈ CHA MẸ KÝ ĐƯỢC ── */
+  const gitaKyHo = await goi({fn:'ghiDongY', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-PL', o:'duLieuCon'});
+  bao(!gitaKyHo.than.ok && gitaKyHo.than.code === 'PHAICHAME',
+    'NGƯỜI CỦA GITA KHÔNG TÍCH HỘ ĐƯỢC Ô ĐỒNG Ý VỀ CON',
+    'tích hộ thì nghĩa vụ nặng nhất của Luật 91 biến thành một dòng do chính bên có ' +
+    'nghĩa vụ tự viết');
+
+  /* ── CỔNG DỮ LIỆU TRẺ EM CHẶN THẬT Ở CẢ HAI CỬA ── */
+  const theChuaDY = await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-PL', tuoiCon:9, the:{
+      d1:'Sáng nhất khi lắp mô hình, hai tiếng không ngẩng đầu',
+      d2:'Vào nhanh nhất qua cửa LÀM — phải cầm vào mới hiểu',
+      d3:'Chịu được cái khó của việc tay chân, hỏng năm lần vẫn làm lại',
+      d4:'Rụt lại khi phải đứng trước lớp, sợ bị cười',
+      d5:'Chín mươi ngày tới nhà mình làm một góc bàn riêng cho con'}});
+  const ssChuaDY = await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-PL', ngayThamGia:new Date().toISOString(), tenCon:'Na'});
+  bao(!theChuaDY.than.ok && theChuaDY.than.code === 'CHUADONGY' &&
+      !ssChuaDY.than.ok && ssChuaDY.than.code === 'CHUADONGY',
+    'HAI CỬA TẠO HỒ SƠ VỀ CON ĐỀU CHẶN KHI CHƯA CÓ ĐỒNG Ý CỦA CHA MẸ — đây là việc số 3 của Luật 91, và nó chặn THẬT',
+    'dữ liệu trẻ em được bảo vệ ĐẶC BIỆT · không có cổng thì việc số 3 là một dòng ' +
+    'chữ trong một bảng bảy dòng');
+
+  /* Khai đồng ý cho mọi nhà mà các khối sau dùng. Đây chính là thứ
+     tự thật trong đời: cha mẹ đồng ý TRƯỚC, hồ sơ về con mở SAU. */
+  const NHA_PL = ['NHA-001','NHA-CK1','NHA-CK2','NHA-CK3','NHA-CN','NHA-DO',
+    'NHA-KHONG-CO','NHA-QUEN','NHA-TUTHAN','NHA-VH0','NHA-VH1','NHA-XANH','NHA-PL'];
+  for (const n of NHA_PL)
+    await goi({fn:'ghiDongY', token:tk, u:'phuhuynh@gita365.vn', maNha:n, o:'duLieuCon'});
+
+  const sauDY = await goi({fn:'docDongY', token:tk, u:'phuhuynh@gita365.vn',
+    maNha:'NHA-PL'});
+  bao(sauDY.than.dangCo.join() === 'duLieuCon' &&
+      sauDY.than.chuaHoi.join() === 'dieuKhoan,duLieuGiaDinh',
+    'SỔ NÊU RIÊNG "CHƯA HỎI" VÀ "ĐÃ RÚT" — gộp hai cái thành "không có" là mất đúng chỗ có nghĩa',
+    'một nhà chưa ai hỏi tới nằm chung rổ với một nhà đã nói KHÔNG, mà hai chuyện ấy ' +
+    'cần hai cách xử lý khác hẳn nhau');
+
+  /* ── RÚT ĐỒNG Ý LÀ MỘT DÒNG MỚI, VÀ NÓ CHẶN ĐƯỢC VIỆC GHI TIẾP ── */
+  await goi({fn:'ghiDongY', token:tk, u:'phuhuynh@gita365.vn',
+    maNha:'NHA-RUT', o:'duLieuCon'});
+  await goi({fn:'ghiDongY', token:tk, u:'phuhuynh@gita365.vn',
+    maNha:'NHA-RUT', o:'duLieuCon', rut:true});
+  const sauRut = await goi({fn:'docDongY', token:tk, u:'phuhuynh@gita365.vn',
+    maNha:'NHA-RUT'});
+  const ghiSauRut = await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-RUT', ngayThamGia:new Date().toISOString(), tenCon:'Na'});
+  bao(sauRut.than.ds.length === 2 && sauRut.than.daRut.join() === 'duLieuCon' &&
+      !ghiSauRut.than.ok && ghiSauRut.than.code === 'DARUT',
+    'RÚT ĐỒNG Ý GHI MỘT DÒNG MỚI — dòng cũ Ở LẠI, và việc ghi tiếp bị CHẶN',
+    sauRut.than.ds.length + ' dòng trong sổ · sửa đè thì mất hẳn phần lịch sử, mà ' +
+    'chính nó trả lời được câu "hôm ấy nhà này đã đồng ý chưa" — và rút đồng ý là ' +
+    'một quyền, quyền ấy chỉ có nghĩa nếu nó chặn được việc ghi tiếp');
+
+  /* ── LUẬT 91 · VIỆC 4 · NÚT XOÁ CHẠY THẬT, HAI PHÍA TÁCH HẲN ── */
+  const yc = await goi({fn:'yeuCauXoaDuLieu', token:tk, u:'phuhuynh@gita365.vn',
+    maNha:'NHA-PL'});
+  const ngoaiKhongCanCu = await goi({fn:'danhDauXoa', token:tkSA,
+    u:'superadmin@gita365.vn', id:yc.than.id, phia:'ngoaiSo'});
+  await goi({fn:'danhDauXoa', token:tkSA, u:'superadmin@gita365.vn',
+    id:yc.than.id, phia:'trongSo'});
+  const so = await goi({fn:'soXoaDuLieu', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(yc.than.ok && yc.than.hanNgay === mPL.HAN_XOA_NGAY &&
+      !ngoaiKhongCanCu.than.ok && ngoaiKhongCanCu.than.code === 'THIEUCANCU' &&
+      so.than.hoTrongNgoai.length === 1 && so.than.quaHan.length === 0,
+    'YÊU CẦU XOÁ CÓ HẠN XỬ LÝ, VÀ SỔ NÊU RIÊNG CHỖ HỞ GIỮA PHÉP ĐO VÀ LỜI KHAI',
+    'xoá trong hệ là PHÉP ĐO (đếm được dòng còn lại), xoá ngoài hệ là LỜI KHAI (bản ' +
+    'sao lưu, tệp đã tải về, bản in) · máy KHÔNG tự đánh dấu phía ngoài, vì một ô máy ' +
+    'tự đánh dấu mà không đo được là một lời nói dối mang dấu của hệ thống');
+
+  const quaHan = await goi({fn:'soXoaDuLieu', token:tkSA, u:'superadmin@gita365.vn',
+    bayGio:new Date(Date.now() + (mPL.HAN_XOA_NGAY + 1) * 86400000).toISOString()});
+  bao(quaHan.than.quaHan.length === 0 && so.than.so === 1,
+    'YÊU CẦU ĐÃ XOÁ TRONG HỆ THÌ KHÔNG CÒN TÍNH LÀ QUÁ HẠN — quá hạn đếm việc CHƯA LÀM',
+    'gộp "quá hạn" với "còn hở phía ngoài" thành một con số còn tồn thì một yêu cầu ' +
+    'quá hạn ba tuần nằm chung rổ với một yêu cầu vừa vào năm phút trước');
+
+  /* ── LUẬT 91 · VIỆC 7 · NHẬT KÝ GHI CẢ LƯỢT ĐỌC ──
+     Tới 9.99.69 sổ audit chỉ ghi lượt GHI, nên câu "ai đã đọc hồ sơ
+     con nhà ấy" không trả lời được. Một sự thật CÓ mà không đọc ra
+     được thì trên thực tế là KHÔNG CÓ. */
+  await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-PL', ngayThamGia:new Date().toISOString(), tenCon:'Na'});
+  const truocDoc = db.prepare(
+    "SELECT COUNT(*) c FROM audit WHERE viec = 'VH_DOC_SS'").get().c;
+  await goi({fn:'docSongSinh', token:tkSA, u:'superadmin@gita365.vn', maNha:'NHA-PL'});
+  const sauDoc = db.prepare(
+    "SELECT COUNT(*) c FROM audit WHERE viec = 'VH_DOC_SS'").get().c;
+  bao(sauDoc === truocDoc + 1,
+    'NHẬT KÝ GHI CẢ LƯỢT ĐỌC HỒ SƠ VỀ CON, không chỉ lượt GHI — Luật 91 đòi "ai TRUY CẬP dữ liệu gia đình nào"',
+    truocDoc + ' → ' + sauDoc + ' dòng · một sự thật CÓ mà không đọc ra được thì ' +
+    'trên thực tế là KHÔNG CÓ');
+
+  /* ── BẢY VIỆC ĐO BẰNG HÀNH VI, VÀ HAI VIỆC CỦA NGƯỜI KHÔNG CÓ GIÁ TRỊ NÀO ── */
+  const tt = await goi({fn:'docTuanThu', token:tkSA, u:'superadmin@gita365.vn'});
+  const coGiaTriNguoi = mPL.VIEC_NGUOI_LAM.some(v => tt.than.dat[v] !== undefined);
+  bao(tt.than.ok && mPL.VIEC_MAY_DO.every(v => tt.than.dat[v] === true) &&
+      !coGiaTriNguoi,
+    'BẢY VIỆC ĐO BẰNG HÀNH VI — và HAI việc của NGƯỜI không trả về một giá trị nào, kể cả false',
+    mPL.VIEC_MAY_DO.join(' · ') + ' đo được, gọi thật vào cửa · ' +
+    mPL.VIEC_NGUOI_LAM.join(' · ') + ' không có mặt trong bảng: một `false` nằm cùng ' +
+    'bảng với năm kết quả đo được thì người đọc tin cả bảy như nhau');
+}
+
 /* ══ PHÂN HỆ 1 · VÙNG MẠNH — BA LẰN RANH LÀ BA CÁI CỔNG ══
 
    Bản đặc tả viết ba lằn ranh đạo đức bằng giọng của một lời dặn.

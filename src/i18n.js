@@ -296,6 +296,7 @@ G.ITEM_EN = {
   'van-hanh-cham-soc':['Operations & Care','23-field family twin profile · three-colour signal computed at read · 365-day care rhythm with the day 8-12 death zone · five-column trace log; a red light must be a phone call'],
   'tai-chinh-ceo':['Seven CEO Numbers','the seven weekly numbers split into THREE panes by source · runway computed on the Academy own funds, not gross cash · four finance laws · three scenarios written in advance'],
   'con-nguoi':['People · Three Gates','the three gates a new team member passes — 13/13 on the Constitution · voice scored by the 10-point guardrail · three real calls with a mentor. Until all three are cleared, nobody touches a customer alone, and the gate sits where a touch is logged, not on a screen'],
+  'phap-ly-rui-ro':['Legal & Risk','two laws in force from 2026-01-01 — the seven Law 91 duties split by WHO does them · three separate consent boxes, the child-data one signed by a PARENT · a delete request that actually runs, split into the measured half and the attested half · four questions to take to a lawyer, with no answers attached'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],

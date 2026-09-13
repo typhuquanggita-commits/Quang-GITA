@@ -26,6 +26,7 @@
 import { Kho } from './nen.js';
 import * as BoNao from './bo-nao.js';
 import * as ConNguoi from './con-nguoi.js';
+import * as PhapLy from './phap-ly-rui-ro.js';
 
 /* ═══════════════ BẢN CHÉP CỦA KHO ═══════════════ */
 
@@ -173,6 +174,10 @@ export async function docSongSinh(y, env, db, hoSo) {
   const imLang = cuoi
     ? Math.floor((Date.parse(bayGio) - Date.parse(cuoi.ngay)) / 86400000)
     : n;
+
+  /* ── LUẬT 91 · VIỆC SỐ 6 ── ghi lượt ĐỌC, không chỉ lượt ghi. */
+  await Kho.ghiNhatKy(db, { uid: hoSo.uid, username: hoSo.u, viec: 'VH_DOC_SS',
+    doiTuong: maNha, chiTiet: 'đọc hồ sơ song sinh' });
 
   const den = tinhDen({ imLang, ngayThu: n, coLoiNan: (y || {}).coLoiNan === true });
 
@@ -355,6 +360,14 @@ export async function lapSongSinh(y, env, db, hoSo) {
   if (!String(x.ngayThamGia || '').trim()) return { ok: false, code: 'THIEUTHAMGIA',
     error: 'Thiếu ngày tham gia. Cả nhịp 365 ngày sinh ra từ mốc ấy — không có mốc ' +
       'thì không có lịch chạm nào, và nhà nào người phụ trách nhớ mới được chạm.' };
+
+  /* ── LUẬT 91 · VIỆC SỐ 3 ──
+     Hồ sơ song sinh giữ tên con, tuổi con, tính cách và nỗi lo của
+     một gia đình thật. Đây là cửa thứ hai trong hai cửa tạo ra một hồ
+     sơ về con, nên cổng đồng ý của cha mẹ nằm ở đây — không có cổng
+     thì việc số 3 của Luật 91 là một dòng chữ trong một bảng bảy dòng. */
+  const dyCon = await PhapLy.soatDongYCon(maNha, db);
+  if (!dyCon.duoc) return { ok: false, code: dyCon.code, error: dyCon.error };
 
   const oLa = COT_CAM.filter(k => x[k] !== undefined);
   if (oLa.length) return { ok: false, code: 'OTUTINH', oLa,

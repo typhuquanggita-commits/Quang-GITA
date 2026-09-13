@@ -1230,6 +1230,111 @@ rồi gặp người thật thì hỏng đúng ở chỗ chưa ai luyện.
 trong sổ — một quyết định vận hành, không phải một dòng mã.
 
 
+## BỘ NÃO — Phân hệ 7: Pháp lý & rủi ro (9.99.70)
+
+Phần IX, **phần cuối của bản đặc tả**. Màn **Pháp lý & rủi ro**
+(`src/phap-ly-rui-ro.js`, năm ngăn), máy chủ `may-chu/phap-ly-rui-ro.js`,
+kho `data.phap-ly-rui-ro.js` (12 kho), bảng `dongYDuLieu` và `yeuCauXoa`,
+bộ kiểm **mục 87**, mười hai phép đo ở `thu-worker.js`.
+
+### Câu đầu tiên của phần này là một cái cổng
+
+Bản đặc tả mở Phần IX bằng một cảnh báo bắt buộc: *đây là bản đồ để
+biết chỗ nào cần **HỎI**, không phải tư vấn pháp lý*. Nên mô-đun
+**không có một cửa nào kết luận** — mục 87 hỏi DANH SÁCH HÀM XUẤT RA
+và đỏ nếu thấy `ketLuanPhapLy` · `danhGiaRuiRo` · `coHopPhap`, dù chưa
+ai gọi. Viết cửa ấy rồi mới cấm gọi là muộn.
+
+Vì sao gắt đến thế: **một câu trả lời pháp lý do máy sinh ra nghe y
+hệt một câu trả lời thật.** Người đọc không có cách nào phân biệt, và
+họ đọc nó đúng vào lúc đang vội — tức là đúng lúc sai thì đắt nhất.
+
+Bốn vùng luật sư mang ô `hoiGi` và **không có ô kết luận**. Thứ có giá
+trị là câu hỏi viết đủ cụ thể để mang thẳng tới bàn luật sư: một giờ
+luật sư trả lời đúng câu hỏi rẻ hơn nhiều so với ba giờ để họ tự tìm
+ra câu hỏi là gì.
+
+### Phần này TRỎ nhiều hơn mọi phần trước
+
+Mục **9.3 của bản đặc tả CHÍNH LÀ hàng rào 10 điểm đã có** ở
+`BN_RAO10`. Luật Quảng cáo đã có bộ lọc bảy mục ở Phân hệ 3. Điều 13
+đã có cửa ẩn danh từ 9.99.62. Mục 87 canh rằng mô-đun **không khai một
+bảng dấu hiệu nào của riêng nó** — hai bảng lệch nhau thì cả hai đều
+xanh trên hai thứ khác nhau.
+
+### Bảy việc của Luật 91 chia theo AI LÀM, không xếp theo số
+
+| Ngăn | Việc | Ai |
+|---|---|---|
+| Máy canh | V2 ô đồng ý riêng · V3 đồng ý của cha mẹ · V4 nút xoá · V5 ẩn danh · V6 nhật ký | máy, gọi thật vào cửa |
+| Của người | V1 viết chính sách · V7 quy trình xoá khi hết hợp đồng | người, mỗi cái một mục chờ |
+
+Xếp theo số thì một việc máy canh nằm cạnh một việc chờ người, cùng
+kiểu chữ — và đó đúng là chỗ người đọc tin cả bảy như nhau. **Máy nhìn
+thấy CÁI Ô TÍCH, không nhìn thấy SỰ VIỆC.**
+
+`docTuanThu` **không trả về giá trị nào cho V1 và V7, kể cả `false`** —
+một `false` nằm cùng bảng với năm kết quả đo được thì nó đọc ra như
+một phép đo. Cùng luật với ba bậc lời khai của phễu (9.99.59).
+
+### Ba lỗ THẬT tìm ra khi dựng phần này
+
+1. **Ô đồng ý đang GỘP.** `src/dang-ky.js` có đúng một checkbox, và
+   câu báo lỗi của nó tự khai ra chỗ sai: *"đồng ý điều khoản sử dụng
+   VÀ cách GITA giữ dữ liệu"*. Nay ba ô tách hẳn. **Ô thứ ba KHÔNG bắt
+   buộc** — bắt cả ba mới đăng ký được thì ba ô lại thành một ô, người
+   ta tích hết một lượt, và cái "riêng, tách bạch" chỉ còn ở hình thức.
+2. **Không có cổng nào cho dữ liệu trẻ em.** Nay `lapTheVungManh` và
+   `lapSongSinh` — hai cửa DUY NHẤT tạo hồ sơ về con — chặn khi nhà ấy
+   chưa có dòng `duLieuCon`, và mục 87 canh rằng cổng nằm **trước** câu
+   `INSERT`. Ô ấy chỉ **CHA MẸ** ký được (cổng đọc vai của phiên, không
+   đọc một ô `laChaMe` do người gọi truyền vào).
+3. **Nhật ký chỉ ghi lượt GHI, không ghi lượt ĐỌC.** Luật 91 việc số 6
+   đòi *"ai TRUY CẬP dữ liệu gia đình nào"* — và tới 9.99.69 câu ấy
+   không trả lời được. Nay `docSongSinh` và `docTheVungManh` ghi nhật
+   ký mỗi lượt đọc. Một sự thật CÓ mà không đọc ra được thì trên thực
+   tế là KHÔNG CÓ.
+
+### Rút đồng ý là một DÒNG MỚI, và nó chặn được việc ghi tiếp
+
+Bảng `dongYDuLieu` **không có cột trạng thái**: trạng thái = dòng mới
+nhất của ô ấy, tính lúc đọc. Có cột thì rút đồng ý sửa đè lên dòng cũ,
+và mất hẳn phần lịch sử — mà chính nó trả lời được câu *"hôm ấy nhà
+này đã đồng ý chưa"*, đúng câu người ta hỏi lúc có tranh chấp.
+
+`docDongY` nêu **riêng** *chưa hỏi* và *đã rút*. Gộp hai cái thành
+"không có" thì một nhà chưa ai hỏi tới nằm chung rổ với một nhà đã nói
+KHÔNG — hai chuyện ấy cần hai cách xử lý khác hẳn nhau.
+
+### Nút xoá: hai phía, và chúng không gộp được
+
+| Ô | Là gì |
+|---|---|
+| `xoaTrongSo` | **phép đo** — máy đếm được dòng còn lại |
+| `xoaNgoaiSo` | **lời khai** — bản sao lưu, tệp đã tải về, bản in |
+
+Máy **không tự đánh dấu** phía ngoài, và đánh dấu phía ấy **phải viết
+căn cứ**. Một ô máy tự đánh dấu mà không đo được là *một lời nói dối
+mang dấu của hệ thống*. Cùng luật với `goTrongSo`/`daGoNgoai`
+(9.99.58). Yêu cầu xoá có **hạn 30 ngày**, và sổ nêu riêng phần quá
+hạn — không có hạn thì việc này trôi cùng nhịp việc thường, và nhịp
+việc thường là nhịp của thứ không ai giục. **Không đòi lý do**: đòi lý
+do là dựng một cái cửa nhỏ ở chỗ luật nói là quyền.
+
+### Hậu kiểm nguy hơn tiền kiểm, không phải dễ hơn
+
+Luật 75/2025 bỏ giấy phép, **không bỏ trách nhiệm**. Sai thì sai CÔNG
+KHAI, và thứ phải sửa lúc ấy không còn là một bản nháp. Kéo theo: Điều
+10 của Hiến pháp từ 01/01/2026 là một **hàng rào pháp lý**, không còn
+là chuẩn đạo đức riêng của GITA.
+
+### Một lỗi của chính tôi, bộ rà soát bắt ngay
+
+`U.empty()` **tự gọi `U.h()`** trên tham số, nên viết `&amp;` vào tiêu
+đề là thoát lần thứ hai và người đọc thấy `&amp;amp;`. Lỗi không sinh
+lỗi trang nên nó sống rất lâu — đúng lớp lỗi bản 9.24 đã gỡ 77 chỗ.
+
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

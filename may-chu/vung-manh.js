@@ -22,6 +22,7 @@
 
 import { Kho } from './nen.js';
 import * as BoNao from './bo-nao.js';
+import * as PhapLy from './phap-ly-rui-ro.js';
 
 /* ═══════════════ BẢN CHÉP CỦA KHO ═══════════════ */
 
@@ -103,6 +104,15 @@ export async function lapTheVungManh(y, env, db, hoSo) {
   const d = (y || {}).the || {};
   const maNha = String(y.maNha || '').trim();
   if (!maNha) return { ok: false, error: 'Thiếu mã gia đình.' };
+
+  /* ── LUẬT 91 · VIỆC SỐ 3 ──
+     Dữ liệu trẻ em được bảo vệ ĐẶC BIỆT, nên tấm thẻ này không mở
+     trước khi cha mẹ có một dòng đồng ý RIÊNG — không phải một ô gộp
+     trong điều khoản chung. Đây là một trong hai cửa duy nhất tạo ra
+     một hồ sơ về con, nên cổng phải nằm ở đây: không có nó thì việc
+     số 3 là một dòng chữ trong một bảng bảy dòng. */
+  const dy = await PhapLy.soatDongYCon(maNha, db);
+  if (!dy.duoc) return { ok: false, code: dy.code, error: dy.error };
 
   /* ── LR3 CHẶN TRƯỚC MỌI THỨ ──
      Chặn chứ không lặng lẽ bỏ qua: bỏ qua thì người gửi tưởng ô ấy đã
@@ -189,6 +199,14 @@ export async function docTheVungManh(y, env, db, hoSo) {
   if (!t) return { ok: false, code: 'CHUACO',
     error: 'Nhà này chưa có Thẻ Vùng Mạnh. Thẻ lập sau bốn tuần quan sát, không ' +
       'lập trước — bốn tuần ấy chính là phần làm nên tấm thẻ.' };
+
+  /* ── LUẬT 91 · VIỆC SỐ 6 ──
+     Nhật ký phải ghi ai TRUY CẬP dữ liệu gia đình nào, lúc nào — chứ
+     không chỉ ai SỬA. Tới 9.99.69 sổ audit của kho này chỉ ghi lượt
+     GHI, nên câu hỏi "ai đã đọc hồ sơ con nhà ấy" không trả lời được.
+     Một sự thật CÓ mà không đọc ra được thì trên thực tế là KHÔNG CÓ. */
+  await Kho.ghiNhatKy(db, { uid: hoSo.uid, username: hoSo.u, viec: 'VM_DOCTHE',
+    doiTuong: maNha, chiTiet: 'đọc thẻ lần ' + Number(t.lan) });
 
   const han = doHan(t.lapLuc, (y || {}).bayGio);
 

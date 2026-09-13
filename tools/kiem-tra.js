@@ -13920,6 +13920,232 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n87 · PHÂN HỆ 7 — BẢN ĐỒ ĐỂ BIẾT CHỖ NÀO CẦN HỎI, KHÔNG PHẢI CÂU TRẢ LỜI');
+  /* ══════════════════ 87. PHÁP LÝ & RỦI RO ══════════════════
+
+     Bản đặc tả mở Phần IX bằng một cảnh báo bắt buộc: đây là BẢN ĐỒ
+     để biết chỗ nào cần HỎI, không phải tư vấn pháp lý.
+
+     Nên phép đo nặng nhất ở đây là một phép đo về thứ KHÔNG ĐƯỢC TỒN
+     TẠI: mô-đun không có một cửa nào trả về phán quyết pháp lý, và
+     bốn vùng luật sư không có ô kết luận. Một câu trả lời pháp lý do
+     máy sinh ra nghe y hệt một câu trả lời thật — người đọc không có
+     cách nào phân biệt, và họ đọc nó đúng vào lúc đang vội.
+
+     Phép đo nặng thứ hai là chỗ phần này TRỎ: mục 9.3 của bản đặc tả
+     là hàng rào 10 điểm ĐÃ CÓ, và Luật Quảng cáo đã có bộ lọc bảy
+     mục ở Phân hệ 3. Chép lại cái nào cũng là dựng bản thứ hai của
+     một sự thật, và bản thứ hai mục trong im lặng. */
+  {
+    const mPL = await import('../may-chu/phap-ly-rui-ro.js');
+    const fsPL = await import('fs/promises');
+    const sqlPL = await fsPL.readFile('may-chu/csdl.sql', 'utf8');
+    const magPL = await fsPL.readFile('may-chu/phap-ly-rui-ro.js', 'utf8');
+    const magVM = await fsPL.readFile('may-chu/vung-manh.js', 'utf8');
+    const magVH = await fsPL.readFile('may-chu/van-hanh-cham-soc.js', 'utf8');
+    const magDK = await fsPL.readFile('src/dang-ky.js', 'utf8');
+
+    const khoPL = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        luat: (G.PLR_LUAT || []).map(x => x.ma),
+        viec: (G.PLR_VIEC7 || []).map(x => x.ma),
+        /* Mỗi việc khai ĐÚNG MỘT đường: mayDo HOẶC nguoiLam. Bảy dòng
+           cùng kiểu chữ thì người duyệt thấy bảy dấu tick rồi thôi
+           không đọc — và hai việc nặng nhất lại đúng là hai việc
+           không ai đọc nữa. */
+        viecCaHai: (G.PLR_VIEC7 || []).filter(x => x.mayDo && x.nguoiLam).map(x => x.ma),
+        viecKhongCo: (G.PLR_VIEC7 || []).filter(x => !x.mayDo && !x.nguoiLam).map(x => x.ma),
+        viecMay: (G.PLR_VIEC7 || []).filter(x => x.mayDo).map(x => x.ma),
+        viecNguoi: (G.PLR_VIEC7 || []).filter(x => x.nguoiLam).map(x => x.ma),
+        /* Việc của NGƯỜI phải trỏ tới một mục chờ. Không trỏ thì nó
+           nằm trong bảng mãi mà không ai có chỗ để làm nó xong. */
+        nguoiKhongChoChu: (G.PLR_VIEC7 || [])
+          .filter(x => x.nguoiLam && !x.choChu).map(x => x.ma),
+        dongY: (G.PLR_DONGY || []).map(x => x.ma),
+        batBuoc: (G.PLR_DONGY || []).filter(x => x.batBuoc).map(x => x.ma),
+        dongYThieu: (G.PLR_DONGY || []).filter(x =>
+          typeof x.batBuoc !== 'boolean' || !x.chu || !x.y).map(x => x.ma),
+        vung: (G.PLR_VUNG4 || []).map(x => x.ma),
+        /* Vùng luật sư KHÔNG có ô kết luận, và PHẢI có câu hỏi. */
+        vungCoKetLuan: (G.PLR_VUNG4 || []).filter(x =>
+          x.ketLuan !== undefined || x.traLoi !== undefined ||
+          x.danhGia !== undefined).map(x => x.ma),
+        vungThieuHoi: (G.PLR_VUNG4 || []).filter(x =>
+          !x.hoiGi || !x.viMayKhongTraLoi).map(x => x.ma),
+        xoa: (G.PLR_XOA || []).map(x => x.ma),
+        xoaThieu: (G.PLR_XOA || []).filter(x => !x.ai || !x.y).map(x => x.ma),
+        canhBao: G.PLR_CANHBAO || {},
+        /* Hàng rào 10 điểm phải còn nguyên ở BN_RAO10 — mục 9.3 của
+           bản đặc tả CHÍNH LÀ nó. */
+        rao10: (G.BN_RAO10 || []).length,
+        loc7: (G.NT_LOC7 || []).length
+      };
+    });
+
+    const v = {};
+    v.luatKhop = JSON.stringify(khoPL.luat) === JSON.stringify(mPL.LUAT || []);
+    v.viecKhop = JSON.stringify(khoPL.viec) === JSON.stringify(mPL.VIEC7 || []);
+    v.mayKhop = JSON.stringify(khoPL.viecMay) === JSON.stringify(mPL.VIEC_MAY_DO || []);
+    v.nguoiKhop = JSON.stringify(khoPL.viecNguoi) ===
+      JSON.stringify(mPL.VIEC_NGUOI_LAM || []);
+    v.dongYKhop = JSON.stringify(khoPL.dongY) === JSON.stringify(mPL.O_DONGY || []);
+    v.batBuocKhop = JSON.stringify(khoPL.batBuoc) ===
+      JSON.stringify(mPL.O_DONGY_BAT_BUOC || []);
+    v.vungKhop = JSON.stringify(khoPL.vung) === JSON.stringify(mPL.VUNG4 || []);
+    v.xoaKhop = JSON.stringify(khoPL.xoa) === JSON.stringify(mPL.BUOC_XOA || []);
+    v.viecCaHai = khoPL.viecCaHai;
+    v.viecKhongCo = khoPL.viecKhongCo;
+    v.nguoiKhongChoChu = khoPL.nguoiKhongChoChu;
+    v.dongYThieu = khoPL.dongYThieu;
+    v.vungCoKetLuan = khoPL.vungCoKetLuan;
+    v.vungThieuHoi = khoPL.vungThieuHoi;
+    v.xoaThieu = khoPL.xoaThieu;
+
+    /* ══ MÁY KHÔNG KẾT LUẬN — PHÉP ĐO VỀ THỨ KHÔNG ĐƯỢC TỒN TẠI ══
+       Hỏi DANH SÁCH HÀM XUẤT RA. Một cửa như thế mà CÓ MẶT là đỏ, dù
+       chưa ai gọi nó: viết cửa ấy rồi mới cấm gọi là muộn. */
+    const xuatRa = Object.keys(mPL);
+    v.cuaCamLot = (mPL.CUA_CAM || []).filter(c => xuatRa.indexOf(c) >= 0);
+    v.coDanhSachCam = (mPL.CUA_CAM || []).length >= 5;
+
+    /* ══ Ô THỨ BA KHÔNG BẮT BUỘC ══
+       Bắt cả ba mới đăng ký được thì ba ô lại thành một ô — người ta
+       tích hết một lượt, và cái "riêng, tách bạch" chỉ còn ở hình thức. */
+    v.oConKhongBat = khoPL.batBuoc.indexOf('duLieuCon') < 0 &&
+      khoPL.batBuoc.length === 2;
+
+    /* ══ MÀN ĐĂNG KÝ DỰNG BA Ô, KHÔNG CÒN Ô GỘP ══
+       Màn ấy chạy TRƯỚC khi đăng nhập nên kho chưa nạp và phải khai
+       tay — nên đây là một trong số rất ít chỗ có HAI bản, và hai bản
+       lệch nhau thì người ta tích một bộ chữ mà hệ ghi một bộ khác. */
+    const oDK = (magDK.match(/\{k:'(dy[A-Za-z]+)'/g) || [])
+      .map(x => x.replace(/\{k:'|'/g, ''));
+    v.dangKyBaO = oDK.length === 3 && !/id="dk_dongY"/.test(magDK) &&
+      /\(không bắt buộc/.test(magDK);
+
+    /* ══ CỔNG DỮ LIỆU TRẺ EM CẮM Ở CẢ HAI CỬA TẠO HỒ SƠ VỀ CON ══ */
+    const camTruocGhi = (mag, ten, chen) => {
+      const i = mag.indexOf('export async function ' + ten);
+      const g = mag.indexOf('PhapLy.soatDongYCon(', i);
+      const w = mag.indexOf(chen, i);
+      return i >= 0 && g > i && w > g;
+    };
+    v.congCon = camTruocGhi(magVM, 'lapTheVungManh', 'INSERT INTO theVungManh') &&
+      camTruocGhi(magVH, 'lapSongSinh', 'INSERT INTO hoSoSongSinh');
+
+    /* ══ NHẬT KÝ GHI CẢ LƯỢT ĐỌC ══
+       Luật 91 việc số 6 đòi "ai TRUY CẬP dữ liệu gia đình nào". Tới
+       9.99.69 sổ audit chỉ ghi lượt GHI. */
+    v.nhatKyDoc = /VM_DOCTHE/.test(magVM) && /VH_DOC_SS/.test(magVH);
+
+    /* ══ TRỎ CHỨ KHÔNG CHÉP ══
+       Mục 9.3 của bản đặc tả LÀ hàng rào 10 điểm đã có. Mô-đun này
+       không được khai một bảng mười điểm của riêng nó, và phải gọi
+       thẳng bộ dò ẩn danh của Bộ não. */
+    v.khongChep = khoPL.rao10 === 10 && khoPL.loc7 > 0 &&
+      /BoNao\.soatRaNgoai\(/.test(magPL) &&
+      !/RAO10|R1.*R2.*R3|HO_VIET|CUM_TUYET_DOI/.test(magPL);
+
+    /* ══ BẢNG XOÁ CÓ ĐỦ HAI PHÍA, TÁCH HẲN CỘT ══ */
+    const bangXoa = (sqlPL.match(
+      /CREATE TABLE IF NOT EXISTS yeuCauXoa \(([\s\S]*?)\);/) || ['', ''])[1];
+    v.haiPhia = /xoaTrongSo/.test(bangXoa) && /xoaNgoaiSo/.test(bangXoa) &&
+      /ngoaiSoCanCu/.test(bangXoa) && /hanXuLy/.test(bangXoa);
+    /* Bảng đồng ý KHÔNG có cột trạng thái: trạng thái tính lúc đọc từ
+       dòng mới nhất. Một cột trạng thái thì rút đồng ý sửa đè lên
+       dòng cũ, và mất hẳn phần lịch sử. */
+    const bangDY = (sqlPL.match(
+      /CREATE TABLE IF NOT EXISTS dongYDuLieu \(([\s\S]*?)\);/) || ['', ''])[1];
+    v.dyKhongCotTrangThai = bangDY.length > 20 &&
+      !/^\s*(trangThai|dangCo|daDongY)\s/mi.test(bangDY) && /vaiBoiAi/.test(bangDY);
+
+    /* ══ HÀNH VI ══ */
+    v.gopBiChan = (() => {
+      const r = mPL.O_GOP || [];
+      return r.length >= 3 && r.indexOf('tatCa') >= 0;
+    })();
+
+    const canh = khoPL.canhBao || {};
+    v.canhBaoDu = /không phải tư vấn pháp lý/.test(String(canh.cot || '')) &&
+      /luật sư/.test(String(canh.truocKhiChay || '')) &&
+      String(canh.viDatDau || '').length > 40 &&
+      String(canh.mayKhongKetLuan || '').length > 40;
+
+    const plDat =
+      v.luatKhop && v.viecKhop && v.mayKhop && v.nguoiKhop && v.dongYKhop &&
+      v.batBuocKhop && v.vungKhop && v.xoaKhop &&
+      !v.viecCaHai.length && !v.viecKhongCo.length && !v.nguoiKhongChoChu.length &&
+      !v.dongYThieu.length && !v.vungCoKetLuan.length && !v.vungThieuHoi.length &&
+      !v.xoaThieu.length && !v.cuaCamLot.length && v.coDanhSachCam &&
+      v.oConKhongBat && v.dangKyBaO && v.congCon && v.nhatKyDoc &&
+      v.khongChep && v.haiPhia && v.dyKhongCotTrangThai && v.gopBiChan && v.canhBaoDu;
+
+    bao(plDat,
+      'PHÂN HỆ 7 · BẢN ĐỒ ĐỂ BIẾT CHỖ NÀO CẦN HỎI, KHÔNG PHẢI MỘT CÂU TRẢ LỜI. Bản đặc tả mở Phần IX bằng một cảnh báo bắt buộc, và câu ấy phải có răng: mô-đun KHÔNG có một cửa nào trả về phán quyết pháp lý, và bốn vùng luật sư KHÔNG có ô kết luận — phép đo hỏi danh sách hàm xuất ra, nên một cửa như thế mà CÓ MẶT là đỏ dù chưa ai gọi nó. Vì sao gắt: một câu trả lời pháp lý do máy sinh ra nghe y hệt một câu trả lời thật, người đọc không có cách nào phân biệt, và họ đọc nó đúng vào lúc đang vội — tức là đúng lúc sai thì đắt nhất. Thứ có giá trị ở bốn vùng ấy là ô hoiGi: một câu hỏi viết đủ cụ thể để mang thẳng tới bàn luật sư, vì một giờ luật sư trả lời đúng câu hỏi rẻ hơn nhiều so với ba giờ để họ tự tìm ra câu hỏi là gì. BẢY VIỆC CỦA LUẬT 91 chia theo AI LÀM chứ không xếp theo số: bảy dòng cùng kiểu chữ, cùng một ô tích, thì người duyệt thấy bảy dấu tick rồi thôi không đọc — mà máy nhìn thấy CÁI Ô TÍCH, không nhìn thấy SỰ VIỆC. Năm việc máy canh đều đo bằng cách GỌI THẬT vào cửa; hai việc của người KHÔNG có giá trị nào trong bảng, kể cả false, và mỗi cái trỏ tới một mục chờ. BA Ô ĐỒNG Ý tách hẳn nhau — ô gộp bị CHẶN và máy không lặng lẽ tách hộ, vì tách hộ thì bên ngoài vẫn chỉ có một cái tích; ô về con chỉ CHA MẸ ký được; và ô ấy KHÔNG bắt buộc lúc đăng ký, vì bắt cả ba thì ba ô lại thành một ô. Cổng dữ liệu trẻ em cắm trong CẢ HAI cửa tạo hồ sơ về con, trước câu INSERT. Nhật ký nay ghi cả lượt ĐỌC, không chỉ lượt GHI — Luật 91 đòi "ai TRUY CẬP dữ liệu gia đình nào", và tới 9.99.69 câu ấy không trả lời được. Bảng yêu cầu xoá tách HAI PHÍA: xoaTrongSo là phép ĐO, xoaNgoaiSo là LỜI KHAI kèm căn cứ, và máy không tự đánh dấu phía ngoài vì một ô máy tự đánh dấu mà không đo được là một lời nói dối mang dấu của hệ thống. Và phần này TRỎ chứ không chép: mục 9.3 của bản đặc tả CHÍNH LÀ hàng rào 10 điểm đã có ở BN_RAO10, Luật Quảng cáo đã có bộ lọc bảy mục ở Phân hệ 3',
+      plDat
+        ? khoPL.luat.length + ' luật · ' + khoPL.viec.length + ' việc (' +
+          khoPL.viecMay.length + ' máy canh, ' + khoPL.viecNguoi.length +
+          ' của người, mỗi cái một mục chờ) · ' + khoPL.dongY.length + ' ô đồng ý (' +
+          khoPL.batBuoc.length + ' bắt buộc) · ' + khoPL.vung.length +
+          ' vùng luật sư, không ô nào có kết luận · ' + khoPL.xoa.length +
+          ' bước xoá, hai phía tách hẳn · hàng rào ' + khoPL.rao10 +
+          ' điểm còn nguyên ở BN_RAO10, không chép sang'
+        : [!v.luatKhop ? 'BẢN CHÉP HAI LUẬT Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.viecKhop ? 'BẢN CHÉP BẢY VIỆC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.mayKhop || !v.nguoiKhop ? 'DANH SÁCH VIỆC MÁY-CANH / VIỆC-NGƯỜI Ở MÁY ' +
+             'CHỦ LỆCH VỚI KHO' : '',
+           !v.dongYKhop ? 'BẢN CHÉP BA Ô ĐỒNG Ý Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.batBuocKhop ? 'DANH SÁCH Ô BẮT BUỘC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.vungKhop ? 'BẢN CHÉP BỐN VÙNG LUẬT SƯ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.xoaKhop ? 'BẢN CHÉP NĂM BƯỚC XOÁ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.viecCaHai.length ? 'VIỆC KHAI CẢ máy-canh LẪN việc-người: ' +
+             v.viecCaHai.join(' · ') + ' — mỗi việc đúng MỘT đường' : '',
+           v.viecKhongCo.length ? 'VIỆC KHÔNG KHAI ĐƯỜNG NÀO: ' +
+             v.viecKhongCo.join(' · ') + ' — một việc không nói ai canh nó thì không ' +
+             'ai canh nó' : '',
+           v.nguoiKhongChoChu.length ? 'VIỆC CỦA NGƯỜI KHÔNG TRỎ TỚI MỤC CHỜ: ' +
+             v.nguoiKhongChoChu.join(' · ') + ' — nó nằm trong bảng mãi mà không ai ' +
+             'có chỗ để làm nó xong, đúng như một lời than' : '',
+           v.dongYThieu.length ? 'Ô ĐỒNG Ý THIẾU khoá batBuoc, câu chữ, hoặc lý do: ' +
+             v.dongYThieu.join(' · ') : '',
+           v.vungCoKetLuan.length ? 'VÙNG LUẬT SƯ CÓ Ô KẾT LUẬN: ' +
+             v.vungCoKetLuan.join(' · ') + ' — một câu trả lời pháp lý do máy sinh ra ' +
+             'nghe y hệt một câu trả lời thật, và đó chính là lý do nó nguy hiểm' : '',
+           v.vungThieuHoi.length ? 'VÙNG LUẬT SƯ THIẾU CÂU HỎI hoặc thiếu lý do máy ' +
+             'không trả lời: ' + v.vungThieuHoi.join(' · ') : '',
+           v.xoaThieu.length ? 'BƯỚC XOÁ KHÔNG KHAI AI LÀM hoặc vì sao: ' +
+             v.xoaThieu.join(' · ') : '',
+           v.cuaCamLot.length ? 'MÔ-ĐUN CÓ CỬA KẾT LUẬN PHÁP LÝ: ' +
+             v.cuaCamLot.join(' · ') + ' — viết cửa ấy rồi mới cấm gọi là muộn' : '',
+           !v.coDanhSachCam ? 'DANH SÁCH TÊN CỬA BỊ CẤM QUÁ NGẮN — một danh sách ' +
+             'không chặn gì làm người đọc sau tưởng cái bẫy đã được lo' : '',
+           !v.oConKhongBat ? 'Ô ĐỒNG Ý VỀ CON ĐANG BẮT BUỘC — bắt cả ba mới đăng ký ' +
+             'được thì ba ô lại thành một ô, người ta tích hết một lượt, và cái ' +
+             '"riêng, tách bạch" chỉ còn ở hình thức' : '',
+           !v.dangKyBaO ? 'MÀN ĐĂNG KÝ KHÔNG DỰNG BA Ô TÁCH HẲN, hoặc còn ô gộp cũ, ' +
+             'hoặc ô thứ ba không ghi rõ là không bắt buộc' : '',
+           !v.congCon ? 'CỔNG ĐỒNG Ý DỮ LIỆU TRẺ EM KHÔNG CẮM Ở CẢ HAI CỬA TẠO HỒ SƠ ' +
+             'VỀ CON TRƯỚC CÂU INSERT — việc số 3 của Luật 91 thành một dòng chữ ' +
+             'trong một bảng bảy dòng' : '',
+           !v.nhatKyDoc ? 'NHẬT KÝ KHÔNG GHI LƯỢT ĐỌC — Luật 91 đòi "ai TRUY CẬP dữ ' +
+             'liệu gia đình nào", và một sự thật CÓ mà không đọc ra được thì trên ' +
+             'thực tế là KHÔNG CÓ' : '',
+           !v.khongChep ? 'HÀNG RÀO 10 ĐIỂM HOẶC BỘ LỌC QUẢNG CÁO ĐÃ BỊ CHÉP SANG ' +
+             'MÔ-ĐUN NÀY, hoặc mô-đun không gọi thẳng bộ dò ẩn danh của Bộ não — hai ' +
+             'bảng lệch nhau thì cả hai đều xanh trên hai thứ khác nhau' : '',
+           !v.haiPhia ? 'BẢNG YÊU CẦU XOÁ KHÔNG TÁCH HAI PHÍA đo-được và lời-khai, ' +
+             'hoặc thiếu hạn xử lý' : '',
+           !v.dyKhongCotTrangThai ? 'BẢNG ĐỒNG Ý CÓ CỘT TRẠNG THÁI (rút đồng ý sẽ sửa ' +
+             'đè lên dòng cũ và mất hẳn phần lịch sử), hoặc thiếu cột vaiBoiAi' : '',
+           !v.gopBiChan ? 'DANH SÁCH Ô GỘP BỊ CHẶN QUÁ NGẮN' : '',
+           !v.canhBaoDu ? 'CÂU CẢNH BÁO BẮT BUỘC THIẾU MỘT VẾ — nó phải nói cả "không ' +
+             'phải tư vấn pháp lý", cả "cần một luật sư thật rà", cả vì sao nó đứng ' +
+             'ở ngăn đầu' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

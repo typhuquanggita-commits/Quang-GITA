@@ -301,6 +301,9 @@ const NGHE = [
   'TU_MUCTIEU', 'TU_MUCTIEU_LUAT', 'TU_QUYDOI', 'TU_RANGBUOC', 'TU_CHIPHI_KHUNG', 'TU_CHIPHI_O', 'TU_DA_VA', 'TU_KIEUGIA', 'TU_CHOCHU',
   'CN_CUA', 'CN_CUA_LUAT', 'CN_NGUON', 'CN_DONGCHUAN', 'CN_C1_TH', 'CN_C2_KHUNG',
   'CN_TUAN', 'CN_TUAN_LUAT', 'CN_CHAN', 'CN_CHOCHU',
+  'PLR_CANHBAO', 'PLR_LUAT', 'PLR_HAUKIEM', 'PLR_VIEC7', 'PLR_VIEC_LUAT',
+  'PLR_DONGY', 'PLR_DONGY_LUAT', 'PLR_XOA', 'PLR_XOA_LUAT', 'PLR_VUNG4',
+  'PLR_VUNG_LUAT', 'PLR_CHOCHU',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */
