@@ -292,6 +292,9 @@ const NGHE = [
   /* 9.99.63 — Phân hệ 1: đánh thức vùng mạnh */
   'VM_BA', 'VM_BA_LUAT', 'VM_TRUONG', 'VM_TUAN', 'VM_THE', 'VM_DOI', 'VM_MUA',
   'VM_BAC', 'VM_BAC_LUAT', 'VM_LANRANH', 'VM_CAM_NOI', 'VM_CAM_LUAT', 'VM_CHOCHU',
+  'CK_VONG9', 'CK_VONG9_LUAT', 'CK_LUONG12', 'CK_LUONG_LUAT', 'CK_GHE5',
+  'CK_GHE_LUAT', 'CK_BTB', 'CK_BTB_TRAN', 'CK_MUC5', 'CK_TRU4', 'CK_CUA3',
+  'CK_SO3', 'CK_NOI_LUAT', 'CK_CHOCHU',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

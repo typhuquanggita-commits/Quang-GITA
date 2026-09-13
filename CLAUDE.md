@@ -801,6 +801,88 @@ nói nó nhắc việc gì thì nó không nhắc được ai.
 
 ---
 
+## BỘ NÃO — Phân hệ 2: Coach khách hàng (9.99.64)
+
+Phần IV của bản đặc tả. Màn **Coach khách hàng** (`src/coach-kh.js`,
+năm ngăn), máy chủ `may-chu/coach-kh.js`, kho `data.coach-kh.js` (14
+kho), bộ kiểm **mục 81**, chín phép đo ở `thu-worker.js`.
+
+### Phần này cố ý DỰNG ÍT
+
+Bản đặc tả mở Phần IV bằng *"giữ nguyên toàn bộ từ v2.0, nhắc lại ở
+dạng nén"*. Chép lại một bản nén vào kho là dựng bản thứ hai của một
+sự thật, và bản thứ hai mục trong im lặng. Nên chỉ dựng thứ CHƯA có ở
+đâu trong kho, và mỗi thứ dựng ra đều có một cái răng.
+
+### Thứ THẬT SỰ mới của v3.0 là đúng một câu
+
+*Trước khi trả lời bất kỳ câu hỏi nào về một đứa trẻ cụ thể, bộ não
+đọc Thẻ Vùng Mạnh của con đó trước.*
+
+Câu ấy nghe như một lời dặn về thứ tự thao tác. Nó không phải — nó là
+**câu nối Phân hệ 2 vào Phân hệ 1**. Không có răng thì bốn tuần quan
+sát của một gia đình thật dừng lại ở một tờ giấy đẹp, và không đổi
+được một chữ nào trong câu trả lời.
+
+**Dựng bằng một cái cờ `daDocThe` là hỏng ngay từ đầu:** một cái cờ do
+người gọi truyền vào là một **lời khai**, và lời khai bật được mà
+không đọc gì. Nên máy chủ **tự đọc** thẻ, và mục 81 đọc thẳng thân hàm
+`traLoiCoach` để canh hai điều — không ô nào mang nghĩa *"đã đọc rồi"*,
+và **có** lời gọi thật sang `docTheVungManh`. Cùng lối đo với LR1 ở mục
+79: phép đo về thứ **không được tồn tại**.
+
+Và phép đo mạnh nhất là câu của chính bản đặc tả, đo ở `thu-worker.js`:
+cùng một câu hỏi *"con không chịu học"*, nhà có cửa **làm** và nhà có
+cửa **nghe** phải ra **hai câu trả lời khác nhau**. Giống hệt nhau là
+máy chưa đọc thẻ — dù cờ có bật, dù nhật ký có ghi. Đo **hành vi**,
+không đo lời khai.
+
+Bốn cửa đóng, cả bốn đều có phép đo: `CHUATHE` (nhà chưa có thẻ) ·
+`THEQUAHAN` (LR2 đi xuyên từ Phân hệ 1 sang) · `THIEUCUA` (thẻ thiếu ô
+cửa thì **nói là không biết**, không đoán — đoán thì một phần ba là
+trúng) · `LUONGLA` (chưa phân luồng, bước B2 không bỏ được).
+
+### Ba cái cổng còn lại
+
+1. **Bốn luồng nặng — L05 · L06 · L09 · L12 — bắt buộc ba lượt hội
+   đồng, và ba lượt CHÉP LẠI không tính là ba lượt.** Con số ba vẫn
+   đúng trong khi cái được canh thì không còn, và bảng hội đồng thành
+   sân khấu — một sân khấu mang dấu kiểm duyệt thì tệ hơn không có bảng
+   nào. Ba luồng đầu chọn vì sai thì hỏng thứ không sửa lại được; luồng
+   thứ tư (về chính GITA) vì đó là luồng **duy nhất người trả lời có
+   lợi ích trong câu trả lời**.
+2. **Ghế G5 Người giữ hồn: máy không ngồi vào được.** Bốn ghế kia hỏi
+   câu đo được — đúng chưa, ngược lại thì sao, nguồn đâu, gọn chưa. Ghế
+   này hỏi *"đọc xong người mẹ ấy thấy gì"*, và câu trả lời của máy cho
+   nó **nghe y hệt** câu trả lời thật — đó đúng là lý do nó phải là
+   người. Cùng luật với ô `daGoNgoai` (9.99.58).
+3. **Bé tập bò, ba cái trần đếm được** — 20 chữ mỗi câu · 4 dòng mỗi
+   đoạn · **2 con số cả bài**. Máy **chặn** và nói vượt ở đâu, không tự
+   cắt hộ: cắt hộ thì người viết không biết mình vừa viết dài, và lần
+   sau viết y hệt.
+
+**Một chỗ suýt dựng thành phép đo bắt oan:** đếm con số thì mã `T4` ·
+`L06` · `M3` · `RB-07` phải bị **gỡ trước khi đếm**. Không gỡ thì mọi
+bài nhắc tới một bảng nào đó đều vượt trần — và một phép đo bắt oan thì
+lần sau người ta tắt nó đi.
+
+### Bảng đích hiển thị: đo lại CẢ BẢNG, không sửa mỗi số vừa kêu
+
+Mục 11 bắt R13 tụt 34,9% so với đích 37%. Chú giải của chính bảng
+`G.TAM_NHIN` đã dặn: nhiều số cùng lệch thì **hỏi lại xem cách đếm có
+hỏng không**. Đã hỏi và đã đo — mẫu số 183 → 186 đúng ba màn mới; vai
+**có** `nghe_chung` tử số tăng đúng 3; vai **không có** tử số đứng yên.
+Cách đếm còn đúng.
+
+Phép đo nói thêm một điều: **bảng đích đã lệch từ TRƯỚC ba màn ấy** —
+R03 đo được 82,5 khi đích ghi 84. Ba màn mới chỉ đẩy đúng R13 vượt dung
+sai; chín số kia lệch sẵn 1,2 và nằm im. Nên sửa **cả mười** về số đo
+được. Sửa mỗi số vừa kêu là để chín số kia nằm sát mép, và lần thêm màn
+sau chúng cùng vỡ một lượt — đúng cái đã xảy ra ở 9.64–9.67. Dung sai
+±2 giữ nguyên: nới dung sai là bỏ hẳn phép canh.
+
+---
+
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**

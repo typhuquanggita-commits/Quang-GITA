@@ -3967,6 +3967,149 @@ let idTam9 = null, idDang9 = null;
     'thi, và một bảng xếp hạng trẻ em sinh ra là để cha mẹ nhìn vào');
 }
 
+/* ══════════════ PHÂN HỆ 2 · COACH KHÁCH HÀNG ══════════════
+
+   Bản đặc tả viết đúng MỘT câu mới cho cả Phần IV: trước khi trả lời
+   câu hỏi về một đứa trẻ cụ thể, bộ não đọc Thẻ Vùng Mạnh trước.
+
+   Dựng câu ấy bằng một cái cờ do người gọi truyền vào thì nó là lời
+   khai, và lời khai bật được mà không đọc gì. Nên phép đo ở đây đo
+   HÀNH VI, bằng chính câu của bản đặc tả: cùng một câu hỏi, con vào
+   qua cửa LÀM và con vào qua cửa NGHE phải ra hai câu trả lời KHÁC
+   nhau. Giống hệt nhau là máy chưa đọc thẻ — dù cờ có bật, dù nhật
+   ký có ghi. */
+{
+  const mCK = await import('../may-chu/coach-kh.js');
+
+  const theLam = {
+    d1: 'Sáng nhất khi lắp mô hình, hai tiếng không ngẩng đầu',
+    d2: 'Vào nhanh nhất qua cửa LÀM — phải cầm vào mới hiểu',
+    d3: 'Chịu được cái khó của việc tay chân, hỏng năm lần vẫn làm lại',
+    d4: 'Rụt lại khi phải đứng trước lớp, sợ bị cười',
+    d5: 'Chín mươi ngày tới nhà mình làm một góc bàn riêng cho con'
+  };
+
+  const theCK = {
+    d1: 'Sáng nhất khi kể lại chuyện vừa nghe cho em',
+    d2: 'Vào nhanh nhất khi được nghe kể',
+    d3: 'Chịu được cái khó của việc học thuộc lời thoại',
+    d4: 'Rụt lại khi bị chê trước mặt người lạ',
+    d5: 'Chín mươi ngày tới nhà mình đọc to cùng nhau mỗi tối'
+  };
+
+  await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-CK1', tuoiCon:8, the:theLam,
+    quanSat:{T4:'lam', T7:'soBiCuoi'}});
+  await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-CK2', tuoiCon:8, the:theCK,
+    quanSat:{T4:'nghe', T7:'soBiCuoi'}});
+  await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-CK3', tuoiCon:8, the:theCK, quanSat:{T7:'soSai'}});
+
+  const HOI = 'Con không chịu học, tối nào cũng phải nhắc mười lần';
+
+  /* ── PHÉP ĐO CHÍNH: HAI CỬA, HAI CÂU TRẢ LỜI ── */
+  const traLam = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L01', cauHoi:HOI, maNha:'NHA-CK1'});
+  const traNghe = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L01', cauHoi:HOI, maNha:'NHA-CK2'});
+  bao(traLam.than.ok && traNghe.than.ok &&
+      traLam.than.cua === 'lam' && traNghe.than.cua === 'nghe' &&
+      traLam.than.doi !== traNghe.than.doi &&
+      traLam.than.muc === 'M3',
+    'CÙNG MỘT CÂU HỎI, HAI CỬA TIẾP NHẬN RA HAI CÂU TRẢ LỜI KHÁC NHAU — đây là chỗ Phân hệ 2 nối vào Phân hệ 1, và là phép đo đo HÀNH VI chứ không đo lời khai',
+    'cửa ' + traLam.than.cua + ' vs ' + traNghe.than.cua + ' · giống hệt nhau là ' +
+    'máy chưa đọc thẻ, dù cờ có bật');
+
+  /* Nhà chưa có thẻ thì KHÔNG dựng câu cá nhân hoá. Trả lời chung rồi
+     gọi là cá nhân hoá là chỗ dối dễ nhất của cả hệ — nó nghe giống
+     hệt thứ thật. */
+  const chuaThe = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L01', cauHoi:HOI, maNha:'NHA-KHONG-CO'});
+  bao(!chuaThe.than.ok && chuaThe.than.code === 'CHUATHE',
+    'NHÀ CHƯA CÓ THẺ THÌ CÂU TRẢ LỜI CÁ NHÂN HOÁ KHÔNG DỰNG ĐƯỢC',
+    'trả lời chung rồi gọi là cá nhân hoá là chỗ dối dễ nhất của cả hệ');
+
+  /* Thẻ quá hạn cũng như chưa có — LR2 của Phân hệ 1 đi xuyên sang đây. */
+  const theCu = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L01', cauHoi:HOI, maNha:'NHA-CK1',
+    bayGio:new Date(Date.now() + 100*86400000).toISOString()});
+  bao(!theCu.than.ok && theCu.than.code === 'THEQUAHAN' && theCu.than.quaHanNgay >= 9,
+    'THẺ QUÁ HẠN THÌ CŨNG NHƯ CHƯA CÓ — LR2 đi xuyên từ Phân hệ 1 sang Phân hệ 2',
+    'quá hạn ' + theCu.than.quaHanNgay + ' ngày · trẻ đổi rất nhanh');
+
+  /* Thẻ thiếu ô cửa thì NÓI LÀ KHÔNG BIẾT. Đoán thì một phần ba là
+     trúng, và người đọc không có cách nào biết câu trả lời vừa được
+     xây trên một cái đoán. */
+  const thieuCua = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L01', cauHoi:HOI, maNha:'NHA-CK3'});
+  bao(!thieuCua.than.ok && thieuCua.than.code === 'THIEUCUA',
+    'THẺ THIẾU Ô CỬA THÌ MÁY NÓI LÀ KHÔNG BIẾT, KHÔNG ĐOÁN MỘT CỬA',
+    'đoán thì một phần ba là trúng, và người đọc không có cách nào biết câu trả ' +
+    'lời vừa được xây trên một cái đoán');
+
+  /* Không phân luồng thì bốn luồng nặng đi đường thường. */
+  const khongLuong = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    cauHoi:HOI, maNha:'NHA-CK1'});
+  bao(!khongLuong.than.ok && khongLuong.than.code === 'LUONGLA',
+    'KHÔNG PHÂN LUỒNG THÌ KHÔNG TRẢ LỜI — bước B2 không bỏ được',
+    'bốn luồng nặng đi đường khác, và không phân luồng thì chúng đi đường thường');
+
+  /* ── BỐN LUỒNG NẶNG · HỘI ĐỒNG BA LƯỢT ── */
+  const nangThieu = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L06', cauHoi:'Học phí tầng ba có đáng không', maNha:'NHA-CK1'});
+  bao(!nangThieu.than.ok && nangThieu.than.code === 'THIEUHOIDONG',
+    'LUỒNG NẶNG KHÔNG CÓ HỘI ĐỒNG BA LƯỢT THÌ BỊ CHẶN',
+    'L06 là luồng tài chính — người trả lời có lợi ích trong câu trả lời');
+
+  /* Ba lượt CHÉP LẠI thì con số ba vẫn đúng và cái được canh thì không
+     còn. Đây là chỗ một bảng kiểm duyệt biến thành sân khấu. */
+  const bacheP = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L06', cauHoi:'Học phí tầng ba có đáng không', maNha:'NHA-CK1',
+    luot:['Giá đã chốt ở bảng HP_TANG', 'Giá đã chốt ở bảng HP_TANG',
+      'Giá đã chốt ở bảng HP_TANG'],
+    ghe:{G1:'quang', G2:'lan', G3:'minh', G4:'hoa', G5:'quang'}});
+  bao(!bacheP.than.ok && bacheP.than.code === 'THIEUHOIDONG' &&
+      bacheP.than.hoiDong.soLuot === 3 && bacheP.than.hoiDong.soRieng === 1,
+    'BA LƯỢT CHÉP LẠI KHÔNG PHẢI BA LƯỢT — con số ba vẫn đúng, cái được canh thì không còn',
+    bacheP.than.hoiDong.soLuot + ' lượt, chỉ ' + bacheP.than.hoiDong.soRieng +
+    ' lượt khác nhau · một bảng hội đồng làm cảnh thì tệ hơn không có bảng nào');
+
+  /* ── GHẾ GIỮ HỒN: MÁY KHÔNG NGỒI VÀO ── */
+  const mayNgoi = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L06', cauHoi:'Học phí tầng ba có đáng không', maNha:'NHA-CK1',
+    luot:['Bản soạn đầu', 'Phản biện: câu này nghe như bán hàng', 'Kiểm chứng: HP_TANG'],
+    ghe:{G1:'quang', G2:'lan', G3:'minh', G4:'hoa', G5:'AI'}});
+  const nguoiNgoi = await goi({fn:'traLoiCoach', token:tkSA, u:'superadmin@gita365.vn',
+    luong:'L06', cauHoi:'Học phí tầng ba có đáng không', maNha:'NHA-CK1',
+    luot:['Bản soạn đầu', 'Phản biện: câu này nghe như bán hàng', 'Kiểm chứng: HP_TANG'],
+    ghe:{G1:'quang', G2:'lan', G3:'minh', G4:'hoa', G5:'chị Hoa phòng đào tạo'}});
+  bao(!mayNgoi.than.ok && mayNgoi.than.code === 'THIEUGHE' &&
+      mayNgoi.than.ghe.mayNgoi === true &&
+      nguoiNgoi.than.ok && nguoiNgoi.than.nang === true,
+    'GHẾ NGƯỜI GIỮ HỒN: MÁY KHÔNG NGỒI VÀO ĐƯỢC, và đó là ô duy nhất của cả phân hệ như thế',
+    'bốn ghế kia hỏi câu đo được; ghế này hỏi "đọc xong người mẹ ấy thấy gì", và ' +
+    'câu trả lời của máy cho nó nghe y hệt câu trả lời thật');
+
+  /* ── BÉ TẬP BÒ · BA CÁI TRẦN ──
+     Trần thứ ba bắt được nhiều nhất, và nó cũng là trần dễ bắt oan
+     nhất: mọi bài nhắc tới bảng nào cũng mang mã có chữ số. Nên mã bị
+     gỡ TRƯỚC khi đếm — một phép đo bắt oan thì lần sau người ta tắt nó. */
+  const btbDat = mCK.soatBeTapBo('Con vào qua cửa làm. Cho con cầm vào trước.');
+  const btbDai = mCK.soatBeTapBo(
+    'Con của anh chị vào nhanh nhất qua cửa làm nên mọi bài tập từ nay nên đổi ' +
+    'sang dạng làm bằng tay và cắt bớt phần đọc đi cho nhẹ.');
+  const btbSo = mCK.soatBeTapBo('Làm 3 việc. Trong 21 ngày. Mỗi ngày 15 phút. Xong 4 bài.');
+  const btbMa = mCK.soatBeTapBo('Đọc trường T4 của thẻ. Xem luồng L06 ở mức M3.');
+  bao(btbDat.dat === true && btbDai.dat === false && btbSo.dat === false &&
+      btbMa.dat === true && btbSo.soCon === 4 &&
+      /KHÔNG tự cắt bớt/.test(btbDai.vi),
+    'BÉ TẬP BÒ: BA TRẦN ĐẾM ĐƯỢC, và mã T4 · L06 · M3 KHÔNG bị đếm là con số',
+    'bài dài ' + btbDai.cauDai.length + ' câu quá trần · bài nhiều số đếm ' +
+    btbSo.soCon + ' · máy CHẶN chứ không cắt hộ: cắt hộ thì người viết không biết ' +
+    'mình vừa viết dài, và lần sau viết y hệt');
+}
+
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&
     soRa.than.ds[0].daGui === raNgoai.than.daGui,

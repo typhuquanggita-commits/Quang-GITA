@@ -12840,6 +12840,180 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n81 · COACH KHÁCH HÀNG — CHỖ PHÂN HỆ 2 CẮM VÀO PHÂN HỆ 1');
+  /* ══════════════════ 81. COACH KHÁCH HÀNG ══════════════════
+
+     Bản đặc tả mở Phần IV bằng "giữ nguyên toàn bộ từ v2.0", và viết
+     đúng MỘT câu mới: trước khi trả lời câu hỏi về một đứa trẻ cụ thể,
+     bộ não đọc Thẻ Vùng Mạnh của con đó trước.
+
+     Câu ấy dựng bằng một cái cờ `daDocThe` do người gọi truyền vào thì
+     nó là một lời khai, và lời khai bật được mà không đọc gì. Nên phép
+     đo ở đây hỏi CẤU TRÚC: cửa trả lời không được nhận một ô nào mang
+     nghĩa "đã đọc rồi" — cùng lối đo với LR1 của mục 79, là phép đo về
+     thứ KHÔNG ĐƯỢC TỒN TẠI. */
+  {
+    const mCK = await import('../may-chu/coach-kh.js');
+    const khoCK = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        vong: (G.CK_VONG9 || []).map(x => x.ma),
+        tranB3: ((G.CK_VONG9 || []).find(x => x.ma === 'B3') || {}).tran,
+        /* Đúng MỘT bước mang trần. Hai bước mang trần thì cái trần của
+           bước hỏi lại không còn là chỗ đáng nhớ nữa. */
+        soTran: (G.CK_VONG9 || []).filter(x => x.tran).length,
+        buocThieuVi: (G.CK_VONG9 || []).filter(x => !x.lam || !x.vi).map(x => x.ma),
+        luong: (G.CK_LUONG12 || []).map(x => x.ma),
+        nang: (G.CK_LUONG12 || []).filter(x => x.hoiDong3).map(x => x.ma),
+        luongThieuVi: (G.CK_LUONG12 || []).filter(x => !x.vi).map(x => x.ma),
+        ghe: (G.CK_GHE5 || []).map(x => x.ma),
+        /* Đúng MỘT ghế bắt buộc là người thật. Hai ghế cùng mang dấu ấy
+           thì dấu mất nghĩa; không ghế nào mang thì hội đồng năm ghế
+           chạy trọn vẹn mà không có một người nào trong đó. */
+        soNguoiThat: (G.CK_GHE5 || []).filter(x => x.phaiNguoiThat).length,
+        maNguoiThat: (G.CK_GHE5 || []).filter(x => x.phaiNguoiThat)
+          .map(x => x.ma).join(''),
+        gheThieuHoi: (G.CK_GHE5 || []).filter(x => !x.hoi || !x.vi).map(x => x.ma),
+        muc: (G.CK_MUC5 || []).map(x => x.ma),
+        soMacDinh: (G.CK_MUC5 || []).filter(x => x.macDinh).length,
+        maMacDinh: (G.CK_MUC5 || []).filter(x => x.macDinh).map(x => x.ma).join(''),
+        cua: (G.CK_CUA3 || []).map(x => x.cua),
+        cuaThieu: (G.CK_CUA3 || []).filter(x => !x.doi || !x.trach).map(x => x.cua),
+        so3: (G.CK_SO3 || []).map(x => x.so),
+        tran: G.CK_BTB_TRAN || {},
+        soTru: (G.CK_TRU4 || []).length,
+        truThieuVi: (G.CK_TRU4 || []).filter(x => !x.loi || !x.vi).map(x => x.ma)
+      };
+    });
+
+    const v = {};
+    v.vongKhop = JSON.stringify(khoCK.vong) === JSON.stringify(mCK.VONG9 || []);
+    v.luongKhop = JSON.stringify(khoCK.luong) === JSON.stringify(mCK.LUONG12 || []);
+    v.nangKhop = JSON.stringify(khoCK.nang) === JSON.stringify(mCK.LUONG_NANG || []);
+    v.gheKhop = JSON.stringify(khoCK.ghe) === JSON.stringify(mCK.GHE5 || []);
+    v.mucKhop = JSON.stringify(khoCK.muc) === JSON.stringify(mCK.MUC5 || []);
+    v.cuaKhop = JSON.stringify(khoCK.cua) === JSON.stringify(mCK.CUA3 || []);
+    v.so3Khop = JSON.stringify(khoCK.so3) === JSON.stringify(mCK.SO3 || []);
+    v.tranKhop = khoCK.tran.chuMoiCau === mCK.TRAN_BTB.chuMoiCau &&
+      khoCK.tran.dongMoiDoan === mCK.TRAN_BTB.dongMoiDoan &&
+      khoCK.tran.soTrongBai === mCK.TRAN_BTB.soTrongBai;
+    v.tranB3Khop = khoCK.tranB3 === mCK.TRAN_HOI_LAI;
+    v.nguoiThatKhop = khoCK.maNguoiThat === mCK.GHE_NGUOI_THAT;
+    v.macDinhKhop = khoCK.maMacDinh === mCK.MUC_MAC_DINH;
+    v.soTran = khoCK.soTran;
+    v.soNguoiThat = khoCK.soNguoiThat;
+    v.soMacDinh = khoCK.soMacDinh;
+    v.buocThieuVi = khoCK.buocThieuVi;
+    v.luongThieuVi = khoCK.luongThieuVi;
+    v.gheThieuHoi = khoCK.gheThieuHoi;
+    v.cuaThieu = khoCK.cuaThieu;
+    v.truThieuVi = khoCK.truThieuVi;
+    v.soTru = khoCK.soTru;
+
+    /* ══ GỌI THẲNG ══ */
+    /* Ba lượt CHÉP LẠI thì con số ba vẫn đúng và cái được canh thì
+       không còn. Đây là chỗ một bảng kiểm duyệt biến thành sân khấu. */
+    const hdDu = mCK.soatHoiDong('L06', ['soạn', 'phản biện', 'kiểm chứng']);
+    const hdTrung = mCK.soatHoiDong('L06', ['soạn', 'soạn', 'soạn']);
+    const hdThieu = mCK.soatHoiDong('L06', ['soạn']);
+    const hdThuong = mCK.soatHoiDong('L01', []);
+    v.hoiDongChayThat = hdDu.dat === true && hdTrung.dat === false &&
+      hdTrung.soLuot === 3 && hdTrung.soRieng === 1 &&
+      hdThieu.dat === false && hdThuong.dat === true && hdThuong.nang === false;
+
+    /* Ghế giữ hồn: máy không ngồi vào được. */
+    const gNguoi = mCK.soatGhe5({G1:'a', G2:'b', G3:'c', G4:'d', G5:'chị Hoa'});
+    const gMay = mCK.soatGhe5({G1:'a', G2:'b', G3:'c', G4:'d', G5:'Bot'});
+    const gThieu = mCK.soatGhe5({G1:'a', G2:'b', G3:'c', G4:'d'});
+    v.gheChayThat = gNguoi.dat === true && gMay.dat === false &&
+      gMay.mayNgoi === true && gThieu.dat === false &&
+      gThieu.thieu.join() === 'G5';
+
+    /* Bé tập bò: ba trần đếm được, và MÃ không bị đếm là con số — một
+       phép đo bắt oan thì lần sau người ta tắt nó đi. */
+    const bDat = mCK.soatBeTapBo('Cho con cầm vào trước. Hiểu sau.');
+    const bDai = mCK.soatBeTapBo('Con của anh chị vào nhanh nhất qua cửa làm nên ' +
+      'mọi bài tập từ nay nên đổi sang dạng làm bằng tay cho nhẹ đi rất nhiều.');
+    const bSo = mCK.soatBeTapBo('Làm 3 việc. Trong 21 ngày. Mỗi ngày 15 phút. Xong 4 bài.');
+    const bMa = mCK.soatBeTapBo('Đọc trường T4 của thẻ. Xem luồng L06 ở mức M3.');
+    v.btbChayThat = bDat.dat === true && bDai.dat === false && bSo.dat === false &&
+      bMa.dat === true && bSo.soCon === 4 && /KHÔNG tự cắt bớt/.test(bDai.vi);
+
+    /* ── PHÉP ĐO VỀ THỨ KHÔNG ĐƯỢC TỒN TẠI ──
+       Cửa trả lời KHÔNG được nhận một ô nào mang nghĩa "đã đọc thẻ
+       rồi". Một ô như thế bật được mà không đọc gì, và lúc ấy bốn tuần
+       quan sát của một gia đình thật dừng ở một tờ giấy đẹp. Đo bằng
+       cách đọc chính mã nguồn của cửa ấy — cùng lối với LR1 ở mục 79. */
+    const maCK = await (await import('fs/promises'))
+      .readFile('may-chu/coach-kh.js', 'utf8');
+    const thanTraLoi = maCK.slice(maCK.indexOf('export async function traLoiCoach'),
+      maCK.indexOf('export async function soatBanTra'));
+    v.oCoLoiKhai = (thanTraLoi.match(/x\.(daDoc\w*|doc\w*The|theDaDoc|boQuaThe)\b/g) || []);
+    /* Và cửa ấy PHẢI gọi thật sang Phân hệ 1. Không gọi thì "đọc thẻ
+       trước" là một câu trong chú giải, không phải một việc máy làm. */
+    v.coGoiVM = /VungManh\.docTheVungManh\(/.test(thanTraLoi);
+
+    const ckDat =
+      v.vongKhop && v.luongKhop && v.nangKhop && v.gheKhop && v.mucKhop &&
+      v.cuaKhop && v.so3Khop && v.tranKhop && v.tranB3Khop && v.nguoiThatKhop &&
+      v.macDinhKhop && v.soTran === 1 && v.soNguoiThat === 1 && v.soMacDinh === 1 &&
+      !v.buocThieuVi.length && !v.luongThieuVi.length && !v.gheThieuHoi.length &&
+      !v.cuaThieu.length && !v.truThieuVi.length && v.soTru === 4 &&
+      v.hoiDongChayThat && v.gheChayThat && v.btbChayThat &&
+      v.oCoLoiKhai.length === 0 && v.coGoiVM;
+
+    bao(ckDat,
+      'PHÂN HỆ 2 · COACH KHÁCH HÀNG: CHỖ NÓ CẮM VÀO PHÂN HỆ 1 LÀ MỘT VIỆC MÁY LÀM, KHÔNG PHẢI MỘT Ô NGƯỜI GỌI TỰ KHAI. Bản đặc tả mở Phần IV bằng "giữ nguyên toàn bộ từ v2.0" rồi viết đúng MỘT câu mới: trước khi trả lời câu hỏi về một đứa trẻ cụ thể thì đọc Thẻ Vùng Mạnh của con đó trước. Dựng câu ấy bằng một cái cờ daDocThe do người gọi truyền vào thì nó là lời khai, và lời khai bật được mà không đọc gì — lúc ấy bốn tuần quan sát của một gia đình thật dừng lại ở một tờ giấy đẹp và không đổi được một chữ nào trong câu trả lời. Nên phép đo đọc thẳng thân hàm traLoiCoach: không ô nào mang nghĩa "đã đọc rồi", và có lời gọi thật sang docTheVungManh của Phân hệ 1 — cùng lối đo với LR1 ở mục 79, là phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI. Đo thêm ba cái cổng nữa: bốn luồng nặng bắt buộc ba lượt hội đồng và ba lượt CHÉP LẠI không tính là ba lượt, vì con số ba vẫn đúng trong khi cái được canh thì không còn và bảng hội đồng thành sân khấu; ghế Người giữ hồn máy không ngồi vào được, vì bốn ghế kia hỏi câu đo được còn ghế này hỏi "đọc xong người mẹ ấy thấy gì" và câu trả lời của máy cho nó nghe y hệt câu trả lời thật; ba cái trần của Bé tập bò đếm được, và mã T4 · L06 · M3 KHÔNG bị đếm là con số vì một phép đo bắt oan thì lần sau người ta tắt nó đi',
+      ckDat
+        ? khoCK.vong.length + ' bước, đúng một bước mang trần (B3 · ' + khoCK.tranB3 +
+          ' câu) · ' + khoCK.luong.length + ' luồng, ' + khoCK.nang.length +
+          ' luồng nặng (' + khoCK.nang.join(' · ') + ') · ' + khoCK.ghe.length +
+          ' ghế, đúng một ghế bắt buộc người thật (' + v.nguoiThatKhop + ' · ' +
+          khoCK.maNguoiThat + ') · ' + khoCK.muc.length + ' mức, mặc định ' +
+          khoCK.maMacDinh + ' · ' + khoCK.cua.length + ' cửa tiếp nhận · ' +
+          v.soTru + ' trụ tri thức · trần ' + khoCK.tran.chuMoiCau + ' chữ · ' +
+          khoCK.tran.dongMoiDoan + ' dòng · ' + khoCK.tran.soTrongBai +
+          ' con số · cửa trả lời KHÔNG có ô tự khai và CÓ gọi thật sang Phân hệ 1'
+        : [!v.vongKhop ? 'BẢN CHÉP CHÍN BƯỚC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.luongKhop ? 'BẢN CHÉP MƯỜI HAI LUỒNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nangKhop ? 'BẢN CHÉP BỐN LUỒNG NẶNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.gheKhop ? 'BẢN CHÉP NĂM GHẾ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.mucKhop ? 'BẢN CHÉP NĂM MỨC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.cuaKhop ? 'BẢN CHÉP BA CỬA TIẾP NHẬN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.so3Khop ? 'BẢN CHÉP BA NGƯỠNG SỢ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.tranKhop ? 'BA TRẦN BÉ TẬP BÒ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.tranB3Khop ? 'TRẦN HỎI LẠI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.soTran !== 1 ? 'CÓ ' + v.soTran + ' BƯỚC MANG TRẦN, phải đúng một — ' +
+             'hai bước mang trần thì trần của bước hỏi lại không còn đáng nhớ' : '',
+           v.soNguoiThat !== 1 ? 'CÓ ' + v.soNguoiThat + ' GHẾ BẮT BUỘC NGƯỜI THẬT, ' +
+             'phải đúng một — không ghế nào mang dấu ấy thì hội đồng năm ghế chạy ' +
+             'trọn vẹn mà không có một người nào trong đó' : '',
+           !v.nguoiThatKhop ? 'GHẾ NGƯỜI THẬT Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.soMacDinh !== 1 ? 'CÓ ' + v.soMacDinh + ' MỨC MẶC ĐỊNH, phải đúng một' : '',
+           !v.macDinhKhop ? 'MỨC MẶC ĐỊNH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.buocThieuVi.length ? 'bước thiếu ô việc hoặc ô vì sao: ' +
+             v.buocThieuVi.join(' · ') : '',
+           v.luongThieuVi.length ? 'luồng thiếu lý do: ' + v.luongThieuVi.join(' · ') : '',
+           v.gheThieuHoi.length ? 'ghế thiếu CÂU HỎI của nó — một cái ghế không có ' +
+             'câu hỏi thì nó là một chỗ ngồi: ' + v.gheThieuHoi.join(' · ') : '',
+           v.cuaThieu.length ? 'cửa tiếp nhận thiếu ô đổi hoặc ô chỗ hay làm sai: ' +
+             v.cuaThieu.join(' · ') : '',
+           v.soTru !== 4 ? 'CÓ ' + v.soTru + ' TRỤ TRI THỨC, không phải 4' : '',
+           v.truThieuVi.length ? 'trụ thiếu lời hoặc lý do: ' + v.truThieuVi.join(' · ') : '',
+           !v.hoiDongChayThat ? 'HỘI ĐỒNG BA LƯỢT KHÔNG CHẠY THẬT (hoặc ba lượt ' +
+             'chép lại vẫn được tính là ba lượt — lúc ấy bảng hội đồng là sân khấu)' : '',
+           !v.gheChayThat ? 'CỔNG GHẾ GIỮ HỒN KHÔNG CHẠY THẬT — máy vẫn ngồi vào được' : '',
+           !v.btbChayThat ? 'BA TRẦN BÉ TẬP BÒ KHÔNG CHẠY THẬT (hoặc phép đếm số ' +
+             'bắt oan cả mã T4 · L06 · M3)' : '',
+           v.oCoLoiKhai.length ? 'CỬA TRẢ LỜI NHẬN MỘT Ô TỰ KHAI ĐÃ ĐỌC THẺ: ' +
+             v.oCoLoiKhai.join(' · ') + '. Một ô như thế bật được mà không đọc gì, ' +
+             'và lúc ấy bốn tuần quan sát của một gia đình thật dừng ở một tờ giấy đẹp' : '',
+           !v.coGoiVM ? 'CỬA TRẢ LỜI KHÔNG GỌI THẬT SANG docTheVungManh — "đọc thẻ ' +
+             'trước" đang là một câu trong chú giải, không phải một việc máy làm' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

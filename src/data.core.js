@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.63',
+  version: '9.99.64',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -310,7 +310,30 @@ G.TAM_NHIN = [
      sửa sáu số cho xong. Lần này đã kiểm: mẫu số tăng đúng một màn,
      bốn vị trí có quyền thì tử số cũng tăng một, hai vị trí không có
      quyền thì tử số đứng yên. Cách đếm còn đúng. */
-  {vai:['R03','R04'], pt:84,
+/* ═══ 9.99.64 · ĐO LẠI CẢ BẢNG ĐÍCH MỘT LƯỢT ═══
+
+   Mười con số cùng lệch ở bản này. Chú giải của chính bảng này đã dặn:
+   khi nhiều số cùng lệch một lượt thì HỎI LẠI XEM CÁCH ĐẾM CÓ HỎNG
+   KHÔNG, đừng sửa từng số cho xong. Đã hỏi, và đã đo:
+
+     · mẫu số 183 → 186, đúng ba màn mới (Bộ não · Vùng Mạnh · Coach)
+     · vai CÓ nghe_chung: tử số tăng đúng 3 — R03 151→154, R09 127→130
+     · vai KHÔNG có: tử số đứng yên — R13 65, R14 58, R15 53
+
+   Cách đếm còn đúng. Và phép đo nói thêm một điều: bảng đích đã lệch
+   TỪ TRƯỚC ba màn ấy — R03 đo được 82,5 khi đích ghi 84, R13 đo được
+   35,5 khi đích ghi 37. Ba màn mới chỉ đẩy đúng R13 vượt khỏi dung sai
+   ±2; chín số kia lệch sẵn 1,2 và nằm im trong dung sai.
+
+   Nên sửa CẢ MƯỜI về số đo được, không sửa mỗi số vừa kêu. Sửa mỗi số
+   vừa kêu là để chín số kia nằm sát mép, và lần thêm màn sau chúng
+   cùng vỡ một lượt — đúng cái đã xảy ra ở 9.64–9.67 và được ghi ngay
+   phía trên. Dung sai ±2 giữ nguyên: nới dung sai là bỏ hẳn phép canh.
+
+   Phép thử vẫn không đổi qua tám lần: phần KHOÁ của khách hàng có mở
+   thêm màn nghề nào không. Không — cả ba màn mới đều khoá ở nghe_chung,
+   và R13 · R14 · R15 không thấy màn nào trong ba. */
+  {vai:['R03','R04'], pt:83,
    ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
   /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
      chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
@@ -340,7 +363,7 @@ G.TAM_NHIN = [
      phải hàng rào bị nới. */
   {vai:['R05','R06'], pt:79,
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
-  {vai:['R07','R08'], pt:80,
+  {vai:['R07','R08'], pt:79,
    ghi:'Như R05–R06, và không mở màn của dòng gia nghiệp T5-PRO.'},
   /* 73 chứ không còn 75. Hai màn mới ở 9.65 — Hành lang thành công và
      Rà soát lỗi hệ thống — khoá ở pro_coach, tức dừng đúng R08. Tử số
@@ -357,7 +380,7 @@ G.TAM_NHIN = [
      ±2 đúng 0,02 điểm. Thêm một màn là rơi ra. Ghi lại để lần sau
      nhìn thấy: một con số sát mép thì lần đổi kế tiếp chắc chắn phải
      sửa, và sửa sớm rẻ hơn để bộ kiểm đỏ rồi mới sửa. */
-  {vai:['R09','R10','R11'], pt:71,
+  {vai:['R09','R10','R11'], pt:70,
    ghi:'Như trên, và không mở ba màn thuộc phạm vi quản lý chuyên môn.'},
   /* R12 tách ra một dòng riêng, và con số thấp hơn là ĐÚNG chứ không phải
      thiệt thòi. Phân tích dữ liệu đọc được toàn bộ kho nghề và mọi màn số
@@ -386,7 +409,7 @@ G.TAM_NHIN = [
      LUẬT. Người phân tích dữ liệu đọc được bản đồ ấy thì đọc luôn
      danh sách chỗ tấn công — nên khoá ở pro_coach là cố ý, không
      phải sót. */
-  {vai:['R12'], pt:62,
+  {vai:['R12'], pt:61,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -408,9 +431,9 @@ G.TAM_NHIN = [
      năm câu hệ chưa trả lời được, con đường năm tầng — đều mở cho mọi
      vai. Sửa SỐ CÔNG BỐ, không nới dung sai: phần khoá của phụ huynh
      không mở thêm một màn nghề nào. */
-  {vai:['R13'], pt:37, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
+  {vai:['R13'], pt:35, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
   /* 35 chứ không còn 33 — cùng lý do với R03–R04 và R13. */
-  {vai:['R14'], pt:33, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
+  {vai:['R14'], pt:31, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
   /* 31 chứ không còn 29. Hai màn mới ở 9.19 và 9.20 — sổ tay của gia
      đình, và năm câu hệ chưa trả lời được — đều mở cho MỌI vai, nên
      R15 thấy thêm hai màn trong khi mẫu số cũng tăng hai. Tử số tăng
@@ -441,7 +464,7 @@ G.TAM_NHIN = [
      phải "tỉ lệ có tụt không" mà là "phần KHOÁ có mở thêm màn nào
      không". Không mở, nên sửa SỐ CÔNG BỐ — và KHÔNG nới dung sai. Nới
      dung sai để bộ kiểm xanh là tắt đúng cái đèn vừa báo đúng. */
-  {vai:['R15'], pt:29, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
+  {vai:['R15'], pt:28, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -894,6 +917,7 @@ G.NAV = [
        cụ thể. `nghe_chung` cùng lý do với Bộ não — người chạm khách
        nhiều nhất phải đọc được luật mình phải theo. */
     {v:'vung-manh', t:'Vùng mạnh của con', h:'Ba thứ quan sát được · bảy trường · bốn tuần · Thẻ Vùng Mạnh hạn 90 ngày · bậc thang năm tầng giá trị', ic:'star', star:1, perm:'nghe_chung', capMo:'chung'},
+    {v:'coach-kh', t:'Coach khách hàng', h:'Vòng chín bước · mười hai luồng, bốn luồng nặng ba lượt hội đồng · năm ghế, ghế giữ hồn phải là người · Bé tập bò ba trần', ic:'quote', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
