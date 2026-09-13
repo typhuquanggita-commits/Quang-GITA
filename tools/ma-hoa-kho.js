@@ -307,6 +307,8 @@ const NGHE = [
   'HDH_NHIP', 'HDH_NHIP_LUAT', 'HDH_CHISO12', 'HDH_CHISO_LUAT', 'HDH_QUYET5',
   'HDH_QUYET_LUAT', 'HDH_CHANG', 'HDH_CHANG_LUAT', 'HDH_LENH4', 'HDH_LENH_LUAT',
   'HDH_THUOC_TUAN', 'HDH_THUOC_LUAT', 'HDH_HATANG', 'HDH_CHOCHU',
+  'BP_VAI4', 'BP_VAI_LUAT', 'BP_KHOI', 'BP_KHOI_LUAT', 'BP_VONG', 'BP_VONG_LUAT',
+  'BP_NOI', 'BP_NOI_LUAT', 'BP_OFFLINE', 'BP_CHOCHU',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

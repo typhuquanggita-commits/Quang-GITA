@@ -4851,6 +4851,87 @@ let idTam9 = null, idDang9 = null;
     'nới xuống 99% là bỏ hẳn phép canh — một phần trăm của một nghìn lượt là mười gia đình');
 }
 
+/* ══════════════ BỘ PROMPT · VÒNG CHẠY MỘT NỘI DUNG ══════════════
+
+   Prompt dựng ở trình duyệt (nơi kho đang mở) — phép đo ấy nằm ở mục
+   89. Ở đây đo phần máy chủ: vòng chạy sáu bước, và cái răng
+   soạn-khác-duyệt. */
+{
+  const mBP = await import('../may-chu/bo-prompt.js');
+
+  /* ── NHẢY BƯỚC BỊ CHẶN ── */
+  const nhay = await goi({fn:'ghiLuotPrompt', token:tkSA, u:'superadmin@gita365.vn',
+    maBai:'BAI-01', buoc:'V4', nhaCungCap:'groq'});
+  bao(!nhay.than.ok && nhay.than.code === 'NHAYBUOC' &&
+      nhay.than.thieu.join() === 'V1,V2,V3',
+    'NHẢY THẲNG TỚI SOI LUẬT BỊ CHẶN — sáu bước chạy ĐÚNG THỨ TỰ',
+    'thiếu ' + nhay.than.thieu.join(' · ') + ' · soi luật trước khi sửa thì sửa xong ' +
+    'lại phải soi lại, và người duyệt đọc một bản không phải bản sắp đăng');
+
+  /* ── CÁI RĂNG CHÍNH · SOẠN KHÔNG TỰ DUYỆT ĐƯỢC ── */
+  await goi({fn:'ghiLuotPrompt', token:tkSA, u:'superadmin@gita365.vn',
+    maBai:'BAI-01', buoc:'V1', vai:'A', nhaCungCap:'gemini'});
+  const tuDuyet = await goi({fn:'ghiLuotPrompt', token:tkSA, u:'superadmin@gita365.vn',
+    maBai:'BAI-01', buoc:'V2', vai:'C', nhaCungCap:'gemini'});
+  const khacNha = await goi({fn:'ghiLuotPrompt', token:tkSA, u:'superadmin@gita365.vn',
+    maBai:'BAI-01', buoc:'V2', vai:'C', nhaCungCap:'groq'});
+  bao(!tuDuyet.than.ok && tuDuyet.than.code === 'TUDUYET' && khacNha.than.ok === true,
+    'VAI C CHẠY CÙNG NHÀ CUNG CẤP VỚI VAI A THÌ BỊ CHẶN — một mô hình không tự phản biện chính nó được',
+    'phần duyệt sẽ chỉ là phần soạn nói lại lần nữa, và nó sẽ đồng ý với chính nó · ' +
+    'sổ vẫn đủ sáu dòng nên không ai đọc ra · cùng luật L3 của thang năm cổng');
+
+  /* ── BƯỚC MÁY PHẢI KHAI NHÀ CUNG CẤP ── */
+  const khongNha = await goi({fn:'ghiLuotPrompt', token:tkSA, u:'superadmin@gita365.vn',
+    maBai:'BAI-02', buoc:'V1', vai:'A'});
+  bao(!khongNha.than.ok && khongNha.than.code === 'THIEUNHA',
+    'BƯỚC MÁY KHÔNG KHAI NHÀ CUNG CẤP THÌ KHÔNG GHI ĐƯỢC',
+    'không khai thì không kiểm được luật soạn-khác-duyệt, và luật ấy là cả lý do vòng ' +
+    'chạy này tồn tại');
+
+  /* ── HAI BƯỚC CUỐI LÀ NGƯỜI, VÀ SỔ NÊU RIÊNG ── */
+  await goi({fn:'ghiLuotPrompt', token:tkSA, u:'superadmin@gita365.vn',
+    maBai:'BAI-01', buoc:'V3', vai:'A', nhaCungCap:'gemini'});
+  await goi({fn:'ghiLuotPrompt', token:tkSA, u:'superadmin@gita365.vn',
+    maBai:'BAI-01', buoc:'V4', vai:'D', nhaCungCap:'groq'});
+  const giua = await goi({fn:'docVongChay', token:tkSA, u:'superadmin@gita365.vn',
+    maBai:'BAI-01'});
+  bao(giua.than.thieuMay.length === 0 && giua.than.thieuNguoi.join() === 'V5,V6' &&
+      giua.than.duVong === false && giua.than.soanKhacDuyet === true,
+    'BỐN BƯỚC MÁY XONG KHÔNG PHẢI LÀ GẦN XONG — sổ nêu RIÊNG phần máy và phần người',
+    'còn thiếu ' + giua.than.thieuNguoi.join(' · ') + ' · gộp thành một con số "đã qua ' +
+    'mấy bước" thì một bài mới chạy xong bốn bước máy trông gần xong, trong khi thứ ' +
+    'còn thiếu là cả hai bước của NGƯỜI');
+
+  /* ── MỘT LƯỢT LÀ MỘT DÒNG MỚI, KHÔNG GHI ĐÈ ── */
+  const soDong = db.prepare(
+    "SELECT COUNT(*) c FROM luotPrompt WHERE maBai = 'BAI-01'").get().c;
+  bao(soDong === 4,
+    'MỖI LƯỢT LÀ MỘT DÒNG MỚI KÈM NHÀ CUNG CẤP VÀ GIỜ — không có cột "đã qua vòng"',
+    soDong + ' dòng · ghi đè một ô như thế thì mất hẳn phần lịch sử, mà chính phần ' +
+    'lịch sử chứng minh được rằng bài đã đi ĐỦ vòng chứ không phải có người bấm cho xong');
+
+  /* ── NHIỆT ĐỘ: HAI VAI SOI PHẢI THẤP HƠN HAI VAI SOẠN ── */
+  const ndDat = mBP.soatNhietDo();
+  const ndSai = mBP.soatNhietDo({A:0.4, B:0.4, C:0.9, D:0.2});
+  bao(ndDat.dat === true && ndSai.dat === false && ndSai.sai.join() === 'C' &&
+      /BỊA RA LỖI/.test(ndSai.vi),
+    'HAI VAI SOI CHẠY Ở NHIỆT ĐỘ THẤP HƠN HAI VAI SOẠN — và máy nói VAI NÀO sai, không nói một chữ "đạt"',
+    'một người soi ở nhiệt độ cao là một người soi biết BỊA RA LỖI, và một lỗi bịa ra ' +
+    'làm người viết thôi tin cả bản soi · một chữ "đạt" không nói vai nào đang sai, ' +
+    'và sửa mò thì lần sau sai y hệt');
+
+  /* ── MÁY CHỦ KHÔNG GIỮ MỘT CHỮ NÀO CỦA BỐN PROMPT ── */
+  const nguonBP = fs.readFileSync('may-chu/bo-prompt.js', 'utf8');
+  const camChu = ['SỰ THẬT', 'XƯNG HÔ', 'BÉ TẬP BÒ', 'TRI KỶ', 'vĩ đại nhất',
+    'Không biết thì nói không biết'];
+  const lot = camChu.filter(c => nguonBP.indexOf(c) >= 0);
+  bao(lot.length === 0,
+    'MÁY CHỦ KHÔNG GIỮ MỘT CHỮ NÀO CỦA BỐN PROMPT — nó chỉ ghi VÒNG CHẠY',
+    'soi ' + camChu.length + ' cụm · giữ một bản ở máy chủ là dựng bản thứ hai của ' +
+    'mười ba sự thật cùng một lúc, và bản thứ hai này nguy hơn mọi bản trước vì ' +
+    'prompt CHÍNH LÀ thứ nói chuyện với khách');
+}
+
 /* ══════════════ PHÂN HỆ 5 · TÀI CHÍNH ══════════════
 
    Kho đã có cả một hệ tài chính chạy thật, nên phần này chỉ đo thứ

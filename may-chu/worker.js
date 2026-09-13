@@ -68,6 +68,7 @@ import { docTuanThu, ghiDongY, docDongY, yeuCauXoaDuLieu, danhDauXoa,
   soXoaDuLieu, docVungLuatSu } from './phap-ly-rui-ro.js';
 import { docBangDieuKhien, banTinSang, chonBaNhaNgauNhien, soiQuyetDinh,
   ghiQuyetDinh, chuanBiVang } from './he-dieu-hanh.js';
+import { ghiLuotPrompt, docVongChay } from './bo-prompt.js';
 import { soatNoiDung, mauBaiHoc, napBai, nopBai, kyBai, soKyBai, baiTreo,
   capQuyenNoiDung, thuHoiQuyenNoiDung, dsQuyenNoiDung,
   docBuoi, xuatChuanNghe, soatMienDich,
@@ -216,6 +217,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'soXoaDuLieu', 'docVungLuatSu',
   'docBangDieuKhien', 'banTinSang', 'chonBaNhaNgauNhien', 'soiQuyetDinh', 'ghiQuyetDinh',
   'chuanBiVang',
+  'ghiLuotPrompt', 'docVongChay',
   'soatNoiDung', 'mauBaiHoc', 'napBai', 'nopBai', 'kyBai', 'soKyBai', 'baiTreo',
   'capQuyenNoiDung', 'thuHoiQuyenNoiDung', 'dsQuyenNoiDung', 'docBuoi', 'xuatChuanNghe', 'soatMienDich',
   'chotTrichNghe', 'dsChotTrich',
@@ -392,6 +394,8 @@ async function lam(fn, y, env, db) {
   if (fn === 'soiQuyetDinh')      return await soiQuyetDinh(y, env, db, hoSo);
   if (fn === 'ghiQuyetDinh')      return await ghiQuyetDinh(y, env, db, hoSo);
   if (fn === 'chuanBiVang')       return await chuanBiVang(y, env, db, hoSo);
+  if (fn === 'ghiLuotPrompt')     return await ghiLuotPrompt(y, env, db, hoSo);
+  if (fn === 'docVongChay')       return await docVongChay(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
   if (fn === 'soatNoiDung')       return await soatNoiDung(y, env, db, hoSo);
   if (fn === 'mauBaiHoc')         return await mauBaiHoc(y, env, db, hoSo);

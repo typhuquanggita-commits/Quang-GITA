@@ -1715,3 +1715,39 @@ CREATE TABLE IF NOT EXISTS quyetDinhLon (
 -- Câu hỏi nóng của sổ là "quyết định nào tới hạn xem lại", và đó là
 -- một phép lọc khoảng trên ngày xem lại.
 CREATE INDEX IF NOT EXISTS ix_qd_xemlai ON quyetDinhLon (xemLaiKhi);
+
+-- ═════════════════════════════════════════════════════════════
+--  VÒNG CHẠY CỦA MỘT NỘI DUNG CÔNG KHAI
+--
+--  A soạn → C phản biện → A sửa → D soi luật → người duyệt → đăng.
+--
+--  MỘT LƯỢT LÀ MỘT DÒNG MỚI. Không có cột "đã qua vòng": ghi đè một
+--  ô như thế thì mất hẳn phần lịch sử, mà chính phần lịch sử chứng
+--  minh được rằng bài đã đi ĐỦ vòng chứ không phải có người bấm cho
+--  xong.
+--
+--  Và bảng này KHÔNG giữ một chữ nào của prompt. Prompt dựng lúc
+--  chạy ở trình duyệt, nơi kho đang mở; giữ một bản ở đây là dựng
+--  bản thứ hai của mười ba sự thật cùng một lúc — và bản thứ hai ấy
+--  nguy hơn mọi bản trước, vì prompt CHÍNH LÀ thứ nói chuyện với
+--  khách.
+--
+--  Cột `nhaCungCap` là cột làm cho cả bảng có nghĩa. Bước 2 phải ở
+--  nhà cung cấp KHÁC bước 1 — cùng một mô hình làm cả soạn lẫn duyệt
+--  thì phần duyệt chỉ là phần soạn nói lại lần nữa, và nó sẽ đồng ý
+--  với chính nó. Không giữ cột này thì luật ấy không kiểm được, và
+--  sổ vẫn đủ sáu dòng nên không ai đọc ra.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS luotPrompt (
+  id          TEXT PRIMARY KEY,
+  maBai       TEXT NOT NULL,
+  buoc        TEXT NOT NULL,        -- V1…V6
+  vai         TEXT,                 -- A · B · C · D, rỗng ở hai bước người
+  nhaCungCap  TEXT,                 -- bắt buộc ở bốn bước máy
+  boiAi       TEXT NOT NULL,
+  ghiChu      TEXT,
+  ghiLuc      TEXT NOT NULL
+);
+
+-- Đường tra thật: mỗi lượt ghi hỏi đúng câu "bài này đã qua bước nào".
+CREATE INDEX IF NOT EXISTS ix_luot_bai ON luotPrompt (maBai, ghiLuc);

@@ -1440,6 +1440,95 @@ là mười gia đình**. Cả năm **trỏ** vào một điểm của hàng rà
 đã có, và mục 88 đối chiếu từng mã rào với bảng rào thật.
 
 
+## BỘ PROMPT v3.0 — dựng lúc chạy, không chép (9.99.72)
+
+Phần cuối tệp *Bộ Não Thiên Tài GITA 365*: bốn bản dán thẳng **A**
+Coach · **B** Tham mưu trưởng · **C** Phản biện · **D** Soi luật. Màn
+**Bộ prompt · 4 vai** (`src/bo-prompt.js`, bốn ngăn), máy chủ
+`may-chu/bo-prompt.js`, kho `data.bo-prompt.js` (10 kho), bảng
+`luotPrompt`, bộ kiểm **mục 89**, bảy phép đo ở `thu-worker.js`.
+
+### Chỗ dễ dựng sai nhất của cả kho
+
+Bốn prompt dài mười sáu nghìn ký tự, và **gần như mọi bảng trong
+chúng kho này đã có rồi**: Hiến pháp ở `BN_HIENPHAP`, hàng rào ở
+`BN_RAO10`, mười hai luồng ở `CK_LUONG12`, thang năm mức ở `CK_MUC5`,
+ba vùng ở `BN_VUNG`, bảy ghế ở `BN_GHE`, bảy con số ở `TC_BAY7`, năm
+bước ở `HDH_QUYET5`, hai luật ở `PLR_LUAT`.
+
+Chép chúng vào kho là dựng **bản thứ hai của mười ba sự thật cùng một
+lúc** — và bản thứ hai này **nguy hơn mọi bản thứ hai trước đó trong
+kho**, vì prompt CHÍNH LÀ thứ nói chuyện với khách. Sửa Điều 3 ở màn
+Bộ não rồi quên sửa prompt thì trợ lý vẫn gọi đứa trẻ là *"bé"* suốt
+sáu tháng, trong khi mọi bộ kiểm đều xanh và màn hình vẫn hiện luật
+mới.
+
+Nên kho này **không chứa một chữ nào** của bốn prompt. Nó chỉ chứa
+**dàn bài**: `BP_KHOI` — khối nào lấy từ kho nào. `G.bpDung(vai)` ghép
+prompt **lúc chạy** từ các kho đã mở.
+
+**Kéo theo, và đây là phần dễ quên:** màn ấy **không có nút lưu**. Lưu
+ra một bản là tạo đúng cái bản thứ hai vừa nói. Modelfile chạy tại chỗ
+cũng dựng lúc chạy — *một tệp Modelfile cũ nằm trên máy ai đó là một
+bản Hiến pháp cũ đang chạy mà không ai biết.*
+
+### Mục 89 chạy HAI CHIỀU NGƯỢC NHAU trên cùng một chỗ
+
+- prompt **dựng ra** phải chứa đủ cả 13 điều, cả 10 điểm hàng rào, cả
+  12 luồng — đọc thẳng từ kho để so
+- **mã nguồn** dựng ra nó **không được chứa một chữ nào** của chúng
+
+Chép sẵn thì chiều hai đỏ; dựng hỏng thì chiều một đỏ. **Không có cách
+nào im cả hai.** Phá thử xác nhận: chèn `'1 SỰ THẬT — …'` vào
+`src/bo-prompt.js` thì dòng đỏ gọi đúng tên hai cụm bị chép.
+
+Và ô `layTuKho` được đối chiếu với **kho thật** — đổi `BN_RAO10` thành
+`BN_HANGRAO10` thì khối ấy lúc dựng **lặng lẽ ra rỗng**, và một prompt
+thiếu hàng rào trông y hệt một prompt đủ. Mục 89 bắt cả ba mặt: khối
+trỏ sai, prompt A thiếu rào, prompt C thiếu rào.
+
+### Vòng chạy sáu bước, và cái răng ở bước 2
+
+`A soạn → C phản biện → A sửa → D soi luật → người duyệt → đăng.`
+
+**Vai C phải ở nhà cung cấp KHÁC vai A** (`ghiLuotPrompt` → `TUDUYET`).
+Cùng một mô hình làm cả hai thì phần duyệt chỉ là phần soạn nói lại
+lần nữa, **và nó sẽ đồng ý với chính nó** — mà sổ vẫn đủ sáu dòng nên
+không ai đọc ra. Cùng luật **L3** của thang năm cổng (9.99.42).
+
+Ba cổng còn lại: không nhảy bước (`NHAYBUOC`); bước máy phải khai nhà
+cung cấp (`THIEUNHA` — không khai thì luật soạn-khác-duyệt không kiểm
+được, mà luật ấy là cả lý do vòng chạy tồn tại); bước người phải có
+tên người (`THIEUNGUOI`).
+
+`docVongChay` nêu **riêng** `thieuMay` và `thieuNguoi`: gộp thành một
+con số "đã qua mấy bước" thì một bài mới chạy xong bốn bước máy trông
+gần xong, trong khi thứ còn thiếu là **cả hai bước của người**.
+
+### Nhiệt độ: hai vai soi thấp hơn hai vai soạn
+
+C và D ở 0.2; A và B ở 0.4. **Một người soi ở nhiệt độ cao là một
+người soi biết bịa ra lỗi** — và một lỗi bịa ra làm người viết thôi
+tin cả bản soi. `soatNhietDo` trả về **vai nào** sai, không trả một
+chữ "đạt": một chữ "đạt" không nói vai nào đang sai, và sửa mò thì lần
+sau sai y hệt.
+
+### Bốn vai KHÔNG phải bốn phần mềm mới
+
+`BP_NOI` gắn chúng vào **bảy cửa đã chạy sẵn** (`traLoiCoach` ·
+`banTinSang` · `soatBoNao` · `soatNoiDung` · `docVungLuatSu` ·
+`soatTiepThi`), và mục 89 đối chiếu từng cửa với danh sách cửa thật
+của worker, từng màn với `G.NAV`.
+
+### Hai lỗi ở phép đo của tôi, bắt ngay lượt chạy đầu
+
+1. **Dò chuỗi lỏng bắt oan.** `/INSERT INTO .*prompt.*chu/i` khớp vào
+   cột `ghiChu` của chính bảng `luotPrompt`. Sửa bằng cách đọc **cột
+   thật** của bảng rồi so tên — một phép đo bắt oan thì lần sau người
+   ta tắt nó đi.
+2. **Đọc sai hình `G.NAV`.** NAV là **nhóm → `items`**, không phải
+   danh sách phẳng, nên bảy màn thật đều bị báo là không có trong NAV.
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

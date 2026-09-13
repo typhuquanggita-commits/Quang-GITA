@@ -14370,6 +14370,211 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n89 · BỘ PROMPT — DỰNG LÚC CHẠY, KHÔNG CHÉP MỘT CHỮ NÀO');
+  /* ══════════════════ 89. GITA-PROMPT-PACK v3.0 ══════════════════
+
+     Bốn prompt dài mười sáu nghìn ký tự, và gần như MỌI BẢNG trong
+     chúng kho này đã có rồi. Chép chúng vào kho là dựng bản thứ hai
+     của MƯỜI BA sự thật cùng một lúc — và bản thứ hai này nguy hơn
+     mọi bản trước, vì prompt CHÍNH LÀ thứ nói chuyện với khách. Sửa
+     Điều 3 ở màn Bộ não rồi quên sửa prompt thì trợ lý vẫn gọi đứa
+     trẻ là "bé" suốt sáu tháng, trong khi mọi bộ kiểm đều xanh.
+
+     Nên phép đo ở đây chạy HAI CHIỀU trên cùng một chỗ:
+
+       · prompt DỰNG RA phải chứa đủ cả mười ba điều, cả mười điểm
+         hàng rào, cả mười hai luồng — đọc thẳng từ kho để so
+       · MÃ NGUỒN dựng ra nó KHÔNG được chứa một chữ nào của chúng
+
+     Hai chiều ngược nhau trên một bộ dò: chép sẵn thì chiều hai đỏ,
+     dựng hỏng thì chiều một đỏ. Không có cách nào im cả hai. */
+  {
+    const mBP = await import('../may-chu/bo-prompt.js');
+    const fsBP = await import('fs/promises');
+    const magBP = await fsBP.readFile('src/bo-prompt.js', 'utf8');
+    const magBPS = await fsBP.readFile('may-chu/bo-prompt.js', 'utf8');
+    const sqlBP = await fsBP.readFile('may-chu/csdl.sql', 'utf8');
+    const magWK2 = await fsBP.readFile('may-chu/worker.js', 'utf8');
+
+    const khoBP = await p.evaluate(() => {
+      const G = window.G;
+      const dung = {};
+      ['A', 'B', 'C', 'D'].forEach(v => { dung[v] = G.bpDung(v); });
+      return {
+        vai: (G.BP_VAI4 || []).map(x => x.ma),
+        nhietDo: (G.BP_VAI4 || []).reduce((o, x) => (o[x.ma] = x.nhietDo, o), {}),
+        khacA: (G.BP_VAI4 || []).filter(x => x.nhaCungCapKhacA).map(x => x.ma),
+        /* Mỗi vai phải khai dùng-khi, đặt-ở, nhiệt độ và vì sao. */
+        vaiThieu: (G.BP_VAI4 || []).filter(x =>
+          !x.dungKhi || !x.danODau || !(Number(x.nhietDo) > 0) || !x.y).map(x => x.ma),
+        khoi: (G.BP_KHOI || []).map(x => x.ma),
+        /* Ô layTuKho được đối chiếu với kho THẬT — một khối trỏ vào
+           kho không tồn tại thì lúc dựng nó lặng lẽ ra rỗng. */
+        khoMa: (G.BP_KHOI || []).filter(x => !G[x.layTuKho]).map(x => x.ma + '→' + x.layTuKho),
+        khoiThieuDungCho: (G.BP_KHOI || []).filter(x =>
+          !Array.isArray(x.dungCho) || !x.dungCho.length).map(x => x.ma),
+        vong: (G.BP_VONG || []).map(x => x.ma),
+        vongMay: (G.BP_VONG || []).filter(x => x.may).map(x => x.ma),
+        vongDoiNha: (G.BP_VONG || []).filter(x => x.doiNhaCungCapKhac).map(x => x.ma),
+        noi: (G.BP_NOI || []).length,
+        noiMan: Array.from(new Set((G.BP_NOI || []).map(x => x.man))),
+        /* Bộ dựng chạy THẬT: ba con số của mỗi vai. */
+        dung: ['A', 'B', 'C', 'D'].reduce((o, v) => (o[v] = {
+          soChu: dung[v].soChu, khoi: dung[v].khoi, thieu: dung[v].thieu,
+          chu: dung[v].chu
+        }, o), {}),
+        /* Đọc thẳng từ kho để SO với prompt vừa dựng. */
+        tenDieu: (G.BN_HIENPHAP || []).map(x => x.ten),
+        hoiRao: (G.BN_RAO10 || []).map(x => x.hoi),
+        tenLuong: (G.CK_LUONG12 || []).map(x => x.ten),
+        vaiGhe: (G.BN_GHE || []).map(x => x.vai),
+        soLuat: (G.PLR_LUAT || []).map(x => x.so),
+        modelfile: G.bpModelfile()
+      };
+    });
+
+    const v = {};
+    v.vaiKhop = JSON.stringify(khoBP.vai) === JSON.stringify(mBP.VAI4 || []);
+    v.nhietKhop = JSON.stringify(khoBP.nhietDo) === JSON.stringify(mBP.NHIET_DO || {});
+    v.khacAKhop = JSON.stringify(khoBP.khacA) === JSON.stringify(mBP.VAI_KHAC_A || []);
+    v.khoiKhop = JSON.stringify(khoBP.khoi) === JSON.stringify(mBP.KHOI || []);
+    v.vongKhop = JSON.stringify(khoBP.vong) === JSON.stringify(mBP.VONG || []);
+    v.vongMayKhop = JSON.stringify(khoBP.vongMay) === JSON.stringify(mBP.VONG_MAY || []);
+    v.doiNhaKhop = JSON.stringify(khoBP.vongDoiNha) === JSON.stringify(mBP.VONG_DOI_NHA || []);
+    v.vaiThieu = khoBP.vaiThieu;
+    v.khoMa = khoBP.khoMa;
+    v.khoiThieuDungCho = khoBP.khoiThieuDungCho;
+
+    /* ══ CHIỀU MỘT · PROMPT DỰNG RA PHẢI CHỨA ĐỦ ══ */
+    const A = khoBP.dung.A, B = khoBP.dung.B, C = khoBP.dung.C, D = khoBP.dung.D;
+    v.dieuThieuTrongA = khoBP.tenDieu.filter(t => A.chu.indexOf(t) < 0);
+    v.raoThieuTrongA = khoBP.hoiRao.filter(t => A.chu.indexOf(t) < 0);
+    v.luongThieuTrongA = khoBP.tenLuong.filter(t => A.chu.indexOf(t) < 0);
+    v.gheThieuTrongB = khoBP.vaiGhe.filter(t => B.chu.indexOf(t) < 0);
+    v.raoThieuTrongC = khoBP.hoiRao.filter(t => C.chu.indexOf(t) < 0);
+    v.luatThieuTrongD = khoBP.soLuat.filter(t => D.chu.indexOf(t) < 0);
+    /* Khối thiếu phải được NÊU RA, không bỏ lặng lẽ. */
+    v.khongKhoiThieu = ['A', 'B', 'C', 'D'].every(x => !khoBP.dung[x].thieu);
+
+    /* ══ CHIỀU HAI · MÃ NGUỒN KHÔNG CHỨA MỘT CHỮ NÀO ══
+       Nếu ai đó chép prompt vào tệp thay vì dựng, chiều này đỏ. */
+    const CAM = khoBP.tenDieu.concat(khoBP.hoiRao).concat(khoBP.tenLuong);
+    v.chepVaoSrc = CAM.filter(t => t.length > 6 && magBP.indexOf(t) >= 0);
+    v.chepVaoMayChu = CAM.filter(t => t.length > 6 && magBPS.indexOf(t) >= 0);
+
+    /* ══ KHÔNG CÓ NÚT LƯU ══
+       Lưu ra một bản là tạo đúng cái bản thứ hai vừa nói. */
+    /* Máy chủ không được giữ CHỮ của prompt. Đọc CỘT THẬT của bảng
+       chứ không dò chuỗi: một phép dò lỏng bắt oan ngay cột `ghiChu`,
+       và một phép đo bắt oan thì lần sau người ta tắt nó đi. */
+    const cotLP = (sqlBP.match(
+      /CREATE TABLE IF NOT EXISTS luotPrompt \(([\s\S]*?)\);/) || ['', ''])[1]
+      .split('\n').map(d => (d.trim().split(/\s+/)[0] || '').replace(/[^A-Za-z]/g, ''))
+      .filter(Boolean);
+    const COT_GIU_CHU = ['chu', 'prompt', 'noiDung', 'toanVan', 'banPrompt'];
+    v.cotGiuChu = COT_GIU_CHU.filter(c =>
+      cotLP.some(x => x.toLowerCase() === c.toLowerCase()));
+    v.khongNutLuu = !/luuPrompt|bpLuu|localStorage\.setItem\(['"]bp/.test(magBP) &&
+      v.cotGiuChu.length === 0;
+
+    /* ══ MODELFILE CŨNG DỰNG LÚC CHẠY ══ */
+    v.modelfile = /^FROM /.test(khoBP.modelfile) &&
+      khoBP.modelfile.indexOf('PARAMETER temperature ' + khoBP.nhietDo.A) >= 0 &&
+      khoBP.tenDieu.every(t => khoBP.modelfile.indexOf(t) >= 0);
+
+    /* ══ BẢY CỬA NỐI PHẢI LÀ CỬA THẬT ══ */
+    const dsCua2 = (magWK2.match(/if \(fn === '([A-Za-z0-9_]+)'\)/g) || [])
+      .map(x => x.replace(/if \(fn === '|'\)/g, ''));
+    const noiCua = await p.evaluate(() => (window.G.BP_NOI || [])
+      .map(x => x.cua).filter(c => c !== 'khongCoCuaMayChu'));
+    v.noiMa = noiCua.filter(c => dsCua2.indexOf(c) < 0);
+    /* Và mỗi màn được nối phải có trong G.NAV. */
+    const navCo = await p.evaluate(() => (window.G.NAV || [])
+      .flatMap(n => (n.items || [])).map(m => m.v).filter(Boolean));
+    v.manMa = khoBP.noiMan.filter(m => navCo.indexOf(m) < 0);
+
+    /* ══ BẢNG VÒNG CHẠY GIỮ CỘT NHÀ CUNG CẤP ══ */
+    const bangLP = (sqlBP.match(
+      /CREATE TABLE IF NOT EXISTS luotPrompt \(([\s\S]*?)\);/) || ['', ''])[1];
+    v.bangDu = /nhaCungCap/.test(bangLP) && /buoc/.test(bangLP) &&
+      !/^\s*(daQuaVong|xong)\s/mi.test(bangLP);
+
+    /* ══ HÀNH VI: NHIỆT ĐỘ ══ */
+    const nd = mBP.soatNhietDo();
+    const ndSai = mBP.soatNhietDo({ A: 0.4, B: 0.4, C: 0.9, D: 0.2 });
+    v.nhietChay = nd.dat === true && ndSai.dat === false && ndSai.sai.join() === 'C';
+
+    const bpDat =
+      v.vaiKhop && v.nhietKhop && v.khacAKhop && v.khoiKhop && v.vongKhop &&
+      v.vongMayKhop && v.doiNhaKhop &&
+      !v.vaiThieu.length && !v.khoMa.length && !v.khoiThieuDungCho.length &&
+      !v.dieuThieuTrongA.length && !v.raoThieuTrongA.length &&
+      !v.luongThieuTrongA.length && !v.gheThieuTrongB.length &&
+      !v.raoThieuTrongC.length && !v.luatThieuTrongD.length && v.khongKhoiThieu &&
+      !v.chepVaoSrc.length && !v.chepVaoMayChu.length &&
+      v.khongNutLuu && v.modelfile && !v.noiMa.length && !v.manMa.length &&
+      v.bangDu && v.nhietChay;
+
+    bao(bpDat,
+      'BỘ PROMPT v3.0 · DỰNG LÚC CHẠY TỪ KHO, KHÔNG CHÉP MỘT CHỮ NÀO. Bốn prompt dài mười sáu nghìn ký tự, và gần như MỌI BẢNG trong chúng kho này đã có rồi: Hiến pháp ở BN_HIENPHAP, hàng rào ở BN_RAO10, mười hai luồng ở CK_LUONG12, thang năm mức ở CK_MUC5, ba vùng ở BN_VUNG, bảy ghế ở BN_GHE, bảy con số ở TC_BAY7, năm bước ở HDH_QUYET5, hai luật ở PLR_LUAT. Chép chúng vào kho là dựng bản thứ hai của MƯỜI BA sự thật cùng một lúc — và bản thứ hai này nguy hơn mọi bản trước trong kho, vì prompt CHÍNH LÀ thứ nói chuyện với khách: sửa Điều 3 ở màn Bộ não rồi quên sửa prompt thì trợ lý vẫn gọi đứa trẻ là "bé" suốt sáu tháng, trong khi mọi bộ kiểm đều xanh và màn hình vẫn hiện luật mới. Nên phép đo chạy HAI CHIỀU NGƯỢC NHAU trên cùng một chỗ: prompt DỰNG RA phải chứa đủ cả mười ba điều, cả mười điểm hàng rào và cả mười hai luồng — đọc thẳng từ kho để so; còn MÃ NGUỒN dựng ra nó KHÔNG được chứa một chữ nào của chúng. Chép sẵn thì chiều hai đỏ, dựng hỏng thì chiều một đỏ, và không có cách nào im cả hai. Màn ấy cũng KHÔNG có nút lưu: lưu ra một bản là tạo đúng cái bản thứ hai vừa nói, và dựng lại chỉ mất hai giây. Modelfile chạy tại chỗ cũng dựng lúc chạy — một tệp Modelfile cũ nằm trên máy ai đó là một bản Hiến pháp cũ đang chạy mà không ai biết. Vòng chạy sáu bước có cái răng ở bước 2: vai C phải ở nhà cung cấp KHÁC vai A, vì một mô hình không tự phản biện chính nó được và phần duyệt sẽ chỉ là phần soạn nói lại lần nữa — cùng luật L3 của thang năm cổng. Hai vai soi chạy ở nhiệt độ THẤP hơn hai vai soạn: một người soi ở nhiệt độ cao là một người soi biết bịa ra lỗi, và một lỗi bịa ra làm người viết thôi tin cả bản soi. Và bốn vai KHÔNG phải bốn phần mềm mới — chúng nối vào bảy cửa đã chạy sẵn, mỗi cửa được đối chiếu với danh sách cửa thật của worker',
+      bpDat
+        ? khoBP.vai.length + ' vai (C · D ở nhà cung cấp khác A, nhiệt độ ' +
+          khoBP.nhietDo.C + ' so với ' + khoBP.nhietDo.A + ') · ' +
+          khoBP.khoi.length + ' khối, mỗi khối trỏ vào một kho THẬT · prompt A dựng ra ' +
+          A.soChu + ' ký tự từ ' + A.khoi.length + ' khối, chứa đủ ' +
+          khoBP.tenDieu.length + ' điều và ' + khoBP.hoiRao.length + ' điểm hàng rào · ' +
+          'mã nguồn KHÔNG chứa một chữ nào của chúng · ' + khoBP.vong.length +
+          ' bước vòng chạy · ' + khoBP.noi.length + ' đường nối, mọi cửa đều thật'
+        : [!v.vaiKhop ? 'BẢN CHÉP BỐN VAI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nhietKhop ? 'BẢNG NHIỆT ĐỘ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.khacAKhop ? 'DANH SÁCH VAI PHẢI KHÁC NHÀ CUNG CẤP LỆCH VỚI KHO' : '',
+           !v.khoiKhop ? 'BẢN CHÉP DANH SÁCH KHỐI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.vongKhop || !v.vongMayKhop || !v.doiNhaKhop ?
+             'BẢN CHÉP VÒNG CHẠY Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.vaiThieu.length ? 'VAI THIẾU Ô dùng-khi, đặt-ở, nhiệt độ hoặc vì sao: ' +
+             v.vaiThieu.join(' · ') : '',
+           v.khoMa.length ? 'KHỐI TRỎ VÀO KHO KHÔNG TỒN TẠI: ' + v.khoMa.join(' · ') +
+             ' — lúc dựng nó lặng lẽ ra RỖNG, và một prompt thiếu Điều 13 trông y hệt ' +
+             'một prompt đủ' : '',
+           v.khoiThieuDungCho.length ? 'KHỐI KHÔNG KHAI DÙNG CHO VAI NÀO: ' +
+             v.khoiThieuDungCho.join(' · ') : '',
+           v.dieuThieuTrongA.length ? 'PROMPT A THIẾU ĐIỀU: ' +
+             v.dieuThieuTrongA.join(' · ') + ' — bộ dựng đang hỏng, và một prompt ' +
+             'thiếu Hiến pháp trông y hệt một prompt đủ' : '',
+           v.raoThieuTrongA.length ? 'PROMPT A THIẾU ĐIỂM HÀNG RÀO: ' +
+             v.raoThieuTrongA.length + ' điểm' : '',
+           v.luongThieuTrongA.length ? 'PROMPT A THIẾU LUỒNG: ' +
+             v.luongThieuTrongA.length + ' luồng' : '',
+           v.gheThieuTrongB.length ? 'PROMPT B THIẾU GHẾ: ' +
+             v.gheThieuTrongB.join(' · ') : '',
+           v.raoThieuTrongC.length ? 'PROMPT C THIẾU ĐIỂM HÀNG RÀO — vai phản biện ' +
+             'soi bằng một bảng KHÁC bảng vai A tự soi, nên A sạch mà C vẫn đỏ' : '',
+           v.luatThieuTrongD.length ? 'PROMPT D THIẾU LUẬT: ' +
+             v.luatThieuTrongD.join(' · ') : '',
+           !v.khongKhoiThieu ? 'CÓ VAI DỰNG RA THIẾU KHỐI mà vẫn dựng — khối thiếu ' +
+             'phải được NÊU RA, không bỏ lặng lẽ' : '',
+           v.chepVaoSrc.length ? 'ĐÃ CHÉP PROMPT VÀO src/bo-prompt.js: ' +
+             v.chepVaoSrc.slice(0, 3).join(' · ') + ' — bản thứ hai của Hiến pháp, và ' +
+             'nó sẽ cũ đi trong im lặng' : '',
+           v.chepVaoMayChu.length ? 'ĐÃ CHÉP PROMPT VÀO may-chu/bo-prompt.js: ' +
+             v.chepVaoMayChu.slice(0, 3).join(' · ') : '',
+           !v.khongNutLuu ? 'ĐÃ MỌC CHỖ LƯU PROMPT' +
+             (v.cotGiuChu.length ? ' — bảng vòng chạy có cột giữ chữ: ' +
+               v.cotGiuChu.join(' · ') : ' — màn có nút lưu') +
+             '. Lưu ra một bản là tạo đúng cái bản thứ hai vừa nói' : '',
+           !v.modelfile ? 'MODELFILE KHÔNG DỰNG LÚC CHẠY hoặc thiếu Hiến pháp — một ' +
+             'tệp Modelfile cũ trên máy ai đó là một bản Hiến pháp cũ đang chạy' : '',
+           v.noiMa.length ? 'ĐƯỜNG NỐI TRỎ VÀO CỬA KHÔNG TỒN TẠI: ' +
+             v.noiMa.join(' · ') : '',
+           v.manMa.length ? 'ĐƯỜNG NỐI TRỎ VÀO MÀN KHÔNG CÓ TRONG NAV: ' +
+             v.manMa.join(' · ') : '',
+           !v.bangDu ? 'BẢNG VÒNG CHẠY THIẾU CỘT nhaCungCap, hoặc đã mọc một ô tóm ' +
+             'tắt "đã qua vòng"' : '',
+           !v.nhietChay ? 'PHÉP SOI NHIỆT ĐỘ KHÔNG CHẠY THẬT' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();
