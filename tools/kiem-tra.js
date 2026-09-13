@@ -13405,6 +13405,148 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n84 · TÀI CHÍNH — BẢY CON SỐ KHÔNG CÙNG MỘT LOẠI');
+  /* ══════════════════ 84. TÀI CHÍNH ══════════════════
+
+     Phần VII. Kho đã có cả một hệ tài chính chạy thật, nên chỗ đáng
+     đo nhất là chỗ KHÔNG dựng lại: mô-đun này không được khai một
+     ngưỡng tiền nào của riêng nó. Chép con số ngưỡng sang đây thì hai
+     bản lệch nhau, và một khoản chi lọt qua mà không ai biết.
+
+     Và một chỗ nữa: số tháng sống được phải tính trên TIỀN CỦA HỌC
+     VIỆN, không trên tổng tiền mặt. Tính trên tổng thì nó nói dối
+     theo đúng hướng nguy hiểm nhất — dài ra đúng lúc thu được nhiều
+     tiền trả trước, tức là đúng lúc nghĩa vụ giao dịch vụ nặng nhất. */
+  {
+    const mTC = await import('../may-chu/tai-chinh-ceo.js');
+    const maTC = await (await import('fs/promises'))
+      .readFile('may-chu/tai-chinh-ceo.js', 'utf8');
+
+    const khoTC = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        bay: (G.TC_BAY7 || []).map(x => x.ma),
+        doDuoc: (G.TC_BAY7 || []).filter(x => x.nguon === 'doDuoc').map(x => x.ma),
+        duTuoi: (G.TC_BAY7 || []).filter(x => x.nguon === 'duTuoi').map(x => x.ma),
+        ucTinh: (G.TC_BAY7 || []).filter(x => x.nguon === 'ucTinh').map(x => x.ma),
+        thieuNguon: (G.TC_BAY7 || []).filter(x =>
+          ['doDuoc', 'duTuoi', 'ucTinh'].indexOf(x.nguon) < 0).map(x => x.ma),
+        /* Đúng MỘT con số mang dấu quan trọng nhất. Hai cái thì cái
+           nhấn mất nghĩa — cùng luật với T7 của Thẻ Vùng Mạnh. */
+        soQTN: (G.TC_BAY7 || []).filter(x => x.quanTrongNhat).length,
+        maQTN: (G.TC_BAY7 || []).filter(x => x.quanTrongNhat).map(x => x.ma).join(''),
+        nguongDo: ((G.TC_BAY7 || []).find(x => x.ma === 'S2') || {}).nguongDo,
+        nguongOLai: ((G.TC_BAY7 || []).find(x => x.ma === 'S6') || {}).nguongPhanTram,
+        luat: (G.TC_LUAT4 || []).map(x => x.ma),
+        /* Mỗi luật khai ĐÚNG MỘT đường: máy canh ở đây, HOẶC trỏ sang
+           chỗ đã chạy. Cả hai hoặc không cái nào đều là đỏ. */
+        luatCaHai: (G.TC_LUAT4 || []).filter(x => x.may && x.troSang).map(x => x.ma),
+        luatKhongCo: (G.TC_LUAT4 || []).filter(x => !x.may && !x.troSang).map(x => x.ma),
+        luatTro: (G.TC_LUAT4 || []).filter(x => x.troSang).map(x => x.ma),
+        kb: (G.TC_KICHBAN || []).map(x => x.ma),
+        /* Mỗi kịch bản phải đủ BA ô. Một danh sách cắt không có danh
+           sách giữ thì nó được áp lên mọi thứ. */
+        kbThieu: (G.TC_KICHBAN || []).filter(x =>
+          !x.nguong || !(x.cat || []).length || !(x.giu || []).length).map(x => x.ma)
+      };
+    });
+
+    const v = {};
+    v.bayKhop = JSON.stringify(khoTC.bay) === JSON.stringify(mTC.BAY7 || []);
+    v.doDuocKhop = JSON.stringify(khoTC.doDuoc) === JSON.stringify(mTC.DO_DUOC || []);
+    v.duTuoiKhop = JSON.stringify(khoTC.duTuoi) === JSON.stringify(mTC.DU_TUOI || []);
+    v.ucTinhKhop = JSON.stringify(khoTC.ucTinh) === JSON.stringify(mTC.UC_TINH || []);
+    v.luatKhop = JSON.stringify(khoTC.luat) === JSON.stringify(mTC.LUAT4 || []);
+    v.kbKhop = JSON.stringify(khoTC.kb) === JSON.stringify(mTC.KICH_BAN || []);
+    v.nguongDoKhop = khoTC.nguongDo === mTC.NGUONG_THANG_SONG;
+    v.nguongOLaiKhop = khoTC.nguongOLai === mTC.NGUONG_O_LAI;
+    v.soQTN = khoTC.soQTN;
+    v.maQTN = khoTC.maQTN;
+    v.thieuNguon = khoTC.thieuNguon;
+    v.luatCaHai = khoTC.luatCaHai;
+    v.luatKhongCo = khoTC.luatKhongCo;
+    v.luatTro = khoTC.luatTro;
+    v.kbThieu = khoTC.kbThieu;
+
+    /* ── PHÉP ĐO VỀ THỨ KHÔNG ĐƯỢC TỒN TẠI ──
+       Mô-đun KHÔNG khai một ngưỡng tiền nào của riêng nó, và có gọi
+       thật sang thang duyệt chi. Đo bằng cách đọc chính mã nguồn. */
+    v.coNguongTien = /(TRAN|NGUONG)_?(PHAI_DUYET|CHI|TIEN)\s*=|=\s*\d{7,}/.test(maTC);
+    v.goiThangChi = /import \{ thangDuyetChi \} from '\.\/chi-tieu\.js'/.test(maTC) &&
+      /thangDuyetChi\(\)/.test(maTC);
+    /* Và khoản mục quảng cáo phải lấy ĐÚNG tên đã có ở danh sách trắng
+       của chi-tieu.js — không dựng một tên mới. */
+    const maChi = await (await import('fs/promises'))
+      .readFile('may-chu/chi-tieu.js', 'utf8');
+    v.mucQCThat = new RegExp('\\b' + mTC.MUC_QUANG_CAO + ':').test(maChi);
+
+    /* ══ GỌI THẲNG ══ */
+    const tlCo = mTC.tyLe(7, 10, 4);
+    const tlRong = mTC.tyLe(0, 0, 12);
+    const tlKhong = mTC.tyLe(0, 5, 0);
+    v.tyLeChayThat = tlCo.pt === 70 && tlCo.mau === 10 && tlCo.chuaDuTuoi === 4 &&
+      tlRong.pt === undefined && tlRong.mau === 0 &&
+      /* Mẫu CÓ mà không ai ở lại thì trả về 0 THẬT — khác hẳn mẫu rỗng.
+         Gộp hai trường hợp ấy là mất đúng chỗ có nghĩa. */
+      tlKhong.pt === 0 && tlKhong.mau === 5 &&
+      /máy chưa biết/.test(tlRong.vi);
+
+    const tcDat =
+      v.bayKhop && v.doDuocKhop && v.duTuoiKhop && v.ucTinhKhop && v.luatKhop &&
+      v.kbKhop && v.nguongDoKhop && v.nguongOLaiKhop &&
+      v.soQTN === 1 && v.maQTN === 'S2' &&
+      !v.thieuNguon.length && !v.luatCaHai.length && !v.luatKhongCo.length &&
+      v.luatTro.join() === 'L4' && !v.kbThieu.length &&
+      !v.coNguongTien && v.goiThangChi && v.mucQCThat && v.tyLeChayThat;
+
+    bao(tcDat,
+      'PHÂN HỆ 5 · TÀI CHÍNH: BẢY CON SỐ KHÔNG CÙNG MỘT LOẠI, VÀ MÔ-ĐUN KHÔNG KHAI MỘT NGƯỠNG TIỀN NÀO CỦA RIÊNG NÓ. Ba con số đo thẳng trong sổ, hai con số chỉ tính được trên phần mẫu ĐÃ ĐỦ TUỔI, hai con số là ước tính. Xếp cả bảy cùng một bảng, cùng kiểu chữ, thì người đọc tin cả bảy như nhau — mà hai con số bị tin nhầm nhiều nhất lại đúng là hai con số dùng để quyết định tiêu tiền: chi phí có một khách mới, và giá trị một khách trong 365 ngày. Con số thứ hai là một PHÉP CHIẾU cho tới khi có một lớp nhà đã đủ 365 ngày, và phép chiếu luôn đẹp hơn sự thật vì nhà rời đi sớm chưa kịp rời đi. Cái răng thứ hai là chỗ KHÔNG dựng lại: luật 4 — mọi khoản chi trên một mức đều cần chủ hệ duyệt — đã chạy từ 9.92 ở chi-tieu.js với thang sáu mốc chốt ở 9.97, nên mô-đun này gọi THẲNG thangDuyetChi() và phép đo đọc mã nguồn để canh rằng nó không khai một con số ngưỡng nào; chép con số sang đây thì hai bản lệch nhau, và một khoản chi lọt qua mà không ai biết. Và một tỷ lệ mẫu RỖNG thì không trả về 0%, trong khi một tỷ lệ mẫu CÓ mà không ai ở lại thì trả về 0 thật — gộp hai trường hợp ấy là mất đúng chỗ có nghĩa',
+      tcDat
+        ? khoTC.bay.length + ' con số = ' + khoTC.doDuoc.length + ' đo thẳng + ' +
+          khoTC.duTuoi.length + ' trên mẫu đủ tuổi + ' + khoTC.ucTinh.length +
+          ' ước tính · đúng một con số quan trọng nhất (' + v.maQTN + ', ngưỡng ' +
+          khoTC.nguongDo + ' tháng) · ' + khoTC.luat.length + ' luật, ' +
+          v.luatTro.length + ' luật TRỎ sang chỗ đã chạy (' + v.luatTro.join(' · ') +
+          ') · ' + khoTC.kb.length + ' kịch bản đều đủ ba ô cắt·giữ·ngưỡng · mô-đun ' +
+          'KHÔNG khai ngưỡng tiền nào và gọi thẳng thangDuyetChi()'
+        : [!v.bayKhop ? 'BẢN CHÉP BẢY CON SỐ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.doDuocKhop || !v.duTuoiKhop || !v.ucTinhKhop
+             ? 'CÁCH CHIA BA NGĂN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.luatKhop ? 'BẢN CHÉP BỐN LUẬT Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.kbKhop ? 'BẢN CHÉP BA KỊCH BẢN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nguongDoKhop ? 'NGƯỠNG SỐ THÁNG SỐNG ĐƯỢC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nguongOLaiKhop ? 'NGƯỠNG TỶ LỆ Ở LẠI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.soQTN !== 1 ? 'CÓ ' + v.soQTN + ' CON SỐ MANG DẤU QUAN TRỌNG NHẤT, ' +
+             'phải đúng một' : '',
+           v.maQTN !== 'S2' ? 'CON SỐ QUAN TRỌNG NHẤT LÀ ' + v.maQTN +
+             ', phải là S2 (số tháng sống được)' : '',
+           v.thieuNguon.length ? 'CON SỐ KHÔNG KHAI NGUỒN: ' +
+             v.thieuNguon.join(' · ') + ' — không khai thì người đọc tin nó như một ' +
+             'phép đo, và hai con số bị tin nhầm nhiều nhất là hai con số dùng để ' +
+             'quyết định tiêu tiền' : '',
+           v.luatCaHai.length ? 'LUẬT KHAI CẢ máy-canh LẪN trỏ-sang: ' +
+             v.luatCaHai.join(' · ') + ' — mỗi luật đúng MỘT đường' : '',
+           v.luatKhongCo.length ? 'LUẬT KHÔNG KHAI ĐƯỜNG NÀO: ' +
+             v.luatKhongCo.join(' · ') + ' — một luật không nói ai canh nó thì ' +
+             'không ai canh nó' : '',
+           v.luatTro.join() !== 'L4' ? 'LUẬT TRỎ SANG PHẢI ĐÚNG L4, đang là ' +
+             (v.luatTro.join(' · ') || 'không có') : '',
+           v.kbThieu.length ? 'KỊCH BẢN THIẾU MỘT TRONG BA Ô cắt·giữ·ngưỡng: ' +
+             v.kbThieu.join(' · ') + ' — một danh sách cắt không có danh sách giữ ' +
+             'thì nó được áp lên mọi thứ' : '',
+           v.coNguongTien ? 'MÔ-ĐUN TỰ KHAI MỘT NGƯỠNG TIỀN — chép con số sang đây ' +
+             'là dựng bản thứ hai của một ngưỡng tiền, và hai bản lệch nhau thì một ' +
+             'khoản chi lọt qua mà không ai biết' : '',
+           !v.goiThangChi ? 'MÔ-ĐUN KHÔNG GỌI THẲNG thangDuyetChi() CỦA chi-tieu.js' : '',
+           !v.mucQCThat ? 'KHOẢN MỤC QUẢNG CÁO KHÔNG CÓ TRONG DANH SÁCH TRẮNG CỦA ' +
+             'chi-tieu.js — cổng chặn đang trỏ vào một tên không tồn tại, nên nó ' +
+             'không chặn gì cả' : '',
+           !v.tyLeChayThat ? 'PHÉP TÍNH TỶ LỆ KHÔNG CHẠY THẬT (hoặc mẫu rỗng bị trả ' +
+             'về 0%, hoặc mẫu có mà không ai ở lại lại không trả về 0)' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

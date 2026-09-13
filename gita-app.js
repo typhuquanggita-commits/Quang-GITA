@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 105 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 106 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 136 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 137 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.66',
+  version: '9.99.67',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -947,6 +947,7 @@ G.NAV = [
     {v:'coach-kh', t:'Coach khách hàng', h:'Vòng chín bước · mười hai luồng, bốn luồng nặng ba lượt hội đồng · năm ghế, ghế giữ hồn phải là người · Bé tập bò ba trần', ic:'quote', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'noi-dung-tiep-thi', t:'Nội dung & tiếp thị', h:'Bảy tầng nhận thức — không khai tầng thì không xuất bản · một gốc ra bảy nhánh · bộ lọc quảng cáo bảy mục, bốn mục máy đo ba mục người khai', ic:'search', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'van-hanh-cham-soc', t:'Vận hành & chăm sóc', h:'Hồ sơ song sinh 23 trường · đèn ba màu tính lúc đọc · nhịp chạm 365 ngày, vùng tử thần ngày 8–12 · sổ dấu vết năm cột, đèn Đỏ phải GỌI', ic:'clock', star:1, perm:'nghe_chung', capMo:'chung'},
+    {v:'tai-chinh-ceo', t:'Bảy con số CEO', h:'Bảy con số phải thấy mỗi tuần, chia BA ngăn theo nguồn · số tháng sống được tính trên tiền CỦA HỌC VIỆN · bốn luật tài chính · ba kịch bản viết trước', ic:'star', star:1, perm:'fin_view', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
@@ -1403,6 +1404,7 @@ G.ITEM_EN = {
   'coach-kh':['Customer Coaching','nine-step loop · twelve question streams, four require three council rounds · five seats, the soul-keeper must be a real person · Crawling-Baby ceilings'],
   'noi-dung-tiep-thi':['Content & Marketing','seven awareness tiers — content without a declared tier cannot be published · one source, seven branches · seven-item ad filter, four machine-checked and three human-attested'],
   'van-hanh-cham-soc':['Operations & Care','23-field family twin profile · three-colour signal computed at read · 365-day care rhythm with the day 8-12 death zone · five-column trace log; a red light must be a phone call'],
+  'tai-chinh-ceo':['Seven CEO Numbers','the seven weekly numbers split into THREE panes by source · runway computed on the Academy own funds, not gross cash · four finance laws · three scenarios written in advance'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
@@ -3693,6 +3695,7 @@ G.THUOC_CAP_PHEP = [
   'CK_BTB','CK_BTB_TRAN','CK_MUC5','CK_TRU4','CK_CUA3','CK_SO3','CK_NOI_LUAT','CK_CHOCHU',
   'NT_TANG7','NT_NHOM4','NT_TANG_LUAT','NT_NHANH7','NT_NHANH_LUAT','NT_LOC7','NT_LOC_LUAT','NT_CHOCHU',
   'VH_TRUONG23','VH_TRUONG_LUAT','VH_DEN3','VH_DEN_LUAT','VH_NHIP','VH_NHIP_LUAT','VH_SO5','VH_SO_LUAT','VH_CHOCHU',
+  'TC_BAY7','TC_BAY_LUAT','TC_LUAT4','TC_KICHBAN','TC_KICHBAN_LUAT','TC_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -40548,6 +40551,225 @@ G.VIEWS = G.VIEWS || {};
     if (G.vhNgan === 'hoso') return o + nganHoSo();
     if (G.vhNgan === 'nhip') return o + nganNhip();
     return o + nganSo();
+  };
+
+})();
+
+})();
+
+/* ═════════ src/tai-chinh-ceo.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÀN BẢY CON SỐ CEO (Phân hệ 5 của Bộ não)
+
+   ══ MÀN NÀY KHÔNG XẾP BẢY CON SỐ THÀNH MỘT BẢNG BẢY DÒNG ══
+
+   Đó là chủ ý, và là cả lý do màn tồn tại. Bảy con số không cùng một
+   loại: ba cái đo thẳng trong sổ, hai cái chỉ tính được trên phần mẫu
+   đã đủ tuổi, hai cái là ước tính. Xếp chúng cùng một bảng, cùng kiểu
+   chữ, thì người đọc tin cả bảy như nhau — mà hai con số bị tin nhầm
+   nhiều nhất lại đúng là hai con số dùng để quyết định tiêu tiền.
+
+   ══ BA NGĂN ══
+
+     bảy số  — ba ngăn riêng, và giả định nói ra
+     luật    — bốn luật, ba cổng ở đây và một cái TRỎ sang chi-tieu
+     kịch bản— ba bản, mỗi bản đủ ba ô: cắt · giữ · ngưỡng
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  var NGAN = [
+    {ma: 'so',   ten: 'Bảy con số', ic: 'star'},
+    {ma: 'luat', ten: 'Bốn luật',   ic: 'search'},
+    {ma: 'kb',   ten: 'Ba kịch bản', ic: 'arrow'}
+  ];
+
+  var TEN_NGUON = {
+    doDuoc: 'Đo thẳng trong sổ',
+    duTuoi: 'Chỉ tính trên mẫu ĐÃ ĐỦ TUỔI',
+    ucTinh: 'ƯỚC TÍNH — chưa có đủ tuổi mẫu'
+  };
+  var MAU_NGUON = {doDuoc: 'ok', duTuoi: 'warn', ucTinh: 'bad'};
+
+  G.ceoNgan = G.ceoNgan || 'so';
+
+  function veLai() {
+    if (!G.S || G.S.view !== 'tai-chinh-ceo') return;
+    if (typeof document === 'undefined' || !document.getElementById('main')) return;
+    G.render && G.render();
+  }
+  G.ceoMoNgan = function (ma) { G.ceoNgan = ma; veLai(); };
+
+  function thanhNgan() {
+    return '<div class="row" style="gap:8px;flex-wrap:wrap;margin-bottom:18px">' +
+      NGAN.map(function (n) {
+        var on = G.ceoNgan === n.ma;
+        return '<button class="btn' + (on ? ' primary' : '') + '" ' +
+          'onclick="G.ceoMoNgan(\'' + n.ma + '\')" style="gap:7px">' +
+          ic(n.ic) + h(n.ten) + '</button>';
+      }).join('') + '</div>';
+  }
+
+  /* ═══════════ NGĂN 1 · BẢY CON SỐ ═══════════ */
+  function nganSo() {
+    var l = G.TC_BAY_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--warn)">' +
+      '<b>' + h(l.cot || '') + '</b>' +
+      '<p class="sm mt">' + h(l.viTachNgan || '') + '</p>' +
+      '<p class="sm mt">' + h(l.coMauPhaiNoiRa || '') + '</p>' +
+      '<p class="sm muted mt">' + h(l.khongChiaChoKhong || '') + '</p></div>';
+
+    /* Xếp theo NGUỒN, không theo số thứ tự. Xếp theo số thứ tự thì một
+       ước tính nằm cạnh một phép đo, cùng kiểu chữ — và đó đúng là chỗ
+       người đọc tin nhầm. */
+    ['doDuoc', 'duTuoi', 'ucTinh'].forEach(function (ng) {
+      var ds = (G.TC_BAY7 || []).filter(function (x) { return x.nguon === ng; });
+      if (!ds.length) return;
+      o += U.sec(TEN_NGUON[ng] + ' — ' + ds.length + ' con số', '');
+      o += ds.map(function (x) {
+        return '<div class="card mt" style="border-left:3px solid var(--' +
+          (MAU_NGUON[ng] || 'line') + ')">' +
+          '<b>' + h(String(x.so) + '. ' + x.ten) +
+          (x.quanTrongNhat ? ' — QUAN TRỌNG NHẤT' : '') + '</b>' +
+          (x.congThuc ? '<p class="sm mt"><b>Tính:</b> ' + h(x.congThuc) + '</p>' : '') +
+          (x.nguongDo !== undefined
+            ? '<p class="sm mt" style="color:var(--bad)"><b>Dưới ' +
+              h(String(x.nguongDo)) + ' là báo động đỏ.</b></p>' : '') +
+          (x.nguongPhanTram !== undefined
+            ? '<p class="sm mt" style="color:var(--bad)"><b>Ngưỡng ' +
+              h(String(x.nguongPhanTram)) + '%.</b></p>' : '') +
+          (x.nguongLan !== undefined
+            ? '<p class="sm mt"><b>Phải lớn hơn chi phí có một khách ít nhất ' +
+              h(String(x.nguongLan)) + ' lần.</b></p>' : '') +
+          '<p class="sm muted mt">' + h(x.vi) + '</p>' +
+          (x.tachRa ? '<p class="sm mt" style="color:var(--bad)"><b>Chỗ dễ sai:</b> ' +
+            h(x.tachRa) + '</p>' : '') + '</div>';
+      }).join('');
+    });
+
+    o += '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn primary" onclick="G.ceoDoc()">Đo bảy con số bây giờ</button>' +
+      '</div>';
+
+    var r = G.ceoSoRa;
+    if (r) o += !r.ok
+      ? '<div class="card" style="border-left:3px solid var(--bad);margin-top:14px">' +
+        '<p class="sm">' + h(r.error || '') + '</p></div>'
+      : '<div class="card" style="border-left:3px solid var(--gita);margin-top:14px">' +
+        '<b>Tháng ' + h(r.thang) + '</b>' +
+        '<p class="sm mt"><b>Tiền mặt:</b> ' + h(String(r.doDuoc.S1_tienMat)) +
+        ' · <b>chưa giao:</b> ' + h(String(r.doDuoc.S1_chuaGiao)) +
+        ' · <b>của Học viện:</b> ' + h(String(r.doDuoc.S1_tienHocVien)) + '</p>' +
+        '<p class="sm mt"><b>Số tháng sống được:</b> ' +
+        h(r.doDuoc.S2_thangSong === undefined ? 'chưa đo được'
+          : String(r.doDuoc.S2_thangSong)) + '</p>' +
+        '<p class="sm mt"><b>Ở lại 90 ngày:</b> ' +
+        h(r.duTuoi.S6_oLai90.pt === undefined ? 'chưa đo được'
+          : r.duTuoi.S6_oLai90.pt + '% trên ' + r.duTuoi.S6_oLai90.mau + ' nhà') +
+        ' · ' + h(String(r.duTuoi.S6_oLai90.chuaDuTuoi)) + ' nhà chưa đủ tuổi</p>' +
+        '<p class="sm mt" style="color:var(--bad)"><b>Giá trị 365 ngày:</b> ' +
+        h(r.ucTinh.S5_giaTri365.vi) + '</p>' +
+        '<p class="tiny muted mt"><b>Giả định:</b> ' + h(r.giaDinh || '') + '</p>' +
+        '<p class="sm muted mt">' + h(r.vi || '') + '</p></div>';
+    return o;
+  }
+
+  /* ═══════════ NGĂN 2 · BỐN LUẬT ═══════════ */
+  function nganLuat() {
+    var o = (G.TC_LUAT4 || []).map(function (x) {
+      return '<div class="card mt" style="border-left:3px solid var(--' +
+        (x.troSang ? 'teal' : 'bad') + ')">' +
+        '<b>' + h(x.ma + ' · ' + x.luat) + '</b>' +
+        (x.may ? '<p class="sm mt"><b>Máy canh thế nào:</b> ' + h(x.may) + '</p>' : '') +
+        (x.troSang ? '<p class="sm mt"><b>Đã chạy ở:</b> <code>' + h(x.troSang) +
+          '</code> — chỗ này chỉ TRỎ</p>' : '') +
+        (x.mayKhongLam ? '<p class="sm mt" style="color:var(--warn)">' +
+          '<b>Máy KHÔNG làm:</b> ' + h(x.mayKhongLam) + '</p>' : '') +
+        '<p class="sm muted mt">' + h(x.vi) + '</p></div>';
+    }).join('');
+
+    o += '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn primary" onclick="G.ceoSoatLuat()">Soi bốn luật bây giờ</button>' +
+      '</div>';
+
+    var r = G.ceoLuatRa;
+    if (r && r.ok) o += '<div class="card" style="border-left:3px solid var(--' +
+      (r.dat ? 'ok' : 'bad') + ');margin-top:14px">' +
+      '<b>' + h(r.dat ? 'Không phạm luật nào' : 'Chặn ' + r.pham.length + ' chỗ') +
+      '</b>' +
+      (r.pham || []).map(function (x) {
+        return '<p class="sm mt" style="color:var(--bad)"><b>' + h(x.ma) + ':</b> ' +
+          h(x.vi) + '</p>' +
+          (x.mayKhongLam ? '<p class="sm muted mt">' + h(x.mayKhongLam) + '</p>' : '');
+      }).join('') +
+      '<p class="sm muted mt">' + h(r.vi || '') + '</p></div>';
+    return o;
+  }
+
+  /* ═══════════ NGĂN 3 · BA KỊCH BẢN ═══════════ */
+  function nganKb() {
+    var l = G.TC_KICHBAN_LUAT || {};
+    var o = '<div class="card"><b>' + h(l.cot || '') + '</b>' +
+      '<p class="sm mt">' + h(l.duBaO || '') + '</p>' +
+      '<p class="sm mt">' + h(l.viPhaiCoGiu || '') + '</p>' +
+      '<p class="sm mt">' + h(l.viPhaiCoNguong || '') + '</p>' +
+      '<p class="sm muted mt">' + h(l.mayKhongChuyen || '') + '</p></div>';
+
+    o += (G.TC_KICHBAN || []).map(function (x) {
+      return '<div class="card mt" style="border-left:3px solid var(--' +
+        (x.ma === 'KB_XAU' ? 'bad' : x.ma === 'KB_TOT' ? 'ok' : 'teal') + ')">' +
+        '<b>' + h(x.ten) + ' · doanh thu ' +
+        h((x.doiDoanhThu > 0 ? '+' : '') + x.doiDoanhThu + '%') + '</b>' +
+        '<p class="sm mt"><b>Ngưỡng:</b> ' + h(x.nguong) + '</p>' +
+        '<p class="sm mt"><b>Cắt trước:</b> ' + h(x.cat.join(' · ')) + '</p>' +
+        '<p class="sm mt" style="color:var(--ok)"><b>Giữ tới cùng:</b> ' +
+        h(x.giu.join(' · ')) + '</p>' +
+        '<p class="sm muted mt">' + h(x.vi) + '</p></div>';
+    }).join('');
+
+    o += '<div class="row mt2" style="gap:8px">' +
+      '<button class="btn" onclick="G.ceoKichBan()">Dấu hiệu đang trỏ về đâu</button>' +
+      '</div>';
+
+    var r = G.ceoKbRa;
+    if (r && r.ok) o += '<div class="card" style="border-left:3px solid var(--warn);' +
+      'margin-top:14px"><b>Dấu hiệu: ' + h(r.dauHieu) + '</b>' +
+      '<p class="sm muted mt">' + h(r.vi || '') + '</p></div>';
+    return o;
+  }
+
+  G.ceoDoc = function () {
+    G.goiMayChu('bayConSoCEO', {}).then(function (d) { G.ceoSoRa = d; veLai(); });
+  };
+  G.ceoSoatLuat = function () {
+    G.goiMayChu('soatLuatTaiChinh', {}).then(function (d) { G.ceoLuatRa = d; veLai(); });
+  };
+  G.ceoKichBan = function () {
+    G.goiMayChu('dangOKichBan', {}).then(function (d) { G.ceoKbRa = d; veLai(); });
+  };
+
+  G.VIEWS['tai-chinh-ceo'] = function () {
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>PHÂN HỆ 5 — TÀI CHÍNH</b>' +
+      '<p class="sm muted mt">Kho đã có cả một hệ tài chính chạy thật — phiếu thu, ' +
+      'thang duyệt chi sáu mốc, đối chiếu ngân hàng, bảng lương. Màn này ' +
+      '<b>không dựng lại cái nào</b>. Nó dựng thứ Phần VII mang lại: bảy con số CEO ' +
+      'phải thấy mỗi tuần, và chúng <b>không cùng một loại</b>.</p></div>';
+
+    if (!(G.TC_BAY7 || []).length)
+      return o + U.empty('Tài chính CEO chưa mở',
+        'Kho nghề chưa nạp. Đăng nhập bằng vai có quyền nghề.', true);
+
+    o += thanhNgan();
+
+    if (G.ceoNgan === 'so')   return o + nganSo();
+    if (G.ceoNgan === 'luat') return o + nganLuat();
+    return o + nganKb();
   };
 
 })();

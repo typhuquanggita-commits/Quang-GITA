@@ -1043,6 +1043,82 @@ bị bắt. Cùng luật chọn dấu hiệu của `CUM_TUYET_DOI` ở 9.99.65.
 
 ---
 
+## BỘ NÃO — Phân hệ 5: Tài chính (9.99.67)
+
+Phần VII. Màn **Bảy con số CEO** (`src/tai-chinh-ceo.js`, ba ngăn),
+máy chủ `may-chu/tai-chinh-ceo.js`, kho `data.tai-chinh-ceo.js`
+(6 kho), bộ kiểm **mục 84**, tám phép đo ở `thu-worker.js`.
+
+### Bảy con số KHÔNG cùng một loại
+
+| Ngăn | Con số | Là gì |
+|---|---|---|
+| Đo thẳng | S1 tiền mặt · S2 số tháng sống · S3 doanh thu · S7 tự giới thiệu | máy cộng trong sổ |
+| Mẫu đủ tuổi | S4 chi phí một khách · S6 ở lại 90 ngày | **chỉ** tính trên phần đã đủ tuổi |
+| Ước tính | S5 giá trị 365 ngày | **phép chiếu**, chưa phải phép đo |
+
+**S5 là phép chiếu cho tới khi có một lớp nhà đủ 365 ngày**, và phép
+chiếu **luôn đẹp hơn sự thật** — vì nhà rời đi sớm chưa kịp rời đi.
+**S6 loại nhà chưa đủ 90 ngày ra khỏi mẫu và nói ra bao nhiêu bị
+loại**: đếm họ vào mẫu là thổi tỷ lệ lên, và thổi đúng lúc đang tuyển
+nhiều nhất.
+
+**Mẫu rỗng thì không trả về 0%**, nhưng **mẫu có mà không ai ở lại thì
+trả 0 thật** — gộp hai trường hợp ấy là mất đúng chỗ có nghĩa.
+
+### S2 tính trên TIỀN CỦA HỌC VIỆN, không trên tổng tiền mặt
+
+Tiền học 365 ngày là **tiền của khách cho tới khi dịch vụ được giao**.
+Tính số tháng sống được trên tổng tiền mặt thì nó nói dối theo đúng
+hướng nguy hiểm nhất: **dài ra đúng lúc thu được nhiều tiền trả
+trước**, tức là đúng lúc nghĩa vụ giao dịch vụ nặng nhất. Máy trả về
+ba con số riêng — tiền mặt · chưa giao · của Học viện — không gộp.
+
+### Bốn luật, ba cổng ở đây và một cái TRỎ
+
+L1 runway < 3 → chặn tăng chi, **máy không chọn cắt cái gì**. L2 ở lại
+< 60% → chặn **riêng** khoản `tiepThi`, không chặn cả sổ chi (cổng quá
+rộng thì người ta tìm đường vòng, và đường vòng không ai canh). L3
+tiền của Học viện âm → báo động. **L4 đã chạy từ 9.92** — mô-đun gọi
+thẳng `thangDuyetChi()`, và mục 84 **đọc mã nguồn** để canh rằng nó
+không khai một con số ngưỡng nào: hai bản ngưỡng tiền lệch nhau thì
+một khoản chi lọt qua mà không ai biết.
+
+Khoản mục quảng cáo lấy **đúng tên** trong danh sách trắng của
+`chi-tieu.js`, và mục 84 đối chiếu — cổng trỏ vào một tên không tồn
+tại thì nó không chặn gì cả.
+
+### Ba kịch bản phải đủ BA ô
+
+Cắt gì trước · **giữ gì tới cùng** · ngưỡng nào thì hành động. Danh
+sách **giữ** là phần khó viết và là phần cứu được sản phẩm — một danh
+sách cắt không có danh sách giữ thì nó được áp lên mọi thứ. Máy **nói**
+dấu hiệu đang trỏ về kịch bản nào rồi **dừng**: chuyển kịch bản có hệ
+quả với người đang làm, nên nó phải có một cái tên ký bên dưới.
+
+### Hai chỗ bộ kiểm bắt ngay, và cả hai là lỗi thật
+
+1. **Dấu nháy trong `Academy's` cắt đôi một chuỗi nháy đơn ở
+   `i18n.js`** — cả gói mã không parse, và triệu chứng hiện ra là
+   `window.G.doLogin is not a function`, không phải một lỗi cú pháp.
+   Cách tìm nhanh: `node --check src/*.js` rồi `node --check
+   gita-app.js`.
+2. **Mục 67 bắt `G.tcMoNgan` trùng với `src/phong-tai-chinh.js`.**
+   Tiền tố `tc` đã thuộc về màn Phòng tài chính từ trước; tệp nạp sau
+   thắng và tệp kia im lặng gọi nhầm hàm. Đổi tiền tố của màn mới
+   thành `ceo`. **Chọn tiền tố là việc phải làm trước khi viết, không
+   phải sau khi trùng.**
+
+### Màn khoá `fin_view`, máy chủ khoá R01–R03 — lệch một bậc, CỐ Ý
+
+`fin_view` là câu trả lời **sẵn có** cho *"ai xem tài chính"*, dùng
+lại chứ không dựng câu thứ hai. Cổng máy chủ hẹp hơn một bậc theo luật
+*tài chính chỉ R01–R03* đã chốt 9.97. Cái hẹp hơn nằm ở **máy chủ** —
+đúng chiều an toàn: màn hình chỉ quyết mục nào hiện trong cột trái,
+thứ quyết ai đọc được con số là cổng máy chủ.
+
+---
+
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**

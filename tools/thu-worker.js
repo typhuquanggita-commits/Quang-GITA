@@ -4360,6 +4360,110 @@ let idTam9 = null, idDang9 = null;
     'cuộc gọi vào nhà đang xanh');
 }
 
+/* ══════════════ PHÂN HỆ 5 · TÀI CHÍNH ══════════════
+
+   Kho đã có cả một hệ tài chính chạy thật, nên phần này chỉ đo thứ
+   Phần VII mang lại: bảy con số KHÔNG cùng một loại, và ba cái cổng.
+
+   Chỗ đáng đo nhất là S2 — số tháng sống được tính trên TIỀN CỦA HỌC
+   VIỆN chứ không trên tổng tiền mặt. Tính trên tổng thì nó nói dối
+   theo đúng hướng nguy hiểm nhất: dài ra đúng lúc thu được nhiều tiền
+   trả trước, tức là đúng lúc nghĩa vụ giao dịch vụ nặng nhất. */
+{
+  const mTC = await import('../may-chu/tai-chinh-ceo.js');
+
+  /* ── MỘT TỶ LỆ PHẢI NÓI CỠ MẪU, VÀ MẪU RỖNG THÌ KHÔNG TRẢ 0% ── */
+  const tlCo = mTC.tyLe(7, 10, 4);
+  const tlRong = mTC.tyLe(0, 0, 12);
+  bao(tlCo.pt === 70 && tlCo.mau === 10 && tlCo.chuaDuTuoi === 4 &&
+      tlRong.pt === undefined && tlRong.mau === 0 && tlRong.chuaDuTuoi === 12 &&
+      /máy chưa biết/.test(tlRong.vi),
+    'MẪU RỖNG THÌ KHÔNG TRẢ VỀ 0%, VÀ MỌI TỶ LỆ ĐỀU NÓI CỠ MẪU KÈM SỐ NHÀ CHƯA ĐỦ TUỔI',
+    'số 0 đọc ra là "không ai ở lại", không trả về đọc ra là "máy chưa biết" — hai ' +
+    'câu khác hẳn nhau, cùng luật với ba bậc lời khai của phễu thị giác');
+
+  /* ── S2 TÍNH TRÊN TIỀN CỦA HỌC VIỆN, KHÔNG TRÊN TỔNG TIỀN MẶT ──
+     Dựng một nhà vừa trả trước cả năm: tiền mặt nhiều, nhưng phần lớn
+     là nghĩa vụ chưa giao. */
+  db.prepare("INSERT INTO hoSoKhach (maKhachHang,uidPhuHuynh,tuyen,tang,trangThai,vaoLuc)" +
+    " VALUES ('NHA-TC1','u-tc1','GITA365',3,'dangHoc',?)")
+    .run(new Date(Date.now() - 30*86400000).toISOString());
+  db.prepare("INSERT INTO phieuThu (id,maKhachHang,soTien,hinhThuc,nguoiGhi,ghiLuc,trangThai)" +
+    " VALUES ('PT-TC1','NHA-TC1',36500000,'chuyenKhoan','ketoan',?,'daDuyet')")
+    .run(new Date().toISOString());
+  db.prepare("INSERT INTO chiPhi (id,khoanMuc,soTien,ngayChi,hinhThuc,dienGiai," +
+    "nguoiDeXuat,deXuatLuc,trangThai) VALUES ('CP-TC1','matBang',3000000,?," +
+    "'chuyenKhoan','thuê tháng','ketoan',?,'daDuyet')")
+    .run(new Date().toISOString().slice(0,10), new Date().toISOString());
+
+  const bay = await goi({fn:'bayConSoCEO', token:tkSA, u:'superadmin@gita365.vn'});
+  const d = bay.than.doDuoc;
+  bao(bay.than.ok && d.S1_chuaGiao > 0 && d.S1_tienHocVien < d.S1_tienMat &&
+      /TIỀN CỦA HỌC VIỆN/.test(bay.than.vi),
+    'S2 TÍNH TRÊN TIỀN CỦA HỌC VIỆN — tiền mặt TRỪ phần học phí đã thu mà chưa giao',
+    'tiền mặt ' + d.S1_tienMat + ' · chưa giao ' + d.S1_chuaGiao + ' · của Học viện ' +
+    d.S1_tienHocVien + ' — tính trên tổng thì số tháng sống được dài ra đúng lúc ' +
+    'nghĩa vụ giao dịch vụ nặng nhất');
+
+  /* Bảy con số trả về ở BA NGĂN riêng, không gộp một bảng bảy dòng. */
+  bao(!!bay.than.doDuoc && !!bay.than.duTuoi && !!bay.than.ucTinh &&
+      bay.than.ucTinh.S5_giaTri365.laUocTinh === true &&
+      typeof bay.than.giaDinh === 'string' && bay.than.giaDinh.length > 20,
+    'BẢY CON SỐ TRẢ VỀ BA NGĂN RIÊNG, và giá trị 365 ngày tự khai là ƯỚC TÍNH khi chưa có nhà nào đủ tuổi',
+    'gộp cả bảy cùng kiểu chữ thì người đọc tin cả bảy như nhau — mà hai con số bị ' +
+    'tin nhầm nhiều nhất lại đúng là hai con số dùng để quyết định tiêu tiền');
+
+  /* Nhà mới ba mươi ngày KHÔNG được tính vào tỷ lệ ở lại 90 ngày. */
+  bao(bay.than.duTuoi.S6_oLai90.chuaDuTuoi >= 1,
+    'NHÀ CHƯA ĐỦ 90 NGÀY BỊ LOẠI KHỎI MẪU, VÀ SỐ BỊ LOẠI ĐƯỢC NÓI RA',
+    bay.than.duTuoi.S6_oLai90.chuaDuTuoi + ' nhà chưa đủ tuổi · đếm họ vào mẫu là ' +
+    'thổi tỷ lệ lên, và thổi đúng lúc đang tuyển nhiều nhất');
+
+  /* ── L2 · CHẶN RIÊNG KHOẢN QUẢNG CÁO KHI TỶ LỆ Ở LẠI THẤP ── */
+  db.prepare("INSERT INTO hoSoKhach (maKhachHang,uidPhuHuynh,tuyen,tang,trangThai,vaoLuc)" +
+    " VALUES ('NHA-TC2','u-tc2','GITA365',2,'nghi',?)")
+    .run(new Date(Date.now() - 200*86400000).toISOString());
+
+  const chanQC = await goi({fn:'soatLuatTaiChinh', token:tkSA, u:'superadmin@gita365.vn',
+    khoanMuc:'tiepThi', soTien:5000000});
+  const maPham = (chanQC.than.pham || []).map(x => x.ma);
+  bao(chanQC.than.ok && maPham.indexOf('L2') >= 0,
+    'L2 · TỶ LỆ Ở LẠI DƯỚI 60% THÌ CHẶN RIÊNG KHOẢN QUẢNG CÁO',
+    'đổ tiền vào một cái xô thủng là cách phá sản nhanh nhất trong ngành giáo dục ' +
+    '— và nó phá sản CÓ VẺ THÀNH CÔNG: số nhà mới tăng đều, chỉ có số nhà ở lại là không');
+
+  /* Khoản mục KHÁC thì L2 không chặn — cổng chặn đúng chỗ, không chặn cả sổ. */
+  const khongChan = await goi({fn:'soatLuatTaiChinh', token:tkSA, u:'superadmin@gita365.vn',
+    khoanMuc:'matBang', soTien:3000000});
+  bao((khongChan.than.pham || []).map(x => x.ma).indexOf('L2') < 0,
+    'L2 CHẶN ĐÚNG KHOẢN QUẢNG CÁO, KHÔNG CHẶN CẢ SỔ CHI',
+    'một cổng chặn quá rộng thì người ta tìm đường vòng, và đường vòng không ai canh');
+
+  /* ── L4 KHÔNG DỰNG LẠI · TRỎ SANG THANG DUYỆT CHI ── */
+  bao(Array.isArray(chanQC.than.thangDuyetChi) &&
+      chanQC.than.thangDuyetChi.length >= 5,
+    'LUẬT 4 KHÔNG DỰNG LẠI — mô-đun TRỎ thẳng sang thang duyệt chi đã chạy từ 9.92',
+    chanQC.than.thangDuyetChi.length + ' mốc · chép con số ngưỡng sang đây là dựng ' +
+    'bản thứ hai của một ngưỡng tiền, và hai bản lệch nhau thì một khoản chi lọt ' +
+    'qua mà không ai biết');
+
+  /* ── MÁY NÓI ĐANG Ở KỊCH BẢN NÀO, NHƯNG KHÔNG TỰ CHUYỂN ── */
+  const kb = await goi({fn:'dangOKichBan', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(kb.than.ok && kb.than.mayKhongChuyen === true &&
+      ['KB_XAU','KB_THUONG'].indexOf(kb.than.dauHieu) >= 0,
+    'MÁY NÓI DẤU HIỆU ĐANG TRỎ VỀ KỊCH BẢN NÀO, RỒI DỪNG — không tự chuyển',
+    'dấu hiệu ' + kb.than.dauHieu + ' · chuyển kịch bản là quyết định có hệ quả với ' +
+    'người đang làm, nên nó phải có một cái tên ký bên dưới');
+
+  /* Kỳ chưa có nhà mới nào thì KHÔNG chia — chia cho không là một con
+     số vô hạn trình ra như một sự thật. */
+  bao(bay.than.duTuoi.S4_soNhaMoi === 0
+      ? bay.than.duTuoi.S4_chiPhiKhachMoi === undefined
+      : typeof bay.than.duTuoi.S4_chiPhiKhachMoi === 'number',
+    'KỲ CHƯA CÓ NHÀ MỚI THÌ KHÔNG CHIA — không trả về một con số vô hạn',
+    bay.than.duTuoi.S4_soNhaMoi + ' nhà mới trong kỳ');
+}
+
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&
     soRa.than.ds[0].daGui === raNgoai.than.daGui,
