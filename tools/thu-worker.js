@@ -5676,6 +5676,156 @@ console.log('\n15p · MÀN HÔM NAY — NĂM CÁI RĂNG MỞ KHOÁ BỞI LGD-01'
     'đồng ý, và một lời từ chối không đổi được thì nó là một cái khoá chứ không phải quyền');
 }
 
+console.log('\n15q · GITA-VIP — TRẦN PHẠM VI GIÁM SÁT');
+/* ══════════════ TRẦN GIÁM SÁT ══════════════
+   Bản luật và phân loại đo ở mục 92. Ở đây đo HÀNH VI: gọi thật vào
+   cửa rồi xem cái trần có chặn không. */
+{
+  const mGS = await import('../may-chu/giam-sat.js');
+  const mai = new Date(Date.now() + 30 * 864e5).toISOString();
+
+  /* ── TRẦN CHẶN TRƯỚC MỌI CỔNG KHÁC ──
+     Lệnh chạm trần mà THIẾU CẢ lý do lẫn hạn: phải trả CHAMTRAN, không
+     phải THIEULYDO. Báo thiếu lý do trước là chỉ người cấp đường viết
+     thêm một câu rồi gửi lại, trong khi lệnh ấy không được tồn tại. */
+  const cham = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Thu sinh trắc nhịp gõ phím của học viên', ngan:'TRE', choAi:'coach@gita365.vn'});
+  bao(!cham.than.ok && cham.than.code === 'CHAMTRAN' &&
+      (cham.than.cham || []).indexOf('C2') >= 0,
+    'TRẦN CHẶN TRƯỚC MỌI CỔNG KHÁC — thiếu cả lý do lẫn hạn mà vẫn trả CHAMTRAN',
+    'chạm ' + (cham.than.cham || []).join(' · ') + ' · báo "thiếu lý do" trước là chỉ ' +
+    'người cấp đường viết thêm một câu rồi gửi lại, trong khi lệnh ấy không được tồn tại');
+
+  /* R01 CÓ CHỮ KÝ CŨNG KHÔNG MỞ ĐƯỢC — đó là khác biệt giữa TRẦN và QUYỀN. */
+  const camDu = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Bảng xếp hạng học viên toàn hệ theo điểm hiện diện', ngan:'TRE',
+    choAi:'coach@gita365.vn', lyDo:'Chủ hệ yêu cầu dựng bảng vinh danh cuối năm',
+    hanDen: mai, bacDich: 14});
+  bao(!camDu.than.ok && camDu.than.code === 'CHAMTRAN',
+    'và LỆNH R01 ĐỦ LÝ DO ĐỦ HẠN VẪN BỊ CHẶN — trần khác quyền',
+    'quyền thì cấp được, trần thì không · một quyền cấp được là một quyền sẽ được cấp ' +
+    'đúng vào ngày có người thấy cần');
+
+  /* Ngăn TRE chặn cả khi câu chữ không mang dấu hiệu nào. */
+  const treGiay = mGS.soatPhamVi('Ghi hoạt động theo giây trong phiên học', 'TRE');
+  const nsGiay = mGS.soatPhamVi('Ghi hoạt động theo giây trong phiên học', 'NHANSU');
+  bao(!treGiay.sach && nsGiay.sach === true,
+    'NGĂN TRE chặn "theo giây" dù câu chữ không mang dấu hiệu nào, ngăn NHANSU thì không',
+    'không phải vì trẻ đáng ngờ hơn — vì trẻ không ký được hợp đồng nào và không rời ' +
+    'đi được');
+
+  /* Dò CỤM nhiều âm tiết: "hạng mục" không bị bắt oan. */
+  bao(mGS.soatPhamVi('Theo dõi tiến độ từng hạng mục công việc', 'NHANSU').sach === true,
+    'và "hạng mục" KHÔNG bị bắt oan — dò cụm nhiều âm tiết, không dò âm tiết trần',
+    'một phép đo bắt oan thì lần sau người ta tắt nó đi');
+
+  /* ── BỐN CỔNG CÒN LẠI ── */
+  const tuCap = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Đọc nhật ký thao tác', ngan:'NHANSU', choAi:'superadmin@gita365.vn',
+    lyDo:'Tự kiểm tra hoạt động của chính mình cho tiện', hanDen: mai, bacDich: 5});
+  bao(!tuCap.than.ok && tuCap.than.code === 'TUCAP',
+    'KHÔNG TỰ CẤP QUYỀN CHO MÌNH',
+    'người ký và người được cấp là một thì chữ ký ấy không chứng minh gì');
+
+  const khongHan = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Đọc nhật ký thao tác', ngan:'NHANSU', choAi:'coach@gita365.vn',
+    lyDo:'Rà soát định kỳ quý bốn theo kế hoạch đã duyệt', bacDich: 11});
+  bao(!khongHan.than.ok && khongHan.than.code === 'THIEUHAN',
+    'LỆNH KHÔNG CÓ HẠN BỊ CHẶN — không có quyền vĩnh viễn mặc định',
+    'một quyền không có hạn là một quyền không ai nhớ đi thu lại: sáu tháng sau nó ' +
+    'vẫn mở, người được cấp đã chuyển việc, và không ai biết nó còn đó');
+
+  const khongLyDo = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Đọc nhật ký thao tác', ngan:'NHANSU', choAi:'coach@gita365.vn',
+    lyDo:'ừ', hanDen: mai, bacDich: 11});
+  bao(!khongLyDo.than.ok && khongLyDo.than.code === 'THIEULYDO',
+    'LỆNH KHÔNG VIẾT LÝ DO BỊ CHẶN',
+    'một sổ lệnh không có lý do chỉ kể được rằng ĐÃ cấp, không kể được VÌ SAO — và ' +
+    'không ai dám thu lại một thứ mình không hiểu vì sao có');
+
+  const ngang = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Đọc nhật ký thao tác', ngan:'NHANSU', choAi:'coach@gita365.vn',
+    lyDo:'Rà soát định kỳ quý bốn theo kế hoạch đã duyệt', hanDen: mai, bacDich: 3});
+  bao(!ngang.than.ok && ngang.than.code === 'NGANGCAP',
+    'KHÔNG CẤP ĐƯỢC QUYỀN NHÌN VÀO VAI NGANG HOẶC TRÊN',
+    'cho phép thì một người tự bảo vệ mình bằng cách nhìn vào người có thể soi mình, ' +
+    'và sổ audit thành vũ khí thay vì bằng chứng');
+
+  /* ── CỔNG KHÔNG TRA ĐƯỢC NGƯỜI THÌ ĐÓNG ──
+     Phép đo này thêm SAU khi phá thử lộ ra một khoảng trống: bản đầu
+     của cổng NGANGCAP viết `if (bacNguoi !== null && ...)`, tức là
+     không tìm thấy người thì BỎ QUA. Tôi vá nó, nhưng mọi phép đo lúc
+     ấy đều dùng một người CÓ THẬT — nên không phép nào canh được cái
+     mở-khi-không-tra-được quay lại.
+
+     Vá một lỗi mà không thêm phép đo canh nó là vá một lần. */
+  const khongRo = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Đọc nhật ký thao tác', ngan:'NHANSU', choAi:'nguoi-khong-co@vidu.vn',
+    lyDo:'Rà soát định kỳ quý bốn theo kế hoạch đã duyệt', hanDen: mai, bacDich: 11});
+  bao(!khongRo.than.ok && khongRo.than.code === 'KHONGRONGUOI',
+    'CỔNG KHÔNG TRA ĐƯỢC NGƯỜI THÌ ĐÓNG, không bỏ qua',
+    'mở là chọn cái tiện lúc viết, và cái tiện ấy rơi đúng vào chỗ nguy hiểm nhất — ' +
+    'người không tra được là người đáng hỏi thêm nhất');
+
+  /* Và lệnh KHÔNG KHAI BẬC ĐÍCH cũng bị chặn: không khai thì luật
+     "không nhìn vai ngang hoặc trên" không kiểm được, mà luật ấy là cả
+     lý do cổng ấy tồn tại. */
+  const thieuBac = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Đọc nhật ký thao tác', ngan:'NHANSU', choAi:'coach@gita365.vn',
+    lyDo:'Rà soát định kỳ quý bốn theo kế hoạch đã duyệt', hanDen: mai});
+  bao(!thieuBac.than.ok && thieuBac.than.code === 'THIEUBAC',
+    'và LỆNH KHÔNG KHAI BẬC ĐÍCH bị chặn — không khai thì luật không kiểm được');
+
+  /* ── LỆNH HỢP LỆ THÌ QUA — một cổng chặn cả đường đúng là cổng hỏng ── */
+  const ok1 = await goi({fn:'capLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn',
+    phamVi:'Đọc nhật ký thao tác và lượt xuất tệp', ngan:'NHANSU',
+    choAi:'coach@gita365.vn',
+    lyDo:'Rà soát định kỳ quý bốn theo kế hoạch đã duyệt ngày 01/10', hanDen: mai,
+    bacDich: 11});
+  bao(ok1.than.ok && !!ok1.than.id && ok1.than.hanDen,
+    'và LỆNH HỢP LỆ THÌ QUA — cổng chặn đúng chỗ, không chặn tất cả',
+    'hạn ' + String(ok1.than.hanDen || '').slice(0, 10));
+
+  /* ── HIỆU LỰC TÍNH LÚC ĐỌC, BA NHÓM KHÔNG GỘP ── */
+  db.prepare("INSERT INTO lenhGiamSat (id,phamVi,ngan,choAi,lyDo,aiKy,hanDen,ghiLuc,thuLuc)" +
+    " VALUES ('GS-CU','Đọc nhật ký','NHANSU','coach@gita365.vn','Việc cũ đã xong từ lâu'," +
+    "'superadmin@gita365.vn',?,?,NULL)")
+    .run(new Date(Date.now() - 864e5).toISOString(), new Date(Date.now() - 30*864e5).toISOString());
+  const so = await goi({fn:'docLenhGiamSat', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(so.than.ok && so.than.dangChay.length === 1 && so.than.hetHan.length === 1 &&
+      so.than.daThu.length === 0,
+    'HIỆU LỰC TÍNH LÚC ĐỌC, và ba nhóm KHÔNG gộp thành một con số',
+    so.than.dangChay.length + ' đang chạy · ' + so.than.hetHan.length + ' đã tự hết hạn · ' +
+    'gộp thì một quyền đã hết hạn nằm chung rổ với một quyền vừa cấp sáng nay');
+
+  /* ── SỔ NỐI BĂM ── */
+  const lanh = await goi({fn:'soatSoDen', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(lanh.than.ok && lanh.than.lanh === true && lanh.than.so > 0,
+    'SỔ NỐI BĂM LIỀN MẠCH sau mấy lượt ghi thật',
+    lanh.than.so + ' dòng');
+
+  /* Sửa MỘT dòng giữa sổ rồi soi lại — và phép đo phải nói ra vỡ Ở ĐÂU,
+     không trả một chữ "đạt". */
+  const giua = db.prepare("SELECT stt FROM soDen ORDER BY stt ASC LIMIT 1 OFFSET 1").get();
+  db.prepare("UPDATE soDen SET chiTiet = 'đã bị sửa' WHERE stt = ?").run(giua.stt);
+  const vo = await goi({fn:'soatSoDen', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(!vo.than.lanh && vo.than.vo.length > 0 && vo.than.vo[0].stt === giua.stt &&
+      /khongChanDuocGi/.test(JSON.stringify(Object.keys(vo.than))),
+    'SỬA MỘT DÒNG GIỮA SỔ thì chuỗi VỠ, và phép soi nói ra vỡ ở DÒNG NÀO',
+    'vỡ từ dòng ' + vo.than.vo[0].stt + ' · một chữ "đạt" không nói dòng nào bị sửa, ' +
+    'và sửa mò thì lần sau không tìm được nữa');
+  bao(/xoá cả sổ/.test(String(vo.than.khongChanDuocGi || '')),
+    'và phép soi NÓI RA GIỚI HẠN CỦA CHÍNH NÓ — không chống được người xoá cả sổ',
+    'một lớp bảo vệ không nói giới hạn thì người đọc tin nó chống được nhiều hơn thật, ' +
+    'đúng lý do 9.99.57 từ chối làm dấu chìm trong bit thấp');
+
+  /* ── CHỈ R01 ── */
+  bao(!(await goi({fn:'capLenhGiamSat', token:tkGD, u:'giamdoc@gita365.vn',
+    phamVi:'Đọc nhật ký', ngan:'NHANSU', choAi:'coach@gita365.vn',
+    lyDo:'Rà soát định kỳ quý bốn theo kế hoạch', hanDen: mai, bacDich: 11})).than.ok,
+    'R03 KHÔNG CẤP ĐƯỢC LỆNH GIÁM SÁT');
+}
+
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng

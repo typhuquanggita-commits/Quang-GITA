@@ -1855,6 +1855,112 @@ từ ô `role` của phiên (vai trong phiên đổi được sau khi mở phiê
   và chọn trong thực đơn không phải là quyết định của mình.
 - **LGD-01 đã chốt** → `G.NM_DACHOT`. Gỡ khỏi sổ chờ, **không xoá**.
 
+---
+
+## GITA-VIP — trần phạm vi giám sát (9.99.76)
+
+Theo bản đặc tả `GITA-VIP v2.0 ELITE` của chủ hệ. Màn **Trần giám sát**
+(`src/giam-sat.js`, bốn ngăn), máy chủ `may-chu/giam-sat.js`, kho
+`data.giam-sat.js` (8 kho), bảng `lenhGiamSat` và `soDen`, bộ kiểm
+**mục 92**, mười bốn phép đo ở `thu-worker.js`.
+
+### Dựng CÁI TRẦN trước, chưa dựng bộ giám sát
+
+Cùng thứ tự đã chọn với Hiến pháp ở 9.99.62. Ở đây còn gắt hơn, vì thứ
+đang dựng là một hệ **nhìn vào người**: một cái cổng dựng SAU một cái
+cửa đã chạy thì nó chỉ là một lời nhắc.
+
+### Bản đặc tả va vào SÁU luật chủ hệ đã duyệt
+
+| Bản đặc tả đòi | Va vào |
+|---|---|
+| GPI-2 xếp hạng Kim Cương→Cảnh báo cho TỪNG học sinh | **LR1** (9.99.63) · **L01** · **L05** (9.99.74) |
+| Sinh trắc 1Hz (face · voice · keystroke) cho trẻ <18 | **Điều 13** (9.99.62) · Luật 91/2025 |
+| *"Chuỗi 21 ngày tạm dừng hôm nay"* | **L08** không giữ chân |
+| Conversation Desk hỏi *"điều gì đang xảy ra"* | **L11** không hỏi vặn |
+| *"GPI tạm giữ"* · *"đình chỉ quyền lợi"* | **L02** không tụt cấp |
+| *"Chính xác 1000%"* | **QC1** từ tuyệt đối (9.99.65) |
+
+Dựng theo bản đặc tả mà không nói ra chỗ va là **đem sáu quyết định cũ
+ra huỷ trong im lặng**. Nên sáu điều CẤM nằm ở **ngăn đầu** của màn,
+không giấu xuống cuối, và mỗi điều **trỏ vào mã luật có thật**.
+
+### TRẦN khác QUYỀN
+
+`CAM_TUYET_DOI` không cấp được, **kể cả bằng lệnh R01 có chữ ký**. Quyền
+thì cấp được, và một quyền cấp được là một quyền **sẽ** được cấp — đúng
+vào ngày có người thấy cần.
+
+Cổng trần đứng **trước mọi cổng khác**: báo *"thiếu lý do"* trước là chỉ
+người cấp đường viết thêm một câu rồi gửi lại, trong khi lệnh ấy không
+được tồn tại.
+
+### Ba ngăn phạm vi khác nhau ở CĂN CỨ PHÁP LÝ
+
+Bản đặc tả xếp chín cấp vào **một** bảng, cùng cột *"bị giám sát full"*
+— nên một nhân sự hưởng lương và một đứa trẻ tám tuổi nằm cùng một hàng,
+cùng một kiểu chữ.
+
+- **NHANSU** (R01–R12) — quan hệ lao động, giám sát là việc chính đáng,
+  và **phải báo trước**: giám sát không báo trước thì nó không phải quản
+  lý, nó là rình.
+- **KHACH** (R13) — quan hệ dịch vụ. Học viện đo thứ mình **GIAO**,
+  không đo người **NHẬN**.
+- **TRE** (R14) — không ký hợp đồng nào và không rời đi được. Ngăn này
+  chặn cả *"theo giây"* kể cả khi câu chữ không mang dấu hiệu nào.
+
+### Lệnh uỷ quyền: phải có hạn, và tự thu hồi
+
+Không có quyền vĩnh viễn mặc định. **Một quyền không có hạn là một
+quyền không ai nhớ đi thu lại** — sáu tháng sau nó vẫn mở, người được
+cấp đã chuyển việc, và không ai biết nó còn đó.
+
+Còn hiệu lực **tính lúc đọc**; bảng không có cột `dangHieuLuc`, và
+`hanDen` **không cho NULL**. Sổ nêu **ba nhóm riêng** (đang chạy · đã
+hết hạn · đã thu tay) — gộp thì một quyền đã hết hạn nằm chung rổ với
+một quyền vừa cấp sáng nay.
+
+### Sổ nối băm — và nó NÓI RA giới hạn của chính nó
+
+Sửa một dòng giữa sổ là vỡ mọi dòng sau; `soatSoDen` nói ra **vỡ ở dòng
+nào**, không trả một chữ "đạt".
+
+Và nó khai thẳng thứ nó **không** làm được: không chống được người xoá
+cả sổ, chỉ chống được người sửa **một** dòng rồi để nguyên phần còn lại
+— đó mới là thứ hay xảy ra, vì xoá cả sổ thì ai cũng thấy. Cùng lý do
+9.99.57 từ chối làm dấu chìm trong bit thấp: **một lớp bảo vệ không nói
+giới hạn thì người đọc tin nó chống được nhiều hơn thật.**
+
+### Sáu mươi phương pháp — phân loại trung thực
+
+14 dựng được · **21 bị luật kho chặn** · 25 chờ chủ hệ. Không phải
+"chưa dựng" — là **không dựng**, và mỗi cái trỏ vào điều cấm nào.
+
+### Hai lỗi của chính tôi, phá thử và bộ thử bắt
+
+1. **`\b` không khớp chữ có dấu — cái bẫy ĐẦU TIÊN tệp này ghi, và nó
+   vừa cắn lần nữa.** `/\bĐiều 13\b/` không bao giờ khớp vì "Đ" nằm
+   ngoài lớp `\w`, nên C2 · C3 báo đỏ oan. Tách hai phép: mã La-tinh dò
+   có biên, cụm tiếng Việt dò chuỗi con.
+2. **Cổng NGANGCAP MỞ khi không tra được người.** `if (bacNguoi !== null
+   && ...)` — không tìm thấy thì bỏ qua. Hai lỗi trong một dòng:
+   `nguoiTheoId` tra theo ID còn lệnh khai bằng tên đăng nhập, nên cổng
+   **chưa bao giờ chặn gì**; và nặng hơn — **một cổng không xác minh
+   được thì phải ĐÓNG**. Mở là chọn cái tiện lúc viết, và cái tiện ấy
+   rơi đúng vào chỗ nguy hiểm nhất.
+3. **Vá lỗi 2 mà không thêm phép đo canh nó quay lại.** Mọi phép đo lúc
+   ấy đều dùng một người CÓ THẬT. Phá thử lộ ra, và nay có phép đo gọi
+   lệnh cho một người không tồn tại.
+
+### Sổ chờ
+
+- **VIP-01** — giám sát gia đình: giữ sáu luật cũ, hay sửa luật để theo
+  bản đặc tả. Máy không tự chọn: đây là quyết định về quan hệ giữa Học
+  viện với gia đình, có hậu quả pháp lý theo Luật 91/2025. Phần trẻ dưới
+  18 nên hỏi luật sư trước — `PLR_VUNG4` đã có sẵn câu hỏi để mang đi.
+- **VIP-02** — trần 20% tài nguyên của Tư Vấn tính trên mẫu số nào, và
+  chạm trần thì **báo** hay **chặn**.
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

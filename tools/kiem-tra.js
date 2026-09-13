@@ -15176,6 +15176,205 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n92 · GITA-VIP — TRẦN PHẠM VI GIÁM SÁT');
+  /* ══════════════════ 92. TRẦN GIÁM SÁT ══════════════════
+
+     Bản đặc tả GITA-VIP đòi giám sát 100% tài khoản từ Tư Vấn trở
+     xuống, gồm học sinh và phụ huynh, bằng sinh trắc theo GIÂY. Sáu
+     luật chủ hệ đã duyệt ở sáu bản trước cấm đúng những điều ấy.
+
+     Mục này canh ba thứ, và thứ ba là thứ lạ nhất:
+
+       · sáu điều CẤM TUYỆT ĐỐI có mặt đủ và mỗi điều trỏ vào LUẬT THẬT
+       · cổng trần đứng TRƯỚC mọi cổng khác của cửa cấp lệnh
+       · bộ giám sát CHƯA ĐƯỢC DỰNG — phép đo về thứ chưa được tồn tại
+
+     Vế thứ ba là chỗ dễ bỏ nhất. Trần dựng trước bộ giám sát là có chủ
+     ý; nếu bản sau dựng bộ giám sát mà không đi qua cổng này thì cái
+     trần thành một tấm áp phích, và một tấm áp phích về giới hạn quyền
+     lực làm người đọc yên tâm rằng chuyện đã được lo. */
+  {
+    const khoVIP = await p.evaluate(() => {
+      const G = window.G;
+      return { cam: G.VIP_CAM || [], camLuat: G.VIP_CAM_LUAT || {},
+        ngan: G.VIP_NGAN || [], lenh: G.VIP_LENH || {},
+        saKhong: G.VIP_SA_KHONG || [], sau60: G.VIP_60 || {},
+        suaChu: G.VIP_SUA_CHU || [], choChu: G.VIP_CHOCHU || [],
+        coMan: !!(G.VIEWS || {})['giam-sat'],
+        trongNav: (G.NAV || []).flatMap(n => (n.items || []))
+          .some(m => m.v === 'giam-sat'),
+        /* Mã luật mỗi điều cấm trỏ vào phải có THẬT trong kho luật
+           giao diện — trỏ vào một cái tên không tồn tại thì điều cấm
+           ấy đứng một mình và người sau gỡ nó đi rất dễ. */
+        maLuatThat: (G.LGD_LUAT || []).map(l => l.ma) };
+    });
+
+    const dcv = t => fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'may-chu', t), 'utf8');
+    const ngGS = dcv('giam-sat.js');
+    const ngWv = dcv('worker.js');
+    const ngSQLv = dcv('csdl.sql');
+    const tepMCv = fsGoc.readdirSync(pathGoc.join(__dirname, '..', 'may-chu'))
+      .filter(t => t.endsWith('.js'));
+
+    const w = {};
+
+    /* ── A · SÁU ĐIỀU CẤM, MỖI ĐIỀU TRỎ VÀO LUẬT THẬT ── */
+    w.soCam = khoVIP.cam.length;
+    w.duSauCam = khoVIP.cam.length === 6;
+    w.camThieuO = khoVIP.cam.filter(c => !c.ma || !c.cam || !c.luat ||
+      !c.banDacTaDoi || !c.vi).map(c => c.ma || '?');
+    /* Mỗi ô `luat` phải nhắc ít nhất một mã luật CÓ THẬT. */
+    /* KHÔNG dùng `\b` quanh chữ tiếng Việt. Bản đầu viết
+       `/\b(L\d{2}|LR\d|QC\d|Điều 13)\b/` và C2 · C3 báo đỏ oan: "Đ"
+       nằm ngoài lớp `\w` của JavaScript nên TRƯỚC nó không có biên nào,
+       và `\bĐiều 13\b` không bao giờ khớp. Đây là cái bẫy ĐẦU TIÊN
+       CLAUDE.md ghi lại, và nó vừa cắn lần nữa.
+
+       Tách hai phép: mã La-tinh dò có biên, cụm tiếng Việt dò chuỗi
+       con — "Điều 13" là cụm nhiều âm tiết nên không có chỗ bắt oan. */
+    w.camTroSai = khoVIP.cam.filter(c => {
+      const s2 = String(c.luat || '');
+      if (s2.indexOf('Điều 13') >= 0) return false;
+      const ma = s2.match(/\b(L\d{2}|LR\d|QC\d)\b/g) || [];
+      return !ma.some(x => khoVIP.maLuatThat.indexOf(x) >= 0 ||
+        /^LR\d$/.test(x) || /^QC\d$/.test(x));
+    }).map(c => c.ma);
+
+    const camMC = (() => {
+      const m = /export const CAM_TUYET_DOI = \[([\s\S]*?)\];/.exec(ngGS);
+      return m ? (m[1].match(/'([^']+)'/g) || []).map(x => x.slice(1, -1)) : [];
+    })();
+    w.camKhop = camMC.join() === khoVIP.cam.map(c => c.ma).join();
+
+    /* ── B · CỔNG TRẦN ĐỨNG TRƯỚC MỌI CỔNG KHÁC ──
+       Một lệnh chạm trần thì không có chuyện "thiếu lý do" nữa — nó
+       không được tồn tại. Báo thiếu lý do trước là chỉ người cấp đường
+       viết thêm một câu rồi gửi lại. */
+    const mCap = /export async function capLenhGiamSat\(([\s\S]*?)\n\}/.exec(ngGS);
+    const thanCap = mCap ? mCap[1] : '';
+    const viTran = thanCap.indexOf('soatPhamVi');
+    const viLyDo = thanCap.indexOf('THIEULYDO');
+    const viHan = thanCap.indexOf('THIEUHAN');
+    const viIns = thanCap.indexOf('INSERT INTO lenhGiamSat');
+    w.tranTruocHet = viTran > 0 && viLyDo > viTran && viHan > viTran && viIns > viTran;
+    w.congDu = ['CHAMTRAN', 'TUCAP', 'THIEUHAN', 'THIEULYDO', 'NGANGCAP']
+      .every(c => thanCap.indexOf("'" + c + "'") > 0);
+
+    /* ── C · BẢNG KHÔNG CÓ CỘT TÓM TẮT, VÀ hanDen KHÔNG CHO NULL ── */
+    const mBangL = /CREATE TABLE IF NOT EXISTS lenhGiamSat \(([\s\S]*?)\n\);/.exec(ngSQLv);
+    const cotL = mBangL ? mBangL[1] : '';
+    w.khongCotTom = !!mBangL && !/dangHieuLuc|conHieuLuc|hieuLuc\s/.test(cotL);
+    w.hanKhongNull = /hanDen\s+TEXT NOT NULL/.test(cotL);
+    /* Còn hiệu lực TÍNH LÚC ĐỌC. */
+    w.tinhLucDoc = /Date\.parse\(d\.hanDen\) > bay/.test(ngGS);
+    /* Và ba nhóm KHÔNG gộp. */
+    w.khongGopBaNhom = /dangChay/.test(ngGS) && /hetHan/.test(ngGS) && /daThu/.test(ngGS);
+
+    /* ── D · SỔ NỐI BĂM, VÀ NÓI RA CHỖ VỠ ── */
+    w.soNoiBam = /bamTruoc/.test(ngGS) && /bamTu/.test(ngGS) &&
+      /SHA-256/.test(ngGS) && !/UPDATE soDen|DELETE FROM soDen/.test(ngGS);
+    const mSoat = /export async function soatSoDen\(([\s\S]*?)\n\}/.exec(ngGS);
+    w.noiChoVo = !!mSoat && /vo\[0\]\.stt/.test(mSoat[1]);
+    /* NÓI RA GIỚI HẠN của chính nó. Một lớp bảo vệ không nói giới hạn
+       thì người đọc tin nó chống được nhiều hơn thật — đúng lý do
+       9.99.57 KHÔNG làm dấu chìm trong bit thấp. */
+    w.noiGioiHan = /khongChanDuocGi/.test(ngGS) &&
+      /xoá cả sổ|xoa ca so/i.test(ngGS);
+
+    /* ── E · BỘ GIÁM SÁT CHƯA ĐƯỢC DỰNG ──
+       Phép đo về thứ chưa được tồn tại. Trần dựng trước là có chủ ý;
+       bản sau dựng bộ giám sát mà không đi qua cổng này thì trần thành
+       một tấm áp phích. */
+    const CUA_CAM_VIP = ['batDauGiamSat', 'ghiGiaySong', 'chamGPI', 'tinhGPI',
+      'ngatGiuaChung', 'thuSinhTrac', 'xepHangGPI'];
+    w.cuaChuaDung = CUA_CAM_VIP.filter(c => new RegExp("'" + c + "'").test(ngWv));
+    /* Và không mô-đun nào được mọc một bảng dữ liệu theo giây. */
+    w.bangTheoGiay = /CREATE TABLE IF NOT EXISTS (giaySong|gsRecord|secondStream)/i
+      .test(ngSQLv);
+    /* Không mô-đun nào khai một ô sinh trắc. */
+    w.oSinhTrac = tepMCv.filter(t => {
+      const s2 = dcv(t);
+      return /face_match|voice_match|keystroke_match|faceMatch|voiceMatch/.test(s2);
+    });
+
+    /* ── F · BA NGĂN, SÁU VIỆC SUPER ADMIN KHÔNG LÀM, 60 PHƯƠNG PHÁP ── */
+    w.duBaNgan = khoVIP.ngan.length === 3 &&
+      khoVIP.ngan.every(n => n.ma && n.canCu && (n.giamSatDuoc || []).length &&
+        (n.khongGiamSat || []).length && n.baoTruoc);
+    w.duSaKhong = khoVIP.saKhong.length >= 6 &&
+      khoVIP.saKhong.every(x => x.viec && x.vi);
+    const s60 = khoVIP.sau60;
+    const tong60 = ['dungDuoc', 'chanViLuat', 'choChuHe']
+      .reduce((a, k) => a + Number((s60[k] || {}).so || 0), 0);
+    w.sau60Du = tong60 === 60 &&
+      ['dungDuoc', 'chanViLuat', 'choChuHe'].every(k => (s60[k] || {}).vi);
+    w.tong60 = tong60;
+    w.duSuaChu = khoVIP.suaChu.length >= 3 &&
+      khoVIP.suaChu.every(x => x.cu && x.moi && x.vi);
+    w.choChuDu = khoVIP.choChu.length > 0 &&
+      khoVIP.choChu.every(c => c.ma && c.t && c.canGi && c.khongDoDuoc);
+
+    const vipDat = w.duSauCam && !w.camThieuO.length && !w.camTroSai.length &&
+      w.camKhop && w.tranTruocHet && w.congDu && w.khongCotTom && w.hanKhongNull &&
+      w.tinhLucDoc && w.khongGopBaNhom && w.soNoiBam && w.noiChoVo && w.noiGioiHan &&
+      !w.cuaChuaDung.length && !w.bangTheoGiay && !w.oSinhTrac.length &&
+      w.duBaNgan && w.duSaKhong && w.sau60Du && w.duSuaChu && w.choChuDu &&
+      khoVIP.coMan && khoVIP.trongNav;
+
+    bao(vipDat,
+      'GITA-VIP · TRẦN PHẠM VI GIÁM SÁT DỰNG TRƯỚC BỘ GIÁM SÁT, VÀ SÁU ĐIỀU CẤM KHÔNG LỆNH NÀO MỞ ĐƯỢC. Bản đặc tả GITA-VIP đòi giám sát 100% tài khoản từ Tư Vấn trở xuống — gồm học sinh và phụ huynh — bằng sinh trắc theo GIÂY, và xếp hạng từng tài khoản theo thang Kim Cương đến Cảnh báo. Sáu luật chủ hệ ĐÃ DUYỆT ở sáu bản trước cấm đúng những điều ấy: LR1 không xếp hạng trẻ (9.99.63), L01 không xếp hạng gia đình và L05 chấm NHÀ không chấm người (9.99.74), Điều 13 dữ liệu gia đình không rời hệ ở dạng nhận dạng được (9.99.62) cùng Luật 91/2025 về dữ liệu nhạy cảm, L02 không tụt cấp, L08 không giữ chân, L11 không hỏi vặn. Dựng theo bản đặc tả mà không nói ra chỗ va là đem sáu quyết định cũ ra huỷ trong im lặng — nên sáu điều CẤM nằm ở NGĂN ĐẦU của màn, không giấu xuống cuối, và mỗi điều trỏ vào MÃ LUẬT CÓ THẬT chứ không đứng một mình. TRẦN KHÁC QUYỀN: quyền thì cấp được, trần thì không — kể cả bằng lệnh R01 có chữ ký, vì một quyền cấp được là một quyền sẽ được cấp đúng vào ngày có người thấy cần. Cổng trần đứng TRƯỚC mọi cổng khác của cửa cấp lệnh: báo "thiếu lý do" trước là chỉ người cấp đường viết thêm một câu rồi gửi lại, trong khi lệnh ấy không được tồn tại. Lệnh PHẢI có hạn và TỰ thu hồi — một quyền không có hạn là một quyền không ai nhớ đi thu lại, và sáu tháng sau nó vẫn mở trong khi người được cấp đã chuyển việc. Sổ nối băm NÓI RA GIỚI HẠN CỦA CHÍNH NÓ: nó không chống được người xoá cả sổ, chỉ chống được người sửa MỘT dòng rồi để nguyên phần còn lại — một lớp bảo vệ không nói giới hạn thì người đọc tin nó chống được nhiều hơn thật, đúng lý do 9.99.57 từ chối làm dấu chìm trong bit thấp. Và phép đo nặng nhất là phép đo về thứ CHƯA ĐƯỢC TỒN TẠI: bộ giám sát chưa dựng, không cửa nào ghi dữ liệu theo giây, không mô-đun nào khai một ô sinh trắc — trần dựng trước là có chủ ý, vì một cái cổng dựng SAU một cái cửa đã chạy thì nó chỉ là một lời nhắc',
+      vipDat
+        ? w.soCam + ' điều cấm, mỗi điều trỏ vào luật thật · ' + khoVIP.ngan.length +
+          ' ngăn phạm vi theo CĂN CỨ PHÁP LÝ · ' + khoVIP.saKhong.length +
+          ' việc Super Admin không làm được · ' + w.tong60 +
+          ' phương pháp chia ba ngăn trung thực · cổng trần đứng đầu · sổ nối băm nói ' +
+          'ra giới hạn của chính nó · bộ giám sát CHƯA dựng, và không ô sinh trắc nào ' +
+          'tồn tại trong may-chu/'
+        : [!w.duSauCam ? 'KHÔNG ĐỦ SÁU ĐIỀU CẤM: đang có ' + w.soCam : '',
+           w.camThieuO.length ? 'ĐIỀU CẤM THIẾU Ô luat · banDacTaDoi · vi: ' +
+             w.camThieuO.join(' · ') : '',
+           w.camTroSai.length ? 'ĐIỀU CẤM TRỎ VÀO MÃ LUẬT KHÔNG TỒN TẠI: ' +
+             w.camTroSai.join(' · ') + ' — một điều cấm đứng một mình thì người sau ' +
+             'gỡ nó đi rất dễ' : '',
+           !w.camKhop ? 'BẢN CHÉP CAM_TUYET_DOI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !w.tranTruocHet ? 'CỔNG TRẦN KHÔNG ĐỨNG TRƯỚC MỌI CỔNG KHÁC — báo "thiếu ' +
+             'lý do" trước là chỉ người cấp đường viết thêm một câu rồi gửi lại' : '',
+           !w.congDu ? 'THIẾU CỔNG: cần đủ CHAMTRAN · TUCAP · THIEUHAN · THIEULYDO · ' +
+             'NGANGCAP' : '',
+           !w.khongCotTom ? 'BẢNG lenhGiamSat MỌC CỘT TÓM TẮT "đang hiệu lực" — cột ấy ' +
+             'phải có người cập nhật, và ngày không ai cập nhật thì nó khai một quyền ' +
+             'đã hết hạn là CÒN' : '',
+           !w.hanKhongNull ? 'CỘT hanDen CHO PHÉP NULL — tức là cho phép quyền vĩnh viễn' : '',
+           !w.tinhLucDoc ? 'HIỆU LỰC KHÔNG TÍNH LÚC ĐỌC' : '',
+           !w.khongGopBaNhom ? 'GỘP BA NHÓM LỆNH thành một con số — một quyền đã hết ' +
+             'hạn nằm chung rổ với một quyền vừa cấp sáng nay' : '',
+           !w.soNoiBam ? 'SỔ KHÔNG NỐI BĂM, hoặc mô-đun có câu UPDATE/DELETE trên sổ' : '',
+           !w.noiChoVo ? 'SOI SỔ KHÔNG NÓI RA VỠ Ở ĐÂU — một chữ "đạt" không nói dòng ' +
+             'nào bị sửa, và sửa mò thì lần sau không tìm được nữa' : '',
+           !w.noiGioiHan ? 'SỔ NỐI BĂM KHÔNG NÓI RA GIỚI HẠN CỦA CHÍNH NÓ — người đọc ' +
+             'sẽ tin nó chống được nhiều hơn thật' : '',
+           w.cuaChuaDung.length ? 'CỬA GIÁM SÁT ĐÃ MỌC TRƯỚC KHI TRẦN CHẠY: ' +
+             w.cuaChuaDung.join(' · ') + ' — trần dựng sau một cửa đã chạy thì nó chỉ ' +
+             'là một lời nhắc' : '',
+           w.bangTheoGiay ? 'ĐÃ MỌC MỘT BẢNG DỮ LIỆU THEO GIÂY' : '',
+           w.oSinhTrac.length ? 'Ô SINH TRẮC ĐÃ XUẤT HIỆN Ở: ' + w.oSinhTrac.join(' · ') +
+             ' — sinh trắc là loại dữ liệu không đổi được khi rò: mật khẩu thì đổi, ' +
+             'khuôn mặt thì không' : '',
+           !w.duBaNgan ? 'BA NGĂN PHẠM VI THIẾU Ô canCu · giamSatDuoc · khongGiamSat · ' +
+             'baoTruoc' : '',
+           !w.duSaKhong ? 'THIẾU SÁU VIỆC SUPER ADMIN KHÔNG LÀM ĐƯỢC — một hệ giám sát ' +
+             'mà quyền cao nhất không có trần thì cái trần ấy không tồn tại' : '',
+           !w.sau60Du ? 'SÁU MƯƠI PHƯƠNG PHÁP KHÔNG CỘNG ĐỦ 60 (đang ' + w.tong60 +
+             ') hoặc có ngăn không nói vì sao' : '',
+           !w.duSuaChu ? 'THIẾU BA CÂU PHẢI SỬA của bản đặc tả' : '',
+           !w.choChuDu ? 'MỤC CHỜ KHÔNG KHAI VÌ SAO MÁY KHÔNG ĐO ĐƯỢC' : '',
+           !khoVIP.coMan ? 'CHƯA CÓ MÀN giam-sat' : '',
+           !khoVIP.trongNav ? 'MÀN KHÔNG CÓ TRONG G.NAV' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

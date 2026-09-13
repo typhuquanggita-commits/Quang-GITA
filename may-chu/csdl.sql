@@ -1875,3 +1875,48 @@ CREATE TABLE IF NOT EXISTS dongYAnhCon (
   ghiLuc    TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS ix_dongyanh ON dongYAnhCon (maCon, ghiLuc DESC);
+
+-- ═════════════════════════════════════════════════════════════
+--  GITA-VIP · TRẦN PHẠM VI GIÁM SÁT  (9.99.76)
+--
+--  Hai bảng, và cả hai đều KHÔNG có cột tóm tắt. Lệnh còn hiệu lực hay
+--  không thì TÍNH LÚC ĐỌC từ ô hanDen — một cột "dangHieuLuc" phải có
+--  ai đó chạy cập nhật, và ngày không ai chạy thì nó khai một quyền đã
+--  hết hạn là CÒN. Cùng luật với cột conHan không có trong theVungManh
+--  và cột den không có trong hoSoSongSinh.
+-- ═════════════════════════════════════════════════════════════
+
+--  Lệnh uỷ quyền giám sát. Chỉ R01 cấp; phải có hạn, phải có lý do,
+--  không tự cấp cho mình, không nhìn vai ngang hoặc trên.
+CREATE TABLE IF NOT EXISTS lenhGiamSat (
+  id        TEXT PRIMARY KEY,
+  phamVi    TEXT NOT NULL,
+  ngan      TEXT NOT NULL,          -- NHANSU · KHACH · TRE
+  choAi     TEXT NOT NULL,
+  lyDo      TEXT NOT NULL,
+  aiKy      TEXT NOT NULL,
+  hanDen    TEXT NOT NULL,          -- KHÔNG cho NULL: không có quyền vĩnh viễn
+  ghiLuc    TEXT NOT NULL,
+  thuLuc    TEXT                    -- thu tay trước hạn; NULL là chưa thu
+);
+CREATE INDEX IF NOT EXISTS ix_lenhgs_han ON lenhGiamSat (hanDen, thuLuc);
+CREATE INDEX IF NOT EXISTS ix_lenhgs_ai  ON lenhGiamSat (choAi, ghiLuc DESC);
+
+--  Sổ nối băm. Mỗi dòng mang băm của dòng trước; sửa một dòng giữa sổ
+--  là vỡ mọi dòng sau nó, và soatSoDen nói ra vỡ ở ĐÂU.
+--
+--  Nói rõ giới hạn để người đọc sau không tin quá: cách này KHÔNG chống
+--  được người xoá cả sổ hay dựng lại sổ từ đầu. Nó chống được người sửa
+--  MỘT dòng rồi để nguyên phần còn lại — và đó mới là thứ hay xảy ra,
+--  vì xoá cả sổ thì ai cũng thấy.
+CREATE TABLE IF NOT EXISTS soDen (
+  stt       INTEGER PRIMARY KEY AUTOINCREMENT,
+  luc       TEXT NOT NULL,
+  aiLam     TEXT NOT NULL,
+  viec      TEXT NOT NULL,
+  doiTuong  TEXT,
+  chiTiet   TEXT,
+  bamTruoc  TEXT NOT NULL,
+  bamTu     TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_soden_luc ON soDen (luc);
