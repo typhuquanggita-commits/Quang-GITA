@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 108 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 109 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 139 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 140 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.70',
+  version: '9.99.71',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -950,6 +950,7 @@ G.NAV = [
     {v:'tai-chinh-ceo', t:'Bảy con số CEO', h:'Bảy con số phải thấy mỗi tuần, chia BA ngăn theo nguồn · số tháng sống được tính trên tiền CỦA HỌC VIỆN · bốn luật tài chính · ba kịch bản viết trước', ic:'star', star:1, perm:'fin_view', capMo:'chung'},
     {v:'con-nguoi', t:'Con người · Ba cửa', h:'Ba cửa của một người mới — Hiến pháp 13/13 · giọng qua hàng rào 10 điểm · ba cuộc gọi có người kèm. Chưa đủ ba cửa thì KHÔNG chạm khách một mình, và cổng nằm ở chỗ ghi lượt chạm chứ không ở màn hình', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'phap-ly-rui-ro', t:'Pháp lý & rủi ro', h:'Hai luật có hiệu lực 01/01/2026 — bảy việc của Luật 91 chia theo AI LÀM · ba ô đồng ý tách bạch, ô về con do CHA MẸ ký · nút xoá chạy thật, hai phía đo-được và lời-khai · bốn câu hỏi mang tới luật sư, KHÔNG có câu trả lời', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
+    {v:'he-dieu-hanh', t:'Hệ điều hành CEO', h:'GITA-CEO-OS v3.0 — bốn nhịp vận hành, mỗi nhịp có THỜI LƯỢNG · bảng 12 chỉ số chia theo nguồn, chín cửa đo được và ba ô người khai · năm bước quyết định với hai mốc thời gian · năm chặng lộ trình, không nhảy cóc · bốn câu lệnh, câu thứ tư là phép thử', ic:'compass', star:1, perm:'fin_view', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
@@ -1409,6 +1410,7 @@ G.ITEM_EN = {
   'tai-chinh-ceo':['Seven CEO Numbers','the seven weekly numbers split into THREE panes by source · runway computed on the Academy own funds, not gross cash · four finance laws · three scenarios written in advance'],
   'con-nguoi':['People · Three Gates','the three gates a new team member passes — 13/13 on the Constitution · voice scored by the 10-point guardrail · three real calls with a mentor. Until all three are cleared, nobody touches a customer alone, and the gate sits where a touch is logged, not on a screen'],
   'phap-ly-rui-ro':['Legal & Risk','two laws in force from 2026-01-01 — the seven Law 91 duties split by WHO does them · three separate consent boxes, the child-data one signed by a PARENT · a delete request that actually runs, split into the measured half and the attested half · four questions to take to a lawyer, with no answers attached'],
+  'he-dieu-hanh':['Executive OS','GITA-CEO-OS v3.0 — four operating rhythms, each with a stated duration · a 12-metric dashboard split by source, nine measured doors and three human-entered cells · a five-step decision process pinned to two timestamps · five growth stages with no leapfrogging · four standing commands, the fourth of which is the real test'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
@@ -3746,6 +3748,10 @@ G.THUOC_CAP_PHEP = [
   'PLR_CANHBAO','PLR_LUAT','PLR_HAUKIEM','PLR_VIEC7','PLR_VIEC_LUAT',
   'PLR_DONGY','PLR_DONGY_LUAT','PLR_XOA','PLR_XOA_LUAT','PLR_VUNG4',
   'PLR_VUNG_LUAT','PLR_CHOCHU',
+  /* v9.99.71 — GITA-CEO-OS v3.0 */
+  'HDH_NHIP','HDH_NHIP_LUAT','HDH_CHISO12','HDH_CHISO_LUAT','HDH_QUYET5',
+  'HDH_QUYET_LUAT','HDH_CHANG','HDH_CHANG_LUAT','HDH_LENH4','HDH_LENH_LUAT',
+  'HDH_THUOC_TUAN','HDH_THUOC_LUAT','HDH_HATANG','HDH_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -41203,6 +41209,232 @@ G.VIEWS = G.VIEWS || {};
     else if (G.plrNgan === 'dy') o += nganDY();
     else if (G.plrNgan === 'ls') o += nganLS();
     else o += nganCanh();
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/he-dieu-hanh.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÀN HỆ ĐIỀU HÀNH  (GITA-CEO-OS v3.0)
+
+   Ba vùng uỷ quyền và hội đồng bảy ghế đã ở màn Bộ não từ 9.99.62 —
+   màn này KHÔNG dựng lại, nó dựng năm thứ còn lại của tài liệu điều
+   hành.
+
+   ══ NGĂN CHỈ SỐ CHIA HAI, KHÔNG XẾP MƯỜI HAI DÒNG LIỀN ══
+
+   Chín con số máy đo và ba con số người khai nằm hai ngăn riêng. Đặt
+   một con số gõ tay cạnh một con số đo được — cùng hàng, cùng kiểu
+   chữ — thì người đọc tin cả hai như nhau, mà con số gõ tay thì gõ
+   nhầm được, gõ đẹp lên được, hoặc quên gõ mà hàng vẫn đầy.
+
+   ══ NĂM NGĂN ══
+
+     nhịp     — bốn nhịp, mỗi nhịp có THỜI LƯỢNG
+     chỉ số   — mười hai, chia theo nguồn
+     quyết    — năm bước, và hai mốc thời gian
+     chặng    — năm chặng, và điều kiện bất di bất dịch
+     lệnh     — bốn câu lệnh, câu thứ tư là phép thử
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  var NGAN = [
+    {ma: 'nhip',  ten: 'Nhịp vận hành', ic: 'clock'},
+    {ma: 'chiso', ten: '12 chỉ số',     ic: 'star'},
+    {ma: 'quyet', ten: '5 bước quyết',  ic: 'search'},
+    {ma: 'chang', ten: '5 chặng',       ic: 'compass'},
+    {ma: 'lenh',  ten: '4 câu lệnh',    ic: 'quote'}
+  ];
+
+  var TEN_AI = {
+    maySoanNguoiQuyet: 'Máy soạn, NGƯỜI quyết',
+    nguoiQuyet: 'NGƯỜI làm, không uỷ quyền'
+  };
+
+  G.hdhNgan = G.hdhNgan || 'nhip';
+
+  function veLai() {
+    if (!G.S || G.S.view !== 'he-dieu-hanh') return;
+    if (typeof document === 'undefined' || !document.getElementById('main')) return;
+    G.render && G.render();
+  }
+  G.hdhMoNgan = function (ma) { G.hdhNgan = ma; veLai(); };
+
+  function thanhNgan() {
+    return '<div class="row" style="gap:8px;flex-wrap:wrap;margin-bottom:18px">' +
+      NGAN.map(function (n) {
+        var on = G.hdhNgan === n.ma;
+        return '<button class="btn' + (on ? ' primary' : '') + '" ' +
+          'onclick="G.hdhMoNgan(\'' + n.ma + '\')" style="gap:7px">' +
+          ic(n.ic) + h(n.ten) + '</button>';
+      }).join('') + '</div>';
+  }
+
+  /* ═══════════ NGĂN 1 · NHỊP ═══════════ */
+  function nganNhip() {
+    var l = G.HDH_NHIP_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>' + h(l.nhipHonThongMinh || '') + '</b>' +
+      '<p class="sm mt">' + h(l.motManHinh || '') + '</p>' +
+      '<p class="sm mt">' + h(l.khongCatIM || '') + '</p>' +
+      '<p class="sm muted mt">' + h(l.baNhaNgauNhien || '') + '</p></div>';
+
+    o += (G.HDH_NHIP || []).map(function (n) {
+      return '<div class="card mt" style="border-left:3px solid ' + h(n.c) + '">' +
+        '<b>' + h(n.ten) + ' — ' + h(String(n.phut)) + ' phút</b>' +
+        '<p class="sm mt">' + h(n.lam) + '</p>' +
+        '<p class="sm mt"><b>Ai làm:</b> ' + h(TEN_AI[n.aiLam] || n.aiLam) + '</p>' +
+        '<p class="sm muted mt">' + h(n.y) + '</p></div>';
+    }).join('');
+    return o;
+  }
+
+  /* ═══════════ NGĂN 2 · MƯỜI HAI CHỈ SỐ ═══════════ */
+  function nganChiSo() {
+    var l = G.HDH_CHISO_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>' + h(l.motManHinh || '') + '</b>' +
+      '<p class="sm mt">' + h(l.troChuKhongTinhLai || '') + '</p>' +
+      '<p class="sm mt">' + h(l.oTrongDocRaLaSoKhong || '') + '</p>' +
+      '<p class="sm muted mt">' + h(l.khongTronHaiLoai || '') + '</p></div>';
+
+    /* Chia theo NGUỒN, không xếp mười hai dòng liền. */
+    [['mayDo', 'Máy đo — gọi thẳng cửa đã có', 'ok'],
+     ['nguoiKhai', 'NGƯỜI khai — không có cửa máy chủ nào', 'warn']]
+      .forEach(function (nh) {
+        var ds = (G.HDH_CHISO12 || []).filter(function (c) {
+          return c.nguon === nh[0];
+        });
+        if (!ds.length) return;
+        o += U.sec(nh[1], ds.length + ' chỉ số');
+        o += U.tbl(['Mã', 'Nhóm', 'Chỉ số', nh[0] === 'mayDo' ? 'Cửa' : 'Vì sao người khai',
+          'Báo động khi'],
+          ds.map(function (c) {
+            return ['<b class="sm">' + h(c.ma) + '</b>',
+              '<span class="sm">' + h(c.nhom) + '</span>',
+              '<span class="sm">' + h(c.ten) + '</span>',
+              nh[0] === 'mayDo'
+                ? '<code class="sm">' + h(c.cua) + (c.o ? ' → ' + h(c.o) : '') + '</code>'
+                : '<span class="sm">' + h(c.y || '') + '</span>',
+              '<span class="sm">' + h(c.baoDong) + '</span>'];
+          }));
+      });
+
+    o += '<div class="card mt2" style="border-left:3px solid var(--bad)">' +
+      '<b class="sm">Chỉ số thứ mười hai</b>' +
+      '<p class="sm mt">' + h(l.chiSoCuoiKhoGianLanNhat || '') + '</p></div>';
+
+    /* Tám thước đo tuần — năm thước đích 100% không có dung sai. */
+    var tl = G.HDH_THUOC_LUAT || {};
+    o += U.sec('Tám thước đo hằng tuần', 'năm thước đích 100%, và 100% thì không có dung sai');
+    o += U.tbl(['Thước', 'Đích', 'Ai đo', 'Trỏ vào rào'],
+      (G.HDH_THUOC_TUAN || []).map(function (t) {
+        return [(t.nangNhat ? '<b class="sm" style="color:var(--bad)">' : '<b class="sm">') +
+            h(t.thuoc) + (t.nangNhat ? ' — NẶNG NHẤT' : '') + '</b>',
+          '<span class="sm">' + h(String(t.dich)) + '%</span>',
+          '<span class="sm">' + (t.nguon === 'mayDo' ? 'Máy' : 'NGƯỜI') + '</span>',
+          '<span class="sm">' + h(t.rao || t.cua || '—') + '</span>'];
+      }));
+    o += '<div class="card mt"><p class="sm">' + h(tl.motTramKhongCoDungSai || '') +
+      '</p><p class="sm muted mt">' + h(tl.namThuocDauTroVaoHangRao || '') + '</p></div>';
+    return o;
+  }
+
+  /* ═══════════ NGĂN 3 · NĂM BƯỚC QUYẾT ═══════════ */
+  function nganQuyet() {
+    var l = G.HDH_QUYET_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--bad)">' +
+      '<b>' + h(l.hoiNguocTruocKhiQuyet || '') + '</b>' +
+      '<p class="sm mt">' + h(l.baPhuongAn || '') + '</p>' +
+      '<p class="sm mt">' + h(l.coDoThiDung || '') + '</p>' +
+      '<p class="sm muted mt">' + h(l.mayKhongQuyet || '') + '</p></div>';
+
+    o += (G.HDH_QUYET5 || []).map(function (b) {
+      return '<div class="card mt" style="border-left:3px solid var(--' +
+        (b.mayCanh ? 'ok' : 'line') + ')">' +
+        '<b class="sm">' + h(b.ma) + ' · ' + h(b.ten) +
+        (b.mayCanh ? ' — máy canh' : '') + '</b>' +
+        '<p class="sm mt">' + h(b.lam) + '</p>' +
+        '<p class="sm muted mt">' + h(b.y) + '</p></div>';
+    }).join('');
+    return o;
+  }
+
+  /* ═══════════ NGĂN 4 · NĂM CHẶNG ═══════════ */
+  function nganChang() {
+    var l = G.HDH_CHANG_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--bad)">' +
+      '<b>' + h(l.khongNhayCoc || '') + '</b>' +
+      '<p class="sm mt">' + h(l.vi || '') + '</p>' +
+      '<p class="sm mt">' + h(l.mayNoiDuChuKhongChuyen || '') + '</p></div>';
+
+    o += U.tbl(['Chặng', 'Quy mô', 'Việc DUY NHẤT phải làm đúng', 'Được sang chặng sau khi'],
+      (G.HDH_CHANG || []).map(function (c) {
+        return ['<b class="sm">' + h(String(c.so)) + '. ' + h(c.ten) + '</b>',
+          '<span class="sm">' + h(c.quyMo) + '</span>',
+          '<span class="sm">' + h(c.dungMotViec) + '</span>',
+          '<span class="sm">' + h(c.quaChang) +
+            (c.nguoiDo ? ' <b>(người đo)</b>' : '') + '</span>'];
+      }));
+
+    o += '<div class="card mt2"><b class="sm">Học gì từ Google</b>' +
+      '<p class="sm mt">' + h(l.hocGiTuGoogle || '') + '</p></div>';
+    return o;
+  }
+
+  /* ═══════════ NGĂN 5 · BỐN CÂU LỆNH ═══════════ */
+  function nganLenh() {
+    var l = G.HDH_LENH_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>' + h(l.vangBaNgayLaPhepThu || '') + '</b>' +
+      '<p class="sm mt">' + h(l.nguongGoiKhongDungBanThuHai || '') + '</p></div>';
+
+    o += (G.HDH_LENH4 || []).map(function (x) {
+      return '<div class="card mt" style="border-left:3px solid var(--' +
+        (x.dangGiaNhat ? 'bad' : 'line') + ')">' +
+        '<b class="sm">' + h(x.lenh) + (x.dangGiaNhat ? ' — ĐÁNG GIÁ NHẤT' : '') + '</b>' +
+        '<p class="sm mt"><b>Ra gì:</b> ' + h(x.ra) + '</p>' +
+        '<p class="sm mt"><b>Cửa:</b> <code>' + h(x.cua) + '</code></p>' +
+        (x.y ? '<p class="sm muted mt">' + h(x.y) + '</p>' : '') + '</div>';
+    }).join('');
+
+    var ht = G.HDH_HATANG || {};
+    o += U.sec('Hạ tầng', 'không đồng → một đô la');
+    o += '<div class="card" style="border-left:3px solid var(--bad)">' +
+      '<b class="sm">Bắt buộc mới</b>' +
+      '<p class="sm mt">' + h(ht.batBuocMoi || '') + '</p></div>' +
+      '<div class="card mt"><p class="sm">' + h(ht.bacKhongDong || '') + '</p>' +
+      '<p class="sm mt">' + h(ht.bacMotDoLa || '') + '</p>' +
+      '<p class="sm muted mt">' + h(ht.giaDoiNhanh || '') + '</p></div>';
+    return o;
+  }
+
+  G.VIEWS['he-dieu-hanh'] = function () {
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>HỆ ĐIỀU HÀNH CẤP ĐIỀU HÀNH — GITA-CEO-OS v3.0</b>' +
+      '<p class="sm muted mt">Ba vùng uỷ quyền và hội đồng bảy ghế nằm ở màn <b>Bộ ' +
+      'não</b> — màn này không dựng lại. Nó dựng thứ biến bộ não từ <i>trợ lý trả ' +
+      'lời khi được hỏi</i> thành <i>bộ máy tự chạy</i>: <b>nhịp quan trọng hơn thông ' +
+      'minh</b>.</p></div>';
+
+    if (!(G.HDH_NHIP || []).length)
+      return o + U.empty('Hệ điều hành chưa mở',
+        'Kho nghề chưa nạp. Đăng nhập bằng vai có quyền nghề.', true);
+
+    o += thanhNgan();
+    if (G.hdhNgan === 'chiso') o += nganChiSo();
+    else if (G.hdhNgan === 'quyet') o += nganQuyet();
+    else if (G.hdhNgan === 'chang') o += nganChang();
+    else if (G.hdhNgan === 'lenh') o += nganLenh();
+    else o += nganNhip();
     return o;
   };
 })();

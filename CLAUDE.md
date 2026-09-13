@@ -1335,6 +1335,111 @@ là chuẩn đạo đức riêng của GITA.
 lỗi trang nên nó sống rất lâu — đúng lớp lỗi bản 9.24 đã gỡ 77 chỗ.
 
 
+## HỆ ĐIỀU HÀNH CẤP ĐIỀU HÀNH — GITA-CEO-OS v3.0 (9.99.71)
+
+Tài liệu **đi kèm** bản đặc tả Bộ não, nằm trong cùng tệp *Bộ Não
+Thiên Tài GITA 365* của chủ hệ. Màn **Hệ điều hành CEO**
+(`src/he-dieu-hanh.js`, năm ngăn), máy chủ `may-chu/he-dieu-hanh.js`,
+kho `data.he-dieu-hanh.js` (14 kho), bảng `quyetDinhLon`, bộ kiểm
+**mục 88**, chín phép đo ở `thu-worker.js`.
+
+Ba vùng uỷ quyền và hội đồng bảy ghế **đã dựng ở 9.99.62** — bản này
+không dựng lại, mục 88 canh rằng kho `HDH_*` không mọc `HDH_VUNG` hay
+`HDH_GHE`.
+
+### Cả phần này là BẢNG, và bảng thì không chặn được gì
+
+Đó là rủi ro lớn nhất của chính nó. Một màn hình đẹp có nhịp sáng,
+mười hai con số và năm bước quyết định mà không cái nào cắm vào một
+cửa thật thì nó là **một tấm áp phích** — và một tấm áp phích về kỷ
+luật vận hành làm người đọc yên tâm rằng chuyện đã được lo.
+
+Nên phép đo nặng nhất của mục 88: **mỗi tên cửa trong bảng điều khiển
+được đối chiếu với danh sách cửa THẬT**, đọc thẳng từ mã nguồn
+`worker.js`. Một bảng điều khiển trỏ vào cửa không tồn tại thì ô ấy
+trống, mà **một ô trống trong một bảng số đọc ra là số KHÔNG**.
+
+Nó bắt ngay một chỗ thật khi vừa viết xong: câu lệnh *"Soi quyết
+định"* trỏ vào `soatQuyetDinh` — một hàm thuần, không phải cửa. Sửa
+đúng cách là **tách hai cửa**: `soiQuyetDinh` chỉ ĐỌC, `ghiQuyetDinh`
+mới GHI và mới có răng. Cùng lối tách `docGopY` / `banMoiThiGiac`
+(9.99.56).
+
+### Bảng 12 chỉ số chia HAI NGĂN theo nguồn
+
+Chín chỉ số **gọi thẳng cửa đã có** (`bayConSoCEO` · `docSongSinh` ·
+`soatVungManh` · `chamKpiTaiChinh` · `doPheuThiGiac`); ba chỉ số
+**người khai** nằm ngăn riêng, mỗi cái phải nói **vì sao người khai**
+và **không được mang ô `cua`** — có ô cửa thì nó tự xưng là đo được.
+
+**Chưa ai nhập thì BỎ HẲN KHOÁ, không ghi 0.** Trống là *"chưa ai
+nhập"*, 0 là *"đo được và bằng không"*. Một số 0 cạnh chín số đo được
+đọc ra là "chưa làm việc tử tế nào".
+
+Chỉ số thứ mười hai — *số việc tử tế tầng 4–5* — **cố ý không có
+ngưỡng báo động**: đặt ngưỡng cho "việc tử tế" là mời người ta chạy
+cho đủ số. Bản đặc tả gọi nó là chỉ số ý nghĩa nhất và khó gian lận
+nhất, và nó là việc của người vì một việc tử tế đã hoàn thành thì phải
+có người nhìn thấy nó xảy ra.
+
+### Năm bước quyết định — cái răng khó làm giả nhất là HAI MỐC
+
+`quyetDinhLon` giữ `hoiNguocLuc` và `quyetLuc` riêng, và máy **so hai
+mốc**. Viết câu hỏi ngược *sau* khi quyết thì nó không còn là phép dự
+phòng — nó là **một lời biện minh**, và nó luôn nghe rất hợp lý. Một ô
+tự khai `daHoiNguoc` bật được mà không viết gì; hai mốc thì không. Mục
+88 canh rằng bảng **không mọc** ô tự khai ấy.
+
+Hai răng còn lại: **ba phương án và một phải là "không làm gì"** (hai
+phương án là một câu hỏi có/không đội lốt một lựa chọn, và "không làm
+gì" thường là phương án đúng mà nó không bao giờ tự xuất hiện); **cờ
+ĐỎ của ghế 5 hoặc ghế 7 thì DỪNG**, không ghi được bước 5.
+
+Ô `giaDinh` là cột quan trọng nhất của bảng: giả định sai thì đổi
+quyết định, mà muốn biết nó đã sai thì phải có ai đó viết nó ra từ
+đầu, trước khi biết kết quả.
+
+### Ba gia đình của nhịp tháng do MÁY BỐC
+
+`chonBaNhaNgauNhien` **không nhận một ô lọc nào** (`O_LOC_CAM`) — phép
+đo về thứ không được tồn tại, cùng lối với LR1 (mục 79). Để người chọn
+thì họ chọn ba nhà đang vui: **không ai nói dối câu nào mà cả phép
+kiểm vẫn mất nghĩa**, và đó là chỗ nguy hiểm nhất — một phép kiểm hỏng
+mà vẫn báo xanh. Mỗi lượt bốc vào nhật ký **ngay**, vì cái đáng ngờ
+chính là những lượt bốc bị bỏ đi.
+
+### Bản tin sáng: cắt thì phải NÓI RA
+
+Tối đa năm mục, xếp **GẤP lên trước**, và trả về `conLaiChuaTrinh`.
+Cắt im lặng ở con số năm **tệ hơn trình ra ba mươi**: người đọc tin
+rằng hôm nay chỉ có năm việc, và hai mươi lăm việc kia không ai biết
+là có.
+
+### Chuyển chặng: máy NÓI đủ rồi dừng
+
+`soatChuyenChang` đo điều kiện và **không tự chuyển** — mọi quyết định
+về quy mô nằm ở Vùng Đỏ. Chặng 3 và chặng 5 máy không đo được bằng một
+con số (*"chất lượng không giảm khi chủ hệ vắng hai tuần"*) và nó khai
+thẳng `nguoiDo` thay vì đoán.
+
+### "Tôi vắng 3 ngày" — ngưỡng gọi TRỎ, không chép
+
+`chuanBiVang` lấy `BoNao.DO10` — mười việc Vùng Đỏ — làm ngưỡng "bắt
+buộc gọi dù đang bận". **Hai danh sách ngưỡng thì cái nào cũng tự tin,
+và lúc gấp người ta đọc cái nào gần tay hơn.** Để trỏ được, `VIEC_DO`
+của `bo-nao.js` nay **xuất ra** thành `DO10`.
+
+Ô *"ai thay ghế nào"* **bỏ hẳn khoá**, không khai bừa một cái tên —
+khai bừa thì lúc gấp người ấy không biết mình đang được trông đợi. Mục
+chờ **HDH-02**.
+
+### Năm thước đích 100% không có dung sai
+
+Nới xuống 99% là bỏ hẳn phép canh — **một phần trăm của một nghìn lượt
+là mười gia đình**. Cả năm **trỏ** vào một điểm của hàng rào 10 điểm
+đã có, và mục 88 đối chiếu từng mã rào với bảng rào thật.
+
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

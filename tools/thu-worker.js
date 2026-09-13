@@ -4714,6 +4714,143 @@ let idTam9 = null, idDang9 = null;
     'cuộc gọi vào nhà đang xanh');
 }
 
+/* ══════════════ GITA-CEO-OS v3.0 · HỆ ĐIỀU HÀNH ══════════════
+
+   Cả phần này là BẢNG, và bảng thì không chặn được gì — đó là rủi ro
+   lớn nhất của chính nó. Nên mọi phép đo dưới đây đo CÁI RĂNG, không
+   đo chữ: hai mốc thời gian của bước hỏi ngược, cửa bốc nhà không
+   nhận ô lọc, bản tin sáng nói ra phần nó không trình, và ngưỡng gọi
+   lấy thẳng từ Bộ não chứ không chép sang. */
+{
+  const mHDH = await import('../may-chu/he-dieu-hanh.js');
+  const mBN2 = await import('../may-chu/bo-nao.js');
+
+  /* ── BẢN TIN SÁNG · CẮT THÌ PHẢI NÓI RA ── */
+  const cho = Array.from({length: 30}, (x, i) =>
+    ({ma: 'M' + i, viec: 'Việc ' + i, gap: i === 29}));
+  const bt = await goi({fn:'banTinSang', token:tkSA, u:'superadmin@gita365.vn',
+    choDuyet:cho, denDo:['NHA-DO'], cauKhach:'Hôm nay con tự ngồi vào bàn.'});
+  bao(bt.than.ok && bt.than.choDuyet.length === mHDH.TRAN_DUYET_SANG &&
+      bt.than.conLaiChuaTrinh === 25 && bt.than.choDuyet[0].ma === 'M29' &&
+      /CÒN 25 mục/.test(bt.than.vi),
+    'BẢN TIN SÁNG CẮT Ở NĂM MỤC NHƯNG NÓI RA CÒN BAO NHIÊU — và xếp mục GẤP lên trước',
+    'trình ' + bt.than.choDuyet.length + ', còn ' + bt.than.conLaiChuaTrinh + ' · cắt ' +
+    'im lặng ở con số năm là tệ hơn trình ra ba mươi: người đọc tin rằng hôm nay chỉ ' +
+    'có năm việc, và hai mươi lăm việc kia không ai biết là có');
+
+  /* ── BA NHÀ CỦA NHỊP THÁNG · MÁY BỐC, NGƯỜI KHÔNG CHỌN ── */
+  const bocLoc = await goi({fn:'chonBaNhaNgauNhien', token:tkSA,
+    u:'superadmin@gita365.vn', chiNha:['NHA-XANH']});
+  const boc = await goi({fn:'chonBaNhaNgauNhien', token:tkSA, u:'superadmin@gita365.vn'});
+  bao(!bocLoc.than.ok && bocLoc.than.code === 'COLOC' &&
+      bocLoc.than.loc.join() === 'chiNha' && boc.than.ok &&
+      boc.than.nha.length === mHDH.SO_NHA_GOI_THANG,
+    'CỬA BỐC BA NHÀ KHÔNG NHẬN MỘT Ô LỌC NÀO — để người chọn thì họ chọn ba nhà đang vui',
+    'bốc ra ' + boc.than.nha.join(' · ') + ' · không ai nói dối câu nào mà cả phép ' +
+    'kiểm vẫn mất nghĩa, và đó đúng là chỗ nguy hiểm nhất: một phép kiểm hỏng mà vẫn ' +
+    'báo xanh');
+
+  const soBoc = db.prepare(
+    "SELECT COUNT(*) c FROM audit WHERE viec = 'HDH_BOCNHA'").get().c;
+  bao(soBoc >= 1,
+    'MỖI LƯỢT BỐC ĐỀU VÀO NHẬT KÝ NGAY — bốc lại cho tới khi ra ba nhà vừa ý thì mọi lượt bốc đều nằm trong sổ',
+    soBoc + ' dòng · ghi sau khi bốc chứ không ghi khi "chốt", vì cái đáng ngờ chính ' +
+    'là những lượt bốc bị bỏ đi');
+
+  /* ── NĂM BƯỚC · HAI MỐC THỜI GIAN ──
+     Đây là cái răng khó làm giả nhất của cả phần. Một ô tự khai "đã
+     hỏi ngược rồi" thì bật được mà không viết gì; hai mốc thì không. */
+  const NEN_QD = {
+    hoiDat:'Có nên mở lớp ở tỉnh thứ hai trong quý này không?',
+    phuongAn:[{ten:'Mở ngay'},{ten:'Mở sau khi đủ chặng'},{ten:'Không làm gì', khongLamGi:true}],
+    hoiNguoc:'Lý do khả dĩ nhất: chất lượng ở tỉnh mới không giữ được vì chưa ai qua ba cửa.',
+    co:{G5:'XANH', G7:'XANH'},
+    quyetGi:'Hoãn tới quý sau', viSao:'Chặng 2 chưa đạt',
+    giaDinh:'Tỷ lệ ở lại 90 ngày giữ trên 60% trong ba tháng tới',
+    xemLaiKhi:'2026-12-31'
+  };
+  const T0 = Date.now();
+  const sau = new Date(T0).toISOString();
+  const truoc = new Date(T0 - 86400000).toISOString();
+
+  const nguocSau = mHDH.soatQuyetDinh(Object.assign({}, NEN_QD,
+    {hoiNguocLuc:sau, quyetLuc:truoc}));
+  const nguocTruoc = mHDH.soatQuyetDinh(Object.assign({}, NEN_QD,
+    {hoiNguocLuc:truoc, quyetLuc:sau}));
+  bao(nguocSau.dat === false &&
+      nguocSau.loi.some(l => l.ma === 'B3' && /biện minh/.test(l.vi)) &&
+      nguocTruoc.dat === true,
+    'CÂU HỎI NGƯỢC PHẢI CÓ MỐC SỚM HƠN LÚC QUYẾT — máy so HAI MỐC, không đọc một ô tự khai',
+    'viết sau khi quyết thì nó không còn là phép dự phòng — nó là một lời biện minh, ' +
+    'và nó luôn nghe rất hợp lý');
+
+  /* ── BA PHƯƠNG ÁN, VÀ MỘT PHẢI LÀ "KHÔNG LÀM GÌ" ── */
+  const haiPA = mHDH.soatQuyetDinh(Object.assign({}, NEN_QD,
+    {phuongAn:[{ten:'Mở ngay'},{ten:'Hoãn'}], hoiNguocLuc:truoc, quyetLuc:sau}));
+  const khongCoKLG = mHDH.soatQuyetDinh(Object.assign({}, NEN_QD,
+    {phuongAn:[{ten:'A'},{ten:'B'},{ten:'C'}], hoiNguocLuc:truoc, quyetLuc:sau}));
+  bao(haiPA.dat === false && haiPA.loi.some(l => /có\/không đội lốt/.test(l.vi)) &&
+      khongCoKLG.dat === false &&
+      khongCoKLG.loi.some(l => /KHÔNG LÀM GÌ/.test(l.vi)),
+    'HAI PHƯƠNG ÁN BỊ CHẶN, VÀ BA PHƯƠNG ÁN THIẾU "KHÔNG LÀM GÌ" CŨNG BỊ CHẶN',
+    'hai phương án là một câu hỏi có/không đội lốt một lựa chọn · "không làm gì" ' +
+    'thường là phương án đúng mà nó không bao giờ tự xuất hiện — không ai họp để đề ' +
+    'xuất đừng làm gì cả');
+
+  /* ── CỜ ĐỎ THÌ DỪNG, VÀ KHÔNG GHI ĐƯỢC BƯỚC 5 ── */
+  const coDo = await goi({fn:'ghiQuyetDinh', token:tkSA, u:'superadmin@gita365.vn',
+    quyet:Object.assign({}, NEN_QD, {co:{G5:'DO', G7:'XANH'},
+      hoiNguocLuc:truoc, quyetLuc:sau})});
+  const ghiDuoc = await goi({fn:'ghiQuyetDinh', token:tkSA, u:'superadmin@gita365.vn',
+    quyet:Object.assign({}, NEN_QD, {hoiNguocLuc:truoc, quyetLuc:sau})});
+  bao(!coDo.than.ok && coDo.than.code === 'CODO' && coDo.than.coDo.join() === 'G5' &&
+      ghiDuoc.than.ok === true,
+    'CỜ ĐỎ CỦA GHẾ 5 HOẶC GHẾ 7 THÌ DỪNG — không ghi được bước 5',
+    'hai ghế ấy là hai ghế DUY NHẤT có quyền phủ quyết · một hệ mà tăng trưởng luôn ' +
+    'thắng chất lượng thì nó nổ trong vòng hai năm');
+
+  /* ── CHUYỂN CHẶNG · MÁY NÓI ĐỦ HAY CHƯA RỒI DỪNG ── */
+  const chuaDu = mHDH.soatChuyenChang('CH1', {oLai90:52, tuGioiThieu:3});
+  const duRoi = mHDH.soatChuyenChang('CH1', {oLai90:64, tuGioiThieu:3});
+  const nguoiDo = mHDH.soatChuyenChang('CH3', {});
+  bao(chuaDu.du === false && chuaDu.thieu.length === 1 &&
+      duRoi.du === true && duRoi.mayKhongChuyen === true &&
+      nguoiDo.nguoiDo === true,
+    'ĐỦ ĐIỀU KIỆN THÌ MÁY VẪN KHÔNG TỰ CHUYỂN CHẶNG — nó NÓI đủ rồi dừng',
+    'chuyển chặng là một quyết định về QUY MÔ, và mọi quyết định về quy mô nằm ở ' +
+    'Vùng Đỏ · chặng 3 và chặng 5 máy không đo được bằng một con số và nó khai thẳng');
+
+  /* ── "TÔI VẮNG BA NGÀY" · NGƯỠNG GỌI LẤY THẲNG TỪ BỘ NÃO ── */
+  const vang = await goi({fn:'chuanBiVang', token:tkSA, u:'superadmin@gita365.vn',
+    ngay:3});
+  bao(vang.than.ok &&
+      JSON.stringify(vang.than.nguongGoi) === JSON.stringify(mBN2.DO10) &&
+      vang.than.aiThayGhe === undefined && vang.than.choChu === 'HDH-02',
+    'NGƯỠNG "BẮT BUỘC GỌI DÙ ĐANG BẬN" LẤY ĐÚNG MƯỜI VIỆC VÙNG ĐỎ, không dựng danh sách thứ hai',
+    mBN2.DO10.length + ' việc · hai danh sách ngưỡng thì cái nào cũng tự tin, và lúc ' +
+    'gấp người ta đọc cái nào gần tay hơn · và ô "ai thay ghế nào" BỎ HẲN KHOÁ chứ ' +
+    'không khai bừa một cái tên — khai bừa thì lúc gấp người ấy không biết mình đang ' +
+    'được trông đợi');
+
+  /* ── BẢNG ĐIỀU KHIỂN · BA Ô NGƯỜI KHAI KHÔNG RA SỐ 0 ── */
+  const bang = await goi({fn:'docBangDieuKhien', token:tkSA, u:'superadmin@gita365.vn'});
+  const coSoKhong = (bang.than.loiKhai || []).some(d => d.giaTri === 0);
+  const deuChuaNhap = (bang.than.loiKhai || []).every(d => d.chuaNhap === true);
+  bao(bang.than.ok && bang.than.doDuoc.length === 9 &&
+      bang.than.loiKhai.length === 3 && deuChuaNhap && !coSoKhong,
+    'CHƯA AI NHẬP THÌ BỎ HẲN KHOÁ, KHÔNG GHI SỐ 0 — một số 0 cạnh chín số đo được đọc ra là "chưa làm việc tử tế nào"',
+    bang.than.doDuoc.length + ' chỉ số đo được · ' + bang.than.loiKhai.length +
+    ' chỉ số người khai, nêu ở NGĂN RIÊNG · trống là "chưa ai nhập", 0 là "đo được ' +
+    'và bằng không", và hai câu ấy khác hẳn nhau');
+
+  /* ── TÁM THƯỚC TUẦN TRỎ VÀO RÀO THẬT ── */
+  const tt = mHDH.thuocTuan();
+  bao(tt.thuoc.length === 8 && tt.raoCo.length === 10 &&
+      /không có dung sai/i.test(tt.motTramKhongDungSai),
+    'NĂM THƯỚC ĐÍCH 100% KHÔNG CÓ DUNG SAI, và cả năm TRỎ vào hàng rào 10 điểm đã có',
+    'nới xuống 99% là bỏ hẳn phép canh — một phần trăm của một nghìn lượt là mười gia đình');
+}
+
 /* ══════════════ PHÂN HỆ 5 · TÀI CHÍNH ══════════════
 
    Kho đã có cả một hệ tài chính chạy thật, nên phần này chỉ đo thứ

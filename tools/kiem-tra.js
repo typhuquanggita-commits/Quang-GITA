@@ -14146,6 +14146,230 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n88 · HỆ ĐIỀU HÀNH — NHỊP QUAN TRỌNG HƠN THÔNG MINH');
+  /* ══════════════════ 88. GITA-CEO-OS v3.0 ══════════════════
+
+     Cả phần này là BẢNG, và bảng thì không chặn được gì — đó là rủi
+     ro lớn nhất của chính nó. Một màn hình đẹp có nhịp sáng, mười hai
+     con số và năm bước quyết định, mà không cái nào cắm vào một cửa
+     thật, thì nó là một tấm áp phích — và một tấm áp phích về kỷ luật
+     vận hành làm người đọc yên tâm rằng chuyện đã được lo.
+
+     Nên phép đo nặng nhất ở đây: MỖI TÊN CỬA trong bảng điều khiển
+     được đối chiếu với danh sách cửa THẬT của máy chủ. Một bảng điều
+     khiển trỏ vào một cửa không tồn tại thì ô ấy trống, mà một ô
+     trống trong một bảng số đọc ra là số KHÔNG — và không có gì báo. */
+  {
+    const mHDH = await import('../may-chu/he-dieu-hanh.js');
+    const mBN8 = await import('../may-chu/bo-nao.js');
+    const fsHDH = await import('fs/promises');
+    const magHDH = await fsHDH.readFile('may-chu/he-dieu-hanh.js', 'utf8');
+    const magWK = await fsHDH.readFile('may-chu/worker.js', 'utf8');
+    const sqlHDH = await fsHDH.readFile('may-chu/csdl.sql', 'utf8');
+
+    const khoHDH = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        nhip: (G.HDH_NHIP || []).map(x => x.ma),
+        /* Mỗi nhịp khai THỜI LƯỢNG. Một nhịp không có thời lượng thì
+           nó nở ra cho tới khi người ta bỏ hẳn. */
+        nhipThieuPhut: (G.HDH_NHIP || []).filter(x =>
+          !(Number(x.phut) > 0) || !x.aiLam || !x.y).map(x => x.ma),
+        chiSo: (G.HDH_CHISO12 || []).map(x => x.ma),
+        chiSoMay: (G.HDH_CHISO12 || []).filter(x => x.nguon === 'mayDo').map(x => x.ma),
+        chiSoNguoi: (G.HDH_CHISO12 || []).filter(x => x.nguon === 'nguoiKhai').map(x => x.ma),
+        /* Chỉ số máy-đo PHẢI khai tên cửa; chỉ số người-khai KHÔNG
+           được có ô cửa — có ô cửa thì nó tự xưng là đo được. */
+        mayThieuCua: (G.HDH_CHISO12 || []).filter(x =>
+          x.nguon === 'mayDo' && !x.cua).map(x => x.ma),
+        nguoiCoCua: (G.HDH_CHISO12 || []).filter(x =>
+          x.nguon === 'nguoiKhai' && x.cua).map(x => x.ma),
+        /* Chỉ số người-khai phải nói VÌ SAO người khai. */
+        nguoiThieuLyDo: (G.HDH_CHISO12 || []).filter(x =>
+          x.nguon === 'nguoiKhai' && !x.y).map(x => x.ma),
+        cuaKhai: Array.from(new Set((G.HDH_CHISO12 || [])
+          .filter(x => x.cua).map(x => x.cua))),
+        quyet: (G.HDH_QUYET5 || []).map(x => x.ma),
+        quyetThieu: (G.HDH_QUYET5 || []).filter(x =>
+          !x.lam || !x.y || typeof x.mayCanh !== 'boolean').map(x => x.ma),
+        chang: (G.HDH_CHANG || []).map(x => x.ma),
+        /* Mỗi chặng khai ĐO BẰNG GÌ, hoặc khai thẳng là người đo. */
+        changCaHai: (G.HDH_CHANG || []).filter(x => x.doBang && x.nguoiDo).map(x => x.ma),
+        changKhongCo: (G.HDH_CHANG || []).filter(x => !x.doBang && !x.nguoiDo).map(x => x.ma),
+        lenh: (G.HDH_LENH4 || []).map(x => x.ma),
+        lenhCua: (G.HDH_LENH4 || []).map(x => x.cua),
+        /* ĐÚNG MỘT câu lệnh mang dấu "đáng giá nhất". Hai câu cùng
+           mang thì cái nhấn mất nghĩa. */
+        lenhDangGia: (G.HDH_LENH4 || []).filter(x => x.dangGiaNhat).map(x => x.ma),
+        thuoc: (G.HDH_THUOC_TUAN || []).map(x => x.ma),
+        thuocRao: (G.HDH_THUOC_TUAN || []).filter(x => x.rao).map(x => x.rao),
+        thuoc100: (G.HDH_THUOC_TUAN || []).filter(x => Number(x.dich) === 100).map(x => x.ma),
+        thuocNang: (G.HDH_THUOC_TUAN || []).filter(x => x.nangNhat).map(x => x.ma),
+        raoCo: (G.BN_RAO10 || []).map(x => x.ma || x[0]),
+        /* Ba vùng và bảy ghế KHÔNG được dựng lại ở kho này — chúng đã
+           ở BN_VUNG và BN_GHE từ 9.99.62. */
+        coVungRieng: !!(G.HDH_VUNG || G.HDH_GHE),
+        ghePhuQuyet: (G.BN_GHE || []).filter(x => x.phuQuyet).map(x => x.ma)
+      };
+    });
+
+    const v = {};
+    v.nhipKhop = JSON.stringify(khoHDH.nhip) === JSON.stringify(mHDH.NHIP || []);
+    v.chiSoKhop = JSON.stringify(khoHDH.chiSo) === JSON.stringify(mHDH.CHISO12 || []);
+    v.nguoiKhaiKhop = JSON.stringify(khoHDH.chiSoNguoi) ===
+      JSON.stringify(mHDH.CHISO_NGUOI_KHAI || []);
+    v.quyetKhop = JSON.stringify(khoHDH.quyet) === JSON.stringify(mHDH.QUYET5 || []);
+    v.changKhop = JSON.stringify(khoHDH.chang) === JSON.stringify(mHDH.CHANG || []);
+    v.lenhKhop = JSON.stringify(khoHDH.lenh) === JSON.stringify(mHDH.LENH4 || []);
+    v.thuocKhop = JSON.stringify(khoHDH.thuoc) === JSON.stringify(mHDH.THUOC_TUAN || []);
+    v.nhipThieuPhut = khoHDH.nhipThieuPhut;
+    v.mayThieuCua = khoHDH.mayThieuCua;
+    v.nguoiCoCua = khoHDH.nguoiCoCua;
+    v.nguoiThieuLyDo = khoHDH.nguoiThieuLyDo;
+    v.quyetThieu = khoHDH.quyetThieu;
+    v.changCaHai = khoHDH.changCaHai;
+    v.changKhongCo = khoHDH.changKhongCo;
+
+    /* ══ MỖI TÊN CỬA PHẢI LÀ MỘT CỬA THẬT ══
+       Danh sách cửa của worker là danh sách trắng CHO_PHEP; đọc thẳng
+       mã nguồn để lấy nó, không tin một bản chép. */
+    const dsCua = (magWK.match(/if \(fn === '([A-Za-z0-9_]+)'\)/g) || [])
+      .map(x => x.replace(/if \(fn === '|'\)/g, ''));
+    v.cuaMa = khoHDH.cuaKhai.filter(c => dsCua.indexOf(c) < 0);
+    v.cuaLenhMa = khoHDH.lenhCua.filter(c => dsCua.indexOf(c) < 0);
+
+    /* ══ ĐÚNG MỘT CÂU LỆNH ĐÁNG GIÁ NHẤT ══ */
+    v.motLenhDangGia = khoHDH.lenhDangGia.length === 1 &&
+      khoHDH.lenhDangGia[0] === 'L4';
+
+    /* ══ KHÔNG DỰNG LẠI BA VÙNG VÀ BẢY GHẾ ══
+       Chúng đã ở BN_VUNG / BN_GHE từ 9.99.62. Dựng bản thứ hai thì
+       hai bảng trôi xa nhau và cả hai đều xanh. */
+    v.khongDungLai = khoHDH.coVungRieng === false &&
+      JSON.stringify(khoHDH.ghePhuQuyet) === JSON.stringify(mHDH.GHE_PHU_QUYET || []);
+
+    /* ══ NGƯỠNG GỌI LẤY THẲNG TỪ BỘ NÃO, KHÔNG CHÉP ══ */
+    v.nguongTro = /BoNao\.DO10/.test(magHDH) &&
+      !/kyHopDong|tuyenNguoi|duyetChiVuotNguong/.test(magHDH);
+
+    /* ══ MÔ-ĐUN KHÔNG TỰ TÍNH MỘT CON SỐ TIỀN NÀO ══
+       Chép công thức số-tháng-sống sang đây thì sửa luật tài chính ở
+       một chỗ mà bảng điều khiển vẫn nói con số cũ. */
+    v.khongTinhLai = !/loiNhuan|tienMat|runway|\/\s*chiMoiThang/.test(magHDH);
+
+    /* ══ NĂM THƯỚC 100% TRỎ VÀO RÀO THẬT ══ */
+    v.thuocTroRao = khoHDH.thuoc100.length === 5 &&
+      khoHDH.thuocRao.length === 5 &&
+      khoHDH.thuocRao.every(r => khoHDH.raoCo.indexOf(r) >= 0) &&
+      khoHDH.thuocNang.length === 1 && khoHDH.thuocNang[0] === 'T5';
+
+    /* ══ BẢNG QUYẾT ĐỊNH GIỮ HAI MỐC THỜI GIAN ══ */
+    const bangQD = (sqlHDH.match(
+      /CREATE TABLE IF NOT EXISTS quyetDinhLon \(([\s\S]*?)\);/) || ['', ''])[1];
+    v.haiMoc = /hoiNguocLuc/.test(bangQD) && /quyetLuc/.test(bangQD) &&
+      /giaDinh/.test(bangQD) && /xemLaiKhi/.test(bangQD) &&
+      !/^\s*(daHoiNguoc|hoiNguocRoi)\s/mi.test(bangQD);
+
+    /* ══ HÀNH VI ══ */
+    const T = Date.now();
+    const NEN = {
+      hoiDat: 'Có nên mở lớp ở tỉnh thứ hai không?',
+      phuongAn: [{ ten: 'Mở' }, { ten: 'Hoãn' }, { ten: 'Không làm gì', khongLamGi: true }],
+      hoiNguoc: 'Chất lượng ở tỉnh mới không giữ được.',
+      co: { G5: 'XANH', G7: 'XANH' },
+      quyetGi: 'Hoãn', viSao: 'Chặng 2 chưa đạt',
+      giaDinh: 'Ở lại 90 ngày giữ trên 60%', xemLaiKhi: '2026-12-31'
+    };
+    const sau = new Date(T).toISOString();
+    const truoc = new Date(T - 86400000).toISOString();
+    const qSau = mHDH.soatQuyetDinh({ ...NEN, hoiNguocLuc: sau, quyetLuc: truoc });
+    const qTruoc = mHDH.soatQuyetDinh({ ...NEN, hoiNguocLuc: truoc, quyetLuc: sau });
+    const qHaiPA = mHDH.soatQuyetDinh({ ...NEN,
+      phuongAn: [{ ten: 'A' }, { ten: 'B' }], hoiNguocLuc: truoc, quyetLuc: sau });
+    const qDo = mHDH.soatQuyetDinh({ ...NEN, co: { G5: 'DO', G7: 'XANH' },
+      hoiNguocLuc: truoc, quyetLuc: sau });
+    v.haiMocChay = qSau.dat === false && qTruoc.dat === true &&
+      qHaiPA.dat === false && qDo.dung === true && qDo.coDo.join() === 'G5';
+
+    /* Cửa bốc ba nhà KHÔNG nhận một ô lọc nào — phép đo về thứ không
+       được tồn tại, cùng lối với LR1 (mục 79). */
+    v.bocKhongLoc = (mHDH.O_LOC_CAM || []).length >= 4 &&
+      (mHDH.O_LOC_CAM || []).indexOf('chonTay') >= 0;
+
+    /* Máy nói ĐỦ rồi dừng, không tự chuyển chặng. */
+    const chDu = mHDH.soatChuyenChang('CH1', { oLai90: 64, tuGioiThieu: 2 });
+    const chChua = mHDH.soatChuyenChang('CH1', { oLai90: 52, tuGioiThieu: 2 });
+    v.changChay = chDu.du === true && chDu.mayKhongChuyen === true &&
+      chChua.du === false && chChua.thieu.length === 1;
+
+    const hdhDat =
+      v.nhipKhop && v.chiSoKhop && v.nguoiKhaiKhop && v.quyetKhop && v.changKhop &&
+      v.lenhKhop && v.thuocKhop &&
+      !v.nhipThieuPhut.length && !v.mayThieuCua.length && !v.nguoiCoCua.length &&
+      !v.nguoiThieuLyDo.length && !v.quyetThieu.length && !v.changCaHai.length &&
+      !v.changKhongCo.length && !v.cuaMa.length && !v.cuaLenhMa.length &&
+      v.motLenhDangGia && v.khongDungLai && v.nguongTro && v.khongTinhLai &&
+      v.thuocTroRao && v.haiMoc && v.haiMocChay && v.bocKhongLoc && v.changChay;
+
+    bao(hdhDat,
+      'GITA-CEO-OS v3.0 · NHỊP QUAN TRỌNG HƠN THÔNG MINH — VÀ CẢ PHẦN NÀY LÀ BẢNG, NÊN MỖI BẢNG PHẢI CẮM VÀO MỘT CỬA THẬT. Đó là rủi ro lớn nhất của chính nó: một màn hình đẹp có nhịp sáng, mười hai con số và năm bước quyết định mà không cái nào cắm vào cửa nào thì nó là một tấm áp phích, và một tấm áp phích về kỷ luật vận hành làm người đọc yên tâm rằng chuyện đã được lo. Nên phép đo nặng nhất đối chiếu TỪNG TÊN CỬA của bảng điều khiển với danh sách cửa THẬT đọc thẳng từ mã nguồn worker — một bảng điều khiển trỏ vào một cửa không tồn tại thì ô ấy trống, mà một ô trống trong một bảng số đọc ra là số KHÔNG, và không có gì báo. Bảng 12 chỉ số chia HAI NGĂN theo nguồn: chín chỉ số gọi thẳng cửa đã có và ba chỉ số NGƯỜI KHAI nằm riêng, mỗi chỉ số người khai phải nói VÌ SAO người khai và KHÔNG được mang ô cửa — có ô cửa thì nó tự xưng là đo được. Chưa ai nhập thì bỏ hẳn khoá chứ không ghi 0: trống là "chưa ai nhập", 0 là "đo được và bằng không". Năm bước quyết định có ba cái răng, và cái khó làm giả nhất là HAI MỐC THỜI GIAN — câu hỏi ngược phải có mốc sớm hơn lúc quyết, vì viết sau khi quyết thì nó không còn là phép dự phòng mà là một lời biện minh, và nó luôn nghe rất hợp lý; một ô tự khai "đã hỏi ngược rồi" bật được mà không viết gì, hai mốc thì không. Ba phương án và một phải là KHÔNG LÀM GÌ — hai phương án là một câu hỏi có/không đội lốt một lựa chọn, và "không làm gì" thường là phương án đúng mà nó không bao giờ tự xuất hiện. Cờ ĐỎ của ghế 5 hoặc ghế 7 thì DỪNG. Ba gia đình của nhịp tháng do MÁY BỐC và cửa ấy không nhận một ô lọc nào — để người chọn thì họ chọn ba nhà đang vui, không ai nói dối câu nào mà cả phép kiểm vẫn mất nghĩa. Máy đo điều kiện chuyển chặng rồi DỪNG, không tự chuyển: mọi quyết định về quy mô nằm ở Vùng Đỏ. Ngưỡng "bắt buộc gọi dù đang bận" lấy THẲNG mười việc Vùng Đỏ của Bộ não chứ không chép sang — hai danh sách ngưỡng thì cái nào cũng tự tin, và lúc gấp người ta đọc cái nào gần tay hơn. Và năm thước đích 100% KHÔNG có dung sai, cả năm trỏ vào một điểm của hàng rào 10 điểm đã có',
+      hdhDat
+        ? khoHDH.nhip.length + ' nhịp, mỗi nhịp có thời lượng · ' +
+          khoHDH.chiSoMay.length + ' chỉ số đo được qua ' + khoHDH.cuaKhai.length +
+          ' cửa THẬT (' + khoHDH.cuaKhai.join(' · ') + ') + ' +
+          khoHDH.chiSoNguoi.length + ' chỉ số người khai ở ngăn riêng · ' +
+          khoHDH.quyet.length + ' bước, hai mốc thời gian trong bảng · ' +
+          khoHDH.chang.length + ' chặng · ' + khoHDH.lenh.length +
+          ' câu lệnh, đúng một câu mang dấu đáng-giá-nhất · ' +
+          khoHDH.thuoc100.length + ' thước đích 100% trỏ vào rào thật'
+        : [!v.nhipKhop ? 'BẢN CHÉP BỐN NHỊP Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.chiSoKhop ? 'BẢN CHÉP MƯỜI HAI CHỈ SỐ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nguoiKhaiKhop ? 'DANH SÁCH CHỈ SỐ NGƯỜI-KHAI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.quyetKhop ? 'BẢN CHÉP NĂM BƯỚC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.changKhop ? 'BẢN CHÉP NĂM CHẶNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.lenhKhop ? 'BẢN CHÉP BỐN CÂU LỆNH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.thuocKhop ? 'BẢN CHÉP TÁM THƯỚC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.nhipThieuPhut.length ? 'NHỊP KHÔNG KHAI THỜI LƯỢNG, AI LÀM, HOẶC VÌ SAO: ' +
+             v.nhipThieuPhut.join(' · ') + ' — một nhịp không có thời lượng thì nó nở ' +
+             'ra cho tới khi người ta bỏ hẳn' : '',
+           v.cuaMa.length ? 'BẢNG ĐIỀU KHIỂN TRỎ VÀO CỬA KHÔNG TỒN TẠI: ' +
+             v.cuaMa.join(' · ') + ' — ô ấy trống, mà một ô trống trong một bảng số ' +
+             'đọc ra là số KHÔNG, và không có gì báo' : '',
+           v.cuaLenhMa.length ? 'CÂU LỆNH TRỎ VÀO CỬA KHÔNG TỒN TẠI: ' +
+             v.cuaLenhMa.join(' · ') : '',
+           v.mayThieuCua.length ? 'CHỈ SỐ MÁY-ĐO KHÔNG KHAI TÊN CỬA: ' +
+             v.mayThieuCua.join(' · ') : '',
+           v.nguoiCoCua.length ? 'CHỈ SỐ NGƯỜI-KHAI LẠI MANG Ô CỬA: ' +
+             v.nguoiCoCua.join(' · ') + ' — có ô cửa thì nó tự xưng là đo được' : '',
+           v.nguoiThieuLyDo.length ? 'CHỈ SỐ NGƯỜI-KHAI KHÔNG NÓI VÌ SAO NGƯỜI KHAI: ' +
+             v.nguoiThieuLyDo.join(' · ') : '',
+           v.quyetThieu.length ? 'BƯỚC QUYẾT ĐỊNH THIẾU Ô: ' + v.quyetThieu.join(' · ') : '',
+           v.changCaHai.length ? 'CHẶNG KHAI CẢ đo-bằng LẪN người-đo: ' +
+             v.changCaHai.join(' · ') + ' — mỗi chặng đúng MỘT đường' : '',
+           v.changKhongCo.length ? 'CHẶNG KHÔNG KHAI ĐƯỜNG NÀO: ' +
+             v.changKhongCo.join(' · ') : '',
+           !v.motLenhDangGia ? 'PHẢI CÓ ĐÚNG MỘT CÂU LỆNH MANG DẤU "đáng giá nhất", ' +
+             'và nó phải là L4 — hai câu cùng mang thì cái nhấn mất nghĩa' : '',
+           !v.khongDungLai ? 'KHO NÀY DỰNG LẠI BA VÙNG HOẶC BẢY GHẾ — chúng đã ở ' +
+             'BN_VUNG / BN_GHE từ 9.99.62, và hai bảng trôi xa nhau thì cả hai đều xanh' : '',
+           !v.nguongTro ? 'NGƯỠNG GỌI KHÔNG LẤY TỪ BoNao.DO10, hoặc đã chép danh sách ' +
+             'Vùng Đỏ sang mô-đun này — lúc gấp người ta đọc cái nào gần tay hơn' : '',
+           !v.khongTinhLai ? 'MÔ-ĐUN TỰ TÍNH LẠI MỘT CON SỐ TIỀN — sửa luật tài chính ' +
+             'ở một chỗ mà bảng điều khiển vẫn nói con số cũ, và không ai biết là nó cũ' : '',
+           !v.thuocTroRao ? 'NĂM THƯỚC ĐÍCH 100% KHÔNG TRỎ ĐỦ VÀO RÀO THẬT, hoặc số ' +
+             'thước 100% đã đổi, hoặc dấu "nặng nhất" không nằm đúng ở T5' : '',
+           !v.haiMoc ? 'BẢNG QUYẾT ĐỊNH THIẾU HAI MỐC THỜI GIAN, thiếu ô giả định, ' +
+             'hoặc đã mọc một ô tự khai "đã hỏi ngược rồi"' : '',
+           !v.haiMocChay ? 'PHÉP SO HAI MỐC KHÔNG CHẠY THẬT — câu hỏi ngược viết sau ' +
+             'khi quyết vẫn qua, hoặc hai phương án vẫn qua, hoặc cờ ĐỎ không dừng' : '',
+           !v.bocKhongLoc ? 'CỬA BỐC BA NHÀ CÒN NHẬN Ô LỌC — để người chọn thì họ chọn ' +
+             'ba nhà đang vui, và cả phép kiểm mất nghĩa mà không ai nói dối câu nào' : '',
+           !v.changChay ? 'PHÉP ĐO CHUYỂN CHẶNG KHÔNG CHẠY THẬT, hoặc máy TỰ CHUYỂN ' +
+             'chặng thay vì nói đủ rồi dừng' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

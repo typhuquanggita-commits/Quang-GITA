@@ -1677,3 +1677,41 @@ CREATE TABLE IF NOT EXISTS yeuCauXoa (
 -- Câu hỏi nóng của sổ là "cái nào QUÁ HẠN mà chưa xoá", và đó là một
 -- phép lọc khoảng trên hạn xử lý.
 CREATE INDEX IF NOT EXISTS ix_xoa_han ON yeuCauXoa (hanXuLy);
+
+-- ═════════════════════════════════════════════════════════════
+--  SỔ QUYẾT ĐỊNH LỚN — năm bước của GITA-CEO-OS
+--
+--  HAI MỐC THỜI GIAN, và đó là lý do bảng này tồn tại:
+--
+--    hoiNguocLuc  lúc viết câu "nếu một năm nữa việc này thất bại…"
+--    quyetLuc     lúc chốt
+--
+--  Máy SO HAI MỐC chứ không đọc một ô tự khai "đã hỏi ngược rồi".
+--  Viết câu hỏi ngược SAU khi quyết thì nó không còn là phép dự phòng
+--  — nó là một lời biện minh, và nó luôn nghe rất hợp lý. Một ô tự
+--  khai không phân biệt được hai chuyện ấy; hai mốc thì phân biệt được.
+--
+--  Cột `giaDinh` là cột quan trọng nhất của bảng. Giả định sai thì
+--  đổi quyết định, không cố chấp — mà muốn biết nó đã sai thì phải có
+--  ai đó viết nó ra từ đầu, trước khi biết kết quả.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS quyetDinhLon (
+  id           TEXT PRIMARY KEY,
+  hoiDat       TEXT NOT NULL,
+  soPhuongAn   INTEGER NOT NULL,
+  hoiNguoc     TEXT NOT NULL,
+  hoiNguocLuc  TEXT NOT NULL,
+  coG5         TEXT NOT NULL,        -- DO · VANG · XANH
+  coG7         TEXT NOT NULL,
+  quyetGi      TEXT NOT NULL,
+  viSao        TEXT NOT NULL,
+  giaDinh      TEXT NOT NULL,
+  xemLaiKhi    TEXT NOT NULL,
+  quyetLuc     TEXT NOT NULL,
+  boiAi        TEXT NOT NULL,
+  ghiLuc       TEXT NOT NULL
+);
+
+-- Câu hỏi nóng của sổ là "quyết định nào tới hạn xem lại", và đó là
+-- một phép lọc khoảng trên ngày xem lại.
+CREATE INDEX IF NOT EXISTS ix_qd_xemlai ON quyetDinhLon (xemLaiKhi);

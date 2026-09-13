@@ -252,13 +252,17 @@ export function soatRaNgoai(chu) {
 const VIEC_XANH = ['traLoiBangDaDuyet', 'guiWowTheoLich', 'nhanDenVang',
   'capNhatHoSo', 'tinhDenBaMau', 'sinhBayNhanhNhap', 'tongHopBayConSo',
   'sinhDeThiDoiNgu', 'soanLoTrinhNhap'];
-const VIEC_DO = ['kyHopDong', 'tuyenNguoi', 'datGia', 'duyetChiVuotNguong',
+/* Mười quyết định không bao giờ giao cho máy. XUẤT RA từ 9.99.71 vì
+   câu lệnh "Tôi vắng 3 ngày" của Hệ điều hành phải lấy ngưỡng gọi
+   TỪ ĐÂY chứ không chép sang — hai danh sách ngưỡng thì cái nào cũng
+   tự tin, và lúc gấp người ta đọc cái nào gần tay hơn. */
+export const DO10 = ['kyHopDong', 'tuyenNguoi', 'datGia', 'duyetChiVuotNguong',
   'suaHienPhap', 'xuLyKhungHoang', 'quyetDuLieuCaNhan', 'hoanTien',
   'moSanPham', 'anToanTreEm'];
 
 export function vungCuaViec(ma) {
   const m = String(ma || '');
-  if (VIEC_DO.indexOf(m) >= 0) return { vung: 'DO', uyQuyen: false,
+  if (DO10.indexOf(m) >= 0) return { vung: 'DO', uyQuyen: false,
     vi: 'Chỉ chủ hệ. Sai thì không sửa lại được, hoặc sai thì có người bị thiệt ' +
       'hại thật — luật vàng của bản đặc tả.' };
   if (VIEC_XANH.indexOf(m) >= 0) return { vung: 'XANH', uyQuyen: true,
