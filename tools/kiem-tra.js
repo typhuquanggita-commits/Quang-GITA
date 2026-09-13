@@ -13547,6 +13547,164 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n85 · BỘ TỐI ƯU GÓI — HÀM MỤC TIÊU LÀ HIẾN PHÁP VIẾT THÀNH MÃ');
+  /* ══════════════════ 85. BỘ TỐI ƯU CẤU HÌNH GÓI ══════════════════
+
+     Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ, viết lại bằng JS vì
+     kho không có bước biên dịch và tệp `gita365-gia-goi` mà nó import
+     không tồn tại ở đây.
+
+     Thứ đáng đo nhất là HÀM MỤC TIÊU: đủ tiền rồi thì phục vụ thêm
+     người, không lấy thêm tiền của cùng số người. Đo bằng HÀNH VI —
+     hai cấu hình cùng đạt mục tiêu, cái rẻ hơn phải thắng dù lãi ít
+     hơn; chưa đạt thì ngược lại. Một lời khai "ưu tiên phục vụ" không
+     đo được gì. */
+  {
+    const mTU = await import('../may-chu/toi-uu-goi.js');
+    const mGG = await import('../may-chu/gia-goi.js');
+
+    const khoTU = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        mucTieu: (G.TU_MUCTIEU || []).map(x => x.ma),
+        mucThieu: (G.TU_MUCTIEU || []).filter(x => !x.toiDaHoa || !x.vi).map(x => x.ma),
+        rangBuoc: (G.TU_RANGBUOC || []).map(x => x.ma),
+        /* Mỗi ràng buộc phải khai CỨNG hay MỀM. Không khai thì một ràng
+           buộc không tuyển nổi người bị chấm ngang một ràng buộc biên
+           gộp hơi thấp, và cấu hình không tồn tại vẫn thắng nhờ điểm. */
+        rbThieuCung: (G.TU_RANGBUOC || []).filter(x => typeof x.cung !== 'boolean')
+          .map(x => x.ma),
+        rbCung: (G.TU_RANGBUOC || []).filter(x => x.cung).map(x => x.ma),
+        daVa: (G.TU_DA_VA || []).map(x => x.ma),
+        /* Mỗi chỗ đã vá phải nói HỎNG THẾ NÀO và VÁ RA SAO. Chỉ ghi
+           "đã vá" thì lần sau không ai biết vá cái gì, và người sửa
+           sau vá ngược lại mà không thấy mình đang làm gì. */
+        vaThieu: (G.TU_DA_VA || []).filter(x => !x.hong || !x.va).map(x => x.ma),
+        quyDoi: G.TU_QUYDOI || {},
+        chiPhiKhung: (G.TU_CHIPHI_KHUNG || []).length,
+        chiPhiO: (G.TU_CHIPHI_O || []).map(x => x.o),
+        oThieu: (G.TU_CHIPHI_O || []).filter(x => !x.la || !x.donVi).map(x => x.o)
+      };
+    });
+
+    const v = {};
+    v.mucKhop = JSON.stringify(khoTU.mucTieu) === JSON.stringify(mTU.MUC_TIEU || []);
+    v.rbKhop = JSON.stringify(khoTU.rangBuoc) === JSON.stringify(mTU.RANG_BUOC_MA || []);
+    v.rbCungKhop = JSON.stringify(khoTU.rbCung) === JSON.stringify(mTU.RANG_BUOC_CUNG || []);
+    v.vaKhop = JSON.stringify(khoTU.daVa) === JSON.stringify(mTU.DA_VA || []);
+    v.oKhop = JSON.stringify(khoTU.chiPhiO) === JSON.stringify(mGG.O_CHI_PHI || []);
+    v.quyDoiKhop = khoTU.quyDoi.moiGiaDinh === mTU.MOI_GIA_DINH &&
+      khoTU.quyDoi.moiDongGiaTB === mTU.MOI_DONG_GIA_TB;
+    v.mucThieu = khoTU.mucThieu;
+    v.rbThieuCung = khoTU.rbThieuCung;
+    v.vaThieu = khoTU.vaThieu;
+    v.oThieu = khoTU.oThieu;
+    /* Khung chi phí phải RỖNG cho tới khi chủ hệ điền. Có dòng ở đây
+       nghĩa là ai đó đã đoán hộ một mô hình chi phí. */
+    v.khungRong = khoTU.chiPhiKhung === 0;
+
+    /* ══ GỌI THẲNG — BỐN CHỖ VÁ ══ */
+    const mau = [300000, 287431, 999999, 1000000, 2500000, 10000000, 15000000];
+    v.v1 = mau.every(x => mTU.lamTron(x) === mTU.lamTron(mTU.lamTron(x)));
+    v.v2 = Math.abs(mTU.lamTron(1000000) - mTU.lamTron(999999)) <= 100000 &&
+      mTU.lamTron(1000000) >= 1000000;
+    v.v3 = mau.concat([290000]).every(x => mTU.giaDep(x) === mTU.giaDep(mTU.giaDep(x))) &&
+      mTU.giaDep(300000) === 290000 && mTU.giaDep(15000000) === 15000000;
+
+    const TS = { donGiaBuoi: { NHOM: 300000, COACH_1_1: 800000, TU_HOC: 0 },
+      tyLeLapDay: 0.8, quyMoNhom: { NHOM: 15, NHOM_NHO: 6, NHOM_LON: 25, HOI_THAO: 80 },
+      khoBaiGiangMoiNam: 500000000, quanLyVaTiepThi: 800000000, thueSuat: 0.2 };
+    const LO = [
+      { ma: 'A0', ten: 'Free', nhanh: 'TU_DI', giaNiemYet: 0, tyLeChon: 0,
+        buoi: [{ loai: 'TU_HOC', soBuoi: 2 }] },
+      { ma: 'A1', ten: 'Lỗ', nhanh: 'TU_DI', giaNiemYet: 100000, tyLeChon: 0.5,
+        buoi: [{ loai: 'NHOM', soBuoi: 20 }] }];
+    const gLo = mTU.giaiQuyMo(LO, TS, mTU.RANG_BUOC_MAC_DINH);
+    v.v4 = gLo.giaiDuoc === false && /KHÔNG tăng theo quy mô/.test(gLo.vi);
+
+    /* ══ HAI BẬC ƯU TIÊN, ĐO BẰNG HÀNH VI ══ */
+    const RB = Object.assign({}, mTU.RANG_BUOC_MAC_DINH,
+      { loiNhuanSauThueToiThieu: 1, soNguoiDayToiDa: 99999, soLuotFreeToiDa: 5000 });
+    const NEN = [
+      { ma: 'A0', ten: 'Free', nhanh: 'TU_DI', giaNiemYet: 0, tyLeChon: 0,
+        buoi: [{ loai: 'TU_HOC', soBuoi: 2 }] },
+      { ma: 'A1', ten: 'Gói', nhanh: 'TU_DI', giaNiemYet: 2000000, tyLeChon: 1,
+        buoi: [{ loai: 'NHOM', soBuoi: 4 }] }];
+    const re = NEN.map(g => Object.assign({}, g,
+      { giaNiemYet: g.giaNiemYet > 0 ? 1900000 : 0 }));
+    const dCao = mTU.chamDiem(NEN, TS, RB, 4000);
+    const dRe = mTU.chamDiem(re, TS, RB, 4000);
+    const RB_CAO = Object.assign({}, RB, { loiNhuanSauThueToiThieu: 1e15 });
+    const cCao = mTU.chamDiem(NEN, TS, RB_CAO, 4000);
+    const cRe = mTU.chamDiem(re, TS, RB_CAO, 4000);
+    v.haiBac = dCao.datMucTieuLoiNhuan && dRe.datMucTieuLoiNhuan &&
+      dRe.loiNhuanSauThue < dCao.loiNhuanSauThue && dRe.tong > dCao.tong &&
+      !cCao.datMucTieuLoiNhuan && cCao.tong > cRe.tong;
+
+    /* Gác Hiến pháp và cổng thiếu mô hình chi phí. */
+    let batFree = false;
+    try { mGG.kiemHienPhap([{ ma: 'B1', nhanh: 'TU_DI', giaNiemYet: 500000,
+      tyLeChon: 1, buoi: [] }], TS); } catch (e) { batFree = e.hienPhap === true; }
+    const thieuTs = mGG.kiemThamSo({ donGiaBuoi: {}, tyLeLapDay: 0.8 });
+    v.gac = batFree && thieuTs.du === false && /KHÔNG đoán hộ/.test(thieuTs.vi);
+
+    /* Ràng buộc CỨNG tách riêng khỏi ràng buộc mềm. */
+    const dCung = mTU.chamDiem(NEN, TS,
+      Object.assign({}, RB, { soNguoiDayToiDa: 0 }), 4000);
+    v.cungRieng = dCung.phamCung === true &&
+      dCung.viPham.some(x => x.ma === 'RB1');
+
+    const tuDat =
+      v.mucKhop && v.rbKhop && v.rbCungKhop && v.vaKhop && v.oKhop && v.quyDoiKhop &&
+      !v.mucThieu.length && !v.rbThieuCung.length && !v.vaThieu.length &&
+      !v.oThieu.length && v.khungRong &&
+      v.v1 && v.v2 && v.v3 && v.v4 && v.haiBac && v.gac && v.cungRieng;
+
+    bao(tuDat,
+      'BỘ TỐI ƯU GÓI: HÀM MỤC TIÊU LÀ LỜI MỞ ĐẦU HIẾN PHÁP VIẾT THÀNH MÃ, VÀ ĐƯỢC ĐO BẰNG HÀNH VI. Chưa đạt mục tiêu lợi nhuận thì tối đa hoá lợi nhuận; ĐÃ ĐẠT rồi thì tối đa hoá số gia đình được phục vụ và HẠ giá — đủ tiền rồi thì phục vụ thêm người, không lấy thêm tiền của cùng số người. Phép đo không đọc một lời khai "ưu tiên phục vụ" nào: nó dựng hai cấu hình cùng đạt mục tiêu và đòi cái RẺ HƠN thắng dù lãi ít hơn, rồi nâng mục tiêu lên để hai bậc đảo chiều và đòi cái LÃI HƠN thắng. Và phải nói thẳng hệ quả của bậc hai: nó BỎ phần lợi nhuận vượt mục tiêu ra khỏi điểm số, nên bộ tối ưu sẽ vui vẻ đánh đổi mười tám tỷ lấy vài trăm gia đình — đó đúng là điều được yêu cầu, nên nó phải được nói ra chứ không để người đọc tự phát hiện. Bốn chỗ HỎNG THẬT trong tệp gốc đã vá và mỗi chỗ có một phép đo đỏ được: V1 làm tròn giá không idempotent nên mỗi vòng leo đồi hạ mọi giá một bước mà không phải vì điểm số, mười hai vòng là ba trăm nghìn xuống một trăm tám; V2 lệch một đồng ở biên một triệu thì phép hạ khác nhau một trăm lần; V3 giá đuôi chín chỉ áp dưới mười triệu nên hai nửa một bảng giá theo hai kiểu; V4 phép chia đôi chạy mà không kiểm điều kiện chia đôi, nên có gói biên gộp âm thì càng đông càng lỗ và nó vẫn trả về một con số trông y hệt một con số đúng. Cách vá V1–V3 là TÁCH HAI VIỆC: làm tròn là phép kỹ thuật và nó idempotent, còn giá đuôi chín là một quyết định GIÁ và nó chạy đúng một lần lúc trình ra. Và mô hình chi phí phải RỖNG cho tới khi chủ hệ điền — máy đoán ra một bộ số thì cả bộ tối ưu chạy trơn tru trên một thế giới không có thật',
+      tuDat
+        ? khoTU.mucTieu.length + ' bậc ưu tiên · ' + khoTU.rangBuoc.length +
+          ' ràng buộc (' + khoTU.rbCung.length + ' cứng: ' + khoTU.rbCung.join(' · ') +
+          ') · ' + khoTU.daVa.length + ' chỗ đã vá, mỗi chỗ khai hỏng thế nào và vá ' +
+          'ra sao · quy đổi một gia đình ≡ hạ giá ' +
+          (khoTU.quyDoi.moiGiaDinh / khoTU.quyDoi.moiDongGiaTB) + 'đ · khung chi phí ' +
+          'RỖNG, chờ chủ hệ điền'
+        : [!v.mucKhop ? 'BẢN CHÉP HAI BẬC ƯU TIÊN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.rbKhop ? 'BẢN CHÉP SÁU RÀNG BUỘC Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.rbCungKhop ? 'DANH SÁCH RÀNG BUỘC CỨNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.vaKhop ? 'DANH SÁCH CHỖ ĐÃ VÁ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.oKhop ? 'SÁU Ô MÔ HÌNH CHI PHÍ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.quyDoiKhop ? 'TỶ GIÁ QUY ĐỔI Ở MÁY CHỦ LỆCH VỚI KHO — đây là con số ' +
+             'quyết định bộ tối ưu chọn hạ giá hay mở rộng' : '',
+           v.mucThieu.length ? 'bậc ưu tiên thiếu ô tối đa hoá hoặc lý do: ' +
+             v.mucThieu.join(' · ') : '',
+           v.rbThieuCung.length ? 'RÀNG BUỘC KHÔNG KHAI CỨNG HAY MỀM: ' +
+             v.rbThieuCung.join(' · ') + ' — không khai thì một cấu hình không tuyển ' +
+             'nổi người bị chấm ngang một cấu hình biên gộp hơi thấp' : '',
+           v.vaThieu.length ? 'chỗ đã vá không nói HỎNG THẾ NÀO hoặc VÁ RA SAO: ' +
+             v.vaThieu.join(' · ') + ' — chỉ ghi "đã vá" thì người sửa sau vá ngược ' +
+             'lại mà không thấy mình đang làm gì' : '',
+           v.oThieu.length ? 'ô mô hình chi phí thiếu mô tả hoặc đơn vị: ' +
+             v.oThieu.join(' · ') : '',
+           !v.khungRong ? 'KHUNG MÔ HÌNH CHI PHÍ KHÔNG CÒN RỖNG — ai đó đã đoán hộ ' +
+             'một mô hình chi phí, và cả bộ tối ưu chạy trơn tru trên một thế giới ' +
+             'không có thật' : '',
+           !v.v1 ? 'V1 VỠ — làm tròn giá KHÔNG idempotent, nên mỗi vòng leo đồi hạ ' +
+             'mọi giá một bước mà không phải vì điểm số' : '',
+           !v.v2 ? 'V2 VỠ — còn bước nhảy ở biên một triệu' : '',
+           !v.v3 ? 'V3 VỠ — giá "đuôi 9" không áp cho mọi bậc, hoặc nó trôi khi gọi ' +
+             'lại' : '',
+           !v.v4 ? 'V4 VỠ — phép chia đôi vẫn chạy khi lợi nhuận KHÔNG tăng theo quy ' +
+             'mô, và nó trả về một con số trông y hệt một con số đúng' : '',
+           !v.haiBac ? 'HAI BẬC ƯU TIÊN KHÔNG CHẠY THẬT — đã đạt mục tiêu mà cấu ' +
+             'hình rẻ hơn KHÔNG thắng, hoặc chưa đạt mà cấu hình lãi hơn không thắng' : '',
+           !v.gac ? 'GÁC HIẾN PHÁP HOẶC CỔNG THIẾU MÔ HÌNH CHI PHÍ KHÔNG CHẠY THẬT' : '',
+           !v.cungRieng ? 'RÀNG BUỘC CỨNG KHÔNG TÁCH RIÊNG — một cấu hình không tồn ' +
+             'tại vẫn mua được đường đi bằng điểm đẹp' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

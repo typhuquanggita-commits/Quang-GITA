@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.67',
+  version: '9.99.68',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3696,6 +3696,7 @@ G.THUOC_CAP_PHEP = [
   'NT_TANG7','NT_NHOM4','NT_TANG_LUAT','NT_NHANH7','NT_NHANH_LUAT','NT_LOC7','NT_LOC_LUAT','NT_CHOCHU',
   'VH_TRUONG23','VH_TRUONG_LUAT','VH_DEN3','VH_DEN_LUAT','VH_NHIP','VH_NHIP_LUAT','VH_SO5','VH_SO_LUAT','VH_CHOCHU',
   'TC_BAY7','TC_BAY_LUAT','TC_LUAT4','TC_KICHBAN','TC_KICHBAN_LUAT','TC_CHOCHU',
+  'TU_MUCTIEU','TU_MUCTIEU_LUAT','TU_QUYDOI','TU_RANGBUOC','TU_CHIPHI_KHUNG','TU_CHIPHI_O','TU_DA_VA','TU_KIEUGIA','TU_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',

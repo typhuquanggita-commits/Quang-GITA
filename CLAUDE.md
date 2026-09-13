@@ -1119,6 +1119,88 @@ thứ quyết ai đọc được con số là cổng máy chủ.
 
 ---
 
+## Bộ tối ưu cấu hình gói (9.99.68)
+
+Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ
+`may-chu/gia-goi.js` (bộ **đánh giá**) và `may-chu/toi-uu-goi.js` (bộ
+**tìm**), kho `data.goi-toi-uu.js` (9 kho), bộ kiểm **mục 85**, chín
+phép đo ở `thu-worker.js`.
+
+### Hai chỗ phải nói trước
+
+1. Tệp gốc là **TypeScript**, mà kho không có bước biên dịch — và nó
+   `import` từ `gita365-gia-goi` **không tồn tại trong kho**. Nên bộ
+   đánh giá được dựng lại từ đầu bằng JS thuần.
+2. **Mô hình chi phí là con số của chủ hệ.** Kho không có, và máy
+   không đoán. `TU_CHIPHI_KHUNG` **rỗng** và khai ở `RONG_CO_Y`;
+   `kiemThamSo` chặn và nói thiếu ô nào.
+
+### Hàm mục tiêu là Lời mở đầu Hiến pháp viết thành mã
+
+| Bậc | Điều kiện | Tối đa hoá |
+|---|---|---|
+| ① | chưa đạt mục tiêu lợi nhuận | **lợi nhuận** |
+| ② | đã đạt | **số gia đình**, và **hạ giá** |
+
+Đủ tiền rồi thì phục vụ thêm người, không lấy thêm tiền của cùng số
+người. Mục 85 đo bằng **hành vi**, không đọc lời khai: dựng hai cấu
+hình cùng đạt mục tiêu và đòi cái **rẻ hơn thắng dù lãi ít hơn**, rồi
+nâng mục tiêu để hai bậc đảo chiều và đòi cái **lãi hơn** thắng.
+
+**Hệ quả phải nói ra:** bậc hai **bỏ phần lợi nhuận vượt mục tiêu** ra
+khỏi điểm số, nên bộ tối ưu sẽ vui vẻ đánh đổi mười tám tỷ lấy vài
+trăm gia đình. Đó đúng là điều được yêu cầu — và nó phải được nói ra
+chứ không để người đọc tự phát hiện. Lợi nhuận chỉ còn vai trò **phá
+hoà** ở trọng số rất nhỏ, để bộ tối ưu không chốt đúng một cấu hình
+nằm sát mép mục tiêu không còn đệm nào.
+
+### Bốn chỗ HỎNG THẬT trong tệp gốc, đã vá
+
+| Mã | Hỏng thế nào |
+|---|---|
+| V1 | `lamTronGia` **không idempotent** — `f(300.000)=290.000` rồi `f(290.000)=280.000` |
+| V2 | `f(999.999)=990.000` nhưng `f(1.000.000)=900.000` |
+| V3 | giá "đuôi 9" chỉ áp **dưới mười triệu** |
+| V4 | `giaiQuyMo` chia đôi mà **không kiểm điều kiện chia đôi** |
+
+**V1 là chỗ nguy nhất.** `BUOC_GIA` có `1.0` để nghĩa *"không đổi"*, và
+cái chặn `giaMoi === giaCu` **không nổ** vì hai số khác nhau. Mỗi vòng
+leo đồi hạ **mọi giá một bước mà không phải vì điểm số** — mười hai
+vòng là 300.000 xuống 180.000.
+
+**V4 câm đúng ở chỗ nguy hiểm:** phép chia đôi chỉ đúng khi lợi nhuận
+tăng theo quy mô. Có gói biên gộp âm thì càng đông càng lỗ, và phép
+chia đôi **vẫn trả về một con số trông y hệt một con số đúng**. Nay nó
+kiểm ba điểm mẫu trước, và không thoả thì **nói là không giải được**.
+
+**Cách vá V1–V3 là TÁCH HAI VIỆC:** `lamTron` là một phép kỹ thuật và
+nó idempotent; `giaDep` (đuôi 9) là một **quyết định giá** và nó chạy
+**đúng một lần lúc trình ra**, không chạy trong vòng lặp.
+
+**Và bản vá đầu của tôi sai đúng chỗ V2 vừa vá:** `giaDep(1.000.000)`
+ra 900.000, rồi lần gọi sau 900.000 thuộc bậc mười nghìn nên hạ tiếp
+còn 890.000. Một giá đứng ngay **đáy bậc** thì không có kiểu "đuôi 9"
+nào giữ nó ở lại bậc ấy — để nguyên là câu trả lời đúng.
+
+### Hai thứ khác đã sửa
+
+**Ràng buộc CỨNG tách riêng khỏi ràng buộc mềm.** Vượt trần người dạy
+là cấu hình **không tồn tại**, không phải cấu hình kém điểm — trộn hai
+loại vào một con số phạt thì một cấu hình không tuyển nổi người vẫn
+thắng nhờ điểm đẹp. Mỗi ràng buộc phải khai `cung: true|false`.
+
+**Tỷ giá quy đổi ra khỏi biểu thức.** `MOI_GIA_DINH` và
+`MOI_DONG_GIA_TB` quyết định bộ tối ưu chọn hạ giá hay mở rộng — một
+gia đình ≡ hạ giá trung bình **20.000đ**. Nằm lẫn trong một biểu thức
+thì không ai thấy nó và không ai hỏi ai đặt. Nay có tên riêng và mục
+chờ **TU-01**.
+
+Và ngưỡng cải thiện của leo đồi tính **theo tỷ lệ**: `+1` tuyệt đối ở
+thang tỷ đồng nằm dưới cả sai số dấu phẩy động, nên cái chặn ấy không
+chặn gì.
+
+---
+
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**

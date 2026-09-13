@@ -298,6 +298,7 @@ const NGHE = [
   'NT_TANG7', 'NT_NHOM4', 'NT_TANG_LUAT', 'NT_NHANH7', 'NT_NHANH_LUAT', 'NT_LOC7', 'NT_LOC_LUAT', 'NT_CHOCHU',
   'VH_TRUONG23', 'VH_TRUONG_LUAT', 'VH_DEN3', 'VH_DEN_LUAT', 'VH_NHIP', 'VH_NHIP_LUAT', 'VH_SO5', 'VH_SO_LUAT', 'VH_CHOCHU',
   'TC_BAY7', 'TC_BAY_LUAT', 'TC_LUAT4', 'TC_KICHBAN', 'TC_KICHBAN_LUAT', 'TC_CHOCHU',
+  'TU_MUCTIEU', 'TU_MUCTIEU_LUAT', 'TU_QUYDOI', 'TU_RANGBUOC', 'TU_CHIPHI_KHUNG', 'TU_CHIPHI_O', 'TU_DA_VA', 'TU_KIEUGIA', 'TU_CHOCHU',
   /* Luật xem hồ sơ khách hàng. Ở gói NGHỀ vì chỉ người của Học viện mới
      đọc nó: không màn nào của khách hàng hiện bảng trần vai, và chính
      G.dsNha() cũng trả hồ sơ nhà mình TRƯỚC khi chạm tới cổng ấy. */

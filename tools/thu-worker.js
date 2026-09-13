@@ -4464,6 +4464,124 @@ let idTam9 = null, idDang9 = null;
     bay.than.duTuoi.S4_soNhaMoi + ' nhà mới trong kỳ');
 }
 
+/* ══════════════ BỘ TỐI ƯU CẤU HÌNH GÓI ══════════════
+
+   Hàm mục tiêu là Lời mở đầu Hiến pháp viết thành mã: đủ tiền rồi thì
+   phục vụ thêm người, không lấy thêm tiền của cùng số người.
+
+   Bốn phép đo đầu là bốn chỗ HỎNG THẬT trong tệp gốc của chủ hệ. Phép
+   đo về một chỗ đã vá chỉ có nghĩa khi nó ĐỎ ĐƯỢC nếu ai đó vá ngược
+   — nên cả bốn đều đo hành vi, không đọc lời khai. */
+{
+  const mTU = await import('../may-chu/toi-uu-goi.js');
+  const mGG = await import('../may-chu/gia-goi.js');
+
+  /* ── V1 · LÀM TRÒN PHẢI IDEMPOTENT ──
+     Bản gốc: f(300.000)=290.000 rồi f(290.000)=280.000. Mà BUOC_GIA
+     có 1.0 để nghĩa "không đổi", và cái chặn giaMoi===giaCu không nổ.
+     Mỗi vòng leo đồi hạ MỌI giá một bước không phải vì điểm số. */
+  const mau = [300000, 287431, 999999, 1000000, 2500000, 10000000, 15000000];
+  const troi = mau.filter(v => mTU.lamTron(v) !== mTU.lamTron(mTU.lamTron(v)));
+  bao(troi.length === 0,
+    'V1 · LÀM TRÒN GIÁ IDEMPOTENT — gọi hai lần ra đúng một kết quả',
+    'bản gốc hạ một bước mỗi lần gọi, và BUOC_GIA có 1.0 để nghĩa "không đổi" nên ' +
+    'mười hai vòng leo đồi hạ 300.000 xuống 180.000 mà không phải vì điểm số');
+
+  /* ── V2 · KHÔNG CÓ BƯỚC NHẢY Ở BIÊN ──
+     Bản gốc: f(999.999)=990.000 nhưng f(1.000.000)=900.000. */
+  const a = mTU.lamTron(999999), b = mTU.lamTron(1000000);
+  bao(Math.abs(b - a) <= 100000 && b >= 1000000,
+    'V2 · KHÔNG CÓ BƯỚC NHẢY Ở BIÊN MỘT TRIỆU',
+    '999.999 → ' + a + ' · 1.000.000 → ' + b + ' — bản gốc lệch một đồng thì phép ' +
+    'hạ khác nhau một trăm lần');
+
+  /* ── V3 · KIỂU GIÁ ÁP CHO MỌI BẬC, VÀ CŨNG IDEMPOTENT ──
+     Bản gốc chỉ áp "đuôi 9" dưới mười triệu. Và bản vá ĐẦU của tôi
+     cũng sai đúng chỗ ấy: giaDep(1.000.000)=900.000 rồi 890.000. */
+  const troiDep = [300000, 1000000, 999999, 15000000, 290000, 10000000, 2500000]
+    .filter(v => mTU.giaDep(v) !== mTU.giaDep(mTU.giaDep(v)));
+  bao(troiDep.length === 0 && mTU.giaDep(300000) === 290000,
+    'V3 · GIÁ "ĐUÔI 9" ÁP CHO MỌI BẬC VÀ KHÔNG TRÔI — hạ không được làm giá rơi xuống bậc dưới',
+    'bản vá đầu của tôi quên chỗ ấy: 1.000.000 → 900.000 rồi 890.000, đúng lỗi V2 ' +
+    'quay lại ở một chỗ khác');
+
+  /* ── V4 · KHÔNG CHIA ĐÔI KHI LỢI NHUẬN KHÔNG TĂNG THEO QUY MÔ ── */
+  const TS = {donGiaBuoi: {NHOM: 300000, COACH_1_1: 800000, TU_HOC: 0},
+    tyLeLapDay: 0.8, quyMoNhom: {NHOM: 15, NHOM_NHO: 6, NHOM_LON: 25, HOI_THAO: 80},
+    khoBaiGiangMoiNam: 500000000, quanLyVaTiepThi: 800000000, thueSuat: 0.2};
+  const LO = [
+    {ma:'A0', ten:'Free', nhanh:'TU_DI', giaNiemYet:0, tyLeChon:0, buoi:[{loai:'TU_HOC', soBuoi:2}]},
+    /* Gói biên gộp ÂM: giá 100.000 mà mỗi người tốn 20 buổi nhóm. */
+    {ma:'A1', ten:'Lỗ', nhanh:'TU_DI', giaNiemYet:100000, tyLeChon:0.5, buoi:[{loai:'NHOM', soBuoi:20}]}
+  ];
+  const gLo = mTU.giaiQuyMo(LO, TS, mTU.RANG_BUOC_MAC_DINH);
+  bao(gLo.giaiDuoc === false && /KHÔNG tăng theo quy mô/.test(gLo.vi),
+    'V4 · LỢI NHUẬN KHÔNG TĂNG THEO QUY MÔ THÌ NÓI LÀ KHÔNG GIẢI ĐƯỢC, không trả về một con số',
+    'bản gốc chia đôi mà không kiểm điều kiện chia đôi — có gói biên gộp âm thì ' +
+    'càng đông càng lỗ, và phép chia đôi vẫn trả về một con số trông y hệt một con ' +
+    'số đúng');
+
+  /* ── GÁC HIẾN PHÁP CHẠY TRƯỚC MỌI PHÉP TÍNH ── */
+  const KHONG_FREE = [
+    {ma:'B1', ten:'Có phí', nhanh:'TU_DI', giaNiemYet:500000, tyLeChon:1, buoi:[{loai:'NHOM', soBuoi:4}]}
+  ];
+  let batFree = false;
+  try { mGG.kiemHienPhap(KHONG_FREE, TS); } catch (e) { batFree = e.hienPhap === true; }
+  bao(batFree,
+    'GÁC HIẾN PHÁP: DANH MỤC KHÔNG CÓ GÓI MIỄN PHÍ THÌ KHÔNG TỒN TẠI',
+    'bậc thang GITA bắt đầu từ chỗ một gia đình chưa trả đồng nào cũng vào được — ' +
+    'bỏ bậc ấy là đổi hẳn Học viện thành một chỗ bán khoá học');
+
+  /* ── MÁY KHÔNG ĐOÁN MÔ HÌNH CHI PHÍ ── */
+  const thieu = mGG.kiemThamSo({donGiaBuoi: {NHOM: 1}, tyLeLapDay: 0.8});
+  bao(thieu.du === false && thieu.thieu.length === 4 &&
+      /KHÔNG đoán hộ/.test(thieu.vi),
+    'THIẾU MÔ HÌNH CHI PHÍ THÌ CHẶN, VÀ NÓI THIẾU Ô NÀO — máy không rơi về một bộ mặc định',
+    'thiếu ' + thieu.thieu.join(' · ') + ' — một bộ mặc định ở đây là cách chắc ' +
+    'nhất để cả bộ tối ưu chạy trên số tưởng tượng mà không ai biết');
+
+  /* ── HÀM MỤC TIÊU: ĐỦ TIỀN RỒI THÌ PHỤC VỤ THÊM NGƯỜI ──
+     Hai cấu hình cùng ĐẠT mục tiêu: một phục vụ nhiều hơn, một lãi
+     nhiều hơn. Cấu hình phục vụ nhiều hơn phải THẮNG. */
+  const RB = Object.assign({}, mTU.RANG_BUOC_MAC_DINH,
+    {loiNhuanSauThueToiThieu: 1, soNguoiDayToiDa: 99999, soLuotFreeToiDa: 5000});
+  const NEN = [
+    {ma:'A0', ten:'Free', nhanh:'TU_DI', giaNiemYet:0, tyLeChon:0, buoi:[{loai:'TU_HOC', soBuoi:2}]},
+    {ma:'A1', ten:'Gói', nhanh:'TU_DI', giaNiemYet:2000000, tyLeChon:1, buoi:[{loai:'NHOM', soBuoi:4}]}
+  ];
+  const dGiaCao = mTU.chamDiem(NEN, TS, RB, 4000);
+  /* Rẻ hơn MỘT BẬC, không rẻ tới mức lỗ. Bài thử đầu hạ xuống 1,5
+     triệu và cấu hình ấy LỖ 180 triệu — nên nó không "đã đạt mục
+     tiêu", và phép so hai bậc ưu tiên không còn so được gì. */
+  const reHon = NEN.map(g => Object.assign({}, g,
+    {giaNiemYet: g.giaNiemYet > 0 ? 1900000 : 0}));
+  const dGiaRe = mTU.chamDiem(reHon, TS, RB, 4000);
+  bao(dGiaCao.datMucTieuLoiNhuan && dGiaRe.datMucTieuLoiNhuan &&
+      dGiaRe.loiNhuanSauThue < dGiaCao.loiNhuanSauThue &&
+      dGiaRe.tong > dGiaCao.tong,
+    'ĐÃ ĐẠT MỤC TIÊU THÌ GIÁ RẺ HƠN THẮNG, DÙ LÃI ÍT HƠN — Lời mở đầu Hiến pháp viết thành mã',
+    'lãi ' + Math.round(dGiaRe.loiNhuanSauThue/1e6) + ' triệu thắng lãi ' +
+    Math.round(dGiaCao.loiNhuanSauThue/1e6) + ' triệu · đủ tiền rồi thì phục vụ ' +
+    'thêm người, không lấy thêm tiền của cùng số người');
+
+  /* CHƯA đạt mục tiêu thì ngược lại: lãi nhiều hơn thắng. */
+  const RB_CAO = Object.assign({}, RB, {loiNhuanSauThueToiThieu: 1e15});
+  const cCao = mTU.chamDiem(NEN, TS, RB_CAO, 4000);
+  const cRe = mTU.chamDiem(reHon, TS, RB_CAO, 4000);
+  bao(!cCao.datMucTieuLoiNhuan && cCao.tong > cRe.tong,
+    'CHƯA ĐẠT MỤC TIÊU THÌ LÃI NHIỀU HƠN THẮNG — hai bậc ưu tiên đảo đúng chiều',
+    'chưa đủ tiền thì mọi thứ khác là chuyện của năm sau: Học viện đóng cửa thì số ' +
+    'gia đình được phục vụ bằng không');
+
+  /* ── RÀNG BUỘC CỨNG KHÔNG MUA ĐƯỢC BẰNG ĐIỂM ĐẸP ── */
+  const RB_IT = Object.assign({}, RB, {soNguoiDayToiDa: 0});
+  const dCung = mTU.chamDiem(NEN, TS, RB_IT, 4000);
+  bao(dCung.phamCung === true && dCung.viPham.some(v => v.ma === 'RB1'),
+    'RÀNG BUỘC CỨNG TÁCH RIÊNG — vượt là cấu hình KHÔNG TỒN TẠI, không phải cấu hình kém điểm',
+    'trộn hai loại vào một con số phạt thì một cấu hình không tuyển nổi người vẫn ' +
+    'thắng nhờ điểm đẹp');
+}
+
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&
     soRa.than.ds[0].daGui === raNgoai.than.daGui,
