@@ -16042,6 +16042,112 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n96 · DỮ LIỆU MẪU — KHÔNG SỐ HƯ CẤU NÀO ĐI RA MÀ KHÔNG MANG DẤU');
+  /* ══════════════════ 96. DANH SÁCH DỮ LIỆU MẪU ══════════════════
+
+     `src/du-lieu-mau.js` mở đầu bằng đúng lý do của cả lớp bảo vệ này:
+     bảng điều hành hiện "Doanh thu quý 6,84 tỷ · 78% khách từ giới
+     thiệu", và KHÔNG con số nào đo từ hoạt động thật. Vấn đề không
+     phải là có dữ liệu mẫu — hệ nào cũng cần. Vấn đề là không có dấu
+     nào phân biệt, và "nếu con số ấy đi vào một bản báo cáo hay một
+     buổi gọi vốn thì cái giá của một dòng chữ thiếu là rất đắt".
+
+     Lớp ấy dựng từ lâu. Tới 9.99.81 KHÔNG BỘ KIỂM NÀO CANH NÓ — nên
+     nó bảo vệ đúng những kho ai đó nhớ ra mà khai, và im lặng với mọi
+     kho khác. Một lớp bảo vệ dựa vào trí nhớ thì nó là một lời dặn.
+
+     Dựng bộ đo của thang 1000 điểm mới lộ ra chỗ ấy, và lộ ra BẰNG
+     SỐ: hai kho mang dữ liệu người hư cấu mà chưa ai khai —
+     `TAILIEU` (năm nhà gửi tài liệu) và `TAIKHOAN_KPI` (điểm KPI của
+     nhân sự mẫu). Cả hai đã sống nhiều bản.
+
+     BA VẾ:
+
+     A · ĐẾM NGƯỢC — dò tên người hư cấu trên MỌI kho đã mở, trừ phần
+         đã khai. Phép dò này không cần biết trước kho nào là mẫu, nên
+         nó bắt được cả kho viết sau bởi người không đọc tệp này. Đó
+         là khác biệt giữa một phép đo và một danh sách.
+
+     B · Mỗi mục phải có `thatKhi` — KHI NÀO nó thành số thật. Không
+         có thì dải nhắc nói được "đây là số dựng" mà không nói được
+         đường ra, và một cảnh báo không có đường ra thì người ta học
+         cách lướt qua nó.
+
+     C · Kho khai trong danh sách phải CÓ THẬT. Khai một kho đã đổi
+         tên thì dải nhắc lặng lẽ thôi hiện ở màn đọc kho mới — cùng
+         cái bẫy `layTuKho` của mục 89.
+
+     Dấu hiệu dò là CỤM NHIỀU ÂM TIẾT — "Nhà " + tên riêng viết hoa —
+     không dò âm tiết trần `nhà`, vì `nhà` nằm trong "nhà trường",
+     "nhà cung cấp", "người nhà". Cùng luật chọn dấu hiệu đã chốt ở
+     9.99.56 và 9.99.65.
+
+     GIỚI HẠN CỦA VẾ A, NÓI RA CHỨ KHÔNG GIẤU: nó dò TÊN NGƯỜI, nên
+     một kho chỉ có CON SỐ thì nó không thấy. Chính `HEALTH` — 1.284
+     gia đình, 42 coach, 89,3% giữ nhịp, đứng ở màn điều hành — lọt
+     qua vế A và chỉ bị bắt nhờ vế C lần theo cái tên chết `ECO`.
+
+     Một lớp bảo vệ không nói giới hạn thì người đọc tin nó chống được
+     nhiều hơn thật — cùng lý do 9.99.57 từ chối làm dấu chìm trong
+     bit thấp, và cùng cách `soatSoDen` khai thẳng thứ nó không làm
+     được (9.99.76). Vế D dưới đây bịt một phần chỗ hở ấy từ phía MÀN;
+     phần còn lại là việc của người, và nó phải được biết là còn hở. */
+  {
+    const dm = await p.evaluate(() => {
+      const G = window.G;
+      const ds = G.DL_MAU || [];
+      const daKhai = new Set(ds.map(x => x.kho));
+      /* Dò trên kho ĐÃ MỞ, không đọc mã nguồn: thứ đi tới màn hình là
+         thứ có trong bộ nhớ sau khi nạp gói, không phải thứ mã khai. */
+      const re = /Nhà [ABCĐDGHKLMNPQSTVX][a-zàáâãèéêìíòóôõùúýăđĩũơưạ-ỹ]+ [A-ZĐ]/g;
+      const sot = [];
+      for (const k of Object.keys(G)) {
+        if (!/^[A-Z][A-Z0-9_]*$/.test(k) || daKhai.has(k)) continue;
+        const v = G[k];
+        if (!v || typeof v !== 'object') continue;
+        let s;
+        try { s = JSON.stringify(v); } catch (e) { continue; }
+        if (!s || s.length < 50) continue;
+        const m = s.match(re);
+        if (m && new Set(m).size >= 2) sot.push(k + ' (' + new Set(m).size + ' tên nhà)');
+      }
+      return {
+        so: ds.length,
+        thieuThatKhi: ds.filter(x => !(x.thatKhi || '').trim()).map(x => x.kho),
+        thieuLa: ds.filter(x => !(x.la || '').trim()).map(x => x.kho),
+        khongCo: ds.filter(x => G[x.kho] === undefined).map(x => x.kho),
+        /* Vế D · màn khai có dải nhắc phải CÓ THẬT. Một tên màn chết
+           trong danh sách thì dải nhắc không hiện ở đâu cả, và danh
+           sách vẫn trông đủ — cùng hình với vế C, khác chỗ đo. */
+        manChet: (G.DL_MAU_MAN || []).filter(m => !G.VIEWS || !G.VIEWS[m]),
+        soMan: (G.DL_MAU_MAN || []).length,
+        sot
+      };
+    });
+
+    bao(!dm.sot.length,
+      'KHÔNG KHO NÀO MANG DỮ LIỆU NGƯỜI HƯ CẤU MÀ CHƯA KHAI Ở G.DL_MAU. Dải nhắc dữ liệu mẫu chỉ bảo vệ được những kho có người nhớ ra mà khai — nên phép đo này ĐẾM NGƯỢC: dò tên nhà hư cấu trên MỌI kho đã mở rồi trừ phần đã khai, và vì thế nó bắt được cả kho do người không đọc tệp hướng dẫn viết sau',
+      dm.sot.length ? 'SÓT: ' + dm.sot.join(' · ') + ' — khai vào G.DL_MAU kèm ô `thatKhi`'
+        : dm.so + ' kho khai là dữ liệu mẫu · 0 kho sót');
+
+    bao(!dm.thieuThatKhi.length && !dm.thieuLa.length,
+      'MỖI KHO MẪU NÓI RÕ NÓ LÀ GÌ VÀ KHI NÀO THÀNH SỐ THẬT. Một cảnh báo không có đường ra thì người đọc học cách lướt qua nó — và lúc ấy dải nhắc còn nguyên trên màn mà không còn chặn được gì',
+      dm.thieuThatKhi.length ? 'THIẾU `thatKhi`: ' + dm.thieuThatKhi.join(' · ')
+        : dm.thieuLa.length ? 'THIẾU `la`: ' + dm.thieuLa.join(' · ')
+        : dm.so + ' kho đều khai đủ `la` và `thatKhi`');
+
+    bao(!dm.khongCo.length,
+      'MỌI KHO KHAI TRONG DANH SÁCH MẪU ĐỀU CÓ THẬT. Khai một kho đã đổi tên thì dải nhắc lặng lẽ thôi hiện ở màn đọc kho mới, mà danh sách nhìn vẫn y hệt một danh sách đủ — cùng cái bẫy `layTuKho` của mục 89',
+      dm.khongCo.length ? 'KHAI KHO KHÔNG TỒN TẠI: ' + dm.khongCo.join(' · ')
+        : dm.so + ' kho khai đều có mặt sau khi nạp gói');
+
+    bao(!dm.manChet.length,
+      'MỌI MÀN KHAI CÓ DẢI NHẮC DỮ LIỆU MẪU ĐỀU CÓ THẬT. Đây là vế bịt chỗ hở mà phép dò tên người KHÔNG thấy: một kho chỉ có con số — không tên nhà nào — thì vế A im, và chỗ duy nhất còn bắt được là phía MÀN. Một tên màn chết trong danh sách thì dải nhắc không hiện ở đâu cả, mà danh sách vẫn trông đủ',
+      dm.manChet.length ? 'KHAI MÀN KHÔNG TỒN TẠI: ' + dm.manChet.join(' · ')
+        : dm.soMan + ' màn khai đều có thật trong G.VIEWS');
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

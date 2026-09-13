@@ -46,6 +46,39 @@
     return (v === undefined || v === null) ? undefined : v;
   }
 
+  /* ══ KHO CÒN LÀ DỮ LIỆU MẪU THÌ KHÔNG TRẢ ĐIỂM VỀ SỐ ══
+
+     Đây là ranh giới quan trọng nhất của tệp này, và nó dễ vượt qua
+     mà không ai thấy: `HAILONG` có đủ chín điểm chạm kèm con số, nên
+     một phép đo ngây thơ sẽ chấm 20/20 và gọi đó là "máy đo" — trong
+     khi cả chín con số là của các nhà HƯ CẤU. Lúc ấy tôi vừa dựng lại
+     đúng cái bẫy chủ hệ bảo gỡ, lần này mang nhãn "máy đo" nên còn
+     khó cãi hơn.
+
+     Nên tách hai loại phép đo, và ranh giới là chỗ CON SỐ ĐẾN TỪ ĐÂU:
+
+     · Phép đo về HÌNH — kho có đủ ô không, ô nào thiếu — vẫn chạy
+       trên kho mẫu, vì hình do MÃ quyết định chứ không do dữ liệu.
+     · Phép đo về SỐ — con số ấy nói điều gì về khách — thì DỪNG, và
+       nói ra khi nào nó thành đo được.
+
+     Danh sách kho mẫu KHÔNG chép lại ở đây: hỏi thẳng `G.DL_MAU`, và
+     lấy luôn ô `thatKhi` của chính mục ấy. Chép sang là bản thứ hai
+     của một sự thật, và bản trôi thì gỡ một kho khỏi DL_MAU mà phép
+     đo vẫn im. Gỡ HAILONG khỏi DL_MAU là bốn phép đo của C9 TỰ BẬT. */
+  function laMau(ten){
+    var ds = G.DL_MAU || [];
+    for (var i = 0; i < ds.length; i++) if (ds[i].kho === ten) return ds[i];
+    return null;
+  }
+  function khoSoThat(ten){
+    var m = laMau(ten);
+    if (m) return { mau: true, vi: 'kho ' + ten + ' còn là dữ liệu mẫu — ' +
+      (m.thatKhi || 'chưa khai khi nào thành thật') };
+    var v = kho(ten);
+    return v === undefined ? { chuaNap: true } : { v: v };
+  }
+
   /* ── Tương phản: công thức WCAG, đọc màu ĐANG CHẠY từ trình duyệt ── */
   function sang(mau){
     var m = /rgba?\((\d+)[,\s]+(\d+)[,\s]+(\d+)/.exec(mau);
@@ -309,6 +342,149 @@
         cach: thieu + '/' + n + ' nút · liên kết · ảnh · ô nhập thiếu tên đọc được' };
     },
 
+    /* ─── C3 · Ngôn từ & điểm chạm cảm xúc ───
+       Ba mươi tư ô lời khai của bản 9.99.81 gom ở ba chương C3 · C5 ·
+       C9, và ba chương ấy đúng là ba chương quyết định khách có ở lại
+       hay không. Bốn ô dưới đây đo được THẬT vì chúng hỏi về NỘI DUNG
+       HỌC VIỆN VIẾT RA, không hỏi về khách: kho đủ ô hay thiếu ô là
+       một sự thật quan sát được, không phụ thuộc có bao nhiêu nhà. */
+    CHAM9_KHUNG: function(m){
+      var d = kho('DIEMCHAM');
+      if (!d) return undefined;
+      /* Mỗi điểm chạm phải nói CÁCH ĐO của nó (`datKhi`). Một điểm
+         chạm có tên mà không có cách đo thì nó là một cái nhãn — và
+         chín cái nhãn đọc ra y hệt chín phép đo. */
+      var du = d.filter(function(x){
+        return (x.ma || '').trim() && (x.datKhi || '').trim() && (x.cauMo || '').trim();
+      }).length;
+      return { d: cham(du, 9, m), tren: d.length,
+        cach: du + '/' + d.length + ' điểm chạm có đủ mã · cách biết đã đạt · câu mở' };
+    },
+    NGONTU_MAU: function(m){
+      var n = kho('NGONTU');
+      if (!n) return undefined;
+      /* "dùng được ngay" nghĩa là có MẪU CÂU, không phải có mô tả. */
+      var du = n.filter(function(x){ return (x.cau || []).length >= 2; }).length;
+      return { d: cham(du, n.length, m), tren: n.length,
+        cach: du + '/' + n.length + ' nhịp ngôn từ có từ hai mẫu câu dùng được ngay' };
+    },
+    NGONTU_RANH_DU: function(m){
+      var n = kho('NGONTU'), r = kho('NGONTU_RANH');
+      if (!n || !r) return undefined;
+      /* Ranh giới đi KÈM kỹ thuật, không nằm một bảng riêng ai muốn
+         đọc thì đọc: mỗi nhịp phải nói luôn chỗ hay hỏng của nó. */
+      var coLoi = n.filter(function(x){ return (x.loi || []).length; }).length;
+      var dat = (coLoi === n.length ? 1 : 0) + (r.length >= 6 ? 1 : 0);
+      return { d: cham(dat, 2, m), tren: n.length,
+        cach: coLoi + '/' + n.length + ' nhịp nói chỗ hay hỏng của chính nó · ' +
+          r.length + ' ranh giới đạo đức (cần từ 6)' };
+    },
+    NGONTU_TANG5: function(m){
+      var t = kho('NGONTU_TANG');
+      if (!t) return undefined;
+      /* Phải có CẢ HAI: được nói gì và KHÔNG được nói gì. Một tầng chỉ
+         khai phần "được" là một tầng không có ranh nào. */
+      var du = t.filter(function(x){
+        return (x.duoc || []).length && (x.khong || []).length;
+      }).length;
+      return { d: cham(du, 5, m), tren: t.length,
+        cach: du + '/' + t.length + ' tầng khai đủ CẢ phần được nói lẫn phần không được nói' };
+    },
+
+    /* ─── C5 · Cá nhân hoá & cảm giác thuộc về ───
+       Hai ô đo được, và cả hai là phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI —
+       cùng lối LR1 (mục 79). Ba ô còn lại của chương hỏi về cảm giác
+       của một người, và ở lại ngăn lời khai. */
+    KHONG_XEP_HANG: function(m){
+      /* "Mọi bảng số chỉ so với chính nhà đó chặng trước" — chỗ kiểm
+         được của câu ấy là KHÔNG kho nào của gia đình mang ô xếp hạng.
+         Dò trên HÌNH (tên ô), nên kho mẫu vẫn kiểm được: tên ô do mã
+         quyết định, không do dữ liệu.
+
+         Dò cụm nhiều âm tiết — `thuHang` · `xepHang` · `bangXep` —
+         không dò `hang` trần: `hang` nằm trong `hangTraLoi`, `CV_HANG`
+         (hạng lương), `HANG_TL`. Cùng luật chọn dấu hiệu của
+         CUM_TUYET_DOI (9.99.65). */
+      var xau = [];
+      ['FAMILIES', 'HOSO_NHA', 'TODAY', 'HAILONG'].forEach(function(k){
+        var v = G[k];
+        if (v === undefined || v === null) return;
+        var s;
+        try { s = JSON.stringify(v); } catch (e) { return; }
+        ['thuHang', 'xepHang', 'bangXep', 'hangNha', 'topNha'].forEach(function(o){
+          if (s.indexOf('"' + o + '"') >= 0) xau.push(k + '.' + o);
+        });
+      });
+      return { d: cham(xau.length ? 0 : 1, 1, m), tren: 1,
+        cach: xau.length ? 'CÓ Ô XẾP HẠNG NHÀ VỚI NHAU: ' + xau.join(' · ')
+          : 'không kho gia đình nào mang ô xếp hạng nhà với nhau' };
+    },
+    TU_VIET: function(m){
+      var l = kho('LGD_LUAT');
+      if (!l) return undefined;
+      /* "Người dùng tự viết, hệ thống không viết hộ" đã có RĂNG THẬT
+         từ 9.99.74 — L10. Đo bằng cách hỏi luật ấy có khai chỗ cắm
+         răng không, chứ không dựng bộ dò thứ hai. */
+      var l10 = l.filter(function(x){ return x.ma === 'L10'; })[0];
+      if (!l10) return { d: 0, tren: 1, cach: 'không tìm thấy luật L10 trong bảng luật giao diện' };
+      var co = !!(l10.rangO || '').trim();
+      return { d: cham(co ? 1 : 0, 1, m), tren: 1,
+        cach: co ? 'L10 có răng thật: ' + l10.rangO
+                 : 'L10 CHƯA CÓ CHỖ CẮM RĂNG — nó chỉ là một lời dặn' };
+    },
+
+    /* ─── C9 · Đo lường & vòng phản hồi ───
+       Bốn ô dưới đây đo về SỐ CỦA KHÁCH, nên chúng DỪNG khi kho còn
+       là dữ liệu mẫu. Hôm nay cả bốn trả về "chưa đo được" kèm câu
+       nói khi nào thành đo được — và đó là kết quả ĐÚNG, không phải
+       một chỗ còn thiếu.
+
+       Chương này tên là "Đo lường & vòng phản hồi", và tới 9.99.81 nó
+       là chương DUY NHẤT không đo được ô nào. Dựng chỗ đo trước rồi
+       chờ dữ liệu, thay vì chờ dữ liệu rồi mới dựng chỗ đo — cùng thứ
+       tự đã chọn cho Hiến pháp (9.99.62), trần giám sát (9.99.76) và
+       vòng tự nâng cấp (9.99.77). */
+    CHAM9_SO: function(m){
+      var r = khoSoThat('HAILONG');
+      if (r.chuaNap) return undefined;
+      if (r.mau) return { chuaDo: true, cach: r.vi };
+      var dc = (r.v.theoDiemCham || []);
+      var co = dc.filter(function(x){ return typeof x.v === 'number'; }).length;
+      return { d: cham(co, 9, m), tren: dc.length,
+        cach: co + '/9 điểm chạm có số đo từ gia đình thật' };
+    },
+    GOPY_HANGCHO: function(m){
+      var r = khoSoThat('HAILONG');
+      if (r.chuaNap) return undefined;
+      if (r.mau) return { chuaDo: true, cach: r.vi };
+      var g = (r.v.gopY || []);
+      if (!g.length) return { d: 0, tren: 0, cach: 'chưa có góp ý nào trong sổ' };
+      var co = g.filter(function(x){ return (x.trang || '').trim(); }).length;
+      return { d: cham(co, g.length, m), tren: g.length,
+        cach: co + '/' + g.length + ' góp ý có trạng thái trong hàng chờ cải tiến' };
+    },
+    HAILONG_TUAN: function(m){
+      var r = khoSoThat('HAILONG');
+      if (r.chuaNap) return undefined;
+      if (r.mau) return { chuaDo: true, cach: r.vi };
+      var t = (r.v.tuan || []);
+      return { d: cham(Math.min(t.length, 8), 8, m), tren: t.length,
+        cach: t.length + ' tuần liên tiếp có số hài lòng (cần từ 8 tuần để thấy xu hướng)' };
+    },
+    TAILIEU_NANG: function(m){
+      var r = khoSoThat('TAILIEU');
+      if (r.chuaNap) return undefined;
+      if (r.mau) return { chuaDo: true, cach: r.vi };
+      var mu = (r.v.muc || []);
+      if (!mu.length) return { d: 0, tren: 0, cach: 'chưa có tài liệu nào gửi lên' };
+      /* Đọc thôi chưa đủ — phải NÂNG được lộ trình, tức là có ô `nang`.
+         Một tài liệu được đọc mà không đổi gì cho chính nhà gửi nó thì
+         vòng phản hồi đứt ở đúng chỗ có giá trị. */
+      var du = mu.filter(function(x){ return (x.doc || '').trim() && (x.nang || '').trim(); }).length;
+      return { d: cham(du, mu.length, m), tren: mu.length,
+        cach: du + '/' + mu.length + ' tài liệu được đọc VÀ có dòng nâng lộ trình' };
+    },
+
     /* ─── C10 · Lan toả ─── */
     DAISU_KHUNG: function(m){
       var d = kho('DAISU');
@@ -339,7 +515,12 @@
       try { r = DO[ma](20); }
       catch (e) { r = { loi: (e && e.message ? e.message : 'lỗi') }; }
       /* Kho chưa mở thì BỎ HẲN mã ấy, không ghi 0. Trống là "chưa đo
-         được", 0 là "đo được và bằng không" — hai câu khác hẳn nhau. */
+         được", 0 là "đo được và bằng không" — hai câu khác hẳn nhau.
+
+         `chuaDo: true` là trường hợp thứ ba và nó KHÁC cả hai: phép đo
+         CHẠY được, nhưng cái nó đo còn là dữ liệu mẫu. Giữ lại để màn
+         nói ra khi nào nó thành đo được — bỏ đi thì ô ấy trông y hệt
+         một ô chưa ai viết phép đo. */
       if (r !== undefined) ra[ma] = r;
     });
     ra._luc = luc;

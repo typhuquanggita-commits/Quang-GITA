@@ -2614,6 +2614,101 @@ vào lúc có chỗ mất thật.
 Đúng danh sách CLAUDE.md đã dặn ở 9.99.61; đọc rồi vẫn quên, nên ghi
 lại đây: `ma-hoa-kho.js` · `kho-khoa.js` · `RONG_CO_Y` nếu rỗng.
 
+
+---
+
+## BA CHƯƠNG CÂM ĐÃ CÓ PHÉP ĐO — VÀ DỮ LIỆU MẪU CÓ NGƯỜI CANH (9.99.82)
+
+Chủ hệ chốt **phương án (a)**: dựng phép đo cho C3 · C5 · C9 từ hành vi
+khách thật. Dựng được NGAY — vì chỗ đo đặt trước thì lúc dữ liệu về nó
+tự đúng. Cùng thứ tự đã chọn cho Hiến pháp (9.99.62), trần giám sát
+(9.99.76) và vòng tự nâng cấp (9.99.77).
+
+**16/50 → 26/50 ô máy đo.** Mục 95 (5 phép đo) giữ nguyên, thêm **mục
+96** (4 phép đo) cho dữ liệu mẫu.
+
+### Ranh giới mới, và nó là chỗ dễ vượt qua nhất
+
+`HAILONG` có đủ chín điểm chạm kèm con số. Một phép đo ngây thơ chấm
+**20/20** và gọi đó là *"máy đo"* — trong khi cả chín con số là của các
+nhà **HƯ CẤU**. Lúc ấy tôi vừa dựng lại đúng cái bẫy vừa gỡ, lần này
+mang nhãn "máy đo" nên **còn khó cãi hơn**.
+
+Nên tách hai loại phép đo theo chỗ **CON SỐ ĐẾN TỪ ĐÂU**:
+
+| Loại | Chạy trên kho mẫu? | Vì sao |
+|---|---|---|
+| Đo **HÌNH** — kho đủ ô chưa | **có** | hình do MÃ quyết định, không do dữ liệu |
+| Đo **SỐ** — con số nói gì về khách | **dừng** | và nói ra khi nào thành đo được |
+
+Danh sách kho mẫu **không chép lại** — hỏi thẳng `G.DL_MAU`, lấy luôn ô
+`thatKhi`. **Gỡ `HAILONG` khỏi `DL_MAU` là bốn phép đo của C9 TỰ BẬT.**
+
+### Trạng thái thứ BA của một ô, và nó không gộp được
+
+| Trạng thái | Nghĩa |
+|---|---|
+| có điểm | đo được |
+| `chuaDo` | phép đo **đã dựng xong**, kho còn là mẫu |
+| trống | chưa ai viết phép đo, hoặc kho chưa mở với vai này |
+
+Gộp ba thành hai là mất đúng chỗ có nghĩa. Màn nói riêng từng loại, và
+với ô `chuaDo` thì in luôn câu *"sẽ tự bật khi…"*.
+
+### Mười ô mới, chia theo thứ chúng hỏi
+
+| Chương | Hỏi về | Đo được ngay |
+|---|---|---|
+| C3 Ngôn từ (4 ô) | **nội dung Học viện viết ra** | ✅ |
+| C5 Cảm giác thuộc về (2 ô) | thứ **không được tồn tại** | ✅ |
+| C9 Đo lường (4 ô) | **số của khách** | chờ dữ liệu thật |
+
+C5 dùng lối đo về thứ không được tồn tại lần thứ tám: `KHONG_XEP_HANG`
+dò cụm `thuHang` · `xepHang` · `bangXep`, **không dò `hang` trần** — nó
+nằm trong `hangTraLoi`, `CV_HANG` (hạng lương), `HANG_TL`.
+
+### Mục 96 — lớp bảo vệ đã có từ lâu mà KHÔNG AI CANH
+
+`src/du-lieu-mau.js` tự viết ra lý do của nó: *"nếu con số ấy đi vào một
+bản báo cáo hay một buổi gọi vốn thì cái giá của một dòng chữ thiếu là
+rất đắt"*. Lớp ấy dựng từ lâu và **tới 9.99.81 không bộ kiểm nào canh**
+— nên nó bảo vệ đúng những kho ai đó nhớ ra mà khai. **Một lớp bảo vệ
+dựa vào trí nhớ thì nó là một lời dặn.**
+
+Bốn vế, và **cả ba lỗ thật đều tìm ra ở lượt chạy đầu**:
+
+| Vế | Cách đo | Bắt được gì |
+|---|---|---|
+| A | **đếm NGƯỢC** — dò tên nhà hư cấu trên mọi kho đã mở, trừ phần đã khai | `TAILIEU` · `TAIKHOAN_KPI` sót |
+| B | mỗi mục có `la` + `thatKhi` | — |
+| C | kho khai phải CÓ THẬT | **`ECO` — tên chết** |
+| D | màn khai phải CÓ THẬT | — |
+
+**Vế A đếm ngược nên nó không cần biết trước kho nào là mẫu** — đó là
+khác biệt giữa một phép đo và một danh sách, và nó bắt được cả kho do
+người không đọc tệp này viết sau.
+
+### Lỗ nặng nhất lại là lỗ vế A KHÔNG thấy
+
+`ECO` khai trong danh sách nhưng **không tồn tại ở đâu cả**. Lần theo
+cái tên chết ấy mới ra kho thật đang giữ số: **`HEALTH`** — 1.284 gia
+đình · 42 coach · 89,3% giữ nhịp, đứng ở **màn điều hành**, đúng cái màn
+tệp `du-lieu-mau.js` lấy làm ví dụ mở đầu. Kho đổi tên, danh sách giữ
+tên cũ, và **dải nhắc lặng lẽ thôi hiện** suốt nhiều bản.
+
+**Vế A không bắt được nó, vì nó dò TÊN NGƯỜI còn `HEALTH` chỉ có CON
+SỐ.** Giới hạn ấy **ghi thẳng vào chú giải mục 96**, không giấu — cùng
+lý do 9.99.57 từ chối làm dấu chìm và cùng cách `soatSoDen` khai thẳng
+thứ nó không làm được (9.99.76). Vế D bịt một phần từ phía MÀN; phần
+còn lại là việc của người, **và nó phải được biết là còn hở**.
+
+### Hai phép đo bổ nhau, không thay nhau
+
+Vế A nhìn từ **dữ liệu**, vế C nhìn từ **danh sách**. Chỉ vế A thì
+`ECO` sống mãi; chỉ vế C thì `TAILIEU` sống mãi. Phá thử cả bốn: gỡ
+`TAILIEU` · bỏ `thatKhi` của `HAILONG` · khai một kho không có · khai
+một màn không có → **bốn dòng đỏ, gọi đúng tên từng chỗ**.
+
 ---
 
 ## Bộ tối ưu cấu hình gói (9.99.68)

@@ -548,11 +548,16 @@ G.VIEWS['chuan-1000'] = function(){
   /* Cộng RIÊNG hai nửa. Ô máy đo chưa đo được (kho chưa mở) thì KHÔNG
      tính vào mẫu số — đếm nó là 0 điểm sẽ dìm cả ngăn xuống vì một
      thứ chưa ai đo, và con số ấy trông y hệt một kết quả kém. */
-  var mD = 0, mT = 0, mCho = 0, nD = 0, nT = 0, cuNhat = null;
+  var mD = 0, mT = 0, mCho = 0, mMau = 0, nD = 0, nT = 0, cuNhat = null;
   G.CHUAN1000.forEach(function(c){
     c.y.forEach(function(y){
       if (y.mayDo){
         var r = do_[y.mayDo];
+        /* Ba trạng thái, không hai. `chuaDo` là ô CÓ phép đo chạy được
+           nhưng cái nó đo còn là dữ liệu mẫu — khác hẳn ô chưa ai viết
+           phép đo, và khác hẳn ô đo được điểm thấp. Gộp ba thành hai
+           là mất đúng chỗ có nghĩa. */
+        if (r && r.chuaDo){ mMau++; return; }
         if (!r || r.loi !== undefined || r.d === undefined){ mCho++; return; }
         mD += r.d; mT += y.m;
       } else if (y.khai){
@@ -581,6 +586,7 @@ G.VIEWS['chuan-1000'] = function(){
     '<p class="tiny muted mt">Đo lại mỗi lượt mở màn, trên chính màn hình đang chạy. '+
       'Con số này già nhất là vài trăm mili giây.'+
       (mCho ? ' <b style="color:var(--warn)">'+mCho+' ô chưa đo được</b> — kho của ô ấy chưa mở với vai này, nên nó KHÔNG được tính là 0.' : '')+
+      (mMau ? ' <b style="color:var(--warn)">'+mMau+' ô đang chờ dữ liệu thật</b> — phép đo đã dựng xong và sẽ TỰ BẬT khi kho ấy thôi là dữ liệu mẫu. Chấm điểm trên số của những nhà hư cấu là đúng cái bẫy cả màn này sinh ra để gỡ.' : '')+
     '</p></div>';
 
   o += '<div class="card grow" style="min-width:260px;border-color:var(--warn)44">'+
@@ -610,7 +616,7 @@ G.VIEWS['chuan-1000'] = function(){
     var cD = 0, cT = 0, kD = 0, kT = 0;
     c.y.forEach(function(y){
       if (y.mayDo){ var r = do_[y.mayDo];
-        if (r && r.loi === undefined && r.d !== undefined){ cD += r.d; cT += y.m; } }
+        if (r && !r.chuaDo && r.loi === undefined && r.d !== undefined){ cD += r.d; cT += y.m; } }
       else if (y.khai){ kD += y.d; kT += y.m; }
     });
 
@@ -624,7 +630,8 @@ G.VIEWS['chuan-1000'] = function(){
       '<div>' + c.y.map(function(y){
         var r = y.mayDo ? do_[y.mayDo] : null;
         var laMay = !!y.mayDo;
-        var chua  = laMay && (!r || r.loi !== undefined || r.d === undefined);
+        var choSo = laMay && !!(r && r.chuaDo);
+        var chua  = laMay && (choSo || !r || r.loi !== undefined || r.d === undefined);
         var diem  = laMay ? (chua ? null : r.d) : y.d;
         var du    = diem !== null && diem >= y.m;
         var mau   = chua ? 'var(--ink-4)' : (du ? 'var(--ok)' : 'var(--warn)');
@@ -636,7 +643,7 @@ G.VIEWS['chuan-1000'] = function(){
             '<span class="sm grow">'+h(y.t)+'</span>'+
             '<span class="pill tiny" style="flex:none;background:'+
               (laMay?'var(--ok)1A;color:var(--ok)':'var(--warn)1A;color:var(--warn)')+'">'+
-              (laMay?'máy đo':'người khai')+'</span>'+
+              (laMay?(choSo?'máy đo · chờ số thật':'máy đo'):'người khai')+'</span>'+
             '<span class="mono tiny" style="flex:none;color:'+mau+'">'+
               (diem === null ? '—' : diem)+'/'+y.m+'</span></div>';
 
@@ -645,9 +652,10 @@ G.VIEWS['chuan-1000'] = function(){
            được thì không kiểm lại được. */
         if (laMay){
           s += '<p class="tiny muted" style="margin:5px 0 0 26px">'+
-            (chua ? (r && r.loi ? 'chưa đo được — '+h(r.loi)
-                                : 'chưa đo được — kho của ô này chưa mở với vai đang dùng')
-                  : h(r.cach))+'</p>';
+            (choSo ? 'phép đo ĐÃ DỰNG XONG và sẽ tự bật — '+h(r.cach)
+              : chua ? (r && r.loi ? 'chưa đo được — '+h(r.loi)
+                                   : 'chưa đo được — kho của ô này chưa mở với vai đang dùng')
+                     : h(r.cach))+'</p>';
         } else {
           /* Người khai: NGÀY và TÊN, và tuổi tính lúc đọc. */
           var t = Date.parse(y.khai.ngay);

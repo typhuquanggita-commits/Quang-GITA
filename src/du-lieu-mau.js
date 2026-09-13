@@ -3,7 +3,7 @@
 
    Bảng điều hành hiện "Doanh thu quý 6,84 tỷ · +18% so với quý trước",
    "78% khách từ giới thiệu", "Giữ chân 12 tháng 89,3%". Không con số
-   nào được đo từ hoạt động thật — chúng nằm ở G.ECO và G.HAILONG, là
+   nào được đo từ hoạt động thật — chúng nằm ở G.HEALTH và G.HAILONG, là
    dữ liệu dựng để xem giao diện.
 
    Vấn đề không phải là có dữ liệu mẫu; hệ thống nào cũng cần. Vấn đề
