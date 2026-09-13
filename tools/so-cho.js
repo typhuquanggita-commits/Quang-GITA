@@ -92,4 +92,37 @@ function docSoCho(G) {
     .filter(s => s.muc.length);
 }
 
-module.exports = { cau, cauGon, ten, nhan, docKhoTuEnc, docSoCho, moGoi };
+
+/* ══════════════════════════════════════════════════════════════════
+   VƠI ĐI CÓ CHỦ Ý THÌ KHÔNG PHẢI MẤT
+   ------------------------------------------------------------------
+   Sổ `X_CHOCHU` vơi đi là chuyện ĐÚNG: 9.99.61 chốt rằng mục đã trả
+   lời thì TIỄN sang `X_DACHOT` — gỡ khỏi sổ chờ, KHÔNG xoá, vì câu
+   trả lời kèm lý do là thứ đáng giữ nhất.
+
+   Phép trừ này dựng ở `kho-luu.js` (9.99.79) và sống ở đó MỘT MÌNH.
+   Tới 9.99.81 nó vấp đúng chỗ nó sinh ra để vá: `soi-doi-kho.js` —
+   bộ soi chạy TRƯỚC MỖI LƯỢT ĐẨY, tức là bộ báo động chính — không
+   biết phép trừ ấy, nên nó báo "QA_CHOCHU mất mã WOW-01" trong khi
+   WOW-01 nằm nguyên trong QA_DACHOT.
+
+   Một phép kiểm báo mất nhầm thì lần sau người ta tắt nó đi. Nên nó
+   ở đây, và cả hai bộ soi cùng TRỎ vào — chép sang là dựng bản thứ
+   hai của một sự thật, và bản trôi đi thì không ai thấy vì bản kia
+   vẫn đúng.
+
+   `dem` là hàm đếm bản ghi do bên gọi đưa vào: hai bộ soi đếm trên
+   hai hình dữ liệu khác nhau (một bên là kho đã mở, một bên là bản
+   ghi đọc từ .enc), và ép chung một cách đếm là bắt một trong hai
+   phải dựng lại dữ liệu cho vừa hàm này.
+   ══════════════════════════════════════════════════════════════════ */
+function daTienSangDaChot(ten, thieu, kho, dem) {
+  if (!/_CHOCHU$/.test(ten)) return null;
+  const chot = ten.replace(/_CHOCHU$/, '_DACHOT');
+  if (!(chot in kho)) return null;
+  const soChot = dem(kho[chot]);
+  if (soChot < thieu) return null;
+  return { chot, soChot };
+}
+
+module.exports = { cau, cauGon, ten, nhan, docKhoTuEnc, docSoCho, moGoi, daTienSangDaChot };

@@ -38,6 +38,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { execSync } = require('child_process');
+const { daTienSangDaChot } = require('./so-cho');
 
 const GOC = path.join(__dirname, '..');
 
@@ -120,11 +121,29 @@ ten.forEach(k => {
   const coMa = Array.isArray(a) && Array.isArray(b) && a.length && maCua(a[0]);
   const roiKho = coMa ? a.map(maCua).filter(m => m && b.map(maCua).indexOf(m) < 0) : [];
   const sangKhoKhac = roiKho.length && roiKho.every(m => maToanKho.has(m));
+  /* Sổ chờ vơi đi vì mục được TIỄN sang `X_DACHOT` là chuyện ĐÚNG
+     (luật 9.99.61). Phép trừ ấy sống ở `tools/so-cho.js` và cả
+     `kho-luu.js` lẫn tệp này cùng TRỎ vào — chép sang là dựng bản thứ
+     hai của một sự thật, và bản trôi thì không ai thấy vì bản kia vẫn
+     đúng.
+
+     Vì sao vế này phải có ở ĐÂY, không chỉ ở `kho-luu.js`: tệp này là
+     bộ soi chạy TRƯỚC MỖI LƯỢT ĐẨY, tức là bộ báo động chính. Phá thử
+     (bỏ ô `ma` khỏi mục đã tiễn, rồi tắt phép trừ này) cho ra đúng hai
+     dòng đỏ oan: "QA_CHOCHU 1 → 0" và "QA_CHOCHU mất mã: WOW-01" —
+     trong khi WOW-01 nằm nguyên trong QA_DACHOT. Một phép kiểm báo mất
+     nhầm thì lần sau người ta tắt nó đi, đúng vào lúc có chỗ mất thật.
+
+     Vế `sangKhoKhac` ở trên KHÔNG thay được vế này: nó lần theo mã bản
+     ghi, mà mấy sổ chờ không đánh mã thì câu hỏi chính là định danh. */
+  const tien = (nb < na) ? daTienSangDaChot(k, na - nb, NAY, dem) : null;
   if (sangKhoKhac) chuyen.push(k + ' ' + na + ' → ' + nb + ' (' + roiKho.join(' ') + ' sang kho khác)');
+  else if (tien) chuyen.push(k + ' ' + na + ' → ' + nb + ' (' + (na - nb) +
+    ' mục đã trả lời, tiễn sang ' + tien.chot + ' — gỡ khỏi sổ chờ, không xoá)');
   else if (nb < na) hut.push(k + ' ' + na + ' → ' + nb);
   /* Bản ghi biến mất theo mã — đây là dấu hiệu hỏng rõ nhất. Mã còn ở
      kho khác thì là chuyển kho, không phải mất. */
-  if (coMa) {
+  if (coMa && !tien) {
     const bay = a.map(maCua).filter(m => m && !maToanKho.has(m));
     if (bay.length) hut.push(k + ' mất mã: ' + bay.slice(0, 5).join(' ') + (bay.length > 5 ? ' …' : ''));
   }

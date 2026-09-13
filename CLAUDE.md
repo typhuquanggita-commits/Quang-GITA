@@ -2514,6 +2514,106 @@ nhầm y như một con số báo nhiều hơn — nay 1.596.
 Cổng vào tải **1,5 giây** · 0 lỗi trang cả hành trình · không màn nào
 chậm quá 600ms.
 
+
+---
+
+## THANG 1000 ĐIỂM — HAI NGĂN, KHÔNG TRỘN LẠI (9.99.81)
+
+Chủ hệ chốt **WOW-01 phương án 1**: *tách hai ngăn — ô nào máy đo được
+thì máy đo lại mỗi bản; ô nào người khai thì nói thẳng là người khai,
+kèm ngày và tên.*
+
+Kho `data.qa.js` (`G.CHUAN1000` · `G.QA_DACHOT`), bộ đo
+`src/chuan-do.js`, màn vẽ lại ở `src/views3.js`, bộ kiểm **mục 95**
+(năm phép đo) và mục **1** sửa lại.
+
+### Mỗi ô khai ĐÚNG MỘT đường
+
+| Ngăn | Khoá | Con số từ đâu | Bao nhiêu ô |
+|---|---|---|---|
+| Máy đo | `mayDo` | `chuan-do.js` đo **lúc mở màn** | 16/50 |
+| Người khai | `khai` | người gõ, kèm `ngay` + `ai` | 34/50 |
+
+Cùng luật `mayDo`/`nguoiDo` của Hiến pháp (9.99.62) và
+`rangO`/`chuaCoMat` của luật giao diện (9.99.74).
+
+**Ô `mayDo` bỏ hẳn khoá `d`; chương bỏ hẳn khoá `diem`.** Phép đo về
+thứ không được tồn tại — lối đo thứ BẢY trong bộ, sau LR1 (79) · ô tự
+khai (81) · cột đèn (83) · cột ba cửa (86) · ô lọc bốc nhà (88) · cửa
+chưa dựng (91) · cột cấp người xin (93). Một con số gõ tay nằm cạnh
+một mã phép đo là hai bản của một sự thật, và bản gõ tay thì không ai
+cập nhật.
+
+### Đo LÚC MỞ MÀN, không đo ở bộ kiểm rồi chép số vào kho
+
+Một con số đo ở bộ kiểm rồi ghi vào kho là **một lời khai mang dấu của
+phép đo** — nhìn y hệt, và nó cũ đi lặng lẽ. Đo lúc mở màn thì con số
+già nhất là vài trăm mili giây.
+
+Kéo theo, và đây là phần dễ làm sai: **kho chưa mở thì BỎ HẲN mã ấy,
+không ghi 0, và không tính vào mẫu số.** Trống là *"chưa đo được"*, 0
+là *"đo được và bằng không"*. Đếm nó là 0 sẽ dìm cả ngăn xuống vì một
+thứ chưa ai đo, và con số ấy trông y hệt một kết quả kém.
+
+### Màn KHÔNG có con số tổng trên 1000
+
+Cộng 320 điểm đo được với 680 điểm lời khai thì con số ra **mang tên
+của phép đo** trong khi nó thừa hưởng mọi sai của lời khai. Cùng luật
+phễu (9.99.59) và `docTuanThu` (9.99.70).
+
+Màn nói thẳng chỗ ấy, và nói cả đường ra: *muốn một con số duy nhất
+thì phải chuyển bớt ô từ ngăn hai sang ngăn một — tức là viết thêm
+phép đo, không phải cộng thêm.*
+
+Mỗi lời khai in kèm **tuổi tính lúc đọc**. Một lời khai không ai biết
+tuổi thì nó được đọc như thể vừa viết sáng nay.
+
+### Vì sao dừng ở 16/50, và vì sao KHÔNG cố nâng con số ấy
+
+Ba mươi tư ô còn lại nói về thứ máy không quan sát được — *"tám giây
+đầu nói đúng nỗi đau bằng lời của khách"*. Viết một hàm trả về một con
+số cho chúng là dựng lại đúng cái bẫy vừa gỡ, lần này **mang nhãn "máy
+đo" nên còn khó cãi hơn**. Con số 16/50 chính là thông điệp của bảng.
+
+### Phép đo phân bố KHÔNG đều, và chỗ lệch ấy là phát hiện
+
+| Chương | máy đo |
+|---|---|
+| C8 Khả năng tiếp cận | **5/5** |
+| C4 Chiều sâu nội dung | 4/5 |
+| C3 Ngôn từ · C5 Cảm giác thuộc về · C9 Đo lường | **0/5** |
+
+**Máy đo được gần hết phần KỸ THUẬT và không đo được gì ở phần quyết
+định khách có ở lại hay không.** Và C9 — chương tên là *"Đo lường &
+vòng phản hồi"* — là chương **không đo được ô nào**.
+
+### Mục 1 phải THAY, không được GỠ
+
+Phép đo cũ cộng `y[].d` rồi so với `c.diem`; từ bản này cả hai khoá
+không còn, nên nó đỏ ngay. Gỡ là bỏ một lớp canh **và không ai biết là
+đã bỏ**. Vế mới canh đúng thứ vế cũ canh — mỗi chương đủ năm ô, trần
+khớp `max` — trên hình dữ liệu mới. Phá thử: bỏ một ô thì nó đỏ, và cả
+chương vẫn trông đầy đủ nếu không có nó.
+
+### Bản chép thứ hai bắt được trên đường đi
+
+`soi-doi-kho.js` báo *"QA_CHOCHU mất mã WOW-01"* trong khi WOW-01 nằm
+nguyên trong `QA_DACHOT`. Phép trừ phần đã tiễn dựng ở 9.99.79 nhưng
+**sống một mình trong `kho-luu.js`** — mà tệp chạy TRƯỚC MỖI LƯỢT ĐẨY,
+tức là bộ báo động chính, lại không biết nó.
+
+Nay phép trừ ở `tools/so-cho.js` và cả hai bộ soi cùng **trỏ** vào.
+Phá thử: bỏ ô `ma` khỏi mục đã tiễn rồi tắt phép trừ → đỏ oan đúng hai
+dòng. Một phép kiểm báo mất nhầm thì lần sau người ta tắt nó đi, đúng
+vào lúc có chỗ mất thật.
+
+### Thêm một kho là ba chỗ khai tay, và lần này quên đúng chỗ đầu
+
+`QA_DACHOT` không khai ở `ma-hoa-kho.js` thì nó **không vào gói nào** —
+`soi-doi-kho.js` báo "thêm mới 0" và cả kho biến mất trong im lặng.
+Đúng danh sách CLAUDE.md đã dặn ở 9.99.61; đọc rồi vẫn quên, nên ghi
+lại đây: `ma-hoa-kho.js` · `kho-khoa.js` · `RONG_CO_Y` nếu rỗng.
+
 ---
 
 ## Bộ tối ưu cấu hình gói (9.99.68)

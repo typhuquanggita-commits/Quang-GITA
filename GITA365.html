@@ -2469,12 +2469,12 @@ main{container-type:inline-size}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 115 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 116 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 146 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 147 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -2515,7 +2515,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.80',
+  version: '9.99.81',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -6254,7 +6254,7 @@ G.THUOC_CAP_PHEP = [
   'HEALTH','DUYET','AUDIT','TODAY','LEVELS','DIEM','HUYHIEU','QUA','HOAHONG','DANDAT','BRAND',
   'RASOAT','TAMNHIN100','TANG100','WOW','NHATBAN','CHIPHI','NGONTU_RANH','DAISU','BAIHOC',
   'MOTHUC','SACH','BANDO_A3','POSTER','SODO','PHACDO','DIEMCHAM','NGONTU','NGONTU_TANG',
-  'THAYVI','MAUTHOAI','PERSONA','CHUAN1000','QA_CHOCHU','HAILONG','TAILIEU','AIPOLICY','KPI','DINHTUYEN',
+  'THAYVI','MAUTHOAI','PERSONA','CHUAN1000','QA_CHOCHU','QA_DACHOT','HAILONG','TAILIEU','AIPOLICY','KPI','DINHTUYEN',
   'AINANGCAP','LACHAN','BENCH','BENCH_AI','KICHBAN',
   /* Kho nghề thêm từ v8.9. Thiếu tên ở đây thì donKho() không xoá, và
      một máy vừa đăng nhập Coach rồi đăng nhập lại bằng phụ huynh sẽ để
@@ -8669,6 +8669,362 @@ G.VIEWS['ranh-gioi'] = function(){
 
 })();
 
+/* ═════════ src/chuan-do.js ═════════ */
+(function(){
+/* ══════════════════════════════════════════════════════════════════
+   CHUẨN 1000 — NỬA MÁY ĐO
+   ------------------------------------------------------------------
+   Tới 9.99.80 cả năm mươi ô của G.CHUAN1000 đều là LỜI KHAI: một con
+   số gõ tay một lần rồi không ai đo lại. Đo thử đúng một ô — C8 "có
+   nhãn cho trình đọc màn hình", ô tự khai THẤP NHẤT cả bảng 12/20 —
+   ra 0/3.021 nút thiếu nhãn. Bảng chấm sai, và sai theo chiều nào
+   cũng vô dụng như nhau.
+
+   Chủ hệ chốt WOW-01 phương án 1: TÁCH HAI NGĂN. Tệp này là nửa thứ
+   nhất — mỗi hàm ở đây đo THẬT, trên DOM đang chạy hoặc trên kho đã
+   mở, VÀO ĐÚNG LÚC người ta mở màn.
+
+   Vì sao đo lúc mở màn chứ không đo ở bộ kiểm rồi ghi số vào kho:
+   một con số đo ở bộ kiểm rồi chép vào kho là một LỜI KHAI mang dấu
+   của phép đo — nhìn y hệt, và nó cũ đi lặng lẽ. Cùng luật với cột
+   `conHan` không có trong theVungManh (9.99.63), cột `den` không có
+   trong hoSoSongSinh (9.99.66), cột "giá hiện tại" không có trong
+   bangGia (9.99.73).
+
+   HAI LUẬT CỦA TỆP NÀY
+   1. Hàm nào KHÔNG đo được thật thì KHÔNG viết ra ở đây. Khai `mayDo`
+      cho một ô rồi trả về một con số đoán là dựng lại đúng cái bẫy
+      vừa gỡ — tệ hơn, vì nay nó mang nhãn "máy đo".
+   2. Mỗi hàm trả kèm `cach` — CÂU NÓI CÁCH ĐO. Một con số không nói
+      nó đo bằng gì thì người đọc không cãi lại được, và thứ không cãi
+      lại được thì không kiểm lại được.
+   ══════════════════════════════════════════════════════════════════ */
+(function(){
+  'use strict';
+  var G = window.G;
+
+  /* Chấm theo tỷ lệ đạt, làm tròn XUỐNG. Làm tròn lên là tự cho mình
+     nửa điểm ở mọi ô, và năm mươi nửa điểm cộng lại thành một con số
+     không ai đặt. */
+  function cham(dat, tren, m){
+    if (!tren) return 0;
+    return Math.max(0, Math.min(m, Math.floor(dat / tren * m)));
+  }
+
+  /* Kho có thể chưa nạp (kho nạp SAU khi đăng nhập, và vai không có
+     gói nghề thì không bao giờ nạp). Trả undefined chứ không trả 0 —
+     0 đọc ra là "đo được và bằng không". */
+  function kho(ten){
+    var v = G[ten];
+    return (v === undefined || v === null) ? undefined : v;
+  }
+
+  /* ── Tương phản: công thức WCAG, đọc màu ĐANG CHẠY từ trình duyệt ── */
+  function sang(mau){
+    var m = /rgba?\((\d+)[,\s]+(\d+)[,\s]+(\d+)/.exec(mau);
+    if (!m) return null;
+    var a = [+m[1], +m[2], +m[3]].map(function(v){
+      v /= 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    return 0.2126 * a[0] + 0.7152 * a[1] + 0.0722 * a[2];
+  }
+  function tuongPhan(truoc, sau){
+    var a = sang(truoc), b = sang(sau);
+    if (a === null || b === null) return null;
+    return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+  }
+
+  /* ══════════════ CÁC PHÉP ĐO ══════════════
+     Mỗi mã ở đây phải có ĐÚNG MỘT ô trong G.CHUAN1000 trỏ tới, và
+     ngược lại. Mục 95 canh cả hai chiều: một phép đo không ô nào gọi
+     là mã chết, và một ô trỏ vào mã không tồn tại thì ô ấy lặng lẽ
+     mất điểm mà nhìn vẫn y hệt một ô đã được đo. */
+  var DO = {
+
+    /* ─── C1 · Nhận diện ─── */
+    CHUAN_CHU: function(m){
+      /* Thang cỡ chữ: đếm bậc cỡ chữ THẬT SỰ đang hiện trên trang.
+         Bản 9.25 có hai mươi sáu bậc — nghĩa là không có thang nào
+         cả, mỗi mảnh giao diện tự nghĩ ra cỡ của mình. */
+      var bac = {}, n = 0;
+      document.querySelectorAll('body *').forEach(function(e){
+        if (!e.offsetParent && e.tagName !== 'BODY') return;
+        var t = (e.textContent || '').trim();
+        if (!t || e.children.length) return;
+        var c = Math.round(parseFloat(getComputedStyle(e).fontSize) * 2) / 2;
+        if (!c) return;
+        bac[c] = (bac[c] || 0) + 1; n++;
+      });
+      var so = Object.keys(bac).length;
+      return { d: cham(Math.max(0, 12 - so), 9, m), tren: n,
+        cach: so + ' bậc cỡ chữ đang hiện trên màn này (thang chuẩn: 9 bậc; '
+          + 'đạt tối đa khi ≤ 3 bậc trên một màn)' };
+    },
+
+    /* ─── C2 · Điều hướng ─── */
+    NAV_NHOM: function(m){
+      var nav = kho('NAV');
+      if (!nav) return undefined;
+      /* Hai điều kiện: gom về năm nhóm, và KHÔNG mục nào nằm hai nhóm.
+         Mục nằm hai nhóm là chỗ người dùng học một đường đi rồi lần
+         sau tìm ở đường ấy không thấy. */
+      var thay = {}, chong = 0, tong = 0;
+      nav.forEach(function(nh){
+        (nh.items || []).forEach(function(i){
+          tong++;
+          if (thay[i.v]) chong++; else thay[i.v] = 1;
+        });
+      });
+      var dat = (chong === 0 ? 1 : 0) + (nav.length <= 6 ? 1 : 0);
+      return { d: cham(dat, 2, m), tren: tong,
+        cach: nav.length + ' nhóm · ' + tong + ' mục · ' + chong + ' mục nằm hai nhóm' };
+    },
+    NAV_PHIM: function(m){
+      /* Tìm nhanh bằng bàn phím: ô tìm phải CÓ MẶT và nhận được nét
+         nháy. Một ô tìm hiện ra mà không focus được thì nó chỉ dùng
+         được bằng chuột — tức là đúng thứ ô này sinh ra để thay. */
+      var o = document.querySelector('#nav-tim, [data-tim], input[type=search]');
+      if (!o) return { d: 0, tren: 1, cach: 'không có ô tìm nhanh trên màn này' };
+      var duoc = o.tabIndex >= 0 && !o.disabled;
+      return { d: cham(duoc ? 1 : 0, 1, m), tren: 1,
+        cach: duoc ? 'có ô tìm nhanh và nhận được nét nháy bàn phím'
+                   : 'có ô tìm nhanh nhưng bàn phím không tới được' };
+    },
+
+    /* ─── C4 · Chiều sâu nội dung ─── */
+    KICHBAN_5T: function(m){
+      var k = kho('KICHBAN');
+      if (!k) return undefined;
+      var t = {}; k.forEach(function(x){ if (x.tang) t[x.tang] = (t[x.tang] || 0) + 1; });
+      var du = ['T1','T2','T3','T4','T5'].filter(function(x){ return t[x] >= 100; }).length;
+      return { d: cham(du, 5, m), tren: k.length,
+        cach: k.length + ' kịch bản · ' + du + '/5 tầng có từ 100 bản ghi trở lên ('
+          + ['T1','T2','T3','T4','T5'].map(function(x){ return x + ':' + (t[x] || 0); }).join(' ') + ')' };
+    },
+    PHACDO_220: function(m){
+      var p = kho('PHACDO');
+      if (!p) return undefined;
+      /* Đếm phác đồ CÓ ĐỦ ba lời khuyên theo vai — một phác đồ thiếu
+         một vai là một phác đồ chỉ dùng được cho hai phần ba số người
+         mở nó ra, và chỗ thiếu ấy không hiện ra ở đâu cả. */
+      var du = p.filter(function(x){
+        return (x.ph || '').trim() && (x.coach || '').trim() && (x.dich || '').trim();
+      }).length;
+      return { d: cham(du, p.length, m), tren: p.length,
+        cach: du + '/' + p.length + ' phác đồ có đủ lời cho cả ba vai (phụ huynh · coach · chuyển tuyến)' };
+    },
+    MOTHUC_TANG: function(m){
+      var mt = kho('MOTHUC');
+      if (!mt) return undefined;
+      var du = mt.filter(function(x){ return (x.tiers || []).length; }).length;
+      return { d: cham(du, mt.length, m), tren: mt.length,
+        cach: du + '/' + mt.length + ' mô thức có khai tầng dùng được' };
+    },
+    NGUON_NGOAI: function(m){
+      /* "Nguyên lý mượn ngoài đều ghi nguồn" — đo trên chính kho mô
+         thức, nơi phần lớn nguyên lý mượn ngoài nằm. */
+      var mt = kho('MOTHUC');
+      if (!mt) return undefined;
+      var co = mt.filter(function(x){ return (x.source || '').trim(); }).length;
+      return { d: cham(co, mt.length, m), tren: mt.length,
+        cach: co + '/' + mt.length + ' mô thức ghi rõ nguồn' };
+    },
+
+    /* ─── C6 · Phân quyền ─── */
+    VAI_PHAMVI: function(m){
+      var r = kho('ROLES');
+      if (!r) return undefined;
+      /* Mỗi vai phải trỏ vào một cổng CÓ THẬT. Một vai trỏ vào cổng
+         không tồn tại thì người mang vai ấy đăng nhập vào khoảng
+         không, và lỗi chỉ hiện ra với đúng người ấy. */
+      var cong = kho('PORTALS') || {};
+      var du = r.filter(function(x){ return x.portal && cong[x.portal]; }).length;
+      return { d: cham(du, r.length, m), tren: r.length,
+        cach: du + '/' + r.length + ' vai trỏ vào một cổng có thật' };
+    },
+    PHIEN_HAN: function(m){
+      /* "Xác thực đặt ở máy chủ, phiên có hạn" — phần máy khách kiểm
+         được là: phiên CÓ mốc hết hạn, và mốc ấy nằm ở tương lai gần
+         chứ không phải một trăm năm. Phần "đặt ở máy chủ" thì máy
+         khách không tự chứng minh được — nên ô này chỉ lấy phần đo
+         được, và `cach` nói thẳng nó đo nửa nào. */
+      var s = G.S || {};
+      var han = s.hetHan || s.exp || (s.phien && s.phien.hetHan);
+      if (!han) return { d: 0, tren: 1, cach: 'phiên máy khách không mang mốc hết hạn nào' };
+      var gio = (new Date(han).getTime() - Date.now()) / 3600000;
+      var hopLy = gio > 0 && gio <= 24 * 30;
+      return { d: cham(hopLy ? 1 : 0, 1, m), tren: 1,
+        cach: 'phiên còn ' + Math.round(gio) + ' giờ' +
+          (hopLy ? '' : ' — ngoài khoảng hợp lý (0–720 giờ)') +
+          '. Chỉ đo phía máy khách; phần "đặt ở máy chủ" đo ở thu-worker.js' };
+    },
+
+    /* ─── C7 · Hiệu năng ─── */
+    CHUYEN_MAN: function(m){
+      /* Đo THẬT: dựng lại ba màn đang có trong cột trái và bấm giờ.
+         Không đọc một con số ai đó ghi lại. */
+      var nut = [].slice.call(document.querySelectorAll('button.nav-i[data-v]')).slice(0, 3);
+      if (!nut.length) return undefined;
+      var ms = [];
+      nut.forEach(function(n){
+        var v = n.getAttribute('data-v'), f = G.VIEWS && G.VIEWS[v];
+        if (typeof f !== 'function') return;
+        var t0 = performance.now();
+        try { f(); } catch (e) { return; }
+        ms.push(performance.now() - t0);
+      });
+      if (!ms.length) return undefined;
+      var cao = Math.max.apply(null, ms);
+      return { d: cham(ms.filter(function(x){ return x < 100; }).length, ms.length, m), tren: ms.length,
+        cach: 'dựng ' + ms.length + ' màn ngay lúc này · chậm nhất ' + cao.toFixed(1) + ' ms (ngưỡng 100)' };
+    },
+    KHO_TACH: function(m){
+      /* "Dữ liệu tách khỏi giao diện" — đo bằng chỗ dữ liệu THẬT SỰ
+         nằm: số kho G.* đã mở. Không kho nào thì cả câu ấy không đúng
+         ở máy này. */
+      var ds = kho('DS_KHO') || (G.KHO && G.KHO.ten);
+      var n = 0;
+      for (var k in G) if (Object.prototype.hasOwnProperty.call(G, k) &&
+        /^[A-Z][A-Z0-9_]*$/.test(k) && (Array.isArray(G[k]) || (G[k] && typeof G[k] === 'object'))) n++;
+      void ds;
+      return { d: cham(n >= 300 ? 1 : 0, 1, m), tren: n,
+        cach: n + ' kho dữ liệu nằm ngoài mã giao diện, nạp riêng sau khi đăng nhập' };
+    },
+
+    /* ─── C8 · Khả năng tiếp cận ─── */
+    BAN_PHIM: function(m){
+      var tuongTac = document.querySelectorAll(
+        'button, a[href], input:not([type=hidden]), select, textarea, [role=button]');
+      var tat = 0, tong = 0;
+      tuongTac.forEach(function(e){
+        if (!e.offsetParent) return;
+        tong++;
+        if (e.tabIndex < 0 || e.getAttribute('aria-hidden') === 'true') tat++;
+      });
+      return { d: cham(tong - tat, tong || 1, m), tren: tong,
+        cach: tat + '/' + tong + ' chỗ bấm được mà bàn phím KHÔNG tới được' };
+    },
+    TUONG_PHAN: function(m){
+      /* Đọc màu ĐANG CHẠY, không đọc một bảng mã chép tay: tệp kiểu
+         đổi mà bảng chép tay ở lại thì cả bộ nhận diện trôi đi trong
+         khi phép kiểm vẫn xanh (bài học 9.26). */
+      var nen = getComputedStyle(document.body).backgroundColor;
+      var mau = [], chu = 0, dat = 0;
+      document.querySelectorAll('body *').forEach(function(e){
+        if (!e.offsetParent || e.children.length) return;
+        if (!(e.textContent || '').trim()) return;
+        var st = getComputedStyle(e);
+        var co = parseFloat(st.fontSize) >= 18.66 || +st.fontWeight >= 700 ? 3 : 4.5;
+        var tp = tuongPhan(st.color, st.backgroundColor === 'rgba(0, 0, 0, 0)' ? nen : st.backgroundColor);
+        if (tp === null) return;
+        chu++; if (tp >= co) dat++; else mau.push(tp.toFixed(2));
+      });
+      return { d: cham(dat, chu || 1, m), tren: chu,
+        cach: dat + '/' + chu + ' khối chữ đạt ngưỡng AA' +
+          (mau.length ? ' · thấp nhất ' + Math.min.apply(null, mau.map(Number)).toFixed(2) : '') };
+    },
+    GIAM_CHUYEN_DONG: function(m){
+      /* Có luật `prefers-reduced-motion` trong tệp kiểu đang chạy hay
+         không — hỏi chính bộ luật CSS trình duyệt đã nạp, không hỏi
+         một ô khai. */
+      var co = 0;
+      try {
+        for (var i = 0; i < document.styleSheets.length; i++) {
+          var ss = document.styleSheets[i], r;
+          try { r = ss.cssRules; } catch (e) { continue; }
+          if (!r) continue;
+          for (var j = 0; j < r.length; j++)
+            if (r[j].media && /prefers-reduced-motion/.test(r[j].conditionText || r[j].media.mediaText)) co++;
+        }
+      } catch (e) { return undefined; }
+      return { d: cham(co ? 1 : 0, 1, m), tren: 1,
+        cach: co + ' khối luật tôn trọng chế độ giảm chuyển động của máy người dùng' };
+    },
+    CO_CHU_LON: function(m){
+      /* Ngưỡng 16px không phải một ý thích: dưới mức ấy Safari trên
+         iPhone phóng CẢ TRANG khi người ta chạm vào ô nhập. */
+      var o = document.querySelectorAll('input:not([type=hidden]), textarea, select');
+      var dat = 0, n = 0;
+      o.forEach(function(e){
+        if (!e.offsetParent) return;
+        n++; if (parseFloat(getComputedStyle(e).fontSize) >= 16) dat++;
+      });
+      var than = parseFloat(getComputedStyle(document.body).fontSize);
+      if (!n) return { d: cham(than >= 14 ? 1 : 0, 1, m), tren: 1,
+        cach: 'màn này không có ô nhập · cỡ chữ thân trang ' + than + 'px' };
+      return { d: cham(dat, n, m), tren: n,
+        cach: dat + '/' + n + ' ô nhập đạt 16px · cỡ chữ thân trang ' + than + 'px' };
+    },
+    NHAN_DOC: function(m){
+      /* Ô tự khai THẤP NHẤT cả bảng (12/20) và là ô đầu tiên được đo
+         thật. Kết quả lượt đầu: 0/3.021 nút thiếu nhãn — bảng chấm
+         quá tay, chứ không phải kho hỏng. */
+      function coNhan(e){
+        if (e.getAttribute('aria-label') || e.getAttribute('aria-labelledby') ||
+            e.getAttribute('title')) return true;
+        if (e.id && document.querySelector('label[for="' + (window.CSS && CSS.escape
+          ? CSS.escape(e.id) : e.id) + '"]')) return true;
+        if (e.closest && e.closest('label')) return true;
+        if (e.tagName === 'BUTTON' || e.tagName === 'A')
+          return !!(e.textContent || '').trim();
+        return !!e.getAttribute('placeholder');
+      }
+      var thieu = 0, n = 0;
+      document.querySelectorAll('button, a[href], img, input:not([type=hidden]), select, textarea')
+        .forEach(function(e){
+          if (!e.offsetParent && e.tagName !== 'IMG') return;
+          n++;
+          var ok = e.tagName === 'IMG' ? e.hasAttribute('alt') : coNhan(e);
+          if (!ok) thieu++;
+        });
+      return { d: cham(n - thieu, n || 1, m), tren: n,
+        cach: thieu + '/' + n + ' nút · liên kết · ảnh · ô nhập thiếu tên đọc được' };
+    },
+
+    /* ─── C10 · Lan toả ─── */
+    DAISU_KHUNG: function(m){
+      var d = kho('DAISU');
+      if (!d) return undefined;
+      var cap = (d.capDo || []).length, nv = (d.nhiemVu || []).length;
+      var dat = (cap === 4 ? 1 : 0) + (nv === 20 ? 1 : 0);
+      return { d: cham(dat, 2, m), tren: 2,
+        cach: cap + ' cấp đại sứ (cần 4) · ' + nv + ' nhiệm vụ (cần 20)' };
+    },
+    CHIASE_LUAT: function(m){
+      var d = kho('DAISU');
+      if (!d || !d.quyTac) return undefined;
+      var n = (d.quyTac.muc || []).length;
+      return { d: cham(Math.min(n, 13), 13, m), tren: n,
+        cach: n + '/13 quy tắc an toàn khi chia sẻ' };
+    }
+  };
+
+  /* ══════════════ CỬA RA ══════════════
+     Trả về BẢNG THEO MÃ, không trả một con số tổng. Cộng tổng là việc
+     của chỗ trình bày, và chỗ ấy phải cộng RIÊNG nửa này — gộp với
+     nửa lời khai thì con số mang tên của phép đo trong khi nó thừa
+     hưởng mọi sai của lời khai (luật phễu, 9.99.59). */
+  G.chuanDo = function(){
+    var ra = {}, luc = new Date();
+    Object.keys(DO).forEach(function(ma){
+      var r;
+      try { r = DO[ma](20); }
+      catch (e) { r = { loi: (e && e.message ? e.message : 'lỗi') }; }
+      /* Kho chưa mở thì BỎ HẲN mã ấy, không ghi 0. Trống là "chưa đo
+         được", 0 là "đo được và bằng không" — hai câu khác hẳn nhau. */
+      if (r !== undefined) ra[ma] = r;
+    });
+    ra._luc = luc;
+    return ra;
+  };
+
+  /* Danh sách mã, để mục 95 đối chiếu hai chiều với kho. */
+  G.CHUAN_DO_MA = Object.keys(DO);
+})();
+
+})();
+
 /* ═════════ src/views3.js ═════════ */
 (function(){
 /* ═══════════════════════════════════════════════════════════════
@@ -9195,41 +9551,147 @@ G.VIEWS['kiem-thu'] = function(){
   return o;
 };
 
-/* ═══════════════ 05 · CHUẨN 1000 ĐIỂM ═══════════════ */
+/* ═══════════════ 05 · CHUẨN 1000 ĐIỂM ═══════════════
+   HAI NGĂN, KHÔNG MỘT CON SỐ GỘP.
+
+   Bản cũ trình một con số /1000 duy nhất, cộng từ năm mươi ô gõ tay,
+   và trình nó với độ chính xác của một phép đo. Chủ hệ chốt WOW-01:
+   tách hai ngăn.
+
+   Vì sao KHÔNG có tổng chung, dù nó dễ đọc hơn: cộng một nửa đo được
+   với một nửa lời khai thì con số ra mang TÊN của phép đo trong khi
+   nó thừa hưởng mọi sai của lời khai. Cùng luật với phễu thị giác
+   (9.99.59) và cột lời khai của `docTuanThu` (9.99.70).
+
+   Nửa máy đo chạy LÚC MỞ MÀN — nên con số ở đây già nhất là vài trăm
+   mili giây. Nửa người khai mang ngày và tên, và màn NÓI RA lời khai
+   cũ bao nhiêu ngày: một lời khai không ai biết tuổi thì nó được đọc
+   như thể vừa viết sáng nay.
+   ═══════════════════════════════════════════════════════════════ */
 G.VIEWS['chuan-1000'] = function(){
   if(!G.can('pro_report')) return U.lockCard();
-  var tong = G.CHUAN1000.reduce(function(a,c){return a+c.diem;},0);
+
+  var do_ = (typeof G.chuanDo === 'function') ? G.chuanDo() : {};
+  var hnay = Date.now();
+
+  /* Cộng RIÊNG hai nửa. Ô máy đo chưa đo được (kho chưa mở) thì KHÔNG
+     tính vào mẫu số — đếm nó là 0 điểm sẽ dìm cả ngăn xuống vì một
+     thứ chưa ai đo, và con số ấy trông y hệt một kết quả kém. */
+  var mD = 0, mT = 0, mCho = 0, nD = 0, nT = 0, cuNhat = null;
+  G.CHUAN1000.forEach(function(c){
+    c.y.forEach(function(y){
+      if (y.mayDo){
+        var r = do_[y.mayDo];
+        if (!r || r.loi !== undefined || r.d === undefined){ mCho++; return; }
+        mD += r.d; mT += y.m;
+      } else if (y.khai){
+        nD += y.d; nT += y.m;
+        var t = Date.parse(y.khai.ngay);
+        if (!isNaN(t) && (cuNhat === null || t < cuNhat)) cuNhat = t;
+      }
+    });
+  });
+  var tuoi = cuNhat === null ? null : Math.round((hnay - cuNhat) / 86400000);
+
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'star', grad:1, t:'Chuẩn 1000 điểm',
-    lead:'Mười nhóm, mỗi nhóm năm tiêu chí, mỗi tiêu chí hai mươi điểm. Không làm tròn, không tự cho điểm đẹp — chỗ nào chưa đạt thì ghi rõ còn thiếu gì.'});
+    lead:'Năm mươi tiêu chí, mỗi tiêu chí hai mươi điểm. Chia hai ngăn theo chỗ con số ĐẾN TỪ ĐÂU — không cộng chung, vì cộng một nửa đo được với một nửa lời khai thì con số ra mang tên của phép đo mà thừa hưởng mọi sai của lời khai.'});
 
-  o += '<div class="card glow mb"><div class="row wrap" style="gap:26px;align-items:center">'+
-    U.ring(Math.round(tong/10),'var(--gita)','TRÊN 1000')+
-    '<div class="grow" style="min-width:250px">'+
-    '<div class="row" style="gap:10px;align-items:baseline"><b class="mono grad-text" style="font-size:33px">'+tong+'</b>'+
-    '<span class="muted" style="font-size:18px">/ 1000</span></div>'+
-    '<p class="sm dim mt">Còn '+(1000-tong)+' điểm để chạm chuẩn tuyệt đối. Ba khoảng hụt lớn nhất: '+
-    '<b style="color:var(--ink-2)">xác thực ở máy chủ (10/20)</b>, '+
-    '<b style="color:var(--ink-2)">nhãn cho trình đọc màn hình (12/20)</b>, '+
-    '<b style="color:var(--ink-2)">lưu tiến trình thật giữa các phiên (14/20)</b>.</p>'+
-    '<div class="mt">'+U.bar(tong/10,'var(--gita)')+'</div></div></div></div>';
+  /* ── Hai thẻ số, ĐẶT CẠNH NHAU chứ không chồng lên nhau ── */
+  o += '<div class="row wrap mb" style="gap:14px;align-items:stretch">';
 
+  o += '<div class="card grow" style="min-width:260px;border-color:var(--ok)44">'+
+    '<div class="row" style="gap:8px;align-items:center">'+
+      '<span style="color:var(--ok)">'+ic('check','w-4 h-4')+'</span>'+
+      '<b class="tiny up" style="color:var(--ok)">NGĂN 1 · MÁY ĐO</b></div>'+
+    '<div class="row mt" style="gap:10px;align-items:baseline">'+
+      '<b class="mono" style="font-size:33px;color:var(--ok)">'+mD+'</b>'+
+      '<span class="muted" style="font-size:18px">/ '+mT+'</span></div>'+
+    '<div class="mt">'+U.bar(mT?mD/mT*100:0,'var(--ok)')+'</div>'+
+    '<p class="tiny muted mt">Đo lại mỗi lượt mở màn, trên chính màn hình đang chạy. '+
+      'Con số này già nhất là vài trăm mili giây.'+
+      (mCho ? ' <b style="color:var(--warn)">'+mCho+' ô chưa đo được</b> — kho của ô ấy chưa mở với vai này, nên nó KHÔNG được tính là 0.' : '')+
+    '</p></div>';
+
+  o += '<div class="card grow" style="min-width:260px;border-color:var(--warn)44">'+
+    '<div class="row" style="gap:8px;align-items:center">'+
+      '<span style="color:var(--warn)">'+ic('pulse','w-4 h-4')+'</span>'+
+      '<b class="tiny up" style="color:var(--warn)">NGĂN 2 · NGƯỜI KHAI</b></div>'+
+    '<div class="row mt" style="gap:10px;align-items:baseline">'+
+      '<b class="mono" style="font-size:33px;color:var(--warn)">'+nD+'</b>'+
+      '<span class="muted" style="font-size:18px">/ '+nT+'</span></div>'+
+    '<div class="mt">'+U.bar(nT?nD/nT*100:0,'var(--warn)')+'</div>'+
+    '<p class="tiny muted mt">Người gõ, không máy đo. '+
+      (tuoi === null ? 'Không ô nào ghi ngày khai.'
+        : 'Lời khai cũ nhất viết cách đây <b style="color:var(--ink-2)">'+tuoi+' ngày</b>.')+
+      ' Một lời khai không ai biết tuổi thì nó được đọc như thể vừa viết sáng nay.'+
+    '</p></div>';
+
+  o += '</div>';
+
+  o += '<div class="card mb" style="border-style:dashed">'+
+    '<p class="sm">'+ic('pulse','w-4 h-4')+' <b>Không có con số tổng trên 1000.</b> '+
+    'Cộng '+mT+' điểm đo được với '+nT+' điểm lời khai thì ra một con số mang tên '+
+    'của phép đo. Muốn một con số duy nhất thì phải chuyển bớt ô từ ngăn hai sang '+
+    'ngăn một — tức là viết thêm phép đo, không phải cộng thêm.</p></div>';
+
+  /* ── Mười chương, mỗi ô nói RÕ nó thuộc ngăn nào ── */
   o += G.CHUAN1000.map(function(c){
+    var cD = 0, cT = 0, kD = 0, kT = 0;
+    c.y.forEach(function(y){
+      if (y.mayDo){ var r = do_[y.mayDo];
+        if (r && r.loi === undefined && r.d !== undefined){ cD += r.d; cT += y.m; } }
+      else if (y.khai){ kD += y.d; kT += y.m; }
+    });
+
     return '<div class="card mb" style="border-color:'+c.c+'26">'+
       '<div class="row wrap" style="gap:12px;margin-bottom:12px">'+
         '<span class="pill" style="background:'+c.c+'22;color:'+c.c+'">'+h(c.ma)+'</span>'+
         '<b class="grow" style="font-size:16px;min-width:180px">'+h(c.ten)+'</b>'+
-        '<b class="mono" style="font-size:18px;color:'+(c.diem>=95?'#0B7350':(c.diem>=88?'var(--gita)':'#BE0E16'))+'">'+c.diem+'</b>'+
-        '<span class="muted">/ '+c.max+'</span></div>'+
-      U.bar(c.diem, c.c)+
-      '<div class="mt2">' + c.y.map(function(y){
-        var full = y.d>=y.m;
-        return '<div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed var(--phu-3)">'+
-          '<span style="flex:none;margin-top:2px;color:'+(full?'var(--ok)':'var(--warn)')+'">'+
-          ic(full?'check':'pulse','w-4 h-4')+'</span>'+
-          '<span class="sm grow">'+h(y.t)+'</span>'+
-          '<span class="mono tiny" style="color:'+(full?'var(--ok)':'var(--warn)')+'">'+y.d+'/'+y.m+'</span></div>';
+        (cT ? '<span class="mono tiny" style="color:var(--ok)">đo '+cD+'/'+cT+'</span>' : '')+
+        (kT ? '<span class="mono tiny" style="color:var(--warn)">khai '+kD+'/'+kT+'</span>' : '')+
+      '</div>'+
+      '<div>' + c.y.map(function(y){
+        var r = y.mayDo ? do_[y.mayDo] : null;
+        var laMay = !!y.mayDo;
+        var chua  = laMay && (!r || r.loi !== undefined || r.d === undefined);
+        var diem  = laMay ? (chua ? null : r.d) : y.d;
+        var du    = diem !== null && diem >= y.m;
+        var mau   = chua ? 'var(--ink-4)' : (du ? 'var(--ok)' : 'var(--warn)');
+
+        var s = '<div style="padding:9px 0;border-bottom:1px dashed var(--phu-3)">'+
+          '<div style="display:flex;gap:10px;align-items:flex-start">'+
+            '<span style="flex:none;margin-top:2px;color:'+mau+'">'+
+              ic(chua ? 'pulse' : (du ? 'check' : 'pulse'),'w-4 h-4')+'</span>'+
+            '<span class="sm grow">'+h(y.t)+'</span>'+
+            '<span class="pill tiny" style="flex:none;background:'+
+              (laMay?'var(--ok)1A;color:var(--ok)':'var(--warn)1A;color:var(--warn)')+'">'+
+              (laMay?'máy đo':'người khai')+'</span>'+
+            '<span class="mono tiny" style="flex:none;color:'+mau+'">'+
+              (diem === null ? '—' : diem)+'/'+y.m+'</span></div>';
+
+        /* Máy đo: in CÂU NÓI CÁCH ĐO. Một con số không nói nó đo bằng
+           gì thì người đọc không cãi lại được, và thứ không cãi lại
+           được thì không kiểm lại được. */
+        if (laMay){
+          s += '<p class="tiny muted" style="margin:5px 0 0 26px">'+
+            (chua ? (r && r.loi ? 'chưa đo được — '+h(r.loi)
+                                : 'chưa đo được — kho của ô này chưa mở với vai đang dùng')
+                  : h(r.cach))+'</p>';
+        } else {
+          /* Người khai: NGÀY và TÊN, và tuổi tính lúc đọc. */
+          var t = Date.parse(y.khai.ngay);
+          var ng = isNaN(t) ? null : Math.round((hnay - t) / 86400000);
+          s += '<p class="tiny muted" style="margin:5px 0 0 26px">'+
+            h(y.khai.ai)+' khai ngày '+h(y.khai.ngay)+
+            (ng === null ? '' : ' · cách đây '+ng+' ngày')+
+            ' — chưa ai đo lại</p>';
+        }
+        return s + '</div>';
       }).join('') + '</div></div>';
   }).join('');
+
+  if (do_._luc) o += '<p class="tiny muted">Ngăn máy đo chạy lúc '+
+    h(do_._luc.toLocaleTimeString('vi-VN'))+' ngay trên màn hình này.</p>';
   return o;
 };
 

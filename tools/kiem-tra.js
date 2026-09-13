@@ -109,7 +109,16 @@ const { chromium } = require(PW);
       kbThieu: (G.KICHBAN || []).filter(k => !k.ma || !k.ten || !k.tang).length,
       pdThieu: (G.PHACDO || []).filter(x => !x.ma || !x.ten).length,
       tangLa: [...new Set((G.KICHBAN || []).map(k => k.tang))].filter(t => !G.TIERS.some(x => x.code === t)),
-      chuanLech: (G.CHUAN1000 || []).filter(c => c.y.reduce((a, x) => a + x.d, 0) !== c.diem).map(c => c.ma),
+      /* Phép đo cũ cộng `y[].d` rồi so với `c.diem`. Từ 9.99.81 cả hai
+         khoá ấy KHÔNG CÒN: ô máy đo không mang `d`, chương không mang
+         `diem` — tổng tính lúc đọc, và tính riêng từng ngăn.
+
+         THAY chứ không GỠ. Gỡ là bỏ một lớp canh và không ai biết là
+         đã bỏ. Vế mới canh đúng thứ vế cũ canh — rằng mỗi chương vẫn
+         đủ năm ô và trần vẫn khớp `max` — trên hình dữ liệu mới. */
+      chuanLech: (G.CHUAN1000 || []).filter(c =>
+        (c.y || []).length !== 5 ||
+        c.y.reduce((a, x) => a + (x.m || 0), 0) !== c.max).map(c => c.ma),
       soMan: Object.keys(G.VIEWS).length, soMuc: nav.length,
       soKB: (G.KICHBAN || []).length, soPD: (G.PHACDO || []).length, soMT: (G.MOTHUC || []).length,
       soTang100: (G.TANG100 || []).reduce((a, n) => a + n.muc.length, 0),
@@ -125,7 +134,8 @@ const { chromium } = require(PW);
   bao(!coKhoa || d.soKB === 1000, 'mở đủ 1.000 kịch bản', String(d.soKB));
   bao(d.pdThieu === 0, 'phác đồ đủ mã · tên', d.pdThieu + ' bản ghi thiếu');
   bao(!d.tangLa.length, 'không mã tầng lạ trong kho kịch bản', d.tangLa.join(', '));
-  bao(!d.chuanLech.length, 'chuẩn 1000 điểm khớp tổng từng nhóm', d.chuanLech.join(', '));
+  bao(!d.chuanLech.length, 'chuẩn 1000 điểm — mỗi chương đủ năm ô và trần khớp `max`. Vế cũ cộng điểm gõ tay rồi so với ô `diem` của chương; từ 9.99.81 cả hai khoá ấy không còn (tổng tính lúc đọc, tính riêng từng ngăn), nên vế này chuyển sang canh KHUNG — thiếu một ô thì cả chương vẫn trông đầy đủ và chỗ thiếu không lộ ra ở đâu cả',
+    d.chuanLech.length ? d.chuanLech.join(', ') : '10 chương · 50 ô · trần 100 mỗi chương');
   bao(!coKhoa || d.soTang100 === 100, 'đủ một trăm tầng giá trị', d.soTang100 + ' tầng');
 /* SỐ GÓI đọc từ chính bộ khoá, không gõ con số. Kho có bảy gói từ v7.8
    tới 9.46, và gói thứ tám (nghe-cao) ra đời ở 9.47 — ba phép đo lúc ấy
@@ -15900,6 +15910,135 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
            !s.vongKhoiPhuc ? 'VÒNG KHÔI PHỤC HỎNG: ' + (vongSai || 'không rõ') +
              ' — đây là phép đo duy nhất chạy đúng cái sẽ chạy lúc mất dữ liệu' : ''
           ].filter(Boolean).join(' · '));
+  }
+
+
+  console.log('\n95 · THANG 1000 ĐIỂM — HAI NGĂN KHÔNG ĐƯỢC TRỘN LẠI');
+  /* ══════════════════ 95. CHUẨN 1000 — MỖI Ô ĐÚNG MỘT ĐƯỜNG ══════════════════
+
+     Tới 9.99.80 cả năm mươi ô của G.CHUAN1000 là LỜI KHAI gõ tay, và
+     bảng trình chúng với độ chính xác của một phép đo. Đo thử ô tự khai
+     THẤP NHẤT cả bảng (C8 "nhãn cho trình đọc màn hình", 12/20) ra
+     0/3.021 nút thiếu nhãn — bảng chấm sai, và sai theo chiều nào cũng
+     vô dụng như nhau.
+
+     Chủ hệ chốt WOW-01 phương án 1: tách hai ngăn. Mục này canh rằng
+     hai ngăn KHÔNG trộn lại được — vì trộn lại là thứ sẽ xảy ra dần,
+     không phải trong một lượt sửa: người viết sau thêm một ô, thấy ô
+     bên cạnh có `d`, chép theo, và ô mới thành lời khai mang nhãn máy
+     đo. Không ai quyết định bỏ phép tách cả.
+
+     BỐN VẾ, và vế thứ tư là vế khó làm giả nhất:
+
+     A · Mỗi ô khai ĐÚNG MỘT đường — `mayDo` hoặc `khai`, không bao giờ
+         cả hai và không bao giờ thiếu cả hai. Cùng luật `mayDo`/`nguoiDo`
+         của Hiến pháp (9.99.62) và `rangO`/`chuaCoMat` của luật giao
+         diện (9.99.74).
+
+     B · Ô `mayDo` KHÔNG được mang `d`, và chương KHÔNG được mang `diem`.
+         Phép đo về thứ không được tồn tại — lối đo thứ bảy trong bộ, sau
+         LR1 (79) · ô tự khai (81) · cột đèn (83) · cột ba cửa (86) · ô
+         lọc bốc nhà (88) · cửa chưa dựng (91) · cột cấp người xin (93).
+         Một con số gõ tay nằm cạnh một mã phép đo là hai bản của một sự
+         thật, và bản gõ tay thì không ai cập nhật.
+
+     C · Ô `khai` PHẢI có `ngay` và `ai`. Một lời khai không ngày thì
+         không ai biết nó cũ bao nhiêu; không tên thì không ai hỏi lại
+         được — đúng nửa có giá trị của phép ghi, cùng bài học `hoSo.u`
+         (9.99.55).
+
+     D · ĐỐI CHIẾU HAI CHIỀU giữa mã phép đo và ô trỏ vào nó. Một ô trỏ
+         vào mã không tồn tại thì nó lặng lẽ không có điểm mà nhìn vẫn y
+         hệt một ô đã được đo — cùng cái bẫy `layTuKho` của mục 89, nơi
+         đổi BN_RAO10 thành BN_HANGRAO10 làm khối ấy ra rỗng trong im
+         lặng. Chiều ngược lại bắt mã chết: một phép đo không ô nào gọi
+         thì nó không canh gì cả.
+
+     Và vế cuối đo HÀNH VI, không đọc lời khai: gọi thật G.chuanDo() trên
+     trang đang chạy và đòi mỗi mã trả về một con số trong khoảng, kèm
+     câu nói cách đo. Một hàm đo trả về undefined cho mọi thứ thì bốn vế
+     trên vẫn xanh. */
+  {
+    const c1k = await p.evaluate(() => {
+      const G = window.G;
+      const oo = [];
+      (G.CHUAN1000 || []).forEach(c => (c.y || []).forEach(y => oo.push({
+        ma: c.ma, t: (y.t || '').slice(0, 44),
+        coMay: 'mayDo' in y, coKhai: 'khai' in y, coD: 'd' in y,
+        maDo: y.mayDo || null,
+        ngay: y.khai && y.khai.ngay, ai: y.khai && y.khai.ai
+      })));
+      let chuong = (G.CHUAN1000 || []).map(c => ({ ma: c.ma, coDiem: 'diem' in c }));
+      let doRa = null, loiDo = null;
+      try { doRa = G.chuanDo(); } catch (e) { loiDo = e.message; }
+      return { oo, chuong, maCo: G.CHUAN_DO_MA || [], doRa, loiDo,
+        soChuong: (G.CHUAN1000 || []).length };
+    });
+
+    /* A · đúng một đường */
+    const haiDuong = c1k.oo.filter(o => o.coMay && o.coKhai);
+    const khongDuong = c1k.oo.filter(o => !o.coMay && !o.coKhai);
+    bao(c1k.oo.length === 50 && !haiDuong.length && !khongDuong.length,
+      'MỖI Ô CỦA THANG 1000 KHAI ĐÚNG MỘT ĐƯỜNG — máy đo hoặc người khai, không bao giờ cả hai và không bao giờ thiếu cả hai. Trình năm mươi ô như nhau thì người duyệt thấy năm mươi dấu tick rồi thôi không đọc, và ba mươi tư ô nặng nhất về NGƯỜI lại đúng là ba mươi tư ô không ai đọc nữa',
+      c1k.oo.length !== 50 ? 'có ' + c1k.oo.length + ' ô, phải là 50'
+        : haiDuong.length ? 'MANG CẢ HAI: ' + haiDuong.map(o => o.ma + ' · ' + o.t).join(' · ')
+        : khongDuong.length ? 'KHÔNG KHAI ĐƯỜNG NÀO: ' + khongDuong.map(o => o.ma + ' · ' + o.t).join(' · ')
+        : c1k.oo.filter(o => o.coMay).length + ' ô máy đo · ' +
+          c1k.oo.filter(o => o.coKhai).length + ' ô người khai');
+
+    /* B · thứ KHÔNG ĐƯỢC TỒN TẠI */
+    const mayCoD = c1k.oo.filter(o => o.coMay && o.coD);
+    const chuongCoDiem = c1k.chuong.filter(c => c.coDiem);
+    bao(!mayCoD.length && !chuongCoDiem.length,
+      'Ô MÁY ĐO KHÔNG MANG SỐ ĐIỂM GÕ TAY, VÀ CHƯƠNG KHÔNG MANG Ô `diem`. Giữ một con số cạnh một mã phép đo là để dành sẵn chỗ cho bản thứ hai của một sự thật — và bản gõ tay thì không ai cập nhật, nên nó cũ đi trong im lặng đúng như cột `conHan` đã không được dựng ở theVungManh',
+      mayCoD.length ? 'Ô MÁY ĐO CÒN GIỮ `d`: ' + mayCoD.map(o => o.ma + ' · ' + o.t).join(' · ')
+        : chuongCoDiem.length ? 'CHƯƠNG CÒN GIỮ `diem`: ' + chuongCoDiem.map(c => c.ma).join(' · ')
+        : c1k.soChuong + ' chương · 0 ô máy đo giữ `d` · 0 chương giữ `diem`');
+
+    /* C · lời khai phải có ngày và tên */
+    const khaiThieu = c1k.oo.filter(o => o.coKhai && (!o.ngay || !o.ai));
+    const ngaySai = c1k.oo.filter(o => o.coKhai && o.ngay && isNaN(Date.parse(o.ngay)));
+    bao(!khaiThieu.length && !ngaySai.length,
+      'MỖI LỜI KHAI MANG NGÀY VÀ TÊN NGƯỜI KHAI. Không ngày thì không ai biết nó cũ bao nhiêu và nó được đọc như thể vừa viết sáng nay; không tên thì không ai hỏi lại được — mất đúng nửa có giá trị của phép ghi',
+      khaiThieu.length ? 'THIẾU NGÀY HOẶC TÊN: ' + khaiThieu.map(o => o.ma + ' · ' + o.t).join(' · ')
+        : ngaySai.length ? 'NGÀY KHÔNG ĐỌC ĐƯỢC: ' + ngaySai.map(o => o.ma + ' · ' + o.ngay).join(' · ')
+        : c1k.oo.filter(o => o.coKhai).length + ' lời khai đều có ngày và tên');
+
+    /* D · đối chiếu HAI CHIỀU */
+    const maDung = c1k.oo.filter(o => o.maDo).map(o => o.maDo);
+    const troSai = c1k.oo.filter(o => o.maDo && c1k.maCo.indexOf(o.maDo) < 0);
+    const maChet = c1k.maCo.filter(m => maDung.indexOf(m) < 0);
+    const maTrung = maDung.filter((m, i) => maDung.indexOf(m) !== i);
+    bao(!troSai.length && !maChet.length && !maTrung.length,
+      'MÃ PHÉP ĐO VÀ Ô TRỎ VÀO NÓ KHỚP CẢ HAI CHIỀU. Một ô trỏ vào mã không tồn tại thì nó lặng lẽ không có điểm mà nhìn vẫn y hệt một ô đã được đo — cùng cái bẫy `layTuKho` của mục 89; và một phép đo không ô nào gọi thì nó không canh gì cả',
+      troSai.length ? 'Ô TRỎ VÀO MÃ KHÔNG CÓ: ' + troSai.map(o => o.ma + ' → ' + o.maDo).join(' · ')
+        : maChet.length ? 'MÃ CHẾT, không ô nào gọi: ' + maChet.join(' · ')
+        : maTrung.length ? 'HAI Ô DÙNG CHUNG MỘT MÃ: ' + maTrung.join(' · ')
+        : c1k.maCo.length + ' mã · khớp một-một với ' + maDung.length + ' ô máy đo');
+
+    /* Vế cuối · ĐO HÀNH VI: gọi thật và đòi con số có nghĩa */
+    let doDat = false, doVi = '';
+    if (c1k.loiDo) doVi = 'G.chuanDo() ném lỗi: ' + c1k.loiDo;
+    else if (!c1k.doRa) doVi = 'G.chuanDo() không có hoặc trả về rỗng';
+    else {
+      const ra = c1k.doRa;
+      const chay = c1k.maCo.filter(m => ra[m] && ra[m].loi === undefined && typeof ra[m].d === 'number');
+      const ngoai = chay.filter(m => ra[m].d < 0 || ra[m].d > 20);
+      const khongCach = chay.filter(m => !ra[m].cach || ra[m].cach.length < 10);
+      const nemLoi = c1k.maCo.filter(m => ra[m] && ra[m].loi !== undefined);
+      /* Tính MỘT LẦN vào một hằng, và cả bao() lẫn câu chi tiết cùng
+         đọc nó. Hai bản chép viết tay của cùng một biểu thức đã làm
+         mục 71 in ra câu khoe trong lúc đỏ, ba lần (9.99.60). */
+      doDat = chay.length >= 10 && !ngoai.length && !khongCach.length && !nemLoi.length;
+      doVi = nemLoi.length ? 'PHÉP ĐO NÉM LỖI: ' + nemLoi.map(m => m + ' (' + ra[m].loi + ')').join(' · ')
+        : ngoai.length ? 'ĐIỂM NGOÀI KHOẢNG 0–20: ' + ngoai.map(m => m + '=' + ra[m].d).join(' · ')
+        : khongCach.length ? 'KHÔNG NÓI CÁCH ĐO: ' + khongCach.join(' · ')
+        : chay.length < 10 ? 'chỉ ' + chay.length + '/' + c1k.maCo.length + ' phép đo trả về con số — một bộ đo im lặng trả undefined cho mọi thứ thì bốn vế trên vẫn xanh'
+        : chay.length + '/' + c1k.maCo.length + ' phép đo chạy thật trên trang đang mở, mỗi cái kèm câu nói cách đo';
+    }
+    bao(doDat,
+      'BỘ ĐO CHẠY THẬT LÚC MỞ MÀN, và mỗi con số kèm CÂU NÓI CÁCH ĐO. Một con số không nói nó đo bằng gì thì người đọc không cãi lại được, và thứ không cãi lại được thì không kiểm lại được — lúc ấy nó lại thành một lời khai, chỉ khác là mang nhãn máy đo nên còn khó cãi hơn',
+      doVi);
   }
 
 

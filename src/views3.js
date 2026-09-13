@@ -522,41 +522,147 @@ G.VIEWS['kiem-thu'] = function(){
   return o;
 };
 
-/* ═══════════════ 05 · CHUẨN 1000 ĐIỂM ═══════════════ */
+/* ═══════════════ 05 · CHUẨN 1000 ĐIỂM ═══════════════
+   HAI NGĂN, KHÔNG MỘT CON SỐ GỘP.
+
+   Bản cũ trình một con số /1000 duy nhất, cộng từ năm mươi ô gõ tay,
+   và trình nó với độ chính xác của một phép đo. Chủ hệ chốt WOW-01:
+   tách hai ngăn.
+
+   Vì sao KHÔNG có tổng chung, dù nó dễ đọc hơn: cộng một nửa đo được
+   với một nửa lời khai thì con số ra mang TÊN của phép đo trong khi
+   nó thừa hưởng mọi sai của lời khai. Cùng luật với phễu thị giác
+   (9.99.59) và cột lời khai của `docTuanThu` (9.99.70).
+
+   Nửa máy đo chạy LÚC MỞ MÀN — nên con số ở đây già nhất là vài trăm
+   mili giây. Nửa người khai mang ngày và tên, và màn NÓI RA lời khai
+   cũ bao nhiêu ngày: một lời khai không ai biết tuổi thì nó được đọc
+   như thể vừa viết sáng nay.
+   ═══════════════════════════════════════════════════════════════ */
 G.VIEWS['chuan-1000'] = function(){
   if(!G.can('pro_report')) return U.lockCard();
-  var tong = G.CHUAN1000.reduce(function(a,c){return a+c.diem;},0);
+
+  var do_ = (typeof G.chuanDo === 'function') ? G.chuanDo() : {};
+  var hnay = Date.now();
+
+  /* Cộng RIÊNG hai nửa. Ô máy đo chưa đo được (kho chưa mở) thì KHÔNG
+     tính vào mẫu số — đếm nó là 0 điểm sẽ dìm cả ngăn xuống vì một
+     thứ chưa ai đo, và con số ấy trông y hệt một kết quả kém. */
+  var mD = 0, mT = 0, mCho = 0, nD = 0, nT = 0, cuNhat = null;
+  G.CHUAN1000.forEach(function(c){
+    c.y.forEach(function(y){
+      if (y.mayDo){
+        var r = do_[y.mayDo];
+        if (!r || r.loi !== undefined || r.d === undefined){ mCho++; return; }
+        mD += r.d; mT += y.m;
+      } else if (y.khai){
+        nD += y.d; nT += y.m;
+        var t = Date.parse(y.khai.ngay);
+        if (!isNaN(t) && (cuNhat === null || t < cuNhat)) cuNhat = t;
+      }
+    });
+  });
+  var tuoi = cuNhat === null ? null : Math.round((hnay - cuNhat) / 86400000);
+
   var o = U.ph({eyebrow:'NHÓM 05 · VẬN HÀNH', ic:'star', grad:1, t:'Chuẩn 1000 điểm',
-    lead:'Mười nhóm, mỗi nhóm năm tiêu chí, mỗi tiêu chí hai mươi điểm. Không làm tròn, không tự cho điểm đẹp — chỗ nào chưa đạt thì ghi rõ còn thiếu gì.'});
+    lead:'Năm mươi tiêu chí, mỗi tiêu chí hai mươi điểm. Chia hai ngăn theo chỗ con số ĐẾN TỪ ĐÂU — không cộng chung, vì cộng một nửa đo được với một nửa lời khai thì con số ra mang tên của phép đo mà thừa hưởng mọi sai của lời khai.'});
 
-  o += '<div class="card glow mb"><div class="row wrap" style="gap:26px;align-items:center">'+
-    U.ring(Math.round(tong/10),'var(--gita)','TRÊN 1000')+
-    '<div class="grow" style="min-width:250px">'+
-    '<div class="row" style="gap:10px;align-items:baseline"><b class="mono grad-text" style="font-size:33px">'+tong+'</b>'+
-    '<span class="muted" style="font-size:18px">/ 1000</span></div>'+
-    '<p class="sm dim mt">Còn '+(1000-tong)+' điểm để chạm chuẩn tuyệt đối. Ba khoảng hụt lớn nhất: '+
-    '<b style="color:var(--ink-2)">xác thực ở máy chủ (10/20)</b>, '+
-    '<b style="color:var(--ink-2)">nhãn cho trình đọc màn hình (12/20)</b>, '+
-    '<b style="color:var(--ink-2)">lưu tiến trình thật giữa các phiên (14/20)</b>.</p>'+
-    '<div class="mt">'+U.bar(tong/10,'var(--gita)')+'</div></div></div></div>';
+  /* ── Hai thẻ số, ĐẶT CẠNH NHAU chứ không chồng lên nhau ── */
+  o += '<div class="row wrap mb" style="gap:14px;align-items:stretch">';
 
+  o += '<div class="card grow" style="min-width:260px;border-color:var(--ok)44">'+
+    '<div class="row" style="gap:8px;align-items:center">'+
+      '<span style="color:var(--ok)">'+ic('check','w-4 h-4')+'</span>'+
+      '<b class="tiny up" style="color:var(--ok)">NGĂN 1 · MÁY ĐO</b></div>'+
+    '<div class="row mt" style="gap:10px;align-items:baseline">'+
+      '<b class="mono" style="font-size:33px;color:var(--ok)">'+mD+'</b>'+
+      '<span class="muted" style="font-size:18px">/ '+mT+'</span></div>'+
+    '<div class="mt">'+U.bar(mT?mD/mT*100:0,'var(--ok)')+'</div>'+
+    '<p class="tiny muted mt">Đo lại mỗi lượt mở màn, trên chính màn hình đang chạy. '+
+      'Con số này già nhất là vài trăm mili giây.'+
+      (mCho ? ' <b style="color:var(--warn)">'+mCho+' ô chưa đo được</b> — kho của ô ấy chưa mở với vai này, nên nó KHÔNG được tính là 0.' : '')+
+    '</p></div>';
+
+  o += '<div class="card grow" style="min-width:260px;border-color:var(--warn)44">'+
+    '<div class="row" style="gap:8px;align-items:center">'+
+      '<span style="color:var(--warn)">'+ic('pulse','w-4 h-4')+'</span>'+
+      '<b class="tiny up" style="color:var(--warn)">NGĂN 2 · NGƯỜI KHAI</b></div>'+
+    '<div class="row mt" style="gap:10px;align-items:baseline">'+
+      '<b class="mono" style="font-size:33px;color:var(--warn)">'+nD+'</b>'+
+      '<span class="muted" style="font-size:18px">/ '+nT+'</span></div>'+
+    '<div class="mt">'+U.bar(nT?nD/nT*100:0,'var(--warn)')+'</div>'+
+    '<p class="tiny muted mt">Người gõ, không máy đo. '+
+      (tuoi === null ? 'Không ô nào ghi ngày khai.'
+        : 'Lời khai cũ nhất viết cách đây <b style="color:var(--ink-2)">'+tuoi+' ngày</b>.')+
+      ' Một lời khai không ai biết tuổi thì nó được đọc như thể vừa viết sáng nay.'+
+    '</p></div>';
+
+  o += '</div>';
+
+  o += '<div class="card mb" style="border-style:dashed">'+
+    '<p class="sm">'+ic('pulse','w-4 h-4')+' <b>Không có con số tổng trên 1000.</b> '+
+    'Cộng '+mT+' điểm đo được với '+nT+' điểm lời khai thì ra một con số mang tên '+
+    'của phép đo. Muốn một con số duy nhất thì phải chuyển bớt ô từ ngăn hai sang '+
+    'ngăn một — tức là viết thêm phép đo, không phải cộng thêm.</p></div>';
+
+  /* ── Mười chương, mỗi ô nói RÕ nó thuộc ngăn nào ── */
   o += G.CHUAN1000.map(function(c){
+    var cD = 0, cT = 0, kD = 0, kT = 0;
+    c.y.forEach(function(y){
+      if (y.mayDo){ var r = do_[y.mayDo];
+        if (r && r.loi === undefined && r.d !== undefined){ cD += r.d; cT += y.m; } }
+      else if (y.khai){ kD += y.d; kT += y.m; }
+    });
+
     return '<div class="card mb" style="border-color:'+c.c+'26">'+
       '<div class="row wrap" style="gap:12px;margin-bottom:12px">'+
         '<span class="pill" style="background:'+c.c+'22;color:'+c.c+'">'+h(c.ma)+'</span>'+
         '<b class="grow" style="font-size:16px;min-width:180px">'+h(c.ten)+'</b>'+
-        '<b class="mono" style="font-size:18px;color:'+(c.diem>=95?'#0B7350':(c.diem>=88?'var(--gita)':'#BE0E16'))+'">'+c.diem+'</b>'+
-        '<span class="muted">/ '+c.max+'</span></div>'+
-      U.bar(c.diem, c.c)+
-      '<div class="mt2">' + c.y.map(function(y){
-        var full = y.d>=y.m;
-        return '<div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed var(--phu-3)">'+
-          '<span style="flex:none;margin-top:2px;color:'+(full?'var(--ok)':'var(--warn)')+'">'+
-          ic(full?'check':'pulse','w-4 h-4')+'</span>'+
-          '<span class="sm grow">'+h(y.t)+'</span>'+
-          '<span class="mono tiny" style="color:'+(full?'var(--ok)':'var(--warn)')+'">'+y.d+'/'+y.m+'</span></div>';
+        (cT ? '<span class="mono tiny" style="color:var(--ok)">đo '+cD+'/'+cT+'</span>' : '')+
+        (kT ? '<span class="mono tiny" style="color:var(--warn)">khai '+kD+'/'+kT+'</span>' : '')+
+      '</div>'+
+      '<div>' + c.y.map(function(y){
+        var r = y.mayDo ? do_[y.mayDo] : null;
+        var laMay = !!y.mayDo;
+        var chua  = laMay && (!r || r.loi !== undefined || r.d === undefined);
+        var diem  = laMay ? (chua ? null : r.d) : y.d;
+        var du    = diem !== null && diem >= y.m;
+        var mau   = chua ? 'var(--ink-4)' : (du ? 'var(--ok)' : 'var(--warn)');
+
+        var s = '<div style="padding:9px 0;border-bottom:1px dashed var(--phu-3)">'+
+          '<div style="display:flex;gap:10px;align-items:flex-start">'+
+            '<span style="flex:none;margin-top:2px;color:'+mau+'">'+
+              ic(chua ? 'pulse' : (du ? 'check' : 'pulse'),'w-4 h-4')+'</span>'+
+            '<span class="sm grow">'+h(y.t)+'</span>'+
+            '<span class="pill tiny" style="flex:none;background:'+
+              (laMay?'var(--ok)1A;color:var(--ok)':'var(--warn)1A;color:var(--warn)')+'">'+
+              (laMay?'máy đo':'người khai')+'</span>'+
+            '<span class="mono tiny" style="flex:none;color:'+mau+'">'+
+              (diem === null ? '—' : diem)+'/'+y.m+'</span></div>';
+
+        /* Máy đo: in CÂU NÓI CÁCH ĐO. Một con số không nói nó đo bằng
+           gì thì người đọc không cãi lại được, và thứ không cãi lại
+           được thì không kiểm lại được. */
+        if (laMay){
+          s += '<p class="tiny muted" style="margin:5px 0 0 26px">'+
+            (chua ? (r && r.loi ? 'chưa đo được — '+h(r.loi)
+                                : 'chưa đo được — kho của ô này chưa mở với vai đang dùng')
+                  : h(r.cach))+'</p>';
+        } else {
+          /* Người khai: NGÀY và TÊN, và tuổi tính lúc đọc. */
+          var t = Date.parse(y.khai.ngay);
+          var ng = isNaN(t) ? null : Math.round((hnay - t) / 86400000);
+          s += '<p class="tiny muted" style="margin:5px 0 0 26px">'+
+            h(y.khai.ai)+' khai ngày '+h(y.khai.ngay)+
+            (ng === null ? '' : ' · cách đây '+ng+' ngày')+
+            ' — chưa ai đo lại</p>';
+        }
+        return s + '</div>';
       }).join('') + '</div></div>';
   }).join('');
+
+  if (do_._luc) o += '<p class="tiny muted">Ngăn máy đo chạy lúc '+
+    h(do_._luc.toLocaleTimeString('vi-VN'))+' ngay trên màn hình này.</p>';
   return o;
 };
 
