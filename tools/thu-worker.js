@@ -5826,6 +5826,207 @@ console.log('\n15q · GITA-VIP — TRẦN PHẠM VI GIÁM SÁT');
     'R03 KHÔNG CẤP ĐƯỢC LỆNH GIÁM SÁT');
 }
 
+console.log('\n15r · VÒNG TỰ NÂNG CẤP — CỬA THỨ NHẤT KHÔNG ĐƯỢC TỰ MỞ');
+/* ══════════════ VÒNG TỰ NÂNG CẤP ══════════════
+   Bản luật và phân loại đo ở mục 93. Ở đây đo HÀNH VI: gọi thật vào
+   cửa rồi xem cái cổng có chặn không.
+
+   Phép đo nặng nhất của khối này là phép đo về chỗ RƠI: một đề xuất
+   chạm Hiến pháp không được rơi vào "Cấp 8" — nó phải rơi RA NGOÀI
+   đường này. Cấp 8 tìm được chữ ký; ra ngoài thì không. */
+{
+  const mTNC = await import('../may-chu/tu-nang-cap.js');
+
+  /* ── CHẠM VÙNG CẤM RƠI RA NGOÀI, KHÔNG RƠI VÀO MỘT CẤP ── */
+  const xHP = mTNC.xepCap('Nới Điều 3 của Hiến pháp cho trợ lý gọi trẻ là "bé"',
+    'Hiến pháp mười ba điều', 'khôi phục bản cũ');
+  bao(xHP.ngoaiDuong === true && xHP.cap === undefined &&
+      (xHP.cham || []).indexOf('K1') >= 0,
+    'CHẠM VÙNG CẤM RƠI RA NGOÀI ĐƯỜNG NÀY, không rơi vào một cấp cao',
+    'chạm ' + (xHP.cham || []).join(' · ') + ' · trả về "Cấp 8" là mời người ta đi tìm ' +
+    'một chữ ký Cấp 8, và một chữ ký Cấp 8 thì tìm được');
+
+  /* ── CỔNG VÙNG CẤM ĐỨNG TRƯỚC CỔNG "THIẾU Ô LÙI LẠI" ──
+     Đề xuất chạm vùng cấm VÀ thiếu luôn đường lùi: phải trả VUNGCAM,
+     không phải THIEULUI. Báo thiếu ô trước là chỉ người đề xuất đường
+     viết thêm một câu rồi gửi lại. */
+  const dxCam = await goi({fn:'deXuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    viec:'Bỏ bớt một điểm hàng rào mười điểm cho bài viết dễ qua hơn',
+    vung:'bộ soi nội dung'});
+  bao(!dxCam.than.ok && dxCam.than.code === 'VUNGCAM' &&
+      (dxCam.than.cham || []).indexOf('K2') >= 0,
+    'và CỔNG VÙNG CẤM ĐỨNG TRƯỚC cổng "thiếu ô lùi lại" — thiếu cả hai mà vẫn trả VUNGCAM',
+    'chạm ' + (dxCam.than.cham || []).join(' · '));
+
+  /* K5 — vùng nói về CHÍNH ĐƯỜNG NÀY. Vùng dễ quên nhất. */
+  const xK5 = mTNC.xepCap('Cho phép bỏ qua cửa chạy thử khi gấp',
+    'vòng nâng cấp', 'bật lại cửa');
+  bao(xK5.ngoaiDuong === true && (xK5.cham || []).indexOf('K5') >= 0,
+    'K5 CHẶN ĐỀ XUẤT SỬA CHÍNH ĐƯỜNG NÂNG CẤP',
+    'một hệ sửa được đường nâng cấp của mình thì lượt đầu tiên là lượt gỡ mọi giới hạn — ' +
+    'và nó hợp lệ, có chữ ký, sổ đầy đủ');
+
+  /* ── KHÔNG BẮT OAN ──
+     Dò CỤM NHIỀU ÂM TIẾT. "hàng rào sân trường" và "bảng giá của nhà
+     cung cấp" đều là câu lành, và bắt oan một câu lành thì lần sau
+     người ta tắt phép soi đi. */
+  bao(mTNC.soatVungCam('Dựng thêm hàng rào chắn ở sân sau').sach === true &&
+      mTNC.soatVungCam('So bảng giá của ba nhà cung cấp máy chủ').sach === true &&
+      mTNC.soatVungCam('Mở thêm năm cửa hàng ở tỉnh').sach === true,
+    'và BA CÂU LÀNH KHÔNG BỊ BẮT OAN — dò cụm nhiều âm tiết, không dò âm tiết trần',
+    '"hàng rào sân" · "bảng giá nhà cung cấp" · "năm cửa hàng"');
+
+  /* ── MÁY XẾP CẤP, NGƯỜI ĐỀ XUẤT KHÔNG TỰ CHỌN ──
+     Truyền thẳng `cap: 1` vào cửa mà cấp trong sổ vẫn là 5. Một ô cấp
+     do người gọi truyền vào là một LỜI KHAI, và lời khai thì khai được
+     cái gì cũng được. */
+  const dx5 = await goi({fn:'deXuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    cap: 1,
+    viec:'Thêm ô ghi chú vào hồ sơ dữ liệu trẻ em để coach ghi quan sát',
+    vung:'màn hồ sơ song sinh',
+    luiLai:'gỡ ô ấy khỏi màn và xoá cột vừa thêm, sổ cũ không đổi'});
+  bao(dx5.than.ok && dx5.than.cap === 5,
+    'MÁY XẾP CẤP — truyền thẳng cap:1 vào cửa mà sổ vẫn ghi cấp 5',
+    'máy xếp vì ' + (dx5.than.viSao || []).join(' · ') + ' · để người đề xuất tự xếp thì ' +
+    'mọi thứ đều là Cấp 1, và không ai cố ý nói dối — họ chỉ thật lòng thấy việc mình ' +
+    'đang làm là việc nhỏ');
+
+  /* ── THIẾU Ô LÙI LẠI THÌ KHÔNG MỞ CỬA ── */
+  const dxLui = await goi({fn:'deXuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    viec:'Đổi cách xếp danh sách bài trong thư viện', vung:'màn thư viện'});
+  bao(!dxLui.than.ok && dxLui.than.code === 'THIEULUI',
+    'THIẾU Ô LÙI LẠI THÌ KHÔNG MỞ CỬA 1',
+    'một nâng cấp không lùi lại được là một nâng cấp chỉ đi một chiều, và chiều ấy là ' +
+    'chiều chưa ai thử');
+
+  /* ── NĂM CỬA ĐI ĐÚNG THỨ TỰ ──
+     Cấp 5 đòi soi luật. Nhảy thẳng tới cửa 4 phải đỏ. */
+  const idA = dx5.than.id;
+  const nhay = await goi({fn:'mocChayThu', token:tkSA, u:'superadmin@gita365.vn',
+    id: idA, moc:'bat'});
+  bao(!nhay.than.ok && nhay.than.code === 'NHAYCUA' && nhay.than.thieu === 'C2',
+    'NHẢY CỬA BỊ CHẶN — cấp 5 chưa soi luật thì chưa tới được cửa chạy thử',
+    'soi luật SAU khi đã chạy thì bản được soi không phải bản sắp chạy');
+
+  /* ── NGƯỜI SOI LUẬT KHÁC NGƯỜI ĐỀ XUẤT ── */
+  const tuSoi = await goi({fn:'soiLuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    id: idA, nguoiSoi:'superadmin@gita365.vn',
+    ketLuan:'Đã đọc, không thấy vướng luật nào'});
+  bao(!tuSoi.than.ok && tuSoi.than.code === 'TUSOI',
+    'NGƯỜI SOI LUẬT KHÔNG ĐƯỢC LÀ NGƯỜI ĐỀ XUẤT',
+    'cùng một người làm cả hai thì phần soi chỉ là phần đề xuất nói lại lần nữa, và nó ' +
+    'sẽ đồng ý với chính nó — mà sổ vẫn đủ năm dòng nên không ai đọc ra');
+
+  const soiOk = await goi({fn:'soiLuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    id: idA, nguoiSoi:'giamdoc@gita365.vn',
+    ketLuan:'Ô ghi chú không rời hệ, Điều 13 không vướng; đề nghị khoá ô ở vai R14'});
+  bao(soiOk.than.ok && soiOk.than.cua === 'C2', 'và NGƯỜI KHÁC SOI THÌ QUA CỬA 2',
+    'người soi: ' + soiOk.than.nguoiSoi);
+
+  /* ── TÊN NGƯỜI SOI PHẢI LÀ MỘT TÀI KHOẢN CÓ THẬT ──
+     Nhận chữ tự do thì gõ một cái tên là qua, và ô ấy thành một lời
+     khai không kiểm lại được — đúng thứ cửa này sinh ra để chặn. */
+  const dxBia = await goi({fn:'deXuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    viec:'Thêm ô ghi chú vào hồ sơ dữ liệu trẻ em cho ca thứ hai',
+    vung:'màn hồ sơ song sinh', luiLai:'gỡ ô ấy đi, sổ cũ không đổi'});
+  const soiBia = await goi({fn:'soiLuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    id: dxBia.than.id, nguoiSoi:'luật sư A',
+    ketLuan:'Đã xem, không thấy vướng gì cả'});
+  bao(!soiBia.than.ok && soiBia.than.code === 'KHONGRONGUOI',
+    'TÊN NGƯỜI SOI LUẬT PHẢI LÀ MỘT TÀI KHOẢN CÓ THẬT',
+    'cổng không xác minh được thì ĐÓNG — cùng bài học của cổng NGANGCAP (9.99.76), ' +
+    'nơi một dòng "!== null &&" làm cổng chưa bao giờ chặn gì');
+
+  /* ── VAI NGOÀI R01–R12 KHÔNG GHI ĐƯỢC MỐC CHẠY THỬ ──
+     Lỗ thật, tìm ra khi đọc lại diff của chính mình: hai cửa này lúc
+     đầu KHÔNG kiểm vai nào cả, nên một phụ huynh đăng nhập hợp lệ ghi
+     được mốc chạy thử và kết luận pháp lý cho một lượt nâng cấp hệ. */
+  bao(!(await goi({fn:'mocChayThu', token:tk, u:'phuhuynh@gita365.vn',
+    id: dxBia.than.id, moc:'bat'})).than.ok &&
+      !(await goi({fn:'soiLuatNangCap', token:tk, u:'phuhuynh@gita365.vn',
+    id: dxBia.than.id, nguoiSoi:'giamdoc@gita365.vn',
+    ketLuan:'Xem qua thấy ổn, không vướng luật nào'})).than.ok,
+    'VAI NGOÀI R01–R12 KHÔNG GHI ĐƯỢC MỐC CHẠY THỬ HAY KẾT LUẬN PHÁP LÝ',
+    'một cửa không kiểm vai thì mọi người đăng nhập hợp lệ đều đi qua được');
+
+  /* ── CỬA 4 · HAI MỐC THẬT ──
+     Ghi mốc kết thúc khi chưa có mốc bắt đầu phải đỏ: không có mốc đầu
+     thì không có quãng nào để đo, và một quãng không đo được là một ô
+     tích đội lốt một phép đo. */
+  const chuaBat = await goi({fn:'mocChayThu', token:tkSA, u:'superadmin@gita365.vn',
+    id: idA, moc:'ket', ketQua:'Chạy hai ngày không thấy lỗi nào', luiLaiDaThu: true});
+  bao(!chuaBat.than.ok && chuaBat.than.code === 'CHUABAT',
+    'CỬA CHẠY THỬ SO HAI MỐC THẬT — mốc kết thúc không có mốc bắt đầu thì đỏ',
+    'một ô tích "đã chạy thử đủ" bật được trong một giây');
+
+  await goi({fn:'mocChayThu', token:tkSA, u:'superadmin@gita365.vn', id: idA, moc:'bat'});
+
+  /* ── ĐƯỜNG LÙI PHẢI ĐƯỢC THỬ, KHÔNG CHỈ ĐƯỢC VIẾT ── */
+  const chuaThuLui = await goi({fn:'mocChayThu', token:tkSA, u:'superadmin@gita365.vn',
+    id: idA, moc:'ket', ketQua:'Chạy hai ngày trong môi trường tách biệt, không lỗi'});
+  bao(!chuaThuLui.than.ok && chuaThuLui.than.code === 'CHUATHULUI',
+    'ĐƯỜNG LÙI PHẢI ĐƯỢC THỬ Ở CỬA 4, không chỉ được VIẾT ở cửa 1',
+    'viết là một lời khai, thử là một phép đo — một đường lùi chưa ai đi thử là một ' +
+    'đường lùi không tồn tại, và người ta chỉ phát hiện ra điều đó vào đúng lúc cần nó');
+
+  await goi({fn:'mocChayThu', token:tkSA, u:'superadmin@gita365.vn', id: idA, moc:'ket',
+    ketQua:'Chạy hai ngày trong môi trường tách biệt, không lỗi', luiLaiDaThu: true});
+
+  /* ── CỬA 5 · SÀNH GIỜ SO HAI MỐC, KHÔNG ĐỌC MỘT Ô ──
+     Cấp 5 cần 168 giờ. Vừa bắt vừa kết thúc trong một giây thì đỏ. */
+  const chuaDu = await goi({fn:'batNangCap', token:tkSA, u:'superadmin@gita365.vn', id: idA});
+  bao(!chuaDu.than.ok && chuaDu.than.code === 'CHUADUGIO' && chuaDu.than.canGio === 168,
+    'CỬA CUỐI TRỪ HAI MỐC THẬT — cấp 5 cần 168 giờ, mới chạy được ' +
+      (chuaDu.than.daChay || 0) + ' giờ',
+    'máy so hai mốc thật, không đọc một ô "đã chạy thử đủ"');
+
+  /* ── NGƯỜI KÝ KHÁC NGƯỜI ĐỀ XUẤT ──
+     Cấp 6 mới cần chữ ký chủ hệ. Dựng một đề xuất cấp 6 do chính chủ
+     hệ viết rồi để chính chủ hệ ký — phải đỏ. */
+  const dx6 = await goi({fn:'deXuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    viec:'Đưa một mô hình mới vào thay bộ tạo ảnh đang dùng',
+    vung:'kiến trúc thị giác',
+    luiLai:'trỏ lại nhà cung cấp cũ, khoá cấu hình mới, sổ cũ không đổi'});
+  bao(dx6.than.ok && dx6.than.cap === 6, 'máy xếp "mô hình mới" vào CẤP 6',
+    (dx6.than.viSao || []).join(' · '));
+  await goi({fn:'soiLuatNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    id: dx6.than.id, nguoiSoi:'giamdoc@gita365.vn',
+    ketLuan:'Nhà cung cấp đặt ngoài lãnh thổ — phải đi qua cổng ẩn danh Điều 13'});
+  const tuKy = await goi({fn:'kyNangCap', token:tkSA, u:'superadmin@gita365.vn',
+    id: dx6.than.id});
+  bao(!tuKy.than.ok && tuKy.than.code === 'TUKY',
+    'NGƯỜI KÝ KHÔNG ĐƯỢC LÀ NGƯỜI ĐỀ XUẤT',
+    'cùng luật L3 của thang năm cổng (9.99.42) và vai C khác vai A (9.99.72) — sổ vẫn ' +
+    'đủ năm dòng khi một người làm cả hai, nên cái được canh phải là HAI CÁI TÊN');
+
+  /* ── SỔ NÊU RIÊNG PHẦN THIẾU CỦA MÁY VÀ PHẦN THIẾU CỦA NGƯỜI ── */
+  const so = await goi({fn:'docVongNangCap', token:tkSA, u:'superadmin@gita365.vn'});
+  const d6 = (so.than.dangChay || []).find(d => d.id === dx6.than.id);
+  bao(so.than.ok && !!d6 && Array.isArray(d6.thieuMay) && Array.isArray(d6.thieuNguoi) &&
+      d6.thieuNguoi.length > 0,
+    'SỔ NÊU RIÊNG phần thiếu của MÁY và phần thiếu của NGƯỜI',
+    'máy còn thiếu: ' + (d6 ? d6.thieuMay.join(' · ') : '—') + ' · người còn thiếu: ' +
+    (d6 ? d6.thieuNguoi.join(' · ') : '—') + ' — gộp thành một con số "đã qua mấy cửa" ' +
+    'thì một lượt vừa chạy xong cửa máy trông gần xong');
+
+  /* ── PHÉP XẾP CẤP THỬ KHÔNG GHI GÌ VÀO SỔ ── */
+  const truoc = (await goi({fn:'docVongNangCap', token:tkSA,
+    u:'superadmin@gita365.vn'})).than.so;
+  await goi({fn:'thuXepCap', token:tkSA, u:'superadmin@gita365.vn',
+    viec:'Đổi màu nút trong màn thư viện', vung:'màn thư viện', luiLai:'trả màu cũ'});
+  const sau = (await goi({fn:'docVongNangCap', token:tkSA,
+    u:'superadmin@gita365.vn'})).than.so;
+  bao(truoc === sau, 'PHÉP XẾP CẤP THỬ KHÔNG GHI GÌ VÀO SỔ',
+    'sổ trước ' + truoc + ' dòng, sau ' + sau + ' dòng — một người muốn biết việc của ' +
+    'mình rơi vào cấp nào TRƯỚC khi viết đề xuất là người đang làm đúng thứ tự');
+
+  /* ── VAI NGOÀI R01–R12 KHÔNG VÀO ĐƯỢC ── */
+  bao(!(await goi({fn:'deXuatNangCap', token:tk, u:'phuhuynh@gita365.vn',
+    viec:'Thêm một màn mới', vung:'cổng phụ huynh',
+    luiLai:'gỡ màn ấy đi, không ảnh hưởng gì'})).than.ok,
+    'PHỤ HUYNH KHÔNG ĐỀ XUẤT NÂNG CẤP HỆ ĐƯỢC');
+}
+
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');
 /* Lấy một việc CÒN TRONG danh sách chưa port, không gõ cứng tên: gõ
    cứng thì tới hôm port xong việc ấy, phép đo này đỏ vì lý do của riêng

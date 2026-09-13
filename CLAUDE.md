@@ -1961,6 +1961,150 @@ giới hạn thì người đọc tin nó chống được nhiều hơn thật.*
 - **VIP-02** — trần 20% tài nguyên của Tư Vấn tính trên mẫu số nào, và
   chạm trần thì **báo** hay **chặn**.
 
+## VÒNG TỰ NÂNG CẤP — cửa thứ nhất không được tự mở (9.99.77)
+
+Theo **Phần 18 · 25 · 13** của bản đặc tả `BẢN CAO CẤP GITA365 ×10`. Màn
+**Vòng tự nâng cấp** (`src/tu-nang-cap.js`, bốn ngăn), máy chủ
+`may-chu/tu-nang-cap.js`, kho `data.tu-nang-cap.js` (9 kho), bảng
+`luotNangCap`, bộ kiểm **mục 93**, mười bảy phép đo ở `thu-worker.js`.
+
+### Câu phải nói trước mọi thứ khác
+
+**Một hệ tự nâng cấp mà sửa được chính đường nâng cấp của nó là một hệ
+không có giới hạn nào cả.**
+
+Mười lăm bản trước dựng từng cái cổng một — Hiến pháp mười ba điều, hàng
+rào mười điểm, mười hai luật giao diện, trần giám sát sáu điều cấm. Bản
+đặc tả đề nghị nâng cấp *+0,5% mỗi tuần · +10% mỗi quý*. Nếu đường nâng
+cấp ấy chạm được vào chúng thì **cả mười lăm bị gỡ bằng ĐÚNG MỘT lượt**
+— và gỡ hợp lệ, có chữ ký, sổ đầy đủ.
+
+Nên bảy vùng không chạm được dựng **TRƯỚC** vòng năm cửa. Lần thứ ba thứ
+tự ấy được chọn, sau Hiến pháp (9.99.62) và trần giám sát (9.99.76).
+
+### Chạm vùng cấm KHÔNG rơi vào một cấp cao — nó rơi RA NGOÀI
+
+Chỗ dễ dựng sai nhất của cả bản. `xepCap` trả `ngoaiDuong` và **không
+mang một con số cấp nào**; mục 93 đọc thẳng nhánh ấy và đỏ nếu thấy ô
+`cap`.
+
+*"Cần duyệt cao hơn" là một cái thang, và mọi cái thang đều leo được.*
+Trả về "Cấp 8" là mời người ta đi tìm một chữ ký Cấp 8 — và một chữ ký
+Cấp 8 thì tìm được. Đường đi thật: sửa kho gốc, qua một lượt phát hành,
+có người đọc diff, có bộ kiểm chạy. Chậm hơn, và chậm ở đúng chỗ đáng
+chậm.
+
+**K5 là vùng dễ quên nhất**, vì nó là vùng duy nhất không bảo vệ một thứ
+khác — nó nói về chính đường nâng cấp. Mục 93 có phép đo riêng đòi K5 có
+mặt.
+
+### MÁY xếp cấp, và không có đường nào cho người đề xuất tự chọn
+
+Phép đo về thứ **không được tồn tại**, lối đo thứ sáu trong bộ sau LR1
+(79) · ô tự khai (81) · cột đèn (83) · cột ba cửa (86) · ô lọc bốc nhà
+(88) · cửa chưa dựng (91): mô-đun không đọc ô `x.cap` nào, và bảng không
+mọc cột `capNguoiXin`.
+
+Vì sao: *để người đề xuất tự xếp thì mọi thứ đều là Cấp 1 — không ai cố
+ý nói dối, họ chỉ thật lòng thấy việc mình đang làm là việc nhỏ.* Máy
+xếp sai thì xin **NÂNG** lên được, **KHÔNG hạ** xuống được: nâng nhầm
+thì tốn thời gian, hạ nhầm thì lọt.
+
+Phép đo mạnh nhất đo **hành vi**: truyền thẳng `cap: 1` vào cửa mà sổ
+vẫn ghi cấp 5.
+
+### Cửa 4 so HAI MỐC THẬT, và đường lùi phải được THỬ
+
+`thuBatDau` và `thuKetThuc` là hai mốc, máy trừ. Bảng **không có** ô
+tích `daChayThu` — một ô như thế bật được trong một giây, và con số giờ
+vẫn đủ trong sổ. Cùng luật với hai mốc của `quyetDinhLon` (9.99.71).
+
+Ô *"lùi lại thế nào"* viết ở cửa 1 là **một lời khai**; thử ở cửa 4 mới
+là **một phép đo**. Một đường lùi chưa ai đi thử là một đường lùi không
+tồn tại — và người ta chỉ phát hiện ra điều đó vào đúng lúc cần nó.
+
+Người ký khác người đề xuất, người soi luật cũng thế: cùng một người làm
+cả hai thì phần duyệt chỉ là phần đề xuất nói lại lần nữa, **và nó sẽ
+đồng ý với chính nó** — mà sổ vẫn đủ năm dòng nên không ai đọc ra. Cùng
+luật L3 (9.99.42) và vai C khác vai A (9.99.72).
+
+### Ba phép đo của chính tôi sai, và cả ba là lỗi ở PHÉP ĐO
+
+Không cái nào là lỗi ở mã — và cả ba đều là lớp lỗi tệp này đã ghi rồi:
+
+1. **Phép dò tên kho chỉ biết một trong ba chỗ.** Ô `kho` của K7 trỏ vào
+   `NAC_THANG`, có thật nhưng là **hằng ở máy chủ**, không phải kho
+   `G.*` — nên phép đo báo đỏ một vùng đang trỏ đúng. Nay tra cả ba
+   chỗ: kho `G.*`, hằng trong `may-chu/*.js`, bảng trong `csdl.sql`.
+2. **Phép dò `hoSo.username` bắt oan chính câu chú giải** cảnh báo về
+   cái bẫy ấy. Cùng chỗ đã sập ở mục 89 với cột `ghiChu` và mục 91 với
+   dòng `12/12`. Nay dò trên mã đã **bỏ chú giải**. Một phép đo bắt oan
+   lời cảnh báo về một cái bẫy là phép đo **dạy người ta xoá lời cảnh
+   báo đi**.
+3. **Phép đo đường lùi XANH MÃI MÃI.** Nó dò chuỗi `CHUATHULUI` trên cả
+   tệp, mà chuỗi ấy còn nguyên kể cả khi cổng bị vô hiệu bằng
+   `if (false && !luiDaThu)`. Phá thử lộ ra: bộ thử worker đỏ, mục 93
+   **im**. Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm; một phép
+   kiểm **KHÔNG THỂ đỏ** thì tệ hơn — nó khai rằng chỗ ấy đã được canh,
+   nên không ai canh nữa. Nay đo **VỊ TRÍ**: cổng phải nằm TRƯỚC câu
+   `UPDATE ... SET thuKetThuc`, cùng lối "cổng trước INSERT" của mục
+   86 · 87 · 91.
+
+### Một lỗ THẬT, tìm ra bằng cách đọc lại diff của chính mình
+
+`soiLuatNangCap` và `mocChayThu` lúc đầu **không kiểm vai nào cả**. Cửa
+worker chỉ đòi **một phiên hợp lệ** — nó **không đòi vai**, và đó đúng
+là chỗ dễ tưởng là đã có. Hậu quả: một phụ huynh đăng nhập bình thường
+ghi được **kết luận pháp lý** và **mốc chạy thử** cho một lượt nâng cấp
+hệ.
+
+Kéo theo hai chỗ nữa cùng lớp:
+
+- **Tên người soi luật là chữ tự do** — gõ *"luật sư A"* là qua, và ô ấy
+  thành một lời khai không kiểm lại được, đúng thứ cửa này sinh ra để
+  chặn. Nay tra tài khoản thật, và **không tra được thì ĐÓNG** — cùng
+  bài học của cổng NGANGCAP (9.99.76), nơi một dòng `!== null && …` làm
+  cổng chưa bao giờ chặn gì.
+- **Năm bản chép của cùng một biểu thức regex vai.** Gom về `laNguoiNha`.
+  Năm bản là năm chỗ để một bản trôi đi, và bản trôi thì không ai thấy
+  vì bốn bản kia vẫn đúng.
+
+Mục 93 nay canh: **mọi cửa xuất ra đều phải soi vai**. Phép đo nhận cả
+cổng **hẹp hơn** viết thẳng — `batNangCap` khoá ở R01–R02, và hẹp hơn là
+đúng chiều an toàn; đòi đúng một tên hàm là **nới ba cửa ra cho vừa một
+phép đo**.
+
+### Chọn dấu hiệu: ba cụm phải loại vì bắt oan đúng chỗ đắt nhất
+
+- **`hàng rào` trần** nằm trong *"hàng rào sân trường"*
+- **`bảng giá` trần** nằm trong *"bảng giá của nhà cung cấp máy chủ"* —
+  mà đó đúng là một đề xuất Cấp 6 hợp lệ, và đẩy nó ra khỏi đường này là
+  bắt oan ở chỗ đắt nhất
+- **`năm cửa` trần** nằm trong *"năm cửa hàng"*
+
+Cả ba đều viết được thành cụm dài hơn, đúng một lần — cùng lối đã chốt ở
+9.99.56: **chặn ở chỗ CHỌN DẤU HIỆU rẻ hơn và chắc hơn chặn bằng một
+danh sách trừ.** Bộ thử có một phép đo riêng cho ba câu lành ấy.
+
+### N06 cố ý cho MỘT người tắt hệ ngay
+
+Bắt hai chữ ký lúc đang cháy là bắt người ta chọn giữa cứu hệ và làm
+đúng quy trình — và họ sẽ chọn cứu hệ, rồi quy trình mất uy tín. Đổi
+lại: phải báo trong 60 phút, và có người soi lại. Mục 93 canh rằng N06
+vẫn mang `hai: false` kèm ô `baoSau`.
+
+### Sổ chờ
+
+- **TNC-01** — nhịp *+0,5%/tuần · +10%/quý* đo trên **mẫu số nào**, hay
+  chốt rằng nó là khẩu hiệu chứ không phải chỉ tiêu. Để nguyên thì sáu
+  tháng sau có người chạy cho đủ số.
+- **TNC-02** — bảy vùng không tự nâng cấp: chốt, thêm, hay bớt. Thêm một
+  vùng là chủ hệ thu hẹp quyền của chính mình; bớt một vùng là mở một
+  cửa, nên **bớt thì phải nói ra vùng ấy được đổi bằng đường nào thay
+  thế**.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

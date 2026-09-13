@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.76',
+  version: '9.99.77',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -928,6 +928,7 @@ G.NAV = [
     {v:'bo-prompt', t:'Bộ prompt · 4 vai', h:'Bốn bản dán thẳng A · B · C · D — DỰNG LÚC CHẠY từ kho, không chép sẵn một chữ nào · vai C phải ở nhà cung cấp KHÁC vai A, soạn không tự duyệt được · sáu bước của một nội dung công khai, hai bước cuối là NGƯỜI · nối vào bảy cửa đã chạy sẵn', ic:'quote', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bang-gia', t:'Bảng giá', h:'Số sửa được ngay, khung ở kho — giá là con số TẠM trong lúc dựng nên phải sửa được, còn bậc ấy hứa giao gì thì đổi qua một lượt phát hành · mỗi lần đổi là MỘT DÒNG MỚI có người ký và lý do · giá đã chốt vào lịch thu KHÔNG đổi theo · đổi giá không tự dời thang duyệt chi', ic:'star', star:1, perm:'fin_view', capMo:'chung'},
     {v:'luat-giao-dien', t:'Luật giao diện', h:'Mười hai luật phủ quyết sinh ra từ ba mươi phần của khoá học — và răng nằm ở MÁY CHỦ chứ không ở màn hình, vì giao diện là thứ bị viết lại nhiều nhất trong mọi kho · bảy luật có cổng chặn thật, năm luật nói về màn chưa dựng nên được canh bằng phép đo về thứ CHƯA ĐƯỢC TỒN TẠI · không xếp hạng gia đình · không tụt cấp · vòng đỏ không rời máy · máy không soạn hộ lời xin lỗi', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
+    {v:'tu-nang-cap', t:'Vòng tự nâng cấp', h:'Một hệ tự nâng cấp mà sửa được chính đường nâng cấp của nó là một hệ KHÔNG CÓ GIỚI HẠN NÀO CẢ — nên bảy vùng không chạm được dựng trước vòng năm cửa · chạm bảy vùng ấy KHÔNG phải "cần duyệt cao hơn", vì mọi cái thang đều leo được · MÁY xếp cấp việc, người đề xuất không tự chọn — để họ tự xếp thì mọi thứ đều là Cấp 1 · cửa chạy thử so HAI MỐC THẬT chứ không đọc một ô tích · đường lùi phải được THỬ, không chỉ được viết', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'giam-sat', t:'Trần giám sát', h:'GITA-VIP dựng CÁI TRẦN trước, chưa dựng bộ giám sát — một cái cổng dựng sau một cái cửa đã chạy thì nó chỉ là một lời nhắc · sáu điều CẤM TUYỆT ĐỐI không lệnh nào mở được, kể cả lệnh R01 có chữ ký · ba ngăn phạm vi khác nhau ở CĂN CỨ PHÁP LÝ chứ không ở mức độ · lệnh uỷ quyền phải có hạn và tự thu hồi · sổ nối băm, sửa một dòng là vỡ mọi dòng sau', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},

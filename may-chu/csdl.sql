@@ -1920,3 +1920,42 @@ CREATE TABLE IF NOT EXISTS soDen (
   bamTu     TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS ix_soden_luc ON soDen (luc);
+
+-- ═══════════════════════════════════════════════════════════════
+--  VÒNG TỰ NÂNG CẤP  (9.99.77)
+-- ═══════════════════════════════════════════════════════════════
+--
+--  KHÔNG có cột "đã qua mấy cửa" và KHÔNG có cột "đang ở cửa nào".
+--  Đang ở đâu thì TÍNH LÚC ĐỌC từ năm mốc thời gian. Một cột tóm tắt
+--  thì hoặc bị gõ đè — và một phép đo biến thành một lời khai mà nhìn
+--  vẫn y hệt — hoặc không ai gõ và nó cũ đi lặng lẽ. Cùng luật với cột
+--  conHan KHÔNG có trong theVungManh (9.99.63), cột den KHÔNG có trong
+--  hoSoSongSinh (9.99.66), cột dangHieuLuc KHÔNG có trong lenhGiamSat
+--  (9.99.76).
+--
+--  Và KHÔNG có cột `daChayThu` kiểu ô tích. Cửa 4 giữ HAI MỐC THẬT —
+--  thuBatDau và thuKetThuc — rồi máy trừ. Một ô tích "đã chạy thử đủ"
+--  bật được trong một giây, và con số giờ vẫn đủ trong sổ.
+CREATE TABLE IF NOT EXISTS luotNangCap (
+  id          TEXT PRIMARY KEY,
+  viec        TEXT NOT NULL,
+  vung        TEXT NOT NULL,
+  luiLai      TEXT NOT NULL,        -- đường lùi, VIẾT ở cửa 1
+  cap         INTEGER NOT NULL,     -- MÁY xếp, người đề xuất không tự chọn
+  capViSao    TEXT NOT NULL,        -- vì sao máy xếp cấp ấy
+  aiDeXuat    TEXT NOT NULL,
+  deXuatLuc   TEXT NOT NULL,
+  nguoiSoi    TEXT,                 -- C2 · tên NGƯỜI, máy không thay được
+  soiKetLuan  TEXT,
+  soiLuc      TEXT,
+  aiKy        TEXT,                 -- C3 · phải khác aiDeXuat
+  kyLuc       TEXT,
+  thuBatDau   TEXT,                 -- C4 · mốc thật thứ nhất
+  thuKetThuc  TEXT,                 -- C4 · mốc thật thứ hai
+  thuKetQua   TEXT,
+  luiLaiDaThu INTEGER DEFAULT 0,    -- đường lùi ĐÃ ĐI THỬ, không phải đã viết
+  aiBat       TEXT,                 -- C5 · cửa cuối phải có một cái tên
+  batLuc      TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_nangcap_luc ON luotNangCap (deXuatLuc DESC);
+CREATE INDEX IF NOT EXISTS ix_nangcap_bat ON luotNangCap (batLuc);

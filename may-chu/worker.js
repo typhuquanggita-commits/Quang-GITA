@@ -75,6 +75,8 @@ import { capLenhGiamSat, thuLenhGiamSat, docLenhGiamSat, soatSoDen,
   docTranGiamSat } from './giam-sat.js';
 import { docHomNay, tickNhip, boViecHomNay, batCheDoBao, ghiGhimCon, docGhimCon,
   datDongYAnhCon, chiaSeCoAnhCon } from './hom-nay.js';
+import { deXuatNangCap, soiLuatNangCap, kyNangCap, mocChayThu, batNangCap,
+  docVongNangCap, docTranNangCap, thuXepCap } from './tu-nang-cap.js';
 import { soatNoiDung, mauBaiHoc, napBai, nopBai, kyBai, soKyBai, baiTreo,
   capQuyenNoiDung, thuHoiQuyenNoiDung, dsQuyenNoiDung,
   docBuoi, xuatChuanNghe, soatMienDich,
@@ -228,6 +230,8 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'capLenhGiamSat', 'thuLenhGiamSat', 'docLenhGiamSat', 'soatSoDen', 'docTranGiamSat',
   'docHomNay', 'tickNhip', 'boViecHomNay', 'batCheDoBao',
   'ghiGhimCon', 'docGhimCon', 'datDongYAnhCon', 'chiaSeCoAnhCon',
+  'deXuatNangCap', 'soiLuatNangCap', 'kyNangCap', 'mocChayThu', 'batNangCap',
+  'docVongNangCap', 'docTranNangCap', 'thuXepCap',
   'soatNoiDung', 'mauBaiHoc', 'napBai', 'nopBai', 'kyBai', 'soKyBai', 'baiTreo',
   'capQuyenNoiDung', 'thuHoiQuyenNoiDung', 'dsQuyenNoiDung', 'docBuoi', 'xuatChuanNghe', 'soatMienDich',
   'chotTrichNghe', 'dsChotTrich',
@@ -423,6 +427,14 @@ async function lam(fn, y, env, db) {
   if (fn === 'docGhimCon')        return await docGhimCon(y, env, db, hoSo);
   if (fn === 'datDongYAnhCon')    return await datDongYAnhCon(y, env, db, hoSo);
   if (fn === 'chiaSeCoAnhCon')    return await chiaSeCoAnhCon(y, env, db, hoSo);
+  if (fn === 'deXuatNangCap')     return await deXuatNangCap(y, env, db, hoSo);
+  if (fn === 'soiLuatNangCap')    return await soiLuatNangCap(y, env, db, hoSo);
+  if (fn === 'kyNangCap')         return await kyNangCap(y, env, db, hoSo);
+  if (fn === 'mocChayThu')        return await mocChayThu(y, env, db, hoSo);
+  if (fn === 'batNangCap')        return await batNangCap(y, env, db, hoSo);
+  if (fn === 'docVongNangCap')    return await docVongNangCap(y, env, db, hoSo);
+  if (fn === 'docTranNangCap')    return await docTranNangCap(y, env, db, hoSo);
+  if (fn === 'thuXepCap')         return await thuXepCap(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
   if (fn === 'soatNoiDung')       return await soatNoiDung(y, env, db, hoSo);
   if (fn === 'mauBaiHoc')         return await mauBaiHoc(y, env, db, hoSo);

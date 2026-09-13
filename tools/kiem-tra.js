@@ -15375,6 +15375,293 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n93 · VÒNG TỰ NÂNG CẤP — CỬA THỨ NHẤT KHÔNG ĐƯỢC TỰ MỞ');
+  /* ══════════════════ 93. VÒNG TỰ NÂNG CẤP ══════════════════
+
+     Một hệ tự nâng cấp mà sửa được chính đường nâng cấp của nó là một
+     hệ không có giới hạn nào cả. Mười lăm bản trước dựng từng cái cổng
+     một; nếu đường nâng cấp chạm được vào Hiến pháp, vào hàng rào, vào
+     trần giám sát, thì cả mười lăm bị gỡ bằng ĐÚNG MỘT lượt nâng cấp —
+     và gỡ hợp lệ, có chữ ký, sổ đầy đủ.
+
+     Mục này canh năm thứ, và thứ nhất là thứ lạ nhất:
+
+       · chạm vùng cấm KHÔNG rơi vào một cấp cao — nó rơi RA NGOÀI
+       · MÁY xếp cấp, và người đề xuất không có đường nào tự chọn
+       · cửa chạy thử so HAI MỐC THẬT, bảng không có ô tích nào
+       · người ký khác người đề xuất, người soi luật cũng thế
+       · mô-đun KHÔNG có cửa nào nới một vùng ra — thứ chưa được tồn tại
+
+     Vế thứ nhất là chỗ dễ dựng sai nhất. Trả "Cấp 8" cho một đề xuất
+     chạm Hiến pháp là mời người ta đi tìm một chữ ký Cấp 8 — và một
+     chữ ký Cấp 8 thì tìm được. */
+  {
+    const khoTNC = await p.evaluate(() => {
+      const G = window.G;
+      return { vung: G.TNC_KHONG_CHAM || [], vungLuat: G.TNC_KHONG_CHAM_LUAT || {},
+        cap8: G.TNC_CAP8 || [], xepCap: G.TNC_XEP_CAP || {},
+        cua5: G.TNC_CUA5 || [], cuaLuat: G.TNC_CUA_LUAT || {},
+        nhay10: G.TNC_NHAY10 || [], nhayLuat: G.TNC_NHAY_LUAT || {},
+        choChu: G.TNC_CHOCHU || [],
+        coMan: !!(G.VIEWS || {})['tu-nang-cap'],
+        trongNav: (G.NAV || []).flatMap(n => (n.items || []))
+          .some(m => m.v === 'tu-nang-cap'),
+        /* Mỗi vùng phải trỏ vào KHO CÓ THẬT — trỏ vào một cái tên không
+           tồn tại thì vùng ấy không bảo vệ gì, mà nhìn vẫn y hệt một
+           vùng đủ răng. Cùng cái bẫy đã bắt ở mục 89 với `layTuKho`. */
+        khoThat: Object.keys(G).filter(k => /^[A-Z]/.test(k)) };
+    });
+
+    const dcn = t => fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'may-chu', t), 'utf8');
+    const ngTNC = dcn('tu-nang-cap.js');
+    const ngWn = dcn('worker.js');
+    const ngSQLn = dcn('csdl.sql');
+
+    const n = {};
+
+    /* ── A · BẢY VÙNG, MỖI VÙNG TRỎ VÀO KHO CÓ THẬT ── */
+    n.soVung = khoTNC.vung.length;
+    n.duVung = khoTNC.vung.length === 7;
+    n.vungThieuO = khoTNC.vung.filter(v => !v.ma || !v.vung || !v.kho || !v.vi)
+      .map(v => v.ma || '?');
+    /* Ô `kho` khai nhiều tên ngăn bằng " · ", và một tên có thể là BA
+       thứ khác nhau: một kho `G.*`, một BẢNG trong csdl.sql, hoặc một
+       HẰNG ở máy chủ. Cả ba đều là chỗ có thật, và đòi cả ba phải là
+       kho JavaScript là bắt oan.
+
+       Bản đầu chỉ tra kho `G.*`, và nó báo đỏ K7 — trong khi `NAC_THANG`
+       có thật, nằm ở `may-chu/chi-tieu.js` dưới dạng hằng. Một phép đo
+       bắt oan thì lần sau người ta tắt nó đi, nên phép đo phải biết cả
+       ba chỗ. */
+    const tenThat = (() => {
+      const d = new Set(khoTNC.khoThat);
+      fsGoc.readdirSync(pathGoc.join(__dirname, '..', 'may-chu'))
+        .filter(t => t.endsWith('.js')).forEach(t => {
+          const s2 = dcn(t);
+          (s2.match(/^(?:export )?const ([A-Za-z_][A-Za-z0-9_]*)\s*=/gm) || [])
+            .forEach(x => d.add(x.replace(/^(?:export )?const /, '').replace(/\s*=$/, '')));
+        });
+      (ngSQLn.match(/CREATE TABLE IF NOT EXISTS (\w+)/g) || [])
+        .forEach(x => d.add(x.replace('CREATE TABLE IF NOT EXISTS ', '')));
+      return d;
+    })();
+    n.vungTroSai = khoTNC.vung.filter(v => {
+      const tens = String(v.kho || '').split('·').map(x => x.trim()).filter(Boolean);
+      return tens.some(x => !tenThat.has(x));
+    }).map(v => v.ma);
+    /* K5 — vùng nói về CHÍNH NÓ — phải có mặt. Đây là vùng dễ quên
+       nhất, vì nó là vùng duy nhất không bảo vệ một thứ khác. */
+    n.coK5 = khoTNC.vung.some(v => v.ma === 'K5');
+
+    const vungMC = (() => {
+      const m = /export const VUNG_CAM = \[([\s\S]*?)\];/.exec(ngTNC);
+      return m ? (m[1].match(/'([^']+)'/g) || []).map(x => x.slice(1, -1)) : [];
+    })();
+    n.vungKhop = vungMC.join() === khoTNC.vung.map(v => v.ma).join();
+
+    /* ── B · CHẠM VÙNG CẤM RƠI RA NGOÀI, KHÔNG RƠI VÀO MỘT CẤP ──
+       Phép đo nặng nhất của mục này, và nó đo HÀNH VI chứ không đọc
+       lời khai: đọc thân `xepCap` và đòi nhánh vùng cấm trả `ngoaiDuong`
+       mà KHÔNG mang một con số cấp nào. */
+    const mXep = /export function xepCap\(([\s\S]*?)\n\}/.exec(ngTNC);
+    const thanXep = mXep ? mXep[1] : '';
+    const mNhanh = /if \(!v\.sach\) return \{([^}]*)\}/.exec(thanXep);
+    n.raNgoaiDuong = !!mNhanh && /ngoaiDuong:\s*true/.test(mNhanh[1]) &&
+      !/\bcap\s*:/.test(mNhanh[1]);
+    /* Và cổng vùng cấm đứng TRƯỚC cổng "thiếu ô lùi lại" ở cửa 1. */
+    const mDX = /export async function deXuatNangCap\(([\s\S]*?)\n\}/.exec(ngTNC);
+    const thanDX = mDX ? mDX[1] : '';
+    const viVung = thanDX.indexOf('VUNGCAM');
+    const viLui = thanDX.indexOf('THIEULUI');
+    const viInsN = thanDX.indexOf('INSERT INTO luotNangCap');
+    n.vungTruocHet = viVung > 0 && viLui > viVung && viInsN > viVung;
+
+    /* ── C · MÁY XẾP CẤP, NGƯỜI ĐỀ XUẤT KHÔNG CÓ ĐƯỜNG TỰ CHỌN ──
+       Phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI, lối đo thứ sáu trong bộ sau
+       LR1 (79) · ô tự khai (81) · cột đèn (83) · cột ba cửa (86) · ô
+       lọc bốc nhà (88) · cửa chưa dựng (91).
+
+       Không ô `cap` nào đọc từ tham số người gọi, và bảng không có cột
+       `capNguoiXin`. Có một ô như thế thì bảng vẫn trông đủ, mà cái
+       được canh thì không còn. */
+    n.khongNhanCap = !/\bx\.cap\b|\by\.cap\b|String\(x\.cap/.test(ngTNC);
+    const mBangN = /CREATE TABLE IF NOT EXISTS luotNangCap \(([\s\S]*?)\n\);/.exec(ngSQLn);
+    const cotN = mBangN ? mBangN[1] : '';
+    n.coBang = !!mBangN;
+    n.khongCotTuXep = !!mBangN && !/capNguoiXin|capTuChon|capDeNghi/.test(cotN);
+    n.xepKhaiDu = !!khoTNC.xepCap.khongTuChon && !!khoTNC.xepCap.viSao &&
+      !!khoTNC.xepCap.mayXepSai && !!khoTNC.xepCap.chamVungCam;
+
+    /* ── D · CỬA 4 SO HAI MỐC THẬT, KHÔNG ĐỌC MỘT Ô TÍCH ──
+       Một ô "đã chạy thử đủ" bật được trong một giây, và con số giờ
+       vẫn đủ trong sổ. Cùng luật với hai mốc của `quyetDinhLon`
+       (9.99.71) và cột `den` KHÔNG có trong `hoSoSongSinh` (9.99.66). */
+    n.haiMoc = /thuBatDau\s+TEXT/.test(cotN) && /thuKetThuc\s+TEXT/.test(cotN) &&
+      !/daChayThu|chayThuXong|thuDatYeuCau/.test(cotN);
+    const mBat = /export async function batNangCap\(([\s\S]*?)\n\}/.exec(ngTNC);
+    const thanBat = mBat ? mBat[1] : '';
+    n.truHaiMoc = /Date\.parse\(d\.thuBatDau\)/.test(thanBat) &&
+      /CHUADUGIO/.test(thanBat);
+    /* Đường LÙI phải được THỬ ở cửa 4, không chỉ được VIẾT ở cửa 1. */
+    /* Đo VỊ TRÍ, không dò chuỗi. Bản đầu viết `/CHUATHULUI/.test(ngTNC)`
+       và nó XANH MÃI MÃI: chuỗi ấy vẫn nằm trong tệp kể cả khi cổng bị
+       vô hiệu bằng `if (false && !luiDaThu)`. Phá thử lộ ra — bộ thử
+       worker đỏ, mục này im.
+
+       Một phép kiểm chưa từng đỏ thì chưa phải phép kiểm, và một phép
+       kiểm KHÔNG THỂ đỏ thì tệ hơn: nó khai rằng chỗ ấy đã được canh.
+       Nay đòi cổng nằm TRƯỚC câu UPDATE ghi mốc kết thúc — cùng lối đo
+       "cổng trước INSERT" đã dùng ở mục 86 · 87 · 91. */
+    const mMoc = /export async function mocChayThu\(([\s\S]*?)\n\}/.exec(ngTNC);
+    const thanMoc = mMoc ? mMoc[1] : '';
+    const viLuiGate = thanMoc.search(/if \(!luiDaThu\)/);
+    const viGhiKet = thanMoc.indexOf('SET thuKetThuc');
+    n.luiPhaiThu = viLuiGate > 0 && viGhiKet > viLuiGate &&
+      /CHUATHULUI/.test(thanMoc) && /luiLaiDaThu/.test(cotN);
+    /* Và bảng KHÔNG có cột tóm tắt "đang ở cửa nào". */
+    n.khongCotTomN = !!mBangN && !/dangOCua|daQuaCua|soCuaDaQua|trangThai/.test(cotN);
+
+    /* ── E · NGƯỜI KÝ KHÁC NGƯỜI ĐỀ XUẤT, NGƯỜI SOI CŨNG THẾ ── */
+    n.kyKhacDeXuat = /'TUKY'/.test(ngTNC) && /ten\(hoSo\) === d\.aiDeXuat/.test(ngTNC);
+    n.soiKhacDeXuat = /'TUSOI'/.test(ngTNC) && /nguoiSoi === d\.aiDeXuat/.test(ngTNC);
+    /* Hồ sơ phiên mang ô `u`, KHÔNG phải `username` — cái bẫy đã cắn
+       bốn lần. Gõ nhầm thì hai cổng trên mở với mọi người trong im lặng.
+
+       Dò trên MÃ ĐÃ BỎ CHÚ GIẢI. Bản đầu dò cả tệp và báo đỏ đúng câu
+       chú giải cảnh báo về chính cái bẫy ấy — cùng chỗ đã sập ở mục 89
+       với cột `ghiChu` và ở mục 91 với dòng `12/12`. Một phép đo bắt
+       oan lời cảnh báo về một cái bẫy là phép đo dạy người ta xoá lời
+       cảnh báo đi. */
+    const ngTNCsach = ngTNC.replace(/\/\*[\s\S]*?\*\//g, '')
+      .replace(/(^|[^:])\/\/.*$/gm, '$1');
+    n.docDungOTen = !/hoSo\.username|hoSo\.vai\b|hoSo\.maKhachHang/.test(ngTNCsach);
+    /* Năm cửa đi đúng thứ tự. */
+    n.khongNhayCua = /'NHAYCUA'/.test(ngTNC);
+
+    /* ── F · KHÔNG CÓ CỬA NÀO NỚI MỘT VÙNG RA ──
+       Phép đo về thứ không được tồn tại. Viết cửa ấy rồi mới cấm gọi
+       là muộn — đúng lối đã dùng ở mục 87 với `ketLuanPhapLy`. */
+    const CUA_CAM_TNC = ['noiVungCam', 'boVungCam', 'themVungCam', 'datCap',
+      'chonCap', 'xinHaCap', 'boQuaChayThu', 'tatVongNangCap'];
+    n.cuaNoiLong = CUA_CAM_TNC.filter(c => new RegExp("'" + c + "'").test(ngWn) ||
+      new RegExp('function ' + c + '\\b').test(ngTNC));
+    /* Mọi cửa mô-đun khai ra phải có trong danh sách cửa THẬT của
+       worker — một cửa không nối vào worker thì màn gọi nó ra lỗi, và
+       một bảng điều khiển trỏ vào cửa không tồn tại đọc ra là số KHÔNG
+       (mục 88). */
+    const cuaTNC = (ngTNC.match(/export async function (\w+)/g) || [])
+      .map(x => x.replace('export async function ', ''));
+    n.cuaThieuNoi = cuaTNC.filter(c => !new RegExp("'" + c + "'").test(ngWn));
+
+    /* Và MỌI cửa phải soi vai. Lỗ thật, tìm ra khi đọc lại diff:
+       `soiLuatNangCap` và `mocChayThu` lúc đầu không kiểm vai nào cả,
+       nên một phụ huynh đăng nhập hợp lệ ghi được mốc chạy thử và kết
+       luận pháp lý cho một lượt nâng cấp hệ. Worker chỉ đòi phiên hợp
+       lệ — nó KHÔNG đòi vai, và đó đúng là chỗ dễ tưởng là có. */
+    n.cuaThieuVai = cuaTNC.filter(c => {
+      const m2 = new RegExp('export async function ' + c + '\\(([\\s\\S]*?)\\n\\}')
+        .exec(ngTNC);
+      /* Nhận cả cổng HẸP HƠN viết thẳng: `batNangCap` khoá ở R01–R02,
+         hẹp hơn `laNguoiNha`, và hẹp hơn là đúng chiều an toàn. Đòi
+         đúng một tên hàm là ép mọi cửa về cùng một độ rộng — tức là
+         nới ba cửa ra cho vừa một phép đo. */
+      return !m2 || !/laNguoiNha\(hoSo\)|laR01\(hoSo\)|\(hoSo \|\| \{\}\)\.role/
+        .test(m2[1]);
+    });
+
+    /* ── G · MƯỜI VIỆC NHẠY CẢM, VÀ N06 CỐ Ý CHO MỘT NGƯỜI ── */
+    n.duNhay = khoTNC.nhay10.length === 10 &&
+      khoTNC.nhay10.every(x => x.ma && x.viec && x.ai && typeof x.hai === 'boolean');
+    const n06 = khoTNC.nhay10.find(x => x.ma === 'N06');
+    n.n06MotNguoi = !!n06 && n06.hai === false && !!n06.baoSau;
+    n.nhayLuatDu = ['haiChuKyHaiNguoi', 'khongTuCap', 'quyenTuHetHan', 'motNguoiCuuChay']
+      .every(k => !!khoTNC.nhayLuat[k]);
+
+    /* ── H · TÁM CẤP, NĂM CỬA, SỔ CHỜ ── */
+    n.duCap8 = khoTNC.cap8.length === 8 &&
+      khoTNC.cap8.every(c => c.cap && c.ten && c.vd && c.ai);
+    n.duCua5 = khoTNC.cua5.length === 5 &&
+      khoTNC.cua5.every(c => c.ma && c.ten && c.ai && (c.phaiCo || []).length && c.rang);
+    n.cuaLuatDu = ['khongNhayCua', 'sanhLaDongHo', 'nguoiKyKhacNguoiDeXuat', 'luiLaiPhaiTHU']
+      .every(k => !!khoTNC.cuaLuat[k]);
+    n.choChuDuN = khoTNC.choChu.length > 0 &&
+      khoTNC.choChu.every(c => c.ma && c.t && c.canGi && c.khongDoDuoc);
+
+    /* Một biểu thức, đọc hai lần. Ba lần trong kho này `bao()` và câu
+       chi tiết là hai bản chép viết tay của cùng một biểu thức, và lần
+       nào cũng là thêm một cờ mới rồi chỉ sửa bản thứ nhất. */
+    const tncDat = n.duVung && !n.vungThieuO.length && !n.vungTroSai.length &&
+      n.coK5 && n.vungKhop && n.raNgoaiDuong && n.vungTruocHet &&
+      n.khongNhanCap && n.coBang && n.khongCotTuXep && n.xepKhaiDu &&
+      n.haiMoc && n.truHaiMoc && n.luiPhaiThu && n.khongCotTomN &&
+      n.kyKhacDeXuat && n.soiKhacDeXuat && n.docDungOTen && n.khongNhayCua &&
+      !n.cuaNoiLong.length && !n.cuaThieuNoi.length && !n.cuaThieuVai.length &&
+      n.duNhay && n.n06MotNguoi && n.nhayLuatDu &&
+      n.duCap8 && n.duCua5 && n.cuaLuatDu && n.choChuDuN &&
+      khoTNC.coMan && khoTNC.trongNav;
+
+    bao(tncDat,
+      'VÒNG TỰ NÂNG CẤP · BẢY VÙNG KHÔNG ĐI QUA ĐƯỜNG NÀY, VÀ CHẠM CHÚNG KHÔNG PHẢI "CẦN DUYỆT CAO HƠN". Một hệ tự nâng cấp mà sửa được chính đường nâng cấp của nó là một hệ KHÔNG CÓ GIỚI HẠN NÀO CẢ: mười lăm bản trước dựng từng cái cổng một — Hiến pháp mười ba điều, hàng rào mười điểm, mười hai luật giao diện, trần giám sát sáu điều cấm — và nếu đường nâng cấp chạm được vào chúng thì cả mười lăm bị gỡ bằng ĐÚNG MỘT lượt, gỡ hợp lệ, có chữ ký, sổ đầy đủ. Nên bảy vùng dựng TRƯỚC vòng năm cửa, lần thứ ba thứ tự ấy được chọn sau Hiến pháp (9.99.62) và trần giám sát (9.99.76). Chỗ dễ dựng sai nhất: chạm vùng cấm KHÔNG rơi vào Cấp 8 — nó rơi RA NGOÀI đường này, vì "cần duyệt cao hơn" là một cái thang và mọi cái thang đều leo được; trả về "Cấp 8" là mời người ta đi tìm một chữ ký Cấp 8, và một chữ ký Cấp 8 thì tìm được. MÁY xếp cấp: để người đề xuất tự xếp thì mọi thứ đều là Cấp 1, và không ai cố ý nói dối — họ chỉ thật lòng thấy việc mình đang làm là việc nhỏ; xếp sai thì xin NÂNG lên được, KHÔNG hạ xuống được, vì nâng nhầm thì tốn thời gian còn hạ nhầm thì lọt. Cửa chạy thử so HAI MỐC THẬT chứ không đọc một ô tích: một ô "đã chạy thử đủ" bật được trong một giây mà con số giờ vẫn đủ trong sổ. Đường LÙI phải được THỬ ở cửa 4, không chỉ được VIẾT ở cửa 1 — một đường lùi chưa ai đi thử là một đường lùi không tồn tại, và người ta chỉ phát hiện ra điều đó vào đúng lúc cần nó. Người ký khác người đề xuất và người soi luật cũng thế, vì cùng một người làm cả hai thì phần duyệt chỉ là phần đề xuất nói lại lần nữa và nó sẽ đồng ý với chính nó — mà sổ vẫn đủ năm dòng nên không ai đọc ra. Và phép đo nặng nhất là phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI: mô-đun không có một cửa nào nới một vùng ra, không có một cửa nào cho người đề xuất chọn cấp, bảng không mọc một cột tóm tắt nào',
+      tncDat
+        ? n.soVung + ' vùng không tự nâng cấp, mỗi vùng trỏ vào kho có thật, K5 nói về ' +
+          'chính đường này · ' + khoTNC.cap8.length + ' cấp do MÁY xếp · ' +
+          khoTNC.cua5.length + ' cửa đi đúng thứ tự · cửa chạy thử so hai mốc thật · ' +
+          khoTNC.nhay10.length + ' việc nhạy cảm, N06 cố ý cho một người tắt hệ ngay · ' +
+          'không cửa nào nới một vùng ra'
+        : [!n.duVung ? 'KHÔNG ĐỦ BẢY VÙNG: đang có ' + n.soVung : '',
+           n.vungThieuO.length ? 'VÙNG THIẾU Ô kho · vi: ' + n.vungThieuO.join(' · ') : '',
+           n.vungTroSai.length ? 'VÙNG TRỎ VÀO KHO KHÔNG TỒN TẠI: ' +
+             n.vungTroSai.join(' · ') + ' — trỏ sai thì vùng ấy không bảo vệ gì, mà ' +
+             'nhìn vẫn y hệt một vùng đủ răng' : '',
+           !n.coK5 ? 'THIẾU K5 — VÙNG NÓI VỀ CHÍNH ĐƯỜNG NÂNG CẤP NÀY. Đây là vùng dễ ' +
+             'quên nhất, và một hệ sửa được đường nâng cấp của mình thì lượt đầu tiên ' +
+             'là lượt gỡ mọi giới hạn' : '',
+           !n.vungKhop ? 'BẢN CHÉP VUNG_CAM Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !n.raNgoaiDuong ? 'CHẠM VÙNG CẤM RƠI VÀO MỘT CẤP thay vì rơi RA NGOÀI đường ' +
+             'này — trả về một cấp là mời người ta đi tìm chữ ký của cấp ấy' : '',
+           !n.vungTruocHet ? 'CỔNG VÙNG CẤM KHÔNG ĐỨNG TRƯỚC CỔNG "THIẾU Ô LÙI LẠI" — ' +
+             'báo thiếu ô trước là chỉ người đề xuất đường viết thêm một câu rồi gửi lại' : '',
+           !n.khongNhanCap ? 'CỬA NHẬN Ô `cap` TỪ NGƯỜI GỌI — người đề xuất tự chọn cấp ' +
+             'thì mọi thứ đều là Cấp 1' : '',
+           !n.coBang ? 'CHƯA CÓ BẢNG luotNangCap' : '',
+           !n.khongCotTuXep ? 'BẢNG MỌC CỘT CẤP DO NGƯỜI XIN KHAI' : '',
+           !n.xepKhaiDu ? 'KHO TNC_XEP_CAP THIẾU Ô khongTuChon · viSao · mayXepSai · ' +
+             'chamVungCam' : '',
+           !n.haiMoc ? 'CỬA CHẠY THỬ KHÔNG GIỮ HAI MỐC THẬT, hoặc bảng mọc một ô tích ' +
+             '"đã chạy thử" — ô tích bật được trong một giây' : '',
+           !n.truHaiMoc ? 'MÁY KHÔNG TRỪ HAI MỐC ở cửa đưa vào chạy' : '',
+           !n.luiPhaiThu ? 'ĐƯỜNG LÙI KHÔNG BỊ ĐÒI THỬ — viết ở cửa 1 là một lời khai, ' +
+             'thử ở cửa 4 mới là một phép đo' : '',
+           !n.khongCotTomN ? 'BẢNG MỌC CỘT TÓM TẮT "đang ở cửa nào" — cột ấy phải có ' +
+             'người cập nhật, và ngày không ai cập nhật thì nó nói dối' : '',
+           !n.kyKhacDeXuat ? 'KHÔNG CHẶN NGƯỜI KÝ TRÙNG NGƯỜI ĐỀ XUẤT' : '',
+           !n.soiKhacDeXuat ? 'KHÔNG CHẶN NGƯỜI SOI LUẬT TRÙNG NGƯỜI ĐỀ XUẤT' : '',
+           !n.docDungOTen ? 'ĐỌC SAI TÊN Ô HỒ SƠ PHIÊN (username · vai · maKhachHang) — ' +
+             'gõ nhầm thì JavaScript trả undefined và cổng mở với mọi người trong im lặng' : '',
+           !n.khongNhayCua ? 'KHÔNG CHẶN NHẢY CỬA — soi luật sau khi đã chạy thì bản ' +
+             'được soi không phải bản sắp chạy' : '',
+           n.cuaNoiLong.length ? 'ĐÃ MỌC CỬA NỚI VÙNG CẤM HOẶC CỬA TỰ CHỌN CẤP: ' +
+             n.cuaNoiLong.join(' · ') + ' — viết cửa ấy rồi mới cấm gọi là muộn' : '',
+           n.cuaThieuNoi.length ? 'CỬA KHÔNG NỐI VÀO worker.js: ' +
+             n.cuaThieuNoi.join(' · ') : '',
+           n.cuaThieuVai.length ? 'CỬA KHÔNG SOI VAI: ' + n.cuaThieuVai.join(' · ') +
+             ' — worker chỉ đòi phiên hợp lệ, nó KHÔNG đòi vai, nên một phụ huynh đăng ' +
+             'nhập hợp lệ ghi được kết luận pháp lý cho một lượt nâng cấp hệ' : '',
+           !n.duNhay ? 'KHÔNG ĐỦ MƯỜI VIỆC NHẠY CẢM, hoặc thiếu ô ma · viec · ai · hai' : '',
+           !n.n06MotNguoi ? 'N06 KHÔNG CÒN CHO MỘT NGƯỜI TẮT HỆ NGAY — bắt hai chữ ký ' +
+             'lúc đang cháy là bắt người ta chọn giữa cứu hệ và làm đúng quy trình' : '',
+           !n.nhayLuatDu ? 'KHO TNC_NHAY_LUAT THIẾU MỘT TRONG BỐN LUẬT' : '',
+           !n.duCap8 ? 'KHÔNG ĐỦ TÁM CẤP hoặc thiếu ô vd · ai' : '',
+           !n.duCua5 ? 'KHÔNG ĐỦ NĂM CỬA hoặc thiếu ô phaiCo · rang' : '',
+           !n.cuaLuatDu ? 'KHO TNC_CUA_LUAT THIẾU MỘT TRONG BỐN LUẬT' : '',
+           !n.choChuDuN ? 'MỤC CHỜ KHÔNG KHAI VÌ SAO MÁY KHÔNG ĐO ĐƯỢC' : '',
+           !khoTNC.coMan ? 'CHƯA CÓ MÀN tu-nang-cap' : '',
+           !khoTNC.trongNav ? 'MÀN KHÔNG CÓ TRONG G.NAV' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();
