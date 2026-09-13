@@ -63,6 +63,7 @@ import { soatTiepThi, soatBayNhanh } from './noi-dung-tiep-thi.js';
 import { lapSongSinh, docSongSinh, ghiCham, doSoCham } from './van-hanh-cham-soc.js';
 import { bayConSoCEO, soatLuatTaiChinh, dangOKichBan } from './tai-chinh-ceo.js';
 import { toiUuGoi } from './toi-uu-goi.js';
+import { docBaCua, ghiCua, lapBaCua, soatBaiTuan } from './con-nguoi.js';
 import { soatNoiDung, mauBaiHoc, napBai, nopBai, kyBai, soKyBai, baiTreo,
   capQuyenNoiDung, thuHoiQuyenNoiDung, dsQuyenNoiDung,
   docBuoi, xuatChuanNghe, soatMienDich,
@@ -206,6 +207,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'lapSongSinh', 'docSongSinh', 'ghiCham', 'doSoCham',
   'bayConSoCEO', 'soatLuatTaiChinh', 'dangOKichBan',
   'toiUuGoi',
+  'docBaCua', 'ghiCua', 'lapBaCua', 'soatBaiTuan',
   'soatNoiDung', 'mauBaiHoc', 'napBai', 'nopBai', 'kyBai', 'soKyBai', 'baiTreo',
   'capQuyenNoiDung', 'thuHoiQuyenNoiDung', 'dsQuyenNoiDung', 'docBuoi', 'xuatChuanNghe', 'soatMienDich',
   'chotTrichNghe', 'dsChotTrich',
@@ -365,6 +367,10 @@ async function lam(fn, y, env, db) {
   if (fn === 'soatLuatTaiChinh')  return await soatLuatTaiChinh(y, env, db, hoSo);
   if (fn === 'dangOKichBan')      return await dangOKichBan(y, env, db, hoSo);
   if (fn === 'toiUuGoi')          return await toiUuGoi(y, env, db, hoSo);
+  if (fn === 'docBaCua')          return await docBaCua(y, env, db, hoSo);
+  if (fn === 'ghiCua')            return await ghiCua(y, env, db, hoSo);
+  if (fn === 'lapBaCua')          return await lapBaCua(y, env, db, hoSo);
+  if (fn === 'soatBaiTuan')       return await soatBaiTuan(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
   if (fn === 'soatNoiDung')       return await soatNoiDung(y, env, db, hoSo);
   if (fn === 'mauBaiHoc')         return await mauBaiHoc(y, env, db, hoSo);

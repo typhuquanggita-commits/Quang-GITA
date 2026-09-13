@@ -13705,6 +13705,221 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n86 · PHÂN HỆ 6 — BA CỬA LÀ MỘT CỔNG, KHÔNG PHẢI BA TỜ GIẤY');
+  /* ══════════════════ 86. CON NGƯỜI · BA CỬA ══════════════════
+
+     Phần VIII của bản đặc tả viết ba cửa ở dạng một bảng, rồi kết
+     bằng một câu: "Chưa qua đủ ba cửa thì không được chạm khách một
+     mình. Không ngoại lệ, kể cả khi thiếu người."
+
+     Câu ấy là cả phân hệ. Không có răng thì ba cửa là ba tờ giấy —
+     và một tờ giấy về việc phải CHỜ, đặt trong một đội đang thiếu
+     người, thì nó thua ngay ngày đầu, và thua LẶNG LẼ, vì mỗi lần
+     nhân nhượng đều hợp lý ở đúng ca ấy.
+
+     Nên phép đo nặng nhất ở đây đọc THẲNG mã nguồn của ghiCham và đòi
+     có lời gọi sang soatChamKhach. Cùng lối đo với daDocThe ở mục 81:
+     đo chỗ cái răng CẮM VÀO, không đo lời khai rằng nó có. */
+  {
+    const mCN = await import('../may-chu/con-nguoi.js');
+    const fsCN = await import('fs/promises');
+    const sqlCN = await fsCN.readFile('may-chu/csdl.sql', 'utf8');
+    const magCN = await fsCN.readFile('may-chu/con-nguoi.js', 'utf8');
+    const magVH = await fsCN.readFile('may-chu/van-hanh-cham-soc.js', 'utf8');
+
+    const khoCN = await p.evaluate(() => {
+      const G = window.G;
+      return {
+        cua: (G.CN_CUA || []).map(x => x.ma),
+        /* Mỗi cửa phải khai AI KẾT LUẬN được nó. Không khai thì cả ba
+           cửa trình ra như đã đo hết, và cửa nặng nhất về NGƯỜI lại
+           đúng là cửa không ai đọc nữa. */
+        chamThieu: (G.CN_CUA || []).filter(x =>
+          ['may', 'mayVaNguoi', 'nguoi'].indexOf(x.aiCham) < 0 || !x.datLa || !x.y)
+          .map(x => x.ma),
+        cuaTreo: (G.CN_CUA || []).filter(x => x.aiCham === 'mayVaNguoi').map(x => x.ma),
+        nguon: (G.CN_NGUON || []).map(x => x.ma),
+        nguonThieu: (G.CN_NGUON || []).filter(x => !x.laGi || !x.y).map(x => x.ma),
+        chan: (G.CN_CHAN || []).map(x => x.ma),
+        /* Mỗi mã chặn phải nói Ở CỬA NÀO và VÌ SAO. Một mã chặn không
+           nói lý do thì người bị chặn đi tìm đường vòng chứ không đi sửa. */
+        chanThieu: (G.CN_CHAN || []).filter(x => !x.o || !x.khi || !x.vi).map(x => x.ma),
+        th: (G.CN_C1_TH || []).map(x => [x.ma, x.dieu]),
+        thThieu: (G.CN_C1_TH || []).filter(x =>
+          !x.tinhHuong || !x.dungLa || !x.saiThuong).map(x => x.ma),
+        dieuHP: (G.BN_HIENPHAP || []).map(x => x.ma),
+        tuan: (G.CN_TUAN || []).map(x => x.ma),
+        tuanThieu: (G.CN_TUAN || []).filter(x => !x.mayCanhGi || !x.soLuong).map(x => x.ma),
+        khungC2: (G.CN_C2_KHUNG || []).length,
+        khaiRong: (G.RONG_CO_Y || []).some(x => x.kho === 'CN_C2_KHUNG')
+      };
+    });
+
+    const v = {};
+    v.cuaKhop = JSON.stringify(khoCN.cua) === JSON.stringify(mCN.CUA || []);
+    v.nguonKhop = JSON.stringify(khoCN.nguon) === JSON.stringify(mCN.NGUON || []);
+    v.chanKhop = JSON.stringify(khoCN.chan.slice().sort()) ===
+      JSON.stringify((mCN.MA_CHAN || []).slice().sort());
+    v.thKhop = JSON.stringify(khoCN.th) === JSON.stringify(mCN.C1_TH || []);
+    v.chamThieu = khoCN.chamThieu;
+    v.nguonThieu = khoCN.nguonThieu;
+    v.chanThieu = khoCN.chanThieu;
+    v.thThieu = khoCN.thThieu;
+    v.tuanThieu = khoCN.tuanThieu;
+
+    /* ĐÚNG MỘT cửa mang dấu "máy không kết luận được". Hai cửa cùng
+       mang thì cái nhấn mất nghĩa; không cửa nào mang thì hàng rào
+       chín-trên-mười lặng lẽ làm tròn thành đạt. */
+    v.motCuaTreo = khoCN.cuaTreo.length === 1 && khoCN.cuaTreo[0] === 'C2';
+
+    /* Mỗi điều của Hiến pháp đúng MỘT tình huống thử. Thiếu một điều
+       thì bài thi vẫn xưng là 13/13 trong khi nó chỉ thử mười hai —
+       và chỗ thiếu không lộ ra ở đâu cả. */
+    const dieuTH = khoCN.th.map(t => t[1]);
+    v.phuDu13 = khoCN.dieuHP.length === 13 && khoCN.th.length === 13 &&
+      khoCN.dieuHP.every(d => dieuTH.filter(x => x === d).length === 1);
+
+    /* ══ ĐỒNG CHUẨN — PHÉP ĐO VỀ THỨ KHÔNG ĐƯỢC TỒN TẠI ══
+       "Trainer, coach, tư vấn viên đều thi CÙNG một Hiến pháp 13
+       điều." Chỗ kiểm được của câu ấy là: bộ chấm Cửa 1 KHÔNG rẽ
+       nhánh theo vai. Chia đề theo vai thì ba vai học ba bản, ba bản
+       trôi xa nhau mỗi bản một ít, và không ai thấy vì mỗi bên vẫn
+       thi đạt. */
+    const thanC1 = (magCN.match(/export function chamCua1\([\s\S]*?\n}/) || [''])[0];
+    v.dongChuan = thanC1.length > 50 &&
+      !/\bvai\b|\brole\b|\bportal\b|hoSo\./.test(thanC1) &&
+      mCN.chamCua1.length === 1;
+
+    /* ══ BẢNG KHÔNG CÓ CỘT TÓM TẮT ══ */
+    const bang = (sqlCN.match(/CREATE TABLE IF NOT EXISTS baCuaConNguoi \(([\s\S]*?)\);/) ||
+      ['', ''])[1];
+    v.coBang = bang.length > 20;
+    v.cotCam = (mCN.COT_CAM || []).filter(c =>
+      new RegExp('^\\s*' + c + '\\s', 'mi').test(bang));
+
+    /* ══ CÁI RĂNG CẮM VÀO ĐÂU ══ */
+    v.rangOGhiCham = /ConNguoi\.soatChamKhach\(/.test(magVH) &&
+      magVH.indexOf('ConNguoi.soatChamKhach(') >
+        magVH.indexOf('export async function ghiCham') &&
+      magVH.indexOf('ConNguoi.soatChamKhach(') <
+        magVH.indexOf("INSERT INTO soCham");
+
+    /* ══ TRỎ CHỨ KHÔNG CHÉP ══
+       Bài tuần soi ca bằng chính cửa ẩn danh của Bộ não và chấm bằng
+       chính hàng rào 10 điểm. Chép bảng dấu hiệu sang đây thì thêm
+       một dấu hiệu mới ở bản sau là hai bảng lệch nhau, và bài tuần
+       chấm sạch một ca mà cửa đi ra vẫn chặn. */
+    v.troChuKhongChep = /BoNao\.soatRaNgoai\(/.test(magCN) &&
+      /BoNao\.soatRao10\(/.test(magCN) &&
+      !/HO_VIET|CAM_KET|THOI_PHONG|XUNG_HO_SAI/.test(magCN);
+
+    /* ══ HÀNH VI ══ */
+    const du13 = (mCN.C1_TH || []).map(t => t[0]);
+    const c1Thieu = mCN.chamCua1(du13.filter(m => m !== 'TH13'));
+    v.c1TenDieu = c1Thieu.dat === false && c1Thieu.sai.length === 1 &&
+      c1Thieu.sai[0].dieu === 'HP13' && c1Thieu.vi.indexOf('HP13') >= 0 &&
+      c1Thieu.vi.indexOf('12/13') < 0;
+
+    const b20 = Array.from({ length: 20 }, () =>
+      ({ chu: 'Chị thử ngồi cạnh con mười phút tối nay nhé.', r9BoiAi: 'chị Hoa',
+        r9Dat: 'dat' }));
+    v.c2Treo = mCN.chamCua2(b20.map(b => ({ chu: b.chu })), 'tan').code === 'CHUADOC_R9' &&
+      mCN.chamCua2(b20, 'tan').dat === true;
+
+    /* Trung bình ba cuộc đạt ngưỡng, nhưng cuộc thứ ba thì không. Lấy
+       trung bình thì nó lọt — và thứ cửa này đo là một THÓI QUEN. */
+    const gLech = [{ boiAi: 'h', phutKhach: 38, phutGITA: 2 },
+      { boiAi: 'h', phutKhach: 38, phutGITA: 2 },
+      { boiAi: 'h', phutKhach: 22, phutGITA: 18 }];
+    const tbLech = gLech.reduce((s, g) =>
+      s + g.phutKhach / (g.phutKhach + g.phutGITA), 0) / 3;
+    v.c3TungCuoc = tbLech >= mCN.TY_KHACH_C3 &&
+      mCN.chamCua3(gLech, 'tan').dat === false &&
+      mCN.chamCua3(gLech.map(g => ({ ...g, boiAi: 'tan' })), 'tan').code === 'TUKHAI';
+
+    /* Bản sai được hàng rào chấm SẠCH thì nó không sai. */
+    const MAU = 'Em nghe chị kể rồi. Chị đang mệt và lo. Nhiều nhà cũng gặp đúng ' +
+      'chỗ này. Tối nay chị thử ngồi cạnh con mười phút. Mấy hôm nữa em nhắn lại hỏi chị nhé.';
+    const SAI = 'Bên em cam kết con sẽ khá lên, đây là phương pháp tốt nhất và duy ' +
+      'nhất hiện nay, bé nhà mình chắc chắn đạt kết quả nếu chị theo đủ.';
+    const ca = n => ({ ma: 'CA' + n, chuyen: 'Một nhà có con lớp ba, mẹ nhắn lúc ' +
+      'khuya vì con không chịu ngồi học.', mau: MAU, sai: SAI, dieuPham: ['HP01', 'HP10'] });
+    const thi10 = Array.from({ length: 10 }, (x, i) => ({ hoi: 'H' + i, dap: 'Đ' }));
+    const tuanTot = mCN.soatTuan({ ca: [1, 2, 3, 4, 5].map(ca), thi: thi10 });
+    const tuanSai = mCN.soatTuan({ ca: [1, 2, 3, 4, 5].map(n =>
+      ({ ...ca(n), sai: MAU })), thi: thi10 });
+    const tuanTen = mCN.soatTuan({ ca: [1, 2, 3, 4, 5].map(n => n === 1
+      ? { ...ca(n), chuyen: 'Chị Nguyễn Thị Lan nhắn cho em lúc khuya.' } : ca(n)),
+      thi: thi10 });
+    v.tuanNguocChieu = tuanTot.dat === true &&
+      tuanSai.loi.length === 5 && tuanSai.loi.every(l => l.ma === 'SAIKHONGSAI') &&
+      tuanTen.loi.some(l => l.ma === 'CATHAT');
+
+    /* Khung hai mươi câu của Cửa 2 phải RỖNG và phải KHAI vì sao rỗng. */
+    v.khungRong = khoCN.khungC2 === 0 && khoCN.khaiRong === true;
+
+    const cnDat =
+      v.cuaKhop && v.nguonKhop && v.chanKhop && v.thKhop &&
+      !v.chamThieu.length && !v.nguonThieu.length && !v.chanThieu.length &&
+      !v.thThieu.length && !v.tuanThieu.length &&
+      v.motCuaTreo && v.phuDu13 && v.dongChuan && v.coBang && !v.cotCam.length &&
+      v.rangOGhiCham && v.troChuKhongChep &&
+      v.c1TenDieu && v.c2Treo && v.c3TungCuoc && v.tuanNguocChieu && v.khungRong;
+
+    bao(cnDat,
+      'PHÂN HỆ 6 · BA CỬA LÀ MỘT CỔNG CÓ RĂNG, KHÔNG PHẢI BA TỜ GIẤY. Bản đặc tả kết Phần VIII bằng một câu — "chưa qua đủ ba cửa thì không được chạm khách một mình, không ngoại lệ, kể cả khi thiếu người" — và câu ấy chính là cả phân hệ. Không có răng thì nó thua ngay ngày đầu, và thua LẶNG LẼ, vì thiếu người là lý do hay gặp nhất nên nếu nó được tính là ngoại lệ thì nó thành lối đi chính. Nên phép đo đọc THẲNG mã nguồn ghiCham và đòi cổng nằm ở đó — chỗ một lượt chạm được GHI — chứ không ở màn hình: đặt ở màn hình thì nó là một lời nhắc, người ta đọc, thấy hợp lý, rồi vẫn gọi, và mỗi lần nhân nhượng đều hợp lý ở đúng ca ấy. ĐỒNG CHUẨN đo bằng thứ KHÔNG ĐƯỢC TỒN TẠI: thân hàm chấm Cửa 1 không được có một chữ nào về vai, vì "trainer, coach, tư vấn viên đều thi cùng một Hiến pháp 13 điều" — chia đề theo vai thì ba vai học ba bản, ba bản trôi xa nhau mỗi bản một ít, và không ai thấy vì mỗi bên vẫn thi đạt. Cửa 1 đạt là 13/13 và máy gọi TÊN ĐIỀU chứ không trả một phân số: 12/13 nghe như gần đạt nhưng không nói điều nào bị bỏ, mà điều bị bỏ có thể là Điều 13. Cửa 2 TREO cho tới khi có tên người đọc R9 — máy đo được chín trên mười điểm của hàng rào, chín chia mười ra đúng 90%, vừa đủ ngưỡng, nhờ đúng chỗ chưa ai nhìn. Cửa 3 đo TỪNG cuộc chứ không lấy trung bình ba cuộc, và người kèm khai HAI QUÃNG THỜI GIAN chứ không khai một tỷ lệ — một tỷ lệ gõ thẳng vào là một lời phán. Bảng ba cửa KHÔNG có cột tóm tắt "đã đủ ba cửa": một cột như thế hoặc bị gõ đè, hoặc cũ đi lặng lẽ, cùng luật với cột conHan không có ở mục 79 và cột den không có ở mục 83. Và bài tuần chạy HAI phép đo ngược chiều trên cùng một bộ dò — bản mẫu phải sạch hàng rào, bản sai phải ĐỎ: một bản sai được chấm sạch thì nó không sai, nó chỉ là một cách nói khác, và đội ngũ học được rằng cái sai là chuyện cảm tính',
+      cnDat
+        ? khoCN.cua.length + ' cửa (treo ở ' + khoCN.cuaTreo.join('') + ') · ' +
+          khoCN.th.length + ' tình huống phủ đủ ' + khoCN.dieuHP.length + ' điều, mỗi ' +
+          'điều đúng một · ' + khoCN.chan.length + ' đường chặn, mỗi mã nói ở cửa nào ' +
+          'và vì sao · cổng cắm trong ghiCham trước lúc GHI · bảng không có ' +
+          (mCN.COT_CAM || []).length + ' cột tóm tắt · khung hai mươi câu RỖNG, có khai'
+        : [!v.cuaKhop ? 'BẢN CHÉP BA CỬA Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.nguonKhop ? 'BẢN CHÉP HAI NGUỒN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.chanKhop ? 'BẢN CHÉP DANH SÁCH MÃ CHẶN Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.thKhop ? 'BẢN CHÉP MƯỜI BA TÌNH HUỐNG THỬ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           v.chamThieu.length ? 'CỬA KHÔNG KHAI AI KẾT LUẬN ĐƯỢC NÓ: ' +
+             v.chamThieu.join(' · ') + ' — không khai thì cả ba cửa trình ra như đã ' +
+             'đo hết, và cửa nặng nhất về NGƯỜI lại đúng là cửa không ai đọc nữa' : '',
+           v.nguonThieu.length ? 'NGUỒN KHÔNG KHAI LÀ PHÉP ĐO HAY LỜI KHAI: ' +
+             v.nguonThieu.join(' · ') : '',
+           v.chanThieu.length ? 'MÃ CHẶN KHÔNG NÓI Ở CỬA NÀO HOẶC VÌ SAO: ' +
+             v.chanThieu.join(' · ') + ' — người bị chặn đi tìm đường vòng chứ ' +
+             'không đi sửa' : '',
+           v.thThieu.length ? 'TÌNH HUỐNG THỬ THIẾU Ô: ' + v.thThieu.join(' · ') : '',
+           v.tuanThieu.length ? 'PHẦN CỦA BÀI TUẦN KHÔNG KHAI MÁY CANH GÌ: ' +
+             v.tuanThieu.join(' · ') : '',
+           !v.motCuaTreo ? 'PHẢI CÓ ĐÚNG MỘT CỬA MANG DẤU "máy không kết luận được", ' +
+             'và nó phải là C2 — hai cửa cùng mang thì cái nhấn mất nghĩa, không cửa ' +
+             'nào mang thì hàng rào chín-trên-mười lặng lẽ làm tròn thành đạt' : '',
+           !v.phuDu13 ? 'MƯỜI BA TÌNH HUỐNG KHÔNG PHỦ ĐỦ MƯỜI BA ĐIỀU, MỖI ĐIỀU MỘT ' +
+             '— thiếu một điều thì bài thi vẫn xưng là 13/13 trong khi nó chỉ thử ' +
+             'mười hai, và chỗ thiếu không lộ ra ở đâu' : '',
+           !v.dongChuan ? 'BỘ CHẤM CỬA 1 RẼ NHÁNH THEO VAI — phạm đồng chuẩn: ba vai ' +
+             'học ba bản Hiến pháp, ba bản trôi xa nhau mỗi bản một ít, và không ai ' +
+             'thấy vì mỗi bên vẫn thi đạt' : '',
+           !v.coBang ? 'KHÔNG TÌM THẤY BẢNG baCuaConNguoi TRONG csdl.sql' : '',
+           v.cotCam.length ? 'BẢNG CÓ CỘT TÓM TẮT: ' + v.cotCam.join(' · ') +
+             ' — một cột như thế hoặc bị gõ đè và một phép đo biến thành một lời ' +
+             'khai, hoặc không ai gõ và nó cũ đi lặng lẽ' : '',
+           !v.rangOGhiCham ? 'CỔNG BA CỬA KHÔNG CẮM TRONG ghiCham TRƯỚC LÚC GHI — ba ' +
+             'cửa không có răng thì chúng là ba tờ giấy' : '',
+           !v.troChuKhongChep ? 'MÔ-ĐUN KHÔNG GỌI THẲNG BỘ DÒ CỦA BỘ NÃO, hoặc đã ' +
+             'chép một bảng dấu hiệu sang đây — hai bảng lệch nhau thì bài tuần chấm ' +
+             'sạch một ca mà cửa đi ra vẫn chặn' : '',
+           !v.c1TenDieu ? 'CỬA 1 TRẢ VỀ MỘT PHÂN SỐ THAY VÌ TÊN ĐIỀU' : '',
+           !v.c2Treo ? 'CỬA 2 KẾT LUẬN ĐƯỢC KHI CHƯA AI ĐỌC R9' : '',
+           !v.c3TungCuoc ? 'CỬA 3 LẤY TRUNG BÌNH BA CUỘC, hoặc nhận người kèm là ' +
+             'chính ứng viên' : '',
+           !v.tuanNguocChieu ? 'BÀI TUẦN KHÔNG CHẠY HAI PHÉP ĐO NGƯỢC CHIỀU — bản sai ' +
+             'được chấm sạch vẫn qua, hoặc ca chưa ẩn danh vẫn qua' : '',
+           !v.khungRong ? 'KHUNG HAI MƯƠI CÂU CỦA CỬA 2 KHÔNG CÒN RỖNG, hoặc rỗng mà ' +
+             'không khai ở RONG_CO_Y — một bộ đề tự nghĩ ra thì đội ngũ luyện giọng ' +
+             'cho một người không có thật' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

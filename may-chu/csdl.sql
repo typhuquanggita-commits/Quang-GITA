@@ -1578,3 +1578,37 @@ CREATE INDEX IF NOT EXISTS ix_cham_nha ON soCham (maNha, ngay DESC);
 -- một chỉ mục thêm cho bộ thử xanh. Chặng tử thần là chặng phải quét
 -- mỗi ngày, nên nó là đường nóng nhất của cả bảng.
 CREATE INDEX IF NOT EXISTS ix_ss_thamgia ON hoSoSongSinh (ngayThamGia);
+
+-- ═════════════════════════════════════════════════════════════
+--  BA CỬA CỦA MỘT NGƯỜI — Phân hệ 6
+--
+--  MỘT CỬA LÀ MỘT DÒNG. Không có cột "đã đủ ba cửa", và cũng không
+--  có cột "được chạm khách": một cột tóm tắt thì HOẶC bị gõ đè — và
+--  lúc ấy một phép đo biến thành một lời khai mà nhìn vẫn y hệt —
+--  HOẶC không ai gõ và nó cũ đi lặng lẽ, khai rằng một người đã đủ
+--  ba cửa trong khi cửa thứ ba của họ chưa từng mở. Đủ hay chưa thì
+--  TÍNH LÚC ĐỌC, từ chính ba dòng này. Cùng luật với cột `conHan`
+--  không có trong theVungManh và cột `den` không có trong
+--  hoSoSongSinh.
+--
+--  Cột `nguon` là cột quan trọng nhất của bảng:
+--    quaCua  — bài làm và bài chấm nằm trong sổ, xem lại được
+--    khaiCu  — R01–R02 khai hộ cho người đã làm nghề trước khi có
+--              cổng. Nó mở được cổng, nhưng nó là LỜI KHAI, và sổ
+--              phải đọc ra được điều ấy mãi mãi.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS baCuaConNguoi (
+  id        TEXT PRIMARY KEY,
+  maNguoi   TEXT NOT NULL,
+  cua       TEXT NOT NULL,        -- C1 · C2 · C3
+  nguon     TEXT NOT NULL,        -- quaCua · khaiCu
+  ngayQua   TEXT NOT NULL,
+  boiAi     TEXT NOT NULL,        -- người chấm, hoặc người khai hộ
+  ghiChu    TEXT,                 -- căn cứ — bắt buộc với dòng khaiCu
+  ghiLuc    TEXT NOT NULL
+);
+
+-- Đường tra thật của cả bảng: mỗi lượt ghiCham hỏi đúng câu "người
+-- này đã có dòng nào chưa". Không phải một chỉ mục thêm cho bộ thử
+-- xanh — nó nằm trên đường nóng nhất trong hệ.
+CREATE INDEX IF NOT EXISTS ix_bacua_nguoi ON baCuaConNguoi (maNguoi, cua);

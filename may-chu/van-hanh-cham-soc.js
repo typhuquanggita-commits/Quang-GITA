@@ -25,6 +25,7 @@
 
 import { Kho } from './nen.js';
 import * as BoNao from './bo-nao.js';
+import * as ConNguoi from './con-nguoi.js';
 
 /* ═══════════════ BẢN CHÉP CỦA KHO ═══════════════ */
 
@@ -256,6 +257,24 @@ export async function ghiCham(y, env, db, hoSo) {
       error: 'Cuộc gọi đèn Đỏ phải do NGƯỜI THẬT thực hiện. Thứ đang thiếu ở một ' +
         'nhà im lặng mười lăm ngày là một người, không phải một câu chữ.' };
   }
+
+  /* ── CỔNG 4 · BA CỬA CỦA PHÂN HỆ 6 ──
+     Người chưa qua đủ ba cửa thì không chạm khách MỘT MÌNH. Cổng nằm
+     ở đây — chỗ một lượt chạm được GHI — chứ không ở màn hình: đặt ở
+     màn hình thì nó là một lời nhắc, người ta đọc, thấy hợp lý, rồi
+     vẫn gọi vì hôm nay thiếu người, và mỗi lần nhân nhượng đều hợp lý
+     ở đúng ca ấy.
+
+     VÌ SAO ĐỨNG SAU BA CỔNG KIA chứ không đứng đầu: cả bốn cổng đều
+     chặn, nên thứ tự chỉ quyết câu người ta ĐỌC TRƯỚC. Ba cổng trên
+     nói về chính lượt chạm này và câu của chúng cụ thể hơn. Đặt cổng
+     ba cửa lên đầu thì một cái máy gọi vào nhà đỏ nhận câu "chưa qua
+     ba cửa" — đúng, nhưng lạc, vì vấn đề của nó là nó không phải một
+     người. */
+  const baCua = await ConNguoi.soatChamKhach(
+    { maNguoi: String(x.boiAi || hoSo.u || '').trim(), nguoiKem: x.nguoiKem }, db);
+  if (!baCua.duoc) return { ok: false, code: baCua.code, thieu: baCua.thieu,
+    nguoiKem: baCua.nguoiKem, error: baCua.error };
 
   /* Nội dung chạm mang tên con và nỗi lo của một gia đình, nên nó
      không được rời hệ — soi bằng chính cửa Điều 13 của Bộ não, không

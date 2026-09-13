@@ -1119,6 +1119,117 @@ thứ quyết ai đọc được con số là cổng máy chủ.
 
 ---
 
+## BỘ NÃO — Phân hệ 6: Con người (9.99.69)
+
+Phần VIII. Màn **Con người · Ba cửa** (`src/con-nguoi.js`, bốn ngăn),
+máy chủ `may-chu/con-nguoi.js`, kho `data.con-nguoi.js` (10 kho), bảng
+`baCuaConNguoi`, bộ kiểm **mục 86**, mười lăm phép đo ở `thu-worker.js`.
+
+### Phần này TRỎ, và chỉ dựng đúng một thứ chưa có
+
+Kho đã có hệ sát hạch nghề (`SH_*`, 348 câu, sáu vai), đã có Hiến pháp
+13 điều và hàng rào 10 điểm (`BN_*`). Ba cửa không dựng lại cái nào.
+Thứ chưa có là **một cái cổng đứng trước lượt chạm khách đầu tiên**.
+
+Bản đặc tả kết Phần VIII bằng một câu: *"Chưa qua đủ ba cửa thì không
+được chạm khách một mình. Không ngoại lệ, kể cả khi thiếu người."* Câu
+ấy **là** cả phân hệ. Viết ở dạng một lời dặn thì nó thua ngay ngày
+đầu, và thua LẶNG LẼ — thiếu người là lý do hay gặp nhất, nên nếu nó
+được tính là ngoại lệ thì nó thành lối đi chính.
+
+**Cổng nằm trong `ghiCham`** — chỗ một lượt chạm được GHI — không ở
+màn hình. Mục 86 đọc thẳng mã nguồn và đòi lời gọi ấy nằm **trước**
+câu `INSERT`. Đặt ở màn hình thì nó là một lời nhắc: người ta đọc,
+thấy hợp lý, rồi vẫn gọi. Cùng cái bẫy đã ghi ở cổng ADN (9.99.56).
+
+**Đứng SAU ba cổng cũ của `ghiCham`, không đứng đầu.** Cả bốn đều
+chặn, nên thứ tự chỉ quyết câu người ta ĐỌC TRƯỚC; ba cổng trên nói về
+chính lượt chạm này và câu của chúng cụ thể hơn. Đặt cổng ba cửa lên
+đầu thì một cái máy gọi vào nhà đỏ nhận câu *"chưa qua ba cửa"* —
+đúng, nhưng lạc, vì vấn đề của nó là nó không phải một người.
+
+### Ba cửa, ba kiểu kết luận khác nhau
+
+| Cửa | Đạt là | Ai kết luận |
+|---|---|---|
+| C1 · Hiến pháp | **13/13**, máy gọi TÊN ĐIỀU | máy |
+| C2 · Giọng | hàng rào 10 điểm ≥ 90% số bài | **máy và người** |
+| C3 · Tri kỷ | khách nói ≥ 80%, **từng cuộc một** | người |
+
+**`mayVaNguoi` không phải chỗ lấp lửng, và đúng MỘT cửa được mang nó.**
+Hàng rào có mười điểm mà máy đo được chín — R9 luôn là việc của người.
+Chín chia mười ra **đúng 90%**, vừa đủ ngưỡng, nhờ đúng chỗ chưa ai
+nhìn. Nên Cửa 2 **TREO** cho tới khi có tên người đọc R9, và tên ấy
+không được là chính ứng viên.
+
+**Cửa 1 trả về TÊN ĐIỀU, không trả một phân số.** 12/13 nghe như gần
+đạt nhưng không nói điều nào bị bỏ — mà điều bị bỏ có thể là Điều 13,
+điều duy nhất có hậu quả pháp lý.
+
+**Cửa 3 đo TỪNG cuộc, không lấy trung bình ba cuộc**: 95% · 95% · 55%
+ra trung bình 82%, trên ngưỡng, mà cuộc thứ ba thì hỏng. Thứ cửa này
+đo là một THÓI QUEN, và một thói quen phải đúng ở cả ba lần. Và **người
+kèm khai HAI CON SỐ PHÚT, không khai một tỷ lệ** — một tỷ lệ gõ thẳng
+vào là một lời phán, hai quãng thời gian thì quan sát được, và phép
+chia để máy làm.
+
+### Đồng chuẩn đo bằng thứ KHÔNG ĐƯỢC TỒN TẠI
+
+*"Trainer, coach, tư vấn viên đều thi cùng một Hiến pháp 13 điều."*
+Chỗ kiểm được của câu ấy: thân hàm `chamCua1` **không có một chữ nào
+về vai**, và hàm nhận đúng một tham số. Chia đề theo vai thì ba vai
+học ba bản, ba bản trôi xa nhau mỗi bản một ít, và không ai thấy vì
+mỗi bên vẫn thi đạt.
+
+`SH_HOI` **chia** theo vai, và chia là đúng: nó đo NGHỀ, mỗi vai một
+phần việc. Cửa 1 đo LUẬT, và luật thì cả nhà một bản.
+
+**Mỗi điều đúng MỘT tình huống thử**, đối chiếu thẳng với
+`BN_HIENPHAP`. Thiếu một điều thì bài thi vẫn xưng là 13/13 trong khi
+nó chỉ thử mười hai — và chỗ thiếu không lộ ra ở đâu cả.
+
+### Bảng không có cột "đã đủ ba cửa"
+
+Lối đo thứ tư trong bộ dùng phép đo về thứ không được tồn tại, sau LR1
+(mục 79), ô tự khai (mục 81) và cột đèn (mục 83). Đủ hay chưa thì
+**tính lúc đọc** từ ba dòng. Một cột tóm tắt thì hoặc bị gõ đè — và
+một phép đo biến thành một lời khai mà nhìn vẫn y hệt — hoặc không ai
+gõ và nó cũ đi lặng lẽ.
+
+**Bật cổng là chặn cả người cũ.** Hệ quả cố ý: một cổng chỉ áp cho
+người mới là một cổng nói rằng người cũ không cần chuẩn. Đường cho
+người cũ là `lapBaCua` (chỉ R01–R02, **phải viết căn cứ**), và dòng ấy
+mang `nguon: 'khaiCu'` — `docBaCua` nêu riêng phần khai hộ, không gộp
+vào một con số "đã đủ". Chính bộ thử worker đã phải khai hộ cho ba cái
+tên mà khối Phân hệ 4 dùng, trước khi mọi phép đo cũ chạy lại được.
+
+### Bài tuần — hai phép đo NGƯỢC CHIỀU trên cùng một bộ dò
+
+Bản mẫu phải **sạch** hàng rào; bản sai phải **ĐỎ**. Một "bản sai" mà
+hàng rào chấm sạch thì nó không sai — nó chỉ là một cách nói khác, và
+đội ngũ học được rằng cái sai là chuyện cảm tính. Ngược lại, một bản
+mẫu phạm hàng rào dạy đúng cái đang bị cấm, và nó dạy mạnh hơn mọi lời
+dặn vì nó được gắn nhãn *"mẫu"*. Bộ dò hỏng thì một trong hai phía đỏ
+ngay, chứ không im cả hai.
+
+Năm ca thật soi bằng chính `BoNao.soatRaNgoai`, không dựng bộ dò thứ
+hai — mục 86 canh rằng mô-đun **không khai một bảng dấu hiệu nào của
+riêng nó**. Mã điều ghi kèm bản sai phải có trong `BN_HIENPHAP`: gõ
+`HP14` thì bài tuần vẫn trông đầy đủ, và người học đi tìm một điều
+không tồn tại. **Máy không tự chọn năm ca** — chọn ca là quyết định về
+việc gia đình nào được đem ra dạy.
+
+### Hai mươi câu của Cửa 2 để RỖNG
+
+`CN_C2_KHUNG = []`, khai ở `RONG_CO_Y`, mục chờ **CN-01**. Máy viết ra
+được hai mươi câu nghe rất giống câu thật — và đó đúng là vấn đề: một
+bộ đề tự nghĩ ra thì đội ngũ luyện giọng cho một người không có thật,
+rồi gặp người thật thì hỏng đúng ở chỗ chưa ai luyện.
+
+**CN-02** là ngày bật cổng, vì bật là chặn mọi người chưa có dòng
+trong sổ — một quyết định vận hành, không phải một dòng mã.
+
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

@@ -4223,6 +4223,200 @@ let idTam9 = null, idDang9 = null;
     'nói thiếu cái gì thì người viết đoán, và họ đoán nhánh dễ làm nhất');
 }
 
+/* ══════════════ PHÂN HỆ 6 · CON NGƯỜI · BA CỬA ══════════════
+
+   Cả phân hệ có giá trị ở đúng một cái cổng: người chưa qua đủ ba cửa
+   thì không chạm khách MỘT MÌNH. Ba cửa không có cổng thì chúng là ba
+   tờ giấy — và một tờ giấy về việc phải chờ, đặt trong một đội đang
+   thiếu người, thì nó thua ngay ngày đầu.
+
+   Khối này chạy TRƯỚC khối Phân hệ 4: cổng ba cửa nằm trong ghiCham,
+   nên những người mà khối ấy dùng phải có dòng trong sổ trước đã. Đó
+   cũng là bài học vận hành của chính bản này — bật cổng lên là chặn
+   cả người cũ, và đường duy nhất là khai cho họ trước. */
+{
+  const mCN = await import('../may-chu/con-nguoi.js');
+  const mBN6 = await import('../may-chu/bo-nao.js');
+  const DU13 = mCN.C1_TH.map(t => t[0]);
+
+  /* Hai mươi bài sạch hàng rào, mỗi bài một câu ngắn không con số. */
+  const BAI_SACH = i => ({ chu: 'Chị thử ngồi cạnh con mười phút tối nay nhé.',
+    r9BoiAi: 'chị Hoa', r9Dat: 'dat' });
+  const BAI20 = Array.from({length: 20}, (_, i) => BAI_SACH(i));
+
+  /* ── CỬA 1 · 13/13, VÀ MÁY NÓI TÊN ĐIỀU CHỨ KHÔNG NÓI PHÂN SỐ ── */
+  const c1Du = mCN.chamCua1(DU13);
+  const c1Thieu = mCN.chamCua1(DU13.filter(m => m !== 'TH13'));
+  bao(c1Du.dat === true && c1Thieu.dat === false &&
+      c1Thieu.sai.length === 1 && c1Thieu.sai[0].dieu === 'HP13' &&
+      c1Thieu.vi.indexOf('HP13') >= 0 && c1Thieu.vi.indexOf('12/13') < 0,
+    'CỬA 1 ĐẠT LÀ 13/13 — thiếu một điều thì máy gọi TÊN ĐIỀU, không trả một phân số',
+    'bỏ TH13 thì máy nói ' + c1Thieu.sai[0].dieu + ' · một phân số 12/13 nghe như ' +
+    'gần đạt nhưng không nói điều nào bị bỏ, mà điều bị bỏ có thể là điều duy ' +
+    'nhất có hậu quả pháp lý');
+
+  /* Mỗi điều đúng MỘT tình huống. Thiếu một điều thì bài thi vẫn xưng
+     là 13/13 trong khi nó chỉ thử mười hai điều. */
+  const dieuCo = mBN6.HIENPHAP.map(d => d[1]);
+  const dieuTH = mCN.C1_TH.map(t => t[1]);
+  bao(mCN.C1_TH.length === 13 &&
+      dieuCo.every(d => dieuTH.filter(x => x === d).length === 1),
+    'MỖI ĐIỀU ĐÚNG MỘT TÌNH HUỐNG THỬ — không điều nào bị bỏ, không điều nào thử hai lần',
+    '13 tình huống phủ đủ 13 điều · thiếu một điều thì bài thi vẫn xưng là 13/13 ' +
+    'trong khi nó chỉ thử mười hai, và chỗ thiếu không lộ ra ở đâu cả');
+
+  /* ── CỬA 2 · CHÍN TRÊN MƯỜI RA ĐÚNG 90%, NHỜ CHỖ CHƯA AI NHÌN ── */
+  const c2KhongR9 = mCN.chamCua2(BAI20.map(b => ({chu: b.chu})), 'tan');
+  const c2Co = mCN.chamCua2(BAI20, 'tan');
+  bao(c2KhongR9.ok === false && c2KhongR9.code === 'CHUADOC_R9' &&
+      c2KhongR9.bai.length === 20 && c2Co.ok === true && c2Co.dat === true,
+    'CỬA 2 TREO CHO TỚI KHI CÓ TÊN NGƯỜI ĐỌC R9 — máy đo được chín trên mười điểm của hàng rào',
+    'hai mươi bài sạch mà vẫn không kết luận được · chín chia mười ra đúng 90%, ' +
+    'vừa đủ ngưỡng của cửa này, nhờ đúng chỗ chưa ai nhìn');
+
+  /* Người đọc R9 không được là chính ứng viên. */
+  const c2TuDoc = mCN.chamCua2(BAI20.map(b => ({...b, r9BoiAi: 'tan'})), 'tan');
+  bao(c2TuDoc.ok === false && c2TuDoc.code === 'CHUADOC_R9',
+    'ỨNG VIÊN TỰ ĐỌC R9 CHO MÌNH THÌ KHÔNG TÍNH',
+    'điểm duy nhất máy không đo được mà để chính người thi tự chấm thì cả hàng ' +
+    'rào mười điểm còn chín');
+
+  /* ── CỬA 3 · ĐO TỪNG CUỘC, KHÔNG LẤY TRUNG BÌNH BA CUỘC ── */
+  const goiTot = [
+    {boiAi: 'chị Hoa', phutKhach: 24, phutGITA: 6},
+    {boiAi: 'chị Hoa', phutKhach: 32, phutGITA: 8},
+    {boiAi: 'chị Hoa', phutKhach: 40, phutGITA: 10}
+  ];
+  /* Trung bình ba cuộc này là 81,7% — trên ngưỡng. Cuộc thứ ba mới
+     là 55%. Lấy trung bình thì nó lọt. */
+  const goiLech = [
+    {boiAi: 'chị Hoa', phutKhach: 38, phutGITA: 2},
+    {boiAi: 'chị Hoa', phutKhach: 38, phutGITA: 2},
+    {boiAi: 'chị Hoa', phutKhach: 22, phutGITA: 18}
+  ];
+  const c3Tot = mCN.chamCua3(goiTot, 'tan');
+  const c3Lech = mCN.chamCua3(goiLech, 'tan');
+  const tbLech = goiLech.reduce((s, g) => s + g.phutKhach / (g.phutKhach + g.phutGITA), 0) / 3;
+  bao(c3Tot.dat === true && c3Lech.dat === false && tbLech >= 0.8 &&
+      c3Lech.cham.filter(c => !c.dat).map(c => c.goi).join() === '3',
+    'CỬA 3 ĐO TỪNG CUỘC — ba cuộc trung bình ' + Math.round(tbLech*100) + '% vẫn TRƯỢT vì cuộc thứ ba dưới ngưỡng',
+    'thứ cửa này đo là một THÓI QUEN, và một thói quen thì phải đúng ở cả ba lần; ' +
+    'lấy trung bình thì một cuộc khách nói gần hết gánh được hai cuộc người GITA nói gần hết');
+
+  const c3Tu = mCN.chamCua3(goiTot.map(g => ({...g, boiAi: 'tan'})), 'tan');
+  bao(c3Tu.ok === false && c3Tu.code === 'TUKHAI',
+    'NGƯỜI KÈM KHÔNG ĐƯỢC LÀ CHÍNH ỨNG VIÊN',
+    'một dòng tự khai mình đã được kèm thì cửa thứ ba chỉ còn là một ô tích');
+
+  /* Người kèm khai HAI CON SỐ PHÚT, không khai một tỷ lệ. */
+  const c3TyLe = mCN.chamCua3(goiTot.map(g => ({boiAi: g.boiAi, tyKhach: 0.9})), 'tan');
+  bao(c3TyLe.ok === false && c3TyLe.code === 'THIEUPHUT',
+    'GÕ THẲNG MỘT TỶ LỆ THÌ KHÔNG NHẬN — người kèm khai HAI QUÃNG THỜI GIAN',
+    'một tỷ lệ gõ thẳng vào là một lời phán, hai quãng thời gian thì quan sát ' +
+    'được, và phép chia để máy làm');
+
+  /* ── GHI CỬA: MÁY CHẤM LẠI, KHÔNG NHẬN Ô "ĐÃ ĐẠT" ── */
+  const khaiSuong = await goi({fn:'ghiCua', token:tkSA, u:'superadmin@gita365.vn',
+    maNguoi:'tan', cua:'C1', dat:true, dung:['TH01']});
+  bao(!khaiSuong.than.ok && khaiSuong.than.code === 'CHUADAT',
+    'GHI CỬA THÌ MÁY CHẤM LẠI — một ô "đã đạt" do người gọi truyền vào không mở được cửa nào',
+    'một cái cờ do người gọi truyền vào là một lời khai, và lời khai bật được mà ' +
+    'không làm gì cả');
+
+  /* ── CỔNG · CHẠM KHÁCH MỘT MÌNH ── */
+  await goi({fn:'lapSongSinh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-CN', ngayThamGia:new Date(Date.now()-2*86400000).toISOString(),
+    tenCon:'Na'});
+  const CC6 = {canCu:'đèn Xanh, nhịp ngày 2', aiDuyet:'chị Hoa'};
+
+  const chuaCua = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-CN', kieu:'wow', boiAi:'tan', noiDung:'Khen Na hôm nay', ...CC6});
+  bao(!chuaCua.than.ok && chuaCua.than.code === 'CHUAQUACUA' &&
+      chuaCua.than.thieu.join() === 'C1,C2,C3',
+    'NGƯỜI CHƯA QUA BA CỬA KHÔNG GHI ĐƯỢC MỘT LƯỢT CHẠM — đây là cái răng của cả Phân hệ 6',
+    'còn thiếu ' + chuaCua.than.thieu.join(' · ') + ' · cổng nằm ở chỗ lượt chạm ' +
+    'được GHI chứ không ở màn hình: đặt ở màn hình thì nó là một lời nhắc, người ' +
+    'ta đọc, thấy hợp lý, rồi vẫn gọi vì hôm nay thiếu người');
+
+  /* Kèm bằng một người cũng chưa qua cửa là nhân đôi chỗ hở. */
+  const kemHong = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-CN', kieu:'wow', boiAi:'tan', nguoiKem:'minh',
+    noiDung:'Khen Na hôm nay', ...CC6});
+  bao(!kemHong.than.ok && kemHong.than.code === 'KEMCHUADU',
+    'KÈM BẰNG MỘT NGƯỜI CHƯA QUA CỬA CŨNG BỊ CHẶN',
+    'kèm bằng một người chưa qua cửa là nhân đôi chỗ hở chứ không bịt nó');
+
+  /* ── KHAI HỘ CỬA CŨ · CHỈ R01–R02, VÀ PHẢI CÓ CĂN CỨ ── */
+  const khaiSaiVai = await goi({fn:'lapBaCua', token:tkGD, u:'giamdoc@gita365.vn',
+    maNguoi:'chị Hoa', cua:'C1', canCu:'đã dẫn hơn hai trăm ca từ 2023'});
+  const khaiKhongCanCu = await goi({fn:'lapBaCua', token:tkSA, u:'superadmin@gita365.vn',
+    maNguoi:'chị Hoa', cua:'C1'});
+  bao(!khaiSaiVai.than.ok && khaiSaiVai.than.code === 'NOPERM' &&
+      !khaiKhongCanCu.than.ok && khaiKhongCanCu.than.code === 'THIEUCANCU',
+    'KHAI HỘ CỬA CŨ: CHỈ R01–R02, VÀ PHẢI VIẾT CĂN CỨ',
+    'khai hộ là nói thay cho một phép đo chưa từng chạy, nên nó phải có một cái ' +
+    'tên chịu trách nhiệm và một câu nói vì sao');
+
+  /* Khai đủ ba cửa cho hai người mà khối Phân hệ 4 sẽ dùng. Đây chính
+     là đường cho người cũ — và dòng mang nguồn khaiCu, đọc ra được. */
+  for (const ai of ['chị Hoa', 'superadmin@gita365.vn', 'anh Quang'])
+    for (const c of ['C1', 'C2', 'C3'])
+      await goi({fn:'lapBaCua', token:tkSA, u:'superadmin@gita365.vn',
+        maNguoi:ai, cua:c, canCu:'đã làm nghề từ trước khi có cổng ba cửa'});
+
+  const doc = await goi({fn:'docBaCua', token:tkSA, u:'superadmin@gita365.vn',
+    maNguoi:'chị Hoa'});
+  bao(doc.than.du === true && doc.than.soKhaiCu === 3 &&
+      doc.than.vi.indexOf('LỜI KHAI') >= 0,
+    'SỔ BA CỬA NÊU RIÊNG PHẦN KHAI HỘ — một người được khai hộ không nằm chung rổ với một người đã làm đủ ba bài',
+    'đủ ba cửa, nhưng cả ba đều mang nguồn khaiCu · gộp thành một con số "đã đủ" ' +
+    'thì sau vài tháng cả bảng trông như đã đo hết');
+
+  const quaDuoc = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-CN', kieu:'wow', boiAi:'chị Hoa', noiDung:'Khen Na hôm nay tự soạn sách',
+    ...CC6});
+  const quaKem = await goi({fn:'ghiCham', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-CN', kieu:'wow', boiAi:'tan', nguoiKem:'chị Hoa',
+    noiDung:'Khen Na hôm nay tự dọn bàn', ...CC6});
+  bao(quaDuoc.than.ok === true && quaKem.than.ok === true,
+    'ĐỦ BA CỬA THÌ CHẠM MỘT MÌNH ĐƯỢC; CHƯA ĐỦ THÌ ĐI KÈM MỘT NGƯỜI ĐÃ ĐỦ',
+    'đường mở duy nhất là CÓ NGƯỜI KÈM · thiếu người là lý do hay gặp nhất, nên ' +
+    'nếu nó được tính là ngoại lệ thì nó thành lối đi chính');
+
+  /* ── BÀI TUẦN · BẢN SAI PHẢI THẬT SỰ SAI ── */
+  const MAU = 'Em nghe chị kể rồi. Chị đang mệt và lo. Nhiều nhà cũng gặp đúng chỗ ' +
+    'này. Tối nay chị thử ngồi cạnh con mười phút. Mấy hôm nữa em nhắn lại hỏi chị nhé.';
+  const SAI = 'Bên em cam kết con sẽ khá lên, đây là phương pháp tốt nhất và duy ' +
+    'nhất hiện nay, bé nhà mình chắc chắn đạt kết quả nếu chị theo đủ.';
+  const caTot = n => ({ma:'CA'+n, chuyen:'Một nhà có con lớp ba, mẹ nhắn lúc khuya vì con không chịu ngồi học.',
+    mau:MAU, sai:SAI, dieuPham:['HP01','HP10']});
+  const thi10 = Array.from({length:10}, (_, i) => ({hoi:'Câu '+(i+1), dap:'Đáp án'}));
+
+  const tuanTot = mCN.soatTuan({ca:[1,2,3,4,5].map(caTot), thi:thi10});
+  const tuanSaiKhongSai = mCN.soatTuan({
+    ca:[1,2,3,4,5].map(n => ({...caTot(n), sai:MAU})), thi:thi10});
+  bao(tuanTot.dat === true && tuanSaiKhongSai.dat === false &&
+      tuanSaiKhongSai.loi.every(l => l.ma === 'SAIKHONGSAI') &&
+      tuanSaiKhongSai.loi.length === 5,
+    'BÀI TUẦN: BẢN SAI PHẢI THẬT SỰ ĐỎ HÀNG RÀO — một bản sai được chấm sạch thì nó không sai',
+    'nó chỉ là một cách nói khác, và đội ngũ đọc xong sẽ học rằng cái sai là ' +
+    'chuyện cảm tính · hai phép đo ngược chiều trên cùng một bộ dò: bản mẫu phải ' +
+    'sạch, bản sai phải đỏ');
+
+  const tuanHong = mCN.soatTuan({ca:[
+    {...caTot(1), chuyen:'Chị Nguyễn Thị Lan nhắn cho em lúc khuya.'},
+    {...caTot(2), dieuPham:['HP14']},
+    {...caTot(3), dieuPham:[]},
+    {...caTot(4), mau:SAI},
+    caTot(5)
+  ], thi:thi10.slice(0, 9)});
+  const maHong = tuanHong.loi.map(l => l.ma).sort().join(' ');
+  bao(maHong === 'CATHAT DIEULA MAUKHONGDAT SOTHI THIEUDIEU',
+    'BÀI TUẦN BẮT ĐỦ NĂM LỚP HỎNG — ca chưa ẩn danh · mã điều không có thật · không gọi tên điều · bản mẫu phạm hàng rào · thiếu câu thi',
+    maHong + ' · một bản mẫu phạm hàng rào dạy đúng cái đang bị cấm, và nó dạy ' +
+    'mạnh hơn mọi lời dặn vì nó được gắn nhãn "mẫu"');
+}
+
 /* ══════════════ PHÂN HỆ 4 · VẬN HÀNH & CHĂM SÓC ══════════════
 
    Cả phân hệ có giá trị ở đúng một dòng của bảng đèn: đèn Đỏ, NGƯỜI

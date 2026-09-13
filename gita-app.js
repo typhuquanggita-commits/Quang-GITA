@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 106 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 107 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 137 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 138 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.68',
+  version: '9.99.69',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -948,6 +948,7 @@ G.NAV = [
     {v:'noi-dung-tiep-thi', t:'Nội dung & tiếp thị', h:'Bảy tầng nhận thức — không khai tầng thì không xuất bản · một gốc ra bảy nhánh · bộ lọc quảng cáo bảy mục, bốn mục máy đo ba mục người khai', ic:'search', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'van-hanh-cham-soc', t:'Vận hành & chăm sóc', h:'Hồ sơ song sinh 23 trường · đèn ba màu tính lúc đọc · nhịp chạm 365 ngày, vùng tử thần ngày 8–12 · sổ dấu vết năm cột, đèn Đỏ phải GỌI', ic:'clock', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'tai-chinh-ceo', t:'Bảy con số CEO', h:'Bảy con số phải thấy mỗi tuần, chia BA ngăn theo nguồn · số tháng sống được tính trên tiền CỦA HỌC VIỆN · bốn luật tài chính · ba kịch bản viết trước', ic:'star', star:1, perm:'fin_view', capMo:'chung'},
+    {v:'con-nguoi', t:'Con người · Ba cửa', h:'Ba cửa của một người mới — Hiến pháp 13/13 · giọng qua hàng rào 10 điểm · ba cuộc gọi có người kèm. Chưa đủ ba cửa thì KHÔNG chạm khách một mình, và cổng nằm ở chỗ ghi lượt chạm chứ không ở màn hình', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
@@ -1405,6 +1406,7 @@ G.ITEM_EN = {
   'noi-dung-tiep-thi':['Content & Marketing','seven awareness tiers — content without a declared tier cannot be published · one source, seven branches · seven-item ad filter, four machine-checked and three human-attested'],
   'van-hanh-cham-soc':['Operations & Care','23-field family twin profile · three-colour signal computed at read · 365-day care rhythm with the day 8-12 death zone · five-column trace log; a red light must be a phone call'],
   'tai-chinh-ceo':['Seven CEO Numbers','the seven weekly numbers split into THREE panes by source · runway computed on the Academy own funds, not gross cash · four finance laws · three scenarios written in advance'],
+  'con-nguoi':['People · Three Gates','the three gates a new team member passes — 13/13 on the Constitution · voice scored by the 10-point guardrail · three real calls with a mentor. Until all three are cleared, nobody touches a customer alone, and the gate sits where a touch is logged, not on a screen'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
@@ -3697,6 +3699,9 @@ G.THUOC_CAP_PHEP = [
   'VH_TRUONG23','VH_TRUONG_LUAT','VH_DEN3','VH_DEN_LUAT','VH_NHIP','VH_NHIP_LUAT','VH_SO5','VH_SO_LUAT','VH_CHOCHU',
   'TC_BAY7','TC_BAY_LUAT','TC_LUAT4','TC_KICHBAN','TC_KICHBAN_LUAT','TC_CHOCHU',
   'TU_MUCTIEU','TU_MUCTIEU_LUAT','TU_QUYDOI','TU_RANGBUOC','TU_CHIPHI_KHUNG','TU_CHIPHI_O','TU_DA_VA','TU_KIEUGIA','TU_CHOCHU',
+  /* v9.99.69 — Phân hệ 6 */
+  'CN_CUA','CN_CUA_LUAT','CN_NGUON','CN_DONGCHUAN','CN_C1_TH','CN_C2_KHUNG',
+  'CN_TUAN','CN_TUAN_LUAT','CN_CHAN','CN_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
   'DOKHO_TUYEN','DOKHO_THEM','DOKHO_KHOA','DOKHO_CAM','DOKHO_LUAT',
   'VANHANH','CHUYENDICH','CHANDUNG','LOTRINH','FAMILIES','NHA_TOI','TEAM','CUHICH','NGHILE','SUKIEN',
@@ -40773,6 +40778,190 @@ G.VIEWS = G.VIEWS || {};
     return o + nganKb();
   };
 
+})();
+
+})();
+
+/* ═════════ src/con-nguoi.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÀN CON NGƯỜI · BA CỬA  (Phân hệ 6 của Bộ não)
+
+   ══ MÀN NÀY ĐẶT CÂU CHẶN LÊN TRƯỚC ══
+
+   Ngăn đầu mở bằng đúng một câu: chưa qua đủ ba cửa thì không chạm
+   khách một mình. Xếp ba cửa trước rồi mới nói câu ấy ở cuối thì người
+   đọc lướt qua bảng, thấy ba việc phải làm, và không thấy cái hậu quả
+   — mà cái hậu quả mới là thứ làm cho ba việc kia có nghĩa.
+
+   ══ BỐN NGĂN ══
+
+     cửa      — ba cửa, và năm đường chặn
+     đồng chuẩn — vì sao MỘT bộ đề cho mọi vai
+     mười ba  — mười ba tình huống thử, mỗi điều đúng một
+     bài tuần — bốn phần, và chỗ dễ mục nhất
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  var NGAN = [
+    {ma: 'cua',  ten: 'Ba cửa',      ic: 'shield'},
+    {ma: 'dong', ten: 'Đồng chuẩn',  ic: 'users'},
+    {ma: 'th',   ten: '13 tình huống', ic: 'book'},
+    {ma: 'tuan', ten: 'Bài tuần',    ic: 'clock'}
+  ];
+
+  var TEN_CHAM = {
+    may: 'Máy chấm xong là xong',
+    mayVaNguoi: 'Máy chấm được PHẦN LỚN — nhưng KHÔNG kết luận được',
+    nguoi: 'Máy không chấm được chút nào'
+  };
+  var MAU_CHAM = {may: 'ok', mayVaNguoi: 'warn', nguoi: 'bad'};
+
+  G.cngNgan = G.cngNgan || 'cua';
+
+  function veLai() {
+    if (!G.S || G.S.view !== 'con-nguoi') return;
+    if (typeof document === 'undefined' || !document.getElementById('main')) return;
+    G.render && G.render();
+  }
+  G.cngMoNgan = function (ma) { G.cngNgan = ma; veLai(); };
+
+  function thanhNgan() {
+    return '<div class="row" style="gap:8px;flex-wrap:wrap;margin-bottom:18px">' +
+      NGAN.map(function (n) {
+        var on = G.cngNgan === n.ma;
+        return '<button class="btn' + (on ? ' primary' : '') + '" ' +
+          'onclick="G.cngMoNgan(\'' + n.ma + '\')" style="gap:7px">' +
+          ic(n.ic) + h(n.ten) + '</button>';
+      }).join('') + '</div>';
+  }
+
+  /* ═══════════ NGĂN 1 · BA CỬA ═══════════ */
+  function nganCua() {
+    var l = G.CN_CUA_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--bad)">' +
+      '<b>' + h(l.khongMotMinh || '') + '</b>' +
+      '<p class="sm mt">' + h(l.viCoRang || '') + '</p>' +
+      '<p class="sm mt">' + h(l.thieuNguoiKhongPhaiNgoaiLe || '') + '</p></div>';
+
+    o += (G.CN_CUA || []).map(function (c) {
+      return '<div class="card mt" style="border-left:3px solid ' + h(c.c) + '">' +
+        '<b>' + h(c.ten) + '</b>' +
+        '<p class="sm mt"><b>Nội dung:</b> ' + h(c.noiDung) + '</p>' +
+        '<p class="sm mt"><b>Đạt là:</b> ' + h(c.datLa) + '</p>' +
+        '<p class="sm mt" style="color:var(--' + (MAU_CHAM[c.aiCham] || 'line') + ')">' +
+        '<b>Ai kết luận:</b> ' + h(TEN_CHAM[c.aiCham] || c.aiCham) + '</p>' +
+        (c.troVao ? '<p class="sm mt"><b>Trỏ vào kho:</b> <code>' +
+          h(c.troVao) + '</code> — không dựng lại</p>' : '') +
+        '<p class="sm muted mt">' + h(c.y) + '</p></div>';
+    }).join('');
+
+    o += U.sec('Hai nguồn của một dòng ba cửa',
+      'Một dòng đo được và một dòng khai ra không được nằm cùng cột, cùng kiểu chữ');
+    o += U.tbl(['Nguồn', 'Là gì', 'Vì sao'],
+      (G.CN_NGUON || []).map(function (n) {
+        return ['<b class="sm">' + h(n.ten) + '</b>',
+          '<span class="sm">' + h(n.laGi) + '</span>',
+          '<span class="sm">' + h(n.y) + '</span>'];
+      }));
+
+    o += '<div class="card mt2" style="border-left:3px solid var(--warn)">' +
+      '<b class="sm">Bật cổng là chặn cả người cũ</b>' +
+      '<p class="sm mt">' + h(l.batDauLaChanHet || '') + '</p></div>';
+
+    o += U.sec('Năm đường chặn', 'Mỗi mã kèm một câu vì sao — mã không nói lý do ' +
+      'thì người bị chặn đi tìm đường vòng chứ không đi sửa');
+    o += U.tbl(['Mã', 'Ở cửa', 'Khi nào', 'Vì sao'],
+      (G.CN_CHAN || []).map(function (x) {
+        return ['<b class="sm">' + h(x.ma) + '</b>',
+          '<code class="sm">' + h(x.o) + '</code>',
+          '<span class="sm">' + h(x.khi) + '</span>',
+          '<span class="sm">' + h(x.vi) + '</span>'];
+      }));
+    return o;
+  }
+
+  /* ═══════════ NGĂN 2 · ĐỒNG CHUẨN ═══════════ */
+  function nganDong() {
+    var d = G.CN_DONGCHUAN || {};
+    return '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>' + h(d.cot || '') + '</b>' +
+      '<p class="sm mt">' + h(d.viMotBoDe || '') + '</p></div>' +
+      '<div class="card mt"><b class="sm">Khác bộ sát hạch nghề thế nào</b>' +
+      '<p class="sm mt">' + h(d.khacSatHach || '') + '</p></div>' +
+      '<div class="card mt"><b class="sm">Câu này đã quyết một việc rồi</b>' +
+      '<p class="sm mt">' + h(d.daQuyetODau || '') + '</p></div>';
+  }
+
+  /* ═══════════ NGĂN 3 · MƯỜI BA TÌNH HUỐNG ═══════════ */
+  function nganTH() {
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b class="sm">Mỗi điều đúng MỘT tình huống</b>' +
+      '<p class="sm mt">Thiếu một điều thì bài thi vẫn xưng là 13/13 trong khi nó ' +
+      'chỉ thử mười hai điều — và chỗ thiếu không lộ ra ở đâu cả. Bộ kiểm đối ' +
+      'chiếu ô <code>dieu</code> của từng tình huống với Hiến pháp.</p></div>';
+
+    o += (G.CN_C1_TH || []).map(function (t) {
+      return '<div class="card mt">' +
+        '<b class="sm">' + h(t.ma) + ' · ' + h(t.dieu) + '</b>' +
+        '<p class="sm mt">' + h(t.tinhHuong) + '</p>' +
+        '<p class="sm mt" style="color:var(--ok)"><b>Đúng:</b> ' + h(t.dungLa) + '</p>' +
+        '<p class="sm mt" style="color:var(--bad)"><b>Hay sai thành:</b> ' +
+        h(t.saiThuong) + '</p></div>';
+    }).join('');
+    return o;
+  }
+
+  /* ═══════════ NGĂN 4 · BÀI TUẦN ═══════════ */
+  function nganTuan() {
+    var l = G.CN_TUAN_LUAT || {};
+    var o = '<div class="card" style="border-left:3px solid var(--bad)">' +
+      '<b>' + h(l.banSaiPhaiThatSuSai || '') + '</b>' +
+      '<p class="sm mt">' + h(l.banMauPhaiSach || '') + '</p></div>';
+
+    o += U.tbl(['Phần', 'Bao nhiêu', 'Máy canh gì', 'Vì sao'],
+      (G.CN_TUAN || []).map(function (t) {
+        return ['<b class="sm">' + h(t.ten) + '</b>',
+          '<span class="sm">' + h(String(t.soLuong)) + '</span>',
+          '<span class="sm">' + h(t.mayCanhGi) + '</span>',
+          '<span class="sm">' + h(t.y) + '</span>'];
+      }));
+
+    o += '<div class="card mt2"><b class="sm">Ba chỗ còn lại</b>' +
+      '<p class="sm mt">' + h(l.dieuPhaiCoThat || '') + '</p>' +
+      '<p class="sm mt">' + h(l.mayKhongChonCa || '') + '</p>' +
+      '<p class="sm muted mt">' + h(l.baMuoiPhut || '') + '</p></div>';
+    return o;
+  }
+
+  G.VIEWS['con-nguoi'] = function () {
+    var o = '<div class="card" style="border-left:3px solid var(--gita)">' +
+      '<b>PHÂN HỆ 6 — CON NGƯỜI</b>' +
+      '<p class="sm muted mt">Bộ não này phục vụ <b>cả máy lẫn người</b>. Phần ' +
+      'này không dựng lại bộ sát hạch nghề đã có, cũng không chép lại Hiến pháp — ' +
+      'nó dựng đúng một thứ chưa có: <b>một cái cổng đứng trước lượt chạm khách ' +
+      'đầu tiên</b>.</p></div>';
+
+    /* Kho nghề nạp SAU khi đăng nhập, và vai không có gói nghề thì
+       không bao giờ nạp. Chặn ở ĐÂY, một chỗ, trước cả thanh ngăn —
+       một cái khung rỗng đọc ra là "chỗ này chưa làm xong", không đọc
+       ra là "vai của bạn không mở được". */
+    if (!(G.CN_CUA || []).length)
+      return o + U.empty('Ba cửa chưa mở',
+        'Kho nghề chưa nạp. Đăng nhập bằng vai có quyền nghề.', true);
+
+    o += thanhNgan();
+    if (G.cngNgan === 'dong') o += nganDong();
+    else if (G.cngNgan === 'th') o += nganTH();
+    else if (G.cngNgan === 'tuan') o += nganTuan();
+    else o += nganCua();
+    return o;
+  };
 })();
 
 })();

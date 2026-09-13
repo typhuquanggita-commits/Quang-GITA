@@ -131,6 +131,7 @@
     "src/noi-dung-tiep-thi.js",
     "src/van-hanh-cham-soc.js",
     "src/tai-chinh-ceo.js",
+    "src/con-nguoi.js",
     "src/cho-chu-he.js",
     "src/bien-soan-noi-dung.js",
     "src/cua-truoc.js",
