@@ -99,9 +99,33 @@ const MAT_KHAU_TOI_THIEU = 12;
    bản sao lưu thì được mang đi chỗ khác. */
 const PHAN = [
   { ten: 'kho/khoa.json', batBuoc: true,
-    vi: 'BỘ KHOÁ. Mất nó thì 8 tệp .enc trong git thành rác không mở được.' },
-  { ten: 'kho-goc', thuMuc: true, duoi: '.js', batBuoc: true,
-    vi: 'Nội dung gốc kèm 7.201 dòng chú giải — phần .enc KHÔNG giữ.' }
+    vi: 'BỘ KHOÁ. Mất nó thì 8 tệp .enc trong git thành rác không mở được, ' +
+      'và 201 bản lưu trong lịch sử git cũng không mở được nốt.' },
+
+  { ten: 'kho-goc', thuMuc: true, duoi: ['.js'], batBuoc: true,
+    vi: 'Nội dung gốc kèm 7.201 dòng chú giải — phần .enc KHÔNG giữ.' },
+
+  /* ── HAI PHẦN THÊM Ở 9.99.79, TÌM RA BẰNG CÁCH ĐẾM NGƯỢC ──
+
+     Cách tìm: liệt kê mọi tệp trong thư mục làm việc, trừ đi thứ có
+     trong git, trừ đi thứ đã có trong danh sách này. Phần còn lại là
+     thứ mất là mất hẳn mà chưa ai biết.
+
+     Ra 977 MB, và gần hết là thứ DỰNG LẠI ĐƯỢC — `desktop/dist/`,
+     `ban-xem-thu.html`, 157 bản giới thiệu, 19 ảnh chụp màn. Đúng hai
+     chỗ không dựng lại được, và cả hai đều nhỏ: */
+
+  { ten: 'giay-phep', thuMuc: true, batBuoc: false,
+    vi: 'SỔ GIẤY PHÉP ĐÃ CẤP — số giấy phép · cấp cho ai · cấp lúc nào · ' +
+      'dấu truy nguồn. Sinh lại được một giấy phép MỚI, nhưng không sinh lại ' +
+      'được BẢN GHI đã cấp: ngày cấp và dấu truy nguồn của tờ cũ thì đã đi ' +
+      'theo tờ ấy ra ngoài rồi. Và GITA_KHOA_KHO.txt ở đây là bản khoá thứ hai.' },
+
+  { ten: 'tools/ban-ve.json', batBuoc: false,
+    vi: 'BẢN ĐỌC BỘ 13 TỜ A0. Chú giải của .gitignore nói "dựng lại bằng ' +
+      'doc-ban-ve.py <PDF>" — nhưng tệp PDF ấy KHÔNG nằm trong kho. Dựng lại ' +
+      'được chỉ khi chủ hệ còn giữ PDF gốc, nên trên thực tế 48 KB này cũng ' +
+      'là thứ mất là mất hẳn.' }
 ];
 
 /* ═══════════════ ĐỌC MẬT KHẨU ═══════════════
@@ -170,20 +194,39 @@ function soatChoGhi(dich) {
 function gom() {
   const tep = {};
   const thieu = [];
+  const vang = [];
 
   for (const p of PHAN) {
     if (p.thuMuc) {
       const thu = path.join(GOC, p.ten);
-      if (!fs.existsSync(thu)) { if (p.batBuoc) thieu.push(p.ten + '/'); continue; }
-      const ds = fs.readdirSync(thu).filter(t => t.endsWith(p.duoi)).sort();
-      if (!ds.length && p.batBuoc) thieu.push(p.ten + '/ (rỗng)');
+      if (!fs.existsSync(thu)) {
+        (p.batBuoc ? thieu : vang).push(p.ten + '/'); continue;
+      }
+      /* `duoi` vắng mặt nghĩa là LẤY HẾT — `giay-phep/` có .json · .txt ·
+         .gs · .md lẫn nhau, và lọc theo một đuôi thì ba loại kia im lặng
+         rơi ra khỏi bản sao lưu. Vắng mặt là không áp dụng, đúng luật ô
+         của kho. */
+      const duoi = p.duoi;
+      const ds = fs.readdirSync(thu, { withFileTypes: true })
+        .filter(e => e.isFile())
+        .map(e => e.name)
+        .filter(t => !duoi || duoi.some(x => t.endsWith(x)))
+        .sort();
+      if (!ds.length) { (p.batBuoc ? thieu : vang).push(p.ten + '/ (rỗng)'); continue; }
       for (const t of ds) tep[p.ten + '/' + t] = fs.readFileSync(path.join(thu, t), 'utf8');
     } else {
       const f = path.join(GOC, p.ten);
-      if (!fs.existsSync(f)) { if (p.batBuoc) thieu.push(p.ten); continue; }
+      if (!fs.existsSync(f)) { (p.batBuoc ? thieu : vang).push(p.ten); continue; }
       tep[p.ten] = fs.readFileSync(f, 'utf8');
     }
   }
+
+  /* ── VẮNG MẶT PHẢI NÓI RA ──
+     Phần KHÔNG bắt buộc vắng mặt thì vẫn sao lưu được, nhưng im lặng bỏ
+     qua nó là dựng đúng cái bẫy tệp này sinh ra để chống: một bản sao
+     lưu thiếu trông y hệt một bản đủ, và người ta chỉ biết nó thiếu vào
+     đúng ngày phải dùng nó. */
+  gom.vang = vang;
 
   /* Thiếu một phần BẮT BUỘC thì DỪNG, không ghi một bản sao lưu thiếu.
      Một bản sao lưu thiếu trông y hệt một bản đủ — cùng tên, cùng chỗ,
@@ -305,6 +348,7 @@ function chay() {
     'Cỡ gốc   : ' + Math.round(soByte / 1024) + ' KB',
     'Cỡ tệp   : ' + Math.round(doc.length / 1024) + ' KB',
     'SHA-256  : ' + bam,
+    ((gom.vang || []).length ? 'VẮNG MẶT : ' + gom.vang.join(' · ') : 'Đầy đủ   : có cả bốn phần'),
     '',
     'Biên nhận này KHÔNG chứa mật khẩu, khoá, hay nội dung nào.',
     'Kiểm tệp còn nguyên: sha256sum ' + ten,
@@ -321,7 +365,15 @@ function chay() {
     Math.round(doc.length / 1024) + ' KB đã nén và mã hoá');
   console.log('    sha256  : ' + bam.slice(0, 32) + '…');
   console.log('    mật khẩu: đọc từ ' + nguon + ' · AES-256-GCM · scrypt N=' + SCRYPT.N);
-  console.log('    tự kiểm : giải mã lại từ đĩa, ' + soTep + '/' + soTep + ' tệp khớp từng byte\n');
+  console.log('    tự kiểm : giải mã lại từ đĩa, ' + soTep + '/' + soTep + ' tệp khớp từng byte');
+  if ((gom.vang || []).length) {
+    console.log('');
+    console.log('  ⚠ VẮNG MẶT, ĐÃ SAO LƯU MÀ KHÔNG CÓ: ' + gom.vang.join(' · '));
+    console.log('    Không chặn — hai phần ấy không bắt buộc. Nhưng nói ra, vì một bản');
+    console.log('    sao lưu thiếu trông y hệt một bản đủ, và người ta chỉ biết nó thiếu');
+    console.log('    vào đúng ngày phải dùng nó.');
+  }
+  console.log('');
   console.log('  CÒN MỘT VIỆC NỮA, và nó KHÔNG thay thế được bản sao lưu này:\n');
   console.log('    cd may-chu && npx wrangler secret put GITA_KHOA_KHO\n');
   console.log('  Mất mật khẩu thì tệp vừa ghi là rác. Hai đường độc lập thì mới an toàn:');

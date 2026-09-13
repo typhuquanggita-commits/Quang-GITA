@@ -15760,8 +15760,74 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
        mở ra vẫn có nội dung. Người ta chỉ biết nó thiếu vào đúng ngày
        phải dùng nó. */
     const tenPhan = (SL.PHAN || []).map(p => p.ten);
-    s.phuDu = tenPhan.indexOf('kho/khoa.json') >= 0 && tenPhan.indexOf('kho-goc') >= 0 &&
-      (SL.PHAN || []).every(p => p.batBuoc && p.vi);
+    /* Bốn phần, tìm ra bằng cách ĐẾM NGƯỢC ở 9.99.79: liệt kê mọi tệp
+       trong thư mục làm việc, trừ thứ có trong git, trừ thứ đã khai ở
+       đây — phần còn lại là thứ mất là mất hẳn mà chưa ai biết.
+
+       `giay-phep/` và `tools/ban-ve.json` KHÔNG bắt buộc, vì một bản
+       sao chép mới của kho thì chưa có chúng. Nhưng vắng mặt phải NÓI
+       RA — im lặng bỏ qua là dựng đúng cái bẫy bộ này sinh ra để chống. */
+    const PHAI_CO = ['kho/khoa.json', 'kho-goc', 'giay-phep', 'tools/ban-ve.json'];
+    const BAT_BUOC = ['kho/khoa.json', 'kho-goc'];
+    s.phuDu = PHAI_CO.every(t => tenPhan.indexOf(t) >= 0) &&
+      (SL.PHAN || []).every(p => p.vi) &&
+      BAT_BUOC.every(t => (SL.PHAN || []).some(p => p.ten === t && p.batBuoc === true));
+    /* Và phần vắng mặt phải được NÊU RA, không nuốt đi. */
+    s.noiVangMat = /gom\.vang/.test(ngSL) && /VẮNG MẶT/.test(ngSL);
+
+    /* ── F · KHO LƯU TRỮ CÒN MỞ ĐƯỢC BAO NHIÊU PHẦN ──
+       Phép đo đắt nhất của mục này, và đáng nhất.
+
+       git CỘNG khoá đã là một kho lưu trữ có phiên bản — 201 bản lưu,
+       nằm sẵn trên GitHub — vì `ma-hoa-kho.js` giữ nguyên khoá cũ mỗi
+       lượt đóng gói.
+
+       Ngày ai đó chạy `--doi-khoa`, cả kho lưu trữ ấy thành chuỗi byte
+       TRONG IM LẶNG: bản mới vẫn mở được, mọi bộ kiểm khác vẫn xanh, và
+       không ai biết cho tới lúc cần lấy lại một thứ đã mất. Đó đúng là
+       hình dạng của một mất mát không ai thấy.
+
+       ĐO BẰNG TỶ LỆ, KHÔNG ĐO MỘT BẢN CỐ ĐỊNH. Bản đầu của phép đo này
+       đòi bản CŨ NHẤT phải mở được, và nó ĐỎ NGAY ở kho lành: bốn bản
+       ngày 28/08/2026 — ba commit đầu đời và một commit nữa — dựng
+       TRƯỚC khi bộ khoá hôm nay được chốt, nên không khoá nào hiện có
+       mở được chúng. Đó không phải hỏng, đó là lịch sử.
+
+       Một phép đo bắt oan thì lần sau người ta tắt nó đi. Nên đo: LẤY
+       MẪU đều khắp lịch sử, và đòi từ 95% trở lên mở được. Một lượt đổi
+       khoá kéo con số ấy xuống gần 0 ngay lập tức. */
+    let luuCuDat = false, luuCuVi = '';
+    try {
+      const KL = require('./kho-luu.js');
+      const { moGoi } = require('./so-cho.js');
+      const khoaTh = JSON.parse(fsGoc.readFileSync(
+        pathGoc.join(__dirname, '..', 'kho', 'khoa.json'), 'utf8')).khoa;
+      const banLuu = KL.danhSachBan();
+      const GOI_TH = ['nen', 'nghe', 'tang1'];
+      const LAY = 20;
+      const buoc = Math.max(1, Math.floor(banLuu.length / LAY));
+      const mau = banLuu.filter((_, k) => k % buoc === 0);
+      let mo = 0;
+      for (const b of mau) {
+        let ok = false;
+        for (const g of GOI_TH) {
+          let buf;
+          try {
+            buf = require('child_process').execSync(
+              'git -C ' + JSON.stringify(pathGoc.join(__dirname, '..')) +
+              ' show ' + b.H + ':kho/' + g + '.enc',
+              { encoding: null, maxBuffer: 1 << 28, stdio: ['ignore', 'pipe', 'ignore'] });
+          } catch { continue; }
+          try { moGoi(khoaTh[g], buf); ok = true; break; } catch { /* thử gói sau */ }
+        }
+        if (ok) mo++;
+      }
+      const ti = Math.round(mo / mau.length * 100);
+      luuCuDat = ti >= 95;
+      luuCuVi = banLuu.length + ' bản lưu trong git · lấy mẫu ' + mau.length +
+        ' bản, mở được ' + mo + ' (' + ti + '%)';
+    } catch (e) { luuCuVi = 'KHÔNG đọc được kho lưu trữ: ' + e.message.slice(0, 80); }
+    s.luuCuMoDuoc = luuCuDat;
 
     /* ── E · VÒNG KHÔI PHỤC CHẠY THẬT ──
        Phép đo duy nhất của mục này đo HÀNH VI. Ba vế trên đọc mã nguồn
@@ -15803,14 +15869,15 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
     /* Một biểu thức, đọc hai lần. Ba lần trong kho này bao() và câu chi
        tiết là hai bản chép viết tay của cùng một biểu thức. */
     const slDat = s.chanKhoGoc && s.chanKhoa && s.chanGita && s.mkKhongArgv &&
-      s.congChoGhi && s.phuDu && s.vongKhoiPhuc;
+      s.congChoGhi && s.phuDu && s.noiVangMat && s.vongKhoiPhuc && s.luuCuMoDuoc;
 
     bao(slDat,
       'ĐƯỜNG SAO LƯU CHẠY THẬT, VÀ NÓ NÓI RA CHỖ NÓ KHÔNG CỨU ĐƯỢC. Kho mã giữ được gần hết mọi thứ; đúng HAI thứ nó không giữ, và cả hai nằm trong .gitignore một cách CỐ Ý: kho/khoa.json (682 byte, 8 khoá AES-256-GCM) và kho-goc/ (173 tệp, 57.496 dòng, trong đó 7.201 dòng chú giải). Cả hai đều đúng khi nằm ngoài git — nội dung chưa mã hoá và khoá mật không được lên một kho ai cũng nhân bản được — nhưng cái giá của quyết định ấy là chúng chỉ có MỘT bản, trên MỘT cái máy, và máy làm việc thì bị thu hồi. CLAUDE.md viết "bảy tệp .enc đã phát hành là bản lưu duy nhất của nội dung, chúng đã cứu được cả kho một lần ở bản 9.6" — câu ấy ĐÚNG, và nó đúng CHỈ KHI CÒN KHOÁ: khoá sinh bằng crypto.randomBytes(32) nên không suy ra được từ bất cứ thứ gì, và mất nó thì 8 tệp .enc trong git thành chuỗi byte không mở được, 1.131 kho đi theo, mọi giấy phép đã cấp ngừng chạy. Vế thứ hai ấy không được ghi ở đâu cho tới bản này — đúng lớp lỗi 9.99.57 đã từ chối làm dấu chìm trong bit thấp: một lớp bảo vệ không nói giới hạn thì người đọc tin nó chống được nhiều hơn thật. Và .enc KHÔNG dựng lại được kho-goc: nó gói bằng JSON.stringify nên giữ DỮ LIỆU và bỏ 7.201 dòng chú giải, đúng phần nói VÌ SAO, đúng phần đáng giá nhất — nên khoi-phuc-kho.js có hai đường và đường đi từ .enc NÓI THẲNG nó đang trả về một cái xác không có lời giải thích, thay vì báo "đã khôi phục xong". Mật khẩu KHÔNG bao giờ đi qua tham số dòng lệnh, vì ps aux đọc được tham số của mọi tiến trình đang chạy và shell còn ghi vào lịch sử — một mật khẩu đi qua đó là một mật khẩu đã lộ, chỉ là chưa ai nhặt. Cổng chặn ghi bản sao lưu vào trong kho mã CHẶN chứ không cảnh báo, vì hậu quả không sửa lại được: GitHub giữ lịch sử, đẩy nhầm một lần là phải đổi cả bộ khoá rồi cấp lại giấy phép cho toàn bộ người đang dùng. Và phép đo duy nhất đáng tin của mục này là phép đo cuối: nó CHẠY THẬT vòng mã hoá rồi giải mã rồi so từng byte, rồi đòi bộ giải mã phải ĐỎ khi sai mật khẩu và khi một byte bị sửa — một bộ giải mã chấp nhận tất cả thì nó không xác thực gì cả, và lúc ấy người ta khôi phục một kho ĐÃ HỎNG rồi phát hành nó',
       slDat
         ? 'kho-goc/ · kho/khoa.json · *.gita đều bị .gitignore chặn · mật khẩu không đi ' +
           'qua tham số dòng lệnh ở cả hai bộ · cổng chặn ghi vào kho mã nằm trước lệnh ' +
-          'throw · ' + SL.PHAN.length + ' phần bắt buộc phủ đủ hai thứ ngoài git · vòng ' +
+          'throw · ' + SL.PHAN.length + ' phần sao lưu phủ đủ bốn thứ ngoài git, vắng ' +
+          'mặt được nêu ra · ' + luuCuVi + ' · vòng ' +
           'mã hoá rồi giải mã rồi so chạy thật và ĐỎ đúng chỗ khi sai mật khẩu và khi ' +
           'một byte bị sửa'
         : [!s.chanKhoGoc ? '.gitignore KHÔNG còn chặn kho-goc/' : '',
@@ -15824,6 +15891,12 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
              'trong nhánh trongKho' : '',
            !s.phuDu ? 'DANH SÁCH PHẦN SAO LƯU KHÔNG PHỦ ĐỦ kho/khoa.json và kho-goc, ' +
              'hoặc có phần không bắt buộc — một bản sao lưu thiếu trông y hệt một bản đủ' : '',
+           !s.noiVangMat ? 'PHẦN VẮNG MẶT BỊ NUỐT ĐI, không nêu ra — một bản sao lưu ' +
+             'thiếu trông y hệt một bản đủ' : '',
+           !s.luuCuMoDuoc ? 'KHOÁ HÔM NAY KHÔNG CÒN MỞ ĐƯỢC KHO LƯU TRỮ: ' + luuCuVi +
+             ' — git cộng khoá là kho lưu trữ 201 bản, và một lượt --doi-khoa biến cả ' +
+             '201 bản thành chuỗi byte TRONG IM LẶNG: bản mới vẫn mở được, bộ kiểm vẫn ' +
+             'xanh, không ai biết cho tới lúc cần lấy lại một thứ đã mất' : '',
            !s.vongKhoiPhuc ? 'VÒNG KHÔI PHỤC HỎNG: ' + (vongSai || 'không rõ') +
              ' — đây là phép đo duy nhất chạy đúng cái sẽ chạy lúc mất dữ liệu' : ''
           ].filter(Boolean).join(' · '));

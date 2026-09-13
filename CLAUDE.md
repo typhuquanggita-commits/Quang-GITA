@@ -70,6 +70,11 @@ hành → sinh tệp nạp khoá → gộp mã → dựng bản một tệp → 
 | Kho vừa đóng đổi gì | `node tools/soi-doi-kho.js` | 3 giây |
 | **Sao lưu kho gốc + khoá** | `node tools/sao-luu.js <thư-mục-NGOÀI-kho>` | ~20 giây |
 | Khôi phục từ bản sao lưu | `node tools/khoi-phuc-kho.js <tệp.gita> [ra]` | ~15 giây |
+| **Kho lưu trữ — liệt kê bản lưu** | `node tools/kho-luu.js` | 2 giây |
+| Soi nội dung ĐÃ MẤT qua lịch sử | `node tools/kho-luu.js --mat --sau 40` | ~3 phút |
+| Khoá còn mở được bao nhiêu bản lưu | `node tools/kho-luu.js --soi` | ~4 phút |
+| Lấy một kho ở một bản cũ ra | `node tools/kho-luu.js --lay <KHO> <bản>` | 3 giây |
+| Tự tìm bản đầy nhất của một kho | `node tools/kho-luu.js --sua <KHO>` | ~3 phút |
 | **Đo rò dữ liệu theo vai** | `xvfb-run -a node tools/do-ro-ri.js` | ~3 phút |
 | Gom câu chờ chủ hệ về một tờ | `node tools/phieu-quyet.js [ra.md]` | 3 giây |
 | Đề bài thị giác → tấm PNG | `node tools/tam-ra-anh.js <đề-bài.json> <thư mục> [khổ]` | ~10 giây |
@@ -2286,6 +2291,121 @@ Gom về một hàm nhưng để nó cục bộ thì mới là gom được **m�
 - **53 câu quyết định** — luật của kho là *máy đề xuất, chủ hệ quyết*,
   và nhiều câu trong số đó là **Vùng Đỏ**. Phiếu quyết làm chúng trả lời
   được; trả lời vẫn là việc của người.
+
+---
+
+## KHO LƯU TRỮ — đọc cái đã có, và soi phần đã mất (9.99.79)
+
+### Kho lưu trữ anh cần ĐÃ TỒN TẠI, chỉ là không ai đọc được nó
+
+`ma-hoa-kho.js` **giữ nguyên khoá cũ** mỗi lượt đóng gói — đúng dòng
+*"Giữ nguyên 8 khoá cũ — giấy phép đã cấp vẫn dùng được"*. Hệ quả chưa
+ai nói ra: **mọi bản `.enc` từng đẩy đều còn mở được bằng đúng 682 byte
+ấy.**
+
+Tức là **git cộng khoá đã là một kho lưu trữ có phiên bản**, 201 bản
+lưu, nằm sẵn trên GitHub. Dựng một kho lưu trữ thứ hai ở đây là dựng bản
+thứ hai của một sự thật. Nên `tools/kho-luu.js` **không lưu gì cả** —
+nó chỉ đọc.
+
+| Cửa | Việc |
+|---|---|
+| *(không cờ)* | liệt kê 201 bản lưu |
+| `--mat` | soi nội dung đã mất qua toàn bộ lịch sử |
+| `--soi` | khoá hôm nay còn mở được bao nhiêu bản lưu |
+| `--doi <KHO>` | đời một kho: xuất hiện · lớn lên · vơi đi ở bản nào |
+| `--lay <KHO> <bản>` · `--sua <KHO>` | **đường sửa** — lấy vật liệu ra |
+
+### Con số thật là 197/201, không phải "tất cả"
+
+Lượt đo đầu của tôi lấy mẫu một danh sách xếp **ngược** thời gian, nên
+tưởng bản thứ 150 là bản cũ nhất, và tôi đã nói *"khoá mở được cả 201
+bản"*. Quét đủ thì ra **197**.
+
+Bốn bản không mở được đều ngày **28/08/2026**, dựng TRƯỚC lúc bộ khoá
+hôm nay được chốt. Đó là **lịch sử, không phải hỏng**. Nhưng phải nói
+con số thật: *một con số tròn trịa hơn sự thật thì người đọc tin kho lưu
+trữ sâu hơn thật* — cùng lớp lỗi 9.99.57 đã từ chối làm dấu chìm.
+
+**Phép đo phải đo TỶ LỆ, không đo một bản cố định.** Bản đầu của phép đo
+ở mục 94 đòi bản *cũ nhất* mở được, và nó **đỏ ngay ở kho lành**. Nay
+lấy mẫu 20 bản đều khắp lịch sử và đòi ≥95%. Một lượt `--doi-khoa` kéo
+con số ấy xuống gần 0 ngay lập tức.
+
+### `--doi-khoa` khoá lại CẢ KHO LƯU TRỮ, và lời cảnh báo của nó chỉ nói một nửa
+
+Dòng cảnh báo hiện có nói đúng phần trước mắt — *"mọi giấy phép đã cấp
+sẽ hết hiệu lực"* — và **không nói phần nặng hơn**: 197 bản lưu trong
+lịch sử git cũng khoá lại vĩnh viễn. Bản mới vẫn mở được, mọi bộ kiểm
+khác vẫn xanh, nên không ai biết cho tới lúc cần lấy lại một thứ đã mất.
+Mục 94 nay canh đúng chỗ ấy.
+
+### Phần MẤT: soi 201 bản lưu, không mất chữ nào
+
+`soi-doi-kho.js` so bản vừa đóng với **lần commit gần nhất**. Nó trả lời
+được *"lượt sửa vừa rồi có làm mất gì không"*, và **không** trả lời được
+*"có thứ gì mất ở bản 9.40 rồi nằm im tới nay không"* — vì từ lượt sau
+nó là hiện trạng. **Một mất mát đi qua được một lượt so sánh thì nó đi
+qua được mọi lượt sau.**
+
+Kết quả quét 1.119 kho qua 35 bản lưu: **3 sổ vơi đi, và cả ba đúng
+luật.**
+
+```
+TV_CHOCHU    2 → 1 + 1 ở TV_DACHOT  = 2  ✓ khớp đỉnh
+BV_CHOCHU    3 → 2 + 1 ở BV_DACHOT  = 3  ✓ khớp đỉnh
+BLV_CHOCHU   5 → 3 + 2 ở BLV_DACHOT = 5  ✓ khớp đỉnh
+```
+
+Mục đã trả lời được **tiễn** sang `_DACHOT` — gỡ khỏi sổ chờ, không xoá
+(9.99.61). Bộ soi nay **trừ phần đã tiễn** trước khi báo: một phép đo
+nêu ba chỗ đúng luật là một phép đo có ba dòng nhiễu, và ba dòng nhiễu
+thì lần sau người ta lướt qua cả bảng — đúng lúc có dòng thật.
+
+**Máy KHÔNG tự vá.** Một kho cắt bớt có chủ ý trông y hệt một kho bị
+mất, và máy không phân biệt được. Máy tìm ra chỗ ngờ, đưa vật liệu tận
+tay bằng `--lay`, rồi dừng.
+
+### Phần THIẾU: đếm ngược để tìm thứ mất là mất hẳn
+
+Cách tìm: liệt kê **mọi** tệp trong thư mục làm việc, trừ thứ có trong
+git, trừ thứ đã có trong danh sách sao lưu. Phần còn lại là thứ chưa ai
+bảo vệ.
+
+Ra **977 MB**, và gần hết là thứ **dựng lại được** — `desktop/dist/`,
+`ban-xem-thu.html`, 157 bản giới thiệu, 19 ảnh chụp màn. Đúng **hai**
+chỗ không dựng lại được, và cả hai đều nhỏ:
+
+| Phần | Cỡ | Vì sao không dựng lại được |
+|---|---|---|
+| `giay-phep/` | 19 KB | sinh lại được một giấy phép **mới**, không sinh lại được **bản ghi đã cấp** — ngày cấp và dấu truy nguồn của tờ cũ đã đi theo tờ ấy ra ngoài |
+| `tools/ban-ve.json` | 48 KB | `.gitignore` nói *"dựng lại bằng `doc-ban-ve.py <PDF>`"* — **tệp PDF ấy không nằm trong kho** |
+
+Cả hai nay vào bản sao lưu: **185 tệp** thay vì 174.
+
+**Hai phần này khai `batBuoc: false`** — một bản sao chép mới của kho thì
+chưa có chúng, và chặn ở đó là chặn sai. Nhưng **vắng mặt phải NÓI RA**,
+cả trên màn lẫn trong biên nhận: im lặng bỏ qua là dựng đúng cái bẫy bộ
+sao lưu sinh ra để chống.
+
+Và `duoi` **vắng mặt nghĩa là lấy hết** — `giay-phep/` có `.json` ·
+`.txt` · `.gs` · `.md` lẫn nhau, lọc theo một đuôi thì ba loại kia im
+lặng rơi ra khỏi bản sao lưu.
+
+### Một lỗi chỉ nổ trên MÀN HÌNH THẬT
+
+```js
+function xoaTienDo() { if (process.stdout.isTTY) xoaTienDo(); }   // đệ quy vô hạn
+```
+
+Một lượt thay bằng regex nuốt luôn thân hàm. Nó **chỉ nổ khi đầu ra là
+màn hình thật**, nên mọi lượt chạy qua ống của tôi đều xanh — còn chủ hệ
+chạy tay là tràn ngăn xếp. Thử lại bằng `script -qec` để giả một màn
+hình thật mới thấy.
+
+**Lớp lỗi đáng ghi:** một công cụ có nhánh `isTTY` thì nhánh ấy **chưa
+bao giờ được chạy** trong mọi lượt thử qua ống — tức là đúng nhánh người
+dùng thật gặp là nhánh chưa ai thử.
 
 ---
 
