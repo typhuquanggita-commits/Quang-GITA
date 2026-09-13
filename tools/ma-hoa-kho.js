@@ -881,12 +881,15 @@ for (const [ten, du] of Object.entries(goi)) {
     (chu.length / ma.length).toFixed(1) + 'x)');
 }
 
+/* 0600: chỉ chủ tệp đọc được. Mặc định 0644 là mọi tài khoản trên máy
+   đọc được tệp mang TOÀN BỘ khoá của Học viện — và trên máy dựng bản
+   hay máy nhiều người thì "mọi tài khoản" không phải một người. */
 fs.writeFileSync(path.join(RA, 'khoa.json'), JSON.stringify({
   chuY: 'BỘ KHOÁ MẬT — nạp vào máy chủ cấp phép, không bao giờ đưa lên kho mã.',
   taoLuc: new Date().toISOString(),
   thuatToan: 'AES-256-GCM',
   khoa
-}, null, 2));
+}, null, 2), { mode: 0o600 });
 
 /* ─── Gói mẫu công khai: đủ để xem giao diện, không lộ kho ───
    Chỉ những phần GITA 365 vẫn nói ra ngoài khi giới thiệu: câu chuyện
