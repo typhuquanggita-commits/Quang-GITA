@@ -90,6 +90,55 @@ const CHU_NHO = 10;
     await p.reload({ waitUntil: 'networkidle' });
     await p.waitForTimeout(500);
 
+    /* ══ MÀN CHƯA ĐĂNG NHẬP — ĐO TRƯỚC, VÌ ĐÓ LÀ MÀN ĐẦU TIÊN ══
+
+       Bộ này `doLogin` ngay sau khi tải, nên suốt mười một tháng nó
+       chưa bao giờ đo cái màn mà MỌI người lạ nhìn thấy đầu tiên. Chỗ
+       mù ấy có giá thật: ở 9.99.80 một lượt đi thử bằng chân tìm ra
+       cổng vào đẩy CẢ TRANG cuộn ngang ở mọi khổ điện thoại —
+       scrollWidth 447px cố định, từ 320px tới 414px — trong khi bộ đo
+       vẫn xanh 1.584 lượt.
+
+       Ba nguyên nhân, cả ba là lớp lỗi tệp CLAUDE.md đã ghi: `.gate-top`
+       là flex `nowrap`; rãnh lưới khai `1fr` nên không co dưới
+       min-content; và một nhãn nút dài khai `white-space:nowrap`.
+
+       Màn đầu tiên là màn đáng đo nhất — nó là màn duy nhất mà người
+       chưa tin gì cả đang nhìn. */
+    {
+      const d0 = await p.evaluate(() => {
+        const W = document.documentElement.clientWidth;
+        const tran = Math.round(document.documentElement.scrollWidth - W);
+        const vuot = [];
+        document.querySelectorAll('*').forEach(e => {
+          const r = e.getBoundingClientRect();
+          if (!r.width || !r.height) return;
+          if (r.right > W + 1) {
+            const conVuot = [...e.children].some(c => {
+              const rc = c.getBoundingClientRect();
+              return rc.width && rc.right > W + 1;
+            });
+            if (!conVuot) vuot.push(e.tagName.toLowerCase() +
+              (e.className ? '.' + e.className.toString().split(' ')[0] : '') +
+              ' vượt ' + Math.round(r.right - W) + 'px');
+          }
+        });
+        return { tran, vuot: vuot.slice(0, 4),
+          coChu: (document.body.innerText || '').trim().length,
+          daDangNhap: !!(window.G.S && window.G.S.acc) };
+      });
+      /* Đếm ba phép đo này vào tổng. Chạy mà không đếm thì con số in ra
+         báo ÍT hơn thật — và một con số sai theo chiều nào cũng làm
+         người đọc tin nhầm: ở đây nó giấu đúng ba phép đo vừa thêm. */
+      soDo += 3;
+      const nhan0 = k.ten + ' · CỔNG VÀO (chưa đăng nhập)';
+      if (d0.daDangNhap) tong.tran.push(nhan0 + ' — đã đăng nhập sẵn, không đo được màn lạ');
+      if (d0.tran > 1) tong.tran.push(nhan0 + ' — trang cuộn ngang ' + d0.tran +
+        'px · ' + d0.vuot.join(' · '));
+      if (d0.coChu < 300) tong.tran.push(nhan0 + ' — chỉ ' + d0.coChu +
+        ' ký tự: người lạ mở link ra mà gần như không đọc được gì');
+    }
+
     for (const em of VAI) {
       await p.evaluate(x => window.G.doLogin(x), em);
       await p.waitForTimeout(1600);

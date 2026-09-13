@@ -143,7 +143,12 @@ G.VIEWS['danh-gia'] = function(){
     'hệ thống, chỉ không lên trang giới thiệu. Anh chị rút lại lúc nào cũng được, không cần lý do.</p>' +
     '<label class="row mt2" style="gap:9px;align-items:center;cursor:pointer">' +
     '<input type="checkbox" id="dg-congkhai"><span class="sm">Tôi đồng ý cho đăng công khai</span></label>' +
-    '<p class="tiny muted mt2">Tên hiển thị:</p>' +
+    /* Dòng này là NHÃN THẬT của ô chọn, không phải một câu mô tả: viết
+       bằng <p> thì trình đọc màn hình đọc ô chọn là "danh sách, không
+       tên" — người mù nghe thấy một ô chọn mà không biết nó chọn gì.
+       <label for> chứ không aria-label: nó còn cho chạm vào chữ là
+       nhảy vào ô, thứ người tay run cần nhất. */
+    '<label for="dg-ten" class="tiny muted mt2" style="display:block">Tên hiển thị:</label>' +
     '<select id="dg-ten" style="margin-top:5px">' +
     (G.DG_TEN || []).map(function(t, i){
       return '<option value="' + h(t.ma) + '"' + (t.ma === 'RUT' ? ' selected' : '') + '>' +

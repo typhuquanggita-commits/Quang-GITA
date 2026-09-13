@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.79',
+  version: '9.99.80',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3784,7 +3784,7 @@ G.THUOC_CAP_PHEP = [
   'HEALTH','DUYET','AUDIT','TODAY','LEVELS','DIEM','HUYHIEU','QUA','HOAHONG','DANDAT','BRAND',
   'RASOAT','TAMNHIN100','TANG100','WOW','NHATBAN','CHIPHI','NGONTU_RANH','DAISU','BAIHOC',
   'MOTHUC','SACH','BANDO_A3','POSTER','SODO','PHACDO','DIEMCHAM','NGONTU','NGONTU_TANG',
-  'THAYVI','MAUTHOAI','PERSONA','CHUAN1000','HAILONG','TAILIEU','AIPOLICY','KPI','DINHTUYEN',
+  'THAYVI','MAUTHOAI','PERSONA','CHUAN1000','QA_CHOCHU','HAILONG','TAILIEU','AIPOLICY','KPI','DINHTUYEN',
   'AINANGCAP','LACHAN','BENCH','BENCH_AI','KICHBAN',
   /* Kho nghề thêm từ v8.9. Thiếu tên ở đây thì donKho() không xoá, và
      một máy vừa đăng nhập Coach rồi đăng nhập lại bằng phụ huynh sẽ để
@@ -21544,7 +21544,12 @@ G.VIEWS['danh-gia'] = function(){
     'hệ thống, chỉ không lên trang giới thiệu. Anh chị rút lại lúc nào cũng được, không cần lý do.</p>' +
     '<label class="row mt2" style="gap:9px;align-items:center;cursor:pointer">' +
     '<input type="checkbox" id="dg-congkhai"><span class="sm">Tôi đồng ý cho đăng công khai</span></label>' +
-    '<p class="tiny muted mt2">Tên hiển thị:</p>' +
+    /* Dòng này là NHÃN THẬT của ô chọn, không phải một câu mô tả: viết
+       bằng <p> thì trình đọc màn hình đọc ô chọn là "danh sách, không
+       tên" — người mù nghe thấy một ô chọn mà không biết nó chọn gì.
+       <label for> chứ không aria-label: nó còn cho chạm vào chữ là
+       nhảy vào ô, thứ người tay run cần nhất. */
+    '<label for="dg-ten" class="tiny muted mt2" style="display:block">Tên hiển thị:</label>' +
     '<select id="dg-ten" style="margin-top:5px">' +
     (G.DG_TEN || []).map(function(t, i){
       return '<option value="' + h(t.ma) + '"' + (t.ma === 'RUT' ? ' selected' : '') + '>' +

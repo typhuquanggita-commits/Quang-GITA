@@ -2409,6 +2409,113 @@ dùng thật gặp là nhánh chưa ai thử.
 
 ---
 
+## ĐI BẰNG CHÂN MỘT VÒNG KHÁCH HÀNG (9.99.80)
+
+Giả lập một người lạ mở link rồi đi hết web app, qua ba vai khách —
+**R13 phụ huynh → R14 học viên → R15 đại sứ** — trên khổ điện thoại
+390px. Không đọc mã đoán: đo thứ CÓ TRONG DOM sau khi mọi gói đã nạp.
+
+### Chỗ hỏng nặng nhất nằm ở màn ĐẦU TIÊN, và không bộ đo nào thấy
+
+**Cổng vào đẩy CẢ TRANG cuộn ngang ở mọi khổ điện thoại.**
+`scrollWidth` cố định **447px** từ 320 tới 414px — người lạ mở link,
+vuốt dọc, trang trượt ngang.
+
+Suốt mười một tháng `do-khung-man.js` xanh 1.584 lượt đo mà không thấy,
+vì nó **`doLogin` ngay sau khi tải**. Màn mà MỌI người lạ nhìn thấy đầu
+tiên là màn duy nhất chưa ai đo.
+
+Ba nguyên nhân chồng lên nhau, và cả ba là lớp lỗi tệp này đã ghi rồi:
+
+| Chỗ | Hỏng thế nào |
+|---|---|
+| `.gate-top` | `display:flex` mặc định **`nowrap`** — brand 203 + chip 38 + 42 + 84 = 367 + lề 60 = **427px** trong màn 390px |
+| `.gate-body` | rãnh lưới khai **`1fr`**, mà ô lưới mặc định `min-width:auto` nên rãnh **không co dưới min-content** — giải ra 417px trong hộp 330px |
+| nhãn nút | `.btn` khai `white-space:nowrap`, mà nhãn *"Chưa có tài khoản — xem trước GITA 365 làm gì"* dài 417px |
+
+**`1fr` đọc như "co giãn tự do" mà thực ra là "không nhỏ hơn nội dung".**
+Đó là chỗ bẫy, và `minmax(0,1fr)` là câu trả lời.
+
+Nới `.btn` **đúng ở cổng vào**, không nới toàn cục: nới toàn cục thì mọi
+nút trong mọi bảng của cả kho có thể vỡ hai dòng — đổi một lỗi nhìn thấy
+lấy một trăm chỗ chưa ai nhìn.
+
+Nay `do-khung-man.js` **đo màn chưa đăng nhập TRƯỚC**, ở cả bốn khổ. Phá
+thử: trả `.gate-top` về `nowrap` thì nó đỏ đúng chỗ và gọi đúng tên thẻ.
+
+### Hộp báo lỗi ra hình BẦU DỤC — hai lỗi chồng nhau
+
+`#toast` khai `max-width:min(90vw,520px)` và **chưa bao giờ dùng tới**:
+một thẻ `position:fixed` khai `left:50%` mà không khai `right` thì bề
+rộng khả dụng chỉ còn **nửa màn**, và `transform:translateX(-50%)` chỉ
+dời chỗ nhìn thấy chứ không đổi bề rộng bố cục.
+
+Hậu quả: câu báo bốn dòng ra hộp **195×143px**, mà `border-radius:99px`
+trên hộp cao 143px kẹp về 71px — tức là một **hình bầu dục**, góc chữ
+rơi ra ngoài hình. Đúng lúc khách cần đọc rõ nhất.
+
+Vá đúng một từ — `width:max-content` — thì ra **351×73px**, bán kính tự
+kẹp về 36px, đúng hình viên thuốc thiết kế muốn.
+
+**Bo góc GIỮ NGUYÊN 99px.** Hạ xuống 24px cũng hết bầu dục, nhưng hộp
+báo một dòng — thứ hay gặp nhất — mất hình viên thuốc. Sửa bề rộng là
+sửa NGUYÊN NHÂN; đổi bo góc chỉ là che triệu chứng.
+
+### Bộ chống quét đã bắt đúng lượt quét của tôi
+
+`guard.js` chặn ở **26 màn chuyên môn trong 60 giây** và hạ nhịp. Lượt
+đi thử quét 65 màn liên tiếp bị nó tóm — nó chạy đúng, và đó là cách
+phát hiện ra hộp báo bầu dục.
+
+### Thang WOW 1000 điểm là LỜI KHAI, không phải phép đo
+
+`G.CHUAN1000` tự khai **929/1000**. Đo thử đúng một mục — C8 *"có nhãn
+cho trình đọc màn hình ở mọi nút"*, mục khai **thấp nhất cả bảng
+(12/20)**:
+
+```
+3.021 nút · liên kết   → 0 thiếu tên đọc được   (0%)
+   56 ảnh              → 0 thiếu alt            (0%)
+   14 ô nhập           → 2 thiếu nhãn        (14,3%)
+```
+
+Mục ấy **đáng 20/20 cho phần nút**, không phải 12. Bảng chấm quá tay ở
+đây — và một bảng chấm sai theo chiều nào cũng vô dụng như nhau.
+
+Đây là cùng luật tệp này đã ghi ba lần: **không gộp cột đo được với cột
+lời khai**. `CHUAN1000` trình mười con số với độ chính xác của một phép
+đo, trong khi cả mười đều là lời khai viết một lần rồi không ai đo lại.
+Mục chờ **WOW-01**, và nó có CHỖ GHI thật (`G.QA_CHOCHU`) chứ không chỉ
+một dòng trong tệp này — luật của kho: *một mục chờ không có chỗ ghi thì
+nó không phải mục chờ, nó là một lời than.*
+
+### Hai ô vừa sửa, và cả hai là lỗ chứ không phải điểm số
+
+**Một ô chọn thiếu nhãn đọc được** — `src/danh-gia.js`, ô *"Tên hiển
+thị"*. Dòng chữ ấy viết bằng `<p>`, nên trình đọc màn hình đọc ô chọn là
+*"danh sách, không tên"*: người mù nghe thấy một ô chọn mà không biết
+nó chọn gì, đúng ở màn quyết định có cho đăng công khai tên nhà mình
+hay không. Vá bằng `<label for>` chứ không `aria-label`, vì `<label>`
+còn cho chạm vào chữ là nhảy vào ô — thứ người tay run cần nhất.
+
+**Phép đo cổng vào chạy mà không được đếm.** `soDo` chỉ cộng trong vòng
+lặp từng màn, nên ba phép đo cổng vào × bốn khổ chạy thật mà con số in
+ra vẫn là 1.584. Một con số báo ÍT hơn thật cũng làm người đọc tin
+nhầm y như một con số báo nhiều hơn — nay 1.596.
+
+### Ba vai khách, số đo
+
+| Vai | Màn mở được | Chữ mỗi màn | Màn mỏng | Màn lỗi |
+|---|---|---|---|---|
+| R13 phụ huynh | 65 | 2.174 | 0 | 0 |
+| R14 học viên | 58 | 2.669 | 0 | 0 |
+| R15 đại sứ | 55 | 3.333 | 0 | 0 |
+
+Cổng vào tải **1,5 giây** · 0 lỗi trang cả hành trình · không màn nào
+chậm quá 600ms.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ
