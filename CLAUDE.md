@@ -725,6 +725,82 @@ Hai luật của cửa ấy:
 
 ---
 
+## BỘ NÃO — Phân hệ 1: Đánh thức Vùng Mạnh (9.99.63)
+
+Bản đặc tả gọi phân hệ này là **lõi của v3.0**. Màn **Vùng Mạnh**
+(`src/vung-manh.js`, năm ngăn), máy chủ `may-chu/vung-manh.js`, kho
+`data.vung-manh.js` (13 kho), bảng `theVungManh`, bộ kiểm **mục 79**.
+
+### Ba lằn ranh là ba CÁI CỔNG, không phải ba lời dặn
+
+Bản đặc tả viết ba lằn ranh đạo đức ở cuối Phần III bằng giọng của một
+lời dặn. Sáu tháng sau không còn ai nhớ một lời dặn, vì nó không chặn
+được gì. Nên cả ba đều có răng, và mỗi cái có một phép đo riêng:
+
+| Lằn ranh | Răng nằm ở đâu | Đo thế nào |
+|---|---|---|
+| LR1 · không xếp hạng trẻ | KHÔNG CÓ cửa ấy | hỏi **danh sách cửa** của máy chủ |
+| LR2 · hạn 90 ngày | `doHan()` tính **lúc đọc** | mốc 90/91 ngày là biên |
+| LR3 · không bán bằng Thẻ | `soatOLa()` chặn theo TÊN Ô | gửi `diem`·`goi`·`nhan` |
+
+**LR1 là phép đo về thứ KHÔNG TỒN TẠI**, và nó khác hẳn mọi phép đo
+khác trong bộ. "Không xếp hạng trẻ với nhau" không gọi được bằng một
+hàm — nó nghĩa là không có cái cửa ấy. Nên phép đo hỏi danh sách hàm
+xuất ra của mô-đun: một cửa trả nhiều thẻ cùng lúc mà **có mặt** là đỏ,
+dù chưa ai gọi nó. Viết cửa ấy rồi mới cấm gọi là muộn.
+
+**LR2 tính lúc đọc, không giữ một cột `conHan` trong bảng.** Một cột
+như thế phải có ai đó chạy cập nhật, và ngày không ai chạy thì nó nói
+dối theo đúng hướng nguy hiểm nhất. Quá hạn thì `docTheVungManh` **không
+trả về năm dòng nữa** (`the: undefined`) — trả về kèm một dòng chữ đỏ
+thì người ta vẫn dùng.
+
+**Nỗi sợ (T7) là trường quan trọng nhất**, và đúng MỘT trường được mang
+dấu ấy. Hai trường cùng mang thì cái nhấn mất nghĩa. Thẻ bắt buộc mang
+dòng ghi chú *"không phải kết luận về con"* — nó chống lại điều nguy
+hiểm nhất của cả phân hệ: cha mẹ biến một quan sát tạm thời thành một
+cái nhãn dán suốt đời.
+
+**Bộ dò lời hứa về gen cắm ở CHÍNH phân hệ này**, không gửi sang chỗ
+chung, vì người viết bài về vùng mạnh là người đứng gần lời hứa ấy nhất
+— cái tên "gen thiên tài" bán chạy và nằm ngay cạnh thứ GITA làm thật.
+Nó dò **chuỗi con**, không dò biên âm tiết: "gen-thiên-tài" gõ gạch nối
+thì biên không khớp mà ý thì y hệt. (Ngược với `DN_TRU` ở 9.99.54 — ở
+đó dò chuỗi con bắt oan; ở đây tám cụm đều là cụm nhiều âm tiết nên
+không có chỗ để bắt oan.)
+
+### Ba chỗ phá thử bắt được, ghi để không lặp
+
+1. **Dòng đỏ ghi SAI SỐ MỤC.** `mucNay` lấy từ chính **dòng in** tiêu
+   đề mục, mà tám mục 72–79 chỉ có KHUNG CHÚ GIẢI, không có dòng in —
+   nên mọi dòng đỏ của cả tám mục đều ghi `[mục 71]`. Con trỏ chỉ sai
+   chỗ **tệ hơn không có con trỏ**: người đọc tin nó, đi tìm ở mục 71,
+   không thấy gì, rồi ngờ chính phép đo. Và nó chỉ lộ ra lúc phá thử,
+   vì lúc xanh thì không có dòng đỏ nào để mà sai. Thêm mục mới thì
+   phải thêm **dòng in**, không chỉ khung chú giải. (Hai mục còn trùng
+   số 72; cái thứ hai nay là 80 — đánh lại chứ không dồn số, vì số mục
+   ở tệp ấy là NHÃN ĐỂ TÌM, không phải thứ tự chạy.)
+2. **Màn dựng khung rỗng cho vai không có kho nghề.** Kho nạp SAU khi
+   đăng nhập, và vai không có gói nghề thì không bao giờ nạp — cả năm
+   ngăn vẫn dựng ra bảng có đầu cột mà không có dòng. Một cái khung rỗng
+   đọc ra là *"chỗ này chưa làm xong"*, không đọc ra là *"vai của bạn
+   không mở được"*. Chặn ở **một chỗ**, trước cả thanh ngăn.
+3. **Màn `bo-nao` mắc đúng lỗi ấy nhưng lọt dưới ngưỡng.** Bộ rà soát
+   chỗ trống bắt từ **hơn hai** thẻ rỗng, mà màn ấy rỗng đúng hai. Một
+   cái hố nằm ngay dưới ngưỡng vẫn là cái hố — sửa cái hố, không sửa
+   ngưỡng.
+
+### Và một chỗ phần nhắc việc tự bịt miệng mình
+
+`soat-san-sang.js` in ra `CC-TEN · undefined` cho ba mục và ba dòng
+trống cho mấy mục không đánh mã. Nguyên nhân đúng thứ luật của kho cấm:
+**hai chỗ đọc tên viết tay**, mỗi chỗ biết một nửa danh sách — mười sổ
+chờ dựng ở mười thời điểm nên sổ này gọi câu việc là `viec`, sổ kia gọi
+`t`, sổ nữa gọi `hoi`. Nay gom về một hàm `cau()`. Một dòng nhắc không
+nói nó nhắc việc gì thì nó không nhắc được ai.
+
+---
+
 ## Việc còn chờ chủ hệ thống, không phải chờ mã
 
 **Đừng đọc danh sách này bằng mắt — chạy `node tools/soat-san-sang.js`.**

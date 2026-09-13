@@ -282,7 +282,17 @@ G.VIEWS = G.VIEWS || {};
       '<p class="sm muted mt">Màn này <b>không điều hành thay chủ hệ</b>. Bản đặc tả ' +
       'tự viết: bộ não làm được 75–80%, không phải 100% — và hai mươi phần trăm còn ' +
       'lại bắt buộc là người, vì pháp luật không cho, vì AI sai một cách êm ru, và vì ' +
-      'đó đúng là thứ không ai thay được.</p></div>' + thanhNgan();
+      'đó đúng là thứ không ai thay được.</p></div>';
+
+    /* Cùng cái hố của màn Vùng Mạnh, và nó lọt qua bộ rà soát chỗ trống
+       vì ngưỡng ở đó là "hơn HAI thẻ rỗng" còn màn này rỗng đúng hai.
+       Một cái hố nằm ngay dưới ngưỡng vẫn là cái hố — chỗ này không sửa
+       ngưỡng, chỉ sửa cái hố. */
+    if (!(G.BN_HIENPHAP || []).length)
+      return o + U.empty('Bộ não chưa mở',
+        'Kho nghề chưa nạp. Đăng nhập bằng vai có quyền nghề.', true);
+
+    o += thanhNgan();
 
     if (G.bnNgan === 'hienphap') return o + nganHienPhap();
     if (G.bnNgan === 'vung')     return o + nganVung();

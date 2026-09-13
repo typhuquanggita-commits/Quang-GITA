@@ -220,8 +220,19 @@ if (kg.thieuKho) {
      lối "hỏi rồi ghi câu trả lời cạnh", không đánh mã. Lấy thẳng m.muc.ma
      thì mấy sổ ấy in ra chữ "undefined", và người đọc không biết dòng
      nào trong sổ đang bị nói tới — tức là câu báo đúng mà vô dụng. */
-  const ten = (x) => x.ma || String(x.hoi || x.t || x.viec || x.o || '')
-    .slice(0, 60) || '(mục không tên)';
+  /* Tên một mục chờ ở BA dạng, vì mười sổ chờ dựng ở mười thời điểm
+     khác nhau: sổ này gọi câu việc là `viec`, sổ kia gọi là `t`, sổ nữa
+     gọi là `hoi`. Gom về MỘT chỗ đọc — bản trước có hai chỗ đọc viết
+     tay, mỗi chỗ biết một nửa danh sách, nên phần nhắc in ra
+     "CC-TEN · undefined" cho ba mục và ba dòng trống cho mấy mục không
+     đánh mã. Một dòng nhắc không nói nó nhắc việc gì thì nó không nhắc
+     được ai. Đúng thứ luật của kho cấm: bản thứ hai của một sự thật. */
+  const cau = (x) => String(x.viec || x.hoi || x.t || x.o || '')
+    .replace(/\s+/g, ' ').trim().slice(0, 70);
+  const ten = (x) => x.ma || cau(x) || '(mục không tên)';
+  const nhan = (x) => x.ma
+    ? (cau(x) ? x.ma + ' · ' + cau(x) : x.ma)
+    : (cau(x) || '(mục không tên)');
   docRa.forEach(s => s.muc.forEach(m => {
     if (m.ket.trang === 'hong') {
       dat(false, ten(m.muc) + ' khai sai đường đo', m.ket.vi);
@@ -236,7 +247,7 @@ if (kg.thieuKho) {
      nói điền ở đâu thì người đọc phải đi hỏi, và thường là không hỏi. */
   docRa.forEach(s => s.muc.forEach(m => {
     if (m.ket.trang !== 'chua') return;
-    nhac(m.muc.ma + ' · ' + m.muc.viec,
+    nhac(nhan(m.muc),
       'còn ' + m.ket.con + ' (' + m.ket.so + ')' +
       (m.muc.noiDien ? ' — điền tại: ' + m.muc.noiDien : ''));
   }));
@@ -246,7 +257,7 @@ if (kg.thieuKho) {
      một báo cáo dài là một báo cáo không ai đọc tới cuối. */
   const khongDo = [];
   docRa.forEach(s => s.muc.forEach(m => {
-    if (m.ket.trang === 'khongDo') khongDo.push(m.muc.ma);
+    if (m.ket.trang === 'khongDo') khongDo.push(ten(m.muc));
   }));
   if (khongDo.length) nhac('Máy không đo được ' + khongDo.length + ' mục',
     khongDo.join(' · ') + ' — từng mục tự khai vì sao ở ô `khongDoDuoc`; ' +

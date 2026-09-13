@@ -57,6 +57,7 @@ import { deXuatThiGiac, chuyenBacThiGiac, banMoiThiGiac, chamThiGiac,
   dangTamThiGiac, goTamThiGiac, soDangBai,
   doPheuThiGiac, doiMotTam, khaiSoKenhNgoai } from './kien-truc-thi-giac.js';
 import { soatBoNao, soatAnDanh } from './bo-nao.js';
+import { lapTheVungManh, docTheVungManh, loTrinhTuThe, soatVungManh } from './vung-manh.js';
 import { soatNoiDung, mauBaiHoc, napBai, nopBai, kyBai, soKyBai, baiTreo,
   capQuyenNoiDung, thuHoiQuyenNoiDung, dsQuyenNoiDung,
   docBuoi, xuatChuanNghe, soatMienDich,
@@ -194,6 +195,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'guiDeBaiRaNgoai', 'xuatTamThiGiac', 'ghiChuThayAnh', 'docAnhThiGiac',
   'soDiRa', 'docDieuNho', 'docYTuong', 'docGopY',
   'dangTamThiGiac', 'goTamThiGiac', 'soDangBai', 'doPheuThiGiac', 'doiMotTam', 'khaiSoKenhNgoai', 'soatBoNao', 'soatAnDanh',
+  'lapTheVungManh', 'docTheVungManh', 'loTrinhTuThe', 'soatVungManh',
   'soatNoiDung', 'mauBaiHoc', 'napBai', 'nopBai', 'kyBai', 'soKyBai', 'baiTreo',
   'capQuyenNoiDung', 'thuHoiQuyenNoiDung', 'dsQuyenNoiDung', 'docBuoi', 'xuatChuanNghe', 'soatMienDich',
   'chotTrichNghe', 'dsChotTrich',
@@ -337,6 +339,10 @@ async function lam(fn, y, env, db) {
   if (fn === 'khaiSoKenhNgoai')   return await khaiSoKenhNgoai(y, env, db, hoSo);
   if (fn === 'soatBoNao')         return await soatBoNao(y, env, db, hoSo);
   if (fn === 'soatAnDanh')        return await soatAnDanh(y, env, db, hoSo);
+  if (fn === 'lapTheVungManh')    return await lapTheVungManh(y, env, db, hoSo);
+  if (fn === 'docTheVungManh')    return await docTheVungManh(y, env, db, hoSo);
+  if (fn === 'loTrinhTuThe')      return await loTrinhTuThe(y, env, db, hoSo);
+  if (fn === 'soatVungManh')      return await soatVungManh(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
   if (fn === 'soatNoiDung')       return await soatNoiDung(y, env, db, hoSo);
   if (fn === 'mauBaiHoc')         return await mauBaiHoc(y, env, db, hoSo);

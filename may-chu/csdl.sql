@@ -1442,3 +1442,58 @@ CREATE TABLE IF NOT EXISTS khaiSoNgoai (
 );
 
 CREATE INDEX IF NOT EXISTS ix_ksn_dang ON khaiSoNgoai (idDang, ngayDoc DESC);
+
+-- ═════════════════════════════════════════════════════════════
+--  THẺ VÙNG MẠNH — bản 9.99.63, Phân hệ 1 của Bộ não
+--
+--  Đây là bảng NHẠY NHẤT trong cả cơ sở dữ liệu. Cột `d4` giữ NỖI SỢ
+--  của một đứa trẻ, ghi nguyên văn lời nó nói. Không cột nào khác
+--  trong hệ này chạm tới một chỗ riêng tư như thế.
+--
+--  ══ BA LẰN RANH CẮM THẲNG VÀO HÌNH BẢNG ══
+--
+--  LR1 — Không xếp hạng trẻ với nhau.
+--    Bảng KHÔNG có cột điểm, cột hạng, cột "mạnh cỡ nào". Thêm một cột
+--    như thế là mở đường cho một câu ORDER BY, và một câu ORDER BY
+--    trên trẻ em là một bảng xếp hạng dù không ai gọi nó là bảng xếp
+--    hạng.
+--
+--  LR2 — Không kết luận sớm: hạn 90 ngày.
+--    Giữ `lapLuc` và TÍNH hạn lúc đọc, không giữ một cột `conHan`.
+--    Một cột `conHan` phải có ai đó chạy cập nhật, và ngày không ai
+--    chạy thì nó nói dối — nói dối theo hướng nguy hiểm nhất, là thẻ
+--    quá hạn vẫn khai còn hạn.
+--
+--  LR3 — Không dùng Thẻ để bán hàng.
+--    Không cột giá, không cột gói, không cột tầng bán. Thẻ đi tới tay
+--    gia đình; có một ô giá trong đó là mời mua ngay trên tờ giấy nói
+--    về nỗi sợ của con họ.
+--
+--  ══ VÀ BẢN CŨ Ở LẠI ══
+--  Lập thẻ mới KHÔNG ghi đè thẻ cũ. Chuỗi thẻ theo thời gian chính là
+--  thứ cho thấy đứa trẻ đã đổi — mà "trẻ đổi rất nhanh" là lý do cả
+--  lằn ranh thứ hai tồn tại. Ghi đè là xoá đúng bằng chứng ấy.
+-- ═════════════════════════════════════════════════════════════
+CREATE TABLE IF NOT EXISTS theVungManh (
+  id        TEXT PRIMARY KEY,
+  maNha     TEXT NOT NULL,       -- mã gia đình trong hệ
+  tuoiCon   INTEGER,             -- tuổi, KHÔNG ngày sinh: ngày sinh nhận dạng được
+  lan       INTEGER NOT NULL DEFAULT 1,   -- thẻ thứ mấy của nhà này
+  theTruoc  TEXT,                -- thẻ này lập lại từ thẻ nào
+  -- Năm dòng của tờ A4. Chữ tự do, không ô chọn: ép ô chọn là ép một
+  -- đứa trẻ vào một trong mấy cái hộc có sẵn, và đó là dán nhãn.
+  d1        TEXT NOT NULL,       -- Con sáng nhất khi
+  d2        TEXT NOT NULL,       -- Con vào nhanh nhất qua cửa
+  d3        TEXT NOT NULL,       -- Con chịu được cái khó này
+  d4        TEXT NOT NULL,       -- Điều làm con rụt lại  ← NHẠY NHẤT
+  d5        TEXT NOT NULL,       -- Việc nhà mình sẽ làm 90 ngày tới
+  -- Bảy trường quan sát thô, giữ lại để lập thẻ sau còn đối chiếu.
+  quanSat   TEXT,                -- JSON bảy trường
+  lapBoiAi  TEXT NOT NULL,
+  lapLuc    TEXT NOT NULL,
+  duyetBoiAi TEXT,               -- Vùng Vàng: coach duyệt trước khi giao nhà
+  duyetLuc  TEXT,
+  giaoNhaLuc TEXT                -- lúc thật sự trao cho gia đình
+);
+
+CREATE INDEX IF NOT EXISTS ix_tvm_nha ON theVungManh (maNha, lapLuc DESC);

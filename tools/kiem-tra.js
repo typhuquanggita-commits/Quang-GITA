@@ -62,7 +62,15 @@ const { chromium } = require(PW);
 
      Chỗ hỏng in kèm SỐ MỤC, vì ở chế độ im thì tiêu đề mục bị nuốt, mà
      một dòng đỏ không biết thuộc mục nào thì phải chạy lại bản đầy đủ để
-     tìm — tức là mất luôn phần vừa tiết kiệm được. */
+     tìm — tức là mất luôn phần vừa tiết kiệm được.
+
+     Số mục lấy từ chính DÒNG IN tiêu đề, nên một mục chỉ có KHUNG CHÚ
+     GIẢI mà không có dòng in thì nó thừa hưởng số của mục trước. Tám mục
+     72–79 đã sống như thế: mọi dòng đỏ của chúng đều ghi "[mục 71]", và
+     con trỏ chỉ sai chỗ thì tệ hơn không có con trỏ — người đọc tin nó,
+     đi tìm ở mục 71, không thấy gì, rồi ngờ chính phép đo. Bắt được lúc
+     phá thử mục 79 ở 9.99.63: dòng đỏ đúng nội dung mà sai số mục.
+     Thêm mục mới thì phải thêm DÒNG IN, không chỉ khung chú giải. */
   const IM = process.argv.includes('--im');
   let mucNay = '';
   let soDat = 0;
@@ -9434,6 +9442,7 @@ const { chromium } = require(PW);
         : '5 vòng hẹp dần 44→26→20 · khúc trỏ vào kho · vòng 5 quay lại vòng 1 · mời vượt tầng có giá thật · máy khách vẫn 0 tình huống, và kho khai thẳng là chưa chạy cho khách');
   }
 
+  console.log('\n72 · TRỢ LÝ: LỌC THEO TẦNG, VÀ DẪN TỪNG VIỆC');
   /* ══════ 72. TRỢ LÝ: LỌC THEO TẦNG, VÀ DẪN TỪNG VIỆC ══════
      Tới 9.47 hai màn in ra câu "trả lời trong đúng phạm vi tầng của nhà
      mình" mà không dòng nào lọc theo tầng. Mục này đo cái VIỆC, không đo
@@ -9553,7 +9562,13 @@ const { chromium } = require(PW);
         : 'tầng 3 từ tài khoản · T5 bị chặn · nghề không lọc · PHACDO khai chưa lọc được · 4 nhịp trỏ vào kho · không dẫn nhầm việc · 1 chỗ gán màn');
   }
 
-  /* ══════════════ 72. AI ĐƯỢC XEM HỒ SƠ KHÁCH HÀNG ══════════════
+  console.log('\n80 · AI ĐƯỢC XEM HỒ SƠ KHÁCH HÀNG');
+  /* ══════════════ 80. AI ĐƯỢC XEM HỒ SƠ KHÁCH HÀNG ══════════════
+     Mục này mang số 72 suốt một thời gian, TRÙNG với mục trợ lý ở trên.
+     Trùng số thì hai mục khác nhau chung một con trỏ, và dòng đỏ dẫn
+     người đọc tới mục kia. Đánh lại 80 chứ không dồn số, vì số mục ở
+     tệp này là NHÃN ĐỂ TÌM, không phải thứ tự chạy — 74 vốn đã nằm sau
+     76. Dồn số thì mọi chỗ đã trỏ tới một mục đều trỏ sai.
      Luật chủ hệ chốt 3.9.2026. Chỗ dễ hỏng nhất không phải cái cổng mà là
      việc GÓI KHO vẫn gửi thứ cổng đang giấu — kho này đã mắc đúng lỗi ấy
      ba lần, và suýt lần thứ tư ở chính chỗ này. */
@@ -10225,6 +10240,7 @@ const { chromium } = require(PW);
           ' · màn hình ' + (ra.tinBacMan || []).join('/'));
   }
 
+  console.log('\n75 · CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC');
   /* ══════════════════ 75. CỔNG TẦNG CỦA KIẾN TRÚC SƯ THỊ GIÁC ══════════════════
 
      Cổng ấy chặn một tấm hình sai Tầng lại TRƯỚC khi ai bỏ công vẽ. Nó
@@ -10750,6 +10766,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         ].filter(Boolean).join(' · '));
   }
 
+  console.log('\n76 · BỘ VẼ TRONG MÁY — CHỮ CÓ Ở TRONG TẤM KHÔNG');
   /* ══════════════════ 76. BỘ VẼ TRONG MÁY — CHỮ CÓ Ở TRONG TẤM KHÔNG ══════════════════
 
      src/ve-thi-giac.js vẽ ảnh thật từ một bản ghi đã qua cổng. Nó vẽ
@@ -11757,6 +11774,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
             ].filter(Boolean).join(' · ')));
   }
 
+  console.log('\n74 · SỔ CHỜ CHỦ HỆ CÓ MỤC KHÔNG');
   /* ══════════════════ 74. SỔ CHỜ CHỦ HỆ CÓ MỤC KHÔNG ══════════════════
 
      G.TR_CHUA là danh sách những ô chủ hệ phải tự điền — học phí, hệ
@@ -11831,6 +11849,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         : ra.loi.slice(0, 4).join(' · '));
   }
 
+  console.log('\n73 · SAVE() CÓ GIỮ THẬT KHÔNG');
   /* ══════════════════ 73. SAVE() CÓ GIỮ THẬT KHÔNG ══════════════════
      Lớp lỗi này im lặng hoàn hảo: chỗ ghi gọi G.save() đàng hoàng, save()
      chạy không lỗi, mà khoá ấy không có trong đối tượng được ghi xuống.
@@ -11891,6 +11910,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
   }
 
 
+  console.log('\n77 · HIẾN PHÁP NỘI DUNG — BẢN CHÉP Ở MÁY CHỦ');
   /* ══════════════════ 77. HIẾN PHÁP NỘI DUNG — BẢN CHÉP Ở MÁY CHỦ ══════════════════
 
      Cùng lớp với mục 75, và sinh ra vì cùng một lý do: máy chủ không
@@ -12530,6 +12550,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
           ].filter(Boolean).join(' · '));
   }
 
+  console.log('\n78 · BỘ NÃO — HIẾN PHÁP KHÔNG TRÔI, VÀ ĐIỀU 13 CÓ RĂNG');
   /* ══════════════════ 78. BỘ NÃO — HIẾN PHÁP KHÔNG TRÔI, VÀ ĐIỀU 13 CÓ RĂNG ══════════════════
 
      Bản đặc tả GITA-BRAIN-365-v3.0 đặt Hiến pháp ở trên cùng sơ đồ kèm
@@ -12661,6 +12682,160 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
            !r.anDanhChayThat ? 'PHÉP DÒ ẨN DANH KHÔNG CHẠY THẬT (hoặc nó bắt oan ' +
              'bản đã ẩn danh đúng cách)' : '',
            !r.vungChayThat ? 'VIỆC CHƯA AI XẾP HẠNG KHÔNG RƠI VỀ VÀNG' : ''
+          ].filter(Boolean).join(' · '));
+  }
+
+  console.log('\n79 · VÙNG MẠNH — BA LẰN RANH LÀ BA CÁI CỔNG');
+  /* ══════════════════ 79. VÙNG MẠNH — BA LẰN RANH LÀ BA CÁI CỔNG ══════════════════
+
+     Phân hệ 1, bản đặc tả gọi là LÕI của v3.0. Ba lằn ranh đạo đức
+     viết ở cuối Phần III bằng giọng của một lời dặn — và một lời dặn
+     không chặn được gì. Phép đo này đo CỔNG, không đo chữ.
+
+     Chỗ đáng đo nhất là LR1, vì nó là điều DUY NHẤT không đo được bằng
+     cách gọi một hàm: "không xếp hạng trẻ với nhau" nghĩa là không có
+     cái cửa ấy. Nên đo bằng cách hỏi DANH SÁCH CỬA — một cửa trả về
+     nhiều thẻ cùng lúc mà có mặt là đỏ, dù chưa ai gọi nó. Đây là phép
+     đo về thứ KHÔNG TỒN TẠI, và nó khác hẳn mọi phép đo khác trong bộ. */
+  {
+    const mVM = await import('../may-chu/vung-manh.js');
+    const khoVM = await p.evaluate(() => {
+      const G = window.G;
+      const t = G.VM_THE || {};
+      return {
+        ba: (G.VM_BA || []).map(x => x.ma),
+        truong: (G.VM_TRUONG || []).map(x => [x.so, x.ma, x.ten]),
+        /* Đúng MỘT trường mang dấu quan trọng nhất. Hai trường cùng mang
+           thì cái nhấn mất nghĩa, và trường 7 chìm lại vào sáu cái kia. */
+        soQuanTrongNhat: (G.VM_TRUONG || []).filter(x => x.quanTrongNhat).length,
+        maQuanTrongNhat: (G.VM_TRUONG || []).filter(x => x.quanTrongNhat)
+          .map(x => x.ma).join(''),
+        tuanThieuCam: (G.VM_TUAN || []).filter(x => !x.cam || !x.viec || !x.vi)
+          .map(x => x.tuan),
+        dongThe: (t.dong || []).map(x => x.ma),
+        hanNgay: t.hanNgay,
+        /* Dòng ghi chú cuối thẻ là BẮT BUỘC — nó chống lại điều nguy
+           hiểm nhất của cả phân hệ: cha mẹ biến một quan sát tạm thời
+           thành một cái nhãn dán suốt đời cho con. */
+        coChuThich: String(t.chuThich || '').indexOf('không phải kết luận về con') >= 0 &&
+          t.chuThichBatBuoc === true,
+        camNoi: (G.VM_CAM_NOI || []).map(x => x.cum),
+        camThieuVi: (G.VM_CAM_NOI || []).filter(x => !x.vi).map(x => x.cum),
+        lanRanh: (G.VM_LANRANH || []).map(x => x.ma),
+        /* Mỗi lằn ranh phải khai MÁY CANH THẾ NÀO. Không khai thì nó là
+           một lời dặn, và lời dặn không chặn được gì — đúng thứ cả phần
+           này sinh ra để chống. */
+        lanRanhThieuMay: (G.VM_LANRANH || []).filter(x => !x.may || !x.luat || !x.vi)
+          .map(x => x.ma),
+        bac: (G.VM_BAC || []).map(x => [x.bac, x.ten]),
+        bacThieuDau: (G.VM_BAC || []).filter(x => !x.dau || !x.viec).map(x => x.bac),
+        mua: (G.VM_MUA || []).map(x => x.mua)
+      };
+    });
+
+    const v = {};
+    v.baKhop = JSON.stringify(khoVM.ba) === JSON.stringify(mVM.BA || []);
+    v.truongKhop = JSON.stringify(khoVM.truong) === JSON.stringify(mVM.TRUONG || []);
+    v.dongKhop = JSON.stringify(khoVM.dongThe) === JSON.stringify(mVM.DONG_THE || []);
+    v.camKhop = JSON.stringify(khoVM.camNoi) === JSON.stringify(mVM.CAM_NOI || []);
+    v.lanRanhKhop = JSON.stringify(khoVM.lanRanh) === JSON.stringify(mVM.LANRANH || []);
+    v.hanKhop = khoVM.hanNgay === mVM.HAN_NGAY;
+    v.coChuThich = khoVM.coChuThich;
+    v.soQTN = khoVM.soQuanTrongNhat;
+    v.maQTN = khoVM.maQuanTrongNhat;
+    v.tuanThieuCam = khoVM.tuanThieuCam;
+    v.camThieuVi = khoVM.camThieuVi;
+    v.lanRanhThieuMay = khoVM.lanRanhThieuMay;
+    v.bacThieuDau = khoVM.bacThieuDau;
+    v.soBac = khoVM.bac.length;
+    v.soMua = khoVM.mua.length;
+
+    /* ══ GỌI THẲNG ══ */
+    /* Câu mở đầu của chính phân hệ, cắm thành răng. Dò chuỗi con chứ
+       không dò biên âm tiết: "gen-thiên-tài" gõ gạch nối thì biên không
+       khớp, mà ý thì y hệt. */
+    const g1 = mVM.soatHuaGen('Chương trình đánh thức gen thiên tài của con');
+    const g2 = mVM.soatHuaGen('Đánh thức GEN-THIÊN-TÀI ngay hôm nay');
+    const g3 = mVM.soatHuaGen('Con sáng nhất khi lắp mô hình, hai tiếng không ngẩng đầu');
+    v.genChayThat = !g1.sach && !g2.sach && g3.sach === true &&
+      /Điều 1, Điều 10, Điều 13/.test(g1.vi);
+
+    /* LR3 — ô lạ bị bắt tên từng cái, không gộp thành "có ô lạ". */
+    const oLa = mVM.soatOLa({d1: 'x', diem: 9, goi: 'T4', nhan: 'giỏi'});
+    v.oLaChayThat = oLa.length === 3 && oLa.indexOf('diem') >= 0 &&
+      oLa.indexOf('goi') >= 0 && mVM.soatOLa({d1: 'x', d2: 'y'}).length === 0;
+
+    /* LR2 — hạn TÍNH lúc đọc, không giữ một cột trong bảng. Mốc 90 là
+       biên: đúng 90 ngày còn hạn, 91 ngày thì hết. Nới cho "gần đúng"
+       thì ranh giới trôi dần, và sau vài bản không còn hạn nào. */
+    const moc = '2026-01-01T00:00:00Z';
+    const h89 = mVM.doHan(moc, '2026-03-31T00:00:00Z');
+    const h91 = mVM.doHan(moc, '2026-04-02T00:00:00Z');
+    v.hanChayThat = h89.conHan === true && h91.conHan === false;
+
+    /* Không khớp trường nào thì NÓI LÀ KHÔNG BIẾT, không rơi về một lộ
+       trình mặc định rồi gọi nó là cá nhân hoá. */
+    const lt = mVM.deNghiLoTrinh({T4: 'lam', T7: 'soBiCuoi'});
+    const ltMu = mVM.deNghiLoTrinh({T4: 'nhin'});
+    v.loTrinhChayThat = lt.doi.length === 2 && ltMu.doi.length === 0 &&
+      /KHÔNG rơi về một lộ trình mặc định/.test(ltMu.vi);
+
+    /* ── LR1 · PHÉP ĐO VỀ THỨ KHÔNG TỒN TẠI ──
+       "Không xếp hạng trẻ" nghĩa là KHÔNG CÓ cái cửa ấy. Hỏi danh sách
+       cửa của máy chủ: một cửa trả nhiều thẻ cùng lúc mà có mặt là đỏ,
+       dù chưa ai gọi nó. */
+    const cuaVM = Object.keys(mVM).filter(k => typeof mVM[k] === 'function');
+    v.cuaXepHang = cuaVM.filter(k => /dsThe|danhSachThe|xepHang|soSanhThe|topThe|moiThe/i.test(k));
+    v.soCua = cuaVM.length;
+
+    const vmDat =
+      v.baKhop && v.truongKhop && v.dongKhop && v.camKhop && v.lanRanhKhop &&
+      v.hanKhop && v.coChuThich && v.soQTN === 1 && v.maQTN === 'T7' &&
+      !v.tuanThieuCam.length && !v.camThieuVi.length && !v.lanRanhThieuMay.length &&
+      !v.bacThieuDau.length && v.soBac === 5 && v.soMua === 4 &&
+      v.genChayThat && v.oLaChayThat && v.hanChayThat && v.loTrinhChayThat &&
+      v.cuaXepHang.length === 0;
+
+    bao(vmDat,
+      'PHÂN HỆ 1 · VÙNG MẠNH: BA LẰN RANH ĐẠO ĐỨC LÀ BA CÁI CỔNG, KHÔNG PHẢI BA LỜI DẶN. Bản đặc tả viết chúng ở cuối Phần III bằng giọng của một lời dặn, và một lời dặn thì sáu tháng sau không còn ai nhớ vì nó không chặn được gì. LR3 — thẻ không mang ô điểm, ô gói, ô nhãn — cắm thành một cổng CHẶN, không lặng lẽ bỏ qua: bỏ qua thì người gửi tưởng ô ấy đã được ghi và lần sau gửi lại, mà một ô giá nằm trên tờ giấy nói về nỗi sợ của con họ là lời mời mua đặt đúng chỗ không được đặt. LR2 — hạn chín mươi ngày — TÍNH lúc đọc chứ không giữ một cột conHan trong bảng, vì một cột như thế phải có ai đó chạy cập nhật và ngày không ai chạy thì nó nói dối theo đúng hướng nguy hiểm nhất; và quá hạn thì máy KHÔNG trả về năm dòng nữa, vì đọc được năm dòng thì người ta dùng nó dù có một dòng chữ đỏ bên trên. LR1 là lằn ranh DUY NHẤT không đo được bằng cách gọi một hàm — "không xếp hạng trẻ với nhau" nghĩa là KHÔNG CÓ cái cửa ấy, nên phép đo hỏi danh sách cửa của máy chủ và một cửa trả nhiều thẻ cùng lúc mà có mặt là đỏ dù chưa ai gọi nó. Đo thêm câu mở đầu của chính phân hệ, cắm thành răng: không có một gen nào gọi là gen thiên tài, và người viết bài về vùng mạnh là người đứng GẦN lời hứa ấy nhất vì cái tên đó bán chạy và nằm ngay cạnh thứ GITA làm thật — nên bộ dò cắm ở đây chứ không gửi sang một chỗ chung, và nó dò chuỗi con chứ không dò biên âm tiết vì "gen-thiên-tài" gõ gạch nối thì biên không khớp mà ý thì y hệt',
+      vmDat
+        ? khoVM.truong.length + ' trường quan sát, đúng một trường mang dấu quan trọng nhất (' +
+          v.maQTN + ') · 4 tuần đều có ô CẤM · thẻ ' + khoVM.dongThe.length +
+          ' dòng, hạn ' + khoVM.hanNgay + ' ngày, có dòng ghi chú bắt buộc · ' +
+          khoVM.camNoi.length + ' cụm cấm nói · ' + khoVM.lanRanh.length +
+          ' lằn ranh đều khai máy canh thế nào · ' + v.soBac + ' bậc giá trị · ' +
+          v.soMua + ' mùa · ' + v.soCua + ' cửa, KHÔNG cửa nào xếp hạng trẻ'
+        : [!v.baKhop ? 'BẢN CHÉP BA THỨ QUAN SÁT Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.truongKhop ? 'BẢN CHÉP BẢY TRƯỜNG Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.dongKhop ? 'BẢN CHÉP NĂM DÒNG THẺ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.camKhop ? 'BẢN CHÉP BẢNG CẤM NÓI Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.lanRanhKhop ? 'BẢN CHÉP BA LẰN RANH Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.hanKhop ? 'HẠN THẺ Ở MÁY CHỦ LỆCH VỚI KHO' : '',
+           !v.coChuThich ? 'THẺ THIẾU DÒNG GHI CHÚ BẮT BUỘC — dòng chống lại việc ' +
+             'cha mẹ biến một quan sát tạm thời thành một cái nhãn dán suốt đời' : '',
+           v.soQTN !== 1 ? 'CÓ ' + v.soQTN + ' TRƯỜNG MANG DẤU QUAN TRỌNG NHẤT, ' +
+             'phải đúng một — hai cái thì cái nhấn mất nghĩa' : '',
+           v.maQTN !== 'T7' ? 'TRƯỜNG QUAN TRỌNG NHẤT LÀ ' + v.maQTN + ', phải là T7 ' +
+             '(ngưỡng sợ)' : '',
+           v.tuanThieuCam.length ? 'tuần thiếu ô CẤM hoặc ô vì sao: ' +
+             v.tuanThieuCam.join(' · ') : '',
+           v.camThieuVi.length ? 'cụm cấm thiếu lý do: ' + v.camThieuVi.join(' · ') : '',
+           v.lanRanhThieuMay.length ? 'LẰN RANH KHÔNG KHAI MÁY CANH THẾ NÀO (tức là ' +
+             'nó vẫn chỉ là một lời dặn): ' + v.lanRanhThieuMay.join(' · ') : '',
+           v.bacThieuDau.length ? 'bậc giá trị thiếu dấu hiệu đạt: ' +
+             v.bacThieuDau.join(' · ') : '',
+           v.soBac !== 5 ? 'CÓ ' + v.soBac + ' BẬC GIÁ TRỊ, không phải 5' : '',
+           v.soMua !== 4 ? 'CÓ ' + v.soMua + ' MÙA, không phải 4' : '',
+           !v.genChayThat ? 'BỘ DÒ LỜI HỨA VỀ GEN KHÔNG CHẠY THẬT (hoặc nó trượt ' +
+             'khi người viết gõ gạch nối)' : '',
+           !v.oLaChayThat ? 'LR3 KHÔNG CHẶN THẬT — ô điểm, ô gói, ô nhãn vẫn lọt ' +
+             'vào thẻ' : '',
+           !v.hanChayThat ? 'LR2 KHÔNG CHẠY THẬT — hạn 90 ngày không đúng biên' : '',
+           !v.loTrinhChayThat ? 'PHÉP ĐỀ NGHỊ LỘ TRÌNH KHÔNG CHẠY THẬT (hoặc nó rơi ' +
+             'về một lộ trình mặc định rồi gọi đó là cá nhân hoá)' : '',
+           v.cuaXepHang.length ? 'LR1 VỠ — CÓ CỬA XẾP HẠNG TRẺ: ' +
+             v.cuaXepHang.join(' · ') + '. Vùng mạnh không phải một cuộc thi, và ' +
+             'một bảng xếp hạng trẻ em sinh ra là để cha mẹ nhìn vào' : ''
           ].filter(Boolean).join(' · '));
   }
 

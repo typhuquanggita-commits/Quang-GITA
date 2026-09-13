@@ -126,6 +126,7 @@
     "src/thu-phong.js",
     "src/thanh-duoi.js",
     "src/bo-nao.js",
+    "src/vung-manh.js",
     "src/cho-chu-he.js",
     "src/bien-soan-noi-dung.js",
     "src/cua-truoc.js",

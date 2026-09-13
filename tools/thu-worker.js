@@ -3847,6 +3847,126 @@ let idTam9 = null, idDang9 = null;
     'xếp giảm dần thì đọc đời một tấm phải đọc ngược, và mất chỗ ngay dòng thứ ba');
 }
 
+/* ══ PHÂN HỆ 1 · VÙNG MẠNH — BA LẰN RANH LÀ BA CÁI CỔNG ══
+
+   Bản đặc tả viết ba lằn ranh đạo đức bằng giọng của một lời dặn.
+   Dựng chúng thành lời dặn thì sáu tháng sau không còn ai nhớ — lời
+   dặn không chặn được gì. Ba phép đo dưới đây đo CỔNG, không đo chữ. */
+{
+  const mVM = await import('../may-chu/vung-manh.js');
+  const theSach = {
+    d1: 'Sáng nhất khi lắp mô hình, hai tiếng không ngẩng đầu',
+    d2: 'Vào nhanh nhất qua cửa LÀM — phải cầm vào mới hiểu',
+    d3: 'Chịu được cái khó của việc tay chân, hỏng năm lần vẫn làm lại',
+    d4: 'Rụt lại khi phải đứng trước lớp, sợ bị cười',
+    d5: 'Chín mươi ngày tới nhà mình làm một góc bàn riêng cho con'
+  };
+
+  /* ── LR3 · KHÔNG DÙNG THẺ ĐỂ BÁN HÀNG ──
+     Ô lạ bị CHẶN, không lặng lẽ bỏ qua: bỏ qua thì người gửi tưởng ô
+     ấy đã được ghi, và lần sau gửi lại. */
+  const banHang = await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001', tuoiCon:9,
+    the:Object.assign({}, theSach, {diem:87, goi:'T4', nhan:'trẻ có tố chất'})});
+  bao(!banHang.than.ok && banHang.than.code === 'OCAM' &&
+      (banHang.than.oLa || []).length === 3,
+    'LR3 · THẺ KHÔNG MANG Ô ĐIỂM, Ô GÓI, Ô NHÃN — và bị CHẶN, không lặng lẽ bỏ qua',
+    'bắt ' + (banHang.than.oLa || []).join(' · ') + ' — một ô giá nằm trên tờ giấy ' +
+    'nói về nỗi sợ của con họ là lời mời mua đặt đúng chỗ không được đặt');
+
+  /* ── CÂU MỞ ĐẦU CỦA PHÂN HỆ CÓ RĂNG ──
+     "Không có một gen nào gọi là gen thiên tài." Người viết bài về
+     vùng mạnh là người đứng GẦN lời hứa gen nhất. */
+  const huaGen = await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001', tuoiCon:9,
+    the:Object.assign({}, theSach, {d1:'Đã đánh thức gen thiên tài của con'})});
+  bao(!huaGen.than.ok && huaGen.than.code === 'HUAGEN' &&
+      /Điều 1, Điều 10, Điều 13/.test(huaGen.than.error),
+    'LỜI HỨA VỀ GEN BỊ CHẶN — phạm cùng lúc Điều 1, Điều 10, Điều 13',
+    'cái tên bán chạy nhất của cả chương trình lại là cái tên phân hệ này cấm nói');
+
+  /* ── ĐIỀU 13 · THẺ LÀ THỨ NHẠY NHẤT TRONG HỆ ──
+     Dòng D4 giữ nỗi sợ của một đứa trẻ, ghi nguyên văn lời nó nói. */
+  const coTenVM = await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001', tuoiCon:9,
+    the:Object.assign({}, theSach, {d4:'Rụt lại vì sợ bạn Nguyễn Minh Anh cười'})});
+  bao(!coTenVM.than.ok && coTenVM.than.code === 'CHUAANDANH' &&
+      /riêng tư nhất/.test(coTenVM.than.error),
+    'TÊN NGƯỜI KHÔNG LỌT VÀO THẺ — dòng nỗi sợ là chỗ riêng tư nhất trong cả hệ',
+    'viết bằng lời quan sát, không bằng tên');
+
+  const thieuDong = await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001', the:Object.assign({}, theSach, {d5:''})});
+  bao(!thieuDong.than.ok && thieuDong.than.code === 'THIEUDONG',
+    'THẺ CÓ ĐÚNG NĂM DÒNG — thiếu một dòng thì nó là một tờ ghi chép dở',
+    'giao cho gia đình một tờ dở thì họ đọc phần thiếu thành phần không có');
+
+  const lap1 = await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001', tuoiCon:9, the:theSach,
+    quanSat:{T4:'lam', T5:'motMinh', T7:'soBiCuoi'}});
+  bao(lap1.than.ok && lap1.than.lan === 1 && lap1.than.hanNgay === 90 &&
+      /ảnh chụp của một giai đoạn/.test(lap1.than.chuThich || ''),
+    'THẺ SẠCH THÌ LẬP ĐƯỢC, và mang theo dòng ghi chú BẮT BUỘC',
+    'dòng ấy chống lại điều nguy hiểm nhất: cha mẹ biến một quan sát tạm thời ' +
+    'thành một cái nhãn dán suốt đời cho con');
+
+  /* Bản cũ Ở LẠI. Chuỗi thẻ theo thời gian chính là thứ cho thấy đứa
+     trẻ đã đổi — mà "trẻ đổi rất nhanh" là lý do lằn ranh thứ hai tồn
+     tại. Ghi đè là xoá đúng bằng chứng ấy. */
+  const lap2 = await goi({fn:'lapTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001', tuoiCon:9,
+    the:Object.assign({}, theSach, {d1:'Nay sáng nhất khi kể chuyện cho em nghe'})});
+  const demThe = db.prepare("SELECT COUNT(*) n FROM theVungManh WHERE maNha='NHA-001'").get().n;
+  bao(lap2.than.ok && lap2.than.lan === 2 && lap2.than.theTruoc === lap1.than.id &&
+      demThe === 2,
+    'LẬP THẺ MỚI KHÔNG GHI ĐÈ THẺ CŨ — chuỗi thẻ là thứ cho thấy đứa trẻ đã đổi',
+    demThe + ' thẻ trong sổ · ghi đè là xoá đúng bằng chứng của lằn ranh thứ hai');
+
+  /* ── LR2 · HẠN CHÍN MƯƠI NGÀY CÓ RĂNG ──
+     Quá hạn thì KHÔNG trả về năm dòng. Đọc được năm dòng thì người ta
+     dùng nó, dù có một dòng chữ đỏ bên trên. */
+  const conHan = await goi({fn:'docTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001'});
+  const quaHan = await goi({fn:'docTheVungManh', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001', bayGio:new Date(Date.now() + 100*86400000).toISOString()});
+  bao(conHan.than.ok && conHan.than.conHan === true && !!conHan.than.the &&
+      quaHan.than.ok && quaHan.than.conHan === false &&
+      quaHan.than.the === undefined && quaHan.than.quaHanNgay >= 9,
+    'LR2 · QUÁ 90 NGÀY THÌ MÁY KHÔNG TRẢ VỀ NĂM DÒNG NỮA — hạn là một cánh cửa, không phải lời nhắc',
+    'quá hạn ' + quaHan.than.quaHanNgay + ' ngày · đọc được năm dòng thì người ta ' +
+    'dùng nó, dù có một dòng chữ đỏ bên trên');
+
+  /* Và lộ trình cũng không dựng được từ thẻ quá hạn: dựng lộ trình ba
+     trăm sáu mươi lăm ngày trên một quan sát đã cũ là kéo dài cái nhãn
+     cũ thêm một năm. */
+  const ltQua = await goi({fn:'loTrinhTuThe', token:tkSA, u:'superadmin@gita365.vn',
+    maNha:'NHA-001', bayGio:new Date(Date.now() + 100*86400000).toISOString()});
+  bao(!ltQua.than.ok && ltQua.than.code === 'THEQUAHAN',
+    'LỘ TRÌNH KHÔNG DỰNG ĐƯỢC TỪ THẺ QUÁ HẠN',
+    'kéo dài một cái nhãn cũ thêm một năm');
+
+  /* Máy ĐỀ NGHỊ, người chốt — và không khớp gì thì NÓI LÀ KHÔNG BIẾT,
+     không rơi về một lộ trình mặc định rồi gọi nó là cá nhân hoá. */
+  const ltCo = mVM.deNghiLoTrinh({T4:'lam', T7:'soBiCuoi'});
+  const ltKhong = mVM.deNghiLoTrinh({T4:'nhin', T5:'damDong'});
+  bao(ltCo.doi.length === 2 && ltKhong.doi.length === 0 &&
+      /KHÔNG rơi về một lộ trình mặc định/.test(ltKhong.vi),
+    'THẺ → LỘ TRÌNH: máy ĐỀ NGHỊ, và không khớp gì thì NÓI LÀ KHÔNG BIẾT',
+    'rơi về một lộ trình mặc định rồi gọi nó là cá nhân hoá là nói dối về chỗ tốn ' +
+    'công nhất của cả chương trình');
+
+  /* ── LR1 · KHÔNG XẾP HẠNG TRẺ VỚI NHAU ──
+     Đo bằng cách hỏi DANH SÁCH CỬA của máy chủ: không cửa nào của phân
+     hệ này trả về nhiều thẻ cùng lúc. Đây là phép đo về CẤU TRÚC —
+     một cửa như thế mà có mặt là đỏ, dù chưa ai gọi nó. */
+  const cuaVM = Object.keys(mVM).filter(k => typeof mVM[k] === 'function');
+  const cuaNhieu = cuaVM.filter(k => /dsThe|danhSachThe|xepHang|soSanhThe|topThe/i.test(k));
+  bao(cuaNhieu.length === 0,
+    'LR1 · KHÔNG CÓ CỬA NÀO TRẢ VỀ NHIỀU THẺ CÙNG LÚC ĐỂ SO',
+    cuaVM.length + ' cửa, không cửa nào xếp hạng — vùng mạnh không phải một cuộc ' +
+    'thi, và một bảng xếp hạng trẻ em sinh ra là để cha mẹ nhìn vào');
+}
+
 const soRa = await goi({fn:'soDiRa', token:tkSA, u:'superadmin@gita365.vn'});
 bao(soRa.than.ok && soRa.than.so === 1 &&
     soRa.than.ds[0].daGui === raNgoai.than.daGui,

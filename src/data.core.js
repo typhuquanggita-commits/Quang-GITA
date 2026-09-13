@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.62',
+  version: '9.99.63',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -889,6 +889,11 @@ G.NAV = [
        người chạm khách nhiều nhất lại không đọc được luật mình phải
        theo. */
     {v:'bo-nao', t:'Bộ não GITA 365', h:'Hiến pháp 13 điều · ba vùng uỷ quyền · hàng rào 10 điểm · ẩn danh trước khi ra ngoài · bảy ghế tham mưu', ic:'book', star:1, perm:'nghe_chung', capMo:'chung'},
+    /* Vùng Mạnh đứng ngay sau Bộ não: bản đặc tả gọi nó là LÕI của
+       v3.0, và nó là phân hệ duy nhất chạm thẳng vào một đứa trẻ
+       cụ thể. `nghe_chung` cùng lý do với Bộ não — người chạm khách
+       nhiều nhất phải đọc được luật mình phải theo. */
+    {v:'vung-manh', t:'Vùng mạnh của con', h:'Ba thứ quan sát được · bảy trường · bốn tuần · Thẻ Vùng Mạnh hạn 90 ngày · bậc thang năm tầng giá trị', ic:'star', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
