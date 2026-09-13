@@ -15,6 +15,25 @@
 const zlibGoi = require('zlib');
 const fsGoc = require('fs');
 const pathGoc = require('path');
+
+/* ══ BỎ CẢ CHÚ GIẢI LẪN CHUỖI TRƯỚC KHI DÒ MỘT CÁI TÊN BỊ CẤM ══
+   Luật 9.99.78, rút ra sau bốn lần cùng một lớp lỗi: mục 89 (cột
+   `ghiChu`) · mục 91 (dòng `12/12`) · mục 93 (`hoSo.username`) · mục
+   94 (câu cảnh báo "ps aux đọc được argv" nằm trong một CHUỖI).
+
+   Chỗ KHAI một cái tên và chỗ NÓI VỀ cái tên ấy là hai chuyện khác
+   nhau. Một phép đo bắt oan lời cảnh báo về một cái bẫy là phép đo
+   DẠY NGƯỜI TA XOÁ LỜI CẢNH BÁO ĐI.
+
+   Dựng ở 9.99.78 nhưng sống CỤC BỘ trong khối mục 94. Mục 97 cần đúng
+   hàm ấy — chép sang là bản thứ hai, và bản trôi thì không ai thấy vì
+   bản kia vẫn đúng. Nay nó ở đây, cả hai mục cùng TRỎ vào. */
+const boChuMa = t => t
+  .replace(/\/\*[\s\S]*?\*\//g, '')
+  .replace(/(^|[^:])\/\/.*$/gm, '$1')
+  .replace(/'(?:[^'\\]|\\.)*'/g, "''")
+  .replace(/"(?:[^"\\]|\\.)*"/g, '""')
+  .replace(/`(?:[^`\\]|\\.)*`/g, '``');
 const doiKhoXong = require('./doi-kho-xong');
 function ruotGoi(ro) {
   const b = Buffer.isBuffer(ro) ? ro : Buffer.from(ro);
@@ -15740,12 +15759,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
        vấp: **phép đo dò một cái tên bị cấm trong mã nguồn phải bỏ CẢ
        chú giải LẪN chuỗi.** Chỗ khai một cái tên và chỗ NÓI VỀ cái tên
        ấy là hai chuyện khác nhau. */
-    const boChu = t => t
-      .replace(/\/\*[\s\S]*?\*\//g, '')
-      .replace(/(^|[^:])\/\/.*$/gm, '$1')
-      .replace(/'(?:[^'\\]|\\.)*'/g, "''")
-      .replace(/"(?:[^"\\]|\\.)*"/g, '""')
-      .replace(/`(?:[^`\\]|\\.)*`/g, '``');
+    const boChu = boChuMa;   /* trỏ vào bản chung ở đầu tệp */
     const thanMK = (t) => {
       const m = /function docMatKhau\(\)\s*\{([\s\S]*?)\n\}/.exec(t);
       return m ? boChu(m[1]) : '';
@@ -16145,6 +16159,157 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
       'MỌI MÀN KHAI CÓ DẢI NHẮC DỮ LIỆU MẪU ĐỀU CÓ THẬT. Đây là vế bịt chỗ hở mà phép dò tên người KHÔNG thấy: một kho chỉ có con số — không tên nhà nào — thì vế A im, và chỗ duy nhất còn bắt được là phía MÀN. Một tên màn chết trong danh sách thì dải nhắc không hiện ở đâu cả, mà danh sách vẫn trông đủ',
       dm.manChet.length ? 'KHAI MÀN KHÔNG TỒN TẠI: ' + dm.manChet.join(' · ')
         : dm.soMan + ' màn khai đều có thật trong G.VIEWS');
+  }
+
+
+  console.log('\n97 · GITA SUPREME — BẢN ĐỒ KHÔNG ĐƯỢC MỌC RA MỘT BẢNG CẤM THỨ HAI');
+  /* ══════════════════ 97. QUYỂN I–III VÀ CÁI TRẦN CỦA CHÚNG ══════════════════
+
+     Bản đặc tả `MYVIP.doc` dài 410.000 ký tự và không mô tả một màn
+     hình — nó mô tả MỘT MẠNG XÃ HỘI. Bản 9.99.83 dựng CÁI TRẦN trước,
+     lần thứ tư sau Hiến pháp (9.99.62), trần giám sát (9.99.76), vòng
+     tự nâng cấp (9.99.77).
+
+     BỐN VẾ. Vế A là vế nặng nhất, và nó canh một thứ khác mọi mục
+     trước: không phải một luật bị phạm, mà một CÁI TÊN bị dùng lại.
+
+     A · BẪY TÊN GỌI. Chữ "điểm chạm" nay mang ba nghĩa: 1.000 điểm
+         TIẾN ĐỘ (đã chốt 9.99.74), 9 điểm chạm CẢM XÚC (kho DIEMCHAM),
+         và 100.000 điểm chạm HỆ THỐNG (Quyển II, chưa dựng). Gõ trần
+         `diemCham` ở phần mới thì nó lặng lẽ khớp vào phép soi của
+         thang cũ, và CẢ HAI PHÉP SOI CÙNG XANH TRÊN HAI THỨ KHÁC NHAU
+         — đúng cái bẫy chữ `tầng` đã ghi ở 9.99.65.
+
+         Một luật bị phạm thì có người cãi. Hai thang cùng tên thì
+         không ai cãi — chúng chỉ dần dần được đọc như một, và không ai
+         quyết định gộp chúng cả.
+
+         Phép đo dò trên mã ĐÃ BỎ chú giải và chuỗi (luật 9.99.78):
+         chỗ KHAI một cái tên và chỗ NÓI VỀ cái tên ấy là hai chuyện
+         khác nhau, và cả kho lẫn màn của phần này nói về `diemCham`
+         rất nhiều — đó chính là việc của chúng.
+
+     B · KHÔNG MỌC BẢNG CẤM THỨ HAI. `VIP_CAM` (9.99.76) đã khai sáu
+         điều cấm. Chép chúng sang `SUP_*` là dựng bản thứ hai của một
+         BẢNG CẤM — bản nguy nhất trong mọi bản thứ hai, vì sửa một bên
+         thì bên kia vẫn chặn theo luật cũ MÀ CẢ HAI VẪN XANH. Phép đo
+         về thứ không được tồn tại, lối đo thứ chín trong bộ.
+
+     C · MỖI CHỖ VA TRỎ VÀO MỘT MÃ LUẬT CÓ THẬT. Một điều cấm trỏ vào
+         cái tên không tồn tại thì nó không chặn gì cả, mà nhìn vẫn y
+         hệt một điều cấm đủ răng — cùng bẫy `layTuKho` của mục 89.
+
+     D · CHỖ BẮT OAN PHẢI ĐƯỢC KHAI, KHÔNG ĐƯỢC GIẤU. Lượt quét đầu cho
+         tám dấu hiệu; HAI là bắt oan, vì tài liệu đang PHÊ PHÁN chính
+         thứ bị dò. Nêu chỗ va mà giấu chỗ bắt oan thì người đọc tưởng
+         cả bản đặc tả là sai rồi thôi không đọc — và lúc ấy bốn chỗ va
+         thật cũng không ai đọc. */
+  {
+    const sup = await p.evaluate(() => {
+      const G = window.G;
+      const thang = G.SUP_THANG || [], va = G.SUP_VA || [], oan = G.SUP_OAN || [];
+      const vipMa = (G.VIP_CAM || []).map(x => x.ma);
+      /* Mọi mã luật được trỏ tới, gom từ ô `luat` của từng chỗ va. */
+      const troToi = va.map(v => v.luat || '');
+      return {
+        soThang: thang.length,
+        tenThang: thang.map(t => t.o || ''),
+        coChamSUP: thang.some(t => /chamSUP/.test(t.o || '')),
+        soVa: va.length,
+        vaThieuLuat: va.filter(v => !(v.luat || '').trim()).map(v => v.ma),
+        vaThieuDuong: va.filter(v => !(v.duong || '').trim()).map(v => v.ma),
+        troToi,
+        /* Mã luật hợp lệ = mã có thật trong một bảng luật đã chạy, HOẶC
+           tên một kho G.* có thật. Hỏi kho, không hỏi trí nhớ. */
+        vaTroSai: (() => {
+          const ma = new Set();
+          /* Gom mã từ MỌI bảng luật đã chạy, không liệt kê tay bốn cái:
+             liệt kê tay là bản thứ hai, và nó thiếu đúng bảng mới. Lượt
+             chạy đầu thiếu `NT_LOC7` nên V3 (trỏ vào QC1, có thật) bị báo
+             đỏ oan — sửa phép đo, không sửa dữ liệu. */
+          Object.keys(G).forEach(k => {
+            const v = G[k];
+            if (Array.isArray(v)) v.forEach(x => {
+              if (x && typeof x === 'object' && typeof x.ma === 'string') ma.add(x.ma);
+            });
+          });
+          Object.keys(G).forEach(k => { if (/^[A-Z][A-Z0-9_]*$/.test(k)) ma.add(k); });
+          const xau = [];
+          va.forEach(v => {
+            const t = v.luat || '';
+            if (/CHƯA CÓ LUẬT/.test(t)) return;   /* chỗ trống, khai thẳng là hợp lệ */
+            let thay = false;
+            ma.forEach(m => { if (m.length >= 3 && t.indexOf(m) >= 0) thay = true; });
+            if (!thay) xau.push(v.ma);
+          });
+          return xau;
+        })(),
+        vipMa,
+        /* B · SUP_ không được mọc một bảng cấm mang cùng mã C1..C6 */
+        supTrungMa: va.filter(v => vipMa.indexOf(v.ma) >= 0).map(v => v.ma),
+        supCoBangCam: Object.keys(G).filter(k =>
+          /^SUP_/.test(k) && /CAM|CAM_LUAT/.test(k)),
+        soOan: oan.length,
+        oanThieu: oan.filter(x => !(x.nguyenVan || '').trim() || !(x.that || '').trim())
+          .map(x => x.dau),
+        /* Tổng năng lực ma trận phải khớp con số bản đặc tả khai */
+        tongNL: (G.SUP_CUM || []).reduce((a, c) => a + (c.nl || []).length, 0),
+        soLop: (G.SUP_LOP || []).length,
+        demKhai: (G.SUP_DEM || {}).khai,
+        demCoChu: (G.SUP_DEM || {}).coChu,
+        khoiCoChu: (G.SUP_KHOI || []).reduce((a, k) =>
+          a + (k.daViet ? (k.den - k.tu + 1) : (k.le || []).length), 0)
+      };
+    });
+
+    /* A · bẫy tên gọi — đo trên MÃ NGUỒN đã bỏ chú giải và chuỗi */
+    const fsS = require('fs'), pS = require('path'), gocS = pS.join(__dirname, '..');
+    const tran = boChuMa(fsS.readFileSync(pS.join(gocS, 'src', 'supreme.js'), 'utf8')) +
+      '\n' + boChuMa(fsS.readFileSync(pS.join(gocS, 'kho-goc', 'data.supreme.js'), 'utf8'));
+    /* Tên ô bị cấm ở phần này: `diemCham` gõ trần làm KHOÁ của một ô. */
+    const goTran = /(^|[^A-Za-z_$.])diemCham\s*[:=]/.test(tran);
+    bao(!goTran && sup.coChamSUP && sup.soThang === 3,
+      'BẪY TÊN GỌI ĐƯỢC CANH: phần GITA Supreme KHÔNG gõ trần `diemCham` làm tên ô, và thang thứ ba mang tên riêng `chamSUP`. Ba thang cùng mang chữ "điểm chạm" — 1.000 điểm tiến độ đã chốt ở 9.99.74, 9 điểm chạm cảm xúc ở kho DIEMCHAM, và 100.000 điểm chạm hệ thống của Quyển II. Một luật bị phạm thì có người cãi; hai thang cùng tên thì không ai cãi, chúng chỉ dần được đọc như một',
+      goTran ? 'CÓ Ô GÕ TRẦN `diemCham` trong mã của phần Supreme — đổi sang `chamSUP`'
+        : !sup.coChamSUP ? 'thang thứ ba KHÔNG khai tên riêng `chamSUP`'
+        : sup.soThang !== 3 ? 'có ' + sup.soThang + ' thang, phải là 3'
+        : '3 thang khai riêng: ' + sup.tenThang.join(' · '));
+
+    /* B · phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI */
+    bao(!sup.supCoBangCam.length && !sup.supTrungMa.length,
+      'PHẦN SUPREME KHÔNG MỌC RA MỘT BẢNG CẤM THỨ HAI. `VIP_CAM` đã khai sáu điều cấm và bốn trong số đó phủ đúng chỗ Quyển I–III đụng tới. Bản thứ hai của một BẢNG CẤM là bản nguy nhất trong mọi bản thứ hai: sửa một bên thì bên kia vẫn chặn theo luật cũ, MÀ CẢ HAI VẪN XANH',
+      sup.supCoBangCam.length ? 'MỌC BẢNG CẤM: ' + sup.supCoBangCam.join(' · ')
+        : sup.supTrungMa.length ? 'TRÙNG MÃ với VIP_CAM: ' + sup.supTrungMa.join(' · ')
+        : sup.soVa + ' chỗ va mới · 0 bảng cấm thứ hai · VIP_CAM giữ nguyên ' +
+          sup.vipMa.length + ' điều');
+
+    /* C · mỗi chỗ va trỏ vào luật CÓ THẬT, và có đường đi */
+    /* Tra KHO THẬT, không tra một danh sách mã gõ tay ở đây: một danh
+       sách gõ tay là bản thứ hai, và nó cũ đi đúng ngày có mã luật mới.
+       Bài học 9.99.77 — phép dò tên kho chỉ biết một trong ba chỗ thì
+       nó báo đỏ một vùng đang trỏ đúng. */
+    const troSai = sup.vaTroSai || [];
+    bao(!troSai.length && !sup.vaThieuLuat.length && !sup.vaThieuDuong.length,
+      'MỖI CHỖ VA TRỎ VÀO MỘT MÃ LUẬT CÓ THẬT VÀ KÈM ĐƯỜNG ĐI. Một điều cấm trỏ vào cái tên không tồn tại thì nó không chặn gì cả, mà nhìn vẫn y hệt một điều cấm đủ răng; và một chỗ va không kèm đường đi thì nó chỉ là một lời than — người đọc biết chỗ hỏng mà không biết đi đâu',
+      troSai.length ? 'TRỎ VÀO MÃ LUẬT KHÔNG NHẬN RA: ' + troSai.join(' · ')
+        : sup.vaThieuLuat.length ? 'THIẾU Ô `luat`: ' + sup.vaThieuLuat.join(' · ')
+        : sup.vaThieuDuong.length ? 'THIẾU Ô `duong`: ' + sup.vaThieuDuong.join(' · ')
+        : sup.soVa + ' chỗ va, mỗi chỗ có mã luật và đường đi');
+
+    /* D · chỗ bắt oan phải khai, và các con số đếm được phải khớp */
+    const demKhop = sup.demCoChu === sup.khoiCoChu;
+    bao(sup.soOan >= 2 && !sup.oanThieu.length && sup.tongNL === 28 &&
+        sup.soLop === 10 && demKhop,
+      'CHỖ PHÉP DÒ BẮT OAN ĐƯỢC KHAI KÈM NGUYÊN VĂN, VÀ MỌI CON SỐ ĐẾM ĐƯỢC ĐỀU KHỚP. Nêu chỗ va mà giấu chỗ bắt oan thì người đọc tưởng cả bản đặc tả là sai rồi thôi không đọc — và lúc ấy bốn chỗ va thật cũng không ai đọc',
+      !sup.soOan ? 'KHÔNG KHAI CHỖ BẮT OAN NÀO — lượt quét đầu có hai'
+        : sup.oanThieu.length ? 'CHỖ BẮT OAN THIẾU NGUYÊN VĂN HOẶC SỰ THẬT: ' + sup.oanThieu.join(' · ')
+        : sup.tongNL !== 28 ? 'MA TRẬN CÓ ' + sup.tongNL + ' NĂNG LỰC, bản đặc tả khai 28'
+        : sup.soLop !== 10 ? 'CÓ ' + sup.soLop + ' LỚP, bản đặc tả khai 10'
+        : !demKhop ? 'SỐ PHẦN ĐÃ VIẾT LỆCH: ô `coChu` ghi ' + sup.demCoChu +
+            ' mà cộng từ SUP_KHOI ra ' + sup.khoiCoChu +
+            ' — hai bản chép viết tay của cùng một con số'
+        : sup.soOan + ' chỗ bắt oan · 28 năng lực · 10 lớp · ' +
+          sup.demCoChu + '/' + sup.demKhai + ' phần đã có chữ');
   }
 
 

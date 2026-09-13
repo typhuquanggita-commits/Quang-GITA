@@ -2709,6 +2709,131 @@ Vế A nhìn từ **dữ liệu**, vế C nhìn từ **danh sách**. Chỉ vế 
 `TAILIEU` · bỏ `thatKhi` của `HAILONG` · khai một kho không có · khai
 một màn không có → **bốn dòng đỏ, gọi đúng tên từng chỗ**.
 
+
+---
+
+## GITA SUPREME — BẢN ĐỒ VÀ TRẦN CỦA BA QUYỂN (9.99.83)
+
+Theo hai tệp chủ hệ gửi: **`MYVIP.doc`** (410.000 ký tự — Quyển I
+nghiên cứu 14 nền tảng → ma trận 28 sức mạnh · Quyển II chuỗi 100.000
+điểm chạm · Quyển III Kênh GITA Supreme 100 phần) và **`Trợ lý giám
+sát GITA Vip.doc`** — tệp thứ hai **đã dựng ở 9.99.76**, bản này không
+dựng lại.
+
+Màn **GITA Supreme · bản đồ** (`src/supreme.js`, bốn ngăn), kho
+`data.supreme.js` (10 kho, tiền tố `SUP_`), bộ kiểm **mục 97** (4 phép
+đo).
+
+### Dựng CÁI TRẦN trước — lần thứ tư, và lý do gắt hơn cả ba lần trước
+
+Sau Hiến pháp (9.99.62), trần giám sát (9.99.76), vòng tự nâng cấp
+(9.99.77). Ở đây: **bản đặc tả không mô tả một màn hình — nó mô tả một
+MẠNG XÃ HỘI.** Dựng mạng trước rồi mới hỏi luật nào áp cho nó thì tới
+lúc ấy mỗi tính năng đã có một luật riêng, gom lại không gom được nữa.
+
+### NGĂN ĐẦU LÀ BẪY TÊN GỌI, KHÔNG PHẢI CHỖ VA
+
+Khác 9.99.76 nơi ngăn đầu là sáu điều cấm. Chỗ nguy nhất ở đây không
+phải một luật bị phạm — nó là **ba thang cùng mang chữ "điểm chạm"**:
+
+| Thang | Gõ là gì | Tổng | Chốt ở đâu |
+|---|---|---|---|
+| Tiến độ một gia đình | `diemCham` | 1.000 | 9.99.74, đã chốt |
+| Chín khoảnh khắc cảm xúc | `DIEMCHAM` | 9 | kho đang chạy |
+| Hệ thống chủ động chạm | **`chamSUP`** | 100.000 | CHƯA chốt · SUP-01 |
+
+**Một luật bị phạm thì có người cãi. Hai thang cùng tên thì không ai
+cãi — chúng chỉ dần được đọc như một, và không ai quyết định gộp cả.**
+
+Cùng cái bẫy chữ *tầng* ở 9.99.65, và chữa đúng một cách: **chọn tiền
+tố TRƯỚC khi viết** (9.99.67). Mục 97 dò trên mã đã bỏ chú giải và
+chuỗi — luật 9.99.78, vì kho và màn của phần này *nói về* `diemCham`
+rất nhiều, và đó chính là việc của chúng.
+
+### Bốn chỗ va MỚI — không chép lại sáu điều cấm đã có
+
+`VIP_CAM` (9.99.76) đã phủ bốn chỗ Quyển I–III đụng tới: xếp hạng
+người (C1) · sinh trắc trẻ (C2) · hạ cấp và đặt lại chuỗi (C4) · doạ
+mất chuỗi (C5). **Bản thứ hai của một BẢNG CẤM là bản nguy nhất trong
+mọi bản thứ hai:** sửa một bên thì bên kia vẫn chặn theo luật cũ, mà
+cả hai vẫn xanh. Mục 97 canh rằng `SUP_*` không mọc bảng cấm thứ hai.
+
+| Mã | Đòi gì | Đếm | Luật |
+|---|---|---|---|
+| V1 | GITA Moment — ảnh thật mỗi ngày, camera kép | 11 | **L07** · Điều 13 |
+| V2 | Escrow · Thị Trường · động từ "Kiếm" | 18 | **chưa có luật** → SUP-02 |
+| V3 | "mạnh nhất thế giới" · "vô địch" | 7 | **QC1** |
+| V4 | thang 100.000 đứng cạnh thang 1.000 | 0 | **LGD_HAI_TRUC** |
+
+**V1 lọt qua C3:** C3 cấm quay hình *liên tục*; Moment là ảnh *rời* mỗi
+ngày nên C3 không phủ tới. Nhưng một cơ chế bắn báo giờ ngẫu nhiên rồi
+đòi chụp ngay thì **không có chỗ cho một lời từ chối** — mà L07 nói rõ:
+con từ chối thì ẩn nút, không hỏi lại.
+
+**V4 đếm 0 lần, và đó chính là điều đáng lo:** bản đặc tả không hề nhắc
+tới thang 1.000 — nó không biết thang kia tồn tại.
+
+### Hai chỗ phép dò của chính tôi BẮT OAN
+
+Lượt quét đầu trên 410.000 ký tự cho tám dấu hiệu; **hai là bắt oan**,
+cả hai cùng một kiểu: **tài liệu đang PHÊ PHÁN chính thứ bị dò**.
+
+| Dấu hiệu | Khớp | Nguyên văn |
+|---|---|---|
+| `bảng xếp hạng` | 15 | *"gương soi riêng, không phải bảng xếp hạng"* |
+| `giám sát từng giây` | 3 | *"…mâu thuẫn với mô hình tối đa hóa thời gian"* |
+
+Khai cả hai là **bắt buộc**: nêu chỗ va mà giấu chỗ hợp thì người đọc
+tưởng cả bản đặc tả là sai rồi thôi không đọc — và lúc ấy bốn chỗ va
+thật cũng không ai đọc. Lớp bắt oan thứ ba của kho, sau `boDau('hư')`
+(9.99.54) và lời cảnh báo nằm trong chuỗi (9.99.78).
+
+### Mục 97 bắt HAI lỗi của chính người viết nó, ở lượt chạy đầu
+
+1. **V4 trỏ vào một CHỐT, không vào mã luật.** Sửa dữ liệu (trỏ
+   `LGD_HAI_TRUC`) **và** sửa phép đo: tra **kho thật** thay vì một
+   danh sách mã gõ tay. Lượt sau nó lại đỏ oan V3 vì danh sách thiếu
+   `NT_LOC7` — nên nay gom mã từ **mọi** bảng có ô `ma`. Bài học
+   9.99.77: một phép dò chỉ biết một trong ba chỗ thì nó báo đỏ một
+   vùng đang trỏ đúng.
+2. **`coChu` ghi 45 mà cộng từ `SUP_KHOI` ra 44** — hai bản chép viết
+   tay của cùng một con số. Sự thật: khối F mới có **đúng một** phần
+   lẻ (45). Nay khối khai ô `le:[45]` và phép đo cộng lại từ bảng.
+
+### Một bản chép thứ hai suýt ra đời — lần thứ tư
+
+`boChu` (bỏ chú giải + chuỗi trước khi dò tên bị cấm, luật 9.99.78)
+dựng ở mục 94 nhưng **sống cục bộ trong khối ấy**. Mục 97 cần đúng hàm
+đó. Nay nó là `boChuMa` ở đầu `kiem-tra.js`, cả hai mục cùng **trỏ**
+vào — giống hệt `daTienSangDaChot` ở 9.99.81 và `cau()` ở 9.99.78.
+
+### Và lỗi `U.sec()` thoát hai lần, mắc lại
+
+`U.sec()` **tự gọi `U.h()`** trên tham số. Truyền `h(...)` vào là thoát
+lần thứ hai và người đọc thấy `&quot;` giữa câu tiếng Việt. Bản 9.24 gỡ
+77 chỗ, 9.99.70 mắc lại ở `U.empty()`, và bản này mắc lần thứ ba. Bộ rà
+soát chỗ trống bắt ngay — **lỗi không sinh lỗi trang nên nó sống rất
+lâu nếu không có phép đo.**
+
+### Bản đặc tả mới có 45/100 phần
+
+Khối A–E trọn (44 phần) + đúng một phần lẻ của khối F. Khối G mới có
+tiêu đề. Đếm bằng máy trên chính tệp, không đọc bằng mắt. Trình "100
+phần" mà không nói 55 phần chưa có chữ nào thì người đọc tin là đã đủ —
+cùng luật `conLaiChuaTrinh` của bản tin sáng (9.99.71).
+
+### Sổ chờ
+
+- **SUP-01** — 100.000 điểm chạm là **chỉ tiêu** hay **cách đếm**? Nếu
+  là chỉ tiêu thì sáu tháng sau có người chạy cho đủ số, và một điểm
+  chạm chạy cho đủ số là một điểm chạm làm phiền. Tên `chamSUP` đã đặt
+  sẵn để không đụng thang 1.000.
+- **SUP-02** — Cửa hàng tri thức Escrow: mở chiều tiền thứ hai (thành
+  viên bán cho thành viên, hệ giữ tiền tạm) là **hoạt động trung gian
+  thanh toán**, có hậu quả pháp lý. Hỏi luật sư trước; nếu không mở thì
+  nói ra, để năng lực 3 · 17 · 24 · 25 được khai là **không dựng** chứ
+  không phải chưa dựng.
+
 ---
 
 ## Bộ tối ưu cấu hình gói (9.99.68)

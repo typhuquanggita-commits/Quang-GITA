@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 116 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 117 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 147 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 148 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.82',
+  version: '9.99.83',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -957,6 +957,7 @@ G.NAV = [
     {v:'luat-giao-dien', t:'Luật giao diện', h:'Mười hai luật phủ quyết sinh ra từ ba mươi phần của khoá học — và răng nằm ở MÁY CHỦ chứ không ở màn hình, vì giao diện là thứ bị viết lại nhiều nhất trong mọi kho · bảy luật có cổng chặn thật, năm luật nói về màn chưa dựng nên được canh bằng phép đo về thứ CHƯA ĐƯỢC TỒN TẠI · không xếp hạng gia đình · không tụt cấp · vòng đỏ không rời máy · máy không soạn hộ lời xin lỗi', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'tu-nang-cap', t:'Vòng tự nâng cấp', h:'Một hệ tự nâng cấp mà sửa được chính đường nâng cấp của nó là một hệ KHÔNG CÓ GIỚI HẠN NÀO CẢ — nên bảy vùng không chạm được dựng trước vòng năm cửa · chạm bảy vùng ấy KHÔNG phải "cần duyệt cao hơn", vì mọi cái thang đều leo được · MÁY xếp cấp việc, người đề xuất không tự chọn — để họ tự xếp thì mọi thứ đều là Cấp 1 · cửa chạy thử so HAI MỐC THẬT chứ không đọc một ô tích · đường lùi phải được THỬ, không chỉ được viết', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'giam-sat', t:'Trần giám sát', h:'GITA-VIP dựng CÁI TRẦN trước, chưa dựng bộ giám sát — một cái cổng dựng sau một cái cửa đã chạy thì nó chỉ là một lời nhắc · sáu điều CẤM TUYỆT ĐỐI không lệnh nào mở được, kể cả lệnh R01 có chữ ký · ba ngăn phạm vi khác nhau ở CĂN CỨ PHÁP LÝ chứ không ở mức độ · lệnh uỷ quyền phải có hạn và tự thu hồi · sổ nối băm, sửa một dòng là vỡ mọi dòng sau', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
+    {v:'supreme', t:'GITA Supreme · bản đồ', h:'Bản đồ ba quyển nghiên cứu của chủ hệ và CÁI TRẦN của chúng — ngăn đầu là BẪY TÊN GỌI: ba thang cùng mang chữ điểm chạm (1.000 tiến độ · 9 cảm xúc · 100.000 hệ thống), và một luật bị phạm thì có người cãi còn hai thang cùng tên thì không ai cãi · bốn chỗ va MỚI, không chép lại sáu điều cấm đã có · hai chỗ phép dò của chính tôi BẮT OAN vì tài liệu đang phê phán chính thứ bị dò · ma trận 28 năng lực · mười lớp điểm chạm · 45/100 phần đã có chữ', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
@@ -1422,6 +1423,7 @@ G.ITEM_EN = {
   'luat-giao-dien':['Interface Laws','twelve veto rules born out of the thirty-part course — the teeth live on the SERVER, not in the interface, because the interface is the most-rewritten part of any codebase · seven laws have real gates today; five describe screens not yet built and are guarded by measuring that the door does NOT YET EXIST · no ranking families · no demotion · red-circle data never leaves the device · the machine never drafts an apology'],
   'hom-nay':['Today','one single task for tonight — tick it and put the phone down; two equal tasks at nine in the evening, in the kitchen, hands busy, means neither gets done · Storm Mode is one tap and NEVER asks why · skipping a task is never interrogated · heavy items carry a Some other day button beside continue, at the SAME SIZE'],
   'tu-nang-cap':['Self-Upgrade Loop','A system that can rewrite its own upgrade path has no limits at all — so the seven no-touch zones are built BEFORE the five-gate loop · touching them is NOT "needs higher approval", because every ladder can be climbed · the MACHINE assigns the work tier, never the proposer — let people tier their own work and everything is Tier 1 · the sandbox gate compares TWO REAL TIMESTAMPS instead of reading a checkbox · the rollback path must be TESTED, not merely written'],
+  'supreme':['GITA Supreme · Map','Map of the owner\'s three research volumes and their CEILING — the first tab is the NAMING TRAP: three different scales all called touchpoints (1,000 progress · 9 emotional · 100,000 system), and a broken rule gets argued about while two scales sharing a name never do — they are simply read as one · four NEW conflicts, not a second copy of the six existing prohibitions · two places my own scan raised FALSE POSITIVES because the document was criticising the very thing being scanned for · 28-capability matrix · ten touchpoint layers · 45 of 100 parts actually written'],
   'giam-sat':['Monitoring Ceiling','GITA-VIP builds the CEILING first and no monitor yet — a gate built after a door is already running is only a reminder · six ABSOLUTE PROHIBITIONS no order can lift, not even a signed R01 order · three scopes that differ by LEGAL BASIS, not by degree · every authorisation must carry an expiry and revokes itself · hash-chained ledger where editing one row breaks every row after it'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
@@ -3769,6 +3771,7 @@ G.THUOC_CAP_PHEP = [
   'BP_NOI','BP_NOI_LUAT','BP_OFFLINE','BP_CHOCHU',
   /* v9.99.73 — bảng giá sửa được */
   'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
+  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_DEM','SUP_CHOCHU',
   'VIP_CAM','VIP_CAM_LUAT','VIP_NGAN','VIP_LENH','VIP_SA_KHONG','VIP_60',
   'VIP_SUA_CHU','VIP_CHOCHU',
   /* v9.99.77 — vòng tự nâng cấp */
@@ -43330,6 +43333,198 @@ G.VIEWS = G.VIEWS || {};
        : G.vipNgan === 'lenh' ? veLenh()
        : G.vipNgan === 'sau' ? veSau()
        : veTran();
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/supreme.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÀN GITA SUPREME: BẢN ĐỒ VÀ TRẦN  (9.99.83)
+
+   Theo tệp `MYVIP.doc` của chủ hệ — ba quyển, 410.000 ký tự:
+   Quyển I nghiên cứu 14 nền tảng → ma trận 28 sức mạnh · Quyển II
+   chuỗi 100.000 điểm chạm chia 10 lớp · Quyển III Kênh GITA Supreme
+   100 phần.
+
+   ══ MÀN NÀY TRÌNH BẢN ĐỒ VÀ CÁI TRẦN, CHƯA TRÌNH CÁI KÊNH ══
+
+   Lần thứ tư thứ tự ấy được chọn, sau Hiến pháp (9.99.62), trần giám
+   sát (9.99.76) và vòng tự nâng cấp (9.99.77). Ở đây lý do gắt hơn cả
+   ba: bản đặc tả không mô tả một màn hình — nó mô tả MỘT MẠNG XÃ HỘI.
+   Dựng mạng trước rồi mới hỏi luật nào áp cho nó thì tới lúc ấy mỗi
+   tính năng đã có một luật riêng, và gom lại không gom được nữa.
+
+   ══ NGĂN ĐẦU LÀ BẪY TÊN GỌI, KHÔNG PHẢI CHỖ VA ══
+
+   Khác 9.99.76, nơi ngăn đầu là sáu điều cấm. Ở đây chỗ nguy nhất
+   không phải một luật bị phạm — nó là BA THANG CÙNG TÊN "điểm chạm".
+   Một luật bị phạm thì có người cãi; hai thang cùng tên thì không ai
+   cãi, chúng chỉ lặng lẽ được đọc như một.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  var NGAN = [
+    {ma: 'ten',  ten: 'Bẫy tên gọi',      ic: 'shield'},
+    {ma: 'va',   ten: 'Chỗ va · chỗ hợp', ic: 'pulse'},
+    {ma: 'matran', ten: 'Ma trận 28',     ic: 'star'},
+    {ma: 'lop',  ten: '10 lớp · 100 phần', ic: 'list'}
+  ];
+
+  G.supNgan = G.supNgan || 'ten';
+
+  function veLai() {
+    if (!G.S || G.S.view !== 'supreme') return;
+    if (typeof document === 'undefined' || !document.getElementById('main')) return;
+    G.render && G.render();
+  }
+  G.supMoNgan = function (ma) { G.supNgan = ma; veLai(); };
+
+  /* ── NGĂN 1 · BẪY TÊN GỌI ── */
+  function veTen() {
+    var ds = G.SUP_THANG || [], lu = G.SUP_THANG_LUAT || {};
+    /* U.sec() TỰ gọi U.h() trên tham số — truyền h(...) vào là thoát
+       lần thứ hai và người đọc thấy &quot; giữa câu tiếng Việt. Lỗi này
+       không sinh lỗi trang nên nó sống rất lâu (bản 9.24 gỡ 77 chỗ,
+       9.99.70 mắc lại ở U.empty). Bộ rà soát chỗ trống bắt ngay. */
+    var o = U.sec('Ba thang cùng mang chữ "điểm chạm"', lu.vaSao || '');
+    o += U.tbl(['Mã', 'Thang', 'Gõ là gì', 'Tổng', 'Chốt ở đâu'],
+      ds.map(function (t) {
+        return [h(t.ma), h(t.ten), '<code>' + h(t.o) + '</code>',
+          h(t.tong), h(t.chotO)];
+      }));
+    ds.forEach(function (t) {
+      o += '<p class="note"><b>' + h(t.ten) + ':</b> ' + h(t.la) +
+        ' <span class="muted">— dùng ở: ' + h(t.aiDung) + '</span></p>';
+    });
+    if (lu.cachGoi) o += '<p class="note">' + h(lu.cachGoi) + '</p>';
+    if (lu.mucNao) o += '<p class="note">' + h(lu.mucNao) + '</p>';
+    return o;
+  }
+
+  /* ── NGĂN 2 · CHỖ VA VÀ CHỖ BẮT OAN ──
+     Hai bảng đi CÙNG NHAU, không tách ra hai ngăn. Nêu chỗ va mà giấu
+     chỗ bắt oan thì người đọc tưởng cả bản đặc tả là sai rồi thôi
+     không đọc — và lúc ấy bốn chỗ va thật cũng không ai đọc. */
+  function veVa() {
+    var ds = G.SUP_VA || [], oan = G.SUP_OAN || [], ol = G.SUP_OAN_LUAT || {};
+    var o = U.sec('Bốn chỗ va MỚI — không chép lại sáu điều cấm đã có',
+      'Sáu điều cấm của GITA-VIP (9.99.76) đã phủ bốn chỗ Quyển I–III đụng tới: ' +
+      'xếp hạng người · sinh trắc trẻ · hạ cấp và đặt lại chuỗi · doạ mất chuỗi. ' +
+      'Chép chúng sang đây là dựng bản thứ hai của một BẢNG CẤM — bản nguy nhất, ' +
+      'vì sửa một bên thì bên kia vẫn chặn theo luật cũ mà cả hai vẫn xanh.');
+    o += U.tbl(['Mã', 'Bản đặc tả đòi gì', 'Đếm được', 'Luật nào', 'Đường đi'],
+      ds.map(function (v) {
+        return [h(v.ma), h(v.doi), (v.dem ? v.dem + ' lần' : '—'),
+          '<code>' + h(v.luat) + '</code>', h(v.duong)];
+      }));
+    ds.forEach(function (v) {
+      o += '<p class="note"><b>' + h(v.ma) + ' · vì sao:</b> ' + h(v.viSao) + '</p>';
+    });
+
+    o += U.sec('Hai chỗ phép dò của tôi BẮT OAN', ol.bai || '');
+    o += U.tbl(['Dấu hiệu', 'Khớp', 'Nguyên văn trong tài liệu', 'Sự thật'],
+      oan.map(function (x) {
+        return [h(x.dau), x.dem + ' lần', h(x.nguyenVan), h(x.that)];
+      }));
+    if (ol.vaSao) o += '<p class="note">' + h(ol.vaSao) + '</p>';
+    return o;
+  }
+
+  /* ── NGĂN 3 · MA TRẬN 28 ── */
+  function veMaTran() {
+    var ds = G.SUP_CUM || [];
+    var tong = ds.reduce(function (a, c) { return a + (c.nl || []).length; }, 0);
+    var o = U.sec('Hai mươi tám sức mạnh, năm cụm',
+      'Quyển I giải phẫu 14 nền tảng rồi trích ra "gen trội" của từng cái, hợp nhất ' +
+      'thành hai mươi tám năng lực. Bảng này giữ CÁCH CHIA CỤM của bản đặc tả và ' +
+      'không chấm điểm cụm nào — chấm điểm ở đây là tự chấm, đúng thứ thang 1000 ' +
+      'điểm vừa phải tách hai ngăn để thôi làm (9.99.81).');
+    o += U.tbl(['Cụm', 'Tên', 'Năng lực', 'Bao nhiêu'],
+      ds.map(function (c) {
+        return [h(c.ma), h(c.ten),
+          (c.nl || []).join(' · '), String((c.nl || []).length)];
+      }));
+    o += '<p class="note">Tổng ' + tong + ' năng lực. ' +
+      (tong === 28 ? 'Khớp con số bản đặc tả khai.'
+        : '<b>LỆCH</b> với con số 28 bản đặc tả khai — nói ra chỗ lệch, ' +
+          'im thì người đọc tự đếm rồi ngờ chính bản đặc tả.') + '</p>';
+    return o;
+  }
+
+  /* ── NGĂN 4 · MƯỜI LỚP VÀ MỘT TRĂM PHẦN ── */
+  function veLop() {
+    var lop = G.SUP_LOP || [], khoi = G.SUP_KHOI || [], d = G.SUP_DEM || {};
+    var o = U.sec('Mười lớp điểm chạm — hai vòng đồng tâm và một vành đai',
+      'Mười lớp không xếp theo thời gian mà theo hai vòng đời người dùng, cộng một ' +
+      'vành đai bắc qua mọi vòng. Cột "Tổng" cố ý KHÔNG ghi 10.000 cho mỗi lớp: con ' +
+      'số ấy là một CHỈ TIÊU chủ hệ đặt, chưa phải một phép đếm — ghi vào bảng là để ' +
+      'một chỉ tiêu đọc ra như một phép đo.');
+    o += U.tbl(['Lớp', 'Tên', 'Vòng', 'Vì sao lớp này tồn tại'],
+      lop.map(function (l) {
+        return [h(l.ma), h(l.ten), h(l.vong), h(l.y)];
+      }));
+
+    var coChu = khoi.filter(function (k) { return k.daViet; })
+      .reduce(function (a, k) { return a + (k.den - k.tu + 1); }, 0);
+    o += U.sec('Một trăm phần — và chỗ bản đặc tả còn trống',
+      'Đếm được thì đếm. Trình "100 phần" mà không nói bao nhiêu phần chưa có chữ ' +
+      'nào thì người đọc tin là đã đủ — cùng luật với `conLaiChuaTrinh` của bản tin ' +
+      'sáng (9.99.71): cắt im lặng tệ hơn trình ra con số thật.');
+    o += U.tbl(['Khối', 'Tên', 'Phần', 'Đã viết'],
+      khoi.map(function (k) {
+        return [h(k.ma), h(k.ten), k.tu + '–' + k.den,
+          k.daViet ? 'có' : '<b>CHƯA</b>'];
+      }));
+    o += '<p class="note"><b>' + coChu + '/' + (d.khai || 100) +
+      ' phần đã có chữ</b> · còn ' + ((d.khai || 100) - coChu) +
+      ' phần trống. ' + h(d.vi || '') + '</p>';
+    return o;
+  }
+
+  var VE = {ten: veTen, va: veVa, matran: veMaTran, lop: veLop};
+
+  G.VIEWS['supreme'] = function () {
+    /* Chặn ở MỘT chỗ, trước cả thanh ngăn — bài học 9.99.63: vai không
+       có kho thì cả bốn ngăn vẫn dựng ra bảng có đầu cột mà không có
+       dòng, và một khung rỗng đọc ra là "chỗ này chưa làm xong". */
+    if (!G.SUP_THANG || !G.SUP_THANG.length) {
+      return U.ph({eyebrow: 'GITA SUPREME', ic: 'shield', t: 'Bản đồ và trần',
+        lead: 'Màn này đọc kho nghiên cứu của chủ hệ, và kho ấy nằm trong gói nghề.'}) +
+        '<div class="card"><p>Vai đang dùng chưa được cấp gói nghề, nên bốn ngăn ' +
+        'của màn này không có dữ liệu để dựng. Đây không phải một chỗ chưa làm ' +
+        'xong — đây là phạm vi cấp phép đang chạy đúng.</p>' +
+        '<p class="note">Thứ nằm trong màn này là bản đồ một tài liệu nghiên cứu ' +
+        'nội bộ: bảng chỗ va giữa bản đặc tả mới với luật đã chốt, ma trận hai mươi ' +
+        'tám năng lực, mười lớp điểm chạm, và tiến độ một trăm phần. Nó phục vụ ' +
+        'người DỰNG hệ, không phải người DÙNG hệ — nên nó ở gói nghề là đúng chỗ.</p>' +
+        '<p class="note">Lời hứa với gia đình nằm ở màn <b>Luật giao diện</b>: ' +
+        'mười hai luật ấy đọc được với mọi vai, vì chúng là lời hứa VỚI gia đình ' +
+        'chứ không phải mã nguồn của hệ.</p></div>';
+    }
+
+    var o = U.ph({eyebrow: 'GITA SUPREME · QUYỂN I–III', ic: 'shield', grad: 1,
+      t: 'Bản đồ và trần',
+      lead: 'Bản đặc tả 410.000 ký tự không mô tả một màn hình — nó mô tả một mạng ' +
+        'xã hội. Nên dựng CÁI TRẦN trước, lần thứ tư trong kho này. Ngăn đầu không ' +
+        'phải chỗ va mà là bẫy tên gọi: một luật bị phạm thì có người cãi, hai thang ' +
+        'cùng tên thì không ai cãi — chúng chỉ lặng lẽ được đọc như một.'});
+
+    o += '<div class="row wrap mb" style="gap:8px">' + NGAN.map(function (n) {
+      var on = G.supNgan === n.ma;
+      return '<button class="btn' + (on ? ' pri' : '') +
+        '" onclick="G.supMoNgan(\'' + n.ma + '\')">' +
+        ic(n.ic, 'w-3 h-3') + ' ' + h(n.ten) + '</button>';
+    }).join('') + '</div>';
+
+    o += (VE[G.supNgan] || veTen)();
     return o;
   };
 })();
