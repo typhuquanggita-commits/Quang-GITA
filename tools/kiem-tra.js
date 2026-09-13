@@ -14855,6 +14855,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
     const ngCK = dc('coach-kh.js');
     const ngTG = dc('kien-truc-thi-giac.js');
     const ngW = dc('worker.js');
+    const ngSQL2 = dc('csdl.sql');
     const tepMC = fsGoc.readdirSync(pathGoc.join(__dirname, '..', 'may-chu'))
       .filter(t => t.endsWith('.js'));
     const capMC = {}; tepMC.forEach(t => { capMC[t] = dc(t); });
@@ -14948,26 +14949,43 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
        phép canh mô tả một cửa CHƯA CÓ; nó đỏ đúng vào ngày cửa ấy được
        viết mà không mang cổng theo. */
     const canh = [];
+    /* `hom-nay.js` LÀ chỗ ở chính thức của bốn cổng này từ 9.99.75.
+       Phép canh đặt trước canh những cửa THỨ HAI — module khác viết
+       sau, bởi người không đọc bản luật.
+
+       Vì sao loại trừ theo TỆP chứ không thêm tên hàm vào một danh
+       sách nhận diện: 9.99.60 đã ghi lại đúng cái bẫy ấy — phép dò chữ
+       chỉ kiểm được những tên nó ĐÃ BIẾT, tức là đúng những tên không
+       có nguy cơ. Lượt chạy đầu của bản này chứng minh lại: đổi thân
+       hàm sang gọi `laChinhEmAy` thì phép dò không thấy `hoSo.uid` nữa
+       và báo đỏ một cổng đang chạy đúng. Khai MỘT chỗ ở chính thức thì
+       không phải nuôi danh sách tên nào cả. */
+    const NHA_CUA_CONG = 'hom-nay.js';
+
     /* L03 · Chế độ Bão không được hỏi lý do */
     tepMC.forEach(t => {
+      if (t === NHA_CUA_CONG) return;
       const m = /export async function (cheDoBao\w*)\(([\s\S]*?)\n\}/.exec(capMC[t]);
       if (m && /\blyDo\b|\bxacNhan\b/.test(m[2]))
         canh.push('L03 · ' + t + ' → ' + m[1] + ' đang đòi lý do hoặc xác nhận');
     });
     /* L06 · ghim của con phải so uid phiên với chủ ghim */
     tepMC.forEach(t => {
+      if (t === NHA_CUA_CONG) return;
       const m = /export async function (\w*[Gg]him\w*)\(([\s\S]*?)\n\}/.exec(capMC[t]);
-      if (m && /INSERT|UPDATE/.test(m[2]) && !/hoSo\.uid/.test(m[2]))
+      if (m && /INSERT|UPDATE/.test(m[2]) && !/hoSo\.uid|laChinhEmAy/.test(m[2]))
         canh.push('L06 · ' + t + ' → ' + m[1] + ' ghi ghim mà không so uid của phiên');
     });
     /* L07 · cửa chia sẻ ảnh trẻ phải gọi cổng phủ quyết */
     tepMC.forEach(t => {
+      if (t === NHA_CUA_CONG) return;
       const m = /export async function (\w*(?:ChiaSe|chiaSe)\w*Anh\w*|\w*Anh(?:Con|Tre)\w*)\(([\s\S]*?)\n\}/.exec(capMC[t]);
-      if (m && !/dongYDangAnh|soatAnhCon/.test(m[2]))
+      if (m && !/docDongYAnhCon|chiaSeCoAnhCon|soatAnhCon/.test(m[2]))
         canh.push('L07 · ' + t + ' → ' + m[1] + ' chia sẻ ảnh trẻ mà không kiểm cờ đồng ý');
     });
     /* L11 · cửa ghi lượt bỏ việc không được ĐÒI lý do */
     tepMC.forEach(t => {
+      if (t === NHA_CUA_CONG) return;
       const m = /export async function (\w*[Bb]oViec\w*)\(([\s\S]*?)\n\}/.exec(capMC[t]);
       if (m && /!lyDo|lyDo\.length <|THIEULYDO/.test(m[2]))
         canh.push('L11 · ' + t + ' → ' + m[1] + ' đang ĐÒI lý do khi bỏ một việc');
@@ -14983,6 +15001,74 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
       });
     }
     v.canhTruocDo = canh;
+
+    /* ── G2 · NĂM CÁI RĂNG MỚI CỦA 9.99.75 ──
+       Chủ hệ chốt LGD-01, nên năm luật treo ở 9.99.74 nay có bề mặt.
+       Phép canh đặt trước ở khối G KHÔNG bị gỡ — nó canh những cửa
+       CHƯA VIẾT; khối này canh những cửa ĐÃ viết. */
+    const ngHN = dc('hom-nay.js');
+
+    /* L03 · batCheDoBao KHÔNG NHẬN ô lyDo, không nhận ô xacNhan.
+       Phép đo về thứ không được tồn tại: "nhận rồi bỏ qua" cũng đỏ, vì
+       một ô nhận vào là một ô màn hình hỏi được — người viết màn sau
+       đọc chữ ký hàm, không đọc chú giải. */
+    const mBao = /export async function batCheDoBao\(([\s\S]*?)\n\}/.exec(ngHN);
+    const thanBao = mBao ? mBao[1] : '';
+    v.l03KhongOLyDo = !!mBao && !/x\.lyDo|y\.lyDo|\blyDo\b/.test(thanBao) &&
+      !/xacNhan|confirm/.test(thanBao);
+    /* Và bảng cũng không được mọc cột ấy. */
+    const mBangBao = /CREATE TABLE IF NOT EXISTS cheDoBao \(([\s\S]*?)\n\);/.exec(ngSQL2);
+    v.l03BangSach = !!mBangBao && !/lyDo|xacNhan/.test(mBangBao[1]);
+
+    /* L11 · boViecHomNay NHẬN ô lyDo và KHÔNG BAO GIỜ ĐÒI.
+       Hai vế ngược nhau trên cùng một hàm: thiếu ô thì người muốn nói
+       không có chỗ nói; đòi ô thì nó thành cửa quay. Chỉ một trong hai
+       đỏ là đủ, và không có cách nào im cả hai. */
+    const mBo = /export async function boViecHomNay\(([\s\S]*?)\n\}/.exec(ngHN);
+    const thanBo = mBo ? mBo[1] : '';
+    v.l11NhanLyDo = !!mBo && /x\.lyDo/.test(thanBo);
+    v.l11KhongDoi = !!mBo && !/THIEULYDO|!lyDo|lyDo\.length <|lyDo\.length ===\s*0/.test(thanBo);
+
+    /* L06 · ghiGhimCon hỏi TÀI KHOẢN CỦA PHIÊN, không đọc một ô do
+       người gọi truyền vào — ô ấy là lời khai của chính người đi qua. */
+    const mGhim = /export async function ghiGhimCon\(([\s\S]*?)\n\}/.exec(ngHN);
+    const thanGhim = mGhim ? mGhim[1] : '';
+    const viInsGhim = thanGhim.indexOf('INSERT INTO ghimCon');
+    const viChanGhim = thanGhim.indexOf('laChinhEmAy');
+    v.l06CongTruocGhi = viChanGhim > 0 && viInsGhim > 0 && viChanGhim < viInsGhim;
+    v.l06DocPhien = /async function laChinhEmAy[\s\S]{0,300}Kho\.nguoiTheoId\(db, \(hoSo \|\| \{\}\)\.uid\)/.test(ngHN) &&
+      !/x\.laCon|y\.laCon|\.laChaMe/.test(ngHN);
+
+    /* L07 · chiaSeCoAnhCon chặn CHƯA HỎI và ĐÃ TỪ CHỐI bằng HAI MÃ
+       KHÁC NHAU. Gộp thì một nhà chưa ai hỏi tới nằm chung rổ với một
+       đứa trẻ đã nói không — và chỉ một trong hai được phép đi hỏi. */
+    const mChia = /export async function chiaSeCoAnhCon\(([\s\S]*?)\n\}/.exec(ngHN);
+    const thanChia = mChia ? mChia[1] : '';
+    v.l07HaiMa = /'CHUAHOI'/.test(thanChia) && /'CONTUCHOI'/.test(thanChia) &&
+      /khongHoiLai/.test(thanChia);
+    /* Và CHÍNH ĐỨA TRẺ ký — cha mẹ ký thay được thì quyền phủ quyết
+       thuộc về cha mẹ, và em chỉ có một dòng chữ nói rằng em có quyền. */
+    const mKy = /export async function datDongYAnhCon\(([\s\S]*?)\n\}/.exec(ngHN);
+    v.l07ChiConKy = !!mKy && /laChinhEmAy/.test(mKy[1]) && /'CHICONKY'/.test(mKy[1]);
+
+    /* L12 · HAI NÚT CÙNG MỘT LỚP. Đặt hai lớp riêng rồi cố cho chúng
+       bằng nhau là để dành sẵn một chỗ lệch: người sửa CSS sau đổi một
+       lớp mà quên lớp kia, nút thoát nhỏ đi, và không ai thấy. */
+    const ngSrcHN = fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'src', 'hom-nay.js'), 'utf8');
+    const ngCss = fsGoc.readFileSync(
+      pathGoc.join(__dirname, '..', 'assets', 'style.css'), 'utf8');
+    v.l12CoNutThoat = /Để hôm khác/.test(ngSrcHN);
+    v.l12CungLop = /class="nm-nut nm-xong"/.test(ngSrcHN) &&
+      /class="nm-nut nm-thoat"/.test(ngSrcHN);
+    /* Chỗ quyết KÍCH CỠ phải nằm ở ĐÚNG MỘT lớp. Lớp màu được phép
+       khác nhau — màu không đổi kích cỡ. */
+    const mNut = /\.nm-nut\s*\{([\s\S]*?)\}/.exec(ngCss);
+    const mXong = /\.nm-xong\s*\{([\s\S]*?)\}/.exec(ngCss);
+    const mThoat = /\.nm-thoat\s*\{([\s\S]*?)\}/.exec(ngCss);
+    const O_CO = /padding|font-size|font-weight|min-height|flex|border-radius|border-width/;
+    v.l12MotChoQuyetCo = !!mNut && O_CO.test(mNut[1]) &&
+      !(mXong && O_CO.test(mXong[1])) && !(mThoat && O_CO.test(mThoat[1]));
 
     /* ── H · SỔ CHỜ VÀ MÀN ── */
     v.choChuDu = khoLGD.choChu.length > 0 &&
@@ -15014,7 +15100,10 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
       v.haiNganKhop && v.l02Chan && v.l04TruocAnDanh && v.l04SoiSau &&
       v.l10TruocLuong && v.l10CoNhac && !v.cuaCam.length && !v.canhTruocDo.length &&
       v.choChuDu && v.cuaThat && v.khongGopPhanSo && v.duNen &&
-      khoLGD.coMan && khoLGD.trongNav;
+      khoLGD.coMan && khoLGD.trongNav &&
+      v.l03KhongOLyDo && v.l03BangSach && v.l11NhanLyDo && v.l11KhongDoi &&
+      v.l06CongTruocGhi && v.l06DocPhien && v.l07HaiMa && v.l07ChiConKy &&
+      v.l12CoNutThoat && v.l12CungLop && v.l12MotChoQuyetCo;
 
     bao(lgdDat,
       'MƯỜI HAI LUẬT GIAO DIỆN — RĂNG Ở MÁY CHỦ, KHÔNG Ở MÀN HÌNH, VÀ NĂM LUẬT CHƯA CÓ BỀ MẶT ĐƯỢC CANH BẰNG THỨ CHƯA ĐƯỢC TỒN TẠI. Bản đặc tả MỤC C tự viết ra lý do của cả phần này: ba mươi phần của khoá học đặt ra rất nhiều luật phủ quyết và gác an toàn, và nếu frontend không cưỡng chế chúng thì chúng chỉ là chữ trên giấy. Nên răng nằm ở MÁY CHỦ: giao diện là thứ bị viết lại nhiều nhất trong mọi kho, và một luật sống trong mã giao diện thì chết cùng lượt viết lại đầu tiên — chết lặng lẽ, vì bản mới trông vẫn đẹp. Mỗi luật khai ĐÚNG MỘT đường, rangO HOẶC chuaCoMat, không bao giờ cả hai và không bao giờ thiếu cả hai: trình cả mười hai như đã cưỡng chế thì người duyệt thấy mười hai dấu tick rồi thôi không đọc, và năm luật chưa có răng lại đúng là năm luật sẽ được viết bởi người không đọc bản này — cùng luật với mayDo/nguoiDo của Hiến pháp. L02 KHÔNG TỤT CẤP là một lỗ THẬT tìm ra ở bản này: cổng cũ nằm ở nangTang và đòi tầng mới bằng tầng cũ cộng một, nhưng ghiDoiTang nhận denTang TỰ DO và hôm nay chỉ có đúng một người gọi — người gọi thứ hai viết sau hạ tầng một nhà mà không gì chặn, và lịch thu dựng lại theo tầng thấp hơn; nay cổng nằm ở CHỖ GHI, trước câu INSERT. L04 VÒNG ĐỎ đứng TRƯỚC cổng ẩn danh và thứ tự ấy là luật chứ không phải sở thích: cổng ẩn danh nói "gửi được nhưng phải ẩn danh trước", cổng này nói "KHÔNG gửi, ẩn danh cũng không" — đặt sau thì người gửi làm theo lời chỉ đường của cổng ẩn danh và lần thứ hai thì lọt, vì một cổng chỉ đường sai là một cổng dạy người ta cách đi vòng qua chính nó. L10 BA GHẾ NGƯỜI GIỮ chặn ĐẦU cửa traLoiCoach, trước cả phân luồng, và chặn vì máy viết HAY chứ không phải vì máy viết dở: một lời xin lỗi do máy viết đọc lên nghe y hệt một lời xin lỗi thật, người nhận không có cách nào phân biệt, nên thứ họ nhận được không còn là điều họ tưởng mình đang nhận — chặn vì nó viết dở thì mai nó viết hay hơn là luật hết hiệu lực. Năm phép canh đặt TRƯỚC là phần dễ bỏ nhất và đáng giá nhất của cả mục: chúng mô tả những cửa CHƯA CÓ, và đỏ đúng vào ngày cửa ấy được viết mà không mang cổng theo',
@@ -15060,7 +15149,29 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
            !v.duNen ? 'THIẾU BA NGUYÊN TẮC, BỐN MÀN TRỐNG, hoặc phần HAI TRỤC chưa ' +
              'khai chỗ lệch đã chốt thế nào' : '',
            !khoLGD.coMan ? 'CHƯA CÓ MÀN luat-giao-dien' : '',
-           !khoLGD.trongNav ? 'MÀN KHÔNG CÓ TRONG G.NAV' : ''
+           !khoLGD.trongNav ? 'MÀN KHÔNG CÓ TRONG G.NAV' : '',
+           !v.l03KhongOLyDo ? 'L03 · batCheDoBao NHẬN ô lyDo hoặc xacNhan — một ô ' +
+             'nhận vào là một ô màn hình hỏi được, và người viết màn sau đọc chữ ký ' +
+             'hàm chứ không đọc chú giải' : '',
+           !v.l03BangSach ? 'L03 · BẢNG cheDoBao MỌC CỘT lyDo hoặc xacNhan' : '',
+           !v.l11NhanLyDo ? 'L11 · boViecHomNay KHÔNG NHẬN ô lyDo — người MUỐN nói ' +
+             'thì không có chỗ nói, và câu họ tự viết là câu đáng giá nhất trong sổ' : '',
+           !v.l11KhongDoi ? 'L11 · boViecHomNay ĐANG ĐÒI lý do — một ô bắt buộc sau ' +
+             'khi bỏ việc là một cái cửa quay, và lần sau người ta bỏ app' : '',
+           !v.l06CongTruocGhi ? 'L06 · CỔNG GHIM KHÔNG NẰM TRƯỚC CÂU INSERT' : '',
+           !v.l06DocPhien ? 'L06 · CỔNG GHIM ĐỌC MỘT Ô DO NGƯỜI GỌI TRUYỀN VÀO thay ' +
+             'vì tài khoản của phiên — ô ấy bật được mà không chứng minh gì' : '',
+           !v.l07HaiMa ? 'L07 · CHƯA HỎI và ĐÃ TỪ CHỐI trả về CÙNG một mã — gộp thì ' +
+             'một nhà chưa ai hỏi tới nằm chung rổ với một đứa trẻ đã nói không, mà ' +
+             'chỉ một trong hai được phép đi hỏi' : '',
+           !v.l07ChiConKy ? 'L07 · CHA MẸ KÝ THAY ĐƯỢC ô đồng ý ảnh — thế thì quyền ' +
+             'phủ quyết thuộc về cha mẹ, và em chỉ có một dòng chữ nói rằng em có quyền' : '',
+           !v.l12CoNutThoat ? 'L12 · KHÔNG CÓ NÚT "Để hôm khác"' : '',
+           !v.l12CungLop ? 'L12 · HAI NÚT KHÔNG DÙNG CHUNG LỚP .nm-nut' : '',
+           !v.l12MotChoQuyetCo ? 'L12 · KÍCH CỠ QUYẾT Ở NHIỀU HƠN MỘT LỚP — đặt hai ' +
+             'lớp riêng rồi cố cho chúng bằng nhau là để dành sẵn một chỗ lệch: người ' +
+             'sửa CSS sau đổi một lớp mà quên lớp kia, nút thoát nhỏ đi, và không ai ' +
+             'thấy — mà CÙNG KÍCH CỠ mới là luật, không phải "có nút thoát"' : ''
           ].filter(Boolean).join(' · '));
   }
 

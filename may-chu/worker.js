@@ -71,6 +71,8 @@ import { docBangDieuKhien, banTinSang, chonBaNhaNgauNhien, soiQuyetDinh,
 import { ghiLuotPrompt, docVongChay } from './bo-prompt.js';
 import { docBangGia, doiGia, soDoiGia } from './bang-gia.js';
 import { docLuatGiaoDien } from './luat-giao-dien.js';
+import { docHomNay, tickNhip, boViecHomNay, batCheDoBao, ghiGhimCon, docGhimCon,
+  datDongYAnhCon, chiaSeCoAnhCon } from './hom-nay.js';
 import { soatNoiDung, mauBaiHoc, napBai, nopBai, kyBai, soKyBai, baiTreo,
   capQuyenNoiDung, thuHoiQuyenNoiDung, dsQuyenNoiDung,
   docBuoi, xuatChuanNghe, soatMienDich,
@@ -221,6 +223,8 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'chuanBiVang',
   'ghiLuotPrompt', 'docVongChay',
   'docBangGia', 'doiGia', 'soDoiGia', 'docLuatGiaoDien',
+  'docHomNay', 'tickNhip', 'boViecHomNay', 'batCheDoBao',
+  'ghiGhimCon', 'docGhimCon', 'datDongYAnhCon', 'chiaSeCoAnhCon',
   'soatNoiDung', 'mauBaiHoc', 'napBai', 'nopBai', 'kyBai', 'soKyBai', 'baiTreo',
   'capQuyenNoiDung', 'thuHoiQuyenNoiDung', 'dsQuyenNoiDung', 'docBuoi', 'xuatChuanNghe', 'soatMienDich',
   'chotTrichNghe', 'dsChotTrich',
@@ -403,6 +407,14 @@ async function lam(fn, y, env, db) {
   if (fn === 'doiGia')            return await doiGia(y, env, db, hoSo);
   if (fn === 'soDoiGia')          return await soDoiGia(y, env, db, hoSo);
   if (fn === 'docLuatGiaoDien')   return await docLuatGiaoDien(y, env, db, hoSo);
+  if (fn === 'docHomNay')         return await docHomNay(y, env, db, hoSo);
+  if (fn === 'tickNhip')          return await tickNhip(y, env, db, hoSo);
+  if (fn === 'boViecHomNay')      return await boViecHomNay(y, env, db, hoSo);
+  if (fn === 'batCheDoBao')       return await batCheDoBao(y, env, db, hoSo);
+  if (fn === 'ghiGhimCon')        return await ghiGhimCon(y, env, db, hoSo);
+  if (fn === 'docGhimCon')        return await docGhimCon(y, env, db, hoSo);
+  if (fn === 'datDongYAnhCon')    return await datDongYAnhCon(y, env, db, hoSo);
+  if (fn === 'chiaSeCoAnhCon')    return await chiaSeCoAnhCon(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
   if (fn === 'soatNoiDung')       return await soatNoiDung(y, env, db, hoSo);
   if (fn === 'mauBaiHoc')         return await mauBaiHoc(y, env, db, hoSo);

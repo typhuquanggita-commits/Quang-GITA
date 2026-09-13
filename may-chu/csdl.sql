@@ -1794,3 +1794,84 @@ CREATE TABLE IF NOT EXISTS bangGia (
 -- Đường tra thật: mỗi lượt dựng lịch thu và mỗi lượt tính hoa hồng đều
 -- hỏi đúng câu "bậc này giá bao nhiêu, dòng mới nhất".
 CREATE INDEX IF NOT EXISTS ix_banggia_tang ON bangGia (tang, ghiLuc DESC);
+
+-- ═════════════════════════════════════════════════════════════
+--  MÀN HÔM NAY · NHÀ MÌNH  (9.99.75)
+--
+--  Chủ hệ chốt LGD-01: bốn tab của MỤC C là mấy màn THÊM vào cổng phụ
+--  huynh đã có. Chốt ấy gỡ năm luật giao diện khỏi chỗ treo.
+--
+--  Bốn bảng dưới đây KHÔNG có cột tóm tắt nào — không "dangBao", không
+--  "daDongY", không "daXong". Trạng thái = dòng MỚI NHẤT, tính lúc đọc.
+--  Một cột tóm tắt thì hoặc bị gõ đè (và một phép đo biến thành một lời
+--  khai, mà nhìn vẫn y hệt), hoặc không ai gõ và nó cũ đi lặng lẽ. Cùng
+--  luật với cột conHan không có trong theVungManh và cột den không có
+--  trong hoSoSongSinh.
+-- ═════════════════════════════════════════════════════════════
+
+--  Nhịp của một nhà. `nangNe` đánh dấu nội dung nặng — màn nào dựng nó
+--  cũng phải có nút "Để hôm khác" CÙNG KÍCH CỠ với nút tiếp tục (L12).
+CREATE TABLE IF NOT EXISTS nhipNha (
+  id        TEXT PRIMARY KEY,
+  maNha     TEXT NOT NULL,
+  ten       TEXT NOT NULL,
+  thuTu     INTEGER NOT NULL DEFAULT 0,
+  nangNe    INTEGER NOT NULL DEFAULT 0,
+  dong      INTEGER NOT NULL DEFAULT 0,   -- đóng nhịp, KHÔNG xoá
+  ghiLuc    TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_nhip_nha ON nhipNha (maNha, dong, thuTu);
+
+--  Một nhịp đã tick hoặc đã BỎ trong một ngày. `lyDo` cho phép NULL, và
+--  cửa boViecHomNay KHÔNG BAO GIỜ đòi nó — khác nhau ở chỗ MỜI hay ÉP,
+--  và chỗ ấy là cả luật L11. Một ô lý do bắt buộc sau khi bỏ việc là
+--  một cái cửa quay: lần sau người ta không bỏ việc, họ bỏ app.
+CREATE TABLE IF NOT EXISTS nhipXong (
+  id        TEXT PRIMARY KEY,
+  maNha     TEXT NOT NULL,
+  maNhip    TEXT NOT NULL,
+  ngay      TEXT NOT NULL,
+  bo        INTEGER NOT NULL DEFAULT 0,
+  lyDo      TEXT,
+  boiAi     TEXT NOT NULL,
+  ghiLuc    TEXT NOT NULL,
+  UNIQUE (maNha, maNhip, ngay)
+);
+CREATE INDEX IF NOT EXISTS ix_nhipxong_ngay ON nhipXong (maNha, ngay);
+
+--  Chế độ Bão (L03). KHÔNG có cột lý do và KHÔNG có cột xác nhận — một
+--  cột nhận vào là một cột màn hình hỏi được, và cổng thành lời chú
+--  giải. Người bật đang ở giữa một chuyện khó; hỏi họ vì sao là bắt họ
+--  kể lại nó cho một cái máy đúng lúc họ ít sức nhất.
+CREATE TABLE IF NOT EXISTS cheDoBao (
+  id        TEXT PRIMARY KEY,
+  maNha     TEXT NOT NULL,
+  bat       INTEGER NOT NULL,
+  boiAi     TEXT NOT NULL,
+  ghiLuc    TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_chedobao_nha ON cheDoBao (maNha, ghiLuc DESC);
+
+--  Ghim trên bản đồ riêng của một em (L06). Chỉ chính em ấy ghi được —
+--  cổng hỏi users.studentId của TÀI KHOẢN ĐANG ĐĂNG NHẬP, không đọc một ô
+--  `laCon` do người gọi truyền vào — ô ấy là lời khai của chính người đi qua.
+CREATE TABLE IF NOT EXISTS ghimCon (
+  id        TEXT PRIMARY KEY,
+  maCon     TEXT NOT NULL,
+  o         TEXT NOT NULL,
+  ghiChu    TEXT,
+  ghiLuc    TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_ghimcon ON ghimCon (maCon, ghiLuc);
+
+--  Đồng ý đăng ảnh, do CHÍNH ĐỨA TRẺ ký (L07). Một DÒNG MỚI mỗi lần,
+--  không ghi đè: đổi ý được cả hai chiều, và một lời đồng ý không rút
+--  được thì nó không phải lời đồng ý. Không có cột trạng thái — chưa
+--  hỏi và đã từ chối là HAI chuyện, và chúng phải phân biệt được.
+CREATE TABLE IF NOT EXISTS dongYAnhCon (
+  id        TEXT PRIMARY KEY,
+  maCon     TEXT NOT NULL,
+  dongY     INTEGER NOT NULL,
+  ghiLuc    TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_dongyanh ON dongYAnhCon (maCon, ghiLuc DESC);

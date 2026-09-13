@@ -5520,12 +5520,160 @@ console.log('\n15n · MƯỜI HAI LUẬT GIAO DIỆN — BẢY CÁI RĂNG');
   /* ── HAI NGĂN KHÔNG GỘP ── */
   const bl = await goi({fn:'docLuatGiaoDien', token:tkSA, u:'superadmin@gita365.vn'});
   bao(bl.than.ok && Array.isArray(bl.than.coRang) && Array.isArray(bl.than.canhTruoc) &&
-      bl.than.coRang.length === 7 && bl.than.canhTruoc.length === 5 &&
+      bl.than.coRang.length === 12 && bl.than.canhTruoc.length === 0 &&
       bl.than.tyLe === undefined && bl.than.daCuongChe === undefined,
     'BẢN LUẬT TRẢ VỀ HAI NGĂN RIÊNG, không một phân số "đã cưỡng chế mấy trên mười hai"',
     bl.than.coRang.length + ' có cổng thật · ' + bl.than.canhTruoc.length +
-    ' canh đặt trước · một phân số ở đây đọc ra như mức hoàn thành, mà năm luật chưa ' +
-    'có bề mặt đúng là năm luật sẽ được viết bởi người không đọc bản này');
+    ' còn treo · hai ngăn vẫn TÁCH dù ngăn thứ hai rỗng: một phân số ở đây đọc ra ' +
+    'như mức hoàn thành, và ngày bản đặc tả sau đẻ ra một luật chưa có bề mặt thì ' +
+    'chỗ khai nó phải sẵn đó');
+}
+
+console.log('\n15p · MÀN HÔM NAY — NĂM CÁI RĂNG MỞ KHOÁ BỞI LGD-01');
+/* ══════════════ HÔM NAY · NHÀ MÌNH ══════════════
+
+   Chủ hệ chốt LGD-01: bốn tab của MỤC C là mấy màn THÊM vào cổng phụ
+   huynh. Chốt ấy gỡ năm luật giao diện khỏi chỗ treo, và đây là chỗ đo
+   HÀNH VI của chúng — gọi thật vào cửa rồi xem nó có chặn không. */
+{
+  const mHN = await import('../may-chu/hom-nay.js');
+
+  /* Dựng hai nhịp cho nhà mới: một nhịp thường, một nhịp NẶNG. */
+  const luc = new Date().toISOString();
+  db.prepare("INSERT INTO nhipNha (id,maNha,ten,thuTu,nangNe,dong,ghiLuc)" +
+    " VALUES ('NH-1',?,'Bữa cơm tối',1,0,0,?)").run(nhaMoi, luc);
+  db.prepare("INSERT INTO nhipNha (id,maNha,ten,thuTu,nangNe,dong,ghiLuc)" +
+    " VALUES ('NH-2',?,'Viết thư cho con',2,1,0,?)").run(nhaMoi, luc);
+
+  /* ── MỘT MÀN — MỘT VIỆC ──
+     Máy chủ trả về ĐÚNG MỘT việc, không một danh sách. Trả danh sách
+     rồi để màn hình lấy cái đầu thì luật nằm ở màn hình, và luật ở màn
+     hình chết cùng lượt viết lại đầu tiên. */
+  const hn1 = await goi({fn:'docHomNay', token:tkNhaMoi, u:eMoi, maNha:nhaMoi});
+  /* Dòng chi tiết KHÔNG được dereference thứ đang đo. Phá thử bản này
+     chứng minh vì sao: `hn1.than.viecLon.ten` khi viecLon undefined thì
+     phép đo không ĐỎ — nó SẬP, và một lượt sập giấu luôn mười hai phép
+     đo đứng sau nó. Một phép đo chỉ đúng khi cái nó đo có thể sai; nó
+     cũng chỉ dùng được khi lúc sai nó còn IN RA được. */
+  const vl1 = (hn1.than || {}).viecLon;
+  bao(hn1.than.ok && !!vl1 && vl1.id === 'NH-1' &&
+      hn1.than.conLai === 1 && hn1.than.ds === undefined,
+    'MỘT MÀN — MỘT VIỆC: máy chủ trả ĐÚNG MỘT việc, không một danh sách',
+    'việc ' + JSON.stringify(vl1 && vl1.ten) + ', còn ' + hn1.than.conLai +
+    ' nhịp nữa · hai việc ngang nhau lúc chín giờ tối, trong bếp, tay bận, là ' +
+    'không việc nào được làm');
+
+  /* ── NHÀ KHÁC KHÔNG ĐỌC ĐƯỢC ── */
+  bao(!(await goi({fn:'docHomNay', token:tkNhaMoi, u:eMoi, maNha:'GITA-0003'})).than.ok,
+    'và một nhà KHÔNG đọc được màn Hôm nay của nhà khác');
+
+  /* ── L11 · BỎ VIỆC KHÔNG BỊ HỎI VẶN ──
+     Hai vế NGƯỢC NHAU trên cùng một cửa: bỏ trống lý do phải QUA, và
+     ô lý do phải CÓ để người muốn nói có chỗ nói. Thiếu vế nào cũng
+     hỏng, và hỏng theo hai hướng khác hẳn nhau. */
+  const boTrong = await goi({fn:'boViecHomNay', token:tkNhaMoi, u:eMoi,
+    maNha:nhaMoi, maNhip:'NH-1'});
+  bao(boTrong.than.ok && boTrong.than.bo === true && boTrong.than.khongHoiThem === true,
+    'L11 · BỎ VIỆC KHÔNG VIẾT LÝ DO VẪN QUA — không ai hỏi vì sao',
+    'một ô lý do bắt buộc sau khi bỏ việc là một cái cửa quay: muốn đóng việc thì ' +
+    'phải giải trình, và lần sau người ta không bỏ việc — họ bỏ app');
+  const boCo = await goi({fn:'boViecHomNay', token:tkNhaMoi, u:eMoi,
+    maNha:nhaMoi, maNhip:'NH-2', lyDo:'Hôm nay bà ốm, cả nhà ở viện.'});
+  const dongLyDo = db.prepare(
+    "SELECT lyDo FROM nhipXong WHERE maNha=? AND maNhip='NH-2'").get(nhaMoi);
+  bao(boCo.than.ok && dongLyDo && /bà ốm/.test(String(dongLyDo.lyDo)),
+    'và ai MUỐN nói thì câu họ viết được GIỮ LẠI — khác nhau ở chỗ MỜI hay ÉP',
+    'câu người ta tự viết là câu đáng giá nhất trong cả sổ; thứ bị cấm là ĐÒI');
+
+  /* ── L03 · CHẾ ĐỘ BÃO ──
+     Cửa nhận đúng hai ô. Truyền thêm lyDo thì nó KHÔNG ĐI VÀO SỔ —
+     không phải "nhận rồi bỏ qua ở tầng dưới", mà là bảng không có cột
+     ấy để mà chứa. */
+  const bao1 = await goi({fn:'batCheDoBao', token:tkNhaMoi, u:eMoi,
+    maNha:nhaMoi, bat:true, lyDo:'Nhà có tang'});
+  const cotBao = db.prepare("SELECT * FROM cheDoBao WHERE maNha=?").get(nhaMoi);
+  bao(bao1.than.ok && bao1.than.bat === true && bao1.than.chuoiKhongDut === true &&
+      cotBao && cotBao.lyDo === undefined,
+    'L03 · CHẾ ĐỘ BÃO BẬT MỘT CHẠM, và lý do gửi kèm KHÔNG có chỗ nào để rơi vào',
+    'bảng không có cột lyDo · người bật đang ở giữa một chuyện khó, và hỏi họ vì sao ' +
+    'là bắt họ kể lại nó cho một cái máy đúng lúc họ ít sức nhất');
+
+  const hn2 = await goi({fn:'docHomNay', token:tkNhaMoi, u:eMoi, maNha:nhaMoi});
+  bao(hn2.than.ok && hn2.than.dangBao === true && hn2.than.viecLon === undefined,
+    'và đang Bão thì KHÔNG có việc nào hôm nay — nhịp dừng, chuỗi giữ nguyên',
+    'bão mà vẫn đứt chuỗi thì Chế độ Bão chỉ là một cái nút đổi màu: người ta sẽ ' +
+    'không bấm nó, họ sẽ cố tick cho xong');
+  await goi({fn:'batCheDoBao', token:tkNhaMoi, u:eMoi, maNha:nhaMoi, bat:false});
+
+  /* ── L06 · GHIM CỦA CON LÀ CỦA CON ──
+     Phép đo phải có CẢ HAI chiều: cha mẹ bị chặn, VÀ chính em ấy đi
+     qua được. Chỉ đo chiều chặn thì một cổng chặn tất cả cũng xanh. */
+  const maCon = db.prepare("SELECT maHocVien FROM hoSoKhach WHERE maKhachHang=?")
+    .get(nhaMoi).maHocVien;
+  const chaGhim = await goi({fn:'ghiGhimCon', token:tkNhaMoi, u:eMoi,
+    maCon: maCon, o:'C12'});
+  bao(!chaGhim.than.ok && chaGhim.than.code === 'GHIMCUACON',
+    'L06 · CHA MẸ KHÔNG DI ĐƯỢC GHIM trên bản đồ riêng của con',
+    'cho cha mẹ sửa ghim của con là biến bản đồ của đứa trẻ thành bản đồ cha mẹ ' +
+    'MUỐN nó đi, và cái còn lại chỉ là một tờ giấy mang tên nó');
+
+  /* Dựng tài khoản của chính em ấy — users.studentId trỏ vào hồ sơ. */
+  await themNguoi('U-con1', 'concuanha@vidu.vn', 'MotChuoiTuTe2026!', 'R14',
+    {portal:'hs'});
+  /* `themNguoi` không ghi studentId — đặt thẳng, vì chính cột ấy là thứ
+     cổng L06 và L07 đọc. Nối sai thì cổng mở cho nhầm người, nên bài
+     thử phải dựng đúng cái nối thật chứ không giả lập nó. */
+  db.prepare("UPDATE users SET studentId = ? WHERE id = 'U-con1'").run(maCon);
+  const tkCon = (await goi({fn:'dangNhap', u:'concuanha@vidu.vn',
+    mk:'MotChuoiTuTe2026!'})).than.token;
+  const conGhim = await goi({fn:'ghiGhimCon', token:tkCon, u:'concuanha@vidu.vn',
+    maCon: maCon, o:'C12', ghiChu:'Em muốn làm kiến trúc sư'});
+  bao(conGhim.than.ok && conGhim.than.o === 'C12',
+    'và CHÍNH EM ẤY thì di được — cổng chặn đúng người, không chặn tất cả',
+    'một cổng chặn cả đường đúng là một cổng hỏng, và phép đo chỉ nhìn chiều chặn ' +
+    'thì nó xanh trên một cổng như thế');
+  const chaDoc = await goi({fn:'docGhimCon', token:tkNhaMoi, u:eMoi, maCon: maCon});
+  bao(chaDoc.than.ok && chaDoc.than.diDuoc === false && chaDoc.than.ds.length === 1,
+    'cha mẹ XEM ĐƯỢC đủ, và ô diDuoc nói thẳng nút di không hiện',
+    'xem được mà không sửa được là đủ để đồng hành — thứ cha mẹ cần là BIẾT, không ' +
+    'phải ĐIỀU KHIỂN, và hai cái ấy rất hay bị nhầm là một');
+
+  /* ── L07 · PHỦ QUYẾT ẢNH CỦA CON ──
+     Ba trạng thái, BA câu trả lời khác nhau. Gộp "chưa hỏi" với "đã
+     từ chối" là chỗ hỏng nặng nhất: chỉ một trong hai được phép đi hỏi. */
+  const chuaHoi = await goi({fn:'chiaSeCoAnhCon', token:tkNhaMoi, u:eMoi, maCon: maCon});
+  bao(!chuaHoi.than.ok && chuaHoi.than.code === 'CHUAHOI' && chuaHoi.than.anNut === true,
+    'L07 · CHƯA HỎI EM ẤY thì nút chia sẻ KHÔNG hiện',
+    'mã ' + chuaHoi.than.code);
+
+  const chaKy = await goi({fn:'datDongYAnhCon', token:tkNhaMoi, u:eMoi,
+    maCon: maCon, dongY:true});
+  bao(!chaKy.than.ok && chaKy.than.code === 'CHICONKY',
+    'và CHA MẸ KHÔNG KÝ THAY ĐƯỢC ô đồng ý',
+    'cha mẹ ký thay được thì quyền phủ quyết thuộc về cha mẹ, và em chỉ có một dòng ' +
+    'chữ nói rằng em có quyền');
+
+  await goi({fn:'datDongYAnhCon', token:tkCon, u:'concuanha@vidu.vn',
+    maCon: maCon, dongY:false});
+  const tuChoi = await goi({fn:'chiaSeCoAnhCon', token:tkNhaMoi, u:eMoi, maCon: maCon});
+  bao(!tuChoi.than.ok && tuChoi.than.code === 'CONTUCHOI' &&
+      tuChoi.than.khongHoiLai === true && tuChoi.than.code !== chuaHoi.than.code,
+    'EM ẤY NÓI KHÔNG thì chặn bằng MỘT MÃ KHÁC — và hệ không hỏi lại',
+    'chưa hỏi là CHUAHOI, đã từ chối là CONTUCHOI · gộp hai cái thì một nhà chưa ai ' +
+    'hỏi tới nằm chung rổ với một đứa trẻ đã nói không, mà chỉ một trong hai được ' +
+    'phép đi hỏi');
+
+  /* Đổi ý theo CẢ HAI chiều — một lời đồng ý không rút được thì nó
+     không phải lời đồng ý, và một lời từ chối không đổi được thì nó là
+     một cái khoá chứ không phải một quyền. */
+  await goi({fn:'datDongYAnhCon', token:tkCon, u:'concuanha@vidu.vn',
+    maCon: maCon, dongY:true});
+  const daKy = await goi({fn:'chiaSeCoAnhCon', token:tkNhaMoi, u:eMoi, maCon: maCon});
+  const soDong = db.prepare("SELECT count(*) c FROM dongYAnhCon WHERE maCon=?").get(maCon).c;
+  bao(daKy.than.ok && Number(soDong) === 2,
+    'và em ĐỔI Ý ĐƯỢC cả hai chiều — mỗi lần là một DÒNG MỚI, không ghi đè',
+    soDong + ' dòng trong sổ · một lời đồng ý không rút được thì nó không phải lời ' +
+    'đồng ý, và một lời từ chối không đổi được thì nó là một cái khoá chứ không phải quyền');
 }
 
 console.log('\n16 · VIỆC CHƯA CHUYỂN SANG NỀN MỚI');

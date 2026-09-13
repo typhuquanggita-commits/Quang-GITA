@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.74',
+  version: '9.99.75',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -508,7 +508,7 @@ G.PORTALS = {
    rồi thứ tự G.NAV lấp nốt chỗ trống. Nên đây là lời gợi ý, không phải
    một lời hứa mã phải giữ. */
 G.DUOI = {
-  ph:    ['bat-dau', 'ban-do', 'tien-bo', 'tro-ly'],
+  ph:    ['hom-nay', 'ban-do', 'tien-bo', 'tro-ly'],
   hs:    ['bat-dau', 'nhiem-vu', 'tien-bo', 'tro-ly'],
   coach: ['coach-deck', 'bang-viec', 'tien-bo', 'tro-ly'],
   tuvan: ['tuvan-deck', 'bang-viec', 'tien-bo', 'tro-ly'],
@@ -596,6 +596,7 @@ G.NAV = [
     {v:'tien-bo',     t:'Nhà mình đã đổi gì',          h:'Tuần này so với tuần trước, và phần chênh lệch nói bằng lời', ic:'chart', star:1, capMo:'chung'},
     {v:'kpi-toi',     t:'KPI của tôi',                h:'KPI ngày · KPI tháng · liên đới · hạng lương thưởng', ic:'chart', star:1, capMo:'chung'},
     {v:'gioi-thieu',  t:'GITA 365 là gì',              h:'Sứ mệnh · tầm nhìn · mục tiêu · giá trị · năm tầng · văn hoá · cách đồng hành', ic:'seed', star:1, capMo:'chung'},
+    {v:'hom-nay',      t:'Hôm nay',                      h:'Một việc duy nhất cho tối nay, tick xong thì cất máy đi — hai việc ngang nhau lúc chín giờ tối, trong bếp, tay bận, là không việc nào được làm · Chế độ Bão bật một chạm, KHÔNG hỏi vì sao · bỏ một việc thì không ai hỏi vặn · việc nặng có nút Để hôm khác ngay cạnh nút tiếp tục, CÙNG KÍCH CỠ', ic:'home', star:1, capMo:'chung'},
     {v:'bat-dau',     t:'Bắt đầu ở đây',               h:'Năm bước đầu tiên, đúng thứ tự',     ic:'seed', star:1, capMo:'chung'},
     {v:'tham-gia',    t:'Đường vào — sáu bước',         h:'Giới thiệu → đăng ký → test → hồ sơ → định hướng → 7 ngày', ic:'compass', star:1, capMo:'chung'},
     {v:'pham-vi',     t:'Phạm vi của tôi',             h:'Mình mở tới đâu · còn gì chưa mở',   ic:'compass', star:1, capMo:'chung'},

@@ -14,11 +14,16 @@
    đều gặp cùng một cái cổng. Đó là khác biệt giữa một luật và một lời
    dặn.
 
-   ══ BẢY CỔNG CÓ RĂNG HÔM NAY, NĂM PHÉP CANH ĐẶT TRƯỚC ══
+   ══ 9.99.75 · CẢ MƯỜI HAI CỔNG ĐỀU CÓ RĂNG ══
 
-   Kho chưa có Chế độ Bão, chưa có bản đồ riêng của trẻ, chưa có nút
-   chia sẻ ảnh. Năm luật ấy KHÔNG được khai là "đã cưỡng chế" — chúng
-   được canh bằng phép đo về thứ CHƯA ĐƯỢC TỒN TẠI, ở mục 91.
+   Tới 9.99.74 kho chưa có Chế độ Bão, chưa có bản đồ riêng của trẻ,
+   chưa có nút chia sẻ ảnh — năm luật ấy chỉ có phép canh đặt trước.
+   Chủ hệ chốt LGD-01 và `may-chu/hom-nay.js` dựng đủ bốn cửa còn
+   thiếu, nên nay cả mười hai đều chặn thật.
+
+   Phép canh đặt trước ở mục 91 **KHÔNG bị gỡ**: nó canh những cửa chưa
+   viết — cửa Chế độ Bão THỨ HAI, cửa ghim THỨ HAI. Gỡ nó đi vì "đã có
+   cổng rồi" là bỏ đúng lớp bảo vệ dành cho người viết cửa sau.
    ═══════════════════════════════════════════════════════════════ */
 
 import { Kho } from './nen.js';
@@ -124,8 +129,15 @@ export function soatGiuChan(cau) {
    nhìn — và chúng đúng là năm luật sẽ được viết bởi người không đọc
    tệp này. Cùng luật với cột lời khai của phễu (9.99.59) và hai ngăn
    của bảy việc Luật 91 (9.99.70). */
-export const CO_RANG = ['L01', 'L02', 'L04', 'L05', 'L08', 'L09', 'L10'];
-export const CANH_TRUOC = ['L03', 'L06', 'L07', 'L11', 'L12'];
+export const CO_RANG = ['L01', 'L02', 'L03', 'L04', 'L05', 'L06', 'L07', 'L08',
+  'L09', 'L10', 'L11', 'L12'];
+/* 9.99.75: chủ hệ chốt LGD-01 (thêm màn vào cổng phụ huynh), nên năm
+   luật L03 · L06 · L07 · L11 · L12 có bề mặt để cắm răng và chuyển
+   sang CO_RANG. Danh sách này RỖNG chứ không bị xoá: ngày bản đặc tả
+   sau đẻ ra một luật về màn chưa dựng thì chỗ khai nó vẫn sẵn đó, và
+   phép canh đặt trước ở mục 91 KHÔNG bị gỡ — nó vẫn canh những cửa
+   chưa viết, tức là cửa Chế độ Bão THỨ HAI, cửa ghim THỨ HAI. */
+export const CANH_TRUOC = [];
 
 export async function docLuatGiaoDien(y, env, db, hoSo) {
   if (!/^R(0[1-9]|1[0-5])$/.test(String((hoSo || {}).role || '')))
@@ -137,10 +149,12 @@ export async function docLuatGiaoDien(y, env, db, hoSo) {
     /* KHÔNG trả về một con số "đã cưỡng chế mấy trên mười hai". Một phân
        số ở đây đọc ra như một mức hoàn thành, trong khi hai nửa của nó
        là hai thứ khác hẳn nhau. */
-    vi: CO_RANG.length + ' luật có cổng chặn thật hôm nay. ' + CANH_TRUOC.length +
-      ' luật nói về màn hình CHƯA DỰNG — chúng được canh bằng phép đo về thứ chưa ' +
-      'được tồn tại: ngày ai đó viết cửa ấy mà không gọi cổng, mục 91 đỏ ngay, ' +
-      'trước khi lượt chạm đầu tiên đi ra.',
+    vi: CO_RANG.length + ' luật có cổng chặn thật. ' + (CANH_TRUOC.length
+      ? CANH_TRUOC.length + ' luật còn nói về màn hình CHƯA DỰNG.'
+      : 'Không luật nào còn treo.') +
+      ' Phép canh đặt trước vẫn chạy ở mục 91 — nó canh những CỬA CHƯA VIẾT: ngày ' +
+      'ai đó viết cửa Chế độ Bão thứ hai mà nhận ô lý do, hay cửa chia sẻ ảnh thứ ' +
+      'hai mà không gọi cổng phủ quyết, mục ấy đỏ ngay.',
     khongGopSo: 'Hai ngăn KHÔNG gộp thành một phân số. Một phân số ở đây đọc ra như ' +
       'mức hoàn thành, mà năm luật chưa có bề mặt lại đúng là năm luật sẽ được viết ' +
       'bởi người không đọc bản này.' };

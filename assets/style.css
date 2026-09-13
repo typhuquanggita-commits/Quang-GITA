@@ -599,6 +599,56 @@ main{grid-column:2;padding:26px 30px calc(90px + var(--sab));min-width:0}
   .flow{grid-template-columns:repeat(2,minmax(0,1fr))}
   .gate-body{grid-template-columns:1fr;gap:34px;padding:10px 30px 50px}
 }
+/* ══════ MÀN HÔM NAY · NHÀ MÌNH (9.99.75) ══════
+
+   Mọi cỡ chữ dưới đây lấy từ THANG CHÍN BẬC đã có (10,5 · 12,5 · 14,5 ·
+   16 · 18 · 21 · 26 · 33 · 74). Bản đầu tôi gõ 24px và 14px cho "vừa
+   mắt" — bộ rà soát bắt ngay, và đúng: bản 9.25 từng có hai mươi sáu
+   bậc, nghĩa là không có thang nào cả, mỗi mảnh giao diện tự nghĩ ra
+   cỡ của mình. Thêm một bậc vì nó vừa mắt ở ĐÚNG MỘT chỗ là cách cái
+   thang tan ra.
+
+   L12 · ĐƯỜNG THOÁT CÙNG KÍCH CỠ. Hai nút dùng CHUNG một lớp `.nm-nut`
+   và chỉ khác nhau ở màu. Đặt hai lớp riêng rồi cố cho chúng bằng nhau
+   là để dành sẵn một chỗ lệch: người sửa CSS sau đổi một lớp mà quên
+   lớp kia, nút thoát nhỏ đi, và không ai thấy — mà "cùng kích cỡ" mới
+   là luật, không phải "có nút thoát". Một nút thoát nhỏ hơn nút tiếp
+   tục là một lời mời đi tiếp đội lốt một lựa chọn.
+
+   Nên mọi thứ quyết kích cỡ — padding, cỡ chữ, độ đậm, bo góc, và
+   flex — nằm ở ĐÚNG MỘT chỗ dưới đây. */
+.nm-hang{gap:10px;margin-top:14px}
+.nm-nut{
+  flex:1 1 0;
+  min-height:48px;
+  padding:13px 16px;
+  font-size:16px;
+  font-weight:600;
+  border-radius:10px;
+  border:1.5px solid var(--vien);
+  cursor:pointer;
+  line-height:1.3;
+}
+.nm-xong{background:var(--nhan);color:#fff;border-color:var(--nhan)}
+.nm-thoat{background:transparent;color:var(--ink-2)}
+
+.nm-viec{padding:22px 20px}
+.nm-nhan{margin:0;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.nm-lon{margin:6px 0 0;font-size:21px;line-height:1.3}
+.nm-lon-nho{margin:0;font-size:18px;line-height:1.45}
+.nm-lydo{width:100%;margin-top:12px;padding:10px;border:1px solid var(--vien);
+  border-radius:8px;background:var(--bg-0);color:var(--ink);resize:vertical}
+.nm-note{margin-top:8px}
+
+/* Nút Bão nhỏ hơn HẲN việc lớn về thị giác — nó không phải việc của
+   tối nay, nó là một lối ra luôn có mặt. Nhưng vẫn đủ 44px để bấm
+   trúng bằng ngón cái. */
+.nm-bao{margin-top:26px}
+.nm-bao-nut{
+  min-height:44px;padding:10px 16px;font-size:14.5px;border-radius:9px;
+  border:1px solid var(--vien);background:transparent;color:var(--ink-2);cursor:pointer;
+}
+
 @media(max-width:860px){
   /* ── PHẢI KỂ ĐỦ BỐN DẠNG, KHÔNG CHỈ `.shell` ──
      Dòng này trước chỉ có `.shell`, và nó THUA ba dòng ở trên vì

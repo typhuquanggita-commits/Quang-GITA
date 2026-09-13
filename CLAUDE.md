@@ -1757,6 +1757,104 @@ không phải phân loại nội dung. 1 cấp = 20 điểm chạm, tổng đún
 - **LGD-02** — đường khoá thiết bị cho năm ô vòng đỏ. Cửa `soatVongDo`
   đã chặn sẵn đường lên máy chủ nên mục này không chặn lối nào.
 
+---
+
+## MÀN HÔM NAY — LGD-01 đã chốt, năm luật hết treo (9.99.75)
+
+Chủ hệ chốt **LGD-01: thêm màn vào cổng phụ huynh đã có**, không dựng
+bề mặt riêng. Chốt ấy gỡ năm luật giao diện khỏi chỗ treo — L03 · L06 ·
+L07 · L11 · L12 nay có bề mặt để cắm răng, nên **cả mười hai đều khai
+`rangO`**.
+
+Màn **Hôm nay** (`src/hom-nay.js`), máy chủ `may-chu/hom-nay.js`, kho
+`data.hom-nay.js` (9 kho), bảng `nhipNha` · `nhipXong` · `cheDoBao` ·
+`ghimCon` · `dongYAnhCon`, mục **91** mở rộng, mười ba phép đo ở
+`thu-worker.js`.
+
+### Chỉ dựng thứ chưa có
+
+Bốn tab bản đặc tả là *Hôm nay · Bản đồ · Chỉ số · Điểm chạm*. Cổng `ph`
+**đã có** `ban-do` và `tien-bo`. Dựng lại chúng là dựng bản thứ hai của
+hai màn đang chạy — và hai bản thì sẽ có ngày lệch nhau, lúc ấy một gia
+đình đọc hai con số khác nhau về chính nhà mình. Chỉ **Hôm nay** là mới.
+
+**Một màn — một việc.** Máy chủ trả về ĐÚNG MỘT việc (`viecLon`), không
+một danh sách. Trả danh sách rồi để màn hình lấy cái đầu thì luật nằm ở
+màn hình, và luật ở màn hình chết cùng lượt viết lại đầu tiên.
+
+### Năm cái răng mới
+
+| Luật | Răng |
+|---|---|
+| L03 Chế độ Bão | `batCheDoBao` **không nhận** ô `lyDo`/`xacNhan`; bảng cũng không có cột ấy |
+| L06 Ghim của con | `ghiGhimCon` hỏi tài khoản của phiên, chặn trước `INSERT` |
+| L07 Phủ quyết ảnh | `chiaSeCoAnhCon` chặn `CHUAHOI` và `CONTUCHOI` bằng **hai mã** |
+| L11 Không hỏi vặn | `boViecHomNay` **nhận** ô lý do và **không bao giờ đòi** |
+| L12 Đường thoát | hai nút dùng **chung lớp** `.nm-nut`; cỡ quyết ở đúng một chỗ |
+
+**Không "nhận rồi bỏ qua".** Một ô nhận vào là một ô màn hình hỏi được
+— người viết màn sau đọc chữ ký hàm, không đọc chú giải.
+
+**L11 là hai vế ngược nhau trên một hàm:** thiếu ô thì người muốn nói
+không có chỗ nói; đòi ô thì nó thành cửa quay. Khác nhau ở chỗ **MỜI
+hay ÉP**.
+
+**L12 · hai nút một lớp.** Đặt hai lớp riêng rồi cố cho chúng bằng nhau
+là để dành sẵn một chỗ lệch: người sửa CSS sau đổi một lớp mà quên lớp
+kia, nút thoát nhỏ đi, và không ai thấy. Mục 91 canh rằng `padding ·
+font-size · min-height · flex · border-radius` chỉ xuất hiện ở `.nm-nut`,
+còn `.nm-xong`/`.nm-thoat` chỉ được đổi **màu**.
+
+### Phép canh đặt trước KHÔNG bị gỡ
+
+`CANH_TRUOC = []` — rỗng, không xoá. Phép đo ở mục 91 vẫn chạy và vẫn
+canh những **cửa chưa viết**: cửa Chế độ Bão THỨ HAI, cửa ghim THỨ HAI.
+Gỡ nó vì *"đã có cổng rồi"* là bỏ đúng lớp bảo vệ dành cho người viết
+cửa sau — và người viết cửa sau là người không đọc tệp này.
+
+Cách loại trừ là **khai một nhà chính thức** (`NHA_CUA_CONG =
+'hom-nay.js'`), không phải thêm tên hàm vào danh sách nhận diện. Lượt
+chạy đầu chứng minh lại bài học 9.99.60: đổi thân hàm sang gọi
+`laChinhEmAy` thì phép dò không thấy `hoSo.uid` nữa và **báo đỏ một cổng
+đang chạy đúng**. Phép dò chữ chỉ kiểm được những tên nó ĐÃ BIẾT.
+
+### Hai lỗ THẬT bộ thử bắt, và cả hai đều mở trong im lặng
+
+**1. `hoSo` KHÔNG CÓ ô `maKhachHang`** — lần thứ TƯ cái bẫy này cắn kho,
+sau `hoSo.username` (9.99.55) và `hoSo.vai` (9.99.62). JavaScript trả
+`undefined`, phép so luôn sai, và **cả bốn cửa đóng với mọi người mà
+không báo gì cả**: màn hiện "chưa đọc được nhịp" mãi mãi, không một dòng
+lỗi nào để lần theo. Mã khách hàng nằm ở **hàng `users`**, đọc qua
+`Kho.nguoiTheoId`.
+
+**2. `users.studentId` mang HAI NGHĨA.** `dang-ky.js` ghi `studentId =
+maHV` vào chính hàng của *phụ huynh*, nên cột ấy nói được hai câu khác
+hẳn nhau — *tài khoản NÀY LÀ em ấy* (R14) và *tài khoản NÀY CÓ CON LÀ em
+ấy* (R13). Bản đầu của `laChinhEmAy` chỉ so `studentId`, và **cha mẹ
+qua được cả L06 lẫn L07** — đúng thứ hai luật ấy sinh ra để chặn. Nay
+hỏi cả hai: đúng hồ sơ **và** vai là `R14`, đọc từ hàng users chứ không
+từ ô `role` của phiên (vai trong phiên đổi được sau khi mở phiên).
+
+### Ba chỗ phép đo của chính tôi hỏng
+
+1. **Dòng chi tiết dereference thứ đang đo.** `hn1.than.viecLon.ten` khi
+   `viecLon` undefined thì phép đo không ĐỎ — nó **SẬP**, và một lượt
+   sập giấu luôn mười hai phép đo đứng sau. Một phép đo chỉ dùng được
+   khi lúc sai nó còn **in ra** được.
+2. **Tôi đọc nhầm một lượt sập thành một lượt xanh** — `grep "^  ✗"`
+   không khớp dòng `TypeError`, nên khối mới trông như đã qua. Phá thử
+   mới lộ ra là nó chưa bao giờ chạy.
+3. **CSS đẻ hai bậc cỡ chữ mới** (24px · 14px) vì "vừa mắt". Bộ rà soát
+   bắt ngay: bản 9.25 từng có hai mươi sáu bậc, nghĩa là không có thang
+   nào cả. Gấp về thang chín bậc — sửa CSS, không sửa ngưỡng.
+
+### Sổ chờ
+
+- **NM-01** — danh sách nhịp gợi ý: để trống hẳn cho nhà tự viết, hay
+  gợi ý đúng BA nhịp. Ba thì còn phải chọn; mười thì thành một thực đơn,
+  và chọn trong thực đơn không phải là quyết định của mình.
+- **LGD-01 đã chốt** → `G.NM_DACHOT`. Gỡ khỏi sổ chờ, **không xoá**.
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

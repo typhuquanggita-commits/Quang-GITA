@@ -46,7 +46,7 @@ G.VIEWS = G.VIEWS || {};
     var chuaCo = ds.filter(function (l) { return l.chuaCoMat; });
     var o = '';
 
-    o += U.sec('Bảy luật có cổng chặn thật',
+    o += U.sec(coRang.length + ' luật có cổng chặn thật',
       'Mỗi luật trỏ vào MỘT chỗ cắm răng có thật trong mã máy chủ. Bộ kiểm mục 91 ' +
       'đối chiếu từng chỗ ấy với nguồn — trỏ vào một cái tên không tồn tại thì cổng ' +
       'lặng lẽ không chặn gì, mà nhìn vẫn y hệt một cổng đủ răng.');
@@ -55,15 +55,30 @@ G.VIEWS = G.VIEWS || {};
         return [h(l.ma), h(l.ten), '<code>' + h(l.rangO) + '</code>', h(l.vi), h(l.nguon)];
       }));
 
-    o += U.sec('Năm luật chưa có bề mặt — và phép canh đặt TRƯỚC',
-      'Năm luật này nói về màn hình kho CHƯA DỰNG. Chúng KHÔNG được khai là đã ' +
-      'cưỡng chế. Thay vào đó máy canh rằng cửa ấy chưa tồn tại: ngày ai đó viết ' +
-      'cửa chia sẻ ảnh trẻ mà không gọi cổng phủ quyết, bộ kiểm đỏ ngay — trước ' +
-      'khi tấm ảnh đầu tiên đi ra.');
-    o += U.tbl(['Mã', 'Luật', 'Phép canh đặt trước', 'Vì sao', 'Nguồn'],
-      chuaCo.map(function (l) {
-        return [h(l.ma), h(l.ten), h(l.chuaCoMat), h(l.vi), h(l.nguon)];
-      }));
+    if (chuaCo.length) {
+      o += U.sec(chuaCo.length + ' luật chưa có bề mặt — và phép canh đặt TRƯỚC',
+        'Mấy luật này nói về màn hình kho CHƯA DỰNG. Chúng KHÔNG được khai là đã ' +
+        'cưỡng chế. Thay vào đó máy canh rằng cửa ấy chưa tồn tại: ngày ai đó viết ' +
+        'cửa chia sẻ ảnh trẻ mà không gọi cổng phủ quyết, bộ kiểm đỏ ngay — trước ' +
+        'khi tấm ảnh đầu tiên đi ra.');
+      o += U.tbl(['Mã', 'Luật', 'Phép canh đặt trước', 'Vì sao', 'Nguồn'],
+        chuaCo.map(function (l) {
+          return [h(l.ma), h(l.ten), h(l.chuaCoMat), h(l.vi), h(l.nguon)];
+        }));
+    } else {
+      /* Ngăn rỗng phải NÓI RA nó rỗng vì sao. Một bảng có đầu cột mà
+         không có dòng đọc ra là "chỗ này chưa làm xong" — đúng cái hố
+         đã ghi ở 9.99.63. */
+      o += U.sec('Không luật nào còn treo',
+        'Tới 9.99.74 có năm luật — Chế độ Bão · ghim của con · phủ quyết ảnh con · ' +
+        'không hỏi vặn · đường thoát — chỉ có phép canh đặt trước, vì kho chưa có màn ' +
+        'hình nào để cắm răng. Chủ hệ chốt LGD-01 ở 9.99.75 (thêm màn vào cổng phụ ' +
+        'huynh đã có), và bốn cửa còn thiếu được dựng ở may-chu/hom-nay.js, nên cả ' +
+        'mười hai nay chặn thật. Phép canh đặt trước KHÔNG bị gỡ: nó canh những CỬA ' +
+        'CHƯA VIẾT — cửa Chế độ Bão thứ hai, cửa ghim thứ hai, cửa chia sẻ ảnh thứ ' +
+        'hai. Gỡ nó đi vì "đã có cổng rồi" là bỏ đúng lớp bảo vệ dành cho người viết ' +
+        'cửa sau, và người viết cửa sau là người không đọc màn này.');
+    }
 
     return o || U.empty('Kho luật giao diện chưa mở', 'Đăng nhập bằng vai có gói nghề.');
   }

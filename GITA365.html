@@ -977,6 +977,56 @@ main{grid-column:2;padding:26px 30px calc(90px + var(--sab));min-width:0}
   .flow{grid-template-columns:repeat(2,minmax(0,1fr))}
   .gate-body{grid-template-columns:1fr;gap:34px;padding:10px 30px 50px}
 }
+/* ══════ MÀN HÔM NAY · NHÀ MÌNH (9.99.75) ══════
+
+   Mọi cỡ chữ dưới đây lấy từ THANG CHÍN BẬC đã có (10,5 · 12,5 · 14,5 ·
+   16 · 18 · 21 · 26 · 33 · 74). Bản đầu tôi gõ 24px và 14px cho "vừa
+   mắt" — bộ rà soát bắt ngay, và đúng: bản 9.25 từng có hai mươi sáu
+   bậc, nghĩa là không có thang nào cả, mỗi mảnh giao diện tự nghĩ ra
+   cỡ của mình. Thêm một bậc vì nó vừa mắt ở ĐÚNG MỘT chỗ là cách cái
+   thang tan ra.
+
+   L12 · ĐƯỜNG THOÁT CÙNG KÍCH CỠ. Hai nút dùng CHUNG một lớp `.nm-nut`
+   và chỉ khác nhau ở màu. Đặt hai lớp riêng rồi cố cho chúng bằng nhau
+   là để dành sẵn một chỗ lệch: người sửa CSS sau đổi một lớp mà quên
+   lớp kia, nút thoát nhỏ đi, và không ai thấy — mà "cùng kích cỡ" mới
+   là luật, không phải "có nút thoát". Một nút thoát nhỏ hơn nút tiếp
+   tục là một lời mời đi tiếp đội lốt một lựa chọn.
+
+   Nên mọi thứ quyết kích cỡ — padding, cỡ chữ, độ đậm, bo góc, và
+   flex — nằm ở ĐÚNG MỘT chỗ dưới đây. */
+.nm-hang{gap:10px;margin-top:14px}
+.nm-nut{
+  flex:1 1 0;
+  min-height:48px;
+  padding:13px 16px;
+  font-size:16px;
+  font-weight:600;
+  border-radius:10px;
+  border:1.5px solid var(--vien);
+  cursor:pointer;
+  line-height:1.3;
+}
+.nm-xong{background:var(--nhan);color:#fff;border-color:var(--nhan)}
+.nm-thoat{background:transparent;color:var(--ink-2)}
+
+.nm-viec{padding:22px 20px}
+.nm-nhan{margin:0;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.nm-lon{margin:6px 0 0;font-size:21px;line-height:1.3}
+.nm-lon-nho{margin:0;font-size:18px;line-height:1.45}
+.nm-lydo{width:100%;margin-top:12px;padding:10px;border:1px solid var(--vien);
+  border-radius:8px;background:var(--bg-0);color:var(--ink);resize:vertical}
+.nm-note{margin-top:8px}
+
+/* Nút Bão nhỏ hơn HẲN việc lớn về thị giác — nó không phải việc của
+   tối nay, nó là một lối ra luôn có mặt. Nhưng vẫn đủ 44px để bấm
+   trúng bằng ngón cái. */
+.nm-bao{margin-top:26px}
+.nm-bao-nut{
+  min-height:44px;padding:10px 16px;font-size:14.5px;border-radius:9px;
+  border:1px solid var(--vien);background:transparent;color:var(--ink-2);cursor:pointer;
+}
+
 @media(max-width:860px){
   /* ── PHẢI KỂ ĐỦ BỐN DẠNG, KHÔNG CHỈ `.shell` ──
      Dòng này trước chỉ có `.shell`, và nó THUA ba dòng ở trên vì
@@ -2379,12 +2429,12 @@ main{container-type:inline-size}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 112 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 113 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 143 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 144 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -2425,7 +2475,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.74',
+  version: '9.99.75',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2915,7 +2965,7 @@ G.PORTALS = {
    rồi thứ tự G.NAV lấp nốt chỗ trống. Nên đây là lời gợi ý, không phải
    một lời hứa mã phải giữ. */
 G.DUOI = {
-  ph:    ['bat-dau', 'ban-do', 'tien-bo', 'tro-ly'],
+  ph:    ['hom-nay', 'ban-do', 'tien-bo', 'tro-ly'],
   hs:    ['bat-dau', 'nhiem-vu', 'tien-bo', 'tro-ly'],
   coach: ['coach-deck', 'bang-viec', 'tien-bo', 'tro-ly'],
   tuvan: ['tuvan-deck', 'bang-viec', 'tien-bo', 'tro-ly'],
@@ -3003,6 +3053,7 @@ G.NAV = [
     {v:'tien-bo',     t:'Nhà mình đã đổi gì',          h:'Tuần này so với tuần trước, và phần chênh lệch nói bằng lời', ic:'chart', star:1, capMo:'chung'},
     {v:'kpi-toi',     t:'KPI của tôi',                h:'KPI ngày · KPI tháng · liên đới · hạng lương thưởng', ic:'chart', star:1, capMo:'chung'},
     {v:'gioi-thieu',  t:'GITA 365 là gì',              h:'Sứ mệnh · tầm nhìn · mục tiêu · giá trị · năm tầng · văn hoá · cách đồng hành', ic:'seed', star:1, capMo:'chung'},
+    {v:'hom-nay',      t:'Hôm nay',                      h:'Một việc duy nhất cho tối nay, tick xong thì cất máy đi — hai việc ngang nhau lúc chín giờ tối, trong bếp, tay bận, là không việc nào được làm · Chế độ Bão bật một chạm, KHÔNG hỏi vì sao · bỏ một việc thì không ai hỏi vặn · việc nặng có nút Để hôm khác ngay cạnh nút tiếp tục, CÙNG KÍCH CỠ', ic:'home', star:1, capMo:'chung'},
     {v:'bat-dau',     t:'Bắt đầu ở đây',               h:'Năm bước đầu tiên, đúng thứ tự',     ic:'seed', star:1, capMo:'chung'},
     {v:'tham-gia',    t:'Đường vào — sáu bước',         h:'Giới thiệu → đăng ký → test → hồ sơ → định hướng → 7 ngày', ic:'compass', star:1, capMo:'chung'},
     {v:'pham-vi',     t:'Phạm vi của tôi',             h:'Mình mở tới đâu · còn gì chưa mở',   ic:'compass', star:1, capMo:'chung'},
@@ -3797,6 +3848,7 @@ G.ITEM_EN = {
   'bo-prompt':['Prompt Pack · 4 Roles','four paste-ready prompts A, B, C and D — ASSEMBLED AT RUNTIME from the vaults, with not one line of them stored anywhere · role C must run on a DIFFERENT provider from role A, so the author never reviews itself · six steps for anything published, the last two performed by a person · wired into seven doors that already run'],
   'bang-gia':['Price Table','numbers editable on the spot, the frame stays in the vault — prices are provisional while the system is being built, so they must be changeable, while what a tier PROMISES to deliver still ships through a release · every change is a NEW ROW with a signer and a reason · a price already frozen into a family payment schedule never moves · changing a price never shifts the spend-approval ladder by itself'],
   'luat-giao-dien':['Interface Laws','twelve veto rules born out of the thirty-part course — the teeth live on the SERVER, not in the interface, because the interface is the most-rewritten part of any codebase · seven laws have real gates today; five describe screens not yet built and are guarded by measuring that the door does NOT YET EXIST · no ranking families · no demotion · red-circle data never leaves the device · the machine never drafts an apology'],
+  'hom-nay':['Today','one single task for tonight — tick it and put the phone down; two equal tasks at nine in the evening, in the kitchen, hands busy, means neither gets done · Storm Mode is one tap and NEVER asks why · skipping a task is never interrogated · heavy items carry a Some other day button beside continue, at the SAME SIZE'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
@@ -6143,6 +6195,8 @@ G.THUOC_CAP_PHEP = [
   'BP_NOI','BP_NOI_LUAT','BP_OFFLINE','BP_CHOCHU',
   /* v9.99.73 — bảng giá sửa được */
   'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
+  'NM_MOT_VIEC','NM_BAO','NM_BO_VIEC','NM_GHIM','NM_ANH_CON','NM_NANG_NE',
+  'NM_TRONG','NM_CHOCHU','NM_DACHOT',
   'LGD_LUAT','LGD_VONG_DO','LGD_VONG_DO_LUAT','LGD_NGUOI_GIU','LGD_NGUOI_GIU_LUAT',
   'LGD_GIU_CHAN','LGD_NGUYEN_TAC','LGD_TRONG','LGD_HAI_TRUC','LGD_CHOCHU',
   /* v9.74 — bốn kho định tuyến độ khó, gói NGHỀ */
@@ -44474,7 +44528,7 @@ G.VIEWS = G.VIEWS || {};
     var chuaCo = ds.filter(function (l) { return l.chuaCoMat; });
     var o = '';
 
-    o += U.sec('Bảy luật có cổng chặn thật',
+    o += U.sec(coRang.length + ' luật có cổng chặn thật',
       'Mỗi luật trỏ vào MỘT chỗ cắm răng có thật trong mã máy chủ. Bộ kiểm mục 91 ' +
       'đối chiếu từng chỗ ấy với nguồn — trỏ vào một cái tên không tồn tại thì cổng ' +
       'lặng lẽ không chặn gì, mà nhìn vẫn y hệt một cổng đủ răng.');
@@ -44483,15 +44537,30 @@ G.VIEWS = G.VIEWS || {};
         return [h(l.ma), h(l.ten), '<code>' + h(l.rangO) + '</code>', h(l.vi), h(l.nguon)];
       }));
 
-    o += U.sec('Năm luật chưa có bề mặt — và phép canh đặt TRƯỚC',
-      'Năm luật này nói về màn hình kho CHƯA DỰNG. Chúng KHÔNG được khai là đã ' +
-      'cưỡng chế. Thay vào đó máy canh rằng cửa ấy chưa tồn tại: ngày ai đó viết ' +
-      'cửa chia sẻ ảnh trẻ mà không gọi cổng phủ quyết, bộ kiểm đỏ ngay — trước ' +
-      'khi tấm ảnh đầu tiên đi ra.');
-    o += U.tbl(['Mã', 'Luật', 'Phép canh đặt trước', 'Vì sao', 'Nguồn'],
-      chuaCo.map(function (l) {
-        return [h(l.ma), h(l.ten), h(l.chuaCoMat), h(l.vi), h(l.nguon)];
-      }));
+    if (chuaCo.length) {
+      o += U.sec(chuaCo.length + ' luật chưa có bề mặt — và phép canh đặt TRƯỚC',
+        'Mấy luật này nói về màn hình kho CHƯA DỰNG. Chúng KHÔNG được khai là đã ' +
+        'cưỡng chế. Thay vào đó máy canh rằng cửa ấy chưa tồn tại: ngày ai đó viết ' +
+        'cửa chia sẻ ảnh trẻ mà không gọi cổng phủ quyết, bộ kiểm đỏ ngay — trước ' +
+        'khi tấm ảnh đầu tiên đi ra.');
+      o += U.tbl(['Mã', 'Luật', 'Phép canh đặt trước', 'Vì sao', 'Nguồn'],
+        chuaCo.map(function (l) {
+          return [h(l.ma), h(l.ten), h(l.chuaCoMat), h(l.vi), h(l.nguon)];
+        }));
+    } else {
+      /* Ngăn rỗng phải NÓI RA nó rỗng vì sao. Một bảng có đầu cột mà
+         không có dòng đọc ra là "chỗ này chưa làm xong" — đúng cái hố
+         đã ghi ở 9.99.63. */
+      o += U.sec('Không luật nào còn treo',
+        'Tới 9.99.74 có năm luật — Chế độ Bão · ghim của con · phủ quyết ảnh con · ' +
+        'không hỏi vặn · đường thoát — chỉ có phép canh đặt trước, vì kho chưa có màn ' +
+        'hình nào để cắm răng. Chủ hệ chốt LGD-01 ở 9.99.75 (thêm màn vào cổng phụ ' +
+        'huynh đã có), và bốn cửa còn thiếu được dựng ở may-chu/hom-nay.js, nên cả ' +
+        'mười hai nay chặn thật. Phép canh đặt trước KHÔNG bị gỡ: nó canh những CỬA ' +
+        'CHƯA VIẾT — cửa Chế độ Bão thứ hai, cửa ghim thứ hai, cửa chia sẻ ảnh thứ ' +
+        'hai. Gỡ nó đi vì "đã có cổng rồi" là bỏ đúng lớp bảo vệ dành cho người viết ' +
+        'cửa sau, và người viết cửa sau là người không đọc màn này.');
+    }
 
     return o || U.empty('Kho luật giao diện chưa mở', 'Đăng nhập bằng vai có gói nghề.');
   }
@@ -44618,6 +44687,197 @@ G.VIEWS = G.VIEWS || {};
     o += G.lgdNgan === 'do' ? veDo()
        : G.lgdNgan === 'nen' ? veNen()
        : veLuat();
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/hom-nay.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÀN HÔM NAY · NHÀ MÌNH  (9.99.75)
+
+   Chủ hệ chốt LGD-01: bốn tab của MỤC C là mấy màn THÊM vào cổng phụ
+   huynh đã có, không phải một bề mặt riêng.
+
+   ══ MÀN NÀY CHỈ DỰNG THỨ CHƯA CÓ ══
+
+   Bốn tab bản đặc tả: Hôm nay · Bản đồ · Chỉ số · Điểm chạm. Cổng `ph`
+   ĐÃ CÓ `ban-do` và `tien-bo`. Dựng lại chúng là dựng bản thứ hai của
+   hai màn đang chạy, và hai bản thì sẽ có ngày lệch nhau — lúc ấy một
+   gia đình đọc hai con số khác nhau về chính nhà mình.
+
+   ══ MỘT MÀN — MỘT VIỆC ══
+
+   Người mở app lúc chín giờ tối, trong bếp, TAY BẬN, đôi khi mở ra
+   giữa lúc mệt. Hai việc ngang nhau trên một màn hình như thế là KHÔNG
+   việc nào được làm: họ đọc cả hai, không chọn được, rồi cất máy.
+
+   Nên máy chủ trả về ĐÚNG MỘT việc (`viecLon`), không trả một danh
+   sách rồi để màn này tự lấy cái đầu. Màn tự chọn thì luật nằm ở màn
+   hình — và luật ở màn hình chết cùng lượt viết lại đầu tiên.
+
+   ══ L12 · ĐƯỜNG THOÁT CÙNG KÍCH CỠ ══
+
+   Việc mang dấu `nangNe` thì nút "Để hôm khác" nằm NGAY CẠNH nút tiếp
+   tục và mang CÙNG MỘT LỚP CSS. Cùng kích cỡ mới là luật, không phải
+   "có nút thoát": một nút thoát nhỏ hơn là một lời mời đi tiếp đội lốt
+   một lựa chọn.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  G.nmDoc = G.nmDoc || null;
+  G.nmDangTai = false;
+
+  function veLai() {
+    if (!G.S || G.S.view !== 'hom-nay') return;
+    if (typeof document === 'undefined' || !document.getElementById('main')) return;
+    G.render && G.render();
+  }
+
+  function maNha() {
+    return String(((G.S || {}).hoSo || {}).maKhachHang || '');
+  }
+
+  G.nmTai = function () {
+    if (!G.goiMayChu || !maNha()) return;
+    G.nmDangTai = true;
+    G.goiMayChu('docHomNay', {maNha: maNha()}).then(function (x) {
+      G.nmDoc = x; G.nmDangTai = false; veLai();
+    }).catch(function (e) {
+      G.nmDoc = {ok: false, error: e && e.message}; G.nmDangTai = false; veLai();
+    });
+  };
+
+  /* ── L03 · CHẾ ĐỘ BÃO ──
+     Một chạm. KHÔNG confirm(), KHÔNG prompt() hỏi lý do. Hộp thoại xác
+     nhận ở đây là đúng cái bản đặc tả cấm — và nó cấm vì người bật đang
+     ở giữa một chuyện khó. */
+  G.nmBao = function (bat) {
+    if (!G.goiMayChu) return;
+    G.goiMayChu('batCheDoBao', {maNha: maNha(), bat: !!bat})
+      .then(function () { G.nmTai(); })
+      .catch(function () { G.nmTai(); });
+  };
+
+  G.nmTick = function (maNhip) {
+    if (!G.goiMayChu) return;
+    G.goiMayChu('tickNhip', {maNha: maNha(), maNhip: maNhip})
+      .then(function () { G.nmTai(); })
+      .catch(function () { G.nmTai(); });
+  };
+
+  /* ── L11 · BỎ MỘT VIỆC ──
+     Ô lý do là một ô TRỐNG SẴN, gửi đi được khi còn trống. Không
+     `prompt()` bắt gõ, không chặn nút khi ô rỗng. */
+  G.nmBo = function (maNhip) {
+    if (!G.goiMayChu) return;
+    var o = document.getElementById('nm-lydo');
+    G.goiMayChu('boViecHomNay', {maNha: maNha(), maNhip: maNhip,
+      lyDo: o ? o.value : ''})
+      .then(function () { G.nmTai(); })
+      .catch(function () { G.nmTai(); });
+  };
+
+  function veViec(d) {
+    var v = d.viecLon;
+    var o = '<div class="giay nm-viec">';
+    o += '<p class="nm-nhan">Tối nay</p>';
+    o += '<h3 class="nm-lon">' + h(v.ten) + '</h3>';
+
+    /* ── HAI NÚT, CÙNG LỚP, CÙNG KÍCH CỠ ──
+       `.nm-nut` là một lớp duy nhất dùng cho cả hai. Đặt hai lớp khác
+       nhau rồi cố cho chúng bằng nhau là để dành sẵn một chỗ lệch:
+       người sửa CSS sau đổi một lớp mà không đổi lớp kia, và nút thoát
+       nhỏ đi mà không ai thấy. */
+    o += '<div class="row nm-hang">';
+    o += '<button class="nm-nut nm-xong" onclick="G.nmTick(\'' +
+      h(v.id) + '\')">Xong rồi</button>';
+    if (v.nangNe) {
+      o += '<button class="nm-nut nm-thoat" onclick="G.nmBo(\'' +
+        h(v.id) + '\')">Để hôm khác</button>';
+    } else {
+      o += '<button class="nm-nut nm-thoat" onclick="G.nmBo(\'' +
+        h(v.id) + '\')">Bỏ hôm nay</button>';
+    }
+    o += '</div>';
+
+    o += '<textarea id="nm-lydo" class="nm-lydo" rows="2" ' +
+      'placeholder="Muốn nói gì thì viết — không bắt buộc"></textarea>';
+    o += '<p class="note nm-note">Bỏ việc thì không ai hỏi vì sao. Ô trên để trống ' +
+      'vẫn đóng được việc.</p>';
+    o += '</div>';
+
+    if (d.conLai > 0) {
+      o += '<p class="note">Còn ' + d.conLai + ' nhịp nữa hôm nay. Làm xong việc ' +
+        'này thì nó hiện ra — một lúc một việc.</p>';
+    }
+    return o;
+  }
+
+  function veTrong(khi) {
+    var t = (G.NM_TRONG || []).filter(function (x) { return x.khi === khi; })[0];
+    if (!t) return '';
+    var o = '<div class="giay nm-viec"><p class="nm-lon-nho">' + h(t.chu) + '</p>';
+    if (khi === 'dangBao') {
+      o += '<div class="row nm-hang"><button class="nm-nut nm-xong" ' +
+        'onclick="G.nmBao(false)">' + h(t.nut) + '</button></div>';
+    } else if (t.nut) {
+      o += '<p class="note">' + h(t.nut) + '</p>';
+    }
+    o += '</div>';
+    return o;
+  }
+
+  G.VIEWS['hom-nay'] = function () {
+    var o = '<div class="hd"><h2>' + ic('home') + ' Hôm nay</h2>' +
+      '<p class="sub">Một việc. Làm xong thì tick, rồi cất máy đi. Màn này cố ý ' +
+      'chỉ có đúng một việc lớn — hai việc ngang nhau lúc chín giờ tối, trong bếp, ' +
+      'tay bận, là không việc nào được làm.</p></div>';
+
+    if (!maNha()) {
+      return o + U.empty('Màn này của gia đình',
+        'Hôm nay đọc nhịp của một nhà cụ thể, nên nó cần một tài khoản gắn với mã ' +
+        'khách hàng. Người của Học viện xem nhịp của nhà mình phụ trách qua màn ' +
+        'Vận hành & chăm sóc — ở đó có cả sổ chạm và bảng đèn ba màu, còn màn này ' +
+        'cố ý chỉ trả lời đúng một câu: tối nay nhà mình làm gì.');
+    }
+
+    if (!G.nmDoc && !G.nmDangTai) { G.nmTai(); }
+
+    var d = G.nmDoc;
+    if (!d) return o + '<p class="note">Đang đọc nhịp của nhà mình…</p>';
+    if (!d.ok) return o + U.empty('Chưa đọc được nhịp',
+      String(d.error || 'Thử lại sau ít phút.'));
+
+    if (d.dangBao) {
+      o += veTrong('dangBao');
+    } else if (d.chuaCoNhip) {
+      o += veTrong('chuaCoNhip');
+    } else if (d.xongHet) {
+      o += veTrong('xongHet');
+    } else if (d.viecLon) {
+      o += veViec(d);
+    }
+
+    /* ── NÚT CHẾ ĐỘ BÃO ──
+       Một chạm, không hỏi lý do, không hộp thoại xác nhận. Nút nhỏ hơn
+       hẳn việc lớn về thị giác — nó không phải việc của tối nay, nó là
+       một lối ra luôn có mặt. */
+    if (!d.dangBao) {
+      o += '<div class="nm-bao"><button class="nm-bao-nut" onclick="G.nmBao(true)">' +
+        ic('shield') + ' Bật Chế độ Bão</button>' +
+        '<p class="note">Một chạm. Không hỏi vì sao, không khảo sát. Nhịp dừng lại, ' +
+        'mọi nhắc tắt, và <b>chuỗi giữ nguyên</b> — bão mà vẫn đứt chuỗi thì nó chỉ ' +
+        'là một cái nút đổi màu, và người ta sẽ cố tick cho xong thay vì bấm nó.</p></div>';
+    }
+
     return o;
   };
 })();
