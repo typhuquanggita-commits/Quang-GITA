@@ -4101,6 +4101,106 @@ phải nằm CUỐI. Sửa ngay trong lượt, không để lại.
 
 ---
 
+## CỨU HỆ — PHÁ KÍNH KHI SUPER ADMIN BỊ CHIẾM (9.99.95)
+
+Theo tình huống 3 của chủ hệ: máy Super Admin dính virus, hacker chiếm
+tài khoản R01, **đổi mật khẩu**, phá hệ. Bộ não phát hiện nhưng chỉ gửi
+được một thứ ra ngoài — email tới địa chỉ cứu hệ. Module
+`may-chu/cuu-he.js`, kho `data.cuu-he.js` (5 kho `CUU_`), bảng `cuuHe`,
+bộ kiểm **mục 104**.
+
+### Ba yếu tố hacker không có CÙNG LÚC
+
+Máy dính virus, nên **mật khẩu cũ có thể chính là thứ đã rò** — nó một
+mình không chiếm lại được hệ (nếu đủ thì hacker cũng đủ). Nên:
+
+| Yếu tố | Ở đâu | Hacker có |
+|---|---|---|
+| Khoá cứu hệ | `GITA_KHOA_CUU` — secret Worker, **offline** | KHÔNG — không nằm CSDL |
+| Token một lần | qua **email cứu hệ** (khác email tài khoản) | KHÔNG — không đọc được email ấy |
+| Mật khẩu cũ | Super Admin còn nhớ | CÓ THỂ — nên chỉ là yếu tố **xác nhận**, được GHI LẠI chứ không CHẶN |
+
+### "Tổng tấn công" là phản công TRONG CHÍNH NHÀ MÌNH
+
+GITA **không** tấn công máy/hệ của hacker — truy cập trái phép bên thứ
+ba là phạm pháp, ngoài quyền Học viện. Phản công đúng nghĩa: **đá sạch
+mọi phiên** (văng luôn phiên hacker), **đóng băng mọi cửa ghi**, khoá
+tài khoản, truy hồi. Token hacker bị huỷ, hệ không cho ghi — nó mất
+quyền ngay cả khi giữ mật khẩu mới.
+
+### Bốn chỗ kiến trúc, mỗi chỗ một luật
+
+1. **Cửa cứu hệ đứng TRƯỚC cổng phiên** — hacker giữ mọi phiên; Super
+   Admin thật không có phiên nào. Xác thực bằng ba yếu tố offline, không
+   bằng token đăng nhập. Cùng lối cửa ngân hàng (`nganHangBao`).
+2. **Đóng băng MẶC-ĐỊNH-TỪ-CHỐI** — khi băng, worker chặn MỌI cửa trừ
+   `AN_TOAN_KHI_BANG` (đọc + cứu hệ + đổi mật khẩu). Khoá nhiều hơn thì
+   an toàn hơn khoá ít.
+3. **Khoá cứu hệ KHÔNG nằm CSDL** — bảng `cuuHe` không có cột giữ bí
+   mật. Một dump CSDL bị lộ không kéo theo nó (cùng luật `GITA_KHOA_KHO`).
+4. **Khôi phục DỮ LIỆU là bước tay** — cửa truy hồi chiếm lại QUYỀN
+   (mật khẩu + phiên + mở băng); khôi phục dữ liệu chạy tay
+   `node tools/khoi-phuc-kho.js`. Máy KHÔNG giả vờ đã làm.
+
+### Ba lỗi của chính tôi, phá thử và mục 104 bắt
+
+1. **Phép đo dò trên bản BỎ CHUỖI, mà tên cửa là chuỗi.** `boChuMa` bỏ
+   cả chuỗi, nên `fn === 'baoDongCuuHe'` biến mất → mục 104 báo "cửa
+   đứng sau cổng phiên" oan. Sửa: worker dò trên bản **bỏ chú giải, GIỮ
+   chuỗi** — cùng ngoại lệ 9.99.85 (dò câu lệnh trong chuỗi thì chỉ bỏ
+   chú giải). Lần thứ sáu của lớp lỗi 9.99.78, lần này NGƯỢC.
+2. **Tiền tố `CH_` đã bị chiếm.** `data.chuyen-cam-hung.js` dùng
+   `CH_MACH`, `CH_CAP`. Mục 104 `mocBang` bắt ngay — đúng việc nó sinh
+   ra: tìm bảng tôi không biết đã tồn tại. Đổi hết sang `CUU_` (9.99.67:
+   chọn tiền tố TRƯỚC khi viết).
+3. **`sed s/CH_LUAT/CUU_LUAT/g` nuốt chuỗi con.** `RSP_LE`**`CH_LUAT`**
+   → `RSP_LECUU_LUAT`, làm một kho không liên quan **biến mất** khỏi
+   đăng ký. Mục 45 bắt ngay. Bài học: thay chuỗi hàng loạt phải neo
+   biên, không thay chuỗi con trần.
+
+### Sim đầy đủ: 12/12, và một sim-bug đáng giữ
+
+Diễn tập trọn vòng (hacker chiếm → báo động → hacker chống cự thiếu yếu
+tố → đóng băng → truy hồi → Super Admin vào lại) đạt 12/12. Sim đầu đỏ
+vì mật khẩu thử chứa "Admin/Super" bị `mkQuaDeDoan` từ chối — **một
+protection thật**: guard mật khẩu yếu áp cả trong lúc cứu hệ.
+
+### Sổ chờ
+
+- **CH-01** — nạp ba secret: `GITA_KHOA_CUU` · `GITA_MAIL_CUU` (khác
+  email tài khoản) · `GITA_KHOA_THU`. Việc bấm tay của chủ hệ.
+- **CH-02** — ngưỡng `soatBatThuong` (nay: 1 đổi mật khẩu + ≥2 việc phá
+  trong 15 phút). Cân báo-nhầm với bỏ-sót là quyết định vận hành.
+
+### Hai chỗ xưởng video 9.99.94 chưa được đo, phát hiện lúc phát hành
+
+Cả hai đều là lớp lỗi tệp này đã ghi, và cả hai chỉ lộ ra khi chạy đủ
+bộ kiểm — không phải khi đọc mã.
+
+1. **`do-khung-man` đo NHÃN, không đo ô.** Nó bắt ba "nút" dưới 32px ở
+   màn studio, và tôi đoán ngay đó là thanh kéo tua. Đo thẳng thì ô nhập
+   TỰ NÓ đã cao 34px — cái 20px là cái `<label>` BARE bọc quanh nó. Nhãn
+   studio `display:inline` nên hộp nhãn chỉ cao bằng dòng chữ, còn ô
+   inline-block bên trong không kéo hộp lên. Các màn khác thoát vì nhãn
+   mang lớp (`label.row` · `label.dk-dy`) khối `pointer:coarse` đã nâng
+   sẵn; nhãn studio không mang lớp nào. Chữa ở NHÃN (`.man-xu label`
+   flex + min-height:34), không chỉ ở ô — **nhãn LÀ vùng chạm**, đúng
+   bài học 9.99.51 "đo VÙNG CHẠM chứ không đo cái ô vuông". Nới đúng
+   trong `.man-xu`, không nới `input`/`label` toàn cục.
+   > **Một dòng đỏ của `do-khung-man` nói KÍCH THƯỚC, không nói THẺ NÀO.
+   > Đoán thẻ từ kích thước là đoán — phải in ra thẻ thật rồi mới sửa.**
+   Lần này tôi đoán "thanh kéo tua" và sửa nhầm hai lượt (min-height rồi
+   height cho range) trước khi in ra thẻ và thấy đó là `<label>`.
+
+2. **`G.toast` không tồn tại — hàm thật là `U.toast(msg,kind)`.** Xưởng
+   video gọi `G.toast && G.toast(...)` ở chín chỗ; cái `&&` làm nó câm
+   lặng không nổ, nhưng người dùng cũng không bao giờ thấy một lời báo
+   nào. `ra-soat` mục 5 (hàm được canh phải có thật) bắt đúng chỗ ấy —
+   một cửa canh trước khi gọi một hàm KHÔNG CÓ là một cửa không bao giờ
+   mở. Nay cả chín chỗ gọi `U.toast(..., 'ok'|'err')`.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

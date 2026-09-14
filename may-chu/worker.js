@@ -74,6 +74,8 @@ import { docLuatGiaoDien } from './luat-giao-dien.js';
 import { capLenhGiamSat, thuLenhGiamSat, docLenhGiamSat, soatSoDen,
   docTranGiamSat } from './giam-sat.js';
 import { ghiHoChieuVideo } from './studio.js';
+import { baoDongCuuHe, dongBangHe, moBangHe, truyHoiHe, soatCuuHe, dangBang,
+  AN_TOAN_KHI_BANG } from './cuu-he.js';
 import { docHomNay, tickNhip, boViecHomNay, batCheDoBao, ghiGhimCon, docGhimCon,
   datDongYAnhCon, chiaSeCoAnhCon } from './hom-nay.js';
 import { deXuatNangCap, soiLuatNangCap, kyNangCap, mocChayThu, batNangCap,
@@ -230,6 +232,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'docBangGia', 'doiGia', 'soDoiGia', 'docLuatGiaoDien',
   'capLenhGiamSat', 'thuLenhGiamSat', 'docLenhGiamSat', 'soatSoDen', 'docTranGiamSat',
   'ghiHoChieuVideo',
+  'soatCuuHe',
   'docHomNay', 'tickNhip', 'boViecHomNay', 'batCheDoBao',
   'ghiGhimCon', 'docGhimCon', 'datDongYAnhCon', 'chiaSeCoAnhCon',
   'deXuatNangCap', 'soiLuatNangCap', 'kyNangCap', 'mocChayThu', 'batNangCap',
@@ -264,6 +267,16 @@ async function lam(fn, y, env, db) {
      vào. Nó không mở được bất kỳ cửa nào khác trong hệ. */
   if (fn === 'nganHangBao') return await nganHangBao(y, env, db);
 
+  /* ── CỬA CỨU HỆ: KHÔNG DÙNG PHIÊN ──
+     Hacker đang giữ mọi phiên hợp lệ; Super Admin thật không có phiên
+     nào. Nên bốn cửa này đứng TRƯỚC cổng phiên, xác thực bằng khoá cứu
+     hệ offline + token email + mật khẩu cũ, không bằng token đăng nhập.
+     Cùng lối cửa ngân hàng ngay trên. */
+  if (fn === 'baoDongCuuHe') return await baoDongCuuHe(y, env, db);
+  if (fn === 'dongBangHe')   return await dongBangHe(y, env, db);
+  if (fn === 'moBangHe')     return await moBangHe(y, env, db);
+  if (fn === 'truyHoiHe')    return await truyHoiHe(y, env, db);
+
   if (CHUA_PORT[fn]) return {ok: false, code: 'CHUAPORT',
     error: 'Việc "' + CHUA_PORT[fn] + '" chưa chuyển sang máy chủ mới. ' +
            'Việc này vẫn chạy trên máy chủ cũ.'};
@@ -273,6 +286,15 @@ async function lam(fn, y, env, db) {
   const hoSo = await kiemPhien(db, y.token, y.u);
   if (!hoSo) return {ok: false, code: 'AUTH', error: 'Phiên không hợp lệ hoặc đã hết hạn.'};
   if (hoSo.khoa) return {ok: false, code: 'LOCKED', error: 'Tài khoản đang bị khoá.'};
+
+  /* ── CỔNG ĐÓNG BĂNG: MẶC ĐỊNH-TỪ-CHỐI ──
+     Khi hệ bị đóng băng trong lúc phá kính, chặn MỌI cửa trừ danh sách
+     an toàn (đọc + cứu hệ + đổi mật khẩu). Khoá NHIỀU hơn thì an toàn
+     hơn khoá ÍT — một cửa ghi lọt qua lúc băng là một đòn phá nữa. */
+  if (fn !== 'soatCuuHe' && !AN_TOAN_KHI_BANG.has(fn) && await dangBang(db))
+    return {ok: false, code: 'DANGBANG',
+      error: 'Hệ đang ĐÓNG BĂNG để cứu hệ. Mọi cửa ghi tạm khoá cho tới khi ' +
+             'Super Admin truy hồi xong. Chỉ cửa đọc và cửa cứu hệ còn mở.'};
 
   if (fn === 'doiMatKhau') return await doiMatKhau(y, env, db, hoSo);
   if (fn === 'capKhoa')    return await capKhoa(y, env, db, hoSo);
@@ -421,6 +443,7 @@ async function lam(fn, y, env, db) {
   if (fn === 'docLenhGiamSat')    return await docLenhGiamSat(y, env, db, hoSo);
   if (fn === 'soatSoDen')         return await soatSoDen(y, env, db, hoSo);
   if (fn === 'docTranGiamSat')    return await docTranGiamSat(y, env, db, hoSo);
+  if (fn === 'soatCuuHe')  return await soatCuuHe(y, env, db);
   if (fn === 'docHomNay')         return await docHomNay(y, env, db, hoSo);
   if (fn === 'ghiHoChieuVideo')   return await ghiHoChieuVideo(y, env, db, hoSo);
   if (fn === 'tickNhip')          return await tickNhip(y, env, db, hoSo);

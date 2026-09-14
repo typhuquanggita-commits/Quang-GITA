@@ -17675,6 +17675,114 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
           ' nhóm câu × ' + xu.soKhuon + ' khuôn · không bảng dấu hiệu riêng · không cửa sinh giọng');
   }
 
+  console.log('\n104 · CỨU HỆ — PHÁ KÍNH KHI SUPER ADMIN BỊ CHIẾM');
+  /* ═══════════════ 104 · CỨU HỆ (9.99.95)
+     A · Bốn cửa cứu hệ đứng TRƯỚC cổng phiên trong worker (hacker giữ
+         mọi phiên; Super Admin thật không có phiên nào).
+     B · Cổng đóng băng MẶC-ĐỊNH-TỪ-CHỐI: worker gọi dangBang và chặn
+         cửa không nằm trong AN_TOAN_KHI_BANG.
+     C · Khoá cứu hệ KHÔNG nằm trong CSDL — đọc từ env, và bảng cuuHe
+         không có cột nào giữ bí mật. Cùng luật GITA_KHOA_KHO.
+     D · Ba bước (báo động · đóng băng · truy hồi) đều ghi sổ băm.
+     E · Kho CH_* khai đủ yếu tố/luật/bước, mỗi bước có cua+ai+trongBaoLau. */
+  {
+    const fsC = require('fs'), pC = require('path');
+    const gocC = pC.join(__dirname, '..');
+    const maCuu = fsC.readFileSync(pC.join(gocC, 'may-chu', 'cuu-he.js'), 'utf8');
+    const maWk = fsC.readFileSync(pC.join(gocC, 'may-chu', 'worker.js'), 'utf8');
+    const sql = fsC.readFileSync(pC.join(gocC, 'may-chu', 'csdl.sql'), 'utf8');
+    const maCuuSach = boChuMa(maCuu);
+    /* Worker: bỏ CHÚ GIẢI thôi, GIỮ chuỗi — vì tên cửa (fn === 'baoDongCuuHe')
+       là CHUỖI, boChuMa bỏ chuỗi thì mất luôn tên cần dò. Lần thứ sáu của
+       lớp lỗi 9.99.78, nhưng NGƯỢC: ở đây phải GIỮ chuỗi, như luật 9.99.85
+       (dò câu lệnh SQL nằm trong chuỗi thì chỉ bỏ chú giải). */
+    const maWkSach = maWk.replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|[^:])\/\/.*$/gm, '$1');
+
+    /* A · vị trí: mỗi cửa cứu hệ dispatch TRƯỚC dòng kiemPhien */
+    const viKiem = maWkSach.search(/const hoSo = await kiemPhien/);
+    const cuaCuu = ['baoDongCuuHe', 'dongBangHe', 'moBangHe', 'truyHoiHe'];
+    const cuaSau = cuaCuu.filter(c => {
+      const i = maWkSach.search(new RegExp("fn === '" + c + "'"));
+      return i < 0 || i > viKiem;
+    });
+    /* B · cổng đóng băng mặc-định-từ-chối */
+    const coCongBang = /AN_TOAN_KHI_BANG\.has\(fn\)/.test(maWkSach) &&
+      /await dangBang\(db\)/.test(maWkSach) && /'DANGBANG'/.test(maWkSach);
+    /* C · khoá cứu hệ không nằm CSDL: cuu-he đọc env.GITA_KHOA_CUU, và
+       bảng cuuHe không có cột tên chứa "khoa"/"biMat"/"secret" */
+    const docTuEnv = /env\.GITA_KHOA_CUU/.test(maCuuSach);
+    const cotCuuHe = (sql.match(/CREATE TABLE IF NOT EXISTS cuuHe[\s\S]*?\);/) || [''])[0];
+    /* Dò CHUỖI CON, không dò biên từ: cột camelCase `khoaCuu` có "khoa" nhưng
+       giữa "a" và "C" không có biên \b, nên /\bkhoa\b/ trượt. Phá thử nhánh 3
+       (thêm cột khoaCuu) dạy lại. Các cột lành của cuuHe (stt·loai·luc·token·
+       hanToken·daDung·boiAi·chiTiet) không chứa cụm nào dưới đây, nên chuỗi con an toàn. */
+    const cotLoBiMat = /(khoa|bimat|secret|matkhau)/i.test(cotCuuHe);
+    /* D · ba bước ghi sổ băm */
+    const ghiBam = ['baoDongCuuHe', 'dongBangHe', 'truyHoiHe'].filter(fn => {
+      const than = (maCuuSach.match(new RegExp('export async function ' + fn + '[\\s\\S]*?\\n}\\n')) || [''])[0];
+      return !/ghiSoDenNoiBo\(/.test(than);
+    });
+    /* Hai bản bamChuoi (giam-sat + cuu-he) phải cho CÙNG một chuỗi băm —
+       luật 9.99.84: hai bản chép của một dữ kiện phải kiểm chéo được. */
+    const bamGiam = fsC.readFileSync(pC.join(gocC, 'may-chu', 'giam-sat.js'), 'utf8');
+    const cnGiam = (boChuMa(bamGiam).match(/async function bamChuoi\([\s\S]*?\n}/) || [''])[0]
+      .replace(/\s+/g, '');
+    const cnCuu = (maCuuSach.match(/async function bamChuoi\([\s\S]*?\n}/) || [''])[0]
+      .replace(/\s+/g, '');
+    const bamKhop = cnGiam.length > 20 && cnGiam === cnCuu;
+
+    const ch = await p.evaluate(() => {
+      const G = window.G, yt = G.CUU_YEUTO || [], lu = G.CUU_LUAT || {},
+        bu = G.CUU_BUOC || [], kh = G.CUU_KHONG_LAM || [], sc = G.CUU_CHOCHU || [];
+      const co = s => !!String(s || '').trim();
+      return {
+        soYt: yt.length,
+        ytThieu: yt.filter(x => !co(x.o) || !co(x.nguon) || !co(x.hackerCo)).map(x => x.ma),
+        luatDu: ['phanCongTrongNha', 'cuaCuuKhongPhien', 'bangMacDinhTuChoi',
+          'matKhauCuKhongDuMotMinh', 'khoiPhucDuLieuLaBuocTay', 'moiBuocVaoSoBam']
+          .filter(k => !co(lu[k])),
+        soBuoc: bu.length,
+        buocThieu: bu.filter(x => !co(x.viec) || !co(x.cua) || !co(x.ai) || !co(x.trongBaoLau)).map(x => x.ma),
+        soKhong: kh.length,
+        khongThieu: kh.filter(x => !co(x.doi) || !co(x.vi)).map(x => x.ma),
+        soCho: sc.length,
+        choThieu: sc.filter(x => !co(x.viMayKhongTuChon) || !co(x.do)).map(x => x.ma),
+        mocBang: Object.keys(G).filter(k => /^CUU_/.test(k) &&
+          !['CUU_YEUTO', 'CUU_LUAT', 'CUU_BUOC', 'CUU_KHONG_LAM', 'CUU_CHOCHU'].includes(k))
+      };
+    });
+
+    const chDat = viKiem > 0 && !cuaSau.length && coCongBang && docTuEnv && !cotLoBiMat &&
+      !ghiBam.length && bamKhop && ch.soYt === 3 && !ch.ytThieu.length && !ch.luatDu.length &&
+      ch.soBuoc >= 9 && !ch.buocThieu.length && ch.soKhong >= 4 && !ch.khongThieu.length &&
+      ch.soCho >= 2 && !ch.choThieu.length && !ch.mocBang.length;
+
+    bao(chDat,
+      'CỨU HỆ: CỬA PHÁ KÍNH ĐỨNG TRƯỚC CỔNG PHIÊN, ĐÓNG BĂNG MẶC-ĐỊNH-TỪ-CHỐI, KHOÁ CỨU HỆ KHÔNG NẰM TRONG CSDL. Máy Super Admin dính virus, hacker chiếm tài khoản và đổi mật khẩu — nên cửa chiếm lại KHÔNG dùng phiên (hacker giữ hết phiên) và mật khẩu cũ KHÔNG đủ một mình (nó có thể chính là thứ đã rò). Ba yếu tố hacker không có cùng lúc: khoá cứu hệ offline + token qua email cứu hệ khác email tài khoản + mật khẩu cũ. Phản công là đá sạch phiên và đóng băng cửa ghi TRONG chính nhà mình, không tấn công máy bên thứ ba',
+      viKiem <= 0 ? 'Không tìm thấy dòng kiemPhien trong worker để đối chiếu vị trí'
+        : cuaSau.length ? 'CỬA CỨU HỆ ĐỨNG SAU CỔNG PHIÊN: ' + cuaSau.join(' · ') +
+            ' — hacker giữ phiên, Super Admin thật không có phiên; cửa cứu hệ phải đứng TRƯỚC kiemPhien'
+        : !coCongBang ? 'THIẾU CỔNG ĐÓNG BĂNG mặc-định-từ-chối trong worker (AN_TOAN_KHI_BANG · dangBang · DANGBANG)'
+        : !docTuEnv ? 'cuu-he.js KHÔNG đọc khoá từ env.GITA_KHOA_CUU'
+        : cotLoBiMat ? 'BẢNG cuuHe CÓ CỘT GIỮ BÍ MẬT — khoá cứu hệ phải nằm ở secret Worker, không ở CSDL'
+        : ghiBam.length ? 'BƯỚC KHÔNG GHI SỔ BĂM: ' + ghiBam.join(' · ') + ' — hacker xoá được dấu'
+        : !bamKhop ? 'HAI BẢN bamChuoi (giam-sat · cuu-he) KHÁC NHAU — hai bản chép của một phép băm ' +
+            'phải cho cùng chuỗi, nếu không sổ băm vỡ khi hai module cùng ghi (luật 9.99.84)'
+        : ch.soYt !== 3 ? 'CUU_YEUTO có ' + ch.soYt + ' yếu tố, phải ba'
+        : ch.ytThieu.length ? 'YẾU TỐ THIẾU nguồn/hackerCó: ' + ch.ytThieu.join(' · ')
+        : ch.luatDu.length ? 'CUU_LUAT THIẾU Ô: ' + ch.luatDu.join(' · ')
+        : ch.soBuoc < 9 ? 'CUU_BUOC có ' + ch.soBuoc + ' bước, quy trình chín bước'
+        : ch.buocThieu.length ? 'BƯỚC KHÔNG KHAI cua/ai/trongBaoLau: ' + ch.buocThieu.join(' · ') +
+            ' — cùng khuôn TG_UNGPHO: mỗi bước phải LÀM ĐƯỢC, có ai làm, trong bao lâu'
+        : ch.soKhong < 4 ? 'CUU_KHONG_LAM có ' + ch.soKhong + ' mục'
+        : ch.khongThieu.length ? 'CHỖ KHÔNG LÀM thiếu vì sao: ' + ch.khongThieu.join(' · ')
+        : ch.mocBang.length ? 'CH_ MỌC BẢNG RIÊNG: ' + ch.mocBang.join(' · ')
+        : ch.soCho < 2 ? 'CUU_CHOCHU có ' + ch.soCho + ' mục'
+        : ch.choThieu.length ? 'MỤC CHỜ thiếu vì-sao-máy-không-tự-chọn/cách-đo: ' + ch.choThieu.join(' · ')
+        : 'bốn cửa trước cổng phiên · đóng băng mặc-định-từ-chối · khoá offline · ba bước vào sổ băm · ' +
+          ch.soBuoc + ' bước quy trình đủ cua+ai+giờ');
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

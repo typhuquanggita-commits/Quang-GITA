@@ -1922,6 +1922,24 @@ CREATE TABLE IF NOT EXISTS soDen (
 CREATE INDEX IF NOT EXISTS ix_soden_luc ON soDen (luc);
 
 -- ═══════════════════════════════════════════════════════════════
+--  CỨU HỆ — PHÁ KÍNH KHI SUPER ADMIN BỊ CHIẾM (9.99.95)
+-- ═══════════════════════════════════════════════════════════════
+--  KHÔNG có cột "đang băng". Trạng thái = dòng mới nhất loại BANG/MO,
+--  tính lúc đọc (cùng luật cột conHan KHÔNG có, 9.99.63). Khoá cứu hệ
+--  và địa chỉ email cứu hệ KHÔNG nằm ở đây — chúng là secret của Worker.
+CREATE TABLE IF NOT EXISTS cuuHe (
+  stt       INTEGER PRIMARY KEY AUTOINCREMENT,
+  loai      TEXT NOT NULL,       -- BAODONG · BANG · MO
+  luc       TEXT NOT NULL,
+  token     TEXT,                -- token một lần, chỉ đi qua email cứu hệ
+  hanToken  INTEGER,             -- mốc hết hạn token (ms)
+  daDung    INTEGER NOT NULL DEFAULT 0,
+  boiAi     TEXT,
+  chiTiet   TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_cuuhe_token ON cuuHe (token);
+
+-- ═══════════════════════════════════════════════════════════════
 --  VÒNG TỰ NÂNG CẤP  (9.99.77)
 -- ═══════════════════════════════════════════════════════════════
 --

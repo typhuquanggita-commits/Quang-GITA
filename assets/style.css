@@ -1949,4 +1949,22 @@ main{container-type:inline-size}
      dòng này thì vuốt tới đáy danh sách bên trái là trang nền trôi
      theo, và đóng ngăn kéo ra thì đã mất chỗ đang đọc. */
   #left,#right,.ch-khung,.cs-cuon,.tbl-wrap{overscroll-behavior:contain}
+
+  /* ── XƯỞNG DỰNG VIDEO: NHÃN BỌC Ô LÀ VÙNG CHẠM THẬT ──
+     do-khung-man (9.99.94) bắt "nút" dưới 32px ở màn studio, nhưng thứ
+     nó đo là NHÃN bọc ngoài (`el.closest('label')`), không phải ô nhập.
+     Ô nhập tự nó đã cao 34px; cái 20px là cái <label> BARE bọc quanh nó
+     — `display:inline` nên hộp nhãn chỉ cao bằng dòng chữ "Chủ đề", còn
+     ô inline-block 34px bên trong không kéo hộp nhãn cao lên. Các màn
+     khác thoát vì nhãn của chúng mang lớp (`label.row`, `label.dk-dy`)
+     đã được khối này nâng sẵn ở trên; nhãn studio không mang lớp nào.
+     Chữa ở NHÃN, không chỉ ở ô: nhãn LÀ vùng chạm — chạm vào chữ cũng
+     nhảy vào ô — nên nhãn phải cao ≥34px như chính bài học 9.99.51 đã
+     ghi ("đo VÙNG CHẠM chứ không đo cái ô vuông"). Chỉ trong .man-xu,
+     chỉ trên màn chạm; cỡ chữ để thang chín bậc lo. */
+  .man-xu label{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;min-height:34px}
+  /* Thanh kéo range KHÔNG nghe `min-height` — chiều cao của nó do track
+     trong shadow DOM quyết, nên phải đặt `height` thẳng. */
+  .man-xu input[type=range]{height:34px}
+  .man-xu input[type=text],.man-xu input[type=number],.man-xu input[type=file]{min-height:34px}
 }

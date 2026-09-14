@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.94',
+  version: '9.99.95',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3773,7 +3773,7 @@ G.THUOC_CAP_PHEP = [
   'BP_NOI','BP_NOI_LUAT','BP_OFFLINE','BP_CHOCHU',
   /* v9.99.73 — bảng giá sửa được */
   'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
-  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_TUOI','SUP_WOW','SUP_WOW_LUAT','SUP_BACHIEU','SUP_BACHIEU_LUAT','SUP_FAN','SUP_FAN_LUAT','TAILIEU_SPEC','TAILIEU_SPEC_LUAT','HC_TANG','HC_MA_TRUNG','HC_LUAT','HC_CHOCHU','XU_DEM','XU_LOI','XU_HOP','XU_NGANKHO','XU_KHUON','XU_KHO_HINH','XU_DEN','XU_LUAT','XU_CHOCHU','LT_THANG','LT_THANG_LUAT','LT_GIAIDOAN','LT_GATE','LT_RM','LT_MOC','LT_NO','LT_NO_LUAT','LT_AM','LT_PL','LT_VA','LT_HOP','LT_MOI','LT_LUAT','LT_CHOCHU','ST_DEM','ST_VA','ST_OAN','ST_OAN_LUAT','ST_PHAN','ST_LUAT','ST_CHOCHU','HP9_BATKHASUA','HP9_LUAT','HP9_CHOCHU','HP9_DACHOT','SUP_CHO','SUP_CHOCHU','SUP_DACHOT',
+  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_TUOI','SUP_WOW','SUP_WOW_LUAT','SUP_BACHIEU','SUP_BACHIEU_LUAT','SUP_FAN','SUP_FAN_LUAT','TAILIEU_SPEC','TAILIEU_SPEC_LUAT','HC_TANG','HC_MA_TRUNG','HC_LUAT','HC_CHOCHU','CUU_YEUTO','CUU_LUAT','CUU_BUOC','CUU_KHONG_LAM','CUU_CHOCHU','XU_DEM','XU_LOI','XU_HOP','XU_NGANKHO','XU_KHUON','XU_KHO_HINH','XU_DEN','XU_LUAT','XU_CHOCHU','LT_THANG','LT_THANG_LUAT','LT_GIAIDOAN','LT_GATE','LT_RM','LT_MOC','LT_NO','LT_NO_LUAT','LT_AM','LT_PL','LT_VA','LT_HOP','LT_MOI','LT_LUAT','LT_CHOCHU','ST_DEM','ST_VA','ST_OAN','ST_OAN_LUAT','ST_PHAN','ST_LUAT','ST_CHOCHU','HP9_BATKHASUA','HP9_LUAT','HP9_CHOCHU','HP9_DACHOT','SUP_CHO','SUP_CHOCHU','SUP_DACHOT',
   'VIP_CAM','VIP_CAM_LUAT','VIP_NGAN','VIP_LENH','VIP_SA_KHONG','VIP_60',
   'VIP_SUA_CHU','VIP_CHOCHU',
   /* v9.99.77 — vòng tự nâng cấp */
@@ -39725,7 +39725,7 @@ G.VIEWS = G.VIEWS || {};
     var c = G.xuDA.canh.filter(function (x) { return x.id === id; })[0];
     if (!c) return;
     var v = G.xuVat[c.vatTieng];
-    if (!v || !v.buffer) { G.toast && G.toast('Cảnh này chưa gắn giọng.'); return; }
+    if (!v || !v.buffer) { U.toast('Cảnh này chưa gắn giọng.', 'err'); return; }
     c.giay = Math.round((v.buffer.duration + 0.4) * 10) / 10;
     veLai();
   };
@@ -39963,7 +39963,7 @@ G.VIEWS = G.VIEWS || {};
   G.xuDungKhan = function () {
     if (G.xuGiuLai) {
       G.xuGiuLai = '';
-      G.toast && G.toast('Mở lại — nhớ ghi một dòng vào sổ tay (RM-8).');
+      U.toast('Mở lại — nhớ ghi một dòng vào sổ tay (RM-8).', 'ok');
       veLai(); return;
     }
     G.xuDung();
@@ -39996,7 +39996,7 @@ G.VIEWS = G.VIEWS || {};
         /* Tệp PHIM cần một địa chỉ để `<video src>` bám vào, và địa chỉ
            ấy là thứ bị cấm. Nói ra thay vì im: một tệp lặng lẽ bị bỏ
            qua thì người dùng tưởng mình đã gắn được. */
-        G.toast && G.toast('Xưởng web nhận ảnh và tiếng. Tệp phim dựng ở tools/bo-phim.js.');
+        U.toast('Xưởng web nhận ảnh và tiếng. Tệp phim dựng ở tools/bo-phim.js.', 'ok');
         het();
       }
     });
@@ -40006,7 +40006,7 @@ G.VIEWS = G.VIEWS || {};
      nó không sinh gì cả: nó ghi lại một người đang nói. Luật C20. */
   G.xuGhiGiong = function (id) {
     if (G.xuMicDang) { try { G.xuMicDang.stop(); } catch (e) {} return; }
-    if (!navigator.mediaDevices) { G.toast && G.toast('Trình duyệt này không mở được micro.'); return; }
+    if (!navigator.mediaDevices) { U.toast('Trình duyệt này không mở được micro.', 'err'); return; }
     navigator.mediaDevices.getUserMedia({audio: true}).then(function (st) {
       var mr = new MediaRecorder(st), manh = [];
       G.xuMicDang = mr; G.xuMicCanh = id; veLai();
@@ -40021,13 +40021,13 @@ G.VIEWS = G.VIEWS || {};
             var c = G.xuDA.canh.filter(function (x) { return x.id === id; })[0];
             if (c) c.vatTieng = vid;
             G.xuMicDang = null; G.xuMicCanh = '';
-            G.toast && G.toast('Đã ghi ' + buf.duration.toFixed(1) + ' giây giọng.');
+            U.toast('Đã ghi ' + buf.duration.toFixed(1) + ' giây giọng.', 'ok');
             veLai();
           }).catch(function () { G.xuMicDang = null; veLai(); });
       };
       mr.start();
     }).catch(function (e) {
-      G.toast && G.toast('Không mở được micro: ' + (e && e.message));
+      U.toast('Không mở được micro: ' + (e && e.message), 'err');
     });
   };
 
@@ -40051,7 +40051,7 @@ G.VIEWS = G.VIEWS || {};
      Kéo theo, và đây là phần đáng giữ: đề bài đi qua cửa thì nó vào
      nhật ký. Một tệp tải về thì không. */
   G.xuGuiDeBai = function () {
-    if (!congMo()) { G.toast && G.toast('Còn đèn đỏ — cổng gửi đóng.'); return; }
+    if (!congMo()) { U.toast('Còn đèn đỏ — cổng gửi đóng.', 'err'); return; }
     if (!G.goiMayChu) return;
     G.goiMayChu('ghiDeBaiVideo', {
       ten: G.xuDA.ten, kho: G.xuDA.kho, tang: G.xuDA.tang, nguon: G.xuDA.nguon,
@@ -40060,10 +40060,10 @@ G.VIEWS = G.VIEWS || {};
         return {vai: c.vai, giay: +c.giay || 0, loi: c.loi, chuMan: c.chuMan, hinh: c.hinh};
       })
     }).then(function (x) {
-      G.toast && G.toast((x && x.ok)
+      U.toast((x && x.ok)
         ? 'Đã gửi đề bài ' + x.ma + ' — dựng bằng: node tools/dung-phim.js'
-        : String((x && x.vi) || 'Cửa đề bài từ chối.'));
-    }).catch(function (e) { G.toast && G.toast(String(e && e.message || e)); });
+        : String((x && x.vi) || 'Cửa đề bài từ chối.'), (x && x.ok) ? 'ok' : 'err');
+    }).catch(function (e) { U.toast(String(e && e.message || e), 'err'); });
   };
 
   /* ══ MÀN ══ */
@@ -40129,6 +40129,12 @@ G.VIEWS = G.VIEWS || {};
         'làm xong. Ngân khố câu, năm khuôn kịch bản và tám đèn kiểm định đều nằm trong ' +
         'gói nghề, nên với vai này màn không có gì để dựng.');
     }
+
+    /* Bọc phần điều khiển trong .man-xu để nới vùng chạm ĐÚNG Ở ĐÂY,
+       không nới toàn cục: thanh kéo tua và ô nhập của xưởng cần ≥32px
+       trên màn chạm, mà nới `input` toàn cục thì trăm ô ở màn khác nở
+       theo (bài học "nới đúng chỗ" của cổng vào 9.99.80). */
+    o += '<div class="man-xu">';
 
     /* 1 · Yêu cầu */
     o += '<div class="giay"><h3>1 · Yêu cầu</h3>';
@@ -40213,7 +40219,7 @@ G.VIEWS = G.VIEWS || {};
       'tờ giấy tự ký.</p></div>';
 
     setTimeout(function () { G.xuCoManh(); }, 0);
-    return o;
+    return o + '</div>';
   };
 })();
 
