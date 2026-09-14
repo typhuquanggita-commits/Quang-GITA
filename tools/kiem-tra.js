@@ -17226,10 +17226,233 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         : st.soCho < 2 ? 'ST_CHOCHU có ' + st.soCho + ' mục — hai chỗ va đều là quyết định của người'
         : st.choThieu.length ? 'MỤC CHỜ KHÔNG NÓI VÌ SAO MÁY KHÔNG TỰ CHỌN HOẶC KHÔNG KHAI CÁCH ĐO: ' +
             st.choThieu.join(' · ')
-        : st.soPhan + '/20 phần (thiếu P17) · ' + st.soVa + ' chỗ va khai cụm dò · ' +
+        : st.soPhan + '/20 phần (P17 về ở 9.99.93 — xem mục 102) · ' + st.soVa + ' chỗ va khai cụm dò · ' +
           st.soOan + ' chỗ bắt oan khai nguyên văn · không mọc bảng dấu hiệu riêng');
   }
 
+
+  console.log('\n102 · LỘ TRÌNH STUDIO — BA THANG CÙNG TÊN, VÀ CỔNG CHƯA ĐƯỢC MỌC TRƯỚC SỔ NỢ');
+  /* ═══════════════ 102 · P17 BẢN ĐỒ LỘ TRÌNH STUDIO (9.99.93)
+
+     A · Mỗi hàng khai ĐÚNG MỘT đường, và `chuaDo` chỉ đi với `mayDo`.
+     B · Mọi ô `troVao` trỏ vào mã/ô CÓ THẬT — trỏ kèm tên bảng (9.99.91).
+     C · Bẫy tên gọi đo HAI ĐẦU: LT_GIAIDOAN không mang mã CH*, và
+         HDH_CHANG không mang mã G*. Một đầu là lời khai của bản này;
+         đầu kia là bảng của bản 9.99.71 — luật 9.99.84 đòi ít nhất một
+         đầu đến từ chỗ khác.
+     D · Phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI, lần thứ MƯỜI HAI: chừng nào
+         LT-02 còn trong sổ chờ thì may-chu/ không được có cửa gate hay
+         cửa ghi nợ, và csdl.sql không được có bảng nợ/thẻ đau. Cổng
+         dựng SAU một cái cửa đã chạy thì nó chỉ là một lời nhắc.
+     E · P17 đã về — hai đầu độc lập: lời khai ST_DEM, và sự CÓ MẶT
+         thật của LT_GIAIDOAN · LT_MOC trong kho. */
+  {
+    const fsL = require('fs'), pL = require('path');
+    const tmL = pL.join(__dirname, '..', 'may-chu');
+    /* Quét DANH SÁCH HÀM XUẤT RA, không dò chữ trong câu văn — phép dò
+       chữ chỉ kiểm được những tên nó ĐÃ BIẾT (9.99.60 · 9.99.86).
+       Cụm nhiều âm tiết, không dò `gate` hay `no` trần: `noiDung`,
+       `noiKet`, `thoaThuan` đều hợp lệ và đã chạy. */
+    const CUM_GATE = /^(quaGate|chotGate|chamGate|ghiGate|vayNo|ghiNoKyThuat|moTheDau|ghiTheDau)$/i;
+    const cuaGate = [];
+    for (const t of fsL.readdirSync(tmL).filter(x => /\.js$/.test(x))) {
+      const ma = fsL.readFileSync(pL.join(tmL, t), 'utf8')
+        .replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|[^:])\/\/.*$/gm, '$1');
+      for (const m of ma.matchAll(/export\s+(?:async\s+)?function\s+([A-Za-z0-9_$]+)/g))
+        if (CUM_GATE.test(m[1])) cuaGate.push(t + ' → ' + m[1]);
+    }
+    const sql = fsL.readFileSync(pL.join(tmL, 'csdl.sql'), 'utf8');
+    const bangNo = [...sql.matchAll(/CREATE\s+TABLE\s+(?:IF\s+NOT\s+EXISTS\s+)?([A-Za-z0-9_]+)/gi)]
+      .map(m => m[1]).filter(n => /^(noKyThuat|theDau|gateTieuChi)$/i.test(n));
+
+    const lt = await p.evaluate(() => {
+      const G = window.G, th = G.LT_THANG || [], gd = G.LT_GIAIDOAN || [],
+        ga = G.LT_GATE || [], rm = G.LT_RM || [], mo = G.LT_MOC || [],
+        no = G.LT_NO || [], nl = G.LT_NO_LUAT || [], am = G.LT_AM || [],
+        pl = G.LT_PL || [], va = G.LT_VA || [], hop = G.LT_HOP || [],
+        moi = G.LT_MOI || [], lu = G.LT_LUAT || {}, sc = G.LT_CHOCHU || [];
+      const co = s => !!String(s || '').trim();
+
+      /* Resolver hai hình: BẢNG.MÃ (mảng có ô `ma`, lần cả một tầng vào
+         các mảng con của một vật) và BẢNG.ô (vật thường, có khoá ấy).
+         Nhận cả hai vì luật kho sống ở cả hai chỗ: `HDH_CHANG.CH3` là
+         một dòng, `HDH_CHANG_LUAT.khongNhayCoc` là một ô. Đòi đúng một
+         hình là nới ba chỗ trỏ đúng ra cho vừa một phép đo. */
+      const coMa = (bang, ma) => {
+        const b = G[bang];
+        if (Array.isArray(b)) return b.some(r => r && r.ma === ma);
+        if (b && typeof b === 'object')
+          return Object.keys(b).some(k => Array.isArray(b[k]) &&
+            b[k].some(r => r && r.ma === ma));
+        return false;
+      };
+      const coO = (bang, o) => {
+        const b = G[bang];
+        return !!b && !Array.isArray(b) && typeof b === 'object' &&
+          Object.prototype.hasOwnProperty.call(b, o) && co(b[o]);
+      };
+      const soiTro = (ds, nhan) => {
+        const lac = [];
+        ds.filter(x => co(x.troVao)).forEach(x => {
+          const cap = [...String(x.troVao).matchAll(/\b([A-Z][A-Z_0-9]{2,})\.([A-Za-z0-9-]{2,})\b/g)];
+          if (!cap.length) { lac.push(nhan + ' ' + x.ma + ' trỏ không kèm tên bảng'); return; }
+          const hong = cap.filter(c => !coMa(c[1], c[2]) && !coO(c[1], c[2]));
+          if (hong.length) lac.push(nhan + ' ' + x.ma + ' trỏ ' +
+            hong.map(c => c[1] + '.' + c[2]).join('/') + ' — không có thật');
+        });
+        return lac;
+      };
+
+      return {
+        soThang: th.length,
+        thangThieu: th.filter(x => !co(x.la) || !co(x.o)).map(x => x.ma),
+        /* TH3 chưa đặt tiền tố thì phải NÓI phải làm gì, và LT-03 phải còn trong sổ */
+        th3Chua: th.some(x => x.ma === 'TH3' && /chưa đặt/.test(String(x.go || ''))),
+        con03: sc.some(x => x.ma === 'LT-03'),
+
+        soGd: gd.length,
+        gdThieu: gd.filter(x => !co(x.cauHoiSongCon) || !co(x.dieuNho) || !co(x.bangChung))
+          .map(x => x.ma),
+
+        soGate: ga.length,
+        gateLechTru: ga.filter(x => (x.tru || []).length !== 5).map(x => x.ma),
+        truHaiDuong: ga.flatMap(g => (g.tru || [])
+          .filter(t => !!co(t.mayDo) === !!co(t.nguoiDo))
+          .map(t => 'Gate ' + g.ma + ' · ' + t.t)),
+
+        soRm: rm.length,
+        rmHaiDuong: rm.filter(x => !!co(x.troVao) === !!co(x.chuaCo)).map(x => x.ma),
+        soRmTro: rm.filter(x => co(x.troVao)).length,
+        soMoc: mo.length,
+        mocThieu: mo.filter(x => !co(x.phan) || !co(x.xong)).map(x => x.ma),
+        soNo: no.length,
+        soNoLuat: nl.length,
+        noLuatThieu: nl.filter(x => !co(x.viSao)).map(x => x.ma),
+
+        soAm: am.length,
+        amHaiDuong: am.filter(x => !!co(x.mayDo) === !!co(x.nguoiDo)).map(x => x.ma),
+        /* Luật 9.99.87 — chuaDo CHỈ đi kèm mayDo */
+        amChuaDoLac: am.filter(x => co(x.chuaDo) && !co(x.mayDo)).map(x => x.ma),
+
+        soPl: pl.length,
+        plHaiDuong: pl.filter(x => !!co(x.troVao) === !!co(x.chuaCo)).map(x => x.ma),
+
+        soVa: va.length,
+        vaThieuCum: va.filter(x => !(x.cum || []).length ||
+          (x.cum || []).some(c => !c.c || typeof c.n !== 'number')).map(x => x.ma),
+        vaThieuLuat: va.filter(x => !co(x.luat) || !co(x.viSao)).map(x => x.ma),
+        soHop: hop.length,
+        soMoi: moi.length,
+        moiHaiDuong: moi.filter(x => !!co(x.dungMoi) === !!co(x.troVao)).map(x => x.ma),
+
+        /* B — mọi ô troVao phải trỏ vào chỗ CÓ THẬT */
+        troLac: [].concat(soiTro(rm, 'RM'), soiTro(pl, 'PL'), soiTro(hop, 'HỢP'),
+          soiTro(moi, 'MỚI')),
+        hopThieuTro: hop.filter(x => !co(x.troVao) || !co(x.y)).map(x => x.ma),
+
+        /* C — hai đầu của bẫy tên gọi */
+        gdMangMaChang: gd.filter(x => /^CH\d/.test(String(x.ma))).map(x => x.ma),
+        changMangMaGd: (G.HDH_CHANG || []).filter(x => /^G\d/.test(String(x.ma))).map(x => x.ma),
+
+        mocBang: Object.keys(G).filter(k => /^LT_/.test(k) &&
+          !['LT_THANG', 'LT_THANG_LUAT', 'LT_GIAIDOAN', 'LT_GATE', 'LT_RM', 'LT_MOC',
+            'LT_NO', 'LT_NO_LUAT', 'LT_AM', 'LT_PL', 'LT_VA', 'LT_HOP', 'LT_MOI',
+            'LT_LUAT', 'LT_CHOCHU'].includes(k)),
+        luatDu: ['baThang', 'troNhieuHonDung', 'quetTheoNghia', 'khaiCaHaiPhia',
+          'nguongKhacChiTieu', 'moiTruMotDuong', 'chuaDoChiDiVoiMayDo',
+          'chuaCoCuaNao'].filter(k => !co(lu[k])),
+        soCho: sc.length,
+        choThieu: sc.filter(x => !co(x.viMayKhongTuChon) || !co(x.do)).map(x => x.ma),
+        con02: sc.some(x => x.ma === 'LT-02'),
+
+        /* E — đầu thứ nhất là lời khai của ST_DEM */
+        demPhan: (G.ST_DEM || {}).demPhan,
+        demThieu: ((G.ST_DEM || {}).thieuPhan || []).length,
+        phanCo17: (G.ST_PHAN || []).some(x => x.so === 17)
+      };
+    });
+
+    /* Một biểu thức, tính MỘT lần — luật 9.99.60. Thêm cờ mới thì sửa
+       đúng một chỗ, và câu chi tiết đọc chính nó. */
+    const p17Ve = lt.demPhan === 20 && !lt.demThieu && lt.phanCo17 &&
+      lt.soGd === 4 && lt.soMoc === 24;
+    const ltDat = lt.soThang === 3 && !lt.thangThieu.length &&
+      (lt.th3Chua ? lt.con03 : !lt.con03) &&
+      !lt.gdThieu.length && lt.soGate === 4 && !lt.gateLechTru.length &&
+      !lt.truHaiDuong.length && lt.soRm === 8 && !lt.rmHaiDuong.length &&
+      !lt.mocThieu.length && lt.soNo === 3 && lt.soNoLuat === 6 &&
+      !lt.noLuatThieu.length && lt.soAm === 5 && !lt.amHaiDuong.length &&
+      !lt.amChuaDoLac.length && lt.soPl === 5 && !lt.plHaiDuong.length &&
+      lt.soVa >= 2 && !lt.vaThieuCum.length && !lt.vaThieuLuat.length &&
+      lt.soHop >= 4 && !lt.hopThieuTro.length && lt.soMoi >= 4 &&
+      !lt.moiHaiDuong.length && !lt.troLac.length &&
+      !lt.gdMangMaChang.length && !lt.changMangMaGd.length &&
+      !lt.mocBang.length && !lt.luatDu.length && lt.soCho >= 3 &&
+      !lt.choThieu.length && p17Ve &&
+      (lt.con02 ? (!cuaGate.length && !bangNo.length) : true);
+
+    bao(ltDat,
+      'BỐN GIAI ĐOẠN STUDIO ĐƯỢC GỌI TÊN RIÊNG, NĂM QUY TẮC CỔNG TRỎ VÀO RĂNG ĐÃ CÓ, VÀ CỔNG CHƯA MỌC TRƯỚC SỔ NỢ. Chỗ nguy nhất của P17 không phải một luật bị phạm mà là BA THANG CÙNG TÊN — CH1…CH5 chặng Học viện, G1…G4 giai đoạn Studio, và G1…G4 tín hiệu tài chính của P15 nằm trong CHÍNH tệp P17. Một luật bị phạm thì có người cãi; hai thang cùng tên thì không ai cãi, chúng chỉ dần được đọc như một. G4-6 "diễn tập 2 tuần vắng người sáng lập" CHÍNH LÀ HDH_CHANG.CH3 — chỗ khớp ấy chỉ lộ ra khi quét theo NGHĨA, không theo tên tài liệu',
+      lt.soThang !== 3 ? 'LT_THANG có ' + lt.soThang + ' thang, đếm được ba'
+        : lt.thangThieu.length ? 'THANG KHÔNG NÓI NÓ LÀ GÌ HOẶC Ở ĐÂU: ' + lt.thangThieu.join(' · ')
+        : lt.th3Chua && !lt.con03 ? 'TH3 CHƯA ĐẶT TIỀN TỐ mà LT-03 không nằm trong sổ chờ — ' +
+            'một thang chưa có tên là một thang sẽ được đặt tên bởi người không đọc tệp này'
+        : !lt.th3Chua && lt.con03 ? 'TH3 ĐÃ CÓ TIỀN TỐ mà LT-03 vẫn nằm trong sổ chờ — tiễn sang mục đã chốt'
+        : lt.gdThieu.length ? 'GIAI ĐOẠN THIẾU CÂU HỎI SỐNG CÒN / ĐIỀU NHỎ / BẰNG CHỨNG: ' + lt.gdThieu.join(' · ')
+        : lt.soGate !== 4 ? 'LT_GATE có ' + lt.soGate + ' cổng, bản đặc tả dựng bốn'
+        : lt.gateLechTru.length ? 'CỔNG KHÔNG ĐỦ NĂM TRỤ: ' + lt.gateLechTru.join(' · ') +
+            ' — RM-2 cấm bù trụ này bằng trụ kia, mà thiếu một trụ thì không còn gì để bù'
+        : lt.truHaiDuong.length ? 'TRỤ KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' +
+            lt.truHaiDuong.join(' · ') + ' — phải `mayDo` HOẶC `nguoiDo`'
+        : lt.soRm !== 8 ? 'LT_RM có ' + lt.soRm + ' quy tắc, bản đặc tả viết tám'
+        : lt.rmHaiDuong.length ? 'QUY TẮC CỔNG KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' +
+            lt.rmHaiDuong.join(' · ') + ' — phải `troVao` HOẶC `chuaCo`'
+        : lt.mocThieu.length ? 'CỘT MỐC KHÔNG TRỎ PHẦN GỐC HOẶC KHÔNG NÓI XONG NGHĨA LÀ GÌ: ' +
+            lt.mocThieu.join(' · ') + ' — một mốc chỉ có tên thì ai cũng gật'
+        : lt.soNo !== 3 || lt.soNoLuat !== 6 ? 'SỔ NỢ LỆCH: ' + lt.soNo + ' hạng · ' +
+            lt.soNoLuat + ' luật, bản đặc tả dựng ba hạng và sáu luật TD'
+        : lt.noLuatThieu.length ? 'LUẬT NỢ KHÔNG NÓI VÌ SAO: ' + lt.noLuatThieu.join(' · ')
+        : lt.soAm !== 5 ? 'LT_AM có ' + lt.soAm + ' dấu hiệu, bản đặc tả dựng năm'
+        : lt.amHaiDuong.length ? 'DẤU ẤM KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' + lt.amHaiDuong.join(' · ')
+        : lt.amChuaDoLac.length ? 'DẤU ẤM MANG `chuaDo` MÀ KHÔNG PHẢI MÁY ĐO: ' +
+            lt.amChuaDoLac.join(' · ') + ' — luật 9.99.87: người thì lúc nào cũng hỏi được, ' +
+            'chưa hỏi là chưa ai đi hỏi, không phải "chưa đo được"'
+        : lt.soPl !== 5 ? 'LT_PL có ' + lt.soPl + ' quy tắc phóng lớn, bản đặc tả viết năm'
+        : lt.plHaiDuong.length ? 'QUY TẮC PHÓNG LỚN KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' + lt.plHaiDuong.join(' · ')
+        : lt.soVa < 2 ? 'LT_VA có ' + lt.soVa + ' chỗ va, đo được hai'
+        : lt.vaThieuCum.length ? 'CHỖ VA KHÔNG KHAI CỤM DÒ: ' + lt.vaThieuCum.join(' · ') +
+            ' — một con số không kèm cụm sinh ra nó thì không ai chạy lại được'
+        : lt.vaThieuLuat.length ? 'CHỖ VA KHÔNG NÊU LUẬT HOẶC VÌ SAO: ' + lt.vaThieuLuat.join(' · ')
+        : lt.soHop < 4 ? 'LT_HOP có ' + lt.soHop + ' chỗ hợp — giấu chỗ hợp thì hai chỗ va thật cũng không ai đọc'
+        : lt.hopThieuTro.length ? 'CHỖ HỢP KHÔNG TRỎ HOẶC KHÔNG NÓI Ý: ' + lt.hopThieuTro.join(' · ')
+        : lt.soMoi < 4 ? 'LT_MOI có ' + lt.soMoi + ' mục'
+        : lt.moiHaiDuong.length ? 'THỨ MỚI KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' +
+            lt.moiHaiDuong.join(' · ') + ' — phải `dungMoi` HOẶC `troVao`'
+        : lt.troLac.length ? 'Ô `troVao` TRỎ VÀO CHỖ KHÔNG CÓ THẬT: ' + lt.troLac.join(' · ') +
+            ' — trỏ vào một cái răng không tồn tại thì luật ấy không được canh'
+        : lt.gdMangMaChang.length ? 'LT_GIAIDOAN MANG MÃ CHẶNG: ' + lt.gdMangMaChang.join(' · ') +
+            ' — hai thang đang nhập một'
+        : lt.changMangMaGd.length ? 'HDH_CHANG MANG MÃ GIAI ĐOẠN STUDIO: ' + lt.changMangMaGd.join(' · ')
+        : lt.mocBang.length ? 'LT_ MỌC BẢNG RIÊNG: ' + lt.mocBang.join(' · ') +
+            ' — trỏ, không chép'
+        : lt.luatDu.length ? 'LT_LUAT THIẾU Ô: ' + lt.luatDu.join(' · ')
+        : lt.soCho < 3 ? 'LT_CHOCHU có ' + lt.soCho + ' mục — ba chỗ đều là quyết định của người'
+        : lt.choThieu.length ? 'MỤC CHỜ KHÔNG NÓI VÌ SAO MÁY KHÔNG TỰ CHỌN HOẶC KHÔNG KHAI CÁCH ĐO: ' +
+            lt.choThieu.join(' · ')
+        : !p17Ve ? 'HAI ĐẦU KHÔNG KHỚP: ST_DEM khai ' + lt.demPhan + '/20 phần · thiếu ' +
+            lt.demThieu + ' · ST_PHAN ' + (lt.phanCo17 ? 'có' : 'KHÔNG có') + ' phần 17 · ' +
+            'kho có ' + lt.soGd + ' giai đoạn và ' + lt.soMoc + ' cột mốc — ' +
+            'lời khai và sự có mặt thật phải cùng nói một câu (luật 9.99.84)'
+        : lt.con02 && cuaGate.length ? 'ĐÃ CÓ CỬA GATE / CỬA GHI NỢ TRONG KHI LT-02 CÒN MỞ: ' +
+            cuaGate.join(' · ') + ' — cổng dựng SAU một cửa đã chạy thì nó chỉ là lời nhắc'
+        : lt.con02 && bangNo.length ? 'ĐÃ CÓ BẢNG NỢ / THẺ ĐAU TRONG KHI LT-02 CÒN MỞ: ' +
+            bangNo.join(' · ') + ' — dựng cho cả Học viện hay chỉ Studio là quyết định về ' +
+            'nhịp làm việc của người, không phải một lược đồ bảng'
+        : lt.soThang + ' thang gọi tên riêng · ' + lt.soGate + ' cổng × 5 trụ mỗi trụ một đường · ' +
+          lt.soRm + ' quy tắc cổng (' + lt.soRmTro + ' trỏ vào răng đã có) · ' + lt.soMoc +
+          ' cột mốc trỏ phần gốc · ' + lt.soHop + ' chỗ hợp · ' + lt.soVa +
+          ' chỗ va khai cụm dò · chưa cửa gate nào mọc trước sổ nợ');
+  }
 
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));

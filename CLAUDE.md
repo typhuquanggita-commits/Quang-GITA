@@ -3850,6 +3850,141 @@ thôi không đọc — và lúc ấy hai chỗ va thật cũng không ai đọc
 
 ---
 
+## STUDIO P17 — BA THANG CÙNG TÊN, VÀ THANG THỨ BA NẰM TRONG CHÍNH TỆP (9.99.93)
+
+Chủ hệ gửi **PHẦN 17/20 — BẢN ĐỒ PHÁT TRIỂN LỘ TRÌNH STUDIO**
+(`GITA-VIDEO-SPEC-PART17-ROADMAP-2026-FULL`, 21.074 ký tự), đúng phần
+9.99.92 đếm được là thiếu. Kho `data.lo-trinh-studio.js` (15 kho, tiền
+tố `LT_`), bộ kiểm **mục 102**. **Không dựng một cửa máy chủ nào** —
+trần trước, xưởng sau, lần thứ sáu.
+
+### Chỗ nguy nhất không phải một luật bị phạm
+
+| Thang | Gõ là gì | Tổng | Chốt ở đâu |
+|---|---|---|---|
+| Chặng Học viện | `chang` | CH1…CH5 | `HDH_CHANG`, 9.99.71 |
+| Giai đoạn Studio | **`giaiDoanST`** | G1…G4 | P17, bản này |
+| Tín hiệu tài chính P15 | **chưa đặt** | G1…G4 | chưa · LT-03 |
+
+Thang thứ ba nằm trong **CHÍNH tệp sinh ra thang thứ hai**: bảng Gate B
+viết *"ngưỡng G1 tài chính, P15"* và WS-4 viết *"trùng tín hiệu G3 tài
+chính"*. Cùng một trang, mã `G3` mang hai nghĩa, và không chỗ nào nói ra.
+
+**Một luật bị phạm thì có người cãi. Hai thang cùng tên thì không ai cãi
+— chúng chỉ dần được đọc như một, và không ai quyết định gộp cả.** Bẫy
+tên gọi thứ **chín**, sau *tầng* · *tc* · *điểm chạm* · *giữ chân*.
+
+Mục 102 đo **hai đầu độc lập**: `LT_GIAIDOAN` không mang mã `CH*`, và
+`HDH_CHANG` không mang mã `G*` — một đầu là lời khai của bản này, đầu
+kia là bảng của 9.99.71. Đúng luật 9.99.84.
+
+### Chỗ khớp đẹp nhất chỉ lộ ra khi quét theo NGHĨA
+
+**G4-6 "diễn tập 2 tuần vắng người sáng lập" CHÍNH LÀ `HDH_CHANG.CH3`**
+— kho đã viết *"Chất lượng KHÔNG giảm khi chủ hệ vắng hai tuần"* từ
+9.99.71. Cùng một phép thử, cùng con số hai tuần, hai tệp không biết
+nhau, và **cả hai đều khai `nguoiDo`**.
+
+Quét bằng tên tài liệu thì hai câu ấy không khớp một chữ nào — đúng luật
+9.99.91.
+
+Năm trong tám quy tắc cổng đã có răng dưới tên khác, nên phần này **TRỎ
+nhiều hơn nó dựng**:
+
+| P17 | Trỏ vào |
+|---|---|
+| RM-1 cổng cứng, máy không tự chuyển | `HDH_CHANG_LUAT.mayNoiDuChuKhongChuyen` |
+| RM-5 hai chữ ký | `HDH_QUYET5.B5` |
+| RM-6 trượt gate không phạt ai | `TC_LUONG.L-02` |
+| RM-7 không nhảy gate | `HDH_CHANG_LUAT.khongNhayCoc` |
+| RM-8 biên bản không sửa được | `TNC_KHONG_CHAM.K6` |
+| PL-2 "điều nhỏ nào người xem nhận được" | `TG_DIEUNHO.DN2` |
+| PL-3 cấm chuỗi ngày · bảng xếp hạng | `VIP_CAM.C1` · `LGD_LUAT.L08` |
+
+Dựng chuỗi băm thứ hai cho biên bản gate là **hai sổ cùng xưng là không
+sửa được, mà chỉ một trong hai được canh** — và người đọc không biết
+mình đang đọc sổ nào.
+
+### Ngưỡng khác chỉ tiêu ở chỗ HỎNG THÌ AI CHỊU
+
+Chỗ va `LV2`: WS-2 và bảng Gate B đều đặt *"CTA done ≥ 4%"*. Kho đã chốt
+ở 9.99.86 rằng wow **đếm để BIẾT, không đặt đích**
+(`SUP_WOW_LUAT.camDatChiTieu` · `SUP_FAN_LUAT.chiTieuVanCam`).
+
+Một dấu hiệu có ngưỡng và một chỉ tiêu **nhìn giống hệt nhau**. Khác
+nhau ở hệ quả: dấu hiệu đỏ thì **PHANH** quy mô (PL-5, đúng chiều); chỉ
+tiêu không đạt thì có người phải làm cho nó đạt — và cách rẻ nhất để một
+tỷ lệ làm điều nhỏ đi lên là **hạ điều nhỏ xuống cho dễ làm**.
+
+P17 tự đặt nó ở ngăn dấu hiệu, không ở ngăn chỉ tiêu. Chỗ phải chốt là
+nó có được mang sang bảng Gate không — vì ở đó nó thành một cái đích.
+Mục chờ **LT-01**.
+
+Chỗ va còn lại `LV1`: mã tham chiếu viết bằng TypeScript + Postgres
+(`import { Pool } from 'pg'` · `BIGSERIAL` · `TIMESTAMPTZ`). Nền đã chốt
+ở 9.99.62. Nó nguy **chính vì nó là mã tham chiếu**: người dựng sau thấy
+mã chạy được rồi chép sang, mà D1 không có ba thứ ấy.
+
+### Thứ thật sự MỚI, và thứ đáng giá nhất là quyền nói "K"
+
+Bốn thứ kho chưa có: **sổ nợ kỹ thuật** · **thẻ đau** · **quyền nói
+"K"** · **bằng chứng = dữ liệu thật + ĐÚNG MỘT câu chuyện thật**.
+
+PL-4 cho mỗi trưởng giữ nhịp quyền dừng một tính năng **dù chỉ số đẹp**,
+ba lần dự trữ mỗi quý, không cần giải trình dài. Mọi cổng của kho chặn
+thứ **đo ra là sai**. Không cổng nào chặn được thứ **đo ra là đúng mà
+người trong nghề thấy sai** — và đó đúng là chỗ một hệ nguội đi.
+
+*"Không cần giải trình dài"* là phần dễ bị gỡ nhất: bắt viết một trang
+thì quyền ấy không ai dùng, và **một quyền không ai dùng thì nó không
+tồn tại**.
+
+RM-3 không mâu thuẫn với luật *không gộp cột đo được với cột lời khai*
+(9.99.59): kho cấm **TRỘN** hai loại vào một con số; RM-3 đòi **hai ngăn
+riêng cùng có mặt**. Chữ *"ĐÚNG MỘT"* là cái răng — cho nhiều chuyện thì
+người ta gom một tập chuyện đẹp, và một tập chuyện đẹp đọc ra như dữ liệu.
+
+### Phép đo về thứ không được tồn tại — lần thứ MƯỜI HAI
+
+Chừng nào **LT-02** còn trong sổ chờ thì `may-chu/` không được có cửa
+xuất ra tên `quaGate` · `chotGate` · `vayNo` · `ghiNoKyThuat` ·
+`moTheDau`, và `csdl.sql` không được có bảng `noKyThuat` / `theDau`.
+Quét **danh sách hàm xuất ra**, không dò chữ trong câu văn (9.99.60 ·
+9.99.86); cụm nhiều âm tiết, không dò `gate` hay `no` trần.
+
+Cổng dựng SAU một cái cửa đã chạy thì nó chỉ là một lời nhắc. Phép canh
+này **tự nhường chỗ** khi LT-02 đóng.
+
+### Phép đo bắt lỗi của chính người viết nó, ngay lượt chạy đầu
+
+RM-5 trỏ `'HDH_QUYET5 năm bước quyết định lớn'` — **tên bảng trần, không
+kèm mã**. Luật trỏ-kèm-tên-bảng (9.99.91) sinh ra để chặn mã trần; đây
+là vế NGƯỢC LẠI, bảng trần, và nó cũng lọt qua mắt người viết y hệt.
+`soiTro()` nay đòi đủ cặp `BẢNG.MÃ`.
+
+Bộ dò nhận **hai hình** — `BẢNG.MÃ` (một dòng có ô `ma`) và `BẢNG.ô` (một
+ô của vật thường) — vì luật kho sống ở cả hai chỗ: `HDH_CHANG.CH3` là một
+dòng, `HDH_CHANG_LUAT.khongNhayCoc` là một ô. **Đòi đúng một hình là nới
+ba chỗ đang trỏ đúng ra cho vừa một phép đo.**
+
+### Chỗ P17 va vào chính nó, và chỗ nó đồng ý với kho
+
+Năm chỗ hợp khai cùng năm chỗ va — nêu chỗ va mà giấu chỗ hợp thì người
+đọc tưởng cả bản đặc tả là sai rồi thôi không đọc.
+
+### Sổ chờ
+
+- **LT-01** — ngưỡng *"tỷ lệ làm điều nhỏ"* là DẤU HIỆU hay ĐIỀU KIỆN
+  QUA CỔNG. Gỡ khỏi bảng Gate là làm yếu một cổng; giữ là mở một chỉ
+  tiêu. Cả hai đều có giá.
+- **LT-02** — sổ nợ kỹ thuật và thẻ đau dựng cho CẢ HỌC VIỆN hay chỉ
+  Studio. Một nghĩa vụ ghi chép không ai làm thì nó làm hỏng cả sổ.
+- **LT-03** — tiền tố cho thang tín hiệu tài chính G1–G4 của P15. Nói
+  TRƯỚC khi P15 được dựng, vì sau đó mỗi bên đã có một bản chép của cái
+  tên.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ
