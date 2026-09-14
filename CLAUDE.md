@@ -3270,6 +3270,151 @@ mọi lượt thử với chuỗi lành đều xanh.
 
 ---
 
+## SUP-01 NÓI LẠI RỘNG HƠN — BA CHIỀU, BA VAI KHÁCH (9.99.87)
+
+Chủ hệ nói lại: *"100.000 điểm trải nghiệm toàn bộ các tính năng, giá
+trị, mức độ hài lòng của khách hàng khi đồng hành cùng kênh mạng xã hội
+của GITA365."*
+
+Kho `G.SUP_BACHIEU` (3) · `G.SUP_BACHIEU_LUAT` (10); mục **97 vế I**.
+Câu trả lời của SUP-01 **không đổi** — 100.000 vẫn là CÁCH ĐẾM. Đổi là
+thứ được đếm.
+
+### Bản ghi 9.99.86 HẸP HƠN, và không sai dòng nào
+
+Đó là chỗ đáng học. Một bản ghi sai thì có người cãi; một bản ghi
+**thiếu** thì không có gì để mà cãi — nó chỉ lặng lẽ hẹp lại.
+
+| Tôi ghi | Chủ hệ nói | Mất gì |
+|---|---|---|
+| học viên | **khách hàng** | ba vai, và vai bị bỏ là vai **TRẢ TIỀN** |
+| wow | **tính năng · giá trị · hài lòng** | chiều DUY NHẤT máy đếm thẳng được |
+
+Chỗ hẹp thứ hai đắt hơn: gộp cả ba vào chữ *wow* là đẩy chiều tính năng
+sang ngăn khảo sát, tức là bỏ đúng chiều không cần đi hỏi ai.
+
+### Ba chiều, mỗi chiều đúng một đường
+
+| Mã | Chiều | Ai đo | Hôm nay |
+|---|---|---|---|
+| B1 | toàn bộ **tính năng** | máy | mẫu số đếm được; **tử số `chuaDo`** — chưa có sổ lượt dùng theo từng khách |
+| B2 | **giá trị** | người | máy đếm được thứ ĐÃ GIAO, không đếm được thứ NHẬN |
+| B3 | **mức độ hài lòng** | người | `G.HAILONG` còn nằm trong `DL_MAU` — số của nhà hư cấu |
+
+**B2 không phải chiều máy không với tới — nó là chiều máy với tới NỬA
+SAI.** Đem con số đã-giao trả lời câu hỏi nhận-được là đổi tên một phép
+đo, và bản đổi tên ấy **luôn đẹp hơn sự thật**, đẹp hơn đúng lúc giao
+nhiều nhất. Cùng ranh giới ngăn KHACH của trần giám sát (9.99.76): Học
+viện đo thứ mình GIAO, không đo người NHẬN.
+
+### Ô `chuaDo` CHỈ đi kèm `mayDo` — vế mới của luật
+
+Trạng thái thứ ba dựng ở 9.99.82. Một hàng **người-đo** mang `chuaDo`
+là vô nghĩa: người thì lúc nào cũng hỏi được, chưa hỏi là **chưa ai đi
+hỏi**, không phải "chưa đo được". Cho nó đứng chung là mở đường cho một
+hàng nằm im mãi dưới một cái nhãn nghe như một giới hạn kỹ thuật.
+
+### Kho KHÔNG được giữ mẫu số
+
+Mẫu số của B1 đếm **lúc đọc** từ `G.NAV` lọc bằng chính `G.vaiCo` mà
+cột trái dùng. Gõ nó vào kho là dựng lại đúng cột `conHan` (9.99.63) và
+cột `den` (9.99.66) — thêm một màn là nó sai, và **sai theo hướng ĐẸP
+LÊN**: tử số tăng, mẫu số đứng yên, tỷ lệ tự nở.
+
+Mục 97 vế I canh ba vế: mỗi chiều `mayDo` XOR `nguoiDo` · `chuaDo` chỉ
+đi với `mayDo` · **không hàng nào mang một ô kiểu `number`**, và
+`src/supreme.js` phải gọi thật `G.NAV` + `G.vaiCo`.
+
+### Lượt đo ĐẦU TIÊN của tôi sai, và sai theo hướng rộng ra
+
+Tôi chạy `G.vaiCo` với `G.PHANQUYEN` **rỗng** và ra **68** cho R13. Con
+số thật là **66**: `G.PHANQUYEN` là lớp **cấm riêng** đè lên thang cấp,
+và nó cấm R13 đúng hai quyền `ctv_lien_ket` · `ctv_hoa_hong`.
+
+> **`r.lv <= need` mới là một nửa luật.** Dựng lại phép so cấp bằng tay
+> là bỏ mất nửa kia, và phép đếm sai theo hướng **rộng ra** — hệ trông
+> như cho khách xem nhiều hơn thật.
+
+Số đo được ngày 14/09/2026, trên 199 mục `G.NAV`:
+
+```
+R13 phụ huynh  66   R14 học viên  59   R15 đại sứ  54
+hợp ba vai     68   — không phải tổng (179), cũng không bằng R13 (66)
+```
+
+Ba vai lồng nhau **gần hết**, nhưng hai màn đại sứ nằm NGOÀI phần R13
+thấy. Ai đọc "hợp ba vai" như một phép cộng thì con số gấp gần ba lần
+sự thật.
+
+### Không gộp ba chiều thành một con số trên 100.000
+
+Một chiều máy đếm cộng với hai chiều khảo sát thì con số ra **mang tên
+của phép đo** trong khi nó thừa hưởng mọi sai của lời khai. Cùng luật
+phễu (9.99.59) và thang 1000 (9.99.81).
+
+### Mười việc một người hâm mộ làm — cán cân lật về phía MÁY
+
+Chủ hệ nói tiếp bằng **hành vi**: tỷ lệ ở lại · tần suất dùng hằng ngày ·
+giới thiệu khách · đăng ký cửa hàng · tự lan toả · đánh giá sao · phản
+hồi góp ý · bảo mật riêng tư cao · quyền thành viên cao nhất · giới tri
+thức ưa chuộng nhất.
+
+Kho `G.SUP_FAN` (10) · `G.SUP_FAN_LUAT` (11); mục **97 vế J**.
+
+**Hành vi thì đếm thẳng được — 8/10 việc máy đo**, so với 1/3 của ba
+chiều. Đây là chốt làm phần máy đo TO RA, không phải chốt thêm việc cho
+người khai. Nhưng bốn chỗ phải nói ra:
+
+| | Việc | Chuyện |
+|---|---|---|
+| **Đã có bộ đếm** | F1 · F3 · F6 · F8 | S6 · S7 · `chamThiGiac` · W1 đang chạy — **trỏ, đừng đếm lại** |
+| **Phạm luật khoá** | F2 tần suất hằng ngày | **L08 cấm giữ chân** |
+| **Chặn pháp lý** | F4 đăng ký cửa hàng | **SUP-05**, không phải kỹ thuật |
+| **Va bộ lọc của mình** | F10 "ưa chuộng NHẤT" | **QC1** `CUM_TUYET_DOI` |
+
+**Bản thứ hai của một CON SỐ nguy hơn bản thứ hai của một bảng** — hai
+con số lệch nhau thì cả hai đều trông đúng, và không ai biết phải tin
+cái nào. Nặng nhất ở F1: `S6` loại nhà chưa đủ 90 ngày ra khỏi mẫu và
+NÓI RA bao nhiêu bị loại; một bộ đếm "ở lại" viết mới sẽ không có luật
+ấy, và nó thổi tỷ lệ lên đúng lúc đang tuyển nhiều nhất.
+
+**F2 là việc DUY NHẤT mà tối đa hoá làm hại chính người dùng.** Chín
+việc kia quá tay thì lãng phí; việc này quá tay thì phản lại điều Học
+viện bán — một nhà mở ứng dụng nuôi con nhiều hơn không phải một nhà
+đang khá hơn. Đếm để BIẾT thì được; đặt đích thì phạm L08.
+
+**Đếm được KHÔNG mở đường đặt đích.** `camDatChiTieu` (9.99.86) vẫn áp
+cho cả mười, và nay cần hơn lúc chỉ có năm nguồn wow: mười con số hành
+vi là mười cái đích rất sẵn. Khác nhau ở chỗ **con số đi đâu** — lên
+bảng để đọc thì được, xuống bảng lương hay KPI thì không.
+
+*"Một fan yêu cuồng nhiệt" là KẾT QUẢ, không phải một ô để tối ưu.* Mười
+việc này là DẤU HIỆU của nó. Lấy dấu hiệu làm đích thì được đúng dấu
+hiệu mà không được cái sinh ra chúng.
+
+### Phép đo của tôi đỏ ngay ở kho lành — và lỗi ở PHÉP ĐO
+
+Bản đầu của vế J đòi: có ô `daCo` thì phải có `khongDungLai`. Nó bắt
+**F7 · F8 · F9** ở bản nguyên vẹn. Nguyên nhân: ô `daCo` mang **hai
+nghĩa**.
+
+| Nghĩa | Ví dụ | Có phải "đừng đếm lại" không |
+|---|---|---|
+| đã có bộ **ĐẾM** đang chạy | F1 → S6 | **có** |
+| đã có **VẬT LIỆU** phép đo này đọc | F9 → danh sách quyền từ chối | không |
+
+Cách sửa dễ là viết thêm một câu cho ba dòng kia. Đó là **độn chữ cho
+vừa một phép đo** — và một dòng độn thì người sau đọc lướt qua, kể cả ở
+ba dòng có thật.
+
+> **Tách TÊN Ô, đừng nới phép đo.** `daCoDem` buộc `khongDungLai`;
+> `daCo` không. Nới thì cả bốn dòng loại một cũng thôi bị canh.
+
+Và canh luôn chiều ngược: có `khongDungLai` mà không có `daCoDem` thì
+câu ấy nói về một bộ đếm **không ai nêu tên**.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

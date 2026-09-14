@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.86',
+  version: '9.99.87',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3771,7 +3771,7 @@ G.THUOC_CAP_PHEP = [
   'BP_NOI','BP_NOI_LUAT','BP_OFFLINE','BP_CHOCHU',
   /* v9.99.73 — bảng giá sửa được */
   'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
-  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_TUOI','SUP_WOW','SUP_WOW_LUAT','SUP_CHO','SUP_CHOCHU','SUP_DACHOT',
+  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_TUOI','SUP_WOW','SUP_WOW_LUAT','SUP_BACHIEU','SUP_BACHIEU_LUAT','SUP_FAN','SUP_FAN_LUAT','SUP_CHO','SUP_CHOCHU','SUP_DACHOT',
   'VIP_CAM','VIP_CAM_LUAT','VIP_NGAN','VIP_LENH','VIP_SA_KHONG','VIP_60',
   'VIP_SUA_CHU','VIP_CHOCHU',
   /* v9.99.77 — vòng tự nâng cấp */
@@ -43505,6 +43505,88 @@ G.VIEWS = G.VIEWS || {};
         h(wl.camDatChiTieu || '') + '</p>';
       if (wl.cangDungCangWow)
         o += '<p class="note">' + h(wl.cangDungCangWow) + '</p>';
+    }
+
+    /* ── BA CHIỀU CỦA SUP-01, CHỦ HỆ NÓI LẠI RỘNG HƠN (9.99.87) ──
+       Mẫu số của chiều B1 ĐẾM LÚC ĐỌC bằng chính G.vaiCo mà cột trái
+       dùng — không gõ con số nào vào kho, và không dựng lại phép so
+       cấp bằng tay: `r.lv <= need` mới là một nửa luật, nửa kia là lớp
+       cấm riêng G.PHANQUYEN. Lượt đo đầu của tôi bỏ nửa ấy và ra 68
+       thay vì 66 — sai theo hướng RỘNG RA. */
+    var bc = G.SUP_BACHIEU || [], bl = G.SUP_BACHIEU_LUAT || {};
+    if (bc.length) {
+      o += U.sec('Chủ hệ nói lại SUP-01 rộng hơn — ba chiều, ba vai khách',
+        (bl.nguyenVan || '') + ' ' + (bl.khachChuKhongPhaiHocVien || ''));
+
+      o += U.tbl(['Chiều', 'Ai đo', 'Đo thế nào', 'Hôm nay còn thiếu gì', 'Cái bẫy'],
+        bc.map(function (b) {
+          return [h(b.chieu), b.mayDo ? 'máy' : '<b>người</b>',
+            h(b.mayDo || b.nguoiDo || ''),
+            h(b.chuaDo || b.daCo || ''), h(b.bay || '')];
+        }));
+
+      /* Đếm lại mỗi lần mở màn. Kho chỉ giữ bản ghi của MỘT lượt đo để
+         đối chiếu — bảng này mới là nguồn. */
+      if (G.NAV && G.vaiCo) {
+        var VAI = ['R13', 'R14', 'R15'], hop = {}, tong = 0, dong = [];
+        G.NAV.forEach(function (g) { tong += g.items.length; });
+        VAI.forEach(function (v) {
+          var r = G.roleById ? G.roleById(v) : null, n = 0;
+          G.NAV.forEach(function (g) {
+            g.items.forEach(function (it) {
+              if (!it.perm || G.vaiCo(v, it.perm)) { n++; hop[it.v] = 1; }
+            });
+          });
+          dong.push([h(v + ' · ' + (r ? r.n : '')), String(n),
+            Math.round(n * 100 / tong) + '%']);
+        });
+        var soHop = Object.keys(hop).length;
+        o += U.tbl(['Vai khách', 'Mở được mấy mục', 'Trên ' + tong + ' mục'], dong);
+        o += '<p class="note"><b>Hợp ba vai: ' + soHop + ' mục</b> — không phải tổng. ' +
+          h(bl.hopKhongPhaiTong || '') + '</p>';
+        o += '<p class="note"><b>Đếm lúc đọc:</b> ' + h(bl.mauSoTinhLucDoc || '') + '</p>';
+        o += '<p class="note"><b>Bẫy đã cắn ngay lượt đo đầu:</b> ' +
+          h(bl.bayPhanQuyenRieng || '') + '</p>';
+      }
+
+      o += '<p class="note"><b>Không gộp ba chiều:</b> ' +
+        h(bl.khongGopBaChieu || '') + '</p>';
+      o += '<p class="note">' + h(bl.chuaDoChiDiVoiMayDo || '') + '</p>';
+      o += '<p class="note"><b>Vẫn là cách đếm:</b> ' + h(bl.vanLaCachDem || '') + '</p>';
+    }
+
+    /* ── MƯỜI VIỆC MỘT NGƯỜI HÂM MỘ LÀM (9.99.87) ──
+       Bảy việc đầu là HÀNH VI nên đếm thẳng được — chốt này làm phần
+       máy đo TO RA. Nhưng bốn việc đã có chỗ đếm đang chạy, một việc bị
+       SUP-05 chặn, một việc phạm L08. Cột "Đã có" và cột "Va vào" phải
+       đứng ngay cạnh cột "Ai đo", không xuống chú thích cuối bảng:
+       xuống cuối thì người đọc thấy mười dòng đếm được rồi đi dựng. */
+    var fan = G.SUP_FAN || [], fl = G.SUP_FAN_LUAT || {};
+    if (fan.length) {
+      o += U.sec(fan.length + ' việc một người hâm mộ làm — ' +
+        fan.filter(function (f) { return f.mayDo; }).length + ' việc máy đếm được',
+        (fl.canCanLat || '') + ' ' + (fl.fanKhongPhaiChiSo || ''));
+      o += U.tbl(['Mã', 'Việc (nguyên văn)', 'Ai đo', 'Đo thế nào', 'Đã có chỗ đếm', 'Va vào'],
+        fan.map(function (f) {
+          return [h(f.ma), h(f.viec),
+            f.mayDo ? 'máy' : '<b>người</b>',
+            h(f.mayDo || f.nguoiDo || ''),
+            f.daCo ? h(f.daCo) : '—',
+            f.vaLuat ? '<code>' + h(f.vaLuat) + '</code>'
+              : f.chanBoi ? '<b>chặn bởi ' + h(f.chanBoi) + '</b>' : '—'];
+        }));
+      fan.forEach(function (f) {
+        if (f.khongDungLai)
+          o += '<p class="note"><b>' + h(f.ma) + ' · đừng đếm lại:</b> ' +
+            h(f.khongDungLai) + '</p>';
+        if (f.vaViSao)
+          o += '<p class="note"><b>' + h(f.ma) + ' · vì sao:</b> ' + h(f.vaViSao) + '</p>';
+      });
+      o += '<p class="note"><b>Bốn việc đã có chỗ đếm:</b> ' +
+        h(fl.bonViecDaCoChoDem || '') + '</p>';
+      o += '<p class="note"><b>Đếm được KHÔNG mở đường đặt đích:</b> ' +
+        h(fl.chiTieuVanCam || '') + ' ' + h(fl.vaySaoVanDem || '') + '</p>';
+      o += '<p class="note">' + h(fl.loiChotTuVaBoLoc || '') + '</p>';
     }
 
     if (ch.chot) {

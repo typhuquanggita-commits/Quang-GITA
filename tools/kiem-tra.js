@@ -16577,6 +16577,229 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
             (wc.conMoSUP05 ? 'SUP-05 còn mở nên 0 cửa giữ tiền hộ'
               : 'SUP-05 đã đóng — phép canh này tự nhường chỗ'));
     }
+
+    /* ── VẾ I · BA CHIỀU CỦA SUP-01, VÀ MẪU SỐ KHÔNG ĐƯỢC GÕ TAY (9.99.87)
+
+       Chủ hệ nói lại SUP-01 rộng hơn: "toàn bộ các tính năng, giá trị,
+       mức độ hài lòng của KHÁCH HÀNG". Bản ghi 9.99.86 hẹp ở hai chỗ —
+       ghi "học viên" thay vì ba vai khách, và gộp cả ba chiều vào chữ
+       "wow". Chỗ hẹp thứ hai đắt hơn: nó đẩy chiều DUY NHẤT máy đếm
+       thẳng được (tính năng) sang ngăn khảo sát.
+
+       Ba vế canh, và vế thứ ba là vế đáng giá nhất:
+
+       1 · Mỗi chiều khai `mayDo` XOR `nguoiDo` — cùng luật Hiến pháp
+           (9.99.62) và thang 1000 (9.99.81).
+
+       2 · Ô `chuaDo` CHỈ đi kèm `mayDo`. Một hàng người-đo mang
+           `chuaDo` là vô nghĩa: người thì lúc nào cũng hỏi được, chưa
+           hỏi là chưa ai đi hỏi. Cho nó đứng chung là mở đường cho một
+           hàng nằm im mãi dưới nhãn nghe như một giới hạn kỹ thuật.
+
+       3 · KHO KHÔNG ĐƯỢC GIỮ MẪU SỐ. Mẫu số của chiều tính năng phải
+           đếm LÚC ĐỌC từ G.NAV + G.vaiCo. Gõ nó vào kho là dựng lại
+           đúng cột `conHan` (9.99.63) và cột `den` (9.99.66): thêm một
+           màn là nó sai, và sai theo hướng ĐẸP LÊN vì tử số tăng còn
+           mẫu số đứng yên. Nên phép đo đòi mã màn CÓ gọi `G.vaiCo`, và
+           đòi kho KHÔNG mang một ô số đếm nào.
+
+       Và một chỗ phép đo phải canh hai đầu ĐỘC LẬP, đúng luật 9.99.84:
+       một đầu là lời khai của kho, đầu kia là con số đếm được từ
+       G.NAV lúc chạy. Hai đầu cùng một người gõ thì đó là một cái
+       gương, không phải một phép kiểm chéo. */
+    {
+      const fsI = require('fs'), pI = require('path');
+      /* Bỏ chú giải VÀ chuỗi trước khi dò tên bị cấm — luật 9.99.78.
+         Tệp này nói VỀ `G.vaiCo` rất nhiều trong chú giải, và chỗ khai
+         một cái tên khác hẳn chỗ nói về nó. */
+      const maMan = boChuMa(fsI.readFileSync(
+        pI.join(__dirname, '..', 'src', 'supreme.js'), 'utf8'));
+      const goiVaiCo = /G\.vaiCo\s*\(/.test(maMan) && /G\.NAV/.test(maMan);
+
+      const bc = await p.evaluate(() => {
+        const b = window.G.SUP_BACHIEU || [], lu = window.G.SUP_BACHIEU_LUAT || {};
+        /* Đếm lại mẫu số bằng chính G.vaiCo của hệ — ĐẦU THỨ HAI, độc
+           lập với mọi ô trong kho. G.PHANQUYEN là lớp cấm riêng đè lên
+           thang cấp, và G.vaiCo đọc cả hai; dựng lại phép so cấp bằng
+           tay là bỏ mất nửa luật. */
+        let tong = 0, dem = {};
+        (window.G.NAV || []).forEach(g => { tong += g.items.length; });
+        ['R13', 'R14', 'R15'].forEach(v => {
+          let n = 0;
+          (window.G.NAV || []).forEach(g => g.items.forEach(it => {
+            if (!it.perm || window.G.vaiCo(v, it.perm)) n++;
+          }));
+          dem[v] = n;
+        });
+        return {
+          so: b.length,
+          haiDuong: b.filter(x => !!(x.mayDo || '').trim() === !!(x.nguoiDo || '').trim())
+            .map(x => x.ma),
+          thieuChieu: b.filter(x => !(x.chieu || '').trim()).map(x => x.ma),
+          thieuBay: b.filter(x => !(x.bay || '').trim()).map(x => x.ma),
+          /* `chuaDo` chỉ đi với `mayDo` */
+          chuaDoLac: b.filter(x => (x.chuaDo || '').trim() && !(x.mayDo || '').trim())
+            .map(x => x.ma),
+          /* Kho KHÔNG được mang mẫu số. Dò ô SỐ trong chính các hàng —
+             không dò chữ số trong câu văn, vì câu văn ở đây phải nói ra
+             con số của một lượt đo để đối chiếu, và đó là việc của nó. */
+          oSo: b.filter(x => Object.keys(x).some(k =>
+            typeof x[k] === 'number')).map(x => x.ma),
+          luatDu: ['nguyenVan', 'khachChuKhongPhaiHocVien', 'hopKhongPhaiTong',
+            'bayPhanQuyenRieng', 'mauSoTinhLucDoc', 'chuaDoChiDiVoiMayDo',
+            'khongGopBaChieu', 'vanLaCachDem'].filter(k => !(lu[k] || '').trim()),
+          tong: tong, dem: dem,
+          /* SUP-01 phải khai chỗ nói lại, và phải trỏ vào kho mới */
+          noiLai: (window.G.SUP_DACHOT || []).filter(x => x.ma === 'SUP-01')
+            .map(x => ({ co: !!(x.noiLai || '').trim(),
+              troDung: (x.dungO || '').indexOf('SUP_BACHIEU') >= 0,
+              conHocVien: /"trải nghiệm wow của học viên/.test(x.daChot || '') }))[0] || null
+        };
+      });
+
+      const nl = bc.noiLai;
+      /* Một biểu thức, tính MỘT lần — luật 9.99.60. Ba lần mục 71 trôi
+         vì bao() và câu chi tiết là hai bản chép viết tay. */
+      const bcDat = bc.so >= 3 && !bc.haiDuong.length && !bc.thieuChieu.length &&
+        !bc.thieuBay.length && !bc.chuaDoLac.length && !bc.oSo.length &&
+        !bc.luatDu.length && goiVaiCo &&
+        !!nl && nl.co && nl.troDung && !nl.conHocVien &&
+        bc.dem.R13 > 0 && bc.dem.R13 <= bc.tong;
+
+      bao(bcDat,
+        'BA CHIỀU CỦA SUP-01 KHAI ĐÚNG MỘT ĐƯỜNG ĐO, VÀ MẪU SỐ ĐẾM LÚC ĐỌC CHỨ KHÔNG NẰM TRONG KHO. Chủ hệ nói lại rộng hơn: "toàn bộ các tính năng, giá trị, mức độ hài lòng của KHÁCH HÀNG" — ba vai R13 · R14 · R15, không một vai, và ba chiều chứ không một chữ wow. Chiều tính năng là chiều DUY NHẤT máy đếm thẳng được, nên gộp nó vào wow là đẩy nó sang ngăn khảo sát. Mẫu số gõ tay thì thêm một màn là nó sai, và sai theo hướng ĐẸP LÊN',
+        bc.so < 3 ? 'SUP_BACHIEU có ' + bc.so + ' chiều, chủ hệ nói ba'
+          : bc.thieuChieu.length ? 'CHIỀU KHÔNG KHAI TÊN: ' + bc.thieuChieu.join(' · ')
+          : bc.haiDuong.length ? 'CHIỀU KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' +
+              bc.haiDuong.join(' · ') + ' — phải `mayDo` HOẶC `nguoiDo`'
+          : bc.chuaDoLac.length ? 'HÀNG NGƯỜI-ĐO MANG Ô `chuaDo`: ' +
+              bc.chuaDoLac.join(' · ') + ' — người thì lúc nào cũng hỏi được, ' +
+              '"chưa đo được" ở đó là một cái nhãn cho một hàng nằm im'
+          : bc.thieuBay.length ? 'CHIỀU KHÔNG KHAI CÁI BẪY: ' + bc.thieuBay.join(' · ')
+          : bc.oSo.length ? 'KHO GIỮ MẪU SỐ BẰNG MỘT Ô SỐ: ' + bc.oSo.join(' · ') +
+              ' — mẫu số phải đếm lúc đọc từ G.NAV, gõ vào kho là dựng lại cột conHan'
+          : bc.luatDu.length ? 'SUP_BACHIEU_LUAT THIẾU Ô: ' + bc.luatDu.join(' · ')
+          : !goiVaiCo ? 'src/supreme.js KHÔNG gọi G.NAV + G.vaiCo — mẫu số không được ' +
+              'đếm lúc đọc, nên nó đến từ đâu đó khác'
+          : !nl ? 'SUP_DACHOT KHÔNG CÒN MỤC SUP-01'
+          : !nl.co ? 'SUP-01 KHÔNG KHAI Ô `noiLai` — chủ hệ đã nói lại rộng hơn mà ' +
+              'sổ đã chốt không ghi chỗ bản ghi cũ hẹp'
+          : nl.conHocVien ? 'SUP-01 CÒN GHI "học viên" trong ô daChot — chủ hệ nói KHÁCH HÀNG'
+          : !nl.troDung ? 'SUP-01 KHÔNG TRỎ vào G.SUP_BACHIEU'
+          : bc.dem.R13 <= 0 ? 'Đếm ra 0 mục cho R13 — G.vaiCo hoặc G.NAV không chạy'
+          : bc.so + ' chiều, mỗi chiều một đường đo · mẫu số đếm lúc đọc: R13 ' +
+            bc.dem.R13 + ' · R14 ' + bc.dem.R14 + ' · R15 ' + bc.dem.R15 +
+            ' trên ' + bc.tong + ' mục G.NAV');
+    }
+
+    /* ── VẾ J · MƯỜI VIỆC MỘT NGƯỜI HÂM MỘ LÀM (9.99.87)
+
+       Chủ hệ kể tiếp bằng HÀNH VI — mà hành vi thì đếm thẳng được, nên
+       chốt này làm phần máy đo TO RA. Ba chỗ phải có răng:
+
+       1 · Bốn việc ĐÃ CÓ chỗ đếm đang chạy (S6 · S7 · chamThiGiac ·
+           W1). Dựng bộ đếm thứ hai là bản thứ hai của một CON SỐ —
+           nguy hơn bản thứ hai của một bảng, vì hai con số lệch nhau
+           thì cả hai đều trông đúng. Nên mỗi việc như thế phải khai ô
+           `daCo`, và phải khai `khongDungLai` nói vì sao đừng đếm lại.
+
+       2 · Việc va vào một luật ĐÃ KHOÁ phải trỏ vào MÃ CÓ THẬT — cùng
+           lối vế C và vế F. F2 (tần suất hằng ngày) trỏ L08; F10
+           ("ưa chuộng nhất") trỏ QC1. Trỏ vào một mã không tồn tại thì
+           cảnh báo ấy không dẫn về đâu cả.
+
+       3 · Việc bị chặn PHÁP LÝ phải khai `chanBoi` trỏ vào một mục CÒN
+           TRONG SỔ CHỜ. F4 (đăng ký cửa hàng) chặn bởi SUP-05. Nếu ai
+           đó đóng SUP-05 mà quên chỗ này thì ô ấy trỏ vào hư không —
+           phép đo canh hai đầu: kho khai `chanBoi`, và SUP_CHOCHU thật
+           phải còn mã ấy.
+
+       Và một vế nữa, đo trên chính lời khai: phần máy đo phải THẬT SỰ
+       nhiều hơn phần người đo. Nếu một bản sau lặng lẽ đẩy các việc
+       sang `nguoiDo` thì cái chốt "cán cân vừa lật" thành một câu chú
+       giải sai, mà không dòng nào đỏ. */
+    {
+      const fn = await p.evaluate(() => {
+        const f = window.G.SUP_FAN || [], lu = window.G.SUP_FAN_LUAT || {},
+          sc = window.G.SUP_CHOCHU || [];
+        /* Gom mã luật từ MỌI bảng có ô `ma` — bài học 9.99.83: một danh
+           sách mã gõ tay thì thiếu đúng cái mã mới, và nó báo đỏ một
+           chỗ đang trỏ đúng. */
+        const maThat = new Set();
+        Object.keys(window.G).forEach(k => {
+          const v = window.G[k];
+          if (Array.isArray(v)) v.forEach(x => {
+            if (x && typeof x === 'object' && typeof x.ma === 'string') maThat.add(x.ma);
+          });
+        });
+        return {
+          so: f.length,
+          soMay: f.filter(x => (x.mayDo || '').trim()).length,
+          haiDuong: f.filter(x => !!(x.mayDo || '').trim() === !!(x.nguoiDo || '').trim())
+            .map(x => x.ma),
+          thieuViec: f.filter(x => !(x.viec || '').trim()).map(x => x.ma),
+          /* CHỈ ô `daCoDem` mới buộc nói "đừng đếm lại".
+
+             Bản đầu của phép đo này hỏi ô `daCo`, và nó ĐỎ NGAY ở kho
+             lành — bắt F7 · F8 · F9. Lỗi ở phép đo, không ở dữ liệu:
+             `daCo` đang mang HAI nghĩa. "Đã có một bộ ĐẾM đang chạy,
+             đừng dựng bộ thứ hai" là một chuyện; "đây là VẬT LIỆU phép
+             đo này đọc" là chuyện khác. Ép ba dòng loại hai viết thêm
+             một câu là ĐỘN CHỮ CHO VỪA MỘT PHÉP ĐO — và một dòng độn
+             thì người sau đọc lướt qua, kể cả ở ba dòng có thật.
+
+             Nên tách tên ô, không nới phép đo. Nới thì cả bốn dòng
+             loại một cũng thôi bị canh. */
+          daCoThieuVi: f.filter(x => (x.daCoDem || '').trim() &&
+            !(x.khongDungLai || '').trim()).map(x => x.ma),
+          /* Và canh chiều ngược: có `khongDungLai` mà không có
+             `daCoDem` thì câu ấy nói về một bộ đếm không ai nêu tên. */
+          khongDungLaiLac: f.filter(x => (x.khongDungLai || '').trim() &&
+            !(x.daCoDem || '').trim()).map(x => x.ma),
+          /* Trỏ luật phải trỏ mã có thật */
+          luatMa: f.filter(x => (x.vaLuat || '').trim() && !maThat.has(x.vaLuat))
+            .map(x => x.ma + '→' + x.vaLuat),
+          /* Chặn pháp lý phải trỏ mục CÒN trong sổ chờ */
+          chanLac: f.filter(x => (x.chanBoi || '').trim() &&
+            !sc.some(m => m.ma === x.chanBoi)).map(x => x.ma + '→' + x.chanBoi),
+          /* Va vào luật hoặc bị chặn thì phải nói vì sao */
+          vaThieuVi: f.filter(x => ((x.vaLuat || '').trim() || (x.chanBoi || '').trim()) &&
+            !(x.vaViSao || '').trim()).map(x => x.ma),
+          luatDu: ['nguyenVan', 'canCanLat', 'bonViecDaCoChoDem', 'chiTieuVanCam',
+            'vaySaoVanDem', 'fanKhongPhaiChiSo', 'motViecLamHai', 'motViecChanPhapLy',
+            'loiChotTuVaBoLoc'].filter(k => !(lu[k] || '').trim())
+        };
+      });
+
+      /* Một biểu thức, tính MỘT lần — luật 9.99.60. */
+      const fnDat = fn.so >= 10 && !fn.haiDuong.length && !fn.thieuViec.length &&
+        !fn.daCoThieuVi.length && !fn.khongDungLaiLac.length &&
+        !fn.luatMa.length && !fn.chanLac.length &&
+        !fn.vaThieuVi.length && !fn.luatDu.length && fn.soMay > fn.so - fn.soMay;
+
+      bao(fnDat,
+        'MƯỜI VIỆC NGƯỜI HÂM MỘ: MỖI VIỆC MỘT ĐƯỜNG ĐO, VIỆC ĐÃ CÓ CHỖ ĐẾM THÌ TRỎ CHỨ KHÔNG ĐẾM LẠI, VIỆC VA LUẬT THÌ TRỎ MÃ CÓ THẬT. Bảy việc chủ hệ kể là HÀNH VI nên đếm thẳng được — chốt này làm phần máy đo TO RA. Nhưng bốn việc đã có chỗ đếm đang chạy (S6 · S7 · chamThiGiac · W1), và bản thứ hai của một CON SỐ nguy hơn bản thứ hai của một bảng: hai con số lệch nhau thì cả hai đều trông đúng. Một việc bị SUP-05 chặn bằng PHÁP LÝ, một việc phạm L08',
+        fn.so < 10 ? 'SUP_FAN có ' + fn.so + ' việc, chủ hệ kể mười'
+          : fn.thieuViec.length ? 'VIỆC KHÔNG KHAI NGUYÊN VĂN: ' + fn.thieuViec.join(' · ')
+          : fn.haiDuong.length ? 'VIỆC KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' +
+              fn.haiDuong.join(' · ')
+          : fn.daCoThieuVi.length ? 'VIỆC ĐÃ CÓ BỘ ĐẾM MÀ KHÔNG NÓI VÌ SAO ĐỪNG ĐẾM LẠI: ' +
+              fn.daCoThieuVi.join(' · ') + ' — người dựng sau đọc ô `daCoDem` như một ghi ' +
+              'chú rồi vẫn dựng bộ đếm thứ hai'
+          : fn.khongDungLaiLac.length ? 'NÓI "ĐỪNG ĐẾM LẠI" MÀ KHÔNG NÊU TÊN BỘ ĐẾM NÀO: ' +
+              fn.khongDungLaiLac.join(' · ') + ' — thiếu ô `daCoDem` thì lời dặn ấy không ' +
+              'trỏ về đâu'
+          : fn.luatMa.length ? 'TRỎ VÀO MÃ LUẬT KHÔNG CÓ THẬT: ' + fn.luatMa.join(' · ')
+          : fn.chanLac.length ? 'TRỎ VÀO MỤC CHỜ KHÔNG CÒN TRONG SỔ: ' +
+              fn.chanLac.join(' · ') + ' — mục chờ đã đóng mà ô `chanBoi` còn nguyên ' +
+              'thì lời chặn ấy không dẫn về đâu cả'
+          : fn.vaThieuVi.length ? 'VIỆC VA LUẬT HOẶC BỊ CHẶN MÀ KHÔNG NÓI VÌ SAO: ' +
+              fn.vaThieuVi.join(' · ')
+          : fn.luatDu.length ? 'SUP_FAN_LUAT THIẾU Ô: ' + fn.luatDu.join(' · ') +
+              ' — thiếu `chiTieuVanCam` là để mười con số hành vi thành mười cái đích'
+          : 'PHẦN MÁY ĐO KHÔNG CÒN LỚN HƠN PHẦN NGƯỜI ĐO: ' + fn.soMay + '/' + fn.so +
+            ' — chốt này khai "cán cân vừa lật", mà lời khai ấy nay sai');
+    }
   }
 
 
