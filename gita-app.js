@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.85',
+  version: '9.99.86',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3771,7 +3771,7 @@ G.THUOC_CAP_PHEP = [
   'BP_NOI','BP_NOI_LUAT','BP_OFFLINE','BP_CHOCHU',
   /* v9.99.73 — bảng giá sửa được */
   'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
-  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_TUOI','SUP_CHOCHU','SUP_DACHOT',
+  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_TUOI','SUP_WOW','SUP_WOW_LUAT','SUP_CHO','SUP_CHOCHU','SUP_DACHOT',
   'VIP_CAM','VIP_CAM_LUAT','VIP_NGAN','VIP_LENH','VIP_SA_KHONG','VIP_60',
   'VIP_SUA_CHU','VIP_CHOCHU',
   /* v9.99.77 — vòng tự nâng cấp */
@@ -43342,7 +43342,7 @@ G.VIEWS = G.VIEWS || {};
 /* ═════════ src/supreme.js ═════════ */
 (function(){
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — MÀN GITA SUPREME: BẢN ĐỒ VÀ TRẦN  (9.99.85)
+   GITA 365 — MÀN GITA SUPREME: BẢN ĐỒ VÀ TRẦN  (9.99.86)
 
    Theo tệp `MYVIP.doc` của chủ hệ — ba quyển, 410.000 ký tự:
    Quyển I nghiên cứu 14 nền tảng → ma trận 28 sức mạnh · Quyển II
@@ -43485,6 +43485,42 @@ G.VIEWS = G.VIEWS || {};
       o += '<p class="note"><b>Chỗ dễ dựng sai nhất:</b> ' + h(tu.khongDungTuoiCon || '') +
         ' ' + h(tu.ngaySinhOdau || '') + '</p>';
       o += '<p class="note">' + h(tu.khong18 || '') + '</p>';
+    }
+
+    /* Hai chốt của 9.99.86. Cả hai là chốt MỞ RA việc, không phải chốt
+       đóng việc — nên phần in đậm nhất phải là chỗ CÒN LẠI, không phải
+       chữ "đã chốt". Một mục đã chốt "mở" rất dễ được đọc là "mở được
+       rồi". */
+    var wow = G.SUP_WOW || [], wl = G.SUP_WOW_LUAT || {}, ch = G.SUP_CHO || {};
+    if (wow.length) {
+      o += U.sec('SUP-01 đã chốt — 100.000 là CÁCH ĐẾM, và năm nguồn wow',
+        (wl.cachDem || '') + ' ' + (wl.bayDoiCho || ''));
+      o += U.tbl(['Mã', 'Nguồn wow (nguyên văn)', 'Ai đo', 'Đo thế nào', 'Hôm nay đã có gì'],
+        wow.map(function (w) {
+          return [h(w.ma), h(w.nguon),
+            w.mayDo ? 'máy' : '<b>người</b>',
+            h(w.mayDo || w.nguoiDo || ''), h(w.daCo || '')];
+        }));
+      o += '<p class="note"><b>Không đặt ngưỡng cho wow:</b> ' +
+        h(wl.camDatChiTieu || '') + '</p>';
+      if (wl.cangDungCangWow)
+        o += '<p class="note">' + h(wl.cangDungCangWow) + '</p>';
+    }
+
+    if (ch.chot) {
+      /* Không h() trong tham số U.sec — nó tự gọi U.h(). Ở đây giá trị
+         là "MỞ" nên thoát hai lần không lộ ra, và đó chính là lý do lớp
+         lỗi này sống lâu: nó chỉ hiện khi chuỗi có ký tự đặc biệt. */
+      o += U.sec('SUP-02 đã chốt — ' + (ch.chot || '') + ', và cổng CÒN LẠI không phải chất lượng',
+        ch.conCong || '');
+      o += U.tbl(['Bốn điều kiện chủ hệ chốt'],
+        (ch.dieuKien || []).map(function (d) { return [h(d)]; }));
+      o += '<p class="note"><b>Chưa có cửa nào:</b> ' + h(ch.chuaCoCua || '') + '</p>';
+      o += '<p class="note"><b>Chỗ dễ nhầm nhất:</b> ' + h(ch.khacHoaHong || '') + '</p>';
+      o += '<p class="note"><b>Lỗ ngay trong điều kiện 4 sao:</b> ' +
+        h(ch.loColdStart || '') + '</p>';
+      o += '<p class="note"><b>Chống nuôi sao:</b> ' + h(ch.chongFarmSao || '') +
+        ' ' + h(ch.saoKhacXepHangNguoi || '') + '</p>';
     }
 
     o += U.sec(oan.length + ' chỗ phép dò của tôi BẮT OAN', ol.bai || '');

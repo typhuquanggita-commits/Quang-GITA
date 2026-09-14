@@ -3130,6 +3130,146 @@ Bắt được vì chạy bộ rà soát chỗ trống, không vì đọc lại 
 
 ---
 
+## SUP-01 · SUP-02 ĐÃ CHỐT — HAI CHỐT MỞ RA VIỆC (9.99.86)
+
+Kho `G.SUP_WOW` · `G.SUP_WOW_LUAT` · `G.SUP_CHO`; mục **97 vế H**;
+SUP-01 · SUP-02 tiễn khỏi sổ chờ, mở SUP-04 · SUP-05.
+
+**Cả hai đều là chốt MỞ RA việc, không phải chốt đóng việc.** Một câu
+trả lời đóng một mục rồi mở mục khác là chuyện bình thường — giấu mục
+mới đi để sổ trông ngắn lại mới là chỗ hỏng.
+
+### SUP-01 — 100.000 là CÁCH ĐẾM, và cái bẫy DỜI CHỖ chứ không mất
+
+Chủ hệ chốt bằng cách nói 100.000 điểm chạm **là gì**, không nói phải
+đạt bao nhiêu: *"trải nghiệm wow của học viên khi sử dụng kênh"*, với
+năm nguồn wow. Không con số nào phải chạy cho đủ, nên **câu hỏi mẫu số
+tan theo**. Bản đặc tả cũng tự nói y thế ở G.53 — hai đầu khớp nhau.
+
+Bằng chứng nằm ngay trong câu chốt: nguồn wow thứ năm là **ít quảng cáo
+gây nhiễu** — nó đo *càng ít càng tốt*, tức là đúng thứ ngược với chạy
+cho đủ số.
+
+Nhưng phần đáng giữ nhất là chỗ khác:
+
+> **SUP-01 sinh ra để chặn một chuyện — *sáu tháng sau có người chạy cho
+> đủ số*. Chốt xong thì 100.000 hết là chỉ tiêu, nhưng WOW vừa thành thứ
+> mới để đặt chỉ tiêu. Và wow nguy hơn con số cũ, vì nó là LỜI KHAI của
+> người dùng, đo bằng khảo sát — mà khảo sát thì nâng lên được.**
+
+Nên `SUP_WOW_LUAT.camDatChiTieu` dựng cái trần ấy **ngay bây giờ**,
+trước khi có ai dựng một chỉ số wow. Cùng luật với chỉ số thứ mười hai
+của bảng điều khiển CEO — *"số việc tử tế tầng 4–5"* cố ý không có
+ngưỡng báo động (9.99.71).
+
+Và câu *"càng sử dụng càng thấy wow"* là một **CHIỀU**, không phải một
+con số. Dựng nó thành một đường cong phải đi lên là dựng lại chỉ tiêu
+bằng đường vòng.
+
+### Năm nguồn wow — mỗi nguồn ĐÚNG MỘT đường đo
+
+Đo trên mã trước khi khai, nên hai nguồn phải khai là **người đo**:
+
+| Mã | Nguồn | Ai đo | Neo vào đâu |
+|---|---|---|---|
+| W1 | được bảo vệ quyền lợi | máy | `LGD_LUAT` lọc `rangO` — **12/12** có răng thật |
+| W2 | được sàng lọc kỹ thành viên | **người** | quét `may-chu/` ra **0 cửa** — chưa có năng lực → SUP-04 |
+| W3 | tri thức chất lượng | máy | cửa `soatNoiDung` đã chạy |
+| W4 | cộng đồng lành mạnh có giáo dục | **người** | HDI (E.40) chưa dựng, và ba trong tám chiều của nó là khảo sát |
+| W5 | ít quảng cáo gây nhiễu | máy | **không hệ quảng cáo nào** — hôm nay con số là KHÔNG, không phải "ít" |
+
+Trình năm nguồn như đã đo cả năm thì người duyệt thấy năm dấu tick rồi
+thôi không đọc — và **hai nguồn nặng nhất về NGƯỜI lại đúng là hai nguồn
+không ai đọc**. Cùng luật `mayDo`/`nguoiDo` của Hiến pháp (9.99.62).
+
+**W5 là nguồn duy nhất mà cái trần đi ĐÚNG CHIỀU với luật kho.** Mọi
+nguồn khác đo *càng nhiều càng tốt*; nguồn này đo *càng ít càng tốt*,
+nên nó không bao giờ biến thành một chỉ tiêu để chạy.
+
+### SUP-02 — chốt MỞ, và cổng CÒN LẠI không phải chất lượng
+
+Chủ hệ chốt **mở**, với bốn điều kiện: *dịch vụ chất lượng · qua kiểm
+duyệt kỹ · đảm bảo quyền lợi khách hàng · đánh giá 4 sao trở lên.*
+
+Bốn điều kiện ấy đều là điều kiện **CHẤT LƯỢNG**, và chúng không thay
+được cổng **PHÁP LÝ**: giữ tiền người mua tới lúc người bán giao xong là
+hoạt động trung gian thanh toán, có nghĩa vụ giấy phép riêng. Kho không
+kết luận pháp lý (9.99.70), nên câu ấy thành **SUP-05**, hỏi luật sư
+**trước khi có đồng tiền đầu tiên đi qua**.
+
+Ghi rõ chỗ ấy vì **một mục đã chốt "mở" rất dễ được đọc là "mở được
+rồi"** — trong khi thứ chặn không phải chất lượng mà là giấy phép.
+
+### Chỗ dễ nhầm nhất: hệ ĐÃ trả tiền ra cho thành viên rồi
+
+`traHoaHong` đã chạy — Học viện trả hoa hồng cho đại sứ. Nhìn thì giống:
+tiền đi từ Học viện sang một thành viên.
+
+| | Là gì |
+|---|---|
+| `traHoaHong` | tiền **CỦA HỌC VIỆN** trả một khoản mình nợ |
+| Escrow | tiền **CỦA NGƯỜI MUA** mà Học viện giữ hộ |
+
+Hai hình pháp lý khác hẳn nhau. Người dựng sau rất dễ nhìn `traHoaHong`
+rồi kết luận *"hệ đã chuyển tiền cho thành viên rồi, escrow chỉ là thêm
+một đường nữa"*.
+
+### Hai lỗ nằm sẵn trong chính bốn điều kiện
+
+**Ngưỡng "4 sao trở lên" đóng cửa với người bán MỚI.** Họ chưa có đánh
+giá nào → chưa bao giờ đạt 4 sao → không bán được lượt đầu → không bao
+giờ có đánh giá. **Cổng ấy không lọc ai cả, nó chỉ khoá cửa.** Phải có
+một đường vào cho lượt đầu trước khi bật ngưỡng sao.
+
+**Một ngưỡng sao là thứ bị nuôi đầu tiên trong mọi chợ.** Kho đã có sẵn
+lối chống — `chamThiGiac` (9.99.55) chặn khi tám trong mười lượt gần
+nhất từ 90 điểm trở lên. Dùng lại lối ấy, đừng dựng bộ chống thứ hai.
+
+### Cái răng thật: không cửa nào giữ tiền hộ chừng nào SUP-05 còn mở
+
+Cả phần này là bảng, và bảng thì không chặn được gì — đúng rủi ro mục 88
+đã ghi. Nên vế H canh một thứ đo được: **quét `may-chu/` cho danh sách
+hàm xuất ra, và đỏ nếu thấy một cửa giữ tiền hộ** trong khi SUP-05 còn
+nằm trong sổ chờ. Phép đo về thứ không được tồn tại, **lần thứ mười**.
+
+Đo trên **danh sách hàm xuất ra**, không dò chữ trong câu văn — bài học
+9.99.60: phép dò chữ chỉ kiểm được những tên nó ĐÃ BIẾT. Và cụm dò là
+**cụm nhiều âm tiết** (`kyQuy` · `giuTienHo` · `giaiNganMoc`), không dò
+`tien` trần: `traHoaHong` · `hoanTien` · `soTien` đều hợp lệ và đã chạy.
+
+Phép canh này **tự nhường chỗ** khi SUP-05 đóng — nó canh một quãng thời
+gian, không canh vĩnh viễn, và dòng chi tiết nói ra điều đó.
+
+### Phá thử — hai nhánh, đỏ đúng chỗ và gọi đúng tên
+
+| Phá gì | Dòng đỏ in ra |
+|---|---|
+| Thêm `export async function kyQuy` vào `tai-chinh.js` | `ĐÃ CÓ CỬA GIỮ TIỀN HỘ TRONG KHI SUP-05 CÒN MỞ: tai-chinh.js → kyQuy` |
+| W5 khai cả `mayDo` lẫn `nguoiDo` | `NGUỒN WOW KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: W5` |
+
+Hai nhánh còn lại (`luatDu` · `choDu`) là phép kiểm ô-có-mặt, cùng hình
+với `duO` của vế G đã phá thử ở 9.99.85 — **nói ra là chưa phá thử
+riêng**, không lặng lẽ tính là đã kiểm.
+
+### Và lần thứ NĂM của lỗi `U.sec()`
+
+Tôi lại bọc `h()` trong tham số `U.sec()` — lần này giá trị là `"MỞ"`,
+không có ký tự đặc biệt, nên **thoát hai lần không lộ ra**. Đó chính là
+lý do lớp lỗi này sống lâu: nó chỉ hiện khi chuỗi có ký tự đặc biệt, nên
+mọi lượt thử với chuỗi lành đều xanh.
+
+### Sổ chờ mới
+
+- **SUP-04** — sàng lọc thành viên: lọc theo căn cứ gì, ai quyết, **và
+  người bị loại đi đâu**. Câu thứ ba hay bị bỏ, mà một lời từ chối cụt
+  là một người mang cảm giác xấu về Học viện đi kể lại. Nguồn wow W2 dựa
+  vào năng lực này, nên tới khi chốt thì W2 vẫn khai `nguoiDo`.
+- **SUP-05** — giấy phép trung gian thanh toán và nghĩa vụ thuế của
+  người bán. Hỏi **trước** đồng tiền đầu tiên. Hỏi kèm: GITA-Zen (F.50)
+  đổi ưu đãi vật chất từ đối tác một chiều — chỗ ấy có bước qua không.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

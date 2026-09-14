@@ -16492,6 +16492,91 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
             ' · chưa có cửa R14 (' + cuaGhiUsers + ' câu ghi users: ' + tepGhi.join(' · ') +
             ') · ' + tuoi.soDaChot + ' mục đã chốt, đã rời sổ chờ');
     }
+
+    /* H · NĂM NGUỒN WOW MỘT ĐƯỜNG ĐO, VÀ CỬA GIỮ TIỀN HỘ CHƯA ĐƯỢC
+       DỰNG CHỪNG NÀO SUP-05 CÒN MỞ.  (9.99.86)
+
+       Hai chốt của bản này đều là chốt MỞ RA việc, không phải chốt đóng
+       việc — nên cả hai cần răng ngay, không đợi tới lúc dựng.
+
+       · SUP-01 chốt 100.000 là CÁCH ĐẾM. Cái bẫy nó sinh ra để chặn thì
+         DỜI CHỖ chứ không mất: wow vừa thành thứ mới để đặt chỉ tiêu, và
+         wow nguy hơn con số cũ vì nó là lời khai đo bằng khảo sát. Nên
+         mỗi nguồn wow khai `mayDo` HOẶC `nguoiDo` — trình năm nguồn như
+         đã đo cả năm thì hai nguồn nặng nhất về NGƯỜI (sàng lọc thành
+         viên · cộng đồng lành mạnh) lại đúng là hai nguồn không ai đọc.
+
+       · SUP-02 chốt MỞ, nhưng bốn điều kiện của nó là điều kiện CHẤT
+         LƯỢNG — cổng PHÁP LÝ (SUP-05) chưa qua. Một bảng khai "đã chốt
+         mở" mà không có gì chặn thì nó là một tấm áp phích, đúng thứ
+         mục 88 đã ghi. Cái răng thật: canh rằng KHÔNG cửa nào giữ tiền
+         hộ hai bên được dựng chừng nào SUP-05 còn nằm trong sổ chờ.
+         Phép đo về thứ không được tồn tại, lần thứ mười trong bộ.
+
+       Đọc DANH SÁCH HÀM XUẤT RA của may-chu/, không dò chữ trong câu
+       văn: bài học 9.99.60 — phép dò chữ chỉ kiểm được những tên nó ĐÃ
+       BIẾT, tức là đúng những tên không có nguy cơ. Một cái tên mới thì
+       nó câm. Nên ở đây dò HÌNH của việc giữ tiền, và dò trên chữ ký
+       hàm xuất ra. */
+    {
+      const fsH = require('fs'), pH = require('path');
+      const tmH = pH.join(__dirname, '..', 'may-chu');
+      /* Cụm nhiều âm tiết, không dò âm tiết trần: `tien` trần nằm trong
+         `traHoaHong`, `hoanTien`, `soTien` — cả ba hợp lệ và đã chạy.
+         Cùng luật chọn dấu hiệu của CUM_TUYET_DOI (9.99.65). */
+      const CUM_GIU_TIEN = /\b(kyQuy|escrow|giuTienHo|giuTienTam|viTien|soDuVi|giaiNganMoc)\b/i;
+      let cuaGiuTien = [];
+      for (const t of fsH.readdirSync(tmH).filter(x => /\.js$/.test(x))) {
+        const ma = fsH.readFileSync(pH.join(tmH, t), 'utf8')
+          .replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|[^:])\/\/.*$/gm, '$1');
+        for (const m of ma.matchAll(/export\s+(?:async\s+)?function\s+([A-Za-z0-9_$]+)/g))
+          if (CUM_GIU_TIEN.test(m[1])) cuaGiuTien.push(t + ' → ' + m[1]);
+      }
+
+      const wc = await p.evaluate(() => {
+        const w = window.G.SUP_WOW || [], lu = window.G.SUP_WOW_LUAT || {},
+          cho = window.G.SUP_CHO || {}, sc = window.G.SUP_CHOCHU || [];
+        return {
+          so: w.length,
+          /* Đúng MỘT đường: có mayDo XOR có nguoiDo */
+          haiDuong: w.filter(x => !!(x.mayDo || '').trim() === !!(x.nguoiDo || '').trim())
+            .map(x => x.ma),
+          thieuNguon: w.filter(x => !(x.nguon || '').trim()).map(x => x.ma),
+          luatDu: ['cachDem', 'bayDoiCho', 'camDatChiTieu', 'moiNguonMotDuong']
+            .filter(k => !(lu[k] || '').trim()),
+          choChot: cho.chot,
+          choDu: ['conCong', 'khacHoaHong', 'chuaCoCua', 'loColdStart', 'chongFarmSao']
+            .filter(k => !(cho[k] || '').trim()),
+          soDieuKien: (cho.dieuKien || []).length,
+          conMoSUP05: sc.some(x => x.ma === 'SUP-05')
+        };
+      });
+
+      /* Cổng pháp lý còn mở thì cửa giữ tiền phải chưa có. Đóng rồi thì
+         phép đo này tự nhường chỗ — nó canh một quãng thời gian, không
+         canh vĩnh viễn, và nó nói ra điều đó. */
+      const tienOk = wc.conMoSUP05 ? !cuaGiuTien.length : true;
+
+      bao(wc.so >= 5 && !wc.haiDuong.length && !wc.thieuNguon.length &&
+          !wc.luatDu.length && wc.choChot && wc.soDieuKien >= 4 &&
+          !wc.choDu.length && tienOk,
+        'NĂM NGUỒN WOW KHAI ĐÚNG MỘT ĐƯỜNG ĐO, VÀ CHƯA CỬA NÀO GIỮ TIỀN HỘ CHỪNG NÀO CỔNG PHÁP LÝ CÒN MỞ. SUP-01 chốt 100.000 là CÁCH ĐẾM — nhưng cái bẫy nó sinh ra để chặn thì DỜI CHỖ chứ không mất: wow vừa thành thứ mới để đặt chỉ tiêu, và wow nguy hơn con số cũ vì nó là lời khai đo bằng khảo sát. SUP-02 chốt MỞ, nhưng bốn điều kiện ấy là điều kiện CHẤT LƯỢNG — cổng pháp lý chưa qua, nên tiền chưa được đi',
+        wc.so < 5 ? 'SUP_WOW có ' + wc.so + ' nguồn, chủ hệ nói năm'
+          : wc.thieuNguon.length ? 'NGUỒN WOW THIẾU CÂU NGUYÊN VĂN: ' + wc.thieuNguon.join(' · ')
+          : wc.haiDuong.length ? 'NGUỒN WOW KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' +
+              wc.haiDuong.join(' · ') + ' — phải `mayDo` HOẶC `nguoiDo`, không bao giờ cả hai'
+          : wc.luatDu.length ? 'SUP_WOW_LUAT THIẾU Ô: ' + wc.luatDu.join(' · ') +
+              ' — thiếu `camDatChiTieu` là để wow thành chỉ tiêu qua đường vòng'
+          : !wc.choChot ? 'SUP_CHO KHÔNG KHAI `chot`'
+          : wc.soDieuKien < 4 ? 'SUP_CHO khai ' + wc.soDieuKien + ' điều kiện, chủ hệ nói bốn'
+          : wc.choDu.length ? 'SUP_CHO THIẾU Ô: ' + wc.choDu.join(' · ')
+          : !tienOk ? 'ĐÃ CÓ CỬA GIỮ TIỀN HỘ TRONG KHI SUP-05 CÒN MỞ: ' +
+              cuaGiuTien.join(' · ') + ' — cổng pháp lý phải qua TRƯỚC đồng tiền đầu tiên'
+          : wc.so + ' nguồn wow, mỗi nguồn một đường đo · escrow chốt ' + wc.choChot +
+            ' với ' + wc.soDieuKien + ' điều kiện chất lượng · ' +
+            (wc.conMoSUP05 ? 'SUP-05 còn mở nên 0 cửa giữ tiền hộ'
+              : 'SUP-05 đã đóng — phép canh này tự nhường chỗ'));
+    }
   }
 
 
