@@ -42,25 +42,34 @@ function laNguoiNha(hoSo) {
 function ten(hoSo) { return String((hoSo || {}).u || ''); }
 function vaiCua(hoSo) { return String((hoSo || {}).role || ''); }
 
-/* ═══════════════ BA CẤP CẤP PHÉP 入库 ═══════════════
+/* ═══════════════ CHUỖI CẤP PHÉP 入库 ═══════════════
+   HAI CHUỖI CẤP PHÉP, không một cái răng thứ hai (9.99.97 · tình huống 6).
+   Bản chép của G.THT_CHUOI — mục 105 đối chiếu. Mỗi bản nháp mang một
+   `loaiDuyet` chọn chuỗi; duyetCap và nhapKho đọc CHÍNH chuỗi của bản
+   nháp ấy, nên thêm một chuỗi mới KHÔNG dựng lại cổng.
+     · kho     — lấp kho rỗng (tình huống 5): Sản phẩm → Giám đốc → Super Admin
+     · camNang — cẩm nang gỡ ca khó (tình huống 6): Coach cao nhất → Giám đốc → Super Admin
+   Ba vai khác nhau trong mỗi chuỗi → ba người khác nhau một cách tự nhiên. */
+export const CHUOI = {
+  kho: [
+    { ma: 'sanPham',    ten: 'Bộ phận sản phẩm',       vai: 'R04', thu: 1 },
+    { ma: 'giamDoc',    ten: 'Giám đốc điều hành',      vai: 'R03', thu: 2 },
+    { ma: 'superAdmin', ten: 'Super Admin',             vai: 'R01', thu: 3 }
+  ],
+  camNang: [
+    { ma: 'coachCao',   ten: 'Bộ phận Coach cao nhất',  vai: 'R05', thu: 1 },
+    { ma: 'giamDoc',    ten: 'Giám đốc điều hành',      vai: 'R03', thu: 2 },
+    { ma: 'superAdmin', ten: 'Super Admin',             vai: 'R01', thu: 3 }
+  ]
+};
+const LOAI_DUYET = Object.keys(CHUOI);
+function chuoiCua(ld) { return CHUOI[ld] || null; }
 
-   Bản chép của G.THT_CAP — mục 105 đối chiếu từng ô với kho, cùng lối
-   mục 93 soi VUNG_CAM của vòng nâng cấp.
-
-   Mỗi cấp khai VAI ký được nó. Ba vai khác nhau → ba người khác nhau
-   một cách tự nhiên; cộng thêm luật người-duyệt-khác-người-soạn thì cả
-   chuỗi duyệt không bao giờ là một người. */
-export const CAP = [
-  { ma: 'sanPham',    ten: 'Bộ phận sản phẩm',   vai: 'R04', thu: 1 },
-  { ma: 'giamDoc',    ten: 'Giám đốc điều hành',  vai: 'R03', thu: 2 },
-  { ma: 'superAdmin', ten: 'Super Admin',         vai: 'R01', thu: 3 }
-];
-const CAP_MA = CAP.map(function (c) { return c.ma; });
-const CAP_VAI = {}; CAP.forEach(function (c) { CAP_VAI[c.ma] = c.vai; });
-
-/* Bốn loại phát sinh. Bản chép của G.THT_PHATSINH_LOAI — mục 105 đối
-   chiếu. */
-export const LOAI_PHATSINH = ['khoRong', 'phanHoiXau', 'hoiNgoaiKichBan', 'duLieuGia'];
+/* Năm loại phát sinh. Bản chép của G.THT_PHATSINH_LOAI — mục 105 đối
+   chiếu. giaDinhVuong (9.99.97) là ca tình huống 6: nhà không có điểm
+   trùng khớp, con hợp tác vỏ ngoài, phụ huynh bận, minh chứng = 0. */
+export const LOAI_PHATSINH = ['khoRong', 'phanHoiXau', 'hoiNgoaiKichBan',
+  'duLieuGia', 'giaDinhVuong'];
 
 /* ═══════════════ SỔ PHÁT SINH — GHI NGAY ═══════════════
 
@@ -111,7 +120,12 @@ export async function soanBanNhap(y, env, db, hoSo) {
   const tieuDe = String(x.tieuDe || '').trim();
   const noiDung = String(x.noiDung || '').trim();
   const nguon = String(x.nguon || '').trim();
+  /* loaiDuyet chọn CHUỖI cấp phép. Mặc định 'kho' để bản 9.99.96 không
+     đổi hành vi; 'camNang' là chuỗi gỡ ca khó của tình huống 6. */
+  const loaiDuyet = String(x.loaiDuyet || 'kho').trim();
 
+  if (LOAI_DUYET.indexOf(loaiDuyet) < 0)
+    return { ok: false, code: 'LOAIDUYETLA', error: 'Loại duyệt không hợp lệ: ' + loaiDuyet };
   if (!phatSinhId)
     return { ok: false, code: 'THIEUPS',
       error: 'Bản nháp phải trỏ vào một phát sinh — không có phát sinh thì không biết nó lấp lỗ nào.' };
@@ -127,12 +141,12 @@ export async function soanBanNhap(y, env, db, hoSo) {
   const id = 'BN-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 6);
   const luc = new Date().toISOString();
   await db.prepare(
-    'INSERT INTO banNhapKho (id,phatSinhId,tenKho,tieuDe,noiDung,nguon,aiSoan,soanLuc,trangThai)' +
-    ' VALUES (?,?,?,?,?,?,?,?,?)')
-    .bind(id, phatSinhId, tenKho, tieuDe, noiDung, nguon, ten(hoSo), luc, 'nhap').run();
+    'INSERT INTO banNhapKho (id,phatSinhId,tenKho,tieuDe,noiDung,nguon,loaiDuyet,aiSoan,soanLuc,trangThai)' +
+    ' VALUES (?,?,?,?,?,?,?,?,?,?)')
+    .bind(id, phatSinhId, tenKho, tieuDe, noiDung, nguon, loaiDuyet, ten(hoSo), luc, 'nhap').run();
   await Kho.ghiNhatKy(db, { uid: hoSo.uid, username: ten(hoSo), viec: 'THT_SOAN',
-    doiTuong: id, chiTiet: tenKho + ' · ' + tieuDe.slice(0, 50) });
-  return { ok: true, id, trangThai: 'nhap', soanLuc: luc };
+    doiTuong: id, chiTiet: loaiDuyet + ' · ' + tenKho + ' · ' + tieuDe.slice(0, 50) });
+  return { ok: true, id, loaiDuyet, trangThai: 'nhap', soanLuc: luc };
 }
 
 /* ═══════════════ DUYỆT MỘT CẤP ═══════════════
@@ -152,20 +166,24 @@ export async function duyetCap(y, env, db, hoSo) {
   const cap = String(x.cap || '').trim();
   const ghiChu = String(x.ghiChu || '').trim();
 
-  if (CAP_MA.indexOf(cap) < 0)
-    return { ok: false, code: 'CAPLA', error: 'Cấp duyệt không hợp lệ: ' + cap };
-  const bn = await db.prepare('SELECT id,aiSoan,trangThai FROM banNhapKho WHERE id = ?')
+  const bn = await db.prepare('SELECT id,aiSoan,trangThai,loaiDuyet FROM banNhapKho WHERE id = ?')
     .bind(napId).first();
   if (!bn) return { ok: false, code: 'KHONGCO', error: 'Không có bản nháp: ' + napId };
   if (bn.trangThai !== 'nhap')
     return { ok: false, code: 'DANHAP', error: 'Bản nháp đã 入库 hoặc bị gỡ — không duyệt thêm được.' };
+  /* Đọc CHÍNH chuỗi của bản nháp — cấp và vai hợp lệ tuỳ loaiDuyet. */
+  const chuoi = chuoiCua(bn.loaiDuyet);
+  if (!chuoi) return { ok: false, code: 'KHONGCHUOI', error: 'Bản nháp mang loại duyệt lạ: ' + bn.loaiDuyet };
+  const buoc = chuoi.filter(function (c) { return c.ma === cap; })[0];
+  if (!buoc)
+    return { ok: false, code: 'CAPLA', error: 'Cấp "' + cap + '" không thuộc chuỗi ' + bn.loaiDuyet + '.' };
   if (ghiChu.length < 5)
     return { ok: false, code: 'THIEUO',
       error: 'Duyệt phải viết một câu — một dấu tick không nói vì sao duyệt.' };
 
-  if (vaiCua(hoSo) !== CAP_VAI[cap])
+  if (vaiCua(hoSo) !== buoc.vai)
     return { ok: false, code: 'SAIVAI',
-      error: 'Cấp "' + cap + '" phải do vai ' + CAP_VAI[cap] + ' ký. Vai hiện tại: ' +
+      error: 'Cấp "' + cap + '" phải do vai ' + buoc.vai + ' ký. Vai hiện tại: ' +
         (vaiCua(hoSo) || '(không)') + '.' };
   if (ten(hoSo) === bn.aiSoan)
     return { ok: false, code: 'TUDUYET',
@@ -187,10 +205,10 @@ export async function duyetCap(y, env, db, hoSo) {
     'INSERT INTO duyetNhap (id,napId,cap,aiDuyet,duyetLuc,ghiChu) VALUES (?,?,?,?,?,?)')
     .bind(id, napId, cap, ten(hoSo), luc, ghiChu).run();
   await ghiSoDen(db, hoSo, 'THT_DUYET', napId, cap + ' · ' + ten(hoSo));
-  const con = CAP_MA.filter(function (c) {
+  const con = chuoi.map(function (c) { return c.ma; }).filter(function (c) {
     return c !== cap && !daKy.some(function (r) { return r.cap === c; });
   });
-  return { ok: true, id, cap, duyetLuc: luc, conThieu: con };
+  return { ok: true, id, cap, loaiDuyet: bn.loaiDuyet, duyetLuc: luc, conThieu: con };
 }
 
 /* ═══════════════ 入库 — CÁI RĂNG ═══════════════
@@ -204,16 +222,18 @@ export async function nhapKho(y, env, db, hoSo) {
     error: 'Chỉ Super Admin 入库 được — đây là bước đưa nội dung ra phục vụ khách.' };
 
   const napId = String((y || {}).napId || '').trim();
-  const bn = await db.prepare('SELECT id,tenKho,trangThai,aiSoan FROM banNhapKho WHERE id = ?')
+  const bn = await db.prepare('SELECT id,tenKho,trangThai,aiSoan,loaiDuyet FROM banNhapKho WHERE id = ?')
     .bind(napId).first();
   if (!bn) return { ok: false, code: 'KHONGCO', error: 'Không có bản nháp: ' + napId };
   if (bn.trangThai === 'daNhap')
     return { ok: false, code: 'ROI', error: 'Bản này 入库 rồi.' };
+  const chuoi = chuoiCua(bn.loaiDuyet);
+  if (!chuoi) return { ok: false, code: 'KHONGCHUOI', error: 'Bản nháp mang loại duyệt lạ: ' + bn.loaiDuyet };
 
   const daKy = ((await db.prepare('SELECT cap,aiDuyet FROM duyetNhap WHERE napId = ?')
     .bind(napId).all()).results) || [];
   const capCoKy = {}; daKy.forEach(function (r) { capCoKy[r.cap] = r.aiDuyet; });
-  const thieu = CAP_MA.filter(function (c) { return !capCoKy[c]; });
+  const thieu = chuoi.map(function (c) { return c.ma; }).filter(function (c) { return !capCoKy[c]; });
   const nguoiKy = {}; daKy.forEach(function (r) { nguoiKy[r.aiDuyet] = 1; });
 
   /* Cổng đứng TRƯỚC câu UPDATE 入库. */
@@ -259,7 +279,7 @@ export async function soatTuHoanThien(y, env, db, hoSo) {
   const ps = ((await db.prepare('SELECT loai, COUNT(*) n FROM phatSinh GROUP BY loai').all())
     .results) || [];
   const nhaps = ((await db.prepare(
-    'SELECT id,tenKho,tieuDe,aiSoan,soanLuc,trangThai FROM banNhapKho ORDER BY soanLuc DESC LIMIT 50')
+    'SELECT id,tenKho,tieuDe,aiSoan,soanLuc,trangThai,loaiDuyet FROM banNhapKho ORDER BY soanLuc DESC LIMIT 50')
     .all()).results) || [];
 
   const out = [];
@@ -268,13 +288,15 @@ export async function soatTuHoanThien(y, env, db, hoSo) {
       .bind(n.id).all()).results) || [];
     const co = daKy.map(function (r) { return r.cap; });
     const nguoi = {}; daKy.forEach(function (r) { nguoi[r.aiDuyet] = 1; });
+    const chuoi = chuoiCua(n.loaiDuyet) || [];
+    const maChuoi = chuoi.map(function (c) { return c.ma; });
     out.push({ id: n.id, tenKho: n.tenKho, tieuDe: n.tieuDe, aiSoan: n.aiSoan,
-      soanLuc: n.soanLuc, trangThai: n.trangThai, daKy: co,
-      thieu: CAP_MA.filter(function (c) { return co.indexOf(c) < 0; }),
-      du: CAP_MA.every(function (c) { return co.indexOf(c) >= 0; }) &&
+      soanLuc: n.soanLuc, trangThai: n.trangThai, loaiDuyet: n.loaiDuyet, daKy: co,
+      thieu: maChuoi.filter(function (c) { return co.indexOf(c) < 0; }),
+      du: maChuoi.length > 0 && maChuoi.every(function (c) { return co.indexOf(c) >= 0; }) &&
         Object.keys(nguoi).length >= 3 });
   }
-  return { ok: true, phatSinh: ps, nhap: out, cap: CAP,
+  return { ok: true, phatSinh: ps, nhap: out, chuoi: CHUOI,
     khongGopSo: 'Đủ ba cấp hay chưa tính lúc đọc từ sổ chữ ký, không một cột "đãDuyệt". ' +
       'Một cột tóm tắt thì hoặc bị gõ đè, hoặc cũ đi lặng lẽ.' };
 }

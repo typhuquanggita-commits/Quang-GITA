@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.96',
+  version: '9.99.97',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3785,7 +3785,7 @@ G.THUOC_CAP_PHEP = [
   /* v9.99.73 — bảng giá sửa được */
   'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
   'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_TUOI','SUP_WOW','SUP_WOW_LUAT','SUP_BACHIEU','SUP_BACHIEU_LUAT','SUP_FAN','SUP_FAN_LUAT','TAILIEU_SPEC','TAILIEU_SPEC_LUAT','HC_TANG','HC_MA_TRUNG','HC_LUAT','HC_CHOCHU','CUU_YEUTO','CUU_LUAT','CUU_BUOC','CUU_KHONG_LAM','CUU_CHOCHU','XU_DEM','XU_LOI','XU_HOP','XU_NGANKHO','XU_KHUON','XU_KHO_HINH','XU_DEN','XU_LUAT','XU_CHOCHU','LT_THANG','LT_THANG_LUAT','LT_GIAIDOAN','LT_GATE','LT_RM','LT_MOC','LT_NO','LT_NO_LUAT','LT_AM','LT_PL','LT_VA','LT_HOP','LT_MOI','LT_LUAT','LT_CHOCHU','ST_DEM','ST_VA','ST_OAN','ST_OAN_LUAT','ST_PHAN','ST_LUAT','ST_CHOCHU','HP9_BATKHASUA','HP9_LUAT','HP9_CHOCHU','HP9_DACHOT','SUP_CHO','SUP_CHOCHU','SUP_DACHOT',
-  'THT_CAP','THT_PHATSINH_LOAI','THT_LUAT','THT_KHONG_LAM','THT_CHOCHU',
+  'THT_CAP','THT_CAMNANG','THT_PHATSINH_LOAI','THT_LUAT','THT_KHONG_LAM','THT_CHOCHU',
   'VIP_CAM','VIP_CAM_LUAT','VIP_NGAN','VIP_LENH','VIP_SA_KHONG','VIP_60',
   'VIP_SUA_CHU','VIP_CHOCHU',
   /* v9.99.77 — vòng tự nâng cấp */
@@ -44650,8 +44650,16 @@ G.VIEWS = G.VIEWS || {};
     var d = (G.THT_PHATSINH_LOAI || []).filter(function (x) { return x.ma === ma; })[0];
     return d ? d.ten : ma;
   }
+  function chuoiKho() {
+    return { kho: G.THT_CAP || [], camNang: G.THT_CAMNANG || [] };
+  }
+  function moiCap() {
+    var ra = [], ch = chuoiKho();
+    Object.keys(ch).forEach(function (k) { (ch[k] || []).forEach(function (c) { ra.push(c); }); });
+    return ra;
+  }
   function tenCap(ma) {
-    var d = (G.THT_CAP || []).filter(function (x) { return x.ma === ma; })[0];
+    var d = moiCap().filter(function (x) { return x.ma === ma; })[0];
     return d ? d.ten : ma;
   }
 
@@ -44685,20 +44693,25 @@ G.VIEWS = G.VIEWS || {};
       'Máy SOẠN từ dữ liệu đã có, ghi vào staging. Đủ ba cấp hay chưa tính LÚC ĐỌC từ sổ ' +
       'chữ ký — không cột "đãDuyệt". Chỉ khi đủ ba chữ ký của ba người khác nhau thì Super ' +
       'Admin mới 入库.');
-    o += U.tbl(['Thứ', 'Cấp', 'Vai ký', 'Việc'],
-      (G.THT_CAP || []).map(function (c) {
-        return [String(c.thu), h(c.ten), '<code>' + h(c.vai) + '</code>', h(c.lam)];
-      }));
+    var ch = chuoiKho();
+    Object.keys(ch).forEach(function (k) {
+      var ten = k === 'kho' ? 'Chuỗi LẤP KHO (kho rỗng)' : 'Chuỗi CẨM NANG (gỡ ca khó)';
+      o += U.sec(ten, '');
+      o += U.tbl(['Thứ', 'Cấp', 'Vai ký', 'Việc'],
+        (ch[k] || []).map(function (c) {
+          return [String(c.thu), h(c.ten), '<code>' + h(c.vai) + '</code>', h(c.lam)];
+        }));
+    });
     var so = G.thtSo;
     if (so && so.ok && so.nhap) {
       if (so.nhap.length) {
-        o += U.tbl(['Kho', 'Tiêu đề', 'Người soạn', 'Đã ký', 'Còn thiếu', 'Trạng thái'],
+        o += U.tbl(['Loại', 'Kho', 'Tiêu đề', 'Người soạn', 'Đã ký', 'Còn thiếu', 'Trạng thái'],
           so.nhap.map(function (n) {
             var da = (n.daKy || []).map(tenCap).join(', ') || '—';
             var thieu = (n.thieu || []).map(tenCap).join(', ') || '—';
             var tt = n.trangThai === 'daNhap'
               ? '<b>đã 入库</b>' : (n.du ? 'đủ — chờ Super Admin 入库' : 'chờ duyệt');
-            return [h(n.tenKho), h(n.tieuDe), h(n.aiSoan), h(da), h(thieu), tt];
+            return [h(n.loaiDuyet || 'kho'), h(n.tenKho), h(n.tieuDe), h(n.aiSoan), h(da), h(thieu), tt];
           }));
       } else {
         o += '<p class="note">Chưa có bản nháp nào.</p>';

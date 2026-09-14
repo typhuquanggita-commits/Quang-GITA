@@ -17826,20 +17826,23 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
     let hv = '', hvDat = false;
     try {
       const mod = await import('file://' + pT.join(gocT, 'may-chu', 'tu-hoan-thien.js'));
+      /* Early-return không cần db: nhapKho/duyetCap đọc db sau cổng vai,
+         nên đo cổng vai bằng R13 (trả về TRƯỚC khi chạm db=null). */
       const rKhach = await mod.nhapKho({ napId: 'x' }, {}, null, { u: 'k', role: 'R13' });
       const rSoan = await mod.soanBanNhap({}, {}, null, { u: 'a', role: 'R05' });
-      const rCap = await mod.duyetCap({ napId: 'x', cap: 'saiCap' }, {}, null, { u: 'b', role: 'R04' });
+      const rCap = await mod.duyetCap({ napId: 'x', cap: 'sanPham' }, {}, null, { u: 'b', role: 'R13' });
       const rLoai = await mod.ghiPhatSinh({ loai: 'saiLoai', chiTiet: 'mười ký tự trở lên' },
         {}, null, { u: 'c', role: 'R05' });
       hv = 'nhập→' + (rKhach || {}).code + ' soạn→' + (rSoan || {}).code +
         ' duyệt→' + (rCap || {}).code + ' ghi→' + (rLoai || {}).code;
       hvDat = (rKhach || {}).code === 'NOPERM' && (rSoan || {}).code === 'THIEUPS' &&
-        (rCap || {}).code === 'CAPLA' && (rLoai || {}).code === 'LOAILA';
+        (rCap || {}).code === 'NOPERM' && (rLoai || {}).code === 'LOAILA';
     } catch (e) { hv = 'gọi hỏng: ' + (e && e.message); }
 
-    /* B3 · vai ba cấp ở máy chủ đọc từ CAP */
-    const capMay = [...maTht.matchAll(/ma:\s*'(sanPham|giamDoc|superAdmin)',\s*ten:[^,]*,\s*vai:\s*'(R\d\d)'/g)]
-      .map(m => m[1] + '=' + m[2]).sort().join(',');
+    /* B3 · vai các cấp ở máy chủ đọc từ CHUOI (gộp cả hai chuỗi, bỏ trùng) */
+    const capMay = [...new Set([...maTht.matchAll(
+      /ma:\s*'(sanPham|giamDoc|superAdmin|coachCao)',\s*ten:[^,]*,\s*vai:\s*'(R\d\d)'/g)]
+      .map(m => m[1] + '=' + m[2]))].sort().join(',');
 
     /* F · worker wired */
     const cuaTht = ['ghiPhatSinh', 'soanBanNhap', 'duyetCap', 'nhapKho', 'traBoSung', 'soatTuHoanThien'];
@@ -17847,27 +17850,32 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
       !(new RegExp("fn === '" + c + "'").test(wkT)) || !(new RegExp("'" + c + "'").test(wkT)));
 
     const t = await p.evaluate(() => {
-      const G = window.G, cap = G.THT_CAP || [], loai = G.THT_PHATSINH_LOAI || [],
+      const G = window.G, chuoi = { kho: G.THT_CAP || [], camNang: G.THT_CAMNANG || [] },
+        loai = G.THT_PHATSINH_LOAI || [],
         lu = G.THT_LUAT || {}, kh = G.THT_KHONG_LAM || [], sc = G.THT_CHOCHU || [];
       const co = s => !!String(s || '').trim();
+      const moiCap = []; Object.keys(chuoi).forEach(k => (chuoi[k] || []).forEach(c => moiCap.push(c)));
       return {
-        capKho: cap.map(c => c.ma + '=' + c.vai).sort().join(','),
-        capThieu: cap.filter(c => !co(c.ma) || !co(c.vai) || !co(c.ten) || !co(c.lam)).map(c => c.ma),
+        soChuoi: Object.keys(chuoi).filter(k => (chuoi[k] || []).length).length,
+        capKho: [...new Set(moiCap.map(c => c.ma + '=' + c.vai))].sort().join(','),
+        capThieu: moiCap.filter(c => !co(c.ma) || !co(c.vai) || !co(c.ten) || !co(c.lam)).map(c => c.ma),
         loaiKho: loai.map(l => l.ma).sort().join(','),
         loaiThieu: loai.filter(l => !co(l.ma) || !co(l.ten) || !co(l.vi)).map(l => l.ma),
         luatDu: ['maySoanKhongNhap', 'duTinhLucDoc', 'baNguoiKhacNhau', 'khoRongNoiThat',
-          'nhapKhongPhucVu', 'chuaCapThiCho', 'ghiNgay'].filter(k => !co(lu[k])),
+          'nhapKhongPhucVu', 'chuaCapThiCho', 'ghiNgay', 'minhChungKhong',
+          'ngoaiGoiKhongChoKhong'].filter(k => !co(lu[k])),
         soKhong: kh.length,
         khongThieu: kh.filter(x => !co(x.doi) || !co(x.vi)).map(x => x.ma),
         soCho: sc.length,
         choThieu: sc.filter(x => !co(x.viMayKhongTuChon) || !co(x.do)).map(x => x.ma),
         mocBang: Object.keys(G).filter(k => /^THT_/.test(k) &&
-          !['THT_CAP', 'THT_PHATSINH_LOAI', 'THT_LUAT', 'THT_KHONG_LAM', 'THT_CHOCHU'].includes(k))
+          !['THT_CAP', 'THT_CAMNANG', 'THT_PHATSINH_LOAI', 'THT_LUAT', 'THT_KHONG_LAM',
+            'THT_CHOCHU'].includes(k))
       };
     });
 
-    const capKhop = t.capKho === capMay && capMay.length > 0;
-    const loaiKhop = t.loaiKho === 'duLieuGia,hoiNgoaiKichBan,khoRong,phanHoiXau';
+    const capKhop = t.capKho === capMay && capMay.length > 0 && t.soChuoi === 2;
+    const loaiKhop = t.loaiKho === 'duLieuGia,giaDinhVuong,hoiNgoaiKichBan,khoRong,phanHoiXau';
 
     const tDat = gateTruoc && !coCotDuyet && !soanInsLa.length && hvDat &&
       capKhop && !t.capThieu.length && loaiKhop && !t.loaiThieu.length &&
@@ -17883,8 +17891,9 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         : soanInsLa.length ? 'soanBanNhap INSERT VÀO KHO KHÁC staging: ' + soanInsLa.join(' · ') +
             ' — máy SOẠN, không NHẬP; chỉ nhapKho (có răng) mới đưa nội dung ra phục vụ khách'
         : !hvDat ? 'HÀNH VI CỬA SAI: ' + hv + ' (mong nhập→NOPERM soạn→THIEUPS duyệt→CAPLA ghi→LOAILA)'
-        : !capKhop ? 'THT_CAP LỆCH bản chép máy chủ — kho: ' + t.capKho + ' · máy chủ: ' + capMay
-        : t.capThieu.length ? 'THT_CAP thiếu ô: ' + t.capThieu.join(' · ')
+        : !capKhop ? 'THT_CHUOI LỆCH bản chép máy chủ (' + t.soChuoi + ' chuỗi) — kho: ' +
+            t.capKho + ' · máy chủ: ' + capMay
+        : t.capThieu.length ? 'THT_CHUOI thiếu ô: ' + t.capThieu.join(' · ')
         : !loaiKhop ? 'THT_PHATSINH_LOAI lệch: ' + t.loaiKho
         : t.loaiThieu.length ? 'THT_PHATSINH_LOAI thiếu ô: ' + t.loaiThieu.join(' · ')
         : t.luatDu.length ? 'THT_LUAT THIẾU Ô: ' + t.luatDu.join(' · ')

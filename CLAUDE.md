@@ -4276,6 +4276,62 @@ sửa mỗi số vừa kêu là để những số kia nằm sát mép rồi cù
 
 ---
 
+## HỆ QUY TRÌNH TỔNG THỂ — HAI CHUỖI CẤP PHÉP (9.99.97)
+
+Theo tình huống 6 của chủ hệ: một gia đình **không có điểm trùng khớp**
+giữa phản hồi phụ huynh và con, con hợp tác vỏ ngoài, phụ huynh bận và
+chọn gói tự-thực-hiện mà không hiểu cách làm, đòi coach ngoài gói,
+**minh chứng gửi lên đều = 0** (phụ huynh không rành công nghệ), đánh
+giá 21/90 ngày là 1 sao. Bộ não chỉ đạo các trợ lý cùng nghiên cứu
+**cẩm nang gỡ ca**, trình **Bộ phận Coach cao nhất → Giám đốc → Super
+Admin**. Chủ hệ đòi một **hệ quy trình tổng thể** cho mọi ca tương tự.
+
+### Tổng quát hoá, KHÔNG dựng cái răng thứ hai
+
+Tình huống 5 (9.99.96) đã dựng cổng gated 入库. Tình huống 6 là **cùng
+kiến trúc, chuỗi khác**. Nên `may-chu/tu-hoan-thien.js` đổi từ MỘT bảng
+`CAP` thành **registry `CHUOI`** hai chuỗi:
+
+- `kho` — lấp kho rỗng: Sản phẩm(R04) → Giám đốc(R03) → Super Admin(R01)
+- `camNang` — cẩm nang gỡ ca: Coach cao nhất(R05) → Giám đốc(R03) → Super Admin(R01)
+
+Mỗi bản nháp mang `loaiDuyet`; `duyetCap` và `nhapKho` đọc **CHÍNH chuỗi
+của bản nháp ấy**. Thêm một chuỗi mới KHÔNG dựng lại cổng — cùng một cái
+răng, nhiều chuỗi. Bộ thử worker chạy trọn CẢ HAI chuỗi (mục 19–20).
+
+### Hai kho riêng, không đổi hình kho đã phát hành
+
+`THT_CAP` đã phát hành ở 9.99.96. Đổi nó thành một object là **mục 45
+báo "kho biến mất"** — một kho vừa phát hành xong không đổi tên/đổi hình
+được. Nên chuỗi cẩm nang là kho **MỚI** `THT_CAMNANG` (thêm mới, mục 45
+im). Bài học: registry ở MÁY CHỦ (const `CHUOI`) tự do đổi hình; KHO
+(G.THT_*) thì bị mục 45 canh, nên giữ ổn định và thêm mới thay vì đổi.
+
+### Ba luật riêng của ca gia đình kẹt
+
+- **`minhChungKhong`**: minh chứng = 0 KHÔNG đọc ra là thất bại. Phụ
+  huynh không rành công nghệ nên không gửi được — trống KHÁC số 0 (luật
+  phễu 9.99.59). Không chốt 1-sao thành "khách sai" (K5); mở cẩm nang +
+  đường ghi minh chứng dễ hơn.
+- **`ngoaiGoiKhongChoKhong`**: đòi coach ngoài gói tự-thực-hiện → giữ
+  ranh giới gói (không cho MIỄN PHÍ — cho không thì cả thang gói thành
+  hình thức) NHƯNG không bỏ mặc: cẩm nang tự làm rõ hơn + đường nâng gói
+  nói thẳng (K6). Từ chối cụt là một người mang cảm giác xấu đi kể lại.
+
+### Phá thử + mục 105
+
+Mục 105 nay canh HAI chuỗi (soChuoi===2), năm loại phát sinh, chín luật.
+Phá thử: đổi vai `coachCao` trong kho R05→R06 → đỏ "THT_CHUOI LỆCH bản
+chép máy chủ (2 chuỗi)". Gate-trước-UPDATE, không-cột-đãDuyệt, soạn-chỉ-
+vào-staging vẫn canh như 9.99.96.
+
+### Sổ chờ
+
+- **THT-03** — vai R05 có đúng là "Bộ phận Coach cao nhất" không, hay
+  Học viện có một cấp coach cao hơn / một hội đồng coach riêng.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

@@ -6791,6 +6791,46 @@ const bs2 = (await goi({fn: 'traBoSung', token: t07b, tenKho: 'BLV_NGAN'})).than
 bao(bs2.bo.length === 1 && !bs2.bo.some(x => x.tieuDe === 'Bản chưa duyệt'),
   'bản nháp CHƯA duyệt KHÔNG phục vụ khách — lọc ở câu truy vấn, không ở màn', bn2.id);
 
+/* ═══════════════ 20 · CHUỖI CẨM NANG — TÌNH HUỐNG 6 ═══════════════
+   Gia đình kẹt (minh chứng=0, con hợp tác vỏ ngoài): Bộ não soạn CẨM
+   NANG GỠ CA, trình chuỗi camNang: Coach cao nhất → Giám đốc → Super
+   Admin. Cùng cái răng, chuỗi khác — không dựng cổng thứ hai. */
+console.log('\n20 · CHUỖI CẨM NANG — TÌNH HUỐNG 6');
+await themNguoi('U-tht-r5', 'tht-r5@gita365.vn', 'MatKhauRieng2026!', 'R05', {portal: 'coach'});
+const t05 = (await goi({fn: 'dangNhap', u: 'tht-r5@gita365.vn', mk: 'MatKhauRieng2026!'})).than.token;
+
+const ps6 = (await goi({fn: 'ghiPhatSinh', token: t07b, loai: 'giaDinhVuong',
+  cauHoi: 'nhà không có điểm trùng khớp, minh chứng = 0',
+  chiTiet: 'Phụ huynh bận, con hợp tác vỏ ngoài, phụ huynh không rành công nghệ nên minh chứng trống'})).than;
+bao(ps6.ok, 'ghi phát sinh gia đình kẹt (tình huống 6)', ps6.id);
+
+const bnC = (await goi({fn: 'soanBanNhap', token: t07b, phatSinhId: ps6.id, tenKho: 'CAM_NANG_GO_CA',
+  tieuDe: 'Cẩm nang gỡ ca nhà kẹt', loaiDuyet: 'camNang',
+  noiDung: 'Ba bước gỡ khi phụ huynh và con không có điểm trùng khớp, dựa trên dữ liệu đã có',
+  nguon: 'HL_SAUNHIP + coach-5-tang'})).than;
+bao(bnC.ok && bnC.loaiDuyet === 'camNang', 'soạn cẩm nang vào chuỗi camNang', bnC.id);
+
+/* Cấp sanPham KHÔNG thuộc chuỗi camNang → CAPLA */
+bao((await goi({fn: 'duyetCap', token: t04, napId: bnC.id, cap: 'sanPham',
+    ghiChu: 'thử cấp sai chuỗi'})).than.code === 'CAPLA',
+  'cấp sanPham không thuộc chuỗi camNang → từ chối');
+/* coachCao phải R05, không phải R04 */
+bao((await goi({fn: 'duyetCap', token: t04, napId: bnC.id, cap: 'coachCao',
+    ghiChu: 'thử sai vai'})).than.code === 'SAIVAI',
+  'cấp coachCao phải do R05 ký, R04 bị chặn');
+
+bao((await goi({fn: 'duyetCap', token: t05, napId: bnC.id, cap: 'coachCao',
+  ghiChu: 'cẩm nang đúng chuyên môn coach, không hứa quá, trong phạm vi gói'})).than.ok,
+  'R05 duyệt cấp Coach cao nhất');
+bao((await goi({fn: 'duyetCap', token: t03, napId: bnC.id, cap: 'giamDoc',
+  ghiChu: 'Học viện làm nổi cẩm nang này cho mọi nhà'})).than.ok, 'R03 duyệt cấp giám đốc (camNang)');
+bao((await goi({fn: 'nhapKho', token: t01, napId: bnC.id})).than.code === 'CHUADU',
+  'cẩm nang thiếu chữ ký Super Admin vẫn chưa áp dụng được');
+bao((await goi({fn: 'duyetCap', token: t01, napId: bnC.id, cap: 'superAdmin',
+  ghiChu: 'chốt cẩm nang, đưa vào áp dụng'})).than.ok, 'R01 duyệt cấp Super Admin (camNang)');
+bao((await goi({fn: 'nhapKho', token: t01, napId: bnC.id})).than.ok,
+  'đủ ba chữ ký chuỗi camNang → Super Admin áp dụng cẩm nang');
+
 console.log('');
 /* process.exit() KHÔNG đợi stdout ghi xong khi đầu ra là tệp hay ống —
    dòng cuối cùng biến mất, và người đọc bản ghi thấy một bộ thử dừng

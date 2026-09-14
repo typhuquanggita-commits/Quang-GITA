@@ -1969,6 +1969,7 @@ CREATE TABLE IF NOT EXISTS banNhapKho (
   tieuDe      TEXT NOT NULL,
   noiDung     TEXT NOT NULL,
   nguon       TEXT NOT NULL,     -- DẪN NGUỒN từ dữ liệu đã có — không bịa
+  loaiDuyet   TEXT NOT NULL DEFAULT 'kho',  -- chọn CHUỖI cấp phép: 'kho' · 'camNang'
   aiSoan      TEXT NOT NULL,
   soanLuc     TEXT NOT NULL,
   trangThai   TEXT NOT NULL,     -- 'nhap' hoặc 'daNhap' (KHÔNG có 'đãDuyệt')

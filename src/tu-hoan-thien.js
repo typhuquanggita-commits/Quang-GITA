@@ -46,8 +46,16 @@ G.VIEWS = G.VIEWS || {};
     var d = (G.THT_PHATSINH_LOAI || []).filter(function (x) { return x.ma === ma; })[0];
     return d ? d.ten : ma;
   }
+  function chuoiKho() {
+    return { kho: G.THT_CAP || [], camNang: G.THT_CAMNANG || [] };
+  }
+  function moiCap() {
+    var ra = [], ch = chuoiKho();
+    Object.keys(ch).forEach(function (k) { (ch[k] || []).forEach(function (c) { ra.push(c); }); });
+    return ra;
+  }
   function tenCap(ma) {
-    var d = (G.THT_CAP || []).filter(function (x) { return x.ma === ma; })[0];
+    var d = moiCap().filter(function (x) { return x.ma === ma; })[0];
     return d ? d.ten : ma;
   }
 
@@ -81,20 +89,25 @@ G.VIEWS = G.VIEWS || {};
       'Máy SOẠN từ dữ liệu đã có, ghi vào staging. Đủ ba cấp hay chưa tính LÚC ĐỌC từ sổ ' +
       'chữ ký — không cột "đãDuyệt". Chỉ khi đủ ba chữ ký của ba người khác nhau thì Super ' +
       'Admin mới 入库.');
-    o += U.tbl(['Thứ', 'Cấp', 'Vai ký', 'Việc'],
-      (G.THT_CAP || []).map(function (c) {
-        return [String(c.thu), h(c.ten), '<code>' + h(c.vai) + '</code>', h(c.lam)];
-      }));
+    var ch = chuoiKho();
+    Object.keys(ch).forEach(function (k) {
+      var ten = k === 'kho' ? 'Chuỗi LẤP KHO (kho rỗng)' : 'Chuỗi CẨM NANG (gỡ ca khó)';
+      o += U.sec(ten, '');
+      o += U.tbl(['Thứ', 'Cấp', 'Vai ký', 'Việc'],
+        (ch[k] || []).map(function (c) {
+          return [String(c.thu), h(c.ten), '<code>' + h(c.vai) + '</code>', h(c.lam)];
+        }));
+    });
     var so = G.thtSo;
     if (so && so.ok && so.nhap) {
       if (so.nhap.length) {
-        o += U.tbl(['Kho', 'Tiêu đề', 'Người soạn', 'Đã ký', 'Còn thiếu', 'Trạng thái'],
+        o += U.tbl(['Loại', 'Kho', 'Tiêu đề', 'Người soạn', 'Đã ký', 'Còn thiếu', 'Trạng thái'],
           so.nhap.map(function (n) {
             var da = (n.daKy || []).map(tenCap).join(', ') || '—';
             var thieu = (n.thieu || []).map(tenCap).join(', ') || '—';
             var tt = n.trangThai === 'daNhap'
               ? '<b>đã 入库</b>' : (n.du ? 'đủ — chờ Super Admin 入库' : 'chờ duyệt');
-            return [h(n.tenKho), h(n.tieuDe), h(n.aiSoan), h(da), h(thieu), tt];
+            return [h(n.loaiDuyet || 'kho'), h(n.tenKho), h(n.tieuDe), h(n.aiSoan), h(da), h(thieu), tt];
           }));
       } else {
         o += '<p class="note">Chưa có bản nháp nào.</p>';
