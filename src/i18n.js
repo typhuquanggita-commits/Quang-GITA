@@ -307,6 +307,7 @@ G.ITEM_EN = {
   'giam-sat':['Monitoring Ceiling','GITA-VIP builds the CEILING first and no monitor yet — a gate built after a door is already running is only a reminder · six ABSOLUTE PROHIBITIONS no order can lift, not even a signed R01 order · three scopes that differ by LEGAL BASIS, not by degree · every authorisation must carry an expiry and revokes itself · hash-chained ledger where editing one row breaks every row after it'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'studio':['GITA Studio — Video Workshop','Script from the sentence bank · 1080p canvas · real human voice · inspection lights · video passport'],
+  'tu-hoan-thien':['Self-Completion Loop — Gated Vault Fill','When a vault is empty mid-advising the Brain DRAFTS from existing data, never fabricates — but promoting to the live vault needs Product → CEO → Super Admin · machine drafts, does not promote · whether three signatures are in is COMPUTED AT READ from the ledger, no "approved" column · three levels, three different people · the delay is real and stated plainly to the customer'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
   'phan-quyen':['Assignments & permissions','15 positions × 31 permissions · click a cell to change it'],

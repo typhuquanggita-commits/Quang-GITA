@@ -1940,6 +1940,55 @@ CREATE TABLE IF NOT EXISTS cuuHe (
 CREATE INDEX IF NOT EXISTS ix_cuuhe_token ON cuuHe (token);
 
 -- ═══════════════════════════════════════════════════════════════
+--  VÒNG TỰ HOÀN THIỆN — LẤP KHO CÓ CẤP PHÉP  (9.99.96)
+-- ═══════════════════════════════════════════════════════════════
+--
+--  banNhapKho KHÔNG có cột "đãDuyệt". Đủ ba cấp hay chưa TÍNH LÚC ĐỌC
+--  từ sổ chữ ký duyetNhap — cùng luật cột conHan KHÔNG có trong
+--  theVungManh (9.99.63), cột den KHÔNG có trong hoSoSongSinh (9.99.66),
+--  cột đã-qua-mấy-cửa KHÔNG có trong luotNangCap (9.99.77).
+--
+--  trangThai chỉ hai giá trị: 'nhap' (nháp, KHÔNG phục vụ khách) và
+--  'daNhap' (đã 入库 sau đủ ba chữ ký). Ranh giới phục vụ khách nằm ở
+--  CÂU TRUY VẤN traBoSung (WHERE trangThai='daNhap'), không ở màn hình.
+CREATE TABLE IF NOT EXISTS phatSinh (
+  id       TEXT PRIMARY KEY,
+  loai     TEXT NOT NULL,        -- khoRong · phanHoiXau · hoiNgoaiKichBan · duLieuGia
+  kho      TEXT,                 -- kho nào rỗng, nếu là loại khoRong
+  cauHoi   TEXT,                 -- câu hỏi khách đặt lúc gặp lỗ
+  chiTiet  TEXT NOT NULL,
+  aiGhi    TEXT NOT NULL,
+  luc      TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_phatsinh_loai ON phatSinh (loai);
+
+CREATE TABLE IF NOT EXISTS banNhapKho (
+  id          TEXT PRIMARY KEY,
+  phatSinhId  TEXT NOT NULL,     -- trỏ vào lỗ nó lấp
+  tenKho      TEXT NOT NULL,
+  tieuDe      TEXT NOT NULL,
+  noiDung     TEXT NOT NULL,
+  nguon       TEXT NOT NULL,     -- DẪN NGUỒN từ dữ liệu đã có — không bịa
+  aiSoan      TEXT NOT NULL,
+  soanLuc     TEXT NOT NULL,
+  trangThai   TEXT NOT NULL,     -- 'nhap' hoặc 'daNhap' (KHÔNG có 'đãDuyệt')
+  aiNhap      TEXT,              -- Super Admin 入库
+  nhapLuc     TEXT
+);
+CREATE INDEX IF NOT EXISTS ix_bannhap_tt ON banNhapKho (trangThai);
+
+-- Sổ chữ ký NỐI THÊM, không cột tóm tắt. Đủ ba cấp hay chưa đọc từ đây.
+CREATE TABLE IF NOT EXISTS duyetNhap (
+  id        TEXT PRIMARY KEY,
+  napId     TEXT NOT NULL,
+  cap       TEXT NOT NULL,       -- sanPham · giamDoc · superAdmin
+  aiDuyet   TEXT NOT NULL,
+  duyetLuc  TEXT NOT NULL,
+  ghiChu    TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS ix_duyetnhap_nap ON duyetNhap (napId);
+
+-- ═══════════════════════════════════════════════════════════════
 --  VÒNG TỰ NÂNG CẤP  (9.99.77)
 -- ═══════════════════════════════════════════════════════════════
 --

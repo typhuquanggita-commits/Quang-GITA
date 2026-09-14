@@ -17783,6 +17783,120 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
           ch.soBuoc + ' bước quy trình đủ cua+ai+giờ');
   }
 
+  console.log('\n105 · VÒNG TỰ HOÀN THIỆN — MÁY SOẠN, NGƯỜI DUYỆT, GATE TRƯỚC 入库');
+  /* ═══════════════ 105 · TỰ HOÀN THIỆN (9.99.96)
+     A · nhapKho là RĂNG: cổng đủ-chữ-ký đứng TRƯỚC câu UPDATE 入库.
+     B · Phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI, lần thứ MƯỜI BỐN:
+         · banNhapKho KHÔNG có cột "đãDuyệt" — đủ tính lúc đọc từ duyetNhap.
+         · soanBanNhap chỉ INSERT vào banNhapKho (staging), KHÔNG vào kho
+           phục vụ khách nào khác.
+     C · Đo HÀNH VI qua các cửa (early-return, không cần db): vai chặn,
+         cấp lạ, loại lạ, thiếu phát sinh.
+     D · Kho THT_CAP · THT_PHATSINH_LOAI khớp bản chép ở máy chủ; ba cấp
+         ba vai khác nhau (R04·R03·R01).
+     E · THT_LUAT đủ bảy · THT_KHONG_LAM ≥4 · THT_CHOCHU ≥2 đủ ô; không
+         mọc bảng THT_ ngoài năm cái đã khai. */
+  {
+    const fsT = require('fs'), pT = require('path');
+    const gocT = pT.join(__dirname, '..');
+    const maTht = fsT.readFileSync(pT.join(gocT, 'may-chu', 'tu-hoan-thien.js'), 'utf8');
+    const wkT = fsT.readFileSync(pT.join(gocT, 'may-chu', 'worker.js'), 'utf8');
+    const sqlT = fsT.readFileSync(pT.join(gocT, 'may-chu', 'csdl.sql'), 'utf8');
+    /* Bỏ CHÚ GIẢI, GIỮ chuỗi — câu lệnh SQL nằm trong chuỗi (luật 9.99.85). */
+    const maSach = maTht.replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|[^:])\/\/.*$/gm, '$1');
+
+    /* A · gate trước UPDATE trong thân nhapKho */
+    const thanNhap = (maSach.match(/export async function nhapKho[\s\S]*?\n}\n/) || [''])[0];
+    const viUpdate = thanNhap.search(/UPDATE banNhapKho SET trangThai/);
+    const viThieu = thanNhap.search(/if \(thieu\.length\)/);
+    const viNguoi = thanNhap.search(/Object\.keys\(nguoiKy\)\.length < 3/);
+    const gateTruoc = viUpdate > 0 && viThieu > 0 && viNguoi > 0 &&
+      viThieu < viUpdate && viNguoi < viUpdate;
+
+    /* B1 · banNhapKho không có cột đãDuyệt (bỏ chú giải SQL trước khi soi) */
+    const khoiBN = (sqlT.match(/CREATE TABLE IF NOT EXISTS banNhapKho[\s\S]*?\);/) || [''])[0]
+      .replace(/--.*$/gm, '');
+    const coCotDuyet = /(daDuyet|đãDuyệt|approved|duyetXong)/i.test(khoiBN);
+    /* B2 · soanBanNhap chỉ INSERT vào banNhapKho */
+    const thanSoan = (maSach.match(/export async function soanBanNhap[\s\S]*?\n}\n/) || [''])[0];
+    const insSoan = [...thanSoan.matchAll(/INSERT INTO (\w+)/g)].map(m => m[1]);
+    const soanInsLa = insSoan.filter(t => t !== 'banNhapKho');
+
+    /* C · hành vi qua cửa, early-return không cần db */
+    let hv = '', hvDat = false;
+    try {
+      const mod = await import('file://' + pT.join(gocT, 'may-chu', 'tu-hoan-thien.js'));
+      const rKhach = await mod.nhapKho({ napId: 'x' }, {}, null, { u: 'k', role: 'R13' });
+      const rSoan = await mod.soanBanNhap({}, {}, null, { u: 'a', role: 'R05' });
+      const rCap = await mod.duyetCap({ napId: 'x', cap: 'saiCap' }, {}, null, { u: 'b', role: 'R04' });
+      const rLoai = await mod.ghiPhatSinh({ loai: 'saiLoai', chiTiet: 'mười ký tự trở lên' },
+        {}, null, { u: 'c', role: 'R05' });
+      hv = 'nhập→' + (rKhach || {}).code + ' soạn→' + (rSoan || {}).code +
+        ' duyệt→' + (rCap || {}).code + ' ghi→' + (rLoai || {}).code;
+      hvDat = (rKhach || {}).code === 'NOPERM' && (rSoan || {}).code === 'THIEUPS' &&
+        (rCap || {}).code === 'CAPLA' && (rLoai || {}).code === 'LOAILA';
+    } catch (e) { hv = 'gọi hỏng: ' + (e && e.message); }
+
+    /* B3 · vai ba cấp ở máy chủ đọc từ CAP */
+    const capMay = [...maTht.matchAll(/ma:\s*'(sanPham|giamDoc|superAdmin)',\s*ten:[^,]*,\s*vai:\s*'(R\d\d)'/g)]
+      .map(m => m[1] + '=' + m[2]).sort().join(',');
+
+    /* F · worker wired */
+    const cuaTht = ['ghiPhatSinh', 'soanBanNhap', 'duyetCap', 'nhapKho', 'traBoSung', 'soatTuHoanThien'];
+    const cuaThieu = cuaTht.filter(c =>
+      !(new RegExp("fn === '" + c + "'").test(wkT)) || !(new RegExp("'" + c + "'").test(wkT)));
+
+    const t = await p.evaluate(() => {
+      const G = window.G, cap = G.THT_CAP || [], loai = G.THT_PHATSINH_LOAI || [],
+        lu = G.THT_LUAT || {}, kh = G.THT_KHONG_LAM || [], sc = G.THT_CHOCHU || [];
+      const co = s => !!String(s || '').trim();
+      return {
+        capKho: cap.map(c => c.ma + '=' + c.vai).sort().join(','),
+        capThieu: cap.filter(c => !co(c.ma) || !co(c.vai) || !co(c.ten) || !co(c.lam)).map(c => c.ma),
+        loaiKho: loai.map(l => l.ma).sort().join(','),
+        loaiThieu: loai.filter(l => !co(l.ma) || !co(l.ten) || !co(l.vi)).map(l => l.ma),
+        luatDu: ['maySoanKhongNhap', 'duTinhLucDoc', 'baNguoiKhacNhau', 'khoRongNoiThat',
+          'nhapKhongPhucVu', 'chuaCapThiCho', 'ghiNgay'].filter(k => !co(lu[k])),
+        soKhong: kh.length,
+        khongThieu: kh.filter(x => !co(x.doi) || !co(x.vi)).map(x => x.ma),
+        soCho: sc.length,
+        choThieu: sc.filter(x => !co(x.viMayKhongTuChon) || !co(x.do)).map(x => x.ma),
+        mocBang: Object.keys(G).filter(k => /^THT_/.test(k) &&
+          !['THT_CAP', 'THT_PHATSINH_LOAI', 'THT_LUAT', 'THT_KHONG_LAM', 'THT_CHOCHU'].includes(k))
+      };
+    });
+
+    const capKhop = t.capKho === capMay && capMay.length > 0;
+    const loaiKhop = t.loaiKho === 'duLieuGia,hoiNgoaiKichBan,khoRong,phanHoiXau';
+
+    const tDat = gateTruoc && !coCotDuyet && !soanInsLa.length && hvDat &&
+      capKhop && !t.capThieu.length && loaiKhop && !t.loaiThieu.length &&
+      !t.luatDu.length && t.soKhong >= 4 && !t.khongThieu.length &&
+      t.soCho >= 2 && !t.choThieu.length && !t.mocBang.length && !cuaThieu.length;
+
+    bao(tDat,
+      'TỰ HOÀN THIỆN: MÁY SOẠN VÀO STAGING, NGƯỜI DUYỆT BA CẤP, GATE ĐỦ-CHỮ-KÝ ĐỨNG TRƯỚC 入库. Kho rỗng lúc tư vấn thì Bộ não soạn TỪ DỮ LIỆU ĐÃ CÓ (không bịa) vào bản nháp; đưa vào kho phục vụ khách phải qua Bộ phận sản phẩm → Giám đốc → Super Admin, ba người khác nhau. Đủ ba chữ ký hay chưa TÍNH LÚC ĐỌC từ sổ duyetNhap, không cột "đãDuyệt". Sự chậm là có thật và nói thẳng với khách — không giấu, không vượt cấp, không dựng vội một câu chưa duyệt',
+      !gateTruoc ? 'GATE 入库 KHÔNG ĐỨNG TRƯỚC UPDATE: thiếu=' + viThieu + ' người=' + viNguoi +
+          ' update=' + viUpdate + ' — 入库 khi chưa đủ duyệt là để nội dung chưa ai chốt ra phục vụ khách'
+        : coCotDuyet ? 'banNhapKho CÓ CỘT "đãDuyệt" — đủ hay chưa phải tính lúc đọc từ sổ chữ ký, ' +
+            'không một cột tóm tắt (cùng luật cột conHan 9.99.63, cột den 9.99.66)'
+        : soanInsLa.length ? 'soanBanNhap INSERT VÀO KHO KHÁC staging: ' + soanInsLa.join(' · ') +
+            ' — máy SOẠN, không NHẬP; chỉ nhapKho (có răng) mới đưa nội dung ra phục vụ khách'
+        : !hvDat ? 'HÀNH VI CỬA SAI: ' + hv + ' (mong nhập→NOPERM soạn→THIEUPS duyệt→CAPLA ghi→LOAILA)'
+        : !capKhop ? 'THT_CAP LỆCH bản chép máy chủ — kho: ' + t.capKho + ' · máy chủ: ' + capMay
+        : t.capThieu.length ? 'THT_CAP thiếu ô: ' + t.capThieu.join(' · ')
+        : !loaiKhop ? 'THT_PHATSINH_LOAI lệch: ' + t.loaiKho
+        : t.loaiThieu.length ? 'THT_PHATSINH_LOAI thiếu ô: ' + t.loaiThieu.join(' · ')
+        : t.luatDu.length ? 'THT_LUAT THIẾU Ô: ' + t.luatDu.join(' · ')
+        : t.soKhong < 4 ? 'THT_KHONG_LAM có ' + t.soKhong + ' mục'
+        : t.khongThieu.length ? 'CHỖ KHÔNG LÀM thiếu vì sao: ' + t.khongThieu.join(' · ')
+        : t.soCho < 2 ? 'THT_CHOCHU có ' + t.soCho + ' mục'
+        : t.choThieu.length ? 'MỤC CHỜ thiếu vì-sao/cách-đo: ' + t.choThieu.join(' · ')
+        : t.mocBang.length ? 'THT_ MỌC BẢNG RIÊNG: ' + t.mocBang.join(' · ')
+        : cuaThieu.length ? 'WORKER CHƯA NỐI CỬA: ' + cuaThieu.join(' · ')
+        : 'gate trước 入库 · không cột đãDuyệt · soạn chỉ vào staging · ba cấp ba vai · hành vi cửa đúng');
+  }
+
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));
   await b.close();

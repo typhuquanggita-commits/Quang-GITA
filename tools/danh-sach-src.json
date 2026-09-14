@@ -143,6 +143,7 @@
     "src/giam-sat.js",
     "src/supreme.js",
     "src/tu-nang-cap.js",
+    "src/tu-hoan-thien.js",
     "src/cho-chu-he.js",
     "src/bien-soan-noi-dung.js",
     "src/cua-truoc.js",

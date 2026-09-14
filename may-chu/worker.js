@@ -80,6 +80,8 @@ import { docHomNay, tickNhip, boViecHomNay, batCheDoBao, ghiGhimCon, docGhimCon,
   datDongYAnhCon, chiaSeCoAnhCon } from './hom-nay.js';
 import { deXuatNangCap, soiLuatNangCap, kyNangCap, mocChayThu, batNangCap,
   docVongNangCap, docTranNangCap, thuXepCap } from './tu-nang-cap.js';
+import { ghiPhatSinh, soanBanNhap, duyetCap, nhapKho, traBoSung,
+  soatTuHoanThien } from './tu-hoan-thien.js';
 import { soatNoiDung, mauBaiHoc, napBai, nopBai, kyBai, soKyBai, baiTreo,
   capQuyenNoiDung, thuHoiQuyenNoiDung, dsQuyenNoiDung,
   docBuoi, xuatChuanNghe, soatMienDich,
@@ -233,6 +235,7 @@ const CAN_PHIEN = ['capKhoa', 'doiMatKhau', 'dongBo',
   'capLenhGiamSat', 'thuLenhGiamSat', 'docLenhGiamSat', 'soatSoDen', 'docTranGiamSat',
   'ghiHoChieuVideo',
   'soatCuuHe',
+  'ghiPhatSinh', 'soanBanNhap', 'duyetCap', 'nhapKho', 'traBoSung', 'soatTuHoanThien',
   'docHomNay', 'tickNhip', 'boViecHomNay', 'batCheDoBao',
   'ghiGhimCon', 'docGhimCon', 'datDongYAnhCon', 'chiaSeCoAnhCon',
   'deXuatNangCap', 'soiLuatNangCap', 'kyNangCap', 'mocChayThu', 'batNangCap',
@@ -461,6 +464,12 @@ async function lam(fn, y, env, db) {
   if (fn === 'docVongNangCap')    return await docVongNangCap(y, env, db, hoSo);
   if (fn === 'docTranNangCap')    return await docTranNangCap(y, env, db, hoSo);
   if (fn === 'thuXepCap')         return await thuXepCap(y, env, db, hoSo);
+  if (fn === 'ghiPhatSinh')       return await ghiPhatSinh(y, env, db, hoSo);
+  if (fn === 'soanBanNhap')       return await soanBanNhap(y, env, db, hoSo);
+  if (fn === 'duyetCap')          return await duyetCap(y, env, db, hoSo);
+  if (fn === 'nhapKho')           return await nhapKho(y, env, db, hoSo);
+  if (fn === 'traBoSung')         return await traBoSung(y, env, db, hoSo);
+  if (fn === 'soatTuHoanThien')   return await soatTuHoanThien(y, env, db, hoSo);
   if (fn === 'soDiRa')            return await soDiRa(y, env, db, hoSo);
   if (fn === 'soatNoiDung')       return await soatNoiDung(y, env, db, hoSo);
   if (fn === 'mauBaiHoc')         return await mauBaiHoc(y, env, db, hoSo);

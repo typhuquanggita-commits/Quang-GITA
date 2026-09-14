@@ -4201,6 +4201,81 @@ bộ kiểm — không phải khi đọc mã.
 
 ---
 
+## VÒNG TỰ HOÀN THIỆN — LẤP KHO CÓ CẤP PHÉP (9.99.96)
+
+Theo tình huống 5 của chủ hệ: một khách coach khó tính dò hệ, nhập dữ
+liệu giả, hỏi ngoài kịch bản, đòi vượt cấp không trả phí — và giữa lúc
+tư vấn, **một số kho rỗng**. Bộ não phát hiện, soạn chuỗi giải pháp từ
+dữ liệu đã có, nhưng 入库 (đưa vào kho phục vụ khách) phải qua Bộ phận
+sản phẩm → Giám đốc → Super Admin.
+
+Màn **Vòng tự hoàn thiện** (`src/tu-hoan-thien.js`, bốn ngăn), máy chủ
+`may-chu/tu-hoan-thien.js`, kho `data.tu-hoan-thien.js` (5 kho `THT_`),
+bảng `phatSinh` · `banNhapKho` · `duyetNhap`, bộ kiểm **mục 105**, mười
+ba phép đo ở `thu-worker.js`.
+
+### Máy SOẠN, người DUYỆT — hai cửa tách hẳn
+
+Lần thứ tư thứ tự "dựng cổng trước cửa" được chọn (sau Hiến pháp 9.99.62,
+trần giám sát 9.99.76, vòng tự nâng cấp 9.99.77): một hệ tự hoàn thiện
+mà tự đưa nội dung ra phục vụ khách không cần ai duyệt là một hệ tự mở
+rộng phạm vi của chính nó.
+
+- `soanBanNhap` ghi vào **staging** (`banNhapKho` trạng thái `nhap`),
+  KHÔNG một câu INSERT nào vào kho phục vụ khách — mục 105 đọc thân hàm.
+- `nhapKho` là **cái răng**: cổng đủ-ba-chữ-ký đứng **TRƯỚC** câu
+  `UPDATE ... trangThai='daNhap'`. Đủ hay chưa **tính lúc đọc** từ sổ
+  `duyetNhap`, không cột "đãDuyệt" (cùng luật cột `conHan` 9.99.63, cột
+  `den` 9.99.66, cột đã-qua-mấy-cửa 9.99.77).
+
+### Ba cấp, ba vai, ba người khác nhau
+
+`sanPham`=R04 · `giamDoc`=R03 · `superAdmin`=R01. Ba vai khác nhau →
+ba người khác nhau một cách tự nhiên; cộng luật người-duyệt-khác-người-
+soạn thì cả chuỗi duyệt không bao giờ là một người (cùng L3 9.99.42,
+vai C khác vai A 9.99.72, người ký khác người đề xuất 9.99.77).
+
+### Bốn chỗ tình huống 5 chạm, và câu trả lời của kho
+
+- **Vượt cấp không phí** → K1: lộ trình là cái được trả phí; chê "chưa
+  đáng trả phí" là một phản hồi để ghi (`phanHoiXau`), không phải lý do
+  mở cổng.
+- **Dữ liệu khách khai giả** → K2: đo HÀNH VI, không biến lời khai
+  thành kết luận.
+- **Tự 入库 cho khách khỏi chờ** → K3: chính là cả tình huống 5. Sự
+  chậm là giá của việc chốt đúng, và được **NÓI RA**, không giấu.
+- **Câu ngoài kịch bản** → K4 và luật `khoRongNoiThat`: không có thì
+  nói không có, `soanBanNhap` bắt buộc DẪN NGUỒN (không bịa).
+
+### Nháp KHÔNG phục vụ khách — ranh giới ở CÂU TRUY VẤN
+
+`traBoSung` chỉ trả `WHERE trangThai='daNhap'`. Lọc trên màn KHÔNG phải
+bảo vệ dữ liệu (luật đã cắn ba lần). Bộ thử worker chứng minh: bản nháp
+chưa duyệt KHÔNG lọt vào `traBoSung`, bản đã 入库 thì có.
+
+### Phép đo về thứ không được tồn tại — lần thứ MƯỜI BỐN
+
+`banNhapKho` không cột "đãDuyệt"; `soanBanNhap` không INSERT vào kho
+phục vụ khách. Phá thử ba nhánh: dời gate xuống sau UPDATE → đỏ "GATE
+入库 KHÔNG ĐỨNG TRƯỚC UPDATE"; thêm cột `daDuyet` → đỏ "CÓ CỘT đãDuyệt";
+đổi vai `giamDoc` trong kho → đỏ "THT_CAP LỆCH bản chép máy chủ".
+
+### Mục 11 đo lại cả bảng đích một lượt (lần thứ hai, sau 9.99.64)
+
+Màn mới (`nghe_chung`) đẩy mẫu số 200→201; chỉ R13 vượt dung sai, nhưng
+sửa mỗi số vừa kêu là để những số kia nằm sát mép rồi cùng vỡ về sau.
+Đã kiểm cách đếm (vai có nghe_chung tử số +1; R13·R14·R15 đứng yên) rồi
+đặt cả bảng về đúng giữa dung sai. Dung sai ±2 giữ nguyên.
+
+### Sổ chờ
+
+- **THT-01** — vai R04 có đúng là "Bộ phận sản phẩm" không, hay cần một
+  trục riêng (giống trục quyền tài chính vuông góc với thang vai).
+- **THT-02** — trợ lý tư vấn gọi `traBoSung` khi gặp kho rỗng khi nào
+  (nối nội dung vừa duyệt phục vụ ngay, không chờ lượt phát hành sau).
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

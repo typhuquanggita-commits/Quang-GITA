@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.95',
+  version: '9.99.96',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -333,7 +333,16 @@ G.TAM_NHIN = [
    Phép thử vẫn không đổi qua tám lần: phần KHOÁ của khách hàng có mở
    thêm màn nghề nào không. Không — cả ba màn mới đều khoá ở nghe_chung,
    và R13 · R14 · R15 không thấy màn nào trong ba. */
-  {vai:['R03','R04'], pt:83,
+  /* ═══ 9.99.96 · ĐO LẠI CẢ BẢNG MỘT LƯỢT (lần thứ hai, sau 9.99.64) ═══
+     Màn "Vòng tự hoàn thiện" (nghe_chung) đẩy mẫu số 200→201. Chỉ R13
+     vượt dung sai (35→32,8), nhưng chú giải bảng này đã dặn: sửa mỗi số
+     vừa kêu là để những số kia nằm sát mép rồi cùng vỡ một lượt về sau.
+     Nên đo lại cả bảng và đặt mỗi số về ĐÚNG GIỮA dung sai:
+       R03/R04 83,6 · R05/R06 78,6 · R07/R08 78,1 · R09–R11 70,1 ·
+       R12 61,7 · R13 32,8 · R14 29,4 · R15 26,9.
+     Đã kiểm cách đếm: vai CÓ nghe_chung tử số tăng đúng 1; R13·R14·R15
+     không có nên tử số đứng yên. Cách đếm còn đúng; dung sai ±2 giữ nguyên. */
+  {vai:['R03','R04'], pt:84,
    ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
   /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
      chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
@@ -363,7 +372,7 @@ G.TAM_NHIN = [
      phải hàng rào bị nới. */
   {vai:['R05','R06'], pt:79,
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
-  {vai:['R07','R08'], pt:79,
+  {vai:['R07','R08'], pt:78,
    ghi:'Như R05–R06, và không mở màn của dòng gia nghiệp T5-PRO.'},
   /* 73 chứ không còn 75. Hai màn mới ở 9.65 — Hành lang thành công và
      Rà soát lỗi hệ thống — khoá ở pro_coach, tức dừng đúng R08. Tử số
@@ -409,7 +418,7 @@ G.TAM_NHIN = [
      LUẬT. Người phân tích dữ liệu đọc được bản đồ ấy thì đọc luôn
      danh sách chỗ tấn công — nên khoá ở pro_coach là cố ý, không
      phải sót. */
-  {vai:['R12'], pt:61,
+  {vai:['R12'], pt:62,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -431,9 +440,9 @@ G.TAM_NHIN = [
      năm câu hệ chưa trả lời được, con đường năm tầng — đều mở cho mọi
      vai. Sửa SỐ CÔNG BỐ, không nới dung sai: phần khoá của phụ huynh
      không mở thêm một màn nghề nào. */
-  {vai:['R13'], pt:35, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
+  {vai:['R13'], pt:33, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
   /* 35 chứ không còn 33 — cùng lý do với R03–R04 và R13. */
-  {vai:['R14'], pt:31, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
+  {vai:['R14'], pt:29, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
   /* 31 chứ không còn 29. Hai màn mới ở 9.19 và 9.20 — sổ tay của gia
      đình, và năm câu hệ chưa trả lời được — đều mở cho MỌI vai, nên
      R15 thấy thêm hai màn trong khi mẫu số cũng tăng hai. Tử số tăng
@@ -464,7 +473,7 @@ G.TAM_NHIN = [
      phải "tỉ lệ có tụt không" mà là "phần KHOÁ có mở thêm màn nào
      không". Không mở, nên sửa SỐ CÔNG BỐ — và KHÔNG nới dung sai. Nới
      dung sai để bộ kiểm xanh là tắt đúng cái đèn vừa báo đúng. */
-  {vai:['R15'], pt:28, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
+  {vai:['R15'], pt:27, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -933,6 +942,7 @@ G.NAV = [
     {v:'supreme', t:'GITA Supreme · bản đồ', h:'Bản đồ ba quyển nghiên cứu của chủ hệ và CÁI TRẦN của chúng — ngăn đầu là BẪY TÊN GỌI: ba thang cùng mang chữ điểm chạm (1.000 tiến độ · 9 cảm xúc · 100.000 hệ thống), và một luật bị phạm thì có người cãi còn hai thang cùng tên thì không ai cãi · bốn chỗ va MỚI, không chép lại sáu điều cấm đã có · hai chỗ phép dò của chính tôi BẮT OAN vì tài liệu đang phê phán chính thứ bị dò · ma trận 28 năng lực · mười lớp điểm chạm · 45/100 phần đã có chữ', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'studio', t:'GITA Studio · Xưởng dựng video', h:'Kịch bản · canvas 1080p · giọng người thật · đèn kiểm định · hộ chiếu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
+    {v:'tu-hoan-thien', t:'Vòng tự hoàn thiện · lấp kho có cấp phép', h:'Kho rỗng lúc tư vấn thì Bộ não SOẠN từ dữ liệu đã có, KHÔNG bịa — nhưng 入库 (đưa vào kho phục vụ khách) phải qua Bộ phận sản phẩm → Giám đốc → Super Admin · máy soạn không nhập, hai cửa tách hẳn · đủ ba chữ ký hay chưa TÍNH LÚC ĐỌC từ sổ, không cột đãDuyệt · ba cấp ba người khác nhau · sự chậm là có thật và được nói thẳng với khách', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus', star:1, perm:'qt_trang', capMo:'quantri'},

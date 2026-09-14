@@ -2510,12 +2510,12 @@ main{container-type:inline-size}
 <script>
 /* ── gita-app.js ── */
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — BẢN GỘP CỦA 118 TỆP MÃ NGUỒN
+   GITA 365 — BẢN GỘP CỦA 119 TỆP MÃ NGUỒN
 
    TỆP NÀY DỰNG RA, KHÔNG PHẢI MÃ NGUỒN. Đừng sửa ở đây — sửa trong
    src/ rồi chạy: node tools/gop-src.js
 
-   Gộp để cắt số lượt hỏi mạng từ 149 xuống 1. Trên 3G yếu, mỗi
+   Gộp để cắt số lượt hỏi mạng từ 150 xuống 1. Trên 3G yếu, mỗi
    lượt hỏi là một lần chờ độ trễ.
 
    31 tệp dựng màn của NGHỀ đã ra gita-nghe.js — chỉ tải khi
@@ -2556,7 +2556,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.95',
+  version: '9.99.96',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -2871,7 +2871,16 @@ G.TAM_NHIN = [
    Phép thử vẫn không đổi qua tám lần: phần KHOÁ của khách hàng có mở
    thêm màn nghề nào không. Không — cả ba màn mới đều khoá ở nghe_chung,
    và R13 · R14 · R15 không thấy màn nào trong ba. */
-  {vai:['R03','R04'], pt:83,
+  /* ═══ 9.99.96 · ĐO LẠI CẢ BẢNG MỘT LƯỢT (lần thứ hai, sau 9.99.64) ═══
+     Màn "Vòng tự hoàn thiện" (nghe_chung) đẩy mẫu số 200→201. Chỉ R13
+     vượt dung sai (35→32,8), nhưng chú giải bảng này đã dặn: sửa mỗi số
+     vừa kêu là để những số kia nằm sát mép rồi cùng vỡ một lượt về sau.
+     Nên đo lại cả bảng và đặt mỗi số về ĐÚNG GIỮA dung sai:
+       R03/R04 83,6 · R05/R06 78,6 · R07/R08 78,1 · R09–R11 70,1 ·
+       R12 61,7 · R13 32,8 · R14 29,4 · R15 26,9.
+     Đã kiểm cách đếm: vai CÓ nghe_chung tử số tăng đúng 1; R13·R14·R15
+     không có nên tử số đứng yên. Cách đếm còn đúng; dung sai ±2 giữ nguyên. */
+  {vai:['R03','R04'], pt:84,
    ghi:'Khoá đúng phần quản trị của R01–R02: quản trị tài khoản, phân quyền, bảo mật, nhật ký, kiểm duyệt.'},
   /* Tách làm hai dòng: bảy vị trí này trước nay gộp một con số, nhưng
      chúng KHÔNG thấy như nhau — R09–R11 kém hơn ba màn. Gộp lại thì phải
@@ -2901,7 +2910,7 @@ G.TAM_NHIN = [
      phải hàng rào bị nới. */
   {vai:['R05','R06'], pt:79,
    ghi:'Khoá phần quản trị hệ thống, thêm tài chính và điều hành toàn hệ.'},
-  {vai:['R07','R08'], pt:79,
+  {vai:['R07','R08'], pt:78,
    ghi:'Như R05–R06, và không mở màn của dòng gia nghiệp T5-PRO.'},
   /* 73 chứ không còn 75. Hai màn mới ở 9.65 — Hành lang thành công và
      Rà soát lỗi hệ thống — khoá ở pro_coach, tức dừng đúng R08. Tử số
@@ -2947,7 +2956,7 @@ G.TAM_NHIN = [
      LUẬT. Người phân tích dữ liệu đọc được bản đồ ấy thì đọc luôn
      danh sách chỗ tấn công — nên khoá ở pro_coach là cố ý, không
      phải sót. */
-  {vai:['R12'], pt:61,
+  {vai:['R12'], pt:62,
    ghi:'Toàn bộ kho nghề và màn số liệu tổng hợp · không mở hồ sơ từng nhà và buồng lái thao tác'},
   /* ═══ Ba tỉ lệ dưới: nói cho rõ kẻo lẫn với trần 30% ═══
      Đây là tỉ lệ SỐ MÀN HÌNH mở được, không phải tỉ lệ NỘI DUNG. Hai thứ
@@ -2969,9 +2978,9 @@ G.TAM_NHIN = [
      năm câu hệ chưa trả lời được, con đường năm tầng — đều mở cho mọi
      vai. Sửa SỐ CÔNG BỐ, không nới dung sai: phần khoá của phụ huynh
      không mở thêm một màn nghề nào. */
-  {vai:['R13'], pt:35, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
+  {vai:['R13'], pt:33, ghi:'Nhà mình, hành trình của con, gửi tài liệu và minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, giới thiệu Học viện, đọc hoặc nghe'},
   /* 35 chứ không còn 33 — cùng lý do với R03–R04 và R13. */
-  {vai:['R14'], pt:31, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
+  {vai:['R14'], pt:29, ghi:'Chặng đường của em, nhiệm vụ, minh chứng, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, và màn xem em đã đổi gì so với tuần trước'},
   /* 31 chứ không còn 29. Hai màn mới ở 9.19 và 9.20 — sổ tay của gia
      đình, và năm câu hệ chưa trả lời được — đều mở cho MỌI vai, nên
      R15 thấy thêm hai màn trong khi mẫu số cũng tăng hai. Tử số tăng
@@ -3002,7 +3011,7 @@ G.TAM_NHIN = [
      phải "tỉ lệ có tụt không" mà là "phần KHOÁ có mở thêm màn nào
      không". Không mở, nên sửa SỐ CÔNG BỐ — và KHÔNG nới dung sai. Nới
      dung sai để bộ kiểm xanh là tắt đúng cái đèn vừa báo đúng. */
-  {vai:['R15'], pt:28, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
+  {vai:['R15'], pt:27, ghi:'Phần giới thiệu, hoa hồng, gửi tài liệu, vòng nhắc, bản đồ cá nhân, sổ nhật ký, chuyện và thi viết, bàn cờ hành trình, bảng tin cộng đồng, và màn xem mình đã đổi gì so với tuần trước'}
 ];
 
 /* Sáu chân dung người dùng — lời mời bước vào, hiển thị ở Cổng vào */
@@ -3471,6 +3480,7 @@ G.NAV = [
     {v:'supreme', t:'GITA Supreme · bản đồ', h:'Bản đồ ba quyển nghiên cứu của chủ hệ và CÁI TRẦN của chúng — ngăn đầu là BẪY TÊN GỌI: ba thang cùng mang chữ điểm chạm (1.000 tiến độ · 9 cảm xúc · 100.000 hệ thống), và một luật bị phạm thì có người cãi còn hai thang cùng tên thì không ai cãi · bốn chỗ va MỚI, không chép lại sáu điều cấm đã có · hai chỗ phép dò của chính tôi BẮT OAN vì tài liệu đang phê phán chính thứ bị dò · ma trận 28 năng lực · mười lớp điểm chạm · 45/100 phần đã có chữ', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'studio', t:'GITA Studio · Xưởng dựng video', h:'Kịch bản · canvas 1080p · giọng người thật · đèn kiểm định · hộ chiếu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
+    {v:'tu-hoan-thien', t:'Vòng tự hoàn thiện · lấp kho có cấp phép', h:'Kho rỗng lúc tư vấn thì Bộ não SOẠN từ dữ liệu đã có, KHÔNG bịa — nhưng 入库 (đưa vào kho phục vụ khách) phải qua Bộ phận sản phẩm → Giám đốc → Super Admin · máy soạn không nhập, hai cửa tách hẳn · đủ ba chữ ký hay chưa TÍNH LÚC ĐỌC từ sổ, không cột đãDuyệt · ba cấp ba người khác nhau · sự chậm là có thật và được nói thẳng với khách', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus', star:1, perm:'qt_trang', capMo:'quantri'},
@@ -3939,6 +3949,7 @@ G.ITEM_EN = {
   'giam-sat':['Monitoring Ceiling','GITA-VIP builds the CEILING first and no monitor yet — a gate built after a door is already running is only a reminder · six ABSOLUTE PROHIBITIONS no order can lift, not even a signed R01 order · three scopes that differ by LEGAL BASIS, not by degree · every authorisation must carry an expiry and revokes itself · hash-chained ledger where editing one row breaks every row after it'],
   'bien-soan-noi-dung':['Content Editor','24-block template · machine measures · five approval gates · content constitution'],
   'studio':['GITA Studio — Video Workshop','Script from the sentence bank · 1080p canvas · real human voice · inspection lights · video passport'],
+  'tu-hoan-thien':['Self-Completion Loop — Gated Vault Fill','When a vault is empty mid-advising the Brain DRAFTS from existing data, never fabricates — but promoting to the live vault needs Product → CEO → Super Admin · machine drafts, does not promote · whether three signatures are in is COMPUTED AT READ from the ledger, no "approved" column · three levels, three different people · the delay is real and stated plainly to the customer'],
   'kien-truc-thi-giac':['Visual Architect','Read a screen · document · proposal · library · visual constitution · brand decisions'],
   'phong-tai-chinh':['Finance & Accounting Office','Notice board · assistant · my queue · daily book · bank reconciliation · weekly close · KPI · payroll · charter'],
   'phan-quyen':['Assignments & permissions','15 positions × 31 permissions · click a cell to change it'],
@@ -6285,6 +6296,7 @@ G.THUOC_CAP_PHEP = [
   /* v9.99.73 — bảng giá sửa được */
   'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
   'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_TUOI','SUP_WOW','SUP_WOW_LUAT','SUP_BACHIEU','SUP_BACHIEU_LUAT','SUP_FAN','SUP_FAN_LUAT','TAILIEU_SPEC','TAILIEU_SPEC_LUAT','HC_TANG','HC_MA_TRUNG','HC_LUAT','HC_CHOCHU','CUU_YEUTO','CUU_LUAT','CUU_BUOC','CUU_KHONG_LAM','CUU_CHOCHU','XU_DEM','XU_LOI','XU_HOP','XU_NGANKHO','XU_KHUON','XU_KHO_HINH','XU_DEN','XU_LUAT','XU_CHOCHU','LT_THANG','LT_THANG_LUAT','LT_GIAIDOAN','LT_GATE','LT_RM','LT_MOC','LT_NO','LT_NO_LUAT','LT_AM','LT_PL','LT_VA','LT_HOP','LT_MOI','LT_LUAT','LT_CHOCHU','ST_DEM','ST_VA','ST_OAN','ST_OAN_LUAT','ST_PHAN','ST_LUAT','ST_CHOCHU','HP9_BATKHASUA','HP9_LUAT','HP9_CHOCHU','HP9_DACHOT','SUP_CHO','SUP_CHOCHU','SUP_DACHOT',
+  'THT_CAP','THT_PHATSINH_LOAI','THT_LUAT','THT_KHONG_LAM','THT_CHOCHU',
   'VIP_CAM','VIP_CAM_LUAT','VIP_NGAN','VIP_LENH','VIP_SA_KHONG','VIP_60',
   'VIP_SUA_CHU','VIP_CHOCHU',
   /* v9.99.77 — vòng tự nâng cấp */
@@ -47093,6 +47105,184 @@ G.VIEWS = G.VIEWS || {};
        : G.tncNgan === 'cua' ? veCua()
        : G.tncNgan === 'nhay' ? veNhay()
        : veVung();
+    return o;
+  };
+})();
+
+})();
+
+/* ═════════ src/tu-hoan-thien.js ═════════ */
+(function(){
+/* ═══════════════════════════════════════════════════════════════
+   GITA 365 — MÀN VÒNG TỰ HOÀN THIỆN  (9.99.96)
+
+   Theo tình huống 5: kho rỗng lúc tư vấn → Bộ não soạn từ dữ liệu đã
+   có → cấp phép ba cấp → 入库. Màn này của người NHÀ (R01–R12) để soi
+   sổ phát sinh, bản nháp chờ duyệt, và tự đo cái răng.
+
+   Răng nằm ở MÁY CHỦ (may-chu/tu-hoan-thien.js), không ở màn. Màn chỉ
+   hiện trạng thái; mọi cổng chặn ở cửa máy chủ — một bản nháp chưa đủ
+   ba chữ ký thì nhapKho từ chối, dù màn có nút gì.
+   ═══════════════════════════════════════════════════════════════ */
+'use strict';
+var G = window.G || {}; window.G = G;
+G.VIEWS = G.VIEWS || {};
+
+(function () {
+  var U = G.U, h = U.h, ic = U.ic;
+
+  var NGAN = [
+    {ma: 'phatsinh', ten: 'Sổ phát sinh', ic: 'list'},
+    {ma: 'nhap',     ten: 'Bản nháp chờ duyệt', ic: 'edit'},
+    {ma: 'luat',     ten: 'Bảy luật', ic: 'shield'},
+    {ma: 'khong',    ten: 'Chỗ không làm', ic: 'lock'}
+  ];
+
+  G.thtNgan = G.thtNgan || 'phatsinh';
+  G.thtSo = G.thtSo || null;
+
+  function veLai() {
+    if (!G.S || G.S.view !== 'tu-hoan-thien') return;
+    if (typeof document === 'undefined' || !document.getElementById('main')) return;
+    G.render && G.render();
+  }
+  G.thtMoNgan = function (ma) { G.thtNgan = ma; veLai(); };
+
+  G.thtTaiSo = function () {
+    if (!G.goiMayChu) return;
+    G.goiMayChu('soatTuHoanThien', {}).then(function (x) {
+      G.thtSo = x; veLai();
+    }).catch(function (e) {
+      G.thtSo = {ok: false, error: e && e.message}; veLai();
+    });
+  };
+
+  function tenLoai(ma) {
+    var d = (G.THT_PHATSINH_LOAI || []).filter(function (x) { return x.ma === ma; })[0];
+    return d ? d.ten : ma;
+  }
+  function tenCap(ma) {
+    var d = (G.THT_CAP || []).filter(function (x) { return x.ma === ma; })[0];
+    return d ? d.ten : ma;
+  }
+
+  /* ── NGĂN 1 · SỔ PHÁT SINH ── */
+  function vePhatSinh() {
+    var o = U.sec('Sổ phát sinh — ghi NGAY',
+      'Mỗi lỗ gặp lúc tư vấn (kho rỗng · phản hồi xấu · câu hỏi ngoài kịch bản · dữ liệu ' +
+      'khách khai giả) vào sổ ngay. Cái đáng ngờ nhất là những phát sinh bị bỏ đi không ghi.');
+    o += U.tbl(['Mã', 'Loại', 'Vì sao ghi'],
+      (G.THT_PHATSINH_LOAI || []).map(function (l) {
+        return [h(l.ma), h(l.ten), h(l.vi)];
+      }));
+    var so = G.thtSo;
+    if (so && so.ok && so.phatSinh) {
+      if (so.phatSinh.length) {
+        o += U.sec('Đã ghi trong sổ', '');
+        o += U.tbl(['Loại', 'Số lượt'],
+          so.phatSinh.map(function (r) { return [h(tenLoai(r.loai)), String(r.n)]; }));
+      } else {
+        o += '<p class="note">Sổ phát sinh chưa có dòng nào.</p>';
+      }
+    } else {
+      o += '<p class="note"><button class="btn" onclick="G.thtTaiSo()">Tải sổ từ máy chủ</button></p>';
+    }
+    return o;
+  }
+
+  /* ── NGĂN 2 · BẢN NHÁP CHỜ DUYỆT ── */
+  function veNhap() {
+    var o = U.sec('Bản nháp chờ đủ ba chữ ký',
+      'Máy SOẠN từ dữ liệu đã có, ghi vào staging. Đủ ba cấp hay chưa tính LÚC ĐỌC từ sổ ' +
+      'chữ ký — không cột "đãDuyệt". Chỉ khi đủ ba chữ ký của ba người khác nhau thì Super ' +
+      'Admin mới 入库.');
+    o += U.tbl(['Thứ', 'Cấp', 'Vai ký', 'Việc'],
+      (G.THT_CAP || []).map(function (c) {
+        return [String(c.thu), h(c.ten), '<code>' + h(c.vai) + '</code>', h(c.lam)];
+      }));
+    var so = G.thtSo;
+    if (so && so.ok && so.nhap) {
+      if (so.nhap.length) {
+        o += U.tbl(['Kho', 'Tiêu đề', 'Người soạn', 'Đã ký', 'Còn thiếu', 'Trạng thái'],
+          so.nhap.map(function (n) {
+            var da = (n.daKy || []).map(tenCap).join(', ') || '—';
+            var thieu = (n.thieu || []).map(tenCap).join(', ') || '—';
+            var tt = n.trangThai === 'daNhap'
+              ? '<b>đã 入库</b>' : (n.du ? 'đủ — chờ Super Admin 入库' : 'chờ duyệt');
+            return [h(n.tenKho), h(n.tieuDe), h(n.aiSoan), h(da), h(thieu), tt];
+          }));
+      } else {
+        o += '<p class="note">Chưa có bản nháp nào.</p>';
+      }
+      if (so.khongGopSo) o += '<p class="note">' + h(so.khongGopSo) + '</p>';
+    } else {
+      o += '<p class="note"><button class="btn" onclick="G.thtTaiSo()">Tải sổ từ máy chủ</button></p>';
+    }
+    return o;
+  }
+
+  /* ── NGĂN 3 · BẢY LUẬT ── */
+  function veLuat() {
+    var lu = G.THT_LUAT || {};
+    var hang = [
+      ['Máy soạn, không nhập', lu.maySoanKhongNhap],
+      ['Đủ tính lúc đọc', lu.duTinhLucDoc],
+      ['Ba người khác nhau', lu.baNguoiKhacNhau],
+      ['Kho rỗng nói thật', lu.khoRongNoiThat],
+      ['Nháp không phục vụ', lu.nhapKhongPhucVu],
+      ['Chưa cấp thì chờ', lu.chuaCapThiCho],
+      ['Ghi ngay', lu.ghiNgay]
+    ].filter(function (r) { return r[1]; });
+    var o = U.sec('Bảy luật của vòng tự hoàn thiện', '');
+    o += U.tbl(['Luật', 'Nội dung'], hang.map(function (r) { return [h(r[0]), h(r[1])]; }));
+    return o;
+  }
+
+  /* ── NGĂN 4 · CHỖ KHÔNG LÀM ── */
+  function veKhong() {
+    var o = U.sec('Chỗ cố ý không làm, và vì sao',
+      'Bốn chỗ đúng là tình huống 5 chạm tới: vượt cấp không phí, dữ liệu giả thành kết luận, ' +
+      'tự 入库 cho khách khỏi chờ, và dựng một câu nghe hợp lý cho câu ngoài kịch bản.');
+    o += U.tbl(['Mã', 'Không làm gì', 'Vì sao'],
+      (G.THT_KHONG_LAM || []).map(function (k) {
+        return [h(k.ma), h(k.doi), h(k.vi)];
+      }));
+    var cho = G.THT_CHOCHU || [];
+    if (cho.length) {
+      o += U.sec('Sổ chờ chủ hệ', '');
+      o += U.tbl(['Mã', 'Việc', 'Hỏi gì'],
+        cho.map(function (c) { return [h(c.ma), h(c.t), h(c.hoi)]; }));
+    }
+    return o;
+  }
+
+  G.VIEWS['tu-hoan-thien'] = function () {
+    var o = '<div class="hd"><h2>' + ic('spark') + ' Vòng tự hoàn thiện · lấp kho có cấp phép</h2>' +
+      '<p class="sub">Kho rỗng lúc tư vấn thì Bộ não SOẠN từ dữ liệu đã có, nhưng đưa vào kho ' +
+      'phục vụ khách (入库) phải qua Bộ phận sản phẩm → Giám đốc → Super Admin. Sự chậm là có ' +
+      'thật, và được nói thẳng với khách — không giấu, không bịa.</p></div>';
+
+    /* Vai không có gói nghề thì kho THT không nạp — một chỗ chặn TRƯỚC
+       mọi ngăn (bài học 9.99.63). */
+    if (!(G.THT_CAP || []).length) {
+      return o + U.empty('Vòng tự hoàn thiện thuộc gói nghề',
+        'Màn này là công cụ vận hành của Học viện: nó điều phối việc Bộ não soạn nội dung lấp ' +
+        'kho rỗng và chuỗi cấp phép ba cấp trước khi nội dung ra phục vụ khách. Gia đình không ' +
+        'điều phối việc ấy, nên với vai này màn không có gì để dựng. Ba cấp cấp phép, bảy luật ' +
+        'và bốn loại phát sinh đều nằm trong gói nghề.');
+    }
+
+    o += '<div class="tabs">' + NGAN.map(function (n) {
+      return '<button class="tab' + (G.thtNgan === n.ma ? ' on' : '') + '" onclick="G.thtMoNgan(\'' +
+        n.ma + '\')">' + ic(n.ic) + ' ' + h(n.ten) + '</button>';
+    }).join('') + '</div>';
+
+    if (G.thtNgan === 'phatsinh') o += vePhatSinh();
+    else if (G.thtNgan === 'nhap') o += veNhap();
+    else if (G.thtNgan === 'luat') o += veLuat();
+    else o += veKhong();
+
+    if (!G.thtSo) setTimeout(function () { G.thtTaiSo(); }, 0);
     return o;
   };
 })();

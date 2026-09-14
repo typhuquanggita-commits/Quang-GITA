@@ -6720,6 +6720,77 @@ bao(pv({role: 'R99', tier: 5}).join(',') === 'nen',
   'vai LẠ chỉ nhận phần nền — danh sách trắng, không phải danh sách cấm',
   'vai chưa tồn tại hôm nay cũng không lọt được');
 
+/* ═══════════════ 19 · VÒNG TỰ HOÀN THIỆN — GATE 入库 ═══════════════
+   Tình huống 5: kho rỗng lúc tư vấn → soạn từ dữ liệu đã có → ba cấp
+   cấp phép → 入库. Chạy TRỌN vòng trên worker thật + D1 thật. */
+console.log('\n19 · VÒNG TỰ HOÀN THIỆN — GATE 入库');
+await themNguoi('U-tht-sa', 'tht-sa@gita365.vn', 'MatKhauRieng2026!', 'R01', {portal: 'admin'});
+await themNguoi('U-tht-gd', 'tht-gd@gita365.vn', 'MatKhauRieng2026!', 'R03', {portal: 'admin'});
+await themNguoi('U-tht-cm', 'tht-cm@gita365.vn', 'MatKhauRieng2026!', 'R04', {portal: 'admin'});
+await themNguoi('U-tht-co', 'tht-co@gita365.vn', 'MatKhauRieng2026!', 'R07', {portal: 'coach'});
+const t01 = (await goi({fn: 'dangNhap', u: 'tht-sa@gita365.vn', mk: 'MatKhauRieng2026!'})).than.token;
+const t03 = (await goi({fn: 'dangNhap', u: 'tht-gd@gita365.vn', mk: 'MatKhauRieng2026!'})).than.token;
+const t04 = (await goi({fn: 'dangNhap', u: 'tht-cm@gita365.vn', mk: 'MatKhauRieng2026!'})).than.token;
+const t07b = (await goi({fn: 'dangNhap', u: 'tht-co@gita365.vn', mk: 'MatKhauRieng2026!'})).than.token;
+
+/* Khách R13 KHÔNG ghi phát sinh được (sổ nội bộ) */
+bao((await goi({fn: 'ghiPhatSinh', token: dn.than.token, loai: 'khoRong',
+    chiTiet: 'kho rỗng khi tư vấn'})).than.code === 'NOPERM',
+  'khách R13 không ghi được sổ phát sinh nội bộ');
+
+/* Coach ghi phát sinh kho rỗng */
+const ps = (await goi({fn: 'ghiPhatSinh', token: t07b, loai: 'khoRong', kho: 'BLV_NGAN',
+  cauHoi: 'coach hỏi mà kho chưa có', chiTiet: 'Kho ví dụ rỗng lúc đang tư vấn khách'})).than;
+bao(ps.ok && ps.id, 'coach ghi được phát sinh kho rỗng', ps.id);
+
+/* Soạn KHÔNG dẫn nguồn → THIEUNGUON (không bịa) */
+bao((await goi({fn: 'soanBanNhap', token: t07b, phatSinhId: ps.id, tenKho: 'BLV_NGAN',
+    tieuDe: 'Bản bổ sung thử', noiDung: 'Một nội dung đủ dài hơn hai mươi ký tự để qua ô'})).than.code
+    === 'THIEUNGUON',
+  'soạn KHÔNG dẫn nguồn thì từ chối — máy soạn từ dữ liệu đã có, không bịa');
+
+/* Soạn có dẫn nguồn → ok, trạng thái nhap */
+const bn = (await goi({fn: 'soanBanNhap', token: t07b, phatSinhId: ps.id, tenKho: 'BLV_NGAN',
+  tieuDe: 'Bản bổ sung thử', noiDung: 'Một nội dung đủ dài hơn hai mươi ký tự để qua ô',
+  nguon: 'BLV_NGAN + HL_SAUNHIP'})).than;
+bao(bn.ok && bn.trangThai === 'nhap', 'soạn có dẫn nguồn → bản nháp staging', bn.id);
+
+/* 入库 KHI CHƯA DUYỆT → CHUADU (cái răng) */
+bao((await goi({fn: 'nhapKho', token: t01, napId: bn.id})).than.code === 'CHUADU',
+  'CÁI RĂNG: 入库 khi chưa đủ ba chữ ký thì TỪ CHỐI — nội dung chưa ai chốt không ra phục vụ khách');
+
+/* Duyệt SAI VAI: R03 ký cấp sanPham (của R04) → SAIVAI */
+bao((await goi({fn: 'duyetCap', token: t03, napId: bn.id, cap: 'sanPham',
+    ghiChu: 'thử sai vai'})).than.code === 'SAIVAI',
+  'duyệt sai vai bị chặn — cấp sanPham phải do R04 ký');
+
+/* Ba cấp, ba người khác nhau */
+bao((await goi({fn: 'duyetCap', token: t04, napId: bn.id, cap: 'sanPham',
+  ghiChu: 'nội dung đạt chuẩn nghề, dẫn nguồn thật'})).than.ok, 'R04 duyệt cấp sản phẩm');
+bao((await goi({fn: 'duyetCap', token: t03, napId: bn.id, cap: 'giamDoc',
+  ghiChu: 'hệ quả vận hành ổn, Học viện giữ được cam kết'})).than.ok, 'R03 duyệt cấp giám đốc');
+/* 入库 khi mới hai chữ ký → vẫn CHUADU */
+bao((await goi({fn: 'nhapKho', token: t01, napId: bn.id})).than.code === 'CHUADU',
+  '入库 khi mới hai trên ba chữ ký vẫn từ chối');
+bao((await goi({fn: 'duyetCap', token: t01, napId: bn.id, cap: 'superAdmin',
+  ghiChu: 'chốt cuối, đưa ra phục vụ khách'})).than.ok, 'R01 duyệt cấp Super Admin');
+
+/* Đủ ba chữ ký ba người → Super Admin 入库 được */
+bao((await goi({fn: 'nhapKho', token: t01, napId: bn.id})).than.ok,
+  'đủ ba chữ ký ba người khác nhau → Super Admin 入库 thành công');
+
+/* Nội dung đã 入库 phục vụ được; bản nháp CHƯA duyệt thì KHÔNG */
+const bs = (await goi({fn: 'traBoSung', token: t07b, tenKho: 'BLV_NGAN'})).than;
+bao(bs.ok && bs.bo.length === 1 && bs.bo[0].tieuDe === 'Bản bổ sung thử',
+  'phần đã 入库 phục vụ được; ranh giới ở câu truy vấn trangThai=daNhap',
+  (bs.bo || []).length + ' bản');
+const bn2 = (await goi({fn: 'soanBanNhap', token: t07b, phatSinhId: ps.id, tenKho: 'BLV_NGAN',
+  tieuDe: 'Bản chưa duyệt', noiDung: 'Nội dung nháp đủ dài hơn hai mươi ký tự để qua ô',
+  nguon: 'BLV_NGAN'})).than;
+const bs2 = (await goi({fn: 'traBoSung', token: t07b, tenKho: 'BLV_NGAN'})).than;
+bao(bs2.bo.length === 1 && !bs2.bo.some(x => x.tieuDe === 'Bản chưa duyệt'),
+  'bản nháp CHƯA duyệt KHÔNG phục vụ khách — lọc ở câu truy vấn, không ở màn', bn2.id);
+
 console.log('');
 /* process.exit() KHÔNG đợi stdout ghi xong khi đầu ra là tệp hay ống —
    dòng cuối cùng biến mất, và người đọc bản ghi thấy một bộ thử dừng
