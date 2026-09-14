@@ -45,7 +45,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.83',
+  version: '9.99.84',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -3771,7 +3771,7 @@ G.THUOC_CAP_PHEP = [
   'BP_NOI','BP_NOI_LUAT','BP_OFFLINE','BP_CHOCHU',
   /* v9.99.73 — bảng giá sửa được */
   'BG_CAT','BG_CAT_LUAT','BG_RANG','BG_SO_LUAT','BG_BAC_MOI','BG_CHOCHU',
-  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_DEM','SUP_CHOCHU',
+  'SUP_THANG','SUP_THANG_LUAT','SUP_VA','SUP_VA_CU','SUP_MAUTHUAN','SUP_OAN','SUP_OAN_LUAT','SUP_CUM','SUP_LOP','SUP_KHOI','SUP_KHONGKHOI','SUP_DEM','SUP_CHOCHU',
   'VIP_CAM','VIP_CAM_LUAT','VIP_NGAN','VIP_LENH','VIP_SA_KHONG','VIP_60',
   'VIP_SUA_CHU','VIP_CHOCHU',
   /* v9.99.77 — vòng tự nâng cấp */
@@ -43342,7 +43342,7 @@ G.VIEWS = G.VIEWS || {};
 /* ═════════ src/supreme.js ═════════ */
 (function(){
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — MÀN GITA SUPREME: BẢN ĐỒ VÀ TRẦN  (9.99.83)
+   GITA 365 — MÀN GITA SUPREME: BẢN ĐỒ VÀ TRẦN  (9.99.84)
 
    Theo tệp `MYVIP.doc` của chủ hệ — ba quyển, 410.000 ký tự:
    Quyển I nghiên cứu 14 nền tảng → ma trận 28 sức mạnh · Quyển II
@@ -43374,6 +43374,11 @@ G.VIEWS = G.VIEWS || {};
   var NGAN = [
     {ma: 'ten',  ten: 'Bẫy tên gọi',      ic: 'shield'},
     {ma: 'va',   ten: 'Chỗ va · chỗ hợp', ic: 'pulse'},
+    /* `lightning` chứ không phải một tên biểu tượng nghe hợp hơn: U.ic()
+       rơi về `spark` khi không có tên, và rơi LẶNG LẼ — một biểu tượng
+       sai trông y hệt một biểu tượng đúng. Tên nào cũng phải có trong
+       U.P mới được gõ. */
+    {ma: 'mauthuan', ten: 'Tự mâu thuẫn', ic: 'lightning'},
     {ma: 'matran', ten: 'Ma trận 28',     ic: 'star'},
     {ma: 'lop',  ten: '10 lớp · 100 phần', ic: 'list'}
   ];
@@ -43413,32 +43418,88 @@ G.VIEWS = G.VIEWS || {};
      Hai bảng đi CÙNG NHAU, không tách ra hai ngăn. Nêu chỗ va mà giấu
      chỗ bắt oan thì người đọc tưởng cả bản đặc tả là sai rồi thôi
      không đọc — và lúc ấy bốn chỗ va thật cũng không ai đọc. */
+  /* Mỗi con số đếm được in KÈM CỤM DÒ sinh ra nó. Bản 9.99.83 chỉ in
+     con số, và một con số không kèm cụm thì không ai chạy lại được —
+     nên không ai biết bốn con số ấy đều sai. */
+  function veCum(v) {
+    var cs = v.cum || [];
+    if (!cs.length) return '—';
+    return cs.map(function (c) {
+      return '<code>' + h(c.c) + '</code> ' + c.n;
+    }).join('<br>');
+  }
+
   function veVa() {
-    var ds = G.SUP_VA || [], oan = G.SUP_OAN || [], ol = G.SUP_OAN_LUAT || {};
-    var o = U.sec('Bốn chỗ va MỚI — không chép lại sáu điều cấm đã có',
+    var ds = G.SUP_VA || [], cu = G.SUP_VA_CU || [],
+      oan = G.SUP_OAN || [], ol = G.SUP_OAN_LUAT || {};
+    var o = U.sec(ds.length + ' chỗ va MỚI — không chép lại sáu điều cấm đã có',
       'Sáu điều cấm của GITA-VIP (9.99.76) đã phủ bốn chỗ Quyển I–III đụng tới: ' +
       'xếp hạng người · sinh trắc trẻ · hạ cấp và đặt lại chuỗi · doạ mất chuỗi. ' +
       'Chép chúng sang đây là dựng bản thứ hai của một BẢNG CẤM — bản nguy nhất, ' +
-      'vì sửa một bên thì bên kia vẫn chặn theo luật cũ mà cả hai vẫn xanh.');
-    o += U.tbl(['Mã', 'Bản đặc tả đòi gì', 'Đếm được', 'Luật nào', 'Đường đi'],
+      'vì sửa một bên thì bên kia vẫn chặn theo luật cũ mà cả hai vẫn xanh. ' +
+      'Cột "Đếm được" in kèm chính cụm dò sinh ra con số: một con số không ' +
+      'kèm cụm thì không ai chạy lại được, nên không ai biết nó sai.');
+    o += U.tbl(['Mã', 'Bản đặc tả đòi gì', 'Cụm dò · đếm được', 'Luật nào', 'Đường đi'],
       ds.map(function (v) {
-        return [h(v.ma), h(v.doi), (v.dem ? v.dem + ' lần' : '—'),
+        return [h(v.ma), h(v.doi), veCum(v),
           '<code>' + h(v.luat) + '</code>', h(v.duong)];
       }));
     ds.forEach(function (v) {
       o += '<p class="note"><b>' + h(v.ma) + ' · vì sao:</b> ' + h(v.viSao) + '</p>';
     });
 
-    o += U.sec('Hai chỗ phép dò của tôi BẮT OAN', ol.bai || '');
+    if (cu.length) {
+      o += U.sec('Chỗ đụng điều cấm ĐÃ CÓ — trỏ, không cấp mã mới',
+        'Loại chỗ thứ hai, chỉ lượt đọc đủ mới thấy: bản đặc tả đụng vào một điều ' +
+        'cấm đã có răng, nhưng đụng qua một cửa khác với cửa mà điều cấm ấy đã ghi. ' +
+        'Không được cấp mã va mới — cấp mã mới là dựng bản thứ hai của một điều cấm. ' +
+        'Nhưng cũng không được im: im thì người dựng sau đọc điều cấm cũ, thấy nó nói ' +
+        'về một cửa khác, rồi kết luận cửa mình đang dựng không liên quan.');
+      o += U.tbl(['Chỗ trong bản đặc tả', 'Điều cấm đã có', 'Luật nào', 'Đường đi'],
+        cu.map(function (x) {
+          return [h(x.noi), '<code>VIP_CAM ' + h(x.camCu) + '</code>',
+            '<code>' + h(x.luat) + '</code>', h(x.duong)];
+        }));
+      cu.forEach(function (x) {
+        o += '<p class="note"><b>' + h(x.noi) + ' · vì sao:</b> ' + h(x.viSao) +
+          (x.coGiKhac ? ' <span class="muted">' + h(x.coGiKhac) + '</span>' : '') + '</p>';
+      });
+    }
+
+    o += U.sec(oan.length + ' chỗ phép dò của tôi BẮT OAN', ol.bai || '');
     o += U.tbl(['Dấu hiệu', 'Khớp', 'Nguyên văn trong tài liệu', 'Sự thật'],
       oan.map(function (x) {
         return [h(x.dau), x.dem + ' lần', h(x.nguyenVan), h(x.that)];
       }));
     if (ol.vaSao) o += '<p class="note">' + h(ol.vaSao) + '</p>';
+    if (ol.tieuDe) o += '<p class="note">' + h(ol.tieuDe) + '</p>';
     return o;
   }
 
-  /* ── NGĂN 3 · MA TRẬN 28 ── */
+  /* ── NGĂN 3 · CHỖ BẢN ĐẶC TẢ TỰ MÂU THUẪN ──
+     Khác chỗ va (đụng luật kho) và khác chỗ bắt oan (phép dò của tôi
+     sai). Đây là chỗ bản đặc tả nói hai điều ngược nhau ở hai phần cách
+     nhau hàng chục nghìn ký tự — người dựng sau chỉ đọc MỘT vế, và vế
+     họ đọc trước là vế thắng, mà không ai quyết định điều đó cả. */
+  function veMauThuan() {
+    var ds = G.SUP_MAUTHUAN || [];
+    var o = U.sec('Chỗ bản đặc tả nói hai điều ngược nhau',
+      'Ba chỗ này chỉ lộ ra khi đọc hết 409.993 ký tự: hai vế nằm cách nhau hàng ' +
+      'chục nghìn ký tự nên không lượt đọc lướt nào bắt được. Phải khai, vì người ' +
+      'dựng sau sẽ đọc đúng một trong hai vế — và vế nào họ đọc trước thì vế ấy ' +
+      'thắng, mà không ai quyết định điều đó cả.');
+    o += U.tbl(['Câu hỏi', 'Vế A', 'Vế B', 'Kho theo vế'],
+      ds.map(function (x) {
+        return [h(x.ten), h(x.veA), h(x.veB),
+          (x.khoTheoBen === '—' ? '—' : '<b>' + h(x.khoTheoBen) + '</b>')];
+      }));
+    ds.forEach(function (x) {
+      o += '<p class="note"><b>' + h(x.ten) + ':</b> ' + h(x.vi) + '</p>';
+    });
+    return o;
+  }
+
+  /* ── NGĂN 4 · MA TRẬN 28 ── */
   function veMaTran() {
     var ds = G.SUP_CUM || [];
     var tong = ds.reduce(function (a, c) { return a + (c.nl || []).length; }, 0);
@@ -43459,7 +43520,7 @@ G.VIEWS = G.VIEWS || {};
     return o;
   }
 
-  /* ── NGĂN 4 · MƯỜI LỚP VÀ MỘT TRĂM PHẦN ── */
+  /* ── NGĂN 5 · MƯỜI LỚP VÀ MỘT TRĂM PHẦN ── */
   function veLop() {
     var lop = G.SUP_LOP || [], khoi = G.SUP_KHOI || [], d = G.SUP_DEM || {};
     var o = U.sec('Mười lớp điểm chạm — hai vòng đồng tâm và một vành đai',
@@ -43467,29 +43528,57 @@ G.VIEWS = G.VIEWS || {};
       'vành đai bắc qua mọi vòng. Cột "Tổng" cố ý KHÔNG ghi 10.000 cho mỗi lớp: con ' +
       'số ấy là một CHỈ TIÊU chủ hệ đặt, chưa phải một phép đếm — ghi vào bảng là để ' +
       'một chỉ tiêu đọc ra như một phép đo.');
-    o += U.tbl(['Lớp', 'Tên', 'Vòng', 'Vì sao lớp này tồn tại'],
+    o += U.tbl(['Lớp', 'Tên', 'Vòng', 'Đã biên soạn ở', 'Vì sao lớp này tồn tại'],
       lop.map(function (l) {
-        return [h(l.ma), h(l.ten), h(l.vong), h(l.y)];
+        return [h(l.ma), h(l.ten), h(l.vong),
+          l.daBienSoan ? h(l.daBienSoan) : '<span class="muted">chưa</span>', h(l.y)];
       }));
 
-    var coChu = khoi.filter(function (k) { return k.daViet; })
-      .reduce(function (a, k) { return a + (k.den - k.tu + 1); }, 0);
+    /* Cộng lại từ SUP_KHOI, kể cả phần lẻ của khối chưa trọn. Con số
+       này vẫn là bản chép thứ hai của `d.coChu` — nó canh được sự NHẤT
+       QUÁN, không canh được sự ĐÚNG, và đó chính là chỗ con số 45 của
+       bản 9.99.83 sống qua một lượt phát hành. Nên ô `nguon` bên dưới
+       phải nói thẳng con số ấy là lời khai. */
+    var coChu = khoi.reduce(function (a, k) {
+      return a + (k.daViet ? (k.den - k.tu + 1) : (k.le || []).length);
+    }, 0);
+    var kk = G.SUP_KHONGKHOI || {};
     o += U.sec('Một trăm phần — và chỗ bản đặc tả còn trống',
-      'Đếm được thì đếm. Trình "100 phần" mà không nói bao nhiêu phần chưa có chữ ' +
-      'nào thì người đọc tin là đã đủ — cùng luật với `conLaiChuaTrinh` của bản tin ' +
-      'sáng (9.99.71): cắt im lặng tệ hơn trình ra con số thật.');
+      'Đếm được thì đếm, nhưng đếm ở ĐÂU thì phải nói ra. Trình "100 phần" mà không ' +
+      'nói bao nhiêu phần chưa có chữ nào thì người đọc tin là đã đủ — cùng luật với ' +
+      '`conLaiChuaTrinh` của bản tin sáng (9.99.71).');
     o += U.tbl(['Khối', 'Tên', 'Phần', 'Đã viết'],
       khoi.map(function (k) {
         return [h(k.ma), h(k.ten), k.tu + '–' + k.den,
-          k.daViet ? 'có' : '<b>CHƯA</b>'];
+          k.daViet ? 'trọn ' + (k.den - k.tu + 1) + ' phần'
+            : '<b>' + (k.le || []).length + '/' + (k.den - k.tu + 1) + '</b>' +
+              ((k.le || []).length ? ' — đã viết ' + k.le.join(' · ') : '')];
       }));
     o += '<p class="note"><b>' + coChu + '/' + (d.khai || 100) +
       ' phần đã có chữ</b> · còn ' + ((d.khai || 100) - coChu) +
       ' phần trống. ' + h(d.vi || '') + '</p>';
+
+    /* Con số đếm được là LỜI KHAI, và lời khai phải mang ngày, người và
+       cách đếm — nếu không, nó đứng cạnh những con số đo được và đọc ra
+       như nhau (9.99.59 · 9.99.62 · 9.99.81). */
+    if (d.nguon === 'nguoiDem') {
+      o += '<p class="note"><b>Con số này là LỜI KHAI, không phải phép đo.</b> ' +
+        h(d.vaSaoLaLoiKhai || '') + '</p>';
+      o += U.tbl(['Ai đếm', 'Ngày', 'Đếm trên tệp nào', 'Cách đếm'],
+        [[h(d.ai || '—'), h(d.ngay || '—'), h(d.tep || '—'), h(d.cachDem || '—')]]);
+    }
+
+    if (kk.so) {
+      o += U.sec(kk.so + ' phần KHÔNG THUỘC KHỐI NÀO — phần ' + kk.tu + '–' + kk.den,
+        kk.cach || '');
+      o += '<p class="note">' + h(kk.vi || '') + '</p>';
+      o += '<p class="note"><b>Cần gì:</b> ' + h(kk.canGi || '') + '</p>';
+    }
     return o;
   }
 
-  var VE = {ten: veTen, va: veVa, matran: veMaTran, lop: veLop};
+  var VE = {ten: veTen, va: veVa, mauthuan: veMauThuan,
+    matran: veMaTran, lop: veLop};
 
   G.VIEWS['supreme'] = function () {
     /* Chặn ở MỘT chỗ, trước cả thanh ngăn — bài học 9.99.63: vai không

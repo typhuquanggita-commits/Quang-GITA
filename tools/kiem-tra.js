@@ -16203,7 +16203,32 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
          tám dấu hiệu; HAI là bắt oan, vì tài liệu đang PHÊ PHÁN chính
          thứ bị dò. Nêu chỗ va mà giấu chỗ bắt oan thì người đọc tưởng
          cả bản đặc tả là sai rồi thôi không đọc — và lúc ấy bốn chỗ va
-         thật cũng không ai đọc. */
+         thật cũng không ai đọc.
+
+     E · MỖI CON SỐ ĐẾM ĐƯỢC PHẢI KHAI CỤM DÒ SINH RA NÓ, VÀ `SUP_DEM`
+         PHẢI KHAI THẲNG NÓ LÀ LỜI KHAI.  (thêm 9.99.84)
+
+         Vế này sinh ra từ một lỗi của chính phép đo này. Tới 9.99.83,
+         vế D so `SUP_DEM.coChu` với tổng cộng từ `SUP_KHOI` — HAI BẢN
+         CHÉP VIẾT TAY CỦA CÙNG MỘT CON SỐ. Cả hai cùng ghi 45, cả hai
+         cùng sai, và phép đo XANH. Một phép kiểm so hai bản chép với
+         nhau thì nó canh được sự NHẤT QUÁN, không canh được sự ĐÚNG —
+         và nó KHÔNG THỂ ĐỎ trên đúng thứ nó sinh ra để canh. Lớp lỗi
+         9.99.77 đã ghi: một phép kiểm không thể đỏ tệ hơn một phép
+         kiểm chưa từng đỏ, vì nó khai rằng chỗ ấy đã được canh.
+
+         Tệp bản đặc tả là nội dung của chủ hệ và KHÔNG nằm trong kho
+         mã, nên bộ kiểm không chạy lại được phép đếm. Cái canh được là
+         HÌNH của lời khai: có ngày, có người, có tên tệp, có cách đếm
+         chạy lại được bằng tay — và mỗi ô `dem` của chỗ va khai chính
+         cụm dò sinh ra nó. Cùng luật `mayDo`/`nguoiDo` của Hiến pháp
+         (9.99.62) và `mayDo`/`khai` của thang 1000 điểm (9.99.81).
+
+     F · CHỖ ĐỤNG ĐIỀU CẤM ĐÃ CÓ KHÔNG ĐƯỢC CẤP MÃ MỚI.  (thêm 9.99.84)
+         `SUP_VA_CU` trỏ thẳng vào một mã `VIP_CAM` có thật và KHÔNG
+         mang ô `ma` của riêng nó. Cấp mã mới cho một điều cấm đã có là
+         dựng bản thứ hai của một BẢNG CẤM ở dạng lẻ — nguy y hệt dạng
+         bảng, mà khó thấy hơn vì nó không trông giống một cái bảng. */
   {
     const sup = await p.evaluate(() => {
       const G = window.G;
@@ -16258,7 +16283,44 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         demKhai: (G.SUP_DEM || {}).khai,
         demCoChu: (G.SUP_DEM || {}).coChu,
         khoiCoChu: (G.SUP_KHOI || []).reduce((a, k) =>
-          a + (k.daViet ? (k.den - k.tu + 1) : (k.le || []).length), 0)
+          a + (k.daViet ? (k.den - k.tu + 1) : (k.le || []).length), 0),
+
+        /* E · con số nào cũng phải khai cụm dò sinh ra nó */
+        vaThieuCum: va.filter(v => {
+          const c = v.cum;
+          if (!Array.isArray(c) || !c.length) return true;
+          /* `n === 0` là một con số hợp lệ (V4 đếm 0 lần, và đó là cả ý
+             nghĩa của V4) — nên hỏi typeof, không hỏi tính đúng/sai. */
+          return c.some(x => !x || typeof x.c !== 'string' || !x.c.trim() ||
+            typeof x.n !== 'number');
+        }).map(v => v.ma),
+        dem: (() => {
+          const d = G.SUP_DEM || {};
+          return {
+            nguon: d.nguon, ai: d.ai, ngay: d.ngay, tep: d.tep,
+            cachDem: d.cachDem, vaSao: d.vaSaoLaLoiKhai
+          };
+        })(),
+        /* F · chỗ đụng điều cấm cũ: trỏ thật, và KHÔNG mang mã riêng */
+        vaCu: (G.SUP_VA_CU || []).map(x => ({
+          noi: x.noi, camCu: x.camCu, coMa: Object.prototype.hasOwnProperty.call(x, 'ma'),
+          duLuat: !!(x.luat || '').trim(), duDuong: !!(x.duong || '').trim(),
+          duVi: !!(x.viSao || '').trim()
+        })),
+        /* Chỗ bản đặc tả tự mâu thuẫn — khai đủ hai vế mới đọc được */
+        mauThuanThieu: (G.SUP_MAUTHUAN || []).filter(x =>
+          !(x.veA || '').trim() || !(x.veB || '').trim() || !(x.vi || '').trim())
+          .map(x => x.ten),
+        soMauThuan: (G.SUP_MAUTHUAN || []).length,
+        /* Phần không thuộc khối nào — cộng lại từ khối cuối, không gõ tay */
+        khongKhoi: (() => {
+          const kk = G.SUP_KHONGKHOI || {}, ks = G.SUP_KHOI || [];
+          const cuoi = ks.reduce((a, k) => Math.max(a, k.den), 0);
+          return {
+            khaiSo: kk.so, khaiTu: kk.tu,
+            conLai: ((G.SUP_DEM || {}).khai || 0) - cuoi, sauKhoiCuoi: cuoi + 1
+          };
+        })()
       };
     });
 
@@ -16309,7 +16371,53 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
             ' mà cộng từ SUP_KHOI ra ' + sup.khoiCoChu +
             ' — hai bản chép viết tay của cùng một con số'
         : sup.soOan + ' chỗ bắt oan · 28 năng lực · 10 lớp · ' +
-          sup.demCoChu + '/' + sup.demKhai + ' phần đã có chữ');
+          sup.demCoChu + '/' + sup.demKhai + ' phần đã có chữ ' +
+          '(hai bản chép KHỚP NHAU — đây là phép so nhất quán, ' +
+          'sự đúng của con số thì vế E canh)');
+
+    /* E · con số đếm được khai cụm dò sinh ra nó; SUP_DEM khai là lời khai */
+    const dm = sup.dem || {}, laKhai = dm.nguon === 'nguoiDem';
+    /* Danh sách ô tính MỘT LẦN rồi cả điều kiện lẫn câu chi tiết cùng
+       đọc nó. Bản đầu của phép đo này viết danh sách hai lần — đúng thứ
+       luật 9.99.60 cấm, và đúng chỗ đã trôi ba lần ở mục 71: thêm một ô
+       mới thì người ta chỉ sửa bản thứ nhất, và câu chi tiết im về ô
+       vừa thêm. Phá thử bắt được vì nó đòi đọc DÒNG CHI TIẾT, không chỉ
+       đọc màu. */
+    const demThieu = !laKhai ? [] : ['ai', 'ngay', 'tep', 'cachDem', 'vaSao']
+      .filter(k => !(dm[k] || '').toString().trim());
+    const demDu = laKhai && !demThieu.length;
+    const kk = sup.khongKhoi || {};
+    const kkDung = kk.khaiSo === kk.conLai && kk.khaiTu === kk.sauKhoiCuoi;
+    bao(!sup.vaThieuCum.length && demDu && kkDung,
+      'MỖI CON SỐ ĐẾM ĐƯỢC KHAI CỤM DÒ SINH RA NÓ, VÀ SỐ PHẦN ĐÃ VIẾT KHAI THẲNG LÀ LỜI KHAI. Tệp bản đặc tả là nội dung của chủ hệ, không nằm trong kho mã — nên bộ kiểm cộng lại được nhưng ĐẾM LẠI KHÔNG ĐƯỢC. Tới 9.99.83 vế D so hai bản chép viết tay của cùng một con số: cả hai cùng ghi 45, cả hai cùng sai, phép đo XANH. Một phép kiểm KHÔNG THỂ ĐỎ tệ hơn một phép kiểm chưa từng đỏ — nó khai rằng chỗ ấy đã được canh',
+      sup.vaThieuCum.length ? 'CHỖ VA KHÔNG KHAI CỤM DÒ: ' + sup.vaThieuCum.join(' · ') +
+          ' — một con số không kèm cụm sinh ra nó thì không ai chạy lại được'
+        : !laKhai ? 'SUP_DEM KHÔNG KHAI `nguon:"nguoiDem"` — con số phần đã viết ' +
+            'đang đứng như một phép đo trong khi không phép đo nào chạy lại được nó'
+        : !demDu ? 'SUP_DEM THIẾU Ô: ' + demThieu.join(' · ')
+        : !kkDung ? 'PHẦN KHÔNG THUỘC KHỐI NÀO LỆCH: khai ' + kk.khaiSo +
+            ' phần từ ' + kk.khaiTu + ', mà cộng từ SUP_KHOI ra ' + kk.conLai +
+            ' phần từ ' + kk.sauKhoiCuoi
+        : sup.vaThieuCum.length === 0 ? 'mọi chỗ va khai cụm dò · SUP_DEM khai là lời khai ' +
+            '(' + dm.ngay + ', ' + dm.tep + ') · ' + kk.khaiSo +
+            ' phần chưa thuộc khối nào, cộng lại từ SUP_KHOI' : '');
+
+    /* F · chỗ đụng điều cấm ĐÃ CÓ — trỏ, không cấp mã mới */
+    const vc = sup.vaCu || [];
+    const vcCoMa = vc.filter(x => x.coMa).map(x => x.noi);
+    const vcTroSai = vc.filter(x => sup.vipMa.indexOf(x.camCu) < 0).map(x => x.noi);
+    const vcThieu = vc.filter(x => !x.duLuat || !x.duDuong || !x.duVi).map(x => x.noi);
+    bao(vc.length >= 1 && !vcCoMa.length && !vcTroSai.length && !vcThieu.length &&
+        sup.soMauThuan >= 1 && !sup.mauThuanThieu.length,
+      'CHỖ ĐỤNG ĐIỀU CẤM ĐÃ CÓ THÌ TRỎ, KHÔNG CẤP MÃ MỚI — VÀ CHỖ BẢN ĐẶC TẢ TỰ MÂU THUẪN PHẢI KHAI ĐỦ HAI VẾ. Cấp một mã va mới cho việc `VIP_CAM` đã cấm là dựng bản thứ hai của một điều cấm ở dạng lẻ: nguy y hệt dạng bảng mà khó thấy hơn, vì nó không trông giống một cái bảng. Còn một chỗ tự mâu thuẫn khai thiếu một vế thì nó không phải một chỗ mâu thuẫn nữa — nó là một lời khẳng định',
+      !vc.length ? 'KHÔNG KHAI CHỖ ĐỤNG ĐIỀU CẤM CŨ NÀO — lượt đọc đủ có ít nhất một (Arena → C1)'
+        : vcCoMa.length ? 'MANG MÃ RIÊNG (phải trỏ VIP_CAM, không cấp mã mới): ' + vcCoMa.join(' · ')
+        : vcTroSai.length ? 'TRỎ VÀO MÃ VIP_CAM KHÔNG CÓ THẬT: ' + vcTroSai.join(' · ')
+        : vcThieu.length ? 'THIẾU `luat` HOẶC `duong` HOẶC `viSao`: ' + vcThieu.join(' · ')
+        : !sup.soMauThuan ? 'KHÔNG KHAI CHỖ BẢN ĐẶC TẢ TỰ MÂU THUẪN NÀO'
+        : sup.mauThuanThieu.length ? 'CHỖ MÂU THUẪN KHAI THIẾU VẾ: ' + sup.mauThuanThieu.join(' · ')
+        : vc.length + ' chỗ đụng điều cấm cũ (trỏ VIP_CAM, không mã mới) · ' +
+          sup.soMauThuan + ' chỗ bản đặc tả tự mâu thuẫn');
   }
 
 

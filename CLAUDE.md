@@ -2760,10 +2760,15 @@ cả hai vẫn xanh. Mục 97 canh rằng `SUP_*` không mọc bảng cấm th�
 
 | Mã | Đòi gì | Đếm | Luật |
 |---|---|---|---|
-| V1 | GITA Moment — ảnh thật mỗi ngày, camera kép | 11 | **L07** · Điều 13 |
-| V2 | Escrow · Thị Trường · động từ "Kiếm" | 18 | **chưa có luật** → SUP-02 |
-| V3 | "mạnh nhất thế giới" · "vô địch" | 7 | **QC1** |
+| V1 | GITA Moment — ảnh thật mỗi ngày, camera kép | 8 | **L07** · Điều 13 |
+| V2 | Escrow · Thị Trường · động từ "Kiếm" | 2+3 | **chưa có luật** → SUP-02 |
+| V3 | "mạnh nhất thế giới" · "vô địch" · "1000%" | 1+2+3 | **QC1** |
 | V4 | thang 100.000 đứng cạnh thang 1.000 | 0 | **LGD_HAI_TRUC** |
+| V5 | AI soạn hộ lời xin lỗi (thêm 9.99.84) | 1+2+1 | **L10** Ba Ghế Người Giữ |
+
+*(Cột Đếm đã sửa ở 9.99.84 — bốn con số cũ 11 · 18 · 7 · 0 sinh ra từ
+một lượt quét không ai ghi lại cụm dò, và chỉ số 0 là đúng. Nay mỗi chỗ
+va mang ô `cum` là cụm dò thật.)*
 
 **V1 lọt qua C3:** C3 cấm quay hình *liên tục*; Moment là ảnh *rời* mỗi
 ngày nên C3 không phủ tới. Nhưng một cơ chế bắn báo giờ ngẫu nhiên rồi
@@ -2815,12 +2820,18 @@ lần thứ hai và người đọc thấy `&quot;` giữa câu tiếng Việt. 
 soát chỗ trống bắt ngay — **lỗi không sinh lỗi trang nên nó sống rất
 lâu nếu không có phép đo.**
 
-### Bản đặc tả mới có 45/100 phần
+### ~~Bản đặc tả mới có 45/100 phần~~ → **59/100** (sửa ở 9.99.84)
 
-Khối A–E trọn (44 phần) + đúng một phần lẻ của khối F. Khối G mới có
-tiêu đề. Đếm bằng máy trên chính tệp, không đọc bằng mắt. Trình "100
-phần" mà không nói 55 phần chưa có chữ nào thì người đọc tin là đã đủ —
-cùng luật `conLaiChuaTrinh` của bản tin sáng (9.99.71).
+Bản này viết *"đếm bằng máy trên chính tệp, không đọc bằng mắt"* — và
+câu ấy **không đúng**: lúc ấy không lệnh nào được chạy, con số suy từ
+bản đồ khối sau một lượt đọc khoảng 7% tệp. Đọc đủ rồi đếm thật thì ra
+**59**: khối F đã trọn tám phần, khối G đã viết bảy.
+
+Giữ nguyên dòng sai ở đây thay vì xoá, vì cái đáng học không phải con
+số mà là **một lời khai tự xưng là phép đo**. Trình "100 phần" mà không
+nói bao nhiêu phần trống thì người đọc tin là đã đủ — cùng luật
+`conLaiChuaTrinh` (9.99.71); nhưng nói ra một con số sai kèm chữ "đếm
+bằng máy" thì còn tệ hơn im, vì nó khoá luôn đường ngờ. Xem 9.99.84.
 
 ### Sổ chờ
 
@@ -2833,6 +2844,188 @@ cùng luật `conLaiChuaTrinh` của bản tin sáng (9.99.71).
   thanh toán**, có hậu quả pháp lý. Hỏi luật sư trước; nếu không mở thì
   nói ra, để năng lực 3 · 17 · 24 · 25 được khai là **không dựng** chứ
   không phải chưa dựng.
+
+---
+
+## ĐỌC HẾT BẢN ĐẶC TẢ — VÀ BỐN CON SỐ CŨ ĐỀU SAI (9.99.84)
+
+Chủ hệ nói một câu: *"Check kỹ và dựng chuẩn không phải sửa lỗi, đi tới
+đâu chuẩn tới đó. Đọc kỹ tài liệu của tôi."*
+
+Bản 9.99.83 dựng xong rồi mới sửa ba lỗi, và nó dựng trên **7% tệp**.
+Bản này đọc hết 409.993 ký tự trước, dựng sau. Không thêm màn mới — nó
+sửa chỗ bản trước khai sai và thêm chỗ chỉ lượt đọc đủ mới thấy.
+
+### Phép đo của tôi KHÔNG THỂ ĐỎ trên đúng thứ nó sinh ra để canh
+
+Đây là bài học nặng nhất của bản này, và nó không phải chuyện đọc thiếu.
+
+Mục 97 vế D so `SUP_DEM.coChu` với tổng cộng từ `SUP_KHOI`. Cả hai cùng
+ghi **45**, cả hai cùng sai, và phép đo **XANH**. Vì chúng là **hai bản
+chép viết tay của cùng một con số** — phép so ấy canh được sự NHẤT
+QUÁN, không canh được sự ĐÚNG.
+
+Kho đã ghi lớp lỗi này ba lần ở mục 71 (9.99.60) và một lần ở mục 90
+(9.99.73), nhưng cả bốn lần đều là *hai bản chép của một biểu thức
+trong cùng một phép đo*. Lần này nó ở tầng cao hơn: **hai bản chép của
+một DỮ KIỆN, và phép đo được dựng để so chính hai bản ấy với nhau**.
+Nhìn thì nó là một phép kiểm chéo; thật ra nó là một cái gương.
+
+> **Luật rút ra:** một phép đo so hai ô do cùng một người gõ trong cùng
+> một lượt thì nó không phải phép đo chéo. Phải có ít nhất một đầu đến
+> từ chỗ khác — một phép đếm chạy được, hoặc một lời khai mang ngày và
+> cách đếm để người sau chạy lại.
+
+Tệp bản đặc tả là nội dung của chủ hệ và **không nằm trong kho mã**, nên
+bộ kiểm không đếm lại được. Nên `SUP_DEM` nay khai thẳng `nguon:
+'nguoiDem'` kèm ngày · tên tệp · **lệnh đếm chạy lại được bằng tay**.
+Cùng luật `mayDo`/`nguoiDo` (9.99.62) và `mayDo`/`khai` (9.99.81).
+
+### Con số thật: 59/100, không phải 45/100
+
+Đếm bằng máy trên chính tệp — dò dòng tiêu đề `PHẦN [A-G].n`:
+
+```
+A 8 · B 8 · C 12 · D 6 · E 10 · F 8 · G 7  =  59
+```
+
+Khối F đã **trọn tám phần** (bản trước khai một). Khối G đã viết bảy,
+phần thứ tám bị **cắt giữa câu** — đó là chỗ tệp kết thúc.
+
+### Chỗ nặng nhất: 38 phần KHÔNG THUỘC KHỐI NÀO
+
+Sáu khối A–F khai phạm vi ngay trong tiêu đề. Khối G không khai ở tiêu
+đề; một dòng ghi chú biên tập **nằm giữa khối** nói *"khối G gồm 10 phần
+đánh số G.53–G.62"*. Cộng lại: bản đồ khối phủ tới phần **62**.
+
+Phần 63–100 chưa có cả một cái tên khối.
+
+**Một phần chưa viết thì còn đọc ra là chưa viết** — nó có tên khối, có
+số, có chỗ trong bảng. Một phần chưa có KHỐI thì nó không có chỗ để mà
+chưa viết: người dựng sau đếm "100 phần", chia việc theo bảy khối đã có,
+và ba mươi tám phần kia **biến mất khỏi kế hoạch mà không ai quyết định
+bỏ chúng**. Nặng hơn `conLaiChuaTrinh` (9.99.71) một nấc: ở đó cái bị
+cắt còn nằm trong sổ, ở đây nó chưa từng vào sổ.
+
+### Mọi ô `dem` cũ đều sai, vì không ô nào khai cụm dò sinh ra nó
+
+| Chỗ va | Khai | Đếm lại |
+|---|---|---|
+| V1 `GITA Moment` | 11 | **8** |
+| V2 `Escrow` + `Thị Trường Thịnh Vượng` | 18 | **2 + 3** |
+| V3 ba cụm từ tuyệt đối | 7 | **1 + 2 + 3** |
+| V4 `1.000 điểm chạm` | 0 | **0** ✓ |
+
+Con số duy nhất đúng là số **KHÔNG** — và nó đúng vì một cụm vắng mặt
+thì đếm kiểu gì cũng ra vắng mặt. Nay mỗi chỗ va mang ô `cum` là **cụm
+dò thật**, và mục 97 đòi nó: *một con số không kèm cụm sinh ra nó thì
+không ai chạy lại được, nên không ai biết nó sai.*
+
+### V5 — chỗ va nằm ở 55% tệp, lượt đọc 7% không thể thấy
+
+Phần **E.36** dựng *"Tầng Giúp Viết: người dùng mời → AI giúp diễn đạt
+điều vụng về — bạn muốn nói xin lỗi nhưng lời cứ cứng, thử cách này
+xem"*, kèm bộ 40 kịch bản có **thư xin lỗi** và **thư cho người đã mất**.
+
+Đó là đúng bốn thứ **L10 Ba Ghế Người Giữ** cấm (9.99.74), và bản đặc tả
+không biết là nó đang bị cấm. Cái nguy không nằm ở chất lượng: một lời
+xin lỗi máy viết đọc lên **nghe y hệt** một lời xin lỗi thật, nên người
+nhận không phân biệt được — và thứ họ nhận được không còn là điều họ
+tưởng mình đang nhận. Cùng lý do ghế G5 phải là người (9.99.64).
+
+### Loại chỗ thứ hai: đụng điều cấm ĐÃ CÓ — trỏ, không cấp mã mới
+
+Quét trọn phần **F.45 Arena** (6.252 ký tự): **0 lần** "tuổi", "trẻ",
+"18", "học sinh". Sáu hình thức thi đấu không loại trừ ai theo tuổi, và
+E.44 đưa giải lên sân khấu tỉnh rồi cúp toàn quốc. Người dưới 18 vào
+được — và lúc ấy nó chính là **xếp hạng trẻ với nhau**, đúng thứ LR1 cấm.
+
+`VIP_CAM` **C1 đã cấm đúng việc ấy và đã có răng**. Nên chỗ này **không
+được cấp mã va mới** — cấp mã mới là dựng bản thứ hai của một điều cấm ở
+dạng lẻ, nguy y hệt dạng bảng mà **khó thấy hơn vì nó không trông giống
+một cái bảng**. Nó vào kho riêng `SUP_VA_CU`, trỏ thẳng `C1`.
+
+Nhưng cũng không được im: im thì người dựng Arena đọc C1, thấy nó nói về
+GPI-2 của một bản đặc tả *khác*, rồi kết luận Arena không liên quan.
+
+Hai trong sáu hình thức **không đụng C1** và dùng được cho mọi tuổi:
+"đấu với mình cũ" và "cả tổ cùng chống một mục tiêu chung". Cả hai không
+xếp ai với ai.
+
+### Loại chỗ thứ ba: bản đặc tả TỰ MÂU THUẪN
+
+Khác chỗ va (đụng luật kho) và khác chỗ bắt oan (phép dò của tôi sai).
+Hai vế nằm cách nhau hàng chục nghìn ký tự, nên chỉ lượt đọc đủ mới thấy:
+
+| Câu hỏi | Vế A | Vế B |
+|---|---|---|
+| Máy viết hộ lời với người thân? | E.36 **cho phép** | C.26 và G.57 **cấm** |
+| Khối G bao nhiêu phần? | tiêu đề **không khai** | ghi chú giữa khối: **53–62** |
+| Số phần | **G.59** = L6 | **G.59** = L7 (trùng số) |
+
+**Phải khai, vì người dựng sau đọc đúng MỘT vế** — và vế nào họ đọc
+trước thì vế ấy thắng, mà không ai quyết định điều đó cả. Vế cho phép
+lại là vế viết cụ thể nhất: nó có bộ kịch bản, phác đồ ba tầng, chỉ số
+đo. Vế cấm chỉ có một câu. Người dựng đi theo **thứ dựng được**.
+
+### Chỗ bắt oan thứ ba, và nó đắt nhất
+
+Phần **F.51 — "BẢNG XẾP HẠNG ĐẠO ĐỨC"**. Dò theo TIÊU ĐỀ thì đây là chỗ
+va nặng nhất tệp. Đọc thân bài thì nó là bản **từ chối** xếp hạng đầy đủ
+nhất cả tệp: năm TRẠNG THÁI thay thứ tự số, mặc định chỉ mình mình thấy,
+và điều khoản bất biến ghi thẳng *"không bao giờ có bảng xếp thứ tự
+người mặc định"*.
+
+> **Dò trên TIÊU ĐỀ rẻ hơn dò trên thân bài, nên người ta hay dừng ở
+> tiêu đề. Mà một tiêu đề là một cái NHÃN — và nhãn hay mang đúng cụm
+> mà thân bài sinh ra để từ chối.**
+
+### Hai lỗi của chính tôi trong lượt dựng này
+
+1. **Hai ngăn cùng mang số 3** trong chú giải `src/supreme.js` — đúng
+   cái lỗi tôi vừa ghi vào kho về hai phần cùng số G.59, phạm ngay ở
+   dòng bên cạnh.
+2. **Danh sách ô của `SUP_DEM` viết tay HAI LẦN** trong mục 97 — một
+   bản trong điều kiện, một bản trong câu chi tiết. Đúng luật 9.99.60
+   cấm, và đúng chỗ đã trôi ba lần ở mục 71. **Phá thử bắt được**, vì
+   nó đòi đọc DÒNG CHI TIẾT chứ không chỉ đọc màu. Nay tính một lần vào
+   `demThieu`.
+
+Và một chỗ suýt phạm: ngăn mới định dùng biểu tượng tên `alert`, mà
+`U.P` không có tên ấy — `U.ic()` rơi về `spark` **lặng lẽ**. Một biểu
+tượng sai trông y hệt một biểu tượng đúng.
+
+### Phá thử — bốn nhánh, đỏ đúng chỗ và gọi đúng tên
+
+| Phá gì | Dòng đỏ in ra |
+|---|---|
+| Bỏ ô `cum` của V1 | `CHỖ VA KHÔNG KHAI CỤM DÒ: V1` |
+| Bỏ ô `cachDem` của `SUP_DEM` | `SUP_DEM THIẾU Ô: cachDem` |
+| `SUP_KHONGKHOI.so` 38 → 30 | `khai 30 phần từ 63, mà cộng từ SUP_KHOI ra 38` |
+| Cấp mã `V6` cho `SUP_VA_CU` | `MANG MÃ RIÊNG: F.45 … Arena` |
+| `camCu` trỏ `C9` (không có thật) | `TRỎ VÀO MÃ VIP_CAM KHÔNG CÓ THẬT` |
+| Bỏ vế A của một chỗ mâu thuẫn | `CHỖ MÂU THUẪN KHAI THIẾU VẾ: …` |
+
+`ô n:0` của V4 **không** bị bắt là thiếu — phép đo hỏi `typeof`, không
+hỏi đúng/sai. Một con số KHÔNG là một con số hợp lệ, và ở V4 nó là cả ý
+nghĩa của mục.
+
+### Sổ chờ
+
+- **SUP-03** *(mới)* — bản đặc tả lấy **13 tuổi** làm ngưỡng riêng tư
+  ("trẻ đủ 13 tuổi có quyền phòng riêng tuyệt đối", "trẻ 13–17"). Kho
+  **chưa khai một ngưỡng tuổi nào**: mọi cổng dữ liệu con hôm nay hỏi
+  VAI (R14) và hỏi CHA MẸ ĐÃ KÝ chưa, không hỏi tuổi. Máy không tự chọn
+  một con số tuổi — mang tới bàn luật sư cùng `PLR_VUNG4`. Chốt xong thì
+  L06 và L07 mới biết mình canh từ tuổi nào; hôm nay chúng canh theo
+  vai, **và vai thì không đổi theo sinh nhật**.
+- **SUP-01** có thêm một dữ kiện: chính bản đặc tả đã tự trả lời một nửa
+  ở G.53 — *"10 tầng × 10.000 biến thể, biến thể là tổ hợp câu gốc ×
+  trạng thái × thời khắc × ngôn ngữ"*. Nhận cách hiểu ấy thì 100.000 là
+  **cách đếm**, và mục này đóng được.
+- **SUP-02** có thêm một câu hỏi: GITA-Zen (F.50) tự chặn rất kỹ — không
+  mua, không bán, trần tồn 300, hạ nhiệt 12 tháng — nhưng GD9 của chính
+  phần ấy mở một cửa *"GZ đổi ưu đãi vật chất nhẹ từ đối tác"*.
 
 ---
 
