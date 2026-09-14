@@ -1869,6 +1869,29 @@ main{container-type:inline-size}
    thắng, nên khối này không đè được gì cả. Đo lại vẫn ra đúng 26px và
    21px như trước, không một điểm ảnh nào đổi. Một khối CSS không chạy
    thì không báo lỗi: nó chỉ lặng lẽ không làm gì. */
+/* ═══ XƯỞNG DỰNG VIDEO — src/studio.js (9.99.94) ═══
+   Cỡ chữ lấy nguyên từ thang chín bậc đã có; bản mẫu của chủ hệ đẻ bảy
+   bậc mới (22 · 15 · 13,5 · 13 · 12,5 · 11,5 · 11) và bản 9.25 đã dạy
+   một lần rằng hai mươi sáu bậc nghĩa là không có thang nào cả.
+   Màu lấy từ biến đã có — không gõ mã màu thứ hai. */
+.xu-man{width:100%;height:auto;display:block;border-radius:var(--r-sm);background:#000;
+  border:1px solid var(--line)}
+.xu-tua{width:100%;margin:8px 0}
+.xu-thanh{height:6px;background:var(--nen-mo);border-radius:99px;overflow:hidden;margin:8px 0}
+.xu-thanh i{display:block;height:100%;width:0;background:var(--gita)}
+.xu-canh{border-left:3px solid var(--line)}
+.xu-den{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.xu-den li{border:1px solid var(--line);border-left:3px solid var(--line);
+  border-radius:var(--r-sm);padding:10px 12px;background:var(--nen-hop)}
+.xu-den li b{display:block;font-size:14.5px}
+.xu-den li em{font-style:normal;font-size:10.5px;color:var(--phu-3)}
+.xu-den li span{display:block;font-size:12.5px;color:var(--phu-1);margin-top:4px}
+.xu-den li.xu-ok{border-left-color:var(--ok)}
+.xu-den li.xu-warn{border-left-color:var(--gold)}
+.xu-den li.xu-bad{border-left-color:var(--gita-do)}
+.xu-den li.xu-cho{border-left-color:var(--line-2)}
+.xu-den li.xu-nguoi{border-left-color:var(--ember)}
+
 @media(pointer:coarse){
   .chip{min-height:34px;padding-block:6px}
   select,select.inp{min-height:40px}

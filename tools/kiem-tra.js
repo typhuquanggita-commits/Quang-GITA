@@ -421,7 +421,12 @@ const { chromium } = require(PW);
          cách src/may-khach.js CẮT đường tải trên máy khách. Bản kiểm cũ bắt
          cả hai vì chỉ tìm tên hàm, nên lớp chặn vừa dựng xong đã bị chính
          bộ kiểm báo là lỗ hổng. Bài kiểm phải đo đúng thứ nó định đo. */
-      if (/a\.download\s*=|text\/csv|createObjectURL\s*\(/.test(noi)) xau.push(t);
+      /* Dò trên mã đã BỎ CẢ CHÚ GIẢI LẪN CHUỖI — luật 9.99.78. Phép đo này
+         dựng trước luật ấy, và nó vừa bắt oan lần thứ năm: `src/studio.js`
+         có ba dòng chú giải CẢNH BÁO về đúng cái bẫy nó canh, và cách sửa
+         dễ nhất — xoá lời cảnh báo đi — là cách sai nhất. Chỗ KHAI một cái
+         tên và chỗ NÓI VỀ cái tên ấy là hai chuyện khác nhau. */
+      if (/a\.download\s*=|text\/csv|createObjectURL\s*\(/.test(boChuMa(noi))) xau.push(t);
     }
     bao(!xau.length, 'không tệp nào còn đường tải CSV hay Excel về máy', xau.join(' ') || 'đã gỡ sạch');
     /* Lệnh in chỉ được gọi ở đúng một chỗ: cổng in.
@@ -1340,7 +1345,8 @@ const { chromium } = require(PW);
     /* <a\s: bắt buộc có khoảng trắng ngay sau <a, nếu không thì thẻ <audio
        của trình phát — vốn mang controlsList="nodownload" để TẮT nút tải —
        lại bị chính bộ kiểm bắt nhầm là một đường tải xuống. */
-    bao(!/<a\s[^>]*\sdownload|createObjectURL\s*\(|\.zip"|showSaveFilePicker/.test(srcAll),
+    /* Bỏ chú giải và chuỗi trước khi dò — luật 9.99.78, cùng lý do với mục 8. */
+    bao(!/<a\s[^>]*\sdownload|createObjectURL\s*\(|\.zip"|showSaveFilePicker/.test(boChuMa(srcAll)),
       'không có nút tải xuống và không có tệp nén — mọi thứ đọc thẳng trên ứng dụng');
     bao(/controlsList="nodownload/.test(srcAll),
       'trình phát audio tắt nút tải của trình duyệt — nghe được nhưng không tải được');
@@ -17452,6 +17458,221 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
           lt.soRm + ' quy tắc cổng (' + lt.soRmTro + ' trỏ vào răng đã có) · ' + lt.soMoc +
           ' cột mốc trỏ phần gốc · ' + lt.soHop + ' chỗ hợp · ' + lt.soVa +
           ' chỗ va khai cụm dò · chưa cửa gate nào mọc trước sổ nợ');
+  }
+
+  console.log('\n103 · XƯỞNG DỰNG VIDEO — KHÔNG BỘ DÒ THỨ HAI, KHÔNG CỬA SINH GIỌNG');
+  /* ═══════════════ 103 · XƯỞNG STUDIO (9.99.94)
+
+     A · Mỗi đèn khai ĐÚNG MỘT đường: `goiCua` · `mayDo` · `nguoiDo`.
+     B · Phép đo về thứ KHÔNG ĐƯỢC TỒN TẠI, lần thứ MƯỜI BA — `src/studio.js`
+         và `may-chu/studio.js` không được khai một bảng dấu hiệu nào,
+         không được có cửa sinh giọng, không được gọi thẳng ra ngoài.
+     C · Mọi `troVao` trỏ vào mã CÓ THẬT kèm tên bảng (9.99.91).
+     D · Ngân khố câu đủ bảy nhóm và mọi `nhip` của khuôn trỏ nhóm có thật.
+     E · Chín lỗi khai `luat` HOẶC `chuaCoLuat`, và mỗi lỗi mang `cum`
+         là ĐOẠN MÃ THẬT — một lỗi không kèm mã sinh ra nó thì không ai
+         chạy lại được (luật 9.99.84).
+     F · Cửa `ghiHoChieuVideo` phải có mặt trong danh sách cửa THẬT của
+         worker, và phải soi vai TRƯỚC khi dựng hộ chiếu. */
+  {
+    const fsX = require('fs'), pX = require('path');
+    const gocX = pX.join(__dirname, '..');
+    const maSrc = boChuMa(fsX.readFileSync(pX.join(gocX, 'src', 'studio.js'), 'utf8'));
+    const maMay = boChuMa(fsX.readFileSync(pX.join(gocX, 'may-chu', 'studio.js'), 'utf8'));
+    const wk = fsX.readFileSync(pX.join(gocX, 'may-chu', 'worker.js'), 'utf8');
+
+    /* Dò trên mã đã BỎ CẢ CHÚ GIẢI LẪN CHUỖI — luật 9.99.78. Cả hai tệp
+       NÓI VỀ những cái tên bị cấm rất nhiều, và đó chính là việc của
+       chúng; chỗ KHAI một cái tên và chỗ NÓI VỀ nó là hai chuyện. */
+    const CUM_BANG_DO = /\b(WAF|TU_CAM|BANG_CAM|SENSITIVE|NHAY_CAM|CUM_PHAN_XET)\b/;
+    const CUM_SINH_GIONG = /\b(sinhGiong|taoGiong|ttsGiong|docMayGiong|giongTongHop)\b/;
+    const bangDo = [];
+    if (CUM_BANG_DO.test(maSrc)) bangDo.push('src/studio.js');
+    if (CUM_BANG_DO.test(maMay)) bangDo.push('may-chu/studio.js');
+    const sinhGiong = [];
+    for (const m of maMay.matchAll(/export\s+(?:async\s+)?function\s+([A-Za-z0-9_$]+)/g))
+      if (CUM_SINH_GIONG.test(m[1])) sinhGiong.push('may-chu/studio.js → ' + m[1]);
+    /* Gọi thẳng ra ngoài từ trình duyệt — đo trên `src/`, vì cổng ẩn
+       danh nằm ở máy chủ và một `fetch` trong mã màn hình đi vòng qua nó. */
+    const raNgoai = /fetch\s*\(\s*['"`]https?:\/\//.test(maSrc);
+    /* ĐO HÀNH VI, KHÔNG ĐO VỊ TRÍ — bài học phá thử của chính bản này.
+
+       Bản đầu của phép đo dò vị trí `laNguoiNha` so với `const hoChieu`.
+       Phá thử bằng `if (false && !laNguoiNha(hoSo))` thì cổng đóng hẳn
+       với mọi người, mà phép đo **IM LẶNG**: cái tên vẫn có mặt và vẫn
+       đứng trước. Đúng lớp lỗi 9.99.77 — một phép kiểm KHÔNG THỂ đỏ
+       trên đúng thứ nó sinh ra để canh thì tệ hơn một phép kiểm chưa
+       từng đỏ, vì nó khai rằng chỗ ấy đã được canh.
+
+       Nay GỌI THẬT cửa ấy hai lượt, và cả hai đều trả lời trước khi
+       chạm cơ sở dữ liệu nên không cần `db`:
+
+         vai R13 (khách) + đủ ô  → phải NOPERM
+         vai R05 (nghề) + sai giây → phải NGOÀIKHUNG, tức là ĐÃ QUA cổng vai
+
+       Vế thứ hai đắt ngang vế thứ nhất: một cổng đóng với MỌI người
+       cũng là một cổng hỏng, và nhìn thì nó y hệt một cổng chặt. */
+    let vaiChan = false, vaiMo = false, vaiLoi = '';
+    try {
+      const mod = await import('file://' + pX.join(gocX, 'may-chu', 'studio.js'));
+      const rKhach = await mod.ghiHoChieuVideo(
+        { ten: 'thu', giay: 60, soCanh: 5, den: [{ t: 'x', tt: 'ok' }] },
+        {}, null, { u: 'ph1', uid: 1, role: 'R13' });
+      vaiChan = !!(rKhach && rKhach.ok === false && rKhach.code === 'NOPERM');
+      const rNghe = await mod.ghiHoChieuVideo(
+        { ten: 'thu', giay: 5, soCanh: 5, den: [{ t: 'x', tt: 'ok' }] },
+        {}, null, { u: 'tv1', uid: 2, role: 'R05' });
+      vaiMo = !!(rNghe && rNghe.ok === false && rNghe.code === 'NGOAIKHUNG');
+      vaiLoi = 'khách→' + String((rKhach || {}).code || '?') +
+        ' · nghề→' + String((rNghe || {}).code || '?');
+    } catch (e) { vaiLoi = 'gọi hỏng: ' + (e && e.message); }
+    const congSau = !(vaiChan && vaiMo);
+    const coCuaWorker = /['"]ghiHoChieuVideo['"]/.test(wk) &&
+      /ghiHoChieuVideo\s*\(y, env, db, hoSo\)/.test(wk);
+    /* Đầu thứ hai, độc lập với lời khai của kho: đếm bản chép thật của
+       `laNguoiNha` trên đĩa để đo mục chờ XU-04 (luật 9.99.84). */
+    const banChepVai = fsX.readdirSync(pX.join(gocX, 'may-chu'))
+      .filter(t => /\.js$/.test(t))
+      .filter(t => /function laNguoiNha/.test(fsX.readFileSync(pX.join(gocX, 'may-chu', t), 'utf8')))
+      .length;
+
+    const xu = await p.evaluate(() => {
+      const G = window.G, den = G.XU_DEN || [], loi = G.XU_LOI || [],
+        hop = G.XU_HOP || [], nk = G.XU_NGANKHO || [], kh = G.XU_KHUON || [],
+        khoH = G.XU_KHO_HINH || [], lu = G.XU_LUAT || {}, sc = G.XU_CHOCHU || [],
+        dem = G.XU_DEM || {};
+      const co = s => !!String(s || '').trim();
+      const coMa = (bang, ma) => {
+        const b = G[bang];
+        if (Array.isArray(b)) return b.some(r => r && r.ma === ma);
+        if (b && typeof b === 'object')
+          return Object.keys(b).some(k => Array.isArray(b[k]) && b[k].some(r => r && r.ma === ma));
+        return false;
+      };
+      const coO = (bang, o) => {
+        const b = G[bang];
+        return !!b && !Array.isArray(b) && typeof b === 'object' &&
+          Object.prototype.hasOwnProperty.call(b, o) && co(b[o]);
+      };
+      const soiTro = (ds, nhan, o) => {
+        const lac = [];
+        ds.filter(x => co(x[o])).forEach(x => {
+          const cap = [...String(x[o]).matchAll(/\b([A-Z][A-Z_0-9]{2,})\.([A-Za-z0-9-]{2,})\b/g)];
+          if (!cap.length) { lac.push(nhan + ' ' + x.ma + ' trỏ không kèm tên bảng'); return; }
+          const hong = cap.filter(c => !coMa(c[1], c[2]) && !coO(c[1], c[2]));
+          if (hong.length) lac.push(nhan + ' ' + x.ma + ' trỏ ' +
+            hong.map(c => c[1] + '.' + c[2]).join('/') + ' — không có thật');
+        });
+        return lac;
+      };
+      const vai = nk.map(n => n.vai);
+      return {
+        soDen: den.length,
+        /* ĐÚNG MỘT đường trong ba */
+        denLacDuong: den.filter(x => [x.goiCua, x.mayDo, x.nguoiDo].filter(co).length !== 1)
+          .map(x => x.ma),
+        /* Đèn `goiCua` PHẢI khai nó không dựng lại cái gì */
+        denThieuKhongDung: den.filter(x => co(x.goiCua) && !co(x.khongDungLai)).map(x => x.ma),
+        denNguoi: den.filter(x => co(x.nguoiDo)).map(x => x.ma),
+
+        soLoi: loi.length,
+        loiThieuCum: loi.filter(x => !co(x.cum) || !co(x.viSao) || !co(x.sua === undefined ? 'x' : x.sua))
+          .map(x => x.ma),
+        loiHaiDuong: loi.filter(x => !!co(x.luat) === !!co(x.chuaCoLuat)).map(x => x.ma),
+        soHop: hop.length,
+        hopThieu: hop.filter(x => !co(x.troVao) || !co(x.y)).map(x => x.ma),
+
+        troLac: [].concat(soiTro(hop, 'HỢP', 'troVao'), soiTro(loi, 'LỖI', 'luat'),
+          soiTro(den, 'ĐÈN', 'troVao')),
+
+        soNk: nk.length,
+        nkThieu: nk.filter(n => !Array.isArray(n.cau) || !Array.isArray(n.chuMan) ||
+          n.cau.length !== n.chuMan.length).map(n => n.ma),
+        soKhuon: kh.length,
+        khuonLac: kh.flatMap(k => (k.nhip || []).filter(v => !vai.includes(v))
+          .map(v => k.ma + '→' + v)),
+        soKhoHinh: khoH.length,
+
+        demThieu: ['tep', 'nguon', 'ngay', 'cachDem', 'vaSaoLaLoiKhai'].filter(k => !co(dem[k])),
+        luatDu: ['tienToChonTruoc', 'khongBoDoThuHai', 'haiBayTrenMotDong',
+          'giongKhongTuSinh', 'khaiCaHaiPhia', 'duLieuOKhoHamOSrc', 'moiDenMotDuong',
+          'xuatChayThoiGianThat'].filter(k => !co(lu[k])),
+        mocBang: Object.keys(G).filter(k => /^XU_/.test(k) &&
+          !['XU_DEM', 'XU_LOI', 'XU_HOP', 'XU_NGANKHO', 'XU_KHUON', 'XU_KHO_HINH',
+            'XU_DEN', 'XU_LUAT', 'XU_CHOCHU'].includes(k)),
+        soCho: sc.length,
+        choThieu: sc.filter(x => !co(x.viMayKhongTuChon) || !co(x.do)).map(x => x.ma),
+        con04: sc.some(x => x.ma === 'XU-04'),
+        /* P9 của sổ đặc tả Studio phải thôi khai `chuaCo` — đầu thứ hai
+           độc lập với XU_*, đúng luật 9.99.84 */
+        p9DaCo: (G.ST_PHAN || []).some(x => x.so === 9 && String(x.daCo || '').trim())
+      };
+    });
+
+    /* Một biểu thức, tính MỘT lần — luật 9.99.60. */
+    const xuDat = xu.soDen === 8 && !xu.denLacDuong.length && !xu.denThieuKhongDung.length &&
+      xu.denNguoi.length === 1 && xu.soLoi >= 9 && !xu.loiThieuCum.length &&
+      !xu.loiHaiDuong.length && xu.soHop >= 7 && !xu.hopThieu.length && !xu.troLac.length &&
+      xu.soNk === 7 && !xu.nkThieu.length && xu.soKhuon === 5 && !xu.khuonLac.length &&
+      xu.soKhoHinh === 3 && !xu.demThieu.length && !xu.luatDu.length && !xu.mocBang.length &&
+      xu.soCho >= 4 && !xu.choThieu.length && xu.p9DaCo &&
+      !bangDo.length && !sinhGiong.length && !raNgoai && !congSau && coCuaWorker &&
+      (banChepVai > 1 ? xu.con04 : !xu.con04);
+
+    bao(xuDat,
+      'XƯỞNG DỰNG VIDEO KHÔNG DỰNG BỘ DÒ THỨ HAI, KHÔNG CÓ CỬA SINH GIỌNG, VÀ KHÔNG GỌI THẲNG RA NGOÀI TỪ TRÌNH DUYỆT. Bản mẫu của chủ hệ tự dựng một bảng từ cấm, và dòng regex ấy mang HAI bẫy cùng lúc: `\\bhư\\b` KHÔNG BAO GIỜ khớp vì "ư" nằm ngoài lớp \\w, còn `\\bngu\\b` KHỚP vào "ngu|ồn" nên nó bắt oan mọi bài có chữ "nguồn" — mà "Nguồn tri thức" là tên một ô của chính cái form. Một bộ dò bắt oan ở lượt đầu thì người ta tắt nó đi, và lúc tắt thì chỗ CÂM đi theo. Giọng chỉ đến từ micro người thật hoặc tệp có sẵn: luật C20 nói máy TRỘN, không SINH',
+      xu.soDen !== 8 ? 'XU_DEN có ' + xu.soDen + ' đèn, bản mẫu dựng tám'
+        : xu.denLacDuong.length ? 'ĐÈN KHÔNG KHAI ĐÚNG MỘT ĐƯỜNG: ' + xu.denLacDuong.join(' · ') +
+            ' — phải `goiCua` HOẶC `mayDo` HOẶC `nguoiDo`, không hai và không thiếu'
+        : xu.denThieuKhongDung.length ? 'ĐÈN GỌI CỬA MÀ KHÔNG KHAI NÓ KHÔNG DỰNG LẠI GÌ: ' +
+            xu.denThieuKhongDung.join(' · ') + ' — không khai thì bản sau dựng thêm một bảng dấu hiệu'
+        : xu.denNguoi.length !== 1 ? 'CÓ ' + xu.denNguoi.length + ' ĐÈN NGƯỜI-ĐO (' +
+            xu.denNguoi.join(' · ') + ') — đúng MỘT đèn được mang nó, hai đèn thì cái nhấn mất nghĩa'
+        : xu.soLoi < 9 ? 'XU_LOI có ' + xu.soLoi + ' lỗi, đo được chín'
+        : xu.loiThieuCum.length ? 'LỖI KHÔNG KHAI ĐOẠN MÃ SINH RA NÓ: ' + xu.loiThieuCum.join(' · ') +
+            ' — không có `cum` thì không ai chạy lại được, nên không ai biết nó đúng hay sai'
+        : xu.loiHaiDuong.length ? 'LỖI KHAI CẢ HAI ĐƯỜNG HOẶC KHÔNG ĐƯỜNG NÀO: ' +
+            xu.loiHaiDuong.join(' · ') + ' — phải `luat` HOẶC `chuaCoLuat`'
+        : xu.soHop < 7 ? 'XU_HOP có ' + xu.soHop + ' chỗ đúng — nêu chín lỗi mà giấu chỗ đúng ' +
+            'thì người đọc bỏ cả bản mẫu đi làm lại, và chỗ đúng mất theo'
+        : xu.hopThieu.length ? 'CHỖ ĐÚNG KHÔNG TRỎ HOẶC KHÔNG NÓI Ý: ' + xu.hopThieu.join(' · ')
+        : xu.troLac.length ? 'TRỎ VÀO CHỖ KHÔNG CÓ THẬT: ' + xu.troLac.join(' · ')
+        : xu.soNk !== 7 ? 'XU_NGANKHO có ' + xu.soNk + ' nhóm câu, bản mẫu dựng bảy'
+        : xu.nkThieu.length ? 'NHÓM CÂU LỆCH SỐ CÂU VÀ SỐ CHỮ TRÊN MÀN: ' + xu.nkThieu.join(' · ') +
+            ' — lệch thì bộ chọn lấy chữ của câu khác, và không ai thấy'
+        : xu.soKhuon !== 5 ? 'XU_KHUON có ' + xu.soKhuon + ' khuôn, bản mẫu dựng năm'
+        : xu.khuonLac.length ? 'KHUÔN TRỎ NHÓM CÂU KHÔNG CÓ THẬT: ' + xu.khuonLac.join(' · ') +
+            ' — nhóm ấy lúc dựng lặng lẽ ra rỗng, và một cảnh rỗng trông y hệt một cảnh đủ'
+        : xu.soKhoHinh !== 3 ? 'XU_KHO_HINH có ' + xu.soKhoHinh + ' khổ, bản mẫu dựng ba'
+        : xu.demThieu.length ? 'XU_DEM THIẾU Ô: ' + xu.demThieu.join(' · ')
+        : xu.luatDu.length ? 'XU_LUAT THIẾU Ô: ' + xu.luatDu.join(' · ')
+        : xu.mocBang.length ? 'XU_ MỌC BẢNG RIÊNG: ' + xu.mocBang.join(' · ')
+        : xu.soCho < 4 ? 'XU_CHOCHU có ' + xu.soCho + ' mục'
+        : xu.choThieu.length ? 'MỤC CHỜ KHÔNG NÓI VÌ SAO MÁY KHÔNG TỰ CHỌN HOẶC KHÔNG KHAI CÁCH ĐO: ' +
+            xu.choThieu.join(' · ')
+        : !xu.p9DaCo ? 'ST_PHAN phần 9 vẫn khai `chuaCo` trong khi màn Studio đã dựng — ' +
+            'lời khai của sổ đặc tả và sự có mặt thật phải cùng nói một câu (luật 9.99.84)'
+        : bangDo.length ? 'XƯỞNG MỌC BẢNG DẤU HIỆU RIÊNG: ' + bangDo.join(' · ') +
+            ' — đèn ngôn từ phải gọi `soatNoiDung`; hai bảng lệch nhau thì CẢ HAI đều xanh ' +
+            'trên hai thứ khác nhau'
+        : sinhGiong.length ? 'ĐÃ CÓ CỬA SINH GIỌNG: ' + sinhGiong.join(' · ') +
+            ' — luật C20 nói máy TRỘN, không SINH. Viết cửa ấy rồi mới cấm gọi là muộn'
+        : raNgoai ? 'src/studio.js GỌI THẲNG MỘT ĐỊA CHỈ NGOÀI TỪ TRÌNH DUYỆT — chuỗi đi ra ' +
+            'mang chủ đề, người xem và điều nhỏ của một gia đình, và nó không qua cổng ẩn danh'
+        : !coCuaWorker ? 'CỬA `ghiHoChieuVideo` KHÔNG CÓ TRONG DANH SÁCH CỬA THẬT CỦA WORKER — ' +
+            'màn hình gọi một cửa không tồn tại thì nút ấy im lặng không làm gì'
+        : congSau ? 'CỔNG VAI CỦA CỬA HỘ CHIẾU KHÔNG CHẶN ĐÚNG (' + vaiLoi + ') — gọi thật ' +
+            'hai lượt: vai khách phải NOPERM, vai nghề phải đi qua được cổng vai. Một cổng ' +
+            'mở với khách là một đường vòng quanh mọi cổng khác; một cổng đóng với MỌI ' +
+            'người cũng là cổng hỏng, và nhìn thì y hệt một cổng chặt'
+        : banChepVai > 1 && !xu.con04 ? 'CÓ ' + banChepVai + ' BẢN CHÉP `laNguoiNha` trong ' +
+            'may-chu/ mà XU-04 không nằm trong sổ chờ — một bản chép không ai theo dõi là ' +
+            'một bản sắp trôi'
+        : banChepVai <= 1 && xu.con04 ? 'CHỈ CÒN ' + banChepVai + ' BẢN CHÉP `laNguoiNha` mà ' +
+            'XU-04 vẫn nằm trong sổ chờ — tiễn sang mục đã chốt'
+        : xu.soDen + ' đèn mỗi đèn một đường (' + xu.denNguoi.join('') + ' là đèn người-đo) · ' +
+          xu.soLoi + ' lỗi khai đoạn mã thật · ' + xu.soHop + ' chỗ đúng · ' + xu.soNk +
+          ' nhóm câu × ' + xu.soKhuon + ' khuôn · không bảng dấu hiệu riêng · không cửa sinh giọng');
   }
 
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +

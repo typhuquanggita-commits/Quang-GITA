@@ -124,6 +124,7 @@
     "src/phong-tai-chinh.js",
     "src/ve-thi-giac.js",
     "src/kien-truc-thi-giac.js",
+    "src/studio.js",
     "src/thu-phong.js",
     "src/thanh-duoi.js",
     "src/bo-nao.js",

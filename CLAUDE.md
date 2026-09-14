@@ -3985,6 +3985,122 @@ Năm chỗ hợp khai cùng năm chỗ va — nêu chỗ va mà giấu chỗ h�
 
 ---
 
+## XƯỞNG DỰNG VIDEO — MỘT DÒNG REGEX MANG HAI BẪY (9.99.94)
+
+Chủ hệ gửi một bản mẫu HTML **chạy được**: kịch bản sinh tại chỗ, canvas
+1080p, giọng ghi bằng micro, video xuất bằng `MediaRecorder`. Đây là
+**P9 — màn chính của bộ đặc tả Studio**, thứ `ST_PHAN` khai `chuaCo` từ
+9.99.92.
+
+Kho `data.studio-xuong.js` (9 kho, tiền tố `XU_`), màn `src/studio.js`,
+máy chủ `may-chu/studio.js`, bộ kiểm **mục 103**.
+
+### Bản mẫu ĐÚNG nhiều hơn sai, và chỗ đúng nhất là chỗ không ai để ý
+
+**Giọng lấy từ micro người thật hoặc tệp có sẵn — không một dòng TTS
+nào.** Bản mẫu tự giữ nguyên luật C20 mà không cần ai nhắc: nó **trả lời
+ST-01 bằng cách không cần hỏi**. Chú thích của chính nó viết *"Giọng
+người thật hợp chất ấm GITA hơn máy đọc."*
+
+Bảy chỗ đúng khai ở `XU_HOP`, và khai là **bắt buộc**: nêu chín lỗi mà
+giấu bảy chỗ đúng thì người đọc bỏ cả bản mẫu đi làm lại từ đầu, và bảy
+chỗ ấy mất theo.
+
+### Lỗi nặng nhất là một dòng, và nó mang HAI bẫy chồng lên nhau
+
+```
+/\b(lười|dốt|kém cỏi|hư|bất tài|vô dụng|ngu)\b/i
+
+\bhư\b   → IM LẶNG trên "Con hư quá"        bẫy dò chữ #1 của kho
+\bngu\b  → KHỚP "nguồn tri thức KS-04"      bắt oan chính ô Nguồn của form
+```
+
+Chạy thật bằng `node` để xác nhận, không đọc mã đoán. `\bhư\b` không bao
+giờ khớp vì "ư" nằm ngoài lớp `\w`; `\bngu\b` khớp vào `ngu|ồn` vì "ồ"
+cũng không phải `\w` nên giữa hai chữ **CÓ** biên.
+
+> **Một bộ dò vừa CÂM ở chỗ phải bắt vừa BẮT OAN ở chỗ lành.** Chỗ bắt
+> oan lộ ra ngay lượt đầu nên người dùng tắt đèn đi — và lúc tắt, chỗ
+> câm đi theo mà không ai biết.
+
+Ba lỗi nặng còn lại: bộ dò thứ hai (`ST_PHAN` phần 10 đã dặn từ 9.99.92
+*"gọi thẳng chúng, KHÔNG dựng bộ dò thứ hai"*); `fetch` thẳng
+`api.anthropic.com` **từ trình duyệt** — không khoá thì luôn hỏng, có
+khoá thì lộ khoá, và chuỗi mang chủ đề · người xem · điều nhỏ của một
+gia đình đi ra **không qua cổng ẩn danh** của 9.99.62; năm nút tải về
+**không một cổng vai nào**.
+
+### Bộ kiểm chứng minh KIẾN TRÚC của tôi sai, không phải một dòng mã
+
+Dựng xong lượt đầu thì mục **8** và mục **18** đỏ: `src/` không được có
+`a.download`, không được có đường tạo địa chỉ blob, không được có
+`showSaveFilePicker`. Đó là luật của chủ hệ — *khách hàng không tải bất
+cứ dữ liệu nào* — và nó canh **cứng, không theo vai**.
+
+Nới nó là bỏ hẳn phép canh. Câu trả lời đúng nằm sẵn trong kho:
+**`tools/dung-phim.js` mới là chỗ xuất tệp** — nó chạy ngoài trình
+duyệt, có ffmpeg, và có luật **C19** buộc dựng từ tấm ĐÃ PHÁT HÀNH.
+
+Nên xưởng web làm phần nó làm tốt — viết kịch bản, xem thử đúng khổ,
+soát đèn — rồi **đề bài đi qua MÁY CHỦ** sang bộ dựng.
+
+> **Đề bài đi qua cửa thì nó vào nhật ký. Một tệp tải về thì không.**
+
+Kéo theo hai chỗ phải làm lại: ảnh vào canvas bằng `createImageBitmap`
+chứ không qua một địa chỉ blob; tệp phim **nói thẳng là không nhận**
+thay vì lặng lẽ bỏ qua — một tệp bị bỏ qua trong im lặng thì người dùng
+tưởng mình đã gắn được.
+
+### Lần thứ NĂM của luật 9.99.78, và lần này nó bắt oan lời cảnh báo
+
+Sau khi gỡ sạch đường tải, mục 8 và 18 **vẫn đỏ** — vì `src/studio.js`
+có ba dòng **chú giải cảnh báo** về đúng cái bẫy chúng canh. Hai phép đo
+ấy dựng trước luật 9.99.78 nên chưa bao giờ bỏ chú giải.
+
+Cách sửa dễ nhất — xoá lời cảnh báo đi — là cách sai nhất. Nay cả hai
+gọi `boChuMa` trước khi dò. Lần thứ năm sau mục 89 · 91 · 93 · 94.
+
+### Mục 103 — sáu vế, và vế B là phép đo về thứ không được tồn tại
+
+Lần thứ **mười ba** trong bộ. `src/studio.js` và `may-chu/studio.js`
+không được khai một bảng dấu hiệu nào (`WAF` · `SENSITIVE` · `TU_CAM`…),
+**không được có cửa sinh giọng** (`sinhGiong` · `taoGiong` · `ttsGiong`
+…, hỏi danh sách hàm xuất ra chứ không dò chữ), và màn không được gọi
+thẳng một địa chỉ ngoài.
+
+Vế F đo **hai đầu độc lập** (luật 9.99.84): cửa `ghiHoChieuVideo` phải
+có trong danh sách cửa THẬT của `worker.js`, và cổng vai phải nằm
+**trước** khi dựng vật hộ chiếu — cùng lối *cổng trước INSERT* của mục
+86 · 87 · 91 · 93.
+
+Vế E cũng hai đầu: `ST_PHAN` phần 9 phải thôi khai `chuaCo`, và đầu kia
+là sự có mặt thật của `XU_*` trong kho.
+
+### Hai chỗ tự khai là bản thứ hai, thay vì giấu
+
+`laNguoiNha` nay có **hai** bản chép — `tu-nang-cap.js` và `studio.js`.
+Chính chú giải bản đầu (9.99.77) đã viết *"năm bản chép là năm chỗ để
+một bản trôi đi"*. Gom được thì phải dựng một mô-đun chung cho phép soi
+vai, và đó là một lượt sửa đụng mọi tệp máy chủ có cổng — cần bộ phá thử
+riêng cho từng cửa, vì nới nhầm một bậc là mở một cổng. Nên nó là **mục
+chờ XU-04**, và mục 103 đếm bản chép thật trên đĩa để canh.
+
+Và CSS chèn nhầm **sau** khối `@media` khổ chạm — luật kho nói khối ấy
+phải nằm CUỐI. Sửa ngay trong lượt, không để lại.
+
+### Sổ chờ
+
+- **XU-01** — xưởng có theo C19 (chỉ dựng từ tấm ĐÃ PHÁT HÀNH) không.
+  Buộc thì xưởng mất công dụng nhanh; không buộc thì có hai đường dựng
+  phim, một có cổng một không, và đường không cổng dễ dùng hơn.
+- **XU-02** — nhờ máy viết nháp: mở qua cửa máy chủ có cổng ẩn danh, hay
+  không mở.
+- **XU-03** — ai ký đèn D8 chất ấm, và ký bao lâu một lần. Người ký
+  không được là người dựng.
+- **XU-04** — gom `laNguoiNha` về một chỗ.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

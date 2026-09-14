@@ -18,7 +18,7 @@ window.G = G;
    trong khi nội dung đổi là một cách nói dối không cố ý. */
 G.META = {
   name: 'GITA 365',
-  version: '9.99.93',
+  version: '9.99.94',
   tagline: 'Hệ Sinh Thái Gia Đình Thịnh Vượng',
   hotline: '08.5555.4688',
   site: 'truongnhatquang.com',
@@ -932,6 +932,7 @@ G.NAV = [
     {v:'giam-sat', t:'Trần giám sát', h:'GITA-VIP dựng CÁI TRẦN trước, chưa dựng bộ giám sát — một cái cổng dựng sau một cái cửa đã chạy thì nó chỉ là một lời nhắc · sáu điều CẤM TUYỆT ĐỐI không lệnh nào mở được, kể cả lệnh R01 có chữ ký · ba ngăn phạm vi khác nhau ở CĂN CỨ PHÁP LÝ chứ không ở mức độ · lệnh uỷ quyền phải có hạn và tự thu hồi · sổ nối băm, sửa một dòng là vỡ mọi dòng sau', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'supreme', t:'GITA Supreme · bản đồ', h:'Bản đồ ba quyển nghiên cứu của chủ hệ và CÁI TRẦN của chúng — ngăn đầu là BẪY TÊN GỌI: ba thang cùng mang chữ điểm chạm (1.000 tiến độ · 9 cảm xúc · 100.000 hệ thống), và một luật bị phạm thì có người cãi còn hai thang cùng tên thì không ai cãi · bốn chỗ va MỚI, không chép lại sáu điều cấm đã có · hai chỗ phép dò của chính tôi BẮT OAN vì tài liệu đang phê phán chính thứ bị dò · ma trận 28 năng lực · mười lớp điểm chạm · 45/100 phần đã có chữ', ic:'shield', star:1, perm:'nghe_chung', capMo:'chung'},
     {v:'bien-soan-noi-dung', t:'Biên soạn nội dung', h:'Khuôn 24 khối · máy đo · thang năm cổng · hiến pháp nội dung', ic:'book', star:1, perm:'qt_trang', capMo:'chung'},
+    {v:'studio', t:'GITA Studio · Xưởng dựng video', h:'Kịch bản · canvas 1080p · giọng người thật · đèn kiểm định · hộ chiếu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'kien-truc-thi-giac', t:'Kiến trúc sư thị giác', h:'Đọc màn · tài liệu · đề xuất · kho · hiến pháp · luật thương hiệu', ic:'spark', star:1, perm:'qt_trang', capMo:'chung'},
     {v:'phan-quyen',   t:'Phân công & cấp quyền',      h:'15 vị trí × 31 quyền · bấm ô để đổi', ic:'shield', star:1, perm:'qt_trang', capMo:'quantri'},
     {v:'cap-tai-khoan',t:'Mở tài khoản mới',           h:'Cấp cho vị trí từ Tư vấn trở lên',    ic:'plus', star:1, perm:'qt_trang', capMo:'quantri'},
