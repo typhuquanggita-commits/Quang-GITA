@@ -19,7 +19,8 @@ G.VIEWS = G.VIEWS || {};
   var NGAN = [
     {ma: 'phatsinh', ten: 'Sổ phát sinh', ic: 'list'},
     {ma: 'nhap',     ten: 'Bản nháp chờ duyệt', ic: 'edit'},
-    {ma: 'luat',     ten: 'Bảy luật', ic: 'shield'},
+    {ma: 'rb',       ten: 'Cẩm nang ứng phó', ic: 'shield'},
+    {ma: 'luat',     ten: 'Luật', ic: 'shield'},
     {ma: 'khong',    ten: 'Chỗ không làm', ic: 'lock'}
   ];
 
@@ -47,7 +48,7 @@ G.VIEWS = G.VIEWS || {};
     return d ? d.ten : ma;
   }
   function chuoiKho() {
-    return { kho: G.THT_CAP || [], camNang: G.THT_CAMNANG || [] };
+    return { kho: G.THT_CAP || [], camNang: G.THT_CAMNANG || [], ungPho: G.THT_UNGPHO || [] };
   }
   function moiCap() {
     var ra = [], ch = chuoiKho();
@@ -91,7 +92,9 @@ G.VIEWS = G.VIEWS || {};
       'Admin mới 入库.');
     var ch = chuoiKho();
     Object.keys(ch).forEach(function (k) {
-      var ten = k === 'kho' ? 'Chuỗi LẤP KHO (kho rỗng)' : 'Chuỗi CẨM NANG (gỡ ca khó)';
+      var ten = k === 'kho' ? 'Chuỗi LẤP KHO (kho rỗng)'
+        : k === 'camNang' ? 'Chuỗi CẨM NANG (gỡ ca khó)'
+        : 'Chuỗi ỨNG PHÓ (đối thủ · quá tải · gửi sai)';
       o += U.sec(ten, '');
       o += U.tbl(['Thứ', 'Cấp', 'Vai ký', 'Việc'],
         (ch[k] || []).map(function (c) {
@@ -119,7 +122,21 @@ G.VIEWS = G.VIEWS || {};
     return o;
   }
 
-  /* ── NGĂN 3 · BẢY LUẬT ── */
+  /* ── NGĂN · CẨM NANG ỨNG PHÓ ── */
+  function veRB() {
+    var o = U.sec('Cẩm nang ứng phó — viết trước (tình huống 7)',
+      'Đối thủ chơi xấu, quá tải, gửi nhầm: mỗi tờ viết TRƯỚC vì lúc chuyện xảy ra không ai ngồi ' +
+      'nghĩ ra quy trình. Mọi ứng phó qua kênh HỢP PHÁP — không phản công trái phép, không bôi ' +
+      'nhọ đối thủ, sự cố nói thật với khách. Phương án cho một sự cố cụ thể vẫn đi qua chuỗi ' +
+      'ứng phó (Ban vận hành → Giám đốc → Super Admin).');
+    o += U.tbl(['Mã', 'Tình huống', 'Các bước', 'Ai', 'Trong bao lâu', 'KHÔNG làm'],
+      (G.THT_RB || []).map(function (r) {
+        return [h(r.ma), h(r.tinhHuong), h(r.buoc), h(r.ai), h(r.trongBaoLau), h(r.khongLam)];
+      }));
+    return o;
+  }
+
+  /* ── NGĂN · LUẬT ── */
   function veLuat() {
     var lu = G.THT_LUAT || {};
     var hang = [
@@ -177,6 +194,7 @@ G.VIEWS = G.VIEWS || {};
 
     if (G.thtNgan === 'phatsinh') o += vePhatSinh();
     else if (G.thtNgan === 'nhap') o += veNhap();
+    else if (G.thtNgan === 'rb') o += veRB();
     else if (G.thtNgan === 'luat') o += veLuat();
     else o += veKhong();
 

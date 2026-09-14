@@ -4332,6 +4332,50 @@ vào-staging vẫn canh như 9.99.96.
 
 ---
 
+## ỨNG PHÓ VẬN HÀNH · PHÁP LÝ — CHUỖI THỨ BA (9.99.98)
+
+Theo tình huống 7: uy tín GITA lên nhanh, khách đổ bộ; **đối thủ chơi
+xấu** (báo spam group, dựng bản sao giả, hạ giá hạ bệ, xâm nhập group
+cướp khách), **quá tải/nghẽn**, **gửi nhầm-sai-thiếu** do không theo sát
+cá nhân hoá. Chủ hệ nhấn: xử lý triệt để **KHÔNG để lại hậu quả pháp
+lý**, lấy lại uy tín cao nhất.
+
+### Chuỗi thứ ba trên cùng một cái răng
+
+Thêm chuỗi `ungPho` vào registry `CHUOI`: **Ban vận hành(R02) → Giám
+đốc(R03) → Super Admin(R01)**. Ba loại phát sinh mới (`doiThuChoiXau` ·
+`quaTai` · `guiNhamSai`). Kho MỚI `THT_UNGPHO` (chuỗi) + `THT_RB` (năm
+cẩm nang ứng phó viết trước) — không đổi hình kho đã phát hành.
+
+### Bốn luật giữ cho ứng phó KHÔNG tạo hậu quả pháp lý
+
+- **`khongPhanCongTraiPhap`**: mọi ứng phó CHỈ qua kênh HỢP PHÁP (kháng
+  nghị nền tảng, báo nhãn hiệu). KHÔNG báo spam ngược, KHÔNG hack lại,
+  KHÔNG bôi nhọ — cùng luật phản-công-trong-nhà (cứu hệ 9.99.95).
+- **`suCoNoiThat`**: quá tải/gửi sai thì NÓI THẬT và SỬA, không giấu —
+  giấu một sự cố có thật là chỗ dễ thành hậu quả pháp lý.
+- **`khongHaGiaChay`**: đối thủ hạ giá → không đua phá khung; giá là Vùng
+  Đỏ, đổi qua bang-gia có cấp phép (9.99.73).
+- **`giuUyTinKhongNoiXau`**: không nói xấu đối thủ (cùng QC so sánh
+  9.99.65) — lấy lại uy tín bằng việc mình làm đúng.
+
+### Năm cẩm nang viết trước (THT_RB)
+
+RB-01 spam group · RB-02 bản sao giả · RB-03 xâm nhập group · RB-04 quá
+tải · RB-05 gửi nhầm. Mỗi tờ khuôn TG_UNGPHO (9.99.59): bước LÀM ĐƯỢC,
+ai, trong bao lâu, **và một ô KHÔNG LÀM** (phản ứng trái phép phải tránh).
+RB-05 nhắc L10: máy KHÔNG soạn thư xin lỗi cá nhân, xin lỗi dịch vụ ngắn
+thì được.
+
+### Mục 105 + phá thử
+
+Mục 105 nay canh BA chuỗi (soChuoi===3), tám loại, mười ba luật, năm cẩm
+nang RB đủ ô. Phá thử: bỏ `khongLam` của RB-01 → đỏ "CẨM NANG ỨNG PHÓ
+thiếu bước/ai/giờ/khôngLàm: RB-01". Mục 21 thu-worker chạy trọn chuỗi
+ungPho (sai vai chặn, đủ ba chữ ký → áp dụng).
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ

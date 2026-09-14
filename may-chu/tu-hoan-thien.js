@@ -49,6 +49,7 @@ function vaiCua(hoSo) { return String((hoSo || {}).role || ''); }
    nháp ấy, nên thêm một chuỗi mới KHÔNG dựng lại cổng.
      · kho     — lấp kho rỗng (tình huống 5): Sản phẩm → Giám đốc → Super Admin
      · camNang — cẩm nang gỡ ca khó (tình huống 6): Coach cao nhất → Giám đốc → Super Admin
+     · ungPho  — ứng phó vận hành/pháp lý (tình huống 7): Vận hành → Giám đốc → Super Admin
    Ba vai khác nhau trong mỗi chuỗi → ba người khác nhau một cách tự nhiên. */
 export const CHUOI = {
   kho: [
@@ -60,16 +61,21 @@ export const CHUOI = {
     { ma: 'coachCao',   ten: 'Bộ phận Coach cao nhất',  vai: 'R05', thu: 1 },
     { ma: 'giamDoc',    ten: 'Giám đốc điều hành',      vai: 'R03', thu: 2 },
     { ma: 'superAdmin', ten: 'Super Admin',             vai: 'R01', thu: 3 }
+  ],
+  ungPho: [
+    { ma: 'vanHanh',    ten: 'Ban vận hành',            vai: 'R02', thu: 1 },
+    { ma: 'giamDoc',    ten: 'Giám đốc điều hành',      vai: 'R03', thu: 2 },
+    { ma: 'superAdmin', ten: 'Super Admin',             vai: 'R01', thu: 3 }
   ]
 };
 const LOAI_DUYET = Object.keys(CHUOI);
 function chuoiCua(ld) { return CHUOI[ld] || null; }
 
-/* Năm loại phát sinh. Bản chép của G.THT_PHATSINH_LOAI — mục 105 đối
-   chiếu. giaDinhVuong (9.99.97) là ca tình huống 6: nhà không có điểm
-   trùng khớp, con hợp tác vỏ ngoài, phụ huynh bận, minh chứng = 0. */
+/* Tám loại phát sinh. Bản chép của G.THT_PHATSINH_LOAI — mục 105 đối
+   chiếu. giaDinhVuong (9.99.97) là ca tình huống 6. Ba loại 9.99.98 là
+   tình huống 7: đối thủ chơi xấu · quá tải · gửi nhầm-sai-thiếu. */
 export const LOAI_PHATSINH = ['khoRong', 'phanHoiXau', 'hoiNgoaiKichBan',
-  'duLieuGia', 'giaDinhVuong'];
+  'duLieuGia', 'giaDinhVuong', 'doiThuChoiXau', 'quaTai', 'guiNhamSai'];
 
 /* ═══════════════ SỔ PHÁT SINH — GHI NGAY ═══════════════
 

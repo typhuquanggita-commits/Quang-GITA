@@ -6831,6 +6831,37 @@ bao((await goi({fn: 'duyetCap', token: t01, napId: bnC.id, cap: 'superAdmin',
 bao((await goi({fn: 'nhapKho', token: t01, napId: bnC.id})).than.ok,
   'đủ ba chữ ký chuỗi camNang → Super Admin áp dụng cẩm nang');
 
+/* ═══════════════ 21 · CHUỖI ỨNG PHÓ — TÌNH HUỐNG 7 ═══════════════
+   Đối thủ chơi xấu / quá tải / gửi sai: phương án ứng phó qua chuỗi
+   ungPho (Ban vận hành R02 → Giám đốc R03 → Super Admin R01). */
+console.log('\n21 · CHUỖI ỨNG PHÓ — TÌNH HUỐNG 7');
+await themNguoi('U-tht-r2', 'tht-r2@gita365.vn', 'MatKhauRieng2026!', 'R02', {portal: 'admin'});
+const t02 = (await goi({fn: 'dangNhap', u: 'tht-r2@gita365.vn', mk: 'MatKhauRieng2026!'})).than.token;
+
+const ps7 = (await goi({fn: 'ghiPhatSinh', token: t07b, loai: 'doiThuChoiXau',
+  cauHoi: 'đối thủ báo spam group', chiTiet: 'Đối thủ báo spam hàng loạt vào group Gia đình thịnh vượng'})).than;
+bao(ps7.ok, 'ghi phát sinh đối thủ chơi xấu (tình huống 7)', ps7.id);
+
+const bnU = (await goi({fn: 'soanBanNhap', token: t07b, phatSinhId: ps7.id, tenKho: 'UNG_PHO_SPAM',
+  tieuDe: 'Phương án kháng nghị spam', loaiDuyet: 'ungPho',
+  noiDung: 'Kháng nghị nền tảng theo biểu mẫu, siết duyệt thành viên tạm thời, qua kênh hợp pháp',
+  nguon: 'THT_RB RB-01'})).than;
+bao(bnU.ok && bnU.loaiDuyet === 'ungPho', 'soạn phương án vào chuỗi ứng phó', bnU.id);
+
+/* Cấp vanHanh phải R02, R04 bị chặn */
+bao((await goi({fn: 'duyetCap', token: t04, napId: bnU.id, cap: 'vanHanh',
+    ghiChu: 'thử sai vai'})).than.code === 'SAIVAI',
+  'cấp vanHanh phải do R02 ký, R04 bị chặn');
+bao((await goi({fn: 'duyetCap', token: t02, napId: bnU.id, cap: 'vanHanh',
+  ghiChu: 'phương án chạy được, mọi bước qua kênh hợp pháp, không phản công trái phép'})).than.ok,
+  'R02 duyệt cấp Ban vận hành');
+bao((await goi({fn: 'duyetCap', token: t03, napId: bnU.id, cap: 'giamDoc',
+  ghiChu: 'giữ uy tín, không tạo rủi ro pháp lý'})).than.ok, 'R03 duyệt cấp giám đốc (ungPho)');
+bao((await goi({fn: 'duyetCap', token: t01, napId: bnU.id, cap: 'superAdmin',
+  ghiChu: 'chốt phương án ứng phó'})).than.ok, 'R01 duyệt cấp Super Admin (ungPho)');
+bao((await goi({fn: 'nhapKho', token: t01, napId: bnU.id})).than.ok,
+  'đủ ba chữ ký chuỗi ứng phó → Super Admin áp dụng phương án');
+
 console.log('');
 /* process.exit() KHÔNG đợi stdout ghi xong khi đầu ra là tệp hay ống —
    dòng cuối cùng biến mất, và người đọc bản ghi thấy một bộ thử dừng

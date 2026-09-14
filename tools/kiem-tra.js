@@ -17839,9 +17839,9 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         (rCap || {}).code === 'NOPERM' && (rLoai || {}).code === 'LOAILA';
     } catch (e) { hv = 'gọi hỏng: ' + (e && e.message); }
 
-    /* B3 · vai các cấp ở máy chủ đọc từ CHUOI (gộp cả hai chuỗi, bỏ trùng) */
+    /* B3 · vai các cấp ở máy chủ đọc từ CHUOI (gộp cả ba chuỗi, bỏ trùng) */
     const capMay = [...new Set([...maTht.matchAll(
-      /ma:\s*'(sanPham|giamDoc|superAdmin|coachCao)',\s*ten:[^,]*,\s*vai:\s*'(R\d\d)'/g)]
+      /ma:\s*'(sanPham|giamDoc|superAdmin|coachCao|vanHanh)',\s*ten:[^,]*,\s*vai:\s*'(R\d\d)'/g)]
       .map(m => m[1] + '=' + m[2]))].sort().join(',');
 
     /* F · worker wired */
@@ -17850,36 +17850,43 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
       !(new RegExp("fn === '" + c + "'").test(wkT)) || !(new RegExp("'" + c + "'").test(wkT)));
 
     const t = await p.evaluate(() => {
-      const G = window.G, chuoi = { kho: G.THT_CAP || [], camNang: G.THT_CAMNANG || [] },
-        loai = G.THT_PHATSINH_LOAI || [],
+      const G = window.G,
+        chuoi = { kho: G.THT_CAP || [], camNang: G.THT_CAMNANG || [], ungPho: G.THT_UNGPHO || [] },
+        loai = G.THT_PHATSINH_LOAI || [], rb = G.THT_RB || [],
         lu = G.THT_LUAT || {}, kh = G.THT_KHONG_LAM || [], sc = G.THT_CHOCHU || [];
       const co = s => !!String(s || '').trim();
       const moiCap = []; Object.keys(chuoi).forEach(k => (chuoi[k] || []).forEach(c => moiCap.push(c)));
       return {
         soChuoi: Object.keys(chuoi).filter(k => (chuoi[k] || []).length).length,
+        soRB: rb.length,
+        rbThieu: rb.filter(x => !co(x.tinhHuong) || !co(x.buoc) || !co(x.ai) ||
+          !co(x.trongBaoLau) || !co(x.khongLam)).map(x => x.ma),
         capKho: [...new Set(moiCap.map(c => c.ma + '=' + c.vai))].sort().join(','),
         capThieu: moiCap.filter(c => !co(c.ma) || !co(c.vai) || !co(c.ten) || !co(c.lam)).map(c => c.ma),
         loaiKho: loai.map(l => l.ma).sort().join(','),
         loaiThieu: loai.filter(l => !co(l.ma) || !co(l.ten) || !co(l.vi)).map(l => l.ma),
         luatDu: ['maySoanKhongNhap', 'duTinhLucDoc', 'baNguoiKhacNhau', 'khoRongNoiThat',
           'nhapKhongPhucVu', 'chuaCapThiCho', 'ghiNgay', 'minhChungKhong',
-          'ngoaiGoiKhongChoKhong'].filter(k => !co(lu[k])),
+          'ngoaiGoiKhongChoKhong', 'khongPhanCongTraiPhap', 'suCoNoiThat',
+          'khongHaGiaChay', 'giuUyTinKhongNoiXau'].filter(k => !co(lu[k])),
         soKhong: kh.length,
         khongThieu: kh.filter(x => !co(x.doi) || !co(x.vi)).map(x => x.ma),
         soCho: sc.length,
         choThieu: sc.filter(x => !co(x.viMayKhongTuChon) || !co(x.do)).map(x => x.ma),
         mocBang: Object.keys(G).filter(k => /^THT_/.test(k) &&
-          !['THT_CAP', 'THT_CAMNANG', 'THT_PHATSINH_LOAI', 'THT_LUAT', 'THT_KHONG_LAM',
-            'THT_CHOCHU'].includes(k))
+          !['THT_CAP', 'THT_CAMNANG', 'THT_UNGPHO', 'THT_RB', 'THT_PHATSINH_LOAI', 'THT_LUAT',
+            'THT_KHONG_LAM', 'THT_CHOCHU'].includes(k))
       };
     });
 
-    const capKhop = t.capKho === capMay && capMay.length > 0 && t.soChuoi === 2;
-    const loaiKhop = t.loaiKho === 'duLieuGia,giaDinhVuong,hoiNgoaiKichBan,khoRong,phanHoiXau';
+    const capKhop = t.capKho === capMay && capMay.length > 0 && t.soChuoi === 3;
+    const loaiKhop = t.loaiKho ===
+      'doiThuChoiXau,duLieuGia,giaDinhVuong,guiNhamSai,hoiNgoaiKichBan,khoRong,phanHoiXau,quaTai';
 
     const tDat = gateTruoc && !coCotDuyet && !soanInsLa.length && hvDat &&
       capKhop && !t.capThieu.length && loaiKhop && !t.loaiThieu.length &&
       !t.luatDu.length && t.soKhong >= 4 && !t.khongThieu.length &&
+      t.soRB >= 5 && !t.rbThieu.length &&
       t.soCho >= 2 && !t.choThieu.length && !t.mocBang.length && !cuaThieu.length;
 
     bao(tDat,
@@ -17890,7 +17897,7 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
             'không một cột tóm tắt (cùng luật cột conHan 9.99.63, cột den 9.99.66)'
         : soanInsLa.length ? 'soanBanNhap INSERT VÀO KHO KHÁC staging: ' + soanInsLa.join(' · ') +
             ' — máy SOẠN, không NHẬP; chỉ nhapKho (có răng) mới đưa nội dung ra phục vụ khách'
-        : !hvDat ? 'HÀNH VI CỬA SAI: ' + hv + ' (mong nhập→NOPERM soạn→THIEUPS duyệt→CAPLA ghi→LOAILA)'
+        : !hvDat ? 'HÀNH VI CỬA SAI: ' + hv + ' (mong nhập→NOPERM soạn→THIEUPS duyệt→NOPERM ghi→LOAILA)'
         : !capKhop ? 'THT_CHUOI LỆCH bản chép máy chủ (' + t.soChuoi + ' chuỗi) — kho: ' +
             t.capKho + ' · máy chủ: ' + capMay
         : t.capThieu.length ? 'THT_CHUOI thiếu ô: ' + t.capThieu.join(' · ')
@@ -17899,6 +17906,8 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         : t.luatDu.length ? 'THT_LUAT THIẾU Ô: ' + t.luatDu.join(' · ')
         : t.soKhong < 4 ? 'THT_KHONG_LAM có ' + t.soKhong + ' mục'
         : t.khongThieu.length ? 'CHỖ KHÔNG LÀM thiếu vì sao: ' + t.khongThieu.join(' · ')
+        : t.soRB < 5 ? 'THT_RB có ' + t.soRB + ' cẩm nang, cần ≥5'
+        : t.rbThieu.length ? 'CẨM NANG ỨNG PHÓ thiếu bước/ai/giờ/khôngLàm: ' + t.rbThieu.join(' · ')
         : t.soCho < 2 ? 'THT_CHOCHU có ' + t.soCho + ' mục'
         : t.choThieu.length ? 'MỤC CHỜ thiếu vì-sao/cách-đo: ' + t.choThieu.join(' · ')
         : t.mocBang.length ? 'THT_ MỌC BẢNG RIÊNG: ' + t.mocBang.join(' · ')
