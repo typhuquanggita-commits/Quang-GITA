@@ -16802,6 +16802,100 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
     }
   }
 
+  /* DÒNG IN, không chỉ khung chú giải: `mucNay` lấy từ chính dòng in
+     tiêu đề, nên mục nào thiếu nó thì MỌI dòng đỏ của nó ghi số mục của
+     mục đứng trước. Con trỏ chỉ sai chỗ tệ hơn không có con trỏ, và nó
+     chỉ lộ ra lúc phá thử — lúc xanh thì không có dòng đỏ nào để mà
+     sai. Bài học 9.99.63, tám mục 72–79 đều ghi nhầm "[mục 71]". */
+  console.log('\n98 · BÁNH ĐÀ NỐI VÀO NĂM TẦNG — MỘT NGUỒN, KHÔNG HAI BẢN CHÉP');
+  /* ═══════════════ 98 · BÁNH ĐÀ NỐI VÀO NĂM TẦNG — MỘT NGUỒN, KHÔNG HAI
+
+     Chủ hệ chốt 9.99.89: hệ bánh đà gắn với hành trình 5 tầng khách
+     hàng. Chỗ nối ấy ĐÃ CÓ từ trước và đã đúng — đo ra hai chiều khớp,
+     không lệch dòng nào. Việc của bản này là gỡ BẢN CHÉP THỨ HAI, và
+     canh nó không mọc lại.
+
+     Ô `HT_TANG[].bd` giữ đúng thông tin của `BD_LON[].tang` nhìn từ
+     phía kia, và KHÔNG AI ĐỌC nó — quét cả src/ lẫn may-chu/ ra 0 chỗ.
+     Một bản chép không ai đọc là bản chép tệ nhất: nó chỉ ngồi chờ
+     trôi, và lúc trôi thì không màn nào hiện ra chỗ sai.
+
+     Bốn vế:
+
+     A · `HT_TANG` KHÔNG mọc lại ô `bd`. Phép đo về thứ không được tồn
+         tại — lần thứ MƯỜI MỘT trong bộ, sau LR1 (79) · ô tự khai (81)
+         · cột đèn (83) · cột ba cửa (86) · ô lọc bốc nhà (88) · cửa
+         chưa dựng (91) · cột cấp người xin (93) · ô `d` thang 1000 (95)
+         · cửa R14 (97-G) · cửa giữ tiền hộ (97-H).
+
+     B · Mọi `BD_LON[].tang` trỏ vào một tầng CÓ THẬT trong `HT_TANG`,
+         và mọi tầng đều có ít nhất một bánh đà. Đây là đầu thứ hai độc
+         lập: `HT_TANG` do tệp hành trình khai, `BD_LON` do tệp bánh đà
+         khai, hai tệp khác nhau.
+
+     C · Trăm bánh đà nhỏ KHÔNG khai tầng riêng. Chúng thừa hưởng tầng
+         của bánh đà cha — khai riêng là mở đường cho một bánh nhỏ nằm
+         ở tầng khác cha nó, và lúc ấy "không nhảy cóc một bậc"
+         (HT_LUAT) không còn canh được gì.
+
+     D · `HT_NOI` khai đủ năm thang và mọi kho nó trỏ CÓ THẬT. Chính
+         `HT_NOI_LUAT.vi` viết: *"Nối bằng mắt người thì coi như chưa
+         nối."* Một bảng nối trỏ vào kho không tồn tại thì nó nối bằng
+         mắt.                                                          */
+  {
+    const bd = await p.evaluate(() => {
+      const ht = window.G.HT_TANG || [], bl = window.G.BD_LON || [],
+        hn = window.G.HT_NOI || [];
+      const maTang = new Set(ht.map(t => t.ma));
+      return {
+        soTang: ht.length, soBD: bl.length,
+        /* A — ô không được tồn tại */
+        mocLaiBd: ht.filter(t => t.bd !== undefined).map(t => t.ma),
+        /* B — hai đầu độc lập */
+        tangLac: bl.filter(b => !maTang.has(b.tang)).map(b => 'BD' + b.so + '→' + b.tang),
+        tangRong: ht.filter(t => !bl.some(b => b.tang === t.ma)).map(t => t.ma),
+        thieuTang: bl.filter(b => !(b.tang || '').trim()).map(b => 'BD' + b.so),
+        /* C — bánh nhỏ thừa hưởng, không khai riêng */
+        soNho: bl.reduce((n, b) => n + (b.nho || []).length, 0),
+        nhoKhaiTang: bl.flatMap(b => (b.nho || [])
+          .filter(x => x.tang !== undefined).map(x => x.ma)),
+        nhoThieu: bl.filter(b => (b.nho || []).length !== 10).map(b => 'BD' + b.so),
+        /* D — bảng nối trỏ kho có thật */
+        noiSo: hn.length,
+        noiLac: hn.filter(n => n.kho && !(n.kho in window.G)).map(n => n.ma + '→' + n.kho),
+        noiChuaNoi: hn.filter(n => !n.daNoi).map(n => n.ma)
+      };
+    });
+
+    /* Một biểu thức, tính MỘT lần — luật 9.99.60. */
+    const bdDat = bd.soTang === 5 && bd.soBD === 10 && !bd.mocLaiBd.length &&
+      !bd.tangLac.length && !bd.tangRong.length && !bd.thieuTang.length &&
+      bd.soNho === 100 && !bd.nhoKhaiTang.length && !bd.nhoThieu.length &&
+      bd.noiSo === 5 && !bd.noiLac.length && !bd.noiChuaNoi.length;
+
+    bao(bdDat,
+      'BÁNH ĐÀ NỐI VÀO NĂM TẦNG QUA MỘT NGUỒN DUY NHẤT — BD_LON[].tang. Chỗ nối đã có từ trước và đã đúng; việc của 9.99.89 là gỡ BẢN CHÉP THỨ HAI. Ô HT_TANG[].bd giữ đúng thông tin ấy nhìn từ phía kia, và KHÔNG AI ĐỌC nó — một bản chép không ai đọc là bản chép tệ nhất, vì nó chỉ ngồi chờ trôi và lúc trôi thì không màn nào hiện ra chỗ sai. Ai cần chiều ngược thì lọc LÚC ĐỌC',
+      bd.soTang !== 5 ? 'HT_TANG có ' + bd.soTang + ' tầng, phải là 5 (HT_LUAT: không có tầng thứ sáu)'
+        : bd.soBD !== 10 ? 'BD_LON có ' + bd.soBD + ' bánh đà lớn, phải là 10'
+        : bd.mocLaiBd.length ? 'HT_TANG MỌC LẠI Ô `bd`: ' + bd.mocLaiBd.join(' · ') +
+            ' — bản chép thứ hai của BD_LON[].tang, và không ai đọc nó'
+        : bd.thieuTang.length ? 'BÁNH ĐÀ KHÔNG KHAI TẦNG: ' + bd.thieuTang.join(' · ')
+        : bd.tangLac.length ? 'BÁNH ĐÀ TRỎ VÀO TẦNG KHÔNG CÓ THẬT: ' + bd.tangLac.join(' · ')
+        : bd.tangRong.length ? 'TẦNG KHÔNG CÓ BÁNH ĐÀ NÀO: ' + bd.tangRong.join(' · ') +
+            ' — một tầng không có bánh đà là một chặng nhà đi qua mà không có việc gì để làm'
+        : bd.nhoThieu.length ? 'BÁNH ĐÀ LỚN KHÔNG ĐỦ MƯỜI BÁNH NHỎ: ' + bd.nhoThieu.join(' · ')
+        : bd.soNho !== 100 ? 'Đếm ra ' + bd.soNho + ' bánh đà nhỏ, phải là 100'
+        : bd.nhoKhaiTang.length ? 'BÁNH ĐÀ NHỎ KHAI TẦNG RIÊNG: ' + bd.nhoKhaiTang.join(' · ') +
+            ' — bánh nhỏ thừa hưởng tầng của cha; khai riêng là mở đường cho một bánh nhỏ ' +
+            'nằm khác tầng cha nó, và lúc ấy luật "không nhảy cóc một bậc" hết canh được gì'
+        : bd.noiSo !== 5 ? 'HT_NOI có ' + bd.noiSo + ' thang, phải là 5'
+        : bd.noiLac.length ? 'BẢNG NỐI TRỎ VÀO KHO KHÔNG CÓ THẬT: ' + bd.noiLac.join(' · ') +
+            ' — HT_NOI_LUAT tự viết "nối bằng mắt người thì coi như chưa nối"'
+        : bd.noiChuaNoi.length ? 'THANG CHƯA NỐI: ' + bd.noiChuaNoi.join(' · ')
+        : '10 bánh đà lớn · 100 bánh nhỏ · 5 tầng, mỗi tầng có bánh đà · ' +
+          bd.noiSo + ' thang quy về tầng · HT_TANG không mọc lại ô `bd`');
+  }
+
 
   goc('\n' + (loi ? '✗ CÒN ' + loi + ' ĐIỂM CHƯA ĐẠT' : '✓ TOÀN BỘ ĐẠT — sẵn sàng phát hành') +
     ' · ' + soDat + ' phép đo đã chạy' + (IM ? ' (chế độ im — chỉ in chỗ đỏ)' : ''));

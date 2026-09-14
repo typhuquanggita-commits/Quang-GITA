@@ -3491,25 +3491,22 @@ chặng**. Mục chờ **TL-08**, Vùng Đỏ — máy không tự chọn.
 
 Dựng trước rồi đối chiếu là dựng bản thứ hai của một sự thật.
 
-### Bánh đà: 100 cái đã có, chỗ NỐI bằng 0
+### ~~Bánh đà: chỗ NỐI bằng 0~~ → **đã nối sẵn** (sửa ở 9.99.89)
 
-`BD_LON` 10 lớn × 10 nhỏ = **100**, kèm `BD_CAP` · `BD_CHON` · `BD_DAN`
-· `BD_LUAT`. Máy quét cả kho ấy:
+`BD_LON` 10 lớn × 10 nhỏ = **100**. Máy quét *cả kho ấy* ra `BN_ 0 ·
+bo-nao 0 · kenh 0 · SUP_ 0 · cua: 0`, và tôi kết luận **"không một bánh
+đà nào nối vào bất cứ hệ nào"**. Câu ấy **SAI**.
 
-```
-BN_ 0 · bo-nao 0 · troLy 0 · kenh 0 · SUP_ 0 · cua: 0 · facebook 0
-```
+Phép quét đọc **một phía** — `data.banh-da.js`. Chỗ nối nằm ở phía kia:
+`HT_TANG[].bd` và bảng `HT_NOI`. Cùng lớp lỗi `napKho()` quên
+`src/data.core.js` ở chính bản này: **một phép quét một phía thì nó báo
+thiếu đúng thứ đang có.**
 
-**Không một bánh đà nào nối vào bất cứ hệ nào.** Ba chỗ nữa: Group
-Facebook có **0 cửa máy chủ**; `BD_LUAT[5]` *"không nhà nào bị so với
-nhà khác"* là **bản thứ hai** của `LR1` và `VIP_CAM C1` (hai cái ấy đã
-có răng); và TL-11 — tài liệu 971 KB nhắc *bánh đà* **77 lần** — chưa
-đọc.
+Giữ dòng sai ở đây thay vì xoá — xem 9.99.89.
 
-Cách nối đã chọn: bảng **`BD_NOI` riêng**, không nhét vào dữ liệu bánh
-đà. Chỗ nối là một sự thật riêng, sửa không đụng hai đầu; và phép đo
-canh hai đầu độc lập — bảng nối ↔ danh sách cửa thật của `worker.js`.
-Bảng phải trả lời được câu **ngược**: *bánh đà nào chưa nối vào đâu cả*.
+Hai chỗ còn đúng: Group Facebook có **0 cửa máy chủ**; `BD_LUAT[5]`
+*"không nhà nào bị so với nhà khác"* là **bản thứ hai** của `LR1` và
+`VIP_CAM C1` (hai cái ấy đã có răng).
 
 ### Hai lỗi của tôi, khác loại, cùng bắt ở lượt chạy đầu
 
@@ -3533,6 +3530,80 @@ ghi *"G 7"*: không phải 60, không phải 58, và khối G không phải 7.
 
 Bản đã soi lưu ở Drive chủ hệ: *TRỢ LÝ AI GITA 365 → GITA365 — SỔ ĐẶC
 TẢ*.
+
+---
+
+## BÁNH ĐÀ × NĂM TẦNG — MỘT NGUỒN, KHÔNG HAI BẢN CHÉP (9.99.89)
+
+Chủ hệ chốt: *"hệ thống bánh đà liên quan hành trình 5 tầng khách hàng
+đi qua GITA365"*. Bộ kiểm **mục 98**. Không thêm màn, không thêm kho.
+
+### Chốt này kho đã thi hành từ trước — và lời tôi nói ở 9.99.88 SAI
+
+Đo ra, không đoán:
+
+```
+BD_LON[].tang   BD1,2→T1  BD3,4,5→T2  BD6,7→T3  BD8,9→T4  BD10→T5
+HT_TANG[].bd    T1[1,2] T2[3,4,5] T3[6,7] T4[8,9] T5[10]     ← KHỚP
+HT_NOI          năm thang quy về TANG, cả năm daNoi:true
+```
+
+Chú giải đầu `data.hanh-trinh-5-tang.js` đã viết từ v9.21: *"Ba cái đầu
+ĐÃ nối vào năm tầng, và nối bằng khoá máy đọc được."*
+
+Tôi ở 9.99.88 quét `data.banh-da.js` ra `BN_ 0 · SUP_ 0 · cua: 0` rồi
+kết luận **"không một bánh đà nào nối vào bất cứ hệ nào"**. Sai — phép
+quét đọc **một phía**, mà chỗ nối nằm ở phía kia.
+
+> **Một phép quét một phía thì nó báo thiếu đúng thứ đang có.** Cùng
+> lớp lỗi `napKho()` quên `src/data.core.js` ở chính bản 9.99.88 — hai
+> lần trong một bản, và cả hai đều là **bắt oan**.
+
+### Việc thật của bản này: gỡ bản chép thứ hai
+
+Hai chiều khớp **hôm nay**. Không gì buộc chúng đi cùng ngày mai: thêm
+bánh đà thứ mười một, hay dời BD5 từ T2 sang T3, thì người sửa đụng
+đúng một bên.
+
+Nặng hơn: **không ai đọc `HT_TANG[].bd`.** Quét cả `src/` lẫn
+`may-chu/` ra 0 chỗ.
+
+> **Một bản chép KHÔNG AI ĐỌC là bản chép tệ nhất** — nó chỉ ngồi chờ
+> trôi, và lúc trôi thì không màn nào hiện ra chỗ sai.
+
+Nguồn duy nhất nay là `BD_LON[].tang`; chiều ngược **lọc lúc đọc**.
+Cùng luật cột `conHan` (9.99.63) · cột `den` (9.99.66) · mẫu số B1
+(9.99.87). Và `HT_NOI_LUAT.vi` đã viết sẵn lý do: *"Nối bằng mắt người
+thì coi như chưa nối"* — hai bản chép cũng nối bằng mắt, chúng nối bằng
+lời hứa rằng ai đó sẽ nhớ sửa cả hai.
+
+### Mục 98 — bốn vế
+
+| Vế | Canh gì |
+|---|---|
+| A | `HT_TANG` **không mọc lại** ô `bd` — thứ không được tồn tại, **lần thứ 11** |
+| B | mọi `BD_LON[].tang` trỏ tầng có thật · mọi tầng có ít nhất một bánh đà |
+| C | 100 bánh nhỏ **không khai tầng riêng** — thừa hưởng của cha |
+| D | `HT_NOI` đủ năm thang, mọi kho nó trỏ có thật |
+
+**Vế C là chỗ dễ bỏ nhất.** Cho bánh nhỏ khai tầng riêng là mở đường
+cho một bánh nhỏ nằm khác tầng cha nó — và lúc ấy luật *"không nhảy cóc
+một bậc"* (`HT_LUAT`) hết canh được gì.
+
+Vế B đo **hai đầu độc lập**: `HT_TANG` do tệp hành trình khai, `BD_LON`
+do tệp bánh đà khai — hai tệp khác nhau, nên đây là phép kiểm chéo thật,
+không phải cái gương của luật 9.99.84.
+
+### Chỗ nối CÒN LẠI, và nó là chỗ khác
+
+Bánh đà ↔ **năm tầng** đã nối. Bánh đà ↔ **Bộ Não · trợ lý · kênh ·
+group Facebook** thì chưa, và Group Facebook có **0 cửa máy chủ · 0
+kho**. `TL-11` (971 KB, nhắc *bánh đà* 77 lần) là tài liệu trả lời được
+câu ấy — chưa đọc.
+
+Và `BD_LUAT[5]` *"không nhà nào bị so với nhà khác"* vẫn là **bản thứ
+hai** của `LR1` (9.99.63) và `VIP_CAM C1` (9.99.76) — hai cái ấy đã có
+răng, cái này không.
 
 ---
 
