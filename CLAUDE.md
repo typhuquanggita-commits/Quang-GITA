@@ -3415,6 +3415,127 @@ câu ấy nói về một bộ đếm **không ai nêu tên**.
 
 ---
 
+## SỔ ĐẶC TẢ — 17 BẢN, 7 ĐÃ DỰNG, 10 CHƯA (9.99.88)
+
+Kho `G.TAILIEU_SPEC` (17) · `G.TAILIEU_SPEC_LUAT` (6); công cụ
+`tools/soi-tai-lieu.js`. **Không thêm màn nào.**
+
+### Câu chưa ai trả lời được bằng máy
+
+*Bản đặc tả nào đã dựng, dựng tới đâu, phần nào chưa.* Tới 9.99.87 câu
+ấy nằm rải trong chú giải tệp này — ba mươi ngàn chữ — nên **mỗi phiên
+phải dò lại từ đầu**. Đúng khoản tốn lớn nhất mà không ai nhìn thấy.
+
+`G.TAILIEU_DRIVE` (DR-01…DR-10) **không cũ, nó trả lời câu khác**: nó
+là sổ cho tài liệu NỘI DUNG đã tiêu hoá vào kho, kèm `soChu` /
+`soChuKho`. Gộp hai sổ là để một bản đặc tả chưa dựng nằm chung rổ với
+một cuốn sách đã vào kho.
+
+Công cụ **không lưu gì cả**, cùng lối `kho-luu.js` (9.99.79) — nó chỉ
+đọc, và đối chiếu **hai đầu độc lập**: lời khai của sổ ↔ kho `G.*` ·
+màn `G.NAV` · cửa `may-chu/` **có thật trên đĩa**. Luật 9.99.84.
+
+```
+node tools/soi-tai-lieu.js          bảng tổng
+node tools/soi-tai-lieu.js --thieu  chỉ chỗ chưa dựng
+node tools/soi-tai-lieu.js --muc <mã>  đếm lại phần của một bản
+```
+
+### Kho Drive lớn hơn nhiều so với thứ phiên làm việc đang có
+
+Bốn thư mục, ~60 tệp. Riêng *TRỢ LÝ AI GITA 365* có **14 tệp đặc tả**,
+phiên này mới có 8. **Bảy tệp chưa đọc một chữ**, tổng 4,75 MB — trong
+đó `APP NGÔN NGỮ MASTER ARCHITEC1.doc` 1,7 MB và `2. Bản cao cấp GITA
+365.doc` 1,5 MB (phiên này mới có tệp SỐ 1).
+
+**Một ứng dụng kho chưa có một dòng nào: App Ngôn Ngữ** — 2,3 MB qua
+hai tệp, cộng *App Trí Tuệ* ở thư mục VIP.
+
+**Bản chép ở thư mục tạm của phiên. Mất phiên là mất.** Ô `drive` giữ
+đường về bản gốc — cùng lý do 9.99.79 đưa `giay-phep/` vào bản sao lưu.
+
+### Giá của một lượt tải — đo chứ không đoán
+
+Tải tệp Drive qua base64 tốn **~0,34 token mỗi byte**: tệp 23 KB hết
+~8.000 token, bảy tệp chưa đọc ≈ **1,6 triệu token**.
+
+> **Đường rẻ là chủ hệ ĐÍNH KÈM tệp vào phiên** — tệp rơi thẳng xuống
+> đĩa, không qua ngữ cảnh, **0 token**. Đúng cách tám tệp hiện có đã tới.
+
+### Chỗ nặng nhất: HAI văn bản cùng tên Hiến pháp
+
+`dt4.txt` là **HIẾN PHÁP GITA 365 — văn bản gốc**, tự khai *"Cấp hiệu
+lực: cao nhất. Mọi văn bản khác trái Hiến pháp này đều vô hiệu"*. Có
+**Chương II — CHÍN ĐIỀU BẤT KHẢ SỬA**, Chương X Bảo hiến, Chương XI Sửa
+đổi, hai phụ lục kiểm hiến.
+
+Kho đang thi hành `BN_HIENPHAP` **13 điều** — của *Bộ Não v3.0*, một
+văn bản khác. Máy quét kho: **0 lần** "bất khả sửa" · "bảo hiến" ·
+"kiểm hiến".
+
+Cùng lớp lỗi `SUP_THANG` đã ghi — *một luật bị phạm thì có người cãi;
+hai thang cùng tên thì không ai cãi, chúng chỉ dần được đọc như một*.
+Lần này thứ trùng tên là **hiến pháp**, nên mọi cổng của kho có thể
+đang canh sai bản. Phần duy nhất đã vào kho là Điều 19 (sáu bậc theo
+NĂM), đối chiếu ở BG-01 và chủ hệ chốt 9.99.73 **giữ năm bậc theo
+chặng**. Mục chờ **TL-08**, Vùng Đỏ — máy không tự chọn.
+
+### Bốn bản đụng thứ kho ĐÃ CÓ — đối chiếu trước, dựng sau
+
+| Bản | Đụng | Lệch |
+|---|---|---|
+| TL-08 Hiến pháp gốc | `BN_HIENPHAP` | 13 điều ↔ 9 điều bất khả sửa |
+| TL-10 GITA-WOW | `BD_CAP` | kho 10 cấp ↔ đặc tả tới cấp 33 |
+| TL-14 10 phân đoàn tầng 2 | hệ năm tầng | thang thứ ba? |
+| TL-17 250 câu trắc nghiệm | `SH_HOI` | kho 348 câu ↔ 250 câu |
+
+Dựng trước rồi đối chiếu là dựng bản thứ hai của một sự thật.
+
+### Bánh đà: 100 cái đã có, chỗ NỐI bằng 0
+
+`BD_LON` 10 lớn × 10 nhỏ = **100**, kèm `BD_CAP` · `BD_CHON` · `BD_DAN`
+· `BD_LUAT`. Máy quét cả kho ấy:
+
+```
+BN_ 0 · bo-nao 0 · troLy 0 · kenh 0 · SUP_ 0 · cua: 0 · facebook 0
+```
+
+**Không một bánh đà nào nối vào bất cứ hệ nào.** Ba chỗ nữa: Group
+Facebook có **0 cửa máy chủ**; `BD_LUAT[5]` *"không nhà nào bị so với
+nhà khác"* là **bản thứ hai** của `LR1` và `VIP_CAM C1` (hai cái ấy đã
+có răng); và TL-11 — tài liệu 971 KB nhắc *bánh đà* **77 lần** — chưa
+đọc.
+
+Cách nối đã chọn: bảng **`BD_NOI` riêng**, không nhét vào dữ liệu bánh
+đà. Chỗ nối là một sự thật riêng, sửa không đụng hai đầu; và phép đo
+canh hai đầu độc lập — bảng nối ↔ danh sách cửa thật của `worker.js`.
+Bảng phải trả lời được câu **ngược**: *bánh đà nào chưa nối vào đâu cả*.
+
+### Hai lỗi của tôi, khác loại, cùng bắt ở lượt chạy đầu
+
+1. **Lỗi PHÉP ĐO** — `napKho()` chỉ nạp `kho-goc/`, mà `G.NAV` nằm ở
+   `src/data.core.js`. Mọi màn báo thiếu, công cụ **bắt oan 7 bản đang
+   khai đúng**. Một phép đo bắt oan thì lần sau người ta tắt nó đi.
+2. **Lỗi DỮ LIỆU** — bảy tên kho tôi **gõ theo trí nhớ**
+   (`VIP_PHAMVI` · `NAC_VUNG` · `TU_RANG_BUOC`…) không tồn tại. Tên thật
+   là `VIP_NGAN` · `TNC_KHONG_CHAM` · `TU_RANGBUOC`. Đúng thứ luật kho
+   cấm, phạm ngay ở tệp sinh ra để chống nó.
+
+### Và con số 59 của 9.99.84 sai cả hai chiều
+
+Máy đếm lại: **60 dòng tiêu đề · 58 số riêng**. Khối G có **8 dòng
+nhưng chỉ 6 số** — `G.57` và `G.59` mỗi cái lặp. Bản 9.99.84 khai 59 và
+ghi *"G 7"*: không phải 60, không phải 58, và khối G không phải 7.
+
+> Chính luật 9.99.84 rút ra đã bắt nó: **một con số không kèm CÁCH ĐẾM
+> thì không ai kiểm lại được.** Nay sổ khai cả hai con số kèm lệnh đếm
+> chạy lại được.
+
+Bản đã soi lưu ở Drive chủ hệ: *TRỢ LÝ AI GITA 365 → GITA365 — SỔ ĐẶC
+TẢ*.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ
