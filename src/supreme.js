@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════
-   GITA 365 — MÀN GITA SUPREME: BẢN ĐỒ VÀ TRẦN  (9.99.84)
+   GITA 365 — MÀN GITA SUPREME: BẢN ĐỒ VÀ TRẦN  (9.99.85)
 
    Theo tệp `MYVIP.doc` của chủ hệ — ba quyển, 410.000 ký tự:
    Quyển I nghiên cứu 14 nền tảng → ma trận 28 sức mạnh · Quyển II
@@ -121,6 +121,27 @@ G.VIEWS = G.VIEWS || {};
         o += '<p class="note"><b>' + h(x.noi) + ' · vì sao:</b> ' + h(x.viSao) +
           (x.coGiKhac ? ' <span class="muted">' + h(x.coGiKhac) + '</span>' : '') + '</p>';
       });
+    }
+
+    /* Ngưỡng tuổi đứng NGAY SAU hai bảng chỗ va, không xuống cuối: nó
+       là câu trả lời cho V1 (người dưới 18) và cho chỗ đụng C1 (xếp
+       hạng trẻ), nên đọc liền mạch mới thấy nó thuộc về đâu. */
+    var tu = G.SUP_TUOI || {};
+    if (tu.nguong) {
+      /* KHÔNG bọc h() ở đây — U.sec() tự gọi U.h() trên tham số, và
+         bọc thêm là thoát lần thứ hai. Lỗi này đã mắc ở 9.24 (77 chỗ),
+         9.99.70 (U.empty), 9.99.83 (U.sec) — và vừa mắc lại lần thứ tư
+         ở đúng tệp có dòng cảnh báo cách đây bảy mươi dòng. */
+      o += U.sec('Ngưỡng tuổi đã chốt — ' + tu.nguong + ' tuổi, và CHIỀU CẮT mới là phần quan trọng',
+        (tu.chot || '') + ' ' + (tu.giuNguyen || ''));
+      o += U.tbl(['Ngưỡng', 'Áp cho vai', 'Là gì', 'Chốt ngày', 'Ai chốt'],
+        [[String(tu.nguong), h(tu.apChoVai || ''), h(tu.la || ''),
+          h(tu.chotNgay || ''), h(tu.boiAi || '')]]);
+      o += '<p class="note"><b>Chưa có chỗ cắm răng:</b> ' + h(tu.chuaCoMat || '') +
+        ' <b>Khi dựng cửa ấy:</b> ' + h(tu.camKhiDung || '') + '</p>';
+      o += '<p class="note"><b>Chỗ dễ dựng sai nhất:</b> ' + h(tu.khongDungTuoiCon || '') +
+        ' ' + h(tu.ngaySinhOdau || '') + '</p>';
+      o += '<p class="note">' + h(tu.khong18 || '') + '</p>';
     }
 
     o += U.sec(oan.length + ' chỗ phép dò của tôi BẮT OAN', ol.bai || '');

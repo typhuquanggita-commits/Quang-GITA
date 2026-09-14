@@ -16418,6 +16418,80 @@ ra.tgNeoKhop && ra.tgDuTang && ra.tgLoaiDu && ra.tgChanThat && ra.tgMauKhop &&
         : sup.mauThuanThieu.length ? 'CHỖ MÂU THUẪN KHAI THIẾU VẾ: ' + sup.mauThuanThieu.join(' · ')
         : vc.length + ' chỗ đụng điều cấm cũ (trỏ VIP_CAM, không mã mới) · ' +
           sup.soMauThuan + ' chỗ bản đặc tả tự mâu thuẫn');
+
+    /* G · NGƯỠNG TUỔI — PHÉP CANH ĐẶT TRƯỚC  (9.99.85)
+
+       SUP-03 đã chốt: 15 là tuổi TỐI THIỂU ĐỂ CÓ tài khoản R14. Hôm nay
+       không cửa nào tạo R14, và cả `users` lẫn `students` đều không có
+       ngày sinh — nên KHÔNG CÓ CHỖ NÀO ĐỂ CẮM RĂNG. Khai `rangO` cho
+       một cổng chưa có là khai một cái tick người duyệt sẽ tin, đúng
+       thứ `rangO`/`chuaCoMat` của mười hai luật giao diện sinh ra để
+       chặn (9.99.74).
+
+       Phép đo này canh HAI ĐẦU ĐỘC LẬP rồi đối chiếu chúng — đúng luật
+       vừa rút ra ở vế E: một phép đo so hai ô do cùng một người gõ thì
+       nó không phải phép đo chéo. Đầu thứ nhất là LỜI KHAI của kho;
+       đầu thứ hai là SỐ CỬA GHI `users`, đọc thẳng từ mã `may-chu/`.
+       Dựng cửa R14 mà quên ngưỡng thì hai đầu lệch, và nó đỏ. */
+    {
+      const fsT = require('fs'), pT = require('path');
+      const thuMuc = pT.join(__dirname, '..', 'may-chu');
+      let cuaGhiUsers = 0, coVaiR14 = false, tepGhi = [];
+      for (const t of fsT.readdirSync(thuMuc).filter(x => /\.js$/.test(x))) {
+        /* Bỏ chú giải và chuỗi thì mất luôn câu SQL — nên ở đây chỉ bỏ
+           CHÚ GIẢI: chỗ này dò một câu lệnh nằm TRONG chuỗi, khác hẳn
+           chỗ dò một cái tên bị cấm (luật 9.99.78). */
+        const ma = fsT.readFileSync(pT.join(thuMuc, t), 'utf8')
+          .replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|[^:])\/\/.*$/gm, '$1');
+        const khop = ma.match(/INSERT\s+INTO\s+users\b/gi) || [];
+        if (khop.length) { cuaGhiUsers += khop.length; tepGhi.push(t + '×' + khop.length); }
+        /* Cửa R14 nhận ra bằng vai literal trong chính câu ghi, hoặc
+           bằng một vai truyền vào tự do — cả hai đều là "cửa đã có". */
+        if (khop.length && /INSERT\s+INTO\s+users[\s\S]{0,600}?(['"]R14['"]|VALUES[^;]{0,300}\?\s*,\s*\?[^;]{0,120}role)/i.test(ma))
+          coVaiR14 = true;
+      }
+      const tuoi = await p.evaluate(() => {
+        const t = window.G.SUP_TUOI || {}, dc = window.G.SUP_DACHOT || [];
+        return {
+          nguong: t.nguong, apChoVai: t.apChoVai,
+          coChuaCoMat: !!(t.chuaCoMat || '').trim(),
+          coRangO: !!(t.rangO || '').trim(),
+          duO: ['la', 'chot', 'chotNgay', 'boiAi', 'giuNguyen', 'camKhiDung',
+            'khongDungTuoiCon', 'ngaySinhOdau']
+            .filter(k => !(t[k] || '').toString().trim()),
+          soDaChot: dc.length,
+          daChotThieu: dc.filter(x => !(x.daChot || '').trim() ||
+            !(x.ngayChot || '').trim() || !(x.boiAi || '').trim()).map(x => x.ma),
+          conTrongSoCho: (window.G.SUP_CHOCHU || [])
+            .filter(x => dc.some(d => d.ma === x.ma)).map(x => x.ma)
+        };
+      });
+
+      /* Hai đầu phải khớp: chưa có cửa R14 thì kho khai `chuaCoMat` và
+         KHÔNG khai `rangO`; có cửa rồi thì ngược lại. */
+      const khopHaiDau = coVaiR14 ? (tuoi.coRangO && !tuoi.coChuaCoMat)
+        : (tuoi.coChuaCoMat && !tuoi.coRangO);
+      const nguongOk = typeof tuoi.nguong === 'number' && tuoi.nguong > 0;
+
+      bao(nguongOk && !tuoi.duO.length && khopHaiDau && tuoi.soDaChot >= 1 &&
+          !tuoi.daChotThieu.length && !tuoi.conTrongSoCho.length,
+        'NGƯỠNG TUỔI KHAI ĐÚNG MỘT ĐƯỜNG, VÀ LỜI KHAI KHỚP VỚI SỐ CỬA GHI `users` ĐỌC TỪ MÃ. SUP-03 chốt 15 là tuổi TỐI THIỂU ĐỂ CÓ tài khoản R14 — chiều cắt ấy giữ nguyên L06 · L07, chiều kia sẽ gỡ một lớp bảo vệ đang chạy. Hôm nay không cửa nào tạo R14 và cả users lẫn students đều không có ngày sinh, nên không có chỗ cắm răng: khai `rangO` cho một cổng chưa có là khai một cái tick người duyệt sẽ tin. Phép đo canh HAI ĐẦU ĐỘC LẬP — lời khai của kho, và số cửa ghi users đọc thẳng từ may-chu/',
+        !nguongOk ? 'SUP_TUOI THIẾU `nguong` LÀ MỘT CON SỐ'
+          : tuoi.duO.length ? 'SUP_TUOI THIẾU Ô: ' + tuoi.duO.join(' · ')
+          : !khopHaiDau ? (coVaiR14
+              ? 'ĐÃ CÓ CỬA GHI `users` VAI R14 (' + tepGhi.join(' · ') +
+                ') mà kho vẫn khai `chuaCoMat` — cổng phải có răng thật và khai `rangO`'
+              : 'CHƯA CÓ CỬA R14 nào (' + cuaGhiUsers + ' câu ghi users: ' +
+                tepGhi.join(' · ') + ') mà kho khai `rangO` — một cái tick cho cổng chưa tồn tại')
+          : !tuoi.soDaChot ? 'SUP_DACHOT RỖNG — SUP-03 đã chốt thì phải được tiễn sang, gỡ khỏi sổ chờ chứ không xoá'
+          : tuoi.daChotThieu.length ? 'MỤC ĐÃ CHỐT THIẾU `daChot`/`ngayChot`/`boiAi`: ' +
+              tuoi.daChotThieu.join(' · ')
+          : tuoi.conTrongSoCho.length ? 'MỤC ĐÃ CHỐT VẪN NẰM TRONG SỔ CHỜ: ' +
+              tuoi.conTrongSoCho.join(' · ')
+          : 'ngưỡng ' + tuoi.nguong + ' cho vai ' + tuoi.apChoVai +
+            ' · chưa có cửa R14 (' + cuaGhiUsers + ' câu ghi users: ' + tepGhi.join(' · ') +
+            ') · ' + tuoi.soDaChot + ' mục đã chốt, đã rời sổ chờ');
+    }
   }
 
 

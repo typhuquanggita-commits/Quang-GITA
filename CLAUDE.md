@@ -3029,6 +3029,107 @@ nghĩa của mục.
 
 ---
 
+## SUP-03 ĐÃ CHỐT — NGƯỠNG 15, VÀ CHIỀU CẮT MỚI LÀ PHẦN QUAN TRỌNG (9.99.85)
+
+Chủ hệ chốt **15**, và chốt luôn chiều cắt: **15 là tuổi TỐI THIỂU ĐỂ CÓ
+tài khoản R14.** Con dưới 15 không mở tài khoản riêng; mọi dữ liệu về
+con đi qua cha mẹ đã ký `duLieuCon` (9.99.70).
+
+Kho `G.SUP_TUOI` · `G.SUP_DACHOT`; mục **97 vế G**; SUP-03 tiễn khỏi sổ
+chờ.
+
+### Con số không đủ — phải ghi cả CHIỀU CẮT
+
+Hai chiều cho hai kết quả ngược nhau với một đứa trẻ mười hai tuổi:
+
+| Chiều | Hệ quả |
+|---|---|
+| **Đã chốt** — dưới 15 không có tài khoản | L06 · L07 **giữ nguyên**. Mọi R14 nay đều từ 15, nên không lớp bảo vệ nào bị gỡ. |
+| Chiều kia — dưới 15 có tài khoản, chưa có quyền phủ quyết | **GỠ một lớp đang chạy**: hôm nay em bé mười hai tuổi từ chối là ẩn nút, chiều ấy cho cha mẹ đè lên. |
+
+Nên `SUP_DACHOT` ghi **cả câu hỏi lẫn chiều cắt**, không chỉ ghi "15".
+Người đọc sau chỉ thấy con số thì họ tự chọn chiều — và một trong hai
+chiều lấy mất quyền của đứa trẻ.
+
+**Ngưỡng 15 KHÔNG thay ngưỡng 18 của V1.** Một em mười sáu tuổi có tài
+khoản và vẫn dưới 18, nên cờ đồng ý ảnh vẫn phải đọc trước. Hai ngưỡng
+đo hai việc khác nhau.
+
+### Không có chỗ nào để cắm răng — và đó là kết quả của phép đo, không phải cảm giác
+
+Đo trên mã trước khi dựng:
+
+- **Đúng MỘT câu `INSERT INTO users` trong cả `may-chu/`**, ở
+  `dang-ky.js`, và nó ghi vai **cứng `'R13'`**. Không cửa nào tạo tài
+  khoản R14 — cửa ấy **chưa tồn tại**.
+- **`users` không có ngày sinh. `students` cũng không.** Cả chuỗi tài
+  khoản không mang tuổi ở đâu cả.
+
+Nên khai `rangO` là khai một cái tick người duyệt sẽ tin. Khai
+`chuaCoMat`, đúng lối `rangO`/`chuaCoMat` của mười hai luật giao diện
+(9.99.74). Lối đo về thứ không được tồn tại, **lần thứ chín**.
+
+### Chỗ dễ dựng sai nhất nằm sẵn trong kho, chờ người vấp phải
+
+`hoSoSongSinh.tuoiCon` là một **`INTEGER` NGƯỜI KHAI** — nó nằm trong
+`COT_NGUOI_KHAI`, và một con số tuổi thì **cũ đi mỗi năm** mà không ai
+gõ lại. Dựng cổng tuổi trên nó là dựng lại đúng cái bẫy mà chính
+`csdl.sql` cấm ở **BỐN DÒNG NGAY PHÍA TRÊN nó** (cột `den`, cột
+`conHan`).
+
+Tuổi phải tính **lúc đọc** từ một ngày sinh. Hôm nay chỉ có
+`ngaySinhCon`, và nó tự khai *"chỉ dùng để nhắc sinh nhật"* — thuộc hồ
+sơ NHÀ, không thuộc tài khoản con, và không bắt buộc. Cửa R14 phải hỏi
+ngày sinh của **chính người mở tài khoản**, không đi vòng qua hồ sơ nhà.
+
+**Không nửa vời sửa `tuoiCon` trong bản này.** Nó do người khai qua
+`COT_NGUOI_KHAI`, được `vung-manh` đọc và ghi vào `theVungManh` — đổi nó
+là một lượt sửa lược đồ cộng hai mô-đun, và nó cần bộ phá thử riêng.
+Ghi ra chỗ hỏng kèm đường đi thì người sau sửa được; sửa một nửa thì
+người sau tưởng đã xong.
+
+### Phép đo canh HAI ĐẦU ĐỘC LẬP — đúng luật vừa rút ra ở 9.99.84
+
+Vế E của bản trước đã chốt: *một phép đo so hai ô do cùng một người gõ
+trong cùng một lượt thì nó không phải phép đo chéo.* Vế G áp ngay luật
+ấy vào chính nó:
+
+- **Đầu một** — lời khai của kho: `chuaCoMat` hay `rangO`.
+- **Đầu hai** — số cửa ghi `users` và vai chúng ghi, **đọc thẳng từ mã
+  `may-chu/`**.
+
+Hai đầu phải khớp. Dựng cửa R14 mà quên ngưỡng thì lệch, và nó đỏ.
+
+Một chi tiết của phép dò: ở đây **chỉ bỏ CHÚ GIẢI, không bỏ chuỗi** —
+ngược với luật 9.99.78. Vì luật ấy nói về việc dò một cái *tên bị cấm*,
+còn đây dò một *câu lệnh SQL nằm trong chuỗi*: bỏ chuỗi là mất luôn thứ
+cần dò.
+
+### Phá thử — ba nhánh, đỏ đúng chỗ và gọi đúng tên
+
+| Phá gì | Dòng đỏ in ra |
+|---|---|
+| Trồng một câu ghi `users` vai `R14` | `ĐÃ CÓ CỬA GHI users VAI R14 (dang-ky.js×2) mà kho vẫn khai chuaCoMat` |
+| Khai `rangO` khi chưa có cửa | `CHƯA CÓ CỬA R14 nào (1 câu ghi users: dang-ky.js×1) mà kho khai rangO — một cái tick cho cổng chưa tồn tại` |
+| Để SUP-03 nằm cả hai sổ | `MỤC ĐÃ CHỐT VẪN NẰM TRONG SỔ CHỜ: SUP-03` |
+
+Nhánh thứ nhất là nhánh đáng giá nhất: nó chứng minh phép đo **thật sự
+đọc mã `may-chu/`**, chứ không chỉ đọc lời khai của kho.
+
+### Một lỗi của chính tôi, lần thứ TƯ của cùng một lớp
+
+Tôi truyền `h(...)` vào `U.sec()` — mà `U.sec()` **tự gọi `U.h()`**, nên
+thoát hai lần. Bản 9.24 gỡ 77 chỗ · 9.99.70 mắc lại ở `U.empty()` ·
+9.99.83 ở `U.sec()` · và lần này ở **đúng tệp có dòng cảnh báo cách đó
+bảy mươi dòng**.
+
+> **Một lời cảnh báo đặt trong chú giải chỉ chặn được người ĐANG ĐỌC nó.**
+> Chỗ này cần một phép đo, không cần thêm một dòng chú giải nữa.
+
+Bắt được vì chạy bộ rà soát chỗ trống, không vì đọc lại mã.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ
