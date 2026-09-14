@@ -3725,6 +3725,131 @@ thứ sáu đang chờ.
 
 ---
 
+## BẢN ĐỒ HIẾN CHƯƠNG — BỐN TẦNG, KHÔNG GỘP (9.99.91)
+
+Chủ hệ chốt: *"Khớp bảng luật hiến pháp và bản đặc tả sao cho bộ hiến
+pháp mạnh nhất."* Kho `G.HC_TANG` (4) · `HC_MA_TRUNG` (4) · `HC_LUAT`
+(8) · `HC_CHOCHU` (2); bộ kiểm **mục 100**.
+
+### Kho có BỐN bảng luật nền, không phải hai
+
+| Bậc | Bảng | Áp cho ai |
+|---|---|---|
+| 1 | `HP9_BATKHASUA` 9 | **Học viện** — được làm gì với gia đình |
+| 2 | `BN_HIENPHAP` 13 | **Bộ não** — trả lời thế nào |
+| 3 | `LGD_LUAT` L01–L12 | **Sản phẩm** — răng ở máy chủ |
+| 4 | `HL_LUAT12` L1–L12 | **Gia đình** — tự áp cho mình |
+
+**KHÔNG GỘP.** Gộp là mất phạm vi — và mất phạm vi thì một luật của
+*gia đình* bị đem đi cưỡng chế *lên* gia đình, đúng thứ nó sinh ra để
+không làm.
+
+**Tầng 4 cố ý KHÔNG có răng.** Cưỡng chế *"nghĩ tích cực là chọn góc
+nhìn"* biến nó thành cái ách, và người ta sẽ **diễn** nó thay vì sống
+nó. Mục 100 canh `HL_LUAT12` không mọc ô `rangO`.
+
+### Chỗ khớp thật: ba loại mã trùng, chỉ loại ba máy dò được
+
+| Loại | Ví dụ | Ai phát hiện |
+|---|---|---|
+| trùng **hình** | `LGD_LUAT.L01` vs `HL_LUAT12.L1` | người khai |
+| trùng **mã**, nghĩa khác | `VM_LANRANH.LR1` vs `TV_LANRANH.LR1` | người khai |
+| **bản chép** | `HL_VIRUS`/`MD_VIRUS` 18/18 | **máy, mỗi lượt** |
+
+Chữa **không phải đổi mã** — bốn bảng đã chạy, đã in ra màn, đã nằm
+trong tài liệu giấy của chủ hệ. Chữa bằng **bắt buộc trỏ `BẢNG.MÃ`**.
+Mục 99 nay đòi đúng dạng ấy.
+
+### Phép đo của tôi bắt oan HƠN BỐN TRĂM cặp
+
+Bản đầu dò *"hai bảng chia sẻ ≥3 mã"*. Mã ngắn `C1·T1·N1·L1` là mã
+**cục bộ** — `BN_CHET` đánh `C1…C5` và `VIP_CAM` cũng thế, không liên
+quan gì nhau.
+
+> Nới ngưỡng lên 5, lên 8 đều **bớt nhiễu chứ không đổi dấu hiệu**. Chỗ
+> chữa là **CHỌN LẠI DẤU HIỆU** (9.99.56): cùng mã **VÀ** cùng TÊN.
+
+Với dấu hiệu ấy cả kho ra đúng **hai** cặp — và cặp thứ hai
+`HSH_DK6↔HSH_DK` (6 mã, 6 tên khớp) **tôi không biết nó tồn tại**. Đó
+là việc phép đo phải làm: tìm thứ người viết không nhớ. Nó chạm thẳng
+vào việc vừa làm — `DK16` nằm ở **cả hai bảng**, mà điều 6 trỏ
+`HSH_DK6.DK16`.
+
+### Hai điều tôi khai sai ở 9.99.90 — cả hai kho ĐÃ CÓ
+
+| Điều | Tôi khai | Kho gọi nó là |
+|---|---|---|
+| 5 không dùng nỗi sợ | `chuaCoMat` | `TV_LANRANH.LR1` |
+| 6 không lấy tuyến dưới | `chuaCoMat` | `HSH_DK6.DK16` (điều khoản **hợp đồng**) |
+
+Nay **cả chín điều đều có răng**; ba điều khai `conHo` cho nửa còn
+thiếu. `HP9-02` tiễn sang `HP9_DACHOT`, mở `HP9-03`.
+
+> **Một mục chờ đóng được bằng cách ĐO LẠI, không chỉ bằng cách làm
+> thêm.** Và nếu không có phép đo tự đo thì nó nằm lại mãi trong sổ.
+
+### NĂM lần bắt oan trong ba bản — nay là LUẬT
+
+`9.99.88` chỗ nối bánh đà (quét một phía) · `9.99.88` `napKho()` quên
+`data.core.js` · `9.99.90` KL/V/5 Két · `9.99.90` điều 5 · `9.99.90`
+điều 6.
+
+> **Quét kho bằng tên của TÀI LIỆU thì chỉ tìm được thứ kho tình cờ đặt
+> trùng tên tài liệu.** Kho gọi mọi thứ bằng tên của CHÍNH NÓ — đặc tả
+> gọi *"5 Két K1–K5"*, kho gọi `HL_KHOA9`; đặc tả gọi *"V01–V17"*, kho
+> gọi `HL_VIRUS`. Phải quét bằng **NGHĨA**, hoặc quét **NGƯỢC** từ kho ra.
+
+---
+
+## GITA STUDIO 365 — TRẦN CỦA HỆ VIDEO (9.99.92)
+
+Theo `🎬 GITA STUDIO 365.doc` — 291.393 ký tự, **19/20 phần** (thiếu
+P17). Kho `data.studio.js` (7 kho, tiền tố `ST_`); bộ kiểm **mục 101**.
+
+**Dựng cái trần trước, lần thứ năm.** Lý do riêng ở đây: **video rời
+khỏi hệ và không gọi về được.** Một tấm hình sai còn gỡ được ở kênh;
+một video đã tải về nằm trên máy người khác.
+
+### Chín phần đã có kho phủ — trỏ, không chép
+
+`P2`→`SCRIPTS` · `P4`→`HT_TANG`+`G.vaiCo` · `P6`→`tam-ra-anh`+`C19` ·
+`P10`→`NT_LOC7`+`BN_RAO10` · `P12`→`PLR_*` · `P13`→`SH_*`+`CN_*` ·
+`P15`→`TC_BAY7` · `P16`→`TG_UNGPHO` · `P19`→`TAILIEU_SPEC`.
+
+Nặng nhất **P10** và **P16**: dựng bộ dò thứ hai thì hai bảng dấu hiệu
+lệch nhau, và **cả hai đều xanh trên hai thứ khác nhau**.
+
+### Hai chỗ va thật
+
+**SV1 · TTS.** Bản đặc tả *fine-tune TTS neural trên Soul Sample Pack*,
+hợp đồng ghi quyền rút lại. Va **luật C20** — *"lời đọc và nhạc là tệp
+CÓ SẴN, máy chỉ TRỘN chứ không SINH"*.
+
+> C20 dựng ra để một giọng đọc luôn truy được về **một người đã đồng ý
+> nói câu ấy**. Giọng tổng hợp nói được câu người ấy chưa từng nói.
+
+Cổng của bản đặc tả nằm ở **giấy**, không ở mã. Mục chờ **ST-01**.
+
+**SV2 · Giọng trẻ 16–18.** Va điều 7. Điều 7 nói *hình ảnh*; giọng nhận
+ra người y hệt và đi xa hơn — **một khuôn mặt cắt khỏi video thì hết,
+một giọng đã fine-tune thì còn trong mô hình**. Chữ *"vĩnh viễn"* khó
+giữ hơn nhiều với giọng. Mục chờ **ST-02**.
+
+### Hai chỗ suýt bắt oan — tài liệu TỰ CẤM
+
+> *"Không xếp hạng cá nhân, không streak, không thông báo dồn dập,
+> không tối ưu hoá làm người xem khó rời đi."*
+
+Điều 9 bất khả sửa, viết bằng lời của chính tài liệu. Và *"đường cong
+giữ chân theo giây"* là **retention của video** — bẫy tên gọi thứ bảy,
+*giữ chân* hai nghĩa trong cùng một tài liệu.
+
+Lớp bắt oan **thứ tư** của kho. Mục 101 **đòi `ST_OAN` có mặt**: nêu
+chỗ va mà giấu chỗ hợp thì người đọc tưởng cả bản đặc tả là sai rồi
+thôi không đọc — và lúc ấy hai chỗ va thật cũng không ai đọc.
+
+---
+
 ## Bộ tối ưu cấu hình gói (9.99.68)
 
 Theo tệp `gita365-toi-uu-goi.ts` của chủ hệ. Máy chủ
